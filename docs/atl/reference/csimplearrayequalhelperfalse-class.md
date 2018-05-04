@@ -1,12 +1,9 @@
 ---
-title: "CSimpleArrayEqualHelperFalse sınıfı | Microsoft Docs"
-ms.custom: 
+title: CSimpleArrayEqualHelperFalse sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CSimpleArrayEqualHelperFalse
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - CSimpleArrayEqualHelperFalse class
 ms.assetid: 6918af6f-d23d-49eb-8482-c44272f5ffeb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28d43b6a83842373c2fc169ce43022f1912c4e0f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7e22d67634f29b60bdc983c892c5fe266df61d08
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="csimplearrayequalhelperfalse-class"></a>CSimpleArrayEqualHelperFalse sınıfı
 Bu sınıf için bir Yardımcısı, [CSimpleArray](../../atl/reference/csimplearray-class.md) sınıfı.  
@@ -57,7 +52,7 @@ class CSimpleArrayEqualHelperFalse
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsimpcoll.h  
   
-##  <a name="isequal"></a>CSimpleArrayEqualHelperFalse::IsEqual  
+##  <a name="isequal"></a>  CSimpleArrayEqualHelperFalse::IsEqual  
  Yanlış değerini döndürür.  
   
 ```

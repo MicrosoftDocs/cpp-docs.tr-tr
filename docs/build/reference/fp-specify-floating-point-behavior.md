@@ -1,13 +1,10 @@
 ---
-title: "-fp (kayan nokta davranışını belirt) | Microsoft Docs"
-ms.custom: 
+title: -fp (kayan nokta davranışını belirt) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.floatingPointModel
 - VC.Project.VCCLWCECompilerTool.FloatingPointExceptions
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - -fp compiler option [C++]
 - /fp compiler option [C++]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f4a86c7bbbd38887944080a5a5c8124310fdd4a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: af796b7143b3600130e9405782d618a5960d22fc
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fp-specify-floating-point-behavior"></a>/fp (Kayan Nokta Davranışını Belirt)
 Bir kaynak kodu dosyasında kayan nokta türü davranışını belirtir.  
@@ -77,7 +72,7 @@ Bir kaynak kodu dosyasında kayan nokta türü davranışını belirtir.
  **[- dışında]**  
  Güvenilir kayan nokta özel durumu modeli. Özel durumlar, tetiklendikten hemen sonra oluşur. Varsayılan olarak, bu değer kapalıdır. Seçeneğe eksi işareti eklemek, onu açıkça devre dışı bırakır.  
   
- **katı**  
+ **Katı**  
  En katı kayan nokta modeli. **/FP: katı** neden [fp_contract](../../preprocessor/fp-contract.md) kapalı olması ve [fenv_access](../../preprocessor/fenv-access.md) açık olmalıdır. **/FP: dışında** kapsanır ve açıkça belirterek devre dışı bırakılabilir **/fp: dışında-**. İle kullanıldığında **/fp: dışında-**, **/fp: katı** katı kayan nokta semantiğini uygular, ancak olağanüstü olaylar için saygı olmadan.  
   
 ## <a name="remarks"></a>Açıklamalar  

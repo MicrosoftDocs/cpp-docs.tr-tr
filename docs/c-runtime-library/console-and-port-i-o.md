@@ -2,12 +2,9 @@
 title: Konsol ve bağlantı noktası g/ç | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.io
 dev_langs:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - I/O [CRT], port
 - I/O routines, console and port I/O
 ms.assetid: 0eee1c92-9b3d-41e0-a43a-257e546eeec8
-caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db5532b35e915f69927699ce9678d5bd5ffb5579
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 7e4d46582266234b4208a768fc7b2045af824349
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="console-and-port-io"></a>Konsol ve Bağlantı Noktası G/Ç
 
@@ -59,4 +54,4 @@ Bu yordamlar, okuma ve konsolunuza veya belirtilen bağlantı noktası üzerinde
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Girdi ve Çıktı](../c-runtime-library/input-and-output.md)<br/>
- [Kategorilere göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+ [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

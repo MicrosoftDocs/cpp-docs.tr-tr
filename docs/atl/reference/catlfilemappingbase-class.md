@@ -1,12 +1,9 @@
 ---
-title: "CAtlFileMappingBase sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAtlFileMappingBase sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CAtlFileMappingBase
@@ -25,17 +22,15 @@ dev_langs:
 helpviewer_keywords:
 - CAtlFileMappingBase class
 ms.assetid: be555723-2790-4f57-a8fb-be4d68460775
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b5e0dd90894e052d4b9bcff08e7e12234dde8f4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e315a29f72c887b5bff2e8177e7a47aed18c3fd4
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="catlfilemappingbase-class"></a>CAtlFileMappingBase sınıfı
 Bu sınıf, bellekle eşlenen bir dosyayı temsil eder.  
@@ -85,7 +80,7 @@ class CAtlFileMappingBase
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlfile.h  
   
-##  <a name="catlfilemappingbase"></a>CAtlFileMappingBase::CAtlFileMappingBase  
+##  <a name="catlfilemappingbase"></a>  CAtlFileMappingBase::CAtlFileMappingBase  
  Oluşturucu.  
   
 ```
@@ -103,7 +98,7 @@ CAtlFileMappingBase() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#71](../../atl/codesnippet/cpp/catlfilemappingbase-class_1.cpp)]  
   
-##  <a name="dtor"></a>CAtlFileMappingBase:: ~ CAtlFileMappingBase  
+##  <a name="dtor"></a>  CAtlFileMappingBase:: ~ CAtlFileMappingBase  
  Yok Edicisi.  
   
 ```
@@ -113,7 +108,7 @@ CAtlFileMappingBase() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Sınıf ve çağrıları tarafından ayrılan tüm kaynakları serbest bırakır [CAtlFileMappingBase::Unmap](#unmap) yöntemi.  
   
-##  <a name="copyfrom"></a>CAtlFileMappingBase::CopyFrom  
+##  <a name="copyfrom"></a>  CAtlFileMappingBase::CopyFrom  
  Bir dosya eşleme nesneden kopyalamak için bu yöntemi çağırın.  
   
 ```
@@ -127,7 +122,7 @@ HRESULT CopyFrom(CAtlFileMappingBase& orig) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür `S_OK` başarı veya hata `HRESULT` hatasında.  
   
-##  <a name="getdata"></a>CAtlFileMappingBase::GetData  
+##  <a name="getdata"></a>  CAtlFileMappingBase::GetData  
  Bir dosya eşleme nesnesinden verileri almak için bu yöntemi çağırın.  
   
 ```
@@ -137,7 +132,7 @@ void* GetData() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi verileri döndürür.  
   
-##  <a name="gethandle"></a>CAtlFileMappingBase::GetHandle  
+##  <a name="gethandle"></a>  CAtlFileMappingBase::GetHandle  
  Dosya eşleme nesnesi için bir işleyiciyi döndürmek için bu yöntemi çağırın.  
   
 ```
@@ -147,7 +142,7 @@ HANDLE GetHandle() throw ();
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir tanıtıcı dosya eşleme nesnesi döndürür.  
   
-##  <a name="getmappingsize"></a>CAtlFileMappingBase::GetMappingSize  
+##  <a name="getmappingsize"></a>  CAtlFileMappingBase::GetMappingSize  
  Bir dosya eşleme nesnesi eşleme boyutu almak için bu yöntemi çağırın.  
   
 ```
@@ -160,7 +155,7 @@ SIZE_T GetMappingSize() throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase).  
   
-##  <a name="mapfile"></a>CAtlFileMappingBase::MapFile  
+##  <a name="mapfile"></a>  CAtlFileMappingBase::MapFile  
  Açmak veya belirtilen dosya için bir dosya eşleme nesnesi oluşturmak için bu yöntemi çağırın.  
   
 ```
@@ -174,7 +169,7 @@ HRESULT MapFile(
   
 ### <a name="parameters"></a>Parametreler  
  `hFile`  
- Bir eşleme nesnesi oluşturulacağı dosyaya işleyin. `hFile`geçerli olmalıdır ve INVALID_HANDLE_VALUE için ayarlanamaz.  
+ Bir eşleme nesnesi oluşturulacağı dosyaya işleyin. `hFile` geçerli olmalıdır ve INVALID_HANDLE_VALUE için ayarlanamaz.  
   
  `nMappingSize`  
  Eşleme boyutu. 0 ise, dosya eşleme nesnesi en büyük boyutu tarafından tanımlanan dosya boyutunu eşittir *Hfıle.*  
@@ -197,7 +192,7 @@ HRESULT MapFile(
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase).  
   
-##  <a name="mapsharedmem"></a>CAtlFileMappingBase::MapSharedMem  
+##  <a name="mapsharedmem"></a>  CAtlFileMappingBase::MapSharedMem  
  Tüm işlemlere tam erişimi veren bir dosya eşleme nesnesi oluşturmak için bu yöntemi çağırın.  
   
 ```
@@ -212,7 +207,7 @@ HRESULT MapSharedMem(
   
 ### <a name="parameters"></a>Parametreler  
  `nMappingSize`  
- Eşleme boyutu. 0 ise, en fazla dosya eşleme nesnesi tarafından tanımlanan dosya eşleme nesnesinin geçerli boyutuna eşit boyutudur`szName.`  
+ Eşleme boyutu. 0 ise, en fazla dosya eşleme nesnesi tarafından tanımlanan dosya eşleme nesnesinin geçerli boyutuna eşit boyutudur `szName.`  
   
  `szName`  
  Eşleme nesnesinin adı.  
@@ -235,7 +230,7 @@ HRESULT MapSharedMem(
 ### <a name="remarks"></a>Açıklamalar  
  **MapShareMem** tarafından oluşturulan bir var olan dosya eşleme nesnesi verir [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537), işlemler arasında paylaşılacak.  
   
-##  <a name="openmapping"></a>CAtlFileMappingBase::OpenMapping  
+##  <a name="openmapping"></a>  CAtlFileMappingBase::OpenMapping  
  Belirtilen dosya için bir adlandırılmış dosya eşleme nesnesi açmak için bu yöntemi çağırın.  
   
 ```
@@ -251,7 +246,7 @@ HRESULT OpenMapping(
  Eşleme nesnesinin adı. Bu adda bir dosya eşleme nesnesi için açık bir tanıtıcı ve eşleme nesnesinde güvenlik tanımlayıcısı ile çakışmaması `dwViewDesiredAccess` parametresi açma işlemi başarılı olur.  
   
  `nMappingSize`  
- Eşleme boyutu. 0 ise, en fazla dosya eşleme nesnesi tarafından tanımlanan dosya eşleme nesnesinin geçerli boyutuna eşit boyutudur`szName.`  
+ Eşleme boyutu. 0 ise, en fazla dosya eşleme nesnesi tarafından tanımlanan dosya eşleme nesnesinin geçerli boyutuna eşit boyutudur `szName.`  
   
  `nOffset`  
  Başlamak için eşleme olduğu dosya uzaklığı. Uzaklık değeri sistemin bellek ayırma ayrıntı katı olmalıdır.  
@@ -265,7 +260,7 @@ HRESULT OpenMapping(
 ### <a name="remarks"></a>Açıklamalar  
  Hata ayıklama derlemelerinde, onaylama işlemi hata ortaya giriş parametreleri geçersiz.  
   
-##  <a name="operator_eq"></a>CAtlFileMappingBase::operator =  
+##  <a name="operator_eq"></a>  CAtlFileMappingBase::operator =  
  Geçerli dosya eşleme nesnesi başka bir dosya eşleme nesnesine ayarlar.  
   
 ```
@@ -279,7 +274,7 @@ CAtlFileMappingBase& operator=(CAtlFileMappingBase& orig);
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli nesne için bir başvuru döndürür.  
   
-##  <a name="unmap"></a>CAtlFileMappingBase::Unmap  
+##  <a name="unmap"></a>  CAtlFileMappingBase::Unmap  
  Bir dosya eşleme nesnesi eşlemeyi kaldırmak için bu yöntemi çağırın.  
   
 ```

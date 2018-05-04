@@ -1,9 +1,9 @@
 ---
-title: "/ZC:ternary (koşullu işleç kuralları zorla) | Microsoft Docs"
+title: /ZC:ternary (koşullu işleç kuralları zorla) | Microsoft Docs
 ms.date: 3/06/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /Zc:ternary
 dev_langs:
@@ -14,12 +14,11 @@ helpviewer_keywords:
 - -Zc:ternary
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 198da679e9d0d7bd58e034ca9c04c3102748af20
-ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
+ms.openlocfilehash: 613381795fb962e1f10ec01598748b617b7543aa
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="zcternary-enforce-conditional-operator-rules"></a>/ZC:ternary (koşullu işleç kuralları zorla)
 
@@ -27,7 +26,7 @@ Uygulama türleri için C++ standart kurallar ve bir koşullu işleç ifadesinde
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc:ternary**[**-**]
+> **/ZC:ternary**[**-**]
 
 ## <a name="remarks"></a>Açıklamalar
 

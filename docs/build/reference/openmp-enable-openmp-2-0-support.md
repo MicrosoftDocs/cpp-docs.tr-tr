@@ -1,13 +1,10 @@
 ---
-title: "-openmp (OpenMP 2.0 desteğini etkinleştir) | Microsoft Docs"
-ms.custom: 
+title: -openmp (OpenMP 2.0 desteğini etkinleştir) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /openmp
 - VC.Project.VCCLCompilerTool.OpenMP
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - /openmp compiler option [C++]
 - -openmp compiler option [C++]
 ms.assetid: 9082b175-18d3-4378-86a7-c0eb95664e13
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8217a901f071f50dbd2d7dfcbffccf4014a9444
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: fe64011f48255a18aa8f8ccab7571533540a598a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="openmp-enable-openmp-20-support"></a>/openmp (OpenMP 2.0 Desteğini Etkinleştir)
 İşlenecek derleyici neden `#pragma` [omp](../../preprocessor/omp.md).  
@@ -39,7 +34,7 @@ ms.lasthandoff: 02/09/2018
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `#pragma omp`belirtmek için kullanılan [yönergeleri](../../parallel/openmp/reference/openmp-directives.md) ve [yan tümceleri](../../parallel/openmp/reference/openmp-clauses.md). Varsa **/OpenMP** belirtilmemiş bir derlemede derleyici OpenMP yan tümceleri ve yönergeleri göz ardı eder. [OpenMP işlevi](../../parallel/openmp/reference/openmp-functions.md) çağrıları derleyici olsa bile tarafından işlenen **/OpenMP** belirtilmedi.  
+ `#pragma omp` belirtmek için kullanılan [yönergeleri](../../parallel/openmp/reference/openmp-directives.md) ve [yan tümceleri](../../parallel/openmp/reference/openmp-clauses.md). Varsa **/OpenMP** belirtilmemiş bir derlemede derleyici OpenMP yan tümceleri ve yönergeleri göz ardı eder. [OpenMP işlevi](../../parallel/openmp/reference/openmp-functions.md) çağrıları derleyici olsa bile tarafından işlenen **/OpenMP** belirtilmedi.  
   
  Uygulamaları derlenmiş ile **/OpenMP** ve **/CLR** yalnızca bir tek bir uygulama etki alanı işlemde çalıştırılabilir; birden çok uygulama etki alanları desteklenmez. Modül Oluşturucusu (.cctor) çalıştırdığınızda, diğer bir deyişle, bu işlem ile derlenmiş algılar **/OpenMP** ve uygulama varsayılan olmayan çalışma zamanına yüklüyse. Daha fazla bilgi için bkz: [appdomain](../../cpp/appdomain.md), [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md), ve [karışık derlemeleri başlatma](../../dotnet/initialization-of-mixed-assemblies.md).  
   
@@ -76,7 +71,7 @@ ms.lasthandoff: 02/09/2018
   
  İle derleme zaman **/OpenMP**, test2 için ikinci çağrı hiçbir zaman ile derleme daha artık çalışır **/openmp-**, hiçbir iş parçacığı havuzu başlangıç olarak. Bir milyon yineleme adresindeki **/OpenMP** sürümüdür daha hızlı bir şekilde **/openmp-** 25 yineleme ve test2 için ikinci çağrı için sürüm **/openmp-** ve **/OpenMP** saati ayrıntı düzeyi'den sürümleri kayıt.  
   
- Bunu yalnızca bir döngü, uygulamanızda varsa ve küçüktür (yaklaşık yükünü makinenizde için ayarlanmış), 15ms içinde çalışan **/OpenMP** uygun olmayabilir ancak fazlasını herhangi bir şey olması durumunda kullanmayıisteyebilirsiniz**/OpenMP**.  
+ Bunu yalnızca bir döngü, uygulamanızda varsa ve küçüktür (yaklaşık yükünü makinenizde için ayarlanmış), 15ms içinde çalışan **/OpenMP** uygun olmayabilir ancak fazlasını herhangi bir şey olması durumunda kullanmayıisteyebilirsiniz **/OpenMP**.  
   
 ```  
 // cpp_compiler_options_openmp.cpp  

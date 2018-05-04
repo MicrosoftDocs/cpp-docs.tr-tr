@@ -1,12 +1,9 @@
 ---
-title: "ATL Basit Nesne Sihirbazı | Microsoft Docs"
-ms.custom: 
+title: ATL Basit Nesne Sihirbazı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.atl.simple.overview
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - ATL projects, adding objects
 - ATL Simple Object Wizard
 ms.assetid: f7f85741-9aad-4543-a917-a29b996364da
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbefa4a8036802599dd97f31d57f18204fd6104f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0ff9648cfc350f724a333e38622d082d8d399b3b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="atl-simple-object-wizard"></a>ATL Basit Nesne Sihirbazı
 Bu sihirbaz projeye en az bir COM nesnesi ekler. Sihirbazın bu sayfası nesneniz ve COM işlevselliği için dosyaları ve C++ sınıfı tanımlamak adlarını belirtmek için kullanın.  
@@ -53,7 +48,7 @@ Bu sihirbaz projeye en az bir COM nesnesi ekler. Sihirbazın bu sayfası nesneni
   
  Sihirbaz, bir dosyanın üzerine değildir. ' I tıklattığınızda varolan bir dosyanın adını seçeneğini belirlerseniz **son**, sınıf bildirimi dosyasının içeriğini eklenmiş olup olmadığını belirtmek için Sihirbazı ister. Tıklatın **Evet** ; dosyayı eklemek için tıklatın **Hayır** sihirbaza geri dönmek ve başka bir dosya adı belirtin.  
   
- **Sınıfı**  
+ **sınıfı**  
  Oluşturulacak sınıfın adını ayarlar. Bu ad, sağladığınız adına dayanarak **kısa ad**, öncesinde 'C', tipik bir sınıf adı öneki olarak.  
   
  **.cpp dosyası**  
@@ -73,7 +68,7 @@ Bu sihirbaz projeye en az bir COM nesnesi ekler. Sihirbazın bu sayfası nesneni
 ## <a name="com"></a>COM  
  Nesne için COM işlevleri hakkında bilgi sağlar.  
   
- **Coclass'ı**  
+ **coclass'ı**  
  Nesne tarafından desteklenen arabirimleri listesini içeren bileşen sınıfı adını ayarlar.  
   
 > [!NOTE]

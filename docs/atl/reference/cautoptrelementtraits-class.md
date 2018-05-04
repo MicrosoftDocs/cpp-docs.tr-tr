@@ -1,12 +1,9 @@
 ---
-title: "CAutoPtrElementTraits sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAutoPtrElementTraits sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CAutoPtrElementTraits
@@ -18,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - CAutoPtrElementTraits class
 ms.assetid: 777c1b14-6ab7-491f-b9a5-be149e71d4a2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ffbec269e7bbf750cc3b877aa7a93d1cde74756b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c845243e3b99be10af70042688e672fa867fb888
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cautoptrelementtraits-class"></a>CAutoPtrElementTraits sınıfı
 Bu sınıf, akıllı işaretçiler koleksiyonları oluştururken yöntemleri, statik işlevler ve tür tanımları yararlı sağlar.  
@@ -74,14 +69,14 @@ class CAutoPtrElementTraits
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcoll.h  
   
-##  <a name="inargtype"></a>CAutoPtrElementTraits::INARGTYPE  
+##  <a name="inargtype"></a>  CAutoPtrElementTraits::INARGTYPE  
  Koleksiyon sınıfı nesnesine öğe eklemek için kullanılacak veri türü.  
   
 ```
 typedef CAutoPtr<T>& INARGTYPE;
 ```  
   
-##  <a name="outargtype"></a>CAutoPtrElementTraits::OUTARGTYPE  
+##  <a name="outargtype"></a>  CAutoPtrElementTraits::OUTARGTYPE  
  Koleksiyon sınıfı nesnesinden öğeleri almak için kullanılacak veri türü.  
   
 ```

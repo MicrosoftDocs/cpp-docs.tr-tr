@@ -1,13 +1,10 @@
 ---
-title: "Satır içi dosya metni oluşturma | Microsoft Docs"
-ms.custom: 
+title: Satır içi dosya metni oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - NMAKE program, inline files
 - text, inline file
 ms.assetid: b8a332ed-8244-4ff8-89e6-029d7f659725
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dcc27a303e9d03d2e899a76703bcfae5abfd0c04
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3ab1154935ac4eb8b0595c84ba8d75a9ca13e4d3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-inline-file-text"></a>Satır İçi Dosya Metni Oluşturma
 Satır içi dosyalar, geçici veya kalıcı.  

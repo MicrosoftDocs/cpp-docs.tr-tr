@@ -1,12 +1,9 @@
 ---
-title: "CComControl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComControl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComControl
@@ -28,17 +25,15 @@ helpviewer_keywords:
 - ambient properties
 - controls [ATL], properties
 ms.assetid: 55368c27-bd16-45a7-b701-edb36157c8e8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae81e2b6beac11f94f8d117b004da2f8d0db8724
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6017d06715146a0440887a2a2e10828398d5044b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomcontrol-class"></a>CComControl sınıfı
 Bu sınıf oluşturmak ve ATL denetimleri yönetmek için yöntemler sağlar.  
@@ -80,7 +75,7 @@ class ATL_NO_VTABLE CComControl : public CComControlBase,
 |[CComControl::MessageBox](#messagebox)|Oluşturun, görüntüleyin ve bir ileti kutusu çalıştırmak için bu yöntemi çağırın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComControl`kullanışlı denetimi yardımcı işlevleri ve ATL denetimleri için temel veri üyeleri kümesidir. Standart bir denetimde veya ATL Denetim Sihirbazı'nı kullanarak bir DHTML denetimi oluşturduğunuzda, sihirbaz otomatik olarak, sınıfından türetilen `CComControl`. `CComControl`kendi yöntemleri çoğunu türetilen [CComControlBase](../../atl/reference/ccomcontrolbase-class.md).  
+ `CComControl` kullanışlı denetimi yardımcı işlevleri ve ATL denetimleri için temel veri üyeleri kümesidir. Standart bir denetimde veya ATL Denetim Sihirbazı'nı kullanarak bir DHTML denetimi oluşturduğunuzda, sihirbaz otomatik olarak, sınıfından türetilen `CComControl`. `CComControl` kendi yöntemleri çoğunu türetilen [CComControlBase](../../atl/reference/ccomcontrolbase-class.md).  
   
  Bir denetim oluşturma hakkında daha fazla bilgi için bkz: [ATL öğretici](../../atl/active-template-library-atl-tutorial.md). ATL Proje Sihirbazı hakkında daha fazla bilgi için bkz: [bir ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md).  
   
@@ -96,7 +91,7 @@ class ATL_NO_VTABLE CComControl : public CComControlBase,
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlctl.h  
   
-##  <a name="ccomcontrol"></a>CComControl::CComControl  
+##  <a name="ccomcontrol"></a>  CComControl::CComControl  
  Oluşturucu.  
   
 ```
@@ -106,7 +101,7 @@ CComControl();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [CComControlBase](ccomcontrolbase-class.md#ccomcontrolbase) geçirme Oluşturucusu `m_hWnd` veri üyesi devralınan aracılığıyla [CWindowImpl](../../atl/reference/cwindowimpl-class.md).  
   
-##  <a name="controlqueryinterface"></a>CComControl::ControlQueryInterface  
+##  <a name="controlqueryinterface"></a>  CComControl::ControlQueryInterface  
  İstenen arabirim için bir işaretçi alır.  
   
 ```
@@ -126,7 +121,7 @@ virtual HRESULT ControlQueryInterface(const IID& iid, void** ppv);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#15](../../atl/codesnippet/cpp/ccomcontrol-class_1.cpp)]  
   
-##  <a name="createcontrolwindow"></a>CComControl::CreateControlWindow  
+##  <a name="createcontrolwindow"></a>  CComControl::CreateControlWindow  
  Varsayılan olarak, denetimi için pencere çağırarak oluşturur `CWindowImpl::Create`.  
   
 ```
@@ -146,7 +141,7 @@ virtual HWND CreateControlWindow(HWND hWndParent, RECT& rcPos);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#16](../../atl/codesnippet/cpp/ccomcontrol-class_2.cpp)]  
   
-##  <a name="fireonchanged"></a>CComControl::FireOnChanged  
+##  <a name="fireonchanged"></a>  CComControl::FireOnChanged  
  Bir denetim özelliği değişti kapsayıcının havuz bildirir.  
   
 ```
@@ -154,7 +149,7 @@ HRESULT FireOnChanged(DISPID dispID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *DISPID*  
+ *dispID*  
  [in] Değişti özellik tanımlayıcısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -168,7 +163,7 @@ HRESULT FireOnChanged(DISPID dispID);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#17](../../atl/codesnippet/cpp/ccomcontrol-class_3.cpp)]  
   
-##  <a name="fireonrequestedit"></a>CComControl::FireOnRequestEdit  
+##  <a name="fireonrequestedit"></a>  CComControl::FireOnRequestEdit  
  Kapsayıcının havuz denetim özelliğini değiştirilmek üzere olduğunu ve nesne nasıl ilerleyeceğiniz havuz isteyen bildirir.  
   
 ```
@@ -176,7 +171,7 @@ HRESULT FireOnRequestEdit(DISPID dispID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *DISPID*  
+ *dispID*  
  [in] Değiştirilmek özellik tanımlayıcısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -191,7 +186,7 @@ HRESULT FireOnRequestEdit(DISPID dispID);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#18](../../atl/codesnippet/cpp/ccomcontrol-class_4.cpp)]  
   
-##  <a name="messagebox"></a>CComControl::MessageBox  
+##  <a name="messagebox"></a>  CComControl::MessageBox  
  Oluşturun, görüntüleyin ve bir ileti kutusu çalıştırmak için bu yöntemi çağırın.  
   
 ```
@@ -215,7 +210,7 @@ int MessageBox(
  Altında listelenen menü öğesi değerlerden birini belirten bir tamsayı değeri döndürür [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) Windows SDK belgelerinde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `MessageBox`Geliştirme sırasında hem bir hata veya uyarı iletisi kullanıcıya görüntülenmesi için kolay bir yol olarak yararlıdır.  
+ `MessageBox` Geliştirme sırasında hem bir hata veya uyarı iletisi kullanıcıya görüntülenmesi için kolay bir yol olarak yararlıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CWindowImpl sınıfı](../../atl/reference/cwindowimpl-class.md)   

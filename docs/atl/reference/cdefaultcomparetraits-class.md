@@ -1,12 +1,9 @@
 ---
-title: "CDefaultCompareTraits sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDefaultCompareTraits sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CDefaultCompareTraits
@@ -18,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - CDefaultCompareTraits class
 ms.assetid: a17e2740-e7b4-48f2-aeb7-c80ce84b63f7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13c8bfd8ac02979f82e205ec86269b7ac40c8b08
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c5b06bf475c60c0190fc6ab78f4357e1b247f1d8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cdefaultcomparetraits-class"></a>CDefaultCompareTraits sınıfı
 Bu sınıf varsayılan öğesi karşılaştırma işlevleri sağlar.  
@@ -61,7 +56,7 @@ class CDefaultCompareTraits
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcoll.h  
   
-##  <a name="compareelements"></a>CDefaultCompareTraits::CompareElements  
+##  <a name="compareelements"></a>  CDefaultCompareTraits::CompareElements  
  Eşitlik için iki öğeleri karşılaştırmak için bu işlevini çağırın.  
   
 ```
@@ -81,7 +76,7 @@ static bool CompareElements(const T& element1, const T& element2);
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan bu işlev eşitlik uygulamasıdır ( `==`) işleci. Basit veri türleri farklı nesneler için bu işlev geçersiz kılınması gerekebilir.  
   
-##  <a name="compareelementsordered"></a>CDefaultCompareTraits::CompareElementsOrdered  
+##  <a name="compareelementsordered"></a>  CDefaultCompareTraits::CompareElementsOrdered  
  Büyük ve küçük öğeyi belirlemek üzere bu işlevini çağırın.  
   
 ```
@@ -105,7 +100,7 @@ static int CompareElementsOrdered(const T& element1, const T& element2);
 |`element1` > `element2`|>0|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev varsayılan uygulamasını kullanan `==`,  **\<** , ve  **>**  işleçler. Basit veri türleri farklı nesneler için bu işlev geçersiz kılınması gerekebilir.  
+ Bu işlev varsayılan uygulamasını kullanan `==`, **\<**, ve **>** işleçler. Basit veri türleri farklı nesneler için bu işlev geçersiz kılınması gerekebilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../../atl/atl-class-overview.md)

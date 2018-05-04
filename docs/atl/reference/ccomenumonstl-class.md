@@ -1,12 +1,9 @@
 ---
-title: "CComEnumOnSTL sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComEnumOnSTL sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComEnumOnSTL
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - CComEnumOnSTL class
 ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d42d99baf154bc5434f2d771aeaabb71c5502b30
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8c380ba7b6c2c13f178a15263e1ff510f9f3c31c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomenumonstl-class"></a>CComEnumOnSTL sınıfı
 Bu sınıf bir C++ Standart Kitaplığı koleksiyona bağlı bir COM Numaralandırıcı nesnesi tanımlar.  
@@ -60,11 +55,11 @@ class ATL_NO_VTABLE CComEnumOnSTL : public IEnumOnSTLImpl<Base, piid,
  C++ Standart Kitaplığı kapsayıcı sınıfı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComEnumOnSTL`bir C++ Standart Kitaplığı koleksiyona bağlı bir COM Numaralandırıcı nesnesi tanımlar. Bu sınıf kendi başına veya birlikte kullanılan [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md). Bu sınıf kullanma için tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için bkz: [ATL koleksiyonları ve numaralandırmalar](../../atl/atl-collections-and-enumerators.md).  
+ `CComEnumOnSTL` bir C++ Standart Kitaplığı koleksiyona bağlı bir COM Numaralandırıcı nesnesi tanımlar. Bu sınıf kendi başına veya birlikte kullanılan [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md). Bu sınıf kullanma için tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için bkz: [ATL koleksiyonları ve numaralandırmalar](../../atl/atl-collections-and-enumerators.md).  
   
 ## <a name="to-use-this-class-with-icollectiononstlimpl"></a>Bu sınıf ICollectionOnSTLImpl ile kullanmak için:  
   
-- `typedef`Bu sınıf uzmanlaşması.  
+- `typedef` Bu sınıf uzmanlaşması.  
   
 -   Kullanım `typedef` bir alt uzmanlaşması son şablon bağımsız değişken olarak `ICollectionOnSTLImpl`.  
   
@@ -72,7 +67,7 @@ class ATL_NO_VTABLE CComEnumOnSTL : public IEnumOnSTLImpl<Base, piid,
   
 ## <a name="to-use-this-class-independently-of-icollectiononstlimpl"></a>Bu sınıf ICollectionOnSTLImpl bağımsız olarak kullanmak için:  
   
-- `typedef`Bu sınıf uzmanlaşması.  
+- `typedef` Bu sınıf uzmanlaşması.  
   
 -   Kullanım `typedef` bir alt uzmanlaşması şablon bağımsız değişken olarak `CComObject`.  
   
@@ -87,7 +82,7 @@ class ATL_NO_VTABLE CComEnumOnSTL : public IEnumOnSTLImpl<Base, piid,
   
  `Base`  
   
- [İn uygulamasına](../../atl/reference/ccomobjectrootex-class.md)  
+ [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)  
   
  [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)  
   

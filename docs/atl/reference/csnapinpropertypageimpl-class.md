@@ -2,11 +2,8 @@
 title: CSnapInPropertyPageImpl sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CSnapInPropertyPageImpl
@@ -34,17 +31,15 @@ helpviewer_keywords:
 - property pages, ATL
 - CSnapInPropertyPageImpl class
 ms.assetid: 75bdce5a-985e-4166-bd44-493132e023c4
-caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5fc1135f02c31c644d7d149900bbaa755a52c579
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 13714553bdf926b00bd4dd76e039d89c7f78f959
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="csnapinpropertypageimpl-class"></a>CSnapInPropertyPageImpl sınıfı
 Bu sınıf bir ek özellik sayfası nesnesi uygulamak için yöntemleri sağlar.  
@@ -91,7 +86,7 @@ CSnapInPropertyPageImpl : public CDialogImplBase
 |[CSnapInPropertyPageImpl::m_psp](#m_psp)|Windows **PROPSHEETPAGE** tarafından kullanılan yapısı `CSnapInPropertyPageImpl` nesnesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CSnapInPropertyPageImpl`bir ek özellik sayfası nesnesi için temel bir uygulama sağlar. Bir ek özellik sayfası, temel özellikleri birkaç farklı arabirimleri kullanılarak uygulanan ve türleri eşlenir.  
+ `CSnapInPropertyPageImpl` bir ek özellik sayfası nesnesi için temel bir uygulama sağlar. Bir ek özellik sayfası, temel özellikleri birkaç farklı arabirimleri kullanılarak uygulanan ve türleri eşlenir.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CDialogImplBase`  
@@ -101,7 +96,7 @@ CSnapInPropertyPageImpl : public CDialogImplBase
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsnap.h  
   
-##  <a name="canceltoclose"></a>CSnapInPropertyPageImpl::CancelToClose  
+##  <a name="canceltoclose"></a>  CSnapInPropertyPageImpl::CancelToClose  
  Kalıcı özellik sayfasının bir sayfa verilerde kurtarılamaz bir değişiklik yapıldıktan sonra bu işlevini çağırın.  
   
 ```
@@ -113,7 +108,7 @@ void CancelToClose();
   
  `CancelToClose` Üye işlevi hiçbir şey yapmaz kalıcı olmayan özellik sayfası, kalıcı olmayan özellik sayfası sahip olmadığından bir **iptal** varsayılan düğme.  
   
-##  <a name="csnapinpropertypageimpl"></a>CSnapInPropertyPageImpl::CSnapInPropertyPageImpl  
+##  <a name="csnapinpropertypageimpl"></a>  CSnapInPropertyPageImpl::CSnapInPropertyPageImpl  
  Oluşturan bir `CSnapInPropertyPageImpl` nesnesi.  
   
 ```
@@ -127,7 +122,7 @@ CSnapInPropertyPageImpl(LPCTSTR lpszTitle = NULL);
 ### <a name="remarks"></a>Açıklamalar  
  Temel alınan yapısı başlatmak için arama [CSnapInPropertyPageImpl::Create](#create).  
   
-##  <a name="create"></a>CSnapInPropertyPageImpl::Create  
+##  <a name="create"></a>  CSnapInPropertyPageImpl::Create  
  Özellik sayfası alt yapısını başlatmak için bu işlevini çağırın.  
   
 ```
@@ -140,8 +135,8 @@ HPROPSHEETPAGE Create();
 ### <a name="remarks"></a>Açıklamalar  
  İlk çağırmalıdır [CSnapInPropertyPageImpl::CSnapInPropertyPageImpl](#csnapinpropertypageimpl) bu işlevi çağrılmadan önce.  
   
-##  <a name="m_psp"></a>CSnapInPropertyPageImpl::m_psp  
- `m_psp`üyeleri özelliklerini depolamak bir yapıdır **PROPSHEETPAGE**.  
+##  <a name="m_psp"></a>  CSnapInPropertyPageImpl::m_psp  
+ `m_psp` üyeleri özelliklerini depolamak bir yapıdır **PROPSHEETPAGE**.  
   
 ```
 PROPSHEETPAGE m_psp;
@@ -152,7 +147,7 @@ PROPSHEETPAGE m_psp;
   
  Bu grubun üyeleri listesi dahil olmak üzere bu yapı hakkında daha fazla bilgi için bkz: [PROPSHEETPAGE](http://msdn.microsoft.com/library/aa815151) Windows SDK'sındaki.  
   
-##  <a name="onapply"></a>CSnapInPropertyPageImpl::OnApply  
+##  <a name="onapply"></a>  CSnapInPropertyPageImpl::OnApply  
  Kullanıcı tıkladığında bu üye işlev çağrılır **Tamam** veya **şimdi Uygula** düğmesi.  
   
 ```
@@ -169,7 +164,7 @@ BOOL OnApply();
   
  Varsayılan uygulaması `OnApply` döndürür **doğru**.  
   
-##  <a name="onhelp"></a>CSnapInPropertyPageImpl::OnHelp  
+##  <a name="onhelp"></a>  CSnapInPropertyPageImpl::OnHelp  
  Kullanıcı tıkladığında bu üye işlev çağrılır **yardımcı** özellik sayfasının düğmesini.  
   
 ```
@@ -179,7 +174,7 @@ void OnHelp();
 ### <a name="remarks"></a>Açıklamalar  
  Özellik sayfası için Yardım görüntülemek için bu üye işlevi geçersiz kılar.  
   
-##  <a name="onkillactive"></a>CSnapInPropertyPageImpl::OnKillActive  
+##  <a name="onkillactive"></a>  CSnapInPropertyPageImpl::OnKillActive  
  Sayfa artık etkin sayfa olduğunda bu üye işlev çağrılır.  
   
 ```
@@ -192,7 +187,7 @@ BOOL OnKillActive();
 ### <a name="remarks"></a>Açıklamalar  
  Özel veri doğrulama görevleri gerçekleştirmek için bu üye işlevi geçersiz kılar.  
   
-##  <a name="onquerycancel"></a>CSnapInPropertyPageImpl::OnQueryCancel  
+##  <a name="onquerycancel"></a>  CSnapInPropertyPageImpl::OnQueryCancel  
  Kullanıcı tıkladığında bu üye işlev çağrılır **iptal** düğmesine tıklayın ve önce iptal eylemi devre dışı gerçekleştikten.  
   
 ```
@@ -207,7 +202,7 @@ BOOL OnQueryCancel();
   
  Varsayılan uygulaması `OnQueryCancel` döndürür **doğru**.  
   
-##  <a name="onreset"></a>CSnapInPropertyPageImpl::OnReset  
+##  <a name="onreset"></a>  CSnapInPropertyPageImpl::OnReset  
  Kullanıcı tıkladığında bu üye işlev çağrılır **iptal** düğmesi.  
   
 ```
@@ -219,7 +214,7 @@ void OnReset();
   
  Program alır kullanıcı tıklattığında hangi eylemini belirtmek üzere bu üye işlevi geçersiz kılma **iptal** düğmesi.  
   
-##  <a name="onsetactive"></a>CSnapInPropertyPageImpl::OnSetActive  
+##  <a name="onsetactive"></a>  CSnapInPropertyPageImpl::OnSetActive  
  Sayfa kullanıcı tarafından seçilir ve etkin sayfa haline gelir, bu üye işlev çağrılır.  
   
 ```
@@ -234,7 +229,7 @@ BOOL OnSetActive();
   
  Varsayılan uygulama döndürür **doğru**.  
   
-##  <a name="onwizardback"></a>CSnapInPropertyPageImpl::OnWizardBack  
+##  <a name="onwizardback"></a>  CSnapInPropertyPageImpl::OnWizardBack  
  Kullanıcı tıkladığında bu üye işlev çağrılır **geri** bir Sihirbazı'nda düğmesini.  
   
 ```
@@ -252,7 +247,7 @@ BOOL OnWizardBack();
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı ne zaman gerçekleştirmeniz gereken bazı eylemleri belirtmek için bu üye işlevi geçersiz kılma **geri** düğmesine tıklandığında.  
   
-##  <a name="onwizardfinish"></a>CSnapInPropertyPageImpl::OnWizardFinish  
+##  <a name="onwizardfinish"></a>  CSnapInPropertyPageImpl::OnWizardFinish  
  Kullanıcı tıkladığında bu üye işlev çağrılır **son** bir Sihirbazı'nda düğmesini.  
   
 ```
@@ -265,7 +260,7 @@ BOOL OnWizardFinish();
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı ne zaman gerçekleştirmeniz gereken bazı eylemleri belirtmek için bu üye işlevi geçersiz kılma **son** düğmesine tıklandığında.  
   
-##  <a name="onwizardnext"></a>CSnapInPropertyPageImpl::OnWizardNext  
+##  <a name="onwizardnext"></a>  CSnapInPropertyPageImpl::OnWizardNext  
  Kullanıcı tıkladığında bu üye işlev çağrılır `Next` bir Sihirbazı'nda düğmesini.  
   
 ```
@@ -283,7 +278,7 @@ BOOL OnWizardNext();
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı ne zaman gerçekleştirmeniz gereken bazı eylemleri belirtmek için bu üye işlevi geçersiz kılma `Next` düğmesine tıklandığında.  
   
-##  <a name="querysiblings"></a>CSnapInPropertyPageImpl::QuerySiblings  
+##  <a name="querysiblings"></a>  CSnapInPropertyPageImpl::QuerySiblings  
  Özellik sayfasında her sayfaya bir iletiyi iletmesini bu üye işlevini çağırın.  
   
 ```
@@ -303,7 +298,7 @@ LRESULT QuerySiblings(WPARAM wParam, LPARAM lParam);
 ### <a name="remarks"></a>Açıklamalar  
  Bir sayfa sıfır olmayan bir değer döndürürse, özellik sayfasında sonraki sayfalara ileti göndermez.  
   
-##  <a name="setmodified"></a>CSnapInPropertyPageImpl::SetModified  
+##  <a name="setmodified"></a>  CSnapInPropertyPageImpl::SetModified  
  Etkinleştirmek veya devre dışı bırakmak için bu üye işlevini çağırın **şimdi Uygula** düğmesi, özellik sayfasında ayarlarında uygun dış nesnesine uygulanmalıdır olup tabanlı.  
   
 ```

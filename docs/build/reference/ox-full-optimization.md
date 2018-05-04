@@ -1,13 +1,10 @@
 ---
-title: "-Ox (çoğu hızı en iyi duruma getirme etkinleştir) | Microsoft Docs"
-ms.custom: 
+title: -Ox (çoğu hızı en iyi duruma getirme etkinleştir) | Microsoft Docs
+ms.custom: ''
 ms.date: 09/25/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.ToolOptimization
 - /ox
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - /Ox compiler option [C++]
 - -Ox compiler option [C++]
 ms.assetid: 3ad7c30b-c615-428c-b1d0-2e024f81c760
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85efa8a2beab34d0dcf1bdb74e3cf89008b10d6e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 569563bff030904988e93db749438eaeb58ce9db
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ox-enable-most-speed-optimizations"></a>/Ox (çoğu hızı en iyi duruma getirme etkinleştir)
 
@@ -47,9 +42,9 @@ ms.lasthandoff: 12/21/2017
 
 - [/OB (satır içi işlev genişletmesi)](../../build/reference/ob-inline-function-expansion.md), seçenek parametresinin 2 olduğu (**/Ob2**)
 
-- [/Og (global iyileştirmeler)](../../build/reference/og-global-optimizations.md)
+- [/Og (Global İyileştirmeler)](../../build/reference/og-global-optimizations.md)
 
-- [/Oi (iç işlevler üret)](../../build/reference/oi-generate-intrinsic-functions.md)
+- [/Oi (İç İşlevler Üret)](../../build/reference/oi-generate-intrinsic-functions.md)
 
 - [/Ot (hızlı koda)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md)
 
@@ -61,7 +56,7 @@ ms.lasthandoff: 12/21/2017
 
 - [/ O2 (hızı en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md)
 
-- [/Od (devre dışı bırak (Hata Ayıkla))](../../build/reference/od-disable-debug.md)
+- [/Od (Devre Dışı Bırak (Hata Ayıkla))](../../build/reference/od-disable-debug.md)
 
 Hızına doğru sapması iptal edebilirsiniz **/Ox** belirtirseniz derleyici seçeneği **/Oxs**, hangi birleştirir **/Ox** derleyici seçeneği ile [/Os (ayrıcalık küçük Kodu)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md). Birleşik seçenekleri küçük kod boyutu favor.
 
@@ -81,6 +76,6 @@ Yayın derlemeleri için tüm kullanılabilir dosya düzeyinde iyileştirmeler u
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[/O seçenekler (kodu İyileştir)](../../build/reference/o-options-optimize-code.md)  
+[/O Seçenekler (Kodu İyileştir)](../../build/reference/o-options-optimize-code.md)  
 [Derleyici Seçenekleri](../../build/reference/compiler-options.md)  
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

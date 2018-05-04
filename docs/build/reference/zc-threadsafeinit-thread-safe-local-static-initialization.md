@@ -1,10 +1,10 @@
 ---
-title: "/ZC:threadSafeInit (iş parçacığı yerel statik başlatma) | Microsoft Docs"
-ms.custom: 
+title: /ZC:threadSafeInit (iş parçacığı yerel statik başlatma) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - threadSafeInit
 - /Zc:threadSafeInit
@@ -19,14 +19,13 @@ helpviewer_keywords:
 ms.assetid: a0fc4b34-2cf0-45a7-a642-b8afc4ca19f2
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0a809e0137ccdf03318eab64f5af1db542906c4
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 438ce5ba783f646e9c8e61d9b82999ea936532b4
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="zcthreadsafeinit-thread-safe-local-static-initialization"></a>/ZC:threadSafeInit (iş parçacığı yerel statik başlatma)
 

@@ -1,12 +1,9 @@
 ---
-title: "CTime sınıfı | Microsoft Docs"
-ms.custom: 
+title: CTime sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CTime
@@ -34,17 +31,15 @@ helpviewer_keywords:
 - CTime class
 - shared classes, CTime
 ms.assetid: 0a299544-485b-48dc-9d3c-fdc30f57d612
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82f3d4bf1d0c705d7712adb092a5f6d965099a26
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8ec195c7733255487b08f8b48379abe58e305f61
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ctime-class"></a>CTime sınıfı
 Bir mutlak saatini ve tarihini temsil eder.  
@@ -94,11 +89,11 @@ class CTime
 |[operator ==, <, vb..](#ctime_comparison_operators)|Karşılaştırma işleçleri.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CTime`bir taban sınıfı yok.  
+ `CTime` bir taban sınıfı yok.  
   
- `CTime`değerler Eşgüdümlü Evrensel Saat (UTC) Eşgüdümlü Evrensel Saat (Greenwich saati, GMT) eşdeğerdir temel alır. Bkz: [zaman Yönetimi](../../c-runtime-library/time-management.md) saat dilimi belirleme hakkında bilgi.  
+ `CTime` değerler Eşgüdümlü Evrensel Saat (UTC) Eşgüdümlü Evrensel Saat (Greenwich saati, GMT) eşdeğerdir temel alır. Bkz: [zaman Yönetimi](../../c-runtime-library/time-management.md) saat dilimi belirleme hakkında bilgi.  
   
- Oluştururken bir `CTime` nesne, ayarlamak `nDST` parametresi Standart Saati yürürlükte ya da göstermek için 0'dan büyük bir değere o gün ışığından yararlanma saati yürürlükte olduğunu göstermek için 0 veya bir değer sıfırdan C çalışma zamanı kitaplığı kodu bilgi sağlamak için e Standart Saati gün ışığından yararlanma saati etkin olup. `tm_isdst`gerekli bir alandır. Ayarlı değil, kendi değeri tanımsız ise ve dönüş değerini [mktime](../../c-runtime-library/reference/mktime-mktime32-mktime64.md) tahmin edilemez. Varsa `timeptr` önceki bir çağrı tarafından döndürülen tm yapısı işaret [asctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md), [_gmtime_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md), veya [localtime_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md), `tm_isdst` alan içerir doğru değeri.  
+ Oluştururken bir `CTime` nesne, ayarlamak `nDST` parametresi Standart Saati yürürlükte ya da göstermek için 0'dan büyük bir değere o gün ışığından yararlanma saati yürürlükte olduğunu göstermek için 0 veya bir değer sıfırdan C çalışma zamanı kitaplığı kodu bilgi sağlamak için e Standart Saati gün ışığından yararlanma saati etkin olup. `tm_isdst` gerekli bir alandır. Ayarlı değil, kendi değeri tanımsız ise ve dönüş değerini [mktime](../../c-runtime-library/reference/mktime-mktime32-mktime64.md) tahmin edilemez. Varsa `timeptr` önceki bir çağrı tarafından döndürülen tm yapısı işaret [asctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md), [_gmtime_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md), veya [localtime_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md), `tm_isdst` alan içerir doğru değeri.  
   
  Bir yardımcı sınıf [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md), bir zaman aralığı temsil eder.  
   
@@ -115,7 +110,7 @@ class CTime
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atltime.h  
   
-##  <a name="ctime_comparison_operators"></a>CTime Karşılaştırma işleçleri  
+##  <a name="ctime_comparison_operators"></a>  CTime Karşılaştırma işleçleri  
  Karşılaştırma işleçleri.  
   
 ```  
@@ -137,7 +132,7 @@ bool operator>=(CTime time) const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#161](../../atl-mfc-shared/codesnippet/cpp/ctime-class_1.cpp)]  
   
-##  <a name="ctime"></a>CTime::CTime  
+##  <a name="ctime"></a>  CTime::CTime  
  Yeni bir `CTime` nesnesi ile belirtilen süre başlatıldı.  
   
 ```  
@@ -165,11 +160,11 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
  `nDST`  
  Günışığından etkin olup olmadığını gösterir. Üç değerlerden biri olabilir:  
   
-- `nDST`0Standard zaman kümesine etkili olur.  
+- `nDST` 0Standard zaman kümesine etkili olur.  
   
-- `nDST`saati etkindir 0Daylight büyük bir değere ayarlayın.  
+- `nDST` saati etkindir 0Daylight büyük bir değere ayarlayın.  
   
-- `nDST`0The varsayılan değerinden daha düşük bir değere ayarlayın. Standart Saati günışığından etkin olup otomatik olarak hesaplar.  
+- `nDST` 0The varsayılan değerinden daha düşük bir değere ayarlayın. Standart Saati günışığından etkin olup otomatik olarak hesaplar.  
   
  `wDosDate`, `wDosTime`  
  Bir tarih/saat değerine dönüştürülen ve yeni içine kopyalanan MS-DOS tarih ve saat değerlerini `CTime` nesne.  
@@ -219,7 +214,7 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#148](../../atl-mfc-shared/codesnippet/cpp/ctime-class_2.cpp)]  
   
-##  <a name="format"></a>CTime::Format  
+##  <a name="format"></a>  CTime::Format  
  Tarih saat değeri biçimlendirilmiş bir temsilini oluşturmak için bu üye işlevini çağırın.  
   
 ```  
@@ -245,7 +240,7 @@ CString Format(UINT nFormatID) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#149](../../atl-mfc-shared/codesnippet/cpp/ctime-class_3.cpp)]  
   
-##  <a name="formatgmt"></a>CTime::FormatGmt  
+##  <a name="formatgmt"></a>  CTime::FormatGmt  
  Buna karşılık gelen biçimlendirilmiş bir dize oluşturur `CTime` nesnesi.  
   
 ```  
@@ -271,7 +266,7 @@ CString FormatGmt(UINT nFormatID) const;
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CTime::Format](#format).  
   
-##  <a name="getasdbtimestamp"></a>CTime::GetAsDBTIMESTAMP  
+##  <a name="getasdbtimestamp"></a>  CTime::GetAsDBTIMESTAMP  
  Depolanan saat bilgisi dönüştürmek için bu üye işlevini çağırın `CTime` Win32 uyumlu DBTIMESTAMP yapısına nesne.  
   
 ```  
@@ -291,7 +286,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#150](../../atl-mfc-shared/codesnippet/cpp/ctime-class_4.cpp)]  
   
-##  <a name="getassystemtime"></a>CTime::GetAsSystemTime  
+##  <a name="getassystemtime"></a>  CTime::GetAsSystemTime  
  Depolanan saat bilgisi dönüştürmek için bu üye işlevini çağırın `CTime` Win32 uyumlu nesnesine [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı.  
   
 ```  
@@ -306,12 +301,12 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
  Başarılı olursa TRUE; Aksi takdirde false.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `GetAsSystemTime`Sonuçta elde edilen zaman başvurulan depolar *timeDest* yapısı. `SYSTEMTIME` Bu işlev tarafından başlatılan veri yapısı olacaktır, **wMilliseconds** üye sıfır olarak ayarlayın.  
+ `GetAsSystemTime` Sonuçta elde edilen zaman başvurulan depolar *timeDest* yapısı. `SYSTEMTIME` Bu işlev tarafından başlatılan veri yapısı olacaktır, **wMilliseconds** üye sıfır olarak ayarlayın.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#151](../../atl-mfc-shared/codesnippet/cpp/ctime-class_5.cpp)]  
   
-##  <a name="getcurrenttime"></a>CTime::GetCurrentTime  
+##  <a name="getcurrenttime"></a>  CTime::GetCurrentTime  
  Döndürür bir `CTime` geçerli saati temsil eden nesne.  
   
 ```  
@@ -324,7 +319,7 @@ static CTime WINAPI GetCurrentTime() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#152](../../atl-mfc-shared/codesnippet/cpp/ctime-class_6.cpp)]  
   
-##  <a name="getday"></a>CTime::GetDay  
+##  <a name="getday"></a>  CTime::GetDay  
  Günü temsil tarafından döndürür `CTime` nesnesi.  
   
 ```  
@@ -340,7 +335,7 @@ int GetDay() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#153](../../atl-mfc-shared/codesnippet/cpp/ctime-class_7.cpp)]  
   
-##  <a name="getdayofweek"></a>CTime::GetDayOfWeek  
+##  <a name="getdayofweek"></a>  CTime::GetDayOfWeek  
  Tarafından temsil edilen haftanın gününü verir `CTime` nesnesi.  
   
 ```  
@@ -356,7 +351,7 @@ int GetDayOfWeek() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#154](../../atl-mfc-shared/codesnippet/cpp/ctime-class_8.cpp)]  
   
-##  <a name="getgmttm"></a>CTime::GetGmtTm  
+##  <a name="getgmttm"></a>  CTime::GetGmtTm  
  Alır bir **yapısı tm** ayrıştırma bu konuda yer alan süreyi içeren `CTime` nesnesi.  
   
 ```  
@@ -371,14 +366,14 @@ struct tm* GetGmtTm(struct tm* ptm) const;
  Bir işaretçi bir içi doldurulmuş **yapısı tm** içerme dosyası zaman tanımlanan. H. Bkz: [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) yapısı düzeni için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `GetGmtTm`UTC biçiminde döndürür.  
+ `GetGmtTm` UTC biçiminde döndürür.  
   
- `ptm`olamaz `NULL`. Eski davranışı geri dönmek istiyorsanız `ptm` olabilir `NULL` bir iç, statik olarak ayrılan arabellek kullanılması gerektiğini belirtmek için ardından tanımsız `_SECURE_ATL`.  
+ `ptm` olamaz `NULL`. Eski davranışı geri dönmek istiyorsanız `ptm` olabilir `NULL` bir iç, statik olarak ayrılan arabellek kullanılması gerektiğini belirtmek için ardından tanımsız `_SECURE_ATL`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#155](../../atl-mfc-shared/codesnippet/cpp/ctime-class_9.cpp)]  
   
-##  <a name="gethour"></a>CTime::GetHour  
+##  <a name="gethour"></a>  CTime::GetHour  
  Tarafından temsil edilen saati döndürür `CTime` nesnesi.  
   
 ```  
@@ -394,7 +389,7 @@ int GetHour() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#156](../../atl-mfc-shared/codesnippet/cpp/ctime-class_10.cpp)]  
   
-##  <a name="getlocaltm"></a>CTime::GetLocalTm  
+##  <a name="getlocaltm"></a>  CTime::GetLocalTm  
  Alır bir **yapısı tm** ayrıştırma bu konuda yer alan süreyi içeren `CTime` nesnesi.  
   
 ```  
@@ -409,14 +404,14 @@ struct tm* GetLocalTm(struct tm* ptm) const;
  Bir işaretçi bir içi doldurulmuş **yapısı tm** içerme dosyası zaman tanımlanan. H. Bkz: [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) yapısı düzeni için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `GetLocalTm`yerel saat döndürür.  
+ `GetLocalTm` yerel saat döndürür.  
   
- `ptm`olamaz `NULL`. Eski davranışı geri dönmek istiyorsanız `ptm` olabilir `NULL` bir iç, statik olarak ayrılan arabellek kullanılması gerektiğini belirtmek için ardından tanımsız `_SECURE_ATL`.  
+ `ptm` olamaz `NULL`. Eski davranışı geri dönmek istiyorsanız `ptm` olabilir `NULL` bir iç, statik olarak ayrılan arabellek kullanılması gerektiğini belirtmek için ardından tanımsız `_SECURE_ATL`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#157](../../atl-mfc-shared/codesnippet/cpp/ctime-class_11.cpp)]  
   
-##  <a name="getminute"></a>CTime::GetMinute  
+##  <a name="getminute"></a>  CTime::GetMinute  
  Tarafından temsil edilen dakikayı döndürür `CTime` nesnesi.  
   
 ```  
@@ -432,7 +427,7 @@ int GetMinute() const throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [GetHour](#gethour).  
   
-##  <a name="getmonth"></a>CTime::GetMonth  
+##  <a name="getmonth"></a>  CTime::GetMonth  
  Tarafından temsil edilen ayı verir `CTime` nesnesi.  
   
 ```  
@@ -448,7 +443,7 @@ int GetMonth() const throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [GetDay](#getday).  
   
-##  <a name="getsecond"></a>CTime::GetSecond  
+##  <a name="getsecond"></a>  CTime::GetSecond  
  Tarafından temsil edilen ikinci döndürür `CTime` nesnesi.  
   
 ```  
@@ -464,7 +459,7 @@ int GetSecond() const throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [GetHour](#gethour).  
   
-##  <a name="gettime"></a>CTime::GetTime  
+##  <a name="gettime"></a>  CTime::GetTime  
  Döndürür bir **__time64_t** değerini verilen `CTime` nesnesi.  
   
 ```  
@@ -477,7 +472,7 @@ __time64_t GetTime() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#158](../../atl-mfc-shared/codesnippet/cpp/ctime-class_12.cpp)]  
   
-##  <a name="getyear"></a>CTime::GetYear  
+##  <a name="getyear"></a>  CTime::GetYear  
  Tarafından temsil edilen yıl döndürür `CTime` nesnesi.  
   
 ```  
@@ -493,7 +488,7 @@ int GetYear();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [GetDay](#getday).  
   
-##  <a name="operator_eq"></a>CTime::operator =  
+##  <a name="operator_eq"></a>  CTime::operator =  
  Atama işleci.  
   
 ```  
@@ -510,7 +505,7 @@ CTime& operator=(__time64_t time) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu aşırı yüklenmiş atama işleci kaynak zaman bu kopyalar `CTime` nesnesi. İç saat depolama alanında bir `CTime` nesnesidir saat dilimini bağımsız. Saat dilimi dönüştürmesi atama sırasında gerekli değildir.  
   
-##  <a name="operator_add_-"></a>CTime::operator +, -  
+##  <a name="operator_add_-"></a>  CTime::operator +, -  
  Bu işleçlere ekleme ve çıkarma `CTimeSpan` ve `CTime` nesneleri.  
   
 ```  
@@ -520,7 +515,7 @@ CTimeSpan operator-(CTime time) const throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *timeSpan*  
+ *TimeSpan*  
  `CTimeSpan` Nesnesinin eklenir veya çıkarılır.  
   
  `time`  
@@ -530,12 +525,12 @@ CTimeSpan operator-(CTime time) const throw();
  A `CTime` veya `CTimeSpan` işlemin sonucunu temsil eden nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CTime`nesneleri temsil mutlak zaman `CTimeSpan` nesneleri göreli zaman temsil eder. İlk iki işleç ekleme ve çıkarma izin `CTimeSpan` ve ondan nesneleri `CTime` nesneleri. Üçüncü işleci bir çıkarma sayesinde `CTime` elde etmek üzere başka bir nesneden bir `CTimeSpan` nesnesi.  
+ `CTime` nesneleri temsil mutlak zaman `CTimeSpan` nesneleri göreli zaman temsil eder. İlk iki işleç ekleme ve çıkarma izin `CTimeSpan` ve ondan nesneleri `CTime` nesneleri. Üçüncü işleci bir çıkarma sayesinde `CTime` elde etmek üzere başka bir nesneden bir `CTimeSpan` nesnesi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#159](../../atl-mfc-shared/codesnippet/cpp/ctime-class_13.cpp)]  
   
-##  <a name="operator_add_eq_-_eq"></a>CTime::operator +=-=  
+##  <a name="operator_add_eq_-_eq"></a>  CTime::operator +=-=  
  Bu işleçlere ekleme ve bir `CTimeSpan` nesne için ve bu `CTime` nesnesi.  
   
 ```  
@@ -556,7 +551,7 @@ CTime& operator-=(CTimeSpan span) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#160](../../atl-mfc-shared/codesnippet/cpp/ctime-class_14.cpp)]  
   
-##  <a name="serialize64"></a>CTime::Serialize64  
+##  <a name="serialize64"></a>  CTime::Serialize64  
   
 > [!NOTE]
 >  Bu yöntem yalnızca MFC projelerinde kullanılabilir.  

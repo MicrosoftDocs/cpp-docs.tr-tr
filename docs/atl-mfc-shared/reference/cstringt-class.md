@@ -1,12 +1,9 @@
 ---
-title: "CStringT sınıfı | Microsoft Docs"
-ms.custom: 
+title: CStringT sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CStringT
@@ -89,17 +86,15 @@ helpviewer_keywords:
 - shared classes, CStringT
 - CStringT class
 ms.assetid: 7cacc59c-425f-40f1-8f5b-6db921318ec9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d3b718249603c34d5a9a13eec966b586151f2e7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2f8a66f87b3c4a2c6712a1db93f97361a25b6955
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cstringt-class"></a>CStringT sınıfı
 Bu sınıfın temsil ettiği bir `CStringT` nesnesi.  
@@ -120,9 +115,9 @@ public CSimpleStringT<BaseType,
  `BaseType`  
  String sınıfı karakter türü. Aşağıdakilerden biri olabilir:  
   
-- `char`(için ANSI karakter dizelerini).  
+- `char` (için ANSI karakter dizelerini).  
   
-- `wchar_t`(için Unicode karakter dizeleri).  
+- `wchar_t` (için Unicode karakter dizeleri).  
   
 - **TCHAR** (için ANSI ve Unicode karakter dizelerini).  
   
@@ -202,18 +197,18 @@ public CSimpleStringT<BaseType,
 |[CStringT::operator +=](#operator_add_eq)|Varolan bir dizeyi sonuna yeni bir dize art arda ekler.|  
 |[CStringT::operator ==](#operator_eq_eq)|İki dizeyi mantıksal olarak eşit olup olmadığını belirler.|  
 |[CStringT::operator! =](#operator_neq)|İki dizeyi eşit değilse mantıksal olarak belirler.|  
-|[CStringT::operator&lt;](#operator_lt)|İşlecinin sol tarafındaki dize değerinden çok olup olmadığını belirler sağ tarafında dize.|  
-|[CStringT::operator&gt;](#operator_gt)|Dize işlecinin sol tarafındaki sağ tarafında dizeye büyük olup olmadığını belirler.|  
-|[CStringT::operator&lt;=](#operator_lt_eq)|İşlecinin sol tarafındaki dize değerinden küçük veya buna eşit sağ tarafında dizeye olup olmadığını belirler.|  
-|[CStringT::operator&gt;=](#operator_gt_eq)|Dize işlecinin sol tarafındaki sağ tarafında dizeye eşit veya daha büyük olup olmadığını belirler.|  
+|[CStringT::operator &lt;](#operator_lt)|İşlecinin sol tarafındaki dize değerinden çok olup olmadığını belirler sağ tarafında dize.|  
+|[CStringT::operator &gt;](#operator_gt)|Dize işlecinin sol tarafındaki sağ tarafında dizeye büyük olup olmadığını belirler.|  
+|[CStringT::operator &lt;=](#operator_lt_eq)|İşlecinin sol tarafındaki dize değerinden küçük veya buna eşit sağ tarafında dizeye olup olmadığını belirler.|  
+|[CStringT::operator &gt;=](#operator_gt_eq)|Dize işlecinin sol tarafındaki sağ tarafında dizeye eşit veya daha büyük olup olmadığını belirler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CStringT`öğesinden devralınan [CSimpleStringT sınıfı](../../atl-mfc-shared/reference/csimplestringt-class.md). Sıralama ve arama, karakter işleme gibi gelişmiş özellikler tarafından uygulanır `CStringT`.  
+ `CStringT` öğesinden devralınan [CSimpleStringT sınıfı](../../atl-mfc-shared/reference/csimplestringt-class.md). Sıralama ve arama, karakter işleme gibi gelişmiş özellikler tarafından uygulanır `CStringT`.  
   
 > [!NOTE]
-> `CStringT`özel durumları atma özellikli nesneleridir. Bu meydana olduğunda bir `CStringT` nesne herhangi bir nedenle bellek yetersiz çalıştırır.  
+> `CStringT` özel durumları atma özellikli nesneleridir. Bu meydana olduğunda bir `CStringT` nesne herhangi bir nedenle bellek yetersiz çalıştırır.  
   
- A `CStringT` nesnesi değişken uzunlukta bir karakter dizisi içerir. `CStringT`İşlevler ve Basic için benzer bir sözdizimi kullanılarak işleçleri sağlar. Birleştirme ve Karşılaştırma işleçleri Basitleştirilmiş bellek yönetimi ile birlikte olmak `CStringT` nesneleri sıradan karakter dizileri kullanmak daha kolay.  
+ A `CStringT` nesnesi değişken uzunlukta bir karakter dizisi içerir. `CStringT` İşlevler ve Basic için benzer bir sözdizimi kullanılarak işleçleri sağlar. Birleştirme ve Karşılaştırma işleçleri Basitleştirilmiş bellek yönetimi ile birlikte olmak `CStringT` nesneleri sıradan karakter dizileri kullanmak daha kolay.  
   
 > [!NOTE]
 >  Oluşturmak mümkün olmakla `CStringT` katıştırılmış boş karakterler içeren örnekleri, karşı öneririz. Yöntemleri ve işleçleri çağrılması `CStringT` katıştırılmış boş karakterler içeren nesneleri, istenmeyen sonuçları oluşturabilirsiniz.  
@@ -251,11 +246,11 @@ public CSimpleStringT<BaseType,
 |**CAtlStringW**|Bir Unicode karakter dizesi CRT desteği olan yazın.|  
 |**CAtlString**|CRT desteğiyle ANSI ve Unicode karakter türleri.|  
   
- `CString`nesneleri aynı zamanda aşağıdaki özelliklere sahiptir:  
+ `CString` nesneleri aynı zamanda aşağıdaki özelliklere sahiptir:  
   
-- `CStringT`nesneleri birleştirme işlemleri sonucunda büyüyebilir.  
+- `CStringT` nesneleri birleştirme işlemleri sonucunda büyüyebilir.  
   
-- `CStringT`"semantiği değeri." nesneleri izleyin Düşünün bir `CStringT` nesne gerçek bir dize olarak, bir dize için bir işaretçi olarak değil.  
+- `CStringT` "semantiği değeri." nesneleri izleyin Düşünün bir `CStringT` nesne gerçek bir dize olarak, bir dize için bir işaretçi olarak değil.  
   
 -   Serbestçe değiştirebilirsiniz `CStringT` için nesneleri `PCXSTR` işlev bağımsız değişkenleri.  
   
@@ -288,7 +283,7 @@ public CSimpleStringT<BaseType,
 |cstringt.h|Yalnızca MFC string nesneleri|  
 |atlstr.h|MFC olmayan dize nesneleri|  
   
-##  <a name="allocsysstring"></a>CStringT::AllocSysString  
+##  <a name="allocsysstring"></a>  CStringT::AllocSysString  
  Bir otomasyon uyumlu dize türünde ayırır `BSTR` ve içeriğini kopyalar `CStringT` sonlandırma null karakteri de dahil olmak üzere, nesnesine.  
   
 ```  
@@ -312,7 +307,7 @@ BSTR AllocSysString() const;
   
  [!code-cpp[NVC_ATLMFC_Utilities#105](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_1.cpp)]  
   
-##  <a name="ansitooem"></a>CStringT::AnsiToOem  
+##  <a name="ansitooem"></a>  CStringT::AnsiToOem  
  Bu tüm karakterleri dönüştürür `CStringT` OEM karakter kümesine ANSI karakter nesnesinden.  
   
 ```  
@@ -325,7 +320,7 @@ void AnsiToOem();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#106](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_2.cpp)]  
   
-##  <a name="appendformat"></a>CStringT::AppendFormat  
+##  <a name="appendformat"></a>  CStringT::AppendFormat  
  Varolan bir biçimlendirilmiş veriler ekler `CStringT` nesnesi.  
   
 ```  
@@ -349,7 +344,7 @@ void __cdecl AppendFormat(UINT nFormatID, [, argument] ...);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#107](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_3.cpp)]  
   
-##  <a name="collate"></a>CStringT::Collate  
+##  <a name="collate"></a>  CStringT::Collate  
  Genel metin işlevi kullanarak iki dizeleri karşılaştırır `_tcscoll`.  
   
 ```  
@@ -366,7 +361,7 @@ int Collate(PCXSTR psz) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Genel metin işlevi `_tcscoll`, TCHAR tanımlanmış. H eşlemeleri ya da `strcoll`, `wcscoll`, veya `_mbscoll`derleme zamanında tanımlanan karakter kümesi bağlı olarak. Her işlev kod sayfasına göre dizeleri büyük küçük harfe duyarlı karşılaştırması şu anda kullanımda gerçekleştirir. Daha fazla bilgi için bkz: [strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l](../../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md).  
   
-##  <a name="collatenocase"></a>CStringT::CollateNoCase  
+##  <a name="collatenocase"></a>  CStringT::CollateNoCase  
  Genel metin işlevi kullanarak iki dizeleri karşılaştırır `_tcscoll`.  
   
 ```  
@@ -386,7 +381,7 @@ int CollateNoCase(PCXSTR psz) const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#109](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_4.cpp)]  
   
-##  <a name="compare"></a>CStringT::Compare  
+##  <a name="compare"></a>  CStringT::Compare  
  İki dizeyi (büyük küçük harf duyarlı) karşılaştırır.  
   
 ```  
@@ -410,7 +405,7 @@ int Compare(PCXSTR psz) const;
   
  [!code-cpp[NVC_ATLMFC_Utilities#110](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_5.cpp)]  
   
-##  <a name="comparenocase"></a>CStringT::CompareNoCase  
+##  <a name="comparenocase"></a>  CStringT::CompareNoCase  
  İki dizeyi (büyük küçük harfe duyarlı) karşılaştırır.  
   
 ```  
@@ -430,7 +425,7 @@ int CompareNoCase(PCXSTR psz) const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#111](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_6.cpp)]  
   
-##  <a name="cstringt"></a>CStringT::CStringT  
+##  <a name="cstringt"></a>  CStringT::CStringT  
  Oluşturan bir `CStringT` nesnesi.  
   
 ```  
@@ -531,11 +526,11 @@ CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :
  `BaseType`  
  String sınıfı karakter türü. Aşağıdakilerden biri olabilir:  
   
- `char`(için ANSI karakter dizelerini).  
+ `char` (için ANSI karakter dizelerini).  
   
- `wchar_t`(için Unicode karakter dizeleri).  
+ `wchar_t` (için Unicode karakter dizeleri).  
   
- `TCHAR`(ANSI ve Unicode karakter dizeleri için).  
+ `TCHAR` (ANSI ve Unicode karakter dizeleri için).  
   
  `bMFCDLL`  
  Proje bir MFC DLL (TRUE) olup olmadığını belirten Boolean (FALSE).  
@@ -551,14 +546,14 @@ CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :
   
 - `CStringT`( `LPCSTR` `lpsz` ): Bir Unicode yapıları `CStringT` ANSI dizesinden. Bu oluşturucu, aşağıdaki örnekte gösterildiği gibi bir dize kaynağı yüklemek için de kullanabilirsiniz.  
   
-- `CStringT(``LPCWSTR` `lpsz` ): Oluşturan bir `CStringT` bir Unicode dizeden.  
+- `CStringT(` `LPCWSTR` `lpsz` ): Oluşturan bir `CStringT` bir Unicode dizeden.  
   
 - `CStringT`( `const unsigned char*` `psz` ): Oluşturmanıza olanak sağlayan bir `CStringT` gösteren bir işaretçi gelen `unsigned char`.  
   
 > [!NOTE]
 >  Tanımlamak **_CSTRING_DISABLE_NARROW_WIDE_CONVERSION** arasında örtük dize dönüştürme devre dışı bırakmak üzere makrosu [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] ve [!INCLUDE[TLA#tla_unicode](../../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] dizeleri. Makro dönüştürme desteği derleme oluşturucular dışlar.  
   
- Unutmayın `strSrc` parametresi olabilir ya da bir `CStringT` veya `CThisSimpleString` nesnesi. İçin `CStringT`, kendi varsayılan örneklemesi birini kullanın ( `CString`, `CStringA`, veya `CStringW`) için; `CThisSimpleString`, kullanan bir `this` işaretçi. `CThisSimpleString`örneği bildirir [CSimpleStringT sınıfı](../../atl-mfc-shared/reference/csimplestringt-class.md), daha küçük bir string sınıfı daha az yerleşik işlevselliğe sahip olduğu `CStringT` sınıfı.  
+ Unutmayın `strSrc` parametresi olabilir ya da bir `CStringT` veya `CThisSimpleString` nesnesi. İçin `CStringT`, kendi varsayılan örneklemesi birini kullanın ( `CString`, `CStringA`, veya `CStringW`) için; `CThisSimpleString`, kullanan bir `this` işaretçi. `CThisSimpleString` örneği bildirir [CSimpleStringT sınıfı](../../atl-mfc-shared/reference/csimplestringt-class.md), daha küçük bir string sınıfı daha az yerleşik işlevselliğe sahip olduğu `CStringT` sınıfı.  
   
  Aşırı işleci `CSimpleStringT<>&()` oluşturan bir `CStringT` nesnesinin bir `CSimpleStringT` bildirimi.  
   
@@ -568,7 +563,7 @@ CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#112](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_7.cpp)]  
   
-##  <a name="_dtorcstringt"></a>CStringT:: ~ CStringT  
+##  <a name="_dtorcstringt"></a>  CStringT:: ~ CStringT  
  Bozar `CStringT` nesnesi.  
   
 ```  
@@ -578,7 +573,7 @@ CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :
 ### <a name="remarks"></a>Açıklamalar  
  Bozar `CStringT` nesnesi.  
   
-##  <a name="delete"></a>CStringT::Delete  
+##  <a name="delete"></a>  CStringT::Delete  
  Verilen dizindeki karakter ile başlayan bir dizeden bir karakter ya da karakterlerini siler.  
   
 ```  
@@ -608,7 +603,7 @@ After: Soccer best,
     but hockey is quicker!  
 ```  
   
-##  <a name="find"></a>CStringT::Find  
+##  <a name="find"></a>  CStringT::Find  
  Bu dize bir karakter ya da alt dizenin ilk eşleşmesi için arar.  
   
 ```  
@@ -635,7 +630,7 @@ int Find(XCHAR ch, int iStart=0) const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#114](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_9.cpp)]  
   
-##  <a name="findoneof"></a>CStringT::FindOneOf  
+##  <a name="findoneof"></a>  CStringT::FindOneOf  
  İçinde yer alan herhangi bir karakterle eşleşir ilk karakter için bu dizeyi arar `pszCharSet`.  
   
 ```  
@@ -655,7 +650,7 @@ int FindOneOf(PCXSTR pszCharSet) const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#115](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_10.cpp)]  
   
-##  <a name="format"></a>CStringT::Format  
+##  <a name="format"></a>  CStringT::Format  
  Yazmaları biçimlendirilen verileri bir `CStringT` aynı şekilde bu [sprintf_s](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md) verileri bir C tarzı karakter diziye biçimlendirir.  
   
 ```  
@@ -685,7 +680,7 @@ void __cdecl Format(PCXSTR pszFormat,  [, argument] ...);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#117](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_12.cpp)]  
   
-##  <a name="formatmessage"></a>CStringT::FormatMessage  
+##  <a name="formatmessage"></a>  CStringT::FormatMessage  
  Bir ileti dizesi biçimlendirir.  
   
 ```  
@@ -707,14 +702,14 @@ void __cdecl FormatMessage(PCXSTR pszFormat, [, argument]...);
  İşlev giriş olarak bir ileti tanımı gerektirir. İleti tanımı tarafından belirlenen `pszFormat` veya tarafından tanımlanan dize kaynaktan `nFormatID`. Bu işlev biçimlendirilmiş ileti metnini kopyalar `CStringT` istediyseniz INSERT sıraları herhangi katıştırılmış işleme nesnesi.  
   
 > [!NOTE]
-> `FormatMessage`Yeni biçimlendirilmiş dize için sistem belleği ayırmaya çalışır. Bu girişim başarısız olursa, bir bellek özel durumu otomatik olarak oluşturulur.  
+> `FormatMessage` Yeni biçimlendirilmiş dize için sistem belleği ayırmaya çalışır. Bu girişim başarısız olursa, bir bellek özel durumu otomatik olarak oluşturulur.  
   
  Her INSERT karşılık gelen bir parametre şunlara sahip olmanız gerekir `pszFormat` veya `nFormatID` parametresi. İleti metni içinde birkaç kaçış sıraları dinamik olarak iletiyi biçimlendirmek için desteklenir. Daha fazla bilgi için bkz: Windows [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) Windows SDK'sındaki işlevi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#118](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_13.cpp)]  
   
-##  <a name="formatmessagev"></a>CStringT::FormatMessageV  
+##  <a name="formatmessagev"></a>  CStringT::FormatMessageV  
  Değişken bağımsız değişken listesini kullanarak bir ileti dizesi biçimlendirir.  
   
 ```  
@@ -732,11 +727,11 @@ void FormatMessageV(PCXSTR pszFormat, va_list* pArgList);
  İşlev giriş olarak bir ileti tanımı gerektirir tarafından belirlenen `pszFormat`. Bu işlev biçimlendirilmiş ileti metni ve bağımsız değişken listesi kopyalar `CStringT` istediyseniz INSERT sıraları herhangi katıştırılmış işleme nesnesi.  
   
 > [!NOTE]
-> `FormatMessageV`çağrıları [CStringT::FormatMessage](#formatmessage), yeni biçimlendirilmiş dize için sistem belleği ayırmaya çalışır. Bu girişim başarısız olursa, bir bellek özel durumu otomatik olarak oluşturulur.  
+> `FormatMessageV` çağrıları [CStringT::FormatMessage](#formatmessage), yeni biçimlendirilmiş dize için sistem belleği ayırmaya çalışır. Bu girişim başarısız olursa, bir bellek özel durumu otomatik olarak oluşturulur.  
   
  Daha fazla bilgi için bkz: Windows [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) Windows SDK'sındaki işlevi.  
   
-##  <a name="formatv"></a>CStringT::FormatV  
+##  <a name="formatv"></a>  CStringT::FormatV  
  Değişken bağımsız değişken listesini kullanarak bir ileti dizesi biçimlendirir.  
   
 ```  
@@ -758,7 +753,7 @@ void FormatV(PCXSTR pszFormat, va_list args);
   
  [!code-cpp[NVC_ATLMFC_Utilities#120](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_15.cpp)]  
   
-##  <a name="getenvironmentvariable"></a>CStringT::GetEnvironmentVariable  
+##  <a name="getenvironmentvariable"></a>  CStringT::GetEnvironmentVariable  
  Dize belirtilen ortam değişkeninin değerine ayarlar.  
   
 ```  
@@ -778,7 +773,7 @@ BOOL GetEnvironmentVariable(PCXSTR pszVar);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#121](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_16.cpp)]  
   
-##  <a name="insert"></a>CStringT::Insert  
+##  <a name="insert"></a>  CStringT::Insert  
  Tek bir karakter veya alt dize dize içinde verilen dizindeki ekler.  
   
 ```  
@@ -805,7 +800,7 @@ int Insert(int iIndex, XCHAR ch);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#122](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_17.cpp)]  
   
-##  <a name="left"></a>CStringT::Left  
+##  <a name="left"></a>  CStringT::Left  
  Soldaki ayıklar `nCount` bu karakterlerinden `CStringT` nesne ve bir kopyasını ayıklanan alt dizeyi döndürür.  
   
 ```  
@@ -820,14 +815,14 @@ CStringT Left(int nCount) const;
  A `CStringT` Belirtilen aralıktaki karakterleri bir kopyasını içeren nesne. Döndürülen `CStringT` nesnesi boş olabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `nCount` dize uzunluğu aşıyor ve ardından tüm dizeyi ayıklanır. `Left`Temel benzer `Left` işlevi.  
+ Varsa `nCount` dize uzunluğu aşıyor ve ardından tüm dizeyi ayıklanır. `Left` Temel benzer `Left` işlevi.  
   
  Çok baytlı karakter kümeleri (MBCS) için `nCount` bir karakteri olarak her 8 bit sırası değerlendirir böylece `nCount` iki tarafından çarpılan çok baytlı karakterlerin sayısını döndürür.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#123](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_18.cpp)]  
   
-##  <a name="loadstring"></a>CStringT::LoadString  
+##  <a name="loadstring"></a>  CStringT::LoadString  
  Tarafından tanımlanan bir Windows dize kaynağı okur `nID`, mevcut bir uygulamasına `CStringT` nesnesi.  
   
 ```  
@@ -855,7 +850,7 @@ BOOL LoadString(UINT nID);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#124](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_19.cpp)]  
   
-##  <a name="makelower"></a>CStringT::MakeLower  
+##  <a name="makelower"></a>  CStringT::MakeLower  
  Dönüştürür `CStringT` küçük harf dize nesnesi.  
   
 ```  
@@ -868,7 +863,7 @@ CStringT& MakeLower();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#125](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_20.cpp)]  
   
-##  <a name="makereverse"></a>CStringT::MakeReverse  
+##  <a name="makereverse"></a>  CStringT::MakeReverse  
  Karakter sırasını tersine çevirir `CStringT` nesnesi.  
   
 ```  
@@ -881,7 +876,7 @@ CStringT& MakeReverse();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#126](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_21.cpp)]  
   
-##  <a name="makeupper"></a>CStringT::MakeUpper  
+##  <a name="makeupper"></a>  CStringT::MakeUpper  
  Dönüştürür `CStringT` büyük bir dize nesnesi.  
   
 ```  
@@ -896,7 +891,7 @@ CStringT& MakeUpper();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#127](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_22.cpp)]  
   
-##  <a name="mid"></a>CStringT::Mid  
+##  <a name="mid"></a>  CStringT::Mid  
  Bir dizenin uzunluğunu ayıklar `nCount` bu karakterlerinden `CStringT` konumdan başlayarak nesne `iFirst` (sıfır tabanlı).  
   
 ```  
@@ -915,14 +910,14 @@ CStringT Mid(int iFirst) const;
  A `CStringT` Belirtilen aralıktaki karakterleri bir kopyasını içeren nesne. Unutmayın döndürülen `CStringT` nesnesi boş olabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşlevi bir kopyasını ayıklanan alt dizeyi döndürür. `Mid`(temel dizinlerde tabanlı) temel Mid işlevi benzerdir.  
+ İşlevi bir kopyasını ayıklanan alt dizeyi döndürür. `Mid` (temel dizinlerde tabanlı) temel Mid işlevi benzerdir.  
   
  (MBCS) birden çok baytlı karakter kümeleri için `nCount` her biri birden çok baytlı karakter iki karakter olarak sayılır 8 bit karakter; diğer bir deyişle, bir sağlama ve izi bayt başvuruyor.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#128](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_23.cpp)]  
   
-##  <a name="oemtoansi"></a>CStringT::OemToAnsi  
+##  <a name="oemtoansi"></a>  CStringT::OemToAnsi  
  Bu tüm karakterleri dönüştürür `CStringT` ANSI karakter kümesi OEM karakter nesnesinden.  
   
 ```  
@@ -935,7 +930,7 @@ void OemToAnsi();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CStringT::AnsiToOem](#ansitooem).  
   
-##  <a name="operator_add"></a>CStringT::operator +  
+##  <a name="operator_add"></a>  CStringT::operator +  
  İki dizeyi veya bir karakter ve bir dizeyi art arda ekler.  
   
 ```  
@@ -976,7 +971,7 @@ friend CStringT operator+(wchar_t ch1, const CStringT& str2,);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#140](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_24.cpp)]  
   
-##  <a name="operator_add_eq"></a>CStringT::operator +=  
+##  <a name="operator_add_eq"></a>  CStringT::operator +=  
  Dize sonu karakterleri art arda ekler.  
   
 ```  
@@ -1028,7 +1023,7 @@ CStringT& operator+=(const VARIANT& var);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#141](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_25.cpp)]  
   
-##  <a name="operator_eq_eq"></a>CStringT::operator ==  
+##  <a name="operator_eq_eq"></a>  CStringT::operator ==  
  İki dizeyi mantıksal olarak eşit olup olmadığını belirler.  
   
 ```  
@@ -1066,7 +1061,7 @@ friend bool operator==(XCHAR ch1, const CStringT& str2,) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#142](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_26.cpp)]  
   
-##  <a name="operator_neq"></a>CStringT::operator! =  
+##  <a name="operator_neq"></a>  CStringT::operator! =  
  İki dizeyi eşit olup olmadığını mantıksal olarak belirler.  
   
 ```  
@@ -1104,7 +1099,7 @@ friend bool operator!=(XCHAR ch1, const CStringT& str2,) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#143](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_27.cpp)]  
   
-##  <a name="operator_lt"></a>CStringT::operator&lt;  
+##  <a name="operator_lt"></a>  CStringT::operator &lt;  
  Dize işlecinin sol tarafındaki sağ tarafında dize değerinden olup olmadığını belirler.  
   
 ```  
@@ -1138,7 +1133,7 @@ friend bool operator<(PCXSTR psz1, const CStringT& str2) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#144](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_28.cpp)]  
   
-##  <a name="operator_gt"></a>CStringT::operator&gt;  
+##  <a name="operator_gt"></a>  CStringT::operator &gt;  
  Dize işlecinin sol tarafındaki sağ tarafında dize değerinden olup olmadığını belirler.  
   
 ```  
@@ -1172,7 +1167,7 @@ friend bool operator>(PCXSTR psz1, const CStringT& str2) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#145](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_29.cpp)]  
   
-##  <a name="operator_lt_eq"></a>CStringT::operator&lt;=  
+##  <a name="operator_lt_eq"></a>  CStringT::operator &lt;=  
  İşlecinin sol tarafındaki dize değerinden küçük veya buna eşit sağ tarafında dizeye olup olmadığını belirler.  
   
 ```  
@@ -1206,7 +1201,7 @@ friend bool operator<=(PCXSTR psz1, const CStringT& str2) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#146](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_30.cpp)]  
   
-##  <a name="operator_gt_eq"></a>CStringT::operator&gt;=  
+##  <a name="operator_gt_eq"></a>  CStringT::operator &gt;=  
  Dize işlecinin sol tarafındaki sağ tarafında dizeye eşit veya daha büyük olup olmadığını belirler.  
   
 ```  
@@ -1240,7 +1235,7 @@ friend bool operator>=(PCXSTR psz1, const CStringT& str2) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#147](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_31.cpp)]  
   
-##  <a name="remove"></a>CStringT::Remove  
+##  <a name="remove"></a>  CStringT::Remove  
  Dizeden belirtilen karakterin tüm örneklerini kaldırır.  
   
 ```  
@@ -1260,7 +1255,7 @@ int Remove(XCHAR chRemove);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#129](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_32.cpp)]  
   
-##  <a name="replace"></a>CStringT::Replace  
+##  <a name="replace"></a>  CStringT::Replace  
  İki sürümü vardır `Replace`. İlk sürüm, başka bir alt dizesi kullanarak bir alt dizesi bir veya daha fazla kopyasını yerini alır. Her iki alt dizeler null sonlandırıldı. İkinci Sürüm, başka bir karakter kullanarak bir karakterin bir veya daha fazla kopyasını yerini alır. Her iki sürümünü de depolanan karakter veri çalışmayabilir `CStringT`.  
   
 ```  
@@ -1285,7 +1280,7 @@ int Replace(XCHAR chOld, XCHAR chNew);
  Dize değişmez varsa karakter veya alt dize ya da sıfır değiştirilen örnek sayısı değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Replace`dize uzunluğu çünkü değiştirebilirsiniz `pszNew` ve `pszOld` aynı uzunlukta olması gerekmez ve eski alt dizeyi birçok kopyası için yeni bir değiştirilebilir. Büyük küçük harfe duyarlı bir eşleşme işlevi gerçekleştirir.  
+ `Replace` dize uzunluğu çünkü değiştirebilirsiniz `pszNew` ve `pszOld` aynı uzunlukta olması gerekmez ve eski alt dizeyi birçok kopyası için yeni bir değiştirilebilir. Büyük küçük harfe duyarlı bir eşleşme işlevi gerçekleştirir.  
   
  Örnekleri `CStringT` örnekleri `CString`, `CStringA`, ve `CStringW`.  
   
@@ -1303,7 +1298,7 @@ int Replace(XCHAR chOld, XCHAR chNew);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#200](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_33.cpp)]  
   
-##  <a name="reversefind"></a>CStringT::ReverseFind  
+##  <a name="reversefind"></a>  CStringT::ReverseFind  
  Bu arar `CStringT` nesne bir karakterin son eşleşme.  
   
 ```  
@@ -1323,7 +1318,7 @@ int ReverseFind(XCHAR ch) const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#130](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_34.cpp)]  
   
-##  <a name="right"></a>CStringT::Right  
+##  <a name="right"></a>  CStringT::Right  
  Son ayıklar (diğer bir deyişle, en sağdaki) `nCount` bu karakterlerinden `CStringT` nesne ve bir kopyasını ayıklanan alt dizeyi döndürür.  
   
 ```  
@@ -1338,14 +1333,14 @@ CStringT Right(int nCount) const;
  A `CStringT` Belirtilen aralıktaki karakterleri bir kopyasını içeren nesne. Unutmayın döndürülen `CStringT` nesnesi boş olamaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `nCount` dize uzunluğu aşıyor ve ardından tüm dizeyi ayıklanır. `Right`Temel benzer `Right` (Basic dizinlerde sıfır tabanlı ancak bu) işlev.  
+ Varsa `nCount` dize uzunluğu aşıyor ve ardından tüm dizeyi ayıklanır. `Right` Temel benzer `Right` (Basic dizinlerde sıfır tabanlı ancak bu) işlev.  
   
  (MBCS) birden çok baytlı karakter kümeleri için `nCount` her biri birden çok baytlı karakter iki karakter olarak sayılır 8 bit karakter; diğer bir deyişle, bir sağlama ve izi bayt başvuruyor.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#131](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_35.cpp)]  
   
-##  <a name="setsysstring"></a>CStringT::SetSysString  
+##  <a name="setsysstring"></a>  CStringT::SetSysString  
  Yeniden ayırır `BSTR` gösterdiği `pbstr` ve içeriğini kopyalar `CStringT` dahil olmak üzere, nesnesine `NULL` karakter.  
   
 ```  
@@ -1367,7 +1362,7 @@ BSTR SetSysString(BSTR* pbstr) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#132](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_36.cpp)]  
   
-##  <a name="spanexcluding"></a>CStringT::SpanExcluding  
+##  <a name="spanexcluding"></a>  CStringT::SpanExcluding  
  Tarafından tanımlanan karakter kümesi olmayan ilk karakter ile başlayarak, dizeden karakterleri ayıklar `pszCharSet`.  
   
 ```  
@@ -1382,12 +1377,12 @@ CStringT SpanExcluding(PCXSTR pszCharSet) const;
  Dize olmayan karakter içeren bir alt dizesi `pszCharSet`, ilk karakter, dize ile başlayan ve de dizesinde bulunan ilk karakter ile biten `pszCharSet` (diğer bir deyişle, ilk karakter, başlayarak dize ve kadar ancak ilk karakter, dize hariç bulunamadı `pszCharSet`). Hiçbir karakter ise tüm dizeyi döndürür `pszCharSet` dizesinde bulunamadı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `SpanExcluding`ayıklar ve bir karakter ilk örneğini önceki tüm karakterleri verir `pszCharSet` (diğer bir deyişle, karakterlerinden `pszCharSet` ve dizesinde sonraki tüm karakterler alınmadı). Hiçbir karakter varsa `pszCharSet` dizesinde sonra bulunan `SpanExcluding` tüm dizeyi döndürür.  
+ `SpanExcluding` ayıklar ve bir karakter ilk örneğini önceki tüm karakterleri verir `pszCharSet` (diğer bir deyişle, karakterlerinden `pszCharSet` ve dizesinde sonraki tüm karakterler alınmadı). Hiçbir karakter varsa `pszCharSet` dizesinde sonra bulunan `SpanExcluding` tüm dizeyi döndürür.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#133](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_37.cpp)]  
   
-##  <a name="spanincluding"></a>CStringT::SpanIncluding  
+##  <a name="spanincluding"></a>  CStringT::SpanIncluding  
  Tarafından tanımlanan karakter kümesi olan ilk karakter ile başlayarak, dizeden karakterleri ayıklar `pszCharSet`.  
   
 ```  
@@ -1399,7 +1394,7 @@ CStringT SpanIncluding(PCXSTR pszCharSet) const;
  Bir dizeyi bir karakter kümesi yorumlanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bulunan dizedeki karakter içeren bir alt dizesi `pszCharSet`, ilk karakter, dize ile başlayan ve bir karakter değil dizesinde bulunduğunda bitiş `pszCharSet`. `SpanIncluding`ilk karakter dizesi, belirtilen kümesinde değilse boş bir alt dizeyi döndürür.  
+ Bulunan dizedeki karakter içeren bir alt dizesi `pszCharSet`, ilk karakter, dize ile başlayan ve bir karakter değil dizesinde bulunduğunda bitiş `pszCharSet`. `SpanIncluding` ilk karakter dizesi, belirtilen kümesinde değilse boş bir alt dizeyi döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Dizenin ilk karakterin karakter kümesinde sonra değilse `SpanIncluding` boş bir dize döndürür. Aksi takdirde, kümesinde yer alan ardışık bir karakter dizisi döndürür.  
@@ -1407,7 +1402,7 @@ CStringT SpanIncluding(PCXSTR pszCharSet) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#134](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_38.cpp)]  
   
-##  <a name="tokenize"></a>CStringT::Tokenize  
+##  <a name="tokenize"></a>  CStringT::Tokenize  
  Bir hedef dizisindeki sonraki belirteç bulur  
   
 ```  
@@ -1441,7 +1436,7 @@ CStringT Tokenize(PCXSTR pszTokens, int& iStart) const;
   
  `Resulting Token: Third`  
   
-##  <a name="trim"></a>CStringT::Trim  
+##  <a name="trim"></a>  CStringT::Trim  
  Baştaki ve sondaki dizeden karakterleri kırpar.  
   
 ```  
@@ -1463,9 +1458,9 @@ CStringT& Trim();
 ### <a name="remarks"></a>Açıklamalar  
  Tüm öndeki ve sondaki aşağıdakilerden birini kaldırır:  
   
--   Belirtilen karakter`chTarget.`  
+-   Belirtilen karakter `chTarget.`  
   
--   Tüm karakterler tarafından belirtilen dizede bulundu`pszTargets.`  
+-   Tüm karakterler tarafından belirtilen dizede bulundu `pszTargets.`  
   
 -   Boşluk.  
   
@@ -1479,7 +1474,7 @@ CStringT& Trim();
   
  `After : "Soccer is best, but liquor is quicker"`  
   
-##  <a name="trimleft"></a>CStringT::TrimLeft  
+##  <a name="trimleft"></a>  CStringT::TrimLeft  
  Dizeden karakterleri baştaki kırpar.  
   
 ```  
@@ -1501,16 +1496,16 @@ CStringT& TrimLeft();
 ### <a name="remarks"></a>Açıklamalar  
  Tüm öndeki ve sondaki aşağıdakilerden birini kaldırır:  
   
--   Belirtilen karakter`chTarget.`  
+-   Belirtilen karakter `chTarget.`  
   
--   Tüm karakterler tarafından belirtilen dizede bulundu`pszTargets.`  
+-   Tüm karakterler tarafından belirtilen dizede bulundu `pszTargets.`  
   
 -   Boşluk.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#137](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_41.cpp)]  
   
-##  <a name="trimright"></a>CStringT::TrimRight  
+##  <a name="trimright"></a>  CStringT::TrimRight  
  Sondaki dizeden karakterleri kırpar.  
   
 ```  
@@ -1532,9 +1527,9 @@ CStringT& TrimRight();
 ### <a name="remarks"></a>Açıklamalar  
  Aşağıdakilerden birini oluşumları sondaki kaldırır:  
   
--   Belirtilen karakter`chTarget.`  
+-   Belirtilen karakter `chTarget.`  
   
--   Tüm karakterler tarafından belirtilen dizede bulundu`pszTargets.`  
+-   Tüm karakterler tarafından belirtilen dizede bulundu `pszTargets.`  
   
 -   Boşluk.  
   

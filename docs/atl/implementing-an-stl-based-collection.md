@@ -1,29 +1,24 @@
 ---
-title: "C++ Standart Kitaplığı tabanlı bir koleksiyon uygulama | Microsoft Docs"
-ms.custom: 
+title: C++ Standart Kitaplığı tabanlı bir koleksiyon uygulama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - ICollectionOnSTLImpl interface
 ms.assetid: 6d49f819-1957-4813-b074-3f12c494d8ca
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f5b80b55361a8f7bfa195b08d02feb94af0874bc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 14a09f54598b525346a65b56a335711f114878cb
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="implementing-a-c-standard-library-based-collection"></a>C++ Standart Kitaplığı tabanlı bir koleksiyon uygulama
 ATL sağlar `ICollectionOnSTLImpl` C++ Standart Kitaplığı tabanlı koleksiyon arabirimleri nesneleriniz hızlıca uygulamak etkinleştirmek için arabirim. Bu sınıf nasıl çalıştığını anlamak için Otomasyon istemcilerinde amaçlayan bir salt okunur koleksiyonun uygulamak için bu sınıf kullanan basit bir örnek (aşağıda) üzerinden çalışır.  
@@ -46,10 +41,10 @@ ATL sağlar `ICollectionOnSTLImpl` C++ Standart Kitaplığı tabanlı koleksiyon
   
 -   [Koleksiyon doldurmak için kodu ekleyin](#vcconpopulate_the_collection).  
   
-##  <a name="vccongenerating_an_object"></a>Yeni Basit bir nesne oluşturma  
+##  <a name="vccongenerating_an_object"></a> Yeni Basit bir nesne oluşturma  
  Uygulama ayarları öznitelikleri kutusunun temizlenmiş olduğundan emin olduktan yeni bir proje oluşturun. ATL Sınıf Ekle iletişim kutusunu kullanın ve ekleme Basit Nesne basit bir nesne oluşturmak için Sihirbazı adlı `Words`. Çift arabirim adlı emin olun `IWords` oluşturulur. Oluşturulan sınıfın nesnelerini sözcükler (dize) koleksiyonunu temsil etmek için kullanılır.  
   
-##  <a name="vcconedit_the_idl"></a>IDL dosya düzenleme  
+##  <a name="vcconedit_the_idl"></a> IDL dosya düzenleme  
  Şimdi, IDL dosyasını açın ve etkinleştirmek için gereken üç özellik eklemek `IWords` aşağıda gösterildiği gibi bir salt okunur koleksiyonun arabirimi içine:  
   
  [!code-cpp[NVC_ATL_COM#24](../atl/codesnippet/cpp/implementing-an-stl-based-collection_1.idl)]  
@@ -68,7 +63,7 @@ ATL sağlar `ICollectionOnSTLImpl` C++ Standart Kitaplığı tabanlı koleksiyon
   
 6.  DISPID için kullanılan değer **sayısı** özelliği tamamen rastgele. Bu özellik için standart hiçbir DISPID yoktur.  
   
-##  <a name="vcconstorage_and_exposure_typedefs"></a>Depolama ve Etkilenme için tür tanımları oluşturma  
+##  <a name="vcconstorage_and_exposure_typedefs"></a> Depolama ve Etkilenme için tür tanımları oluşturma  
  Koleksiyon arabirimi tanımlandıktan sonra veriler nasıl depolanır ve nasıl veri Numaralandırıcı sunulur karar vermeniz gerekir.  
   
  Bu sorulara verdiğiniz yanıtlar, yeni oluşturulan sınıfınız için üstbilgi dosyanın en üstüne ekleyebilmeniz için tür tanımları sayısı biçiminde sağlanabilir:  
@@ -79,26 +74,26 @@ ATL sağlar `ICollectionOnSTLImpl` C++ Standart Kitaplığı tabanlı koleksiyon
   
  Visual Basic desteği bu arabirim başarısı için önemli olduğundan, numaralandırıcı tarafından döndürülen `_NewEnum` özelliği desteklemelidir **IEnumVARIANT** arabirimi. Bu, Visual Basic tarafından anlaşılan yalnızca Numaralandırıcı arabirimidir.  
   
-##  <a name="vcconcopy_classes"></a>Kopya İlkesi sınıflar için tür tanımları oluşturma  
+##  <a name="vcconcopy_classes"></a> Kopya İlkesi sınıflar için tür tanımları oluşturma  
  Şu ana kadar oluşturduğunuz tür tanımları daha Numaralandırıcı ve koleksiyon tarafından kullanılacak kopyalama sınıfları için tür tanımları oluşturmak gereken tüm bilgileri sağlayın:  
   
  [!code-cpp[NVC_ATL_COM#26](../atl/codesnippet/cpp/implementing-an-stl-based-collection_3.h)]  
   
  Bu örnekte, özel kullanabilirsiniz `GenericCopy` VCUE_Copy.h ve VCUE_CopyString.h gelen tanımlanmış sınıf [ATLCollections](../visual-cpp-samples.md) örnek. Bu sınıf diğer kodda kullanabilirsiniz, ancak daha fazla özelleştirmeleri, tanımlamanız gerekebilir `GenericCopy` kendi koleksiyonlarınızı kullanılan veri türlerini desteklemek için. Daha fazla bilgi için bkz: [ATL kopyalama İlkesi sınıfları](../atl/atl-copy-policy-classes.md).  
   
-##  <a name="vcconenumeration_and_collection"></a>Numaralandırma ve koleksiyon için tür tanımları oluşturma  
+##  <a name="vcconenumeration_and_collection"></a> Numaralandırma ve koleksiyon için tür tanımları oluşturma  
  Şimdi tüm şablon parametreleri özelleştirmek üzere gerekli `CComEnumOnSTL` ve `ICollectionOnSTLImpl` sınıflar bu durum için tür tanımları formunda sağlandı. Özelleştirmeleri kullanımını kolaylaştırmak için aşağıda gösterildiği gibi iki daha fazla tür tanımları oluşturun:  
   
  [!code-cpp[NVC_ATL_COM#27](../atl/codesnippet/cpp/implementing-an-stl-based-collection_4.h)]  
   
  Şimdi `CollectionType` bir alt uzmanlaşması eşanlamlısı olan `ICollectionOnSTLImpl` uygulayan `IWords` arabirimi, daha önce tanımlanan ve destekleyen bir numaralandırıcı sağlar **IEnumVARIANT**.  
   
-##  <a name="vcconedit_the_generated_code"></a>Sihirbaz tarafından oluşturulan kod düzenleme  
+##  <a name="vcconedit_the_generated_code"></a> Sihirbaz tarafından oluşturulan kod düzenleme  
  Türetilmesi gerekir artık `CWords` tarafından temsil edilen arabirimi uygulamadan `CollectionType` typedef yerine `IWords`, aşağıda gösterildiği gibi:  
   
  [!code-cpp[NVC_ATL_COM#28](../atl/codesnippet/cpp/implementing-an-stl-based-collection_5.h)]  
   
-##  <a name="vcconpopulate_the_collection"></a>Koleksiyon doldurmak için kod ekleme  
+##  <a name="vcconpopulate_the_collection"></a> Koleksiyon doldurmak için kod ekleme  
  Vektör verilerle doldurmak için kalan tek şey. Bu basit örnekte koleksiyonuna sınıfa ilişkin oluşturucuda birkaç sözcük ekleyebilirsiniz:  
   
  [!code-cpp[NVC_ATL_COM#29](../atl/codesnippet/cpp/implementing-an-stl-based-collection_6.h)]  

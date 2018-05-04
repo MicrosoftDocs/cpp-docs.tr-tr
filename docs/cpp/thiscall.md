@@ -1,12 +1,9 @@
 ---
 title: __thiscall | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - __thiscall
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - __thiscall keyword [C++]
 ms.assetid: a6a22dd2-0101-4885-b33b-22f6057965df
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a55f7d288758b345dfc4f182f2153e0d39a1b349
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9dccd9e80a23b1636bd869d406824c9997f4cdef
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="thiscall"></a>__thiscall
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -38,7 +33,7 @@ ms.lasthandoff: 12/21/2017
   
  Visual C++ 2005 önce sürümlerde çağırma thiscall açıkça bir programda çünkü belirlenemedi `thiscall` bir anahtar sözcük değildi.  
   
- `vararg`üye işlevlerini kullanmak `__cdecl` çağırma. Tüm işlev bağımsız değişkenleri, ile yığına `this` işaretçi yerleştirilen yığında son  
+ `vararg` üye işlevlerini kullanmak `__cdecl` çağırma. Tüm işlev bağımsız değişkenleri, ile yığına `this` işaretçi yerleştirilen yığında son  
   
  Bu çağırma yalnızca C++ için geçerli olduğundan, hiçbir C adı decoration düzeni yoktur.  
   

@@ -1,10 +1,10 @@
 ---
-title: "/ZC:throwingNew (varsay işleci yeni atar) | Microsoft Docs"
-ms.custom: 
+title: /ZC:throwingNew (varsay işleci yeni atar) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - throwingNew
 - /Zc:throwingNew
@@ -19,14 +19,13 @@ helpviewer_keywords:
 ms.assetid: 20ff0101-9677-4d83-8c7b-8ec9ca49f04f
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc29a364e5001fb319017a1bc2fa084514d52f16
-ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
+ms.openlocfilehash: f446e5c71e88be86c31e5a83ca7d23f611683af4
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="zcthrowingnew-assume-operator-new-throws"></a>/ZC:throwingNew (varsay işleci yeni atar)
 
@@ -34,7 +33,7 @@ Zaman **/Zc:throwingNew** seçeneği belirtildiğinde, derleyici çağrıları i
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc:throwingNew**[**-**]
+> **/ZC:throwingNew**[**-**]
 
 ## <a name="remarks"></a>Açıklamalar
 

@@ -4,7 +4,7 @@ ms.custom: ''
 ms.date: 04/04/2018
 ms.technology:
 - cpp-standard-libraries
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.memory
 dev_langs:
@@ -15,14 +15,13 @@ helpviewer_keywords:
 ms.assetid: 164f4860-ce66-412c-8291-396fbd70f03e
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aaa85b3e3f0730a564ac1aff3e74f58cef20356a
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 6a7544dfa80ce0c7481846383dd812ce30b78290
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="buffer-manipulation"></a>Ara bellek düzenlemesi
 
@@ -45,4 +44,4 @@ Olduğunda kaynak ve hedef alanlarını üst üste, yalnızca **memmove** tam ka
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kategorilere göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)

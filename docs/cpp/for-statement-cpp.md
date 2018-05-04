@@ -1,29 +1,24 @@
 ---
 title: for deyimi (C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - for keyword [C++]
 ms.assetid: 6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8358af0cd6784b1974767456602350a8ccf1c57f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 38181a43134c35c4db1db3d78a79d3338934b7d2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="for-statement-c"></a>for Deyimi (C++)
 Koşul yanlış olana kadar sürekli olarak bir deyimi yürütür. Aralık-based for deyimi hakkında daha fazla bilgi için bkz: [aralık tabanlı için deyimi (C++)](../cpp/range-based-for-statement-cpp.md).  
@@ -45,7 +40,7 @@ for ( init-expression ; cond-expression ; loop-expression )
 |Söz Dizimi Adı|Yürütüldüğünde|Açıklama|  
 |-----------------|-------------------|-----------------|  
 |`init-expression`|Başka bir öğenin önce **için** deyimi, `init-expression` yalnızca bir kez çalıştırılır. Denetim sonra geçer `cond-expression`.|Döngü dizinlerini başlatmak için sık kullanılır. Deyimler ya da bildirimler içerebilir.|  
-|`cond-expression`|Her yinelemesinden yürütülmesi önce `statement`, ilk yinelemeyi dahil olmak üzere. `statement`yalnızca yürütülen `cond-expression` (sıfır) true olarak değerlendirilir.|Tamsayı türüne benzersiz bir dönüştürmesi olan bir integral türünü ya da sınıf türünü değerlendiren deyimdir. Genellikle döngü sonlandırma ölçütünü sınamak için kullanılır.|  
+|`cond-expression`|Her yinelemesinden yürütülmesi önce `statement`, ilk yinelemeyi dahil olmak üzere. `statement` yalnızca yürütülen `cond-expression` (sıfır) true olarak değerlendirilir.|Tamsayı türüne benzersiz bir dönüştürmesi olan bir integral türünü ya da sınıf türünü değerlendiren deyimdir. Genellikle döngü sonlandırma ölçütünü sınamak için kullanılır.|  
 |`loop-expression`|Her yinelemesinden sonunda `statement`. Sonra `loop-expression` yürütüldüğünde, `cond-expression` değerlendirilir.|Genellikle döngü dizinlerini artırmak için kullanılır.|  
   
  Aşağıdaki örnekler kullanmak için farklı yollar `for` deyimi.  
@@ -75,7 +70,7 @@ int main() {
     // Output: 012  
 ```  
   
- `init-expression`ve `loop-expression` virgülle ayırarak birden çok deyime içerebilir. Örneğin:  
+ `init-expression` ve `loop-expression` virgülle ayırarak birden çok deyime içerebilir. Örneğin:  
   
 ```cpp  
 #include <iostream>  
@@ -93,7 +88,7 @@ int main(){
     i + j = 19  
 ```  
   
- `loop-expression`artan veya indirildiği veya diğer yollarla değiştirilmiş olabilir.  
+ `loop-expression` artan veya indirildiği veya diğer yollarla değiştirilmiş olabilir.  
   
 ```cpp  
 #include <iostream>  

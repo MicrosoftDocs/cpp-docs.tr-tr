@@ -1,29 +1,24 @@
 ---
-title: "Etki alanı hataları | Microsoft Docs"
-ms.custom: 
+title: Etki alanı hataları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - domain errors
 ms.assetid: 67faa973-c872-40bc-a25f-2ef5559db96c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbbf3d5f20c7935dbf8d600c2380929e05c0a367
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d0443822a7b25c71f48446cf7250b4d33bf7377c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="domain-errors"></a>Etki Alanı Hataları
 **ANSI 4.5.1** etki alanı hataları matematik işlevleri tarafından döndürülen değerler  

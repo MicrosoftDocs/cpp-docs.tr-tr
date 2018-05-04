@@ -39,14 +39,13 @@ helpviewer_keywords:
 ms.assetid: b1c7abf5-d476-43ca-a03c-02072a86e32d
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32effd51bf1d6d72819a6ca6c66d4aa2f2e6492d
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 87cddb8b565cdc369e6b1e9679583db64039bb49
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="modf-modff-modfl"></a>modf, modff, modfl
 

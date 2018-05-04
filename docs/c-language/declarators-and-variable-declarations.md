@@ -1,13 +1,10 @@
 ---
-title: "Bildirimler ve değişken bildirimleri | Microsoft Docs"
-ms.custom: 
+title: Bildirimler ve değişken bildirimleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - declarators, definition
 - declaring variables, declaration statements
 ms.assetid: 5fd67a6a-3a6a-4ec9-b257-3f7390a48d40
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d9b7ce4895d51c50185c5262664dc478af62cfa
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 0219c5eecda84f27411ee0dca9cc43a1b5c9148e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="declarators-and-variable-declarations"></a>Bildirimler ve Değişken Bildirimleri
 Bu bölümde rest form ve bu listede özetlenen değişken türleri için bildirimleri anlamını açıklar. Özellikle, kalan bölümleri aşağıdaki bildirme açıklamaktadır:  
@@ -39,9 +34,9 @@ Bu bölümde rest form ve bu listede özetlenen değişken türleri için bildir
 |[Yapılar](../c-language/structure-declarations.md)|Farklı türe sahip değerleri koleksiyonunu oluşan değişkenleri|  
 |[Birleşimler](../c-language/union-declarations.md)|Aynı depolama alanı kaplar farklı türlerde birkaç değerlerinden oluşan değişkenleri|  
   
- Bir bildirimcisi programa sunulması adını belirten bir bildirim parçasıdır. Değiştiriciler gibi içerebilir  **\***  (işaretçi-için) ve Microsoft çağırma kuralı anahtar sözcükler.  
+ Bir bildirimcisi programa sunulması adını belirten bir bildirim parçasıdır. Değiştiriciler gibi içerebilir **\*** (işaretçi-için) ve Microsoft çağırma kuralı anahtar sözcükler.  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Bildirimcisi  
   
@@ -61,10 +56,10 @@ __declspec(thread) char *var;
   
  *doğrudan bildirimcisi*:  
  &nbsp;&nbsp;*Tanımlayıcı*  
- &nbsp;&nbsp;**(***bildirimcisi***)**   
- &nbsp;&nbsp;*doğrudan bildirimcisi***[***sabit ifadesi*<sub>kabul</sub> **]**   
- &nbsp;&nbsp;*doğrudan bildirimcisi***(***parametre türü listesi***)**   
- &nbsp;&nbsp;*doğrudan bildirimcisi***(***tanımlayıcı listesi*<sub>kabul</sub> **)**   
+ &nbsp;&nbsp;**(***bildirimcisi***)**  
+ &nbsp;&nbsp;*doğrudan bildirimcisi***[***sabit ifadesi*<sub>kabul</sub> **]**  
+ &nbsp;&nbsp;*doğrudan bildirimcisi***(***parametre türü listesi***)**  
+ &nbsp;&nbsp;*doğrudan bildirimcisi***(***tanımlayıcı listesi*<sub>kabul</sub> **)**  
   
  *İşaretçi*:  
  &nbsp;&nbsp;**\*** *tür niteleyicisi listesi*<sub>iptal et</sub>  
@@ -91,7 +86,7 @@ double func( void ); // Declares a function named func, with no
 int *aptr[10] // Declares an array of 10 pointers  
 ```  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Microsoft C Derleyici bir aritmetik, yapı ve birleşim türü değiştirebilirsiniz Bildirimciler sayısını sınırlamaz. Kullanılabilir bellek tarafından sınırlıdır.  
   

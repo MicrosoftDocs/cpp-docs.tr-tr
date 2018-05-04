@@ -1,13 +1,10 @@
 ---
-title: "-NOENTRY (giriş noktası yok) | Microsoft Docs"
-ms.custom: 
+title: -NOENTRY (giriş noktası yok) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.ResourceOnlyDLL
 - /noentry
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - /NOENTRY linker option [C++]
 - DLLs [C++], creating
 ms.assetid: 0214dd41-35ad-43ab-b892-e636e038621a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5990123d809a5fdaa00e3fd44666dd3fc37c69bf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 44f35c995a0c839fdc0d4ccf3d286e332793cf70
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="noentry-no-entry-point"></a>/NOENTRY (Giriş Noktası Yok)
 ```  

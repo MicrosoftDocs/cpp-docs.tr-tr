@@ -1,13 +1,10 @@
 ---
-title: ". Bağlayıcı girişi dosyaları lib | Microsoft Docs"
-ms.custom: 
+title: . Bağlayıcı girişi dosyaları lib | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.AdditionalDependencies
 dev_langs:
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - defaults [C++], libraries
 - .lib files
 ms.assetid: dc5d2b1c-2487-41fa-aa71-ad1e0647958b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 181c8c3e5e762f2f20d99ca2acadaf285e717b6c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8382e43398c4b6e5241542e6b41fdee8e2f70eff
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lib-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Lib Dosyaları
 BAĞLANTI kabul COFF standart kitaplıkları ve COFF içeri aktarma kitaplıkları, her ikisi de genellikle sahip uzantısı. lib. Standart kitaplıkları nesneleri içerir ve LIB aracı tarafından oluşturulur. İçeri aktarma kitaplıkları ya da bağlantı dışarı aktarmaları içeren bir program oluşturduğunda veya LIB aracı tarafından oluşturulan ve diğer programlarda dışarı ilgili bilgiler içerir. Standart oluşturmak veya kitaplıkları içeri aktarma için LIB kullanma hakkında daha fazla bilgi için bkz: [LIB başvurusu](../../build/reference/lib-reference.md). İçeri aktarma kitaplığı oluşturmak için bağlantı kullanma hakkında daha fazla bilgi için bkz [/dll](../../build/reference/dll-build-a-dll.md) seçeneği.  

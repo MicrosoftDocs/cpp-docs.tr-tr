@@ -1,27 +1,22 @@
 ---
-title: "Bildirimlerin özeti | Microsoft Docs"
-ms.custom: 
+title: Bildirimlerin özeti | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: 53a5e9e5-1a33-40b5-9dea-7f669b479329
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61dae4cf26f881014f0d98bbf30ebd10a360b10f
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: a9e5fe380d41b5d1e58a63b1aa0b99a239dee515
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="summary-of-declarations"></a>Bildirimlerin Özeti
 `declaration`:  
@@ -46,30 +41,30 @@ ms.lasthandoff: 03/16/2018
 |[__based](../cpp/based-grammar.md)|[__fastcall](../cpp/fastcall.md)|[__thiscall](../cpp/thiscall.md)|  
 |[__cdecl](../cpp/cdecl.md)|[__inline](../cpp/inline-functions-cpp.md)|[__vectorcall](../cpp/vectorcall.md)|  
   
- *init-declarator-list*:  
- *init-declarator*  
+ *Init bildirimcisi listesi*:  
+ *Init bildirimcisi*  
   
- *Init bildirimcisi listesi***,***init bildirimcisi*   
+ *Init bildirimcisi listesi***,***init bildirimcisi*  
   
- *init-declarator*:  
+ *Init bildirimcisi*:  
  *bildirimcisi*  
   
- *bildirimcisi***=***Başlatıcı* / * skaler başlatma     \*/  
+ *bildirimcisi***=***Başlatıcı* / * skaler başlatma \*/  
   
  *depolama sınıfı tanımlayıcısı*:  
  **auto**  
   
- **register**  
+ **Kaydetme**  
   
  **static**  
   
  **extern**  
   
- **typedef**  
+ **TypeDef**  
   
- **__declspec (**  *extended-decl-modifier-seq*  **)** /* Microsoft Specific \*/  
+ **__declspec (***genişletilmiş-decl-değiştirici-seq***)** / * Microsoft Specific     \*/  
   
- *type-specifier*:  
+ *tür belirteci*:  
  **void**  
   
  **char**  
@@ -96,11 +91,11 @@ ms.lasthandoff: 03/16/2018
   
  **İmzasız**  
   
- *struct-or-union-specifier*  
+ *yapı veya birleşim belirticisi*  
   
  *Liste belirticisi*  
   
- *typedef-name*  
+ *TypeDef adı*  
   
  *tür niteleyicisi*:  
  **const**  
@@ -111,15 +106,15 @@ ms.lasthandoff: 03/16/2018
  `pointer`<sub>OPT</sub> *doğrudan bildirimcisi*  
   
  *doğrudan bildirimcisi*:  
- *identifier*  
+ *Tanımlayıcı*  
   
- **(***bildirimcisi***)**   
+ **(***bildirimcisi***)**  
   
- *doğrudan bildirimcisi***[***sabit ifadesi* <sub>kabul</sub>**]**   
+ *doğrudan bildirimcisi***[***sabit ifadesi* <sub>kabul</sub>**]**  
   
- *doğrudan bildirimcisi***(***parametre türü listesi***)** / * yeni stil bildirimcisi       \*/  
+ *doğrudan bildirimcisi***(***parametre türü listesi***)** / * yeni stil bildirimcisi \*/  
   
- *doğrudan bildirimcisi***(***tanımlayıcı listesi*<sub>kabul</sub>**)** / * Kullanımdan kalktı stili bildirimcisi     \*/  
+ *doğrudan bildirimcisi***(***tanımlayıcı listesi*<sub>kabul</sub>**)** / * Kullanımdan kalktı stili bildirimcisi \*/  
   
  `pointer`:  
  **\*** *tür niteleyicisi listesi*<sub>iptal et</sub>  
@@ -129,12 +124,12 @@ ms.lasthandoff: 03/16/2018
  *parametre türü listesi*: /\* parametre listesi \*/  
  *parameter-list*  
   
- *parameter-list* **, ...**  
+ *parametre listesi* **,...**  
   
- *parameter-list*:  
+ *parametre listesi*:  
  *parameter-declaration*  
   
- *parameter-list*  **,**  *parameter-declaration*  
+ *parametre listesi***,***parametre bildirimi*   
   
  *tür niteleyicisi listesi*:  
  *tür niteleyicisi*  
@@ -142,27 +137,27 @@ ms.lasthandoff: 03/16/2018
  *tür niteleyicisi listesi tür niteleyicisi*  
   
  *Liste belirticisi*:  
- **Enum***tanımlayıcısı*<sub>kabul</sub>**{** *numaralandırıcı listesi* **}**   
+ **Enum***tanımlayıcısı*<sub>kabul</sub>**{** *numaralandırıcı listesi* **}**  
   
- **Enum***tanımlayıcısı*   
+ **Enum***tanımlayıcısı*  
   
  *Numaralandırıcı listesi*:  
  *Numaralandırıcı*  
   
- *Numaralandırıcı listesi***,**   `enumerator`  
+ *Numaralandırıcı listesi***,**  `enumerator`  
   
  `enumerator`:  
  *Numaralandırma sabiti*  
   
- *Numaralandırma sabiti***=***sabit ifadesi*   
+ *Numaralandırma sabiti***=***sabit ifadesi*  
   
  *Numaralandırma sabiti*:  
- *identifier*  
+ *Tanımlayıcı*  
   
  *yapı veya birleşim belirleyici*:  
  *struct veya union tanımlayıcı*<sub>kabul</sub>**{** *yapısı bildirimi listesi* **}** *struct veya union tanımlayıcı*  
   
- *struct-or-union*:  
+ *struct veya union*:  
  **struct**  
   
  **birleşim**  
@@ -173,63 +168,63 @@ ms.lasthandoff: 03/16/2018
  *Yapı bildirimi listesi yapısı-bildirimi*  
   
  *Yapı bildirimi*:  
- *belirleyici niteleyici listesinde yapısı bildirimcisi listesi***;**   
+ *belirleyici niteleyici listesinde yapısı bildirimcisi listesi***;**  
   
- *specifier-qualifier-list*:  
+ *belirleyici niteleyici listesinde*:  
  *tür belirteci belirleyici niteleyicisi listesi*<sub>iptal et</sub>  
   
  *tür niteleyicisi belirleyici niteleyicisi listesi*<sub>iptal et</sub>  
   
  *Yapı bildirimcisi listesi*:  
- *Yapı bildirimcisi yapısı bildirimcisi listesi***,***yapısı bildirimcisi*   
+ *Yapı bildirimcisi yapısı bildirimcisi listesi***,***yapısı bildirimcisi*  
   
  *Yapı bildirimcisi*:  
  *bildirimcisi*  
   
  *tür belirteci bildirimcisi*<sub>kabul</sub>**:** *sabit ifadesi*  
   
- *parameter-declaration*:  
+ *parametre bildirimi*:  
  *bildirim tanımlayıcıları bildirimcisi* / * adlandırılmış bildirimcisi \*/  
   
- *bildirim tanımlayıcıları Özet-bildirimcisi*<sub>kabul</sub>  **/ \***  anonim bildirimcisi **\*/**  
+ *bildirim tanımlayıcıları Özet-bildirimcisi*<sub>kabul</sub> **/ \*** anonim bildirimcisi **\*/**  
   
- *tanımlayıcı listesi*:  **/ \***  eski Tarz bildirimcisi için **\* /**  
- *identifier*  
+ *tanımlayıcı listesi*: **/ \*** eski Tarz bildirimcisi için **\* /**  
+ *Tanımlayıcı*  
   
- *identifier-list*  **,**  *identifier*  
+ *tanımlayıcı listesi***,***tanımlayıcısı*   
   
- *Özet bildirimcisi*:  **/ \***  anonim bildirimleri ile kullanılan **\*/**  
- *pointer*  
+ *Özet bildirimcisi*: **/ \*** anonim bildirimleri ile kullanılan **\*/**  
+ *İşaretçi*  
   
- `pointer`<sub>opt</sub>*direct-abstract-declarator*  
+ `pointer`<sub>OPT</sub>*doğrudan Özet bildirimcisi*  
   
  *doğrudan Özet bildirimcisi*:  
- **(***Özet bildirimcisi***)**   
+ **(***Özet bildirimcisi***)**  
   
  *doğrudan Özet bildirimcisi*<sub>kabul</sub>**[** *sabit ifadesi*<sub>kabul</sub>**]**  
   
  *doğrudan Özet bildirimcisi*<sub>kabul</sub>**(** *parametre türü listesi* <sub>kabul</sub>**)**  
   
- *initializer*:  
- *assignment-expression*  
+ *Başlatıcı*:  
+ *atama ifadesi*  
   
- **{**  *initializer-list*  **}** /* For aggregate initialization \*/  
+ **{***başlatıcı listesi***}** / * toplu başlatma için     \*/  
   
- **{**  *initializer-list*  **, }**  
+ **{***başlatıcı listesi***,}**   
   
- *initializer-list*:  
- *initializer*  
+ *Başlatıcı listesi*:  
+ *Başlatıcı*  
   
- *initializer-list*  **,**  *initializer*  
+ *Başlatıcı listesi***,***Başlatıcı*   
   
  *tür adı*:  
- *specifier-qualifier-list abstract-declarator*<sub>opt</sub>  
+ *belirleyici niteleyici listesinde Özet-bildirimcisi*<sub>iptal et</sub>  
   
  *TypeDef adı*:  
- *identifier*  
+ *Tanımlayıcı*  
   
- *extended-decl-modifier-seq*:/\*    Microsoft Specific \*/  
- *extended-decl-modifier*<sub>opt</sub>  
+ *Genişletilmiş-decl-değiştirici-seq*:/\* Microsoft Specific \*/  
+ *Genişletilmiş decl-değiştirici*<sub>iptal et</sub>  
   
  *Genişletilmiş-decl-değiştirici-seq genişletilmiş decl-değiştirici*  
   

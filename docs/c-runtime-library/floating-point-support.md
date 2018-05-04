@@ -4,8 +4,7 @@ ms.custom: ''
 ms.date: 04/06/2018
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.math
 dev_langs:
@@ -17,14 +16,13 @@ helpviewer_keywords:
 ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 358f47716ee998d5070e226ee71f865d6bfc64a4
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: ddf4a6ce7e2ad98841c20fcef5fd9639a5797852
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="math-and-floating-point-support"></a>Matematik ve kayan nokta desteği
 
@@ -56,7 +54,7 @@ Microsoft C/C++ ve desteklenen Microsoft Visual C++ önceki 16 bit sürümlerini
 [_controlfp_s](../c-runtime-library/reference/controlfp-s.md)|Güvenli sürümü **_controlfp**
 [copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl](../c-runtime-library/reference/copysign-copysignf-copysignl-copysign-copysignf-copysignl.md)|Bir bağımsız değişken büyüklük ve başka bir oturum sahip bir değer döndürür
 [cos, cosf, cosl](../c-runtime-library/reference/cos-cosf-cosl.md)|Sinüsünü hesaplar
-[COSH, coshf, coshl](../c-runtime-library/reference/cosh-coshf-coshl.md)|Hiperbolik sinüsünü hesaplar
+[cosh, coshf, coshl](../c-runtime-library/reference/cosh-coshf-coshl.md)|Hiperbolik sinüsünü hesaplar
 [div, ldiv, lldiv](../c-runtime-library/reference/div.md)|Sayının ve iki tamsayı değerleri geri kalanı hesaplar
 [_ecvt](../c-runtime-library/reference/ecvt.md), [ecvt](../c-runtime-library/reference/posix-ecvt.md)|Dönüştüren bir **çift** dizeye
 [_ecvt_s](../c-runtime-library/reference/ecvt-s.md)|Güvenli sürümü **_ecvt**
@@ -129,14 +127,14 @@ Microsoft C/C++ ve desteklenen Microsoft Visual C++ önceki 16 bit sürümlerini
 [scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl](../c-runtime-library/reference/scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)|Kayan noktalı sayı bir tam sayı gücünü tarafından çarpar **flt_radıx**
 [_set_controlfp](../c-runtime-library/reference/set-controlfp.md)|Kayan nokta denetim sözcüğü ayarlar
 [_set_SSE2_enable](../c-runtime-library/reference/set-sse2-enable.md)|Etkinleştirir veya devre dışı bırakır SSE2 yönergeleri
-[Sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)|Sinüsünü hesaplar
-[SİNH, sinhf, sinhl](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|Hiperbolik sinüsünü hesaplar
+[sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)|Sinüsünü hesaplar
+[sinh, sinhf, sinhl](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|Hiperbolik sinüsünü hesaplar
 [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Kare kökünü hesaplar
 [_status87, _statusfp, _statusfp2](../c-runtime-library/reference/status87-statusfp-statusfp2.md)|Kayan nokta durum sözcüğünü alır
 [strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|Bir dizeye dönüştürür bir **float**
 [strtold, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|Bir dizeye dönüştürür bir **uzun** **çift**
-[Bronz, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl.md)|Tanjantını hesaplar
-[TANH, tanhf, tanhl](../c-runtime-library/reference/tanh-tanhf-tanhl.md)|Hiperbolik tanjantını hesaplar
+[tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl.md)|Tanjantını hesaplar
+[tanh, tanhf, tanhl](../c-runtime-library/reference/tanh-tanhf-tanhl.md)|Hiperbolik tanjantını hesaplar
 [tgamma, tgammaf, tgammal](../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)|Gama işlevi hesaplar
 [trunc, truncf, truncl](../c-runtime-library/reference/trunc-truncf-truncl.md)|Kesirli bölümü tamsayıya dönüştürür
 [_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Geniş bir dizeye dönüştürür bir **çift**
@@ -144,4 +142,4 @@ Microsoft C/C++ ve desteklenen Microsoft Visual C++ önceki 16 bit sürümlerini
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kategorilere göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

@@ -1,13 +1,10 @@
 ---
-title: "Veri türü sabitleri | Microsoft Docs"
-ms.custom: 
+title: Veri türü sabitleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - FLT_MIN
 - SHRT_MAX
@@ -95,17 +92,15 @@ helpviewer_keywords:
 - FLT_MANT_DIG constant
 - SCHAR_MIN constant
 ms.assetid: c0f1c405-0465-41d5-b5ff-e81cdb6f1622
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1702065a8157596d4366af31fed3f2a80d53149c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cf9a64b81ae90c517e9cd15e796dfb1333c7b08c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-type-constants"></a>Veri Türü Sabitleri
 Veri türü sabitleri, tam sayı veri türleri için izin verilen değerlerin uygulama bağımlı aralıktır. Aşağıda listelenen sabitler aralıklara tam sayı veri türleri için vermek ve SINIRLARI tanımlanır. H.  
@@ -118,7 +113,7 @@ Veri türü sabitleri, tam sayı veri türleri için izin verilen değerlerin uy
 |**SCHAR_MAX**|127|İmzalı maksimum `char` değeri|  
 |**SCHAR_MIN**|-128|İmzalı minimum `char` değeri|  
 |**UCHAR_MAX**|255 (0xff)|En fazla `unsigned char` değeri|  
-|**CHAR_BIT**|8|Bit sayısı bir`char`|  
+|**CHAR_BIT**|8|Bit sayısı bir `char`|  
 |**USHRT_MAX**|65535 (0xffff)|En fazla **kısa imzasız** değeri|  
 |**SHRT_MAX**|32767|(İmzalanmış) maksimum **kısa** değeri|  
 |**SHRT_MIN**|-32768|(İmzalanmış) minimum **kısa** değeri|  
@@ -130,7 +125,7 @@ Veri türü sabitleri, tam sayı veri türleri için izin verilen değerlerin uy
 |**LONG_MIN**|-2147483647-1|(İmzalanmış) minimum **uzun** değeri|  
 |**CHAR_MAX**|127 (/J seçeneği kullanılırsa 255)|En fazla `char` değeri|  
 |**CHAR_MIN**|-128 (/J seçeneği kullanılırsa 0)|Minimum `char` değeri|  
-|**MB_LEN_MAX**|2|Çok baytlı bayt sayısı`char`|  
+|**MB_LEN_MAX**|2|Çok baytlı bayt sayısı `char`|  
 |**_I64_MAX**|9223372036854775807|En fazla (imzalanmış) __**Int64** değeri|  
 |**_I64_MIN**|-9223372036854775807-1|Minimum (imzalanmış) __**Int64** değeri|  
 |**_UI64_MAX**|0xffffffffffffffff|En fazla (imzalanmamış) __**Int64** değeri|  

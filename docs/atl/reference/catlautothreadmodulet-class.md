@@ -1,12 +1,9 @@
 ---
-title: "CAtlAutoThreadModuleT sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAtlAutoThreadModuleT sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CAtlAutoThreadModuleT
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - CAtlAutoThreadModuleT class
 ms.assetid: ae1667c6-3fb8-47bc-b35d-9ea5e9896d7f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 082214794b2caa66e8be1127c664e0ffec18a394
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a012494365745d40d98c0f65ee9eff6b5e9502da
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="catlautothreadmodulet-class"></a>CAtlAutoThreadModuleT sınıfı
 Bu sınıf, bir iş parçacığı havuza, modeli COM sunucusu uygulamak için yöntemleri sağlar.  
@@ -76,7 +71,7 @@ class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
-##  <a name="getdefaultthreads"></a>CAtlAutoThreadModuleT::GetDefaultThreads  
+##  <a name="getdefaultthreads"></a>  CAtlAutoThreadModuleT::GetDefaultThreads  
  Bu statik işlev dinamik olarak hesaplar ve işlemci sayısına göre EXE modülü için iş parçacığı sayısını döndürür.  
   
 ```

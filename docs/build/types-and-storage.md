@@ -1,27 +1,22 @@
 ---
-title: "Türler ve depolama | Microsoft Docs"
-ms.custom: 
+title: Türler ve depolama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 7fe008b2-520f-4b71-8cb5-35fd513146ce
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d85d59da52089d1cae1bd0d3c62384647f882e5e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 93d53749ace6b9021bd04e681fc74eb0e5ae4a5e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="types-and-storage"></a>Türler ve Depolama
 Bu bölümde numaralandırması ve depolama için veri türlerinin açıklanmaktadır [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] mimarisi.  

@@ -1,12 +1,9 @@
 ---
-title: "CSacl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CSacl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CSacl
@@ -21,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - CSacl class
 ms.assetid: 8624889b-aebc-4183-9d29-a20f07837f05
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4308211dd22c39311b4d767c4c4487d9bf23971
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: 116e66d36dde016ef902a0b345eec33e46177b6c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="csacl-class"></a>CSacl sınıfı
 SACL (sistem erişim denetim listesi) yapısı için bir sarmalayıcı sınıftır.  
@@ -172,7 +167,7 @@ UINT GetAceCount() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  ACE'ler içinde yer alan sayısını döndürür `CSacl` nesnesi.  
   
-##  <a name="operator_eq"></a>CSacl::operator =  
+##  <a name="operator_eq"></a>  CSacl::operator =  
  Atama işleci.  
   
 ```
@@ -186,7 +181,7 @@ CSacl& operator=(const ACL& rhs) throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Güncelleştirilmiş bir başvuru döndürür `CSacl` nesnesi. Emin **ACL** parametredir gerçekte sistem erişim denetimi listesi (SACL) ve bir isteğe bağlı erişim denetimi listesi (DACL) değil. Hata ayıklama yapıları onayı ifade gerçekleşir ve yayın derlemeleri **ACL** parametresi yok sayılacak.  
   
-##  <a name="removeace"></a>CSacl::RemoveAce  
+##  <a name="removeace"></a>  CSacl::RemoveAce  
  Belirli bir ACE (erişim denetim girdisi) kaldırır **CSacl** nesnesi.  
   
 ```
@@ -200,7 +195,7 @@ void RemoveAce(UINT nIndex) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem türetilir [CAtlArray::RemoveAt](../../atl/reference/catlarray-class.md#removeat).  
   
-##  <a name="removeallaces"></a>CSacl::RemoveAllAces  
+##  <a name="removeallaces"></a>  CSacl::RemoveAllAces  
  Tüm bulunan erişim denetimi girişlerinin (ACE'ler) kaldırır `CSacl` nesnesi.  
   
 ```

@@ -1,13 +1,10 @@
 ---
-title: "-GL (bütün Program iyileştirmesi) | Microsoft Docs"
-ms.custom: 
+title: -GL (bütün Program iyileştirmesi) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /gl
 - VC.Project.VCCLWCECompilerTool.WholeProgramOptimization
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - -GL compiler option [C++]
 - GL compiler option [C++]
 ms.assetid: 09d51e2d-9728-4bd0-b5dc-3b8284aca1d1
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd3a83b59a1b1a0e95dd46ebca57c814c7d680c9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ce972b6e7254ad7454f8e8799283588f0fdd5270
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="gl-whole-program-optimization"></a>/GL (Bütün Program İyileştirmesi)
 Bütün program iyileştirmesi sağlar.  

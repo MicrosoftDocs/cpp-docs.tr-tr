@@ -1,12 +1,9 @@
 ---
-title: "Hata ayıklama ve hata genel işlevler raporlama | Microsoft Docs"
-ms.custom: 
+title: Hata ayıklama ve hata genel işlevler raporlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - atlcomcli/ATL::AtlHresultFromLastError
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - functions [ATL], error reporting
 ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b3383efcc78a022fc5131984957d94aa4b47838
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fb3257b5205587b27a83671ed8e610aad5373eef
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="debugging-and-error-reporting-global-functions"></a>Hata ayıklama ve hata raporlama genel işlevler
 Bu işlevler yararlı hata ayıklama ve izleme olanakları sağlar.  
@@ -40,7 +35,7 @@ Bu işlevler yararlı hata ayıklama ve izleme olanakları sağlar.
 |[AtlThrow](debugging-and-error-reporting-global-functions.md#atlthrow)|Atan bir `CAtlException`.|  
 |[AtlThrowLastWin32](debugging-and-error-reporting-global-functions.md#atlthrowlastwin32)|Windows işlev sonucuna hata göstermek için bu işlevi çağırmak `GetLastError`.|  
   
-##  <a name="atlhresultfromlasterror"></a>AtlHresultFromLastError  
+##  <a name="atlhresultfromlasterror"></a>  AtlHresultFromLastError  
  Çağıran iş parçacığının son hata kodu değerini HRESULT biçiminde döndürür.  
   
 ```
@@ -48,12 +43,12 @@ HRESULT AtlHresultFromLastError();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AtlHresultFromLastError`çağrıları `GetLastError` son hata elde edilir ve kullanarak bir HRESULT dönüştürdükten sonra hata döndürür **HRESULT_FROM_WIN32** makrosu.  
+ `AtlHresultFromLastError` çağrıları `GetLastError` son hata elde edilir ve kullanarak bir HRESULT dönüştürdükten sonra hata döndürür **HRESULT_FROM_WIN32** makrosu.  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcomcli.h  
 
-##  <a name="atlhresultfromwin32"></a>AtlHresultFromWin32  
+##  <a name="atlhresultfromwin32"></a>  AtlHresultFromWin32  
  Win32 hata kodunu HRESULT biçimine dönüştürür.  
   
 ```
@@ -61,7 +56,7 @@ AtlHresultFromWin32(DWORD error);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *hata*  
+ *Hata*  
  Dönüştürülecek hata değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -73,7 +68,7 @@ AtlHresultFromWin32(DWORD error);
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcomcli.h  
 
-##  <a name="atlreporterror"></a>AtlReportError  
+##  <a name="atlreporterror"></a>  AtlReportError  
  Ayarlayan `IErrorInfo` nesne istemcilere hata bilgileri sağlamak için arabirim.  
   
 ```
@@ -162,7 +157,7 @@ HRESULT WINAPI AtlReportError(
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
     
-##  <a name="atlthrow"></a>AtlThrow  
+##  <a name="atlthrow"></a>  AtlThrow  
  Temel bir hata göstermek için bu işlevi çağırmak bir `HRESULT` durum kodu.  
   
 ```
@@ -194,7 +189,7 @@ __declspec(noreturn) inline void AtlThrow(HRESULT hr);
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atldef.h  
 
-##  <a name="atlthrowlastwin32"></a>AtlThrowLastWin32  
+##  <a name="atlthrowlastwin32"></a>  AtlThrowLastWin32  
  Windows işlev sonucuna hata göstermek için bu işlevi çağırmak `GetLastError`.  
   
 ```

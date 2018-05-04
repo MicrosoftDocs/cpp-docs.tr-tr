@@ -1,13 +1,10 @@
 ---
-title: "-Od (devre dışı bırak (Hata Ayıkla)) | Microsoft Docs"
-ms.custom: 
+title: -Od (devre dışı bırak (Hata Ayıkla)) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /od
 dev_langs:
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - -Od compiler option [C++]
 - disable (debug) compiler option [C++]
 ms.assetid: b1ac31b7-e086-4eeb-be5e-488f7513f5f5
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0956493184f6c2322bc6838049472e90ad0c1985
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 47e287a9991f8192f16ec2f93e4068dc797ff72a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="od-disable-debug"></a>/Od (Devre Dışı Bırak (Hata Ayıkla))
 Programı tüm iyileştirmeler kapatır ve derleme hızlandırır.  
@@ -63,4 +58,4 @@ Programı tüm iyileştirmeler kapatır ve derleme hızlandırır.
  [/O seçenekler (kodu İyileştir)](../../build/reference/o-options-optimize-code.md)   
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
  [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
- [/ Z7, / zi, /zı (hata ayıklama bilgileri biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md)
+ [/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md)

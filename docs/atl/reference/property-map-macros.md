@@ -2,11 +2,8 @@
 title: Özellik eşleme makroları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - atlcom/ATL::BEGIN_PROP_MAP
@@ -20,17 +17,15 @@ dev_langs:
 helpviewer_keywords:
 - property maps
 ms.assetid: 128bc742-2b98-4b97-a243-684dbb83db77
-caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfd99fa59fc5e1d97011ac3dba4d16dd222c35b6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 718028385b3910b955c49ab9e0abddf23b443967
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="property-map-macros"></a>Özellik eşleme makroları
 Bu makroları özellik eşlemeleri ve girişleri tanımlayın.  
@@ -47,7 +42,7 @@ Bu makroları özellik eşlemeleri ve girişleri tanımlayın.
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
    
-##  <a name="begin_prop_map"></a>BEGIN_PROP_MAP  
+##  <a name="begin_prop_map"></a>  BEGIN_PROP_MAP  
  Nesnenin özellik eşlemesi başlangıcını işaretler.  
   
 ```
@@ -63,12 +58,12 @@ BEGIN_PROP_MAP(theClass)
   
  ATL Proje Sihirbazı'yla bir nesne oluşturduğunuzda, sihirbaz boş özellik eşlemesi belirterek oluşturacak `BEGIN_PROP_MAP` arkasından [END_PROP_MAP](#end_prop_map).  
   
- `BEGIN_PROP_MAP`hiçbir uzantı olması gereken şekilde özellik eşlemesi kullanan bir nesne bir kullanıcı arabirimi olmayabilir çünkü bir özellik eşlemesi ölçüde (boyutlar) kaydetmez. Nesne kullanıcı arabirimi ile bir ActiveX denetimi ise, bir uzantı var. Bu durumda, belirtmelisiniz [PROP_DATA_ENTRY](#prop_data_entry) ölçüde sağlamak için özellik eşlemesi içinde.  
+ `BEGIN_PROP_MAP` hiçbir uzantı olması gereken şekilde özellik eşlemesi kullanan bir nesne bir kullanıcı arabirimi olmayabilir çünkü bir özellik eşlemesi ölçüde (boyutlar) kaydetmez. Nesne kullanıcı arabirimi ile bir ActiveX denetimi ise, bir uzantı var. Bu durumda, belirtmelisiniz [PROP_DATA_ENTRY](#prop_data_entry) ölçüde sağlamak için özellik eşlemesi içinde.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#103](../../atl/codesnippet/cpp/property-map-macros_1.h)]  
   
-##  <a name="prop_data_entry"></a>PROP_DATA_ENTRY  
+##  <a name="prop_data_entry"></a>  PROP_DATA_ENTRY  
  Uzantı ya da bir ActiveX denetiminin boyutları gösterir.  
   
 ```
@@ -82,7 +77,7 @@ PROP_DATA_ENTRY( szDesc, member, vt)
  `member`  
  [in] Uzantı içeren veri üyesi; Örneğin, `m_sizeExtent`.  
   
- *VT*  
+ *vt*  
  [in] Özellik değişken türünü belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -97,7 +92,7 @@ PROP_DATA_ENTRY( szDesc, member, vt)
   
  [!code-cpp[NVC_ATL_Windowing#132](../../atl/codesnippet/cpp/property-map-macros_3.h)]  
   
-##  <a name="prop_entry_type"></a>PROP_ENTRY_TYPE  
+##  <a name="prop_entry_type"></a>  PROP_ENTRY_TYPE  
  Özellik açıklaması, özellik DISPID ve özellik sayfası CLSID nesnenin özellik eşlemeye girmek için bu makrosu kullanın.  
   
 ```
@@ -125,7 +120,7 @@ PROP_ENTRY_TYPE( szDesc, dispid, clsid, vt)
 ### <a name="example"></a>Örnek  
  Örneğin bkz [BEGIN_PROP_MAP](#begin_prop_map).  
   
-##  <a name="prop_entry_type_ex"></a>PROP_ENTRY_TYPE_EX  
+##  <a name="prop_entry_type_ex"></a>  PROP_ENTRY_TYPE_EX  
  Benzer şekilde [PROP_ENTRY_TYPE](#prop_entry_type), ancak belirttiğiniz belirli IID nesnenizin birden çok çift arabirimler destekliyorsa verir.  
   
 ```
@@ -158,7 +153,7 @@ PROP_ENTRY_TYPE_EX( szDesc, dispid, clsid, iidDispatch, vt)
   
  [!code-cpp[NVC_ATL_Windowing#133](../../atl/codesnippet/cpp/property-map-macros_4.h)]  
   
-##  <a name="prop_page"></a>PROP_PAGE  
+##  <a name="prop_page"></a>  PROP_PAGE  
  Özellik sayfası CLSID nesnenin özellik eşlemeye girmek için bu makrosu kullanın.  
   
 ```
@@ -170,7 +165,7 @@ PROP_PAGE(clsid)
  [in] Özellik sayfası CLSID.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `PROP_PAGE`benzer [PROP_ENTRY_TYPE](#prop_entry_type), ancak özellik açıklama veya DISPID gerektirmez.  
+ `PROP_PAGE` benzer [PROP_ENTRY_TYPE](#prop_entry_type), ancak özellik açıklama veya DISPID gerektirmez.  
   
 > [!NOTE]
 >  CLSID zaten girdiyseniz `PROP_ENTRY_TYPE` veya [PROP_ENTRY_TYPE_EX](#prop_entry_type_ex), olan ek bir giriş yapmak gerekmez `PROP_PAGE`.  
@@ -180,7 +175,7 @@ PROP_PAGE(clsid)
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#134](../../atl/codesnippet/cpp/property-map-macros_5.h)]  
   
-##  <a name="end_prop_map"></a>END_PROP_MAP  
+##  <a name="end_prop_map"></a>  END_PROP_MAP  
  Nesnenin özellik eşlemesi sonunu işaretler.  
   
 ```

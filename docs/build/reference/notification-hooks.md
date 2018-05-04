@@ -1,29 +1,24 @@
 ---
-title: "Bildirim kancaları | Microsoft Docs"
-ms.custom: 
+title: Bildirim kancaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - delayed loading of DLLs, notification hooks
 ms.assetid: e9c291ed-2f2d-4319-a171-09800625256f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31490e3bb591af6568ffecddf68219c89a25e055
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0210c4ee058694594893a029789442c89003da2e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="notification-hooks"></a>Bildirim Kancaları
 Yalnızca aşağıdaki eylemleri içindeki Yardımcısı yordamı gerçekleştirmeden önce bildirim kancaları çağrılır:  
@@ -40,7 +35,7 @@ Yalnızca aşağıdaki eylemleri içindeki Yardımcısı yordamı gerçekleştir
   
 -   İşaretçinin yeni bir tanımı sağlayarak **__pfnDliNotifyHook2** bildirimleri alan kendi işlevi işaret edecek şekilde başlatıldı.  
   
-     veya  
+     -veya-  
   
 -   İşaretçinin ayarlayarak **__pfnDliNotifyHook2** yükleme programı DLL yapılan her çağrı gecikme önce kanca işlevi.  
   

@@ -1,12 +1,9 @@
 ---
-title: "CW2WEX sınıfı | Microsoft Docs"
-ms.custom: 
+title: CW2WEX sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CW2WEX
@@ -19,17 +16,15 @@ dev_langs:
 helpviewer_keywords:
 - CW2WEX class
 ms.assetid: 46262e56-e0d2-41fe-855b-0b67ecc8fcd7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c35439b1309e75359177cf45ade4c6be9459f623
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e70ba1fdf42ea2f00b057d9b95105b34d9eff5a2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cw2wex-class"></a>CW2WEX sınıfı
 Bu sınıf dize dönüştürme makroları tarafından kullanılan `CW2TEX` ve `CT2WEX`ve typedef `CW2W`.  
@@ -97,7 +92,7 @@ class CW2WEX
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlconv.h  
   
-##  <a name="cw2wex"></a>CW2WEX::CW2WEX  
+##  <a name="cw2wex"></a>  CW2WEX::CW2WEX  
  Oluşturucu.  
   
 ```
@@ -115,7 +110,7 @@ CW2WEX( LPCWSTR  psz) throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  Çeviri için gerekli olan arabellek oluşturur.  
   
-##  <a name="dtor"></a>CW2WEX:: ~ CW2WEX  
+##  <a name="dtor"></a>  CW2WEX:: ~ CW2WEX  
  Yok Edicisi...  
   
 ```
@@ -125,21 +120,21 @@ CW2WEX( LPCWSTR  psz) throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  Ayrılmış arabelleğe boşaltır.  
   
-##  <a name="m_psz"></a>CW2WEX::m_psz  
+##  <a name="m_psz"></a>  CW2WEX::m_psz  
  Kaynak dizesi depolar veri üyesi.  
   
 ```
 LPWSTR m_psz;
 ```  
   
-##  <a name="m_szbuffer"></a>CW2WEX::m_szBuffer  
+##  <a name="m_szbuffer"></a>  CW2WEX::m_szBuffer  
  Dönüştürülmüş dizeyi depolamak için kullanılan statik arabelleği.  
   
 ```
 wchar_t m_szBuffer[t_nBufferLength];
 ```  
   
-##  <a name="operator_lpwstr"></a>CW2WEX::operator LPWSTR  
+##  <a name="operator_lpwstr"></a>  CW2WEX::operator LPWSTR  
  Atama işleci.  
   
 ```  

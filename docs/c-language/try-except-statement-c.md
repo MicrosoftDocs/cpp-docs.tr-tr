@@ -1,13 +1,10 @@
 ---
-title: "deneyin-dışındaki Statement (C) | Microsoft Docs"
-ms.custom: 
+title: deneyin-dışındaki Statement (C) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - __except keyword [C], in try-except
 - try-catch keyword [C], try-except keyword [C]
 ms.assetid: f76db9d1-fc78-417f-b71f-18e545fc01c3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9896e8a348a70ff6e27342f53f627097ef15dfa8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7c55ff2599fac14be0be9ac852727167dd34e02d
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="try-except-statement-c"></a>try-except Deyimi (C)
 **Microsoft özel**  
@@ -52,11 +47,11 @@ ms.lasthandoff: 12/21/2017
   
 3.  Korumalı Bölüm yürütülmesi sırasında bir özel durum oluşur veya korumalı bölüm içindeki herhangi bir yordamı çağıran `__except` ifadenin değerlendirileceği ve döndürülen değer, özel durumun nasıl işlendiğini belirler. Üç değer vardır:  
   
-     `EXCEPTION_CONTINUE_SEARCH`Özel durum tanınmıyor. Bir işleyici yığını yukarı ilk içeren için aramaya devam **deneyin-dışında** deyimlerini sonra işleyicileri sonraki en yüksek önceliğe sahip.  
+     `EXCEPTION_CONTINUE_SEARCH` Özel durum tanınmıyor. Bir işleyici yığını yukarı ilk içeren için aramaya devam **deneyin-dışında** deyimlerini sonra işleyicileri sonraki en yüksek önceliğe sahip.  
   
-     `EXCEPTION_CONTINUE_EXECUTION`Özel durum tanınan ancak kapatılır. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.  
+     `EXCEPTION_CONTINUE_EXECUTION` Özel durum tanınan ancak kapatılır. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.  
   
-     `EXCEPTION_EXECUTE_HANDLER`Özel durum tanınır. Denetim yürüterek özel durum işleyici aktarım `__except` bileşik deyim sonra yürütme özel durumu oluştuğu noktadan devam edin.  
+     `EXCEPTION_EXECUTE_HANDLER` Özel durum tanınır. Denetim yürüterek özel durum işleyici aktarım `__except` bileşik deyim sonra yürütme özel durumu oluştuğu noktadan devam edin.  
   
  Çünkü `__except` ifadenin C ifade olarak, tek bir değer, koşullu ifade işleci veya virgül işleci sınırlıdır. Daha kapsamlı bir işlem gerekliyse, ifade yukarıda listelenen üç değerden birini döndüren bir yordam çağırabilir.  
   

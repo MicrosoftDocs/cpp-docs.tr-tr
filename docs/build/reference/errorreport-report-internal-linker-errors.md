@@ -1,13 +1,10 @@
 ---
-title: "-ERRORREPORT (dahili bağlayıcı hatalarını raporla) | Microsoft Docs"
-ms.custom: 
+title: -ERRORREPORT (dahili bağlayıcı hatalarını raporla) | Microsoft Docs
+ms.custom: ''
 ms.date: 12/28/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /ERRORREPORT
 - VC.Project.VCLinkerTool.ErrorReporting
@@ -18,31 +15,29 @@ helpviewer_keywords:
 - ERRORREPORT linker option
 - -ERRORREPORT linker option
 ms.assetid: f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ddf65ed2a17dae2d86b0dc4582f1d3158328898
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 72e620e5347d422a8de66cba3ea9cfd601bb3f29
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="errorreport-report-internal-linker-errors"></a>/ERRORREPORT (Dahili Bağlayıcı Hatalarını Raporla)
 
-> **/ errorreport:**[ **hiçbiri** | **istemi** | **sıra** | **gönderme** ]
+> **/ errorreport:**[ **hiçbiri** | **istemi** | **sıra** | **Gönder** ]
 
 ## <a name="arguments"></a>Arguments
 
-**yok**  
+**Yok**  
 İç derleyici hataları hakkında raporlar değil toplanmayacak veya Microsoft'a gönderilir.
 
 **istemi**  
 Derleyici iç hatası aldığınızda, bir raporu göndermek isteyip istemediğinizi sorar. **İstemi** bir uygulama geliştirme ortamında derlendiğinde varsayılandır.
 
-**sırası**  
+**Sırası**  
 Hata raporu sıralar. Yönetici ayrıcalıklarıyla oturum kapatışınızda oturum en son ne zaman bu yana hataları rapor için bir pencere görüntülenir (üç günde birden çok kez hata raporu göndermek için istenir değildir). **sıra** uygulamanın bir komut isteminde derlendiğinde varsayılandır.
 
 **Gönder**  
@@ -68,6 +63,6 @@ Seçenek **/errorreport:send** Windows Hata Raporlama hizmeti ayarları tarafın
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/ errorreport (dahili derleme hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md)  
+[/errorReport (Dahili Derleme Hatalarını Raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md)  
 [Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)  
 [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)  

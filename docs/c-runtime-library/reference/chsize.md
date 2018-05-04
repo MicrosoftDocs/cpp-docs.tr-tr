@@ -4,7 +4,6 @@ ms.custom: ''
 ms.date: 03/29/2018
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _chsize
@@ -34,14 +33,13 @@ helpviewer_keywords:
 ms.assetid: b3e881c5-7b27-4837-a3d4-c51591ab10ff
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 818051fba093c83d695afcad103865b4114673d0
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: eb40d218439ebe308e7d7cf01ab5043a2ebb3b1e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="chsize"></a>_chsize
 

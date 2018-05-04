@@ -1,27 +1,22 @@
 ---
-title: "Giriş ve bitiş | Microsoft Docs"
-ms.custom: 
+title: Giriş ve bitiş | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 0453ed1a-3ff1-4bee-9cc2-d6d3d6384984
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 700b467065d17a61dcfabf9dcaa6577a7ecffc11
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2939293fe5fbdfd07cb12470790de5b064489d7f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prolog-and-epilog"></a>Giriş ve Bitiş
 Yığın alanı ayıran her işlev, diğer işlevleri, kalıcı Yazmaçları kaydeden veya özel durum işleme kullanan çağrıları adres sınırları ilgili işlev tablosu girişi ile ilişkilendirilmiş bırakma verileriyle açıklanmıştır bir giriş olması gerekir ( bakın[Özel durum işleme (x64)](../build/exception-handling-x64.md)). Giriş bağımsız değişkeni ev adresleri Yazmaçları gerekirse iter kalıcı Yazmaçları yığında kaydeder, Yereller ve temporaries için yığın sabit parçası ayırır ve isteğe bağlı olarak bir çerçeve işaretçisi oluşturur. İlişkili veri bırakma giriş eylemi açıklayan gerekir ve giriş kodu etkisini geri almak gerekli bilgileri sağlamanız gerekir.  

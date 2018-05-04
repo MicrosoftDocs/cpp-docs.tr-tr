@@ -1,13 +1,10 @@
 ---
-title: "Yürütme karakter kümesi | Microsoft Docs"
-ms.custom: 
+title: Yürütme karakter kümesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - character sets [C++], execution and source
 - source character set [C++]
 ms.assetid: 39ffbb55-11c1-4b6d-a105-327c0fceb449
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ba264612923e101c63b5ec3503bbfbce426d8bb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e76adb397c9131bbaa7c2c40124de31348c56a31
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="execution-character-set"></a>Yürütme Karakter Kümesi
 Bu içerik çoğu zaman "yürütme karakter kümesi" anlamına gelir. Yürütme karakter kümesi, C programları yazmak için kullanılan kaynak karakter kümesi ile aynı olmayabilir. Yürütme karakter kümesi, kaynak karakter kümesindeki tüm karakterleri ve null karakterini, yeni satır karakterini, geri al karakterini, yatay sekmeyi, dikey sekmeyi, satır başını ve kaçış dizilerini içerir. Kaynak ve yürütme karakter kümeleri, diğer uygulamalarda farklı olabilir.  

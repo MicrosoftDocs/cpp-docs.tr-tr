@@ -1,29 +1,24 @@
 ---
-title: "(C++) işlev şablonlarının kısmi sıralaması | Microsoft Docs"
-ms.custom: 
+title: (C++) işlev şablonlarının kısmi sıralaması | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - partial ordering of function templates
 ms.assetid: 0c17347d-0e80-47ad-b5ac-046462d9dc73
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cddc0f1680a3354276a2135dd28c31a2037a8202
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 60936a46732e4b2ed827a5efb08740661d9bb0d9
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="partial-ordering-of-function-templates-c"></a>İşlev Şablonlarının Kısmi Sıralanması (C++)
 
@@ -49,7 +44,7 @@ Bir işlev şablonu adayının daha özel olup olmadığını belirlemek için a
 
      2. Yalnızca alma şablon __T\*__  yalnızca bir alan daha fazla özel __T__, bir kuramsal türü __X\*__  için geçerli bir bağımsız değişken bir __T__ şablon bağımsız değişken, ancak __X__ için geçerli bir bağımsız değişken değil bir __T\*__  şablon bağımsız değişken.
 
-     3. __const T__ 'den fazla özelleştirilmiş __T__, çünkü __const X__ için geçerli bir bağımsız değişken bir __T__ şablon bağımsız değişken, ancak __X__ için geçerli bir bağımsız değişken değil bir __const T__ şablon bağımsız değişken.
+     3. __const T__ 'den fazla özelleştirilmiş __T__, çünkü __const X__ için geçerli bir bağımsız değişken bir __T__ şablon bağımsız değişken, ancak __X__ olduğu değil geçerli bir bağımsız değişken için bir __const T__ şablon bağımsız değişken.
 
      4. __const T\*__  'den fazla özelleştirilmiş __T\*__, çünkü __const X\*__  için geçerli bir bağımsız değişken bir __T\*__  şablon bağımsız değişken, ancak __X\*__  için geçerli bir bağımsız değişken değil bir __const T\*__  şablon bağımsız değişken.
 

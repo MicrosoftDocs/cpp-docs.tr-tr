@@ -1,27 +1,22 @@
 ---
-title: "Sağ kaydırmalar | Microsoft Docs"
-ms.custom: 
+title: Sağ kaydırmalar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: c878e97d-ea3c-4c6b-90a8-b1b24b2d5b19
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 307cf91bf86f2912ad6cafa7e89f48e614c3865a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c2eac057bbf8164915ff645cca098bbbf7c1995a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="right-shifts"></a>Sağa Kaydırmalar
 Sağa kaydırma negatif değer sonucunu tam sayı türdür  

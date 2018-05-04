@@ -1,29 +1,24 @@
 ---
-title: "İşleç aşırı yüklemesi genel kuralları | Microsoft Docs"
-ms.custom: 
+title: İşleç aşırı yüklemesi genel kuralları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - operator overloading [C++], rules
 ms.assetid: eb2b3754-35f7-4832-b1da-c502893dc0c7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 199db318eb847687d10044e0376b70c8d6d44feb
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 0abd32f2c46f7d7b26ea617e2cf43f1dc3c124bf
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="general-rules-for-operator-overloading"></a>İşleç Aşırı Yüklemesi Genel Kuralları
 Aşağıdaki kuralları nasıl aşırı yüklenmiş işleçler sınırlamak uygulanır. Bununla birlikte, bunlar için uygulanmaz [yeni](../cpp/new-operator-cpp.md) ve [silmek](../cpp/delete-operator-cpp.md) ayrı olarak ele alınmıştır işleçler.  
@@ -59,7 +54,7 @@ Aşağıdaki kuralları nasıl aşırı yüklenmiş işleçler sınırlamak uygu
   
 -   İkili işleçler üye işlevleri bildirilen bir bağımsız değişken alın; genel işlevler bildirilen, bunlar iki bağımsız değişkenleri alır.  
   
--   Bir operatör bir birli ya da bir ikili işleç olarak kullanılıp kullanılamayacağını (**&**,  **\*** ,  **+** , ve  **-** ), her kullanım ayrı ayrı aşırı yüklenebilir.  
+-   Bir operatör bir birli ya da bir ikili işleç olarak kullanılıp kullanılamayacağını (**&**, **\***, **+**, ve **-**), her kullanım ayrı ayrı aşırı yüklenebilir.  
   
 -   Aşırı yüklenmiş işleçler varsayılan bağımsız değişkenler sahip olamaz.  
   

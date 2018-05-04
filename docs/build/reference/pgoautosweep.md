@@ -13,14 +13,13 @@ f1_keywords:
 - PogoAutoSweepW
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b26eb95552594733fa0849c0df114676dc7a222
-ms.sourcegitcommit: ee7d74683af7631441c8c7f65ef5ceceaee4a5ee
+ms.openlocfilehash: 988a73dd8c4ad6929ef04691ad1959df7ea7bdd7
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pgoautosweep"></a>PgoAutoSweep
 

@@ -1,11 +1,8 @@
 ---
 title: _execute_onexit_table, _initialize_onexit_table, _register_onexit_function | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - _execute_onexit_table
 - _initialize_onexit_table
@@ -27,17 +24,15 @@ helpviewer_keywords:
 - _initialize_onexit_table function
 - _register_onexit_function function
 ms.assetid: ad9e4149-d4ad-4fdf-aaaf-cf786fcb4473
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2aa296c04d81fcdea2000ab8e2dbc1ae5523673
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1e1f4ebf40bc242d0daf98bbc85c2ea3d1295043
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="executeonexittable-initializeonexittable-registeronexitfunction"></a>_execute_onexit_table, _initialize_onexit_table, _register_onexit_function
 Çıkış zaman çağrılacak yordamları yönetir.  
@@ -60,10 +55,10 @@ int _execute_onexit_table(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [ınout]`table`  
+ [ınout] `table`  
  Onexit işlevi tablonun işaretçi.  
   
- [in]`function`  
+ [in] `function`  
  Onexit işlevi tabloya eklemek için bir işlev işaretçisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  

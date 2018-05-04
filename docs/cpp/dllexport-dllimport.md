@@ -1,12 +1,9 @@
 ---
 title: dllexport, dllimport | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - dllimport_cpp
@@ -19,20 +16,18 @@ helpviewer_keywords:
 - dllimport __declspec keyword
 - __declspec keyword [C++], dllimport
 ms.assetid: ff95b645-ef55-4e72-b848-df44657b3208
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4e5b98b5541d1dc5f4a94c9611668a9ea8d787a
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: 3d57287723da1bb7fbe7f75dece05674142bd417
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="dllexport-dllimport"></a>dllexport, dllimport
-**Microsoft Specific**  
+**Microsoft özel**  
   
  `dllexport` Ve **dllimport** depolama sınıfı öznitelikler C ve C++ dilleri için Microsoft'a özgü uzantılar bağlıdır. Ya da DLL'den işlevleri, veri ve nesneleri almak ve vermek için bunları kullanabilirsiniz.  
   
@@ -49,7 +44,7 @@ ms.lasthandoff: 01/25/2018
   
  Bir sınıf declspec(dllexport) işaretlenmişse sınıf şablonlarının sınıf hiyerarşisindeki tüm özelleştirmeleri örtük olarak declspec(dllexport) işaretlenir. Bu sınıf şablonları açıkça örneği ve sınıf'ın üyeleri tanımlanmalıdır anlamına gelir.  
   
- `dllexport`bir işlevi olarak düzenlenmiş adıyla işlevi sunar. İçin C++ işlevlerini, bu ad bozma içerir. C işlevlerini veya olarak bildirilen işlevler için `extern "C"`, bu arama kuralına göre platforma özgü decoration içerir. C/C++ kod ad düzenleme hakkında daha fazla bilgi için bkz: [donatılmış adları](../build/reference/decorated-names.md). Ad düzenlemesi dışarı aktarılan C işlevlerini ya da C++ uygulanan `extern "C"` kullanarak işlevleri `__cdecl` çağırma.  
+ `dllexport` bir işlevi olarak düzenlenmiş adıyla işlevi sunar. İçin C++ işlevlerini, bu ad bozma içerir. C işlevlerini veya olarak bildirilen işlevler için `extern "C"`, bu arama kuralına göre platforma özgü decoration içerir. C/C++ kod ad düzenleme hakkında daha fazla bilgi için bkz: [donatılmış adları](../build/reference/decorated-names.md). Ad düzenlemesi dışarı aktarılan C işlevlerini ya da C++ uygulanan `extern "C"` kullanarak işlevleri `__cdecl` çağırma.  
   
  Ve bir ad vermek için bir dışarı aktarma bölümünde ve adını tanımlayan bir modül tanımlama (.def) dosyası kullanarak bağlayabilirsiniz. Daha fazla bilgi için bkz: [dışarı](../build/reference/exports.md). Ve bir ad vermek için başka bir yolu bir `#pragma comment(linker, "/export:alias=decorated_name")` kaynak kodundaki yönergesi.  
   
@@ -77,7 +72,7 @@ DllExport int n;
   
  Daha fazla bilgi için bkz.:  
   
--   [Tanımlar ve bildirimler](../cpp/definitions-and-declarations-cpp.md)  
+-   [Tanımlar ve Bildirimler](../cpp/definitions-and-declarations-cpp.md)  
   
 -   [dllexport ve dllimport ile Satır İçi C++ İşlevlerini Tanımlama](../cpp/defining-inline-cpp-functions-with-dllexport-and-dllimport.md)  
   

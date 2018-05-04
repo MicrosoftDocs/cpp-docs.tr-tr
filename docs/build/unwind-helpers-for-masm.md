@@ -1,27 +1,22 @@
 ---
-title: "MASM için Yardımcıları Bırakma | Microsoft Docs"
-ms.custom: 
+title: MASM için Yardımcıları Bırakma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 36591f9d-43d5-47b1-ae09-e45cf127204c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7c80606f72e8c9ebfbd14290de1128a982433a5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6e7135802bdc91c611132760ebbee4e0619ba0de
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="unwind-helpers-for-masm"></a>MASM için Yardımcıları Bırakma
 Düzgün derleme yordamları yazmak için bir dizi gerçek derleme yönergeleri ile paralel sanal işlem bulunur ve ve.xdata'yı oluşturmak için kullanılabilir sözde işlemler vardır. Vardır de sağlayan makrolar kümesi Basitleştirilmiş sözde işlemler için en yaygın kullanımları kullanımı.  

@@ -1,10 +1,10 @@
 ---
-title: "CRT kitaplık özellikleri | Microsoft Docs"
-ms.custom: 
+title: CRT kitaplık özellikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2018
 ms.technology:
 - cpp-standard-libraries
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.runtime
 dev_langs:
@@ -26,14 +26,13 @@ helpviewer_keywords:
 ms.assetid: a889fd39-807d-48f2-807f-81492612463f
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33e3e5f63aebfd1b169210eaa3748feb761e0422
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 4b20fa6862a835ca913a2865a651112584966af3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="crt-library-features"></a>CRT Kitaplık Özellikleri
 
@@ -63,7 +62,7 @@ Bu tablo vcruntime kitaplığı uygulamak kitaplıkları listeler.
 |libvcruntime.lib|Yok.|Statik olarak kodunuza bağlı.|**/MT**|_MT|
 |libvcruntimed.lib|Yok.|Statik bağlama için sürüm hata ayıklama. Değil yeniden dağıtılabilir.|**/MTd**|_MT, _DEBUG|
 |vcruntime.lib|vcruntime\<sürüm > .dll|DLL içeri aktarma kitaplığını vcruntime için.|**/MD**|_MT, _DLL|
-|vcruntimed.lib|vcruntime\<version>d.dll|Hata ayıklama vcruntime için DLL içeri aktarma kitaplığı. Değil yeniden dağıtılabilir.|**/MDd**|_DEBUG, _MT, _DLL|
+|vcruntimed.lib|vcruntime\<sürüm > d.dll|Hata ayıklama vcruntime için DLL içeri aktarma kitaplığı. Değil yeniden dağıtılabilir.|**/MDd**|_DEBUG, _MT, _DLL|
 
 CRT başlatır CRT kitaplık statik veya dinamik olarak bağlı, veya yerel, yönetilen veya karma kodu olduğuna bağlı birden çok kitaplık birinde koddur. Bu kod CRT başlatma, iç iş parçacığı başına veri başlatma ve sonlandırma işler. Kullanılan derleyici sürümüne özeldir. Dinamik olarak bağlı UCRT kullanırken bile bu kitaplığı her zaman statik olarak bağlanır.
 
@@ -71,7 +70,7 @@ Bu tablo CRT başlatma ve sonlandırma uygulamak kitaplıkları listeler.
 
 |Kitaplığı|Özellikler|Seçenek|Ön işlemci yönergeleri|
 |-------------|---------------------|------------|-----------------------------|
-|libcmt.lib|Statik olarak yerel CRT başlatma kodunuza bağlar.|**/MT**|_MT|
+|Libcmt.lib|Statik olarak yerel CRT başlatma kodunuza bağlar.|**/MT**|_MT|
 |libcmtd.lib|Statik olarak yerel CRT başlatma hata ayıklama sürümü bağlar. Değil yeniden dağıtılabilir.|**/MTd**|_DEBUG, _MT|
 |msvcrt.lib|DLL UCRT ve vcruntime ile kullanım için yerel CRT başlatma için statik kitaplığı.|**/MD**|_MT, _DLL|
 |msvcrtd.lib|Statik kitaplık yerel CRT başlatma DLL UCRT ve vcruntime ile kullanmak için hata ayıklama sürümü. Değil yeniden dağıtılabilir.|**/MDd**|_DEBUG, _MT, _DLL|

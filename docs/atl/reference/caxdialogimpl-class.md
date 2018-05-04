@@ -2,11 +2,8 @@
 title: CAxDialogImpl sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CAxDialogImpl
@@ -26,17 +23,15 @@ helpviewer_keywords:
 - CAxDialogImpl class
 - ATL, dialog boxes
 ms.assetid: 817df483-3fa8-44e7-8487-72ba0881cd27
-caps.latest.revision: 21
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2db97c0de9f262936212cf7f38abddf7c91eb5a6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e3e1b7d4f88428060f4aa4d01180bce1e970b650
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="caxdialogimpl-class"></a>CAxDialogImpl sınıfı
 Bu sınıf, bir iletişim kutusu (kalıcı veya geçici) barındıran ActiveX denetimlerini uygular.  
@@ -80,9 +75,9 @@ class ATL_NO_VTABLE CAxDialogImpl : public CDialogImplBaseT<TBase>
 |[CAxDialogImpl::m_bModal](#m_bmodal)|Hata ayıklama yalnızca mevcut bir değişken oluşturur ve iletişim kutusunu kalıcı ise true olarak ayarlandı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CAxDialogImpl`kalıcı veya geçici bir iletişim kutusu oluşturmanıza olanak sağlar. `CAxDialogImpl`Varsayılan ileti eşlemesi uygun işleyicileri iletilerini yönlendirmek için kullandığı iletişim kutusu yordam sağlar.  
+ `CAxDialogImpl` kalıcı veya geçici bir iletişim kutusu oluşturmanıza olanak sağlar. `CAxDialogImpl` Varsayılan ileti eşlemesi uygun işleyicileri iletilerini yönlendirmek için kullandığı iletişim kutusu yordam sağlar.  
   
- `CAxDialogImpl`türetilen `CDialogImplBaseT`, hangi sırayla türetilen *TBase* (varsayılan olarak, `CWindow`) ve `CMessageMap`.  
+ `CAxDialogImpl` türetilen `CDialogImplBaseT`, hangi sırayla türetilen *TBase* (varsayılan olarak, `CWindow`) ve `CMessageMap`.  
   
  Sınıfınızda iletişim şablonu kaynak kimliğini belirtir. bir IDD üye tanımlamanız gerekir Örneğin, bir ATL iletişim kutusu kullanılarak nesne ekleme **sınıfı Ekle** iletişim kutusu otomatik olarak sınıfınıza aşağıdaki satırı ekler:  
   
@@ -110,7 +105,7 @@ class ATL_NO_VTABLE CAxDialogImpl : public CDialogImplBaseT<TBase>
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  
   
-##  <a name="advisesinkmap"></a>CAxDialogImpl::AdviseSinkMap  
+##  <a name="advisesinkmap"></a>  CAxDialogImpl::AdviseSinkMap  
  Öneri veya nesnenin havuz olay eşlemini tüm girişler unadvise için bu yöntemi çağırın.  
   
 ```
@@ -124,7 +119,7 @@ HRESULT AdviseSinkMap(bool bAdvise);
 ### <a name="return-value"></a>Dönüş Değeri  
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
-##  <a name="create"></a>CAxDialogImpl::Create  
+##  <a name="create"></a>  CAxDialogImpl::Create  
  Kalıcı olmayan iletişim kutusu oluşturmak için bu yöntemi çağırın.  
   
 ```
@@ -139,7 +134,7 @@ HWND Create(HWND hWndParent, RECT&, LPARAM dwInitParam = NULL);
  `dwInitParam`  
  [in] İletişim kutusuna geçirmek için kullanılacak değeri belirtir `lParam` parametresinin **WM_INITDIALOG** ileti.  
   
- **RECT &**  
+ **RECT &AMP;**  
  Bu parametre kullanılmaz. Bu parametre geçirilen `CComControl`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -150,7 +145,7 @@ HWND Create(HWND hWndParent, RECT&, LPARAM dwInitParam = NULL);
   
  İkinci geçersiz kılma ile iletişim kutuları yalnızca kullanılabilmesi için sağlanan [CComControl](../../atl/reference/ccomcontrol-class.md).  
   
-##  <a name="destroywindow"></a>CAxDialogImpl::DestroyWindow  
+##  <a name="destroywindow"></a>  CAxDialogImpl::DestroyWindow  
  Kalıcı olmayan iletişim kutusu yok etmek için bu yöntemi çağırın.  
   
 ```
@@ -163,7 +158,7 @@ BOOL DestroyWindow();
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmayın `DestroyWindow` modal bir iletişim kutusu yok etmek için. Çağrı [EndDialog](#enddialog) yerine.  
   
-##  <a name="domodal"></a>CAxDialogImpl::DoModal  
+##  <a name="domodal"></a>  CAxDialogImpl::DoModal  
  Modal bir iletişim kutusu oluşturmak için bu yöntemi çağırın.  
   
 ```
@@ -187,7 +182,7 @@ INT_PTR DoModal(
   
  Kalıcı olmayan iletişim kutusu oluşturmak için çağrı [oluşturma](#create).  
   
-##  <a name="enddialog"></a>CAxDialogImpl::EndDialog  
+##  <a name="enddialog"></a>  CAxDialogImpl::EndDialog  
  Modal bir iletişim kutusu yok etmek için bu yöntemi çağırın.  
   
 ```
@@ -202,12 +197,12 @@ BOOL EndDialog(int nRetCode);
  İletişim kutusu yok TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `EndDialog`iletişim kutusu yordam boyunca çağrılmalıdır. İletişim kutusu yok sonra Windows değerini kullanır `nRetCode` dönüş değeri olarak `DoModal`, iletişim kutusu oluşturuldu.  
+ `EndDialog` iletişim kutusu yordam boyunca çağrılmalıdır. İletişim kutusu yok sonra Windows değerini kullanır `nRetCode` dönüş değeri olarak `DoModal`, iletişim kutusu oluşturuldu.  
   
 > [!NOTE]
 >  Çağırmayın `EndDialog` kalıcı olmayan iletişim kutusunu yok etme. Çağrı [DestroyWindow](#destroywindow) yerine.  
   
-##  <a name="getdialogproc"></a>CAxDialogImpl::GetDialogProc  
+##  <a name="getdialogproc"></a>  CAxDialogImpl::GetDialogProc  
  Bir işaretçi almak için bu yöntemi çağırın `DialogProc` geri çağırma işlevi.  
   
 ```
@@ -220,7 +215,7 @@ virtual DLGPROC GetDialogProc();
 ### <a name="remarks"></a>Açıklamalar  
  `DialogProc` İşlevi olan bir uygulama tanımlı geri çağırma işlevi.  
   
-##  <a name="getidd"></a>CAxDialogImpl::GetIDD  
+##  <a name="getidd"></a>  CAxDialogImpl::GetIDD  
  İletişim şablonu kaynak kimliği almak için bu yöntemi çağırın  
   
 ```
@@ -230,7 +225,7 @@ int GetIDD();
 ### <a name="return-value"></a>Dönüş Değeri  
  İletişim şablonu kaynak kimliği döndürür  
   
-##  <a name="isdialogmessage"></a>CAxDialogImpl::IsDialogMessage  
+##  <a name="isdialogmessage"></a>  CAxDialogImpl::IsDialogMessage  
  Bu iletişim kutusu için bir ileti yönelik olduğunu belirlemek için bu yöntemi çağırın ve ise, ileti işlem.  
   
 ```
@@ -247,7 +242,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, içinde bir ileti döngüsü oluşturucudan çağrılmaya yöneliktir.  
   
-##  <a name="m_bmodal"></a>CAxDialogImpl::m_bModal  
+##  <a name="m_bmodal"></a>  CAxDialogImpl::m_bModal  
  Hata ayıklama yalnızca mevcut bir değişken oluşturur ve iletişim kutusunu kalıcı ise true olarak ayarlandı.  
   
 ```

@@ -1,13 +1,10 @@
 ---
 title: _pgmptr, _wpgmptr | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - pgmptr
 - _pgmptr
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - _pgmptr function
 - pgmptr function
 ms.assetid: 4d44b515-0eff-4136-8bc4-684195f218f5
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8bf941f5e020a608817919b2819f2d6be023d89
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5c0e944e57125def89d41010a9e76cd28bae5286
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pgmptr-wpgmptr"></a>_pgmptr, _wpgmptr
 Yürütülebilir dosya yolu. Kullanım dışı; kullanmak [_get_pgmptr](../c-runtime-library/reference/get-pgmptr.md) ve [_get_wpgmptr](../c-runtime-library/reference/get-wpgmptr.md).  
@@ -52,7 +47,7 @@ C> hello
   
  Bir program komut satırından değil çalıştırıldığında `_pgmptr` program adı (dosya adı uzantısı olmadan dosya temel adı) veya bir dosya adı, göreli bir yol veya tam yolunu başlatılmamış.  
   
- `_wpgmptr`joker karakter karşılık gelen biri olan `_pgmptr` ile kullanılmak üzere kullanan programlar `wmain`.  
+ `_wpgmptr` joker karakter karşılık gelen biri olan `_pgmptr` ile kullanılmak üzere kullanan programlar `wmain`.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   

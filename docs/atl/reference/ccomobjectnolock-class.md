@@ -1,12 +1,9 @@
 ---
-title: CComObjectNoLock Class | Microsoft Docs
-ms.custom: 
+title: CComObjectNoLock sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComObjectNoLock
@@ -20,19 +17,17 @@ dev_langs:
 helpviewer_keywords:
 - CComObjectNoLock class
 ms.assetid: 288c6506-7da8-4127-8d58-7f4bd779539a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a85a238d17fe279359a73d3c740406c15b92c34
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: cd7f9fa0ac67592c5fca805eaa4bb4ec4b0ca153
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="ccomobjectnolock-class"></a>CComObjectNoLock Class
+# <a name="ccomobjectnolock-class"></a>CComObjectNoLock sınıfı
 Bu sınıf uygulayan **IUnknown** toplanmayan nesne ancak mu modülü kilit sayısı oluşturucuda artırma.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -94,7 +89,7 @@ CComObjectNoLock(void* = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- **void\***  
+ **Geçersiz kılma\***  
  [in] Bu adlandırılmamış parametre kullanılmaz. Diğer simetrisi için mevcut **CCom *** XXX*`Object`*XXX* oluşturucular.  
   
 ##  <a name="dtor"></a>  CComObjectNoLock::~CComObjectNoLock  

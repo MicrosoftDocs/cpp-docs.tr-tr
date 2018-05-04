@@ -1,29 +1,24 @@
 ---
-title: "CStringT kullanarak dize sınıfları dışarı aktarma | Microsoft Docs"
-ms.custom: 
+title: CStringT kullanarak dize sınıfları dışarı aktarma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - CStringT class, exporting strings
 ms.assetid: bdfc441e-8d2a-461c-9885-46178066c09f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd662b149f56cf0d6bd5e7a3c912e0ecd14f21b9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7510b1f44f49d17211c71419f4dde5a6e6a78974
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="exporting-string-classes-using-cstringt"></a>CStringT kullanarak dize sınıfları dışarı aktarma
 Geçmişte, MFC geliştiriciler türetilmiş `CString` kendi dize sınıfları özelleştirmek üzere. Microsoft Visual C++ .NET (MFC 8.0) içinde [CString](../atl-mfc-shared/using-cstring.md) sınıfı olarak adlandırılan bir şablon sınıfı tarafından değiştirilen [CStringT](../atl-mfc-shared/reference/cstringt-class.md). Bu, birkaç avantaj sağlanan:  
@@ -32,7 +27,7 @@ Geçmişte, MFC geliştiriciler türetilmiş `CString` kendi dize sınıfları �
   
 -   Yeni `CStringT` Şablon sınıfı özelleştirebilirsiniz `CString` karakter nitelikler, C++ Standart Kitaplığı şablonlarında benzer belirtin şablon parametrelerini kullanarak davranışı.  
   
--   Kullanarak bir DLL kendi string sınıfı aktardığınızda `CStringT`, derleyici da otomatik olarak dışa aktarır `CString` temel sınıfı. Bu yana `CString` kendisini bir şablon sınıfı olan derleyici farkında olmadığı sürece, kullanıldığında, derleyici tarafından örneği oluşturulabilir, `CString` DLL'den dışarı aktarılır. Visual C++ .NET projeleri Visual C++ 6.0 geçiş yaptıysanız, bağlayıcı simgesi hatalarını bir Çarp tanımlı için gördüğünüz `CString` çakışması nedeniyle `CString` DLL ve yerel olarak oluşturulmuş sürümü alma işlemi. Bunu yapmak için uygun şekilde aşağıda açıklanmıştır. Bilgi Bankası makalesi, bu sorunla ilgili daha fazla bilgi için bkz: "CString türetilmiş içeri aktardığınızda bağlama hataları sınıfları" (Q309801) adresindeki [http://support.microsoft.com/default.aspx](http://support.microsoft.com/default.aspx).  
+-   Kullanarak bir DLL kendi string sınıfı aktardığınızda `CStringT`, derleyici da otomatik olarak dışa aktarır `CString` temel sınıfı. Bu yana `CString` kendisini bir şablon sınıfı olan derleyici farkında olmadığı sürece, kullanıldığında, derleyici tarafından örneği oluşturulabilir, `CString` DLL'den dışarı aktarılır. Visual C++ .NET projeleri Visual C++ 6.0 geçiş yaptıysanız, bağlayıcı simgesi hatalarını bir Çarp tanımlı için gördüğünüz `CString` çakışması nedeniyle `CString` DLL ve yerel olarak oluşturulmuş sürümü alma işlemi. Bunu yapmak için uygun şekilde aşağıda açıklanmıştır. Bilgi Bankası makalesi, bu sorunla ilgili daha fazla bilgi için bkz: "CString türetilmiş içeri aktardığınızda bağlama hataları sınıfları" (Q309801) adresindeki [ http://support.microsoft.com/default.aspx ](http://support.microsoft.com/default.aspx).  
   
  Aşağıdaki senaryoyu Çarp tanımlanan sınıflar için simge hataları üretmek bağlayıcı neden olur. Verdiğiniz olduğunu varsayın bir `CString`-türetilen sınıfı (`CMyString`) bir MFC uzantı DLL:  
   

@@ -1,13 +1,10 @@
 ---
-title: "Genel metin eşlemelerini kullanma | Microsoft Docs"
-ms.custom: 
+title: Genel metin eşlemelerini kullanma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - _UNICODE
 dev_langs:
@@ -36,17 +33,15 @@ helpviewer_keywords:
 - UNICODE constant
 - _T type
 ms.assetid: 2848121c-e51f-4b9b-a2e6-833ece4b0cb3
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d0049643ef7a3695eef8c3271e22586b5c7454d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d380d60716bbf7b44e75a481953ad769e5a4b423
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-generic-text-mappings"></a>Genel Metin Eşlemelerini Kullanma
 **Microsoft özel**  
@@ -57,9 +52,9 @@ ms.lasthandoff: 12/21/2017
   
 |#define|Derlenmiş sürüm|Örnek|  
 |--------------|----------------------|-------------|  
-|`_UNICODE`|Unicode (geniş karakter)|`_tcsrev`eşler`_wcsrev`|  
-|`_MBCS`|Çok baytlı karakter|`_tcsrev`eşler`_mbsrev`|  
-|Hiçbiri (varsayılan: ne `_UNICODE` ya da `_MBCS` tanımlanan)|SBCS (ASCII)|`_tcsrev`eşler`strrev`|  
+|`_UNICODE`|Unicode (geniş karakter)|`_tcsrev` Eşler `_wcsrev`|  
+|`_MBCS`|Çok baytlı karakter|`_tcsrev` Eşler `_mbsrev`|  
+|Hiçbiri (varsayılan: ne `_UNICODE` ya da `_MBCS` tanımlanan)|SBCS (ASCII)|`_tcsrev` Eşler `strrev`|  
   
  Örneğin, genel metin işlevi `_tcsrev`, TCHAR tanımlı. H eşlendiğini `mbsrev` varsa `MBCS` programınızdaki veya için tanımlanan `_wcsrev` varsa `_UNICODE` tanımlandı. Aksi takdirde `_tcsrev` eşlendiği `strrev`.  
   
@@ -74,7 +69,7 @@ ms.lasthandoff: 12/21/2017
 |`_TSCHAR`|`signed char`|`signed char`|`wchar_t`|  
 |`_TUCHAR`|`unsigned char`|`unsigned char`|`wchar_t`|  
 |`_TXCHAR`|`char`|`unsigned char`|`wchar_t`|  
-|`_T`veya`_TEXT`|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|`L`(karakter veya dize Unicode karşılığı aşağıdaki dönüştürür)|  
+|`_T` Veya `_TEXT`|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|`L` (karakter veya dize Unicode karşılığı aşağıdaki dönüştürür)|  
   
  Genel metin eşlemeleri yordamları, değişkenlerin ve diğer nesneleri tam bir listesi için bkz: [genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md).  
   

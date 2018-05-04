@@ -1,13 +1,10 @@
 ---
-title: "yapın-while Statement (C) | Microsoft Docs"
-ms.custom: 
+title: yapın-while Statement (C) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 f1_keywords:
 - do
 - while
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - do-while keyword [C]
 ms.assetid: f2ac20a6-10c7-4a08-b5e3-c3b3639dbeaf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26a7cef5e023c0fb0d5e24fe68fed6b33bc8ae75
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0638e10d87ed52de49b027aea1e06bee838867d3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C)
 `do-while` Deyimi bir deyim veya bileşik deyim belirtilen ifadeye false olana kadar yineleyin olanak sağlar.  

@@ -1,13 +1,10 @@
 ---
-title: "LIB çalıştırma | Microsoft Docs"
-ms.custom: 
+title: LIB çalıştırma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.TargetMachine
 - Lib
@@ -35,17 +32,15 @@ helpviewer_keywords:
 - semicolon, command files
 - / command files
 ms.assetid: d54f5c81-7147-4b2c-a8db-68ce6eb1eabd
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a487bb6f6ffd740f6479916c5115bf95d568655
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c306ba58bfef11f92d7e861272aad2aa605c8fde
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="running-lib"></a>LIB Çalıştırma
 LIB denetlemek için çeşitli komut satırı seçenekleri kullanılabilir.  
@@ -74,12 +69,12 @@ LIB @commandfile
   
  Aşağıdaki seçenekler LIB tüm modları için geçerlidir:  
   
- / ERRORREPORT [HİÇBİRİ &#124; İSTEM &#124; SIRA &#124; GÖNDERME]  
+ / ERRORREPORT [NONE &AMP;#124; KOMUT İSTEMİ &AMP;#124; SIRA &AMP;#124; GÖNDER]  
  Çalışma zamanında lib.exe başarısız olursa, iç bu hatalar hakkında bilgi göndermek için/errorreport kullanabilirsiniz.  
   
  / Errorreport hakkında daha fazla bilgi için bkz: [/errorreport (dahili derleme hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md).  
   
- / LTCG  
+ /LTCG  
  Bağlama zamanı kodu oluşturma kullanılarak oluşturulması için kitaplık neden olur.  Daha fazla bilgi için bkz: [/LTCG](../../build/reference/ltcg-link-time-code-generation.md).  
   
  / MACHINE  

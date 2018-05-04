@@ -1,12 +1,9 @@
 ---
-title: "Sınıf bilgileri sınıfları (ATL) | Microsoft Docs"
-ms.custom: 
+title: Sınıf bilgileri sınıfları (ATL) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.atl.classes.info
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - class information, retrieving
 ms.assetid: 39365025-f24a-41ae-87ab-4ae8ed085b98
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3f0171af86412ee70896b15aebc8e8c355ee6af
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 5df4f70d069c2d77cf828665986c892281ba27cd
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="class-information-classes"></a>Sınıf bilgileri sınıfları
 Aşağıdaki sınıf sınıf bilgileri almak için destek sağlar:  

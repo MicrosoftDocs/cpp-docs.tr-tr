@@ -1,13 +1,10 @@
 ---
-title: "Hangi dışarı aktarma yöntemini kullanacağınızı belirleme | Microsoft Docs"
-ms.custom: 
+title: Hangi dışarı aktarma yöntemini kullanacağınızı belirleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - def files [C++], exporting from DLLs
 - .def files [C++], exporting from DLLs
 ms.assetid: 66d773ed-935c-45c2-ad03-1a060874b34d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7375d4baf31c1564493fd29938ef2ac8ee034f3e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 03c88cee3504d8efef8f9ca19073ed06b66f6aeb
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="determining-which-exporting-method-to-use"></a>Hangi Dışarı Aktarma Metodunu Kullanacağınızı Belirleme
 İki yoldan biriyle işlevlerde verebilirsiniz — .def dosyası veya `__declspec(dllexport)` anahtar sözcüğü. Hangi DLL için daha iyi bir yoludur karar vermenize yardımcı olması için aşağıdaki soruları göz önünde bulundurun:  

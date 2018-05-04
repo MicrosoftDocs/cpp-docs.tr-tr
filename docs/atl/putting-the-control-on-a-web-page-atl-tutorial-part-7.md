@@ -1,27 +1,22 @@
 ---
-title: "Bir Web sayfası (ATL Eğitmeni, Bölüm 7) denetimi koyma | Microsoft Docs"
-ms.custom: 
+title: Bir Web sayfası (ATL Eğitmeni, Bölüm 7) denetimi koyma | Microsoft Docs
+ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 50dc4c95-c95b-4006-b88a-9826f7bdb222
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 523086c70d9f974c014f5d33a71bf9309b8e017d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0cd4076ac34af6ee4b19687f401376265bf0e872
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="putting-the-control-on-a-web-page-atl-tutorial-part-7"></a>Denetimi Web Sayfasına Koyma (ATL Eğitmeni, Bölüm 7)
 Denetim şimdi tamamlandı. Gerçek dünya durumda işe denetiminizi görmek için bir Web sayfasında yerleştirin. Denetim tanımlandığında denetimi içeren bir HTML dosyası oluşturuldu. PolyCtl.htm dosyadan Aç **Çözüm Gezgini**, bir Web sayfası denetiminizde görebilirsiniz.  

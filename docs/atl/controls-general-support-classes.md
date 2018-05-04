@@ -1,12 +1,9 @@
 ---
-title: "ATL denetimleri: Genel destek sınıfları | Microsoft Docs"
-ms.custom: 
+title: 'ATL denetimleri: Genel destek sınıfları | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.atl.controls
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - controls [ATL]
 - general support classes
 ms.assetid: cf73f1d2-7542-48e3-b8c8-9d3abf29f85b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6164fc5cb25c724cf8999c3e6f3f2d71ade0589
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 8c0aa30487edb3a5998a0b9777017015aeb7b675
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="controls-general-support-classes"></a>Denetimleri: Genel destek sınıfları
 Aşağıdaki sınıflar ATL denetimler için genel destek sağlar:  

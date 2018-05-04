@@ -1,12 +1,9 @@
 ---
-title: "CWindow sınıfı | Microsoft Docs"
-ms.custom: 
+title: CWindow sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CWindow
@@ -162,17 +159,15 @@ dev_langs:
 helpviewer_keywords:
 - CWindow class
 ms.assetid: fefa00c8-f053-4bcf-87bc-dc84f5386683
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cdf2b21e8c206b1098d670c7c935d3cf88f5af3f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e53d3c354d436b0b800cb9e286bb2c2ba337cb3d
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cwindow-class"></a>CWindow sınıfı
 Bu sınıf bir pencere düzenleme için yöntemleri sağlar.  
@@ -357,18 +352,18 @@ class CWindow
 |[CWindow::rcDefault](#rcdefault)|Varsayılan pencere boyutları içerir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CWindow`ATL penceresinde yönlendirmek için temel işlevi sağlar Çoğu `CWindow` yöntemleri yalnızca sarmalamak Win32 API işlevleri biri. Örneğin, prototipleri için karşılaştırma `CWindow::ShowWindow` ve `ShowWindow`:  
+ `CWindow` ATL penceresinde yönlendirmek için temel işlevi sağlar Çoğu `CWindow` yöntemleri yalnızca sarmalamak Win32 API işlevleri biri. Örneğin, prototipleri için karşılaştırma `CWindow::ShowWindow` ve `ShowWindow`:  
   
 |CWindow yöntemi|Win32 işlevi|  
 |--------------------|--------------------|  
 |**BOOL ShowWindow (int** `nCmdShow` **);**|**BOOL ShowWindow (HWND** `hWnd` **, int** `nCmdShow` **);**|  
   
- `CWindow::ShowWindow`Win32 işlev çağrılarını `ShowWindow` geçirerek `CWindow::m_hWnd` ilk parametre olarak. Her `CWindow` doğrudan Win32 işlevi sarmalar yöntemi geçirir `m_hWnd` üye; bu nedenle, çoğunu `CWindow` belgelerine başvurun, Windows SDK.  
+ `CWindow::ShowWindow` Win32 işlev çağrılarını `ShowWindow` geçirerek `CWindow::m_hWnd` ilk parametre olarak. Her `CWindow` doğrudan Win32 işlevi sarmalar yöntemi geçirir `m_hWnd` üye; bu nedenle, çoğunu `CWindow` belgelerine başvurun, Windows SDK.  
   
 > [!NOTE]
 >  Her penceresi ile ilgili Win32 işlevi tarafından Sarmalanan `CWindow`ve her `CWindow` yöntemi Win32 işlevi sarmalar.  
   
- `CWindow::m_hWnd`depolar `HWND` bir pencere tanımlar. Bir `HWND` , nesneye bağlı olduğunda:  
+ `CWindow::m_hWnd` depolar `HWND` bir pencere tanımlar. Bir `HWND` , nesneye bağlı olduğunda:  
   
 -   Belirtin bir `HWND` içinde `CWindow`'s Oluşturucusu.  
   
@@ -389,7 +384,7 @@ class CWindow
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  
   
-##  <a name="arrangeiconicwindows"></a>CWindow::ArrangeIconicWindows  
+##  <a name="arrangeiconicwindows"></a>  CWindow::ArrangeIconicWindows  
  Tüm alt simge durumuna küçültülmüş pencereleri düzenler.  
   
 ```
@@ -399,7 +394,7 @@ UINT ArrangeIconicWindows() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [ArrangeIconicWindows](http://msdn.microsoft.com/library/windows/desktop/ms632671) Windows SDK.  
   
-##  <a name="attach"></a>CWindow::Attach  
+##  <a name="attach"></a>  CWindow::Attach  
  Tarafından tanımlanan penceresi iliştirir `hWndNew` için `CWindow` nesnesi.  
   
 ```
@@ -413,7 +408,7 @@ void Attach(HWND hWndNew) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#1](../../atl/codesnippet/cpp/cwindow-class_1.cpp)]  
   
-##  <a name="beginpaint"></a>CWindow::BeginPaint  
+##  <a name="beginpaint"></a>  CWindow::BeginPaint  
  Pencerenin boyama için hazırlar.  
   
 ```
@@ -426,7 +421,7 @@ HDC BeginPaint(LPPAINTSTRUCT lpPaint) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#2](../../atl/codesnippet/cpp/cwindow-class_2.cpp)]  
   
-##  <a name="bringwindowtotop"></a>CWindow::BringWindowToTop  
+##  <a name="bringwindowtotop"></a>  CWindow::BringWindowToTop  
  Pencerenin Z düzenini üst kısmına beraberinde getirir.  
   
 ```
@@ -439,7 +434,7 @@ BOOL BringWindowToTop() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#3](../../atl/codesnippet/cpp/cwindow-class_3.cpp)]  
   
-##  <a name="centerwindow"></a>CWindow::CenterWindow  
+##  <a name="centerwindow"></a>  CWindow::CenterWindow  
  Belirli bir pencere karşı penceresi toplanır.  
   
 ```
@@ -456,7 +451,7 @@ BOOL CenterWindow(HWND hWndCenter = NULL) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#4](../../atl/codesnippet/cpp/cwindow-class_4.cpp)]  
   
-##  <a name="changeclipboardchain"></a>CWindow::ChangeClipboardChain  
+##  <a name="changeclipboardchain"></a>  CWindow::ChangeClipboardChain  
  Pencerenin Pano görüntüleyiciler zincirinden kaldırır.  
   
 ```
@@ -466,7 +461,7 @@ BOOL ChangeClipboardChain(HWND hWndNewNext) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [ChangeClipboardChain](http://msdn.microsoft.com/library/windows/desktop/ms649034) Windows SDK.  
   
-##  <a name="checkdlgbutton"></a>CWindow::CheckDlgButton  
+##  <a name="checkdlgbutton"></a>  CWindow::CheckDlgButton  
  Belirtilen düğme onay durumunu değiştirir.  
   
 ```
@@ -476,7 +471,7 @@ BOOL CheckDlgButton(int nIDButton, UINT nCheck) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [CheckDlgButton](http://msdn.microsoft.com/library/windows/desktop/bb761875) Windows SDK.  
   
-##  <a name="checkradiobutton"></a>CWindow::CheckRadioButton  
+##  <a name="checkradiobutton"></a>  CWindow::CheckRadioButton  
  Belirtilen radyo düğmesi denetler.  
   
 ```
@@ -489,7 +484,7 @@ BOOL CheckRadioButton(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [CheckRadioButton](http://msdn.microsoft.com/library/windows/desktop/bb761877) Windows SDK.  
   
-##  <a name="childwindowfrompoint"></a>CWindow::ChildWindowFromPoint  
+##  <a name="childwindowfrompoint"></a>  CWindow::ChildWindowFromPoint  
  Belirtilen nokta içeren alt pencere alır.  
   
 ```
@@ -499,7 +494,7 @@ HWND ChildWindowFromPoint(POINT point) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [ChildWindowFromPoint](http://msdn.microsoft.com/library/windows/desktop/ms632676) Windows SDK.  
   
-##  <a name="childwindowfrompointex"></a>CWindow::ChildWindowFromPointEx  
+##  <a name="childwindowfrompointex"></a>  CWindow::ChildWindowFromPointEx  
  Alt pencere belirtilen noktası içeren belirli bir türü alır.  
   
 ```
@@ -509,7 +504,7 @@ HWND ChildWindowFromPoint(POINT point, UINT uFlags) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [ChildWindowFromPointEx](http://msdn.microsoft.com/library/windows/desktop/ms632677) Windows SDK.  
   
-##  <a name="clienttoscreen"></a>CWindow::ClientToScreen  
+##  <a name="clienttoscreen"></a>  CWindow::ClientToScreen  
  İstemci koordinatları ekran koordinatları dönüştürür.  
   
 ```
@@ -522,7 +517,7 @@ BOOL ClientToScreen(LPRECT lpRect) const throw();
   
  Bu yöntem ikinci sürümü koordinatlarını dönüştürmenize olanak verir bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
   
-##  <a name="create"></a>CWindow::Create  
+##  <a name="create"></a>  CWindow::Create  
  Bir pencere oluşturur.  
   
 ```
@@ -566,13 +561,13 @@ HWND Create(
  Başarılı, yeni oluşturulan pencerenin tanıtıcısını belirttiyseniz tarafından [m_hWnd](#m_hwnd). Aksi takdirde, **NULL**.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CWindow::rcDefault`olarak tanımlanan `__declspec(selectany) RECT CWindow::rcDefault = {CW_USEDEFAULT, CW_USEDEFAULT, 0, 0};`.  
+ `CWindow::rcDefault` olarak tanımlanan `__declspec(selectany) RECT CWindow::rcDefault = {CW_USEDEFAULT, CW_USEDEFAULT, 0, 0};`.  
   
  Bkz: [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) daha fazla bilgi için Windows SDK'sındaki.  
   
  **Not** 0 değeri olarak kullanılıyorsa, `MenuOrID` parametresi 0U belirtilmelidir (Derleyici Hatası önlemek için varsayılan değer).  
   
-##  <a name="createcaret"></a>CWindow::CreateCaret  
+##  <a name="createcaret"></a>  CWindow::CreateCaret  
  Sistem şapka için yeni bir şekil oluşturur.  
   
 ```
@@ -582,7 +577,7 @@ BOOL CreateCaret(HBITMAP pBitmap) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [CreateCaret](http://msdn.microsoft.com/library/windows/desktop/ms648399) Windows SDK.  
   
-##  <a name="creategraycaret"></a>CWindow::CreateGrayCaret  
+##  <a name="creategraycaret"></a>  CWindow::CreateGrayCaret  
  Sistem şapka için gri Dikdörtgen oluşturur.  
   
 ```
@@ -594,7 +589,7 @@ BOOL CreateGrayCaret(int nWidth, int nHeight) throw();
   
  Geçişleri (HBITMAP) 1 bit eşlem Win32 işlevi için parametre işleyin.  
   
-##  <a name="createsolidcaret"></a>CWindow::CreateSolidCaret  
+##  <a name="createsolidcaret"></a>  CWindow::CreateSolidCaret  
  Sistem şapka için sağlam bir dikdörtgen oluşturur.  
   
 ```
@@ -606,7 +601,7 @@ BOOL CreateSolidCaret(int nWidth, int nHeight) throw();
   
  Geçişleri (HBITMAP) 0 bit eşlem Win32 işlevi için parametre işleyin.  
   
-##  <a name="cwindow"></a>CWindow::CWindow  
+##  <a name="cwindow"></a>  CWindow::CWindow  
  Oluşturucu.  
   
 ```
@@ -621,9 +616,9 @@ CWindow(HWND hWnd = NULL) throw();
  Başlatır [m_hWnd](#m_hwnd) üyesine `hWnd`, varsayılan olarak **NULL**.  
   
 > [!NOTE]
-> `CWindow::CWindow`bir pencere oluşturmaz. Sınıfları [CWindowImpl](../../atl/reference/cwindowimpl-class.md), [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md), ve [Cdialogımpl](../../atl/reference/cdialogimpl-class.md) (bunların tümü türetmek `CWindow`) olan bir pencere veya iletişim kutusu oluşturmak için bir yöntem sağlar ardından atanan `CWindow::m_hWnd`. Aynı zamanda [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) Win32 işlevi.  
+> `CWindow::CWindow` bir pencere oluşturmaz. Sınıfları [CWindowImpl](../../atl/reference/cwindowimpl-class.md), [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md), ve [Cdialogımpl](../../atl/reference/cdialogimpl-class.md) (bunların tümü türetmek `CWindow`) olan bir pencere veya iletişim kutusu oluşturmak için bir yöntem sağlar ardından atanan `CWindow::m_hWnd`. Aynı zamanda [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) Win32 işlevi.  
   
-##  <a name="deferwindowpos"></a>CWindow::DeferWindowPos  
+##  <a name="deferwindowpos"></a>  CWindow::DeferWindowPos  
  Belirtilen pencere için belirtilen birden çok pencere konumunu yapısı güncelleştirir.  
   
 ```
@@ -640,7 +635,7 @@ HDWP DeferWindowPos(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [DeferWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms632681) Windows SDK.  
   
-##  <a name="destroywindow"></a>CWindow::DestroyWindow  
+##  <a name="destroywindow"></a>  CWindow::DestroyWindow  
  İle ilişkili penceresi bozar `CWindow` nesne ve ayarlar [m_hWnd](#m_hwnd) için **NULL**.  
   
 ```
@@ -655,7 +650,7 @@ BOOL DestroyWindow() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#5](../../atl/codesnippet/cpp/cwindow-class_5.cpp)]  
   
-##  <a name="detach"></a>CWindow::Detach  
+##  <a name="detach"></a>  CWindow::Detach  
  Ayırır [m_hWnd](#m_hwnd) gelen `CWindow` nesne ve ayarlar `m_hWnd` için **NULL**.  
   
 ```
@@ -668,7 +663,7 @@ HWND Detach() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#6](../../atl/codesnippet/cpp/cwindow-class_6.cpp)]  
   
-##  <a name="dlgdirlist"></a>CWindow::DlgDirList  
+##  <a name="dlgdirlist"></a>  CWindow::DlgDirList  
  Belirtilen yol veya dosya adı eşleşen tüm dosyaları adlarıyla bir liste kutusunu doldurur.  
   
 ```
@@ -682,7 +677,7 @@ int DlgDirList(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [DlgDirList](http://msdn.microsoft.com/library/windows/desktop/bb761366) Windows SDK.  
   
-##  <a name="dlgdirlistcombobox"></a>CWindow::DlgDirListComboBox  
+##  <a name="dlgdirlistcombobox"></a>  CWindow::DlgDirListComboBox  
  Birleşik giriş kutusu belirtilen yol veya dosya adı ile eşleşen tüm dosyaların adlarını ile doldurur.  
   
 ```
@@ -696,7 +691,7 @@ int DlgDirListComboBox(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [DlgDirListComboBox](http://msdn.microsoft.com/library/windows/desktop/bb775935) Windows SDK.  
   
-##  <a name="dlgdirselect"></a>CWindow::DlgDirSelect  
+##  <a name="dlgdirselect"></a>  CWindow::DlgDirSelect  
  Geçerli seçim kümesinden liste kutusunu alır.  
   
 ```
@@ -709,7 +704,7 @@ BOOL DlgDirSelect(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [DlgDirSelectEx](http://msdn.microsoft.com/library/windows/desktop/bb761368) Windows SDK.  
   
-##  <a name="dlgdirselectcombobox"></a>CWindow::DlgDirSelectComboBox  
+##  <a name="dlgdirselectcombobox"></a>  CWindow::DlgDirSelectComboBox  
  Geçerli seçim açılan kutudan alır.  
   
 ```
@@ -722,7 +717,7 @@ BOOL DlgDirSelectComboBox(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [DlgDirSelectComboBoxEx](http://msdn.microsoft.com/library/windows/desktop/bb775937) Windows SDK.  
   
-##  <a name="dragacceptfiles"></a>CWindow::DragAcceptFiles  
+##  <a name="dragacceptfiles"></a>  CWindow::DragAcceptFiles  
  Pencerenin kabul edip etmemesine dosyaları sürüklediğiniz kaydeder.  
   
 ```
@@ -732,7 +727,7 @@ void DragAcceptFiles(BOOL bAccept = TRUE);
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [DragAcceptFiles](http://msdn.microsoft.com/library/windows/desktop/bb776406) Windows SDK.  
   
-##  <a name="drawmenubar"></a>CWindow::DrawMenuBar  
+##  <a name="drawmenubar"></a>  CWindow::DrawMenuBar  
  Pencere menü çubuğu yeniden çizer.  
   
 ```
@@ -742,7 +737,7 @@ BOOL DrawMenuBar() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [DrawMenuBar](http://msdn.microsoft.com/library/windows/desktop/ms647633) Windows SDK.  
   
-##  <a name="enablescrollbar"></a>CWindow::EnableScrollBar  
+##  <a name="enablescrollbar"></a>  CWindow::EnableScrollBar  
  Etkinleştirir veya kaydırma çubuğu oklarını devre dışı bırakır.  
   
 ```
@@ -752,7 +747,7 @@ BOOL EnableScrollBar(UINT uSBFlags, UINT uArrowFlags = ESB_ENABLE_BOTH) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [EnableScrollBar](http://msdn.microsoft.com/library/windows/desktop/bb787579) Windows SDK.  
   
-##  <a name="enablewindow"></a>CWindow::EnableWindow  
+##  <a name="enablewindow"></a>  CWindow::EnableWindow  
  Etkinleştirir veya girişini devre dışı bırakır.  
   
 ```
@@ -765,7 +760,7 @@ BOOL EnableWindow(BOOL bEnable = TRUE) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#7](../../atl/codesnippet/cpp/cwindow-class_7.cpp)]  
   
-##  <a name="endpaint"></a>CWindow::EndPaint  
+##  <a name="endpaint"></a>  CWindow::EndPaint  
  Boyama sonunu işaretler.  
   
 ```
@@ -778,7 +773,7 @@ void EndPaint(LPPAINTSTRUCT lpPaint) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#2](../../atl/codesnippet/cpp/cwindow-class_2.cpp)]  
   
-##  <a name="flashwindow"></a>CWindow::FlashWindow  
+##  <a name="flashwindow"></a>  CWindow::FlashWindow  
  Pencerenin kez yanıp sönen.  
   
 ```
@@ -788,7 +783,7 @@ BOOL FlashWindow(BOOL bInvert) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [FlashWindow](http://msdn.microsoft.com/library/windows/desktop/ms679346) Windows SDK.  
   
-##  <a name="getclientrect"></a>CWindow::GetClientRect  
+##  <a name="getclientrect"></a>  CWindow::GetClientRect  
  İstemci alanı koordinatları alır.  
   
 ```
@@ -801,7 +796,7 @@ BOOL GetClientRect(LPRECT lpRect) const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#8](../../atl/codesnippet/cpp/cwindow-class_8.cpp)]  
   
-##  <a name="getdc"></a>CWindow::GetDC  
+##  <a name="getdc"></a>  CWindow::GetDC  
  İstemci alanı için bir cihaz bağlamı alır.  
   
 ```
@@ -814,7 +809,7 @@ HDC GetDC() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#9](../../atl/codesnippet/cpp/cwindow-class_9.cpp)]  
   
-##  <a name="getdcex"></a>CWindow::GetDCEx  
+##  <a name="getdcex"></a>  CWindow::GetDCEx  
  İstemci alanı için bir cihaz bağlamı alır ve kırpma seçeneklerini sağlar.  
   
 ```
@@ -824,7 +819,7 @@ HDC GetDCEx(HRGN hRgnClip, DWORD flags) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetDCEx](http://msdn.microsoft.com/library/windows/desktop/dd144873) Windows SDK.  
   
-##  <a name="getdescendantwindow"></a>CWindow::GetDescendantWindow  
+##  <a name="getdescendantwindow"></a>  CWindow::GetDescendantWindow  
  Verilen tanımlayıcısı tarafından belirtilen alt pencere bulur.  
   
 ```
@@ -839,9 +834,9 @@ HWND GetDescendantWindow(int nID) const throw();
  Alt pencere için tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `GetDescendantWindow`Alt pencereler, yalnızca yakınındaki alt öğeleri olan windows ağacının tümünü arar.  
+ `GetDescendantWindow` Alt pencereler, yalnızca yakınındaki alt öğeleri olan windows ağacının tümünü arar.  
   
-##  <a name="getdlgcontrol"></a>CWindow::GetDlgControl  
+##  <a name="getdlgcontrol"></a>  CWindow::GetDlgControl  
  Bir arabirim, barındırılan bir ActiveX denetimi bileşik denetim veya denetimi barındırma iletişim için bir işaretçi almak için bu işlevini çağırın.  
   
 ```
@@ -867,7 +862,7 @@ HRESULT GetDlgControl(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işaretçinin kullanarak, arabirimde yöntemleri çağırabilir.  
   
-##  <a name="getdlgctrlid"></a>CWindow::GetDlgCtrlID  
+##  <a name="getdlgctrlid"></a>  CWindow::GetDlgCtrlID  
  Pencerenin tanımlayıcısıdır (yalnızca alt öğe pencerelerini) alır.  
   
 ```
@@ -877,7 +872,7 @@ int GetDlgCtrlID() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetDlgCtrlID](http://msdn.microsoft.com/library/windows/desktop/ms645478) Windows SDK.  
   
-##  <a name="getdlghost"></a>CWindow::GetDlgHost  
+##  <a name="getdlghost"></a>  CWindow::GetDlgHost  
  ATL kapsayıcı barındırma denetlemek için bir arabirim için bir işaretçi alır.  
   
 ```
@@ -903,7 +898,7 @@ HRESULT GetDlgHost(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işaretçinin kullanarak, arabirimde yöntemleri çağırabilir.  
   
-##  <a name="getdlgitem"></a>CWindow::GetDlgItem  
+##  <a name="getdlgitem"></a>  CWindow::GetDlgItem  
  Belirtilen alt pencere alır.  
   
 ```
@@ -913,7 +908,7 @@ HWND GetDlgItem(int nID) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetDlgItem](http://msdn.microsoft.com/library/windows/desktop/ms645481) Windows SDK.  
   
-##  <a name="getdlgitemint"></a>CWindow::GetDlgItemInt  
+##  <a name="getdlgitemint"></a>  CWindow::GetDlgItemInt  
  Bir denetimin metin tamsayıya dönüştürür.  
   
 ```
@@ -926,7 +921,7 @@ UINT GetDlgItemInt(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetDlgItemInt](http://msdn.microsoft.com/library/windows/desktop/ms645485) Windows SDK.  
   
-##  <a name="getdlgitemtext"></a>CWindow::GetDlgItemText  
+##  <a name="getdlgitemtext"></a>  CWindow::GetDlgItemText  
  Bir denetimin metni alır.  
   
 ```
@@ -946,7 +941,7 @@ BOOL GetDlgItemText(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem ikinci sürümü denetimin metne kopyalama sayesinde bir `BSTR`. Bu sürüm döndürür **TRUE** metin başarıyla kopyalanan; Aksi takdirde ise **FALSE**.  
   
-##  <a name="getexstyle"></a>CWindow::GetExStyle  
+##  <a name="getexstyle"></a>  CWindow::GetExStyle  
  Genişletilmiş pencere stilleri penceresinin alır.  
   
 ```
@@ -962,7 +957,7 @@ DWORD GetExStyle() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#10](../../atl/codesnippet/cpp/cwindow-class_10.cpp)]  
   
-##  <a name="getfont"></a>CWindow::GetFont  
+##  <a name="getfont"></a>  CWindow::GetFont  
  Pencerenin geçerli yazı tipi göndererek alır bir [WM_GETFONT](http://msdn.microsoft.com/library/windows/desktop/ms632624) penceresine ileti.  
   
 ```
@@ -972,7 +967,7 @@ HFONT GetFont() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Yazı tipi işleci.  
   
-##  <a name="gethotkey"></a>CWindow::GetHotKey  
+##  <a name="gethotkey"></a>  CWindow::GetHotKey  
  Göndererek penceresi ile ilgili sık kullanılan tuş belirleyen bir **WM_GETHOTKEY** ileti.  
   
 ```
@@ -982,7 +977,7 @@ DWORD GetHotKey() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Sanal anahtar kodu ve penceresi ile ilgili sık kullanılan tuş niteleyiciler. Olası değiştiricileri listesi için bkz: [WM_GETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646278) Windows SDK'sındaki. Bir listesi, standart sanal anahtar kodları için Winuser.h bakın.  
   
-##  <a name="geticon"></a>CWindow::GetIcon  
+##  <a name="geticon"></a>  CWindow::GetIcon  
  Pencerenin büyük veya küçük simgesi tanıtıcısını alır.  
   
 ```
@@ -997,9 +992,9 @@ HICON GetIcon(BOOL bBigIcon = TRUE) const;
  Bir simge işleci.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `GetIcon`gönderen bir [WM_GETICON](http://msdn.microsoft.com/library/windows/desktop/ms632625) penceresine ileti.  
+ `GetIcon` gönderen bir [WM_GETICON](http://msdn.microsoft.com/library/windows/desktop/ms632625) penceresine ileti.  
   
-##  <a name="getlastactivepopup"></a>CWindow::GetLastActivePopup  
+##  <a name="getlastactivepopup"></a>  CWindow::GetLastActivePopup  
  En son etkin açılır pencere alır.  
   
 ```
@@ -1009,7 +1004,7 @@ HWND GetLastActivePopup() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetLastActivePopup](http://msdn.microsoft.com/library/windows/desktop/ms633507) Windows SDK.  
   
-##  <a name="getmenu"></a>CWindow::GetMenu  
+##  <a name="getmenu"></a>  CWindow::GetMenu  
  Pencere menü alır.  
   
 ```
@@ -1019,7 +1014,7 @@ HMENU GetMenu() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetMenu](http://msdn.microsoft.com/library/windows/desktop/ms647640) Windows SDK.  
   
-##  <a name="getnextdlggroupitem"></a>CWindow::GetNextDlgGroupItem  
+##  <a name="getnextdlggroupitem"></a>  CWindow::GetNextDlgGroupItem  
  Denetimlerin bir grup içinde önceki veya sonraki denetimi alır.  
   
 ```
@@ -1029,7 +1024,7 @@ HWND GetNextDlgGroupItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetNextDlgGroupItem](http://msdn.microsoft.com/library/windows/desktop/ms645492) Windows SDK.  
   
-##  <a name="getnextdlgtabitem"></a>CWindow::GetNextDlgTabItem  
+##  <a name="getnextdlgtabitem"></a>  CWindow::GetNextDlgTabItem  
  Önceki veya sonraki denetim sahip alır **WS_TABSTOP** stili.  
   
 ```
@@ -1039,7 +1034,7 @@ HWND GetNextDlgTabItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetNextDlgTabItem](http://msdn.microsoft.com/library/windows/desktop/ms645495) Windows SDK.  
   
-##  <a name="getparent"></a>CWindow::GetParent  
+##  <a name="getparent"></a>  CWindow::GetParent  
  Hemen üst pencere alır.  
   
 ```
@@ -1052,7 +1047,7 @@ HWND GetParent() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#11](../../atl/codesnippet/cpp/cwindow-class_11.cpp)]  
   
-##  <a name="getscrollinfo"></a>CWindow::GetScrollInfo  
+##  <a name="getscrollinfo"></a>  CWindow::GetScrollInfo  
  Bir kaydırma çubuğunun parametrelerini alır.  
   
 ```
@@ -1062,7 +1057,7 @@ BOOL GetScrollInfo(int nBar, LPSCROLLINFO lpScrollInfo) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetScrollInfo](http://msdn.microsoft.com/library/windows/desktop/bb787583) Windows SDK.  
   
-##  <a name="getscrollpos"></a>CWindow::GetScrollPos  
+##  <a name="getscrollpos"></a>  CWindow::GetScrollPos  
  Kaydırma kutusunun konumunu alır.  
   
 ```
@@ -1072,7 +1067,7 @@ int GetScrollPos(int nBar) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetScrollPos](http://msdn.microsoft.com/library/windows/desktop/bb787585) Windows SDK.  
   
-##  <a name="getscrollrange"></a>CWindow::GetScrollRange  
+##  <a name="getscrollrange"></a>  CWindow::GetScrollRange  
  Kaydırma çubuğu aralığını alır.  
   
 ```
@@ -1085,7 +1080,7 @@ BOOL GetScrollRange(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetScrollRange](http://msdn.microsoft.com/library/windows/desktop/bb787587) Windows SDK.  
   
-##  <a name="getstyle"></a>CWindow::GetStyle  
+##  <a name="getstyle"></a>  CWindow::GetStyle  
  Pencere stilleri penceresinin alır.  
   
 ```
@@ -1101,7 +1096,7 @@ DWORD GetStyle() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#12](../../atl/codesnippet/cpp/cwindow-class_12.cpp)]  
   
-##  <a name="getsystemmenu"></a>CWindow::GetSystemMenu  
+##  <a name="getsystemmenu"></a>  CWindow::GetSystemMenu  
  Sistem menüsü değişiklik için bir kopyasını oluşturur.  
   
 ```
@@ -1111,7 +1106,7 @@ HMENU GetSystemMenu(BOOL bRevert) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetSystemMenu](http://msdn.microsoft.com/library/windows/desktop/ms647985) Windows SDK.  
   
-##  <a name="gettoplevelparent"></a>CWindow::GetTopLevelParent  
+##  <a name="gettoplevelparent"></a>  CWindow::GetTopLevelParent  
  Pencerenin üst düzey ana penceresi alır.  
   
 ```
@@ -1121,7 +1116,7 @@ HWND GetTopLevelParent() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Üst düzey ana penceresi için tanıtıcı.  
   
-##  <a name="gettoplevelwindow"></a>CWindow::GetTopLevelWindow  
+##  <a name="gettoplevelwindow"></a>  CWindow::GetTopLevelWindow  
  Pencerenin üst düzey üst veya sahibi pencere alır.  
   
 ```
@@ -1131,7 +1126,7 @@ HWND GetTopLevelWindow() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Üst düzey sahibi penceresine işleci.  
   
-##  <a name="gettopwindow"></a>CWindow::GetTopWindow  
+##  <a name="gettopwindow"></a>  CWindow::GetTopWindow  
  Üst düzey alt pencere alır.  
   
 ```
@@ -1144,7 +1139,7 @@ HWND GetTopWindow() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#13](../../atl/codesnippet/cpp/cwindow-class_13.cpp)]  
   
-##  <a name="getupdaterect"></a>CWindow::GetUpdateRect  
+##  <a name="getupdaterect"></a>  CWindow::GetUpdateRect  
  Tamamen güncelleştirme bölge barındırır en küçük dikdörtgen koordinatlarını alır.  
   
 ```
@@ -1154,7 +1149,7 @@ BOOL GetUpdateRect(LPRECT lpRect, BOOL bErase = FALSE) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetUpdateRect](http://msdn.microsoft.com/library/windows/desktop/dd144943) Windows SDK.  
   
-##  <a name="getupdatergn"></a>CWindow::GetUpdateRgn  
+##  <a name="getupdatergn"></a>  CWindow::GetUpdateRgn  
  Güncelleştirme bölge alır ve belirtilen bir bölgeye kopyalar.  
   
 ```
@@ -1164,7 +1159,7 @@ int GetUpdateRgn(HRGN hRgn, BOOL bErase = FALSE) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetUpdateRgn](http://msdn.microsoft.com/library/windows/desktop/dd144944) Windows SDK.  
   
-##  <a name="getwindow"></a>CWindow::GetWindow  
+##  <a name="getwindow"></a>  CWindow::GetWindow  
  Belirtilen pencere alır.  
   
 ```
@@ -1174,7 +1169,7 @@ HWND GetWindow(UINT nCmd) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: `GetWindow` Windows SDK.  
   
-##  <a name="getwindowcontexthelpid"></a>CWindow::GetWindowContextHelpId  
+##  <a name="getwindowcontexthelpid"></a>  CWindow::GetWindowContextHelpId  
  Pencerenin yardım içerik tanımlayıcısını alır.  
   
 ```
@@ -1184,7 +1179,7 @@ DWORD GetWindowContextHelpId() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetWindowContextHelpId](http://msdn.microsoft.com/library/windows/desktop/bb776429) Windows SDK.  
   
-##  <a name="getwindowdc"></a>CWindow::GetWindowDC  
+##  <a name="getwindowdc"></a>  CWindow::GetWindowDC  
  Tüm penceresi için bir cihaz bağlamı alır.  
   
 ```
@@ -1197,7 +1192,7 @@ HDC GetWindowDC() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#14](../../atl/codesnippet/cpp/cwindow-class_14.cpp)]  
   
-##  <a name="getwindowlong"></a>CWindow::GetWindowLong  
+##  <a name="getwindowlong"></a>  CWindow::GetWindowLong  
  Belirtilen kayma 32-bit değerinde fazladan penceresi belleğe alır.  
   
 ```
@@ -1210,7 +1205,7 @@ LONG GetWindowLong(int nIndex) const throw();
 > [!NOTE]
 >  Windows 32-bit ve 64 bit sürümleri ile uyumlu olan kod yazmak için [CWindow::GetWindowLongPtr](#getwindowlongptr).  
   
-##  <a name="getwindowlongptr"></a>CWindow::GetWindowLongPtr  
+##  <a name="getwindowlongptr"></a>  CWindow::GetWindowLongPtr  
  Belirtilen kayma değerinde fazladan penceresi belleğe dahil olmak üzere belirtilen penceresi hakkında bilgi alır.  
   
 ```
@@ -1228,7 +1223,7 @@ LONG_PTR GetWindowLongPtr(int nIndex) const throw();
   
  Windows 32-bit ve 64 bit sürümleri ile uyumlu olan kod yazmak için `CWindow::GetWindowLongPtr`.  
   
-##  <a name="getwindowplacement"></a>CWindow::GetWindowPlacement  
+##  <a name="getwindowplacement"></a>  CWindow::GetWindowPlacement  
  Konumlar ve durumunu göster alır.  
   
 ```
@@ -1238,7 +1233,7 @@ BOOL GetWindowPlacement(WINDOWPLACEMENT FAR* lpwndpl) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetWindowPlacement](http://msdn.microsoft.com/library/windows/desktop/ms633518) Windows SDK.  
   
-##  <a name="getwindowprocessid"></a>CWindow::GetWindowProcessID  
+##  <a name="getwindowprocessid"></a>  CWindow::GetWindowProcessID  
  Pencerenin oluşturulan işlemi tanımlayıcısını alır.  
   
 ```
@@ -1251,7 +1246,7 @@ DWORD GetWindowProcessID() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#15](../../atl/codesnippet/cpp/cwindow-class_15.cpp)]  
   
-##  <a name="getwindowrect"></a>CWindow::GetWindowRect  
+##  <a name="getwindowrect"></a>  CWindow::GetWindowRect  
  Pencerenin sınırlayıcı boyutları alır.  
   
 ```
@@ -1261,7 +1256,7 @@ BOOL GetWindowRect(LPRECT lpRect) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetWindowRect](http://msdn.microsoft.com/library/windows/desktop/ms633519) Windows SDK.  
   
-##  <a name="getwindowrgn"></a>CWindow::GetWindowRgn  
+##  <a name="getwindowrgn"></a>  CWindow::GetWindowRgn  
  Bir pencere penceresi bölge kopyasını alır.  
   
 ```
@@ -1271,7 +1266,7 @@ int GetWindowRgn(HRGN hRgn) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetWindowRgn](http://msdn.microsoft.com/library/windows/desktop/dd144950) Windows SDK.  
   
-##  <a name="getwindowtext"></a>CWindow::GetWindowText  
+##  <a name="getwindowtext"></a>  CWindow::GetWindowText  
  Pencerenin metni alır.  
   
 ```
@@ -1301,7 +1296,7 @@ int GetWindowText(CSimpleString& strText) const;
   
  Bu yöntem ikinci sürümü metinde depolamanızı sağlar bir `BSTR`; üçüncü sürümü, sonuçta depolamanızı sağlar bir [CString](../../atl-mfc-shared/reference/cstringt-class.md), bu yana `CSimpleString` temel sınıfı `CString`.  
   
-##  <a name="getwindowtextlength"></a>CWindow::GetWindowTextLength  
+##  <a name="getwindowtextlength"></a>  CWindow::GetWindowTextLength  
  Pencerenin metnin uzunluğunu alır.  
   
 ```
@@ -1311,7 +1306,7 @@ int GetWindowTextLength() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetWindowTextLength](http://msdn.microsoft.com/library/windows/desktop/ms633521) Windows SDK.  
   
-##  <a name="getwindowthreadid"></a>CWindow::GetWindowThreadID  
+##  <a name="getwindowthreadid"></a>  CWindow::GetWindowThreadID  
  Belirtilen pencere oluşturulan iş parçacığı tanımlayıcısını alır.  
   
 ```
@@ -1324,7 +1319,7 @@ DWORD GetWindowThreadID() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#16](../../atl/codesnippet/cpp/cwindow-class_16.cpp)]  
   
-##  <a name="getwindowword"></a>CWindow::GetWindowWord  
+##  <a name="getwindowword"></a>  CWindow::GetWindowWord  
  Belirtilen kayma 16 bit değerinde fazladan penceresi belleğe alır.  
   
 ```
@@ -1334,7 +1329,7 @@ WORD GetWindowWord(int nIndex) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633584) Windows SDK.  
   
-##  <a name="gotodlgctrl"></a>CWindow::GotoDlgCtrl  
+##  <a name="gotodlgctrl"></a>  CWindow::GotoDlgCtrl  
  Klavye odağı iletişim kutusunda bir denetimi için ayarlar.  
   
 ```
@@ -1344,7 +1339,7 @@ void GotoDlgCtrl(HWND hWndCtrl) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [WM_NEXTDLGCTL](http://msdn.microsoft.com/library/windows/desktop/ms645432) Windows SDK.  
   
-##  <a name="hidecaret"></a>CWindow::HideCaret  
+##  <a name="hidecaret"></a>  CWindow::HideCaret  
  Sistem şapka gizler.  
   
 ```
@@ -1357,7 +1352,7 @@ BOOL HideCaret() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#17](../../atl/codesnippet/cpp/cwindow-class_17.cpp)]  
   
-##  <a name="hilitemenuitem"></a>CWindow::HiliteMenuItem  
+##  <a name="hilitemenuitem"></a>  CWindow::HiliteMenuItem  
  Vurgular veya Vurgu üst düzey menü öğesinden kaldırır.  
   
 ```
@@ -1370,7 +1365,7 @@ BOOL HiliteMenuItem(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [HiliteMenuItem](http://msdn.microsoft.com/library/windows/desktop/ms647986) Windows SDK.  
   
-##  <a name="invalidate"></a>CWindow::Invalidate  
+##  <a name="invalidate"></a>  CWindow::Invalidate  
  Tüm istemci alanını geçersiz kılar.  
   
 ```
@@ -1385,7 +1380,7 @@ BOOL Invalidate(BOOL bErase = TRUE) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#18](../../atl/codesnippet/cpp/cwindow-class_18.cpp)]  
   
-##  <a name="invalidaterect"></a>CWindow::InvalidateRect  
+##  <a name="invalidaterect"></a>  CWindow::InvalidateRect  
  Belirtilen dikdörtgenin içindeki istemci alanını geçersiz kılar.  
   
 ```
@@ -1395,7 +1390,7 @@ BOOL InvalidateRect(LPCRECT lpRect, BOOL bErase = TRUE) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [InvalidateRect](http://msdn.microsoft.com/library/windows/desktop/dd145002) Windows SDK.  
   
-##  <a name="invalidatergn"></a>CWindow::InvalidateRgn  
+##  <a name="invalidatergn"></a>  CWindow::InvalidateRgn  
  İstemci alanını belirtilen bölge geçersiz kılar.  
   
 ```
@@ -1408,7 +1403,7 @@ void InvalidateRgn(HRGN hRgn, BOOL bErase = TRUE) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Belirten bir `void` dönüş türü, sırada `InvalidateRgn` Win32 işlevi her zaman döndürür **doğru**.  
   
-##  <a name="ischild"></a>CWindow::IsChild  
+##  <a name="ischild"></a>  CWindow::IsChild  
  Belirtilen pencere alt pencere olup olmadığını belirler.  
   
 ```
@@ -1418,7 +1413,7 @@ BOOL IsChild(const HWND hWnd) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [Ischild](http://msdn.microsoft.com/library/windows/desktop/ms633524) Windows SDK.  
   
-##  <a name="isdialogmessage"></a>CWindow::IsDialogMessage  
+##  <a name="isdialogmessage"></a>  CWindow::IsDialogMessage  
  Bir ileti için belirtilen iletişim kutusu kullanılmaya olup olmadığını belirler.  
   
 ```
@@ -1428,7 +1423,7 @@ BOOL IsDialogMessage(LPMSG lpMsg) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [IsDialogMessage](http://msdn.microsoft.com/library/windows/desktop/ms645498) Windows SDK.  
   
-##  <a name="isdlgbuttonchecked"></a>CWindow::IsDlgButtonChecked  
+##  <a name="isdlgbuttonchecked"></a>  CWindow::IsDlgButtonChecked  
  Düğmenin onay durumunu belirler.  
   
 ```
@@ -1438,7 +1433,7 @@ UINT IsDlgButtonChecked(int nIDButton) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [IsDlgButtonChecked](http://msdn.microsoft.com/library/windows/desktop/bb761879) Windows SDK.  
   
-##  <a name="isiconic"></a>CWindow::IsIconic  
+##  <a name="isiconic"></a>  CWindow::IsIconic  
  Pencereyi simge durumuna küçültülmüş olup olmadığını belirler.  
   
 ```
@@ -1451,7 +1446,7 @@ BOOL IsIconic() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#19](../../atl/codesnippet/cpp/cwindow-class_19.cpp)]  
   
-##  <a name="isparentdialog"></a>CWindow::IsParentDialog  
+##  <a name="isparentdialog"></a>  CWindow::IsParentDialog  
  Denetimin üst pencere bir iletişim kutusu penceresinin olup olmadığını belirler.  
   
 ```
@@ -1461,7 +1456,7 @@ BOOL IsParentDialog() throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  TRUE üst pencere bir iletişim kutusu, değilse false değerini döndürür.  
   
-##  <a name="iswindow"></a>CWindow::IsWindow  
+##  <a name="iswindow"></a>  CWindow::IsWindow  
  Belirtilen bir pencere tanıtıcının varolan pencerede tanımlar olup olmadığını belirler.  
   
 ```
@@ -1474,7 +1469,7 @@ BOOL IsWindow() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#20](../../atl/codesnippet/cpp/cwindow-class_20.cpp)]  
   
-##  <a name="iswindowenabled"></a>CWindow::IsWindowEnabled  
+##  <a name="iswindowenabled"></a>  CWindow::IsWindowEnabled  
  Pencere giriş için etkin olup olmadığını belirler.  
   
 ```
@@ -1487,7 +1482,7 @@ BOOL IsWindowEnabled() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#21](../../atl/codesnippet/cpp/cwindow-class_21.cpp)]  
   
-##  <a name="iswindowvisible"></a>CWindow::IsWindowVisible  
+##  <a name="iswindowvisible"></a>  CWindow::IsWindowVisible  
  Pencerenin görünürlük durumu belirler.  
   
 ```
@@ -1500,7 +1495,7 @@ BOOL IsWindowVisible() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#22](../../atl/codesnippet/cpp/cwindow-class_22.cpp)]  
   
-##  <a name="iswindowunicode"></a>CWindow::IsWindowUnicode  
+##  <a name="iswindowunicode"></a>  CWindow::IsWindowUnicode  
  Belirtilen pencere yerel bir Unicode penceresi olup olmadığını belirler.  
   
 ```
@@ -1513,7 +1508,7 @@ BOOL IsWindowUnicode() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#23](../../atl/codesnippet/cpp/cwindow-class_23.cpp)]  
   
-##  <a name="iszoomed"></a>CWindow::IsZoomed  
+##  <a name="iszoomed"></a>  CWindow::IsZoomed  
  Pencere ekranı olup olmadığını belirler.  
   
 ```
@@ -1523,7 +1518,7 @@ BOOL IsZoomed() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [IsZoomed](http://msdn.microsoft.com/library/windows/desktop/ms633531) Windows SDK.  
   
-##  <a name="killtimer"></a>CWindow::KillTimer  
+##  <a name="killtimer"></a>  CWindow::KillTimer  
  Tarafından oluşturulan bir süreölçer olayı bozar `CWindow::SetTimer`.  
   
 ```
@@ -1533,7 +1528,7 @@ BOOL KillTimer(UINT nIDEvent) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [KillTimer](http://msdn.microsoft.com/library/windows/desktop/ms644903) Windows SDK.  
   
-##  <a name="lockwindowupdate"></a>CWindow::LockWindowUpdate  
+##  <a name="lockwindowupdate"></a>  CWindow::LockWindowUpdate  
  Devre dışı bırakır veya çağırarak penceresinde çizim etkinleştirir [LockWindowUpdate](http://msdn.microsoft.com/library/windows/desktop/dd145034) Win32 işlevi.  
   
 ```
@@ -1550,14 +1545,14 @@ BOOL LockWindowUpdate(BOOL bLock = TRUE) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `bLock` olan **TRUE**, bu yöntem geçirir [m_hWnd](#m_hwnd) Win32 işleve; Aksi halde, bunu geçirir **NULL**.  
   
-##  <a name="m_hwnd"></a>CWindow::m_hWnd  
+##  <a name="m_hwnd"></a>  CWindow::m_hWnd  
  İle ilişkili penceresi için bir tanıtıcı içeren `CWindow` nesnesi.  
   
 ```
 HWND m_hWnd throw() throw();
 ```  
   
-##  <a name="mapwindowpoints"></a>CWindow::MapWindowPoints  
+##  <a name="mapwindowpoints"></a>  CWindow::MapWindowPoints  
  Noktalar kümesi koordinat başka bir pencere için pencerenin koordinat alanından dönüştürür.  
   
 ```
@@ -1576,7 +1571,7 @@ int MapWindowPoints(
   
  Bu yöntem ikinci sürümü koordinatlarını dönüştürmenize olanak verir bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
   
-##  <a name="messagebox"></a>CWindow::MessageBox  
+##  <a name="messagebox"></a>  CWindow::MessageBox  
  Bir ileti kutusu görüntüler.  
   
 ```
@@ -1592,7 +1587,7 @@ int MessageBox(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#24](../../atl/codesnippet/cpp/cwindow-class_24.cpp)]  
   
-##  <a name="modifystyle"></a>CWindow::ModifyStyle  
+##  <a name="modifystyle"></a>  CWindow::ModifyStyle  
  Pencere stillerini değiştirir `CWindow` nesnesi.  
   
 ```
@@ -1616,24 +1611,24 @@ BOOL ModifyStyle(
  **DOĞRU** pencere stilleri, değiştirilmiş Aksi takdirde **FALSE**.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bit düzeyinde OR (&#124;) kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir işleci. Bkz: [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) kullanılabilir pencere stilleri Windows SDKfor bilgilerini işlevinde.  
+ Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) kullanılabilir pencere stilleri Windows SDKfor bilgilerini işlevinde.  
   
  Varsa `nFlags` sıfır olmayan, olan `ModifyStyle` Win32 işlev çağrılarını `SetWindowPos`ve pencere birleştirerek yeniden çizer `nFlags` aşağıdaki dört bayrağı ile:  
   
-- `SWP_NOSIZE`Geçerli boyutu korur.  
+- `SWP_NOSIZE` Geçerli boyutu korur.  
   
-- `SWP_NOMOVE`Geçerli konumu korur.  
+- `SWP_NOMOVE` Geçerli konumu korur.  
   
-- `SWP_NOZORDER`Geçerli Z düzenini korur.  
+- `SWP_NOZORDER` Geçerli Z düzenini korur.  
   
-- `SWP_NOACTIVATE`Pencerenin etkinleştirmez.  
+- `SWP_NOACTIVATE` Pencerenin etkinleştirmez.  
   
  Stilleri genişletilmiş bir pencere değiştirmek için arama [ModifyStyleEx](#modifystyleex).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#25](../../atl/codesnippet/cpp/cwindow-class_25.cpp)]  
   
-##  <a name="modifystyleex"></a>CWindow::ModifyStyleEx  
+##  <a name="modifystyleex"></a>  CWindow::ModifyStyleEx  
  Genişletilmiş pencere stillerini değiştirir `CWindow` nesnesi.  
   
 ```
@@ -1657,24 +1652,24 @@ BOOL ModifyStyleEx(
  **DOĞRU** genişletilmiş pencere stilleri, değiştirilmiş Aksi takdirde **FALSE**.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bit düzeyinde OR (&#124;) kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir işleci. Bkz: [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) kullanılabilir stilleri genişletilmiş Windows SDKfor bilgilerini işlevinde.  
+ Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) kullanılabilir stilleri genişletilmiş Windows SDKfor bilgilerini işlevinde.  
   
  Varsa `nFlags` sıfır olmayan, olan `ModifyStyleEx` Win32 işlev çağrılarını `SetWindowPos`ve pencere birleştirerek yeniden çizer `nFlags` aşağıdaki dört bayrağı ile:  
   
-- `SWP_NOSIZE`Geçerli boyutu korur.  
+- `SWP_NOSIZE` Geçerli boyutu korur.  
   
-- `SWP_NOMOVE`Geçerli konumu korur.  
+- `SWP_NOMOVE` Geçerli konumu korur.  
   
-- `SWP_NOZORDER`Geçerli Z düzenini korur.  
+- `SWP_NOZORDER` Geçerli Z düzenini korur.  
   
-- `SWP_NOACTIVATE`Pencerenin etkinleştirmez.  
+- `SWP_NOACTIVATE` Pencerenin etkinleştirmez.  
   
  Normal pencere stilleri kullanarak windows değiştirmek için arama [ModifyStyle](#modifystyle).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#26](../../atl/codesnippet/cpp/cwindow-class_26.cpp)]  
   
-##  <a name="movewindow"></a>CWindow::MoveWindow  
+##  <a name="movewindow"></a>  CWindow::MoveWindow  
  Pencere boyutunu ve konumunu değiştirir.  
   
 ```
@@ -1695,7 +1690,7 @@ BOOL MoveWindow(
   
  Bu yöntem ikinci sürümünü kullanan bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) pencerenin yeni konumu, genişlik ve yükseklik belirlemek üzere yapısı.  
   
-##  <a name="nextdlgctrl"></a>CWindow::NextDlgCtrl  
+##  <a name="nextdlgctrl"></a>  CWindow::NextDlgCtrl  
  Klavye odağı iletişim kutusunda sonraki denetim ayarlar.  
   
 ```
@@ -1705,7 +1700,7 @@ void NextDlgCtrl() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [WM_NEXTDLGCTL](http://msdn.microsoft.com/library/windows/desktop/ms645432) Windows SDK.  
   
-##  <a name="openclipboard"></a>CWindow::OpenClipboard  
+##  <a name="openclipboard"></a>  CWindow::OpenClipboard  
  Pano açar.  
   
 ```
@@ -1715,21 +1710,21 @@ BOOL OpenClipboard() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [OpenClipboard](http://msdn.microsoft.com/library/windows/desktop/ms649048) Windows SDK.  
   
-##  <a name="operator_hwnd"></a>CWindow::operator HWND  
+##  <a name="operator_hwnd"></a>  CWindow::operator HWND  
  Dönüştüren bir `CWindow` nesnesine bir `HWND`.  
   
 ```  
 operator HWND() const throw();
 ```  
   
-##  <a name="operator_eq"></a>CWindow::operator =  
+##  <a name="operator_eq"></a>  CWindow::operator =  
  Atayan bir `HWND` için `CWindow` ayarlayarak nesne [m_hWnd](#m_hwnd) üyesine `hWnd`.  
   
 ```
 CWindow& operator= (HWND hWnd) throw();
 ```  
   
-##  <a name="postmessage"></a>CWindow::PostMessage  
+##  <a name="postmessage"></a>  CWindow::PostMessage  
  Bir ileti penceresinde oluşturulan iş parçacığı ile ilişkili ileti sırası yerleştirir.  
   
 ```
@@ -1747,7 +1742,7 @@ BOOL PostMessage(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#27](../../atl/codesnippet/cpp/cwindow-class_27.cpp)]  
   
-##  <a name="prevdlgctrl"></a>CWindow::PrevDlgCtrl  
+##  <a name="prevdlgctrl"></a>  CWindow::PrevDlgCtrl  
  Klavye odağı önceki denetim iletişim kutusunda ayarlar.  
   
 ```
@@ -1757,7 +1752,7 @@ void PrevDlgCtrl() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [WM_NEXTDLGCTL](http://msdn.microsoft.com/library/windows/desktop/ms645432) Windows SDK.  
   
-##  <a name="print"></a>CWindow::Print  
+##  <a name="print"></a>  CWindow::Print  
  Gönderen bir [WM_PRINT](http://msdn.microsoft.com/library/windows/desktop/dd145216) , kendisini belirtilen cihaz bağlamında çizme istek iletisi penceresine.  
   
 ```
@@ -1771,19 +1766,19 @@ void Print(HDC hDC, DWORD dwFlags) const throw();
  `dwFlags`  
  [in] Çizim seçeneklerini belirtir. Bir veya daha fazla aşağıdaki bayraklar birleştirebilirsiniz:  
   
-- `PRF_CHECKVISIBLE`Yalnızca görünür durumdaysa penceresi çizin.  
+- `PRF_CHECKVISIBLE` Yalnızca görünür durumdaysa penceresi çizin.  
   
-- `PRF_CHILDREN`Tüm görünür alt pencereleri çizin.  
+- `PRF_CHILDREN` Tüm görünür alt pencereleri çizin.  
   
-- `PRF_CLIENT`İstemci alanını penceresinin çizin.  
+- `PRF_CLIENT` İstemci alanını penceresinin çizin.  
   
-- `PRF_ERASEBKGND`Arka plan çizim penceresi önce silin.  
+- `PRF_ERASEBKGND` Arka plan çizim penceresi önce silin.  
   
-- `PRF_NONCLIENT`İstemci dışı alan penceresinin çizin.  
+- `PRF_NONCLIENT` İstemci dışı alan penceresinin çizin.  
   
-- `PRF_OWNED`Tüm ait windows çizin.  
+- `PRF_OWNED` Tüm ait windows çizin.  
   
-##  <a name="printclient"></a>CWindow::PrintClient  
+##  <a name="printclient"></a>  CWindow::PrintClient  
  Gönderen bir [WM_PRINTCLIENT](http://msdn.microsoft.com/library/windows/desktop/dd145217) belirtilen cihaz bağlamı kendi istemci alanında çizin istek iletisi penceresine.  
   
 ```
@@ -1797,26 +1792,26 @@ void PrintClient(HDC hDC, DWORD dwFlags) const throw();
  `dwFlags`  
  [in] Çizim seçeneklerini belirtir. Bir veya daha fazla aşağıdaki bayraklar birleştirebilirsiniz:  
   
-- `PRF_CHECKVISIBLE`Yalnızca görünür durumdaysa penceresi çizin.  
+- `PRF_CHECKVISIBLE` Yalnızca görünür durumdaysa penceresi çizin.  
   
-- `PRF_CHILDREN`Tüm görünür alt pencereleri çizin.  
+- `PRF_CHILDREN` Tüm görünür alt pencereleri çizin.  
   
-- `PRF_CLIENT`İstemci alanını penceresinin çizin.  
+- `PRF_CLIENT` İstemci alanını penceresinin çizin.  
   
-- `PRF_ERASEBKGND`Arka plan çizim penceresi önce silin.  
+- `PRF_ERASEBKGND` Arka plan çizim penceresi önce silin.  
   
-- `PRF_NONCLIENT`İstemci dışı alan penceresinin çizin.  
+- `PRF_NONCLIENT` İstemci dışı alan penceresinin çizin.  
   
-- `PRF_OWNED`Tüm ait windows çizin.  
+- `PRF_OWNED` Tüm ait windows çizin.  
   
-##  <a name="rcdefault"></a>CWindow::rcDefault  
+##  <a name="rcdefault"></a>  CWindow::rcDefault  
  Varsayılan pencere boyutları içerir.  
   
 ```
 static RECT rcDefault;
 ```  
   
-##  <a name="redrawwindow"></a>CWindow::RedrawWindow  
+##  <a name="redrawwindow"></a>  CWindow::RedrawWindow  
  Belirtilen dikdörtgen veya istemci alanını bölgede güncelleştirir.  
   
 ```
@@ -1834,7 +1829,7 @@ throw()
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#28](../../atl/codesnippet/cpp/cwindow-class_28.cpp)]  
   
-##  <a name="releasedc"></a>CWindow::ReleaseDC  
+##  <a name="releasedc"></a>  CWindow::ReleaseDC  
  Bir cihaz bağlamı serbest bırakır.  
   
 ```
@@ -1847,7 +1842,7 @@ int ReleaseDC(HDC hDC);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#9](../../atl/codesnippet/cpp/cwindow-class_9.cpp)]  
   
-##  <a name="resizeclient"></a>CWindow::ResizeClient  
+##  <a name="resizeclient"></a>  CWindow::ResizeClient  
  Pencereyi belirtilen istemci alanı boyuta göre yeniden boyutlandırır.  
   
 ```
@@ -1867,7 +1862,7 @@ BOOL ResizeClient(
  `bRedraw`  
  Değişiklikleri yeniden boyutlandırmaya tutulmayacağını gösteren bir bayrak. Varsayılan değer **yanlış**, pencerenin belirten değil yeniden boyutlandırmaya değişiklikleri.  
   
-##  <a name="screentoclient"></a>CWindow::ScreenToClient  
+##  <a name="screentoclient"></a>  CWindow::ScreenToClient  
  Ekran koordinatları istemci koordinatları dönüştürür.  
   
 ```
@@ -1880,7 +1875,7 @@ BOOL ScreenToClient(LPRECT lpRect) const throw();
   
  Bu yöntem ikinci sürümü koordinatlarını dönüştürmenize olanak verir bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
   
-##  <a name="scrollwindow"></a>CWindow::ScrollWindow  
+##  <a name="scrollwindow"></a>  CWindow::ScrollWindow  
  Belirtilen istemci alanını kayar.  
   
 ```
@@ -1894,7 +1889,7 @@ BOOL ScrollWindow(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [ScrollWindow](http://msdn.microsoft.com/library/windows/desktop/bb787591) Windows SDK.  
   
-##  <a name="scrollwindowex"></a>CWindow::ScrollWindowEx  
+##  <a name="scrollwindowex"></a>  CWindow::ScrollWindowEx  
  Belirtilen istemci alanını ek özellikleri ile birlikte kayar.  
   
 ```
@@ -1911,7 +1906,7 @@ int ScrollWindowEx(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [ScrollWindowEx](http://msdn.microsoft.com/library/windows/desktop/bb787593) Windows SDK.  
   
-##  <a name="senddlgitemmessage"></a>CWindow::SendDlgItemMessage  
+##  <a name="senddlgitemmessage"></a>  CWindow::SendDlgItemMessage  
  Bir denetim için bir ileti gönderir.  
   
 ```
@@ -1925,7 +1920,7 @@ LRESULT SendDlgItemMessage(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [SendDlgItemMessage](http://msdn.microsoft.com/library/windows/desktop/ms645515) Windows SDK.  
   
-##  <a name="sendmessage"></a>CWindow::SendMessage  
+##  <a name="sendmessage"></a>  CWindow::SendMessage  
  Pencereyi bir ileti gönderir ve pencere yordamı ileti işleyene kadar döndürmüyor.  
   
 ```
@@ -1947,7 +1942,7 @@ static LRESULT SendMessage(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#29](../../atl/codesnippet/cpp/cwindow-class_29.cpp)]  
   
-##  <a name="sendmessagetodescendants"></a>CWindow::SendMessageToDescendants  
+##  <a name="sendmessagetodescendants"></a>  CWindow::SendMessageToDescendants  
  Belirtilen iletiyi tüm yakınındaki alt öğeleri için gönderir `CWindow` nesnesi.  
   
 ```
@@ -1974,7 +1969,7 @@ void SendMessageToDescendants(
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `bDeep` olan **doğru**, ileti ayrıca diğer alt windows için gönderilir.  
   
-##  <a name="sendnotifymessage"></a>CWindow::SendNotifyMessage  
+##  <a name="sendnotifymessage"></a>  CWindow::SendNotifyMessage  
  Pencereyi bir ileti gönderir.  
   
 ```
@@ -1989,7 +1984,7 @@ BOOL SendNotifyMessage(
   
  Pencerenin çağıran iş parçacığı tarafından oluşturulmuşsa `SendNotifyMessage` pencere yordamı ileti işleyene kadar döndürmüyor. Aksi takdirde, hemen döndürür.  
   
-##  <a name="setactivewindow"></a>CWindow::SetActiveWindow  
+##  <a name="setactivewindow"></a>  CWindow::SetActiveWindow  
  Pencereyi etkinleştirir.  
   
 ```
@@ -2002,7 +1997,7 @@ HWND SetActiveWindow() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#30](../../atl/codesnippet/cpp/cwindow-class_30.cpp)]  
   
-##  <a name="setcapture"></a>CWindow::SetCapture  
+##  <a name="setcapture"></a>  CWindow::SetCapture  
  Tüm sonraki fare girdisi penceresine gönderir.  
   
 ```
@@ -2012,7 +2007,7 @@ HWND SetCapture() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [SetCapture](http://msdn.microsoft.com/library/windows/desktop/ms646262) Windows SDK.  
   
-##  <a name="setclipboardviewer"></a>CWindow::SetClipboardViewer  
+##  <a name="setclipboardviewer"></a>  CWindow::SetClipboardViewer  
  Pencerenin Pano Görüntüleyicisi zincire ekler.  
   
 ```
@@ -2022,7 +2017,7 @@ HWND SetClipboardViewer() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [SetClipboardViewer](http://msdn.microsoft.com/library/windows/desktop/ms649052) Windows SDK.  
   
-##  <a name="setdlgctrlid"></a>CWindow::SetDlgCtrlID  
+##  <a name="setdlgctrlid"></a>  CWindow::SetDlgCtrlID  
  Pencere tanıtıcısı belirtilen değere ayarlar.  
   
 ```
@@ -2036,7 +2031,7 @@ int SetDlgCtrlID(int nID) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, pencerenin; önceki tanıtıcısı Aksi takdirde 0.  
   
-##  <a name="setdlgitemint"></a>CWindow::SetDlgItemInt  
+##  <a name="setdlgitemint"></a>  CWindow::SetDlgItemInt  
  Bir denetimin metin bir tamsayı değeri dize gösterimini değiştirir.  
   
 ```
@@ -2049,7 +2044,7 @@ BOOL SetDlgItemInt(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [SetDlgItemInt](http://msdn.microsoft.com/library/windows/desktop/ms645518) Windows SDK.  
   
-##  <a name="setdlgitemtext"></a>CWindow::SetDlgItemText  
+##  <a name="setdlgitemtext"></a>  CWindow::SetDlgItemText  
  Bir denetimin metni değiştirir.  
   
 ```
@@ -2059,7 +2054,7 @@ BOOL SetDlgItemText(int nID, LPCTSTR lpszString) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [Setdlgıtemtext](http://msdn.microsoft.com/library/windows/desktop/ms645521) Windows SDK.  
   
-##  <a name="setfocus"></a>CWindow::SetFocus  
+##  <a name="setfocus"></a>  CWindow::SetFocus  
  Giriş odağını penceresine ayarlar.  
   
 ```
@@ -2072,7 +2067,7 @@ HWND SetFocus() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#31](../../atl/codesnippet/cpp/cwindow-class_31.cpp)]  
   
-##  <a name="setfont"></a>CWindow::SetFont  
+##  <a name="setfont"></a>  CWindow::SetFont  
  Pencerenin geçerli yazı tipi göndererek değişiklikleri bir [WM_SETFONT](http://msdn.microsoft.com/library/windows/desktop/ms632642) penceresine ileti.  
   
 ```
@@ -2086,7 +2081,7 @@ void SetFont(HFONT hFont, BOOL bRedraw = TRUE) throw();
  `bRedraw`  
  [in] Varsa **TRUE** (varsayılan değer) penceresi çizilir. Aksi durumda değil.  
   
-##  <a name="sethotkey"></a>CWindow::SetHotKey  
+##  <a name="sethotkey"></a>  CWindow::SetHotKey  
  Sık kullanılan tuş göndererek penceresiyle ilişkilendirir bir **WM_SETHOTKEY** ileti.  
   
 ```
@@ -2103,7 +2098,7 @@ int SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Olası bir listesi için dönüş değerleri, bkz: [WM_SETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646284) Windows SDK'sındaki.  
   
-##  <a name="seticon"></a>CWindow::SetIcon  
+##  <a name="seticon"></a>  CWindow::SetIcon  
  Tarafından tanımlanan simgesine pencerenin büyük veya küçük simgesi ayarlar `hIcon`.  
   
 ```
@@ -2121,9 +2116,9 @@ HICON SetIcon(HICON hIcon, BOOL bBigIcon = TRUE) throw();
  Önceki simgesine işleci.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `SetIcon`gönderen bir [WM_SETICON](http://msdn.microsoft.com/library/windows/desktop/ms632643) penceresine ileti.  
+ `SetIcon` gönderen bir [WM_SETICON](http://msdn.microsoft.com/library/windows/desktop/ms632643) penceresine ileti.  
   
-##  <a name="setmenu"></a>CWindow::SetMenu  
+##  <a name="setmenu"></a>  CWindow::SetMenu  
  Pencerenin geçerli menüsünü değiştirir.  
   
 ```
@@ -2133,7 +2128,7 @@ BOOL SetMenu(HMENU hMenu) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [SetMenu](http://msdn.microsoft.com/library/windows/desktop/ms647995) Windows SDK.  
   
-##  <a name="setparent"></a>CWindow::SetParent  
+##  <a name="setparent"></a>  CWindow::SetParent  
  Üst pencere değiştirir.  
   
 ```
@@ -2146,7 +2141,7 @@ HWND SetParent(HWND hWndNewParent) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#32](../../atl/codesnippet/cpp/cwindow-class_32.cpp)]  
   
-##  <a name="setredraw"></a>CWindow::SetRedraw  
+##  <a name="setredraw"></a>  CWindow::SetRedraw  
  Bayrağını ayarlar veya yeniden düzenlenen göndererek temizler bir [WM_SETREDRAW](http://msdn.microsoft.com/library/windows/desktop/dd145219) penceresine ileti.  
   
 ```
@@ -2163,7 +2158,7 @@ void SetRedraw(BOOL bRedraw = TRUE) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#33](../../atl/codesnippet/cpp/cwindow-class_33.cpp)]  
   
-##  <a name="setscrollinfo"></a>CWindow::SetScrollInfo  
+##  <a name="setscrollinfo"></a>  CWindow::SetScrollInfo  
  Bir kaydırma çubuğunun parametreleri ayarlar.  
   
 ```
@@ -2176,7 +2171,7 @@ int SetScrollInfo(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [SetScrollInfo](http://msdn.microsoft.com/library/windows/desktop/bb787595) Windows SDK.  
   
-##  <a name="setscrollpos"></a>CWindow::SetScrollPos  
+##  <a name="setscrollpos"></a>  CWindow::SetScrollPos  
  Kaydırma kutusunun konumunu değiştirir.  
   
 ```
@@ -2189,7 +2184,7 @@ int SetScrollPos(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [SetScrollPos](http://msdn.microsoft.com/library/windows/desktop/bb787597) Windows SDK.  
   
-##  <a name="setscrollrange"></a>CWindow::SetScrollRange  
+##  <a name="setscrollrange"></a>  CWindow::SetScrollRange  
  Kaydırma çubuğu aralığı değiştirir.  
   
 ```
@@ -2203,7 +2198,7 @@ BOOL SetScrollRange(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [SetScrollRange](http://msdn.microsoft.com/library/windows/desktop/bb787599) Windows SDK.  
   
-##  <a name="settimer"></a>CWindow::SetTimer  
+##  <a name="settimer"></a>  CWindow::SetTimer  
  Süreölçer olayı oluşturur.  
   
 ```
@@ -2216,7 +2211,7 @@ UINT SetTimer(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [SetTimer](http://msdn.microsoft.com/library/windows/desktop/ms644906) Windows SDK.  
   
-##  <a name="setwindowcontexthelpid"></a>CWindow::SetWindowContextHelpId  
+##  <a name="setwindowcontexthelpid"></a>  CWindow::SetWindowContextHelpId  
  Pencerenin yardım bağlam kimliğini belirler.  
   
 ```
@@ -2226,7 +2221,7 @@ BOOL SetWindowContextHelpId(DWORD dwContextHelpId) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [SetWindowContextHelpId](http://msdn.microsoft.com/library/windows/desktop/bb762101) Windows SDK.  
   
-##  <a name="setwindowlong"></a>CWindow::SetWindowLong  
+##  <a name="setwindowlong"></a>  CWindow::SetWindowLong  
  32-bit değeri belirtilen uzaklıkta ek pencere belleğe ayarlar.  
   
 ```
@@ -2239,7 +2234,7 @@ LONG SetWindowLong(int nIndex, LONG dwNewLong) throw();
 > [!NOTE]
 >  Windows 32-bit ve 64 bit sürümleri ile uyumlu olan kod yazmak için [CWindow::SetWindowLongPtr](#setwindowlongptr).  
   
-##  <a name="setwindowlongptr"></a>CWindow::SetWindowLongPtr  
+##  <a name="setwindowlongptr"></a>  CWindow::SetWindowLongPtr  
  Belirtilen pencere özniteliği değiştirir ve ayrıca ek pencere bellekte belirtilen uzaklığında bir değer ayarlar.  
   
 ```
@@ -2251,7 +2246,7 @@ LONG_PTR SetWindowLongPtr(int nIndex, LONG_PTR dwNewLong) throw();
   
  Bu işlevin yerini `CWindow::SetWindowLong` yöntemi. Windows 32-bit ve 64 bit sürümleri ile uyumlu olan kod yazmak için `CWindow::SetWindowLongPtr`.  
   
-##  <a name="setwindowplacement"></a>CWindow::SetWindowPlacement  
+##  <a name="setwindowplacement"></a>  CWindow::SetWindowPlacement  
  Konumlar ve durumunu göster ayarlar.  
   
 ```
@@ -2261,7 +2256,7 @@ BOOL SetWindowPlacement(const WINDOWPLACEMENT FAR* lpwndpl);
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [SetWindowPlacement](http://msdn.microsoft.com/library/windows/desktop/ms633544) Windows SDK.  
   
-##  <a name="setwindowpos"></a>CWindow::SetWindowPos  
+##  <a name="setwindowpos"></a>  CWindow::SetWindowPos  
  Boyut, konum ve Z düzenini belirler.  
   
 ```
@@ -2284,7 +2279,7 @@ BOOL SetWindowPos(
   
  Bu yöntem ikinci sürümünü kullanan bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) pencerenin yeni konumu, genişlik ve yükseklik ayarlamak için yapısı.  
   
-##  <a name="setwindowrgn"></a>CWindow::SetWindowRgn  
+##  <a name="setwindowrgn"></a>  CWindow::SetWindowRgn  
  Pencere bölge penceresinin ayarlar.  
   
 ```
@@ -2294,7 +2289,7 @@ int SetWindowRgn(HRGN hRgn, BOOL bRedraw = FALSE) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [SetWindowRgn](http://msdn.microsoft.com/library/windows/desktop/dd145102) Windows SDK.  
   
-##  <a name="setwindowtext"></a>CWindow::SetWindowText  
+##  <a name="setwindowtext"></a>  CWindow::SetWindowText  
  Pencerenin metnini değiştirir.  
   
 ```
@@ -2307,7 +2302,7 @@ BOOL SetWindowText(LPCTSTR lpszString) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#34](../../atl/codesnippet/cpp/cwindow-class_34.cpp)]  
   
-##  <a name="setwindowword"></a>CWindow::SetWindowWord  
+##  <a name="setwindowword"></a>  CWindow::SetWindowWord  
  Bir 16 bit değer belirtilen uzaklıkta ek pencere belleğe ayarlar.  
   
 ```
@@ -2317,7 +2312,7 @@ WORD SetWindowWord(int nIndex, WORD wNewWord) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [SetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633591) Windows SDK.  
   
-##  <a name="showcaret"></a>CWindow::ShowCaret  
+##  <a name="showcaret"></a>  CWindow::ShowCaret  
  Sistem düzeltme işareti görüntüler.  
   
 ```
@@ -2330,7 +2325,7 @@ BOOL ShowCaret() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#35](../../atl/codesnippet/cpp/cwindow-class_35.cpp)]  
   
-##  <a name="showownedpopups"></a>CWindow::ShowOwnedPopups  
+##  <a name="showownedpopups"></a>  CWindow::ShowOwnedPopups  
  Gösterir veya pencere tarafından sahip olunan açılır pencereleri gizler.  
   
 ```
@@ -2340,7 +2335,7 @@ BOOL ShowOwnedPopups(BOOL bShow = TRUE) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [ShowOwnedPopups](http://msdn.microsoft.com/library/windows/desktop/ms633547) Windows SDK.  
   
-##  <a name="showscrollbar"></a>CWindow::ShowScrollBar  
+##  <a name="showscrollbar"></a>  CWindow::ShowScrollBar  
  Gösterir veya bir kaydırma çubuğunun gizler.  
   
 ```
@@ -2350,7 +2345,7 @@ BOOL ShowScrollBar(UINT nBar, BOOL bShow = TRUE) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [ShowScrollBar](http://msdn.microsoft.com/library/windows/desktop/bb787601) Windows SDK.  
   
-##  <a name="showwindow"></a>CWindow::ShowWindow  
+##  <a name="showwindow"></a>  CWindow::ShowWindow  
  Pencerenin Göster durumunu ayarlar.  
   
 ```
@@ -2363,7 +2358,7 @@ BOOL ShowWindow(int nCmdShow) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#36](../../atl/codesnippet/cpp/cwindow-class_36.cpp)]  
   
-##  <a name="showwindowasync"></a>CWindow::ShowWindowAsync  
+##  <a name="showwindowasync"></a>  CWindow::ShowWindowAsync  
  Farklı bir iş parçacığı tarafından oluşturulan pencerenin Göster durumunu ayarlar.  
   
 ```
@@ -2373,7 +2368,7 @@ BOOL ShowWindowAsync(int nCmdShow) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [ShowWindowAsync](http://msdn.microsoft.com/library/windows/desktop/ms633549) Windows SDK.  
   
-##  <a name="updatewindow"></a>CWindow::UpdateWindow  
+##  <a name="updatewindow"></a>  CWindow::UpdateWindow  
  İstemci alanını güncelleştirir.  
   
 ```
@@ -2386,7 +2381,7 @@ BOOL UpdateWindow() throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#37](../../atl/codesnippet/cpp/cwindow-class_37.cpp)]  
   
-##  <a name="validaterect"></a>CWindow::ValidateRect  
+##  <a name="validaterect"></a>  CWindow::ValidateRect  
  Belirtilen dikdörtgenin içindeki istemci alanını doğrular.  
   
 ```
@@ -2396,7 +2391,7 @@ BOOL ValidateRect(LPCRECT lpRect) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [ValidateRect](http://msdn.microsoft.com/library/windows/desktop/dd145194) Windows SDK.  
   
-##  <a name="validatergn"></a>CWindow::ValidateRgn  
+##  <a name="validatergn"></a>  CWindow::ValidateRgn  
  Belirtilen bölge içinde istemci alanını doğrular.  
   
 ```
@@ -2406,7 +2401,7 @@ BOOL ValidateRgn(HRGN hRgn) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [ValidateRgn](http://msdn.microsoft.com/library/windows/desktop/dd145195) Windows SDK.  
   
-##  <a name="winhelp"></a>CWindow::WinHelp  
+##  <a name="winhelp"></a>  CWindow::WinHelp  
  Windows Yardım başlatır.  
   
 ```

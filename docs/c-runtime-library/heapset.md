@@ -1,13 +1,10 @@
 ---
 title: _heapset | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - _heapset
 apilocation:
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - debugging [CRT], heap-related problems
 - _heapset function
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71e763e39c3d5e2f1a192e7408ee02758f26e6b9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c45c4cc3e6e6ffe23378ce0b4f26383369e92058
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="heapset"></a>_heapset
 Yığınları en az tutarlılığını denetler ve ücretsiz girişler için belirtilen değere ayarlar.  
@@ -62,7 +57,7 @@ int _heapset(
  Karakter doldurun.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_heapset`Malloc.h içinde tanımlanan tamsayı bildirim sabitlerden birini döndürür.  
+ `_heapset` Malloc.h içinde tanımlanan tamsayı bildirim sabitlerden birini döndürür.  
   
  `_HEAPBADBEGIN`  
  İlk üst bilgileri bulunamadı veya geçersiz.  
@@ -81,7 +76,7 @@ int _heapset(
 ## <a name="remarks"></a>Açıklamalar  
  `_heapset` İşlevi boş bellek konumları veya yanlışlıkla üzerine düğümleri gösterir.  
   
- `_heapset`en az tutarlılık yığında denetler ve her bir öbek 's ücretsiz girişlere bayt ayarlar `fill` değeri. Bu bilinen bir değerle bırakılmış belleğe kasıtsız olarak yazılmış veri içerir ve ücretsiz düğümler hangi Öbek bellek konumlarını içeren gösterir. İşletim sistemini desteklemiyor, `_heapset`işlevi (örneğin, Windows 98), döndürür `_HEAPOK` ve ayarlar `errno` için `ENOSYS`.  
+ `_heapset` en az tutarlılık yığında denetler ve her bir öbek 's ücretsiz girişlere bayt ayarlar `fill` değeri. Bu bilinen bir değerle bırakılmış belleğe kasıtsız olarak yazılmış veri içerir ve ücretsiz düğümler hangi Öbek bellek konumlarını içeren gösterir. İşletim sistemini desteklemiyor, `_heapset`işlevi (örneğin, Windows 98), döndürür `_HEAPOK` ve ayarlar `errno` için `ENOSYS`.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

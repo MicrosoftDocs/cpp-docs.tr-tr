@@ -1,12 +1,9 @@
 ---
-title: "Özel durum işleme zamanlaması: Özet | Microsoft Docs"
-ms.custom: 
+title: 'Özel durum işleme zamanlaması: Özet | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - handlers [C++], order of exception
 - structured exception handling [C++], timing
 ms.assetid: 5d1da546-73fd-4673-aa1a-7ac0f776c420
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c9e14f89bba02a53af5956ec2a2dcb52bfb1a38c
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: 446925b6e00f4771229357effee0707af3fae52a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="timing-of-exception-handling-a-summary"></a>Özel Durum İşleme Zamanlaması: Özet
 Sonlandırma işleyicisi, `__try` deyim bloğu nasıl sonlandırılırsa sonlandırılsın yürütülür. Bunun nedenleri, `__try` bloğundan dışarı atlama, denetimi bloğun dışına aktaran bir `longjmp` deyimi ve özel durum işleme nedeniyle yığının geriye doğru izlenmesidir.  

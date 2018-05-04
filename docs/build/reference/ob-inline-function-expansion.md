@@ -1,13 +1,10 @@
 ---
-title: "-Ob (satır içi işlev genişletmesi) | Microsoft Docs"
-ms.custom: 
+title: -Ob (satır içi işlev genişletmesi) | Microsoft Docs
+ms.custom: ''
 ms.date: 09/25/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.InlineFunctionExpansion
 - VC.Project.VCCLCompilerTool.InlineFunctionExpansion
@@ -33,17 +30,15 @@ helpviewer_keywords:
 - Ob0 compiler option [C++]
 - inline expansion, compiler option
 ms.assetid: f134e6df-e939-4980-a01d-47425dbc562a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b83d470eaf6a30698d8c2836620a0688daa35cc1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fb7c31dca2d95232850140576be3ddc0ac695cac
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ob-inline-function-expansion"></a>/Ob (Satır İçi İşlev Genişletmesi)
 
@@ -81,7 +76,7 @@ Kullanabileceğiniz `#pragma` [auto_inline](../../preprocessor/auto-inline.md) s
 
 1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
 
-1. Genişletme **yapılandırma özellikleri**, **C/C++**seçip **en iyi duruma getirme**.
+1. Genişletme **yapılandırma özellikleri**, **C/C++** seçip **en iyi duruma getirme**.
 
 1. Değiştirme **satır içi işlev genişletmesi** özelliği.
 
@@ -91,6 +86,6 @@ Kullanabileceğiniz `#pragma` [auto_inline](../../preprocessor/auto-inline.md) s
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[/O seçenekler (kodu İyileştir)](../../build/reference/o-options-optimize-code.md)  
+[/O Seçenekler (Kodu İyileştir)](../../build/reference/o-options-optimize-code.md)  
 [Derleyici Seçenekleri](../../build/reference/compiler-options.md)  
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

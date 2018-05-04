@@ -1,27 +1,22 @@
 ---
-title: "Dahil olmak üzere, dosya adları tırnak içine alınmış | Microsoft Docs"
-ms.custom: 
+title: Dahil olmak üzere, dosya adları tırnak içine alınmış | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: 789a047e-ea38-4c99-b71d-a2ad9c81daee
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75b9e308fec394825b3113a716ead2c93e9bb290
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 80f6afbc503b52d1ef620050bf5592eb84e75fa9
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="including-quoted-filenames"></a>Tırnak İşaretli Dosya Adlarını Dahil Etme
 **ANSI 3.8.2** includable kaynak dosyaları için tırnak işaretli adları için destek  

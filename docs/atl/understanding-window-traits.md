@@ -1,29 +1,24 @@
 ---
 title: ATL pencere nitelikler | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - window traits
 ms.assetid: c90cf850-9e91-49da-9cf3-ad4efb30347d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fda95e4517d2717a89310a8e49a0c5b337feebcf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 71fbf5b3c4c3f1aa95070cbc0d30beb9e1321348
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understanding-window-traits"></a>Pencere özellikleri anlama
 Pencere özellikler sınıfları ATL pencere nesnesi oluşturmak için kullanılan stiller Standartlaştırma için basit bir yöntem sağlar. Pencere özellikleri şablonu parametreleri olarak kabul edilir [CWindowImpl](../atl/reference/cwindowimpl-class.md) ve diğer ATL pencere sınıfları sınıf düzeyinde pencere stilleri varsayılan sağlamanın bir yolu olarak.  

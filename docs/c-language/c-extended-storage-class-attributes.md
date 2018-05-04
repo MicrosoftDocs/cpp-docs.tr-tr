@@ -1,13 +1,10 @@
 ---
-title: "C genişletilmiş depolama sınıfı öznitelikler | Microsoft Docs"
-ms.custom: 
+title: C genişletilmiş depolama sınıfı öznitelikler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - extended storage-class attributes
 - storage class specifiers, C storage classes
 ms.assetid: 2580735c-f5bf-46ab-9468-0696893d82be
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 972a8dc27283839ce1eade0e1e9b81dc92998b15
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 014027f9b9917f6490bb54eaf21a05230ef5f2a2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-extended-storage-class-attributes"></a>C Genişletilmiş Depolama Sınıfı Öznitelikler
 **Microsoft özel**  
@@ -39,9 +34,9 @@ ms.lasthandoff: 12/21/2017
   
 ## <a name="syntax"></a>Sözdizimi  
  *depolama sınıfı tanımlayıcısı*:  
- `__declspec`( *genişletilmiş-decl-değiştirici-seq* ) / * Microsoft Specific\*/  
+ `__declspec` ( *genişletilmiş-decl-değiştirici-seq* ) / * Microsoft Specific \*/  
   
- *Genişletilmiş-decl-değiştirici-seq*:  
+ *extended-decl-modifier-seq*:  
  *Genişletilmiş decl-değiştirici* iptal et  
   
  *Genişletilmiş-decl-değiştirici-seq genişletilmiş decl-değiştirici*  

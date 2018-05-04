@@ -1,27 +1,22 @@
 ---
 title: Özellik sayfası (ATL Eğitmeni, Bölüm 6) ekleme | Microsoft Docs
-ms.custom: ''
+ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: df80d255-e7ea-49d9-b940-3f012e90cf9b
-caps.latest.revision: 15
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 067c5d662fee3838a33a3b53fd5dab2946ab50cf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bf7f0383697fbc1e23e179936a2616d1d236b5f2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="adding-a-property-page-atl-tutorial-part-6"></a>Özellik Sayfası Ekleme (ATL Eğitmeni, Bölüm 6)
 Özellik sayfaları izin vermeniz gerekirse paylaşılan ayrı COM nesneleri uygulanır. Bu adımda, bir özellik sayfası denetimine eklemek için aşağıdaki görevleri yapar:  
@@ -104,7 +99,7 @@ ms.lasthandoff: 12/21/2017
   
  Kod artık bu ayar denetler `Sides` gerçekten çalışılan özelliği. Başarısız olursa, kod hata ayrıntılarını görüntüleme bir ileti kutusu görüntüler **IErrorInfo** arabirimi. Genellikle, bir nesne için bir kapsayıcı ister **ISupportErrorInfo** arabirimi ve çağrıları `InterfaceSupportsErrorInfo` nesne ayarı hata bilgilerini destekleyip desteklemediğini belirlemek için öncelikle,. Bu görev atlayabilirsiniz.  
   
- [CComPtr](../atl/reference/ccomptr-class.md) çağrısı gerek yoktur başvuru sayımı otomatik olarak işleyerek yardımcı `Release` arabirimde. `CComBSTR`sizinle yardımcı `BSTR` son gerçekleştirmek zorunda değil, işleme `SysFreeString` çağırın. Dönüştürme ayrıca çeşitli dize dönüştürme sınıflarından birini kullanmanız `BSTR` gerekirse (nedeni budur `USES_CONVERSION` makrosu işlevi başlangıcında olduğu).  
+ [CComPtr](../atl/reference/ccomptr-class.md) çağrısı gerek yoktur başvuru sayımı otomatik olarak işleyerek yardımcı `Release` arabirimde. `CComBSTR` sizinle yardımcı `BSTR` son gerçekleştirmek zorunda değil, işleme `SysFreeString` çağırın. Dönüştürme ayrıca çeşitli dize dönüştürme sınıflarından birini kullanmanız `BSTR` gerekirse (nedeni budur `USES_CONVERSION` makrosu işlevi başlangıcında olduğu).  
   
  Belirtmek için özellik sayfasının kirli bayrağının ayarlanması gerekir **Uygula** düğmesi etkinleştirilmesi gerekir. Bu kullanıcı değeri değiştirdiğinde oluşur **kenara** düzenleme kutusu.  
   
@@ -126,7 +121,7 @@ ms.lasthandoff: 12/21/2017
   
      [!code-cpp[NVC_ATL_Windowing#59](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_2.cpp)]  
   
- `OnEnChangeSides`ne zaman çağrılacağı bir **WM_COMMAND** iletinin gönderildiği ile **EN_CHANGE** bildirimi `IDC_SIDES` denetim. `OnEnChangeSides`Daha sonra çağırır `SetDirty` ve geçirir `TRUE` özelliği belirtmek için sayfa şimdi kirli ve **Uygula** düğmesi etkinleştirilmesi gerekir.  
+ `OnEnChangeSides` ne zaman çağrılacağı bir **WM_COMMAND** iletinin gönderildiği ile **EN_CHANGE** bildirimi `IDC_SIDES` denetim. `OnEnChangeSides` Daha sonra çağırır `SetDirty` ve geçirir `TRUE` özelliği belirtmek için sayfa şimdi kirli ve **Uygula** düğmesi etkinleştirilmesi gerekir.  
   
 ## <a name="adding-the-property-page-to-the-control"></a>Denetime özellik sayfası ekleme  
  Projenizde birden çok denetim olabilir çünkü ATL ekleme sınıfı Sihirbazı'nı ve ATL Özellik Sayfası Sihirbazı'nı özellik sayfası denetiminize sizin için otomatik olarak eklemeyin. Denetimin özellik eşlemesi için bir giriş eklemeniz gerekir.  
@@ -152,7 +147,7 @@ ms.lasthandoff: 12/21/2017
   
  Ardından, bir Web sayfası denetiminizde sokar.  
   
- [5. adım dön](../atl/adding-an-event-atl-tutorial-part-5.md) &#124; [Adım 7'yi açın](../atl/putting-the-control-on-a-web-page-atl-tutorial-part-7.md)  
+ [5. adım dön](../atl/adding-an-event-atl-tutorial-part-5.md) &#124; [adıma 7](../atl/putting-the-control-on-a-web-page-atl-tutorial-part-7.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Öğretici](../atl/active-template-library-atl-tutorial.md)

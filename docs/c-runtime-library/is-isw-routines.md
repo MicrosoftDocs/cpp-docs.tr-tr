@@ -1,13 +1,10 @@
 ---
 title: is, isw rutinleri | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apilocation:
 - msvcr110_clr0400.dll
 - msvcr90.dll
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - is routines
 - isw routines
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa1cc76bf925a334b78e5f15565c089081cfe9d1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 46062043959c3ea525273e8bcf1a4112a0f42a67
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="is-isw-routines"></a>is, isw Rutinleri
 |||  
@@ -111,10 +106,10 @@ ms.lasthandoff: 12/21/2017
  İçin **isw** yordamları, belirtilen koşulu test sonucu yerel bağımsız. Test koşulları için **isw** işlevleri aşağıdaki gibidir:  
   
  `iswalnum`  
- `iswalpha`veya `iswdigit`.  
+ `iswalpha` veya `iswdigit`.  
   
  `iswalpha`  
- Bir uygulama tanımlı kümesi için hangi hiçbiri biri olan herhangi bir geniş karakter `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace` sıfır olmayan bir değer değil. `iswalpha`geniş karakterler için sıfır olmayan döndüğü `iswupper` veya `iswlower` sıfır olmayan bir değer değil.  
+ Bir uygulama tanımlı kümesi için hangi hiçbiri biri olan herhangi bir geniş karakter `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace` sıfır olmayan bir değer değil. `iswalpha` geniş karakterler için sıfır olmayan döndüğü `iswupper` veya `iswlower` sıfır olmayan bir değer değil.  
   
  `iswascii`  
  ASCII karakter joker karakter gösterimini (0x0000 - 0x007F).  
@@ -140,13 +135,13 @@ ms.lasthandoff: 12/21/2017
 |Değeri *desc* bağımsız değişken|iswctype ( *c desc* ) eşdeğer|  
 |------------------------------|----------------------------------------|  
 |**_ALPHA**|**iswalpha (** `c` **)**|  
-|**_ALPHA** &#124; **_DIGIT**|**iswalnum (** `c` **)**|  
+|**_ALPHA** &AMP;#124; **_DIGIT**|**iswalnum (** `c` **)**|  
 |**_BLANK**|**iswblank (** `c` **)**|  
 |**_CONTROL**|**iswcntrl (** `c` **)**|  
 |**_DIGIT**|**iswdigit (** `c` **)**|  
-|**_ALPHA** &#124; **_DIGIT** &#124; **_PUNCT**|**iswgraph (** `c` **)**|  
+|**_ALPHA** &AMP;#124; **_DIGIT** &AMP;#124; **_PUNCT**|**iswgraph (** `c` **)**|  
 |**_LOWER**|**iswlower (** `c` **)**|  
-|**_ALPHA** &#124; **_BLANK** &#124; **_DIGIT** &#124; **_PUNCT**|**iswprint (** `c` **)**|  
+|**_ALPHA** &AMP;#124; **_BLANK** &AMP;#124; **_DIGIT** &AMP;#124; **_PUNCT**|**iswprint (** `c` **)**|  
 |**_PUNCT**|**iswpunct (** `c` **)**|  
 |**_BLANK**|**iswblank (** `c` **)**|  
 |**_SPACE**|**iswspace (** `c` **)**|  
@@ -160,7 +155,7 @@ ms.lasthandoff: 12/21/2017
  Geniş karakter alanı dışında yazdırılabilir geniş karakter (M ' ').  
   
  `iswlower`  
- Küçük harf veya uluslararası karakter hangi hiçbiri için uygulama tanımlı kümesi biri `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace` sıfır olmayan bir değer değil. `iswlower`küçük harfe karşılık gelen geniş karakterler için sıfır olmayan bir değer döndürür.  
+ Küçük harf veya uluslararası karakter hangi hiçbiri için uygulama tanımlı kümesi biri `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace` sıfır olmayan bir değer değil. `iswlower` küçük harfe karşılık gelen geniş karakterler için sıfır olmayan bir değer döndürür.  
   
  `iswprint`  
  Geniş karakter boşluk dahil olmak üzere yazdırılabilir geniş karakter (M ' ').  
@@ -172,7 +167,7 @@ ms.lasthandoff: 12/21/2017
  Geniş karakter, standart boşluk karakteri karşılık gelen veya uygulama tanımlı olduğu için geniş karakter kümesi biri `iswalnum` false olur. Standart boşluk karakterleri şunlardır: boşluk (M ' '), form besleme (M '\f'), satır başı karakteri (M '\n'), satır başı (M '\r'), yatay sekme (M '\t') ve dikey sekme (M '\v').  
   
  `iswupper`  
- Geniş karakter, büyük harf veya uluslararası karakterler hangi hiçbiri için uygulama tarafından tanımlanan bir dizi biri `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace` sıfır olmayan bir değer değil. `iswupper`büyük harf karakterler karşılık gelen geniş karakterler için sıfır olmayan bir değer döndürür.  
+ Geniş karakter, büyük harf veya uluslararası karakterler hangi hiçbiri için uygulama tarafından tanımlanan bir dizi biri `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace` sıfır olmayan bir değer değil. `iswupper` büyük harf karakterler karşılık gelen geniş karakterler için sıfır olmayan bir değer döndürür.  
   
  `iswxdigit`  
  Onaltılık basamaklı karakterine karşılık gelen geniş karakter.  

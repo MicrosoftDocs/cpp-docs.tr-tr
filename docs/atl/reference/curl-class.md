@@ -1,12 +1,9 @@
 ---
-title: "Sınıf cUrl | Microsoft Docs"
-ms.custom: 
+title: Sınıf cUrl | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CUrl
@@ -44,17 +41,15 @@ dev_langs:
 helpviewer_keywords:
 - CUrl class
 ms.assetid: b3894d34-47b9-4961-9719-4197153793da
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb60fcef5fdfd30b4121f5c2277667829772dcd6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: afb0f7abc079d699cfcf682356b88b9cc8aa2bb9
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="curl-class"></a>CUrl sınıfı
 Bu sınıf, bir URL temsil eder. URL diğer bağımsız olarak her öğenin var olan bir URL Ayrıştırma olup olmadığını denetlemek tanır dize ya da sıfırdan bir dize oluşturma.  
@@ -116,7 +111,7 @@ class CUrl
 |[CUrl::operator =](#operator_eq)|Belirtilen atar `CUrl` geçerli nesne `CUrl` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CUrl`yol veya bağlantı noktası numarası gibi bir URL alanlarının yönetmenize olanak sağlar. `CUrl`aşağıdaki biçimde URL'lerini anlar:  
+ `CUrl` yol veya bağlantı noktası numarası gibi bir URL alanlarının yönetmenize olanak sağlar. `CUrl` aşağıdaki biçimde URL'lerini anlar:  
   
  \<Düzen > ://\<kullanıcı adı >:\<parola > @\<ana bilgisayar adı >:\<BağlantıNoktasıNumarası > /\<UrlPath >\<ExtraInfo >  
   
@@ -145,7 +140,7 @@ class CUrl
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlutil.h  
   
-##  <a name="canonicalize"></a>CUrl::Canonicalize  
+##  <a name="canonicalize"></a>  CUrl::Canonicalize  
  URL dizesi için kurallı biçimi dönüştürmek için bu yöntemi çağırın.  
   
 ```
@@ -154,7 +149,7 @@ inline BOOL Canonicalize(DWORD dwFlags = 0) throw();
   
 ### <a name="parameters"></a>Parametreler  
  `dwFlags`  
- Standartlaştırma denetim bayrakları. Bayrak belirtilmezse, ( `dwFlags` = 0), tüm güvenli olmayan karakter ve meta sıraları yöntemi dönüştürür (gibi \\., \.., ve \\...) kaçınmak için serileri. `dwFlags`Aşağıdaki değerlerden biri olabilir:  
+ Standartlaştırma denetim bayrakları. Bayrak belirtilmezse, ( `dwFlags` = 0), tüm güvenli olmayan karakter ve meta sıraları yöntemi dönüştürür (gibi \\., \.., ve \\...) kaçınmak için serileri. `dwFlags` Aşağıdaki değerlerden biri olabilir:  
   
 -   ATL_URL_BROWSER_MODE: Bırakmaz kodlamak veya karakter kod çözme sonra "#" veya "" ve sonunda boşluk sonra kaldırmaz "". Bu değer belirtilmezse, tüm URL kodlanmış ve sonunda boşluk kaldırılır.  
   
@@ -174,14 +169,14 @@ inline BOOL Canonicalize(DWORD dwFlags = 0) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Kurallı biçimi dönüştürme güvenli olmayan karakterler ve boşluklar kaçış dizilerine dönüştürme içerir.  
   
-##  <a name="clear"></a>CUrl::Clear  
+##  <a name="clear"></a>  CUrl::Clear  
  URL alanların tümünü temizlemek için bu yöntemi çağırın.  
   
 ```
 inline void Clear() throw();
 ```  
   
-##  <a name="crackurl"></a>CUrl::CrackUrl  
+##  <a name="crackurl"></a>  CUrl::CrackUrl  
  Kod çözme ve URL ayrıştırmak için bu yöntemi çağırın.  
   
 ```
@@ -198,7 +193,7 @@ BOOL CrackUrl(LPCTSTR lpszUrl, DWORD dwFlags = 0) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa TRUE döndürür başarısız olduğunda FALSE.  
   
-##  <a name="createurl"></a>CUrl::CreateUrl  
+##  <a name="createurl"></a>  CUrl::CreateUrl  
  Bu yöntem bir CUrl nesnesinin bileşen alanlarından URL dizesi oluşturur.  
   
 ```
@@ -233,7 +228,7 @@ inline BOOL CreateUrl(
   
  [!code-cpp[NVC_ATL_Utilities#133](../../atl/codesnippet/cpp/curl-class_1.cpp)]  
   
-##  <a name="curl"></a>CUrl::CUrl  
+##  <a name="curl"></a>  CUrl::CUrl  
  Oluşturucu.  
   
 ```
@@ -245,14 +240,14 @@ CUrl(const CUrl& urlThat) throw();
  `urlThat`  
  `CUrl` URL oluşturmak için kopyalamak için nesne.  
   
-##  <a name="dtor"></a>CUrl:: ~ CUrl  
+##  <a name="dtor"></a>  CUrl:: ~ CUrl  
  Yok Edicisi.  
   
 ```
 ~CUrl() throw();
 ```  
   
-##  <a name="getextrainfo"></a>CUrl::GetExtraInfo  
+##  <a name="getextrainfo"></a>  CUrl::GetExtraInfo  
  Ek bilgi almak için bu yöntemi çağırın (gibi *metin* veya # *metin*) URL'den.  
   
 ```
@@ -262,7 +257,7 @@ inline LPCTSTR GetExtraInfo() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Ek bilgi içeren bir dize döndürür.  
   
-##  <a name="getextrainfolength"></a>CUrl::GetExtraInfoLength  
+##  <a name="getextrainfolength"></a>  CUrl::GetExtraInfoLength  
  Ek bilgi uzunluğu almak için bu yöntemi çağırın (gibi *metin* veya # *metin*) URL'den alınamadı.  
   
 ```
@@ -272,7 +267,7 @@ inline DWORD GetExtraInfoLength() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Ek bilgi içeren dize uzunluğunu döndürür.  
   
-##  <a name="gethostname"></a>CUrl::GetHostName  
+##  <a name="gethostname"></a>  CUrl::GetHostName  
  URL'den ana bilgisayar adını almak için bu yöntemi çağırın.  
   
 ```
@@ -282,7 +277,7 @@ inline LPCTSTR GetHostName() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Ana bilgisayar adını döndürür.  
   
-##  <a name="gethostnamelength"></a>CUrl::GetHostNameLength  
+##  <a name="gethostnamelength"></a>  CUrl::GetHostNameLength  
  Ana bilgisayar adı uzunluğu almak için bu yöntemi çağırın.  
   
 ```
@@ -292,7 +287,7 @@ inline DWORD GetHostNameLength() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Ana bilgisayar adı uzunluğu döndürür.  
   
-##  <a name="getpassword"></a>CUrl::GetPassword  
+##  <a name="getpassword"></a>  CUrl::GetPassword  
  URL'den parola almak için bu yöntemi çağırın.  
   
 ```
@@ -302,7 +297,7 @@ inline LPCTSTR GetPassword() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Parolayı döndürür.  
   
-##  <a name="getpasswordlength"></a>CUrl::GetPasswordLength  
+##  <a name="getpasswordlength"></a>  CUrl::GetPasswordLength  
  Parola uzunluğu almak için bu yöntemi çağırın.  
   
 ```
@@ -312,7 +307,7 @@ inline DWORD GetPasswordLength() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Parola uzunluğu döndürür.  
   
-##  <a name="getportnumber"></a>CUrl::GetPortNumber  
+##  <a name="getportnumber"></a>  CUrl::GetPortNumber  
  Bağlantı noktası numarasını almak için bu yöntemi çağırın.  
   
 ```
@@ -322,7 +317,7 @@ inline ATL_URL_PORT GetPortNumber() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağlantı noktası numarasını döndürür.  
   
-##  <a name="getscheme"></a>CUrl::GetScheme  
+##  <a name="getscheme"></a>  CUrl::GetScheme  
  URL şeması almak için bu yöntemi çağırın.  
   
 ```
@@ -332,7 +327,7 @@ inline ATL_URL_SCHEME GetScheme() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür [ATL_URL_SCHEME](atl-url-scheme-enum.md) URL şeması açıklayan değeri.  
   
-##  <a name="getschemename"></a>CUrl::GetSchemeName  
+##  <a name="getschemename"></a>  CUrl::GetSchemeName  
  URL şeması adı almak için bu yöntemi çağırın.  
   
 ```
@@ -342,7 +337,7 @@ inline LPCTSTR GetSchemeName() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  URL şeması adı (örneğin, "http" veya "ftp") döndürür.  
   
-##  <a name="getschemenamelength"></a>CUrl::GetSchemeNameLength  
+##  <a name="getschemenamelength"></a>  CUrl::GetSchemeNameLength  
  URL şeması adının uzunluğu almak için bu yöntemi çağırın.  
   
 ```
@@ -352,7 +347,7 @@ inline DWORD GetSchemeNameLength() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  URL şeması adı uzunluğu döndürür.  
   
-##  <a name="geturllength"></a>CUrl::GetUrlLength  
+##  <a name="geturllength"></a>  CUrl::GetUrlLength  
  URL uzunluğu almak için bu yöntemi çağırın.  
   
 ```
@@ -362,7 +357,7 @@ inline DWORD GetUrlLength() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  URL uzunluğu döndürür.  
   
-##  <a name="geturlpath"></a>CUrl::GetUrlPath  
+##  <a name="geturlpath"></a>  CUrl::GetUrlPath  
  URL yolunu almak için bu yöntemi çağırın.  
   
 ```
@@ -372,7 +367,7 @@ inline LPCTSTR GetUrlPath() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  URL yolunu döndürür.  
   
-##  <a name="geturlpathlength"></a>CUrl::GetUrlPathLength  
+##  <a name="geturlpathlength"></a>  CUrl::GetUrlPathLength  
  URL yolu uzunluğu almak için bu yöntemi çağırın.  
   
 ```
@@ -382,7 +377,7 @@ inline DWORD GetUrlPathLength() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  URL yolu uzunluğu döndürür.  
   
-##  <a name="getusername"></a>CUrl::GetUserName  
+##  <a name="getusername"></a>  CUrl::GetUserName  
  URL'SİNDEN kullanıcı adını almak için bu yöntemi çağırın.  
   
 ```
@@ -392,7 +387,7 @@ inline LPCTSTR GetUserName() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Kullanıcı adını döndürür.  
   
-##  <a name="getusernamelength"></a>CUrl::GetUserNameLength  
+##  <a name="getusernamelength"></a>  CUrl::GetUserNameLength  
  Kullanıcı adının uzunluğu almak için bu yöntemi çağırın.  
   
 ```
@@ -402,7 +397,7 @@ inline DWORD GetUserNameLength() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Kullanıcı adının uzunluğu döndürür.  
   
-##  <a name="operator_eq"></a>CUrl::operator =  
+##  <a name="operator_eq"></a>  CUrl::operator =  
  Belirtilen atar `CUrl` geçerli nesne `CUrl` nesne.  
   
 ```
@@ -416,7 +411,7 @@ CUrl& operator= (const CUrl& urlThat) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli nesne için bir başvuru döndürür.  
   
-##  <a name="setextrainfo"></a>CUrl::SetExtraInfo  
+##  <a name="setextrainfo"></a>  CUrl::SetExtraInfo  
  Ek bilgi için bu yöntemi çağırın (gibi *metin* veya # *metin*) URL'si.  
   
 ```
@@ -430,7 +425,7 @@ inline BOOL SetExtraInfo(LPCTSTR lpszInfo) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa TRUE döndürür başarısız olduğunda FALSE.  
   
-##  <a name="sethostname"></a>CUrl::SetHostName  
+##  <a name="sethostname"></a>  CUrl::SetHostName  
  Ana bilgisayar adı ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -444,7 +439,7 @@ inline BOOL SetHostName(LPCTSTR lpszHost) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa TRUE döndürür başarısız olduğunda FALSE.  
   
-##  <a name="setpassword"></a>CUrl::SetPassword  
+##  <a name="setpassword"></a>  CUrl::SetPassword  
  Parolayı ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -458,7 +453,7 @@ inline BOOL SetPassword(LPCTSTR lpszPass) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa TRUE döndürür başarısız olduğunda FALSE.  
   
-##  <a name="setportnumber"></a>CUrl::SetPortNumber  
+##  <a name="setportnumber"></a>  CUrl::SetPortNumber  
  Bağlantı noktası numarasını ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -472,7 +467,7 @@ inline BOOL SetPortNumber(ATL_URL_PORT nPrt) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa TRUE döndürür başarısız olduğunda FALSE.  
   
-##  <a name="setscheme"></a>CUrl::SetScheme  
+##  <a name="setscheme"></a>  CUrl::SetScheme  
  URL şeması ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -489,7 +484,7 @@ inline BOOL SetScheme(ATL_URL_SCHEME nScheme) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Ada göre düzeni de ayarlayabilirsiniz (bkz [CUrl::SetSchemeName](#setschemename)).  
   
-##  <a name="setschemename"></a>CUrl::SetSchemeName  
+##  <a name="setschemename"></a>  CUrl::SetSchemeName  
  URL şeması adı ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -506,7 +501,7 @@ inline BOOL SetSchemeName(LPCTSTR lpszSchm) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Kullanarak düzeni ayarlayabilirsiniz bir [ATL_URL_SCHEME](atl-url-scheme-enum.md) sabit (bkz [CUrl::SetScheme](#setscheme)).  
   
-##  <a name="seturlpath"></a>CUrl::SetUrlPath  
+##  <a name="seturlpath"></a>  CUrl::SetUrlPath  
  URL yolunu ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -520,7 +515,7 @@ inline BOOL SetUrlPath(LPCTSTR lpszPath) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa TRUE döndürür başarısız olduğunda FALSE.  
   
-##  <a name="setusername"></a>CUrl::SetUserName  
+##  <a name="setusername"></a>  CUrl::SetUserName  
  Kullanıcı adı ayarlamak için bu yöntemi çağırın.  
   
 ```

@@ -1,12 +1,9 @@
 ---
-title: "_bstr_t ilişkisel işleçleri | Microsoft Docs"
-ms.custom: 
+title: _bstr_t ilişkisel işleçleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - _bstr_t::operator>
@@ -38,17 +35,15 @@ helpviewer_keywords:
 - operator < [C++], bstr
 - operator > [C++], bstr
 ms.assetid: e153da72-37c3-4d8a-b8eb-730d65da64dd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 474485258c69f55c957cbdde43900965f1e99c9d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 556a56de97c6e1b547b9a67387acfcdd3205913c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="bstrt-relational-operators"></a>_bstr_t İlişkisel İşleçleri
 **Microsoft özel**  

@@ -1,13 +1,10 @@
 ---
-title: "__Declspec(dllexport) kullanarak DLL'den dışarı aktarma | Microsoft Docs"
-ms.custom: 
+title: __Declspec(dllexport) kullanarak DLL'den dışarı aktarma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - dllexport
 - __declspec
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - export directives [C++]
 - exporting DLLs [C++], __declspec(dllexport) keyword
 ms.assetid: a35e25e8-7263-4a04-bad4-00b284458679
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51f20e47724a6d32dad014fbaf025cd283112c54
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e6ab1d11c117c75633ce4ab836965449c4cc6ca1
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="exporting-from-a-dll-using-declspecdllexport"></a>__declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
 Sunulan Microsoft **__declspec(dllexport)** dışarı aktarma adlarını otomatik olarak oluşturmak ve bunları bir .lib dosyasında yerleştirmek derleyici izin vermek için Visual C++ 16 bit derleyici sürümünde. Bu .lib dosya daha sonra yalnızca statik .lib gibi DLL ile bağlamak için kullanılabilir.  
@@ -54,7 +49,7 @@ class __declspec(dllexport) CExampleExport : public CObject
 ```  
   
 > [!NOTE]
->  `__declspec(dllexport)`bir işlev uygulanamaz `__clrcall` çağırma.  
+>  `__declspec(dllexport)` bir işlev uygulanamaz `__clrcall` çağırma.  
   
  DLL dosyanızı oluştururken, genellikle işlev prototipleri ve/veya veriyorsanız ve ekleme sınıfları içeren bir üst bilgi dosyası oluştur **__declspec(dllexport)** üstbilgi dosyası bildirimler için. Kodunuzu daha okunabilir hale getirmek için makro tanımlamak **__declspec(dllexport)** ve verdiğiniz her simgesiyle makrosu kullanın:  
   

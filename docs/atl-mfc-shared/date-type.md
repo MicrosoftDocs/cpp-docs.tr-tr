@@ -1,12 +1,9 @@
 ---
-title: "Tarih türü | Microsoft Docs"
-ms.custom: 
+title: Tarih türü | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - DATE
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - MFC, date and time
 - hour values representation
 ms.assetid: 695853ed-b614-4575-b793-b8c287372038
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f1ed7eb2b467fd52545f65f98b87e8e34ad71f3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5aafed046fa5724442e30014aa5634542de0f4aa
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="date-type"></a>Tarih türü
 **Tarih** türü, 8-bayt kayan noktalı sayı kullanılarak gerçekleştirilir. Gün, 30 Aralık 1899, gece saat sıfır olarak başlayarak tamsayı artışlarla temsil edilir. Saat değerleri sayının kesirli kısmını mutlak değeri olarak ifade edilir. Aşağıdaki tabloda çeşitli tarihleri ile birlikte gösterilmektedir kendi **tarih** türü sayısal eşdeğer:  

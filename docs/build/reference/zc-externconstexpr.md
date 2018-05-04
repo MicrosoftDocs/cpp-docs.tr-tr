@@ -1,10 +1,10 @@
 ---
-title: /Zc:externConstexpr (Enable extern constexpr variables) | Microsoft Docs
-ms.custom: 
+title: /ZC:externConstexpr (etkinleştir extern constexpr değişkenler) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/28/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /Zc:externConstexpr
 dev_langs:
@@ -15,16 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4da5e33a-2e4d-4ed2-8616-bd8f43265c27
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6597bc96609ab051df56886ccc580516986f97ed
-ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
+ms.openlocfilehash: 0cbce8366fdd7be62c8d71f838b298d77849dcdf
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="zcexternconstexpr-enable-extern-constexpr-variables"></a>/Zc:externConstexpr (Enable extern constexpr variables)
+# <a name="zcexternconstexpr-enable-extern-constexpr-variables"></a>/ZC:externConstexpr (etkinleştir extern constexpr değişkenler)
 
 **/Zc:externConstexpr** derleyici seçeneği söyler C++ standardına uygun ve dış bağlantı için izin vermek için derleyici `constexpr` değişkenleri. Varsayılan olarak, Visual Studio her zaman sağlayan bir `constexpr` değişken iç bağlantı, belirttiğiniz olsa bile `extern` anahtar sözcüğü.
 

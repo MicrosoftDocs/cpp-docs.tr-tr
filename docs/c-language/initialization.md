@@ -1,13 +1,10 @@
 ---
-title: "Başlatma | Microsoft Docs"
-ms.custom: 
+title: Başlatma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - initializing variables
 - initializers
 ms.assetid: f009ee12-3df6-4260-b7e4-a6149ebb95aa
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81b4414d663e24ac0e5186ef7722c313b2755950
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 699b21eff62c0014ec1b0da51a620bdab2f32281
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="initialization"></a>Başlatma
 Bir "başlatıcı" bir değer veya bildirilen değişkenine atanan değerleri dizisi değil. Değişken bildiriminde bildirimcisi bir başlatıcı uygulayarak bir değişken için bir başlangıç değeri ayarlayabilirsiniz. Değer veya değerlerini Başlatıcı değişkene atanır.  

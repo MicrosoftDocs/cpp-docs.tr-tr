@@ -1,13 +1,10 @@
 ---
 title: LoadLibrary ve AfxLoadLibrary | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - LoadLibrary
 dev_langs:
@@ -19,26 +16,24 @@ helpviewer_keywords:
 - LoadLibrary method
 - explicit linking [C++]
 ms.assetid: b4535d19-6243-4146-a31a-a5cca4c7c9e3
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd24f125398cab606ca835094727a4a2819fb17e
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: bc4e211259e6c0a483f73094c442c034cd649616
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="loadlibrary-and-afxloadlibrary"></a>LoadLibrary ve AfxLoadLibrary
 İşler çağrısı [LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187) (veya [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) açıkça bir DLL'e bağlanmak için. İşlev başarılı olursa, belirtilen DLL çağırma işlemi adres alanına eşler ve diğer işlevleri açıkça bağlamada ile kullanılan DLL için bir işleyici döner — Örneğin, `GetProcAddress` ve `FreeLibrary`.  
   
- `LoadLibrary`örtük olarak bağlama için kullanılanla aynı arama sırasını kullanarak DLL bulmaya çalışır. Sistem DLL'yi bulamazsa veya giriş noktası işlevi FALSE döndürürse `LoadLibrary` NULL döndürür. Varsa çağrısı `LoadLibrary` arama işlemi adres alanına zaten eşleştirilmiş bir DLL modülü belirtir işlevi bir tanıtıcı artırır ve DLL modülü başvurusu sayısını döndürür.  
+ `LoadLibrary` örtük olarak bağlama için kullanılanla aynı arama sırasını kullanarak DLL bulmaya çalışır. Sistem DLL'yi bulamazsa veya giriş noktası işlevi FALSE döndürürse `LoadLibrary` NULL döndürür. Varsa çağrısı `LoadLibrary` arama işlemi adres alanına zaten eşleştirilmiş bir DLL modülü belirtir işlevi bir tanıtıcı artırır ve DLL modülü başvurusu sayısını döndürür.  
   
  DLL bir giriş noktası işlevi varsa işletim sistemi çağıran iş parçacığının bağlamında işlevi çağırır `LoadLibrary`. DLL, önceki çağrısı nedeniyle işleme zaten bağlıysa, giriş noktası işlevi çağrılmaz `LoadLibrary` karşılık gelen hiçbir çağrısına sahip `FreeLibrary` işlevi.  
   
- MFC uzantı DLL'leri yükleme MFC uygulamaları için kullanmanızı öneririz `AfxLoadLibrary` yerine `LoadLibrary`. `AfxLoadLibrary`işler iş parçacığı eşitleme çağırmadan önce `LoadLibrary`. (İşlev prototipi) arabirimine `AfxLoadLibrary` aynı `LoadLibrary`.  
+ MFC uzantı DLL'leri yükleme MFC uygulamaları için kullanmanızı öneririz `AfxLoadLibrary` yerine `LoadLibrary`. `AfxLoadLibrary` işler iş parçacığı eşitleme çağırmadan önce `LoadLibrary`. (İşlev prototipi) arabirimine `AfxLoadLibrary` aynı `LoadLibrary`.  
   
  Windows DLL yüklenemiyorsa, işlem hatadan kurtarmak deneyebilirsiniz. Örneğin, işlem hata kullanıcıya bildirmek ve dll Dosyasının başka bir yolu belirtmesini isteyin.  
   

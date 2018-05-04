@@ -1,13 +1,10 @@
 ---
 title: outp, outpw | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - outpw
 - outp
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - outpw function
 - outp function
 ms.assetid: ab29dc04-e440-4c3f-83b1-420e65b5df75
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 524db35a43eb7b9bf6c7a5a7b3e37a7fc28e05c7
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: d34557d11cf572f167ecc3f334b7432cb772f29d
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="outp-outpw"></a>outp, outpw
 Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumluluğunu kullanmak [_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md) yerine.  

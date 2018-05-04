@@ -1,13 +1,10 @@
 ---
-title: "Nasıl yapılır: özel araçlarla proje özelliklerini tümleştirme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: özel araçlarla proje özelliklerini tümleştirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 04/27/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msbuild.cpp.howto.integratecustomtools
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - 'msbuild (c++), howto: integrate custom tools'
 ms.assetid: f32d91a4-44e9-4de3-aa9a-1c7f709ad2ee
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a762fc573953bcfb09180b9b830b761448d87a0d
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 00482aa2b4b700d15e46d0741e76dd17afc28419
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-integrate-custom-tools-into-the-project-properties"></a>Nasıl Yapılır: Özel Araçlarla Proje Özelliklerini Tümleştirme
 Visual Studio özel araç seçenekleri ekleyebilirsiniz **özellik sayfaları** bir temel alınan XML şema dosyası oluşturarak penceresi.  

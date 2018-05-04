@@ -2,11 +2,8 @@
 title: ASİNH, asinhf, asinhl | Microsoft Docs
 ms.custom: ''
 ms.date: 04/05/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - asinh
@@ -38,14 +35,13 @@ helpviewer_keywords:
 ms.assetid: 4488babe-1a7e-44ca-8b7b-c2db0a70084f
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50cd387f2c943d407dd11fe2e191457314f5cba9
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 1387e44b885d0f1ed58113b87d26ba5928768c18
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="asinh-asinhf-asinhl"></a>asinh, asinhf, asinhl
 
@@ -122,6 +118,6 @@ asinh( 0.868671 ) = 0.785398
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
 [atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[COSH, coshf, coshl](cosh-coshf-coshl.md)<br/>
-[SİNH, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
-[TANH, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>
+[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
+[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
+[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>

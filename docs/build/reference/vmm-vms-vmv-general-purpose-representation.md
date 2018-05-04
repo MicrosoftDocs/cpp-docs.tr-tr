@@ -1,13 +1,10 @@
 ---
-title: "-vmm, - vms, - vmv (genel amaçlı temsil) | Microsoft Docs"
-ms.custom: 
+title: -vmm, - vms, - vmv (genel amaçlı temsil) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /vms
 - /vmm
@@ -28,17 +25,15 @@ helpviewer_keywords:
 - Single Inheritance compiler option
 - -vmv compiler option [C++]
 ms.assetid: 0fcd7ae0-3031-4c62-a2a8-e154c8685dae
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d54ea3cabbbe631006cc22a80fdbf500585ff20f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dd2f79238c890d43678332203acbe9d935a54102
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="vmm-vms-vmv-general-purpose-representation"></a>/vmm, /vms, /vmv (Genel Amaçlı Temsil)
 Kullanılabilir [/vmb, / vmg (temsil yöntemi)](../../build/reference/vmb-vmg-representation-method.md) olarak seçilen [temsil yöntemi](../../build/reference/vmb-vmg-representation-method.md). Bu seçenekler henüz karşılaştı sınıf tanımının devralma modeli belirtin.  
@@ -56,11 +51,11 @@ Kullanılabilir [/vmb, / vmg (temsil yöntemi)](../../build/reference/vmb-vmg-re
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|**/ VMM**|Birden çok devralma kullandığı için bir sınıf üyesi için bir işaretçi en genel gösterimi belirtir.<br /><br /> Karşılık gelen [devralma anahtar sözcüğü](../../cpp/inheritance-keywords.md) ve bağımsız değişkeni [#pragma pointers_to_members](../../preprocessor/pointers-to-members.md) olan **birden çok devralma**.<br /><br /> Bu gösterim tek devralma için gereken daha büyük.<br /><br /> Devralma modeli üyesi için bir işaretçi bildirilmedi sınıf tanımı sanal ise derleyici bir hata oluşturur.|  
+|**/vmm**|Birden çok devralma kullandığı için bir sınıf üyesi için bir işaretçi en genel gösterimi belirtir.<br /><br /> Karşılık gelen [devralma anahtar sözcüğü](../../cpp/inheritance-keywords.md) ve bağımsız değişkeni [#pragma pointers_to_members](../../preprocessor/pointers-to-members.md) olan **birden çok devralma**.<br /><br /> Bu gösterim tek devralma için gereken daha büyük.<br /><br /> Devralma modeli üyesi için bir işaretçi bildirilmedi sınıf tanımı sanal ise derleyici bir hata oluşturur.|  
 |**/ VMs**|Hiçbir devralma veya tek devralma kullandığı için bir sınıf üyesi için bir işaretçi en genel gösterimi belirtir.<br /><br /> Karşılık gelen [devralma anahtar sözcüğü](../../cpp/inheritance-keywords.md) ve bağımsız değişkeni [#pragma pointers_to_members](../../preprocessor/pointers-to-members.md) olan **single_inheritance**.<br /><br /> Bu sınıf üyesi için bir işaretçi en küçük olası gösterimidir.<br /><br /> Üye için bir işaretçi olarak bildirilen bir sınıf tanımı devralma modelinin birden çok ise veya sanal derleyici bir hata oluşturur.|  
-|**/ vmv**|Sanal devralma kullandığı için bir sınıf üyesi için bir işaretçi en genel gösterimi belirtir. Hiçbir zaman bir hataya neden olur ve varsayılandır.<br /><br /> Karşılık gelen [devralma anahtar sözcüğü](../../cpp/inheritance-keywords.md) ve bağımsız değişkeni [#pragma pointers_to_members](../../preprocessor/pointers-to-members.md) olan **virtual_inheritance**.<br /><br /> Bu seçenek büyük işaretçi ve diğer seçenekleri işaretçiden yorumlamak için ek kod gerektirir.|  
+|**/vmv**|Sanal devralma kullandığı için bir sınıf üyesi için bir işaretçi en genel gösterimi belirtir. Hiçbir zaman bir hataya neden olur ve varsayılandır.<br /><br /> Karşılık gelen [devralma anahtar sözcüğü](../../cpp/inheritance-keywords.md) ve bağımsız değişkeni [#pragma pointers_to_members](../../preprocessor/pointers-to-members.md) olan **virtual_inheritance**.<br /><br /> Bu seçenek büyük işaretçi ve diğer seçenekleri işaretçiden yorumlamak için ek kod gerektirir.|  
   
- Bu devralma modeli seçeneklerden birini belirttiğinizde, bu model tüm devralma tipine veya işaretçinin önce veya bildirilmiş sınıfı sonra bağımsız olarak sınıfı üyeleri işaretçileri için kullanılır. Tek devralma sınıflar her zaman kullanırsanız, bu nedenle, kod boyutu ile derleme tarafından azaltabilir **/VMs**; ancak, en genel durum (ödün verme pahasına en büyük veri temsili) kullanmak istiyorsanız, ilederleme**/vmv**.  
+ Bu devralma modeli seçeneklerden birini belirttiğinizde, bu model tüm devralma tipine veya işaretçinin önce veya bildirilmiş sınıfı sonra bağımsız olarak sınıfı üyeleri işaretçileri için kullanılır. Tek devralma sınıflar her zaman kullanırsanız, bu nedenle, kod boyutu ile derleme tarafından azaltabilir **/VMs**; ancak, en genel durum (ödün verme pahasına en büyük veri temsili) kullanmak istiyorsanız, ilederleme **/vmv**.  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   

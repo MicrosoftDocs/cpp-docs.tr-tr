@@ -1,13 +1,10 @@
 ---
-title: "Örnek komut dosyası kayıt defteri | Microsoft Docs"
-ms.custom: 
+title: Örnek komut dosyası kayıt defteri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - scripts, Registrar scripts
 - registry, Registrar
 ms.assetid: b6df80e1-e08b-40ee-9243-9b381b172460
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b2a5dfd3bd31674917a5b41174277ef787aff25
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4c192e8bec1d32dd7d7a7953e5da72a139c7520e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="registry-scripting-examples"></a>Kayıt defteri komut dosyası yazma örnekleri
 Bu konudaki komut dosyası örnekleri bir anahtar sistem kayıt defterine ekleyin, kayıt COM sunucuyu kaydetmek ve birden çok ayrıştırma ağacı belirtmek nasıl ekleyebileceğiniz gösterilmektedir.  
@@ -59,7 +54,7 @@ HKCU
   
  Şimdi, bir alt betik ekler `HasASubkey`, `MyVeryOwnKey`. Bu alt anahtar, her ikisi de ekler `PrettyCool` alt (varsayılan değer `DWORD` 55 değerini) ve `ANameValue` adlı değer (bir dize değeriyle `WithANamedValue`).  
   
-##  <a name="_atl_register_the_registrar_com_server"></a>Kaydedici COM sunucusu kaydetme  
+##  <a name="_atl_register_the_registrar_com_server"></a> Kaydedici COM sunucusu kaydetme  
  Aşağıdaki komut dosyası kayıt COM sunucusu kaydeder.  
   
 ```  
@@ -102,7 +97,7 @@ HKCR
   
 -   Ekler `ATL Registrar Class` varsayılan dize değeri olarak `{44EC053A-400F-11D0-9DCD-00A0C90391D3}`.  
   
- Ayrıştırma ağacı şimdi iki yeni anahtarlarına ekler `{44EC053A-400F-11D0-9DCD-00A0C90391D3}`. İlk anahtar `ProgID`, ProgID: Varsayılan dize değerini alır. İkinci anahtar `InprocServer32`, varsayılan dize değerini alır `%MODULE%`, yani önişlemci değeri bölümünde açıklanan [kullanarak değiştirilebilir parametreler (kayıt şirketinizin önişlemci)](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md), bu makalenin. `InprocServer32`Ayrıca adlandırılmış bir değer alır `ThreadingModel`, bir dize değeriyle `Apartment`.  
+ Ayrıştırma ağacı şimdi iki yeni anahtarlarına ekler `{44EC053A-400F-11D0-9DCD-00A0C90391D3}`. İlk anahtar `ProgID`, ProgID: Varsayılan dize değerini alır. İkinci anahtar `InprocServer32`, varsayılan dize değerini alır `%MODULE%`, yani önişlemci değeri bölümünde açıklanan [kullanarak değiştirilebilir parametreler (kayıt şirketinizin önişlemci)](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md), bu makalenin. `InprocServer32` Ayrıca adlandırılmış bir değer alır `ThreadingModel`, bir dize değeriyle `Apartment`.  
   
 ## <a name="specify-multiple-parse-trees"></a>Birden çok ayrıştırma ağacı belirtin  
  Bir komut dosyası birden fazla ayrıştırma ağacı belirtmek için bir ağaç sonunda başka yerleştirin. Örneğin, aşağıdaki komut anahtarı ekler `MyVeryOwnKey`, her ikisi için de ayrıştırma ağacı için `HKEY_CLASSES_ROOT` ve `HKEY_CURRENT_USER`:  

@@ -1,13 +1,10 @@
 ---
-title: "Geriye dönük uyumluluk | Microsoft Docs"
-ms.custom: 
+title: Geriye dönük uyumluluk | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.programs
 dev_langs:
@@ -18,24 +15,22 @@ helpviewer_keywords:
 - compatibility, C run-time libraries
 - backward compatibility
 ms.assetid: cc3175cf-97fd-492f-b329-5791aea63090
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8ffcc5ab1f50c474ed0ecf4d014419111682b85
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e9a04dec046435478ca621ad8f5e2e3c4323f3e2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="backward-compatibility"></a>Geriye Dönük Uyumluluk
 Ürün sürümleri, OLDNAMES kitaplığı arasındaki uyumluluk için. LIB yeni adlarına eski adlarını eşler. Örneğin, `open` eşlendiği `_open`. Açıkça OLDNAMES ile bağlamanız gerekir. Yalnızca komut satırı seçenekleri aşağıdaki birleşimlerine derlediğinizde LIB:  
   
--   `/Zl`(nesne dosyasından varsayılan kitaplık adını atla) ve `/Ze` (varsayılan — Microsoft uzantıları kullanma)  
+-   `/Zl` (nesne dosyasından varsayılan kitaplık adını atla) ve `/Ze` (varsayılan — Microsoft uzantıları kullanma)  
   
--   `/link`(Bağlayıcı-denetimi) `/NOD` (hiçbir varsayılan kitaplık arama) ve`/Ze`  
+-   `/link` (Bağlayıcı-denetimi) `/NOD` (hiçbir varsayılan kitaplık arama) ve `/Ze`  
   
  Derleyici komut satırı seçenekleri hakkında daha fazla bilgi için bkz: [derleyici başvurusu](../build/reference/compiler-options.md).  
   

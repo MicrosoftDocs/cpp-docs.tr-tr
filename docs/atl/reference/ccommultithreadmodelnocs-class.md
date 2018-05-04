@@ -1,12 +1,9 @@
 ---
-title: "CComMultiThreadModelNoCS sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComMultiThreadModelNoCS sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComMultiThreadModelNoCS
@@ -23,20 +20,18 @@ helpviewer_keywords:
 - CComMultiThreadModelNoCS class
 - threading [ATL]
 ms.assetid: 2b3f7a45-fd72-452c-aaf3-ccdaa621c821
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc32ab53469b1f125b56343806c7920461c64bf2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 758811b10757cd7903b4f1d6218a5f34f8a98462
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccommultithreadmodelnocs-class"></a>CComMultiThreadModelNoCS sınıfı
-`CComMultiThreadModelNoCS`iş parçacığı yöntemleri artırma ve azaltma için önemli bir bölümü kilitleme veya kilidini açma işlevselliği bir değişkenin değerini sağlar.  
+`CComMultiThreadModelNoCS` iş parçacığı yöntemleri artırma ve azaltma için önemli bir bölümü kilitleme veya kilidini açma işlevselliği bir değişkenin değerini sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -62,7 +57,7 @@ class CComMultiThreadModelNoCS
 |[CComMultiThreadModelNoCS::Increment](#increment)|(Statik) Belirtilen değişkenin değeri olarak bir iş parçacığı açısından güvenli şekilde artırır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComMultiThreadModelNoCS`benzer [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) içeren, iş parçacığı yöntemleri artırma ve azaltma için bir değişken sağlar. Ancak, başvuru yaptığınızda kritik bölüm sınıfı aracılığıyla `CComMultiThreadModelNoCS`, gibi yöntemler `Lock` ve `Unlock` hiçbir şey yapmaz.  
+ `CComMultiThreadModelNoCS` benzer [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) içeren, iş parçacığı yöntemleri artırma ve azaltma için bir değişken sağlar. Ancak, başvuru yaptığınızda kritik bölüm sınıfı aracılığıyla `CComMultiThreadModelNoCS`, gibi yöntemler `Lock` ve `Unlock` hiçbir şey yapmaz.  
   
  Genellikle, kullandığınız `CComMultiThreadModelNoCS` aracılığıyla `ThreadModelNoCS` `typedef` adı. Bu `typedef` tanımlanan `CComMultiThreadModelNoCS`, `CComMultiThreadModel`, ve [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md).  
   
@@ -74,7 +69,7 @@ class CComMultiThreadModelNoCS
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
-##  <a name="autocriticalsection"></a>CComMultiThreadModelNoCS::AutoCriticalSection  
+##  <a name="autocriticalsection"></a>  CComMultiThreadModelNoCS::AutoCriticalSection  
  Kullanırken `CComMultiThreadModelNoCS`, `typedef` adı `AutoCriticalSection` başvuruyor sınıfı [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md).  
   
 ```
@@ -97,7 +92,7 @@ typedef CComFakeCriticalSection AutoCriticalSection;
 ### <a name="example"></a>Örnek  
  Bkz: [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection).  
   
-##  <a name="criticalsection"></a>CComMultiThreadModelNoCS::CriticalSection  
+##  <a name="criticalsection"></a>  CComMultiThreadModelNoCS::CriticalSection  
  Kullanırken `CComMultiThreadModelNoCS`, `typedef` adı `CriticalSection` başvuruyor sınıfı [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md).  
   
 ```
@@ -120,7 +115,7 @@ typedef CComFakeCriticalSection CriticalSection;
 ### <a name="example"></a>Örnek  
  Bkz: [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection).  
   
-##  <a name="decrement"></a>CComMultiThreadModelNoCS::Decrement  
+##  <a name="decrement"></a>  CComMultiThreadModelNoCS::Decrement  
  Bu statik işlevi Win32 işlevini çağırır [InterlockedDecrement](http://msdn.microsoft.com/library/windows/desktop/ms683580), tarafından değişkenin değerini işaret için hangi azaltır `p`.  
   
 ```
@@ -137,7 +132,7 @@ static ULONG WINAPI Decrement(LPLONG p) throw();
 ### <a name="remarks"></a>Açıklamalar  
  **InterlockedDecrement** bu değişkeni kullanarak aynı anda birden çok iş parçacığı engeller.  
   
-##  <a name="increment"></a>CComMultiThreadModelNoCS::Increment  
+##  <a name="increment"></a>  CComMultiThreadModelNoCS::Increment  
  Bu statik işlevi Win32 işlevini çağırır [InterlockedIncrement](http://msdn.microsoft.com/library/windows/desktop/ms683614), gösterdiği değişkenin değerini artırır `p`.  
   
 ```
@@ -154,7 +149,7 @@ static ULONG WINAPI Increment(LPLONG p) throw();
 ### <a name="remarks"></a>Açıklamalar  
  **InterlockedIncrement** bu değişkeni kullanarak aynı anda birden çok iş parçacığı engeller.  
   
-##  <a name="threadmodelnocs"></a>CComMultiThreadModelNoCS::ThreadModelNoCS  
+##  <a name="threadmodelnocs"></a>  CComMultiThreadModelNoCS::ThreadModelNoCS  
  Kullanırken `CComMultiThreadModelNoCS`, `typedef` adı `ThreadModelNoCS` yalnızca başvuran `CComMultiThreadModelNoCS`.  
   
 ```

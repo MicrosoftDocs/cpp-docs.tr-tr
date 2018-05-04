@@ -1,10 +1,9 @@
 ---
-title: /DISASM | Microsoft Docs
+title: / DISASM | Microsoft Docs
 ms.date: 1/17/2018
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /disasm
 dev_langs:
@@ -15,14 +14,13 @@ helpviewer_keywords:
 - /DISASM dumpbin option
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d448b92c3436f3d2875bd8d9b8e0af6a7149e065
-ms.sourcegitcommit: ff9bf140b6874bc08718674c07312ecb5f996463
+ms.openlocfilehash: 89b0784ff10e7d9521351e01d8907c963c9304fd
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="disasm"></a>/DISASM
 

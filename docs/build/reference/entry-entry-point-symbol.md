@@ -1,13 +1,10 @@
 ---
-title: "-ENTRY (giriş noktası simgesi) | Microsoft Docs"
-ms.custom: 
+title: -ENTRY (giriş noktası simgesi) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /entry
 - VC.Project.VCLinkerTool.EntryPointSymbol
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - /ENTRY linker option
 - ENTRY linker option
 ms.assetid: 26c62ba2-4f52-4882-a7bd-7046a0abf445
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ebaf9a8723f06b6fab8577abf283f6eec69aa25
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 74d7e6e05af98bb3d3175d352fb3d5de1b70b12b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="entry-entry-point-symbol"></a>/ENTRY (Giriş Noktası Simgesi)
 ```  
@@ -39,7 +34,7 @@ ms.lasthandoff: 12/21/2017
 ## <a name="remarks"></a>Açıklamalar  
  burada:  
   
- *işlevi*  
+ *İşlevi*  
  Kullanıcı tanımlı başlangıç belirten işlevi bir .exe dosyası veya DLL için adres.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -52,8 +47,8 @@ ms.lasthandoff: 12/21/2017
 |İşlev adı|İçin varsayılan|  
 |-------------------|-----------------|  
 |**mainCRTStartup** (veya **wmainCRTStartup**)|/SUBSYSTEM:CONSOLE kullanan bir uygulamayı; çağrıları `main` (veya `wmain`)|  
-|**WinMainCRTStartup** (veya **wWinMainCRTStartup**)|/SUBSYSTEM kullanan bir uygulamayı:**WINDOWS**; çağrıları `WinMain` (veya `wWinMain`), hangi tanımlanmalıdır kullanmak için`__stdcall`|  
-|**_DllMainCRTStartup**|DLL; çağrıları `DllMain` varsa, hangi tanımlanmalıdır kullanmak için`__stdcall`|  
+|**WinMainCRTStartup** (veya **wWinMainCRTStartup**)|/SUBSYSTEM kullanan bir uygulamayı:**WINDOWS**; çağrıları `WinMain` (veya `wWinMain`), hangi tanımlanmalıdır kullanmak için `__stdcall`|  
+|**_DllMainCRTStartup**|DLL; çağrıları `DllMain` varsa, hangi tanımlanmalıdır kullanmak için `__stdcall`|  
   
  Varsa [/dll](../../build/reference/dll-build-a-dll.md) veya [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) seçeneği belirtilmezse, bağlayıcı mı bağlı olarak bir alt sistemi ve giriş noktası seçer `main` veya `WinMain` tanımlanır.  
   

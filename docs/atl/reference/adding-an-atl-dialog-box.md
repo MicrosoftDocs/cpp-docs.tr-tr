@@ -1,12 +1,9 @@
 ---
-title: "ATL iletişim kutusu ekleme | Microsoft Docs"
-ms.custom: 
+title: ATL iletişim kutusu ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 dev_langs:
 - C++
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - MFC dialog boxes, ATL dialogs
 - dialog boxes, ATL
 ms.assetid: 152a378f-7b24-4f66-aeba-c740973f03a6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d8c9969f4747c6c3fa2a39b7b0452f6ac54c9d58
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e0883b87ce991b08a96b1d10b4acedf8562022a3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="adding-an-atl-dialog-box"></a>ATL iletişim kutusu ekleme
 ATL iletişim projenize eklemek için projenize ATL projesinde veya MFC projesinde ATL desteği içeren olması gerekir. Kullanabileceğiniz [ATL Proje Sihirbazı](../../atl/reference/atl-project-wizard.md) bir ATL uygulama oluşturmak için veya [ATL nesne MFC uygulamanıza eklemek](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) MFC uygulaması için ATL desteği uygulamak için.  
@@ -33,7 +28,7 @@ ATL iletişim projenize eklemek için projenize ATL projesinde veya MFC projesin
  Varsayılan olarak, türetilmiş bir iletişim kutusu ATL iletişim Sihirbazı'nı uygulayan [CAxDialogImpl](../../atl/reference/caxdialogimpl-class.md). Bu sınıf ActiveX ve Windows denetimleri barındırma için destek içerir. Sihirbaz, kodunuzu üretti sonra ActiveX denetimi desteği, yükü istemiyorsanız tüm örneklerini değiştirmek `CAxDialogImpl` ya da ile [CSimpleDialog](../../atl/reference/csimpledialog-class.md) veya [Cdialogımpl](../../atl/reference/cdialogimpl-class.md) temel sınıf olarak .  
   
 > [!NOTE]
->  `CSimpleDialog`yalnızca Windows ortak denetimleri destekleyen kalıcı iletişim kutuları oluşturur. `CDialogImpl`ya da kalıcı veya kalıcı olmayan iletişim kutuları oluşturur.  
+>  `CSimpleDialog` yalnızca Windows ortak denetimleri destekleyen kalıcı iletişim kutuları oluşturur. `CDialogImpl` ya da kalıcı veya kalıcı olmayan iletişim kutuları oluşturur.  
   
 ### <a name="to-add-an-atl-dialog-resource-to-your-project"></a>ATL iletişim kutusu kaynağı projenize eklemek için  
   

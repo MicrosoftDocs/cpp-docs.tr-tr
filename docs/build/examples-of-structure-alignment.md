@@ -4,7 +4,7 @@ ms.custom: ''
 ms.date: 03/26/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -13,14 +13,13 @@ helpviewer_keywords:
 ms.assetid: 03d137bf-5cc4-472e-9583-6498f2534199
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29b7bac40d47c7ea69e936ea649fb519baac590b
-ms.sourcegitcommit: 604907f77eb6c5b1899194a9877726f3e8c2dabc
+ms.openlocfilehash: a9c4e8cb27d02777e40af56217bd82dec6e647b6
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="examples-of-structure-alignment"></a>Yapı Hizalama Örnekleri
 

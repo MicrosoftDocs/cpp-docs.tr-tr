@@ -1,13 +1,10 @@
 ---
-title: "Veri türü eşlemeleri | Microsoft Docs"
-ms.custom: 
+title: Veri türü eşlemeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - _TXCHAR
 - _TUCHAR
@@ -38,17 +35,15 @@ helpviewer_keywords:
 - _TEXT type
 - _T type
 ms.assetid: 4e573c05-8800-468b-ae5f-76ff7409835e
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f52c6e5664292469ef33a88e9d5458c07ec69454
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5a469ed8b5e6f026eecf5d8df88eee12b0e0fe74
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-type-mappings"></a>Veri Türü Eşlemeleri
 Bu veri türü eşlemeleri TCHAR içinde tanımlanmıştır. H ve olup olmadığına göre değişir sabiti `_UNICODE` veya `_MBCS` programınıza tanımlandı.  
@@ -67,7 +62,7 @@ Bu veri türü eşlemeleri TCHAR içinde tanımlanmıştır. H ve olup olmadığ
 |`_TSCHAR`|`signed char`|`signed char`|`wchar_t`|  
 |`_TUCHAR`|`unsigned char`|`unsigned char`|`wchar_t`|  
 |`_TXCHAR`|`char`|`unsigned char`|`wchar_t`|  
-|`_T`veya`_TEXT`|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|`L`(karakter veya dize Unicode karşılığı aşağıdaki dönüştürür)|  
+|`_T` Veya `_TEXT`|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|`L` (karakter veya dize Unicode karşılığı aşağıdaki dönüştürür)|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md)   

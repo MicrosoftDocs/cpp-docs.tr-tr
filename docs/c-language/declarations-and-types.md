@@ -1,13 +1,10 @@
 ---
-title: "Bildirimler ve türler | Microsoft Docs"
-ms.custom: 
+title: Bildirimler ve türler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - declarations [C++], C
 - declarations [C++], types
 ms.assetid: 432a2286-cf42-42ce-8baf-c908ffb57ca8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c40f7b236771115d9848abdfccceb0a6e1f8f2c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fb45ed5eb068e943bc4de69b916b2c21b7487585
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="declarations-and-types"></a>Bildirimler ve Türler
 Bu bölümde, değişkenlerin, işlevlerin ve türlerin bildirimi ve başlatılması açıklanmaktadır. C dili, standart bir temel veri türleri kümesi içerir. Daha önce tanımlanan türleri temel alan yeni türler bildirerek "türetilmiş türler" adlı kendi veri türlerinizi de ekleyebilirsiniz. Aşağıdaki konular açıklanmaktadır:  

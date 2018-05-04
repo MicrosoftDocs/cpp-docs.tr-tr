@@ -1,12 +1,12 @@
 ---
-title: "Bağlayıcı özellik sayfaları | Microsoft Docs"
-ms.custom: 
+title: Bağlayıcı özellik sayfaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/21/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCLinkerTool.RegisterOutput
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - per-user redirection
 - Linker property pages
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b8a1d0d4775955ee55aa0f40ac10a75cda54379
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 31b44b6711153d29ab6a9c542a6e5677e6279432
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="linker-property-pages"></a>Bağlayıcı Özellik Sayfaları
 
@@ -51,7 +51,7 @@ Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.Visua
 
 ### <a name="per-user-redirection"></a>Kullanıcı başına yeniden yönlendirme
 
-Visual Studio'da kayıt HKEY_CLASSES_ROOT (HKCR) geleneksel yapmıştır. İle [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)], Visual Studio yükseltilmiş modda çalıştırmalı HKCR erişmek için. Geliştiriciler, her zaman yükseltilmiş modda çalıştırın istemediğiniz ancak hala kaydı çalışmanız gerekir. Kullanıcı başına yeniden yönlendirme, bu modda çalıştırmak zorunda kalmadan kaydetmenize olanak sağlar.
+Visual Studio'da kayıt HKEY_CLASSES_ROOT (HKCR) geleneksel yapmıştır. HKCR erişmek için Windows Vista ve sonraki işletim sistemleri ile Visual Studio yükseltilmiş modda çalıştırmanız gerekir. Geliştiriciler, her zaman yükseltilmiş modda çalıştırın istemediğiniz ancak hala kaydı çalışmanız gerekir. Kullanıcı başına yeniden yönlendirme, bu modda çalıştırmak zorunda kalmadan kaydetmenize olanak sağlar.
 
 Kullanıcı başına yeniden yönlendirme için HKEY yönlendirilecek HKCR herhangi yazma zorlar\_geçerli\_kullanıcı (HKCU). Kullanıcı başına yeniden yönlendirme kapalıysa, neden olabilir [proje derleme hatası PRJ0050](../error-messages/tool-errors/project-build-error-prj0050.md) program HKCR için yazma çalıştığında.
 

@@ -1,27 +1,22 @@
 ---
-title: "Dönüş değerleri (C++) | Microsoft Docs"
-ms.custom: 
+title: Dönüş değerleri (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 53583524-b337-4228-a9c6-c9bf516babe8
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cdd02ab9c30e641ba7389923062f46dbbed534ec
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ec5097ab22ff82883117b6d224bce9c282ac9c8a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="return-values-c"></a>Dönüş Değerleri (C++)
 64 bit sığması skaler bir dönüş değeri RAX üzerinden döndürülür — bu __m64 türleri içerir. Float, double ve vektör türleri gibi dahil olmayan skaler türleri [__m128](../cpp/m128.md), [__m128i](../cpp/m128i.md), [__m128d](../cpp/m128d.md) XMM0'döndürdü. Kullanılmayan BITS RAX veya XMM0 döndürülen değeri durumunu tanımlanmamıştır.  

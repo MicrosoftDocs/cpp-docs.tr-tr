@@ -1,12 +1,9 @@
 ---
-title: "CSimpleDialog sınıfı | Microsoft Docs"
-ms.custom: 
+title: CSimpleDialog sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CSimpleDialog
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - dialog boxes, modal
 - modal dialog boxes, ATL
 ms.assetid: 2ae65cc9-4f32-4168-aecd-200b4a480fdf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e497d5f1646ab890b7dafa3e1fb7e1c711a8a09
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f3a8f6cb2ead8798b86d65a1fa875a42a68cdd77
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="csimpledialog-class"></a>CSimpleDialog sınıfı
 Bu sınıf temel kalıcı bir iletişim kutusu uygular.  
@@ -59,9 +54,9 @@ class CSimpleDialog : public CDialogImplBase
 |[CSimpleDialog::DoModal](#domodal)|Modal bir iletişim kutusu oluşturur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Modal bir iletişim kutusu ile temel işlevlerini uygular. `CSimpleDialog`Windows ortak denetimleri için yalnızca desteği sağlar. Oluşturun ve kalıcı bir iletişim kutusu görüntülemek için var olan bir kaynak şablonu adı için iletişim kutusu sağlama bu sınıfının bir örneğini oluşturun. Kullanıcı (örneğin, IDOK veya IDCANCEL) önceden tanımlanmış bir değerle herhangi bir denetimi tıklattığında iletişim kutusu nesnesini kapatır.  
+ Modal bir iletişim kutusu ile temel işlevlerini uygular. `CSimpleDialog` Windows ortak denetimleri için yalnızca desteği sağlar. Oluşturun ve kalıcı bir iletişim kutusu görüntülemek için var olan bir kaynak şablonu adı için iletişim kutusu sağlama bu sınıfının bir örneğini oluşturun. Kullanıcı (örneğin, IDOK veya IDCANCEL) önceden tanımlanmış bir değerle herhangi bir denetimi tıklattığında iletişim kutusu nesnesini kapatır.  
   
- `CSimpleDialog`kalıcı iletişim kutuları oluşturmanıza olanak sağlar. `CSimpleDialog`Varsayılan ileti eşlemesi uygun işleyicileri iletilerini yönlendirmek için kullandığı iletişim kutusu yordam sağlar.  
+ `CSimpleDialog` kalıcı iletişim kutuları oluşturmanıza olanak sağlar. `CSimpleDialog` Varsayılan ileti eşlemesi uygun işleyicileri iletilerini yönlendirmek için kullandığı iletişim kutusu yordam sağlar.  
   
  Bkz: [bir iletişim kutusu uygulama](../../atl/implementing-a-dialog-box.md) daha fazla bilgi için.  
   
@@ -73,7 +68,7 @@ class CSimpleDialog : public CDialogImplBase
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  
   
-##  <a name="domodal"></a>CSimpleDialog::DoModal  
+##  <a name="domodal"></a>  CSimpleDialog::DoModal  
  Kalıcı iletişim kutusunu çağırır ve tamamlandığında iletişim kutusu sonucu döndürür.  
   
 ```

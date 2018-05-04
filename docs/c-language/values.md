@@ -1,27 +1,22 @@
 ---
-title: "Değerleri | Microsoft Docs"
-ms.custom: 
+title: Değerleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: 24003f89-220f-4f93-be7a-b650c26157d7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea979083fb00d57e455b97c2f6b94f7ea7c6b596
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4ed5d412a5f4d00448ea9d7bc112b22541a179f8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="values"></a>Değerler
 **ANSI 3.1.2.5** Beyanları ve kayan nokta sayıları çeşitli türlerde değerler kümesi  

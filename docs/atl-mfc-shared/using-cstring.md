@@ -1,12 +1,9 @@
 ---
 title: CString kullanarak | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 dev_langs:
 - C++
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - CString objects, reference counting
 - CString class (Visual C++)
 ms.assetid: ed018aaf-8b10-46f9-828c-f9c092dc7609
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3844e10dc12207513e074e76e822e4999fadec7f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 591a319671ea42236af5ae7e80ea1cb94c3c446c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-cstring"></a>CString kullanma
 Bu bölümdeki konular, ile programlamayı açıklamaktadır `CString`. Hakkında başvuru belgeleri için `CString` sınıfı, belgelerine bakın [CStringT](../atl-mfc-shared/reference/cstringt-class.md).  
@@ -36,11 +31,11 @@ Bu bölümdeki konular, ile programlamayı açıklamaktadır `CString`. Hakkınd
   
  A `CStringW` nesnesini içeren `wchar_t` yazın ve Unicode dizeleri destekler. A `CStringA` nesnesini içeren `char` türü ve destekleyen tek baytlı ve çok baytlı (MBCS) dizeleri. A `CString` nesnesi ya da destekler `char` türü veya `wchar_t` türüne mi bağlı `MBCS` simge veya `UNICODE` simgesi derleme zamanında tanımlanır.  
   
- A `CString` nesne karakter verileri tutar bir `CStringData` nesnesi. `CString`kabul `null`-sonlandırılan C tarzı dizeler, ancak değil korumak `null` saklı karakter verilerinde karakter. Bunun yerine, `CString` parçaları dize uzunluğu. `CString`bir C stili dize verdiğinde null Sonlandırıcı sağlar. Ekleyebileceğiniz bir `null` içinde bir `CString`, ancak beklenmeyen sonuçlara neden olabilir.  
+ A `CString` nesne karakter verileri tutar bir `CStringData` nesnesi. `CString` kabul `null`-sonlandırılan C tarzı dizeler, ancak değil korumak `null` saklı karakter verilerinde karakter. Bunun yerine, `CString` parçaları dize uzunluğu. `CString` bir C stili dize verdiğinde null Sonlandırıcı sağlar. Ekleyebileceğiniz bir `null` içinde bir `CString`, ancak beklenmeyen sonuçlara neden olabilir.  
   
  Aşağıdaki dize sınıfları kümesi ile veya CRT desteği olmadan bir MFC kitaplık bağlamadan kullanılabilir: `CAtlString`, `CAtlStringA`, ve `CAtlStringW`.  
   
- `CString`Yerel projelerinde kullanılır. Yönetilen kod için (C + +/ CLI) projeleri kullanmak `System::String`.  
+ `CString` Yerel projelerinde kullanılır. Yönetilen kod için (C + +/ CLI) projeleri kullanmak `System::String`.  
   
  Daha fazla özellikler eklemek için `CString`, `CStringA`, veya `CStringW` şu anda sunar, bir alt sınıfı, oluşturduğunuz `CStringT` ek özellikler içerir.  
   

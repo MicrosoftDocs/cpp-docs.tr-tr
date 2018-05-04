@@ -1,13 +1,10 @@
 ---
 title: IDispEventImpl destekleyen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 f1_keywords:
 - IDispEventImpl
 dev_langs:
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - BEGIN_SINK_MAP macro
 - IDispEventImpl class, declaring
 ms.assetid: b957f930-6a5b-4598-8e4d-8027759957e7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bf10a68ae15743a637df2dee52bee83c3dfcbe0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 680396ae912cca5f19e87697e7de0033213cc963
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supporting-idispeventimpl"></a>IDispEventImpl destekleme
 Şablon sınıfı [IDispEventImpl](../atl/reference/idispeventimpl-class.md) bağlantı noktası havuzlarını ATL sınıfınızda desteği sağlamak için kullanılabilir. Bir bağlantı noktası havuzu dış COM nesneleri tetiklenen olayları işlemek, sınıf sağlar. Bu bağlantı noktası havuzlarını sınıfı tarafından sağlanan bir olay havuz eşlemesi ile eşlenir.  

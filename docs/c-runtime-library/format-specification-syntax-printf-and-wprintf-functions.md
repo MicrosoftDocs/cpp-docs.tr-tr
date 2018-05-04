@@ -2,12 +2,9 @@
 title: 'Biçim belirtim Sözdizimi: printf ve wprintf işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - width fields, printf function
 - precision fields, printf function
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
-caps.latest.revision: 15
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 437657857b87f2f7df140576d09467d6276549f6
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: c15ba418657dde291c6833caafae071ca0260a65
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>Biçim belirtim Sözdizimi: printf ve wprintf işlevleri
 
@@ -36,7 +31,7 @@ ms.lasthandoff: 04/10/2018
 
 Bu formdaki isteğe bağlıdır ve gerekli alanlara dönüştürme belirtimi oluşur:
 
-**%**[[*flags*](#flags)][[*width*](#width)][.[*precision*](#precision)][[*size*](#size)][*type*](#type)
+**%**[[*bayrakları*](#flags)] [[*genişliği*](#width)] [.[ *duyarlık*](#precision)] [[*boyutu*](#size)][*türü*](#type)
 
 Her alanı dönüştürme belirtimi, bir karakter ya da belirli biçim seçeneği veya dönüştürme belirticisi belirten bir sayı alır. Gerekli *türü* alan bir bağımsız değişken uygulanacak dönüştürme türünü belirtir. İsteğe bağlı *bayrakları*, *genişliği*, ve *duyarlık* alanları denetim öndeki boşlukları veya sıfır, düzeltme ve görüntülenen duyarlık gibi ek biçim Konular. *Boyutu* alan bağımsız değişkeni kullanılan ve dönüştürülen boyutunu belirler.
 
@@ -62,7 +57,7 @@ Biçim dizesi izleyin bağımsız değişkenleri karşılık gelen göre yorumla
 Tamsayı türleri gibi `short`, `int`, `long`, `long long`ve bunların `unsigned` çeşitleri, belirtilen kullanarak **d**, **ı**, **o**, **u**, **x**, ve **X**. Kayan nokta türleri gibi `float`, `double`, ve `long double`, kullanılarak belirtilen **bir**, **A**, **e**, **E**, **f**, **F**, **g**, ve **G**. Varsayılan olarak, tarafından değiştirilmiş sürece bir *boyutu* tamsayı bağımsız değişkenlerini önek, yüklenen için `int` türü ve kayan nokta değişkenleri için yüklenen `double`. 64 bitlik sistemlerde bir `int` 32-bit değeri; sürece için çıktı biçimlendirildiğinden, bu nedenle, 64-bit tamsayı kesilecek bir *boyutu* öneki **üm** veya **I64**kullanılır. Tarafından belirtilen işaretçi türleri **p** platform için varsayılan işaretçi boyutu kullanabilirsiniz.
 
 > [!NOTE]
-> **Microsoft Specific**  
+> **Microsoft özel**  
 > **Z** karakter ve davranışını yazın **c**, **C**, **s**, ve **S** türü karakter bunlar ile kullanılan `printf` ve `wprintf` işlevlerdir, Microsoft uzantıları. ISO C standardı kullanır **c** ve **s** dar karakterler ve dizeler için tutarlı bir şekilde ve **C** ve **S** geniş karakterler ve dizeler için tüm biçimlendirme işlevleri.
 
 ### <a name="type-field-characters"></a>Tür alanı karakterleri
@@ -216,7 +211,7 @@ Visual C++ ' ta rağmen `long double` farklı bir tür aynı iç gösterimi olar
 Bir **hc** veya **hC** tür belirteci ile eşanlamlı **c** içinde `printf` işlevleri ile **C** içinde `wprintf` işlevleri. Bir **lc**, **lC**, **wc** veya **wC** tür belirteci ile eşanlamlı **C** içinde `printf` İşlevler ile **c** içinde `wprintf` işlevleri. Bir **hs** veya **hS** tür belirteci ile eşanlamlı **s** içinde `printf` işlevleri ile **S** içinde `wprintf` işlevleri. Bir **ls**, **lS**, **ws** veya **wS** tür belirteci ile eşanlamlı **S** içinde `printf` İşlevler ile **s** içinde `wprintf` işlevleri.
 
 > [!NOTE]
-> **Microsoft Specific**  
+> **Microsoft özel**  
 > **I** (büyük harf i), **I32**, **I64**, ve **w** bağımsız değişkeni boyut değiştiricisi önekleri Microsoft uzantıları ve ISO C ile uyumlu değildir. **h** önek veri türü ile kullanıldığında `char` ve **l** (M küçük harf) veri türü ile kullanıldığında önek `double` Microsoft uzantıları.
 
 ## <a name="see-also"></a>Ayrıca Bkz.

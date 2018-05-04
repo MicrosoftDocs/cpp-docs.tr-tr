@@ -1,30 +1,25 @@
 ---
-title: "-Çekirdek (çekirdek oluşturma modu ikili) | Microsoft Docs"
-ms.custom: 
+title: -Çekirdek (çekirdek oluşturma modu ikili) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /kernel
 - /kernel-
 dev_langs:
 - C++
 ms.assetid: 6d7fdff0-c3d1-4b78-9367-4da588ce8b05
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0e20df59788577acb680cbd18b737f7ec2d7822
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bbbae275e751287464e4bf1637ee21aff77fb697
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="kernel-create-kernel-mode-binary"></a>/kernel (Çekirdek Modu İkilisi Oluştur)
 Windows Çekirdeği'nde yürütülebilir bir ikili oluşturur.  
@@ -55,7 +50,7 @@ Windows Çekirdeği'nde yürütülebilir bir ikili oluşturur.
 |-------------------|---------------------------|  
 |C++ Özel Durum İşleme|Devre dışı. Tüm örneklerini `throw` ve `try` anahtar sözcükleri yayma derleyici hatası (özel durum belirtimi dışında `throw()`). Hayır **/EH** seçenekleri ile uyumlu **/Kernel**, dışında **/EH-**.|  
 |RTTI|Devre dışı. Tüm örneklerini `dynamic_cast` ve `typeid` anahtar sözcükleri yayma derleyici hatası sürece `dynamic_cast` statik olarak kullanılır.|  
-|`new`ve`delete`|Açıkça tanımlamalısınız `new()` veya `delete()` işleci; derleyici ne çalışma zamanı varsayılan tanımı tedarik.|  
+|`new` Ve `delete`|Açıkça tanımlamalısınız `new()` veya `delete()` işleci; derleyici ne çalışma zamanı varsayılan tanımı tedarik.|  
   
  Çağırma kuralları, özel [/GS](../../build/reference/gs-buffer-security-check.md) derleme seçeneği ve tüm iyileştirmeler kullandığınızda verilen **/Kernel** seçeneği. Satır içi kullanım büyük ölçüde etkilenmez tarafından **/Kernel**, derleyici tarafından dikkate alınır aynı semantiği ile. Emin olmak istiyorsanız `__forceinline` satır içi kullanım niteleyicisi dikkate alınır, bu uyarı emin olun [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) belirli bir zaman bilmesi etkin `__forceinline` işlev satır içi değil.  
   
@@ -76,7 +71,7 @@ class NONPAGESECTION MyNonPagedClass
   
  Bazı hedef mimari aşağıdaki birleşimlerini ve **/arch** seçeneği ile kullanıldığında bir hata üretmek **/Kernel**:  
   
--   **/ arch: {SSE &#124; SSE2 &#124; AVX}** x86 üzerinde desteklenmez. Yalnızca **/arch:IA32** ile desteklenen **/Kernel** x86 üzerinde.  
+-   **/ arch: {SSE&#124;SSE2&#124;AVX}** x86 üzerinde desteklenmez. Yalnızca **/arch:IA32** ile desteklenen **/Kernel** x86 üzerinde.  
   
 -   **/arch:AVX** desteklenmeyen **/Kernel** x64 üzerinde.  
   
@@ -91,7 +86,7 @@ class NONPAGESECTION MyNonPagedClass
     ||**/ Kernel** obj|**/Kernel-** obj, MASM obj veya cvtresed|Karışık **/Kernel** ve **/kernel-** objs|  
     |-|----------------------|-----------------------------------------------|-------------------------------------------------|  
     |**bağlantı/Kernel**|Evet|Evet|LNK4257 uyarıyla Evet|  
-    |**bağlantı**|Evet|Evet|Evet|  
+    |**Bağlantı**|Evet|Evet|Evet|  
   
      **/ Kernel ile derlenmemiş LNK4257 nesne; Görüntü çalışmayabilir**  
   

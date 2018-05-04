@@ -1,29 +1,24 @@
 ---
-title: "Nasıl yapılır: COM bileşenlerini kullanacak yalıtılmış uygulamalar derleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: COM bileşenlerini kullanacak yalıtılmış uygulamalar derleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - isolated applications [C++]
 ms.assetid: 04587547-1174-44ab-bd99-1292358fba20
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aaeef56f122d10f983313ab1c839db40f4e92aa4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2ed2f43721eb698552ccde3e1b51ed4d6e467179
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-build-isolated-applications-to-consume-com-components"></a>Nasıl Yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme
 Yalıtılmış uygulamalar programa yerleşik bildirimleri sahip uygulamalardır. COM bileşenlerini kullanacak yalıtılmış uygulamalar oluşturabilirsiniz.  

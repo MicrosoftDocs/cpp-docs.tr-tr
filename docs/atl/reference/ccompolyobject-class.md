@@ -2,11 +2,8 @@
 title: CComPolyObject sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComPolyObject
@@ -26,17 +23,15 @@ helpviewer_keywords:
 - aggregation [C++], ATL objects
 - CComPolyObject class
 ms.assetid: eaf67c18-e855-48ca-9b15-f1df3106121b
-caps.latest.revision: 19
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3518fd5936c4871e99eaf597f12fb3ab7cc8aff6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 383a83a2e2b09c9652e7185592a5891179416e0f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccompolyobject-class"></a>CComPolyObject sınıfı
 Bu sınıf uygulayan **IUnknown** bir toplanmış veya toplanmayan nesnesi.  
@@ -67,7 +62,7 @@ class CComPolyObject : public IUnknown,
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CComPolyObject::AddRef](#addref)|Nesne başvurusu sayısını artırır.|  
-|[CComPolyObject::CreateInstance](#createinstance)|(Statik) Yeni bir oluşturmanıza olanak tanıyan **CComPolyObject <** `contained`  **>**  nesne yükü olmadan [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).|  
+|[CComPolyObject::CreateInstance](#createinstance)|(Statik) Yeni bir oluşturmanıza olanak tanıyan **CComPolyObject <** `contained` **>** nesne yükü olmadan [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).|  
 |[CComPolyObject::FinalConstruct](#finalconstruct)|Öğesinin son başlatılmasını gerçekleştirir `m_contained`.|  
 |[CComPolyObject::FinalRelease](#finalrelease)|Son yok etme gerçekleştirir `m_contained`.|  
 |[CComPolyObject::QueryInterface](#queryinterface)|İstenen arabirim için bir işaretçi alır.|  
@@ -80,22 +75,22 @@ class CComPolyObject : public IUnknown,
 |[CComPolyObject::m_contained](#m_contained)|Temsilciler **IUnknown** nesne toplanır mı yoksa için dış bilinmeyen çağırır **IUnknown** nesne değil toplanır, nesnenin.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComPolyObject`uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) bir toplanmış veya toplanmayan nesnesi.  
+ `CComPolyObject` uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) bir toplanmış veya toplanmayan nesnesi.  
   
  Bir örneği olduğunda `CComPolyObject` oluşturulur, dış değeri bilinmeyen denetlenir. Eğer öyleyse **NULL**, **IUnknown** toplanmayan bir nesne için uygulanır. Dış bilinmeyen değilse **NULL**, **IUnknown** toplanmış olan bir nesne için uygulanır.  
   
  Kullanmanın avantajı `CComPolyObject` her ikisi de zorunda kalmamak olan [CComAggObject](../../atl/reference/ccomaggobject-class.md) ve [CComObject](../../atl/reference/ccomobject-class.md) toplanmış ve toplanmayan durumlarında, modüldeki. Tek bir `CComPolyObject` nesnesini işleme her iki durumda. Bu, yalnızca bir kopyasını vtable ve işlevlerin bir kopya, modülünde mevcut anlamına gelir. Vtable büyükse, bu modül boyutu önemli ölçüde düşürebilir. Ancak, vtable küçükse kullanarak `CComPolyObject` bir toplanmış veya toplanmayan nesne için iyileştirilmediğinden biraz daha büyük bir modül boyutu sonuçlanabilir olarak `CComAggObject` ve `CComObject`.  
   
- Varsa `DECLARE_POLY_AGGREGATABLE` makrosu, nesnenin sınıf tanımında belirtilen `CComPolyObject` , nesneyi oluşturmak için kullanılan. `DECLARE_POLY_AGGREGATABLE`otomatik olarak bir tam denetim veya Internet Explorer denetimi oluşturmak için ATL Proje Sihirbazı'nı kullanırsanız bildirilir.  
+ Varsa `DECLARE_POLY_AGGREGATABLE` makrosu, nesnenin sınıf tanımında belirtilen `CComPolyObject` , nesneyi oluşturmak için kullanılan. `DECLARE_POLY_AGGREGATABLE` otomatik olarak bir tam denetim veya Internet Explorer denetimi oluşturmak için ATL Proje Sihirbazı'nı kullanırsanız bildirilir.  
   
- Toplanan, `CComPolyObject` nesne sahip kendi **IUnknown**, dış nesnenin ayrı **IUnknown**ve kendi başvuru sayımı tutar. `CComPolyObject`kullanan [CComContainedObject](../../atl/reference/ccomcontainedobject-class.md) dış bilinmeyen yetki vermek için.  
+ Toplanan, `CComPolyObject` nesne sahip kendi **IUnknown**, dış nesnenin ayrı **IUnknown**ve kendi başvuru sayımı tutar. `CComPolyObject` kullanan [CComContainedObject](../../atl/reference/ccomcontainedobject-class.md) dış bilinmeyen yetki vermek için.  
   
  Toplama hakkında daha fazla bilgi için bkz: [ATL COM nesneleri Temelleri](../../atl/fundamentals-of-atl-com-objects.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CComObjectRootBase`  
   
- [İn uygulamasına](../../atl/reference/ccomobjectrootex-class.md)  
+ [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)  
   
  `IUnknown`  
   
@@ -104,7 +99,7 @@ class CComPolyObject : public IUnknown,
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="addref"></a>CComPolyObject::AddRef  
+##  <a name="addref"></a>  CComPolyObject::AddRef  
  Nesne üzerinde başvurusu sayısını artırır.  
   
 ```
@@ -114,7 +109,7 @@ STDMETHOD_(ULONG, AddRef)();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tanılama için kullanışlı veya test bir değer.  
   
-##  <a name="ccompolyobject"></a>CComPolyObject::CComPolyObject  
+##  <a name="ccompolyobject"></a>  CComPolyObject::CComPolyObject  
  Oluşturucu.  
   
 ```
@@ -130,7 +125,7 @@ CComPolyObject(void* pv);
   
  Yok Edicisi azaltır modülü kilit sayısı.  
   
-##  <a name="dtor"></a>CComPolyObject:: ~ CComPolyObject  
+##  <a name="dtor"></a>  CComPolyObject:: ~ CComPolyObject  
  Yok Edicisi.  
   
 ```
@@ -140,8 +135,8 @@ CComPolyObject(void* pv);
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları ayrılan tüm kaynakları serbest bırakır [FinalRelease](#finalrelease), ve azaltır modülü kilit sayısı.  
   
-##  <a name="createinstance"></a>CComPolyObject::CreateInstance  
- Yeni bir oluşturmanıza olanak tanıyan **CComPolyObject <** `contained`  **>**  nesne yükü olmadan [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
+##  <a name="createinstance"></a>  CComPolyObject::CreateInstance  
+ Yeni bir oluşturmanıza olanak tanıyan **CComPolyObject <** `contained` **>** nesne yükü olmadan [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
   
 ```
 static HRESULT WINAPI CreateInstance(  
@@ -151,7 +146,7 @@ static HRESULT WINAPI CreateInstance(
   
 ### <a name="parameters"></a>Parametreler  
  `pp`  
- [out] Bir işaretçi bir **CComPolyObject <** `contained`  **>**  işaretçi. Varsa `CreateInstance` başarısızsa, `pp` ayarlanır **NULL**.  
+ [out] Bir işaretçi bir **CComPolyObject <** `contained` **>** işaretçi. Varsa `CreateInstance` başarısızsa, `pp` ayarlanır **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
@@ -161,7 +156,7 @@ static HRESULT WINAPI CreateInstance(
   
  Nesneye erişim doğrudan yoktur, ancak hala yükü olmadan yeni bir nesne oluşturmak istediğiniz `CoCreateInstance`, kullanın [CComCoClass::CreateInstance](../../atl/reference/ccomcoclass-class.md#createinstance) yerine.  
   
-##  <a name="finalconstruct"></a>CComPolyObject::FinalConstruct  
+##  <a name="finalconstruct"></a>  CComPolyObject::FinalConstruct  
  Nesne oluşturması son aşamaları sırasında çağrılır, bu yöntem herhangi son başlatma gerçekleştirir [m_contained](#m_contained) veri üyesi.  
   
 ```
@@ -171,14 +166,14 @@ HRESULT FinalConstruct();
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
-##  <a name="finalrelease"></a>CComPolyObject::FinalRelease  
+##  <a name="finalrelease"></a>  CComPolyObject::FinalRelease  
  Nesne yok etme sırasında çağrılır, bu yöntem boşaltır [m_contained](#m_contained) veri üyesi.  
   
 ```
 void FinalRelease();
 ```  
   
-##  <a name="m_contained"></a>CComPolyObject::m_contained  
+##  <a name="m_contained"></a>  CComPolyObject::m_contained  
  A [CComContainedObject](../../atl/reference/ccomcontainedobject-class.md) nesnesi, sınıfından türetilmiş.  
   
 ```
@@ -192,7 +187,7 @@ CComContainedObject<contained> m_contained;
 ### <a name="remarks"></a>Açıklamalar  
  **IUnknown** aracılığıyla çağırır `m_contained` dış bilinmeyen nesne toplanır mi yoksa için temsilci **IUnknown** nesne değil toplanır varsa, bu nesnenin.  
   
-##  <a name="queryinterface"></a>CComPolyObject::QueryInterface  
+##  <a name="queryinterface"></a>  CComPolyObject::QueryInterface  
  İstenen arabirim için bir işaretçi alır.  
   
 ```
@@ -220,7 +215,7 @@ HRESULT QueryInterface(Q** pp);
 ### <a name="remarks"></a>Açıklamalar  
  İstenen arabirimi ise, birleşik bir nesne için **IUnknown**, `QueryInterface` toplanmış nesnenin için kendi işaretçi döndüren **IUnknown** ve başvuru sayısını artırır. Aksi takdirde, bu yöntem arabirimi aracılığıyla sorgular `CComContainedObject` veri üyesi [m_contained](#m_contained).  
   
-##  <a name="release"></a>CComPolyObject::Release  
+##  <a name="release"></a>  CComPolyObject::Release  
  Başvuru sayım nesnede azaltır.  
   
 ```

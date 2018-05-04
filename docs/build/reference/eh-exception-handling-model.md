@@ -1,13 +1,10 @@
 ---
-title: "-EH (özel durum işleme modeli) | Microsoft Docs"
-ms.custom: 
+title: -EH (özel durum işleme modeli) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.ExceptionHandling
 - /eh
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - -EH compiler option [C++]
 - /EH compiler option [C++]
 ms.assetid: 754b916f-d206-4472-b55a-b6f1b0f2cb4d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c56020d5013e951d9d43ed799d34641d114d612
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 96b009a9f209ffcc4bb84550c5f37680ef71c9fe
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="eh-exception-handling-model"></a>/EH (Özel Durum İşleme Modeli)
 Özel durum işleme koyma özel durumu iyileştirmek için denetlediğinde derleyici ve mi kapsamının dışında bir özel durum nedeniyle Git C++ nesneleri yok etme tarafından kullanılan türünü belirtir. Varsa **/EH** belirtilmezse, derleyici, yapılandırılmış zaman uyumsuz özel durumları ve C++ özel durumlarını yakalar ancak kapsamının dışında bir zaman uyumsuz özel durum nedeniyle Git C++ nesneleri silmiyor.  
@@ -43,7 +38,7 @@ ms.lasthandoff: 12/21/2017
 ```  
   
 ## <a name="arguments"></a>Arguments  
- **bir**  
+ **a**  
  Hem zaman uyumsuz (yapılı) hem de zaman uyumlu (C++) özel durumları yakalayan özel durum işleme modeli.  
   
  **s**  
@@ -105,7 +100,7 @@ int main() {
   
  Özel durum kısıtlamaları altında işleme hakkında bilgi için **/CLR**, bkz: [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md).  
   
- Simgenin kullanarak seçeneği temizlenebilir  **-** . Örneğin, **/EHsc-** olarak yorumlanır **/EHs /EHc-** ve eşdeğerdir **/EHs**.  
+ Simgenin kullanarak seçeneği temizlenebilir **-**. Örneğin, **/EHsc-** olarak yorumlanır **/EHs /EHc-** ve eşdeğerdir **/EHs**.  
   
  **/EHr** derleyici seçeneği zorlar sahip tüm işlevleri çalışma zamanı sonlandırma denetimlerinde bir `noexcept` özniteliği. Bir işlev yalnızca çağırır derleyici arka uç belirlerse, varsayılan olarak, çalışma zamanı denetimleri hemen en iyi duruma *atma olmayan* işlevleri. Olmayan atma işlevleri hiçbir durumlar belirten bir özniteliği olan tüm işlevlerdir. Bu işlevler işaretlenmiş içerir `noexcept`, `throw()`, `__declspec(nothrow)`ve ne zaman **/EHc** belirtilirse, `extern "C"` işlevleri. Olmayan atma işlevleri derleyici olmayan denetleme tarafından atma olan belirledi herhangi içerir. Açıkça varsayılan kullanarak ayarlayabileceğiniz **/EHr-**.  
   

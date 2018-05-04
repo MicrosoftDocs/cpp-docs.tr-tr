@@ -1,12 +1,9 @@
 ---
-title: "IServiceProviderImpl sınıfı | Microsoft Docs"
-ms.custom: 
+title: IServiceProviderImpl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - IServiceProviderImpl
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - IServiceProviderImpl class
 - IServiceProvider interface, ATL implementation
 ms.assetid: 251254d3-c4ce-40d7-aee0-3d676d1d72f2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4946a88e6bf6767de0e3965670f94b91d1ddaf90
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1b1472fe5d952e93b45240128383db9fdec5b093
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="iserviceproviderimpl-class"></a>IServiceProviderImpl sınıfı
 Bu sınıf, bir varsayılan uygulamasını sağlar `IServiceProvider` arabirimi.  
@@ -57,7 +52,7 @@ class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
   
  **IServiceProviderImpl** bir yöntemini belirtir: [QueryService](#queryservice), hangi oluşturur veya belirtilen hizmet erişir ve hizmet için belirtilen arabirimi için bir arabirim işaretçisi döndürür.  
   
- `IServiceProviderImpl`ile başlayan bir hizmet eşlemesi kullanan [BEGIN_SERVICE_MAP](service-map-macros.md#begin_service_map) ve ile biten [END_SERVICE_MAP](service-map-macros.md#end_service_map).  
+ `IServiceProviderImpl` ile başlayan bir hizmet eşlemesi kullanan [BEGIN_SERVICE_MAP](service-map-macros.md#begin_service_map) ve ile biten [END_SERVICE_MAP](service-map-macros.md#end_service_map).  
   
  Hizmet eşlemesi iki girdiler içeriyor: [SERVICE_ENTRY](service-map-macros.md#service_entry), nesne tarafından desteklenen bir belirtilen hizmet kimliği (SID) gösterir ve [SERVICE_ENTRY_CHAIN](service-map-macros.md#service_entry_chain), çağıran `QueryService` başka bir zincir için nesne.  
   
@@ -69,7 +64,7 @@ class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="queryservice"></a>IServiceProviderImpl::QueryService  
+##  <a name="queryservice"></a>  IServiceProviderImpl::QueryService  
  Oluşturur veya belirtilen hizmet erişir ve hizmet için belirtilen arabirimi için bir arabirim işaretçisi döndürür.  
   
 ```
@@ -80,13 +75,13 @@ STDMETHOD(QueryService)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [IN]`guidService`  
+ [IN] `guidService`  
  Bir hizmet tanımlayıcı (SID) yönelik işaretçi.  
   
- [IN]`riid`  
+ [IN] `riid`  
  Çağıranın erişim kazanmak için arabirimi tanımlayıcısı.  
   
- [OUT]`ppvObj`  
+ [OUT] `ppvObj`  
  İstenen arabirim dolaylı işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -101,7 +96,7 @@ STDMETHOD(QueryService)(
 |E_NOINTERFACE|İstenen arabirim bu hizmetin bir parçası değil veya bilinmeyen bir hizmettir.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- `QueryService`Belirtilen hizmet istenen arabiriminde dolaylı bir işaretçi döndürür. Çağıran, artık gerekli olmadığında bu işaretçinin serbest bırakma için sorumludur.  
+ `QueryService` Belirtilen hizmet istenen arabiriminde dolaylı bir işaretçi döndürür. Çağıran, artık gerekli olmadığında bu işaretçinin serbest bırakma için sorumludur.  
   
  Çağırdığınızda `QueryService`, hem de bir hizmet tanımlayıcı geçirdiğiniz ( `guidService`) ve bir arabirim tanımlayıcısı ( `riid`). `guidService` Erişim için istediğiniz hizmeti belirtir ve `riid` hizmetinin bir parçası olan bir arabirim tanımlar. Buna karşılık, arabirim dolaylı bir işaretçi alırsınız.  
   

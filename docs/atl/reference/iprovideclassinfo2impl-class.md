@@ -1,12 +1,9 @@
 ---
-title: "IProvideClassInfo2Impl sınıfı | Microsoft Docs"
-ms.custom: 
+title: IProvideClassInfo2Impl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - IProvideClassInfo2Impl
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - IProvideClassInfo2 ATL implementation
 - class information, ATL
 ms.assetid: d74956e8-9c69-4cba-b99d-ca1ac031bb9d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fe466608acaecfaf6219b6d15d27e0611ac2511
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a970b0258c8d353dabad96d712598416caf2acb4
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="iprovideclassinfo2impl-class"></a>IProvideClassInfo2Impl sınıfı
 Bu sınıf, bir varsayılan uygulamasını sağlar [IProvideClassInfo'yu](http://msdn.microsoft.com/library/windows/desktop/ms687303) ve [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) yöntemleri.  
@@ -91,7 +86,7 @@ class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
 ## <a name="remarks"></a>Açıklamalar  
  [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) arabirimi genişletiyor [IProvideClassInfo'yu](http://msdn.microsoft.com/library/windows/desktop/ms687303) ekleyerek `GetGUID` yöntemi. Bu yöntem, varsayılan olay kümesi için bir nesnenin giden arabirimi IID almak bir istemcinin sağlar. Sınıf `IProvideClassInfo2Impl` bir varsayılan uygulamayı sağlar **IProvideClassInfo'yu** ve `IProvideClassInfo2` yöntemleri.  
   
- `IProvideClassInfo2Impl`statik bir üyenin türü içeren `CComTypeInfoHolder` coclass'ı için tür bilgisi yönetir.  
+ `IProvideClassInfo2Impl` statik bir üyenin türü içeren `CComTypeInfoHolder` coclass'ı için tür bilgisi yönetir.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `IProvideClassInfo2`  
@@ -101,7 +96,7 @@ class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="getclassinfo"></a>IProvideClassInfo2Impl::GetClassInfo  
+##  <a name="getclassinfo"></a>  IProvideClassInfo2Impl::GetClassInfo  
  Alır bir `ITypeInfo` coclass tür bilgileri işaretçi.  
   
 ```
@@ -111,7 +106,7 @@ STDMETHOD(GetClassInfo)(ITypeInfo** pptinfo);
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [IProvideClassInfo::GetClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms690192) Windows SDK.  
   
-##  <a name="getguid"></a>IProvideClassInfo2Impl::GetGUID  
+##  <a name="getguid"></a>  IProvideClassInfo2Impl::GetGUID  
  Nesnenin giden görüntüleme arabirimi için GUID alır.  
   
 ```
@@ -123,7 +118,7 @@ STDMETHOD(GetGUID)(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [IProvideClassInfo2::GetGUID](http://msdn.microsoft.com/library/windows/desktop/ms679721) Windows SDK.  
   
-##  <a name="iprovideclassinfo2impl"></a>IProvideClassInfo2Impl::IProvideClassInfo2Impl  
+##  <a name="iprovideclassinfo2impl"></a>  IProvideClassInfo2Impl::IProvideClassInfo2Impl  
  Oluşturucu.  
   
 ```
@@ -133,7 +128,7 @@ IProvideClassInfo2Impl();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları `AddRef` üzerinde [_tih](#_tih) üyesi. Yıkıcı çağrıları **sürüm**.  
   
-##  <a name="_tih"></a>IProvideClassInfo2Impl::_tih  
+##  <a name="_tih"></a>  IProvideClassInfo2Impl::_tih  
  Bu statik veri üyesi sınıfı şablon parametresi örneği olan `tihclass`, varsayılan olarak `CComTypeInfoHolder`.  
   
 ```
@@ -142,7 +137,7 @@ static  tihclass
 ```     
   
 ### <a name="remarks"></a>Açıklamalar  
- `_tih`coclass'ı türü bilgilerini yönetir.  
+ `_tih` Coclass'ı türü bilgilerini yönetir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../../atl/atl-class-overview.md)

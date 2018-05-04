@@ -1,10 +1,10 @@
 ---
-title: "/ ZC: wchar_t (wchar_t yerel tür olan) | Microsoft Docs"
-ms.custom: 
+title: '/ ZC: wchar_t (wchar_t yerel tür olan) | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/01/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.TreatWChar_tAsBuiltInType
 - VC.Project.VCCLCompilerTool.TreatWChar_tAsBuiltInType
@@ -20,14 +20,13 @@ helpviewer_keywords:
 ms.assetid: b0de5a84-da72-4e5a-9a4e-541099f939e0
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4970e4aba8bf2d6aebf60f876a4770b18943781
-ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
+ms.openlocfilehash: 061aa4a70412a0b51450470e690bea5633b764ad
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="zcwchart-wchart-is-native-type"></a>/Zc:wchar_t (wchar_t Yerel Tür)
 

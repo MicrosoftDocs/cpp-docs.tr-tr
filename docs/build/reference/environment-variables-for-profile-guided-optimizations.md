@@ -12,14 +12,13 @@ helpviewer_keywords:
 ms.assetid: f95a6d1e-49a4-4802-a144-092026b600a3
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 701f0292d9960801139abc698946122718247645
-ms.sourcegitcommit: ee7d74683af7631441c8c7f65ef5ceceaee4a5ee
+ms.openlocfilehash: 19edc9c8a2702e5b7ac9ae4a49364718f19d3900
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="environment-variables-for-profile-guided-optimizations"></a>Profil Temelli İyileştirmeler için Ortam Değişkenleri
 
@@ -47,7 +46,7 @@ Güvenli modda PGO profil çalıştırmak için ya da ortam değişkeni kullanma
 
 ### <a name="pogosafemode-syntax"></a>PogoSafeMode sözdizimi
 
-> **set PogoSafeMode**[**=**_value_]
+> **PogoSafeMode ayarlamak**[**=**_değeri_]
 
 Ayarlama **PogoSafeMode** güvenli modunu etkinleştirmek için herhangi bir değere. Önceki bir değeri silin ve hızlı mod yeniden etkinleştirmek için bir değer ayarlayın.
 
@@ -59,7 +58,7 @@ Değiştirme **vcprofıle_alloc_scale** ayrılan bellek miktarını değiştirme
 
 ### <a name="vcprofileallocscale-syntax"></a>Vcprofıle_alloc_scale sözdizimi
 
-> **set VCPROFILE_ALLOC_SCALE**[__=__*scale_value*]
+> **vcprofıle_alloc_scale ayarlamak**[__=__*scale_value*]
 
 *Scale_value* ölçekleme faktörü sınama senaryolarını çalıştırmak için istediğiniz bellek miktarı için bir parametredir.  Varsayılan değer 1'dir. Örneğin, bu komut satırı ölçek faktörü 2'ye ayarlanır:
 

@@ -1,13 +1,10 @@
 ---
-title: "_Cıatan2 | Microsoft Docs"
-ms.custom: 
+title: _Cıatan2 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - _CIatan2
 apilocation:
@@ -28,17 +25,15 @@ helpviewer_keywords:
 - _CIatan2 intrinsic
 - CIatan2 intrinsic
 ms.assetid: 31f8cc78-b79f-4576-b73b-8add18e08680
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a3163dcb844892cd4add63c4c985d3742831523
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 33abe3dd332bdb55decde308d67d0e1af13e13f8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ciatan2"></a>_CIatan2
 Tanjantını hesaplar *x* / *y* nerede *x* ve *y* yığının üst kısmında değerlerdir.  

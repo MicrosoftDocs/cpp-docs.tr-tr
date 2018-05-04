@@ -1,13 +1,10 @@
 ---
 title: inp, inpw | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - inp
 - inpw
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - inp function
 - inpw function
 ms.assetid: c7e1eeac-77cd-47ff-b843-4095b4c31d3b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 409d3dbdaf5b15c56365e06b28b09f69a39dd31a
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: d1049965d7edd880027eaff264fffe56fc1cdb1f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="inp-inpw"></a>inp, inpw
 Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumluluğunu kullanmak [_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md) yerine.  

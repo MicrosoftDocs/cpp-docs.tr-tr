@@ -1,30 +1,25 @@
 ---
-title: "Ön işleme yönergeleri | Microsoft Docs"
-ms.custom: 
+title: Ön işleme yönergeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - preprocessing directives, C
 - preprocessing directives
 ms.assetid: b27d7444-8f84-4c31-b2fa-03335412d5e6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5130f1edcce8491be10c4b94da63bc0aa80768fe
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6ff05b108e0debe2e408586e63bed244f87f6b76
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="preprocessing-directives"></a>Ön işleme Yönergeleri
 -   [Karakter Sabitleri ve Koşullu Dahil Etme](../c-language/character-constants-and-conditional-inclusion.md)  

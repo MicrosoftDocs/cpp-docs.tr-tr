@@ -1,13 +1,10 @@
 ---
-title: "EDITBIN seçenekleri | Microsoft Docs"
-ms.custom: 
+title: EDITBIN seçenekleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - editbin
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - EDITBIN program, options
 ms.assetid: 2da9f88e-cbab-4d64-bb66-ef700535230f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4fc808f27b1d7a37e29a0f308ce51d31a9cc953
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 1922e410b0151337ce403e24d20ae90b7e964cd5
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="editbin-options"></a>EDITBIN Seçenekleri
 Nesne dosyaları, yürütülebilir dosyaları ve dinamik bağlantı kitaplıklarını (DLL'ler) değiştirmek için EDITBIN kullanabilirsiniz. EDITBIN yaptığı değişiklikler seçeneklerini belirtin.  
@@ -46,7 +41,7 @@ Nesne dosyaları, yürütülebilir dosyaları ve dinamik bağlantı kitaplıklar
 |[/HIGHENTROPYVA](../../build/reference/highentropyva.md)|DLL veya yürütülebilir görüntü yüksek entropi (64-bit) adres boşluğu düzeni rastgele seçimini (ASLR) destekleyip desteklemediğini belirtir.|  
 |[/INTEGRITYCHECK](../../build/reference/integritycheck.md)|Yükleme zamanında dijital imza denetlenip denetlenmeyeceğini belirtir.|  
 |[/LARGEADDRESSAWARE](../../build/reference/largeaddressaware.md)|Nesne iki gigabayttan büyük adresleri destekleyip desteklemediğini belirtir.|  
-|[/NOLOGO](../../build/reference/nologo-editbin.md)|EDITBIN Başlangıç başlığını gizler.|  
+|[/ NOLOGO](../../build/reference/nologo-editbin.md)|EDITBIN Başlangıç başlığını gizler.|  
 |[/NXCOMPAT](../../build/reference/nxcompat.md)|Yürütülebilir görüntü Windows Veri Yürütme Engellemesi ile uyumlu olup olmadığını belirtir.|  
 |[/REBASE](../../build/reference/rebase.md)|Belirtilen nesneler için temel adres ayarlar.|  
 |[/RELEASE](../../build/reference/release.md)|Sağlama toplamı üstbilgisinde ayarlar.|  

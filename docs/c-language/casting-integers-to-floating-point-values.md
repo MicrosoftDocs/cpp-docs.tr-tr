@@ -1,29 +1,24 @@
 ---
-title: "Kayan nokta değerlerine tam sayılar atama | Microsoft Docs"
-ms.custom: 
+title: Kayan nokta değerlerine tam sayılar atama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - integers, casting to floating-point values
 ms.assetid: 81fd5b7d-15eb-4c11-a8c8-e1621ff54fd3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d926b50cdd8caef1a1119aaf319bfae88970651
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e00fdfc44c5939dbed2fb3258f0cab0023feeda0
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="casting-integers-to-floating-point-values"></a>Kayan Nokta Değerlerine Tam Sayılar Atama
 **ANSI 3.2.1.3** bir tamsayı özgün değeri tam olarak temsil edilemez kayan noktalı bir sayının dönüştürüldüğünde kesilmesi yönü  

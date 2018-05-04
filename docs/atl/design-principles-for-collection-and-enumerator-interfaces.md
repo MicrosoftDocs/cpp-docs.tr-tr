@@ -1,30 +1,25 @@
 ---
-title: "Koleksiyon ve Numaralandırıcı arabirimleri (ATL) tasarlama | Microsoft Docs"
-ms.custom: 
+title: Koleksiyon ve Numaralandırıcı arabirimleri (ATL) tasarlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - enumerator interfaces
 - collection interfaces
 ms.assetid: ea19a39e-6333-41a1-be62-5435c236640e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8709274e1b95816dee01b4457993521dde5d5213
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 05649cce0e80af6f54327545cef7b663d69babf9
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="design-principles-for-collection-and-enumerator-interfaces"></a>Tasarım ilkeleri toplama ve Numaralandırıcı arabirimleri
 Her tür arabirimi arkasında farklı tasarım ilkeleri vardır:  

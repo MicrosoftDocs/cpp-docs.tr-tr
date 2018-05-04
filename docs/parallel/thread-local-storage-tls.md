@@ -1,12 +1,12 @@
 ---
-title: "İş parçacığı yerel depolaması (TLS) | Microsoft Docs"
-ms.custom: 
+title: İş parçacığı yerel depolaması (TLS) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -18,22 +18,22 @@ helpviewer_keywords:
 - thread attribute
 - Thread Local Storage [C++]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47e6be3645e03892d17e45256a5a003d982d973f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0b01bd50fa50a449128842755898d703f7bafe76
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="thread-local-storage-tls"></a>İş Parçacığında Yerel Depolama (TLS)
 İş parçacığı yerel depolaması (TLS) verilen birden çok iş parçacıklı işlemdeki her bir iş parçacığı iş parçacığına özgü veri depolanacağı konumları ayırabilirsiniz yöntemidir. Dinamik olarak bağlama (çalışma zamanı) iş parçacığına özgü veri TLS API yoluyla desteklenir ([TlsAlloc](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686801), [TlsGetValue](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686812), [TlsSetValue](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686818), ve [TlsFree](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686804)). İş parçacığı yerel depolama Windows nasıl uygulandığı hakkında daha fazla bilgi için bkz: [iş parçacığı yerel depolaması (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686749\(v=vs.85\).aspx).  Win32 ve Visual C++ Derleyici artık varolan API uygulamasına ek olarak statik olarak bağlı (yük-time) iş parçacığı başına veri destekler.  
   
-##  <a name="_core_compiler_implementation_for_tls"></a>TLS için derleyici uygulaması  
+##  <a name="_core_compiler_implementation_for_tls"></a> TLS için derleyici uygulaması  
  **C ++ 11:** `thread_local` depolama sınıfı tanımlayıcısı olan nesneleri için iş parçacığı yerel depolama belirtin ve sınıf üyeleri için önerilen yöntem. Daha fazla bilgi için bkz: [depolama sınıfları (C++)](../cpp/storage-classes-cpp.md).  
   
  Visual C++ Ayrıca, bir Microsoft özel öznitelik sağlar [iş parçacığı](../cpp/thread.md), genişletilmiş depolama sınıfı değiştirici olarak. Kullanım `__declspec` bildirmek için anahtar sözcüğü bir **iş parçacığı** değişkeni. Örneğin, aşağıdaki kod bir tamsayı iş parçacığı yerel değişken bildirir ve bir değerle başlatır:  
@@ -119,7 +119,7 @@ __declspec( thread ) int tls_i = 1;
   
      C++ tür dinamik başlatma iş parçacığı verilerin iş parçacığı yerel depolama tesisi gelecekteki olası geliştirmeler nedeniyle izin vermiyor.  
   
--   Önceki Windows işletim sistemlerinde [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)], `__declspec`(iş parçacığı) bazı sınırlamalar vardır. DLL herhangi bir veri veya nesne olarak bildirirse `__declspec`(iş parçacığı) sebep olabilir koruma hatası dinamik olarak yüklenmişse. DLL ile yüklendikten sonra [LoadLibrary](http://msdn.microsoft.com/library/windows/desktop/ms684175), kod başvurursa sistem hatasına neden olur `__declspec`(iş parçacığı) veri. Bir iş parçacığı genel değişkeni alanını çalışma zamanında ayrılmış olduğundan, bu alanı boyutunu uygulamanın gereksinimlerini gereksinimlerinin ve statik olarak bağlı olan tüm DLL'ler hesaplaması temel alır. Kullandığınızda `LoadLibrary`, ile bildirilen iş parçacığı yerel değişkenleri izin vermek için bu alanı genişletemezsiniz `__declspec`(iş parçacığı). TLS API ' larını kullanın [TlsAlloc](http://msdn.microsoft.com/library/windows/desktop/ms686801), DLL ile yüklenmesi gereken, TLS ayırmak için dll `LoadLibrary`.  
+-   Önce Windows Vista, Windows işletim sistemlerinde `__declspec`(iş parçacığı) bazı sınırlamalar vardır. DLL herhangi bir veri veya nesne olarak bildirirse `__declspec`(iş parçacığı) sebep olabilir koruma hatası dinamik olarak yüklenmişse. DLL ile yüklendikten sonra [LoadLibrary](http://msdn.microsoft.com/library/windows/desktop/ms684175), kod başvurursa sistem hatasına neden olur `__declspec`(iş parçacığı) veri. Bir iş parçacığı genel değişkeni alanını çalışma zamanında ayrılmış olduğundan, bu alanı boyutunu uygulamanın gereksinimlerini gereksinimlerinin ve statik olarak bağlı olan tüm DLL'ler hesaplaması temel alır. Kullandığınızda `LoadLibrary`, ile bildirilen iş parçacığı yerel değişkenleri izin vermek için bu alanı genişletemezsiniz `__declspec`(iş parçacığı). TLS API ' larını kullanın [TlsAlloc](http://msdn.microsoft.com/library/windows/desktop/ms686801), DLL ile yüklenmesi gereken, TLS ayırmak için dll `LoadLibrary`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)   

@@ -1,13 +1,10 @@
 ---
-title: "delete işleci (CRT) | Microsoft Docs"
-ms.custom: 
+title: delete işleci (CRT) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apilocation:
 - msvcr80.dll
 - msvcr90.dll
@@ -24,17 +21,15 @@ helpviewer_keywords:
 - scalar delete
 - operator delete
 ms.assetid: bcd0066a-0022-45f5-af4c-9007c64a6b89
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e52a456664efe2a983151d29d4f33d1cba09d563
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bafea205b79c940dd79da3bb27909348930ac4df
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="operator-delete-crt"></a>delete işleci (CRT)
 

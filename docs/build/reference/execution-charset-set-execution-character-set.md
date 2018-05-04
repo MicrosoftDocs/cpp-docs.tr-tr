@@ -2,13 +2,10 @@
 title: -yürütme-charset (kümesi yürütme karakter kümesi) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - execution-charset
 - /execution-charset
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - /execution-charset compiler option
 - -execution-charset compiler option
 ms.assetid: 0e02f487-2236-45bc-95f3-5760933a8f96
-caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7294270778d0b9351d3e58e8afd285f021bb0066
-ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
+ms.openlocfilehash: 5bffe1e39aa181a6d53784fbb4501bf8f662b221
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="execution-charset-set-execution-character-set"></a>/Execution-Charset (ayarlamak yürütme karakter kümesi)
 Yürütme karakter kümesi için yürütülebilir belirtmenize olanak sağlar.  

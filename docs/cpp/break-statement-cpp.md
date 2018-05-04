@@ -2,11 +2,8 @@
 title: break deyimi (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - break_cpp
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - break keyword [C++]
 ms.assetid: 63739928-8985-4b05-93ce-016322e6da3d
-caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1f9c9a09652eb76511c7d059cc70eae3fb99ffd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c3679ad27683e5f7ff9a13f5b5021710f7894c04
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="break-statement-c"></a>break Deyimi (C++)
 `break` Deyimi en yakın kapsayan, yürütme sona erdirir döngü ya da göründüğü koşullu ifade. Denetim, varsa, deyimin sonunu takip eden deyime geçer.  

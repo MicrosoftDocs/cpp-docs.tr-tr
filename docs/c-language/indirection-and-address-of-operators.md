@@ -1,13 +1,10 @@
 ---
-title: "Yöneltmesi ve adresi işleçlerin | Microsoft Docs"
-ms.custom: 
+title: Yöneltmesi ve adresi işleçlerin | Microsoft Docs
+ms.custom: ''
 ms.date: 02/16/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -24,17 +21,15 @@ helpviewer_keywords:
 - '* operator, address-of operator'
 - operators [C++], indirection
 ms.assetid: 10d62b00-12ba-4ea9-a2d5-09ac29ca2232
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d65a380194e5634d5873e9b060c49096197e48f2
-ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.openlocfilehash: 75afd44b8c0a31d9f3731a4c6f9fb86c15de4328
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="indirection-and-address-of-operators"></a>İşleçlerin Yöneltmesi ve Adresi
 
@@ -52,9 +47,9 @@ Birli indirection işleci (__&#42;__) bir değer bir işaretçi dolaylı olarak 
 
 - İşaretçi, yürütülen program tarafından kullanılmayan bir adresi belirtir.
 
-Address-of birli işleci (**&**), işlenen adresini verir. İşleneni, bildirilmemiş olan bir nesne atayan bir ya da lvalue olmalıdır __kaydetmek__ ve bit alanı ya da bir tekli sonucunu __&#42;__ işleci veya bir dizi başvuru ( __&#91; &#93;__ ) operatör ya da bir işlevi tanımlayıcı. Sonuç türü olan *yazmak için işaretçi* bir işlenen türü için *türü*.
+Address-of birli işleci (**&**), işlenen adresini verir. İşleneni, bildirilmemiş olan bir nesne atayan bir ya da lvalue olmalıdır __kaydetmek__ ve bit alanı ya da bir tekli sonucunu __&#42;__ işleci veya bir dizi başvuru (__&#91; &#93;__) operatör ya da bir işlevi tanımlayıcı. Sonuç türü olan *yazmak için işaretçi* bir işlenen türü için *türü*.
 
-İşlenen bir tekli sonucunu ise __&#42;__ işleci, hiçbiri işleci değerlendirilir ve her ikisi de atlanmış gibi sonucudur. Sonuç bir lvalue değil ve işleçler kısıtlamalar hala geçerlidir. İşlenen sonucu ise bir __&#91; &#93;__ işleci, hiçbiri  __&__  ya da birli işleç __&#42;__ tarafından kapsanan  __&#91; &#93;__  işleci değerlendirildiği. Sonucu kaldırma aynı etkiye sahip  __&__  işleci ve değiştirme __&#91; &#93;__ işleci bir  __+__  işleci. Aksi takdirde, sonuç nesnesi veya işlenen tarafından belirlenen işlevi bir işaretçidir.
+İşlenen bir tekli sonucunu ise __&#42;__ işleci, hiçbiri işleci değerlendirilir ve her ikisi de atlanmış gibi sonucudur. Sonuç bir lvalue değil ve işleçler kısıtlamalar hala geçerlidir. İşlenen sonucu ise bir __&#91; &#93;__ işleci, hiçbiri __&__ ya da birli işleç __&#42;__ tarafındankapsanan __&#91; &#93;__ işleci değerlendirildiği. Sonucu kaldırma aynı etkiye sahip __&__ işleci ve değiştirme __&#91; &#93;__ işleci bir __+__ işleci. Aksi takdirde, sonuç nesnesi veya işlenen tarafından belirlenen işlevi bir işaretçidir.
 
 
 ## <a name="examples"></a>Örnekler
@@ -99,5 +94,5 @@ assert( pround == proundup );
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönlendirme işleci: &#42;](../cpp/indirection-operator-star.md)  
+[Yönlendirme işleci:&#42;](../cpp/indirection-operator-star.md)  
 [Address-of İşleci: &](../cpp/address-of-operator-amp.md)  

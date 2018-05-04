@@ -2,11 +2,8 @@
 title: Abort | Microsoft Docs
 ms.custom: ''
 ms.date: 1/02/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - abort
@@ -33,14 +30,13 @@ helpviewer_keywords:
 - processes, aborting
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f66c1fc650582dba99ad314d8202b3c2d2516e26
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 943faab6b13f3d07b2ca19d78c555973149aa4b0
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="abort"></a>durdur
 

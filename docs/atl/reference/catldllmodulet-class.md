@@ -1,12 +1,9 @@
 ---
-title: "CAtlDllModuleT sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAtlDllModuleT sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CAtlDllModuleT
@@ -23,17 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - CAtlDllModuleT class
 ms.assetid: 351d5767-8257-4878-94be-45a85e31a72d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 650924898532e352df30d7e8173620b974f30138
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6b1ea8b5922454d32961f0e7d87eda16f55fe52c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="catldllmodulet-class"></a>CAtlDllModuleT sınıfı
 Bu sınıf için bir DLL modülü temsil eder.  
@@ -70,7 +65,7 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 |[CAtlDllModuleT::GetClassObject](#getclassobject)|Bir sınıf fabrikası döndürür. Tarafından çağrılan [DllGetClassObject](#dllgetclassobject).|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CAtlDllModuleT`dinamik bağlantı kitaplığı (DLL) için modülü temsil eder ve tüm DLL projeler tarafından kullanılan işlevler sağlar. Bu alt uzmanlaşması [CAtlModuleT](../../atl/reference/catlmodulet-class.md) sınıfı kaydı için destek içerir.  
+ `CAtlDllModuleT` dinamik bağlantı kitaplığı (DLL) için modülü temsil eder ve tüm DLL projeler tarafından kullanılan işlevler sağlar. Bu alt uzmanlaşması [CAtlModuleT](../../atl/reference/catlmodulet-class.md) sınıfı kaydı için destek içerir.  
   
  ATL modülleri hakkında daha fazla bilgi için bkz: [ATL modül sınıfları](../../atl/atl-module-classes.md).  
   
@@ -86,21 +81,21 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
-##  <a name="catldllmodulet"></a>CAtlDllModuleT::CAtlDllModuleT  
+##  <a name="catldllmodulet"></a>  CAtlDllModuleT::CAtlDllModuleT  
  Oluşturucu.  
   
 ```
 CAtlDllModuleT() throw();
 ```  
   
-##  <a name="dtor"></a>CAtlDllModuleT:: ~ CAtlDllModuleT  
+##  <a name="dtor"></a>  CAtlDllModuleT:: ~ CAtlDllModuleT  
  Yok Edicisi.  
   
 ```
 ~CAtlDllModuleT() throw();
 ```  
   
-##  <a name="dllcanunloadnow"></a>CAtlDllModuleT::DllCanUnloadNow  
+##  <a name="dllcanunloadnow"></a>  CAtlDllModuleT::DllCanUnloadNow  
  Testleri DLL kaldırılmış olabilir.  
   
 ```
@@ -110,7 +105,7 @@ HRESULT DllCanUnloadNow() throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Başaramazsa DLL bellekten olabiliyorsa, S_OK veya S_FALSE döndürür.  
   
-##  <a name="dllgetclassobject"></a>CAtlDllModuleT::DllGetClassObject  
+##  <a name="dllgetclassobject"></a>  CAtlDllModuleT::DllGetClassObject  
  Sınıf Üreteç döndürür.  
   
 ```
@@ -133,7 +128,7 @@ HRESULT DllGetClassObject(
 ### <a name="return-value"></a>Dönüş Değeri  
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
-##  <a name="dllmain"></a>CAtlDllModuleT::DllMain  
+##  <a name="dllmain"></a>  CAtlDllModuleT::DllMain  
  Dinamik bağlantı kitaplığı (DLL) içine isteğe bağlı giriş noktası.  
   
 ```
@@ -153,7 +148,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID /* lpReserved*/) throw();
 ### <a name="remarks"></a>Açıklamalar  
  DllMain devre dışı bırakma ve DLL_THREAD_ATTACH bildirim çağrıları birçok DLL'leri sahip birden çok iş parçacıklı uygulamalar için yararlı bir iyileştirme olabilir, sık oluşturmak ve iş parçacıkları silin ve, DLL'ler, bu iş parçacığı düzeyi bildirimler gerekmez Ek/ayrılmayı.  
   
-##  <a name="dllregisterserver"></a>CAtlDllModuleT::DllRegisterServer  
+##  <a name="dllregisterserver"></a>  CAtlDllModuleT::DllRegisterServer  
  DLL içindeki nesneler için sistem kayıt defteri girdileri ekler.  
   
 ```
@@ -167,7 +162,7 @@ HRESULT DllRegisterServer(BOOL bRegTypeLib = TRUE) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
-##  <a name="dllunregisterserver"></a>CAtlDllModuleT::DllUnregisterServer  
+##  <a name="dllunregisterserver"></a>  CAtlDllModuleT::DllUnregisterServer  
  DLL içindeki nesneler için sistem kayıt defteri girişlerini kaldırır.  
   
 ```
@@ -181,7 +176,7 @@ HRESULT DllUnregisterServer(BOOL bUnRegTypeLib = TRUE) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
-##  <a name="getclassobject"></a>CAtlDllModuleT::GetClassObject  
+##  <a name="getclassobject"></a>  CAtlDllModuleT::GetClassObject  
  Belirtilen CLSID bir nesne oluşturur.  
   
 ```

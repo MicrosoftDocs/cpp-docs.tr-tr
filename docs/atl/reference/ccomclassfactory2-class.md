@@ -1,12 +1,9 @@
 ---
-title: "CComClassFactory2 sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComClassFactory2 sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComClassFactory2
@@ -21,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - CComClassFactory2 class
 ms.assetid: 19b66fd6-b9ed-47a0-822c-8132184f5a3e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5b1626a9ce7ef729416f7e6e1a6d3c60836dbed
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: da2b47290d3d0be525ca65b16733c9f42835d24e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomclassfactory2-class"></a>CComClassFactory2 sınıfı
 Bu sınıf uygulayan [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) arabirimi.  
@@ -68,7 +63,7 @@ class CComClassFactory2 : public IClassFactory2,
 |[CComClassFactory2::RequestLicKey](#requestlickey)|Oluşturur ve bir lisans anahtarı döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComClassFactory2`uygulayan [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) uzantısıdır arabirimi, [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364). **IClassFactory2** denetimleri nesne bir lisans ile oluşturma. Bir sınıf Fabrika lisanslı bir makinede yürütülen bir çalışma zamanı lisans anahtarı sağlayabilir. Bu lisans anahtarı tam makine lisans yoksa nesneleri örneği oluşturmak bir uygulama sağlar.  
+ `CComClassFactory2` uygulayan [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) uzantısıdır arabirimi, [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364). **IClassFactory2** denetimleri nesne bir lisans ile oluşturma. Bir sınıf Fabrika lisanslı bir makinede yürütülen bir çalışma zamanı lisans anahtarı sağlayabilir. Bu lisans anahtarı tam makine lisans yoksa nesneleri örneği oluşturmak bir uygulama sağlar.  
   
  ATL nesneleri normalde türetme tarafından bir üreteci elde [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makrosu içerir [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), hangi bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) varsayılan üreteci olarak. Kullanılacak `CComClassFactory2`, belirtin [DECLARE_CLASSFACTORY2](aggregation-and-class-factory-macros.md#declare_classfactory2) makrosu, nesnenin sınıf tanımında. Örneğin:  
   
@@ -78,14 +73,14 @@ class CComClassFactory2 : public IClassFactory2,
   
  [!code-cpp[NVC_ATL_COM#3](../../atl/codesnippet/cpp/ccomclassfactory2-class_2.h)]  
   
- `CComClassFactory2`hem türetilen **CComClassFactory2Base** ve *lisans*. **CComClassFactory2Base**, buna karşılık, türetilen **IClassFactory2** ve **in uygulamasına\< CComGlobalsThreadModel >**.  
+ `CComClassFactory2` hem türetilen **CComClassFactory2Base** ve *lisans*. **CComClassFactory2Base**, buna karşılık, türetilen **IClassFactory2** ve **in uygulamasına\< CComGlobalsThreadModel >**.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CComObjectRootBase`  
   
  `license`  
   
- [İn uygulamasına](../../atl/reference/ccomobjectrootex-class.md)  
+ [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)  
   
  `IClassFactory2`  
   
@@ -94,7 +89,7 @@ class CComClassFactory2 : public IClassFactory2,
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="createinstance"></a>CComClassFactory2::CreateInstance  
+##  <a name="createinstance"></a>  CComClassFactory2::CreateInstance  
  Belirtilen CLSID bir nesne oluşturur ve bu nesne için bir arabirim işaretçisi alır.  
   
 ```
@@ -117,7 +112,7 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ### <a name="remarks"></a>Açıklamalar  
  Makine tam olarak lisansına sahip olması gerekir. Tam makine lisans mevcut değilse çağrı [CreateInstanceLic](#createinstancelic).  
   
-##  <a name="createinstancelic"></a>CComClassFactory2::CreateInstanceLic  
+##  <a name="createinstancelic"></a>  CComClassFactory2::CreateInstanceLic  
  Benzer şekilde [CreateInstance](#createinstance)dışında `CreateInstanceLic` bir lisans anahtarı gerektirir.  
   
 ```
@@ -152,7 +147,7 @@ STDMETHOD(CreateInstanceLic)(
 ### <a name="remarks"></a>Açıklamalar  
  Kullanarak bir lisans anahtarı edinebilirsiniz [RequestLicKey](#requestlickey). Bir nesne üzerinde lisanssız bir makine oluşturmak için çağırmalısınız `CreateInstanceLic`.  
   
-##  <a name="getlicinfo"></a>CComClassFactory2::GetLicInfo  
+##  <a name="getlicinfo"></a>  CComClassFactory2::GetLicInfo  
  Doldurur bir [LICINFO](http://msdn.microsoft.com/library/windows/desktop/ms690590) üreteci açıklayan bilgileri yapısıyla yetenekleri lisans.  
   
 ```
@@ -169,7 +164,7 @@ STDMETHOD(GetLicInfo)(LICINFO* pLicInfo);
 ### <a name="remarks"></a>Açıklamalar  
  `fRuntimeKeyAvail` Bir lisans anahtarı verildiğinde, üreteci lisanssız bir makineye oluşturulmasını nesnelere izin verip vermediğini, bu yapı üyesi gösterir. *FLicVerified* üye tam makine lisans var olup olmadığını gösterir.  
   
-##  <a name="lockserver"></a>CComClassFactory2::LockServer  
+##  <a name="lockserver"></a>  CComClassFactory2::LockServer  
  Artırır ve modül kilit sayısı çağırarak azaltır **_Module::Lock** ve **_Module::Unlock**sırasıyla.  
   
 ```
@@ -188,7 +183,7 @@ STDMETHOD(LockServer)(BOOL fLock);
   
  Çağırma `LockServer` böylece birden fazla nesne hızlı oluşturulabilir üreteci tutmak bir istemcinin sağlar.  
   
-##  <a name="requestlickey"></a>CComClassFactory2::RequestLicKey  
+##  <a name="requestlickey"></a>  CComClassFactory2::RequestLicKey  
  Oluşturup, sağlanan bir lisans anahtarı döndürür `fRuntimeKeyAvail` üyesi [LICINFO](http://msdn.microsoft.com/library/windows/desktop/ms690590) yapısı **doğru**.  
   
 ```

@@ -1,13 +1,10 @@
 ---
-title: "-HEAP (öbek boyutunu Ayarla) | Microsoft Docs"
-ms.custom: 
+title: -HEAP (öbek boyutunu Ayarla) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.HeapCommitSize
 - /heap
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - /HEAP linker option
 - HEAP linker option
 ms.assetid: a3f71927-7f1d-492c-9fdb-dfccb1a043da
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5dd4ba44a76fa7881ebee2ec2f472dad8675e2c8
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: 7b968b3c8e9063eea897c70d4ae2a62a9a232d6b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="heap-set-heap-size"></a>/HEAP (Öbek Boyutunu Ayarla)
 ```  

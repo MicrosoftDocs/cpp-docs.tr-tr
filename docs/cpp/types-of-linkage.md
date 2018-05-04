@@ -1,12 +1,9 @@
 ---
-title: "Bağlantı türleri | Microsoft Docs"
-ms.custom: 
+title: Bağlantı türleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - internal linkage, types of linkage
 - external linkage, linkage types
 ms.assetid: 41326c7f-4602-4bad-a648-697604858ba0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f71fc6e0d0251db38cd1c3dc1032ba6c71ba3ba4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dfddf0105603311179340a0c6b0b2e8fb328b134
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="types-of-linkage"></a>Bağlantı Türleri
 Nesne ve işlev adlarının çeviri birimleri arasında paylaşılma yöntemine bağlantı adı verilir. Bu adlarda şunlar olabilir:  
@@ -56,4 +51,4 @@ Nesne ve işlev adlarının çeviri birimleri arasında paylaşılma yöntemine 
 -   Bağlantı yok; bu durumda benzersiz varlıklara başvururlar. Başka bir kapsamdaki aynı ad, aynı nesneye başvurmayabilir. Örnek, bir numaralandırmadır. (Bununla birlikte, bir işaretçiyi nesneye bağlantı olmadan geçirebileceğinizi unutmayın. Bu, nesneyi diğer çeviri birimlerinde erişilebilir hale getirir.)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Program ve bağlantı](../cpp/program-and-linkage-cpp.md)
+ [Program ve Bağlantı](../cpp/program-and-linkage-cpp.md)

@@ -3,7 +3,7 @@ title: /ZF (daha hızlı PDB oluşturma) | Microsoft Docs
 ms.date: 03/29/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /Zf
 dev_langs:
@@ -13,12 +13,11 @@ helpviewer_keywords:
 - -Zf
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 7ae27e08e79d19e58c8440a5d7e5161eac9c306f
-ms.sourcegitcommit: 78e5e5cdbafd29e2a6ccf68d4cce215136952907
+ms.openlocfilehash: 968ce17302fa608888c7ae2fedf695946b0119bd
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="zf-faster-pdb-generation"></a>/ZF (daha hızlı PDB oluşturma)
 
@@ -26,7 +25,7 @@ Daha hızlı PDB nesil paralel derlemelerde mspdbsrv.exe RPC çağrıları en az
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zf**
+> **/ZF**
 
 ## <a name="remarks"></a>Açıklamalar
 

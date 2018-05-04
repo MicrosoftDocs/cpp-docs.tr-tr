@@ -1,13 +1,10 @@
 ---
-title: "Tür atama dönüşümleri | Microsoft Docs"
-ms.custom: 
+title: Tür atama dönüşümleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,30 +15,28 @@ helpviewer_keywords:
 - type casts [C++], about type-cast conversion
 - type-cast conversions [C++]
 ms.assetid: 57ab5902-f12f-4326-a2f6-6282f1d4025a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f402eb49e86c8d6d3ce6c332172375125f577a2b
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: f48d9a013240dddc95fbd977cdf383c3ebff188b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="type-cast-conversions"></a>Tür Atama Dönüştürmeleri
 Tür atamaları açıkça türlerine dönüştürmek için kullanabilirsiniz.  
   
  **Sözdizimi**  
   
- *cast-expression*:  
+ *Cast ifadesi*:  
  *Tek terimli ifadesi*  
   
- **(***türü adı***)***cast ifadesi*   
+ **(***türü adı***)***cast ifadesi*  
   
  *tür adı*:  
- *specifier-qualifier-list abstract-declarator* opt  
+ *belirleyici niteleyici listesinde Özet-bildirimcisi* iptal et  
   
  *Türü adı* bir tür ve *cast ifadesi* bu türe dönüştürülüp bir değerdir. Bir cast türünü sahip bir ifade l-değeri değil. *Cast ifadesi* türünde bir değişken için atanmış gibi sorgulamanıza dönüştürülür *türü adı*. Dönüştürme kurallarını atamaların (özetlenen [atama dönüşümleri](../c-language/assignment-conversions.md)) atamalar da türü için geçerlidir. Aşağıdaki tabloda verilen tüm tür atanabilecek türleri gösterilmektedir.  
   
@@ -60,7 +55,7 @@ Tür atamaları açıkça türlerine dönüştürmek için kullanabilirsiniz.
   
  Unutmayın bir **void \***  ifade türü işaretçi sahip `void`, türünde değil `void`. Bir nesne için cast varsa `void` türü, elde edilen ifadesi herhangi öğesine atanamaz. Hiçbir atama bir cast türünü nesnesine böylece benzer şekilde, bir tür atama nesnesi bir kabul edilebilir l-değeri değil.  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Tanımlayıcı boyutunu değişmeyen sürece bir cast türünü bir l-değeri ifade olabilir. L-değeri ifadeleri hakkında daha fazla bilgi için bkz: [L-değeri ve r değeri ifadeleri](../c-language/l-value-and-r-value-expressions.md).  
   

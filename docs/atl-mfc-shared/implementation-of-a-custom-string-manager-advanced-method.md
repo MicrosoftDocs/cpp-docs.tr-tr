@@ -1,29 +1,24 @@
 ---
-title: "Uygulama bir özel dize (Gelişmiş yöntemi) Yöneticisi'nin | Microsoft Docs"
-ms.custom: 
+title: Uygulama bir özel dize (Gelişmiş yöntemi) Yöneticisi'nin | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IAtlStringMgr class, using
 ms.assetid: 64ab7da9-47c1-4c4a-9cd7-4cc37e7f3f57
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e76edc65e5f30fee90f346d5434ecbee320a37a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 23798a4e3c1a5d3c46ea28dec39b37697aae640f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="implementation-of-a-custom-string-manager-advanced-method"></a>Uygulama bir özel dize Yöneticisi'nin (Gelişmiş yöntemi)
 Özel durumlarda hangi yığın bellek ayırmak için kullanılan daha fazlasını değişmez özel bir dize Yöneticisi uygulamak isteyebilirsiniz. Bu durumda, el ile uygulamalıdır [IAtlStringMgr](../atl-mfc-shared/reference/iatlstringmgr-class.md) arabirimi, özel bir dize Yöneticisi olarak.  
@@ -34,7 +29,7 @@ ms.lasthandoff: 12/21/2017
   
 -   [pStringMgr](../atl-mfc-shared/reference/cstringdata-class.md#pstringmgr) Bu alan işaret `IAtlStringMgr` Bu dize verilerini yönetmek için kullanılan arabirim. Zaman `CStringT` yeniden tahsis edin ya da yeniden ayırma veya geçirme, bu arabirimin ücretsiz yöntemlerini çağırır dize arabelleği serbest gereken `CStringData` bir parametre olarak yapısı. Ayırırken bir `CStringData` yapısı, dize Yöneticisi'nde, bu alan özel bir dize yöneticinize işaret edecek şekilde ayarlamanız gerekir.  
   
--   [nDataLength](../atl-mfc-shared/reference/cstringdata-class.md#ndatalength) Bu alan sonlandırma null hariç arabellekte depolanan dizesi geçerli mantıksal uzunluğu içerir. `CStringT`dize uzunluğu değiştiğinde bu alanı güncelleştirir. Ayırırken bir `CStringData` yapısı, dize yöneticinize ayarlamanız gerekir bu alan için sıfır. Ayrılırken bir `CStringData` yapısı, özel bir dize yöneticinize gerekir bırakın değişmeden Bu alan.  
+-   [nDataLength](../atl-mfc-shared/reference/cstringdata-class.md#ndatalength) Bu alan sonlandırma null hariç arabellekte depolanan dizesi geçerli mantıksal uzunluğu içerir. `CStringT` dize uzunluğu değiştiğinde bu alanı güncelleştirir. Ayırırken bir `CStringData` yapısı, dize yöneticinize ayarlamanız gerekir bu alan için sıfır. Ayrılırken bir `CStringData` yapısı, özel bir dize yöneticinize gerekir bırakın değişmeden Bu alan.  
   
 -   [nAllocLength](../atl-mfc-shared/reference/cstringdata-class.md#nalloclength) Bu alan en fazla Bu dize arabellek yeniden ayırma olmadan depolanabilir (sonlandırma null dışında) karakter sayısını içerir. Her `CStringT` dizesi mantıksal uzunluğu artırmak gereken ilk arabellekte yeterli alan olduğundan emin olmak için bu alanı denetler. Denetimi başarısız olursa `CStringT` arabellek yeniden ayırmak üzere özel bir dize yöneticinize çağrılar. Ayırma ya da yeniden ayırma bir `CStringData` yapısı, ayarlamalısınız bu en az içinde istenen karakter sayısı alanı **nChars** parametresi [IAtlStringMgr::Allocate](../atl-mfc-shared/reference/iatlstringmgr-class.md#allocate) veya [IAtlStringMgr::Reallocate](../atl-mfc-shared/reference/iatlstringmgr-class.md#reallocate). Arabellek istenenden daha fazla alan varsa, bu değer gerçek kullanılabilir alan miktarını yansıtacak şekilde ayarlayabilirsiniz. Böylece `CStringT` arabellek yeniden ayırmak üzere dize Manager'a geri çağırmaya sahip önce dize tamamını dolduracak şekilde ulaşması için ayrılmış alanı.  
   

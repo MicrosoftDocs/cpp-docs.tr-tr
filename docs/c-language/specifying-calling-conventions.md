@@ -1,27 +1,22 @@
 ---
-title: "Çağırma kurallarını belirtme | Microsoft Docs"
-ms.custom: 
+title: Çağırma kurallarını belirtme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: d6b23b76-eab5-4f6d-8731-9a89b6089d28
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc23e561b00022dc4238ec986f047d08825803a9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 27e92a5caf620bdd0b2f6379021b1fd4d5e0ba07
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specifying-calling-conventions"></a>Çağırma Kurallarını Belirtme
 **Microsoft özel**  

@@ -1,12 +1,9 @@
 ---
-title: "CComCompositeControl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComCompositeControl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComCompositeControl
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - CComCompositeControl class
 - composite controls, CComCompositeControl class
 ms.assetid: 1304b931-27e8-4fbc-be8e-bb226ad887fb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2308c2c8da67a7d6fe048f3e498e6d7ba1e3cad6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 592eb6c897f47bede5aa0a09149aaf791e8cfbce
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomcompositecontrol-class"></a>CComCompositeControl sınıfı
 Bu sınıf bileşik denetim uygulamak için gereken yöntemleri sağlar.  
@@ -83,7 +78,7 @@ class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 ## <a name="remarks"></a>Açıklamalar  
  Sınıfından türetilmiş sınıfları `CComCompositeControl` ActiveX bileşik denetim işlevselliğini devralır. ActiveX denetimleri türetilmiş `CComCompositeControl` standart iletişim kutusu tarafından barındırılır. Bu tür denetimler, diğer denetimler (yerel Windows denetimleri ve ActiveX denetimlerini) barındırabilen olduklarından bileşik denetimler adı verilir.  
   
- `CComCompositeControl`bir alt sınıfı numaralandırılmış veri üyesi arayarak bileşik denetim oluşturmak için iletişim kutusu kaynağı tanımlar. Bu alt sınıfın IDD üye denetimin pencere olarak kullanılacak iletişim kaynağının kaynak kimliği ayarlanır. Aşağıdaki sınıf türetilmiş veri üyesi örneğidir `CComCompositeControl` denetimin penceresi için kullanılacak iletişim kutusu kaynağı tanımlamak için içermelidir:  
+ `CComCompositeControl` bir alt sınıfı numaralandırılmış veri üyesi arayarak bileşik denetim oluşturmak için iletişim kutusu kaynağı tanımlar. Bu alt sınıfın IDD üye denetimin pencere olarak kullanılacak iletişim kaynağının kaynak kimliği ayarlanır. Aşağıdaki sınıf türetilmiş veri üyesi örneğidir `CComCompositeControl` denetimin penceresi için kullanılacak iletişim kutusu kaynağı tanımlamak için içermelidir:  
   
  [!code-cpp[NVC_ATL_COM#13](../../atl/codesnippet/cpp/ccomcompositecontrol-class_1.h)]  
   
@@ -110,7 +105,7 @@ class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlctl.h  
   
-##  <a name="advisesinkmap"></a>CComCompositeControl::AdviseSinkMap  
+##  <a name="advisesinkmap"></a>  CComCompositeControl::AdviseSinkMap  
  Öneri veya bileşik denetim tarafından barındırılan tüm denetimler unadvise için bu yöntemi çağırın.  
   
 ```
@@ -143,7 +138,7 @@ HRESULT AdviseSinkMap(bool bAdvise);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemin temel uygulamayı girişlerini gözden olay havuz eşlemeyi arar. Öneren veya olay havuz haritanın havuz girdileri tarafından açıklanan COM nesneleri için bağlantı noktaları unadvises. Bu üye yöntemi de türetilmiş bir sınıf örneğinden devralır olgu kullanır `IDispEventImpl` tavsiye edilir veya unadvised olacak havuz eşlemesindeki her denetim için.  
   
-##  <a name="calcextent"></a>CComCompositeControl::CalcExtent  
+##  <a name="calcextent"></a>  CComCompositeControl::CalcExtent  
  Boyutu hesaplamak için bu yöntemi çağırın **HIMETRIC** bileşik denetim barındırmak için kullanılan iletişim kaynak ölçü.  
   
 ```
@@ -160,7 +155,7 @@ BOOL CalcExtent(SIZE& size);
 ### <a name="remarks"></a>Açıklamalar  
  Boyutu döndürülür `size` parametresi.  
   
-##  <a name="create"></a>CComCompositeControl::Create  
+##  <a name="create"></a>  CComCompositeControl::Create  
  Bileşik Denetim denetimi penceresi oluşturmak için bu yöntem çağrılır.  
   
 ```
@@ -186,7 +181,7 @@ HWND Create(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem genellikle denetimi yerinde etkinleştirme sırasında çağrılır.  
   
-##  <a name="ccomcompositecontrol"></a>CComCompositeControl::CComCompositeControl  
+##  <a name="ccomcompositecontrol"></a>  CComCompositeControl::CComCompositeControl  
  Oluşturucu.  
   
 ```
@@ -196,7 +191,7 @@ CComCompositeControl();
 ### <a name="remarks"></a>Açıklamalar  
  Başlatır [CComCompositeControl::m_hbrBackground](#m_hbrbackground) ve [CComCompositeControl::m_hWndFocus](#m_hwndfocus) veri üyeleri null.  
   
-##  <a name="dtor"></a>CComCompositeControl:: ~ CComCompositeControl  
+##  <a name="dtor"></a>  CComCompositeControl:: ~ CComCompositeControl  
  Yok Edicisi.  
   
 ```
@@ -206,7 +201,7 @@ CComCompositeControl();
 ### <a name="remarks"></a>Açıklamalar  
  Varsa, arka plan nesneyi siler.  
   
-##  <a name="createcontrolwindow"></a>CComCompositeControl::CreateControlWindow  
+##  <a name="createcontrolwindow"></a>  CComCompositeControl::CreateControlWindow  
  Denetimi penceresi oluşturun ve tüm barındırılan denetimlerinin bildirmek için bu yöntemi çağırın.  
   
 ```
@@ -228,21 +223,21 @@ virtual HWND CreateControlWindow(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi çağırır [CComCompositeControl::Create](#create) ve [CComCompositeControl::AdviseSinkMap](#advisesinkmap).  
   
-##  <a name="m_hbrbackground"></a>CComCompositeControl::m_hbrBackground  
+##  <a name="m_hbrbackground"></a>  CComCompositeControl::m_hbrBackground  
  Arka plan Fırçası.  
   
 ```
 HBRUSH m_hbrBackground;
 ```  
   
-##  <a name="m_hwndfocus"></a>CComCompositeControl::m_hWndFocus  
+##  <a name="m_hwndfocus"></a>  CComCompositeControl::m_hWndFocus  
  Şu anda odağa sahip pencere işleci.  
   
 ```
 HWND m_hWndFocus;
 ```  
   
-##  <a name="setbackgroundcolorfromambient"></a>CComCompositeControl::SetBackgroundColorFromAmbient  
+##  <a name="setbackgroundcolorfromambient"></a>  CComCompositeControl::SetBackgroundColorFromAmbient  
  Kapsayıcının arka plan rengini kullanarak bileşik denetim arka plan rengini ayarlamak için bu yöntemi çağırın.  
   
 ```

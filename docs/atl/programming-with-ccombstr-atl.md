@@ -2,29 +2,24 @@
 title: CComBSTR (ATL) ile programlama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - CComBSTR class, programming with
 - Unicode, using CComBSTR [ATL]
 ms.assetid: d3bd0851-d132-4be9-9c4c-6ccba17acb2b
-caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8f496dd73c2d15f8f78ddbdc205f31a8520c674
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b957cca4ff1af93d3f62ab0bf667462c91b81bba
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="programming-with-ccombstr-atl"></a>CComBSTR (ATL) ile programlama
 ATL sınıfı [CComBSTR](../atl/reference/ccombstr-class.md) çevresinde bir sarmalayıcı sağlar `BSTR` veri türü. Sırada `CComBSTR` yararlı bir araç olan dikkat gerektiren bazı durumlar vardır.  
@@ -39,7 +34,7 @@ ATL sınıfı [CComBSTR](../atl/reference/ccombstr-class.md) çevresinde bir sar
   
 -   [Bellek sızıntısı sorunları](#programmingwithccombstr_memoryleaks)  
   
-##  <a name="programmingwithccombstr_conversionissues"></a>Dönüştürme sorunları  
+##  <a name="programmingwithccombstr_conversionissues"></a> Dönüştürme sorunları  
  Ancak birçok `CComBSTR` yöntemleri otomatik olarak dönüştürme ANSI dize bağımsız değişkeni Unicode'a, yöntem her zaman Unicode biçim dizeleri döndürür. Çıkış dizesi ANSI olarak dönüştürmek için bir ATL dönüştürme sınıfını kullanın. ATL dönüştürme sınıfları hakkında daha fazla bilgi için bkz: [ATL ve MFC dize dönüştürme makrolarını](reference/string-conversion-macros.md).  
   
 ### <a name="example"></a>Örnek  
@@ -50,25 +45,25 @@ ATL sınıfı [CComBSTR](../atl/reference/ccombstr-class.md) çevresinde bir sar
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#115](../atl/codesnippet/cpp/programming-with-ccombstr-atl_2.cpp)]  
   
-##  <a name="programmingwithccombstr_scopeissues"></a>Kapsam sorunları  
+##  <a name="programmingwithccombstr_scopeissues"></a> Kapsam sorunları  
  Herhangi iyi çalışan bir sınıf olarak ile `CComBSTR` kapsam dışına çıktığında kaynaklarını boşaltır. Bir işlev işaretçisi döndürürse `CComBSTR` dize, bu sorunlara neden olabilir, işaretçi zaten serbest bellek başvurur gibi. Bu gibi durumlarda kullanmak **kopyalama** aşağıda gösterildiği gibi yöntemi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#116](../atl/codesnippet/cpp/programming-with-ccombstr-atl_3.cpp)]  
   
-##  <a name="programmingwithccombstr_explicitlyfreeing"></a>Açıkça CComBSTR nesne serbest bırakma  
+##  <a name="programmingwithccombstr_explicitlyfreeing"></a> Açıkça CComBSTR nesne serbest bırakma  
  İçinde yer alan dize açıkça serbest mümkündür `CComBSTR` kapsam nesne geçmeden önce nesne. Dize serbest, `CComBSTR` nesnesi geçersiz.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#117](../atl/codesnippet/cpp/programming-with-ccombstr-atl_4.cpp)]  
   
-##  <a name="programmingwithccombstr_usingloops"></a>CComBSTR nesneleri Döngülerde kullanma  
+##  <a name="programmingwithccombstr_usingloops"></a> CComBSTR nesneleri Döngülerde kullanma  
  Olarak `CComBSTR` sınıfı gibi bazı işlemleri gerçekleştirmek için arabellek ayırır `+=` işleci veya **Append** yöntemi, önerilmez dize düzenlemesi sıkı döngü içinde gerçekleştirin. Bu gibi durumlarda `CStringT` daha iyi performans sağlar.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#118](../atl/codesnippet/cpp/programming-with-ccombstr-atl_5.cpp)]  
   
-##  <a name="programmingwithccombstr_memoryleaks"></a>Bellek sızıntısı sorunları  
+##  <a name="programmingwithccombstr_memoryleaks"></a> Bellek sızıntısı sorunları  
  Başlatılan bir adresini geçirme `CComBSTR` olarak işlev bir **[Çıkış]** parametresi, bir bellek sızıntısı neden olur.  
   
  Aşağıdaki örnekte, dize ayrılmış dize tutmak için `"Initialized"` ne zaman sızmasını işlevi `MyGoodFunction` dizesi yerini alır.  

@@ -2,28 +2,23 @@
 title: constexpr (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 04/06/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - constexpr_cpp
 dev_langs:
 - C++
 ms.assetid: c6458ccb-51c6-4a16-aa61-f69e6f4e04f7
-caps.latest.revision: 3
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5218e576a1aa0436ccb7696d208b1ba2049263b0
-ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
+ms.openlocfilehash: 1f95f6c98138ff1eb52750c1b8593795ca28c784
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="constexpr-c"></a>constexpr (C++)
 

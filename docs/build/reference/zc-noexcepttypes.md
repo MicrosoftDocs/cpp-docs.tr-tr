@@ -3,7 +3,7 @@ title: '-Zc: noexceptTypes (C ++ 17 noexcept kurallar) | Microsoft Docs'
 ms.date: 11/14/2017
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /Zc:noexceptTypes
 dev_langs:
@@ -15,14 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1cbf7e3c-0f82-4f91-84dd-612bcf26d2c6
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af455b9a781295f3e6f446b7dc5c3d253fe2f4c5
-ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
+ms.openlocfilehash: 25ad2a662af2cda49e3e8dd8c769fa75dafee94b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="zcnoexcepttypes-c17-noexcept-rules"></a>/ZC:noexceptTypes (c ++ 17 noexcept kurallar)
 
@@ -30,7 +29,7 @@ C ++ 17 standart hale getirir `throw()` için diğer ad olarak `noexcept`, kald�
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc:noexceptTypes**[-]
+> **/ZC:noexceptTypes**[-]
 
 ## <a name="remarks"></a>Açıklamalar
 

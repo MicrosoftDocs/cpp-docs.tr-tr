@@ -1,13 +1,10 @@
 ---
-title: "Bağlayıcı seçenekleri | Microsoft Docs"
-ms.custom: 
+title: Bağlayıcı seçenekleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - link
 dev_langs:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - libraries [C++], linking to COFF
 - LINK tool [C++], linker options
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f64f9bb94f6809ecfa189cd012dd0494506a3ca4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
-ms.translationtype: MT
+ms.openlocfilehash: 57f313f82b0b75776b9a7a06a045bef1b7002f56
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="linker-options"></a>Bağlayıcı Seçenekleri
 
@@ -52,9 +47,9 @@ Kullanabileceğiniz [açıklama](../../preprocessor/comment-c-cpp.md) pragma baz
 |------------|-------------|
 |[@](../../build/reference/at-specify-a-linker-response-file.md)|Bir yanıt dosyası belirtir.|
 |[/ ALIGN](../../build/reference/align-section-alignment.md)|Her bölüm hizalamasını belirtir.|
-|[/ ALLOWBIND](../../build/reference/allowbind-prevent-dll-binding.md)|DLL bağlanamaz belirtir.|
-|[/ ALLOWISOLATION](../../build/reference/allowisolation-manifest-lookup.md)|Bildirim arama davranışını belirtir.|
-|[/ APPCONTAINER](../../build/reference/appcontainer-windows-store-app.md)|Uygulama bir appcontaıner işlem ortamında çalıştırma olup olmadığını belirtir.|
+|[/ALLOWBIND](../../build/reference/allowbind-prevent-dll-binding.md)|DLL bağlanamaz belirtir.|
+|[/ALLOWISOLATION](../../build/reference/allowisolation-manifest-lookup.md)|Bildirim arama davranışını belirtir.|
+|[/APPCONTAINER](../../build/reference/appcontainer-windows-store-app.md)|Uygulama bir appcontaıner işlem ortamında çalıştırma olup olmadığını belirtir.|
 |[/ ASSEMBLYDEBUG](../../build/reference/assemblydebug-add-debuggableattribute.md)|Ekler <xref:System.Diagnostics.DebuggableAttribute> yönetilen görüntüsüne.|
 |[/ ASSEMBLYLINKRESOURCE](../../build/reference/assemblylinkresource-link-to-dotnet-framework-resource.md)|Yönetilen kaynak bağlantısını oluşturur.|
 |[/ ASSEMBLYMODULE](../../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md)|Bir Microsoft Ara dili (MSIL) modülü derlemeye içeri aktarılması gerektiğini belirtir.|
@@ -74,7 +69,7 @@ Kullanabileceğiniz [açıklama](../../preprocessor/comment-c-cpp.md) pragma baz
 |[/ DELAYSIGN](../../build/reference/delaysign-partially-sign-an-assembly.md)|Bir derlemeyi kısmen imzalar.|
 |[/ DLL](../../build/reference/dll-build-a-dll.md)|DLL oluşturur.|
 |[/ DRIVER](../../build/reference/driver-windows-nt-kernel-mode-driver.md)|Çekirdek modu sürücüsü oluşturur.|
-|[/ DYNAMICBASE](../../build/reference/dynamicbase-use-address-space-layout-randomization.md)|Rastgele yükleme zamanında adres alanı düzeni rastgele seçimini (ASLR) özelliğini kullanarak rebased yürütülebilir bir görüntü oluşturulup oluşturulmayacağını belirtir.|
+|[/DYNAMICBASE](../../build/reference/dynamicbase-use-address-space-layout-randomization.md)|Rastgele yükleme zamanında adres alanı düzeni rastgele seçimini (ASLR) özelliğini kullanarak rebased yürütülebilir bir görüntü oluşturulup oluşturulmayacağını belirtir.|
 |[/ ENTRY](../../build/reference/entry-entry-point-symbol.md)|Başlangıç adresini ayarlar.|
 |[/ errorreport](../../build/reference/errorreport-report-internal-linker-errors.md)|Dahili bağlayıcı hatalarını Microsoft'a raporlar.|
 |[/ DIŞARI AKTARMA](../../build/reference/export-exports-a-function.md)|İşlevi dışarı aktarır.|
@@ -84,27 +79,27 @@ Kullanabileceğiniz [açıklama](../../preprocessor/comment-c-cpp.md) pragma baz
 |[/ FUNCTIONPADMIN](../../build/reference/functionpadmin-create-hotpatchable-image.md)|Çalışırken düzeltme bir görüntü oluşturur.|
 |[/ GENPROFILE, /FASTGENPROFILE](../../build/reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md)|Bu seçeneklerin ikisi de profil temelli iyileştirme (PGO) desteklemek için bağlayıcı tarafından bir .pgd dosyasının üretilmesi belirtin. / GENPROFILE ve /FASTGENPROFILE farklı varsayılan parametrelerini kullanın.|
 |[/ GUARD](../../build/reference/guard-enable-guard-checks.md)|Denetim akışı koruyucu koruması sağlar.|
-|[/ HEAP](../../build/reference/heap-set-heap-size.md)|Yığın boyutunu bayt cinsinden ayarlar.|
-|[/ HIGHENTROPYVA](../../build/reference/highentropyva-support-64-bit-aslr.md)|Yüksek entropi 64-bit adres boşluğu düzeni rastgele seçimini (ASLR) için destek belirtir.|
+|[/HEAP](../../build/reference/heap-set-heap-size.md)|Yığın boyutunu bayt cinsinden ayarlar.|
+|[/HIGHENTROPYVA](../../build/reference/highentropyva-support-64-bit-aslr.md)|Yüksek entropi 64-bit adres boşluğu düzeni rastgele seçimini (ASLR) için destek belirtir.|
 |[/ IDLOUT](../../build/reference/idlout-name-midl-output-files.md)|.İdl dosya ve diğer MIDL çıktı dosyalarını adını belirtir.|
 |[/ IGNORE](../../build/reference/ignore-ignore-specific-warnings.md)|Belirtilen bağlayıcı uyarılarını çıktısını gizler.|
 |[/ IGNOREIDL](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)|Öznitelik bilgileri .idl dosyasına işlenmesini önler.|
 |[/ IMPLIB](../../build/reference/implib-name-import-library.md)|Varsayılan içeri aktarma kitaplığı adı geçersiz kılar.|
 |[/ INCLUDE](../../build/reference/include-force-symbol-references.md)|Zorlar başvuruları simge.|
 |[/ INCREMENTAL](../../build/reference/incremental-link-incrementally.md)|Denetimleri artımlı bağlanıyor.|
-|[/ INTEGRITYCHECK](../../build/reference/integritycheck-require-signature-check.md)|Modül yükleme zamanında imza denetimi gerekli belirtir.|
+|[/INTEGRITYCHECK](../../build/reference/integritycheck-require-signature-check.md)|Modül yükleme zamanında imza denetimi gerekli belirtir.|
 |[/ KEYCONTAINER](../../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md)|Derlemeyi imzalamak için anahtar kapsayıcısını belirtir.|
 |[/ KEYFILE](../../build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)|Bir anahtar ya da derlemeyi imzalamak için anahtar çifti belirtir.|
-|[/ LARGEADDRESSAWARE](../../build/reference/largeaddressaware-handle-large-addresses.md)|Uygulama adresleri iki gigabayttan büyük desteklediğini derleyici bildirir|
+|[/LARGEADDRESSAWARE](../../build/reference/largeaddressaware-handle-large-addresses.md)|Uygulama adresleri iki gigabayttan büyük desteklediğini derleyici bildirir|
 |[/ LIBPATH](../../build/reference/libpath-additional-libpath.md)|Ortam Kitaplığı yol önce aramak için bir yol belirtir.|
-|[/ LTCG](../../build/reference/ltcg-link-time-code-generation.md)|Bağlama zamanı kodu oluşturma belirtir.|
+|[/LTCG](../../build/reference/ltcg-link-time-code-generation.md)|Bağlama zamanı kodu oluşturma belirtir.|
 |[/ MACHINE](../../build/reference/machine-specify-target-platform.md)|Hedef platformu belirtir.|
 |[/ BİLDİRİMİ](../../build/reference/manifest-create-side-by-side-assembly-manifest.md)|Yan yana bildirim dosyası oluşturur ve isteğe bağlı olarak ikili katıştırır.|
 |[/ MANIFESTDEPENDENCY](../../build/reference/manifestdependency-specify-manifest-dependencies.md)|Belirten bir \<dependentAssembly > bildirim dosyası bölümünde.|
 |[/ MANIFESTFILE](../../build/reference/manifestfile-name-manifest-file.md)|Bildirim dosyası varsayılan adını değiştirir.|
 |[/ MANIFESTINPUT](../../build/reference/manifestinput-specify-manifest-input.md)|Bir bildirim giriş dosyası işlemek ve ikili katıştırmak bağlayıcı için belirtir. Birden fazla bildirim giriş dosyası belirtmek için bu seçeneği birden çok kez kullanabilirsiniz.|
 |[/ MANIFESTUAC](../../build/reference/manifestuac-embeds-uac-information-in-manifest.md)|Kullanıcı Hesabı Denetimi (UAC) bilgisi program bildiriminde ekli olup olmadığını belirtir.|
-|[/ MAP](../../build/reference/map-generate-mapfile.md)|Bir eşlem dosyası oluşturur.|
+|[/MAP](../../build/reference/map-generate-mapfile.md)|Bir eşlem dosyası oluşturur.|
 |[/ MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md)|Belirtilen bilgileri eşlem dosyasına içerir.|
 |[/ MERGE](../../build/reference/merge-combine-sections.md)|Bölümler birleştirir.|
 |[/ MIDL](../../build/reference/midl-specify-midl-command-line-options.md)|MIDL komut satırı seçeneklerini belirtir.|
@@ -113,27 +108,27 @@ Kullanabileceğiniz [açıklama](../../preprocessor/comment-c-cpp.md) pragma baz
 |[/ NODEFAULTLIB](../../build/reference/nodefaultlib-ignore-libraries.md)|Tüm yoksayar (veya belirtilen) dış başvuruları çözümlendiği zaman kitaplıkları varsayılan.|
 |[/ NOENTRY](../../build/reference/noentry-no-entry-point.md)|Yalnızca kaynak DLL oluşturur.|
 |[/ NOLOGO](../../build/reference/nologo-suppress-startup-banner-linker.md)|Başlangıç başlığını gizler.|
-|[/ NXCOMPAT](../../build/reference/nxcompat-compatible-with-data-execution-prevention.md)|Bir yürütülebilir dosya Windows Veri Yürütme Engellemesi özelliği ile uyumlu olacak şekilde doğrulanmış olarak işaretler.|
+|[/NXCOMPAT](../../build/reference/nxcompat-compatible-with-data-execution-prevention.md)|Bir yürütülebilir dosya Windows Veri Yürütme Engellemesi özelliği ile uyumlu olacak şekilde doğrulanmış olarak işaretler.|
 |[/ OPT](../../build/reference/opt-optimizations.md)|BAĞLANTI iyileştirmeler denetler.|
 |[/ ORDER](../../build/reference/order-put-functions-in-order.md)|COMDATs önceden belirlenmiş bir sırayla görüntüye yerleştirir.|
 |[/ OUT](../../build/reference/out-output-file-name.md)|Çıktı dosyası adını belirtir.|
-|[/ PDB](../../build/reference/pdb-use-program-database.md)|Program veritabanı (PDB) dosyası oluşturur.|
+|[/PDB](../../build/reference/pdb-use-program-database.md)|Program veritabanı (PDB) dosyası oluşturur.|
 |[/ PDBALTPATH](../../build/reference/pdbaltpath-use-alternate-pdb-path.md)|PDB dosyası kaydetmek için farklı bir konuma kullanır.|
 |[/ PDBSTRIPPED](../../build/reference/pdbstripped-strip-private-symbols.md)|Hiçbir özel sembolleri sahip bir program veritabanı (PDB) dosyası oluşturur.|
 |[/ PGD](../../build/reference/pgd-specify-database-for-profile-guided-optimizations.md)|Profil temelli iyileştirmeler için .pgd dosyasını belirtir.|
 |[/ PROFİL](../../build/reference/profile-performance-tools-profiler.md)|Performans araçları Profil Oluşturucu ile kullanılan bir çıktı dosyası oluşturur.|
-|[/ RELEASE](../../build/reference/release-set-the-checksum.md)|Sağlama toplamı .exe üstbilgisinde ayarlar.|
+|[/RELEASE](../../build/reference/release-set-the-checksum.md)|Sağlama toplamı .exe üstbilgisinde ayarlar.|
 |[/ SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md)|Görüntünün güvenli özel durum işleyicileri tablosu içerecek belirtir.|
 |[/ SECTION](../../build/reference/section-specify-section-attributes.md)|Bir bölüm özniteliklerini geçersiz kılar.|
-|[/ STACK](../../build/reference/stack-stack-allocations.md)|Yığın boyutunu bayt cinsinden ayarlar.|
+|[/STACK](../../build/reference/stack-stack-allocations.md)|Yığın boyutunu bayt cinsinden ayarlar.|
 |[/ STUB](../../build/reference/stub-ms-dos-stub-file-name.md)|MS-DOS saplama programını bir Win32 programı ekler.|
-|[/ SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md)|İşletim sistemi .exe dosyasını çalıştırın anlatır.|
-|[/ SWAPRUN](../../build/reference/swaprun-load-linker-output-to-swap-file.md)|Bunu çalıştırılmadan önce bağlayıcı çıktısı için takas dosyası kopyalamak için işletim sistemi söyler.|
+|[/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md)|İşletim sistemi .exe dosyasını çalıştırın anlatır.|
+|[/SWAPRUN](../../build/reference/swaprun-load-linker-output-to-swap-file.md)|Bunu çalıştırılmadan önce bağlayıcı çıktısı için takas dosyası kopyalamak için işletim sistemi söyler.|
 |[/ TLBID](../../build/reference/tlbid-specify-resource-id-for-typelib.md)|Bağlayıcı tarafından oluşturulan tür kitaplığı kaynak Kimliğini belirtir.|
 |[/ TLBOUT](../../build/reference/tlbout-name-dot-tlb-file.md)|.Tlb dosyası ve diğer MIDL çıktı dosyalarını adını belirtir.|
-|[/ TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md)|Özellikle Terminal sunucusu altında çalışması için tasarlanmış bir uygulama oluşturur.|
+|[/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md)|Özellikle Terminal sunucusu altında çalışması için tasarlanmış bir uygulama oluşturur.|
 |[/ VERBOSE](../../build/reference/verbose-print-progress-messages.md)|Bağlayıcı ilerleme iletilerini yazdırır.|
-|[/ SÜRÜMÜ](../../build/reference/version-version-information.md)|Sürüm numarası atar.|
+|[/VERSION](../../build/reference/version-version-information.md)|Sürüm numarası atar.|
 |[/ WHOLEARCHIVE](../../build/reference/wholearchive-include-all-library-object-files.md)|Belirtilen statik kitaplıklarından her nesne dosyası içerir.|
 |[/ WINMD](../../build/reference/winmd-generate-windows-metadata.md)|Windows çalışma zamanı meta veri dosyasının oluşturulmasını sağlar.|
 |[/ WINMDFILE](../../build/reference/winmdfile-specify-winmd-file.md)|Tarafından oluşturulan Windows çalışma zamanı meta verileri (winmd) çıktı dosyası için dosya adını belirten [/WINMD](../../build/reference/winmd-generate-windows-metadata.md) bağlayıcı seçeneği.|

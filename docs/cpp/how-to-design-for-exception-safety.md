@@ -1,27 +1,22 @@
 ---
-title: "Nasıl yapılır: özel durum güvenliği tasarımı | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: özel durum güvenliği tasarımı | Microsoft Docs'
+ms.custom: how-to
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d15df2f810848bb9349bc98c722ac02ff8cda17
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cbad81c5014c2aa3bcf10b083fa974615e4669e9
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-design-for-exception-safety"></a>Nasıl yapılır: Özel Durum Güvenliği Tasarımı
 Özel durum mekanizması avantajlarından biri özel durumla ilgili verileri birlikte bu yürütme, catch, işleme deyimi doğrudan ilk özel durum oluşturur deyimden atlar. İşleyici düzeyleri herhangi bir sayıda çağrı yığınında yukarı olabilir. Try deyimi ve throw deyimine arasında adlı işlevleri oluşturulan özel durumla ilgili herhangi bir şey bilmeniz gerekli değildir.  Ancak, böylece kapsam "beklenmedik bir şekilde dışında" gidebilirsiniz tasarlanmalıdır burada bir özel durum yukarı öğesinden aşağıda yayılması ve böylece kısmen oluşturulmuş nesnelerin arkasında ayrılmadan sızmasını bellek herhangi bir noktasını veya kullanılamaz durumda veri yapılarını sahip oldukları.  

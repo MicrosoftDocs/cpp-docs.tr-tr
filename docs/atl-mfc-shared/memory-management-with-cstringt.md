@@ -1,12 +1,9 @@
 ---
-title: "Bellek yönetimi CStringT ile | Microsoft Docs"
-ms.custom: 
+title: Bellek yönetimi CStringT ile | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CStringT
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - strings [C++], memory management
 - CStringT class, memory management
 ms.assetid: 88b8342d-19b5-48c4-9cf6-e4c44cece21e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bbf623344ec52abce28a08670e7f3cd09140563b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b65efd934fecdab36bfa1c0c882de1dd8862c81f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="memory-management-with-cstringt"></a>CStringT ile bellek yönetimi
 Sınıf [CStringT](../atl-mfc-shared/reference/cstringt-class.md) değişken uzunlukta karakter dizeleri işlemek için kullanılan bir şablon sınıftır. Bu dizeler tutmak için bellek tahsis ve her örneği ile ilişkili bir dize Yöneticisi nesnesi aracılığıyla serbest `CStringT`. MFC ve ATL sağlamak varsayılan işlemlerinden `CStringT`adlı `CString`, `CStringA`, ve `CStringW`, farklı karakter türleri dizeleri işlemek. Bu karakter türlerini türlerinin **TCHAR**, `char`, ve `wchar_t`sırasıyla. Bu varsayılan dize türleri işlem yığınında (ATL) veya CRT yığınında (MFC) bellek ayırır bir dize Yöneticisi'ni kullanın. Tipik uygulamalar için bu bellek ayırma şeması yeterli olur. Ancak, yoğun yapmadan kodunu dizeleri (veya birden çok iş parçacıklı kodu) varsayılan bellek yöneticilerini en iyi şekilde çalışmayabilir kullanın. Bu konu, varsayılan bellek yönetimi davranışını geçersiz kılmak açıklar `CStringT`, elinizdeki için iyileştirilmiş allocators özellikle oluşturma.  

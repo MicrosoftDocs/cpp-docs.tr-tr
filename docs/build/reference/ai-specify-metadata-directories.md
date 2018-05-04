@@ -1,13 +1,10 @@
 ---
 title: -AI (meta veri dizinlerini belirt) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.AdditionalUsingDirectories
 - VC.Project.VCNMakeTool.AssemblySearchPath
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - AI compiler option [C++]
 - -AI compiler option [C++]
 ms.assetid: fb9c1846-504c-4a3b-bb39-c8696de32f6f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e2f6cb90cd86dfc572c23ef6fd0e5661b339774
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bde5c93c8a211bb0fc66028932a0a7d50415236d
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ai-specify-metadata-directories"></a>/AI (Meta Veri Dizinlerini Belirt)
 Derleyici dosya referansları geçirilen çözümlemek için arayacağı bir dizini belirtir `#using` yönergesi.  

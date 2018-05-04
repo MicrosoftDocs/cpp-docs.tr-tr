@@ -1,12 +1,9 @@
 ---
-title: "CAtlComModule sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAtlComModule sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CAtlComModule
@@ -21,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - CAtlComModule class
 ms.assetid: af5dd71a-a0d1-4a2e-9a24-154a03381c75
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83dfbb1792a569e359692ba55fb23a8ebb580c37
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 47e85f3aab75f8fafb76977847ce36d37808af60
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="catlcommodule-class"></a>CAtlComModule sınıfı
 Bu sınıf bir COM sunucusu modülü uygular.  
@@ -61,7 +56,7 @@ class CAtlComModule : public _ATL_COM_MODULE
 |[CAtlComModule::UnRegisterTypeLib](#unregistertypelib)|Tür kitaplığı kaydı için bu yöntemi çağırın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CAtlComModule`Modülün bileşenlerine erişmek bir istemci sağlayan bir COM sunucusu modül uygular.  
+ `CAtlComModule` Modülün bileşenlerine erişmek bir istemci sağlayan bir COM sunucusu modül uygular.  
   
  Bu sınıf artık kullanılmıyor değiştirir [CComModule](../../atl/reference/ccommodule-class.md) ATL önceki sürümlerinde kullanılan sınıf Bkz: [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.  
   
@@ -73,7 +68,7 @@ class CAtlComModule : public _ATL_COM_MODULE
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
-##  <a name="catlcommodule"></a>CAtlComModule::CAtlComModule  
+##  <a name="catlcommodule"></a>  CAtlComModule::CAtlComModule  
  Oluşturucu.  
   
 ```
@@ -83,7 +78,7 @@ CAtlComModule() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Modül başlatır.  
   
-##  <a name="dtor"></a>CAtlComModule:: ~ CAtlComModule  
+##  <a name="dtor"></a>  CAtlComModule:: ~ CAtlComModule  
  Yok Edicisi.  
   
 ```
@@ -93,7 +88,7 @@ CAtlComModule() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Tüm sınıf oluşturucuları boşaltır.  
   
-##  <a name="registerserver"></a>CAtlComModule::RegisterServer  
+##  <a name="registerserver"></a>  CAtlComModule::RegisterServer  
  Nesne eşlemesindeki her nesne için sistem kayıt defterini güncelleştirmek için bu yöntemi çağırın.  
   
 ```
@@ -113,7 +108,7 @@ HRESULT RegisterServer(BOOL bRegTypeLib = FALSE, const CLSID* pCLSID = NULL);
 ### <a name="remarks"></a>Açıklamalar  
  Genel işlev çağrılarını [AtlComModuleRegisterServer](server-registration-global-functions.md#atlcommoduleregisterserver).  
   
-##  <a name="registertypelib"></a>CAtlComModule::RegisterTypeLib  
+##  <a name="registertypelib"></a>  CAtlComModule::RegisterTypeLib  
  Tür kitaplığı kaydı için bu yöntemi çağırın.  
   
 ```
@@ -131,7 +126,7 @@ HRESULT RegisterTypeLib();
 ### <a name="remarks"></a>Açıklamalar  
  Tür Kitaplığı hakkında bilgi için sistem kayıt defteri ekler. Modül örneğinin birden çok tür kitaplıklarının içeriyorsa, hangi tür kitaplığı kullanılması gerektiğini belirtmek için bu yöntem ilk sürümünü kullanın.  
   
-##  <a name="unregisterserver"></a>CAtlComModule::UnregisterServer  
+##  <a name="unregisterserver"></a>  CAtlComModule::UnregisterServer  
  Her nesne eşlemesi nesnesinde kaydını kaldırmak için bu yöntemi çağırın.  
   
 ```
@@ -153,7 +148,7 @@ HRESULT UnregisterServer(
 ### <a name="remarks"></a>Açıklamalar  
  Genel işlev çağrılarını [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver).  
   
-##  <a name="unregistertypelib"></a>CAtlComModule::UnRegisterTypeLib  
+##  <a name="unregistertypelib"></a>  CAtlComModule::UnRegisterTypeLib  
  Tür kitaplığı kaydı için bu yöntemi çağırın.  
   
 ```

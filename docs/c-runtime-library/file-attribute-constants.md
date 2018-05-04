@@ -1,13 +1,10 @@
 ---
-title: "Dosya öznitelik sabitleri | Microsoft Docs"
-ms.custom: 
+title: Dosya öznitelik sabitleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - A_HIDDEN
 - _A_NORMAL
@@ -34,17 +31,15 @@ helpviewer_keywords:
 - _A_HIDDEN constant
 - _A_RDONLY constant
 ms.assetid: 8dc8ccb9-99f5-446b-876c-7ebecc2f764f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55dc7b0c0c21c8ee149e4be8eb829de29d73aacd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 178082356eb08130879cd3b4f2118cbf75e451ce
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="file-attribute-constants"></a>Dosya Öznitelik Sabitleri
 ## <a name="syntax"></a>Sözdizimi  
@@ -77,7 +72,7 @@ ms.lasthandoff: 12/21/2017
  `_A_SYSTEM`  
  Sistem dosyası. Normalde /AS seçeneği kullanılmıyorsa DIR komutu ile görülür. Değer: 0x04  
   
- Birden çok sabitleri OR işleci (&#124;) ile birleştirilebilir.  
+ Birden çok sabitleri OR işleci ile birleştirilebilir (&#124;).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dosya arama işlevleri](../c-runtime-library/filename-search-functions.md)   

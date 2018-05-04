@@ -1,12 +1,9 @@
 ---
-title: "CComClassFactory sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComClassFactory sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComClassFactory
@@ -18,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - CComClassFactory class
 ms.assetid: e56dacf7-d5c4-4c42-aef4-a86d91981a1b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2af57c666cf2ee452d2707045d259ada695a2848
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7a144f4ff9902a633933ae556df872a9d55a5409
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomclassfactory-class"></a>CComClassFactory sınıfı
 Bu sınıf uygulayan [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirimi.  
@@ -51,7 +46,7 @@ class CComClassFactory
 |[CComClassFactory::LockServer](#lockserver)|Bellek sınıfı fabrikada kilitler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComClassFactory`uygulayan [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) daha hızlı oluşturulacak yeni nesneler izin vermek için bellek sınıfı fabrikada kilitleme yanı sıra belirli CLSID bir nesne oluşturmak için kullanılan yöntemler içerir arabirimi. **IClassFactory** sistem kayıt defterinde ve CLSID atamak için kayıt her sınıf için uygulanması gerekir.  
+ `CComClassFactory` uygulayan [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) daha hızlı oluşturulacak yeni nesneler izin vermek için bellek sınıfı fabrikada kilitleme yanı sıra belirli CLSID bir nesne oluşturmak için kullanılan yöntemler içerir arabirimi. **IClassFactory** sistem kayıt defterinde ve CLSID atamak için kayıt her sınıf için uygulanması gerekir.  
   
  ATL nesneleri normalde türetme tarafından bir üreteci elde [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makrosu içerir [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), hangi bildirir `CComClassFactory` varsayılan üreteci olarak. Bu varsayılanı geçersiz kılmak için aşağıdakilerden birini belirtin `DECLARE_CLASSFACTORY` *XXX* Sınıf tanımınız makrolarındaki. Örneğin, [DECLARE_CLASSFACTORY_EX](aggregation-and-class-factory-macros.md#declare_classfactory_ex) makrosu üreteci için belirtilen sınıf kullanır:  
   
@@ -70,7 +65,7 @@ class CComClassFactory
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="createinstance"></a>CComClassFactory::CreateInstance  
+##  <a name="createinstance"></a>  CComClassFactory::CreateInstance  
  Belirtilen CLSID bir nesne oluşturur ve bu nesne için bir arabirim işaretçisi alır.  
   
 ```
@@ -90,7 +85,7 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
-##  <a name="lockserver"></a>CComClassFactory::LockServer  
+##  <a name="lockserver"></a>  CComClassFactory::LockServer  
  Artırır ve modül kilit sayısı çağırarak azaltır **_Module::Lock** ve **_Module::Unlock**sırasıyla.  
   
 ```

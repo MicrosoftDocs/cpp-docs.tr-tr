@@ -1,10 +1,7 @@
 ---
-title: "ATL metin işlevleri kodlama | Microsoft Docs"
-ms.custom: 
+title: ATL metin işlevleri kodlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - atlbase/ATL::AtlGetHexValue
@@ -30,12 +27,11 @@ f1_keywords:
 - atlenc/ATL::UUEncode
 - atlenc/ATL::UUEncodeGetRequiredLength
 ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
-caps.latest.revision: "3"
-ms.openlocfilehash: d92ce766ea0fff11f104ae4f6d260d44faf85292
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 26eb0709c4009070e6255c6ee178f19d13d8a9c3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="atl-text-encoding-functions"></a>ATL metin işlevleri kodlama
 Bu işlevleri kodlamak ve kodlarını çözmek metin destekler.
@@ -69,7 +65,7 @@ Bu işlevleri kodlamak ve kodlarını çözmek metin destekler.
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlenc.h  
  
-## <a name="atlgethexvalue"></a>AtlGetHexValue
+## <a name="atlgethexvalue"></a> AtlGetHexValue
 Onaltılık basamağın sayısal değerini almak için bu işlevi çağırın.  
   
 ```    
@@ -83,7 +79,7 @@ inline char AtlGetHexValue(char chIn) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Giriş karakter sayısal değeri bir onaltılık yorumlanır. Örneğin, bir giriş '0' ın 0 değerini döndürür ve giriş 'A' 10 değerini döndürür. Giriş karakter onaltılık basamak değilse, bu işlev, -1 döndürür.  
   
-## <a name="atlgetversion"></a>AtlGetVersion
+## <a name="atlgetversion"></a> AtlGetVersion
 Kullanmakta olduğunuz ATL kitaplığı sürümünü almak için bu işlevini çağırın.  
   
 ```  
@@ -105,7 +101,7 @@ ATLAPI_(DWORD) AtlGetVersion(void* pReserved);
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
 
-## <a name="atlhexdecode"></a>AtlHexDecode
+## <a name="atlhexdecode"></a> AtlHexDecode
 Onaltılık metin olarak gibi önceki çağrısıyla kodlandıktan veri dizesi kodunu çözer [AtlHexEncode](#atlhexencode).  
   
 ```    
@@ -132,7 +128,7 @@ inline BOOL AtlHexDecode(
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **TRUE** başarılı, **FALSE** hatasında.  
   
-## <a name="atlhexdecodegetrequiredlength"></a>AtlHexDecodeGetRequiredLength
+## <a name="atlhexdecodegetrequiredlength"></a> AtlHexDecodeGetRequiredLength
 Belirtilen uzunlukta onaltılık kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın.  
   
 ```  
@@ -146,7 +142,7 @@ inline int AtlHexDecodeGetRequiredLength(int nSrcLen) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Kodu çözülmüş dizesi tutan bir arabellek için gereken bayt sayısını `nSrcLen` karakter.  
   
-## <a name="atlhexencode"></a>AtlHexEncode
+## <a name="atlhexencode"></a> AtlHexEncode
 Herhangi bir veriyi onaltılık bir metin dizesi olarak kodlamak için bu işlevi çağırın.  
   
 ```  
@@ -176,7 +172,7 @@ int * pnDestLen) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Her kaynak verilerin baytı 2 on altılı karakter olarak kodlanır.  
   
-## <a name="atlhexencodegetrequiredlength"></a>AtlHexEncodeGetRequiredLength
+## <a name="atlhexencodegetrequiredlength"></a> AtlHexEncodeGetRequiredLength
 Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.  
   
 ```  
@@ -190,7 +186,7 @@ inline int AtlHexEncodeGetRequiredLength(int nSrcLen) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Kodlanmış verileri tutmak için arabellek gerekli karakter sayısı `nSrcLen` bayt sayısı.  
   
-## <a name="atlhexvalue"></a>AtlHexValue
+## <a name="atlhexvalue"></a> AtlHexValue
 Onaltılık basamağın sayısal değerini almak için bu işlevi çağırın.  
   
 ```  
@@ -204,7 +200,7 @@ inline short AtlHexValue(char chIn) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Giriş karakter sayısal değeri bir onaltılık yorumlanır. Örneğin, bir giriş '0' ın 0 değerini döndürür ve giriş 'A' 10 değerini döndürür. Giriş karakter onaltılık basamak değilse, bu işlev, -1 döndürür.  
   
-## <a name="atlunicodetoutf8"></a>AtlUnicodeToUTF8
+## <a name="atlunicodetoutf8"></a> AtlUnicodeToUTF8
 Unicode dizesini UTF-8'e dönüştürmek için bu işlevi çağırın.  
   
 ```  
@@ -234,7 +230,7 @@ ATL_NOINLINE inline int AtlUnicodeToUTF8(
 ### <a name="remarks"></a>Açıklamalar  
  Dönüştürülmüş dizeyi için gerekli olan arabellek boyutunu belirlemek için 0 geçirmek için bu işlev çağrısı `szDest` ve `nDest`.  
   
-## <a name="bencode"></a>BEncode  
+## <a name="bencode"></a> BEncode  
 Bazı verileri "B" kodlama kullanarak dönüştürmek için bu işlevi çağırın.  
   
 ```  
@@ -268,7 +264,7 @@ inline BOOL BEncode(
 ### <a name="remarks"></a>Açıklamalar  
  "B" kodlama düzeni RFC 2047 açıklanan ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).  
   
-## <a name="bencodegetrequiredlength"></a>BEncodeGetRequiredLength 
+## <a name="bencodegetrequiredlength"></a> BEncodeGetRequiredLength 
 Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.  
   
 ```  
@@ -288,7 +284,7 @@ inline int BEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 ### <a name="remarks"></a>Açıklamalar  
  "B" kodlama düzeni RFC 2047 açıklanan ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).  
   
-## <a name="escapexml"></a>EscapeXML
+## <a name="escapexml"></a> EscapeXML
 XML'de kullanılması güvenli olmayan karakterleri güvenli eşdeğerlerine dönüştürmek için bu işlevi çağırın.  
   
 ```  
@@ -316,8 +312,8 @@ inline int EscapeXML(
  `dwFlags`  
  ATL_ESC nasıl gerçekleştirilecek dönüştürme olduğunu tanımlayan işaretler. 
 
-- `ATL_ESC_FLAG_NONE`Varsayılan davranışı. Tırnak işaretleri ve kesme dönüştürülmez.
-- `ATL_ESC_FLAG_ATTR`Tırnak işaretleri ve kesme dönüştürülür `&quot;` ve `&apos;` sırasıyla.
+- `ATL_ESC_FLAG_NONE` Varsayılan davranışı. Tırnak işaretleri ve kesme dönüştürülmez.
+- `ATL_ESC_FLAG_ATTR` Tırnak işaretleri ve kesme dönüştürülür `&quot;` ve `&apos;` sırasıyla.
 
 
   
@@ -335,7 +331,7 @@ inline int EscapeXML(
 |'|&apos;|  
 |"|&quot;|  
   
-## <a name="getextendedchars"></a>GetExtendedChars
+## <a name="getextendedchars"></a> GetExtendedChars
 Bir dizede genişletilmiş karakter sayısını almak için bu işlevi çağırın.  
   
 ```  
@@ -352,7 +348,7 @@ inline int GetExtendedChars(LPCSTR szSrc, int nSrcLen) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tarafından belirlenen dizesi içinde bulunan genişletilmiş karakterlerin sayısını döndürür [IsExtendedChar](#isextendedchar).  
   
-## <a name="isextendedchar"></a>IsExtendedChar
+## <a name="isextendedchar"></a> IsExtendedChar
 Belirli bir karakterin genişletilmiş bir karakter (32 den küçük, 126'dan büyük ve sekme, satır besleme veya satır başı değil) olup olmadığını öğrenmek için bu işlevi çağırın.  
   
 ```  
@@ -360,13 +356,13 @@ inline int IsExtendedChar(char ch) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *Ch*  
+ *ch*  
  Sınanacak karakter  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  **DOĞRU** karakter genişletilmişse **FALSE** Aksi takdirde.  
   
-## <a name="qencode"></a>QEncode
+## <a name="qencode"></a> QEncode
 Bazı verileri "Q" kodlama kullanarak dönüştürmek için bu işlevi çağırın.  
   
 ```  
@@ -404,7 +400,7 @@ inline BOOL QEncode(
 ### <a name="remarks"></a>Açıklamalar  
  "Q" kodlama düzeni RFC 2047 açıklanan ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).  
   
-## <a name="qencodegetrequiredlength"></a>QEncodeGetRequiredLength 
+## <a name="qencodegetrequiredlength"></a> QEncodeGetRequiredLength 
 Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.  
   
 ```  
@@ -424,7 +420,7 @@ inline int QEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 ### <a name="remarks"></a>Açıklamalar  
  "Q" kodlama düzeni RFC 2047 açıklanan ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).  
   
-## <a name="qpdecode"></a>QPDecode
+## <a name="qpdecode"></a> QPDecode
 Tırnak içine alınmış-yazdırılabilir biçiminde gibi önceki çağrısıyla kodlandıktan veri dizesi kodunu çözer [QPEncode](#qpencode).  
   
 ```  
@@ -437,19 +433,19 @@ inline BOOL QPDecode(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pbSrcData`  
+ [in] `pbSrcData`  
  Kodu çözülecek veriler içeren bir arabellek.  
   
- [in]`nSrcLen`  
+ [in] `nSrcLen`  
  Bayt cinsinden uzunluğu `pbSrcData`.  
   
- [out]`szDest`  
+ [out] `szDest`  
  Kodu çözülmüş verileri almak için arabellek çağıran tarafından ayrılmış.  
   
- [out]`pnDestLen`  
+ [out] `pnDestLen`  
  Bayt cinsinden uzunluğu içeren bir değişkeni işaretçi `szDest`. İşlev başarılı olursa, değişkeni arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişkeni gerekli uzunluğa arabelleğinin bayt olarak alır.  
   
- [in]`dwFlags`  
+ [in] `dwFlags`  
  Nasıl gerçekleştirilecek dönüştürme olduğunu tanımlayan işaretler. Bkz: [ATLSMTP_QPENCODE bayrakları](http://msdn.microsoft.com/library/6b15a3ab-8e57-49e4-8104-09b26ebb96c4).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -458,7 +454,7 @@ inline BOOL QPDecode(
 ### <a name="remarks"></a>Açıklamalar  
  Tırnak içine alınmış-yazdırılabilir kodlama düzeni RFC 2045 açıklanan ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).  
   
-## <a name="qpdecodegetrequiredlength"></a>QPDecodeGetRequiredLength
+## <a name="qpdecodegetrequiredlength"></a> QPDecodeGetRequiredLength
 Belirtilen uzunlukta sınırlandırılmış yazdırılabilir biçimde kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın.  
   
 ```  
@@ -475,7 +471,7 @@ inline int QPDecodeGetRequiredLength(int nSrcLen) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Tırnak içine alınmış-yazdırılabilir kodlama düzeni RFC 2045 açıklanan ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).  
   
-## <a name="qpencode"></a>QPEncode
+## <a name="qpencode"></a> QPEncode
 Bazı verileri sınırlandırılmış yazdırılabilir biçimde kodlamak için bu işlevi çağırın.  
   
 ```  
@@ -502,8 +498,8 @@ inline BOOL QPEncode(
   
  `dwFlags`  
  Nasıl gerçekleştirilecek dönüştürme olduğunu tanımlayan ATLSMTP_QPENCODE işaretler. 
-- `ATLSMTP_QPENCODE_DOT`Bir süre bir satır başlangıcında görünüyorsa, bu çıkışı eklenen yanı sıra kodlanmış.
-- `ATLSMTP_QPENCODE_TRAILING_SOFT`Ekler `=\r\n` kodlu bir dize için.
+- `ATLSMTP_QPENCODE_DOT` Bir süre bir satır başlangıcında görünüyorsa, bu çıkışı eklenen yanı sıra kodlanmış.
+- `ATLSMTP_QPENCODE_TRAILING_SOFT` Ekler `=\r\n` kodlu bir dize için.
 
 Tırnak içine alınmış-yazdırılabilir kodlama düzeni açıklanan [RFC 2045](http://www.ietf.org/rfc/rfc2045.txt).
   
@@ -513,7 +509,7 @@ Tırnak içine alınmış-yazdırılabilir kodlama düzeni açıklanan [RFC 2045
 ### <a name="remarks"></a>Açıklamalar  
  Tırnak içine alınmış-yazdırılabilir kodlama düzeni RFC 2045 açıklanan ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).  
   
-## <a name="qpencodegetrequiredlength"></a>QPEncodeGetRequiredLength
+## <a name="qpencodegetrequiredlength"></a> QPEncodeGetRequiredLength
 Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.  
   
 ```  
@@ -530,7 +526,7 @@ inline int QPEncodeGetRequiredLength(int nSrcLen) throw ();
 ### <a name="remarks"></a>Açıklamalar  
  Tırnak içine alınmış-yazdırılabilir kodlama düzeni RFC 2045 açıklanan ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).  
   
-## <a name="uudecode"></a>UUDecode
+## <a name="uudecode"></a> UUDecode
 Uuencoded gibi önceki bir çağrı tarafından kaldırıldı veri dizesi kodunu çözer [UUEncode](#uuencode).  
   
 ```  
@@ -560,7 +556,7 @@ inline BOOL UUDecode(
 ### <a name="remarks"></a>Açıklamalar  
  Bu uuencoding uygulanması POSIX P1003.2b/D11 izler.  
   
-## <a name="uudecodegetrequiredlength"></a>UUDecodeGetRequiredLength
+## <a name="uudecodegetrequiredlength"></a> UUDecodeGetRequiredLength
 Belirtilen uzunlukta uuencoded olarak kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın.  
   
 ```  
@@ -577,7 +573,7 @@ inline int UUDecodeGetRequiredLength(int nSrcLen) throw ();
 ### <a name="remarks"></a>Açıklamalar  
  Bu uuencoding uygulanması POSIX P1003.2b/D11 izler.  
   
-## <a name="uuencode"></a>UUEncode
+## <a name="uuencode"></a> UUEncode
 Bazı verileri uuencode olarak kodlamak için bu işlevi çağırın.  
   
 ```  
@@ -608,9 +604,9 @@ inline BOOL UUEncode(
   
  `dwFlags`  
  Bu işlev davranışını denetleme bayraklar. 
-- `ATLSMTP_UUENCODE_HEADE`Üstbilgi kodlanmış olmalıdır.
-- `ATLSMTP_UUENCODE_END`Son kodlanmış olmalıdır.
-- `ATLSMTP_UUENCODE_DOT`Veri doldurmak gerçekleştirilir.  
+- `ATLSMTP_UUENCODE_HEADE` Üstbilgi kodlanmış olmalıdır.
+- `ATLSMTP_UUENCODE_END` Son kodlanmış olmalıdır.
+- `ATLSMTP_UUENCODE_DOT` Veri doldurmak gerçekleştirilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **TRUE** başarılı, **FALSE** hatasında.  
@@ -618,7 +614,7 @@ inline BOOL UUEncode(
 ### <a name="remarks"></a>Açıklamalar  
  Bu uuencoding uygulanması POSIX P1003.2b/D11 izler.  
   
-## <a name="uuencodegetrequiredlength"></a>UUEncodeGetRequiredLength
+## <a name="uuencodegetrequiredlength"></a> UUEncodeGetRequiredLength
 Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.  
   
 ```  
@@ -637,4 +633,4 @@ inline int UUEncodeGetRequiredLength(int nSrcLen) throw ();
   
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [Kavramları](../../atl/active-template-library-atl-concepts.md)   
- [ATL COM Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md)   
+ [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)   

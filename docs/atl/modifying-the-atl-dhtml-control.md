@@ -1,13 +1,10 @@
 ---
-title: "ATL DHTML denetimi değiştirme | Microsoft Docs"
-ms.custom: 
+title: ATL DHTML denetimi değiştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - DHTML controls
 - DHTML controls, modifying
 ms.assetid: c053f35f-8629-4600-9595-721f5956777a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 571b7f4f52e3f6838822db39ba0bbf5148d57d1e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3810236aca4661a6cdcd8399294cdb73e97948fd
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="modifying-the-atl-dhtml-control"></a>ATL DHTML denetimi değiştirme
 ATL Denetim Sihirbazı'nı Başlatıcı Kodu derlemek ve denetim çalıştırmak için ve yöntemleri proje dosyalarında nasıl yazılır ve nasıl DHTML gönderme yöntemlerini kullanarak denetimin C++ kodu çağırır görebilmeleri sağlar. Herhangi bir gönderme yöntemini arabirimine ekleyebilirsiniz. Ardından, HTML kaynak yöntemleri çağırabilirsiniz.  

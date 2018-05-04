@@ -1,13 +1,10 @@
 ---
-title: "ATL kopyalama İlkesi sınıfları | Microsoft Docs"
-ms.custom: 
+title: ATL kopyalama İlkesi sınıfları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - _Copy class
 - _CopyInterface class
 ms.assetid: 06704b68-d318-4c5d-a65b-71457fe9d00d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54ac3c9d53c3b6d2b295643001fd15b1e4c6c46d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 34b9ed5dca45633a5ab980d38b8a7cda151f5dc7
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="atl-copy-policy-classes"></a>ATL kopyalama İlkesi sınıfları
 Kopya İlkesi sınıflardır [yardımcı sınıflar](../atl/utility-classes.md) başlatmak için kullanılan, kopyalamak ve verileri silme. Kopya İlkesi sınıflar, herhangi bir veri türü için Kopyalama Semantiğini tanımlayın ve farklı veri türleri arasında dönüştürmeler tanımlamak için izin verir.  
@@ -75,14 +70,14 @@ Kopya İlkesi sınıflardır [yardımcı sınıflar](../atl/utility-classes.md) 
  Genellikle, heterojen (diğer bir deyişle, veri türleri arasında dönüştürme) kopyalamak için kendi kopya İlkesi sınıflarının tanımlanması gerekir. VCUE_Copy.h ve VCUE_CopyString.h içindeki dosyaları için bazı örnekler özel kopyalama İlkesi sınıfların bakmak [ATLCollections](../visual-cpp-samples.md) örnek. İki şablon kopyalama İlkesi sınıfları, bu dosyaları içeren `GenericCopy` ve `MapCopy`, özelleştirmeleri sayısı artı `GenericCopy` farklı veri türleri için.  
   
 ### <a name="genericcopy"></a>GenericCopy  
- `GenericCopy`belirtmenize olanak tanır *kaynak türü* ve `DestinationType` şablon bağımsız değişken. En genel biçiminde işte `GenericCopy` VCUE_Copy.h sınıfından:  
+ `GenericCopy` belirtmenize olanak tanır *kaynak türü* ve `DestinationType` şablon bağımsız değişken. En genel biçiminde işte `GenericCopy` VCUE_Copy.h sınıfından:  
   
  [!code-cpp[NVC_ATL_COM#30](../atl/codesnippet/cpp/atl-copy-policy-classes_1.h)]  
   
  VCUE_Copy.h Ayrıca, bu sınıfın aşağıdaki özelleştirmeleri içerir: `GenericCopy<BSTR>`, `GenericCopy<VARIANT, BSTR>`, `GenericCopy<BSTR, VARIANT>`. VCUE_CopyString.h kopyalama için özelleştirmeleri içeren **std::string**s: `GenericCopy<std::string>`, `GenericCopy<VARIANT, std::string>`, ve `GenericCopy<BSTR, std::string>`. Artırabilecek `GenericCopy` kendi özelleştirmeleri başka sağlayarak.  
   
 ### <a name="mapcopy"></a>MapCopy  
- `MapCopy`veriler depolanır ve hedef türü harita türünü belirtmenize olanak tanır şekilde kopyalanan verileri bir C++ Standart Kitaplığı stili eşlemeye saklandığı varsayılır. Sınıfının uygulama tarafından sağlanan tür tanımları yalnızca kullanır *MapType* sınıfı kaynak veri türünü belirlemek ve uygun çağırmak için `GenericCopy` sınıfı. Bu sınıfın hiçbir özelleştirmeleri gereklidir.  
+ `MapCopy` veriler depolanır ve hedef türü harita türünü belirtmenize olanak tanır şekilde kopyalanan verileri bir C++ Standart Kitaplığı stili eşlemeye saklandığı varsayılır. Sınıfının uygulama tarafından sağlanan tür tanımları yalnızca kullanır *MapType* sınıfı kaynak veri türünü belirlemek ve uygun çağırmak için `GenericCopy` sınıfı. Bu sınıfın hiçbir özelleştirmeleri gereklidir.  
   
  [!code-cpp[NVC_ATL_COM#31](../atl/codesnippet/cpp/atl-copy-policy-classes_2.h)]  
   

@@ -1,27 +1,22 @@
 ---
-title: "Dosya erişim sınırları | Microsoft Docs"
-ms.custom: 
+title: Dosya erişim sınırları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: ca2b5e64-b7b8-48d6-a0a4-a1b549314cda
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 797419c65855e1cbec4b13c53d6605fac0d23ed6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b66880bbb86d786516782892b540ff2b84be0321
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="file-access-limits"></a>Dosya Erişim Sınırları
 **ANSI 4.9.3** aynı dosyayı birden çok kez olup açık olabilir  

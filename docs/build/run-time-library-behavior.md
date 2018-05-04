@@ -2,12 +2,9 @@
 title: DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - _DllMainCRTStartup
 - CRT_INIT
@@ -24,21 +21,19 @@ helpviewer_keywords:
 - run-time [C++], DLL startup sequence
 - DLLs [C++], startup sequence
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
-caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75bf84eeaf9277c5cf037c4fa59c28d109d95856
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: feee3d888fbf43bfd8675ccc83a04fd4e1f0b528
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="dlls-and-visual-c-run-time-library-behavior"></a>DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı  
   
-Varsayılan olarak Visual C++ kullanarak bir dinamik bağlantı kitaplığı (DLL) yapılandırdığınızda, bağlayıcı Visual C++ çalışma zamanı kitaplığı (VCRuntime) içerir. VCRuntime başlatmak ve C/C++ yürütülebilir sonlandırmak için gerekli kod içerir. Bir DLL'e bağlandığında VCRuntime kodu olarak adlandırılan bir iç DLL giriş noktası işlevi sağlar `_DllMainCRTStartup` eklemek veya bir işlem veya iş parçacığı ayırmak için DLL Windows işletim sistemi iletileri işler. `_DllMainCRTStartup` İşlevi yığın arabellek güvenlik C çalışma zamanı kitaplığı (CRT) başlatma ve sonlandırma, ayarlama gibi temel görevleri gerçekleştirir ve statik ve genel nesneler için Kurucular ve Yıkıcılar çağırır. `_DllMainCRTStartup`Ayrıca çağrıları kanca işlevleri WinRT, MFC ve ATL kendi başlatma ve sonlandırma gerçekleştirmek için gibi diğer kitaplıkları için. Bu başlatma, CRT ve diğer kitaplıkları, yanı sıra statik değişkenler, başlatılmamış durumda bırakılır. Statik olarak bağlantılı CRT veya dinamik olarak bağlı CRT DLL DLL kullanıp kullanmadığını aynı VCRuntime iç başlatma ve sonlandırma yordamları denir.  
+Varsayılan olarak Visual C++ kullanarak bir dinamik bağlantı kitaplığı (DLL) yapılandırdığınızda, bağlayıcı Visual C++ çalışma zamanı kitaplığı (VCRuntime) içerir. VCRuntime başlatmak ve C/C++ yürütülebilir sonlandırmak için gerekli kod içerir. Bir DLL'e bağlandığında VCRuntime kodu olarak adlandırılan bir iç DLL giriş noktası işlevi sağlar `_DllMainCRTStartup` eklemek veya bir işlem veya iş parçacığı ayırmak için DLL Windows işletim sistemi iletileri işler. `_DllMainCRTStartup` İşlevi yığın arabellek güvenlik C çalışma zamanı kitaplığı (CRT) başlatma ve sonlandırma, ayarlama gibi temel görevleri gerçekleştirir ve statik ve genel nesneler için Kurucular ve Yıkıcılar çağırır. `_DllMainCRTStartup` Ayrıca çağrıları kanca işlevleri WinRT, MFC ve ATL kendi başlatma ve sonlandırma gerçekleştirmek için gibi diğer kitaplıkları için. Bu başlatma, CRT ve diğer kitaplıkları, yanı sıra statik değişkenler, başlatılmamış durumda bırakılır. Statik olarak bağlantılı CRT veya dinamik olarak bağlı CRT DLL DLL kullanıp kullanmadığını aynı VCRuntime iç başlatma ve sonlandırma yordamları denir.  
   
 ## <a name="default-dll-entry-point-dllmaincrtstartup"></a>Varsayılan DLL giriş noktası _DllMainCRTStartup  
   

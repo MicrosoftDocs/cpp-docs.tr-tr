@@ -1,12 +1,9 @@
 ---
-title: "CTokenPrivileges sınıfı | Microsoft Docs"
-ms.custom: 
+title: CTokenPrivileges sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CTokenPrivileges
@@ -27,17 +24,15 @@ dev_langs:
 helpviewer_keywords:
 - CTokenPrivileges class
 ms.assetid: 89590105-f001-4014-870d-142926091231
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e48ff04428d6cde6501c2782894c4132157a02b9
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: f6c9886b79739f42329b0f306c8bce6afc2d9fa0
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ctokenprivileges-class"></a>CTokenPrivileges sınıfı
 Bu sınıf için sarmalayıcı, **TOKEN_PRIVILEGES** yapısı.  
@@ -58,7 +53,7 @@ class CTokenPrivileges
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CTokenPrivileges::CTokenPrivileges](#ctokenprivileges)|Oluşturucu.|  
-|[CTokenPrivileges::~CTokenPrivileges](#dtor)|Yok Edicisi.|  
+|[CTokenPrivileges:: ~ CTokenPrivileges](#dtor)|Yok Edicisi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -94,7 +89,7 @@ class CTokenPrivileges
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h  
   
-##  <a name="add"></a>CTokenPrivileges::Add  
+##  <a name="add"></a>  CTokenPrivileges::Add  
  Bir veya daha fazla ayrıcalık ekler `CTokenPrivileges` erişim belirteci nesnesi.  
   
 ```
@@ -115,7 +110,7 @@ void Add(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntemin ilk form ayrıcalıkları başarıyla eklendi, false Aksi takdirde true değerini döndürür.  
   
-##  <a name="ctokenprivileges"></a>CTokenPrivileges::CTokenPrivileges  
+##  <a name="ctokenprivileges"></a>  CTokenPrivileges::CTokenPrivileges  
  Oluşturucu.  
   
 ```
@@ -134,7 +129,7 @@ CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  `CTokenPrivileges` Nesne isteğe bağlı olarak kullanılarak oluşturulabilir bir **TOKEN_PRIVILEGES** yapısı veya önceden tanımlanmış `CTokenPrivileges` nesnesi.  
   
-##  <a name="dtor"></a>  CTokenPrivileges::~CTokenPrivileges  
+##  <a name="dtor"></a>  CTokenPrivileges:: ~ CTokenPrivileges  
  Yok Edicisi.  
   
 ```
@@ -144,7 +139,7 @@ virtual ~CTokenPrivileges() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Yok Edicisi ayrılan tüm kaynakları serbest bırakır.  
   
-##  <a name="delete"></a>CTokenPrivileges::Delete  
+##  <a name="delete"></a>  CTokenPrivileges::Delete  
  Bir ayrıcalığını siler `CTokenPrivileges` erişim belirteci nesnesi.  
   
 ```
@@ -171,7 +166,7 @@ void DeleteAll() throw();
 ### <a name="remarks"></a>Açıklamalar  
  İçinde yer alan tüm ayrıcalıkları siler `CTokenPrivileges` erişim belirteci nesnesi.  
   
-##  <a name="getdisplaynames"></a>CTokenPrivileges::GetDisplayNames  
+##  <a name="getdisplaynames"></a>  CTokenPrivileges::GetDisplayNames  
  Alır görünen adlar bulunan ayrıcalıkların `CTokenPrivileges` erişim belirteci nesnesi.  
   
 ```
@@ -187,7 +182,7 @@ void GetDisplayNames(CNames* pDisplayNames) const throw(...);
   
  Bu yöntem görüntülenebilir adını alır: Örneğin, öznitelik adı SE_REMOTE_SHUTDOWN_NAME ise, "Uzak sistemden kapatmayı zorla". görüntülenebilir adı. Sistem adını almak için kullanın [CTokenPrivileges::GetNamesAndAttributes](#getnamesandattributes).  
   
-##  <a name="getcount"></a>CTokenPrivileges::GetCount  
+##  <a name="getcount"></a>  CTokenPrivileges::GetCount  
  Ayrıcalık girişlerinde sayısını döndürür `CTokenPrivileges` nesnesi.  
   
 ```
@@ -197,7 +192,7 @@ UINT GetCount() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Ayrıcalıkları içinde yer alan sayısını döndürür `CTokenPrivileges` nesnesi.  
   
-##  <a name="getlength"></a>CTokenPrivileges::GetLength  
+##  <a name="getlength"></a>  CTokenPrivileges::GetLength  
  Uzunluğunu döndürür `CTokenPrivileges` nesnesi.  
   
 ```
@@ -207,7 +202,7 @@ UINT GetLength() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tutmak için gereken bayt sayısını döndürür bir **TOKEN_PRIVILEGES** yapısını temsil ettiği `CTokenPrivileges` tüm içerdiği ayrıcalık girdilerini de dahil olmak üzere nesne.  
   
-##  <a name="getluidsandattributes"></a>CTokenPrivileges::GetLuidsAndAttributes  
+##  <a name="getluidsandattributes"></a>  CTokenPrivileges::GetLuidsAndAttributes  
  Yerel olarak benzersiz tanımlayıcısı (LUIDs) ve öznitelik bayraklarını alır `CTokenPrivileges` nesnesi.  
   
 ```
@@ -226,7 +221,7 @@ void GetLuidsAndAttributes(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem tüm bulunan ayrıcalıklarının Numaralandırılacak `CTokenPrivileges` erişim belirteci nesne ve tek tek LUIDs ve (isteğe bağlı) öznitelik bayrakları dizi nesneleri yerleştirin.  
   
-##  <a name="getnamesandattributes"></a>CTokenPrivileges::GetNamesAndAttributes  
+##  <a name="getnamesandattributes"></a>  CTokenPrivileges::GetNamesAndAttributes  
  Ad ve öznitelik bayraklarını alır `CTokenPrivileges` nesnesi.  
   
 ```
@@ -247,7 +242,7 @@ void GetNamesAndAttributes(
   
  Bu yöntem görüntülenebilir adı yerine öznitelik adı alır: Örneğin, öznitelik adı SE_REMOTE_SHUTDOWN_NAME ise, sistem adı "SeRemoteShutdownPrivilege.". Görüntülenebilecek adı almak için yöntemi kullanın [CTokenPrivileges::GetDisplayNames](#getdisplaynames).  
   
-##  <a name="getptoken_privileges"></a>CTokenPrivileges::GetPTOKEN_PRIVILEGES  
+##  <a name="getptoken_privileges"></a>  CTokenPrivileges::GetPTOKEN_PRIVILEGES  
  Bir işaretçi döndürür **TOKEN_PRIVILEGES** yapısı.  
   
 ```
@@ -257,7 +252,7 @@ const TOKEN_PRIVILEGES* GetPTOKEN_PRIVILEGES() const throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi döndürür [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) yapısı.  
   
-##  <a name="lookupprivilege"></a>CTokenPrivileges::LookupPrivilege  
+##  <a name="lookupprivilege"></a>  CTokenPrivileges::LookupPrivilege  
  Verilen ayrıcalık adıyla ilişkili özniteliği alır.  
   
 ```
@@ -276,7 +271,7 @@ bool LookupPrivilege(
 ### <a name="return-value"></a>Dönüş Değeri  
  Öznitelik Aksi halde başarıyla alınırsa, false ise, true döndürür.  
   
-##  <a name="operator_eq"></a>CTokenPrivileges::operator =  
+##  <a name="operator_eq"></a>  CTokenPrivileges::operator =  
  Atama işleci.  
   
 ```
@@ -294,7 +289,7 @@ CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Güncelleştirilmiş döndürür `CTokenPrivileges` nesnesi.  
   
-##  <a name="operator_const_token_privileges__star"></a>CTokenPrivileges::operator const TOKEN_PRIVILEGES *  
+##  <a name="operator_const_token_privileges__star"></a>  CTokenPrivileges::operator const TOKEN_PRIVILEGES *  
  Bir işaretçi bir değere bıraktığı **TOKEN_PRIVILEGES** yapısı.  
   
 ```  
@@ -308,6 +303,6 @@ operator const TOKEN_PRIVILEGES *() const throw(...);
  [Güvenliği örneği](../../visual-cpp-samples.md)   
  [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630)   
  [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261)   
- [LUID_AND_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379263)   
+ [LUID_AND_ATTRIBUTES KONUSUNA](http://msdn.microsoft.com/library/windows/desktop/aa379263)   
  [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
  [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

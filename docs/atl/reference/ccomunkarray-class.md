@@ -1,12 +1,9 @@
 ---
-title: "CComUnkArray sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComUnkArray sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComUnkArray
@@ -24,17 +21,15 @@ helpviewer_keywords:
 - connection points [C++], managing
 - CComUnkArray class
 ms.assetid: 5fd4b378-a7b5-4cc1-8866-8ab72a73639e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ca462648a43869b11984e4582c8eb2c3dfaece7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0de49180052a6fdb7bde32274e032ea1dd9bfb87
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomunkarray-class"></a>CComUnkArray sınıfı
 Bu sınıf depolar **IUnknown** işaretçileri ve bir parametre olarak kullanılmak üzere tasarlanmış [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) Şablon sınıfı.  
@@ -77,12 +72,12 @@ class CComUnkArray
  Bkz: [ekleme bağlantı noktaları bir nesneye](../../atl/adding-connection-points-to-an-object.md) bağlantı oluşturulmasını otomatik hale getirme ile ilgili ayrıntılar için proxy noktası.  
   
 > [!NOTE]
-> **Not** sınıfı [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md) tarafından kullanılan **sınıfı Ekle** bağlantı noktaları olan bir denetim oluştururken, Sihirbazı. Bağlantı noktası sayısı el ile belirtmek istiyorsanız, başvurusundan değiştirme **CComDynamicUnkArray** için `CComUnkArray<`  *n*  `>`, burada  *n*  gerekli bağlantı noktalarının sayısı.  
+> **Not** sınıfı [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md) tarafından kullanılan **sınıfı Ekle** bağlantı noktaları olan bir denetim oluştururken, Sihirbazı. Bağlantı noktası sayısı el ile belirtmek istiyorsanız, başvurusundan değiştirme **CComDynamicUnkArray** için `CComUnkArray<` *n* `>`, burada *n*gerekli bağlantı noktalarının sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="add"></a>CComUnkArray::Add  
+##  <a name="add"></a>  CComUnkArray::Add  
  Eklemek için bu yöntemi çağırın bir **IUnknown** dizisine işaretçi.  
   
 ```
@@ -96,7 +91,7 @@ DWORD Add(IUnknown* pUnk);
 ### <a name="return-value"></a>Dönüş Değeri  
  Dizi yeni işaretçi alabilecek kadar büyük değilse yeni eklenen işaretçi veya 0 ile ilişkili tanımlama bilgisi döndürür.  
   
-##  <a name="begin"></a>CComUnkArray::begin  
+##  <a name="begin"></a>  CComUnkArray::begin  
  Bir işaretçi koleksiyonunun başına döndürür **IUnknown** arabirim işaretçileri.  
   
 ```
@@ -112,7 +107,7 @@ IUnknown**
   
  Kullanmadan önce **IUnknown** arabirimi, olmadığını denetlemelidir **NULL**.  
   
-##  <a name="ccomunkarray"></a>CComUnkArray::CComUnkArray  
+##  <a name="ccomunkarray"></a>  CComUnkArray::CComUnkArray  
  Oluşturucu.  
   
 ```
@@ -122,7 +117,7 @@ CComUnkArray();
 ### <a name="remarks"></a>Açıklamalar  
  Topluluğun tutmak için ayarlar `nMaxSize` **IUnknown** işaretçileri ve işaretçiler başlatır **NULL**.  
   
-##  <a name="end"></a>CComUnkArray::end  
+##  <a name="end"></a>  CComUnkArray::end  
  Bir son geçmiş işaretçi döndüren **IUnknown** koleksiyondaki işaretçi.  
   
 ```
@@ -138,7 +133,7 @@ IUnknown**
   
  [!code-cpp[NVC_ATL_COM#44](../../atl/codesnippet/cpp/ccomunkarray-class_1.cpp)]  
   
-##  <a name="getcookie"></a>CComUnkArray::GetCookie  
+##  <a name="getcookie"></a>  CComUnkArray::GetCookie  
  İle ilişkili tanımlama bilgisi almak için bu yöntemi çağırın bir verilen **IUnknown** işaretçi.  
   
 ```
@@ -155,7 +150,7 @@ DWORD WINAPI GetCookie(IUnknown** ppFind);
 ### <a name="remarks"></a>Açıklamalar  
  Birden çok örneği aynı olup olmadığını **IUnknown** işaretçi, bu işlev, ilk için tanımlama bilgisi döndürür.  
   
-##  <a name="getunknown"></a>CComUnkArray::GetUnknown  
+##  <a name="getunknown"></a>  CComUnkArray::GetUnknown  
  Almak için bu yöntemi çağırın **IUnknown** belirli bir tanımlama bilgisi ile ilişkili işaretçi.  
   
 ```
@@ -169,7 +164,7 @@ IUnknown* WINAPI GetUnknown(DWORD dwCookie);
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **IUnknown** işaretçi ya da eşleşen tanımlama bilgisi bulunursa, NULL.  
   
-##  <a name="remove"></a>CComUnkArray::Remove  
+##  <a name="remove"></a>  CComUnkArray::Remove  
  Kaldırmak için bu yöntemi çağırın bir **IUnknown** dizisinden işaretçi.  
   
 ```

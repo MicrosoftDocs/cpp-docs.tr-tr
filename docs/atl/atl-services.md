@@ -1,13 +1,10 @@
 ---
 title: ATL Hizmetleri | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 f1_keywords:
 - CServiceModule
 dev_langs:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - services, ATL
 - ATL services
 ms.assetid: 8c09d1a8-7548-4d2c-947c-9d795a81659b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d13eebbe96ba57c82e3bf1c360b0cb471a6bd975
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: db13b443e605168389f0a9bc767ba29a75d4234d
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="atl-services"></a>ATL Hizmetleri
 Bir hizmet olarak çalışır, ATL COM nesnesi oluşturmak için hizmet (EXE) ATL Proje Sihirbazı'ndaki Sunucu Seçenekleri listesinden seçmeniz yeterlidir. Sihirbaz sonra türetilmiş bir sınıf oluşturun `CAtlServiceModuleT` hizmeti uygulama.  

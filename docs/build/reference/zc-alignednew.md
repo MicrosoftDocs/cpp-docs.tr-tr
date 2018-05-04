@@ -1,9 +1,9 @@
 ---
-title: "/ZC:alignedNew (c ++ 17 aşırı hizalanmış ayırma) | Microsoft Docs"
+title: /ZC:alignedNew (c ++ 17 aşırı hizalanmış ayırma) | Microsoft Docs
 ms.date: 02/28/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /Zc:alignedNew
 dev_langs:
@@ -14,12 +14,11 @@ helpviewer_keywords:
 - -Zc:alignedNew
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: d645534c398628afa533770d44094d23ca0325a5
-ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
+ms.openlocfilehash: 5f9527d63a9843bd4df90520e5b4759126d72fe1
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="zcalignednew-c17-over-aligned-allocation"></a>/ZC:alignedNew (c ++ 17 aşırı hizalanmış ayırma)
 
@@ -27,7 +26,7 @@ Aşırı hizalı C ++ 17 desteğini etkinleştirme **yeni**, dinamik bellek ayı
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc:alignedNew**[-]
+> **/ZC:alignedNew**[-]
 
 ## <a name="remarks"></a>Açıklamalar
 

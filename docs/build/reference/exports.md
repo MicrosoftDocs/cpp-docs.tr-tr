@@ -1,13 +1,10 @@
 ---
-title: "DIŞARI AKTARMA | Microsoft Docs"
-ms.custom: 
+title: DIŞARI AKTARMA | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - EXPORTS
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - EXPORTS .def file statement
 ms.assetid: dbcd7579-b855-44c4-bd27-931e157657f7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f9a8e902e42d44ffa292b9f821839b8e948d7a5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7cc7a9995fdc5be786712752e30015337b9f1607
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="exports"></a>EXPORTS
 Dışarı aktarılan adlarını belirtin bir veya daha fazla verme tanımları bir bölümünü veya sıra numaraları işlevleri ya da veri sunar. Her tanım ayrı bir satırda olmalıdır.  
@@ -45,7 +40,7 @@ EXPORTS
 entryname[=internalname] [@ordinal [NONAME]] [[PRIVATE] | [DATA]]  
 ```  
   
- `entryname`dışarı aktarmak istediğiniz işlevi veya değişkeni addır. Bu gereklidir. Verdiğiniz ad dll adından farklıysa, verme kişinin adı DLL'de kullanarak belirtin `internalname`. Örneğin, bir işlev, DLL dışarı aktarmaları `func1` ve arayanlar olarak kullanmak istediğiniz `func2`, belirtmeniz gerekir:  
+ `entryname` dışarı aktarmak istediğiniz işlevi veya değişkeni addır. Bu gereklidir. Verdiğiniz ad dll adından farklıysa, verme kişinin adı DLL'de kullanarak belirtin `internalname`. Örneğin, bir işlev, DLL dışarı aktarmaları `func1` ve arayanlar olarak kullanmak istediğiniz `func2`, belirtmeniz gerekir:  
   
 ```  
 EXPORTS  
@@ -77,7 +72,7 @@ EXPORTS
   
 3.  Bir [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlantı komutunda belirtimi  
   
-4.  A [açıklama](../../preprocessor/comment-c-cpp.md) kaynak kodda, formun yönergesi`#pragma comment(linker, "/export: definition ")`  
+4.  A [açıklama](../../preprocessor/comment-c-cpp.md) kaynak kodda, formun yönergesi `#pragma comment(linker, "/export: definition ")`  
   
  Tüm dört yöntemleri aynı programda kullanılabilir. BAĞLANTI dışarı aktarmaları içeren bir program oluşturduğunda, ayrıca bir içeri aktarma kitaplığını sürece oluşturduğu bir. EXP dosyası derleme kullanılır.  
   

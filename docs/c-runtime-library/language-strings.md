@@ -1,13 +1,10 @@
 ---
 title: Dil dizeleri | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.strings
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - language strings
 ms.assetid: bbee63b1-af0b-4e44-9eaf-dd3e265c05fd
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85f0c9b06ae85128209f06d95375e09043b3f9c8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 92ad129a5703f509cfd9543497cceffae3a6e7b3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="language-strings"></a>Dil Dizeleri
 `setlocale` Ve `_create_locale` işlevleri Unicode kod sayfası kullanmayın işletim sistemlerinde Windows NLS API desteklenen dilleri kullanabilirsiniz. İşletim sistemi sürümü tarafından desteklenen dillerin bir listesi için bkz: [Ulusal dil desteği (NLS) API Başvurusu](https://www.microsoft.com/resources/msdn/goglobal/default.mspx). Dil dize değerleri olabilir **dil** ve **dil kısaltması** desteklenen dillerin listesi sütunlarının. İşletim sistemi sürümüne göre dil desteği hakkında ek bilgi için bkz: [ek A: Ürün davranışı](http://msdn.microsoft.com/goglobal/bb896001.aspx) [MS-LCID] içindeki: Windows dil kodu tanımlayıcısı (LCID) başvurusu.   
@@ -85,7 +80,7 @@ C çalışma zamanı kitaplık uygulaması, ayrıca bu dil dizeleri destekler:
 |İspanyolca el salvador|ES SV|  
 |İspanyolca-guatemala|ES-GT|  
 |İspanyolca-honduras|ES-HN|  
-|İspanyolca-Meksika|ES MX|  
+|İspanyolca-Meksika|es-MX|  
 |İspanyolca modern|es-ES|  
 |İspanyolca-Nikaragua|ES-nı|  
 |İspanyolca-panama|ES-PA|  

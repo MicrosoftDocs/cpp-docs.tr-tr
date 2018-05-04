@@ -1,13 +1,10 @@
 ---
-title: "-Fp (adı. PCH dosyası) | Microsoft Docs"
-ms.custom: 
+title: -Fp (adı. PCH dosyası) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.PrecompiledHeaderFile
 - /fp
@@ -24,17 +21,15 @@ helpviewer_keywords:
 - precompiled header files, naming
 - /Fp compiler option [C++]
 ms.assetid: 0fcd9cbd-e09f-44d3-9715-b41efb5d0be2
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77ba54705ec4037f1c98a2ae1832dddcc551956e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 80f59477695b83b33dd3cfa2b37837c5b52c8002
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fp-name-pch-file"></a>/Fp (.Pch Dosyası Adlandır)
 Bir yol adı için varsayılan yolu adını kullanmak yerine önceden derlenmiş üst bilgi sağlar.  
@@ -44,7 +39,7 @@ Bir yol adı için varsayılan yolu adını kullanmak yerine önceden derlenmiş
 > **/FP**_yol adı_  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu seçenek ile kullanmak [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md) veya [/Yu (önceden derlenmiş üst bilgi dosyasını kullanma)](../../build/reference/yu-use-precompiled-header-file.md) bir yol adı için varsayılan yolu adını kullanmak yerine önceden derlenmiş üst bilgi sağlamak için. Aynı zamanda **/Fp** ile **/Yc** farklı bir önceden derlenmiş üst bilgi dosyası kullanıldığını belirtmek için **/Yc***filename* bağımsız değişkeni ve kaynak dosyasının temel adından.  
+ Bu seçenek ile kullanmak [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md) veya [/Yu (önceden derlenmiş üst bilgi dosyasını kullanma)](../../build/reference/yu-use-precompiled-header-file.md) bir yol adı için varsayılan yolu adını kullanmak yerine önceden derlenmiş üst bilgi sağlamak için. De kullanabilirsiniz **/Fp** ile **/Yc** farklı bir önceden derlenmiş üst bilgi dosyası kullanıldığını belirtmek için **/Yc *** filename* bağımsız değişkeni ve kaynak dosyasının temel adı.  
   
  Yol adının bir parçası olarak bir uzantı belirtmezseniz .pch uzantısı varsayılır. Bir dosya adı olmadan bir dizin belirtin, varsayılan dosya adı VC ise*x*0.pch, burada *x* Visual C++ ana sürümü kullanılıyor.  
   

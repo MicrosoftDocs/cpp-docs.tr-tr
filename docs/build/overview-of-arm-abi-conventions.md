@@ -1,27 +1,22 @@
 ---
-title: "ARM ABI kuralları genel bakış | Microsoft Docs"
-ms.custom: 
+title: ARM ABI kuralları genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 23f4ae8c-3148-4657-8c47-e933a9f387de
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 073fe113c1915913d06a63c7feabcb7808896188
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f78e5731e6c8d4125fb8afc184cd6e4f2a74cb7a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="overview-of-arm-abi-conventions"></a>ARM ABI kuralları genel bakış
 Windows için ARM işlemci derlenmiş kod için uygulama ikili arabirimi (ABI) üzerinde standart ARM EABI temel alır. Bu makale, ARM Windows standart arasındaki temel farklılıklar vurgular. Standart ARM EABI hakkında daha fazla bilgi için bkz: [uygulama ikili arabirimi (ABI) ARM mimarisi için](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.subset.swdev.abi/index.html).  
@@ -67,7 +62,7 @@ Windows için ARM işlemci derlenmiş kod için uygulama ikili arabirimi (ABI) �
     |LDR, LDR [S] B, LDR [S] H|Bellekten yükleme|Ancak LDR değişmez değer formlar|  
     |STR, STRB, STRH|Bellek için depolama||  
     |EKLEME, ADC, RSB, SBC, ALT|Ekleme veya çıkarma|Ancak değil Ekle/alt SP, SP, imm7 formlar<br /><br /> RM! PC, Rdn =! PC, Rdm =! PC =|  
-    |CMP, CMN|Karşılaştırma|RM! PC, kaydırmayı =! PC =|  
+    |CMP, CMN|{1&gt;Karşılaştır&lt;1}|RM! PC, kaydırmayı =! PC =|  
     |MUL|Çarp||  
     |ASR, LSL, LSR, ROR|Bit kaydırma||  
     |VE, BIC, EOR, ORR TST|Bit düzeyinde aritmetik||  
@@ -197,7 +192,7 @@ Windows için ARM işlemci derlenmiş kod için uygulama ikili arabirimi (ABI) �
 ## <a name="cc-specifics"></a>C/C++ özellikleri  
  Listedeki en az bir değer 64-bit çift sözcük depolama gerektirmedikçe numaralandırmalar 32 bit tam sayı türleridir. Bu durumda, sabit bir 64-bit tamsayı türü yükseltilir.  
   
- `wchar_t`eşdeğer olarak tanımlanan `unsigned short`, diğer platformlar ile uyumluluğu korumak için.  
+ `wchar_t` eşdeğer olarak tanımlanan `unsigned short`, diğer platformlar ile uyumluluğu korumak için.  
   
 ## <a name="stack-walking"></a>Taramasını yığını  
  Etkin çerçeve işaretçisi ile derlenmiş Windows kod ([/Oy (Çerçeve işaretçisini atlama)](../build/reference/oy-frame-pointer-omission.md)) hızlı yığın taramasını etkinleştirmek için. Genellikle, r11 kaydetmek sonraki bağlantı noktalarına bir {r11, lr} olan zincirinde önceki çerçeve işaretçisi yığını ve dönüş adresi belirtir çifti. Kodunuzu Ayrıca çerçeve işaretçisi profil oluşturma ve izleme için etkinleştirmenizi öneririz.  

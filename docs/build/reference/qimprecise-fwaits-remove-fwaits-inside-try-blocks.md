@@ -1,13 +1,10 @@
 ---
-title: "-Qimprecise_fwaits (Try blokları içindeki fwaits'i Kaldır) | Microsoft Docs"
-ms.custom: 
+title: -Qimprecise_fwaits (Try blokları içindeki fwaits'i Kaldır) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /Qimprecise_fwaits
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - -Qimprecise_fwaits compiler option (C++)
 - /Qimprecise_fwaits compiler option (C++)
 ms.assetid: b1501f21-7e08-4fea-95e8-176ec03a635b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06c93e60530d870b05c601be4980308feb627b46
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a688f4b9f8f3c9302bb6a49e4b0a94a0e0931b33
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="qimprecisefwaits-remove-fwaits-inside-try-blocks"></a>/Qimprecise_fwaits (Try Blokları İçindeki fwaits'i Kaldır)
 Kaldırır `fwait` komutları için iç `try` engeller kullandığınızda [/fp: dışında](../../build/reference/fp-specify-floating-point-behavior.md) derleyici seçeneği.  

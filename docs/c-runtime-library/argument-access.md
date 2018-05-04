@@ -4,7 +4,7 @@ ms.custom: ''
 ms.date: 04/04/2018
 ms.technology:
 - cpp-standard-libraries
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.arguments
 dev_langs:
@@ -15,14 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7046ae34-a0ec-44f0-815d-3209492a3e19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: afef1300637f7a31755eb9408f9d33d9504475a1
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 38d4031fcfba793a99688b6fd1cc91a3f1519989
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="argument-access"></a>Bağımsız değişken erişimi
 
@@ -38,4 +37,4 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kategorilere göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)

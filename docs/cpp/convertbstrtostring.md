@@ -1,12 +1,9 @@
 ---
 title: ConvertBSTRToString | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - ConvertBSTRToString
@@ -15,20 +12,18 @@ dev_langs:
 helpviewer_keywords:
 - ConvertBSTRToString function
 ms.assetid: ab6ce555-3d75-4e9c-9cb8-ada6d8ce43b1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7f3463e34c17bcde4f64b89e1ae083228317293
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: 986fc35d1a84737b441d7259bba78459a42404e6
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="convertbstrtostring"></a>ConvertBSTRToString
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Dönüştüren bir `BSTR` değeri bir **char \*** .  
   
@@ -46,7 +41,7 @@ ms.lasthandoff: 01/25/2018
  BSTR değişken.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `ConvertBSTRToString`bir dize silmeniz gerekir ayırır.  
+ `ConvertBSTRToString` bir dize silmeniz gerekir ayırır.  
   
 ## <a name="example"></a>Örnek  
   

@@ -1,27 +1,22 @@
 ---
-title: "Yapı UNWIND_CODE | Microsoft Docs"
-ms.custom: 
+title: Yapı UNWIND_CODE | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 104955d8-7e33-4c5a-b0c6-3254648f0af3
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76059ff24b46fd537db0c2670a30cf3f42ee2166
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 068acacf88e9ac968b34c26bf76657fd33adf4f3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="struct-unwindcode"></a>struct UNWIND_CODE
 Geriye doğru izleme kod dizisi RSP ve kalıcı Yazmaçları etkileyen giriş bölümünde işlemleri dizisini kaydetmek için kullanılır. Her kod öğesi aşağıdaki biçime sahiptir:  

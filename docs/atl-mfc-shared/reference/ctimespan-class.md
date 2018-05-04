@@ -1,12 +1,9 @@
 ---
-title: "CTimeSpan sınıfı | Microsoft Docs"
-ms.custom: 
+title: CTimeSpan sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CTimeSpan
@@ -32,17 +29,15 @@ helpviewer_keywords:
 - shared classes, CTimeSpan
 - time, elapsed
 ms.assetid: ee1e42f6-1839-477a-8435-fb26ad475140
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cedf05bd8f5af198569891b4d6d59610d5098eb6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dd95d26dd2df41f16091379c892f67319c218cc4
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ctimespan-class"></a>CTimeSpan sınıfı
 Bir zaman aralığı saniye sayısı olarak dahili olarak depolanan zaman miktarı.  
@@ -85,9 +80,9 @@ class CTimeSpan
 |[operator == < vs.](#ctimespan_comparison_operators)|İki göreli zaman değerlerini karşılaştırır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CTimeSpan`bir taban sınıfı yok.  
+ `CTimeSpan` bir taban sınıfı yok.  
   
- `CTimeSpan`İşlevler, gün, saat, dakika çeşitli saniyeye ve saniye dönüştürün.  
+ `CTimeSpan` İşlevler, gün, saat, dakika çeşitli saniyeye ve saniye dönüştürün.  
   
  `CTimeSpan` Nesne depolanır bir **__time64_t** 8 bayt yapısı.  
   
@@ -100,7 +95,7 @@ class CTimeSpan
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atltime.h  
   
-##  <a name="ctimespan_comparison_operators"></a>CTimeSpan Karşılaştırma işleçleri  
+##  <a name="ctimespan_comparison_operators"></a>  CTimeSpan Karşılaştırma işleçleri  
  Karşılaştırma işleçleri.  
   
 ```
@@ -123,7 +118,7 @@ bool operator>=(CTimeSpan span) const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#169](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_1.cpp)]  
   
-##  <a name="ctimespan"></a>CTimeSpan::CTimeSpan  
+##  <a name="ctimespan"></a>  CTimeSpan::CTimeSpan  
  Yapıları `CTimeSpan` çeşitli şekillerde nesneleri.  
   
 ```
@@ -170,7 +165,7 @@ CTimeSpan(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#162](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_2.cpp)]  
   
-##  <a name="format"></a>CTimeSpan::Format  
+##  <a name="format"></a>  CTimeSpan::Format  
  Buna karşılık gelen biçimlendirilmiş bir dize oluşturur `CTimeSpan`.  
   
 ```
@@ -183,7 +178,7 @@ CString Format(UINT nID) const;
  `pFormat`, `pszFormat`  
  Bir biçimlendirme dize benzer `printf` biçimlendirme dizesi. Biçimlendirme bir yüzde öncesinde kodları ( `%`) oturum açın, ilgili tarafından değiştirilir `CTimeSpan` bileşeni. Biçimlendirme dizesi diğer karakterler döndürülen dize değişmeden kopyalanır. Değer ve biçimlendirme kodlarını anlamını **biçimi** aşağıda listelenmiştir:  
   
-- **%D** toplam gün bu`CTimeSpan`  
+- **%D** toplam gün bu `CTimeSpan`  
   
 - **%H** saat geçerli gün içinde  
   
@@ -191,7 +186,7 @@ CString Format(UINT nID) const;
   
 - **%S** geçerli dakikada saniye  
   
-- **%%**Yüzde işareti  
+- **%%** Yüzde işareti  
   
  `nID`  
  Bu biçim tanımlayan dize kimliği.  
@@ -205,7 +200,7 @@ CString Format(UINT nID) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#163](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_3.cpp)]  
   
-##  <a name="getdays"></a>CTimeSpan::GetDays  
+##  <a name="getdays"></a>  CTimeSpan::GetDays  
  Bu tam gün sayısını gösteren bir değer döndürür `CTimeSpan`.  
   
 ```
@@ -221,7 +216,7 @@ LONGLONG GetDays() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#164](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_4.cpp)]  
   
-##  <a name="gethours"></a>CTimeSpan::GetHours  
+##  <a name="gethours"></a>  CTimeSpan::GetHours  
  Geçerli gün (-23 ile 23) saat sayısını temsil eden bir değer döndürür.  
   
 ```
@@ -234,7 +229,7 @@ LONG GetHours() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#165](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_5.cpp)]  
   
-##  <a name="getminutes"></a>CTimeSpan::GetMinutes  
+##  <a name="getminutes"></a>  CTimeSpan::GetMinutes  
  Geçerli saat (-59 ile 59) dakika sayısını temsil eden bir değer döndürür.  
   
 ```
@@ -247,7 +242,7 @@ LONG GetMinutes() const throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [GetHours](#gethours).  
   
-##  <a name="getseconds"></a>CTimeSpan::GetSeconds  
+##  <a name="getseconds"></a>  CTimeSpan::GetSeconds  
  Geçerli (-59 ile 59) dakika içinde saniye sayısını temsil eden bir değer döndürür.  
   
 ```
@@ -260,7 +255,7 @@ LONG GetSeconds() const throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [GetHours](#gethours).  
   
-##  <a name="gettimespan"></a>CTimeSpan::GetTimeSpan  
+##  <a name="gettimespan"></a>  CTimeSpan::GetTimeSpan  
  Değerini döndürür `CTimeSpan` nesnesi.  
   
 ```
@@ -270,7 +265,7 @@ __ time64_t GetTimeSpan() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli değeri döndürür `CTimeSpan` nesnesi.  
   
-##  <a name="gettotalhours"></a>CTimeSpan::GetTotalHours  
+##  <a name="gettotalhours"></a>  CTimeSpan::GetTotalHours  
  Bu tam saat toplam sayısını temsil eden bir değer döndürür `CTimeSpan`.  
   
 ```
@@ -283,7 +278,7 @@ LONGLONG GetTotalHours() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#166](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_6.cpp)]  
   
-##  <a name="gettotalminutes"></a>CTimeSpan::GetTotalMinutes  
+##  <a name="gettotalminutes"></a>  CTimeSpan::GetTotalMinutes  
  Bu tam dakika toplam sayısını temsil eden bir değer döndürür `CTimeSpan`.  
   
 ```
@@ -296,7 +291,7 @@ LONGLONG GetTotalMinutes() const throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [GetTotalHours](#gettotalhours).  
   
-##  <a name="gettotalseconds"></a>CTimeSpan::GetTotalSeconds  
+##  <a name="gettotalseconds"></a>  CTimeSpan::GetTotalSeconds  
  Bu tam saniye toplam sayısını temsil eden bir değer döndürür `CTimeSpan`.  
   
 ```
@@ -309,7 +304,7 @@ LONGLONG GetTotalSeconds() const throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [GetTotalHours](#gettotalhours).  
   
-##  <a name="operator_add_-"></a>CTimeSpan::operator +, -  
+##  <a name="operator_add_-"></a>  CTimeSpan::operator +, -  
  Ekler ve çıkarır `CTimeSpan` nesneleri.  
   
 ```
@@ -330,7 +325,7 @@ CTimeSpan operator-(CTimeSpan span) const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#167](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_7.cpp)]  
   
-##  <a name="operator_add_eq_-_eq"></a>CTimeSpan::operator +=-=  
+##  <a name="operator_add_eq_-_eq"></a>  CTimeSpan::operator +=-=  
  Ekler ve çıkarır bir `CTimeSpan` nesne için ve bu `CTimeSpan`.  
   
 ```
@@ -351,7 +346,7 @@ CTimeSpan& operator-=(CTimeSpan span) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#168](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_8.cpp)]  
   
-##  <a name="serialize64"></a>CTimeSpan::Serialize64  
+##  <a name="serialize64"></a>  CTimeSpan::Serialize64  
   
 > [!NOTE]
 >  Bu yöntem yalnızca MFC projelerinde kullanılabilir.  

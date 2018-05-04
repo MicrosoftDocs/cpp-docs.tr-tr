@@ -1,13 +1,10 @@
 ---
-title: "-MANIFESTUAC (bildirimdeki UAC bilgilerini katıştırır) | Microsoft Docs"
-ms.custom: 
+title: -MANIFESTUAC (bildirimdeki UAC bilgilerini katıştırır) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.UACUIAccess
 - VC.Project.VCLinkerTool.UACExecutionLevel
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - MANIFESTUAC linker option
 - -MANIFESTUAC linker option
 ms.assetid: 2d243c39-fa13-493c-b56f-d0d972a1603a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 564c17336936866750d05137a7bcd101b3a6534d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bdfd872b43fbabdb14457ca54e6c4dfbe039313f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manifestuac-embeds-uac-information-in-manifest"></a>/MANIFESTUAC (Bildirimdeki UAC bilgilerini katıştırır)
 Kullanıcı Hesabı Denetimi (UAC) bilgisi program bildiriminde ekli olup olmadığını belirtir.  
@@ -52,7 +47,7 @@ Kullanıcı Hesabı Denetimi (UAC) bilgisi program bildiriminde ekli olup olmad�
  Aşağıdakilerden birini *asInvoker*, *highestAvailable*, veya *requireAdministrator'a*. Varsayılan olarak asInvoker. Daha fazla bilgi için bu konunun ilerleyen bölümlerinde Açıklamalar bölümüne bakın.  
   
  `_uiAccess`  
- `true`uygulamanın kullanıcı arabirimi koruma düzeyleri atlamak ve giriş izni daha yüksek Windows masaüstünde sürücü istiyorsanız; Aksi takdirde `false`. Varsayılan olarak `false`. Kümesine `true` yalnızca kullanıcı arabirimi erişilebilirlik uygulamaları için.  
+ `true` uygulamanın kullanıcı arabirimi koruma düzeyleri atlamak ve giriş izni daha yüksek Windows masaüstünde sürücü istiyorsanız; Aksi takdirde `false`. Varsayılan olarak `false`. Kümesine `true` yalnızca kullanıcı arabirimi erişilebilirlik uygulamaları için.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Komut satırında birden çok /MANIFESTUAC seçeneği belirtirseniz, girilen sonuncu önceliklidir.  

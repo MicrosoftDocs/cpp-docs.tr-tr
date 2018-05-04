@@ -1,13 +1,10 @@
 ---
-title: "alır, _getws | Microsoft Docs"
-ms.custom: 
+title: alır, _getws | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - _getws
 - gets
@@ -36,17 +33,15 @@ helpviewer_keywords:
 - gets function
 - standard input, reading from
 ms.assetid: 1ec2dd4b-f801-48ea-97c2-892590f16024
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01f26f8b9dbe75d37927c4d4f3055f04378ef4a1
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 3309aee316c3b067c9bd0ade4e1064289cb4ddaf
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="gets-getws"></a>gets, _getws
 Bir satırından alır `stdin` akış. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).  

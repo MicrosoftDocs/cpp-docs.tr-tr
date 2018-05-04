@@ -2,11 +2,8 @@
 title: ATL OLE DB Tüketici Sihirbazı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.atl.consumer.overview
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - connection strings [C++], OLE DB consumers
 - ATL OLE DB Consumer Wizard
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
-caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d12020b6adfca2c23dc610b5e596ff883bb9e7ff
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0d51569eaece5e3fac59c7cc2ff82a8454a5f959
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketici Sihirbazı
 Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamalarla belirtilen OLE DB sağlayıcısı ile belirtilen veri kaynağına erişmek için gerekli ayarlar.  
@@ -70,7 +65,7 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamalarla belirtilen OLE DB 
   
     3. **Sunucudaki veritabanını seçin:** veri sunucusundaki tüm kayıtlı veritabanlarını görüntülemek için aşağı açılır menüsünü tıklatın ve seçin.  
   
-         veya  
+         -veya-  
   
  **Bir veritabanı dosyası bir veritabanı adı olarak ekleme:** açık yol adını girin; veritabanı olarak kullanılacak bir dosya belirtin.  
   
@@ -176,13 +171,13 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamalarla belirtilen OLE DB 
  **Tablo**  
  Kullanmak istiyorsanız bu seçeneği `CTable` veya **db_table** tablosu ve tablo erişimcisi sınıf bildirimleri oluşturmak için.  
   
- **Komutu**  
+ **komutu**  
  Kullanmak istiyorsanız bu seçeneği `CCommand` veya **db_command** komut ve komut erişimcisi sınıf bildirimleri oluşturmak için. Bu varsayılan seçimdir.  
   
  **Destek**  
  (Varsayılan, Yok'tur) tüketicideki desteklenmesi için güncelleştirmeleri türlerini belirtmek için onay kutularını seçin. Aşağıdakilerin her biri ayarlayacaktır [DBPROP_IRowsetChange](https://msdn.microsoft.com/library/ms715892.aspx) ve uygun girişleri [DBPROP_UPDATABILITY](https://msdn.microsoft.com/library/ms722676.aspx) eşleme özelliğini ayarlayın.  
   
- **Değiştirme**  
+ **değiştirme**  
  Tüketici satır kümesinde satır veri güncelleştirmelerini destekleyen belirtir.  
   
  **Ekle**  

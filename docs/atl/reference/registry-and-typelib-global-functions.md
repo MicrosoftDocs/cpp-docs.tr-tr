@@ -1,12 +1,9 @@
 ---
-title: "Kayıt defteri ve TypeLib genel işlevler | Microsoft Docs"
-ms.custom: 
+title: Kayıt defteri ve TypeLib genel işlevler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - atlbase/ATL::AtlGetPerUserRegistration
@@ -26,17 +23,15 @@ dev_langs:
 helpviewer_keywords:
 - RegistryDataExchange function, global functions
 ms.assetid: d58b8a4e-975c-4417-8b34-d3c847f679b3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dbb919cb2fe4d91f5665fbea3dcfd2140d178341
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cb0a89ecf8bb81e515703abe819bb1edfbf80d59
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="registry-and-typelib-global-functions"></a>Kayıt defteri ve TypeLib genel işlevler
 Bu işlevler yükleme ve bir tür kitaplığı kaydı için destek sağlar.  
@@ -68,7 +63,7 @@ Bu işlevler yükleme ve bir tür kitaplığı kaydı için destek sağlar.
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h
 
-## <a name="atlgetperuserregistration"></a>AtlGetPerUserRegistration
+## <a name="atlgetperuserregistration"></a> AtlGetPerUserRegistration
 Uygulama kayıt erişimi yönlendiren olup olmadığını belirlemek için bu işlevi kullanın **HKEY_CURRENT_USER** (**HKCU**) düğüm.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -78,11 +73,11 @@ ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out]`pEnabled`  
- `TRUE`kayıt defteri bilgileri için yönlendirilir gösterir **HKCU** düğümü; `FALSE` uygulama varsayılan düğüme kayıt defteri bilgilerini yazar gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** (**HKCR**).  
+ [out] `pEnabled`  
+ `TRUE` kayıt defteri bilgileri için yönlendirilir gösterir **HKCU** düğümü; `FALSE` uygulama varsayılan düğüme kayıt defteri bilgilerini yazar gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** (**HKCR**).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`yöntem aksi başarılı olursa `HRESULT` bir hata oluşursa hata kodu.  
+ `S_OK` yöntem aksi başarılı olursa `HRESULT` bir hata oluşursa hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kayıt defteri yeniden yönlendirme varsayılan olarak etkin değildir. Bu seçeneği etkinleştirirseniz, kayıt defteri erişimi yönlendireceği **HKEY_CURRENT_USER\Software\Classes**.  
@@ -92,7 +87,7 @@ ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
 
- ## <a name="afxregcreatekey"></a>AfxRegCreateKey
+ ## <a name="afxregcreatekey"></a> AfxRegCreateKey
  Belirtilen kayıt defteri anahtarı oluşturur.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -120,7 +115,7 @@ LONG AFXAPI AfxRegCreateKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTr
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxpriv.h  
 
-## <a name="afxregdeletekey"></a>AfxRegDeleteKey
+## <a name="afxregdeletekey"></a> AfxRegDeleteKey
 Belirtilen kayıt defteri anahtarı siler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -167,7 +162,7 @@ BOOL AFXAPI AfxRegisterPreviewHandler(LPCTSTR lpszCLSID, LPCTSTR lpszShortTypeNa
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h   
 
-##  <a name="atlregistertypelib"></a>AtlRegisterTypeLib  
+##  <a name="atlregistertypelib"></a>  AtlRegisterTypeLib  
  Tür kitaplığını kaydetmek için bu işlev çağrılır.  
   
   
@@ -190,7 +185,7 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h
 
- ## <a name="afxregopenkey"></a>AfxRegOpenKey
+ ## <a name="afxregopenkey"></a> AfxRegOpenKey
  Belirtilen kayıt defteri anahtarı açar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -218,7 +213,7 @@ LONG AFXAPI AfxRegOpenKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTran
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxpriv.h  
 
-## <a name="afxregopenkeyex"></a>AfxRegOpenKeyEx
+## <a name="afxregopenkeyex"></a>  AfxRegOpenKeyEx
 Belirtilen kayıt defteri anahtarı açar. 
 
 ### <a name="syntax"></a>Sözdizimi  
@@ -252,7 +247,7 @@ LONG AFXAPI AfxRegOpenKeyEx(HKEY hKey, LPCTSTR lpSubKey, DWORD ulOptions, REGSAM
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxpriv.h  
 
- ## <a name="afxunregisterpreviewhandler"></a>AfxUnregisterPreviewHandler
+ ## <a name="afxunregisterpreviewhandler"></a> AfxUnregisterPreviewHandler
  Önizleme işleyicisi kaydı Yardımcısı.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -268,7 +263,7 @@ BOOL AFXAPI AfxUnRegisterPreviewHandler(LPCTSTR lpszCLSID);
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h  
 
-## <a name="atlsetperuserregistration"></a>AtlSetPerUserRegistration
+## <a name="atlsetperuserregistration"></a> AtlSetPerUserRegistration
 Uygulama kayıt erişimi yönlendiren olup olmadığını ayarlar **HKEY_CURRENT_USER** (**HKCU**) düğüm.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -278,11 +273,11 @@ ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bEnable`  
- `TRUE`kayıt defteri bilgileri için yönlendirilir gösterir **HKCU** düğümü; `FALSE` uygulama varsayılan düğüme kayıt defteri bilgilerini yazar gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** (**HKCR**).  
+ [in] `bEnable`  
+ `TRUE` kayıt defteri bilgileri için yönlendirilir gösterir **HKCU** düğümü; `FALSE` uygulama varsayılan düğüme kayıt defteri bilgilerini yazar gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** (**HKCR**).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`yöntem aksi başarılı olursa `HRESULT` bir hata oluşursa hata kodu.  
+ `S_OK` yöntem aksi başarılı olursa `HRESULT` bir hata oluşursa hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kayıt defteri yeniden yönlendirme varsayılan olarak etkin değildir. Bu seçeneği etkinleştirirseniz, kayıt defteri erişimi yönlendireceği **HKEY_CURRENT_USER\Software\Classes**.  
@@ -291,7 +286,7 @@ ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
 
-##  <a name="atlunregistertypelib"></a>AtlUnRegisterTypeLib  
+##  <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib  
  Tür kitaplığının kaydını silmek için bu işlev çağrılır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -316,7 +311,7 @@ ATLAPI AtlUnRegisterTypeLib(
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h
 
-##  <a name="atlloadtypelib"></a>AtlLoadTypeLib  
+##  <a name="atlloadtypelib"></a>  AtlLoadTypeLib  
  Tür kitaplığını yüklemek için bu işlev çağrılır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -347,7 +342,7 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yardımcı işlevi tarafından kullanılan [AtlRegisterTypeLib](#atlregistertypelib) ve [AtlUnRegisterTypeLib](#atlunregistertypelib).  
   
-##  <a name="atlupdateregistryfromresourced"></a>AtlUpdateRegistryFromResourceD  
+##  <a name="atlupdateregistryfromresourced"></a>  AtlUpdateRegistryFromResourceD  
  Bu işlev, Visual Studio 2013'te kullanımdan kaldırılmıştır ve Visual Studio 2015'te kaldırılır.  
   
 ```
@@ -356,7 +351,7 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
   
 
   
-##  <a name="registrydataexchange"></a>RegistryDataExchange  
+##  <a name="registrydataexchange"></a>  RegistryDataExchange  
  Bu işlev, sistem kayıt defterinden okumak veya ona yazmak için kullanılır.  
 
 ### <a name="syntax"></a>Sözdizimi  
@@ -368,7 +363,7 @@ HRESULT RegistryDataExchange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *pT*  
+ *PT*  
  Geçerli nesne için bir işaretçi.  
   
  *rdxOp*  

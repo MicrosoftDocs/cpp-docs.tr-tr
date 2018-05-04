@@ -2,11 +2,8 @@
 title: CBindStatusCallback sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CBindStatusCallback
@@ -38,17 +35,15 @@ helpviewer_keywords:
 - data transfer [C++], asynchronous
 - CBindStatusCallback class
 ms.assetid: 0f5da276-6031-4418-b2a9-a4750ef29e77
-caps.latest.revision: 22
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19aa979cb69bdbf8d74acbd96291fac9af78c845
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 43a51b98710ea92f153581945007f21864dca6f4
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cbindstatuscallback-class"></a>CBindStatusCallback sınıfı
 Bu sınıf uygulayan `IBindStatusCallback` arabirimi.  
@@ -111,7 +106,7 @@ class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx
 |[CBindStatusCallback::m_spStream](#m_spstream)|İşaretçi [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) veri aktarımı için arabirim.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CBindStatusCallback` Uygulayan sınıf `IBindStatusCallback` arabirimi. `IBindStatusCallback`bir zaman uyumsuz veri aktarımı bildirimleri alabilecek şekilde uygulama tarafından uygulanmalıdır. Sistem tarafından sağlanan zaman uyumsuz ad kullanan `IBindStatusCallback` göndermek ve zaman uyumsuz veriler hakkında bilgi almak için yöntemleri aktarım nesnenizin gelen ve giden.  
+ `CBindStatusCallback` Uygulayan sınıf `IBindStatusCallback` arabirimi. `IBindStatusCallback` bir zaman uyumsuz veri aktarımı bildirimleri alabilecek şekilde uygulama tarafından uygulanmalıdır. Sistem tarafından sağlanan zaman uyumsuz ad kullanan `IBindStatusCallback` göndermek ve zaman uyumsuz veriler hakkında bilgi almak için yöntemleri aktarım nesnenizin gelen ve giden.  
   
  Genellikle, `CBindStatusCallback` nesne belirli bağlama işlemi ile ilişkili değil. Örneğin, [zaman UYUMSUZ](../../visual-cpp-samples.md) örnek, URL özelliğini ayarlarken oluşturduğu bir `CBindStatusCallback` çağrısı nesnesinde `Download`:  
   
@@ -124,14 +119,14 @@ class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx
   
  `IBindStatusCallback`  
   
- [İn uygulamasına](../../atl/reference/ccomobjectrootex-class.md)  
+ [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)  
   
  `CBindStatusCallback`  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlctl.h  
   
-##  <a name="cbindstatuscallback"></a>CBindStatusCallback::CBindStatusCallback  
+##  <a name="cbindstatuscallback"></a>  CBindStatusCallback::CBindStatusCallback  
  Oluşturucu.  
   
 ```
@@ -143,7 +138,7 @@ CBindStatusCallback();
   
  Oluşturucu ayrıca başlatır [m_pT](#m_pt) ve [m_pFunc](#m_pfunc) için **NULL**.  
   
-##  <a name="dtor"></a>CBindStatusCallback:: ~ CBindStatusCallback  
+##  <a name="dtor"></a>  CBindStatusCallback:: ~ CBindStatusCallback  
  Yok Edicisi.  
   
 ```
@@ -153,7 +148,7 @@ CBindStatusCallback();
 ### <a name="remarks"></a>Açıklamalar  
  Ayrılan tüm kaynakları serbest bırakır.  
   
-##  <a name="download"></a>CBindStatusCallback::Download  
+##  <a name="download"></a>  CBindStatusCallback::Download  
  Oluşturur bir `CBindStatusCallback` nesne ve çağrıları `StartAsyncDownload` verileri zaman uyumsuz olarak belirtilen URL'den indirmeye başlayın.  
   
 ```
@@ -166,7 +161,7 @@ static HRESULT Download(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *pT*  
+ *PT*  
  [in] Zaman uyumsuz veri aktarımı isteyen nesnesine bir işaretçi. `CBindStatusCallback` Nesne şablonlaştırılmış bu nesne sınıfı üzerinde.  
   
  *pFunc*  
@@ -187,9 +182,9 @@ static HRESULT Download(
  Standart birini `HRESULT` değerleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veriler kullanılabilir her zaman nesnesi üzerinden gönderilir `OnDataAvailable`. `OnDataAvailable`Veri okur ve gösterdiği işlevi çağırır *pFunc* (örneğin, verileri depolamak veya ekrana yazdırmak için).  
+ Veriler kullanılabilir her zaman nesnesi üzerinden gönderilir `OnDataAvailable`. `OnDataAvailable` Veri okur ve gösterdiği işlevi çağırır *pFunc* (örneğin, verileri depolamak veya ekrana yazdırmak için).  
   
-##  <a name="getbindinfo"></a>CBindStatusCallback::GetBindInfo  
+##  <a name="getbindinfo"></a>  CBindStatusCallback::GetBindInfo  
  Ad nasıl bağlanacağını belirtmek için çağrılır.  
   
 ```
@@ -219,7 +214,7 @@ STDMETHOD(GetBindInfo)(
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama bağlama zaman uyumsuz ve veri gönderme modeli kullanacak şekilde ayarlar. Veri gönderimi modelindeki ad zaman uyumsuz bağlama işlemi sürücüler ve yeni veriler kullanılabilir olduğunda istemci sürekli olarak bildirir.  
   
-##  <a name="getpriority"></a>CBindStatusCallback::GetPriority  
+##  <a name="getpriority"></a>  CBindStatusCallback::GetPriority  
  Bağlama işlemi önceliğini almak için zaman uyumsuz ad tarafından çağrılır.  
   
 ```
@@ -233,7 +228,7 @@ STDMETHOD(GetPriority)(LONG* pnPriority);
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **E_NOTIMPL**.  
   
-##  <a name="m_dwavailabletoread"></a>CBindStatusCallback::m_dwAvailableToRead  
+##  <a name="m_dwavailabletoread"></a>  CBindStatusCallback::m_dwAvailableToRead  
  Okunacak kullanılabilir bayt sayısını depolamak için kullanılabilir.  
   
 ```
@@ -243,7 +238,7 @@ DWORD m_dwAvailableToRead;
 ### <a name="remarks"></a>Açıklamalar  
  Sıfıra başlatılmış `StartAsyncDownload`.  
   
-##  <a name="m_dwtotalread"></a>CBindStatusCallback::m_dwTotalRead  
+##  <a name="m_dwtotalread"></a>  CBindStatusCallback::m_dwTotalRead  
  Toplam bayt sayısı zaman uyumsuz veri aktarma işleminde okuyun.  
   
 ```
@@ -253,7 +248,7 @@ DWORD m_dwTotalRead;
 ### <a name="remarks"></a>Açıklamalar  
  Her zaman artar `OnDataAvailable` gerçekte okunan bayt sayısını tarafından çağrılır. Sıfıra başlatılmış `StartAsyncDownload`.  
   
-##  <a name="m_pfunc"></a>CBindStatusCallback::m_pFunc  
+##  <a name="m_pfunc"></a>  CBindStatusCallback::m_pFunc  
  Tarafından işlevi işaret için `m_pFunc` tarafından çağrılır `OnDataAvailable` (örneğin, verileri depolamak veya ekrana yazdırmak için) kullanılabilir veri okuduktan sonra.  
   
 ```
@@ -271,7 +266,7 @@ void Function_Name(
    );  
 ```  
   
-##  <a name="m_pt"></a>CBindStatusCallback::m_pT  
+##  <a name="m_pt"></a>  CBindStatusCallback::m_pT  
  Zaman uyumsuz veri aktarımı isteyen nesnesine bir işaretçi.  
   
 ```
@@ -281,7 +276,7 @@ T* m_pT;
 ### <a name="remarks"></a>Açıklamalar  
  `CBindStatusCallback` Nesne şablonlaştırılmış bu nesne sınıfı üzerinde.  
   
-##  <a name="m_spbindctx"></a>CBindStatusCallback::m_spBindCtx  
+##  <a name="m_spbindctx"></a>  CBindStatusCallback::m_spBindCtx  
  Bir işaretçi bir [IBindCtx](http://msdn.microsoft.com/library/windows/desktop/ms693755) bağlama bağlamı (belirli ad bağlama işlemi hakkında bilgi depolayan bir nesne) erişim sağlayan arabirim.  
   
 ```
@@ -291,7 +286,7 @@ CComPtr<IBindCtx> m_spBindCtx;
 ### <a name="remarks"></a>Açıklamalar  
  İçinde başlatılmış `StartAsyncDownload`.  
   
-##  <a name="m_spbinding"></a>CBindStatusCallback::m_spBinding  
+##  <a name="m_spbinding"></a>  CBindStatusCallback::m_spBinding  
  Bir işaretçi `IBinding` geçerli bağlama işleminin arabirimi.  
   
 ```
@@ -301,7 +296,7 @@ CComPtr<IBinding> m_spBinding;
 ### <a name="remarks"></a>Açıklamalar  
  İçinde başlatılmış `OnStartBinding` ve de serbest `OnStopBinding`.  
   
-##  <a name="m_spmoniker"></a>CBindStatusCallback::m_spMoniker  
+##  <a name="m_spmoniker"></a>  CBindStatusCallback::m_spMoniker  
  Bir işaretçi [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) arabirimi için kullanılacak URL.  
   
 ```
@@ -311,7 +306,7 @@ CComPtr<IMoniker> m_spMoniker;
 ### <a name="remarks"></a>Açıklamalar  
  İçinde başlatılmış `StartAsyncDownload`.  
   
-##  <a name="m_spstream"></a>CBindStatusCallback::m_spStream  
+##  <a name="m_spstream"></a>  CBindStatusCallback::m_spStream  
  Bir işaretçi [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) geçerli bağlama işleminin arabirimi.  
   
 ```
@@ -321,7 +316,7 @@ CComPtr<IStream> m_spStream;
 ### <a name="remarks"></a>Açıklamalar  
  İçinde başlatılmış `OnDataAvailable` gelen **STGMEDIUM** ne zaman yapısı **BCSF** bayrağı **BCSF_FIRSTDATANOTIFICATION** ve ne zaman serbest **BCSF**  bayrağı **BCSF_LASTDATANOTIFICATION**.  
   
-##  <a name="ondataavailable"></a>CBindStatusCallback::OnDataAvailable  
+##  <a name="ondataavailable"></a>  CBindStatusCallback::OnDataAvailable  
  Sistem tarafından sağlanan zaman uyumsuz ad çağrıları `OnDataAvailable` kullanılabilir hale geldiğinde nesneye veri sağlamak için.  
   
 ```
@@ -349,9 +344,9 @@ STDMETHOD(
  Standart birini `HRESULT` değerleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `OnDataAvailable`Veri okur ve sonra (örneğin, verileri depolamak veya ekrana yazdırmak için), nesnenin sınıfının bir yöntemi çağırır. Bkz: [CBindStatusCallback::StartAsyncDownload](#startasyncdownload) Ayrıntılar için.  
+ `OnDataAvailable` Veri okur ve sonra (örneğin, verileri depolamak veya ekrana yazdırmak için), nesnenin sınıfının bir yöntemi çağırır. Bkz: [CBindStatusCallback::StartAsyncDownload](#startasyncdownload) Ayrıntılar için.  
   
-##  <a name="onlowresource"></a>CBindStatusCallback::OnLowResource  
+##  <a name="onlowresource"></a>  CBindStatusCallback::OnLowResource  
  Kaynakları düşük olduğunda çağrılır.  
   
 ```
@@ -365,7 +360,7 @@ STDMETHOD(OnLowResource)(DWORD /* dwReserved */);
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür `S_OK`.  
   
-##  <a name="onobjectavailable"></a>CBindStatusCallback::OnObjectAvailable  
+##  <a name="onobjectavailable"></a>  CBindStatusCallback::OnObjectAvailable  
  Uygulamanız için bir nesne arabirimi işaretçisi geçirmek için zaman uyumsuz ad tarafından çağrılır.  
   
 ```
@@ -382,7 +377,7 @@ STDMETHOD(OnObjectAvailable)(REFID /* riid */, IUnknown* /* punk */);
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür `S_OK`.  
   
-##  <a name="onprogress"></a>CBindStatusCallback::OnProgress  
+##  <a name="onprogress"></a>  CBindStatusCallback::OnProgress  
  Yükleme işlemi veri ilerlemeyi göstermek için çağrılır.  
   
 ```
@@ -409,7 +404,7 @@ STDMETHOD(OnProgress)(
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür `S_OK`.  
   
-##  <a name="onstartbinding"></a>CBindStatusCallback::OnStartBinding  
+##  <a name="onstartbinding"></a>  CBindStatusCallback::OnStartBinding  
  Veri üyesi ayarlar [m_spBinding](#m_spbinding) için `IBinding` işaretçiyi `pBinding`.  
   
 ```
@@ -423,7 +418,7 @@ STDMETHOD(OnStartBinding)(DWORD /* dwReserved */, IBinding* pBinding);
  `pBinding`  
  [in] Geçerli IBinding arabiriminin adresini işlemi bağlayın. Bu NULL olamaz. İstemci AddRef bağlama nesnesine başvuru tutmak için bu işaretçinin çağırmanız gerekir.  
   
-##  <a name="onstopbinding"></a>CBindStatusCallback::OnStopBinding  
+##  <a name="onstopbinding"></a>  CBindStatusCallback::OnStopBinding  
  Sürümler `IBinding` veri üyesi işaretçiyi [m_spBinding](#m_spbinding).  
   
 ```
@@ -440,7 +435,7 @@ STDMETHOD(OnStopBinding)(HRESULT hresult, LPCWSTR /* szError */);
 ### <a name="remarks"></a>Açıklamalar  
  Bağlama işlemi sonunu belirtmek üzere sistem tarafından sağlanan zaman uyumsuz ad tarafından çağrılır.  
   
-##  <a name="startasyncdownload"></a>CBindStatusCallback::StartAsyncDownload  
+##  <a name="startasyncdownload"></a>  CBindStatusCallback::StartAsyncDownload  
  Verileri zaman uyumsuz olarak belirtilen URL'den başlatır.  
   
 ```
@@ -453,7 +448,7 @@ HRESULT StartAsyncDownload(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *pT*  
+ *PT*  
  [in] Zaman uyumsuz veri aktarımı isteyen nesnesine bir işaretçi. `CBindStatusCallback` Nesne şablonlaştırılmış bu nesne sınıfı üzerinde.  
   
  *pFunc*  
@@ -474,7 +469,7 @@ HRESULT StartAsyncDownload(
  Standart birini `HRESULT` değerleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veriler kullanılabilir her zaman nesnesi üzerinden gönderilir `OnDataAvailable`. `OnDataAvailable`Veri okur ve gösterdiği işlevi çağırır *pFunc* (örneğin, verileri depolamak veya ekrana yazdırmak için).  
+ Veriler kullanılabilir her zaman nesnesi üzerinden gönderilir `OnDataAvailable`. `OnDataAvailable` Veri okur ve gösterdiği işlevi çağırır *pFunc* (örneğin, verileri depolamak veya ekrana yazdırmak için).  
   
  Tarafından işlevi işaret için *pFunc* , nesnenin sınıfı bir üyesidir ve sözdizimi aşağıdaki gibidir:  
   

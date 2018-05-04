@@ -2,11 +2,8 @@
 title: CWndClassInfo sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CWndClassInfo
@@ -24,17 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - CWndClassInfo class
 ms.assetid: c36fe7e1-75f1-4cf5-a06f-9f59c43fe6fb
-caps.latest.revision: 22
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b07f6b12914e18f3f83abedf59742a8b7c7867b9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 878d6065f3a158ac4404620205ef9c60912d89ca
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cwndclassinfo-class"></a>CWndClassInfo sınıfı
 Bu sınıf için bir pencere sınıfı bilgileri kaydetmek için yöntemleri sağlar.  
@@ -69,13 +64,13 @@ class CWndClassInfo
 |[pWndProc](#pwndproc)|Pencere yordamı noktalarına mevcut bir pencere sınıfın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CWndClassInfo`pencere sınıfı bilgilerini yönetir. Tipik olarak kullandığınız `CWndClassInfo` üç makroları biri aracılığıyla `DECLARE_WND_CLASS`, `DECLARE_WND_CLASS_EX`, veya `DECLARE_WND_SUPERCLASS`aşağıdaki tabloda açıklandığı gibi:  
+ `CWndClassInfo` pencere sınıfı bilgilerini yönetir. Tipik olarak kullandığınız `CWndClassInfo` üç makroları biri aracılığıyla `DECLARE_WND_CLASS`, `DECLARE_WND_CLASS_EX`, veya `DECLARE_WND_SUPERCLASS`aşağıdaki tabloda açıklandığı gibi:  
   
 |Makrosu|Açıklama|  
 |-----------|-----------------|  
-|[DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class)|`CWndClassInfo`Yeni bir pencere sınıfı için bilgileri kaydeder.|  
-|[DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex)|`CWndClassInfo`bilgi sınıfı parametreleri de dahil olmak üzere yeni bir pencere sınıfı için kaydeder.|  
-|[DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass)|`CWndClassInfo`Varolan bir sınıfına dayalı ancak farklı pencere yordamı kullanan bir pencere sınıfı için bilgileri kaydeder. Bu teknik üst Sınıflama adı verilir.|  
+|[DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class)|`CWndClassInfo` Yeni bir pencere sınıfı için bilgileri kaydeder.|  
+|[DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex)|`CWndClassInfo` bilgi sınıfı parametreleri de dahil olmak üzere yeni bir pencere sınıfı için kaydeder.|  
+|[DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass)|`CWndClassInfo` Varolan bir sınıfına dayalı ancak farklı pencere yordamı kullanan bir pencere sınıfı için bilgileri kaydeder. Bu teknik üst Sınıflama adı verilir.|  
   
  Varsayılan olarak, [CWindowImpl](../../atl/reference/cwindowimpl-class.md) içeren `DECLARE_WND_CLASS` makrosu bir pencere oluşturmak için temel üzerinde yeni bir pencere sınıfı. DECLARE_WND_CLASS varsayılan stillerini ve arka plan rengi için denetim sağlar. Stil belirtin ve kendiniz arka plan rengi istiyorsanız, sınıfından türetilen `CWindowImpl` ve dahil `DECLARE_WND_CLASS_EX` makrosu sınıf tanımında.  
   
@@ -90,14 +85,14 @@ class CWndClassInfo
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  
   
-##  <a name="m_atom"></a>CWndClassInfo::m_atom  
+##  <a name="m_atom"></a>  CWndClassInfo::m_atom  
  Kayıtlı pencere sınıfı için benzersiz tanımlayıcı içerir.  
   
 ```
 ATOM m_atom;
 ```  
   
-##  <a name="m_bsystemcursor"></a>CWndClassInfo::m_bSystemCursor  
+##  <a name="m_bsystemcursor"></a>  CWndClassInfo::m_bSystemCursor  
  Varsa **doğru**, pencere sınıfı kaydedildikten sonra sistem imleç kaynak yüklenecek.  
   
 ```
@@ -107,9 +102,9 @@ BOOL m_bSystemCursor;
 ### <a name="remarks"></a>Açıklamalar  
  Aksi takdirde, modülünde yer alan imleç kaynak yüklenecektir.  
   
- `CWndClassInfo`kullanan `m_bSystemCursor` yalnızca [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) (varsayılan olarak [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) veya [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) makrosu belirtilir. Bu durumda, `m_bSystemCursor` için başlatılan **doğru**. Daha fazla bilgi için bkz: [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
+ `CWndClassInfo` kullanan `m_bSystemCursor` yalnızca [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) (varsayılan olarak [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) veya [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) makrosu belirtilir. Bu durumda, `m_bSystemCursor` için başlatılan **doğru**. Daha fazla bilgi için bkz: [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
   
-##  <a name="m_lpszcursorid"></a>CWndClassInfo::m_lpszCursorID  
+##  <a name="m_lpszcursorid"></a>  CWndClassInfo::m_lpszCursorID  
  Düşük düzey word ve yüksek düzey Word'de sıfır imleç kaynağın adını ya da kaynak tanımlayıcı belirtir.  
   
 ```
@@ -119,9 +114,9 @@ LPCTSTR m_lpszCursorID;
 ### <a name="remarks"></a>Açıklamalar  
  Pencere sınıfı kaydettirildiğini, imleci tarafından tanımlanan tanıtıcısını `m_lpszCursorID` alınır ve tarafından depolanan [m_wc](#m_wc).  
   
- `CWndClassInfo`kullanan `m_lpszCursorID` yalnızca [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) (varsayılan olarak [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) veya [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) makrosu belirtilir. Bu durumda, `m_lpszCursorID` için başlatılan **IDC_ARROW**. Daha fazla bilgi için bkz: [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
+ `CWndClassInfo` kullanan `m_lpszCursorID` yalnızca [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) (varsayılan olarak [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) veya [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) makrosu belirtilir. Bu durumda, `m_lpszCursorID` için başlatılan **IDC_ARROW**. Daha fazla bilgi için bkz: [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
   
-##  <a name="m_lpszorigname"></a>CWndClassInfo::m_lpszOrigName  
+##  <a name="m_lpszorigname"></a>  CWndClassInfo::m_lpszOrigName  
  Varolan bir pencere sınıfı adını içerir.  
   
 ```
@@ -129,9 +124,9 @@ LPCTSTR m_lpszOrigName;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CWndClassInfo`kullanan `m_lpszOrigName` yalnızca dahil ettiğinizde [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makrosu sınıf tanımında. Bu durumda, `CWndClassInfo` pencere sınıfı tarafından adlı sınıf temel kayıtları `m_lpszOrigName`. Daha fazla bilgi için bkz: [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
+ `CWndClassInfo` kullanan `m_lpszOrigName` yalnızca dahil ettiğinizde [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makrosu sınıf tanımında. Bu durumda, `CWndClassInfo` pencere sınıfı tarafından adlı sınıf temel kayıtları `m_lpszOrigName`. Daha fazla bilgi için bkz: [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
   
-##  <a name="m_szautoname"></a>CWndClassInfo::m_szAutoName  
+##  <a name="m_szautoname"></a>  CWndClassInfo::m_szAutoName  
  Pencere sınıfı adını içerir.  
   
 ```
@@ -139,9 +134,9 @@ TCHAR m_szAutoName[13];
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CWndClassInfo`kullanan `m_szAutoName` yalnızca **NULL** geçirilen `WndClassName` parametresi [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class), [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) veya [ DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass). Pencere sınıfı kaydedildiğinde ATL bir ad oluşturun.  
+ `CWndClassInfo` kullanan `m_szAutoName` yalnızca **NULL** geçirilen `WndClassName` parametresi [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class), [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) veya [ DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass). Pencere sınıfı kaydedildiğinde ATL bir ad oluşturun.  
   
-##  <a name="m_wc"></a>CWndClassInfo::m_wc  
+##  <a name="m_wc"></a>  CWndClassInfo::m_wc  
  Pencere sınıfı bilgileri tutan bir [WNDCLASSEX](http://msdn.microsoft.com/library/windows/desktop/ms633577) yapısı.  
   
 ```
@@ -153,7 +148,7 @@ WNDCLASSEX m_wc;
   
  Belirttiyseniz [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makrosu, `m_wc` bir üst sınıf hakkında bilgi içerir — varolan bir sınıfına dayalı ancak farklı pencere yordamı kullanan bir pencere sınıfı. [m_lpszOrigName](#m_lpszorigname) ve [pWndProc](#pwndproc) varolan penceresi sınıfın adını ve pencere yordamı, sırasıyla kaydedin.  
   
-##  <a name="pwndproc"></a>CWndClassInfo::pWndProc  
+##  <a name="pwndproc"></a>  CWndClassInfo::pWndProc  
  Pencere yordamı noktalarına mevcut bir pencere sınıfın.  
   
 ```
@@ -161,9 +156,9 @@ WNDPROC pWndProc;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CWndClassInfo`kullanan `pWndProc` yalnızca dahil ettiğinizde [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makrosu sınıf tanımında. Bu durumda, `CWndClassInfo` var olan bir sınıfına dayalı ancak farklı pencere yordamı kullanan bir pencere sınıfı kaydeder. Varolan penceresi sınıfının pencere yordamı kaydedilir `pWndProc`. Daha fazla bilgi için bkz: [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
+ `CWndClassInfo` kullanan `pWndProc` yalnızca dahil ettiğinizde [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makrosu sınıf tanımında. Bu durumda, `CWndClassInfo` var olan bir sınıfına dayalı ancak farklı pencere yordamı kullanan bir pencere sınıfı kaydeder. Varolan penceresi sınıfının pencere yordamı kaydedilir `pWndProc`. Daha fazla bilgi için bkz: [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
   
-##  <a name="register"></a>CWndClassInfo::Register  
+##  <a name="register"></a>  CWndClassInfo::Register  
  Tarafından çağrılır [CWindowImpl::Create](../../atl/reference/cwindowimpl-class.md#create) henüz kayıtlı değilse, pencere sınıfı kaydetmek için.  
   
 ```

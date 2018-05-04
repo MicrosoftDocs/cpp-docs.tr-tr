@@ -1,13 +1,10 @@
 ---
-title: "C ve C++ için Microsoft uzantıları | Microsoft Docs"
-ms.custom: 
+title: C ve C++ için Microsoft uzantıları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -38,17 +35,15 @@ helpviewer_keywords:
 - extensions
 - compl method
 ms.assetid: e811a74a-45ba-4c00-b206-2f2321b8689a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d8453209a92b8f7485a9e7f575fb8810196d27fb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 903ad9d5a44bb455bede52aa3456d03456f54d13
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-extensions-to-c-and-c"></a>C ve C++ için Microsoft Uzantıları
 Visual C++ ANSI C ve C++ ANSI standartları şu şekilde genişletir.  
@@ -272,7 +267,7 @@ void func ()
   
 -   & (bitand)  
   
--   &#124; (bitor)  
+-   &#124;(bitor)  
   
 -   ~ (compl)  
   
@@ -280,9 +275,9 @@ void func ()
   
 -   ! = (not_eq)  
   
--   &#124; &#124; (veya)  
+-   &#124;&#124;(veya)  
   
--   &#124; (or_eq) =  
+-   &#124;(or_eq) =  
   
 -   ^ (xor)  
   

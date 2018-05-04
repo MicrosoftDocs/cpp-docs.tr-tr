@@ -1,12 +1,9 @@
 ---
-title: "Virgül işleci:, | Microsoft Docs"
-ms.custom: 
+title: Virgül işleci:, | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - '%2C'
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - comma operator
 ms.assetid: 38e0238e-19da-42ba-ae62-277bfdab6090
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03d610e1a7aefbd0c6615cd9ed758f64b6986e3d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d8533012a921cbfb2861bcc7e1c5f2a6de81aadd
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="comma-operator-"></a>Virgül İşleci: ,
 Bir deyim beklenirken iki deyimin gruplandırılmasını sağlar.  

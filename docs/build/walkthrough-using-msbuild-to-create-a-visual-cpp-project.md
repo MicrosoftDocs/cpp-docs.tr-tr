@@ -1,13 +1,10 @@
 ---
-title: "İzlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msbuild.cpp.walkthrough.createproject
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - 'msbuild (c++), walkthrough: create a project'
 ms.assetid: 52350d1c-c373-4868-923c-5e8be6f67adb
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92b954f334517adc22ca17f8324ec1a78819d9f1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 88366f78556ebcab6dc7b796cdeeefd402b99721
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="walkthrough-using-msbuild-to-create-a-visual-c-project"></a>İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma
 Bu kılavuzda nasıl kullanılacağı ortaya [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] bir komut isteminde Visual C++ projesi oluşturmak için. C++ kaynak dosyaları ve bir Visual C++ konsol uygulaması için bir XML tabanlı proje dosyası nasıl oluşturulacağını öğreneceksiniz. Proje oluşturduktan sonra yapı işlemini nasıl özelleştireceğinizi öğreneceksiniz.  
@@ -191,7 +186,7 @@ Bu kılavuzda nasıl kullanılacağı ortaya [!INCLUDE[vstecmsbuild](../build/in
 msbuild myproject.vcxproj /p:configuration=debug  
 ```  
   
- [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)]Çıkış dosyaları için bir dizin oluşturur ve ardından derler ve Myproject.exe programı oluşturmak için projenize bağlar. Derleme işlemi tamamlandıktan sonra uygulamayı çalıştırmak için aşağıdaki komutu kullanın:  
+ [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] Çıkış dosyaları için bir dizin oluşturur ve ardından derler ve Myproject.exe programı oluşturmak için projenize bağlar. Derleme işlemi tamamlandıktan sonra uygulamayı çalıştırmak için aşağıdaki komutu kullanın:  
   
 ```  
 myproject  
@@ -200,7 +195,7 @@ myproject
  Uygulama "Hello, MSBuild gelen!" görüntülenmelidir Konsol penceresinde.  
   
 ## <a name="customizing-your-project"></a>Projenizi özelleştirme  
- [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)]önceden tanımlanmış yapı hedefleri yürütmek, kullanıcı tanımlı özellikler, uygulayın ve özel araçlar, olayları kullanın ve derleme adımları sağlar. Bu bölümde aşağıdaki görevler gösterilir:  
+ [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] önceden tanımlanmış yapı hedefleri yürütmek, kullanıcı tanımlı özellikler, uygulayın ve özel araçlar, olayları kullanın ve derleme adımları sağlar. Bu bölümde aşağıdaki görevler gösterilir:  
   
 -   Kullanarak [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] yapı hedefler.  
   
@@ -265,7 +260,7 @@ myproject
  `msbuild myproject.vcxproj /t:rebuild`  
   
 ### <a name="adding-msbuild-customizations"></a>MSBuild özelleştirmeleri ekleme  
- [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)]derleme işlemi özelleştirmek için çeşitli yöntemler sağlar. Aşağıdaki konular özel derleme adımları, Araçlar ve olayları nasıl ekleneceğini gösterir, [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] proje:  
+ [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] derleme işlemi özelleştirmek için çeşitli yöntemler sağlar. Aşağıdaki konular özel derleme adımları, Araçlar ve olayları nasıl ekleneceğini gösterir, [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] proje:  
   
 -   [Nasıl Yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)  
   

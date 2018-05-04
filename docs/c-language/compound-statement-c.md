@@ -1,37 +1,32 @@
 ---
-title: "Statement (C) bileşik | Microsoft Docs"
-ms.custom: 
+title: Statement (C) bileşik | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - compound statements
 - statements, compound
 ms.assetid: 32d1bf86-cbbc-42a9-ba3a-1be1c6c7754c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9422e3229aa5e800859f50e1ca058e32a4120074
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e25bef33e374d7e0dbf97a337cb58146b05bd093
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="compound-statement-c"></a>Bileşik Deyim (C)
 Bileşik deyim (Ayrıca çağrılan bir "bloğu") genellikle başka bir ifade gövdesi olarak gibi görünen **varsa** deyimi. [Bildirimler ve türler](../c-language/declarations-and-types.md) bileşik deyim head görünebilir bildirimleri anlamını ve form açıklar.  
   
 ## <a name="syntax"></a>Sözdizimi  
  *Bileşik deyim*:  
- **{***bildirimi listesi* kabul*deyimi listesi*kabul**}**   
+ **{***bildirimi listesi* kabul*deyimi listesi*kabul **}**   
   
  *bildirim listesi*:  
  *bildirimi*  

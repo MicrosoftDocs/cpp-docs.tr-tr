@@ -1,29 +1,24 @@
 ---
-title: "C tamsayı sabitleri | Microsoft Docs"
-ms.custom: 
+title: C tamsayı sabitleri | Microsoft Docs
+ms.custom: ''
 ms.date: 02/27/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - integer constants
 ms.assetid: fcf6b83c-2038-49ec-91ca-3d5ca1f83037
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0f28b41c54b14c9e673d3fb8e7bb4947206cfd3
-ms.sourcegitcommit: d24de38f9da844f824acb9d200a3f263077145fc
+ms.openlocfilehash: eef5ba48d28b898ffc624d5790b0f414a8c112c3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-integer-constants"></a>C Tamsayı Sabitleri
 
@@ -31,20 +26,20 @@ Bir *tamsayı sabiti* ondalık (10 tabanı), sekizli (8 tabanı) ya da bir tam s
 
 ## <a name="syntax"></a>Sözdizimi
 
-*integer-constant*:<br/>
+*tamsayı sabiti*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*ondalık sabiti* *tamsayı sonek*<sub>iptal et</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*octal-constant* *integer-suffix*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sabiti sekizli* *tamsayı sonek*<sub>iptal et</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*onaltılık sabiti* *tamsayı sonek*<sub>iptal et</sub><br/>
 
 *ondalık sabiti*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*nonzero-digit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sıfır olmayan basamaklı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*ondalık sabiti* *basamak*<br/>
 
 *sabiti sekizli*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sabiti sekizli* *sekizli basamak*<br/>
 
-*hexadecimal-constant*:<br/>
+*onaltılık sabiti*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*onaltılık önek* *onaltılık basamak*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*onaltılık sabiti* *onaltılık basamak*<br/>
 
@@ -58,7 +53,7 @@ Bir *tamsayı sabiti* ondalık (10 tabanı), sekizli (8 tabanı) ya da bir tam s
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7**<br/>
 
 *onaltılık basamaklı*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 1, 2, 3, 4, 5, 6, 7, 8, 9**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**b c d e f**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**A B C D E F**<br/>
 
@@ -68,7 +63,7 @@ Bir *tamsayı sabiti* ondalık (10 tabanı), sekizli (8 tabanı) ya da bir tam s
 &nbsp;&nbsp;&nbsp;&nbsp;*İmzasız soneki* *64 bit tamsayı soneki*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*uzun soneki* *imzasız soneki*<sub>iptal et</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Long long soneki* *imzasız soneki*<sub>iptal et</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*64-bit-integer-suffix*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*64 bit tamsayı soneki*<br/>
 
 *İmzasız soneki*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**u U**<br/>
@@ -77,7 +72,7 @@ Bir *tamsayı sabiti* ondalık (10 tabanı), sekizli (8 tabanı) ya da bir tam s
 &nbsp;&nbsp;&nbsp;&nbsp;**l L**<br/>
 
 *Long long soneki*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**ll LL**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**üm ÜM**<br/>
 
 *64 bit tamsayı soneki*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**i64 I64**<br/>

@@ -1,13 +1,10 @@
 ---
-title: "-Include (simge başvurularını zorla) | Microsoft Docs"
-ms.custom: 
+title: -Include (simge başvurularını zorla) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /include
 - VC.Project.VCLinkerTool.ForceSymbolReferences
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - symbols, add to symbol table
 - -INCLUDE linker option
 ms.assetid: 4a039677-360a-480f-bd0b-448e239b449c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8caf060d278e7ac2c92c38ad58e9c4c55eab632c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cfe65344e41b98841c3a4e7bca72b762197510b8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="include-force-symbol-references"></a>/INCLUDE (Simge Başvurularını Zorla)
 ```  

@@ -2,12 +2,9 @@
 title: 'Nasıl yapılır: MSBuild projelerinde derleme olaylarını kullanma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msbuild.cpp.howto.usebuildevents
 dev_langs:
@@ -15,24 +12,22 @@ dev_langs:
 helpviewer_keywords:
 - 'msbuild (c++), howto: use build events in projects'
 ms.assetid: 2a58dc9d-3d50-4e49-97c1-86c5a05ce218
-caps.latest.revision: 23
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc8b3b21cdc9aad183f39bf709f93e022e790eef
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2367c85dbd4a4ef7b10d927592c0fb10a417f0e6
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma
 Bir komut bir yapı olayıdır, [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] derleme sürecindeki belirli bir aşamada gerçekleştirir. *Oluşturma öncesi* olayı, yapı başlamadan önce oluşur; *bağlama öncesi* olayı bağlantı adım başlamadan önce; oluşur ve *oluşturma sonrası* olay oluştuktan sonra derleme başarılı bir şekilde sona erer. Yalnızca ilişkili derleme adımı oluşursa bir yapı olayı oluşur. Örneğin, bağlantı adım çalışmazsa bağlama öncesi olay gerçekleşmez.  
   
  Üç yapı olayların her biri bir öğesi tanım grubunda command öğesi tarafından temsil edilen (`<Command>`), yürütüldüğünde ve bir ileti öğesi (`<Message>`) diğer bir deyişle ne zaman görüntülenen **MSBuild** yapı olayı gerçekleştirir. Her öğe isteğe bağlıdır ve birden çok kez aynı öğeye belirtirseniz, son a geçişi önceliklidir.  
   
- İsteğe bağlı bir *kullanım yapısı* öğesi (`<`*yapı olay***UseInBuild**`>`) belirtmek için bir özellik grubunda belirtilen olup olmadığını derleme olayının yürütülür. İçeriğinin değerini bir *kullanım yapısı* öğesidir ya da `true` veya `false`. Varsayılan olarak, bir derleme olayının sürece yürütülen ilgili *kullanım yapısı* ayarlanır `false`.  
+ İsteğe bağlı bir *kullanım yapısı* öğesi (`<`* oluşturmak-olay ***UseInBuild**`>`) derleme olayının yürütülüp yürütülmeyeceğini gösteren bir özellik grubu belirtilebilir. İçeriğinin değerini bir *kullanım yapısı* öğesidir ya da `true` veya `false`. Varsayılan olarak, bir derleme olayının sürece yürütülen ilgili *kullanım yapısı* ayarlanır `false`.  
   
  Aşağıdaki tabloda her bir yapı olay XML öğesi listelenmektedir:  
   

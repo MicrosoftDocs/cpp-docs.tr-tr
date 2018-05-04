@@ -2,11 +2,8 @@
 title: IDocHostUIHandlerDispatch arabirimi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - IDocHostUIHandlerDispatch
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - IDocHostUIHandlerDispatch interface
 ms.assetid: 6963a301-601a-4ac3-8bef-f7b252ea2fc6
-caps.latest.revision: 22
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fbd91deb1d80c49dd403e8e08cc50f5fd8c8ec3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 07d6d861bfa4a41d7d9ee6697dd72cba0da2ceda
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="idochostuihandlerdispatch-interface"></a>IDocHostUIHandlerDispatch arabirimi
 Microsoft HTML Ayrıştırma ve işleme altyapısı için bir arabirim.  
@@ -45,7 +40,7 @@ interface IDocHostUIHandlerDispatch : IDispatch
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 > [!NOTE]
->  Aşağıdaki tabloda üyeleri için INet SDK başvuru konularına bağlantılardır [IDocUIHostHandler](https://msdn.microsoft.com/library/aa753260.aspx) arabirimi. `IDocHostUIHandlerDispatch`aynı işlevselliğe sahip **IDocUIHostHandler**, olması fark `IDocHostUIHandlerDispatch` ancak bir görüntüleme arabirimi olan **IDocUIHostHandler** özel bir arabirimdir.  
+>  Aşağıdaki tabloda üyeleri için INet SDK başvuru konularına bağlantılardır [IDocUIHostHandler](https://msdn.microsoft.com/library/aa753260.aspx) arabirimi. `IDocHostUIHandlerDispatch` aynı işlevselliğe sahip **IDocUIHostHandler**, olması fark `IDocHostUIHandlerDispatch` ancak bir görüntüleme arabirimi olan **IDocUIHostHandler** özel bir arabirimdir.  
   
 |||  
 |-|-|  

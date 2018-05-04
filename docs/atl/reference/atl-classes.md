@@ -1,12 +1,9 @@
 ---
-title: "ATL sınıfları | Microsoft Docs"
-ms.custom: 
+title: ATL sınıfları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 dev_langs:
 - C++
@@ -14,17 +11,15 @@ helpviewer_keywords:
 - classes [C++], ATL
 - ATL, classes
 ms.assetid: 7da42e2d-ac84-4506-92bd-502a86d68bdc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc8f03660742f0e752bb9ef12043af841797d0ab
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 7483df52f614c26efd5216137ef3144ab04780e9
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="atl-classes"></a>ATL sınıfları
 Etkin Şablon kitaplığı (ATL) aşağıdaki sınıflar içerir. Belirli bir sınıfın kategoriye göre bulmak için bkz: [ATL sınıfına genel bakış](../../atl/atl-class-overview.md).  
@@ -125,7 +120,7 @@ Etkin Şablon kitaplığı (ATL) aşağıdaki sınıflar içerir. Belirli bir s�
 |[CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)|Bu sınıf varsayılan öğesi karşılaştırma işlevleri sağlar.|atlcoll.h|  
 |[CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md)|Bu sınıf, bir koleksiyon sınıfı için varsayılan yöntemleri ve işlevler sağlar.|atlcoll.h|  
 |[CDefaultHashTraits](../../atl/reference/cdefaulthashtraits-class.md)|Bu sınıf, karma değerleri hesaplamak için statik bir işlev sağlar.|atlcoll.h|  
-|[CDialogImpl](../../atl/reference/cdialogimpl-class.md)|Bu sınıf kalıcı veya geçici bir iletişim kutusu oluşturmak için yöntemler sağlar.|atlwin.h|  
+|[Cdialogımpl](../../atl/reference/cdialogimpl-class.md)|Bu sınıf kalıcı veya geçici bir iletişim kutusu oluşturmak için yöntemler sağlar.|atlwin.h|  
 |[CDynamicChain](../../atl/reference/cdynamicchain-class.md)|Bu sınıf ileti eşlemeleri dinamik zincirleme destekleyen yöntemler sağlar.|atlwin.h|  
 |[CElementTraits](../../atl/reference/celementtraits-class.md)|Bu sınıf tarafından koleksiyon sınıfları, yöntemleri ve işlevleri taşıma, kopyalama, karşılaştırma ve karma işlemleri için sağlamak için kullanılır.|atlcoll.h|  
 |[CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)|Bu sınıf, varsayılan copy sağlar ve koleksiyon sınıfı yöntemleri taşıyın.|atlcoll.h|  
@@ -154,7 +149,7 @@ Etkin Şablon kitaplığı (ATL) aşağıdaki sınıflar içerir. Belirli bir s�
 |[CSacl](../../atl/reference/csacl-class.md)|SACL (sistem erişim denetim listesi) yapısı için bir sarmalayıcı sınıftır.|atlsecurity.h|  
 |[CSecurityAttributes](../../atl/reference/csecurityattributes-class.md)|Bu sınıf için ince sarmalayıcı, **SECURITY_ATTRIBUTES** yapısı.|atlsecurity.h|  
 |[CSecurityDesc](../../atl/reference/csecuritydesc-class.md)|Bu sınıf için sarmalayıcı, **SECURITY_DESCRIPTOR** yapısı.|atlsecurity.h|  
-|[CSid](../../atl/reference/csid-class.md)|Bu sınıf için sarmalayıcı, bir `SID` (güvenlik tanımlayıcısı) yapısı.|atlsecurity.h|  
+|[CSID](../../atl/reference/csid-class.md)|Bu sınıf için sarmalayıcı, bir `SID` (güvenlik tanımlayıcısı) yapısı.|atlsecurity.h|  
 |[CSimpleArray](../../atl/reference/csimplearray-class.md)|Bu sınıf, basit bir dizi yönetme için yöntemleri sağlar.|atlsimpcoll.h|  
 |[CSimpleArrayEqualHelper](../../atl/reference/csimplearrayequalhelper-class.md)|Bu sınıf için bir Yardımcısı, [CSimpleArray](../../atl/reference/csimplearray-class.md) sınıfı.|atlsimpcoll.h|  
 |[CSimpleArrayEqualHelperFalse](../../atl/reference/csimplearrayequalhelperfalse-class.md)|Bu sınıf için bir Yardımcısı, [CSimpleArray](../../atl/reference/csimplearray-class.md) sınıfı.|atlsimpcoll.h|  

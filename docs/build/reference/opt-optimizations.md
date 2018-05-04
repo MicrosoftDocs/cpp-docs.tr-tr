@@ -2,12 +2,9 @@
 title: -OPT (iyileştirmeler) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.OptimizeReferences
 - /opt
@@ -26,17 +23,15 @@ helpviewer_keywords:
 - optimization, linker
 - /OPT linker option
 ms.assetid: 8f229863-5f53-48a8-9478-243a647093ac
-caps.latest.revision: 23
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 928968803dc008eb39b3d0c52152c1f3b631a852
-ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
+ms.openlocfilehash: f8ac107f8a5654601f0c974f82fa83ae6aa83518
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="opt-optimizations"></a>/OPT (İyileştirmeler)
 LINK öğesinin bir yapı sırasında gerçekleştirdiği iyileştirmeleri denetler.  
@@ -63,7 +58,7 @@ LINK öğesinin bir yapı sırasında gerçekleştirdiği iyileştirmeleri denet
   
  Belirtme **/OPT:ICF** etkinleştirmemeniz **/OPT:REF** seçeneği.  
   
- **ICF [=** `iterations` **] &AMP;#124; NOICF**   
+ **ICF [=** `iterations` **] &AMP;#124; NOICF**  
  Kullanım **/OPT:ICF [=**`iterations`**]** aynı comdat'ı Katlama gerçekleştirmek için. Fazlalık COMDAT'lar bağlayıcı çıktısından kaldırılabilir. İsteğe bağlı `iterations` parametresi, yinelemeleri simgelerini çapraz geçiş sayısı belirtir. Varsayılan yineleme sayısı 2'dir. Ek yinelemeler, bir önceki yinelemede katlama sırasında kapsamda olmayan birden çok yineleme bulabilir.  
   
  Bağlayıcı farklı şekilde davranan zaman **/OPT:REF** belirtilen — ve **ICF** varsayılan olarak etkindir; ne zaman göründüğünden **/OPT:REF, ICF** açıkça belirtilen. Biçiminde **ICF** ile etkin **/OPT:REF** tek başına salt okunur verileri Katlama olmayan — bu .rdata, ve.xdata'yı ve sanal işlem bulunur içerir. Bu nedenle, daha az işlevleri için görüntüleri üretildiğinde Katlanmış [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] bu modüllerdeki işlevlerin salt okunur verileri hakkında daha fazla bağımlı olduğundan — Örneğin, ve.xdata'yı ve sanal işlem bulunur. Tam almak için **ICF** davranışı Katlama açıkça belirtmek **/OPT:ICF**.  

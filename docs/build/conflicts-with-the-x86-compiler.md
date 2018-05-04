@@ -1,27 +1,22 @@
 ---
-title: "X86 çakışıyor derleyici | Microsoft Docs"
-ms.custom: 
+title: X86 çakışıyor derleyici | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 8e47f0d3-afe0-42d9-9efa-de239ddd3a05
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b2b9c4cf871e8436a8da34a862d205541e7dc5c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7cd72de4922c297b4a230e0dc0fb606b56a2a473
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="conflicts-with-the-x86-compiler"></a>x86 Derleyicisi ile Çakışma
 X86 kullandığınızda 4 bayt yığında otomatik olarak hizalanmaz büyük veri türleri bir uygulama derlemek için derleyicisi. Çünkü derleyici olan bir 4 bayt hizalı yığını, 4 bayttan 64-bit tamsayı, büyük bir şey yapamazsınız otomatik olarak hizalı bir 8 bayt adresine x86 mimarisi.  
@@ -36,4 +31,4 @@ X86 kullandığınızda 4 bayt yığında otomatik olarak hizalanmaz büyük ver
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Türler ve depolama](../build/types-and-storage.md)   
- [Hizalama](../cpp/align-cpp.md)
+ [align](../cpp/align-cpp.md)

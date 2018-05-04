@@ -2,11 +2,8 @@
 title: CWinTraitsOR sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CWinTraitsOR
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CWinTraitsOR class
 - window styles, default values for ATL
 ms.assetid: 1eb7b1e8-a9bd-411b-a30a-35a8a10af989
-caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac6cf07fcd6d3703ffb6b483ba19a2d12520cb0a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3df5081d8584d821737350176740b6fd067ac78f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cwintraitsor-class"></a>CWinTraitsOR sınıfı
 Bu sınıf bir pencere nesnesi oluşturulurken kullanılan stiller Standartlaştırma için bir yöntem sağlar.  
@@ -72,7 +67,7 @@ class CWinTraitsOR
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  
   
-##  <a name="getwndstyle"></a>CWinTraitsOR::GetWndStyle  
+##  <a name="getwndstyle"></a>  CWinTraitsOR::GetWndStyle  
  Standart stillerini birleşimi (mantıksal veya işlecini kullanarak) almak için bu işlevi çağırmak `CWinTraits` nesne ve tarafından belirtilen varsayılan stillerini `t_dwStyle`.  
   
 ```
@@ -86,7 +81,7 @@ static DWORD GetWndStyle(DWORD dwStyle);
 ### <a name="return-value"></a>Dönüş Değeri  
  İletilen stilleri bileşimini `dwStyle` ve tarafından belirtilen olanları varsayılan `t_dwStyle`, mantıksal veya işlecini kullanarak.  
   
-##  <a name="getwndexstyle"></a>CWinTraitsOR::GetWndExStyle  
+##  <a name="getwndexstyle"></a>  CWinTraitsOR::GetWndExStyle  
  Genişletilmiş stillerini birleşimi (mantıksal veya işlecini kullanarak) almak için bu işlevi çağırmak `CWinTraits` nesne ve tarafından belirtilen varsayılan stillerini `t_dwStyle`.  
   
 ```

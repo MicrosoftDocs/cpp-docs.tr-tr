@@ -1,27 +1,22 @@
 ---
-title: "Karakter kümeleri | Microsoft Docs"
-ms.custom: 
+title: Karakter kümeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: ef21daa0-b4b4-4f1a-86f4-25904d83fc86
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac2abf233908c438c778dc6ac720d58483ec9bdf
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 9c4f231945932dd96e020424cef103b356cc8b11
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="character-sets"></a>Karakter Kümeleri
 
@@ -33,7 +28,7 @@ Yürütme karakter kümesi ve kaynak karakter kümesi aşağıdaki tabloda liste
 
 |Çıkış Sırası|Karakter|ASCII değeri|
 |---------------------|---------------|-----------------|
-|&#92;a|Uyarı/zil|7|
+|&#92;bir|Uyarı/zil|7|
 |&#92;b|Geri Al tuşu|8|
 |&#92;f|Form besleme|12|
 |&#92;n|Yeni satır|10|

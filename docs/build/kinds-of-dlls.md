@@ -1,13 +1,10 @@
 ---
-title: "DLL türleri | Microsoft Docs"
-ms.custom: 
+title: DLL türleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,22 +12,20 @@ helpviewer_keywords:
 - DLLs [C++], types
 - DLLs [C++], MFC
 ms.assetid: f6a30db9-6138-4b2c-90cc-a17855e499a6
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47ce4a9264a59f88f22cd40bc3b6d6620c9702c5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 605d60535df8d0a94d58e120df89f975402b8a22
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="kinds-of-dlls"></a>DLL Türleri
 Bu konu, DLL derleme türünü belirlemenize yardımcı olacak bilgiler sağlar.  
   
-##  <a name="_core_the_different_kinds_of_dlls_available_with_visual_c.2b2b"></a>Farklı türdeki kullanılabilir DLL'ler  
+##  <a name="_core_the_different_kinds_of_dlls_available_with_visual_c.2b2b"></a> Farklı türdeki kullanılabilir DLL'ler  
  Visual C++ kullanarak, Win32 DLL'leri C veya C++ Microsoft Foundation Class (MFC) kitaplığı kullanmayan oluşturabilirsiniz. Win32 Uygulama Sihirbazı'ndaki bir MFC DLL projesi oluşturabilirsiniz.  
   
  MFC Kitaplığı ya da statik bağlantı kitaplıkları veya DLL'ler, MFC DLL Sihirbazı'nı kullanarak bir dizi, kullanılabilir. MFC DLL kullanıyorsanız, Visual C++ üç farklı DLL geliştirme senaryolarını destekler:  
@@ -53,7 +48,7 @@ Bu konu, DLL derleme türünü belirlemenize yardımcı olacak bilgiler sağlar.
   
 -   [Hangi tür DLL kullanmak için](#_core_which_kind_of_dll_to_use)  
   
-##  <a name="_core_which_kind_of_dll_to_use"></a>Hangi tür DLL kullanmaya karar verme  
+##  <a name="_core_which_kind_of_dll_to_use"></a> Hangi tür DLL kullanmaya karar verme  
  MFC DLL kullanmıyorsa, Visual C++ dışı MFC Win32 DLL oluşturmak için kullanın. (Statik veya dinamik olarak), DLL MFC'ye bağlantılandırma önemli disk alanı ve bellek alır. MFC DLL gerçekte kullanmadığı sürece MFC'ye bağlantı yapmamanız gerekir.  
   
  DLL MFC kullanma ve MFC veya MFC olmayan uygulamaları tarafından kullanılan, dinamik olarak MFC'ye bağlı normal MFC DLL ya da MFC'ye normal bir MFC DLL oluşturmanız gerekir. Çoğu durumda, muhtemelen dinamik olarak MFC'ye DLL dosyasının boyutu çok küçük olmaz ve MFC paylaşılan sürümünü kullanarak bellekte tasarrufları önemli olabilir çünkü bağlanan normal bir MFC DLL kullanmak istiyorsunuz. Statik olarak MFC'ye bağlantı varsa, DLL dosyası boyutunu daha büyük olabilir ve kendi özel MFC kitaplık kodu kopyasını yüklediğinden ek bellek büyük olasılıkla alabilir.  

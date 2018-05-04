@@ -1,12 +1,9 @@
 ---
-title: "CComEnum sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComEnum sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComEnum
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - CComEnum class
 ms.assetid: bff7dd7b-eb6e-4d6e-96ed-2706e66c8b3b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 792c5ff95858936d38d9a87350dd3ca405c5ec66
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 17046239cf4ca5cc95afbc709f10b9c8aedaa9fb
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomenum-class"></a>CComEnum sınıfı
 Bu sınıf bir dizisine göre bir COM Numaralandırıcı nesnesi tanımlar.  
@@ -59,11 +54,11 @@ class ATL_NO_VTABLE CComEnum : public CComEnumImpl<Base, piid,
  Sınıfın iş parçacığı modeli. Bu parametre projenizde kullanılan genel nesne iş parçacığı modelini varsayılan olarak ayarlanır.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComEnum`bir dizisine göre bir COM Numaralandırıcı nesnesi tanımlar. Bu sınıf için paraleldir [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) bir C++ Standart Kitaplığı kapsayıcı dayalı bir numaralandırıcı uygular. Bu sınıf kullanma için tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için bkz: [ATL koleksiyonları ve numaralandırmalar](../../atl/atl-collections-and-enumerators.md).  
+ `CComEnum` bir dizisine göre bir COM Numaralandırıcı nesnesi tanımlar. Bu sınıf için paraleldir [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) bir C++ Standart Kitaplığı kapsayıcı dayalı bir numaralandırıcı uygular. Bu sınıf kullanma için tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için bkz: [ATL koleksiyonları ve numaralandırmalar](../../atl/atl-collections-and-enumerators.md).  
   
 ## <a name="to-use-this-class"></a>Bu sınıf kullanmak için:  
   
-- `typedef`Bu sınıf uzmanlaşması.  
+- `typedef` Bu sınıf uzmanlaşması.  
   
 -   Kullanım `typedef` bir alt uzmanlaşması şablon bağımsız değişken olarak `CComObject`.  
   
@@ -78,7 +73,7 @@ class ATL_NO_VTABLE CComEnum : public CComEnumImpl<Base, piid,
   
  `Base`  
   
- [İn uygulamasına](../../atl/reference/ccomobjectrootex-class.md)  
+ [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)  
   
  [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md)  
   

@@ -1,13 +1,10 @@
 ---
-title: "Genel değişkenler | Microsoft Docs"
-ms.custom: 
+title: Genel değişkenler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.variables
 dev_langs:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - variables, global
 - global variables, Microsoft run-time library
 ms.assetid: 01d1551c-2f0c-4f72-935c-6442caccf84f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fec44138379e3510f353f0fdd99f7a6a1905f9cc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a2da3dd07c7088bee4be750b764b4a467bfebeae
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="global-variables"></a>Global Değişkenler
 Microsoft C çalışma zamanı kitaplığı aşağıdaki genel değişkenleri veya makroları sağlar. Bu genel değişkenler veya makroları çeşitli hangi yerine genel değişkenler kullanmanızı öneririz, daha güvenli işlevsel sürümleri lehinde kullanım dışı bırakıldı.  

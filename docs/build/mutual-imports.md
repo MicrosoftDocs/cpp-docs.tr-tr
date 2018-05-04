@@ -1,13 +1,10 @@
 ---
-title: "Karşılıklı içeri aktarmalar | Microsoft Docs"
-ms.custom: 
+title: Karşılıklı içeri aktarmalar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - extension DLLs [C++], mutual imports
 - exporting DLLs [C++], mutual imports
 ms.assetid: 2cc29537-92ee-4d92-af39-8b8b3afd808f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bfd31cd4e5776555137daf002c076e14d4031f89
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4b43977f86be409698d8fbdba16fc63d85acfac5
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mutual-imports"></a>Karşılıklı İçeri Aktarmalar
 Aktarımlar karşılıklı (veya döngüsel) olduğunda veya başka bir yürütülebilir dosyaya verme zorluklar gösterir. Örneğin, iki DLL simgeleri birbirinden, karşılıklı özyinelemeli işlevler için benzer içeri aktarın.  
@@ -87,7 +82,7 @@ class CLASS_DECL_B CExampleB : public CExampleA
 ...  
 ```  
   
- A.dll oluşturulduğunda ile oluşturulmuştur `/D A_IMPL` ve B.dll oluşturulduğunda ile yerleşiktir `/D B_IMPL`. Her bir DLL için ayrı sembol kullanarak `CExampleB` aktarılır ve `CExampleA` b.dll oluşturulduğunda alınır. `CExampleA`a.dll oluşturulurken dışarı ve içeri B.dll (veya başka bir istemci) tarafından kullanıldığında.  
+ A.dll oluşturulduğunda ile oluşturulmuştur `/D A_IMPL` ve B.dll oluşturulduğunda ile yerleşiktir `/D B_IMPL`. Her bir DLL için ayrı sembol kullanarak `CExampleB` aktarılır ve `CExampleA` b.dll oluşturulduğunda alınır. `CExampleA` a.dll oluşturulurken dışarı ve içeri B.dll (veya başka bir istemci) tarafından kullanıldığında.  
   
  Bu tür katmanlama yerleşik kullanırken yapılamaz **AFX_EXT_CLASS** ve `_AFXEXT` önişlemci simgeleri. Yukarıda açıklanan teknikleri MFC'nin etkin teknolojileri, veritabanı ve ağ MFC uzantı DLL'leri oluştururken düzeneğini bir şekilde benzemeyen bu sorunu çözer.  
   

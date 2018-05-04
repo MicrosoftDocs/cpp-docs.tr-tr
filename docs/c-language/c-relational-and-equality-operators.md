@@ -1,13 +1,10 @@
 ---
-title: "C ilişkisel ve eşitlik işleçleri | Microsoft Docs"
-ms.custom: 
+title: C ilişkisel ve eşitlik işleçleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - equality operator, syntax
 - operators [C], relational
 ms.assetid: c89a3815-a65e-4e0d-8333-0e8dc7fdb30b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6860198b9acce372b710e819a17f534e793f1ead
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ac6503b2c684b5acb921fe13ebf0b0ca11adbf04
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-relational-and-equality-operators"></a>C İlişkisel ve Eşitlik İşleçleri
 Belirtilen ilişki geçerliliğini sınamak için ikinci işlenen kendi ilk işlenen ikili ilişkisel ve eşitlik işleçleri karşılaştırın. Sınanan ilişki true ve 0 ise false ise ilişkisel bir ifadenin sonucu 1'dir. Sonuç türü olan `int`.  
@@ -67,7 +62,7 @@ Belirtilen ilişki geçerliliğini sınamak için ikinci işlenen kendi ilk işl
   
  İşlenen integral, kayan veya işaretçi türü olabilir. İşlenen türleri farklı olabilir. İlişkisel işleçler olağan aritmetik dönüştürmeler Entegral ve kayan türü işlenen üzerinde gerçekleştirin. Ayrıca, işlenen türleri ile ilişkisel ve eşitlik işleçleri aşağıdaki birleşimlerini kullanabilirsiniz:  
   
--   Her ilişkisel işlenenleri veya eşitlik işleci aynı türü işaretçileri olabilir. Eşitlik için (`==`) ve eşitsizlik (`!=`) işleçleri, karşılaştırma sonucunu gösteren iki işaretçileri aynı bellek konumuna yönelik olup olmadığını. Bir ilişkisel işleçleri (**\<**,  **>** ,  **\<** = ve  **>** =), Karşılaştırmanın sonucu işaret nesnelerinin iki bellek adresleri göreli konumunu gösterir. İlişkisel işleçler yalnızca uzaklıkları karşılaştırın.  
+-   Her ilişkisel işlenenleri veya eşitlik işleci aynı türü işaretçileri olabilir. Eşitlik için (`==`) ve eşitsizlik (`!=`) işleçleri, karşılaştırma sonucunu gösteren iki işaretçileri aynı bellek konumuna yönelik olup olmadığını. Bir ilişkisel işleçleri (**\<**, **>**, **\<**= ve **>**=), Karşılaştırmanın sonucu işaret nesnelerinin iki bellek adresleri göreli konumunu gösterir. İlişkisel işleçler yalnızca uzaklıkları karşılaştırın.  
   
      İşaretçi karşılaştırması yalnızca aynı nesne bölümleri için tanımlanır. İşaretçiler bir dizi üyelerine başvurursanız, karşılık gelen alt simgeler bir karşılaştırması için karşılaştırma eşdeğerdir. İlk dizi öğesi adresidir "den" son öğe adresidir. Yapıları söz konusu olduğunda, daha sonra bildirilen yapısı üye işaretçileri yapısı içinde bildirilen üyeleri için "büyüktür" işaretçiler ' dir. Aynı birleşim üyeleri işaretçileri eşit.  
   

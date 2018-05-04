@@ -1,13 +1,10 @@
 ---
-title: "-VERBOSE (ilerleme iletilerini Yazdır) | Microsoft Docs"
-ms.custom: 
+title: -VERBOSE (ilerleme iletilerini Yazdır) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /verbose
 - VC.Project.VCLinkerTool.ShowProgress
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - dependencies [C++], dependency information in linker output
 - VERBOSE linker option
 ms.assetid: 9c347d98-4c37-4724-a39e-0983934693ab
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76ead441a8dc7ec65a6966371b83d42c47c897c9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ee1bf99cdf27e432bf8bdf6b7c0e48a84aeaac21
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="verbose-print-progress-messages"></a>/VERBOSE (İlerleme İletilerini Yazdır)
 ```  

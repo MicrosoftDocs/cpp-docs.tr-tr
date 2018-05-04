@@ -48,14 +48,13 @@ helpviewer_keywords:
 ms.assetid: 7adc77c2-04f7-4245-a980-21215563cfae
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b698eab686403dc2350d3d9cc1ddfc1c5065418
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 12f475cde27d4660f4b4936f3f7717a665b70e86
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="log-logf-logl-log10-log10f-log10l"></a>Günlük, logf, logl, log10, log10f, log10l
 

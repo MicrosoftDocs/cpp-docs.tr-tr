@@ -2,11 +2,8 @@
 title: Çok baytlı karakter sıralarının yorumu | Microsoft Docs
 ms.custom: ''
 ms.date: 04/11/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - c.character.multibyte
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - MBCS [C++], locale code page
 ms.assetid: da9150de-70ea-4d2f-90e6-ddb9202dd80b
-caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1363d5fd28f7a8c3cbf01c24db028bad38185364
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 4d52a8b3572f398a97c902cf0bcd647a3752cee8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="interpretation-of-multibyte-character-sequences"></a>Çok Baytlı Karakter Sıralarının Yorumu
 
@@ -47,4 +42,4 @@ Microsoft Çalışma Zamanı Kitaplığı'ndaki en çok baytlı karakter yordaml
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)<br/>
- [Kategorilere göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+ [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

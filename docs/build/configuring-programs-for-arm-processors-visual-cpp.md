@@ -1,27 +1,22 @@
 ---
-title: "Visual C++ ARM işlemcileri için yapılandırma | Microsoft Docs"
-ms.custom: 
+title: Visual C++ ARM işlemcileri için yapılandırma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 3d95f221-656a-480d-9651-9ad263895747
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8539578e8030862e63f4dda36c6b9c93a29547ab
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b249e2b54085f87c4895ba026d4f34e9ed195a49
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-visual-c-for-arm-processors"></a>Visual C++ ARM işlemcileri için yapılandırma
 

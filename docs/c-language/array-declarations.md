@@ -1,13 +1,10 @@
 ---
 title: Dizi bildirimleri | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,24 +12,22 @@ helpviewer_keywords:
 - declaring arrays
 - arrays [C++], declaring
 ms.assetid: 5f958b97-cef0-4058-bbc6-37c460aaed9b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06742239c48503a5917317a674a39f50a38702c7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f64d5f5ec5dc0f84de504026ea92b88fb1da4d94
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="array-declarations"></a>Dizi Bildirimleri
 Bir "dizisi bildirimi" dizi adları ve öğeleri türünü belirtir. Dizide öğe sayısını da tanımlayabilirsiniz. Dizi türüne sahip bir değişken dizisini öğelerin türü için bir işaretçi olarak kabul edilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
  `declaration`:  
- *bildirim tanımlayıcıları init bildirimcisi listesi* kabul**;**  
+ *bildirim tanımlayıcıları init bildirimcisi listesi* kabul **;**  
   
  *Init bildirimcisi listesi*:  
  *Init bildirimcisi*  
@@ -42,13 +37,13 @@ Bir "dizisi bildirimi" dizi adları ve öğeleri türünü belirtir. Dizide öğ
  *Init bildirimcisi*:  
  *bildirimcisi*  
   
- *bildirimcisi***=***Başlatıcı*   
+ *bildirimcisi***=***Başlatıcı*  
   
  `declarator`:  
  *İşaretçi* kabul*doğrudan bildirimcisi*  
   
  *doğrudan bildirimcisi*:  
- *doğrudan bildirimcisi***[***sabit ifadesi* kabul**]**   
+ *doğrudan bildirimcisi***[***sabit ifadesi* kabul **]**   
   
  Çünkü *sabit ifadesi* sözdizimine sahip iki form isteğe bağlıdır:  
   

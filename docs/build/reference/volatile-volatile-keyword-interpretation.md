@@ -1,13 +1,10 @@
 ---
-title: "-volatile (volatile anahtar sözcük yorumu) | Microsoft Docs"
-ms.custom: 
+title: -volatile (volatile anahtar sözcük yorumu) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /volatile:iso
 - /volatile:ms
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - volatile compiler option
 - -volatile compiler option [C++]
 ms.assetid: 9d08fcc6-5bda-44c8-8151-8d8d54f164b8
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4528d53da01ae83f179f07ba52b2c86c335e883c
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: ccd36c5edaaab8577e5f278b25b51ce69e0633f1
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="volatile-volatile-keyword-interpretation"></a>/volatile (volatile Anahtar Sözcük Yorumu)
 
@@ -47,7 +42,7 @@ Belirtir nasıl [volatile](../../cpp/volatile-cpp.md) sözcüktür yorumlanacağ
 **/volatile:iso**  
 Katı seçer `volatile` ISO standart C++ dili tarafından tanımlanan şekilde semantiği. Alma/sürüm semantiği geçici erişim sırasında garanti edilmez. Derleyici ARM hedefliyorsa, bu varsayılan yorumu olduğu `volatile`.
 
-**/volatile:ms**  
+**/volatile:MS**  
 Microsoft genişletilmiş seçer `volatile` garanti ISO standart C++ dili ötesinde sıralama bellek ekleme semantiği. Alma/sürüm semantiği üzerinde geçici erişim sağlanır. Ancak, bu seçenek de önemli ek yükü ARM ve diğer zayıf bellek sıralama mimarileri eklemeleri donanım bellek engelleri oluşturmak için derleyici zorlar. Derleyici ARM dışında herhangi bir platform hedefliyorsa, bu varsayılan yorumu olduğu `volatile`.
 
 ## <a name="remarks"></a>Açıklamalar

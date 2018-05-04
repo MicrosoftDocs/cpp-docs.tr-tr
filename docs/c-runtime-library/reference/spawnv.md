@@ -2,11 +2,8 @@
 title: spawnv | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - spawnv
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - spawnv function
 ms.assetid: 6f9b247c-1524-4c24-b846-6925fe22f1cd
-caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2fe35caadb99dc91733fcaca3e9b2b9292f1ea1
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 309d3953a9548c8950fc6f84322e88d6a8db5418
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spawnv"></a>spawnv
 

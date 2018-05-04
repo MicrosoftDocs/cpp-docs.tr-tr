@@ -1,13 +1,10 @@
 ---
-title: "-LN (MSIL modülü Oluştur) | Microsoft Docs"
-ms.custom: 
+title: -LN (MSIL modülü Oluştur) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /LN
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - -LN compiler option [C++]
 - /LN compiler option [C++]
 ms.assetid: 4f38f4f4-3176-4caf-8200-5c7585dc1ed3
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0278d59af9a62393f90a91655e3d7f0323e08118
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 918b3857c2e6f26a7f2e11614a00049e9b615ea8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ln-create-msil-module"></a>/LN (MSIL Modülü Oluştur)
 Derleme bildirimi çıktı dosyasına eklenecek değil olduğunu belirtir.  

@@ -1,12 +1,9 @@
 ---
-title: "COM arabirimi giriş makroları | Microsoft Docs"
-ms.custom: 
+title: COM arabirimi giriş makroları | Microsoft Docs
+ms.custom: ''
 ms.date: 03/28/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - atlcom/ATL::COM_INTERFACE_ENTRY
@@ -27,17 +24,15 @@ dev_langs:
 helpviewer_keywords:
 - COM interfaces, COM interface entry macros
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76352cf2015661bc970b2987b9794f3bf023cc15
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7c3ba41a05813c4112c1e5dd51bfe447d2c8debf
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY makroları  
  Tarafından erişilebilecek şekilde bu makroları nesnenin arabirimleri, COM eşlemeye girin `QueryInterface`. Bir eşleştirme için sipariş arabirimleri denetlenecektir COM eşlemesi girişlerinde sırasıdır **IID** sırasında `QueryInterface`.  
@@ -63,7 +58,7 @@ ms.lasthandoff: 12/21/2017
 ## <a name="requirements"></a>Gereksinimler
 **Başlık:** atlcom.h
 
-## <a name="com_interface_entry"></a>COM_INTERFACE_ENTRY
+## <a name="com_interface_entry"></a> COM_INTERFACE_ENTRY
 Arabirimleri COM arabirimi eşlemeye girer.
 
 ### <a name="syntax"></a>Sözdizimi
@@ -89,7 +84,7 @@ END_COM_MAP()
 ### <a name="requirements"></a>Gereksinimler
 **Başlık:** atlcom.h
   
-##  <a name="com_interface_entry2"></a>COM_INTERFACE_ENTRY2  
+##  <a name="com_interface_entry2"></a>  COM_INTERFACE_ENTRY2  
  Devralma iki dalı belirsizliğini ortadan kaldırmak için bu makrosu kullanın.  
   
 ```
@@ -110,7 +105,7 @@ COM_INTERFACE_ENTRY2(x, x2)
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#118](../../atl/codesnippet/cpp/com-map-macros_2.h)]  
   
-##  <a name="com_interface_entry_iid"></a>COM_INTERFACE_ENTRY_IID  
+##  <a name="com_interface_entry_iid"></a>  COM_INTERFACE_ENTRY_IID  
  COM eşlemeye arabirimi girin ve onun IID belirtmek için bu makrosu kullanın.  
   
 ```
@@ -128,7 +123,7 @@ COM_INTERFACE_ENTRY_IID(iid, x)
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#117](../../atl/codesnippet/cpp/com-map-macros_3.h)]  
   
-##  <a name="com_interface_entry2_iid"></a>COM_INTERFACE_ENTRY2_IID  
+##  <a name="com_interface_entry2_iid"></a>  COM_INTERFACE_ENTRY2_IID  
  Aynı [COM_INTERFACE_ENTRY2](#com_interface_entry2), farklı IID belirtebilirsiniz dışında.  
   
 ```
@@ -145,7 +140,7 @@ COM_INTERFACE_ENTRY2_IID(iid, x, x2)
  `x2`  
  [in] Sınıf nesnesi doğrudan türetilen ikinci bir arabirim adı.  
   
-##  <a name="com_interface_entry_aggregate"></a>COM_INTERFACE_ENTRY_AGGREGATE  
+##  <a name="com_interface_entry_aggregate"></a>  COM_INTERFACE_ENTRY_AGGREGATE  
  Ne zaman arabirimi tanımlanan `iid` için sorgulanan `COM_INTERFACE_ENTRY_AGGREGATE` iletir `punk`.  
   
 ```
@@ -167,7 +162,7 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#112](../../atl/codesnippet/cpp/com-map-macros_4.h)]  
   
-##  <a name="com_interface_entry_aggregate_blind"></a>COM_INTERFACE_ENTRY_AGGREGATE_BLIND  
+##  <a name="com_interface_entry_aggregate_blind"></a>  COM_INTERFACE_ENTRY_AGGREGATE_BLIND  
  Aynı [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), tüm IID için sorgulama sorguya iletme sonuçları dışında `punk`.  
   
 ```
@@ -187,7 +182,7 @@ COM_INTERFACE_ENTRY_AGGREGATE_BLIND(punk)
  [!code-cpp[NVC_ATL_Windowing#113](../../atl/codesnippet/cpp/com-map-macros_5.h)]  
   
 
-##  <a name="com_interface_entry_autoaggregate"></a>COM_INTERFACE_ENTRY_AUTOAGGREGATE  
+##  <a name="com_interface_entry_autoaggregate"></a>  COM_INTERFACE_ENTRY_AUTOAGGREGATE  
  Aynı [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), eğer dışında `punk` olan **NULL**, tarafından açıklanan toplama otomatik olarak oluşturur `clsid`.  
   
 ```
@@ -210,7 +205,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#114](../../atl/codesnippet/cpp/com-map-macros_6.h)]  
   
-##  <a name="com_interface_entry_autoaggregate_blind"></a>COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND  
+##  <a name="com_interface_entry_autoaggregate_blind"></a>  COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND  
  Aynı [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)herhangi IID için sorgulama sorguya iletme sonuçları dışında `punk`ve `punk` olan **NULL**, otomatik olarak oluşturma Toplama açıklanan tarafından `clsid`.  
   
 ```
@@ -232,7 +227,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#115](../../atl/codesnippet/cpp/com-map-macros_7.h)]  
   
-##  <a name="com_interface_entry_break"></a>COM_INTERFACE_ENTRY_BREAK  
+##  <a name="com_interface_entry_break"></a>  COM_INTERFACE_ENTRY_BREAK  
  Çağrılacak programınızı neden [DebugBreak](http://msdn.microsoft.com/library/windows/desktop/ms679297) zaman belirtilen arabirim sorgulanan için.  
   
 ```
@@ -248,7 +243,7 @@ COM_INTERFACE_ENTRY_BREAK(x)
   
   
   
-##  <a name="com_interface_entry_cached_tear_off"></a>COM_INTERFACE_ENTRY_CACHED_TEAR_OFF  
+##  <a name="com_interface_entry_cached_tear_off"></a>  COM_INTERFACE_ENTRY_CACHED_TEAR_OFF  
  Her örneğin arabirimi özgü verileri kaydeder.  
   
 ```
@@ -273,7 +268,7 @@ COM_INTERFACE_ENTRY_CACHED_TEAR_OFF(iid, x, punk)
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#54](../../atl/codesnippet/cpp/com-map-macros_8.h)]  
   
-##  <a name="com_interface_entry_tear_off"></a>COM_INTERFACE_ENTRY_TEAR_OFF  
+##  <a name="com_interface_entry_tear_off"></a>  COM_INTERFACE_ENTRY_TEAR_OFF  
  Etiketleri arabirimlerinizi kullanıma sunar.  
   
 ```
@@ -295,7 +290,7 @@ COM_INTERFACE_ENTRY_TEAR_OFF(iid, x)
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#1](../../atl/codesnippet/cpp/com-map-macros_1.h)]  
   
-##  <a name="com_interface_entry_chain"></a>COM_INTERFACE_ENTRY_CHAIN  
+##  <a name="com_interface_entry_chain"></a>  COM_INTERFACE_ENTRY_CHAIN  
  İşleme COM eşlemesi bu girişi ulaştığında temel sınıfın COM eşlemesi işler.  
   
 ```
@@ -317,7 +312,7 @@ COM_INTERFACE_ENTRY_CHAIN(classname)
   
   
   
-##  <a name="com_interface_entry_func"></a>COM_INTERFACE_ENTRY_FUNC  
+##  <a name="com_interface_entry_func"></a>  COM_INTERFACE_ENTRY_FUNC  
  ATL ait takma için genel bir mekanizma `QueryInterface` mantığı.  
   
 ```
@@ -343,7 +338,7 @@ COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
   
   
   
-##  <a name="com_interface_entry_func_blind"></a>COM_INTERFACE_ENTRY_FUNC_BLIND  
+##  <a name="com_interface_entry_func_blind"></a>  COM_INTERFACE_ENTRY_FUNC_BLIND  
  Aynı [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func), tüm IID için sorgulama için bir çağrı sonuçlanır. ancak bu `func`.  
   
 ```
@@ -361,7 +356,7 @@ COM_INTERFACE_ENTRY_FUNC_BLIND(dw, func)
  Herhangi bir hata COM haritada devam etmek işleme neden olur. İşlevi bir arabirim işaretçisi durumunda döndürür, döndürme zorunluluğu `S_OK`.  
   
   
-##  <a name="com_interface_entry_nointerface"></a>COM_INTERFACE_ENTRY_NOINTERFACE  
+##  <a name="com_interface_entry_nointerface"></a>  COM_INTERFACE_ENTRY_NOINTERFACE  
  Döndürür **E_NOINTERFACE** ve belirtilen arabirim için sorgulandığında COM harita işleme sona erer.  
   
 ```

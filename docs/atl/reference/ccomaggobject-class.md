@@ -1,12 +1,9 @@
 ---
-title: "CComAggObject sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComAggObject sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComAggObject
@@ -26,17 +23,15 @@ helpviewer_keywords:
 - aggregation [C++], ATL objects
 - CComAggObject class
 ms.assetid: 7aa90d69-d399-477b-880d-e2cdf0ef7881
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd06518978b37705a98e4d8b7212b8dd03a2d7b7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 426a01c1957b276174b8b36884605b69dd501de8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomaggobject-class"></a>CComAggObject sınıfı
 Bu sınıf uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanmış bir nesne için arabirim. Tanımı gereği, toplanan nesneyi bir dış nesne içinde yer alır. `CComAggObject` Sınıfı benzer [CComObject sınıfı](../../atl/reference/ccomobject-class.md), dış istemcilere doğrudan erişilebilir bir arabirimi kullanıma sunan dışında.  
@@ -67,7 +62,7 @@ class CComAggObject : public IUnknown,
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CComAggObject::AddRef](#addref)|Toplanan nesnesinde başvurusu sayısını artırır.|  
-|[CComAggObject::CreateInstance](#createinstance)|Bu statik işlev yeni oluşturmanıza olanak tanıyan **CComAggObject <** `contained`  **>**  nesne yükü olmadan [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).|  
+|[CComAggObject::CreateInstance](#createinstance)|Bu statik işlev yeni oluşturmanıza olanak tanıyan **CComAggObject <** `contained` **>** nesne yükü olmadan [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).|  
 |[CComAggObject::FinalConstruct](#finalconstruct)|Öğesinin son başlatılmasını gerçekleştirir `m_contained`.|  
 |[CComAggObject::FinalRelease](#finalrelease)|Son yok etme gerçekleştirir `m_contained`.|  
 |[CComAggObject::QueryInterface](#queryinterface)|İstenen arabirim için bir işaretçi alır.|  
@@ -80,14 +75,14 @@ class CComAggObject : public IUnknown,
 |[CComAggObject::m_contained](#m_contained)|Temsilciler `IUnknown` dış bilinmeyen çağrıları.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComAggObject`uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanmış bir nesne için. `CComAggObject`kendi **IUnknown** arabirimi, dış nesnenin ayrı **IUnknown** arabirim ve kendi başvuru sayımı tutar.  
+ `CComAggObject` uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanmış bir nesne için. `CComAggObject` kendi **IUnknown** arabirimi, dış nesnenin ayrı **IUnknown** arabirim ve kendi başvuru sayımı tutar.  
   
  Toplama hakkında daha fazla bilgi için bkz: [ATL COM nesneleri Temelleri](../../atl/fundamentals-of-atl-com-objects.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CComObjectRootBase`  
   
- [İn uygulamasına](../../atl/reference/ccomobjectrootex-class.md)  
+ [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)  
   
  `IUnknown`  
   
@@ -96,7 +91,7 @@ class CComAggObject : public IUnknown,
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="addref"></a>CComAggObject::AddRef  
+##  <a name="addref"></a>  CComAggObject::AddRef  
  Toplanan nesnesinde başvurusu sayısını artırır.  
   
 ```
@@ -106,7 +101,7 @@ STDMETHOD_(ULONG, AddRef)();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tanılama için kullanışlı veya test bir değer.  
   
-##  <a name="ccomaggobject"></a>CComAggObject::CComAggObject  
+##  <a name="ccomaggobject"></a>  CComAggObject::CComAggObject  
  Oluşturucu.  
   
 ```
@@ -122,7 +117,7 @@ CComAggObject(void* pv);
   
  Yok Edicisi azaltır modülü kilit sayısı.  
   
-##  <a name="dtor"></a>CComAggObject:: ~ CComAggObject  
+##  <a name="dtor"></a>  CComAggObject:: ~ CComAggObject  
  Yok Edicisi.  
   
 ```
@@ -132,8 +127,8 @@ CComAggObject(void* pv);
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları ayrılan tüm kaynakları serbest bırakır [FinalRelease](#finalrelease), ve azaltır modülü kilit sayısı.  
   
-##  <a name="createinstance"></a>CComAggObject::CreateInstance  
- Bu statik işlev yeni oluşturmanıza olanak tanıyan **CComAggObject <** `contained`  **>**  nesne yükü olmadan [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
+##  <a name="createinstance"></a>  CComAggObject::CreateInstance  
+ Bu statik işlev yeni oluşturmanıza olanak tanıyan **CComAggObject <** `contained` **>** nesne yükü olmadan [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
   
 ```
 static HRESULT WINAPI CreateInstance(
@@ -143,7 +138,7 @@ static HRESULT WINAPI CreateInstance(
   
 ### <a name="parameters"></a>Parametreler  
  `pp`  
- [out] Bir işaretçi bir **CComAggObject\<***bulunan*  **>**  işaretçi. Varsa `CreateInstance` başarısızsa, `pp` ayarlanır **NULL**.  
+ [out] Bir işaretçi bir **CComAggObject\<*** bulunan* **>** işaretçi. Varsa `CreateInstance` başarısızsa, `pp` ayarlanır **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
@@ -153,7 +148,7 @@ static HRESULT WINAPI CreateInstance(
   
  Nesneye doğrudan erişim değildir, ancak hala yükü olmadan yeni bir nesne oluşturmak istediğiniz `CoCreateInstance`, kullanın [CComCoClass::CreateInstance](../../atl/reference/ccomcoclass-class.md#createinstance) yerine.  
   
-##  <a name="finalconstruct"></a>CComAggObject::FinalConstruct  
+##  <a name="finalconstruct"></a>  CComAggObject::FinalConstruct  
  Nesne oluşturması son aşamaları sırasında çağrılır, bu yöntem herhangi son başlatma gerçekleştirir [m_contained](#m_contained) üyesi.  
   
 ```
@@ -163,14 +158,14 @@ HRESULT FinalConstruct();
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
-##  <a name="finalrelease"></a>CComAggObject::FinalRelease  
+##  <a name="finalrelease"></a>  CComAggObject::FinalRelease  
  Nesne yok etme sırasında çağrılır, bu yöntem boşaltır [m_contained](#m_contained) üyesi.  
   
 ```
 void FinalRelease();
 ```  
   
-##  <a name="m_contained"></a>CComAggObject::m_contained  
+##  <a name="m_contained"></a>  CComAggObject::m_contained  
  A [CComContainedObject](../../atl/reference/ccomcontainedobject-class.md) nesnesi, sınıfından türetilmiş.  
   
 ```
@@ -184,7 +179,7 @@ CComContainedObject<contained> m_contained;
 ### <a name="remarks"></a>Açıklamalar  
  Tüm **IUnknown** aracılığıyla çağırır `m_contained` dış bilinmeyen temsilcisi.  
   
-##  <a name="queryinterface"></a>CComAggObject::QueryInterface  
+##  <a name="queryinterface"></a>  CComAggObject::QueryInterface  
  İstenen arabirim için bir işaretçi alır.  
   
 ```
@@ -209,7 +204,7 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ### <a name="remarks"></a>Açıklamalar  
  İstenen arabirimi ise **IUnknown**, `QueryInterface` toplanmış nesnenin için kendi işaretçi döndüren **IUnknown** ve başvuru sayısını artırır. Aksi takdirde, bu yöntem arabirimi aracılığıyla sorgular `CComContainedObject` üyesi [m_contained](#m_contained).  
   
-##  <a name="release"></a>CComAggObject::Release  
+##  <a name="release"></a>  CComAggObject::Release  
  Başvuru sayım toplanmış nesnesinde azaltır.  
   
 ```

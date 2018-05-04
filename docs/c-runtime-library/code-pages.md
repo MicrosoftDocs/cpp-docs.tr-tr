@@ -2,12 +2,9 @@
 title: Kod sayfaları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.international
 dev_langs:
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - code pages [C++], types of
 - locale code pages [C++]
 ms.assetid: 4a26fc42-185a-4add-98bf-a7b314ae6186
-caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc272d02fee38b3a260a5b6bb6330f4f6a5eb362
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 203467eea055927ac7eb8d5ccf8a90242c62d33a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="code-pages"></a>Kod Sayfaları
 
@@ -58,4 +53,4 @@ A *kod sayfası* sayı, noktalama işaretleri ve diğer karakterlerin içerebile
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)<br/>
- [Kategorilere göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+ [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

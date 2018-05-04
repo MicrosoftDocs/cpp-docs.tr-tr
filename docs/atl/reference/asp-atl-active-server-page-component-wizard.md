@@ -1,12 +1,9 @@
 ---
-title: "ASP, ATL Active Server sayfası Bileşen Sihirbazı | Microsoft Docs"
-ms.custom: 
+title: ASP, ATL Active Server sayfası Bileşen Sihirbazı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.atl.asp.asp
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - ATL Active Server Page Component Wizard, ASP
 ms.assetid: 4d8cafd6-5e12-4461-8911-29288896af3c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69d3837cc0996c0e0e0784214cfbfa6744afbf94
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dfe27a64a2086f08c5a29e2961d069771fdbc4e6
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="asp-atl-active-server-page-component-wizard"></a>ASP, ATL Active Server sayfası Bileşen Sihirbazı
 Bilgileri ve durumu, ASP bileşenle ilgili işlemek için isteğe bağlı ayarları belirtmek için bu sayfayı ATL etkin sunucu sayfası Bileşen Sihirbazı'nı kullanın.  

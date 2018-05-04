@@ -1,9 +1,9 @@
 ---
-title: "C++ konsol uygulaması projesini derlemeyi ve çalıştırmayı | Microsoft Docs"
-description: "Derleme ve bir Hello World konsol uygulaması Visual C++'da çalıştırma"
+title: C++ konsol uygulaması projesini derlemeyi ve çalıştırmayı | Microsoft Docs
+description: Derleme ve bir Hello World konsol uygulaması Visual C++'da çalıştırma
 ms.custom: mvc
 ms.date: 12/12/2017
-ms.topic: get-started-article
+ms.topic: tutorial
 ms.technology:
 - devlang-C++
 ms.devlang: C++
@@ -12,14 +12,13 @@ dev_langs:
 ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 119d39c6aac479c8e08cd017b4d5f8da794c836d
-ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.openlocfilehash: fa63175e086fcb22552d0b7fd027b380d9766739
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="build-and-run-a-c-console-app-project"></a>Derleme ve C++ konsol uygulama projesi çalıştırma
 

@@ -1,12 +1,9 @@
 ---
-title: "CComSimpleThreadAllocator sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComSimpleThreadAllocator sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComSimpleThreadAllocator
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - CComSimpleThreadAllocator class
 - ATL threads, allocating
 ms.assetid: 66b2166a-8c50-49fd-b8e4-7f293470327d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 244443692478d0391c2079e55995c1fef1e1655e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: da050dbf2b4052aeadd9fe8380857a0ba15b264f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomsimplethreadallocator-class"></a>CComSimpleThreadAllocator sınıfı
 Bu sınıf sınıfı için iş parçacığı seçimi yönetir `CComAutoThreadModule`.  
@@ -50,12 +45,12 @@ class CComSimpleThreadAllocator
 |[CComSimpleThreadAllocator::GetThread](#getthread)|Bir iş parçacığı seçer.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComSimpleThreadAllocator`iş parçacığı seçimi için yönetir [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md). `CComSimpleThreadAllocator::GetThread`yalnızca her iş parçacığı geçiş yapar ve bir sonraki sırada döndürür.  
+ `CComSimpleThreadAllocator` iş parçacığı seçimi için yönetir [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md). `CComSimpleThreadAllocator::GetThread` yalnızca her iş parçacığı geçiş yapar ve bir sonraki sırada döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
-##  <a name="getthread"></a>CComSimpleThreadAllocator::GetThread  
+##  <a name="getthread"></a>  CComSimpleThreadAllocator::GetThread  
  Bir iş parçacığı sırayla sonraki iş parçacığı belirterek seçer.  
   
 ```
@@ -75,7 +70,7 @@ int GetThread(CComApartment* /* pApt */, int nThreads);
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılabilirsiniz `GetThread` seçimin farklı bir yöntem sağlamak ya da yapmak için kullanımı `pApt` parametresi.  
   
- `GetThread`tarafından çağrılır [CComAutoThreadModule::CreateInstance](../../atl/reference/ccomautothreadmodule-class.md#createinstance).  
+ `GetThread` tarafından çağrılır [CComAutoThreadModule::CreateInstance](../../atl/reference/ccomautothreadmodule-class.md#createinstance).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComApartment sınıfı](../../atl/reference/ccomapartment-class.md)   

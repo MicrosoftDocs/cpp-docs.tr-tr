@@ -1,12 +1,9 @@
 ---
-title: "CInterfaceList sınıfı | Microsoft Docs"
-ms.custom: 
+title: CInterfaceList sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CInterfaceList
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - CInterfaceList class
 ms.assetid: 2077764d-25e5-4b3d-96c8-08a287bbcd25
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5bd8817b325ebb9a9d8899211416dcbecfcd3f79
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1fc523b1eccc88678cda48a0c7e429ea0fc09f9b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cinterfacelist-class"></a>CInterfaceList sınıfı
 Bu sınıf, COM arabirim işaretçileri listesi oluşturulurken, kullanışlı yöntemler sağlar.  
@@ -69,7 +64,7 @@ class CInterfaceList
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcoll.h  
   
-##  <a name="cinterfacelist"></a>CInterfaceList::CInterfaceList  
+##  <a name="cinterfacelist"></a>  CInterfaceList::CInterfaceList  
  Arabirim listesi Oluşturucusu.  
   
 ```

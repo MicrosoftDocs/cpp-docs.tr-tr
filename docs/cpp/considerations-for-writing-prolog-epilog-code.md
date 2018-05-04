@@ -1,12 +1,9 @@
 ---
-title: "Giriş bitiş kodu yazmada dikkat edilmesi gerekenler | Microsoft Docs"
-ms.custom: 
+title: Giriş bitiş kodu yazmada dikkat edilmesi gerekenler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -17,23 +14,21 @@ helpviewer_keywords:
 - __LOCAL_SIZE constant
 - stack, stack frame layout
 ms.assetid: c7814de2-bb5c-4f5f-96d0-bcfd2ad3b182
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9578e106c536f14059be95724ac1c2c9af92f3cf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5bd87d4af4c797d324e6f882cc5c2e139a784543
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="considerations-for-writing-prologepilog-code"></a>Giriş ve Bitiş Kodu Yazmada Dikkat Edilmesi Gerekenler
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
  Kendi giriş ve sonuç kod dizilerinizi yazmadan önce, yığın çerçevesinin nasıl düzenlendiğini anlamak önemlidir. Nasıl kullanılacağını öğrenmek de yararlıdır **__local_sıze** simgesi.  
   
-##  <a name="_pluslang_c.2b2b_.stack_frame_layout"></a>Yığın çerçevesi düzeni  
+##  <a name="_pluslang_c.2b2b_.stack_frame_layout"></a> Yığın çerçevesi düzeni  
  Bu örnekte, 32 bit işlevinde görünebilecek standart giriş kodu gösterilmektedir:  
   
 ```  
@@ -54,7 +49,7 @@ ret                       ; Return from function
   
  Yığın her zaman aşağı doğru (yüksek bellek adreslerinden düşük olanlara) büyür. Taban işaretçisi (`ebp`) `ebp`'nin gönderilen değerine işaret eder. Yerel öğeler alanı başlangıcı `ebp-4`. Yerel değişkenlere erişmek için uygun değeri `ebp`'den çıkararak `ebp`'den bir uzaklık hesaplayın.  
   
-##  <a name="_pluslang___local_size"></a>__LOCAL_SIZE  
+##  <a name="_pluslang___local_size"></a> __LOCAL_SIZE  
  Bir simge derleyici sağlar **__local_sıze**, işlevi giriş kodu satır içi derleyici bloğunu kullanmak için. Bu simge, yerel değişkenleri özel giriş kodunda yığın çerçevesinde alan ayırmak için kullanılır.  
   
  Derleyici değerini belirler **__local_sıze**. Değerini, tüm kullanıcı tanımlı yerel değişkenleri ve derleyicinin ürettiği geçici değişkenleri bayt toplam sayısıdır. **__Local_sıze** yalnızca hemen işleneni olarak; kullanılabilir bir ifadede kullanılamaz. Değil, değiştirmek veya bu simge değerini yeniden tanımlamanız gerekir. Örneğin:  

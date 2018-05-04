@@ -1,30 +1,25 @@
 ---
-title: "ATL COM Masaüstü bileşenleri | Microsoft Docs"
-ms.custom: 
+title: ATL COM Masaüstü bileşenleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - ATL, reference
 - ATL, about ATL
 ms.assetid: 291f38d1-d2de-4687-86a9-99b4fd35706c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b55aef95cbe34dc51910035f4a731eed3a6a5679
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.openlocfilehash: 90d50ca37b90251a797f70129e4b8ce1778b4d73
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM Masaüstü bileşenleri
 ATL başvurusu Etkin Şablon kitaplığı (ATL), Bileşen Nesne Modeli (COM) nesneleri programlama basitleştirmek şablona dayalı C++ sınıfları kümesi belgeler. ATL tam olarak yararlanmak için COM çalışma aşina kullanmamanız önerilir.  

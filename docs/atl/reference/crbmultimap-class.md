@@ -1,12 +1,9 @@
 ---
-title: "CRBMultiMap sınıfı | Microsoft Docs"
-ms.custom: 
+title: CRBMultiMap sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CRBMultiMap
@@ -22,17 +19,15 @@ dev_langs:
 helpviewer_keywords:
 - CRBMultiMap class
 ms.assetid: 94d3ec0c-3e30-4ab7-a101-d8da4fb8add3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79ef7fdd5799b01ec115befcd50bbe4625d48bea
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6ec016df268b702fd8b26d742d702ac38b95fa06
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="crbmultimap-class"></a>CRBMultiMap sınıfı
 Bu sınıf, her anahtar kırmızı siyah bir ikili ağacı kullanarak birden fazla değer ile ilişkilendirilebilir izin veren bir eşleme yapısı temsil eder.  
@@ -80,7 +75,7 @@ class CRBMultiMap : public CRBTree<K, V, KTraits, VTraits>
 |[CRBMultiMap::RemoveKey](#removekey)|Belirli bir anahtar için anahtar/değer öğeleri kaldırmak için bu yöntemi çağırın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CRBMultiMap`bir eşleme dizisi temel öğeleri ve değerleri sıralı bir dizi yönetme, belirtilen her tür için destek sağlar. Farklı [CRBMap](../../atl/reference/crbmap-class.md) sınıfı, her anahtar ilişkilendirilebilir ile birden fazla değer.  
+ `CRBMultiMap` bir eşleme dizisi temel öğeleri ve değerleri sıralı bir dizi yönetme, belirtilen her tür için destek sağlar. Farklı [CRBMap](../../atl/reference/crbmap-class.md) sınıfı, her anahtar ilişkilendirilebilir ile birden fazla değer.  
   
  Öğeleri (bir anahtarı ve değeri oluşan) bir ikili ağacı depolanan yapısı, kullanarak [CRBMultiMap::Insert](#insert) yöntemi. Öğeleri kullanılarak kaldırılabilir [CRBMultiMap::RemoveKey](#removekey) verilen anahtar eşleşen tüm öğeleri siler yöntemi.  
   
@@ -88,7 +83,7 @@ class CRBMultiMap : public CRBTree<K, V, KTraits, VTraits>
   
  `KTraits` Ve `VTraits` parametreleridir kopyalamak veya öğeleri taşımak için gereken ek kod içeren özellikler sınıfları.  
   
- `CRBMultiMap`türetilmiş [CRBTree](../../atl/reference/crbtree-class.md), kırmızı siyah algoritmasını kullanarak bir ikili ağacı uygular. Alternatif `CRBMultiMap` ve `CRBMap` tarafından sunulan [CAtlMap](../../atl/reference/catlmap-class.md) sınıfı. Az sayıda öğesi depolanması gerektiğinde kullanmayı [CSimpleMap](../../atl/reference/csimplemap-class.md) yerine sınıfı.  
+ `CRBMultiMap` türetilmiş [CRBTree](../../atl/reference/crbtree-class.md), kırmızı siyah algoritmasını kullanarak bir ikili ağacı uygular. Alternatif `CRBMultiMap` ve `CRBMap` tarafından sunulan [CAtlMap](../../atl/reference/catlmap-class.md) sınıfı. Az sayıda öğesi depolanması gerektiğinde kullanmayı [CSimpleMap](../../atl/reference/csimplemap-class.md) yerine sınıfı.  
   
  Çeşitli koleksiyon sınıfları, özellikleri ve performans özelliklerini daha eksiksiz bir tartışma için bkz [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
   
@@ -100,7 +95,7 @@ class CRBMultiMap : public CRBTree<K, V, KTraits, VTraits>
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcoll.h  
   
-##  <a name="crbmultimap"></a>CRBMultiMap::CRBMultiMap  
+##  <a name="crbmultimap"></a>  CRBMultiMap::CRBMultiMap  
  Oluşturucu.  
   
 ```
@@ -119,7 +114,7 @@ explicit CRBMultiMap(size_t nBlockSize = 10) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#85](../../atl/codesnippet/cpp/crbmultimap-class_1.cpp)]  
   
-##  <a name="dtor"></a>CRBMultiMap:: ~ CRBMultiMap  
+##  <a name="dtor"></a>  CRBMultiMap:: ~ CRBMultiMap  
  Yok Edicisi.  
   
 ```
@@ -131,7 +126,7 @@ explicit CRBMultiMap(size_t nBlockSize = 10) throw();
   
  Taban sınıfı için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.  
   
-##  <a name="findfirstwithkey"></a>CRBMultiMap::FindFirstWithKey  
+##  <a name="findfirstwithkey"></a>  CRBMultiMap::FindFirstWithKey  
  Verilen anahtarla ilk öğenin konumunu bulmak için bu yöntemi çağırın.  
   
 ```
@@ -153,7 +148,7 @@ POSITION FindFirstWithKey(KINARGTYPE key) const throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CRBMultiMap::CRBMultiMap](#crbmultimap).  
   
-##  <a name="getnextvaluewithkey"></a>CRBMultiMap::GetNextValueWithKey  
+##  <a name="getnextvaluewithkey"></a>  CRBMultiMap::GetNextValueWithKey  
  Verilen anahtarla ilişkili değeri almak için bu yöntemi çağırın ve konum değeri güncelleştirin.  
   
 ```
@@ -183,7 +178,7 @@ V& GetNextValueWithKey(
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CRBMultiMap::CRBMultiMap](#crbmultimap).  
   
-##  <a name="getnextwithkey"></a>CRBMultiMap::GetNextWithKey  
+##  <a name="getnextwithkey"></a>  CRBMultiMap::GetNextWithKey  
  Verilen anahtarla ilişkili öğesini almak için bu yöntemi çağırın ve konum değerini güncelleştirin.  
   
 ```
@@ -210,7 +205,7 @@ CPair* GetNextWithKey(
   
  Taban sınıfı için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.  
   
-##  <a name="insert"></a>CRBMultiMap::Insert  
+##  <a name="insert"></a>  CRBMultiMap::Insert  
  Bir öğe çifti eşlemeye eklemek için bu yöntemi çağırın.  
   
 ```
@@ -233,7 +228,7 @@ POSITION Insert(KINARGTYPE key, VINARGTYPE value) throw(...);
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CRBMultiMap::CRBMultiMap](#crbmultimap).  
   
-##  <a name="removekey"></a>CRBMultiMap::RemoveKey  
+##  <a name="removekey"></a>  CRBMultiMap::RemoveKey  
  Belirli bir anahtar için anahtar/değer öğeleri kaldırmak için bu yöntemi çağırın.  
   
 ```
@@ -248,7 +243,7 @@ size_t RemoveKey(KINARGTYPE key) throw();
  Verilen anahtarla ilişkili değerler sayısını döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `RemoveKey`eşleşen bir anahtara sahip tüm anahtar/değer öğeleri siler `key`.  
+ `RemoveKey` eşleşen bir anahtara sahip tüm anahtar/değer öğeleri siler `key`.  
   
  Taban sınıfı için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.  
   

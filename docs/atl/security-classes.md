@@ -1,29 +1,24 @@
 ---
-title: "Güvenlik sınıflarını (ATL) | Microsoft Docs"
-ms.custom: 
+title: Güvenlik sınıflarını (ATL) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - security classes [C++]
 ms.assetid: 0477f1a4-c1af-4c4f-bbca-08f7b844e028
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d0697ab069e1799ce53471367b40d3f772883d7
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 8c3ba3675196e0e6e3564beeca5bc76a57e8903a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="security-classes"></a>Güvenlik sınıfları
 Bu ortak Win32 güvenlik sınıflar ve nesneler için sarmalayıcıları sınıflarıdır.  

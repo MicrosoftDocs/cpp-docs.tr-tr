@@ -27,14 +27,13 @@ helpviewer_keywords:
 ms.assetid: 6fc203fb-66f3-4ead-9784-f85833c26f1b
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb399a25bacd7fc288ad881625589e240009068a
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 3d60c9ae40cc0a432fd5367d721a771fd0e25e66
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cicos"></a>_CIcos
 

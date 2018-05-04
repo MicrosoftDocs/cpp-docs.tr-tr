@@ -1,29 +1,24 @@
 ---
-title: "Kayan nokta değerlerinin kesilmesi | Microsoft Docs"
-ms.custom: 
+title: Kayan nokta değerlerinin kesilmesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - floating-point numbers, truncation
 ms.assetid: 051a6e22-c636-4af8-9ac4-40160f4affca
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a63d3c409e671cf5f8531d161c4a713a3aa4d82
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e57a80a1550cc6147ce29894996183cce8f5ff99
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="truncation-of-floating-point-values"></a>Kayan Nokta Değerlerinin Kesilmesi
 **ANSI 3.2.1.4** kesilmesi veya bir kayan noktalı sayıdan daha dar bir kayan noktalı sayı dönüştürüldüğünde yuvarlama yönünü  

@@ -2,12 +2,9 @@
 title: ATL COM nesneleri temelleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - ATL COM objects
 - COM objects, ATL
 ms.assetid: 0f9c9d98-cc28-45da-89ac-dc94cee422fe
-caps.latest.revision: 25
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a5a43af31a88420c154d7a57d27d2b69787d11d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 955f8f6be96feeaf0f22f02c125dcdeaceb8e7f8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fundamentals-of-atl-com-objects"></a>ATL COM nesneleri temelleri
 Aşağıdaki çizim sınıfları ve ATL COM nesneyi tanımlamak için kullanılan arabirimleri arasındaki ilişkiyi gösterir.  
@@ -36,7 +31,7 @@ Aşağıdaki çizim sınıfları ve ATL COM nesneyi tanımlamak için kullanıla
 > [!NOTE]
 >  Bu diyagramda gösterilmektedir `CComObject` türetildiği `CYourClass` ancak `CComAggObject` ve `CComPolyObject` dahil `CYourClass` üye değişkeni olarak.  
   
- ATL COM nesneyi tanımlamak için üç yolu vardır. Standart seçeneği kullanmaktır `CComObject` sınıfından türetilmiş sınıf `CYourClass`. İkinci seçenek kullanılarak toplanan nesne oluşturmak, `CComAggObject` sınıfı. Üçüncü seçenek kullanmaktır `CComPolyObject` sınıfı. `CComPolyObject`bir karma davranır: olarak çalışabilmesi için bir `CComObject` sınıfı veya farklı bir `CComAggObject` nasıl ilk oluşturulduğuna bağlı olarak sınıfı. Nasıl kullanılacağı hakkında daha fazla bilgi için `CComPolyObject` sınıfı için bkz: [CComPolyObject sınıfı](../atl/reference/ccompolyobject-class.md).  
+ ATL COM nesneyi tanımlamak için üç yolu vardır. Standart seçeneği kullanmaktır `CComObject` sınıfından türetilmiş sınıf `CYourClass`. İkinci seçenek kullanılarak toplanan nesne oluşturmak, `CComAggObject` sınıfı. Üçüncü seçenek kullanmaktır `CComPolyObject` sınıfı. `CComPolyObject` bir karma davranır: olarak çalışabilmesi için bir `CComObject` sınıfı veya farklı bir `CComAggObject` nasıl ilk oluşturulduğuna bağlı olarak sınıfı. Nasıl kullanılacağı hakkında daha fazla bilgi için `CComPolyObject` sınıfı için bkz: [CComPolyObject sınıfı](../atl/reference/ccompolyobject-class.md).  
   
  Standart ATL COM kullandığınızda, iki nesne kullanın: Dış nesne ve bir iç nesne. Dış istemcilere iç nesneyi işlevselliğini dış nesnesinde tanımlanan sarmalayıcı işlevleri aracılığıyla erişin. Dış nesne türünde `CComObject`.  
   

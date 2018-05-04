@@ -2,28 +2,23 @@
 title: ATL Kaydedicisi ve ayrıştırma ağacı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - parse trees
 ms.assetid: 668ce2dd-a1c3-4ca0-8135-b25267cb6a85
-caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8ce648a541f6e0e2d4fac2e6ee19226e41f20ad
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bb5b132e5e55ab5336254acaf4d2d3ae25440697
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understanding-parse-trees"></a>Anlama ayrıştırma ağacı
 Her ayrıştırma ağacı aşağıdaki biçime sahip olduğu kayıt komut dosyanıza, bir veya daha fazla ayrıştırma ağacı tanımlayabilirsiniz:  
@@ -52,7 +47,7 @@ Her ayrıştırma ağacı aşağıdaki biçime sahip olduğu kayıt komut dosyan
 ```  
   
 > [!NOTE]
-> `HKEY_CLASSES_ROOT`ve `HKCR` eşdeğer; `HKEY_CURRENT_USER` ve `HKCU` eşdeğerlidir; ve vb.  
+> `HKEY_CLASSES_ROOT` ve `HKCR` eşdeğer; `HKEY_CURRENT_USER` ve `HKCU` eşdeğerlidir; ve vb.  
   
  Ayrıştırma ağacı birden çok anahtarlar ve alt anahtarlar için ekleyebilirsiniz \<kök anahtarı >. Ayrıştırıcının tüm alt anahtarlarını ayrıştırma tamamlanana kadar bunu yaparken, bir alt anahtarının tanıtıcı açık tutar. Bu yaklaşım, aşağıdaki örnekte görüldüğü gibi bir kerede tek bir anahtar işletim değerinden daha verimli olur:  
   

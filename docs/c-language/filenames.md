@@ -1,27 +1,22 @@
 ---
-title: "Dosya adları | Microsoft Docs"
-ms.custom: 
+title: Dosya adları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: f08d2b81-4bfc-49bc-986c-bfb2face8138
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d90ea90e7aa51f42a9650fce9a9cd19b0745d23
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b13c8ddcaed382483eb96172e93da99ad0133eac
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="filenames"></a>Dosya Adları
 **ANSI 4.9.3** geçerli dosya adları oluşturma kuralları  

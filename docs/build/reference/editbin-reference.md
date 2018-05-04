@@ -2,12 +2,9 @@
 title: EDITBIN başvurusu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - editbin
 dev_langs:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - EDITBIN program
 - COFF files, editing
 ms.assetid: efdda03b-3dfc-4d31-90e6-caf5b3977914
-caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0ff9c0c58498361764dcc1b6c454c9b629d9bed
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c20191fdb133fe09ed4f6a462cd777098acd5f05
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="editbin-reference"></a>EDITBIN Başvurusu
 Microsoft COFF ikili dosya Düzenleyicisi'ni (EDITBIN. EXE) ortak nesne dosyası biçimi (COFF) ikili dosyalarını değiştirir. Nesne dosyaları, yürütülebilir dosyaları ve dinamik bağlantı kitaplığı (DLL) değiştirmek için EDITBIN kullanabilirsiniz.  

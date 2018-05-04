@@ -2,31 +2,26 @@
 title: __vectorcall | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: 1c95ed59-86c6-4857-b4ed-10519193f851
-caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54c1473e2341c783ebf73883680d51f161d99163
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 29c202a888d4c741a9a9fb54a84109100038d32a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="vectorcall"></a>__vectorcall
 **Microsoft özel**  
   
- `__vectorcall` Çağırma bağımsız değişkenlerinin işlevlere Yazmaçları, mümkün olduğunda geçirilecek olduğunu belirtir. `__vectorcall`' den bağımsız değişkenler için daha fazla kayıtlarını kullanır [__fastcall](../cpp/fastcall.md) veya varsayılan [çağırma x64](../build/overview-of-x64-calling-conventions.md) kullanın. `__vectorcall` Çağırma yalnızca desteklenen yerel kodda Streaming SIMD Extensions 2 (SSE2) dahil x86 hem x64 işlemciler ve üstü. Kullanım `__vectorcall` Yazmaçları yüklenen geçmesi birkaç kayan nokta işlevleri veya SIMD vektör bağımsız hızlandırmak ve bağımsız değişkenler yararlanmak işlemleri gerçekleştirmek için. Aşağıdaki liste x86 hem x64 uygulamalar için ortak olan özellikleri gösterir `__vectorcall`. Farkları bu makalenin sonraki bölümlerinde açıklanmıştır.  
+ `__vectorcall` Çağırma bağımsız değişkenlerinin işlevlere Yazmaçları, mümkün olduğunda geçirilecek olduğunu belirtir. `__vectorcall` ' den bağımsız değişkenler için daha fazla kayıtlarını kullanır [__fastcall](../cpp/fastcall.md) veya varsayılan [çağırma x64](../build/overview-of-x64-calling-conventions.md) kullanın. `__vectorcall` Çağırma yalnızca desteklenen yerel kodda Streaming SIMD Extensions 2 (SSE2) dahil x86 hem x64 işlemciler ve üstü. Kullanım `__vectorcall` Yazmaçları yüklenen geçmesi birkaç kayan nokta işlevleri veya SIMD vektör bağımsız hızlandırmak ve bağımsız değişkenler yararlanmak işlemleri gerçekleştirmek için. Aşağıdaki liste x86 hem x64 uygulamalar için ortak olan özellikleri gösterir `__vectorcall`. Farkları bu makalenin sonraki bölümlerinde açıklanmıştır.  
   
 |Öğe|Uygulama|  
 |-------------|--------------------|  

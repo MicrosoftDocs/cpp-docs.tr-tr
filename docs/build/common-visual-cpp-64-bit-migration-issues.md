@@ -1,13 +1,10 @@
 ---
-title: "Genel Visual C++ 64-bit geçiş sorunları | Microsoft Docs"
-ms.custom: 
+title: Genel Visual C++ 64-bit geçiş sorunları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - 64-bit compiler [C++], porting 32-bit code
 - Win64 [C++]
 ms.assetid: d17fb838-7513-4e2d-8b27-a1666f17ad76
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9ea3690e04106f0836d236eefee4acd9dda3a82
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ab4b8a8e693a9e1a87ddb3a06fe609416808d3dc
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="common-visual-c-64-bit-migration-issues"></a>Genel Visual C++ 64 Bit Geçiş Sorunları
 
@@ -41,7 +36,7 @@ Bir 64-bit Windows işletim sisteminde çalışacak uygulamaları oluşturmak i�
   
 -   `size_t`, `time_t`, ve `ptrdiff_t` 64-bit Windows işletim sistemlerinde 64-bit değerlerdir.  
   
--   `time_t`bir 32 bit 32-bit Windows işletim sistemlerinde Visual C++ sürümlerinde Visual C++ 2005 önce değerdir. `time_t`bir 64-bit tamsayı varsayılan olarak sunulmuştur. Daha fazla bilgi için bkz: [zaman Yönetimi](../c-runtime-library/time-management.md).  
+-   `time_t` bir 32 bit 32-bit Windows işletim sistemlerinde Visual C++ sürümlerinde Visual C++ 2005 önce değerdir. `time_t` bir 64-bit tamsayı varsayılan olarak sunulmuştur. Daha fazla bilgi için bkz: [zaman Yönetimi](../c-runtime-library/time-management.md).  
   
      Kodunuzu nereye aldığını ve bilmeniz gereken bir `int` değer ve olarak işleyen bir `size_t` veya `time_t` değeri. Sayı 32 bit sayıdan büyük olacak şekilde büyümesine ve veri geri geçirildiğinde kesilir mümkündür `int` depolama.  
   

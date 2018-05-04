@@ -1,27 +1,22 @@
 ---
-title: "Tamsayı aralığı değerleri | Microsoft Docs"
-ms.custom: 
+title: Tamsayı aralığı değerleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: 0e9c6161-8f3f-4bfb-9fcc-a6c8dc97d702
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 568bc2884f7fb9642175a006c09a218d8cbe1668
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2695b5d2a006529042453b7048bec400388fb74b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="range-of-integer-values"></a>Tamsayı Değerleri Aralığı
 **ANSI 3.1.2.5** tamsayılar çeşitli türlerde değer kümesini ve temsili  

@@ -1,29 +1,24 @@
 ---
-title: "Varsayılan ATL Proje yapılandırmaları | Microsoft Docs"
-ms.custom: 
+title: Varsayılan ATL Proje yapılandırmaları | Microsoft Docs
+ms.custom: ''
 ms.date: 10/20/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - ATL projects, default configurations
 ms.assetid: 7e272722-41af-4330-b965-a6d74ec16880
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 770f78514a67d723305f9a70959fd69fede86aa5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 33f9f41a068605cbc73309f89c3ffb09def76750
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="default-atl-project-configurations"></a>Varsayılan ATL Proje yapılandırmaları
 ATL Proje Sihirbazı varsayılan olarak iki proje yapılandırmaları oluşturur:  

@@ -1,12 +1,9 @@
 ---
-title: "CComApartment sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComApartment sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComApartment
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - apartments in ATL EXE modules
 - CComApartment class
 ms.assetid: dbc177d7-7ee4-45f2-b563-d578a467ca93
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3fecd77e93c0c51a37d7363e6ec1472d157d6d1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 88e08d50cec36366df2423d31082b97d41b5061f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomapartment-class"></a>CComApartment sınıfı
 Bu sınıf, bir iş parçacığı havuza EXE modülünde bir daire yönetmek için destek sağlar.  
@@ -75,12 +70,12 @@ class CComApartment
 |[CComApartment::m_nLockCnt](#m_nlockcnt)|İş parçacığının geçerli kilit sayısı içerir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComApartment`tarafından kullanılan [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md) bir iş parçacığı havuza EXE modülü bir grupta yönetmek için. `CComApartment`bir iş parçacığında yöntemleri artırma ve azaltma kilit sayısı sağlar.  
+ `CComApartment` tarafından kullanılan [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md) bir iş parçacığı havuza EXE modülü bir grupta yönetmek için. `CComApartment` bir iş parçacığında yöntemleri artırma ve azaltma kilit sayısı sağlar.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
-##  <a name="apartment"></a>CComApartment::Apartment  
+##  <a name="apartment"></a>  CComApartment::Apartment  
  İş parçacığının başlangıç adresi işaretler.  
   
 ```
@@ -93,7 +88,7 @@ DWORD Apartment();
 ### <a name="remarks"></a>Açıklamalar  
  Sırasında otomatik olarak ayarlamak [CComAutoThreadModule::Init](../../atl/reference/ccomautothreadmodule-class.md#init).  
   
-##  <a name="ccomapartment"></a>CComApartment::CComApartment  
+##  <a name="ccomapartment"></a>  CComApartment::CComApartment  
  Oluşturucu.  
   
 ```
@@ -103,7 +98,7 @@ CComApartment();
 ### <a name="remarks"></a>Açıklamalar  
  Başlatır `CComApartment` veri üyeleri [m_nLockCnt](#m_nlockcnt) ve [m_hThread](#m_hthread).  
   
-##  <a name="getlockcount"></a>CComApartment::GetLockCount  
+##  <a name="getlockcount"></a>  CComApartment::GetLockCount  
  İş parçacığının geçerli kilit sayımını döndürür.  
   
 ```
@@ -113,7 +108,7 @@ LONG GetLockCount();
 ### <a name="return-value"></a>Dönüş Değeri  
  İş parçacığı üzerinde kilit sayısı.  
   
-##  <a name="lock"></a>CComApartment::Lock  
+##  <a name="lock"></a>  CComApartment::Lock  
  İş parçacığının kilit sayısını artırır.  
   
 ```
@@ -128,28 +123,28 @@ LONG Lock();
   
  İş parçacığı üzerinde kilit sayısı İstatistiksel amaçlar için kullanılır.  
   
-##  <a name="m_dwthreadid"></a>CComApartment::m_dwThreadID  
+##  <a name="m_dwthreadid"></a>  CComApartment::m_dwThreadID  
  İş parçacığının tanımlayıcısı içeriyor.  
   
 ```
 DWORD m_dwThreadID;
 ```  
   
-##  <a name="m_hthread"></a>CComApartment::m_hThread  
+##  <a name="m_hthread"></a>  CComApartment::m_hThread  
  İş parçacığının tanıtıcı içerir.  
   
 ```
 HANDLE m_hThread;
 ```  
   
-##  <a name="m_nlockcnt"></a>CComApartment::m_nLockCnt  
+##  <a name="m_nlockcnt"></a>  CComApartment::m_nLockCnt  
  İş parçacığının geçerli kilit sayısı içerir.  
   
 ```
 LONG m_nLockCnt;
 ```  
   
-##  <a name="unlock"></a>CComApartment::Unlock  
+##  <a name="unlock"></a>  CComApartment::Unlock  
  Azaltır iş parçacığının kilit sayısı.  
   
 ```

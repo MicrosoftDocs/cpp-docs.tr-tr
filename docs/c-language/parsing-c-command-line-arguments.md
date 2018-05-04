@@ -1,13 +1,10 @@
 ---
-title: "C komut satırı bağımsız değişkenlerini ayrıştırma | Microsoft Docs"
-ms.custom: 
+title: C komut satırı bağımsız değişkenlerini ayrıştırma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - parsing, command-line arguments
 - startup code, parsing command-line arguments
 ms.assetid: ffce8037-2811-45c4-8db4-1ed787859c80
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e3db47ca48e52babc03923dfba7b1dcb8173cc1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 53b61bae046e73c4e49bbcaeb095b7bf230e95dd
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="parsing-c-command-line-arguments"></a>C Komut Satırı Bağımsız Değişkenlerini Ayrıştırma
 **Microsoft özel**  
@@ -42,9 +37,9 @@ ms.lasthandoff: 12/21/2017
   
 -   Bunlar hemen çift tırnak işareti koyun sürece ters eğik çizgi tam anlamıyla, yorumlanır.  
   
--   Ters eğik çizgi çift sayıda çift tırnak işareti sonra bir ters eğik çizgi izlediyseniz (**\\**) yerleştirilir `argv` dizi her çiftinin ters eğik çizgi ( **\\ \\** ) ve çift tırnak işareti (**"**) dizesi ayırıcı olarak yorumlanır.  
+-   Ters eğik çizgi çift sayıda çift tırnak işareti sonra bir ters eğik çizgi izlediyseniz (**\\**) yerleştirilir `argv` dizi her çiftinin ters eğik çizgi (**\\ \\**) ve çift tırnak işareti (**"**) dizesi ayırıcı olarak yorumlanır.  
   
--   Ters eğik çizgi tek sayıda çift tırnak işareti sonra bir ters eğik çizgi izlediyseniz (**\\**) yerleştirilir `argv` dizi her çiftinin ters eğik çizgi ( **\\ \\** ) ve çift tırnak işareti değişmez değer çift tırnak işareti neden kalan eğik kaçış dizisi yorumlanır (**"**) yerleştirileceği `argv`.  
+-   Ters eğik çizgi tek sayıda çift tırnak işareti sonra bir ters eğik çizgi izlediyseniz (**\\**) yerleştirilir `argv` dizi her çiftinin ters eğik çizgi (**\\ \\**) ve çift tırnak işareti değişmez değer çift tırnak işareti neden kalan eğik kaçış dizisi yorumlanır (**"**) yerleştirileceği `argv`.  
   
  Bu liste geçirilen yorumlanan sonuç göstererek yukarıda kuralları gösterir `argv` komut satırı bağımsız değişkenleri bazı örnekleri için. Üçüncü çıkış saniye içinde listelenen ve dördüncü sütun ise bağımsız değişken. Listenin izleyen C programı.  
   

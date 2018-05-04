@@ -2,11 +2,8 @@
 title: IUnknown uygulaması sınıfları (ATL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.atl.Iunknown
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - IUnknown implementation classes
 ms.assetid: 47b69bb5-69d8-4a9c-84a8-329bdde2bb3f
-caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53d5363f6b11904e31ea0e9c6f452b2c8fa7e000
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 3d67b2a7b9769acd7d6e596e4fcdf1aec30bbf74
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="iunknown-implementation-classes"></a>IUnknown uygulaması sınıfları
 Aşağıdaki sınıflar uygulama **IUnknown** ve ilgili yöntemler:  
@@ -44,7 +39,7 @@ Aşağıdaki sınıflar uygulama **IUnknown** ve ilgili yöntemler:
   
 -   [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) uygulayan **IUnknown** etiketleri arabirimi için.  
   
--   [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) Implements **IUnknown** for a "cached" tear-off interface.  
+-   [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) uygulayan **IUnknown** "önbelleğe alınan" etiketleri arabirimi için.  
   
 -   [CComContainedObject](../atl/reference/ccomcontainedobject-class.md) uygulayan **IUnknown** iç nesne bir toplama veya etiketleri arabirimi.  
   

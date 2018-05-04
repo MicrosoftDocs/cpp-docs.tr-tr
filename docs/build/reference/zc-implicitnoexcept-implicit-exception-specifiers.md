@@ -1,10 +1,10 @@
 ---
-title: "/ ZC: implicitnoexcept (örtük özel durum tanımlayıcıları) | Microsoft Docs"
-ms.custom: 
+title: '/ ZC: implicitnoexcept (örtük özel durum tanımlayıcıları) | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/06/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /Zc:implicitNoexcept
 dev_langs:
@@ -16,14 +16,13 @@ helpviewer_keywords:
 ms.assetid: 71807652-6f9d-436b-899e-f52daa6f500b
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77308d262022f0cddbbb7008fe8277f7768afd68
-ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
+ms.openlocfilehash: 7e420017056d6857a2809ce6eb85fe99b6f3866f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="zcimplicitnoexcept-implicit-exception-specifiers"></a>/ZC:implicitNoexcept (Örtük Özel Durum Tanımlayıcıları)
 

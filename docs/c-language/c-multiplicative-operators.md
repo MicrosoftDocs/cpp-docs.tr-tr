@@ -1,13 +1,10 @@
 ---
-title: "C çarpma işleçleri | Microsoft Docs"
-ms.custom: 
+title: C çarpma işleçleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,31 +17,29 @@ helpviewer_keywords:
 - slash (/) operator
 - multiplication operator [C++], multiplicative operators
 ms.assetid: 495471c9-319b-4eb4-bd97-039a025fd3a9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8fbcbb5579c63ef0cab375ec19e2afee47e97ee
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 1810cc9dd7a991e302e0e9e2db69f65aebebc613
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-multiplicative-operators"></a>C Çarpma İşleçleri
 Çarpma işleçleri çarpma gerçekleştirin (**\***), bölme (**/**) ve geri kalan (`%`) işlemleri.  
   
  **Sözdizimi**  
   
- *multiplicative-expression*:  
- *cast-expression*  
+ *ifade çarpma*:  
+ *Cast ifadesi*  
   
- *multiplicative-expression*  **\***  *cast-expression*  
+ *ifade çarpma***\****cast ifadesi*   
   
- *multiplicative-expression*  **/**  *cast-expression*  
+ *ifade çarpma***/***cast ifadesi*   
   
- *multiplicative-expression*  **%**  *cast-expression*  
+ *ifade çarpma***%***cast ifadesi*   
   
  Kalan işlecinin işlenenleri (`%`) tam sayı olması gerekir. Çarpma (**\***) ve bölme (**/**) işleçleri integral veya kayan türü işlenenler alabilir; işlenen türleri farklı olabilir.  
   
@@ -67,7 +62,7 @@ ms.lasthandoff: 03/16/2018
 ||-Her iki işlenen pozitif veya imzasız olursa, pozitif bir sonucudur.|  
 ||-Her iki işlenen negatif ve sonucu filtresinin ise, sonuç tanımlanan uygulamasıdır. (Aşağıdaki Microsoft Specific bölümüne bakın.)|  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Her iki işlenen negatif olduğu bölme ile kesme yönünü doğru 0'dır.  
   
@@ -103,7 +98,7 @@ n = i % j;
   
  Bu ifade atar `n` tamsayı geri kalanı, 1, 3 ile 10 ayrıldığında.  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Kalan oturum bölünen oturum ile aynıdır. Örneğin:  
   

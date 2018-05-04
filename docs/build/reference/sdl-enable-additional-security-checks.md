@@ -1,29 +1,24 @@
 ---
-title: "-sdl (ek güvenlik denetimlerini etkinleştir) | Microsoft Docs"
-ms.custom: 
+title: -sdl (ek güvenlik denetimlerini etkinleştir) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.SDLCheck
 dev_langs:
 - C++
 ms.assetid: 3dcf86a0-3169-4240-9f29-e04a9f535826
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cbcb74272fa7cae3dd0c641bd6371c8f0f9c204
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8aa984b488f74043b8c90876047516ebca23d4d3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sdl-enable-additional-security-checks"></a>/sdl (Ek Güvenlik Denetimlerini Etkinleştir)
 Önerilen güvenlik geliştirme yaşam döngüsü (SDL) denetimler de ekler. Bu denetimler, ek güvenlik ilgili uyarıları hatalar ve ek güvenli kod oluşturma özellikleri olarak içerir.  

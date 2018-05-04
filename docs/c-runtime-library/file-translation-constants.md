@@ -1,13 +1,10 @@
 ---
-title: "Dosya çeviri sabitleri | Microsoft Docs"
-ms.custom: 
+title: Dosya çeviri sabitleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.constants.file
 dev_langs:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - constants [C++], file translation mode
 - file translation [C++]
 ms.assetid: 49b13bf3-442e-4d19-878b-bd1029fa666a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df127970c1f05bd4fff5b99a4236be1f45e0203d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 881402933978f5fe714a9b1950a9eade01494c79
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="file-translation-constants"></a>Dosya Çeviri Sabitleri
 ## <a name="syntax"></a>Sözdizimi  
@@ -45,7 +40,7 @@ ms.lasthandoff: 12/21/2017
   
  Çeviri modları aşağıdaki gibidir:  
   
- **t**  
+ **T**  
  Metin (çevrilmiş) modunda açılır. Bu modda, satır başı-return/satır besleme (CR-LF) birleşimleri giriş üzerinde tek satır olan (LF) beslemeleri uygulamasına dönüştürülür ve LF karakterler CR LF birleşimleri çıktıyı uygulamasına dönüştürülür. Ayrıca, CTRL + Z giriş üzerinde bir dosya sonu karakteri olarak yorumlanır. Okuma veya okuma/yazma için açılmış dosyalarında `fopen` CTRL + Z dosya sonunda olup olmadığını denetler ve, mümkünse kaldırır. Bu kullanılarak yapılır, çünkü `fseek` ve `ftell` CTRL + Z ile biten bir dosya içinde taşımak için işlevleri neden olabilir `fseek` dosyanın sonuna yakın yanlış bir şekilde davranır.  
   
 > [!NOTE]

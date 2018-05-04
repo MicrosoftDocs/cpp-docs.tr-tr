@@ -1,27 +1,22 @@
 ---
-title: "Nesnelerin kaynakları (RAII) sahibi | Microsoft Docs"
-ms.custom: 
+title: Nesnelerin kaynakları (RAII) sahibi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: f86b484e-5a27-4c3b-a92a-dfaa5dd6d93a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05e23cc81666086bc34352a351ead8006b6c859f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dfd3f1df54e5b5881ed15efeb98a6e6070f400a1
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="objects-own-resources-raii"></a>Nesnelerin Kaynakları (RAII)
 Kendi kaynaklarını nesneler emin olun. Bu ilke olarak da bilinen "kaynak edinme başlatma" değil veya "RAII."  

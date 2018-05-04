@@ -1,13 +1,10 @@
 ---
-title: "-nologo (Başlangıç başlığını gösterme) (C/C++) | Microsoft Docs"
-ms.custom: 
+title: -nologo (Başlangıç başlığını gösterme) (C/C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.SuppressStartupBanner
 - VC.Project.VCCLCompilerTool.SuppressStartupBanner
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - nologo compiler option [C++]
 - banners, suppressing startup
 ms.assetid: 75930d8b-b11c-4db8-99e5-b52f97da0693
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a36ba1cc206e23d51ecc6d790b2b32dca22c5963
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 51209280fe4ce4b32aa108adb02815c1b9cf57fe
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="nologo-suppress-startup-banner-cc"></a>/nologo (Başlangıç Başlığını Gösterme) (C/C++)
 Telif hakkı başlığını derleyici başladığında görünümünü ve bilgilendirici iletileri görüntülemeyi derleme sırasında gizler.  

@@ -1,12 +1,9 @@
 ---
-title: "CComSingleThreadModel sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComSingleThreadModel sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComSingleThreadModel
@@ -23,15 +20,13 @@ helpviewer_keywords:
 - CComSingleThreadModel class
 - single-threaded applications, ATL
 ms.assetid: e5dc30c7-405a-4ba4-8ae9-51937243fce8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 65af9492f3721fd642def72a3049552cdff75ce6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 175cc1b867356949ca861f7015dedb6d64c4282f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomsinglethreadmodel-class"></a>CComSingleThreadModel sınıfı
 Bu sınıf bir değişkenin değerini artırma ve azaltma için yöntemleri sağlar.  
@@ -60,7 +55,7 @@ class CComSingleThreadModel
 |[CComSingleThreadModel::Increment](#increment)|Belirtilen değişken değerini artırır. Bu uygulama iş parçacığı açısından güvenli değil.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComSingleThreadModel`yöntemleri artırma ve azaltma için bir değişkenin değerini sağlar. Farklı [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) ve [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md), bu yöntemleri iş parçacığı açısından güvenli değildir.  
+ `CComSingleThreadModel` yöntemleri artırma ve azaltma için bir değişkenin değerini sağlar. Farklı [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) ve [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md), bu yöntemleri iş parçacığı açısından güvenli değildir.  
 
  Genellikle, kullandığınız `CComSingleThreadModel` iki biri aracılığıyla `typedef` adları, ya da [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) veya [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel). Her tarafından başvurulan sınıfı `typedef` iş parçacığı modeline kullanıldığında, aşağıdaki tabloda gösterildiği gibi bağlıdır:  
 
@@ -70,14 +65,14 @@ class CComSingleThreadModel
 |`CComObjectThreadModel`|S|S|M|  
 |`CComGlobalsThreadModel`|S|M|M|  
   
- S = `CComSingleThreadModel`; M =`CComMultiThreadModel`  
+ S = `CComSingleThreadModel`; M = `CComMultiThreadModel`  
   
- `CComSingleThreadModel`kendisini tanımlayan üç `typedef` adları. `ThreadModelNoCS`Başvurular `CComSingleThreadModel`. `AutoCriticalSection`ve `CriticalSection` başvuru sınıfı [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md), önemli bir bölümü sahipliğini serbest bırakma ve alma ile ilişkili boş yöntemler sağlar.  
+ `CComSingleThreadModel` kendisini tanımlayan üç `typedef` adları. `ThreadModelNoCS` Başvurular `CComSingleThreadModel`. `AutoCriticalSection` ve `CriticalSection` başvuru sınıfı [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md), önemli bir bölümü sahipliğini serbest bırakma ve alma ile ilişkili boş yöntemler sağlar.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
-##  <a name="autocriticalsection"></a>CComSingleThreadModel::AutoCriticalSection  
+##  <a name="autocriticalsection"></a>  CComSingleThreadModel::AutoCriticalSection  
  Kullanırken `CComSingleThreadModel`, `typedef` adı `AutoCriticalSection` başvuruyor sınıfı [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md).  
   
 ```
@@ -100,7 +95,7 @@ typedef CComFakeCriticalSection AutoCriticalSection;
 ### <a name="example"></a>Örnek  
  Bkz: [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection).  
   
-##  <a name="criticalsection"></a>CComSingleThreadModel::CriticalSection  
+##  <a name="criticalsection"></a>  CComSingleThreadModel::CriticalSection  
  Kullanırken `CComSingleThreadModel`, `typedef` adı `CriticalSection` başvuruyor sınıfı [CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md).  
   
 ```
@@ -123,7 +118,7 @@ typedef CComFakeCriticalSection CriticalSection;
 ### <a name="example"></a>Örnek  
  Bkz: [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection).  
   
-##  <a name="decrement"></a>CComSingleThreadModel::Decrement  
+##  <a name="decrement"></a>  CComSingleThreadModel::Decrement  
  Bu statik işlev azaltır değişkenin değeri olarak gösterdiği `p`.  
   
 ```
@@ -137,7 +132,7 @@ static ULONG WINAPI Decrement(LPLONG p) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Azaltma sonuç.  
   
-##  <a name="increment"></a>CComSingleThreadModel::Increment  
+##  <a name="increment"></a>  CComSingleThreadModel::Increment  
  Bu statik işlev azaltır değişkenin değeri olarak gösterdiği `p`.  
   
 ```
@@ -151,7 +146,7 @@ static ULONG WINAPI Increment(LPLONG p) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Artırma sonucu.  
   
-##  <a name="threadmodelnocs"></a>CComSingleThreadModel::ThreadModelNoCS  
+##  <a name="threadmodelnocs"></a>  CComSingleThreadModel::ThreadModelNoCS  
  Kullanırken `CComSingleThreadModel`, `typedef` adı `ThreadModelNoCS` yalnızca başvuran `CComSingleThreadModel`.  
   
 ```

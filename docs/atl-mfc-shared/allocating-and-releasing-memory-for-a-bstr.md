@@ -1,12 +1,9 @@
 ---
-title: "Ayırma ve belleğin için BSTR bırakılması | Microsoft Docs"
-ms.custom: 
+title: Ayırma ve belleğin için BSTR bırakılması | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - bstr
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - memory deallocation, BSTR memory
 - strings [C++], releasing
 ms.assetid: 98041e29-3442-4a02-b425-7a4a13e9cc84
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 282ceac05587452fad750f05b642c0ffd5b929a7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 46ab5ae9d6f0bfa98231cbc41aa4ae0d10b89537
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="allocating-and-releasing-memory-for-a-bstr"></a>Ayırma ve için BSTR belleği serbest bırakma
 Oluşturduğunuzda `BSTR`s ve bunları COM nesneleri arasında geçişi, kullandıkları bellek sızıntıları önlemek için bellek değerlendirmesini ilgilenebilmek gerekir. Zaman bir `BSTR` bir arabirim içinde kalır, siz gerekir serbest kendi bellek ile bittiğinde. Ancak, bir `BSTR` geçişleri arabirim dışında alıcı nesnesini alır kendi bellek yönetimi sorumluluğunu.  

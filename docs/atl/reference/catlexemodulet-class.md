@@ -2,11 +2,8 @@
 title: CAtlExeModuleT sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CAtlExeModuleT
@@ -31,17 +28,15 @@ dev_langs:
 helpviewer_keywords:
 - CAtlExeModuleT class
 ms.assetid: 82245f3d-91d4-44fa-aa86-7cc7fbd758d9
-caps.latest.revision: 21
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c45b1f95aba4f11e6995bf5c4c1cfff00627e4b6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d22510da8c1377411b289b940e1b8e196533c93a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="catlexemodulet-class"></a>CAtlExeModuleT sınıfı
 Bu sınıf, bir uygulama için modülü temsil eder.  
@@ -91,7 +86,7 @@ class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 |[CAtlExeModuleT::m_dwTimeOut](#m_dwtimeout)|Modül, eklentiyi gecikme için kullanılan bir zaman aşımı değeri.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CAtlExeModuleT`bir uygulama (EXE) için modülü temsil eder ve bir EXE oluşturma, komut satırı işleme, sınıf nesnelerine kaydetme, ileti döngüsü çalıştıran ve temizleme Çıkışta destekleyen kodunu içerir.  
+ `CAtlExeModuleT` bir uygulama (EXE) için modülü temsil eder ve bir EXE oluşturma, komut satırı işleme, sınıf nesnelerine kaydetme, ileti döngüsü çalıştıran ve temizleme Çıkışta destekleyen kodunu içerir.  
   
  Bu sınıf, COM nesneleri EXE Server'daki sürekli olarak oluşturulan ve yok olduğunda performansını artırmak için tasarlanmıştır. Son COM nesnesi yayımlandıktan sonra EXE tarafından belirtilen bir süre bekler [CAtlExeModuleT::m_dwTimeOut](#m_dwtimeout) veri üyesi. Bu süre zarfında etkinlik yoksa (diğer bir deyişle, hiçbir COM nesneleri oluşturma), kapatma işlemi başlatıldı.  
   
@@ -112,7 +107,7 @@ class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
-##  <a name="catlexemodulet"></a>CAtlExeModuleT::CAtlExeModuleT  
+##  <a name="catlexemodulet"></a>  CAtlExeModuleT::CAtlExeModuleT  
  Oluşturucu.  
   
 ```
@@ -122,7 +117,7 @@ CAtlExeModuleT() throw();
 ### <a name="remarks"></a>Açıklamalar  
  EXE modülü başlatılamadı, WinMain hemen başka bir işleme olmadan döndürür.  
   
-##  <a name="dtor"></a>CAtlExeModuleT:: ~ CAtlExeModuleT  
+##  <a name="dtor"></a>  CAtlExeModuleT:: ~ CAtlExeModuleT  
  Yok Edicisi.  
   
 ```
@@ -132,7 +127,7 @@ CAtlExeModuleT() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Ayrılan tüm kaynakları serbest bırakır.  
   
-##  <a name="initializecom"></a>CAtlExeModuleT::InitializeCom  
+##  <a name="initializecom"></a>  CAtlExeModuleT::InitializeCom  
  COM başlatır  
   
 ```
@@ -147,7 +142,7 @@ static HRESULT InitializeCom() throw();
   
  Normalde bu yöntemi geçersiz kılma gerektirir geçersiz kılma [CAtlExeModuleT::UninitializeCom](#uninitializecom).  
   
-##  <a name="m_bdelayshutdown"></a>CAtlExeModuleT::m_bDelayShutdown  
+##  <a name="m_bdelayshutdown"></a>  CAtlExeModuleT::m_bDelayShutdown  
  Modülü kapatılıyor bir gecikme olmalıdır belirten bir bayrak.  
   
 ```
@@ -157,7 +152,7 @@ bool m_bDelayShutdown;
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [CAtlExeModuleT genel bakış](../../atl/reference/catlexemodulet-class.md) Ayrıntılar için.  
   
-##  <a name="m_dwpause"></a>CAtlExeModuleT::m_dwPause  
+##  <a name="m_dwpause"></a>  CAtlExeModuleT::m_dwPause  
  Tüm nesneleri önce kapatılması gitti sağlamak için kullanılan bir duraklama değer.  
   
 ```
@@ -167,7 +162,7 @@ DWORD m_dwPause;
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıldıktan sonra bu değeri değiştirmek [CAtlExeModuleT::InitializeCom](#initializecom) Sunucu kapatılıyor için Duraklat değeri olarak kullanılan milisaniye sayısını ayarlamak için. Varsayılan değer 1000 milisaniyedir.  
   
-##  <a name="m_dwtimeout"></a>CAtlExeModuleT::m_dwTimeOut  
+##  <a name="m_dwtimeout"></a>  CAtlExeModuleT::m_dwTimeOut  
  Modül, eklentiyi gecikme için kullanılan bir zaman aşımı değeri.  
   
 ```
@@ -177,7 +172,7 @@ DWORD m_dwTimeOut;
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıldıktan sonra bu değeri değiştirmek [CAtlExeModuleT::InitializeCom](#initializecom) Sunucu kapatılıyor için zaman aşımı değeri olarak kullanılan milisaniye sayısını tanımlamak için. Varsayılan değer 5000 milisaniyedir. Bkz: [CAtlExeModuleT genel bakış](../../atl/reference/catlexemodulet-class.md) daha fazla ayrıntı için.  
   
-##  <a name="parsecommandline"></a>CAtlExeModuleT::ParseCommandLine  
+##  <a name="parsecommandline"></a>  CAtlExeModuleT::ParseCommandLine  
  Komut satırını ayrıştırır ve gerekiyorsa, kayıt işlemini gerçekleştirir.  
   
 ```
@@ -197,7 +192,7 @@ bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem çağrılır [CAtlExeModuleT::WinMain](#winmain) ve komut satırı anahtarları işlemek için geçersiz kılınabilir. Varsayılan uygulama kontrol **/regserver** ve **/Unregserver** komut satırı bağımsız değişkenleri ve kayıt veya silme gerçekleştirir.  
   
-##  <a name="postmessageloop"></a>CAtlExeModuleT::PostMessageLoop  
+##  <a name="postmessageloop"></a>  CAtlExeModuleT::PostMessageLoop  
  Bu yöntem, ileti döngüsü hemen çıktıktan sonra çağrılır.  
   
 ```
@@ -210,7 +205,7 @@ HRESULT PostMessageLoop() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Özel uygulama temizleme gerçekleştirmek için bu yöntemi geçersiz kılın. Varsayılan Uygulama çağrıları [CAtlExeModuleT::RevokeClassObjects](#revokeclassobjects).  
   
-##  <a name="premessageloop"></a>CAtlExeModuleT::PreMessageLoop  
+##  <a name="premessageloop"></a>  CAtlExeModuleT::PreMessageLoop  
  Bu yöntem, ileti döngüsü hemen girmeden önce çağrılır.  
   
 ```
@@ -227,7 +222,7 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Uygulama için özel başlatma kodu eklemek için bu yöntemi geçersiz kılın. Varsayılan uygulama sınıf nesneleri kaydeder.  
   
-##  <a name="registerclassobjects"></a>CAtlExeModuleT::RegisterClassObjects  
+##  <a name="registerclassobjects"></a>  CAtlExeModuleT::RegisterClassObjects  
  Diğer uygulamalar için bağlanabilmesi için sınıf nesnesi ile OLE kaydeder.  
   
 ```
@@ -244,7 +239,7 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı, kaydetmek için hiçbir sınıfları olsaydı S_FALSE veya hatasında bir hata HRESULT S_OK döndürür.  
   
-##  <a name="revokeclassobjects"></a>CAtlExeModuleT::RevokeClassObjects  
+##  <a name="revokeclassobjects"></a>  CAtlExeModuleT::RevokeClassObjects  
  Sınıf nesnesi kaldırır.  
   
 ```
@@ -254,7 +249,7 @@ HRESULT RevokeClassObjects() throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı, kaydetmek için hiçbir sınıfları olsaydı S_FALSE veya hatasında bir hata HRESULT S_OK döndürür.  
   
-##  <a name="run"></a>CAtlExeModuleT::Run  
+##  <a name="run"></a>  CAtlExeModuleT::Run  
  Bu yöntem başlatmak, ileti döngüsü çalıştırmak EXE modülünde kodu yürütür ve temizleme.  
   
 ```
@@ -271,7 +266,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem geçersiz kılınabilir. Bununla birlikte, pratikte, geçersiz kılmak için iyidir [CAtlExeModuleT::PreMessageLoop](#premessageloop), [CAtlExeModuleT::RunMessageLoop](#runmessageloop), veya [CAtlExeModuleT::PostMessageLoop](#postmessageloop) Bunun yerine.  
   
-##  <a name="runmessageloop"></a>CAtlExeModuleT::RunMessageLoop  
+##  <a name="runmessageloop"></a>  CAtlExeModuleT::RunMessageLoop  
  Bu yöntem, ileti döngü yürütür.  
   
 ```
@@ -281,7 +276,7 @@ void RunMessageLoop() throw();
 ### <a name="remarks"></a>Açıklamalar  
  İleti döngüsü davranışını değiştirmek için bu yöntem geçersiz kılınabilir.  
   
-##  <a name="uninitializecom"></a>CAtlExeModuleT::UninitializeCom  
+##  <a name="uninitializecom"></a>  CAtlExeModuleT::UninitializeCom  
  COM uninitializes  
   
 ```
@@ -291,7 +286,7 @@ static void UninitializeCom() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak yalnızca bu yöntemi çağırır [CoUninitialize](http://msdn.microsoft.com/library/windows/desktop/ms688715) ve yıkıcı olarak adlandırılır. Geçersiz bu yöntemi geçersiz kılın [CAtlExeModuleT::InitializeCom](#initializecom).  
   
-##  <a name="unlock"></a>CAtlExeModuleT::Unlock  
+##  <a name="unlock"></a>  CAtlExeModuleT::Unlock  
  Azaltır modülün kilit sayısı.  
   
 ```
@@ -301,7 +296,7 @@ LONG Unlock() throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tanılama için yararlı veya test olabilen bir değer döndürür.  
   
-##  <a name="winmain"></a>CAtlExeModuleT::WinMain  
+##  <a name="winmain"></a>  CAtlExeModuleT::WinMain  
  Bu yöntem bir EXE çalıştırmak için gerekli kod uygular.  
   
 ```

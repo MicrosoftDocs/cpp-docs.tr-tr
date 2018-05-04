@@ -1,12 +1,9 @@
 ---
-title: "reinterpret_cast işleci | Microsoft Docs"
-ms.custom: 
+title: reinterpret_cast işleci | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - reinterpret_cast_cpp
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - reinterpret_cast keyword [C++]
 ms.assetid: eb3283c7-7f88-467e-affd-407d37b46d6c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0957a696d7675a932aa86531d39f2e4895ba1ff9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fd64960469c9c4ca069611f6ebeefeaac8b29ba0
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reinterpretcast-operator"></a>reinterpret_cast İşleci
 Herhangi bir işaretçi türü dönüştürülecek hiçbir işaretçi sağlar. Ayrıca herhangi bir işaretçi türü ve tersi yönde dönüştürülecek herhangi bir tam sayı türü sağlar.  

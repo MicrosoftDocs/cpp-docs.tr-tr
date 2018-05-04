@@ -1,12 +1,9 @@
 ---
-title: "IPropertyNotifySinkCP sınıfı | Microsoft Docs"
-ms.custom: 
+title: IPropertyNotifySinkCP sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - IPropertyNotifySinkCP
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - sinks, notifying of changes
 - IPropertyNotifySinkCP class
 ms.assetid: 1b41445e-bc88-4fa6-bb62-d68aacec2bd5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa15ef6706010154151c696eca320d464cdfee6a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d9612cf65479e474b9a6e89a8f5a57ca078c9ed0
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ipropertynotifysinkcp-class"></a>IPropertyNotifySinkCP sınıfı
 Bu sınıf sunan [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) arabirimi bağlanılabilirlik nesne üzerinde giden bir arabirim olarak.  
@@ -52,7 +47,7 @@ class IPropertyNotifySinkCP
  Bir bağlantı noktası ve onun havuzlarını arasındaki bağlantıları yöneten bir sınıf. Varsayılan değer [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), sınırsız izin verir. Aynı zamanda [CComUnkArray](../../atl/reference/ccomunkarray-class.md), sabit bir bağlantı sayısını belirtir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `IPropertyNotifySinkCP`temel sınıfı olan tüm yöntemleri devralır [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md).  
+ `IPropertyNotifySinkCP` temel sınıfı olan tüm yöntemleri devralır [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md).  
   
  [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) arabirimi özelliği değişiklikler hakkında bildirim almak için bir havuz nesnesi sağlar. Sınıf `IPropertyNotifySinkCP` bu arabirim bağlanılabilirlik nesne üzerinde giden bir arabirim olarak kullanıma sunar. İstemci uygulamalıdır `IPropertyNotifySink` havuz yöntemleri.  
   

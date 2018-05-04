@@ -1,12 +1,9 @@
 ---
-title: "COleDateTimeSpan sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleDateTimeSpan sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleDateTimeSpan
@@ -35,17 +32,15 @@ helpviewer_keywords:
 - Date data type, MFC encapsulation of
 - COleDateTimeSpan class
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 173ae35f49379bcccf552a105b5615378e7a42cd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1941984093879ba22921d19580618ce8caa04b38
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan sınıfı
 Göreli zaman, bir zaman aralığı temsil eder.  
@@ -99,18 +94,18 @@ class COleDateTimeSpan
 |[COleDateTimeSpan::m_status](#m_status)|Bu durumu içeren `COleDateTimeSpan` nesnesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `COleDateTimeSpan`bir taban sınıfı yok.  
+ `COleDateTimeSpan` bir taban sınıfı yok.  
   
  A `COleDateTimeSpan` zaman gün içinde tutar.  
   
- `COleDateTimeSpan`kendi yardımcı sınıf ile kullanılan [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md). `COleDateTime`yalıtan **tarih** OLE Otomasyon veri türü. `COleDateTime`mutlak saat değerlerini temsil eder. Tüm `COleDateTime` hesaplamaları içeren `COleDateTimeSpan` değerleri. Bu sınıflar arasındaki ilişki arasında bir paraleldir [CTime](../../atl-mfc-shared/reference/ctime-class.md) ve [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md).  
+ `COleDateTimeSpan` kendi yardımcı sınıf ile kullanılan [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md). `COleDateTime` yalıtan **tarih** OLE Otomasyon veri türü. `COleDateTime` mutlak saat değerlerini temsil eder. Tüm `COleDateTime` hesaplamaları içeren `COleDateTimeSpan` değerleri. Bu sınıflar arasındaki ilişki arasında bir paraleldir [CTime](../../atl-mfc-shared/reference/ctime-class.md) ve [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md).  
   
  Daha fazla bilgi için `COleDateTime` ve `COleDateTimeSpan` sınıfları, başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** ATLComTime.h  
   
-##  <a name="coledatetimespan_relational_operators"></a>COleDateTimeSpan ilişkisel işleçler  
+##  <a name="coledatetimespan_relational_operators"></a>  COleDateTimeSpan ilişkisel işleçler  
  Karşılaştırma işleçleri.  
   
 ```
@@ -139,7 +134,7 @@ bool operator>=(const COleDateTimeSpan& dateSpan) const throw();
   
  [!code-cpp[NVC_ATLMFC_Utilities#26](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_2.cpp)]  
   
-##  <a name="coledatetimespan"></a>COleDateTimeSpan::COleDateTimeSpan  
+##  <a name="coledatetimespan"></a>  COleDateTimeSpan::COleDateTimeSpan  
  Oluşturan bir `COleDateTimeSpan` nesnesi.  
   
 ```
@@ -171,7 +166,7 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#14](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_3.cpp)]  
   
-##  <a name="format"></a>COleDateTimeSpan::Format  
+##  <a name="format"></a>  COleDateTimeSpan::Format  
  Biçimlendirilmiş dize gösterimini oluşturur bir `COleDateTimeSpan` nesnesi.  
   
 ```
@@ -189,7 +184,7 @@ CString Format(UINT nID) const;
   
 - **%S** geçerli dakikada saniye  
   
-- **%%**Yüzde işareti  
+- **%%** Yüzde işareti  
   
  Yukarıda listelenen dört biçim kodları biçimi kabul edecek yalnızca kodlarıdır.  
   
@@ -215,7 +210,7 @@ CString Format(UINT nID) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#15](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_4.cpp)]  
   
-##  <a name="getdays"></a>COleDateTimeSpan::GetDays  
+##  <a name="getdays"></a>  COleDateTimeSpan::GetDays  
  Bu tarih/zaman aralığı değeri gün kısmını alır.  
   
 ```
@@ -247,7 +242,7 @@ LONG GetDays() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#16](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_5.cpp)]  
   
-##  <a name="gethours"></a>COleDateTimeSpan::GetHours  
+##  <a name="gethours"></a>  COleDateTimeSpan::GetHours  
  Bu tarih/zaman aralığı değerinin saat bölümünü alır.  
   
 ```
@@ -279,7 +274,7 @@ LONG GetHours() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#17](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_6.cpp)]  
   
-##  <a name="getminutes"></a>COleDateTimeSpan::GetMinutes  
+##  <a name="getminutes"></a>  COleDateTimeSpan::GetMinutes  
  Bu tarih/zaman aralığı değeri dakika kısmını alır.  
   
 ```
@@ -311,7 +306,7 @@ LONG GetMinutes() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#18](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_7.cpp)]  
   
-##  <a name="getseconds"></a>COleDateTimeSpan::GetSeconds  
+##  <a name="getseconds"></a>  COleDateTimeSpan::GetSeconds  
  Bu tarih/zaman aralığı değeri ikinci kısmını alır.  
   
 ```
@@ -343,7 +338,7 @@ LONG GetSeconds() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#19](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_8.cpp)]  
   
-##  <a name="getstatus"></a>COleDateTimeSpan::GetStatus  
+##  <a name="getstatus"></a>  COleDateTimeSpan::GetStatus  
  Bu durum (geçerlilik) alır `COleDateTimeSpan` nesnesi.  
   
 ```
@@ -384,7 +379,7 @@ enum DateTimeSpanStatus{
   
  Sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` değerleri, başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
-##  <a name="gettotaldays"></a>COleDateTimeSpan::GetTotalDays  
+##  <a name="gettotaldays"></a>  COleDateTimeSpan::GetTotalDays  
  Gün olarak ifade bu tarih/zaman aralığı değeri alır.  
   
 ```
@@ -416,7 +411,7 @@ double GetTotalDays() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#20](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_9.cpp)]  
   
-##  <a name="gettotalhours"></a>COleDateTimeSpan::GetTotalHours  
+##  <a name="gettotalhours"></a>  COleDateTimeSpan::GetTotalHours  
  Saat cinsinden ifade edilen bu tarih/zaman aralığı değeri alır.  
   
 ```
@@ -448,7 +443,7 @@ double GetTotalHours() const throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [GetTotalDays](#gettotaldays).  
   
-##  <a name="gettotalminutes"></a>COleDateTimeSpan::GetTotalMinutes  
+##  <a name="gettotalminutes"></a>  COleDateTimeSpan::GetTotalMinutes  
  Dakika cinsinden ifade edilen bu tarih/zaman aralığı değeri alır.  
   
 ```
@@ -480,7 +475,7 @@ double GetTotalMinutes() const throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [GetTotalDays](#gettotaldays).  
   
-##  <a name="gettotalseconds"></a>COleDateTimeSpan::GetTotalSeconds  
+##  <a name="gettotalseconds"></a>  COleDateTimeSpan::GetTotalSeconds  
  Saniye cinsinden ifade edilen bu tarih/zaman aralığı değeri alır.  
   
 ```
@@ -512,7 +507,7 @@ double GetTotalSeconds() const throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [GetTotalDays](#gettotaldays).  
   
-##  <a name="m_span"></a>COleDateTimeSpan::m_span  
+##  <a name="m_span"></a>  COleDateTimeSpan::m_span  
  Arka plandaki **çift** bu değeri `COleDateTime` nesnesi.  
   
 ```
@@ -525,7 +520,7 @@ double m_span;
 > [!CAUTION]
 >  Değer değiştirme **çift** veri üyesi, bu değeri değiştirir `COleDateTimeSpan` nesnesi. Bu durumu değiştirmez `COleDateTimeSpan` nesnesi.  
   
-##  <a name="m_status"></a>COleDateTimeSpan::m_status  
+##  <a name="m_status"></a>  COleDateTimeSpan::m_status  
  Bu veri üyesi türü numaralandırılmış türüdür **DateTimeSpanStatus**, içinde tanımlanan `COleDateTimeSpan` sınıfı.  
   
 ```
@@ -565,7 +560,7 @@ enum DateTimeSpanStatus{
   
  Sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` değerleri, başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
-##  <a name="operator_eq"></a>COleDateTimeSpan::operator =  
+##  <a name="operator_eq"></a>  COleDateTimeSpan::operator =  
  Kopya bir `COleDateTimeSpan` değeri.  
   
 ```
@@ -575,7 +570,7 @@ COleDateTimeSpan& operator=(double dblSpanSrc) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu aşırı yüklenmiş atama işleci kaynak tarih/zaman aralığı değeri bu kopyalar `COleDateTimeSpan` nesnesi.  
   
-##  <a name="operator_add_-"></a>COleDateTimeSpan::operator +, -  
+##  <a name="operator_add_-"></a>  COleDateTimeSpan::operator +, -  
  Ekleme, çıkarın ve oturum değiştirme `COleDateTimeSpan` değerleri.  
   
 ```
@@ -596,7 +591,7 @@ COleDateTimeSpan operator-() const throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#23](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_10.cpp)]  
   
-##  <a name="operator_add_eq_-_eq"></a>COleDateTimeSpan::operator +=-=  
+##  <a name="operator_add_eq_-_eq"></a>  COleDateTimeSpan::operator +=-=  
  Ekleme ve bir `COleDateTimeSpan` bu değerden `COleDateTimeSpan` değeri.  
   
 ```
@@ -614,7 +609,7 @@ COleDateTimeSpan& operator-=(const COleDateTimeSpan dateSpan) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#24](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_11.cpp)]  
   
-##  <a name="operator_double"></a>COleDateTimeSpan::operator çift  
+##  <a name="operator_double"></a>  COleDateTimeSpan::operator çift  
  Bu dönüştürür `COleDateTimeSpan` değeri bir **çift**.  
   
 ```
@@ -624,7 +619,7 @@ operator double() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işleç bu değerini döndürür `COleDateTimeSpan` değeri olarak bir kayan nokta gün sayısı.  
   
-##  <a name="setdatetimespan"></a>COleDateTimeSpan::SetDateTimeSpan  
+##  <a name="setdatetimespan"></a>  COleDateTimeSpan::SetDateTimeSpan  
  Bu tarih/zaman aralığı değerini ayarlar.  
   
 ```
@@ -657,7 +652,7 @@ void SetDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#21](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_12.cpp)]  
   
-##  <a name="setstatus"></a>COleDateTimeSpan::SetStatus  
+##  <a name="setstatus"></a>  COleDateTimeSpan::SetStatus  
  Durumunu (geçerlilik) Bu ayarlar `COleDateTimeSpan` nesnesi.  
   
 ```
@@ -665,7 +660,7 @@ void SetStatus(DateTimeSpanStatus status) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *durumu*  
+ *Durumu*  
  Bu yeni durum değeri `COleDateTimeSpan` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  

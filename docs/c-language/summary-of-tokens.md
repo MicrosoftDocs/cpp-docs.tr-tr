@@ -1,33 +1,28 @@
 ---
-title: "Belirteçlerin özeti | Microsoft Docs"
-ms.custom: 
+title: Belirteçlerin özeti | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: 2978cbf6-e66e-46fc-9938-caa052f2ccf7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b187b1e7df39acce57691b0e8fd502b88eb3e46
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 936807fef6b74ccb081bf15d7314da14f064fb7a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="summary-of-tokens"></a>Belirteçlerin Özeti
 *belirteç*:  
- *anahtar sözcüğü*  
+ *Anahtar sözcüğü*  
   
- *tanımlayıcı*  
+ *Tanımlayıcı*  
   
  *sabiti*  
   
@@ -40,7 +35,7 @@ ms.lasthandoff: 12/21/2017
  *ön işleme belirteci*:  
  *üstbilgi adı*  
   
- *tanımlayıcı*  
+ *Tanımlayıcı*  
   
  *Gö numarası*  
   
@@ -59,9 +54,9 @@ ms.lasthandoff: 12/21/2017
  Yasal dosya yolu  
   
  *Gö numarası*:  
- *basamak*  
+ *Basamak*  
   
- **.** *basamak*  
+ **.** *Basamak*  
   
  *Gö numarası basamak*  
   

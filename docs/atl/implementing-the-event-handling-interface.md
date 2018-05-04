@@ -1,13 +1,10 @@
 ---
-title: "Olay arabirimi işleme uygulama | Microsoft Docs"
-ms.custom: 
+title: Olay arabirimi işleme uygulama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - event handling, ATL
 - interfaces, event and event sink
 ms.assetid: eb2a5b33-88dc-4ce3-bee0-c5c38ea050d7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9226cf2630ad18651f9bda2f154f49b5b739a433
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ea37aa4c84cb0824d11f0081e38d9e8157b77ed1
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="implementing-the-event-handling-interface"></a>Olay işleme arabirimi uygulama
 ATL yardımcı olan olayları işlemek için gerekli tüm üç öğelerle: olay arabirimini uygulayan, olay kaynağı bildiren ve olay kaynağı unadvising. Almanız gerekecek kesin adımlar olay arabirimini ve uygulamanızın performansı gereksinimlerini türüne bağlıdır.  

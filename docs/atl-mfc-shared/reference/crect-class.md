@@ -1,12 +1,9 @@
 ---
-title: "CRect sınıfı | Microsoft Docs"
-ms.custom: 
+title: CRect sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CRect
@@ -43,17 +40,15 @@ helpviewer_keywords:
 - LPRECT operator
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 067f683b5322b11a4ca33f015d64850c8113ce18
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a819cfc95588dc9225570a82b8a359d90a8f6b9f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="crect-class"></a>CRect sınıfı
 Benzer şekilde bir Windows [RECT](../../mfc/reference/rect-structure1.md) yapısı.  
@@ -84,7 +79,7 @@ class CRect : public tagRECT
 |[CRect::Height](#height)|Yüksekliğini hesaplar `CRect`.|  
 |[CRect::InflateRect](#inflaterect)|Yüksekliğini ve genişliğini artırır `CRect`.|  
 |[CRect::IntersectRect](#intersectrect)|Ayarlar `CRect` iki dikdörtgen kesişimi eşittir.|  
-|[CRect::IsRectEmpty](#isrectempty)|Belirler olup olmadığını `CRect` boş. `CRect`Genişlik ve/veya yüksekliği 0 ise boştur.|  
+|[CRect::IsRectEmpty](#isrectempty)|Belirler olup olmadığını `CRect` boş. `CRect` Genişlik ve/veya yüksekliği 0 ise boştur.|  
 |[CRect::IsRectNull](#isrectnull)|Belirler olup olmadığını **üst**, **alt**, **sol**, ve **sağ** üye değişkenleri tüm 0'a eşit.|  
 |[CRect::MoveToX](#movetox)|Taşır `CRect` için belirtilen x koordinatı.|  
 |[CRect::MoveToXY](#movetoxy)|Taşır `CRect` için belirlenen x ve y-koordinatlarının.|  
@@ -107,8 +102,8 @@ class CRect : public tagRECT
 |[CRect::operator LPCRECT](#operator_lpcrect)|Dönüştüren bir `CRect` için bir **LPCRECT**.|  
 |[CRect::operator LPRECT](#operator_lprect)|Dönüştüren bir `CRect` için bir `LPRECT`.|  
 |[CRect::operator! =](#operator_neq)|Belirler olup olmadığını `CRect` dikdörtgen eşit değil.|  
-|[CRect::operator&amp;](#operator_amp)|Kesişimi oluşturur `CRect` ve bir dikdörtgen ve elde edilen döndürür `CRect`.|  
-|[CRect::operator&amp;=](#operator_amp_eq)|Ayarlar `CRect` kesişimi eşit `CRect` ve bir dikdörtgen.|  
+|[CRect::operator &amp;](#operator_amp)|Kesişimi oluşturur `CRect` ve bir dikdörtgen ve elde edilen döndürür `CRect`.|  
+|[CRect::operator &amp;=](#operator_amp_eq)|Ayarlar `CRect` kesişimi eşit `CRect` ve bir dikdörtgen.|  
 |[CRect::operator |](#operator_or)|Birleşimini oluşturur `CRect` ve bir dikdörtgen ve elde edilen döndürür `CRect`.|  
 |[CRect::operator |=](#operator_or_eq)|Ayarlar `CRect` birleşimi eşit `CRect` ve bir dikdörtgen.|  
 |[CRect::operator +](#operator_add)|Verilen uzaklıkları ekler `CRect` veya Şişir `CRect` ve elde edilen döndürür `CRect`.|  
@@ -118,7 +113,7 @@ class CRect : public tagRECT
 |[CRect::operator ==](#operator_eq_eq)|Belirler olup olmadığını `CRect` dikdörtgen eşittir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CRect`Ayrıca işlemek için üye işlevlerini içerir `CRect` nesneleri ve Windows `RECT` yapıları.  
+ `CRect` Ayrıca işlemek için üye işlevlerini içerir `CRect` nesneleri ve Windows `RECT` yapıları.  
   
  A `CRect` nesne işlevi parametre olarak geçirilebilir her yerde bir `RECT` yapısı, **LPCRECT**, veya `LPRECT` geçirilebilir.  
   
@@ -142,7 +137,7 @@ class CRect : public tagRECT
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atltypes.h  
   
-##  <a name="bottomright"></a>CRect::BottomRight  
+##  <a name="bottomright"></a>  CRect::BottomRight  
  Bir başvuru olarak koordinatları döndürülen bir [CPoint](cpoint-class.md) bulunan nesne `CRect`.  
   
 ```  
@@ -181,7 +176,7 @@ rect2.BottomRight() = ptLow;
    ASSERT(rect2 == CRect(10, 10, 180, 180));   
 ```
   
-##  <a name="centerpoint"></a>CRect::CenterPoint 
+##  <a name="centerpoint"></a>  CRect::CenterPoint 
  Centerpoint, hesaplar `CRect` sol ve sağ değerlerin ekleme ve iki tarafından bölme ve üst ve alt değerleri ekleyerek ve iki göre bölme.  
   
 ```  
@@ -242,7 +237,7 @@ void CMyDlg::OnPaint()
 }
 ```
   
-##  <a name="copyrect"></a>CRect::CopyRect  
+##  <a name="copyrect"></a>  CRect::CopyRect  
  Kopya `lpSrcRect` dikdörtgen `CRect`.  
   
 ```  
@@ -275,7 +270,7 @@ void CopyRect(LPCRECT lpSrcRect) throw();
 ```
 
   
-##  <a name="crect"></a>CRect::CRect  
+##  <a name="crect"></a>  CRect::CRect  
  Oluşturan bir `CRect` nesnesi.  
   
 ```  
@@ -291,7 +286,7 @@ CRect(POINT topLeft, POINT bottomRight) throw();
  *m*  
  Sol konumunu belirtir `CRect`.  
   
- *t*  
+ *T*  
  Üst belirtir `CRect`.  
   
  *r*  
@@ -312,7 +307,7 @@ CRect(POINT topLeft, POINT bottomRight) throw();
  `size`  
  Sol üst köşeden oluşturulması için dikdörtgenin öteleme sağ alt köşe için belirtir.  
   
- *sol üst*  
+ *Sol üst*  
  Sol üst konumunu belirtir `CRect`.  
   
  *bottomRight*  
@@ -361,8 +356,8 @@ CRect(POINT topLeft, POINT bottomRight) throw();
  ASSERT(rect5 == rect4);  
 ```
   
-##  <a name="deflaterect"></a>CRect::DeflateRect  
- `DeflateRect`Söndür `CRect` kendi merkezine kendi kenara taşıyarak.  
+##  <a name="deflaterect"></a>  CRect::DeflateRect  
+ `DeflateRect` Söndür `CRect` kendi merkezine kendi kenara taşıyarak.  
   
 ```  
 void DeflateRect(int x, int y) throw();
@@ -375,7 +370,7 @@ void DeflateRect(int l, int t, int r, int b) throw();
  *x*  
  Sol deflate birim sayısını ve sağ kenarlarının belirtir `CRect`.  
   
- *y*  
+ *Y*  
  Üst ve alt deflate birim sayısını belirtir `CRect`.  
   
  `size`  
@@ -387,7 +382,7 @@ void DeflateRect(int l, int t, int r, int b) throw();
  *m*  
  Sol tarafındaki deflate birim sayısını belirtir `CRect`.  
   
- *t*  
+ *T*  
  Üst deflate birim sayısını belirtir `CRect`.  
   
  *r*  
@@ -415,7 +410,7 @@ void DeflateRect(int l, int t, int r, int b) throw();
    ASSERT(rect2.top == 12 && rect2.bottom == 46);   
 ```
   
-##  <a name="equalrect"></a>CRect::EqualRect  
+##  <a name="equalrect"></a>  CRect::EqualRect  
  Belirler olup olmadığını `CRect` verilen dikdörtgenin eşittir.  
   
 ```  
@@ -450,7 +445,7 @@ ASSERT(rect1.EqualRect(rect2));
  ASSERT(rect1.EqualRect(&test));  
 ```
 
-##  <a name="height"></a>CRect::Height  
+##  <a name="height"></a>  CRect::Height  
  Yüksekliğini hesaplar `CRect` alt değerden üst değer çıkarılmasıyla tarafından.  
   
 ```  
@@ -480,8 +475,8 @@ int nHt = rect.Height();
 ```
 
   
-##  <a name="inflaterect"></a>CRect::InflateRect  
- `InflateRect`Şişir `CRect` kendi merkezinden kendi kenara taşıyarak.  
+##  <a name="inflaterect"></a>  CRect::InflateRect  
+ `InflateRect` Şişir `CRect` kendi merkezinden kendi kenara taşıyarak.  
   
 ```  
 void InflateRect(int x, int y) throw();
@@ -494,7 +489,7 @@ void InflateRect(int l, int t, int r,  int b) throw();
  *x*  
  Sol Şişir birim sayısını ve sağ kenarlarının belirtir `CRect`.  
   
- *y*  
+ *Y*  
  Üst ve alt Şişir birim sayısını belirtir `CRect`.  
   
  `size`  
@@ -506,7 +501,7 @@ void InflateRect(int l, int t, int r,  int b) throw();
  *m*  
  Sol tarafındaki Şişir birim sayısını belirtir `CRect`.  
   
- *t*  
+ *T*  
  Üst Şişir birim sayısını belirtir `CRect`.  
   
  *r*  
@@ -529,7 +524,7 @@ void InflateRect(int l, int t, int r,  int b) throw();
  ASSERT(rect == CRect(-50, -200, 350, 500));  
 ```
   
-##  <a name="intersectrect"></a>CRect::IntersectRect  
+##  <a name="intersectrect"></a>  CRect::IntersectRect  
  Yapar bir `CRect` var olan iki dikdörtgen kesişimi eşittir.  
   
 ```  
@@ -572,7 +567,7 @@ BOOL IntersectRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
  ASSERT(rectInter2 == CRect(125, 75, 150, 95));  
 ```
   
-##  <a name="isrectempty"></a>CRect::IsRectEmpty  
+##  <a name="isrectempty"></a>  CRect::IsRectEmpty  
  Belirler olup olmadığını `CRect` boş.  
   
 ```  
@@ -603,7 +598,7 @@ CRect rectEmpty(35, 35, 35, 35);
 ```
 
   
-##  <a name="isrectnull"></a>CRect::IsRectNull  
+##  <a name="isrectnull"></a>  CRect::IsRectNull  
  , Sol üst, alt olup olmadığını, belirler ve sağ değerlerini `CRect` tüm 0'a eşit.  
   
 ```  
@@ -632,7 +627,7 @@ ASSERT(rectNone.IsRectNull());
  ASSERT(!rectNotNull.IsRectNull());  
 ```
   
-##  <a name="movetox"></a>CRect::MoveToX  
+##  <a name="movetox"></a>  CRect::MoveToX  
  Dikdörtgen tarafından belirtilen mutlak x koordinatı taşımak için bu işlevi çağırmak *x*.  
   
 ```  
@@ -656,7 +651,7 @@ rect.MoveToX(10);
    ASSERT(rect == CRect(10, 0, 110, 100));   
 ```
   
-##  <a name="movetoxy"></a>CRect::MoveToXY  
+##  <a name="movetoxy"></a>  CRect::MoveToXY  
  Mutlak x ve y-belirtilen koordinatları için dikdörtgen taşımak için bu işlevini çağırın.  
   
 ```  
@@ -668,7 +663,7 @@ void MoveToXY(POINT point) throw();
  *x*  
  Mutlak x koordinatını dikdörtgenin sol üst köşe için.  
   
- *y*  
+ *Y*  
  Mutlak y koordinatını dikdörtgenin sol üst köşe için.  
   
  `point`  
@@ -687,7 +682,7 @@ void MoveToXY(POINT point) throw();
 ```
 
   
-##  <a name="movetoy"></a>CRect::MoveToY  
+##  <a name="movetoy"></a>  CRect::MoveToY  
  Dikdörtgen tarafından belirtilen mutlak y koordinatını taşımak için bu işlevi çağırmak *y*.  
   
 ```  
@@ -695,7 +690,7 @@ void MoveToY(int y) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *y*  
+ *Y*  
  Mutlak y koordinatını dikdörtgenin sol üst köşe için.  
   
 ### <a name="example"></a>Örnek  
@@ -711,7 +706,7 @@ void MoveToY(int y) throw();
 ```
 
   
-##  <a name="normalizerect"></a>CRect::NormalizeRect  
+##  <a name="normalizerect"></a>  CRect::NormalizeRect  
  Normalleştirir `CRect` yükseklik ve genişlik pozitif; böylece.  
   
 ```  
@@ -719,10 +714,10 @@ void NormalizeRect() throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dikdörtgen dördüncü çeyrekli konumlandırma için Windows genellikle koordinatları kullanan normalleştirilmiş. `NormalizeRect`üst ve alt değerlerini karşılaştırır ve üst alt büyükse, bunları değiştirir. Benzer şekilde, soldan sağa büyükse, sol ve sağ değerlerin değiştirir. Bu işlev, farklı eşleme modlarıyla ilgilenirken yararlıdır ve dikdörtgenler ters.  
+ Dikdörtgen dördüncü çeyrekli konumlandırma için Windows genellikle koordinatları kullanan normalleştirilmiş. `NormalizeRect` üst ve alt değerlerini karşılaştırır ve üst alt büyükse, bunları değiştirir. Benzer şekilde, soldan sağa büyükse, sol ve sağ değerlerin değiştirir. Bu işlev, farklı eşleme modlarıyla ilgilenirken yararlıdır ve dikdörtgenler ters.  
   
 > [!NOTE]
->  Aşağıdaki `CRect` üye işlevleri düzgün çalışması için normalleştirilmiş dikdörtgenler gerektirir: [yükseklik](#height), [genişliği](#width), [boyutu](#size), [ IsRectEmpty](#isrectempty), [PtInRect](#ptinrect), [EqualRect](#equalrect), [UnionRect](#unionrect), [IntersectRect](#intersectrect), [ SubtractRect](#subtractrect), [işleç ==](#operator_eq_eq), [işleç! =](#operator_neq), [işleci &#124;](#operator_or), [işleci &#124;=](#operator_or_eq), [işleci &](#operator_amp), ve [işleci & =](#operator_amp_eq).  
+>  Aşağıdaki `CRect` üye işlevleri düzgün çalışması için normalleştirilmiş dikdörtgenler gerektirir: [yükseklik](#height), [genişliği](#width), [boyutu](#size), [ IsRectEmpty](#isrectempty), [PtInRect](#ptinrect), [EqualRect](#equalrect), [UnionRect](#unionrect), [IntersectRect](#intersectrect), [ SubtractRect](#subtractrect), [işleç ==](#operator_eq_eq), [işleç! =](#operator_neq), [işleci &#124; ](#operator_or), [işleci &#124;=](#operator_or_eq), [işleci &](#operator_amp), ve [işleci & =](#operator_amp_eq).  
   
 ### <a name="example"></a>Örnek  
 ```cpp  
@@ -737,7 +732,7 @@ rect1.NormalizeRect();
  ASSERT(rect1 == rect2);  
 ```
   
-##  <a name="offsetrect"></a>CRect::OffsetRect  
+##  <a name="offsetrect"></a>  CRect::OffsetRect  
  Taşır `CRect` tarafından belirtilen uzaklık.  
   
 ```  
@@ -750,7 +745,7 @@ void OffsetRect(SIZE size) throw();
  *x*  
  Sol taşımak için veya sağa belirtir. Sola Taşı negatif olmalıdır.  
   
- *y*  
+ *Y*  
  Yukarı veya aşağı gitme belirtir. Yukarı Taşı negatif olmalıdır.  
   
  `point`  
@@ -776,7 +771,7 @@ void OffsetRect(SIZE size) throw();
 ```
 
   
-##  <a name="operator_lpcrect"></a>CRect::operator LPCRECT dönüştürür bir `CRect` için bir [LPCRECT](../../mfc/reference/data-types-mfc.md).  
+##  <a name="operator_lpcrect"></a>  CRect::operator LPCRECT dönüştürür bir `CRect` için bir [LPCRECT](../../mfc/reference/data-types-mfc.md).  
 
   
 ```  
@@ -787,7 +782,7 @@ operator LPCRECT() const throw();
  Bu işlev kullandığınızda, adresini, gerekmez (**&**) işleci. Bu işleç, geçirdiğiniz olduğunda otomatik olarak kullanılacak bir `CRect` bekliyor işlevi nesnesine bir **LPCRECT**.  
   
 
-##  <a name="operator_lprect"></a>CRect::operator LPRECT  
+##  <a name="operator_lprect"></a>  CRect::operator LPRECT  
  Dönüştüren bir `CRect` için bir [LPRECT](../../mfc/reference/data-types-mfc.md).  
 
   
@@ -801,7 +796,7 @@ operator LPRECT() throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CRect::operator LPCRECT](#operator_lpcrect).  
   
-##  <a name="operator_eq"></a>CRect::operator =  
+##  <a name="operator_eq"></a>  CRect::operator =  
  Atar *srcRect* için `CRect`.  
   
 ```  
@@ -826,7 +821,7 @@ void operator=(const RECT& srcRect) throw();
 ```
 
   
-##  <a name="operator_eq_eq"></a>CRect::operator ==  
+##  <a name="operator_eq_eq"></a>  CRect::operator ==  
  Belirler olup olmadığını `rect` eşittir `CRect` karşılaştırarak, sol üst ve sağ alt köşe koordinatları.  
   
 ```  
@@ -868,7 +863,7 @@ ASSERT(rect1 == rect2);
 ```
 
   
-##  <a name="operator_neq"></a>CRect::operator! =  
+##  <a name="operator_neq"></a>  CRect::operator! =  
  Belirler olup olmadığını `rect` eşit değil `CRect` karşılaştırarak, sol üst ve sağ alt köşe koordinatları.  
   
 ```  
@@ -909,7 +904,7 @@ ASSERT(rect1 != rect3);
  ASSERT(rect3 != test);  
 ```
   
-##  <a name="operator_add_eq"></a>CRect::operator +=  
+##  <a name="operator_add_eq"></a>  CRect::operator +=  
  İlk iki aşırı taşıma `CRect` tarafından belirtilen uzaklık.  
   
 ```  
@@ -948,7 +943,7 @@ void operator+=(LPCRECT lpRect) throw();
    ASSERT(rect1 == rect2);   
 ```
   
-##  <a name="operator_-_eq"></a>CRect::operator-=  
+##  <a name="operator_-_eq"></a>  CRect::operator-=  
  İlk iki aşırı taşıma `CRect` tarafından belirtilen uzaklık.  
   
 ```  
@@ -987,7 +982,7 @@ void operator-=(LPCRECT lpRect) throw();
    ASSERT(rect1 == rectResult);   
 ```
   
-##  <a name="operator_amp_eq"></a>CRect::operator&amp;=  
+##  <a name="operator_amp_eq"></a>  CRect::operator &amp;=  
  Ayarlar `CRect` kesişimi eşit `CRect` ve `rect`.  
   
 ```  
@@ -1007,7 +1002,7 @@ void operator&=(const RECT& rect) throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CRect::IntersectRect](#intersectrect).  
   
-##  <a name="operator_or_eq"></a>CRect::operator &#124; =  
+##  <a name="operator_or_eq"></a>  CRect::operator &#124;=  
  Ayarlar `CRect` birleşimi eşit `CRect` ve `rect`.  
   
 ```  
@@ -1040,7 +1035,7 @@ void operator|=(const RECT& rect) throw();
 ```
 
   
-##  <a name="operator_add"></a>CRect::operator +  
+##  <a name="operator_add"></a>  CRect::operator +  
  İlk iki aşırı dönüş bir `CRect` eşittir nesne `CRect` tarafından belirtilen uzaklıkları hatalı yerleştirilen.  
   
 ```  
@@ -1079,7 +1074,7 @@ CRect operator+(SIZE size) const throw();
 ```
 
   
-##  <a name="operator_-"></a>CRect::operator-  
+##  <a name="operator_-"></a>  CRect::operator-  
  İlk iki aşırı dönüş bir `CRect` eşittir nesne `CRect` tarafından belirtilen uzaklıkları hatalı yerleştirilen.  
   
 ```  
@@ -1118,7 +1113,7 @@ CRect operator-(LPCRECT lpRect) const throw();
 ```
 
   
-##  <a name="operator_amp"></a>CRect::operator&amp;  
+##  <a name="operator_amp"></a>  CRect::operator &amp;  
  Döndürür bir `CRect` diğer bir deyişle kesişimi `CRect` ve *rect2*.  
   
 ```  
@@ -1150,7 +1145,7 @@ CRect operator&(const RECT& rect2) const throw();
 ```
 
   
-##  <a name="operator_or"></a>CRect::operator &#124;  
+##  <a name="operator_or"></a>  CRect::operator&#124;  
  Döndürür bir `CRect` diğer bir deyişle birleşimi `CRect` ve *rect2*.  
   
 ```   
@@ -1188,7 +1183,7 @@ rect2) const throw();
 ```
 
   
-##  <a name="ptinrect"></a>CRect::PtInRect  
+##  <a name="ptinrect"></a>  CRect::PtInRect  
  Belirtilen nokta içinde kaynaklandığını olup olmadığını belirler `CRect`.  
   
 ```   
@@ -1235,7 +1230,7 @@ BOOL PtInRect(POINT point) const throw();
  ASSERT(rect.PtInRect(pt));  
 ```
   
-##  <a name="setrect"></a>CRect::SetRect  
+##  <a name="setrect"></a>  CRect::SetRect  
  Boyutlarını ayarlar `CRect` belirtilen koordinatlarına.  
   
 ```   
@@ -1267,7 +1262,7 @@ void SetRect(int x1, int y1, int x2, int y2) throw();
 ```
 
   
-##  <a name="setrectempty"></a>CRect::SetRectEmpty  
+##  <a name="setrectempty"></a>  CRect::SetRectEmpty  
  Yapar `CRect` tüm koordinatları sıfır olarak ayarlayarak bir dikdörtgen null.  
   
 ```  
@@ -1283,7 +1278,7 @@ rect.SetRectEmpty();
 ASSERT(rect.IsRectEmpty());  
 ```
   
-##  <a name="size"></a>CRect::SIZE 
+##  <a name="size"></a>  CRect::SIZE 
  `cx` Ve `cy` dönüş değeri üyeleri içeren yüksekliğini ve genişliğini `CRect`.  
   
 ```  
@@ -1306,7 +1301,7 @@ CSize Size() const throw();
  ASSERT(sz.cx == 40 && sz.cy == 40);  
 ```
 
-##  <a name="subtractrect"></a>CRect::SubtractRect  
+##  <a name="subtractrect"></a>  CRect::SubtractRect  
  Boyutlarını yapar **CRect** çıkarma eşit `lpRectSrc2` gelen `lpRectSrc1`.  
   
 ```  
@@ -1330,7 +1325,7 @@ BOOL SubtractRect(LPCRECT lpRectSrc1, LPCRECT lpRectSrc2) throw();
   
  Örneğin, varsa `lpRectSrc1` olan (10,10, 100,100) ve `lpRectSrc2` olan (50,50, 150,150) tarafından için dikdörtgen işaret `lpRectSrc1` işlevi döndürüldüğünde değişmeden olacaktır. Varsa `lpRectSrc1` olan (10,10, 100,100) ve `lpRectSrc2` olan (50,10, 150,150), ancak dikdörtgen işaret için tarafından `lpRectSrc1` (10,10, 50,100) koordinatları içerecektir işlevi döndürdü.  
   
- `SubtractRect`aynı değil [işleci -](#operator_-) ya da [operator-=](#operator_-_eq). Bu işleçlere hiçbiri hiç çağırır `SubtractRect`.  
+ `SubtractRect` aynı değil [işleci -](#operator_-) ya da [operator-=](#operator_-_eq). Bu işleçlere hiçbiri hiç çağırır `SubtractRect`.  
   
 > [!NOTE]
 >  Her iki dikdörtgen normalleştirilmiş veya bu işlevi başarısız olabilir. Çağırabilirsiniz [NormalizeRect](#normalizerect) bu işlevi çağrılmadan önce dikdörtgenler normalleştirmek için.  
@@ -1368,7 +1363,7 @@ CRect   rectResult(10, 10, 50, 100);
    ASSERT(rectResult == rectOut);   
 ```
   
-##  <a name="topleft"></a>CRect::TopLeft  
+##  <a name="topleft"></a>  CRect::TopLeft  
  Bir başvuru olarak koordinatları döndürülen bir [CPoint](cpoint-class.md) bulunan nesne `CRect`.  
   
 ```  
@@ -1385,7 +1380,7 @@ const CPoint& TopLeft() const throw();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CRect::CenterPoint](#centerpoint).  
   
-##  <a name="unionrect"></a>CRect::UnionRect  
+##  <a name="unionrect"></a>  CRect::UnionRect  
  Boyutlarını yapar `CRect` iki kaynak dikdörtgenler birleşimi eşittir.  
   
 ```  
@@ -1421,7 +1416,7 @@ BOOL UnionRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
    ASSERT(rectResult == rect3);   
 ```
  
-##  <a name="width"></a>CRect::Width  
+##  <a name="width"></a>  CRect::Width  
  Genişliğini hesaplar `CRect` sol sağ değer değerinden çıkarılmasıyla tarafından.  
   
 ```  

@@ -1,13 +1,10 @@
 ---
-title: "_exec, _wexec işlevleri | Microsoft Docs"
-ms.custom: 
+title: _exec, _wexec işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apilocation:
 - msvcr110_clr0400.dll
 - msvcr120.dll
@@ -62,17 +59,15 @@ helpviewer_keywords:
 - _exec function
 - _texecvpe function
 ms.assetid: a261df93-206a-4fdc-b8ac-66aa7db83bc6
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2b01ce48463f3aad723bee38ee9f3ef1b499c3f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7ef98749c094165cb7cdff9f20370a55dfdaaa3a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="exec-wexec-functions"></a>_exec, _wexec İşlevleri
 Bu ailedeki her işlevi yükler ve yeni bir işlem çalıştırır:  
@@ -90,7 +85,7 @@ Bu ailedeki her işlevi yükler ve yeni bir işlem çalıştırır:
 |----------------------------|-----------------|  
 |`e`|`envp`, dizi işaretçileri ortam ayarları için yeni işlemin geçirilir.|  
 |`l`|Komut satırı bağımsız değişkenleri için ayrı ayrı geçirilir `_exec` işlevi. Genellikle, yeni işlem için parametre sayısı önceden bilinen olduğunda kullanılır.|  
-|`p`|`PATH`ortam değişkeni yürütmek için dosyayı bulmak için kullanılır.|  
+|`p`|`PATH` ortam değişkeni yürütmek için dosyayı bulmak için kullanılır.|  
 |`v`|`argv`, dizi için komut satırı bağımsız değişkenleri için işaretçileri, geçirilen `_exec`. Genellikle, yeni işlem için parametre sayısı değişken olduğunda kullanılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -117,7 +112,7 @@ Bu ailedeki her işlevi yükler ve yeni bir işlem çalıştırır:
 >  Dizelerde katıştırılmış boşluklar beklenmeyen davranışlara neden olabilir; Örneğin, geçirme `_exec` dize `"hi there"` iki bağımsız değişkeni alma yeni işleminde sonuçlanır `"hi"` ve `"there"`. Hedefi adlı bir dosyayı açan yeni işlem için ise "Merhaba var.", işlem başarısız olur. Bu dize tırnak içine almak kaçının: `"\"hi there\""`.  
   
 > [!IMPORTANT]
->  Kullanıcı girişini geçmeyin `_exec` açıkça içeriğini Denetlemeden. `_exec`Çağrı sonuçlanır [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms682425.aspx) şekilde adları, olası güvenlik açıklarını açabilir nitelenmemiş yol göz önünde bulundurun.  
+>  Kullanıcı girişini geçmeyin `_exec` açıkça içeriğini Denetlemeden. `_exec` Çağrı sonuçlanır [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms682425.aspx) şekilde adları, olası güvenlik açıklarını açabilir nitelenmemiş yol göz önünde bulundurun.  
   
  `_exec` İşlevleri parametrelerini doğrulayın. Parametre null işaretçiler beklenir, boş dizeler veya çıkarılırsa `_exec` işlevleri çağırma geçersiz parametre işleyicisi açıklandığı gibi [parametre doğrulaması](../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EINVAL` ve -1 döndürür. Yeni bir işlem yürütülür.  
   
@@ -127,7 +122,7 @@ Bu ailedeki her işlevi yükler ve yeni bir işlem çalıştırır:
   
  `_execv`, `_execve`, `_execvp`, Ve `_execvpe` çağrıları kullanışlı ne zaman yeni işlem için parametre sayısı değişkendir. Parametreleri işaretçiler bir dizisi olarak geçirilir `argv`. Parametre `argv`[0] genellikle gösteren bir işaretçidir `cmdname`. Parametreleri `argv`[1] aracılığıyla `argv`[`n`] noktası yeni parametre listesi oluşturuluyor karakter dizeleri. Parametre `argv`[`n`+ 1] olmalıdır bir `NULL` parametre listesinin sonuna işaretlemek için işaretçi.  
   
- Açık olan dosyalar bir `_exec` çağrısı yapılan yeni işlemde açık kalır. İçinde `_execl`, `_execlp`, `_execv`, ve `_execvp` çağrıları, yeni işlem çağırma işleminin ortamı devralır. `_execle`, `_execlpe`, `_execve`, ve `_execvpe` çağrıları alter ortam yeni işlem için ortam Ayarları'nda listesini geçirerek `envp` parametresi. `envp`karakter işaretçileri (dışında son öğesi) her öğesinin null ile sonlandırılmış bir dizeye işaret dizisi bir ortam değişkeni tanımlama. Bu tür bir dize genellikle form sahip `NAME` = `value` nerede `NAME` bir ortam değişkeni adı ve `value` değişken ayarlanmış dize değeridir. (Unutmayın `value` çift tırnak işaretleri içine alınmamış.) Son öğenin `envp` dizi olmalıdır `NULL`. Zaman `envp` kendisi `NULL`, yeni işlem çağırma işleminin ortam ayarlarını devralır.  
+ Açık olan dosyalar bir `_exec` çağrısı yapılan yeni işlemde açık kalır. İçinde `_execl`, `_execlp`, `_execv`, ve `_execvp` çağrıları, yeni işlem çağırma işleminin ortamı devralır. `_execle`, `_execlpe`, `_execve`, ve `_execvpe` çağrıları alter ortam yeni işlem için ortam Ayarları'nda listesini geçirerek `envp` parametresi. `envp` karakter işaretçileri (dışında son öğesi) her öğesinin null ile sonlandırılmış bir dizeye işaret dizisi bir ortam değişkeni tanımlama. Bu tür bir dize genellikle form sahip `NAME` = `value` nerede `NAME` bir ortam değişkeni adı ve `value` değişken ayarlanmış dize değeridir. (Unutmayın `value` çift tırnak işaretleri içine alınmamış.) Son öğenin `envp` dizi olmalıdır `NULL`. Zaman `envp` kendisi `NULL`, yeni işlem çağırma işleminin ortam ayarlarını devralır.  
   
  Biri ile yürütülebilir bir program `_exec` programın .exe dosya üstbilgisi maksimum ayırma alanında 0xFFFFH varsayılan değerine ayarlandıysa gibi işlevler belleğe her zaman yüklenir.  
   
@@ -247,7 +242,7 @@ int main( int ac, char* av[] )
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Süreç ve ortam denetimi](../c-runtime-library/process-and-environment-control.md)   
- [durdurma](../c-runtime-library/reference/abort.md)   
+ [Durdurma](../c-runtime-library/reference/abort.md)   
  [atexit](../c-runtime-library/reference/atexit.md)   
  [Çıkış, _Exit, _exit](../c-runtime-library/reference/exit-exit-exit.md)   
  [_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)   

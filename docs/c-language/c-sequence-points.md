@@ -1,29 +1,24 @@
 ---
-title: "C sıralama noktaları | Microsoft Docs"
-ms.custom: 
+title: C sıralama noktaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - sequence points
 ms.assetid: c84885a5-4336-4eba-a643-058df4249903
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a9c874c0093b55c44f900e7eab06019d75cb930
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9cf0b72314103587ddf64021db2a265044c469e3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-sequence-points"></a>C Sıralama Noktaları
 Ardışık arasında "bir nesnenin değeri değiştirilebilir yalnızca bir kez bir ifade sıralama noktaları". C dili aşağıdaki sıralama noktaları tanımlar:  

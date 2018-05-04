@@ -1,13 +1,10 @@
 ---
-title: "Öncelik ve değerlendirme sırası | Microsoft Docs"
-ms.custom: 
+title: Öncelik ve değerlendirme sırası | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - data binding [C++], operator precedence
 - operators [C++], precedence
 ms.assetid: 201f7864-0c51-4c55-9d6f-39c5d013bcb0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0baad2e1003898e84169e20d3c8a839b8865a7e0
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 84c3ec69c936605729f6813f28450ee1194951c7
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="precedence-and-order-of-evaluation"></a>Öncelik ve Değerlendirme Sırası
 C işleçlerinin öncelik ve birleşimleri, ifadelerde işlenenlerin gruplandırılmasını ve değerlendirilmesini etkiler. Bir işlecin önceliği, daha yüksek veya daha düşük önceliğe sahip başka işleçler varsa bir anlam ifade eder. Önce daha yüksek önceliğe sahip işleçler değerlendirilir. Öncelik, "bağlama" sözcüğüyle de açıklanabilir. Daha yüksek önceliğe sahip işleçlerin daha sıkı bağlamaya sahip olduğu söylenir.  
@@ -74,8 +69,8 @@ C işleçlerinin öncelik ve birleşimleri, ifadelerde işlenenlerin gruplandır
 
 |İfade|Otomatik Bağlama|  
 |----------------|-----------------------|  
-|bir & b &#124; &#124; c|(a & b) &#124;&#124; c|  
-|a = b &#124;&#124; c|a = (b &#124;&#124; c)|  
+|bir & b &#124; &#124; c|(bir & b). &#124; &#124; c|  
+|bir = b &#124; &#124; c|bir = (b &#124; &#124; c).|  
 |q & & r &#124; &#124; s--|(q & & r) &#124; &#124; s--|  
 
  İlk ifadede, bit düzeyinde AND işleci (`&`), mantıksal OR işlecine (`||`) göre daha yüksek bir önceliğe sahiptir, bu nedenle `a & b` mantıksal OR işleminin ilk işlenenini oluşturur.  
@@ -88,7 +83,7 @@ C işleçlerinin öncelik ve birleşimleri, ifadelerde işlenenlerin gruplandır
   
 |Geçersiz İfade|Varsayılan Gruplandırma|  
 |------------------------|----------------------|  
-|p == 0 ? p += 1: p += 2|( p == 0 ? p += 1 : p ) += 2|  
+|p == 0? p += 1: p += 2|(p == 0? p += 1: p) += 2|  
   
  Bu ifadede, eşitlik işleci (`==`) en yüksek önceliğe sahiptir, bu nedenle `p == 0` bir işlenen olarak gruplandırılır. Koşullu ifade işleci (`? :`) sonraki en yüksek önceliğe sahiptir. İlk işleneni `p == 0`, ikinci işleneni ise `p += 1`'dir. Ancak, koşullu ifade işlecinin son işleneni `p` yerine `p += 2` olarak kabul edilir; çünkü bu `p` örneği koşullu ifade işlecine, bileşik atama işlecine göre daha yakından bağlanır. `+= 2` sol işlenene sahip olmadığı için bir sözdizimi hatası oluşur. Bu türden hataları önlemek ve daha okunabilir bir kod oluşturmak için parantez kullanmanız gerekir. Örneğin, yukarıdaki örneği düzeltmek ve netleştirmek için parantezleri aşağıda gösterildiği gibi kullanabilirsiniz:  
   

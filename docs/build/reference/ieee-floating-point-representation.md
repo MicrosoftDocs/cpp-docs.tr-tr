@@ -1,13 +1,10 @@
 ---
-title: "IEEE kayan Noktası temsili | Microsoft Docs"
-ms.custom: 
+title: IEEE kayan Noktası temsili | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - long double
 - real*4 value
 ms.assetid: 537833e8-fe05-49fc-8169-55fd0314b195
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17fae0cbb16208d5c7e7346f354f3501e4803d96
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: d209d1c2a7429515383f8ebe80c621d6f2b15890
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ieee-floating-point-representation"></a>IEEE Kayan Noktası Temsili
 Microsoft Visual C++ IEEE sayısal standartları ile uyumludur. Gerçek sayılar üç iç çeşitleri vardır. Gerçek\*4 ve gerçek\*8'de Visual C++ kullanılır. Gerçek\*4 word kullanılarak bildirilen **float**. Gerçek\*8 word kullanılarak bildirilen **çift**. Windows 32-bit programlama içinde `long double` veri türü eşlemeleri için **çift**. Yoktur, ancak gerçek kullanarak hesaplamalar için derleme dili desteği * 10 veri türü.  
@@ -61,7 +56,7 @@ Microsoft Visual C++ IEEE sayısal standartları ile uyumludur. Gerçek sayılar
   
  Biçim daha sonra çeşitli boyutları şu şekildedir:  
   
-|Biçimi|BYTE 1|BYTE 2|BYTE 3|BYTE 4|...|BAYT n|  
+|Biçimi|BYTE 1|BAYT 2|BAYT 3|BYTE 4|...|BAYT n|  
 |------------|------------|------------|------------|------------|---------|------------|  
 |Gerçek * 4|`SXXX XXXX`|`XMMM MMMM`|`MMMM MMMM`|`MMMM MMMM`|||  
 |Gerçek * 8|`SXXX XXXX`|`XXXX MMMM`|`MMMM MMMM`|`MMMM MMMM`|...|`MMMM MMMM`|  

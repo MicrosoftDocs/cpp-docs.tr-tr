@@ -1,13 +1,10 @@
 ---
-title: "İşlenenler ve ifadeler | Microsoft Docs"
-ms.custom: 
+title: İşlenenler ve ifadeler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - operands, definition
 - operands
 ms.assetid: 8453b095-a017-4c70-9a64-e3b2bd1e35e5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ff9af4727bc606fcecbf9c79936c980d023865a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 804039142e63af838ddd7e8a899d616657596f66
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="operands-and-expressions"></a>İşlenenler ve İfadeler
 "İşlenen", bir işlecin üzerinde işlem yaptığı varlıktır. "İfade", şu işlemlerin bir bileşimini yapan işleçler ve işlenenler dizisidir:  

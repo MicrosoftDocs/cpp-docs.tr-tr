@@ -1,13 +1,10 @@
 ---
 title: _setjmp3 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - _setjmp3
 apilocation:
@@ -28,17 +25,15 @@ helpviewer_keywords:
 - _setjmp3 function
 - setjmp3 function
 ms.assetid: 6129c2f3-8bac-4fdb-a827-44e1eebba500
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72bc1e833ddaa72979e25274b7328d8987f62763
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 04d06bd7728347770bd17c48abc9898f2a2467a4
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setjmp3"></a>_setjmp3
 İç CRT işlevi. Yeni bir uyarlamasını `setjmp` işlevi.  
@@ -54,13 +49,13 @@ int _setjmp3(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`env`  
+ [out] `env`  
  Durum bilgilerini depolamak için arabellek adresi.  
   
- [in]`count`  
+ [in] `count`  
  Ek sayısı `DWORD`depolanan bilgilerin s `optional parameters`.  
   
- [in]`optional parameters`  
+ [in] `optional parameters`  
  Tarafından ek veriler gönderilir `setjmp` iç. İlk `DWORD` ek veri bırakma ve bir kalıcı döndürmek için kullanılan bir işlev işaretçisi durumu kaydedeceksiniz. İkinci `DWORD` geri yüklenmesi deneyin düzeydir. Daha fazla veri genel veri dizisinde kaydedilir `jmp_buf`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  

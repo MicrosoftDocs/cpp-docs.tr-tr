@@ -1,10 +1,9 @@
 ---
-title: "/ Tc, /Tp, TP, /TP (kaynak dosya türünü belirtin) | Microsoft Docs"
+title: / Tc, /Tp, TP, /TP (kaynak dosya türünü belirtin) | Microsoft Docs
 ms.date: 1/11/2018
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.CompileAs
 - VC.Project.VCCLCompilerTool.CompileAs
@@ -22,14 +21,13 @@ helpviewer_keywords:
 - -Tp compiler option [C++]
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3d51e4c6bbf6a77f86be5cabde9b65f8e4f8c9f
-ms.sourcegitcommit: ff9bf140b6874bc08718674c07312ecb5f996463
+ms.openlocfilehash: 9cb612d5c26fd4db51222c480539867d5e506b70
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tc-tp-tc-tp-specify-source-file-type"></a>/Tc, /Tp, /TC, /TP (Kaynak Dosya Türünü Belirtin)
 
@@ -71,11 +69,11 @@ Zaman ya da **TC** veya **Tc** seçeneği belirtildiğinde, tüm belirtimi [/ZC:
 
 Bu CL komut satırı MAIN.c, TEST.prg ve COLLATE.prg tüm C kaynak dosyalarını olduğunu belirtir. CL PRINT.prg tanımaz.
 
-> CL MAIN.C /TcTEST.PRG /TcCOLLATE.PRG PRINT.PRG
+> CL ANA. C /TcTEST.PRG /TcCOLLATE.PRG yazdırma. PRG
 
 Bu CL komut satırı TEST1.c, TEST2.cxx, TEST3.huh ve TEST4.o C++ dosyaları olarak derlenir ve TEST5.z C dosyası olarak derlenmiş belirtir.
 
-> CL TEST1.C TEST2.CXX TEST3.HUH TEST4.O /Tc TEST5.Z /TP
+> CL TEST1. C TEST2. CXX TEST3. HUH TEST4. O TP TEST5. Z /TP
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

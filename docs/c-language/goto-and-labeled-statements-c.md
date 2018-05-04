@@ -1,13 +1,10 @@
 ---
 title: goto ve Labeled Statements (C) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 f1_keywords:
 - goto
 dev_langs:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - statements, labeled
 - goto keyword [C]
 ms.assetid: 3d0473dc-4b18-4fcc-9616-31a38499d7d7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea0543a13d16850be4259d2d93f763dd0edcbda3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cf56a409f9a76cdf401323d1425ee28fc6cf286b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="goto-and-labeled-statements-c"></a>goto ve Etiketli Deyimleri (C)
 `goto` Deyimi bir etiket denetimi aktarır. Belirtilen etiket aynı işlevde bulunmalıdır ve aynı işlevde yalnızca bir deyim önce görünebilir.  

@@ -1,13 +1,10 @@
 ---
-title: "Birden çok hedef | Microsoft Docs"
-ms.custom: 
+title: Birden çok hedef | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - targets, multiple in NMAKE
 - NMAKE program, targets
 ms.assetid: b609a179-0b9f-4b08-9930-998047588ae0
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a70a265318914b70928dce5fae2f486e63c16f0b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7c1e072b5c831cecabaf1fd63034a0746b3e3419
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="multiple-targets"></a>Birden Çok Hedef
 NMAKE içindeki tek bir bağımlılığı birden çok hedef her ayrı açıklama bloğunda belirtildi olarak değerlendirir.  

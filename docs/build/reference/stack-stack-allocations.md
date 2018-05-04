@@ -1,13 +1,10 @@
 ---
-title: "-STACK (yığın ayırmaları) | Microsoft Docs"
-ms.custom: 
+title: -STACK (yığın ayırmaları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.StackReserveSize
 - VC.Project.VCLinkerTool.StackCommitSize
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - /STACK linker option
 - stack, setting size
 ms.assetid: 73283660-e4bd-47cc-b5ca-04c5d739034c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b487ff830abd3dfa97a748c81d541cbd9fdd0b4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c8ee3fac90bcbb972278d9b3e2cf7cebd62fedf4
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stack-stack-allocations"></a>/STACK (Yığın Ayırmaları)
 ```  
@@ -43,7 +38,7 @@ ms.lasthandoff: 12/21/2017
   
  `reserve` Değeri sanal bellek toplam yığın ayırma belirtir. ARM, x86 için ve [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] makineler, varsayılan yığın boyutu 1 MB olduğu.  
   
- `commit`işletim sistemi tarafından tercüme tabidir. Windows WindowsRT aynı anda ayırmak için fiziksel bellek miktarını belirtir. Kaydedilebilen sanal bellek disk belleği dosyasında ayrılacak alanı neden olur. Yüksek bir `commit` zaman uygulama daha fazla yığın alanı gerekiyor, ancak bellek gereksinimlerini ve büyük olasılıkla başlangıç zamanını artırır zaman kaydeder. ARM, x86 için ve [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] makineler, varsayılan yürütme değer olan 4 KB.  
+ `commit` işletim sistemi tarafından tercüme tabidir. Windows WindowsRT aynı anda ayırmak için fiziksel bellek miktarını belirtir. Kaydedilebilen sanal bellek disk belleği dosyasında ayrılacak alanı neden olur. Yüksek bir `commit` zaman uygulama daha fazla yığın alanı gerekiyor, ancak bellek gereksinimlerini ve büyük olasılıkla başlangıç zamanını artırır zaman kaydeder. ARM, x86 için ve [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] makineler, varsayılan yürütme değer olan 4 KB.  
   
  Belirtin `reserve` ve `commit` değerleri ondalık veya dil C gösterimi.  
   

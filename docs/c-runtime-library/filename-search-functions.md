@@ -1,13 +1,10 @@
 ---
-title: "Dosya arama işlevleri | Microsoft Docs"
-ms.custom: 
+title: Dosya arama işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apilocation:
 - msvcr100.dll
 - msvcr120.dll
@@ -26,17 +23,15 @@ helpviewer_keywords:
 - find function
 - _wfind function
 ms.assetid: 2bc2f8ef-44e4-4271-b3e8-666d36fde828
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16aff4db1a04c31b3b45c9a61f74c44d6c9465f6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 777ac61828abbdc93bdf3fe6ceda05f927472494
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="filename-search-functions"></a>Dosya arama işlevleri
 Bu işlevler için arama yapın ve belirtilen dosya adları için aramaları kapatın:  
@@ -72,7 +67,7 @@ Bu işlevler için arama yapın ve belirtilen dosya adları için aramaları kap
   
  Oluşturma ve FAT sistemi gibi bir dosyaya son erişim sayılarının desteklemez dosya sistemlerinde `time_create` ve `time_access` alanları her zaman-1 M.  
   
- `_MAX_PATH`içinde Stdlib.h 260 bayt olarak tanımlanır.  
+ `_MAX_PATH` içinde Stdlib.h 260 bayt olarak tanımlanır.  
   
  Hedef öznitelikleri belirtilemez (gibi `_A_RDONLY`) bulma işlemi sınırlamak için. Bu öznitelikler döndürülür `attrib` alanını `_finddata_t` yapısı ve (tanımlıysa IO.h) aşağıdaki değerlere sahip olabilir. Kullanıcıların değil Bel bu değerleri yalnızca mümkün olan `attrib` alan.  
   
@@ -94,17 +89,17 @@ Bu işlevler için arama yapın ve belirtilen dosya adları için aramaları kap
  `_A_SYSTEM`  
  Sistem dosyası. İle değil normalde görülen **DIR** sürece komut **/A** veya **/A:S** seçenek kullanılır. Değer: 0x04.  
   
- `_findnext`sonraki adı varsa, eşleşen bulur `filespec` önceki bir çağrıda belirtilen bağımsız değişken `_findfirst`. `fileinfo` Bağımsız değişkeni için önceki çağrı tarafından başlatılan bir yapı noktasına `_findfirst`. Bir eşleşme bulunamazsa `fileinfo` yapısı içeriği daha önce açıklandığı şekilde değiştirilir. Aksi halde sol değişmez. `_findclose`Belirtilen arama tanıtıcısı kapatır ve ilişkili tüm kaynakları için her ikisini de serbest `_findfirst` ve `_findnext`. Tarafından döndürülen tanıtıcı `_findfirst` veya `_findnext` için ilk geçirilmelidir `_findclose`, geçirilen yolları form dizinleri silme gibi değiştirme işlemleri gerçekleştirilmeden önce.  
+ `_findnext` sonraki adı varsa, eşleşen bulur `filespec` önceki bir çağrıda belirtilen bağımsız değişken `_findfirst`. `fileinfo` Bağımsız değişkeni için önceki çağrı tarafından başlatılan bir yapı noktasına `_findfirst`. Bir eşleşme bulunamazsa `fileinfo` yapısı içeriği daha önce açıklandığı şekilde değiştirilir. Aksi halde sol değişmez. `_findclose` Belirtilen arama tanıtıcısı kapatır ve ilişkili tüm kaynakları için her ikisini de serbest `_findfirst` ve `_findnext`. Tarafından döndürülen tanıtıcı `_findfirst` veya `_findnext` için ilk geçirilmelidir `_findclose`, geçirilen yolları form dizinleri silme gibi değiştirme işlemleri gerçekleştirilmeden önce.  
   
  Geçirebilmenize `_find` işlevleri. Örneğin, bir çağrı varsa `_findfirst` veya `_findnext` alt, yeni bir arama dosyasını, başka bir çağrıyı ile başlatılabilir bulur `_findfirst` veya `_findnext`.  
   
- `_wfindfirst`ve `_wfindnext` joker karakter sürümleri `_findfirst` ve `_findnext`. Joker karakter sürümlerinin yapısı bağımsız `_wfinddata_t` IO.h ve Wchar.h tanımlı veri türü. Bu veri türü alanlarının aynıdır `_finddata_t` dışında veri türü `_wfinddata_t` ad alanı türüdür `wchar_t` türü yerine `char`. Aksi takdirde `_wfindfirst` ve `_wfindnext` aynı şekilde davranır `_findfirst` ve `_findnext`.  
+ `_wfindfirst` ve `_wfindnext` joker karakter sürümleri `_findfirst` ve `_findnext`. Joker karakter sürümlerinin yapısı bağımsız `_wfinddata_t` IO.h ve Wchar.h tanımlı veri türü. Bu veri türü alanlarının aynıdır `_finddata_t` dışında veri türü `_wfinddata_t` ad alanı türüdür `wchar_t` türü yerine `char`. Aksi takdirde `_wfindfirst` ve `_wfindnext` aynı şekilde davranır `_findfirst` ve `_findnext`.  
   
- `_findfirst`ve `_findnext` 64-bit süre türünü kullanın. Eski 32-bit zamanı tür kullanmanız gerekiyorsa, tanımlayabilirsiniz `_USE_32BIT_TIME_T`. Bu işlevleri sürümleri `32` adlarında soneki kullanan 32-bit zaman türü ve olanlar `64` soneki 64-bit zaman tür kullanın.  
+ `_findfirst` ve `_findnext` 64-bit süre türünü kullanın. Eski 32-bit zamanı tür kullanmanız gerekiyorsa, tanımlayabilirsiniz `_USE_32BIT_TIME_T`. Bu işlevleri sürümleri `32` adlarında soneki kullanan 32-bit zaman türü ve olanlar `64` soneki 64-bit zaman tür kullanın.  
   
  İşlevler `_findfirst32i64`, `_findnext32i64`, `_wfindfirst32i64`, ve `_wfindnext32i64` de kullanın ve 64-bit dosya uzunlukları dönüş dışında aynı şekilde bu işlevlerin 32-bit zaman türü sürümleri davranır. İşlevler `_findfirst64i32`, `_findnext64i32`, `_wfindfirst64i32`, ve `_wfindnext64i32` 64-bit zamanı tür kullanır ancak 32-bit dosya uzunlukları kullanır. Bu işlevler uygun varyasyonları kullanmak `_finddata_t` hangi alanların farklı türlerine sahip zaman ve dosya boyutu için türü.  
   
- `_finddata_t`gerçekte değerlendiren bir makro `_finddata64i32_t` (veya `_finddata32_t` varsa `_USE_32BIT_TIME_T` tanımlanır). Üzerinde çeşitlemeleri aşağıdaki tabloda özetlenmiştir `_finddata_t`:  
+ `_finddata_t` gerçekte değerlendiren bir makro `_finddata64i32_t` (veya `_finddata32_t` varsa `_USE_32BIT_TIME_T` tanımlanır). Üzerinde çeşitlemeleri aşağıdaki tabloda özetlenmiştir `_finddata_t`:  
   
 |Yapı|Zaman türü|Dosya boyutu türü|  
 |---------------|---------------|--------------------|  
@@ -114,7 +109,7 @@ Bu işlevler için arama yapın ve belirtilen dosya adları için aramaları kap
 |`_finddata32i64_t`, `_wfinddata32i64_t`|`__time32_t`|`__int64`|  
 |`_finddata64i32_t`, `_wfinddata64i32_t`|`__time64_t`|`_fsize_t`|  
   
- `_fsize_t`olan bir `typedef` için `unsigned long` (32 bit).  
+ `_fsize_t` olan bir `typedef` için `unsigned long` (32 bit).  
   
 ## <a name="example"></a>Örnek  
   

@@ -1,12 +1,9 @@
 ---
-title: "CAtlException sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAtlException sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CAtlException
@@ -18,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - CAtlException class
 ms.assetid: 3fd7b041-f70d-4292-b947-0d70781d95a8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0af7fa5a0bc78043e0eac204255f30ab1b9672c5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: aaafdf42d218e2c3bca1e8ee28c27898f80bcf40
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="catlexception-class"></a>CAtlException sınıfı
 Bu sınıf ATL istisna tanımlar.  
@@ -67,7 +62,7 @@ class CAtlException
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlexcept.h  
   
-##  <a name="catlexception"></a>CAtlException::CAtlException  
+##  <a name="catlexception"></a>  CAtlException::CAtlException  
  Oluşturucu.  
   
 ```
@@ -79,14 +74,14 @@ CAtlException() throw();
  `hr`  
  `HRESULT` Hata kodu.  
   
-##  <a name="operator_hresult"></a>CAtlException::operator HRESULT 
+##  <a name="operator_hresult"></a>  CAtlException::operator HRESULT 
  Geçerli nesne HRESULT değerine çevirir.  
   
 ```  
 operator HRESULT() const throw ();
 ```  
   
-##  <a name="m_hr"></a>CAtlException::m_hr  
+##  <a name="m_hr"></a>  CAtlException::m_hr  
  `HRESULT` Veri üyesi.  
   
 ```

@@ -1,12 +1,9 @@
 ---
-title: "CDebugReportHook sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDebugReportHook sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CDebugReportHook
@@ -22,17 +19,15 @@ dev_langs:
 helpviewer_keywords:
 - CDebugReportHook class
 ms.assetid: 798076c3-6e63-4286-83b8-aa1bbcd0c20c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df098ee80bcd8fa81b5503cc21b08ded86945a72
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d84b2da8a347833513e0725695bb9d2bacd2951d
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cdebugreporthook-class"></a>CDebugReportHook sınıfı
 Bu sınıf için bir adlandırılmış kanal hata ayıklama raporları göndermek için kullanın.  
@@ -72,7 +67,7 @@ class CDebugReportHook
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlutil.h  
   
-##  <a name="cdebugreporthook"></a>CDebugReportHook::CDebugReportHook  
+##  <a name="cdebugreporthook"></a>  CDebugReportHook::CDebugReportHook  
  Çağrıları [SetPipeName](#setpipename), [SetTimeout](#settimeout), ve [SetHook](#sethook).  
   
 ```
@@ -92,14 +87,14 @@ CDebugReportHook(
  `dwTimeout`  
  Bu sınıf kullanılabilir hale gelmesi için adlandırılmış kanal bekleyeceği milisaniye cinsinden süre.  
   
-##  <a name="dtor"></a>CDebugReportHook:: ~ CDebugReportHook  
+##  <a name="dtor"></a>  CDebugReportHook:: ~ CDebugReportHook  
  Çağrıları [CDebugReportHook::RemoveHook](#removehook).  
   
 ```
 ~CDebugReportHook() throw();
 ```  
   
-##  <a name="cdebugreporthookproc"></a>CDebugReportHook::CDebugReportHookProc  
+##  <a name="cdebugreporthookproc"></a>  CDebugReportHook::CDebugReportHookProc  
  İşlem raporlama C çalışma zamanı hata ayıklama sayfaya özel raporlama işlevi.  
   
 ```
@@ -116,7 +111,7 @@ static int __cdecl CDebugReportHookProc(
  `message`  
  İleti dizesi.  
   
- *returnValue*  
+ *ReturnValue*  
  Tarafından döndürülen değeri [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -127,7 +122,7 @@ static int __cdecl CDebugReportHookProc(
   
  Bu işlevde kod, çağıran iş parçacığı temel güvenlik bağlamında yürütülür, kimliğe bürünme boyunca bu işlevi başka bir deyişle, devre dışı bırakıldı.  
   
-##  <a name="removehook"></a>CDebugReportHook::RemoveHook  
+##  <a name="removehook"></a>  CDebugReportHook::RemoveHook  
  Adlandırılmış kanal hata ayıklama raporları göndermeyi durdurmak için bu yöntemi çağırın ve önceki rapor kanca geri yükleyin.  
   
 ```
@@ -137,7 +132,7 @@ void RemoveHook() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [_CrtSetReportHook2](../../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md) önceki rapor kanca geri yüklemek için.  
   
-##  <a name="sethook"></a>CDebugReportHook::SetHook  
+##  <a name="sethook"></a>  CDebugReportHook::SetHook  
  Adlandırılmış kanal hata ayıklama raporları gönderme başlatmak için bu yöntemi çağırın.  
   
 ```
@@ -147,7 +142,7 @@ void SetHook() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [_CrtSetReportHook2](../../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md) aracılığıyla yönlendirilen hata ayıklama rapor [CDebugReportHookProc](#cdebugreporthookproc) adlandırılmış kanalına. Bu sınıf önceki rapor kanca olması için izler geri [RemoveHook](#removehook) olarak adlandırılır.  
   
-##  <a name="setpipename"></a>CDebugReportHook::SetPipeName  
+##  <a name="setpipename"></a>  CDebugReportHook::SetPipeName  
  Hata ayıklama raporları gönderilecek kanal adını ve makine ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -166,7 +161,7 @@ BOOL SetPipeName(
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa TRUE döndürür başarısız olduğunda FALSE.  
   
-##  <a name="settimeout"></a>CDebugReportHook::SetTimeout  
+##  <a name="settimeout"></a>  CDebugReportHook::SetTimeout  
  Bu sınıf adlandırılmış kanal kullanılabilir olmasını bekler milisaniye cinsinden süre ayarlamak için bu yöntemi çağırın.  
   
 ```

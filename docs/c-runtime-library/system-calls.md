@@ -2,12 +2,9 @@
 title: Sistem çağrıları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.system
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - Windows [C++], system calls
 - system calls
 ms.assetid: 0255f2ec-a5a0-487e-8b09-9dad001d81ed
-caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cbf9b060f8063345f00a4c5fc9c14df71e9f4c9
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 87709026e9cc088b03f6e04dd30bd49d2cf3707b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="system-calls"></a>Sistem Çağrıları
 
@@ -42,7 +37,7 @@ Windows işletim sistemi çağrıları işlevlerdir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kategorilere göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
  [Dosya İşleme](../c-runtime-library/file-handling.md)<br/>
  [Dizin Denetimi](../c-runtime-library/directory-control.md)<br/>
  [Düşük düzey g/ç](../c-runtime-library/low-level-i-o.md)<br/>

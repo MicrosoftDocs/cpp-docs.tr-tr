@@ -2,12 +2,9 @@
 title: -Yoksay (belirli uyarıları atla) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /OVERWRITE
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - /IGNORE linker option
 ms.assetid: 37e77387-8838-4697-898f-d376ac641124
-caps.latest.revision: 3
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d8815438ce56629bd120c30b0d0db9fef96916d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b096fc12f69fbe637a3067646c20f6d520a9250f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ignore-ignore-specific-warnings"></a>/IGNORE (Belirli Uyarıları Atla)
 ```  
@@ -43,7 +38,7 @@ ms.lasthandoff: 12/21/2017
   
 |Bağlayıcı uyarı||  
 |--------------------|-|  
-|LNK4017|`keyword`deyimi hedef platformu için desteklenmiyor; göz ardı|  
+|LNK4017|`keyword` deyimi hedef platformu için desteklenmiyor; göz ardı|  
 |[LNK4044](../../error-messages/tool-errors/linker-tools-warning-lnk4044.md)|Tanınmayan seçenek '`option`'; yoksayıldı|  
 |LNK4062|'`option`'ile uyumlu değil'`architecture`' hedef makine; göz ardı seçeneği|  
 |[LNK4075](../../error-messages/tool-errors/linker-tools-warning-lnk4075.md)|yoksayılıyor "`option1`"son için"`option2`" belirtimi|  
@@ -57,7 +52,7 @@ ms.lasthandoff: 12/21/2017
 |LNK4207|'`filename`' /Yc /Yu /Z7 derlenmiş; hiç hata ayıklama bilgileri gibi PDB, / zi ile yeniden derleyebilirsiniz; bağlama nesnesi oluşturulamıyor|  
 |LNK4208|uyumsuz PDB biçiminde '`filename`'; silin ve yeniden oluşturun; hiç hata ayıklama bilgileri gibi nesne bağlama|  
 |LNK4209|hata ayıklama bilgileri bozuk; Modül derlenir; hata ayıklama bilgileri gibi nesne bağlama|  
-|[LNK4224](../../error-messages/tool-errors/linker-tools-warning-lnk4224.md)|`option`artık desteklenmemektedir; göz ardı|  
+|[LNK4224](../../error-messages/tool-errors/linker-tools-warning-lnk4224.md)|`option` artık desteklenmemektedir; göz ardı|  
 |LNK4228|'`option`' geçersiz bir DLL için; yoksayıldı|  
 |[LNK4229](../../error-messages/tool-errors/linker-tools-warning-lnk4229.md)|Geçersiz yönergesi /`directive` göz ardı; bulundu|  
   

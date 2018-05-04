@@ -1,10 +1,10 @@
 ---
-title: "/ZC:rvalueCast (tür dönüştürme kurallarını) | Microsoft Docs"
-ms.custom: 
+title: /ZC:rvalueCast (tür dönüştürme kurallarını) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - rvaluecast
 - /Zc:rvalueCast
@@ -20,14 +20,13 @@ helpviewer_keywords:
 ms.assetid: 7825277d-e565-4c48-b0fb-76ac0b0c6e38
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9e2223176082a2252dd410af4012ace31c14267
-ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
+ms.openlocfilehash: d730563d01a3b59d4f2ac6bbadc980ca51112203
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="zcrvaluecast-enforce-type-conversion-rules"></a>/Zc:rvalueCast (Tür dönüştürme kurallarını zorlama)
 

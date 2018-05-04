@@ -1,13 +1,10 @@
 ---
-title: "Dönüş türü | Microsoft Docs"
-ms.custom: 
+title: Dönüş türü | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - return keyword [C++], function return types
 - functions [C++], return types
 ms.assetid: 3e5b8a97-b341-48c5-8be8-8986980ef586
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9768baa53e39f1b3243aba24385d592010c3d81a
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 18d90604ccaebab2d3ed7812835c711d4d56995a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="return-type"></a>Dönüş Türü
 Bir işlevin dönüş türü işlev tarafından döndürülen değerin türü ve boyutunu belirler ve aşağıdaki sözdiziminde tür belirteci karşılık gelir:  
@@ -47,7 +42,7 @@ Bir işlevin dönüş türü işlev tarafından döndürülen değerin türü ve
   
  *tür niteleyicisi bildirim tanımlayıcıları* iptal et  
   
- *type-specifier*:  
+ *tür belirteci*:  
  **void**  
   
  **char**  
@@ -66,11 +61,11 @@ Bir işlevin dönüş türü işlev tarafından döndürülen değerin türü ve
   
  **İmzasız**  
   
- *struct-or-union-specifier*  
+ *yapı veya birleşim belirticisi*  
   
  *Liste belirticisi*  
   
- *typedef-name*  
+ *TypeDef adı*  
   
  *Tür belirteci* herhangi temel belirtebilirsiniz yapısı veya birleşim türü. Dahil etmezseniz *tür belirteci*, dönüş türü `int` varsayılır.  
   

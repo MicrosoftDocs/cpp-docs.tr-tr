@@ -1,12 +1,9 @@
 ---
-title: "İlişkisel işleçler: &lt;, &gt;, &lt;= ve &gt;= | Microsoft Docs"
-ms.custom: 
+title: 'İlişkisel işleçler: &lt;, &gt;, &lt;= ve &gt;= | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - <
@@ -24,19 +21,17 @@ helpviewer_keywords:
 - less than or equal to operator
 - <= operator
 ms.assetid: d346b53d-f14d-4962-984f-89d39a17ca0f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28d7cf77f9bea05a9220aea3d4006f64899b84ec
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ea629afbe975e60e9fc4f25e51d757eb3f0f8728
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="relational-operators-lt-gt-lt-and-gt"></a>İlişkisel işleçler: &lt;, &gt;, &lt;= ve&gt;=
+# <a name="relational-operators-lt-gt-lt-and-gt"></a>İlişkisel işleçler: &lt;, &gt;, &lt;= ve &gt;=
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  

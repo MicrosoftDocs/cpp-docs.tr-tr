@@ -1,6 +1,6 @@
 ---
-title: "/MP (birden çok süreçle derleme) | Microsoft Docs"
-ms.custom: 
+title: /MP (birden çok süreçle derleme) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/22/2018
 ms.technology:
 - cpp-tools
@@ -16,14 +16,13 @@ helpviewer_keywords:
 - cl.exe compiler, multi-process build
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5aa190d2cb2d1e0b0d13979d5e0044291d7cd8a7
-ms.sourcegitcommit: d24de38f9da844f824acb9d200a3f263077145fc
+ms.openlocfilehash: 29f7fd00a9d24b1941830690633befc75c39eb32
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mp-build-with-multiple-processes"></a>/MP (Birden Çok Süreçle Derleme)
 
@@ -62,7 +61,7 @@ Derleyici seçenekleri ve ile uyumlu dil özellikler aşağıdaki tabloda listel
 |[#import](../../preprocessor/hash-import-directive-cpp.md) önişlemci yönergesi|C++ sınıfları bir tür kitaplığı türlerinde dönüştürür ve ardından bu sınıfların bir üstbilgi dosyasına yazar.|
 |[/E](../../build/reference/e-preprocess-to-stdout.md), [/EP](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)|Önişlemci çıktısı standart çıktıya kopyalar (**stdout**).|
 |[/Gm](../../build/reference/gm-enable-minimal-rebuild.md)|Bir artımlı yeniden etkinleştirir.|
-|[/showIncludes](../../build/reference/showincludes-list-include-files.md)|Standart hatayı INCLUDE dosyaların listesini yazar (**stderr**).|
+|[/ showıncludes](../../build/reference/showincludes-list-include-files.md)|Standart hatayı INCLUDE dosyaların listesini yazar (**stderr**).|
 |[/Yc](../../build/reference/yc-create-precompiled-header-file.md)|Önceden derlenmiş başlık dosyası yazar.|
 
 ## <a name="diagnostic-messages"></a>Tanılama iletileri
@@ -141,6 +140,6 @@ Varsayılan olarak, bir projeyi derleme etkinleştirir **/GM derlemeyi** derleyi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import Directive](../../preprocessor/hash-import-directive-cpp.md)<br/>
+[#import yönergesi](../../preprocessor/hash-import-directive-cpp.md)<br/>
 [Komut Satırı Başvurusu](/visualstudio/msbuild/msbuild-command-line-reference)<br/>
-[/ZF (daha hızlı PDB oluşturma)](zf.md)<br/>
+[/ZF (Daha hızlı PDB oluşturma)](zf.md)<br/>

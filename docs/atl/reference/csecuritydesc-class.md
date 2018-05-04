@@ -1,12 +1,9 @@
 ---
-title: "CSecurityDesc sınıfı | Microsoft Docs"
-ms.custom: 
+title: CSecurityDesc sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CSecurityDesc
@@ -43,17 +40,15 @@ dev_langs:
 helpviewer_keywords:
 - CSecurityDesc class
 ms.assetid: 3767a327-378f-4690-ba40-4d9f6a1f5ee4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64f286a02729a5fd39885a449056973381e52611
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: a6963c04e3bd0ba06f8cc2beb9cb77447e2acd81
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="csecuritydesc-class"></a>CSecurityDesc sınıfı
 Bu sınıf için sarmalayıcı, **SECURITY_DESCRIPTOR** yapısı.  
@@ -140,7 +135,7 @@ CSecurityDesc(const SECURITY_DESCRIPTOR& rhs) throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  `CSecurityDesc` Nesne isteğe bağlı olarak kullanılarak oluşturulabilir bir **SECURITY_DESCRIPTOR** yapısı veya önceden tanımlanmış `CSecurityDesc` nesnesi.  
   
-##  <a name="dtor"></a>  CSecurityDesc::~CSecurityDesc  
+##  <a name="dtor"></a>  CSecurityDesc:: ~ CSecurityDesc  
  Yok Edicisi.  
   
 ```
@@ -150,7 +145,7 @@ virtual ~CSecurityDesc() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Yok Edicisi ayrılan tüm kaynakları serbest bırakır.  
   
-##  <a name="fromstring"></a>CSecurityDesc::FromString  
+##  <a name="fromstring"></a>  CSecurityDesc::FromString  
  Dize biçimi güvenlik tanımlayıcısı geçerli, işlev güvenlik tanımlayıcısı dönüştürür.  
   
 ```
@@ -186,7 +181,7 @@ bool GetControl(SECURITY_DESCRIPTOR_CONTROL* psdc) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi çağırır [GetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa446647).  
   
-##  <a name="getdacl"></a>CSecurityDesc::GetDacl  
+##  <a name="getdacl"></a>  CSecurityDesc::GetDacl  
  İsteğe bağlı erişim denetimi listesi (DACL) bilgileri güvenlik tanımlayıcısından alır.  
   
 ```
@@ -247,7 +242,7 @@ bool GetOwner(
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa, false başarısız olursa true döndürür.  
   
-##  <a name="getpsecurity_descriptor"></a>CSecurityDesc::GetPSECURITY_DESCRIPTOR  
+##  <a name="getpsecurity_descriptor"></a>  CSecurityDesc::GetPSECURITY_DESCRIPTOR  
  Bir işaretçi döndürür **SECURITY_DESCRIPTOR** yapısı.  
   
 ```
@@ -280,7 +275,7 @@ bool GetSacl(
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa, false başarısız olursa true döndürür.  
   
-##  <a name="isdaclautoinherited"></a>CSecurityDesc::IsDaclAutoInherited  
+##  <a name="isdaclautoinherited"></a>  CSecurityDesc::IsDaclAutoInherited  
  İsteğe bağlı erişim denetimi listesi (DACL) otomatik yayma desteklemek üzere yapılandırılmış olup olmadığını belirler.  
   
 ```
@@ -293,7 +288,7 @@ bool IsDaclAutoInherited() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Nesne ve varolan alt nesneleri için otomatik devralma algoritması gerçekleştirdiğinde, sistem bu bit ayarlar.  
   
-##  <a name="isdacldefaulted"></a>CSecurityDesc::IsDaclDefaulted  
+##  <a name="isdacldefaulted"></a>  CSecurityDesc::IsDaclDefaulted  
  Güvenlik tanımlayıcısı varsayılan isteğe bağlı erişim denetimi listesi (DACL) ile yapılandırılmış olup olmadığını belirler.  
   
 ```
@@ -310,7 +305,7 @@ bool IsDaclDefaulted() const throw();
   
  Bu bayrak ayarlamak için kullanın [CSecurityDesc::SetDacl](#setdacl) yöntemi.  
   
-##  <a name="isdaclpresent"></a>CSecurityDesc::IsDaclPresent  
+##  <a name="isdaclpresent"></a>  CSecurityDesc::IsDaclPresent  
  Güvenlik tanımlayıcısı isteğe bağlı erişim denetimi listesi (DACL) içerip içermediğini belirler.  
   
 ```
@@ -327,7 +322,7 @@ bool IsDaclPresent() const throw();
   
  Bu bayrak ayarlamak için kullanın [CSecurityDesc::SetDacl](#setdacl) yöntemi.  
   
-##  <a name="isdaclprotected"></a>CSecurityDesc::IsDaclProtected  
+##  <a name="isdaclprotected"></a>  CSecurityDesc::IsDaclProtected  
  İsteğe bağlı erişim denetimi listesi (DACL) değişiklikleri önlemek için yapılandırılmış olup olmadığını belirler.  
   
 ```
@@ -342,7 +337,7 @@ bool IsDaclProtected() const throw();
   
  Bu yöntem Devralınabilir ACE otomatik yayılmasını destekler.  
   
-##  <a name="isgroupdefaulted"></a>CSecurityDesc::IsGroupDefaulted  
+##  <a name="isgroupdefaulted"></a>  CSecurityDesc::IsGroupDefaulted  
  Güvenlik tanımlayıcı grubun güvenlik tanımlayıcısı (SID) varsayılan olarak ayarlanmış olmadığını belirler.  
   
 ```
@@ -355,7 +350,7 @@ bool IsGroupDefaulted() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu bayrak ayarlamak için kullanın [CSecurityDesc::SetGroup](#setgroup) yöntemi.  
   
-##  <a name="isownerdefaulted"></a>CSecurityDesc::IsOwnerDefaulted  
+##  <a name="isownerdefaulted"></a>  CSecurityDesc::IsOwnerDefaulted  
  Güvenlik tanımlayıcı sahibi güvenlik tanımlayıcısı (SID) varsayılan olarak ayarlanmış olmadığını belirler.  
   
 ```
@@ -368,7 +363,7 @@ bool IsOwnerDefaulted() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu bayrak ayarlamak için kullanın [CSecurityDesc::SetOwner](#setowner) yöntemi.  
   
-##  <a name="issaclautoinherited"></a>CSecurityDesc::IsSaclAutoInherited  
+##  <a name="issaclautoinherited"></a>  CSecurityDesc::IsSaclAutoInherited  
  Sistem erişim denetimi listesi (SACL) otomatik yayma desteklemek üzere yapılandırılmış olup olmadığını belirler.  
   
 ```
@@ -381,7 +376,7 @@ bool IsSaclAutoInherited() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Nesne ve varolan alt nesneleri için otomatik devralma algoritması gerçekleştirdiğinde, sistem bu bit ayarlar.  
   
-##  <a name="issacldefaulted"></a>CSecurityDesc::IsSaclDefaulted  
+##  <a name="issacldefaulted"></a>  CSecurityDesc::IsSaclDefaulted  
  Güvenlik tanımlayıcısı varsayılan sistem erişim denetimi listesi (SACL) ile yapılandırılmış olup olmadığını belirler.  
   
 ```
@@ -396,7 +391,7 @@ bool IsSaclDefaulted() const throw();
   
  Bu bayrak ayarlamak için kullanın [CSecurityDesc::SetSacl](#setsacl) yöntemi.  
   
-##  <a name="issaclpresent"></a>CSecurityDesc::IsSaclPresent  
+##  <a name="issaclpresent"></a>  CSecurityDesc::IsSaclPresent  
  Güvenlik tanımlayıcısı sistem erişim denetimi listesi (SACL) içerip içermediğini belirler.  
   
 ```
@@ -409,7 +404,7 @@ bool IsSaclPresent() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu bayrak ayarlamak için kullanın [CSecurityDesc::SetSacl](#setsacl) yöntemi.  
   
-##  <a name="issaclprotected"></a>CSecurityDesc::IsSaclProtected  
+##  <a name="issaclprotected"></a>  CSecurityDesc::IsSaclProtected  
  Sistem erişim denetimi listesi (SACL) değişiklikleri önlemek için yapılandırılmış olup olmadığını belirler.  
   
 ```
@@ -424,7 +419,7 @@ bool IsSaclProtected() const throw();
   
  Bu yöntem Devralınabilir ACE otomatik yayılmasını destekler.  
   
-##  <a name="isselfrelative"></a>CSecurityDesc::IsSelfRelative  
+##  <a name="isselfrelative"></a>  CSecurityDesc::IsSelfRelative  
  Güvenlik tanımlayıcısı kendine bağlı biçimde olup olmadığını belirler.  
   
 ```
@@ -434,7 +429,7 @@ bool IsSelfRelative() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Güvenlik tanımlayıcısı kendine bağlı biçimde bitişik bir bellek bloğu tüm güvenlik bilgileri ile true değerini döndürür. Mutlak biçimde güvenlik tanımlayıcısı ise, yanlış değerini döndürür. Daha fazla bilgi için bkz: [mutlak ve Self-Relative güvenlik tanımlayıcıları](http://msdn.microsoft.com/library/windows/desktop/aa374807).  
   
-##  <a name="makeabsolute"></a>CSecurityDesc::MakeAbsolute  
+##  <a name="makeabsolute"></a>  CSecurityDesc::MakeAbsolute  
  Güvenlik tanımlayıcısı mutlak biçimine dönüştürmek için bu yöntemi çağırın.  
   
 ```
@@ -447,7 +442,7 @@ bool MakeAbsolute() throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  Mutlak biçimde güvenlik tanımlayıcısı, bilgi yerine içerdiği bilgilere işaretçiler içerir. Güvenlik tanımlayıcısı kendine bağlı biçimde bitişik bir bellek bloğu bilgileri içerir. Kendine bağlı güvenlik tanımlayıcısı'nda bir **SECURITY_DESCRIPTOR** yapısı bilgileri her zaman başlatır, ancak diğer güvenlik tanımlayıcısı kullanıcının bileşenleri herhangi bir sırada yapısı izleyin. Bellek adreslerini kullanmak yerine, kendine bağlı güvenlik tanımlayıcısı bileşenlerinin güvenlik tanımlayıcısı başından uzaklık tarafından tanımlanır. Bu biçim bir güvenlik açıklayıcısı bir diskte depolanan veya bir iletişim protokolü aracılığıyla aktarılan faydalıdır. Daha fazla bilgi için bkz: [mutlak ve Self-Relative güvenlik tanımlayıcıları](http://msdn.microsoft.com/library/windows/desktop/aa374807).  
   
-##  <a name="makeselfrelative"></a>CSecurityDesc::MakeSelfRelative  
+##  <a name="makeselfrelative"></a>  CSecurityDesc::MakeSelfRelative  
  Güvenlik tanımlayıcısı kendine bağlı biçime dönüştürmek için bu yöntemi çağırın.  
   
 ```
@@ -482,7 +477,7 @@ CSecurityDesc& operator= (const CSecurityDesc& rhs) throw(...);
 operator const SECURITY_DESCRIPTOR *() const throw();
 ```  
   
-##  <a name="setcontrol"></a>CSecurityDesc::SetControl  
+##  <a name="setcontrol"></a>  CSecurityDesc::SetControl  
  Güvenlik tanımlayıcısının denetim bitlerini ayarlar.  
   
 ```
@@ -504,7 +499,7 @@ bool SetControl(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi çağırır [SetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).  
   
-##  <a name="setdacl"></a>CSecurityDesc::SetDacl  
+##  <a name="setdacl"></a>  CSecurityDesc::SetDacl  
  Bir isteğe bağlı erişim denetimi listesi (DACL) bilgilerini ayarlar. Güvenlik tanımlayıcısı DACL zaten varsa, değiştirilir.  
   
 ```
@@ -533,7 +528,7 @@ inline void SetDacl(
 ### <a name="remarks"></a>Açıklamalar  
  Boş bir ve varolmayan bir DACL arasında önemli bir fark yoktur. DACL boş olduğunda, hiçbir erişim denetimi girdileri içerir ve hiçbir erişim haklarını açıkça verildi. Sonuç olarak, nesne erişimi örtük olarak reddedildi. Bir nesne DACL yok olduğunda, diğer yandan koruma nesnesine atanmış ve herhangi bir erişim istek verilir.  
   
-##  <a name="setgroup"></a>CSecurityDesc::SetGroup  
+##  <a name="setgroup"></a>  CSecurityDesc::SetGroup  
  Zaten mevcut herhangi bir birincil grup bilgi değiştirerek bir mutlak biçimde güvenlik tanımlayıcısı birincil grup bilgilerini ayarlar.  
   
 ```
@@ -550,7 +545,7 @@ bool SetGroup(const CSid& Sid, bool bDefaulted = false) throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
-##  <a name="setowner"></a>CSecurityDesc::SetOwner  
+##  <a name="setowner"></a>  CSecurityDesc::SetOwner  
  Mutlak biçimde güvenlik tanımlayıcısı sahibi bilgilerini ayarlar. Zaten mevcut herhangi bir sahiplik bilgilerini değiştirir.  
   
 ```
@@ -567,7 +562,7 @@ bool SetOwner(const CSid& Sid, bool bDefaulted = false) throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
-##  <a name="setsacl"></a>CSecurityDesc::SetSacl  
+##  <a name="setsacl"></a>  CSecurityDesc::SetSacl  
  Bilgileri bir sistem erişim denetimi listesi (SACL) ayarlar. Güvenlik tanımlayıcısı SACL zaten varsa, değiştirilir.  
   
 ```
@@ -584,7 +579,7 @@ bool SetSacl(const CSacl& Sacl, bool bDefaulted = false) throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
-##  <a name="tostring"></a>CSecurityDesc::ToString  
+##  <a name="tostring"></a>  CSecurityDesc::ToString  
  Güvenlik tanımlayıcısı dizesi biçimine dönüştürür.  
   
 ```

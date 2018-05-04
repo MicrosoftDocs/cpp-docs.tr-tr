@@ -1,12 +1,9 @@
 ---
-title: "Kopyalama oluşturucuları ve kopya atama işleçleri (C++) | Microsoft Docs"
-ms.custom: 
+title: Kopyalama oluşturucuları ve kopya atama işleçleri (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - copying objects
 - assigning values to copy objects
 ms.assetid: a94fe1f9-0289-4fb9-8633-77c654002c0d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f2ebf51f28912c3cb798acc1ff4aa377c1bebb5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a1292240e5343c461142e8c6029c277175f6a62f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="copy-constructors-and-copy-assignment-operators-c"></a>Kopya Oluşturucuları ve Kopya Atama İşleçleri (C++)
 > [!NOTE]
@@ -66,7 +61,7 @@ b = a;
   
  Kopya Oluşturucu bildirmeyin, derleyici member-wise kopya Oluşturucu oluşturur.  Bir kopya atama işleci bildirme derleyici member-wise kopya atama işleci sizin için oluşturur. Kopya Oluşturucu bildirme değil bastırmak derleyicinin ürettiği kopyalama atama işleci ya da bunun tam tersi. Herhangi birini uygularsanız, böylece kodu anlamını açıktır, ayrıca diğeri uygulamanız önerilir.  
    
- Kopya Oluşturucu türünde bir bağımsız değişken alan *sınıf adı***&**, burada *sınıf adı* Oluşturucusu tanımlanır sınıfı adı. Örneğin:  
+ Kopya Oluşturucu türünde bir bağımsız değişken alan * sınıfı-name ***&**, burada *sınıf adı* Oluşturucusu tanımlanır sınıfı adı. Örneğin:  
   
 ```cpp  
 // spec1_copying_class_objects.cpp  
@@ -83,14 +78,14 @@ int main()
 ```  
   
 > [!NOTE]
->  Kopya Oluşturucu ait bağımsız değişken türü olun *const sınıf adı*  **&**  mümkün olduğunda. Bu, kopya Oluşturucu içinden kopyalıyor nesne yanlışlıkla değiştirmesini engeller. Ayrıca, kopyalama sağlar **const** nesneleri.  
+>  Kopya Oluşturucu ait bağımsız değişken türü olun *const sınıfı-ad *** &** mümkün olduğunda. Bu, kopya Oluşturucu içinden kopyalıyor nesne yanlışlıkla değiştirmesini engeller. Ayrıca, kopyalama sağlar **const** nesneleri.  
   
 ## <a name="compiler-generated-copy-constructors"></a>Oluşturulan derleyici kopya oluşturucuları  
- Kullanıcı tanımlı kopya oluşturucuları gibi derleyicinin ürettiği kopyalama oluşturucular sahip tek bir bağımsız değişken türü "başvuru *sınıf adı*." Kopya oluşturucuları türden tek bir bağımsız değişken alan olarak bildirilen tüm temel sınıflar ve üye sınıfları sahip bir özel durumdur **const** *sınıf adı***&**. Böyle bir durumda olmayan derleyicinin ürettiği kopyalama Oluşturucusu ait bağımsız değişken de **const**.  
+ Kullanıcı tanımlı kopya oluşturucuları gibi derleyicinin ürettiği kopyalama oluşturucular sahip tek bir bağımsız değişken türü "başvuru *sınıf adı*." Kopya oluşturucuları türden tek bir bağımsız değişken alan olarak bildirilen tüm temel sınıflar ve üye sınıfları sahip bir özel durumdur **const** * sınıfı-name ***&**. Böyle bir durumda olmayan derleyicinin ürettiği kopyalama Oluşturucusu ait bağımsız değişken de **const**.  
   
  Kopya Oluşturucu için bağımsız değişken türü olmadığında **const**, kopyalayarak başlatma bir **const** nesne hata oluşturur. Bu durumun tersi geçerli değildir: bağımsız değişken ise **const**, değil bir nesne kopyalayarak başlatabilir **const**.  
   
- Derleyicinin ürettiği atama işleçleri izleyin aynı desen ile regard **const.** Tek bir bağımsız değişken türü aldıkları *sınıf adı*  **&**  tüm temel ve üye sınıflardaki atama işleçleri türü bağımsız değişkenleri almadıkça **const** *sınıf adı &.* Bu durumda, sınıf atama işleci alır oluşturulan bir **const** bağımsız değişkeni.  
+ Derleyicinin ürettiği atama işleçleri izleyin aynı desen ile regard **const.** Tek bir bağımsız değişken türü aldıkları *sınıfı-ad *** &** tüm temel ve üye sınıflardaki atama işleçleri türü bağımsız değişkenleri almadıkça **const** *sınıf adı &.* Bu durumda, sınıf atama işleci alır oluşturulan bir **const** bağımsız değişkeni.  
   
 > [!NOTE]
 >  Sanal temel sınıflar, derleyici tarafından oluşturulan veya kullanıcı tanımlı kopya oluşturucular tarafından başlatıldığında, yalnızca bir kez başlatılırlar: Oluşturuldukları noktada.  

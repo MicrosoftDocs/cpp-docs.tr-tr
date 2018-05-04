@@ -27,14 +27,13 @@ helpviewer_keywords:
 ms.assetid: d1ea3113-50a2-45a6-b6bc-680fcdcc0928
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f67c7303bd20b4b9b6088b9107e1a60ffd19f2b
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: fcbd7f4258447df6f60f464b4c0a24080155fa9c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="citan"></a>_CItan
 
@@ -59,4 +58,4 @@ Sonuç değeri kayan nokta yığının en üst gönderilir.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[Bronz, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl.md)<br/>
+[tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl.md)<br/>

@@ -1,12 +1,9 @@
 ---
-title: "ATL Denetim Sihirbazı | Microsoft Docs"
-ms.custom: 
+title: ATL Denetim Sihirbazı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.atl.control.overview
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - controls [ATL], adding to projects
 - ATL Control Wizard
 ms.assetid: 991f8e72-ffbc-4382-a4ce-e255acfba5b6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a9167153c2b827e1bc2597e830e9b3c82ee31b7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1df64cd0661a7f905ebcc068efb698306ac9007e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="atl-control-wizard"></a>ATL Denetim Sihirbazı
 ATL projesinde (veya MFC projesinde ATL desteği) ekler ATL Denetim. Üç tür denetimleri birini eklemek için bu sihirbazı kullanın:  
@@ -55,7 +50,7 @@ ATL projesinde (veya MFC projesinde ATL desteği) ekler ATL Denetim. Üç tür d
  **Kısa ad**  
  Nesne için kısa ad ayarlar. Sınıfı, sağladığınız ad belirler ve **Coclass** adları, dosyanın (. CPP ve. H) adları, arabirim adı ve **türü** alanlarla ayrı ayrı değiştirmediğiniz sürece adları.  
   
- **Sınıfı**  
+ **sınıfı**  
  Nesne uygulayan sınıf adını ayarlar. Bu ad, sağladığınız adına dayanarak **kısa ad**, öncesinde 'C', tipik bir sınıf adı öneki olarak.  
   
  **.h dosyası**  
@@ -80,7 +75,7 @@ ATL projesinde (veya MFC projesinde ATL desteği) ekler ATL Denetim. Üç tür d
 ### <a name="com"></a>COM  
  Nesne için COM işlevleri hakkında bilgi sağlar.  
   
- **Coclass'ı**  
+ **coclass'ı**  
  Nesne tarafından desteklenen arabirimleri listesini içeren bileşen sınıfı adını ayarlar.  
   
 > [!NOTE]

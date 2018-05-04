@@ -1,13 +1,10 @@
 ---
-title: "Gecikmeli yükleme içe aktarmalarını dökme | Microsoft Docs"
-ms.custom: 
+title: Gecikmeli yükleme içe aktarmalarını dökme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - imports (delay-loaded)
 - delay-loaded imports
 ms.assetid: f766acf4-9df8-4b85-8cf6-0be3ffc4c124
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3800d4863bc1aa3e3c847ff0cea886be2fede985
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 13f832f0ea7aaf7b766141ce7df4f83f21e1cdca
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="dumping-delay-loaded-imports"></a>Gecikmeli Yükleme İçe Aktarmalarını Dökme
 Gecikmeli yüklenen içeri aktarmalar yazılan kullanarak [DUMPBIN/imports](../../build/reference/imports-dumpbin.md) ve biraz farklı bilgilerle standart alır daha görünür. Bunlar, kendi dökme/imports bölüme yinelenmeli ve açıkça Gecikmeli yüklenen içeri aktarmalar etiketlenir. Varsa bilgi görüntüde mevcut kaldırma, Not edilir. Bağlama bilgileri mevcut ise, saat ve tarih damgası hedef DLL içeri aktarmalar ilişkili adresleriyle birlikte not edilir.  

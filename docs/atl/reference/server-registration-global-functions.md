@@ -1,12 +1,9 @@
 ---
-title: "Sunucu kayıt genel işlevler | Microsoft Docs"
-ms.custom: 
+title: Sunucu kayıt genel işlevler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - atlbase/ATL::AtlComModuleRegisterServer
@@ -17,17 +14,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: c2f0a35d-857c-4538-a44d-c4ea0db63b06
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f5cfffbcc47555ee8cff7cd6e18ea54b5524607
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 08a4141ab5ff27e44f663a4d5f267c2b7d754283
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="server-registration-global-functions"></a>Sunucu kayıt genel işlevler
 Bu işlevler kaydetme ve sunucu nesneleri nesneyi eşlemesindeki kaydını kaldırmak için destek sağlar.  
@@ -46,7 +41,7 @@ Bu işlevler kaydetme ve sunucu nesneleri nesneyi eşlemesindeki kaydını kald�
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
    
-##  <a name="atlcommoduleregisterserver"></a>AtlComModuleRegisterServer  
+##  <a name="atlcommoduleregisterserver"></a>  AtlComModuleRegisterServer  
  Bu işlev, nesne eşlemesindeki her nesneyi kaydetmek için çağrılır.  
   
 ```
@@ -70,11 +65,11 @@ ATLINLINE ATLAPI AtlComModuleRegisterServer(
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AtlComModuleRegisterServer`ATL otomatik olarak oluşturulur nesne eşlemesi anlatılmaktadır ve her nesne eşlemesinde kaydeder. Varsa `pCLSID` değil NULL sonra başvurulan nesnenin `pCLSID` kaydedilir; Aksi takdirde tüm nesneler kaydedilir.  
+ `AtlComModuleRegisterServer` ATL otomatik olarak oluşturulur nesne eşlemesi anlatılmaktadır ve her nesne eşlemesinde kaydeder. Varsa `pCLSID` değil NULL sonra başvurulan nesnenin `pCLSID` kaydedilir; Aksi takdirde tüm nesneler kaydedilir.  
   
  Bu işlev tarafından çağrılır [CAtlComModule::RegisterServer](catlcommodule-class.md#registerserver).  
   
-##  <a name="atlcommoduleunregisterserver"></a>AtlComModuleUnregisterServer  
+##  <a name="atlcommoduleunregisterserver"></a>  AtlComModuleUnregisterServer  
  Bu işlev, nesne eşlemesindeki her nesnenin kaydını silmek için çağrılır.  
   
 ```
@@ -98,11 +93,11 @@ ATLINLINE ATLAPI AtlComModuleUnregisterServer(
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AtlComModuleUnregisterServer`ATL nesne eşlemesi anlatılmaktadır ve her nesne eşlemesindeki kaydını siler. Varsa `pCLSID` değil NULL sonra başvurulan nesnenin `pCLSID` kaydı; Aksi takdirde tüm nesneleri kaydı.  
+ `AtlComModuleUnregisterServer` ATL nesne eşlemesi anlatılmaktadır ve her nesne eşlemesindeki kaydını siler. Varsa `pCLSID` değil NULL sonra başvurulan nesnenin `pCLSID` kaydı; Aksi takdirde tüm nesneleri kaydı.  
   
  Bu işlev tarafından çağrılır [CAtlComModule::UnregisterServer](catlcommodule-class.md#unregisterserver).  
   
-##  <a name="atlcommoduleregisterclassobjects"></a>AtlComModuleRegisterClassObjects  
+##  <a name="atlcommoduleregisterclassobjects"></a>  AtlComModuleRegisterClassObjects  
  Bu işlev nesne sınıflarını kaydetmek için çağrılır.  
   
 ```
@@ -128,7 +123,7 @@ ATLINLINE ATLAPI AtlComModuleRegisterClassObjects(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yardımcı işlevi tarafından kullanılan [CComModule::RegisterClassObjects](ccommodule-class.md#registerclassobjects) (ATL 7. 0'te eski) ve [CAtlExeModuleT::RegisterClassObjects](catlexemodulet-class.md#registerclassobjects).  
   
-##  <a name="atlcommodulerevokeclassobjects"></a>AtlComModuleRevokeClassObjects  
+##  <a name="atlcommodulerevokeclassobjects"></a>  AtlComModuleRevokeClassObjects  
  Bu işlev Çalışan Nesne Tablosundan sınıf üretecini kaldırmak için çağrılır.  
   
 ```
@@ -145,7 +140,7 @@ ATLINLINE ATLAPI AtlComModuleRevokeClassObjects(_ATL_COM_MODULE* pComModule);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yardımcı işlevi tarafından kullanılan [CComModule::RevokeClassObjects](ccommodule-class.md#revokeclassobjects) (ATL 7. 0'te eski) ve [CAtlExeModuleT::RevokeClassObjects](catlexemodulet-class.md#revokeclassobjects).  
   
-##  <a name="atlcommodulegetclassobject"></a>AtlComModuleGetClassObject  
+##  <a name="atlcommodulegetclassobject"></a>  AtlComModuleGetClassObject  
  Sınıf üretecini döndürmek için bu işlev çağrılır.  
   
 ```

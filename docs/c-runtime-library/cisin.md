@@ -4,7 +4,7 @@ ms.custom: ''
 ms.date: 04/10/2018
 ms.technology:
 - cpp-standard-libraries
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - _CIsin
 apilocation:
@@ -27,14 +27,13 @@ helpviewer_keywords:
 ms.assetid: f215f39a-2341-4f1c-ba8e-cb522451ceb2
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0b06cd381bd93befd8fade4816ca4ead6b3ef9d
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 4d4593b02b08b1828ff4b29c8f55bfcaf4baa0c9
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cisin"></a>_CIsin
 
@@ -59,4 +58,4 @@ Sonuç değeri kayan nokta yığının en üst gönderilir.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[Sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)<br/>
+[sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)<br/>

@@ -1,12 +1,9 @@
 ---
-title: "IEnumOnSTLImpl sınıfı | Microsoft Docs"
-ms.custom: 
+title: IEnumOnSTLImpl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - IEnumOnSTLImpl
@@ -24,17 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - IEnumOnSTLImpl class
 ms.assetid: 1789e77b-88b8-447d-a490-806b918912ce
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38d645f7841cb71af9812bd1d62a979752a0343d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1de4bdd0d07e694303f850d6298d77afe3322214
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ienumonstlimpl-class"></a>IEnumOnSTLImpl sınıfı
 Bu sınıf bir C++ Standart Kitaplığı koleksiyona bağlı bir numaralandırıcı arabirimi tanımlar.  
@@ -84,7 +79,7 @@ class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
 |[IEnumOnSTLImpl::m_spUnk](#m_spunk)|**IUnknown** koleksiyonu sağladığını nesne işaretçisi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `IEnumOnSTLImpl`Numaralandırılan öğeleri C++ Standart kitaplığı ile uyumlu kapsayıcısında depolandığı COM Numaralandırıcı arabirimi uygulamasını sağlar. Bu sınıf için paraleldir [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md) bir uygulama için bir numaralandırıcı arabirim sağlayan sınıf tabanlı bir dizi.  
+ `IEnumOnSTLImpl` Numaralandırılan öğeleri C++ Standart kitaplığı ile uyumlu kapsayıcısında depolandığı COM Numaralandırıcı arabirimi uygulamasını sağlar. Bu sınıf için paraleldir [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md) bir uygulama için bir numaralandırıcı arabirim sağlayan sınıf tabanlı bir dizi.  
   
 > [!NOTE]
 >  Bkz: [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#init) daha fazla arasındaki farklar hakkında ayrıntılı bilgi için `CComEnumImpl` ve `IEnumOnSTLImpl`.  
@@ -101,7 +96,7 @@ class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="init"></a>IEnumOnSTLImpl::Init  
+##  <a name="init"></a>  IEnumOnSTLImpl::Init  
  Numaralayıcı başlatır.  
   
 ```
@@ -125,7 +120,7 @@ HRESULT Init(
   
  Numaralandırıcı arabirimi tüm istemciler için bir işaretçi geçirmeden önce bu yöntemi çağırmanız gerekir.  
   
-##  <a name="clone"></a>IEnumOnSTLImpl::Clone  
+##  <a name="clone"></a>  IEnumOnSTLImpl::Clone  
  Bu yöntem uygulamasını sağlar [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx) türünde bir nesne oluşturarak yöntemi `CComEnumOnSTL`, aynı toplama ve geçerli nesne tarafından kullanılan yineleyici başlatma ve üzerinde arabirimi döndürme Yeni oluşturulan nesne.  
   
 ```
@@ -139,7 +134,7 @@ STDMETHOD(Clone)(Base** ppEnum);
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
-##  <a name="m_spunk"></a>IEnumOnSTLImpl::m_spUnk  
+##  <a name="m_spunk"></a>  IEnumOnSTLImpl::m_spUnk  
  **IUnknown** koleksiyonu sağladığını nesne işaretçisi.  
   
 ```
@@ -149,7 +144,7 @@ CComPtr<IUnknown> m_spUnk;
 ### <a name="remarks"></a>Açıklamalar  
  Bu akıllı işaretçi geçirilen nesne üzerinde bir başvuru tutar [IEnumOnSTLImpl::Init](#init), onu Numaralandırıcı ömrü boyunca etkin kalmasını sağlama.  
   
-##  <a name="m_pcollection"></a>IEnumOnSTLImpl::m_pcollection  
+##  <a name="m_pcollection"></a>  IEnumOnSTLImpl::m_pcollection  
  Bu üye Numaralandırıcı arabirimi uyarlamasını yürüten verileri sağlayan koleksiyona işaret eder.  
   
 ```
@@ -159,14 +154,14 @@ CollType* m_pcollection;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye için bir çağrı tarafından başlatılana [IEnumOnSTLImpl::Init](#init).  
   
-##  <a name="m_iter"></a>IEnumOnSTLImpl::m_iter  
+##  <a name="m_iter"></a>  IEnumOnSTLImpl::m_iter  
  Bu üye koleksiyonun içindeki geçerli konumu işaretlemek ve sonraki öğelerine gezinmek için kullanılan yineleyici tutar.  
   
 ```
 CollType::iterator m_iter;
 ```  
   
-##  <a name="next"></a>IEnumOnSTLImpl::Next  
+##  <a name="next"></a>  IEnumOnSTLImpl::Next  
  Bu yöntem uygulamasını sağlar [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) yöntemi.  
   
 ```
@@ -189,7 +184,7 @@ STDMETHOD(Next)(
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
-##  <a name="reset"></a>IEnumOnSTLImpl::Reset  
+##  <a name="reset"></a>  IEnumOnSTLImpl::Reset  
  Bu yöntem uygulamasını sağlar [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx) yöntemi.  
   
 ```
@@ -199,7 +194,7 @@ STDMETHOD(Reset)(void);
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
-##  <a name="skip"></a>IEnumOnSTLImpl::Skip  
+##  <a name="skip"></a>  IEnumOnSTLImpl::Skip  
  Bu yöntem uygulamasını sağlar [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx) yöntemi.  
   
 ```

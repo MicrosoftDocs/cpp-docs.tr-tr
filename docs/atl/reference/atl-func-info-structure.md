@@ -1,12 +1,9 @@
 ---
-title: "_ATL_FUNC_INFO yapısı | Microsoft Docs"
-ms.custom: 
+title: _ATL_FUNC_INFO yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - _ATL_FUNC_INFO
@@ -18,19 +15,17 @@ helpviewer_keywords:
 - _ATL_FUNC_INFO structure
 - ATL_FUNC_INFO structure
 ms.assetid: 441ebe2c-f971-47de-9f52-a258e8d6f88e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5e184f1c78264304b8e4424ea3f9659689f333b
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: d5f3b759591333a41c3bc9da083e8e724249d13d
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="atlfuncinfo-structure"></a>_ATL_FUNC_INFO Structure
+# <a name="atlfuncinfo-structure"></a>_ATL_FUNC_INFO yapısı
 Bir yöntemi veya özelliği üzerinde görüntüleme arabirimi tanımlamak için kullanılan tür bilgileri içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  

@@ -2,12 +2,9 @@
 title: BSCMAKE seçenekleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCBscMakeTool.OutputFile
 - VC.Project.VCBscMakeTool.SuppressStartupBanner
@@ -38,17 +35,15 @@ helpviewer_keywords:
 - /Es BSCMAKE option
 - Ei BSCMAKE option
 ms.assetid: fa2f1e06-c684-41cf-80dd-6a554835ebd2
-caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46c258a5591615bb277823ccc5261fade3c5e2af
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 16fd9bc8813179d23e83ab0a21a84ad815501bf6
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="bscmake-options"></a>BSCMAKE Seçenekleri
 Bu bölümde BSCMAKE denetlemek için kullanılabilen seçenekler açıklanmaktadır. Çeşitli seçenekler gözatma bilgileri dosyası içeriğini hariç veya belirli bilgiler dahil olmak üzere denetler. Dışlama seçenekleri BSCMAKE daha hızlı çalışmasına izin verebilir ve daha küçük bir .bsc dosyasında neden olabilir. Seçenek adları büyük küçük harfe duyarlı (dışında **/Yardım** ve **/nologo**).  
@@ -70,7 +65,7 @@ Bu bölümde BSCMAKE denetlemek için kullanılabilen seçenekler açıklanmakta
  /ES  
  Gözatma bilgileri dosyasından INCLUDE ortam değişkeninde belirtilen mutlak bir yol bulunamadı ya da mutlak bir yol ile belirtilen her içerme dosyası dışlar. (Sistem genellikle, bunlar çok miktarda Gözat bilgi dosyanızda gerekmeyebilir bilgisi içeren dosyaları içerir.) Bu seçenek, belirtilen yol olmadan veya göreli yollar veya INCLUDE göreli yolda bulunan dosyalarla dosyaları dışarıda değil. Kullanabileceğiniz **/Ei** ile birlikte seçeneği **/Es** hariç tutulacak dosyalar **/Es** hariç tutmaz. Yalnızca bazı dosyaları dışarıda bırakmak istiyorsanız, **/Es** hariç kullanmak **/Ei** yerine **/Es** ve dışlamak istediğiniz dosyaların listesi.  
   
- / errorreport: [hiçbiri &#124; istemi &#124; sıra &#124; gönderme]  
+ / errorreport: [hiçbiri &#124; istemi &#124; sıra &#124; Gönder]  
  Bscmake.exe iç hatalara ilişkin bilgileri Microsoft'a göndermek olanak sağlar.  
   
  Daha fazla bilgi için **/errorreport**, bkz: [/errorreport (dahili derleme hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md).  
@@ -82,12 +77,12 @@ Bu bölümde BSCMAKE denetlemek için kullanılabilen seçenekler açıklanmakta
  Başvurulmayan simgeleri içerir. Varsayılan olarak, BSCMAKE tanımlı, ancak yapılmayan simgeleri kaydetmez. .Sbr dosyası paketlenmiş, derleyici başvurulmayan simgeleri zaten kaldırıldığından bu seçenek, giriş dosyası için etkisi yoktur.  
   
  /n  
- Nonincremental derleme zorlar. Kullanım  **/n**  olsun veya olmasın .bsc dosyası var. gözatma bilgileri dosyası tam derlemesinde zorlamak için ve kesilmiş gelen .sbr dosyaları engellemek için. Bkz: [BSCMAKE .bsc dosyasını nasıl derler](../../build/reference/how-bscmake-builds-a-dot-bsc-file.md).  
+ Nonincremental derleme zorlar. Kullanım **/n** olsun veya olmasın .bsc dosyası var. gözatma bilgileri dosyası tam derlemesinde zorlamak için ve kesilmiş gelen .sbr dosyaları engellemek için. Bkz: [BSCMAKE .bsc dosyasını nasıl derler](../../build/reference/how-bscmake-builds-a-dot-bsc-file.md).  
   
  /NOLOGO  
  BSCMAKE telif hakkı iletisi gizler.  
   
- /o`filename`  
+ /o `filename`  
  Gözatma bilgileri dosyası için bir ad belirtir. Varsayılan olarak, BSCMAKE ilk .sbr dosyası ve bir .bsc uzantısı temel adı gözatma bilgileri dosyası sağlar.  
   
  / S ( `filename`...)  

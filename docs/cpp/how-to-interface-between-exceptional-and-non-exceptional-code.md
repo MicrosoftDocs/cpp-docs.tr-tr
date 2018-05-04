@@ -1,32 +1,27 @@
 ---
-title: "Nasıl yapılır: özel durumlu ve özel durumlu olmayan kod arasındaki arabirim | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: özel durumlu ve özel durumlu olmayan kod arasındaki arabirim | Microsoft Docs'
+ms.custom: how-to
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: fd5bb4af-5665-46a1-a321-614b48d4061e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59838fa1797fc87561b081d40143693dea385668
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f2cf2216ba75912520f744f0f0331a50520aa895
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-interface-between-exceptional-and-non-exceptional-code"></a>Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasındaki Arabirim
 Bu makalede nasıl tutarlı özel durum işlemeyi C++ modülünde uygulanacağını ve bu özel durumlar için ve özel durum sınırlarında hata kodlarından Çevir nasıl açıklanmaktadır.  
   
- C++ modülü bazen gerekir özel durumları (özel durumlu olmayan kod) kullanmayan kodu arabirimi. Böyle bir arabirim olarak bilinen bir *özel durum sınır*. Örneğin, Win32 işlevi çağırmak isteyebilir `CreateFile` C++ programı. `CreateFile`özel durumlar oluşturma değil; Bunun yerine tarafından alınan hata kodları ayarlar `GetLastError` işlevi. C++ programı Önemsiz olmayan ise, ardından içinde büyük olasılıkla tutarlı bir özel durum tabanlı hata işleme ilkesi olması tercih edilir. Ve büyük olasılıkla yalnızca özel durumlu olmayan kod ile arabirim ve, C++ modülünde hata özel durum tabanlı ve özel durum tabanlı ilkeleri karıştırmak istediğiniz özel durumlar bırakmasını istemiyorum.  
+ C++ modülü bazen gerekir özel durumları (özel durumlu olmayan kod) kullanmayan kodu arabirimi. Böyle bir arabirim olarak bilinen bir *özel durum sınır*. Örneğin, Win32 işlevi çağırmak isteyebilir `CreateFile` C++ programı. `CreateFile` özel durumlar oluşturma değil; Bunun yerine tarafından alınan hata kodları ayarlar `GetLastError` işlevi. C++ programı Önemsiz olmayan ise, ardından içinde büyük olasılıkla tutarlı bir özel durum tabanlı hata işleme ilkesi olması tercih edilir. Ve büyük olasılıkla yalnızca özel durumlu olmayan kod ile arabirim ve, C++ modülünde hata özel durum tabanlı ve özel durum tabanlı ilkeleri karıştırmak istediğiniz özel durumlar bırakmasını istemiyorum.  
   
 ## <a name="calling-non-exceptional-functions-from-c"></a>C++ içinden özel durumlu olmayan işlevleri çağırma  
  C++ içinden özel durumlu olmayan bir işlev çağırdığınızda, bu işlev hataları algılar ve büyük olasılıkla bir özel durum oluşturur C++ işlevinde sarmalamak olur. Bu tür bir sarmalayıcı işlevi tasarlarken, özel durum garantisi sağlamak için hangi tür ilk karar verin: Hayır throw, güçlü veya temel. İkinci olarak, bir özel durum, tüm kaynaklar, örneğin, dosya tanıtıcıları doğru serbest şekilde işlevi tasarlayın. Genellikle, bu kaynakları sahibi Akıllı işaretçiler veya benzer kaynak yöneticileri kullanmak anlamına gelir. Tasarım konuları hakkında daha fazla bilgi için bkz: [nasıl yapılır: özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md).  

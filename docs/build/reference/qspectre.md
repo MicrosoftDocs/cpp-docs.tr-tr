@@ -1,13 +1,10 @@
 ---
 title: / Qspectre | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 1/23/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 f1_keywords:
@@ -16,16 +13,15 @@ helpviewer_keywords:
 - /Qspectre
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b114239ad57b484c9290fbe1cc2f0ae18cb565ec
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: 3d87850ae5413ccf876eb4d4b44b34e34527ef9a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="qspectre"></a>/Qspectre
+# <a name="qspectre"></a>/ Qspectre
 
 Belirli Spectre değişken 1 güvenlik açıklarını azaltmak için yönergeler derleyici nesil belirtir.
 

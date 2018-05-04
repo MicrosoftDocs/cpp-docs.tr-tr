@@ -1,29 +1,24 @@
 ---
-title: "Özel durum işleme Visual c++'ta | Microsoft Docs"
-ms.custom: 
+title: Özel durum işleme Visual c++'ta | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - try-catch keyword [C++], exception handling
 ms.assetid: a6aa08de-669d-4ce8-9ec3-ec20d1354fcf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33ec97d5f29398e9e20be9609573eecf33894948
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0acd5df644f097d19e5f9708f0a059a31f3e9ee9
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="exception-handling-in-visual-c"></a>Visual C++'da Özel Durum İşleme
 Bir özel durum denetimi dışında kalan program kendi normal yürütme yol boyunca devam etmesini engelleyen büyük olasılıkla programın, bir hata durumudur. Nesne oluşturma, dosya giriş/çıkış ve diğer modüllerden yapılan işlev çağrıları gibi bazı işlemleri bile programınız düzgün çalışmasını özel durumların tüm olası kaynakları olur. Sağlam kod düşünmektedir ve özel durumları işler.  

@@ -1,30 +1,25 @@
 ---
-title: "İşlevlerine genel bakış | Microsoft Docs"
-ms.custom: 
+title: İşlevlerine genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - functions [C++]
 - control flow, function calls
 ms.assetid: b6f4637f-02b9-49d8-8601-1f886bd2cfb9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 093400e5d98b0b5e0336c2f640ed0937bdb157b9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: eb5d7dbdfb5206a29e217a5de73ee492be6c28ab
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="overview-of-functions"></a>İşlevlere Genel Bakış
 İşlevler bir tanım olmalıdır ve işlevi çağrılmadan önce bildirimi görünürse bir tanımı bildirimi olarak hizmet verebilir rağmen bir bildirimi sahip olmalıdır. İşlev gövdesi işlev tanımı içerir — işlevi çağrıldığında yürütülen kodu.  

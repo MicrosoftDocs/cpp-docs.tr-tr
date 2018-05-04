@@ -1,13 +1,10 @@
 ---
-title: "-Yl (hata ayıklama kitaplığı için PCH Başvurusu Ekle) | Microsoft Docs"
-ms.custom: 
+title: -Yl (hata ayıklama kitaplığı için PCH Başvurusu Ekle) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /yl
 dev_langs:
@@ -19,14 +16,13 @@ helpviewer_keywords:
 ms.assetid: 8e4a396a-6790-4a9f-8387-df015a3220e7
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43e960906c504e5378a77d047c8eb1ab4d4594fe
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: a73e79cd50343292ae63dfa831a7638d6444fc64
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="yl-inject-pch-reference-for-debug-library"></a>/Yl (Hata Ayıklama Kitaplığı için PCH Başvurusu Ekle)
 
@@ -40,7 +36,7 @@ ms.lasthandoff: 02/03/2018
 
 ### <a name="arguments"></a>Arguments
 
-*adı*  
+*Adı*  
 Benzersiz bir simge bir parçası olarak kullanılan isteğe bağlı adı.
 
 *\-*  

@@ -1,13 +1,10 @@
 ---
-title: "sacnf genişlik belirtimi | Microsoft Docs"
-ms.custom: 
+title: sacnf genişlik belirtimi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apilocation:
 - msvcr100.dll
 - msvcr120.dll
@@ -23,17 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - scanf function, width specification
 ms.assetid: 94b4e8fe-c4a2-4799-8b6c-a2cf28ffb09c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee2fa7f80f47e2d3379bc4e68aec4496e8f4f01a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f0052f4b270366b2f3aa1e1550f790efcb860597
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="scanf-width-specification"></a>sacnf Genişlik Belirtimi
 Biçim dizeleri yorumu bu bilgileri uygulandığı `scanf` gibi güvenli sürümleri dahil olmak üzere işlevlerin ailesi `scanf_s`. Bu İşlevler normalde giriş akışı belirteçleri dizisi ayrılmıştır varsayalım. Belirteçleri boşluk (boşluk, sekme ya da yeni satır) tarafından veya bir sayısal veri türü sayısal metne dönüştürülemez ilk karakter belirtildiği gibi doğal sonuna sayısal türler söz konusu olduğunda ayrılır. Ancak, bir belirteç doğal bitişinden önce durdurmak için giriş ayrıştırma neden genişlik belirtimi kullanılabilir.  
@@ -63,21 +58,21 @@ scanf_s("%20s", str, 21);
 |Belirtmek için|Ön ekini kullanın|Tür belirteci ile|  
 |----------------|----------------|-------------------------|  
 |**double**|**m**|**e**, **E**, **f**, **g**, veya **G**|  
-|**uzun çift** (aynı çift)|**M**|**e**, **E**, **f**, **g**, veya **G**|  
+|**uzun çift** (aynı çift)|**L**|**e**, **E**, **f**, **g**, veya **G**|  
 |**uzun tamsayı**|**m**|**d**, **ı**, **o**, **x**, veya **X**|  
 |**İmzasız Long int**|**m**|**u**|  
 |**uzun uzun**|**üm**|**d**, **ı**, **o**, **x**, veya **X**|  
 |`short int`|**h**|**d**, **ı**, **o**, **x**, veya **X**|  
 |**İmzasız short int**|**h**|**u**|  
 |__**Int64**|**I64**|**d**, **ı**, **o**, **u**, **x**, veya **X**|  
-|Tek baytlı karakter ile`scanf`|**h**|**c** veya **C**|  
-|Tek baytlı karakter ile`wscanf`|**h**|**c** veya **C**|  
-|Uluslararası karakter ile`scanf`|**m**|**c** veya **C**|  
-|Uluslararası karakter ile`wscanf`|**m**|**c**, veya **C**|  
-|Tek baytlı - karakter dizesi`scanf`|**h**|**s** veya **S**|  
-|Tek baytlı - karakter dizesi`wscanf`|**h**|**s** veya **S**|  
-|Joker karakter dizesiyle`scanf`|**m**|**s** veya **S**|  
-|Joker karakter dizesiyle`wscanf`|**m**|**s** veya **S**|  
+|Tek baytlı karakter ile `scanf`|**h**|**c** veya **C**|  
+|Tek baytlı karakter ile `wscanf`|**h**|**c** veya **C**|  
+|Uluslararası karakter ile `scanf`|**m**|**c** veya **C**|  
+|Uluslararası karakter ile `wscanf`|**m**|**c**, veya **C**|  
+|Tek baytlı - karakter dizesi `scanf`|**h**|**s** veya **S**|  
+|Tek baytlı - karakter dizesi `wscanf`|**h**|**s** veya **S**|  
+|Joker karakter dizesiyle `scanf`|**m**|**s** veya **S**|  
+|Joker karakter dizesiyle `wscanf`|**m**|**s** veya **S**|  
   
  Aşağıdaki örneklerde **h** ve **l** ile `scanf_s` işlevleri ve `wscanf_s` işlevleri:  
   
@@ -94,7 +89,7 @@ wscanf_s(L"%hC", &x, 2);    // Read a single-byte character
  Unutmayın **% [a-z]** ve **% [z-a]** eşdeğer olarak yorumlanan **%[abcde...z]**. Bir ortak budur `scanf` işlevi uzantısı ancak ANSI standart gerekli olmadığı olduğunu unutmayın.  
   
 ## <a name="reading-unterminated-strings"></a>Okuma Sonlandırılmamış dize  
- Sonlandırma null karakteri ('\0') depolamadan bir dize depolamak için belirtimi kullanmak `%`  *n*  **c** nerede  *n*  olduğu ondalık bir tamsayı. Bu durumda, **c** türü karakteri bağımsız değişkeni bir karakter dizisi için bir işaretçi olduğunu gösterir. Sonraki  *n*  karakterleri giriş akışından okuma belirtilen konuma ve hiçbir null karakteri ('\0') eklenir. Varsa  *n*  belirtilmezse, varsayılan değer 1'dir.  
+ Sonlandırma null karakteri ('\0') depolamadan bir dize depolamak için belirtimi kullanmak `%` *n *** c** nerede *n* ondalık bir tamsayıdır. Bu durumda, **c** türü karakteri bağımsız değişkeni bir karakter dizisi için bir işaretçi olduğunu gösterir. Sonraki *n* karakterleri giriş akışından okuma belirtilen konuma ve hiçbir null karakteri ('\0') eklenir. Varsa *n* belirtilmezse, varsayılan değer 1'dir.  
   
 ## <a name="when-scanf-stops-reading-a-field"></a>Scanf bir alanın okunması durduğunda  
  `scanf` İşlevi karakter her giriş alanını tarar. Çeşitli nedenlerle için bir boşluk karakteri erişmeden önce belirli bir giriş alanını okuma vermeyebilir:  

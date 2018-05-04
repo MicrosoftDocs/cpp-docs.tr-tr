@@ -1,12 +1,9 @@
 ---
-title: "CSocketAddr sınıfı | Microsoft Docs"
-ms.custom: 
+title: CSocketAddr sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CSocketAddr
@@ -22,17 +19,15 @@ dev_langs:
 helpviewer_keywords:
 - CSocketAddr class
 ms.assetid: 2fb2d8a7-899e-4a36-a342-cc9f4fcdd68c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cadd771e6c3a9e7addb6893b4427183cfff293c9
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 830b1087d0a4792b449c516ed12ad7e8a84b2a51
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="csocketaddr-class"></a>CSocketAddr sınıfı
 Bu sınıf ana bilgisayar adları hem IPv4 hem de IPv6 biçimlerini destekleyen konak adreslere dönüştürme yöntemleri sağlar.  
@@ -71,7 +66,7 @@ class CSocketAddr
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsocket.h  
   
-##  <a name="csocketaddr"></a>CSocketAddr::CSocketAddr  
+##  <a name="csocketaddr"></a>  CSocketAddr::CSocketAddr  
  Oluşturucu.  
   
 ```
@@ -81,7 +76,7 @@ CSocketAddr();
 ### <a name="remarks"></a>Açıklamalar  
  Yeni bir `CSocketAddr` nesne ve konak yanıt bilgilerini içeren bağlantılı listesini başlatır.  
   
-##  <a name="findaddr"></a>CSocketAddr::FindAddr  
+##  <a name="findaddr"></a>  CSocketAddr::FindAddr  
  Sağlanan ana makine adı ana bilgisayar adresine dönüştürmek için bu yöntemi çağırın.  
   
 ```
@@ -130,7 +125,7 @@ int FindAddr(
 ### <a name="remarks"></a>Açıklamalar  
  Ana bilgisayar adı parametresi IPv4 veya IPv6 biçiminde olabilir. Bu yöntem Win32 API işlev çağrılarını [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) dönüştürme gerçekleştirmek için.  
   
-##  <a name="findinet4addr"></a>CSocketAddr::FindINET4Addr  
+##  <a name="findinet4addr"></a>  CSocketAddr::FindINET4Addr  
  IPv4 ana bilgisayar adı ana bilgisayar adresine dönüştürmek için bu yöntemi çağırın.  
   
 ```
@@ -160,7 +155,7 @@ int FindINET4Addr(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem Win32 API işlev çağrılarını [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) dönüştürme gerçekleştirmek için.  
   
-##  <a name="findinet6addr"></a>CSocketAddr::FindINET6Addr  
+##  <a name="findinet6addr"></a>  CSocketAddr::FindINET6Addr  
  IPv6 ana bilgisayar adı ana bilgisayar adresine dönüştürmek için bu yöntemi çağırın.  
   
 ```
@@ -190,7 +185,7 @@ int FindINET6Addr(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem Win32 API işlev çağrılarını [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) dönüştürme gerçekleştirmek için.  
   
-##  <a name="getaddrinfo"></a>CSocketAddr::GetAddrInfo  
+##  <a name="getaddrinfo"></a>  CSocketAddr::GetAddrInfo  
  Belirli bir öğe için bir işaretçi döndürmek için bu yöntemi çağırabilmeniz **addrinfo** listesi.  
   
 ```
@@ -204,7 +199,7 @@ addrinfo* const GetAddrInfoint nIndex = 0) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi döndürür **addrinfo** başvurduğu yapısı `nIndex` konak yanıt bilgilerini içeren bağlantılı listesinde.  
   
-##  <a name="getaddrinfolist"></a>CSocketAddr::GetAddrInfoList  
+##  <a name="getaddrinfolist"></a>  CSocketAddr::GetAddrInfoList  
  Bir işaretçi döndürmek için bu yöntemi çağırın **addrinfo** listesi.  
   
 ```

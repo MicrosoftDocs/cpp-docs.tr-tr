@@ -2,11 +2,8 @@
 title: getpid | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - getpid
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - getpid function
 ms.assetid: 4eaabab4-362b-429f-854e-ae4941919824
-caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a74f0f1347ba3735250a80f117731ee9ae131b68
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: e59079cba5417a8815db572a003a9b89a3bc7e5c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getpid"></a>getpid
 

@@ -1,30 +1,25 @@
 ---
-title: "İzlenecek yol: Oluşturma ve kendi dinamik bağlantı kitaplığı (C++) kullanma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Oluşturma ve kendi dinamik bağlantı kitaplığı (C++) kullanma | Microsoft Docs'
+ms.custom: conceptual
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdcc02cf7c86b85684df0e8d8b7a1f0049ff7e25
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 19c9c013d591f4c6de14ecd4a2c582d8f0f3e4d3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>İzlenecek yol: Oluşturun ve kendi dinamik bağlantı kitaplığı (C++) kullanın
 
@@ -89,7 +84,7 @@ Görevlerin bu kümesindeki DLL için bir proje oluşturun, kodu ekleyin ve bu d
 >
 >1. Menü çubuğunda seçin **proje**, **özellikleri**.
 >
->1. Sol bölmesinde **özellik sayfaları** iletişim kutusunda **önişlemci** altında **yapılandırma özellikleri**, **C/C++**. İçeriğini denetlemek **önişlemci tanımları** özelliği.<br/><br/>![Önişlemci tanımları özelliğini denetleyin](media/mathlibrary-153bug-preprocessor-definitions-check.png "önişlemci tanımları özelliğini denetleyin")<br/><br/>Görürseniz **MATHLIBRARY &#95; Dışarı aktarma** içinde **önişlemci tanımları** değişikliği gerekmez sonra listeleyin. Görürseniz **MathLibrary &#95; Dışarı aktarma** bunun yerine, bu adımları izlemek sonra devam edin.
+>1. Sol bölmesinde **özellik sayfaları** iletişim kutusunda **önişlemci** altında **yapılandırma özellikleri**, **C/C++**. İçeriğini denetlemek **önişlemci tanımları** özelliği.<br/><br/>![Önişlemci tanımları özelliğini denetleyin](media/mathlibrary-153bug-preprocessor-definitions-check.png "önişlemci tanımları özelliğini denetleyin")<br/><br/>Görürseniz **MATHLIBRARY&#95;dışarı** içinde **önişlemci tanımları** değişikliği gerekmez sonra listeleyin. Görürseniz **MathLibrary&#95;dışarı** bunun yerine, bu adımları izlemek sonra devam edin.
 >
 >1. Üstündeki **özellik sayfaları** iletişim kutusunda, değişiklik **yapılandırma** aşağı açılan **tüm yapılandırmaları**.
 >
@@ -103,7 +98,7 @@ Görevlerin bu kümesindeki DLL için bir proje oluşturun, kodu ekleyin ve bu d
 
 1. Menü çubuğunda seçin **dosya**, **yeni**, **proje**.
 
-1. Sol bölmesinde **yeni proje** iletişim kutusunda, genişletin **yüklü**, **şablonları**seçip **Visual C++**ve ardından Merkezi bölmesinde, **Win32 konsol uygulaması**. Girin `MathLibrary` içinde **adı** düzenleme kutusu proje için bir ad belirtin.
+1. Sol bölmesinde **yeni proje** iletişim kutusunda, genişletin **yüklü**, **şablonları**seçip **Visual C++** ve ardından Merkezi bölmesinde, **Win32 konsol uygulaması**. Girin `MathLibrary` içinde **adı** düzenleme kutusu proje için bir ad belirtin.
 
    ![MathLibrary proje adı](media/mathlibrary-project-name.png "MathLibrary proje adı")
 
@@ -176,9 +171,9 @@ Sağ şimdi bu DLL oldukça yapmaz. Ardından, DLL işlevleri bildirmek için bi
 
 Bu üst bilgi dosyası genelleştirilmiş bir Fibonacci dizisi olan iki verilen ilk değer üretmek için bazı işlevler bildirir. Çağrı `fibonacci_init(1, 1)` tanıdık Fibonacci numara sırası oluşturur.
 
-Önişlemci deyimlerini dosyanın en üstüne dikkat edin. Varsayılan olarak, bir DLL için yeni bir proje şablonu ekler  ***PROJECTNAME*&#95; Dışarı aktarma** DLL projesi için tanımlanan Önişlemci makroları için. Bu örnekte, Visual Studio tanımlar **MATHLIBRARY &#95; Dışarı aktarma** MathLibrary DLL projenizi ne zaman oluşturulur. (Visual Studio 2017 sürüm 15.3 sihirbazda bu büyük harflerle sembol tanımına zorlamaz. Projeniz "MathLibrary" adı tanımlanmış simgenin MathLibrary &#95;olup; Dışarı aktarma MATHLIBRARY &#95;yerine; DIŞA AKTARIR. That's vardır neden ek adımlar bu simgeyi eklemek için yukarıdaki.)
+Önişlemci deyimlerini dosyanın en üstüne dikkat edin. Varsayılan olarak, bir DLL için yeni bir proje şablonu ekler ***PROJECTNAME *&#95;dışarı** DLL projesi için tanımlanan Önişlemci makroları için. Bu örnekte, Visual Studio tanımlar **MATHLIBRARY&#95;dışarı** MathLibrary DLL projenizi ne zaman oluşturulur. (Visual Studio 2017 sürüm 15.3 sihirbazda bu büyük harflerle sembol tanımına zorlamaz. Projeniz "MathLibrary" adı sonra tanımlanmış simgenin MathLibrary olup&#95;MATHLIBRARY yerine dışarı&#95;dışarı AKTARIR. That's vardır neden ek adımlar bu simgeyi eklemek için yukarıdaki.)
 
-Zaman **MATHLIBRARY &#95; Dışarı aktarma** makrosu tanımlanır, **MATHLIBRARY &#95; API** makrosu kümeleri `__declspec(dllexport)` işlev bildirimleri değiştiricisi. Bu değiştirici derleyici ve böylece diğer uygulamalar tarafından kullanılan bir işlev veya değişken DLL'den dışarı aktarmak için bağlayıcı söyler. Zaman **MATHLIBRARY &#95; Dışarı aktarma** bir istemci uygulaması tarafından üst bilgi dosyasını dahil edildiğinde Örneğin, tanımsızdır **MATHLIBRARY &#95; API** geçerlidir `__declspec(dllimport)` bildirimlerine değiştiricisi. Bu değiştirici işlevi veya bir uygulamadaki değişken alınmasıyla en iyi duruma getirir. Daha fazla bilgi için bkz: [dllexport, dllimport](../cpp/dllexport-dllimport.md).
+Zaman **MATHLIBRARY&#95;dışarı** makrosu tanımlanır, **MATHLIBRARY&#95;API** makrosu kümeleri `__declspec(dllexport)` işlev bildirimleri değiştiricisi. Bu değiştirici derleyici ve böylece diğer uygulamalar tarafından kullanılan bir işlev veya değişken DLL'den dışarı aktarmak için bağlayıcı söyler. Zaman **MATHLIBRARY&#95;dışarı** bir istemci uygulaması tarafından üst bilgi dosyasını dahil edildiğinde Örneğin, tanımsızdır **MATHLIBRARY&#95;API** geçerlidir `__declspec(dllimport)` için değiştiricisi bildirimleri. Bu değiştirici işlevi veya bir uygulamadaki değişken alınmasıyla en iyi duruma getirir. Daha fazla bilgi için bkz: [dllexport, dllimport](../cpp/dllexport-dllimport.md).
 
 ### <a name="to-add-an-implementation-to-the-dll"></a>DLL için bir uygulama eklemek için
 

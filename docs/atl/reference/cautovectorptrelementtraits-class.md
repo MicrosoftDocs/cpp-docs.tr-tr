@@ -1,12 +1,9 @@
 ---
-title: "CAutoVectorPtrElementTraits sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAutoVectorPtrElementTraits sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CAutoVectorPtrElementTraits
@@ -18,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - CAutoVectorPtrElementTraits class
 ms.assetid: 16b81a56-55fb-46ca-b376-66a1884231a6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e69be3fa7136b0d411b92299d99d877710d5f118
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 52c450a1a261224cf87ea125a6f01259da0e9f1b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cautovectorptrelementtraits-class"></a>CAutoVectorPtrElementTraits sınıfı
 Bu sınıf, yöntemleri, statik işlevler ve tür tanımları vektör yeni kullanarak akıllı işaretçiler koleksiyonları oluşturma ve delete işleçleri olduğu durumlarda faydalıdır sağlar.  
@@ -74,14 +69,14 @@ class CAutoVectorPtrElementTraits :
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcoll.h  
   
-##  <a name="inargtype"></a>CAutoVectorPtrElementTraits::INARGTYPE  
+##  <a name="inargtype"></a>  CAutoVectorPtrElementTraits::INARGTYPE  
  Koleksiyon sınıfı nesnesine öğe eklemek için kullanılacak veri türü.  
   
 ```
 typedef CAutoVectorPtr<T>& INARGTYPE;
 ```  
   
-##  <a name="outargtype"></a>CAutoVectorPtrElementTraits::OUTARGTYPE  
+##  <a name="outargtype"></a>  CAutoVectorPtrElementTraits::OUTARGTYPE  
  Koleksiyon sınıfı nesnesinden öğeleri almak için kullanılacak veri türü.  
   
 ```

@@ -1,13 +1,10 @@
 ---
-title: "Biçim belirtimi alanları: scanf ve wscanf işlevleri | Microsoft Docs"
-ms.custom: 
+title: 'Biçim belirtimi alanları: scanf ve wscanf işlevleri | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apilocation:
 - msvcr80.dll
 - msvcr110.dll
@@ -30,24 +27,22 @@ helpviewer_keywords:
 - format specification fields for scanf function
 - type fields
 ms.assetid: 7e95de1b-0b71-4de3-9f81-c9560c78e039
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2286d7a6b82cf917c264cc43b82dec3939af6d94
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c99b951e0cbbb5d2a295eb336a856bdb6c4cc0e1
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="format-specification-fields-scanf-and-wscanf-functions"></a>Biçim Belirtimi Alanları: scanf ve wscanf İşlevleri
 Burada yer alan bilgiler tüm geçerli `scanf` güvenli sürümleri de dahil olmak üzere işlevlerin ailesi ve bildirmek için kullanılan simgeler açıklar `scanf` Giriş akışı gibi giriş akışı ayrıştırmayı işlevleri `stdin` için`scanf`, program değişkenleri eklenen değerlerinden.  
   
  Biçim belirtimi aşağıdaki biçime sahiptir:  
   
- `%`[`*`] [[genişliği](../c-runtime-library/scanf-width-specification.md)] [{[h &#124; m &#124; üm &#124; I64 &#124; L](../c-runtime-library/scanf-width-specification.md)}][türü](../c-runtime-library/scanf-type-field-characters.md)  
+ `%`[`*`] [[genişliği](../c-runtime-library/scanf-width-specification.md)] [{[h &#124; l &#124; üm &#124; I64 &#124; L](../c-runtime-library/scanf-width-specification.md)}][türü](../c-runtime-library/scanf-type-field-characters.md)  
   
  `format` Bağımsız değişkeni giriş yorumu belirtir ve aşağıdakilerden birini veya birkaçını içerebilir:  
   

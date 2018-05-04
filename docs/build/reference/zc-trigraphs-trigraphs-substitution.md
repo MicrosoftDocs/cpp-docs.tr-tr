@@ -1,10 +1,10 @@
 ---
-title: /Zc:trigraphs (Trigraphs Substitution) | Microsoft Docs
-ms.custom: 
+title: '/ ZC: trigraphs (trigrafları değiştirme) | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/06/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /Zc
 dev_langs:
@@ -17,14 +17,13 @@ helpviewer_keywords:
 ms.assetid: e3d6058f-400d-4966-a3aa-800cfdf69cbf
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5fdc5fc6432335e964a05185b7647b152a57d8f4
-ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
+ms.openlocfilehash: 3e465b62944b360d6fdb09da1230f3353658437b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="zctrigraphs-trigraphs-substitution"></a>/Zc:trigraphs (Trigrafları Değiştirme)
 
@@ -32,7 +31,7 @@ Zaman **/ZC: trigraphs** belirtilirse, derleyici, karşılık gelen bir noktalam
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc:trigraphs**[**-**]  
+> **/ ZC: trigraphs**[**-**]  
 
 ## <a name="remarks"></a>Açıklamalar
 

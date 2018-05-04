@@ -1,13 +1,10 @@
 ---
-title: "-Zo (en iyi duruma getirilmiş hata ayıklamayı iyileştirme) | Microsoft Docs"
-ms.custom: 
+title: -Zo (en iyi duruma getirilmiş hata ayıklamayı iyileştirme) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - -Zo
 - /Zo
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - /Zo compiler option [C++]
 - -Zo compiler option [C++]
 ms.assetid: eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 326bd1c6c435dec97c309014dfc81ca444cc5eb6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 013738ab05bf67d3db066d94d32d398a0555c55e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="zo-enhance-optimized-debugging"></a>/Zo (En İyi Duruma Getirilmiş Hata Ayıklamayı İyileştirme)
 İyileştirilmiş kod için Gelişmiş hata ayıklama bilgisi olmayan hata ayıklama derlemelerinde oluşturur.  

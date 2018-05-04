@@ -1,32 +1,27 @@
 ---
-title: "Uygulama bir özel dize Yöneticisi'nin (temel yöntemi) | Microsoft Docs"
-ms.custom: 
+title: Uygulama bir özel dize Yöneticisi'nin (temel yöntemi) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IAtlStringMgr class, using
 ms.assetid: eac5d13e-cbb4-4e82-b01e-f5f2dbcb962a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b80af4fc8b463b6987f586c426bd465520f75ba6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 259f9533747b266f0be0a782cdc94c98f167d2d2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="implementation-of-a-custom-string-manager-basic-method"></a>Uygulama bir özel dize Yöneticisi'nin (temel yöntemi)
-Dize verilerini ATL tarafından sağlanan kullanmak için bellek ayırma şeması özelleştirmek için en kolay yolu **CAtlStringMgr** sınıf ancak kendi bellek ayırma yordamlar sağlar. Oluşturucusu **CAtlStringMgr** tek bir parametre alır: gösteren bir işaretçi bir `IAtlMemMgr` nesnesi. `IAtlMemMgr`yığın için genel bir arabirim sağlayan bir Özet temel sınıftır. Kullanarak `IAtlMemMgr` arabirimi, **CAtlStringMgr** ayırır, yeniden ayırır ve dize verilerini depolamak için kullanılan belleği serbest bırakır. Her iki uygulama için `IAtlMemMgr` kendiniz arabirim veya beş sağlanan ATL bellek yöneticisi sınıflarından birini kullanın. ATL tarafından sağlanan bellek yöneticilerini yalnızca mevcut bellek ayırma tesis kaydır:  
+Dize verilerini ATL tarafından sağlanan kullanmak için bellek ayırma şeması özelleştirmek için en kolay yolu **CAtlStringMgr** sınıf ancak kendi bellek ayırma yordamlar sağlar. Oluşturucusu **CAtlStringMgr** tek bir parametre alır: gösteren bir işaretçi bir `IAtlMemMgr` nesnesi. `IAtlMemMgr` yığın için genel bir arabirim sağlayan bir Özet temel sınıftır. Kullanarak `IAtlMemMgr` arabirimi, **CAtlStringMgr** ayırır, yeniden ayırır ve dize verilerini depolamak için kullanılan belleği serbest bırakır. Her iki uygulama için `IAtlMemMgr` kendiniz arabirim veya beş sağlanan ATL bellek yöneticisi sınıflarından birini kullanın. ATL tarafından sağlanan bellek yöneticilerini yalnızca mevcut bellek ayırma tesis kaydır:  
   
 -   [CCRTHeap](../atl/reference/ccrtheap-class.md) standart CRT heap işlevleri sarmalar ([malloc](../c-runtime-library/reference/malloc.md), [ücretsiz](../c-runtime-library/reference/free.md), ve [realloc](../c-runtime-library/reference/realloc.md))  
   

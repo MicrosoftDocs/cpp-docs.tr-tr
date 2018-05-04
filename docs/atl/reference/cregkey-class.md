@@ -1,12 +1,9 @@
 ---
-title: "CRegKey sınıfı | Microsoft Docs"
-ms.custom: 
+title: CRegKey sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CRegKey
@@ -51,17 +48,15 @@ helpviewer_keywords:
 - registry, writing to
 - registry, deleting keys
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dffc650c54c4a50fb4b3b1fe2c22ac82501b8b45
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b6daec3347aecaed3ba0aba5dec106d049a6a701
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cregkey-class"></a>CRegKey sınıfı
 Bu sınıf, sistem kayıt defteri girdileri düzenleme için yöntemleri sağlar.  
@@ -132,9 +127,9 @@ class CRegKey
 |[CRegKey::m_pTM](#m_ptm)|İşaretçi `CAtlTransactionManager` nesnesi|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CRegKey`anahtarları ve sistem kayıt defteri değerlerini oluşturma ve silme için yöntemleri sağlar. Kayıt defteri yazılım sürüm numaraları, donanımla ve COM nesnelerini mantıksal fiziksel eşleme gibi sistem bileşenleri için tanımları yükleme özgü kümesini içerir.  
+ `CRegKey` anahtarları ve sistem kayıt defteri değerlerini oluşturma ve silme için yöntemleri sağlar. Kayıt defteri yazılım sürüm numaraları, donanımla ve COM nesnelerini mantıksal fiziksel eşleme gibi sistem bileşenleri için tanımları yükleme özgü kümesini içerir.  
   
- `CRegKey`Sistem kayıt defteri programlama arabirimine için belirli bir makine sağlar. Örneğin, belirli kayıt defteri anahtarı açılamadı çağrı `CRegKey::Open`. Almak veya bir veri değeri değiştirmek için arama `CRegKey::QueryValue` veya `CRegKey::SetValue`sırasıyla. Bir anahtar kapatmak için arama `CRegKey::Close`.  
+ `CRegKey` Sistem kayıt defteri programlama arabirimine için belirli bir makine sağlar. Örneğin, belirli kayıt defteri anahtarı açılamadı çağrı `CRegKey::Open`. Almak veya bir veri değeri değiştirmek için arama `CRegKey::QueryValue` veya `CRegKey::SetValue`sırasıyla. Bir anahtar kapatmak için arama `CRegKey::Close`.  
   
  Bir anahtar kapattığınızda, kayıt defteri verilerini (temizlenmiş) sabit diske yazılır. Bu işlem birkaç saniye sürebilir. Uygulamanız için sabit disk açıkça kayıt defteri verilerini yazmalısınız durumunda arayabileceğiniz [RegFlushKey](http://msdn.microsoft.com/library/windows/desktop/ms724867) Win32 işlevi. Ancak, **RegFlushKey** birçok sistem kaynaklarını kullanır ve yalnızca kesinlikle gerekli olduğunda çağrılmalıdır.  
   
@@ -144,7 +139,7 @@ class CRegKey
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
-##  <a name="attach"></a>CRegKey::Attach  
+##  <a name="attach"></a>  CRegKey::Attach  
  Bir HKEY eklemek için bu yöntemi çağırın `CRegKey` ayarlayarak nesne [m_hKey](#m_hkey) üye tanıtıcıyı `hKey`.  
   
 ```
@@ -158,7 +153,7 @@ void Attach(HKEY hKey) throw();
 ### <a name="remarks"></a>Açıklamalar  
  **Attach** varsa onay `m_hKey` NULL olmayan bir değer.  
   
-##  <a name="close"></a>CRegKey::Close  
+##  <a name="close"></a>  CRegKey::Close  
  Serbest bırakmak için bu yöntemi çağırabilmeniz [m_hKey](#m_hkey) üye işlemek ve NULL olarak ayarlayın.  
   
 ```
@@ -168,7 +163,7 @@ LONG Close() throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, ERROR_SUCCESS döndürür; Aksi takdirde bir hata değeri döndürür.  
   
-##  <a name="create"></a>CRegKey::Create  
+##  <a name="create"></a>  CRegKey::Create  
  Bir alt anahtarı olarak yoksa, belirtilen anahtar oluşturmak için bu yöntemi çağırın `hKeyParent`.  
   
 ```
@@ -196,7 +191,7 @@ LONG Create(
  Anahtar seçenekleri. REG_OPTION_NON_VOLATILE varsayılan değerdir. Olası değerler ve açıklamaları listesi için bkz: [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) Windows SDK'sındaki.  
   
  `samDesired`  
- Anahtar güvenlik erişim. Varsayılan KEY_READ &#124;değerdir; KEY_WRITE. Olası değerler ve açıklamaları listesi için bkz: **RegCreateKeyEx**.  
+ Anahtar güvenlik erişim. Varsayılan değer KEY_READ: &#124; KEY_WRITE. Olası değerler ve açıklamaları listesi için bkz: **RegCreateKeyEx**.  
   
  *lpSecAttr*  
  Bir işaretçi bir [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) yapısı tanıtıcı anahtarının bir alt işlem tarafından devralınan olup olmadığını gösterir. Varsayılan olarak, bu parametre NULL (tanıtıcı devralınan anlamına gelir) olur.  
@@ -210,7 +205,7 @@ LONG Create(
 ### <a name="remarks"></a>Açıklamalar  
  **Oluşturma** ayarlar [m_hKey](#m_hkey) üye bu anahtarın işlenecek.  
   
-##  <a name="cregkey"></a>CRegKey::CRegKey  
+##  <a name="cregkey"></a>  CRegKey::CRegKey  
  Oluşturucu.  
   
 ```
@@ -233,7 +228,7 @@ CRegKey(CAtlTransactionManager* pTM) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Yeni bir `CRegKey` nesnesi. Varolan bir nesneyi oluşturulabilir `CRegKey` nesnesi veya bir kayıt defteri anahtarı için bir tanıtıcı.  
   
-##  <a name="dtor"></a>CRegKey:: ~ CRegKey  
+##  <a name="dtor"></a>  CRegKey:: ~ CRegKey  
  Yok Edicisi.  
   
 ```
@@ -243,7 +238,7 @@ CRegKey(CAtlTransactionManager* pTM) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Yok Edicisi sürümleri `m_hKey`.  
   
-##  <a name="deletesubkey"></a>CRegKey::DeleteSubKey  
+##  <a name="deletesubkey"></a>  CRegKey::DeleteSubKey  
  Belirtilen anahtarı kayıt defterinden kaldırmak için bu yöntemi çağırın.  
   
 ```
@@ -258,9 +253,9 @@ LONG DeleteSubKey(LPCTSTR lpszSubKey) throw();
  Başarılı olursa, ERROR_SUCCESS döndürür. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `DeleteSubKey`yalnızca hiçbir alt anahtarlara sahip bir anahtarı silebilirsiniz. Anahtarı alt anahtarları varsa, çağrı [RecurseDeleteKey](#recursedeletekey) yerine.  
+ `DeleteSubKey` yalnızca hiçbir alt anahtarlara sahip bir anahtarı silebilirsiniz. Anahtarı alt anahtarları varsa, çağrı [RecurseDeleteKey](#recursedeletekey) yerine.  
   
-##  <a name="deletevalue"></a>CRegKey::DeleteValue  
+##  <a name="deletevalue"></a>  CRegKey::DeleteValue  
  Bir değer alanından kaldırmak için bu yöntemi çağırın [m_hKey](#m_hkey).  
   
 ```
@@ -274,7 +269,7 @@ LONG DeleteValue(LPCTSTR lpszValue) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, ERROR_SUCCESS döndürür. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H.  
   
-##  <a name="detach"></a>CRegKey::Detach  
+##  <a name="detach"></a>  CRegKey::Detach  
  Kullanımdan çıkarmak için bu yöntemi çağırabilmeniz [m_hKey](#m_hkey) üye tanıtıcı gelen `CRegKey` nesne ve ayarlayın `m_hKey` null.  
   
 ```
@@ -284,7 +279,7 @@ HKEY Detach() throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  HKEY ilişkili `CRegKey` nesnesi.  
   
-##  <a name="enumkey"></a>CRegKey::EnumKey  
+##  <a name="enumkey"></a>  CRegKey::EnumKey  
  Kayıt defteri anahtarı alt anahtarları numaralandırmak için bu yöntemi çağırın.  
   
 ```
@@ -314,7 +309,7 @@ LONG EnumKey(
 ### <a name="remarks"></a>Açıklamalar  
  Alt anahtarları Numaralandırılacak çağrı `CRegKey::EnumKey` sıfır dizine sahip. Dizin değerini artırın ve ERROR_NO_MORE_ITEMS yöntemi dönene kadar yineleyin. Daha fazla bilgi için bkz: [RegEnumKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724862) Windows SDK'sındaki.  
   
-##  <a name="flush"></a>CRegKey::Flush  
+##  <a name="flush"></a>  CRegKey::Flush  
  Tüm açık kayıt defteri anahtarının özniteliklerini kayıt defterine yazmak için bu yöntemi çağırın.  
   
 ```
@@ -327,7 +322,7 @@ LONG Flush() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [RegEnumFlush](http://msdn.microsoft.com/library/windows/desktop/ms724867) Windows SDK'sındaki.  
   
-##  <a name="getkeysecurity"></a>CRegKey::GetKeySecurity  
+##  <a name="getkeysecurity"></a>  CRegKey::GetKeySecurity  
  Kayıt defteri anahtarı koruma güvenlik tanımlayıcısı bir kopyasını almak için bu yöntemi çağırın.  
   
 ```
@@ -353,14 +348,14 @@ LONG GetKeySecurity(
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [RegGetKeySecurity](http://msdn.microsoft.com/library/windows/desktop/aa379313).  
   
-##  <a name="m_hkey"></a>CRegKey::m_hKey  
+##  <a name="m_hkey"></a>  CRegKey::m_hKey  
  İle ilişkili kayıt defteri anahtarının bir tanıtıcı içeren `CRegKey` nesnesi.  
   
 ```
 HKEY m_hKey;
 ```  
   
-##  <a name="m_ptm"></a>CRegKey::m_pTM  
+##  <a name="m_ptm"></a>  CRegKey::m_pTM  
  İşaretçi bir `CAtlTransactionManager` nesnesi.  
   
 ```
@@ -369,7 +364,7 @@ CAtlTransactionManager* m_pTM;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="notifychangekeyvalue"></a>CRegKey::NotifyChangeKeyValue  
+##  <a name="notifychangekeyvalue"></a>  CRegKey::NotifyChangeKeyValue  
  Bu yöntem arayan öznitelikleri ya da kayıt defteri anahtarı içeriğini yapılan değişiklikler hakkında uyarır.  
   
 ```
@@ -410,7 +405,7 @@ LONG NotifyChangeKeyValue(
   
  Daha fazla ayrıntı ve örnek programı için bkz: [RegNotifyChangeKeyValue](http://msdn.microsoft.com/library/windows/desktop/ms724892).  
   
-##  <a name="open"></a>CRegKey::Open  
+##  <a name="open"></a>  CRegKey::Open  
  Belirtilen anahtarı'ni açıp ayarlamak için bu yöntemi çağırın [m_hKey](#m_hkey) bu anahtarın işlenecek.  
   
 ```
@@ -438,14 +433,14 @@ LONG Open(
   
  Farklı [CRegKey::Create](#create), **açık** henüz yoksa belirtilen anahtarı oluşturmaz.  
   
-##  <a name="operator_hkey"></a>CRegKey::operator HKEY  
+##  <a name="operator_hkey"></a>  CRegKey::operator HKEY  
  Dönüştüren bir `CRegKey` bir HKEY nesnesine.  
   
 ```  
 operator HKEY() const throw();
 ```  
   
-##  <a name="operator_eq"></a>CRegKey::operator =  
+##  <a name="operator_eq"></a>  CRegKey::operator =  
  Atama işleci.  
   
 ```
@@ -462,7 +457,7 @@ CRegKey& operator= (CRegKey& key) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işleç ayırır `key` kendi geçerli nesneden ve atar `CRegKey` yerine nesne.  
   
-##  <a name="querybinaryvalue"></a>CRegKey::QueryBinaryValue  
+##  <a name="querybinaryvalue"></a>  CRegKey::QueryBinaryValue  
  Belirtilen değer adı için ikili verileri almak için bu yöntemi çağırın.  
   
 ```
@@ -491,7 +486,7 @@ LONG QueryBinaryValue(
 > [!IMPORTANT]
 >  Bu yöntem güvenilemez verileri okunurken, herhangi bir kayıt defteri konumu belirtmek arayan sağlar. Ayrıca, [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) bu yöntem tarafından kullanılan işlev sonlandırıldı NULL olan dizeleri açıkça işlemez. Her iki koşul için çağrıyı yapan kod tarafından denetlenmelidir.  
   
-##  <a name="querydwordvalue"></a>CRegKey::QueryDWORDValue  
+##  <a name="querydwordvalue"></a>  CRegKey::QueryDWORDValue  
  Belirtilen değer adı DWORD verilerini almak için bu yöntemi çağırın.  
   
 ```
@@ -516,7 +511,7 @@ LONG QueryDWORDValue(
 > [!IMPORTANT]
 >  Bu yöntem güvenilemez verileri okunurken, herhangi bir kayıt defteri konumu belirtmek arayan sağlar. Ayrıca, [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) bu yöntem tarafından kullanılan işlev sonlandırıldı NULL olan dizeleri açıkça işlemez. Her iki koşul için çağrıyı yapan kod tarafından denetlenmelidir.  
   
-##  <a name="queryguidvalue"></a>CRegKey::QueryGUIDValue  
+##  <a name="queryguidvalue"></a>  CRegKey::QueryGUIDValue  
  Belirtilen değer adı için GUID verileri almak için bu yöntemi çağırın.  
   
 ```
@@ -541,7 +536,7 @@ LONG QueryGUIDValue(
 > [!IMPORTANT]
 >  Bu yöntem güvenilemez verileri okunurken, herhangi bir kayıt defteri konumu belirtmek arayan sağlar.  
   
-##  <a name="querymultistringvalue"></a>CRegKey::QueryMultiStringValue  
+##  <a name="querymultistringvalue"></a>  CRegKey::QueryMultiStringValue  
  Belirtilen değer adı için çok dizeli verileri almak için bu yöntemi çağırın.  
   
 ```
@@ -570,7 +565,7 @@ LONG QueryMultiStringValue(
 > [!IMPORTANT]
 >  Bu yöntem güvenilemez verileri okunurken, herhangi bir kayıt defteri konumu belirtmek arayan sağlar. Ayrıca, [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) bu yöntem tarafından kullanılan işlev sonlandırıldı NULL olan dizeleri açıkça işlemez. Her iki koşul için çağrıyı yapan kod tarafından denetlenmelidir.  
   
-##  <a name="queryqwordvalue"></a>CRegKey::QueryQWORDValue  
+##  <a name="queryqwordvalue"></a>  CRegKey::QueryQWORDValue  
  Belirtilen değer adı QWORD verilerini almak için bu yöntemi çağırın.  
   
 ```
@@ -595,7 +590,7 @@ LONG QueryQWORDValue(
 > [!IMPORTANT]
 >  Bu yöntem güvenilemez verileri okunurken, herhangi bir kayıt defteri konumu belirtmek arayan sağlar. Ayrıca, [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) bu yöntem tarafından kullanılan işlev sonlandırıldı NULL olan dizeleri açıkça işlemez. Her iki koşul için çağrıyı yapan kod tarafından denetlenmelidir.  
   
-##  <a name="querystringvalue"></a>CRegKey::QueryStringValue  
+##  <a name="querystringvalue"></a>  CRegKey::QueryStringValue  
  Belirtilen değer adı dize verilerini almak için bu yöntemi çağırın.  
   
 ```
@@ -624,7 +619,7 @@ LONG QueryStringValue(
 > [!IMPORTANT]
 >  Bu yöntem güvenilemez verileri okunurken, herhangi bir kayıt defteri konumu belirtmek arayan sağlar. Ayrıca, [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) bu yöntem tarafından kullanılan işlev sonlandırıldı NULL olan dizeleri açıkça işlemez. Her iki koşul için çağrıyı yapan kod tarafından denetlenmelidir.  
   
-##  <a name="queryvalue"></a>CRegKey::QueryValue  
+##  <a name="queryvalue"></a>  CRegKey::QueryValue  
  Belirtilen değeri alanı için verileri almak için bu yöntemi çağırın [m_hKey](#m_hkey). Bu yöntem önceki sürümleri artık desteklenmemektedir ve olarak işaretlenmiş **ATL_DEPRECATED**.  
   
 ```
@@ -680,7 +675,7 @@ ATL_DEPRECATED LONG QueryValue(
 > [!IMPORTANT]
 >  Bu yöntem güvenilemez verileri okunurken, herhangi bir kayıt defteri konumu belirtmek arayan sağlar. Ayrıca, bu yöntem tarafından kullanılan RegQueryValueEx işlevi açıkça olan dizeleri işlemiyor `NULL` sonlandırıldı. Her iki koşul için çağrıyı yapan kod tarafından denetlenmelidir.  
   
-##  <a name="recursedeletekey"></a>CRegKey::RecurseDeleteKey  
+##  <a name="recursedeletekey"></a>  CRegKey::RecurseDeleteKey  
  Belirtilen anahtarı kayıt defterinden kaldırın ve tüm alt açıkça kaldırmak için bu yöntemi çağırın.  
   
 ```
@@ -697,7 +692,7 @@ LONG RecurseDeleteKey(LPCTSTR lpszKey) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Anahtarı alt anahtarları varsa, anahtarı silmek için bu yöntemi çağırmanız gerekir.  
   
-##  <a name="setbinaryvalue"></a>CRegKey::SetBinaryValue  
+##  <a name="setbinaryvalue"></a>  CRegKey::SetBinaryValue  
  Kayıt defteri anahtarının ikili değer ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -723,7 +718,7 @@ LONG SetBinaryValue(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923) değerini kayıt defterine yazılamıyor.  
   
-##  <a name="setdwordvalue"></a>CRegKey::SetDWORDValue  
+##  <a name="setdwordvalue"></a>  CRegKey::SetDWORDValue  
  Kayıt defteri anahtarı DWORD değerini ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -743,7 +738,7 @@ LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923) değerini kayıt defterine yazılamıyor.  
   
-##  <a name="setguidvalue"></a>CRegKey::SetGUIDValue  
+##  <a name="setguidvalue"></a>  CRegKey::SetGUIDValue  
  Kayıt defteri anahtarı GUID değerini ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -763,7 +758,7 @@ LONG SetGUIDValue(LPCTSTR pszValueName, REFGUID guidValue) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi kullanır `CRegKey::SetStringValue` ve bir dize kullanarak GUID dönüştürür [StringFromGUID2](http://msdn.microsoft.com/library/windows/desktop/ms683893).  
   
-##  <a name="setkeyvalue"></a>CRegKey::SetKeyValue  
+##  <a name="setkeyvalue"></a>  CRegKey::SetKeyValue  
  Belirtilen anahtar bir belirtilen değer alanına verileri depolamak için bu yöntemi çağırın.  
   
 ```
@@ -789,7 +784,7 @@ LONG SetKeyValue(
 ### <a name="remarks"></a>Açıklamalar  
  Oluşturmak veya açmak için bu yöntemi çağırabilmeniz `lpszKeyName` depolamak ve anahtar `lpszValue` verileri `lpszValueName` değeri alanı.  
   
-##  <a name="setkeysecurity"></a>CRegKey::SetKeySecurity  
+##  <a name="setkeysecurity"></a>  CRegKey::SetKeySecurity  
  Kayıt defteri anahtarının güvenlik ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -816,7 +811,7 @@ LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Anahtarın güvenlik özniteliklerini ayarlar. Bkz: [RegSetKeySecurity](http://msdn.microsoft.com/library/windows/desktop/aa379314) daha fazla ayrıntı için.  
   
-##  <a name="setmultistringvalue"></a>CRegKey::SetMultiStringValue  
+##  <a name="setmultistringvalue"></a>  CRegKey::SetMultiStringValue  
  Kayıt defteri anahtarının çok dizeli değer ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -836,7 +831,7 @@ LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923) değerini kayıt defterine yazılamıyor.  
   
-##  <a name="setqwordvalue"></a>CRegKey::SetQWORDValue  
+##  <a name="setqwordvalue"></a>  CRegKey::SetQWORDValue  
  Kayıt defteri anahtarı QWORD değerini ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -856,7 +851,7 @@ LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923) değerini kayıt defterine yazılamıyor.  
   
-##  <a name="setstringvalue"></a>CRegKey::SetStringValue  
+##  <a name="setstringvalue"></a>  CRegKey::SetStringValue  
  Kayıt defteri anahtarı dize değerini ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -882,7 +877,7 @@ LONG SetStringValue(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923\(v=vs.85\).aspx) değerini kayıt defterine yazılamıyor.  
   
-##  <a name="setvalue"></a>CRegKey::SetValue  
+##  <a name="setvalue"></a>  CRegKey::SetValue  
  Belirtilen değer alanında verileri depolamak için bu yöntemi çağırın [m_hKey](#m_hkey). Bu yöntem önceki sürümleri artık desteklenmemektedir ve olarak işaretlenmiş **ATL_DEPRECATED**.  
   
 ```

@@ -1,12 +1,9 @@
 ---
-title: "Yardımcı program sınıfları (ATL) | Microsoft Docs"
-ms.custom: 
+title: Yardımcı program sınıfları (ATL) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.atl.classes.utility
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - utility classes
 ms.assetid: 33d5da9d-89a5-49f9-a873-a26499299d17
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30892b88d70e328a0b83de8ebeacf19e1a881c0e
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 450c22a6c31128204dcb9e2f5baf8aeb04439eab
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="utility-classes"></a>Yardımcı program sınıfları
 Aşağıdaki MFC bağımsız yardımcı sınıflar sağlanır:  

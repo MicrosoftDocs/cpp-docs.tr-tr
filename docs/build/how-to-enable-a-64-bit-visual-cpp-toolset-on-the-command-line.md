@@ -4,7 +4,7 @@ ms.custom: ''
 ms.date: 03/29/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,14 +20,13 @@ helpviewer_keywords:
 ms.assetid: 4da93a19-e20d-4778-902a-5eee9a6a90b5
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b8c01feca58ecb900a3760b88bac230fcc82f9a
-ms.sourcegitcommit: 78e5e5cdbafd29e2a6ccf68d4cce215136952907
+ms.openlocfilehash: 22290cdf9418299cbba51ab1d893d60cb790e2e1
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-enable-a-64-bit-x64-hosted-visual-c-toolset-on-the-command-line"></a>Nasıl yapılır: 64 Bit etkinleştirmek için x64 Barındırılan Visual C++ araç takımını komut satırı
 

@@ -1,13 +1,10 @@
 ---
-title: "-vd (yapı yer devre dışı bırak) | Microsoft Docs"
-ms.custom: 
+title: -vd (yapı yer devre dışı bırak) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /vd
 dev_langs:
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - vd0 compiler option [C++]
 - Disable Construction Displacements compiler option
 ms.assetid: 93258964-14d7-4b1c-9cbc-d6f4d74eab69
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b945c4a3191554d5299522ff376772d6362a616c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c6a7b9bacc95c668c1c0f59a3dba172d58c607d2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="vd-disable-construction-displacements"></a>/vd (Yapı Yer Değiştirmelerini Devre Dışı Bırak)
 ## <a name="syntax"></a>Sözdizimi  
@@ -59,7 +54,7 @@ ms.lasthandoff: 12/21/2017
 ## <a name="remarks"></a>Açıklamalar  
  Bu seçenekler yalnızca sanal tabanları kullanan C++ kodu için geçerlidir.  
   
- [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)]C++ yapım öteleme destek sanal devralma kullanıldığı durumlarda uygular. Yapı yer oluşturulan bir sanal Bankası'nda bildirilir ve türetilen bir sınıfta geçersiz bir sanal işlev, sorunu çözmek, daha yeni olan türetilmiş bir sınıf oluşturma sırasında bir oluşturucusundan çağrılır.  
+ [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] C++ yapım öteleme destek sanal devralma kullanıldığı durumlarda uygular. Yapı yer oluşturulan bir sanal Bankası'nda bildirilir ve türetilen bir sınıfta geçersiz bir sanal işlev, sorunu çözmek, daha yeni olan türetilmiş bir sınıf oluşturma sırasında bir oluşturucusundan çağrılır.  
   
  Sanal işlev yanlış bir geçirilebilir olduğunu sorunudur `this` işaretçi sonucunda sanal yer arasında tutarsızlık, taban sınıf ve türetilmiş sınıflarının için yer. Vtordisp alan bir sınıf için her sanal temel olarak adlandırılan tek yapım öteleme ayarlama, çözümü sağlar.  
   

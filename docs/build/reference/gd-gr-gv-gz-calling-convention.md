@@ -1,13 +1,10 @@
 ---
-title: "-Gd, - Gr, - Gv, - Gz (çağırma kuralı) | Microsoft Docs"
-ms.custom: 
+title: -Gd, - Gr, - Gv, - Gz (çağırma kuralı) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /gr
 - /Gv
@@ -30,17 +27,15 @@ helpviewer_keywords:
 - Gv compiler option [C++]
 - /Gr compiler option [C++]
 ms.assetid: fd3110cb-2d77-49f2-99cf-a03f9ead00a3
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26e88abf30c0f67fe5b104d560c40dd2adc57752
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ec0d3d7c750be9b6b6d1496c8a1e2265786264f2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="gd-gr-gv-gz-calling-convention"></a>/Gd, /Gr, /Gv, /Gz (Çağırma Kuralı)
 Bu seçenekler çağıran işlevi veya çağrılan işlev çağrısı sonunu yığında bağımsız değişkenleri kaldırır olup olmadığını hangi işlev bağımsız değişkenleri yığına gönderilen düzenini ve derleyici tanımlamak için kullandığı ad dekorasyon kuralı belirler tekil işlevler.  

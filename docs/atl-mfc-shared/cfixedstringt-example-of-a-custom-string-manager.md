@@ -1,32 +1,27 @@
 ---
 title: "CFixedStringT: Örnek bir özel dize Yöneticisi'nin | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - CFixedStringT class, using a custom string manager
 ms.assetid: 1cf11fd7-51b8-4b94-87af-02bc25f47dd6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7164d2313f5610d1d7e56f5449c81ea9e2282981
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f841124fd12497fdb4dd4b813de2d803e43ff60b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cfixedstringt-example-of-a-custom-string-manager"></a>CFixedStringT: Örnek bir özel dize Yöneticisi'nin
-ATL kitaplığı uygulayan bir sınıf tarafından kullanılan özel bir dize Yöneticisi örneği [CFixedStringT](../atl-mfc-shared/reference/cfixedstringt-class.md)adlı **CFixedStringMgr**. `CFixedStringT`türetilmiş [CStringT](../atl-mfc-shared/reference/cstringt-class.md) ve karakter verilerini bir parçası olarak ayıran bir dize uygulayan `CFixedStringT` dizesi tarafından belirtilen uzunluğundan daha küçük olduğu sürece kendisini nesne **t_nChars** Şablon parametresi `CFixedStringT`. Bu yaklaşımda, dize uzunluğu sabit arabellek boyutu büyüdükçe sürece dize öbek hiç gerekmez. Çünkü `CFixedStringT` mu her zaman kullanım dize verilerini ayırmak için bir yığın tarafından kullanılamaz **CAtlStringMgr** dize Yöneticisi olarak. Özel bir dize Yöneticisi kullanır (**CFixedStringMgr**), uygulama [IAtlStringMgr](../atl-mfc-shared/reference/iatlstringmgr-class.md) arabirimi. Bu arabirim içinde ele alınmıştır [uygulaması bir özel dize Yöneticisi'nin (Gelişmiş yöntemi)](../atl-mfc-shared/implementation-of-a-custom-string-manager-advanced-method.md).  
+ATL kitaplığı uygulayan bir sınıf tarafından kullanılan özel bir dize Yöneticisi örneği [CFixedStringT](../atl-mfc-shared/reference/cfixedstringt-class.md)adlı **CFixedStringMgr**. `CFixedStringT` türetilmiş [CStringT](../atl-mfc-shared/reference/cstringt-class.md) ve karakter verilerini bir parçası olarak ayıran bir dize uygulayan `CFixedStringT` dizesi tarafından belirtilen uzunluğundan daha küçük olduğu sürece kendisini nesne **t_nChars** Şablon parametresi `CFixedStringT`. Bu yaklaşımda, dize uzunluğu sabit arabellek boyutu büyüdükçe sürece dize öbek hiç gerekmez. Çünkü `CFixedStringT` mu her zaman kullanım dize verilerini ayırmak için bir yığın tarafından kullanılamaz **CAtlStringMgr** dize Yöneticisi olarak. Özel bir dize Yöneticisi kullanır (**CFixedStringMgr**), uygulama [IAtlStringMgr](../atl-mfc-shared/reference/iatlstringmgr-class.md) arabirimi. Bu arabirim içinde ele alınmıştır [uygulaması bir özel dize Yöneticisi'nin (Gelişmiş yöntemi)](../atl-mfc-shared/implementation-of-a-custom-string-manager-advanced-method.md).  
   
  Oluşturucusu **CFixedStringMgr** üç parametre alır:  
   

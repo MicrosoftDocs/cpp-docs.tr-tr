@@ -1,29 +1,24 @@
 ---
-title: "Hata ayıklama ve özel durum sınıfları (ATL) | Microsoft Docs"
-ms.custom: 
+title: Hata ayıklama ve özel durum sınıfları (ATL) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - debugging and exceptions classes
 ms.assetid: d42d7649-9721-4a1a-8b38-d983a649fdb9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c046500d3b1ebacb8a142ccb6c89d80875720b7e
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: a6c774679e2edcb944e7779a5dc3f95c5d33fad3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="debugging-and-exceptions-classes"></a>Hata ayıklama ve özel durum sınıfları
 Bu sınıfları için özel durum işleme ve hata ayıklama desteği sağlar.  

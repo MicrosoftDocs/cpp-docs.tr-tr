@@ -1,13 +1,10 @@
 ---
 title: GetProcAddress | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - GetProcAddress
 dev_langs:
@@ -17,20 +14,18 @@ helpviewer_keywords:
 - ordinal exports [C++]
 - GetProcAddress method
 ms.assetid: 48d14ae0-47ea-4c5d-96b1-2c158f1a26af
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2bc32c5f6b6ae4ee80c69dff028f05d2b334d920
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cec73a7d7aa212c6f53bc2654db6fe40ff96472a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getprocaddress"></a>GetProcAddress
-DLL çağrı açıkça bağlama işlemleri [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212) DLL dışarı aktarılan bir işlevin adresini elde edin. Döndürülen işlev işaretçisi DLL işlevi çağırmak için kullanın. **GetProcAddress** DLL modül tanıtıcısını parametre alır (tarafından döndürülen **LoadLibrary**, `AfxLoadLibrary`, veya **GetModuleHandle**) ve ya da işlevin adını alır, Arama veya işlevin dışarı aktarma için sıralı istiyorsunuz.  
+DLL çağrı açıkça bağlama işlemleri [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212) DLL dışarı aktarılan bir işlevin adresini elde edin. Döndürülen işlev işaretçisi DLL işlevi çağırmak için kullanın. **GetProcAddress** DLL modül tanıtıcısını parametre alır (tarafından döndürülen **LoadLibrary**, `AfxLoadLibrary`, veya **GetModuleHandle**) ve her iki istediğiniz işlevin adını alır Arama veya işlevin dışarı aktarma sıra.  
   
  İşaretçi üzerinden DLL işlevi çağırma ve hiçbir derleme zamanı tür denetlemesi olduğundan, böylece etmez yığında ayrılan bellek overstep ve bir erişim ihlali neden işlev parametrelerinin doğru olduğundan emin olun. Tür güvenliği sağlamak için bir dışarı aktarılan işlevleri işlev prototipleri arayın ve işlev işaretçileri için eşleşen tür tanımları oluşturmak için yoludur. Örneğin:  
   

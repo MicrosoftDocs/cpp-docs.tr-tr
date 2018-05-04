@@ -1,13 +1,10 @@
 ---
-title: "İçeri aktarma kitaplığı ve dışarı aktarma dosyası derleme | Microsoft Docs"
-ms.custom: 
+title: İçeri aktarma kitaplığı ve dışarı aktarma dosyası derleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.ModuleDefinitionFile
 - VC.Project.VCLibrarianTool.ExportNamedFunctions
@@ -34,17 +31,15 @@ helpviewer_keywords:
 - .lib files
 - EXP files
 ms.assetid: 2fe4f30a-1dd6-4b05-84b5-0752e1dee354
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 979e052147f058e6c46a1c10b1dd89cfd36ee362
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 93f817aadf2de826c628a14255ae9257be2f29ba
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="building-an-import-library-and-export-file"></a>İçeri Aktarma Kitaplığı ve Dışarı Aktarma Dosyası Derleme
 Derleme içeri aktarma kitaplığı ve dışarı aktarmak için aşağıdaki sözdizimini kullanın:  
@@ -59,7 +54,7 @@ LIB /DEF[:deffile] [options] [objfiles] [libraries]
   
 2.  / Export belirtimi:*adı* LIB komut satırında  
   
-3.  Bir açıklamasında bir **dışarı** deyiminde bir`deffile`  
+3.  Bir açıklamasında bir **dışarı** deyiminde bir `deffile`  
   
  Bunlar, dışarı verme program bağlarken belirtmek için kullanın, aynı yöntemleridir. Bir program birden fazla yöntemini kullanabilirsiniz. LIB komutu bölümlerini belirtebilirsiniz (birden çok gibi *objfiles* ya da/Export belirtimleri) LIB komutu bir komut dosyasında yalnızca yapabileceğiniz bir bağlantı komutu.  
   
@@ -73,7 +68,7 @@ LIB /DEF[:deffile] [options] [objfiles] [libraries]
   
  *GirişAdı* çağıran program tarafından kullanılacak olan işlevi veya veri öğesinin adı aynıdır. İsteğe bağlı olarak, belirtebilirsiniz *InternalName* tanımlama program; varsayılan olarak, bilinen işlevi olarak *InternalName* aynı *GirişAdı*. `ordinal` Belirtmezseniz, 1 ile 65.535; aralığında verme tabloya bir dizini belirtir `ordinal`, LIB bir atar. **NONAME** anahtar sözcüğü dışa aktarır işlevi bir sıra yalnızca olmadan bir *GirişAdı*. **Veri** anahtar sözcüğü yalnızca veri nesneleri dışarı aktarmak için kullanılır.  
   
- / INCLUDE:`symbol`  
+ / INCLUDE: `symbol`  
  Belirtilen simgeyi sembol tablosuna ekler. Bu seçenek, aksi takdirde dahil olmayacaktır bir kitaplık nesnesi kullanılmasını zorlamak için yararlıdır.  
   
  .dll oluşturmadan önce ilk adım, içeri aktarma kitaplığını oluşturursanız, içeri aktarma kitaplığını oluştururken geçirilen gibi aynı nesne dosyaları kümesini .dll oluştururken geçmesi gerektiğini unutmayın.  

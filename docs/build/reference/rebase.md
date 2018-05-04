@@ -1,13 +1,10 @@
 ---
 title: -REBASE | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /rebase
 dev_langs:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - executable files [C++], base address
 - /REBASE editbin option [C++]
 ms.assetid: 3f89d874-af5c-485b-974b-fd205f6e1a4b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50bb10acda1175d2cca12e7e4aff6fc9e5bae73a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4a5e2b68768b01d71532c358a14c53d8a033e1ed
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rebase"></a>/REBASE
 ```  
@@ -44,7 +39,7 @@ ms.lasthandoff: 12/21/2017
   
 |Değiştirici|Eylem|  
 |--------------|------------|  
-|TEMEL**=***adresi*|Temel adresler dosyalara yeniden atama için bir başlangıç adresi sağlar. Belirtin *adresi* ondalık veya dil C gösterimi. TEMEL belirtilmezse varsayılan taban adresi başlangıç 0x400000 olur. Aşağı varsa kullanılan, temel belirtilmesi gerekir, ve *adresi* temel adres aralığını sonuna ayarlar.|  
+|TEMEL **= *** adresi*|Temel adresler dosyalara yeniden atama için bir başlangıç adresi sağlar. Belirtin *adresi* ondalık veya dil C gösterimi. TEMEL belirtilmezse varsayılan taban adresi başlangıç 0x400000 olur. Aşağı varsa kullanılan, temel belirtilmesi gerekir, ve *adresi* temel adres aralığını sonuna ayarlar.|  
 |BASEFILE|COFFBASE adlı bir dosya oluşturur. Hangi bağlantının tarafından beklenen biçimde metin dosyasıdır/seçeneği temel TXT.|  
 |AŞAĞI|Bitiş adresi temel adresleri aşağı atamak EDITBIN söyler. Dosyaları adres aralığı sonuna aşağıdaki olası en yüksek adresi içinde bulunan ilk dosyasını belirtilen sırada atanır. Dosyaları alma için yeterli adres alanı emin olmak için temel aşağı ile kullanılması gerekir. Belirtilen dosyaları tarafından ihtiyaç duyulan adres alanı belirlemek için EDITBIN ile /REBASE dosyalarda çalıştırmak ve görüntülenen toplam boyutu 64 KB ekleyin.|  
   

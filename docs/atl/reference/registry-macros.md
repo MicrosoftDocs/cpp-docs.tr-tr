@@ -1,12 +1,9 @@
 ---
-title: "Kayıt defteri makroları | Microsoft Docs"
-ms.custom: 
+title: Kayıt defteri makroları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - atlcom/ATL::_ATL_STATIC_REGISTRY
@@ -21,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - registry, ATL macros
 ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eada9ed75bd69122523350536d0757e98b31358d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ed9b172217f1ca7ada7d8752151126b53055df37
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="registry-macros"></a>Kayıt defteri makroları
 Bu makroları yararlı türü kitaplığı ve kayıt defteri özellikleri tanımlayın.  
@@ -50,7 +45,7 @@ Bu makroları yararlı türü kitaplığı ve kayıt defteri özellikleri tanım
  **Başlık:** atlcom.h  
   
     
-##  <a name="_atl_static_registry"></a>_ATL_STATIC_REGISTRY  
+##  <a name="_atl_static_registry"></a>  _ATL_STATIC_REGISTRY  
  ATL bir bağımlılığı önlemek için nesnesindeki olmasını nesnenizin kayıt kodunu istediğiniz gösteren bir simge DLL.  
   
 ```
@@ -62,7 +57,7 @@ Bu makroları yararlı türü kitaplığı ve kayıt defteri özellikleri tanım
   
  [!code-cpp[NVC_ATL_EventHandlingSample#5](../../atl/codesnippet/cpp/registry-macros_1.cpp)]  
   
-##  <a name="declare_libid"></a>DECLARE_LIBID  
+##  <a name="declare_libid"></a>  DECLARE_LIBID  
  ATL elde etmek bir yoldur *kitaplık kimliği* tür kitaplığı.  
   
 ```
@@ -79,14 +74,14 @@ DECLARE_LIBID( libid )
 ### <a name="example"></a>Örnek  
  Sihirbaz tarafından oluşturulan ATL projeleri olmayan öznitelikli bu makrosu kullanarak bir örnek olacaktır.  
   
-##  <a name="declare_no_registry"></a>DECLARE_NO_REGISTRY  
+##  <a name="declare_no_registry"></a>  DECLARE_NO_REGISTRY  
  Kullanım `DECLARE_NO_REGISTRY` bu makrosu göründüğü sınıfı için herhangi bir varsayılan ATL kayıt önlemek istiyorsanız.  
   
 ```
 DECLARE_NO_REGISTRY()
 ```  
   
-##  <a name="declare_registry"></a>DECLARE_REGISTRY  
+##  <a name="declare_registry"></a>  DECLARE_REGISTRY  
  Sistem kayıt defterine standart sınıf kaydı girer veya sistem kayıt defterinden kaldırır.  
   
 ```
@@ -117,9 +112,9 @@ DECLARE_REGISTRY(
 ### <a name="remarks"></a>Açıklamalar  
  Standart kayıt CLSID, program kimliği, sürüm bağımsız program kimliği, açıklama dizesi ve iş parçacığı modeli oluşur.  
   
- Bir nesne oluşturduğunuzda ya da ATL ekleme sınıfı Sihirbazı'nı kullanarak denetimi Sihirbazı otomatik olarak betik tabanlı kayıt defteri destek uygular ve ekler [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) makrosu dosyalarınıza. Betik tabanlı kayıt defteri destek istemiyorsanız bu makrosu ile değiştirmeniz gerekiyor `DECLARE_REGISTRY`. `DECLARE_REGISTRY`yalnızca kayıt defterine yukarıda beş temel anahtarları ekler. El ile kayıt defterine diğer anahtarlar eklemek için kod yazmanız gerekir.  
+ Bir nesne oluşturduğunuzda ya da ATL ekleme sınıfı Sihirbazı'nı kullanarak denetimi Sihirbazı otomatik olarak betik tabanlı kayıt defteri destek uygular ve ekler [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) makrosu dosyalarınıza. Betik tabanlı kayıt defteri destek istemiyorsanız bu makrosu ile değiştirmeniz gerekiyor `DECLARE_REGISTRY`. `DECLARE_REGISTRY` yalnızca kayıt defterine yukarıda beş temel anahtarları ekler. El ile kayıt defterine diğer anahtarlar eklemek için kod yazmanız gerekir.  
   
-##  <a name="declare_registry_appid_resourceid"></a>DECLARE_REGISTRY_APPID_RESOURCEID  
+##  <a name="declare_registry_appid_resourceid"></a>  DECLARE_REGISTRY_APPID_RESOURCEID  
  Otomatik olarak kaydetmek için gereken bilgileri belirtir *AppID*.  
   
 ```
@@ -141,7 +136,7 @@ DECLARE_REGISTRY_APPID_RESOURCEID(
 ### <a name="example"></a>Örnek  
  ATL projeleri sınıfı Ekle kod Sihirbazı'nı kullanarak eklenen sınıflar bu makrosu kullanarak bir örnek olacaktır.  
   
-##  <a name="declare_registry_resource"></a>DECLARE_REGISTRY_RESOURCE  
+##  <a name="declare_registry_resource"></a>  DECLARE_REGISTRY_RESOURCE  
  Kayıt defteri dosyasını içeren adlandırılmış kaynağı alır ve nesnelerin sistem kayıt defterine girin ya da sistem kayıt defterinden kaldırmak için komut dosyasını çalıştırır.  
   
 ```
@@ -164,7 +159,7 @@ DECLARE_REGISTRY_RESOURCE( x )
   
  Değiştirilebilir parametreler ve komut dosyası hakkında daha fazla bilgi için bkz: [ATL kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md).  
   
-##  <a name="declare_registry_resourceid"></a>DECLARE_REGISTRY_RESOURCEID  
+##  <a name="declare_registry_resourceid"></a>  DECLARE_REGISTRY_RESOURCEID  
  Aynı [DECLARE_REGISTRY_RESOURCE](#declare_registry_resource) sihirbaz tarafından oluşturulan kullanır ancak bu **UINT** bir dize adı yerine kaynak tanımlamak için.  
   
 ```

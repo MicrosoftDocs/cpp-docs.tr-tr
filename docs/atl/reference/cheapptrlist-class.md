@@ -1,12 +1,9 @@
 ---
-title: "CHeapPtrList sınıfı | Microsoft Docs"
-ms.custom: 
+title: CHeapPtrList sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CHeapPtrList
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - CHeapPtrList class
 ms.assetid: cc70e585-362a-4007-81db-c705eb181226
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bda8c44142425e93792648cbbf07f5dd5e0bdb47
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dc5b164fda27775a7b3fb272d8718c31815cb1ca
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cheapptrlist-class"></a>CHeapPtrList sınıfı
 Bu sınıf, yığın işaretçileri listesi oluşturulurken, kullanışlı yöntemler sağlar.  
@@ -70,7 +65,7 @@ class CHeapPtrList
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcoll.h  
   
-##  <a name="cheapptrlist"></a>CHeapPtrList::CHeapPtrList  
+##  <a name="cheapptrlist"></a>  CHeapPtrList::CHeapPtrList  
  Oluşturucu.  
   
 ```

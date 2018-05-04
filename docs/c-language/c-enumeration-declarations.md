@@ -1,13 +1,10 @@
 ---
-title: "C numaralandırma bildirimleri | Microsoft Docs"
-ms.custom: 
+title: C numaralandırma bildirimleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - named constants, enumeration declarations
 - declaring enumerations
 ms.assetid: bd18f673-4dda-4bc1-92fd-d1ce10074910
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4109bb9ed66a89765b6270fce6a3cd5821698a2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 697e4f37c8a59c40df80e29ff89f2021f61fb468
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-enumeration-declarations"></a>C Numaralandırma Bildirimleri
 Numaralandırma adlandırılmış tamsayı sabitleri kümesinden oluşur. Bir numaralandırma türü bildirimi (isteğe bağlı) numaralandırması etiketin adını verir ve adlandırılmış tamsayı tanımlayıcıları kümesini tanımlar ("numaralandırma,"Numaralandırıcı sabitleri,"Ayarla" adlı "numaralandırıcılar" veya "üye"). Numaralandırma türü sahip bir değişken, türü tarafından tanımlanan numaralandırma kümesinin değerlerden biri depolar.  
@@ -39,9 +34,9 @@ Numaralandırma adlandırılmış tamsayı sabitleri kümesinden oluşur. Bir nu
   
 ## <a name="syntax"></a>Sözdizimi  
  *Liste belirticisi*:  
- **Enum***tanımlayıcısı* kabul**{** *numaralandırıcı listesi* **}**   
+ **Enum***tanımlayıcısı* kabul **{** *numaralandırıcı listesi* **}**   
   
- **Enum***tanımlayıcısı*   
+ **Enum***tanımlayıcısı*  
   
  İsteğe bağlı *tanımlayıcısı* tarafından tanımlanan numaralandırma türü adları *numaralandırıcı listesi*. Bu tanımlayıcı, çoğunlukla listesi tarafından belirtilen numaralandırması "etiketi" adı verilir. Formun türü tanımlayıcısı  
   
@@ -68,10 +63,10 @@ enumerator-list
  `enumerator`:  
  *Numaralandırma sabiti*  
   
- *Numaralandırma sabiti***=***sabit ifadesi*   
+ *Numaralandırma sabiti***=***sabit ifadesi*  
   
  *Numaralandırma sabiti*:  
- *tanımlayıcı*  
+ *Tanımlayıcı*  
   
  Her *numaralandırma sabiti* içinde bir *numaralandırma listesini* numaralandırma kümesi değerini adları. Varsayılan olarak, ilk *numaralandırma sabiti* değeri 0 ile ilişkilidir. Sonraki *numaralandırma sabiti* listede değeri ile ilişkilendirilen ( *sabit ifadesi* + 1) açıkça başka bir değerle ilişkilendirmenizi sürece. Adı bir *numaralandırma sabiti* değerine denktir.  
   

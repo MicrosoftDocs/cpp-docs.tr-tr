@@ -1,12 +1,9 @@
 ---
-title: "CSID sınıfı | Microsoft Docs"
-ms.custom: 
+title: CSID sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CSid
@@ -30,17 +27,15 @@ dev_langs:
 helpviewer_keywords:
 - CSid class
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38c2cff0cb9bd99a70e142d16ee5e7d38e82d8d0
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: ed55fd2286c3d6e37b59b16a06f43cc4efe55091
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="csid-class"></a>CSID sınıfı
 Bu sınıf için sarmalayıcı, bir `SID` (güvenlik tanımlayıcısı) yapısı.  
@@ -99,9 +94,9 @@ class CSid
 |-|-|  
 |[operator ==](#operator_eq_eq)|İki güvenlik tanımlayıcısı nesnenin eşitlik için test|  
 |[operator! =](#operator_neq)|Eşitsizlik açısından iki güvenlik tanımlayıcısı nesneleri testleri|  
-|[işleci\<](#operator_lt_)|Göreli iki güvenlik tanımlayıcısı nesneleri karşılaştırır.|  
+|[işleci \<](#operator_lt_)|Göreli iki güvenlik tanımlayıcısı nesneleri karşılaştırır.|  
 |[operator >](#operator_gt_)|Göreli iki güvenlik tanımlayıcısı nesneleri karşılaştırır.|  
-|[işleci\<=](#operator_lt__eq)|Göreli iki güvenlik tanımlayıcısı nesneleri karşılaştırır.|  
+|[işleci \<=](#operator_lt__eq)|Göreli iki güvenlik tanımlayıcısı nesneleri karşılaştırır.|  
 |[operator > =](#operator_gt__eq)|Göreli iki güvenlik tanımlayıcısı nesneleri karşılaştırır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -114,7 +109,7 @@ class CSid
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h  
   
-##  <a name="accountname"></a>CSid::AccountName  
+##  <a name="accountname"></a>  CSid::AccountName  
  İle ilişkili hesap adını döndürür `CSid` nesnesi.  
   
 ```
@@ -129,7 +124,7 @@ LPCTSTR AccountName() const throw(...);
   
  Hesap adı için `SID` bulunabilir, `AccountName` boş bir dize döndürür. Bu durum ağ zaman aşımı bu yöntem adı bulma engeller ortaya çıkabilir. Ayrıca, bir oturum açma gibi karşılık gelen hiçbir hesap adı ile güvenlik tanımlayıcıları için oluşur `SID` bir oturumun tanımlar.  
   
-##  <a name="csid"></a>CSid::CSid  
+##  <a name="csid"></a>  CSid::CSid  
  Oluşturucu.  
   
 ```
@@ -195,7 +190,7 @@ typedef CAtlArray<CSid> CSidArray;
 ### <a name="remarks"></a>Açıklamalar  
  Bu typedef bir ACL (erişim denetim listesi) güvenlik tanımlayıcıları almak için kullanılan dizi türünü belirtir. Bkz: [CAcl::GetAclEntries](../../atl/reference/cacl-class.md#getaclentries).  
   
-##  <a name="domain"></a>CSid::Domain  
+##  <a name="domain"></a>  CSid::Domain  
  İle ilişkili etki alanı adını döndürür `CSid` nesnesi.  
   
 ```
@@ -210,7 +205,7 @@ LPCTSTR Domain() const throw(...);
   
  Hesap adı için `SID` bulunabilir, **etki alanı** etki alanı boş bir dize olarak döndürür. Bu durum ağ zaman aşımı bu yöntem adı bulma engeller ortaya çıkabilir. Ayrıca, bir oturum açma gibi karşılık gelen hiçbir hesap adı ile güvenlik tanımlayıcıları için oluşur `SID` bir oturumun tanımlar.  
   
-##  <a name="equalprefix"></a>CSid::EqualPrefix  
+##  <a name="equalprefix"></a>  CSid::EqualPrefix  
  Testleri `SID` (güvenlik tanımlayıcısı) önekleri eşitlik için.  
   
 ```
@@ -302,7 +297,7 @@ UCHAR GetSubAuthorityCount() const throw();
 > [!NOTE]
 >  Hata ayıklama yapıları varsa, işlev ASSERT neden olacak altında `CSid` nesnesi geçerli değil.  
   
-##  <a name="isvalid"></a>CSid::IsValid  
+##  <a name="isvalid"></a>  CSid::IsValid  
  Testleri `CSid` geçerliliğini nesnesi.  
   
 ```
@@ -315,7 +310,7 @@ bool IsValid() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  `IsValid` Yöntemi doğrular `CSid` düzeltme numarası içinde bilinen bir aralıktaki olduğunu ve subauthorities sayısının en büyük değerinden olduğunu doğrulayarak nesnesi.  
   
-##  <a name="loadaccount"></a>CSid::LoadAccount  
+##  <a name="loadaccount"></a>  CSid::LoadAccount  
  Güncelleştirmeleri `CSid` verilen hesap adı ve etki alanı veya varolan bir SID (güvenlik tanımlayıcısı) yapısını nesnesi.  
   
 ```
@@ -342,7 +337,7 @@ bool LoadAccount(
  Döndürür **true** başarılı, **false** hatasında. Genişletilmiş hata bilgilerini için arama `GetLastError`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `LoadAccount`bir güvenlik tanımlayıcısı için belirtilen ad bulmaya çalışır. Bkz: [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166\(v=vs.85\).aspx) daha fazla ayrıntı için.  
+ `LoadAccount` bir güvenlik tanımlayıcısı için belirtilen ad bulmaya çalışır. Bkz: [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166\(v=vs.85\).aspx) daha fazla ayrıntı için.  
   
 ##  <a name="operator_eq"></a>  CSid::operator =  
  Atama işleci.  
@@ -359,7 +354,7 @@ CSid& operator= (const SID& rhs) throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Güncelleştirilmiş bir başvuru döndürür `CSid` nesnesi.  
   
-##  <a name="operator_eq_eq"></a>CSid::operator ==  
+##  <a name="operator_eq_eq"></a>  CSid::operator ==  
  İki güvenlik tanımlayıcısı nesnenin eşitlik için test eder.  
   
 ```
@@ -378,7 +373,7 @@ bool operator==(
 ### <a name="return-value"></a>Dönüş Değeri  
  **doğru** Aksi durumda güvenlik tanımlayıcısı eşitse, **false**.  
   
-##  <a name="operator_neq"></a>  CSid::operator !=  
+##  <a name="operator_neq"></a>  CSid::operator! =  
  Eşitsizlik açısından iki güvenlik tanımlayıcısı nesneleri sınar.  
   
 ```
@@ -483,7 +478,7 @@ operator const SID *() const throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  Adresini döndürür `SID` yapısı.  
   
-##  <a name="sid"></a>CSid::Sid  
+##  <a name="sid"></a>  CSid::Sid  
  Döndürür `SID` dize olarak (güvenlik tanımlayıcısı) yapısı.  
   
 ```
@@ -493,7 +488,7 @@ LPCTSTR Sid() const throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür `SID` yapısı görüntüleme, depolama ve iletim için uygun bir biçiminde bir dize olarak. Eşdeğer [ConvertSidToStringSid](http://msdn.microsoft.com/library/windows/desktop/aa376399).  
   
-##  <a name="sidnameuse"></a>CSid::SidNameUse  
+##  <a name="sidnameuse"></a>  CSid::SidNameUse  
  Durumu açıklamasını döndürür `CSid` nesnesi.  
   
 ```
@@ -516,7 +511,7 @@ SID_NAME_USE SidNameUse() const throw();
 |SidTypeComputer|Gösteren bir `SID` bir bilgisayar için.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrı [CSid::LoadAccount](#loadaccount) güncelleştirmek için `CSid` nesne çağırmadan önce `SidNameUse` durumuna döndürmek için. `SidNameUse`nesnenin durumu değiştirmez (için arama tarafından **LookupAccountName** veya **LookupAccountSid**), ancak yalnızca geçerli durumunu döndürür.  
+ Çağrı [CSid::LoadAccount](#loadaccount) güncelleştirmek için `CSid` nesne çağırmadan önce `SidNameUse` durumuna döndürmek için. `SidNameUse` nesnenin durumu değiştirmez (için arama tarafından **LookupAccountName** veya **LookupAccountSid**), ancak yalnızca geçerli durumunu döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Güvenliği örneği](../../visual-cpp-samples.md)   

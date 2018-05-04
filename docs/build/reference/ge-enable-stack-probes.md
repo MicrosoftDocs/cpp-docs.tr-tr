@@ -1,13 +1,10 @@
 ---
-title: "-Ge (yığın yoklamalarını etkinleştir) | Microsoft Docs"
-ms.custom: 
+title: -Ge (yığın yoklamalarını etkinleştir) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /ge
 dev_langs:
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - stack checking calls
 - Ge compiler option [C++]
 ms.assetid: 4b54deae-4e3c-4bfa-95f3-ba23590f7258
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fef08e817c35858b4fab096e669f62c0ae404c8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ce8b049426eb403e4bc41e842fe1ff2db1617dfc
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ge-enable-stack-probes"></a>/Ge (Yığın Yoklamalarını Etkinleştir)
 Yığın yoklamalarını yerel değişkenler için depolama gerektiren her işlev çağrısı için etkinleştirir.  

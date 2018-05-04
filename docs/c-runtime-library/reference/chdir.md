@@ -2,11 +2,8 @@
 title: chdir | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - chdir
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - chdir function
 ms.assetid: a65275a1-41e4-46be-83a5-167dfacb62a0
-caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c9868c00e2095587b0571bd2809e4d63a04806ca
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: f16503ccf89def05f7c8800e4d33b1220b845d43
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="chdir"></a>chdir
 

@@ -1,13 +1,10 @@
 ---
-title: "-clr (ortak dil çalışma zamanı derlemesi) | Microsoft Docs"
-ms.custom: 
+title: -clr (ortak dil çalışma zamanı derlemesi) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /CLR
 - VC.Project.VCNMakeTool.CompileAsManaged
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - Managed Extensions for C++, compiling
 - common language runtime, /clr compiler option
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a754e6c2fd8c709fd0397a2c0f78a7385819c586
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 1284d0300fcea3adc5f2884a7d1eff7862ff2b65
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr (Ortak Dil Çalışma Zamanı Derlemesi)
 Ortak dil çalışma zamanı (CLR) özellikleri kullanmak için uygulamaları ve bileşenleri sağlar.  
@@ -60,7 +55,7 @@ Ortak dil çalışma zamanı (CLR) özellikleri kullanmak için uygulamaları ve
  / CLR: pure kullanım dışıdır. Derleyici gelecek bir sürümünde bu seçeneği desteklemiyor olabilir. Saf MSIL C# olmalıdır kod bağlantı noktası öneririz.  
   
  **/clr:safe**  
- /clr:safe is deprecated. Derleyici gelecek bir sürümünde bu seçeneği desteklemiyor olabilir. C# Güvenli MSIL olmalıdır kod bağlantı noktası öneririz. 
+ / CLR: safe kullanım dışıdır. Derleyici gelecek bir sürümünde bu seçeneği desteklemiyor olabilir. C# Güvenli MSIL olmalıdır kod bağlantı noktası öneririz. 
   
  **/clr:noAssembly**  
  Derleme bildirimi çıktı dosyasına eklenecek değil olduğunu belirtir. Varsayılan olarak, **noAssembly** seçeneği etkin değil.  

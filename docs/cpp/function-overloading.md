@@ -1,12 +1,9 @@
 ---
-title: "İşlev aşırı yüklemesi | Microsoft Docs"
-ms.custom: 
+title: İşlev aşırı yüklemesi | Microsoft Docs
+ms.custom: ''
 ms.date: 1/25/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - function overloading
 - declaring functions [C++], overloading
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d21ecfb649748c9bf7e190d4857ce93ebee61dd1
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 07b7209c890ce3eeadb2db346445802576674bfd
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
 C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar. Bunlar adlandırılır *aşırı* işlevleri. Aşırı yüklenmiş işlevlerin bir işlev bağımsız değişken sayısı ve türleri bağlı olarak farklı anlamları sağlamak etkinleştirin. 
@@ -45,7 +40,7 @@ C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar
 |`typedef` adlarının kullanımı|Hayır|  
 |Belirtilmemiş dizi sınırları|Hayır|  
 |**const** veya `volatile`|Evet, tüm işlevi uygulandığında|
-|[ref-qualifier](#ref-qualifier)|Evet|  
+|[ref niteleyicisi](#ref-qualifier)|Evet|  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte, aşırı yüklemenin nasıl kullanılabileceği gösterilmektedir.  
@@ -274,13 +269,13 @@ volatile Over&
   
 1.  Tam eşleşme. Hangi işlev çağrılır ve işlev prototipi türleri bildirilen türler arasında tam bir eşleşme her zaman en iyi eşleşme olan. Önemsiz dönüşümleri dizilerini tam eşleşme sınıflandırılır. Ancak, bu dönüşümleri yapmayın sıraları Dönüştür sıraları iyi değerlendirilir:  
   
-    -   İşaretçi işaretçisine gelen **const** (`type`  **\***  için **const** `type`  **\***  ).  
+    -   İşaretçi işaretçisine gelen **const** (`type` **\*** için **const** `type` **\*** ).  
   
-    -   İşaretçi işaretçisine gelen `volatile` (`type`  **\***  için `volatile` `type`  **\*** ).  
+    -   İşaretçi işaretçisine gelen `volatile` (`type` **\*** için `volatile` `type` **\***).  
   
-    -   Başvuru için başvurusundan **const** (`type`  **&**  için **const** `type`  **&** ).  
+    -   Başvuru için başvurusundan **const** (`type` **&** için **const** `type` **&**).  
   
-    -   Başvuru için başvurusundan `volatile` (`type`  **&**  için `volatile` `type`  **&** ).  
+    -   Başvuru için başvurusundan `volatile` (`type` **&** için `volatile` `type` **&**).  
   
 2.  Promosyon kullanarak eşleşir. Yalnızca tamsayı yükseltmeleri, gelen dönüşümleri içeren tam bir eşleşme olarak sınıflandırılan değil dizisi **float** için **çift**, ve önemsiz dönüşümleri promosyonlar kullanarak bir eşleşme olarak sınıflandırılmış. Eşleşen ne kadar iyi bir tam bir eşleşme olarak promosyonlar kullanarak bir eşleşme standart dönüşümler kullanarak eşleşmeden daha iyi olsa da.  
   
@@ -453,7 +448,7 @@ int main()
   
 -   Tek başına, dönüş türüne göre aynı türdeki bağımsız değişken listeleriyle işlevler aşırı yüklemesi bir hatadır.  
   
-     **Microsoft Specific**  
+     **Microsoft özel**  
   
  Aşırı yüklenebilir **new işleci** yalnızca temeline göre dönüş türü — özellikle, belirtilen bellek modeli değiştiricisi temel alınarak.  
   

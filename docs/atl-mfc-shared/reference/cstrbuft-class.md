@@ -2,11 +2,8 @@
 title: CStrBufT sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CStrBufT
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - CStrBufT class
 - shared classes, CStrBufT
 ms.assetid: 6b50fa8f-87e8-4ed4-a229-157ce128710f
-caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8df7f6c1dbd9987a9f83ed5b33a4c97fd90fec7f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 695c3bc4c5e03f2ff6c1865f456b1ef358e3dcf4
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cstrbuft-class"></a>CStrBufT sınıfı
 Bu sınıf için otomatik kaynak temizleme sağlar `GetBuffer` ve `ReleaseBuffer` çağırır var olan `CStringT` nesnesi.  
@@ -48,9 +43,9 @@ class CStrBufT
  *TCharType*  
  Karakter türü `CStrBufT` sınıfı. Aşağıdakilerden biri olabilir:  
   
-- `char`(ANSI karakter dizelerini)  
+- `char` (ANSI karakter dizelerini)  
   
-- `wchar_t`(Unicode karakter dizelerini)  
+- `wchar_t` (Unicode karakter dizelerini)  
   
 - **TCHAR** (için ANSI ve Unicode karakter dizelerini)  
   
@@ -98,7 +93,7 @@ class CStrBufT
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsimpstr.h  
   
-##  <a name="auto_length"></a>CStrBufT::AUTO_LENGTH  
+##  <a name="auto_length"></a>  CStrBufT::AUTO_LENGTH  
  Otomatik olarak yeni sürümde dize uzunluğunu belirler.  
   
 ```
@@ -108,7 +103,7 @@ static const DWORD AUTO_LENGTH = 0x01;
 ### <a name="remarks"></a>Açıklamalar  
  Otomatik olarak yeni sürümde dize uzunluğunu belirler. Dize null ile sonlandırılmış olmalıdır.  
   
-##  <a name="cstrbuft"></a>CStrBufT::CStrBufT  
+##  <a name="cstrbuft"></a>  CStrBufT::CStrBufT  
  Arabellek nesnesi oluşturur.  
   
 ```
@@ -135,7 +130,7 @@ explicit CStrBufT(StringType& str) throw(...);
   
  Kopya Oluşturucu olduğuna dikkat edin `private`.  
   
-##  <a name="operator_pcxstr"></a>CStrBufT::operator PCXSTR  
+##  <a name="operator_pcxstr"></a>  CStrBufT::operator PCXSTR  
  C stili dize olarak ilişkili dize nesnesinde depolanan karakterlerin doğrudan erişir.  
   
 ```  
@@ -148,7 +143,7 @@ operator PCXSTR() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bir işaretçi bir dize nesnesi karakteri arabelleğe döndürmek için bu işlevini çağırın. Dize nesnesi içeriğini bu işaretçiyle değiştirilemez.  
   
-##  <a name="operator_pxstr"></a>CStrBufT::operator PXSTR  
+##  <a name="operator_pxstr"></a>  CStrBufT::operator PXSTR  
  C stili dize olarak ilişkili dize nesnesinde depolanan karakterlerin doğrudan erişir.  
   
 ```
@@ -161,21 +156,21 @@ operator PXSTR() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bir işaretçi bir dize nesnesi karakteri arabelleğe döndürmek için bu işlevini çağırın. Geliştirici Bu işaretçinin dize nesnesiyle içeriğini değiştirebilirsiniz.  
   
-##  <a name="pcxstr"></a>CStrBufT::PCXSTR  
+##  <a name="pcxstr"></a>  CStrBufT::PCXSTR  
  Bir sabit dize için bir işaretçi.  
   
 ```
 typedef CSimpleStringT<TCharType>::PCXSTR PCXSTR;
 ```  
   
-##  <a name="pxstr"></a>CStrBufT::PXSTR  
+##  <a name="pxstr"></a>  CStrBufT::PXSTR  
  Bir dize için bir işaretçi.  
   
 ```
 typedef CSimpleStringT<TCharType>::PXSTR PXSTR;
 ```  
   
-##  <a name="set_length"></a>CStrBufT::SET_LENGTH  
+##  <a name="set_length"></a>  CStrBufT::SET_LENGTH  
  Dize nesnede uzunluğunu ayarlama `GetBuffer` zaman.  
   
 ```
@@ -187,7 +182,7 @@ static const DWORD SET_LENGTH = 0x02;
   
  Belirler [CSimpleStringT::GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) ve [CSimpleStringT::GetBufferSetLength](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) dize arabellek nesnesi oluşturulduğunda çağrılır.  
   
-##  <a name="setlength"></a>CStrBufT::SetLength  
+##  <a name="setlength"></a>  CStrBufT::SetLength  
  Karakter arabellek uzunluğu ayarlar.  
   
 ```
@@ -204,7 +199,7 @@ void SetLength(int nLength);
 ### <a name="remarks"></a>Açıklamalar  
  Arabellek nesnesiyle temsil edilen dize uzunluğu ayarlamak için bu işlevini çağırın.  
   
-##  <a name="stringtype"></a>CStrBufT::StringType  
+##  <a name="stringtype"></a>  CStrBufT::StringType  
  Bu sınıf şablonu özelleştirmeleri tarafından yönetilebilmesini, arabellek olan dize türü.  
   
 ```

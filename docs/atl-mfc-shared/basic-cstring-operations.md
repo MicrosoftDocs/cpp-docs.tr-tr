@@ -1,12 +1,9 @@
 ---
 title: Temel CString Operations | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 dev_langs:
 - C++
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - string comparison, CString operations
 - characters, accessing in CStrings
 ms.assetid: 41db66b2-9427-4bb3-845a-9b6869159a6c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42353a9c59bead96da8eb3b114c8acb2361b53d0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b66b6fc5578960e4b6ec9b392622256b66db9cfa
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="basic-cstring-operations"></a>Temel CString işlemleri
 Bu konuda aşağıdaki temel açıklanmaktadır [CString](../atl-mfc-shared/reference/cstringt-class.md) işlemleri:  
@@ -43,15 +38,15 @@ Bu konuda aşağıdaki temel açıklanmaktadır [CString](../atl-mfc-shared/refe
   
 - [CString nesneleri dönüştürme](#_core_converting_cstring_objects)  
   
- `Class CString`sınıf şablonunu temel alarak [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md). `CString`olan bir `typedef` , `CStringT`. Daha kesin olarak `CString` olan bir `typedef` , bir *açık uzmanlık* , `CStringT`, bir sınıf tanımlamak için bir sınıf şablonu kullanmak için yaygın bir yolu değil. Benzer şekilde tanımlanan sınıflar `CStringA` ve `CStringW`.  
+ `Class CString` sınıf şablonunu temel alarak [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md). `CString` olan bir `typedef` , `CStringT`. Daha kesin olarak `CString` olan bir `typedef` , bir *açık uzmanlık* , `CStringT`, bir sınıf tanımlamak için bir sınıf şablonu kullanmak için yaygın bir yolu değil. Benzer şekilde tanımlanan sınıflar `CStringA` ve `CStringW`.  
   
- `CString`, `CStringA`, ve `CStringW` atlstr.h tanımlanır. `CStringT`cstringt.h içinde tanımlanmıştır.  
+ `CString`, `CStringA`, ve `CStringW` atlstr.h tanımlanır. `CStringT` cstringt.h içinde tanımlanmıştır.  
   
  `CString`, `CStringA`, ve `CStringW` bir dizi yöntem ve işleçler tarafından tanımlanan her alma `CStringT` destekledikleri dize verilerini ile kullanım için. Yinelenen ve bazı durumlarda, yöntemlerin bazıları C çalışma zamanı kitaplıkları dize hizmetlerini aşan.  
   
  Not: `CString` yerel bir sınıftır. C + kullanmak için bir dize sınıfı için +/ CLI yönetilen proje, kullanım `System.String`.  
   
-##  <a name="_core_creating_cstring_objects_from_standard_c_literal_strings"></a>CString nesneleri standart C değişmez değer dizeleri oluşturma  
+##  <a name="_core_creating_cstring_objects_from_standard_c_literal_strings"></a> CString nesneleri standart C değişmez değer dizeleri oluşturma  
  C türü değişmez değer dizeleri atayabilirsiniz bir `CString` atayabilirsiniz gibi `CString` başka bir nesne.  
   
 -   Bir C değişmez değer dize değerini atayın bir `CString` nesnesi.  
@@ -67,17 +62,17 @@ Bu konuda aşağıdaki temel açıklanmaktadır [CString](../atl-mfc-shared/refe
     > [!NOTE]
     >  ANSI veya Unicode için derlenebilir böylece uygulamanız yazmak için değişmez değer dizeleri _T makrosu kullanarak kodlayın. Daha fazla bilgi için bkz: [Unicode ve çok baytlı karakter kümesi (MBCS) desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md).  
   
-##  <a name="_core_accessing_individual_characters_in_a_cstring"></a>Bir CString tek tek karakter erişme  
+##  <a name="_core_accessing_individual_characters_in_a_cstring"></a> Bir CString tek tek karakter erişme  
  Tek tek karakter erişebileceği bir `CString` kullanarak nesne `GetAt` ve `SetAt` yöntemleri. Dizi öğesi veya alt simge, işleci ([]) yerine kullanabilirsiniz `GetAt` tek tek karakterleri almak için. (Bu erişilirken dizi öğeleri standart C stilinde dizeleri olduğu dizine göre benzer.) Dizin için değerleri `CString` karakterlerdir sıfır tabanlı.  
   
-##  <a name="_core_concatenating_two_cstring_objects"></a>Birleştirme iki CString nesneleri  
+##  <a name="_core_concatenating_two_cstring_objects"></a> Birleştirme iki CString nesneleri  
  İki birleştirmek için `CString` nesneleri, birleştirme işleçleri kullanın (+ veya +=) gibi.  
   
  [!code-cpp[NVC_ATLMFC_Utilities#185](../atl-mfc-shared/codesnippet/cpp/basic-cstring-operations_3.cpp)]  
   
  Birleştirme işleçleri için en az bir değişken (+ veya +=) olmalıdır bir `CString` nesnesi, ancak bir sabit karakter dizesi kullanabilirsiniz (örneğin, `"big"`) veya bir `char` (örneğin, ' x') diğer bağımsız değişkeni.  
   
-##  <a name="_core_comparing_cstring_objects"></a>CString nesneleri karşılaştırma  
+##  <a name="_core_comparing_cstring_objects"></a> CString nesneleri karşılaştırma  
  `Compare` Yöntemi ve == işleci için `CString` eşdeğerdir. `Compare`, `operator==`, ve `CompareNoCase` MBCS ve Unicode farkında; olduğundan `CompareNoCase` ayrıca büyük küçük harfe duyarlıdır. `Collate` Yöntemi `CString` yerel ayara duyarlı ve genellikle daha yavaş `Compare`. Kullanım `Collate` yalnızca burada, sıralayarak uymanız gerekir kuralları belirtildiği şekilde geçerli bölgeye göre.  
   
  Aşağıdaki tabloda kullanılabilir gösterilmektedir [CString](../atl-mfc-shared/reference/cstringt-class.md) karşılaştırma işlevleri ve eşdeğer MBCS/Unicode-taşınabilir işlevlerini C Çalışma Zamanı Kitaplığı'nda.  
@@ -92,7 +87,7 @@ Bu konuda aşağıdaki temel açıklanmaktadır [CString](../atl-mfc-shared/refe
   
  [!code-cpp[NVC_ATLMFC_Utilities#186](../atl-mfc-shared/codesnippet/cpp/basic-cstring-operations_4.cpp)]  
   
-##  <a name="_core_converting_cstring_objects"></a>CString nesneleri dönüştürme  
+##  <a name="_core_converting_cstring_objects"></a> CString nesneleri dönüştürme  
  CString nesneleri için diğer dize türlerini dönüştürme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Dönüştür arasında çeşitli dize türleri](../text/how-to-convert-between-various-string-types.md).  
   
 ## <a name="using-cstring-with-wcout"></a>CString wcout ile kullanma  

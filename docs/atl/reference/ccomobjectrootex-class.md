@@ -1,12 +1,9 @@
 ---
-title: "İn uygulamasına sınıfı | Microsoft Docs"
-ms.custom: 
+title: İn uygulamasına sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComObjectRootEx
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - reference counting
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bab27a9d8b5af8315d9d3468933ea016b12e3399
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b147f0ad3f1a54c2ae640b6bf2426bcddf060b35
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomobjectrootex-class"></a>İn uygulamasına sınıfı
 Bu sınıf, nesne başvuru sayısı Yönetimi toplanmayan ve toplanan nesneleri işlemek için yöntemleri sağlar.  
@@ -62,11 +57,11 @@ class CComObjectRootEx : public CComObjectRootBase
   
 |||  
 |-|-|  
-|[İn uygulamasına](#ccomobjectrootex)|Oluşturucu.|  
+|[CComObjectRootEx](#ccomobjectrootex)|Oluşturucu.|  
 |[Internaladdref](#internaladdref)|Toplanmayan nesne başvurusu sayısını artırır.|  
 |[Internalrelease](#internalrelease)|Başvuru sayım toplanmayan bir nesne için azaltır.|  
-|[Kilitleme](#lock)|İş parçacığı modeli birden çok iş parçacıklı ise, kritik bölüm nesnenin sahipliğini alır.|  
-|[Kilidini aç](#unlock)|İş parçacığı modeli birden çok iş parçacıklı ise, kritik bölüm nesnenin sahipliğini serbest bırakır.|  
+|[kilitleme](#lock)|İş parçacığı modeli birden çok iş parçacıklı ise, kritik bölüm nesnenin sahipliğini alır.|  
+|[kilidini aç](#unlock)|İş parçacığı modeli birden çok iş parçacıklı ise, kritik bölüm nesnenin sahipliğini serbest bırakır.|  
   
 ### <a name="ccomobjectrootbase-methods"></a>CComObjectRootBase yöntemleri  
   
@@ -93,7 +88,7 @@ class CComObjectRootEx : public CComObjectRootBase
 |[m_pOuterUnknown](#m_pouterunknown)|İle `m_dwRef`, UNION parçası. Dış bilinmeyen bir işaretçi tutacak nesne hesaplanırken kullanılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComObjectRootEx`Nesne başvuru sayısı Yönetimi toplanmayan ve toplanan nesneler için işler. Nesnenizin değil toplanmakta ve nesnenizin toplanır varsa işaretçinin dış bilinmeyen tutan nesne başvurusu sayısı tutar. Toplanan nesneler için `CComObjectRootEx` yöntemleri oluşturmak için iç nesneyi başarısızlığını işlemek için kullanılabilir ve dış iç arabirimleri yayımlandığında silinmeye karşı veya iç nesneyi korumak için silinir.  
+ `CComObjectRootEx` Nesne başvuru sayısı Yönetimi toplanmayan ve toplanan nesneler için işler. Nesnenizin değil toplanmakta ve nesnenizin toplanır varsa işaretçinin dış bilinmeyen tutan nesne başvurusu sayısı tutar. Toplanan nesneler için `CComObjectRootEx` yöntemleri oluşturmak için iç nesneyi başarısızlığını işlemek için kullanılabilir ve dış iç arabirimleri yayımlandığında silinmeye karşı veya iç nesneyi korumak için silinir.  
   
  COM sunucusu uygulayan bir sınıf öğesinden devralmalıdır `CComObjectRootEx` veya [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md).  
   
@@ -110,14 +105,14 @@ class CComObjectRootEx : public CComObjectRootBase
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="ccomobjectrootex"></a>CComObjectRootEx::CComObjectRootEx  
+##  <a name="ccomobjectrootex"></a>  CComObjectRootEx::CComObjectRootEx  
  Oluşturucu başvuru sayısı 0 başlatır.  
   
 ```
 CComObjectRootEx();
 ```  
   
-##  <a name="finalconstruct"></a>CComObjectRootEx::FinalConstruct  
+##  <a name="finalconstruct"></a>  CComObjectRootEx::FinalConstruct  
  Nesne için gereken başlatılmasını gerçekleştirmek için türetilmiş sınıfta bu yöntemin üzerine yazabilir.  
   
 ```
@@ -157,7 +152,7 @@ HRESULT FinalConstruct();
   
 -   Geçersiz kılma `FinalRelease` yayımlamayı **IUnknown** işaretçi.  
   
-##  <a name="finalrelease"></a>CComObjectRootEx::FinalRelease  
+##  <a name="finalrelease"></a>  CComObjectRootEx::FinalRelease  
  Nesne için gereken tüm temizleme işlemini yapmak için türetilmiş sınıf içinde bu yöntemin üzerine yazabilir.  
   
 ```
@@ -169,7 +164,7 @@ void FinalRelease();
   
  Temizleme gerçekleştirme `FinalRelease` nesne hala tam olarak hangi noktada adresindeki oluşturulan beri kod sınıfınız yıkıcı için ekleme için tercih edilir `FinalRelease` olarak adlandırılır. Bu, en çok türetilen sınıfı tarafından sağlanan yöntemleri güvenle erişmenize olanak tanır. Bu özellikle toplanmış tüm nesneleri silme önce serbest bırakma için önemlidir.  
   
-##  <a name="internaladdref"></a>CComObjectRootEx::InternalAddRef  
+##  <a name="internaladdref"></a>  CComObjectRootEx::InternalAddRef  
  Toplanmayan nesne başvuru sayısı 1 ile artırır.  
   
 ```
@@ -182,7 +177,7 @@ ULONG InternalAddRef();
 ### <a name="remarks"></a>Açıklamalar  
  İş parçacığı modeli birden çok iş parçacıklı, ise, **InterlockedIncrement** birden çok iş parçacığı aynı anda başvuru sayısı değiştirmesini engellemek için kullanılır.  
   
-##  <a name="internalqueryinterface"></a>CComObjectRootEx::InternalQueryInterface  
+##  <a name="internalqueryinterface"></a>  CComObjectRootEx::InternalQueryInterface  
  İstenen arabirim için bir işaretçi alır.  
   
 ```
@@ -210,9 +205,9 @@ static HRESULT InternalQueryInterface(
  Standart birini `HRESULT` değerleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `InternalQueryInterface`yalnızca COM eşleme tablosu arabirimlerde işler. Nesnenizin toplanır, `InternalQueryInterface` dış bilinmeyen temsilci değil. Makro COM harita tabloya arabirimleri girebilirsiniz [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) veya türevleri biri.  
+ `InternalQueryInterface` Yalnızca COM eşleme tablosu arabirimlerde işler. Nesnenizin toplanır, `InternalQueryInterface` dış bilinmeyen temsilci değil. Makro COM harita tabloya arabirimleri girebilirsiniz [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) veya türevleri biri.  
   
-##  <a name="internalrelease"></a>CComObjectRootEx::InternalRelease  
+##  <a name="internalrelease"></a>  CComObjectRootEx::InternalRelease  
  Azaltır başvurusu, 1 ile toplanmayan bir nesne sayısı.  
   
 ```
@@ -225,7 +220,7 @@ ULONG InternalRelease();
 ### <a name="remarks"></a>Açıklamalar  
  İş parçacığı modeli birden çok iş parçacıklı, ise, **InterlockedDecrement** birden çok iş parçacığı aynı anda başvuru sayısı değiştirmesini engellemek için kullanılır.  
   
-##  <a name="lock"></a>CComObjectRootEx::Lock  
+##  <a name="lock"></a>  CComObjectRootEx::Lock  
  İş parçacığı modeli birden çok iş parçacıklı ise, bu yöntem Win32 API işlevi çağırır [EnterCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms682608), iş parçacığı kritik bölüm nesnenin sahipliğini alabilir kadar hangi bekler elde özel veri üyesi.  
   
 ```
@@ -237,7 +232,7 @@ void Lock();
   
  İş parçacığı modeli tek iş parçacıklı ise, bu yöntem hiçbir şey yapmaz.  
   
-##  <a name="m_dwref"></a>CComObjectRootEx::m_dwRef  
+##  <a name="m_dwref"></a>  CComObjectRootEx::m_dwRef  
  Dört bayt bellek erişen UNION parçası.  
   
 ```
@@ -259,7 +254,7 @@ long m_dwRef;
   
  Nesne toplanmaz, başvuru sayımı erişilen `AddRef` ve **sürüm** depolanan `m_dwRef`. Nesne toplanır, dış bilinmeyen işaretçisine depolanan [m_pOuterUnknown](#m_pouterunknown).  
   
-##  <a name="m_pouterunknown"></a>CComObjectRootEx::m_pOuterUnknown  
+##  <a name="m_pouterunknown"></a>  CComObjectRootEx::m_pOuterUnknown  
  Dört bayt bellek erişen UNION parçası.  
   
 ```
@@ -282,7 +277,7 @@ IUnknown*
   
  Nesne toplanır, dış bilinmeyen işaretçisine depolanan `m_pOuterUnknown`. Nesne toplanmaz, başvuru sayımı erişilen `AddRef` ve **sürüm** depolanan [m_dwRef](#m_dwref).  
   
-##  <a name="objectmain"></a>CComObjectRootEx::ObjectMain  
+##  <a name="objectmain"></a>  CComObjectRootEx::ObjectMain  
  Listelenen her sınıf için [nesne eşlemesi](http://msdn.microsoft.com/en-us/b57619cc-534f-4b8f-bfd4-0c12f937202f), ne zaman modülü başlatıldıktan sonra bu işlev çağrılır ve yeniden zaman sonlandırılır.  
   
 ```
@@ -296,12 +291,12 @@ static void WINAPI ObjectMain(bool bStarting);
 ### <a name="remarks"></a>Açıklamalar  
  Değeri `bStarting` parametresi gösterir modülü yüklenmekte olan başlatılmamış veya sonlandırıldı. Varsayılan uygulaması `ObjectMain` hiçbir şey yapmaz, ancak sınıfınızda başlatmak veya sınıfı için ayırmak istediğiniz kaynakları temizlemek için bu işlevi geçersiz kılabilirsiniz. Unutmayın `ObjectMain` sınıfın tüm örnekleri istenen önce çağrılır.  
   
- `ObjectMain`Giriş noktası işlevi gerçekleştirebilir işlemi türünü kısıtlı olacak şekilde DLL giriş noktasından adı verilir. Bu kısıtlamaları hakkında daha fazla bilgi için bkz: [DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../../build/run-time-library-behavior.md) ve [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583).  
+ `ObjectMain` Giriş noktası işlevi gerçekleştirebilir işlemi türünü kısıtlı olacak şekilde DLL giriş noktasından adı verilir. Bu kısıtlamaları hakkında daha fazla bilgi için bkz: [DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../../build/run-time-library-behavior.md) ve [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#41](../../atl/codesnippet/cpp/ccomobjectrootex-class_2.h)]  
   
-##  <a name="outeraddref"></a>CComObjectRootEx::OuterAddRef  
+##  <a name="outeraddref"></a>  CComObjectRootEx::OuterAddRef  
  Dış bilinmeyen bir toplama başvuru sayısını artırır.  
   
 ```
@@ -311,7 +306,7 @@ ULONG OuterAddRef();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tanılama için kullanışlı ve test olabilir bir değer.  
   
-##  <a name="outerqueryinterface"></a>CComObjectRootEx::OuterQueryInterface  
+##  <a name="outerqueryinterface"></a>  CComObjectRootEx::OuterQueryInterface  
  İstenen arabirim dolaylı bir işaretçi alır.  
   
 ```
@@ -328,7 +323,7 @@ HRESULT OuterQueryInterface(REFIID iid, void** ppvObject);
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart birini `HRESULT` değerleri.  
   
-##  <a name="outerrelease"></a>CComObjectRootEx::OuterRelease  
+##  <a name="outerrelease"></a>  CComObjectRootEx::OuterRelease  
  Azaltır bir toplama dış bilinmeyen başvuru sayısı.  
   
 ```
@@ -338,7 +333,7 @@ ULONG OuterRelease();
 ### <a name="return-value"></a>Dönüş Değeri  
  Olmayan hata ayıklama derlemelerinde, her zaman 0 döndürür. Hata ayıklama derlemelerinde tanılama için kullanışlı veya test bir değer döndürür.  
   
-##  <a name="unlock"></a>CComObjectRootEx::Unlock  
+##  <a name="unlock"></a>  CComObjectRootEx::Unlock  
  İş parçacığı modeli birden çok iş parçacıklı ise, bu yöntem Win32 API işlevi çağırır [LeaveCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms684169), kritik bölüm nesnenin hangi sürümleri sahipliğini elde özel veri üyesi.  
   
 ```

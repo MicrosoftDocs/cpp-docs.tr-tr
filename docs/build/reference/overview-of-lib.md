@@ -2,12 +2,9 @@
 title: LIB'e genel bakış | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - Lib
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - LIB [C++], modes
 ms.assetid: e997d423-f574-434f-8b56-25585d137ee0
-caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef3d1e57371fdea62bb557830baca633f4165637
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d8fd3d370da4f841e85086e3d061508d68414e96
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="overview-of-lib"></a>LIB'e Genel Bakış
 LIB standart kitaplıkları oluşturur, kitaplıkları içeri aktarma ve dışarı aktarma dosyaları ile birlikte kullanabileceğiniz [bağlantı](../../build/reference/linker-options.md) bir programı oluştururken. LIB bir komut satırından çalıştırır.  
@@ -78,7 +73,7 @@ LIB standart kitaplıkları oluşturur, kitaplıkları içeri aktarma ve dışar
   
  Daha fazla bilgi için bkz: [kitaplığı yönetme](../../build/reference/managing-a-library.md).  
   
- **/ LTCG**  
+ **/LTCG**  
  Bağlama zamanı kodu oluşturma kullanılarak oluşturulması için kitaplık neden olur.  
   
  Daha fazla bilgi için bkz: [çalıştıran LIB](../../build/reference/running-lib.md).  
@@ -113,7 +108,7 @@ LIB standart kitaplıkları oluşturur, kitaplıkları içeri aktarma ve dışar
   
  Daha fazla bilgi için bkz: [kitaplığı yönetme](../../build/reference/managing-a-library.md).  
   
- **/ SUBSYSTEM**  
+ **/SUBSYSTEM**  
  İşletim sistemi, çıkış kitaplığına bağlama tarafından oluşturulan bir programı çalıştırmak anlatır.  
   
  Daha fazla bilgi için bkz: [kitaplığı yönetme](../../build/reference/managing-a-library.md).  

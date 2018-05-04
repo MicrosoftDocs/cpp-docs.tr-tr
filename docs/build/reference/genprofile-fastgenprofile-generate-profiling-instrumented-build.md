@@ -4,7 +4,7 @@ ms.custom: ''
 ms.date: 03/14/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - GENPROFILE
 - FASTGENPROFILE
@@ -16,14 +16,13 @@ helpviewer_keywords:
 ms.assetid: deff5ce7-46f5-448a-b9cd-a7a83a6864c6
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6174c1fdd53ec14f0cb63292a9036caabc98a7d
-ms.sourcegitcommit: ee7d74683af7631441c8c7f65ef5ceceaee4a5ee
+ms.openlocfilehash: 05d7961ff46661b8f6df2768591932699c3965d4
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="genprofile-fastgenprofile-generate-profiling-instrumented-build"></a>/ GENPROFILE, /FASTGENPROFILE (Araçlı derleme Profil Oluştur)
 
@@ -38,7 +37,7 @@ Profil temelli iyileştirme (PGO) desteklemek için bağlayıcı tarafından bir
 
 Aşağıdaki bağımsız değişkenlerden biri için belirtilebilir **/GENPROFILE** veya **/FASTGENPROFILE**. Burada listelenen bağımsız değişkenleri dikey çubukla ayrılan (**|**) karakter karşılıklı olarak birbirini dışlar. Bir virgül kullanın (**,**) seçenekleri ayırmak için karakter.
 
-**COUNTER32** &#124; **COUNTER64**<br/>
+**COUNTER32** &AMP;#124; **COUNTER64**<br/>
 Kullanmak **COUNTER32** 32-bit araştırma sayaçları kullanıldığını belirtmek için ve **COUNTER64** 64-bit araştırma sayaçları belirtmek için. Belirttiğinizde **/GENPROFILE**, varsayılan **COUNTER64**. Belirttiğinizde **/FASTGENPROFILE**, varsayılan **COUNTER32**.
 
 **TAM** &AMP;#124; **NOEXACT**<br/>
@@ -47,10 +46,10 @@ Kullanım **tam** araştırmalar için iş parçacığı ınterlocked artışlar
 **MEMMAX**=*değeri*, **MEMMIN**=*değeri*<br/>
 Kullanım **MEMMAX** ve **MEMMIN** bellekte eğitim verileri için maksimum ve minimum ayırma boyutunu belirlemek için. Bayt cinsinden ayrılan bellek miktarını değerdir. Varsayılan olarak, bu değerleri bir iç buluşsal yöntem tarafından belirlenir.
 
-**YOL** &AMP;#124; **NOPATH**  <br/>
+**YOL** &AMP;#124; **NOPATH** <br/>
 Kullanım **yolu** PGO sayaçları her benzersiz yolu bir işlev için ayrı bir dizi belirtmek için. Kullanım **NOPATH** sayaçları her işlevi için yalnızca bir kümesini belirtmek için. Belirttiğinizde **/GENPROFILE**, varsayılan **yolu** . Belirttiğinizde **/FASTGENPROFILE**, varsayılan **NOPATH** .
 
-**TRACKEH** &AMP;#124; **NOTRACKEH**  <br/>
+**TRACKEH** &AMP;#124; **NOTRACKEH** <br/>
 Eğitim sırasında özel durumlar sırasında doğru sayısı tutmak için fazladan sayaçlar kullanılıp kullanılmayacağını belirtir. Kullanım **TRACKEH** bir tam sayı için fazladan sayaçlar belirtmek için. Kullanmak **NOTRACKEH** tek özel durum kullanmaz kod sayaçlarını belirtmek için işleme ya da özel durumlar, eğitim senaryolarda karşılaştığınız değil.  Belirttiğinizde **/GENPROFILE**, varsayılan **TRACKEH** . Belirttiğinizde **/FASTGENPROFILE**, varsayılan **NOTRACKEH** .
 
 **PGD**=*dosya adı*<br/>

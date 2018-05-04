@@ -2,11 +2,8 @@
 title: Hizmet eşleme makroları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - atlcom/ATL::BEGIN_SERVICE_MAP
@@ -16,17 +13,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
-caps.latest.revision: 16
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 444d89833d84f23099ff0de8bce29bfc9d0a1344
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d2d2fa313c574951a8f8ba7c85d5b405707ec220
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="service-map-macros"></a>Hizmet eşleme makroları
 Bu makroları hizmet eşlemeleri ve girişleri tanımlayın.  
@@ -41,7 +36,7 @@ Bu makroları hizmet eşlemeleri ve girişleri tanımlayın.
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
    
-##  <a name="begin_service_map"></a>BEGIN_SERVICE_MAP  
+##  <a name="begin_service_map"></a>  BEGIN_SERVICE_MAP  
  Hizmet eşlemesi başlangıcını işaretler.  
   
 ```
@@ -62,7 +57,7 @@ BEGIN_SERVICE_MAP(theClass)
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#57](../../atl/codesnippet/cpp/service-map-macros_1.h)]  
   
-##  <a name="end_service_map"></a>END_SERVICE_MAP  
+##  <a name="end_service_map"></a>  END_SERVICE_MAP  
  Hizmet eşlemesi sonunu işaretler.  
   
 ```
@@ -72,7 +67,7 @@ END_SERVICE_MAP()
 ### <a name="example"></a>Örnek  
  Örneğin bkz [BEGIN_SERVICE_MAP](#begin_service_map).  
   
-##  <a name="service_entry"></a>SERVICE_ENTRY  
+##  <a name="service_entry"></a>  SERVICE_ENTRY  
  Nesne tarafından belirtilen hizmet kimliği desteklediğini gösterir *SID*.  
   
 ```
@@ -86,7 +81,7 @@ SERVICE_ENTRY( SID )
 ### <a name="example"></a>Örnek  
  Örneğin bkz [BEGIN_SERVICE_MAP](#begin_service_map).  
   
-##  <a name="service_entry_chain"></a>SERVICE_ENTRY_CHAIN  
+##  <a name="service_entry_chain"></a>  SERVICE_ENTRY_CHAIN  
  Bildirir [IServiceProviderImpl::QueryService](#queryservice) tarafından belirtilen nesneye zinciri için `punk`.  
   
 ```
@@ -100,7 +95,7 @@ SERVICE_ENTRY_CHAIN( punk )
 ### <a name="example"></a>Örnek  
  Örneğin bkz [BEGIN_SERVICE_MAP](#begin_service_map).  
   
-##  <a name="queryservice"></a>IServiceProviderImpl::QueryService  
+##  <a name="queryservice"></a>  IServiceProviderImpl::QueryService  
  Oluşturur veya belirtilen hizmet erişir ve hizmet için belirtilen arabirimi için bir arabirim işaretçisi döndürür.  
   
 ```
@@ -111,13 +106,13 @@ STDMETHOD(QueryService)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [IN]`guidService`  
+ [IN] `guidService`  
  Bir hizmet tanımlayıcı (SID) yönelik işaretçi.  
   
- [IN]`riid`  
+ [IN] `riid`  
  Çağıranın erişim kazanmak için arabirimi tanımlayıcısı.  
   
- [OUT]`ppvObj`  
+ [OUT] `ppvObj`  
  İstenen arabirim dolaylı işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -132,7 +127,7 @@ STDMETHOD(QueryService)(
 |E_NOINTERFACE|İstenen arabirim bu hizmetin bir parçası değil veya bilinmeyen bir hizmettir.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- `QueryService`Belirtilen hizmet istenen arabiriminde dolaylı bir işaretçi döndürür. Çağıran, artık gerekli olmadığında bu işaretçinin serbest bırakma için sorumludur.  
+ `QueryService` Belirtilen hizmet istenen arabiriminde dolaylı bir işaretçi döndürür. Çağıran, artık gerekli olmadığında bu işaretçinin serbest bırakma için sorumludur.  
   
  Çağırdığınızda `QueryService`, hem de bir hizmet tanımlayıcı geçirdiğiniz ( `guidService`) ve bir arabirim tanımlayıcısı ( `riid`). `guidService` Erişim için istediğiniz hizmeti belirtir ve `riid` hizmetinin bir parçası olan bir arabirim tanımlar. Buna karşılık, arabirim dolaylı bir işaretçi alırsınız.  
   

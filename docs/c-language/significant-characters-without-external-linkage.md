@@ -1,27 +1,22 @@
 ---
-title: "Dış bağlantısız önemli karakterler | Microsoft Docs"
-ms.custom: 
+title: Dış bağlantısız önemli karakterler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: 396cfb36-391a-4aa9-885d-20198d4dc2ec
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be0f6863ae1c0d7bd2c30868dbc994d1c0cc04a8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f9e99c3e337a1cdece27800db8e6d3938f3a6499
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="significant-characters-without-external-linkage"></a>Dış Bağlantısız Önemli Karakterler
 **ANSI 3.1.2** dış bağlantısız önemli karakterler sayısı  

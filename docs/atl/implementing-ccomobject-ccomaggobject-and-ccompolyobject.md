@@ -1,13 +1,10 @@
 ---
 title: CComObject, CComAggObject ve CComPolyObject uygulama | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 f1_keywords:
 - CComPolyObject
 - CComAggObject
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - CComAggObject class
 - CComObject class, implementing
 ms.assetid: 5aabe938-104d-492e-9c41-9f7fb1c62098
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54f237a629c4af9ea7ae30aeca21c03786abcd97
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5ac45a6edbe606ba445ed3ae58cfde348f83e4de
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="implementing-ccomobject-ccomaggobject-and-ccompolyobject"></a>CComObject, CComAggObject ve CComPolyObject uygulama
 Şablon sınıfları [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md), ve [CComPolyObject](../atl/reference/ccompolyobject-class.md) her zaman en çok türetilen devralma zincirinde sınıflarıdır. Tüm yöntemlere işlemeye sorumluluğu olan **IUnknown**: `QueryInterface`, `AddRef`, ve **sürüm**. Ayrıca, `CComAggObject` ve `CComPolyObject` (toplanmış nesneler için kullanıldığında) özel başvuru sayımı sağlamak ve `QueryInterface` semantiği iç bilinmeyen için gereklidir.  
@@ -40,7 +35,7 @@ ms.lasthandoff: 12/21/2017
 |Makrosu|Efekt|  
 |-----------|------------|  
 |`DECLARE_NOT_AGGREGATABLE`|Her zaman kullanır `CComObject`.|  
-|`DECLARE_AGGREGATABLE`|Kullanan `CComAggObject` nesne toplanır varsa ve `CComObject` değilse. `CComCoClass`Bu makrosu içeren bunu hiçbiri **DECLARE_\*_AGGREGATABLE** makroları bildirildiğinden sınıfınızda, bu varsayılan olur.|  
+|`DECLARE_AGGREGATABLE`|Kullanan `CComAggObject` nesne toplanır varsa ve `CComObject` değilse. `CComCoClass` Bu makrosu içeren bunu hiçbiri **DECLARE_\*_AGGREGATABLE** makroları bildirildiğinden sınıfınızda, bu varsayılan olur.|  
 |`DECLARE_ONLY_AGGREGATABLE`|Her zaman kullanır `CComAggObject`. Nesne olmayan toplanır durumunda bir hata döndürür.|  
 |`DECLARE_POLY_AGGREGATABLE`|ATL bir örneğini oluşturur **CComPolyObject\<CYourClass >** zaman **IClassFactory::CreateInstance** olarak adlandırılır. Oluşturma sırasında dış bilinmeyen değerini denetlenir. Eğer öyleyse **NULL**, **IUnknown** toplanmayan bir nesne için uygulanır. Dış bilinmeyen değilse **NULL**, **IUnknown** toplanmış olan bir nesne için uygulanır.|  
   

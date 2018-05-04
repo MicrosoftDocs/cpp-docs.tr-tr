@@ -1,9 +1,9 @@
 ---
-title: "C++ konsol uygulama projesi oluşturma | Microsoft Docs"
-description: "Visual c++'ta bir Hello World konsol uygulaması oluşturma"
+title: C++ konsol uygulama projesi oluşturma | Microsoft Docs
+description: Visual c++'ta bir Hello World konsol uygulaması oluşturma
 ms.custom: mvc
 ms.date: 12/12/2017
-ms.topic: get-started-article
+ms.topic: tutorial
 ms.technology:
 - devlang-C++
 ms.devlang: C++
@@ -12,14 +12,13 @@ dev_langs:
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76975054aad3173fef99a2e0f6c5ca1c642dea86
-ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.openlocfilehash: 35b7b896dfb2a4c9dd37a9f59476cbc7f23c3902
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-c-console-app-project"></a>C++ konsol uygulama projesi oluşturma
 

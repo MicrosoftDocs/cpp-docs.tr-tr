@@ -1,29 +1,24 @@
 ---
-title: "-clr kısıtlamaları | Microsoft Docs"
-ms.custom: 
+title: -clr kısıtlamaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - /clr compiler option [C++], restrictions
 ms.assetid: 385f6462-2c68-46d6-810e-469553ead447
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3552fda0ce6dc80c253809cfd464555d32604534
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 697e2a50e8c63928a52bd1d960dcdefad0fe87bb
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clr-restrictions"></a>/clr Kısıtlamalar
 Kullanımı ile ilgili aşağıdaki kısıtlamalar Not **/CLR**:  
@@ -60,7 +55,7 @@ Kullanımı ile ilgili aşağıdaki kısıtlamalar Not **/CLR**:
   
     -   [/MT](../../build/reference/md-mt-ld-use-run-time-library.md)  
   
-    -   [/RTC](../../build/reference/rtc-run-time-error-checks.md)  
+    -   [/ RTC](../../build/reference/rtc-run-time-error-checks.md)  
   
     -   **/ZI**  
   

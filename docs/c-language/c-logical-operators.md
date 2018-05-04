@@ -1,13 +1,10 @@
 ---
-title: "C mantıksal işleçleri | Microsoft Docs"
-ms.custom: 
+title: C mantıksal işleçleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - '&& operator'
 - logical OR operator
 ms.assetid: c0a4e766-ad56-4300-bf76-b28dc0e19b43
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0308b4d3531c52b229771629e245af0b772ec5d9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3f92adbeab4175178be8f41a09c4455d8a581131
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-logical-operators"></a>C Mantıksal İşleçleri
 Mantıksal işleçler mantıksal gerçekleştirmek- ve (**&&**) ve mantıksal OR ( `||` ) işlemleri.  
@@ -45,7 +40,7 @@ Mantıksal işleçler mantıksal gerçekleştirmek- ve (**&&**) ve mantıksal OR
  *OR ifadesi mantıksal*:  
  *mantıksal-ve-ifadesi*  
   
- *OR ifadesi mantıksal***&#124; &#124;** *mantıksal-ve-ifadesi*   
+ *OR ifadesi mantıksal***&#124;&#124;***mantıksal-ve-ifadesi*   
   
  Mantıksal işleçler olağan aritmetik dönüştürmeler gerçekleştirmeyin. Bunun yerine, her işleneni, eşdeğer 0 bakımından değerlendirin. Mantıksal bir işlemin sonucunu, 0 veya 1 ' dir. Sonucunun türü `int`.  
   
@@ -78,4 +73,4 @@ printf( "%d" , (x == w || x == y || x == z) );
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Mantıksal AND işleci: & &](../cpp/logical-and-operator-amp-amp.md)   
- [Mantıksal OR işleci: &#124; &#124;](../cpp/logical-or-operator-pipe-pipe.md)
+ [Mantıksal OR işleci:&#124;&#124;](../cpp/logical-or-operator-pipe-pipe.md)

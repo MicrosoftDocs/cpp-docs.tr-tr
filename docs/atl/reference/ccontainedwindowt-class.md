@@ -1,12 +1,9 @@
 ---
-title: "CContainedWindowT sınıfı | Microsoft Docs"
-ms.custom: 
+title: CContainedWindowT sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CContainedWindowT
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - contained windows
 - CContainedWindowT class
 ms.assetid: cde0ca36-9347-4068-995a-d294dae57ca9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4cf792fed2f7a5cac45826649224a565228f9d73
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2f3f90e23eed3bd1eba80bbf90fe73de45eb7cfa
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccontainedwindowt-class"></a>CContainedWindowT sınıfı
 Bu sınıf, başka bir nesne içinde bulunan bir pencere uygular.  
@@ -97,11 +92,11 @@ class CContainedWindowT : public TBase
 |[CContainedWindowT::m_pObject](#m_pobject)|Noktaları içeren nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CContainedWindowT`başka bir nesne içinde bulunan bir pencere uygular. `CContainedWindowT`kullanıcının bir ileti eşleme uygun işleyicileri doğrudan iletileri içeren nesnesindeki pencere yordamı kullanır. Oluşturulurken bir `CContainedWindowT` nesnesi, belirttiğiniz hangi ileti eşlemesi kullanılmalıdır.  
+ `CContainedWindowT` başka bir nesne içinde bulunan bir pencere uygular. `CContainedWindowT`kullanıcının bir ileti eşleme uygun işleyicileri doğrudan iletileri içeren nesnesindeki pencere yordamı kullanır. Oluşturulurken bir `CContainedWindowT` nesnesi, belirttiğiniz hangi ileti eşlemesi kullanılmalıdır.  
   
- `CContainedWindowT`Yeni bir pencere varolan bir pencere sınıfı tarafından üst Sınıflama oluşturmanıza olanak sağlar. **Oluşturma** yöntemi önce varolan bir sınıfa bağlı, ancak kullanan bir pencere sınıfı kaydeder `CContainedWindowT::WindowProc`. **Oluşturma** bu yeni pencere sınıfına dayalı bir pencere oluşturur. Her bir örneğini `CContainedWindowT` sınıfın farklı pencere sınıfı olabilir.  
+ `CContainedWindowT` Yeni bir pencere varolan bir pencere sınıfı tarafından üst Sınıflama oluşturmanıza olanak sağlar. **Oluşturma** yöntemi önce varolan bir sınıfa bağlı, ancak kullanan bir pencere sınıfı kaydeder `CContainedWindowT::WindowProc`. **Oluşturma** bu yeni pencere sınıfına dayalı bir pencere oluşturur. Her bir örneğini `CContainedWindowT` sınıfın farklı pencere sınıfı olabilir.  
   
- `CContainedWindowT`Ayrıca penceresi sınıflara destekler. `SubclassWindow` Yöntemi iliştirir varolan penceresine `CContainedWindowT` nesne ve pencere yordamı değişiklikleri `CContainedWindowT::WindowProc`. Her örneği `CContainedWindowT` farklı bir pencere bir alt kümesi olabilir.  
+ `CContainedWindowT` Ayrıca penceresi sınıflara destekler. `SubclassWindow` Yöntemi iliştirir varolan penceresine `CContainedWindowT` nesne ve pencere yordamı değişiklikleri `CContainedWindowT::WindowProc`. Her örneği `CContainedWindowT` farklı bir pencere bir alt kümesi olabilir.  
   
 > [!NOTE]
 >  Verilen herhangi için `CContainedWindowT` nesne, ya da çağrısı **oluşturma** veya `SubclassWindow`. Her iki yöntem aynı nesne üzerinde çağıracağı değil.  
@@ -129,7 +124,7 @@ class CContainedWindowT : public TBase
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  
   
-##  <a name="ccontainedwindowt"></a>CContainedWindowT::CContainedWindowT  
+##  <a name="ccontainedwindowt"></a>  CContainedWindowT::CContainedWindowT  
  Veri üyeleri Oluşturucu başlatır.  
   
 ```
@@ -167,7 +162,7 @@ CContainedWindowT(
   
  Varsa, varolan bir pencereyi alt sınıf aracılığıyla [SubclassWindow](#subclasswindow), `lpszClassName` değeri kullanılmaz; bu nedenle, geçirebilirsiniz **NULL** Bu parametre için.  
   
-##  <a name="create"></a>CContainedWindowT::Create  
+##  <a name="create"></a>  CContainedWindowT::Create  
  Çağrıları [RegisterWndSuperclass](#registerwndsuperclass) varolan bir sınıfa bağlı, ancak kullanan bir pencere sınıfı kaydetmek için [CContainedWindowT::WindowProc](#windowproc).  
   
 ```
@@ -224,7 +219,7 @@ HWND Create(
  [in] Pencerenin adını belirtir. Varsayılan değer **NULL**.  
   
  `dwStyle`  
- [in] Pencere stili. Varsayılan değer **WS_CHILD &#124; Ws_vısıble**. Olası değerler listesi için bkz: [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK'sındaki.  
+ [in] Pencere stili. Varsayılan değer **WS_CHILD &#124; ws_vısıble**. Olası değerler listesi için bkz: [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK'sındaki.  
   
  `dwExStyle`  
  [in] Genişletilmiş pencere stili. Varsayılan değer yok genişletilmiş stili yani 0 ' dır. Olası değerler listesi için bkz: [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
@@ -247,7 +242,7 @@ HWND Create(
 > [!NOTE]
 >  0 değeri olarak kullanılıyorsa, `MenuOrID` parametresi 0U belirtilmelidir (Derleyici Hatası önlemek için varsayılan değer).  
   
-##  <a name="defwindowproc"></a>CContainedWindowT::DefWindowProc  
+##  <a name="defwindowproc"></a>  CContainedWindowT::DefWindowProc  
  Tarafından çağrılır [WindowProc](#windowproc) ileti eşlemesi tarafından işlenmemiş iletilerini işlemek için.  
   
 ```
@@ -274,7 +269,7 @@ LRESULT DefWindowProc(
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, `DefWindowProc` çağrıları [CallWindowProc](http://msdn.microsoft.com/library/windows/desktop/ms633571) belirtilen pencere yordamı ileti bilgilerini göndermek için Win32 işlevi [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).  
   
-##  <a name="getcurrentmessage"></a>CContainedWindowT::GetCurrentMessage  
+##  <a name="getcurrentmessage"></a>  CContainedWindowT::GetCurrentMessage  
  Geçerli iletiyi döndürür ( **m_pCurrentMsg**).  
   
 ```
@@ -284,7 +279,7 @@ const _ATL_MSG* GetCurrentMessage();
 ### <a name="return-value"></a>Dönüş Değeri  
  İçinde paketlenmiş iletinin geçerli `MSG` yapısı.  
   
-##  <a name="m_dwmsgmapid"></a>CContainedWindowT::m_dwMsgMapID  
+##  <a name="m_dwmsgmapid"></a>  CContainedWindowT::m_dwMsgMapID  
  Kapsanan penceresi şu anda kullanılan ileti eşlemesi tanıtıcısı tutar.  
   
 ```
@@ -296,9 +291,9 @@ DWORD m_dwMsgMapID;
   
  Varsayılan ileti eşlemesi bildirilen ile [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map), her zaman sıfır tarafından tanımlanır. Bir alternatif ileti eşlemesi bildirilen ile [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), tarafından tanımlanan `msgMapID`.  
   
- `m_dwMsgMapID`ilk oluşturucusu tarafından başlatılır ve çağırarak değiştirilebilir [SwitchMessageMap](#switchmessagemap). Bir örnek için bkz: [CContainedWindowT genel bakış](../../atl/reference/ccontainedwindowt-class.md).  
+ `m_dwMsgMapID` ilk oluşturucusu tarafından başlatılır ve çağırarak değiştirilebilir [SwitchMessageMap](#switchmessagemap). Bir örnek için bkz: [CContainedWindowT genel bakış](../../atl/reference/ccontainedwindowt-class.md).  
   
-##  <a name="m_lpszclassname"></a>CContainedWindowT::m_lpszClassName  
+##  <a name="m_lpszclassname"></a>  CContainedWindowT::m_lpszClassName  
  Varolan bir pencere sınıfı adını belirtir.  
   
 ```
@@ -308,9 +303,9 @@ LPTSTR m_lpszClassName;
 ### <a name="remarks"></a>Açıklamalar  
  Bir pencere oluşturduğunuzda [oluşturma](#create) bu varolan sınıfa bağlı, ancak kullanan yeni bir pencere sınıfı kaydeder [CContainedWindowT::WindowProc](#windowproc).  
   
- `m_lpszClassName`yapıcı tarafından başlatılır. Bir örnek için bkz: [CContainedWindowT](../../atl/reference/ccontainedwindowt-class.md) genel bakış.  
+ `m_lpszClassName` yapıcı tarafından başlatılır. Bir örnek için bkz: [CContainedWindowT](../../atl/reference/ccontainedwindowt-class.md) genel bakış.  
   
-##  <a name="m_pfnsuperwindowproc"></a>CContainedWindowT::m_pfnSuperWindowProc  
+##  <a name="m_pfnsuperwindowproc"></a>  CContainedWindowT::m_pfnSuperWindowProc  
  Kapsanan penceresi Sınıflandırma, `m_pfnSuperWindowProc` pencere sınıfı özgün pencere yordamı işaret eder.  
   
 ```
@@ -322,7 +317,7 @@ WNDPROC m_pfnSuperWindowProc;
   
  [DefWindowProc](#defwindowproc) yöntemi kaydedilen pencere yordamı için ileti bilgileri gönderir `m_pfnSuperWindowProc`.  
   
-##  <a name="m_pobject"></a>CContainedWindowT::m_pObject  
+##  <a name="m_pobject"></a>  CContainedWindowT::m_pObject  
  İşaret nesnesini içeren `CContainedWindowT` nesnesi.  
   
 ```
@@ -332,9 +327,9 @@ CMessageMap* m_pObject;
 ### <a name="remarks"></a>Açıklamalar  
  Gerekir, sınıf türetin bu kapsayıcı [CMessageMap](../../atl/reference/cmessagemap-class.md), içerdiği pencere tarafından kullanılan ileti eşlemesi bildirir.  
   
- `m_pObject`yapıcı tarafından başlatılır. Bir örnek için bkz: [CContainedWindowT](../../atl/reference/ccontainedwindowt-class.md) genel bakış.  
+ `m_pObject` yapıcı tarafından başlatılır. Bir örnek için bkz: [CContainedWindowT](../../atl/reference/ccontainedwindowt-class.md) genel bakış.  
   
-##  <a name="registerwndsuperclass"></a>CContainedWindowT::RegisterWndSuperclass  
+##  <a name="registerwndsuperclass"></a>  CContainedWindowT::RegisterWndSuperclass  
  Tarafından çağrılır [oluşturma](#create) kapsanan penceresinin pencere sınıfı kaydetmek için.  
   
 ```
@@ -347,7 +342,7 @@ ATOM RegisterWndSuperClass();
 ### <a name="remarks"></a>Açıklamalar  
  Bu pencere sınıfı üzerinde mevcut bir sınıfın temel ancak kullanan [CContainedWindowT::WindowProc](#windowproc). Varolan penceresi sınıfın adını ve pencere yordamı kaydedilir [m_lpszClassName](#m_lpszclassname) ve [m_pfnSuperWindowProc](#m_pfnsuperwindowproc)sırasıyla.  
   
-##  <a name="subclasswindow"></a>CContainedWindowT::SubclassWindow  
+##  <a name="subclasswindow"></a>  CContainedWindowT::SubclassWindow  
  Pencerenin tanımlanan alt sınıfların `hWnd` ve ekleninceye `CContainedWindowT` nesnesi.  
   
 ```
@@ -367,7 +362,7 @@ BOOL SubclassWindow(HWND hWnd);
 > [!NOTE]
 >  Çağırmayın `SubclassWindow` adlı durumunda [oluşturma](#create).  
   
-##  <a name="switchmessagemap"></a>CContainedWindowT::SwitchMessageMap  
+##  <a name="switchmessagemap"></a>  CContainedWindowT::SwitchMessageMap  
  Hangi ileti eşlemesi içerdiği pencere iletileri işlemek için kullanılan değiştirir.  
   
 ```
@@ -383,7 +378,7 @@ void SwitchMessageMap(DWORD dwMsgMapID);
   
  İleti eşleme tanımlayıcısı başlangıçta oluşturucuda belirtin.  
   
-##  <a name="unsubclasswindow"></a>CContainedWindowT::UnsubclassWindow  
+##  <a name="unsubclasswindow"></a>  CContainedWindowT::UnsubclassWindow  
  Altsınıflanmış penceresinden ayırır `CContainedWindowT` nesne ve kaydedilen özgün pencere yordamı yükler [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).  
   
 ```
@@ -400,7 +395,7 @@ HWND UnsubclassWindow(BOOL bForce = FALSE);
 ### <a name="remarks"></a>Açıklamalar  
  Pencere yok önce özgün pencere yordamı geri yüklemek istiyorsanız bu yöntemi kullanın. Aksi takdirde, [WindowProc](#windowproc) pencere bozulduğunda otomatik olarak bunu yapar.  
   
-##  <a name="windowproc"></a>CContainedWindowT::WindowProc  
+##  <a name="windowproc"></a>  CContainedWindowT::WindowProc  
  Bu statik yöntem pencere yordamı uygular.  
   
 ```
@@ -428,7 +423,7 @@ static LRESULT CALLBACK WindowProc(
  İleti işleme sonucu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `WindowProc`tarafından tanımlanan ileti eşlemesi iletileri yönlendiren [m_dwMsgMapID](#m_dwmsgmapid). Gerekirse, `WindowProc` çağrıları [DefWindowProc](#defwindowproc) ek ileti işleme.  
+ `WindowProc` tarafından tanımlanan ileti eşlemesi iletileri yönlendiren [m_dwMsgMapID](#m_dwmsgmapid). Gerekirse, `WindowProc` çağrıları [DefWindowProc](#defwindowproc) ek ileti işleme.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CWindow sınıfı](../../atl/reference/cwindow-class.md)   

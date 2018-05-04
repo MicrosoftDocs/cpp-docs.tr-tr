@@ -1,13 +1,10 @@
 ---
-title: "-Oi (iç işlevler üret) | Microsoft Docs"
-ms.custom: 
+title: -Oi (iç işlevler üret) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.EnableIntrinsicFunctions
 - /oi
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - -Oi compiler option [C++]
 - generate intrinsic functions compiler option [C++]
 ms.assetid: fa4a3bf6-0ed8-481b-91c0-add7636132b4
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0a24830dbc67466e52f3f3c488dda7ac5b4778d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f28051f5d7aaaa4606fffa4d4c94fb2086031419
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="oi-generate-intrinsic-functions"></a>/Oi (İç İşlevler Üret)
 Uygulamanızı yardımcı iç veya aksi halde özel formlarla işlevinin bazı işlevi çağırır değiştirir daha hızlı çalışır.  

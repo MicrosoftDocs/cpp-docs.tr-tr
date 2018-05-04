@@ -1,25 +1,20 @@
 ---
-title: "-WHOLEARCHIVE (tüm kitaplık nesnesi dosyaları dahil) | Microsoft Docs"
-ms.custom: 
+title: -WHOLEARCHIVE (tüm kitaplık nesnesi dosyaları dahil) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: ee92d12f-18af-4602-9683-d6223be62ac9
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3499d6583c7d9801aa4c3b12c66196c975b192ea
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c6de1aa92938a1523b86a90c58cc2d27f1181bfc
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="wholearchive-include-all-library-object-files"></a>/ WHOLEARCHIVE (tüm kitaplık nesnesi dosyaları içerir)
 Force bağlayıcı bağlantılı yürütülebilir statik kitaplığındaki tüm nesne dosyaları içerir.  

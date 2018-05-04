@@ -1,12 +1,9 @@
 ---
-title: "CFixedStringT sınıfı | Microsoft Docs"
-ms.custom: 
+title: CFixedStringT sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CFixedStringT
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - CFixedStringT class
 - shared classes, CFixedStringT
 ms.assetid: 6d4171ba-3104-493a-a6cc-d515f4ba9a4b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f66749272649fe230b31e770a175e0b94441b90
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 93125d15be32a95d71c763f476fad700dab65a3b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cfixedstringt-class"></a>CFixedStringT sınıfı
 Bu sınıf, bir dize nesnesi sabit karakter arabelleği ile temsil eder.  
@@ -68,7 +63,7 @@ class CFixedStringT : private CFixedStringMgr, public StringType
   
 -   İçin karakter arabellek bir `CFixedStringT` nesnesidir her zaman aynı uzunlukta ( *t_nChars*). Arabellek boyutu için herhangi bir kısıtlama `CStringT` nesneleri.  
   
--   Bellek Yöneticisi için `CFixedStringT` sağlayacak şekilde paylaşılmasını özelleştirilmiş bir [CStringData](../../atl-mfc-shared/reference/cstringdata-class.md) nesnesi iki veya daha fazla arasında `CFixedStringT` objectsis izin verilmiyor. `CStringT`nesneleri bu sınırlama yoktur.  
+-   Bellek Yöneticisi için `CFixedStringT` sağlayacak şekilde paylaşılmasını özelleştirilmiş bir [CStringData](../../atl-mfc-shared/reference/cstringdata-class.md) nesnesi iki veya daha fazla arasında `CFixedStringT` objectsis izin verilmiyor. `CStringT` nesneleri bu sınırlama yoktur.  
   
  Özelleştirme hakkında daha fazla bilgi için `CFixedStringT` ve dize nesneler için bellek yönetimi genel olarak, bkz: [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).  
   
@@ -84,7 +79,7 @@ class CFixedStringT : private CFixedStringMgr, public StringType
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** cstringt.h  
   
-##  <a name="cfixedstringt"></a>CFixedStringT::CFixedStringT  
+##  <a name="cfixedstringt"></a>  CFixedStringT::CFixedStringT  
  Oluşturan bir `CFixedStringT` nesnesi.  
   
 ```
@@ -110,7 +105,7 @@ explicit CFixedStringT(const unsigned char* psz);
 ### <a name="remarks"></a>Açıklamalar  
  Oluşturucular yeni ayrılmış depolama alanına giriş verilerini kopyaladığından farkında olmalıdır, bellek özel durumlara neden olabilir. Bu oluşturucu bazıları dönüştürme işlevleri hareket unutmayın.  
   
-##  <a name="operator__eq"></a>CFixedStringT::operator =  
+##  <a name="operator__eq"></a>  CFixedStringT::operator =  
  Var olan yeniden başlatır `CFixedStringT` yeni veri nesnesi.  
   
 ```

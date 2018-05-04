@@ -1,12 +1,9 @@
 ---
-title: "CHandle sınıfı | Microsoft Docs"
-ms.custom: 
+title: CHandle sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CHandle
@@ -21,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - CHandle class
 ms.assetid: 883e9db5-40ec-4e29-9c74-4dd2ddd2e35d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd58ba8ce15bb26b4e5b768baedbf8ddfe829f2b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b57aab927380f8801c3b9cab258a695c7d8a59d0
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="chandle-class"></a>CHandle sınıfı
 Bu sınıf oluşturmak ve bir tanıtıcı nesnesi kullanmak için yöntemleri sağlar.  
@@ -76,12 +71,12 @@ class CHandle
  A `CHandle` nesnesi tanıtıcı gerekli olduğunda kullanılabilir: Ana fark `CHandle` nesne otomatik olarak silinecek.  
   
 > [!NOTE]
->  Başkalarının INVALID_HANDLE_VALUE kullanırken bazı API işlevleri NULL bir boş veya geçersiz tanıtıcı kullanın. `CHandle`yalnızca kullanır bilir ve NULL INVALID_HANDLE_VALUE gerçek bir tanıtıcı kabul eder. INVALID_HANDLE_VALUE döndürmesi bir API çağırırsanız, bu değerin çağırmadan önce denetlemelisiniz [CHandle::Attach](#attach) veya ona geçirme `CHandle` oluşturucusu ve bunun yerine NULL geçirin.  
+>  Başkalarının INVALID_HANDLE_VALUE kullanırken bazı API işlevleri NULL bir boş veya geçersiz tanıtıcı kullanın. `CHandle` yalnızca kullanır bilir ve NULL INVALID_HANDLE_VALUE gerçek bir tanıtıcı kabul eder. INVALID_HANDLE_VALUE döndürmesi bir API çağırırsanız, bu değerin çağırmadan önce denetlemelisiniz [CHandle::Attach](#attach) veya ona geçirme `CHandle` oluşturucusu ve bunun yerine NULL geçirin.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
-##  <a name="attach"></a>CHandle::Attach  
+##  <a name="attach"></a>  CHandle::Attach  
  Eklemek için bu yöntemi çağırın `CHandle` varolan işlenecek nesne.  
   
 ```
@@ -90,12 +85,12 @@ void Attach(HANDLE h) throw();
   
 ### <a name="parameters"></a>Parametreler  
  `h`  
- `CHandle`tanıtıcı sahipliğini `h`.  
+ `CHandle` tanıtıcı sahipliğini `h`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Atar `CHandle` nesnesine `h` işler. Hatalarını düzeltir derlemelerde bir ATLASSERT gerçekleştirilecektir `h` null. Herhangi bir onay tanıtıcı geçerliliğini için yapılır.  
   
-##  <a name="chandle"></a>CHandle::CHandle  
+##  <a name="chandle"></a>  CHandle::CHandle  
  Oluşturucu.  
   
 ```
@@ -111,7 +106,7 @@ explicit CHandle(HANDLE h) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Yeni bir `CHandle` nesnesi, isteğe bağlı olarak var olan bir tanıtıcı kullanılarak veya `CHandle` nesnesi.  
   
-##  <a name="dtor"></a>CHandle:: ~ CHandle  
+##  <a name="dtor"></a>  CHandle:: ~ CHandle  
  Yok Edicisi.  
   
 ```
@@ -121,7 +116,7 @@ explicit CHandle(HANDLE h) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Serbest bırakma `CHandle` çağırarak nesne [CHandle::Close](#close).  
   
-##  <a name="close"></a>CHandle::Close  
+##  <a name="close"></a>  CHandle::Close  
  Kapatmak için bu yöntemi çağırın bir `CHandle` nesnesi.  
   
 ```
@@ -131,7 +126,7 @@ void Close() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bir açık nesne tanıtıcısı kapatır. Tanıtıcı servis talebi if olmayacaktır NULL ise **Kapat** zaten adlı bir ATLASSERT hata ayıklama derlemelerinde gerçekleştirilecektir.  
   
-##  <a name="detach"></a>CHandle::Detach  
+##  <a name="detach"></a>  CHandle::Detach  
  Gelen bir tanıtıcı ayırmak için bu yöntemi çağırın bir `CHandle` nesnesi.  
   
 ```
@@ -144,14 +139,14 @@ HANDLE Detach() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Tanıtıcı sahipliğini serbest bırakır.  
   
-##  <a name="m_h"></a>CHandle::m_h  
+##  <a name="m_h"></a>  CHandle::m_h  
  Tanıtıcıyı depolar üye değişkeni.  
   
 ```
 HANDLE m_h;
 ```  
   
-##  <a name="operator_eq"></a>CHandle::operator =  
+##  <a name="operator_eq"></a>  CHandle::operator =  
  Atama işleci.  
   
 ```
@@ -160,7 +155,7 @@ CHandle& operator=(CHandle& h) throw();
   
 ### <a name="parameters"></a>Parametreler  
  `h`  
- `CHandle`tanıtıcı sahipliğini `h`.  
+ `CHandle` tanıtıcı sahipliğini `h`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni bir başvuru döndürür `CHandle` nesnesi.  
@@ -168,7 +163,7 @@ CHandle& operator=(CHandle& h) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `CHandle` nesne şu anda bir tanıtıcı içerir, kapatılacak. `CHandle` Geçirilen NULL olarak ayarlamak, tanıtıcı başvuru olacaktır nesne. Bu, iki sağlar `CHandle` nesneleri hiçbir zaman aynı etkin tanıtıcıyı içerir.  
   
-##  <a name="operator_handle"></a>CHandle::operator TANITICISI  
+##  <a name="operator_handle"></a>  CHandle::operator TANITICISI  
  Saklı tanıtıcı değerini döndürür.  
   
 ```  

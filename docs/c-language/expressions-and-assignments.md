@@ -1,13 +1,10 @@
 ---
-title: "İfadeler ve Atamalar | Microsoft Docs"
-ms.custom: 
+title: İfadeler ve Atamalar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - assigning values in C
 - Visual C, assignments
 ms.assetid: 9c72919f-0768-4b47-85ca-afdfec6847f4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3465272e2d582c36a16b9a68a165bd6d371055f0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3a204118656625fc08a13738b128a41facf15673
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="expressions-and-assignments"></a>İfadeler ve Atamalar
 Bu bölüm ifadeleri oluşturmak için ve C dilinde değerleri atamak için açıklar. Sabitler, tanımlayıcıları, dizeleri ve işlev çağrıları ifadelerinde yönlendirildiği tüm işlenenleri gösterilmektedir. C dili tüm olağan dil işleçleri sahiptir. Bu bölüm, C ya da Microsoft C. benzersiz işleçleri yanı sıra bu işleçleri kapsar Konular şunlardır:  

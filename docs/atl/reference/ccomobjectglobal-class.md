@@ -2,11 +2,8 @@
 title: CComObjectGlobal sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComObjectGlobal
@@ -21,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - CComObjectGlobal class
 ms.assetid: 79bdee55-66e4-4536-b5b3-bdf09f78b9a6
-caps.latest.revision: 19
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d5264a2ab8e1bbc4c3f4eac4d83d096d91e8846
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3614962d3bebada0c63b7fe804b52efaa965c6a9
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomobjectglobal-class"></a>CComObjectGlobal sınıfı
 Bu sınıf modül bulunduğu bir başvuru sayısı yönetir, `Base` nesnesi.  
@@ -71,7 +66,7 @@ class CComObjectGlobal : public Base
 |[CComObjectGlobal::m_hResFinalConstruct](#m_hresfinalconstruct)|İçeren **HRESULT** yapımı sırasında döndürülen `CComObjectGlobal` nesnesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComObjectGlobal`Modül çağırılarak bir başvuru sayısı yönetir, `Base` nesnesi. `CComObjectGlobal`Modül bırakılmamışsa sürece nesnenizin silinmez sağlar. Tüm modül başvurusu sayısı sıfıra gittiğinde nesneniz yalnızca kaldırılır.  
+ `CComObjectGlobal` Modül çağırılarak bir başvuru sayısı yönetir, `Base` nesnesi. `CComObjectGlobal` Modül bırakılmamışsa sürece nesnenizin silinmez sağlar. Tüm modül başvurusu sayısı sıfıra gittiğinde nesneniz yalnızca kaldırılır.  
   
  Örneğin, kullanarak `CComObjectGlobal`, bir sınıf üreticisi, tüm istemciler tarafından paylaşılan ortak bir genel nesne tutabilir.  
   
@@ -83,7 +78,7 @@ class CComObjectGlobal : public Base
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="addref"></a>CComObjectGlobal::AddRef  
+##  <a name="addref"></a>  CComObjectGlobal::AddRef  
  Nesne başvuru sayısı 1 ile artırır.  
   
 ```
@@ -96,7 +91,7 @@ STDMETHOD_(ULONG, AddRef)();
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, `AddRef` çağrıları **_Module::Lock**, burada **_Module** genel örneğinin [CComModule](../../atl/reference/ccommodule-class.md) veya ondan türetilmiş bir sınıf.  
   
-##  <a name="ccomobjectglobal"></a>CComObjectGlobal::CComObjectGlobal  
+##  <a name="ccomobjectglobal"></a>  CComObjectGlobal::CComObjectGlobal  
  Oluşturucu. Çağrıları `FinalConstruct` ve ardından ayarlar [m_hResFinalConstruct](#m_hresfinalconstruct) için `HRESULT` tarafından döndürülen `FinalConstruct`.  
   
 ```
@@ -106,7 +101,7 @@ CComObjectGlobal(void* = NULL));
 ### <a name="remarks"></a>Açıklamalar  
  Taban sınıfından türetilmemiş varsa [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md), kendi sağlamalısınız `FinalConstruct` yöntemi. Yıkıcı çağrıları `FinalRelease`.  
   
-##  <a name="dtor"></a>CComObjectGlobal:: ~ CComObjectGlobal  
+##  <a name="dtor"></a>  CComObjectGlobal:: ~ CComObjectGlobal  
  Yok Edicisi.  
   
 ```
@@ -116,14 +111,14 @@ CComObjectGlobal();
 ### <a name="remarks"></a>Açıklamalar  
  Ayrılan tüm kaynakları ve çağrıları boşaltır [FinalRelease](ccomobjectrootex-class.md#finalrelease).  
   
-##  <a name="m_hresfinalconstruct"></a>CComObjectGlobal::m_hResFinalConstruct  
+##  <a name="m_hresfinalconstruct"></a>  CComObjectGlobal::m_hResFinalConstruct  
  İçeren `HRESULT` arama gelen `FinalConstruct` oluşturma işlemi sırasında `CComObjectGlobal` nesnesi.  
   
 ```
 HRESULT m_hResFinalConstruct;
 ```  
   
-##  <a name="queryinterface"></a>CComObjectGlobal::QueryInterface  
+##  <a name="queryinterface"></a>  CComObjectGlobal::QueryInterface  
  İstenen arabirim işaretçisi gösteren bir işaretçi alır.  
   
 ```
@@ -141,9 +136,9 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
  Standart bir `HRESULT` değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `QueryInterface`yalnızca COM eşleme tablosu arabirimlerde işler.  
+ `QueryInterface` Yalnızca COM eşleme tablosu arabirimlerde işler.  
   
-##  <a name="release"></a>CComObjectGlobal::Release  
+##  <a name="release"></a>  CComObjectGlobal::Release  
  Başvuru sayım nesnesinin 1 ile azaltır.  
   
 ```

@@ -1,29 +1,24 @@
 ---
-title: "Yazmaçlar: Yazmaçların kullanılabilirliği | Microsoft Docs"
-ms.custom: 
+title: 'Yazmaçlar: Yazmaçların kullanılabilirliği | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - registers
 ms.assetid: f6654e53-742c-4a30-8620-1a4d436a6ae4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 655051a2f8e0470f999d0793525bba30761663b1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e0a63bf8980ea9022a1cd06bc890512db8ba85a5
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="registers-availability-of-registers"></a>Yazmaçlar: Yazmaçların Kullanılabilirliği
 **ANSI 3.5.1** olduğu nesneleri gerçekten yerleştirilebilen yazmaçları tarafından register depolama sınıfı tanımlayıcısı kullanımını kapsamı  

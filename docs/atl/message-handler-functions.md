@@ -1,12 +1,9 @@
 ---
-title: "İleti işleyici işlevleri | Microsoft Docs"
-ms.custom: 
+title: İleti işleyici işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - NOFITY_HANDLER
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - NOTIFY_HANDLER macro, message handler functions
 - ATL, message handlers
 ms.assetid: 2007a8c5-0143-42f1-91ab-809f235f9d50
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 980ae7d76d8c67a54942adb62799816425aa44e3
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 437ae282efd4b21f294e26890f16130b7a89a55f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="message-handler-functions"></a>İleti işleyici işlevleri
 ATL üç tür ileti işleyici işlevleri sağlar:  

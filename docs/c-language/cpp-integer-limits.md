@@ -1,13 +1,10 @@
 ---
-title: "C++ tamsayı sınırları | Microsoft Docs"
-ms.custom: 
+title: C++ tamsayı sınırları | Microsoft Docs
+ms.custom: ''
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,27 +12,25 @@ helpviewer_keywords:
 - limits, integer constants
 - integer limits
 ms.assetid: 0c23cbd6-29fb-4d9c-b689-5984e19748de
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df6bd92f38078b55280248e071193ecf7149a308
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: c95e0affa9047aa41ee5ff04b011ac0fbd8d63d7
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-integer-limits"></a>C++ Tamsayı Sınırları
 
-**Microsoft Specific**
+**Microsoft özel**
 
 Tamsayı türleri için sınırları aşağıdaki tabloda listelenmiştir. Bu sınırlar da standart üstbilgi tanımlanan dosya SINIRLARI. H. Microsoft C ayrıca boyutu 8-tam sayı türleri olan boyutlu tamsayı değişken bildirimi verir 16 veya 32-bit. Boyutlu tamsayı hakkında daha fazla bilgi için bkz: [boyutlu tamsayı türleri](../c-language/c-sized-integer-types.md).
 
 ## <a name="limits-on-integer-constants"></a>Tamsayı sabitleri sınırlamaları
 
-|**Sabit**|Açıklama|Değer|
+|**sabiti**|Açıklama|Değer|
 |------------------|-------------|-----------|
 |**CHAR_BIT**|Bit sayısı kadar küçük değişkeninde bir bit alan değil.|8|
 |**SCHAR_MIN**|Türünde bir değişken için en düşük değer **char imzalı**.|-128|

@@ -39,14 +39,13 @@ helpviewer_keywords:
 ms.assetid: d42f295b-35f9-49d2-9ee4-c66896ffe68e
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 502007add5b0c7cb0d2e10cd64803c7c52f34afd
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 0182256b06a3f04acbb941d02624e2b512b22a97
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lrotl-lrotr"></a>_lrotl, _lrotr
 

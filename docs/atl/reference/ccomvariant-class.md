@@ -1,12 +1,9 @@
 ---
-title: "CComVariant sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComVariant sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComVariant
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - CComVariant class
 - VARIANT macro, ATL
 ms.assetid: 4d31149c-d005-44b5-a509-10f84afa2b61
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67e5aeee2aaa96b143962beb0790e3854ff7de01
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e2ebef74f6da48d2124d69f002a85c467db73406
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomvariant-class"></a>CComVariant sınıfı
 Bu sınıf sarmalar `VARIANT` depolanan verilerin türünü belirten bir üye sağlama türü.  
@@ -86,9 +81,9 @@ class CComVariant : public tagVARIANT
 |[operator ==](#operator_eq_eq)|Gösterir olup olmadığını `CComVariant` nesne belirtilen eşittir **değişken**.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComVariant`sarmalar `VARIANT and VARIANTARG` oluşan bir birleşim ve birleşim içinde depolanan verilerin türünü belirten bir üye türü. **DEĞİŞKEN**s genellikle Otomasyon kullanılır.  
+ `CComVariant` sarmalar `VARIANT and VARIANTARG` oluşan bir birleşim ve birleşim içinde depolanan verilerin türünü belirten bir üye türü. **DEĞİŞKEN**s genellikle Otomasyon kullanılır.  
   
- `CComVariant`türetilen **değişken** , böylece yazın yerde kullanılan bir **değişken** kullanılabilir. Örneğin, kullanabilirsiniz **V_VT** türünü ayıklamak için makrosu bir `CComVariant` veya erişebilirsiniz **vt** üyesi ile doğrudan yalnızca bir **değişken**.  
+ `CComVariant` türetilen **değişken** , böylece yazın yerde kullanılan bir **değişken** kullanılabilir. Örneğin, kullanabilirsiniz **V_VT** türünü ayıklamak için makrosu bir `CComVariant` veya erişebilirsiniz **vt** üyesi ile doğrudan yalnızca bir **değişken**.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `tagVARIANT`  
@@ -98,7 +93,7 @@ class CComVariant : public tagVARIANT
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcomcli.h  
   
-##  <a name="attach"></a>CComVariant::Attach  
+##  <a name="attach"></a>  CComVariant::Attach  
  Geçerli içeriğini güvenli bir şekilde temizler `CComVariant` nesne, içeriğini kopyalar `pSrc` bu nesnesine sonra değişken türünü ayarlar `pSrc` için `VT_EMPTY`.  
   
 ```
@@ -115,7 +110,7 @@ HRESULT Attach(VARIANT* pSrc);
 ### <a name="remarks"></a>Açıklamalar  
  Tarafından tutulan verileri sahipliğini `pSrc` aktarılır `CComVariant` nesnesi.  
   
-##  <a name="ccomvariant"></a>CComVariant::CComVariant  
+##  <a name="ccomvariant"></a>  CComVariant::CComVariant  
  Her Oluşturucusu güvenli başlatılması işleme `CComVariant` çağırarak nesne `VariantInit` Win32 işlevi veya nesnenin değeri ve türüne göre geçirilen parametreler ayarlayarak.  
   
 ```
@@ -170,7 +165,7 @@ CComVariant(const CComBSTR& bstrSrc);
  [in] **CY** başlatmak için kullanılan `CComVariant` nesnesi. Türü `CComVariant` nesne `VT_CY`.  
   
  `pSrc`  
- [in] `IDispatch` Veya **IUnknown** başlatmak için kullanılan işaretçi `CComVariant` nesnesi. `AddRef`arabirim işaretçisi olarak adlandırılır. Türü `CComVariant` nesne **VT_DISPATCH** veya **VT_UNKNOWN**sırasıyla.  
+ [in] `IDispatch` Veya **IUnknown** başlatmak için kullanılan işaretçi `CComVariant` nesnesi. `AddRef` arabirim işaretçisi olarak adlandırılır. Türü `CComVariant` nesne **VT_DISPATCH** veya **VT_UNKNOWN**sırasıyla.  
   
  Veya, **SAFERRAY** başlatmak için kullanılan işaretçi `CComVariant` nesnesi. Bir kopyasını **SAFEARRAY** depolanan `CComVariant` nesnesi. Türü `CComVariant` nesne özgün türü bir birleşimi olacaktır **SAFEARRAY** ve **VT_ARRAY**.  
   
@@ -183,7 +178,7 @@ CComVariant(const CComBSTR& bstrSrc);
 ### <a name="remarks"></a>Açıklamalar  
  Çağırarak temizleme yıkıcı yönetir [CComVariant::Clear](#clear).  
   
-##  <a name="dtor"></a>CComVariant:: ~ CComVariant  
+##  <a name="dtor"></a>  CComVariant:: ~ CComVariant  
  Yok Edicisi.  
   
 ```
@@ -193,7 +188,7 @@ CComVariant(const CComBSTR& bstrSrc);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi çağrılarak temizleme yönetir [CComVariant::Clear](#clear).  
   
-##  <a name="changetype"></a>CComVariant::ChangeType  
+##  <a name="changetype"></a>  CComVariant::ChangeType  
  Dönüştürür `CComVariant` nesne için yeni bir tür.  
   
 ```
@@ -213,7 +208,7 @@ HRESULT ChangeType(VARTYPE vtNew, const VARIANT* pSrc = NULL);
 ### <a name="remarks"></a>Açıklamalar  
  Bir değer geçirmek, `pSrc`, `ChangeType` bu kullanacağı **değişken** dönüştürme için kaynak olarak. Aksi takdirde `CComVariant` nesne, kaynak olacaktır.  
   
-##  <a name="clear"></a>CComVariant::Clear  
+##  <a name="clear"></a>  CComVariant::Clear  
  Temizler `CComVariant` çağırarak nesne `VariantClear` Win32 işlevi.  
   
 ```
@@ -226,7 +221,7 @@ HRESULT Clear();
 ### <a name="remarks"></a>Açıklamalar  
  Otomatik olarak yıkıcı çağrıları **Temizle**.  
   
-##  <a name="copy"></a>CComVariant::Copy  
+##  <a name="copy"></a>  CComVariant::Copy  
  Serbest bırakma `CComVariant` nesne ve belirtilen bir kopyasını atar **değişken**.  
   
 ```
@@ -240,7 +235,7 @@ HRESULT Copy(const VARIANT* pSrc);
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
-##  <a name="copyto"></a>CComVariant::CopyTo  
+##  <a name="copyto"></a>  CComVariant::CopyTo  
  İçeriğini kopyalar `CComVariant` nesnesi.  
   
 ```
@@ -257,7 +252,7 @@ HRESULT CopyTo(BSTR* pstrDest);
 ### <a name="remarks"></a>Açıklamalar  
  **CComVariant** nesne türünde olması gerekir `VT_BSTR`.  
   
-##  <a name="detach"></a>CComVariant::Detach  
+##  <a name="detach"></a>  CComVariant::Detach  
  Arka plandaki ayırır **değişken** gelen `CComVariant` nesne ve nesnenin türünü ayarlar `VT_EMPTY`.  
   
 ```
@@ -274,7 +269,7 @@ HRESULT Detach(VARIANT* pDest);
 ### <a name="remarks"></a>Açıklamalar  
  Unutmayın, içeriğini `VARIANT` tarafından başvurulan `pDest` arama türü ve değeri atanmış önce otomatik olarak temizlenir **CComVariant** nesne.  
   
-##  <a name="getsize"></a>CComVariant::GetSize  
+##  <a name="getsize"></a>  CComVariant::GetSize  
  Basit sabit boyutu için `VARIANT`s, bu yöntem `sizeof` artı temel alınan veri türü `sizeof(VARTYPE)`.  
   
 ```
@@ -291,7 +286,7 @@ ULONG GetSize() const;
   
  Bu yöntem tarafından döndürülen boyutu tarafından kullanılan bayt sayısıyla eşleştiğini [CComVariant::WriteToStream](#writetostream) başarılı koşullar altında.  
   
-##  <a name="operator_eq"></a>CComVariant::operator =  
+##  <a name="operator_eq"></a>  CComVariant::operator =  
  Değer ve karşılık gelen tür atar `CComVariant` nesnesi.  
   
 ```
@@ -345,14 +340,14 @@ CComVariant& operator=(char cSrc) throw();
  [in] **CY** atanacak `CComVariant` nesnesi. Türü `CComVariant` nesne `VT_CY`.  
   
  `pSrc`  
- [in] `IDispatch` Veya **IUnknown** atanacak işaretçi `CComVariant` nesnesi. `AddRef`arabirim işaretçisi olarak adlandırılır. Türü `CComVariant` nesne **VT_DISPATCH** veya **VT_UNKNOWN**sırasıyla.  
+ [in] `IDispatch` Veya **IUnknown** atanacak işaretçi `CComVariant` nesnesi. `AddRef` arabirim işaretçisi olarak adlandırılır. Türü `CComVariant` nesne **VT_DISPATCH** veya **VT_UNKNOWN**sırasıyla.  
   
  Veya, bir **SAFEARRAY** atanacak işaretçi `CComVariant` nesnesi. Bir kopyasını **SAFEARRAY** depolanan `CComVariant` nesnesi. Türü `CComVariant` nesne özgün türü bir birleşimi olacaktır **SAFEARRAY** ve **VT_ARRAY**.  
   
  `cSrc`  
  [in] Atanacak char `CComVariant` nesnesi. Türü `CComVariant` nesne **VT_I1**.  
   
-##  <a name="operator_eq_eq"></a>CComVariant::operator ==  
+##  <a name="operator_eq_eq"></a>  CComVariant::operator ==  
  Gösterir olup olmadığını `CComVariant` nesne belirtilen eşittir **değişken**.  
   
 ```
@@ -364,7 +359,7 @@ bool operator==(const VARIANT& varSrc) const throw();
   
  İşleci yalnızca VARIANT türleri değerini karşılaştırır. Dize, tamsayı ve kayan nokta ancak dizileri veya kayıtları karşılaştırır.  
   
-##  <a name="operator_neq"></a>CComVariant::operator! =  
+##  <a name="operator_neq"></a>  CComVariant::operator! =  
  Gösterir olup olmadığını `CComVariant` nesne eşit değil belirtilen **değişken**.  
   
 ```
@@ -376,7 +371,7 @@ bool operator!=(const VARIANT& varSrc) const throw();
   
  İşleci yalnızca VARIANT türleri değerini karşılaştırır. Dize, tamsayı ve kayan nokta ancak dizileri veya kayıtları karşılaştırır.  
   
-##  <a name="operator_lt"></a>CComVariant::operator&lt;  
+##  <a name="operator_lt"></a>  CComVariant::operator &lt;  
  Gösterir olup olmadığını `CComVariant` nesnesi, belirtilen değerinden **değişken**.  
   
 ```
@@ -386,7 +381,7 @@ bool operator<(const VARIANT& varSrc) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Döndürür **true** varsa değerini `CComVariant` nesne değerini azdır *varSrc*. Aksi takdirde, **false**. İşleci, karşılaştırma gerçekleştirmek için kullanıcının varsayılan yerel ayar kullanır.  
   
-##  <a name="operator_gt"></a>CComVariant::operator&gt;  
+##  <a name="operator_gt"></a>  CComVariant::operator &gt;  
  Gösterir olup olmadığını `CComVariant` nesnesi belirtilen büyük olan **değişken**.  
   
 ```
@@ -396,7 +391,7 @@ bool operator>(const VARIANT& varSrc) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Döndürür **true** varsa değerini `CComVariant` nesnesidir değerinden büyük *varSrc*. Aksi takdirde, **false**. İşleci, karşılaştırma gerçekleştirmek için kullanıcının varsayılan yerel ayar kullanır.  
   
-##  <a name="readfromstream"></a>CComVariant::ReadFromStream  
+##  <a name="readfromstream"></a>  CComVariant::ReadFromStream  
  Temel Ayarlar **değişken** için **değişken** belirtilen akışında yer alan.  
   
 ```
@@ -413,7 +408,7 @@ HRESULT ReadFromStream(IStream* pStream);
 ### <a name="remarks"></a>Açıklamalar  
  **ReadToStream** önceki çağrısı gerektirir [WriteToStream](#writetostream).  
   
-##  <a name="setbyref"></a>CComVariant::SetByRef  
+##  <a name="setbyref"></a>  CComVariant::SetByRef  
  Başlatır `CComVariant` nesne ve ayarlar **vt** üyesine **VT_BYREF**.  
   
 ```
@@ -425,15 +420,15 @@ void SetByRef(T* pT) throw();
  `T`  
  Türü **değişken**, örneğin, `BSTR`, `int`, veya `char`.  
   
- *pT*  
+ *PT*  
  Başlatmak için kullanılan işaretçi `CComVariant` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `SetByRef`başlatır işlevi şablonudur `CComVariant` işaretçinin nesnesine *pT* ve ayarlar **vt** üyesine **VT_BYREF**. Örneğin:  
+ `SetByRef` başlatır işlevi şablonudur `CComVariant` işaretçinin nesnesine *pT* ve ayarlar **vt** üyesine **VT_BYREF**. Örneğin:  
   
  [!code-cpp[NVC_ATL_Utilities#76](../../atl/codesnippet/cpp/ccomvariant-class_1.cpp)]  
   
-##  <a name="writetostream"></a>CComVariant::WriteToStream  
+##  <a name="writetostream"></a>  CComVariant::WriteToStream  
  Arka plandaki kaydeder **değişken** akış.  
   
 ```

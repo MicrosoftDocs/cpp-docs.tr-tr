@@ -1,12 +1,9 @@
 ---
-title: "CA2AEX sınıfı | Microsoft Docs"
-ms.custom: 
+title: CA2AEX sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CA2AEX
@@ -19,17 +16,15 @@ dev_langs:
 helpviewer_keywords:
 - CA2AEX class
 ms.assetid: 57dc65df-d9cf-4a84-99d3-6e031dde3664
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec54e698723b801823d58a3bad2a53e6f1708369
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bdbdebb1ab79ceab44a408fc182b6037f2d32fae
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ca2aex-class"></a>CA2AEX sınıfı
 Bu sınıf dize dönüştürme makroları tarafından kullanılan `CA2TEX` ve `CT2AEX`ve typedef **CA2A**.  
@@ -97,7 +92,7 @@ class CA2AEX
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlconv.h  
   
-##  <a name="ca2aex"></a>CA2AEX::CA2AEX  
+##  <a name="ca2aex"></a>  CA2AEX::CA2AEX  
  Oluşturucu.  
   
 ```
@@ -115,7 +110,7 @@ CA2AEX(LPCSTR psz) throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  Çeviri için gerekli olan arabellek oluşturur.  
   
-##  <a name="dtor"></a>CA2AEX:: ~ CA2AEX  
+##  <a name="dtor"></a>  CA2AEX:: ~ CA2AEX  
  Yok Edicisi.  
   
 ```
@@ -125,21 +120,21 @@ CA2AEX(LPCSTR psz) throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  Ayrılmış arabelleğe boşaltır.  
   
-##  <a name="m_psz"></a>CA2AEX::m_psz  
+##  <a name="m_psz"></a>  CA2AEX::m_psz  
  Kaynak dizesi depolar veri üyesi.  
   
 ```
 LPSTR m_psz;
 ```  
   
-##  <a name="m_szbuffer"></a>CA2AEX::m_szBuffer  
+##  <a name="m_szbuffer"></a>  CA2AEX::m_szBuffer  
  Dönüştürülmüş dizeyi depolamak için kullanılan statik arabelleği.  
   
 ```
 char m_szBuffer[ t_nBufferLength];
 ```  
   
-##  <a name="operator_lpstr"></a>CA2AEX::operator LPSTR  
+##  <a name="operator_lpstr"></a>  CA2AEX::operator LPSTR  
  Dönüşüm işleci.  
   
 ```

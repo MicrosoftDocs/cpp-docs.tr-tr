@@ -1,12 +1,9 @@
 ---
 title: COM + 1.0 destek ATL projelerinde | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.appwiz.ATL.MTS
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - ATL projects, COM+ 1.0 support
 ms.assetid: 51fb08ac-d632-4657-a4e0-d3f989f0b6f8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3b55cb078dc5db1f0bf727a10f2a77ebfddd260
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e3440d3ed2e3244b35588d5c07fd181f1ad2f082
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="com-10-support-in-atl-projects"></a>COM + 1.0 destek ATL projeleri
 Kullanabileceğiniz [ATL Proje Sihirbazı](../../atl/reference/creating-an-atl-project.md) COM + 1.0 bileşenleri için temel desteği olan bir proje oluşturmak için.  

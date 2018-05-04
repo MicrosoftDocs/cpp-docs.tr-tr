@@ -1,12 +1,9 @@
 ---
-title: "Ek başlatma konuları | Microsoft Docs"
-ms.custom: 
+title: Ek başlatma konuları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - startup code
 - initializing before main
 ms.assetid: 0e942aa6-8342-447c-b068-8980ed7622bd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57b1de8fbbdb3d969dca8e84e57e18b81749d944
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c05ce0fa1a80de8f5ab8b9335bbab22628f3f158
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="additional-startup-considerations"></a>Ek Başlatma Konuları
 C++'da, nesne oluşturma ve yıkma işlemleri için kullanıcı kodunun yürütülmesi gerekebilir. Bu nedenle, hangi başlatmaları girişine önce gerçekleşir anlamak önemlidir **ana** ve hangi Yıkıcılar çıkın sonra çağrılan **ana**. (Yapım ve nesneleri yok etme hakkında ayrıntılı bilgi için bkz: [oluşturucular](../cpp/constructors-cpp.md) ve [Yıkıcılar](../cpp/destructors-cpp.md).)  
@@ -45,4 +40,4 @@ C++'da, nesne oluşturma ve yıkma işlemleri için kullanıcı kodunun yürüt�
  Karşılıklı olarak bağımlı, ancak çeviri birimleri bakımından farklı olan genel statik nesneler yanlış davranışlara neden olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Başlatma ve sonlandırma](../cpp/startup-and-termination-cpp.md)
+ [Başlatma ve Sonlandırma](../cpp/startup-and-termination-cpp.md)

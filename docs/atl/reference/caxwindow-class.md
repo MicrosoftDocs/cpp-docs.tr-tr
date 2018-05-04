@@ -1,12 +1,9 @@
 ---
-title: "CAxWindow sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAxWindow sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CAxWindow
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - CAxWindow class
 - ATL, hosting ActiveX controls
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8848e8ecf85b073032561e2db52a0db1889911e6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 052e7ad2bfa8cc03c4eadd4926dbd84c4fd60223
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="caxwindow-class"></a>CAxWindow sınıfı
 Bu sınıf bir ActiveX denetimini barındıran bir pencere düzenleme için yöntemleri sağlar.  
@@ -83,7 +78,7 @@ class CAxWindow : public CWindow
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  
   
-##  <a name="attachcontrol"></a>CAxWindow::AttachControl  
+##  <a name="attachcontrol"></a>  CAxWindow::AttachControl  
  Bir zaten mevcut değilse ve belirtilen denetim ana bilgisayara bağlanan yeni bir ana bilgisayar nesnesi oluşturur.  
   
 ```
@@ -105,7 +100,7 @@ HRESULT AttachControl(
 ### <a name="remarks"></a>Açıklamalar  
  İliştirilmekte olan denetim nesne doğru çağırmadan önce başlatılmalıdır `AttachControl`.  
   
-##  <a name="caxwindow"></a>CAxWindow::CAxWindow  
+##  <a name="caxwindow"></a>  CAxWindow::CAxWindow  
  Oluşturan bir `CAxWindow` var olan bir pencere nesnesi işleci kullanılarak nesne.  
   
 ```
@@ -116,7 +111,7 @@ CAxWindow(HWND hWnd = NULL);
  `hWnd`  
  Varolan bir pencere nesnesi için bir tanıtıcı.  
   
-##  <a name="createcontrol"></a>CAxWindow::CreateControl  
+##  <a name="createcontrol"></a>  CAxWindow::CreateControl  
  Bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır.  
   
 ```
@@ -139,7 +134,7 @@ HRESULT CreateControl(
   
 -   "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID  
   
--   "Http://www.microsoft.com" gibi bir URL  
+-   Gibi bir URL "http://www.microsoft.com"  
   
 -   Etkin belge gibi bir başvuru "file://\\\Documents\MyDoc.doc"  
   
@@ -172,7 +167,7 @@ HRESULT CreateControl(
 ### <a name="example"></a>Örnek  
  Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) kullanan bir örnek için `CreateControl`.  
   
-##  <a name="createcontrolex"></a>CAxWindow::CreateControlEx  
+##  <a name="createcontrolex"></a>  CAxWindow::CreateControlEx  
  Bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır.  
   
 ```
@@ -201,7 +196,7 @@ HRESULT CreateControlEx(
   
 -   "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID  
   
--   "Http://www.microsoft.com" gibi bir URL  
+-   Gibi bir URL "http://www.microsoft.com"  
   
 -   Etkin belge gibi bir başvuru "file://\\\Documents\MyDoc.doc"  
   
@@ -239,7 +234,7 @@ HRESULT CreateControlEx(
 ### <a name="example"></a>Örnek  
  Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) kullanan bir örnek için `CreateControlEx`.  
   
-##  <a name="getwndclassname"></a>CAxWindow::GetWndClassName  
+##  <a name="getwndclassname"></a>  CAxWindow::GetWndClassName  
  Pencere sınıfı adını alır.  
   
 ```
@@ -249,7 +244,7 @@ static LPCTSTR GetWndClassName();
 ### <a name="return-value"></a>Dönüş Değeri  
  Nonlicensed ActiveX denetimlerini barındırabilir pencere sınıfı adını içeren bir dize için bir işaretçi.  
   
-##  <a name="operator_eq"></a>CAxWindow::operator =  
+##  <a name="operator_eq"></a>  CAxWindow::operator =  
  Atayan bir `HWND` varolan bir `CAxWindow` nesnesi.  
   
 ```
@@ -263,7 +258,7 @@ CAxWindow<TBase>& operator=(HWND hWnd);
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli bir başvuru döndürür `CAxWindow` nesnesi.  
   
-##  <a name="querycontrol"></a>CAxWindow::QueryControl  
+##  <a name="querycontrol"></a>  CAxWindow::QueryControl  
  Belirtilen arabirim barındırılan denetimin alır.  
   
 ```
@@ -285,7 +280,7 @@ HRESULT QueryControl(Q** ppUnk);
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
-##  <a name="queryhost"></a>CAxWindow::QueryHost  
+##  <a name="queryhost"></a>  CAxWindow::QueryHost  
  Ana bilgisayarın belirtilen arabirimini döndürür.  
   
 ```
@@ -310,7 +305,7 @@ HRESULT QueryHost(Q** ppUnk);
 ### <a name="remarks"></a>Açıklamalar  
  Ana bilgisayar arabirimi tarafından uygulanan penceresi barındırma kodu temel işlevselliğini erişmesini sağlar **AxWin**.  
   
-##  <a name="setexternaldispatch"></a>CAxWindow::SetExternalDispatch  
+##  <a name="setexternaldispatch"></a>  CAxWindow::SetExternalDispatch  
  Dış gönderme arabirimi ayarlar `CAxWindow` nesnesi.  
   
 ```
@@ -324,7 +319,7 @@ HRESULT SetExternalDispatch(IDispatch* pDisp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
-##  <a name="setexternaluihandler"></a>CAxWindow::SetExternalUIHandler  
+##  <a name="setexternaluihandler"></a>  CAxWindow::SetExternalUIHandler  
  Dış ayarlar [IDocHostUIHandlerDispatch](../../atl/reference/idochostuihandlerdispatch-interface.md) için arabirim `CAxWindow` nesnesi.  
   
 ```

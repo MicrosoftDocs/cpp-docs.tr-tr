@@ -1,13 +1,10 @@
 ---
 title: _iob | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - _iob
 apilocation:
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - _iob global variable
 - iob global variable
 ms.assetid: 008ed376-8078-4bbd-bc6c-0677c63d0ff1
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 576cbc62e0e79df337464424c4425a1b49ef847b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ca49fa1d832149dc6c5c920b067edebd42dadb87
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="iob"></a>_iob
 Stdio denetim yapıları dizisi.  
@@ -44,7 +39,7 @@ FILE _iob[_IOB_ENTRIES];
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `IOB_ENTRIES`20 stdio.h'olarak tanımlanır.  
+ `IOB_ENTRIES` 20 stdio.h'olarak tanımlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Global Değişkenler](../c-runtime-library/global-variables.md)

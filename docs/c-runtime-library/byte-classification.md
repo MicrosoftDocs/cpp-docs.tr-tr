@@ -4,7 +4,7 @@ ms.custom: ''
 ms.date: 04/04/2018
 ms.technology:
 - cpp-standard-libraries
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.types.bytes
 dev_langs:
@@ -16,14 +16,13 @@ helpviewer_keywords:
 ms.assetid: 1cb52d71-fb0c-46ca-aad7-6472c1103370
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf6ef3ef5827907e845063c97e5c9d45071be9d5
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 8f1051ea7b8d4cc3a3f38a5a95f015674ac3e35c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="byte-classification"></a>Bayt sınıflandırması
 
@@ -60,4 +59,4 @@ Aşağıdaki tabloda önceden tanımlanmış sabitleri tanımlanan \<ctype.h >.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kategorilere göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)

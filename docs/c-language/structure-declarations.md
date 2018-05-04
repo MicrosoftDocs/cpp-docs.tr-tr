@@ -1,13 +1,10 @@
 ---
-title: "Yapı bildirimleri | Microsoft Docs"
-ms.custom: 
+title: Yapı bildirimleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,24 +14,22 @@ helpviewer_keywords:
 - structure members
 - embedded structures
 ms.assetid: 5be3be77-a236-4153-b574-7aa77675df7f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aada86ec63ccade17577f5410ced62cb4d5cf03f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e7d305b2bc74455abd6fdbcfb29ed7ef4103bf19
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="structure-declarations"></a>Yapı Bildirimleri
 Bir "yapı bildirimi" bir tür adları ve bir dizi farklı olabilir ("üye" veya "alanlar" yapısı denir) değişken değerleri belirtir. Bir "etiketi," isteğe bağlı bir tanımlayıcısından yapısı türünün adı sağlar ve bir yapı türüne sonraki başvurular kullanılabilir. Bu yapı türünde bir değişken, türü tarafından tanımlanan tüm dizisi içerir. C yapılarda diğer dillerde "kayıtlar" olarak bilinen türleri benzerdir.  
   
 ## <a name="syntax"></a>Sözdizimi  
  *yapı veya birleşim belirleyici*:  
- *struct veya union tanımlayıcı* kabul**{** *yapısı bildirimi listesi* **}**  
+ *struct veya union tanımlayıcı* kabul **{** *yapısı bildirimi listesi* **}**  
   
  *struct veya union tanımlayıcısı*  
   
@@ -51,7 +46,7 @@ Bir "yapı bildirimi" bir tür adları ve bir dizi farklı olabilir ("üye" veya
  Yapı içerik olarak tanımlanır  
   
  *Yapı bildirimi*:  
- *belirleyici niteleyici listesinde yapısı bildirimcisi listesi***;**   
+ *belirleyici niteleyici listesinde yapısı bildirimcisi listesi***;**  
   
  *belirleyici niteleyici listesinde*:  
  *tür belirteci belirleyici niteleyicisi listesi* iptal et  
@@ -167,7 +162,7 @@ struct somestruct
   
  Derleyici boyutsuz veya sıfır boyutlu dizi bir yapı son üyesi olarak sağlar. Bu, sabit bir dizi boyutu çeşitli durumlarda kullanıldığında farklıysa yararlı olabilir. Böyle bir yapı bildirimi şöyle görünür:  
   
- `struct`*tanımlayıcısı***{** *bildirimleri kümesi* *türü dizi adı***[];};**  
+ `struct` *tanımlayıcı *** {** *bildirimleri kümesi* *türü dizisi-ad *** [];};**  
   
  Boyutsuz dizileri yalnızca bir yapı son üyesi olarak görünebilir. Daha fazla üye herhangi kapsayan yapılarda bildirilir sürece boyutsuz dizi bildirimleri içeren yapıları diğer yapıları içinde iç içe. Bu tür yapıları dizileri izin verilmiyor. `sizeof` Bu türde bir değişken veya türünde kendisini uygulandığında işleci dizinin boyutu 0 varsayar.  
   

@@ -1,13 +1,10 @@
 ---
-title: "ATL AXHost kullanarak ActiveX denetimlerini barındırma | Microsoft Docs"
-ms.custom: 
+title: ATL AXHost kullanarak ActiveX denetimlerini barındırma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-atl
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - hosting ActiveX controls
 - AXHost method
 ms.assetid: 2c1200ec-effb-4814-820a-509519699468
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2aac8a8b9cbf0b72378a286943faa6e36a8f3f74
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5057a077e8e778fa3d943b736d51d19af8f60fc6
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="hosting-activex-controls-using-atl-axhost"></a>ATL AXHost kullanarak ActiveX denetimlerini barındırma
 Bu konudaki örnek AXHost oluşturma ve çeşitli ATL işlevleri kullanarak bir ActiveX denetimini barındırmak nasıl göstermektedir. Ayrıca denetim ve havuz olayları erişmek nasıl gösterir (kullanarak [IDispEventImpl](../atl/reference/idispeventimpl-class.md)) barındırılan denetiminden. Örnek ana penceresinde veya alt pencere Takvim denetimi barındırır.  

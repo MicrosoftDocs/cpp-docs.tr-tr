@@ -1,34 +1,29 @@
 ---
-title: "X64 genel bakış çağırma kuralları | Microsoft Docs"
-ms.custom: 
+title: X64 genel bakış çağırma kuralları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: a05db5eb-0844-4d9d-8b92-b1b2434be0ea
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ac42eb934692fb9eaecf345b75e7544e7078f07
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: eb4071cd3223ad2ab073f84418e641b515c05112
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="overview-of-x64-calling-conventions"></a>x64 Çağırma Kurallarına Genel Bakış
 X86 iki önemli farklılıkları ve [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] 64-bit adresleme yeteneği olan ve düz 16 64-bit birtakım genel kullanım için kaydeder. Genişletilmiş kayıt kümesi [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] kullanan [__fastcall](../cpp/fastcall.md) çağırma kuralı ve bir RISC tabanlı özel durum işleme modeli. `__fastcall` Kuralı kayıtları ilk dört bağımsız değişkenler ve yığın çerçevesi için ek bağımsız değişkenler geçirmek için kullanılır.  
   
  Aşağıdaki derleyici seçeneği, uygulamanız için en iyi hale getirmenize yardımcı [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]:  
   
--   [/ favor (Mimari özellikleri için iyileştirme)](../build/reference/favor-optimize-for-architecture-specifics.md)  
+-   [/favor (Mimari Özellikleri için İyileştirme)](../build/reference/favor-optimize-for-architecture-specifics.md)  
   
 ## <a name="calling-convention"></a>Çağırma kuralı  
  [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] Uygulama ikili arabirimi (ABI) varsayılan olarak dört kayıt hızlı arama çağırma kuralı kullanır. Çağrı yığınındaki bu kayıtları kaydetmek callees için gölge deposu olarak ayrılmış alanı. Bir işlev çağrısı için bağımsız değişkenleri ve bu bağımsız değişkenler için kullanılan kayıtları arasında katı bire yoktur. 8 bayt cinsinden uymayan veya 1, 2, 4 veya 8 bayt olmayan herhangi bir bağımsız değişken başvuruyla geçirilmelidir. Tek bir bağımsız değişken birden çok kayıt arasında yaymaya ilişkin hiçbir girişim yoktur. X87 yazmaç yığını kullanılmayan. Aranan tarafından kullanılıyor olabilir, ancak işlev çağrıları arasında geçici olarak düşünülmelidir. Tüm kayan nokta işlemleri yapılır 16 XMM kayıtları kullanılarak. Tamsayı bağımsız değişkenler yazmaçlar RCX, RDX, R8 ve R9 geçirilir. Kayan nokta değişkenleri XMM0L, XMM1L, XMM2L ve XMM3L geçirilir. 16 bayt bağımsız değişkenleri başvuruya göre geçirilir. Parametre geçirme ayrıntılı olarak açıklanmıştır [parametre geçirme](../build/parameter-passing.md). Bu kayıtları yanı sıra RAX, R10, R11, XMM4 ve XMM5 geçici olarak kabul edilir. Diğer tüm kayıtlar geçici olmayan. YAZMAÇ kullanımı ayrıntılı olarak belgelenmiştir [kullanımını Kaydet](../build/register-usage.md) ve [çağıran ve çağrılan kaydedilmiş kayıtları](../build/caller-callee-saved-registers.md).  

@@ -1,12 +1,9 @@
 ---
-title: "Alt simge işleci: | Microsoft Docs"
-ms.custom: 
+title: 'Alt simge işleci: | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - '[]'
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - '[] operator'
 - subscript operator [C++], syntax
 ms.assetid: 69c31494-52da-4dd0-8bbe-6ccbfd50f197
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1fbcb3657af276cdfc9aa05d461c090b76f6de0b
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: b116b55dd951e3be32c23a73614e7082c4102db4
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="subscript-operator"></a>Alt simge işleci:
 ## <a name="syntax"></a>Sözdizimi  
@@ -53,7 +48,7 @@ cout << 2[nArray] << endl;            // prints "2"
   
  Önceki örnekte, ifade `nArray[2]` aynıdır `2[nArray]`. Bunun nedeni, bir alt simge ifadesi sonucudur *e1 *** [** *e2* **]** tarafından verilir:  
   
- **\*( (** *e2* **)** *+* **(***e1***) )**  
+ **\*((** *e2* **)** *+* **(***e1***))**  
   
  İfadeyle verdiğini adresi değil *e2* adresinden bayt *e1*. Bunun yerine, adres dizisindeki sonraki nesnesini verecek şekilde ölçeklendirilir *e2*. Örneğin:  
   
@@ -67,7 +62,7 @@ double aDbl[2];
   
  *İfade1* **[***İfade2***] [***deyim3***]**...  
   
- Alt simge ifadeleri soldan sağa ilişkilendirilir. Soldaki alt simge ifadesi * İfade1***[***İfade2 ***]**, ilk olarak değerlendirilir. Eklemelerini sonuçları adresi *İfade1* ve *İfade2* bir işaretçi ifadesi; formları sonra *deyim3* yeni bir form için bu işaretçi ifadesi eklenir son alt simge ifadesi bir vb. eklenene kadar işaretçi ifade. İndirection işleci (**\***) son alt ifade değerlendirildikten sonra bir dizi türü son işaretçi değeri adresleri sürece uygulanır.  
+ Alt simge ifadeleri soldan sağa ilişkilendirilir. Soldaki alt simge ifadesi * İfade1 ***[*** İfade2 ***]**, ilk olarak değerlendirilir. Eklemelerini sonuçları adresi *İfade1* ve *İfade2* bir işaretçi ifadesi; formları sonra *deyim3* yeni bir form için bu işaretçi ifadesi eklenir son alt simge ifadesi bir vb. eklenene kadar işaretçi ifade. İndirection işleci (**\***) son alt ifade değerlendirildikten sonra bir dizi türü son işaretçi değeri adresleri sürece uygulanır.  
   
  Birden çok alt simgeler ifadelerle çok boyutlu diziler öğelerine bakın. Çok boyutlu bir dizi, öğeleri dizi olan bir dizidir. Örneğin, üç boyutlu bir dizinin ilk öğesi iki boyutlu bir dizidir. Aşağıdaki örnek bildirir ve basit iki boyutlu bir dizi karakter başlatır:  
   

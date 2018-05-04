@@ -1,12 +1,9 @@
 ---
-title: "Değişken bağımsız değişken listeleri (C++) işlevleriyle | Microsoft Docs"
-ms.custom: 
+title: Değişken bağımsız değişken listeleri (C++) işlevleriyle | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - declaring functions [C++], variables
 - function calls, variable number of arguments
 ms.assetid: 27c2f83a-21dd-44c6-913c-2834cb944703
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a715662ac6680218e3b15822108f429733569bfa
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: 14bbb56c7ae62bd7ef8c58b45704a4ba809965e0
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="functions-with-variable-argument-lists--c"></a>Değişken bağımsız değişken işlevleri listeler (C++)
 İşlev bildirimleri son üyesini üç nokta (...) can olduğu değişken sayıda bağımsız değişken alın. Bu durumlarda, C++ tür açıkça bildirilen bağımsız değişkenleri yalnızca denetlemesini sağlar. Bir işlev sayısını ve türlerini bağımsız değişkenlerinin bile genel değişebilir şekilde yapmanız gerektiğinde değişken bağımsız değişken listeleri kullanabilirsiniz. Ailesi işlevlerini değişken bağımsız değişken listeleri kullanan işlevler örneğidir. `printf` *bağımsız değişken bildirimi listesi*  
@@ -36,7 +31,7 @@ ms.lasthandoff: 01/25/2018
 ## <a name="functions-with-variable-arguments"></a>Değişken bağımsız değişken işlevleri  
  Bağımsız değişkenler bildirilen olanlar sonra erişim, standart INCLUDE dosyasında yer alan makroları kullanın \<stdarg.h > aşağıda açıklandığı gibi.  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Microsoft C++ son bağımsız değişken üç nokta ise ve üç nokta virgül koyarak bağımsız değişken olarak belirtilmesi üç nokta sağlar. Bu nedenle, bildirimi `int Func( int i, ... );` geçerli, ama `int Func( int i ... );` değil.  
   

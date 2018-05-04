@@ -1,13 +1,10 @@
 ---
-title: "C işlev tanımları | Microsoft Docs"
-ms.custom: 
+title: C işlev tanımları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -21,29 +18,27 @@ helpviewer_keywords:
 - function body
 - declaring functions, variables
 ms.assetid: ebab23c8-6eb8-46f3-b21d-570cd8457a80
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a58adfefc5e2b3b5085a44c38dd392d3369421c8
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 69c9846b2ee192071b951d5b9b196d6e4b1968aa
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-function-definitions"></a>C İşlev Tanımları
 Bir işlev tanımı işlevi, türü ve sayısı almak için bekliyor parametreler ve dönüş türü adını belirtir. Bir işlev tanımı ayrıca, yerel değişkenleri ve işlev yaptığı belirlemek deyimleri bildirimleri ile işlev gövdesi içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
- *translation-unit*:  
- *external-declaration*  
+ *Çeviri birim*:  
+ *Dış bildirimi*  
   
- *translation-unit external-declaration*  
+ *Çeviri birim dış-bildirimi*  
   
  *Harici bildirim*: /\* yalnızca dış (dosya) kapsamında izin \*/  
- *function-definition*  
+ *işlev tanımı*  
   
  `declaration`  
   
@@ -67,26 +62,26 @@ Bir işlev tanımı işlevi, türü ve sayısı almak için bekliyor parametrele
  *bildirim listesi bildirimi*  
   
  `declarator`:  
- *pointer* opt*direct-declarator*  
+ *İşaretçi* kabul*doğrudan bildirimcisi*  
   
  *doğrudan bildirimcisi*: /\* işlevi bildirimcisi \*/  
- *doğrudan bildirimcisi***(***parametre türü listesi***)** / * yeni stil bildirimcisi       \*/  
+ *doğrudan bildirimcisi***(***parametre türü listesi***)** / * yeni stil bildirimcisi \*/  
   
- *doğrudan bildirimcisi***(***tanımlayıcı listesi* kabul**)** / * Kullanımdan kalktı stili bildirimcisi     \*/  
+ *doğrudan bildirimcisi***(***tanımlayıcı listesi* kabul **)** / * Kullanımdan kalktı stili bildirimcisi \*/  
   
  Parametre listesi tanımında bu söz dizimini kullanır:  
   
  *parametre türü listesi*: /\* parametre listesi \*/  
  *parameter-list*  
   
- *parameter-list* **, ...**  
+ *parametre listesi* **,...**  
   
- *parameter-list*:  
+ *parametre listesi*:  
  *parameter-declaration*  
   
- *parameter-list* **,**  *parameter-declaration*  
+ *parametre listesi* **,***parametre bildirimi*   
   
- *parameter-declaration*:  
+ *parametre bildirimi*:  
  *bildirim tanımlayıcıları bildirimcisi*  
   
  *bildirim tanımlayıcıları soyut bildirimcisi* iptal et  
@@ -94,14 +89,14 @@ Bir işlev tanımı işlevi, türü ve sayısı almak için bekliyor parametrele
  Eski stil işlev tanımı parametre listesinde bu söz dizimini kullanır:  
   
  *tanımlayıcı listesi*: /\* kullanılan eski stil işlev tanımları ve bildirimleri \*/  
- *identifier*  
+ *Tanımlayıcı*  
   
- *identifier-list* **,**  *identifier*  
+ *tanımlayıcı listesi* **,***tanımlayıcısı*   
   
  İşlev gövdesi sözdizimi aşağıdaki gibidir:  
   
  *Bileşik deyim*: /\* işlev gövdesi \*/  
- **{**`declaration`-*listesi* kabul*deyimi listesi* kabul**}**   
+ **{**`declaration`-*listesi* kabul*deyimi listesi* kabul **}**  
   
  Bir işlev bildirimi değiştirebilirsiniz yalnızca depolama sınıfı tanımlayıcıları olan `extern` ve **statik**. `extern` Belirticisi güveninin işlevi diğer dosyalarından başvurulabilir; diğer bir deyişle, işlev adı için bağlayıcı dışarı aktarılır. **Statik** belirticisi güveninin işlevi diğer dosyalarından başvurulamaz; diğer bir deyişle, ad bağlayıcı tarafından verilebilir. Depolama sınıfı işlevi tanımında görünürse `extern` varsayılır. Herhangi bir durumda, işlevi her zaman tanımı noktasından dosyanın sonuna görülebilir.  
   

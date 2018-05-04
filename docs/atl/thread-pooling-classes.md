@@ -2,11 +2,8 @@
 title: İş parçacığı havuzu sınıfları (ATL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.atl.threads.pooling
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - threading [ATL], pooling
 - pooling worker threads
 ms.assetid: 01fa2c1c-12ae-4781-b772-0a74b6365a8c
-caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08cd00f393dc74ae4b6871f321438c1537bcfa92
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: eb5a43ef9b35d47749ba2c62fa785dc3d910bcd5
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="thread-pooling-classes"></a>İş parçacığı havuzu sınıfları
 Aşağıdaki sınıflar, iş parçacığı havuzu destekler:  

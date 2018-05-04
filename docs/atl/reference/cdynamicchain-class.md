@@ -2,11 +2,8 @@
 title: CDynamicChain sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CDynamicChain
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - chaining message maps
 - CDynamicChain class
 ms.assetid: f084b2be-0e77-4836-973d-ae278a1e9da8
-caps.latest.revision: 21
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57da02b764c1cbce6a97ecbea8aa84e4ffcce9e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 08f6d09546d4514950b5b45ffb9494116294d051
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cdynamicchain-class"></a>CDynamicChain sınıfı
 Bu sınıf ileti eşlemeleri dinamik zincirleme destekleyen yöntemler sağlar.  
@@ -64,13 +59,13 @@ class CDynamicChain
 |[CDynamicChain::SetChainEntry](#setchainentry)|İleti eşleme girişi koleksiyona ekler veya varolan bir girişi değiştirir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CDynamicChain`ileti eşlemeleri, başka bir nesnenin ileti eşlemesi için çalışma zamanında yönlendirilecek Windows ileti etkinleştirme koleksiyonunu yönetir.  
+ `CDynamicChain` ileti eşlemeleri, başka bir nesnenin ileti eşlemesi için çalışma zamanında yönlendirilecek Windows ileti etkinleştirme koleksiyonunu yönetir.  
   
  İleti eşlemeleri dinamik zincirleme için destek eklemek için aşağıdakileri yapın:  
   
 -   Sınıfından türetilen `CDynamicChain`. İleti eşlemesinde belirtin [CHAIN_MSG_MAP_DYNAMIC](message-map-macros-atl.md#chain_msg_map_dynamic) başka bir nesnenin varsayılan ileti eşlemesi zinciri makrosuna.  
   
--   Gelen zincir istediğiniz her bir sınıf türetin [CMessageMap](../../atl/reference/cmessagemap-class.md). `CMessageMap`kendi ileti eşlemeleri diğer nesnelere kullanıma sunmak bir nesne sağlar.  
+-   Gelen zincir istediğiniz her bir sınıf türetin [CMessageMap](../../atl/reference/cmessagemap-class.md). `CMessageMap` kendi ileti eşlemeleri diğer nesnelere kullanıma sunmak bir nesne sağlar.  
   
 -   Çağrı `CDynamicChain::SetChainEntry` zinciri nesne ve ileti eşlemek istediğiniz tanımlamak için.  
   
@@ -89,7 +84,7 @@ class CDynamicChain
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  
   
-##  <a name="callchain"></a>CDynamicChain::CallChain  
+##  <a name="callchain"></a>  CDynamicChain::CallChain  
  Windows ileti başka bir nesnenin ileti eşlemesi için yönlendirir.  
   
 ```
@@ -127,16 +122,16 @@ BOOL CallChain(
 ### <a name="remarks"></a>Açıklamalar  
  Pencere yordamı çağırma için `CallChain`, belirtmeniz gerekir [CHAIN_MSG_MAP_DYNAMIC](message-map-macros-atl.md#chain_msg_map_dynamic) makro ileti eşlemesi içinde. Bir örnek için bkz: [CDynamicChain](../../atl/reference/cdynamicchain-class.md) genel bakış.  
   
- `CallChain`Önceki çağrısı gerektirir [SetChainEntry](#setchainentry) ilişkilendirilecek `dwChainID` bir nesne ve kendi ileti eşlemesi ile değer.  
+ `CallChain` Önceki çağrısı gerektirir [SetChainEntry](#setchainentry) ilişkilendirilecek `dwChainID` bir nesne ve kendi ileti eşlemesi ile değer.  
   
-##  <a name="cdynamicchain"></a>CDynamicChain::CDynamicChain  
+##  <a name="cdynamicchain"></a>  CDynamicChain::CDynamicChain  
  Oluşturucu.  
   
 ```
 CDynamicChain();
 ```  
   
-##  <a name="dtor"></a>CDynamicChain:: ~ CDynamicChain  
+##  <a name="dtor"></a>  CDynamicChain:: ~ CDynamicChain  
  Yok Edicisi.  
   
 ```
@@ -146,7 +141,7 @@ CDynamicChain();
 ### <a name="remarks"></a>Açıklamalar  
  Ayrılan tüm kaynakları serbest bırakır.  
   
-##  <a name="removechainentry"></a>CDynamicChain::RemoveChainEntry  
+##  <a name="removechainentry"></a>  CDynamicChain::RemoveChainEntry  
  Belirtilen ileti eşlemesi koleksiyondan kaldırır.  
   
 ```
@@ -160,7 +155,7 @@ BOOL RemoveChainEntry(DWORD dwChainID);
 ### <a name="return-value"></a>Dönüş Değeri  
  **DOĞRU** ileti eşlemesi başarıyla koleksiyondan kaldırılırsa. Aksi takdirde, **FALSE**.  
   
-##  <a name="setchainentry"></a>CDynamicChain::SetChainEntry  
+##  <a name="setchainentry"></a>  CDynamicChain::SetChainEntry  
  Belirtilen ileti eşlemesi koleksiyona ekler.  
   
 ```

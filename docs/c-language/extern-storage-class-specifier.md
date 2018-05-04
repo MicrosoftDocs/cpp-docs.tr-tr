@@ -1,13 +1,10 @@
 ---
-title: "extern depolama sınıfı tanımlayıcısı | Microsoft Docs"
-ms.custom: 
+title: extern depolama sınıfı tanımlayıcısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - external linkage, storage-class specifiers
 - external linkage, extern modifier
 ms.assetid: 6e16d927-291f-49e4-986c-9d91a482a441
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 448a659afaf7a0251d500da3d9878d30550b9180
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 08a578514aaf6de4132bd856900b0ec31d31835c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="extern-storage-class-specifier"></a>extern Depolama Sınıfı Tanımlayıcısı
 `extern` depolama sınıfı belirticisiyle bildirilen bir değişken, programın kaynak dosyalarından birinde dış düzeyde tanımlanmış aynı ada sahip bir değişkene yönelik başvurudur. İç `extern` bildirimi, dış düzey değişken tanımını blok içinde görünür hale getirmek için kullanılır. Dış düzeyinde aksi bildirilmediği sürece, `extern` anahtar sözcüğü ile bildirilen bir değişken yalnızca bildirildiği blok içinde görülebilir.  

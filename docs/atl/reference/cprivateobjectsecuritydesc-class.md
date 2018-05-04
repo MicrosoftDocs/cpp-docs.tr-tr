@@ -1,12 +1,9 @@
 ---
-title: "CPrivateObjectSecurityDesc sınıfı | Microsoft Docs"
-ms.custom: 
+title: CPrivateObjectSecurityDesc sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CPrivateObjectSecurityDesc
@@ -21,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - CPrivateObjectSecurityDesc class
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4845d652d2b1dceb8ffc0f2772f88565eb81e29
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: 6f47adc413a0e6d3d9c820b824dec95f55924867
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cprivateobjectsecuritydesc-class"></a>CPrivateObjectSecurityDesc sınıfı
 Bu sınıf, bir özel nesneye güvenli tanımlayıcısı nesnesi temsil eder.  
@@ -49,7 +44,7 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc](#cprivateobjectsecuritydesc)|Oluşturucu.|  
-|[CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc](#dtor)|Yok Edicisi.|  
+|[CPrivateObjectSecurityDesc:: ~ CPrivateObjectSecurityDesc](#dtor)|Yok Edicisi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -119,7 +114,7 @@ CPrivateObjectSecurityDesc() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Başlatır `CPrivateObjectSecurityDesc` nesnesi.  
   
-##  <a name="dtor"></a>  CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc  
+##  <a name="dtor"></a>  CPrivateObjectSecurityDesc:: ~ CPrivateObjectSecurityDesc  
  Yok Edicisi.  
   
 ```

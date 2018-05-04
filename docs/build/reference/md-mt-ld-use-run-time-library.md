@@ -2,12 +2,9 @@
 title: -MD, -MT, -LD (çalışma zamanı kitaplığını kullan) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /ld
 - /mt
@@ -44,17 +41,15 @@ helpviewer_keywords:
 - LIBCMTD.lib
 - -MT compiler option [C++]
 ms.assetid: cf7ed652-dc3a-49b3-aab9-ad60e5395579
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b54a6aac55554cd7bd4698762779e540c4bc4c4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3b6fc814c1c2b0630a99cdaa19601be25c861580
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="md-mt-ld-use-run-time-library"></a>/MD, /MT, /LD (Çalışma Zamanı Kitaplığını Kullan)
 Çok iş parçacıklı bir modülün bir DLL olup olmadığını belirtir ve çalışma zamanı kitaplığının perakende veya hata ayıklama sürümlerini gösterir.  
@@ -72,11 +67,11 @@ ms.lasthandoff: 12/21/2017
 |Seçenek|Açıklama|  
 |------------|-----------------|  
 |**/MD**|Uygulamanın, çalışma zamanı kitaplığının çok iş parçacığına özgü ve DLL'ye özgü sürümlerini kullanmasını sağlar. Tanımlar `_MT` ve `_DLL` ve kitaplık adı MSVCRT.lib .obj dosyasına yerleştirmek derleyici neden olur.<br /><br /> Bu seçenekle derlenen uygulamalar, statik olarak MSVCRT.lib öğesine bağlıdır. Bu kitaplık, bağlayıcının dış başvuruları çözümlemesini sağlayan bir kod katmanı sağlar. Gerçek çalışma kod MSVCR içinde yer alan*versionnumber*. DLL MSVCRT.lib ile bağlantılı uygulamalar için çalışma zamanında kullanılabilir olması gerekir.|  
-|**/ MDd**|Tanımlar `_DEBUG`, `_MT`, ve `_DLL` ve çalışma zamanı kitaplığı hata ayıklama çoklu iş parçacığı kullanan ve DLL özgü sürümünü kullanmak için uygulamayı neden olur. Ayrıca, derleyicinin MSVCRTD.lib kitaplık adını .obj dosyasına yerleştirmesini sağlar.|  
-|**/ MT**|Uygulamanın, çalışma zamanı kitaplığının çok iş parçacığı, statik sürümünü kullanmasını sağlar. Tanımlar `_MT` ve böylece bağlayıcı LIBCMT.lib dış simgeleri çözümlemek için kullanacağı kitaplık adı LIBCMT.lib .obj dosyasına yerleştirmek derleyici neden olur.|  
-|**/ MTd**|Tanımlar `_DEBUG` ve `_MT`. Bu seçenek, aynı zamanda, derleyicinin LIBCMTD.lib kitaplık adını .obj dosyasına koyarak bağlayıcının dış simgeleri çözme sırasında LIBCMTD.lib kullanmasını sağlar.|  
+|**/MDd**|Tanımlar `_DEBUG`, `_MT`, ve `_DLL` ve çalışma zamanı kitaplığı hata ayıklama çoklu iş parçacığı kullanan ve DLL özgü sürümünü kullanmak için uygulamayı neden olur. Ayrıca, derleyicinin MSVCRTD.lib kitaplık adını .obj dosyasına yerleştirmesini sağlar.|  
+|**/MT**|Uygulamanın, çalışma zamanı kitaplığının çok iş parçacığı, statik sürümünü kullanmasını sağlar. Tanımlar `_MT` ve böylece bağlayıcı LIBCMT.lib dış simgeleri çözümlemek için kullanacağı kitaplık adı LIBCMT.lib .obj dosyasına yerleştirmek derleyici neden olur.|  
+|**/MTd**|Tanımlar `_DEBUG` ve `_MT`. Bu seçenek, aynı zamanda, derleyicinin LIBCMTD.lib kitaplık adını .obj dosyasına koyarak bağlayıcının dış simgeleri çözme sırasında LIBCMTD.lib kullanmasını sağlar.|  
 |**/LD**|DLL oluşturur.<br /><br /> Geçişleri **/dll** bağlayıcı seçeneği. Bağlayıcı arar, ancak gerekli değildir, bir `DllMain` işlevi. Yazma varsa bir `DllMain` bağlayıcı işlevini ekler bir `DllMain` TRUE döndüren bir işlev.<br /><br /> DLL başlatma kodunu bağlar.<br /><br /> Komut satırında dışa aktarma (.exp) dosyası belirtilmezse, içeri aktarma kitaplığı (.lib) oluşturur. İçeri aktarma kitaplığını DLL'nizi çağıran uygulamalara bağlarsınız.<br /><br /> Yorumlar [/Fe (EXE dosyasını Adlandır)](../../build/reference/fe-name-exe-file.md) bir .exe dosyası yerine bir DLL adlandırma olarak. Varsayılan olarak, program adı olur *basename*.dll yerine *basename*.exe.<br /><br /> Gelir **/MT** açıkça belirtmediğiniz sürece **/MD**.|  
-|**/ LDd**|Hata ayıklama DLL'si oluşturur. Tanımlar `_MT` ve `_DEBUG`.|  
+|**/LDd**|Hata ayıklama DLL'si oluşturur. Tanımlar `_MT` ve `_DEBUG`.|  
   
  C çalışma zamanı kitaplıkları ve hangi kitaplıkları ile derlerken kullanılan hakkında daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md), bkz: [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).  
   

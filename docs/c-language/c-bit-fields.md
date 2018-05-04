@@ -1,30 +1,25 @@
 ---
-title: "C Bit alanları | Microsoft Docs"
-ms.custom: 
+title: C Bit alanları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - bitfields
 - bit fields
 ms.assetid: 9faf74c4-7fd5-4b44-ad18-04485193d06e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1102c43677fd58a254f36c92698b9353c20fe32
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: af47bbebdf3b3a71e2b63b07a1fa467801728061
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-bit-fields"></a>C Bit Alanları
 Bir yapı veya birleşim üyeleri için Bildirimciler yanı sıra yapısı bildirimcisi de bir belirtilen bit sayısı kadar bir "bit alanı." olarak adlandırılan, olabilir Uzunluğu alan adı bildirimcisi gelen iki nokta ile ayarlanır devre dışı. Bir bit alanı bir tamsayı türü olarak yorumlanır.  
@@ -33,7 +28,7 @@ Bir yapı veya birleşim üyeleri için Bildirimciler yanı sıra yapısı bildi
  *Yapı bildirimcisi*:  
  *bildirimcisi*  
   
- *tür belirteci bildirimcisi* kabul**:** *sabit ifadesi*  
+ *tür belirteci bildirimcisi* kabul **:** *sabit ifadesi*  
   
  *Sabit ifadesi* alan genişliğini bit cinsinden belirtir. *Tür belirteci* için `declarator` olmalıdır `unsigned int`, **imzalı int**, veya `int`ve *sabit ifadesi* negatif olmayan bir olmalıdır tamsayı değeri. Değer sıfırsa bildirimi sahip olmayan `declarator`. Bit alanları dizileri, bit alanları ve bit alanları dönmeden işlev işaretçileri izin verilmez. İsteğe bağlı `declarator` bit alan adları. Bit alanları yalnızca bir yapısının bir parçası bildirilebilir. Address-of işleci (**&**) bit alanı bileşenlerine uygulanamaz.  
   

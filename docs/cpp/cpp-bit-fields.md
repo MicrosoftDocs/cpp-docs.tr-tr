@@ -2,12 +2,9 @@
 title: C++ Bit alanları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - fields [C++], bit
 - bit fields
 ms.assetid: 6f4b62e3-cc1d-4e5d-bf34-05904104f71a
-caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff6b2a37c511313bd129705da38e66380e89edae
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: db5ecac0263f1e8ebbfe41f654f2ef2e03b2395f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-bit-fields"></a>C++ Bit Alanları
 Sınıflar ve yapılar, tamsayı türünden daha az depolama alanı kaplayan üyeler içerebilir. Bu üyeler bit alanları olarak belirtilir. Bit alanı sözdizimi *üye bildirimcisi* belirtimi aşağıdadır:  
@@ -85,7 +80,7 @@ struct Date {
   
  bellek düzeni aşağıdaki şekilde gösterildiği gibidir.  
   
- ![Tarih nesnesi sıfır &#45;yerleşimini; uzunluğunu bit alan](../cpp/media/vc38uq2.png "vc38UQ2")  
+ ![Tarih nesnesi sıfır ile yerleşimini&#45;uzunluğunu bit alan](../cpp/media/vc38uq2.png "vc38UQ2")  
 Sıfır Uzunluklu Bit Alanı Olan Tarih Nesnesinin Düzeni  
   
  Temel alınan bir bit alanı bir tamsayı türü açıklandığı gibi türünde olmalıdır [temel türleri](../cpp/fundamental-types-cpp.md).  

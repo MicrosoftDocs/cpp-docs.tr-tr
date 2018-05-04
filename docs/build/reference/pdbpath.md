@@ -2,12 +2,9 @@
 title: -PDBPATH | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /pdbpath
 dev_langs:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - PDBPATH dumpbin option
 - PDB files, path
 ms.assetid: ccf67dcd-0b23-4250-ad47-06c48acbe82b
-caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ccbcedbf9cdd376fa7d9bced5c9d49542cee9f6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 274c4a3742d99b1e4702ed332206b78dacebccbd
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pdbpath"></a>/PDBPATH
 ```  
@@ -64,4 +59,4 @@ ms.lasthandoff: 12/21/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [DUMPBIN seçenekleri](../../build/reference/dumpbin-options.md)   
- [/ PDBALTPATH (diğer PDB yolunu kullan)](../../build/reference/pdbaltpath-use-alternate-pdb-path.md)
+ [/PDBALTPATH (Diğer PDB Yolunu Kullan)](../../build/reference/pdbaltpath-use-alternate-pdb-path.md)

@@ -1,13 +1,10 @@
 ---
-title: "Derleme görevleri dosyası ön işleme işleçleri | Microsoft Docs"
-ms.custom: 
+title: Derleme görevleri dosyası ön işleme işleçleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,22 +15,20 @@ helpviewer_keywords:
 - DEFINED operator
 - makefiles, preprocessing operators
 ms.assetid: a46e4d39-afdb-43c1-ac3b-025d33e6ebdb
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59007bdabc81b5fe49aa4b5265dc0fc73ef4f0b3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d9a99bf6388a4aa15b2126aca8e09210b7202d46
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="makefile-preprocessing-operators"></a>Derleme Görevleri Dosyası Önişleme İşleçleri
 Derleme görevleri dosyası önişleme ifadeleri hareket işleçleri sabit değerleri, çıkış kodlarından komutları, dizeleri, makroları ve dosya sistemi yolları kullanabilirsiniz. İfade değerlendirmek için Önişlemci makroları, ilk genişletir ve komutları yürütür ve işlemleri gerçekleştirir. Operations parantez içinde açık gruplandırma sırasına göre ve İşleç önceliği sırasına göre değerlendirilir. Sonuç sabit bir değerdir.  
   
- `DEFINED` İşlecidir makrosu adına görevi gören bir mantıksal işleç. İfade `DEFINED(` *makroadı* `)` true ise *makroadı* atanmış bir değere sahip değil olsa bile, tanımlıdır. `DEFINED`ile birlikte `!IF` veya `!ELSE IF` eşdeğerdir `!IFDEF` veya `!ELSE IFDEF`. Ancak, bu yönergeleri aksine `DEFINED` karmaşık ifadeler kullanılabilir.  
+ `DEFINED` İşlecidir makrosu adına görevi gören bir mantıksal işleç. İfade `DEFINED(` *makroadı* `)` true ise *makroadı* atanmış bir değere sahip değil olsa bile, tanımlıdır. `DEFINED` ile birlikte `!IF` veya `!ELSE IF` eşdeğerdir `!IFDEF` veya `!ELSE IFDEF`. Ancak, bu yönergeleri aksine `DEFINED` karmaşık ifadeler kullanılabilir.  
   
  `EXIST` İşlecidir bir dosya sistemi yolu görevi gören bir mantıksal işleç. `EXIST(`*yol* `)` true ise *yolu* bulunmaktadır. Sonuç `EXIST` ikili ifadeler kullanılabilir. Varsa *yolu* alanları içerir çift tırnak işaretleri içine alın.  
   
@@ -45,8 +40,8 @@ Derleme görevleri dosyası önişleme ifadeleri hareket işleçleri sabit değe
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|`DEFINED(`*makroadı*`)`|Geçerli tanımı durumu için mantıksal bir değer üreten *makroadı*.|  
-|`EXIST(`*yolu*`)`|Mantıksal bir değer, bir dosyaya varlığı oluşturur *yolu*.|  
+|`DEFINED(` *makroadı* `)`|Geçerli tanımı durumu için mantıksal bir değer üreten *makroadı*.|  
+|`EXIST(` *Yol* `)`|Mantıksal bir değer, bir dosyaya varlığı oluşturur *yolu*.|  
 |||  
 |`!`|Birli mantıksal değil.|  
 |`~`|Birli birinin tamamlama.|  

@@ -2,13 +2,10 @@
 title: -Kaynak-charset (kümesi kaynak karakter kümesi) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - source-charset
 - /source-charset
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - /execution-charset compiler option
 ms.assetid: d3c5bf7f-526d-4ee4-acc5-c1a02a4fc481
-caps.latest.revision: 4
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba414318f9954df331dd05d0f3e2cc2b85c8ad11
-ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
+ms.openlocfilehash: e4f010eb0f0b83dbc41ebeff624033e59d582535
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="source-charset-set-source-character-set"></a>/Source-Charset (ayarlamak kaynak karakter kümesi)
 Kaynak karakter kümesi için yürütülebilir belirtmenize olanak sağlar.  

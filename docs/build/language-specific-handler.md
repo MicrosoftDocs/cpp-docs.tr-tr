@@ -1,27 +1,22 @@
 ---
-title: "Dile özel işleyici | Microsoft Docs"
-ms.custom: 
+title: Dile özel işleyici | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 6503e0cd-2d3a-4330-a925-8bed8c27c2be
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc15e730666a643dfaa028fe7bc6166144897308
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c6cbfbe6a9b98828a63fb4a092717bfab583e9a2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="language-specific-handler"></a>Dile Özel İşleyici
 UNW_FLAG_EHANDLER veya UNW_FLAG_UHANDLER bayrakları ayarlamak her dile özel işleyici göreli adresini UNWIND_INFO öğesinde mevcuttur. Önceki bölümde açıklandığı gibi dile özel işleyici araması bir özel durum işleyici için bir parçası olarak veya bırakmayla bir parçası olarak adlandırılır. Aşağıdaki prototipe sahiptir:  

@@ -1,13 +1,10 @@
 ---
-title: "İmzasız tam sayı türlerinden dönüştürmeler | Microsoft Docs"
-ms.custom: 
+title: İmzasız tam sayı türlerinden dönüştürmeler | Microsoft Docs
+ms.custom: ''
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - type conversion [C++], signed and unsigned integers
 - integral conversions, from unsigned
 ms.assetid: 60fb7e10-bff9-4a13-8a48-e19f25a36a02
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c00afa6ee5f084365663ca6c1e11c569b4e6be0
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: 6a8a77e898feb6676487c557b8e96d54dc793ace
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="conversions-from-unsigned-integral-types"></a>İmzasız Tam Sayı Türlerinden Dönüştürmeler
 
@@ -78,7 +73,7 @@ Temsil edilemez, uygulama tanımlı sonucudur. Bkz: [tür atama dönüşümleri]
 |**İmzasız long**|**double**|Doğrudan Dönüştür **çift**|
 |**İmzasız long**|**uzun çift**|Dönüştür **uzun**; Dönüştür **uzun** için **çift**|
 
-**Microsoft Specific**
+**Microsoft özel**
 
 Microsoft C derleyicisi için **imzasız int** türüdür eşdeğer **uzun imzasız** türü. Dönüştürme bir **imzasız int** değeri geçer dönüştürülmesi aynı şekilde bir **uzun imzasız**. Gelen dönüşümleri **uzun imzasız** değerler **float** dönüştürülen değerin imzalı en büyük pozitif büyükse doğru olmayan **uzun** değeri.
 

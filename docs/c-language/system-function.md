@@ -1,29 +1,24 @@
 ---
-title: "Sistem işlevi | Microsoft Docs"
-ms.custom: 
+title: Sistem işlevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - system function
 ms.assetid: 0786ccdc-20cd-4d96-b3d8-3230507c3066
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3e2c41ec95b0e26276df4f9f42d2ac46de54975
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 51c9e9e348f1cd1fbae9612c2d2ad1988af3b009
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="system-function"></a>system İşlevi
 **ANSI 4.10.4.5** dizesiyle yürütme modu ve içeriği **sistem** işlevi  

@@ -2,11 +2,8 @@
 title: CAtlFile sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CAtlFile
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - CAtlFile class
 ms.assetid: 93ed160b-af2a-448c-9cbe-e5fa46c199bb
-caps.latest.revision: 23
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a66e697a3599e7bfeef0f1d5d147e19b668222ce
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 43ee71aae842ca7100f70af67cd8845d31e39a96
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="catlfile-class"></a>CAtlFile sınıfı
 Bu sınıf Windows çevresinde ince bir sarmalayıcı dosya işleme API sağlar.  
@@ -94,7 +89,7 @@ class CAtlFile : public CHandle
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlfile.h  
   
-##  <a name="catlfile"></a>CAtlFile::CAtlFile  
+##  <a name="catlfile"></a>  CAtlFile::CAtlFile  
  Oluşturucu.  
   
 ```
@@ -117,7 +112,7 @@ explicit CAtlFile(HANDLE hFile) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Kopya Oluşturucu özgün dosya tanıtıcısı sahipliğini aktarır `CAtlFile` yeni oluşturulan nesnesini.  
   
-##  <a name="create"></a>CAtlFile::Create  
+##  <a name="create"></a>  CAtlFile::Create  
  Oluşturmak veya bir dosyayı açmak için bu yöntemi çağırın.  
   
 ```
@@ -159,7 +154,7 @@ HRESULT Create(
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) oluşturmak veya dosyayı açmak için.  
   
-##  <a name="flush"></a>CAtlFile::Flush  
+##  <a name="flush"></a>  CAtlFile::Flush  
  Dosya için arabellek temizleyip dosyasına yazılacak olan tüm arabelleğe alınan verilerin neden için bu yöntemi çağırın.  
   
 ```
@@ -172,7 +167,7 @@ HRESULT Flush() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [FlushFileBuffers](http://msdn.microsoft.com/library/windows/desktop/aa364439) dosyayı arabelleğe alınan verileri temizlemek için.  
   
-##  <a name="getoverlappedresult"></a>CAtlFile::GetOverlappedResult  
+##  <a name="getoverlappedresult"></a>  CAtlFile::GetOverlappedResult  
  Dosya çakışan bir işlem sonuçları almak için bu yöntemi çağırın.  
   
 ```
@@ -198,7 +193,7 @@ HRESULT GetOverlappedResult(
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) dosyasında çakışan bir işlem sonuçları elde etmek için.  
   
-##  <a name="getposition"></a>CAtlFile::GetPosition  
+##  <a name="getposition"></a>  CAtlFile::GetPosition  
  Geçerli dosya işaretçisini konumunu almak için bu yöntemi çağırın.  
   
 ```
@@ -215,7 +210,7 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) geçerli dosya işaretçisini konumunu almak için.  
   
-##  <a name="getsize"></a>CAtlFile::GetSize  
+##  <a name="getsize"></a>  CAtlFile::GetSize  
  Dosyanın bayt cinsinden boyutu almak için bu yöntemi çağırın.  
   
 ```
@@ -232,7 +227,7 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [GetFileSize](http://msdn.microsoft.com/library/windows/desktop/aa364955) dosyasının bayt cinsinden boyutu alınamıyor.  
   
-##  <a name="lockrange"></a>CAtlFile::LockRange  
+##  <a name="lockrange"></a>  CAtlFile::LockRange  
  Bir bölgede başka bir işlem, erişimini engellemek için dosyayı kilitlemek için bu yöntemi çağırın.  
   
 ```
@@ -250,9 +245,9 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
  Döndürür `S_OK` başarı veya hata `HRESULT` hatasında.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [LockFile](http://msdn.microsoft.com/library/windows/desktop/aa365202) dosyayı bir bölgede kilitlenemiyor. Bir dosyada baytları kilitleme erişimi başka işlemler tarafından bu bayt engeller. Bir dosyanın birden fazla bölge kilitleyebilirsiniz ancak hiç çakışan bölge izin verilir. Bir bölge kilidini kullandığınızda [CAtlFile::UnlockRange](#unlockrange), bayt aralığı önceden kilitli olan bölge tam olarak eşleşmelidir. `LockRange`bitişik bölgeler birleştirmez; iki kilitli bölgeler bitişikse, her ayrı olarak kilidini açmanız gerekir.  
+ Çağrıları [LockFile](http://msdn.microsoft.com/library/windows/desktop/aa365202) dosyayı bir bölgede kilitlenemiyor. Bir dosyada baytları kilitleme erişimi başka işlemler tarafından bu bayt engeller. Bir dosyanın birden fazla bölge kilitleyebilirsiniz ancak hiç çakışan bölge izin verilir. Bir bölge kilidini kullandığınızda [CAtlFile::UnlockRange](#unlockrange), bayt aralığı önceden kilitli olan bölge tam olarak eşleşmelidir. `LockRange` bitişik bölgeler birleştirmez; iki kilitli bölgeler bitişikse, her ayrı olarak kilidini açmanız gerekir.  
   
-##  <a name="m_ptm"></a>CAtlFile::m_pTM  
+##  <a name="m_ptm"></a>  CAtlFile::m_pTM  
  İşaretçi bir `CAtlTransactionManager` nesnesi.  
   
 ```
@@ -261,7 +256,7 @@ CAtlTransactionManager* m_pTM;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="read"></a>CAtlFile::Read  
+##  <a name="read"></a>  CAtlFile::Read  
  Dosya işaretçisini tarafından belirtilen konumda başlayarak bir dosyadan verileri okumak için bu yöntemi çağırın.  
   
 ```
@@ -308,7 +303,7 @@ HRESULT Read(
 ### <a name="remarks"></a>Açıklamalar  
  İlk üç forms çağrısı [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467), son [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) dosyasından veri okunamıyor. Kullanım [CAtlFile::Seek](#seek) dosya işaretçisini taşımak için.  
   
-##  <a name="seek"></a>CAtlFile::Seek  
+##  <a name="seek"></a>  CAtlFile::Seek  
  Dosyanın dosya işaretçisini taşımak için bu yöntemi çağırın.  
   
 ```
@@ -330,7 +325,7 @@ HRESULT Seek(
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) dosya işaretçisini taşımak için.  
   
-##  <a name="setsize"></a>CAtlFile::SetSize  
+##  <a name="setsize"></a>  CAtlFile::SetSize  
  Dosyanın boyutunu ayarlamak için bu yöntemi çağırın.  
   
 ```
@@ -347,7 +342,7 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) ve [SetEndOfFile](http://msdn.microsoft.com/library/windows/desktop/aa365531) dosyasının boyutunu ayarlamak için. Getirisi, dosya işaretçisini dosyanın sonunda konumlandırıldı.  
   
-##  <a name="unlockrange"></a>CAtlFile::UnlockRange  
+##  <a name="unlockrange"></a>  CAtlFile::UnlockRange  
  Bir bölge dosyanın kilidini açmak için bu yöntemi çağırın.  
   
 ```
@@ -367,7 +362,7 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [UnlockFile](http://msdn.microsoft.com/library/windows/desktop/aa365715) bir bölge dosyanın kilidini açmak için.  
   
-##  <a name="write"></a>CAtlFile::Write  
+##  <a name="write"></a>  CAtlFile::Write  
  Dosya işaretçisini tarafından belirtilen konumda başlayan dosya verileri yazmak için bu yöntemi çağırın.  
   
 ```

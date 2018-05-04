@@ -1,12 +1,9 @@
 ---
-title: "IPerPropertyBrowsingImpl sınıfı | Microsoft Docs"
-ms.custom: 
+title: IPerPropertyBrowsingImpl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - IPerPropertyBrowsingImpl
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - property pages, accessing information
 - IPerPropertyBrowsing, ATL implementation
 ms.assetid: 0b1a9be3-d242-4767-be69-663a21e4b728
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dca0c4e519703408af1ca5b6834e4b311c70bd21
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2d9fffd6151405eaf53e99f770281139d7664b01
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="iperpropertybrowsingimpl-class"></a>IPerPropertyBrowsingImpl sınıfı
 Bu sınıf uygulayan **IUnknown** ve bir istemcinin bir nesnenin özellik sayfaları bilgilerinde erişmesine olanak tanır.  
@@ -80,7 +75,7 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlctl.h  
   
-##  <a name="getdisplaystring"></a>IPerPropertyBrowsingImpl::GetDisplayString  
+##  <a name="getdisplaystring"></a>  IPerPropertyBrowsingImpl::GetDisplayString  
  Belirli bir özelliğe tanımlayan bir dize alır.  
   
 ```
@@ -92,7 +87,7 @@ STDMETHOD(GetDisplayString)(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [IPerPropertyBrowsing::GetDisplayString](http://msdn.microsoft.com/library/windows/desktop/ms688734) Windows SDK.  
   
-##  <a name="getpredefinedstrings"></a>IPerPropertyBrowsingImpl::GetPredefinedStrings  
+##  <a name="getpredefinedstrings"></a>  IPerPropertyBrowsingImpl::GetPredefinedStrings  
  Her dizi sıfır öğe ile doldurur.  
   
 ```
@@ -108,7 +103,7 @@ STDMETHOD(GetPredefinedStrings)(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [IPerPropertyBrowsing::GetPredefinedStrings öğesini](http://msdn.microsoft.com/library/windows/desktop/ms679724) Windows SDK.  
   
-##  <a name="getpredefinedvalue"></a>IPerPropertyBrowsingImpl::GetPredefinedValue  
+##  <a name="getpredefinedvalue"></a>  IPerPropertyBrowsingImpl::GetPredefinedValue  
  Alır bir **değişken** verilen DISPID tarafından tanımlanan bir özellik değerini içeren. Kaynağından alınan dize adı ile DISPID ilişkilendirilen `GetPredefinedStrings`.  
   
 ```
@@ -126,7 +121,7 @@ STDMETHOD(GetPredefinedValue)(
   
  Bkz: [IPerPropertyBrowsing::GetPredefinedValue](http://msdn.microsoft.com/library/windows/desktop/ms690401) Windows SDK.  
   
-##  <a name="mappropertytopage"></a>IPerPropertyBrowsingImpl::MapPropertyToPage  
+##  <a name="mappropertytopage"></a>  IPerPropertyBrowsingImpl::MapPropertyToPage  
  Belirtilen özellik ile ilişkilendirilmiş özellik sayfası CLSID alır.  
   
 ```

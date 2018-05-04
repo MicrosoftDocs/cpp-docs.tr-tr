@@ -1,27 +1,22 @@
 ---
-title: "ARM özel durum işleme | Microsoft Docs"
-ms.custom: 
+title: ARM özel durum işleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fdbb6ea3563fb82e90b2bc4ca19f76c43c703cf3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bb8990dacc9503d5f329db9e7ddd9b8208efd13a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="arm-exception-handling"></a>ARM özel durum işleme
 Windows ARM üzerinde mekanizması zaman uyumsuz donanım ürettiği özel durumlar ve zaman uyumlu yazılım tarafından oluşturulan özel durumlar için aynı yapılandırılmış özel durum işleme kullanır. Dile özgü özel durum işleyicileri dil yardımcı işlevleri kullanarak Windows yapılandırılmış özel durum işleme üzerinde oluşturulmuştur. Bu belgede, özel durum Windows ARM ve MASM ve Visual C++ derleyicisi tarafından oluşturulan kodu tarafından kullanılan dil Yardımcıları işleme açıklanmaktadır.  
@@ -304,9 +299,9 @@ ULONG ComputeXdataSize(PULONG *Xdata)
   
  Epilog başlangıç daha uzun bir 16 bit yönerge anlamına gelir dizinin sonuna için özel bir kod 0xFD kodudur. Büyük bırakma kodlarının paylaşımı bu mümkün kılar.  
   
- İşlev gövdesi başlangıç epilog arasındaki yürütülürken, bir özel durum oluşursa örnekte epilog ile unwinding başlar, uzaklığındaki 0 epilog kodundaki durumda. Bu örnekte uzaklığı 0x140 karşılık gelir. Temizleme yapılmadığı için unwinder tam bırakma dizisi yürütür. Özel durum Epilog kodu başına sonra tek bir yönerge oluşursa, bunun yerine, unwinder başarıyla ilk bırakma kodu atlayarak bırakma. İşlem kodları arasında bire bir eşleme verilen ve yönerge geriye doğru izleme varsa kodları, bırakma  *n*  epilog içinde ilk unwinder atlamalısınız  *n*  kodlarının bırakma.  
+ İşlev gövdesi başlangıç epilog arasındaki yürütülürken, bir özel durum oluşursa örnekte epilog ile unwinding başlar, uzaklığındaki 0 epilog kodundaki durumda. Bu örnekte uzaklığı 0x140 karşılık gelir. Temizleme yapılmadığı için unwinder tam bırakma dizisi yürütür. Özel durum Epilog kodu başına sonra tek bir yönerge oluşursa, bunun yerine, unwinder başarıyla ilk bırakma kodu atlayarak bırakma. İşlem kodları arasında bire bir eşleme verilen ve yönerge geriye doğru izleme varsa kodları, bırakma *n* epilog içinde ilk unwinder atlamalısınız *n* kodlarının bırakma.  
   
- Giriş için ters benzer mantığı çalışır. Başlangıç Uzaklığı 0'dan geriye doğru izleme, yürütülecek hiçbir şey vardır. Başlangıç bırakma kodlarının ters sırada depolandığından tek bir yönerge geriye doğru izleme bırakma sırası bir bırakma kodu sonundan başlamalısınız. Genel durumda yönerge geriye doğru izleme varsa  *n*  giriş, geriye doğru izleme sırasında yürütme başlaması gereken  *n*  kodlarının listesi sonuna kodlarından bırakma.  
+ Giriş için ters benzer mantığı çalışır. Başlangıç Uzaklığı 0'dan geriye doğru izleme, yürütülecek hiçbir şey vardır. Başlangıç bırakma kodlarının ters sırada depolandığından tek bir yönerge geriye doğru izleme bırakma sırası bir bırakma kodu sonundan başlamalısınız. Genel durumda yönerge geriye doğru izleme varsa *n* giriş, geriye doğru izleme sırasında yürütme başlaması gereken *n* kodlarının listesi sonuna kodlarından bırakma.  
   
  Başlangıç ve epilog bırakma kodlarının tam olarak her zaman eşleşmiyor. Bu durumda, geriye doğru izleme kod dizisi kodlarının birkaç sıraları içeriyor gerekebilir. Kodları işlemesi için uzaklık belirlemek için bu mantığı kullanın:  
   

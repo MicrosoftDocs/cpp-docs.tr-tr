@@ -1,12 +1,9 @@
 ---
-title: "Geçerli saat: Genel amaçlı sınıfları | Microsoft Docs"
-ms.custom: 
+title: 'Geçerli saat: Genel amaçlı sınıfları | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 dev_langs:
 - C++
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - initializing objects, with the current time
 - time, getting current
 ms.assetid: c39e6775-6a92-4b27-95a7-5c86ed371d8a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6c43ffd60d837bdd8f061057cf1c36340b6e6af
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ec71cf76f859457aa76e69b57b58db3940e974da
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="current-time-general-purpose-classes"></a>Geçerli saat: Genel amaçlı sınıfları
 Aşağıdaki yordam nasıl oluşturulacağını gösterir bir `CTime` nesne ve geçerli saati ile başlatılamadı.  

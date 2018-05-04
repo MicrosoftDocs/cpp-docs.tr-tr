@@ -1,12 +1,9 @@
 ---
-title: "CWindowImpl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CWindowImpl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CWindowImpl
@@ -27,17 +24,15 @@ helpviewer_keywords:
 - CWindowImpl class
 - subclassing windows, ATL
 ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aa14c3ae6c083cbf440d8b5b94fcb3754bd6fff
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4884bbacd03675d00cb1a49b937265ab5faa2835
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cwindowimpl-class"></a>CWindowImpl sınıfı
 Oluşturmak veya bir pencereyi alt sınıf yapma için yöntemleri sağlar.  
@@ -97,14 +92,14 @@ class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 ## <a name="remarks"></a>Açıklamalar  
  Kullanabileceğiniz `CWindowImpl` varolan pencerede penceresi veya bir alt kümesi oluşturmak için. `CWindowImpl` pencere yordamı uygun işleyicileri iletilerini yönlendirmek için ileti eşlemesi kullanır.  
   
- `CWindowImpl::Create`tarafından yönetilen pencere sınıfı bilgilere dayanarak bir pencere oluşturur [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md). `CWindowImpl`içeren [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) anlamına gelir makrosu `CWndClassInfo` yeni bir pencere sınıfı kaydeder. Varolan bir pencere sınıfı için sınıf istiyorsanız, sınıfından türetilen `CWindowImpl` ve dahil [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makrosu. Bu durumda, `CWndClassInfo` varolan bir sınıfa bağlı, ancak kullanan bir pencere sınıfı kaydeder `CWindowImpl::WindowProc`. Örneğin:  
+ `CWindowImpl::Create` tarafından yönetilen pencere sınıfı bilgilere dayanarak bir pencere oluşturur [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md). `CWindowImpl` içeren [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) anlamına gelir makrosu `CWndClassInfo` yeni bir pencere sınıfı kaydeder. Varolan bir pencere sınıfı için sınıf istiyorsanız, sınıfından türetilen `CWindowImpl` ve dahil [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makrosu. Bu durumda, `CWndClassInfo` varolan bir sınıfa bağlı, ancak kullanan bir pencere sınıfı kaydeder `CWindowImpl::WindowProc`. Örneğin:  
   
  [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwindowimpl-class_1.h)]  
   
 > [!NOTE]
 >  Çünkü `CWndClassInfo` yalnızca bir pencere sınıfı, bir örneği üzerinden oluşturulan her pencere bilgilerini yöneten `CWindowImpl` aynı penceresi sınıfına dayalıdır.  
   
- `CWindowImpl`Ayrıca penceresi sınıflara destekler. `SubclassWindow` Yöntemi iliştirir varolan penceresine `CWindowImpl` nesne ve pencere yordamı değişiklikleri `CWindowImpl::WindowProc`. Her örneği `CWindowImpl` farklı bir pencere bir alt kümesi olabilir.  
+ `CWindowImpl` Ayrıca penceresi sınıflara destekler. `SubclassWindow` Yöntemi iliştirir varolan penceresine `CWindowImpl` nesne ve pencere yordamı değişiklikleri `CWindowImpl::WindowProc`. Her örneği `CWindowImpl` farklı bir pencere bir alt kümesi olabilir.  
   
 > [!NOTE]
 >  Verilen herhangi için `CWindowImpl` nesne, ya da çağrısı **oluşturma** veya `SubclassWindow`. Aynı nesne üzerinde her iki yöntem çağırma yok.  
@@ -113,7 +108,7 @@ class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
   
  Taban sınıf yıkıcı (~ **CWindowImplRoot**) nesne yok önce pencereyi kayboluyor sağlar.  
   
- `CWindowImpl`türetilen **CWindowImplBaseT**, den türetilen **CWindowImplRoot**, den türetilen **TBase** ve [CMessageMap](../../atl/reference/cmessagemap-class.md).  
+ `CWindowImpl` türetilen **CWindowImplBaseT**, den türetilen **CWindowImplRoot**, den türetilen **TBase** ve [CMessageMap](../../atl/reference/cmessagemap-class.md).  
   
 |Daha fazla bilgi|Bkz. |  
 |--------------------------------|---------|  
@@ -135,7 +130,7 @@ class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  
   
-##  <a name="create"></a>CWindowImpl::Create  
+##  <a name="create"></a>  CWindowImpl::Create  
  Yeni bir pencere sınıfına dayalı bir pencere oluşturur.  
   
 ```
@@ -185,7 +180,7 @@ HWND Create(
 > [!NOTE]
 >  0 değeri olarak kullanılıyorsa, `MenuOrID` parametresi 0U belirtilmelidir (Derleyici Hatası önlemek için varsayılan değer).  
   
-##  <a name="defwindowproc"></a>CWindowImpl::DefWindowProc  
+##  <a name="defwindowproc"></a>  CWindowImpl::DefWindowProc  
  Tarafından çağrılır [WindowProc](#windowproc) ileti eşlemesi tarafından işlenmemiş iletilerini işlemek için.  
   
 ```
@@ -215,7 +210,7 @@ LRESULT DefWindowProc();
   
  Hiçbir parametre işlevi, geçerli iletiden gerekli parametreleri otomatik olarak alır.  
   
-##  <a name="getcurrentmessage"></a>CWindowImpl::GetCurrentMessage  
+##  <a name="getcurrentmessage"></a>  CWindowImpl::GetCurrentMessage  
  İçinde paketlenmiş geçerli iletiyi döndürür `MSG` yapısı.  
   
 ```
@@ -225,7 +220,7 @@ const MSG* GetCurrentMessage();
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli ileti.  
   
-##  <a name="getwindowproc"></a>CWindowImpl::GetWindowProc  
+##  <a name="getwindowproc"></a>  CWindowImpl::GetWindowProc  
  Döndürür `WindowProc`, geçerli pencere yordamı.  
   
 ```
@@ -238,7 +233,7 @@ virtual WNDPROC GetWindowProc();
 ### <a name="remarks"></a>Açıklamalar  
  Pencere yordamı kendi değiştirmek için bu yöntemi geçersiz kılın.  
   
-##  <a name="getwndclassinfo"></a>CWindowImpl::GetWndClassInfo  
+##  <a name="getwndclassinfo"></a>  CWindowImpl::GetWndClassInfo  
  Tarafından çağrılır [oluşturma](#create) pencere sınıfı bilgilere erişmek için.  
   
 ```
@@ -255,7 +250,7 @@ static CWndClassInfo& GetWndClassInfo();
   
  Kullanarak yanı sıra `DECLARE_WND_CLASS` ve `DECLARE_WND_SUPERCLASS` makroları kılabilirsiniz `GetWndClassInfo` kendi uygulaması.  
   
-##  <a name="m_pfnsuperwindowproc"></a>CWindowImpl::m_pfnSuperWindowProc  
+##  <a name="m_pfnsuperwindowproc"></a>  CWindowImpl::m_pfnSuperWindowProc  
  Pencerenin bağlı olarak aşağıdaki pencere yordamlardan birini işaret eder.  
   
 ```
@@ -272,7 +267,7 @@ WNDPROC m_pfnSuperWindowProc;
   
  [CWindowImpl::DefWindowProc](#defwindowproc) kaydedilen pencere yordamı için bilgi iletisi `m_pfnSuperWindowProc`.  
   
-##  <a name="onfinalmessage"></a>CWindowImpl::OnFinalMessage  
+##  <a name="onfinalmessage"></a>  CWindowImpl::OnFinalMessage  
  Sıradaki son iletiyi aldıktan sonra adlı (genellikle `WM_NCDESTROY`).  
   
 ```
@@ -286,7 +281,7 @@ virtual void OnFinalMessage(HWND hWnd);
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulaması `OnFinalMessage` hiçbir şey yapmaz, ancak bir pencere yok etme önce temizleme işlemek için bu işlev geçersiz kılabilirsiniz. Otomatik olarak nesnenizin pencere yok etme bağlı silmek istiyorsanız, çağırabilirsiniz `delete this;` Bu işlevde.  
   
-##  <a name="subclasswindow"></a>CWindowImpl::SubclassWindow  
+##  <a name="subclasswindow"></a>  CWindowImpl::SubclassWindow  
  Pencerenin tanımlanan alt sınıfların `hWnd` ve ekleninceye `CWindowImpl` nesnesi.  
   
 ```
@@ -306,7 +301,7 @@ BOOL SubclassWindow(HWND hWnd);
 > [!NOTE]
 >  Çağırmayın `SubclassWindow` adlı durumunda [oluşturma](#create).  
   
-##  <a name="unsubclasswindow"></a>CWindowImpl::UnsubclassWindow  
+##  <a name="unsubclasswindow"></a>  CWindowImpl::UnsubclassWindow  
  Altsınıflanmış penceresinden ayırır `CWindowImpl` nesne ve kaydedilen özgün pencere yordamı yükler [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).  
   
 ```
@@ -316,7 +311,7 @@ HWND UnsubclassWindow();
 ### <a name="return-value"></a>Dönüş Değeri  
  Daha önce sınıflandırma penceresine işleci.  
   
-##  <a name="windowproc"></a>CWindowImpl::WindowProc  
+##  <a name="windowproc"></a>  CWindowImpl::WindowProc  
  Bu statik işlev pencere yordamı uygular.  
   
 ```
@@ -344,7 +339,7 @@ static LRESULT CALLBACK WindowProc(
  İleti işleme sonucu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `WindowProc`Varsayılan ileti eşlemesi kullanır (ile bildirilen [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)) uygun işleyicileri iletilerini yönlendirmek için. Gerekirse, `WindowProc` çağrıları [DefWindowProc](#defwindowproc) ek ileti işleme. Son ileti işlenmedi, `WindowProc` şunları yapar:  
+ `WindowProc` Varsayılan ileti eşlemesi kullanır (ile bildirilen [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)) uygun işleyicileri iletilerini yönlendirmek için. Gerekirse, `WindowProc` çağrıları [DefWindowProc](#defwindowproc) ek ileti işleme. Son ileti işlenmedi, `WindowProc` şunları yapar:  
   
 -   Pencerenin unsubclassed ise unsubclassing gerçekleştirir.  
   

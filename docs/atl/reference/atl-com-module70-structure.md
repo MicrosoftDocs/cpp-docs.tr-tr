@@ -1,12 +1,9 @@
 ---
-title: "_ATL_COM_MODULE70 yapısı | Microsoft Docs"
-ms.custom: 
+title: _ATL_COM_MODULE70 yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - ATL::_ATL_COM_MODULE70
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - _ATL_COM_MODULE70 structure
 - ATL_COM_MODULE70 structure
 ms.assetid: 5b0b2fd0-bdeb-4c7e-8870-78fa69ace6e6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 573bf43c783a1fb5dbd0eca364fedddb9bafbac7
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 06c0fa2af67ddd649783c9e062a1b93b87dd0b39
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="atlcommodule70-structure"></a>_ATL_COM_MODULE70 yapısı
 ATL COM ilgili kodda tarafından kullanılan  

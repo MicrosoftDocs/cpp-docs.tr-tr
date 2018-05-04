@@ -15,14 +15,13 @@ helpviewer_keywords:
 ms.assetid: b15b5268-7467-49f1-bf95-5299b598f94c
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f06153b4c4f037172e96e3ce1222311a82c71772
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: a0260ebe37e0656f2078b247017d9f02ccc88474
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-conversion"></a>Veri Dönüştürme
 
@@ -71,4 +70,4 @@ Bu yordamlar verileri bir biçimden diğerine dönüştürün. Genellikle bu yor
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kategorilere göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

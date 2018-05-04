@@ -39,14 +39,13 @@ helpviewer_keywords:
 ms.assetid: 9786ecfe-0019-4553-b378-0af6c691e15c
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e485c609054021fbdb8563ded539aa8f19cc868e
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 272f43a7b92c069da8fc4eda64a678ff38efd6ab
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="norm-normf-norml"></a>Norm, normf, norml
 

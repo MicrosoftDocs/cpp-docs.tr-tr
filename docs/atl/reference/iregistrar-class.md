@@ -1,12 +1,9 @@
 ---
 title: IRegistrar arabirimi | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 2/1/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - IRegistrar
@@ -26,14 +23,13 @@ helpviewer_keywords:
 ms.assetid: e88c04b7-0c93-4ae8-aeb9-ecd78f87421e
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c0b304b00b5cc5c613ff7e81818d1c637989e5f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 89d1e9269536ee28f2c8dd29819ff594c89c186b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="iregistrar-interface"></a>IRegistrar arabirimi
 Bu arabirim atliface.h içinde tanımlanır ve CAtlModule üye işlevleri tarafından gibi dahili olarak kullanılır [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced).   
@@ -66,7 +62,7 @@ Konusuna [kullanarak değiştirilebilir parametreler (kayıt şirketinizin öni�
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlifase.h  
   
-##  <a name="resourceregistersz"></a>IRegistrar::ResourceRegisterSz 
+##  <a name="resourceregistersz"></a>  IRegistrar::ResourceRegisterSz 
  Kaynak kaydeder.  
   
 ```
@@ -78,7 +74,7 @@ virtual HRESULT STDMETHODCALLTYPE ResourceRegisterSz(
   
  
   
-##  <a name="resourceunregistersz"></a>IRegistrar::ResourceUnregisterSz  
+##  <a name="resourceunregistersz"></a>  IRegistrar::ResourceUnregisterSz  
  Kaynak kaydını siler.
   
 ```
@@ -89,7 +85,7 @@ virtual HRESULT STDMETHODCALLTYPE ResourceUnregisterSz(
 ```  
   
   
-##  <a name="fileregister"></a>IRegistrar::FileRegister  
+##  <a name="fileregister"></a>  IRegistrar::FileRegister  
 Dosyayı kaydeder.
   
 ```
@@ -98,7 +94,7 @@ virtual HRESULT STDMETHODCALLTYPE FileRegister(
 ```  
   
   
-##  <a name="fileunregister"></a>IRegistrar::FileUnregister  
+##  <a name="fileunregister"></a>  IRegistrar::FileUnregister  
 Dosya kaydını siler.
 
 ```
@@ -107,14 +103,14 @@ virtual HRESULT STDMETHODCALLTYPE FileUnregister(
 ```  
   
  
-##  <a name="stringregister"></a>IRegistrar::StringRegister  
+##  <a name="stringregister"></a>  IRegistrar::StringRegister  
   Belirtilen dize verilerini kaydeder.
 ```
 virtual HRESULT STDMETHODCALLTYPE StringRegister( 
     /* [in] */ _In_z_ LPCOLESTR data) = 0;
 ```  
   
-##  <a name="stringunregister"></a>IRegistrar::StringUnregister
+##  <a name="stringunregister"></a>  IRegistrar::StringUnregister
  Belirtilen dize verilerini kaydını siler.  
   
 ```
@@ -123,7 +119,7 @@ virtualHRESULT STDMETHODCALLTYPE StringUnregister(
 ```  
 
   
-##  <a name="resourceregister"></a>IRegistrar::ResourceRegister  
+##  <a name="resourceregister"></a>  IRegistrar::ResourceRegister  
  Kaynak kaydeder.  
   
 ```
@@ -134,7 +130,7 @@ virtual HRESULT STDMETHODCALLTYPE ResourceRegister(
 ```  
    
   
-##  <a name="resourceunregister"></a>IRegistrar::ResourceUnregister  
+##  <a name="resourceunregister"></a>  IRegistrar::ResourceUnregister  
  Kaynak kaydını siler.  
   
 ```

@@ -1,6 +1,6 @@
 ---
-title: "-Z7, - Zi, - ZI (hata ayıklama bilgileri biçimi) | Microsoft Docs"
-ms.custom: 
+title: -Z7, - Zi, - ZI (hata ayıklama bilgileri biçimi) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/22/2018
 ms.technology:
 - cpp-tools
@@ -31,14 +31,13 @@ helpviewer_keywords:
 - -Z7 compiler option [C++]
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b55c5ea77b752d4adac8d74abaed245b4d19821
-ms.sourcegitcommit: 3038840ca6e4dea01accf733436b99d19ff6c930
+ms.openlocfilehash: a86605b8fd47c0febedfc9ab022dfc2c2728822a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="z7-zi-zi-debug-information-format"></a>/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)
 
@@ -79,7 +78,7 @@ Bir kitaplık kullanılarak derlendi nesnelerden oluşturursanız **/zı**, kita
 
 ### <a name="zi"></a>/ZI
 
-**/Zı** seçeneği benzer **/zi**, ancak destekleyen bir biçimde PDB dosyası üreten [Düzenle ve devam et](/visualstudio/debugger/edit-and-continue-visual-cpp) özelliği. Düzenle ve devam et hata ayıklama özellikleri kullanmak için bu seçeneği kullanmanız gerekir. Düzenle ve devam et özellik Geliştirici üretkenliği için yararlıdır, ancak kod boyutu, performans ve derleyici uyumluluğu sorunlarına neden. Çoğu iyileştirmeler Düzenle ve devam et ile uyumsuz olduğundan kullanarak **/zı** herhangi devre dışı bırakır `#pragma optimize` deyimlerinde kodunuzu. **/Zı** seçeneği, aynı zamanda kullanımı ile uyumlu değil [&#95; &#95; Çizgi &#95; &#95; önceden tanımlanmış makrosu](../../preprocessor/predefined-macros.md); derlenmiş kod **/zı** kullanamazsınız **&#95; &#95; Çizgi &#95; &#95;**  bir tür olmayan şablon bağımsız değişken olarak rağmen **&#95; &#95; Çizgi &#95; &#95;**  makrosu genişletmeleri içinde kullanılabilir.
+**/Zı** seçeneği benzer **/zi**, ancak destekleyen bir biçimde PDB dosyası üreten [Düzenle ve devam et](/visualstudio/debugger/edit-and-continue-visual-cpp) özelliği. Düzenle ve devam et hata ayıklama özellikleri kullanmak için bu seçeneği kullanmanız gerekir. Düzenle ve devam et özellik Geliştirici üretkenliği için yararlıdır, ancak kod boyutu, performans ve derleyici uyumluluğu sorunlarına neden. Çoğu iyileştirmeler Düzenle ve devam et ile uyumsuz olduğundan kullanarak **/zı** herhangi devre dışı bırakır `#pragma optimize` deyimlerinde kodunuzu. **/Zı** seçeneği, aynı zamanda kullanımı ile uyumlu değil [ &#95; &#95;satır&#95; &#95; önceden tanımlanmış makrosu](../../preprocessor/predefined-macros.md); derlenmiş kod **/zı** kullanamazsınız **&#95; &#95;Satır&#95; &#95;** bir tür olmayan şablon bağımsız değişken olarak rağmen **&#95; &#95;satır&#95; &#95;** makrosu genişletmeleri içinde kullanılabilir.
 
 **/Zı** seçeneği her ikisi de zorlar [/Gy (işlev düzeyi bağlamayı etkinleştir)](../../build/reference/gy-enable-function-level-linking.md) ve [/FC (tam yolu, kaynak kodu dosyasının tanılamadaki)](../../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md) , derlemede kullanılacak seçenekleri.
 

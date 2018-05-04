@@ -1,12 +1,9 @@
 ---
-title: "Hata ayıklama ve hata raporlama makroları | Microsoft Docs"
-ms.custom: 
+title: Hata ayıklama ve hata raporlama makroları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - atldef/ATL::_ATL_DEBUG_INTERFACES
@@ -20,17 +17,15 @@ dev_langs:
 helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9098b944f70ab4e4448fe40aa2347b0128e6e1a7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b99147c9eb9a331d7cc0f9064b858979d00e2804
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="debugging-and-error-reporting-macros"></a>Hata ayıklama ve hata raporlama makroları
 Bu makroları yararlı hata ayıklama ve izleme olanakları sağlar.  
@@ -45,7 +40,7 @@ Bu makroları yararlı hata ayıklama ve izleme olanakları sağlar.
 |[ATLTRACE](#alttrace)|Uyarı düzeyleri ve belirtilen bayrakları göre hata ayıklayıcı penceresini gibi bir çıktı cihazına bildirir. Geriye dönük uyumluluk için dahil.|  
 |[ATLTRACE2](#atltrace2)|Uyarı düzeyleri ve belirtilen bayrakları göre hata ayıklayıcı penceresini gibi bir çıktı cihazına bildirir.|  
   
-##  <a name="_atl_debug_interfaces"></a>_ATL_DEBUG_INTERFACES  
+##  <a name="_atl_debug_interfaces"></a>  _ATL_DEBUG_INTERFACES  
  ATL üstbilgi dosyalarının tüm izleme eklemeden önce bu makrosu tanımlama `AddRef` ve **sürüm** çıkış penceresine, bileşenlerinizin arabirimlerindeki çağırır.  
   
 ```
@@ -72,9 +67,9 @@ Bu makroları yararlı hata ayıklama ve izleme olanakları sağlar.
  Bilgileri doğrudan önceki izleme deyimleri sağlanan bilgilere eşlemeleri burada sağlanan, inceleyebilirsiniz için bir arabirim dönüştürücü tam yaşam süresi başvuru sayar. Ayrıca, bu arabirimi dönüştürücü göstergesidir maksimum başvuru sayısı alın.  
   
 > [!NOTE]
-> `_ATL_DEBUG_INTERFACES`perakende yapılarında kullanılır.  
+> `_ATL_DEBUG_INTERFACES` perakende yapılarında kullanılır.  
   
-##  <a name="_atl_debug_qi"></a>_ATL_DEBUG_QI  
+##  <a name="_atl_debug_qi"></a>  _ATL_DEBUG_QI  
  Tüm çağrıları Yazar `QueryInterface` çıkış penceresine.  
   
 ```
@@ -86,7 +81,7 @@ Bu makroları yararlı hata ayıklama ve izleme olanakları sağlar.
   
  *Arabirim adı* - `failed`  
   
-##  <a name="atlassert"></a>ATLASSERT  
+##  <a name="atlassert"></a>  ATLASSERT  
  `ATLASSERT` Makrosu aynı işlevi gerçekleştirir [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) makrosu C Çalışma Zamanı Kitaplığı'nda bulundu.  
   
 ```
@@ -103,7 +98,7 @@ ATLASSERT(booleanExpression);
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atldef.h  
     
-##  <a name="atlensure"></a>ATLENSURE  
+##  <a name="atlensure"></a>  ATLENSURE  
  Bu makrosu bir işleve parametreleri doğrulamak için kullanılır.  
   
 ```
@@ -135,7 +130,7 @@ ATLENSURE_THROW(booleanExpression, hr);
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afx.h  
 
-##  <a name="atltracenotimpl"></a>ATLTRACENOTIMPL  
+##  <a name="atltracenotimpl"></a>  ATLTRACENOTIMPL  
  ATL hata ayıklama derlemelerinde dizesi gönderir " `funcname` uygulanmadı" döndürür ve döküm cihaz için **E_NOTIMPL**.  
   
 ```
@@ -155,7 +150,7 @@ ATLTRACENOTIMPL(funcname);
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atltrace.h 
 
-##  <a name="atltrace"></a>ATLTRACE
+##  <a name="atltrace"></a>  ATLTRACE
  Uyarı düzeyleri ve belirtilen bayrakları göre hata ayıklayıcı penceresini gibi bir çıktı cihazına bildirir. Geriye dönük uyumluluk için dahil.  
   
 ```
@@ -183,7 +178,7 @@ ATLTRACE(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [ATLTRACE2](#atltrace2) bir açıklaması için **ATLTRACE**. **ATLTRACE** ve `ATLTRACE2` aynı davranışı **ATLTRACE** geriye dönük uyumluluk için bulunmaktadır.  
   
-##  <a name="atltrace2"></a>ATLTRACE2  
+##  <a name="atltrace2"></a>  ATLTRACE2  
  Uyarı düzeyleri ve belirtilen bayrakları göre hata ayıklayıcı penceresini gibi bir çıktı cihazına bildirir.  
   
 ```
@@ -264,7 +259,7 @@ ATLTRACE2(
   
  Yayın derlemelerde `ATLTRACE2` için derler `(void) 0`.  
   
- `ATLTRACE2`en fazla 1023 karakter döküm aygıta biçimlendirme sonra gönderilecek dize içeriklerini sınırlar.  
+ `ATLTRACE2` en fazla 1023 karakter döküm aygıta biçimlendirme sonra gönderilecek dize içeriklerini sınırlar.  
   
  **ATLTRACE** ve `ATLTRACE2` aynı davranışı **ATLTRACE** geriye dönük uyumluluk için bulunmaktadır.  
   

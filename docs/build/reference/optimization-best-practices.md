@@ -1,30 +1,25 @@
 ---
-title: "En iyi uygulamaları iyileştirme | Microsoft Docs"
-ms.custom: 
+title: En iyi uygulamaları iyileştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - Visual C++, optimization
 - optimization, best practices
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec12e847eef72827e11700be322fd2a2ca309037
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4e869a12635117f37f32fad3dcfdd38ed45d401e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="optimization-best-practices"></a>En İyi Uygulamaları İyileştirme
 Bu belge Visual C++'ta iyileştirme için bazı en iyi uygulamaları açıklar. Aşağıdaki konular açıklanmaktadır:  
@@ -80,7 +75,7 @@ Bu belge Visual C++'ta iyileştirme için bazı en iyi uygulamaları açıklar. 
 ## <a name="optimization-declspecs"></a>En iyi duruma getirme Declspecs  
  Bu bölümde biz programlarda performans yardımcı olmak için kullanılan iki declspecs arar: `__declspec(restrict)` ve `__declspec(noalias)`.  
   
- `restrict` Declspec yalnızca bir işaretçi gibi döndüren işlev bildirimlerine uygulanabilir`__declspec(restrict) void *malloc(size_t size);`  
+ `restrict` Declspec yalnızca bir işaretçi gibi döndüren işlev bildirimlerine uygulanabilir `__declspec(restrict) void *malloc(size_t size);`  
   
  `restrict` Declspec unaliased işaretçiler döndüren işlevlerini kullanılır. Bu anahtar sözcük C çalışma zamanı kitaplığı uygulanması için kullanılan `malloc` bu yana hiçbir zaman (, belleği serbest bırakılmış sonra kullanma gibi geçersiz bir şey yapmakta olduğunuz sürece), geçerli program kullanımda olan bir işaretçi değeri döndürür.  
   
@@ -113,24 +108,24 @@ int myFunc() {...}
   
  Satır içi kullanım derleyici gerçekleştiren ve burada Biz bu davranışı değiştirmek Yardım pragmaları birkaç hakkında konuşun en önemli iyileştirmeler biridir.  
   
- `#pragma inline_recursion`Satır içi bir özyinelemeli çağrı kullanabilmek için uygulamayı isteyip istemediğinizi belirtmek için kullanışlıdır. Varsayılan olarak, kapalıdır. Kısa işlevleri yüzeysel özyineleme için bunu açmanızı olabilir. Daha fazla bilgi için bkz: [inline_recursion](../../preprocessor/inline-recursion.md).  
+ `#pragma inline_recursion` Satır içi bir özyinelemeli çağrı kullanabilmek için uygulamayı isteyip istemediğinizi belirtmek için kullanışlıdır. Varsayılan olarak, kapalıdır. Kısa işlevleri yüzeysel özyineleme için bunu açmanızı olabilir. Daha fazla bilgi için bkz: [inline_recursion](../../preprocessor/inline-recursion.md).  
   
  Derinliğini sınırlamak için başka bir yararlı pragma satır içi kullanım olduğu `#pragma inline_depth`. Bu genellikle, bir program veya işlevi boyutunu sınırlamak için burada çalıştığınız durumlarda yararlıdır. Daha fazla bilgi için bkz: [inline_depth](../../preprocessor/inline-depth.md).  
   
 ## <a name="restrict-and-assume"></a>__restrict ve \__assume  
  Birkaç performans yardımcı olabilecek Visual c++ anahtar sözcükleri vardır: [__restrict](../../cpp/extension-restrict.md) ve [__assume](../../intrinsics/assume.md).  
   
- İlk olarak, unutulmamalıdır, `__restrict` ve `__declspec(restrict)` iki farklı noktalardır. Biraz ilgili karşın, bunların semantiği farklıdır. `__restrict`tür niteleyicisi gibi olan `const` veya `volatile`, ancak işaretçi türleri için özel olarak.  
+ İlk olarak, unutulmamalıdır, `__restrict` ve `__declspec(restrict)` iki farklı noktalardır. Biraz ilgili karşın, bunların semantiği farklıdır. `__restrict` tür niteleyicisi gibi olan `const` veya `volatile`, ancak işaretçi türleri için özel olarak.  
   
  İle değiştiren bir işaretçi `__restrict` olarak adlandırılır bir *işaretçi __restrict*. Yalnızca aracılığıyla erişilebilir bir işaretçi bir __restrict işaretçidir \__kuruluşuma işaretçi. Diğer bir deyişle, başka bir işaretçi işaret verilere erişmek için kullanılamaz \__kuruluşuma işaretçi.  
   
- `__restrict`Visual C++ iyileştirici için güçlü bir araç olabilir, ancak çok dikkatli kullanın. Yanlış kullandıysanız, en iyi hale getirme, uygulamanızın çalışmamasına neden bir iyileştirme gerçekleştirebilir.  
+ `__restrict` Visual C++ iyileştirici için güçlü bir araç olabilir, ancak çok dikkatli kullanın. Yanlış kullandıysanız, en iyi hale getirme, uygulamanızın çalışmamasına neden bir iyileştirme gerçekleştirebilir.  
   
  `__restrict` Anahtar sözcüğü değiştirir **/Oa** önceki sürümlerden geçiş yapın.  
   
  İle `__assume`, geliştirici bazı değişkeninin değeri hakkında varsayımlarda derleyici anlayabilirsiniz.  
   
- Örneğin `__assume(a < 5);` bu kodu değişkeni satırında söyler iyileştirici `a` değerinden 5'tir. Yeniden promise derleyici budur. Varsa `a` gerçekten 6 Bu noktada programda sonra derleyici optimize sahip sonra programın davranışını ne beklediğiniz olmayabilir. `__assume`Switch deyimleri ve/veya koşullu ifadeler önce en yararlı olur.  
+ Örneğin `__assume(a < 5);` bu kodu değişkeni satırında söyler iyileştirici `a` değerinden 5'tir. Yeniden promise derleyici budur. Varsa `a` gerçekten 6 Bu noktada programda sonra derleyici optimize sahip sonra programın davranışını ne beklediğiniz olmayabilir. `__assume` Switch deyimleri ve/veya koşullu ifadeler önce en yararlı olur.  
   
  Bazı sınırlamalar vardır `__assume`. İlk olarak, ister `__restrict`, yalnızca bir öneri, yoksaymayı derleyici şekilde boş. Ayrıca, `__assume` şu anda yalnızca değişken inequalities sabitleri karşı çalışır. Simgesel inequalities, örneğin, dağıtılmaz assume(a < b).  
   

@@ -2,28 +2,23 @@
 title: MSBuild (Visual C++) genel bakış | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - MSBuild overview
 ms.assetid: dd258f6f-ab51-48d9-b274-f7ba911d05ca
-caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f250443e0e5da2cf399282f19a5fde58c4c4b089
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ae6e6d826f4bc1e8c9ab6cc28686e4ad1e6e3b02
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="msbuild-visual-c-overview"></a>MSBuild (Visual C++) Genel Bakış  
   
@@ -84,9 +79,9 @@ Varsayılan olarak, birincil Visual C++ Destek dosyalarının aşağıdaki dizin
   
 |Dizin|Açıklama|  
 |---------------|-----------------|  
-|*Sürücü*: \Program Files *(x86)*\Microsoft Visual Studio\\*yıl*\\*edition*\Common7\IDE\VC\VCTargets\ <br /><br />*Sürücü*: \Program Files *(x86)*\MSBuild\Microsoft.Cpp (x86) \v4.0\\*sürümü*\ |Birincil hedef dosyaları (.targets) içerir ve özellik dosyalarını (.props) hedefler tarafından kullanılır. Varsayılan olarak, bu dizin $(VCTargetsPath) makrosu başvurur.|  
-|*Sürücü*: \Program Files *(x86)*\Microsoft Visual Studio\\*yıl*\\*edition*\Common7\IDE\VC\VCTargets\ Platformlar\\*platform*\ <br /><br />*Sürücü*: \Program Files *(x86)*\MSBuild\Microsoft.Cpp\v4.0\\*sürüm*\Platforms\\*platform*\ |Hedefleri ve kendi ana dizini özelliklerinde geçersiz kılma platforma özgü hedef ve özellik dosyalarını içerir. Bu dizin, bu dizinde hedefleri tarafından kullanılan görevleri tanımlayan bir DLL de içerir.<br /><br /> *Platform* yer tutucu ARM, Win32 ya da x64 temsil eden alt dizin.|  
-|*Sürücü*: \Program Files *(x86)*\Microsoft Visual Studio\\*yıl*\\*edition*\Common7\IDE\VC\VCTargets\ Platformlar\\*platform*\PlatformToolsets\\*araç takımı*\ <br /><br />*Sürücü*: \Program Files *(x86)*\MSBuild\Microsoft.Cpp\v4.0\\*sürüm*\Platforms\\*platform*\ PlatformToolsets\\*araç takımı*\ <br /><br />*Sürücü*: \Program Files *(x86)*\MSBuild\Microsoft.Cpp\v4.0\Platforms\\*platform*\PlatformToolsets\\*araç takımı*\ |Belirtilen kullanarak Visual C++ uygulamaları oluşturmak yapı etkinleştirmek dizinleri içeren *araç takımı*.<br /><br /> *Yıl* ve *edition* yer tutucuları, Visual Studio 2017 ve sonraki sürümleri tarafından kullanılır. *Sürüm* tutucudur V110 Visual Studio 2012 için Visual Studio 2013 için V120 ya da Visual Studio 2015 için V140. *Platform* yer tutucu ARM, Win32 ya da x64 temsil eden alt dizin. *Araç takımı* yer tutucu araç takımı alt, örneğin, Visual Studio 2015 araç takımı, Visual Studio 2013 araç takımı veya v110_wp80 için kullanan Windows XP için yapı v120_xp kullanılarak Windows uygulamaları oluşturmaya yönelik v140 temsil eder Visual Studio 2012 araç setini kullanarak Windows Phone 8.0 uygulamalar oluşturun.<br /><br />Visual C++ 2008 veya Visual C++ 2010 uygulamaları oluşturmak yapı etkinleştirmek dizinleri içeren yolu içermeyen *sürüm*ve *platform* yer tutucusu temsil eder Itanium, Win32 ya da x64 alt dizin. *Araç takımı* yer tutucu v90 veya nı v100 araç takımı alt temsil eder.|  
+|*Sürücü*: \Program Files *(x86)* \Microsoft Visual Studio\\*yıl*\\*edition*\Common7\IDE\VC\VCTargets\ <br /><br />*Sürücü*: \Program Files *(x86)* \MSBuild\Microsoft.Cpp (x86) \v4.0\\*sürümü*\ |Birincil hedef dosyaları (.targets) içerir ve özellik dosyalarını (.props) hedefler tarafından kullanılır. Varsayılan olarak, bu dizin $(VCTargetsPath) makrosu başvurur.|  
+|*Sürücü*: \Program Files *(x86)* \Microsoft Visual Studio\\*yıl*\\*edition*\Common7\IDE\VC\VCTargets\ Platformlar\\*platform*\ <br /><br />*Sürücü*: \Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*sürüm*\Platforms\\*platform*\ |Hedefleri ve kendi ana dizini özelliklerinde geçersiz kılma platforma özgü hedef ve özellik dosyalarını içerir. Bu dizin, bu dizinde hedefleri tarafından kullanılan görevleri tanımlayan bir DLL de içerir.<br /><br /> *Platform* yer tutucu ARM, Win32 ya da x64 temsil eden alt dizin.|  
+|*Sürücü*: \Program Files *(x86)* \Microsoft Visual Studio\\*yıl*\\*edition*\Common7\IDE\VC\VCTargets\ Platformlar\\*platform*\PlatformToolsets\\*araç takımı*\ <br /><br />*Sürücü*: \Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*sürüm*\Platforms\\*platform*\ PlatformToolsets\\*araç takımı*\ <br /><br />*Sürücü*: \Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\Platforms\\*platform*\PlatformToolsets\\*araç takımı*\ |Belirtilen kullanarak Visual C++ uygulamaları oluşturmak yapı etkinleştirmek dizinleri içeren *araç takımı*.<br /><br /> *Yıl* ve *edition* yer tutucuları, Visual Studio 2017 ve sonraki sürümleri tarafından kullanılır. *Sürüm* tutucudur V110 Visual Studio 2012 için Visual Studio 2013 için V120 ya da Visual Studio 2015 için V140. *Platform* yer tutucu ARM, Win32 ya da x64 temsil eden alt dizin. *Araç takımı* yer tutucu araç takımı alt, örneğin, Visual Studio 2015 araç takımı, Visual Studio 2013 araç takımı veya v110_wp80 için kullanan Windows XP için yapı v120_xp kullanılarak Windows uygulamaları oluşturmaya yönelik v140 temsil eder Visual Studio 2012 araç setini kullanarak Windows Phone 8.0 uygulamalar oluşturun.<br /><br />Visual C++ 2008 veya Visual C++ 2010 uygulamaları oluşturmak yapı etkinleştirmek dizinleri içeren yolu içermeyen *sürüm*ve *platform* yer tutucusu temsil eder Itanium, Win32 ya da x64 alt dizin. *Araç takımı* yer tutucu v90 veya nı v100 araç takımı alt temsil eder.|  
   
 ### <a name="support-files"></a>Destek dosyaları  
   

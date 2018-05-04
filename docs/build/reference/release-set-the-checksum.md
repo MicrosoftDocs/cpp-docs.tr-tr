@@ -1,13 +1,10 @@
 ---
-title: "-RELEASE (sağlama toplamını Ayarla) | Microsoft Docs"
-ms.custom: 
+title: -RELEASE (sağlama toplamını Ayarla) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /release
 - VC.Project.VCLinkerTool.SetChecksum
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - checksum setting
 - RELEASE linker option
 ms.assetid: 93bcadf4-29ac-4824-914b-6997e3751d22
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b961c55f04b4f830de30c3d886d9aaee9ef71ea2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d360ad7264cb66da140df340bc9d281a329c26c2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="release-set-the-checksum"></a>/RELEASE (Sağlama Toplamını Ayarla)
 ```  

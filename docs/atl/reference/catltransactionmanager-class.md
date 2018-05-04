@@ -2,11 +2,8 @@
 title: CAtlTransactionManager sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CAtlTransactionManager
@@ -34,17 +31,15 @@ dev_langs:
 helpviewer_keywords:
 - CAtlTransactionManager class
 ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
-caps.latest.revision: 25
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0def8aa809cd1ccc115ccc2a09b1ae752316098f
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 02ab9cd6f8867f9e6bc9d81ff825e8fe8f7b57d7
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="catltransactionmanager-class"></a>CAtlTransactionManager sınıfı
 CAtlTransactionManager sınıfı Çekirdek İşlem Yöneticisi (KTM) işlevleri için sarmalayıcı sağlar.  
@@ -92,7 +87,7 @@ class CAtlTransactionManager;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[m_bFallback](#m_bfallback)|`TRUE`geri dönüş destekleniyorsa; `FALSE` Aksi takdirde.|  
+|[m_bFallback](#m_bfallback)|`TRUE` geri dönüş destekleniyorsa; `FALSE` Aksi takdirde.|  
 |[m_hTransaction](#m_htransaction)|İşlem tanıtıcısı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -103,7 +98,7 @@ class CAtlTransactionManager;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atltransactionmanager.h  
   
-##  <a name="dtor"></a>~ CAtlTransactionManager  
+##  <a name="dtor"></a>  ~ CAtlTransactionManager  
  CAtlTransactionManager yıkıcı.  
   
 ```
@@ -113,7 +108,7 @@ virtual ~CAtlTransactionManager();
 ### <a name="remarks"></a>Açıklamalar  
  Normal işlemde işlem otomatik olarak kaydedilen ve kapatılır. Yıkıcı bir özel durum geriye doğru izleme sırasında çağrılırsa, işlem geri alınamaz ve kapalı.  
   
-##  <a name="catltransactionmanager"></a>CAtlTransactionManager  
+##  <a name="catltransactionmanager"></a>  CAtlTransactionManager  
  CAtlTransactionManager Oluşturucusu.  
   
 ```
@@ -122,14 +117,14 @@ CAtlTransactionManager(BOOL bFallback = TRUE, BOOL bAutoCreateTransaction = TRUE
   
 ### <a name="parameters"></a>Parametreler  
  `bFallback`  
- `TRUE`Destek geri dönüş gösterir. İşlenen işlevi başarısız olursa sınıfı otomatik olarak "işlem temelli olmayan" işlevi çağırır. `FALSE`hiçbir "temel" çağrıları gösterir.  
+ `TRUE` Destek geri dönüş gösterir. İşlenen işlevi başarısız olursa sınıfı otomatik olarak "işlem temelli olmayan" işlevi çağırır. `FALSE` hiçbir "temel" çağrıları gösterir.  
   
  `bAutoCreateTransaction`  
- `TRUE`hareket işleyicisi oluşturucuda otomatik olarak oluşturulan gösterir. `FALSE`olmadığını gösterir.  
+ `TRUE` hareket işleyicisi oluşturucuda otomatik olarak oluşturulan gösterir. `FALSE` olmadığını gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="close"></a>Kapat  
+##  <a name="close"></a>  Kapat  
  İşlem tanıtıcısı kapatır.  
   
 ```
@@ -137,12 +132,12 @@ inline BOOL Close();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `CloseHandle` işlevi. Yöntem yıkıcı otomatik olarak çağrılır.  
   
-##  <a name="commit"></a>Tamamlama  
+##  <a name="commit"></a>  Tamamlama  
  İşlem tamamlanan istek sayısı.  
   
 ```
@@ -150,12 +145,12 @@ inline BOOL Commit();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `CommitTransaction` işlevi. Yöntem yıkıcı otomatik olarak çağrılır.  
   
-##  <a name="create"></a>Oluşturma  
+##  <a name="create"></a>  Oluşturma  
  İşlem tanıtıcısı oluşturur.  
   
 ```
@@ -163,12 +158,12 @@ inline BOOL Create();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `CreateTransaction` işlevi. Bunun için denetleyin  
   
-##  <a name="createfile"></a>CreateFile  
+##  <a name="createfile"></a>  CreateFile  
  Oluşturur veya bir dosya, dosya akışı ya da dizin hizmetteki bir işlem olarak açar.  
   
 ```
@@ -210,7 +205,7 @@ inline HANDLE CreateFile(
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `CreateFileTransacted` işlevi.  
   
-##  <a name="deletefile"></a>DeleteFile  
+##  <a name="deletefile"></a>  DeleteFile  
  Varolan bir dosyanın hizmetteki bir işlem olarak siler.  
   
 ```
@@ -224,7 +219,7 @@ inline BOOL DeleteFile(LPCTSTR lpFileName);
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `DeleteFileTransacted` işlevi.  
   
-##  <a name="findfirstfile"></a>FindFirstFile  
+##  <a name="findfirstfile"></a>  FindFirstFile  
  Bir dosya veya alt dizin için bir dizin hizmetteki bir işlem olarak arar.  
   
 ```
@@ -246,7 +241,7 @@ inline HANDLE FindFirstFile(
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `FindFirstFileTransacted` işlevi.  
   
-##  <a name="getfileattributes"></a>GetFileAttributes  
+##  <a name="getfileattributes"></a>  GetFileAttributes  
  Belirtilen dosya veya dizin dosya sistemi özniteliklerini hizmetteki bir işlem olarak alır.  
   
 ```
@@ -260,7 +255,7 @@ inline DWORD GetFileAttributes(LPCTSTR lpFileName);
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `GetFileAttributesTransacted` işlevi.  
   
-##  <a name="getfileattributesex"></a>GetFileAttributesEx  
+##  <a name="getfileattributesex"></a>  GetFileAttributesEx  
  Belirtilen dosya veya dizin dosya sistemi özniteliklerini hizmetteki bir işlem olarak alır.  
   
 ```
@@ -283,7 +278,7 @@ inline BOOL GetFileAttributesEx(
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `GetFileAttributesTransacted` işlevi.  
   
-##  <a name="gethandle"></a>GetHandle  
+##  <a name="gethandle"></a>  GetHandle  
  İşlem tanıtıcısı döndürür.  
   
 ```
@@ -295,7 +290,7 @@ HANDLE GetHandle() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isfallback"></a>IsFallback  
+##  <a name="isfallback"></a>  IsFallback  
  Geri dönüş çağrılarının etkinleştirilip etkinleştirilmediğini belirler.  
   
 ```
@@ -303,12 +298,12 @@ BOOL IsFallback() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `TRUE` sınıfı geri dönüş çağrıları destekler. `FALSE`Aksi takdirde.  
+ Döndürür `TRUE` sınıfı geri dönüş çağrıları destekler. `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="m_bfallback"></a>m_bFallback  
- `TRUE`geri dönüş destekleniyorsa; `FALSE` Aksi takdirde.  
+##  <a name="m_bfallback"></a>  m_bFallback  
+ `TRUE` geri dönüş destekleniyorsa; `FALSE` Aksi takdirde.  
   
 ```
 BOOL m_bFallback;
@@ -316,7 +311,7 @@ BOOL m_bFallback;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="m_htransaction"></a>m_hTransaction  
+##  <a name="m_htransaction"></a>  m_hTransaction  
  İşlem tanıtıcısı.  
   
 ```
@@ -325,7 +320,7 @@ HANDLE m_hTransaction;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="movefile"></a>MoveFile  
+##  <a name="movefile"></a>  MoveFile  
  Varolan bir dosya veya alt öğelerini hizmetteki bir işlem olarak dahil olmak üzere bir dizin taşır.  
   
 ```
@@ -342,7 +337,7 @@ inline BOOL MoveFile(LPCTSTR lpOldFileName, LPCTSTR lpNewFileName);
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `MoveFileTransacted` işlevi.  
   
-##  <a name="regcreatekeyex"></a>RegCreateKeyEx  
+##  <a name="regcreatekeyex"></a>  RegCreateKeyEx  
  Belirtilen kayıt defteri anahtarı oluşturur ve bir işlem ile ilişkilendirir. Anahtar zaten varsa, işlev, açar.  
   
 ```
@@ -392,7 +387,7 @@ inline LSTATUS RegCreateKeyEx(
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `RegCreateKeyTransacted` işlevi.  
   
-##  <a name="regdeletekey"></a>RegDeleteKey  
+##  <a name="regdeletekey"></a>  RegDeleteKey  
  Bir alt anahtarı ve değerleri kayıt defterinde belirtilen platforma özgü görünümünden hizmetteki bir işlem olarak siler.  
   
 ```
@@ -412,7 +407,7 @@ inline LSTATUS RegDeleteKeyEx(HKEY hKey, LPCTSTR lpSubKey);
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `RegDeleteKeyTransacted` işlevi.  
   
-##  <a name="regopenkeyex"></a>RegOpenKeyEx  
+##  <a name="regopenkeyex"></a>  RegOpenKeyEx  
  Belirtilen kayıt defteri anahtarı açar ve bir işlem ile ilişkilendirir.  
   
 ```
@@ -446,7 +441,7 @@ inline LSTATUS RegOpenKeyEx(
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `RegOpenKeyTransacted` işlevi.  
   
-##  <a name="rollback"></a>Geri alma  
+##  <a name="rollback"></a>  Geri alma  
  İşlem geri alınamaz istek sayısı.  
   
 ```
@@ -454,12 +449,12 @@ inline BOOL Rollback();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `RollbackTransaction` işlevi.  
   
-##  <a name="setfileattributes"></a>SetFileAttributes  
+##  <a name="setfileattributes"></a>  SetFileAttributes  
  Bir dosya veya dizin özniteliklerini hizmetteki bir işlem olarak ayarlar.  
   
 ```

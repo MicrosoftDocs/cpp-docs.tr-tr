@@ -2,13 +2,10 @@
 title: -utf-8 (kaynağı Ayarla ve UTF-8 kümelerine karakter yürütülebilir) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /utf-8
 dev_langs:
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - /utf-8 compiler option
 ms.assetid: f0e1f3cb-6cae-46eb-9483-04ed13d9b504
-caps.latest.revision: 3
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e51db101db10b0461d7e9aa76b62319989d9f7d0
-ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
+ms.openlocfilehash: 90520cd9ad4af484714306c37567ab041a826fcc
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="utf-8-set-source-and-executable-character-sets-to-utf-8"></a>/UTF-8 (kaynağı Ayarla ve yürütülebilir karakter kümelerini UTF-8)
 Kaynak karakter kümesi hem UTF-8 olarak yürütme karakter kümesi belirtir.  

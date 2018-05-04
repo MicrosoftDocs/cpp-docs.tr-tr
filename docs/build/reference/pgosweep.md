@@ -13,14 +13,13 @@ helpviewer_keywords:
 ms.assetid: f39dd3b7-1cd9-4c3b-8e8b-fb794744b757
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9680dc47d850bd49eff343c0e382b7132697858d
-ms.sourcegitcommit: ee7d74683af7631441c8c7f65ef5ceceaee4a5ee
+ms.openlocfilehash: ded5b692d7c51e5a46a325a69ad6969083025ff5
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pgosweep"></a>pgosweep
 
@@ -39,7 +38,7 @@ Profil temelli iyileştirme tüm profil verilerini çalışan bir programı .pgc
 
 - **/noreset** çalışma zamanı veri yapılarını sayıma korur.
 
-*image*<br/>
+*Görüntü*<br/>
 Kullanılarak oluşturulmuş bir .exe veya .dll dosyasının tam yolu [/GENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md), [/FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md), veya [/LTCG:PGINSTRUMENT](ltcg-link-time-code-generation.md) seçeneği.
 
 *pgcfile*<br/>

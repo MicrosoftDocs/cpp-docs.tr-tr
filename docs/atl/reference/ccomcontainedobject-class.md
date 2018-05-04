@@ -1,12 +1,9 @@
 ---
-title: "CComContainedObject sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComContainedObject sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComContainedObject
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - aggregation [C++], ATL objects
 - CComContainedObject class
 ms.assetid: e8616b41-c200-47b8-bf2c-fb9f713ebdad
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3579d4080b4dba130b58592fa47efd636805ed1d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c0d4b0a6491aaeb27e4a1d986db01c03d1c5314d
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomcontainedobject-class"></a>CComContainedObject sınıfı
 Bu sınıf uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) sahip nesne için temsilci seçme tarafından **IUnknown**.  
@@ -71,7 +66,7 @@ class CComContainedObject : public Base
 |[CComContainedObject::Release](#release)|Başvuru sayım sahibi nesnesinde azaltır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- ATL kullanan `CComContainedObject` sınıflardaki [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md), ve [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject`uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) sahip nesne için temsilci seçme tarafından **IUnknown**. (Dış nesne bir toplama veya etiketleri arabirimi oluşturulmaktadır nesne sahibi değil.) `CComContainedObject` çağrıları `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, ve `OuterRelease`, aracılığıyla devralınan tüm `Base`.  
+ ATL kullanan `CComContainedObject` sınıflardaki [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md), ve [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject` uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) sahip nesne için temsilci seçme tarafından **IUnknown**. (Dış nesne bir toplama veya etiketleri arabirimi oluşturulmaktadır nesne sahibi değil.) `CComContainedObject` çağrıları `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, ve `OuterRelease`, aracılığıyla devralınan tüm `Base`.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `Base`  
@@ -81,7 +76,7 @@ class CComContainedObject : public Base
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="addref"></a>CComContainedObject::AddRef  
+##  <a name="addref"></a>  CComContainedObject::AddRef  
  Sahip nesne üzerinde başvurusu sayısını artırır.  
   
 ```
@@ -91,7 +86,7 @@ STDMETHOD_(ULONG, AddRef)();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tanılama için kullanışlı veya test bir değer.  
   
-##  <a name="ccomcontainedobject"></a>CComContainedObject::CComContainedObject  
+##  <a name="ccomcontainedobject"></a>  CComContainedObject::CComContainedObject  
  Oluşturucu.  
   
 ```
@@ -105,7 +100,7 @@ CComContainedObject(void* pv);
 ### <a name="remarks"></a>Açıklamalar  
  Ayarlar `m_pOuterUnknown` üye işaretçisi (aracılığıyla devralınan `Base` sınıfı) için `pv`.  
   
-##  <a name="dtor"></a>CComContainedObject:: ~ CComContainedObject  
+##  <a name="dtor"></a>  CComContainedObject:: ~ CComContainedObject  
  Yok Edicisi.  
   
 ```
@@ -115,7 +110,7 @@ CComContainedObject(void* pv);
 ### <a name="remarks"></a>Açıklamalar  
  Ayrılan tüm kaynakları serbest bırakır.  
   
-##  <a name="getcontrollingunknown"></a>CComContainedObject::GetControllingUnknown  
+##  <a name="getcontrollingunknown"></a>  CComContainedObject::GetControllingUnknown  
  Döndürür `m_pOuterUnknown` üye işaretçisi (aracılığıyla devralınan *temel* sınıfı) sahibi nesnenin tutan **IUnknown**.  
   
 ```
@@ -128,7 +123,7 @@ IUnknown* GetControllingUnknown();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem sanal varsa `Base` belirtmiş [DECLARE_GET_CONTROLLING_UNKNOWN](aggregation-and-class-factory-macros.md#declare_get_controlling_unknown) makrosu.  
   
-##  <a name="queryinterface"></a>CComContainedObject::QueryInterface  
+##  <a name="queryinterface"></a>  CComContainedObject::QueryInterface  
  Sahip nesne üzerinde istenen arabirimi için bir işaretçi alır.  
   
 ```
@@ -150,7 +145,7 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
-##  <a name="release"></a>CComContainedObject::Release  
+##  <a name="release"></a>  CComContainedObject::Release  
  Başvuru sayım sahibi nesnesinde azaltır.  
   
 ```

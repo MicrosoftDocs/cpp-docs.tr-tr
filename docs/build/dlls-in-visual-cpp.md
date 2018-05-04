@@ -1,13 +1,10 @@
 ---
 title: Visual C++'ta DLL'leri | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - DLLs [C++]
 - DLLs [C++], about DLLs
 ms.assetid: 5216bca4-51e2-466b-b221-0e3e776056f0
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14f8a0914b1bb7f2d3a16681a3a66091eda71d73
-ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.openlocfilehash: facb085ae134c3ecea635ab68dd73f98e55488a0
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="dlls-in-visual-c"></a>Visual C++'da DLL'ler  
   
@@ -138,5 +133,5 @@ Aşağıdaki konular, Visual c++ programı DLL'leri hakkında ayrıntılı bilgi
  [Bir DLL'in bir parçası MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)  
  MFC kitaplığını Windows dinamik bağlantı kitaplığı bir parçası olarak kullanmanıza olanak tanır Normal MFC DLL'leri açıklar.  
   
- [DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)  
+ [MFC'nin DLL sürümü](../mfc/tn033-dll-version-of-mfc.md)  
  MFCxx.dll kullanabilirsiniz ve MFC uygulamaları ve MFC uzantı DLL'leri ile dinamik bağlantı kitaplıkları (x MFC sürüm numarası olduğu yer) MFCxxD.dll paylaşılan nasıl açıklanmaktadır.  

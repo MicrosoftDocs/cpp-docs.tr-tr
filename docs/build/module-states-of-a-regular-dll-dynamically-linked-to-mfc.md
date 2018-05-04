@@ -2,12 +2,9 @@
 title: Normal MFC DLL'nin Modül durumları dinamik olarak MFC'ye bağlı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - module states [C++], regular MFC DLLs dynamically linked to
 - DLLs [C++], module states
 ms.assetid: b4493e79-d25e-4b7f-a565-60de5b32c723
-caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b88f895255c698f04b6988e63b8b75372fa59b0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d15f533473ebe90d6d105ddeb57dcdcddd90e87b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="module-states-of-a-regular-mfc-dll-dynamically-linked-to-mfc"></a>Normal MFC DLL'nin Modül durumları dinamik olarak MFC'ye bağlı
 MFC DLL normal MFC DLL dinamik olarak bağlama yeteneği oldukça karmaşık bazı yapılandırmalara izin verir. Örneğin, normal bir MFC DLL ve kullandığı yürütülebilir hem de dinamik olarak MFC DLL ve tüm MFC uzantı DLL'leri bağlayabilirsiniz.  

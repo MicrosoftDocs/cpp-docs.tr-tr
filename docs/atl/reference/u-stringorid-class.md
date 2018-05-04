@@ -1,12 +1,9 @@
 ---
-title: "_U_STRINGorID sınıfı | Microsoft Docs"
-ms.custom: 
+title: _U_STRINGorID sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - ATL._U_STRINGorID
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - _U_STRINGorID class
 - U_STRINGorID class
 ms.assetid: 443cdc00-d265-4b27-8ef3-2feb95f3e5e3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebc1b8f65f2a0841baf09b5c95528f571f97ce38
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2a601b1c64b28681c13a0b9e8f42156d8820cb4b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ustringorid-class"></a>_U_STRINGorID sınıfı
 Bu bağımsız değişken bağdaştırıcı sınıfı ya da kaynak adları verir ( `LPCTSTR`s) veya kaynak kimlikleri ( **UINT**s) kullanarak bir dize kimliği dönüştürmek arayan gerek kalmadan bir işleve iletilecek **MAKEINTRESOURCE** makrosu.  
@@ -64,14 +59,14 @@ class _U_STRINGorID
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  
   
-##  <a name="_u_stringorid__m_lpstr"></a>_U_STRINGorID::m_lpstr  
+##  <a name="_u_stringorid__m_lpstr"></a>  _U_STRINGorID::m_lpstr  
  Sınıf ya da oluşturucular genel olarak geçirilen değeri tutan `LPCTSTR` veri üyesi.  
   
 ```
 LPCTSTR m_lpstr;
 ```  
   
-##  <a name="_u_stringorid___u_stringorid"></a>_U_STRINGorID::_U_STRINGorID  
+##  <a name="_u_stringorid___u_stringorid"></a>  _U_STRINGorID::_U_STRINGorID  
  **UINT** oluşturucu bağımsız değişkeni kullanarak Windows Kaynak Yönetimi işlevleri ile uyumlu bir kaynak türü dönüştürür **MAKEINTRESOURCE** makrosu ve sonucu sınıfın tek depolanır veri üyesi [m_lpstr](#_u_stringorid__m_lpstr).  
   
 ```

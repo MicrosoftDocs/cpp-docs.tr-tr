@@ -1,28 +1,25 @@
 ---
-title: "İzlenecek yol: komut satırında C programı derleme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: komut satırında C programı derleme | Microsoft Docs'
+ms.custom: conceptual
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.technology:
+- cpp-tools
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line applications [C++], C programs
 - Visual C, compiling
 - compiling programs [C++]
 - C program compiling [C++]
 ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
-caps.latest.revision: "46"
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7520e2d78c924ee21c489d2e8327c4bda9b973aa
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 033c29ff9871a427222b59fbf5c8350794a9bbe2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="walkthrough-compile-a-c-program-on-the-command-line"></a>İzlenecek yol: komut satırında C programı derleme
 Visual C++ her şeyin tam Windows Masaüstü uygulamaları, mobil uygulamaları ve daha fazla bilgi için temel konsol programlardan oluşturmak için kullanabileceğiniz bir C Derleyici içerir.  

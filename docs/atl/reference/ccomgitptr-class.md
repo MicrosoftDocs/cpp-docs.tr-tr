@@ -1,12 +1,9 @@
 ---
-title: "CComGITPtr sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComGITPtr sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComGITPtr
@@ -23,17 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - CComGITPtr class
 ms.assetid: af895acb-525a-4555-bb67-b241b7df515b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c001d0d1ca8e756b24d97051d100e7d71723569c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 049873ce6ff630e8f00ea5ad5ec9b3786bd5e71b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomgitptr-class"></a>CComGITPtr sınıfı
 Bu sınıf, arabirim işaretçileri ilgilenmek için yöntemleri ve genel arabirim tablosu (GIT) sağlar.  
@@ -90,7 +85,7 @@ class CComGITPtr
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
-##  <a name="attach"></a>CComGITPtr::Attach  
+##  <a name="attach"></a>  CComGITPtr::Attach  
  Arabirim işaretçisi genel arabirim tablosu (GIT) kaydetmek için bu yöntemi çağırın.  
   
 ```
@@ -112,7 +107,7 @@ HRESULT Attach(DWORD dwCookie) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Hata ayıklama derlemelerinde, GIT geçerli değilse veya tanımlama bilgisi NULL değerine eşit olup olmadığını onaylama hata meydana gelir.  
   
-##  <a name="ccomgitptr"></a>CComGITPtr::CComGITPtr  
+##  <a name="ccomgitptr"></a>  CComGITPtr::CComGITPtr  
  Oluşturucu.  
   
 ```
@@ -124,16 +119,16 @@ CComGITPtr(CComGITPtr&& rv);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`p`  
+ [in] `p`  
  Genel arabirim tablosu (GIT) depolanması için bir arabirim işaretçisi.  
   
- [in]`git`  
+ [in] `git`  
  Var olan bir başvuru `CComGITPtr` nesnesi.  
   
- [in]`dwCookie`  
+ [in] `dwCookie`  
  Arabirim işaretçisi tanımlamak için kullanılan bir tanımlama bilgisi.  
   
- [in]`rv`  
+ [in] `rv`  
  Kaynak `CComGITPtr` verileri taşımak için nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -141,7 +136,7 @@ CComGITPtr(CComGITPtr&& rv);
   
  Oluşturucu kullanılarak `rv` bir taşıma oluşturucusuna değil. Veri kaynağından taşınır `rv`ve ardından `rv` temizlenir.  
   
-##  <a name="dtor"></a>CComGITPtr:: ~ CComGITPtr  
+##  <a name="dtor"></a>  CComGITPtr:: ~ CComGITPtr  
  Yok Edicisi.  
   
 ```
@@ -151,7 +146,7 @@ CComGITPtr(CComGITPtr&& rv);
 ### <a name="remarks"></a>Açıklamalar  
  Arabirim (GIT), genel arabirim tablodan kaldırır kullanarak [CComGITPtr::Revoke](#revoke).  
   
-##  <a name="copyto"></a>CComGITPtr::CopyTo  
+##  <a name="copyto"></a>  CComGITPtr::CopyTo  
  Arabirim geçirilen işaretçisine (GIT) genel arabirim tablosundan kopyalamak için bu yöntemi çağırın.  
   
 ```
@@ -168,7 +163,7 @@ HRESULT CopyTo(T** pp) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  GIT arabiriminden geçirilen işaretçiyi kopyalanır. Artık gerekli olmadığında işaretçinin çağıran tarafından serbest bırakılması gerekir.  
   
-##  <a name="detach"></a>CComGITPtr::Detach  
+##  <a name="detach"></a>  CComGITPtr::Detach  
  Arabirimden ilişkisini kaldırmak için bu yöntemi çağırın `CComGITPtr` nesnesi.  
   
 ```
@@ -181,7 +176,7 @@ DWORD Detach() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Arabirim GIT kaldırmak için arayan kadar olan kullanarak [CComGITPtr::Revoke](#revoke).  
   
-##  <a name="getcookie"></a>CComGITPtr::GetCookie  
+##  <a name="getcookie"></a>  CComGITPtr::GetCookie  
  Tanımlama bilgisinden döndürmek için bu yöntemi çağırabilmeniz `CComGITPtr` nesnesi.  
   
 ```
@@ -194,7 +189,7 @@ DWORD GetCookie() const;
 ### <a name="remarks"></a>Açıklamalar  
  Tanımlama bilgisinin bir arabirim ve konumunu tanımlamak için kullanılan bir değişkendir.  
   
-##  <a name="m_dwcookie"></a>CComGITPtr::m_dwCookie  
+##  <a name="m_dwcookie"></a>  CComGITPtr::m_dwCookie  
  Tanımlama bilgisi.  
   
 ```
@@ -204,7 +199,7 @@ DWORD m_dwCookie;
 ### <a name="remarks"></a>Açıklamalar  
  Tanımlama bilgisi, bir arabirim ve konumunu tanımlamak için kullanılan bir üye değişkendir.  
   
-##  <a name="operator_eq"></a>CComGITPtr::operator =  
+##  <a name="operator_eq"></a>  CComGITPtr::operator =  
  Atama işleci.  
   
 ```
@@ -215,16 +210,16 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`p`  
+ [in] `p`  
  Bir arabirim için bir işaretçi.  
   
- [in]`git`  
+ [in] `git`  
  Bir başvuru bir `CComGITPtr` nesnesi.  
   
- [in]`dwCookie`  
+ [in] `dwCookie`  
  Arabirim işaretçisi tanımlamak için kullanılan bir tanımlama bilgisi.  
   
- [in]`rv`  
+ [in] `rv`  
  `CComGITPtr` Verileri taşımak için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -233,7 +228,7 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 ### <a name="remarks"></a>Açıklamalar  
  Yeni bir değer atayan bir `CComGITPtr` nesnesi, varolan bir nesneyi veya bir genel arabirim tablo referansı.  
   
-##  <a name="operator_dword"></a>CComGITPtr::operator DWORD  
+##  <a name="operator_dword"></a>  CComGITPtr::operator DWORD  
  İle ilişkili tanımlama bilgisi döndürür `CComGITPtr` nesnesi.  
   
 ```  
@@ -243,7 +238,7 @@ operator DWORD() const;
 ### <a name="remarks"></a>Açıklamalar  
  Tanımlama bilgisinin bir arabirim ve konumunu tanımlamak için kullanılan bir değişkendir.  
   
-##  <a name="revoke"></a>CComGITPtr::Revoke  
+##  <a name="revoke"></a>  CComGITPtr::Revoke  
  Geçerli arabirimi (GIT) genel arabirim tablodan kaldırmak için bu yöntemi çağırın.  
   
 ```

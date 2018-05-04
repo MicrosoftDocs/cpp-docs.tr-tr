@@ -1,12 +1,9 @@
 ---
-title: "CComCoClass sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComCoClass sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComCoClass
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - CComCoClass class
 - aggregation [C++], aggregation models
 ms.assetid: 67cfefa4-8df9-47fa-ad58-2d1a1ae25762
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 969370294ed3d5d2ca2fdff5f4a106b72ed77a17
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 738d7e937acf2d3299be97b4f091c698582911d5
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomcoclass-class"></a>CComCoClass sınıfı
 Bu sınıf, bir sınıfın örneklerini oluşturmak ve özelliklerini almak için yöntemleri sağlar.  
@@ -62,9 +57,9 @@ class CComCoClass
 |[CComCoClass::GetObjectDescription](#getobjectdescription)|(Statik) Nesnenin açıklamasını döndürmek için geçersiz kılın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComCoClass`bir nesnenin CLSID alma, hata bilgilerini ayarlama ve sınıf örneklerini oluşturma yöntemleri sağlar. Herhangi bir sınıf kayıtlı [nesne eşlemesi](http://msdn.microsoft.com/en-us/b57619cc-534f-4b8f-bfd4-0c12f937202f) türetilmiş `CComCoClass`.  
+ `CComCoClass` bir nesnenin CLSID alma, hata bilgilerini ayarlama ve sınıf örneklerini oluşturma yöntemleri sağlar. Herhangi bir sınıf kayıtlı [nesne eşlemesi](http://msdn.microsoft.com/en-us/b57619cc-534f-4b8f-bfd4-0c12f937202f) türetilmiş `CComCoClass`.  
   
- `CComCoClass`Ayrıca, nesne için varsayılan sınıf Fabrika ve toplama modeli tanımlar. `CComCoClass`Aşağıdaki iki makroları kullanır:  
+ `CComCoClass` Ayrıca, nesne için varsayılan sınıf Fabrika ve toplama modeli tanımlar. `CComCoClass` Aşağıdaki iki makroları kullanır:  
   
 - [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory) olmasını üreteci bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md).  
   
@@ -77,7 +72,7 @@ class CComCoClass
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="createinstance"></a>CComCoClass::CreateInstance  
+##  <a name="createinstance"></a>  CComCoClass::CreateInstance  
  Bunlar kullanmak `CreateInstance` işlevlerinin bir COM örneğini oluşturmak için nesne ve COM API kullanmadan bir arabirim işaretçisi almak.  
   
 ```
@@ -111,11 +106,11 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
  Unutmayın arabirimi `Q` kullanılarak alınabilir kendisiyle ilişkili bir IID olmalıdır [__uuidof](../../cpp/uuidof-operator.md) işleci.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnekte, `CDocument` bir sihirbaz tarafından oluşturulan ATL sınıfın türetildiği `CComCoClass` uygulayan **IDocument** arabirimi. Sınıf ile nesne eşlemesindeki kayıtlı `OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO` istemcileri belge kullanma örnekleri oluşturamıyor makrosu [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615). `CApplication`belge sınıfının örnekleri oluşturmak için kendi COM arabirimleri birinde bir yöntem sağlar CoClass ' dir. Ne kadar kolay gösterir aşağıdaki kodu kullanarak belge sınıf örnekleri oluşturmak için `CreateInstance` üye devralınan `CComCoClass` temel sınıfı.  
+ Aşağıdaki örnekte, `CDocument` bir sihirbaz tarafından oluşturulan ATL sınıfın türetildiği `CComCoClass` uygulayan **IDocument** arabirimi. Sınıf ile nesne eşlemesindeki kayıtlı `OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO` istemcileri belge kullanma örnekleri oluşturamıyor makrosu [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615). `CApplication` belge sınıfının örnekleri oluşturmak için kendi COM arabirimleri birinde bir yöntem sağlar CoClass ' dir. Ne kadar kolay gösterir aşağıdaki kodu kullanarak belge sınıf örnekleri oluşturmak için `CreateInstance` üye devralınan `CComCoClass` temel sınıfı.  
   
  [!code-cpp[NVC_ATL_COM#11](../../atl/codesnippet/cpp/ccomcoclass-class_2.cpp)]  
   
-##  <a name="error"></a>CComCoClass::Error  
+##  <a name="error"></a>  CComCoClass::Error  
  Bu statik işlev ayarlayan `IErrorInfo` istemciye hata bilgileri sağlamak için arabirim.  
   
 ```
@@ -188,7 +183,7 @@ static HRESULT Error(
   
  Varsa `hRes` parametredir sıfır olmayan, ardından `Error` değerini döndürür `hRes`. Varsa `hRes` sıfır sonra ilk dört sürümleri olan `Error` iade `DISP_E_EXCEPTION`. Son iki sürüm makrosu sonuç **MAKE_HRESULT (1, FACILITY_ITF,** `nID` **)**.  
   
-##  <a name="getobjectclsid"></a>CComCoClass::GetObjectCLSID  
+##  <a name="getobjectclsid"></a>  CComCoClass::GetObjectCLSID  
  Nesnenin CLSID alma tutarlı bir yol sağlar.  
   
 ```
@@ -198,7 +193,7 @@ static const CLSID& WINAPI GetObjectCLSID();
 ### <a name="return-value"></a>Dönüş Değeri  
  Nesne sınıfı tanımlayıcısı.  
   
-##  <a name="getobjectdescription"></a>CComCoClass::GetObjectDescription  
+##  <a name="getobjectdescription"></a>  CComCoClass::GetObjectDescription  
  Bu statik işlev sınıfı nesnenizin metin açıklamasını alır.  
   
 ```
@@ -213,7 +208,7 @@ static LPCTSTR WINAPI GetObjectDescription();
   
  [!code-cpp[NVC_ATL_COM#12](../../atl/codesnippet/cpp/ccomcoclass-class_3.h)]  
   
- `GetObjectDescription`tarafından çağrılır **IComponentRegistrar::GetComponents**. **IComponentRegistrar** kaydolun ve DLL bileşenleri tek tek kaydı olanak tanıyan bir Otomasyon arabirimdir. ATL Proje Sihirbazı'yla bir bileşen Kaydedicisi nesne oluşturduğunuzda, sihirbaz otomatik olarak uygulaması **IComponentRegistrar** arabirimi. **IComponentRegistrar** genellikle Microsoft işlem sunucusu tarafından kullanılır.  
+ `GetObjectDescription` tarafından çağrılır **IComponentRegistrar::GetComponents**. **IComponentRegistrar** kaydolun ve DLL bileşenleri tek tek kaydı olanak tanıyan bir Otomasyon arabirimdir. ATL Proje Sihirbazı'yla bir bileşen Kaydedicisi nesne oluşturduğunuzda, sihirbaz otomatik olarak uygulaması **IComponentRegistrar** arabirimi. **IComponentRegistrar** genellikle Microsoft işlem sunucusu tarafından kullanılır.  
   
  ATL Proje Sihirbazı hakkında daha fazla bilgi için bkz: [bir ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md).  
   

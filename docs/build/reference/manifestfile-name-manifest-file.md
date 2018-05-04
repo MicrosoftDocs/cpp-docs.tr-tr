@@ -1,13 +1,10 @@
 ---
-title: "-MANIFESTFILE (bildirim dosyasını Adlandır) | Microsoft Docs"
-ms.custom: 
+title: -MANIFESTFILE (bildirim dosyasını Adlandır) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.ManifestFile
 dev_langs:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - -MANIFESTFILE linker option
 - /MANIFESTFILE linker option
 ms.assetid: befa5ab2-a9cf-4c9b-969a-e7b4a930f08d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4a4ce827da3f6793a94bfb6e726af99b1c59dc1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b95337afc790436187c547bba108da2161b0738b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manifestfile-name-manifest-file"></a>/MANIFESTFILE (Bildirim Dosyasını Adlandır)
 ```  

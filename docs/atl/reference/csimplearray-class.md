@@ -1,12 +1,9 @@
 ---
-title: "CSimpleArray sınıfı | Microsoft Docs"
-ms.custom: 
+title: CSimpleArray sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CSimpleArray
@@ -25,17 +22,15 @@ dev_langs:
 helpviewer_keywords:
 - CSimpleArray class
 ms.assetid: ee0c9f39-b61c-4c18-bc43-4eada21dca3a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ea081d3868c1226638d01be9505eb9d0e01ed10
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 187dee79cd09e366fb56d9cd0e71395589476a69
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="csimplearray-class"></a>CSimpleArray sınıfı
 Bu sınıf, basit bir dizi yönetme için yöntemleri sağlar.  
@@ -85,7 +80,7 @@ class CSimpleArray
 
   
 ## <a name="remarks"></a>Açıklamalar  
- `CSimpleArray`oluşturma ve herhangi bir türde basit bir dizi yönetme için yöntemleri sağlar `T`.  
+ `CSimpleArray` oluşturma ve herhangi bir türde basit bir dizi yönetme için yöntemleri sağlar `T`.  
   
  Parametre `TEqual` iki öğe türü için bir eşitlik işlevi tanımlayan bir sağlar `T`. Bir sınıf benzer oluşturarak [CSimpleArrayEqualHelper](../../atl/reference/csimplearrayequalhelper-class.md), belirli bir dizi eşitlik test davranışını değiştirmek mümkündür. Örneğin, bir dizi işaretçileri ile ilgilenirken, onu olarak eşitlik işaretçileri başvuru değerleri bağlı olarak tanımlamak yararlı olabilir. Varsayılan uygulama yararlanan **operator=()**.  
   
@@ -97,7 +92,7 @@ class CSimpleArray
 ## <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#86](../../atl/codesnippet/cpp/csimplearray-class_1.cpp)]  
   
-##  <a name="add"></a>CSimpleArray::Add  
+##  <a name="add"></a>  CSimpleArray::Add  
  Diziye yeni bir öğe ekler.  
   
 ```
@@ -105,7 +100,7 @@ BOOL Add(const T& t);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *t*  
+ *T*  
  Dizi olarak eklenecek öğe.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -114,7 +109,7 @@ BOOL Add(const T& t);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#87](../../atl/codesnippet/cpp/csimplearray-class_2.cpp)]  
   
-##  <a name="csimplearray"></a>CSimpleArray::CSimpleArray  
+##  <a name="csimplearray"></a>  CSimpleArray::CSimpleArray  
  Dizi nesnesi Oluşturucusu.  
   
 ```
@@ -129,7 +124,7 @@ CSimpleArray();
 ### <a name="remarks"></a>Açıklamalar  
  Yeni ve boş bir oluşturma veri üyeleri başlatır `CSimpleArray` nesne ya da var olan bir kopyasını `CSimpleArray` nesnesi.  
   
-##  <a name="dtor"></a>CSimpleArray:: ~ CSimpleArray  
+##  <a name="dtor"></a>  CSimpleArray:: ~ CSimpleArray  
  Yok Edicisi.  
   
 ```
@@ -139,7 +134,7 @@ CSimpleArray();
 ### <a name="remarks"></a>Açıklamalar  
  Ayrılan tüm kaynakları serbest bırakır.  
   
-##  <a name="find"></a>CSimpleArray::Find  
+##  <a name="find"></a>  CSimpleArray::Find  
  Bir öğenin dizideki bulur.  
   
 ```
@@ -147,7 +142,7 @@ int Find(const T& t) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *t*  
+ *T*  
  Aranacak öğe.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -156,7 +151,7 @@ int Find(const T& t) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#88](../../atl/codesnippet/cpp/csimplearray-class_3.cpp)]  
   
-##  <a name="getdata"></a>CSimpleArray::GetData  
+##  <a name="getdata"></a>  CSimpleArray::GetData  
  Dizideki depolanan veriler için bir işaretçi döndürür.  
   
 ```
@@ -166,7 +161,7 @@ T* GetData() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Dizideki verileri için bir işaretçi döndürür.  
   
-##  <a name="getsize"></a>CSimpleArray::GetSize  
+##  <a name="getsize"></a>  CSimpleArray::GetSize  
  Dizide saklanan öğe sayısını döndürür.  
   
 ```
@@ -176,7 +171,7 @@ int GetSize() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Dizide saklanan öğe sayısını döndürür.  
   
-##  <a name="operator_at"></a>CSimpleArray::operator\[\]  
+##  <a name="operator_at"></a>  CSimpleArray::operator \[\]  
  Bir öğenin diziden alır.  
   
 ```
@@ -193,7 +188,7 @@ T& operator[](int nindex);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#89](../../atl/codesnippet/cpp/csimplearray-class_4.cpp)]  
   
-##  <a name="operator_eq"></a>CSimpleArray::operator =  
+##  <a name="operator_eq"></a>  CSimpleArray::operator =  
  Atama işleci.  
   
 ```
@@ -215,7 +210,7 @@ CSimpleArray<T, TEqual>
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#90](../../atl/codesnippet/cpp/csimplearray-class_5.cpp)]  
   
-##  <a name="remove"></a>CSimpleArray::Remove  
+##  <a name="remove"></a>  CSimpleArray::Remove  
  Belirli bir öğenin array öğesinden kaldırır.  
   
 ```
@@ -223,7 +218,7 @@ BOOL Remove(const T& t);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *t*  
+ *T*  
  Array öğesinden kaldırılacak öğe.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -232,7 +227,7 @@ BOOL Remove(const T& t);
 ### <a name="remarks"></a>Açıklamalar  
  Bir öğe kaldırıldığında, dizideki kalan öğelerin boş alanı dolduracak şekilde numaralandırılır.  
   
-##  <a name="removeall"></a>CSimpleArray::RemoveAll  
+##  <a name="removeall"></a>  CSimpleArray::RemoveAll  
  Tüm öğeleri array öğesinden kaldırır.  
   
 ```
@@ -242,7 +237,7 @@ void RemoveAll();
 ### <a name="remarks"></a>Açıklamalar  
  Şu anda dizisinde depolanan tüm öğeleri kaldırır.  
   
-##  <a name="removeat"></a>CSimpleArray::RemoveAt  
+##  <a name="removeat"></a>  CSimpleArray::RemoveAt  
  Belirtilen öğe array öğesinden kaldırır.  
   
 ```
@@ -259,7 +254,7 @@ BOOL RemoveAtint nIndex);
 ### <a name="remarks"></a>Açıklamalar  
  Bir öğe kaldırıldığında, dizideki kalan öğelerin boş alanı dolduracak şekilde numaralandırılır.  
   
-##  <a name="setatindex"></a>CSimpleArray::SetAtIndex  
+##  <a name="setatindex"></a>  CSimpleArray::SetAtIndex  
  Belirtilen öğe dizideki ayarlayın.  
   
 ```
@@ -272,7 +267,7 @@ BOOL SetAtIndex(
  `nIndex`  
  Değiştirilecek öğenin dizini.  
   
- *t*  
+ *T*  
  Belirtilen öğe atanacak değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

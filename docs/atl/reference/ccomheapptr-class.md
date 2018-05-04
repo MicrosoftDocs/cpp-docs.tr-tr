@@ -1,12 +1,9 @@
 ---
-title: "CComHeapPtr sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComHeapPtr sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CComHeapPtr
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - CComHeapPtr class
 ms.assetid: bd08b53d-da2b-43ab-a79c-e7c8dbbc5994
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8619c050ecc356e1445991b625da00c04f462848
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1937bb96cabfd1a42650e2a27fd04c11aa648f2b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ccomheapptr-class"></a>CComHeapPtr sınıfı
 Yığın işaretçileri yönetmek için bir akıllı işaretçi sınıfı.  
@@ -52,7 +47,7 @@ class CComHeapPtr : public CHeapPtr<T, CComAllocator>
 |[CComHeapPtr::CComHeapPtr](#ccomheapptr)|Oluşturucu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComHeapPtr`türetilen `CHeapPtr`, ancak kullanır [CComAllocator](../../atl/reference/ccomallocator-class.md) COM yordamları kullanarak bellek ayıramadı. Bkz: [CHeapPtr](../../atl/reference/cheapptr-class.md) ve [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) kullanılabilir yöntemleri için.  
+ `CComHeapPtr` türetilen `CHeapPtr`, ancak kullanır [CComAllocator](../../atl/reference/ccomallocator-class.md) COM yordamları kullanarak bellek ayıramadı. Bkz: [CHeapPtr](../../atl/reference/cheapptr-class.md) ve [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) kullanılabilir yöntemleri için.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md)  
@@ -64,7 +59,7 @@ class CComHeapPtr : public CHeapPtr<T, CComAllocator>
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
-##  <a name="ccomheapptr"></a>CComHeapPtr::CComHeapPtr  
+##  <a name="ccomheapptr"></a>  CComHeapPtr::CComHeapPtr  
  Oluşturucu.  
   
 ```

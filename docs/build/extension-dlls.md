@@ -1,13 +1,10 @@
 ---
-title: "Uzantı DLL'leri | Microsoft Docs"
-ms.custom: 
+title: Uzantı DLL'leri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - afxdll
 dev_langs:
@@ -24,17 +21,15 @@ helpviewer_keywords:
 - extension DLLs [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: f69ac3d4-e474-4b1c-87a1-6738843a135c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36a57d47d32b4526ca6d383b67ca415f705dc982
-ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.openlocfilehash: 6f60540735be44adf4305dcda77373faf8a83514
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mfc-extension-dlls"></a>MFC uzantı DLL'leri
 MFC uzantı DLL'si genellikle mevcut Microsoft Foundation Class Kitaplığı sınıflarından türetilmiş yeniden kullanılabilir sınıfları uygulayan bir DLL'dir.  
@@ -133,7 +128,7 @@ head ->   DLLHUSK.EXE   - or -   DLLHUSK.EXE
   
 -   [Paylaşılan kaynak dosyalarını kullanma ile ilgili ipuçları](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)  
   
--   [DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)  
+-   [MFC'nin DLL sürümü](../mfc/tn033-dll-version-of-mfc.md)  
   
 -   [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)  
   

@@ -1,12 +1,9 @@
 ---
-title: "IDispEventImpl sınıfı | Microsoft Docs"
-ms.custom: 
+title: IDispEventImpl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-atl
 ms.topic: reference
 f1_keywords:
 - IDispEventImpl
@@ -22,17 +19,15 @@ dev_langs:
 helpviewer_keywords:
 - IDispEventImpl class
 ms.assetid: a64b5288-35cb-4638-aad6-2d15b1c7cf7b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f052ddf0194cf28a0845ae51b9503841ca880912
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7809a61fe39a4b4b913531de29e03c3eb440c418
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="idispeventimpl-class"></a>IDispEventImpl sınıfı
 Bu sınıf uygulamaları sağlar `IDispatch` yöntemleri.  
@@ -99,9 +94,9 @@ class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
 |[IDispEventImpl::GetUserDefinedType](#getuserdefinedtype)|Kullanıcı tanımlı bir türünün temel türünü alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `IDispEventImpl`Bu arabirimdeki her yöntem/olay uygulama kodunu girmesini gerek olmadan bir olay görüntüleme arabirimi uygulayan bir yolunu sunar. `IDispEventImpl`uygulamaları sağlar `IDispatch` yöntemleri. Yalnızca işlemede ilgilenen olayları için uygulamaları sağlamanız gerekir.  
+ `IDispEventImpl` Bu arabirimdeki her yöntem/olay uygulama kodunu girmesini gerek olmadan bir olay görüntüleme arabirimi uygulayan bir yolunu sunar. `IDispEventImpl` uygulamaları sağlar `IDispatch` yöntemleri. Yalnızca işlemede ilgilenen olayları için uygulamaları sağlamanız gerekir.  
   
- `IDispEventImpl`Rota olaylar için uygun işleyiciyi işlevi sınıfınıza olay havuz eşlemesinde ile birlikte çalışır. Bu sınıf kullanmak için:  
+ `IDispEventImpl` Rota olaylar için uygun işleyiciyi işlevi sınıfınıza olay havuz eşlemesinde ile birlikte çalışır. Bu sınıf kullanmak için:  
   
 
  Ekleme bir [SINK_ENTRY](composite-control-macros.md#sink_entry) veya [SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex) ele almak istediğiniz her nesne üzerinde her olay için olay havuz eşlemesi makrosuna. Kullanırken `IDispEventImpl` bileşik denetim temel sınıf olarak çağırabilirsiniz [AtlAdviseSinkMap](connection-point-global-functions.md#atladvisesinkmap) kurmak ve tüm girişleri olay eşlemesi havuz için olay kaynağı ile bağlantıyı kesin. Diğer durumlarda ya da daha fazla denetim için [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) kaynak nesne ile temel sınıf arasında bağlantı kurmak için. Çağrı [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise) bağlantıyı kesmek için.  
@@ -109,10 +104,10 @@ class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
   
  Öğesinden türetilmelidir `IDispEventImpl` (için benzersiz bir değer kullanarak `nID`) ihtiyaç duyduğunuz olayları işlemek her nesne için. Farklı kaynak nesneyle bildiren bir kaynak nesne karşı unadvising tarafından temel sınıfı yeniden kullanabilirsiniz, ancak tek bir nesne tarafından aynı anda işlenebilir kaynak nesneleri maksimum sayısı sayısıyla sınırlıdır `IDispEventImpl` temel sınıflar.  
   
- `IDispEventImpl`aynı işlevselliği sunar [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md), sağlanan bir işaretçi olarak sahip olmak yerine bir tür kitaplığı arabirimi hakkında bilgi türü alır dışında bir [_ATL_FUNC_INFO](../../atl/reference/atl-func-info-structure.md) yapısı. Kullanım `IDispEventSimpleImpl` zaman bilgisayarınızda değil olay arabirimini açıklayan bir tür kitaplığı veya tür kitaplığını kullanma ile ilgili ek yükü önlemek istiyorsanız.  
+ `IDispEventImpl` aynı işlevselliği sunar [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md), sağlanan bir işaretçi olarak sahip olmak yerine bir tür kitaplığı arabirimi hakkında bilgi türü alır dışında bir [_ATL_FUNC_INFO](../../atl/reference/atl-func-info-structure.md) yapısı. Kullanım `IDispEventSimpleImpl` zaman bilgisayarınızda değil olay arabirimini açıklayan bir tür kitaplığı veya tür kitaplığını kullanma ile ilgili ek yükü önlemek istiyorsanız.  
   
 > [!NOTE]
-> `IDispEventImpl`ve `IDispEventSimpleImpl` kendi uygulamasını sağlamak **IUnknown::QueryInterface** her etkinleştirme `IDispEventImpl` ve `IDispEventSimpleImpl` temel hala sınıfı doğrudan erişim sağlarken ayrı bir COM kimliği olarak davranacak şekilde sınıfı Ana COM nesnesi üyeleri.  
+> `IDispEventImpl` ve `IDispEventSimpleImpl` kendi uygulamasını sağlamak **IUnknown::QueryInterface** her etkinleştirme `IDispEventImpl` ve `IDispEventSimpleImpl` temel hala sınıfı üyeleri doğrudan erişim sağlarken ayrı bir COM kimliği olarak davranacak şekilde sınıfı ana, COM nesnesi.  
   
  ActiveX olay havuzlarını yalnızca destekler dönüş türü değerleri HRESULT ya da olay işleyicisi yöntemlerden void uyarlamasını CE ATL; herhangi bir dönüş değeri desteklenmez ve davranışını tanımlanmadı.  
   
@@ -130,7 +125,7 @@ class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="getfuncinfofromid"></a>IDispEventImpl::GetFuncInfoFromId  
+##  <a name="getfuncinfofromid"></a>  IDispEventImpl::GetFuncInfoFromId  
  Belirtilen gönderme tanımlayıcısı işlevi dizini bulur.  
   
 ```
@@ -157,7 +152,7 @@ HRESULT GetFuncInfoFromId(
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
-##  <a name="getidsofnames"></a>IDispEventImpl::GetIDsOfNames  
+##  <a name="getidsofnames"></a>  IDispEventImpl::GetIDsOfNames  
  Tamsayı yapılan sonraki çağrılar kullanılabilir DISPID değerleri karşılık gelen bir dizi tek bir üyeyi ve isteğe bağlı bir bağımsız değişken adları kümesi eşlendiği [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d).  
   
 ```
@@ -172,7 +167,7 @@ STDMETHOD(GetIDsOfNames)(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) Windows SDK.  
   
-##  <a name="gettypeinfo"></a>IDispEventImpl::GetTypeInfo  
+##  <a name="gettypeinfo"></a>  IDispEventImpl::GetTypeInfo  
  Bir nesne için tür bilgilerini alır ve bu da bir arabirimin tür bilgisini almak için kullanılabilir.  
   
 ```
@@ -184,7 +179,7 @@ STDMETHOD(GetTypeInfo)(
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="gettypeinfocount"></a>IDispEventImpl::GetTypeInfoCount  
+##  <a name="gettypeinfocount"></a>  IDispEventImpl::GetTypeInfoCount  
  Bir nesnenin sağladığı tür bilgisi arabirimlerinin sayısını alır (0 ya da 1).  
   
 ```
@@ -194,7 +189,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12) Windows SDK.  
   
-##  <a name="getuserdefinedtype"></a>IDispEventImpl::GetUserDefinedType  
+##  <a name="getuserdefinedtype"></a>  IDispEventImpl::GetUserDefinedType  
  Kullanıcı tanımlı bir türünün temel türünü alır.  
   
 ```
@@ -216,14 +211,14 @@ VARTYPE GetUserDefinedType(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [ITypeInfo::GetRefTypeInfo](http://msdn.microsoft.com/en-us/61d3b31d-6591-4e55-9e82-5246a168be00).  
   
-##  <a name="idispeventimpl"></a>IDispEventImpl::IDispEventImpl  
+##  <a name="idispeventimpl"></a>  IDispEventImpl::IDispEventImpl  
  Oluşturucu. Sınıf şablonu parametrelerinin değerlerini depolayan `plibid`, `pdiid`, `wMajor`, ve `wMinor`.  
   
 ```
 IDispEventImpl();
 ```  
   
-##  <a name="tihclass"></a>IDispEventImpl::tihclass  
+##  <a name="tihclass"></a>  IDispEventImpl::tihclass  
  Bu typedef sınıfı şablon parametresi örneği olan `tihclass`.  
   
 ```
@@ -231,7 +226,7 @@ typedef tihclass _tihclass;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bir sınıftır `CComTypeInfoHolder`. `CComTypeInfoHolder`sınıf türü bilgilerini yönetir.  
+ Varsayılan olarak, bir sınıftır `CComTypeInfoHolder`. `CComTypeInfoHolder` sınıf türü bilgilerini yönetir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_ATL_FUNC_INFO yapısı](../../atl/reference/atl-func-info-structure.md)   

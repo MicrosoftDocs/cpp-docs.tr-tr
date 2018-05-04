@@ -1,29 +1,24 @@
 ---
-title: "Boş karakterler | Microsoft Docs"
-ms.custom: 
+title: Boş karakterler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - null values, appended to binary stream
 ms.assetid: bca3fc78-0347-41bd-9e3e-94d646104bad
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 775f18373c8b5d326391f619bfd8d6d39064c627
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: baddd548eddbcc46f5eb9005c54a4cc2530a6e79
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="null-characters"></a>Boş Karakterler
 **ANSI 4.9.2** ikili akışına yazılan veriler eklenecek null karakter sayısı  

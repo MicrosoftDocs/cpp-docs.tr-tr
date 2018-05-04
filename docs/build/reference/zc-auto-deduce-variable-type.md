@@ -1,10 +1,10 @@
 ---
-title: "-Zc: auto (değişken türünü) | Microsoft Docs"
-ms.custom: 
+title: '-Zc: auto (değişken türünü) | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/28/2018
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - /Zc:auto
 dev_langs:
@@ -17,14 +17,13 @@ helpviewer_keywords:
 ms.assetid: 5f5bc102-44c3-4688-bbe1-080594dcee5c
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 662095cdc1555891a543920a64cb7b31074914aa
-ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
+ms.openlocfilehash: caa64f64b75145c850c6f6393570dc3f9ba0b0d3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="zcauto-deduce-variable-type"></a>/Zc:auto (Değişken Türünü Türet)
 
@@ -32,7 +31,7 @@ ms.lasthandoff: 03/15/2018
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc:auto**[**-**]  
+> **/ZC:Auto**[**-**]  
 
 ## <a name="remarks"></a>Açıklamalar
 

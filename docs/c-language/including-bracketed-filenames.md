@@ -1,27 +1,22 @@
 ---
-title: "Köşeli parantez içindeki dosya adlarını dahil etme | Microsoft Docs"
-ms.custom: 
+title: Köşeli parantez içindeki dosya adlarını dahil etme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: 6a4e5411-c35e-48b8-90ef-b37ac324ed94
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f663de299fea33f2e104b1c70dfa1447c2840fe9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7ba45c21029a428784e1c8410dcf42295aa6350f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="including-bracketed-filenames"></a>Köşeli Parantez İçindeki Dosya Adlarını Dahil Etme
 **ANSI 3.8.2** includable kaynak dosyaları bulma yöntemi  
