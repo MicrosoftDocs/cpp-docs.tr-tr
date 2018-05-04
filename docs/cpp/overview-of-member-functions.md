@@ -1,12 +1,9 @@
 ---
-title: "Üye işlevlerine genel bakış | Microsoft Docs"
-ms.custom: 
+title: Üye işlevlerine genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - inline functions [C++], treating member functions as
 - member functions [C++], definition in class declaration
 ms.assetid: 9f77a438-500e-40bb-a6c6-544678f3f4c8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6389197119135e7e800a4f5ec142bf42b1ef6d39
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b34be19c5fe67c087579e3d1cf0643d5afd71dc5
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="overview-of-member-functions"></a>Üye İşlevlerine Genel Bakış
 Statik ya da statik olmayan üye işlevleri. Statik üye işlevleri Hayır örtük sahip olduğundan statik üye işlevleri davranışını diğer üye işlevleri farklı **bu** bağımsız değişkeni. Statik olmayan üye işlevleri sahip bir **bu** işaretçi. Üye işlevleri, statik ya da statik olmayan, veya bir sınıf bildiriminin dışında tanımlanabilir.  

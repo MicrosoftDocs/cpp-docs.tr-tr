@@ -2,11 +2,8 @@
 title: İç içe geçmiş sınıf bildirimleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - declaring classes [C++]
 - declarations, nested classes
 ms.assetid: c02e471d-b7f9-41b8-8ef6-2323f006dbd5
-caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 247be4e212efbe2b8061deed200a8350b87fc7a7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2fe55a1f67ff3c6ac06f1d6431e6e1a2fb8052d8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="nested-class-declarations"></a>İç İçe Geçmiş Sınıf Bildirimleri
 Bir sınıf başka bir sınıf kapsamında bildirilebilir. Bu tür bir sınıf bir "sınıfı iç içe." olarak adlandırılır İç içe geçmiş sınıflar kapsayan sınıfı kapsamında olduğu kabul edilir ve bu kapsam içinde kullanılabilir. İç içe bir sınıf hemen kapsayan kapsamı dışında kapsamdan başvurmak için bir tam ad kullanmanız gerekir.  
@@ -67,7 +62,7 @@ int main()
 }  
 ```  
   
- `BufferedIO::BufferedInput`ve `BufferedIO::BufferedOutput` içinde bildirilen `BufferedIO`. Bu sınıf adları sınıf kapsamı dışında görünmez `BufferedIO`. Ancak, bir nesne türü `BufferedIO` türdeki tüm nesnelerin içermiyor `BufferedInput` veya `BufferedOutput`.  
+ `BufferedIO::BufferedInput` ve `BufferedIO::BufferedOutput` içinde bildirilen `BufferedIO`. Bu sınıf adları sınıf kapsamı dışında görünmez `BufferedIO`. Ancak, bir nesne türü `BufferedIO` türdeki tüm nesnelerin içermiyor `BufferedInput` veya `BufferedOutput`.  
   
  İç içe geçmiş sınıflar doğrudan adları, tür adları statik üyeleri ve numaralandırmalar kapsayan sınıfından yalnızca adlarını kullanabilirsiniz. Diğer sınıf üyelerinin adlarını kullanmak için işaretçileri, başvuru veya nesne adlarını kullanmanız gerekir.  
   

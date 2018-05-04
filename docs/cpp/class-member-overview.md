@@ -1,12 +1,9 @@
 ---
-title: "Sınıf üyelerine genel bakış | Microsoft Docs"
-ms.custom: 
+title: Sınıf üyelerine genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - class members [C++], types of
 - class members
 ms.assetid: 8802cfa9-705d-4f37-acde-245d6838010c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d9a8d274f162e64dc20c5f257d09c84e9871d0b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fd280255afe98aa5ca512c63bb00623891eafc4f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="class-member-overview"></a>Sınıf Üyelerine Genel bakış
 Sınıfta veya yapı onun üyeleri oluşur. Bir sınıf yaptığı işi kendi üye işlevleri tarafından gerçekleştirilir. Sakladığı durumu veri üyeleri depolanır. Başlatma üyelerinin oluşturucular ve temizleme işini bellek boşaltma gibi yapılır ve kaynakları serbest bırakma Yıkıcılar tarafından yapılır. C ++ 11 ve sonraki sürümlerinde, veri üyeleri noktasında bildirimi başlatılması kullanabilirsiniz ve genellikle gerekir.  

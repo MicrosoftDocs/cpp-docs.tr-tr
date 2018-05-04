@@ -1,12 +1,9 @@
 ---
-title: "exit işlevi | Microsoft Docs"
-ms.custom: 
+title: exit işlevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - Exit
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - exit function
 ms.assetid: 26ce439f-81e2-431c-9ff8-a09a96f32127
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee6a34a70465904e6725f42e68eb4a00c03a1661
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: 5767f6b08b4adcd3d1a8d367c6286a746eeecec3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="exit-function"></a>exit İşlevi
 **Çıkmak** işlevi, standart INCLUDE dosyasında bildirilen \<stdlib.h >, C++ programı sonlandırır.  

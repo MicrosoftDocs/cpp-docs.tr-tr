@@ -1,27 +1,22 @@
 ---
-title: "Nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma | Microsoft Docs'
+ms.custom: how-to
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fdabfad3d1b4ae6ee07a8d9e660ab31cbdc1df03
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1a2aad184a1f388df6f7a6941aa9e5f302f35b12
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-and-use-sharedptr-instances"></a>Nasıl yapılır: shared_ptr Örnekleri Oluşturma ve Kullanma
 `shared_ptr` Türü bir işaretçidir akıllı C++ Standart kitaplığında senaryoları, birden fazla sahibi gerekebilir bellekte nesnesi ömrünü yönetmek için tasarlanmıştır. Başlatır sonra bir `shared_ptr` kopyalayın, işlev bağımsız değişkenleri değere göre geçirmek ve diğer atamak `shared_ptr` örnekleri. Tüm örnekleri aynı nesneye'nın üzerine gelin, yeni bir başvuru sayısı paylaşım erişimi azaltır ve bir "artırır denetim bloğu" `shared_ptr` eklenir, kapsam dışı geçip geçmeyeceğini veya sıfırlanır. Başvuru sayısı sıfır ulaştığında, denetim bloğu bellek kaynağı ve kendisini siler.  
@@ -31,7 +26,7 @@ ms.lasthandoff: 12/21/2017
  [![Paylaşılan işaretçi](../cpp/media/shared_ptr.png "shared_ptr")](assetId:///9785ad08-31d8-411a-86a9-fb9cd9684c27)  
   
 ## <a name="example"></a>Örnek  
- Mümkün olduğunda kullanın [make_shared](../standard-library/memory-functions.md#make_shared) işlevi oluşturmak için bir `shared_ptr` bellek kaynağı ilk kez oluşturulduğunda. `make_shared`özel durum-güvenlidir. Aynı çağrı denetim bloğu ve kaynak için bellek ayırmak için kullanır ve böylece yapım ek yükünü azaltır. Kullanmıyorsanız, `make_shared`, kendisine geçirmeden önce nesneyi oluşturmak için bir açık yeni ifade kullanmak zorunda sonra `shared_ptr` Oluşturucusu. Aşağıdaki örnek, bildirme ve başlatmak için çeşitli yollar gösterir bir `shared_ptr` birlikte yeni bir nesne.  
+ Mümkün olduğunda kullanın [make_shared](../standard-library/memory-functions.md#make_shared) işlevi oluşturmak için bir `shared_ptr` bellek kaynağı ilk kez oluşturulduğunda. `make_shared` özel durum-güvenlidir. Aynı çağrı denetim bloğu ve kaynak için bellek ayırmak için kullanır ve böylece yapım ek yükünü azaltır. Kullanmıyorsanız, `make_shared`, kendisine geçirmeden önce nesneyi oluşturmak için bir açık yeni ifade kullanmak zorunda sonra `shared_ptr` Oluşturucusu. Aşağıdaki örnek, bildirme ve başlatmak için çeşitli yollar gösterir bir `shared_ptr` birlikte yeni bir nesne.  
   
  [!code-cpp[stl_smart_pointers#1](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_1.cpp)]  
   
@@ -41,7 +36,7 @@ ms.lasthandoff: 12/21/2017
  [!code-cpp[stl_smart_pointers#2](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_2.cpp)]  
   
 ## <a name="example"></a>Örnek  
- `shared_ptr`öğeleri kopyalama algoritmaları kullanırken C++ Standart Kitaplığı kapsayıcılarında yararlıdır. Öğeleri kayabilir bir `shared_ptr`ve diğer kapsayıcılarını temelindeki bellek ihtiyacınız olduğu sürece geçerli ve artık olduğunu anlama ile kopyalayın. Aşağıdaki örnekte nasıl kullanılacağını gösterir `replace_copy_if` algoritmasına `shared_ptr` vektör örnekleri.  
+ `shared_ptr` öğeleri kopyalama algoritmaları kullanırken C++ Standart Kitaplığı kapsayıcılarında yararlıdır. Öğeleri kayabilir bir `shared_ptr`ve diğer kapsayıcılarını temelindeki bellek ihtiyacınız olduğu sürece geçerli ve artık olduğunu anlama ile kopyalayın. Aşağıdaki örnekte nasıl kullanılacağını gösterir `replace_copy_if` algoritmasına `shared_ptr` vektör örnekleri.  
   
  [!code-cpp[stl_smart_pointers#4](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_3.cpp)]  
   

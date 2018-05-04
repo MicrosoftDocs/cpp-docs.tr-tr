@@ -1,12 +1,9 @@
 ---
-title: "İşleç aşırı yüklemesi | Microsoft Docs"
-ms.custom: 
+title: İşleç aşırı yüklemesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - operator_cpp
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - operators [C++], overloading
 - operator overloading
 ms.assetid: 56ad4c4f-dd0c-45e0-adaa-08fe98cb1f8e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 617236d30f3c4473f6c7785db97789105d6cd565
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7c7e80167c2022d5871d52879036dc9fef0d29f2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="operator-overloading"></a>İşleç Aşırı Yüklemesi
 `operator` Anahtar sözcüğü bildirir ne belirten bir işlev `operator-symbol` bir sınıfın örneklerini uygulandığında anlamına gelir. Bu durum, birden fazla anlamı işleci verir veya "overloads". Bir işlecinin işlenenleri türlerini inceleniyor tarafından farklı anlamları arasındaki derleyici ayırır.  
@@ -108,7 +103,7 @@ type operator operator-symbol ( parameter-list )
   
 -   [Atama](../cpp/assignment.md)  
   
--   [İşlev çağrısı](../cpp/function-call-cpp.md)  
+-   [İşlev Çağrısı](../cpp/function-call-cpp.md)  
   
 -   [Alt Simge Oluşturma](../cpp/subscripting.md)  
   
@@ -116,7 +111,7 @@ type operator operator-symbol ( parameter-list )
   
 -   [Artırma ve azaltma](../cpp/increment-and-decrement-operator-overloading-cpp.md).  
   
--   [Kullanıcı tanımlı tür dönüşümleri](../cpp/user-defined-type-conversions-cpp.md)  
+-   [Kullanıcı Tanımlı Tür Dönüşümleri](../cpp/user-defined-type-conversions-cpp.md)  
   
  Aşağıdaki tabloda gösterilen işleçleri aşırı yüklenemez. Önişlemci sembolleri tabloyu içeren `#` ve `##`.  
   
@@ -187,7 +182,7 @@ int main() {
   
 4.  [Atama](../cpp/assignment.md)  
   
-5.  [İşlev çağrısı](../cpp/function-call-cpp.md)  
+5.  [İşlev Çağrısı](../cpp/function-call-cpp.md)  
   
 6.  [Alt Simge Oluşturma](../cpp/subscripting.md)  
   

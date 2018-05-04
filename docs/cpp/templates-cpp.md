@@ -1,12 +1,9 @@
 ---
-title: "Şablonları (C++) | Microsoft Docs"
-ms.custom: 
+title: Şablonları (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - template_cpp
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - templates, C++
 - templates [C++]
 ms.assetid: 90fcc14a-2092-47af-9d2e-dba26d25b872
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 935bee8447ad0d49ae965fb92538d2e260ec68ef
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f5aa532246054ff0a0b67b9560e40ae704a40fc8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="templates-c"></a>Şablonlar (C++)
 C++'ta genel programlama için temel şablonlarıdır. Kesin türü belirtilmiş bir dil C++ açıkça Programcı tarafından bildirilen ya da derleyici tarafından anlaşılan belirli bir türün tüm değişkenler gerektirir. Ancak, çok sayıda veri yapılarını ve algoritmaları üzerinde işletim ne tür aynı arayın. Şablonları etkinleştirme, bir sınıf ya da işlevin operations tanımlamak ve kullanıcının hangi somut belirtmesine izin vermek için bu işlemler türleri üzerinde çalışması gerekir.  
@@ -42,7 +37,7 @@ T minimum(const T& lhs, const T& rhs)
 }  
 ```  
   
- Yukarıdaki kod tek tür parametresi ile genel bir işlev için bir şablon açıklar `T`, dönüş değeri ve çağrı (lhs ve rhs) parametreleri olan tüm bu tür. Tür parametresi gibi ancak kuralı tek pın'de büyük harf tarafından en sık kullanılan adı verebilirsiniz. `T`bir şablon parametredir; `typename` anahtar sözcüğü bu parametrenin türü için bir yer tutucu olduğunu söyler. İşlevi çağrıldığında, derleyici, her örneği değiştirecek `T` kullanıcı tarafından belirtilen veya derleyici tarafından anlaşılan somut tür bağımsız değişkeni ile. Derleyici bir sınıf oluşturur veya bir şablondan işlevi olarak adlandırılır işlem *şablonu örneklemesi*;   `minimum<int>` bir şablonun oluşturulmadan `minimum<T>`.  
+ Yukarıdaki kod tek tür parametresi ile genel bir işlev için bir şablon açıklar `T`, dönüş değeri ve çağrı (lhs ve rhs) parametreleri olan tüm bu tür. Tür parametresi gibi ancak kuralı tek pın'de büyük harf tarafından en sık kullanılan adı verebilirsiniz. `T` bir şablon parametredir; `typename` anahtar sözcüğü bu parametrenin türü için bir yer tutucu olduğunu söyler. İşlevi çağrıldığında, derleyici, her örneği değiştirecek `T` kullanıcı tarafından belirtilen veya derleyici tarafından anlaşılan somut tür bağımsız değişkeni ile. Derleyici bir sınıf oluşturur veya bir şablondan işlevi olarak adlandırılır işlem *şablonu örneklemesi*;   `minimum<int>` bir şablonun oluşturulmadan `minimum<T>`.  
   
  Bir kullanıcı için tamsayı özelleştirilmiş şablon örneği başka bir yerde bildirebilir Get_a() ve get_b() int döndüren işlevler olduğunu varsayın:  
   
@@ -70,7 +65,7 @@ int i = minimum(a, b);
   
  Derleyici türü kesintisi'teki işlev şablonlarının nasıl gerçekleştireceğini kuralları sıradan işlevleri için kurallar dayanır. Daha fazla bilgi için bkz: [aşırı yükleme çözümü, işlev şablonu çağrılarının](../cpp/overload-resolution-of-function-template-calls.md).  
   
-## <a id="type_parameters"></a>Tür parametreleri  
+## <a id="type_parameters"></a> Tür parametreleri  
  İçinde `minimum` şablonu yukarıdaki not tür parametresi `T` const ve başvuru niteleyicileri burada eklenen işlev çağrısı parametreleri kullanılır kadar herhangi bir şekilde yetkili değil.  
   
  Tür parametreleri sayısına pratik sınır yoktur. Birden çok parametre, virgüllerle ayırın:  
@@ -153,7 +148,7 @@ MyArray<MyClass*, 10> arr;
   
  Diğer tür işaretçiler ve başvuruları dahil olmak üzere değer türü olmayan parametreler olarak geçirilebilir. Örneğin, bir işlev veya işlev nesnesi başka bir işlem şablonu kodu içinde özelleştirmek için bir işaretçi geçirebilirsiniz.  
   
-## <a id="template_parameters"></a>Şablon parametreleri olarak şablonları  
+## <a id="template_parameters"></a> Şablon parametreleri olarak şablonları  
  Bir şablon bir şablon parametresi olabilir. Bu örnekte, iki şablon parametreleri MyClass2 sahiptir: typename parametresi `T` ve şablon parametresi `Arr`:  
   
 ```cpp  

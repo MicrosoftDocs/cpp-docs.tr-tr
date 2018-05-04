@@ -1,12 +1,9 @@
 ---
 title: deneyin-except deyimi | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - _abnormal_termination_cpp
@@ -34,21 +31,19 @@ helpviewer_keywords:
 - _exception_info keyword [C++]
 - _abnormal_termination keyword [C++]
 ms.assetid: 30d60071-ea49-4bfb-a8e6-7a420de66381
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24be4e7fd6b4dc95d9964e69943a94ecad947a47
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: 3bd1e8139af64539974ad942f60a19e31b14d7f3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="try-except-statement"></a>try-except Deyimi
 
-**Microsoft Specific**  
+**Microsoft özel**  
 **Deneyin-dışında** ifadesi bir Microsoft uzantısı c ve destekleyen C++ dilleri yapılandırılmış özel durum işleme.  
 
 ## <a name="syntax"></a>Sözdizimi  
@@ -57,7 +52,7 @@ ms.lasthandoff: 01/25/2018
 > {  
 >    Korumalı kod  
 > }  
-> **__except** ( *expression* )  
+> **__except** ( *ifade* )  
 > {  
 >    özel durum işleyici kodu  
 > }  
@@ -105,7 +100,7 @@ A `goto` deyimi de dışında korumalı bölüm atlayın ve gibi onu performans�
 
 Yapılandırılmış özel durum işleme ile kullanılabilecek iki iç işlevler sağlar **deneyin-dışında** deyimi: `GetExceptionCode` ve `GetExceptionInformation`.
 
-`GetExceptionCode`özel durum kodunu (32 bit tamsayı) döndürür.
+`GetExceptionCode` özel durum kodunu (32 bit tamsayı) döndürür.
 
 İç işlev `GetExceptionInformation` özel durum hakkında ek bilgi içeren bir yapı için bir işaretçi döndürür. Bu işaretçiyle, donanım özel durumu sırasında var olan makine durumuna erişebilirsiniz. Yapı aşağıdaki gibidir:
 
@@ -124,11 +119,11 @@ Kullanabileceğiniz `GetExceptionCode` özel durum işleyici içinde. Ancak, kul
 
 Bu yapı için bazı diğer adlar excpt.h tanımlar:
 
-`GetExceptionCode`eşdeğerdir`_exception_code`
+`GetExceptionCode` eşdeğerdir `_exception_code`
 
- `GetExceptionInformation`eşdeğerdir`_exception_info`
+ `GetExceptionInformation` eşdeğerdir `_exception_info`
 
- `AbnormalTermination`eşdeğerdir`_abnormal_termination`
+ `AbnormalTermination` eşdeğerdir `_abnormal_termination`
   
 ## <a name="example"></a>Örnek
 

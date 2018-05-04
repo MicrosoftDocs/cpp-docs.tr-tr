@@ -1,13 +1,10 @@
 ---
-title: "Çalışma zamanı türü bilgileri | Microsoft Docs"
-ms.custom: 
+title: Çalışma zamanı türü bilgileri | Microsoft Docs
+ms.custom: index-page
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: 'index-page '
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - type information, run-time type checking
 - run-time checks, type checking
 ms.assetid: becbd0e5-0439-4c61-854f-8a74f7160c54
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b0b0124a69a0110bda94055964fbcdb54e5a754
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b23188b3dd49afb619576fa9cdcece69feca94f3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="run-time-type-information"></a>Çalışma Zamanı Türü Bilgileri
 Çalışma zamanı türü bilgileri (RTTI) program yürütülmesi sırasında belirlenmesi için bir nesne türü izin veren bir mekanizmadır. Sınıf kitaplıkları birçok satıcıları bu işlevselliği kendilerini uygulama çünkü RTTI C++ dili eklendi. Bu kitaplıklar arasındaki uyumsuzluklar neden oldu. Bu nedenle, belirgin hale çalışma zamanı türü bilgileri dil düzeyinde gerektiği için destek.  

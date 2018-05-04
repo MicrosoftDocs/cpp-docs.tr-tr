@@ -2,11 +2,8 @@
 title: İşlevler (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/25/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - default arguments
 - declarators, functions
 ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
-caps.latest.revision: 19
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46ed90500ce0b31ce3dbd2348bc8d871ba13911f
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: 720147992540b53c51e731db361cd9946a7a5313
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="functions-c"></a>İşlevler [C++]
 
@@ -310,35 +305,6 @@ template<typename F, typename Tuple = tuple<T...>,
 }
 ```
 
-&LT;&LT;&LT;&LT;&LT;&LT;&LT; HEAD
-4. Dönüş değerini kullanarak ek olarak, "değerlerini pass-by-reference kullanabilir, böylece işlevi değiştirmek veya çağıranın sağlar nesneleri değerlerini başlatma parametreleri herhangi bir sayıda tanımlayarak dönebilirsiniz". Daha fazla bilgi için bkz: [başvuru türü işlev bağımsız değişkenleri](reference-type-function-arguments.md).  
-  
-## <a name="function-pointers"></a>İşlev işaretçileri  
- C++, C dil aynı şekilde işlev işaretçileri destekler. Ancak daha fazla tür kullanımı uyumlu alternatifi genellikle bir işlev nesnesi kullanmaktır.  
-  
- Bir işlev işaretçisi türü döndüren bir işlev bildiriliyorsa, işlev işaretçisi türü için bir diğer ad bildirmek üzere `typedef` kullanılması önerilir.  Örneğin  
-  
-```  
-typedef int (*fp)(int);  
-fp myFunction(char* s); // function returning function pointer  
-```  
-  
- Bu yapılmazsa, işlev bildirimi için doğru sözdizimi, tanımlayıcı (yukarıdaki örnekte `fp`) işlev adı ve bağımsız değişken listesiyle değiştirilerek aşağıdaki gibi işlev işaretçisine yönelik bildirimci sözdiziminden çıkarılır:  
-  
-```  
-int (*myFunction(char* s))(int);  
-```  
-  
- Yukarıdaki bildirim, yukarıdaki örneği kullanan bildirime eşdeğerdir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlev aşırı yüklemesi](../cpp/function-overloading.md)   
- [Değişken bağımsız değişken listeleriyle İşlevler](../cpp/functions-with-variable-argument-lists-cpp.md)   
- [Açıkça varsayılan haline getirilen ve Silinen İşlevler](../cpp/explicitly-defaulted-and-deleted-functions.md)   
- [İşlevlerde bağımsız değişkene bağlı ad (Koenig) arama](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)   
- [Varsayılan bağımsız değişkenler](../cpp/default-arguments.md)   
- [Satır içi işlevler](../cpp/inline-functions-cpp.md)
-=======
 ## <a name="returning-multiple-values-from-a-function"></a>Bir işlevden birden çok değer döndürüyor
 
 Bir işlevden birden fazla değer döndürmek için çeşitli yolları vardır:
@@ -475,4 +441,3 @@ Yukarıdaki bildirim, yukarıdaki örneği kullanan bildirime eşdeğerdir.
 - [İşlevlerde Bağımsız Değişkene Bağlı Ad (Koenig) Arama](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)
 - [Varsayılan Bağımsız Değişkenler](../cpp/default-arguments.md)
 - [Satır İçi İşlevler](../cpp/inline-functions-cpp.md)
->>>>>>> master

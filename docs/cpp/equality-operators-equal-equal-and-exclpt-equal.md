@@ -1,12 +1,9 @@
 ---
-title: "Eşitlik işleçleri: == ve! = | Microsoft Docs"
-ms.custom: 
+title: 'Eşitlik işleçleri: == ve! = | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - not_eq
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - not_eq operator
 - equal to operator
 ms.assetid: ba4e9659-2392-4fb4-be5a-910a2a6df45a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2be0d4cf45bbedc5e799b07962c05f845d5f3efe
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 16e4a85f31777581df1a138de6d50b1057253e5b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="equality-operators--and-"></a>Eşitlik İşleçleri: == ve !=
 ## <a name="syntax"></a>Sözdizimi  

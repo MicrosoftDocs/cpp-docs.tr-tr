@@ -2,11 +2,8 @@
 title: Birden çok taban sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - multiple inheritance, class declaration
 - multiple base classes [C++]
 ms.assetid: a30c69fe-401c-4a87-96a0-e0da70c7c740
-caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b765fabe8b83169353650286d05d02301dcb4807
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d48c373f0753a787aa8e59c7ead5a8f94bfc7846
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="multiple-base-classes"></a>Birden Çok Taban Sınıfı
 Bölümünde açıklandığı gibi [birden çok devralma](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca), bir sınıfın birden fazla temel sınıfından türetilmiş olmalıdır. (Burada türetilmiş sınıfları birden fazla temel sınıfından) birden çok devralmayı modelinde, temel sınıfları kullanılarak belirtilir *ana listesi* dilbilgisi öğesi. Örneğin, sınıf bildirimi `CollectionOfBook`, türetilmiş `Collection` ve `Book`, belirtilebilir:  
@@ -69,7 +64,7 @@ Sanal Öğle Yemeği Çizgi Grafiği
   
  Şekilde, `Queue` hem `CashierQueue` hem de `LunchQueue` için temel sınıftır. Ancak, iki sınıf da `LunchCashierQueue` oluşturacak şekilde birleştirildiğinde, aşağıdaki sorun ortaya çıkar: yeni sınıf biri `Queue` öğesinden, diğeri `CashierQueue` öğesinden alınan `LunchQueue` türünde iki alt nesne içerir. Aşağıdaki şekilde, kavramsal bellek düzeni (gerçek bellek düzeni iyileştirilebilir) gösterilmektedir.  
   
- ![Benzetimli Yemeği &#45; çizgi nesnesi](../cpp/media/vc38xp2.gif "vc38XP2")  
+ ![Benzetimli Yemeği&#45;çizgi nesnesi](../cpp/media/vc38xp2.gif "vc38XP2")  
 Sanal Öğle Yemeği Çizgi Grafiği Nesnesi  
   
  `Queue` nesnesinde iki `LunchCashierQueue` alt nesnesi olduğuna dikkat edin. Aşağıdaki kod, `Queue` öğesinin sanal bir temel sınıf olduğunu bildirir:  
@@ -85,7 +80,7 @@ class LunchCashierQueue : public LunchQueue, public CashierQueue {};
   
  `virtual` anahtar sözcüğü, `Queue` alt nesnesinin yalnızca bir kopyasının dahil edilmesini sağlar (bkz. aşağıdaki şekil).  
   
- ![Benzetimli Yemeği &#45; çizgi nesnesi, sanal taban sınıflar](../cpp/media/vc38xp3.gif "vc38XP3")  
+ ![Benzetimli Yemeği&#45;çizgi nesnesi, sanal taban sınıflar](../cpp/media/vc38xp3.gif "vc38XP3")  
 Sanal Temel Sınıflarla Sanal Öğle Yemeği Çizgi Grafiği Nesnesi  
   
  Bir sınıfta, belirli bir türden sanal bileşen ve sanal olmayan bileşen olabilir. Bu, aşağıdaki şekilde gösterilen koşullarda ortaya çıkar.  

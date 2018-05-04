@@ -1,12 +1,9 @@
 ---
 title: char, wchar_t, char16_t, char32_t | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/14/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - char_cpp
@@ -16,17 +13,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 6b33e9f5-455b-4e49-8f12-a150cbfe2e5b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a87eff9801b2754909159ef4d5e2c24c079ee8f1
-ms.sourcegitcommit: 23a0ddd271bbcc31631283542981ff5f1693d27f
+ms.openlocfilehash: 2dc38eb9742459139747578a8227bdfaee8bb8a2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="char-wchart-char16t-char32t"></a>char, wchar_t, char16_t, char32_t
 Türleri **char**, **wchar_t**, **char16_t** ve **char32_t** alfasayısal karakterler temsil eden yerleşik türleri olarak alfasayısal olmayan karakterlerin ve yazdırılamayan karakterler.

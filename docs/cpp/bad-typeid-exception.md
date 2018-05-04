@@ -1,12 +1,9 @@
 ---
-title: "bad_typeid özel durumu | Microsoft Docs"
-ms.custom: 
+title: bad_typeid özel durumu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - bad_typeid
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - bad_typeid exception
 - exceptions [C++], bad_typeid
 ms.assetid: 5963ed58-4ede-4597-957d-f7bbd06299c2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9409bd83132877f73b58e12cb9503c41a3dc3cf9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0771f5e93ba473c9ae1101996e8276bec4cd432a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="badtypeid-exception"></a>bad_typeid Özel Durumu
 `bad_typeid` Özel durum tarafından [typeid işleci](../cpp/typeid-operator.md) zaman işleneni `typeid` NULL işaretçi.  

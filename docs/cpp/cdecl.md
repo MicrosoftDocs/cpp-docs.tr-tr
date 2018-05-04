@@ -1,12 +1,9 @@
 ---
 title: __cdecl | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - __cdecl_cpp
@@ -15,22 +12,20 @@ dev_langs:
 helpviewer_keywords:
 - __cdecl keyword [C++]
 ms.assetid: 1ff1d03e-fb4e-4562-8be1-74f1ad6427f1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d73de8b2a158c09ebd61306683f6fdc1ad0f514e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d07c34c11037132b9f9695ec889bb681c7f43951
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cdecl"></a>__cdecl
 **Microsoft özel**  
   
- `__cdecl`Varsayılan C ve C++ programları için çağırma kuralı. Çağıran tarafından yığın Temizlenen çünkü bunu yapabilirsiniz **vararg** işlevleri. `__cdecl` Çağırma oluşturur daha büyük yürütülebilir dosyalar [__stdcall](../cpp/stdcall.md), çünkü yığın temizleme kodu dahil etmek için her işlev çağrısı gerektirir. Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.  
+ `__cdecl` Varsayılan C ve C++ programları için çağırma kuralı. Çağıran tarafından yığın Temizlenen çünkü bunu yapabilirsiniz **vararg** işlevleri. `__cdecl` Çağırma oluşturur daha büyük yürütülebilir dosyalar [__stdcall](../cpp/stdcall.md), çünkü yığın temizleme kodu dahil etmek için her işlev çağrısı gerektirir. Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.  
   
 |Öğe|Uygulama|  
 |-------------|--------------------|  

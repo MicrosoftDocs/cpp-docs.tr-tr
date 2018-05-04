@@ -1,13 +1,10 @@
 ---
 title: C++ Dil Başvurusu | Microsoft Docs
-ms.custom: ''
+ms.custom: index-page
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
-ms.topic: 'index-page '
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - language reference, Visual C++
 - Visual C++, language reference
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
-caps.latest.revision: 14
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 852f4522ecf32643611f6bbd4d86028e883bb6eb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 25315121d3004601914c5b8872b496e57acec99f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-language-reference"></a>C++ Dil Başvurusu
 Bu başvuru, C++ programlama dilini Microsoft Visual C++ içinde uygulandığı şekliyle açıklar. Kuruluş dayanır *C++ başvuru elle açıklama* Mine Ellis ve çalışan Bjarne Stroustrup tarafından ve ANSI/ISO C++ uluslararası standart (ISO/IEC FDIS 14882). Microsoft'a özgü C++ dili uygulama özellikleri dahildir.  
@@ -44,7 +39,7 @@ Modern C++ programlama uygulamalarını genel bakış için bkz: [Hoş Geldiniz 
  [Sözcük Temelli Kurallar](../cpp/lexical-conventions.md)  
  Bir C++ programının sözcük temelli öğeleri: belirteçler, açıklamalar, işleçler, anahtar sözcükler, noktalama işaretleri, sabit değerler. Ayrıca dosya çevirisi, işleç önceliği/ilişkilendirilebilirliği.  
   
- [Temel kavramlar](../cpp/basic-concepts-cpp.md)  
+ [Temel Kavramlar](../cpp/basic-concepts-cpp.md)  
  Kapsam, bağlantı, program başlatma ve sonlandırma, depolama sınıfları ve türleri.  
   
  [Standart Dönüştürmeler](../cpp/standard-conversions.md)  
@@ -62,7 +57,7 @@ Modern C++ programlama uygulamalarını genel bakış için bkz: [Hoş Geldiniz 
  [Deyimler](../cpp/statements-cpp.md)  
  İfade, null, bileşik, seçim, yineleme, atlama ve bildirim deyimleri.  
   
- [Bildirimler ve tanımlar](declarations-and-definitions-cpp.md)  
+ [Bildirimler ve Tanımlar](declarations-and-definitions-cpp.md)  
  Depolama sınıfı belirleyicileri, işlev tanımları, başlatmalar, numaralandırmalar, sınıf, yapı ve birleşim bildirimleri ve typedef bildirimleri. Ayrıca, satır içi işlevler, sabit anahtar sözcük, ad alanları.  
   
  [Bildirimciler](http://msdn.microsoft.com/en-us/8a7b9b51-92bd-4ac0-b3fe-0c4abe771838)  
@@ -83,8 +78,8 @@ Modern C++ programlama uygulamalarını genel bakış için bkz: [Hoş Geldiniz 
  [Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)  
  C++ özel durum işleme, yapılandırılmış özel durum işleme (SEH), özel durum işleme deyimleri yazılırken kullanılan anahtar sözcükler.  
   
- [Onaylama ve kullanıcının sağladığı iletiler](../cpp/assertion-and-user-supplied-messages-cpp.md)  
- `#error`yönerge `static_assert` anahtar sözcüğü, `assert` makrosu.  
+ [Onaylama işlemi ve Kullanıcı Tarafından Sağlanan İletiler](../cpp/assertion-and-user-supplied-messages-cpp.md)  
+ `#error` yönerge `static_assert` anahtar sözcüğü, `assert` makrosu.  
   
  [Şablonlar](../cpp/templates-cpp.md)  
  Şablon belirtimleri, işlev şablonları, sınıf şablonları, tür adı anahtar sözcüğü, şablonlara karşı makrolar, şablonlar ve akıllı işaretçiler.  

@@ -2,24 +2,19 @@
 title: Kaynak kodu kuruluş (C++ Şablonları) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: 50569c5d-0219-4966-9bcf-a8689074ad1d
-caps.latest.revision: 5
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 7b543ed2334640b9f7bac7250b1dc055504d7edf
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 05a5b0423b79e817e16aeb0d39f1d0dcf856c1ba
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="source-code-organization-c-templates"></a>Kaynak kodu kuruluş (C++ Şablonları)
 

@@ -1,12 +1,9 @@
 ---
-title: "Kapsam kuralları özeti | Microsoft Docs"
-ms.custom: 
+title: Kapsam kuralları özeti | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - names [C++], class
 - scope [C++], class names
 ms.assetid: 47e26482-0111-466f-b857-598c15d05105
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c530a586ca2b8b70cfdc967c354738e93435f20c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9d901103f36493e74f73b2edb18faa1188e704ef
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="summary-of-scope-rules"></a>Kapsam Kuralları Özeti
 Bir ad kullanımı (aşırı yükün belirlendiği noktaya kadar) kendi kapsamı içinde benzersiz olmalıdır. Bir işlev adı gösterir işlevi sayısı ve türü parametrelerinin göre benzersiz olması gerekir. Ad anlaşılır, kalırsa [üye erişimi](../cpp/member-access-control-cpp.md) kuralları uygulanır.  
@@ -47,7 +42,7 @@ Bir ad kullanımı (aşırı yükün belirlendiği noktaya kadar) kendi kapsamı
 ## <a name="qualified-names"></a>Nitelikli adlar  
  İkili kapsam çözümleme işleciyle kullanılan adlara (`::`) "nitelenmiş adlar" denir. İkili kapsam çözümleme işlecinden sonra belirtilen ad, işlecin solunda belirtilen sınıfın üyesi veya temel sınıfının üyesi olmalıdır.  
   
- Üye seçim işleci sonra belirtilen adları (**.** veya  **->** ) işlecinin sol veya onun temel sınıfları üyeleri belirtilen nesnenin sınıf türü üyeleri olmalıdır. Üye seçim işlecinin sağ tarafta belirtilen adları (**->**) nesneler de olabilir sol tarafında sağlanan başka bir sınıf türü  **->**  bir sınıf nesnesi ve sınıfı bir aşırı yüklenmiş üye seçimi işleç tanımlar (**->**) başka bir sınıf türü için bir işaretçi için değerlendirir. (Bu sağlama daha ayrıntılı olarak ele alınmıştır [sınıf üye erişimi](../cpp/member-access.md).)  
+ Üye seçim işleci sonra belirtilen adları (**.** veya **->**) işlecinin sol veya onun temel sınıfları üyeleri belirtilen nesnenin sınıf türü üyeleri olmalıdır. Üye seçim işlecinin sağ tarafta belirtilen adları (**->**) nesneler de olabilir sol tarafında sağlanan başka bir sınıf türü **->** bir sınıf nesnesi ve sınıfı bir aşırı yüklenmiş üye seçimi işleç tanımlar (**->**) başka bir sınıf türü için bir işaretçi için değerlendirir. (Bu sağlama daha ayrıntılı olarak ele alınmıştır [sınıf üye erişimi](../cpp/member-access.md).)  
   
  Derleyici, aşağıdaki sırayı kullanarak ve ad bulunduğunda durarak adları arar:  
   

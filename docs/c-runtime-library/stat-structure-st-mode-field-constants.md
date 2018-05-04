@@ -1,13 +1,10 @@
 ---
-title: "_stat yapı st_mode alanı sabitleri | Microsoft Docs"
-ms.custom: 
+title: _stat yapı st_mode alanı sabitleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - S_IFCHR
 - S_IFDIR
@@ -44,17 +41,15 @@ helpviewer_keywords:
 - _S_IREAD constant
 - _S_IFCHR constant
 ms.assetid: fd462004-7563-4766-8443-30b0a86174b6
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d5502a563c674818626627a5161e7051682f258
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f603757706bfdeeaaefe5b6d33cd94bb2624c389
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stat-structure-stmode-field-constants"></a>_stat Yapı st_mode Alanı Sabitleri
 ## <a name="syntax"></a>Sözdizimi  

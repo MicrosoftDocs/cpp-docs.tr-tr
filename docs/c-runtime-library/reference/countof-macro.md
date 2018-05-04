@@ -28,14 +28,13 @@ helpviewer_keywords:
 ms.assetid: 86198767-f7e5-4beb-898d-3cbbf60350a3
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9e5dc49b59ac534d871d6b31efdeec0afef5c8d
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: f30df64b045e2af6181d343a4eafb962d22eaa05
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="countof-macro"></a>_countof Makrosu
 

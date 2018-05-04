@@ -2,11 +2,8 @@
 title: Abort kullanma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Abort
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - abort function
 ms.assetid: 3ba39b78-ef74-4a8d-8dee-2d62442de174
-caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88f7d2319fd238fbc7bf573d304245ca74696720
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7231339ba4884445d7ad6b0161c6cff793c6db8a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-abort"></a>abort Kullanma
 Çağırma [abort](../c-runtime-library/reference/abort.md) işlevi hemen sonlandırma neden olur. Başlatılan genel statik nesneler için normal yıkım işlemini atlar. `atexit` işlevi kullanarak belirtilen herhangi bir özel işlemi de atlar.  

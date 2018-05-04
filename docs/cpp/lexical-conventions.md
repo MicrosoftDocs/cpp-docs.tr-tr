@@ -1,36 +1,31 @@
 ---
 title: Sözcük kuralları | Microsoft Docs
-ms.custom: ''
+ms.custom: index-page
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
-ms.topic: 'index-page '
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - lexical conventions
 - conventions, lexical
 ms.assetid: 03f9efff-bb95-45ef-9157-0a3fac809ccf
-caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 894baf715113ebdf8dbead6600f9c906784fbd37
-ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
+ms.openlocfilehash: 79588c700201a8b59053af3e0007216bfc8f4aec
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lexical-conventions"></a>Sözcük Kuralları
 Bu bölüm bir C++ programının temel öğelerini tanıtır. Eksiksiz programlar oluşturmak için kullanılan deyimleri, tanımları, bildirimleri ve diğer öğeleri oluşturmak için "sözcük temelli öğeler" veya "belirteçler" olarak adlandırılan bu öğeleri kullanırsınız. Bu bölümde aşağıdaki sözcük temelli öğeler ele alınmıştır:
 
 - [Dosya Çevirisine Genel Bakış](overview-of-file-translation.md)
-- [Karakter kümeleri](../cpp/character-sets.md)
+- [Karakter Kümeleri](../cpp/character-sets.md)
 
 - [Belirteçler](../cpp/tokens-cpp.md)
 

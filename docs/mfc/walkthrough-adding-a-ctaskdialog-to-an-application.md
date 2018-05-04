@@ -1,12 +1,12 @@
 ---
-title: "İzlenecek yol: bir uygulamaya bir CTaskDialog ekleme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: bir uygulamaya bir CTaskDialog ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -14,34 +14,34 @@ helpviewer_keywords:
 - CTaskDialog, adding
 - walkthroughs [MFC], dialogs
 ms.assetid: 3a62abb8-2d86-4bec-bdb8-5784d5f9a9f8
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3e9e75cb705bb4497cfefa350c2b34eca75cf2d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
-ms.translationtype: MT
+ms.openlocfilehash: 7b0d820b45b85b5dc20e82cb647c05f839e7ab41
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="walkthrough-adding-a-ctaskdialog-to-an-application"></a>İzlenecek yol: Bir Uygulamaya CTaskDialog Ekleme
 Bu kılavuzda tanıtır [CTaskDialog sınıfı](../mfc/reference/ctaskdialog-class.md) ve uygulamanız için bir tane ekleyin gösterilmektedir.  
   
- `CTaskDialog` Windows ileti kutusunda değiştiren bir görev iletişim kutusu [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)]. `CTaskDialog` Özgün ileti kutusu artırır ve işlevsellik ekler. Windows ileti kutusu yine de desteklenen [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
+ `CTaskDialog` Windows ileti kutusu Windows Vista veya sonraki sürümlerde değiştiren bir görev iletişim kutusudur. `CTaskDialog` Özgün ileti kutusu artırır ve işlevsellik ekler. Windows ileti kutusu Visual Studio'da hala desteklenmektedir.  
   
 > [!NOTE]
->  Windows'un öncesi [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)] desteklemeyen `CTaskDialog`. Uygulamanızı Windows'un önceki bir sürümünü çalıştıran bir kullanıcıyla bir ileti göstermek istiyorsanız bir alternatif iletişim kutusu seçeneğini program gerekir. Statik yöntemini kullanabilirsiniz [CTaskDialog::IsSupported](../mfc/reference/ctaskdialog-class.md#issupported) çalışma zamanında bir kullanıcının bilgisayarına görüntüleyebilirsiniz olup olmadığını belirlemek için bir `CTaskDialog`. Ayrıca, `CTaskDialog` uygulamanızı Unicode kitaplıkla yapılandırıldığında kullanılabilir.  
+> Windows Vista'dan önceki Windows sürümleri değil Destek `CTaskDialog`. Uygulamanızı Windows'un önceki bir sürümünü çalıştıran bir kullanıcıyla bir ileti göstermek istiyorsanız bir alternatif iletişim kutusu seçeneğini program gerekir. Statik yöntemini kullanabilirsiniz [CTaskDialog::IsSupported](../mfc/reference/ctaskdialog-class.md#issupported) çalışma zamanında bir kullanıcının bilgisayarına görüntüleyebilirsiniz olup olmadığını belirlemek için bir `CTaskDialog`. Ayrıca, `CTaskDialog` uygulamanızı Unicode kitaplıkla yapılandırıldığında kullanılabilir.  
   
  `CTaskDialog` Toplamak ve bilgilerini görüntülemek için çeşitli isteğe bağlı öğeleri destekler. Örneğin, bir `CTaskDialog` komut bağlantıları, özelleştirilmiş düğmeleri, özelleştirilmiş simgeleri ve altbilgi görüntüleyebilirsiniz. `CTaskDialog` Ayrıca hangi isteğe bağlı öğeleri belirlemek için görev iletişim kutusu durumunu sorgulamak için seçilen kullanıcıya sağlayan çeşitli yöntemler vardır.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
   
-- [!INCLUDE[vs_dev10_long](../build/includes/vs_dev10_long_md.md)]  
+- Visual Studio 2010 veya sonrası  
   
-- [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)]  
+- Windows Vista veya sonraki sürümü  
   
 ## <a name="replacing-a-windows-message-box-with-a-ctaskdialog"></a>Windows ileti kutusu CTaskDialog ile değiştirme  
  Aşağıdaki yordam en temel kullanımını gösteren `CTaskDialog`, olduğu Windows ileti kutusu değiştirmek için. Bu örnek ayrıca görev iletişim kutusuyla ilişkili simgeyi değiştirir. Simgeyi değiştirme yapar `CTaskDialog` Windows ileti kutusu için aynı görünür.  

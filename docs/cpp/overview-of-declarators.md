@@ -1,29 +1,24 @@
 ---
-title: "Bildiricilere genel bakış | Microsoft Docs"
-ms.custom: 
+title: Bildiricilere genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - declarators, about declarators
 ms.assetid: 0f2e2312-80bd-4154-8345-718bd9ed2173
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18a3f12ac87f0165c74aaa487913f679f1a9941e
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 81ba4ff8e50d646a6a3918c2104756c4378a1aea
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="overview-of-declarators"></a>Bildiricilere Genel Bakış
 Bildirimciler, nesne veya işlev adlarını belirten bir bildirimin bileşenleridir. Bildirimciler, adlandırılmış nesnelerin bir nesne, işaretçi, başvuru veya dizi olduğunu da belirtir.  Bildirimciler temel türü belirtmese de, işaretçiler, başvurular ve diziler gibi türetilmiş türleri belirtmek için temel türdeki tür bilgilerini değiştirir.  İşlevlere uygulanan bildirimci, bir işlevin dönüş türünü nesne, işaretçi veya başvuru olarak belirtmek için tür tanımlayıcısı ile birlikte çalışır. (Ele tanımlayıcıları [bildirimler ve tanımlar](declarations-and-definitions-cpp.md), türü ve depolama sınıfı gibi özellikler taşır. Bu bölüm hem de ele alınan değiştiricileri [Microsoft'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md), Bildirimciler değiştirin.) Aşağıdaki şekilde, tam bir `MyFunction` bildirimi gösterilmekte ve bildirimin bileşenleri çağrılmaktadır.  
@@ -31,7 +26,7 @@ Bildirimciler, nesne veya işlev adlarını belirten bir bildirimin bileşenleri
  ![Değiştiriciler, tanımlayıcıları ve Bildirimciler](../cpp/media/vc38qy1.gif "vc38QY1")  
 Tanımlayıcılar, Değiştiriciler ve Bildirimciler  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Microsoft'un genişletilmiş çoğu anahtar sözcüğü, türetilmiş türler oluşturmak için değiştiriciler olarak kullanılabilir; tanımlayıcı veya bildirimci değildirler. (Bkz [Microsoft'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md).)  
   
@@ -57,7 +52,7 @@ const char *pch, ch;
   
  **Bildirimciler işaretçileri, başvuruları ve diziler**  
   
- Adın önüne yerleştirilen işaretçi işleçleri, nesnenin bir işaretçi veya başvuru olmasına neden olur.   **\***  İşleci bildiren bir işaretçi; adıyla  **&**  işleci, bir başvuru olarak bildirir.  
+ Adın önüne yerleştirilen işaretçi işleçleri, nesnenin bir işaretçi veya başvuru olmasına neden olur.  **\*** İşleci bildiren bir işaretçi; adıyla **&** işleci, bir başvuru olarak bildirir.  
   
 ```  
 int *i; // declarator is *i  

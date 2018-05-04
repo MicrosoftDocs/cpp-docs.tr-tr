@@ -2,11 +2,8 @@
 title: Yükselt | Microsoft Docs
 ms.custom: ''
 ms.date: 1/02/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - raise
@@ -34,14 +31,13 @@ helpviewer_keywords:
 - programs [C++], sending signals to executing programs
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7b4c6bc2668089c4e6b813a03246e0690d1b4af
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: e3a41f88bc6883af1db4bbde8729a3638ded64a7
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="raise"></a>tetikle
 

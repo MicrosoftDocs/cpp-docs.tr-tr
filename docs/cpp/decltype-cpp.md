@@ -2,11 +2,8 @@
 title: decltype (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - decltype_cpp
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - operators [C++], type of an expression
 - operators [C++], deduce expression type
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
-caps.latest.revision: 14
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee3c83512929e4592a5ee75b954bc6c19f52f448
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ac9fe7ebf3d3e406854308e56d38e37567acc07a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="decltype--c"></a>decltype (C++)
 `decltype` tür belirticisi belirtilen ifade türünü ortaya çıkarır. `decltype` İle birlikte tür tanımlayıcısı, [anahtar sözcüğü otomatik](../cpp/auto-cpp.md), öncelikle Şablon Kütüphanesi yazma geliştiriciler için yararlıdır. Kullanım `auto` ve `decltype` şablon işlevi, return bildirmek için şablon değişkenlerinin türlerinde türüne bağlıdır. Veya başka bir işleve yapılan bir çağrıyı saran ve ardından sarılı işlevin dönüş türünü döndüren bir şablon işlevi bildirmek için `auto` ve `decltype` kullanın.  
@@ -49,7 +44,7 @@ decltype( expression )
  `expression` parametresinin türü.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `decltype` türü belirticisi, Visual C++ 2010 veya sonraki sürümlerinde desteklenir ve yerel veya yönetilen kod ile kullanılabilir. `decltype(auto)`(c ++ 14) Visual Studio 2015 ve sonraki sürümlerinde desteklenir.  
+ `decltype` türü belirticisi, Visual C++ 2010 veya sonraki sürümlerinde desteklenir ve yerel veya yönetilen kod ile kullanılabilir. `decltype(auto)` (c ++ 14) Visual Studio 2015 ve sonraki sürümlerinde desteklenir.  
   
  Derleyici, `expression` parametresinin türünü belirlemek için aşağıdaki kuralları kullanır.  
   
@@ -91,7 +86,7 @@ UNKNOWN func(T&& t, U&& u){ return t + u; };
   
  Aşağıdaki prototip, alternatif bir işlev bildiriminin sözdizimini göstermektedir. Unutmayın `const` ve `volatile` niteleyicileri ve `throw` [özel durum belirtimi](../cpp/exception-specifications-throw-cpp.md) isteğe bağlıdır. *Function_body* yer tutucu işlevi yaptığı belirten bir bileşik deyim temsil eder. En iyi yöntem, kodlama olarak *ifade* yer tutucu `decltype` deyimi tarafından belirtilen değerle eşleşmelidir `return` deyimi, varsa, *function_body*.  
   
- **Otomatik** *işlev_adı* **(** *parametreleri*<sub>kabul</sub> **)**  **const**<sub>kabul</sub> **volatile**<sub>kabul</sub>  **->**  **decltype (** *ifade* **)** **throw**<sub>kabul</sub> **{** *function_body* **};**  
+ **Otomatik** *işlev_adı* **(** *parametreleri*<sub>kabul</sub> **)**  **const**<sub>kabul</sub> **volatile**<sub>kabul</sub> **->** **decltype (** *ifade* **)** **throw**<sub>kabul</sub> **{** *function_body* **};**  
   
  Aşağıdaki kod örneğinde, `myFunc` şablon işlevinin sonradan belirtilen dönüş türü, `t` ve `u` şablon bağımsız değişkenlerinin türleri tarafından belirlenir. Alıştırma kodlama en iyi, kod örneği de rvalue başvuru kullanır ve `forward` destek işlevi şablonu *kusursuz iletme*. Daha fazla bilgi için bkz: [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
@@ -213,5 +208,5 @@ static_assert(test2, "PASS2");
 ## <a name="requirements"></a>Gereksinimler  
  Visual C++ 2010 veya sonraki sürümleri.  
   
- `decltype(auto)`Visual Studio 2015 veya üstünü gerektirir.  
+ `decltype(auto)` Visual Studio 2015 veya üstünü gerektirir.  
   

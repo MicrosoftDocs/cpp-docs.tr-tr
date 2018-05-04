@@ -1,12 +1,9 @@
 ---
-title: "Ek işleçler: + ve - | Microsoft Docs"
-ms.custom: 
+title: 'Ek işleçler: + ve - | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - +
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - arithmetic operators [C++], additive operators
 - '- operator [C++], additive operators in C++'
 ms.assetid: d4afafe7-e201-4c69-a649-37f17756e784
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1096565843cfe150530a825254e9ad6c24b5ec8
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: 5f265bf915d9ba0c984b85235bd502d6ea0a5a77
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="additive-operators--and--"></a>Ek İşleçler: + and -
 ## <a name="syntax"></a>Sözdizimi  
@@ -58,9 +53,9 @@ expression - expression
   
 |Tür|Açıklama|  
 |----------|-------------|  
-|*aritmetik*|Kayan ve tam sayı türleri topluca "aritmetik" türleri olarak adlandırılır.|  
-|*tam sayı*|Türleri char ve tüm boyutları (uzun ve kısa) ve numaralandırmalar int "tümleşik" türleridir.|  
-|*scalar*|Skaler işleçler aritmetik veya işaretçi türündeki işlenenler ' dir.|  
+|*Aritmetik*|Kayan ve tam sayı türleri topluca "aritmetik" türleri olarak adlandırılır.|  
+|*Tam sayıdan kaymaya*|Türleri char ve tüm boyutları (uzun ve kısa) ve numaralandırmalar int "tümleşik" türleridir.|  
+|*skaler*|Skaler işleçler aritmetik veya işaretçi türündeki işlenenler ' dir.|  
   
  Bu işleçlere yasal birleşimleridir:  
   
@@ -68,11 +63,11 @@ expression - expression
   
  *skaler* + *tam sayı*  
   
- *integral* + *scalar*  
+ *tam sayı* + *skaler*  
   
  *aritmetik* - *aritmetik*  
   
- *scalar* - *scalar*  
+ *skaler* - *skaler*  
   
  Toplama ve çıkarma eşdeğer işlemleri olmadığına dikkat edin.  
   
@@ -121,7 +116,7 @@ for( int i = 0; i < 10; ++i )
 ## <a name="pointer-subtraction"></a>İşaretçi çıkarması  
  Her iki işlenen de işaretçiyse, çıkarma işleminin sonucu işlenenler arasındaki farktır (dizi öğelerinde). Çıkarma ifade türü ptrdiff_t imzalı tam sayı sonucunu verir (standart INCLUDE dosyasında tanımlanan \<stddef.h >).  
   
- İşlenenlerden biri, ikinci işlenen olduğu takdirde integral türünde olabilir. Çıkarma işleminin sonucu, orijinal işaretçiyle aynı türdendir. Çıkarma değerini gösteren bir işaretçidir (*n* - *ı*) th dizi öğesi, burada  *n*  öğesi işaret ediyor özgün işaretçi ve *ı* ikinci işlenen tam sayı değeri.  
+ İşlenenlerden biri, ikinci işlenen olduğu takdirde integral türünde olabilir. Çıkarma işleminin sonucu, orijinal işaretçiyle aynı türdendir. Çıkarma değerini gösteren bir işaretçidir (*n* - *ı*) th dizi öğesi, burada *n* öğesi için veözgünişaretçisiişaretediyor*ı* ikinci işlenen tam sayı değeri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)   

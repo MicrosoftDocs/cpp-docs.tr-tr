@@ -2,11 +2,8 @@
 title: spawnl | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - spawnl
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - spawnl function
 ms.assetid: ae762de9-e761-4fb7-bb63-b7904ed09a98
-caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 231ac7e67274e53218dfe925c5a0b555a89a2fa9
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: cb7f568b79a1865900dd824f881c5ea3d34a9225
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spawnl"></a>spawnl
 

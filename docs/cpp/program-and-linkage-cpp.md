@@ -2,26 +2,21 @@
 title: Program ve bağlantı (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 04/09/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: a6493ba0-24e2-4c89-956e-9da1dea660cb
-caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab24c552a150e5a14037d727c8d3428eb6bbf809
-ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
+ms.openlocfilehash: 4154f0951b46b1c8badc0224845d2881cc8ad573
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="program-and-linkage--c"></a>Program ve bağlantı (C++)
 

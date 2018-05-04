@@ -2,11 +2,8 @@
 title: try-finally deyimi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - __try
@@ -27,17 +24,15 @@ helpviewer_keywords:
 - __leave keyword [C++], try-finally statement
 - structured exception handling [C++], try-finally
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
-caps.latest.revision: 14
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c57676cace8451de266d30d4c146e3ae0c3cb1b5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6a6457e92b7f4b57c7c181705e369e8582fb54f9
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="try-finally-statement"></a>try-finally Deyimi
 **Microsoft özel**  
@@ -55,9 +50,9 @@ __finally {
   
 ## <a name="grammar"></a>Dilbilgisi  
  *try-finally-ifadesi*:  
- `__try`*bileşik deyim*  
+ `__try` *Bileşik deyim*  
   
- `__finally`*bileşik deyim*  
+ `__finally` *Bileşik deyim*  
   
  `try-finally` Kod bloğunu yürütülmesi kesintiye uğradığında oluşan temizleme kodu yürütme güvence altına almak hedef uygulamaları sağlayan bir Microsoft uzantısı C ve C++ dilleri için bir ifadedir. Bellek ayırmayı kaldırma, dosyaları kapatma ve dosya işleyicilerini serbest gibi görevler temizleme oluşur. `try-finally` Burada bir denetimi yapılır neden olabilecek bir hata için erken çeşitli yerlerde sahip yordamları yordamından dönmek için deyimi özellikle yararlı.  
   
@@ -80,7 +75,7 @@ __finally {
   
  Örneğin, bir dizi işlev çağrısı aşağıdaki resimde gösterildiği gibi D, çalışması için bağlantılar işlevi A varsayalım. Her işlevi bir sonlandırma işleyicisi sahiptir. Bir özel durum işlevi D oluşturulur ve A işlenmiş, Sistem yığını unwinds gibi sonlandırma işleyicileri bu sırada çağrılır: D, C b  
   
- ![Sonlandırma &#45;sırasını; işleyici yürütme](../cpp/media/vc38cx1.gif "vc38CX1")  
+ ![Sonlandırma sırasını&#45;işleyici yürütme](../cpp/media/vc38cx1.gif "vc38CX1")  
 Sonlandırma işleyicisi yürütme sırasını  
   
 > [!NOTE]

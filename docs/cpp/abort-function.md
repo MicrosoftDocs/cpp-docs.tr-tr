@@ -1,29 +1,24 @@
 ---
-title: "abort işlevi | Microsoft Docs"
-ms.custom: 
+title: abort işlevi | Microsoft Docs
+ms.custom: ''
 ms.date: 12/01/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - abort function
 ms.assetid: 3352bcc4-1a8a-4e1f-8dcc-fe30f6b50f2d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e73c2549e5ce29823376b378b9dc565e2d883ffa
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: 4acfbb5a0790dec6f7b5770832cc6b09f69a28d7
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="abort-function"></a>abort İşlevi
 

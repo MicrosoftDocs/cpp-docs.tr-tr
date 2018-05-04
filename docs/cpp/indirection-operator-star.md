@@ -1,12 +1,9 @@
 ---
-title: "Yönlendirme işleci: * | Microsoft Docs"
-ms.custom: 
+title: 'Yönlendirme işleci: * | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - operators [C++], indirection
 - indirection operator [C++], syntax
 ms.assetid: c50309e1-6c02-4184-9fcb-2e13c1f4ac03
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c87c279ae1f45899dfa4525c3bdc65bfa5acc2c
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: d63fbe4042bb86f1ac7810302eeaa1b7978422b8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="indirection-operator-"></a>Yönlendirme İşleci: *
 ## <a name="syntax"></a>Sözdizimi  
@@ -37,7 +32,7 @@ ms.lasthandoff: 03/16/2018
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Birli indirection işleci (**\***) bir; işaretçiye diğer bir deyişle, bir l-değeri bir işaretçi değerine dönüştürür. Yöneltme işlecinin işleneni bir işaretçi bir türü olmalıdır. İşaretçi türünün türetildiği türü yöneltme ifade sonucudur. Kullanımını  **\***  bu bağlamda işlecidir kendi çarpım bir ikili işleç anlamı farklıdır.  
+ Birli indirection işleci (**\***) bir; işaretçiye diğer bir deyişle, bir l-değeri bir işaretçi değerine dönüştürür. Yöneltme işlecinin işleneni bir işaretçi bir türü olmalıdır. İşaretçi türünün türetildiği türü yöneltme ifade sonucudur. Kullanımını **\*** bu bağlamda işlecidir kendi çarpım bir ikili işleç anlamı farklıdır.  
   
  İşlenen bir işleve işaret ediyorsa, sonuç bir işlev göstergesidir. Bir depolama konumuna işaret ediyorsa, sonuç depolama konumunu gösteren l değeridir.  
   

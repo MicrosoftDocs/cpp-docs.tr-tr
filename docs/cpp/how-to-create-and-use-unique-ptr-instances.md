@@ -1,36 +1,31 @@
 ---
-title: "Nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma | Microsoft Docs'
+ms.custom: how-to
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 9a373030-e587-452f-b9a5-c5f9d58b7673
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae4610e7b26eecd6ef444f3c7c73e95af365ca71
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 82cf4fb475f9c89a4a088cac9d5ee0e1231d436e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-and-use-uniqueptr-instances"></a>Nasıl yapılır: unique_ptr Örnekleri Oluşturma ve Kullanma
 A [unique_ptr](../standard-library/unique-ptr-class.md) işaretçisini paylaşmaz. Bunu başka bir kopyalanamaz `unique_ptr`değere göre bir işleve veya oluşturulabilecek kopyalarının gerektiren tüm C++ Standart Kitaplığı algoritması kullanılır. A `unique_ptr` yalnızca taşınabilir. Bu bellek kaynağı sahipliğini başka aktarılır anlamına gelir `unique_ptr` ve özgün `unique_ptr` artık sahibi. Birden fazla sahiplik program mantığına karmaşıklık kattığından nesneyi tek sahiple kısıtlamanızı öneririz. Bu nedenle, akıllı bir işaretçi bir düz C++ nesne için ihtiyacınız olduğunda kullanın `unique_ptr`, ve oluşturduğunuzda bir `unique_ptr`, kullanın [make_unique](../standard-library/memory-functions.md#make_unique) yardımcı işlevi.  
   
  Aşağıdaki diyagramda iki arasında sahipliğini aktarma gösterilmektedir `unique_ptr` örnekleri.  
   
- ![Benzersiz bir &#95; sahipliğini taşıma ptr](../cpp/media/unique_ptr.png "unique_ptr")  
+ ![Benzersiz bir sahipliğini taşıma&#95;ptr](../cpp/media/unique_ptr.png "unique_ptr")  
   
- `unique_ptr`tanımlanan `<memory>` C++ Standart Kitaplığı'nda başlığı. Tam olduğundan ham işaretçi olarak verimlidir ve C++ Standart Kitaplığı kapsayıcıları kullanılabilir. Eklenmesi `unique_ptr` C++ Standart Kitaplığı kapsayıcıları örneklerine verimli olduğundan taşıma oluşturucusunun `unique_ptr` bir kopyalama işlemi gereksinimini ortadan kaldırır.  
+ `unique_ptr` tanımlanan `<memory>` C++ Standart Kitaplığı'nda başlığı. Tam olduğundan ham işaretçi olarak verimlidir ve C++ Standart Kitaplığı kapsayıcıları kullanılabilir. Eklenmesi `unique_ptr` C++ Standart Kitaplığı kapsayıcıları örneklerine verimli olduğundan taşıma oluşturucusunun `unique_ptr` bir kopyalama işlemi gereksinimini ortadan kaldırır.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte nasıl oluşturulacağını gösterir `unique_ptr` örnekleri ve işlevleri arasında geçirin.  

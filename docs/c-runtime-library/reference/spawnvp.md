@@ -2,11 +2,8 @@
 title: spawnvp | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - spawnvp
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - spawnvp function
 ms.assetid: 25d3896d-1934-4453-ae8b-4fb5480a2657
-caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 177e1388dd7390b862aa8537915f1ae0d0ae1502
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 969a097382f258b336389cf0a06f04eca2cd7f0d
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spawnvp"></a>spawnvp
 

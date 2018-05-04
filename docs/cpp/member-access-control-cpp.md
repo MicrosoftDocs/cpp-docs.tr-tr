@@ -2,11 +2,8 @@
 title: Üye erişim denetimi (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - member access [C++]
 - member-access control [C++]
 ms.assetid: 2d596bca-56ad-4277-94e1-ce3db45fa14a
-caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88fe05ab0c0e6a1c433bf2b6007fb63c18fb5850
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c1f36b23ce76c4f4e639e824116f7f80063a8748
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="member-access-control-c"></a>Üye Erişim Denetimi (C++)
 Erişim denetimleri ayırmak etkinleştirme [ortak](../cpp/public-cpp.md) öğesinden bir sınıf arabiriminin [özel](../cpp/private-cpp.md) uygulama ayrıntılarını ve [korumalı](../cpp/protected-cpp.md) yalnızca üyelerin kullanmak tarafından türetilen sınıflar. Erişim belirteci sonraki erişim belirticisi karşılaşılanaa kadar sonra bildirilen tüm üyeleri için geçerlidir.  
@@ -109,7 +104,7 @@ int main()
 }  
 ```  
   
- İçinde `DerivedClass1`, üye fonksiyonu `PublicFunc` ortak bir üyesidir ve `ProtectedFunc` korumalı üye olduğundan `BaseClass` ortak bir taban sınıf. `PrivateFunc`özel olduğu `BaseClass`, ve tüm türetilmiş sınıflara erişilemez.  
+ İçinde `DerivedClass1`, üye fonksiyonu `PublicFunc` ortak bir üyesidir ve `ProtectedFunc` korumalı üye olduğundan `BaseClass` ortak bir taban sınıf. `PrivateFunc` özel olduğu `BaseClass`, ve tüm türetilmiş sınıflara erişilemez.  
   
  İçinde `DerivedClass2`, işlevleri `PublicFunc` ve `ProtectedFunc` özel üyeler için kabul edilen `BaseClass` özel bir temel sınıftır. Yeniden `PrivateFunc` özel olduğu `BaseClass`, ve tüm türetilmiş sınıflara erişilemez.  
   

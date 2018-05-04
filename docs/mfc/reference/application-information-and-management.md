@@ -1,12 +1,12 @@
 ---
-title: "Uygulama bilgileri ve Yönetimi | Microsoft Docs"
-ms.custom: 
+title: Uygulama bilgileri ve Yönetimi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vc.mfc.macros
@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-caps.latest.revision: 
+caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3007e2fbae5bb0cee4472b6488be8ceb614bc1f6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
-ms.translationtype: MT
+ms.openlocfilehash: 54265814b4b60b08bed780a39ecadcace3242202
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
 Bir uygulama yazdığınızda, tek bir oluşturma [CWinApp](../../mfc/reference/cwinapp-class.md)-türetilmiş bir nesne içermelidir. Bazen bu nesneden dışında hakkında bilgi edinmek isteyebilirsiniz `CWinApp`-türetilmiş bir nesne içermelidir. Veya diğer genel "mananger'a" nesnelere erişimi gerekebilir.
@@ -67,7 +67,7 @@ Bir uygulama yazdığınızda, tek bir oluşturma [CWinApp](../../mfc/reference/
   
 
   
-##  <a name="afxbeginthread"></a>AfxBeginThread  
+##  <a name="afxbeginthread"></a>  AfxBeginThread  
  Yeni bir iş parçacığı oluşturmak için bu işlevini çağırın.  
   
 ```   
@@ -121,7 +121,7 @@ CWinThread* AfxBeginThread(
 ### <a name="remarks"></a>Açıklamalar  
  İlk biçimini `AfxBeginThread` bir çalışan iş parçacığı oluşturur. İkinci form, bir kullanıcı arabirimi iş parçacığı veya bir çalışan iş parçacığı olarak hizmet iş parçacığı oluşturur.  
   
- `AfxBeginThread`Yeni bir `CWinThread` nesnesi, çağrıları kendi [CreateThread](../../mfc/reference/cwinthread-class.md#createthread) iş parçacığının başlatmak için işlev ve iş parçacığına bir işaretçi döndürür. Denetimleri prosedür boyunca tüm nesneleri düzgün herhangi bir kısmını oluşturma başarısız olması kaldırıldığından emin olmak için yapılır. İş parçacığı sona erdirmek için arama [AfxEndThread](#afxendthread) gelen iş parçacığı ya da çalışan iş parçacığı denetleme işlevinin dönüş içinde.  
+ `AfxBeginThread` Yeni bir `CWinThread` nesnesi, çağrıları kendi [CreateThread](../../mfc/reference/cwinthread-class.md#createthread) iş parçacığının başlatmak için işlev ve iş parçacığına bir işaretçi döndürür. Denetimleri prosedür boyunca tüm nesneleri düzgün herhangi bir kısmını oluşturma başarısız olması kaldırıldığından emin olmak için yapılır. İş parçacığı sona erdirmek için arama [AfxEndThread](#afxendthread) gelen iş parçacığı ya da çalışan iş parçacığı denetleme işlevinin dönüş içinde.  
   
  Çoklu iş parçacığı kullanımı uygulama tarafından etkinleştirilmiş olması gerekir; Aksi takdirde, bu işlev başarısız olur. Çoklu iş parçacığı kullanımı etkinleştirme hakkında daha fazla bilgi için bkz [/MD, / MT, /LD (çalışma zamanı kitaplığını kullan)](../../build/reference/md-mt-ld-use-run-time-library.md) altında *Visual C++ Derleyici Seçenekleri*.  
   
@@ -133,7 +133,7 @@ CWinThread* AfxBeginThread(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
 
-## <a name="afxcontextmenumanager"></a>AfxContextMenuManager
+## <a name="afxcontextmenumanager"></a> AfxContextMenuManager
 İşaretçi genel [bağlam menüsü Yöneticisi](ccontextmenumanager-class.md).  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -147,7 +147,7 @@ CContextMenuManager* afxContextMenuManager;
  [CContextMenuManager Sınıfı](ccontextmenumanager-class.md)
 
   
-##  <a name="afxendthread"></a>AfxEndThread  
+##  <a name="afxendthread"></a>  AfxEndThread  
  Şu anda yürütülen iş parçacığı sonlandırmak için bu işlevini çağırın.  
   
 ```   
@@ -188,7 +188,7 @@ HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
  Kaynak içeren modülü için bir tanıtıcı.  
    
 ### <a name="remarks"></a>Açıklamalar  
- `AfxFindResourceHandle`belirli kaynak bulur ve kaynak içeren modülü için bir işleyici döner. Kaynak herhangi MFC uzantı DLL'si yüklü olabilir. `AfxFindResourceHandle`kaynağın hangisinin sahip söyler.  
+ `AfxFindResourceHandle` belirli kaynak bulur ve kaynak içeren modülü için bir işleyici döner. Kaynak herhangi MFC uzantı DLL'si yüklü olabilir. `AfxFindResourceHandle` kaynağın hangisinin sahip söyler.  
   
  Modüller, bu sırada aranır:  
   
@@ -208,7 +208,7 @@ HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](mfc-macros-and-globals.md)   
   
-##  <a name="afxfreelibrary"></a>AfxFreeLibrary  
+##  <a name="afxfreelibrary"></a>  AfxFreeLibrary  
  Her ikisi de `AfxFreeLibrary` ve `AfxLoadLibrary` her yüklü olan kitaplık modül için bir başvuru sayımı korumak.  
   
 ```   
@@ -223,7 +223,7 @@ BOOL AFXAPI AfxFreeLibrary(HINSTANCE hInstLib);
  **DOĞRU** işlevi başarılı olursa; Aksi halde, **FALSE**.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AfxFreeLibrary`azaltır yüklenen dinamik bağlantı kitaplığı (DLL) modül, başvuru sayısı. Başvuru sayısı sıfır ulaştığında modülü çağırma işlemi adres alanından eşlenmemiş ve tanıtıcı artık geçerli değil. Bu başvuru sayısı her zaman artırılır `AfxLoadLibrary` olarak adlandırılır.  
+ `AfxFreeLibrary` azaltır yüklenen dinamik bağlantı kitaplığı (DLL) modül, başvuru sayısı. Başvuru sayısı sıfır ulaştığında modülü çağırma işlemi adres alanından eşlenmemiş ve tanıtıcı artık geçerli değil. Bu başvuru sayısı her zaman artırılır `AfxLoadLibrary` olarak adlandırılır.  
   
  Bir kitaplık modülü eşleme önce sistem kullanmadan işlemlerini ayırmak DLL sağlar. Bunun yapılması DLL geçerli işlem adına ayrılmış kaynakları temizlemek için fırsatı sunar. Giriş noktası işlevi döndükten sonra kitaplık modülü geçerli işlem adres alanından kaldırılır.  
   
@@ -237,7 +237,7 @@ BOOL AFXAPI AfxFreeLibrary(HINSTANCE hInstLib);
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdll_.h  
   
-##  <a name="afxgetapp"></a>AfxGetApp  
+##  <a name="afxgetapp"></a>  AfxGetApp  
  Bu işlev tarafından döndürülen işaretçi ana ileti gönderme kodunu veya en üstteki pencere gibi uygulama bilgilerine erişmek için kullanılabilir.  
   
 ```   
@@ -256,7 +256,7 @@ CWinApp* AFXAPI AfxGetApp();
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="afxgetappname"></a>AfxGetAppName  
+##  <a name="afxgetappname"></a>  AfxGetAppName  
  Bu işlev tarafından döndürülen dize tanılama iletileri için veya bir kök olarak geçici dize adları için kullanılabilir.  
   
 ```   
@@ -272,7 +272,7 @@ LPCTSTR AFXAPI AfxGetAppName();
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="afxgetinstancehandle"></a>Afxgetınstancehandle  
+##  <a name="afxgetinstancehandle"></a>  Afxgetınstancehandle  
  Bu işlev geçerli uygulama örneğinin tanıtıcısını almanıza olanak tanır.  
   
 ```   
@@ -283,7 +283,7 @@ HINSTANCE  AFXAPI AfxGetInstanceHandle();
  Bir `HINSTANCE` uygulamanın geçerli örneği. MFC, USRDLL sürümüyle bağlı DLL ve adlı varsa bir `HINSTANCE` DLL'e döndürülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AfxGetInstanceHandle`her zaman döndürür `HINSTANCE` yürütülebilir dosyasının (. EXE) içinden adlı sürece DLL MFC USRDLL sürümü ile bağlantılı. Bu durumda, döndüren bir `HINSTANCE` dll.  
+ `AfxGetInstanceHandle` her zaman döndürür `HINSTANCE` yürütülebilir dosyasının (. EXE) içinden adlı sürece DLL MFC USRDLL sürümü ile bağlantılı. Bu durumda, döndüren bir `HINSTANCE` dll.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#128](../../mfc/reference/codesnippet/cpp/application-information-and-management_3.cpp)]  
@@ -291,7 +291,7 @@ HINSTANCE  AFXAPI AfxGetInstanceHandle();
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="afxgetmainwnd"></a>AfxGetMainWnd  
+##  <a name="afxgetmainwnd"></a>  AfxGetMainWnd  
  Uygulamanızı OLE sunucusu ise, doğrudan başvurma yerine uygulama etkin ana penceresinde bir işaretçi almak için bu işlevi çağırmak [m_pMainWnd](../../mfc/reference/cwinthread-class.md#m_pmainwnd) uygulama nesnesi üyesi.  
   
 ```   
@@ -314,7 +314,7 @@ CWnd* AFXAPI AfxGetMainWnd();
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="afxgetperuserregistration"></a>AfxGetPerUserRegistration  
+##  <a name="afxgetperuserregistration"></a>  AfxGetPerUserRegistration  
  Uygulama kayıt erişimi yönlendiren olup olmadığını belirlemek için bu işlevi kullanın **HKEY_CURRENT_USER** ( **HKCU**) düğüm.  
   
 ```  
@@ -322,7 +322,7 @@ BOOL AFXAPI AfxGetPerUserRegistration();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`kayıt defteri bilgileri için yönlendirilir gösterir **HKCU** düğümü; `FALSE` uygulama varsayılan düğüme kayıt defteri bilgilerini yazar gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** ( **HKCR**).  
+ `TRUE` kayıt defteri bilgileri için yönlendirilir gösterir **HKCU** düğümü; `FALSE` uygulama varsayılan düğüme kayıt defteri bilgilerini yazar gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** ( **HKCR**).  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kayıt defteri yeniden yönlendirmesini devre dışı bırakırsanız, framework erişimden yönlendiren **HKCR** için **HKEY_CURRENT_USER\Software\Classes**. Yalnızca MFC ve ATL çerçeveleri tarafından yeniden yönlendirme etkilenir.  
@@ -332,7 +332,7 @@ BOOL AFXAPI AfxGetPerUserRegistration();
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxstat_.h    
   
-##  <a name="afxgetresourcehandle"></a>AfxGetResourceHandle  
+##  <a name="afxgetresourcehandle"></a>  AfxGetResourceHandle  
  Kullanım `HINSTANCE` uygulamanın kaynaklarına doğrudan, örneğin, Windows işlev çağrıları erişmek için bu işlev tarafından döndürülen tanıtıcı **FindResource**.  
   
 ```   
@@ -348,7 +348,7 @@ extern HINSTANCE  AfxGetResourceHandle();
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="afxgetthread"></a>AfxGetThread  
+##  <a name="afxgetthread"></a>  AfxGetThread  
  Bir işaretçi almak için bu işlevi çağırmak [CWinThread](../../mfc/reference/cwinthread-class.md) şu anda yürütülen iş parçacığı temsil eden nesne.  
   
 ```   
@@ -370,7 +370,7 @@ CWinThread* AfxGetThread();
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="afxinitrichedit"></a>Afxınitrichedit  
+##  <a name="afxinitrichedit"></a>  Afxınitrichedit  
  Uygulama için zengin düzenleme denetimine (sürüm 1.0) başlatmak için bu işlevini çağırın.  
   
 ```   
@@ -380,7 +380,7 @@ BOOL AFXAPI AfxInitRichEdit();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, geriye dönük uyumluluk için sağlanır. Yeni uygulamalar kullanması gereken [Afxınitrichedit2](#afxinitrichedit2).  
   
- `AfxInitRichEdit`RICHED32 yükler. Zengin düzenleme denetimine 1.0 sürümünü başlatmak için DLL. Sürüm 2.0 ve 3.0 RICHED20 zengin düzenleme denetimi kullanmak için. DLL yüklü olması gerekir. Bu çağrısıyla yapılır [Afxınitrichedit2](#afxinitrichedit2).  
+ `AfxInitRichEdit` RICHED32 yükler. Zengin düzenleme denetimine 1.0 sürümünü başlatmak için DLL. Sürüm 2.0 ve 3.0 RICHED20 zengin düzenleme denetimi kullanmak için. DLL yüklü olması gerekir. Bu çağrısıyla yapılır [Afxınitrichedit2](#afxinitrichedit2).  
   
  Sürüm 2.0 varolan Visual C++ uygulamalarını zengin düzenleme denetimlerinde güncelleştirmek için açın. RC dosyasını bir metin olarak "RICHEDIT" her zengin düzenleme denetimine "RichEdit20a" sınıf adını değiştirin. Çağrı Değiştir `AfxInitRichEdit` ile `AfxInitRichEdit2`.  
   
@@ -389,7 +389,7 @@ BOOL AFXAPI AfxInitRichEdit();
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="afxinitrichedit2"></a>Afxınitrichedit2  
+##  <a name="afxinitrichedit2"></a>  Afxınitrichedit2  
  Uygulama için zengin düzenleme denetimine (sürüm 2.0 ve üzeri) başlatmak için bu işlevini çağırın.  
   
 ```   
@@ -402,7 +402,7 @@ BOOL AFXAPI AfxInitRichEdit2();
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
 
-  ## <a name="afxisextendedframeclass"></a>Afxısextendedframeclass
+  ## <a name="afxisextendedframeclass"></a>  Afxısextendedframeclass
 Belirtilen pencere genişletilmiş çerçeve nesne olup olmadığını belirler.  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -410,11 +410,11 @@ Belirtilen pencere genişletilmiş çerçeve nesne olup olmadığını belirler.
 BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );  
 ```
 ### <a name="parameters"></a>Parametreler  
- [in]`pWnd`  
+ [in] `pWnd`  
  Türetilmiş bir nesne için bir işaretçi `CWnd`.  
    
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`sağlanan pencere genişletilmiş çerçeve nesneyi ise; Aksi takdirde `FALSE`.  
+ `TRUE` sağlanan pencere genişletilmiş çerçeve nesneyi ise; Aksi takdirde `FALSE`.  
    
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem `TRUE` varsa `pWnd` aşağıdaki sınıflar birinden türetilen:  
@@ -438,7 +438,7 @@ BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );
  [CWnd sınıfı](cwnd-class.md)   
  [CFrameWndEx Sınıfı](cframewndex-class.md)   
 
-## <a name="afxismfctoolbar"></a>Afxısmfctoolbar
+## <a name="afxismfctoolbar"></a> Afxısmfctoolbar
 Belirtilen pencere bir araç çubuğu nesnesi olup olmadığını belirler.  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -446,11 +446,11 @@ Belirtilen pencere bir araç çubuğu nesnesi olup olmadığını belirler.
 BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);  
 ```
 ### <a name="parameters"></a>Parametreler  
- [in]`pWnd`  
+ [in] `pWnd`  
  Türetilmiş bir nesne için bir işaretçi `CWnd`.  
    
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`sağlanan pencere bir araç nesneyse; Aksi takdirde `FALSE`.  
+ `TRUE` sağlanan pencere bir araç nesneyse; Aksi takdirde `FALSE`.  
    
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem `TRUE` varsa `pWnd` türetilen `CMFCToolBar`. Bir işlev veya yöntem parametresi olduğunu doğrulamak varsa, bu yöntem kullanışlıdır bir `CMFCToolBar` nesnesi.  
@@ -463,7 +463,7 @@ BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);
  [CMFCToolBar Sınıfı](cmfctoolbar-class.md)
 
  
-## <a name="afxkeyboardmanager"></a>AfxKeyboardManager
+## <a name="afxkeyboardmanager"></a> AfxKeyboardManager
 İşaretçi genel [klavye Yöneticisi](ckeyboardmanager-class.md).  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -479,7 +479,7 @@ CKeyboardManager* afxKeyboardManager;
  [CKeyboardManager Sınıfı](ckeyboardmanager-class.md)
 
 
-##  <a name="afxloadlibrary"></a>AfxLoadLibrary  
+##  <a name="afxloadlibrary"></a>  AfxLoadLibrary  
  Kullanım `AfxLoadLibrary` DLL modülü eşlemek için.  
   
 ```   
@@ -510,7 +510,7 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
  İşlev başarılı olursa, dönüş değeri modülüne işleyicisidir. İşlev başarısız olursa, dönüş değeri NULL olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanılabilir bir işleyici döner [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212) DLL işlevini adresini almak için. `AfxLoadLibrary`Ayrıca diğer yürütülebilir modüller eşleştirmek için kullanılabilir.  
+ Kullanılabilir bir işleyici döner [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212) DLL işlevini adresini almak için. `AfxLoadLibrary` Ayrıca diğer yürütülebilir modüller eşleştirmek için kullanılabilir.  
   
  Her işlem her yüklü olan kitaplık modül için bir başvuru sayımı tutar. Bu başvuru sayısı her zaman artırılır `AfxLoadLibrary` denir ve her zaman düşülür `AfxFreeLibrary` olarak adlandırılır. Başvuru sayısı sıfır ulaştığında modülü çağırma işlemi adres alanından eşlenmemiş ve tanıtıcı artık geçerli değil.  
   
@@ -526,7 +526,7 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdll_.h  
    
-## <a name="afxmenutearoffmanager"></a>AfxMenuTearOffManager
+## <a name="afxmenutearoffmanager"></a> AfxMenuTearOffManager
 İşaretçi genel [bölme menü Yöneticisi](cmenutearoffmanager-class.md).  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -539,7 +539,7 @@ CMenuTearOffManager* g_pTearOffMenuManager;
 ### <a name="see-also"></a>Ayrıca Bkz.     
  [CMenuTearOffManager Sınıfı](cmenutearoffmanager-class.md)
  
-## <a name="afxmousemanager"></a>AfxMouseManager
+## <a name="afxmousemanager"></a>  AfxMouseManager
 İşaretçi genel [fare Yöneticisi](cmousemanager-class.md).  
    
 ### <a name="syntax"></a>Sözdizimi  
@@ -554,7 +554,7 @@ CMouseManager* afxMouseManager;
  
 
   
-##  <a name="afxregisterclass"></a>AfxRegisterClass  
+##  <a name="afxregisterclass"></a>  AfxRegisterClass  
  Pencere sınıfları kullanan MFC DLL içinde kaydetmek için bu işlevi kullanın.  
   
 ```   
@@ -579,7 +579,7 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="afxregisterwndclass"></a>AfxRegisterWndClass  
+##  <a name="afxregisterwndclass"></a>  AfxRegisterWndClass  
  Kendi pencere sınıfları kaydetmenizi sağlar.  
   
 ```  
@@ -612,7 +612,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
  Pencere sınıfından oluşturulan her penceresinde yüklenecek simgesi kaynağı için tanıtıcı belirtir. Varsayılan değer olan kullanırsanız **0**, standart, Sallayan sürekli bayrağı Windows logo simgesini alırsınız.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sınıf adı içeren null ile sonlandırılmış bir dize. Bu sınıf adı geçirebilirsiniz **oluşturma** üye işlevinde `CWnd` veya diğer **CWnd -**türetilmiş sınıfları bir pencere oluşturulamadı. Ad, Microsoft Foundation Class Kitaplığı tarafından oluşturulur.  
+ Sınıf adı içeren null ile sonlandırılmış bir dize. Bu sınıf adı geçirebilirsiniz **oluşturma** üye işlevinde `CWnd` veya diğer **CWnd -** türetilmiş sınıfları bir pencere oluşturulamadı. Ad, Microsoft Foundation Class Kitaplığı tarafından oluşturulur.  
   
 > [!NOTE]
 >  Dönüş değeri arabellek için statik bir işaretçidir. Bu dize kaydetmek için kendisine atayın bir `CString` değişkeni.  
@@ -632,7 +632,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="afxsetperuserregistration"></a>AfxSetPerUserRegistration  
+##  <a name="afxsetperuserregistration"></a>  AfxSetPerUserRegistration  
  Uygulama kayıt erişimi yönlendiren olup olmadığını ayarlar **HKEY_CURRENT_USER** ( **HKCU**) düğüm.  
   
 ```  
@@ -640,11 +640,12 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bEnable`  
- `TRUE`kayıt defteri bilgileri için yönlendirilir gösterir **HKCU** düğümü; `FALSE` uygulama varsayılan düğüme kayıt defteri bilgilerini yazar gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** ( **HKCR**).  
+ [in] `bEnable`  
+ `TRUE` kayıt defteri bilgileri için yönlendirilir gösterir **HKCU** düğümü; `FALSE` uygulama varsayılan düğüme kayıt defteri bilgilerini yazar gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** ( **HKCR**).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Önce [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)], genellikle kayıt defterine erişim uygulamaları **HKEY_CLASSES_ROOT** düğümü. Bununla birlikte, [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)], bir uygulama yazmak için yükseltilmiş modda çalışmalıdır **HKCR**.  
+
+Windows Vista, genellikle kullanılan kayıt defteri erişilen uygulamalar önce **HKEY_CLASSES_ROOT** düğümü. Ancak, Windows Vista veya sonraki işletim sistemleri, bir uygulama yazmak için yükseltilmiş modda çalıştırmalısınız **HKCR**.  
   
  Bu yöntem, uygulamanızın Okuma ve kayıt defteri erişimden yönlendirerek yükseltilmiş modda çalıştırmadan kayıt defterine yazma sağlar **HKCR** için **HKCU**. Daha fazla bilgi için bkz: [bağlayıcı özellik sayfaları](../../ide/linker-property-pages.md).  
   
@@ -655,7 +656,7 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxstat_.h    
   
-##  <a name="afxsetresourcehandle"></a>AfxSetResourceHandle  
+##  <a name="afxsetresourcehandle"></a>  AfxSetResourceHandle  
  Ayarlamak için bu işlevi kullanın `HINSTANCE` uygulamanın varsayılan kaynaklar burada yüklenen belirler tanıtıcısı.  
   
 ```  
@@ -672,7 +673,7 @@ void AFXAPI AfxSetResourceHandle(HINSTANCE hInstResource);
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
 
-## <a name="afxshellmanager"></a>AfxShellManager
+## <a name="afxshellmanager"></a>  AfxShellManager
 İşaretçi genel [Kabuk Yöneticisi](cshellmanager-class.md).  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -686,7 +687,7 @@ CShellManager* afxShellManager;
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [CShellManager Sınıfı](cshellmanager-class.md)
   
-##  <a name="afxsocketinit"></a>Afxsocketınit  
+##  <a name="afxsocketinit"></a>  Afxsocketınit  
  Bu işlev çağrısı, `CWinApp::InitInstance` Windows Sockets başlatmak için geçersiz kılın.  
   
 ```  
@@ -706,7 +707,7 @@ BOOL AfxSocketInit(WSADATA* lpwsaData = NULL);
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxsock.h  
 
-## <a name="afxusertoolsmanager"></a>AfxUserToolsManager
+## <a name="afxusertoolsmanager"></a>  AfxUserToolsManager
 İşaretçi genel [kullanıcı araçları Yöneticisi](cusertoolsmanager-class.md).  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -721,7 +722,7 @@ CUserToolsManager* afxUserToolsManager;
  [CUserToolsManager Sınıfı](cusertoolsmanager-class.md)
  
   
-##  <a name="afxwininit"></a>Afxwinınit  
+##  <a name="afxwininit"></a>  Afxwinınit  
  MFC tarafından sağlanan tarafından bu işlev çağrılır `WinMain` parçası olarak işlevi [CWinApp](../../mfc/reference/cwinapp-class.md) MFC başlatmak için bir GUI tabanlı bir uygulama başlatma.  
   
 ```  

@@ -1,13 +1,10 @@
 ---
-title: "const ve volatile işaretçiler | Microsoft Docs"
-ms.custom: 
+title: const ve volatile işaretçiler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - pointers, and volatile
 - const keyword [C++], volatile pointers
 ms.assetid: 0c92dc6c-400e-4342-b345-63ddfe649d7e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68089c80528265a4375767d9f0a744cb95cb970b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c4e76348a4559d68c0c7dacd91d21c39c5b0d8a6
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="const-and-volatile-pointers"></a>const ve volatile İşaretçiler
 [Const](../cpp/const-cpp.md) ve [volatile](../cpp/volatile-cpp.md) anahtar sözcükleri değiştirme işaretçileri nasıl işlenir. **Const** işaretçinin bundan sonra değiştirilmeye karşı korunan; anahtar sözcüğü belirtir işaretçinin başlatma sonra değiştirilemez.  
@@ -100,7 +95,7 @@ errno_t strcpy_s( char *strDestination, size_t numberOfElements, const char *str
  Bir işlev önceki deyimi bildirir [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md), iki üç bağımsız değişken türü işaretçisinin nerede `char`. Bağımsız değişkenleri başvuruya göre geçirilir ve değer ile işlevi her ikisi de değiştirmek ücretsiz olmayacaktır çünkü `strDestination` ve `strSource` varsa `strSource` olarak bildirilmemiş **const**. Bildirimi `strSource` olarak **const** arayan sağlar `strSource` çağrılan işlev tarafından değiştirilemez.  
   
 > [!NOTE]
->  Standart dönüştürme olduğundan *typename*  **\***  için **const** *typename*  **\*** , türünde bir bağımsız değişken geçirmek için yasal **char \***  için [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md). Ancak tersi geçerli değildir; örtük dönüştürme kaldırmak için mevcut **const** nesne veya işaretçi özniteliği.  
+>  Standart dönüştürme olduğundan *typename* **\*** için **const** *typename* **\***, türünde bir bağımsız değişken geçirmek için yasal **char \***  için [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md). Ancak tersi geçerli değildir; örtük dönüştürme kaldırmak için mevcut **const** nesne veya işaretçi özniteliği.  
   
  A **const** işaretçi belirli bir türde aynı türde bir işaretçi atanabilir. Ancak, bir işaretçi olmayan **const** atanamaz bir **const** işaretçi. Aşağıdaki kod, doğru ve hatalı atamaları gösterir:  
   

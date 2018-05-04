@@ -1,12 +1,9 @@
 ---
-title: "Sınıflar ve yapılar (C++) | Microsoft Docs"
-ms.custom: 
+title: Sınıflar ve yapılar (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - classes [C++]
 - user-defined types, C++ classes
 ms.assetid: 516dd496-13fb-4f17-845a-e9ca45437873
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac15db222aed3abad980f4e1a0c715c099e2019c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 61348578018a5bbddcaff293fa3ed76575eb16de
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="classes-and-structs-c"></a>Sınıflar ve Yapılar (C++)
 Bu bölüm, C++ sınıfları ve yapıları tanıtır. Sınıflarda varsayılan özel iken yapılar için varsayılan erişilebilirlik ortak olması dışında iki yapıları C++ ile aynıdır.  
@@ -42,13 +37,13 @@ Bu bölüm, C++ sınıfları ve yapıları tanıtır. Sınıflarda varsayılan �
   
 -   [Sınıf Üyelerine Genel bakış](../cpp/class-member-overview.md)  
   
--   [Üye erişim denetimi](../cpp/member-access-control-cpp.md)  
+-   [Üye Erişim Denetimi](../cpp/member-access-control-cpp.md)  
   
 -   [Devralma](../cpp/inheritance-cpp.md)  
   
--   [Statik üyeler](../cpp/static-members-cpp.md)  
+-   [Statik Üyeler](../cpp/static-members-cpp.md)  
   
--   [Kullanıcı tanımlı tür dönüşümleri](../cpp/user-defined-type-conversions-cpp.md)  
+-   [Kullanıcı Tanımlı Tür Dönüşümleri](../cpp/user-defined-type-conversions-cpp.md)  
   
 -   [Değişebilir veri üyeleri (değişebilir tanımlayıcı)](../cpp/mutable-data-members-cpp.md)  
   
@@ -70,7 +65,7 @@ Bu bölüm, C++ sınıfları ve yapıları tanıtır. Sınıflarda varsayılan �
   
 |Yapılar|Sınıflar|Birleşimler|  
 |----------------|-------------|------------|  
-|sınıf anahtarı`struct`|sınıf anahtarı **sınıfı**|sınıf anahtarı **birleşimi**|  
+|sınıf anahtarı `struct`|sınıf anahtarı **sınıfı**|sınıf anahtarı **birleşimi**|  
 |Varsayılan erişim ortak|Varsayılan erişim özeldir|Varsayılan erişim ortak|  
 |Hiçbir kullanım kısıtlamaları|Hiçbir kullanım kısıtlamaları|Aynı anda yalnızca bir üye kullanın|  
   

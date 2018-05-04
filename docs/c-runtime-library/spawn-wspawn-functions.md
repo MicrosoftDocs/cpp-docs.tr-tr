@@ -1,13 +1,10 @@
 ---
-title: "_spawn, _wspawn işlevleri | Microsoft Docs"
-ms.custom: 
+title: _spawn, _wspawn işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apilocation:
 - msvcr80.dll
 - msvcr110_clr0400.dll
@@ -54,17 +51,15 @@ helpviewer_keywords:
 - tspawnlpe function
 - _tspawnle function
 ms.assetid: bb47c703-5216-4e09-8023-8cf25bbf2cf9
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0634aeb37d0374f5e6e1dfae0ac004792c279fc8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 298e2a1abddc477e406bca17bce04999c6e09415
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spawn-wspawn-functions"></a>_spawn, _wspawn İşlevleri
 Her biri `_spawn` işlevleri oluşturur ve yeni bir işlem çalıştırır:  
@@ -85,7 +80,7 @@ Her biri `_spawn` işlevleri oluşturur ve yeni bir işlem çalıştırır:
  Komut satırı bağımsız değişkenleri için ayrı ayrı geçirilir `_spawn` işlevi. Yeni bir işlem için parametre sayısı önceden bilindiğinde bu soneki genellikle kullanılır.  
   
  `p`  
- `PATH`ortam değişkeni yürütmek için dosyayı bulmak için kullanılır.  
+ `PATH` ortam değişkeni yürütmek için dosyayı bulmak için kullanılır.  
   
  `v`  
  `argv`, dizi için komut satırı bağımsız değişkenleri için işaretçileri, geçirilen `_spawn` işlevi. Yeni bir işlem için parametre sayısı değişken olduğunda bu soneki genellikle kullanılır.  
@@ -114,7 +109,7 @@ Her biri `_spawn` işlevleri oluşturur ve yeni bir işlem çalıştırır:
  `_P_WAIT`  
  Yeni işlem yürütme işlemi tamamlanana kadar çağıran iş parçacığı askıya alır (zaman uyumlu `_spawn`).  
   
- `_P_NOWAIT`veya`_P_NOWAITO`  
+ `_P_NOWAIT` Veya `_P_NOWAITO`  
  Eşzamanlı olarak yeni işlem çağırma işlemi yürütmeye devam eder (zaman uyumsuz `_spawn`).  
   
  `_P_DETACH`  
@@ -138,7 +133,7 @@ Her biri `_spawn` işlevleri oluşturur ve yeni bir işlem çalıştırır:
 >  Dizelerde katıştırılmış boşluklar beklenmeyen davranışlara neden olabilir; Örneğin, geçirme `_spawn` dize `"hi there"` iki bağımsız değişkeni alma yeni işleminde sonuçlanır `"hi"` ve `"there"`. Hedefi adlı bir dosyayı açan yeni işlem için ise "Merhaba var.", işlem başarısız olur. Bu dize tırnak içine almak kaçının: `"\"hi there\""`.  
   
 > [!IMPORTANT]
->  Kullanıcı girişini geçmeyin `_spawn` açıkça içeriğini Denetlemeden. `_spawn`Çağrı sonuçlanır [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms682425) şekilde adları, olası güvenlik açıklarını açabilir nitelenmemiş yol göz önünde bulundurun.  
+>  Kullanıcı girişini geçmeyin `_spawn` açıkça içeriğini Denetlemeden. `_spawn` Çağrı sonuçlanır [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms682425) şekilde adları, olası güvenlik açıklarını açabilir nitelenmemiş yol göz önünde bulundurun.  
   
  Bağımsız değişken işaretçileri olarak ayrı bağımsız değişkenler geçirebilirsiniz (içinde `_spawnl`, `_spawnle`, `_spawnlp`, ve `_spawnlpe`) veya bir dizi işaretçileri olarak (içinde `_spawnv`, `_spawnve`, `_spawnvp`, ve `_spawnvpe`). En az bir değişken geçmelidir `arg0` veya `argv`[0], oluşturulan işlemi için. Komut satırında yazarsınız kurala göre bu bağımsız değişken programın adını aynıdır. Farklı bir değer hata üretmez.  
   
@@ -247,7 +242,7 @@ from SPAWN!
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Süreç ve ortam denetimi](../c-runtime-library/process-and-environment-control.md)   
- [durdurma](../c-runtime-library/reference/abort.md)   
+ [Durdurma](../c-runtime-library/reference/abort.md)   
  [atexit](../c-runtime-library/reference/atexit.md)   
  [_exec, _wexec işlevleri](../c-runtime-library/exec-wexec-functions.md)   
  [Çıkış, _Exit, _exit](../c-runtime-library/reference/exit-exit-exit.md)   

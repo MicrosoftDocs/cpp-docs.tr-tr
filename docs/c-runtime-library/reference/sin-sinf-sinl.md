@@ -39,14 +39,13 @@ helpviewer_keywords:
 ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08d88f871ee1b5d9d89004ed6874bbe44d12fb5a
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: f99e7792e177c6203d38a368f3dd4125fe848a76
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sin-sinf-sinl"></a>Sin, sinf, sinl
 
@@ -128,5 +127,5 @@ cos( 1.570796 ) = 0.000000
 [asin, asinf, asinl](asin-asinf-asinl.md)<br/>
 [atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
 [cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[Bronz, tanf, tanl](tan-tanf-tanl.md)<br/>
+[tan, tanf, tanl](tan-tanf-tanl.md)<br/>
 [_CIsin](../../c-runtime-library/cisin.md)<br/>

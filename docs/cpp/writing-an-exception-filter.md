@@ -1,29 +1,24 @@
 ---
-title: "Bir özel durum filtresi yazma | Microsoft Docs"
-ms.custom: 
+title: Bir özel durum filtresi yazma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - exception handling [C++], filters
 ms.assetid: 47fc832b-a707-4422-b60a-aaefe14189e5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40afc6872ac04522c4c42f0a0d890b791ac03d53
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 138bb17b8ccbb13371a1c31e4f7347a9bbdbf64b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="writing-an-exception-filter"></a>Özel Durum Filtresi Yazma
 Özel bir durumu, özel durum işleyicisinin düzeyine atlayarak veya yürütmeyi devam ettirerek işleyebilirsiniz. Kullanabileceğiniz özel durumu ve dönmeden işlemek için özel durum işleyici kodu kullanmak yerine, *filtre* sorunu giderip temizleyin ve ardından, -1 döndürerek normal akıştaki yığın silmeden sürdürmek için.  
@@ -60,7 +55,7 @@ int Eval_Exception ( int n_except ) {
   
  Bir işlev çağrısında kullanmak iyi bir fikirdir *filtre* ifadesi her *filtre* karmaşık bir şey yapmanız gerekir. İfadenin değerlendirilmesi işlevin, bu durumda `Eval_Exception`'ın yürütülmesine neden olur.  
   
- Kullanımına dikkat edin [GetExceptionCode](http://msdn.microsoft.com/library/windows/desktop/ms679356) özel durumu belirlemek için. Filtrenin içinde bu işlevi çağırmanız gerekir. `Eval_Exception`çağrılamıyor **GetExceptionCode**, ancak kendisine geçirilen özel durum kodu olması gerekir.  
+ Kullanımına dikkat edin [GetExceptionCode](http://msdn.microsoft.com/library/windows/desktop/ms679356) özel durumu belirlemek için. Filtrenin içinde bu işlevi çağırmanız gerekir. `Eval_Exception` çağrılamıyor **GetExceptionCode**, ancak kendisine geçirilen özel durum kodu olması gerekir.  
   
  Bu işleyici, özel durum bir tamsayı veya kayan nokta taşması değilse deneyimi başka bir işleyiciye geçirir. Tamsayı veya kayan nokta taşmasıysa, işleyici bazı genel değişkenleri sıfırlamak için bir işlev çağırır (`ResetVars` yalnızca bir örnektir, API işlevi değildir). *Deyimi bloğu 2*, bu örnekte boş olduğundan hiç yürütülebilir olduğundan `Eval_Exception` hiçbir zaman exceptıon_execute_handler (1) döndürür.  
   

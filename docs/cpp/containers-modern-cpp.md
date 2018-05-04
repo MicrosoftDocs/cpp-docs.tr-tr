@@ -1,25 +1,21 @@
 ---
-title: "Kapsayıcılar (Modern C++) | Microsoft Docs"
-ms.custom: 
+title: Kapsayıcılar (Modern C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 1/18/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d43570f644e9627de5a40fc5b824a17e4fd33ffc
-ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
+ms.openlocfilehash: 49a77234b679fd61d801bb78d751891467d6b4e0
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="containers-modern-c"></a>Kapsayıcılar (Modern C++)
 

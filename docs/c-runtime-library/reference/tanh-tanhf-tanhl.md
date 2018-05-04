@@ -38,14 +38,13 @@ helpviewer_keywords:
 - hyperbolic functions
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e7ab81b64012ec7f7edca7bb194a13c9d563ddb
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 438c587099edafedbb2cc3feb4b3a285aa155a0d
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tanh-tanhf-tanhl"></a>TANH, tanhf, tanhl
 
@@ -123,5 +122,5 @@ tanh( 1.000000 ) = 0.761594
 [acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
 [asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
 [atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[COSH, coshf, coshl](cosh-coshf-coshl.md)<br/>
-[SİNH, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
+[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
+[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>

@@ -2,26 +2,21 @@
 title: Tür dönüştürmeleri ve tür güvenliği (Modern C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
-caps.latest.revision: 23
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c77b7269ae70d24878ff02c0661b60365c76d1b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 13dabba7b7cfc769d91471c2dfc6f92f1b414996
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="type-conversions-and-type-safety-modern-c"></a>Tür Dönüştürmeleri ve Tür Güvenliği (Modern C++)
 Bu belge türü dönüştürme karşılaşılan tanımlar ve nasıl bunları C++ kodunuzda önleyebilirsiniz açıklar.  
@@ -38,9 +33,9 @@ Bu belge türü dönüştürme karşılaşılan tanımlar ve nasıl bunları C++
   
 |Başlangıç|Bitiş|  
 |----------|--------|  
-|Tüm imzalı veya dışında tam sayı türü imzasız `long long` veya`__int64`|`double`|  
-|`bool`veya`char`|Herhangi bir yerleşik türü|  
-|`short`veya`wchar_t`|`int`, `long`, `long long`|  
+|Tüm imzalı veya dışında tam sayı türü imzasız `long long` veya `__int64`|`double`|  
+|`bool` Veya `char`|Herhangi bir yerleşik türü|  
+|`short` Veya `wchar_t`|`int`, `long`, `long long`|  
 |`int`, `long`|`long long`|  
 |`float`|`double`|  
   
@@ -113,7 +108,7 @@ int(x); // old-style cast, functional syntax
   
  C türü atama işleci çağrısı işleci (.)'için aynıdır ve bu nedenle kodda inconspicuous ve overlook kolaydır. Her ikisi de bir bakışta veya arama tanıması zor ve herhangi bir bileşimini çağırmak için farklı bozuk olduğu `static`, `const`, ve `reinterpret_cast`. Eski Tarz cast gerçekte yaptığı açık zor ve hataya yatkın olabilir. Bir cast gerektiğinde bu nedenlerle, bazı durumlarda önemli ölçüde daha fazla tür kullanımı uyumlu ve programlama amacı, açıkça çok daha hızlı aşağıdaki C++ cast işleçleri, birini kullanmanızı öneririz:  
   
--   `static_cast`, derleme denetlenir atamaları zaman yalnızca. `static_cast`Derleyici tamamen uyumlu türleri arasında dönüştürme çalıştığınız algılarsa bir hata döndürür. Ayrıca bunu işaretçi temel ve türetilen işaretçi arasında dönüştürmek için kullanabilirsiniz, ancak derleyici, her zaman böyle dönüşümleri çalışma zamanında güvenli olup olmayacağını bildiremez.  
+-   `static_cast`, derleme denetlenir atamaları zaman yalnızca. `static_cast` Derleyici tamamen uyumlu türleri arasında dönüştürme çalıştığınız algılarsa bir hata döndürür. Ayrıca bunu işaretçi temel ve türetilen işaretçi arasında dönüştürmek için kullanabilirsiniz, ancak derleyici, her zaman böyle dönüşümleri çalışma zamanında güvenli olup olmayacağını bildiremez.  
   
     ```cpp  
     double d = 1.58947;  

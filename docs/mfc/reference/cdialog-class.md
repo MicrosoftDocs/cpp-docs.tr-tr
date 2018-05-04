@@ -1,12 +1,12 @@
 ---
-title: "CDialog sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDialog sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CDialog
@@ -49,17 +49,17 @@ helpviewer_keywords:
 - CDialog [MFC], OnCancel
 - CDialog [MFC], OnOK
 ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
-caps.latest.revision: 
+caps.latest.revision: 23
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89c9670d19330e63a466c38a205a3122237e4f02
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
-ms.translationtype: MT
+ms.openlocfilehash: 0de2c308372758e96919fbaa9bf247fb424de945
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cdialog-class"></a>CDialog sınıfı
 İletişim kutuları ekranda görüntülemek için kullanılan temel sınıf.  
@@ -125,7 +125,7 @@ class CDialog : public CWnd
   
  Programcı ve framework çağrı `DoDataExchange` yapılan bir çağrı üzerinden dolaylı olarak [CWnd::UpdateData](../../mfc/reference/cwnd-class.md#updatedata).  
   
- Framework çağrıları `UpdateData` kullanıcı bir modal iletişim kutusunu kapatmak için Tamam düğmesine tıkladığında. (İptal düğmesine tıkladıysanız verileri alınamadı.) Varsayılan uygulaması [OnInitDialog](#oninitdialog) de çağırır `UpdateData` denetimlerin ilk değerleri ayarlamak için. Genellikle geçersiz kılma `OnInitDialog` daha fazla denetim başlatılamadı. `OnInitDialog`Tüm iletişim denetimleri oluşturulur ve hemen önce iletişim kutusu görüntülenir. sonra çağrılır.  
+ Framework çağrıları `UpdateData` kullanıcı bir modal iletişim kutusunu kapatmak için Tamam düğmesine tıkladığında. (İptal düğmesine tıkladıysanız verileri alınamadı.) Varsayılan uygulaması [OnInitDialog](#oninitdialog) de çağırır `UpdateData` denetimlerin ilk değerleri ayarlamak için. Genellikle geçersiz kılma `OnInitDialog` daha fazla denetim başlatılamadı. `OnInitDialog` Tüm iletişim denetimleri oluşturulur ve hemen önce iletişim kutusu görüntülenir. sonra çağrılır.  
   
  Çağırabilirsiniz `CWnd::UpdateData` kalıcı veya geçici bir iletişim kutusu yürütülmesi sırasında herhangi bir zamanda.  
   
@@ -153,7 +153,7 @@ class CDialog : public CWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="cdialog"></a>CDialog::CDialog  
+##  <a name="cdialog"></a>  CDialog::CDialog  
  Kaynak tabanlı kalıcı bir iletişim kutusu oluşturmak için Oluşturucusu ortak biçimindeki çağırın.  
   
 ```  
@@ -188,7 +188,7 @@ CDialog();
   
  Kalıcı olmayan iletişim kutusu oluşturmak için korumalı bir form kullanmak `CDialog` Oluşturucusu. Kalıcı olmayan iletişim kutusu uygulamak için kendi iletişim kutusu sınıfı türetilmesi gerekir çünkü Oluşturucusu korunur. Kalıcı olmayan iletişim kutusu yapımı iki adımlı bir işlemdir. İlk çağrıda Oluşturucusu; ' ı çağırın **oluşturma** kaynak tabanlı iletişim kutusu oluşturmak için üye işlevi veya arama `CreateIndirect` bellekte bir şablondan Oluştur iletişim kutusu için.  
   
-##  <a name="create"></a>CDialog::Create  
+##  <a name="create"></a>  CDialog::Create  
  Çağrı **oluşturma** bir kaynaktan bir iletişim kutusu şablonu kullanarak bir kalıcı olmayan iletişim kutusu oluşturmak için.  
   
 ```  
@@ -231,7 +231,7 @@ virtual BOOL Create(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCControlLadenDialog#62](../../mfc/codesnippet/cpp/cdialog-class_1.cpp)]  
   
-##  <a name="createindirect"></a>CDialog::CreateIndirect  
+##  <a name="createindirect"></a>  CDialog::CreateIndirect  
  Bellekteki bir iletişim kutusu şablondan kalıcı olmayan iletişim kutusu oluşturmak için bu üye işlevini çağırın.  
   
 ```  
@@ -269,9 +269,9 @@ virtual BOOL CreateIndirect(
   
  Kullanım `CWnd::DestroyWindow` tarafından oluşturulan bir iletişim kutusunu yok etme işlevi `CreateIndirect` işlevi.  
   
- ActiveX denetimleri içeren iletişim kutuları sağlanan ek bilgileri gerektiren bir **DLGINIT** kaynak. Bilgi Bankası makalesi Q231591, daha fazla bilgi için bkz: "nasıl yapılır: bir MFC iletişim kutusu ile bir ActiveX denetimi oluşturmak için bir iletişim şablonunu kullanın." Bilgi Bankası makaleleri kullanılabilir [http://support.microsoft.com](http://support.microsoft.com/).  
+ ActiveX denetimleri içeren iletişim kutuları sağlanan ek bilgileri gerektiren bir **DLGINIT** kaynak. Bilgi Bankası makalesi Q231591, daha fazla bilgi için bkz: "nasıl yapılır: bir MFC iletişim kutusu ile bir ActiveX denetimi oluşturmak için bir iletişim şablonunu kullanın." Bilgi Bankası makaleleri kullanılabilir [ http://support.microsoft.com ](http://support.microsoft.com/).  
   
-##  <a name="domodal"></a>CDialog::DoModal  
+##  <a name="domodal"></a>  CDialog::DoModal  
  Kalıcı iletişim kutusunu çağırmak ve tamamlandığında iletişim kutusu sonucu dönmek için bu üye işlevini çağırın.  
   
 ```  
@@ -287,12 +287,12 @@ virtual INT_PTR DoModal();
  Kullanıcı iletişim kutusunda Tamam'ı veya İptal'i, bir ileti işleyicisi üye fonksiyonu gibi pushbuttons birini gibi tıklarsa [OnOK](#onok) veya [OnCancel](#oncancel), iletişim kutusunu kapatmak denemek için çağrılır. Varsayılan `OnOK` üye işlevi doğrulamak ve iletişim kutusu veri güncelleştirilecek ve sonuç ile iletişim kutusunu kapatmak **IDOK**ve varsayılan `OnCancel` üye işlevi sonuç iletişim kutusuyla kapatılacak  **IDCANCEL** doğrulama veya iletişim kutusu verileri güncelleştirme olmadan. Bunların davranışı değiştirmek için bu ileti işleyici işlevleri geçersiz kılabilirsiniz.  
   
 > [!NOTE]
-> `PreTranslateMessage`kalıcı iletişim kutusu ileti işleme için şimdi denir.  
+> `PreTranslateMessage` kalıcı iletişim kutusu ileti işleme için şimdi denir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCControlLadenDialog#63](../../mfc/codesnippet/cpp/cdialog-class_2.cpp)]  
   
-##  <a name="enddialog"></a>CDialog::EndDialog  
+##  <a name="enddialog"></a>  CDialog::EndDialog  
  Modal bir iletişim kutusu sonlandırmak için bu üye işlevini çağırın.  
   
 ```  
@@ -308,14 +308,14 @@ void EndDialog(int nResult);
   
  Çağırabilirsiniz `EndDialog` herhangi bir zamanda bile [OnInitDialog](#oninitdialog), kapatın; bu durumda, önce iletişim kutusu gösterilir veya giriş odağını ayarlanmadan önce.  
   
- `EndDialog`iletişim kutusu hemen kapatmaz. Bunun yerine, geçerli ileti işleyicisini döndürür hemen kapatmak için iletişim kutusu yönlendiren bir bayrak ayarlar.  
+ `EndDialog` iletişim kutusu hemen kapatmaz. Bunun yerine, geçerli ileti işleyicisini döndürür hemen kapatmak için iletişim kutusu yönlendiren bir bayrak ayarlar.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCControlLadenDialog#64](../../mfc/codesnippet/cpp/cdialog-class_3.cpp)]  
   
  [!code-cpp[NVC_MFCControlLadenDialog#65](../../mfc/codesnippet/cpp/cdialog-class_4.cpp)]  
   
-##  <a name="getdefid"></a>CDialog::GetDefID  
+##  <a name="getdefid"></a>  CDialog::GetDefID  
  Çağrı `GetDefID` bir iletişim kutusu için varsayılan basma düğmesi denetiminin Kimliğini almak için üye işlevi.  
   
 ```  
@@ -328,7 +328,7 @@ DWORD GetDefID() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu genellikle bir Tamam düğmesine olur.  
   
-##  <a name="gotodlgctrl"></a>CDialog::GotoDlgCtrl  
+##  <a name="gotodlgctrl"></a>  CDialog::GotoDlgCtrl  
  İletişim kutusunda belirtilen denetim odağı taşır.  
   
 ```  
@@ -345,7 +345,7 @@ void GotoDlgCtrl(CWnd* pWndCtrl);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CWnd::GetDlgItem](../../mfc/reference/cwnd-class.md#getdlgitem).  
   
-##  <a name="initmodalindirect"></a>CDialog::InitModalIndirect  
+##  <a name="initmodalindirect"></a>  CDialog::InitModalIndirect  
  Bellekte oluşturmak bir iletişim kutusu şablonu kullanarak bir modal iletişim nesneyi başlatmak için bu üye işlevini çağırın.  
   
 ```  
@@ -379,9 +379,9 @@ BOOL InitModalIndirect(
 ### <a name="remarks"></a>Açıklamalar  
  Modal bir iletişim kutusu dolaylı olarak oluşturmak için önce genel bir bellek bloğu ayırın ve iletişim kutusunu şablonla doldurun. Boş çağırın `CDialog` Oluşturucu iletişim kutusu nesnesi oluşturun. Ardından, çağrı `InitModalIndirect` bellek içi iletişim kutusu şablonu, tanıtıcıyı depolamak için. Windows iletişim kutusu oluşturulur ve görüntülenir daha sonra zaman [DoModal](#domodal) üye işlevi çağrılır.  
   
- ActiveX denetimleri içeren iletişim kutuları sağlanan ek bilgileri gerektiren bir **DLGINIT** kaynak. Bilgi Bankası makalesi Q231591, daha fazla bilgi için bkz: "nasıl yapılır: bir MFC iletişim kutusu ile bir ActiveX denetimi oluşturmak için bir iletişim şablonunu kullanın." Bilgi Bankası makaleleri kullanılabilir [http://support.microsoft.com](http://support.microsoft.com/).  
+ ActiveX denetimleri içeren iletişim kutuları sağlanan ek bilgileri gerektiren bir **DLGINIT** kaynak. Bilgi Bankası makalesi Q231591, daha fazla bilgi için bkz: "nasıl yapılır: bir MFC iletişim kutusu ile bir ActiveX denetimi oluşturmak için bir iletişim şablonunu kullanın." Bilgi Bankası makaleleri kullanılabilir [ http://support.microsoft.com ](http://support.microsoft.com/).  
   
-##  <a name="mapdialogrect"></a>CDialog::MapDialogRect  
+##  <a name="mapdialogrect"></a>  CDialog::MapDialogRect  
  İletişim kutusu birimleri dikdörtgenin ekran birimlerine dönüştürmek üzere çağrılır.  
   
 ```  
@@ -399,7 +399,7 @@ void MapDialogRect(LPRECT lpRect) const;
   
  `MapDialogRect` Üye işlevi değiştirir iletişim kutusu birimleri `lpRect` ile dikdörtgen Oluştur iletişim kutusu veya bir kutu içinde bir denetim konumlandırmak için kullanılan böylece ekran birimler (piksel cinsinden).  
   
-##  <a name="nextdlgctrl"></a>CDialog::NextDlgCtrl  
+##  <a name="nextdlgctrl"></a>  CDialog::NextDlgCtrl  
  İletişim kutusunda sonraki denetim odağı taşır.  
   
 ```  
@@ -409,7 +409,7 @@ void NextDlgCtrl() const;
 ### <a name="remarks"></a>Açıklamalar  
  Odak en son denetim iletişim kutusunda ise, ilk denetime taşır.  
   
-##  <a name="oncancel"></a>CDialog::OnCancel  
+##  <a name="oncancel"></a>  CDialog::OnCancel  
  Kullanıcı tıklattığında framework bu yöntemi çağırır **iptal** veya kalıcı veya geçici iletişim kutusunda ESC tuşuna basar.  
   
 ```  
@@ -427,7 +427,7 @@ virtual void OnCancel();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCControlLadenDialog#66](../../mfc/codesnippet/cpp/cdialog-class_5.cpp)]  
   
-##  <a name="oninitdialog"></a>CDialog::OnInitDialog  
+##  <a name="oninitdialog"></a>  CDialog::OnInitDialog  
  Bu yöntem, yanıt olarak çağrılır `WM_INITDIALOG` ileti.  
   
 ```  
@@ -445,12 +445,12 @@ virtual BOOL OnInitDialog();
  Windows çağrıları `OnInitDialog` tüm Microsoft Foundation Class Kitaplığı iletişim kutuları için ortak standart genel iletişim kutusu yordamı kullanarak işlevi. Bu işlev, ileti eşlemesi aracılığıyla çağırmaz ve bu nedenle, bir ileti eşleme girişi için bu yöntem gerekmez.  
   
 > [!NOTE]
->  Kullandığınızda bu yöntemi geçersiz kılınamaz bir `CFileDialog` nesneyi altında derlenmiş bir programda [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. Değişiklikler hakkında daha fazla bilgi için `CFileDialog` altında [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] bkz [CFileDialog sınıfı](../../mfc/reference/cfiledialog-class.md).  
+> Kullandığınızda bu yöntemi geçersiz kılınamaz bir `CFileDialog` nesneyi Windows Vista veya sonraki işletim sistemlerinde altında derlenmiş bir programda. Değişiklikler hakkında daha fazla bilgi için `CFileDialog` altında Windows Vista ve sonraki sürümlerinde, bkz: [CFileDialog sınıfı](../../mfc/reference/cfiledialog-class.md).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCControlLadenDialog#67](../../mfc/codesnippet/cpp/cdialog-class_6.cpp)]  
   
-##  <a name="onok"></a>CDialog::OnOK  
+##  <a name="onok"></a>  CDialog::OnOK  
  Kullanıcı tıklattığında adlı **Tamam** düğmesini (düğmesi, bir kimliği IDOK ile).  
   
 ```  
@@ -468,7 +468,7 @@ virtual void OnOK();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCControlLadenDialog#68](../../mfc/codesnippet/cpp/cdialog-class_7.cpp)]  
   
-##  <a name="onsetfont"></a>CDialog::OnSetFont  
+##  <a name="onsetfont"></a>  CDialog::OnSetFont  
  Bir iletişim kutusu denetimi metin çizme için kullanacağı yazı tipini belirtir.  
   
 ```  
@@ -476,7 +476,7 @@ Virtual void OnSetFont(CFont* pFont);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pFont`  
+ [in] `pFont`  
  Bir işaretçi varsayılan yazı tipi bu iletişim kutusundaki tüm denetimler için kullanılan yazı tipini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -485,9 +485,9 @@ Virtual void OnSetFont(CFont* pFont);
  İletişim kutusu Düzenleyicisi iletişim kutusu yazı tipi iletişim kutusu şablon kaynağı bir parçası olarak tipik olarak ayarlar.  
   
 > [!NOTE]
->  Kullandığınızda bu yöntemi geçersiz kılınamaz bir `CFileDialog` nesneyi altında derlenmiş bir programda [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. Değişiklikler hakkında daha fazla bilgi için `CFileDialog` altında [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] bkz [CFileDialog sınıfı](../../mfc/reference/cfiledialog-class.md).  
+> Kullandığınızda bu yöntemi geçersiz kılınamaz bir `CFileDialog` nesneyi Windows Vista veya sonraki işletim sistemlerinde altında derlenmiş bir programda. Değişiklikler hakkında daha fazla bilgi için `CFileDialog` altında Windows Vista ve sonraki sürümlerinde, bkz: [CFileDialog sınıfı](../../mfc/reference/cfiledialog-class.md).  
   
-##  <a name="prevdlgctrl"></a>CDialog::PrevDlgCtrl  
+##  <a name="prevdlgctrl"></a>  CDialog::PrevDlgCtrl  
  Odağı önceki denetim iletişim kutusunda ayarlar.  
   
 ```  
@@ -497,7 +497,7 @@ void PrevDlgCtrl() const;
 ### <a name="remarks"></a>Açıklamalar  
  İletişim kutusunda ilk denetim odağı altındadır, kutusundaki son denetim taşır.  
   
-##  <a name="setdefid"></a>CDialog::SetDefID  
+##  <a name="setdefid"></a>  CDialog::SetDefID  
  Bir iletişim kutusu için varsayılan basma düğmesi denetimi değiştirir.  
   
 ```  
@@ -508,7 +508,7 @@ void SetDefID(UINT nID);
  `nID`  
  Varsayılan olacak basma düğmesi denetiminin Kimliğini belirtir.  
   
-##  <a name="sethelpid"></a>CDialog::SetHelpID  
+##  <a name="sethelpid"></a>  CDialog::SetHelpID  
  İletişim kutusu için bir bağlama duyarlı Yardım kimlik ayarlar.  
   
 ```  

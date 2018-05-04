@@ -1,12 +1,9 @@
 ---
 title: static_assert | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - static_assert_cpp
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - assertions [C++], static_assert
 - static_assert
 ms.assetid: 28dd3668-e78c-4de8-ba68-552084743426
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 660b91f4902e42d393509aa190172e53839b2621
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 47046090da45d963cc0005f47e2bea680ad17795
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="staticassert"></a>static_assert
 Derleme zamanında yazılım onaylama sınar. Belirtilen sabit ifade ise `false`, bir tane belirtilmişse derleyici belirtilen iletisi görüntüler ve derleme C2338 hatasıyla başarısız oluyor; Aksi takdirde, bildirim hiçbir etkisi olmaz.  
@@ -121,4 +116,4 @@ public:
  [Assert makrosu, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)   
  [Şablonları](../cpp/templates-cpp.md)   
  [ASCII karakter kümesi](../c-language/ascii-character-set.md)   
- [Bildirimler ve tanımlar](declarations-and-definitions-cpp.md)
+ [Bildirimler ve Tanımlar](declarations-and-definitions-cpp.md)

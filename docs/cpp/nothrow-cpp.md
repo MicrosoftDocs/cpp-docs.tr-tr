@@ -1,12 +1,9 @@
 ---
 title: nothrow (C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/03/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - nothrow_cpp
@@ -18,18 +15,17 @@ helpviewer_keywords:
 ms.assetid: 0a475139-459c-4ec6-99e8-7ecd0d7f44a3
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e0f5f40fbcfcb95952fd956060801e862e9cdaf
-ms.sourcegitcommit: c2e990450ccd528d85b2783fbc63042612987cfd
+ms.openlocfilehash: 69a706577cf112c3d8a3b7748f72679f7213936d
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="nothrow-c"></a>nothrow (C++)
 
-**Microsoft Specific**
+**Microsoft özel**
 
 İşlevlerin bildiriminde kullanılabilen `__declspec` genişletilmiş özniteliği.
 

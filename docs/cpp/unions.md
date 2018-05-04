@@ -1,12 +1,9 @@
 ---
-title: "Birleşimler | Microsoft Docs"
-ms.custom: 
+title: Birleşimler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - union_cpp
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - class types [C++], unions as
 - union keyword [C++]
 ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9371aaf978f2ea9498445d0124b9be16cf3b0fa7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 066f7c50940e6c68bb0fca554bb3bc56fc20b93c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="unions"></a>Birleşimler
 A `union` tüm üyeleri aynı bellek konumuna paylaşmak bir kullanıcı tanımlı tür. Başka bir deyişle, belirli bir zamanda birden fazla nesne üyeleri listesinden UNION içerebilir. Ayrıca, UNION sahip kaç üye olsun, her zaman yalnızca yeterli bellek büyük üye depolamak için kullandığını anlamına gelir.  
@@ -645,7 +640,7 @@ int main()
  ![Bir sayısal tür birleşim veri depolama](../cpp/media/vc38ul1.png "vc38UL1")  
 Verilerin NumericType Birleşiminde Depolanması  
   
-## <a name="anonymous_unions"></a>Anonim birleşimler  
+## <a name="anonymous_unions"></a> Anonim birleşimler  
  Anonim birleşimler olmadan bildirilen birleşimler olan bir *sınıf adı* veya *bildirimcisi listesi*.  
   
 ```cpp  

@@ -1,12 +1,12 @@
 ---
-title: "Nasıl yapılır: yeniden başlatma Yöneticisi desteği ekleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: yeniden başlatma Yöneticisi desteği ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -14,27 +14,28 @@ helpviewer_keywords:
 - Restart manager [MFC]
 - C++, application crash support
 ms.assetid: 7f3f5867-d4bc-4ba8-b3c9-dc1e7be93642
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a413f28909a52e3bc82e9d8f2694d559bf8a885c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
-ms.translationtype: MT
+ms.openlocfilehash: 4550a8a6a6457c4bf5b7acc137a592aa5ecb2e4b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-add-restart-manager-support"></a>Nasıl yapılır: Yeniden Başlatma Yöneticisi Desteği Ekleme
-Yeniden başlatma Yöneticisi eklenen bir özelliktir [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] için [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)]. Yeniden başlatma Yöneticisi beklenmedik şekilde kapatır veya yeniden uygulamanız için destek ekler. Yeniden başlatma Yöneticisi davranışını, uygulama türüne bağlıdır. Uygulamanız bir belge Düzenleyicisi ise, durumu otomatik olarak kaydetmek, uygulamanızın yeniden başlatma Yöneticisi etkin ve tüm açık içeriği belgeler ve uygulamanızı beklenmeyen kapatma sonrasında yeniden başlatır. Uygulamanızı bir belge Düzenleyicisi değilse, yeniden başlatma Yöneticisi uygulama yeniden başlatır, ancak varsayılan olarak uygulama durumunun kaydedilemiyor.  
+
+Yeniden başlatma Yöneticisi'ni, Visual Studio için Windows Vista veya sonraki işletim sistemlerine eklenen bir özelliktir. Yeniden başlatma Yöneticisi beklenmedik şekilde kapatır veya yeniden uygulamanız için destek ekler. Yeniden başlatma Yöneticisi davranışını, uygulama türüne bağlıdır. Uygulamanız bir belge Düzenleyicisi ise, durumu otomatik olarak kaydetmek, uygulamanızın yeniden başlatma Yöneticisi etkin ve tüm açık içeriği belgeler ve uygulamanızı beklenmeyen kapatma sonrasında yeniden başlatır. Uygulamanızı bir belge Düzenleyicisi değilse, yeniden başlatma Yöneticisi uygulama yeniden başlatır, ancak varsayılan olarak uygulama durumunun kaydedilemiyor.  
   
  Uygulama Unicode ise yeniden başladıktan sonra uygulama bir görev iletişim kutusu görüntüler. ANSI uygulama ise, uygulama bir Windows ileti kutusu görüntüler. Bu noktada, kullanıcının otomatik kaydedilmiş belgeleri geri verilip seçer. Kullanıcı otomatik kaydedilmiş belgeleri geri yüklemez, yeniden başlatma Yöneticisi geçici dosyalar atar.  
   
 > [!NOTE]
 >  Verileri kaydetme ve uygulamayı yeniden başlatma için yeniden başlatma Yöneticisi'nin varsayılan davranışı geçersiz kılabilirsiniz.  
   
- Varsayılan olarak, MFC Uygulama Projesi Sihirbazı'nda kullanılarak oluşturulan [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] uygulamaları olan bir bilgisayarda çalıştırdığınızda yeniden başlatma Yöneticisi'ni destekleyecek [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)]. Uygulamanızı yeniden başlatma Yöneticisi'ni destekleyecek şekilde istemiyorsanız, yeniden başlatma Yöneticisi'nde Yeni Proje Sihirbazı'nı devre dışı bırakabilirsiniz.  
+ Varsayılan olarak, MFC Uygulama Projesi Sihirbazı'nda kullanılarak oluşturulan [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] uygulamaları, Windows Vista veya sonraki bir işletim sistemi olan bir bilgisayarda çalıştırdığınızda yeniden başlatma Yöneticisi'ni destekler. Uygulamanızı yeniden başlatma Yöneticisi'ni destekleyecek şekilde istemiyorsanız, yeniden başlatma Yöneticisi'nde Yeni Proje Sihirbazı'nı devre dışı bırakabilirsiniz.  
   
 ### <a name="to-add-support-for-the-restart-manager-to-an-existing-application"></a>Var olan bir uygulamayı yeniden başlatma Yöneticisi desteği ekleme  
   

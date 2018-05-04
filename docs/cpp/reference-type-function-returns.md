@@ -1,12 +1,9 @@
 ---
-title: "Başvuru türü işlev dönüşleri | Microsoft Docs"
-ms.custom: 
+title: Başvuru türü işlev dönüşleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - data types [C++], function return types
 - functions [C++], return types
 ms.assetid: 5b73be1d-2dc7-41df-ab0a-adcba36f2ad1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3a5d0b299b2bc38c95420515ab49eabd1268305
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 867313625ccc90924eed0c0c9405970f2cb90f8a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reference-type-function-returns"></a>Başvuru Türü İşlev Dönüşleri
 İşlevler, bir başvuru türü döndürmek için bildirilebilir. Böyle bir bildirim yapmanın iki nedeni vardır:  
@@ -122,4 +117,4 @@ Foo& GetFoo()
  Bu durumda bir uyarı derleyici verir: `warning C4172: returning address of local variable or temporary`. Basit programlarda bellek konumuna yazılmadan önce başvuru çağıran tarafından erişiliyorsa hiçbir erişim ihlali zaman zaman ortaya çıkar mümkündür. Çalıştırmaları Şanslar nedeni budur. Uyarı önemseyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Başvuruları](../cpp/references-cpp.md)
+ [Başvurular](../cpp/references-cpp.md)

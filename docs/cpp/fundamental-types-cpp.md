@@ -1,12 +1,9 @@
 ---
-title: "Temel türleri (C++) | Microsoft Docs"
-ms.custom: 
+title: Temel türleri (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - __int128_cpp
@@ -52,17 +49,15 @@ helpviewer_keywords:
 - storing types [C++]
 - data types [C++], void
 ms.assetid: 58b0106a-0406-4b74-a430-7cbd315c0f89
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb52d6a987289ed77d7b63a5497323ddad2b467
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8c24ee360f1c14aa9b355f45ec1c12877efa306c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fundamental-types--c"></a>Temel Türler (C++)
 C++'ta temel türleri üç kategoride bölünen: tamsayı, kayan nokta ve void. Tam sayı türleri tam sayılar işleyebilir. Kayan nokta türleri kesirli bölümleri olabilir değerleri belirtme özelliğine sahiptir.  
@@ -83,11 +78,11 @@ C++'ta temel türleri üç kategoride bölünen: tamsayı, kayan nokta ve void. 
 |--------------|----------|--------------|  
 |Tam sayıdan kaymaya|`char`|Tür `char` genellikle temel yürütme karakter kümesi üyelerini içeren bir tam sayı türü — varsayılan olarak, Microsoft C++ ASCII budur.<br /><br /> C++ derleyicisi değişkenlerine türü `char`, `signed` `char`, ve `unsigned` `char` farklı türlerine sahip olarak. Türündeki değişkenler `char` için yükseltilen `int` türü varsa gibi `signed` `char` varsayılan olarak, /J derleme seçeneği kullanılmıyorsa. Bu durumda türü olarak davranılır `unsigned` `char` için yükseltilmiş `int` oturum uzantısı olmadan.|  
 ||`bool`|Tür `bool` iki değerden birini sahip olabilen bir tam sayı türüdür `true` veya `false`. Boyutuna belirtilmedi.|  
-||`short`|Tür `short` `int` (ya da yalnızca `short`) türü boyutuna eşit veya bundan büyük bir tam sayı türü `char`, daha kısa veya buna eşit ve yazı tipi boyutu için `int`.<br /><br /> Nesne türü `short` olarak bildirilen `signed` `short` veya `unsigned short`. `Signed short`eşanlamlısı olduğu `short`.|  
-||`int`|Tür `int` türü boyutuna eşit veya bundan büyük bir tam sayı türü `short` `int`, daha kısa veya buna eşit ve yazı tipi boyutu için `long`.<br /><br /> Nesne türü `int` olarak bildirilen `signed` `int` veya `unsigned` `int`. `Signed``int` eşanlamlısı olduğu `int`.|  
-||`__int8`, `__int16`, `__int32`, `__int64`|Boyutlu tamsayı `__int n`, burada `n` tamsayı değişken bit cinsinden boyutu. `__int8`, `__int16`, `__int32` ve `__int64` Microsoft'a özgü anahtar sözcükler. Tüm türleri üzerinde tüm mimarileri kullanılabilir. `(__int128`desteklenmiyor.)|  
-||`long`|Tür `long` (veya `long` `int`) türü boyutuna eşit veya bundan büyük bir tam sayı türü `int`.<br /><br /> Nesne türü `long` olarak bildirilen `signed` `long` veya `unsigned` `long`. `Signed``long` eşanlamlısı olduğu `long`.|  
-||`long``long`|Büyük imzasız `long`.<br /><br /> Nesne türü `long long` olarak bildirilen `signed` `long long` veya `unsigned` `long long`. `signed``long long` eşanlamlısı olduğu `long long`.|  
+||`short`|Tür `short` `int` (ya da yalnızca `short`) türü boyutuna eşit veya bundan büyük bir tam sayı türü `char`, daha kısa veya buna eşit ve yazı tipi boyutu için `int`.<br /><br /> Nesne türü `short` olarak bildirilen `signed` `short` veya `unsigned short`. `Signed short` eşanlamlısı olduğu `short`.|  
+||`int`|Tür `int` türü boyutuna eşit veya bundan büyük bir tam sayı türü `short` `int`, daha kısa veya buna eşit ve yazı tipi boyutu için `long`.<br /><br /> Nesne türü `int` olarak bildirilen `signed` `int` veya `unsigned` `int`. `Signed` `int` eşanlamlısı olduğu `int`.|  
+||`__int8`, `__int16`, `__int32`, `__int64`|Boyutlu tamsayı `__int n`, burada `n` tamsayı değişken bit cinsinden boyutu. `__int8`, `__int16`, `__int32` ve `__int64` Microsoft'a özgü anahtar sözcükler. Tüm türleri üzerinde tüm mimarileri kullanılabilir. `(__int128` desteklenmiyor.)|  
+||`long`|Tür `long` (veya `long` `int`) türü boyutuna eşit veya bundan büyük bir tam sayı türü `int`.<br /><br /> Nesne türü `long` olarak bildirilen `signed` `long` veya `unsigned` `long`. `Signed` `long` eşanlamlısı olduğu `long`.|  
+||`long``long`|Büyük imzasız `long`.<br /><br /> Nesne türü `long long` olarak bildirilen `signed` `long long` veya `unsigned` `long long`. `signed` `long long` eşanlamlısı olduğu `long long`.|  
 ||`wchar_t`, `__wchar_t`|Türünde bir değişken `wchar_t` bir joker karakter veya birden çok baytlı karakter türü belirler. Varsayılan olarak, `wchar_t` yerel türünde, ancak kullanabileceğiniz [/Zc:wchar_t-](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) yapmak için `wchar_t` için typedef `unsigned short`. `__wchar_t` Türüdür Microsoft'a özgü eşanlamlısı yerel `wchar_t` türü.<br /><br /> L öneki, joker karakter türü belirlemek için bir karakter ya da dize sabit değeri önce kullanın.|  
 |Kayan nokta|`float`|Tür `float` en küçük kayan noktası türü.|  
 ||`double`|Tür `double` bir kayan büyük nokta türünü veya yazmak için eşittir `float`, ancak daha kısa veya buna eşit yazı tipi boyutu `long` `double`.<br /><br /> Microsoft özel: gösterimini `long double` ve `double` aynıdır. Ancak, `long double` ve `double` ayrı türleridir.|  

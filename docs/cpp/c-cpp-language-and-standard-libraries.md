@@ -1,27 +1,22 @@
 ---
-title: "C/C++ dil ve standart kitaplıkları | Microsoft Docs"
-ms.custom: 
+title: C/C++ dil ve standart kitaplıkları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: c26a6682-961a-43ef-ad33-2adc612f69ac
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42fcc58bcbff7be7b3b595f5b46882d5434dc314
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 66baee038c9ea1d46daff80250e007bd059c2e85
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cc-language-and-standard-libraries"></a>C/C++ dil ve standart kitaplıkları
 Bu bölümde belgelerin kılavuzları ve ISO standartları C ve C++ için Microsoft uygulaması için referans içerik içerir.  

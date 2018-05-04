@@ -1,12 +1,9 @@
 ---
-title: "Başlatıcılar | Microsoft Docs"
-ms.custom: 
+title: Başlatıcılar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - declarators, as initializers
 - initializers, array element
 ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be05c53e6f41c4df4d62bd4ba1920fcf57c1f0cb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 072b6a62bde2ab58909fd0c8dd1954e7d330ced5
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="initializers"></a>Başlatıcılar
 Bir başlatıcı bir değişkenin başlangıç değerini belirtir. Değişkenleri şu bağlamlarda başlatabilirsiniz:  
@@ -128,7 +123,7 @@ int main() {
 }  
 ```  
   
-### <a name="default_initialization"></a>Varsayılan başlatma  
+### <a name="default_initialization"></a> Varsayılan başlatma  
  Varsayılan başlatma sınıflar, yapılar ve birleşimleri için varsayılan bir Oluşturucu ile başlatma işlemi. Varsayılan oluşturucu veya hiçbir başlatma ifade ile çağrılabilir `new` anahtar sözcüğü:  
   
 ```cpp  
@@ -285,7 +280,7 @@ shared_ptr<int> sp = new int(1729); // the constructor is explicit; same error
   
 -   bir değişken ile başlatılmış `new` anahtar sözcüğü artı boş olmayan küme ayraçları veya parantez  
   
--   bir değişken ile başlatıldı`static_cast`  
+-   bir değişken ile başlatıldı `static_cast`  
   
 -   bir oluşturucu başlatıcı listesi ile temel sınıflar ve statik olmayan üye başlatılır  
   
@@ -370,7 +365,7 @@ int main() {
 }  
 ```  
   
-### <a name="agginit"></a>Toplu başlatma  
+### <a name="agginit"></a> Toplu başlatma  
  Toplama başlatma diziler veya sınıf türleri için (çoğunlukla yapılar veya birlikler) şunlara sahip olan bir liste başlatma biçimidir:  
   
 -   hiçbir özel veya korumalı üyeler  
@@ -531,7 +526,7 @@ int main()
  ![Ref türleri başlatma için karar grafiği](../cpp/media/vc38s71.gif "vc38S71")  
 Başvuru türleri başlatma için karar grafiği  
   
- Başvurular `volatile` türleri (olarak bildirilen `volatile` *typename*  **&**  *tanımlayıcısı*) ile başlatılmış `volatile` nesneleri aynı türde veya olarak bildirilmemiş nesnelerle `volatile`. Olamaz, ancak, ile başlatılması **const** bu tür nesneleri. Benzer şekilde, başvurular **const** türleri (olarak bildirilen **const** *typename*  **&**  *tanımlayıcısı* ) ile başlatılmış **const** aynı türde nesneler (veya bir dönüştürme türü veya olarak bildirilmemiş nesnelerle sahip herhangi bir şeyi **const**). Olamaz, ancak, ile başlatılması `volatile` bu tür nesneleri.  
+ Başvurular `volatile` türleri (olarak bildirilen `volatile` *typename *** &** *tanımlayıcısı*) ile başlatılmış `volatile` nesneleri aynı türde veya ile olarak bildirilmemiş nesneleri `volatile`. Olamaz, ancak, ile başlatılması **const** bu tür nesneleri. Benzer şekilde, başvurular **const** türleri (olarak bildirilen **const** *typename *** &** *tanımlayıcısı*) olabilir ile başlatılmış **const** aynı türde nesneler (veya bir dönüştürme türü veya olarak bildirilmemiş nesnelerle sahip herhangi bir şeyi **const**). Olamaz, ancak, ile başlatılması `volatile` bu tür nesneleri.  
   
  İle ya da nitelikli'ları değil başvuruları **const** veya `volatile` anahtar sözcüğü yalnızca hiçbiri bildirilen nesnelerle başlatılabilir **const** ya da `volatile`.  
   

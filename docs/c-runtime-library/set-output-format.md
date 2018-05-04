@@ -1,13 +1,10 @@
 ---
 title: _set_output_format | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - _set_output_format
 apilocation:
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - _set_output_format function
 - set_output_format function
 ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a0ad6631d9171e8fcdc59e13e60eda2cc729c79
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d61b17bb597028bec55edb148897929f178392d7
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setoutputformat"></a>_set_output_format
 Biçimlendirilmiş g/ç işlevleri tarafından kullanılan çıkış biçimlerini özelleştirir.  
@@ -58,16 +53,16 @@ unsigned int _set_output_format(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`format`  
+ [in] `format`  
  Kullanılacak biçim temsil eden bir değer.  
   
 ## <a name="return-value"></a>Dönüş değeri  
  Önceki çıktı biçimi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_set_output_format`biçimlendirilmiş g/ç işlevleri çıktısı gibi yapılandırmak için kullanılan [printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md). Şu anda bu işlev tarafından değiştirilebilen tek biçimlendirme kayan nokta numarası çıktı üstel görüntülenen basamak sayısı kuraldır.  
+ `_set_output_format` biçimlendirilmiş g/ç işlevleri çıktısı gibi yapılandırmak için kullanılan [printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md). Şu anda bu işlev tarafından değiştirilebilen tek biçimlendirme kayan nokta numarası çıktı üstel görüntülenen basamak sayısı kuraldır.  
   
- Varsayılan olarak, kayan çıkış noktası numaralarını işlevleri tarafından gibi `printf_s`, `wprintf_s`, ve ilgili işlevleri Visual C++ Standart C Kitaplığı'nda üç basamak değerini temsil eden için gerekli olsa bile bu üç basamak üs yazdırır Üs. Sıfır üç basamak değerine paneli için kullanılır. `_set_output_format`Böylece üçüncü basamak üs boyutu tarafından gerekli olmadıkça yalnızca iki basamak üs olarak yazdırılır bu davranışı değiştirmenize izin verir.  
+ Varsayılan olarak, kayan çıkış noktası numaralarını işlevleri tarafından gibi `printf_s`, `wprintf_s`, ve ilgili işlevleri Visual C++ Standart C Kitaplığı'nda üç basamak değerini temsil eden için gerekli olsa bile bu üç basamak üs yazdırır Üs. Sıfır üç basamak değerine paneli için kullanılır. `_set_output_format` Böylece üçüncü basamak üs boyutu tarafından gerekli olmadıkça yalnızca iki basamak üs olarak yazdırılır bu davranışı değiştirmenize izin verir.  
   
  İki basamaklı üs etkinleştirmek için bu işlev parametresi ile çağırın `_TWO_DIGIT_EXPONENT`, örnekte gösterildiği gibi. İki basamaklı üs devre dışı bırakmak için bu işlev bağımsız değişkeni 0 çağırın.  
   

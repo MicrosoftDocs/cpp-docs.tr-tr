@@ -1,12 +1,9 @@
 ---
 title: noalias | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/09/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - noalias_cpp
@@ -16,25 +13,23 @@ helpviewer_keywords:
 - noalias __declspec keyword
 - __declspec keyword [C++], noalias
 ms.assetid: efafa8b0-7f39-4edc-a81e-d287ae882c9b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fd57b10aba4298ff7facd725ab3ce1934ccf1ab
-ms.sourcegitcommit: f3c398b1c7dbf36ab71b5ca89d365b1913afa307
+ms.openlocfilehash: 1cbb5c1b4162f3326aade092c7e20ca42a825d13
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="noalias"></a>noalias
 
-**Microsoft Specific**
+**Microsoft özel**
 
-`noalias`bir işlev çağrısı değiştirmeyin veya başvuru görünür genel durum, anlamına gelir ve yalnızca işaret bellek değiştirir *doğrudan* işaretçi parametreleri (birinci düzey indirections) tarafından.
+`noalias` bir işlev çağrısı değiştirmeyin veya başvuru görünür genel durum, anlamına gelir ve yalnızca işaret bellek değiştirir *doğrudan* işaretçi parametreleri (birinci düzey indirections) tarafından.
 
-Bir işlevi olarak ek açıklama eklenmişse `noalias`, iyileştirici parametreleri kendilerini yanı sıra, yalnızca ilk düzeyi indirections işaretçi parametrelerinin başvurulan veya işlevinde değiştiren, kabul edilebilir. Görünür genel durum değil tanımlanan veya derleme kapsamı dışında başvurulan tüm veri kümesidir ve kendi adres alınmaz. Tüm kaynak dosyaları derleme kapsamıdır ([/LTCG (bağlama zamanı kodu oluşturma)](../build/reference/ltcg-link-time-code-generation.md) derlemeler) ya da tek bir kaynak dosyası (olmayan**/LTCG** yapı).
+Bir işlevi olarak ek açıklama eklenmişse `noalias`, iyileştirici parametreleri kendilerini yanı sıra, yalnızca ilk düzeyi indirections işaretçi parametrelerinin başvurulan veya işlevinde değiştiren, kabul edilebilir. Görünür genel durum değil tanımlanan veya derleme kapsamı dışında başvurulan tüm veri kümesidir ve kendi adres alınmaz. Tüm kaynak dosyaları derleme kapsamıdır ([/LTCG (bağlama zamanı kodu oluşturma)](../build/reference/ltcg-link-time-code-generation.md) derlemeler) ya da tek bir kaynak dosyası (olmayan **/LTCG** yapı).
 
 `noalias` Ek açıklama yalnızca açıklamalı işlev gövdesi içinde geçerlidir. Bir işlevi olarak işaretleme `__declspec(noalias)` işlev tarafından döndürülen işaretçileri yumuşatma etkilemez.
 

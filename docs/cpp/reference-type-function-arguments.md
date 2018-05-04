@@ -2,11 +2,8 @@
 title: Başvuru türü işlev bağımsız değişkenleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - function arguments [C++], reference-type
 - passing parameters [C++], reference-type arguments
 ms.assetid: 0a70e831-9e76-46c0-821d-aeba13d73cc0
-caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b94f6b89ec00cc044cbaa93a4f0f914860db71e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 83d78aad4285ad711581dbed1c88ef6b9a8a9b24
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reference-type-function-arguments"></a>Başvuru Türü İşlev Bağımsız Değişkenleri
 İşlevlere büyük nesneler yerine başvuruların geçirilmesi, genellikle daha etkili olur. Bu, derleyicinin nesnenin adresini nesneye erişmek için kullanılabilecek sözdizimini koruyarak geçirmesini sağlar. `Date` yapısını kullanan aşağıdaki örneği göz önünde bulundurun:  
@@ -81,7 +76,7 @@ long JulianFromGregorian( const Date& GDate );
   
  Bu prototip, `JulianFromGregorian` işlevinin bağımsız değişkenini değiştirmeyeceğini garanti eder.  
   
- Standart dönüştürme olduğundan olarak bir başvuru türü alıp örneklenmiş herhangi bir işlev onun yerine aynı türde bir nesne kabul edebilir *typename* için *typename*  **&** .  
+ Standart dönüştürme olduğundan olarak bir başvuru türü alıp örneklenmiş herhangi bir işlev onun yerine aynı türde bir nesne kabul edebilir *typename* için * typename ***&**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Başvuruları](../cpp/references-cpp.md)
+ [Başvurular](../cpp/references-cpp.md)

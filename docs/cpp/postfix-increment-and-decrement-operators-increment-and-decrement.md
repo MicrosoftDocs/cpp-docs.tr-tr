@@ -1,12 +1,9 @@
 ---
-title: "Sonek artırma ve azaltma işleçleri: ++ ve--| Microsoft Docs"
-ms.custom: 
+title: 'Sonek artırma ve azaltma işleçleri: ++ ve--| Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - --
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - operators [C++], postfix
 - decrement operators [C++]
 ms.assetid: 0204d5c8-51b0-4108-b8a1-074c5754d89c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e1d6c13da3023073f3d8b3e9625fa141253ba2c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: edfbb5076dfcbcbe511f8ec25c74f698cb82f33e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="postfix-increment-and-decrement-operators--and---"></a>Sonek Arttırma ve Azaltma İşleçleri: ++ ve --
 ## <a name="syntax"></a>Sözdizimi  
@@ -56,7 +51,7 @@ i++;
   
  Bir sonek işleci bir işlevin bağımsız değişkenine uygulandığında, bağımsız değişkenin değerinin işleve geçirilmeden önce artırılması veya azaltılması garanti edilmez.  Daha fazla bilgi için C++ standardındaki 1.9.17 bölümüne bakın.  
   
- Sonek artırma işlecinin türündeki nesneler dizisi için bir işaretçi uygulayarak **uzun** gerçekten dört işaretçinin iç gösterimi ekler. Daha önce başvurulan işaretçi bu davranışa neden  *n* başvurmak için bu dizinin th öğesi (*n*+ 1) th öğesi.  
+ Sonek artırma işlecinin türündeki nesneler dizisi için bir işaretçi uygulayarak **uzun** gerçekten dört işaretçinin iç gösterimi ekler. Daha önce başvurulan işaretçi bu davranışa neden *n*başvurmak için bu dizinin th öğesi (*n*+ 1) th öğesi.  
   
  Sonek artırma ve azaltma işleçleri sonek işlenenleri değiştirilebilir olmalıdır (değil **const**) l değerleri aritmetik veya işaretçi türü. Sonuç türü aynıdır *sonek ifade*, ancak artık l-değeri değil.  
   

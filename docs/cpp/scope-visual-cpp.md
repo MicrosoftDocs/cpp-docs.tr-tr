@@ -1,12 +1,9 @@
 ---
 title: Kapsam (Visual C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - functions [C++], scope
 - scope, C++ names
 ms.assetid: 81fecbb0-338b-4325-8332-49f33e716352
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55baa4496522336a5a64ee81daa7a8ce484534c0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 469fc76701161fda8116627c2b16fb4dfa63224e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="scope-visual-c"></a>Kapsam (Visual C++)
 C++ adları bir programı yalnızca belirli bölgelerde kullanılabilir. Bu alan adı "scope" adı verilir. Statik kapsam nesne göstermiyor adı "ömrü" kapsamı belirler. Kapsam ayrıca sınıf oluşturucular ve Yıkıcılar çağrıldığında ve kapsama yerel değişkenleri hazırlarken bir ad görünürlüğünü belirler. (Daha fazla bilgi için bkz: [oluşturucular](../cpp/constructors-cpp.md) ve [Yıkıcılar](../cpp/destructors-cpp.md).) Kapsam beş tür vardır:  
@@ -50,7 +45,7 @@ C++ adları bir programı yalnızca belirli bölgelerde kullanılabilir. Bu alan
   
      C++'da, dosya kapsamı olarak da bilinen ad alanı kapsamı değil.  
   
--   **Sınıf kapsamı** sınıf üyeleri adlara sahip sınıf kapsamı. Sınıf üyesi işlevleri yalnızca üye seçim işleçleri kullanarak erişilebilir (**.** veya  **->** ) veya işaretçi-üye işleçleri (**.\***  veya  **-> \*** ) bir nesneye veya nesnenin o sınıfın; işaretçi statik olmayan sınıf üyesi verilerinin o sınıfın nesnesine yerel olarak kabul edilir. Aşağıdaki sınıf bildirimi göz önünde bulundurun:  
+-   **Sınıf kapsamı** sınıf üyeleri adlara sahip sınıf kapsamı. Sınıf üyesi işlevleri yalnızca üye seçim işleçleri kullanarak erişilebilir (**.** veya **->**) veya işaretçi-üye işleçleri (**.\***  veya **-> \***) bir nesneye veya nesnenin o sınıfın; işaretçi statik olmayan sınıf üyesi verilerinin o sınıfın nesnesine yerel olarak kabul edilir. Aşağıdaki sınıf bildirimi göz önünde bulundurun:  
   
     ```  
     class Point  
@@ -71,7 +66,7 @@ C++ adları bir programı yalnızca belirli bölgelerde kullanılabilir. Bu alan
 ## <a name="hiding-names"></a>Adları Gizleme  
  Kapalı bir bloğunda bildirerek, bir ad gizleyebilirsiniz. Aşağıdaki şekilde `i` böylece ilişkili değişkeni gizleme iç bloğu içinde yeniden bildirilen `i` dış blok kapsamında.  
   
- ![Blok &#45; kapsam adı gizleme](../cpp/media/vc38sf1.png "vc38SF1")  
+ ![Blok&#45;kapsam adı gizleme](../cpp/media/vc38sf1.png "vc38SF1")  
 Kapsam engelleme ve gizleme adı  
   
  Çizimde gösterilen program çıktısı şöyledir:  
@@ -160,4 +155,4 @@ File-scoped i has the value: 7
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Temel kavramlar](../cpp/basic-concepts-cpp.md)
+ [Temel Kavramlar](../cpp/basic-concepts-cpp.md)

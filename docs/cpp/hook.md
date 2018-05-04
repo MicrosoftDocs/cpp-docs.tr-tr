@@ -1,12 +1,9 @@
 ---
 title: __hook | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - __hook_cpp
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - __hook keyword [C++]
 - event handlers [C++], connecting events to
 ms.assetid: f4cabb10-d293-4c0e-a1d2-4745ef9cc22c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfc9112c79279e3e5c419efbd12f5883349c0e94
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d46a9c593826e804c62ab67b8afa894912d15bd8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="hook"></a>__hook
 Bir işleyici yöntemi bir olay ile ilişkilendirir.  
@@ -48,7 +43,7 @@ long __hook(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- **&***SourceClass* `::` *oluşur*  
+ **&** *SourceClass* `::` *oluşur*  
  Olay işleyicisi yöntemi kanca olay yöntemi için bir işaretçi:  
   
 -   Yerel C++ olayları: *SourceClass* olay kaynağı sınıftır ve *oluşur* etkinliğidir.  
@@ -69,7 +64,7 @@ long __hook(
   
 -   Yönetilen nesne işaretçisi (için yönetilen olayları).  
   
- **&***ReceiverClass* `::``HandlerMethod`  
+ **&** *ReceiverClass* `::` `HandlerMethod`  
  Bir olaya sayfaya için olay işleyicisi yöntemi için bir işaretçi. İşleyici yöntemi bir sınıf veya aynı bir başvuru olarak belirtilir; sınıf adı belirtmezseniz, `__hook` içinde çağırıldığı emin olmanız için sınıf varsayar.  
   
 -   Yerel C++ olayları: *ReceiverClass* olay alıcı sınıftır ve `HandlerMethod` işleyicisi.  
@@ -89,9 +84,9 @@ long __hook(
   
  İki tür vardır `__hook`. Çoğu durumda, ilk (dört bağımsız değişkeni) form özellikle, COM Olay alıcıları için kullanabileceğiniz *layout_dependent* parametresinin [event_receiver](../windows/event-receiver.md) özniteliği **false** .  
   
- Bu durumlarda yöntemlerden birini bir olayda tetiklemeden önce bir arabirimdeki tüm yöntemler kanca gerekmez; Olay işleme yöntemi sayfaya gerekir. İkinci (iki bağımsız değişkeni) biçiminde kullanabilirsiniz `__hook` yalnızca, bir COM olay alıcısı için *layout_dependent***= true**.  
+ Bu durumlarda yöntemlerden birini bir olayda tetiklemeden önce bir arabirimdeki tüm yöntemler kanca gerekmez; Olay işleme yöntemi sayfaya gerekir. İkinci (iki bağımsız değişkeni) biçiminde kullanabilirsiniz `__hook` yalnızca, bir COM olay alıcısı için * layout_dependent ***= true**.  
   
- `__hook`bir long değeri döndürür. Sıfır olmayan bir dönüş değeri (yönetilen olayları throw bir özel durum) bir hata oluştuğunu gösterir.  
+ `__hook` Bir long değeri döndürür. Sıfır olmayan bir dönüş değeri (yönetilen olayları throw bir özel durum) bir hata oluştuğunu gösterir.  
   
  Derleyici bir olay varlığını denetler ve olay imzası temsilci imzayla kabul eder.  
   

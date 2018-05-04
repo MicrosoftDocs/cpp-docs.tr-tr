@@ -1,13 +1,10 @@
 ---
-title: "Sayısal değer işlevleri dizesi | Microsoft Docs"
-ms.custom: 
+title: Sayısal değer işlevleri dizesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apilocation:
 - msvcr80.dll
 - msvcr110.dll
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - parsing, numeric strings
 - string conversion, to numeric values
 ms.assetid: 11cbd9ce-033b-4914-bf66-029070e7e385
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68586bac573018bceb7dc982625ff6a859d18871
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2c7c793590daee13841439fc7c372ff02d18f83b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="string-to-numeric-value-functions"></a>Sayısal Değer İşlevleri Dizesi
 -   [strtod, _strtod_l, wcstod, _wcstod_l](../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)  
@@ -67,17 +62,17 @@ ms.lasthandoff: 12/21/2017
   
  Kullanıcı tarafından sağlanan işaretçiyi bir dönüştürme son karakter ayarlanmamışsa **NULL** çağrısı zaman, tarama durduruldu karakteri gösteren bir işaretçi var. Bunun yerine depolanacak. Hiçbir dönüştürme gerçekleştirilebiliyorsa (hiç geçerli basamak bulunamadı veya geçersiz taban belirtildi), dize işaretçi değeri bu adresinde depolanır.  
   
- `strtod`aşağıdaki biçimde bir dize bekliyor:  
+ `strtod` aşağıdaki biçimde bir dize bekliyor:  
   
- [*boşluk*] [*oturum*] [`digits`] [**.** `digits`] [{**d** &#124; **D** &#124; **e** &#124; **E**} [*oturum*]`digits`]  
+ [*boşluk*] [*oturum*] [`digits`] [**.** `digits`] [{**d** &#124; **D** &#124; **e** &#124; **E**} [*oturum*] `digits`]  
   
  A *boşluk* , göz ardı edilir; boşluk veya sekmesinde karakterlerden oluşabilir *oturum* da artı (**+**) veya eksi (**-**); ve `digits` bir veya daha fazla ondalık basamakların. Hiç basamak önce taban karakter görünüyorsa, en az bir taban karakter sonra görünmesi gerekir. Ondalık basamak giriş harfini oluşur üs tarafından izlenebilir (**d**, **D**, **e**, veya **E**) ve bir isteğe bağlı olarak İmzalı tam sayı. Ne üs bir parçası, ne de bir taban karakter görünürse, bir taban karakter dizesindeki son basamaklı izleyin varsayılır. Bu form sığmayan ilk karakter tarama durdurur.  
   
  `strtol`, `strtoul`, `_strtoi64`, Ve `_strtoui64` işlevleri beklediğiniz aşağıdaki biçimde bir dize:  
   
- [*boşluk*] [{ **+**  &#124;  **-** }] [**0** [{ **x** &#124; **X** }]] [`digits`]  
+ [*boşluk*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [`digits`]  
   
- Temel bağımsız 2 ile 36 arasında değilse, sayıyı temel olarak kullanılır. 0 ise, için dönüştürme son işaretçiyi tarafından başvurulan ilk karakter temel belirlemek için kullanılır. İlk karakter 0 ve ikinci karakter 'x' veya 'X' değil, dize sekizlik tamsayı olarak yorumlanır; Aksi takdirde, bu ondalık bir sayı olarak yorumlanır. İlk karakter '0' dir ve ikinci karakteri 'x' veya 'X', dize onaltılık bir tamsayı olarak yorumlanır. İlk karakteri ' 1' üzerinden ' 9'. dize ondalık bir tamsayı olarak yorumlanır. 'A' ile 'z' harf (veya 'A'-'Z') 35 10 değerler atanır; yalnızca atanan değerleri olan harf değerinden *temel* izin verilir. `strtoul`ve `_strtoui64` artı izin ver (**+**) veya eksi (**-**) oturum önek; önüne eksi işareti dönüş değeri tasarruflarını olduğunu gösterir.  
+ Temel bağımsız 2 ile 36 arasında değilse, sayıyı temel olarak kullanılır. 0 ise, için dönüştürme son işaretçiyi tarafından başvurulan ilk karakter temel belirlemek için kullanılır. İlk karakter 0 ve ikinci karakter 'x' veya 'X' değil, dize sekizlik tamsayı olarak yorumlanır; Aksi takdirde, bu ondalık bir sayı olarak yorumlanır. İlk karakter '0' dir ve ikinci karakteri 'x' veya 'X', dize onaltılık bir tamsayı olarak yorumlanır. İlk karakteri ' 1' üzerinden ' 9'. dize ondalık bir tamsayı olarak yorumlanır. 'A' ile 'z' harf (veya 'A'-'Z') 35 10 değerler atanır; yalnızca atanan değerleri olan harf değerinden *temel* izin verilir. `strtoul` ve `_strtoui64` artı izin ver (**+**) veya eksi (**-**) oturum önek; önüne eksi işareti dönüş değeri tasarruflarını olduğunu gösterir.  
   
  Çıkış değerini ayarı tarafından etkilenen `LC_NUMERIC` yerel kategori ayarı; bkz: [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, yerel ayar parametresi kullanmasını dışında aynıdır Bunun yerine geçirildi.  
   
@@ -98,7 +93,7 @@ ms.lasthandoff: 12/21/2017
   
  **_I64_MAX**, _**I64_MIN**, ve **_UI64_MAX** SINIRLARI tanımlanır. H.  
   
- `wcstod`, `wcstol`, `wcstoul`, `_wcstoi64`, ve `_wcstoui64` joker karakter sürümleri `strtod`, `strtol`, `strtoul`, `_strtoi64`, ve `_strtoui64`sırasıyla; işaretçi bir Bu joker karakter işlevlerin her biri dönüştürme son bağımsız değişkeni bir joker karakter dizesidir. Aksi durumda, tek bayt karakter karşılığı Bu joker karakter işlevlerin her biri aynı şekilde davranır.  
+ `wcstod`, `wcstol`, `wcstoul`, `_wcstoi64`, ve `_wcstoui64` joker karakter sürümleri `strtod`, `strtol`, `strtoul`, `_strtoi64`, ve `_strtoui64`sırasıyla; işaretçi bir end-in-dönüştürme Bu joker karakter işlevlerin her biri bağımsız değişkeni bir joker karakter dizesidir. Aksi durumda, tek bayt karakter karşılığı Bu joker karakter işlevlerin her biri aynı şekilde davranır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri dönüştürme](../c-runtime-library/data-conversion.md)   

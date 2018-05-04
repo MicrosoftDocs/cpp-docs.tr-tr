@@ -1,12 +1,9 @@
 ---
 title: __restrict | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - __restrict_cpp
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - __restrict keyword [C++]
 ms.assetid: 2d151b4d-f930-49df-bd16-d8757ec7fa83
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2c21872c5d6fe6000038a3a2f4fe39451b566dd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d96abd70990f1c01229004e9be000ec4e35a8595
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="restrict"></a>__restrict
 Gibi **__declspec ( [kısıtlamak](../cpp/restrict.md) )** değiştiricisi, `__restrict` anahtar sözcüğü gösteren bir simge geçerli kapsamdaki diğer adı değil. `__restrict` anahtar sözcüğü, `__declspec ( restrict )` değiştiricisinden aşağıdaki şekilde farklıdır:  

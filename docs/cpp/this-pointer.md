@@ -1,12 +1,9 @@
 ---
-title: "Bu işaretçinin | Microsoft Docs"
-ms.custom: 
+title: Bu işaretçinin | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - this_cpp
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - pointers, to class instance
 - this pointer
 ms.assetid: 92e3256a-4ad9-4d46-8be1-d77fad90791f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 814e7518c6ed7052abc93b9e4705be93172b1e7f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7e6a1df3bb262a814c641f5bfbcee070ec5de344
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="this-pointer"></a>this İşaretçisi
 **Bu** işaretçidir yalnızca statik olmayan üye işlevleri içinde erişilebilir bir işaretçi bir **sınıfı**, `struct`, veya **UNION** türü. Üye işlevinin çağrıldığı nesneye işaret eder. Statik üye işlevleri sahip bir **bu** işaretçi.  
@@ -183,7 +178,7 @@ int main()
   
  Türü **bu** bir üye işlevi aşağıdaki sözdizimi tarafından açıklanan nerede *MS niteleyici listesinde* olabilir ve üye işlevleri bildirimcisi belirlenir **const**veya **volatile** (veya her ikisi de) ve *sınıf türü* sınıfı adıdır:  
   
- *sınıf türü [MS-niteleyici-list]*  **\* const bu**   
+ *sınıf türü [MS-niteleyici-list]* **\* const bu**  
   
  Diğer bir deyişle, **bu** her zaman bir const; işaretçidir onu atanamaz.  **Const** veya `volatile` gösterdiği sınıf örneği için üye işlevi bildiriminde kullanılan niteleyicileri Uygula **bu** bu işlev kapsamında.  
   

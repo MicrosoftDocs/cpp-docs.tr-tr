@@ -4,7 +4,7 @@ ms.custom: ''
 ms.date: 04/06/2018
 ms.technology:
 - cpp-standard-libraries
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.runtime
 dev_langs:
@@ -17,14 +17,13 @@ helpviewer_keywords:
 ms.assetid: de6f5ac4-2226-4dad-be9f-deeb31138c9d
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01bdb786c003894b4ab1bf6418aa9c492e909602
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: fd18cf5cfdd2583e866045000ddcc992a573b199
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="universal-c-runtime-routines-by-category"></a>Kategorilere göre Evrensel C çalışma zamanı yordamları
 

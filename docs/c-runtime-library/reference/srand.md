@@ -2,11 +2,8 @@
 title: srand | Microsoft Docs
 ms.custom: ''
 ms.date: 1/02/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - srand
@@ -39,14 +36,13 @@ helpviewer_keywords:
 - starting points
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a01e56159bf4f04f2c8a53f39e3fcd1e7dd450b5
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: e2b527561e312ce9c50dce106a243d7e49a1d303
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="srand"></a>srand
 

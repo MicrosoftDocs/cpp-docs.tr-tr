@@ -1,12 +1,9 @@
 ---
-title: "Bit düzeyinde AND işleci: &amp; | Microsoft Docs"
-ms.custom: 
+title: 'Bit düzeyinde AND işleci: &amp; | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - bitand
@@ -17,19 +14,17 @@ helpviewer_keywords:
 - bitwise operators [C++], AND operator
 - '& operator [C++], bitwise operators'
 ms.assetid: 76f40de3-c417-47b9-8a77-532f3fc990a5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3d74a39c68e4c16e55837a87e027e9e5991351f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: aeacac8afb7a8195642ebbfb6aac7c697544cd16
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="bitwise-and-operator-amp"></a>Bit düzeyinde AND işleci:&amp;
+# <a name="bitwise-and-operator-amp"></a>Bit düzeyinde AND işleci: &amp;
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
@@ -48,7 +43,7 @@ expression
  Bit düzeyinde AND işleci için iki işlenen tam sayı türleri olmalıdır. Olağan aritmetik dönüştürmeler ele [standart dönüşümler](standard-conversions.md), işlenen uygulanır.  
   
 ## <a name="operator-keyword-for-"></a>Operator anahtar sözcüğü için &  
- `bitand` İşlecidir metin denk  **&** . Erişim için iki yolla `bitand` programlarınızı işleci: üst bilgi dosyasını dahil `iso646.h`, veya ile derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneği.  
+ `bitand` İşlecidir metin denk **&**. Erişim için iki yolla `bitand` programlarınızı işleci: üst bilgi dosyasını dahil `iso646.h`, veya ile derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneği.  
   
 ## <a name="example"></a>Örnek  
   

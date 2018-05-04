@@ -1,12 +1,12 @@
 ---
-title: "CTaskDialog sınıfı | Microsoft Docs"
-ms.custom: 
+title: CTaskDialog sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CTaskDialog
@@ -125,17 +125,17 @@ helpviewer_keywords:
 - CTaskDialog [MFC], ShowDialog
 - CTaskDialog [MFC], TaskDialogCallback
 ms.assetid: 1991ec98-ae56-4483-958b-233809c8c559
-caps.latest.revision: 
+caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ecde926a27fbf4fa74cabdec6ff4d54f7d89216
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
-ms.translationtype: MT
+ms.openlocfilehash: 2ebe8b22c0bd05a36f0bcdbfa21ad97105ee1ae2
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog sınıfı
 İşlevleri bir açılır iletişim kutusu bir ileti kutusu gibi ancak kullanıcıya ek bilgileri görüntüleyebilirsiniz. `CTaskDialog` Kullanıcıdan bilgi toplama işlevleri de içerir.  
@@ -219,7 +219,7 @@ class CTaskDialog : public CObject
 |-|-|  
 |`m_aButtons`|Komut düğmesi denetimleri için bir dizi `CTaskDialog`.|  
 |`m_aRadioButtons`|Radyo düğmesi denetimleri için bir dizi `CTaskDialog`.|  
-|`m_bVerified`|`TRUE`Doğrulama onay kutusunun işaretli gösterir; `FALSE` olmayan gösterir.|  
+|`m_bVerified`|`TRUE` Doğrulama onay kutusunun işaretli gösterir; `FALSE` olmayan gösterir.|  
 |`m_footerIcon`|Simgenin altbilgisinde yer `CTaskDialog`.|  
 |`m_hWnd`|Penceresi için bir tanıtıcı `CTaskDialog`.|  
 |`m_mainIcon`|Ana simgesini `CTaskDialog`.|  
@@ -246,7 +246,7 @@ class CTaskDialog : public CObject
 |`m_strVerification`|Dize, `CTaskDialog` doğrulama onay kutusunun sağında görüntüler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CTaskDialog` Sınıfı standart Windows ileti kutusu değiştirir ve kullanıcıdan bilgi toplamak için yeni denetimleri gibi ek işlevleri içerir. Bu sınıf MFC kitaplığında, [!INCLUDE[vs_dev10_long](../../build/includes/vs_dev10_long_md.md)]. `CTaskDialog` Başlayarak kullanılabilir [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. Windows'un önceki sürümlerinde görüntüleyemiyor `CTaskDialog` nesnesi. Kullanım `CTaskDialog::IsSupported` çalışma zamanında geçerli kullanıcının Görev iletişim kutusu görüntüleyip görüntülemeyeceğini belirlemek için. Standart Windows ileti kutusu yine de desteklenen [!INCLUDE[vs_dev10_long](../../build/includes/vs_dev10_long_md.md)].  
+ `CTaskDialog` Sınıfı standart Windows ileti kutusu değiştirir ve kullanıcıdan bilgi toplamak için yeni denetimleri gibi ek işlevleri içerir. Bu sınıf MFC kitaplığında, [!INCLUDE[vs_dev10_long](../../build/includes/vs_dev10_long_md.md)]. `CTaskDialog` Windows Vista'dan itibaren kullanılabilir. Windows'un önceki sürümlerinde görüntüleyemiyor `CTaskDialog` nesnesi. Kullanım `CTaskDialog::IsSupported` çalışma zamanında geçerli kullanıcının Görev iletişim kutusu görüntüleyip görüntülemeyeceğini belirlemek için. Standart Windows ileti kutusu yine de desteklenen [!INCLUDE[vs_dev10_long](../../build/includes/vs_dev10_long_md.md)].  
   
  `CTaskDialog` Yalnızca uygulamanızı Unicode kitaplığını kullanarak oluşturduğunuzda kullanılabilir.  
   
@@ -258,11 +258,11 @@ class CTaskDialog : public CObject
 CTaskDialog örnek  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Gereken en düşük işletim sistemi:**[!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]  
+ **Gereken en düşük işletim sistemi:** Windows Vista  
   
  **Başlık:** afxtaskdialog.h  
   
-##  <a name="addcommandcontrol"></a>CTaskDialog::AddCommandControl  
+##  <a name="addcommandcontrol"></a>  CTaskDialog::AddCommandControl  
  Yeni bir komut düğmesi denetim ekler `CTaskDialog`.  
   
 ```  
@@ -274,16 +274,16 @@ void AddCommandControl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nCommandControlID`  
+ [in] `nCommandControlID`  
  Komut denetimi kimlik numarası.  
   
- [in]`strCaption`  
+ [in] `strCaption`  
  Dize, `CTaskDialog` kullanıcıya görüntüler. Bu dize komutunun amacı açıklamak için kullanın.  
   
- [in]`bEnabled`  
+ [in] `bEnabled`  
  Yeni düğmesi etkin veya devre dışı olduğunu gösteren bir Boole parametresi.  
   
- [in]`bRequiresElevation`  
+ [in] `bRequiresElevation`  
  Bir komut yükseltme gerekli olup olmadığını gösterir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -294,7 +294,7 @@ void AddCommandControl(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#2](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_1.cpp)]  
   
-##  <a name="addradiobutton"></a>CTaskDialog::AddRadioButton  
+##  <a name="addradiobutton"></a>  CTaskDialog::AddRadioButton  
  Radyo düğmesini ekler `CTaskDialog`.  
   
 ```  
@@ -305,13 +305,13 @@ void CTaskDialog::AddRadioButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nRadioButtonID`  
+ [in] `nRadioButtonID`  
  Radyo düğmesi kimliği sayısı.  
   
- [in]`strCaption`  
+ [in] `strCaption`  
  Dize, `CTaskDialog` yanındaki radyo düğmesini görüntüler.  
   
- [in]`bEnabled`  
+ [in] `bEnabled`  
  Radyo düğmesi etkin olup olmadığını belirten bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -322,7 +322,7 @@ void CTaskDialog::AddRadioButton(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#3](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_2.cpp)]  
   
-##  <a name="clickcommandcontrol"></a>CTaskDialog::ClickCommandControl  
+##  <a name="clickcommandcontrol"></a>  CTaskDialog::ClickCommandControl  
  Program aracılığıyla bir komut düğmesi denetimi veya ortak düğmesine tıklar.  
   
 ```  
@@ -331,13 +331,13 @@ void ClickCommandControl(int nCommandControlID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nCommandControlID`  
+ [in] `nCommandControlID`  
  Komut Kimliği denetiminin'ı tıklatın.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem windows ileti oluşturur `TDM_CLICK_BUTTON`.  
   
-##  <a name="clickradiobutton"></a>CTaskDialog::ClickRadioButton  
+##  <a name="clickradiobutton"></a>  CTaskDialog::ClickRadioButton  
  Program aracılığıyla bir radyo düğmesine tıklar.  
   
 ```  
@@ -346,13 +346,13 @@ void ClickRadioButton(int nRadioButtonID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nRadioButtonID`  
+ [in] `nRadioButtonID`  
  Radyo düğmesini tıklatın kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem windows ileti oluşturur `TDM_CLICK_RADIO_BUTTON`.  
   
-##  <a name="ctaskdialog"></a>CTaskDialog::CTaskDialog  
+##  <a name="ctaskdialog"></a>  CTaskDialog::CTaskDialog  
  Bir örneğini oluşturur [CTaskDialog sınıfı](../../mfc/reference/ctaskdialog-class.md).  
   
 ```  
@@ -377,28 +377,28 @@ CTaskDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`strContent`  
+ [in] `strContent`  
  İçeriği için kullanılacak dizesi `CTaskDialog`.  
   
- [in]`strMainInstruction`  
+ [in] `strMainInstruction`  
  Ana yönergesinin `CTaskDialog`.  
   
- [in]`strTitle`  
+ [in] `strTitle`  
  Başlığı `CTaskDialog`.  
   
- [in]`nCommonButtons`  
+ [in] `nCommonButtons`  
  Maske eklemek için ortak düğmelerin `CTaskDialog`.  
   
- [in]`nTaskDialogOptions`  
+ [in] `nTaskDialogOptions`  
  İçin kullanılacak seçenekleri kümesi `CTaskDialog`.  
   
- [in]`strFooter`  
+ [in] `strFooter`  
  Altbilgi kullanılacak dize.  
   
- [in]`nIDCommandControlsFirst`  
+ [in] `nIDCommandControlsFirst`  
  İlk komut dizesi kimliği.  
   
- [in]`nIDCommandControlsLast`  
+ [in] `nIDCommandControlsLast`  
  Son komut dizesi kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -411,7 +411,7 @@ CTaskDialog(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
   
-##  <a name="domodal"></a>CTaskDialog::DoModal  
+##  <a name="domodal"></a>  CTaskDialog::DoModal  
  Gösterir `CTaskDialog` ve kalıcı hale getirir.  
   
 ```  
@@ -419,7 +419,7 @@ INT_PTR DoModal (HWND hParent = ::GetActiveWindow());
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hParent`  
+ [in] `hParent`  
  İçin üst pencere `CTaskDialog`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -433,7 +433,7 @@ INT_PTR DoModal (HWND hParent = ::GetActiveWindow());
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
   
-##  <a name="getcommonbuttoncount"></a>CTaskDialog::GetCommonButtonCount  
+##  <a name="getcommonbuttoncount"></a>  CTaskDialog::GetCommonButtonCount  
  Ortak düğmeleri sayısını alır.  
   
 ```  
@@ -448,7 +448,7 @@ int GetCommonButtonCount() const;
   
  Düğmelerin numaralandırılmış listesini CommCtrl.h içinde sağlanır.  
   
-##  <a name="getcommonbuttonflag"></a>CTaskDialog::GetCommonButtonFlag  
+##  <a name="getcommonbuttonflag"></a>  CTaskDialog::GetCommonButtonFlag  
  Windows düğme ortak düğme türü için ilişkili bir standart dönüştürür [CTaskDialog sınıfı](../../mfc/reference/ctaskdialog-class.md).  
   
 ```  
@@ -456,13 +456,13 @@ int GetCommonButtonFlag(int nButtonId) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nButtonId`  
+ [in] `nButtonId`  
  Standart Windows düğme değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Buna karşılık gelen değer `CTaskDialog` ortak düğmesi. Bu yöntem, karşılık gelen ortak düğmesi yoksa 0 döndürür.  
   
-##  <a name="getcommonbuttonid"></a>CTaskDialog::GetCommonButtonId  
+##  <a name="getcommonbuttonid"></a>  CTaskDialog::GetCommonButtonId  
  İle ilişkili ortak düğmesi türlerinden birini dönüştürür [CTaskDialog sınıfı](../../mfc/reference/ctaskdialog-class.md) standart Windows düğme.  
   
 ```  
@@ -470,13 +470,13 @@ int GetCommonButtonId(int nFlag);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nFlag`  
+ [in] `nFlag`  
  Ortak düğme türü ile ilişkili `CTaskDialog` sınıfı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Karşılık gelen standart Windows düğme değeri. Karşılık gelen Windows düğmesi yoksa, yöntem 0 döndürür.  
   
-##  <a name="getoptions"></a>CTaskDialog::GetOptions  
+##  <a name="getoptions"></a>  CTaskDialog::GetOptions  
  Bu seçenek bayraklarını döndürür `CTaskDialog`.  
   
 ```  
@@ -492,7 +492,7 @@ int GetOptions() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
   
-##  <a name="getselectedcommandcontrolid"></a>CTaskDialog::GetSelectedCommandControlID  
+##  <a name="getselectedcommandcontrolid"></a>  CTaskDialog::GetSelectedCommandControlID  
  Seçili komut düğmesi denetimini döndürür.  
   
 ```  
@@ -508,7 +508,7 @@ int GetSelectedCommandControlID() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#2](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_1.cpp)]  
   
-##  <a name="getselectedradiobuttonid"></a>CTaskDialog::GetSelectedRadioButtonID  
+##  <a name="getselectedradiobuttonid"></a>  CTaskDialog::GetSelectedRadioButtonID  
  Seçili radyo düğmesinin döndürür.  
   
 ```  
@@ -524,7 +524,7 @@ int GetSelectedRadioButtonID() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#3](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_2.cpp)]  
   
-##  <a name="getverificationcheckboxstate"></a>CTaskDialog::GetVerificationCheckboxState  
+##  <a name="getverificationcheckboxstate"></a>  CTaskDialog::GetVerificationCheckboxState  
  Doğrulama onay kutusunun durumunu alır.  
   
 ```  
@@ -532,12 +532,12 @@ BOOL GetVerificationCheckboxState() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`onay kutusu işaretli değilse `FALSE` değilse.  
+ `TRUE` onay kutusu işaretli değilse `FALSE` değilse.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#5](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_4.cpp)]  
   
-##  <a name="iscommandcontrolenabled"></a>CTaskDialog::IsCommandControlEnabled  
+##  <a name="iscommandcontrolenabled"></a>  CTaskDialog::IsCommandControlEnabled  
  Komut düğmesi denetimi veya düğmesi etkin olup olmadığını belirler.  
   
 ```  
@@ -545,11 +545,11 @@ BOOL IsCommandControlEnabled(int nCommandControlID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nCommandControlID`  
+ [in] `nCommandControlID`  
  Test etmek için komut düğmesi denetimi veya Kimliğini düğmesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Denetim etkinse, `FALSE` değilse.  
+ `TRUE` Denetim etkinse, `FALSE` değilse.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Hem komut düğmesi denetimleri kullanılabilirliğini ve ortak düğmelerinin belirlemek için bu yöntemi kullanabilirsiniz `CTaskDialog Class`.  
@@ -559,7 +559,7 @@ BOOL IsCommandControlEnabled(int nCommandControlID) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#2](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_1.cpp)]  
   
-##  <a name="isradiobuttonenabled"></a>CTaskDialog::IsRadioButtonEnabled  
+##  <a name="isradiobuttonenabled"></a>  CTaskDialog::IsRadioButtonEnabled  
  Radyo düğmesi etkin olup olmadığını belirler.  
   
 ```  
@@ -567,11 +567,11 @@ BOOL IsRadioButtonEnabled(int nRadioButtonID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nRadioButtonID`  
+ [in] `nRadioButtonID`  
  Test etmek için radyo düğmesi kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`radyo düğmesi etkinleştirilirse, `FALSE` değilse.  
+ `TRUE` radyo düğmesi etkinleştirilirse, `FALSE` değilse.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `nRadioButtonID` geçerli bir tanımlayıcı değil için bir radyo düğmesi, bu yöntem bir özel durum oluşturur.  
@@ -579,7 +579,7 @@ BOOL IsRadioButtonEnabled(int nRadioButtonID) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#3](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_2.cpp)]  
   
-##  <a name="issupported"></a>CTaskDialog::IsSupported  
+##  <a name="issupported"></a>  CTaskDialog::IsSupported  
  Uygulamayı çalıştıran bilgisayarın destekleyip desteklemediğini belirler `CTaskDialog`.  
   
 ```  
@@ -587,7 +587,7 @@ static BOOL IsSupported();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`bilgisayar destekliyorsa `CTaskDialog`; `FALSE` Aksi takdirde.  
+ `TRUE` bilgisayar destekliyorsa `CTaskDialog`; `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çalışma zamanında uygulamanızı çalıştıran bilgisayar destekleyip desteklemediğini belirlemek için bu işlevi kullanın `CTaskDialog Class`. Bilgisayar desteklemiyor, `CTaskDialog`, kullanıcıya bilgi iletişim başka bir yöntem sağlamanız. Kullanmaya çalışırsa, uygulamanızın kilitleniyor bir `CTaskDialog` desteği olmayan bir bilgisayarda `CTaskDialog` sınıfı.  
@@ -595,7 +595,7 @@ static BOOL IsSupported();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#1](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_5.cpp)]  
   
-##  <a name="loadcommandcontrols"></a>CTaskDialog::LoadCommandControls  
+##  <a name="loadcommandcontrols"></a>  CTaskDialog::LoadCommandControls  
  Komut düğmesi denetimleri dize tablodan veri kullanarak ekler.  
   
 ```  
@@ -605,10 +605,10 @@ void LoadCommandControls(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nIDCommandControlsFirst`  
+ [in] `nIDCommandControlsFirst`  
  İlk komut dizesi kimliği.  
   
- [in]`nIDCommandControlsLast`  
+ [in] `nIDCommandControlsLast`  
  Son komut dizesi kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -619,7 +619,7 @@ void LoadCommandControls(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#2](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_1.cpp)]  
   
-##  <a name="loadradiobuttons"></a>CTaskDialog::LoadRadioButtons  
+##  <a name="loadradiobuttons"></a>  CTaskDialog::LoadRadioButtons  
  Radyo düğmesi denetimini dize tablodan veri kullanarak ekler.  
   
 ```  
@@ -629,10 +629,10 @@ void LoadRadioButtons(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nIDRadioButtonsFirst`  
+ [in] `nIDRadioButtonsFirst`  
  Birinci radyo düğmesini dize kimliği.  
   
- [in]`nIDRadioButtonsLast`  
+ [in] `nIDRadioButtonsLast`  
  Son radyo düğmesi dize kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -643,7 +643,7 @@ void LoadRadioButtons(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#3](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_2.cpp)]  
   
-##  <a name="navigateto"></a>CTaskDialog::NavigateTo  
+##  <a name="navigateto"></a>  CTaskDialog::NavigateTo  
  Odağı diğerine aktarır `CTaskDialog`.  
   
 ```  
@@ -652,13 +652,13 @@ void NavigateTo(CTaskDialog& oTaskDialog) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`oTaskDialog`  
+ [in] `oTaskDialog`  
  `CTaskDialog` Odağı alır.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem geçerli gizler `CTaskDialog` zaman görüntüler `oTaskDialog`. `oTaskDialog` Geçerli ile aynı konumda görüntülenen `CTaskDialog`.  
   
-##  <a name="oncommandcontrolclick"></a>CTaskDialog::OnCommandControlClick  
+##  <a name="oncommandcontrolclick"></a>  CTaskDialog::OnCommandControlClick  
  Kullanıcı komut düğmesi denetimi tıklattığında framework bu yöntemi çağırır.  
   
 ```  
@@ -666,7 +666,7 @@ virtual HRESULT OnCommandControlClick(int nCommandControlID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nCommandControlID`  
+ [in] `nCommandControlID`  
  Seçilen kullanıcı komut düğmesi denetimi kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -675,7 +675,7 @@ virtual HRESULT OnCommandControlClick(int nCommandControlID);
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta özel davranışı uygulamak için bu yöntemi geçersiz kılın.  
   
-##  <a name="oncreate"></a>CTaskDialog::OnCreate  
+##  <a name="oncreate"></a>  CTaskDialog::OnCreate  
  Oluşturur sonra framework bu yöntemi çağırır `CTaskDialog`.  
   
 ```  
@@ -688,7 +688,7 @@ virtual HRESULT OnCreate();
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta özel davranışı uygulamak için bu yöntemi geçersiz kılın.  
   
-##  <a name="ondestroy"></a>CTaskDialog::OnDestroy  
+##  <a name="ondestroy"></a>  CTaskDialog::OnDestroy  
  Önce bozar hemen framework bu yöntemi çağırır `CTaskDialog`.  
   
 ```  
@@ -701,7 +701,7 @@ virtual HRESULT OnDestroy();
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta özel davranışı uygulamak için bu yöntemi geçersiz kılın.  
   
-##  <a name="onexpandbuttonclick"></a>CTaskDialog::OnExpandButtonClick  
+##  <a name="onexpandbuttonclick"></a>  CTaskDialog::OnExpandButtonClick  
  Kullanıcı genişletme düğmesini tıklattığında framework bu yöntemi çağırır.  
   
 ```  
@@ -709,7 +709,7 @@ virtual HRESULT OnExpandButtonClicked(BOOL bExpanded);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bExpanded`  
+ [in] `bExpanded`  
  Ek bilgiler görüntülenir sıfır olmayan bir değer gösterir; ek bilgi gizli 0 gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -718,7 +718,7 @@ virtual HRESULT OnExpandButtonClicked(BOOL bExpanded);
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta özel davranışı uygulamak için bu yöntemi geçersiz kılın.  
   
-##  <a name="onhelp"></a>CTaskDialog::OnHelp  
+##  <a name="onhelp"></a>  CTaskDialog::OnHelp  
  Kullanıcı Yardım istediğinde framework bu yöntemi çağırır.  
   
 ```  
@@ -731,7 +731,7 @@ virtual HRESULT OnHelp();
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta özel davranışı uygulamak için bu yöntemi geçersiz kılın.  
   
-##  <a name="onhyperlinkclick"></a>CTaskDialog::OnHyperlinkClick  
+##  <a name="onhyperlinkclick"></a>  CTaskDialog::OnHyperlinkClick  
  Kullanıcı bir köprüyü tıklattığında framework bu yöntemi çağırır.  
   
 ```  
@@ -739,7 +739,7 @@ virtual HRESULT OnHyperlinkClick(const CString& strHref);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`strHref`  
+ [in] `strHref`  
  Köprüyü temsil eden dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -750,7 +750,7 @@ virtual HRESULT OnHyperlinkClick(const CString& strHref);
   
  Türetilen bir sınıfta özel davranışı uygulamak için bu yöntemi geçersiz kılın.  
   
-##  <a name="oninit"></a>CTaskDialog::OnInit  
+##  <a name="oninit"></a>  CTaskDialog::OnInit  
  Bu yöntem framework çağırır zaman `CTaskDialog` başlatılır.  
   
 ```  
@@ -763,7 +763,7 @@ virtual HRESULT OnInit();
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta özel davranışı uygulamak için bu yöntemi geçersiz kılın.  
   
-##  <a name="onnavigatepage"></a>CTaskDialog::OnNavigatePage  
+##  <a name="onnavigatepage"></a>  CTaskDialog::OnNavigatePage  
  Yanıt olarak framework bu yöntemi çağırır [CTaskDialog::NavigateTo](#navigateto) yöntemi.  
   
 ```  
@@ -776,7 +776,7 @@ virtual HRESULT OnNavigatePage();
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta özel davranışı uygulamak için bu yöntemi geçersiz kılın.  
   
-##  <a name="onradiobuttonclick"></a>CTaskDialog::OnRadioButtonClick  
+##  <a name="onradiobuttonclick"></a>  CTaskDialog::OnRadioButtonClick  
  Kullanıcı bir radyo düğmesi denetimini seçtiğinde framework bu yöntemi çağırır.  
   
 ```  
@@ -784,7 +784,7 @@ virtual HRESULT OnRadioButtonClick(int nRadioButtonID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nRadioButtonID`  
+ [in] `nRadioButtonID`  
  Kullanıcı tıklattınız radyo düğmesi denetimini kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -793,7 +793,7 @@ virtual HRESULT OnRadioButtonClick(int nRadioButtonID);
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta özel davranışı uygulamak için bu yöntemi geçersiz kılın.  
   
-##  <a name="ontimer"></a>CTaskDialog::OnTimer  
+##  <a name="ontimer"></a>  CTaskDialog::OnTimer  
  Süreölçer süresi dolduğunda framework bu yöntemi çağırır.  
   
 ```  
@@ -801,7 +801,7 @@ virtual HRESULT OnTimer(long lTime);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lTime`  
+ [in] `lTime`  
  Bu yana milisaniye cinsinden süre `CTaskDialog` oluşturuldu veya Zamanlayıcı sıfırlandı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -810,7 +810,7 @@ virtual HRESULT OnTimer(long lTime);
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta özel davranışı uygulamak için bu yöntemi geçersiz kılın.  
   
-##  <a name="onverificationcheckboxclick"></a>CTaskDialog::OnVerificationCheckboxClick  
+##  <a name="onverificationcheckboxclick"></a>  CTaskDialog::OnVerificationCheckboxClick  
  Kullanıcı doğrulama onay kutusunu tıklattığında framework bu yöntemi çağırır.  
   
 ```  
@@ -818,8 +818,8 @@ virtual HRESULT OnVerificationCheckboxClick(BOOL bChecked);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bChecked`  
- `TRUE`Doğrulama onay kutusunun seçili gösterir; `FALSE` olmayan gösterir.  
+ [in] `bChecked`  
+ `TRUE` Doğrulama onay kutusunun seçili gösterir; `FALSE` olmayan gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Varsayılan uygulama döndürür `S_OK`.  
@@ -827,7 +827,7 @@ virtual HRESULT OnVerificationCheckboxClick(BOOL bChecked);
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta özel davranışı uygulamak için bu yöntemi geçersiz kılın.  
   
-##  <a name="removeallcommandcontrols"></a>CTaskDialog::RemoveAllCommandControls  
+##  <a name="removeallcommandcontrols"></a>  CTaskDialog::RemoveAllCommandControls  
  Tüm komut düğmesi denetimlerden kaldırır `CTaskDialog`.  
   
 ```  
@@ -837,7 +837,7 @@ void RemoveAllCommandControls();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#2](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_1.cpp)]  
   
-##  <a name="removeallradiobuttons"></a>CTaskDialog::RemoveAllRadioButtons  
+##  <a name="removeallradiobuttons"></a>  CTaskDialog::RemoveAllRadioButtons  
  Gelen tüm radyo düğmeleri kaldırır `CTaskDialog`.  
   
 ```  
@@ -847,7 +847,7 @@ void RemoveAllRadioButtons();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#3](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_2.cpp)]  
   
-##  <a name="setcommandcontroloptions"></a>CTaskDialog::SetCommandControlOptions  
+##  <a name="setcommandcontroloptions"></a>  CTaskDialog::SetCommandControlOptions  
  Komut düğmesi denetimi güncelleştirir `CTaskDialog`.  
   
 ```  
@@ -858,13 +858,13 @@ void SetCommandControlOptions(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nCommandControlID`  
+ [in] `nCommandControlID`  
  Güncelleştirmek için komut denetiminin kimliği.  
   
- [in]`bEnabled`  
+ [in] `bEnabled`  
  Belirtilen komut düğmesi denetimi etkin veya devre dışı olduğunu gösteren bir Boole parametresi.  
   
- [in]`bRequiresElevation`  
+ [in] `bRequiresElevation`  
  Belirtilen komut düğmesi denetimi ayrıcalık gerektirip gerektirmediğini belirten bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -873,7 +873,7 @@ void SetCommandControlOptions(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#2](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_1.cpp)]  
   
-##  <a name="setcommonbuttonoptions"></a>CTaskDialog::SetCommonButtonOptions  
+##  <a name="setcommonbuttonoptions"></a>  CTaskDialog::SetCommonButtonOptions  
  Bir alt kümesini ortak düğmeleri etkinleştirilmesi ve UAC yükseltmesi gerektirecek şekilde güncelleştirir.  
   
 ```  
@@ -883,14 +883,14 @@ void SetCommonButtonOptions(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nDisabledButtonMask`  
+ [in] `nDisabledButtonMask`  
  Devre dışı bırakmak ortak düğmelerinin maske.  
   
- [in]`nElevationButtonMask`  
+ [in] `nElevationButtonMask`  
  Yükseltmesi gerektiren ortak düğmelerinin maske.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanılabilir ortak düğmeleri örneğine ayarlayabilirsiniz [CTaskDialog sınıfı](../../mfc/reference/ctaskdialog-class.md) Oluşturucusu kullanılarak [CTaskDialog::CTaskDialog](#ctaskdialog) ve yöntemi [CTaskDialog::SetCommonButtons ](#setcommonbuttons). `CTaskDialog::SetCommonButtonOptions`yeni ortak düğmeler eklemeyi desteklemez.  
+ Kullanılabilir ortak düğmeleri örneğine ayarlayabilirsiniz [CTaskDialog sınıfı](../../mfc/reference/ctaskdialog-class.md) Oluşturucusu kullanılarak [CTaskDialog::CTaskDialog](#ctaskdialog) ve yöntemi [CTaskDialog::SetCommonButtons ](#setcommonbuttons). `CTaskDialog::SetCommonButtonOptions` yeni ortak düğmeler eklemeyi desteklemez.  
   
  Bunun için kullanılabilir olmayan bir ortak düğmesi devre dışı bırakmak veya değiştirmesine bu yöntemi kullanırsanız `CTaskDialog`, bu yöntemi kullanarak bir özel durum oluşturur [olun](diagnostic-services.md#ensure) makrosu.  
   
@@ -899,7 +899,7 @@ void SetCommonButtonOptions(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#6](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_6.cpp)]  
   
-##  <a name="setcommonbuttons"></a>CTaskDialog::SetCommonButtons  
+##  <a name="setcommonbuttons"></a>  CTaskDialog::SetCommonButtons  
  Ortak düğmeleri ekler `CTaskDialog`.  
   
 ```  
@@ -910,13 +910,13 @@ void SetCommonButtons(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nButtonMask`  
+ [in] `nButtonMask`  
  Maske eklemek için düğmelerin `CTaskDialog`.  
   
- [in]`nDisabledButtonMask`  
+ [in] `nDisabledButtonMask`  
  Devre dışı bırakmak için düğmelerin maske.  
   
- [in]`nElevationButtonMask`  
+ [in] `nElevationButtonMask`  
  Ayrıcalık gerektiren düğmelerin maske.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -931,7 +931,7 @@ void SetCommonButtons(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#6](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_6.cpp)]  
   
-##  <a name="setcontent"></a>CTaskDialog::SetContent  
+##  <a name="setcontent"></a>  CTaskDialog::SetContent  
  İçeriği güncelleştirmeleri `CTaskDialog`.  
   
 ```  
@@ -939,7 +939,7 @@ void SetContent(const CString& strContent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`strContent`  
+ [in] `strContent`  
  Kullanıcıya görüntülenecek dize.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -948,7 +948,7 @@ void SetContent(const CString& strContent);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
   
-##  <a name="setdefaultcommandcontrol"></a>CTaskDialog::SetDefaultCommandControl  
+##  <a name="setdefaultcommandcontrol"></a>  CTaskDialog::SetDefaultCommandControl  
  Varsayılan komut düğmesi denetimi belirtir.  
   
 ```  
@@ -956,7 +956,7 @@ void SetDefaultCommandControl(int nCommandControlID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nCommandControlID`  
+ [in] `nCommandControlID`  
  Varsayılan olarak kullanılacak komut düğmesi denetimi kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -967,7 +967,7 @@ void SetDefaultCommandControl(int nCommandControlID);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#2](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_1.cpp)]  
   
-##  <a name="setdefaultradiobutton"></a>CTaskDialog::SetDefaultRadioButton  
+##  <a name="setdefaultradiobutton"></a>  CTaskDialog::SetDefaultRadioButton  
  Varsayılan radyo düğmesi belirtir.  
   
 ```  
@@ -975,7 +975,7 @@ void SetDefaultRadioButton(int nRadioButtonID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nRadioButtonID`  
+ [in] `nRadioButtonID`  
  Varsayılan olarak kullanılacak radyo düğmesi kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -986,7 +986,7 @@ void SetDefaultRadioButton(int nRadioButtonID);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#3](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_2.cpp)]  
   
-##  <a name="setdialogwidth"></a>CTaskDialog::SetDialogWidth  
+##  <a name="setdialogwidth"></a>  CTaskDialog::SetDialogWidth  
  Genişliğini ayarlar `CTaskDialog`.  
   
 ```  
@@ -994,7 +994,7 @@ void SetDialogWidth(int nWidth = 0);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nWidth`  
+ [in] `nWidth`  
  İletişim kutusunun piksel cinsinden genişliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1005,7 +1005,7 @@ void SetDialogWidth(int nWidth = 0);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
   
-##  <a name="setexpansionarea"></a>CTaskDialog::SetExpansionArea  
+##  <a name="setexpansionarea"></a>  CTaskDialog::SetExpansionArea  
  Genişletme alanını güncelleştirir `CTaskDialog`.  
   
 ```  
@@ -1016,13 +1016,13 @@ void SetExpansionArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`strExpandedInformation`  
+ [in] `strExpandedInformation`  
  Dize, `CTaskDialog` kullanıcı genişletme düğmesine tıkladığında iletişim kutusunda ana gövdesinde görüntüler.  
   
- [in]`strCollapsedLabel`  
+ [in] `strCollapsedLabel`  
  Dize, `CTaskDialog` genişletilmiş alanı daraltıldığında yanındaki genişletme düğmesini görüntüler.  
   
- [in]`strExpandedLabel`  
+ [in] `strExpandedLabel`  
  Dize, `CTaskDialog` genişletilmiş alan görüntülendiğinde yanındaki genişletme düğmesini görüntüler.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1033,7 +1033,7 @@ void SetExpansionArea(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
   
-##  <a name="setfootericon"></a>CTaskDialog::SetFooterIcon  
+##  <a name="setfootericon"></a>  CTaskDialog::SetFooterIcon  
  Altbilgi simgesini güncelleştirmeleri `CTaskDialog`.  
   
 ```  
@@ -1042,10 +1042,10 @@ void SetFooterIcon(LPCWSTR lpszFooterIcon);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hFooterIcon`  
+ [in] `hFooterIcon`  
  Yeni simgesi `CTaskDialog`.  
   
- [in]`lpszFooterIcon`  
+ [in] `lpszFooterIcon`  
  Yeni simgesi `CTaskDialog`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1058,7 +1058,7 @@ void SetFooterIcon(LPCWSTR lpszFooterIcon);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
   
-##  <a name="setfootertext"></a>CTaskDialog::SetFooterText  
+##  <a name="setfootertext"></a>  CTaskDialog::SetFooterText  
  Altbilgisine üzerindeki metin güncelleştirmeleri `CTaskDialog`.  
   
 ```  
@@ -1066,7 +1066,7 @@ void SetFooterText(const CString& strFooterText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`strFooterText`  
+ [in] `strFooterText`  
  Altbilgi yeni metin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1075,7 +1075,7 @@ void SetFooterText(const CString& strFooterText);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
   
-##  <a name="setmainicon"></a>CTaskDialog::SetMainIcon  
+##  <a name="setmainicon"></a>  CTaskDialog::SetMainIcon  
  Ana simgesini güncelleştirmeleri `CTaskDialog`.  
   
 ```  
@@ -1084,10 +1084,10 @@ void SetMainIcon(LPCWSTR lpszMainIcon);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hMainIcon`  
+ [in] `hMainIcon`  
  Yeni simgesi.  
   
- [in]`lpszMainIcon`  
+ [in] `lpszMainIcon`  
  Yeni simgesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1098,7 +1098,7 @@ void SetMainIcon(LPCWSTR lpszMainIcon);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
   
-##  <a name="setmaininstruction"></a>CTaskDialog::SetMainInstruction  
+##  <a name="setmaininstruction"></a>  CTaskDialog::SetMainInstruction  
  Ana yönergesinin güncelleştirmeleri `CTaskDialog`.  
   
 ```  
@@ -1106,7 +1106,7 @@ void SetMainInstruction(const CString& strInstructions);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`strInstructions`  
+ [in] `strInstructions`  
  Yeni ana yönerge.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1115,7 +1115,7 @@ void SetMainInstruction(const CString& strInstructions);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
   
-##  <a name="setoptions"></a>CTaskDialog::SetOptions  
+##  <a name="setoptions"></a>  CTaskDialog::SetOptions  
  İçin seçenekleri yapılandırır `CTaskDialog`.  
   
 ```  
@@ -1123,7 +1123,7 @@ void SetOptions(int nOptionFlag);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nOptionFlag`  
+ [in] `nOptionFlag`  
  Kullanılmak üzere bayrakları kümesi `CTaskDialog`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1147,7 +1147,7 @@ void SetOptions(int nOptionFlag);
  Yapılandırır `CTaskDialog` komut düğmesi denetimleri kullanmak için.  
   
  `TDF_USE_COMMAND_LINKS_NO_ICON`  
- Yapılandırır `CTaskDialog` denetimi yanındaki simge görüntülemeden komut düğmesi denetimleri kullanmak için. `TDF_USE_COMMAND_LINKS`geçersiz kılmaları `TDF_USE_COMMAND_LINKS_NO_ICON`.  
+ Yapılandırır `CTaskDialog` denetimi yanındaki simge görüntülemeden komut düğmesi denetimleri kullanmak için. `TDF_USE_COMMAND_LINKS` geçersiz kılmaları `TDF_USE_COMMAND_LINKS_NO_ICON`.  
   
  `TDF_EXPAND_FOOTER_AREA`  
  Genişletme alan şu anda genişletilmiş gösterir.  
@@ -1182,7 +1182,7 @@ void SetOptions(int nOptionFlag);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
   
-##  <a name="setprogressbarmarquee"></a>CTaskDialog::SetProgressBarMarquee  
+##  <a name="setprogressbarmarquee"></a>  CTaskDialog::SetProgressBarMarquee  
  İçin bir kayan çubuğu yapılandırır `CTaskDialog` ve iletişim kutusuna ekler.  
   
 ```  
@@ -1192,23 +1192,23 @@ void SetProgressBarMarquee(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bEnabled`  
- `TRUE`Kayan çubuğunu etkinleştirmek için; `FALSE` kayan çubuğu devre dışı bırakabilir ve kaldırmadan `CTaskDialog`.  
+ [in] `bEnabled`  
+ `TRUE` Kayan çubuğunu etkinleştirmek için; `FALSE` kayan çubuğu devre dışı bırakabilir ve kaldırmadan `CTaskDialog`.  
   
- [in]`nMarqueeSpeed`  
+ [in] `nMarqueeSpeed`  
  Kayan çubuğu hızını belirten tamsayı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kayan çubuğunun altında ana metni görünür `CTaskDialog Class`.  
   
- Kullanım `nMarqueeSpeed` kayan çubuğu; hızına ayarlamak için daha büyük değerler daha yavaş hızı gösterir. İçin 0 değerini `nMarqueeSpeed` için varsayılan hızda taşıma çerçevesi çubuğu yapar [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)].  
+ Kullanım `nMarqueeSpeed` kayan çubuğu; hızına ayarlamak için daha büyük değerler daha yavaş hızı gösterir. İçin 0 değerini `nMarqueeSpeed` Windows için varsayılan hızında hareket çerçevesi çubuğunun neden olur.  
   
  Bu yöntem ile aykırı [olun](diagnostic-services.md#ensure) makrosu varsa `nMarqueeSpeed` 0'dan küçük.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#4](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_7.cpp)]  
   
-##  <a name="setprogressbarposition"></a>CTaskDialog::SetProgressBarPosition  
+##  <a name="setprogressbarposition"></a>  CTaskDialog::SetProgressBarPosition  
  İlerleme çubuğu konumunu ayarlar.  
   
 ```  
@@ -1216,7 +1216,7 @@ void SetProgressBarPosition(int nProgressPos);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nProgressPos`  
+ [in] `nProgressPos`  
  İlerleme çubuğu konumu.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1225,7 +1225,7 @@ void SetProgressBarPosition(int nProgressPos);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#4](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_7.cpp)]  
   
-##  <a name="setprogressbarrange"></a>CTaskDialog::SetProgressBarRange  
+##  <a name="setprogressbarrange"></a>  CTaskDialog::SetProgressBarRange  
  İlerleme çubuğu aralığını ayarlar.  
   
 ```  
@@ -1235,10 +1235,10 @@ void SetProgressBarRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nRangeMin`  
+ [in] `nRangeMin`  
  İlerleme çubuğu alt sınır.  
   
- [in]`nRangeMax`  
+ [in] `nRangeMax`  
  İlerleme çubuğu üst sınırı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1251,7 +1251,7 @@ void SetProgressBarRange(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#4](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_7.cpp)]  
   
-##  <a name="setprogressbarstate"></a>CTaskDialog::SetProgressBarState  
+##  <a name="setprogressbarstate"></a>  CTaskDialog::SetProgressBarState  
  İlerleme çubuğu durumu ayarlar ve görüntüler `CTaskDialog`.  
   
 ```  
@@ -1259,7 +1259,7 @@ void SetProgressBarState(int nState = PBST_NORMAL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nState`  
+ [in] `nState`  
  İlerleme çubuğu durumu. Olası değerler için Açıklamalar bölümüne bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1281,7 +1281,7 @@ void SetProgressBarState(int nState = PBST_NORMAL);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#4](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_7.cpp)]  
   
-##  <a name="setradiobuttonoptions"></a>CTaskDialog::SetRadioButtonOptions  
+##  <a name="setradiobuttonoptions"></a>  CTaskDialog::SetRadioButtonOptions  
  Etkinleştirir veya radyo düğmesi devre dışı bırakır.  
   
 ```  
@@ -1291,11 +1291,11 @@ void SetRadioButtonOptions(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nRadioButtonID`  
+ [in] `nRadioButtonID`  
  Radyo düğmesi denetimini kimliği.  
   
- [in]`bEnabled`  
- `TRUE`radyo düğmesi etkinleştirmek için; `FALSE` radyo düğmesi devre dışı bırakmak için.  
+ [in] `bEnabled`  
+ `TRUE` radyo düğmesi etkinleştirmek için; `FALSE` radyo düğmesi devre dışı bırakmak için.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem ile aykırı [emin olun](diagnostic-services.md#ensure) makrosu varsa `nRadioButtonID` radyo düğmesi için geçerli bir kimliği değil.  
@@ -1303,7 +1303,7 @@ void SetRadioButtonOptions(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#3](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_2.cpp)]  
   
-##  <a name="setverificationcheckbox"></a>CTaskDialog::SetVerificationCheckbox  
+##  <a name="setverificationcheckbox"></a>  CTaskDialog::SetVerificationCheckbox  
  Doğrulama onay kutusunun işaretli durumu ayarlar.  
   
 ```  
@@ -1311,13 +1311,13 @@ void SetVerificationCheckbox(BOOL bChecked);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bChecked`  
- `TRUE`Doğrulama onay kutusunu ne zaman seçilen `CTaskDialog` görüntülenir; `FALSE` doğrulama sağlamak için onay kutusunu ne zaman seçilmemiş `CTaskDialog` görüntülenir.  
+ [in] `bChecked`  
+ `TRUE` Doğrulama onay kutusunu ne zaman seçilen `CTaskDialog` görüntülenir; `FALSE` doğrulama sağlamak için onay kutusunu ne zaman seçilmemiş `CTaskDialog` görüntülenir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#5](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_4.cpp)]  
   
-##  <a name="setverificationcheckboxtext"></a>CTaskDialog::SetVerificationCheckboxText  
+##  <a name="setverificationcheckboxtext"></a>  CTaskDialog::SetVerificationCheckboxText  
  Doğrulama onay kutusunun sağında görüntülenen metni ayarlar.  
   
 ```  
@@ -1325,7 +1325,7 @@ void SetVerificationCheckboxText(CString& strVerificationText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`strVerificationText`  
+ [in] `strVerificationText`  
  Bu yöntem yanındaki doğrulama onay kutusunu görüntüler metin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1334,7 +1334,7 @@ void SetVerificationCheckboxText(CString& strVerificationText);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#5](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_4.cpp)]  
   
-##  <a name="setwindowtitle"></a>CTaskDialog::SetWindowTitle  
+##  <a name="setwindowtitle"></a>  CTaskDialog::SetWindowTitle  
  Başlığı ayarlar `CTaskDialog`.  
   
 ```  
@@ -1342,7 +1342,7 @@ void SetWindowTitle(CString& strWindowTitle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`strWindowTitle`  
+ [in] `strWindowTitle`  
  İçin yeni başlık `CTaskDialog`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1350,7 +1350,7 @@ void SetWindowTitle(CString& strWindowTitle);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
   
-##  <a name="showdialog"></a>CTaskDialog::ShowDialog  
+##  <a name="showdialog"></a>  CTaskDialog::ShowDialog  
  Oluşturur ve görüntüler bir `CTaskDialog`.  
   
 ```  
@@ -1366,28 +1366,28 @@ static INT_PTR ShowDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`strContent`  
+ [in] `strContent`  
  İçeriği için kullanılacak dizesi `CTaskDialog`.  
   
- [in]`strMainInstruction`  
+ [in] `strMainInstruction`  
  Ana yönergesinin `CTaskDialog`.  
   
- [in]`strTitle`  
+ [in] `strTitle`  
  Başlığı `CTaskDialog`.  
   
- [in]`nIDCommandControlsFirst`  
+ [in] `nIDCommandControlsFirst`  
  İlk komut dizesi kimliği.  
   
- [in]`nIDCommandControlsLast`  
+ [in] `nIDCommandControlsLast`  
  Son komut dizesi kimliği.  
   
- [in]`nCommonButtons`  
+ [in] `nCommonButtons`  
  Maske eklemek için düğmelerin `CTaskDialog`.  
   
- [in]`nTaskDialogOptions`  
+ [in] `nTaskDialogOptions`  
  İçin kullanılacak seçenekleri kümesi `CTaskDialog`.  
   
- [in]`strFooter`  
+ [in] `strFooter`  
  Altbilgi kullanılacak dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1405,7 +1405,7 @@ static INT_PTR ShowDialog(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTaskDialog#1](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_5.cpp)]  
   
-##  <a name="taskdialogcallback"></a>CTaskDialog::TaskDialogCallback  
+##  <a name="taskdialogcallback"></a>  CTaskDialog::TaskDialogCallback  
  Çerçeve, çeşitli Windows iletilere yanıt olarak bu yöntemi çağırır.  
   
 ```  
@@ -1419,19 +1419,19 @@ HRESULT TaskDialogCallback(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hwnd`  
+ [in] `hwnd`  
  İçin bir tanıtıcı `m_hWnd` için yapı `CTaskDialog`.  
   
- [in]`uNotification`  
+ [in] `uNotification`  
  Oluşturulan iletiyi belirtir bildirim kodu.  
   
- [in]`wParam`  
+ [in] `wParam`  
  İleti hakkında daha fazla bilgi.  
   
- [in]`lParam`  
+ [in] `lParam`  
  İleti hakkında daha fazla bilgi.  
   
- [in]`dwRefData`  
+ [in] `dwRefData`  
  Bir işaretçi `CTaskDialog` geri çağırma iletisi uygulanacağı nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1442,7 +1442,7 @@ HRESULT TaskDialogCallback(
   
  Değerleri `wParam` ve `lParam` belirli oluşturulan iletide bağlıdır. Ya da ya da boş olması için bu değerleri her ikisi de mümkündür. Aşağıdaki tabloda desteklenen varsayılan bildirimleri ve ne listeler değerlerini `wParam` ve `lParam` temsil eder. Bir türetilmiş sınıfta bu yöntemi geçersiz kılarsanız aşağıdaki tabloda her ileti için geri çağırma kodu uygulamanız gerekir.  
   
-|Bildirim iletisi|`wParam`Değer|`lParam`Değer|  
+|Bildirim iletisi|`wParam` Değer|`lParam` Değer|  
 |--------------------------|--------------------|--------------------|  
 |`TDN_CREATED`|Kullanılmadı.|Kullanılmadı.|  
 |`TDN_NAVIGATED`|Kullanılmadı.|Kullanılmadı.|  

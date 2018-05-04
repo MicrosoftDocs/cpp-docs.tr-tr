@@ -1,27 +1,22 @@
 ---
-title: "Yeniden Hoş Geldiniz C++ (Modern C++) | Microsoft Docs"
-ms.custom: 
+title: Yeniden Hoş Geldiniz C++ (Modern C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e45c48671a0df62103a58a89d0c351209c71ed2
-ms.sourcegitcommit: ff9bf140b6874bc08718674c07312ecb5f996463
+ms.openlocfilehash: 63e73657c7e018d2a4eb71170561e310aeba9d5b
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++'a (Modern C++) Tekrar Hoş Geldiniz
 C++ dünyanın en yaygın olarak kullanılan programlama dillerinde biridir. İyi yazılmış C++ programları hızlı ve verimlidir. Diğer diller çok çeşitli uygulamaları oluşturmak için kullandığı için dil daha esnektir — eğlenceli ve aygıt sürücüleri, katıştırılmış programları ve Windows istemci uygulamaları için yüksek performanslı bilimsel yazılım heyecan verici oyunlar. 20 yıldan fazla, C++, bunlar ve diğer birçok gibi sorunları çözmek için kullanılmış. Ne değil bilirsiniz C++ programcıları artan sayıda dün dowdy C stili programlama yukarı Katlanmış ve modern C++ yerine donned olmasıdır.  
@@ -36,7 +31,7 @@ C++ dünyanın en yaygın olarak kullanılan programlama dillerinde biridir. İy
   
 -   Akıllı işaretçiler ham işaretçileri yerine.  
   
--   `std::string`ve `std::wstring` türleri (bkz [ \<dize >](../standard-library/string.md)) ham yerine `char[]` dizileri.  
+-   `std::string` ve `std::wstring` türleri (bkz [ \<dize >](../standard-library/string.md)) ham yerine `char[]` dizileri.  
   
 -   [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-header-files.md) kapsayıcıları ister `vector`, `list`, ve `map` ham dizileri veya özel kapsayıcılar yerine. Bkz: [ \<vektör >](../standard-library/vector.md), [ \<listesi >](../standard-library/list.md), ve [ \<harita >](../standard-library/map.md).  
   
@@ -114,7 +109,7 @@ void f()
   
  Güç yeniden iyisidir çünkü C++ bir Rönesans yaşıyor. Java ve C# gibi diller Programcı üretkenlik önemlidir, ancak güç ve performansı en önemli olduğunda bunlar sınırlamalarını göstermek iyidir. Yüksek verimlilik ve özellikle, donanım, sınırlı cihazlara gücüyle için hiçbir şey modern C++ vuruş.  
   
- Yalnızca dili modern, geliştirme, çok araçlardır. [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]Geliştirme döngüsü tüm parçalarını sağlam ve verimli hale getirir. Uygulama Yaşam Döngüsü Yönetimi (ALM) araçları, IntelliSense gibi IDE geliştirmeleri, aracı kolay mekanizmaları XAML ve hata ayıklama, oluşturma gibi içerir ve diğer birçok araçlar.  
+ Yalnızca dili modern, geliştirme, çok araçlardır. [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] Geliştirme döngüsü tüm parçalarını sağlam ve verimli hale getirir. Uygulama Yaşam Döngüsü Yönetimi (ALM) araçları, IntelliSense gibi IDE geliştirmeleri, aracı kolay mekanizmaları XAML ve hata ayıklama, oluşturma gibi içerir ve diğer birçok araçlar.  
   
  Bu bölümü belgelerin makalelerinde üst düzey kılavuzları ve en önemli özellikleri için en iyi uygulamaları ve modern C++ programları yazmak için teknikleri sağlar.  
   

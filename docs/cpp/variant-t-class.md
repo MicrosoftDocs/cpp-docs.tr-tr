@@ -1,12 +1,9 @@
 ---
-title: "_variant_t sınıfı | Microsoft Docs"
-ms.custom: 
+title: _variant_t sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - _variant_t
@@ -19,20 +16,18 @@ helpviewer_keywords:
 - VARIANT object
 - VARIANT object [C++], COM encapsulation
 ms.assetid: 6a3cbd4e-0ae8-425e-b4cf-ca0df894c93f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57a4d7e4019e742ff8adc50bb78a926dff34d55a
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: 0ebe850e4b0d0d9fd352df0e60c4ea0737b9fd8a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="variantt-class"></a>_variant_t Sınıfı
-**Microsoft Specific**  
+**Microsoft özel**  
   
  A `_variant_t` nesne yalıtır `VARIANT` veri türü. Sınıf kaynak ayırma ve ayırmayı kaldırma yönetir ve işlev çağrıları yapan **VariantInit** ve **VariantClear** uygun şekilde.  
   
@@ -56,7 +51,7 @@ ms.lasthandoff: 01/25/2018
   
 |||  
 |-|-|  
-|[İşleç =](../cpp/variant-t-operator-equal.md)|Var olan yeni bir değer atar `_variant_t` nesnesi.|  
+|[işleç =](../cpp/variant-t-operator-equal.md)|Var olan yeni bir değer atar `_variant_t` nesnesi.|  
 |[operator ==,! =](../cpp/variant-t-relational-operators.md)|İki karşılaştırmak `_variant_t` nesneleri eşitlik veya eşitsizlik.|  
 |[Ayıklayıcıları](../cpp/variant-t-extractors.md)|Veri kapsüllenmiş ayıklamak **değişken** nesnesi.|  
   

@@ -1,12 +1,9 @@
 ---
 title: uuid (C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - uuid_cpp
@@ -16,20 +13,18 @@ helpviewer_keywords:
 - __declspec keyword [C++], uuid
 - uuid __declspec keyword
 ms.assetid: 9d004621-09bc-4a8d-871b-648f5d5102d7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c999b429cb789167eeb754b6f11a8b3d90c28642
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: b143def4d758307c6ce6737281bdca1097aaa8c5
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="uuid-c"></a>uuid (C++)
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Bir sınıf veya bildirilen veya tanımlı yapısı (tam COM nesne tanımları yalnızca) ile bir GUID derleyici iliştirir `uuid` özniteliği.  
   

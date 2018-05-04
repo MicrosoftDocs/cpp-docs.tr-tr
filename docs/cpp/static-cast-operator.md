@@ -1,12 +1,9 @@
 ---
-title: "static_cast işleci | Microsoft Docs"
-ms.custom: 
+title: static_cast işleci | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - static_cast_cpp
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - static_cast keyword [C++]
 ms.assetid: 1f7c0c1c-b288-476c-89d6-0e2ceda5c293
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3913937d9099304c478404c4c55a09fa54392785
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5a0cd6ea7e2268940febca9e1e564f30d29dcff0
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="staticcast-operator"></a>static_cast İşleci
 Dönüştürür bir *ifade* türüne *türü kimliği* ifadesinde bulunan türüne göre.  
@@ -41,7 +36,7 @@ static_cast <type-id> ( expression )
   
  `static_cast` İşleci, türetilmiş bir sınıf için bir işaretçi için temel sınıf için bir işaretçi dönüştürme gibi işlemleri için kullanılabilir. Bu tür dönüştürmeler her zaman güvenli değildir.  
   
- Genel olarak kullandığınız `static_cast` ints veya ints float ve numaralandırmaları gibi sayısal veri türleri dönüştürmek istediğiniz zaman belirli veri türlerini dönüştürme ilgilidir. `static_cast`dönüşümler olarak güvenli olmayan `dynamic_cast` dönüşümleri, çünkü `static_cast` çalışma zamanı tür kontrol etmez, ancak `dynamic_cast` yapar. A `dynamic_cast` belirsiz bir işaretçi başarısız olur, ancak bir `static_cast` hiçbir şey tehlikeli olabilir; yanlış olarak döndürür. Ancak `dynamic_cast` dönüşümleri daha güvenli, `dynamic_cast` işaretçileri veya başvuruları ve çalışma zamanı tür denetimi üzerinde çalışır bir ek yük, yalnızca. Daha fazla bilgi için bkz: [dynamic_cast işleci](../cpp/dynamic-cast-operator.md).  
+ Genel olarak kullandığınız `static_cast` ints veya ints float ve numaralandırmaları gibi sayısal veri türleri dönüştürmek istediğiniz zaman belirli veri türlerini dönüştürme ilgilidir. `static_cast` dönüşümler olarak güvenli olmayan `dynamic_cast` dönüşümleri, çünkü `static_cast` çalışma zamanı tür kontrol etmez, ancak `dynamic_cast` yapar. A `dynamic_cast` belirsiz bir işaretçi başarısız olur, ancak bir `static_cast` hiçbir şey tehlikeli olabilir; yanlış olarak döndürür. Ancak `dynamic_cast` dönüşümleri daha güvenli, `dynamic_cast` işaretçileri veya başvuruları ve çalışma zamanı tür denetimi üzerinde çalışır bir ek yük, yalnızca. Daha fazla bilgi için bkz: [dynamic_cast işleci](../cpp/dynamic-cast-operator.md).  
   
  Satırın aşağıdaki örnekteki `D* pd2 = static_cast<D*>(pb);` güvenli değildir çünkü `D` alanları ve bulunmayan yöntemleri olabilir `B`. Ancak, satır `B* pb2 = static_cast<B*>(pd);` güvenli dönüştürme çünkü `D` her zaman tüm içeren `B`.  
   

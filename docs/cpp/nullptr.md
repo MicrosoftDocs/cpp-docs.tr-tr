@@ -2,11 +2,8 @@
 title: nullptr | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - nullptr_cpp
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - nullptr keyword [C++]
 ms.assetid: e9d80ea6-2506-4eb5-b47b-2349df085832
-caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3063a93361095a9d51152ce93f8522365513cf67
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f1bcfee3f408f6815e51740f9fc02d842afaa4d5
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="nullptr"></a>nullptr
 Türünde bir null işaretçinin sabit atar `std::nullptr_t`, olduğu herhangi bir ham işaretçi türüne dönüştürülebilir.  Anahtar sözcüğünü kullanabilirsiniz ancak `nullptr` türü kodunuzu kullanıyorsa, tüm üstbilgileri dahil olmak üzere olmadan `std::nullptr_t`, üstbilgi dahil ederek tanımlamanız gerekir sonra `<cstddef>`.  

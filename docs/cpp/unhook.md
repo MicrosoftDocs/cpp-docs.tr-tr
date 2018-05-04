@@ -1,12 +1,9 @@
 ---
 title: __unhook | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - __unhook
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - event handlers [C++], dissociating events
 - __unhook keyword [C++]
 ms.assetid: 953a14f3-5199-459d-81e5-fcf015a19878
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1513391aedf9a08cd1ece971d79fd5f6913d406d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b95ff49c9b1f088ac38ffb0791f18f249b211e72
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="unhook"></a>__unhook
 Bir olay işleyicisi yönteminden dissociates.  
@@ -52,7 +47,7 @@ long  __unhook(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- **&***SourceClass* `::` *oluşur*  
+ **&** *SourceClass* `::` *oluşur*  
  Olay işleyicisi yöntemi unhook olay yöntemi için bir işaretçi:  
   
 -   Yerel C++ olayları: *SourceClass* olay kaynağı sınıftır ve *oluşur* etkinliğidir.  
@@ -73,7 +68,7 @@ long  __unhook(
   
 -   Yönetilen nesne işaretçisi (için yönetilen olayları).  
   
- **&***ReceiverClass* `::``HandlerMethod`  
+ **&** *ReceiverClass* `::` `HandlerMethod`  
  Bir olay unhooked olması için olay işleyicisi yöntemi için bir işaretçi. İşleyici yöntemi bir sınıf veya aynı bir başvuru olarak belirtilir; sınıf adı belirtmezseniz, `__unhook` içinde çağırıldığı emin olmanız için sınıf varsayar.  
   
 -   Yerel C++ olayları: *ReceiverClass* olay alıcı sınıftır ve `HandlerMethod` işleyicisi.  

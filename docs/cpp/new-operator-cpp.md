@@ -1,29 +1,24 @@
 ---
-title: "New işleci (C++) | Microsoft Docs"
-ms.custom: 
+title: New işleci (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - new keyword [C++]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68843f0619b5ebc057f83bdb4f49807a15fb86a1
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: 365beedce529e29be73c02caa57e5c6236565b9c
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="new-operator-c"></a>new İşleci (C++)
 Bir nesne ya da dizi nesneleri için bellek ayırır *türü adı* boş depolamak ve uygun yazılan, sıfır olmayan bir işaretçi nesneyi döndürür.  
@@ -79,7 +74,7 @@ delete *p;
  *tür adı*  
  Ayrılacak türünü belirtir; Yerleşik veya kullanıcı tanımlı türü olabilir. Tür belirtimi karmaşık ise, bağlama sırasını zorlamak için parantez ile çevrelenmiş.  
   
- *initializer*  
+ *Başlatıcı*  
  Başlatılmış bir nesne için bir değer sağlar. Başlatıcılar diziler için belirtilemez. **Yeni** işleci yalnızca sınıfı varsayılan bir oluşturucu varsa nesne dizileri oluşturur.  
   
 ## <a name="example"></a>Örnek  

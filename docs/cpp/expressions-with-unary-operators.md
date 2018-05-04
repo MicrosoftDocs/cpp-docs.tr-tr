@@ -1,12 +1,9 @@
 ---
-title: "Birli işleçli ifadeler | Microsoft Docs"
-ms.custom: 
+title: Birli işleçli ifadeler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - unary operators [C++], expressions with
 - expressions [C++], operators
 ms.assetid: 1217685b-b85d-4b48-9ff4-d90f56a26c1b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 44485f0c5749db36ececd2061955f9956cb49ece
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0e1b8db2e02e6ab3e2a70d94ba5f6fe3516e464e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="expressions-with-unary-operators"></a>Birli İşleçli İfadeler
 Birli işleçleri deyimde yalnızca bir işlenen hareket. Birli işleçleri aşağıdaki gibidir:  
@@ -64,17 +59,17 @@ Birli işleçleri deyimde yalnızca bir işlenen hareket. Birli işleçleri aşa
   
 -   *sonek ifade*  
   
--   `++`*Tek terimli ifadesi*  
+-   `++` *Tek terimli ifadesi*  
   
--   `--`*Tek terimli ifadesi*  
+-   `--` *Tek terimli ifadesi*  
   
 -   *birli işleç* *cast ifadesi*  
   
--   `sizeof`*Tek terimli ifadesi*  
+-   `sizeof` *Tek terimli ifadesi*  
   
--   `sizeof(`*türü adı*`)`  
+-   `sizeof(` *tür adı* `)`  
   
--   `decltype(`*ifade*`)`  
+-   `decltype(` *ifade* `)`  
   
 -   *ayırma ifade*  
   
@@ -82,7 +77,7 @@ Birli işleçleri deyimde yalnızca bir işlenen hareket. Birli işleçleri aşa
   
  Tüm *sonek ifade* olarak kabul edilir bir *Tek terimli ifadesi*, ve herhangi bir birincil ifade olduğu kabul edildiği için bir *sonek ifade*, tüm birincil ifadeler olduğu kabul bir *Tek terimli ifadesi* de. Daha fazla bilgi için bkz: [sonek ifadeleri](../cpp/postfix-expressions.md) ve [birincil ifadeler](../cpp/primary-expressions.md).  
   
- A *birli işleç* bir veya daha fazla aşağıdaki simgelerden oluşur:`* & + - ! ~`  
+ A *birli işleç* bir veya daha fazla aşağıdaki simgelerden oluşur: `* & + - ! ~`  
   
  *Cast ifadesi* türünü değiştirmek için isteğe bağlı bir cast ile birli ifadesidir. Daha fazla bilgi için bkz: [atama işleci: ()](../cpp/cast-operator-parens.md).  
   

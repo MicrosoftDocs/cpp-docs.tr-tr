@@ -1,12 +1,9 @@
 ---
 title: __if_not_exists deyimi | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - __if_not_exists_cpp
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - __if_not_exists keyword [C++]
 ms.assetid: a2f322d4-e96f-4a32-954e-4323d20c6e32
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2342354528811f415a9c9aeb819e2c0e7cec6646
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bd4e586a211d7c4e2ead1ce3f225e2d92d2bd5a7
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ifnotexists-statement"></a>__if_not_exists Deyimi
 `__if_not_exists` Deyimi belirtilen tanımlayıcı var olup olmadığını sınar. Tanımlayıcı mevcut değilse, belirtilen ifade bloğu yürütülür.  

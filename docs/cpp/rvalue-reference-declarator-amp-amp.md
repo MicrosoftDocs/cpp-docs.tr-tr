@@ -1,12 +1,9 @@
 ---
-title: "Rvalue başvuru Bildirimcisi: &amp; &amp; | Microsoft Docs"
-ms.custom: 
+title: 'Rvalue başvuru Bildirimcisi: &amp; &amp; | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - '&&'
@@ -15,19 +12,17 @@ dev_langs:
 helpviewer_keywords:
 - '&& rvalue reference declarator'
 ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e35d0efc92e011cfb4d93746efd1b03ac94a0779
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: c2f775573693f0897122502d7ca092cfe392ebd9
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="rvalue-reference-declarator-ampamp"></a>Rvalue başvuru Bildirimcisi:&amp;&amp;
+# <a name="rvalue-reference-declarator-ampamp"></a>Rvalue başvuru Bildirimcisi: &amp;&amp;
 Rvalue deyim için bir başvuru tutar.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -63,7 +58,7 @@ int main()
 }  
 ```  
   
- Visual C++ 2010'dan önce her çağrısı `operator+` ayırır ve yeni bir geçici döndürür `string` nesne (rvalue bir). `operator+`Kaynak dizeleri lvalues veya rvalues olduğunu bilmediğinden bir dize diğerine eklenemiyor. Kaynak dizeleri hem lvalues varsa, başka bir programda başvurulan ve bu nedenle değiştirilmemesi gerekir. Rvalue başvuru kullanarak `operator+` başka bir programda başvurulamaz rvalues yapılacak değiştirilebilir. Bu nedenle, `operator+` bir dize diğerine şimdi ekleyebilirsiniz. Bu dinamik bellek ayırma sayısını önemli ölçüde azaltabilir, `string` class gerçekleştirmelisiniz. Hakkında daha fazla bilgi için `string` sınıfı için bkz: [basic_string sınıfı](../standard-library/basic-string-class.md).  
+ Visual C++ 2010'dan önce her çağrısı `operator+` ayırır ve yeni bir geçici döndürür `string` nesne (rvalue bir). `operator+` Kaynak dizeleri lvalues veya rvalues olduğunu bilmediğinden bir dize diğerine eklenemiyor. Kaynak dizeleri hem lvalues varsa, başka bir programda başvurulan ve bu nedenle değiştirilmemesi gerekir. Rvalue başvuru kullanarak `operator+` başka bir programda başvurulamaz rvalues yapılacak değiştirilebilir. Bu nedenle, `operator+` bir dize diğerine şimdi ekleyebilirsiniz. Bu dinamik bellek ayırma sayısını önemli ölçüde azaltabilir, `string` class gerçekleştirmelisiniz. Hakkında daha fazla bilgi için `string` sınıfı için bkz: [basic_string sınıfı](../standard-library/basic-string-class.md).  
   
  Derleyici dönüş değeri en iyi duruma getirme (RVO) veya adlı dönüş değeri en iyi duruma getirme (NRVO) kullanamazsınız taşıma semantiği de faydalıdır. Bu durumlarda, türü tanımlıyorsa derleyici taşıma oluşturucusuna çağırır. Adlı dönüş değeri en iyi duruma getirme hakkında daha fazla bilgi için bkz: [adlı dönüş değeri en iyi duruma getirme Visual C++ 2005'te](http://go.microsoft.com/fwlink/p/?linkid=131571).  
   

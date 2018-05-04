@@ -1,12 +1,9 @@
 ---
-title: "Başvurular (C++) | Microsoft Docs"
-ms.custom: 
+title: Başvurular (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - references, declaring
 - referencing objects, declarator syntax
 ms.assetid: 68156f7f-97a0-4b66-b26d-b25ade5e3bd8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7453fbab0ade6cfe2cbdd836d7d59ba49c3ccfd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fe60a849cb1b14420ab83af77362ddda433884a9
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="references-c"></a>Başvurular (C++)
 Bir işaretçi aşağıdakine benzer bir başvuru bellekte bir başka bir yerde bulunan nesnenin adresini depolar. Bir işaretçi başlatıldıktan sonra bir başvuru ayarlayın ya da farklı bir nesneye başvuruda kurulamıyor null. Başvuruları iki tür vardır: başvuran bir adlandırılmış değişken ve rvalue başvuru başvuran lvalue başvuru bir [geçici nesne](../cpp/temporary-objects.md). & İşleci güveninin lvalue başvuru ve & & işleci rvalue başvuru veya bağlam bağlı olarak Evrensel başvurusu (rvalue veya lvalue) olduğunu belirtir.  

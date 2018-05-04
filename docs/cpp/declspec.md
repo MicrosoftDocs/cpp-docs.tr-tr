@@ -1,12 +1,9 @@
 ---
 title: __declspec | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 1/23/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - __declspec_cpp
@@ -16,18 +13,17 @@ helpviewer_keywords:
 - __declspec keyword [C++]
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51a08092160ecb288decae343713e5a4f6e507b1
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: c610da3545e7269c307542930140616dc6af9dce
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="declspec"></a>__declspec
 
-**Microsoft Specific**
+**Microsoft özel**
 
 Depolama sınıfı bilgi kullanır belirtmek için genişletilmiş öznitelik sözdizimi **__declspec** anahtar sözcüğü belirli bir türün bir örneği aşağıda listelenen Microsoft'a özgü depolama sınıfı öznitelik ile depolanması için olduğunu belirtir. Diğer depolama sınıfı değiştiricileri örneklerindendir **statik** ve **extern** anahtar sözcükler. Ancak bu anahtar sözcükler C ve C++ dillerinin ANSI belirtiminin bir parçasıdır ve genişletilmiş öznitelik söz dizimi kapsamında değildir. Genişletilmiş söz dizimi özniteliği Microsoft'a özel C ve C++ dilleri genişletmelerini basitleştirir ve standartlaştırır.
 
@@ -37,15 +33,15 @@ Depolama sınıfı bilgi kullanır belirtmek için genişletilmiş öznitelik s�
 &nbsp;&nbsp;&nbsp;&nbsp;**__declspec (***genişletilmiş-decl-değiştirici-seq***)** 
 
 *extended-decl-modifier-seq*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*extended-decl-modifier*<sub>opt</sub>  
+&nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş decl-değiştirici*<sub>iptal et</sub>  
 &nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş decl-değiştirici* *genişletilmiş-decl-değiştirici-seq*
 
-*extended-decl-modifier*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**Hizalama (**  *#*  **)**  
+*Genişletilmiş decl-değiştirici*:  
+&nbsp;&nbsp;&nbsp;&nbsp;**Hizalama (** *#* **)**  
 &nbsp;&nbsp;&nbsp;&nbsp;**ayırma ("** *segname* **")**  
 &nbsp;&nbsp;&nbsp;&nbsp;**AppDomain**  
-&nbsp;&nbsp;&nbsp;&nbsp;**code_seg("** *segname* **")**  
-&nbsp;&nbsp;&nbsp;&nbsp;**kullanım dışı**  
+&nbsp;&nbsp;&nbsp;&nbsp;**code_seg ("** *segname* **")**  
+&nbsp;&nbsp;&nbsp;&nbsp;**Kullanım dışı**  
 &nbsp;&nbsp;&nbsp;&nbsp;**dllimport**  
 &nbsp;&nbsp;&nbsp;&nbsp;**dllexport**  
 &nbsp;&nbsp;&nbsp;&nbsp;**jitintrinsic**  
@@ -55,14 +51,14 @@ Depolama sınıfı bilgi kullanır belirtmek için genişletilmiş öznitelik s�
 &nbsp;&nbsp;&nbsp;&nbsp;**noreturn**  
 &nbsp;&nbsp;&nbsp;&nbsp;**nothrow**  
 &nbsp;&nbsp;&nbsp;&nbsp;**novtable**  
-&nbsp;&nbsp;&nbsp;&nbsp;**işlem**  
-&nbsp;&nbsp;&nbsp;&nbsp;**property(** { **get=**_get_func_name_ &#124; **,put=**_put_func_name_ } **)**  
-&nbsp;&nbsp;&nbsp;&nbsp;**restrict**  
+&nbsp;&nbsp;&nbsp;&nbsp;**İşlem**  
+&nbsp;&nbsp;&nbsp;&nbsp;**özellik (** { **alma =**_get_func_name_ &#124; **, put =**_put_func_name_ } **)**  
+&nbsp;&nbsp;&nbsp;&nbsp;**Kısıtlama**  
 &nbsp;&nbsp;&nbsp;&nbsp;**safebuffers**  
 &nbsp;&nbsp;&nbsp;&nbsp;**selectany**  
 &nbsp;&nbsp;&nbsp;&nbsp;**spectre(nomitigation)**  
-&nbsp;&nbsp;&nbsp;&nbsp;**iş parçacığı**  
-&nbsp;&nbsp;&nbsp;&nbsp;**uuid("** *ComObjectGUID* **")**  
+&nbsp;&nbsp;&nbsp;&nbsp;**İş parçacığı**  
+&nbsp;&nbsp;&nbsp;&nbsp;**uuid ("** *ComObjectGUID* **")**  
 
 Beyaz boşluk, bildirim değiştirici sırasını ayırır. Örnekler sonraki bölümlerde gösterilir.
 
@@ -88,7 +84,7 @@ Bu durumda, öznitelik uygulandığı öğe `X`.
 
 Kullanmak için genel kural **__declspec** basit bildirimleri özniteliği aşağıdaki gibidir:
 
-*decl-specifier-seq* *init-declarator-list*;
+*Decl belirleyici seq* *init bildirimcisi listesi*;
 
 *Decl belirleyici seq* , bunun yanı sıra, bir taban türü içermelidir (örneğin **int**, **float**, **typedef**, ya da bir sınıf adı), depolama sınıfı (örneğin **statik**, **extern**), veya **__declspec** uzantısı. *İnit bildirimcisi listesi* , bunun yanı sıra, bildirimler işaretçi parçası içermelidir. Örneğin:
 

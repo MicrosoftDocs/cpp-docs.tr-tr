@@ -1,12 +1,9 @@
 ---
-title: "Özel durum işleme farkları | Microsoft Docs"
-ms.custom: 
+title: Özel durum işleme farkları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - C++ exception handling [C++], vs. structured exception handling
 - wrapper classes [C++], C exception
 ms.assetid: f21d1944-4810-468e-b02a-9f77da4138c9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 63fff00222aa083bcb392e0d71411bfcf5c0f418
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d4577739c7ef141576361e6db630eafbe432e913
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="exception-handling-differences"></a>Özel Durum İşleme Farkları
 C++ özel durum türleri modeli anlaşmalar işleme yapılandırılmış özel durum işleme modeli C sırasında özel durumlar dışında bir tür ilgilenir yapılandırılmış özel durum işleme ve C++ özel durum işleme arasındaki en önemli fark olan — özellikle `unsigned int`. Diğer bir deyişle, C++ özel durumlarını veri türüne göre tanımlanır ancak C özel durumlar bir işaretsiz tamsayı değeri tarafından tanımlanır. C'de bir özel durum oluştuğunda, her olası işleyicisi C özel durum bağlamı inceler ve özel durum kabul edin, diğer bazı işleyicisine geçirmek ya da yok sayın belirleyen bir filtre yürütür. C++'da bir özel durum, herhangi bir türde olabilir.  
@@ -71,7 +66,7 @@ In finally.
 Caught a C exception.  
 ```  
   
-##  <a name="_core_c_exception_wrapper_class"></a>C özel durum sarmalayıcı sınıfı  
+##  <a name="_core_c_exception_wrapper_class"></a> C özel durum sarmalayıcı sınıfı  
  Yukarıdaki gibi bir basit örnekte, yalnızca üç nokta C istisnası yakalanabilir (**...** ) **catch** işleyicisi. Tür veya özel durum doğası hakkında hiçbir bilgi işleyicisine iletilir. Bu yöntem çalışırken, bazı durumlarda, böylece her C özel durumu ile belirli bir sınıf ilişkilendirilen iki özel durum işleme modelleri arasında dönüştürme tanımlamak gerekebilir. Bunu yapmak için kullanılan veya bir C özel öznitelik belirli bir sınıf türü için türetilmiş bir C özel durum "sarmalayıcı" sınıfı, tanımlayabilirsiniz. Bunu yaparak, her C özel durumu C++ tarafından işlenebilir **catch** işleyici içinde daha fazla ayrı olarak önceki örnek.  
   
  Sarmalayıcı sınıfı, özel durum değeri belirlemek ve C özel durumu modeli tarafından sağlanan genişletilmiş özel durum bağlamını erişim bazı üye işlevleri oluşan bir arabirim olabilir. Varsayılan bir oluşturucu ve kabul eden bir oluşturucu tanımlamak isteyebilirsiniz bir `unsigned int` (için temel alınan C özel durumu temsil sağlamak için) bağımsız değişkeni ve bit düzeyinde kopya Oluşturucu. C özel durum sarmalayıcı sınıfı olası uyarlamasını verilmiştir:  

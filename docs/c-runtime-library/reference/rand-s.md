@@ -2,11 +2,8 @@
 title: rand_s | Microsoft Docs
 ms.custom: ''
 ms.date: 1/02/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - rand_s
@@ -38,14 +35,13 @@ helpviewer_keywords:
 - numbers, generating pseudorandom
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0e548a4225a457f846d334768d981c924d41953
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 8407848db8f442324127df8d7267a5350c077b2f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rands"></a>rand_s
 

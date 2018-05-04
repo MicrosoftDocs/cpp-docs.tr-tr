@@ -1,12 +1,9 @@
 ---
 title: selectany | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - selectany_cpp
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - __declspec keyword [C++], selectany
 - selectany __declspec keyword
 ms.assetid: 9c353017-5a42-4f50-b741-bd13da1ce84d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d8b4a1a78fb8231d407e60ded2c6dea3f7c891d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4a6543188525bea9a04c82bf5202160b42bcb6b8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="selectany"></a>selectany
 **Microsoft özel**  
@@ -46,10 +41,10 @@ __declspec( selectany ) declarator
   
  Dinamik olarak başlatılan, genel nesneler için `selectany` başvurulmayan nesnenin başlatma kodu de atar.  
   
- Genel veri öğesi, bir EXE ya da DLL projesinde normalde bir yalnızca bir kez başlatılabilir. `selectany`aynı başlığını birden fazla kaynak dosyasında görüntülendiğinde üstbilgileri tarafından tanımlanan genel veri başlatma içinde kullanılabilir. `selectany`C ve C++ Derleyicileri içinde kullanılabilir.  
+ Genel veri öğesi, bir EXE ya da DLL projesinde normalde bir yalnızca bir kez başlatılabilir. `selectany` aynı başlığını birden fazla kaynak dosyasında görüntülendiğinde üstbilgileri tarafından tanımlanan genel veri başlatma içinde kullanılabilir. `selectany` C ve C++ Derleyicileri içinde kullanılabilir.  
   
 > [!NOTE]
->  `selectany`yalnızca dışarıdan görünür olan genel veri öğeleri gerçek başlatma için uygulanabilir.  
+>  `selectany` yalnızca dışarıdan görünür olan genel veri öğeleri gerçek başlatma için uygulanabilir.  
   
 ## <a name="example"></a>Örnek  
  Bu kodu nasıl kullanılacağını gösterir `selectany` özniteliği:  

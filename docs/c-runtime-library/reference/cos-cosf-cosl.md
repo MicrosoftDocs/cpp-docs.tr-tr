@@ -39,14 +39,13 @@ helpviewer_keywords:
 ms.assetid: ae90435e-6b68-4a47-a81f-be87d5c08f16
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c93d9abe3b78a34f357f9418b5d27413f2ca4d0
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 0a49f8489d084b1f67bc46432970114350c56f09
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cos-cosf-cosl"></a>cos, cosf, cosl
 
@@ -102,6 +101,6 @@ Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibil
 [asin, asinf, asinl](asin-asinf-asinl.md)<br/>
 [atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
 [_matherr](matherr.md)<br/>
-[Sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[Bronz, tanf, tanl](tan-tanf-tanl.md)<br/>
+[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
+[tan, tanf, tanl](tan-tanf-tanl.md)<br/>
 [_CIcos](../../c-runtime-library/cicos.md)<br/>
