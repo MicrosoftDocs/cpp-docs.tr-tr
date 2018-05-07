@@ -1,12 +1,9 @@
 ---
-title: "CDiscreteTransition sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDiscreteTransition sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CDiscreteTransition
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - CDiscreteTransition [MFC], m_delay
 - CDiscreteTransition [MFC], m_hold
 ms.assetid: b4d84fb3-ccaa-451c-a69b-6b50dcb9b9c8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd4b1b7c868c13176d2cd99204b0bae1e2b9992d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 858304a41cb015711393ea6cc41e73ddbcc8cd8b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdiscretetransition-class"></a>CDiscreteTransition sınıfı
 Bir ayrık geçiş yalıtır.  
@@ -81,7 +76,7 @@ class CDiscreteTransition : public CBaseTransition;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxanimationcontroller.h  
   
-##  <a name="cdiscretetransition"></a>CDiscreteTransition::CDiscreteTransition  
+##  <a name="cdiscretetransition"></a>  CDiscreteTransition::CDiscreteTransition  
  Ayrı geçiş nesnesi oluşturur ve parametreleri başlatır.  
   
 ```  
@@ -101,7 +96,7 @@ CDiscreteTransition(
  `hold`  
  Son değeri değişkeni tutmak süre miktarı.  
   
-##  <a name="create"></a>CDiscreteTransition::Create  
+##  <a name="create"></a>  CDiscreteTransition::Create  
  Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.  
   
 ```  
@@ -117,21 +112,21 @@ virtual BOOL Create(
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçiş başarılı bir şekilde oluşturulursa TRUE; Aksi takdirde FALSE.  
   
-##  <a name="m_dblfinalvalue"></a>CDiscreteTransition::m_dblFinalValue  
+##  <a name="m_dblfinalvalue"></a>  CDiscreteTransition::m_dblFinalValue  
  Geçiş işleminin sonunda animasyon değişkeninin değeri.  
   
 ```  
 DOUBLE m_dblFinalValue;  
 ```  
   
-##  <a name="m_delay"></a>CDiscreteTransition::m_delay  
+##  <a name="m_delay"></a>  CDiscreteTransition::m_delay  
  Son değer anlık anahtarına geciktirmek üzere süre miktarı.  
   
 ```  
 UI_ANIMATION_SECONDS m_delay;  
 ```  
   
-##  <a name="m_hold"></a>CDiscreteTransition::m_hold  
+##  <a name="m_hold"></a>  CDiscreteTransition::m_hold  
  Son değeri değişkeni tutmak süre miktarı.  
   
 ```  

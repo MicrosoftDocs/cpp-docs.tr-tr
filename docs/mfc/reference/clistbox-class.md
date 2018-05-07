@@ -1,12 +1,9 @@
 ---
-title: "CListBox sınıfı | Microsoft Docs"
-ms.custom: 
+title: CListBox sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CListBox
@@ -111,17 +108,15 @@ helpviewer_keywords:
 - CListBox [MFC], SetTopIndex
 - CListBox [MFC], VKeyToItem
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ecf574deed95fca6a96e8e5a5c1d1e0bebed1854
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1101e4115efa3c5c822d0d64b767cdee379a0e0b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="clistbox-class"></a>CListBox sınıfı
 Bir Windows liste kutusu işlevselliğini sağlar.  
@@ -249,7 +244,7 @@ class CListBox : public CWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="addstring"></a>CListBox::AddString  
+##  <a name="addstring"></a>  CListBox::AddString  
  Liste kutusu için bir dize ekler.  
   
 ```  
@@ -271,7 +266,7 @@ int AddString(LPCTSTR lpszItem);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#3](../../mfc/codesnippet/cpp/clistbox-class_1.cpp)]  
   
-##  <a name="chartoitem"></a>CListBox::CharToItem  
+##  <a name="chartoitem"></a>  CListBox::CharToItem  
  Liste kutunun üst pencere aldığında çerçevesi tarafından çağrılır bir `WM_CHARTOITEM` liste kutusundan ileti.  
   
 ```  
@@ -308,7 +303,7 @@ virtual int CharToItem(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#4](../../mfc/codesnippet/cpp/clistbox-class_2.cpp)]  
   
-##  <a name="clistbox"></a>CListBox::CListBox  
+##  <a name="clistbox"></a>  CListBox::CListBox  
  Oluşturan bir `CListBox` nesnesi.  
   
 ```  
@@ -321,7 +316,7 @@ CListBox();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#1](../../mfc/codesnippet/cpp/clistbox-class_3.cpp)]  
   
-##  <a name="compareitem"></a>CListBox::CompareItem  
+##  <a name="compareitem"></a>  CListBox::CompareItem  
  Yeni bir öğe sıralanmış sahibi tarafından çizilen liste kutusunda göreli konumunu belirlemek için framework tarafından çağrılır.  
   
 ```  
@@ -349,7 +344,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#5](../../mfc/codesnippet/cpp/clistbox-class_4.cpp)]  
   
-##  <a name="create"></a>CListBox::Create  
+##  <a name="create"></a>  CListBox::Create  
  Windows liste kutusu oluşturur ve ona ekler `CListBox` nesnesi.  
   
 ```  
@@ -402,7 +397,7 @@ virtual BOOL Create(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#2](../../mfc/codesnippet/cpp/clistbox-class_5.cpp)]  
   
-##  <a name="deleteitem"></a>CListBox::DeleteItem  
+##  <a name="deleteitem"></a>  CListBox::DeleteItem  
  Kullanıcı bir öğeyi sahibi çizim sildiğinde çerçevesi tarafından çağrılır `CListBox` nesne veya liste kutusu yok eder.  
   
 ```  
@@ -421,7 +416,7 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#6](../../mfc/codesnippet/cpp/clistbox-class_6.cpp)]  
   
-##  <a name="deletestring"></a>CListBox::DeleteString  
+##  <a name="deletestring"></a>  CListBox::DeleteString  
  Konum öğesinde siler `nIndex` liste kutusundan.  
   
 ```  
@@ -441,7 +436,7 @@ int DeleteString(UINT nIndex);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#7](../../mfc/codesnippet/cpp/clistbox-class_7.cpp)]  
   
-##  <a name="dir"></a>CListBox::Dir  
+##  <a name="dir"></a>  CListBox::Dir  
  Dosya adları, sürücüler ya da her ikisini bir liste kutusu listesi ekler.  
   
 ```  
@@ -457,9 +452,9 @@ int Dir(
 |Değer|Açıklama|  
 |-----------|-------------|  
 |0x0000|Dosya okunamıyor veya yazılamıyor.|  
-|0X0001|Dosya okuma ancak yazılabilir değil.|  
-|0X0002|Dosya gizlidir ve dizin listesinde görüntülenmez.|  
-|0X0004|Dosya sistemi dosyadır.|  
+|0x0001|Dosya okuma ancak yazılabilir değil.|  
+|0x0002|Dosya gizlidir ve dizin listesinde görüntülenmez.|  
+|0x0004|Dosya sistemi dosyadır.|  
 |0x0010|Tarafından belirtilen adını `lpszWildCard` bir dizini belirtir.|  
 |0x0020|Dosya arşivledi.|  
 |0x4000|Tarafından belirtilen adla eşleşen tüm sürücüler dahil `lpszWildCard`.|  
@@ -474,7 +469,7 @@ int Dir(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#8](../../mfc/codesnippet/cpp/clistbox-class_8.cpp)]  
   
-##  <a name="drawitem"></a>CListBox::DrawItem  
+##  <a name="drawitem"></a>  CListBox::DrawItem  
  Bir sahip çizim liste kutusunu değişiklikleri visual yönünü zaman çerçevesi tarafından çağrılır.  
   
 ```  
@@ -495,7 +490,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#9](../../mfc/codesnippet/cpp/clistbox-class_9.cpp)]  
   
-##  <a name="findstring"></a>CListBox::FindString  
+##  <a name="findstring"></a>  CListBox::FindString  
  Liste kutusu seçimi değiştirmeden Belirtilen önek içeren bir liste kutusunda ilk dizesi bulur.  
   
 ```  
@@ -520,7 +515,7 @@ int FindString(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#10](../../mfc/codesnippet/cpp/clistbox-class_10.cpp)]  
   
-##  <a name="findstringexact"></a>CListBox::FindStringExact  
+##  <a name="findstringexact"></a>  CListBox::FindStringExact  
  İçinde belirtilen dize eşleşen ilk liste kutusu dizesi bulur `lpszFind`.  
   
 ```  
@@ -545,7 +540,7 @@ int FindStringExact(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#11](../../mfc/codesnippet/cpp/clistbox-class_11.cpp)]  
   
-##  <a name="getanchorindex"></a>CListBox::GetAnchorIndex  
+##  <a name="getanchorindex"></a>  CListBox::GetAnchorIndex  
  Liste kutusunda geçerli bağlantı öğenin sıfır tabanlı dizinini alır.  
   
 ```  
@@ -561,7 +556,7 @@ int GetAnchorIndex() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CListBox::SetAnchorIndex](#setanchorindex).  
   
-##  <a name="getcaretindex"></a>CListBox::GetCaretIndex  
+##  <a name="getcaretindex"></a>  CListBox::GetCaretIndex  
  Çoklu seçim liste kutusunda odak dikdörtgeni sahip öğenin dizinini belirler.  
   
 ```  
@@ -577,7 +572,7 @@ int GetCaretIndex() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CListBox::SetCaretIndex](#setcaretindex).  
   
-##  <a name="getcount"></a>CListBox::GetCount  
+##  <a name="getcount"></a>  CListBox::GetCount  
  Liste kutusunda öğe sayısını alır.  
   
 ```  
@@ -593,7 +588,7 @@ int GetCount() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#12](../../mfc/codesnippet/cpp/clistbox-class_12.cpp)]  
   
-##  <a name="getcursel"></a>CListBox::GetCurSel  
+##  <a name="getcursel"></a>  CListBox::GetCurSel  
  Tek seçim liste kutusunda seçili öğenin sıfır tabanlı dizinini alır  
   
 ```  
@@ -611,7 +606,7 @@ int GetCurSel() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#13](../../mfc/codesnippet/cpp/clistbox-class_13.cpp)]  
   
-##  <a name="gethorizontalextent"></a>CListBox::GetHorizontalExtent  
+##  <a name="gethorizontalextent"></a>  CListBox::GetHorizontalExtent  
  Liste kutusundan olarak, yatay olarak kaydırılabilir piksel cinsinden genişliği alır.  
   
 ```  
@@ -627,7 +622,7 @@ int GetHorizontalExtent() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#14](../../mfc/codesnippet/cpp/clistbox-class_14.cpp)]  
   
-##  <a name="getitemdata"></a>CListBox::GetItemData  
+##  <a name="getitemdata"></a>  CListBox::GetItemData  
  Belirtilen liste kutusu öğeyle ilişkili uygulama tarafından sağlanan doubleword değeri alır.  
   
 ```  
@@ -647,7 +642,7 @@ DWORD_PTR GetItemData(int nIndex) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#15](../../mfc/codesnippet/cpp/clistbox-class_15.cpp)]  
   
-##  <a name="getitemdataptr"></a>CListBox::GetItemDataPtr  
+##  <a name="getitemdataptr"></a>  CListBox::GetItemDataPtr  
  Belirtilen liste kutusu öğesi bir işaretçi olarak ile ilişkili uygulama tarafından sağlanan 32-bit değerini alır ( **void\***).  
   
 ```  
@@ -664,7 +659,7 @@ void* GetItemDataPtr(int nIndex) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#16](../../mfc/codesnippet/cpp/clistbox-class_16.cpp)]  
   
-##  <a name="getitemheight"></a>CListBox::GetItemHeight  
+##  <a name="getitemheight"></a>  CListBox::GetItemHeight  
  Liste kutusu öğeleri yüksekliğini belirler.  
   
 ```  
@@ -681,7 +676,7 @@ int GetItemHeight(int nIndex) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#17](../../mfc/codesnippet/cpp/clistbox-class_17.cpp)]  
   
-##  <a name="getitemrect"></a>CListBox::GetItemRect  
+##  <a name="getitemrect"></a>  CListBox::GetItemRect  
  Şu anda liste kutusu penceresinde gösterilen dikdörtgen boyutlarını bu sınırların bir liste kutusu öğesi alır.  
   
 ```  
@@ -703,7 +698,7 @@ int GetItemRect(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#18](../../mfc/codesnippet/cpp/clistbox-class_18.cpp)]  
   
-##  <a name="getlistboxinfo"></a>CListBox::GetListBoxInfo  
+##  <a name="getlistboxinfo"></a>  CListBox::GetListBoxInfo  
  Sütun başına öğe sayısını alır.  
   
 ```  
@@ -716,7 +711,7 @@ DWORD GetListBoxInfo() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi işlevselliğini öykünen [LB_GETLISTBOXINFO](http://msdn.microsoft.com/library/windows/desktop/bb775208) , Windows SDK'ın açıklandığı gibi ileti.  
   
-##  <a name="getlocale"></a>CListBox::GetLocale  
+##  <a name="getlocale"></a>  CListBox::GetLocale  
  Liste kutusu tarafından kullanılan yerel ayarları alır.  
   
 ```  
@@ -732,7 +727,7 @@ LCID GetLocale() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CListBox::SetLocale](#setlocale).  
   
-##  <a name="getsel"></a>CListBox::GetSel  
+##  <a name="getsel"></a>  CListBox::GetSel  
  Öğenin seçim durumunu alır.  
   
 ```  
@@ -754,7 +749,7 @@ int GetSel(int nIndex) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#19](../../mfc/codesnippet/cpp/clistbox-class_19.cpp)]  
   
-##  <a name="getselcount"></a>CListBox::GetSelCount  
+##  <a name="getselcount"></a>  CListBox::GetSelCount  
  Çoklu seçim liste kutusunda seçili öğeleri toplam sayısını alır.  
   
 ```  
@@ -767,7 +762,7 @@ int GetSelCount() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CListBox::GetSelItems](#getselitems).  
   
-##  <a name="getselitems"></a>CListBox::GetSelItems  
+##  <a name="getselitems"></a>  CListBox::GetSelItems  
  Çoklu seçim liste kutusunda seçili öğeleri öğesi numaralarını belirten dizisi ile bir arabellek doldurur.  
   
 ```  
@@ -789,7 +784,7 @@ int GetSelItems(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#20](../../mfc/codesnippet/cpp/clistbox-class_20.cpp)]  
   
-##  <a name="gettext"></a>CListBox::GetText  
+##  <a name="gettext"></a>  CListBox::GetText  
  Bir liste kutusundan bir dize alır.  
   
 ```  
@@ -821,7 +816,7 @@ void GetText(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#21](../../mfc/codesnippet/cpp/clistbox-class_21.cpp)]  
   
-##  <a name="gettextlen"></a>CListBox::GetTextLen  
+##  <a name="gettextlen"></a>  CListBox::GetTextLen  
  Bir dizenin uzunluğunu bir liste kutusu öğesi alır.  
   
 ```  
@@ -838,7 +833,7 @@ int GetTextLen(int nIndex) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CListBox::GetText](#gettext).  
   
-##  <a name="gettopindex"></a>CListBox::GetTopIndex  
+##  <a name="gettopindex"></a>  CListBox::GetTopIndex  
  Liste kutusunda görünen ilk öğenin sıfır tabanlı dizinini alır.  
   
 ```  
@@ -854,7 +849,7 @@ int GetTopIndex() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#22](../../mfc/codesnippet/cpp/clistbox-class_22.cpp)]  
   
-##  <a name="initstorage"></a>CListBox::InitStorage  
+##  <a name="initstorage"></a>  CListBox::InitStorage  
  Liste kutusu öğeleri depolamak için bellek ayırır.  
   
 ```  
@@ -883,7 +878,7 @@ int InitStorage(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#23](../../mfc/codesnippet/cpp/clistbox-class_23.cpp)]  
   
-##  <a name="insertstring"></a>CListBox::InsertString  
+##  <a name="insertstring"></a>  CListBox::InsertString  
  Bir dize liste kutusuna ekler.  
   
 ```  
@@ -908,7 +903,7 @@ int InsertString(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#24](../../mfc/codesnippet/cpp/clistbox-class_24.cpp)]  
   
-##  <a name="itemfrompoint"></a>CListBox::ItemFromPoint  
+##  <a name="itemfrompoint"></a>  CListBox::ItemFromPoint  
  Liste kutusu öğesi belirtilen noktası en yakın belirler `pt`.  
   
 ```  
@@ -933,7 +928,7 @@ UINT ItemFromPoint(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CListBox::SetAnchorIndex](#setanchorindex).  
   
-##  <a name="measureitem"></a>CListBox::MeasureItem  
+##  <a name="measureitem"></a>  CListBox::MeasureItem  
  Sahibi çizim stili içeren bir liste kutusu oluşturulduğunda çerçevesi tarafından çağrılır.  
   
 ```  
@@ -954,7 +949,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#25](../../mfc/codesnippet/cpp/clistbox-class_25.cpp)]  
   
-##  <a name="resetcontent"></a>CListBox::ResetContent  
+##  <a name="resetcontent"></a>  CListBox::ResetContent  
  Bir liste kutusundan tüm öğeleri kaldırır.  
   
 ```  
@@ -964,7 +959,7 @@ void ResetContent();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#26](../../mfc/codesnippet/cpp/clistbox-class_26.cpp)]  
   
-##  <a name="selectstring"></a>CListBox::SelectString  
+##  <a name="selectstring"></a>  CListBox::SelectString  
  Aramaları için bir liste kutusu öğesi belirtilen dize ile eşleşen ve eşleşen bir öğe bulunursa, öğeyi seçer.  
   
 ```  
@@ -995,7 +990,7 @@ int SelectString(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#27](../../mfc/codesnippet/cpp/clistbox-class_27.cpp)]  
   
-##  <a name="selitemrange"></a>CListBox::SelItemRange  
+##  <a name="selitemrange"></a>  CListBox::SelItemRange  
  Birden çok ardışık öğeleri çoklu seçim liste kutusunda seçer.  
   
 ```  
@@ -1024,7 +1019,7 @@ int SelItemRange(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#28](../../mfc/codesnippet/cpp/clistbox-class_28.cpp)]  
   
-##  <a name="setanchorindex"></a>CListBox::SetAnchorIndex  
+##  <a name="setanchorindex"></a>  CListBox::SetAnchorIndex  
  Bağlantı bir Genişletilmiş seçim başlamak için bir çoklu seçim liste kutusunda ayarlar.  
   
 ```  
@@ -1041,7 +1036,7 @@ void SetAnchorIndex(int nIndex);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#29](../../mfc/codesnippet/cpp/clistbox-class_29.cpp)]  
   
-##  <a name="setcaretindex"></a>CListBox::SetCaretIndex  
+##  <a name="setcaretindex"></a>  CListBox::SetCaretIndex  
  Çoklu seçim liste kutusunda belirtilen dizindeki öğe için odak dikdörtgeni ayarlar.  
   
 ```  
@@ -1066,7 +1061,7 @@ int SetCaretIndex(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#30](../../mfc/codesnippet/cpp/clistbox-class_30.cpp)]  
   
-##  <a name="setcolumnwidth"></a>CListBox::SetColumnWidth  
+##  <a name="setcolumnwidth"></a>  CListBox::SetColumnWidth  
  Sütunlu liste kutusunda tüm sütunları piksel cinsinden genişliği ayarlar (ile oluşturulan [lbs_multıcolumn](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stili).  
   
 ```  
@@ -1080,7 +1075,7 @@ void SetColumnWidth(int cxWidth);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#31](../../mfc/codesnippet/cpp/clistbox-class_31.cpp)]  
   
-##  <a name="setcursel"></a>CListBox::SetCurSel  
+##  <a name="setcursel"></a>  CListBox::SetCurSel  
  Bir dize seçer ve gerekirse, görünüme kayar.  
   
 ```  
@@ -1092,7 +1087,7 @@ int SetCurSel(int nSelect);
  Seçilecek dize sıfır tabanlı dizini belirtir. Varsa `nSelect` -1 ' dir liste kutusu herhangi bir seçim olacak şekilde ayarlanmış.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `LB_ERR`bir hata oluşursa.  
+ `LB_ERR` bir hata oluşursa.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yeni bir dize seçildiğinde, liste kutusunu daha önce seçilen dizeden Vurgu kaldırır.  
@@ -1104,7 +1099,7 @@ int SetCurSel(int nSelect);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#32](../../mfc/codesnippet/cpp/clistbox-class_32.cpp)]  
   
-##  <a name="sethorizontalextent"></a>CListBox::SetHorizontalExtent  
+##  <a name="sethorizontalextent"></a>  CListBox::SetHorizontalExtent  
  Genişlik olarak bir liste kutusu yatay olarak kaydırılabilir piksel cinsinden ayarlar.  
   
 ```  
@@ -1125,7 +1120,7 @@ void SetHorizontalExtent(int cxExtent);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#33](../../mfc/codesnippet/cpp/clistbox-class_33.cpp)]  
   
-##  <a name="setitemdata"></a>CListBox::SetItemData  
+##  <a name="setitemdata"></a>  CListBox::SetItemData  
  Belirtilen öğe bir liste kutusunda ile ilişkili bir 32-bit değeri ayarlar.  
   
 ```  
@@ -1147,7 +1142,7 @@ int SetItemData(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#34](../../mfc/codesnippet/cpp/clistbox-class_34.cpp)]  
   
-##  <a name="setitemdataptr"></a>CListBox::SetItemDataPtr  
+##  <a name="setitemdataptr"></a>  CListBox::SetItemDataPtr  
  Belirtilen öğe belirtilen işaretçisi olacak şekilde bir liste kutusunda ilişkili 32-bit değeri ayarlar ( **void\***).  
   
 ```  
@@ -1172,7 +1167,7 @@ int SetItemDataPtr(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#35](../../mfc/codesnippet/cpp/clistbox-class_35.cpp)]  
   
-##  <a name="setitemheight"></a>CListBox::SetItemHeight  
+##  <a name="setitemheight"></a>  CListBox::SetItemHeight  
  Öğe yüksekliği liste kutusunda ayarlar.  
   
 ```  
@@ -1197,7 +1192,7 @@ int SetItemHeight(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#36](../../mfc/codesnippet/cpp/clistbox-class_36.cpp)]  
   
-##  <a name="setlocale"></a>CListBox::SetLocale  
+##  <a name="setlocale"></a>  CListBox::SetLocale  
  Bu liste kutusu için yerel ayar kimliğini ayarlar.  
   
 ```  
@@ -1217,7 +1212,7 @@ LCID SetLocale(LCID nNewLocale);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#37](../../mfc/codesnippet/cpp/clistbox-class_37.cpp)]  
   
-##  <a name="setsel"></a>CListBox::SetSel  
+##  <a name="setsel"></a>  CListBox::SetSel  
  Bir dizeyi bir çoklu seçim liste kutusunda seçer.  
   
 ```  
@@ -1234,7 +1229,7 @@ int SetSel(
  Seçimi ayarlamak nasıl belirtir. Varsa `bSelect` olan `TRUE`, dize seçilir ve; varsa vurgulanmış `FALSE`, Vurgu kaldırılır ve dize artık seçili. Belirtilen dize seçili ve varsayılan olarak vurgulanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `LB_ERR`bir hata oluşursa.  
+ `LB_ERR` bir hata oluşursa.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye fonksiyonu yalnızca çoklu seçim liste kutuları ile kullanın.  
@@ -1244,7 +1239,7 @@ int SetSel(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#38](../../mfc/codesnippet/cpp/clistbox-class_38.cpp)]  
   
-##  <a name="settabstops"></a>CListBox::SetTabStops  
+##  <a name="settabstops"></a>  CListBox::SetTabStops  
  Liste kutusu sekme durağı konumda ayarlar.  
   
 ```  
@@ -1280,7 +1275,7 @@ BOOL SetTabStops(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#39](../../mfc/codesnippet/cpp/clistbox-class_39.cpp)]  
   
-##  <a name="settopindex"></a>CListBox::SetTopIndex  
+##  <a name="settopindex"></a>  CListBox::SetTopIndex  
  Belirli liste kutusu öğesi görünür olmasını sağlar.  
   
 ```  
@@ -1300,7 +1295,7 @@ int SetTopIndex(int nIndex);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CListBox#40](../../mfc/codesnippet/cpp/clistbox-class_40.cpp)]  
   
-##  <a name="vkeytoitem"></a>CListBox::VKeyToItem  
+##  <a name="vkeytoitem"></a>  CListBox::VKeyToItem  
  Liste kutunun üst pencere aldığında çerçevesi tarafından çağrılır bir `WM_VKEYTOITEM` liste kutusundan ileti.  
   
 ```  

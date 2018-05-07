@@ -1,29 +1,24 @@
 ---
-title: "Standart iletişim kutusu veri değişimi yordamları | Microsoft Docs"
-ms.custom: 
+title: Standart iletişim kutusu veri değişimi yordamları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - standard dialog, data exchange routines
 ms.assetid: c6adb7f3-f9af-4cc5-a9ea-315c5b60ad1a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca598a9ac6a146457d24bcc80e54d003123d7dd4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f6c79a96439605bcf9ab670c1f75dda2d50169f6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="standard-dialog-data-exchange-routines"></a>Standart İletişim Kutusu Veri Değişimi Rutinleri
 Bu konu genel MFC iletişim kutusu denetimleri için kullanılan standart iletişim kutusu veri değişimi (DDX) yordamları listeler.  
@@ -52,7 +47,7 @@ Bu konu genel MFC iletişim kutusu denetimleri için kullanılan standart ileti�
 |[DDX_Slider](#ddx_slider)|Kaydırıcı denetim Flash geçerli konumunu alır veya başlatır.|  
 |[DDX_Text](#ddx_text)|Bir düzen denetimi geçerli değeri alır veya başlatır.|  
   
-##  <a name="ddx_cbindex"></a>Ddx_cbındex  
+##  <a name="ddx_cbindex"></a>  Ddx_cbındex  
  `DDX_CBIndex` İşlevi aktarımını yönetir `int` arasında bir iletişim kutusu, birleşik giriş kutusu denetiminde veri form görünümü ya da Denetim Görünüm nesnesi ve `int` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```  
@@ -80,7 +75,7 @@ void AFXAPI DDX_CBIndex(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddx_cbstring"></a>DDX_CBString  
+##  <a name="ddx_cbstring"></a>  DDX_CBString  
  `DDX_CBString` İşlevi aktarımını yönetir `CString` birleşik giriş kutusu denetiminde bir iletişim kutusu düzen denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve `CString` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```  
@@ -111,7 +106,7 @@ void AFXAPI DDX_CBString(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddx_cbstringexact"></a>DDX_CBStringExact  
+##  <a name="ddx_cbstringexact"></a>  DDX_CBStringExact  
  `DDX_CBStringExact` İşlevi aktarımını yönetir `CString` birleşik giriş kutusu denetiminde bir iletişim kutusu düzen denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve `CString` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```  
@@ -142,7 +137,7 @@ void AFXAPI DDX_CBStringExact(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddx_check"></a>DDX_Check  
+##  <a name="ddx_check"></a>  DDX_Check  
  `DDX_Check` İşlevi aktarımını yönetir `int` iletişim kutusunda, onay kutusu denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve `int` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```  
@@ -170,7 +165,7 @@ void AFXAPI DDX_Check(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddx_control"></a>DDX_Control  
+##  <a name="ddx_control"></a>  DDX_Control  
  `DDX_Control` Alt sınıflar tarafından belirtilen denetim işlev `nIDC`, iletişim kutusu, form görünümü veya denetim görünüm nesnesi.  
   
 ```  
@@ -198,7 +193,7 @@ void AFXAPI DDX_Control(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddx_datetimectrl"></a>DDX_DateTimeCtrl  
+##  <a name="ddx_datetimectrl"></a>  DDX_DateTimeCtrl  
  `DDX_DateTimeCtrl` İşlevi bir tarih ve Saat Seçici denetimini arasında tarih ve/veya saat veri aktarımını yönetir ( [CDateTimeCtrl](../../mfc/reference/cdatetimectrl-class.md)) bir iletişim kutusu veya form görünümü nesnesi ve ya da bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) veya bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) iletişim kutusu veya form görünümü nesnesi veri üyesi.  
   
 ```  
@@ -241,7 +236,7 @@ void AFXAPI DDX_DateTimeCtrl(
    
 
  
-## <a name="ddx_managedcontrol"></a>DDX_ManagedControl
+## <a name="ddx_managedcontrol"></a>  DDX_ManagedControl
 Denetimin kaynak kimlikle eşleşen bir .NET denetimi oluşturur  
    
 ### <a name="syntax"></a>Sözdizimi  
@@ -263,7 +258,7 @@ void DDX_ManagedControl(
  Bir başvuru bir [Ddx_managedcontrol sınıfı](cwinformscontrol-class.md) nesnesi.  
    
 ### <a name="remarks"></a>Açıklamalar  
- `DDX_ManagedControl`çağrıları [CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol) kaynak denetimi kimlikle eşleşen bir denetim oluşturmak için Kullanım `DDX_ManagedControl` kaynak kimlikleri denetimleri oluşturmak için [CDialog::OnInitDialog](cdialog-class.md#oninitdialog). Veri değişimi için Windows Forms denetimleri ile DDX/DDV işlevlerini kullanmak gerekmez.  
+ `DDX_ManagedControl` çağrıları [CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol) kaynak denetimi kimlikle eşleşen bir denetim oluşturmak için Kullanım `DDX_ManagedControl` kaynak kimlikleri denetimleri oluşturmak için [CDialog::OnInitDialog](cdialog-class.md#oninitdialog). Veri değişimi için Windows Forms denetimleri ile DDX/DDV işlevlerini kullanmak gerekmez.  
   
  Daha fazla bilgi için bkz: [nasıl yapılır: yapmak DDX/DDV veri bağlaması Windows Forms ile](../../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md).  
    
@@ -276,7 +271,7 @@ void DDX_ManagedControl(
  
 
   
-##  <a name="ddx_ipaddress"></a>Ddx_ıpaddress  
+##  <a name="ddx_ipaddress"></a>  Ddx_ıpaddress  
  `DDX_IPAddress` İşlevi bir IP adresi denetimini ve denetim görünüm nesnesi veri üyesi arasında veri aktarımını yönetir.  
   
 ```  
@@ -313,7 +308,7 @@ void AFXAPI DDX_IPAddress(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddx_lbindex"></a>Ddx_lbındex  
+##  <a name="ddx_lbindex"></a>  Ddx_lbındex  
  `DDX_LBIndex` İşlevi aktarımını yönetir `int` iletişim kutusunda, liste kutusu denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve bir `int` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```  
@@ -341,7 +336,7 @@ void AFXAPI DDX_LBIndex(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddx_lbstring"></a>DDX_LBString  
+##  <a name="ddx_lbstring"></a>  DDX_LBString  
  `DDX_LBString` İşlevi aktarımını yönetir `CString` iletişim kutusunda, liste kutusu denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve `CString` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```  
@@ -374,7 +369,7 @@ void AFXAPI DDX_LBString(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddx_lbstringexact"></a>DDX_LBStringExact  
+##  <a name="ddx_lbstringexact"></a>  DDX_LBStringExact  
  `DDX_CBStringExact` İşlevi aktarımını yönetir `CString` iletişim kutusunda, bir liste kutusu denetiminin düzenleme denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve `CString` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```  
@@ -407,7 +402,7 @@ void AFXAPI DDX_LBStringExact(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddx_monthcalctrl"></a>DDX_MonthCalCtrl  
+##  <a name="ddx_monthcalctrl"></a>  DDX_MonthCalCtrl  
  `DDX_MonthCalCtrl` İşlevi bir aylık takvim denetiminin arasında tarih veri aktarımını yönetir ( [CMonthCalCtrl](../../mfc/reference/cmonthcalctrl-class.md)) bir iletişim kutusu, form görünümünde veya denetim görünüm nesnesi ve ya da bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) veya bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```  
@@ -444,7 +439,7 @@ void AFXAPI DDX_MonthCalCtrl(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddx_radio"></a>DDX_Radio  
+##  <a name="ddx_radio"></a>  DDX_Radio  
  `DDX_Radio` İşlevi aktarımını yönetir `int` iletişim kutusundaki radyo denetim grubu arasında veri form görünümü ya da Denetim Görünüm nesnesi ve `int` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi. Değeri `int` veri üyesi olduğunu belirledi göre hangi radyo düğmesi grubundaki seçilir.  
   
 ```  
@@ -474,7 +469,7 @@ void AFXAPI DDX_Radio(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddx_scroll"></a>DDX_Scroll  
+##  <a name="ddx_scroll"></a>  DDX_Scroll  
  `DDX_Scroll` İşlevi aktarımını yönetir `int` bir iletişim kutusunda kaydırma çubuğu denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve bir `int` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```  
@@ -502,7 +497,7 @@ void AFXAPI DDX_Scroll(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddx_slider"></a>DDX_Slider  
+##  <a name="ddx_slider"></a>  DDX_Slider  
  `DDX_Slider` İşlevi aktarımını yönetir `int` kaydırıcı denetimi iletişim kutusunu veya form görünümünde arasında veri ve bir `int` iletişim kutusu veya form görünümü nesnesi veri üyesi.  
   
 ```  
@@ -530,7 +525,7 @@ void AFXAPI DDX_Slider(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddx_text"></a>DDX_Text  
+##  <a name="ddx_text"></a>  DDX_Text  
  `DDX_Text` İşlevi aktarımını yönetir `int`, **UINT**, **uzun**, `DWORD`, `CString`, **float**, veya  **çift** arasında bir iletişim kutusu, Düzen denetiminde veri form görünümü ya da Denetim görünümü ve bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```  

@@ -1,12 +1,9 @@
 ---
 title: ICommandUI arabirimi | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - ICommandUI
@@ -23,17 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - ICommandUI interface [MFC]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4971ceaea57b91ff708315a2c32c7bac2801798f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 70e6f1eb8848c5ee93063877ae036f66584b69c4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="icommandui-interface"></a>ICommandUI arabirimi
 Kullanıcı arabirimi komutları yönetir.  
@@ -59,9 +54,9 @@ interface class ICommandUI
 |[ICommandUI::Text](#text)|Bu komut için kullanıcı arabirimi öğesi metni ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu arabirim yöntemleri ve kullanıcı arabirimi komutları yönetmek özellikleri sağlar. `ICommandUI`benzer [Ccmduı sınıfı](../../mfc/reference/ccmdui-class.md)dışında `ICommandUI` .NET bileşenleriyle birlikte MFC uygulamalarında kullanılır.  
+ Bu arabirim yöntemleri ve kullanıcı arabirimi komutları yönetmek özellikleri sağlar. `ICommandUI` benzer [Ccmduı sınıfı](../../mfc/reference/ccmdui-class.md)dışında `ICommandUI` .NET bileşenleriyle birlikte MFC uygulamalarında kullanılır.  
   
- `ICommandUI`içinde kullanılan bir `ON_UPDATE_COMMAND_UI` işleyicisinde bir [ICommandTarget](../../mfc/reference/icommandtarget-interface.md)-türetilmiş sınıf. Bir kullanıcı bir uygulamanın (seçer veya tıklama) etkinleştirdiğinde menüsünde, her bir menü öğesi etkin olarak görüntülenir veya devre dışı. Her menü komut hedefinin uygulayarak bu bilgileri sağlar. bir `ON_UPDATE_COMMAND_UI` işleyicisi. Her komut kullanıcı arabirimi nesneleri uygulamanızda için her işleyicisi için işlev prototipi ve ileti eşleme girişi oluşturmak için Özellikler penceresini kullanın.  
+ `ICommandUI` içinde kullanılan bir `ON_UPDATE_COMMAND_UI` işleyicisinde bir [ICommandTarget](../../mfc/reference/icommandtarget-interface.md)-türetilmiş sınıf. Bir kullanıcı bir uygulamanın (seçer veya tıklama) etkinleştirdiğinde menüsünde, her bir menü öğesi etkin olarak görüntülenir veya devre dışı. Her menü komut hedefinin uygulayarak bu bilgileri sağlar. bir `ON_UPDATE_COMMAND_UI` işleyicisi. Her komut kullanıcı arabirimi nesneleri uygulamanızda için her işleyicisi için işlev prototipi ve ileti eşleme girişi oluşturmak için Özellikler penceresini kullanın.  
   
  Nasıl hakkında daha fazla bilgi için `ICommandUI` arabirimi komut yönlendirme kullanılır, bkz: [nasıl yapılır: Windows Forms denetimi için komut yönlendirme eklemek](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md).  
   
@@ -69,7 +64,7 @@ interface class ICommandUI
   
  Kullanıcı arabirimi komutları MFC'de nasıl yönetildiğini daha fazla bilgi için bkz: [Ccmduı sınıfı](../../mfc/reference/ccmdui-class.md).  
   
-## <a name="check"></a>ICommandUI::Check  
+## <a name="check"></a> ICommandUI::Check  
 Bu komut için kullanıcı arabirimi öğesi uygun onay durumuna ayarlar.
 ```
 property UICheckState Check;
@@ -80,7 +75,7 @@ Bu özellik bu komut için kullanıcı arabirimi öğesi uygun onay durumuna aya
 - 1 onay  
 - 2 belirsiz ayarlayın  
 
-## <a name="continuerouting"></a>ICommandUI::ContinueRouting   
+## <a name="continuerouting"></a> ICommandUI::ContinueRouting   
 Geçerli ileti işleyicileri zincirine aşağı yönlendirme devam etmek için komut yönlendirme mekanizması söyler.
 ```
 void ContinueRouting();
@@ -88,7 +83,7 @@ void ContinueRouting();
 ## <a name="remarks"></a>Açıklamalar
 Bu FALSE değerini döndürür bir ON_COMMAND_EX işleyicisi ile birlikte kullanılması gereken bir Gelişmiş üyelik işlevdir. Teknik Not TN006 daha fazla bilgi için bkz: ileti eşlemeleri.
 
-## <a name="enabled"></a>ICommandUI::Enabled 
+## <a name="enabled"></a> ICommandUI::Enabled 
 Sağlar veya bu komut için kullanıcı arabirimi öğesi devre dışı bırakır.
 ```
 property bool Enabled;
@@ -96,7 +91,7 @@ property bool Enabled;
 ## <a name="remarks"></a>Açıklamalar
 Bu özellik sağlar veya bu komut için kullanıcı arabirimi öğesi devre dışı bırakır. Etkin olarak etkinleştirmek için true, öğe devre dışı bırakmak için FALSE olarak ayarlayın.
 
-## <a name="id"></a>ICommandUI::ID  
+## <a name="id"></a> ICommandUI::ID  
 ICommandUI nesnesiyle temsil edilen kullanıcı arabirimi nesnesinin kimliği alır.
 ```
 property unsigned int ID;
@@ -104,7 +99,7 @@ property unsigned int ID;
 ## <a name="remarks"></a>Açıklamalar
 Bu özellik Kimliğini (bir tanıtıcı) menü öğesi, araç çubuğu düğmesini veya ICommandUI nesnesiyle temsil edilen diğer kullanıcı arabirimi nesnesi alır.
 
-## <a name="index"></a>ICommandUI::Index   
+## <a name="index"></a> ICommandUI::Index   
 ICommandUI nesnesiyle temsil edilen kullanıcı arabirimi nesnesi dizinini alır.
 ```
 property unsigned int Index;
@@ -112,7 +107,7 @@ property unsigned int Index;
 ## <a name="remarks"></a>Açıklamalar
 Bu özellik dizinini (tanıtıcı) menü öğesi, araç çubuğu düğmesini veya ICommandUI nesnesiyle temsil edilen diğer kullanıcı arabirimi nesnesi alır.
 
-## <a name="radio"></a>ICommandUI::Radio 
+## <a name="radio"></a> ICommandUI::Radio 
 Bu komut için kullanıcı arabirimi öğesi uygun onay durumuna ayarlar.
 ```
 property bool Radio;
@@ -120,7 +115,7 @@ property bool Radio;
 ## <a name="remarks"></a>Açıklamalar
 Bu özellik bu komut için kullanıcı arabirimi öğesi uygun onay durumuna ayarlar. Radyo etkinleştir öğesi true ayarlayın; Aksi takdirde FALSE.
 
-## <a name="text"></a>ICommandUI::Text 
+## <a name="text"></a> ICommandUI::Text 
 Bu komut için kullanıcı arabirimi öğesi metni ayarlar.
 ```
 property String^ Text;

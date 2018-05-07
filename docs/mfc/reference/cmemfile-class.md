@@ -1,12 +1,9 @@
 ---
-title: "CMemFile sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMemFile sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMemFile
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - CMemFile [MFC], Memcpy
 - CMemFile [MFC], Realloc
 ms.assetid: 20e86515-e465-4f73-b2ea-e49789d63165
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 411d89c7796ea9ab48c013d4efd53aedd9225aba
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 81421c99623fd3ab0abde20b479ec1ba91c3f936
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmemfile-class"></a>CMemFile sınıfı
 [CFile](../../mfc/reference/cfile-class.md)-türetilmiş sınıf bellek dosyalarını destekler.  
@@ -80,7 +75,7 @@ class CMemFile : public CFile
 ## <a name="remarks"></a>Açıklamalar  
  Dosya RAM yerine diskte depolanan dışında bu bellek dosyaları disk dosyaları gibi davranır. Bellek dosyası veya bağımsız işlemler arasında nesneleri seri hale getirilmiş ham bayt aktarma veya hızlı geçici depolama için yararlı olur.  
   
- `CMemFile`nesneleri otomatik olarak kendi bellek ayırmak veya kendi bellek bloğu iliştirebilirsiniz `CMemFile` çağırarak nesne [Attach](#attach). Her iki durumda da, bellek dosyası otomatik olarak büyüyen için bellek tahsis edilir `nGrowBytes`-artışlarla, boyutta `nGrowBytes` sıfır değil.  
+ `CMemFile` nesneleri otomatik olarak kendi bellek ayırmak veya kendi bellek bloğu iliştirebilirsiniz `CMemFile` çağırarak nesne [Attach](#attach). Her iki durumda da, bellek dosyası otomatik olarak büyüyen için bellek tahsis edilir `nGrowBytes`-artışlarla, boyutta `nGrowBytes` sıfır değil.  
   
  Bellek bloğu etme işleminin otomatik olarak silinir `CMemFile` tarafından bellek başlangıçta ayrılmış ise nesne `CMemFile` ; Aksi halde, nesneye bağlı bellek ayırmayı kaldırma için sorumlu nesne.  
   
@@ -90,7 +85,7 @@ class CMemFile : public CFile
   
  `CFile` Üye işlevleri [yinelenen](../../mfc/reference/cfile-class.md#duplicate), [LockRange](../../mfc/reference/cfile-class.md#lockrange), ve [UnlockRange](../../mfc/reference/cfile-class.md#unlockrange) için uygulanmadı `CMemFile`. Bu işlevler çağırırsanız bir `CMemFile` nesne alırsınız bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
   
- `CMemFile`Çalışma Zamanı Kitaplığı işlevlerini kullanan [malloc](../../c-runtime-library/reference/malloc.md), [realloc](../../c-runtime-library/reference/realloc.md), ve [ücretsiz](../../c-runtime-library/reference/free.md) ayırmak için yeniden ayırın ve bellek; ve iç ayırması [memcpy ](../../c-runtime-library/reference/memcpy-wmemcpy.md) okurken ve yazarken kopyalama bellek bloğu. Bu davranış veya davranışı değiştirmek isteyip istemediğinizi zaman `CMemFile` bir dosya büyür kendi sınıfından türetilen `CMemFile` ve uygun işlevleri geçersiz kılar.  
+ `CMemFile` Çalışma Zamanı Kitaplığı işlevlerini kullanan [malloc](../../c-runtime-library/reference/malloc.md), [realloc](../../c-runtime-library/reference/realloc.md), ve [ücretsiz](../../c-runtime-library/reference/free.md) ayırmak için yeniden ayırın ve bellek; ve iç ayırması [memcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md) okurken ve yazarken kopyalama bellek bloğu. Bu davranış veya davranışı değiştirmek isteyip istemediğinizi zaman `CMemFile` bir dosya büyür kendi sınıfından türetilen `CMemFile` ve uygun işlevleri geçersiz kılar.  
   
  Daha fazla bilgi için `CMemFile`, makalelerine bakın [MFC'deki dosyalar](../../mfc/files-in-mfc.md) ve [bellek yönetimi (MFC)](../../mfc/memory-management.md) ve [dosya işleme](../../c-runtime-library/file-handling.md) içinde *çalışma zamanı Kitaplık Başvurusu*.  
   
@@ -104,7 +99,7 @@ class CMemFile : public CFile
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afx.h  
   
-##  <a name="alloc"></a>CMemFile::Alloc  
+##  <a name="alloc"></a>  CMemFile::Alloc  
  Bu işlev tarafından çağrılır `CMemFile` üye işlevleri.  
   
 ```  
@@ -123,7 +118,7 @@ virtual BYTE* Alloc(SIZE_T nBytes);
   
  Varsayılan Uygulama çalışma zamanı kitaplığı işlevini kullanıyor [malloc](../../c-runtime-library/reference/malloc.md) bellek ayıramadı.  
   
-##  <a name="attach"></a>CMemFile::Attach  
+##  <a name="attach"></a>  CMemFile::Attach  
  Bellek bloğu eklemek için bu işlevi çağırmak `CMemFile`.  
   
 ```  
@@ -152,7 +147,7 @@ void Attach(
   
  Varsa `nGrowBytes` 0'dan büyük `CMemFile` bağlı bellek bloğu içeriğini göz ardı eder. Kullanılarak sıfırdan bellek dosyanın içeriğini yazmak zorunda kalırsınız `CMemFile` , geçersiz kılma `CFile::Write`. Dosya sonunun yazmak veya çağırarak dosya büyütme çalışırsanız `CMemFile` , geçersiz kılma `CFile::SetLength`, `CMemFile` artışlarla bellek ayırma büyüyecektir `nGrowBytes`. Bellek ayırma büyüyen başarısız olur bellek bloğu için geçirirseniz **Attach** ile uyumlu bir yöntem ile ayrılan değildi [ayırma](#alloc). Varsayılan uygulaması ile uyumlu olacak şekilde `Alloc`, çalışma zamanı kitaplığı işlevi bellekle ayırmalısınız [malloc](../../c-runtime-library/reference/malloc.md) veya [calloc](../../c-runtime-library/reference/calloc.md).  
   
-##  <a name="cmemfile"></a>CMemFile::CMemFile  
+##  <a name="cmemfile"></a>  CMemFile::CMemFile  
  İlk aşırı boş bellek dosyasını açar.  
   
 ```  
@@ -183,7 +178,7 @@ CMemFile(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#36](../../atl-mfc-shared/reference/codesnippet/cpp/cmemfile-class_1.cpp)]  
   
-##  <a name="detach"></a>CMemFile::Detach  
+##  <a name="detach"></a>  CMemFile::Detach  
  Tarafından kullanılan bellek bloğu için bir işaretçi almak için bu işlevi çağırmak `CMemFile`.  
   
 ```  
@@ -196,7 +191,7 @@ BYTE* Detach();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev de kapanır çağırma `CMemFile`. Bellek bloğuna iliştirebilirsiniz `CMemFile` çağırarak [Attach](#attach). Dosyayı yeniden bağlayın ve verileri kullanmak istiyorsanız, çağırmalıdır [CFile::GetLength](../../mfc/reference/cfile-class.md#getlength) çağırmadan önce dosya uzunluğu almak için **ayırma**. Bellek bloğuna eklerseniz unutmayın `CMemFile` verileri kullanabilmesi için ( `nGrowBytes` == 0), bellek dosya büyütme açamayacaksınız sonra.  
   
-##  <a name="free"></a>CMemFile::Free  
+##  <a name="free"></a>  CMemFile::Free  
  Bu işlev tarafından çağrılır `CMemFile` üye işlevleri.  
   
 ```  
@@ -210,7 +205,7 @@ virtual void Free(BYTE* lpMem);
 ### <a name="remarks"></a>Açıklamalar  
  Özel bellek ayırmayı kaldırma uygulamak için bu işlevi geçersiz kılar. Bu işlev geçersiz kılarsanız, büyük ihtimalle geçersiz kılma istersiniz [ayırma](#alloc) ve [Realloc](#realloc) de.  
   
-##  <a name="growfile"></a>CMemFile::GrowFile  
+##  <a name="growfile"></a>  CMemFile::GrowFile  
  Bu işlev, birkaçı tarafından çağrılır `CMemFile` üye işlevleri.  
   
 ```  
@@ -224,7 +219,7 @@ virtual void GrowFile(SIZE_T dwNewLen);
 ### <a name="remarks"></a>Açıklamalar  
  Değiştirmek istiyorsanız kılabilirsiniz nasıl `CMemFile` dosya büyür. Varsayılan Uygulama çağrıları [Realloc](#realloc) mevcut bloğu büyümeye (veya [ayırma](#alloc) bir bellek bloğu oluşturmak için), katları bellek ayırmak `nGrowBytes` oluşturucuda belirtilen değeri veya [Attach](#attach) çağırın.  
   
-##  <a name="memcpy"></a>CMemFile::Memcpy  
+##  <a name="memcpy"></a>  CMemFile::Memcpy  
  Bu işlev tarafından çağrılır `CMemFile` , geçersiz kılmalar [CFile::Read](../../mfc/reference/cfile-class.md#read) ve [CFile::Write](../../mfc/reference/cfile-class.md#write) bellek dosyası gelen ve giden veri aktarımı için.  
   
 ```  
@@ -250,7 +245,7 @@ virtual BYTE* Memcpy(
 ### <a name="remarks"></a>Açıklamalar  
  Şeklini değiştirmek istiyorsanız, bu işlevi geçersiz kılma, `CMemFile` bu bellek kopyaları yapar.  
   
-##  <a name="realloc"></a>CMemFile::Realloc  
+##  <a name="realloc"></a>  CMemFile::Realloc  
  Bu işlev tarafından çağrılır `CMemFile` üye işlevleri.  
   
 ```  

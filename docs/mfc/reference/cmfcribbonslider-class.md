@@ -1,12 +1,9 @@
 ---
-title: "CMFCRibbonSlider sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCRibbonSlider sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCRibbonSlider
@@ -39,17 +36,15 @@ helpviewer_keywords:
 - CMFCRibbonSlider [MFC], SetZoomButtons
 - CMFCRibbonSlider [MFC], SetZoomIncrement
 ms.assetid: 9351ac34-f234-4e42-91e2-763f1989c8ff
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e485afac346be1f21a0b3088367be5b9bf02e2ab
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4a4264f26028db4c581fe1dc143905ac0ffc8f66
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcribbonslider-class"></a>CMFCRibbonSlider sınıfı
 `CMFCRibbonSlider` Sınıfı bir Şerit çubuğu veya Şerit durum çubuğu ekleyebileceğiniz kaydırıcı denetimi uygular. Şerit kaydırıcı denetimi Office 2007 uygulamalarda görünür yakınlaştırma kaydırıcılar benzer.  
@@ -106,7 +101,7 @@ class CMFCRibbonSlider : public CMFCRibbonBaseElement
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxribbonslider.h  
   
-##  <a name="cmfcribbonslider"></a>CMFCRibbonSlider::CMFCRibbonSlider  
+##  <a name="cmfcribbonslider"></a>  CMFCRibbonSlider::CMFCRibbonSlider  
  Şerit kaydırıcı oluşturun.  
   
 ```  
@@ -116,7 +111,7 @@ CMFCRibbonSlider(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nID`  
+ [in] `nID`  
  Kaydırıcı kimliği.  
   
  [in]. `nWidth`  
@@ -125,7 +120,7 @@ CMFCRibbonSlider(
 ### <a name="remarks"></a>Açıklamalar  
  Olan bir Şerit kaydırıcı yapıları `nWidth` kaydırıcıyı burada eklenir paneli kategorisinde pikselden. Varsayılan olarak, kaydırıcıyı yataydır.  
   
-##  <a name="getpos"></a>CMFCRibbonSlider::GetPos  
+##  <a name="getpos"></a>  CMFCRibbonSlider::GetPos  
  Kaydırıcı denetimi geçerli konumunu döndürür.  
   
 ```  
@@ -135,7 +130,7 @@ int GetPos() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Kaydırıcı başına göreli bir konum olduğundan kaydırıcı denetimi geçerli konumu.  
   
-##  <a name="getrangemax"></a>CMFCRibbonSlider::GetRangeMax  
+##  <a name="getrangemax"></a>  CMFCRibbonSlider::GetRangeMax  
  Kaydırıcı üzerinde kaydırıcı denetimi ilerleyebilir kaydırıcının en büyük artış alır.  
   
 ```  
@@ -145,7 +140,7 @@ int GetRangeMax() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Kaydırıcı üzerinde kaydırıcı denetimi ilerleyebilir kaydırıcının en büyük artırma.  
   
-##  <a name="getrangemin"></a>CMFCRibbonSlider::GetRangeMin  
+##  <a name="getrangemin"></a>  CMFCRibbonSlider::GetRangeMin  
  Kaydırıcı üzerinde kaydırıcı denetimi ilerleyebilir minimum artışı döndürür.  
   
 ```  
@@ -155,7 +150,7 @@ int GetRangeMin() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Kaydırıcı üzerinde kaydırıcı denetimi ilerleyebilir minimum artırma.  
   
-##  <a name="getregularsize"></a>CMFCRibbonSlider::GetRegularSize  
+##  <a name="getregularsize"></a>  CMFCRibbonSlider::GetRegularSize  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -163,13 +158,13 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getzoomincrement"></a>CMFCRibbonSlider::GetZoomIncrement  
+##  <a name="getzoomincrement"></a>  CMFCRibbonSlider::GetZoomIncrement  
  Kaydırıcı denetimi yakınlaştırma artışını edinin.  
   
 ```  
@@ -179,7 +174,7 @@ int GetZoomIncrement() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Kaydırıcı denetimi için yakınlaştırma artırma.  
   
-##  <a name="haszoombuttons"></a>CMFCRibbonSlider::HasZoomButtons  
+##  <a name="haszoombuttons"></a>  CMFCRibbonSlider::HasZoomButtons  
  Kaydırıcı yakınlaştırma düğmeleri olup olmadığını belirtir.  
   
 ```  
@@ -187,9 +182,9 @@ BOOL HasZoomButtons() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`kaydırıcı yakınlaştırma düğmesi varsa; `FALSE` Aksi takdirde.  
+ `TRUE` kaydırıcı yakınlaştırma düğmesi varsa; `FALSE` Aksi takdirde.  
   
-##  <a name="ondraw"></a>CMFCRibbonSlider::OnDraw  
+##  <a name="ondraw"></a>  CMFCRibbonSlider::OnDraw  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -197,11 +192,11 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setpos"></a>CMFCRibbonSlider::SetPos  
+##  <a name="setpos"></a>  CMFCRibbonSlider::SetPos  
  Kaydırıcı denetimi geçerli konumunu ayarlayın.  
   
 ```  
@@ -211,13 +206,13 @@ void SetPos(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nPos`  
+ [in] `nPos`  
  Kaydırıcısının ayarlamak için konumu belirtir. Kaydırıcı başına göreli konumdur.  
   
- [in]`bRedraw`  
+ [in] `bRedraw`  
  Varsa `TRUE`, kaydırıcıyı çizilir.  
   
-##  <a name="setrange"></a>CMFCRibbonSlider::SetRange  
+##  <a name="setrange"></a>  CMFCRibbonSlider::SetRange  
  Kaydırıcı denetimi için değer aralığını ayarlayın.  
   
 ```  
@@ -227,16 +222,16 @@ void SetRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nMin`  
+ [in] `nMin`  
  Kaydırıcı denetimi en küçük değerini belirtir.  
   
- [in]`nMax`  
+ [in] `nMax`  
  Kaydırıcı denetimi en büyük değerini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Minimum ve maksimum değerleri ayarlayarak kaydırıcı denetimi için değer aralığını belirtir.  
   
-##  <a name="setzoombuttons"></a>CMFCRibbonSlider::SetZoomButtons  
+##  <a name="setzoombuttons"></a>  CMFCRibbonSlider::SetZoomButtons  
  Yakınlaştırma düğmeleri görüntüleme veya gizleme.  
   
 ```  
@@ -245,9 +240,9 @@ void SetZoomButtons(BOOL bSet=TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in]. `bSet`  
- `TRUE`Yakınlaştırma düğmeleri görüntülemek için; `FALSE` gizleme.  
+ `TRUE` Yakınlaştırma düğmeleri görüntülemek için; `FALSE` gizleme.  
   
-##  <a name="setzoomincrement"></a>CMFCRibbonSlider::SetZoomIncrement  
+##  <a name="setzoomincrement"></a>  CMFCRibbonSlider::SetZoomIncrement  
  Kaydırıcı denetimi yakınlaştırma artışını ayarlayın.  
   
 ```  
@@ -255,7 +250,7 @@ void SetZoomIncrement(int nZoomIncrement);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nZoomIncrement`  
+ [in] `nZoomIncrement`  
  Kaydırıcı denetimi yakınlaştırma artışını belirtir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

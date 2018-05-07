@@ -1,13 +1,10 @@
 ---
-title: "Seri hale getirme: seri hale getirilebilir bir sınıf yapma | Microsoft Docs"
-ms.custom: 
+title: 'Seri hale getirme: seri hale getirilebilir bir sınıf yapma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - serialization [MFC], serializable classes
 - no default constructor
 ms.assetid: 59a14d32-1cc8-4275-9829-99639beee27c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22bb8144f3c83ca98bffa2f95e73eff31ddb89be
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4412e8db861ac522c0f1b1d7192bfbb83612d64c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="serialization-making-a-serializable-class"></a>Seri hale getirme: Seri Hale Getirilebilir Bir Sınıf Yapma
 Beş ana adım seri hale getirilebilir bir sınıf yapmak için gereklidir. Aşağıda listelenen bağlıdır ve aşağıdaki bölümlerde açıklanmıştır:  
@@ -52,10 +47,10 @@ Beş ana adım seri hale getirilebilir bir sınıf yapmak için gereklidir. Aşa
   
  Çağırırsanız `Serialize` doğrudan yerine ile >> ve << operatörleri [CArchive](../mfc/reference/carchive-class.md), önceki üç adımı serileştirme için gerekli değildir.  
   
-##  <a name="_core_deriving_your_class_from_cobject"></a>CObject'ten, sınıf türetme  
+##  <a name="_core_deriving_your_class_from_cobject"></a> CObject'ten, sınıf türetme  
  İşlevselliği ve temel serileştirme Protokolü tanımlanan `CObject` sınıfı. Sınıfından türetilen tarafından `CObject` (veya türetilen bir sınıftan `CObject`) sınıfı aşağıdaki bildiriminde gösterildiği gibi `CPerson`, serileştirme protokolü ve işlevselliğini erişim `CObject`.  
   
-##  <a name="_core_overriding_the_serialize_member_function"></a>Geçersiz kılma seri üye işlevi  
+##  <a name="_core_overriding_the_serialize_member_function"></a> Geçersiz kılma seri üye işlevi  
  `Serialize` Tanımlanan üye işlevi `CObject` sınıfı, bir nesnenin geçerli durumu yakalamak için gerekli verilere serileştirmek için sorumludur. `Serialize` İşlevine sahip bir `CArchive` nesne verilerini okuma ve yazma için kullandığı bağımsız değişkeni. [CArchive](../mfc/reference/carchive-class.md) nesneye sahip bir üye işlevi `IsStoring`, belirten olup olmadığını `Serialize` (veri yazma) saklamak veya (veri okuma) yükleniyor. Sonuçları kullanarak `IsStoring` bir kılavuz olarak, ya da, nesnenin verilerde ekleme `CArchive` ekleme işleci nesnesiyle (**<\<**) veya veri çıkarma işleci (Ayıkla **>>**).  
   
  Türetilmiş bir sınıf göz önünde bulundurun `CObject` ve türlerinin iki yeni üye değişkeni yok `CString` ve **WORD**. Aşağıdaki sınıf bildirimi parça yeni üye değişkenleri ve geçersiz kılınan bildirimi gösterir `Serialize` üye fonksiyonu:  
@@ -74,12 +69,12 @@ Beş ana adım seri hale getirilebilir bir sınıf yapmak için gereklidir. Aşa
   
  Aynı zamanda [CArchive::Read](../mfc/reference/carchive-class.md#read) ve [CArchive::Write](../mfc/reference/carchive-class.md#write) okumak ve büyük miktarlarda yazılmayan veri yazmak için üye işlevleri.  
   
-##  <a name="_core_using_the_declare_serial_macro"></a>Declare_serıal makrosu kullanma  
+##  <a name="_core_using_the_declare_serial_macro"></a> Declare_serıal makrosu kullanma  
  `DECLARE_SERIAL` Makrosu, serileştirme, destekleyen sınıfları bildiriminde gereklidir, aşağıda gösterildiği gibi:  
   
  [!code-cpp[NVC_MFCSerialization#3](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_3.h)]  
   
-##  <a name="_core_defining_a_constructor_with_no_arguments"></a>Bağımsız değişken içermeyen bir oluşturucuya tanımlama  
+##  <a name="_core_defining_a_constructor_with_no_arguments"></a> Bağımsız değişken içermeyen bir oluşturucuya tanımlama  
  MFC varsayılan bir oluşturucu gerektirir (diskten yüklenir), seri olarak nesnelerinizi yeniden oluşturur. Seri durumdan çıkarma işlemi tüm üye değişkenleri nesneyi yeniden oluşturmak için gereken değerleri ile doldurur.  
   
  Bu oluşturucu, public, korumalı ya da özel bildirilebilir. Korumalı veya özel değişiklik yaparsanız, yalnızca serileştirme işlevleri tarafından kullanılacağını sağlanmasına yardımcı olur. Oluşturucusu gerekirse silinmesine izin veren bir durumda nesne konulmalıdır.  
@@ -87,7 +82,7 @@ Beş ana adım seri hale getirilebilir bir sınıf yapmak için gereklidir. Aşa
 > [!NOTE]
 >  Bağımsız değişken içermeyen bir oluşturucuya kullanan bir sınıfı tanımlamak unutursanız `DECLARE_SERIAL` ve `IMPLEMENT_SERIAL` makroları satırda "varsayılan oluşturucu yok kullanılabilir" derleyici uyarısı alırsınız nerede `IMPLEMENT_SERIAL` makrosu kullanılır.  
   
-##  <a name="_core_using_the_implement_serial_macro_in_the_implementation_file"></a>Implement_serıal makrosu uygulama dosyasında kullanma  
+##  <a name="_core_using_the_implement_serial_macro_in_the_implementation_file"></a> Implement_serıal makrosu uygulama dosyasında kullanma  
  `IMPLEMENT_SERIAL` Makrosu olduğunda, türetilen seri hale getirilebilir bir sınıf çeşitli işlevleri tanımlamak için kullanılan `CObject`. Uygulama dosyasında bu makrosu kullanın (. CPP) sınıfınız için. İlk iki makrosu için sınıfı adı ve hemen kendi temel sınıfının adını değişkendir.  
   
  Bu makrosu üçüncü bağımsız değişkeni bir şema sayıdır. Aslında bir sürüm numarası sınıfındaki nesneler için şema sayıdır. Büyük veya 0 değerine eşit bir tamsayı için şema numarasını kullanın. (Bu veritabanı terminolojisi şema numarasıyla karıştırmayın.)  

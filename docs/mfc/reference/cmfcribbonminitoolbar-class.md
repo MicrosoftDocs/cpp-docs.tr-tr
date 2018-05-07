@@ -1,12 +1,9 @@
 ---
-title: "CMFCRibbonMiniToolBar sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCRibbonMiniToolBar sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCRibbonMiniToolBar
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - CMFCRibbonMiniToolBar [MFC], Show
 - CMFCRibbonMiniToolBar [MFC], ShowWithContextMenu
 ms.assetid: 7017e963-aeaf-4fe9-b540-e15a7ed41e94
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62a2006423f8e6196f9fac4d8f336ced8b5416f0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1d8aebd796e0edb587e18db910df808fa349ca37
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcribbonminitoolbar-class"></a>CMFCRibbonMiniToolBar sınıfı
 Bağlamsal açılan araç uygular.  
@@ -92,7 +87,7 @@ class CMFCRibbonMiniToolBar : public CMFCRibbonPanelMenu
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxRibbonMiniToolBar.h  
   
-##  <a name="setcommands"></a>CMFCRibbonMiniToolBar::SetCommands  
+##  <a name="setcommands"></a>  CMFCRibbonMiniToolBar::SetCommands  
  Araç çubuğunda görüntülenecek komutların listesini ayarlar.  
   
 ```  
@@ -102,10 +97,10 @@ void SetCommands(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pRibbonBar`  
+ [in] `pRibbonBar`  
  Mini araç çubuğu düğmeleri görüntülemek arar Şerit çubuk.  
   
- [in]`lstCommands`  
+ [in] `lstCommands`  
  Mini araç çubuğunda görüntülenecek komutları listesi. Tüm Şerit kategorileri ilişkili düğmeleri bulmak için arama yapılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -116,7 +111,7 @@ void SetCommands(
   
  [!code-cpp[NVC_MFC_MSOffice2007Demo#9](../../mfc/reference/codesnippet/cpp/cmfcribbonminitoolbar-class_1.cpp)]  
   
-##  <a name="show"></a>CMFCRibbonMiniToolBar::Show  
+##  <a name="show"></a>  CMFCRibbonMiniToolBar::Show  
  Mini araç belirtilen ekran koordinatlarda görüntüler.  
   
 ```  
@@ -126,16 +121,16 @@ BOOL Show(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`x`  
+ [in] `x`  
  Ekran koordinatları olarak mini araç yatay konumunu belirtir.  
   
- [in]`y`  
+ [in] `y`  
  Ekran koordinatları olarak mini araç dikey konumu belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`mini araç başarıyla görüntülendiyse; Aksi takdirde `FALSE`.  
+ `TRUE` mini araç başarıyla görüntülendiyse; Aksi takdirde `FALSE`.  
   
-##  <a name="showwithcontextmenu"></a>CMFCRibbonMiniToolBar::ShowWithContextMenu  
+##  <a name="showwithcontextmenu"></a>  CMFCRibbonMiniToolBar::ShowWithContextMenu  
  Mini araç bir bağlam menüsü ile birlikte görüntüler.  
   
 ```  
@@ -147,25 +142,25 @@ BOOL ShowWithContextMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`x`  
+ [in] `x`  
  Yatay Konum bağlam menüsünün ekran koordinatları olarak belirtir.  
   
- [in]`y`  
+ [in] `y`  
  Ekran koordinatları olarak bağlam menüsü dikey konumu belirtir.  
   
- [in]`uiMenuResID`  
+ [in] `uiMenuResID`  
  Görüntülenecek bağlam menüsü kaynak Kimliğini belirtir.  
   
- [in]`pWndOwner`  
+ [in] `pWndOwner`  
  Bağlam menüsünden iletileri alan penceresi tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`bağlam menüsü başarıyla görüntülendiyse; Aksi takdirde `FALSE`.  
+ `TRUE` bağlam menüsü başarıyla görüntülendiyse; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir bağlam menüsü sahip mini bir araç çubuğu görüntülemek için bu işlevi kullanın. Bağlam menüsü konumlandırılmış 15 mini araç çubuğunun altında pikseldir.  
   
-##  <a name="iscontextmenumode"></a>CMFCRibbonMiniToolBar::IsContextMenuMode  
+##  <a name="iscontextmenumode"></a>  CMFCRibbonMiniToolBar::IsContextMenuMode  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -176,7 +171,7 @@ BOOL IsContextMenuMode() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isribbonminitoolbar"></a>CMFCRibbonMiniToolBar::IsRibbonMiniToolBar  
+##  <a name="isribbonminitoolbar"></a>  CMFCRibbonMiniToolBar::IsRibbonMiniToolBar  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  

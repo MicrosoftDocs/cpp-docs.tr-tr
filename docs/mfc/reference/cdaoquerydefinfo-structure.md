@@ -1,13 +1,10 @@
 ---
-title: "Cdaoquerydefınfo yapısı | Microsoft Docs"
-ms.custom: 
+title: Cdaoquerydefınfo yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - CDaoQueryDefInfo
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - DAO (Data Access Objects), QueryDefs collection
 - CDaoQueryDefInfo structure [MFC]
 ms.assetid: e20837dc-e78d-4171-a195-1b4075fb5d2a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e476fd8e95b48b59bbb3bae41d9ad84829ca8fa9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e0b3e5834aa8b338448c2024603783cedb6f6cae
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdaoquerydefinfo-structure"></a>CDaoQueryDefInfo Yapısı
 `CDaoQueryDefInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan QueryDefs hakkında bilgiler içerir.  
@@ -106,7 +101,7 @@ struct CDaoQueryDefInfo
 ## <a name="remarks"></a>Açıklamalar  
  Sınıfın bir nesnesi querydef olan [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md). Birincil, ikincil ve yukarıdaki tüm başvuruları nasıl bilgileri tarafından döndürülen belirtmek [GetQueryDefInfo](../../mfc/reference/cdaodatabase-class.md#getquerydefinfo) üye işlevi sınıfında `CDaoDatabase`.  
   
- Tarafından alınan bilgileri [CDaoDatabase::GetQueryDefInfo](../../mfc/reference/cdaodatabase-class.md#getquerydefinfo) üye işlevi depolanır bir `CDaoQueryDefInfo` yapısı. Çağrı `GetQueryDefInfo` veritabanı nesnesinin olan QueryDefs koleksiyonu QueryDefs depolanır. `CDaoQueryDefInfo`Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümü bir `CDaoQueryDefInfo` nesnesi. Sınıfı `CDaoDatabase` de doğrudan döndürülen özelliklerin tümünü erişmek için üye işlevleri sağlayan bir `CDaoQueryDefInfo` büyük olasılıkla nadiren çağırmanız gerekir böylece nesne `GetQueryDefInfo`.  
+ Tarafından alınan bilgileri [CDaoDatabase::GetQueryDefInfo](../../mfc/reference/cdaodatabase-class.md#getquerydefinfo) üye işlevi depolanır bir `CDaoQueryDefInfo` yapısı. Çağrı `GetQueryDefInfo` veritabanı nesnesinin olan QueryDefs koleksiyonu QueryDefs depolanır. `CDaoQueryDefInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümü bir `CDaoQueryDefInfo` nesnesi. Sınıfı `CDaoDatabase` de doğrudan döndürülen özelliklerin tümünü erişmek için üye işlevleri sağlayan bir `CDaoQueryDefInfo` büyük olasılıkla nadiren çağırmanız gerekir böylece nesne `GetQueryDefInfo`.  
   
  QueryDefs alanları veya parametre koleksiyonu yeni bir alan veya parametre nesnesi ekleme, temel alınan veritabanı yeni nesne için belirtilen veri türü desteklemiyorsa özel durum oluşur.  
   

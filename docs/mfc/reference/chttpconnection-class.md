@@ -1,12 +1,9 @@
 ---
-title: "CHttpConnection sınıfı | Microsoft Docs"
-ms.custom: 
+title: CHttpConnection sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CHttpConnection
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CHttpConnection [MFC], CHttpConnection
 - CHttpConnection [MFC], OpenRequest
 ms.assetid: a402b662-c445-4988-800d-c8278551babe
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a5236a4a957c742074a1305ba2d4359da3ed967
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 808c88e3a98df12d35afa9ce207f57456520b169
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="chttpconnection-class"></a>CHttpConnection sınıfı
 Bir HTTP sunucusuna bağlantınız yönetir.  
@@ -73,7 +68,7 @@ class CHttpConnection : public CInternetConnection
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxinet.h  
   
-##  <a name="chttpconnection"></a>CHttpConnection::CHttpConnection  
+##  <a name="chttpconnection"></a>  CHttpConnection::CHttpConnection  
  Bu üye işlevi oluşturmak için çağrılan bir `CHttpConnection` nesnesi.  
   
 ```  
@@ -138,7 +133,7 @@ CHttpConnection(
 ### <a name="remarks"></a>Açıklamalar  
  Hiçbir zaman oluşturduğunuz bir `CHttpConnection` doğrudan. Bunun yerine, çağırarak bir nesne oluşturma [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection).  
   
-##  <a name="openrequest"></a>CHttpConnection::OpenRequest  
+##  <a name="openrequest"></a>  CHttpConnection::OpenRequest  
  Bir HTTP bağlantısı açmak için bu üye işlevini çağırın.  
   
 ```  
@@ -187,7 +182,7 @@ CHttpFile* OpenRequest(
  `nVerb`  
  HTTP isteği türüyle ilişkili bir sayı. Aşağıdakilerden biri olabilir:  
   
-|HTTP istek türü|`nVerb`değer|  
+|HTTP istek türü|`nVerb` Değer|  
 |-----------------------|-------------------|  
 |`HTTP_VERB_POST`|0|  
 |`HTTP_VERB_GET`|1.|  
@@ -201,7 +196,7 @@ CHttpFile* OpenRequest(
  Bir işaretçi [CHttpFile](../../mfc/reference/chttpfile-class.md) istenen nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `dwFlags`aşağıdakilerden biri olabilir:  
+ `dwFlags` Aşağıdakilerden biri olabilir:  
   
 |Internet bayrağı|Açıklama|  
 |-------------------|-----------------|  

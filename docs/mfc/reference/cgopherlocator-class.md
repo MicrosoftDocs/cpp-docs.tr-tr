@@ -1,12 +1,9 @@
 ---
-title: "CGopherLocator sınıfı | Microsoft Docs"
-ms.custom: 
+title: CGopherLocator sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CGopherLocator
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CGopherLocator [MFC], CGopherLocator
 - CGopherLocator [MFC], GetLocatorType
 ms.assetid: 6fcc015f-5ae6-4959-b936-858634c71019
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ffe833195e665fad37c6638c83170a1913197d3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 377708108f96a42d23dcf3aa5e8214d7bf9ffe5c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cgopherlocator-class"></a>CGopherLocator sınıfı
 Bir gopher "Bulucusu" bir gopher sunucudan alır, Bulucu'nın türü belirler ve Bulucu için kullanılabilir hale getirir [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md).  
@@ -80,7 +75,7 @@ class CGopherLocator : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxinet.h  
   
-##  <a name="cgopherlocator"></a>CGopherLocator::CGopherLocator  
+##  <a name="cgopherlocator"></a>  CGopherLocator::CGopherLocator  
  Bu üye işlevi oluşturmak için çağrılan bir `CGopherLocator` nesnesi.  
   
 ```  
@@ -94,7 +89,7 @@ CGopherLocator(const CGopherLocator& ref);
 ### <a name="remarks"></a>Açıklamalar  
  Hiçbir zaman oluşturduğunuz bir `CGopherLocator` doğrudan nesne. Bunun yerine, çağrı [CGopherConnection::CreateLocator](../../mfc/reference/cgopherconnection-class.md#createlocator) oluşturmak ve bir işaretçi döndürmek için `CGopherLocator` nesnesi.  
   
-##  <a name="getlocatortype"></a>CGopherLocator::GetLocatorType  
+##  <a name="getlocatortype"></a>  CGopherLocator::GetLocatorType  
  Bulucu türünü almak için bu üye işlevini çağırın.  
   
 ```  
@@ -138,7 +133,7 @@ BOOL GetLocatorType(DWORD& dwRef) const;
 |GOPHER_TYPE_ASK|Ask + öğe.|  
 |GOPHER_TYPE_GOPHER_PLUS|Gopher + öğesi.|  
   
-##  <a name="operator_lpctstr"></a>CGopherLocator::operator LPCTSTR  
+##  <a name="operator_lpctstr"></a>  CGopherLocator::operator LPCTSTR  
  Bu yararlı atama işleci içinde yer alan null ile sonlandırılmış C dize erişmek için verimli bir yöntem sağlar bir `CGopherLocator` nesnesi.  
   
 ```  

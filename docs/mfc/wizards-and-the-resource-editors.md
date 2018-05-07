@@ -1,13 +1,10 @@
 ---
-title: "Sihirbazlar ve kaynak düzenleyicileri | Microsoft Docs"
-ms.custom: 
+title: Sihirbazlar ve kaynak düzenleyicileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -21,25 +18,23 @@ helpviewer_keywords:
 - MFC, wizards
 - Class View tool, managing Windows messages
 ms.assetid: f5dd4d13-9dc1-4a49-b6bf-5b3cb45fa8ba
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1fd81a8548dbb746da4afa5b89bc49ee801cbaeb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 33fb1caa496c34111de133a113433a614ff5eb22
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="wizards-and-the-resource-editors"></a>Sihirbazlar ve Kaynak Düzenleyicileri
 Visual C++ MFC programlama birçok tümleşik kaynak düzenleyicileri birlikte kullanmak için bazı sihirbazlar içerir. Programlama, ActiveX denetimleri için [ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md) , MFC Uygulama Sihirbazı'nın benzer bir amaca hizmet eder. Bu araçların çoğu olmadan MFC uygulamaları yazma sırasında araçları büyük ölçüde basitleştirebilir ve çalışmanızı hızlandırmak.  
   
-##  <a name="_core_use_appwizard_to_create_an_mfc_application"></a>MFC Uygulama oluşturmak için MFC Uygulama Sihirbazı'nı kullanın  
+##  <a name="_core_use_appwizard_to_create_an_mfc_application"></a> MFC Uygulama oluşturmak için MFC Uygulama Sihirbazı'nı kullanın  
  Kullanım [MFC Uygulama Sihirbazı'nı](../mfc/reference/mfc-application-wizard.md) OLE içerir ve veritabanı desteği'te Visual C++, bir MFC projesi oluşturmak için. Projedeki dosyaları, uygulama, belge, Görünüm ve çerçeve penceresi sınıfları içerir; menüleri ve isteğe bağlı bir araç çubuğu dahil olmak üzere standart kaynakları; diğer gerekli Windows dosyaları; ve isteğe bağlı .rtf dosyaları gözden geçirebilirsiniz, standart Windows Yardım konularını ve programınızın Yardım dosyası oluşturmak için ayırma içeren.  
   
-##  <a name="_core_use_classwizard_to_manage_classes_and_windows_messages"></a>Sınıf Görünümü sınıfları ve Windows iletilerini yönetmek için kullanın  
+##  <a name="_core_use_classwizard_to_manage_classes_and_windows_messages"></a> Sınıf Görünümü sınıfları ve Windows iletilerini yönetmek için kullanın  
  İşleyici işlevleri Windows iletiler ve komutlar için oluşturma, oluşturma ve sınıfları yönetme sınıfı görünüm yardımcı sınıf üyesi değişkenleri oluşturma, Otomasyon yöntemleri ve özellikleri oluşturma ve veritabanı sınıfları oluşturma.  
   
 > [!NOTE]
@@ -53,7 +48,7 @@ Visual C++ MFC programlama birçok tümleşik kaynak düzenleyicileri birlikte k
   
  Özellikler penceresini boş ileti işleyicisi üye işlevleri oluşturacak ve işleyici gövdesi uygulamak için kaynak kod Düzenleyicisi'ni kullanın. Ayrıca oluşturabilir veya (MFC sınıfları türetilmemiş sınıflar, kendi dahil) sınıflar ve üyeleri sınıf görünümü ile düzenleyebilirsiniz. Sınıf görünümü kullanarak ve projeye kod ekleme sihirbazları hakkında daha fazla bilgi için bkz: [kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md).  
   
-##  <a name="_core_use_the_resource_editors_to_create_and_edit_resources"></a>Kaynak düzenleyicileri oluşturmak ve kaynakları düzenlemek için kullanın  
+##  <a name="_core_use_the_resource_editors_to_create_and_edit_resources"></a> Kaynak düzenleyicileri oluşturmak ve kaynakları düzenlemek için kullanın  
  Visual C++ kullanma [kaynak düzenleyicileri](../windows/resource-editors.md) menüleri, iletişim kutuları, özel denetimler, Hızlandırıcı tuşları, bit eşlemler, simgeler, imleçler, dizeleri ve sürüm kaynakları oluşturmak ve düzenlemek için. Visual C++ sürüm 4.0 itibariyle bir araç çubuğu Düzenleyicisi oluşturma araç çubukları çok daha kolay hale getirir.  
   
  Daha fazla yardımcı olmak için Microsoft Foundation Class Kitaplığı ortak adlı bir dosya sağlar. RES gelen ortak kopyalayabilirsiniz "küçük resim" kaynakları içerir. RES ve kendi kaynak dosyasına yapıştırın. ORTAK. RES araç çubuğu düğmeleri, ortak imleçler, simgeler ve daha fazlasını içerir. Kullanın, değiştirmek ve bu kaynakları uygulamanızda yeniden dağıtabilir. Ortak hakkında daha fazla bilgi için. RES, bkz: [küçük örnek](../visual-cpp-samples.md).  

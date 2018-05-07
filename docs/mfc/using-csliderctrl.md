@@ -1,13 +1,10 @@
 ---
 title: CSliderCtrl kullanma | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - CSliderCtrl
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CSliderCtrl class [MFC], using
 - slider controls [MFC], using
 ms.assetid: 242c7bcd-126e-4b9b-8f76-8082ad06fe73
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e92358b3aa7d8cffb0c05112e9b8b3587ee6590
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3df9233a8b638dbf22d778d9a14fe513232ecdcf
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-csliderctrl"></a>CSliderCtrl Kullanma
 [CSliderCtrl](../mfc/reference/csliderctrl-class.md) sınıfı, bir trackbar olarak da bilinir kaydırıcı denetimi temsil eder. "Kaydırıcı denetimi" kaydırıcı ve isteğe bağlı değer içeren bir penceredir işaretler. Kullanıcı, fare veya ok tuşlarını kullanarak, kaydırıcıyı geçtiğinde, kaydırıcı denetimi değişikliği göstermek için bildirim iletileri gönderir.  

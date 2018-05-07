@@ -1,13 +1,10 @@
 ---
-title: "MIDL özellik sayfaları: Çıktı | Microsoft Docs"
-ms.custom: 
+title: 'MIDL özellik sayfaları: Çıktı | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCMidlTool.ProxyFileName
 - VC.Project.VCMidlTool.GenerateTypeLibrary
@@ -21,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - MIDL, property pages
 ms.assetid: b850b21b-ed38-46dd-a712-807e8eabd9aa
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a20bec69eac2ede5b1b3ae3b6ad60998c637609d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0ff30460ad68e6efb1abc3d84925b362cf03f551
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="midl-property-pages-output"></a>MIDL Özellik Sayfaları: Çıktı
 **Çıkış** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçenekleri belirtir:  

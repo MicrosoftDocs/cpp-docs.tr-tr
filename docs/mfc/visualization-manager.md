@@ -1,29 +1,24 @@
 ---
-title: "Seri hale getirme Yöneticisi | Microsoft Docs"
-ms.custom: 
+title: Seri hale getirme Yöneticisi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Visualization Manager
 ms.assetid: c9dd1365-27ac-42e5-8caa-1004525b4129
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 654ffc0f3fb4c33f153f3389442486ffa86b74a8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 40d16e1373d347b4a715cd6f073211796913bd21
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="visualization-manager"></a>Seri Hale Getirme Yöneticisi
 Görsel Yöneticisi tüm uygulama görünümünü denetleyen bir nesnedir. Tek bir sınıf olarak burada, uygulamanız için tüm çizim kodu koyabilirsiniz yapar. MFC kitaplığını birkaç visual yöneticileri içerir. Uygulamanız için özel görünüm oluşturmak istiyorsanız visual yöneticiniz de oluşturabilirsiniz. Farklı görsel yöneticileri etkinleştirildiğinde aşağıdaki görüntüleri aynı uygulama göster:  

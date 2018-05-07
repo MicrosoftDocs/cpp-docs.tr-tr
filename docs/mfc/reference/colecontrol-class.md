@@ -1,12 +1,9 @@
 ---
-title: "COleControl sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleControl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleControl
@@ -343,17 +340,15 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 895091131bf8a62a13527f717831a34764c931ff
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 0b2a9f7a506c5ebc1d6fdf1a37960a9322fde131
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="colecontrol-class"></a>COleControl sınıfı
 OLE denetimleri geliştirmek için güçlü bir temel sınıf.  
@@ -854,7 +849,7 @@ virtual void DisplayError(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *scode*  
+ *SCODE*  
  Raporlanacak durum kodu değeri. Olası kodları tam bir listesi için bkz: [ActiveX denetimleri: Gelişmiş konular](../../mfc/mfc-activex-controls-advanced-topics.md).  
   
  `lpszDescription`  
@@ -1062,7 +1057,7 @@ void FireError(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *scode*  
+ *SCODE*  
  Raporlanacak durum kodu değeri. Olası kodları tam bir listesi için bkz: [ActiveX denetimleri: Gelişmiş konular](../../mfc/mfc-activex-controls-advanced-topics.md).  
   
  `lpszDescription`  
@@ -1227,7 +1222,7 @@ void FireMouseDown(
  *x*  
  X koordinatını fare düğmesini basılı tuşuna bastığınızda, imleç. Koordinat denetim penceresinin sol üst köşesindeki göreli olur.  
   
- *y*  
+ *Y*  
  Y koordinatını fare düğmesini basılı tuşuna bastığınızda, imleç. Koordinat denetim penceresinin sol üst köşesindeki göreli olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1268,7 +1263,7 @@ void FireMouseMove(
  *x*  
  X koordinatını imleci. Koordinat denetim penceresinin sol üst köşesindeki göreli olur.  
   
- *y*  
+ *Y*  
  Y koordinatını imleci. Koordinat denetim penceresinin sol üst köşesindeki göreli olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1309,7 +1304,7 @@ void FireMouseUp(
  *x*  
  X koordinatını fare düğmesini yayımlandığında imleci. Koordinat denetim penceresinin sol üst köşesindeki göreli olur.  
   
- *y*  
+ *Y*  
  Y koordinatını fare düğmesini yayımlandığında bir imleç. Koordinat denetim penceresinin sol üst köşesindeki göreli olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2418,7 +2413,7 @@ virtual BOOL OnGetNaturalExtent(
  `dwAspect`  
  Nasıl nesne gösterilemeyecek kadar belirtir. İçerik, simge, bir küçük resim veya yazdırılan belge Beyanları içerir. Geçerli değerler numaralandırma içinden alınır [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) veya **DVASPECT2**.  
   
- *lindex*  
+ *Dizin*  
  İlgi nesne kısmı. Şu anda yalnızca -1, geçerli değil.  
   
  `ptd`  
@@ -2521,7 +2516,7 @@ virtual BOOL OnGetViewExtent(
  *dwDrawAspect*  
  `DWORD` hangi form ya da en boy açıklayan, görüntülenecek nesnesidir. Geçerli değerler numaralandırma içinden alınır [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) veya **DVASPECT2**.  
   
- *lindex*  
+ *Dizin*  
  İlgi nesne kısmı. Şu anda yalnızca -1, geçerli değil.  
   
  `ptd`  
@@ -2615,7 +2610,7 @@ virtual void OnInactiveMouseMove(
  *x*  
  İstemci koordinatları fare konumda içeren penceresinin x koordinatı.  
   
- *y*  
+ *Y*  
  İstemci koordinatları fare konumda içeren penceresinin y koordinatı.  
   
  `dwKeyState`  
@@ -2643,7 +2638,7 @@ virtual BOOL OnInactiveSetCursor(
  *x*  
  İstemci koordinatları fare konumda içeren penceresinin x koordinatı.  
   
- *y*  
+ *Y*  
  İstemci koordinatları fare konumda içeren penceresinin y koordinatı.  
   
  *dwMouseMsg*  
@@ -3699,7 +3694,7 @@ void TransformCoords(
   
 - **XFORMCOORDS_SIZE** bir kapsayıcı boyutu.  
   
-- **XFORMCOORDS_HIMETRICTOCONTAINER** Transform **HIMETRIC** units to the container's units.  
+- **XFORMCOORDS_HIMETRICTOCONTAINER** dönüştürme **HIMETRIC** kapsayıcının birimlerine birimleri.  
   
 - **XFORMCOORDS_CONTAINERTOHIMETRIC** kapsayıcının birimlerine dönüştürme **HIMETRIC** birimleri.  
   

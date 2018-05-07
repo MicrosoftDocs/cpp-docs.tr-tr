@@ -1,12 +1,9 @@
 ---
-title: "CToolBarCtrl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CToolBarCtrl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CToolBarCtrl
@@ -191,17 +188,15 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetToolTips
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 054e3de4daa7d5bd25583286e958c0c9b07c4090
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7b280f697a5e743f0f4d802c52894684f047c961
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl sınıfı
 Windows ortak araç çubuğu denetimi işlevselliğini sağlar.  
@@ -317,7 +312,7 @@ class CToolBarCtrl : public CWnd
   
  Windows araç yaygın bir denetim bir veya daha fazla düğme içeren bir dikdörtgen alt penceredir. Bu düğme, bir bit eşlem görüntüsü, bir dize ya da her ikisini de görüntüleyebilirsiniz. Kullanıcı bir düğmesini seçtiğinde, araç çubuğunun sahibi penceresi için bir komut iletisi gönderir. Genellikle, bir araç çubuğu düğmeleri uygulamanın menüsü öğelerine karşılık gelir; Bunlar kullanıcının uygulamanın komutlara erişmek daha doğrudan bir yol sağlar.  
   
- `CToolBarCtrl`nesneleri içeren birkaç önemli iç veri yapılarını: düğme görüntüsü bit eşlemler listesi veya bir görüntü listesi, düğmesi etiketi dizelerinin listesini ve listesini `TBBUTTON` görüntüyü ilişkilendirmek ve/veya dize stili, konumu ile yapıları belirtin ve komut kimliği düğmesine. Bu veri yapıları öğelerin her biri sıfır tabanlı dizini adlandırılır. Kullanabilmeniz için önce bir `CToolBarCtrl` nesnesi, bu veri yapıları ayarlamanız gerekir. Dize listesi yalnızca düğme etiketleri için kullanılabilir; araç çubuğundan dizeleri alınamıyor.  
+ `CToolBarCtrl` nesneleri içeren birkaç önemli iç veri yapılarını: düğme görüntüsü bit eşlemler listesi veya bir görüntü listesi, düğmesi etiketi dizelerinin listesini ve listesini `TBBUTTON` görüntüyü ilişkilendirmek ve/veya dize stili, konumu ile yapıları belirtin ve komut kimliği düğmesine. Bu veri yapıları öğelerin her biri sıfır tabanlı dizini adlandırılır. Kullanabilmeniz için önce bir `CToolBarCtrl` nesnesi, bu veri yapıları ayarlamanız gerekir. Dize listesi yalnızca düğme etiketleri için kullanılabilir; araç çubuğundan dizeleri alınamıyor.  
   
  Kullanılacak bir `CToolBarCtrl` nesnesi, genellikle şu adımları izleyin:  
   
@@ -362,7 +357,7 @@ class CToolBarCtrl : public CWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxcmn.h  
   
-##  <a name="addbitmap"></a>CToolBarCtrl::AddBitmap  
+##  <a name="addbitmap"></a>  CToolBarCtrl::AddBitmap  
  Bir veya daha fazla düğme resimlerini araç çubuğu denetiminde depolanan düğme resimlerini listesine ekler.  
   
 ```  
@@ -392,7 +387,7 @@ int AddBitmap(
 ### <a name="remarks"></a>Açıklamalar  
  Windows API'si kullanabilir [CreateMappedBitmap](http://msdn.microsoft.com/library/windows/desktop/bb787467) bit eşlem araç çubuğuna eklemeden önce renkleri eşleştirmek için. Bir işaretçi geçirirseniz bir **CBitMap** nesnesi, araç yok sonra bit eşlem kadar yok edilmez emin emin gerekir.  
   
-##  <a name="addbuttons"></a>CToolBarCtrl::AddButtons  
+##  <a name="addbuttons"></a>  CToolBarCtrl::AddButtons  
  Bir veya daha fazla düğme bir toolbar denetimine ekler.  
   
 ```  
@@ -441,30 +436,30 @@ BOOL AddButtons(
  **fsState**  
  Düğme durumu bayrakları. Aşağıda listelenen değerler birleşimi olabilir:  
   
-- `TBSTATE_CHECKED`Düğmenin bulunduğu **TBSTYLE_CHECKED** stil ve basılı olduğundan.  
+- `TBSTATE_CHECKED` Düğmenin bulunduğu **TBSTYLE_CHECKED** stil ve basılı olduğundan.  
   
-- `TBSTATE_ENABLED`Düğme kullanıcı girişini kabul eder. Bu duruma sahip olmayan bir düğme kullanıcı girişi kabul etmez ve renkte görüntülenir.  
+- `TBSTATE_ENABLED` Düğme kullanıcı girişini kabul eder. Bu duruma sahip olmayan bir düğme kullanıcı girişi kabul etmez ve renkte görüntülenir.  
   
-- `TBSTATE_HIDDEN`Düğmenin görünür değil ve kullanıcı girişi alamaz.  
+- `TBSTATE_HIDDEN` Düğmenin görünür değil ve kullanıcı girişi alamaz.  
   
-- `TBSTATE_INDETERMINATE`Düğme gri.  
+- `TBSTATE_INDETERMINATE` Düğme gri.  
   
-- `TBSTATE_PRESSED`Düğmeye basıldığında.  
+- `TBSTATE_PRESSED` Düğmeye basıldığında.  
   
-- `TBSTATE_WRAP`Satır sonu düğmesi izler. Düğme ayrıca olmalıdır `TBSTATE_ENABLED` durumu.  
+- `TBSTATE_WRAP` Satır sonu düğmesi izler. Düğme ayrıca olmalıdır `TBSTATE_ENABLED` durumu.  
   
  **fsStyle**  
  Düğme stili. Aşağıda listelenen değerler birleşimi olabilir:  
   
-- `TBSTYLE_BUTTON`Standart bir gönderme düğmesi oluşturur.  
+- `TBSTYLE_BUTTON` Standart bir gönderme düğmesi oluşturur.  
   
-- `TBSTYLE_CHECK`Basılı ve basılmamış durumlar kullanıcı bağlantıya tıkladığında her zaman arasında geçiş yapar bir düğme oluşturur. Basılı durumdayken düğmesi farklı arka plan rengi vardır.  
+- `TBSTYLE_CHECK` Basılı ve basılmamış durumlar kullanıcı bağlantıya tıkladığında her zaman arasında geçiş yapar bir düğme oluşturur. Basılı durumdayken düğmesi farklı arka plan rengi vardır.  
   
-- `TBSTYLE_CHECKGROUP`Gruptaki başka bir düğmeye basıldığında kadar basılı kalır bir onay düğmesi oluşturur.  
+- `TBSTYLE_CHECKGROUP` Gruptaki başka bir düğmeye basıldığında kadar basılı kalır bir onay düğmesi oluşturur.  
   
-- `TBSTYLE_GROUP`Gruptaki başka bir düğmeye basıldığında kadar basılı kalır bir düğme oluşturur.  
+- `TBSTYLE_GROUP` Gruptaki başka bir düğmeye basıldığında kadar basılı kalır bir düğme oluşturur.  
   
-- `TBSTYLE_SEP`Düğme grupları arasında küçük bir boşluk sağlayan bir ayırıcı oluşturur. Bu stilde bir düğme kullanıcı girişi almaz.  
+- `TBSTYLE_SEP` Düğme grupları arasında küçük bir boşluk sağlayan bir ayırıcı oluşturur. Bu stilde bir düğme kullanıcı girişi almaz.  
   
  `dwData`  
  Kullanıcı tanımlı veri.  
@@ -474,7 +469,7 @@ BOOL AddButtons(
   
  Görüntü ve/veya sağladığınız dizinini gerekir önceden eklendi araç çubuğu denetiminin için dize listesi kullanarak [AddBitmap](#addbitmap), [AddString](#addstring), ve/veya [AddStrings](#addstrings).  
   
-##  <a name="addstring"></a>CToolBarCtrl::AddString  
+##  <a name="addstring"></a>  CToolBarCtrl::AddString  
  Araç çubuğunun iç dizelerin listesine bir kaynak kimliği olarak geçirilen yeni bir dize ekler.  
   
 ```  
@@ -488,7 +483,7 @@ int AddString(UINT nStringID);
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa eklenen ilk yeni dizesi sıfır tabanlı dizini; Aksi takdirde-1.  
   
-##  <a name="addstrings"></a>CToolBarCtrl::AddStrings  
+##  <a name="addstrings"></a>  CToolBarCtrl::AddStrings  
  Araç çubuğu denetimi için kullanılabilen dizeleri listesine yeni bir dize veya dize ekler.  
   
 ```  
@@ -513,7 +508,7 @@ int AddStrings(LPCTSTR lpszStrings);
   
  Değil geçirmelisiniz bir `CString` nesne birden fazla null karakter zorunda mümkün olmadığından bu işlev bir `CString`.  
   
-##  <a name="autosize"></a>CToolBarCtrl::AutoSize  
+##  <a name="autosize"></a>  CToolBarCtrl::AutoSize  
  Tüm araç çubuğu denetimi yeniden boyutlandırır.  
   
 ```  
@@ -523,7 +518,7 @@ void AutoSize();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, üst pencere boyutunu değiştiğinde veya araç çubuğunun boyutunu (zaman, düğme veya bit eşlem boyutunu ayarlayın veya dizeler ekleme gibi) değiştiğinde çağırmalıdır.  
   
-##  <a name="changebitmap"></a>CToolBarCtrl::ChangeBitmap  
+##  <a name="changebitmap"></a>  CToolBarCtrl::ChangeBitmap  
  Geçerli araç denetimindeki bir düğme için bit eşlemde değiştirir.  
   
 ```  
@@ -536,11 +531,11 @@ BOOL ChangeBitmap(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`idButton`|Yeni bir bit eşlem almaya düğmesi komut tanımlayıcısı.|  
-|[in]`iBitmap`|Geçerli araç çubuğu denetiminin resim listesi görüntüdeki sıfır tabanlı dizini.|  
+|[in] `idButton`|Yeni bir bit eşlem almaya düğmesi komut tanımlayıcısı.|  
+|[in] `iBitmap`|Geçerli araç çubuğu denetiminin resim listesi görüntüdeki sıfır tabanlı dizini.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem başarılı olursa Sistem belirtilen düğmesini belirtilen görüntü görüntüler.  
@@ -552,7 +547,7 @@ BOOL ChangeBitmap(
   
  [!code-cpp[NVC_MFC_CToolBarCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_3.cpp)]  
   
-##  <a name="checkbutton"></a>CToolBarCtrl::CheckButton  
+##  <a name="checkbutton"></a>  CToolBarCtrl::CheckButton  
  Araç çubuğu denetiminde belirli bir düğme temizler veya bakar.  
   
 ```  
@@ -574,7 +569,7 @@ BOOL CheckButton(
 ### <a name="remarks"></a>Açıklamalar  
  Düğme işaretlendiğinde basılı görünüyor. Birden fazla düğme durumu değiştirmek istiyorsanız, arama göz önünde bulundurun [SetState](#setstate) yerine.  
   
-##  <a name="commandtoindex"></a>CToolBarCtrl::CommandToIndex  
+##  <a name="commandtoindex"></a>  CToolBarCtrl::CommandToIndex  
  Belirtilen komut tanımlayıcısı ile ilişkili düğmesi için sıfır tabanlı dizinini alır.  
   
 ```  
@@ -590,7 +585,7 @@ UINT CommandToIndex(UINT nID) const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="create"></a>CToolBarCtrl::Create  
+##  <a name="create"></a>  CToolBarCtrl::Create  
  Bir araç çubuğu denetimi oluşturur ve ona ekler bir `CToolBarCtrl` nesnesi.  
   
 ```  
@@ -636,7 +631,7 @@ virtual BOOL Create(
   
  Araç çubuğu denetimi boyutunu ve konumunu araç penceresi otomatik olarak ayarlar. Araç çubuğu düğmeleri yüksekliğini yüksekliği dayanır. Genişliği üst pencerenin istemci alanını genişliğini ile aynıdır. `CCS_TOP` Ve `CCS_BOTTOM` stilleri belirlemek araç üstüne veya altına istemci alanının konumlandırıldı. Varsayılan olarak, bir araç olan `CCS_TOP` stili.  
   
-##  <a name="createex"></a>CToolBarCtrl::CreateEx  
+##  <a name="createex"></a>  CToolBarCtrl::CreateEx  
  Bir denetimi (alt pencere) oluşturur ve bunu ile ilişkilendirir `CToolBarCtrl` nesnesi.  
   
 ```  
@@ -670,7 +665,7 @@ virtual BOOL CreateEx(
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım `CreateEx` yerine [oluşturma](#create) Windows genişletilmiş stili önsöz tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için **WS_EX_**. **CreateEx** denetimi tarafından belirtilen Genişletilmiş Windows stillerini oluşturur `dwExStyle`. Stil kullanarak bir denetimi belirli genişletilmiş kümesi [SetExtendedStyle](#setextendedstyle). Örneğin, `CreateEx` böyle stilleri olarak ayarlamak için **WS_EX_CONTEXTHELP**, ancak `SetExtendedStyle` böyle stilleri olarak ayarlamak için **TBSTYLE_EX_DRAWDDARROWS**. Daha fazla bilgi için bkz. bölümünde açıklanan stilleri [araç genişletilmiş stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760430) Windows SDK.  
   
-##  <a name="ctoolbarctrl"></a>CToolBarCtrl::CToolBarCtrl  
+##  <a name="ctoolbarctrl"></a>  CToolBarCtrl::CToolBarCtrl  
  Oluşturan bir `CToolBarCtrl` nesnesi.  
   
 ```  
@@ -680,7 +675,7 @@ CToolBarCtrl();
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız [oluşturma](#create) araç kullanılabilir hale getirmek için.  
   
-##  <a name="customize"></a>CToolBarCtrl::Customize  
+##  <a name="customize"></a>  CToolBarCtrl::Customize  
  Araç çubuğunu Özelleştir iletişim kutusu görüntüler.  
   
 ```  
@@ -692,7 +687,7 @@ void Customize();
   
  Bilgi Bankası makalesi Q241850 daha fazla bilgi için bkz: sorun: CToolBarCtrl::Customize için tutmak değil Özelleştir iletişim kutusu görünür çağırın.  
   
-##  <a name="deletebutton"></a>CToolBarCtrl::DeleteButton  
+##  <a name="deletebutton"></a>  CToolBarCtrl::DeleteButton  
  Bir düğme araç denetiminden siler.  
   
 ```  
@@ -708,7 +703,7 @@ BOOL DeleteButton(int nIndex);
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="enablebutton"></a>CToolBarCtrl::EnableButton  
+##  <a name="enablebutton"></a>  CToolBarCtrl::EnableButton  
  Etkinleştirir veya bir araç çubuğu denetiminde belirtilen düğmesini devre dışı bırakır.  
   
 ```  
@@ -730,7 +725,7 @@ BOOL EnableButton(
 ### <a name="remarks"></a>Açıklamalar  
  Bir düğme etkinleştirildiğinde basılı ve işaretli. Birden fazla düğme durumu değiştirmek istiyorsanız, arama göz önünde bulundurun [SetState](#setstate) yerine.  
   
-##  <a name="getanchorhighlight"></a>CToolBarCtrl::GetAnchorHighlight  
+##  <a name="getanchorhighlight"></a>  CToolBarCtrl::GetAnchorHighlight  
  İçin bir araç çubuğu ayarı bağlantı Vurgu alır.  
   
 ```  
@@ -743,7 +738,7 @@ BOOL GetAnchorHighlight() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_GETANCHORHIGHLIGHT](http://msdn.microsoft.com/library/windows/desktop/bb787313), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="getbitmap"></a>CToolBarCtrl::GetBitmap  
+##  <a name="getbitmap"></a>  CToolBarCtrl::GetBitmap  
  Bir araç çubuğunda bir düğme ile ilişkili bit eşlem dizinini alır.  
   
 ```  
@@ -760,7 +755,7 @@ int GetBitmap(int nID) const;
 ### <a name="remarks"></a>Açıklamalar  
  İşlevselliğini uygulayan [TB_GETBITMAP](http://msdn.microsoft.com/library/windows/desktop/bb787315) Windows SDK'sındaki.  
   
-##  <a name="getbitmapflags"></a>CToolBarCtrl::GetBitmapFlags  
+##  <a name="getbitmapflags"></a>  CToolBarCtrl::GetBitmapFlags  
  Bit eşlem bayrakları araç çubuğundaki alır.  
   
 ```  
@@ -773,7 +768,7 @@ UINT GetBitmapFlags() const;
 ### <a name="remarks"></a>Açıklamalar  
  Araç çubuğu oluşturduktan sonra ancak bit eşlemleri araç çubuğuna eklemeden önce çağırmalıdır. Dönüş değeri, görüntü veya büyük bit eşlemler destekleyip desteklemediğini belirtir. Görüntü büyük bit eşlemler destekliyorsa ve bunları kullanmak isterseniz çağrısı [SetBitmapSize](#setbitmapsize) ve [SetButtonSize](#setbuttonsize) büyük bit eşlem kullanarak eklemeden önce [AddBitmap](#addbitmap).  
   
-##  <a name="getbutton"></a>CToolBarCtrl::GetButton  
+##  <a name="getbutton"></a>  CToolBarCtrl::GetButton  
  Araç çubuğu denetiminde belirtilen düğme ilgili bilgileri alır.  
   
 ```  
@@ -792,7 +787,7 @@ BOOL GetButton(
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
   
-##  <a name="getbuttoncount"></a>CToolBarCtrl::GetButtonCount  
+##  <a name="getbuttoncount"></a>  CToolBarCtrl::GetButtonCount  
  Araç çubuğu denetimi şu anda düğmeleri sayısını alır.  
   
 ```  
@@ -802,7 +797,7 @@ int GetButtonCount() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Düğmeleri sayısı.  
   
-##  <a name="getbuttoninfo"></a>CToolBarCtrl::GetButtonInfo  
+##  <a name="getbuttoninfo"></a>  CToolBarCtrl::GetButtonInfo  
  Bir araç çubuğu düğmesini bilgilerini alır.  
   
 ```  
@@ -824,7 +819,7 @@ int GetButtonInfo(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_GETBUTTONINFO](http://msdn.microsoft.com/library/windows/desktop/bb787321), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="getbuttonsize"></a>CToolBarCtrl::GetButtonSize  
+##  <a name="getbuttonsize"></a>  CToolBarCtrl::GetButtonSize  
  Araç çubuğu düğmesi boyutunu alır.  
   
 ```  
@@ -834,7 +829,7 @@ DWORD GetButtonSize() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  A `DWORD` LOWORD ve HIWORD, genişlik ve yükseklik değerleri sırasıyla içeren değer.  
   
-##  <a name="getbuttontext"></a>CToolBarCtrl::GetButtonText  
+##  <a name="getbuttontext"></a>  CToolBarCtrl::GetButtonText  
  Belirtilen bir düğme geçerli araç çubuğu denetiminde görüntü metnini alır.  
   
 ```  
@@ -845,7 +840,7 @@ CString GetButtonText(int idButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`idButton`|Görüntü metni alınır düğmesi tanımlayıcısı.|  
+|[in] `idButton`|Görüntü metni alınır düğmesi tanımlayıcısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [CString](../../atl-mfc-shared/using-cstring.md) belirtilen düğmesinin görüntüleme metni içerir.  
@@ -853,7 +848,7 @@ CString GetButtonText(int idButton) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [TB_GETBUTTONTEXT](http://msdn.microsoft.com/library/windows/desktop/bb787325) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="getcolorscheme"></a>CToolBarCtrl::GetColorScheme  
+##  <a name="getcolorscheme"></a>  CToolBarCtrl::GetColorScheme  
  Geçerli araç çubuğu denetimi renk düzenini alır.  
   
 ```  
@@ -864,15 +859,15 @@ BOOL GetColorScheme(COLORSCHEME* lpColorScheme) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out]`lpColorScheme`|İşaretçi bir [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) yapısı renk düzenini bilgilerini alır. Bu yöntem döndürüldüğünde, yapısını vurgulama renk ve araç çubuğu denetimi gölge rengini açıklar.|  
+|[out] `lpColorScheme`|İşaretçi bir [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) yapısı renk düzenini bilgilerini alır. Bu yöntem döndürüldüğünde, yapısını vurgulama renk ve araç çubuğu denetimi gölge rengini açıklar.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [TB_GETCOLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb787327) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="getdisabledimagelist"></a>CToolBarCtrl::GetDisabledImageList  
+##  <a name="getdisabledimagelist"></a>  CToolBarCtrl::GetDisabledImageList  
  Araç çubuğu denetimi için devre dışı görüntü düğmeleri kullanan resim listesi alır.  
   
 ```  
@@ -885,7 +880,7 @@ CImageList* GetDisabledImageList() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_GETDISABLEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787329), Windows SDK'ın açıklandığı gibi. MFC uygulaması `GetDisabledImageList` kullanan bir `CImageList` resim listesi için bir tanıtıcı yerine araç denetimin düğmesini içeren bir nesne görüntüler.  
   
-##  <a name="getdroptarget"></a>CToolBarCtrl::GetDropTarget  
+##  <a name="getdroptarget"></a>  CToolBarCtrl::GetDropTarget  
  Alır [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679) bir araç çubuğu denetimi için arabirim.  
   
 ```  
@@ -902,7 +897,7 @@ HRESULT GetDropTarget(IDropTarget** ppDropTarget) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_GETOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787343), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="getextendedstyle"></a>CToolBarCtrl::GetExtendedStyle  
+##  <a name="getextendedstyle"></a>  CToolBarCtrl::GetExtendedStyle  
  Araç çubuğu denetimi için genişletilmiş stiller alır.  
   
 ```  
@@ -915,7 +910,7 @@ DWORD GetExtendedStyle() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_GETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb787331), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="gethotimagelist"></a>CToolBarCtrl::GetHotImageList  
+##  <a name="gethotimagelist"></a>  CToolBarCtrl::GetHotImageList  
  "Etkin" düğmeleri görüntülemek için bir araç çubuğu denetimi kullanır resim listesi alır. Fare işaretçisini üzerinde olduğunda etkin düğmesi vurgulanan görünür.  
   
 ```  
@@ -928,7 +923,7 @@ CImageList* GetHotImageList() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_GETHOTIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787334), Windows SDK'ın açıklandığı gibi. Fare işaretçisini üzerinde olduğunda etkin düğmesi vurgulanan görünür.  
   
-##  <a name="gethotitem"></a>CToolBarCtrl::GetHotItem  
+##  <a name="gethotitem"></a>  CToolBarCtrl::GetHotItem  
  Bir araç çubuğundaki etkin öğenin dizinini alır.  
   
 ```  
@@ -941,7 +936,7 @@ int GetHotItem() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_GETHOTITEM](http://msdn.microsoft.com/library/windows/desktop/bb787336), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="getimagelist"></a>CToolBarCtrl::GetImageList  
+##  <a name="getimagelist"></a>  CToolBarCtrl::GetImageList  
  Varsayılan durumlarına düğmeleri görüntülemek için bir araç çubuğu denetimi kullanır resim listesi alır.  
   
 ```  
@@ -954,7 +949,7 @@ CImageList* GetImageList() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_GETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787337), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="getinsertmark"></a>CToolBarCtrl::GetInsertMark  
+##  <a name="getinsertmark"></a>  CToolBarCtrl::GetInsertMark  
  Araç çubuğu için geçerli ekleme işareti alır.  
   
 ```  
@@ -968,7 +963,7 @@ void GetInsertMark(TBINSERTMARK* ptbim) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_GETINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb787338), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="getinsertmarkcolor"></a>CToolBarCtrl::GetInsertMarkColor  
+##  <a name="getinsertmarkcolor"></a>  CToolBarCtrl::GetInsertMarkColor  
  Araç çubuğu ekleme işareti çizmek için kullanılan rengi alır.  
   
 ```  
@@ -981,7 +976,7 @@ COLORREF GetInsertMarkColor() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_GETINSERTMARKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb787339), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="getitemrect"></a>CToolBarCtrl::GetItemRect  
+##  <a name="getitemrect"></a>  CToolBarCtrl::GetItemRect  
  Araç çubuğu denetiminde düğmesinin sınırlayıcı dikdörtgenini alır.  
   
 ```  
@@ -1003,7 +998,7 @@ BOOL GetItemRect(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, durumu ayarlanmış düğmeleri için sınırlayıcı dikdörtgenini almıyorsa `TBSTATE_HIDDEN`.  
   
-##  <a name="getmaxsize"></a>CToolBarCtrl::GetMaxSize  
+##  <a name="getmaxsize"></a>  CToolBarCtrl::GetMaxSize  
  Tüm görünür düğmeleri ve araç çubuğundaki ayırıcılar toplam boyutunu alır.  
   
 ```  
@@ -1020,7 +1015,7 @@ BOOL GetMaxSize(LPSIZE pSize) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_GETMAXSIZE](http://msdn.microsoft.com/library/windows/desktop/bb787341), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="getmaxtextrows"></a>CToolBarCtrl::GetMaxTextRows  
+##  <a name="getmaxtextrows"></a>  CToolBarCtrl::GetMaxTextRows  
  Araç çubuğunda görüntülenen metin satır sayısının üst sınırını alır.  
   
 ```  
@@ -1030,7 +1025,7 @@ int GetMaxTextRows() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Araç çubuğunda görüntülenen metin satır sayısı.  
   
-##  <a name="getmetrics"></a>CToolBarCtrl::GetMetrics  
+##  <a name="getmetrics"></a>  CToolBarCtrl::GetMetrics  
  Ölçümlerini alır `CToolBarCtrl` nesnesi.  
   
 ```  
@@ -1044,7 +1039,7 @@ void GetMetrics(LPTBMETRICS ptbm) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi işlevselliğini öykünen [TB_GETMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb787342) , Windows SDK'ın açıklandığı gibi ileti.  
   
-##  <a name="getpadding"></a>CToolBarCtrl::GetPadding  
+##  <a name="getpadding"></a>  CToolBarCtrl::GetPadding  
  Geçerli araç çubuğu denetimi yatay ve dikey doldurma alır.  
   
 ```  
@@ -1057,16 +1052,16 @@ BOOL GetPadding(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out]`pnHorzPadding`|Araç çubuğu denetiminin yatay dolgunun piksel cinsinden alır bir tamsayı.|  
-|[out]`pnVertPadding`|Araç çubuğu denetiminin dikey dolgunun piksel cinsinden alır bir tamsayı.|  
+|[out] `pnHorzPadding`|Araç çubuğu denetiminin yatay dolgunun piksel cinsinden alır bir tamsayı.|  
+|[out] `pnVertPadding`|Araç çubuğu denetiminin dikey dolgunun piksel cinsinden alır bir tamsayı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [TB_GETPADDING](http://msdn.microsoft.com/library/windows/desktop/bb787344) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="getpressedimagelist"></a>CToolBarCtrl::GetPressedImageList  
+##  <a name="getpressedimagelist"></a>  CToolBarCtrl::GetPressedImageList  
  Basılı durum düğmeleri temsil etmek için geçerli araç çubuğu denetimi kullanır resim listesi alır.  
   
 ```  
@@ -1079,7 +1074,7 @@ CImageList* GetPressedImageList();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [TB_GETPRESSEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787345) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="getrect"></a>CToolBarCtrl::GetRect  
+##  <a name="getrect"></a>  CToolBarCtrl::GetRect  
  Belirtilen araç çubuğu düğmesi için sınırlayıcı dikdörtgenini alır.  
   
 ```  
@@ -1101,7 +1096,7 @@ BOOL GetRect(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_GETRECT](http://msdn.microsoft.com/library/windows/desktop/bb787346), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="getrows"></a>CToolBarCtrl::GetRows  
+##  <a name="getrows"></a>  CToolBarCtrl::GetRows  
  Araç çubuğu denetimi tarafından görüntülenen düğmeleri satır sayısını alır.  
   
 ```  
@@ -1114,7 +1109,7 @@ int GetRows() const;
 ### <a name="remarks"></a>Açıklamalar  
  Araç çubuğu ile oluşturulmamışsa satır sayısını her zaman bir olacağını unutmayın `TBSTYLE_WRAPABLE` stili.  
   
-##  <a name="getstate"></a>CToolBarCtrl::GetState  
+##  <a name="getstate"></a>  CToolBarCtrl::GetState  
  Belirtilen düğme olup olmadığı, etkin, basılı kullanıma veya gibi bir araç çubuğu denetiminde durumuyla ilgili bilgileri alır.  
   
 ```  
@@ -1131,7 +1126,7 @@ int GetState(int nID) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev özellikle birden fazla düğme durumları almak istiyorsanız kullanışlıdır. Yalnızca durum almak için aşağıdaki üye işlevleri birini kullanın: [IsButtonEnabled](#isbuttonenabled), [IsButtonChecked](#isbuttonchecked), [IsButtonPressed](#isbuttonpressed), [IsButtonHidden ](#isbuttonhidden), veya [IsButtonIndeterminate](#isbuttonindeterminate). Ancak, `GetState` üye işlevidir algılamak için tek yolu `TBSTATE_WRAP` düğmesini durumu.  
   
-##  <a name="getstring"></a>CToolBarCtrl::GetString  
+##  <a name="getstring"></a>  CToolBarCtrl::GetString  
  Araç çubuğu dizesini alır.  
   
 ```  
@@ -1164,7 +1159,7 @@ int GetString(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_GETSTRING](http://msdn.microsoft.com/library/windows/desktop/bb787349), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="getstyle"></a>CToolBarCtrl::GetStyle  
+##  <a name="getstyle"></a>  CToolBarCtrl::GetStyle  
  Araç çubuğu denetimi için geçerli olarak uygulanmış olan stiller alır.  
   
 ```  
@@ -1174,7 +1169,7 @@ DWORD GetStyle() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  A `DWORD` bir bileşimini içeren [toolbar denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760439), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="gettooltips"></a>CToolBarCtrl::GetToolTips  
+##  <a name="gettooltips"></a>  CToolBarCtrl::GetToolTips  
  İlişkilendirilen tüm, araç çubuğu denetimiyle araç ipucunu denetimini işleyicisini alır.  
   
 ```  
@@ -1187,7 +1182,7 @@ CToolTipCtrl* GetToolTips() const;
 ### <a name="remarks"></a>Açıklamalar  
  Araç çubuğu denetimi normal olarak oluşturup sürdürdüğü kendi araç ipucunu denetimini olduğundan, programların çoğu bu işlevi çağırmak için gerek yoktur.  
   
-##  <a name="hittest"></a>CToolBarCtrl::HitTest  
+##  <a name="hittest"></a>  CToolBarCtrl::HitTest  
  Burada bir araç çubuğu denetiminde bir noktası arasındadır belirler.  
   
 ```  
@@ -1206,7 +1201,7 @@ int HitTest(LPPOINT ppt) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb787360), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="hidebutton"></a>CToolBarCtrl::HideButton  
+##  <a name="hidebutton"></a>  CToolBarCtrl::HideButton  
  Gizler veya bir araç çubuğu denetiminde belirtilen düğmesini gösterir.  
   
 ```  
@@ -1228,7 +1223,7 @@ BOOL HideButton(
 ### <a name="remarks"></a>Açıklamalar  
  Birden fazla düğme durumu değiştirmek istiyorsanız, arama göz önünde bulundurun [SetState](#setstate) yerine.  
   
-##  <a name="indeterminate"></a>CToolBarCtrl::Indeterminate  
+##  <a name="indeterminate"></a>  CToolBarCtrl::Indeterminate  
  Ayarlar veya bir araç çubuğu denetiminde belirtilen düğmesinin belirlenmemiş bir durum temizler.  
   
 ```  
@@ -1250,7 +1245,7 @@ BOOL Indeterminate(
 ### <a name="remarks"></a>Açıklamalar  
  Seçili metni kalın ve normal karakterler içerdiğinde sözcük işlemci yolu kalın araç çubuğunda görünür gibi belirsiz düğmeleri gri, görüntülenir. Birden fazla düğme durumu değiştirmek istiyorsanız, arama göz önünde bulundurun [SetState](#setstate) yerine.  
   
-##  <a name="insertbutton"></a>CToolBarCtrl::InsertButton  
+##  <a name="insertbutton"></a>  CToolBarCtrl::InsertButton  
  Bir düğme bir araç çubuğu denetiminde ekler.  
   
 ```  
@@ -1272,7 +1267,7 @@ BOOL InsertButton(
 ### <a name="remarks"></a>Açıklamalar  
  Görüntü ve/veya sağladığınız dizinini gerekir önceden eklendi araç çubuğu denetiminin için dize listesi kullanarak [AddBitmap](#addbitmap), [AddString](#addstring), ve/veya [AddStrings](#addstrings).  
   
-##  <a name="insertmarkhittest"></a>CToolBarCtrl::InsertMarkHitTest  
+##  <a name="insertmarkhittest"></a>  CToolBarCtrl::InsertMarkHitTest  
  Araç çubuğu bir noktasının ekleme işareti bilgilerini alır.  
   
 ```  
@@ -1294,7 +1289,7 @@ BOOL InsertMarkHitTest(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_INSERTMARKHITTEST](http://msdn.microsoft.com/library/windows/desktop/bb787367), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="isbuttonchecked"></a>CToolBarCtrl::IsButtonChecked  
+##  <a name="isbuttonchecked"></a>  CToolBarCtrl::IsButtonChecked  
  Araç çubuğu denetiminde belirtilen düğme işaretli olup olmadığını belirler.  
   
 ```  
@@ -1311,7 +1306,7 @@ BOOL IsButtonChecked(int nID) const;
 ### <a name="remarks"></a>Açıklamalar  
  Arama göz önünde bulundurun [GetState](#getstate) birden fazla düğme durumu almak istiyorsanız.  
   
-##  <a name="isbuttonenabled"></a>CToolBarCtrl::IsButtonEnabled  
+##  <a name="isbuttonenabled"></a>  CToolBarCtrl::IsButtonEnabled  
  Araç çubuğu denetiminde belirtilen düğmesi etkin olup olmadığını belirler.  
   
 ```  
@@ -1328,7 +1323,7 @@ BOOL IsButtonEnabled(int nID) const;
 ### <a name="remarks"></a>Açıklamalar  
  Arama göz önünde bulundurun [GetState](#getstate) birden fazla düğme durumu almak istiyorsanız.  
   
-##  <a name="isbuttonhidden"></a>CToolBarCtrl::IsButtonHidden  
+##  <a name="isbuttonhidden"></a>  CToolBarCtrl::IsButtonHidden  
  Araç çubuğu denetiminde belirtilen düğme gizli olup olmadığını belirler.  
   
 ```  
@@ -1345,7 +1340,7 @@ BOOL IsButtonHidden(int nID) const;
 ### <a name="remarks"></a>Açıklamalar  
  Arama göz önünde bulundurun [GetState](#getstate) birden fazla düğme durumu almak istiyorsanız.  
   
-##  <a name="isbuttonhighlighted"></a>CToolBarCtrl::IsButtonHighlighted  
+##  <a name="isbuttonhighlighted"></a>  CToolBarCtrl::IsButtonHighlighted  
  Araç çubuğu düğmesi Vurgu durumunu denetler.  
   
 ```  
@@ -1353,13 +1348,13 @@ BOOL IsButtonHighlighted(int nID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nID`  
+ [in] `nID`  
  Araç çubuğu düğmesi için komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Düğmesi vurgulanmış, pozitif tamsayı düğmesi değil vurgulanır yoksa 0 veya -1 olursa bir hata oluşur.  
   
-##  <a name="isbuttonindeterminate"></a>CToolBarCtrl::IsButtonIndeterminate  
+##  <a name="isbuttonindeterminate"></a>  CToolBarCtrl::IsButtonIndeterminate  
  Araç çubuğu denetiminde belirtilen düğme belirsiz olup olmadığını belirler.  
   
 ```  
@@ -1367,7 +1362,7 @@ BOOL IsButtonIndeterminate(int nID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nID`  
+ [in] `nID`  
  Araç çubuğu düğmesini komut tanımlayıcısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1376,7 +1371,7 @@ BOOL IsButtonIndeterminate(int nID) const;
 ### <a name="remarks"></a>Açıklamalar  
  Seçili metni kalın ve normal karakterler içerdiğinde sözcük işlemci yolu kalın araç çubuğunda görünür gibi görünüyorsa, belirsiz düğmeleri görüntülenir. Arama göz önünde bulundurun [GetState](#getstate) birden fazla düğme durumu almak istiyorsanız.  
   
-##  <a name="isbuttonpressed"></a>CToolBarCtrl::IsButtonPressed  
+##  <a name="isbuttonpressed"></a>  CToolBarCtrl::IsButtonPressed  
  Araç çubuğu denetiminde belirtilen düğmesine basıldığında olup olmadığını belirler.  
   
 ```  
@@ -1393,7 +1388,7 @@ BOOL IsButtonPressed(int nID) const;
 ### <a name="remarks"></a>Açıklamalar  
  Arama göz önünde bulundurun [GetState](#getstate) birden fazla düğme durumu almak istiyorsanız.  
   
-##  <a name="loadimages"></a>CToolBarCtrl::LoadImages  
+##  <a name="loadimages"></a>  CToolBarCtrl::LoadImages  
  Bit eşlemleri araç denetimin görüntü listesine yükler.  
   
 ```  
@@ -1421,7 +1416,7 @@ void LoadImages(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_LOADIMAGES](http://msdn.microsoft.com/library/windows/desktop/bb787381), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="mapaccelerator"></a>CToolBarCtrl::MapAccelerator  
+##  <a name="mapaccelerator"></a>  CToolBarCtrl::MapAccelerator  
  Hızlandırıcı karakteri bir araç çubuğu düğmesinden eşler.  
   
 ```  
@@ -1443,7 +1438,7 @@ BOOL MapAccelerator(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_MAPACCELERATOR](http://msdn.microsoft.com/library/windows/desktop/bb787383), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="markbutton"></a>CToolBarCtrl::MarkButton  
+##  <a name="markbutton"></a>  CToolBarCtrl::MarkButton  
  Belirli bir düğme Vurgu durumunu bir araç çubuğu denetiminde ayarlar.  
   
 ```  
@@ -1465,7 +1460,7 @@ BOOL MarkButton(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_MARKBUTTON](http://msdn.microsoft.com/library/windows/desktop/bb787385), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="movebutton"></a>CToolBarCtrl::MoveButton  
+##  <a name="movebutton"></a>  CToolBarCtrl::MoveButton  
  Bir düğme bir dizinden diğerine taşır.  
   
 ```  
@@ -1487,7 +1482,7 @@ BOOL MoveButton(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_MOVEBUTTON](http://msdn.microsoft.com/library/windows/desktop/bb787387), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="pressbutton"></a>CToolBarCtrl::PressButton  
+##  <a name="pressbutton"></a>  CToolBarCtrl::PressButton  
  Bastığında veya bir araç çubuğu denetiminde belirtilen düğmeyi serbest bırakır.  
   
 ```  
@@ -1495,21 +1490,21 @@ BOOL PressButton(int nID, BOOL bPress = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nID`  
+ [in] `nID`  
  Tuşuna basın veya sürüm için düğmesini komut tanımlayıcısı.  
   
- [in]`bPress`  
- `true`Belirtilen düğmesine basın için; `false` belirtilen düğmesini serbest bırakmak için. Varsayılan değer `true` şeklindedir.  
+ [in] `bPress`  
+ `true` Belirtilen düğmesine basın için; `false` belirtilen düğmesini serbest bırakmak için. Varsayılan değer `true` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Birden fazla düğme durumu değiştirmek istiyorsanız, arama göz önünde bulundurun [SetState](#setstate) yerine.  
   
  Bu yöntem gönderir [TB_PRESSBUTTON](http://msdn.microsoft.com/library/windows/desktop/bb787389) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="replacebitmap"></a>CToolBarCtrl::ReplaceBitmap  
+##  <a name="replacebitmap"></a>  CToolBarCtrl::ReplaceBitmap  
  Varolan bir bit eşlemi geçerli araç çubuğu denetiminde yeni bir bit eşlem ile değiştirir.  
   
 ```  
@@ -1520,10 +1515,10 @@ BOOL ReplaceBitmap(LPTBREPLACEBITMAP pReplaceBitmap);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`pReplaceBitmap`|İşaretçi bir [TBREPLACEBITMAP](http://msdn.microsoft.com/library/windows/desktop/bb760484) değiştirilecek bit eşlem'i ve yeni bit eşlem açıklayan yapısı.|  
+|[in] `pReplaceBitmap`|İşaretçi bir [TBREPLACEBITMAP](http://msdn.microsoft.com/library/windows/desktop/bb760484) değiştirilecek bit eşlem'i ve yeni bit eşlem açıklayan yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [TB_REPLACEBITMAP](http://msdn.microsoft.com/library/windows/desktop/bb787391) Windows SDK'ın açıklanan ileti.  
@@ -1533,7 +1528,7 @@ BOOL ReplaceBitmap(LPTBREPLACEBITMAP pReplaceBitmap);
   
  [!code-cpp[NVC_MFC_CToolBarCtrl_s1#2](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_4.cpp)]  
   
-##  <a name="restorestate"></a>CToolBarCtrl::RestoreState  
+##  <a name="restorestate"></a>  CToolBarCtrl::RestoreState  
  Araç çubuğu denetimi durumunu parametrelerle belirtilen kayıt defterinde konumdan geri yükler.  
   
 ```  
@@ -1561,7 +1556,7 @@ void RestoreState(
  `lpszValueName`  
  Alınacak değerin adını içeren bir dize noktalarına. Bu ada sahip bir değer anahtar mevcut değilse, işlev anahtarına ekler.  
   
-##  <a name="savestate"></a>CToolBarCtrl::SaveState  
+##  <a name="savestate"></a>  CToolBarCtrl::SaveState  
  Parametrelerle belirtilen kayıt defteri konumda araç çubuğu denetimi durumunu kaydeder.  
   
 ```  
@@ -1589,7 +1584,7 @@ void SaveState(
  `lpszValueName`  
  Ayarlanacak değer adını içeren bir dize noktalarına. Bu ada sahip bir değer anahtar mevcut değilse, işlev anahtarına ekler.  
   
-##  <a name="setanchorhighlight"></a>CToolBarCtrl::SetAnchorHighlight  
+##  <a name="setanchorhighlight"></a>  CToolBarCtrl::SetAnchorHighlight  
  İçin bir araç çubuğu ayarı bağlantı Vurgu ayarlar.  
   
 ```  
@@ -1597,7 +1592,7 @@ BOOL SetAnchorHighlight(BOOL fAnchor = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`fAnchor`  
+ [in] `fAnchor`  
  Bağlantı vurgulama etkin veya devre dışı olmadığını belirtir. Bu değer sıfır değilse, bağlantı vurgulama etkinleştirilecek. Bu değer sıfır ise, bağlantı vurgulama devre dışı bırakılır  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1606,7 +1601,7 @@ BOOL SetAnchorHighlight(BOOL fAnchor = TRUE);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem Win32 iletisinin davranışını uygulayan [TB_SETANCHORHIGHLIGHT](http://msdn.microsoft.com/library/windows/desktop/bb787396), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="setbitmapsize"></a>CToolBarCtrl::SetBitmapSize  
+##  <a name="setbitmapsize"></a>  CToolBarCtrl::SetBitmapSize  
  Araç çubuğu denetimi için eklenecek gerçek eşlemli görüntülerinin boyutunu belirler.  
   
 ```  
@@ -1623,7 +1618,7 @@ BOOL SetBitmapSize(CSize size);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, tüm bit eşlemleri araç çubuğuna yalnızca eklemeden önce çağrılmalıdır. Uygulama bit eşlem boyutunu açıkça ayarlamaz 16 tarafından 15 piksel olarak varsayılan olarak ayarlanır.  
   
-##  <a name="setbuttoninfo"></a>CToolBarCtrl::SetButtonInfo  
+##  <a name="setbuttoninfo"></a>  CToolBarCtrl::SetButtonInfo  
  Varolan bir düğmeyi bilgilerini araç çubuğunda ayarlar.  
   
 ```  
@@ -1645,7 +1640,7 @@ BOOL SetButtonInfo(
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevini Win32 ileti davranışını uygulayan [TB_SETBUTTONINFO](http://msdn.microsoft.com/library/windows/desktop/bb787413), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="setbuttonsize"></a>CToolBarCtrl::SetButtonSize  
+##  <a name="setbuttonsize"></a>  CToolBarCtrl::SetButtonSize  
  Araç çubuğu denetiminde düğmelerinin boyutunu belirler.  
   
 ```  
@@ -1665,7 +1660,7 @@ BOOL SetButtonSize(CSize size);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CToolBar::GetToolBarCtrl](../../mfc/reference/ctoolbar-class.md#gettoolbarctrl).  
   
-##  <a name="setbuttonstructsize"></a>CToolBarCtrl::SetButtonStructSize  
+##  <a name="setbuttonstructsize"></a>  CToolBarCtrl::SetButtonStructSize  
  Boyutunu belirtir `TBBUTTON` yapısı.  
   
 ```  
@@ -1681,7 +1676,7 @@ void SetButtonStructSize(int nSize);
   
  Bkz: [CToolBarCtrl::AddButtons](#addbuttons) hakkında daha fazla bilgi için `TBBUTTON` yapısı.  
   
-##  <a name="setbuttonwidth"></a>CToolBarCtrl::SetButtonWidth  
+##  <a name="setbuttonwidth"></a>  CToolBarCtrl::SetButtonWidth  
  Minimum ve maksimum düğmesi genişlikleri araç çubuğu denetiminde ayarlar.  
   
 ```  
@@ -1703,7 +1698,7 @@ BOOL SetButtonWidth(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_SETBUTTONWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb787417), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="setcmdid"></a>CToolBarCtrl::SetCmdID  
+##  <a name="setcmdid"></a>  CToolBarCtrl::SetCmdID  
  Belirtilen düğmesine basıldığında sahibi penceresine gönderilecek komut tanımlayıcısı ayarlar.  
   
 ```  
@@ -1722,7 +1717,7 @@ BOOL SetCmdID(
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan döndürür; Aksi takdirde sıfır.  
   
-##  <a name="setcolorscheme"></a>CToolBarCtrl::SetColorScheme  
+##  <a name="setcolorscheme"></a>  CToolBarCtrl::SetColorScheme  
  Geçerli araç çubuğu denetimi renk düzenini ayarlar.  
   
 ```  
@@ -1733,7 +1728,7 @@ void SetColorScheme(const COLORSCHEME* lpColorScheme);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`lpColorScheme`|İşaretçi bir [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) vurgulama renk ve araç çubuğu denetimi gölge rengini açıklar yapısı.|  
+|[in] `lpColorScheme`|İşaretçi bir [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) vurgulama renk ve araç çubuğu denetimi gölge rengini açıklar yapısı.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem etkisizdir bir [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] görsel tema ayarlanır.  
@@ -1745,7 +1740,7 @@ void SetColorScheme(const COLORSCHEME* lpColorScheme);
   
  [!code-cpp[NVC_MFC_CToolBarCtrl_s1#3](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_5.cpp)]  
   
-##  <a name="setdisabledimagelist"></a>CToolBarCtrl::SetDisabledImageList  
+##  <a name="setdisabledimagelist"></a>  CToolBarCtrl::SetDisabledImageList  
  Araç çubuğu denetimi kullanacağı resim listesi devre dışı görüntü düğmelere ayarlar.  
   
 ```  
@@ -1762,7 +1757,7 @@ CImageList* SetDisabledImageList(CImageList* pImageList);
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_SETDISABLEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787423), Windows SDK'ın açıklandığı gibi. MFC uygulaması `SetDisabledImageList` kullanan bir `CImageList` resim listesi için bir tanıtıcı yerine araç çubuğu denetiminin devre dışı düğmesi içeren bir nesne görüntüler.  
   
-##  <a name="setdrawtextflags"></a>CToolBarCtrl::SetDrawTextFlags  
+##  <a name="setdrawtextflags"></a>  CToolBarCtrl::SetDrawTextFlags  
  Win32 işlevinde bayrakları ayarlar [DrawText](http://msdn.microsoft.com/library/windows/desktop/dd162498), bayrakları nasıl ayarlanacağını göre biçimlendirilmiş dikdörtgenin belirtilen metnini çizmek için kullanılan.  
   
 ```  
@@ -1784,7 +1779,7 @@ DWORD SetDrawTextFlags(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_SETDRAWTEXTFLAGS](http://msdn.microsoft.com/library/windows/desktop/bb787425), Windows SDK'ın açıklandığı gibi. Bu üye işlevi bayrakları Win32 işlevinde ayarlar `DrawText`, hangi çizer metin bayrakları nasıl ayarlanacağını göre biçimlendirilmiş belirtilen dikdörtgen içinde.  
   
-##  <a name="setextendedstyle"></a>CToolBarCtrl::SetExtendedStyle  
+##  <a name="setextendedstyle"></a>  CToolBarCtrl::SetExtendedStyle  
  Araç çubuğu denetimi için genişletilmiş stiller ayarlar.  
   
 ```  
@@ -1801,7 +1796,7 @@ DWORD SetExtendedStyle(DWORD dwExStyle);
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_SETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb787427), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="sethotimagelist"></a>CToolBarCtrl::SetHotImageList  
+##  <a name="sethotimagelist"></a>  CToolBarCtrl::SetHotImageList  
  Araç çubuğu denetimi "etkin" düğmeleri görüntülemek için kullanacağı resim listesi ayarlar.  
   
 ```  
@@ -1820,7 +1815,7 @@ CImageList* SetHotImageList(CImageList* pImageList);
   
  MFC uygulaması `SetHotImageList` kullanan bir `CImageList` resim listesi için bir tanıtıcı yerine araç çubuğu denetiminin etkin düğmesi içeren bir nesne görüntüler. İşaretçinin olduğunda etkin düğmesi vurgulanan görünür.  
   
-##  <a name="sethotitem"></a>CToolBarCtrl::SetHotItem  
+##  <a name="sethotitem"></a>  CToolBarCtrl::SetHotItem  
  Sık kullanılan öğe araç çubuğunda ayarlar.  
   
 ```  
@@ -1837,7 +1832,7 @@ int SetHotItem(int nHot);
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_SETHOTITEM](http://msdn.microsoft.com/library/windows/desktop/bb787431), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="setimagelist"></a>CToolBarCtrl::SetImageList  
+##  <a name="setimagelist"></a>  CToolBarCtrl::SetImageList  
  Araç, varsayılan durumda düğmeleri görüntülemek için kullanacağı resim listesi ayarlar.  
   
 ```  
@@ -1856,7 +1851,7 @@ CImageList* SetImageList(CImageList* pImageList);
   
  MFC uygulaması `SetImageList` kullanan bir `CImageList` resim listesi için bir tanıtıcı yerine araç denetimin düğmesini içeren bir nesne görüntüler.  
   
-##  <a name="setindent"></a>CToolBarCtrl::SetIndent  
+##  <a name="setindent"></a>  CToolBarCtrl::SetIndent  
  Girinti ilk düğme için bir araç çubuğu denetiminde ayarlar.  
   
 ```  
@@ -1870,7 +1865,7 @@ BOOL SetIndent(int iIndent);
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
   
-##  <a name="setinsertmark"></a>CToolBarCtrl::SetInsertMark  
+##  <a name="setinsertmark"></a>  CToolBarCtrl::SetInsertMark  
  Araç çubuğu için geçerli ekleme işareti ayarlar.  
   
 ```  
@@ -1884,7 +1879,7 @@ void SetInsertMark(TBINSERTMARK* ptbim);
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_SETINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb787437), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="setinsertmarkcolor"></a>CToolBarCtrl::SetInsertMarkColor  
+##  <a name="setinsertmarkcolor"></a>  CToolBarCtrl::SetInsertMarkColor  
  Araç çubuğu ekleme işareti çizmek için kullanılan rengi belirler.  
   
 ```  
@@ -1901,7 +1896,7 @@ COLORREF SetInsertMarkColor(COLORREF clrNew);
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TB_SETINSERTMARKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb787439), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="setmaxtextrows"></a>CToolBarCtrl::SetMaxTextRows  
+##  <a name="setmaxtextrows"></a>  CToolBarCtrl::SetMaxTextRows  
  Araç çubuğunda görüntülenen metin satır sayısının üst sınırını ayarlar.  
   
 ```  
@@ -1915,7 +1910,7 @@ BOOL SetMaxTextRows(int iMaxRows);
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
   
-##  <a name="setmetrics"></a>CToolBarCtrl::SetMetrics  
+##  <a name="setmetrics"></a>  CToolBarCtrl::SetMetrics  
  Ölçümlerini ayarlar `CToolBarCtrl` nesnesi.  
   
 ```  
@@ -1929,7 +1924,7 @@ void SetMetrics(LPTBMETRICS ptbm);
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi işlevselliğini öykünen [TB_SETMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb787446) , Windows SDK'ın açıklandığı gibi ileti.  
   
-##  <a name="setowner"></a>CToolBarCtrl::SetOwner  
+##  <a name="setowner"></a>  CToolBarCtrl::SetOwner  
  Araç çubuğu denetimi için sahibi pencere ayarlar.  
   
 ```  
@@ -1943,7 +1938,7 @@ void SetOwner(CWnd* pWnd);
 ### <a name="remarks"></a>Açıklamalar  
  Sahibi araç çubuğundaki bildirimleri alan penceresidir.  
   
-##  <a name="setpadding"></a>CToolBarCtrl::SetPadding  
+##  <a name="setpadding"></a>  CToolBarCtrl::SetPadding  
  Geçerli araç çubuğu denetimi yatay ve dikey doldurma ayarlar.  
   
 ```  
@@ -1956,8 +1951,8 @@ DWORD SetPadding(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`nHorzPadding`|Araç çubuğu denetiminin yatay dolgunun piksel cinsinden belirtir.|  
-|[in]`nVertPadding`|Araç çubuğu denetiminin dikey dolgunun piksel cinsinden belirtir.|  
+|[in] `nHorzPadding`|Araç çubuğu denetiminin yatay dolgunun piksel cinsinden belirtir.|  
+|[in] `nVertPadding`|Araç çubuğu denetiminin dikey dolgunun piksel cinsinden belirtir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A `DWORD` önceki yatay doldurma değeri düşük olan sözcük içeriyor ve önceki dikey doldurma değeri yüksek olan sözcük içeriyor. Doldurma değerleri piksel cinsinden ölçülür.  
@@ -1970,7 +1965,7 @@ DWORD SetPadding(
   
  [!code-cpp[NVC_MFC_CToolBarCtrl_s1#4](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_6.cpp)]  
   
-##  <a name="setpressedimagelist"></a>CToolBarCtrl::SetPressedImageList  
+##  <a name="setpressedimagelist"></a>  CToolBarCtrl::SetPressedImageList  
  Basılı durum düğmeleri temsil etmek için geçerli araç çubuğu denetimi kullanır resim listesi ayarlar.  
   
 ```  
@@ -1983,8 +1978,8 @@ CImagelist* SetPressedImageList(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`iImageID`|Resim listesi sıfır tabanlı dizini. Yalnızca bir resim listesi kullanırsanız, bu parametre sıfır olarak ayarlayın.|  
-|[in]`pImageList`|İşaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) yeni resim listesi içerir.|  
+|[in] `iImageID`|Resim listesi sıfır tabanlı dizini. Yalnızca bir resim listesi kullanırsanız, bu parametre sıfır olarak ayarlayın.|  
+|[in] `pImageList`|İşaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) yeni resim listesi içerir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) geçerli denetim için önceki resim listesi içeren veya `NULL` böyle bir resim listesi ayarlarsanız.  
@@ -1997,7 +1992,7 @@ CImagelist* SetPressedImageList(
   
  [!code-cpp[NVC_MFC_CToolBarCtrl_s1#5](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_7.cpp)]  
   
-##  <a name="setrows"></a>CToolBarCtrl::SetRows  
+##  <a name="setrows"></a>  CToolBarCtrl::SetRows  
  İstenen satır sayısı kendisine yeniden boyutlandırmak için araç çubuğu denetimi sorar.  
   
 ```  
@@ -2030,7 +2025,7 @@ void SetRows(
   
  Bu işlev yalnızca ile oluşturulan araç çubukları için çağrılabilir `TBSTYLE_WRAPABLE` stili.  
   
-##  <a name="setstate"></a>CToolBarCtrl::SetState  
+##  <a name="setstate"></a>  CToolBarCtrl::SetState  
  Belirtilen düğmesi için bir araç çubuğu denetiminde ayarlar.  
   
 ```  
@@ -2052,7 +2047,7 @@ BOOL SetState(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev özellikle birden fazla düğme durumları ayarlamak istiyorsanız kullanışlıdır. Yalnızca bir durumunu ayarlamak için aşağıdaki üye işlevleri birini kullanın: [EnableButton](#enablebutton), [CheckButton](#checkbutton), [HideButton](#hidebutton), [belirsiz](#indeterminate), veya [PressButton](#pressbutton).  
   
-##  <a name="setstyle"></a>CToolBarCtrl::SetStyle  
+##  <a name="setstyle"></a>  CToolBarCtrl::SetStyle  
  Araç çubuğu denetimi için stiller ayarlar.  
   
 ```  
@@ -2063,7 +2058,7 @@ void SetStyle(DWORD dwStyle);
  `dwStyle`  
  A `DWORD` bir bileşimini içeren [toolbar denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760439), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="settooltips"></a>CToolBarCtrl::SetToolTips  
+##  <a name="settooltips"></a>  CToolBarCtrl::SetToolTips  
  Bir araç ipucunu denetimini bir araç çubuğu denetimi ile ilişkilendirir.  
   
 ```  
@@ -2074,7 +2069,7 @@ void SetToolTips(CToolTipCtrl* pTip);
  *pTip*  
  İşaretçi [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) nesnesi.  
   
-##  <a name="setwindowtheme"></a>CToolBarCtrl::SetWindowTheme  
+##  <a name="setwindowtheme"></a>  CToolBarCtrl::SetWindowTheme  
  Görsel stilini ayarlar `CToolBarCtrl` nesnesi.  
   
 ```  

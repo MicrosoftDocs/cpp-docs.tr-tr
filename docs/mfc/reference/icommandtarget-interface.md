@@ -1,12 +1,9 @@
 ---
 title: ICommandTarget arabirimi | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - ICommandTarget
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - ICommandTarget interface [MFC]
 ms.assetid: dd9927f6-3479-4e7c-8ef9-13206cf901f3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be8adb388bed39f91637dd1ef37ee1ee895f291d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b32112fbad516b2550da0cc48cb6c287583d396c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="icommandtarget-interface"></a>ICommandTarget arabirimi
 Bir kullanıcı denetimi komutlar bir komut kaynak nesneden almak için bir arabirim sağlar.  
@@ -56,7 +51,7 @@ interface class ICommandTarget
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll tanımlanan)  
   
-##  <a name="initialize"></a>ICommandTarget::Initialize'ı  
+##  <a name="initialize"></a> ICommandTarget::Initialize'ı  
  Komut hedefi nesnesini başlatır.  
   
 ```  

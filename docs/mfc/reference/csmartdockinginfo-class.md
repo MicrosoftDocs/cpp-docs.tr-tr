@@ -1,12 +1,9 @@
 ---
-title: "CSmartDockingInfo sınıfı | Microsoft Docs"
-ms.custom: 
+title: CSmartDockingInfo sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CSmartDockingInfo
@@ -35,17 +32,15 @@ helpviewer_keywords:
 - CSmartDockingInfo [MFC], m_uiMarkerBmpResID
 - CSmartDockingInfo [MFC], m_uiMarkerLightBmpResID
 ms.assetid: cab04f38-4bc1-4378-9337-c56fc87fbd68
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2954e3fc6a0a8ee7265c5b2baa29d391aa52329c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3328eacb9789b892a271208193e82546eb73f7e6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="csmartdockinginfo-class"></a>CSmartDockingInfo sınıfı
 Akıllı Yerleştirme işaretçileri görünümünü tanımlar.  
@@ -115,7 +110,7 @@ class CSmartDockingInfo : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxDockingManager.h  
   
-##  <a name="copyto"></a>CSmartDockingInfo::CopyTo  
+##  <a name="copyto"></a>  CSmartDockingInfo::CopyTo  
  Geçerli akıllı yerleştirme parametrelerini sağlanan kopyalar [CSmartDockingInfo](../../mfc/reference/csmartdockinginfo-class.md) nesnesi.  
   
 ```  
@@ -123,10 +118,10 @@ void CopyTo(CSmartDockingInfo& params);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out]`params`  
+ [out] `params`  
  Türünde bir nesne `CSmartDockingInfo` geçerli akıllı yerleştirme parametreleri ile doldurulur.  
   
-##  <a name="m_busethemecolorinshading"></a>CSmartDockingInfo::m_bUseThemeColorInShading  
+##  <a name="m_busethemecolorinshading"></a>  CSmartDockingInfo::m_bUseThemeColorInShading  
  Geçerli tema rengi framework akıllı yerleştirme işaretçileri görüntülediğinde kullanılıp kullanılmayacağını belirtir.  
   
 ```  
@@ -138,14 +133,14 @@ BOOL m_bUseThemeColorInShading;
   
  Varsayılan değer `FALSE` şeklindedir.  
   
-##  <a name="m_clrbasebackground"></a>CSmartDockingInfo::m_clrBaseBackground  
+##  <a name="m_clrbasebackground"></a>  CSmartDockingInfo::m_clrBaseBackground  
  Akıllı Yerleştirme işaretçileri temel arka plan rengini belirtir.  
   
 ```  
 COLORREF m_clrBaseBackground;  
 ```  
   
-##  <a name="m_clrtonedest"></a>CSmartDockingInfo::m_clrToneDest  
+##  <a name="m_clrtonedest"></a>  CSmartDockingInfo::m_clrToneDest  
  Değiştirecek rengini belirtir `m_clrToneSrc` akıllı yerleştirme işaret bit eşlemler içinde.  
   
 ```  
@@ -157,7 +152,7 @@ COLORREF m_clrToneDest;
   
  Özel işaret rengini değiştirmek için her ikisini de belirtmelisiniz `m_clrToneDest` ve `m_clrToneSrc`.  
   
-##  <a name="m_clrtonesrc"></a>CSmartDockingInfo::m_clrToneSrc  
+##  <a name="m_clrtonesrc"></a>  CSmartDockingInfo::m_clrToneSrc  
  Akıllı Yerleştirme işaret bit eşlemler rengini belirtir.  
   
 ```  
@@ -169,7 +164,7 @@ COLORREF m_clrToneSrc;
   
  Kullanım `(COLORREF)-1` akıllı yerleştirme grubunun bir üyesi boş bırakmak için.  
   
-##  <a name="m_clrtransparent"></a>CSmartDockingInfo::m_clrTransparent  
+##  <a name="m_clrtransparent"></a>  CSmartDockingInfo::m_clrTransparent  
  Saydam olduklarında akıllı yerleştirme işaret bit eşlemler rengini belirtir.  
   
 ```  
@@ -179,7 +174,7 @@ COLORREF m_clrTransparent;
 ### <a name="remarks"></a>Açıklamalar  
  Yerleştirme grubunda özel işaretleri ve özel bit eşlemler görüntülediğinizde, bu değer ayarlamanız gerekir.  
   
-##  <a name="m_ncentralgroupoffset"></a>CSmartDockingInfo::m_nCentralGroupOffset  
+##  <a name="m_ncentralgroupoffset"></a>  CSmartDockingInfo::m_nCentralGroupOffset  
  Akıllı Yerleştirme işaretçileri merkezi grubudur ve merkezi grup dikdörtgeninin sınırları arasındaki uzaklığı belirtir.  
   
 ```  
@@ -189,7 +184,7 @@ int m_nCentralGroupOffset;
 ### <a name="remarks"></a>Açıklamalar  
  Özel işaretçileri ve akıllı yerleştirme işaretçileri merkezi grubunun sınırlarını arasındaki varsayılan uzaklığı değiştirmek istiyorsanız, bu değeri belirtin. Varsayılan 5 piksel uzaklığı.  
   
-##  <a name="m_sizetotal"></a>CSmartDockingInfo::m_sizeTotal  
+##  <a name="m_sizetotal"></a>  CSmartDockingInfo::m_sizeTotal  
  Yönetim grubundaki tüm akıllı yerleştirme işaretçileri kapsayan bir sınırlayıcı dikdörtgenini toplam boyutunu belirtir.  
   
 ```  
@@ -199,7 +194,7 @@ CSize m_sizeTotal;
 ### <a name="remarks"></a>Açıklamalar  
  Ayarlama `m_sizeTotal` sınırlayıcı dikdörtgenini Merkezi Grup işaretin boyutunu. Özel bit eşlemler için işaretçileri kullanıyorsanız, bu değer belirtmeniz gerekir.  
   
-##  <a name="m_uimarkerbmpresid"></a>CSmartDockingInfo::m_uiMarkerBmpResID  
+##  <a name="m_uimarkerbmpresid"></a>  CSmartDockingInfo::m_uiMarkerBmpResID  
  Kaynak kimlikleri vurgulanmış olmayan özel akıllı yerleştirme işaretçileri için kullanılan bit eşlem tanımlar.  
   
 ```  
@@ -207,7 +202,7 @@ UINT m_uiMarkerBmpResID[AFX_SD_MARKERS_NUM];
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu dizi kaynak kimlikleri akıllı yerleştirme işaretçileri temsil eden bit eşlem ile doldurun. `AFX_SD_MARKERS_NUM`şu anda %5 olarak tanımlandı. Dizi gibi doldurun:  
+ Bu dizi kaynak kimlikleri akıllı yerleştirme işaretçileri temsil eden bit eşlem ile doldurun. `AFX_SD_MARKERS_NUM` şu anda %5 olarak tanımlandı. Dizi gibi doldurun:  
   
  `params.m_uiMarkerBmpResID[0] = IDB_MARKER_LEFT;`  
   
@@ -219,7 +214,7 @@ UINT m_uiMarkerBmpResID[AFX_SD_MARKERS_NUM];
   
  `params.m_uiMarkerBmpResID[4] = IDB_MARKER_CENTER;`  
   
-##  <a name="m_uimarkerlightbmpresid"></a>CSmartDockingInfo::m_uiMarkerLightBmpResID  
+##  <a name="m_uimarkerlightbmpresid"></a>  CSmartDockingInfo::m_uiMarkerLightBmpResID  
  Kaynak kimlikleri vurgulanan özel akıllı yerleştirme işaretçileri için kullanılan bit eşlem tanımlar.  
   
 ```  
@@ -227,7 +222,7 @@ UINT m_uiMarkerLightBmpResID[AFX_SD_MARKERS_NUM];
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu dizi kaynak kimlikleri vurgulanan akıllı yerleştirme işaretçileri temsil eden bit eşlem ile doldurun. `AFX_SD_MARKERS_NUM`şu anda %5 olarak tanımlandı. Dizi gibi doldurun:  
+ Bu dizi kaynak kimlikleri vurgulanan akıllı yerleştirme işaretçileri temsil eden bit eşlem ile doldurun. `AFX_SD_MARKERS_NUM` şu anda %5 olarak tanımlandı. Dizi gibi doldurun:  
   
  `params.m_uiMarkerLightBmpResID[0] = IDB_MARKER_LEFT_LIGHT;`  
   

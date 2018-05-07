@@ -1,12 +1,9 @@
 ---
-title: "CAsyncSocket sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAsyncSocket sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CAsyncSocket
@@ -83,17 +80,15 @@ helpviewer_keywords:
 - CAsyncSocket [MFC], OnSend
 - CAsyncSocket [MFC], m_hSocket
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24ef9c6e39d72e756b95472daee46b7d39503943
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5eaefa40be2a6cf1d57326c2135d848fa08dbc87
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="casyncsocket-class"></a>CAsyncSocket sınıfı
 Bir Windows yuvasını temsil eder — ağ iletişimi bir uç nokta.  
@@ -187,7 +182,7 @@ class CAsyncSocket : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxsock.h  
   
-##  <a name="accept"></a>CAsyncSocket::Accept  
+##  <a name="accept"></a>  CAsyncSocket::Accept  
  Bir yuva bağlantı kabul etmek için bu üye işlevini çağırın.  
   
 ```  
@@ -222,7 +217,7 @@ virtual BOOL Accept(
   
 - **WSAEMFILE** kabul etmek için giriş boş olduğundan ve hiçbir tanımlayıcıları kullanılabilir.  
   
-- `WSAENOBUFS`Hiçbir arabellek alanı kullanılabilir.  
+- `WSAENOBUFS` Hiçbir arabellek alanı kullanılabilir.  
   
 - **WSAENOTSOCK** tanımlayıcısı yuva değil.  
   
@@ -235,7 +230,7 @@ virtual BOOL Accept(
   
  Bağımsız değişken `lpSockAddr` yuva bağlantı adresi bilgileriyle doldurulan bir sonuç iletişimleri katmana bilinen parametresidir. **Kabul** yuva bağlantı tabanlı türleri ile aşağıdaki gibi kullanılır **SOCK_STREAM**.  
   
-##  <a name="asyncselect"></a>CAsyncSocket::AsyncSelect  
+##  <a name="asyncselect"></a>  CAsyncSocket::AsyncSelect  
  Bir yuva için olay bildirimini istemek için bu üye işlevini çağırın.  
   
 ```  
@@ -270,9 +265,9 @@ BOOL AsyncSelect(long lEvent = FD_READ | FD_WRITE | FD_OOB | FD_ACCEPT | FD_CONN
 - **WSAEINPROGRESS** engelleme Windows Sockets işlemi devam ediyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, hangi MFC geri bildirim işlevleri için yuva çağrılacağı belirtmek için kullanılır. `AsyncSelect`otomatik olarak bu yuva sayıda moduna ayarlar. Daha fazla bilgi için bkz: [Windows Yuvaları: Yuva bildirimleri](../../mfc/windows-sockets-socket-notifications.md).  
+ Bu işlev, hangi MFC geri bildirim işlevleri için yuva çağrılacağı belirtmek için kullanılır. `AsyncSelect` otomatik olarak bu yuva sayıda moduna ayarlar. Daha fazla bilgi için bkz: [Windows Yuvaları: Yuva bildirimleri](../../mfc/windows-sockets-socket-notifications.md).  
   
-##  <a name="attach"></a>CAsyncSocket::Attach  
+##  <a name="attach"></a>  CAsyncSocket::Attach  
  Bu üye işlevi ekleme çağrısı `hSocket` işlemek için bir `CAsyncSocket` nesnesi.  
   
 ```  
@@ -305,7 +300,7 @@ BOOL Attach(
 ### <a name="remarks"></a>Açıklamalar  
  **YUVA** tanıtıcı nesnesinin içinde depolanan [m_hSocket](#m_hsocket) veri üyesi.  
   
-##  <a name="bind"></a>CAsyncSocket::Bind  
+##  <a name="bind"></a>  CAsyncSocket::Bind  
  Yerel bir adres yuvası ile ilişkilendirmek için bu üye işlevini çağırın.  
   
 ```  
@@ -349,14 +344,14 @@ BOOL Bind (
   
 - **WSAEINVAL** yuva için bir adres zaten bağlı.  
   
-- `WSAENOBUFS`Yeterli kullanılabilir arabellek, çok fazla bağlantı.  
+- `WSAENOBUFS` Yeterli kullanılabilir arabellek, çok fazla bağlantı.  
   
 - **WSAENOTSOCK** tanımlayıcısı yuva değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yordam bir bağlantısız veri birimi veya akışa yuva önce kullanılan sonraki **Bağlan** veya `Listen` çağrıları. Bağlantı isteklerini kabul edebilmesi için önce bir dinleme sunucu gerekir bir port numarası seçin ve yuva için Windows Sockets çağırarak bilinen kolaylaştırır **bağlama**. **Bağlama** adsız bir yuva için yerel ad atayarak yerel bir ilişkilendirme (ana bilgisayar adresini/bağlantı noktası numarası) yuva oluşturur.  
   
-##  <a name="casyncsocket"></a>CAsyncSocket::CAsyncSocket  
+##  <a name="casyncsocket"></a>  CAsyncSocket::CAsyncSocket  
  Boş yuva nesnesi oluşturur.  
   
 ```  
@@ -366,7 +361,7 @@ CAsyncSocket();
 ### <a name="remarks"></a>Açıklamalar  
  Nesne oluşturma sonra çağırmalısınız kendi **oluşturma** oluşturmak için üye işlevi **YUVA** veri yapısı ve adresini bağlayın. (Dinleme yuva kullanmak için bir yuva oluşturduğunda Windows Sockets iletişim, sunucu tarafındaki **kabul** çağrısı, arama **oluşturma** o yuva için.)  
   
-##  <a name="close"></a>CAsyncSocket::Close  
+##  <a name="close"></a>  CAsyncSocket::Close  
  Yuva kapatır.  
   
 ```  
@@ -378,7 +373,7 @@ virtual void Close();
   
  İçin `CAsyncSocket`, ancak için `CSocket`, semantiği **Kapat** yuva seçenekleri tarafından etkilenen **SO_LINGER** ve **SO_DONTLINGER**. Daha fazla bilgi için üye işlevine bakın `GetSockOpt`.  
   
-##  <a name="connect"></a>CAsyncSocket::Connect  
+##  <a name="connect"></a>  CAsyncSocket::Connect  
  Bir bağlantısız akış veya veri birimi yuva bağlantı kurmak için bu üye işlevini çağırın.  
   
 ```  
@@ -434,7 +429,7 @@ BOOL Connect(
   
 - **WSAENETUNREACH** ağ şu anda bu konaktan erişilemiyor.  
   
-- `WSAENOBUFS`Hiçbir arabellek alanı kullanılabilir. Yuva bağlanamaz.  
+- `WSAENOBUFS` Hiçbir arabellek alanı kullanılabilir. Yuva bağlanamaz.  
   
 - **WSAENOTSOCK** tanımlayıcısı yuva değil.  
   
@@ -449,7 +444,7 @@ BOOL Connect(
   
  Veri birimi yuva için (tür **SOCK_DGRAM**), hangi üzerinde sonraki kullanılacak varsayılan hedef ayarlanır **Gönder** ve **alma** çağrıları.  
   
-##  <a name="create"></a>CAsyncSocket::Create  
+##  <a name="create"></a>  CAsyncSocket::Create  
  Çağrı **oluşturma** Windows yuva oluşturmak ve bunu eklemek için yuva nesnesi oluşturma sonra üye işlevi.  
   
 ```  
@@ -498,7 +493,7 @@ BOOL Create(
   
 - **WSAEMFILE** hiçbir daha fazla dosya tanımlayıcıları kullanılabilir.  
   
-- `WSAENOBUFS`Hiçbir arabellek alanı kullanılabilir. Yuva oluşturulamıyor.  
+- `WSAENOBUFS` Hiçbir arabellek alanı kullanılabilir. Yuva oluşturulamıyor.  
   
 - **WSAEPROTONOSUPPORT** belirtilen bağlantı noktası desteklenmiyor.  
   
@@ -521,14 +516,14 @@ BOOL Create(
   
  Akış ve veri birimi yuvaları hakkında daha fazla bilgi için makalelerine bakın [Windows Yuvaları: arka plan](../../mfc/windows-sockets-background.md) ve [Windows Yuvaları: bağlantı noktaları ve yuva adresleri](../../mfc/windows-sockets-ports-and-socket-addresses.md) ve [Windows Sockets 2 API](http://msdn.microsoft.com/library/windows/desktop/ms740673).  
   
-##  <a name="detach"></a>CAsyncSocket::Detach  
+##  <a name="detach"></a>  CAsyncSocket::Detach  
  Kullanımdan çıkarmak için bu üye işlevini çağırın **YUVA** içinde işlemek `m_hSocket` veri üyeden `CAsyncSocket` nesne ve ayarlayın `m_hSocket` için **NULL**.  
   
 ```  
 SOCKET Detach();
 ```  
   
-##  <a name="fromhandle"></a>CAsyncSocket::FromHandle  
+##  <a name="fromhandle"></a>  CAsyncSocket::FromHandle  
  Bir işaretçi döndüren bir `CAsyncSocket` nesnesi.  
   
 ```  
@@ -545,7 +540,7 @@ static CAsyncSocket* PASCAL FromHandle(SOCKET hSocket);
 ### <a name="remarks"></a>Açıklamalar  
  Verildiğinde bir **YUVA** işlemek, bir `CAsyncSocket` nesne tanıtıcısını iliştirilmemiş, üye işlevinin döndürdüğü **NULL**.  
   
-##  <a name="getlasterror"></a>CAsyncSocket::GetLastError  
+##  <a name="getlasterror"></a>  CAsyncSocket::GetLastError  
  Başarısız olan son işlem için hata durumunu almak için bu üye işlevini çağırın.  
   
 ```  
@@ -560,7 +555,7 @@ static int PASCAL GetLastError();
   
  Hata kodları hakkında daha fazla bilgi için bkz: [Windows Sockets 2 API](http://msdn.microsoft.com/library/windows/desktop/ms740673).  
   
-##  <a name="getpeername"></a>CAsyncSocket::GetPeerName  
+##  <a name="getpeername"></a>  CAsyncSocket::GetPeerName  
  Bu yuvanın bağlı olduğu eş yuva adresini almak için bu üye işlevini çağırın.  
   
 ```  
@@ -605,7 +600,7 @@ BOOL GetPeerName(
 ### <a name="remarks"></a>Açıklamalar  
  IPv6 adresleri işlemek için kullanmak [CAsyncSocket::GetPeerNameEx](#getpeernameex).  
   
-##  <a name="getpeernameex"></a>CAsyncSocket::GetPeerNameEx  
+##  <a name="getpeernameex"></a>  CAsyncSocket::GetPeerNameEx  
  Bu yuva bağlı (işleç IPv6 adresleri) sahip olduğu eş yuva adresini almak için bu üye işlevini çağırın.  
   
 ```  
@@ -639,7 +634,7 @@ BOOL GetPeerNameEx(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev aynıdır [CAsyncSocket::GetPeerName](#getpeername) IPv6 işleme dışında de olarak eski protokollere giderir.  
   
-##  <a name="getsockname"></a>CAsyncSocket::GetSockName  
+##  <a name="getsockname"></a>  CAsyncSocket::GetSockName  
  Bir yuva için yerel adını almak için bu üye işlevini çağırın.  
   
 ```  
@@ -686,7 +681,7 @@ BOOL GetSockName(
   
  IPv6 adresleri işlemek için kullanmak [CAsyncSocket::GetSockNameEx](#getsocknameex)  
   
-##  <a name="getsocknameex"></a>CAsyncSocket::GetSockNameEx  
+##  <a name="getsocknameex"></a>  CAsyncSocket::GetSockNameEx  
  Bir yuva (işleç IPv6 adresleri) için yerel adını almak için bu üye işlevini çağırın.  
   
 ```  
@@ -722,7 +717,7 @@ BOOL GetSockNameEx(
   
  Bu çağrı ne zaman özellikle yararlı olur bir **Bağlan** çağrısı yapılması olmadan sağlandıktan bir **bağlamak** ilk; bu çağrı olarak belirleyebilirsiniz hangi tarafından ayarlanmış yerel bir ilişkilendirme yalnızca sağlar Sistem.  
   
-##  <a name="getsockopt"></a>CAsyncSocket::GetSockOpt  
+##  <a name="getsockopt"></a>  CAsyncSocket::GetSockOpt  
  Bir yuva seçeneği almak için bu üye işlevini çağırın.  
   
 ```  
@@ -762,7 +757,7 @@ BOOL GetSockOpt(
 - **WSAENOTSOCK** tanımlayıcısı yuva değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `GetSockOpt`herhangi bir durum içinde herhangi bir türde bir yuvası ile ilişkili bir yuva seçeneği için geçerli değer alır ve sonuçta depolar `lpOptionValue`. Seçenekler, paketler, bant dışı veri aktarımı ve benzeri yönlendirme gibi yuva işlemlerini etkiler.  
+ `GetSockOpt` herhangi bir durum içinde herhangi bir türde bir yuvası ile ilişkili bir yuva seçeneği için geçerli değer alır ve sonuçta depolar `lpOptionValue`. Seçenekler, paketler, bant dışı veri aktarımı ve benzeri yönlendirme gibi yuva işlemlerini etkiler.  
   
  Aşağıdaki seçenekler için desteklenen `GetSockOpt`. Türü tarafından ele veri türünü tanımlayan `lpOptionValue`. **TCP_NODELAY** seçeneğini kullanan düzeyi **IPPROTO_TCP**; diğer tüm seçenekleri düzeyini kullanmak **SOL_SOCKET**.  
   
@@ -796,7 +791,7 @@ BOOL GetSockOpt(
   
  Çağırma `GetSockOpt` desteklenmeyen bir seçenek hata kodunu sonuçlanır **WSAENOPROTOOPT** öğesinden döndürülen `GetLastError`.  
   
-##  <a name="ioctl"></a>CAsyncSocket::IOCtl  
+##  <a name="ioctl"></a>  CAsyncSocket::IOCtl  
  Bir yuva modunu denetlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -836,7 +831,7 @@ BOOL IOCtl(
   
  Bu işlev bir alt kümesidir **ioctl()** Berkeley yuva kullanılır. Özellikle, eşdeğerdir komutu yoktur **FIOASYNC**, sırada **SIOCATMARK** desteklenmeyen yalnızca yuva düzeyi komutu.  
   
-##  <a name="listen"></a>CAsyncSocket::Listen  
+##  <a name="listen"></a>  CAsyncSocket::Listen  
  Gelen bağlantı isteklerini dinlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -864,27 +859,27 @@ BOOL Listen(int nConnectionBacklog = 5);
   
 - **WSAEMFILE** hiçbir daha fazla dosya tanımlayıcıları kullanılabilir.  
   
-- `WSAENOBUFS`Hiçbir arabellek alanı kullanılabilir.  
+- `WSAENOBUFS` Hiçbir arabellek alanı kullanılabilir.  
   
 - **WSAENOTSOCK** tanımlayıcısı yuva değil.  
   
 - **WSAEOPNOTSUPP** başvurulan yuva destekleyen bir tür değil `Listen` işlemi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bağlantıları kabul etmek üzere yuva ilk ile oluşturulan **oluşturma**, gelen bağlantılar için bir biriktirme listesi ile belirtilen `Listen`, ve ardından ile bağlantıları kabul **kabul**. `Listen`diğer bir deyişle, bağlantılar, destekleyen yuva türü içeriğiyle uygular **SOCK_STREAM**. Bu Yuva kabul işlem tarafından sıraya alınan gelen bağlantıları burada onaylanır ve "pasif" moduna alın.  
+ Bağlantıları kabul etmek üzere yuva ilk ile oluşturulan **oluşturma**, gelen bağlantılar için bir biriktirme listesi ile belirtilen `Listen`, ve ardından ile bağlantıları kabul **kabul**. `Listen` diğer bir deyişle, bağlantılar, destekleyen yuva türü içeriğiyle uygular **SOCK_STREAM**. Bu Yuva kabul işlem tarafından sıraya alınan gelen bağlantıları burada onaylanır ve "pasif" moduna alın.  
   
  Bu işlev genellikle sunucuları (veya bağlantılarını kabul edecek şekilde istediği herhangi bir uygulama) tarafından kullanılan aynı anda birden fazla bağlantı isteği sahip: bir bağlantı isteği kuyruğu dolu alınırsa, istemci durumilebirhataalacaksınız **WSAECONNREFUSED**.  
   
- `Listen`kullanılabilir bağlantı noktası (tanımlayıcı) olduğunda rationally çalışmaya devam etmeyi dener. Sıranın boşaltılır kadar bağlantılarını kabul eder. Bağlantı noktaları yayımlanırsa sonraki çağrı `Listen` veya **kabul** geçerli veya en son "biriktirme," kuyruğuna mümkünse Dolum ve gelen bağlantıları dinlemeyi sürdürün.  
+ `Listen` kullanılabilir bağlantı noktası (tanımlayıcı) olduğunda rationally çalışmaya devam etmeyi dener. Sıranın boşaltılır kadar bağlantılarını kabul eder. Bağlantı noktaları yayımlanırsa sonraki çağrı `Listen` veya **kabul** geçerli veya en son "biriktirme," kuyruğuna mümkünse Dolum ve gelen bağlantıları dinlemeyi sürdürün.  
   
-##  <a name="m_hsocket"></a>CAsyncSocket::m_hSocket  
+##  <a name="m_hsocket"></a>  CAsyncSocket::m_hSocket  
  İçeren **YUVA** işlemek için bu tarafından kapsüllenmiş yuva `CAsyncSocket` nesnesi.  
   
 ```  
 SOCKET m_hSocket;  
 ```  
   
-##  <a name="onaccept"></a>CAsyncSocket::OnAccept  
+##  <a name="onaccept"></a>  CAsyncSocket::OnAccept  
  Bekleyen bağlantı istekleri çağırarak alabilen dinleme yuva bildirmek için framework tarafından çağrılan [kabul](#accept) üye işlevi.  
   
 ```  
@@ -902,7 +897,7 @@ virtual void OnAccept(int nErrorCode);
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [Windows Yuvaları: Yuva bildirimleri](../../mfc/windows-sockets-socket-notifications.md).  
   
-##  <a name="onclose"></a>CAsyncSocket::OnClose  
+##  <a name="onclose"></a>  CAsyncSocket::OnClose  
  Bu yuva bağlı bir yuva kendi işlem tarafından kapalı olduğunu bildirmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -924,7 +919,7 @@ virtual void OnClose(int nErrorCode);
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [Windows Yuvaları: Yuva bildirimleri](../../mfc/windows-sockets-socket-notifications.md).  
   
-##  <a name="onconnect"></a>CAsyncSocket::OnConnect  
+##  <a name="onconnect"></a>  CAsyncSocket::OnConnect  
  Bu yuva bağlantı, bağlantı girişimi, başarılı bir şekilde veya hata olup olmadığını tamamlandığını bildirmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -957,7 +952,7 @@ virtual void OnConnect(int nErrorCode);
   
 - **WSAENETUNREACH** ağ şu anda bu konaktan erişilemiyor.  
   
-- `WSAENOBUFS`Hiçbir arabellek alanı kullanılabilir. Yuva bağlanamaz.  
+- `WSAENOBUFS` Hiçbir arabellek alanı kullanılabilir. Yuva bağlanamaz.  
   
 - **WSAENOTCONN** Yuva bağlı değil.  
   
@@ -975,7 +970,7 @@ virtual void OnConnect(int nErrorCode);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCAsyncSocket#1](../../mfc/reference/codesnippet/cpp/casyncsocket-class_1.cpp)]  
   
-##  <a name="onoutofbanddata"></a>CAsyncSocket::OnOutOfBandData  
+##  <a name="onoutofbanddata"></a>  CAsyncSocket::OnOutOfBandData  
  Gönderen yuva göndermek için bant dışı verileri içeren alıcı yuva bildirmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -995,7 +990,7 @@ virtual void OnOutOfBandData(int nErrorCode);
   
  MFC sınıf kullanıcılarının ancak bant dışı verileri destekler `CAsyncSocket` kullanmasını önerilmez. En kolay yolu, bu tür veri geçirme için ikinci bir yuva oluşturmaktır. Bant dışı verileri hakkında daha fazla bilgi için bkz: [Windows Yuvaları: Yuva bildirimleri](../../mfc/windows-sockets-socket-notifications.md).  
   
-##  <a name="onreceive"></a>CAsyncSocket::OnReceive  
+##  <a name="onreceive"></a>  CAsyncSocket::OnReceive  
  Bu yuva olduğunu veri çağırarak alınabilir arabelleği bildirmek için framework tarafından çağrılan **alma** üye işlevi.  
   
 ```  
@@ -1016,7 +1011,7 @@ virtual void OnReceive(int nErrorCode);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCAsyncSocket#2](../../mfc/reference/codesnippet/cpp/casyncsocket-class_2.cpp)]  
   
-##  <a name="onsend"></a>CAsyncSocket::OnSend  
+##  <a name="onsend"></a>  CAsyncSocket::OnSend  
  Şimdi veri çağırarak gönderebilmesi gerektiğini yuva bildirmek için framework tarafından çağrılan **Gönder** üye işlevi.  
   
 ```  
@@ -1037,7 +1032,7 @@ virtual void OnSend(int nErrorCode);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCAsyncSocket#3](../../mfc/reference/codesnippet/cpp/casyncsocket-class_3.cpp)]  
   
-##  <a name="operator_eq"></a>CAsyncSocket::operator =  
+##  <a name="operator_eq"></a>  CAsyncSocket::operator =  
  Yeni bir değer atayan bir `CAsyncSocket` nesnesi.  
   
 ```  
@@ -1051,7 +1046,7 @@ void operator=(const CAsyncSocket& rSrc);
 ### <a name="remarks"></a>Açıklamalar  
  Var olan kopyalamak için bu işlevi çağırmak `CAsyncSocket` başka bir nesneye `CAsyncSocket` nesnesi.  
   
-##  <a name="operator_socket"></a>CAsyncSocket::operator YUVA  
+##  <a name="operator_socket"></a>  CAsyncSocket::operator YUVA  
  Almak için bu işleci kullanın **YUVA** , tanıtıcı `CAsyncSocket` nesnesi.  
   
 ```  
@@ -1064,7 +1059,7 @@ operator SOCKET() const;
 ### <a name="remarks"></a>Açıklamalar  
  Windows API'larını doğrudan çağırmak için tanıtıcı kullanabilirsiniz.  
   
-##  <a name="receive"></a>CAsyncSocket::Receive  
+##  <a name="receive"></a>  CAsyncSocket::Receive  
  Bir yuvadan verileri almak için bu üye işlevini çağırın.  
   
 ```  
@@ -1129,7 +1124,7 @@ virtual int Receive(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CAsyncSocket::OnReceive](#onreceive).  
   
-##  <a name="receivefrom"></a>CAsyncSocket::ReceiveFrom  
+##  <a name="receivefrom"></a>  CAsyncSocket::ReceiveFrom  
  Bir veri birimi almak ve kaynak adresi depolamak için bu üye işlevini çağırın [SOCKADDR](../../mfc/reference/sockaddr-structure.md) yapısı veya `rSocketAddress`.  
   
 ```  
@@ -1217,7 +1212,7 @@ int ReceiveFrom(
   
  Yuva türü ise **SOCK_STREAM** ve uzak tarafı bağlantıyı düzgün kapattı bir `ReceiveFrom` 0 alınan bayt ile hemen tamamlanır.  
   
-##  <a name="receivefromex"></a>CAsyncSocket::ReceiveFromEx  
+##  <a name="receivefromex"></a>  CAsyncSocket::ReceiveFromEx  
  Bir veri birimi almak ve kaynak adresi depolamak için bu üye işlevini çağırın [SOCKADDR](../../mfc/reference/sockaddr-structure.md) yapısı veya `rSocketAddress` (IPv6 adresleri işler).  
   
 ```  
@@ -1291,7 +1286,7 @@ int ReceiveFromEx(
   
  Yuva türü ise **SOCK_STREAM** ve uzak tarafı bağlantıyı düzgün kapattı bir `ReceiveFromEx` 0 alınan bayt ile hemen tamamlanır.  
   
-##  <a name="send"></a>CAsyncSocket::Send  
+##  <a name="send"></a>  CAsyncSocket::Send  
  Bağlı bir yuva üzerinde veri göndermek için bu üye işlevini çağırın.  
   
 ```  
@@ -1330,7 +1325,7 @@ virtual int Send(
   
 - **WSAENETRESET** Windows Sockets uygulaması yoksaymış çünkü bağlantının sıfırlanması gerekir.  
   
-- `WSAENOBUFS`Windows Yuvaları uygulama arabellek kilitlenme bildirir.  
+- `WSAENOBUFS` Windows Yuvaları uygulama arabellek kilitlenme bildirir.  
   
 - **WSAENOTCONN** Yuva bağlı değil.  
   
@@ -1360,7 +1355,7 @@ virtual int Send(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CAsyncSocket::OnSend](#onsend).  
   
-##  <a name="sendto"></a>CAsyncSocket::SendTo  
+##  <a name="sendto"></a>  CAsyncSocket::SendTo  
  Belirli bir hedefe veri göndermek için bu üye işlevini çağırın.  
   
 ```  
@@ -1423,7 +1418,7 @@ int SendTo(
   
 - **WSAENETRESET** Windows Sockets uygulaması yoksaymış çünkü bağlantının sıfırlanması gerekir.  
   
-- `WSAENOBUFS`Windows Yuvaları uygulama arabellek kilitlenme bildirir.  
+- `WSAENOBUFS` Windows Yuvaları uygulama arabellek kilitlenme bildirir.  
   
 - **WSAENOTCONN** Yuva bağlı değil ( **SOCK_STREAM** yalnızca).  
   
@@ -1450,17 +1445,17 @@ int SendTo(
 - **WSAENETUNREACH** ağ şu anda bu konaktan erişilemiyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `SendTo`veri birimi veya akış yuvalarda kullanılır ve bir yuvada giden veri yazmak için kullanılır. Veri birimi yuvaları için temel alınan alt maksimum IP paket boyutu, tarafından verilen aşmayacak şekilde dikkatli olunması gerekir **iMaxUdpDg** öğesinde [WSADATA](../../mfc/reference/wsadata-structure.md) yapısı doldurulan tarafından [ Afxsocketınit](../../mfc/reference/application-information-and-management.md#afxsocketinit). Verileri otomatik olarak temel protokolü hata geçirmek için çok uzun olması durumunda **WSAEMSGSIZE** döndürülür ve hiçbir veri iletilir.  
+ `SendTo` veri birimi veya akış yuvalarda kullanılır ve bir yuvada giden veri yazmak için kullanılır. Veri birimi yuvaları için temel alınan alt maksimum IP paket boyutu, tarafından verilen aşmayacak şekilde dikkatli olunması gerekir **iMaxUdpDg** öğesinde [WSADATA](../../mfc/reference/wsadata-structure.md) yapısı doldurulan tarafından [ Afxsocketınit](../../mfc/reference/application-information-and-management.md#afxsocketinit). Verileri otomatik olarak temel protokolü hata geçirmek için çok uzun olması durumunda **WSAEMSGSIZE** döndürülür ve hiçbir veri iletilir.  
   
  Unutmayın başarıyla tamamlandığında, bir `SendTo` verileri başarıyla teslim anlamına gelmez.  
   
- `SendTo`Yalnızca kullanılan bir **SOCK_DGRAM** bir veri birimi ile tanımlanan belirli bir yuva göndermek için yuva `lpSockAddr` parametresi.  
+ `SendTo` Yalnızca kullanılan bir **SOCK_DGRAM** bir veri birimi ile tanımlanan belirli bir yuva göndermek için yuva `lpSockAddr` parametresi.  
   
  Bir yayın göndermek için (üzerinde bir **SOCK_DGRAM** yalnızca), adres `lpSockAddr` parametresi oluşturulan özel IP adresini kullanarak **INADDR_BROADCAST** (Windows Sockets başlığında tanımlanır WINSOCK dosyası. H) ile birlikte istenen bağlantı noktası numarası. Veya, eğer `lpszHostAddress` parametresi **NULL**, yuva yayın için yapılandırılmış. Bir yayın datagram aktarılma parçalanma gerçekleşebilir, boyut değerini aşmasına genelde önerilmez (üstbilgileri hariç) datagram veri bölümü 512 bayt aşmamalıdır anlamına gelir.  
   
  IPv6 adresleri işlemek için kullanmak [CAsyncSocket::SendToEx](#sendtoex).  
   
-##  <a name="sendtoex"></a>CAsyncSocket::SendToEx  
+##  <a name="sendtoex"></a>  CAsyncSocket::SendToEx  
  Belirli bir hedefe (işleç IPv6 adresleri) veri göndermek için bu üye işlevini çağırın.  
   
 ```  
@@ -1509,7 +1504,7 @@ int SendToEx(
   
 - **WSAENETRESET** Windows Sockets uygulaması yoksaymış çünkü bağlantının sıfırlanması gerekir.  
   
-- `WSAENOBUFS`Windows Yuvaları uygulama arabellek kilitlenme bildirir.  
+- `WSAENOBUFS` Windows Yuvaları uygulama arabellek kilitlenme bildirir.  
   
 - **WSAENOTCONN** Yuva bağlı değil ( **SOCK_STREAM** yalnızca).  
   
@@ -1538,15 +1533,15 @@ int SendToEx(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem ile aynıdır [CAsyncSocket::SendTo](#sendto) IPv6 işleme dışında de olarak eski protokollere giderir.  
   
- `SendToEx`veri birimi veya akış yuvalarda kullanılır ve bir yuvada giden veri yazmak için kullanılır. Veri birimi yuvaları için temel alınan alt maksimum IP paket boyutu, tarafından verilen aşmayacak şekilde dikkatli olunması gerekir **iMaxUdpDg** öğesinde [WSADATA](../../mfc/reference/wsadata-structure.md) yapısı doldurulan tarafından [ Afxsocketınit](../../mfc/reference/application-information-and-management.md#afxsocketinit). Verileri otomatik olarak temel protokolü hata geçirmek için çok uzun olması durumunda **WSAEMSGSIZE** döndürülür ve hiçbir veri iletilir.  
+ `SendToEx` veri birimi veya akış yuvalarda kullanılır ve bir yuvada giden veri yazmak için kullanılır. Veri birimi yuvaları için temel alınan alt maksimum IP paket boyutu, tarafından verilen aşmayacak şekilde dikkatli olunması gerekir **iMaxUdpDg** öğesinde [WSADATA](../../mfc/reference/wsadata-structure.md) yapısı doldurulan tarafından [ Afxsocketınit](../../mfc/reference/application-information-and-management.md#afxsocketinit). Verileri otomatik olarak temel protokolü hata geçirmek için çok uzun olması durumunda **WSAEMSGSIZE** döndürülür ve hiçbir veri iletilir.  
   
  Unutmayın başarıyla tamamlandığında, bir `SendToEx` verileri başarıyla teslim anlamına gelmez.  
   
- `SendToEx`Yalnızca kullanılan bir **SOCK_DGRAM** bir veri birimi ile tanımlanan belirli bir yuva göndermek için yuva `lpSockAddr` parametresi.  
+ `SendToEx` Yalnızca kullanılan bir **SOCK_DGRAM** bir veri birimi ile tanımlanan belirli bir yuva göndermek için yuva `lpSockAddr` parametresi.  
   
  Bir yayın göndermek için (üzerinde bir **SOCK_DGRAM** yalnızca), adres `lpSockAddr` parametresi oluşturulan özel IP adresini kullanarak **INADDR_BROADCAST** (Windows Sockets başlığında tanımlanır WINSOCK dosyası. H) ile birlikte istenen bağlantı noktası numarası. Veya, eğer `lpszHostAddress` parametresi **NULL**, yuva yayın için yapılandırılmış. Bir yayın datagram aktarılma parçalanma gerçekleşebilir, boyut değerini aşmasına genelde önerilmez (üstbilgileri hariç) datagram veri bölümü 512 bayt aşmamalıdır anlamına gelir.  
   
-##  <a name="setsockopt"></a>CAsyncSocket::SetSockOpt  
+##  <a name="setsockopt"></a>  CAsyncSocket::SetSockOpt  
  Bir yuva seçeneği ayarlamak için bu üye işlevini çağırın.  
   
 ```  
@@ -1592,9 +1587,9 @@ BOOL SetSockOpt(
 - **WSAENOTSOCK** tanımlayıcısı yuva değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `SetSockOpt`herhangi bir durum içinde herhangi bir türde bir yuvası ile ilişkili bir yuva seçeneği için geçerli değeri ayarlar. Seçenekleri birden çok protokolü düzeylerinde bulunabilir ancak bu belirtimi yalnızca en üst "yuva" düzeyindedir seçenekleri tanımlar. Seçenekler yayın iletilerini yuvasına gönderilen ve benzeri olup olmadığını normal veri akışında alınan hızlandırılmış veri olup olmadığı gibi yuva işlemlerini etkiler.  
+ `SetSockOpt` herhangi bir durum içinde herhangi bir türde bir yuvası ile ilişkili bir yuva seçeneği için geçerli değeri ayarlar. Seçenekleri birden çok protokolü düzeylerinde bulunabilir ancak bu belirtimi yalnızca en üst "yuva" düzeyindedir seçenekleri tanımlar. Seçenekler yayın iletilerini yuvasına gönderilen ve benzeri olup olmadığını normal veri akışında alınan hızlandırılmış veri olup olmadığı gibi yuva işlemlerini etkiler.  
   
- İki tür yuva seçeneği vardır: etkinleştirmek veya bir özellik veya davranışı devre dışı bırakan Boolean seçenekleri ve bir tamsayı değeri veya yapısı gerektiren seçenekleri. Boole seçeneği etkinleştirmek için `lpOptionValue` sıfır olmayan bir tamsayı olarak işaret eder. Seçeneği devre dışı bırakmak için `lpOptionValue` sıfıra eşit bir tamsayı işaret eder. `nOptionLen`eşit olmalıdır **sizeof(BOOL)** Boolean seçenekleri için. Diğer seçenekler için `lpOptionValue` gösteren tamsayı veya seçeneği için istenen değeri içeren yapısı ve `nOptionLen` tamsayı veya yapısı uzunluğu.  
+ İki tür yuva seçeneği vardır: etkinleştirmek veya bir özellik veya davranışı devre dışı bırakan Boolean seçenekleri ve bir tamsayı değeri veya yapısı gerektiren seçenekleri. Boole seçeneği etkinleştirmek için `lpOptionValue` sıfır olmayan bir tamsayı olarak işaret eder. Seçeneği devre dışı bırakmak için `lpOptionValue` sıfıra eşit bir tamsayı işaret eder. `nOptionLen` eşit olmalıdır **sizeof(BOOL)** Boolean seçenekleri için. Diğer seçenekler için `lpOptionValue` gösteren tamsayı veya seçeneği için istenen değeri içeren yapısı ve `nOptionLen` tamsayı veya yapısı uzunluğu.  
   
  **SO_LINGER** ne zaman gerçekleştirilecek eylemi gönderilmeyen veri kuyruğa alınır bir yuvada denetimleri ve **kapatmak** işlevi yuva kapatmak için çağrılır.  
   
@@ -1637,7 +1632,7 @@ BOOL SetSockOpt(
 |**SO_TYPE**|`int`|Yuva türü.|  
 |**IP_OPTIONS**||Seçenekler alanını IP üstbilgisinde ayarlayın.|  
   
-##  <a name="shutdown"></a>CAsyncSocket::ShutDown  
+##  <a name="shutdown"></a>  CAsyncSocket::ShutDown  
  Bu üye işlevini devre dışı bırakmak için gönderir, çağrıyı alır, veya her ikisini de yuvadaki.  
   
 ```  
@@ -1670,7 +1665,7 @@ BOOL ShutDown(int nHow = sends);
 - **WSAENOTSOCK** tanımlayıcısı yuva değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `ShutDown`Yuva tüm türleri, alma, iletim veya her ikisi de devre dışı bırakmak için kullanılır. Varsa `nHow` 0'dır, üzerinde sonraki aldığı yuva izin verilmeyecek. Bu alt protokol katmanları üzerinde hiçbir etkisi yoktur.  
+ `ShutDown` Yuva tüm türleri, alma, iletim veya her ikisi de devre dışı bırakmak için kullanılır. Varsa `nHow` 0'dır, üzerinde sonraki aldığı yuva izin verilmeyecek. Bu alt protokol katmanları üzerinde hiçbir etkisi yoktur.  
   
  İletim Denetimi Protokolü (TCP) için TCP penceresi değiştirilmez ve gelen veri olacaktır penceresi ulaşana kadar (ancak alınan değil) kabul. Kullanıcı Veri Birimi Protokolü (UDP) gelen veri birimleri kabul ve sıraya alındı. Hiçbir durumda bir ICMP hata paketi oluşturulur. Varsa `nHow` 1, sonraki gönderir izin verilmiyor. TCP yuvaları için bir FIN gönderilir. Ayarı `nHow` hem gönderir 2 devre dışı bırakır ve yukarıda açıklandığı gibi alır.  
   
@@ -1679,7 +1674,7 @@ BOOL ShutDown(int nHow = sends);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CAsyncSocket::OnReceive](#onreceive).  
   
-##  <a name="socket"></a>CASyncSocket::Socket  
+##  <a name="socket"></a>  CASyncSocket::Socket  
  Socket tanıtıcısı ayırır.  
   
 ```  

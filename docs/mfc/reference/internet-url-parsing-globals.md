@@ -1,13 +1,10 @@
 ---
-title: "Internet URL Ayrıştırma genel öğeleri ve Yardımcıları | Microsoft Docs"
-ms.custom: 
+title: Internet URL Ayrıştırma genel öğeleri ve Yardımcıları | Microsoft Docs
+ms.custom: ''
 ms.date: 04/03/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.isapi
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - parsing, URLs
 - URLs, parsing
 ms.assetid: 46c6384f-e4a6-4dbd-9196-219c19040ec5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e29ae754e7f5b078c23f0cdf27c0a280cd28b40a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 02b7ea1a6d22d3e16230acafa25c53f8748a825a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="internet-url-parsing-globals-and-helpers"></a>Internet URL Ayrıştırma genel öğeleri ve Yardımcıları
 Bir istemci Internet sunucusuna bir sorgu gönderdiğinde, URL Ayrıştırma genel öğeleri birini istemcisi hakkında bilgi ayıklamak için kullanabilirsiniz. Yardımcı işlevleri diğer Internet işlevsellik sağlar.
@@ -44,7 +39,7 @@ Bir istemci Internet sunucusuna bir sorgu gönderdiğinde, URL Ayrıştırma gen
 |[Afxthrowınternetexception](#afxthrowinternetexception)|İnternet bağlantısı ile ilgili bir özel durum oluşturur.|
 |[Afxgetınternethandletype](#afxgetinternethandletype)|Bir Internet tanıtıcısı türünü belirler.|
   
-##  <a name="afxparseurl"></a>AfxParseURL  
+##  <a name="afxparseurl"></a>  AfxParseURL  
  Bu genel olarak kullanılan [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
 ```   
@@ -110,13 +105,13 @@ BOOL AFXAPI AfxParseURL(
   
  Örneğin, `AfxParseURL` formun URL'lerini ayrıştırır **service://server/dir/dir/object.ext:port** ve aşağıdaki gibi depolanan bileşenlerinden döndürür:  
   
- `strServer`"server" ==  
+ `strServer` "server" ==  
   
- `strObject`== "/ dir/dir/object/object.ext"  
+ `strObject` == "/ dir/dir/object/object.ext"  
   
- `nPort`#port ==  
+ `nPort` #port ==  
   
- `dwServiceType`#service ==  
+ `dwServiceType` #service ==  
   
 > [!NOTE]
 >  Bu işlevi çağırmak için projenizi AFXINET eklemeniz gerekir. H.  
@@ -124,7 +119,7 @@ BOOL AFXAPI AfxParseURL(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxinet.h  
   
-##  <a name="afxparseurlex"></a>AfxParseURLEx  
+##  <a name="afxparseurlex"></a>  AfxParseURLEx  
  Bu genel işlevi, genişletilmiş sürümüdür [AfxParseURL](#afxparseurl) ve kullanılan [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
 ```   
@@ -219,7 +214,7 @@ BOOL AFXAPI AfxParseURLEx(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
  
-## <a name="afxgetinternethandletype"></a>Afxgetınternethandletype
+## <a name="afxgetinternethandletype"></a>  Afxgetınternethandletype
 Bu genel işlevi, bir Internet tanıtıcısı türünü belirlemek için kullanın.  
    
 ### <a name="syntax"></a>Sözdizimi  
@@ -272,7 +267,7 @@ DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );
  [Makroları ve genel öğeleri](mfc-macros-and-globals.md)   
  [AfxParseURL](internet-url-parsing-globals.md#afxparseurl)
  
-## <a name="afxthrowinternetexception"></a>Afxthrowınternetexception
+## <a name="afxthrowinternetexception"></a>  Afxthrowınternetexception
 Bir Internet özel durum oluşturur.  
    
 ### <a name="syntax"></a>Sözdizimi    

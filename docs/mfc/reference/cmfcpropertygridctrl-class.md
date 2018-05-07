@@ -1,12 +1,9 @@
 ---
-title: "CMFCPropertyGridCtrl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCPropertyGridCtrl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCPropertyGridCtrl
@@ -159,17 +156,15 @@ helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], OnSelectCombo
 - CMFCPropertyGridCtrl [MFC], ValidateItemData
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a07b8049f01d10556bded754ec2aae55581b7cb2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 79cba2981a6ae6a742ad2839499f2acff6f0a5f0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl sınıfı
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -326,7 +321,7 @@ class CMFCPropertyGridCtrl : public CWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxpropertygridctrl.h  
   
-##  <a name="accselect"></a>CMFCPropertyGridCtrl::accSelect  
+##  <a name="accselect"></a>  CMFCPropertyGridCtrl::accSelect  
 
   
 ```  
@@ -336,14 +331,14 @@ virtual HRESULT accSelect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`flagsSelect`  
- [in]`varChild`  
+ [in] `flagsSelect`  
+ [in] `varChild`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="addproperty"></a>CMFCPropertyGridCtrl::AddProperty  
+##  <a name="addproperty"></a>  CMFCPropertyGridCtrl::AddProperty  
  Yeni bir özelliği bir özellik ızgara denetimine ekler.  
   
 ```  
@@ -354,14 +349,14 @@ int AddProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pProp`  
+ [in] `pProp`  
  Bir özellik için işaretçi.  
   
- [in]`bRedraw`  
- `TRUE`özellik hemen yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bRedraw`  
+ `TRUE` özellik hemen yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
- [in]`bAdjustLayout`  
- `TRUE`özelliğin değeri ve metin çizme ve özellik çizmek nasıl yeniden hesaplamak için; `FALSE` varolan hesaplamalar özelliği çizmek için kullanılacak. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bAdjustLayout`  
+ `TRUE` özelliğin değeri ve metin çizme ve özellik çizmek nasıl yeniden hesaplamak için; `FALSE` varolan hesaplamalar özelliği çizmek için kullanılacak. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem, özellik burada eklenir özellik kılavuz denetimi konumda sıfır tabanlı dizini başarılı olursa; Aksi durumda, -1.  
@@ -369,7 +364,7 @@ int AddProperty(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, özellik Kılavuzu denetimindeki özellikleri listesinin sonuna belirtilen özellik için bir işaretçi ekler. Özellikler destroy değil veya kullanıcılara kılavuz denetimi yok önce kapsamının dışına gitmesini izin verin. Özellik kılavuz denetimi ile işiniz bittiğinde, çağrı [CMFCPropertyGridCtrl::RemoveAll](#removeall) eklenen tüm özellikleri silinemedi. Belirtilen özellik listeye eklenen AddProperty yöntemi başarısız olur.  
   
-##  <a name="adjustlayout"></a>CMFCPropertyGridCtrl::AdjustLayout  
+##  <a name="adjustlayout"></a>  CMFCPropertyGridCtrl::AdjustLayout  
  Özellik kılavuz denetimi ve özelliklerini yeniden çizer.  
   
 ```  
@@ -379,7 +374,7 @@ virtual void AdjustLayout();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem tüm özellik kılavuz denetimi ve görüntüleri, yazı tipleri ve denetimler de dahil olmak üzere özelliklerini nasıl çizileceğini yeniden hesaplar.  
   
-##  <a name="alwaysshowusertooltip"></a>CMFCPropertyGridCtrl::AlwaysShowUserToolTip  
+##  <a name="alwaysshowusertooltip"></a>  CMFCPropertyGridCtrl::AlwaysShowUserToolTip  
 
   
 ```  
@@ -387,11 +382,11 @@ void AlwaysShowUserToolTip(BOOL bShow = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bShow`  
+ [in] `bShow`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="closecolorpopup"></a>CMFCPropertyGridCtrl::CloseColorPopup  
+##  <a name="closecolorpopup"></a>  CMFCPropertyGridCtrl::CloseColorPopup  
  Renk seçimi iletişim kutusunu kapatır.  
   
 ```  
@@ -401,7 +396,7 @@ virtual void CloseColorPopup();
 ### <a name="remarks"></a>Açıklamalar  
  Renk seçimi iletişim kutusu hakkında daha fazla bilgi için bkz: [CMFCPropertyGridColorProperty sınıfı](../../mfc/reference/cmfcpropertygridcolorproperty-class.md).  
   
-##  <a name="cmfcpropertygridctrl"></a>CMFCPropertyGridCtrl::CMFCPropertyGridCtrl  
+##  <a name="cmfcpropertygridctrl"></a>  CMFCPropertyGridCtrl::CMFCPropertyGridCtrl  
  Oluşturan bir `CMFCPropertyGridCtrl` nesnesi.  
   
 ```  
@@ -412,7 +407,7 @@ CMFCPropertyGridCtrl();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="compareprops"></a>CMFCPropertyGridCtrl::CompareProps  
+##  <a name="compareprops"></a>  CMFCPropertyGridCtrl::CompareProps  
  Özellikler sıralamak için özellik Kılavuzu denetimi tarafından çağrılır.  
   
 ```  
@@ -439,7 +434,7 @@ virtual int CompareProps(
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bu yöntemi kullanır [CString::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) Karşılaştırılacak yöntemi `CMFCPropertyGridProperty::m_strName` belirtilen parametreleri üyeleri.  
   
-##  <a name="create"></a>CMFCPropertyGridCtrl::Create  
+##  <a name="create"></a>  CMFCPropertyGridCtrl::Create  
  Bir özellik kılavuz denetimi oluşturur ve özellik kılavuz denetim nesnesi ekler.  
   
 ```  
@@ -451,20 +446,20 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`dwStyle`  
+ [in] `dwStyle`  
  Bit düzeyinde bileşimini (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in]`rect`  
+ [in] `rect`  
  İstemcisinde boyutunu ve pencere konumunu belirten bir sınırlayıcı dikdörtgenini koordinatları `pParentWnd`.  
   
- [in]`pParentWnd`  
+ [in] `pParentWnd`  
  Üst pencere işaretçi. Olmamalıdır `NULL`.  
   
- [in]`nID`  
+ [in] `nID`  
  Alt pencere kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`pencerenin başarıyla oluşturulduysa; Aksi takdirde `FALSE`.  
+ `TRUE` pencerenin başarıyla oluşturulduysa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Özellik kılavuz denetimi, ilk çağrıda oluşturmak için [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) özellik kılavuz nesnesi oluşturulamadı. ' I çağırın `CMFCPropertyGridCtrl::Create`.  
@@ -474,7 +469,7 @@ virtual BOOL Create(
   
  [!code-cpp[NVC_MFC_NewControls#15](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_6.cpp)]  
   
-##  <a name="deleteproperty"></a>CMFCPropertyGridCtrl::DeleteProperty  
+##  <a name="deleteproperty"></a>  CMFCPropertyGridCtrl::DeleteProperty  
  Belirtilen özellik özellik kılavuz denetiminden siler.  
   
 ```  
@@ -485,22 +480,22 @@ BOOL DeleteProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pProp`  
+ [in] `pProp`  
  Bir özellik için işaretçi.  
   
- [in]`bRedraw`  
- `TRUE`özellik kılavuz denetimi yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bRedraw`  
+ `TRUE` özellik kılavuz denetimi yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
- [in]`bAdjustLayout`  
- `TRUE`tüm metin, görüntüler ve öğeleri özelliği kılavuz denetiminde çizmek ve denetimi çizmek nasıl yeniden hesaplamak için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bAdjustLayout`  
+ `TRUE` tüm metin, görüntüler ve öğeleri özelliği kılavuz denetiminde çizmek ve denetimi çizmek nasıl yeniden hesaplamak için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir özellik ve tüm alt öğeleri özelliği kılavuz denetiminden silmek için bu yöntemi kullanın.  
   
-##  <a name="drawcontrolbarcolors"></a>CMFCPropertyGridCtrl::DrawControlBarColors  
+##  <a name="drawcontrolbarcolors"></a>  CMFCPropertyGridCtrl::DrawControlBarColors  
 
   
 ```  
@@ -511,7 +506,7 @@ BOOL DrawControlBarColors() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="edititem"></a>CMFCPropertyGridCtrl::EditItem  
+##  <a name="edititem"></a>  CMFCPropertyGridCtrl::EditItem  
  Kullanıcı bir özelliği değiştirmek başladığında çerçevesi tarafından çağrılır.  
   
 ```  
@@ -521,18 +516,18 @@ virtual BOOL EditItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pProp`  
+ [in] `pProp`  
  Bir özellik için işaretçi.  
   
- [in]`lptClick`  
+ [in] `lptClick`  
  Kullanıcı düzenleme işlemine başlamak için tıklattığınız özelliği kılavuz denetim noktasını. Denetimin istemci koordinatları noktasıdır. Varsayılan değer `NULL` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="enabledescriptionarea"></a>CMFCPropertyGridCtrl::EnableDescriptionArea  
+##  <a name="enabledescriptionarea"></a>  CMFCPropertyGridCtrl::EnableDescriptionArea  
  Etkinleştirir veya özellik kılavuz denetimindeki özellikleri listesi altında görüntülenen açıklama alanı devre dışı bırakır.  
   
 ```  
@@ -540,13 +535,13 @@ void EnableDescriptionArea(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bEnable`  
- `TRUE`Açıklama alanı'nı etkinleştirmek için; `FALSE` Açıklama alanını devre dışı bırakmak için. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bEnable`  
+ `TRUE` Açıklama alanı'nı etkinleştirmek için; `FALSE` Açıklama alanını devre dışı bırakmak için. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Açıklama alanı özelliği Kılavuz Denetimi alt kısmında görüntülenir. Varsayılan olarak, açıklama alanında görünür ve devre dışıdır.  
   
-##  <a name="enableheaderctrl"></a>CMFCPropertyGridCtrl::EnableHeaderCtrl  
+##  <a name="enableheaderctrl"></a>  CMFCPropertyGridCtrl::EnableHeaderCtrl  
  Etkinleştirir veya özellik kılavuz denetimi üstündeki üstbilgi denetimi devre dışı bırakır.  
   
 ```  
@@ -557,16 +552,16 @@ void EnableHeaderCtrl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bEnable`  
- `TRUE`Üstbilgi denetimi etkinleştirmek için; `FALSE` üstbilgi denetimi devre dışı bırakmak için. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bEnable`  
+ `TRUE` Üstbilgi denetimi etkinleştirmek için; `FALSE` üstbilgi denetimi devre dışı bırakmak için. Varsayılan değer `TRUE` şeklindedir.  
   
- [in]`lpszLeftColumn`  
+ [in] `lpszLeftColumn`  
  Üstbilgi denetimi sol sütun başlığı. Varsayılan değer **özelliği**.  
   
- [in]`lpszRightColumn`  
+ [in] `lpszRightColumn`  
  Üstbilgi denetimi sağ sütun başlığı. Varsayılan değer **değeri**.  
   
-##  <a name="endedititem"></a>CMFCPropertyGridCtrl::EndEditItem  
+##  <a name="endedititem"></a>  CMFCPropertyGridCtrl::EndEditItem  
  Kullanıcı bir özellik değiştirme tamamlandığında çerçevesi tarafından çağrılır.  
   
 ```  
@@ -574,15 +569,15 @@ virtual BOOL EndEditItem(BOOL bUpdateData=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bUpdateData`  
- `TRUE`düzenleme işlemi tamamlandığında, değiştirilen özellik veri doğrulanmalıdır belirtmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bUpdateData`  
+ `TRUE` düzenleme işlemi tamamlandığında, değiştirilen özellik veri doğrulanmalıdır belirtmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`düzenleme işlemi başarıyla; ererse `FALSE` değiştirilmiş özellik veriler geçerli değil veya düzenleme işlemi devam etmelidir.  
+ `TRUE` düzenleme işlemi başarıyla; ererse `FALSE` değiştirilmiş özellik veriler geçerli değil veya düzenleme işlemi devam etmelidir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ensurevisible"></a>CMFCPropertyGridCtrl::EnsureVisible  
+##  <a name="ensurevisible"></a>  CMFCPropertyGridCtrl::EnsureVisible  
  Bir özellik kılavuz denetimi kaydırır ve belirtilen özellik görünene kadar özellik öğelerinin genişletir.  
   
 ```  
@@ -592,15 +587,15 @@ void EnsureVisible(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pProp`  
+ [in] `pProp`  
  Bir özellik için işaretçi.  
   
- [in]`bExpandParents`  
- `TRUE`Belirtilen özellik görünür hale getirmek için üst öğe genişletmek için; Aksi takdirde `FALSE`. Varsayılan, `FALSE` değeridir.  
+ [in] `bExpandParents`  
+ `TRUE` Belirtilen özellik görünür hale getirmek için üst öğe genişletmek için; Aksi takdirde `FALSE`. Varsayılan, `FALSE` değeridir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="expandall"></a>CMFCPropertyGridCtrl::ExpandAll  
+##  <a name="expandall"></a>  CMFCPropertyGridCtrl::ExpandAll  
  Genişletir veya tüm özellik kılavuz denetim düğümleri daraltır.  
   
 ```  
@@ -608,12 +603,12 @@ void ExpandAll(BOOL bExpand=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bExpand`  
- `TRUE`tüm düğümleri genişletmek için; `FALSE` tüm düğümleri daraltmak için. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bExpand`  
+ `TRUE` tüm düğümleri genişletmek için; `FALSE` tüm düğümleri daraltmak için. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="finditembydata"></a>CMFCPropertyGridCtrl::FindItemByData  
+##  <a name="finditembydata"></a>  CMFCPropertyGridCtrl::FindItemByData  
  Bir kullanıcı tarafından tanımlanan ile ilişkilendirilen özelliği alır `DWORD` değeri.  
   
 ```  
@@ -623,11 +618,11 @@ CMFCPropertyGridProperty* FindItemByData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`dwData`  
+ [in] `dwData`  
  A `DWORD` değeri.  
   
- [in]`bSearchSubItems`  
- `TRUE`özellik alt öğeleri aramak için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bSearchSubItems`  
+ `TRUE` özellik alt öğeleri aramak için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa ilişkili özelliğin nesnesine işaretçi; Aksi takdirde `NULL`.  
@@ -635,7 +630,7 @@ CMFCPropertyGridProperty* FindItemByData(
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) Oluşturucusu veya [CMFCPropertyGridProperty::SetData](../../mfc/reference/cmfcpropertygridproperty-class.md#setdata) ilişkilendirilecek yöntemi bir `DWORD` özelliğe sahip.  
   
-##  <a name="get_accchildcount"></a>CMFCPropertyGridCtrl::get_accChildCount  
+##  <a name="get_accchildcount"></a>  CMFCPropertyGridCtrl::get_accChildCount  
 
   
 ```  
@@ -643,13 +638,13 @@ virtual HRESULT get_accChildCount(long* pcountChildren);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pcountChildren`  
+ [in] `pcountChildren`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="get_accfocus"></a>CMFCPropertyGridCtrl::get_accFocus  
+##  <a name="get_accfocus"></a>  CMFCPropertyGridCtrl::get_accFocus  
 
   
 ```  
@@ -657,13 +652,13 @@ virtual HRESULT get_accFocus(VARIANT* pvarChild);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pvarChild`  
+ [in] `pvarChild`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="get_acchelp"></a>CMFCPropertyGridCtrl::get_accHelp  
+##  <a name="get_acchelp"></a>  CMFCPropertyGridCtrl::get_accHelp  
 
   
 ```  
@@ -673,14 +668,14 @@ virtual HRESULT get_accHelp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`varChild`  
- [in]`pszHelp`  
+ [in] `varChild`  
+ [in] `pszHelp`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="get_acchelptopic"></a>CMFCPropertyGridCtrl::get_accHelpTopic  
+##  <a name="get_acchelptopic"></a>  CMFCPropertyGridCtrl::get_accHelpTopic  
 
   
 ```  
@@ -691,15 +686,15 @@ virtual HRESULT get_accHelpTopic(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pszHelpFile`  
- [in]`varChild`  
- [in]`pidTopic`  
+ [in] `pszHelpFile`  
+ [in] `varChild`  
+ [in] `pidTopic`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="get_acckeyboardshortcut"></a>CMFCPropertyGridCtrl::get_accKeyboardShortcut  
+##  <a name="get_acckeyboardshortcut"></a>  CMFCPropertyGridCtrl::get_accKeyboardShortcut  
 
   
 ```  
@@ -709,14 +704,14 @@ virtual HRESULT get_accKeyboardShortcut(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`varChild`  
- [in]`pszKeyboardShortcut`  
+ [in] `varChild`  
+ [in] `pszKeyboardShortcut`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="get_accselection"></a>CMFCPropertyGridCtrl::get_accSelection  
+##  <a name="get_accselection"></a>  CMFCPropertyGridCtrl::get_accSelection  
 
   
 ```  
@@ -724,13 +719,13 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pvarChildren`  
+ [in] `pvarChildren`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getbkcolor"></a>CMFCPropertyGridCtrl::GetBkColor  
+##  <a name="getbkcolor"></a>  CMFCPropertyGridCtrl::GetBkColor  
  Geçerli özellik kılavuz denetim arka plan rengini alır.  
   
 ```  
@@ -743,7 +738,7 @@ COLORREF GetBkColor() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, geçerli özellik kılavuz denetimin arka plan çizmek için çerçevesi kullanır rengi alır. [CMFCPropertyGridCtrl::GetTextColor](#gettextcolor) yöntemi ön plan rengini alır.  
   
-##  <a name="getboldfont"></a>CMFCPropertyGridCtrl::GetBoldFont  
+##  <a name="getboldfont"></a>  CMFCPropertyGridCtrl::GetBoldFont  
  Kalın stil geçerli özellik kılavuz denetimindeki metin çizmek için kullanılan Windows yazı tipini alır.  
   
 ```  
@@ -753,7 +748,7 @@ CFont& GetBoldFont();
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir başvuru bir [CFont](../../mfc/reference/cfont-class.md) kalın yazı tipiyle özelliklerini açıklayan nesne.  
   
-##  <a name="getcursel"></a>CMFCPropertyGridCtrl::GetCurSel  
+##  <a name="getcursel"></a>  CMFCPropertyGridCtrl::GetCurSel  
  Seçili özellik alır.  
   
 ```  
@@ -765,7 +760,7 @@ CMFCPropertyGridProperty* GetCurSel() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getcustomcolors"></a>CMFCPropertyGridCtrl::GetCustomColors  
+##  <a name="getcustomcolors"></a>  CMFCPropertyGridCtrl::GetCustomColors  
  Şu anda özelliği kılavuz denetim öğeleri için tanımlanan özel renkler alır.  
   
 ```  
@@ -780,31 +775,31 @@ void GetCustomColors(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out]`clrBackground`  
+ [out] `clrBackground`  
  Özellik değerlerini arka plan rengi.  
   
- [out]`clrText`  
+ [out] `clrText`  
  Özellik adları ve özellik değeri metin rengi.  
   
- [out]`clrGroupBackground`  
+ [out] `clrGroupBackground`  
  Özellik grubu arka plan rengi.  
   
- [out]`clrGroupText`  
+ [out] `clrGroupText`  
  Özellik grubu içindeki metnin rengi.  
   
- [out]`clrDescriptionBackground`  
+ [out] `clrDescriptionBackground`  
  Açıklama alanı arka plan rengi.  
   
- [out]`clrDescriptionText`  
+ [out] `clrDescriptionText`  
  Açıklama alanı içindeki metnin rengi.  
   
- [out]`clrLine`  
+ [out] `clrLine`  
  Özellikleri arasında çizilmiş satırları rengi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [CMFCPropertyGridCtrl::SetCustomColors](#setcustomcolors) özel renkler ayarlamak için yöntem.  
   
-##  <a name="getdescriptionheight"></a>CMFCPropertyGridCtrl::GetDescriptionHeight  
+##  <a name="getdescriptionheight"></a>  CMFCPropertyGridCtrl::GetDescriptionHeight  
  Özellik kılavuz denetimi altında bulunur Açıklama alanının yüksekliğini alır.  
   
 ```  
@@ -819,7 +814,7 @@ int GetDescriptionHeight() const;
   
  Kullanım [CMFCPropertyGridCtrl::EnableDescriptionArea](#enabledescriptionarea) görüntülemek veya açıklama alanı gizlemek için bir yöntem. Kullanım [CMFCPropertyGridCtrl::IsDescriptionArea](#isdescriptionarea) açıklama alanında görüntülenen gizli olup olmadığını belirlemek için yöntem.  
   
-##  <a name="getdescriptionrows"></a>CMFCPropertyGridCtrl::GetDescriptionRows  
+##  <a name="getdescriptionrows"></a>  CMFCPropertyGridCtrl::GetDescriptionRows  
  Geçerli özellik kılavuz denetimi açıklama alanında satır sayısını alır.  
   
 ```  
@@ -832,7 +827,7 @@ int GetDescriptionRows() const;
 ### <a name="remarks"></a>Açıklamalar  
  [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) Oluşturucu, 3 satır Açıklama alanına başlatır.  
   
-##  <a name="getheaderctrl"></a>CMFCPropertyGridCtrl::GetHeaderCtrl  
+##  <a name="getheaderctrl"></a>  CMFCPropertyGridCtrl::GetHeaderCtrl  
  İç alır [CMFCHeaderCtrl](../../mfc/reference/cmfcheaderctrl-class.md) nesne framework geçerli özellik kılavuz denetimi görüntülemek için kullanır.  
   
 ```  
@@ -842,7 +837,7 @@ virtual CMFCHeaderCtrl& GetHeaderCtrl();
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir başvuru bir `CMFCHeaderCtrl` nesnesi.  
   
-##  <a name="getheaderheight"></a>CMFCPropertyGridCtrl::GetHeaderHeight  
+##  <a name="getheaderheight"></a>  CMFCPropertyGridCtrl::GetHeaderHeight  
  Bir özellik kılavuz denetimi üstbilgisinin yüksekliğini alır.  
   
 ```  
@@ -854,7 +849,7 @@ int GetHeaderHeight() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getleftcolumnwidth"></a>CMFCPropertyGridCtrl::GetLeftColumnWidth  
+##  <a name="getleftcolumnwidth"></a>  CMFCPropertyGridCtrl::GetLeftColumnWidth  
  Sol sütunda her bir özellik adını içeren geçerli özellik kılavuz denetiminin genişliğini alır.  
   
 ```  
@@ -867,7 +862,7 @@ int GetLeftColumnWidth() const;
 ### <a name="remarks"></a>Açıklamalar  
  Özellik kılavuz denetimin sağ sütunda her bir özellik değerini içerir.  
   
-##  <a name="getlistrect"></a>CMFCPropertyGridCtrl::GetListRect  
+##  <a name="getlistrect"></a>  CMFCPropertyGridCtrl::GetListRect  
  Özellik kılavuz denetimi sınırlayıcı dikdörtgenini alır.  
   
 ```  
@@ -879,7 +874,7 @@ CRect GetListRect() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getproperty"></a>CMFCPropertyGridCtrl::GetProperty  
+##  <a name="getproperty"></a>  CMFCPropertyGridCtrl::GetProperty  
  Belirtilen dizin özelliği kılavuz denetimi içindeki bir öğenin karşılık gelen özellik nesnesi için bir işaretçi alır.  
   
 ```  
@@ -887,7 +882,7 @@ CMFCPropertyGridProperty* GetProperty(int nIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nIndex`  
+ [in] `nIndex`  
  Özellik kılavuz denetim öğesinin sıfır tabanlı dizini.  
   
  Bu yöntem, onaylar `nIndex` parametresi olan az sıfır veya daha büyük veya eşittir özelliklerin sayısı.  
@@ -897,7 +892,7 @@ CMFCPropertyGridProperty* GetProperty(int nIndex) const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getpropertycolumnwidth"></a>CMFCPropertyGridCtrl::GetPropertyColumnWidth  
+##  <a name="getpropertycolumnwidth"></a>  CMFCPropertyGridCtrl::GetPropertyColumnWidth  
  Geçerli özellik değerlerini içeren sütun genişliğini alır.  
   
 ```  
@@ -910,7 +905,7 @@ int GetPropertyColumnWidth() const;
 ### <a name="remarks"></a>Açıklamalar  
  Özellik kılavuz denetiminde sağdaki sütun özellik değerlerini içerir. Bir müşteri değerler sütunun genişliği değiştirmek için özellik Kılavuzu denetiminin bölme kutusunu kullanabilirsiniz.  
   
-##  <a name="getpropertycount"></a>CMFCPropertyGridCtrl::GetPropertyCount  
+##  <a name="getpropertycount"></a>  CMFCPropertyGridCtrl::GetPropertyCount  
  Bir özellik kılavuz denetimi özelliklerinde sayısını alır.  
   
 ```  
@@ -922,7 +917,7 @@ int GetPropertyCount() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getrowheight"></a>CMFCPropertyGridCtrl::GetRowHeight  
+##  <a name="getrowheight"></a>  CMFCPropertyGridCtrl::GetRowHeight  
  Özellik kılavuz denetimi satırda yüksekliğini alır.  
   
 ```  
@@ -935,7 +930,7 @@ int GetRowHeight() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bir satır yüksekliğini, geçerli yazı tipi yükseklik artı 4 piksel eşittir.  
   
-##  <a name="getscrollbarctrl"></a>CMFCPropertyGridCtrl::GetScrollBarCtrl  
+##  <a name="getscrollbarctrl"></a>  CMFCPropertyGridCtrl::GetScrollBarCtrl  
  Özellik kılavuz denetiminde kaydırma çubuğu denetimi için bir işaretçi alır.  
   
 ```  
@@ -943,7 +938,7 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nBar`  
+ [in] `nBar`  
  Olmalıdır kaydırma çubuğunun yönlendirmesini `SB_VERT`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -952,7 +947,7 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
 ### <a name="remarks"></a>Açıklamalar  
  Dikey kaydırma çubuğu denetimi doğrudan erişmek için bu yöntemi kullanın.  
   
-##  <a name="gettextcolor"></a>CMFCPropertyGridCtrl::GetTextColor  
+##  <a name="gettextcolor"></a>  CMFCPropertyGridCtrl::GetTextColor  
  Geçerli özellik kılavuz denetiminde özelliği öğelerin metnini çizmek için kullanılan rengi alır.  
   
 ```  
@@ -965,7 +960,7 @@ COLORREF GetTextColor() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, geçerli özellik kılavuz denetimi ön çizmek için çerçevesi kullanır rengi alır. [CMFCPropertyGridCtrl::GetBkColor](#getbkcolor) yöntemi arka plan rengini alır.  
   
-##  <a name="hittest"></a>CMFCPropertyGridCtrl::HitTest  
+##  <a name="hittest"></a>  CMFCPropertyGridCtrl::HitTest  
  Öğesinde belirtilen bir nokta ise, bir özellik kılavuz denetim öğesine karşılık gelen özellik nesne için bir işaretçi alır. Bu yöntem de noktasını içeren özellik kılavuz denetimi alanında gösterir.  
   
 ```  
@@ -976,14 +971,14 @@ CMFCPropertyGridProperty* HitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pt`  
+ [in] `pt`  
  İstemci koordinatları bir nokta.  
   
- [içinde out]`pnArea`  
+ [içinde out] `pnArea`  
  Bir işaretçi bir `ClickArea` değişkeni. Bu yöntem döndürdüğünde, değişkeni gösterir *özellik alanı* belirtilen noktası içerir. Açıklamalar bir özellik alanı hakkında daha fazla bilgi için bkz.  
   
- [in]`bPropsOnly`  
- `TRUE`yalnızca özellik alanı test etmek için; `FALSE` test etmek için *açıklama alanı* belirtilen özellik alanı değilse. Varsayılan değer `FALSE` şeklindedir. Açıklamalar açıklama alanı hakkında daha fazla bilgi için bkz.  
+ [in] `bPropsOnly`  
+ `TRUE` yalnızca özellik alanı test etmek için; `FALSE` test etmek için *açıklama alanı* belirtilen özellik alanı değilse. Varsayılan değer `FALSE` şeklindedir. Açıklamalar açıklama alanı hakkında daha fazla bilgi için bkz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Varsa `bPropsOnly` parametresi `TRUE` ve belirtilen bir özelliği alanında, dönüş değeri karşılık gelen özellik nesnesi için bir işaretçi. Ayrıca, `pnArea` parametresini belirtilen noktası içeren belirli alana ayarlayın. Aksi takdirde, dönüş değeri olan `NULL` ve `pnArea` parametresi değiştirilemez.  
@@ -1002,7 +997,7 @@ CMFCPropertyGridProperty* HitTest(
 |`ClickArea::ClickValue`|Özellik değeri.|  
 |`CMFCPropertyGridProperty::ClickDescription`|Özellik kılavuz denetim açıklama alanı.|  
   
-##  <a name="init"></a>CMFCPropertyGridCtrl::Init  
+##  <a name="init"></a>  CMFCPropertyGridCtrl::Init  
  Bir özellik Kılavuz Denetimi başlatmak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1011,14 +1006,14 @@ virtual void Init();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="initheader"></a>CMFCPropertyGridCtrl::InitHeader  
+##  <a name="initheader"></a>  CMFCPropertyGridCtrl::InitHeader  
  İç başlatır [CMFCHeaderCtrl](../../mfc/reference/cmfcheaderctrl-class.md) nesne framework geçerli özellik kılavuz denetimi görüntülemek için kullanır.  
   
 ```  
 virtual void InitHeader();
 ```  
   
-##  <a name="isalphabeticmode"></a>CMFCPropertyGridCtrl::IsAlphabeticMode  
+##  <a name="isalphabeticmode"></a>  CMFCPropertyGridCtrl::IsAlphabeticMode  
  Bir özellik kılavuz denetimi alfabetik modunda olup olmadığını gösterir.  
   
 ```  
@@ -1026,14 +1021,14 @@ BOOL IsAlphabeticMode() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`özellik kılavuz denetimi alfabetik modundaysa; Aksi takdirde `FALSE`.  
+ `TRUE` özellik kılavuz denetimi alfabetik modundaysa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Özellik kılavuz denetim alfabetik modunda olduğunda, tüm özellikler alfabetik olarak adlarına göre sıralanır. Aksi takdirde özellikleri kendi üst düğümlerinde gruplandırılır.  
   
  Kullanım [CMFCPropertyGridCtrl::SetAlphabeticMode](#setalphabeticmode) etkinleştirmek veya alfabetik modu devre dışı bırakmak için bir yöntem.  
   
-##  <a name="isalwaysshowusertooltip"></a>CMFCPropertyGridCtrl::IsAlwaysShowUserToolTip  
+##  <a name="isalwaysshowusertooltip"></a>  CMFCPropertyGridCtrl::IsAlwaysShowUserToolTip  
 
   
 ```  
@@ -1044,7 +1039,7 @@ BOOL IsAlwaysShowUserToolTip() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isdescriptionarea"></a>CMFCPropertyGridCtrl::IsDescriptionArea  
+##  <a name="isdescriptionarea"></a>  CMFCPropertyGridCtrl::IsDescriptionArea  
  Özellik kılavuz denetimin açıklama alanı görüntülenip görüntülenmeyeceğini belirtir.  
   
 ```  
@@ -1052,12 +1047,12 @@ BOOL IsDescriptionArea() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Açıklama alanı görüntülenir Aksi takdirde `FALSE`.  
+ `TRUE` Açıklama alanı görüntülenir Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [CMFCPropertyGridCtrl::EnableDescriptionArea](#enabledescriptionarea) Açıklama alanını görüntülemek veya gizlemek için yöntem.  
   
-##  <a name="isgroupnamefullwidth"></a>CMFCPropertyGridCtrl::IsGroupNameFullWidth  
+##  <a name="isgroupnamefullwidth"></a>  CMFCPropertyGridCtrl::IsGroupNameFullWidth  
  Her özellik grup adı geçerli özellik kılavuz denetimi genişliği boyunca görüntülenip görüntülenmeyeceğini belirtir.  
   
 ```  
@@ -1065,12 +1060,12 @@ BOOL IsGroupNameFullWidth() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Grup adları özelliği kılavuz denetimi genişliği boyunca görüntülenir `FALSE` grubu adları denetimi sağa (değer) sütunu tarafından kesildi durumunda.  
+ `TRUE` Grup adları özelliği kılavuz denetimi genişliği boyunca görüntülenir `FALSE` grubu adları denetimi sağa (değer) sütunu tarafından kesildi durumunda.  
   
 ### <a name="remarks"></a>Açıklamalar  
  A *grup* özelliği kılavuz denetimindeki ilgili özellikleri koleksiyonudur. Denetim hiyerarşik olarak görüntüleniyorsa, *grup adı* grubun üstündeki satıra bir kategori başlık olarak görüntülenir.  
   
-##  <a name="isheaderctrl"></a>CMFCPropertyGridCtrl::IsHeaderCtrl  
+##  <a name="isheaderctrl"></a>  CMFCPropertyGridCtrl::IsHeaderCtrl  
  Üstbilgi denetimi görüntülenip görüntülenmeyeceğini belirtir.  
   
 ```  
@@ -1078,12 +1073,12 @@ BOOL IsHeaderCtrl() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Üstbilgi denetimi görüntülenir Aksi takdirde `FALSE`.  
+ `TRUE` Üstbilgi denetimi görüntülenir Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [CMFCPropertyGridCtrl::EnableHeaderCtrl](#enableheaderctrl) üstbilgi denetimi görüntülemek veya gizlemek için yöntem.  
   
-##  <a name="ismarkmodifiedproperties"></a>CMFCPropertyGridCtrl::IsMarkModifiedProperties  
+##  <a name="ismarkmodifiedproperties"></a>  CMFCPropertyGridCtrl::IsMarkModifiedProperties  
  Özellik kılavuz denetimi değiştirilmiş özellikleri nasıl görüntülediğini gösterir.  
   
 ```  
@@ -1091,11 +1086,11 @@ BOOL IsMarkModifiedProperties() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`özellikleri görüntülemek için kalın stili kullanıldığında değiştirilemez; `FALSE` görüntülemek için Normal stili kullanıldığında özelliklerini değiştirdi.  
+ `TRUE` özellikleri görüntülemek için kalın stili kullanıldığında değiştirilemez; `FALSE` görüntülemek için Normal stili kullanıldığında özelliklerini değiştirdi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isshowdragcontext"></a>CMFCPropertyGridCtrl::IsShowDragContext  
+##  <a name="isshowdragcontext"></a>  CMFCPropertyGridCtrl::IsShowDragContext  
  Bir kullanıcı sütunları yeniden boyutlandırır zaman framework geçerli özellik kılavuz denetim ad ve değer sütunlarının yeniden çizer olup olmadığını gösterir.  
   
 ```  
@@ -1103,12 +1098,12 @@ BOOL IsShowDragContext() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`framework ad ve değer sütunları yeniden boyutlandırma işlemi sırasında; yeniden çizer varsa `FALSE` sürükleme işlemi tamamlandıktan sonra çerçeve sütunları yeniden çizer durumunda.  
+ `TRUE` framework ad ve değer sütunları yeniden boyutlandırma işlemi sırasında; yeniden çizer varsa `FALSE` sürükleme işlemi tamamlandıktan sonra çerçeve sütunları yeniden çizer durumunda.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı bir özellik kılavuz denetiminin ad ve değer sütunları, sütunlar arasında olduğu bölme çubuğunu sürükleyerek boyutlandırabilirsiniz. Sürükleme bağlam görüntülenirse, ad ve değer sütunları bölme çubuğunu kullanıcının sürüklediği sürece boyutlandırılır. Aksi takdirde, bölme çubuğunu taşır, ancak sütun sürükleme işlemi tamamlanana kadar yeniden değil.  
   
-##  <a name="isvsdotnetlook"></a>CMFCPropertyGridCtrl::IsVSDotNetLook  
+##  <a name="isvsdotnetlook"></a>  CMFCPropertyGridCtrl::IsVSDotNetLook  
  Özellik kılavuz denetiminin görünümünü Visual Studio .NET stilde olup olmadığını gösterir.  
   
 ```  
@@ -1116,12 +1111,12 @@ BOOL IsVSDotNetLook() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`özellik kılavuz denetim Visual Studio .NET stilde ise; Aksi takdirde `FALSE`.  
+ `TRUE` özellik kılavuz denetim Visual Studio .NET stilde ise; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [CMFCPropertyGridCtrl::SetVSDotNetLook](#setvsdotnetlook) Visual Studio .NET stiline özelliği kılavuz denetimi ayarlamak için yöntem.  
   
-##  <a name="markmodifiedproperties"></a>CMFCPropertyGridCtrl::MarkModifiedProperties  
+##  <a name="markmodifiedproperties"></a>  CMFCPropertyGridCtrl::MarkModifiedProperties  
  Değiştirilen özelliklerini görüntülemek nasıl belirtir.  
   
 ```  
@@ -1131,15 +1126,15 @@ void MarkModifiedProperties(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bMark`  
- `TRUE`Görüntülenecek kalın stil özelliklerinde değişiklik; `FALSE` Normal stilde değiştirilmiş özelliklerini görüntüleyin. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bMark`  
+ `TRUE` Görüntülenecek kalın stil özelliklerinde değişiklik; `FALSE` Normal stilde değiştirilmiş özelliklerini görüntüleyin. Varsayılan değer `TRUE` şeklindedir.  
   
- [in]`bRedraw`  
- `TRUE`özellik kılavuz denetimi hemen yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bRedraw`  
+ `TRUE` özellik kılavuz denetimi hemen yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onchangeselection"></a>CMFCPropertyGridCtrl::OnChangeSelection  
+##  <a name="onchangeselection"></a>  CMFCPropertyGridCtrl::OnChangeSelection  
  Geçerli Seçim değiştirildiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1152,13 +1147,13 @@ virtual void OnChangeSelection(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`pNewSel`|Yeni seçilen özellik işaretçi.|  
-|[in]`pOldSel`|Daha önce seçilen özellik işaretçi.|  
+|[in] `pNewSel`|Yeni seçilen özellik işaretçi.|  
+|[in] `pOldSel`|Daha önce seçilen özellik işaretçi.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem varsayılan uygulaması hiçbir şey yapmaz.  
   
-##  <a name="onclickbutton"></a>CMFCPropertyGridCtrl::OnClickButton  
+##  <a name="onclickbutton"></a>  CMFCPropertyGridCtrl::OnClickButton  
  Bir özellik düğmesine tıklandığında çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1166,13 +1161,13 @@ virtual void OnClickButton(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`point`  
+ [in] `point`  
  İstemci koordinatları bir nokta.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bu yöntem geçerli özellik değeri güncelleştirir.  
   
-##  <a name="ondrawborder"></a>CMFCPropertyGridCtrl::OnDrawBorder  
+##  <a name="ondrawborder"></a>  CMFCPropertyGridCtrl::OnDrawBorder  
  Özellik kılavuz denetimi çevresinde kenarlık çizmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1180,12 +1175,12 @@ virtual void OnDrawBorder(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondrawdescription"></a>CMFCPropertyGridCtrl::OnDrawDescription  
+##  <a name="ondrawdescription"></a>  CMFCPropertyGridCtrl::OnDrawDescription  
  Açıklama alanı çizme ve açıklama metnini görüntülemek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1195,16 +1190,16 @@ virtual void OnDrawDescription(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in]`rect`  
+ [in] `rect`  
  Açıklama alanı çizmek konumu belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [CMFCPropertyGridCtrl::EnableDescriptionArea](#enabledescriptionarea) açıklama alanı görüntülemek için yöntem.  
   
-##  <a name="ondrawlist"></a>CMFCPropertyGridCtrl::OnDrawList  
+##  <a name="ondrawlist"></a>  CMFCPropertyGridCtrl::OnDrawList  
  Özellik kılavuz denetiminde özellikler listesini görüntülemek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1212,12 +1207,12 @@ virtual void OnDrawList(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondrawproperty"></a>CMFCPropertyGridCtrl::OnDrawProperty  
+##  <a name="ondrawproperty"></a>  CMFCPropertyGridCtrl::OnDrawProperty  
  Bir özelliği görüntülemek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1227,18 +1222,18 @@ virtual int OnDrawProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in]`pProp`  
+ [in] `pProp`  
  Bir özellik nesnesi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onpropertychanged"></a>CMFCPropertyGridCtrl::OnPropertyChanged  
+##  <a name="onpropertychanged"></a>  CMFCPropertyGridCtrl::OnPropertyChanged  
  Bir özelliğin değeri değiştirildiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1246,13 +1241,13 @@ virtual void OnPropertyChanged(CMFCPropertyGridProperty* pProp) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pProp`  
+ [in] `pProp`  
  Değeri değişti özellik nesnesi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bu yöntem gönderir [AFX_WM_PROPERTY_CHANGED](../../mfc/reference/afx-messages.md) özelliği kılavuz denetim sahibi ileti.  
   
-##  <a name="onselectcombo"></a>CMFCPropertyGridCtrl::OnSelectCombo  
+##  <a name="onselectcombo"></a>  CMFCPropertyGridCtrl::OnSelectCombo  
  Birleşik giriş kutusu denetimi içeren bir özelliği seçildiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1261,7 +1256,7 @@ void OnSelectCombo();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="removeall"></a>CMFCPropertyGridCtrl::RemoveAll  
+##  <a name="removeall"></a>  CMFCPropertyGridCtrl::RemoveAll  
  Tüm özellik nesneleri bir özellik kılavuz denetiminden kaldırır.  
   
 ```  
@@ -1270,7 +1265,7 @@ void RemoveAll();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="resetoriginalvalues"></a>CMFCPropertyGridCtrl::ResetOriginalValues  
+##  <a name="resetoriginalvalues"></a>  CMFCPropertyGridCtrl::ResetOriginalValues  
  Tüm özellikleri özgün değerler geri yükler.  
   
 ```  
@@ -1278,12 +1273,12 @@ void ResetOriginalValues(BOOL bRedraw=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bRedraw`  
- `TRUE`özellik listesi yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bRedraw`  
+ `TRUE` özellik listesi yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setalphabeticmode"></a>CMFCPropertyGridCtrl::SetAlphabeticMode  
+##  <a name="setalphabeticmode"></a>  CMFCPropertyGridCtrl::SetAlphabeticMode  
  Ayarlar veya alfabetik modu sıfırlar.  
   
 ```  
@@ -1291,13 +1286,13 @@ void SetAlphabeticMode(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bSet`  
- `TRUE`alfabetik modu ayarlamak için; `FALSE` sıfırlama alfabetik modu. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bSet`  
+ `TRUE` alfabetik modu ayarlamak için; `FALSE` sıfırlama alfabetik modu. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Özellik kılavuz denetim alfabetik modunda olduğunda, denetim özellik adına göre içeren tüm özellikleri sıralar.  
   
-##  <a name="setboollabels"></a>CMFCPropertyGridCtrl::SetBoolLabels  
+##  <a name="setboollabels"></a>  CMFCPropertyGridCtrl::SetBoolLabels  
  Boole etiket metnini belirtir.  
   
 ```  
@@ -1307,15 +1302,15 @@ void SetBoolLabels(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszTrue`  
+ [in] `lpszTrue`  
  True Boole değeri için görüntülenecek metin dizesi.  
   
- [in]`lpszFalse`  
+ [in] `lpszFalse`  
  False Boole değeri için görüntülenecek metin dizesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setcursel"></a>CMFCPropertyGridCtrl::SetCurSel  
+##  <a name="setcursel"></a>  CMFCPropertyGridCtrl::SetCurSel  
  Bir özelliği bir özellik kılavuz denetiminde seçer.  
   
 ```  
@@ -1325,16 +1320,16 @@ void SetCurSel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pProp`  
+ [in] `pProp`  
  Bir özellik nesnesi için bir işaretçi.  
   
- [in]`bRedraw`  
- `TRUE`özellik kılavuz denetimi hemen yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bRedraw`  
+ `TRUE` özellik kılavuz denetimi hemen yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Özellik kılavuz denetimi geçerli öğenin seçimini iptal edin ve belirtilen özelliğine karşılık gelen öğeyi seçmek için bu yöntemi kullanın.  
   
-##  <a name="setcustomcolors"></a>CMFCPropertyGridCtrl::SetCustomColors  
+##  <a name="setcustomcolors"></a>  CMFCPropertyGridCtrl::SetCustomColors  
  Özel renkler özelliği kılavuz denetimi çeşitli öğeleri için belirtir.  
   
 ```  
@@ -1349,25 +1344,25 @@ void SetCustomColors(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`clrBackground`  
+ [in] `clrBackground`  
  Özellik değerlerini arka plan rengi.  
   
- [in]`clrText`  
+ [in] `clrText`  
  Özellik adları ve özellik değeri metin rengi.  
   
- [in]`clrGroupBackground`  
+ [in] `clrGroupBackground`  
  Özellik grubu arka plan rengi.  
   
- [in]`clrGroupText`  
+ [in] `clrGroupText`  
  Özellik grubu yeni metin rengi.  
   
- [in]`clrDescriptionBackground`  
+ [in] `clrDescriptionBackground`  
  Açıklama alanı arka plan rengi.  
   
- [in]`clrDescriptionText`  
+ [in] `clrDescriptionText`  
  Açıklama alanı içindeki metnin rengi.  
   
- [in]`clrLine`  
+ [in] `clrLine`  
  Özellikleri arasında çizilmiş satırları rengi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1375,7 +1370,7 @@ void SetCustomColors(
   
  Belirli bir özellik görünümünü özelleştirmek için öğesinden bir sınıf türetin [CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md) sınıfı ve daha sonra geçersiz [CMFCPropertyGridProperty::OnDrawName](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawname), [ CMFCPropertyGridProperty::OnDrawValue](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawvalue), [CMFCPropertyGridProperty::OnDrawExpandBox](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawexpandbox), ve [CMFCPropertyGridProperty::OnDrawButton](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawbutton) yöntemleri.  
   
-##  <a name="setdescriptionrows"></a>CMFCPropertyGridCtrl::SetDescriptionRows  
+##  <a name="setdescriptionrows"></a>  CMFCPropertyGridCtrl::SetDescriptionRows  
  Geçerli özellik kılavuz denetimi Açıklama bölümünde görüntülenecek satır sayısını belirtir.  
   
 ```  
@@ -1383,10 +1378,10 @@ void SetDescriptionRows(int nDescRows);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nDescRows`  
+ [in] `nDescRows`  
  Özellik tanımı görüntülenecek satırların sayısı.  
   
-##  <a name="setgroupnamefullwidth"></a>CMFCPropertyGridCtrl::SetGroupNameFullWidth  
+##  <a name="setgroupnamefullwidth"></a>  CMFCPropertyGridCtrl::SetGroupNameFullWidth  
  Tam genişlikli bir grup özellik kategori adı, geçerli özellik kılavuz denetimi görüntülenip görüntülenmeyeceğini belirtir.  
   
 ```  
@@ -1396,18 +1391,18 @@ void SetGroupNameFullWidth(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bGroupNameFullWidth`  
- `TRUE`özellik adı sütunun genişliği bağımsız olarak kategori adı tam genişliğini görüntülemek için. `FALSE`Kategori adı özellik adı sütunun genişliği ile genişliğini sınırlamak için. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bGroupNameFullWidth`  
+ `TRUE` özellik adı sütunun genişliği bağımsız olarak kategori adı tam genişliğini görüntülemek için. `FALSE` Kategori adı özellik adı sütunun genişliği ile genişliğini sınırlamak için. Varsayılan değer `TRUE` şeklindedir.  
   
- [in]`bRedraw`  
- `TRUE`özellik kılavuz denetimi hemen güncelleştirmek için; `FALSE` sonraki yeniden boyutlandırmaya olduğunda olay denetimi güncelleştirmek için oluşur. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bRedraw`  
+ `TRUE` özellik kılavuz denetimi hemen güncelleştirmek için; `FALSE` sonraki yeniden boyutlandırmaya olduğunda olay denetimi güncelleştirmek için oluşur. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Özellik kılavuz denetimi yeniden boyutlandırılabilir oluşur *özellik adı* sütun ve bir *özellik değeri* sütun. Ad sütunu ayrıca başlangıç değeri sütunun sonudur. Sütunları yeniden boyutlandırmak için sütunlar arasında kenarlığı sürükleyin.  
   
  Koşulları *grup adı* ve *kategori adı* Bu yöntemde birbirlerinin yerine kullanılır. Kategori adı, bir dizi ilgili özellikleri ve değerlerini dikkat bir satırda görüntülenir. Bu yöntem özellik adı sütunun genişliği de görüntülenen kategori adı genişliğini olup olmadığını belirtir.  
   
-##  <a name="setlistdelimiter"></a>CMFCPropertyGridCtrl::SetListDelimiter  
+##  <a name="setlistdelimiter"></a>  CMFCPropertyGridCtrl::SetListDelimiter  
  Özellik değerleri listesinde ayırıcı olarak kullanılan bir karakter tanımlar.  
   
 ```  
@@ -1415,7 +1410,7 @@ void SetListDelimiter(TCHAR c);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`c`  
+ [in] `c`  
  Ayırıcı olarak hizmet verecek bir karakter.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1423,7 +1418,7 @@ void SetListDelimiter(TCHAR c);
   
  Varsayılan olarak, [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) Oluşturucusu ayarlar sınırlayıcı karakter için virgül (',').  
   
-##  <a name="setshowdragcontext"></a>CMFCPropertyGridCtrl::SetShowDragContext  
+##  <a name="setshowdragcontext"></a>  CMFCPropertyGridCtrl::SetShowDragContext  
  Bir kullanıcı sütunları yeniden boyutlandırır zaman framework geçerli özellik kılavuz denetim ad ve değer sütunlarının yeniden çizer olup olmadığını belirtir.  
   
 ```  
@@ -1431,13 +1426,13 @@ void SetShowDragContext(BOOL bShowDragContext = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bShowDragContext`  
- `TRUE`ad ve değer sütunları yeniden boyutlandırma işlemi sırasında yeniden çizmek için; `FALSE` sürükleme işlemi tamamlandıktan sonra sütunları yeniden çizmek için. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bShowDragContext`  
+ `TRUE` ad ve değer sütunları yeniden boyutlandırma işlemi sırasında yeniden çizmek için; `FALSE` sürükleme işlemi tamamlandıktan sonra sütunları yeniden çizmek için. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı bir özellik kılavuz denetiminin ad ve değer sütunları, sütunlar arasında olduğu bölme çubuğunu sürükleyerek boyutlandırabilirsiniz. Sürükleme bağlam görüntülenirse, ad ve değer sütunları bölme çubuğunu kullanıcının sürüklediği sürece boyutlandırılır. Aksi takdirde, bölme çubuğunu taşır, ancak sütun sürükleme işlemi tamamlanana kadar yeniden değil.  
   
-##  <a name="setvsdotnetlook"></a>CMFCPropertyGridCtrl::SetVSDotNetLook  
+##  <a name="setvsdotnetlook"></a>  CMFCPropertyGridCtrl::SetVSDotNetLook  
  Visual Studio .NET içinde kullanılan stil özelliği kılavuz denetiminin görünümünü ayarlar.  
   
 ```  
@@ -1445,12 +1440,12 @@ void SetVSDotNetLook(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bSet`  
- `TRUE`Visual Studio .NET içinde kullanılan stil özelliği kılavuz denetimi ayarlamak için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bSet`  
+ `TRUE` Visual Studio .NET içinde kullanılan stil özelliği kılavuz denetimi ayarlamak için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="updatecolor"></a>CMFCPropertyGridCtrl::UpdateColor  
+##  <a name="updatecolor"></a>  CMFCPropertyGridCtrl::UpdateColor  
  Seçili renk özelliğini renk değerini ayarlar.  
   
 ```  
@@ -1458,13 +1453,13 @@ virtual void UpdateColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`color`  
+ [in] `color`  
  RGB renk değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, özellik kılavuz denetimi seçili özellik color özelliği değilse, hata ayıklama modunda onaylar.  
   
-##  <a name="validateitemdata"></a>CMFCPropertyGridCtrl::ValidateItemData  
+##  <a name="validateitemdata"></a>  CMFCPropertyGridCtrl::ValidateItemData  
  Özellik verileri doğrulamak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1475,7 +1470,7 @@ virtual BOOL ValidateItemData(CMFCPropertyGridProperty* pProp);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`pProp`|Bir özellik için işaretçi. Bu parametre kullanılmaz.|  
+|[in] `pProp`|Bir özellik için işaretçi. Bu parametre kullanılmaz.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Her zaman `TRUE`.  

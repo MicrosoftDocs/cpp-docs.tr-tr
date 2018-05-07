@@ -1,13 +1,10 @@
 ---
-title: "WM_ ileti işleyicileri: N - O | Microsoft Docs"
-ms.custom: 
+title: 'WM_ ileti işleyicileri: N - O | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - ON_WM_NCHITTEST
 - ON_WM_NCLBUTTONDOWN
@@ -46,17 +43,15 @@ helpviewer_keywords:
 - ON_WM_NCMBUTTONUP [MFC]
 - WM_ messages
 ms.assetid: 4efd1cda-b642-4e8b-89e8-73255fa70d77
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 108afac12d47c009b423e62321eb31a78e2c09d5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9e8b8a05afa68b080fa1b0be79c968e24f615af5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="wm-message-handlers-n---o"></a>WM_ İleti İşleyicileri: N - O
 Aşağıdaki harita girişler soldaki sağdaki işlev prototipleri karşılık gelir:  

@@ -1,27 +1,22 @@
 ---
-title: "Matematik hataları M6101-M6205 | Microsoft Docs"
-ms.custom: 
+title: Matematik hataları M6101-M6205 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 dev_langs:
 - C++
 ms.assetid: bdf3dc2a-d993-4f53-b0f2-9604e4914127
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9998343b63f9d39b300bfe27892cd8f059efec84
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 980facfddffb9a7c55854e05e42e7e7c5ec4c889
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="math-errors-m6101-through-m6205"></a>Matematik Hataları M6101 - M6205
 

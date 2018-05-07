@@ -1,12 +1,9 @@
 ---
-title: "CAnimationColor sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAnimationColor sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CAnimationColor
@@ -39,17 +36,15 @@ helpviewer_keywords:
 - CAnimationColor [MFC], m_gValue
 - CAnimationColor [MFC], m_rValue
 ms.assetid: 88bfabd4-efeb-4652-87e8-304253d8e48c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd6ec3b6d8ee6a37fbe189ff70a2a633cfda9c8a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f564b70e850f3020956711ef15ab1fe9285a6ae4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="canimationcolor-class"></a>CAnimationColor sınıfı
 Kırmızı, yeşil ve mavi bileşenlerini animasyonlu renkli işlevlerini uygular.  
@@ -114,7 +109,7 @@ class CAnimationColor : public CAnimationBaseObject;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxanimationcontroller.h  
   
-##  <a name="addtransition"></a>CAnimationColor::AddTransition  
+##  <a name="addtransition"></a>  CAnimationColor::AddTransition  
  Kırmızı, yeşil ve mavi bileşenleri için geçişleri ekler.  
   
 ```  
@@ -137,7 +132,7 @@ void AddTransition(
 ### <a name="remarks"></a>Açıklamalar  
  Belirtilen geçişleri renk bileşenleri temsil eden animasyon değişkenlere uygulanacak geçişleri iç listesine eklemek için bu işlevini çağırın. Geçişleri eklediğinizde, bunlar değil hemen uygulanır ve bir iç listede depolanmış. Geçişleri (belirli bir değeri bir film şeridi eklenebilir) uygulanır CAnimationController::AnimateGroup çağırdığınızda. Renk bileşenlerden biri için bir geçiş uygulanacak gerekmiyorsa, NULL geçirebilirsiniz.  
   
-##  <a name="canimationcolor"></a>CAnimationColor::CAnimationColor  
+##  <a name="canimationcolor"></a>  CAnimationColor::CAnimationColor  
  CAnimationColor nesnesi oluşturur.  
   
 ```  
@@ -166,7 +161,7 @@ CAnimationColor(
 ### <a name="remarks"></a>Açıklamalar  
  Nesne için varsayılan değerlerle kırmızı, yeşil, mavi, nesne kimliği ve 0 olarak ayarlanacak grup kimliği oluşturulur. SetDefaultValue ve SetID kullanarak çalışma zamanında daha sonra değiştirilebilir.  
   
-##  <a name="getanimationvariablelist"></a>CAnimationColor::GetAnimationVariableList  
+##  <a name="getanimationvariablelist"></a>  CAnimationColor::GetAnimationVariableList  
  Kapsüllenmiş animasyon değişkenleri bir listesine koyar.  
   
 ```  
@@ -177,7 +172,7 @@ virtual void GetAnimationVariableList(CList<CAnimationVariable*>& lst);
  `lst`  
  İşlevi döndüğünde, kırmızı, yeşil ve mavi bileşenlerini temsil eden üç CAnimationVariable nesnelerine işaretçiler içerir.  
   
-##  <a name="getb"></a>CAnimationColor::GetB  
+##  <a name="getb"></a>  CAnimationColor::GetB  
  Mavi bileşenini temsil eden CAnimationVariable erişim sağlar.  
   
 ```  
@@ -190,7 +185,7 @@ CAnimationVariable& GetB();
 ### <a name="remarks"></a>Açıklamalar  
  Mavi bileşenini temsil eden temel CAnimationVariable doğrudan erişmek için bu yöntemi çağırabilirsiniz.  
   
-##  <a name="getdefaultvalue"></a>CAnimationColor::GetDefaultValue  
+##  <a name="getdefaultvalue"></a>  CAnimationColor::GetDefaultValue  
  Renk bileşenleri için varsayılan değerleri döndürür.  
   
 ```  
@@ -203,7 +198,7 @@ COLORREF GetDefaultValue();
 ### <a name="remarks"></a>Açıklamalar  
  Oluşturucu veya SetDefaultValue tarafından önceden ayarlanmış varsayılan değerini almak için bu işlevini çağırın.  
   
-##  <a name="getg"></a>CAnimationColor::GetG  
+##  <a name="getg"></a>  CAnimationColor::GetG  
  Yeşil bileşenini temsil eden CAnimationVariable erişim sağlar.  
   
 ```  
@@ -216,7 +211,7 @@ CAnimationVariable& GetG();
 ### <a name="remarks"></a>Açıklamalar  
  Temel alınan CAnimationVariable temsil eden yeşil bileşen doğrudan erişmek için bu yöntemi çağırabilirsiniz.  
   
-##  <a name="getr"></a>CAnimationColor::GetR  
+##  <a name="getr"></a>  CAnimationColor::GetR  
  Kırmızı bileşenini temsil eden CAnimationVariable erişim sağlar.  
   
 ```  
@@ -229,7 +224,7 @@ CAnimationVariable& GetR();
 ### <a name="remarks"></a>Açıklamalar  
  Kırmızı bileşenini temsil eden temel CAnimationVariable doğrudan erişmek için bu yöntemi çağırabilirsiniz.  
   
-##  <a name="getvalue"></a>CAnimationColor::GetValue  
+##  <a name="getvalue"></a>  CAnimationColor::GetValue  
  Geçerli bir değer döndürür.  
   
 ```  
@@ -246,28 +241,28 @@ BOOL GetValue(COLORREF& color);
 ### <a name="remarks"></a>Açıklamalar  
  Animasyon renk geçerli değerini almak için bu işlevini çağırın. Bu yöntem başarısız ya da henüz başlatılmamış renk bileşenleri için temel alınan COM nesneleri, renk Oluşturucusu veya SetDefaultValue tarafından önceden ayarlanmış varsayılan değeri içerir.  
   
-##  <a name="m_bvalue"></a>CAnimationColor::m_bValue  
+##  <a name="m_bvalue"></a>  CAnimationColor::m_bValue  
  Animasyon rengin mavi bileşenini temsil eden kapsüllenmiş animasyon değişken.  
   
 ```  
 CAnimationVariable m_bValue;  
 ```  
   
-##  <a name="m_gvalue"></a>CAnimationColor::m_gValue  
+##  <a name="m_gvalue"></a>  CAnimationColor::m_gValue  
  Animasyon rengin yeşil bileşenini temsil eden kapsüllenmiş animasyon değişken.  
   
 ```  
 CAnimationVariable m_gValue;  
 ```  
   
-##  <a name="m_rvalue"></a>CAnimationColor::m_rValue  
+##  <a name="m_rvalue"></a>  CAnimationColor::m_rValue  
  Animasyon rengi kırmızı bileşenini temsil eden kapsüllenmiş animasyon değişken.  
   
 ```  
 CAnimationVariable m_rValue;  
 ```  
   
-##  <a name="operator_colorref"></a>CAnimationColor::operator COLORREF  
+##  <a name="operator_colorref"></a>  CAnimationColor::operator COLORREF  
   
 ```  
 operator COLORREF();
@@ -275,7 +270,7 @@ operator COLORREF();
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="operator_eq"></a>CAnimationColor::operator =  
+##  <a name="operator_eq"></a>  CAnimationColor::operator =  
  Renk için CAnimationColor atar.  
   
 ```  
@@ -289,7 +284,7 @@ void operator=(COLORREF color);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işleç oluşturulmuş durumunda, renk bileşenleri için temel alınan COM nesneleri yeniden SetDefaultValue çağırdığı için animasyon başlamadan önce bunu yapmak için önerilen. Bu olayları (ValueChanged veya IntegerValueChanged) animasyon nesneye abone, bu olayları yeniden etkinleştirmeniz gerekir.  
   
-##  <a name="setdefaultvalue"></a>CAnimationColor::SetDefaultValue  
+##  <a name="setdefaultvalue"></a>  CAnimationColor::SetDefaultValue  
  Varsayılan değer ayarlar.  
   
 ```  

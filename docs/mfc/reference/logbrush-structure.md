@@ -1,13 +1,10 @@
 ---
-title: "LOGBRUSH yapısı | Microsoft Docs"
-ms.custom: 
+title: LOGBRUSH yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - LOGBRUSH
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - LOGBRUSH structure [MFC]
 ms.assetid: 1bf96768-52c5-4444-9bb8-d41ba2e27e68
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec6cc9b61f837db4c9766c077fa60f4d9c2b95bd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6e02c156619e4ca36d268870c70ba783c41a352d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="logbrush-structure"></a>LOGBRUSH Yapısı
 `LOGBRUSH` Stili, renk ve fiziksel fırça desenini yapısını tanımlar. Windows tarafından kullanılan [CreateBrushIndirect](http://msdn.microsoft.com/library/windows/desktop/dd183487) ve [ExtCreatePen](http://msdn.microsoft.com/library/windows/desktop/dd162705) işlevleri.  
@@ -68,17 +63,17 @@ typedef struct tag LOGBRUSH { /* lb */
  *lbHatch*  
  Bir tarama stilini belirtir. Tarafından tanımlanan fırça stili anlamı bağlıdır `lbStyle`. Varsa `lbStyle` olan **BS_DIBPATTERN**, **lbHatch** üyeyi içeren bir paket DIB için tanıtıcı. Varsa `lbStyle` olan **BS_DIBPATTERNPT**, **lbHatch** üye paketlenmiş DIB gösteren bir işaretçi içeriyor. Varsa `lbStyle` olan **BS_HATCHED**, **lbHatch** üye tarama oluşturmak için kullanılan satırları yönünü belirtir. Aşağıdaki değerlerden biri olabilir:  
   
-- `HS_BDIAGONAL`45 derece yukarı, soldan sağa tarama  
+- `HS_BDIAGONAL` 45 derece yukarı, soldan sağa tarama  
   
-- `HS_CROSS`Yatay ve dikey bir çapraz tarama  
+- `HS_CROSS` Yatay ve dikey bir çapraz tarama  
   
-- `HS_DIAGCROSS`45 derecelik çapraz tarama  
+- `HS_DIAGCROSS` 45 derecelik çapraz tarama  
   
-- `HS_FDIAGONAL`45 derecelik aşağı, soldan sağa tarama  
+- `HS_FDIAGONAL` 45 derecelik aşağı, soldan sağa tarama  
   
-- `HS_HORIZONTAL`Yatay tarama  
+- `HS_HORIZONTAL` Yatay tarama  
   
-- `HS_VERTICAL`Dikey tarama  
+- `HS_VERTICAL` Dikey tarama  
   
  Varsa `lbStyle` olan **BS_PATTERN**, **lbHatch** deseni tanımlayan bit eşlem işleyicisidir. Varsa `lbStyle` olan **BS_SOLID** veya **BS_HOLLOW**, **lbHatch** göz ardı edilir.  
   

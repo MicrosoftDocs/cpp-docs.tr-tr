@@ -1,12 +1,9 @@
 ---
-title: "CMFCBaseTabCtrl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCBaseTabCtrl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCBaseTabCtrl
@@ -247,17 +244,15 @@ helpviewer_keywords:
 - CMFCBaseTabCtrl [MFC], m_bActivateTabOnRightClick
 - CMFCBaseTabCtrl [MFC], m_bAutoDestroyWindow
 ms.assetid: 7270c55f-6f6e-4dd2-b0d2-291afeac3882
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8dd8f70ffd2568f509b8b12be2167579c4ec4475
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 65160e196b202abd1393555a5ada001d76292e13
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcbasetabctrl-class"></a>CMFCBaseTabCtrl sınıfı
 Sekmeli windows için temel işlevselliği uygular.  
@@ -430,7 +425,7 @@ class CMFCBaseTabCtrl : public CWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxbasetabctrl.h  
   
-##  <a name="addicon"></a>CMFCBaseTabCtrl::AddIcon  
+##  <a name="addicon"></a>  CMFCBaseTabCtrl::AddIcon  
  Korumalı simgeleri listesine bir simge ekler `CMap m_mapAddedIcons` üyesi.  
   
 ```  
@@ -440,15 +435,15 @@ void AddIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hIcon`  
+ [in] `hIcon`  
  Eklenecek simgesi için bir tanıtıcı.  
   
- [in]`iIcon`  
+ [in] `iIcon`  
  Korumalı simgesinde sıfır tabanlı dizini `CImageList m_Images` üyesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="addtab"></a>CMFCBaseTabCtrl::AddTab  
+##  <a name="addtab"></a>  CMFCBaseTabCtrl::AddTab  
  Yeni bir sekme sekme denetimi ekler.  
   
 ```  
@@ -467,25 +462,25 @@ virtual void AddTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pTabWnd`  
+ [in] `pTabWnd`  
  Bu yöntem yeni bir sekme temsil eden penceresi için bir işaretçi.  
   
- [in]`lpszTabLabel`  
+ [in] `lpszTabLabel`  
  Yeni sekmede etiketini içeren bir dize.  
   
- [in]`uiImageId`  
+ [in] `uiImageId`  
  Resim listesinden resim kimliği. Sekme denetimi bu görüntüyü yeni sekmesini simgesi olarak kullanır.  
   
- [in]`uiResTabLabel`  
+ [in] `uiResTabLabel`  
  Etiket için kaynak kimliği.  
   
- [in]`bDetachable`  
+ [in] `bDetachable`  
  Yeni sekmede çıkarılabilir olup olmadığını belirleyen bir Boolean parametresiyle.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `pTabWnd` türetilmedi bir nesneye işaret [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) ve `bDetachable` olan `TRUE`, framework otomatik olarak için bir sarmalayıcı oluşturur `pTabWnd` nesnesi. Sarmalayıcı yapar `pTabWnd` nesne çıkarılabilir. Varsayılan olarak, kapsayıcı örneği olan [CDockablePaneAdapter sınıfı](../../mfc/reference/cdockablepaneadapter-class.md). Varsayılan sarmalayıcı tarafından sunulan işlevselliği kabul edilebilir değilse kullanmak [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc) yöntemi farklı bir sarmalayıcı belirtin.  
   
-##  <a name="applyrestoredtabinfo"></a>CMFCBaseTabCtrl::ApplyRestoredTabInfo  
+##  <a name="applyrestoredtabinfo"></a>  CMFCBaseTabCtrl::ApplyRestoredTabInfo  
 
   
 ```  
@@ -493,11 +488,11 @@ virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bUseTabIndexes`  
+ [in] `bUseTabIndexes`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="autodestroywindow"></a>CMFCBaseTabCtrl::AutoDestroyWindow  
+##  <a name="autodestroywindow"></a>  CMFCBaseTabCtrl::AutoDestroyWindow  
 
   
 ```  
@@ -505,11 +500,11 @@ void AutoDestroyWindow(BOOL bAutoDestroy = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bAutoDestroy`  
+ [in] `bAutoDestroy`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="calcrectedit"></a>CMFCBaseTabCtrl::CalcRectEdit  
+##  <a name="calcrectedit"></a>  CMFCBaseTabCtrl::CalcRectEdit  
 
   
 ```  
@@ -517,11 +512,11 @@ virtual void CalcRectEdit(CRect& rectEdit);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`rectEdit`  
+ [in] `rectEdit`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="cleanup"></a>CMFCBaseTabCtrl::CleanUp  
+##  <a name="cleanup"></a>  CMFCBaseTabCtrl::CleanUp  
 
   
 ```  
@@ -530,7 +525,7 @@ virtual void CleanUp();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="clearimagelist"></a>CMFCBaseTabCtrl::ClearImageList  
+##  <a name="clearimagelist"></a>  CMFCBaseTabCtrl::ClearImageList  
 
   
 ```  
@@ -539,7 +534,7 @@ virtual void ClearImageList();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="createwrapper"></a>CMFCBaseTabCtrl::CreateWrapper  
+##  <a name="createwrapper"></a>  CMFCBaseTabCtrl::CreateWrapper  
  Türetilen bir çerçeve penceresi için bir sarmalayıcı oluşturur [CWnd sınıfı](../../mfc/reference/cwnd-class.md) türetilmedi ancak [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md).  
   
 ```  
@@ -550,13 +545,13 @@ virtual CWnd* CreateWrapper(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pWndToWrap`  
+ [in] `pWndToWrap`  
  Kaydırılan çerçeve penceresi için bir işaretçi.  
   
- [in]`lpszTabLabel`  
+ [in] `lpszTabLabel`  
  Pencerenin etiketini içeren bir dize.  
   
- [in]`bDetachable`  
+ [in] `bDetachable`  
  Pencere çıkarılabilir olup olmadığını belirten bir Boole parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -569,7 +564,7 @@ virtual CWnd* CreateWrapper(
   
  Varsa `pWndToWrap` türetildiği `CDockablePane`, bu yöntem bir sarmalayıcı oluşturmaz. Bunun yerine, onu başarısız dönün ve `pWndToWrap`.  
   
-##  <a name="detachtab"></a>CMFCBaseTabCtrl::DetachTab  
+##  <a name="detachtab"></a>  CMFCBaseTabCtrl::DetachTab  
  Framework sekme denetimi sekmesinden ayırmak için bu yöntemi çağırır.  
   
 ```  
@@ -580,13 +575,13 @@ virtual BOOL DetachTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`dockMethod`  
+ [in] `dockMethod`  
  Tarafından sağlanan numaralandırılmış veri türü [CBasePane sınıfı](../../mfc/reference/cbasepane-class.md). Bu veri türü sekmesini ayırmak için kullanılan yöntemi belirtir.  
   
- [in]`nTabNum`  
+ [in] `nTabNum`  
  Ayrılmış olması için sekmesini sıfır tabanlı dizini.  
   
- [in]`bHide`  
+ [in] `bHide`  
  Framework ayrılmış sekmesini gizle olup olmadığını gösteren bir Boole parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -595,7 +590,7 @@ virtual BOOL DetachTab(
 ### <a name="remarks"></a>Açıklamalar  
  Sekme belirtilen `nTabNum` olmayan-çıkarılabilir, olduğundan bu işlev başarısız olur ve verir `FALSE`.  
   
-##  <a name="enableactivatelastactive"></a>CMFCBaseTabCtrl::EnableActivateLastActive  
+##  <a name="enableactivatelastactive"></a>  CMFCBaseTabCtrl::EnableActivateLastActive  
 
   
 ```  
@@ -603,11 +598,11 @@ void EnableActivateLastActive(BOOL bLastActive = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bLastActive`  
+ [in] `bLastActive`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="enableautocolor"></a>CMFCBaseTabCtrl::EnableAutoColor  
+##  <a name="enableautocolor"></a>  CMFCBaseTabCtrl::EnableAutoColor  
  Çerçeve bir sekme çizerken otomatik arka plan renklerini kullanıp kullanmadığını denetler.  
   
 ```  
@@ -615,7 +610,7 @@ void EnableAutoColor(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bEnable`  
+ [in] `bEnable`  
  Framework otomatik renkleri kullanıp kullanmadığını belirler Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -623,7 +618,7 @@ void EnableAutoColor(BOOL bEnable = TRUE);
   
  Varsayılan olarak, otomatik renkleri kitaplığı tanımlı renklerin tarafından belirlenir. Renkleri özel bir dizi çağırarak sağlayabilir [CMFCBaseTabCtrl::SetAutoColors](#setautocolors).  
   
-##  <a name="enablecustomtooltips"></a>CMFCBaseTabCtrl::EnableCustomToolTips  
+##  <a name="enablecustomtooltips"></a>  CMFCBaseTabCtrl::EnableCustomToolTips  
  Sekme denetimi için özel araç ipuçları sağlar.  
   
 ```  
@@ -631,16 +626,16 @@ BOOL EnableCustomToolTips(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bEnable`  
+ [in] `bEnable`  
  Özel araç ipuçları kullanılıp kullanılmayacağını belirler bir Boole değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Özel araç ipuçları etkinleştirilirse, sekme denetimi gönderir `AFX_WM_ON_GET_TAB_TOOLTIP` ana çerçeve ileti. Özel araç ipuçları uygulamanızda desteklemek istiyorsanız, ana çerçeve penceresi bu yöntem işler ve özel araç ipucu metni belirtin. Özel araç ipucu metni sağlama hakkında daha fazla bilgi için bkz: [CMFCTabToolTipInfo yapısı](../../mfc/reference/cmfctabtooltipinfo-structure.md).  
   
-##  <a name="enableinplaceedit"></a>CMFCBaseTabCtrl::EnableInPlaceEdit  
+##  <a name="enableinplaceedit"></a>  CMFCBaseTabCtrl::EnableInPlaceEdit  
  Kullanıcı tarafından sekme etiketleri düzenlemeyi etkinleştirir doğrudan.  
   
 ```  
@@ -648,17 +643,17 @@ virtual void EnableInPlaceEdit(BOOL bEnable) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bEnable`  
+ [in] `bEnable`  
  Doğrudan sekmesini etiketlerini düzenleme etkinleştirilip etkinleştirilmeyeceğini belirtir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, doğrudan sekmesini etiketlerini düzenleme sekme denetimleri için devre dışıdır.  
   
- Sekme denetimi sekmelerinde alt kümeleri için doğrudan düzenleme etkinleştirebilirsiniz. Bunu yapmak için yöntemini geçersiz kılın `CMFCBaseTabCtrl::StartRenameTab`. `StartRenameTab`doğrudan sekmesini etiketlerini düzenleme destekleyen tüm sekmeler için sıfır olmayan bir değer döndürmelidir.  
+ Sekme denetimi sekmelerinde alt kümeleri için doğrudan düzenleme etkinleştirebilirsiniz. Bunu yapmak için yöntemini geçersiz kılın `CMFCBaseTabCtrl::StartRenameTab`. `StartRenameTab` doğrudan sekmesini etiketlerini düzenleme destekleyen tüm sekmeler için sıfır olmayan bir değer döndürmelidir.  
   
  İçinde `CMFCBaseTabCtrl Class`, bu yöntem saf sanal işlevi olup hiçbir uygulama içerir. Öğesinden bir sınıf türetirseniz `CMFCBaseTabCtrl`, bu işlev uygulamanız gerekir.  
   
-##  <a name="enabletabdetach"></a>CMFCBaseTabCtrl::EnableTabDetach  
+##  <a name="enabletabdetach"></a>  CMFCBaseTabCtrl::EnableTabDetach  
  Çıkarılabilir sekmeleri sağlar.  
   
 ```  
@@ -668,16 +663,16 @@ virtual BOOL EnableTabDetach(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
- [in]`bEnable`  
+ [in] `bEnable`  
  Görüntüleyip görüntülemeyeceğini sekmesini çıkarılabilir belirten bir Boole değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
   
-##  <a name="enabletabswap"></a>CMFCBaseTabCtrl::EnableTabSwap  
+##  <a name="enabletabswap"></a>  CMFCBaseTabCtrl::EnableTabSwap  
  Fare kullanmada sekme sırasını değiştirmek kullanıcının sağlar.  
   
 ```  
@@ -685,13 +680,13 @@ void EnableTabSwap(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bEnable`  
+ [in] `bEnable`  
  Sekmesini takas etkinleştirilip etkinleştirilmeyeceğini gösteren bir Boole değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Sekme takas etkinleştirildiğinde, kullanıcı bir sekme sürükleyin ve sekme denetimi içindeki göreli konumunu değiştirin.  
   
-##  <a name="ensurevisible"></a>CMFCBaseTabCtrl::EnsureVisible  
+##  <a name="ensurevisible"></a>  CMFCBaseTabCtrl::EnsureVisible  
  Belirtilen sekme görünür olana kadar sekmeleri kayar.  
   
 ```  
@@ -699,7 +694,7 @@ virtual BOOL EnsureVisible(int iTab);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -710,7 +705,7 @@ virtual BOOL EnsureVisible(int iTab);
   
  Varsayılan olarak, bu yöntem tarafından desteklenmiyor `CMFCBaseTabCtrl Class`. Bu işlev, türetilen özel bir sınıf içinde uygulamalıdır `CMFCBaseTabCtrl` özel sekme denetleyen sekmesini kaydırma destekliyorsa. Bu yöntem tarafından desteklenen [CMFCTabCtrl sınıfı](../../mfc/reference/cmfctabctrl-class.md).  
   
-##  <a name="enterdragmode"></a>CMFCBaseTabCtrl::EnterDragMode  
+##  <a name="enterdragmode"></a>  CMFCBaseTabCtrl::EnterDragMode  
 
   
 ```  
@@ -719,7 +714,7 @@ void EnterDragMode();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="findtargetwnd"></a>CMFCBaseTabCtrl::FindTargetWnd  
+##  <a name="findtargetwnd"></a>  CMFCBaseTabCtrl::FindTargetWnd  
  Belirtilen bir nokta içeren bölme tanımlar.  
   
 ```  
@@ -727,7 +722,7 @@ virtual CWnd* FindTargetWnd(const CPoint& pt) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pt`  
+ [in] `pt`  
  İstemci alanı kullanılarak tanımlanmış bir noktası koordinatları [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -736,7 +731,7 @@ virtual CWnd* FindTargetWnd(const CPoint& pt) = 0;
 ### <a name="remarks"></a>Açıklamalar  
  İçinde `CMFCBaseTabCtrl` sınıfı, bu yöntem, saf sanal işlevi: öğesinden bir sınıf türetirseniz uygulamalıdır `CMFCBaseTabCtrl`.  
   
-##  <a name="firechangeactivetab"></a>CMFCBaseTabCtrl::FireChangeActiveTab  
+##  <a name="firechangeactivetab"></a>  CMFCBaseTabCtrl::FireChangeActiveTab  
 
   
 ```  
@@ -744,11 +739,11 @@ virtual void FireChangeActiveTab(int nNewTab);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nNewTab`  
+ [in] `nNewTab`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="firechangingactivetab"></a>CMFCBaseTabCtrl::FireChangingActiveTab  
+##  <a name="firechangingactivetab"></a>  CMFCBaseTabCtrl::FireChangingActiveTab  
 
   
 ```  
@@ -756,13 +751,13 @@ virtual BOOL FireChangingActiveTab(int nNewTab);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nNewTab`  
+ [in] `nNewTab`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getactivetab"></a>CMFCBaseTabCtrl::GetActiveTab  
+##  <a name="getactivetab"></a>  CMFCBaseTabCtrl::GetActiveTab  
  Şu anda etkin sekme dizinini alır.  
   
 ```  
@@ -772,7 +767,7 @@ virtual int GetActiveTab() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Etkin sekme sıfır tabanlı dizini; Hiçbir etkin sekme ise -1.  
   
-##  <a name="getactivetabcolor"></a>CMFCBaseTabCtrl::GetActiveTabColor  
+##  <a name="getactivetabcolor"></a>  CMFCBaseTabCtrl::GetActiveTabColor  
  Şu anda etkin sekme arka plan rengini alır.  
   
 ```  
@@ -785,7 +780,7 @@ virtual COLORREF GetActiveTabColor() const;
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak etkin sekme arka plan rengini tür `COLOR_WINDOW`. Etkin sekme arka plan rengini yöntemi kullanarak değiştirebileceğiniz [CMFCBaseTabCtrl::SetActiveTabColor](#setactivetabcolor).  
   
-##  <a name="getactivetabtextcolor"></a>CMFCBaseTabCtrl::GetActiveTabTextColor  
+##  <a name="getactivetabtextcolor"></a>  CMFCBaseTabCtrl::GetActiveTabTextColor  
  Etkin sekme metin rengini alır.  
   
 ```  
@@ -798,7 +793,7 @@ virtual COLORREF GetActiveTabTextColor() const;
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak etkin sekmeler metin rengini tür `COLOR_WINDOWTEXT`. Yöntemiyle metnin rengini değiştirmek [CMFCBaseTabCtrl::SetActiveTabTextColor](#setactivetabtextcolor).  
   
-##  <a name="getactivewnd"></a>CMFCBaseTabCtrl::GetActiveWnd  
+##  <a name="getactivewnd"></a>  CMFCBaseTabCtrl::GetActiveWnd  
  Şu anda etkin sekmesi penceresi için bir işaretçi alır.  
   
 ```  
@@ -808,7 +803,7 @@ virtual CWnd* GetActiveWnd() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir pencere için bir işaretçi.  
   
-##  <a name="getautocolors"></a>CMFCBaseTabCtrl::GetAutoColors  
+##  <a name="getautocolors"></a>  CMFCBaseTabCtrl::GetAutoColors  
  Otomatik renklendirme için kullanılan renkleri dizisini alır.  
   
 ```  
@@ -821,7 +816,7 @@ const CArray<COLORREF,COLORREF>& GetAutoColors() const;
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, kitaplık tanımlı renklerin renk dizisi framework başlatır. Yöntemini çağırarak renkleri özel bir dizi sağlayabilir [CMFCBaseTabCtrl::SetAutoColors](#setautocolors).  
   
-##  <a name="getfirstvisibletab"></a>CMFCBaseTabCtrl::GetFirstVisibleTab  
+##  <a name="getfirstvisibletab"></a>  CMFCBaseTabCtrl::GetFirstVisibleTab  
  İlk görünür sekme için bir işaretçi alır.  
   
 ```  
@@ -834,10 +829,10 @@ virtual CWnd* GetFirstVisibleTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out]`iTabNum`  
+ [out] `iTabNum`  
  Tamsayı referansı. Bu yöntem, bu parametre için ilk görünür sekme sıfır tabanlı dizini yazar.  
   
- [in]`iStartFrom`  
+ [in] `iStartFrom`  
  Denetlenecek ilk sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -848,7 +843,7 @@ virtual CWnd* GetFirstVisibleTab(
   
  Varsa `iStartFrom` sekme denetimindeki sekmeleri sayısına eşit veya bundan büyük olan `GetFirstVisibleTab` otomatik olarak başarısız olur.  
   
-##  <a name="getfirstvisibletabnum"></a>CMFCBaseTabCtrl::GetFirstVisibleTabNum  
+##  <a name="getfirstvisibletabnum"></a>  CMFCBaseTabCtrl::GetFirstVisibleTabNum  
 
   
 ```  
@@ -859,7 +854,7 @@ virtual int GetFirstVisibleTabNum() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="gethighlightedtab"></a>CMFCBaseTabCtrl::GetHighlightedTab  
+##  <a name="gethighlightedtab"></a>  CMFCBaseTabCtrl::GetHighlightedTab  
  Şu anda vurgulanan sekmesini dizinini alır.  
   
 ```  
@@ -869,7 +864,7 @@ int GetHighlightedTab() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Vurgulanan sekmesini sıfır tabanlı dizini.  
   
-##  <a name="getimagelist"></a>CMFCBaseTabCtrl::GetImageList  
+##  <a name="getimagelist"></a>  CMFCBaseTabCtrl::GetImageList  
 
   
 ```  
@@ -880,7 +875,7 @@ virtual const CImageList* GetImageList() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getimagesize"></a>CMFCBaseTabCtrl::GetImageSize  
+##  <a name="getimagesize"></a>  CMFCBaseTabCtrl::GetImageSize  
 
   
 ```  
@@ -891,7 +886,7 @@ virtual CSize GetImageSize() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getlastvisibletab"></a>CMFCBaseTabCtrl::GetLastVisibleTab  
+##  <a name="getlastvisibletab"></a>  CMFCBaseTabCtrl::GetLastVisibleTab  
 
   
 ```  
@@ -899,13 +894,13 @@ virtual CWnd* GetLastVisibleTab(int& iTabNum);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTabNum`  
+ [in] `iTabNum`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getlocation"></a>CMFCBaseTabCtrl::GetLocation  
+##  <a name="getlocation"></a>  CMFCBaseTabCtrl::GetLocation  
  Sekme denetimi sekme alanı kısmı konumunu alır.  
   
 ```  
@@ -918,7 +913,7 @@ Location GetLocation() const;
 ### <a name="remarks"></a>Açıklamalar  
  Olası sekme alanı konumu değerler `LOCATION_BOTTOM` ve `LOCATION_TOP`.  
   
-##  <a name="getmaxwindowsize"></a>CMFCBaseTabCtrl::GetMaxWindowSize  
+##  <a name="getmaxwindowsize"></a>  CMFCBaseTabCtrl::GetMaxWindowSize  
 
   
 ```  
@@ -929,7 +924,7 @@ virtual CSize GetMaxWindowSize() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="gettabarea"></a>CMFCBaseTabCtrl::GetTabArea  
+##  <a name="gettabarea"></a>  CMFCBaseTabCtrl::GetTabArea  
  Boyut ve sekme denetimi sekme alanı konumunu alır.  
   
 ```  
@@ -939,18 +934,18 @@ virtual void GetTabArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`rectTabAreaTop`  
- Bir başvuru bir `CRect` nesnesi. `GetTabArea`Bu nesne, boyutunu ve konumunu üst sekme alanı depolamak için kullanır.  
+ [in] `rectTabAreaTop`  
+ Bir başvuru bir `CRect` nesnesi. `GetTabArea` Bu nesne, boyutunu ve konumunu üst sekme alanı depolamak için kullanır.  
   
- [in]`rectTabAreaBottom`  
- Bir başvuru bir `CRect` nesnesi. `GetTabArea`Bu nesne, boyutunu ve konumunu alt sekme alanı depolamak için kullanır.  
+ [in] `rectTabAreaBottom`  
+ Bir başvuru bir `CRect` nesnesi. `GetTabArea` Bu nesne, boyutunu ve konumunu alt sekme alanı depolamak için kullanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Sonra `GetTabArea` döndürür, `CRect` parametreleri boyutu ve sekme denetimi istemci koordinatları sekme alanı konumunu içerir. Hiçbir sekme alanı üst veya alt kısmındaki sekme denetimi ise `rectTabAreaTop` veya `rectTabAreaBottom` boştur.  
   
  İçinde `CMFCBaseTabCtrl Class`, bu yöntem saf sanal işlevi olup hiçbir uygulama içerir. Öğesinden bir sınıf türetirseniz `CMFCBaseTabCtrl`, bu işlev uygulamanız gerekir.  
   
-##  <a name="gettabbkcolor"></a>CMFCBaseTabCtrl::GetTabBkColor  
+##  <a name="gettabbkcolor"></a>  CMFCBaseTabCtrl::GetTabBkColor  
  Belirtilen sekme arka plan rengini alır.  
   
 ```  
@@ -958,13 +953,13 @@ virtual COLORREF GetTabBkColor(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) belirtilen sekme arka plan rengini gösteren değeri; -1 IF `iTab` aralık dışında.  
   
-##  <a name="gettabbordersize"></a>CMFCBaseTabCtrl::GetTabBorderSize  
+##  <a name="gettabbordersize"></a>  CMFCBaseTabCtrl::GetTabBorderSize  
  Sekme denetimi sekmesini kenarlıkları boyutunu alır.  
   
 ```  
@@ -977,7 +972,7 @@ virtual int GetTabBorderSize() const;
 ### <a name="remarks"></a>Açıklamalar  
  Sekme kenarlığı için varsayılan boyutunu üç pikseldir. Bu sınır boyutu yöntemiyle değiştirebilirsiniz [CMFCBaseTabCtrl::SetTabBorderSize](#settabbordersize).  
   
-##  <a name="gettabbyid"></a>CMFCBaseTabCtrl::GetTabByID  
+##  <a name="gettabbyid"></a>  CMFCBaseTabCtrl::GetTabByID  
  Sekme kimliğine göre bir sekme dizinini alır.  
   
 ```  
@@ -985,7 +980,7 @@ virtual int GetTabByID(int id) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`id`  
+ [in] `id`  
  Sekme kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -994,7 +989,7 @@ virtual int GetTabByID(int id) const;
 ### <a name="remarks"></a>Açıklamalar  
  Sekme denetimine sekmeler eklendiğinde sekmesini kimlikleri otomatik olarak atanır.  
   
-##  <a name="gettabclosebutton"></a>CMFCBaseTabCtrl::GetTabCloseButton  
+##  <a name="gettabclosebutton"></a>  CMFCBaseTabCtrl::GetTabCloseButton  
 
   
 ```  
@@ -1005,7 +1000,7 @@ CRect GetTabCloseButton() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="gettabfromhwnd"></a>CMFCBaseTabCtrl::GetTabFromHwnd  
+##  <a name="gettabfromhwnd"></a>  CMFCBaseTabCtrl::GetTabFromHwnd  
  Belirtilen HWND nesne içeren bir sekme dizinini alır.  
   
 ```  
@@ -1013,13 +1008,13 @@ virtual int GetTabFromHwnd(HWND hwnd) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hwnd`  
+ [in] `hwnd`  
  Bir pencere için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sekmenin başarılıysa sıfır tabanlı dizini; Sekme içeriyorsa, -1 `hwnd`.  
   
-##  <a name="gettabfrompoint"></a>CMFCBaseTabCtrl::GetTabFromPoint  
+##  <a name="gettabfrompoint"></a>  CMFCBaseTabCtrl::GetTabFromPoint  
  Belirtilen bir nokta içeren sekmeyi alır.  
   
 ```  
@@ -1027,13 +1022,13 @@ virtual int GetTabFromPoint(CPoint& pt) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pt`  
+ [in] `pt`  
  Sekme denetimi bir noktası istemci koordinatları.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İçeren sekmeyi dizinini `pt`; sekme içeriyorsa, -1 `pt`.  
   
-##  <a name="gettabfullwidth"></a>CMFCBaseTabCtrl::GetTabFullWidth  
+##  <a name="gettabfullwidth"></a>  CMFCBaseTabCtrl::GetTabFullWidth  
 
   
 ```  
@@ -1041,13 +1036,13 @@ virtual int GetTabFullWidth(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="gettabhicon"></a>CMFCBaseTabCtrl::GetTabHicon  
+##  <a name="gettabhicon"></a>  CMFCBaseTabCtrl::GetTabHicon  
  Belirtilen sekme ile ilişkili HICON döndürür.  
   
 ```  
@@ -1055,13 +1050,13 @@ virtual HICON GetTabHicon(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme için sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa bir sekme etiketle ilişkilendirilmiş HICON; `NULL` hiçbir HICON ise veya yöntem başarısız olursa.  
   
-##  <a name="gettabicon"></a>CMFCBaseTabCtrl::GetTabIcon  
+##  <a name="gettabicon"></a>  CMFCBaseTabCtrl::GetTabIcon  
  Belirtilen sekme ile ilişkili simgeyi alır.  
   
 ```  
@@ -1069,7 +1064,7 @@ virtual UINT GetTabIcon(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1078,7 +1073,7 @@ virtual UINT GetTabIcon(int iTab) const;
 ### <a name="remarks"></a>Açıklamalar  
  [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) nesnesi simgeleri dahili olarak depolar [Cımagelist](../../mfc/reference/cimagelist-class.md) nesnesi.  
   
-##  <a name="gettabid"></a>CMFCBaseTabCtrl::GetTabID  
+##  <a name="gettabid"></a>  CMFCBaseTabCtrl::GetTabID  
  Sekme dizini tarafından belirtilen bir sekme Kimliğini alır.  
   
 ```  
@@ -1086,13 +1081,13 @@ int GetTabID(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sekme veya -1 olursa kimliği `iTab` aralık dışında.  
   
-##  <a name="gettablabel"></a>CMFCBaseTabCtrl::GetTabLabel  
+##  <a name="gettablabel"></a>  CMFCBaseTabCtrl::GetTabLabel  
  Sekme etiketi metni alır.  
   
 ```  
@@ -1102,21 +1097,21 @@ virtual BOOL GetTabLabel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
- [out]`strLabel`  
+ [out] `strLabel`  
  Bir başvuru bir `CString` nesnesi. Bu yöntem, bu parametrede sekmenin etiketi depolar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; `FALSE` Aksi takdirde.  
+ `TRUE` başarılı olursa; `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem başarısız olursa dizini `iTab` geçersiz.  
   
  Sekmesini kullanarak oluşturduğunuzda bir sekme etiketi ayarlamak [CMFCBaseTabCtrl::AddTab](#addtab). Ayrıca etiketi oluşturulduktan sonra yöntemiyle değiştirebilirsiniz [CMFCBaseTabCtrl::SetTabLabel](#settablabel).  
   
-##  <a name="gettabrect"></a>CMFCBaseTabCtrl::GetTabRect  
+##  <a name="gettabrect"></a>  CMFCBaseTabCtrl::GetTabRect  
  Belirtilen sekmenin konumunu ve boyutunu alır.  
   
 ```  
@@ -1126,16 +1121,16 @@ virtual BOOL GetTabRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
- [out]`rect`  
+ [out] `rect`  
  Bir başvuru bir `CRect` nesnesi. Bu yöntem, bu parametrede sekmenin konumunu ve boyutunu depolar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; `FALSE` sekme dizini geçersizse.  
+ `TRUE` başarılı olursa; `FALSE` sekme dizini geçersizse.  
   
-##  <a name="gettabsheight"></a>CMFCBaseTabCtrl::GetTabsHeight  
+##  <a name="gettabsheight"></a>  CMFCBaseTabCtrl::GetTabsHeight  
 
   
 ```  
@@ -1146,7 +1141,7 @@ virtual int GetTabsHeight() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="gettabsnum"></a>CMFCBaseTabCtrl::GetTabsNum  
+##  <a name="gettabsnum"></a>  CMFCBaseTabCtrl::GetTabsNum  
  Sekme denetimine sekmeler sayısını alır.  
   
 ```  
@@ -1156,7 +1151,7 @@ virtual int GetTabsNum() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Sekme denetimine sekmeler sayısı.  
   
-##  <a name="gettabsrect"></a>CMFCBaseTabCtrl::GetTabsRect  
+##  <a name="gettabsrect"></a>  CMFCBaseTabCtrl::GetTabsRect  
 
   
 ```  
@@ -1164,11 +1159,11 @@ virtual void GetTabsRect(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`rect`  
+ [in] `rect`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="gettabtextcolor"></a>CMFCBaseTabCtrl::GetTabTextColor  
+##  <a name="gettabtextcolor"></a>  CMFCBaseTabCtrl::GetTabTextColor  
  Belirtilen sekme metin rengini alır.  
   
 ```  
@@ -1176,13 +1171,13 @@ virtual COLORREF GetTabTextColor(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) belirtilen sekme metin rengini gösterir parametre; -1 IF `iTab` aralık dışında.  
   
-##  <a name="gettabwnd"></a>CMFCBaseTabCtrl::GetTabWnd  
+##  <a name="gettabwnd"></a>  CMFCBaseTabCtrl::GetTabWnd  
  Belirtilen sekmesinde bulunan bölmesine işaretçi döndürür.  
   
 ```  
@@ -1190,18 +1185,18 @@ virtual CWnd* GetTabWnd(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi [CWnd](../../mfc/reference/cwnd-class.md) sekmesinde bulunan nesne, `iTab` belirtir. `NULL`varsa `iTab` geçersiz.  
+ Bir işaretçi [CWnd](../../mfc/reference/cwnd-class.md) sekmesinde bulunan nesne, `iTab` belirtir. `NULL` varsa `iTab` geçersiz.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Döndürülen nesne ya da çağrıldığında, eklenen uygulama bilgisayardır [CMFCBaseTabCtrl::AddTab](#addtab) veya [CMFCBaseTabCtrl::InsertTab](#inserttab).  
   
  Sekme nesnesinde bir sarmalayıcı varsa, bu yöntem nesne için sarmalayıcı döndürür. Sarmalayıcılar hakkında daha fazla bilgi için bkz: [CMFCBaseTabCtrl::CreateWrapper](#createwrapper). Sarmalayıcı olmadan doğrudan nesne için bir işaretçi erişmek isterseniz, yöntem kullanmak [CMFCBaseTabCtrl::GetTabWndNoWrapper](#gettabwndnowrapper).  
   
-##  <a name="gettabwndnowrapper"></a>CMFCBaseTabCtrl::GetTabWndNoWrapper  
+##  <a name="gettabwndnowrapper"></a>  CMFCBaseTabCtrl::GetTabWndNoWrapper  
  Denetimi sarmalayıcı olsa bile bir sekmesinde bulunan denetlemek için bir işaretçi döndürür.  
   
 ```  
@@ -1209,18 +1204,18 @@ virtual CWnd* GetTabWndNoWrapper(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi [CWnd](../../mfc/reference/cwnd-class.md) belirtilen sekmesinde; bulunduğu nesnesi `NULL` varsa `iTab` geçersiz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem için doğrudan bir işaretçi alır `CWnd` her iki yöntemi kullanarak eklenen nesne [CMFCBaseTabCtrl::AddTab](#addtab) veya [CMFCBaseTabCtrl::InsertTab](#inserttab). `GetTabWndNoWrapper`bir işaretçi eklenen alacak `CWnd`framework nesne için sarmalayıcı eklenen olsa bile. Sarmalayıcılar hakkında daha fazla bilgi ve [CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md), bkz: [CMFCBaseTabCtrl::CreateWrapper](#createwrapper).  
+ Bu yöntem için doğrudan bir işaretçi alır `CWnd` her iki yöntemi kullanarak eklenen nesne [CMFCBaseTabCtrl::AddTab](#addtab) veya [CMFCBaseTabCtrl::InsertTab](#inserttab). `GetTabWndNoWrapper` bir işaretçi eklenen alacak `CWnd`framework nesne için sarmalayıcı eklenen olsa bile. Sarmalayıcılar hakkında daha fazla bilgi ve [CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md), bkz: [CMFCBaseTabCtrl::CreateWrapper](#createwrapper).  
   
  Yöntem kullanmak [CMFCBaseTabCtrl::GetTabWnd](#gettabwnd) sarmalayıcı sınıfı yoksayacak şekilde istemiyorsanız.  
   
-##  <a name="gettooltipctrl"></a>CMFCBaseTabCtrl::GetToolTipCtrl  
+##  <a name="gettooltipctrl"></a>  CMFCBaseTabCtrl::GetToolTipCtrl  
  Araç İpucu contorl başvuru alır.  
   
 ```  
@@ -1230,7 +1225,7 @@ CToolTipCtrl& GetToolTipCtrl() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Tooltip denetim referansı.  
   
-##  <a name="getvisibletabsnum"></a>CMFCBaseTabCtrl::GetVisibleTabsNum  
+##  <a name="getvisibletabsnum"></a>  CMFCBaseTabCtrl::GetVisibleTabsNum  
  Şu anda görünür sekmeleri sayısını alır.  
   
 ```  
@@ -1240,7 +1235,7 @@ virtual int GetVisibleTabsNum() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Görünür sekme sayısı.  
   
-##  <a name="hasimage"></a>CMFCBaseTabCtrl::HasImage  
+##  <a name="hasimage"></a>  CMFCBaseTabCtrl::HasImage  
 
   
 ```  
@@ -1248,13 +1243,13 @@ virtual BOOL HasImage(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="hidesingletab"></a>CMFCBaseTabCtrl::HideSingleTab  
+##  <a name="hidesingletab"></a>  CMFCBaseTabCtrl::HideSingleTab  
  Sekme denetimine sekmeler bir görünür sekme olduğunda gizleme seçeneğini ayarlar.  
   
 ```  
@@ -1262,13 +1257,13 @@ virtual void HideSingleTab(BOOL bHide = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bHide`  
+ [in] `bHide`  
  Tek sekmeler gizleme etkinleştirilip etkinleştirilmeyeceğini belirten bir Boole değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Uygulamanızın tek sekmeler gizlemek için yapılandırıldığında, ikinci bir sekme sekme denetimi eklendiğinde framework otomatik olarak sekmeleri görüntüler.  
   
-##  <a name="inserttab"></a>CMFCBaseTabCtrl::InsertTab  
+##  <a name="inserttab"></a>  CMFCBaseTabCtrl::InsertTab  
  Sekme denetimine bir sekmesi ekler.  
   
 ```  
@@ -1289,28 +1284,28 @@ virtual void InsertTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pNewWnd`  
+ [in] `pNewWnd`  
  Bu yöntem yeni bir sekme ekler penceresi için bir işaretçi.  
   
- [in]`lpszTabLabel`  
+ [in] `lpszTabLabel`  
  Yeni sekmede etiketini içeren bir dize.  
   
- [in]`nInsertAt`  
+ [in] `nInsertAt`  
  Yeni sekmede sıfır tabanlı dizini.  
   
- [in]`uiImageId`  
+ [in] `uiImageId`  
  Resim listesinden resim kimliği. Sekme denetimi bu görüntüyü yeni sekmesini simgesi olarak kullanır.  
   
- [in]`bDetachable`  
+ [in] `bDetachable`  
  Yeni sekmede çıkarılabilir olup olmadığını belirleyen bir Boolean parametresiyle.  
   
- [in]`uiResTabLabel`  
+ [in] `uiResTabLabel`  
  Etiket için kaynak kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Nesne tarafından belirtilmişse `pNewWnd` türetilmedi [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) ve `bDetachable` parametresi `TRUE`, framework yeni sekmesi için özel bir sarmalayıcı oluşturur. Varsayılan olarak, kapsayıcı örneği olan [CDockablePaneAdapter sınıfı](../../mfc/reference/cdockablepaneadapter-class.md). Kullanım [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc) farklı sarmalayıcı sınıfı oluşturmak için yöntemi. Herhangi bir özel sarmalayıcı sınıfı türetilmiş gerekiyor `CDockablePaneAdapter`.  
   
-##  <a name="invalidatetab"></a>CMFCBaseTabCtrl::InvalidateTab  
+##  <a name="invalidatetab"></a>  CMFCBaseTabCtrl::InvalidateTab  
 
   
 ```  
@@ -1318,11 +1313,11 @@ void InvalidateTab(int iTab);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isactivetabclosebutton"></a>CMFCBaseTabCtrl::IsActiveTabCloseButton  
+##  <a name="isactivetabclosebutton"></a>  CMFCBaseTabCtrl::IsActiveTabCloseButton  
 
   
 ```  
@@ -1333,7 +1328,7 @@ virtual BOOL IsActiveTabCloseButton() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isautocolor"></a>CMFCBaseTabCtrl::IsAutoColor  
+##  <a name="isautocolor"></a>  CMFCBaseTabCtrl::IsAutoColor  
  Sekme denetimi autocolor modunda olup olmadığını belirler.  
   
 ```  
@@ -1341,12 +1336,12 @@ BOOL IsAutoColor() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`sekme denetimi autocolor modundaysa; `FALSE` Aksi takdirde.  
+ `TRUE` sekme denetimi autocolor modundaysa; `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Etkinleştirmek veya kullanarak autocolor modu devre dışı [CMFCBaseTabCtrl::EnableAutoColor](#enableautocolor) yöntemi.  
   
-##  <a name="isautodestroywindow"></a>CMFCBaseTabCtrl::IsAutoDestroyWindow  
+##  <a name="isautodestroywindow"></a>  CMFCBaseTabCtrl::IsAutoDestroyWindow  
 
   
 ```  
@@ -1357,7 +1352,7 @@ BOOL IsAutoDestroyWindow() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="iscolored"></a>CMFCBaseTabCtrl::IsColored  
+##  <a name="iscolored"></a>  CMFCBaseTabCtrl::IsColored  
 
   
 ```  
@@ -1368,7 +1363,7 @@ virtual BOOL IsColored() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isdialogcontrol"></a>CMFCBaseTabCtrl::IsDialogControl  
+##  <a name="isdialogcontrol"></a>  CMFCBaseTabCtrl::IsDialogControl  
 
   
 ```  
@@ -1379,7 +1374,7 @@ BOOL IsDialogControl() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isdrawnoprefix"></a>CMFCBaseTabCtrl::IsDrawNoPrefix  
+##  <a name="isdrawnoprefix"></a>  CMFCBaseTabCtrl::IsDrawNoPrefix  
 
   
 ```  
@@ -1390,7 +1385,7 @@ BOOL IsDrawNoPrefix() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isflatframe"></a>CMFCBaseTabCtrl::IsFlatFrame  
+##  <a name="isflatframe"></a>  CMFCBaseTabCtrl::IsFlatFrame  
  Sekme denetimi çerçeve düz bir stil veya 3B stili işlenip işlenmeyeceğini belirtir.  
   
 ```  
@@ -1398,14 +1393,14 @@ virtual BOOL IsFlatFrame() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`sekme denetimi çerçeve düz stilde işlenir `FALSE` Çerçeve 3B bir stil işlenmiş durumunda.  
+ `TRUE` sekme denetimi çerçeve düz stilde işlenir `FALSE` Çerçeve 3B bir stil işlenmiş durumunda.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [CMFCTabCtrl::SetFlatFrame](../../mfc/reference/cmfctabctrl-class.md#setflatframe) sekme denetimi çerçeve stilini değiştirmek için.  
   
  Outlook stili kullanmak sekme denetimleri ile düz çerçeveler işlenemiyor. Bu içerir [CMFCOutlookBarTabCtrl sınıfı](../../mfc/reference/cmfcoutlookbartabctrl-class.md) ve tüm sınıfları bu sınıftan türetilen.  
   
-##  <a name="isflattab"></a>CMFCBaseTabCtrl::IsFlatTab  
+##  <a name="isflattab"></a>  CMFCBaseTabCtrl::IsFlatTab  
 
   
 ```  
@@ -1416,7 +1411,7 @@ virtual BOOL IsFlatTab() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ishidesingletab"></a>CMFCBaseTabCtrl::IsHideSingleTab  
+##  <a name="ishidesingletab"></a>  CMFCBaseTabCtrl::IsHideSingleTab  
  Tek bir sekme ise sekme denetimi sekme etiketi gizler olup olmadığını belirler.  
   
 ```  
@@ -1424,12 +1419,12 @@ virtual BOOL IsHideSingleTab() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`bir sekme olduğunda sekme etiketi Sekme denetimini gizler Aksi takdirde `FALSE`.  
+ `TRUE` bir sekme olduğunda sekme etiketi Sekme denetimini gizler Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yöntem kullanmak [CMFCBaseTabCtrl::HideSingleTab](#hidesingletab) tek bir sekme olduğunda sekme etiketi gizleme etkinleştirmek için.  
   
-##  <a name="isiconadded"></a>CMFCBaseTabCtrl::IsIconAdded  
+##  <a name="isiconadded"></a>  CMFCBaseTabCtrl::IsIconAdded  
 
   
 ```  
@@ -1439,14 +1434,14 @@ BOOL IsIconAdded(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hIcon`  
- [in]`iIcon`  
+ [in] `hIcon`  
+ [in] `iIcon`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isinplaceedit"></a>CMFCBaseTabCtrl::IsInPlaceEdit  
+##  <a name="isinplaceedit"></a>  CMFCBaseTabCtrl::IsInPlaceEdit  
  Sekme denetimi sekme etiketleri dinamik olarak değiştirmek kullanıcının etkinleştirmek için yapılandırılmış olup olmadığını gösterir.  
   
 ```  
@@ -1459,7 +1454,7 @@ virtual BOOL IsInPlaceEdit() const;
 ### <a name="remarks"></a>Açıklamalar  
  Etkinleştirmek veya yöntemini çağırarak yerinde düzenleme devre dışı [CMFCBaseTabCtrl::EnableInPlaceEdit](#enableinplaceedit).  
   
-##  <a name="isleftrightrounded"></a>CMFCBaseTabCtrl::IsLeftRightRounded  
+##  <a name="isleftrightrounded"></a>  CMFCBaseTabCtrl::IsLeftRightRounded  
 
   
 ```  
@@ -1470,7 +1465,7 @@ virtual BOOL IsLeftRightRounded() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ismditab"></a>CMFCBaseTabCtrl::IsMDITab  
+##  <a name="ismditab"></a>  CMFCBaseTabCtrl::IsMDITab  
 
   
 ```  
@@ -1481,7 +1476,7 @@ BOOL IsMDITab() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isonenotestyle"></a>CMFCBaseTabCtrl::IsOneNoteStyle  
+##  <a name="isonenotestyle"></a>  CMFCBaseTabCtrl::IsOneNoteStyle  
  Microsoft OneNote stilde sekmeleri görüntülenip görüntülenmeyeceğini belirler.  
   
 ```  
@@ -1489,14 +1484,14 @@ virtual BOOL IsOneNoteStyle() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Microsoft OneNote stilde sekmeler görüntülenir Aksi takdirde `FALSE`.  
+ `TRUE` Microsoft OneNote stilde sekmeler görüntülenir Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yöntemi çağırma [CMDIFrameWndEx::EnableMDITabs](../../mfc/reference/cmdiframewndex-class.md#enablemditabs) Microsoft OneNote stili etkinleştirmek için. Ayrıca, örneği olduğunda bu stili etkinleştirebilirsiniz [CMFCTabCtrl sınıfı](../../mfc/reference/cmfctabctrl-class.md): yalnızca STYLE_3D_ONENOTE stili yönteme geçirin [CMFCTabCtrl::Create](../../mfc/reference/cmfctabctrl-class.md#create).  
   
  Varsayılan olarak, Microsoft OneNote stili türetilen özel bir sınıf desteklenmeyen `CMFCBaseTabCtrl Class`. Bununla birlikte, içinde desteklenir `CMFCTabCtrl` sınıfı.  
   
-##  <a name="isptintabarea"></a>CMFCBaseTabCtrl::IsPtInTabArea  
+##  <a name="isptintabarea"></a>  CMFCBaseTabCtrl::IsPtInTabArea  
  Bir noktayı sekme alanı içinde olup olmadığını belirler.  
   
 ```  
@@ -1504,7 +1499,7 @@ virtual BOOL IsPtInTabArea(CPoint point) const = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`point`  
+ [in] `point`  
  Test noktası.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1513,7 +1508,7 @@ virtual BOOL IsPtInTabArea(CPoint point) const = 0;
 ### <a name="remarks"></a>Açıklamalar  
  İçinde `CMFCBaseTabCtrl Class`, bu yöntem saf sanal işlevi olup hiçbir uygulama içerir. Öğesinden bir sınıf türetirseniz `CMFCBaseTabCtrl`, bu işlev uygulamanız gerekir.  
   
-##  <a name="istabclosebuttonhighlighted"></a>CMFCBaseTabCtrl::IsTabCloseButtonHighlighted  
+##  <a name="istabclosebuttonhighlighted"></a>  CMFCBaseTabCtrl::IsTabCloseButtonHighlighted  
 
   
 ```  
@@ -1524,7 +1519,7 @@ BOOL IsTabCloseButtonHighlighted() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="istabclosebuttonpressed"></a>CMFCBaseTabCtrl::IsTabCloseButtonPressed  
+##  <a name="istabclosebuttonpressed"></a>  CMFCBaseTabCtrl::IsTabCloseButtonPressed  
 
   
 ```  
@@ -1535,7 +1530,7 @@ BOOL IsTabCloseButtonPressed() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="istabdetachable"></a>CMFCBaseTabCtrl::IsTabDetachable  
+##  <a name="istabdetachable"></a>  CMFCBaseTabCtrl::IsTabDetachable  
  Sekme çıkarılabilir olup olmadığını belirler.  
   
 ```  
@@ -1543,16 +1538,16 @@ virtual BOOL IsTabDetachable(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Denetlemek üzere sekmesini sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Sekme çıkarılabilir ise; `FALSE` Aksi takdirde.  
+ `TRUE` Sekme çıkarılabilir ise; `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Sekme çıkarılabilir yapmak için yöntemini kullanın [CMFCBaseTabCtrl::EnableTabDetach](#enabletabdetach).  
   
-##  <a name="istabicononly"></a>CMFCBaseTabCtrl::IsTabIconOnly  
+##  <a name="istabicononly"></a>  CMFCBaseTabCtrl::IsTabIconOnly  
  Sekme etiketi yalnızca simgeler ve metin içerip içermediğini belirler.  
   
 ```  
@@ -1560,16 +1555,16 @@ virtual BOOL IsTabIconOnly(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Sekme etiketi yalnızca simgelerini varsa; `FALSE` Aksi takdirde.  
+ `TRUE` Sekme etiketi yalnızca simgelerini varsa; `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yalnızca simgeleri göstermek için uygulamanızda sekmeleri ayarlamak için yöntemi çağırın [CMFCBaseTabCtrl::SetTabIconOnly](#settabicononly).  
   
-##  <a name="istabswapenabled"></a>CMFCBaseTabCtrl::IsTabSwapEnabled  
+##  <a name="istabswapenabled"></a>  CMFCBaseTabCtrl::IsTabSwapEnabled  
  Sekme denetimi fareyi kullanarak sekmesini konumlarını değiştirmek kullanıcı izin verip vermeyeceğini belirler.  
   
 ```  
@@ -1582,7 +1577,7 @@ BOOL IsTabSwapEnabled() const;
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, kullanıcılar Sekme denetimine sekmeler sırasını değiştiremezsiniz. Kullanım [CMFCBaseTabCtrl::EnableTabSwap](#enabletabswap) bu işlevselliği etkinleştirmek için yöntemi.  
   
-##  <a name="istabvisible"></a>CMFCBaseTabCtrl::IsTabVisible  
+##  <a name="istabvisible"></a>  CMFCBaseTabCtrl::IsTabVisible  
  Belirtilen sekme görünür olup olmadığını gösterir.  
   
 ```  
@@ -1590,13 +1585,13 @@ virtual BOOL IsTabVisible(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Denetlemek üzere sekmesini sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen sekme görünür durumdaysa sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="isvs2005style"></a>CMFCBaseTabCtrl::IsVS2005Style  
+##  <a name="isvs2005style"></a>  CMFCBaseTabCtrl::IsVS2005Style  
 
   
 ```  
@@ -1607,8 +1602,8 @@ virtual BOOL IsVS2005Style() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="m_bactivatetabonrightclick"></a>CMFCBaseTabCtrl::m_bActivateTabOnRightClick  
- `m_bActivateTabOnRightClick`kullanıcı farenin sağ düğmesiyle kullanarak bir sekme etiketi tıklattığında sekmeleri odakta olup olmadığını belirler.  
+##  <a name="m_bactivatetabonrightclick"></a>  CMFCBaseTabCtrl::m_bActivateTabOnRightClick  
+ `m_bActivateTabOnRightClick` kullanıcı farenin sağ düğmesiyle kullanarak bir sekme etiketi tıklattığında sekmeleri odakta olup olmadığını belirler.  
   
 ```  
 BOOL m_bActivateTabOnRightClick;  
@@ -1617,8 +1612,8 @@ BOOL m_bActivateTabOnRightClick;
 ### <a name="remarks"></a>Açıklamalar  
  Bu veri üyesi için varsayılan değer `FALSE`.  
   
-##  <a name="m_bautodestroywindow"></a>CMFCBaseTabCtrl::m_bAutoDestroyWindow  
- `m_bAutoDestroyWindow`sekmeleri kaldırıldığında framework otomatik olarak nesneleri sekmelerde yok eder olup olmadığını belirler.  
+##  <a name="m_bautodestroywindow"></a>  CMFCBaseTabCtrl::m_bAutoDestroyWindow  
+ `m_bAutoDestroyWindow` sekmeleri kaldırıldığında framework otomatik olarak nesneleri sekmelerde yok eder olup olmadığını belirler.  
   
 ```  
 BOOL m_bAutoDestroyWindow;  
@@ -1627,7 +1622,7 @@ BOOL m_bAutoDestroyWindow;
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bu üye olduğu `FALSE`.  
   
-##  <a name="movetab"></a>CMFCBaseTabCtrl::MoveTab  
+##  <a name="movetab"></a>  CMFCBaseTabCtrl::MoveTab  
 
   
 ```  
@@ -1637,12 +1632,12 @@ virtual void MoveTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nSource`  
- [in]`nDest`  
+ [in] `nSource`  
+ [in] `nDest`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onchangetabs"></a>CMFCBaseTabCtrl::OnChangeTabs  
+##  <a name="onchangetabs"></a>  CMFCBaseTabCtrl::OnChangeTabs  
  Sekme bir sekmede sayısı değişiklikleri denetlediğinde framework bu yöntemi çağırır.  
   
 ```  
@@ -1652,7 +1647,7 @@ virtual void OnChangeTabs();
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bu yöntem hiçbir şey yapmaz. Sekme sekmesinde sayısı değişiklikleri denetlediğinde özel kod yürütmek için bu yöntemi geçersiz kılın.  
   
-##  <a name="ondrop"></a>CMFCBaseTabCtrl::OnDrop  
+##  <a name="ondrop"></a>  CMFCBaseTabCtrl::OnDrop  
 
   
 ```  
@@ -1663,15 +1658,15 @@ virtual BOOL OnDrop(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`COleDataObject*`  
- [in]`DROPEFFECT`  
- [in]`CPoint`  
+ [in] `COleDataObject*`  
+ [in] `DROPEFFECT`  
+ [in] `CPoint`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondragover"></a>CMFCBaseTabCtrl::OnDragOver  
+##  <a name="ondragover"></a>  CMFCBaseTabCtrl::OnDragOver  
 
   
 ```  
@@ -1682,15 +1677,15 @@ virtual DROPEFFECT OnDragOver(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`COleDataObject*`  
- [in]`DWORD`  
- [in]`CPoint`  
+ [in] `COleDataObject*`  
+ [in] `DWORD`  
+ [in] `CPoint`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondragleave"></a>CMFCBaseTabCtrl::OnDragLeave  
+##  <a name="ondragleave"></a>  CMFCBaseTabCtrl::OnDragLeave  
 
   
 ```  
@@ -1699,7 +1694,7 @@ virtual void OnDragLeave();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondragenter"></a>CMFCBaseTabCtrl::OnDragEnter  
+##  <a name="ondragenter"></a>  CMFCBaseTabCtrl::OnDragEnter  
 
   
 ```  
@@ -1710,15 +1705,15 @@ virtual DROPEFFECT OnDragEnter(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`COleDataObject*`  
- [in]`DWORD`  
- [in]`CPoint`  
+ [in] `COleDataObject*`  
+ [in] `DWORD`  
+ [in] `CPoint`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onrenametab"></a>CMFCBaseTabCtrl::OnRenameTab  
+##  <a name="onrenametab"></a>  CMFCBaseTabCtrl::OnRenameTab  
 
   
 ```  
@@ -1726,14 +1721,14 @@ virtual BOOL OnRenameTab(int, CString&);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`int`  
- [in]`CString&`  
+ [in] `int`  
+ [in] `CString&`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="pretranslatemessage"></a>CMFCBaseTabCtrl::PreTranslateMessage  
+##  <a name="pretranslatemessage"></a>  CMFCBaseTabCtrl::PreTranslateMessage  
 
   
 ```  
@@ -1741,13 +1736,13 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pMsg`  
+ [in] `pMsg`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="recalclayout"></a>CMFCBaseTabCtrl::RecalcLayout  
+##  <a name="recalclayout"></a>  CMFCBaseTabCtrl::RecalcLayout  
  Sekme denetimi iç düzenini yeniden hesaplar.  
   
 ```  
@@ -1757,7 +1752,7 @@ virtual void RecalcLayout() = 0;
 ### <a name="remarks"></a>Açıklamalar  
  İçinde `CMFCBaseTabCtrl Class`, saf sanal işlevi bu yöntemidir. Öğesinden bir sınıf türetirseniz `CMFCBaseTabCtrl`, bu işlev uygulamanız gerekir.  
   
-##  <a name="removealltabs"></a>CMFCBaseTabCtrl::RemoveAllTabs  
+##  <a name="removealltabs"></a>  CMFCBaseTabCtrl::RemoveAllTabs  
  Tüm sekmeleri sekmesini denetiminden kaldırır.  
   
 ```  
@@ -1767,7 +1762,7 @@ virtual void RemoveAllTabs();
 ### <a name="remarks"></a>Açıklamalar  
  Varsa [CMFCBaseTabCtrl::m_bAutoDestroyWindow](#m_bautodestroywindow) olan `TRUE`, framework silerse [CWnd](../../mfc/reference/cwnd-class.md) nesneleri kaldırılan sekmelere bağlı.  
   
-##  <a name="removetab"></a>CMFCBaseTabCtrl::RemoveTab  
+##  <a name="removetab"></a>  CMFCBaseTabCtrl::RemoveTab  
  Sekme sekmesini denetiminden kaldırır.  
   
 ```  
@@ -1777,19 +1772,19 @@ virtual BOOL RemoveTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
- [in]`bRecalcLayout`  
+ [in] `bRecalcLayout`  
  Sekme düzenini yeniden hesapla belirtir Boole parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`yöntemi sekmesini başarıyla kaldırır Aksi takdirde `FALSE`.  
+ `TRUE` yöntemi sekmesini başarıyla kaldırır Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa [CMFCBaseTabCtrl::m_bAutoDestroyWindow](#m_bautodestroywindow) olan `TRUE`, `RemoveTab` bozar [CWnd](../../mfc/reference/cwnd-class.md) belirtilen sekme ile ilişkili nesne.  
   
-##  <a name="renametab"></a>CMFCBaseTabCtrl::RenameTab  
+##  <a name="renametab"></a>  CMFCBaseTabCtrl::RenameTab  
 
   
 ```  
@@ -1800,14 +1795,14 @@ virtual BOOL RenameTab();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="resetimagelist"></a>CMFCBaseTabCtrl::ResetImageList  
+##  <a name="resetimagelist"></a>  CMFCBaseTabCtrl::ResetImageList  
  Örneği için resim listesi sıfırlar [CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md).  
   
 ```  
 void ResetImageList();
 ```  
   
-##  <a name="serialize"></a>CMFCBaseTabCtrl::Serialize  
+##  <a name="serialize"></a>  CMFCBaseTabCtrl::Serialize  
 
   
 ```  
@@ -1815,11 +1810,11 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`ar`  
+ [in] `ar`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setactivetab"></a>CMFCBaseTabCtrl::SetActiveTab  
+##  <a name="setactivetab"></a>  CMFCBaseTabCtrl::SetActiveTab  
  Belirtilen sekmesini etkinleştirir.  
   
 ```  
@@ -1827,16 +1822,16 @@ virtual BOOL SetActiveTab(int iTab) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini `SetActiveTab` sekmesinde bu dizini ile etkin hale getirir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İçinde `CMFCBaseTabCtrl Class`, saf sanal işlevi bu yöntemidir. Öğesinden bir sınıf türetirseniz `CMFCBaseTabCtrl`, bu işlev uygulamanız gerekir.  
   
-##  <a name="setactivetabcolor"></a>CMFCBaseTabCtrl::SetActiveTabColor  
+##  <a name="setactivetabcolor"></a>  CMFCBaseTabCtrl::SetActiveTabColor  
  Etkin sekme arka plan rengini belirler.  
   
 ```  
@@ -1844,13 +1839,13 @@ virtual void SetActiveTabColor(COLORREF clr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`clr`  
+ [in] `clr`  
  Yeni arka plan rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Framework etkin sekmelerinden varsayılan arka plan rengini alır [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371)yöntemi.  
   
-##  <a name="setactivetabtextcolor"></a>CMFCBaseTabCtrl::SetActiveTabTextColor  
+##  <a name="setactivetabtextcolor"></a>  CMFCBaseTabCtrl::SetActiveTabTextColor  
  Etkin sekmeler için metin rengini belirler.  
   
 ```  
@@ -1858,13 +1853,13 @@ virtual void SetActiveTabTextColor(COLORREF clr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`clr`  
+ [in] `clr`  
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametresi yeni metin rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, framework metin rengini alır [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371). Bu varsayılan renk kullanarak geçersiz `SetActiveTabTextColor` yöntemi.  
   
-##  <a name="setautocolors"></a>CMFCBaseTabCtrl::SetAutoColors  
+##  <a name="setautocolors"></a>  CMFCBaseTabCtrl::SetAutoColors  
  Çerçeve kullanır sekme denetimi renkleri otomatik renk modunda ayarlar.  
   
 ```  
@@ -1872,7 +1867,7 @@ void SetAutoColors(const CArray<COLORREF,COLORREF>& arColors);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`arColors`  
+ [in] `arColors`  
  RGB renk dizisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1880,7 +1875,7 @@ void SetAutoColors(const CArray<COLORREF,COLORREF>& arColors);
   
  Autocolor modu etkinleştirmek için [CMFCBaseTabCtrl::EnableAutoColor](#enableautocolor) yöntemi.  
   
-##  <a name="setdockingbarwrapperrtc"></a>CMFCBaseTabCtrl::SetDockingBarWrapperRTC  
+##  <a name="setdockingbarwrapperrtc"></a>  CMFCBaseTabCtrl::SetDockingBarWrapperRTC  
  Türetilmiş olmayan herhangi bir nesne için kullanılan sarmalayıcı sınıfı ayarlar [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md).  
   
 ```  
@@ -1888,13 +1883,13 @@ void SetDockingBarWrapperRTC(CRuntimeClass* pRTC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pRTC`  
+ [in] `pRTC`  
  Yeni sarmalayıcı sınıfı için çalışma zamanı sınıf bilgileri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yöntemleri kullanarak bir sekme denetimine sekmeler ekleme [CMFCBaseTabCtrl::AddTab](#addtab) ve [CMFCBaseTabCtrl::InsertTab](#inserttab). Sekme eklediğinizde, bu sekmedeki her denetim dockable olması gerekir. Türetilmiş olmayan herhangi bir nesne `CDockablePane` alınmalıdır. `AddTab`ve `InsertTab` bu nesneler için bir sarmalayıcı oluşturur. Varsayılan sarmalayıcı sınıftır [CDockablePaneAdapter sınıfı](../../mfc/reference/cdockablepaneadapter-class.md). Yöntem `SetDockingBarWrapperRTC` bir sarmalayıcı sınıf olarak kullanılan sınıf değiştirmenize olanak tanır. Sağladığınız sarmalayıcı sınıfı öğesinden türetilmelidir `CDockablePaneAdapter`.  
+ Yöntemleri kullanarak bir sekme denetimine sekmeler ekleme [CMFCBaseTabCtrl::AddTab](#addtab) ve [CMFCBaseTabCtrl::InsertTab](#inserttab). Sekme eklediğinizde, bu sekmedeki her denetim dockable olması gerekir. Türetilmiş olmayan herhangi bir nesne `CDockablePane` alınmalıdır. `AddTab` ve `InsertTab` bu nesneler için bir sarmalayıcı oluşturur. Varsayılan sarmalayıcı sınıftır [CDockablePaneAdapter sınıfı](../../mfc/reference/cdockablepaneadapter-class.md). Yöntem `SetDockingBarWrapperRTC` bir sarmalayıcı sınıf olarak kullanılan sınıf değiştirmenize olanak tanır. Sağladığınız sarmalayıcı sınıfı öğesinden türetilmelidir `CDockablePaneAdapter`.  
   
-##  <a name="setdrawnoprefix"></a>CMFCBaseTabCtrl::SetDrawNoPrefix  
+##  <a name="setdrawnoprefix"></a>  CMFCBaseTabCtrl::SetDrawNoPrefix  
  Sekme etiketleri önek karakter işlemeyi devre dışı bırakır ve sağlar.  
   
 ```  
@@ -1904,16 +1899,16 @@ void SetDrawNoPrefix(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bNoPrefix`  
- `TRUE`Önek karakterleri işlemek istiyorsanız; Aksi takdirde `FALSE`.  
+ [in] `bNoPrefix`  
+ `TRUE` Önek karakterleri işlemek istiyorsanız; Aksi takdirde `FALSE`.  
   
- [in]`bRedraw`  
- `TRUE`Sekmeli penceresini yeniden boyutlandırmaya istiyorsanız; Aksi takdirde `FALSE`.  
+ [in] `bRedraw`  
+ `TRUE` Sekmeli penceresini yeniden boyutlandırmaya istiyorsanız; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir önek karakter ampersan tarafından öncesinde bir anımsatıcı karakterdir (&).  
   
-##  <a name="setimagelist"></a>CMFCBaseTabCtrl::SetImageList  
+##  <a name="setimagelist"></a>  CMFCBaseTabCtrl::SetImageList  
  Sekme denetimi için simge resim listesi ayarlar.  
   
 ```  
@@ -1926,16 +1921,16 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiID`  
- Bir bit eşlem kaynak kimliği `SetImageList`Resim listesi, bu kaynaktan yükler.  
+ [in] `uiID`  
+ Bir bit eşlem kaynak kimliği `SetImageList` Resim listesi, bu kaynaktan yükler.  
   
- [in]`cx`  
+ [in] `cx`  
  Her görüntüsünün piksel cinsinden genişliği.  
   
- [in]`clrTransp`  
+ [in] `clrTransp`  
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametresi resminin saydam rengi belirtir.  
   
- [in]`hImageList`  
+ [in] `hImageList`  
  Önceden yüklenen görüntü listesi için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1944,11 +1939,11 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
 ### <a name="remarks"></a>Açıklamalar  
  Simge görüntüsü listesi görüntülerden sekmesini etiketlerini yanında görüntülenir. Çağırdığınızda bir simge görüntülemek için dizin belirtmelisiniz [CMFCBaseTabCtrl::AddTab](#addtab).  
   
- `SetImageList`sekme denetimi ile düz bir stil oluşturduysanız başarısız olur. Framework tarafından gösterilen resim yüklerseniz de başarısız olur `uiID`.  
+ `SetImageList` sekme denetimi ile düz bir stil oluşturduysanız başarısız olur. Framework tarafından gösterilen resim yüklerseniz de başarısız olur `uiID`.  
   
  Bu yöntem, resim ve metin boyutları göre sekmesini yüksekliğini yeniden hesaplar.  
   
-##  <a name="setlocation"></a>CMFCBaseTabCtrl::SetLocation  
+##  <a name="setlocation"></a>  CMFCBaseTabCtrl::SetLocation  
 
   
 ```  
@@ -1956,11 +1951,11 @@ virtual void SetLocation(Location location);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`location`  
+ [in] `location`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="settabbkcolor"></a>CMFCBaseTabCtrl::SetTabBkColor  
+##  <a name="settabbkcolor"></a>  CMFCBaseTabCtrl::SetTabBkColor  
  Belirtilen sekme arka plan rengini belirler.  
   
 ```  
@@ -1970,16 +1965,16 @@ virtual BOOL SetTabBkColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
- [in]`color`  
+ [in] `color`  
  Ayarlamak için renk.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; `FALSE` Aksi takdirde.  
+ `TRUE` başarılı olursa; `FALSE` Aksi takdirde.  
   
-##  <a name="settabbordersize"></a>CMFCBaseTabCtrl::SetTabBorderSize  
+##  <a name="settabbordersize"></a>  CMFCBaseTabCtrl::SetTabBorderSize  
  Sekme denetimi için yeni bir sınır boyutu ayarlar.  
   
 ```  
@@ -1989,13 +1984,13 @@ virtual void SetTabBorderSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nTabBorderSize`  
+ [in] `nTabBorderSize`  
  Yeni sınır boyutu piksel cinsinden.  
   
- [in]`bRepaint`  
+ [in] `bRepaint`  
  Framework denetimi yeniden çizer olup olmadığını gösteren bir Boolean parametresiyle.  
   
-##  <a name="settabhicon"></a>CMFCBaseTabCtrl::SetTabHicon  
+##  <a name="settabhicon"></a>  CMFCBaseTabCtrl::SetTabHicon  
  Sekme etiketi simgesi ayarlar.  
   
 ```  
@@ -2005,16 +2000,16 @@ virtual BOOL SetTabHicon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini. Bu yöntem, bu sekme simgesi değiştirir.  
   
- [in]`hIcon`  
+ [in] `hIcon`  
  Simge için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
   
-##  <a name="settabicon"></a>CMFCBaseTabCtrl::SetTabIcon  
+##  <a name="settabicon"></a>  CMFCBaseTabCtrl::SetTabIcon  
  Sekme simgesi ayarlar.  
   
 ```  
@@ -2024,16 +2019,16 @@ virtual BOOL SetTabIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Güncelleştirme için sekmesini sıfır tabanlı dizini.  
   
- [in]`uiIcon`  
+ [in] `uiIcon`  
  Yeni simgesine simgesi kimliği. Bu kimliği iç başvuran [Cımagelist](../../mfc/reference/cimagelist-class.md) nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
   
-##  <a name="settabicononly"></a>CMFCBaseTabCtrl::SetTabIconOnly  
+##  <a name="settabicononly"></a>  CMFCBaseTabCtrl::SetTabIconOnly  
  Belirli bir sekmede yalnızca bir simge (ve metin etiketi) görüntüleme etkinleştirir.  
   
 ```  
@@ -2044,22 +2039,22 @@ virtual BOOL SetTabIconOnly(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Değiştirmek için sekmesini sıfır tabanlı dizini.  
   
- [in]`bIconOnly`  
+ [in] `bIconOnly`  
  Yalnızca simgelerini görüntülenip görüntülenmeyeceğini belirler Boole parametresi.  
   
- [in]`bShowTooltipAlways`  
+ [in] `bShowTooltipAlways`  
  Framework yalnızca simgelerini görüntüleyen bir sekme etiketi için araç ipuçları gösterip göstermediğini belirleyen bir Boolean parametresiyle.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bir sekme denetimi her sekme simgesi ve metin etiketini görüntüler.  
   
-##  <a name="settablabel"></a>CMFCBaseTabCtrl::SetTabLabel  
+##  <a name="settablabel"></a>  CMFCBaseTabCtrl::SetTabLabel  
  Sekme etiketi metni ayarlar.  
   
 ```  
@@ -2069,16 +2064,16 @@ virtual BOOL SetTabLabel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Güncelleştirme için sekmesini sıfır tabanlı dizini.  
   
- [in]`strLabel`  
+ [in] `strLabel`  
  Sekme etiketi için yeni metin içeren bir dize başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="settabsheight"></a>CMFCBaseTabCtrl::SetTabsHeight  
+##  <a name="settabsheight"></a>  CMFCBaseTabCtrl::SetTabsHeight  
 
   
 ```  
@@ -2087,7 +2082,7 @@ virtual void SetTabsHeight();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="settabsorder"></a>CMFCBaseTabCtrl::SetTabsOrder  
+##  <a name="settabsorder"></a>  CMFCBaseTabCtrl::SetTabsOrder  
  Sekmeleri belirtilen sırada düzenler.  
   
 ```  
@@ -2095,16 +2090,16 @@ BOOL SetTabsOrder(const CArray<int,int>& arOrder);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`arOrder`  
+ [in] `arOrder`  
  Yeni sekme sırası tanımlayan bir dizi sıfır tabanlı dizin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; `FAIL` Aksi takdirde.  
+ `TRUE` başarılı olursa; `FAIL` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Boyutunu `arOrder` dizi içinde Sekme denetimini sekmeleri sayısına eşit olmalıdır.  
   
-##  <a name="settabtextcolor"></a>CMFCBaseTabCtrl::SetTabTextColor  
+##  <a name="settabtextcolor"></a>  CMFCBaseTabCtrl::SetTabTextColor  
  Belirli bir sekme metin rengini belirler.  
   
 ```  
@@ -2114,16 +2109,16 @@ virtual BOOL SetTabTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekme sıfır tabanlı dizini.  
   
- [in]`color`  
+ [in] `color`  
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametresi yeni metin rengini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="showtab"></a>CMFCBaseTabCtrl::ShowTab  
+##  <a name="showtab"></a>  CMFCBaseTabCtrl::ShowTab  
  Gösterir veya belirtilen sekmesini gizler.  
   
 ```  
@@ -2135,16 +2130,16 @@ virtual BOOL ShowTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
  Sekmenin dizin, `ShowTab` göster veya gizle.  
   
- [in]`bShow`  
+ [in] `bShow`  
  Sekmesini gösterilip gösterilmeyeceğini belirten bir Boolean parametresiyle.  
   
- [in]`bRecalcLayout`  
+ [in] `bRecalcLayout`  
  Hemen pencere düzenini yeniden hesapla kılmayacağını gösteren bir Boolean parametresiyle.  
   
- [in]`bActivate`  
+ [in] `bActivate`  
  Tarafından belirtilen sekmesini seçip seçmemeye gösteren bir Boole parametresi `iTab`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2153,7 +2148,7 @@ virtual BOOL ShowTab(
 ### <a name="remarks"></a>Açıklamalar  
  Parametre `bActivate` yalnızca geçerlidir `bShow` olan `TRUE`. Varsa `bActivate` olan `TRUE` ve `ShowTab` başarılı `ShowTab` AFX_WM_CHANGE_ACTIVE_TAB ileti sekmesi penceresi üst öğeye gönderir.  
   
-##  <a name="startrenametab"></a>CMFCBaseTabCtrl::StartRenameTab  
+##  <a name="startrenametab"></a>  CMFCBaseTabCtrl::StartRenameTab  
 
   
 ```  
@@ -2161,13 +2156,13 @@ virtual BOOL StartRenameTab(int iTab);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iTab`  
+ [in] `iTab`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="swaptabs"></a>CMFCBaseTabCtrl::SwapTabs  
+##  <a name="swaptabs"></a>  CMFCBaseTabCtrl::SwapTabs  
 
   
 ```  
@@ -2177,8 +2172,8 @@ virtual void SwapTabs(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nFisrtTabID`  
- [in]`nSecondTabID`  
+ [in] `nFisrtTabID`  
+ [in] `nSecondTabID`  
   
 ### <a name="remarks"></a>Açıklamalar  
   

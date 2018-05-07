@@ -1,13 +1,10 @@
 ---
 title: 'TN017: Pencere nesnelerini yok etme | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.objects
 dev_langs:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - TN017
 - PostNcDestroy method [MFC]
 ms.assetid: 5bf208a5-5683-439b-92a1-547c5ded26cd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d9aa4cabaafd4eebc3a0fb0b0023a82d446d74a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c6bba255403d31e7a1fa03febb0c760d20cdc81c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn017-destroying-window-objects"></a>TN017: Pencere Nesnelerini Yok Etme
 Bu Not kullanımını açıklar [CWnd::PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy) yöntemi. Özelleştirilmiş ayrılması yapmak istiyorsanız bu yöntemi kullanın `CWnd`-türetilmiş nesneleri. Bu Not ayrıca neden kullanmanız açıklar [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow) yerine C++ Windows nesnesi yok etmek için `delete` işleci.  
@@ -49,7 +44,7 @@ Bu Not kullanımını açıklar [CWnd::PostNcDestroy](../mfc/reference/cwnd-clas
  İkinci durumda, kullanımını `delete` Windows nesneler üzerinde operatör nadir. Bazı durumlarda kullanarak burada aşağıdaki olan `delete` doğru seçimdir.  
   
 ## <a name="auto-cleanup-with-cwndpostncdestroy"></a>Otomatik temizleme CWnd::PostNcDestroy ile  
- Bir Windows pencere sistemin bozar zaman penceresine gönderilen son Windows iletisidir `WM_NCDESTROY`. Varsayılan `CWnd` ileti işleyicisi [CWnd::OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy). `OnNcDestroy`detach `HWND` C++ içinden nesne ve sanal işlev çağrısı `PostNcDestroy`. Bazı sınıflar C++ nesnesini silmek için bu işlevi geçersiz.  
+ Bir Windows pencere sistemin bozar zaman penceresine gönderilen son Windows iletisidir `WM_NCDESTROY`. Varsayılan `CWnd` ileti işleyicisi [CWnd::OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy). `OnNcDestroy` detach `HWND` C++ içinden nesne ve sanal işlev çağrısı `PostNcDestroy`. Bazı sınıflar C++ nesnesini silmek için bu işlevi geçersiz.  
   
  Varsayılan uygulaması `CWnd::PostNcDestroy` hiçbir şey, yığın çerçevesi ayrıldı veya diğer nesneleri katıştırılmış pencere nesneleri için uygun olduğu yapmaz. Bu diğer nesneleri olmadan yığında ayrılacak tasarlanan pencere nesneleri için uygun değildir. Diğer bir deyişle, diğer C++ nesneleri gömülü olmayan pencere nesneleri için uygun değil.  
   

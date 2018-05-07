@@ -1,12 +1,9 @@
 ---
-title: "CRgn sınıfı | Microsoft Docs"
-ms.custom: 
+title: CRgn sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CRgn
@@ -55,17 +52,15 @@ helpviewer_keywords:
 - CRgn [MFC], RectInRegion
 - CRgn [MFC], SetRectRgn
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d5556db19d7f0ec92f915dda49dfeb24390ab70
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b569efb201f95ade8987aaa89bb6cea1bc0c15c1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="crgn-class"></a>CRgn sınıfı
 Bir Windows grafik cihaz arabirimi (GDI) bölge yalıtır.  
@@ -131,7 +126,7 @@ class CRgn : public CGdiObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="combinergn"></a>CRgn::CombineRgn  
+##  <a name="combinergn"></a>  CRgn::CombineRgn  
  Var olan iki bölgede birleştirerek yeni GDI bölgesi oluşturur.  
   
 ```  
@@ -184,7 +179,7 @@ int CombineRgn(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#144](../../mfc/codesnippet/cpp/crgn-class_1.cpp)]  
   
-##  <a name="copyrgn"></a>CRgn::CopyRgn  
+##  <a name="copyrgn"></a>  CRgn::CopyRgn  
  Tarafından tanımlanan bir bölgeyi kopyalar `pRgnSrc` içine `CRgn` nesnesi.  
   
 ```  
@@ -212,7 +207,7 @@ int CopyRgn(CRgn* pRgnSrc);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CRgn::CreateEllipticRgn](#createellipticrgn).  
   
-##  <a name="createellipticrgn"></a>CRgn::CreateEllipticRgn  
+##  <a name="createellipticrgn"></a>  CRgn::CreateEllipticRgn  
  Elips bölgesi oluşturur.  
   
 ```  
@@ -249,7 +244,7 @@ BOOL CreateEllipticRgn(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#145](../../mfc/codesnippet/cpp/crgn-class_2.cpp)]  
   
-##  <a name="createellipticrgnindirect"></a>CRgn::CreateEllipticRgnIndirect  
+##  <a name="createellipticrgnindirect"></a>  CRgn::CreateEllipticRgnIndirect  
  Elips bölgesi oluşturur.  
   
 ```  
@@ -273,7 +268,7 @@ BOOL CreateEllipticRgnIndirect(LPCRECT lpRect);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CRgn::CreateRectRgnIndirect](#createrectrgnindirect).  
   
-##  <a name="createfromdata"></a>CRgn::CreateFromData  
+##  <a name="createfromdata"></a>  CRgn::CreateFromData  
  Bir bölge verilen bölge ve dönüştürme veri oluşturur.  
   
 ```  
@@ -299,7 +294,7 @@ BOOL CreateFromData(
 ### <a name="remarks"></a>Açıklamalar  
  Bir uygulama için bir bölge çağırarak verileri `CRgn::GetRegionData` işlevi.  
   
-##  <a name="createfrompath"></a>CRgn::CreateFromPath  
+##  <a name="createfrompath"></a>  CRgn::CreateFromPath  
  Bir bölge verilen cihaz bağlamına seçili yol oluşturur.  
   
 ```  
@@ -316,7 +311,7 @@ BOOL CreateFromPath(CDC* pDC);
 ### <a name="remarks"></a>Açıklamalar  
  Tarafından tanımlanan cihaz bağlamı `pDC` parametresi kapalı bir yolu içermesi gerekir. Sonra `CreateFromPath` bir bölge Windows yola bir cihaz bağlamı kapalı yolundan atar.  
   
-##  <a name="createpolygonrgn"></a>CRgn::CreatePolygonRgn  
+##  <a name="createpolygonrgn"></a>  CRgn::CreatePolygonRgn  
  Çokgen bölge oluşturur.  
   
 ```  
@@ -361,7 +356,7 @@ BOOL CreatePolygonRgn(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#146](../../mfc/codesnippet/cpp/crgn-class_3.cpp)]  
   
-##  <a name="createpolypolygonrgn"></a>CRgn::CreatePolyPolygonRgn  
+##  <a name="createpolypolygonrgn"></a>  CRgn::CreatePolyPolygonRgn  
  Kapalı çokgenler bir dizi oluşan bir bölge oluşturur.  
   
 ```  
@@ -409,7 +404,7 @@ BOOL CreatePolyPolygonRgn(
   
  Bir uygulama bittiği ile oluşturulan bir bölge kullanarak `CreatePolyPolygonRgn` işlevi, bunu kullanın ve cihaz bağlamı çıkışı bölgesini seçmelisiniz [CGDIObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) kaldırmak için üye işlevi.  
   
-##  <a name="createrectrgn"></a>CRgn::CreateRectRgn  
+##  <a name="createrectrgn"></a>  CRgn::CreateRectRgn  
  Depolanan dikdörtgen bir bölgesi oluşturur `CRgn` nesnesi.  
   
 ```  
@@ -446,7 +441,7 @@ BOOL CreateRectRgn(
   
  Ek bir örnek için bkz: [CRgn::CombineRgn](#combinergn).  
   
-##  <a name="createrectrgnindirect"></a>CRgn::CreateRectRgnIndirect  
+##  <a name="createrectrgnindirect"></a>  CRgn::CreateRectRgnIndirect  
  Depolanan dikdörtgen bir bölgesi oluşturur `CRgn` nesnesi.  
   
 ```  
@@ -480,7 +475,7 @@ BOOL CreateRectRgnIndirect(LPCRECT lpRect);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#148](../../mfc/codesnippet/cpp/crgn-class_5.cpp)]  
   
-##  <a name="createroundrectrgn"></a>CRgn::CreateRoundRectRgn  
+##  <a name="createroundrectrgn"></a>  CRgn::CreateRoundRectRgn  
  Depolanan yuvarlak köşeli dikdörtgen bir bölgesi oluşturur `CRgn` nesnesi.  
   
 ```  
@@ -523,7 +518,7 @@ BOOL CreateRoundRectRgn(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#149](../../mfc/codesnippet/cpp/crgn-class_6.cpp)]  
   
-##  <a name="crgn"></a>CRgn::CRgn  
+##  <a name="crgn"></a>  CRgn::CRgn  
  Oluşturan bir `CRgn` nesnesi.  
   
 ```  
@@ -536,7 +531,7 @@ CRgn();
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CRgn::CreateRoundRectRgn](#createroundrectrgn).  
   
-##  <a name="equalrgn"></a>CRgn::EqualRgn  
+##  <a name="equalrgn"></a>  CRgn::EqualRgn  
  Verilen bölge içinde depolanan bölgeye eşdeğer olup olmadığını belirler `CRgn` nesnesi.  
   
 ```  
@@ -553,7 +548,7 @@ BOOL EqualRgn(CRgn* pRgn) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#150](../../mfc/codesnippet/cpp/crgn-class_7.cpp)]  
   
-##  <a name="fromhandle"></a>CRgn::FromHandle  
+##  <a name="fromhandle"></a>  CRgn::FromHandle  
  Bir işaretçi döndüren bir `CRgn` nesnesi tanıtıcı Windows bölgesine verildiğinde.  
   
 ```  
@@ -570,7 +565,7 @@ static CRgn* PASCAL FromHandle(HRGN hRgn);
 ### <a name="remarks"></a>Açıklamalar  
  Varsa bir `CRgn` nesne zaten iliştirilmemiş tanıtıcıyı, geçici bir `CRgn` nesnesi oluşturulur ve bağlı. Bu geçici `CRgn` nesnesi, hangi tüm geçici grafiği zaman durdurulacağını sonraki açışınızda uygulama boşta kalma süresi, olay döngüde olana kadar nesneler silinir yalnızca geçerli. Bu bildiren başka bir şekilde geçici nesne yalnızca bir pencere ileti işleme sırasında geçerli olmasıdır.  
   
-##  <a name="getregiondata"></a>CRgn::GetRegionData  
+##  <a name="getregiondata"></a>  CRgn::GetRegionData  
  Belirtilen arabellek bölge açıklayan verileri ile doldurur.  
   
 ```  
@@ -592,7 +587,7 @@ int GetRegionData(
 ### <a name="remarks"></a>Açıklamalar  
  Bu veriler bölgesini olun dikdörtgenler boyutları içerir. Bu işlev ile birlikte kullanılan `CRgn::CreateFromData` işlevi.  
   
-##  <a name="getrgnbox"></a>CRgn::GetRgnBox  
+##  <a name="getrgnbox"></a>  CRgn::GetRgnBox  
  Sınırlayıcı dikdörtgenini koordinatlarını alır `CRgn` nesnesi.  
   
 ```  
@@ -629,7 +624,7 @@ int GetRgnBox(LPRECT lpRect) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CRgn::CreatePolygonRgn](#createpolygonrgn).  
   
-##  <a name="offsetrgn"></a>CRgn::OffsetRgn  
+##  <a name="offsetrgn"></a>  CRgn::OffsetRgn  
  Depolanan bölge taşır `CRgn` nesnesi tarafından belirtilen uzaklık.  
   
 ```  
@@ -644,7 +639,7 @@ int OffsetRgn(POINT point);
  *x*  
  Sol taşımak için veya sağa birim sayısını belirtir.  
   
- *y*  
+ *Y*  
  Yukarı veya aşağı taşımak için kullanılacak birim sayısını belirtir.  
   
  `point`  
@@ -669,7 +664,7 @@ int OffsetRgn(POINT point);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CRgn::CreateEllipticRgn](#createellipticrgn).  
   
-##  <a name="operator_hrgn"></a>CRgn::operator HRGN  
+##  <a name="operator_hrgn"></a>  CRgn::operator HRGN  
  Ekli Windows GDI işleyicisini almak için bu işleci kullanın `CRgn` nesnesi.  
   
 ```  
@@ -684,7 +679,7 @@ operator HRGN() const;
   
  Grafik nesneleri kullanma hakkında daha fazla bilgi için bkz: [grafik nesneleri](http://msdn.microsoft.com/library/windows/desktop/dd144962) Windows SDK.  
   
-##  <a name="ptinregion"></a>CRgn::PtInRegion  
+##  <a name="ptinregion"></a>  CRgn::PtInRegion  
  Denetler olup olmadığını tarafından verilen nokta *x* ve *y* depolanan bölge içinde `CRgn` nesnesi.  
   
 ```  
@@ -699,7 +694,7 @@ BOOL PtInRegion(POINT point) const;
  *x*  
  Mantıksal x koordinatını sınamak için noktasının belirtir.  
   
- *y*  
+ *Y*  
  Test etmek için noktasının mantıksal y koordinatını belirtir.  
   
  `point`  
@@ -708,7 +703,7 @@ BOOL PtInRegion(POINT point) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Noktası bölgede ise sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="rectinregion"></a>CRgn::RectInRegion  
+##  <a name="rectinregion"></a>  CRgn::RectInRegion  
  Dikdörtgen herhangi bir kısmını tarafından belirtilen olup olmadığını belirler `lpRect` depolanan bölge sınırlarının içinde `CRgn` nesnesi.  
   
 ```  
@@ -734,7 +729,7 @@ BOOL RectInRegion(LPCRECT lpRect) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen dikdörtgenin herhangi bir kısmını bölge sınırlar içinde yer alıyorsa sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="setrectrgn"></a>CRgn::SetRectRgn  
+##  <a name="setrectrgn"></a>  CRgn::SetRectRgn  
  Dikdörtgen bir bölgesi oluşturur.  
   
 ```  

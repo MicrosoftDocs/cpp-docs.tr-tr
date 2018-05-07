@@ -1,12 +1,9 @@
 ---
-title: "CPaintDC sınıfı | Microsoft Docs"
-ms.custom: 
+title: CPaintDC sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CPaintDC
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - CPaintDC [MFC], m_ps
 - CPaintDC [MFC], m_hWnd
 ms.assetid: 7e245baa-bf9b-403e-a637-7218adf28fab
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 451cc5690e871c1292f0a8ff2450eca950ada65b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d9f83c36a9c1a0d334e3b4a75724521d5711123e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cpaintdc-class"></a>CPaintDC sınıfı
 Bir cihaz bağlamı sınıfın türetildiği [CDC](../../mfc/reference/cdc-class.md).  
@@ -79,7 +74,7 @@ class CPaintDC : public CDC
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="cpaintdc"></a>CPaintDC::CPaintDC  
+##  <a name="cpaintdc"></a>  CPaintDC::CPaintDC  
  Oluşturan bir `CPaintDC` nesne, uygulama penceresi boyama için hazırlar ve depolar [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) içinde yapısı [m_ps](#m_ps) üye değişkeni.  
   
 ```  
@@ -96,7 +91,7 @@ explicit CPaintDC(CWnd* pWnd);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#97](../../mfc/codesnippet/cpp/cpaintdc-class_1.cpp)]  
   
-##  <a name="m_hwnd"></a>CPaintDC::m_hWnd  
+##  <a name="m_hwnd"></a>  CPaintDC::m_hWnd  
  `HWND` Bu `CPaintDC` nesne eklenmiş olmasıdır.  
   
 ```  
@@ -104,13 +99,13 @@ HWND m_hWnd;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `m_hWnd`korumalı bir değişken türü `HWND`.  
+ `m_hWnd` korumalı bir değişken türü `HWND`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#98](../../mfc/codesnippet/cpp/cpaintdc-class_2.cpp)]  
   
-##  <a name="m_ps"></a>CPaintDC::m_ps  
- `m_ps`bir ortak üye değişkeni türü [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md).  
+##  <a name="m_ps"></a>  CPaintDC::m_ps  
+ `m_ps` bir ortak üye değişkeni türü [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md).  
   
 ```  
 PAINTSTRUCT m_ps;  

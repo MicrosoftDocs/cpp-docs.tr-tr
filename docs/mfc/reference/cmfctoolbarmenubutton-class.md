@@ -1,12 +1,9 @@
 ---
-title: "CMFCToolBarMenuButton sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCToolBarMenuButton sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCToolBarMenuButton
@@ -101,17 +98,15 @@ helpviewer_keywords:
 - CMFCToolBarMenuButton [MFC], DrawDocumentIcon
 - CMFCToolBarMenuButton [MFC], m_bAlwaysCallOwnerDraw
 ms.assetid: cfa50176-7e4b-4527-9904-86a1b48fc1bc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6c752d1b9570ce11e232020393cc6d7982baa80
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 515689e4596a3a0336e73b0be7aa008d21e445ab
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfctoolbarmenubutton-class"></a>CMFCToolBarMenuButton sınıfı
 Açılır menü içeren bir araç çubuğu düğmesi.  
@@ -208,7 +203,7 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxtoolbarmenubutton.h  
   
-##  <a name="cmfctoolbarmenubutton"></a>CMFCToolBarMenuButton::CMFCToolBarMenuButton  
+##  <a name="cmfctoolbarmenubutton"></a>  CMFCToolBarMenuButton::CMFCToolBarMenuButton  
  Oluşturan bir `CMFCToolBarMenuButton` nesnesi.  
   
 ```  
@@ -224,23 +219,23 @@ CMFCToolBarMenuButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`src`  
+ [in] `src`  
  Var olan `CMFCToolBarMenuButton` bu kopyalanacak nesne `CMFCToolBarMenuButton` nesne.  
   
- [in]`uiID`  
+ [in] `uiID`  
  Bir kullanıcı düğmesine tıkladığında yürütülecek komut kimliği; veya ( `UINT`) doğrudan komut yürütme olmayan bir menü düğmesi için -1.  
   
- [in]`hMenu`  
+ [in] `hMenu`  
  Bir menüye tanıtıcı; veya `NULL` düğmesi menü yoksa.  
   
- [in]`iImage`  
+ [in] `iImage`  
  Düğme için resim dizini; veya bu düğme simge yok veya tarafından belirtilen komut için simge kullanıyorsa, -1 `uiID`. Dizin her aynıdır `CMFCToolBarImages` uygulamanızda nesnesi.  
   
- [in]`lpszText`  
+ [in] `lpszText`  
  Araç çubuğu menü düğmesi metni.  
   
- [in]`bUserButton`  
- `TRUE`Kullanıcı tanımlı bir görüntü düğmesi görüntüler `FALSE` düğmesi tarafından belirtilen komut ile ilişkili önceden tanımlanmış bir görüntü görüntülerse `uiID`.  
+ [in] `bUserButton`  
+ `TRUE` Kullanıcı tanımlı bir görüntü düğmesi görüntüler `FALSE` düğmesi tarafından belirtilen komut ile ilişkili önceden tanımlanmış bir görüntü görüntülerse `uiID`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `uiID` geçerli bir komut kimliği, kullanıcı tıkladığında bu komut düğmesi gerçekleştirir. Varsa `hMenu` geçerli bir menü tanıtıcısı menüde göründüğünde bir araç veya bir alt görüntülendiğinde bir açılır menü düğmesi sağlar. Her iki `uiID` ve `hMenu` düğme olan Bölünmüş düğme kullanıcı üzerinde tıklattığında komutu gerçekleştirecek bir bölümü ve bir kullanıcı üzerinde tıkladığında açılır menü bir aşağı ok olan bir bölümü geçersiz. Ancak, varsa `hMenu` geçerli bir kullanıcı düğmesi bir menüsüne eklendiğinde, bir komutu gerçekleştirmeyi düğmesini mümkün olmayacak.  
@@ -250,7 +245,7 @@ CMFCToolBarMenuButton(
   
  [!code-cpp[NVC_MFC_WordPad#9](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_2.cpp)]  
   
-##  <a name="comparewith"></a>CMFCToolBarMenuButton::CompareWith  
+##  <a name="comparewith"></a>  CMFCToolBarMenuButton::CompareWith  
 
   
 ```  
@@ -258,13 +253,13 @@ virtual BOOL CompareWith(const CMFCToolBarButton& other) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`other`  
+ [in] `other`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="copyfrom"></a>CMFCToolBarMenuButton::CopyFrom  
+##  <a name="copyfrom"></a>  CMFCToolBarMenuButton::CopyFrom  
 
   
 ```  
@@ -272,11 +267,11 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`src`  
+ [in] `src`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="createfrommenu"></a>CMFCToolBarMenuButton::CreateFromMenu  
+##  <a name="createfrommenu"></a>  CMFCToolBarMenuButton::CreateFromMenu  
  Windows menüsü tanıtıcı araç çubuğu menüsünden başlatır.  
   
 ```  
@@ -284,7 +279,7 @@ virtual void CreateFromMenu(HMENU hMenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hMenu`  
+ [in] `hMenu`  
  Bir menüye işleci.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -292,7 +287,7 @@ virtual void CreateFromMenu(HMENU hMenu);
   
  Çerçeve bir menü menüden komutlar başlatmak için bu yöntemi çağırır.  
   
-##  <a name="createmenu"></a>CMFCToolBarMenuButton::CreateMenu  
+##  <a name="createmenu"></a>  CMFCToolBarMenuButton::CreateMenu  
  Araç çubuğu menü komutları oluşan bir menü oluşturur. Bir tanıtıcı menüsüne döndürür.  
   
 ```  
@@ -300,12 +295,12 @@ virtual HMENU CreateMenu() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işleme menüsüne varsa başarılı. `NULL`araç çubuğu menü düğmesi ile ilişkili komutların listesini boşsa.  
+ Bir işleme menüsüne varsa başarılı. `NULL` araç çubuğu menü düğmesi ile ilişkili komutların listesini boşsa.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Menü oluşturulan biçimini özelleştirmek üzere bir türetilmiş sınıfta bu yöntemin üzerine yazabilir.  
   
-##  <a name="createpopupmenu"></a>CMFCToolBarMenuButton::CreatePopupMenu  
+##  <a name="createpopupmenu"></a>  CMFCToolBarMenuButton::CreatePopupMenu  
  Oluşturur bir `CMFCPopupMenu` araç çubuğu menü görüntülenecek nesne.  
   
 ```  
@@ -320,7 +315,7 @@ virtual CMFCPopupMenu* CreatePopupMenu();
   
  Varsayılan uygulama yalnızca oluşturur ve yeni bir döndürür `CMFCPopupMenu` nesnesi. Türetilen bir tür kullanmak istiyorsanız bu yöntemi geçersiz kılın [CMFCPopupMenu sınıfı](cmfcpopupmenu-class.md) veya ek başlatılmasını gerçekleştirmek için.  
   
-##  <a name="drawdocumenticon"></a>CMFCToolBarMenuButton::DrawDocumentIcon  
+##  <a name="drawdocumenticon"></a>  CMFCToolBarMenuButton::DrawDocumentIcon  
  Bir belge simgesi menü düğmesi çizer.  
   
 ```  
@@ -331,19 +326,19 @@ void DrawDocumentIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Cihaz bağlamı için bir işaretçi.  
   
- [in]`rectImage`  
+ [in] `rectImage`  
  Dikdörtgen sınırlayıcı görüntü koordinatları.  
   
- [in]`hIcon`  
+ [in] `hIcon`  
  Simge için bir tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, bir belge simgesini alır ve tarafından belirtilen alanında Ortalanan menü düğmesinde çizer `rectImage`.  
   
-##  <a name="enablequickcustomize"></a>CMFCToolBarMenuButton::EnableQuickCustomize  
+##  <a name="enablequickcustomize"></a>  CMFCToolBarMenuButton::EnableQuickCustomize  
 
   
 ```  
@@ -352,7 +347,7 @@ void EnableQuickCustomize();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="hasbutton"></a>CMFCToolBarMenuButton::HasButton  
+##  <a name="hasbutton"></a>  CMFCToolBarMenuButton::HasButton  
 
   
 ```  
@@ -363,7 +358,7 @@ virtual BOOL HasButton() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="havehotborder"></a>CMFCToolBarMenuButton::HaveHotBorder  
+##  <a name="havehotborder"></a>  CMFCToolBarMenuButton::HaveHotBorder  
 
   
 ```  
@@ -374,7 +369,7 @@ virtual BOOL HaveHotBorder() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isborder"></a>CMFCToolBarMenuButton::IsBorder  
+##  <a name="isborder"></a>  CMFCToolBarMenuButton::IsBorder  
 
   
 ```  
@@ -385,7 +380,7 @@ virtual BOOL IsBorder() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isclickedonmenu"></a>CMFCToolBarMenuButton::IsClickedOnMenu  
+##  <a name="isclickedonmenu"></a>  CMFCToolBarMenuButton::IsClickedOnMenu  
 
   
 ```  
@@ -396,7 +391,7 @@ BOOL IsClickedOnMenu() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isquickmode"></a>CMFCToolBarMenuButton::IsQuickMode  
+##  <a name="isquickmode"></a>  CMFCToolBarMenuButton::IsQuickMode  
 
   
 ```  
@@ -407,7 +402,7 @@ BOOL IsQuickMode();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getcommands"></a>CMFCToolBarMenuButton::GetCommands  
+##  <a name="getcommands"></a>  CMFCToolBarMenuButton::GetCommands  
  Araç çubuğu menü komutları listesini salt okunur erişim sağlar.  
   
 ```  
@@ -420,7 +415,7 @@ const CObList& GetCommands() const;
 ### <a name="remarks"></a>Açıklamalar  
  Araç çubuğu menü düğmesi, bir alt görüntüleyebilirsiniz. Oluşturucusu veya alt komutların listesini sağlayabilirsiniz [CMFCToolBarMenuButton::CreateFromMenu](#createfrommenu) menü işleyici olarak ( `HMENU`). Menü türetilmiş nesnelerin bir listesini dönüştürülür [CMFCToolBarButton sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md) ve dahili olarak depolanan `CObList` nesnesi. Bu yöntemini çağırarak bu listeyi erişebilir.  
   
-##  <a name="getimagerect"></a>CMFCToolBarMenuButton::GetImageRect  
+##  <a name="getimagerect"></a>  CMFCToolBarMenuButton::GetImageRect  
  Düğme görüntüsü için sınırlayıcı dikdörtgenini alır.  
   
 ```  
@@ -428,10 +423,10 @@ void GetImageRect(CRect& rectImage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out]`rectImage`  
+ [out] `rectImage`  
  Bir başvuru bir `CRect` dikdörtgen sınırlayıcı görüntü koordinatlarını alan nesnesi.  
   
-##  <a name="getpaletterows"></a>CMFCToolBarMenuButton::GetPaletteRows  
+##  <a name="getpaletterows"></a>  CMFCToolBarMenuButton::GetPaletteRows  
  Menü palet modundayken açılır menüde satır sayısını döndürür.  
   
 ```  
@@ -444,7 +439,7 @@ int GetPaletteRows() const;
 ### <a name="remarks"></a>Açıklamalar  
  Menü düğmesine palet moda ayarlandığında, menü öğelerini yalnızca sınırlı sayıda satır ile birden çok sütunda görüntülenir. Satır sayısını elde etmek için bu yöntemi çağırın. Etkinleştirebilir veya palet modunu devre dışı bırakın ve kullanarak satır sayısını belirtin [CMFCToolBarMenuButton::SetMenuPaletteMode](#setmenupalettemode).  
   
-##  <a name="getpopupmenu"></a>CMFCToolBarMenuButton::GetPopupMenu  
+##  <a name="getpopupmenu"></a>  CMFCToolBarMenuButton::GetPopupMenu  
  Bir işaretçi döndürür [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md) açılır menü düğmesinin temsil eden nesne.  
   
 ```  
@@ -457,7 +452,7 @@ CMFCPopupMenu* GetPopupMenu() const;
 ### <a name="remarks"></a>Açıklamalar  
  Araç çubuğu menü düğmesi açılır menü görüntülediğinde, düğmesi oluşturur bir [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md) menü temsil eden nesne. Bir işaretçi elde etmek için bu yöntemi çağırın `CMFCPopupMenu` nesnesi. Geçici olduğundan ve kullanıcının açılır menü kapandığında geçersiz hale gelir döndürülen işaretçiyi depolamalısınız değil.  
   
-##  <a name="isdroppeddown"></a>CMFCToolBarMenuButton::IsDroppedDown  
+##  <a name="isdroppeddown"></a>  CMFCToolBarMenuButton::IsDroppedDown  
  Açılan menüden şu anda görüntülenip görüntülenmeyeceğini belirtir.  
   
 ```  
@@ -465,9 +460,9 @@ virtual BOOL IsDroppedDown() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`araç çubuğu menü düğmesi kendi alt görüntüler Aksi takdirde `FALSE`.  
+ `TRUE` araç çubuğu menü düğmesi kendi alt görüntüler Aksi takdirde `FALSE`.  
   
-##  <a name="isemptymenuallowed"></a>CMFCToolBarMenuButton::IsEmptyMenuAllowed  
+##  <a name="isemptymenuallowed"></a>  CMFCToolBarMenuButton::IsEmptyMenuAllowed  
  Menü öğeleri boş alt menüler gösterip göstermediğini belirtir.  
   
 ```  
@@ -475,14 +470,14 @@ virtual BOOL IsEmptyMenuAllowed() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`alt boş olsa bile framework bir alt şu anda seçili menü öğesinden açarsa; Aksi takdirde `FALSE`.  
+ `TRUE` alt boş olsa bile framework bir alt şu anda seçili menü öğesinden açarsa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir kullanıcı seçili menü öğesinden alt açmaya çalıştığında framework bu yöntemi çağırır. Alt boşsa ve `IsEmptyMenuAllowed` döndürür `FALSE`, alt açılmaz.  
   
  Varsayılan uygulama döndürür `FALSE`. Bu davranış özelleştirmek için bu yöntemi geçersiz kılın.  
   
-##  <a name="isexclusive"></a>CMFCToolBarMenuButton::IsExclusive  
+##  <a name="isexclusive"></a>  CMFCToolBarMenuButton::IsExclusive  
  Düğme özel modda olup olmadığını gösterir.  
   
 ```  
@@ -490,14 +485,14 @@ virtual BOOL IsExclusive() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Düğme özel modda çalışıyorsa; Aksi takdirde `FALSE`.  
+ `TRUE` Düğme özel modda çalışıyorsa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir kullanıcı bir açılır menü düğmesi açar ve ardından fare işaretçisini başka bir araç veya menü düğmesinin taşır, açılan menü düğmesi özel modunda olmadığı sürece kapatır.  
   
  Varsayılan uygulama her zaman döndürür `FALSE`. Üzerinde özel kullanım modunu etkinleştirmek istiyorsanız, bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
   
-##  <a name="ismenupalettemode"></a>CMFCToolBarMenuButton::IsMenuPaletteMode  
+##  <a name="ismenupalettemode"></a>  CMFCToolBarMenuButton::IsMenuPaletteMode  
  Aşağı açılan menüden palet modunda olup olmadığını belirler.  
   
 ```  
@@ -505,12 +500,12 @@ BOOL IsMenuPaletteMode() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Palet mod, aksi takdirde etkinleştirilirse `FALSE`.  
+ `TRUE` Palet mod, aksi takdirde etkinleştirilirse `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Menü düğmesine palet moda ayarlandığında, yalnızca sınırlı sayıda satır ile birden çok sütunda menü öğeleri görünür. Satır sayısını elde etmek için bu yöntemi çağırın. Etkinleştirmek veya çağırarak palet modu devre dışı [CMFCToolBarMenuButton::SetMenuPaletteMode](#setmenupalettemode).  
   
-##  <a name="istearoffmenu"></a>CMFCToolBarMenuButton::IsTearOffMenu  
+##  <a name="istearoffmenu"></a>  CMFCToolBarMenuButton::IsTearOffMenu  
  Aşağı açılan menüden bir etiketleri çubuğu olup olmadığını gösterir.  
   
 ```  
@@ -518,12 +513,12 @@ virtual BOOL IsTearOffMenu() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`araç çubuğu menü düğmesi etiketleri çubuğu varsa; Aksi takdirde `FALSE`.  
+ `TRUE` araç çubuğu menü düğmesi etiketleri çubuğu varsa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Etiketleri özelliğini etkinleştirmek ve etiketleri ayarlamak için kimliği çağrısı [CMFCToolBarMenuButton::SetTearOff](#settearoff).  
   
-##  <a name="m_balwayscallownerdraw"></a>CMFCToolBarMenuButton::m_bAlwaysCallOwnerDraw  
+##  <a name="m_balwayscallownerdraw"></a>  CMFCToolBarMenuButton::m_bAlwaysCallOwnerDraw  
  Framework her zaman çağırması olup olmadığını belirtir [CFrameWndEx::OnDrawMenuImage](../../mfc/reference/cframewndex-class.md#ondrawmenuimage) ne zaman bir düğme çizilir.  
   
 ```  
@@ -533,7 +528,7 @@ static BOOL m_bAlwaysCallOwnerDraw;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye değişkeni ayarlandığında `TRUE`, düğme her zaman çağırır [CFrameWndEx::OnDrawMenuImage](../../mfc/reference/cframewndex-class.md#ondrawmenuimage) düğmeyi görüntüyü yöntemi. Zaman `m_bAlwaysCallOwnerDraw` olan `FALSE`, görüntü önceden varsa düğmesi resim çizer. Aksi takdirde, çağıran `OnDrawMenuImage`.  
   
-##  <a name="onaftercreatepopupmenu"></a>CMFCToolBarMenuButton::OnAfterCreatePopupMenu  
+##  <a name="onaftercreatepopupmenu"></a>  CMFCToolBarMenuButton::OnAfterCreatePopupMenu  
 
   
 ```  
@@ -542,7 +537,7 @@ virtual void OnAfterCreatePopupMenu();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onbeforedrag"></a>CMFCToolBarMenuButton::OnBeforeDrag  
+##  <a name="onbeforedrag"></a>  CMFCToolBarMenuButton::OnBeforeDrag  
 
   
 ```  
@@ -553,7 +548,7 @@ virtual BOOL OnBeforeDrag() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="oncalculatesize"></a>CMFCToolBarMenuButton::OnCalculateSize  
+##  <a name="oncalculatesize"></a>  CMFCToolBarMenuButton::OnCalculateSize  
 
   
 ```  
@@ -564,15 +559,15 @@ virtual SIZE OnCalculateSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`sizeDefault`  
- [in]`bHorz`  
+ [in] `pDC`  
+ [in] `sizeDefault`  
+ [in] `bHorz`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="oncancelmode"></a>CMFCToolBarMenuButton::OnCancelMode  
+##  <a name="oncancelmode"></a>  CMFCToolBarMenuButton::OnCancelMode  
 
   
 ```  
@@ -581,7 +576,7 @@ virtual void OnCancelMode();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onchangeparentwnd"></a>CMFCToolBarMenuButton::OnChangeParentWnd  
+##  <a name="onchangeparentwnd"></a>  CMFCToolBarMenuButton::OnChangeParentWnd  
 
   
 ```  
@@ -589,11 +584,11 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pWndParent`  
+ [in] `pWndParent`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onclick"></a>CMFCToolBarMenuButton::OnClick  
+##  <a name="onclick"></a>  CMFCToolBarMenuButton::OnClick  
 
   
 ```  
@@ -603,14 +598,14 @@ virtual BOOL OnClick(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pWnd`  
- [in]`bDelay`  
+ [in] `pWnd`  
+ [in] `bDelay`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onclickmenuitem"></a>CMFCToolBarMenuButton::OnClickMenuItem  
+##  <a name="onclickmenuitem"></a>  CMFCToolBarMenuButton::OnClickMenuItem  
  Kullanıcı bir öğeyi aşağı açılır menüde seçtiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -618,14 +613,14 @@ virtual BOOL OnClickMenuItem();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `FALSE`framework varsayılan menü öğesi işleme devam etmesi gerekiyorsa; Aksi takdirde `TRUE`. Varsayılan uygulama her zaman döndürür `FALSE`.  
+ `FALSE` framework varsayılan menü öğesi işleme devam etmesi gerekiyorsa; Aksi takdirde `TRUE`. Varsayılan uygulama her zaman döndürür `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı bir menü öğesini tıklattığında framework bu öğeyle ilişkili bir komut yürütür.  
   
  Menü öğesi işleme özelleştirmek için geçersiz kılma `OnClickMenuItem` türetilen bir sınıfta `CMFCToolBarMenuButton` sınıfı. Ayrıca geçersiz kılmanız gerekir [CFrameWndEx::OnShowPopupMenu](../../mfc/reference/cframewndex-class.md#onshowpopupmenu) ve türetilmiş sınıf örnekleri ile özel işlem gerektiren menü düğmelerini değiştirin.  
   
-##  <a name="oncontexthelp"></a>CMFCToolBarMenuButton::OnContextHelp  
+##  <a name="oncontexthelp"></a>  CMFCToolBarMenuButton::OnContextHelp  
 
   
 ```  
@@ -633,13 +628,13 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pWnd`  
+ [in] `pWnd`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondraw"></a>CMFCToolBarMenuButton::OnDraw  
+##  <a name="ondraw"></a>  CMFCToolBarMenuButton::OnDraw  
 
   
 ```  
@@ -655,18 +650,18 @@ virtual void OnDraw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`rect`  
- [in]`pImages`  
- [in]`bHorz`  
- [in]`bCustomizeMode`  
- [in]`bHighlight`  
- [in]`bDrawBorder`  
- [in]`bGrayDisabledButtons`  
+ [in] `pDC`  
+ [in] `rect`  
+ [in] `pImages`  
+ [in] `bHorz`  
+ [in] `bCustomizeMode`  
+ [in] `bHighlight`  
+ [in] `bDrawBorder`  
+ [in] `bGrayDisabledButtons`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondrawoncustomizelist"></a>CMFCToolBarMenuButton::OnDrawOnCustomizeList  
+##  <a name="ondrawoncustomizelist"></a>  CMFCToolBarMenuButton::OnDrawOnCustomizeList  
 
   
 ```  
@@ -677,15 +672,15 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`rect`  
- [in]`bSelected`  
+ [in] `pDC`  
+ [in] `rect`  
+ [in] `bSelected`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="openpopupmenu"></a>CMFCToolBarMenuButton::OpenPopupMenu  
+##  <a name="openpopupmenu"></a>  CMFCToolBarMenuButton::OpenPopupMenu  
  Araç çubuğu menü düğmesinin menüsü açılır menü kullanıcı oturum açtığında çerçevesi tarafından çağrılır.  
   
 ```  
@@ -693,16 +688,16 @@ virtual BOOL OpenPopupMenu(CWnd* pWnd=NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pWnd`  
+ [in] `pWnd`  
  Aşağı açılan menü komutlarını alır penceresi belirtir. Bu olabilir `NULL` yalnızca araç menü düğmesi bir üst pencere varsa.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`zaman bir [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md) nesne oluşturulan ve açılan başarıyla; Aksi halde `FALSE`.  
+ `TRUE` zaman bir [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md) nesne oluşturulan ve açılan başarıyla; Aksi halde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı aşağı açılan menüden bir araç çubuğu menüsü düğmesinden oturum açtığında bu işlev çerçevesi tarafından çağrılır.  
   
-##  <a name="resetimagetodefault"></a>CMFCToolBarMenuButton::ResetImageToDefault  
+##  <a name="resetimagetodefault"></a>  CMFCToolBarMenuButton::ResetImageToDefault  
 
   
 ```  
@@ -711,7 +706,7 @@ virtual void ResetImageToDefault();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="savebarstate"></a>CMFCToolBarMenuButton::SaveBarState  
+##  <a name="savebarstate"></a>  CMFCToolBarMenuButton::SaveBarState  
 
   
 ```  
@@ -721,7 +716,7 @@ virtual void SaveBarState();
 ### <a name="remarks"></a>Açıklamalar  
  Sürükle ve bırak işlemi sonucunda bir araç çubuğu düğmesi oluşturduğunda framework bu yöntemi çağırır. Bu yöntemi çağırır [CMFCPopupMenu::SaveState](../../mfc/reference/cmfcpopupmenu-class.md#savestate) onun menü yeniden oluşturmak için açılır menünün üst düğme neden en üst düzey açılır menüsünün yöntemi.  
   
-##  <a name="serialize"></a>CMFCToolBarMenuButton::Serialize  
+##  <a name="serialize"></a>  CMFCToolBarMenuButton::Serialize  
 
   
 ```  
@@ -729,11 +724,11 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`ar`  
+ [in] `ar`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setaccdata"></a>CMFCToolBarMenuButton::SetACCData  
+##  <a name="setaccdata"></a>  CMFCToolBarMenuButton::SetACCData  
  Şerit öğesi için erişilebilirlik verilerini ayarlar.  
   
 ```  
@@ -755,7 +750,7 @@ virtual BOOL SetACCData(
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak bu yöntem erişilebilirlik verileri Şerit öğesi için ve her zaman döndürür ayarlar `TRUE`. Erişilebilirlik veri kümesi ve başarı veya başarısızlık belirten bir değer döndürmek için bu yöntemi geçersiz kılın.  
   
-##  <a name="setmenuonly"></a>CMFCToolBarMenuButton::SetMenuOnly  
+##  <a name="setmenuonly"></a>  CMFCToolBarMenuButton::SetMenuOnly  
  Geçerli komut kimliği ve bir alt olduğunda düğme menü düğmesini veya Bölünmüş düğme çizilip çizilmeyeceğini belirler.  
   
 ```  
@@ -763,13 +758,13 @@ void SetMenuOnly(BOOL bMenuOnly);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bMenuOnly`  
- `TRUE`Geçerli komut kimliği ve bir alt sahip olduğunda bu düğmeye menü düğmesi olarak göstermek için `FALSE` geçerli komut kimliği ve bir alt sahip olduğunda bu düğmeye Bölünmüş düğme olarak göstermek için.  
+ [in] `bMenuOnly`  
+ `TRUE` Geçerli komut kimliği ve bir alt sahip olduğunda bu düğmeye menü düğmesi olarak göstermek için `FALSE` geçerli komut kimliği ve bir alt sahip olduğunda bu düğmeye Bölünmüş düğme olarak göstermek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Araç çubuğu menü düğmesi bir alt ve komut kimliği olduğunda, genellikle, menü ana düğmesi ve ekli bir ok düğmesine sahip bir Bölünmüş düğme gibi görünüyor. Bu yöntem çağırırsanız ve `bMenuOnly` olan `TRUE`, düğme bunun yerine bir aşağı ok düğmesine ile tek menü düğmesi gibi görünüyor. Kullanıcı her iki modda oku tıkladığında, alt açar ve kullanıcı tıklattığında komutu her iki modda framework düğmesi ok olmayan parçası yürütür.  
   
-##  <a name="setmenupalettemode"></a>CMFCToolBarMenuButton::SetMenuPaletteMode  
+##  <a name="setmenupalettemode"></a>  CMFCToolBarMenuButton::SetMenuPaletteMode  
  Aşağı açılan menüden palet modunda olup olmadığını belirtir.  
   
 ```  
@@ -779,16 +774,16 @@ void SetMenuPaletteMode(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bMenuPaletteMode`  
+ [in] `bMenuPaletteMode`  
  Aşağı açılan menüden palet modunda olup olmadığını belirtir.  
   
- [in]`nPaletteRows`  
+ [in] `nPaletteRows`  
  Palet satır sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Palet modunda tüm menü öğelerini sütunlu palet olarak görüntülenir. Kullanarak satır sayısını belirtin `nPaletteRows`.  
   
-##  <a name="setmessagewnd"></a>CMFCToolBarMenuButton::SetMessageWnd  
+##  <a name="setmessagewnd"></a>  CMFCToolBarMenuButton::SetMessageWnd  
 
   
 ```  
@@ -796,11 +791,11 @@ void SetMessageWnd(CWnd* pWndMessage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pWndMessage`  
+ [in] `pWndMessage`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setradio"></a>CMFCToolBarMenuButton::SetRadio  
+##  <a name="setradio"></a>  CMFCToolBarMenuButton::SetRadio  
  İşaretlendiğinde bir radyo düğmesi stil simgesi görüntülemek için araç çubuğu menü düğmesi ayarlar.  
   
 ```  
@@ -812,7 +807,7 @@ virtual void SetRadio();
   
  Bu yöntemi çağırın ve menü düğmesi şu anda görüntülenen yenilenecektir.  
   
-##  <a name="settearoff"></a>CMFCToolBarMenuButton::SetTearOff  
+##  <a name="settearoff"></a>  CMFCToolBarMenuButton::SetTearOff  
  Açılır menü için etiketleri çubuğu Kimliğini belirtir.  
   
 ```  
@@ -820,7 +815,7 @@ virtual void SetTearOff(UINT uiBarID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiBarID`  
+ [in] `uiBarID`  
  Bir yeni etiketleri belirtir çubuk kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  

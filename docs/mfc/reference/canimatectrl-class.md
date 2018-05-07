@@ -1,12 +1,9 @@
 ---
-title: "CAnimateCtrl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAnimateCtrl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CAnimateCtrl
@@ -33,17 +30,15 @@ helpviewer_keywords:
 - CAnimateCtrl [MFC], Seek
 - CAnimateCtrl [MFC], Stop
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58918a45daa1a6f64c160d79f52503e3a3c61cff
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c1032ffac46af6370c45f4bcb2c251ddae73ce69
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="canimatectrl-class"></a>CAnimateCtrl sınıfı
 Windows ortak animasyon denetimi işlevselliğini sağlar.  
@@ -112,7 +107,7 @@ class CAnimateCtrl : public CWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxcmn.h  
   
-##  <a name="canimatectrl"></a>CAnimateCtrl::CAnimateCtrl  
+##  <a name="canimatectrl"></a>  CAnimateCtrl::CAnimateCtrl  
  Oluşturan bir `CAnimateCtrl` nesnesi.  
   
 ```  
@@ -125,7 +120,7 @@ CAnimateCtrl();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCControlLadenDialog#56](../../mfc/codesnippet/cpp/canimatectrl-class_1.cpp)]  
   
-##  <a name="close"></a>CAnimateCtrl::Close  
+##  <a name="close"></a>  CAnimateCtrl::Close  
  Animasyon denetimi (varsa) içinde daha önce açıldı AVI küçük kapatır ve belleğinden kaldırır.  
   
 ```  
@@ -138,7 +133,7 @@ BOOL Close();
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CAnimateCtrl::CAnimateCtrl](#canimatectrl).  
   
-##  <a name="create"></a>CAnimateCtrl::Create  
+##  <a name="create"></a>  CAnimateCtrl::Create  
  Animasyon denetimi oluşturur ve ona ekler bir `CAnimateCtrl` nesnesi.  
   
 ```  
@@ -183,7 +178,7 @@ virtual BOOL Create(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CAnimateCtrl::CAnimateCtrl](#canimatectrl).  
   
-##  <a name="createex"></a>CAnimateCtrl::CreateEx  
+##  <a name="createex"></a>  CAnimateCtrl::CreateEx  
  Bir denetimi (alt pencere) oluşturur ve bunu ile ilişkilendirir `CAnimateCtrl` nesnesi.  
   
 ```  
@@ -217,7 +212,7 @@ virtual BOOL CreateEx(
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım `CreateEx` yerine [oluşturma](#create) Windows genişletilmiş stili önsöz tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için **WS_EX_**.  
   
-##  <a name="isplaying"></a>CAnimateCtrl::IsPlaying  
+##  <a name="isplaying"></a>  CAnimateCtrl::IsPlaying  
  Ses Video araya eklemeli (AVI) küçük çalma olup olmadığını gösterir.  
   
 ```  
@@ -225,12 +220,12 @@ BOOL IsPlaying() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`bir AVI küçük yürütülüyor Aksi takdirde `false`.  
+ `true` bir AVI küçük yürütülüyor Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [ACM_ISPLAYING](http://msdn.microsoft.com/library/windows/desktop/bb761895) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="open"></a>CAnimateCtrl::Open  
+##  <a name="open"></a>  CAnimateCtrl::Open  
  Bir AVI küçük açmak ve ilk çerçevesini görüntülemek için bu işlevini çağırın.  
   
 ```  
@@ -262,7 +257,7 @@ BOOL Open(UINT nID);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CAnimateCtrl::CAnimateCtrl](#canimatectrl).  
   
-##  <a name="play"></a>CAnimateCtrl::Play  
+##  <a name="play"></a>  CAnimateCtrl::Play  
  Animasyon denetimi içinde bir AVI küçük yürütmek için bu işlevini çağırın.  
   
 ```  
@@ -291,7 +286,7 @@ BOOL Play(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CAnimateCtrl::CAnimateCtrl](#canimatectrl).  
   
-##  <a name="seek"></a>CAnimateCtrl::Seek  
+##  <a name="seek"></a>  CAnimateCtrl::Seek  
  Statik olarak tek bir çerçeve AVI küçük görüntülemek için bu işlevini çağırın.  
   
 ```  
@@ -311,7 +306,7 @@ BOOL Seek(UINT nTo);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CAnimateCtrl::CAnimateCtrl](#canimatectrl).  
   
-##  <a name="stop"></a>CAnimateCtrl::Stop  
+##  <a name="stop"></a>  CAnimateCtrl::Stop  
  Animasyon denetimi içinde bir AVI klibi yürütmeyi durdurmak için bu işlevini çağırın.  
   
 ```  

@@ -1,13 +1,10 @@
 ---
-title: "TN040: MFC OLE yeniden boyutlandırma ve yakınlaştırma yerinde | Microsoft Docs"
-ms.custom: 
+title: 'TN040: MFC OLE yeniden boyutlandırma ve yakınlaştırma yerinde | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.mfc.ole
 dev_langs:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - zooming and in-place activation
 - in-place activation, zooming and resizing
 ms.assetid: 4d7859bd-0b2e-4254-be62-2735cecf02c6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1113da01e58ec00cd4420aab4424b1c20e127e0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bf8b90aed96135967167c8048f775fc7530f85d6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn040-mfcole-in-place-resizing-and-zooming"></a>TN040: MFC/OLE Yerinde Yeniden Boyutlandırma ve Yakınlaştırma
 > [!NOTE]
@@ -54,7 +49,7 @@ ms.lasthandoff: 12/21/2017
   
  MFC OLE örnek doğru yakınlaştırma örneği için bkz: [HIERSVR](../visual-cpp-samples.md). Metni görüntüleyen ve doğrusal bir şekilde (ipuçlarını, tipografi kuralları, tasarım genişlikleri ve konuyu karmaşık hale yükseklikte tüm) metin, genel olarak, ölçeklenmez olarak HIERSVR içinde yakınlaştırma karmaşık. Yine de, HIERSVR doğru yakınlaştırma uygulamak için makul bir başvuru ve bu nedenle MFC öğretici [KARALAMA](../visual-cpp-samples.md) (adım 7).  
   
- `COleServerDoc::GetZoomFactor`farklı ölçümleri kullanılabilir kapsayıcısından veya uygulanması sayısına dayalı yakınlaştırma faktörünü belirler, `COleServerItem` ve `COleServerDoc` sınıfları. Kısacası, geçerli yakınlaştırma faktörünü aşağıdaki formülde belirlenir:  
+ `COleServerDoc::GetZoomFactor` farklı ölçümleri kullanılabilir kapsayıcısından veya uygulanması sayısına dayalı yakınlaştırma faktörünü belirler, `COleServerItem` ve `COleServerDoc` sınıfları. Kısacası, geçerli yakınlaştırma faktörünü aşağıdaki formülde belirlenir:  
   
 ```  
 Position Rectangle (PR) / Container Extent (CE)  
@@ -64,7 +59,7 @@ Position Rectangle (PR) / Container Extent (CE)
   
  KAPSAYICI ölçüde hesaplamak için biraz daha karmaşıktır. Kapsayıcı çağrıldıklarında `COleServerItem::OnSetExtent` (çağrısıyla `COleClientItem::SetExtent`), KAPSAYICI ölçüde mantıksal inç başına piksel sayısına dayalı piksel dönüştürülen bu değeri olur. Kapsayıcı (genellikle söz konusu olduğu) SetExtent çağırmadı sonra KAPSAYICI ölçüde döndürülen boyutudur `COleServerItem::OnGetExtent`. Kapsayıcı SetExtent çağırmadı sahipse, bu nedenle, framework olsaydı kapsayıcı % 100'ile doğal ölçüde adlı olduğunu varsayar (döndürülen değer **COleServerItem::GetExtent**). Başka bir yolu, belirtilen kapsayıcı öğenin % (artık, daha az) 100 görüntülüyor framework varsayar.  
   
- Ancak unutmayın önemlidir `COleServerItem::OnSetExtent` ve `COleServerItem::OnGetExtent` benzer adlara sahip aynı öznitelik öğenin işlemek değil. `OnSetExtent`nesnenin ne kadar kapsayıcısındaki (bağımsız olarak yakınlaştırma faktörünü) görünür olduğunu biliyorsanız sunucu izin vermek için çağrılır ve `OnGetExtent` nesnesinin ideal boyutunu belirlemek için kapsayıcı tarafından çağrılır.  
+ Ancak unutmayın önemlidir `COleServerItem::OnSetExtent` ve `COleServerItem::OnGetExtent` benzer adlara sahip aynı öznitelik öğenin işlemek değil. `OnSetExtent` nesnenin ne kadar kapsayıcısındaki (bağımsız olarak yakınlaştırma faktörünü) görünür olduğunu biliyorsanız sunucu izin vermek için çağrılır ve `OnGetExtent` nesnesinin ideal boyutunu belirlemek için kapsayıcı tarafından çağrılır.  
   
  Her ilgili API'leri bakarak NET bir resim elde edebilirsiniz:  
   

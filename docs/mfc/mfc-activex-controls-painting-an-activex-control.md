@@ -1,30 +1,25 @@
 ---
 title: 'MFC ActiveX denetimleri: ActiveX denetimini boyama | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], painting
 - MFC ActiveX controls [MFC], optimizing
 ms.assetid: 25fff9c0-4dab-4704-aaae-8dfb1065dee3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2a2dc7b0cebbfaa6f6fe7dbe7dc69e5d4f80121
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f7026dd5ffaab04eb445ae68449127e65c772394
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-activex-controls-painting-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Boyama
 Bu makalede, ActiveX denetimini boyama işleminin ve boyama kod işlemi iyileştirmek için nasıl alter açıklanır. (Bkz [denetim çizim en iyi duruma getirme](../mfc/optimizing-control-drawing.md) teknikleri denetimleri tek tek zorunluluğunu ortadan kaldırarak çizim iyileştirmek nasıl daha önce seçilen GDI nesneleri geri yüklemek için. Tüm denetimler çizilmiş sonra kapsayıcı otomatik olarak özgün nesneleri geri yükleyebilirsiniz.)  
@@ -39,7 +34,7 @@ Bu makalede, ActiveX denetimini boyama işleminin ve boyama kod işlemi iyileşt
   
 -   [Meta dosyaları kullanarak denetim boyamak nasıl](#_core_painting_your_control_using_metafiles)  
   
-##  <a name="_core_the_painting_process_of_an_activex_control"></a>Bir ActiveX denetimini boyama işlemi  
+##  <a name="_core_the_painting_process_of_an_activex_control"></a> Bir ActiveX denetimini boyama işlemi  
  ActiveX denetimleri başlangıçta görüntülenir veya yeniden düzenlenmiş, bunlar MFC, önemli bir ayrımdır ile kullanılarak geliştirilen diğer uygulamalar için benzer bir boyama süreci izleyin: ActiveX denetimlerini etkin veya etkin olmayan bir durumda olabilir.  
   
  Etkin bir denetimi alt pencere olarak bir ActiveX denetim kapsayıcısındaki temsil edilir. Diğer windows gibi kendisini boyama için sorumlu olduğu durumlarda bir `WM_PAINT` iletisi alındığında. Denetimin temel sınıfı olan [COleControl](../mfc/reference/colecontrol-class.md), bu iletiyi işleyen kendi `OnPaint` işlevi. Bu varsayılan uygulama çağırır `OnDraw` denetiminizin işlevi.  
@@ -62,14 +57,14 @@ Bu makalede, ActiveX denetimini boyama işleminin ve boyama kod işlemi iyileşt
 > [!NOTE]
 >  Bir denetim boyama yaparken olarak geçirilen cihaz bağlamı durumu hakkındaki varsayımları yapmamalısınız *pdc* parametresi `OnDraw` işlevi. Bazen cihaz bağlamı kapsayıcı uygulama tarafından sağlanan ve mutlaka varsayılan durumuna başlatılmayacak. Özellikle, kalemler, Fırçalar, renkleri, yazı tipleri ve çizim kodunuzu bağımlı diğer kaynaklar açıkça seçin.  
   
-##  <a name="_core_optimizing_your_paint_code"></a>Paint kodunuzu iyileştirme  
+##  <a name="_core_optimizing_your_paint_code"></a> Paint kodunuzu iyileştirme  
  Denetimi başarıyla kendisini boyama olduğu sonra sonraki en iyi duruma getirme adımdır `OnDraw` işlevi.  
   
  ActiveX denetimini boyama varsayılan uygulaması tüm denetim alanı boyar. Bu basit denetimler için yeterli olmakla birlikte, güncelleştirme gerekli bölümü, tüm denetim yerine yeniden çizilmiş yalnızca çoğu durumda denetimi yeniden çizerken daha hızlı olacaktır.  
   
  `OnDraw` İşlevi geçirerek en iyi duruma getirme kolay bir yöntemini sağlar `rcInvalid`, yeniden ihtiyacı olan denetim dikdörtgen. Bu alan boyama işlemi hızlandırmak için tüm denetim alanı genellikle daha küçük kullanın.  
   
-##  <a name="_core_painting_your_control_using_metafiles"></a>Meta dosyaları kullanarak denetim boyama  
+##  <a name="_core_painting_your_control_using_metafiles"></a> Meta dosyaları kullanarak denetim boyama  
  Çoğu durumda `pdc` parametresi `OnDraw` işlevi bir ekran cihaz bağlamı (DC) işaret eder. Ancak, denetim veya Baskı Önizleme oturumu sırasında görüntülerini yazdırırken, işleme için alınan DC bir "meta DC" adlı bir özel türüdür. Hemen kendisine gönderilen istekleri işler, bir ekran DC, daha sonraki bir zamanda tekrarlanmasını istekleri meta dosyası DC depolar. Bazı kapsayıcı uygulamaları meta dosyası Tasarım modunda DC kullanarak denetim görüntüsü oluşturmak de seçebilirsiniz.  
   
  İstekleri çizim meta dosyası, iki arabirim işlevleri aracılığıyla kapsayıcı tarafından yapılabilir: **IViewObject::Draw** (Bu işlev, aynı zamanda olmayan-çizim meta dosyası için çağrılabilir) ve **IDataObject::GetData**. DC geçirilen parametrelerden biri meta dosyası, MFC çerçevesi için bir çağrı yapar [COleControl::OnDrawMetafile](../mfc/reference/colecontrol-class.md#ondrawmetafile). Bu sanal üye işlevi olduğundan, bu işlev herhangi bir özel işlem yapmak için Denetim sınıfında geçersiz kılar. Varsayılan davranış çağrıları `COleControl::OnDraw`.  

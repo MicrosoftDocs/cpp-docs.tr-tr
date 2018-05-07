@@ -1,13 +1,10 @@
 ---
-title: "Yerleşen ve kayan araç çubukları | Microsoft Docs"
-ms.custom: 
+title: Yerleşen ve kayan araç çubukları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - CBRS_SIZE_DYNAMIC
 - CBRS_SIZE_FIXED
@@ -30,17 +27,15 @@ helpviewer_keywords:
 - toolbars [MFC], wrapping
 - floating palettes
 ms.assetid: b7f9f9d4-f629-47d2-a3c4-2b33fa6b51e4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6646fa33c0a78e8194faa5d511e107febca6d6f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 430af2344888696e3cbf053677ef59c7249b50bd
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="docking-and-floating-toolbars"></a>Yerleşen ve Kayan Araç Çubukları
 Microsoft Foundation Class Kitaplığı dockable araç çubukları destekler. Dockable araç çubuğu bağlı veya, kendi üst penceresi herhangi bir kenarında yerleşik veya ayrılmış veya yükleyebilir, kendi kısa çerçeve penceresinde kaydırılmış. Bu makalede, uygulamalarınızda dockable araç çubukları kullanımı açıklanmaktadır.  
@@ -65,27 +60,27 @@ Microsoft Foundation Class Kitaplığı dockable araç çubukları destekler. Do
   
  MFC genel örnek bkz [DOCKTOOL](../visual-cpp-samples.md) örnekleri için.  
   
-##  <a name="_core_enabling_docking_in_a_frame_window"></a>Bir çerçeve penceresinde yerleştirme etkinleştirme  
+##  <a name="_core_enabling_docking_in_a_frame_window"></a> Bir çerçeve penceresinde yerleştirme etkinleştirme  
  Araç çubukları için bir çerçeve pencere sabitlemek için çerçeve penceresi (veya hedef) yerleştirme izin vermek için etkinleştirilmesi gerekir. Bu yapılır kullanarak [CFrameWnd::EnableDocking](../mfc/reference/cframewnd-class.md#enabledocking) alır işlevi `DWORD` stil bir dizi parametre BITS yerleştirme çerçeve penceresi hangi tarafının kabul belirten. Bir araç hakkında yerleşik için ise ve için yerleşik birden fazla kenara vardır, yanları belirtilen geçirilen parametre `EnableDocking` aşağıdaki sırayla kullanılır: üst, alt, sol, sağ. Kullanabilmek isterseniz, Denetim sabitlemek için herhangi bir yere çubuklarını, geçirmek `CBRS_ALIGN_ANY` için `EnableDocking`.  
   
-##  <a name="_core_enabling_docking_for_a_toolbar"></a>İçin bir araç çubuğu yerleştirme etkinleştirme  
+##  <a name="_core_enabling_docking_for_a_toolbar"></a> İçin bir araç çubuğu yerleştirme etkinleştirme  
  Yerleştirme için hedef hazırladıktan sonra araç çubuğu (veya kaynak) benzer bir şekilde hazırlamanız gerekir. Çağrı [CControlBar::EnableDocking](../mfc/reference/ccontrolbar-class.md#enabledocking) sabitlemek istediğiniz her araç için hedef belirleme kenarlara araç çubuğu yerleştirme. Yapılan çağrıda belirtilen yanları hiçbiri `CControlBar::EnableDocking` çerçeve penceresinde yerleştirme için etkin yanları eşleşmiyor, araç sabitleyemezsiniz — float. Kaydırılmış olan sonra çerçeve penceresi yerleştirme kuramıyor kayan araç kalır.  
   
  İstediğiniz efekti kalıcı olarak kayan araç çubuğunu çağırır `EnableDocking` bir parametre 0 ile. ' I çağırın [CFrameWnd::FloatControlBar](../mfc/reference/cframewnd-class.md#floatcontrolbar). Araç çubuğu kayan, herhangi bir yere yerleştirme kurulamıyor kalıcı olarak kalır.  
   
-##  <a name="_core_docking_the_toolbar"></a>Araç çubuğu yerleştirme  
+##  <a name="_core_docking_the_toolbar"></a> Araç çubuğu yerleştirme  
  Framework çağrıları [CFrameWnd::DockControlBar](../mfc/reference/cframewnd-class.md#dockcontrolbar) çalıştığında kullanıcı araç çubuğu yerleştirme verir çerçeve penceresi tarafında bırakın.  
   
  Buna ek olarak, Denetim çubuklarını çerçeve pencere sabitlemek için herhangi bir zamanda bu işlevini çağırın. Bu, başlatma sırasında normal olarak gerçekleştirilir. Birden çok araç, belirli bir çerçeve penceresi kenarına yerleştirilmiş.  
   
-##  <a name="_core_floating_the_toolbar"></a>Kayan araç çubuğu  
+##  <a name="_core_floating_the_toolbar"></a> Kayan araç çubuğu  
  Çerçeve penceresinden dockable araç ayırma kayan araç çubuğu adı verilir. Çağrı [CFrameWnd::FloatControlBar](../mfc/reference/cframewnd-class.md#floatcontrolbar) Bunu yapmak için. Kaydırılmış için araç çubuğunda, nereye yerleştirileceğini noktası ve kayan araç yatay veya dikey olup olmadığını belirleyen bir hizalama stili belirtin.  
   
  Bir kullanıcı bir araç çubuğu sabitlendiği konumdan sürüklediği ve burada yerleştirme etkin bir konumda bırakır framework bu işlevi çağırır. Bu herhangi bir yere çerçeve penceresinin içinde veya dışında olabilir. İle `DockControlBar`, bu işlev başlatma sırasında çağırabilirsiniz.  
   
  MFC uygulaması dockable araç çubukları, bazı dockable araç çubukları destekleyen bazı uygulamalarda bulunan genişletilmiş özellikler sağlamaz. Özelleştirilebilir araç çubukları gibi özellikleri sağlanmadı.  
   
-##  <a name="_core_dynamically_resizing_the_toolbar"></a>Araç çubuğu dinamik olarak yeniden boyutlandırma  
+##  <a name="_core_dynamically_resizing_the_toolbar"></a> Araç çubuğu dinamik olarak yeniden boyutlandırma  
  Visual C++ sürüm 4.0 itibariyle bunu kayan araç çubukları dinamik olarak yeniden boyutlandırmak için uygulamanızı kullanıcılar için olası duruma getirebilirsiniz. Genellikle, bir araç çubuğu yatay olarak bir uzun, doğrusal şekli vardır. Ancak, araç çubuğunun yönlendirmesini ve şeklini değiştirebilirsiniz. Örneğin, kullanıcı bir çerçeve penceresi dikey tarafının karşı bir araç çubuğu docks, Şekil dikey bir düzene değiştirir. Araç çubuğu düğmelerini birden çok satır ile dikdörtgenin içine yeniden şekillendirmek mümkündür.  
   
  Şunları yapabilirsiniz:  
@@ -106,7 +101,7 @@ Microsoft Foundation Class Kitaplığı dockable araç çubukları destekler. Do
   
  Aynı zamanda [CToolBar::GetButtonStyle](../mfc/reference/ctoolbar-class.md#getbuttonstyle) durumu ve stil düğmelerinin çubuklarınızı üzerinde dönün. Düğmenin stilini düğmesi nasıl göründüğünü ve nasıl kullanıcı girişine yanıt vereceğini belirler; Durum düğmesi Sarmalanan bir durumda olup olmadığını bildirir.  
   
-##  <a name="_core_setting_wrap_positions_for_a_fixed_style_toolbar"></a>Ayarı kaydırma konumlar için sabit stil araç çubuğu  
+##  <a name="_core_setting_wrap_positions_for_a_fixed_style_toolbar"></a> Ayarı kaydırma konumlar için sabit stil araç çubuğu  
  Stil sabit boyutu olan bir araç için araç çubuğu düğmesi dizinleri, araç kaydırılır belirleyin. Aşağıdaki kod, ana çerçeve penceresinin nasıl yapılacağı gösterilmektedir `OnCreate` geçersiz kıl:  
   
  [!code-cpp[NVC_MFCDocViewSDI#10](../mfc/codesnippet/cpp/docking-and-floating-toolbars_1.cpp)]  

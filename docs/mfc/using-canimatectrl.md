@@ -1,13 +1,10 @@
 ---
 title: CAnimateCtrl kullanma | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - CAnimateCtrl
 dev_langs:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - controls [MFC], animation
 - CAnimateCtrl class [MFC], about CAnimateCtrl class [MFC]
 ms.assetid: 696c0805-bef0-4e2e-a9e7-b37b9215b7f0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f27fd24c3c4334476c78ba0b59c90cbbb0d51f5d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5685d6aed00cd57f4329b3865f96fa75226d7cf6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-canimatectrl"></a>CAnimateCtrl Kullanma
 Sınıfı tarafından temsil edilen bir animasyon denetimi [CAnimateCtrl](../mfc/reference/canimatectrl-class.md), bir küçük Ses Video araya eklemeli (AVI) biçiminde görüntüler penceredir — standart Windows video/ses biçimi. Bir AVI klip, film gibi bit eşlem çerçeveler dizisidir.  

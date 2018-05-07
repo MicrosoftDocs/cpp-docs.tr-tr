@@ -1,13 +1,10 @@
 ---
-title: "TOOLTIPTEXT yapısı | Microsoft Docs"
-ms.custom: 
+title: TOOLTIPTEXT yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - TOOLTIPTEXT
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - TOOLTIPTEXT structure [MFC]
 - tool tips [MFC], notifications
 ms.assetid: 547591bf-80f5-400e-a2a7-0708cfffbb5d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: becbdcfcc6dbd26ae3095de098d12dbc078530cc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f64a93529905e84fe043947772e55b9332b5106e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tooltiptext-structure"></a>TOOLTIPTEXT Yapısı
 Yazma işleminde, [araç ipucu bildirim işleyicisi](../mfc/handling-ttn-needtext-notification-for-tool-tips.md), kullanmanız gereken `TOOLTIPTEXT` yapısı. Üyeleri `TOOLTIPTEXT` yapısı şunlardır:  

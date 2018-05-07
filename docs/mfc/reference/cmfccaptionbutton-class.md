@@ -1,12 +1,9 @@
 ---
-title: "CMFCCaptionButton sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCCaptionButton sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCCaptionButton
@@ -33,17 +30,15 @@ helpviewer_keywords:
 - CMFCCaptionButton [MFC], OnDraw
 - CMFCCaptionButton [MFC], SetMiniFrameButton
 ms.assetid: c5774b38-c0dd-414a-9ede-3b2f78f233ec
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 857054bd60e206cc3a563aa5f00b872f67c58d3f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ec36bfc82064272e165ea274cd127cc626731643
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfccaptionbutton-class"></a>CMFCCaptionButton sınıfı
 `CMFCCaptionButton` Sınıfı bir takma bölmesi veya bir kısa çerçeve penceresi başlık çubuğunda görüntülenen bir düğme uygular. Genellikle, framework resim yazısı düğmeleri otomatik olarak oluşturur.  
@@ -97,7 +92,7 @@ class CMFCCaptionButton : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxcaptionbutton.h  
   
-##  <a name="cmfccaptionbutton"></a>CMFCCaptionButton::CMFCCaptionButton  
+##  <a name="cmfccaptionbutton"></a>  CMFCCaptionButton::CMFCCaptionButton  
  Oluşturan bir `CMFCCaptionButton` nesnesi.  
   
 ```  
@@ -110,10 +105,10 @@ CMFCCaptionButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nHit`  
+ [in] `nHit`  
  İlişkili düğme komutu.  
   
- [in]`bLeftAlign`  
+ [in] `bLeftAlign`  
  Düğme sola hizalı olup olmadığını belirtir.  
   
  İçin olası değerler aşağıdaki tabloda listelenmektedir `nHit` parametresi.  
@@ -133,7 +128,7 @@ CMFCCaptionButton(
   
  Resim yazısı düğmeleri sağa veya sola hizalanır.  
   
-##  <a name="gethit"></a>CMFCCaptionButton::GetHit  
+##  <a name="gethit"></a>  CMFCCaptionButton::GetHit  
  Komut çubuğu ile temsil edilen döndürür.  
   
 ```  
@@ -155,7 +150,7 @@ UINT GetHit() const;
 |`AFX_HTMENU`|Aşağı ok menü düğmesi.|  
 |`HTNOWHERE`|Varsayılan değer; bir komutu temsil eder.|  
   
-##  <a name="geticonid"></a>CMFCCaptionButton::GetIconID  
+##  <a name="geticonid"></a>  CMFCCaptionButton::GetIconID  
  İlişkili düğme görüntü kimliği döndürür.  
   
 ```  
@@ -165,11 +160,11 @@ virtual CMenuImages::IMAGES_IDS GetIconID(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bHorz`  
- `TRUE`Sol veya sağ ok resim kimlikleri için; `FALSE` için yukarı veya aşağı ok resim kimlikleri.  
+ [in] `bHorz`  
+ `TRUE` Sol veya sağ ok resim kimlikleri için; `FALSE` için yukarı veya aşağı ok resim kimlikleri.  
   
- [in]`bMaximized`  
- `TRUE`Ekranı Kapla görüntü kimliği için; `FALSE` kimliği için bir simge durumuna küçült görüntü  
+ [in] `bMaximized`  
+ `TRUE` Ekranı Kapla görüntü kimliği için; `FALSE` kimliği için bir simge durumuna küçült görüntü  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görüntü kimliği.  
@@ -177,7 +172,7 @@ virtual CMenuImages::IMAGES_IDS GetIconID(
 ### <a name="remarks"></a>Açıklamalar  
  Parametreleri simge durumuna küçült resim kimlikleri belirtin veya resim yazısı düğmeleri en üst düzeye çıkarın.  
   
-##  <a name="getrect"></a>CMFCCaptionButton::GetRect  
+##  <a name="getrect"></a>  CMFCCaptionButton::GetRect  
  Düğme tarafından Dolu Dikdörtgen döndürür.  
   
 ```  
@@ -190,7 +185,7 @@ virtual CRect GetRect() const;
 ### <a name="remarks"></a>Açıklamalar  
  Düğme göremiyorsanız, döndürülen boyutu 0'dır.  
   
-##  <a name="getsize"></a>CMFCCaptionButton::GetSize  
+##  <a name="getsize"></a>  CMFCCaptionButton::GetSize  
  Genişlik ve yükseklik düğmesinin döndürür.  
   
 ```  
@@ -203,7 +198,7 @@ static CSize GetSize();
 ### <a name="remarks"></a>Açıklamalar  
  Döndürülen boyut düğmesi kenar boşluğu ve kenarlık içerir.  
   
-##  <a name="isminiframebutton"></a>CMFCCaptionButton::IsMiniFrameButton  
+##  <a name="isminiframebutton"></a>  CMFCCaptionButton::IsMiniFrameButton  
  Başlık çubuğu yüksekliği mini boyutuna ayarlanmış olup olmadığını gösterir.  
   
 ```  
@@ -211,11 +206,11 @@ BOOL IsMiniFrameButton() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Resim yazısını mini boyutuna ayarlanır Aksi takdirde `FALSE`.  
+ `TRUE` Resim yazısını mini boyutuna ayarlanır Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="move"></a>CMFCCaptionButton::Move  
+##  <a name="move"></a>  CMFCCaptionButton::Move  
  Düğme çizim konumu ve pencere Göster durumunu ayarlar.  
   
 ```  
@@ -225,13 +220,13 @@ void Move(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`ptTo`  
+ [in] `ptTo`  
  Yeni konumu.  
   
- [in]`bHide`  
+ [in] `bHide`  
  Düğme görüntülenip görüntülenmeyeceğini belirtir.  
   
-##  <a name="ondraw"></a>CMFCCaptionButton::OnDraw  
+##  <a name="ondraw"></a>  CMFCCaptionButton::OnDraw  
  Resim yazısı düğmesini çizer.  
   
 ```  
@@ -244,25 +239,25 @@ virtual void OnDraw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Düğme için cihaz bağlamı işaretçi.  
   
- [in]`bActive`  
+ [in] `bActive`  
  Etkin düğmeye resim çizme görüntülenmeyeceğini belirtir.  
   
- [in]`bHorz`  
+ [in] `bHorz`  
  Bir türetilmiş sınıfta kullanılmak üzere ayrılmıştır.  
   
- [in]`bMaximized`  
+ [in] `bMaximized`  
  Tam ekran düğmesi resim çizme görüntülenmeyeceğini belirtir.  
   
- [in]`bDisabled`  
+ [in] `bDisabled`  
  Etkin düğmesi resim çizme görüntülenmeyeceğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `bMaximized` Parametresi Simge Durumuna Küçült düğmesi veya bir Ekranı Kapla düğmesi olduğunda kullanılır.  
   
-##  <a name="setminiframebutton"></a>CMFCCaptionButton::SetMiniFrameButton  
+##  <a name="setminiframebutton"></a>  CMFCCaptionButton::SetMiniFrameButton  
  Başlık çubuğu mini boyutunu ayarlar.  
   
 ```  
@@ -270,8 +265,8 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bSet`  
- `TRUE`Mini başlık çubuğu yüksekliği için; `FALSE` varsayılan başlık çubuğu yükseklik.  
+ [in] `bSet`  
+ `TRUE` Mini başlık çubuğu yüksekliği için; `FALSE` varsayılan başlık çubuğu yükseklik.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

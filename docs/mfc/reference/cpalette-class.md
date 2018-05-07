@@ -1,12 +1,9 @@
 ---
-title: "CPalette sınıfı | Microsoft Docs"
-ms.custom: 
+title: CPalette sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CPalette
@@ -35,17 +32,15 @@ helpviewer_keywords:
 - CPalette [MFC], ResizePalette
 - CPalette [MFC], SetPaletteEntries
 ms.assetid: 8cd95498-53ed-4852-85e1-70e522541114
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 486338d579f304a6de1a54674a7711bb6c56f38c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 36cc13fa77becf5bdeb3960f6ac9db18d5d63dbb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cpalette-class"></a>CPalette sınıfı
 Bir Windows renk paleti yalıtır.  
@@ -101,7 +96,7 @@ class CPalette : public CGdiObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="animatepalette"></a>CPalette::AnimatePalette  
+##  <a name="animatepalette"></a>  CPalette::AnimatePalette  
  Bağlı mantıksal paletindeki girişleri değiştirir `CPalette` nesnesi.  
   
 ```  
@@ -126,7 +121,7 @@ void AnimatePalette(
   
  `AnimatePalette` İşlevi yalnızca girişlerle değiştirme **PC_RESERVED** bayrağı ayarlanmış karşılık gelen **palPaletteEntry** üyesi [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) yapısı için eklenen `CPalette` nesnesi. Bkz: **LOGPALETTE** bu yapısı hakkında daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="cpalette"></a>CPalette::CPalette  
+##  <a name="cpalette"></a>  CPalette::CPalette  
  Oluşturan bir `CPalette` nesnesi.  
   
 ```  
@@ -136,7 +131,7 @@ CPalette();
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmanız kadar nesnenin ekli palet sahip `CreatePalette` bir eklemek için.  
   
-##  <a name="createhalftonepalette"></a>CPalette::CreateHalftonePalette  
+##  <a name="createhalftonepalette"></a>  CPalette::CreateHalftonePalette  
  Cihaz bağlamı için bir noktalı paleti oluşturur.  
   
 ```  
@@ -155,7 +150,7 @@ BOOL CreateHalftonePalette(CDC* pDC);
   
  Daha fazla bilgi için Windows SDK'sı gördükleri hakkında `CreateHalftonePalette` ve **StretchDIBits**.  
   
-##  <a name="createpalette"></a>CPalette::CreatePalette  
+##  <a name="createpalette"></a>  CPalette::CreatePalette  
  Başlatır bir `CPalette` Windows mantıksal renk paletini oluşturarak ve eklemeyi nesne `CPalette` nesne.  
   
 ```  
@@ -172,7 +167,7 @@ BOOL CreatePalette(LPLOGPALETTE lpLogPalette);
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için Windows SDK'sı gördükleri hakkında **LOGPALETTE** yapısı.  
   
-##  <a name="fromhandle"></a>CPalette::FromHandle  
+##  <a name="fromhandle"></a>  CPalette::FromHandle  
  Bir işaretçi döndüren bir `CPalette` nesnesi tanıtıcı bir Windows palet nesnesine verildiğinde.  
   
 ```  
@@ -189,7 +184,7 @@ static CPalette* PASCAL FromHandle(HPALETTE hPalette);
 ### <a name="remarks"></a>Açıklamalar  
  Varsa bir `CPalette` nesne zaten iliştirilmemiş Windows palet geçici bir `CPalette` nesnesi oluşturulur ve bağlı. Bu geçici `CPalette` nesnesi, hangi tüm geçici grafiği zaman durdurulacağını sonraki açışınızda uygulama boşta kalma süresi, olay döngüde olana kadar nesneler silinir yalnızca geçerli. Diğer bir deyişle, yalnızca bir pencere ileti işleme sırasında geçici nesne geçerli değil.  
   
-##  <a name="getentrycount"></a>CPalette::GetEntryCount  
+##  <a name="getentrycount"></a>  CPalette::GetEntryCount  
  Belirli bir mantıksal paleti girdileri sayısını almak üzere bu üye işlevini çağırın.  
   
 ```  
@@ -199,7 +194,7 @@ int GetEntryCount();
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir mantıksal paleti girdileri sayısı.  
   
-##  <a name="getnearestpaletteindex"></a>CPalette::GetNearestPaletteIndex  
+##  <a name="getnearestpaletteindex"></a>  CPalette::GetNearestPaletteIndex  
  Belirtilen renk değeri en yakından eşleşen mantıksal palette giriş dizinini döndürür.  
   
 ```  
@@ -213,7 +208,7 @@ UINT GetNearestPaletteIndex(COLORREF crColor) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Mantıksal paletindeki bir giriş dizini. Giriş en neredeyse belirtilen renk eşleşen renk içerir.  
   
-##  <a name="getpaletteentries"></a>CPalette::GetPaletteEntries  
+##  <a name="getpaletteentries"></a>  CPalette::GetPaletteEntries  
  Mantıksal paletindeki paleti girdileri aralığını alır.  
   
 ```  
@@ -236,7 +231,7 @@ UINT GetPaletteEntries(
 ### <a name="return-value"></a>Dönüş Değeri  
  Girdi sayısı mantıksal paletinden alınır; 0 işlevi başarısız oldu.  
   
-##  <a name="operator_hpalette"></a>CPalette::operator HPALETTE  
+##  <a name="operator_hpalette"></a>  CPalette::operator HPALETTE  
  Ekli Windows GDI işleyicisini almak için bu işleci kullanın `CPalette` nesnesi.  
   
 ```  
@@ -251,7 +246,7 @@ operator HPALETTE() const;
   
  Grafik nesneleri kullanma hakkında daha fazla bilgi için bkz: [grafik nesneleri](http://msdn.microsoft.com/library/windows/desktop/dd144962) Windows SDK.  
   
-##  <a name="resizepalette"></a>CPalette::ResizePalette  
+##  <a name="resizepalette"></a>  CPalette::ResizePalette  
  Bağlı mantıksal palet boyutunu değiştirir `CPalette` nesne sayısı tarafından belirtilen giriş `nNumEntries`.  
   
 ```  
@@ -270,7 +265,7 @@ BOOL ResizePalette(UINT nNumEntries);
   
  Windows API'si hakkında daha fazla bilgi için `ResizePalette`, bkz: [ResizePalette](http://msdn.microsoft.com/library/windows/desktop/dd162928) Windows SDK'sındaki.  
   
-##  <a name="setpaletteentries"></a>CPalette::SetPaletteEntries  
+##  <a name="setpaletteentries"></a>  CPalette::SetPaletteEntries  
  RGB renk değerleri ve bayrakları mantıksal paleti girdileri çeşitli ayarlar.  
   
 ```  

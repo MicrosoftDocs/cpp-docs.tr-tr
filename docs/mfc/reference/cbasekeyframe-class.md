@@ -1,12 +1,9 @@
 ---
-title: "CBaseKeyFrame sınıfı | Microsoft Docs"
-ms.custom: 
+title: CBaseKeyFrame sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CBaseKeyFrame
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - CBaseKeyFrame [MFC], m_bIsKeyframeAtOffset
 - CBaseKeyFrame [MFC], m_keyframe
 ms.assetid: 285a2eff-e7c4-43be-b5aa-737727e6866d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dba8ba22325d3ea9e68411f0372cfac4d6b0659d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2f538874b1690be920e9c7a3b3f494ca6851c532
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cbasekeyframe-class"></a>CBaseKeyFrame sınıfı
 Bir ana kare temel işlevlerini uygular.  
@@ -88,7 +83,7 @@ class CBaseKeyFrame : public CObject;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxanimationcontroller.h  
   
-##  <a name="addtostoryboard"></a>CBaseKeyFrame::AddToStoryboard  
+##  <a name="addtostoryboard"></a>  CBaseKeyFrame::AddToStoryboard  
  Bir ana kare film şeridi ekler.  
   
 ```  
@@ -110,14 +105,14 @@ virtual BOOL AddToStoryboard(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, bir ana kare film şeridi eklemek için çağrılır.  
   
-##  <a name="cbasekeyframe"></a>CBaseKeyFrame::CBaseKeyFrame  
+##  <a name="cbasekeyframe"></a>  CBaseKeyFrame::CBaseKeyFrame  
  Bir ana kare nesnesi oluşturur.  
   
 ```  
 CBaseKeyFrame();
 ```  
   
-##  <a name="getanimationkeyframe"></a>CBaseKeyFrame::GetAnimationKeyframe  
+##  <a name="getanimationkeyframe"></a>  CBaseKeyFrame::GetAnimationKeyframe  
  Temel alınan ana kare değeri döndürür.  
   
 ```  
@@ -130,7 +125,7 @@ UI_ANIMATION_KEYFRAME GetAnimationKeyframe() const;
 ### <a name="remarks"></a>Açıklamalar  
  Temel alınan ana kare değeri için bir erişimci budur.  
   
-##  <a name="isadded"></a>CBaseKeyFrame::IsAdded  
+##  <a name="isadded"></a>  CBaseKeyFrame::IsAdded  
  Bir ana kare film şeridi eklenmiş olup olmadığını bildirir.  
   
 ```  
@@ -143,7 +138,7 @@ BOOL IsAdded() const;
 ### <a name="remarks"></a>Açıklamalar  
  Taban sınıf içinde IsAdded her zaman TRUE değerini döndürür, ancak türetilmiş sınıflarda geçersiz kılındı.  
   
-##  <a name="iskeyframeatoffset"></a>CBaseKeyFrame::IsKeyframeAtOffset  
+##  <a name="iskeyframeatoffset"></a>  CBaseKeyFrame::IsKeyframeAtOffset  
  Ana kareyi uzaklığındaki veya geçiş sonrasında film şeridi için eklenmesi gerekip gerekmediğini belirtir.  
   
 ```  
@@ -156,21 +151,21 @@ BOOL IsKeyframeAtOffset() const;
 ### <a name="remarks"></a>Açıklamalar  
  Ana kareyi uzaklıkta film şeridi için eklenmesi gerekip gerekmediğini belirtir. Uzaklık ya da geçiş türetilen bir sınıfta belirtilmelidir.  
   
-##  <a name="m_badded"></a>CBaseKeyFrame::m_bAdded  
+##  <a name="m_badded"></a>  CBaseKeyFrame::m_bAdded  
  Bu ana kare bir film şeridi eklenmiş olup olmadığını belirtir.  
   
 ```  
 BOOL m_bAdded;  
 ```  
   
-##  <a name="m_biskeyframeatoffset"></a>CBaseKeyFrame::m_bIsKeyframeAtOffset  
+##  <a name="m_biskeyframeatoffset"></a>  CBaseKeyFrame::m_bIsKeyframeAtOffset  
  Bu ana kare başka bir var olan ana kare uzaklık veya bazı geçiş işleminin sonunda film şeridi için eklenmesi gerekip gerekmediğini belirtir.  
   
 ```  
 BOOL m_bIsKeyframeAtOffset;  
 ```  
   
-##  <a name="m_keyframe"></a>CBaseKeyFrame::m_keyframe  
+##  <a name="m_keyframe"></a>  CBaseKeyFrame::m_keyframe  
  Bir Windows animasyon API ana kare temsil eder. Bir ana kare başlatılmadı, önceden tanımlanmış değer UI_ANIMATION_KEYFRAME_STORYBOARD_START ayarlanır.  
   
 ```  

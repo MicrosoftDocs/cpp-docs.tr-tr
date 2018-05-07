@@ -1,13 +1,10 @@
 ---
-title: "TN025: Belge, Görünüm ve çerçeve oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'TN025: Belge, Görünüm ve çerçeve oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.creation
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - documents [MFC], view and frame creation
 - TN025
 ms.assetid: 09254d72-6e1d-43db-80e9-693887dbeda2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89ca395b19a36c42163b854c8997cce424352ead
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6a5fd603fdb45ac0f754858384df1455f559222e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn025-document-view-and-frame-creation"></a>TN025: Belge, Görünüm ve Çerçeve Oluşturma
 > [!NOTE]
@@ -52,13 +47,13 @@ AddDocTemplate(pTemplate);
 ## <a name="doctemplates"></a>DocTemplates  
  `CDocTemplate` Oluşturan ve belgelerin yöneticisidir. Oluşturduğu belgeleri sahibidir. Uygulamanızın kaynak tabanlı bir yaklaşım aşağıda açıklanan kullanıyorsa, bu öğesinden türetilen gerekmez `CDocTemplate`.  
   
- SDI uygulamanın sınıfı `CSingleDocTemplate` açık bir belge izler. MDI uygulamanın sınıfı `CMultiDocTemplate` listesini tutar (bir `CPtrList`) Bu şablondan oluşturulan tüm belgelerin şu anda açık. `CDocTemplate::AddDocument`ve `CDocTemplate::RemoveDocument` sanal üye eklemek veya bir belge şablonu kaldırmak için işlevleri sağlar. `CDocTemplate`bir arkadaşınız **CDocument** böylece biz korumalı ayarlayabilirsiniz **CDocument::m_pDocTemplate** geri belge oluşturulan belge şablonu için işaret edecek şekilde geri işaretçi.  
+ SDI uygulamanın sınıfı `CSingleDocTemplate` açık bir belge izler. MDI uygulamanın sınıfı `CMultiDocTemplate` listesini tutar (bir `CPtrList`) Bu şablondan oluşturulan tüm belgelerin şu anda açık. `CDocTemplate::AddDocument` ve `CDocTemplate::RemoveDocument` sanal üye eklemek veya bir belge şablonu kaldırmak için işlevleri sağlar. `CDocTemplate` bir arkadaşınız **CDocument** böylece biz korumalı ayarlayabilirsiniz **CDocument::m_pDocTemplate** geri belge oluşturulan belge şablonu için işaret edecek şekilde geri işaretçi.  
   
- `CWinApp`varsayılan işleme `OnFileOpen` tüm belge şablonları sırayla sorgulayacak uygulama. Uygulama zaten açık belgeleri mi arıyorsunuz ve hangi yeni belgelerde açmak için biçimi karar içerir.  
+ `CWinApp` varsayılan işleme `OnFileOpen` tüm belge şablonları sırayla sorgulayacak uygulama. Uygulama zaten açık belgeleri mi arıyorsunuz ve hangi yeni belgelerde açmak için biçimi karar içerir.  
   
- `CDocTemplate`belgeler ve çerçeveler için kullanıcı Arabirimi bağlama yönetir.  
+ `CDocTemplate` belgeler ve çerçeveler için kullanıcı Arabirimi bağlama yönetir.  
   
- `CDocTemplate`adlandırılmamış belgeleri sayısını tutar.  
+ `CDocTemplate` adlandırılmamış belgeleri sayısını tutar.  
   
 ## <a name="cdocument"></a>CDocument  
  A **CDocument** tarafından sahip olunan bir `CDocTemplate`.  

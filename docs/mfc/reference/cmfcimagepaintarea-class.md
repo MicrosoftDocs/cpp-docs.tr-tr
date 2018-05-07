@@ -1,12 +1,9 @@
 ---
-title: "CMFCImagePaintArea sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCImagePaintArea sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCImagePaintArea
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - CMFCImagePaintArea [MFC], SetColor
 - CMFCImagePaintArea [MFC], SetMode
 ms.assetid: c59eec22-f15a-4e58-8c4d-4a18a41f4452
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f4af09ad1da91e3d59f82736ae9b240812069eb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cd5dd96c51c6b4ff5d3376581ddd760a2741968a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcimagepaintarea-class"></a>CMFCImagePaintArea sınıfı
 Görüntü Düzenleyicisi iletişim kutusunda bir görüntüsünü değiştirmek için kullanın resim alanı sağlar.  
@@ -90,7 +85,7 @@ class CMFCImagePaintArea : public CButton
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afximagepaintarea.h  
   
-##  <a name="cmfcimagepaintarea"></a>CMFCImagePaintArea::CMFCImagePaintArea  
+##  <a name="cmfcimagepaintarea"></a>  CMFCImagePaintArea::CMFCImagePaintArea  
  Oluşturan bir `CMFCImagePaintArea` nesnesi.  
   
 ```  
@@ -102,9 +97,9 @@ CMFCImagePaintArea(CMFCImageEditorDialog* pParentDlg);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in]`pParentDlg`|Görüntü Düzenleyicisi üst iletişim kutusu için bir işaretçi.|  
+|[in] `pParentDlg`|Görüntü Düzenleyicisi üst iletişim kutusu için bir işaretçi.|  
   
-##  <a name="getmode"></a>CMFCImagePaintArea::GetMode  
+##  <a name="getmode"></a>  CMFCImagePaintArea::GetMode  
  Geçerli çizim modunu alır.  
   
 ```  
@@ -114,7 +109,7 @@ IMAGE_EDIT_MODE GetMode() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir [ımage_edıt_mode](cmfcimagepaintarea-image-edit-mode-enumeration.md) geçerli çizim modu belirten değer.  
   
-##  <a name="setbitmap"></a>CMFCImagePaintArea::SetBitmap  
+##  <a name="setbitmap"></a>  CMFCImagePaintArea::SetBitmap  
  Resim alanı için bit eşlem resim ayarlar.  
   
 ```  
@@ -126,12 +121,12 @@ void SetBitmap(CBitmap* pBitmap);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in]`pBitmap`|Görüntülenecek yeni bit eşlem resim.|  
+|[in] `pBitmap`|Görüntülenecek yeni bit eşlem resim.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `pBitmap` olan `NULL`, bu yöntem değiştirilebilir boyama alanının boyutunu sıfır olarak ayarlar. Aksi takdirde, sağlanan bit eşlem resim boyutunu değiştirilebilir boyama alanının boyutunu ayarlar.  
   
-##  <a name="setcolor"></a>CMFCImagePaintArea::SetColor  
+##  <a name="setcolor"></a>  CMFCImagePaintArea::SetColor  
  Geçerli çizim rengini belirler.  
   
 ```  
@@ -143,14 +138,14 @@ void SetColor(COLORREF color);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in]`color`|Yeni Çizim rengi.|  
+|[in] `color`|Yeni Çizim rengi.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ne zaman bir renk görüntü Düzenleyicisi palet çubuğundan seçin veya Renk Seçici, framework geçerli çizim renk güncelleştirmek için bu yöntemi çağırır. İlk çizim rengi siyah (bir `COLORREF` 0 değeri).  
   
  Çizim renk dışındaki tüm çizim modları için görüntü Düzenleyicisi iletişim kutusu tarafından kullanılan `IMAGE_EDIT_MODE_COLOR`. Çizim modları hakkında daha fazla bilgi için bkz: [Cmfcımagepaintarea::ımage_edıt_mode numaralandırması](cmfcimagepaintarea-image-edit-mode-enumeration.md).  
   
-##  <a name="setmode"></a>CMFCImagePaintArea::SetMode  
+##  <a name="setmode"></a>  CMFCImagePaintArea::SetMode  
  Geçerli çizim modu ayarlar.  
   
 ```  
@@ -162,7 +157,7 @@ void SetMode(IMAGE_EDIT_MODE mode);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in]`mode`|Bir [ımage_edıt_mode](cmfcimagepaintarea-image-edit-mode-enumeration.md) geçerli çizim modu belirten değer.|  
+|[in] `mode`|Bir [ımage_edıt_mode](cmfcimagepaintarea-image-edit-mode-enumeration.md) geçerli çizim modu belirten değer.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

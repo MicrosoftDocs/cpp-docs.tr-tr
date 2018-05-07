@@ -1,30 +1,25 @@
 ---
-title: "Arabirim öğeleri | Microsoft Docs"
-ms.custom: 
+title: Arabirim öğeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - architecture [MFC], MFC Feature Pack
 - MFC Feature Pack, architecture
 ms.assetid: eead6827-9602-40a3-8038-8986e8207385
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab3da476a4e8b18d5ac864f0cf690a6a113db11e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 25f9de4ab5f7d12d240625e0fdf5f857563e8ce2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="interface-elements"></a>Arabirim Öğeleri
 Bu belgede de tanıtılan arabirimi öğeleri açıklanır [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)] SP1 ve ayrıca kitaplığı önceki sürümünün farklar açıklanmaktadır.  
@@ -49,7 +44,7 @@ Bu belgede de tanıtılan arabirimi öğeleri açıklanır [!INCLUDE[vs_orcas_lo
  Yerleştirme site (veya ana çerçeve penceresi) tüm bölmeleri ve uygulamanın kısa çerçeve pencerelerinde sahip olur. Yerleştirme site içeren bir [CDockingManager](../mfc/reference/cdockingmanager-class.md) üyesi. Bu üye yerleştirme siteye ait tüm bölmeleri listesini tutar. Böylece yerleştirme site dış kenarlarında oluşturulan bölmeleri listenin başlangıcında yerleştirilmiş liste sıralanır. Framework yerleştirme site yeniden çizer, bu liste döngüler ve geçerli sınırlayıcı dikdörtgenini yerleştirme sitenin dahil etmek için her bölme düzenini ayarlar. Çağırabilirsiniz `AdjustDockingLayout` veya `RecalcLayout` ne zaman yerleştirme düzeni ayarlamak sahip ve yerleştirme Yöneticisi bu çağrıyı framework yönlendirir.  
   
 ## <a name="dock-bars"></a>Yerleştirme çubukları  
- Her ana çerçeve penceresi yerleştirebilirsiniz *çubukları yerleştirme* kenarlıkları boyunca. Bir yuva çubuğu ait bölmesidir bir [CDockSite sınıfı](../mfc/reference/cdocksite-class.md). Yerleştirme çubukları türetilmiş nesneleri kabul edebileceği [CPane](../mfc/reference/cpane-class.md), araç çubukları gibi. Ana çerçeve penceresi başlatıldığında yerleştirme çubukları oluşturmak için arama `EnableDocking`. Otomatik Gizle çubuklarını etkinleştirmek için arama `EnableAutoHideBars`. `EnableAutoHideBars`oluşturur [CAutoHideDockSite](../mfc/reference/cautohidedocksite-class.md) nesneleri ve her yerleştirme çubuğunun yanında yerleştirir.  
+ Her ana çerçeve penceresi yerleştirebilirsiniz *çubukları yerleştirme* kenarlıkları boyunca. Bir yuva çubuğu ait bölmesidir bir [CDockSite sınıfı](../mfc/reference/cdocksite-class.md). Yerleştirme çubukları türetilmiş nesneleri kabul edebileceği [CPane](../mfc/reference/cpane-class.md), araç çubukları gibi. Ana çerçeve penceresi başlatıldığında yerleştirme çubukları oluşturmak için arama `EnableDocking`. Otomatik Gizle çubuklarını etkinleştirmek için arama `EnableAutoHideBars`. `EnableAutoHideBars` oluşturur [CAutoHideDockSite](../mfc/reference/cautohidedocksite-class.md) nesneleri ve her yerleştirme çubuğunun yanında yerleştirir.  
   
  Her yerleştirme çubuğu yerleştirme satırlara ayrılmıştır. Yerleştirme satırları temsil ettiği [CDockingPanesRow sınıfı](../mfc/reference/cdockingpanesrow-class.md). Her yerleştirme satır araç çubukları listesini içerir. Bir kullanıcı bir araç çubuğu docks veya aynı yerleştirme çubuğu içindeki başka bir tek satırdan araç giderse, framework yeni bir satır oluşturur ve yerleştirme çubuğu buna göre yeniden boyutlandırır veya var olan bir satır üzerinde araç yerleştirir.  
   
@@ -66,7 +61,7 @@ Bu belgede de tanıtılan arabirimi öğeleri açıklanır [!INCLUDE[vs_orcas_lo
  Varsayılan olarak, her `CDockablePane` otomatik gizleme özelliğini destekler. Bir kullanıcı, resim yazısını PIN düğmesine tıkladığında `CDockablePane`, framework bölmesinde otomatik olarak gizle moduna geçer. Öğesini işlemek için çerçevesini oluşturur bir [CMFCAutoHideBar sınıfı](../mfc/reference/cmfcautohidebar-class.md) ve [CMFCAutoHideButton sınıfı](../mfc/reference/cmfcautohidebutton-class.md) ile ilişkili `CMFCAutoHideBar` nesnesi. Framework'te yeni koyar `CMFCAutoHideBar` üzerinde [CAutoHideDockSite](../mfc/reference/cautohidedocksite-class.md). Framework de iliştirir `CMFCAutoHideButton` araç. [CDockingManager sınıfı](../mfc/reference/cdockingmanager-class.md) tutar `CDockablePane`.  
   
 ## <a name="tabbed-control-bars-and-outlook-bars"></a>Sekmeli denetim çubukları ve Outlook Çubukları  
- [CMFCBaseTabCtrl sınıfı](../mfc/reference/cmfcbasetabctrl-class.md) çıkarılabilir sekmelerle sekmeli bir pencere temel işlevlerini uygular. Kullanılacak bir `CMFCBaseTabCtrl` nesnesini, başlatma bir [CBaseTabbedPane sınıfı](../mfc/reference/cbasetabbedpane-class.md) uygulamanızda. `CBaseTabbedPane`türetilmiş `CDockablePane` ve bir işaretçi tutar bir `CMFCBaseTabCtrl` nesnesi. `CBaseTabbedPane` Yerleştirme ve sekmeli denetim çubukları yeniden boyutlandırmak kullanıcıların sağlar. Kullanım [CDockablePane::AttachToTabWnd](../mfc/reference/cdockablepane-class.md#attachtotabwnd) yerleşik ve sekmeli denetim çubukları dinamik olarak oluşturulacak.  
+ [CMFCBaseTabCtrl sınıfı](../mfc/reference/cmfcbasetabctrl-class.md) çıkarılabilir sekmelerle sekmeli bir pencere temel işlevlerini uygular. Kullanılacak bir `CMFCBaseTabCtrl` nesnesini, başlatma bir [CBaseTabbedPane sınıfı](../mfc/reference/cbasetabbedpane-class.md) uygulamanızda. `CBaseTabbedPane` türetilmiş `CDockablePane` ve bir işaretçi tutar bir `CMFCBaseTabCtrl` nesnesi. `CBaseTabbedPane` Yerleştirme ve sekmeli denetim çubukları yeniden boyutlandırmak kullanıcıların sağlar. Kullanım [CDockablePane::AttachToTabWnd](../mfc/reference/cdockablepane-class.md#attachtotabwnd) yerleşik ve sekmeli denetim çubukları dinamik olarak oluşturulacak.  
   
  Outlook Çubuğu denetimi de sekmeli çubuklarında dayalıdır. [CMFCOutlookBar sınıfı](../mfc/reference/cmfcoutlookbar-class.md) türetildiği `CBaseTabbedPane`. Outlook Çubuğu kullanma hakkında daha fazla bilgi için bkz: [CMFCOutlookBar sınıfı](../mfc/reference/cmfcoutlookbar-class.md).  
   

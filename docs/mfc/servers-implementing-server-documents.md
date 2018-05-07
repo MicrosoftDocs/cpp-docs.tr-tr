@@ -1,13 +1,10 @@
 ---
 title: 'Sunucular: Sunucu belgeleri uygulama | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - servers, server documents
 - server documents [MFC], implementing
 ms.assetid: cca1451a-ad09-47ed-b56e-bccd78fc86d1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c4b8618e4951ac499d504cc68b0552ea45eed03
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f15dbd16b48aade59470bfbf7e84faf4aeb03c61
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="servers-implementing-server-documents"></a>Sunucular: Sunucu Belgeleri Uygulama
 Bu makalede, Uygulama Sihirbazı'nda OLE sunucu seçeneği belirtmediyseniz server Belge başarıyla uygulamak için gerçekleştirmeniz gereken adımlar açıklanmaktadır.  
@@ -39,7 +34,7 @@ Bu makalede, Uygulama Sihirbazı'nda OLE sunucu seçeneği belirtmediyseniz serv
   
 3.  Uygulama `OnGetEmbeddedItem` server belge sınıfınızın üye işlevi.  
   
-     `OnGetEmbeddedItem`bir kapsayıcı uygulama kullanıcı oluşturduğunda veya katıştırılmış bir öğe düzenler olarak adlandırılır. Tüm belgeyi temsil eden bir öğe döndürmelidir. Bu bir nesne olmalıdır, `COleServerItem`-türetilmiş sınıf.  
+     `OnGetEmbeddedItem` bir kapsayıcı uygulama kullanıcı oluşturduğunda veya katıştırılmış bir öğe düzenler olarak adlandırılır. Tüm belgeyi temsil eden bir öğe döndürmelidir. Bu bir nesne olmalıdır, `COleServerItem`-türetilmiş sınıf.  
   
 4.  Geçersiz kılma `Serialize` belgesinin içeriğini serileştirmek için üye işlevi. Yerel veri belgenizi temsil etmek için kullanmıyorsanız sunucu öğeleri listesi serileştirmek gerekmez. Daha fazla bilgi için bkz: *uygulama sunucusu öğeleri* makalede [sunucular: sunucu öğeleri](../mfc/servers-server-items.md).  
   

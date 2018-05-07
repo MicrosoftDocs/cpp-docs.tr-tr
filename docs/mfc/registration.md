@@ -1,13 +1,10 @@
 ---
-title: "Kayıt | Microsoft Docs"
-ms.custom: 
+title: Kayıt | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - servers [MFC], installing
 - OLE server applications [MFC], registering servers
 ms.assetid: 991d5684-72c1-4f9e-a09a-9184ed12bbb9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 636a0c2ff254957724511a067fa64533cb4837aa
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: 1ab5bd34098ee1126e015e2a8368ef5b3c48fdbd
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="registration"></a>Kayıt
 Bir kullanıcı bir uygulamaya bir OLE öğesi eklemek istediğinde OLE Seçilecek nesne türlerinin bir listesini gösterir. OLE bu listedeki tüm sunucu uygulamaları tarafından sağlanan bilgileri içeren sistem kayıt veritabanından alır. Bir sunucu için kendisini kaydettiğinde, sistem kayıt veritabanına (kayıt defteri) koyar girişler her onu sağlayan nesnesi türünü açıklar, dosya uzantıları ve yolunu kendisi, diğer bilgilerin yanı.  
@@ -41,7 +36,7 @@ Bir kullanıcı bir uygulamaya bir OLE öğesi eklemek istediğinde OLE Seçilec
   
  Sistem kayıt veritabanı ve güncelleştirmek için kullanılan .reg dosyaları biçimi hakkında ayrıntılı bilgi için bkz: *OLE Programcı Başvurusu*.  
   
-##  <a name="_core_server_installation"></a>Sunucu yükleme  
+##  <a name="_core_server_installation"></a> Sunucu yükleme  
  Sunucu uygulamasının ilk kez yüklediğinizde, onu destekleyen OLE öğelerinin tüm türleri kaydetmelisiniz. Bağımsız bir uygulama olarak yürütülmeden her zaman sistem kaydı veritabanı güncelleştirme Sunucusu'nu da sahip olabilirsiniz. Sunucunun yürütülebilir dosya taşınırsa kaydı veritabanı güncel tutar.  
   
 > [!NOTE]
@@ -54,7 +49,7 @@ Bir kullanıcı bir uygulamaya bir OLE öğesi eklemek istediğinde OLE Seçilec
   
  RegEdit kayıt veritabanına .reg metin dosyasının içeriğini birleştirir. Veritabanı doğrulamak veya onarmak için Kayıt Defteri Düzenleyicisi'ni kullanın. Temel OLE girdileri silme kaçınmaya dikkat edin.  
   
-##  <a name="_core_server_initialization"></a>Sunucu başlatma  
+##  <a name="_core_server_initialization"></a> Sunucu başlatma  
  Uygulama Sihirbazı'nı bir sunucu uygulaması oluşturduğunuzda, sihirbazın tüm başlatma görevlerini sizin yerinize otomatik olarak tamamlar. Bu bölümde, bir sunucu uygulaması el ile yazarsanız yapmanız gerekir açıklanmaktadır.  
   
  Bir kapsayıcı uygulama tarafından bir sunucu uygulaması başlatıldığında, OLE sistem DLL'leri "/ katıştırma" seçeneği sunucunun komut satırı ekleyin. Bir sunucu uygulamanın davranışını denetleme uygulama yapılmalı mı yürütme başladığında ilk şey olacak şekilde olup, bir kapsayıcı tarafından başlatıldı bağlı olarak farklı "/ katıştırma" veya "-katıştırma" komut satırı seçeneği. Bu anahtarı varsa, sunucu ya da yerinde etkin olarak göstermek kaynakları farklı bir kümesini yüklemek veya tam olarak açın. Daha fazla bilgi için bkz: [menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md).  

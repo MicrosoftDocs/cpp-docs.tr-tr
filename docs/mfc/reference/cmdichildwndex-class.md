@@ -1,12 +1,9 @@
 ---
-title: "CMDIChildWndEx sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMDIChildWndEx sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMDIChildWndEx
@@ -121,17 +118,15 @@ helpviewer_keywords:
 - CMDIChildWndEx [MFC], UnregisterTaskbarTab
 - CMDIChildWndEx [MFC], UpdateTaskbarTabIcon
 ms.assetid: d39fec06-0bd6-4271-917d-35aae3b24d8e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 21b302c14d2b4aa17b2818e489a1400230332521
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: eecc1a08a3e0dcf8d8b3f1c31594488901a848f0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmdichildwndex-class"></a>CMDIChildWndEx sınıfı
 `CMDIChildWndEx` Sınıfı, birden çok belge arabirimi (MDI) alt pencere Windows işlevselliğini sağlar. İşlevselliğini genişleten [Cmdıchildwnd sınıfı](../../mfc/reference/cmdichildwnd-class.md). MDI uygulamanın belirli MFC sınıfları kullandığında framework Bu sınıf gerektirir.  
@@ -185,7 +180,7 @@ class CMDIChildWndEx : public CMDIChildWnd
 |[CMDIChildWndEx::IsTabbedPane](#istabbedpane)|Döndürür `TRUE` MDI alt pencere yerleştirme bölmesinde içeriyorsa. Aksi takdirde döndürür `FALSE`.|  
 |[CMDIChildWndEx::IsTaskbarTabsSupportEnabled](#istaskbartabssupportenabled)|MDI alt Windows 7 görev sekmelerinde görüntülenip görüntülenmeyeceğini belirtir.|  
 |[CMDIChildWndEx::IsTaskbarThumbnailClipRectEnabled](#istaskbarthumbnailcliprectenabled)|Pencerenin istemci alanı görev çubuğunda pencerenin küçük resim olarak görüntülenecek bir kısmının otomatik seçim etkin mi yoksa devre dışı mı olduğunu bildirir.|  
-|[CMDIChildWndEx::m_dwDefaultTaskbarTabPropertyFlags](#m_dwdefaulttaskbartabpropertyflags)|Bir sekme (MDI alt) Windows 7 görev sekmelerle kaydedildiğinde, çerçevesi tarafından SetTaskbarTabProperties yönteme geçirilen bir bileşimidir bayraklar. Varsayılan STPF_USEAPPTHUMBNAILWHENACTIVE &#124;birleşimidir; STPF_USEAPPPEEKWHENACTIVE.|  
+|[CMDIChildWndEx::m_dwDefaultTaskbarTabPropertyFlags](#m_dwdefaulttaskbartabpropertyflags)|Bir sekme (MDI alt) Windows 7 görev sekmelerle kaydedildiğinde, çerçevesi tarafından SetTaskbarTabProperties yönteme geçirilen bir bileşimidir bayraklar. STPF_USEAPPTHUMBNAILWHENACTIVE varsayılan birleşimidir &#124; STPF_USEAPPPEEKWHENACTIVE.|  
 |[CMDIChildWndEx::OnGetIconicLivePreviewBitmap](#ongeticoniclivepreviewbitmap)|MDI alt Canlı Önizleme için bir bit eşlem elde gerektiğinde çerçevesi tarafından çağrılır.|  
 |[CMDIChildWndEx::OnGetIconicThumbnail](#ongeticonicthumbnail)|MDI alt simge küçük resmi için bir bit eşlem elde gerektiğinde çerçevesi tarafından çağrılır.|  
 |[CMDIChildWndEx::OnMoveMiniFrame](#onmoveminiframe)|Bir kısa çerçeve penceresi taşımak için çerçevesi tarafından çağrılır.|  
@@ -233,7 +228,7 @@ class CMDIChildWndEx : public CMDIChildWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxMDIChildWndEx.h  
   
-##  <a name="addpane"></a>CMDIChildWndEx::AddPane  
+##  <a name="addpane"></a>  CMDIChildWndEx::AddPane  
  Bir bölme ekler.  
   
 ```  
@@ -243,16 +238,16 @@ BOOL AddPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pControlBar`  
+ [in] `pControlBar`  
  Bir işaretçi bölmesine.  
   
- [in]`bTail`  
- `TRUE`bölmesinde takma yöneticisini bölmeleri listesinin sonuna eklemek için; Aksi takdirde `FALSE`.  
+ [in] `bTail`  
+ `TRUE` bölmesinde takma yöneticisini bölmeleri listesinin sonuna eklemek için; Aksi takdirde `FALSE`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bölmenin yerleştirme yöneticisiyle; başarıyla kaydedildiyse Aksi takdirde `FALSE`.  
+ `TRUE` Bölmenin yerleştirme yöneticisiyle; başarıyla kaydedildiyse Aksi takdirde `FALSE`.  
   
-##  <a name="addtabbedpane"></a>CMDIChildWndEx::AddTabbedPane  
+##  <a name="addtabbedpane"></a>  CMDIChildWndEx::AddTabbedPane  
  Sekmeli bölmesinde ekler.  
   
 ```  
@@ -260,10 +255,10 @@ void AddTabbedPane(CDockablePane* pControlBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pControlBar`  
+ [in] `pControlBar`  
  Bir işaretçi bölmesine.  
   
-##  <a name="adjustdockinglayout"></a>CMDIChildWndEx::AdjustDockingLayout  
+##  <a name="adjustdockinglayout"></a>  CMDIChildWndEx::AdjustDockingLayout  
  Yerleştirme düzeni ayarlar.  
   
 ```  
@@ -271,10 +266,10 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hdwp`  
+ [in] `hdwp`  
  Ertelenmiş penceresi konumu yapısına işleyin.  
   
-##  <a name="canshowonmditabs"></a>CMDIChildWndEx::CanShowOnMDITabs  
+##  <a name="canshowonmditabs"></a>  CMDIChildWndEx::CanShowOnMDITabs  
 
   
 ```  
@@ -285,7 +280,7 @@ virtual BOOL CanShowOnMDITabs();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="canshowonwindowslist"></a>CMDIChildWndEx::CanShowOnWindowsList  
+##  <a name="canshowonwindowslist"></a>  CMDIChildWndEx::CanShowOnWindowsList  
  MDI alt pencere adı görüntülenebilen olup olmadığını belirtir [CMFCWindowsManagerDialog sınıfı](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) iletişim kutusu.  
   
 ```  
@@ -293,12 +288,12 @@ virtual BOOL CanShowOnWindowsList();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`pencerenin görüntülenebilen varsa **Windows** iletişim kutusu; Aksi halde, `FALSE`.  
+ `TRUE` pencerenin görüntülenebilen varsa **Windows** iletişim kutusu; Aksi halde, `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir türetilmiş sınıfta bu yöntemi geçersiz kılın ve dönüş `FALSE` penceresi içinde görüntülenmemelidir varsa **Windows** iletişim kutusu. Bu işlev çağrılır `CMFCWindowsManagerDialog`.  
   
-##  <a name="dockpane"></a>CMDIChildWndEx::DockPane  
+##  <a name="dockpane"></a>  CMDIChildWndEx::DockPane  
  Noktaları bölmesinde bir.  
   
 ```  
@@ -309,19 +304,19 @@ void DockPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pBar`  
+ [in] `pBar`  
  Bir işaretçi bölmesine.  
   
- [in]`nDockBarID`  
+ [in] `nDockBarID`  
  Bölmesinde kimliği.  
   
- [in]`lpRect`  
+ [in] `lpRect`  
  Dikdörtgen bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `lpRect` Parametresi kullanılmaz.  
   
-##  <a name="dockpaneleftof"></a>CMDIChildWndEx::DockPaneLeftOf  
+##  <a name="dockpaneleftof"></a>  CMDIChildWndEx::DockPaneLeftOf  
  Başka bir bölme solundaki noktaları bir bölme.  
   
 ```  
@@ -338,14 +333,14 @@ BOOL DockPaneLeftOf(
  Bir işaretçi başvuru noktası olarak hizmet veren bölmesine.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı, `FALSE` hatasında.  
+ `TRUE` başarılı, `FALSE` hatasında.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem tarafından belirtilen bölmesinde alır `pBar` ve tarafından belirtilen bölmesi sol tarafındaki docks `pLeftOf`.  
   
  Önceden tanımlanmış sırayla birkaç bölmeleri yerleştirme istediğinizde bu yöntemi çağırın.  
   
-##  <a name="enableautohidepanes"></a>CMDIChildWndEx::EnableAutoHidePanes  
+##  <a name="enableautohidepanes"></a>  CMDIChildWndEx::EnableAutoHidePanes  
  Etkinleştirir otomatik modu bölmeleri için pencereyi belirtilen yan tarafınızda yerleştirildiğinde gizle.  
   
 ```  
@@ -353,7 +348,7 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`dwDockStyle`  
+ [in] `dwDockStyle`  
  Etkin ana çerçeve penceresi yanlarından belirtir. Bir veya daha fazla aşağıdaki bayraklar kullanın.  
   
 - `CBRS_ALIGN_LEFT`  
@@ -365,9 +360,9 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 - `CBRS_ALIGN_BOTTOM`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
-##  <a name="enabledocking"></a>CMDIChildWndEx::EnableDocking  
+##  <a name="enabledocking"></a>  CMDIChildWndEx::EnableDocking  
  Yerleştirme alt penceresi ana çerçeve etkinleştirir.  
   
 ```  
@@ -375,16 +370,16 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`dwDockStyle`  
+ [in] `dwDockStyle`  
  Etkinleştirmek için takma hizalamasını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ana çerçeveye takma hizalama etkinleştirmek için bu yöntemi çağırın. CBRS_ALIGN_ bayrak birleşimi geçirebilirsiniz (daha fazla bilgi için bkz: [CControlBar::EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking)).  
   
-##  <a name="getdockingmanager"></a>CMDIChildWndEx::GetDockingManager  
+##  <a name="getdockingmanager"></a>  CMDIChildWndEx::GetDockingManager  
 
   
 ```  
@@ -395,7 +390,7 @@ CDockingManager* GetDockingManager();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getdocumentname"></a>CMDIChildWndEx::GetDocumentName  
+##  <a name="getdocumentname"></a>  CMDIChildWndEx::GetDocumentName  
  MDI alt penceresinde görüntülenen belgenin adını döndürür.  
   
 ```  
@@ -410,7 +405,7 @@ virtual LPCTSTR GetDocumentName(CObject** pObj);
   
  Bir dosyadan yüklenmemiş bir belge penceresi görüntülenirse, türetilmiş bir sınıf bu yöntemi geçersiz kılın ve benzersiz belge tanımlayıcısı döndürür.  
   
- `GetDocumentName`Tüm açık belgeleri durumunu kaydettiğinde çerçevesi tarafından çağrılır. Döndürülen dize kayıt defterine yazılır.  
+ `GetDocumentName` Tüm açık belgeleri durumunu kaydettiğinde çerçevesi tarafından çağrılır. Döndürülen dize kayıt defterine yazılır.  
   
  Framework daha sonra durum geri yüklerken belge adı kayıt defterinden okunacak ve geçirilen [CMDIFrameWndEx::CreateDocumentWindow](../../mfc/reference/cmdiframewndex-class.md#createdocumentwindow). Bu yöntemi geçersiz kılın bir [CMDIFrameWndEx](../../mfc/reference/cmdiframewndex-class.md)-türetilmiş sınıf oluşturmak veya bu ada sahip bir belgeyi açın ve bu ada sahip bir dosya okuyun. Belge bir dosyaya dayalı olmayan varsa, belge tanımlayıcısına kendisine göre belge oluşturun. Yalnızca kaydedin ve belgeleri geri yüklemek istiyorsanız, önceki Eylemler yapmanız gerekir.  
   
@@ -419,7 +414,7 @@ virtual LPCTSTR GetDocumentName(CObject** pObj);
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#17](../../mfc/codesnippet/cpp/cmdichildwndex-class_2.cpp)]  
   
-##  <a name="getframeicon"></a>CMDIChildWndEx::GetFrameIcon  
+##  <a name="getframeicon"></a>  CMDIChildWndEx::GetFrameIcon  
  MDI alt pencere simgesini almak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -434,7 +429,7 @@ virtual HICON GetFrameIcon() const;
   
  Varsayılan olarak, bu yöntem pencere simgesi döndürür. Geçersiz kılma `GetFrameIcon` içinde bir `CMDIChildWndEx`-türetilmiş sınıf bu davranışını özelleştirebilirsiniz.  
   
-##  <a name="getframetext"></a>CMDIChildWndEx::GetFrameText  
+##  <a name="getframetext"></a>  CMDIChildWndEx::GetFrameText  
  MDI alt pencere metni almak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -449,7 +444,7 @@ virtual CString GetFrameText() const;
   
  Varsayılan olarak, bu yöntem pencere metni döndürür. Geçersiz kılma `GetFrameText` içinde bir `CMDIChildWndEx`-türetilmiş sınıf bu davranışını özelleştirebilirsiniz.  
   
-##  <a name="getpane"></a>CMDIChildWndEx::GetPane  
+##  <a name="getpane"></a>  CMDIChildWndEx::GetPane  
  Bir bölme belirtilen denetim kimliğe göre bulur  
   
 ```  
@@ -457,13 +452,13 @@ CBasePane* GetPane(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nID`  
+ [in] `nID`  
  Denetim Kimliği Bul bölmesinin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi bölmesine varsa bulunamadı, aksi takdirde `NULL`.  
   
-##  <a name="getrelatedtabgroup"></a>CMDIChildWndEx::GetRelatedTabGroup  
+##  <a name="getrelatedtabgroup"></a>  CMDIChildWndEx::GetRelatedTabGroup  
 
   
 ```  
@@ -474,7 +469,7 @@ CMFCTabCtrl* GetRelatedTabGroup();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="gettabbedpane"></a>CMDIChildWndEx::GetTabbedPane  
+##  <a name="gettabbedpane"></a>  CMDIChildWndEx::GetTabbedPane  
  MDI grubunun parçası olan yerleşik bir bölmesi için bir işaretçi belgeleri sekmeli döndürür.  
   
 ```  
@@ -484,7 +479,7 @@ CDockablePane* GetTabbedPane() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  MDI grubunun parçası olan yerleşik bir bölmesi için bir işaretçi belgeleri sekmeli.  
   
-##  <a name="gettoolbarbuttontooltiptext"></a>CMDIChildWndEx::GetToolbarButtonToolTipText  
+##  <a name="gettoolbarbuttontooltiptext"></a>  CMDIChildWndEx::GetToolbarButtonToolTipText  
  Araç çubuğu düğmesi için araç ipucu almak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -494,12 +489,12 @@ virtual BOOL GetToolbarButtonToolTipText(
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Araç İpucu gösterilmesi gerekiyorsa. Varsayılan uygulama döndürür `FALSE`.  
+ `TRUE` Araç İpucu gösterilmesi gerekiyorsa. Varsayılan uygulama döndürür `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Araç çubuğu düğmeleri için özel araç ipuçları görüntülemek istiyorsanız bu yöntemi geçersiz kılın.  
   
-##  <a name="insertpane"></a>CMDIChildWndEx::InsertPane  
+##  <a name="insertpane"></a>  CMDIChildWndEx::InsertPane  
  Belirtilen bölmesinde takma Yöneticisi ile kaydeder.  
   
 ```  
@@ -510,19 +505,19 @@ BOOL InsertPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pControlBar`  
+ [in] `pControlBar`  
  Bir işaretçi bölmesine eklemek için.  
   
- [in]`pTarget`  
+ [in] `pTarget`  
  Bitişik bölmesi için bir işaretçi.  
   
- [in]`bAfter`  
+ [in] `bAfter`  
  Varsa `TRUE`, `pControlBar` sonra eklenen `pTarget`. Varsa `FALSE`, `pControlBar` önce eklenen `pTarget`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`yöntem başarılı olursa, `FALSE` Aksi takdirde.  
+ `TRUE` yöntem başarılı olursa, `FALSE` Aksi takdirde.  
   
-##  <a name="ispointneardocksite"></a>CMDIChildWndEx::IsPointNearDockSite  
+##  <a name="ispointneardocksite"></a>  CMDIChildWndEx::IsPointNearDockSite  
  Belirli bir noktaya yerleştirme site olup olmadığını belirler.  
   
 ```  
@@ -533,22 +528,22 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`point`  
+ [in] `point`  
  Belirtilen nokta.  
   
- [in]`dwBarAlignment`  
- Hangi uç noktasıdır yakın belirtir. Olası değerler şunlardır: `CBRS_ALIGN_LEFT`, `CBRS_ALIGN_RIGHT`, `CBRS_ALIGN_TOP`, ve`CBRS_ALIGN_BOTTOM`  
+ [in] `dwBarAlignment`  
+ Hangi uç noktasıdır yakın belirtir. Olası değerler şunlardır: `CBRS_ALIGN_LEFT`, `CBRS_ALIGN_RIGHT`, `CBRS_ALIGN_TOP`, ve `CBRS_ALIGN_BOTTOM`  
   
- [in]`bOuterEdge`  
- `TRUE`yerleştirme site dış kenarlık noktasıdır `FALSE` Aksi takdirde.  
+ [in] `bOuterEdge`  
+ `TRUE` yerleştirme site dış kenarlık noktasıdır `FALSE` Aksi takdirde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`noktası yerleştirme sitesiyse; Aksi takdirde `FALSE`.  
+ `TRUE` noktası yerleştirme sitesiyse; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yerleştirme Manager'da ayarladığınız duyarlılık içinde olduğunda yerleştirme site noktasıdır. Varsayılan duyarlılık 15 pikseldir.  
   
-##  <a name="isreadonly"></a>CMDIChildWndEx::IsReadOnly  
+##  <a name="isreadonly"></a>  CMDIChildWndEx::IsReadOnly  
  Alt penceresinde görüntülenen belgeyi salt okunur olup olmadığını belirtir.  
   
 ```  
@@ -556,7 +551,7 @@ virtual BOOL IsReadOnly();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Belge salt okunur ise; Aksi takdirde `FALSE`.  
+ `TRUE` Belge salt okunur ise; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev önlemek için kullanılan salt okunur belgeleri kaydetme.  
@@ -566,7 +561,7 @@ virtual BOOL IsReadOnly();
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#2](../../mfc/codesnippet/cpp/cmdichildwndex-class_3.cpp)]  
   
-##  <a name="istabbedpane"></a>CMDIChildWndEx::IsTabbedPane  
+##  <a name="istabbedpane"></a>  CMDIChildWndEx::IsTabbedPane  
  MDI alt pencere yerleştirme bölmesinde içerip içermediğini belirtir.  
   
 ```  
@@ -574,9 +569,9 @@ BOOL IsTabbedPane() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`MDI alt pencere sekmeli belge dönüştürülmüş bir takma bölmesi içeriyorsa; Aksi takdirde `FALSE`.  
+ `TRUE` MDI alt pencere sekmeli belge dönüştürülmüş bir takma bölmesi içeriyorsa; Aksi takdirde `FALSE`.  
   
-##  <a name="onmoveminiframe"></a>CMDIChildWndEx::OnMoveMiniFrame  
+##  <a name="onmoveminiframe"></a>  CMDIChildWndEx::OnMoveMiniFrame  
  Bir kısa çerçeve penceresi taşımak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -584,13 +579,13 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pFrame`  
+ [in] `pFrame`  
  Bir kısa çerçeve penceresi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`yöntemi, aksi takdirde işlemi başarılı olursa `FALSE`.  
+ `TRUE` yöntemi, aksi takdirde işlemi başarılı olursa `FALSE`.  
   
-##  <a name="onsetpreviewmode"></a>CMDIChildWndEx::OnSetPreviewMode  
+##  <a name="onsetpreviewmode"></a>  CMDIChildWndEx::OnSetPreviewMode  
  Girmek veya Baskı Önizleme modundan çıkmak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -600,13 +595,13 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bPreview`  
+ [in] `bPreview`  
  Varsa `TRUE`, Baskı Önizleme modunu girin. Varsa `FALSE`, çıkış Baskı Önizleme modunu.  
   
- [in]`pState`  
+ [in] `pState`  
  Baskı Önizleme durumu yapısına yönelik işaretçinin.  
   
-##  <a name="onupdateframetitle"></a>CMDIChildWndEx::OnUpdateFrameTitle  
+##  <a name="onupdateframetitle"></a>  CMDIChildWndEx::OnUpdateFrameTitle  
  Çerçeve başlığı güncelleştirmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -614,10 +609,10 @@ virtual void OnUpdateFrameTitle(BOOL bAddToTitle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bAddToTitle`  
+ [in] `bAddToTitle`  
  Varsa `TRUE`, başlık belge adını ekleyin.  
   
-##  <a name="panefrompoint"></a>CMDIChildWndEx::PaneFromPoint  
+##  <a name="panefrompoint"></a>  CMDIChildWndEx::PaneFromPoint  
  Belirtilen noktasını içeren bölme döndürür.  
   
 ```  
@@ -635,19 +630,19 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`point`  
+ [in] `point`  
  Noktası denetlemek için ekran koordinatları olarak belirtir.  
   
- [in]`nSensitivity`  
+ [in] `nSensitivity`  
  Arama alanı bu tarafından artırın. Belirtilen noktasını artan alanında düşerse bir bölmesi arama ölçütleri karşılar.  
   
- [in]`bExactBar`  
- `TRUE`yoksaymak için `nSensitivity` parametresi; Aksi halde, `FALSE`.  
+ [in] `bExactBar`  
+ `TRUE` yoksaymak için `nSensitivity` parametresi; Aksi halde, `FALSE`.  
   
- [in]`pRTCBarType`  
+ [in] `pRTCBarType`  
  Aksi takdirde `NULL`, yalnızca belirtilen türde bölmeleri yöntemi arar.  
   
- [in]`dwAlignment`  
+ [in] `dwAlignment`  
  Bir bölme belirtilen noktada bulunursa, bu parametre belirtilen noktasına en yakın bölmesinin tarafına içerir. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -658,7 +653,7 @@ CBasePane* PaneFromPoint(
   
  İşlevi döndürür ve bir bölme bulundu, `dwAlignment` belirtilen noktası hizalamasını içerir. Örneğin, noktası bölmesinde, üst kısmına yakın `dwAlignment` ayarlanır `CBRS_ALIGN_TOP`.  
   
-##  <a name="recalclayout"></a>CMDIChildWndEx::RecalcLayout  
+##  <a name="recalclayout"></a>  CMDIChildWndEx::RecalcLayout  
  Pencerenin düzenini yeniden hesaplar.  
   
 ```  
@@ -666,10 +661,10 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bNotify`  
+ [in] `bNotify`  
  Varsa `TRUE`, etkin yerinde öğeyi penceresi için Düzen değişikliği bildirimi alır.  
   
-##  <a name="removepanefromdockmanager"></a>CMDIChildWndEx::RemovePaneFromDockManager  
+##  <a name="removepanefromdockmanager"></a>  CMDIChildWndEx::RemovePaneFromDockManager  
  Bir bölme takma Yöneticisi'nden kaldırır.  
   
 ```  
@@ -682,22 +677,22 @@ void RemovePaneFromDockManager(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pControlBar`  
+ [in] `pControlBar`  
  Bir işaretçi bölmesine kaldırmak için.  
   
- [in]`bDestroy`  
+ [in] `bDestroy`  
  Varsa `TRUE`, kaldırılan bölmesinde yok.  
   
- [in]`bAdjustLayout`  
+ [in] `bAdjustLayout`  
  Varsa `TRUE`, yerleştirme düzenini hemen ayarlayın.  
   
- [in]`bAutoHide`  
+ [in] `bAutoHide`  
  Varsa `TRUE`, yerleştirme düzeni autohide çubukları listesine ilişkilidir. Varsa `FALSE`, yerleştirme düzeni normal bölmeleri listesine ilişkilidir.  
   
- [in]`pBarReplacement`  
+ [in] `pBarReplacement`  
  Bir işaretçi bir bölmesine kaldırılan bölmesinde yerini alır.  
   
-##  <a name="setrelatedtabgroup"></a>CMDIChildWndEx::SetRelatedTabGroup  
+##  <a name="setrelatedtabgroup"></a>  CMDIChildWndEx::SetRelatedTabGroup  
 
   
 ```  
@@ -705,11 +700,11 @@ void SetRelatedTabGroup(CMFCTabCtrl* p);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`p`  
+ [in] `p`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="showpane"></a>CMDIChildWndEx::ShowPane  
+##  <a name="showpane"></a>  CMDIChildWndEx::ShowPane  
 
   
 ```  
@@ -721,14 +716,14 @@ void ShowPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pBar`  
- [in]`bShow`  
- [in]`bDelay`  
- [in]`bActivate`  
+ [in] `pBar`  
+ [in] `bShow`  
+ [in] `bDelay`  
+ [in] `bActivate`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="updatetaskbartabicon"></a>CMDIChildWndEx::UpdateTaskbarTabIcon  
+##  <a name="updatetaskbartabicon"></a>  CMDIChildWndEx::UpdateTaskbarTabIcon  
  Windows 7 görev tab simgesi güncelleştirir.  
   
 ```  
@@ -741,7 +736,7 @@ virtual void UpdateTaskbarTabIcon(HICON hIcon);
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="unregistertaskbartab"></a>CMDIChildWndEx::UnregisterTaskbarTab  
+##  <a name="unregistertaskbartab"></a>  CMDIChildWndEx::UnregisterTaskbarTab  
  MDI alt Windows 7 görev sekmelerinden kaldırır.  
   
 ```  
@@ -754,7 +749,7 @@ void UnregisterTaskbarTab(BOOL bCheckRegisteredMDIChildCount = TRUE);
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="settaskbarthumbnailcliprect"></a>CMDIChildWndEx::SetTaskbarThumbnailClipRect  
+##  <a name="settaskbarthumbnailcliprect"></a>  CMDIChildWndEx::SetTaskbarThumbnailClipRect  
  Pencerenin istemci alanı görev çubuğunda pencerenin küçük resim olarak görüntülenecek bir bölümü seçmek için dikdörtgen kırpma ayarlamak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -766,11 +761,11 @@ virtual BOOL SetTaskbarThumbnailClipRect(CRect rect);
  Yeni dikdörtgen kırpma belirtir. Dikdörtgen boş veya null ise, kırpma kaldırılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="settaskbartabproperties"></a>CMDIChildWndEx::SetTaskbarTabProperties  
+##  <a name="settaskbartabproperties"></a>  CMDIChildWndEx::SetTaskbarTabProperties  
  Windows 7 görev sekmesini özelliklerini ayarlar.  
   
 ```  
@@ -783,7 +778,7 @@ void SetTaskbarTabProperties(DWORD dwFlags);
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="settaskbartaborder"></a>CMDIChildWndEx::SetTaskbarTabOrder  
+##  <a name="settaskbartaborder"></a>  CMDIChildWndEx::SetTaskbarTabOrder  
  Windows 7 görev sekmelerde belirtilen pencere önce MDI alt ekler.  
   
 ```  
@@ -796,7 +791,7 @@ void SetTaskbarTabOrder(CMDIChildWndEx* pWndBefore = NULL);
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="settaskbartabactive"></a>CMDIChildWndEx::SetTaskbarTabActive  
+##  <a name="settaskbartabactive"></a>  CMDIChildWndEx::SetTaskbarTabActive  
  Karşılık gelen Windows 7 görev sekmesini etkinleştirir.  
   
 ```  
@@ -805,7 +800,7 @@ void SetTaskbarTabActive();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="registertaskbartab"></a>CMDIChildWndEx::RegisterTaskbarTab  
+##  <a name="registertaskbartab"></a>  CMDIChildWndEx::RegisterTaskbarTab  
  MDI alt Windows 7 görev sekmelerle kaydeder.  
   
 ```  
@@ -818,7 +813,7 @@ virtual void RegisterTaskbarTab(CMDIChildWndEx* pWndBefore = NULL);
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ontaskbartabthumbnailstretch"></a>CMDIChildWndEx::OnTaskbarTabThumbnailStretch  
+##  <a name="ontaskbartabthumbnailstretch"></a>  CMDIChildWndEx::OnTaskbarTabThumbnailStretch  
  Windows 7 görev sekmesini küçük resim Önizleme MDI alt için bir bit eşlem uzatma gerektiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -845,7 +840,7 @@ virtual BOOL OnTaskbarTabThumbnailStretch(
 ### <a name="remarks"></a>Açıklamalar  
  Requirementher ya da ona ona ona ona ona ona ona **:** afxmdichildwndex.h  
   
-##  <a name="ontaskbartabthumbnailmouseactivate"></a>CMDIChildWndEx::OnTaskbarTabThumbnailMouseActivate  
+##  <a name="ontaskbartabthumbnailmouseactivate"></a>  CMDIChildWndEx::OnTaskbarTabThumbnailMouseActivate  
  Görev sekmesini küçük WM_MOUSEACTIVATE iletiyi işlemesi gerektiğini çerçevesi tarafından çağrılır.  
   
 ```  
@@ -868,7 +863,7 @@ virtual int OnTaskbarTabThumbnailMouseActivate(
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama ilgili MDI alt çerçevesi etkinleştirir.  
   
-##  <a name="ontaskbartabthumbnailactivate"></a>CMDIChildWndEx::OnTaskbarTabThumbnailActivate  
+##  <a name="ontaskbartabthumbnailactivate"></a>  CMDIChildWndEx::OnTaskbarTabThumbnailActivate  
  Görev sekmesini küçük WM_ACTIVATE iletiyi işlemesi gerektiğini çerçevesi tarafından çağrılır.  
   
 ```  
@@ -891,7 +886,7 @@ virtual void OnTaskbarTabThumbnailActivate(
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama ilgili MDI alt çerçevesi etkinleştirir.  
   
-##  <a name="onpresstaskbarthmbnailclosebutton"></a>CMDIChildWndEx::OnPressTaskbarThmbnailCloseButton  
+##  <a name="onpresstaskbarthmbnailclosebutton"></a>  CMDIChildWndEx::OnPressTaskbarThmbnailCloseButton  
  Kullanıcı ve görev sekmesini küçük Kapat düğmesine bastığında çerçevesi tarafından çağrılır.  
   
 ```  
@@ -900,7 +895,7 @@ virtual void OnPressTaskbarThmbnailCloseButton();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ongeticonicthumbnail"></a>CMDIChildWndEx::OnGetIconicThumbnail  
+##  <a name="ongeticonicthumbnail"></a>  CMDIChildWndEx::OnGetIconicThumbnail  
  MDI alt simge küçük resmi için bir bit eşlem elde gerektiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -918,7 +913,7 @@ virtual HBITMAP OnGetIconicThumbnail(
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ongeticoniclivepreviewbitmap"></a>CMDIChildWndEx::OnGetIconicLivePreviewBitmap  
+##  <a name="ongeticoniclivepreviewbitmap"></a>  CMDIChildWndEx::OnGetIconicLivePreviewBitmap  
  MDI alt Canlı Önizleme için bir bit eşlem elde gerektiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -940,7 +935,7 @@ virtual HBITMAP OnGetIconicLivePreviewBitmap(
 ### <a name="remarks"></a>Açıklamalar  
  Bir türetilmiş sınıfta bu yöntemi geçersiz kılın ve MDI alt Canlı Önizleme için geçerli 32bpp bit eşlemi döndürür. Yalnızca Windows 7 görev sekmelerinde MDI alt görüntülendiğinde bu yöntem çağrılır. Dönerseniz `NULL`, MFC varsayılan işleyicileri çağırır ve bit eşlemler kullanarak edinir `PrintClient` veya `PrintWindow`.  
   
-##  <a name="m_dwdefaulttaskbartabpropertyflags"></a>CMDIChildWndEx::m_dwDefaultTaskbarTabPropertyFlags  
+##  <a name="m_dwdefaulttaskbartabpropertyflags"></a>  CMDIChildWndEx::m_dwDefaultTaskbarTabPropertyFlags  
  Framework tarafından geçirilen bayraklar birleşimi `SetTaskbarTabProperties` bir sekme (MDI alt) Windows 7 görev sekmelerle kaydedildiğinde yöntemi.  
   
 ```  
@@ -948,9 +943,9 @@ AFX_IMPORT_DATA static DWORD m_dwDefaultTaskbarTabPropertyFlags;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan STPF_USEAPPTHUMBNAILWHENACTIVE &#124;birleşimidir; STPF_USEAPPPEEKWHENACTIVE.  
+ STPF_USEAPPTHUMBNAILWHENACTIVE varsayılan birleşimidir &#124; STPF_USEAPPPEEKWHENACTIVE.  
   
-##  <a name="istaskbarthumbnailcliprectenabled"></a>CMDIChildWndEx::IsTaskbarThumbnailClipRectEnabled  
+##  <a name="istaskbarthumbnailcliprectenabled"></a>  CMDIChildWndEx::IsTaskbarThumbnailClipRectEnabled  
  Pencerenin istemci alanı görev çubuğunda pencerenin küçük resim olarak görüntülenecek bir kısmının otomatik seçim etkin mi yoksa devre dışı mı olduğunu bildirir.  
   
 ```  
@@ -962,7 +957,7 @@ BOOL IsTaskbarThumbnailClipRectEnabled() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="istaskbartabssupportenabled"></a>CMDIChildWndEx::IsTaskbarTabsSupportEnabled  
+##  <a name="istaskbartabssupportenabled"></a>  CMDIChildWndEx::IsTaskbarTabsSupportEnabled  
  MDI alt Windows 7 görev sekmelerinde görüntülenip görüntülenmeyeceğini belirtir.  
   
 ```  
@@ -970,11 +965,11 @@ BOOL IsTaskbarTabsSupportEnabled();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`MDI alt Windows 7 görev sekmelerinde görüntülenebilir `FALSE` MDI alt Windows 7 görev sekmelerinde görünemez durumunda.  
+ `TRUE` MDI alt Windows 7 görev sekmelerinde görüntülenebilir `FALSE` MDI alt Windows 7 görev sekmelerinde görünemez durumunda.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isregisteredwithtaskbartabs"></a>CMDIChildWndEx::IsRegisteredWithTaskbarTabs  
+##  <a name="isregisteredwithtaskbartabs"></a>  CMDIChildWndEx::IsRegisteredWithTaskbarTabs  
  Döndürür `TRUE` Windows 7 görev sekmelerle MDI alt başarılı bir şekilde kaydedilmemişse.  
   
 ```  
@@ -982,11 +977,11 @@ BOOL IsRegisteredWithTaskbarTabs();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`MDI alt Windows 7 görev sekmelerle; kaydedilmişse Aksi takdirde `FALSE`.  
+ `TRUE` MDI alt Windows 7 görev sekmelerle; kaydedilmişse Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="invalidateiconicbitmaps"></a>CMDIChildWndEx::InvalidateIconicBitmaps  
+##  <a name="invalidateiconicbitmaps"></a>  CMDIChildWndEx::InvalidateIconicBitmaps  
  MDI alt simge bit eşlem gösterimi geçersiz kılar.  
   
 ```  
@@ -999,7 +994,7 @@ BOOL InvalidateIconicBitmaps();
 ### <a name="remarks"></a>Açıklamalar  
  Dinamik içerik veya MDI alt boyutu değiştirildiğinde çağrılmalıdır.  
   
-##  <a name="gettaskbarthumbnailcliprect"></a>CMDIChildWndEx::GetTaskbarThumbnailClipRect  
+##  <a name="gettaskbarthumbnailcliprect"></a>  CMDIChildWndEx::GetTaskbarThumbnailClipRect  
  Pencerenin istemci alanı görev çubuğunda pencerenin küçük resim olarak görüntülenecek bir kısmını seçmeniz gerektiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1011,7 +1006,7 @@ virtual CRect GetTaskbarThumbnailClipRect() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="gettaskbarpreviewwnd"></a>CMDIChildWndEx::GetTaskbarPreviewWnd  
+##  <a name="gettaskbarpreviewwnd"></a>  CMDIChildWndEx::GetTaskbarPreviewWnd  
  Windows 7 görev sekmesini küçük resmi görüntülenecek alt pencere (genellikle bir görünüm veya Bölümlendirici pencere) elde gerektiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1023,7 +1018,7 @@ virtual CWnd* GetTaskbarPreviewWnd();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="gettabproxywnd"></a>CMDIChildWndEx::GetTabProxyWnd  
+##  <a name="gettabproxywnd"></a>  CMDIChildWndEx::GetTabProxyWnd  
  Windows 7 görev sekmelerle kayıtlı sekme proxy penceresinde döndürür.  
   
 ```  
@@ -1035,7 +1030,7 @@ CMDITabProxyWnd* GetTabProxyWnd();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="enabletaskbarthumbnailcliprect"></a>CMDIChildWndEx::EnableTaskbarThumbnailClipRect  
+##  <a name="enabletaskbarthumbnailcliprect"></a>  CMDIChildWndEx::EnableTaskbarThumbnailClipRect  
  Etkinleştirir veya pencerenin istemci alanı görev çubuğunda pencerenin küçük resim olarak görüntülenecek bir kısmının otomatik seçim devre dışı bırakır.  
   
 ```  
@@ -1048,7 +1043,7 @@ void EnableTaskbarThumbnailClipRect(BOOL bEnable = TRUE);
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="canshowontaskbartabs"></a>CMDIChildWndEx::CanShowOnTaskBarTabs  
+##  <a name="canshowontaskbartabs"></a>  CMDIChildWndEx::CanShowOnTaskBarTabs  
  Bu MDI alt Windows 7 görev sekmelerinde görüntülenebilir framework söyler.  
   
 ```  
@@ -1056,12 +1051,12 @@ virtual BOOL CanShowOnTaskBarTabs();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`MDI alt içerik Windows 7 görev küçük görüntülenebilir  
+ `TRUE` MDI alt içerik Windows 7 görev küçük görüntülenebilir  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir türetilmiş sınıfta bu yöntemi geçersiz kılın ve dönüş `FALSE` bu MDI alt Windows 7 görev sekmelerde görünümünü devre dışı bırakmak için.  
   
-##  <a name="activatetoplevelframe"></a>CMDIChildWndEx::ActivateTopLevelFrame  
+##  <a name="activatetoplevelframe"></a>  CMDIChildWndEx::ActivateTopLevelFrame  
  Uygulama Görev sekmesinden etkinleştirildiğinde, üst düzey çerçeve etkinleştirmek için çerçevesi tarafından çağrılır.  
   
 ```  

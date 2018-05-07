@@ -1,12 +1,9 @@
 ---
-title: "CDaoRecordView sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDaoRecordView sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CDaoRecordView
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - CDaoRecordView [MFC], OnGetRecordset
 - CDaoRecordView [MFC], OnMove
 ms.assetid: 5aa7d0e2-bd05-413e-b216-80c404ce18ac
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2fffeed33d5b966faf511f60da740c39f2b91581
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 07dc58332bc99cb01e9b6567eafe2cb5b96f1b9c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdaorecordview-class"></a>CDaoRecordView sınıfı
 Veritabanı kayıtlarını denetimlerinde görüntüleyen bir görünüm.  
@@ -64,7 +59,7 @@ class AFX_NOVTABLE CDaoRecordView : public CFormView
 |[CDaoRecordView::OnMove](#onmove)|Geçerli kayıt değiştiyse, veri kaynağında güncelleştirir, ardından belirtilen kayda taşır (sonraki, önceki, ilk veya son).|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Doğrudan bağlı bir form görünümü görünümdür bir `CDaoRecordset` nesnesi. Görünüm bir iletişim şablonunu kaynaktan oluşturulur ve alanlarını görüntüler `CDaoRecordset` iletişim şablonun denetimlerinde nesnesi. `CDaoRecordView` Form üzerinde denetimleri ve kayıt alanları arasında veri hareketini otomatikleştirmek için nesnesini kullanan iletişim kutusu veri değişimi (DDX) ve DAO kayıt alanı değişimi (DFX). `CDaoRecordView`Ayrıca taşıma için varsayılan uygulamasını sağlar, ilk sonraki, önceki ya da son kaydını ve kayıtta şu anda Görünümü güncelleştirmek için bir arabirim.  
+ Doğrudan bağlı bir form görünümü görünümdür bir `CDaoRecordset` nesnesi. Görünüm bir iletişim şablonunu kaynaktan oluşturulur ve alanlarını görüntüler `CDaoRecordset` iletişim şablonun denetimlerinde nesnesi. `CDaoRecordView` Form üzerinde denetimleri ve kayıt alanları arasında veri hareketini otomatikleştirmek için nesnesini kullanan iletişim kutusu veri değişimi (DDX) ve DAO kayıt alanı değişimi (DFX). `CDaoRecordView` Ayrıca taşıma için varsayılan uygulamasını sağlar, ilk sonraki, önceki ya da son kaydını ve kayıtta şu anda Görünümü güncelleştirmek için bir arabirim.  
   
 > [!NOTE]
 >  DAO veritabanı sınıfları açık veritabanı bağlantısı (ODBC) üzerinde tabanlı MFC veritabanı sınıfları farklıdır. Tüm DAO veritabanı sınıf adları "CDao" önekini alır. DAO sınıfları ile erişim ODBC veri kaynakları hala yapabilecekleriniz; Microsoft Jet veritabanı altyapısı kullandığından DAO sınıfları genellikle üstün yetenekleri sunar.  
@@ -77,7 +72,7 @@ class AFX_NOVTABLE CDaoRecordView : public CFormView
   
  Kayıt başka bir kaydın taşınması için varsayılan uygulaması hakkında daha fazla bilgi için bkz: `IsOnFirstRecord` ve `IsOnLastRecord` ve makale [kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md), hem de uygulandığı `CRecordView` ve `CDaoRecordView`.  
   
- `CDaoRecordView`kullanıcının konumunu kayıt kümesindeki kayıt görünümü kullanıcı arabirimini güncelleştirebilmesi izler. Kullanıcı ya da kayıt kümesinin sonuna geçtiğinde, kayıt görünümü kullanıcı arabirimi nesneleri devre dışı bırakır — menü öğesi veya araç çubuğu düğmeleri gibi — taşıma için daha fazla ile aynı yönde.  
+ `CDaoRecordView` kullanıcının konumunu kayıt kümesindeki kayıt görünümü kullanıcı arabirimini güncelleştirebilmesi izler. Kullanıcı ya da kayıt kümesinin sonuna geçtiğinde, kayıt görünümü kullanıcı arabirimi nesneleri devre dışı bırakır — menü öğesi veya araç çubuğu düğmeleri gibi — taşıma için daha fazla ile aynı yönde.  
   
  Bildirme ve kayıt kümesi sınıfları ve kayıt görünümünü kullanma hakkında daha fazla bilgi için "tasarlama ve oluşturma bir kayıt" makalesinde görmek [kayıt görünümleri](../../data/record-views-mfc-data-access.md). Makaleyi nasıl kaydı iş görünümleri ve bunların nasıl kullanılacağını hakkında daha fazla bilgi için bkz: [kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md). Yukarıda belirtilen tüm makaleleri hem de uygulama `CRecordView` ve `CDaoRecordView`.  
   
@@ -99,7 +94,7 @@ class AFX_NOVTABLE CDaoRecordView : public CFormView
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdao.h  
   
-##  <a name="cdaorecordview"></a>CDaoRecordView::CDaoRecordView  
+##  <a name="cdaorecordview"></a>  CDaoRecordView::CDaoRecordView  
  Bir türdeki bir nesne oluştururken türetilen `CDaoRecordView`, görünüm nesnesini başlatır ve görünüm temel iletişim kutusu kaynağı tanımlamak için oluşturucu biçimindeki çağırın.  
   
 ```  
@@ -127,7 +122,7 @@ explicit CDaoRecordView(UINT nIDTemplate);
   
  [!code-cpp[NVC_MFCDatabase#35](../../mfc/codesnippet/cpp/cdaorecordview-class_1.cpp)]  
   
-##  <a name="isonfirstrecord"></a>CDaoRecordView::IsOnFirstRecord  
+##  <a name="isonfirstrecord"></a>  CDaoRecordView::IsOnFirstRecord  
  Geçerli kayıt bu kaydı görünüm ile ilişkilendirilen kayıt kümesi nesnesindeki ilk kaydı olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -142,7 +137,7 @@ BOOL IsOnFirstRecord();
   
  Kullanıcı ilk kayda geçerse, herhangi bir kullanıcı arabirimi (örneğin menü öğesi veya araç çubuğu düğmeleri) nesnelerini devre dışı bırakır framework ilk veya önceki kayda taşımak için sahip.  
   
-##  <a name="isonlastrecord"></a>CDaoRecordView::IsOnLastRecord  
+##  <a name="isonlastrecord"></a>  CDaoRecordView::IsOnLastRecord  
  Geçerli kayıt bu kaydı görünüm ile ilişkilendirilen kayıt kümesi nesnesi son kayıtta olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -158,7 +153,7 @@ BOOL IsOnLastRecord();
 > [!CAUTION]
 >  Görünüm kayıt kümesinin son kullanıcı bu taşınmıştır kadar algılayabilir olmayabilir dışında bu işlevin sonucu güvenilirdir. Kullanıcı kayıt görünümü sonraki ya da son kayda taşıma için herhangi bir kullanıcı arabirimi nesneleri mamtelemetrydisabled anlayabilirsiniz önce son kaydı taşımanız gerekebilir. Kullanıcı son kaydı ve ardından geri son kaydı taşır (veya önceki), kayıt görünümü kümesinde kullanıcının konumunu izlemenize ve kullanıcı arabirimi nesneleri doğru devre dışı bırakabilirsiniz.  
   
-##  <a name="ongetrecordset"></a>CDaoRecordView::OnGetRecordset  
+##  <a name="ongetrecordset"></a>  CDaoRecordView::OnGetRecordset  
  Bir işaretçi döndürür `CDaoRecordset`-kayıt görünümü ile ilişkili nesne türetilmiş.  
   
 ```  
@@ -173,7 +168,7 @@ virtual CDaoRecordset* OnGetRecordset() = 0;
   
  Daha fazla bilgi ve örnekler için bkz: [kayıt görünümleri: kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md).  
   
-##  <a name="onmove"></a>CDaoRecordView::OnMove  
+##  <a name="onmove"></a>  CDaoRecordView::OnMove  
  Kayıt kümesi farklı bir kayda ve kayıt görünümü denetimlerinde alanları görüntülemek için bu üye işlevini çağırın.  
   
 ```  
@@ -184,13 +179,13 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
  `nIDMoveCommand`  
  Aşağıdaki standart komut kimliği değerlerden biri:  
   
-- `ID_RECORD_FIRST`Kayıt kümesindeki ilk kaydı taşıyın.  
+- `ID_RECORD_FIRST` Kayıt kümesindeki ilk kaydı taşıyın.  
   
-- `ID_RECORD_LAST`Son kaydı kayıt kümesinde taşır.  
+- `ID_RECORD_LAST` Son kaydı kayıt kümesinde taşır.  
   
-- `ID_RECORD_NEXT`Sonraki kayıt kümesinde taşıyın.  
+- `ID_RECORD_NEXT` Sonraki kayıt kümesinde taşıyın.  
   
-- `ID_RECORD_PREV`Önceki kayıt kümesinde taşıyın.  
+- `ID_RECORD_PREV` Önceki kayıt kümesinde taşıyın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Taşıma başarılı olduğunda sıfır olmayan; taşıma isteği reddedildiyse aksi 0.  

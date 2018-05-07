@@ -1,29 +1,24 @@
 ---
-title: "İzlenecek yol: MFC karalama uygulamasını (Bölüm 2) güncelleştirme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: MFC karalama uygulamasını (Bölüm 2) güncelleştirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - walkthroughs [MFC]
 ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 861e0b1f76fcd441ccf5da8f56d5c5dcb23a2b8d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: eae1dd3c1662aafb6b52d2ecb821e073adc0bfd5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>İzlenecek yol: MFC Karalama Uygulamasını Güncelleştirme (2. Bölüm)
 [Bölüm 1](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md) klasik bir Office Fluent Şerit ekleme gösterdi bu kılavuzun uygulama karalama. Bu bölümü Şerit paneller ve kullanıcıların menüleri ve komutları yerine kullanabileceğiniz denetimleri nasıl ekleneceğini gösterir.  
@@ -31,7 +26,7 @@ ms.lasthandoff: 12/21/2017
 ## <a name="prerequisites"></a>Önkoşullar  
  [Visual C++ Örnekleri](../visual-cpp-samples.md)  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Kılavuzun bu bölümü aşağıdaki bölümleri içerir:  
   
 - [Şerit'e yeni paneller ekleme](#addnewpanel)  
@@ -46,7 +41,7 @@ ms.lasthandoff: 12/21/2017
   
 - [Kalemler başlatma ve tercihleri kaydetme](#initpensave)  
   
-##  <a name="addnewpanel"></a>Şerit'e yeni paneller ekleme  
+##  <a name="addnewpanel"></a> Şerit'e yeni paneller ekleme  
  Bu adımlar nasıl ekleneceğini gösterir bir **Görünüm** araç çubuğu ve durum çubuğunun görünürlüğünü kontrol iki onay kutuları içeren paneli ve ayrıca bir **penceresi** dikey yönelimli bölme içeren paneli oluşturma ve düzenleme birden çok belge arabirimi (MDI) Windows denetimleri düğmesi.  
   
 #### <a name="to-add-a-view-panel-and-window-panel-to-the-ribbon-bar"></a>Bir görünüm paneliyle ve pencere Şerit çubuğuna eklemek için  
@@ -81,7 +76,7 @@ ms.lasthandoff: 12/21/2017
   
  [[Bölümleri](#top)]  
   
-##  <a name="addhelppanel"></a>Yardım Masası için Şerit ekleme  
+##  <a name="addhelppanel"></a> Yardım Masası için Şerit ekleme  
  Şimdi, karalama uygulamasını adlandırıldığı Şerit düğmeleri için tanımlanan iki menü öğeleri atayabilirsiniz **Yardım konuları** ve **hakkında karalama**. Düğmeleri adlı yeni bir paneline eklenen **yardımcı**.  
   
 #### <a name="to-add-a-help-panel"></a>Yardım Masası eklemek için  
@@ -101,7 +96,7 @@ ms.lasthandoff: 12/21/2017
   
  [[Bölümleri](#top)]  
   
-##  <a name="addpenpanel"></a>Şerit'e bir kalem Panel ekleme  
+##  <a name="addpenpanel"></a> Şerit'e bir kalem Panel ekleme  
  Şimdi, kalınlığı ve kalemin rengini kontrol düğmeleri görüntülemek için bir panel ekleyin. Bu panoyu kalın ve ince kalemler arasında geçiş yapar bir onay kutusu içerir. İşlevselliği, benzer **Kalın çizgi** karalama uygulamasını menü öğesi.  
   
  Özgün karalama uygulamasını kullanıcının kullanıcı tıkladığında, görünen bir iletişim kutusundan kalem genişliği seçmesine olanak tanır **kalem genişliği** menüsünde. Şerit çubuğu yeni denetimler için yeterli yeri olduğundan, Şeritteki iki birleşik giriş kutuları kullanarak iletişim kutusunda değiştirebilirsiniz. Tek bir birleşik giriş kutusu ince kalem genişliği ayarlar ve diğer birleşik giriş kutusu kalın kalem genişliğini ayarlar.  
@@ -177,7 +172,7 @@ if (nCurSel>= 0)
   
  [[Bölümleri](#top)]  
   
-##  <a name="addcolorbutton"></a>Kalem paneline renk düğme ekleme  
+##  <a name="addcolorbutton"></a> Kalem paneline renk düğme ekleme  
  Ardından, eklemek bir [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbutton-class.md) kullanıcı sağlayan nesne karalama renkte.  
   
 #### <a name="to-add-a-color-button-to-the-pen-panel"></a>Bir renk düğmesi kalem paneline eklemek için  
@@ -192,8 +187,8 @@ if (nCurSel>= 0)
   
  [[Bölümleri](#top)]  
   
-##  <a name="addcolormember"></a>Belge sınıfına renk üye ekleme  
- Özgün karalama uygulamasını renkli kalemler sahip olmadığından, onlar için bir uygulama yazmanız gerekir. Belge kalem rengini depolamak için yeni bir üye belge sınıfına ekleyin,`CscribbleDoc.`  
+##  <a name="addcolormember"></a> Belge sınıfına renk üye ekleme  
+ Özgün karalama uygulamasını renkli kalemler sahip olmadığından, onlar için bir uygulama yazmanız gerekir. Belge kalem rengini depolamak için yeni bir üye belge sınıfına ekleyin, `CscribbleDoc.`  
   
 #### <a name="to-add-a-color-member-to-the-document-class"></a>Belge sınıfına renk üye eklemek için  
   
@@ -289,7 +284,7 @@ ASSERT_VALID(pRibbon);
   
  [[Bölümleri](#top)]  
   
-##  <a name="initpensave"></a>Kalemler başlatma ve tercihleri kaydetme  
+##  <a name="initpensave"></a> Kalemler başlatma ve tercihleri kaydetme  
  Ardından, rengini ve genişliğini kalemler başlatır. Son olarak, kaydedin ve bir dosyadan çizim renk yükleyin.  
   
 #### <a name="to-initialize-controls-on-the-ribbon-bar"></a>Şerit çubuğundaki denetimlerinin başlatmak için  
@@ -298,7 +293,7 @@ ASSERT_VALID(pRibbon);
   
      Scribdoc.cpp için aşağıdaki kodu ekleyin `CScribbleDoc::InitDocument` yöntemi, sonra `m_sizeDoc = CSize(200,200)` deyimi.  
   
- ```*/ / Şerit UI'si, ilk değerlerinin CMFCRibbonBar sıfırlama* pRibbon = ((CMDIFrameWndEx*) AfxGetMainWnd()) -> GetRibbonBar(); ASSERT_VALID(pRibbon);
+ ``` *Şerit UI'si, ilk değerlerinin CMFCRibbonBar sıfırlama* pRibbon = ((CMDIFrameWndEx*) AfxGetMainWnd()) -> GetRibbonBar(); ASSERT_VALID(pRibbon);
 
  CMFCRibbonColorButton * pColorBtn dynamıc_downcast = (CMFCRibbonColorButton, pRibbon -> FindByID(ID_PEN_COLOR)); * / / Set ColorButton siyah  
     pColorBtn -> SetColor (RGB (0, 0, 0));

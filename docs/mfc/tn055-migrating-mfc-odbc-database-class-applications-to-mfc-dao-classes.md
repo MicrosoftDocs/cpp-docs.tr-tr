@@ -1,13 +1,10 @@
 ---
-title: "TN055: MFC ODBC veritabanı sınıfı uygulamalarını MFC DAO sınıflarına geçirme | Microsoft Docs"
-ms.custom: 
+title: 'TN055: MFC ODBC veritabanı sınıfı uygulamalarını MFC DAO sınıflarına geçirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.mfc.odbc
 dev_langs:
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - porting ODBC database applications to DAO
 - migrating database applications [MFC]
 ms.assetid: 0f858bd1-e168-4e2e-bcd1-8debd82856e4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8da778dbadf312a6fef18ec8fa0b62a1c7aa6030
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fa9c7870492fed78e65c3ac25f74726acf35b7eb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes"></a>TN055: MFC ODBC Veritabanı Sınıfı Uygulamalarını MFC DAO Sınıflarına Geçirme
 > [!NOTE]
@@ -89,12 +84,12 @@ ms.lasthandoff: 12/21/2017
 ||`DFX_Currency`|  
 |`RFX_Single`|`DFX_Single`|  
 |`RFX_Double`|`DFX_Double`|  
-|**RFX_Date\***|**DFX_Date** (`COleDateTime`-tabanlı)|  
+|**RFX_Date \***|**DFX_Date** (`COleDateTime`-tabanlı)|  
 |`RFX_Text`|`DFX_Text`|  
 |`RFX_Binary`|`DFX_Binary`|  
 |`RFX_LongBinary`|`DFX_LongBinary`|  
   
- \*`RFX_Date` İşlevi temel `CTime` ve **TIMESTAMP_STRUCT**.  
+ \*    `RFX_Date` İşlevi temel `CTime` ve **TIMESTAMP_STRUCT**.  
   
  Uygulamanızı etkiler ve birden çok basit bir ad değişiklik gerektiren önemli değişiklikler işlevine aşağıda listelenmiştir.  
   
@@ -114,7 +109,7 @@ ms.lasthandoff: 12/21/2017
   
 -   Özel durum sınıfı değiştirildi. **CDBExceptions** ODBC sınıfları oluşturulur ve **CDaoExceptions** DAO sınıflardaki.  
   
--   `RFX_Date`kullanan `CTime` ve **TIMESTAMP_STRUCT** sırasında nesneleri **DFX_Date** kullanan `COleDateTime`. `COleDateTime` Hemen hemen aynıdır `CTime`, 8-bayt OLE üzerinde temel ancak **tarih** 4-bayt yerine `time_t` çok daha geniş bir yelpazede veri tutabilen şekilde.  
+-   `RFX_Date` kullanan `CTime` ve **TIMESTAMP_STRUCT** sırasında nesneleri **DFX_Date** kullanan `COleDateTime`. `COleDateTime` Hemen hemen aynıdır `CTime`, 8-bayt OLE üzerinde temel ancak **tarih** 4-bayt yerine `time_t` çok daha geniş bir yelpazede veri tutabilen şekilde.  
   
     > [!NOTE]
     >  DAO (`CDaoRecordset`) ODBC salt okunur anlık görüntüler (`CRecordset`) anlık görüntüleri sürücü ve ODBC imleç kitaplığı kullanımını bağlı olarak güncelleştirilebilir. İmleç kitaplığı kullanıyorsanız `CRecordset` anlık görüntüleri güncelleştirilebilir. ODBC imleç kitaplığı Microsoft sürücüleri Masaüstü Sürücü Paketi 3.0 kullanıyorsanız, `CRecordset` salt okunur anlık görüntüler. Başka bir sürücü kullanıyorsanız, olmadığını görmek için sürücünün belgelerine bakın anlık görüntüler (**STATIC_CURSORS**) salt okunurdur.  

@@ -1,13 +1,10 @@
 ---
-title: "TN022: Standart komutları uygulama | Microsoft Docs"
-ms.custom: 
+title: 'TN022: Standart komutları uygulama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.commands
 dev_langs:
@@ -68,17 +65,15 @@ helpviewer_keywords:
 - ID_FILE_NEW command [MFC]
 - ID_INDICATOR_NUM command
 ms.assetid: a7883b46-23f7-4870-ac3a-804aed9258b5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05e5e927ebfcb1584913d6415349c473bde4463c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dea42f4bd33281e65696791677bdd81a921a59e6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn022-standard-commands-implementation"></a>TN022: Standart Komutları Uygulama
 > [!NOTE]
@@ -122,7 +117,7 @@ ms.lasthandoff: 12/21/2017
     > [!NOTE]
     >  Bunun için bağlanmanız gerekir, `CWinApp`-bu işlevselliği etkinleştirmek için ileti eşlemesi sınıfının türetilmiş.  
   
-     `CWinApp::OnFileNew`Belge şablonları sayısına bağlı olarak farklı şekilde bu komut uygulamada uygular. Varsa yalnızca `CDocTemplate`, `CWinApp::OnFileNew` uygun çerçeve ve görünüm sınıfı yanı sıra, bu tür bir yeni belge oluşturun.  
+     `CWinApp::OnFileNew` Belge şablonları sayısına bağlı olarak farklı şekilde bu komut uygulamada uygular. Varsa yalnızca `CDocTemplate`, `CWinApp::OnFileNew` uygun çerçeve ve görünüm sınıfı yanı sıra, bu tür bir yeni belge oluşturun.  
   
      Varsa birden fazla `CDocTemplate`, `CWinApp::OnFileNew` bir iletişim kutusu ile kullanıcıya sorar (**AFX_IDD_NEWTYPEDLG**) kullanmak için hangi belge türü seç yapmalarına izin. Seçili `CDocTemplate` belge oluşturmak için kullanılır.  
   
@@ -135,7 +130,7 @@ ms.lasthandoff: 12/21/2017
     > [!NOTE]
     >  Bunun için bağlanmanız gerekir, `CWinApp`-bu işlevselliği etkinleştirmek için ileti eşlemesi sınıfının türetilmiş.  
   
-     `CWinApp::OnFileOpen`çağırma çok basit bir uygulamaya sahip **CWinApp::DoPromptFileName** arkasından `CWinApp::OpenDocumentFile` açmak için dosyaya dosya veya yol adı. `CWinApp` Uygulama yordamı **DoPromptFileName** standart FileOpen iletişim kutusunu açar ve geçerli belge şablonlardan elde dosya uzantıları ile doldurur.  
+     `CWinApp::OnFileOpen` çağırma çok basit bir uygulamaya sahip **CWinApp::DoPromptFileName** arkasından `CWinApp::OpenDocumentFile` açmak için dosyaya dosya veya yol adı. `CWinApp` Uygulama yordamı **DoPromptFileName** standart FileOpen iletişim kutusunu açar ve geçerli belge şablonlardan elde dosya uzantıları ile doldurur.  
   
      Bir sık kullanılan özelleştirme `ID_FILE_OPEN` FileOpen iletişim özelleştirme veya ek dosya filtreleri ekleyin. Varsayılan uygulama kendi FileOpen iletişim ve çağrısı ile değiştirmek için bu özelleştirmek için önerilen yöntem olduğu `CWinApp::OpenDocumentFile` belgenin dosya veya yol adı ile. Taban sınıfı çağırmak için gerek yoktur.  
   
@@ -183,7 +178,7 @@ ms.lasthandoff: 12/21/2017
   
      Bu komut kullanıcının yazıcı özelleştirmek ve yazdırma ayarları için en az izin veren standart yazdırma Kurulumu iletişim kutusunu çağırır bu belge veya en çok tüm belgelerde bu uygulama. Tüm sistemin varsayılan yazıcı ayarlarını değiştirmek için Denetim Masası'nı kullanmanız gerekir.  
   
-     `CWinApp::OnFilePrintSetup`çok basit uygulama oluşturma sahip bir `CPrintDialog` nesne ve arama **CWinApp::DoPrintDialog** uygulama işlevi. Bu uygulama varsayılan yazıcı kurulumu ayarlar.  
+     `CWinApp::OnFilePrintSetup` çok basit uygulama oluşturma sahip bir `CPrintDialog` nesne ve arama **CWinApp::DoPrintDialog** uygulama işlevi. Bu uygulama varsayılan yazıcı kurulumu ayarlar.  
   
      Bu komut özelleştirmek için ortak Belge kaydedildiğinde depolanması gereken belge başına yazıcı ayarları için izin vermek için gerekiyor. Bunu yapmak için ileti eşlemesi işleyici eklemeniz gerekir, **CDocument** oluşturur sınıfı bir `CPrintDialog` nesne, uygun yazıcı özniteliklerle başlatır (genellikle **hDevMode** ve **hDevNames**), çağrı **CPrintDialog::DoModal,** ve değiştirilen yazıcı ayarlarını kaydedin. İçin sağlam bir uygulama, uygulanması sırasında göz önünde bulundurmanız gerekenler **CWinApp::DoPrintDialog** hataları algılamak ve **CWinApp::UpdatePrinterSelection** duyarlı Varsayılanları ilgilenmek için ve Sistem genelinde yazıcı değişiklikleri izleme.  
   
@@ -221,7 +216,7 @@ ms.lasthandoff: 12/21/2017
   
      Şu anda bu komut için standart uygulaması yoktur. Bu her biri için uygulamanız gereken `CView`-türetilmiş sınıf.  
   
-     `CEditView`Bu komutu kullanarak, bir uygulama sağlar `CEdit::Clear`. Geçerli seçim yoksa komutu devre dışı bırakılır.  
+     `CEditView` Bu komutu kullanarak, bir uygulama sağlar `CEdit::Clear`. Geçerli seçim yoksa komutu devre dışı bırakılır.  
   
      Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz  
   
@@ -235,7 +230,7 @@ ms.lasthandoff: 12/21/2017
   
      Şu anda bu komut için standart uygulaması yoktur. Bu her biri için uygulamanız gereken `CView`-türetilmiş sınıf.  
   
-     `CEditView`Seçili metnin CF_TEXT kullanmakla panoya kopyalar bu komutun bir uygulama sağlar `CEdit::Copy`. Geçerli seçim yoksa komutu devre dışı bırakılır.  
+     `CEditView` Seçili metnin CF_TEXT kullanmakla panoya kopyalar bu komutun bir uygulama sağlar `CEdit::Copy`. Geçerli seçim yoksa komutu devre dışı bırakılır.  
   
      Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz  
   
@@ -243,7 +238,7 @@ ms.lasthandoff: 12/21/2017
   
      Şu anda bu komut için standart uygulaması yoktur. Bu her biri için uygulamanız gereken `CView`-türetilmiş sınıf.  
   
-     `CEditView`bir uygulama CF_TEXT kullanmakla panoya şu anda seçili metni keser bu komutun sağlar `CEdit::Cut`. Geçerli seçim yoksa komutu devre dışı bırakılır.  
+     `CEditView` bir uygulama CF_TEXT kullanmakla panoya şu anda seçili metni keser bu komutun sağlar `CEdit::Cut`. Geçerli seçim yoksa komutu devre dışı bırakılır.  
   
      Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz  
   
@@ -251,7 +246,7 @@ ms.lasthandoff: 12/21/2017
   
      Şu anda bu komut için standart uygulaması yoktur. Bu her biri için uygulamanız gereken `CView`-türetilmiş sınıf.  
   
-     `CEditView`Bu komut uygulama yardımcı işlevini çağırır uygulaması sağlar **OnEditFindReplace** kullanın ve özel uygulama değişkenlerde önceki bulun ve değiştirin ayarlarını depolamak için. `CFindReplaceDialog` Sınıfı, kullanıcıdan istemek için kalıcı olmayan iletişim yönetmek için kullanılır.  
+     `CEditView` Bu komut uygulama yardımcı işlevini çağırır uygulaması sağlar **OnEditFindReplace** kullanın ve özel uygulama değişkenlerde önceki bulun ve değiştirin ayarlarını depolamak için. `CFindReplaceDialog` Sınıfı, kullanıcıdan istemek için kalıcı olmayan iletişim yönetmek için kullanılır.  
   
      Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz  
   
@@ -259,7 +254,7 @@ ms.lasthandoff: 12/21/2017
   
      Şu anda bu komut için standart uygulaması yoktur. Bu her biri için uygulamanız gereken `CView`-türetilmiş sınıf.  
   
-     `CEditView`Seçili metni kullanarak değiştirme geçerli Pano verileri kopyalar bu komutun bir uygulama sağlar `CEdit::Paste`. Varsa komutu devre dışı hiçbir **CF_TEXT** Panodaki.  
+     `CEditView` Seçili metni kullanarak değiştirme geçerli Pano verileri kopyalar bu komutun bir uygulama sağlar `CEdit::Paste`. Varsa komutu devre dışı hiçbir **CF_TEXT** Panodaki.  
   
      **COleClientDoc** yalnızca bu komut için bir güncelleştirme komutu UI işleyicisi sağlar. Pano gömülebilir OLE öğesi/nesnesi içermiyorsa komutu devre dışı bırakılacak. Gerçek yapıştırma yapmak gerçek komut işleyici yazmaktan sorumlu. OLE uygulamanızı de diğer biçimlere yapıştırabilirsiniz, kendi güncelleştirme komut UI işleyici görünümünde veya belge sağlamanız (diğer bir deyişle, herhangi bir yerde önce **COleClientDoc** komutu hedef akışındaki).  
   
@@ -271,7 +266,7 @@ ms.lasthandoff: 12/21/2017
   
      Şu anda bu komut için standart uygulaması yoktur. Bu her biri için uygulamanız gereken `CView`-türetilmiş sınıf.  
   
-     `COleDocument`yalnızca bu komut için bir güncelleştirme komutu UI işleyicisi sağlar. Pano linkable OLE öğesi/nesnesi içermiyorsa komutu devre dışı bırakılacak. Gerçek yapıştırma yapmak gerçek komut işleyici yazmaktan sorumlu. OLE uygulamanızı de diğer biçimlere yapıştırabilirsiniz, kendi güncelleştirme komut UI işleyici görünümünde veya belge sağlamanız (diğer bir deyişle, herhangi bir yerde önce `COleDocument` komutu hedef akışındaki).  
+     `COleDocument` yalnızca bu komut için bir güncelleştirme komutu UI işleyicisi sağlar. Pano linkable OLE öğesi/nesnesi içermiyorsa komutu devre dışı bırakılacak. Gerçek yapıştırma yapmak gerçek komut işleyici yazmaktan sorumlu. OLE uygulamanızı de diğer biçimlere yapıştırabilirsiniz, kendi güncelleştirme komut UI işleyici görünümünde veya belge sağlamanız (diğer bir deyişle, herhangi bir yerde önce `COleDocument` komutu hedef akışındaki).  
   
      Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz  
   
@@ -287,7 +282,7 @@ ms.lasthandoff: 12/21/2017
   
      Şu anda bu komut için standart uygulaması yoktur. Bu her biri için uygulamanız gereken `CView`-türetilmiş sınıf.  
   
-     `CEditView`son bulma işlemi yinelemek için bu komutu bir uygulamasını sağlar. Son bulma için özel uygulama değişkenleri kullanılır. Bir bulma girişilemiyor komutu devre dışı bırakılır.  
+     `CEditView` son bulma işlemi yinelemek için bu komutu bir uygulamasını sağlar. Son bulma için özel uygulama değişkenleri kullanılır. Bir bulma girişilemiyor komutu devre dışı bırakılır.  
   
      Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz  
   
@@ -295,7 +290,7 @@ ms.lasthandoff: 12/21/2017
   
      Şu anda bu komut için standart uygulaması yoktur. Bu her biri için uygulamanız gereken `CView`-türetilmiş sınıf.  
   
-     `CEditView`Bu komut uygulama yardımcı işlevini çağırır uygulaması sağlar **OnEditFindReplace** kullanın ve özel uygulama değişkenlerde önceki bulun ve değiştirin ayarlarını depolamak için. `CFindReplaceDialog` Sınıfı kullanıcıdan kalıcı olmayan iletişim yönetmek için kullanılır.  
+     `CEditView` Bu komut uygulama yardımcı işlevini çağırır uygulaması sağlar **OnEditFindReplace** kullanın ve özel uygulama değişkenlerde önceki bulun ve değiştirin ayarlarını depolamak için. `CFindReplaceDialog` Sınıfı kullanıcıdan kalıcı olmayan iletişim yönetmek için kullanılır.  
   
      Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz  
   
@@ -303,7 +298,7 @@ ms.lasthandoff: 12/21/2017
   
      Şu anda bu komut için standart uygulaması yoktur. Bu her biri için uygulamanız gereken `CView`-türetilmiş sınıf.  
   
-     `CEditView`Belgedeki tüm metni seçer bu komutu bir uygulamasını sağlar. Seçilecek hiç metin yoksa komutu devre dışı bırakılır.  
+     `CEditView` Belgedeki tüm metni seçer bu komutu bir uygulamasını sağlar. Seçilecek hiç metin yoksa komutu devre dışı bırakılır.  
   
      Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz  
   
@@ -311,7 +306,7 @@ ms.lasthandoff: 12/21/2017
   
      Şu anda bu komut için standart uygulaması yoktur. Bu her biri için uygulamanız gereken `CView`-türetilmiş sınıf.  
   
-     `CEditView`Bu bir uygulamasını sağlar komutunu `CEdit::Undo`. Komutu devre dışı bırakılır `CEdit::CanUndo` FALSE değerini döndürür.  
+     `CEditView` Bu bir uygulamasını sağlar komutunu `CEdit::Undo`. Komutu devre dışı bırakılır `CEdit::CanUndo` FALSE değerini döndürür.  
   
      Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz  
   
@@ -331,7 +326,7 @@ ms.lasthandoff: 12/21/2017
   
 -   MDI pencerenin altındaki simgeleri ıd_wındow_arrange düzenler.  
   
-     `CMDIFrameWnd`Bu standart MDI komut bir uygulama Yardımcısı işlevinde uygulayan **OnMDIWindowCmd**. Bu yardımcı komut kimlikleri MDI Windows iletilerini eşler ve bu nedenle çok fazla kod paylaşabilirsiniz.  
+     `CMDIFrameWnd` Bu standart MDI komut bir uygulama Yardımcısı işlevinde uygulayan **OnMDIWindowCmd**. Bu yardımcı komut kimlikleri MDI Windows iletilerini eşler ve bu nedenle çok fazla kod paylaşabilirsiniz.  
   
      Hiçbir etkin MDI alt pencere yoksa çoğu MDI pencere menü komutları gibi komutu devre dışı bırakılır.  
   
@@ -339,7 +334,7 @@ ms.lasthandoff: 12/21/2017
   
 -   Bunlar Pencereleri çakışacak şekilde pencereleri ıd_wındow_cascade basamaklar.  
   
-     `CMDIFrameWnd`Bu standart MDI komut bir uygulama Yardımcısı işlevinde uygulayan **OnMDIWindowCmd**. Bu yardımcı komut kimlikleri MDI Windows iletilerini eşler ve bu nedenle çok fazla kod paylaşabilirsiniz.  
+     `CMDIFrameWnd` Bu standart MDI komut bir uygulama Yardımcısı işlevinde uygulayan **OnMDIWindowCmd**. Bu yardımcı komut kimlikleri MDI Windows iletilerini eşler ve bu nedenle çok fazla kod paylaşabilirsiniz.  
   
      Hiçbir etkin MDI alt pencere yoksa çoğu MDI pencere menü komutları gibi komutu devre dışı bırakılır.  
   
@@ -359,7 +354,7 @@ ms.lasthandoff: 12/21/2017
   
 -   Bölümlendirici ıd_wındow_splıt klavye arabirim.  
   
-     `CView`Bu komut için işleme `CSplitterWnd` uygulaması. Görünüm Bölümlendirici pencere parçası ise, bu komut uygulama işlevine temsil edecek `CSplitterWnd::DoKeyboardSplit`. Bu bölme klavye kullanıcıların bölme veya Bölümlendirici pencere bölünmesi sağlayacak bir modda yerleştirin.  
+     `CView` Bu komut için işleme `CSplitterWnd` uygulaması. Görünüm Bölümlendirici pencere parçası ise, bu komut uygulama işlevine temsil edecek `CSplitterWnd::DoKeyboardSplit`. Bu bölme klavye kullanıcıların bölme veya Bölümlendirici pencere bölünmesi sağlayacak bir modda yerleştirin.  
   
      Görünüm bir ayırıcı değil, bu komutu devre dışı bırakılır.  
   
@@ -384,7 +379,7 @@ ms.lasthandoff: 12/21/2017
     > [!NOTE]
     >  Bunun için bağlanmanız gerekir, `CWinApp`-bu işlevselliği etkinleştirmek için ileti eşlemesi sınıfının türetilmiş.  
   
-     `CWinApp::OnHelpIndex`Bu komut trivially çağırarak işleme `CWinApp::WinHelp`.  
+     `CWinApp::OnHelpIndex` Bu komut trivially çağırarak işleme `CWinApp::WinHelp`.  
   
      Bu komut işleyici özelleştirmesini önerilmez.  
   
@@ -393,7 +388,7 @@ ms.lasthandoff: 12/21/2017
     > [!NOTE]
     >  Bunun için bağlanmanız gerekir, `CWinApp`-bu işlevselliği etkinleştirmek için ileti eşlemesi sınıfının türetilmiş.  
   
-     `CWinApp::OnHelpUsing`Bu komut trivially çağırarak işleme `CWinApp::WinHelp`.  
+     `CWinApp::OnHelpUsing` Bu komut trivially çağırarak işleme `CWinApp::WinHelp`.  
   
      Bu komut işleyici özelleştirmesini önerilmez.  
   
@@ -402,7 +397,7 @@ ms.lasthandoff: 12/21/2017
     > [!NOTE]
     >  Bunun için bağlanmanız gerekir, `CWinApp`-bu işlevselliği etkinleştirmek için ileti eşlemesi sınıfının türetilmiş.  
   
-     `CWinApp::OnContextHelp`Bu komut, Yardım modu imleci ayarlama, kalıcı döngü girerek ve Yardım almak için bir pencere seçmek kullanıcı için bekleyen işler. Lütfen [Teknik Not 28](../mfc/tn028-context-sensitive-help-support.md) MFC Yardım uygulaması hakkında daha fazla ayrıntı için.  
+     `CWinApp::OnContextHelp` Bu komut, Yardım modu imleci ayarlama, kalıcı döngü girerek ve Yardım almak için bir pencere seçmek kullanıcı için bekleyen işler. Lütfen [Teknik Not 28](../mfc/tn028-context-sensitive-help-support.md) MFC Yardım uygulaması hakkında daha fazla ayrıntı için.  
   
      Bu komut işleyici özelleştirmesini önerilmez.  
   
@@ -411,7 +406,7 @@ ms.lasthandoff: 12/21/2017
     > [!NOTE]
     >  Bunun için bağlanmanız gerekir, `CWinApp`-bu işlevselliği etkinleştirmek için ileti eşlemesi sınıfının türetilmiş.  
   
-     `CWinApp::OnHelp`Bu komut için geçerli uygulama bağlamı sağ Yardım bağlamı alarak işler. Bu basit F1 Yardımı işlediğinde, ileti kutuları vb. yardımcı olur. Lütfen [Teknik Not 28](../mfc/tn028-context-sensitive-help-support.md) MFC hakkında daha fazla ayrıntı uygulama yardımcı olmak için.  
+     `CWinApp::OnHelp` Bu komut için geçerli uygulama bağlamı sağ Yardım bağlamı alarak işler. Bu basit F1 Yardımı işlediğinde, ileti kutuları vb. yardımcı olur. Lütfen [Teknik Not 28](../mfc/tn028-context-sensitive-help-support.md) MFC hakkında daha fazla ayrıntı uygulama yardımcı olmak için.  
   
      Bu komut işleyici özelleştirmesini önerilmez.  
   
@@ -426,7 +421,7 @@ ms.lasthandoff: 12/21/2017
   
 -   Id_next_pane gider sonraki bölme  
   
-     `CView`Bu komut için işleme `CSplitterWnd` uygulaması. Görünüm Bölümlendirici pencere parçası ise, bu komut uygulama işlevine temsil edecek **CSplitterWnd::OnNextPaneCmd**. Bu sonraki Bölümlendirici bölmesinde etkin görünüm taşır.  
+     `CView` Bu komut için işleme `CSplitterWnd` uygulaması. Görünüm Bölümlendirici pencere parçası ise, bu komut uygulama işlevine temsil edecek **CSplitterWnd::OnNextPaneCmd**. Bu sonraki Bölümlendirici bölmesinde etkin görünüm taşır.  
   
      Bu komut görünümü bir ayırıcı değil veya yok sonraki bölme gitmek için devre dışı bırakılır.  
   
@@ -434,7 +429,7 @@ ms.lasthandoff: 12/21/2017
   
 -   Id_prev_pane gider Önceki Bölme  
   
-     `CView`Bu komut için işleme `CSplitterWnd` uygulaması. Görünüm Bölümlendirici pencere parçası ise, bu komut uygulama işlevine temsil edecek **CSplitterWnd::OnNextPaneCmd**. Bu önceki Bölümlendirici bölmesinde etkin görünüm taşır.  
+     `CView` Bu komut için işleme `CSplitterWnd` uygulaması. Görünüm Bölümlendirici pencere parçası ise, bu komut uygulama işlevine temsil edecek **CSplitterWnd::OnNextPaneCmd**. Bu önceki Bölümlendirici bölmesinde etkin görünüm taşır.  
   
      Bu komut görünümü bir ayırıcı değil veya gitmek için hiçbir önceki bölmesinde devre dışı bırakılır.  
   
@@ -450,13 +445,13 @@ ms.lasthandoff: 12/21/2017
   
 -   Id_ole_edıt_lınks düzenler OLE bağlantıları  
   
-     `COleDocument`Bu komut, standart OLE bağlantıları iletişim sağlanan MFC uygulaması kullanarak işler. Bu iletişim kutusunu uyarlamasını üzerinden erişilen `COleLinksDialog` sınıfı. Geçerli belge tüm bağlantılar içermiyor komutu devre dışı bırakılır.  
+     `COleDocument` Bu komut, standart OLE bağlantıları iletişim sağlanan MFC uygulaması kullanarak işler. Bu iletişim kutusunu uyarlamasını üzerinden erişilen `COleLinksDialog` sınıfı. Geçerli belge tüm bağlantılar içermiyor komutu devre dışı bırakılır.  
   
      Bu komut işleyici özelleştirmesini önerilmez.  
   
 -   ID_OLE_VERB_FIRST... OLE fiiller için son bir kimlik aralığı  
   
-     `COleDocument`Bu komut kimliği aralığı seçili OLE öğesi/nesnesi tarafından desteklenen fiiller için kullanır. Belirli bir OLE öğesi/nesnesi türde sıfır veya daha fazla özel fiiller destekleyebilir beri bu aralığı olmalıdır. Uygulamanızın menüde bir menü öğesi kimliği olmalıdır **ıd_ole_verb_fırst**. Programını çalıştırdığınızda, menü uygun menü fiil açıklaması (veya birçok fiiller ile açılır menüsünden) ile güncelleştirilir. OLE menü Yönetimi tarafından işlenen `AfxOleSetEditMenu`, bu komut için güncelleştirme komut UI işleyicisi Bitti'yi.  
+     `COleDocument` Bu komut kimliği aralığı seçili OLE öğesi/nesnesi tarafından desteklenen fiiller için kullanır. Belirli bir OLE öğesi/nesnesi türde sıfır veya daha fazla özel fiiller destekleyebilir beri bu aralığı olmalıdır. Uygulamanızın menüde bir menü öğesi kimliği olmalıdır **ıd_ole_verb_fırst**. Programını çalıştırdığınızda, menü uygun menü fiil açıklaması (veya birçok fiiller ile açılır menüsünden) ile güncelleştirilir. OLE menü Yönetimi tarafından işlenen `AfxOleSetEditMenu`, bu komut için güncelleştirme komut UI işleyicisi Bitti'yi.  
   
      Her komut kimliği bu aralıktaki işlemek için hiçbir açık komut işleyicileri vardır. **COleDocument::OnCmdMsg** bu aralıktaki tüm komut kimlikleri tuzak, sıfır tabanlı fiil sayılara açın ve sunucu bu fiil için başlatma için geçersiz kılındı (kullanarak `COleClientItem::DoVerb`).  
   
@@ -464,7 +459,7 @@ ms.lasthandoff: 12/21/2017
   
 -   Id_vıew_toolbar araç çubuğunu açar ve kapatır  
   
-     `CFrameWnd`Bu komut ve güncelleştirme komutu UI işleyicisi araç görünür durumunu değiştirme için işler. Araç çubuğu çerçeve alt pencere kimliğine sahip olan bir alt pencere olmalıdır `AFX_IDW_TOOLBAR`. Komut işleyici gerçekte araç penceresi görünürlüğünü değiştirir. `CFrameWnd::RecalcLayout`çerçeve penceresi araç ile yeni durumundayken yeniden çizmek için kullanılır. Araç çubuğu görünür olduğunda menü öğesi güncelleştirme komutu UI işleyicisi denetler.  
+     `CFrameWnd` Bu komut ve güncelleştirme komutu UI işleyicisi araç görünür durumunu değiştirme için işler. Araç çubuğu çerçeve alt pencere kimliğine sahip olan bir alt pencere olmalıdır `AFX_IDW_TOOLBAR`. Komut işleyici gerçekte araç penceresi görünürlüğünü değiştirir. `CFrameWnd::RecalcLayout` çerçeve penceresi araç ile yeni durumundayken yeniden çizmek için kullanılır. Araç çubuğu görünür olduğunda menü öğesi güncelleştirme komutu UI işleyicisi denetler.  
   
      Bu komut işleyici özelleştirmesini önerilmez. Ek araç çubukları eklemek isterseniz, kopyalama ve komut işleyici ve güncelleştirme komut UI işleyici bu komut için değiştirmek istediğiniz.  
   

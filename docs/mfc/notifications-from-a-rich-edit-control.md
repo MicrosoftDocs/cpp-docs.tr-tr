@@ -1,13 +1,10 @@
 ---
-title: "Bir zengin düzenleme bildirim denetimi | Microsoft Docs"
-ms.custom: 
+title: Bir zengin düzenleme bildirim denetimi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - rich edit controls [MFC], notifications
 - notifications [MFC], from CRichEditCtrl
 ms.assetid: eb5304fe-f4f3-4557-9ebf-3095dea383c4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcfcb2e4fe333db1ed629489b405255d4ab050b9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c678af3444ef408a0a9c50e972942d67e2d3cf1b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="notifications-from-a-rich-edit-control"></a>Bir Zengin Düzenleme Denetiminden Bildirim
 Bildirim iletileri bir zengin etkileyen olayları düzenleme denetimi raporu ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)). İleti yansıması kullanarak tarafından zengin düzenleme denetiminden kendisini veya üst pencere tarafından işlenebilir. Zengin düzenleme denetimlerinde birkaç ek olanları yanı sıra düzenleme denetimleri ile kullanılan bildirim iletilerinin desteklemez. Bildirim iletileri bir zengin düzenleme denetimine kendi üst penceresi "olay maskesini." ayarlayarak gönderir belirleme  

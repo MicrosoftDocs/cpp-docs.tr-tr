@@ -1,12 +1,9 @@
 ---
-title: "CPictureHolder sınıfı | Microsoft Docs"
-ms.custom: 
+title: CPictureHolder sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CPictureHolder
@@ -37,17 +34,15 @@ helpviewer_keywords:
 - CPictureHolder [MFC], SetPictureDispatch
 - CPictureHolder [MFC], m_pPict
 ms.assetid: a4f59775-704a-41dd-b5bd-2e531c95127a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90bc58ce3d56852b983a673968df97b55f4bdeab
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0c2ffbe685ac643116fa60d4f97d03781d1efc83
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cpictureholder-class"></a>CPictureHolder sınıfı
 Resim, denetiminde görüntüleme olanak tanır. bir resim özelliği uygular.  
@@ -87,7 +82,7 @@ class CPictureHolder
 |[CPictureHolder::m_pPict](#m_ppict)|Resim nesnesi için bir işaretçi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CPictureHolder`bir taban sınıfı yok.  
+ `CPictureHolder` bir taban sınıfı yok.  
   
  Stok resim özelliğiyle Geliştirici bit eşlem, simge veya görüntü için meta dosyası belirtebilirsiniz.  
   
@@ -99,14 +94,14 @@ class CPictureHolder
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxctl.h  
   
-##  <a name="cpictureholder"></a>CPictureHolder::CPictureHolder  
+##  <a name="cpictureholder"></a>  CPictureHolder::CPictureHolder  
  Oluşturan bir `CPictureHolder` nesnesi.  
   
 ```  
 CPictureHolder();
 ```  
   
-##  <a name="createempty"></a>CPictureHolder::CreateEmpty  
+##  <a name="createempty"></a>  CPictureHolder::CreateEmpty  
  Boş bir oluşturur `CPictureHolder` nesne ve ona bağlanan bir `IPicture` arabirimi.  
   
 ```  
@@ -116,7 +111,7 @@ BOOL CreateEmpty();
 ### <a name="return-value"></a>Dönüş Değeri  
  Nesne başarıyla oluşturulduysa sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="createfrombitmap"></a>CPictureHolder::CreateFromBitmap  
+##  <a name="createfrombitmap"></a>  CPictureHolder::CreateFromBitmap  
  Bir bit eşlem resim nesneyi başlatmak için kullandığı bir `CPictureHolder`.  
   
 ```  
@@ -161,7 +156,7 @@ BOOL CreateFromBitmap(
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `bTransferOwnership` olan **doğru**, çağıran bit eşlem kullanmamanız gerekir veya bu çağrıyı sonra herhangi bir şekilde palet nesnesini döndürür. Varsa `bTransferOwnership` olan **yanlış**, bit eşlem ve palet nesneleri resim nesnesinin ömrü boyunca geçerli kalmasını sağlamak için çağıran sorumludur.  
   
-##  <a name="createfromicon"></a>CPictureHolder::CreateFromIcon  
+##  <a name="createfromicon"></a>  CPictureHolder::CreateFromIcon  
  Resim nesneyi başlatmak için bir simge kullanan bir `CPictureHolder`.  
   
 ```  
@@ -190,7 +185,7 @@ BOOL CreateFromIcon(
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `bTransferOwnership` olan **doğru**, bu çağrıyı döndükten sonra çağıran simgesi nesne herhangi bir şekilde kullanmamanız gerekir. Varsa `bTransferOwnership` olan **yanlış**, çağıran simgesi nesne resim nesnesinin ömrü boyunca geçerli olmasını sağlarken sorumludur.  
   
-##  <a name="createfrommetafile"></a>CPictureHolder::CreateFromMetafile  
+##  <a name="createfrommetafile"></a>  CPictureHolder::CreateFromMetafile  
  Resim nesneyi başlatmak için bir meta dosyası kullanan bir `CPictureHolder`.  
   
 ```  
@@ -220,7 +215,7 @@ BOOL CreateFromMetafile(
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `bTransferOwnership` olan **doğru**, bu çağrıyı döndükten sonra çağıran meta dosyası nesne herhangi bir şekilde kullanmamanız gerekir. Varsa `bTransferOwnership` olan **yanlış**, meta dosyası nesne resim nesnesinin ömrü boyunca geçerli olmasını sağlarken çağıran sorumludur.  
   
-##  <a name="getdisplaystring"></a>CPictureHolder::GetDisplayString  
+##  <a name="getdisplaystring"></a>  CPictureHolder::GetDisplayString  
  Bir kapsayıcının özelliği tarayıcıda görüntülenen dizesini alır.  
   
 ```  
@@ -234,7 +229,7 @@ BOOL GetDisplayString(CString& strValue);
 ### <a name="return-value"></a>Dönüş Değeri  
  Dize başarıyla alınırsa sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="getpicturedispatch"></a>CPictureHolder::GetPictureDispatch  
+##  <a name="getpicturedispatch"></a>  CPictureHolder::GetPictureDispatch  
  Bu işlev bir işaretçi döndürür `CPictureHolder` nesnenin `IPictureDisp` arabirimi.  
   
 ```  
@@ -247,7 +242,7 @@ LPPICTUREDISP GetPictureDispatch();
 ### <a name="remarks"></a>Açıklamalar  
  Arayan çağırmalısınız **sürüm** ile bittiğinde, bu işaretçinin üzerinde.  
   
-##  <a name="gettype"></a>CPictureHolder::GetType  
+##  <a name="gettype"></a>  CPictureHolder::GetType  
  Resmi bir bit eşlem, meta dosyası veya simge olup olmadığını gösterir.  
   
 ```  
@@ -259,20 +254,20 @@ short GetType();
   
 |Değer|Açıklama|  
 |-----------|-------------|  
-|**PICTYPE_UNINITIALIZED**|`CPictureHolder`Nesne unititialized.|  
-|**PICTYPE_NONE**|`CPictureHolder`Nesne boştur.|  
+|**PICTYPE_UNINITIALIZED**|`CPictureHolder` Nesne unititialized.|  
+|**PICTYPE_NONE**|`CPictureHolder` Nesne boştur.|  
 |**PICTYPE_BITMAP**|Bir bit eşlem resim bulunur.|  
 |**PICTYPE_METAFILE**|Resim meta dosyası bulunur.|  
 |**PICTYPE_ICON**|Resmi bir simgedir.|  
   
-##  <a name="m_ppict"></a>CPictureHolder::m_pPict  
+##  <a name="m_ppict"></a>  CPictureHolder::m_pPict  
  Bir işaretçi `CPictureHolder` nesnenin `IPicture` arabirimi.  
   
 ```  
 LPPICTURE m_pPict;  
 ```  
   
-##  <a name="render"></a>CPictureHolder::Render  
+##  <a name="render"></a>  CPictureHolder::Render  
  Tarafından başvurulan dikdörtgen resimde işler `rcRender`.  
   
 ```  
@@ -292,7 +287,7 @@ void Render(
  *rcWBounds*  
  Resim işleme nesnesinin sınırlayıcı dikdörtgenini temsil eden bir dikdörtgen. Bir denetim için olan bu dikdörtgenin `rcBounds` parametresi için geçersiz kılma geçirilen [COleControl::OnDraw](../../mfc/reference/colecontrol-class.md#ondraw).  
   
-##  <a name="setpicturedispatch"></a>CPictureHolder::SetPictureDispatch  
+##  <a name="setpicturedispatch"></a>  CPictureHolder::SetPictureDispatch  
  Bağlanan `CPictureHolder` nesnesine bir `IPictureDisp` arabirimi.  
   
 ```  

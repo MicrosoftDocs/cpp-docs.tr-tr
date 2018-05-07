@@ -1,13 +1,10 @@
 ---
-title: "OLE denetimleri için iletişim kutusu veri değişimi işlevleri | Microsoft Docs"
-ms.custom: 
+title: OLE denetimleri için iletişim kutusu veri değişimi işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - AFXDISP/DDX_OCBool
 - AFXDISP/DDX_OCBoolRO
@@ -27,17 +24,15 @@ helpviewer_keywords:
 - OLE controls [MFC], DDX functions
 - DDX (dialog data exchange), OLE support
 ms.assetid: 7ef1f288-ff65-40d4-aad2-5497bc00bb27
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad97690ca948525e9a0920d087e4dfd617a11b4d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5dd7e1b9b18e8478cfa4e61a22806cf067cb3699
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dialog-data-exchange-functions-for-ole-controls"></a>OLE Denetimleri için İletişim Kutusu Veri Değişimi İşlevleri
 Bu konu, bir iletişim kutusu, form görünümü veya denetim görünüm nesnesi OLE denetimi özelliği veri üyesi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi arasında veri değişimi için kullanılan DDX_OC işlevleri listeler.  
@@ -59,7 +54,7 @@ Bu konu, bir iletişim kutusu, form görünümü veya denetim görünüm nesnesi
 |[DDX_OCText](#ddx_octext)|Aktarımını yönetir **CString** OLE denetimi özelliği arasında veri ve **CString** veri üyesi.|  
 |[DDX_OCTextRO](#ddx_octextro)|Aktarımını yönetir **CString** OLE denetimi bir salt okunur özelliği arasında veri ve **CString** veri üyesi.|  
   
-##  <a name="ddx_ocbool"></a>DDX_OCBool  
+##  <a name="ddx_ocbool"></a>  DDX_OCBool  
  `DDX_OCBool` İşlevi aktarımını yönetir **BOOL** bir iletişim kutusu OLE denetimindeki bir özelliği arasında veri form görünümü ya da Denetim Görünüm nesnesi ve **BOOL** iletişim kutusu, form görünümü veri üyesi veya Denetim Görünüm nesnesi.  
   
 ```   
@@ -89,7 +84,7 @@ void AFXAPI DDX_OCBool(
 ### <a name="requirements"></a>Gereksinimler  
   **Başlık:** afxdisp.h  
   
-##  <a name="ddx_ocboolro"></a>DDX_OCBoolRO  
+##  <a name="ddx_ocboolro"></a>  DDX_OCBoolRO  
  `DDX_OCBoolRO` İşlevi aktarımını yönetir **BOOL** bir iletişim kutusu OLE denetimindeki bir salt okunur özelliği arasında veri form görünümü ya da Denetim Görünüm nesnesi ve **BOOL** iletişim kutusunun veri üyesi Form görünümünde veya denetim görünüm nesnesi.  
   
 ```   
@@ -119,7 +114,7 @@ void AFXAPI DDX_OCBoolRO(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="ddx_occolor"></a>DDX_OCColor  
+##  <a name="ddx_occolor"></a>  DDX_OCColor  
  `DDX_OCColor` İşlevi aktarımını yönetir **OLE_COLOR** bir iletişim kutusu OLE denetimindeki bir özelliği arasında veri form görünümü ya da Denetim Görünüm nesnesi ve **OLE_COLOR** iletişim kutusunun veri üyesi Form görünümünde veya denetim görünüm nesnesi.  
   
 ```   
@@ -149,7 +144,7 @@ void AFXAPI DDX_OCColor(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="ddx_occolorro"></a>DDX_OCColorRO  
+##  <a name="ddx_occolorro"></a>  DDX_OCColorRO  
  `DDX_OCColorRO` İşlevi aktarımını yönetir **OLE_COLOR** bir iletişim kutusu OLE denetimindeki bir salt okunur özelliği arasında veri form görünümü ya da Denetim Görünüm nesnesi ve **OLE_COLOR** veri üyesi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi.  
   
 ```   
@@ -179,7 +174,7 @@ void AFXAPI DDX_OCColorRO(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="ddx_ocfloat"></a>DDX_OCFloat  
+##  <a name="ddx_ocfloat"></a>  DDX_OCFloat  
  `DDX_OCFloat` İşlevi aktarımını yönetir **float** (veya **çift**) arasında bir iletişim kutusu OLE denetimindeki özelliğinin verileri form görünümü ya da Denetim Görünüm nesnesi ve **float** (veya **çift**) veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```   
@@ -215,7 +210,7 @@ void AFXAPI DDX_OCFloat(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="ddx_ocfloatro"></a>DDX_OCFloatRO  
+##  <a name="ddx_ocfloatro"></a>  DDX_OCFloatRO  
  `DDX_OCFloatRO` İşlevi aktarımını yönetir **float** (veya **çift**) arasında bir iletişim kutusu OLE denetimindeki bir salt okunur özelliği veri form görünümü ya da Denetim Görünüm nesnesi ve  **float** (veya **çift**) veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```   
@@ -251,7 +246,7 @@ void AFXAPI DDX_OCFloatRO(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="ddx_ocint"></a>Ddx_ocınt  
+##  <a name="ddx_ocint"></a>  Ddx_ocınt  
  `DDX_OCInt` İşlevi aktarımını yönetir `int` (veya **uzun**) arasında bir iletişim kutusu OLE denetimindeki özelliğinin verileri form görünümü ya da Denetim Görünüm nesnesi ve `int` (veya **uzun**) veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```   
@@ -287,7 +282,7 @@ void AFXAPI DDX_OCInt(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="ddx_ocintro"></a>Ddx_ocıntro  
+##  <a name="ddx_ocintro"></a>  Ddx_ocıntro  
  `DDX_OCIntRO` İşlevi aktarımını yönetir `int` (veya **uzun**) arasında bir iletişim kutusu OLE denetimindeki bir salt okunur özelliği veri form görünümü ya da Denetim Görünüm nesnesi ve `int` (veya **uzun** ) veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```   
@@ -323,7 +318,7 @@ void AFXAPI DDX_OCIntRO(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="ddx_ocshort"></a>DDX_OCShort  
+##  <a name="ddx_ocshort"></a>  DDX_OCShort  
  `DDX_OCShort` İşlevi iletişim kutusunda, form görünümü OLE denetimi özelliğinin arasında kısa veri aktarımını yönetir veya denetim görünüm nesnesi ve kısa veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```   
@@ -353,7 +348,7 @@ void AFXAPI DDX_OCShort(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="ddx_ocshortro"></a>DDX_OCShortRO  
+##  <a name="ddx_ocshortro"></a>  DDX_OCShortRO  
  `DDX_OCShortRO` İşlevi iletişim kutusunda, form görünümü OLE denetiminin salt okunur bir özellik arasında kısa veri aktarımını yönetir veya denetim görünüm nesnesi ve kısa veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```   
@@ -383,7 +378,7 @@ void AFXAPI DDX_OCShortRO(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="ddx_octext"></a>DDX_OCText  
+##  <a name="ddx_octext"></a>  DDX_OCText  
  **DDX_OCText** işlevi aktarımını yönetir **CString** bir iletişim kutusu OLE denetimindeki bir özelliği arasında veri form görünümü ya da Denetim Görünüm nesnesi ve **CString** veri iletişim kutusu, form görünümü veya denetim görünüm nesnesi üyesi.  
   
 ```   
@@ -413,7 +408,7 @@ void AFXAPI DDX_OCText(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="ddx_octextro"></a>DDX_OCTextRO  
+##  <a name="ddx_octextro"></a>  DDX_OCTextRO  
  `DDX_OCTextRO` İşlevi aktarımını yönetir `CString` bir iletişim kutusu OLE denetimindeki bir salt okunur özelliği arasında veri form görünümü ya da Denetim Görünüm nesnesi ve `CString` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```  

@@ -1,12 +1,9 @@
 ---
-title: "CSocketFile sınıfı | Microsoft Docs"
-ms.custom: 
+title: CSocketFile sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CSocketFile
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - CSocketFile [MFC], CSocketFile
 ms.assetid: 7924c098-5f72-40d6-989d-42800a47958f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48ab1428d2c02e51b02977c8457d28e20597cbb7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0e3bf8d9ee58143e7a96b85174e4533b3c2e50ec
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="csocketfile-class"></a>CSocketFile sınıfı
 A `CFile` göndermek ve Windows Yuvaları aracılığıyla bir ağ üzerinden veri almak için kullanılan nesne.  
@@ -74,7 +69,7 @@ class CSocketFile : public CFile
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxsock.h  
   
-##  <a name="csocketfile"></a>CSocketFile::CSocketFile  
+##  <a name="csocketfile"></a>  CSocketFile::CSocketFile  
  Oluşturan bir `CSocketFile` nesnesi.  
   
 ```  

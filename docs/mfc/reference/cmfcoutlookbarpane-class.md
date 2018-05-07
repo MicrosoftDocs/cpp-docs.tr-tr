@@ -1,12 +1,9 @@
 ---
-title: "CMFCOutlookBarPane sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCOutlookBarPane sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCOutlookBarPane
@@ -49,17 +46,15 @@ helpviewer_keywords:
 - CMFCOutlookBarPane [MFC], EnableContextMenuItems
 - CMFCOutlookBarPane [MFC], RemoveAllButtons
 ms.assetid: 094e2ef3-a118-487e-a4cc-27626108fe08
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59eb92e44a26577866a797243f3a32d53b854365
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fe72b43d8930e77bea274e20e5f150cc93617c20
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcoutlookbarpane-class"></a>CMFCOutlookBarPane sınıfı
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -147,7 +142,7 @@ class CMFCOutlookBarPane : public CMFCToolBar
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxoutlookbarpane.h  
   
-##  <a name="addbutton"></a>CMFCOutlookBarPane::AddButton  
+##  <a name="addbutton"></a>  CMFCOutlookBarPane::AddButton  
  Bir düğme Outlook Çubuğu bölmesine ekler.  
   
 ```  
@@ -188,35 +183,35 @@ BOOL AddButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiImage`  
+ [in] `uiImage`  
  Bir bit eşlem kaynak tanımlayıcısını belirtir.  
   
- [in]`lpszLabel`  
+ [in] `lpszLabel`  
  Düğmenin metni belirtir.  
   
- [in]`iIdCommand`  
+ [in] `iIdCommand`  
  Düğme denetiminin kimliğini belirtir.  
   
- [in]`iInsertAt`  
+ [in] `iInsertAt`  
  Ekle düğmesi için outlook çubuğunun sayfa üzerinde sıfır tabanlı dizini belirtir.  
   
- [in]`uiLabel`  
+ [in] `uiLabel`  
  Bir dize kaynak kimliği  
   
- [in]`szBmpFileName`  
+ [in] `szBmpFileName`  
  Yüklemek için disk görüntü dosyasının adını belirtir.  
   
- [in]`szLabel`  
+ [in] `szLabel`  
  Düğmenin metni belirtir.  
   
- [in]`hBmp`  
+ [in] `hBmp`  
  Düğmenin bit eşlem için bir tanıtıcı.  
   
- [in]`hIcon`  
+ [in] `hIcon`  
  Bir düğme simgesi için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`bir düğme başarıyla eklendi Aksi takdirde `FALSE`.  
+ `TRUE` bir düğme başarıyla eklendi Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir Outlook çubuğunun sayfasına yeni bir düğme eklemek için bu yöntemi kullanın. Düğmenin resim uygulama kaynaklarını veya bir disk dosyası yüklenebilir.  
@@ -225,7 +220,7 @@ BOOL AddButton(
   
  Dizin ile belirtilen `iInsertAt` -1 ' dir düğme sayfa sonuna eklenir.  
   
-##  <a name="canbeattached"></a>CMFCOutlookBarPane::CanBeAttached  
+##  <a name="canbeattached"></a>  CMFCOutlookBarPane::CanBeAttached  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -236,7 +231,7 @@ virtual BOOL CanBeAttached() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="clearall"></a>CMFCOutlookBarPane::ClearAll  
+##  <a name="clearall"></a>  CMFCOutlookBarPane::ClearAll  
  Outlook Çubuğu bölmesi görüntülerinde tarafından kullanılan kaynakları serbest bırakır.  
   
 ```  
@@ -246,7 +241,7 @@ void ClearAll();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem doğrudan çağıran [CMFCToolBarImages::Clear](../../mfc/reference/cmfctoolbarimages-class.md#clear), Outlook Çubuğu bölmesinin kullandığı görüntülerinde çağrılır.  
   
-##  <a name="create"></a>CMFCOutlookBarPane::Create  
+##  <a name="create"></a>  CMFCOutlookBarPane::Create  
  Outlook Çubuğu bölmesi oluşturur.  
   
 ```  
@@ -258,27 +253,27 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pParentWnd`  
+ [in] `pParentWnd`  
  Outlook Çubuğu bölmesi denetiminin üst pencere belirtir. Olmamalıdır `NULL`.  
   
- [in]`dwStyle`  
+ [in] `dwStyle`  
  Pencere stili.  Pencere stilleri listesi için bkz: [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in]`uiID`  
+ [in] `uiID`  
  Denetim kimliği. Etkinleştirmek için benzersiz olması gerekir denetimin durumunu kaydetme.  
   
- [in]`dwControlBarStyle`  
+ [in] `dwControlBarStyle`  
  Outlook Çubuğu'ndan ayrılmış olduğunda, Outlook Çubuğu bölmesi denetimi davranışını tanımlayan özel stiller belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Oluşturmak için bir `CMFCOutlookBarPane` nesne, ilk Oluşturucusu arayın ve sonra çağrısı `Create`, Outlook bölmesinde denetim çubuğu oluşturur ve ekler `CMFCOutlookBarPane` nesnesi.  
   
  Hakkında daha fazla bilgi için `dwControlBarStyle` bkz [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
   
-##  <a name="enablecontextmenuitems"></a>CMFCOutlookBarPane::EnableContextMenuItems  
+##  <a name="enablecontextmenuitems"></a>  CMFCOutlookBarPane::EnableContextMenuItems  
  Hangi kısayol menüsü öğelerini özelleştirme modunda görüntüleneceğini belirtir.  
   
 ```  
@@ -288,10 +283,10 @@ virtual BOOL EnableContextMenuItems(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pButton`  
+ [in] `pButton`  
  Bir kullanıcının bir araç çubuğu düğmesi için bir işaretçi.  
   
- [in]`pPopup`  
+ [in] `pPopup`  
  Kısayol menüsünün gösteren bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -305,7 +300,7 @@ virtual BOOL EnableContextMenuItems(
 > [!NOTE]
 > *Bağlam menüsü* kısayol menüsü eşanlamlısı olduğu.  
   
-##  <a name="enablepagescrollmode"></a>CMFCOutlookBarPane::EnablePageScrollMode  
+##  <a name="enablepagescrollmode"></a>  CMFCOutlookBarPane::EnablePageScrollMode  
  Outlook Çubuğu bölmesinde kaydırma oklarının düğmelerin sayfa tarafından ya da düğmesini tarafından düğmesi listesini ilerletmek olup olmadığını belirtir.  
   
 ```  
@@ -313,10 +308,10 @@ void EnablePageScrollMode(BOOL bPageScroll=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bPageScroll`  
+ [in] `bPageScroll`  
  Varsa `TRUE`, sayfa kaydırma modunu etkinleştirin. Varsa `FALSE`, sayfa kaydırma modu devre dışı bırakın.  
   
-##  <a name="getregularcolor"></a>CMFCOutlookBarPane::GetRegularColor  
+##  <a name="getregularcolor"></a>  CMFCOutlookBarPane::GetRegularColor  
  Normal döndürür (diğer bir deyişle, seçili olmayan) Outlook Çubuğu bölmesinin metin rengi.  
   
 ```  
@@ -329,7 +324,7 @@ DECLARE_MESSAGE_MAPCOLORREF GetRegularColor() const;
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [CMFCOutlookBarPane::SetTextColor](#settextcolor) Outlook Çubuğu geçerli (normal ve seçilen) metin rengini ayarlamak için. Varsayılan metin rengi çağırarak elde edebileceğiniz [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) ile işlev `COLOR_WINDOW` dizini.  
   
-##  <a name="isbackgroundtexture"></a>CMFCOutlookBarPane::IsBackgroundTexture  
+##  <a name="isbackgroundtexture"></a>  CMFCOutlookBarPane::IsBackgroundTexture  
  Outlook Çubuğu bölmesi yüklenen bir arka plan görüntüsü olup olmadığını belirler.  
   
 ```  
@@ -337,14 +332,14 @@ BOOL IsBackgroundTexture() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`görüntülemek için arka plan resmini ise; Aksi takdirde `FALSE`.  
+ `TRUE` görüntülemek için arka plan resmini ise; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağırarak bir arka plan görüntüsü ekleyebilirsiniz [CMFCOutlookBarPane::SetBackImage](#setbackimage) işlevi.  
   
  Arka plan görüntüsü varsa, arka plan kullanılarak belirtilen renkle boyanır [CMFCOutlookBarPane::SetBackColor](#setbackcolor).  
   
-##  <a name="isdrawshadedhighlight"></a>CMFCOutlookBarPane::IsDrawShadedHighlight  
+##  <a name="isdrawshadedhighlight"></a>  CMFCOutlookBarPane::IsDrawShadedHighlight  
  Düğme kenarlığı bir düğmesi vurgulanmış ve arka plan resmi görüntülendiğinde gölgeli olup olmadığını belirler.  
   
 ```  
@@ -352,16 +347,16 @@ BOOL IsDrawShadedHighlight() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`düğmenin Kenarlıklar gölgeli Aksi takdirde `FALSE`.  
+ `TRUE` düğmenin Kenarlıklar gölgeli Aksi takdirde `FALSE`.  
   
-##  <a name="removeallbuttons"></a>CMFCOutlookBarPane::RemoveAllButtons  
+##  <a name="removeallbuttons"></a>  CMFCOutlookBarPane::RemoveAllButtons  
  Tüm düğmeleri Outlook Çubuğu bölmesinden kaldırır.  
   
 ```  
 virtual void RemoveAllButtons();
 ```  
   
-##  <a name="removebutton"></a>CMFCOutlookBarPane::RemoveButton  
+##  <a name="removebutton"></a>  CMFCOutlookBarPane::RemoveButton  
  Belirtilen komut kimliğe sahip düğmesini kaldırır  
   
 ```  
@@ -369,13 +364,13 @@ BOOL RemoveButton(UINT iIdCommand);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iIdCommand`  
+ [in] `iIdCommand`  
  Kaldırmak için bir düğmeye komut Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Düğme başarıyla kaldırıldıysa; `FALSE` belirtilen komut kimliği geçerli değilse.  
+ `TRUE` Düğme başarıyla kaldırıldıysa; `FALSE` belirtilen komut kimliği geçerli değilse.  
   
-##  <a name="setbackcolor"></a>CMFCOutlookBarPane::SetBackColor  
+##  <a name="setbackcolor"></a>  CMFCOutlookBarPane::SetBackColor  
  Outlook çubuğu arka plan rengini belirler.  
   
 ```  
@@ -383,13 +378,13 @@ void SetBackColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`color`  
+ [in] `color`  
  Yeni arka plan rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Outlook Çubuğu geçerli arka plan rengini ayarlamak için bu işlevini çağırın. Arka plan rengi, yalnızca hiçbir arka plan görüntüsü olduğunda kullanılır.  
   
-##  <a name="setbackimage"></a>CMFCOutlookBarPane::SetBackImage  
+##  <a name="setbackimage"></a>  CMFCOutlookBarPane::SetBackImage  
  Arka plan resmi ayarlar.  
   
 ```  
@@ -397,13 +392,13 @@ void SetBackImage(UINT uiImageID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiImageID`  
+ [in] `uiImageID`  
  Resim kaynak kimliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Outlook ayarlamak için bu yöntemi çağırın çubuğunun arka plan görüntüsü. Arka plan görüntüleri listesi yönetilen katıştırılmış tarafından [CMFCToolBarImages sınıfı](../../mfc/reference/cmfctoolbarimages-class.md) nesnesi.  
   
-##  <a name="setdefaultstate"></a>CMFCOutlookBarPane::SetDefaultState  
+##  <a name="setdefaultstate"></a>  CMFCOutlookBarPane::SetDefaultState  
  Outlook Çubuğu bölmesi düğmelerinin özgün kümesine sıfırlar.  
   
 ```  
@@ -413,14 +408,14 @@ void SetDefaultState();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, özgün kümesine Outlook çubuğu düğmelerini geri yükler. Bu yöntem benzer `CMFCOutlookBarPane::RestoreOriginalstate`, Outlook Çubuğu bölmesinin yeniden düzenlenen tetiklemez dışında.  
   
-##  <a name="setextraspace"></a>CMFCOutlookBarPane::SetExtraSpace  
+##  <a name="setextraspace"></a>  CMFCOutlookBarPane::SetExtraSpace  
  Outlook Çubuğu bölmesi düğmeleri geçici kullanılan doldurma piksel sayısını ayarlar.  
   
 ```  
 void SetExtraSpace()  
 ```  
   
-##  <a name="settextcolor"></a>CMFCOutlookBarPane::SetTextColor  
+##  <a name="settextcolor"></a>  CMFCOutlookBarPane::SetTextColor  
  Outlook Çubuğu Bölmesi'nde normal ve vurgulanan metin rengini belirler.  
   
 ```  
@@ -430,13 +425,13 @@ void SetTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`clrRegText`  
+ [in] `clrRegText`  
  Seçili olmayan metin yeni rengini belirtir.  
   
- [in]`clrSelText`  
+ [in] `clrSelText`  
  Seçili metni yeni rengini belirtir.  
   
-##  <a name="settransparentcolor"></a>CMFCOutlookBarPane::SetTransparentColor  
+##  <a name="settransparentcolor"></a>  CMFCOutlookBarPane::SetTransparentColor  
  Outlook Çubuğu bölmesi saydam rengini belirler.  
   
 ```  

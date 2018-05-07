@@ -1,13 +1,10 @@
 ---
-title: "MFC ODBC Tüketici Sihirbazı | Microsoft Docs"
-ms.custom: 
+title: MFC ODBC Tüketici Sihirbazı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.mfc.consumer.overview
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - MFC ODBC Consumer Wizard
 - wizards [MFC]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad9e4aeb15d2af04987883b6554d569e3cc16b8d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c8a707df6878cd0031cb2ec9b06285e568503992
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-odbc-consumer-wizard"></a>MFC ODBC Tüketici Sihirbazı
 "Arama sonuçları" Özet buraya ekleyin.  
@@ -42,7 +37,7 @@ ms.lasthandoff: 12/21/2017
      Bu iletişim kutusunu kullanarak yeni bir dosya veri kaynağı oluşturmak için tıklatın `New` DSN adı; belirtmek için **yeni veri kaynağı oluştur** iletişim kutusu görüntülenir. İçinde **yeni veri kaynağı oluştur** iletişim kutusunda, uygun bir sürücü seçin ve tıklatın `Next`; tıklatın **Gözat**ve (olması için "Tüm dosyaları" seçmek için veri kaynağı olarak kullanılacak dosya adını seçin Görünüm DSN olmayan dosyalar .xls dosyaları gibi); tıklatın `Next`ve ardından **son**. (Bir DSN olmayan dosya seçerseniz, "ODBC Microsoft Excel, dosyayı bir DSN'ye dönüştürecek Kur," gibi bir sürücüye özgü iletişim kutusu alırsınız.)  
   
     > [!NOTE]
-    >  Ayrıca, önceden ODBC Veri Kaynağı Yöneticisi'ni kullanarak yeni bir dosya veri kaynağı oluşturabilirsiniz. Gelen **Başlat** menüsünde, select **ayarları**, **Denetim Masası**, **Yönetimsel Araçlar**, **veri kaynakları (ODBC)**ve ardından **ODBC Veri Kaynağı Yöneticisi**.  
+    >  Ayrıca, önceden ODBC Veri Kaynağı Yöneticisi'ni kullanarak yeni bir dosya veri kaynağı oluşturabilirsiniz. Gelen **Başlat** menüsünde, select **ayarları**, **Denetim Masası**, **Yönetimsel Araçlar**, **veri kaynakları (ODBC)** ve ardından **ODBC Veri Kaynağı Yöneticisi**.  
   
      **DSN adı** kutusunu dosyası veri kaynağı için bir ad belirtmenize olanak verir. DSN adı .xls Excel dosyaları ya da dosyalara erişmek için .mdb gibi uygun dosya uzantısıyla biten emin olmalısınız.  
   
@@ -54,7 +49,7 @@ ms.lasthandoff: 12/21/2017
   
  Tıklatın **Tamam** tamamlamak için. **Veritabanı nesnesi Seç** iletişim kutusu görüntülenir. Bu iletişim kutusundan tabloyu seçin veya tüketici kullanacağını görüntüleyin. Birden çok görünüm ve tablolar öğeler üzerinde denetim anahtarı tutarak seçebileceğiniz olduğunu unutmayın.  
   
- **Sınıfı**  
+ **sınıfı**  
  Varsayılan olarak, seçilen dosya veya makine veri kaynağı adını temel alarak tüketici sınıfın adı.  
   
  **.h dosyası**  

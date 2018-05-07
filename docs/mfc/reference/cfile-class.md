@@ -1,12 +1,9 @@
 ---
-title: "CFile sınıfı | Microsoft Docs"
-ms.custom: 
+title: CFile sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CFile
@@ -69,17 +66,15 @@ helpviewer_keywords:
 - CFile [MFC], m_hFile
 - CFile [MFC], m_pTM
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f7a2b0e1dd95b460d6b6007e79378bc69f1b4ce
-ms.sourcegitcommit: 2aeb507a426fc7881ea59115b1d5139c0a30ba91
+ms.openlocfilehash: ee4086b25fe675aaab1b484f21ec7e22e5603781
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cfile-class"></a>CFile sınıfı
 Microsoft Foundation Class dosya sınıfları için temel sınıf.  
@@ -146,7 +141,7 @@ class CFile : public CObject
 |[CFile::m_pTM](#m_ptm)|İşaretçi `CAtlTransactionManager` nesnesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Doğrudan arabellekten çıkarılan, ikili disk giriş/çıkış hizmetleri sağlar ve metin dosyaları ve bellek dosyalarını türetilmiş sınıflarının üzerinden dolaylı olarak destekler. `CFile`ile birlikte çalışır `CArchive` Microsoft Foundation Class nesneleri serileştirmek desteklemek için sınıf.  
+ Doğrudan arabellekten çıkarılan, ikili disk giriş/çıkış hizmetleri sağlar ve metin dosyaları ve bellek dosyalarını türetilmiş sınıflarının üzerinden dolaylı olarak destekler. `CFile` ile birlikte çalışır `CArchive` Microsoft Foundation Class nesneleri serileştirmek desteklemek için sınıf.  
   
  Bu sınıf ve türetilmiş sınıflarının arasındaki hiyerarşik ilişkiyi biçimli aracılığıyla tüm dosya nesneler üzerinde çalışması, program sağlar `CFile` arabirimi. Bellek dosyası, örneğin, bir disk dosyası gibi davranır.  
   
@@ -164,7 +159,7 @@ class CFile : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afx.h  
   
-##  <a name="abort"></a>CFile::Abort  
+##  <a name="abort"></a>  CFile::Abort  
  Bu nesneyle ilişkili dosyayı kapatır ve dosyayı okuma veya yazma için kullanılabilir hale getirir.  
   
 ```  
@@ -181,7 +176,7 @@ virtual void Abort();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#5](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_1.cpp)]  
   
-##  <a name="cfile"></a>CFile::CFile  
+##  <a name="cfile"></a>  CFile::CFile  
  Oluşturur ve başlatır bir `CFile` nesnesi.  
   
 ```  
@@ -277,7 +272,7 @@ CAtlTransactionManager* pTM);
   
  [!code-cpp[NVC_MFCFiles#4](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_2.cpp)]  
   
-##  <a name="close"></a>CFile::Close  
+##  <a name="close"></a>  CFile::Close  
  Bu nesneyle ilişkili dosyayı kapatır ve dosyayı okuma veya yazma için kullanılabilir hale getirir.  
   
 ```  
@@ -292,7 +287,7 @@ virtual void Close();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CFile::CFile](#cfile).  
   
-##  <a name="duplicate"></a>CFile::Duplicate  
+##  <a name="duplicate"></a>  CFile::Duplicate  
  Yinelenen yapıları `CFile` nesne belirli bir dosya için.  
   
 ```  
@@ -305,7 +300,7 @@ virtual CFile* Duplicate() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu C çalışma zamanı işlevine eşdeğerdir `_dup`.  
   
-##  <a name="flush"></a>CFile::Flush  
+##  <a name="flush"></a>  CFile::Flush  
  Dosyasına yazılacak olan dosya arabelleği kalan herhangi bir veri zorlar.  
   
 ```  
@@ -318,7 +313,7 @@ virtual void Flush();
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CFile::SetFilePath](#setfilepath).  
   
-##  <a name="getfilename"></a>CFile::GetFileName  
+##  <a name="getfilename"></a>  CFile::GetFileName  
  Belirtilen dosya adını almak için bu üye işlevini çağırın.  
   
 ```  
@@ -338,7 +333,7 @@ virtual CString GetFileName() const;
   
  [!code-cpp[NVC_MFCFiles#6](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_3.cpp)]  
   
-##  <a name="getfilepath"></a>CFile::GetFilePath  
+##  <a name="getfilepath"></a>  CFile::GetFilePath  
  Belirtilen bir dosyanın tam yolunu almak için bu üye işlevini çağırın.  
   
 ```  
@@ -356,7 +351,7 @@ virtual CString GetFilePath() const;
 ### <a name="example"></a>Örnek  
  Örneğin bkz [GetFileName](#getfilename).  
   
-##  <a name="getfiletitle"></a>CFile::GetFileTitle  
+##  <a name="getfiletitle"></a>  CFile::GetFileTitle  
  Dosyası için dosya başlık (görünen adı) almak için bu üye işlevini çağırın.  
   
 ```  
@@ -374,7 +369,7 @@ virtual CString GetFileTitle() const;
 ### <a name="example"></a>Örnek  
  Örneğin bkz [GetFileName](#getfilename).  
   
-##  <a name="getlength"></a>CFile::GetLength  
+##  <a name="getlength"></a>  CFile::GetLength  
  Dosyanın bayt cinsinden geçerli mantıksal uzunluğunu alır.  
   
 ```  
@@ -387,7 +382,7 @@ virtual ULONGLONG GetLength() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#7](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_4.cpp)]  
   
-##  <a name="getposition"></a>CFile::GetPosition  
+##  <a name="getposition"></a>  CFile::GetPosition  
  Sonraki çağrılar kullanılabilir dosya işaretçisini geçerli değeri elde `Seek`.  
   
 ```  
@@ -400,7 +395,7 @@ virtual ULONGLONG GetPosition() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#8](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_5.cpp)]  
   
-##  <a name="getstatus"></a>CFile::GetStatus  
+##  <a name="getstatus"></a>  CFile::GetStatus  
  Bu yöntem ile ilgili durum bilgilerini alır bir verilen `CFile` nesne örneği veya belirtilen dosya yolu.  
   
 ```  
@@ -457,7 +452,7 @@ enum Attribute {
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#10](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_6.cpp)]  
   
-##  <a name="hfilenull"></a>CFile::hFileNull  
+##  <a name="hfilenull"></a>  CFile::hFileNull  
  İçin geçerli bir dosya tanıtıcısı varlığını belirler `CFile` nesnesi.  
   
 ```  
@@ -471,7 +466,7 @@ static AFX_DATA const HANDLE hFileNull;
   
  [!code-cpp[NVC_MFCFiles#22](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_7.cpp)]  
   
-##  <a name="lockrange"></a>CFile::LockRange  
+##  <a name="lockrange"></a>  CFile::LockRange  
  Açık bir dosyanın dosya zaten kilitliyse bir özel durum atma bayt aralığı kilitler.  
   
 ```  
@@ -498,7 +493,7 @@ virtual void LockRange(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#12](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_8.cpp)]  
   
-##  <a name="m_hfile"></a>CFile::m_hFile  
+##  <a name="m_hfile"></a>  CFile::m_hFile  
  Açık bir dosyayı işletim sistemi dosya işleci içeriyor.  
   
 ```  
@@ -506,11 +501,11 @@ HANDLE m_hFile;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `m_hFile`tür genel bir değişkendir **UINT**. İçerdiği `CFile::hFileNull` (bir işletim sistemi-bağımsız boş dosya gösterge) tanıtıcı atanmamıştır durumunda.  
+ `m_hFile` tür genel bir değişkendir **UINT**. İçerdiği `CFile::hFileNull` (bir işletim sistemi-bağımsız boş dosya gösterge) tanıtıcı atanmamıştır durumunda.  
   
- Kullanımı `m_hFile` üyenin anlamı türetilmiş sınıf üzerinde bağımlı olduğu için önerilmez. `m_hFile`sınıfını kullanmak ortak bir üye nonpolymorphic destekleyen kolaylık sağlamak için yapılır.  
+ Kullanımı `m_hFile` üyenin anlamı türetilmiş sınıf üzerinde bağımlı olduğu için önerilmez. `m_hFile` sınıfını kullanmak ortak bir üye nonpolymorphic destekleyen kolaylık sağlamak için yapılır.  
   
-##  <a name="m_ptm"></a>CFile::m_pTM  
+##  <a name="m_ptm"></a>  CFile::m_pTM  
  İşaretçi bir `CAtlTransactionManager` nesnesi.  
   
 ```  
@@ -519,7 +514,7 @@ CAtlTransactionManager* m_pTM;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="open"></a>CFile::Open  
+##  <a name="open"></a>  CFile::Open  
  Fazla Yüklendi. **Açık** varsayılan ile kullanılmak üzere tasarlanmış `CFile` Oluşturucusu.  
   
 ```  
@@ -562,23 +557,23 @@ virtual BOOL Open(
 |`pError`|Hatayla karşılaşıldı|Dönüş değeri|CFileException içeriği|  
 |--------------|------------------------|------------------|----------------------------|  
 |**NULL**|Hayır|**TRUE**|yok|  
-|PTR`CFileException`|Hayır|**TRUE**|Değişmedi|  
+|PTR `CFileException`|Hayır|**TRUE**|Değişmedi|  
 |**NULL**|Evet|**FALSE**|yok|  
-|PTR`CFileException`|Evet|**FALSE**|hata açıklamak için başlatıldı|  
+|PTR `CFileException`|Evet|**FALSE**|hata açıklamak için başlatıldı|  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#13](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_9.cpp)]  
   
  [!code-cpp[NVC_MFCFiles#14](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_10.cpp)]  
   
-##  <a name="operator_handle"></a>CFile::operator TANITICISI  
+##  <a name="operator_handle"></a>  CFile::operator TANITICISI  
  İçin bir tanıtıcı geçirmek için bu işleci kullanın bir `CFile` işlevler gibi nesne [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) ve [GetFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724320) , beklediğiniz bir `HANDLE`.  
   
 ```  
 operator HANDLE() const;  
 ```  
   
-##  <a name="read"></a>CFile::Read  
+##  <a name="read"></a>  CFile::Read  
  İle ilişkili dosyasından arabellek içine veri okuyan `CFile` nesnesi.  
   
 ```  
@@ -602,7 +597,7 @@ virtual UINT Read(
   
  Başka bir örnek için bkz: [CFile::Open](#open).  
   
-##  <a name="remove"></a>CFile::Remove  
+##  <a name="remove"></a>  CFile::Remove  
  Bu statik işlev yolu tarafından belirtilen dosyayı siler.  
   
 ```  
@@ -626,7 +621,7 @@ static void PASCAL Remove(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#17](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_12.cpp)]  
   
-##  <a name="rename"></a>CFile::Rename  
+##  <a name="rename"></a>  CFile::Rename  
  Bu statik işlevi belirtilen dosyayı yeniden adlandırır.  
   
 ```  
@@ -652,7 +647,7 @@ static void PASCAL Rename(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#18](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_13.cpp)]  
   
-##  <a name="seek"></a>CFile::Seek  
+##  <a name="seek"></a>  CFile::Seek  
  Dosya işaretçisini açık bir dosyayı yeniden konumlandırır.  
   
 ```  
@@ -689,7 +684,7 @@ UINT nFrom);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#9](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_14.cpp)]  
   
-##  <a name="seektobegin"></a>CFile::SeekToBegin  
+##  <a name="seektobegin"></a>  CFile::SeekToBegin  
  Dosya işaretçisini değerini dosyasının başlangıcına ayarlar.  
   
 ```  
@@ -697,12 +692,12 @@ void SeekToBegin();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `SeekToBegin()`eşdeğer olan `Seek( 0L, CFile::begin )`.  
+ `SeekToBegin()` eşdeğer olan `Seek( 0L, CFile::begin )`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#19](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_15.cpp)]  
   
-##  <a name="seektoend"></a>CFile::SeekToEnd  
+##  <a name="seektoend"></a>  CFile::SeekToEnd  
  Dosya işaretçisini değerini mantıksal dosyanın sonuna ayarlar.  
   
 ```  
@@ -713,12 +708,12 @@ ULONGLONG SeekToEnd();
  Dosyanın bayt cinsinden uzunluğu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `SeekToEnd()`eşdeğer olan `CFile::Seek( 0L, CFile::end )`.  
+ `SeekToEnd()` eşdeğer olan `CFile::Seek( 0L, CFile::end )`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#19](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_15.cpp)]  
   
-##  <a name="setfilepath"></a>CFile::SetFilePath  
+##  <a name="setfilepath"></a>  CFile::SetFilePath  
  Dosyasının yolunu belirtmek için bu işlevi çağırmak; Örneğin, bir dosyanın yolunu ne zaman kullanılabilir değilse, bir [CFile](../../mfc/reference/cfile-class.md) nesne yapılandırılmıştır, çağrı `SetFilePath` bunu sağlamak için.  
   
 ```  
@@ -732,12 +727,12 @@ virtual void SetFilePath(LPCTSTR lpszNewName);
 ### <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
-> `SetFilePath`Dosya veya açmayın dosyası oluşturun; yalnızca ilişkilendirir `CFile` sonra kullanılabilir bir yol adına sahip nesne.  
+> `SetFilePath` Dosya veya açmayın dosyası oluşturun; yalnızca ilişkilendirir `CFile` sonra kullanılabilir bir yol adına sahip nesne.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#20](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_16.cpp)]  
   
-##  <a name="setlength"></a>CFile::SetLength  
+##  <a name="setlength"></a>  CFile::SetLength  
  Dosya uzunluğunu değiştirmek için bu işlevini çağırın.  
   
 ```  
@@ -756,7 +751,7 @@ virtual void SetLength(ULONGLONG dwNewLen);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#11](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_17.cpp)]  
   
-##  <a name="setstatus"></a>CFile::SetStatus  
+##  <a name="setstatus"></a>  CFile::SetStatus  
  Bu dosya konumu ile ilişkili dosyanın durumunu ayarlar.  
   
 ```  
@@ -770,7 +765,7 @@ static void PASCAL SetStatus(
  `lpszFileName`  
  İstenen dosyanın yolu olan bir dize. Yolun göreli veya mutlak olabilir ve bir ağ adı içermelidir.  
   
- *durumu*  
+ *Durumu*  
  Yeni bir durum bilgisi içeren arabelleği. Çağrı **GetStatus** prefill için üye işlevini **CFileStatus** yapısı geçerli değerlerle sonra gerekli değişiklikleri yapın. Değer 0 ise, karşılık gelen durum öğesi güncelleştirilmez. Bkz: [GetStatus](#getstatus) üye işlevi bir açıklaması için **CFileStatus** yapısı.  
   
  `pTM`  
@@ -784,7 +779,7 @@ static void PASCAL SetStatus(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#21](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_18.cpp)]  
   
-##  <a name="unlockrange"></a>CFile::UnlockRange  
+##  <a name="unlockrange"></a>  CFile::UnlockRange  
  Açık bir dosyayı bir bayt aralığı kilidini açar.  
   
 ```  
@@ -809,7 +804,7 @@ virtual void UnlockRange(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#12](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_8.cpp)]  
   
-##  <a name="write"></a>CFile::Write  
+##  <a name="write"></a>  CFile::Write  
  Verileri bir arabelleğinden ilişkili dosyaya yazar `CFile` nesnesi.  
   
 ```  

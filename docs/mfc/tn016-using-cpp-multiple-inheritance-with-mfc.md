@@ -1,13 +1,10 @@
 ---
 title: "TN016: MFC'de C++ birden çok devralmayı kullanma | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.inheritance
 dev_langs:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - MI (Multiple Inheritance)
 - multiple inheritance, MFC support for
 ms.assetid: 4ee27ae1-1410-43a5-b111-b6af9b84535d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b276e316ffc8ce04577532ac3b15400ee28f9f33
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fe1e79324c4c1f7408e1b801cf2be581b9884717
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn016-using-c-multiple-inheritance-with-mfc"></a>TN016: MFC'de C++ Birden Çok Devralmayı Kullanma
 Bu Not Microsoft Foundation sınıflarıyla birden çok devralma (mı) kullanmayı açıklar. MI kullanımını MFC ile gerekli değildir. Her MFC sınıf kullanılmaz ve bir sınıf kitaplığı yazmak için gerekli değildir.  
@@ -46,7 +41,7 @@ Bu Not Microsoft Foundation sınıflarıyla birden çok devralma (mı) kullanmay
  Alternatif kullanmaktır `dynamic_cast` işleci. MI, temel sınıflarından biri için olan bir nesne atama işlevleri sağlanan taban sınıf içinde kullanmak için derleyicisi zorlar. Daha fazla bilgi için bkz: [dynamic_cast işleci](../cpp/dynamic-cast-operator.md).  
   
 ## <a name="cobject---the-root-of-all-classes"></a>CObject - tüm sınıflar kök  
- Tüm önemli sınıfları doğrudan veya dolaylı olarak sınıfından türetilen `CObject`. `CObject`mu herhangi bir üye veri sahip değilse, ancak bazı varsayılan işlevselliğe sahiptir. MI kullandığınızda, genellikle iki veya daha fazla devralır `CObject`-türetilmiş sınıfları. Aşağıdaki örnek öğesinden bir sınıf nasıl devrettiği gösterilmektedir bir [CFrameWnd](../mfc/reference/cframewnd-class.md) ve [CObList](../mfc/reference/coblist-class.md):  
+ Tüm önemli sınıfları doğrudan veya dolaylı olarak sınıfından türetilen `CObject`. `CObject` mu herhangi bir üye veri sahip değilse, ancak bazı varsayılan işlevselliğe sahiptir. MI kullandığınızda, genellikle iki veya daha fazla devralır `CObject`-türetilmiş sınıfları. Aşağıdaki örnek öğesinden bir sınıf nasıl devrettiği gösterilmektedir bir [CFrameWnd](../mfc/reference/cframewnd-class.md) ve [CObList](../mfc/reference/coblist-class.md):  
   
 ```  
 class CListWnd : public CFrameWnd, public CObList  

@@ -1,12 +1,9 @@
 ---
-title: "COleLinkingDoc sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleLinkingDoc sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleLinkingDoc
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - COleLinkingDoc [MFC], OnFindEmbeddedItem
 - COleLinkingDoc [MFC], OnGetLinkedItem
 ms.assetid: 9f547f35-2f95-427f-b9c0-85c31940198b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 611d09a12da1d2ebf6fcae8d7573cc48a5318f97
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fe37e1a159fa0138c237b58ffbd622292dcba714
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="colelinkingdoc-class"></a>COleLinkingDoc sınıfı
 Katıştırılmış öğelerine bağlama desteği OLE kapsayıcı belgeler için temel sınıfı içerir.  
@@ -105,7 +100,7 @@ class COleLinkingDoc : public COleDocument
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxole.h  
   
-##  <a name="colelinkingdoc"></a>COleLinkingDoc::COleLinkingDoc  
+##  <a name="colelinkingdoc"></a>  COleLinkingDoc::COleLinkingDoc  
  Oluşturan bir `COleLinkingDoc` OLE sistem DLL'leri ile iletişim başlayan olmadan nesnesi.  
   
 ```  
@@ -115,7 +110,7 @@ COleLinkingDoc();
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız `Register` OLE belge açık olduğunu bildirmek için üye işlevi.  
   
-##  <a name="onfindembeddeditem"></a>COleLinkingDoc::OnFindEmbeddedItem  
+##  <a name="onfindembeddeditem"></a>  COleLinkingDoc::OnFindEmbeddedItem  
  Belge belirtilen ada sahip bir katıştırılmış OLE öğe içerip içermediğini belirlemek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -132,7 +127,7 @@ virtual COleClientItem* OnFindEmbeddedItem(LPCTSTR lpszItemName);
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama (adı karşılaştırma büyük küçük harfe duyarlı) belirtilen ada sahip bir öğe için katıştırılmış öğeleri listesi arar. Depolama veya katıştırılmış OLE öğeleri adlandırma kendi yöntemi varsa, bu işlev geçersiz kılar.  
   
-##  <a name="ongetlinkeditem"></a>COleLinkingDoc::OnGetLinkedItem  
+##  <a name="ongetlinkeditem"></a>  COleLinkingDoc::OnGetLinkedItem  
  Belgenin belirtilen ada sahip bir bağlantılı sunucu öğesi içerip içermediğini denetlemek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -149,7 +144,7 @@ virtual COleServerItem* OnGetLinkedItem(LPCTSTR lpszItemName);
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan `COleLinkingDoc` uygulama her zaman döndürür **NULL**. Bu işlev geçersiz kılınmadı türetilmiş sınıfında `COleServerDoc` (adı karşılaştırma büyük küçük harfe duyarlı) belirtilen ad ile bağlantılı bir öğe için OLE sunucusu öğeleri listesi aramak için. Depolama veya bağlantılı sunucu öğeleri alınıyor kendi yönteminizi uyguladıysanız bu işlev geçersiz kılar.  
   
-##  <a name="register"></a>COleLinkingDoc::Register  
+##  <a name="register"></a>  COleLinkingDoc::Register  
  OLE sistem DLL'leri belgenin açık olduğunu bildirir.  
   
 ```  
@@ -173,7 +168,7 @@ BOOL Register(
   
  Kullanıyorsanız `COleTemplateServer` , uygulamanızda `Register` tarafından sizin için adlı `COleLinkingDoc`'s uyarlamasını `OnNewDocument`, `OnOpenDocument`, ve `OnSaveDocument`.  
   
-##  <a name="revoke"></a>COleLinkingDoc::Revoke  
+##  <a name="revoke"></a>  COleLinkingDoc::Revoke  
  OLE sistem DLL'leri belgeyi artık açık olduğunu bildirir.  
   
 ```  
@@ -183,7 +178,7 @@ void Revoke();
 ### <a name="remarks"></a>Açıklamalar  
  OLE sistem DLL'leri belgenin kaydı iptal etmek için bu işlevini çağırın.  
   
- Bu işlev bir adlandırılmış dosya kapatılırken çağırmanız gerekir, ancak genellikle doğrudan çağırmanız gerekmez. `Revoke`tarafından sizin için adlı `COleLinkingDoc`'s uyarlamasını `OnCloseDocument`, `OnNewDocument`, `OnOpenDocument`, ve `OnSaveDocument`.  
+ Bu işlev bir adlandırılmış dosya kapatılırken çağırmanız gerekir, ancak genellikle doğrudan çağırmanız gerekmez. `Revoke` tarafından sizin için adlı `COleLinkingDoc`'s uyarlamasını `OnCloseDocument`, `OnNewDocument`, `OnOpenDocument`, ve `OnSaveDocument`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek OCLIENT](../../visual-cpp-samples.md)   

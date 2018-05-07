@@ -1,12 +1,9 @@
 ---
-title: "CMFCPropertyGridColorProperty sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCPropertyGridColorProperty sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCPropertyGridColorProperty
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - CMFCPropertyGridColorProperty [MFC], SetColumnsNumber
 - CMFCPropertyGridColorProperty [MFC], SetOriginalValue
 ms.assetid: af37be93-a91e-40a2-9a65-0f3412c6f0f8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33c807343c29fca74168167ef5d784e056b350fa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: de336692a821ba374996fac9ee7d282d2990bd08
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcpropertygridcolorproperty-class"></a>CMFCPropertyGridColorProperty sınıfı
 `CMFCPropertyGridColorProperty` Sınıfı, bir renk seçimi iletişim kutusunu açar bir özelliği liste denetim öğesi destekler.  
@@ -94,7 +89,7 @@ class CMFCPropertyGridColorProperty : public CMFCPropertyGridProperty
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxpropertygridctrl.h  
   
-##  <a name="cmfcpropertygridcolorproperty"></a>CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty  
+##  <a name="cmfcpropertygridcolorproperty"></a>  CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty  
  Oluşturan bir `CMFCPropertyGridColorProperty` nesnesi.  
   
 ```  
@@ -107,22 +102,22 @@ CMFCPropertyGridColorProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`strName`  
+ [in] `strName`  
  Özelliğin adı.  
   
- [in]`color`  
+ [in] `color`  
  Özelliğin renk değeri.  
   
- [in]`pPalette`  
+ [in] `pPalette`  
  Renk paletini işaretçi. Varsayılan değer `NULL` şeklindedir.  
   
- [in]`lpszDescr`  
+ [in] `lpszDescr`  
  Özellik açıklaması. Varsayılan değer `NULL` şeklindedir.  
   
- [in]`dwData`  
+ [in] `dwData`  
  Bir tamsayı ya da özelliği ile ilişkili diğer veri için bir işaretçi gibi uygulamaya özgü verileri. Varsayılan değer 0’dır.  
   
-##  <a name="enableautomaticbutton"></a>CMFCPropertyGridColorProperty::EnableAutomaticButton  
+##  <a name="enableautomaticbutton"></a>  CMFCPropertyGridColorProperty::EnableAutomaticButton  
  Etkinleştirir *otomatik* renk seçimi iletişim kutusunu düğmesinde. (Standart otomatik düğme etiketli **otomatik**.)  
   
 ```  
@@ -133,18 +128,18 @@ void EnableAutomaticButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszLabel`  
+ [in] `lpszLabel`  
  Otomatik düğmesinin etiket metni.  
   
- [in]`colorAutomatic`  
+ [in] `colorAutomatic`  
  Otomatik (varsayılan) renk RGB renk değeri.  
   
- [in]`bEnable`  
- `TRUE`Otomatik düğmesini etkinleştirmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bEnable`  
+ `TRUE` Otomatik düğmesini etkinleştirmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="enableotherbutton"></a>CMFCPropertyGridColorProperty::EnableOtherButton  
+##  <a name="enableotherbutton"></a>  CMFCPropertyGridColorProperty::EnableOtherButton  
  Etkinleştirir *diğer* renk seçimi iletişim kutusunu düğmesinde. (Standart diğer düğme etiketini **daha renkleri**.)  
   
 ```  
@@ -155,18 +150,18 @@ void EnableOtherButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszLabel`  
+ [in] `lpszLabel`  
  Diğer düğmesinin etiket metni.  
   
- [in]`bAltColorDlg`  
- `TRUE`Görüntülenecek `CMFCColorDialog` iletişim kutusu; `FALSE` standart renk seçimi iletişim kutusunu görüntüleyin. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bAltColorDlg`  
+ `TRUE` Görüntülenecek `CMFCColorDialog` iletişim kutusu; `FALSE` standart renk seçimi iletişim kutusunu görüntüleyin. Varsayılan değer `TRUE` şeklindedir.  
   
- [in]`bEnable`  
- `TRUE`diğer düğmesini görüntülemek için; Aksi takdirde `FALSE`.  Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bEnable`  
+ `TRUE` diğer düğmesini görüntülemek için; Aksi takdirde `FALSE`.  Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getcolor"></a>CMFCPropertyGridColorProperty::GetColor  
+##  <a name="getcolor"></a>  CMFCPropertyGridColorProperty::GetColor  
  Özelliği geçerli rengi alır.  
   
 ```  
@@ -178,7 +173,7 @@ COLORREF GetColor() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setcolor"></a>CMFCPropertyGridColorProperty::SetColor  
+##  <a name="setcolor"></a>  CMFCPropertyGridColorProperty::SetColor  
  Özelliği için yeni bir renk ayarlar.  
   
 ```  
@@ -186,12 +181,12 @@ void SetColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`color`  
+ [in] `color`  
  RGB renk değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setcolumnsnumber"></a>CMFCPropertyGridColorProperty::SetColumnsNumber  
+##  <a name="setcolumnsnumber"></a>  CMFCPropertyGridColorProperty::SetColumnsNumber  
  Sütun sayısı geçerli renk özellik kılavuzunda belirtir.  
   
 ```  
@@ -199,13 +194,13 @@ void SetColumnsNumber(int nColumnsNumber);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nColumnsNumber`  
+ [in] `nColumnsNumber`  
  Renk özellik kılavuzunda sütun tercih edilen sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem değerini ayarlar `m_nColumnsNumber` veri üyesi korumalı.  
   
-##  <a name="setoriginalvalue"></a>CMFCPropertyGridColorProperty::SetOriginalValue  
+##  <a name="setoriginalvalue"></a>  CMFCPropertyGridColorProperty::SetOriginalValue  
  Düzenlenebilir bir özelliğinin özgün değeri ayarlar.  
   
 ```  
@@ -213,7 +208,7 @@ virtual void SetOriginalValue(const COleVariant& varValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`varValue`  
+ [in] `varValue`  
  Bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  

@@ -2,12 +2,9 @@
 title: MINMAXINFO yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - MINMAXINFO
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - MINMAXINFO structure [MFC]
 ms.assetid: be6fb578-f98a-4581-9ada-be9df308ed2f
-caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2c799299ef9058648d6b056dcd02fe580f06148
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 12161938f96e5044ae48f9eb5cf380fbc3840d3f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="minmaxinfo-structure"></a>MINMAXINFO Yapısı
 `MINMAXINFO` Yapısı bir pencere ekranı kaplamış boyutunu ve konumunu ve minimum ve maksimum izleme boyutuna hakkındaki bilgileri içerir.  

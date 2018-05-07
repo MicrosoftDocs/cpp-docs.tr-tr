@@ -1,13 +1,10 @@
 ---
-title: "COLORADJUSTMENT yapısı | Microsoft Docs"
-ms.custom: 
+title: COLORADJUSTMENT yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - COLORADJUSTMENT
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - COLORADJUSTMENT structure [MFC]
 ms.assetid: 67fc4e63-0e0e-4fcb-8c45-aa5ebfefa013
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4e86010cda3545a6216767c1519bc5b2bccdf43
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ffb0ec0233edd968ad121b84f9e1d584a26f3387
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coloradjustment-structure"></a>COLORADJUSTMENT Yapısı
 `COLORADJUSTMENT` Yapısını tanımlar Windows tarafından kullanılan rengi ayarlama değerleri `StretchBlt` ve **StretchDIBits** işlevleri zaman `StretchBlt` modu **noktalı**.  

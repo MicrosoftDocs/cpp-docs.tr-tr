@@ -1,12 +1,9 @@
 ---
-title: "CObList sınıfı | Microsoft Docs"
-ms.custom: 
+title: CObList sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CObList
@@ -59,17 +56,15 @@ helpviewer_keywords:
 - CObList [MFC], RemoveTail
 - CObList [MFC], SetAt
 ms.assetid: 80699c93-33d8-4f8b-b8cf-7b58aeab64ca
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfcd79377eebbf36ec4dd4688dff8b33c112e451
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 35217ee967554332002d8597a00dc21df928306d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coblist-class"></a>CObList sınıfı
 sıralı listeler verildiğinden, fSupports `CObject` işaretçileri erişilebilir sırayla veya işaretçisi değeri.  
@@ -115,13 +110,13 @@ class CObList : public CObject
 |[CObList::SetAt](#setat)|Öğe verilen konumunda ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CObList`listeleri karakteriyle bağlı listeleri gibi davranır.  
+ `CObList` listeleri karakteriyle bağlı listeleri gibi davranır.  
   
  Türünde bir değişken **konumu** bir anahtar listesi. Kullanabileceğiniz bir **konumu** hem yineleyici listesini sırayla geçiş için de bir yerde saklamak için bir yer işareti olarak değişken. Bir konuma bir dizin aynı ancak değildir.  
   
  Öğe ekleme olduğundan çok listesi head en hızlı, kuyruk ve bilinen bir **konumu**. Sıralı bir ara değer veya dizin göre bir öğeyi aramak gereklidir. Bu arama listesi uzunsa yavaş olabilir.  
   
- `CObList`bir araya getirir `IMPLEMENT_SERIAL` makrosu seri hale getirme ve alt öğeleri dökme desteklemek için. Bir listesi, `CObject` işaretçileri aşırı yüklenmiş ekleme işleciyle veya ile bir arşivde saklanır `Serialize` her üye işlev `CObject` öğenin sırayla sıralandığı.  
+ `CObList` bir araya getirir `IMPLEMENT_SERIAL` makrosu seri hale getirme ve alt öğeleri dökme desteklemek için. Bir listesi, `CObject` işaretçileri aşırı yüklenmiş ekleme işleciyle veya ile bir arşivde saklanır `Serialize` her üye işlev `CObject` öğenin sırayla sıralandığı.  
   
  Tek bir dökümü gerekiyorsa `CObject` listesindeki öğeler, ayarlamalısınız döküm içerik derinliği 1 veya daha büyük.  
   
@@ -142,7 +137,7 @@ class CObList : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxcoll.h  
   
-##  <a name="addhead"></a>CObList::AddHead  
+##  <a name="addhead"></a>  CObList::AddHead  
  Bu listenin başında yeni bir öğe veya öğe listesi ekler.  
   
 ```  
@@ -183,7 +178,7 @@ void AddHead(CObList* pNewList);
   
  `a CAge at $442A 21`  
   
-##  <a name="addtail"></a>CObList::AddTail  
+##  <a name="addtail"></a>  CObList::AddTail  
  Bu liste kuyruk için yeni bir öğe veya öğelerin listesi ekler.  
   
 ```  
@@ -224,7 +219,7 @@ void AddTail(CObList* pNewList);
   
  `a CAge at $4526 40`  
   
-##  <a name="coblist"></a>CObList::CObList  
+##  <a name="coblist"></a>  CObList::CObList  
  Boş bir yapıları `CObject` işaretçi liste.  
   
 ```  
@@ -254,7 +249,7 @@ CObList(INT_PTR nBlockSize = 10);
   
  [!code-cpp[NVC_MFCCollections#92](../../mfc/codesnippet/cpp/coblist-class_4.cpp)]  
   
-##  <a name="find"></a>CObList::Find  
+##  <a name="find"></a>  CObList::Find  
  Sıralı olarak ilk bulmak için listeyi arar `CObject` belirtilen eşleşen işaretçi `CObject` işaretçi.  
   
 ```  
@@ -288,7 +283,7 @@ POSITION Find(
   
  [!code-cpp[NVC_MFCCollections#93](../../mfc/codesnippet/cpp/coblist-class_5.cpp)]  
   
-##  <a name="findindex"></a>CObList::FindIndex  
+##  <a name="findindex"></a>  CObList::FindIndex  
  Değerini kullanır `nIndex` listesine bir dizin olarak.  
   
 ```  
@@ -303,7 +298,7 @@ POSITION FindIndex(INT_PTR nIndex) const;
  A **konumu** yineleme veya nesne işaretçi alma; için kullanılan değer **NULL** varsa `nIndex` çok büyük. (Framework bir onaylama oluşturur `nIndex` negatiftir.)  
   
 ### <a name="remarks"></a>Açıklamalar  
- Durduruluyor listenin başındaki gelen sıralı bir tarama başlamadan  *n* th öğesi.  
+ Durduruluyor listenin başındaki gelen sıralı bir tarama başlamadan *n*th öğesi.  
   
  Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObList::FindIndex`.  
   
@@ -317,7 +312,7 @@ POSITION FindIndex(INT_PTR nIndex) const;
   
  [!code-cpp[NVC_MFCCollections#94](../../mfc/codesnippet/cpp/coblist-class_6.cpp)]  
   
-##  <a name="getat"></a>CObList::GetAt  
+##  <a name="getat"></a>  CObList::GetAt  
  Türünde bir değişken **konumu** bir anahtar listesi.  
   
 ```  
@@ -326,14 +321,14 @@ const CObject*& GetAt(POSITION position) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *konumu*  
+ *Konumu*  
  A **konumu** önceki tarafından döndürülen değer `GetHeadPosition` veya **Bul** üye işlev çağrısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Dönüş değeri açıklamasına bakın [GetHead](#gethead).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu dizin ile aynı değildir ve üzerinde çalışamaz bir **konumu** kendiniz değeri. `GetAt`alır `CObject` verilen bir konumu ile ilişkili işaretçi.  
+ Bu dizin ile aynı değildir ve üzerinde çalışamaz bir **konumu** kendiniz değeri. `GetAt` alır `CObject` verilen bir konumu ile ilişkili işaretçi.  
   
  Emin olmanız gerekir, **konumu** değer listesinde geçerli bir konumu temsil eder. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.  
   
@@ -347,7 +342,7 @@ const CObject*& GetAt(POSITION position) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [findIndex](#findindex).  
   
-##  <a name="getcount"></a>CObList::GetCount  
+##  <a name="getcount"></a>  CObList::GetCount  
  Bu listede öğe sayısını alır.  
   
 ```  
@@ -369,7 +364,7 @@ INT_PTR GetCount() const;
   
  [!code-cpp[NVC_MFCCollections#95](../../mfc/codesnippet/cpp/coblist-class_7.cpp)]  
   
-##  <a name="gethead"></a>CObList::GetHead  
+##  <a name="gethead"></a>  CObList::GetHead  
  Alır `CObject` head öğesi, bu listenin gösteren bir işaretçi.  
   
 ```  
@@ -399,7 +394,7 @@ const CObject*& GetHead() const;
   
  [!code-cpp[NVC_MFCCollections#96](../../mfc/codesnippet/cpp/coblist-class_8.cpp)]  
   
-##  <a name="getheadposition"></a>CObList::GetHeadPosition  
+##  <a name="getheadposition"></a>  CObList::GetHeadPosition  
  Head öğesi, bu listenin konumunu alır.  
   
 ```  
@@ -421,7 +416,7 @@ POSITION GetHeadPosition() const;
   
  [!code-cpp[NVC_MFCCollections#97](../../mfc/codesnippet/cpp/coblist-class_9.cpp)]  
   
-##  <a name="getnext"></a>CObList::GetNext  
+##  <a name="getnext"></a>  CObList::GetNext  
  Tarafından tanımlanan liste öğesi alır `rPosition`, ardından ayarlar `rPosition` için `POSITION` listesinde sonraki girdisinin değeri.  
   
 ```  
@@ -466,7 +461,7 @@ const CObject* GetNext(POSITION& rPosition) const;
   
  `a CAge at $46C0 21`  
   
-##  <a name="getprev"></a>CObList::GetPrev  
+##  <a name="getprev"></a>  CObList::GetPrev  
  Tarafından tanımlanan liste öğesi alır `rPosition`, ardından ayarlar `rPosition` için `POSITION` listesinde önceki girdisinin değeri.  
   
 ```  
@@ -509,7 +504,7 @@ const CObject* GetPrev(POSITION& rPosition) const;
   
  `a CAge at $421C 40`  
   
-##  <a name="getsize"></a>CObList::GetSize  
+##  <a name="getsize"></a>  CObList::GetSize  
  Liste öğelerinin sayısını döndürür.  
   
 ```  
@@ -534,7 +529,7 @@ INT_PTR GetSize() const;
   
  [!code-cpp[NVC_MFCCollections#100](../../mfc/codesnippet/cpp/coblist-class_12.cpp)]  
   
-##  <a name="gettail"></a>CObList::GetTail  
+##  <a name="gettail"></a>  CObList::GetTail  
  Alır `CObject` bu listenin kuyruğu öğesinin temsil ettiği işaretçi.  
   
 ```  
@@ -560,7 +555,7 @@ const CObject*& GetTail() const;
   
  [!code-cpp[NVC_MFCCollections#101](../../mfc/codesnippet/cpp/coblist-class_13.cpp)]  
   
-##  <a name="gettailposition"></a>CObList::GetTailPosition  
+##  <a name="gettailposition"></a>  CObList::GetTailPosition  
  Bu listenin kuyruğu öğesinin konumu alır; **NULL** liste boşsa.  
   
 ```  
@@ -582,7 +577,7 @@ POSITION GetTailPosition() const;
   
  [!code-cpp[NVC_MFCCollections#102](../../mfc/codesnippet/cpp/coblist-class_14.cpp)]  
   
-##  <a name="insertafter"></a>CObList::InsertAfter  
+##  <a name="insertafter"></a>  CObList::InsertAfter  
  Bir öğeyi, belirli bir konumda öğesinden sonra bu listeye ekler.  
   
 ```  
@@ -592,7 +587,7 @@ POSITION InsertAfter(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *konumu*  
+ *Konumu*  
  A **konumu** önceki tarafından döndürülen değer `GetNext`, `GetPrev`, veya **Bul** üye işlev çağrısı.  
   
  `newElement`  
@@ -623,7 +618,7 @@ POSITION InsertAfter(
   
  `a CAge at $4968 21`  
   
-##  <a name="insertbefore"></a>CObList::InsertBefore  
+##  <a name="insertbefore"></a>  CObList::InsertBefore  
  Bu liste öğe belirli bir konumda bir öğe ekler.  
   
 ```  
@@ -633,7 +628,7 @@ POSITION InsertBefore(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *konumu*  
+ *Konumu*  
  A **konumu** önceki tarafından döndürülen değer `GetNext`, `GetPrev`, veya **Bul** üye işlev çağrısı.  
   
  `newElement`  
@@ -664,7 +659,7 @@ POSITION InsertBefore(
   
  `a CAge at $49E6 21`  
   
-##  <a name="isempty"></a>CObList::IsEmpty  
+##  <a name="isempty"></a>  CObList::IsEmpty  
  Bu listede öğe içerip içermediğini belirtir.  
   
 ```  
@@ -684,7 +679,7 @@ BOOL IsEmpty() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [RemoveAll](#removeall).  
   
-##  <a name="removeall"></a>CObList::RemoveAll  
+##  <a name="removeall"></a>  CObList::RemoveAll  
  Bu listeden tüm öğeleri kaldırır ve ilişkili boşaltır `CObList` bellek.  
   
 ```  
@@ -700,15 +695,15 @@ void RemoveAll();
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**void RemoveAll ();**|  
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**void RemoveAll ();**|  
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**void RemoveAll( );**|  
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**void RemoveAll( );**|  
   
 ### <a name="example"></a>Örnek  
  Bkz: [CObList::CObList](#coblist) listesini `CAge` sınıfı.  
   
  [!code-cpp[NVC_MFCCollections#105](../../mfc/codesnippet/cpp/coblist-class_17.cpp)]  
   
-##  <a name="removeat"></a>CObList::RemoveAt  
+##  <a name="removeat"></a>  CObList::RemoveAt  
  Belirtilen öğe bu listeden kaldırır.  
   
 ```  
@@ -716,7 +711,7 @@ void RemoveAt(POSITION position);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *konumu*  
+ *Konumu*  
  Listeden kaldırılacak öğe konumu.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -746,7 +741,7 @@ void RemoveAt(POSITION position);
   
  `a CAge at $4B22 21`  
   
-##  <a name="removehead"></a>CObList::RemoveHead  
+##  <a name="removehead"></a>  CObList::RemoveHead  
  Listenin başından öğeyi kaldırır ve bir işaretçi döndürür.  
   
 ```  
@@ -771,7 +766,7 @@ CObject* RemoveHead();
   
  [!code-cpp[NVC_MFCCollections#107](../../mfc/codesnippet/cpp/coblist-class_19.cpp)]  
   
-##  <a name="removetail"></a>CObList::RemoveTail  
+##  <a name="removetail"></a>  CObList::RemoveTail  
  Öğeyi listenin tail kaldırır ve bir işaretçi döndürür.  
   
 ```  
@@ -796,7 +791,7 @@ CObject* RemoveTail();
   
  [!code-cpp[NVC_MFCCollections#108](../../mfc/codesnippet/cpp/coblist-class_20.cpp)]  
   
-##  <a name="setat"></a>CObList::SetAt  
+##  <a name="setat"></a>  CObList::SetAt  
  Öğe verilen konumunda ayarlar.  
   
 ```  
@@ -813,7 +808,7 @@ void SetAt(
  `CObject` Listeye yazılacak işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türünde bir değişken **konumu** bir anahtar listesi. Bu dizin ile aynı değildir ve üzerinde çalışamaz bir **konumu** kendiniz değeri. `SetAt`Yazar `CObject` listede belirtilen konuma işaretçi.  
+ Türünde bir değişken **konumu** bir anahtar listesi. Bu dizin ile aynı değildir ve üzerinde çalışamaz bir **konumu** kendiniz değeri. `SetAt` Yazar `CObject` listede belirtilen konuma işaretçi.  
   
  Emin olmanız gerekir, **konumu** değer listesinde geçerli bir konumu temsil eder. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.  
   

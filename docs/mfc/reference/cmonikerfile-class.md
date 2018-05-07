@@ -1,12 +1,9 @@
 ---
-title: "CMonikerFile sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMonikerFile sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMonikerFile
@@ -27,17 +24,15 @@ helpviewer_keywords:
 - CMonikerFile [MFC], Open
 - CMonikerFile [MFC], CreateBindContext
 ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3dfdf86a4375521d7db084b60c549b08a54dc992
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 431e743396cfc22d49c13a2a9e2f50c88c5ee036
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmonikerfile-class"></a>CMonikerFile sınıfı
 Veri akışı temsil eder ( [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034)) tarafından adlı bir [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705).  
@@ -76,7 +71,7 @@ class CMonikerFile : public COleStreamFile
   
  Türetilmiş `COleStreamFile`, `CMonikerFile` bir ad veya bir bilinen ad yapın dize gösterimini alır ve özniteliğinde bir ad olduğu akış bağlar. Ardından, okuma ve o akışına yazma. Gerçek amacı `CMonikerFile` basit erişim sağlamak için `IStream`s adlı `IMoniker`s böylece bir akışa kendiniz bağlamak zorunda değilsiniz henüz `CFile` akışa işlevselliği.  
   
- `CMonikerFile`bir akış dışında her şey bağlamak için kullanılamaz. Depolama veya nesneyi bağlamak istiyorsanız, kullanmalısınız `IMoniker` doğrudan arabirim.  
+ `CMonikerFile` bir akış dışında her şey bağlamak için kullanılamaz. Depolama veya nesneyi bağlamak istiyorsanız, kullanmalısınız `IMoniker` doğrudan arabirim.  
   
  Akışlar ve adları hakkında daha fazla bilgi için bkz: [COleStreamFile](../../mfc/reference/colestreamfile-class.md) içinde *MFC başvurusu* ve [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) ve [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) içinde Windows SDK.  
   
@@ -92,7 +87,7 @@ class CMonikerFile : public COleStreamFile
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxole.h  
   
-##  <a name="close"></a>CMonikerFile::Close  
+##  <a name="close"></a>  CMonikerFile::Close  
  Ayırma ve akış serbest bırakın ve bilinen ad serbest bırakmak için bu işlevini çağırın.  
   
 ```  
@@ -102,14 +97,14 @@ virtual void Close();
 ### <a name="remarks"></a>Açıklamalar  
  Açılmamış ya da zaten kapalı akışların çağrılabilir.  
   
-##  <a name="cmonikerfile"></a>CMonikerFile::CMonikerFile  
+##  <a name="cmonikerfile"></a>  CMonikerFile::CMonikerFile  
  Oluşturan bir `CMonikerFile` nesnesi.  
   
 ```  
 CMonikerFile();
 ```  
   
-##  <a name="createbindcontext"></a>CMonikerFile::CreateBindContext  
+##  <a name="createbindcontext"></a>  CMonikerFile::CreateBindContext  
  Başlatılan varsayılan bağlama bağlamı oluşturmak için bu işlevini çağırın.  
   
 ```  
@@ -126,7 +121,7 @@ IBindCtx* CreateBindContext(CFileException* pError);
 ### <a name="remarks"></a>Açıklamalar  
  Bir bağlama bağlamı belirli ad bağlama işlemi hakkında bilgi depolayan bir nesnedir. Özel bağlama bağlamı sağlamak için bu işlevi geçersiz kılabilirsiniz.  
   
-##  <a name="detach"></a>CMonikerFile::Detach  
+##  <a name="detach"></a>  CMonikerFile::Detach  
  Akış kapatmak için bu işlevini çağırın.  
   
 ```  
@@ -140,7 +135,7 @@ BOOL Detach(CFileException* pError = NULL);
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="getmoniker"></a>CMonikerFile::GetMoniker  
+##  <a name="getmoniker"></a>  CMonikerFile::GetMoniker  
  Geçerli ad için bir işaretçi almak için bu işlevini çağırın.  
   
 ```  
@@ -153,7 +148,7 @@ IMoniker* GetMoniker() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yana `CMonikerFile` bir arabirim değil döndürülen işaretçi başvuru sayımı artırmaz (aracılığıyla [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379)), ve bilinen ad serbest zaman `CMonikerFile` nesne yayımlanır. Bilinen ad tutun veya kendiniz serbest istiyorsanız, şunları yapmalısınız `AddRef` onu.  
   
-##  <a name="open"></a>CMonikerFile::Open  
+##  <a name="open"></a>  CMonikerFile::Open  
  Bir dosya ya da ad nesnesini açmak için bu üye işlevini çağırın.  
   
 ```  

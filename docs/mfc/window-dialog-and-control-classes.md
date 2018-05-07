@@ -1,13 +1,10 @@
 ---
-title: "Pencere, iletişim kutusu ve denetim sınıfları | Microsoft Docs"
-ms.custom: 
+title: Pencere, iletişim kutusu ve denetim sınıfları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.classes.mfc
 dev_langs:
@@ -15,20 +12,18 @@ dev_langs:
 helpviewer_keywords:
 - windows [MFC], dialog and control classes
 ms.assetid: b3610da6-9644-49b7-adbf-0e04f0d6d2b5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17df01174e78b0064d59802b39e3c1823ce223a7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 94a5e197909a55e5c634bd31ec359a848293c001
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="window-dialog-and-control-classes"></a>Pencere, İletişim Kutusu ve Denetim Sınıfları
-Sınıf `CWnd` ve türetilmiş sınıflarının kapsülleyen bir `HWND`, bir Windows penceresi için bir tanıtıcı. `CWnd`tek başına ya da bir taban olarak yeni sınıflardan türetme için kullanılabilir. Sınıf kitaplığı tarafından sağlanan türetilen sınıflar, çeşitli windows temsil eder.  
+Sınıf `CWnd` ve türetilmiş sınıflarının kapsülleyen bir `HWND`, bir Windows penceresi için bir tanıtıcı. `CWnd` tek başına ya da bir taban olarak yeni sınıflardan türetme için kullanılabilir. Sınıf kitaplığı tarafından sağlanan türetilen sınıflar, çeşitli windows temsil eder.  
   
  [CWnd](../mfc/reference/cwnd-class.md)  
  Tüm windows için temel sınıf. Türetilen sınıfların kullanabilirsiniz `CWnd` veya doğrudan kendi sınıflarınızı türetilir.  

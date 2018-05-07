@@ -1,12 +1,9 @@
 ---
-title: "CMFCRibbonStatusBarPane sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCRibbonStatusBarPane sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCRibbonStatusBarPane
@@ -41,17 +38,15 @@ helpviewer_keywords:
 - CMFCRibbonStatusBarPane [MFC], StopAnimation
 - CMFCRibbonStatusBarPane [MFC], OnFinishAnimation
 ms.assetid: 5d034c3c-ecca-4267-b88c-0f55a2884dd0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3d5059adf0ebbd1ed651d57354ae73beadb919f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: df9109ef4613a2fb905fc5bef525f3553155417b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcribbonstatusbarpane-class"></a>CMFCRibbonStatusBarPane sınıfı
 `CMFCRibbonStatusBarPane` Sınıfı için Şerit durum çubuğu ekleyebileceğiniz bir Şerit öğesi uygular.  
@@ -109,7 +104,7 @@ class CMFCRibbonStatusBarPane : public CMFCRibbonButton
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxribbonstatusbarpane.h  
   
-##  <a name="cmfcribbonstatusbarpane"></a>CMFCRibbonStatusBarPane::CMFCRibbonStatusBarPane  
+##  <a name="cmfcribbonstatusbarpane"></a>  CMFCRibbonStatusBarPane::CMFCRibbonStatusBarPane  
  Durum çubuğu bölmesinin nesnesinde oluşturun.  
   
 ```  
@@ -140,34 +135,34 @@ CMFCRibbonStatusBarPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nCmdID`  
+ [in] `nCmdID`  
  Bölmesinde komut Kimliğini belirtir.  
   
- [in]`lpszText`  
+ [in] `lpszText`  
  Bölmesinde görüntülenecek metin dizesini belirtir.  
   
- [in]`bIsStatic`  
+ [in] `bIsStatic`  
  Varsa `TRUE`, durum bölmesi vurgulanmış veya tıklayarak seçilmedi.  
   
- [in]`hIcon`  
+ [in] `hIcon`  
  Bölmede gösterilecek bir simge için tanıtıcı belirtir.  
   
- [in]`lpszAlmostLargeText`  
+ [in] `lpszAlmostLargeText`  
  Bölmede görüntülenen uzun metin dizesini belirtir.  
   
- [in]`hBmpAnimationList`  
+ [in] `hBmpAnimationList`  
  Animasyon için kullanılan bir görüntü listesi için bir tanıtıcı belirtir.  
   
- [in]`cxAnimation`  
+ [in] `cxAnimation`  
  Animasyon için kullanılan görüntü listesinde simgesinin piksel cinsinden genişliğini belirtir.  
   
- [in]`clrTrnsp`  
+ [in] `clrTrnsp`  
  Animasyon için kullanılan görüntü listesinde görüntüleri saydam rengini belirtir.  
   
- [in]`uiAnimationListResID`  
+ [in] `uiAnimationListResID`  
  Animasyon için kullanılan bir görüntü listesi kaynak Kimliğini belirtir.  
   
-##  <a name="getalmostlargetext"></a>CMFCRibbonStatusBarPane::GetAlmostLargeText  
+##  <a name="getalmostlargetext"></a>  CMFCRibbonStatusBarPane::GetAlmostLargeText  
  Durum çubuğu bölmesinin görüntüleyebilirsiniz uzun metin dizesini alır.  
   
 ```  
@@ -177,7 +172,7 @@ LPCTSTR GetAlmostLargeText() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Durum çubuğu bölmesinin görüntüleyebilirsiniz uzun metin dizesi.  
   
-##  <a name="gettextalign"></a>CMFCRibbonStatusBarPane::GetTextAlign  
+##  <a name="gettextalign"></a>  CMFCRibbonStatusBarPane::GetTextAlign  
  Durum çubuğu bölmesinin etiketinin metin hizalaması geçerli ayarını alır.  
   
 ```  
@@ -193,7 +188,7 @@ int GetTextAlign() const;
   
 -   TA_RIGHT.  
   
-##  <a name="isanimation"></a>CMFCRibbonStatusBarPane::IsAnimation  
+##  <a name="isanimation"></a>  CMFCRibbonStatusBarPane::IsAnimation  
  Animasyonun ediyor olup olmadığını belirler.  
   
 ```  
@@ -201,9 +196,9 @@ BOOL IsAnimation() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`animasyon devam ediyor `FALSE` Aksi takdirde.  
+ `TRUE` animasyon devam ediyor `FALSE` Aksi takdirde.  
   
-##  <a name="isextended"></a>CMFCRibbonStatusBarPane::IsExtended  
+##  <a name="isextended"></a>  CMFCRibbonStatusBarPane::IsExtended  
  Bölmesini Şerit durum çubuğu genişletilmiş alanında bulunup bulunmadığını belirler.  
   
 ```  
@@ -211,9 +206,9 @@ BOOL IsExtended() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Durum çubuğu genişletilmiş alanı bölmesinde ise. `FALSE`Aksi takdirde.  
+ `TRUE` Durum çubuğu genişletilmiş alanı bölmesinde ise. `FALSE` Aksi takdirde.  
   
-##  <a name="ondrawborder"></a>CMFCRibbonStatusBarPane::OnDrawBorder  
+##  <a name="ondrawborder"></a>  CMFCRibbonStatusBarPane::OnDrawBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -221,11 +216,11 @@ virtual void OnDrawBorder(CDC*);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`CDC*`  
+ [in] `CDC*`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onfillbackground"></a>CMFCRibbonStatusBarPane::OnFillBackground  
+##  <a name="onfillbackground"></a>  CMFCRibbonStatusBarPane::OnFillBackground  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -233,13 +228,13 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onfinishanimation"></a>CMFCRibbonStatusBarPane::OnFinishAnimation  
+##  <a name="onfinishanimation"></a>  CMFCRibbonStatusBarPane::OnFinishAnimation  
  Bölmesine atanan animasyon sona erdiğinde framework bu yöntemi çağırır.  
   
 ```  
@@ -247,9 +242,9 @@ virtual void OnFinishAnimation();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `StopAnimation`Yöntem çağrıları `OnFinishAnimation` animasyon sona erdiğinde verileri temizleme için kullanabileceğiniz yöntemi.  
+ `StopAnimation` Yöntem çağrıları `OnFinishAnimation` animasyon sona erdiğinde verileri temizleme için kullanabileceğiniz yöntemi.  
   
-##  <a name="setalmostlargetext"></a>CMFCRibbonStatusBarPane::SetAlmostLargeText  
+##  <a name="setalmostlargetext"></a>  CMFCRibbonStatusBarPane::SetAlmostLargeText  
  Kesmeden durum çubuğu bölmesinde görüntülenen uzun metin tanımlayın.  
   
 ```  
@@ -257,13 +252,13 @@ void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszAlmostLargeText`  
+ [in] `lpszAlmostLargeText`  
  Durum çubuğu bölmesinin kesmeden gösterilebilir uzun dizeyi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Metin boyutu kitaplığı hesaplar, `lpszAlmostLargeText` belirtir ve bölmesinde buna göre yeniden boyutlandırır. Bölmesinde hala sığmadığı metin kesilir.  
   
-##  <a name="setanimationlist"></a>CMFCRibbonStatusBarPane::SetAnimationList  
+##  <a name="setanimationlist"></a>  CMFCRibbonStatusBarPane::SetAnimationList  
  Durum çubuğu bölmesine animasyon için kullanılabilecek bir görüntü listesi ekler.  
   
 ```  
@@ -279,22 +274,22 @@ BOOL SetAnimationList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hBmpAnimationList`  
+ [in] `hBmpAnimationList`  
  Görüntü listesi için bir tanıtıcı belirtir.  
   
- [in]`cxAnimation`  
+ [in] `cxAnimation`  
  Piksel cinsinden görüntü listesi çerçevede genişliğini belirtir.  
   
- [in]`clrTransp`  
+ [in] `clrTransp`  
  Resim listesi saydam rengini belirtir.  
   
- [in]`uiAnimationListResID`  
+ [in] `uiAnimationListResID`  
  Resim listesi kaynak Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Resim listesi başarıyla durum çubuğu bölmesine bağlıysa; `FALSE` Aksi takdirde.  
+ `TRUE` Resim listesi başarıyla durum çubuğu bölmesine bağlıysa; `FALSE` Aksi takdirde.  
   
-##  <a name="settextalign"></a>CMFCRibbonStatusBarPane::SetTextAlign  
+##  <a name="settextalign"></a>  CMFCRibbonStatusBarPane::SetTextAlign  
  Durum çubuğu bölmesinin etiketinin metin hizalaması ayarlar.  
   
 ```  
@@ -302,19 +297,19 @@ void SetTextAlign(int nAlign);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nAlign`  
+ [in] `nAlign`  
  Metin hizalamasını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `nAlign`Aşağıdaki değerlerden biri olabilir:  
+ `nAlign` Aşağıdaki değerlerden biri olabilir:  
   
 - `TA_LEFT`: hizalama sol  
   
-- `TA_CENTER:`Ortala  
+- `TA_CENTER:` Ortala  
   
-- `TA_RIGHT:`sağa hizalama  
+- `TA_RIGHT:` Sağa hizalama  
   
-##  <a name="startanimation"></a>CMFCRibbonStatusBarPane::StartAnimation  
+##  <a name="startanimation"></a>  CMFCRibbonStatusBarPane::StartAnimation  
  Bölmesine atadığınız animasyonu başlatır.  
   
 ```  
@@ -324,16 +319,16 @@ void StartAnimation(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nFrameDelay`  
+ [in] `nFrameDelay`  
  Animasyon kare hızı, milisaniye cinsinden belirtir.  
   
- [in]`nDuration`  
+ [in] `nDuration`  
  Animasyon, milisaniye cinsinden yürütmek için ne kadar süreyle belirtir. -1 için sonsuz bir döngüde kullanın.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Arama yapmadan önce bir resim listesi için bir tanıtıcı belirtmelisiniz `StartAnimation` kullanarak `SetAnimationList`.  
   
-##  <a name="stopanimation"></a>CMFCRibbonStatusBarPane::StopAnimation  
+##  <a name="stopanimation"></a>  CMFCRibbonStatusBarPane::StopAnimation  
  Durum çubuğu bölmesine atanan animasyon durdurur.  
   
 ```  

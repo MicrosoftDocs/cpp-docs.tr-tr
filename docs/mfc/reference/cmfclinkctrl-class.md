@@ -2,11 +2,8 @@
 title: CMFCLinkCtrl sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCLinkCtrl
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - CMFCLinkCtrl [MFC], SizeToContent
 - CMFCLinkCtrl [MFC], OnDrawFocusRect
 ms.assetid: 80f3874d-7cc8-410e-9ff1-62a225f5034b
-caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc83e5abf09102af8f27b1ee73fc78ed162b9335
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b91bc8fec3eebba5f3037633b5840d9b1abca731
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfclinkctrl-class"></a>CMFCLinkCtrl sınıfı
 `CMFCLinkCtrl` Sınıfı düğmesine tıklandığında bağlantının hedef çağırır ve bir düğme köprü olarak görüntüler.  
@@ -85,7 +80,7 @@ class CMFCLinkCtrl : public CMFCButton
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxlinkctrl.h  
   
-##  <a name="ondrawfocusrect"></a>CMFCLinkCtrl::OnDrawFocusRect  
+##  <a name="ondrawfocusrect"></a>  CMFCLinkCtrl::OnDrawFocusRect  
  Düğmenin odak dikdörtgeni çizilmeden önce çerçevesi tarafından çağrılır.  
   
 ```  
@@ -95,16 +90,16 @@ virtual void OnDrawFocusRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in]`rectClient`  
+ [in] `rectClient`  
  Bağlantı denetimi bounds dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Düğmenin odak dikdörtgen çizmek için kendi kodunuzu kullanmak istediğinizde bu yöntemi geçersiz kılın.  
   
-##  <a name="seturl"></a>CMFCLinkCtrl::SetURL  
+##  <a name="seturl"></a>  CMFCLinkCtrl::SetURL  
  Belirtilen URL düğme metni görüntüler.  
   
 ```  
@@ -112,12 +107,12 @@ void SetURL(LPCTSTR lpszURL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszURL`  
+ [in] `lpszURL`  
  Görüntülenecek düğme metni.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="seturlprefix"></a>CMFCLinkCtrl::SetURLPrefix  
+##  <a name="seturlprefix"></a>  CMFCLinkCtrl::SetURLPrefix  
  Örtük Protokolü ayarlar (örneğin, "http:") URL'si.  
   
 ```  
@@ -125,13 +120,13 @@ void SetURLPrefix(LPCTSTR lpszPrefix);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszPrefix`  
+ [in] `lpszPrefix`  
  URL protokolü öneki.  
   
 ### <a name="remarks"></a>Açıklamalar  
  URL öneki ayarlamak için bu yöntemi kullanın. Önek düğme yüzü üzerinde görüntülenmez, ancak URL'nin hedefe Gözat yardımcı olması için kullanın.  
   
-##  <a name="sizetocontent"></a>CMFCLinkCtrl::SizeToContent  
+##  <a name="sizetocontent"></a>  CMFCLinkCtrl::SizeToContent  
  Düğme metni veya bit eşlem içeren için düğmesini yeniden boyutlandırır.  
   
 ```  
@@ -141,11 +136,11 @@ virtual CSize SizeToContent(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bVCenter`  
- `TRUE`Düğme metni ve dikey olarak üst ve alt bağlantı denetimi arasında bit eşlem center için; Aksi takdirde `FALSE`. Varsayılan değer `FALSE` şeklindedir.  
+ [in] `bVCenter`  
+ `TRUE` Düğme metni ve dikey olarak üst ve alt bağlantı denetimi arasında bit eşlem center için; Aksi takdirde `FALSE`. Varsayılan değer `FALSE` şeklindedir.  
   
- [in]`bHCenter`  
- `TRUE`Düğme metni ve bit eşlem yatay sol ve sağ kenarlarının bağlantı denetimi arasında center için; Aksi takdirde `FALSE`. Varsayılan değer `FALSE` şeklindedir.  
+ [in] `bHCenter`  
+ `TRUE` Düğme metni ve bit eşlem yatay sol ve sağ kenarlarının bağlantı denetimi arasında center için; Aksi takdirde `FALSE`. Varsayılan değer `FALSE` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) bağlantı denetimi yeni boyutunu içeren nesne.  

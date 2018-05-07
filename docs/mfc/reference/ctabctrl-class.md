@@ -1,12 +1,9 @@
 ---
-title: "CTabCtrl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CTabCtrl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CTabCtrl
@@ -81,17 +78,15 @@ helpviewer_keywords:
 - CTabCtrl [MFC], SetPadding
 - CTabCtrl [MFC], SetToolTips
 ms.assetid: 42e4aff6-46ae-4b2c-beaa-d1dce8d82138
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed981a2f7345a59f3df479bcd82b9326fd84de12
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1e46a7d5720be765f2523ebde5d40655fb47b057
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ctabctrl-class"></a>CTabCtrl sınıfı
 Windows ortak sekme denetimi işlevselliğini sağlar.  
@@ -166,7 +161,7 @@ class CTabCtrl : public CWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxcmn.h  
   
-##  <a name="adjustrect"></a>CTabCtrl::AdjustRect  
+##  <a name="adjustrect"></a>  CTabCtrl::AdjustRect  
  Sekme denetimi görüntüleme alanı Pencere dikdörtgeni verilen hesaplar veya belirtilen görüntü alanına karşılık gelir Pencere dikdörtgeni hesaplar.  
   
 ```  
@@ -183,7 +178,7 @@ void AdjustRect(BOOL bLarger,   LPRECT lpRect);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTabCtrl#1](../../mfc/reference/codesnippet/cpp/ctabctrl-class_1.cpp)]  
   
-##  <a name="create"></a>CTabCtrl::Create  
+##  <a name="create"></a>  CTabCtrl::Create  
  Sekme denetimi oluşturur ve bunları bir örneğine ekler bir `CTabCtrl` nesnesi.  
   
 ```  
@@ -230,7 +225,7 @@ virtual BOOL Create(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTabCtrl#2](../../mfc/reference/codesnippet/cpp/ctabctrl-class_2.cpp)]  
   
-##  <a name="createex"></a>CTabCtrl::CreateEx  
+##  <a name="createex"></a>  CTabCtrl::CreateEx  
  Bir denetimi (alt pencere) oluşturur ve bunu ile ilişkilendirir `CTabCtrl` nesnesi.  
   
 ```  
@@ -264,16 +259,16 @@ virtual BOOL CreateEx(
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım `CreateEx` yerine [oluşturma](#create) Windows genişletilmiş stili önsöz tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için **WS_EX_**.  
   
- `CreateEx`Denetim tarafından belirtilen Genişletilmiş Windows stillerini oluşturur `dwExStyle`. Stil kullanarak bir denetimi belirli genişletilmiş kümesi [SetExtendedStyle](#setextendedstyle). Örneğin, `CreateEx` böyle stilleri olarak ayarlamak için **WS_EX_CONTEXTHELP**, ancak `SetExtendedStyle` böyle stilleri olarak ayarlamak için **TCS_EX_FLATSEPARATORS**. Daha fazla bilgi için bkz. bölümünde açıklanan stilleri [sekme denetimi genişletilmiş stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760546) Windows SDK.  
+ `CreateEx` Denetim tarafından belirtilen Genişletilmiş Windows stillerini oluşturur `dwExStyle`. Stil kullanarak bir denetimi belirli genişletilmiş kümesi [SetExtendedStyle](#setextendedstyle). Örneğin, `CreateEx` böyle stilleri olarak ayarlamak için **WS_EX_CONTEXTHELP**, ancak `SetExtendedStyle` böyle stilleri olarak ayarlamak için **TCS_EX_FLATSEPARATORS**. Daha fazla bilgi için bkz. bölümünde açıklanan stilleri [sekme denetimi genişletilmiş stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760546) Windows SDK.  
   
-##  <a name="ctabctrl"></a>CTabCtrl::CTabCtrl  
+##  <a name="ctabctrl"></a>  CTabCtrl::CTabCtrl  
  Oluşturan bir `CTabCtrl` nesnesi.  
   
 ```  
 CTabCtrl();
 ```  
   
-##  <a name="deleteallitems"></a>CTabCtrl::DeleteAllItems  
+##  <a name="deleteallitems"></a>  CTabCtrl::DeleteAllItems  
  Sekme denetimi tüm öğeleri kaldırır.  
   
 ```  
@@ -283,7 +278,7 @@ BOOL DeleteAllItems();
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="deleteitem"></a>CTabCtrl::DeleteItem  
+##  <a name="deleteitem"></a>  CTabCtrl::DeleteItem  
  Belirtilen öğe bir sekme denetimden kaldırır.  
   
 ```  
@@ -300,7 +295,7 @@ BOOL DeleteItem(int nItem);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTabCtrl#3](../../mfc/reference/codesnippet/cpp/ctabctrl-class_3.cpp)]  
   
-##  <a name="deselectall"></a>CTabCtrl::DeselectAll  
+##  <a name="deselectall"></a>  CTabCtrl::DeselectAll  
  Temizleme basılmış herhangi bir sekme denetimi öğelerde sıfırlar.  
   
 ```  
@@ -314,7 +309,7 @@ void DeselectAll(BOOL fExcludeFocus);
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TCM_DESELECTALL](http://msdn.microsoft.com/library/windows/desktop/bb760579), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="drawitem"></a>CTabCtrl::DrawItem  
+##  <a name="drawitem"></a>  CTabCtrl::DrawItem  
  Bir sahip çizim sekme denetimi değişiklikleri visual yönünü zaman çerçevesi tarafından çağrılır.  
   
 ```  
@@ -332,7 +327,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
   
  Tüm grafik cihaz arabirimi (GDI) nesneleri görüntüleme bağlamı içinde sağlanan için seçilen uygulama kurtarmalısınız `lpDrawItemStruct` önce bu üye fonksiyonu sonlandırır.  
   
-##  <a name="getcurfocus"></a>CTabCtrl::GetCurFocus  
+##  <a name="getcurfocus"></a>  CTabCtrl::GetCurFocus  
  Geçerli odağa sahip sekmesini dizinini alır.  
   
 ```  
@@ -342,7 +337,7 @@ int GetCurFocus() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli odağa sahip sekmesini sıfır tabanlı dizini.  
   
-##  <a name="getcursel"></a>CTabCtrl::GetCurSel  
+##  <a name="getcursel"></a>  CTabCtrl::GetCurSel  
  Sekme denetimi şu anda seçili sekmede alır.  
   
 ```  
@@ -352,7 +347,7 @@ int GetCurSel() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa seçili sekme veya - 1 hiçbir sekmesi seçili olduğunda sıfır tabanlı dizini.  
   
-##  <a name="getextendedstyle"></a>CTabCtrl::GetExtendedStyle  
+##  <a name="getextendedstyle"></a>  CTabCtrl::GetExtendedStyle  
  Sekme denetimi için kullanılan genişletilmiş stili alır.  
   
 ```  
@@ -365,7 +360,7 @@ DWORD GetExtendedStyle();
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TCM_GETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb760585), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="getimagelist"></a>CTabCtrl::GetImageList  
+##  <a name="getimagelist"></a>  CTabCtrl::GetImageList  
  Sekme denetimiyle ilişkili resim listesi alır.  
   
 ```  
@@ -375,7 +370,7 @@ CImageList* GetImageList() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, sekmenin resim listesi için bir işaretçi kontrol; Aksi takdirde, **NULL**.  
   
-##  <a name="getitem"></a>CTabCtrl::GetItem  
+##  <a name="getitem"></a>  CTabCtrl::GetItem  
  Sekme denetimi bir sekmede ilgili bilgileri alır.  
   
 ```  
@@ -395,18 +390,18 @@ BOOL GetItem(int nItem,   TCITEM* pTabCtrlItem) const;
 ### <a name="remarks"></a>Açıklamalar  
  İleti gönderildiğinde **maskesi** üye hangi özniteliklerin döndürüleceğini belirtir. Varsa **maskesi** üye belirtir `TCIF_TEXT` değeri **pszText** üye öğesi metni alır arabellek adresi içermesi gerekir ve **cchTextMax** üye arabellek boyutu belirtmeniz gerekir.  
   
- **maskesi**  
+ **Maskesi**  
  Hangi belirten değeri `TCITEM` Yapı üyeleri alınamıyor veya ayarlanamıyor. Bu üye, sıfır veya bir bileşimiyle aşağıdaki değerlerden biri olabilir:  
   
-- `TCIF_TEXT`**PszText** üye geçerlidir.  
+- `TCIF_TEXT` **PszText** üye geçerlidir.  
   
-- `TCIF_IMAGE``iImage` Üye geçerlidir.  
+- `TCIF_IMAGE` `iImage` Üye geçerlidir.  
   
-- `TCIF_PARAM`**LParam** üye geçerlidir.  
+- `TCIF_PARAM` **LParam** üye geçerlidir.  
   
-- `TCIF_RTLREADING`Metnin **pszText** İbranice veya Arapça sistemlerinde sağdan sola okuma sırası kullanılarak görüntülenir.  
+- `TCIF_RTLREADING` Metnin **pszText** İbranice veya Arapça sistemlerinde sağdan sola okuma sırası kullanılarak görüntülenir.  
   
-- `TCIF_STATE`**DwState** üye geçerlidir.  
+- `TCIF_STATE` **DwState** üye geçerlidir.  
   
  **pszText**  
  Yapısı bir sekmesi hakkında bilgi içeriyorsa sekme metni içeren null ile sonlandırılmış bir dize işaretçi. Yapı bilgileri alıyorsa, bu üye sekmesini metni alır arabellek adresini belirtir.  
@@ -423,7 +418,7 @@ BOOL GetItem(int nItem,   TCITEM* pTabCtrlItem) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTabCtrl#4](../../mfc/reference/codesnippet/cpp/ctabctrl-class_4.cpp)]  
   
-##  <a name="getitemcount"></a>CTabCtrl::GetItemCount  
+##  <a name="getitemcount"></a>  CTabCtrl::GetItemCount  
  Sekme denetimine sekmeler sayısını alır.  
   
 ```  
@@ -436,7 +431,7 @@ int GetItemCount() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).  
   
-##  <a name="getitemrect"></a>CTabCtrl::GetItemRect  
+##  <a name="getitemrect"></a>  CTabCtrl::GetItemRect  
  Sekme denetimi belirtilen sekmede için sınırlayıcı dikdörtgenini alır.  
   
 ```  
@@ -456,7 +451,7 @@ BOOL GetItemRect(int nItem,   LPRECT lpRect) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).  
   
-##  <a name="getitemstate"></a>CTabCtrl::GetItemState  
+##  <a name="getitemstate"></a>  CTabCtrl::GetItemState  
  Sekme denetim öğesi tarafından tanımlanan durumunu alır `nItem`.  
   
 ```  
@@ -483,7 +478,7 @@ DWORD GetItemState(
 ### <a name="remarks"></a>Açıklamalar  
  Bir öğenin durumu tarafından belirtilen **dwState** üyesi `TCITEM` yapısı.  
   
-##  <a name="getrowcount"></a>CTabCtrl::GetRowCount  
+##  <a name="getrowcount"></a>  CTabCtrl::GetRowCount  
  Geçerli sekme denetiminde satır sayısını alır.  
   
 ```  
@@ -496,7 +491,7 @@ int GetRowCount() const;
 ### <a name="remarks"></a>Açıklamalar  
  Yalnızca sahip denetimlerin sekme **TCS_MULTILINE** stili sekmelerinin birden çok satır sahip olabilir.  
   
-##  <a name="gettooltips"></a>CTabCtrl::GetToolTips  
+##  <a name="gettooltips"></a>  CTabCtrl::GetToolTips  
  Sekme denetimiyle ilişkili araç ipucunu denetimini işleyicisini alır.  
   
 ```  
@@ -509,7 +504,7 @@ CToolTipCtrl* GetToolTips() const;
 ### <a name="remarks"></a>Açıklamalar  
  Varsa bir sekme denetimi bir araç ipucunu denetimini oluşturur **TCS_TOOLTIPS** stili. Kullanarak bir sekme denetimi için bir araç ipucunu denetimini atayabilirsiniz `SetToolTips` üye işlevi.  
   
-##  <a name="highlightitem"></a>CTabCtrl::HighlightItem  
+##  <a name="highlightitem"></a>  CTabCtrl::HighlightItem  
  Sekme öğesi Vurgu durumunu ayarlar.  
   
 ```  
@@ -529,7 +524,7 @@ BOOL HighlightItem(int idItem,   BOOL fHighlight = TRUE);
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti uygulayan [TCM_HIGHLIGHTITEM](http://msdn.microsoft.com/library/windows/desktop/bb760602), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="hittest"></a>CTabCtrl::HitTest  
+##  <a name="hittest"></a>  CTabCtrl::HitTest  
  Hangi sekmeyi varsa, belirtilen ekran konumunda belirler.  
   
 ```  
@@ -543,7 +538,7 @@ int HitTest(TCHITTESTINFO* pHitTestInfo) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Sekme belirtilen konumda sıfır tabanlı dizini sekme veya - 1 döndürür.  
   
-##  <a name="insertitem"></a>CTabCtrl::InsertItem  
+##  <a name="insertitem"></a>  CTabCtrl::InsertItem  
  Yeni bir sekme içinde varolan bir sekme denetimini ekler.  
   
 ```  
@@ -597,15 +592,15 @@ LONG InsertItem(
  `nMask`  
  Belirten `TCITEM` yapısı ayarlamak için öznitelikler. Sıfır veya bir birleşimi aşağıdaki değerlerden biri olabilir:  
   
-- `TCIF_TEXT`**PszText** üye geçerlidir.  
+- `TCIF_TEXT` **PszText** üye geçerlidir.  
   
-- `TCIF_IMAGE``iImage` Üye geçerlidir.  
+- `TCIF_IMAGE` `iImage` Üye geçerlidir.  
   
-- `TCIF_PARAM`**LParam** üye geçerlidir.  
+- `TCIF_PARAM` **LParam** üye geçerlidir.  
   
-- `TCIF_RTLREADING`Metnin **pszText** İbranice veya Arapça sistemlerinde sağdan sola okuma sırası kullanılarak görüntülenir.  
+- `TCIF_RTLREADING` Metnin **pszText** İbranice veya Arapça sistemlerinde sağdan sola okuma sırası kullanılarak görüntülenir.  
   
-- `TCIF_STATE`**DwState** üye geçerlidir.  
+- `TCIF_STATE` **DwState** üye geçerlidir.  
   
  `lParam`  
  Sekme ile ilişkili uygulama tanımlı veriler.  
@@ -622,7 +617,7 @@ LONG InsertItem(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTabCtrl#5](../../mfc/reference/codesnippet/cpp/ctabctrl-class_5.cpp)]  
   
-##  <a name="removeimage"></a>CTabCtrl::RemoveImage  
+##  <a name="removeimage"></a>  CTabCtrl::RemoveImage  
  Belirtilen görüntü sekmesini denetimin görüntü listesinden kaldırır.  
   
 ```  
@@ -636,7 +631,7 @@ void RemoveImage(int nImage);
 ### <a name="remarks"></a>Açıklamalar  
  Her sekme aynı görüntüsüyle ilişkili kalmayacak şekilde sekme denetimi her sekmenin görüntü dizini güncelleştirir.  
   
-##  <a name="setcurfocus"></a>CTabCtrl::SetCurFocus  
+##  <a name="setcurfocus"></a>  CTabCtrl::SetCurFocus  
  Sekme denetimi içinde belirtilen bir sekmeye odağı ayarlar.  
   
 ```  
@@ -650,7 +645,7 @@ void SetCurFocus(int nItem);
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TCM_SETCURFOCUS](http://msdn.microsoft.com/library/windows/desktop/bb760610), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="setcursel"></a>CTabCtrl::SetCurSel  
+##  <a name="setcursel"></a>  CTabCtrl::SetCurSel  
  Sekme bir sekme denetimi seçer.  
   
 ```  
@@ -667,7 +662,7 @@ int SetCurSel(int nItem);
 ### <a name="remarks"></a>Açıklamalar  
  Sekme denetimi göndermemek bir **TCN_SELCHANGING** veya **TCN_SELCHANGE** bu işlevini kullanarak bir sekme seçildiğinde bildirim iletisi. Bu bildirimler, kullanılarak gönderilen **wm_notıfy**, kullanıcı tıklattığında ya da sekmeler değiştirmek için klavyeyi kullanır.  
   
-##  <a name="setextendedstyle"></a>CTabCtrl::SetExtendedStyle  
+##  <a name="setextendedstyle"></a>  CTabCtrl::SetExtendedStyle  
  Sekme denetimi için genişletilmiş stiller ayarlar.  
   
 ```  
@@ -687,7 +682,7 @@ DWORD SetExtendedStyle(DWORD dwNewStyle,   DWORD dwExMask = 0);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TCM_SETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb760627), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="setimagelist"></a>CTabCtrl::SetImageList  
+##  <a name="setimagelist"></a>  CTabCtrl::SetImageList  
  Görüntü listesi Sekme denetimine atar.  
   
 ```  
@@ -701,7 +696,7 @@ CImageList* SetImageList(CImageList* pImageList);
 ### <a name="return-value"></a>Dönüş Değeri  
  Önceki resim listesi bir işaretçi döndürür veya **NULL** önceki bir resim listesi ise.  
   
-##  <a name="setitem"></a>CTabCtrl::SetItem  
+##  <a name="setitem"></a>  CTabCtrl::SetItem  
  Bazılarını veya tümünü bir sekmenin öznitelikleri ayarlar.  
   
 ```  
@@ -721,7 +716,7 @@ BOOL SetItem(int nItem,   TCITEM* pTabCtrlItem);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [GetItem](#getitem).  
   
-##  <a name="setitemextra"></a>CTabCtrl::SetItemExtra  
+##  <a name="setitemextra"></a>  CTabCtrl::SetItemExtra  
  Sekme denetimi uygulama tanımlı verilerde ayrılmış sekmesini başına bayt sayısını ayarlar.  
   
 ```  
@@ -738,7 +733,7 @@ BOOL SetItemExtra(int nBytes);
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TCM_SETITEMEXTRA](http://msdn.microsoft.com/library/windows/desktop/bb760633), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="setitemsize"></a>CTabCtrl::SetItemSize  
+##  <a name="setitemsize"></a>  CTabCtrl::SetItemSize  
  Genişlik ve yükseklik sekme denetimi öğelerinin ayarlar.  
   
 ```  
@@ -752,7 +747,7 @@ CSize SetItemSize(CSize size);
 ### <a name="return-value"></a>Dönüş Değeri  
  Eski genişlik ve yükseklik sekmesi denetim öğeleri döndürür.  
   
-##  <a name="setitemstate"></a>CTabCtrl::SetItemState  
+##  <a name="setitemstate"></a>  CTabCtrl::SetItemState  
  Sekme denetim öğesi tarafından tanımlanan durumunu ayarlar `nItem`.  
   
 ```  
@@ -780,7 +775,7 @@ BOOL SetItemState(
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="setmintabwidth"></a>CTabCtrl::SetMinTabWidth  
+##  <a name="setmintabwidth"></a>  CTabCtrl::SetMinTabWidth  
  En küçük genişliği öğelerinin bir sekme denetimi ayarlar.  
   
 ```  
@@ -797,7 +792,7 @@ int SetMinTabWidth(int cx);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu üye işlevi Win32 ileti davranışını uygulayan [TCM_SETMINTABWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb760637), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="setpadding"></a>CTabCtrl::SetPadding  
+##  <a name="setpadding"></a>  CTabCtrl::SetPadding  
  (Her sekmenin simgesini ve sekme denetimi etiketinde etrafında doldurma) alan miktarını belirler.  
   
 ```  
@@ -808,7 +803,7 @@ void SetPadding(CSize size);
  `size`  
  (Her sekmenin simgesini ve sekme denetimi etiketinde etrafında doldurma) alan miktarını belirler.  
   
-##  <a name="settooltips"></a>CTabCtrl::SetToolTips  
+##  <a name="settooltips"></a>  CTabCtrl::SetToolTips  
  Bir araç ipucunu denetimini Sekme denetimine atar.  
   
 ```  

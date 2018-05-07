@@ -1,13 +1,10 @@
 ---
-title: "Görüntüleme sınıfları (Windows) | Microsoft Docs"
-ms.custom: 
+title: Görüntüleme sınıfları (Windows) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.classes.view
 dev_langs:
@@ -17,20 +14,18 @@ helpviewer_keywords:
 - splitter window classes [MFC]
 - view classes [MFC], Windows
 ms.assetid: b11683fb-9f43-4de3-9499-2b55775f9870
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d737176df2676f543f47bb77a0d205fa7c908fc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 28dbcd246033dd53788861b97a0c678c1be2aa17
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="view-classes-windows"></a>Görünüm Sınıfları (Windows)
-`CView`ve türetilmiş sınıflarının bir çerçeve penceresinde istemci alanını temsil eden alt pencere. Görünümleri verileri görüntüleyin ve bir belge için giriş kabul edin.  
+`CView` ve türetilmiş sınıflarının bir çerçeve penceresinde istemci alanını temsil eden alt pencere. Görünümleri verileri görüntüleyin ve bir belge için giriş kabul edin.  
   
  View sınıfı, bir belge sınıfı ve bir belge şablonu nesnesi kullanılarak bir çerçeve pencere sınıfı ile ilişkilidir.  
   
@@ -76,7 +71,7 @@ ms.lasthandoff: 12/21/2017
  Windows ağaç denetimi içeren bir görünüm (bkz [CTreeCtrl](../mfc/reference/ctreectrl-class.md)). Ağaç denetimi simgeler ve bir şekilde dosya Explorer'ın sol bölmeye benzer düzenlenmiş etiketleri hiyerarşik bir listesini görüntüler.  
   
 ## <a name="related-classes"></a>İlgili sınıflar  
- `CSplitterWnd`bir tek çerçeve penceresi içinde birden çok görünüm sahip olmanızı sağlar. `CPrintDialog`ve `CPrintInfo` görünümleri yazdırma ve baskı önizleme özelliğini destekler. `CRichEditDoc`ve `CRichEditCntrItem` ile kullanılan `CRichEditView` OLE kapsayıcı özellikleri uygulamak için.  
+ `CSplitterWnd` bir tek çerçeve penceresi içinde birden çok görünüm sahip olmanızı sağlar. `CPrintDialog` ve `CPrintInfo` görünümleri yazdırma ve baskı önizleme özelliğini destekler. `CRichEditDoc` ve `CRichEditCntrItem` ile kullanılan `CRichEditView` OLE kapsayıcı özellikleri uygulamak için.  
   
  [CSplitterWnd](../mfc/reference/csplitterwnd-class.md)  
  Kullanıcı birden fazla bölmelere bölebilirsiniz penceresini açın. Bu bölmeleri kullanıcı veya sabit bir boyuta göre yeniden boyutlandırılabilir olabilir.  
@@ -84,7 +79,7 @@ ms.lasthandoff: 12/21/2017
  [CPrintDialog](../mfc/reference/cprintdialog-class.md)  
  Bir dosya yazdırma için bir standart iletişim kutusu sağlar.  
   
- [Cprintınfo](../mfc/reference/cprintinfo-structure.md)  
+ [CPrintInfo](../mfc/reference/cprintinfo-structure.md)  
  Yazdırın veya Önizleme işle ilgili bilgileri içeren bir yapısı. Tarafından kullanılan `CView`mimarisi yazdırma.  
   
  [CRichEditDoc](../mfc/reference/cricheditdoc-class.md)  

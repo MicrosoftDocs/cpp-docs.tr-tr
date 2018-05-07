@@ -1,12 +1,9 @@
 ---
-title: "COleControlSite sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleControlSite sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleControlSite
@@ -115,17 +112,15 @@ helpviewer_keywords:
 - COleControlSite [MFC], m_pWndCtrl
 - COleControlSite [MFC], m_rect
 ms.assetid: 43970644-5eab-434a-8ba6-56d144ff1e3f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80541bc777d2c77209812cbee621045b7d6c6507
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: b4dcb17c2650bf8b56702241a0ab4e77a3e2fc48
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="colecontrolsite-class"></a>COleControlSite sınıfı
 Özel istemci-tarafı denetim arabirimler için destek sağlar.  
@@ -878,7 +873,7 @@ virtual void MoveWindow(
  *x*  
  Pencerenin sol tarafında yeni konumu.  
   
- *y*  
+ *Y*  
  Pencerenin üst kısmında yeni konumu.  
   
  `nWidth`  
@@ -1045,7 +1040,7 @@ virtual BOOL SetWindowPos(
  *x*  
  Pencerenin sol tarafında yeni konumu.  
   
- *y*  
+ *Y*  
  Pencerenin üst kısmında yeni konumu.  
   
  `cx`  

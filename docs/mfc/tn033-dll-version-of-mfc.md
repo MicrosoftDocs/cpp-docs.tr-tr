@@ -1,13 +1,10 @@
 ---
 title: "TN033: MFC'nin DLL sürümü | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.mfc.dll
 dev_langs:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - DLL version of MFC [MFC]
 - TN033
 ms.assetid: b6f1080b-b66b-4b1e-8fb1-926c5816392c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba51ca465bec2a6400106071fcba94d36ad100e2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a247ffc36b3e0eb3e52c6f04949c693597d73064
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn033-dll-version-of-mfc"></a>TN033: MFC'nin DLL Sürümü
 Bu Not MFCxx.DLL kullanabilirsiniz ve MFC uygulamaları ve MFC uzantı DLL'leri ile dinamik bağlantı kitaplıkları (x MFC sürüm numarası olduğu yer) MFCxxD.DLL paylaşılan nasıl açıklanmaktadır. Normal MFC DLL'leri hakkında daha fazla bilgi için bkz: [DLL'in bir parçası olarak MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md).  
@@ -97,7 +92,7 @@ Bu Not MFCxx.DLL kullanabilirsiniz ve MFC uygulamaları ve MFC uzantı DLL'leri 
   
 -   Paylaşılan kitaplık kullanan bir uygulamayı sevkiyat gerektirir MFCxx.DLL (ve diğerleri) sevk programınızla kitaplığı. MFCxx.DLL gibi birçok DLL'leri ücretsiz olarak dağıtılabilen, ancak hala Kurulum programınıza DLL yüklemeniz gerekir. Ayrıca, hem programınız ve MFC DLL'leri tarafından kullanılan C çalışma zamanı kitaplığı içerir MSVCRTxx.DLL birlikte gerekir.  
   
-##  <a name="_mfcnotes_how_to_write_an_mfc_extension_dll"></a>MFC uzantı DLL'si yazma  
+##  <a name="_mfcnotes_how_to_write_an_mfc_extension_dll"></a> MFC uzantı DLL'si yazma  
  MFC uzantı DLL sınıfları ve MFC sınıfları işlevselliğini süslemek için yazılmış işlevleri içeren bir DLL'dir. MFC uzantı DLL paylaşılan MFC DLL'leri, uygulama ile birkaç ek hususlar kullanan aynı şekilde kullanır:  
   
 -   Derleme işlemi, paylaşılan MFC kitaplıkları birkaç ek derleyici ve bağlayıcı seçenekleri kullanan bir uygulama oluşturmak için benzer.  
@@ -146,7 +141,7 @@ Bu Not MFCxx.DLL kullanabilirsiniz ve MFC uygulamaları ve MFC uzantı DLL'leri 
   
  Bunu yapmak için her üye işlevleri içeri veya dışarı aktarma uygun şekilde olarak işaretlenmiş güvence altına gerekir. Bu özel bildirimleri gerektirir: **__declspec(dllexport)** ve **__declspec(dllimport)**. İstemci uygulamaları tarafından kullanılan, sınıflar, bunları olarak bildirilmesi için istediğiniz **__declspec(dllimport)**. MFC uzantı DLL'si kendisini oluşturulmuştur, bunlar olarak bildirilmelidir **__declspec(dllexport)**. Böylece istemci programları için yükleme zamanında bağlama Ayrıca işlevleri gerçekte, aktarılması gerekir.  
   
- Tüm sınıfınız dışarı aktarmak için kullanın **AFX_EXT_CLASS** sınıf tanımında. Bu makrosu framework tarafından tanımlanan **__declspec(dllexport)** zaman **_AFXDLL** ve `_AFXEXT` tanımlı, ancak olarak tanımlanan **__declspec(dllimport)** zaman `_AFXEXT` tanımlı değil. `_AFXEXT`yukarıda açıklandığı gibi yalnızca MFC uzantı DLL oluşturulurken tanımlanır. Örneğin:  
+ Tüm sınıfınız dışarı aktarmak için kullanın **AFX_EXT_CLASS** sınıf tanımında. Bu makrosu framework tarafından tanımlanan **__declspec(dllexport)** zaman **_AFXDLL** ve `_AFXEXT` tanımlı, ancak olarak tanımlanan **__declspec(dllimport)** zaman `_AFXEXT` tanımlı değil. `_AFXEXT` yukarıda açıklandığı gibi yalnızca MFC uzantı DLL oluşturulurken tanımlanır. Örneğin:  
   
 ```  
 class AFX_EXT_CLASS CExampleExport : public CObject  
@@ -387,9 +382,9 @@ extern "C" extern void WINAPI InitXxxDLL()
   
  Yalnızca belirli bir konumdan kaynakları yüklemek isterseniz, API'lerini kullanan `AfxGetResourceHandle` ve `AfxSetResourceHandle` eski tutamacı kaydedip yeni tutamacı ayarlayın. İstemci uygulamasına geri dönmeden önce eski kaynak tanıtıcısını geri yüklediğinizden emin olun. Örnek TESTDLL2, açıkça bir menü yüklemek için bu yaklaşımı kullanır.  
   
- Listenin taramasını kısmen daha yavaştır ve kaynak kimlik aralıklarını yönetmeyi gerektirir dezavantajları vardır. Birkaç MFC uzantı DLL'leri bağlanan istemci uygulaması herhangi bir DLL tarafından sağlanan kaynak DLL örneği işleyicisi belirtmek zorunda kalmadan kullanabileceğiniz avantajına sahiptir. `AfxFindResourceHandle`bir API, belirli bir eşleşme için aranacak kaynak listesi taramasını için kullanılır. Bir kaynak türü ve adını alır ve ilk bulunduğu kaynak tanıtıcısı (veya NULL) döndürür.  
+ Listenin taramasını kısmen daha yavaştır ve kaynak kimlik aralıklarını yönetmeyi gerektirir dezavantajları vardır. Birkaç MFC uzantı DLL'leri bağlanan istemci uygulaması herhangi bir DLL tarafından sağlanan kaynak DLL örneği işleyicisi belirtmek zorunda kalmadan kullanabileceğiniz avantajına sahiptir. `AfxFindResourceHandle` bir API, belirli bir eşleşme için aranacak kaynak listesi taramasını için kullanılır. Bir kaynak türü ve adını alır ve ilk bulunduğu kaynak tanıtıcısı (veya NULL) döndürür.  
   
-##  <a name="_mfcnotes_writing_an_application_that_uses_the_dll_version"></a>DLL sürümü kullanan bir uygulamayı yazma  
+##  <a name="_mfcnotes_writing_an_application_that_uses_the_dll_version"></a> DLL sürümü kullanan bir uygulamayı yazma  
   
 ### <a name="application-requirements"></a>Uygulama gereksinimleri  
  MFC paylaşılan sürümünü kullanan bir uygulamayı birkaç basit kurallara uymalıdır:  
@@ -446,7 +441,7 @@ extern "C" extern void WINAPI InitXxxDLL()
   
  MFC DLL'leri yeniden önerilmez.  
   
-##  <a name="_mfcnotes_how_the_mfc30.dll_is_implemented"></a>MFCxx.DLL nasıl uygulanır  
+##  <a name="_mfcnotes_how_the_mfc30.dll_is_implemented"></a> MFCxx.DLL nasıl uygulanır  
  Aşağıdaki bölümde, MFC DLL (MFCxx.DLL ve MFCxxD.DLL) nasıl uygulandığı açıklanmaktadır. Ayrıntılarını burada da olmayan anlama, tüm yapmak istiyorsanız, MFC DLL uygulamanızla birlikte kullanmak önemlidir. Ayrıntılarını burada MFC uzantı DLL'si yazmak nasıl anlamak için gerekli değildir, ancak bu uygulama anlama kendi DLL yazmanıza yardımcı olabilir.  
   
 ### <a name="implementation-overview"></a>Uygulama genel bakış  

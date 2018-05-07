@@ -1,13 +1,10 @@
 ---
-title: "Windows Yuvaları: Bağlantı noktaları ve yuva adresleri | Microsoft Docs"
-ms.custom: 
+title: 'Windows Yuvaları: Bağlantı noktaları ve yuva adresleri | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,29 +16,27 @@ helpviewer_keywords:
 - sockets [MFC], addresses
 - sockets [MFC], ports
 ms.assetid: e050261a-9285-4f31-a1c5-6c8033af5b4a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c7b2e15761815b75ba8001ad4eb5a5c276f5056
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 42ea9b8a39de8d36ecb621164d98e072a4041211
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="windows-sockets-ports-and-socket-addresses"></a>Windows Yuvaları: Bağlantı Noktaları ve Yuva Adresleri
 Bu makalede koşulları "port" ve "Windows Yuvaları ile kullanılan adresi" olarak açıklanmaktadır.  
   
-##  <a name="_core_port"></a>Bağlantı noktası  
+##  <a name="_core_port"></a> Bağlantı noktası  
  Bir bağlantı noktası, bir hizmet sağlanabilir benzersiz bir işlemi tanımlar. Mevcut bağlamda Windows Sockets destekleyen bir uygulama ile ilişkili bir bağlantı noktasıdır. Böylece, aynı anda bir makine üzerinde çalışan birden fazla Windows Sockets uygulama her Windows Sockets uygulama benzersiz şekilde tanımlamak için kullanılan uygulamadır.  
   
  Belirli bağlantı noktalarını, FTP gibi ortak Hizmetleri için ayrılmıştır. Bu tür bir hizmeti sağlayan sürece bu bağlantı noktalarını kullanarak kaçınmalısınız. Windows Yuvaları belirtimi bu ayrılmış bağlantı noktaları ayrıntılarını verir. WINSOCK dosya. H bunları listeler.  
   
  Windows Yuvaları kullanılabilir bir bağlantı noktası seçtiğiniz DLL izin vermek için 0 bağlantı noktası değeri geçirin. MFC 1.024 ondalık büyük bir bağlantı noktası değeri seçer. MFC çağırarak seçilen bağlantı noktası değeri alabilir [CAsyncSocket::GetSockName](../mfc/reference/casyncsocket-class.md#getsockname) üye işlevi.  
   
-##  <a name="_core_socket_address"></a>Yuva adresi  
+##  <a name="_core_socket_address"></a> Yuva adresi  
  Her yuva nesnesi ağ üzerinde bir Internet Protokolü (IP) adresi ile ilişkilidir. Genellikle, "ftp.microsoft.com" gibi bir makine adı veya "128.56.22.8" gibi bir noktalı sayı adresidir.  
   
  Bir yuva oluşturmak aradığınızda, genellikle kendi adresini belirtmek gerekmez.  

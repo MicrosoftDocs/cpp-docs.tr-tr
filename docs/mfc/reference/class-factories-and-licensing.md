@@ -1,13 +1,10 @@
 ---
-title: "Sınıf oluşturucular ve lisanslama | Microsoft Docs"
-ms.custom: 
+title: Sınıf oluşturucular ve lisanslama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.classes
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - class factories [MFC], and licensing
 ms.assetid: 53c4856a-4062-46db-9f69-dd4339f746b3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79710cb1fa67ec8315fe287364126f88b4b498d7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b311d81e5e9becab2bf0ab88d30321019e5da95d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="class-factories-and-licensing"></a>Sınıf Oluşturucular ve Lisanslama
 OLE denetim örneği oluşturmak için bir kapsayıcı uygulama denetimin sınıf Factory üye işlevi çağırır. Denetim gerçek bir OLE nesne olduğundan, denetiminizi örneklerini oluşturmak için üreteci sorumludur. Her OLE denetim sınıfı bir üreteci olması gerekir.  
@@ -44,7 +39,7 @@ OLE denetim örneği oluşturmak için bir kapsayıcı uygulama denetimin sını
 |[END_OLEFACTORY](#end_olefactory)|Hiçbir lisans işlevlerin bildirimini sona erer.|  
 |[AfxVerifyLicFile](#afxverifylicfile)|Bir denetim belirli bir bilgisayardaki kullanmak için lisanslı olup olmadığını doğrular.|  
   
-##  <a name="declare_olecreate_ex"></a>DECLARE_OLECREATE_EX  
+##  <a name="declare_olecreate_ex"></a>  DECLARE_OLECREATE_EX  
  Bir sınıf fabrikası bildirir ve `GetClassID` denetim sınıfınızın üye işlevi.  
   
 ```   
@@ -65,7 +60,7 @@ DECLARE_OLECREATE_EX(class_name)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="implement_olecreate_ex"></a>IMPLEMENT_OLECREATE_EX  
+##  <a name="implement_olecreate_ex"></a>  IMPLEMENT_OLECREATE_EX  
  Denetimin sınıf üreticisi uygular ve [GetClassID](../../mfc/reference/colecontrol-class.md#getclassid) denetim sınıfınızın üye işlevi.  
   
 ```   
@@ -101,7 +96,7 @@ IMPLEMENT_OLECREATE_EX(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="begin_olefactory"></a>BEGIN_OLEFACTORY  
+##  <a name="begin_olefactory"></a>  BEGIN_OLEFACTORY  
  Sınıf Fabrikanızda denetim sınıfınızın üstbilgi dosyası bildirimi başlar.  
   
 ``` 
@@ -118,7 +113,7 @@ BEGIN_OLEFACTORY(class_name)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="end_olefactory"></a>END_OLEFACTORY  
+##  <a name="end_olefactory"></a>  END_OLEFACTORY  
  Denetimin sınıf üreticisi bildirimi sona erer.  
   
 ```  
@@ -132,7 +127,7 @@ END_OLEFACTORY(class_name)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="afxverifylicfile"></a>AfxVerifyLicFile  
+##  <a name="afxverifylicfile"></a>  AfxVerifyLicFile  
  Lisans dosyası tarafından adlı doğrulamak için bu işlevi çağırmak `pszLicFileName` OLE denetimi için geçerlidir.  
   
 ```   

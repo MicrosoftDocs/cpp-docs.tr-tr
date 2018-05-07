@@ -1,13 +1,10 @@
 ---
-title: "Bir form tabanlı MFC uygulaması oluşturma | Microsoft Docs"
-ms.custom: 
+title: Bir form tabanlı MFC uygulaması oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.appwiz.mfcforms.project
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - applications [MFC], forms-based
 - forms-based applications [MFC]
 ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e5d43412da21edce2633c17b5a38e4b1b787495
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a5ee588d7fe90e5bfc39aa8e4ab7a7499b62ad98
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-a-forms-based-mfc-application"></a>Form Tabanlı MFC Uygulaması Oluşturma
 Form, bir kullanıcının erişmek ve veri değişikliği olabilir izin denetimleri ile bir iletişim kutusudur. Kullanıcı form seçimden seçer uygulama geliştirme isteyebilirsiniz. Yaygın olarak, forms tabanlı bir uygulama tarafından tıklatın kullanıcı erişimi formları sağlar **yeni** gelen **dosya** menüsü. Hangi kullanıcılara erişim sağlamaz iletişim tabanlı bir uygulama, bir **yeni** seçeneğini **dosya** menüsünde da form tabanlı bir uygulama dikkate alınır.  

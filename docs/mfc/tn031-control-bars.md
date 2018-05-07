@@ -1,13 +1,10 @@
 ---
-title: "TN031: Denetim çubukları | Microsoft Docs"
-ms.custom: 
+title: 'TN031: Denetim çubukları | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.controls.bars
 dev_langs:
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - TN031
 - styles [MFC], control bars
 ms.assetid: 8cb895c0-40ea-40ef-90ee-1dd29f34cfd1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e4ea57f77c615ba439f2d07c3926cde5efa0c27
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a1d5cc113177a9653e709c14f66682959276e7ca
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn031-control-bars"></a>TN031: Denetim Çubukları
 > [!NOTE]
@@ -41,7 +36,7 @@ ms.lasthandoff: 12/21/2017
   
  MFC içinde denetim çubuğu sınıfları bu not açıklar: Genel [CControlBar](#_mfcnotes_ccontrolbar), [CStatusBar](#_mfcnotes_cstatusbar), [CToolBar](#_mfcnotes_ctoolbar), [CDialogBar](#_mfcnotes_cdialogbar)ve  **CDockBar**.  
   
-## <a name="_mfcnotes_ccontrolbar"></a>CControlBar 
+## <a name="_mfcnotes_ccontrolbar"></a> CControlBar 
   
  A **ControlBar** olan bir `CWnd`-türetilen, sınıf:  
   
@@ -51,19 +46,19 @@ ms.lasthandoff: 12/21/2017
   
  Denetim çubukları ek stillerini destekler:  
   
-- `CBRS_TOP`(Varsayılan) üst denetim çubuğuna Sabitle.  
+- `CBRS_TOP` (Varsayılan) üst denetim çubuğuna Sabitle.  
   
-- `CBRS_BOTTOM`Denetim çubuğu altına sabitleyin.  
+- `CBRS_BOTTOM` Denetim çubuğu altına sabitleyin.  
   
-- `CBRS_NOALIGN`Denetim çubuğu üst yeniden boyutlandırır olduğunda yeniden konumlandırmak değil.  
+- `CBRS_NOALIGN` Denetim çubuğu üst yeniden boyutlandırır olduğunda yeniden konumlandırmak değil.  
   
  Türetilmiş sınıflar `CControlBar` daha ilginç uygulamaları sağlayın:  
   
-- `CStatusBar`Durum çubuğu metni içeren durum çubuğu bölmeleri öğelerdir.  
+- `CStatusBar` Durum çubuğu metni içeren durum çubuğu bölmeleri öğelerdir.  
   
-- `CToolBar`Araç, bir satırda hizalı bit eşlem düğmeler öğelerdir.  
+- `CToolBar` Araç, bir satırda hizalı bit eşlem düğmeler öğelerdir.  
   
-- `CDialogBar`Standart windows içeren bir araç benzeri çerçevesi denetimleri (bir iletişim şablonunu kaynaktan oluşturulur).  
+- `CDialogBar` Standart windows içeren bir araç benzeri çerçevesi denetimleri (bir iletişim şablonunu kaynaktan oluşturulur).  
   
 - **CDockBar** genelleştirilmiş bir yerleştirme alanında diğer `CControlBar` türetilmiş nesneleri. Özel üye işlevleri ve değişkenler bu sınıfta kullanılabilir gelecek sürümlerde değişmesi olasılığı olan.  
   
@@ -104,7 +99,7 @@ BOOL CMyControlBar::Create(CWnd* pParentWnd,
   
  Dahil olmak üzere MFC özel Windows iletiler, **WM_SIZEPARENT**, belgelenmiştir [Teknik Not 24](../mfc/tn024-mfc-defined-messages-and-resources.md).  
   
-## <a name="_mfcnotes_cstatusbar"></a>CStatusBar  
+## <a name="_mfcnotes_cstatusbar"></a>  CStatusBar  
   
  Durum çubuğu metni çıkış bölmeleri satırının olan denetim çubuğu ' dir. Metin çıktısı bölmeleri kullanmak için iki genel yolu vardır:  
   
@@ -141,7 +136,7 @@ BOOL CMyControlBar::Create(CWnd* pParentWnd,
   
  Durum çubuğu yalnızca bir stretchy bölmesi, genellikle ilk destekler. Bu bölme gerçekten en küçük boyut boyutudur. Durum çubuğu tüm bölmeleri minimum boyuttan daha büyükse, herhangi bir ek genişlik stretchy bölmesine verilir. Birinci bölmesi stretchy olduğundan durum çubuğu varsayılan uygulamayla sağa hizalı göstergeleri büyük harf, sayı ve SCRL sahiptir.  
   
-## <a name="_mfcnotes_ctoolbar"></a>CToolBar  
+## <a name="_mfcnotes_ctoolbar"></a>  CToolBar  
   
  Bir araç çubuğu denetim çubuğu satır ayırıcı içerebilir bit eşlem düğmelerini bulunur. İki stili düğmelerinin desteklenir: pushbuttons ve onay kutusu düğmeler. Radyo Grup işlevlerini onay kutusunu düğmeleriyle oluşturulabilir ve `ON_UPDATE_COMMAND_UI`.  
   
@@ -173,13 +168,13 @@ BOOL CMyControlBar::Create(CWnd* pParentWnd,
  API, kimlikleri, stiller, düğme ayarlamak için kullanılabilir özelleştirme ayırıcı genişlik ve hangi görüntü/karakter hangi düğmesi için kullanılır. Varsayılan olarak bu API'leri kullanın gerekmez.  
   
 ## <a name="ccmdui-support-for-ctoolbar"></a>CToolBar Ccmduı desteği  
- Araç çubuğu düğmeleri her zaman güncel yolunu `ON_UPDATE_COMMAND_UI` mekanizması. Boşta kalma süresi üzerinde araç çağıracak `ON_UPDATE_COMMAND_UI` işleyici bu düğme komut kimliği. `ON_UPDATE_COMMAND_UI`Ayırıcılar için çağrılmaz ancak pushbuttons ve onay kutusu düğmeleri için çağrılır.  
+ Araç çubuğu düğmeleri her zaman güncel yolunu `ON_UPDATE_COMMAND_UI` mekanizması. Boşta kalma süresi üzerinde araç çağıracak `ON_UPDATE_COMMAND_UI` işleyici bu düğme komut kimliği. `ON_UPDATE_COMMAND_UI` Ayırıcılar için çağrılmaz ancak pushbuttons ve onay kutusu düğmeleri için çağrılır.  
   
  `ON_UPDATE_COMMAND_UI` İşleyici çağırabilirsiniz:  
   
 - **Etkinleştirme**: etkinleştirmek veya düğmesi devre dışı bırakmak için. Bu eşit pushbuttons ve onay kutusu düğmeleri için çalışır.  
   
-- `SetCheck`: Bir düğme onay durumunu ayarlamak için. Bu araç çubuğu düğmesi için çağrılırken bir onay kutusu düğmesinde açar. `SetCheck`(işaretli) 0, 1 (işaretli) veya 2 (belirsiz) olabilen bir parametre alır  
+- `SetCheck`: Bir düğme onay durumunu ayarlamak için. Bu araç çubuğu düğmesi için çağrılırken bir onay kutusu düğmesinde açar. `SetCheck` (işaretli) 0, 1 (işaretli) veya 2 (belirsiz) olabilen bir parametre alır  
   
 - `SetRadio`: İçin toplu `SetCheck`.  
   
@@ -203,17 +198,17 @@ BOOL CMyControlBar::Create(CWnd* pParentWnd,
   
 -   En fazla = 0  
   
--   Fare aşağı TBBS_PRESSED = (&#124; herhangi başka bir stil)  
+-   Fare aşağı TBBS_PRESSED = (&#124; başka bir stil)  
   
 -   Devre dışı TBBS_DISABLED =  
   
 -   Aşağı TBBS_CHECKED =  
   
--   Devre dışı = TBBS_CHECKED &#124; TBBS_DISABLED  
+-   TBBS_CHECKED = devre dışı &#124; TBBS_DISABLED  
   
 -   Belirsiz TBBS_INDETERMINATE =  
   
-##  <a name="_mfcnotes_cdialogbar"></a>CDialogBar  
+##  <a name="_mfcnotes_cdialogbar"></a> CDialogBar  
  Bir iletişim çubuğu standart Windows denetimleri içeren denetim çubuğu ' dir. Denetimleri içerir ve bunlar arasında sekmeyle gitmeyi destekleyen bir iletişim kutusu gibi davranır. Çubuğunu göstermek için bir iletişim şablonunu kullanır, ayrıca bir iletişim kutusu gibi davranır.  
   
  A `CDialogBar` standart basma düğmesi denetimleri içeren Baskı Önizleme araç için kullanılır.  

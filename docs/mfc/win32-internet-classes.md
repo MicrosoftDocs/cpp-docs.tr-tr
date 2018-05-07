@@ -1,13 +1,10 @@
 ---
-title: "Win32 Internet sınıfları | Microsoft Docs"
-ms.custom: 
+title: Win32 Internet sınıfları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.classes.win32
 dev_langs:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - Win32 [MFC], Internet classes
 - Windows API [MFC], Internet classes
 ms.assetid: b49601d5-3025-4068-9408-316b54ee4375
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 574f4def0f480741876df8f0d74f87a60f69671c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d1fa996ad36970faa97c9c6d248060a8121680a6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="win32-internet-classes"></a>Win32 Internet Sınıfları
 MFC Internet programlama kolaylaştırmak için Win32 Internet (WinINet) ve ActiveX teknolojisini sarmalar.  

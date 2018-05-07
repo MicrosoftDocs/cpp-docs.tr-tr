@@ -1,12 +1,9 @@
 ---
-title: "CWindowDC sınıfı | Microsoft Docs"
-ms.custom: 
+title: CWindowDC sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CWindowDC
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CWindowDC [MFC], CWindowDC
 - CWindowDC [MFC], m_hWnd
 ms.assetid: 876a3641-4cde-471c-b0d1-fe58b32af79c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bc3219ff6570fab18b19f350f7dca3171ab4832
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7867f35a66abf0f5a33ecd411b81111e84e3800f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cwindowdc-class"></a>CWindowDC sınıfı
 Türetilmiş `CDC`.  
@@ -69,7 +64,7 @@ class CWindowDC : public CDC
 ## <a name="requirements"></a>Gereksinimler  
  Başlık: afxwin.h  
   
-##  <a name="cwindowdc"></a>CWindowDC::CWindowDC  
+##  <a name="cwindowdc"></a>  CWindowDC::CWindowDC  
  Oluşturan bir `CWindowDC` (hem istemci hem de nonclient) tüm ekran alanını erişen nesne `CWnd` tarafından için nesne işaret `pWnd`.  
   
 ```  
@@ -88,7 +83,7 @@ explicit CWindowDC(CWnd* pWnd);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#188](../../mfc/codesnippet/cpp/cwindowdc-class_1.cpp)]  
   
-##  <a name="m_hwnd"></a>CWindowDC::m_hWnd  
+##  <a name="m_hwnd"></a>  CWindowDC::m_hWnd  
  `HWND` , `CWnd` İşaretçi oluşturmak için kullanılan `CWindowDC` nesnesi.  
   
 ```  
@@ -96,7 +91,7 @@ HWND m_hWnd;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `m_hWnd`korumalı bir değişken türü `HWND`.  
+ `m_hWnd` korumalı bir değişken türü `HWND`.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CWindowDC::CWindowDC](#cwindowdc).  

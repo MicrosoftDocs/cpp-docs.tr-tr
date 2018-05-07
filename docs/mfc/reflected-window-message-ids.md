@@ -1,13 +1,10 @@
 ---
-title: "Yansımış pencere iletisi kimlikleri | Microsoft Docs"
-ms.custom: 
+title: Yansımış pencere iletisi kimlikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - OCM_CTLCOLORBTN
 - OCM_PARENTNOTIFY
@@ -55,17 +52,15 @@ helpviewer_keywords:
 - OCM_NOTIFY message [MFC]
 - reflected messages
 ms.assetid: 3417ff51-ff9f-458c-bff4-17c200f00d96
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54b8f0fc8c58ea70a1499104e28a0e0a09bd4fee
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: aa6935c0fb9838c63c73e725da9f7b4e0fde4df4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="reflected-window-message-ids"></a>Yansımış Pencere İletisi Kimlikleri
 ActiveX denetimi veya diğer özel denetimi oluşturmak için hızlı bir şekilde bir alt kümesi için bir penceredir. Daha fazla bilgi için bkz: [MFC ActiveX denetimleri: bir Windows denetimini alt sınıf yapma](../mfc/mfc-activex-controls-subclassing-a-windows-control.md).  

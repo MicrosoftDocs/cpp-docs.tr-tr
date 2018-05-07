@@ -1,13 +1,10 @@
 ---
-title: "MFC ActiveX denetimleri: ActiveX denetimlerini dağıtma | Microsoft Docs"
-ms.custom: 
+title: 'MFC ActiveX denetimleri: ActiveX denetimlerini dağıtma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - GetWindowsDirectory
 - GetSystemDirectory
@@ -34,17 +31,15 @@ helpviewer_keywords:
 - registering controls
 - OLEPRO32.DLL
 ms.assetid: cd70ac9b-f613-4879-9e81-6381fdfda2a1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4ce6602696f733ca3bac03441a58515c57e0dc1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7c6658c972b9d9cdeececd43a89ac424964d2289
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-activex-controls-distributing-activex-controls"></a>MFC ActiveX Denetimleri: ActiveX Denetimlerini Dağıtma
 Bu makalede ActiveX denetimlerini yeniden dağıtma için ilgili çeşitli sorunlar ele alınmıştır:  
@@ -55,12 +50,12 @@ Bu makalede ActiveX denetimlerini yeniden dağıtma için ilgili çeşitli sorun
   
 -   [Denetimleri kaydetme](#_core_registering_controls)  
   
-##  <a name="_core_ansi_or_unicode_control_versions"></a>ANSI veya Unicode denetim sürümleri  
+##  <a name="_core_ansi_or_unicode_control_versions"></a> ANSI veya Unicode denetim sürümleri  
  ANSI veya Unicode bir sürüm denetim ya da her ikisini de dağıtmayı karar vermeniz gerekir. Bu karara ANSI ve Unicode karakter kümesi yapısında taşınabilirlik faktörleri temel alır.  
   
  Tüm Win32 işletim sistemlerinde çalışabilir, ANSI denetimleri çeşitli Win32 işletim sistemleri arasında en fazla taşınabilirlik izin verir. Unicode denetimleri yalnızca Windows NT (3.51 veya sonraki bir sürümü), ancak Windows 95 veya Windows 98 üzerinde çalışır. Taşınabilirlik birincil önceliğiniz, sevk ANSI denetimleri ise. Denetimleri yalnızca Windows NT üzerinde çalıştırırsanız, Unicode denetimleri gönderebilirsiniz. Her ikisi de sevk ve kullanıcının işletim sistemi için en uygun sürümünü yükleyin, uygulamaya sahip seçebilir.  
   
-##  <a name="_core_installing_activex_controls_and_redistributable_dlls"></a>ActiveX denetimleri ve yeniden dağıtılabilir DLL'leri yükleme  
+##  <a name="_core_installing_activex_controls_and_redistributable_dlls"></a> ActiveX denetimleri ve yeniden dağıtılabilir DLL'leri yükleme  
  ActiveX denetimleri ile sağladığınız Kurulum programı Windows dizinin özel bir alt dizini oluşturmak ve denetimleri yükleyin. OCX dosyaları.  
   
 > [!NOTE]
@@ -70,7 +65,7 @@ Bu makalede ActiveX denetimlerini yeniden dağıtma için ilgili çeşitli sorun
   
  ActiveX denetimleri yalnızca OLE kapsayıcı uygulamaları kullanılabildiğinden, tamamını OLE DLL'leri denetimleri ile dağıtmak için gerek yoktur. İçeren uygulama (veya işletim sistemi) standart OLE yüklü DLL'leri olduğunu kabul edilebilir.  
   
-##  <a name="_core_registering_controls"></a>Denetimleri kaydetme  
+##  <a name="_core_registering_controls"></a> Denetimleri kaydetme  
  Uygun girişleri denetim kullanılabilmesi için Windows kayıt veritabanında oluşturulmalıdır. Bazı ActiveX denetimi kapsayıcıları için kullanıcıların yeni denetimler kaydetmek menü öğesi sağlasa da, bu özellik tüm kapsayıcıları kullanılabilir durumda olmayabilir. Bu nedenle, yüklendiklerinde denetimleri kaydetmek için Kurulum programı isteyebilirsiniz.  
   
  İsterseniz, Denetim bunun yerine doğrudan kaydetmek için Kurulum programı yazabilirsiniz.  

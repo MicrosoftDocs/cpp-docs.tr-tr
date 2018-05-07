@@ -1,13 +1,10 @@
 ---
 title: Sanal liste denetimleri | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - list controls [MFC], List view
 - virtual list controls
 ms.assetid: 319f841f-e426-423a-8276-d93f965b0b45
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0223d9733f9290d989183a34b91779ee1f4d5e28
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0b580e455aab7ff95beb85c02b8e3ca79dfa8a46
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="virtual-list-controls"></a>Sanal Liste Denetimleri
 Sanal liste denetimi sahip bir liste görünümü denetimi olan **LVS_OWNERDATA** stili. Bu stili bir öğe sayısı kadar desteklemek denetim sağlayan bir `DWORD` (varsayılan öğe sayısı için yalnızca genişleten bir `int`). Ancak, bu stili tarafından sağlanan en büyük avantajı veri öğelerin alt kümesine herhangi bir zamanda bellekte yeterlidir yeteneğidir. Bu bilgi, büyük veritabanları ile kullanmak için kendisini ödünç vermek sanal liste görünümü denetimi verilerine erişme belirli yöntemleri zaten yerinde nerede sağlar.  
@@ -43,15 +38,15 @@ Sanal liste denetimi sahip bir liste görünümü denetimi olan **LVS_OWNERDATA*
   
  İşleyicisindeki **LVN_GETDISPINFO** bildirim iletisi, gerekir hangi tür bilgileri istenen olmadığını denetleyin. Olası değerler şunlardır:  
   
--   `LVIF_TEXT``pszText` Üye doldurulmalıdır.  
+-   `LVIF_TEXT` `pszText` Üye doldurulmalıdır.  
   
--   `LVIF_IMAGE``iImage` Üye doldurulmalıdır.  
+-   `LVIF_IMAGE` `iImage` Üye doldurulmalıdır.  
   
 -   **LVIF_INDENT** *iIndent* üye doldurulmalıdır.  
   
--   `LVIF_PARAM`*LParam* üye doldurulmalıdır. (Alt öğelerini yoktur.)  
+-   `LVIF_PARAM` *LParam* üye doldurulmalıdır. (Alt öğelerini yoktur.)  
   
--   `LVIF_STATE`*Durumu* üye doldurulmalıdır.  
+-   `LVIF_STATE` *Durumu* üye doldurulmalıdır.  
   
  Ardından Framework'e istenen hangi bilgilerin vermeniz gerekir.  
   

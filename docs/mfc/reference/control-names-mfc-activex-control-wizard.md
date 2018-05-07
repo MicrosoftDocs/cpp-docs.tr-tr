@@ -1,13 +1,10 @@
 ---
-title: "Denetim adları, MFC ActiveX Denetim Sihirbazı | Microsoft Docs"
-ms.custom: 
+title: Denetim adları, MFC ActiveX Denetim Sihirbazı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.appwiz.mfc.ctl.names
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control names
 ms.assetid: 9b8b81d2-36df-48ed-b58a-a771a0e269ee
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f3444ec69ea96ee89ed7a0965f3575fc79e3b9c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 08a406bf633715f6a6e9546295da3b02a41f0063
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="control-names-mfc-activex-control-wizard"></a>Denetim Adları, MFC ActiveX Denetim Sihirbazı
 Denetim ve özellik sayfası sınıf, tür adları için ad belirtmek ve denetlemek için tanımlayıcıları yazın. Dışında **kısa ad**, diğer tüm alanlar bağımsız olarak düzenlenebilir. Metni değiştirirseniz **kısa ad**, değişiklik bu sayfasındaki diğer tüm alanların adlarını yansıtılır. Bu adlandırma davranış denetiminizi geliştirdikçe tüm adlar kolayca tanımlanabilen yapmak için tasarlanmıştır.  

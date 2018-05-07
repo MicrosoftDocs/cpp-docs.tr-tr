@@ -1,13 +1,10 @@
 ---
-title: "Sunucular: Sunucu öğeleri | Microsoft Docs"
-ms.custom: 
+title: 'Sunucular: Sunucu öğeleri | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - server items
 - OLE server applications [MFC], server items
 ms.assetid: 28ba81a1-726a-4728-a52d-68bc7efd5a3c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2fe196eb561c336e45402de6c390146a0d77bea4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e83b75183fe226b4ff384a00b0b5260caba01efa
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="servers-server-items"></a>Sunucular: Sunucu Öğeleri
 Bir kullanıcı bir katıştırılmış veya bağlantılı OLE öğesi düzenleyebileceğiniz şekilde, bir kapsayıcı bir sunucu başlattığında, sunucu uygulaması bir "sunucu öğesi." oluşturur Türetilen bir sınıfın bir nesnesi sunucusu öğesini `COleServerItem`, sunucu belge kapsayıcı uygulaması arasında bir arabirim sağlar.  
@@ -36,7 +31,7 @@ Bir kullanıcı bir katıştırılmış veya bağlantılı OLE öğesi düzenley
   
  İçinde [HIERSVR](../visual-cpp-samples.md) , örneğin, sunucu öğesi sınıfı örnek **CServerItem**, sınıfın bir nesnesi için bir işaretçi bir üyenin **CServerNode**. **CServerNode** bir ağacıdır HIERSVR uygulamanın belge düğümü nesnesidir. Zaman **CServerNode** nesnesidir kök düğümü **CServerItem** nesnesi tüm belgeyi temsil eder. Zaman **CServerNode** nesnesi olan bir alt düğüm **CServerItem** nesnesi, belgenin bir bölümünü temsil eder. MFC OLE örnek bkz [HIERSVR](../visual-cpp-samples.md) bu etkileşimi ilişkin bir örnek.  
   
-##  <a name="_core_implementing_server_items"></a>Sunucu öğeleri uygulama  
+##  <a name="_core_implementing_server_items"></a> Sunucu öğeleri uygulama  
  Uygulamanız için "starter" kod üretmek için Uygulama Sihirbazı'nı kullanırsanız sunucu öğeleri starter kodunuzda dahil etmek için yapmanız gereken tek şey OLE seçenekler sayfası sunucu seçenekleri birini seçmek için. Sunucu öğeleri varolan bir uygulamaya ekliyorsanız, aşağıdaki adımları gerçekleştirin:  
   
 #### <a name="to-implement-a-server-item"></a>Bir sunucu öğesini uygulamak için  
@@ -51,7 +46,7 @@ Bir kullanıcı bir katıştırılmış veya bağlantılı OLE öğesi düzenley
   
 4.  Sunucu öğesi sınıfınızın uygulamak `OnGetExtent` üye işlevi. Framework öğenin boyutunu almak için bu işlevi çağırır. Varsayılan uygulama hiçbir şey yapmaz.  
   
-##  <a name="_core_a_tip_for_server.2d.item_architecture"></a>Sunucu öğesi mimarisi için bir ipucu  
+##  <a name="_core_a_tip_for_server.2d.item_architecture"></a> Sunucu öğesi mimarisi için bir ipucu  
  İçinde belirtildiği gibi [uygulama sunucu öğeleri](#_core_implementing_server_items), sunucu uygulamaları sağlayabilmelidir öğeleri sunucunun görünümü hem de kapsayıcı uygulama tarafından kullanılan meta dosyası işlenemiyor. Microsoft Foundation Class Kitaplığı'nın uygulama mimarisinde, görünüm sınıfı 's `OnDraw` üye işlevi, düzenlenirken öğesi oluşturur (bkz [CView::OnDraw](../mfc/reference/cview-class.md#ondraw) içinde *sınıf kitaplığı başvurusu* ). Sunucu öğesi'nin `OnDraw` tüm diğer durumlarda meta dosyası içine öğesi oluşturur (bkz [COleServerItem::OnDraw](../mfc/reference/coleserveritem-class.md#ondraw)).  
   
  Yardımcı işlevleri server belge sınıfınızda yazma ve bunları çağırma tarafından kod yinelenmesini önlemek `OnDraw` , Görünüm ve sunucu öğesi sınıflardaki işlevleri. MFC OLE örnek [HIERSVR](../visual-cpp-samples.md) bu strateji kullanır: işlevleri **CServerView::OnDraw** ve **CServerItem::OnDraw** çağırın **CServerDoc::DrawTree**  öğesi oluşturmak için.  

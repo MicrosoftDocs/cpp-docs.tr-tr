@@ -1,12 +1,9 @@
 ---
-title: "COleException sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleException sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleException
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - COleException [MFC], Process
 - COleException [MFC], m_sc
 ms.assetid: 2571e9fe-26cc-42f0-9ad9-8ad5b4311ec1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e895e893c6032a8f8d7db0549f872c82cd0d9b5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 46f554e375e8c0185e8c2b75c81eeae5ee615c51
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coleexception-class"></a>COleException sınıfı
 Bir OLE işlemle ilişkili bir özel durumu temsil eder.  
@@ -71,7 +66,7 @@ class COleException : public CException
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h  
   
-##  <a name="m_sc"></a>COleException::m_sc  
+##  <a name="m_sc"></a>  COleException::m_sc  
  Bu veri üyesi özel durumun nedeni gösterir OLE durum kodunu içerir.  
   
 ```  
@@ -86,7 +81,7 @@ SCODE m_sc;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#22](../../mfc/codesnippet/cpp/coleexception-class_1.cpp)]  
   
-##  <a name="process"></a>COleException::Process  
+##  <a name="process"></a>  COleException::Process  
  Çağrı **işlem** üye işlevi bir OLE durum kodu içine yakalanan bir özel durum çevir.  
   
 ```  

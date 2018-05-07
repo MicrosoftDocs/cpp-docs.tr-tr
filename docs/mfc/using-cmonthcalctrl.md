@@ -1,13 +1,10 @@
 ---
 title: CMonthCalCtrl kullanma | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - CMonthCalCtrl
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - CMonthCalCtrl class [MFC], about CMonthCalCtrl class
 ms.assetid: 2be0e8c2-ed03-4853-aea1-4461eba18611
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee958116b7eed8804bb6c540187eea6b37d750ef
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 30c6a25cdb2bd61ec9346108ca5b4587b70ef870
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-cmonthcalctrl"></a>CMonthCalCtrl Kullanma
 Aylık takvim denetiminin ([CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)) bir takvim benzeri kullanıcı arabirimini uygular. Bu kullanıcı girmek veya bir tarih seçme çok sezgisel ve tanınabilir yöntemini sağlar. Denetim Ayrıca uygulama ile elde ve var olan veri türleri kullanılarak denetiminde tarih bilgisini ayarlamak için araçlar sağlar. Varsayılan olarak, ay ve gün geçerli ay Takvim denetimi görüntüler. Ancak, kullanıcı önceki ve sonraki ay boyunca kaydırma yapın ve belirli ayı ve/veya yıl mümkün değil.  

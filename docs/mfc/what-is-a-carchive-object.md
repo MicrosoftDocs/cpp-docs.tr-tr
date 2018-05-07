@@ -1,13 +1,10 @@
 ---
 title: CArchive nesnesi nedir | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - CArchive
 dev_langs:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CArchive class [MFC], about CArchive class [MFC]
 - buffering, serializable objects
 ms.assetid: 843f1825-288d-4d89-a1fa-70e1f92d9b8b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb9b0c3e24094deb0d4fd4ac20d673d9ffafca6d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 55b97843a8aeb2599d2bdf34458b362fc5899368
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="what-is-a-carchive-object"></a>CArchive Nesnesi Nedir?
 A `CArchive` nesnesi, gelen veya giden serileştirilebilir nesneler okuma veya yazma için bir tür kullanımı uyumlu arabelleğe alma mekanizması sağlar bir `CFile` nesnesi. Genellikle `CFile` nesnesini temsil eden bir disk dosyası; ancak, bu da bellek dosyasını olabilir (`CSharedFile` nesnesi), belki de Pano temsil eden.  

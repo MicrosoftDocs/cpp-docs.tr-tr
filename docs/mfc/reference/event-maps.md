@@ -1,13 +1,10 @@
 ---
-title: "Olay eşlemeleri | Microsoft Docs"
-ms.custom: 
+title: Olay eşlemeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.maps
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - event maps [MFC]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 130e4ecf7534b16ecabf4c35665a4dabe9eee34e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: db309833604b4e833dfd22a090a8f258333da360
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 Bir denetim (Denetim geliştirici tarafından belirlenir) bazı eylemler (örneğin, bir tuş vuruşu, fare tıklatma veya denetimin durumunu değişiklik) gerçekleştirilmedi kapsayıcısı bildir istediği her bir olay tetikleme işlevi çağırır. Bu işlev, bazı önemli eylem ilgili olay tetikleme tarafından oluştu denetimi kapsayıcısı bildirir.  
@@ -62,7 +57,7 @@ Bir denetim (Denetim geliştirici tarafından belirlenir) bazı eylemler (örne�
 |[ON_OLEVERB](#on_oleverb)|OLE denetim tarafından işlenen özel bir fiil gösterir.|  
 |[ON_STDOLEVERB](#on_stdoleverb)|OLE denetim standart fiil eşlemesi geçersiz kılar.|  
   
-##  <a name="declare_event_map"></a>DECLARE_EVENT_MAP  
+##  <a name="declare_event_map"></a>  DECLARE_EVENT_MAP  
  Her `COleControl`-programınızı türetilen sınıfta denetiminiz yangın olayları belirtmek için bir olay eşlemesi sağlayabilir.  
   
 ```   
@@ -77,7 +72,7 @@ DECLARE_EVENT_MAP()
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="begin_event_map"></a>BEGIN_EVENT_MAP  
+##  <a name="begin_event_map"></a>  BEGIN_EVENT_MAP  
  Olay eşlemesi tanımını başlar.  
   
 ```   
@@ -99,7 +94,7 @@ BEGIN_EVENT_MAP(theClass,  baseClass)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="end_event_map"></a>END_EVENT_MAP  
+##  <a name="end_event_map"></a>  END_EVENT_MAP  
  Kullanım `END_EVENT_MAP` olay eşlemesi tanımını sonuna makrosu.  
   
 ```   
@@ -109,7 +104,7 @@ END_EVENT_MAP()
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="event_custom"></a>EVENT_CUSTOM  
+##  <a name="event_custom"></a>  EVENT_CUSTOM  
  Özel bir olay için bir olay eşleme girişi tanımlar.  
   
 ```   
@@ -144,7 +139,7 @@ EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
 |**VTS_COLOR**|**OLE_COLOR**|  
 |**VTS_CY**|**PARA BİRİMİ**|  
 |**VTS_DATE**|**TARİH**|  
-|**VTS_BSTR**|**const char\***|  
+|**VTS_BSTR**|**Const char\***|  
 |**VTS_DISPATCH**|`LPDISPATCH`|  
 |**VTS_FONT**|**IFontDispatch\***|  
 |**VTS_HANDLE**|`HANDLE`|  
@@ -171,7 +166,7 @@ EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="event_custom_id"></a>EVENT_CUSTOM_ID  
+##  <a name="event_custom_id"></a>  EVENT_CUSTOM_ID  
  Tetikleme işlevi tarafından belirtilen gönderme kimliği ait özel bir olay için bir olay tanımlar `dispid`.  
   
 ```   
@@ -208,7 +203,7 @@ EVENT_CUSTOM_ID(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="on_oleverb"></a>ON_OLEVERB  
+##  <a name="on_oleverb"></a>  ON_OLEVERB  
  Bu makrosu denetiminizin belirli üye işlevi için özel bir fiil eşleyen bir ileti eşleme girişi tanımlar.  
   
 ```   
@@ -237,7 +232,7 @@ ON_OLEVERB(idsVerbName,  memberFxn)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxole.h  
   
-##  <a name="on_stdoleverb"></a>ON_STDOLEVERB  
+##  <a name="on_stdoleverb"></a>  ON_STDOLEVERB  
  Bu makrosu standart fiil varsayılan davranışını geçersiz kılmak için kullanın.  
   
 ```   
@@ -252,7 +247,7 @@ ON_STDOLEVERB(iVerb,   memberFxn)
  İşlev fiili çağrıldığında çerçevesi tarafından çağrılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Standart fiil dizin biçimidir **OLEIVERB_**takip eden bir eylem. `OLEIVERB_SHOW`, `OLEIVERB_HIDE`, ve `OLEIVERB_UIACTIVATE` standart fiillerin bazı örnekleri şunlardır.  
+ Standart fiil dizin biçimidir **OLEIVERB_** takip eden bir eylem. `OLEIVERB_SHOW`, `OLEIVERB_HIDE`, ve `OLEIVERB_UIACTIVATE` standart fiillerin bazı örnekleri şunlardır.  
   
  Bkz: [ON_OLEVERB](#on_oleverb) olarak kullanılacak işlev prototipi açıklaması `memberFxn` parametresi.  
 

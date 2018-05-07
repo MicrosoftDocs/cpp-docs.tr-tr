@@ -1,12 +1,9 @@
 ---
-title: "CCachedDataPathProperty sınıfı | Microsoft Docs"
-ms.custom: 
+title: CCachedDataPathProperty sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CCachedDataPathProperty
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CCachedDataPathProperty [MFC], CCachedDataPathProperty
 - CCachedDataPathProperty [MFC], m_Cache
 ms.assetid: 0d81356b-4fe5-43f6-aed2-2eb5a5485706
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2fb62a905d092a347103ea98fcd323e3778ed458
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 29e46f7e65d6c2f9b5c0d29007cd31f660754957
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ccacheddatapathproperty-class"></a>CCachedDataPathProperty sınıfı
 Implements bir OLE zaman uyumsuz olarak aktarılır ve bellek dosyasında önbelleğe özelliğini denetler.  
@@ -52,7 +47,7 @@ class CCachedDataPathProperty : public CDataPathProperty
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCachedDataPathProperty::m_Cache](#m_cache)|`CMemFile`verileri önbelleğe nesne.|  
+|[CCachedDataPathProperty::m_Cache](#m_cache)|`CMemFile` verileri önbelleğe nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bellek dosyası RAM yerine disk üzerinde depolanır ve hızlı geçici aktarımları için yararlıdır.  
@@ -85,7 +80,7 @@ class CCachedDataPathProperty : public CDataPathProperty
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxctl.h  
   
-##  <a name="ccacheddatapathproperty"></a>CCachedDataPathProperty::CCachedDataPathProperty  
+##  <a name="ccacheddatapathproperty"></a>  CCachedDataPathProperty::CCachedDataPathProperty  
  Oluşturan bir `CCachedDataPathProperty` nesnesi.  
   
 ```  
@@ -102,12 +97,12 @@ CCachedDataPathProperty(
  Bu ile ilişkilendirilmesi ActiveX denetim nesnesi için bir işaretçi `CCachedDataPathProperty` nesnesi.  
   
  `lpszPath`  
- Mutlak veya göreli olabilir, yolun özelliği gerçek mutlak konumu başvuran zaman uyumsuz bir ad oluşturmak için kullanılır. `CCachedDataPathProperty`URL'ler, değil dosya adlarını kullanır. İsterseniz bir `CCachedDataPathProperty` nesne için bir dosya, yola file:// önüne ekleyin.  
+ Mutlak veya göreli olabilir, yolun özelliği gerçek mutlak konumu başvuran zaman uyumsuz bir ad oluşturmak için kullanılır. `CCachedDataPathProperty` URL'ler, değil dosya adlarını kullanır. İsterseniz bir `CCachedDataPathProperty` nesne için bir dosya, yola file:// önüne ekleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `COleControl` Tarafından için nesne işaret `pControl` tarafından kullanılan [açık](../../mfc/reference/cdatapathproperty-class.md#open) ve türetilmiş sınıfları tarafından alınır. Varsa `pControl` olan **NULL**, ile kullanılan denetimi **açık** ile ayarlamalıdır [SetControl](../../mfc/reference/cdatapathproperty-class.md#setcontrol). Varsa `lpszPath` olan **NULL**, yolundaki geçirebilirsiniz **açık** veya ile ayarlayın [SetPath](../../mfc/reference/cdatapathproperty-class.md#setpath).  
   
-##  <a name="m_cache"></a>CCachedDataPathProperty::m_Cache  
+##  <a name="m_cache"></a>  CCachedDataPathProperty::m_Cache  
  İçine verileri önbelleğe bellek dosyası sınıf adını içerir.  
   
 ```  

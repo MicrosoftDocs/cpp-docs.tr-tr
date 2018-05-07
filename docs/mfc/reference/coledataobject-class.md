@@ -1,12 +1,9 @@
 ---
-title: "COleDataObject sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleDataObject sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleDataObject
@@ -37,17 +34,15 @@ helpviewer_keywords:
 - COleDataObject [MFC], IsDataAvailable
 - COleDataObject [MFC], Release
 ms.assetid: d1cc84be-2e1c-4bb3-a8a0-565eb08aaa34
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f85a1e6992e8d679401f4e0f97080efcf991446
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e9cd159597440dfb55bbe8abe147623096cdf449
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coledataobject-class"></a>COleDataObject sınıfı
 Veri aktarımları ile sürükle ve bırak, Pano veya katıştırılmış OLE öğeyi çeşitli biçimlerde verileri almak için kullanılır.  
@@ -82,7 +77,7 @@ class COleDataObject
 |[COleDataObject::Release](#release)|Ayırır ve ilişkili serbest `IDataObject` nesnesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `COleDataObject`bir taban sınıfı yok.  
+ `COleDataObject` bir taban sınıfı yok.  
   
  Bu tür veri aktarımları, bir kaynak ve hedef içerir. Veri kaynağı bir nesnenin uygulanan [COleDataSource](../../mfc/reference/coledatasource-class.md) sınıfı. Her bir hedef uygulama içinde bırakılan veri veya panodan, bir nesneyi yapıştırma işlemi gerçekleştirmek için sorulan `COleDataObject` sınıfı oluşturulmalıdır.  
   
@@ -98,7 +93,7 @@ class COleDataObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxole.h  
   
-##  <a name="attach"></a>COleDataObject::Attach  
+##  <a name="attach"></a>  COleDataObject::Attach  
  İlişkilendirmek için bu işlevi çağırmak `COleDataObject` nesnesi ile OLE veri nesnesi.  
   
 ```  
@@ -117,7 +112,7 @@ void Attach(
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) Windows SDK'sındaki.  
   
-##  <a name="attachclipboard"></a>COleDataObject::AttachClipboard  
+##  <a name="attachclipboard"></a>  COleDataObject::AttachClipboard  
  Şu anda açık olan Pano veri nesnesi eklemek için bu işlevi çağırmak `COleDataObject` nesnesi.  
   
 ```  
@@ -132,7 +127,7 @@ BOOL AttachClipboard();
 > [!NOTE]
 >  Bu veri nesnesi serbest kadar bu işlev çağırma Pano kilitler. Veri nesnesi için yıkıcı de serbest `COleDataObject`. Daha fazla bilgi için bkz: [OpenClipboard](http://msdn.microsoft.com/library/windows/desktop/ms649048) ve [CloseClipboard](http://msdn.microsoft.com/library/windows/desktop/ms649035) Win32 belgelerine içinde.  
   
-##  <a name="beginenumformats"></a>COleDataObject::BeginEnumFormats  
+##  <a name="beginenumformats"></a>  COleDataObject::BeginEnumFormats  
  Sonraki çağrılar için hazırlamak için bu işlevi çağırmak `GetNextFormat` öğesinden veri biçimleri listesini almak için.  
   
 ```  
@@ -146,7 +141,7 @@ void BeginEnumFormats();
   
  Daha fazla bilgi için bkz: [IDataObject::EnumFormatEtc](http://msdn.microsoft.com/library/windows/desktop/ms683979) Windows SDK'sındaki.  
   
-##  <a name="coledataobject"></a>COleDataObject::COleDataObject  
+##  <a name="coledataobject"></a>  COleDataObject::COleDataObject  
  Oluşturan bir `COleDataObject` nesnesi.  
   
 ```  
@@ -159,7 +154,7 @@ COleDataObject();
 > [!NOTE]
 >  Parametrelerden biri sürükle ve bırak işleyicileri için bir işaretçi olduğundan bir `COleDataObject`, sürükle ve bırak desteklemek için bu oluşturucuyu çağırmak için gerek yoktur.  
   
-##  <a name="detach"></a>COleDataObject::Detach  
+##  <a name="detach"></a>  COleDataObject::Detach  
  Kullanımdan çıkarmak için bu işlevi çağırmak `COleDataObject` nesnesinden verileri nesne serbest olmadan, ilişkili OLE veri nesnesi.  
   
 ```  
@@ -171,7 +166,7 @@ LPDATAOBJECT Detach();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getdata"></a>COleDataObject::GetData  
+##  <a name="getdata"></a>  COleDataObject::GetData  
  Belirtilen biçim öğesinden verileri almak için bu işlevini çağırın.  
   
 ```  
@@ -199,7 +194,7 @@ BOOL GetData(
   
  Daha fazla bilgi için bkz: [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK'sındaki.  
   
-##  <a name="getfiledata"></a>COleDataObject::GetFileData  
+##  <a name="getfiledata"></a>  COleDataObject::GetFileData  
  Oluşturmak için bu işlevi çağırmak bir `CFile` veya `CFile`-türetilen nesnesini ve belirtilen biçime verileri almak için bir `CFile` işaretçi.  
   
 ```  
@@ -228,7 +223,7 @@ CFile* GetFileData(
   
  Daha fazla bilgi için bkz: [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK'sındaki.  
   
-##  <a name="getglobaldata"></a>COleDataObject::GetGlobalData  
+##  <a name="getglobaldata"></a>  COleDataObject::GetGlobalData  
  Bir genel bellek bloğu ayrılamadı ve belirtilen biçime verileri almak için bu işlevi çağırmak bir `HGLOBAL`.  
   
 ```  
@@ -252,7 +247,7 @@ HGLOBAL GetGlobalData(
   
  Daha fazla bilgi için bkz: [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK'sındaki.  
   
-##  <a name="getnextformat"></a>COleDataObject::GetNextFormat  
+##  <a name="getnextformat"></a>  COleDataObject::GetNextFormat  
  Art arda öğesinden veri almak için kullanılabilir tüm biçimlerini almak için bu işlevini çağırın.  
   
 ```  
@@ -273,7 +268,7 @@ BOOL GetNextFormat(LPFORMATETC lpFormatEtc);
   
  Daha fazla bilgi için bkz: [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) Windows SDK'sındaki.  
   
-##  <a name="isdataavailable"></a>COleDataObject::IsDataAvailable  
+##  <a name="isdataavailable"></a>  COleDataObject::IsDataAvailable  
  Belirli bir biçimde OLE öğesinden veri almak için kullanılabilir olup olmadığını belirlemek için bu işlevini çağırın.  
   
 ```  
@@ -302,7 +297,7 @@ BOOL IsDataAvailable(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CRichEditView::QueryAcceptData](../../mfc/reference/cricheditview-class.md#queryacceptdata).  
   
-##  <a name="release"></a>COleDataObject::Release  
+##  <a name="release"></a>  COleDataObject::Release  
  Sahipliğini serbest bırakmak için bu işlevi çağırmak [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) önceden ilişkilendirilmiş nesne `COleDataObject` nesne.  
   
 ```  

@@ -1,12 +1,9 @@
 ---
-title: "Bağlayıcı araçları hatası LNK2031 | Microsoft Docs"
-ms.custom: 
+title: Bağlayıcı araçları hatası LNK2031 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - LNK2031
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - LNK2031
 ms.assetid: 18ed4b6e-3e75-443c-bbd8-2f6030dc89ee
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a519b4241c9ffabaeeb387cc8e4997125d57781
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 179702b3e162ad9f22fd887d60c5a5c2d0bc8559
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="linker-tools-error-lnk2031"></a>Bağlayıcı Araçları Hatası LNK2031
 p/Invoke "function_declaration" decorated_name için; oluşturulamıyor Meta veriler eksik çağırma  

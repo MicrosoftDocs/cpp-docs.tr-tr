@@ -1,12 +1,9 @@
 ---
-title: "CMFCRibbonProgressBar sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCRibbonProgressBar sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCRibbonProgressBar
@@ -35,17 +32,15 @@ helpviewer_keywords:
 - CMFCRibbonProgressBar [MFC], SetPos
 - CMFCRibbonProgressBar [MFC], SetRange
 ms.assetid: de3d9f2e-ed59-480e-aa7d-08a33ab36c67
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1354b0b15837a733a890c438c7771ffe39526773
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2b9d0d1ab9722b14caddc3935d820301ae229f5a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcribbonprogressbar-class"></a>CMFCRibbonProgressBar sınıfı
 Görsel olarak uzun bir işlemin ilerlemesini gösteren bir denetimi uygular.  
@@ -96,7 +91,7 @@ class CMFCRibbonProgressBar : public CMFCRibbonBaseElement
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxRibbonProgressBar.h  
   
-##  <a name="cmfcribbonprogressbar"></a>CMFCRibbonProgressBar::CMFCRibbonProgressBar  
+##  <a name="cmfcribbonprogressbar"></a>  CMFCRibbonProgressBar::CMFCRibbonProgressBar  
  Oluşturur ve başlatır bir [CMFCRibbonProgressBar](../../mfc/reference/cmfcribbonprogressbar-class.md) nesnesi.  
   
 ```  
@@ -110,16 +105,16 @@ CMFCRibbonProgressBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nID`  
+ [in] `nID`  
  Şerit ilerleme çubuğu komut Kimliğini belirtir.  
   
- [in]`nWidth`  
+ [in] `nWidth`  
  Şerit ilerleme çubuğunun piksel cinsinden genişliğini belirtir.  
   
- [in]`nHeight`  
+ [in] `nHeight`  
  Şerit ilerleme çubuğunun piksel cinsinden yüksekliği belirtir.  
   
-##  <a name="getpos"></a>CMFCRibbonProgressBar::GetPos  
+##  <a name="getpos"></a>  CMFCRibbonProgressBar::GetPos  
  İlerleme çubuğu geçerli konumunu döndürür.  
   
 ```  
@@ -132,7 +127,7 @@ int GetPos () const;
 ### <a name="remarks"></a>Açıklamalar  
  Ayarlanan aralığı tarafından belirtilen aralıkta olmalıdır [CMFCRibbonProgressBar::SetRange](#setrange) yöntemi.  
   
-##  <a name="getrangemax"></a>CMFCRibbonProgressBar::GetRangeMax  
+##  <a name="getrangemax"></a>  CMFCRibbonProgressBar::GetRangeMax  
  İlerleme çubuğu geçerli döndürür en büyük değer.  
   
 ```  
@@ -144,7 +139,7 @@ int GetRangeMax() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getrangemin"></a>CMFCRibbonProgressBar::GetRangeMin  
+##  <a name="getrangemin"></a>  CMFCRibbonProgressBar::GetRangeMin  
  İlerleme çubuğu geçerli döndürür en düşük aralık değeri.  
   
 ```  
@@ -154,7 +149,7 @@ int GetRangeMin() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli aralığın minimum değeri.  
   
-##  <a name="getregularsize"></a>CMFCRibbonProgressBar::GetRegularSize  
+##  <a name="getregularsize"></a>  CMFCRibbonProgressBar::GetRegularSize  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -162,13 +157,13 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isinfinitemode"></a>CMFCRibbonProgressBar::IsInfiniteMode  
+##  <a name="isinfinitemode"></a>  CMFCRibbonProgressBar::IsInfiniteMode  
  İlerleme çubuğu sonsuz modunda çalışıp çalışmadığını belirtir.  
   
 ```  
@@ -176,12 +171,12 @@ BOOL IsInfiniteMode() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`İlerleme çubuğu sonsuz modundaysa; Aksi takdirde `FALSE`.  
+ `TRUE` İlerleme çubuğu sonsuz modundaysa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Sonsuz modunda ilerleme çubuğu, minimum değerden art arda en büyük değere doldurur. Sonsuz modu, bir işlem devam eden, ancak tamamlanma zamanı bilinmeyen olduğunu belirtmek için kullanabilirsiniz.  
   
-##  <a name="ondraw"></a>CMFCRibbonProgressBar::OnDraw  
+##  <a name="ondraw"></a>  CMFCRibbonProgressBar::OnDraw  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -189,11 +184,11 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setinfinitemode"></a>CMFCRibbonProgressBar::SetInfiniteMode  
+##  <a name="setinfinitemode"></a>  CMFCRibbonProgressBar::SetInfiniteMode  
  Sonsuz modda çalışmak için ilerleme çubuğu ayarlar.  
   
 ```  
@@ -201,13 +196,13 @@ void SetInfiniteMode(BOOL bSet = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bSet`  
- `TRUE`İlerleme çubuğu sonsuz modunda olduğunu belirtmek için; Aksi takdirde `FALSE`.  
+ [in] `bSet`  
+ `TRUE` İlerleme çubuğu sonsuz modunda olduğunu belirtmek için; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İlerleme çubuğu sonsuz modundaysa, genellikle, bu kullanıcı bir işlem devam eden, ancak tamamlanma zamanı bilinmiyor belirtiyor. Bu nedenle, ilerleme çubuğu art arda en büyük değer en küçük değerden doldurur.  
   
-##  <a name="setpos"></a>CMFCRibbonProgressBar::SetPos  
+##  <a name="setpos"></a>  CMFCRibbonProgressBar::SetPos  
  İlerleme çubuğu geçerli konumunu ayarlar.  
   
 ```  
@@ -217,16 +212,16 @@ void SetPos(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nPos`  
+ [in] `nPos`  
  İlerleme çubuğu ayarlanmış konumunu belirtir.  
   
- [in]`bRedraw`  
+ [in] `bRedraw`  
  İlerleme çubuğu yeniden olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ayarlanan aralığı tarafından belirtilen aralıkta olmalıdır [CMFCRibbonProgressBar::SetRange](#setrange) yöntemi.  
   
-##  <a name="setrange"></a>CMFCRibbonProgressBar::SetRange  
+##  <a name="setrange"></a>  CMFCRibbonProgressBar::SetRange  
  İlerleme çubuğu için minimum ve maksimum değerleri ayarlar.  
   
 ```  
@@ -236,10 +231,10 @@ void SetRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nMin`  
+ [in] `nMin`  
  Aralığın minimum değeri belirtir.  
   
- [in]`nMax`  
+ [in] `nMax`  
  Aralığın maksimum değeri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

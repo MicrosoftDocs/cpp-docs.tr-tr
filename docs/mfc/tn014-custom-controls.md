@@ -1,13 +1,10 @@
 ---
-title: "TN014: Özel denetimler | Microsoft Docs"
-ms.custom: 
+title: 'TN014: Özel denetimler | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.controls
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - TN014
 - custom controls [MFC]
 ms.assetid: 1917a498-f643-457c-b570-9a0af7dbf7bb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4ffc4f26ed365673cdfb525c2bf3653827cc4ba
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 54a7ef7f6fd9a9da92c208366ee401d55d07fd5a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn014-custom-controls"></a>TN014: Özel Denetimler
 Bu Not özel ve kendi kendine çizim denetimleri için MFC desteği açıklar. Bu ayrıca dinamik sınıflara ve arasındaki ilişkiyi açıklar [CWnd](../mfc/reference/cwnd-class.md) nesneleri ve `HWND`s.  
@@ -128,15 +123,15 @@ Bu Not özel ve kendi kendine çizim denetimleri için MFC desteği açıklar. B
   
  Bu ilgili yaygın üç yolu vardır:  
   
-- `CWnd`oluşturur `HWND`. Türetilmiş bir sınıf oluşturarak türetilmiş bir sınıf davranışı değiştirebilirsiniz `CWnd`. `HWND` Uygulamanız çağırdığında oluşturulan [CWnd::Create](../mfc/reference/cwnd-class.md#create).  
+- `CWnd` oluşturur `HWND`. Türetilmiş bir sınıf oluşturarak türetilmiş bir sınıf davranışı değiştirebilirsiniz `CWnd`. `HWND` Uygulamanız çağırdığında oluşturulan [CWnd::Create](../mfc/reference/cwnd-class.md#create).  
   
 -   Uygulama ekler bir `CWnd` varolan bir `HWND`. Varolan pencere davranışını değiştirilmez. Bu temsilci bir durumdur ve çağırarak mümkün hale getirilir [CWnd::Attach](../mfc/reference/cwnd-class.md#attach) diğer adı varolan bir `HWND` için bir `CWnd` nesnesi.  
   
-- `CWnd`Mevcut bir bağlı `HWND` ve türetilmiş bir sınıf davranışı değiştirebilirsiniz. Bu, biz davranışını ve bu nedenle, bir Windows nesne sınıfının çalışma zamanında değiştirme çünkü sınıflara dinamik çağrılır.  
+- `CWnd` Mevcut bir bağlı `HWND` ve türetilmiş bir sınıf davranışı değiştirebilirsiniz. Bu, biz davranışını ve bu nedenle, bir Windows nesne sınıfının çalışma zamanında değiştirme çünkü sınıflara dinamik çağrılır.  
   
  Yöntemleri kullanarak dinamik sınıflara elde edebilirsiniz [CWnd::SubclassWindow](../mfc/reference/cwnd-class.md#subclasswindow) ve[CWnd::SubclassDlgItem](../mfc/reference/cwnd-class.md#subclassdlgitem).  
   
- Her iki yordamları attach bir `CWnd` varolan bir nesne `HWND`. `SubclassWindow`alan `HWND` doğrudan. `SubclassDlgItem`Denetim kimliği ve ana pencereyi götüren bir yardımcı işlevdir. `SubclassDlgItem`iletişim kutusu şablondan oluşturulan iletişim kutusu denetimleri için C++ nesneleri eklemek için tasarlanmıştır.  
+ Her iki yordamları attach bir `CWnd` varolan bir nesne `HWND`. `SubclassWindow` alan `HWND` doğrudan. `SubclassDlgItem` Denetim kimliği ve ana pencereyi götüren bir yardımcı işlevdir. `SubclassDlgItem` iletişim kutusu şablondan oluşturulan iletişim kutusu denetimleri için C++ nesneleri eklemek için tasarlanmıştır.  
   
  Bkz: [CTRLTEST](../visual-cpp-samples.md) ne zaman kullanılacağı bazı örnekleri için örnek `SubclassWindow` ve `SubclassDlgItem`.  
   

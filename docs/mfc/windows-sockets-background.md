@@ -1,13 +1,10 @@
 ---
-title: "Windows Yuvaları: Arka plan | Microsoft Docs"
-ms.custom: 
+title: 'Windows Yuvaları: Arka plan | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -27,17 +24,15 @@ helpviewer_keywords:
 - sequenced data flow
 - stream sockets [MFC]
 ms.assetid: f60d4ed2-bf23-4a0e-98d2-fee77e8473dd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 446719d9d37d2930e08dc66303fd2d952fd88820
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fda86bbbeb49bcb253348ed02abef4fb8d4cff9c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="windows-sockets-background"></a>Windows Yuvaları: Arka Plan
 Bu makalede yapısı ve Windows Yuvaları amacı açıklanmaktadır. Makale ayrıca:  
@@ -62,7 +57,7 @@ Bu makalede yapısı ve Windows Yuvaları amacı açıklanmaktadır. Makale ayr�
 > [!TIP]
 >  Yuva Internet Protokolü paketi kullandığından "bilgi Otoyol." Internet iletişimini destekleyen uygulamalar için tercih edilen yol oldukları  
   
-##  <a name="_core_definition_of_a_socket"></a>Bir yuva tanımı  
+##  <a name="_core_definition_of_a_socket"></a> Bir yuva tanımı  
  Bir yuva bir iletişim uç noktası olan — bir nesne içinden, bir Windows Sockets uygulaması gönderir veya bir ağ üzerinden veri paketleri alır. Bir yuva türüne sahip ve çalışan bir işlemle ilişkili ve bir ad olabilir. Şu anda, yuva genellikle yalnızca diğer yuva "Internet Protokolü paketi kullanan aynı iletişimi etki alanında," ile veri değişimi.  
   
  Her iki tür yuva çift yönlü; yine de uygun istiyor musunuz? Her iki yönde de aynı anda bildirilmesi veri akışları oldukları (tam çift yönlü).  
@@ -84,12 +79,12 @@ Bu makalede yapısı ve Windows Yuvaları amacı açıklanmaktadır. Makale ayr�
   
  Bu türleri hakkında bilgi için ve hangi durumlarda kullanmak için bkz: Yuva hangi tür [Windows Yuvaları: akış yuvaları](../mfc/windows-sockets-stream-sockets.md) ve [Windows Yuvaları: veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md).  
   
-##  <a name="_core_the_socket_data_type"></a>YUVA veri türü  
+##  <a name="_core_the_socket_data_type"></a> YUVA veri türü  
  Her MFC yuva nesnesi Windows Sockets nesnesi için bir tanıtıcı yalıtır. Veri türü bu tanıtıcının **YUVA**. A **YUVA** işleyicisidir benzer `HWND` bir pencere için. MFC yuva sınıflarından kapsüllenmiş tanıtıcı işlemler sağlar.  
   
  **YUVA** veri türü Windows SDK ayrıntılı açıklanmıştır. Windows Yuvaları altında "Yuva veri türü ve hata değerlerini" bakın.  
   
-##  <a name="_core_uses_for_sockets"></a>Yuva için de kullanır  
+##  <a name="_core_uses_for_sockets"></a> Yuva için de kullanır  
  Yuva en az üç iletişimleri bağlamlarda çok yararlı olur:  
   
 -   İstemci/sunucu modeli.  

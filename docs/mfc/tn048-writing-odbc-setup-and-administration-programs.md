@@ -1,13 +1,10 @@
 ---
-title: "TN048: MFC veritabanı uygulamaları için ODBC Kurulum ve yönetim programları yazma | Microsoft Docs"
-ms.custom: 
+title: 'TN048: MFC veritabanı uygulamaları için ODBC Kurulum ve yönetim programları yazma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.mfc.odbc
 dev_langs:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - ODBC, and MFC
 - MFC, database applications
 ms.assetid: d456cdd4-0513-4a51-80c0-9132b66115ce
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ec19e3c03d88fa088622c7ed8a5b4efeed0014b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2c08366f995c1ecb4182fff04a88ac37fe7334bc
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn048-writing-odbc-setup-and-administration-programs-for-mfc-database-applications"></a>TN048: MFC Veritabanı Uygulamaları için ODBC Kurulum ve Yönetim Programları Yazma
 > [!NOTE]
@@ -38,7 +33,7 @@ ms.lasthandoff: 12/21/2017
   
  MFC veritabanı sınıfları kullanan uygulamalar ODBC bileşenlerini yükler bir Kurulum programı gerekir. Bunlar ayrıca varsayılan sürücüleri belirtmek ve veri kaynaklarını yapılandırmak için kullanılabilir sürücüler hakkında bilgi alacak bir ODBC yönetim programı gerekebilir. Bu Not Bu programları yazmak için ODBC Yükleyici API kullanımını açıklar.  
   
-##  <a name="_mfcnotes_writing_an_odbc_setup_program"></a>Bir ODBC Kurulum programı yazma  
+##  <a name="_mfcnotes_writing_an_odbc_setup_program"></a> Bir ODBC Kurulum programı yazma  
  ODBC Sürücü Yöneticisi'ni (ODBC. bir MFC veritabanı uygulaması gerektirir DLL) ve veri kaynaklarına elde edebilmek için ODBC sürücüleri. Birçok ODBC sürücüsü için ek ağ ve iletişim DLL'leri de gerekir. Çoğu ODBC sürücüleri gerekli ODBC bileşenlerini yükleyecek bir Kurulum programı ile birlikte. MFC veritabanı sınıfları kullanan uygulama geliştiriciler şunları yapabilir:  
   
 -   ODBC bileşenleri yüklemek için sürücü özgü kurulum programları kullanır. Bu Geliştirici Bölümü çalışmayı başka gerektirir — yalnızca sürücünün Kurulum programını yeniden dağıtabilirsiniz.  
@@ -51,7 +46,7 @@ ms.lasthandoff: 12/21/2017
   
  ODBC hakkında daha fazla bilgi için. INF, ODBCINST. INI ve API, Yükleyicisi'ni kullanarak bkz ODBC SDK *Programcının Başvurusu* Bölüm 19, ODBC yazılım yükleme.  
   
-##  <a name="_mfcnotes_writing_an_odbc_administrator"></a>ODBC Yöneticisi yazma  
+##  <a name="_mfcnotes_writing_an_odbc_administrator"></a> ODBC Yöneticisi yazma  
  MFC veritabanı uygulaması ayarlayabilir ve ODBC veri kaynakları gibi iki yoldan birini yapılandırın:  
   
 -   ODBC Yöneticisi (bir programı veya Denetim Masası öğesi olarak kullanılabilir) kullanın.  

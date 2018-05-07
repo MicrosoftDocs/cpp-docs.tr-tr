@@ -1,13 +1,10 @@
 ---
-title: "Bağlantı eşlemeleri | Microsoft Docs"
-ms.custom: 
+title: Bağlantı eşlemeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.maps
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - connection maps
 ms.assetid: 1f25a9bc-6d09-4614-99cf-dc38e8ddfa73
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 018f2f6c1cd57dc500d4161b02ccb5880a9889fd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 475314edba2a11535349991db644a4915e352ae7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="connection-maps"></a>Bağlantı Eşlemeleri
 OLE denetimleri diğer uygulamalara arabirimleri kullanıma sunmak kullanabilirsiniz. Bu arabirimleri bir kapsayıcı erişimden yalnızca o denetime izin verir. Diğer OLE nesnelerin Dış arabirimler erişmek bir OLE denetimi istiyorsa, bir bağlantı noktası kurulmalıdır. Bu bağlantı noktası olay eşlemeleri veya bildirim işlevleri gibi dış gönderme eşlemeleri erişimi giden bir denetim sağlar.  
@@ -55,7 +50,7 @@ OLE denetimleri diğer uygulamalara arabirimleri kullanıma sunmak kullanabilirs
 |[AfxConnectionAdvise](#afxconnectionadvise)|Bir kaynak ve bir havuz arasında bir bağlantı kurar.|  
 |[AfxConnectionUnadvise](#afxconnectionunadvise)|Bir kaynak ve bir havuz arasında bir bağlantı keser.|  
   
-##  <a name="begin_connection_part"></a>BEGIN_CONNECTION_PART  
+##  <a name="begin_connection_part"></a>  BEGIN_CONNECTION_PART  
  Kullanım `BEGIN_CONNECTION_PART` olay ve özellik bildirim bağlantı noktaları ötesinde ek bağlantı noktaları tanımını başlamaya makrosu.  
   
 ```   
@@ -75,7 +70,7 @@ BEGIN_CONNECTION_PART(theClass, localClass)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="end_connection_part"></a>END_CONNECTION_PART  
+##  <a name="end_connection_part"></a>  END_CONNECTION_PART  
  Bağlantı noktası bildirimi sona erer.  
   
 ```   
@@ -89,7 +84,7 @@ END_CONNECTION_PART(localClass)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="connection_iid"></a>CONNECTION_IID  
+##  <a name="connection_iid"></a>  CONNECTION_IID  
  Arasında kullanmak `BEGIN_CONNECTION_PART` ve `END_CONNECTION_PART` OLE denetiminiz tarafından desteklenen bir bağlantı noktası için bir arabirim kimliği tanımlamak için makroları.  
   
 ```   
@@ -110,7 +105,7 @@ CONNECTION_IID(iid)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="declare_connection_map"></a>DECLARE_CONNECTION_MAP  
+##  <a name="declare_connection_map"></a>  DECLARE_CONNECTION_MAP  
  Her `COleControl`-programınızı türetilen sınıfta denetiminizi destekleyen ek bağlantı noktalarını belirlemek için bir bağlantı harita sağlayabilir.  
   
 ```   
@@ -123,7 +118,7 @@ DECLARE_CONNECTION_MAP()
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="begin_connection_map"></a>BEGIN_CONNECTION_MAP  
+##  <a name="begin_connection_map"></a>  BEGIN_CONNECTION_MAP  
  Her `COleControl`-programınızı türetilen sınıfta denetiminizi destekleyecek bağlantı noktaları belirtmek için bir bağlantı harita sağlayabilir.  
   
 ```   
@@ -143,7 +138,7 @@ BEGIN_CONNECTION_MAP(theClass, theBase)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="end_connection_map"></a>END_CONNECTION_MAP  
+##  <a name="end_connection_map"></a>  END_CONNECTION_MAP  
  Bağlantı haritanızı tanımını sona erer.  
   
 ```   
@@ -153,7 +148,7 @@ END_CONNECTION_MAP()
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="connection_part"></a>CONNECTION_PART  
+##  <a name="connection_part"></a>  CONNECTION_PART  
  OLE denetim için bir bağlantı noktası bir arabirimin kimliği eşlemeleri  
   
 ```   
@@ -180,7 +175,7 @@ CONNECTION_PART(theClass, iid, localClass)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="afxconnectionadvise"></a>AfxConnectionAdvise  
+##  <a name="afxconnectionadvise"></a>  AfxConnectionAdvise  
  Tarafından belirtilen bir kaynak arasında bağlantı kurmak için bu işlevi çağırmak `pUnkSrc`ve tarafından belirtilen bir havuz `pUnkSink`.  
   
 ```   
@@ -217,7 +212,7 @@ BOOL AFXAPI AfxConnectionAdvise(
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxctl.h 
 
-##  <a name="afxconnectionunadvise"></a>AfxConnectionUnadvise  
+##  <a name="afxconnectionunadvise"></a>  AfxConnectionUnadvise  
  Tarafından belirtilen bir kaynağı arasındaki bağlantıyı kesmek için bu işlevi çağırmak `pUnkSrc`ve tarafından belirtilen bir havuz `pUnkSink`.  
   
 ```   

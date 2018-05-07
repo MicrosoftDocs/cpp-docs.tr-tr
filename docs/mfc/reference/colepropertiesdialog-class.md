@@ -1,12 +1,9 @@
 ---
-title: "COlePropertiesDialog sınıfı | Microsoft Docs"
-ms.custom: 
+title: COlePropertiesDialog sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COlePropertiesDialog
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - COlePropertiesDialog [MFC], m_psh
 - COlePropertiesDialog [MFC], m_vp
 ms.assetid: a54dbc89-1447-4329-bd01-00e98ec9e935
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5460926e1f58a557b26d8e5fa0a0ed763fc5de6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9d61d773e2c35bb67f34ae2b4a989a388d8b4015
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="colepropertiesdialog-class"></a>COlePropertiesDialog sınıfı
 Windows ortak OLE nesne özellikleri iletişim kutusu yalıtır.  
@@ -80,7 +75,7 @@ class COlePropertiesDialog : public COleDialog
 ## <a name="remarks"></a>Açıklamalar  
  Ortak OLE nesne özellikleri iletişim kutusu görüntülemek ve OLE belge öğeyi Windows standartları ile tutarlı şekilde özelliklerini değiştirmek için kolay bir yol sağlar. Bu özellikler, diğerleriyle birlikte (öğesi bağlıysa) simgesine ve resim ölçekleme ve bilgi öğesi'nin bağlantıyı görüntülemek için seçenekler belge öğesi tarafından temsil edilen dosyası hakkında bilgi içerir.  
   
- Kullanılacak bir `COlePropertiesDialog` nesne, öncelikle nesnesini kullanarak oluşturmanız `COlePropertiesDialog` Oluşturucusu. İletişim kutusu oluşturulan sonra çağrı `DoModal` üye işlevi iletişim kutusunu görüntülemek ve hiçbir öğe özelliklerini değiştirmek kullanıcı izin vermek için. `DoModal`Kullanıcı Tamam seçili olup olmadığını döndürür ( **IDOK**) veya İptal'i ( **IDCANCEL**) düğmesi. Tamam ve İptal düğmeleri yanı sıra bir Uygula düğmesi yoktur. Kullanıcı Uygula seçtiğinde, belge öğesi özelliklerine yapılan değişiklikler öğesine uygulanır ve görüntüsünü otomatik olarak güncelleştirilir, ancak etkin kalır.  
+ Kullanılacak bir `COlePropertiesDialog` nesne, öncelikle nesnesini kullanarak oluşturmanız `COlePropertiesDialog` Oluşturucusu. İletişim kutusu oluşturulan sonra çağrı `DoModal` üye işlevi iletişim kutusunu görüntülemek ve hiçbir öğe özelliklerini değiştirmek kullanıcı izin vermek için. `DoModal` Kullanıcı Tamam seçili olup olmadığını döndürür ( **IDOK**) veya İptal'i ( **IDCANCEL**) düğmesi. Tamam ve İptal düğmeleri yanı sıra bir Uygula düğmesi yoktur. Kullanıcı Uygula seçtiğinde, belge öğesi özelliklerine yapılan değişiklikler öğesine uygulanır ve görüntüsünü otomatik olarak güncelleştirilir, ancak etkin kalır.  
   
  [M_psh](#m_psh) veri üyesi olan bir işaretçi bir **PROPSHEETHEADER** yapısını ve çoğu durumda değil gerekir açıkça erişim. Varsayılan Genel, Görünüm ve bağlantı sayfaları ötesinde ek özellik sayfaları gerektiğinde bir istisnadır. Bu durumda, değiştirebileceğiniz `m_psh` özel sayfalarınızın çağırmadan önce eklenecek veri üyesi `DoModal` üye işlevi.  
   
@@ -104,7 +99,7 @@ class COlePropertiesDialog : public COleDialog
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxodlgs.h  
   
-##  <a name="colepropertiesdialog"></a>COlePropertiesDialog::COlePropertiesDialog  
+##  <a name="colepropertiesdialog"></a>  COlePropertiesDialog::COlePropertiesDialog  
  Oluşturur bir `COlePropertiesDialog` nesnesi.  
   
 ```  
@@ -147,7 +142,7 @@ COlePropertiesDialog(
   
  Varsayılan olarak sağlanan ötesinde sayfaları eklemek, değiştirmek [m_psh](#m_psh) oluşturucusunun çıkmadan önce üye değişkeni, `COlePropertiesDialog`-türetilmiş sınıf. Bu gelişmiş uygulamasıdır `COlePropertiesDialog` Oluşturucusu.  
   
-##  <a name="domodal"></a>COlePropertiesDialog::DoModal  
+##  <a name="domodal"></a>  COlePropertiesDialog::DoModal  
  Windows ortak OLE nesne özellikleri iletişim kutusunu görüntüleyin ve görüntülemek ve/veya belge öğesi çeşitli özelliklerini değiştirmek kullanıcı izin vermek için bu üye işlevini çağırın.  
   
 ```  
@@ -159,7 +154,7 @@ virtual INT_PTR DoModal();
   
  Varsa **IDCANCEL** döndürülür Windows çağırabilir [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) işlevi bir hata oluşup oluşmadığını belirleyin.  
   
-##  <a name="m_gp"></a>COlePropertiesDialog::m_gp  
+##  <a name="m_gp"></a>  COlePropertiesDialog::m_gp  
  Türü yapısını [OLEUIGNRLPROPS](http://msdn.microsoft.com/library/windows/desktop/ms687297), OLE nesne özellikleri iletişim kutusu, genel sayfayı başlatmak için kullanılan.  
   
 ```  
@@ -171,7 +166,7 @@ OLEUIGNRLPROPS m_gp;
   
  Daha fazla bilgi için **OLEUIGNRLPROPS** yapısı, Windows SDK konusuna bakın.  
   
-##  <a name="m_lp"></a>COlePropertiesDialog::m_lp  
+##  <a name="m_lp"></a>  COlePropertiesDialog::m_lp  
  Türü yapısını [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735), OLE nesne özellikleri iletişim kutusunun bağlantı sayfası başlatmak için kullanılan.  
   
 ```  
@@ -183,7 +178,7 @@ OLEUILINKPROPS m_lp;
   
  Daha fazla bilgi için **OLEUILINKPROPS** yapısı, Windows SDK konusuna bakın.  
   
-##  <a name="m_op"></a>COlePropertiesDialog::m_op  
+##  <a name="m_op"></a>  COlePropertiesDialog::m_op  
  Türü yapısını [OLEUIOBJECTPROPS](http://msdn.microsoft.com/library/windows/desktop/ms687199), kullanılan ortak bir OLE nesne özellikleri iletişim kutusu başlatılamadı.  
   
 ```  
@@ -195,7 +190,7 @@ OLEUIOBJECTPROPS m_op;
   
  Daha fazla bilgi için bkz: **OLEUIOBJECTPROPS** ve [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735) Windows SDK'sı yapılarda.  
   
-##  <a name="m_psh"></a>COlePropertiesDialog::m_psh  
+##  <a name="m_psh"></a>  COlePropertiesDialog::m_psh  
  Türü yapısını [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546), iletişim nesnesinin özelliklerini üyeleri depolar.  
   
 ```  
@@ -209,7 +204,7 @@ PROPSHEETHEADER m_psh;
   
  Daha fazla bilgi için **PROPSHEETHEADER** yapısı, Windows SDK konusuna bakın.  
   
-##  <a name="m_vp"></a>COlePropertiesDialog::m_vp  
+##  <a name="m_vp"></a>  COlePropertiesDialog::m_vp  
  Türü yapısını [OLEUIVIEWPROPS](http://msdn.microsoft.com/library/windows/desktop/ms693751), OLE nesne özellikleri iletişim kutusunun görünümü sayfası başlatmak için kullanılan.  
   
 ```  
@@ -221,7 +216,7 @@ OLEUIVIEWPROPS m_vp;
   
  Daha fazla bilgi için **OLEUIVIEWPROPS** yapısı, Windows SDK konusuna bakın.  
   
-##  <a name="onapplyscale"></a>COlePropertiesDialog::OnApplyScale  
+##  <a name="onapplyscale"></a>  COlePropertiesDialog::OnApplyScale  
  Ölçeklendirme değeri değiştirildi ve Tamam'ı veya Uygula seçilmiş çerçevesi tarafından çağrılır.  
   
 ```  

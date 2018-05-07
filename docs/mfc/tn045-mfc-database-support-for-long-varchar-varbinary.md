@@ -1,13 +1,10 @@
 ---
-title: "TN045: Uzun Varchar Varbinary için MFC veritabanı desteği | Microsoft Docs"
-ms.custom: 
+title: 'TN045: Uzun Varchar Varbinary için MFC veritabanı desteği | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.mfc.data
 dev_langs:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - Varbinary data type
 - Varchar data type
 ms.assetid: cf572c35-5275-45b5-83df-5f0e36114f40
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1c9b64ef3b164c45a1633281bbaebd6525df659
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bd5201661afcdf6f4ae9676323f3f644817bcf7d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn045-mfcdatabase-support-for-long-varcharvarbinary"></a>TN045: Uzun Varchar/Varbinary için MFC/Veritabanı Desteği
 > [!NOTE]
@@ -76,7 +71,7 @@ void AFXAPI RFX_Binary(CFieldExchange* pFX,
  Long veri sütununa alırsanız bir `CString` veya `CByteArray`, maksimum veri miktarı, varsayılan olarak, 255 bayt döndürülür. Bu ötesinde herhangi bir şey yok sayılır. Bu durumda, framework özel durum atar **AFX_SQL_ERROR_DATA_TRUNCATED**. Neyse ki, açıkça nMaxLength büyük değerlerine kadar artırabilirsiniz **MAXINT**.  
   
 > [!NOTE]
->  NMaxLength değeri yerel arabelleğin ayarlamak için MFC tarafından kullanılan **SQLBindColumn** işlevi. Bu veri depolama için yerel önbellek ve gerçekte ODBC sürücüsü tarafından döndürülen veri miktarını etkilemez. `RFX_Text`ve `RFX_Binary` yalnızca birini kullanarak çağrısı yapmak **SQLFetch** arka uç veritabanından veri almak için. Her ODBC sürücüsü, tek bir getirme döndürmeleri veri miktarına farklı bir kısıtlaması vardır. Bu sınır, özel durumu case nMaxLength ayarlamak değerinden daha küçük **AFX_SQL_ERROR_DATA_TRUNCATED** oluşturulur. Bu koşullar altında kullanmaya geçiş `RFX_LongBinary` yerine `RFX_Text` veya `RFX_Binary` böylece tüm verileri alınabilir.  
+>  NMaxLength değeri yerel arabelleğin ayarlamak için MFC tarafından kullanılan **SQLBindColumn** işlevi. Bu veri depolama için yerel önbellek ve gerçekte ODBC sürücüsü tarafından döndürülen veri miktarını etkilemez. `RFX_Text` ve `RFX_Binary` yalnızca birini kullanarak çağrısı yapmak **SQLFetch** arka uç veritabanından veri almak için. Her ODBC sürücüsü, tek bir getirme döndürmeleri veri miktarına farklı bir kısıtlaması vardır. Bu sınır, özel durumu case nMaxLength ayarlamak değerinden daha küçük **AFX_SQL_ERROR_DATA_TRUNCATED** oluşturulur. Bu koşullar altında kullanmaya geçiş `RFX_LongBinary` yerine `RFX_Text` veya `RFX_Binary` böylece tüm verileri alınabilir.  
   
  ClassWizard bağlamak bir **SQL_LONGVARCHAR** için bir `CString`, veya bir **SQL_LONGVARBINARY** için bir `CByteArray` sizin için. 255 uzun veri sütunu almak bayttan fazla ayırmak istiyorsanız, ardından nMaxLength için açık bir değer sağlayabilir.  
   

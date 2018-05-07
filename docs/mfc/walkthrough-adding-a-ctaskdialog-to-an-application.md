@@ -2,29 +2,24 @@
 title: 'İzlenecek yol: bir uygulamaya bir CTaskDialog ekleme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - CTaskDialog, adding
 - walkthroughs [MFC], dialogs
 ms.assetid: 3a62abb8-2d86-4bec-bdb8-5784d5f9a9f8
-caps.latest.revision: 6
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b0d820b45b85b5dc20e82cb647c05f839e7ab41
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
-ms.translationtype: HT
+ms.openlocfilehash: 6b2c10583a4c3fc2b988e50c15b6c1dcf206af65
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="walkthrough-adding-a-ctaskdialog-to-an-application"></a>İzlenecek yol: Bir Uygulamaya CTaskDialog Ekleme
 Bu kılavuzda tanıtır [CTaskDialog sınıfı](../mfc/reference/ctaskdialog-class.md) ve uygulamanız için bir tane ekleyin gösterilmektedir.  

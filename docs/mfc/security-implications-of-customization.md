@@ -1,30 +1,25 @@
 ---
-title: "Özelleştirmenin güvenlikle ilgili etkileri | Microsoft Docs"
-ms.custom: 
+title: Özelleştirmenin güvenlikle ilgili etkileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - security, MFC Feature Pack
 - MFC Feature Pack, security
 ms.assetid: 9be96b12-be38-43bd-a133-5d671265f7a1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b408b4595e95016323d2b43f1ed51fc6e2e6d244
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1416a586af479ea7b476a6c85d45992ba18873ef
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="security-implications-of-customization"></a>Özelleştirmenin Güvenlikle İlgili Etkileri
 Bu konu, olası bir güvenlik zayıflık MFC'de açıklar.  

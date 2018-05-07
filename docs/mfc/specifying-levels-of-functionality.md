@@ -1,13 +1,10 @@
 ---
-title: "İşlevsellik düzeylerini belirtme | Microsoft Docs"
-ms.custom: 
+title: İşlevsellik düzeylerini belirtme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - run-time class [MFC], information support
 - levels [MFC]
 ms.assetid: 562669ba-c858-4f66-b5f1-b3beeea4f486
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13a2897d5e442794198870e7f6bed36196744888
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f32b9502d2e8bd1c1483d817b759ca204f5c9c1a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="specifying-levels-of-functionality"></a>İşlevsellik Düzeylerini Belirtme
 Bu makalede aşağıdaki işlevsellik düzeylerini eklemeyi açıklar, [CObject](../mfc/reference/cobject-class.md)-türetilmiş sınıf:  
@@ -43,7 +38,7 @@ Bu makalede aşağıdaki işlevsellik düzeylerini eklemeyi açıklar, [CObject]
  Genel bir açıklaması için `CObject` işlevselliği makalesine bakın [CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md).  
   
 -   [Çalışma zamanı sınıf bilgileri](#_core_to_add_run.2d.time_class_information)  
-#### <a name="_core_to_add_run.2d.time_class_information"></a>Çalışma zamanı sınıf bilgileri eklemek için  
+#### <a name="_core_to_add_run.2d.time_class_information"></a> Çalışma zamanı sınıf bilgileri eklemek için  
   
 1.  Sınıfından türetilen `CObject`açıklandığı gibi [CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md) makalesi.  
   
@@ -58,7 +53,7 @@ Bu makalede aşağıdaki işlevsellik düzeylerini eklemeyi açıklar, [CObject]
 > [!NOTE]
 >  Her zaman put `IMPLEMENT_DYNAMIC` uygulama dosyasında (. CPP) sınıfınız için. `IMPLEMENT_DYNAMIC` Makrosu derleme sırasında yalnızca bir kez değerlendirilmesi ve bu nedenle bir arabirim dosyasında kullanılmamalıdır (. H), büyük olasılıkla birden fazla dosyasına dahil.  
   
-#### <a name="_core_to_add_dynamic_creation_support"></a>Dinamik oluşturma desteği eklemek için  
+#### <a name="_core_to_add_dynamic_creation_support"></a> Dinamik oluşturma desteği eklemek için  
   
 1.  Sınıfından türetilen `CObject`.  
   
@@ -68,7 +63,7 @@ Bu makalede aşağıdaki işlevsellik düzeylerini eklemeyi açıklar, [CObject]
   
 4.  Kullanım `IMPLEMENT_DYNCREATE` sınıfı uygulama dosyasındaki makro.  
   
-#### <a name="_core_to_add_serialization_support"></a>Seri hale getirme desteği eklemek için  
+#### <a name="_core_to_add_serialization_support"></a> Seri hale getirme desteği eklemek için  
   
 1.  Sınıfından türetilen `CObject`.  
   

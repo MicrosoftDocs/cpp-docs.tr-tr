@@ -1,12 +1,9 @@
 ---
-title: "CPropExchange sınıfı | Microsoft Docs"
-ms.custom: 
+title: CPropExchange sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CPropExchange
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - CPropExchange [MFC], IsAsynchronous
 - CPropExchange [MFC], IsLoading
 ms.assetid: ed872180-e770-4942-892a-92139d501fab
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5deea89ccc9c340537b1b33563455ea91b46fe8b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5f234b3f06e22308a31e8e5694648fd5664b448a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cpropexchange-class"></a>CPropExchange sınıfı
 OLE denetimleri için Kalıcılık uyarlamasını destekler.  
@@ -68,7 +63,7 @@ class AFX_NOVTABLE CPropExchange
 |[CPropExchange::IsLoading](#isloading)|Özellikler yükleniyor olup olmadığını gösterir denetimine atanan veya ondan kaydedildi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CPropExchange`bir taban sınıfı yok.  
+ `CPropExchange` bir taban sınıfı yok.  
   
  İçeriği ve özellik exchange yönünü belirler.  
   
@@ -78,7 +73,7 @@ class AFX_NOVTABLE CPropExchange
   
  Çerçeve işaretçisi için geçirir `CPropExchange` denetiminizin nesnesine `DoPropExchange` işlevi. Denetim için Denetim starter dosyaları oluşturmak için sihirbaz kullandıysanız `DoPropExchange` işlev çağrıları `COleControl::DoPropExchange`. Taban sınıfı sürüm denetim stok özelliklerini kullanmaz; türetilen sınıfın sürüme denetiminize eklediğiniz exchange özellikleri değiştirin.  
   
- `CPropExchange`bir denetimin özelliklerini serileştirmek veya bir denetimin özellikleri yükleme ya da bir denetimin oluşturulmasını etkileyen başlatmak için kullanılabilir. `ExchangeProp` Ve `ExchangeFontProp` üye işlevlerini `CPropExchange` özelliklerini depolamak ve bunları farklı medyadan yükleme imkanınız olur.  
+ `CPropExchange` bir denetimin özelliklerini serileştirmek veya bir denetimin özellikleri yükleme ya da bir denetimin oluşturulmasını etkileyen başlatmak için kullanılabilir. `ExchangeProp` Ve `ExchangeFontProp` üye işlevlerini `CPropExchange` özelliklerini depolamak ve bunları farklı medyadan yükleme imkanınız olur.  
   
  Kullanma hakkında daha fazla bilgi için `CPropExchange`, makaleye bakın [MFC ActiveX denetimleri: özellik sayfaları](../../mfc/mfc-activex-controls-property-pages.md).  
   
@@ -88,7 +83,7 @@ class AFX_NOVTABLE CPropExchange
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxctl.h  
   
-##  <a name="exchangeblobprop"></a>CPropExchange::ExchangeBlobProp  
+##  <a name="exchangeblobprop"></a>  CPropExchange::ExchangeBlobProp  
  İkili büyük nesne (BLOB) verilerini depolayan bir özellik serileştirir.  
   
 ```  
@@ -116,7 +111,7 @@ virtual BOOL ExchangeBlobProp(
   
  İşlevler **CArchivePropExchange::ExchangeBlobProp**, **CResetPropExchange::ExchangeBlobProp**, ve **CPropsetPropExchange::ExchangeBlobProp** geçersiz kıl Bu saf sanal işlev.  
   
-##  <a name="exchangefontprop"></a>CPropExchange::ExchangeFontProp  
+##  <a name="exchangefontprop"></a>  CPropExchange::ExchangeFontProp  
  Font özelliği bir depolama ortamına ve denetim arasında değiş tokuş eder.  
   
 ```  
@@ -148,7 +143,7 @@ virtual BOOL ExchangeFontProp(
   
  İşlevler **CArchivePropExchange::ExchangeFontProp**, **CResetPropExchange::ExchangeFontProp**, ve **CPropsetPropExchange::ExchangeFontProp** geçersiz kıl Bu saf sanal işlev.  
   
-##  <a name="exchangepersistentprop"></a>CPropExchange::ExchangePersistentProp  
+##  <a name="exchangepersistentprop"></a>  CPropExchange::ExchangePersistentProp  
  Bir özellik denetimi ve dosya arasında değiş tokuş eder.  
   
 ```  
@@ -180,7 +175,7 @@ virtual BOOL ExchangePersistentProp(
   
  İşlevler **CArchivePropExchange::ExchangePersistentProp**, **CResetPropExchange::ExchangePersistentProp**, ve **CPropsetPropExchange::ExchangePersistentProp** bu saf sanal işlevi geçersiz.  
   
-##  <a name="exchangeprop"></a>CPropExchange::ExchangeProp  
+##  <a name="exchangeprop"></a>  CPropExchange::ExchangeProp  
  Bir özelliği bir depolama ortamına ve denetim arasında değiş tokuş eder.  
   
 ```  
@@ -222,7 +217,7 @@ virtual BOOL ExchangeProp(
   
  İşlevler **CArchivePropExchange::ExchangeProp**, **CResetPropExchange::ExchangeProp**, ve **CPropsetPropExchange::ExchangeProp** bu saf geçersiz kılma sanal işlev.  
   
-##  <a name="exchangeversion"></a>CPropExchange::ExchangeVersion  
+##  <a name="exchangeversion"></a>  CPropExchange::ExchangeVersion  
  Bir sürüm numarası kalıcılığı işlemek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -245,7 +240,7 @@ virtual BOOL ExchangeVersion(
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="getversion"></a>CPropExchange::GetVersion  
+##  <a name="getversion"></a>  CPropExchange::GetVersion  
  Denetim sürüm numarasını almak için bu işlevini çağırın.  
   
 ```  
@@ -255,7 +250,7 @@ DWORD GetVersion();
 ### <a name="return-value"></a>Dönüş Değeri  
  Denetimin sürüm numarası.  
   
-##  <a name="isasynchronous"></a>CPropExchange::IsAsynchronous  
+##  <a name="isasynchronous"></a>  CPropExchange::IsAsynchronous  
  Özellik alışverişleri zaman uyumsuz olarak Bitti durumunda belirler.  
   
 ```  
@@ -265,7 +260,7 @@ BOOL IsAsynchronous();
 ### <a name="return-value"></a>Dönüş Değeri  
  Özellikleri varsa TRUE değerini döndürür, aksi takdirde FALSE zaman uyumsuz olarak akar.  
   
-##  <a name="isloading"></a>CPropExchange::IsLoading  
+##  <a name="isloading"></a>  CPropExchange::IsLoading  
  Özellikler yükleniyor olup olmadığını belirlemek için bu işlevi çağırmak denetime yüklenen veya ondan kaydedildi.  
   
 ```  

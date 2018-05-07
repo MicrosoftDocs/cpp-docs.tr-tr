@@ -1,12 +1,9 @@
 ---
-title: "CMFCRibbonApplicationButton sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCRibbonApplicationButton sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCRibbonApplicationButton
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CMFCRibbonApplicationButton [MFC], CMFCRibbonApplicationButton
 - CMFCRibbonApplicationButton [MFC], SetImage
 ms.assetid: beb81757-fabd-4641-9130-876ba8505b78
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f5c8dac406a70edd5782e4ca1962aa36b0175ae
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3b2b2e8adccd77862b445d7e91df0b808967a31d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcribbonapplicationbutton-class"></a>CMFCRibbonApplicationButton sınıfı
 Implements özel düğmesini uygulama penceresinin sol üst köşesinde yer. Düğme tıklatıldığında, genellikle ortak içeren menü açar **dosya** gibi komutlar **açık**, **kaydetmek**, ve **çıkış**.  
@@ -74,7 +69,7 @@ class CMFCRibbonApplicationButton : public CMFCRibbonButton
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxRibbonBar.h  
   
-##  <a name="cmfcribbonapplicationbutton"></a>CMFCRibbonApplicationButton::CMFCRibbonApplicationButton  
+##  <a name="cmfcribbonapplicationbutton"></a>  CMFCRibbonApplicationButton::CMFCRibbonApplicationButton  
  Oluşturur ve başlatır bir [CMFCRibbonApplicationButton](../../mfc/reference/cmfcribbonapplicationbutton-class.md) nesnesi.  
   
 ```  
@@ -93,7 +88,7 @@ CMFCRibbonApplicationButton(UINT uiBmpResID);
 ### <a name="remarks"></a>Açıklamalar  
  Şerit uygulaması düğmesi uygulama penceresinin sol üst köşesinde bulunan bir özel düğme vardır. Bir kullanıcı bu düğmesine tıkladığında, uygulama genellikle ortak içeren menü açılır **dosya** gibi komutlar **açık**, **kaydetmek**, ve **çıkış**.  
   
-##  <a name="setimage"></a>CMFCRibbonApplicationButton::SetImage  
+##  <a name="setimage"></a>  CMFCRibbonApplicationButton::SetImage  
  Görüntü uygulama düğmesi atar.  
   
 ```  
@@ -102,10 +97,10 @@ void SetImage(HBITMAP hBmp);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiBmpResID`  
+ [in] `uiBmpResID`  
  Uygulama düğmesi görüntülemek için kaynak kimliği görüntü.  
   
- [in]`hBmp`  
+ [in] `hBmp`  
  Uygulama düğmesi görüntülemek için bir bit eşlem için bir tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  

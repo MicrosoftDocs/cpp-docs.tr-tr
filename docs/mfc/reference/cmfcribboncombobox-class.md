@@ -1,12 +1,9 @@
 ---
-title: "CMFCRibbonComboBox sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCRibbonComboBox sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCRibbonComboBox
@@ -49,17 +46,15 @@ helpviewer_keywords:
 - CMFCRibbonComboBox [MFC], SelectItem
 - CMFCRibbonComboBox [MFC], SetDropDownHeight
 ms.assetid: 9b29a6a4-cf17-4152-9b13-0bf90784b30d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f748630549c0a26a2818bc7c96e5162d7d36ed4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2ebe013e8ce674efb0782112cc8cbc8b1462ef24
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcribboncombobox-class"></a>CMFCRibbonComboBox sınıfı
 `CMFCRibbonComboBox` Sınıfı bir Şerit çubuğu, bir Şerit panel ya da Şerit açılan menüye ekleyebileceğiniz bir birleşik giriş kutusu denetimi uygular.  
@@ -121,7 +116,7 @@ class CMFCRibbonComboBox : public CMFCRibbonEdit
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxribboncombobox.h  
   
-##  <a name="additem"></a>CMFCRibbonComboBox::AddItem  
+##  <a name="additem"></a>  CMFCRibbonComboBox::AddItem  
  Liste kutusu için benzersiz bir öğe ekler.  
   
 ```  
@@ -131,16 +126,16 @@ virtual INT_PTR AddItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszItem`  
+ [in] `lpszItem`  
  Eklenecek öğe dizesi.  
   
- [in]`dwData`  
+ [in] `dwData`  
  Eklenecek öğe ile ilişkili veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Eklenen öğenin sıfır tabanlı dizini.  
   
-##  <a name="cmfcribboncombobox"></a>CMFCRibbonComboBox::CMFCRibbonComboBox  
+##  <a name="cmfcribboncombobox"></a>  CMFCRibbonComboBox::CMFCRibbonComboBox  
  Oluşturan bir `CMFCRibbonComboBox` nesnesi.  
   
 ```  
@@ -157,25 +152,25 @@ CMFCRibbonComboBox();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nID`  
+ [in] `nID`  
  Birleşik giriş kutusu kimliği.  
   
- [in]`bHasEditBox`  
- `TRUE`Denetim içinde düzenleme kutusu istiyorsanız; `FALSE` Aksi takdirde.  
+ [in] `bHasEditBox`  
+ `TRUE` Denetim içinde düzenleme kutusu istiyorsanız; `FALSE` Aksi takdirde.  
   
- [in]`nWidth`  
+ [in] `nWidth`  
  Birleşik giriş kutusu piksel cinsinden genişliği; veya varsayılan genişliği -1.  
   
- [in]`lpszLabel`  
+ [in] `lpszLabel`  
  Birleşik giriş kutusu görünen etiket.  
   
- [in]`nImage`  
+ [in] `nImage`  
  Birleşik giriş kutusu küçük resim dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan genişliğini 108 pikseldir.  
   
-##  <a name="deleteitem"></a>CMFCRibbonComboBox::DeleteItem  
+##  <a name="deleteitem"></a>  CMFCRibbonComboBox::DeleteItem  
  Belirtilen öğe liste kutusundan siler.  
   
 ```  
@@ -186,21 +181,21 @@ BOOL DeleteItem(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iIndex`  
+ [in] `iIndex`  
  Silinecek öğenin sıfır tabanlı dizini.  
   
- [in]`dwData`  
+ [in] `dwData`  
  Silinecek öğe ile ilişkili veriler.  
   
- [in]`lpszText`  
+ [in] `lpszText`  
  Silinecek öğe dizesi. Aynı dize ile birden çok öğe varsa, ilk öğe silindi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Belirtilen öğe silinmişse; Aksi takdirde `FALSE`.  
+ `TRUE` Belirtilen öğe silinmişse; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="enabledropdownlistresize"></a>CMFCRibbonComboBox::EnableDropDownListResize  
+##  <a name="enabledropdownlistresize"></a>  CMFCRibbonComboBox::EnableDropDownListResize  
  Liste kutusu bırakır zaman boyutu değiştirip değiştiremeyeceğini belirler.  
   
 ```  
@@ -208,13 +203,13 @@ void EnableDropDownListResize(BOOL bEnable=FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bEnable`  
- `TRUE`yeniden boyutlandırma etkinleştirmek için; `FALSE` yeniden boyutlandırma devre dışı bırakmak için.  
+ [in] `bEnable`  
+ `TRUE` yeniden boyutlandırma etkinleştirmek için; `FALSE` yeniden boyutlandırma devre dışı bırakmak için.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yeniden boyutlandırma etkinleştirildiğinde, liste kutusu boyutunu görüntülediği öğeleri uyacak şekilde değiştirin.  
   
-##  <a name="finditem"></a>CMFCRibbonComboBox::FindItem  
+##  <a name="finditem"></a>  CMFCRibbonComboBox::FindItem  
  Belirtilen bir dizeyle eşleşir liste kutusunda ilk öğenin dizinini döndürür.  
   
 ```  
@@ -222,7 +217,7 @@ int FindItem(LPCTSTR lpszText) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszText`  
+ [in] `lpszText`  
  Liste kutusunda bir öğe dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -230,7 +225,7 @@ int FindItem(LPCTSTR lpszText) const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getcount"></a>CMFCRibbonComboBox::GetCount  
+##  <a name="getcount"></a>  CMFCRibbonComboBox::GetCount  
  Liste kutusunda öğe sayısını döndürür.  
   
 ```  
@@ -242,7 +237,7 @@ INT_PTR GetCount() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getcursel"></a>CMFCRibbonComboBox::GetCurSel  
+##  <a name="getcursel"></a>  CMFCRibbonComboBox::GetCurSel  
  Liste kutusunda seçili öğenin dizinini alır.  
   
 ```  
@@ -252,7 +247,7 @@ int GetCurSel() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Liste kutusunda seçili öğenin sıfır tabanlı dizini; veya hiçbir öğe seçili ise -1.  
   
-##  <a name="getdropdownheight"></a>CMFCRibbonComboBox::GetDropDownHeight  
+##  <a name="getdropdownheight"></a>  CMFCRibbonComboBox::GetDropDownHeight  
  Liste kutusunda bırakıldığında liste kutusu yüksekliğini alır.  
   
 ```  
@@ -264,7 +259,7 @@ int GetDropDownHeight();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getintermediatesize"></a>CMFCRibbonComboBox::GetIntermediateSize  
+##  <a name="getintermediatesize"></a>  CMFCRibbonComboBox::GetIntermediateSize  
  Birleşik giriş kutusu boyutunu Ara modunda görüntülendiği şekilde döndürür.  
   
 ```  
@@ -272,7 +267,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Birleşik giriş kutusu için bir cihaz bağlamı işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -281,7 +276,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ### <a name="remarks"></a>Açıklamalar  
  Küçük resimler görüntülediğinde döndürülen boyut birleşik giriş kutusu boyutuna dayanır.  
   
-##  <a name="getitem"></a>CMFCRibbonComboBox::GetItem  
+##  <a name="getitem"></a>  CMFCRibbonComboBox::GetItem  
  Liste kutusunda belirtilen dizindeki bir öğesiyle ilişkili dizeyi döndürür.  
   
 ```  
@@ -289,7 +284,7 @@ LPCTSTR GetItem(int iIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iIndex`  
+ [in] `iIndex`  
  Liste kutusunda öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -297,7 +292,7 @@ LPCTSTR GetItem(int iIndex) const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getitemdata"></a>CMFCRibbonComboBox::GetItemData  
+##  <a name="getitemdata"></a>  CMFCRibbonComboBox::GetItemData  
  Liste kutusunda belirtilen dizindeki bir öğesiyle ilişkili verileri döndürür.  
   
 ```  
@@ -305,13 +300,13 @@ DWORD_PTR GetItemData(int iIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iIndex`  
+ [in] `iIndex`  
  Liste kutusunda öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu öğeyle ilişkili veri; ya da 0 öğe yoksa ya da dizin parametresi ise -1 ve liste kutusunda seçili öğe yok.  
   
-##  <a name="haseditbox"></a>CMFCRibbonComboBox::HasEditBox  
+##  <a name="haseditbox"></a>  CMFCRibbonComboBox::HasEditBox  
  Denetim düzenleme kutusu içerip içermediğini belirtir.  
   
 ```  
@@ -319,11 +314,11 @@ BOOL HasEditBox() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Denetim düzenleme kutusu içeriyorsa; Aksi takdirde `FALSE`.  
+ `TRUE` Denetim düzenleme kutusu içeriyorsa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isresizedropdownlist"></a>CMFCRibbonComboBox::IsResizeDropDownList  
+##  <a name="isresizedropdownlist"></a>  CMFCRibbonComboBox::IsResizeDropDownList  
  Liste kutusu yeniden boyutlandırılabilir olup olmadığını gösterir.  
   
 ```  
@@ -331,12 +326,12 @@ BOOL IsResizeDropDownList() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Liste kutusu yeniden boyutlandırılabilir Aksi takdirde `FALSE`. [CMFCRibbonComboBox::EnableDropDownListResize](#enabledropdownlistresize)  
+ `TRUE` Liste kutusu yeniden boyutlandırılabilir Aksi takdirde `FALSE`. [CMFCRibbonComboBox::EnableDropDownListResize](#enabledropdownlistresize)  
   
 ### <a name="remarks"></a>Açıklamalar  
  Liste kutusunu kullanarak yeniden boyutlandırma etkinleştirebilirsiniz [CMFCRibbonComboBox::EnableDropDownListResize](#enabledropdownlistresize) yöntemi.  
   
-##  <a name="onselectitem"></a>CMFCRibbonComboBox::OnSelectItem  
+##  <a name="onselectitem"></a>  CMFCRibbonComboBox::OnSelectItem  
  Bir kullanıcı liste kutusunda bir öğe seçtiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -344,13 +339,13 @@ virtual void OnSelectItem(int nItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nItem`  
+ [in] `nItem`  
  Seçili öğenin dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir kullanıcı giriş seçimi işlemek istiyorsanız bu yöntemi geçersiz kılın.  
   
-##  <a name="removeallitems"></a>CMFCRibbonComboBox::RemoveAllItems  
+##  <a name="removeallitems"></a>  CMFCRibbonComboBox::RemoveAllItems  
  Tüm öğeleri liste kutusundan siler ve düzenleme kutusuna temizler.  
   
 ```  
@@ -359,7 +354,7 @@ void RemoveAllItems();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="selectitem"></a>CMFCRibbonComboBox::SelectItem  
+##  <a name="selectitem"></a>  CMFCRibbonComboBox::SelectItem  
  Bir öğeyi liste kutusunda seçer.  
   
 ```  
@@ -370,21 +365,21 @@ BOOL SelectItem(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iIndex`  
+ [in] `iIndex`  
  Liste kutusunda öğenin sıfır tabanlı dizini.  
   
- [in]`dwData`  
+ [in] `dwData`  
  Liste kutusunda bir öğesiyle ilişkili veriler.  
   
- [in]`lpszText`  
+ [in] `lpszText`  
  Liste kutusunda bir öğe dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setdropdownheight"></a>CMFCRibbonComboBox::SetDropDownHeight  
+##  <a name="setdropdownheight"></a>  CMFCRibbonComboBox::SetDropDownHeight  
  Bu bırakıldığında liste kutusu yüksekliğini ayarlar.  
   
 ```  
@@ -392,7 +387,7 @@ void SetDropDownHeight(int nHeight);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nHeight`  
+ [in] `nHeight`  
  Liste kutusu piksel cinsinden yüksekliği.  
   
 ### <a name="remarks"></a>Açıklamalar  

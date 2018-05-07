@@ -1,13 +1,10 @@
 ---
-title: "TN002: Kalıcı nesne veri biçimi | Microsoft Docs"
-ms.custom: 
+title: 'TN002: Kalıcı nesne veri biçimi | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.data
 dev_langs:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - persistent C++ objects [MFC]
 - TN002
 ms.assetid: 553fe01d-c587-4c8d-a181-3244a15c2be9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca6a78f19b43ded59efb56b87f9fe3f44887a31a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ca145ff871e1c5ccff27bdebe473c6cb6f39073a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn002-persistent-object-data-format"></a>TN002: Kalıcı Nesne Veri Biçimi
 Bu Not bir dosyada depolandığında destekleyen kalıcı C++ nesneleri ve nesne veri biçimi MFC yordamları açıklar. Bu, yalnızca sınıflarıyla uygulanır [declare_serıal](../mfc/reference/run-time-object-model-services.md#declare_serial) ve [ımplement_serıal](../mfc/reference/run-time-object-model-services.md#implement_serial) makroları.  
@@ -77,7 +72,7 @@ ar>> pObj;        // calls ar.ReadObject(RUNTIME_CLASS(CObj))
   
  Nesne önce kaydedilmemiş olan, dikkate alınması gereken iki olasılık vardır: hem nesnenin hem de tam (diğer bir deyişle, sınıfı) nesnenin türünü bu arşiv bağlamı için yeni olan ya da nesne zaten görülen bir tam türüdür. Türü görüldü olup olmadığını, belirlemek için kod sorguları `m_pStoreMap` için bir [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) eşleşen nesne `CRuntimeClass` kaydedilmesini nesneyle ilişkili nesne. Bir eşleşme varsa `WriteObject` temelinde bir etiket ekler `OR` , `wOldClassTag` ve bu dizin. Varsa `CRuntimeClass` bu arşiv bağlamı için yeni `WriteObject` o sınıfın yeni bir PID atar ve öncesinde arşiv ekler `wNewClassTag` değeri.  
   
- Bu sınıf tanımlayıcısı Arşiv kullanarak daha sonra eklenen `CRuntimeClass::Store` yöntemi. `CRuntimeClass::Store`sınıf (aşağıya bakın) şema sayısı ve sınıfın ASCII metin adını ekler. ASCII metin adı kullanımını arşiv benzersizliğini uygulamalarda garanti etmez olduğunu unutmayın. Bu nedenle, veri dosyalarınızı bozulmasını önlemek için etiket. Sınıf bilgileri ekleme arşiv nesnesine koyar `m_pStoreMap` ve çağırır `Serialize` sınıfı özgü verileri eklemek için yöntem. Nesnesine yerleştirme `m_pStoreMap` çağırmadan önce `Serialize` deposuna kaydedildi nesne birden çok kopyası engeller.  
+ Bu sınıf tanımlayıcısı Arşiv kullanarak daha sonra eklenen `CRuntimeClass::Store` yöntemi. `CRuntimeClass::Store` sınıf (aşağıya bakın) şema sayısı ve sınıfın ASCII metin adını ekler. ASCII metin adı kullanımını arşiv benzersizliğini uygulamalarda garanti etmez olduğunu unutmayın. Bu nedenle, veri dosyalarınızı bozulmasını önlemek için etiket. Sınıf bilgileri ekleme arşiv nesnesine koyar `m_pStoreMap` ve çağırır `Serialize` sınıfı özgü verileri eklemek için yöntem. Nesnesine yerleştirme `m_pStoreMap` çağırmadan önce `Serialize` deposuna kaydedildi nesne birden çok kopyası engeller.  
   
  İlk çağıran (genellikle ağ nesneleri, kök) döndürülürken çağırmalısınız [CArchive::Close](../mfc/reference/carchive-class.md#close). Diğer yapmayı planlıyorsanız [CFile](../mfc/reference/cfile-class.md)işlemleri çağırmalıdır `CArchive` yöntemi [Flush](../mfc/reference/carchive-class.md#flush) arşiv bozulmasını önlemek için.  
   

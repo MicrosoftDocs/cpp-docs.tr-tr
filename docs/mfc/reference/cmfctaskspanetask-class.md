@@ -1,12 +1,9 @@
 ---
-title: "CMFCTasksPaneTask sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCTasksPaneTask sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCTasksPaneTask
@@ -39,17 +36,15 @@ helpviewer_keywords:
 - CMFCTasksPaneTask [MFC], m_strName
 - CMFCTasksPaneTask [MFC], m_uiCommandID
 ms.assetid: c5a7513b-cd8f-4e2e-b16f-650e1fe30954
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b64f1efd16a1ac372f6e8ce9ea9e0781046f1892
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4008389121a1a78ca746798af7f3fc18c9663b93
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfctaskspanetask-class"></a>CMFCTasksPaneTask sınıfı
 `CMFCTasksPaneTask` Sınıftır görev bölmesi denetimi için görevleri temsil eden bir yardımcı sınıfı ( [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md)). Görev nesnesini görev grubundaki bir öğeyi temsil eder ( [CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md)). Her görev, bir kullanıcı görev ve görev adı solunda görüntülenen simge tıkladığında framework yürüten bir komutu olabilir.  
@@ -106,7 +101,7 @@ class CMFCTasksPaneTask : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxTasksPane.h  
   
-##  <a name="cmfctaskspanetask"></a>CMFCTasksPaneTask::CMFCTasksPaneTask  
+##  <a name="cmfctaskspanetask"></a>  CMFCTasksPaneTask::CMFCTasksPaneTask  
  Oluşturur ve başlatır bir `CMFCTasksPaneTask` nesnesi.  
   
 ```  
@@ -148,7 +143,7 @@ CMFCTasksPaneTask(
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="m_bautodestroywindow"></a>CMFCTasksPaneTask::m_bAutoDestroyWindow  
+##  <a name="m_bautodestroywindow"></a>  CMFCTasksPaneTask::m_bAutoDestroyWindow  
  Görev penceresi otomatik olarak yok olup olmadığını belirler.  
   
 ```  
@@ -158,7 +153,7 @@ BOOL m_bAutoDestroyWindow;
 ### <a name="remarks"></a>Açıklamalar  
  Kümesine `TRUE` belirtmek için görev penceresi ( [CMFCTasksPaneTask::m_hwndTask](#m_hwndtask)) yok edilmesi otomatik olarak; tersi durumda, `FALSE`.  
   
-##  <a name="m_bisbold"></a>CMFCTasksPaneTask::m_bIsBold  
+##  <a name="m_bisbold"></a>  CMFCTasksPaneTask::m_bIsBold  
  Bir görev etiketi kalın metin olarak çizilip çizilmeyeceğini belirler.  
   
 ```  
@@ -168,7 +163,7 @@ BOOL m_bIsBold;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye kümesine `TRUE` kalın metin görev etiketi için görüntülenecek.  
   
-##  <a name="m_dwuserdata"></a>CMFCTasksPaneTask::m_dwUserData  
+##  <a name="m_dwuserdata"></a>  CMFCTasksPaneTask::m_dwUserData  
  Görev ile ilişkili kullanıcı tanımlı veri içerir. Hiçbir veri görev ile ilişkili ise sıfır olarak ayarlayın.  
   
 ```  
@@ -177,7 +172,7 @@ DWORD m_dwUserData;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="m_hwndtask"></a>CMFCTasksPaneTask::m_hwndTask  
+##  <a name="m_hwndtask"></a>  CMFCTasksPaneTask::m_hwndTask  
  Görev penceresi için bir tanıtıcı.  
   
 ```  
@@ -187,7 +182,7 @@ HWND m_hwndTask;
 ### <a name="remarks"></a>Açıklamalar  
  Bir görev pencere eklemek için arama [CMFCTasksPane::AddWindow](../../mfc/reference/cmfctaskspane-class.md#addwindow).  
   
-##  <a name="m_nicon"></a>CMFCTasksPaneTask::m_nIcon  
+##  <a name="m_nicon"></a>  CMFCTasksPaneTask::m_nIcon  
  Belirtilen görev yanında görüntülenen görüntünün tanımlayan bir resim listesi dizin konumu.  
   
 ```  
@@ -199,7 +194,7 @@ int m_nIcon;
   
  Ayarlama `m_nIcon` görüntü olmadan görevi görüntülemek istiyorsanız,-1.  
   
-##  <a name="m_nwindowheight"></a>CMFCTasksPaneTask::m_nWindowHeight  
+##  <a name="m_nwindowheight"></a>  CMFCTasksPaneTask::m_nWindowHeight  
  Görev penceresi yüksekliği. Görev görev pencere varsa, bu değer sıfır olur.  
   
 ```  
@@ -208,7 +203,7 @@ int m_nWindowHeight;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="m_pgroup"></a>CMFCTasksPaneTask::m_pGroup  
+##  <a name="m_pgroup"></a>  CMFCTasksPaneTask::m_pGroup  
  İşaretçi [CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md) bu görevin ait olduğu.  
   
 ```  
@@ -218,7 +213,7 @@ CMFCTasksPaneTaskGroup* m_pGroup;
 ### <a name="remarks"></a>Açıklamalar  
  Her görev, bir üst grubu olmalıdır. Çağırarak grupları için bir görev bölmesi ekleme [CMFCTasksPane::AddGroup](../../mfc/reference/cmfctaskspane-class.md#addgroup).  
   
-##  <a name="m_rect"></a>CMFCTasksPaneTask::m_rect  
+##  <a name="m_rect"></a>  CMFCTasksPaneTask::m_rect  
  Görevin sınırlayıcı dikdörtgenini belirtir.  
   
 ```  
@@ -228,7 +223,7 @@ CRect m_rect;
 ### <a name="remarks"></a>Açıklamalar  
  Bu değer, görev çizildiğinde çerçevesi tarafından hesaplanır.  
   
-##  <a name="m_strname"></a>CMFCTasksPaneTask::m_strName  
+##  <a name="m_strname"></a>  CMFCTasksPaneTask::m_strName  
  Görev adı.  
   
 ```  
@@ -237,7 +232,7 @@ CString m_strName;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="m_uicommandid"></a>CMFCTasksPaneTask::m_uiCommandID  
+##  <a name="m_uicommandid"></a>  CMFCTasksPaneTask::m_uiCommandID  
  Kullanıcı görevi tıklattığında çalıştırılan komut komut Kimliğini belirtir. Bu değer geçerli bir komut kimliği değilse, görev basit bir etiket olarak kabul edilir.  
   
 ```  
@@ -246,7 +241,7 @@ UINT m_uiCommandID;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setaccdata"></a>CMFCTasksPaneTask::SetACCData  
+##  <a name="setaccdata"></a>  CMFCTasksPaneTask::SetACCData  
  Geçerli görev için erişilebilirlik verileri belirler.  
   
 ```  
@@ -256,14 +251,14 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pParent`  
+ [in] `pParent`  
  Geçerli görevin üst pencere temsil eder.  
   
- [out]`data`  
+ [out] `data`  
  Türünde bir nesne `CAccessibilityData` geçerli görev erişilebilirlik verilerle doldurulur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`varsa `data` parametresi başarıyla geçerli görevin erişilebilirlik verilerle doldurulan; Aksi takdirde `FALSE`.  
+ `TRUE` varsa `data` parametresi başarıyla geçerli görevin erişilebilirlik verilerle doldurulan; Aksi takdirde `FALSE`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
