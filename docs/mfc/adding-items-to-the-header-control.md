@@ -1,13 +1,10 @@
 ---
-title: "Üstbilgi denetimine öğe ekleme | Microsoft Docs"
-ms.custom: 
+title: Üstbilgi denetimine öğe ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - CHeaderCtrl class [MFC], adding items
 - header controls [MFC], adding items to
 ms.assetid: 2e9a28b1-7302-4a93-8037-c5a4183e589a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4de62d534da103f17df113b04b88021561739cfc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 69d64265a94df2770e3a234ab992130b4809f9e3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="adding-items-to-the-header-control"></a>Üstbilgi Denetimine Öğe Ekleme
 Üstbilgi denetimi oluşturduktan sonra ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) kendi üst penceresinde "gerektiği kadar üstbilgi öğeleri" ekleyin: genellikle bir sütun başına.  

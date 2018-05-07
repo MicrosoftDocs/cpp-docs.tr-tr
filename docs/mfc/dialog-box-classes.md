@@ -1,13 +1,10 @@
 ---
-title: "İletişim kutusu sınıfları | Microsoft Docs"
-ms.custom: 
+title: İletişim kutusu sınıfları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.classes.dialog
 dev_langs:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - common dialog classes [MFC]
 - tab dialog boxes
 ms.assetid: db75da23-4eff-4c6c-beae-79cf046fbce9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d51529e5d04a8297c0d3824ab38c7d2045bc866
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: 60d33289d8025d7cdcaf4f6f69062230730b958c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dialog-box-classes"></a>İletişim Kutusu Sınıfları
 Sınıf `CDialog` ve türetilmiş sınıflarının iletişim kutusu işlevleri kapsülleyen. Bir iletişim kutusu penceresinin özel bir tür olduğundan `CDialog` türetildiği `CWnd`. İletişim sınıflarından `CDialog` kullanın açma veya dosya, yazdırma, yazı tipi veya renk seçme kaydetme gibi standart iletişim kutuları için ortak iletişim kutusu sınıfları, bir arama ve değiştirme işlemi başlatılıyor veya çeşitli gerçekleştirme veya OLE ile ilgili işlemler.  
@@ -71,7 +66,7 @@ Sınıf `CDialog` ve türetilmiş sınıflarının iletişim kutusu işlevleri k
  OLE ortak iletişim kutuları birkaç Windows ekler. Bu sınıfların OLE ortak iletişim kutuları kapsüller.  
   
  [COleDialog](../mfc/reference/coledialog-class.md)  
- Tüm OLE iletişim kutuları için ortak uygulamaları içerecek şekilde framework tarafından kullanıldı. Kullanıcı arabirimi kategorideki tüm iletişim kutusu sınıfları bu temel sınıfından türetilir. `COleDialog`doğrudan kullanılamaz.  
+ Tüm OLE iletişim kutuları için ortak uygulamaları içerecek şekilde framework tarafından kullanıldı. Kullanıcı arabirimi kategorideki tüm iletişim kutusu sınıfları bu temel sınıfından türetilir. `COleDialog` doğrudan kullanılamaz.  
   
  [COleInsertDialog](../mfc/reference/coleinsertdialog-class.md)  
  Yeni OLE ekleme ya da bağlı öğeleri katıştırılmış nesne Ekle iletişim kutusu, standart kullanıcı arabirimi görüntüler.  
@@ -125,7 +120,7 @@ Sınıf `CDialog` ve türetilmiş sınıflarının iletişim kutusu işlevleri k
  [CDialogBar](../mfc/reference/cdialogbar-class.md)  
  Bir iletişim kutusu şablona dayalı bir denetim çubuğu.  
   
- [CFormView](../mfc/reference/cformview-class.md)  
+ [Cformview'yu](../mfc/reference/cformview-class.md)  
  Düzeni bir iletişim kutusu şablonda tanımlanan kaydırma görüntüleyin. Öğesinden bir sınıf türetin `CFormView` bir iletişim kutusu şablona dayalı bir kullanıcı arabirimi uygulamak için.  
   
  [CDaoRecordView](../mfc/reference/cdaorecordview-class.md)  

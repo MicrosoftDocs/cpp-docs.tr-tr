@@ -1,13 +1,10 @@
 ---
-title: "TN041: MFC OLE1 geçişi MFC OLE 2 | Microsoft Docs"
-ms.custom: 
+title: 'TN041: MFC OLE1 geçişi MFC OLE 2 | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.mfc.ole
 dev_langs:
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - upgrading Visual C++ applications [MFC], OLE1 to OLE2
 - TN041
 ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 894c171c025ef125495faad21dba2a98c08e8b88
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 78faa19263ff0ea03aac891c9be3a6114f7f9a48
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2'ye MFC/OLE1 Geçişi
 > [!NOTE]
@@ -312,7 +307,7 @@ ON_COMMAND(ID_OLE_EDIT_CONVERT,
 ## <a name="adding-visual-editing"></a>"Görsel düzenleme" ekleme  
  OLE en ilginç özelliklerini yerinde etkinleştirme (veya "Görsel düzenleme") biridir. Bu özellik, sağlanan kullanıcıya daha sorunsuz bir düzenleme arabirimi için kapsayıcının kullanıcı arabirimi bölümlerini almak sunucu uygulaması sağlar. Yerinde etkinleştirme OCLIENT uygulamak için bazı özel kaynaklar, bazı ek kod yanı sıra eklenmesi gerekir. Bu kaynaklar ve kod normalde AppWizard tarafından sağlanan — aslında, kodu buraya çoğunu doğrudan bir uygulamadan yeni AppWizard "Kapsayıcı" desteğiyle ödünç.  
   
- Öncelikle, yerinde etkin olan bir öğe olduğunda kullanılacak bir menü kaynak eklemek gereklidir. IDR_OCLITYPE kaynak kopyalama ve tüm dosya ve penceresi açılır pencereleri kaldırarak Visual C++'da bu fazladan menü kaynağı oluşturun. İki ayırıcı çubukları grupları ayrılması belirtmek için dosya ve penceresi açılır pencereleri arasında eklenir (gibi görünmelidir: Dosya &#124; &#124; Pencere). Bu ayırıcılar ne anlama geldiğini ve sunucu ve kapsayıcı menüleri nasıl birleştirilir hakkında daha fazla bilgi için "Menüler ve kaynaklar: menü birleştirme" konusuna bakın *OLE 2 sınıfları*.  
+ Öncelikle, yerinde etkin olan bir öğe olduğunda kullanılacak bir menü kaynak eklemek gereklidir. IDR_OCLITYPE kaynak kopyalama ve tüm dosya ve penceresi açılır pencereleri kaldırarak Visual C++'da bu fazladan menü kaynağı oluşturun. İki ayırıcı çubukları grupları ayrılması belirtmek için dosya ve penceresi açılır pencereleri arasında eklenir (gibi görünmelidir: dosya &#124; &#124; penceresi). Bu ayırıcılar ne anlama geldiğini ve sunucu ve kapsayıcı menüleri nasıl birleştirilir hakkında daha fazla bilgi için "Menüler ve kaynaklar: menü birleştirme" konusuna bakın *OLE 2 sınıfları*.  
   
  Oluşturulan bu menüler olduktan sonra bunları hakkında bilmeniz framework izin gerekir. Bu çağırarak yapılır `CDocTemplate::SetContainerInfo` belge şablonu, InitInstance belge şablonu listesine ekleyebilmeniz için. Belge şablonu kaydetmek için yeni kod şöyle görünür:  
   
@@ -672,7 +667,7 @@ CSize CServerItem::CalcNodeSize()
 \hiersvr\svrview.cpp(325) : error C2660: 'CopyToClipboard' : function does not take 2 parameters  
 ```  
   
- `COleServerItem::CopyToClipboard`artık 'bIncludeNative' bayrağı destekler. İlk parametre kaldırmak için yerel veriler (sunucu öğesi'nin serileştirme işlevi tarafından yazılan veriler) her zaman kopyalanır. Ayrıca, `CopyToClipboard` FALSE döndürme yerine bir hata oluştuğunda bir özel durum oluşturur. Kod CServerView::OnEditCopy için aşağıdaki gibi değiştirin:  
+ `COleServerItem::CopyToClipboard` artık 'bIncludeNative' bayrağı destekler. İlk parametre kaldırmak için yerel veriler (sunucu öğesi'nin serileştirme işlevi tarafından yazılan veriler) her zaman kopyalanır. Ayrıca, `CopyToClipboard` FALSE döndürme yerine bir hata oluştuğunda bir özel durum oluşturur. Kod CServerView::OnEditCopy için aşağıdaki gibi değiştirin:  
   
 ```  
 void CServerView::OnEditCopy()  
@@ -710,7 +705,7 @@ void CServerView::OnEditCopy()
   
 -   Bu özel kaynakları ve sınıfları hakkında framework bildirmeniz gerekir.  
   
- Menü kaynağı oluşturmak kolaydır. Visual C++ çalıştırın, IDR_HIERSVRTYPE_SRVR_IP adlı menü kaynak menüsü kaynak IDR_HIERSVRTYPE kopyalayın. Böylece yalnızca düzenleme ve Yardım menüsü açılır sol menü değiştirin. Düzenle ve Yardım menülerini Between menüye iki ayırıcı eklemek (gibi görünmelidir: düzenleme &#124; &#124; Yardım). İçindeki "Menüler ve kaynaklar: menü birleştirme" Bu ayırıcılar ne anlama geldiğini ve sunucu ve kapsayıcı menüleri nasıl birleştirilir ile ilgili daha fazla bilgi için bkz *OLE 2 sınıfları*.  
+ Menü kaynağı oluşturmak kolaydır. Visual C++ çalıştırın, IDR_HIERSVRTYPE_SRVR_IP adlı menü kaynak menüsü kaynak IDR_HIERSVRTYPE kopyalayın. Böylece yalnızca düzenleme ve Yardım menüsü açılır sol menü değiştirin. Düzenle ve Yardım menülerini Between menüye iki ayırıcı eklemek (gibi görünmelidir: Düzenle &#124; &#124; Yardım). İçindeki "Menüler ve kaynaklar: menü birleştirme" Bu ayırıcılar ne anlama geldiğini ve sunucu ve kapsayıcı menüleri nasıl birleştirilir ile ilgili daha fazla bilgi için bkz *OLE 2 sınıfları*.  
   
  Bit eşlem alt araç için kolayca kullanıma "Server" seçeneği ile tek bir yeni oluşturulan AppWizard uygulamasından kopyalayarak oluşturulabilir. Bu bit eşlemi ardından Visual C++ aktarılabilir. Bir kimliği IDR_HIERSVRTYPE_SRVR_IP bit eşlem verdiğinizden emin olun.  
   
@@ -750,7 +745,7 @@ pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,
   
 -   Seçim olarak kapsayıcı pencere kaydırma değiştirilir.  
   
- MFC 3.0 HIERSVR örnekte biraz farklı bir tasarım sunucu öğelerinden için de kullanır. Bu bellek korunmasına yardımcı olur ve bağlantılarınızı daha esnek hale getirir. HIERSVR 2.0 sürümü ile her düğüm ağacında *olan bir* `COleServerItem`. `COleServerItem`kesinlikle gerekli bu düğümlerinin her biri için olandan biraz daha yükünü taşıyan ancak `COleServerItem` etkin her bağlantı için gereklidir. Ancak çoğunlukla, çok az sayıda etkin bağlantıları vardır herhangi bir zamanda. Bu daha verimli hale getirmek için MFC bu sürümünde HIERSVR düğümden ayıran `COleServerItem`. Her iki bir CServerNode sahiptir ve **CServerItem** sınıfı. **CServerItem** (türetilmiş `COleServerItem`) yalnızca gerektiğinde oluşturulur. Kapsayıcı (veya kapsayıcıları), belirli bir düğüme belirli bu bağlantıyı kullanan durdurduğunuzda, CServerNode ile ilişkili CServerItem Nesne silindi. Bu, daha esnek ve daha verimli tasarımdır. Birden çok seçim bağlantılarıyla ilgilenirken, esneklik devreye girer. Bu iki HIERSVR sürümlerinin hiçbiri birden fazla seçimi destekler, ancak çok daha kolay eklemek için (ve bu tür seçimlere bağlantılarını desteklemek için) HIERSVR, MFC 3.0 sürümü ile bu yana `COleServerItem` yerel verileri ayrılır.  
+ MFC 3.0 HIERSVR örnekte biraz farklı bir tasarım sunucu öğelerinden için de kullanır. Bu bellek korunmasına yardımcı olur ve bağlantılarınızı daha esnek hale getirir. HIERSVR 2.0 sürümü ile her düğüm ağacında *olan bir* `COleServerItem`. `COleServerItem` kesinlikle gerekli bu düğümlerinin her biri için olandan biraz daha yükünü taşıyan ancak `COleServerItem` etkin her bağlantı için gereklidir. Ancak çoğunlukla, çok az sayıda etkin bağlantıları vardır herhangi bir zamanda. Bu daha verimli hale getirmek için MFC bu sürümünde HIERSVR düğümden ayıran `COleServerItem`. Her iki bir CServerNode sahiptir ve **CServerItem** sınıfı. **CServerItem** (türetilmiş `COleServerItem`) yalnızca gerektiğinde oluşturulur. Kapsayıcı (veya kapsayıcıları), belirli bir düğüme belirli bu bağlantıyı kullanan durdurduğunuzda, CServerNode ile ilişkili CServerItem Nesne silindi. Bu, daha esnek ve daha verimli tasarımdır. Birden çok seçim bağlantılarıyla ilgilenirken, esneklik devreye girer. Bu iki HIERSVR sürümlerinin hiçbiri birden fazla seçimi destekler, ancak çok daha kolay eklemek için (ve bu tür seçimlere bağlantılarını desteklemek için) HIERSVR, MFC 3.0 sürümü ile bu yana `COleServerItem` yerel verileri ayrılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   

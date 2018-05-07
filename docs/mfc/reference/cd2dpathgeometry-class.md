@@ -1,12 +1,9 @@
 ---
-title: "CD2DPathGeometry sınıfı | Microsoft Docs"
-ms.custom: 
+title: CD2DPathGeometry sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CD2DPathGeometry
@@ -35,17 +32,15 @@ helpviewer_keywords:
 - CD2DPathGeometry [MFC], Stream
 - CD2DPathGeometry [MFC], m_pPathGeometry
 ms.assetid: 686216eb-5080-4242-ace5-8fa1ce96307c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9142b268c5f09a88883d048c35287966d9ef8aab
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8a3afe8efa5730c3ef0f4448b1c548724b56b7cd
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cd2dpathgeometry-class"></a>CD2DPathGeometry sınıfı
 ID2D1PathGeometry için sarmalayıcı.  
@@ -95,7 +90,7 @@ class CD2DPathGeometry : public CD2DGeometry;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxrendertarget.h  
   
-##  <a name="attach"></a>CD2DPathGeometry::Attach  
+##  <a name="attach"></a>  CD2DPathGeometry::Attach  
  Var olan nesne kaynak arabirimine ekler  
   
 ```  
@@ -106,7 +101,7 @@ void Attach(ID2D1PathGeometry* pResource);
  `pResource`  
  Mevcut kaynak arabirimi. NULL olamaz  
   
-##  <a name="cd2dpathgeometry"></a>CD2DPathGeometry::CD2DPathGeometry  
+##  <a name="cd2dpathgeometry"></a>  CD2DPathGeometry::CD2DPathGeometry  
  CD2DPathGeometry nesnesi oluşturur.  
   
 ```  
@@ -122,7 +117,7 @@ CD2DPathGeometry(
  `bAutoDestroy`  
  Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
   
-##  <a name="create"></a>CD2DPathGeometry::Create  
+##  <a name="create"></a>  CD2DPathGeometry::Create  
  Bir CD2DPathGeometry oluşturur.  
   
 ```  
@@ -136,14 +131,14 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
   
-##  <a name="destroy"></a>CD2DPathGeometry::Destroy  
+##  <a name="destroy"></a>  CD2DPathGeometry::Destroy  
  CD2DPathGeometry nesnesini yok eder.  
   
 ```  
 virtual void Destroy();
 ```  
   
-##  <a name="detach"></a>CD2DPathGeometry::detach  
+##  <a name="detach"></a>  CD2DPathGeometry::detach  
  Kaynak arabirimi nesneden çıkarır  
   
 ```  
@@ -153,7 +148,7 @@ ID2D1PathGeometry* Detach();
 ### <a name="return-value"></a>Dönüş Değeri  
  Ayrılmış kaynak arabirimi işaretçisi.  
   
-##  <a name="getfigurecount"></a>CD2DPathGeometry::GetFigureCount  
+##  <a name="getfigurecount"></a>  CD2DPathGeometry::GetFigureCount  
  Yol geometri rakamı sayısını alır.  
   
 ```  
@@ -163,7 +158,7 @@ int GetFigureCount() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Yol geometri rakamları sayısını döndürür.  
   
-##  <a name="getsegmentcount"></a>CD2DPathGeometry::GetSegmentCount  
+##  <a name="getsegmentcount"></a>  CD2DPathGeometry::GetSegmentCount  
  Yol geometri bölümlerinin sayısını alır.  
   
 ```  
@@ -173,14 +168,14 @@ int GetSegmentCount() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Yol geometri bölümlerinin sayısını döndürür.  
   
-##  <a name="m_ppathgeometry"></a>CD2DPathGeometry::m_pPathGeometry  
+##  <a name="m_ppathgeometry"></a>  CD2DPathGeometry::m_pPathGeometry  
  Bir ID2D1PathGeometry gösteren bir işaretçi.  
   
 ```  
 ID2D1PathGeometry* m_pPathGeometry;  
 ```  
   
-##  <a name="open"></a>CD2DPathGeometry::Open  
+##  <a name="open"></a>  CD2DPathGeometry::Open  
  Şekiller ve kesimleri ile yolu geometri doldurmak için kullanılan geometri havuz alır.  
   
 ```  
@@ -190,7 +185,7 @@ ID2D1GeometrySink* Open();
 ### <a name="return-value"></a>Dönüş Değeri  
  Şekiller ve kesimleri ile yolu geometri doldurmak için kullanılan ID2D1GeometrySink gösteren bir işaretçi.  
   
-##  <a name="stream"></a>CD2DPathGeometry::Stream  
+##  <a name="stream"></a>  CD2DPathGeometry::Stream  
  Yol geometri içeriğini belirtilen ID2D1GeometrySink kopyalar.  
   
 ```  

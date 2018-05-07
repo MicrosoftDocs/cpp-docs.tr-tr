@@ -1,12 +1,9 @@
 ---
-title: "COleDropTarget sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleDropTarget sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleDropTarget
@@ -33,17 +30,15 @@ helpviewer_keywords:
 - COleDropTarget [MFC], Register
 - COleDropTarget [MFC], Revoke
 ms.assetid: a58c9a48-6a93-4357-b078-4594df258311
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fecdedc84f4fd93cbd9efe5e525c1771c5eb1c7e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: eb52739977b641cd5d52f018efcd30a51ecf1e32
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coledroptarget-class"></a>COleDropTarget sınıfı
 Bir pencere OLE kitaplıklarının arasındaki iletişim mekanizması sağlar.  
@@ -92,7 +87,7 @@ class COleDropTarget : public CCmdTarget
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxole.h  
   
-##  <a name="coledroptarget"></a>COleDropTarget::COleDropTarget  
+##  <a name="coledroptarget"></a>  COleDropTarget::COleDropTarget  
  Sınıfın bir nesnesi oluşturur `COleDropTarget`.  
   
 ```  
@@ -102,7 +97,7 @@ COleDropTarget();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı [kaydetmek](#register) bu nesne bir pencere ile ilişkilendirmek için.  
   
-##  <a name="ondragenter"></a>COleDropTarget::OnDragEnter  
+##  <a name="ondragenter"></a>  COleDropTarget::OnDragEnter  
  İmleç ilk penceresine sürüklendiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -129,22 +124,22 @@ virtual DROPEFFECT OnDragEnter(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir açılan tarafından belirtilen konumda girişiminde bulunuldu, ortaya çıkabilecek etkisi `point`. Aşağıdakilerden birini veya birkaçını olabilir:  
   
-- `DROPEFFECT_NONE`Bir açılan izin verilmez.  
+- `DROPEFFECT_NONE` Bir açılan izin verilmez.  
   
-- `DROPEFFECT_COPY`Bir kopyalama işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_MOVE`Bir taşıma işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_MOVE` Bir taşıma işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_LINK`Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
+- `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
   
-- `DROPEFFECT_SCROLL`Sürükleme kaydırma işlemi gerçekleşmek üzere olduğu veya hedef gerçekleştirilmektedir.  
+- `DROPEFFECT_SCROLL` Sürükleme kaydırma işlemi gerçekleşmek üzere olduğu veya hedef gerçekleştirilmektedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bırakma işlemleri penceresinde oluşmasına izin vermek için bu işlevi geçersiz kılar. Varsayılan Uygulama çağrıları [CView::OnDragEnter](../../mfc/reference/cview-class.md#ondragenter), yalnızca döndüren `DROPEFFECT_NONE` varsayılan olarak.  
   
  Daha fazla bilgi için bkz: [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) Windows SDK'sındaki.  
   
-##  <a name="ondragleave"></a>COleDropTarget::OnDragLeave  
+##  <a name="ondragleave"></a>  COleDropTarget::OnDragLeave  
  İmleç penceresi ayrıldığında bir sürükleme işlemi etkinken çerçevesi tarafından çağrılır.  
   
 ```  
@@ -160,7 +155,7 @@ virtual void OnDragLeave(CWnd* pWnd);
   
  Daha fazla bilgi için bkz: [IDropTarget::DragLeave](http://msdn.microsoft.com/library/windows/desktop/ms680110) Windows SDK'sındaki.  
   
-##  <a name="ondragover"></a>COleDropTarget::OnDragOver  
+##  <a name="ondragover"></a>  COleDropTarget::OnDragOver  
  İmleç penceresi sürüklendiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -187,15 +182,15 @@ virtual DROPEFFECT OnDragOver(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir açılan tarafından belirtilen konumda girişiminde bulunuldu, ortaya çıkabilecek etkisi `point`. Aşağıdakilerden birini veya birkaçını olabilir:  
   
-- `DROPEFFECT_NONE`Bir açılan izin verilmez.  
+- `DROPEFFECT_NONE` Bir açılan izin verilmez.  
   
-- `DROPEFFECT_COPY`Bir kopyalama işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_MOVE`Bir taşıma işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_MOVE` Bir taşıma işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_LINK`Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
+- `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
   
-- `DROPEFFECT_SCROLL`Sürükleme kaydırma işlemi gerçekleşmek üzere veya hedef oluştuğunu gösterir.  
+- `DROPEFFECT_SCROLL` Sürükleme kaydırma işlemi gerçekleşmek üzere veya hedef oluştuğunu gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, bırakma işlemleri penceresinde oluşmasına izin vermek için kılınmalıdır. Bu işlev varsayılan uygulamasını çağıran [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover), döndüren `DROPEFFECT_NONE` varsayılan olarak. Bu işlev bir Sürükle ve bırak işlemi sırasında sık çağrıldığı için mümkün olduğunca hale getirilmiştir.  
@@ -205,7 +200,7 @@ virtual DROPEFFECT OnDragOver(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#21](../../mfc/codesnippet/cpp/coledroptarget-class_1.cpp)]  
   
-##  <a name="ondragscroll"></a>COleDropTarget::OnDragScroll  
+##  <a name="ondragscroll"></a>  COleDropTarget::OnDragScroll  
  Çağırmadan önce framework tarafından çağrılan [OnDragEnter](#ondragenter) veya [OnDragOver](#ondragover) belirlemek için olup olmadığını `point` kaydırma bölgede değil.  
   
 ```  
@@ -228,20 +223,20 @@ virtual DROPEFFECT OnDragScroll(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir açılan tarafından belirtilen konumda girişiminde bulunuldu, ortaya çıkabilecek etkisi `point`. Aşağıdakilerden birini veya birkaçını olabilir:  
   
-- `DROPEFFECT_NONE`Bir açılan izin verilmez.  
+- `DROPEFFECT_NONE` Bir açılan izin verilmez.  
   
-- `DROPEFFECT_COPY`Bir kopyalama işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_MOVE`Bir taşıma işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_MOVE` Bir taşıma işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_LINK`Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
+- `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
   
-- `DROPEFFECT_SCROLL`Sürükleme kaydırma işlemi gerçekleşmek üzere veya hedef oluştuğunu gösterir.  
+- `DROPEFFECT_SCROLL` Sürükleme kaydırma işlemi gerçekleşmek üzere veya hedef oluştuğunu gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu olay için özel davranışı sağlamak istediğinizde bu işlevi geçersiz kılar. Bu işlev varsayılan uygulamasını çağıran [CView::OnDragScroll](../../mfc/reference/cview-class.md#ondragscroll), döndüren `DROPEFFECT_NONE` ve imleci varsayılan kaydırma bölgesi iç kenarlık penceresinin içine sürüklendiğinde penceresi birlikte kayar.  
   
-##  <a name="ondrop"></a>COleDropTarget::OnDrop  
+##  <a name="ondrop"></a>  COleDropTarget::OnDrop  
  Bırakma işlemi oluştuğu sırada çerçevesi tarafından çağrılır.  
   
 ```  
@@ -262,11 +257,11 @@ virtual BOOL OnDrop(
  `dropEffect`  
  Bırakma işlemi için kullanıcının seçtiği etkisi. Aşağıdakilerden birini veya birkaçını olabilir:  
   
-- `DROPEFFECT_COPY`Bir kopyalama işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_MOVE`Bir taşıma işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_MOVE` Bir taşıma işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_LINK`Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
+- `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
   
  `point`  
  İmleç, piksel cinsinden ekran göreli konumunu içerir.  
@@ -281,7 +276,7 @@ virtual BOOL OnDrop(
   
  Daha fazla bilgi için bkz: [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) Windows SDK'sındaki.  
   
-##  <a name="ondropex"></a>COleDropTarget::OnDropEx  
+##  <a name="ondropex"></a>  COleDropTarget::OnDropEx  
  Bırakma işlemi oluştuğu sırada çerçevesi tarafından çağrılır.  
   
 ```  
@@ -319,19 +314,19 @@ virtual DROPEFFECT OnDropEx(
   
  Açılan etkileri açılan işlemle ilişkili eylemi açıklar. Açılan etkileri aşağıdaki listeye bakın:  
   
-- `DROPEFFECT_NONE`Bir açılan izin verilmez.  
+- `DROPEFFECT_NONE` Bir açılan izin verilmez.  
   
-- `DROPEFFECT_COPY`Bir kopyalama işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_MOVE`Bir taşıma işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_MOVE` Bir taşıma işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_LINK`Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
+- `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
   
-- `DROPEFFECT_SCROLL`Sürükleme kaydırma işlemi gerçekleşmek üzere veya hedef oluştuğunu gösterir.  
+- `DROPEFFECT_SCROLL` Sürükleme kaydırma işlemi gerçekleşmek üzere veya hedef oluştuğunu gösterir.  
   
  Daha fazla bilgi için bkz: [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) Windows SDK'sındaki.  
   
-##  <a name="register"></a>COleDropTarget::Register  
+##  <a name="register"></a>  COleDropTarget::Register  
  OLE DLL'ler olarak geçerli bırakma hedefi ile pencerenizi kaydettirmek için bu işlevini çağırın.  
   
 ```  
@@ -350,7 +345,7 @@ BOOL Register(CWnd* pWnd);
   
  Daha fazla bilgi için bkz: [RegisterDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms678405) Windows SDK'sındaki.  
   
-##  <a name="revoke"></a>COleDropTarget::Revoke  
+##  <a name="revoke"></a>  COleDropTarget::Revoke  
  Bir çağrı aracılığıyla bir bırakma hedefi olarak kayıtlı pencere yok etme önce bu işlevi çağırmak [kaydetmek](#register) bırakma hedeflerini listesinden kaldırmak için.  
   
 ```  

@@ -1,13 +1,10 @@
 ---
-title: "WINDOWPLACEMENT yapısı | Microsoft Docs"
-ms.custom: 
+title: WINDOWPLACEMENT yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - WINDOWPLACEMENT
 dev_langs:
@@ -15,20 +12,18 @@ dev_langs:
 helpviewer_keywords:
 - WINDOWPLACEMENT structure [MFC]
 ms.assetid: ea7d61f6-eb57-478e-9b08-7c1d07091aa8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e73065cdf20d68b1da4ba77d1ad555e2bf95e937
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 829b3c90acb089bd91d71c498df5906fff919f22
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="windowplacement-structure"></a>WINDOWPLACEMENT Yapısı
-`WINDOWPLACEMENT` Yapısı ekranında bir pencere yerleşimi hakkında bilgi içeren**.**  
+`WINDOWPLACEMENT` Yapısı ekranında bir pencere yerleşimi hakkında bilgi içeren **.**  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -45,12 +40,12 @@ typedef struct tagWINDOWPLACEMENT {     /* wndpl */
   
 #### <a name="parameters"></a>Parametreler  
  *uzunluğu*  
- Yapısı bayt cinsinden uzunluğu belirtir**.**  
+ Yapısı bayt cinsinden uzunluğu belirtir **.**  
   
  `flags`  
  Simge durumuna küçültülmüş pencereyi ve pencere geri yüklenen yöntemi konumunu denetlemek bayrakları belirtir. Bu üye birini veya her ikisini aşağıdaki bayraklar olabilir:  
   
-- **WPF_SETMINPOSITION** x - ve y-konumlarını simge durumuna küçültülmüş pencereyi belirtilebilir belirtir**.** Bu bayrak olmalıdır koordinatları ayarlanmış olmadığını belirtilen **ptMinPosition** üyesi.  
+- **WPF_SETMINPOSITION** x - ve y-konumlarını simge durumuna küçültülmüş pencereyi belirtilebilir belirtir **.** Bu bayrak olmalıdır koordinatları ayarlanmış olmadığını belirtilen **ptMinPosition** üyesi.  
   
 - **WPF_RESTORETOMAXIMIZED** geri yüklenen pencere, simge önce olup olmadığını, ekranı bağımsız olarak ekranı olduğunu belirtir. Bu ayar yalnızca pencere geri sonraki zaman geçerlidir. Varsayılan geri yükleme davranışını değiştirmez. Yalnızca geçerli olduğunda bu bayrak olan **SW_SHOWMINIMIZED** değeri için belirtilen **showCmd** üyesi.  
   

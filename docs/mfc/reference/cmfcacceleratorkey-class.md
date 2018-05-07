@@ -1,12 +1,9 @@
 ---
-title: "CMFCAcceleratorKey sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCAcceleratorKey sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCAcceleratorKey
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - CMFCAcceleratorKey [MFC], Format
 - CMFCAcceleratorKey [MFC], SetAccelerator
 ms.assetid: d140fbf7-23db-45ea-a63e-414a5ec7b3d5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3303be9f37749436d140028cd5fa45cd4454c8c8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e6ca49fd2696a8fc5a488962f1f13ead1d861c20
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcacceleratorkey-class"></a>CMFCAcceleratorKey sınıfı
 Sanal anahtar eşleme ve biçimlendirme uygulayan bir yardımcı sınıfı.  
@@ -75,7 +70,7 @@ class CMFCAcceleratorKey : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxacceleratorkey.h  
   
-##  <a name="cmfcacceleratorkey"></a>CMFCAcceleratorKey::CMFCAcceleratorKey  
+##  <a name="cmfcacceleratorkey"></a>  CMFCAcceleratorKey::CMFCAcceleratorKey  
  Oluşturan bir [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) nesnesi.  
   
 ```  
@@ -84,13 +79,13 @@ CMFCAcceleratorKey(LPACCEL lpAccel);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpAccel`  
+ [in] `lpAccel`  
  Bir kısayol tuşu gösteren bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Oluşturduğunuzda, bir kısayol tuşu sağlamak için değil, bir `CMFCAccleratorKey`, kullanın [CMFCAcceleratorKey::SetAccelerator](#setaccelerator) bir kısayol tuşu ile ilişkilendirilecek yöntemi, `CMFCAcceleratorKey` nesnesi.  
   
-##  <a name="format"></a>CMFCAcceleratorKey::Format  
+##  <a name="format"></a>  CMFCAcceleratorKey::Format  
  HIZLANDIRMA yapısı ilişkili dize değerine dönüşür.  
   
 ```  
@@ -98,13 +93,13 @@ void Format(CString& str) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out]`str`  
+ [out] `str`  
  Bir başvuru bir `CString` yöntemi çevrilmiş kısayol tuşunu nereye yazdığını nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, ilişkili kısayol tuşunu dize biçiminde alır. Dize biçimi ayarlayabileceğiniz bir [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) Oluşturucusu veya yöntemini kullanarak nesne [CMFCAcceleratorKey::SetAccelerator](#setaccelerator).  
   
-##  <a name="setaccelerator"></a>CMFCAcceleratorKey::SetAccelerator  
+##  <a name="setaccelerator"></a>  CMFCAcceleratorKey::SetAccelerator  
  İçin kısayol tuşu ayarlar [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) nesnesi.  
   
 ```  
@@ -112,7 +107,7 @@ void SetAccelerator(LPACCEL lpAccel);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpAccel`  
+ [in] `lpAccel`  
  Bir kısayol tuşu gösteren bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  

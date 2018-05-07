@@ -1,10 +1,10 @@
 ---
-title: "Visual C++ Araçları ve özelliklerinin Visual Studio sürümlerinde | Microsoft Docs"
-ms.custom: 
+title: Visual C++ Araçları ve özelliklerinin Visual Studio sürümlerinde | Microsoft Docs
+ms.custom: ''
 ms.date: 02/28/2018
 ms.technology:
 - cpp-ide
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,17 +12,15 @@ helpviewer_keywords:
 - Visual C++, versions
 - editions [C++]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bab6eda1c5c0d2d852d3a678f588f0539495001
-ms.sourcegitcommit: 4e01d36ffa64ea11bacf589f79d2f1df947e2510
+ms.openlocfilehash: a5eace3ef3cfd07847c995151554ba70ca23f820
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="visual-c-tools-and-features-in-visual-studio-editions"></a>Visual C++ Araçları ve Visual Studio sürümlerinde özellikleri
 
@@ -35,7 +33,7 @@ Aşağıdaki tablolarda, Visual Studio'da kullanılabilen Visual C++ özellikler
 |Platform|Windows 10 için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Community/Professional|Visual Studio Enterprise|
 |Windows Masaüstü||X|X|X|
 |Evrensel Windows Platformu ((telefon, tablet, bilgisayar, Xbox, IOT ve HoloLens))|X||X|X|
-|Microsoft Store 8.1|||X|X|
+|Microsoft mağazası 8.1|||X|X|
 |Windows Phone 8.0|||X|X|
 |Android|||X|X|
 |iOS|||X|X|
@@ -45,7 +43,7 @@ Aşağıdaki tablolarda, Visual Studio'da kullanılabilen Visual C++ özellikler
 |Derleyici|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Community|Visual Studio Enterprise|
 |--------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
 |32-bit X86 derleyici|X|X|X|X|
-|X86_arm cross-compiler|X||X|X|
+|X86_arm çapraz derleyici|X||X|X|
 |64-bit [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] derleyici|||X|X|
 |X86_ [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] çapraz derleyici|X|X|X|X|
 
@@ -71,7 +69,7 @@ Aşağıdaki tablolarda, Visual Studio'da kullanılabilen Visual C++ özellikler
 |Statik kitaplık (Evrensel Windows)|X||X|X|
 |Windows Çalışma Zamanı Bileşeni|X||X|X|
 |Birim testi uygulama (Evrensel Windows)|X||X|X|
-|ATL Project|||X|X|
+|ATL Proje|||X|X|
 |Sınıf kitaplığı (CLR)||X|X|X|
 |CLR konsol uygulaması||X|X|X|
 |CLR boş proje||X|X|X|
@@ -83,7 +81,7 @@ Aşağıdaki tablolarda, Visual Studio'da kullanılabilen Visual C++ özellikler
 |MFC DLL|||X|X|
 |Test projesi|X|X|X|X|
 |Win32 konsol uygulaması||X|X|X|
-|Win32 Project||X|X|X|
+|Win32 Proje||X|X|X|
 
 ## <a name="tools"></a>Araçlar
 

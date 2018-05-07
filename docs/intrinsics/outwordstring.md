@@ -1,12 +1,9 @@
 ---
 title: __outwordstring | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - __outwordstring
@@ -17,20 +14,18 @@ helpviewer_keywords:
 - __outwordstring intrinsic
 - outsw instruction
 ms.assetid: b470c7a0-1de9-4370-886a-b2c3a1f842f4
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 21e05e954732efceaae5fa6109eca5c5bef231bf
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: fc25fdc4d43b7454761787264583b5e4f8fa47e0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="outwordstring"></a>__outwordstring
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Oluşturur `rep outsw` gönderir yönerge `Count` başlayan sözcükleri `Buffer` tarafından belirtilen g/ç bağlantı noktası çıkışı `Port`.  
   

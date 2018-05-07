@@ -1,12 +1,9 @@
 ---
-title: "CMultiLock sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMultiLock sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMultiLock
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - CMultiLock [MFC], Lock
 - CMultiLock [MFC], Unlock
 ms.assetid: c5b7c78b-1f81-4387-b7dd-2c813c5b6b61
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc3c391c624351b2835e1ec497d78bc191eb1fe7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b5c5424018c3863ce64435bcc09d2d539560285e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmultilock-class"></a>CMultiLock sınıfı
 Birden çok iş parçacıklı programda kaynaklara erişimi denetlemek kullanılan erişim denetim mekanizmasını temsil eder.  
@@ -61,7 +56,7 @@ class CMultiLock
 |[CMultiLock::Unlock](#unlock)|Tüm ait eşitleme nesneleri serbest bırakır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CMultiLock`bir taban sınıfı yok.  
+ `CMultiLock` bir taban sınıfı yok.  
   
  Eşitleme sınıflarını kullanma [CSemaphore](../../mfc/reference/csemaphore-class.md), [CMutex](../../mfc/reference/cmutex-class.md), ve [CEvent](../../mfc/reference/cevent-class.md), ya da oluşturabileceğiniz bir **CMultiLock** veya [CSingleLock](../../mfc/reference/csinglelock-class.md) nesne beklemesi ve eşitleme nesnesi serbest bırakın. Kullanmak **CMultiLock** belirli bir zamanda kullanabileceğinizi birden fazla nesne olduğunda. Kullanım `CSingleLock` yalnızca gerektiğinde bir nesne üzerinde aynı anda beklenecek.  
   
@@ -77,7 +72,7 @@ class CMultiLock
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxmt.h  
   
-##  <a name="cmultilock"></a>CMultiLock::CMultiLock  
+##  <a name="cmultilock"></a>  CMultiLock::CMultiLock  
  Oluşturan bir **CMultiLock** nesnesi.  
   
 ```  
@@ -100,7 +95,7 @@ CMultiLock(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, beklenen için eşitleme nesneler dizisi oluşturduktan sonra çağrılır. Bu genellikle bir kullanılabilir hale gelmesi eşitleme nesneleri için beklemesi gereken iş parçacığı içinde çağrılır.  
   
-##  <a name="islocked"></a>CMultiLock::IsLocked  
+##  <a name="islocked"></a>  CMultiLock::IsLocked  
  Belirtilen nesne nonsignaled olup olmadığını belirler (kullanılamaz).  
   
 ```  
@@ -114,7 +109,7 @@ BOOL IsLocked(DWORD dwItem);
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen nesne kilitliyse sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="lock"></a>CMultiLock::Lock  
+##  <a name="lock"></a>  CMultiLock::Lock  
  Bir veya daha fazla için sağlanan eşitleme nesneleri tarafından denetlenen kaynaklara erişmek için bu işlevi çağırmak **CMultiLock** Oluşturucusu.  
   
 ```  
@@ -158,7 +153,7 @@ DWORD Lock(
   
  Varsa `Lock` hemen belirtilen milisaniye sayısı en çok için bekleyeceği iade edilemiyor *dwTimeOut* dönmeden önce parametresi. Varsa *dwTimeOut* olan **SONSUZ**, `Lock` bir nesneye erişimi kazanılan veya bir koşul içinde belirtilen kadar döndürmeyecektir `dwWakeMask` aşıldığı. Aksi halde, eğer `Lock` edildi mümkün eşitleme nesnesi edinmek, onu başarıyla döndürür; Aksi takdirde, bu hata döndürür.  
   
-##  <a name="unlock"></a>CMultiLock::Unlock  
+##  <a name="unlock"></a>  CMultiLock::Unlock  
  Sahibi eşitleme nesnesi serbest `CMultiLock`.  
   
 ```  
@@ -183,7 +178,7 @@ BOOL Unlock(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev tarafından çağrılır `CMultiLock`'s yıkıcı.  
   
- İlk biçimini `Unlock` tarafından yönetilen eşitleme nesnenin kilidini açma girişiminde `CMultiLock`. İkinci biçiminde `Unlock` kilidini açma girişiminde `CSemaphore` tarafından sahip olunan nesneler `CMultiLock`. Varsa `CMultiLock` herhangi kendisine değil kilitli `CSemaphore` nesnesi, işlevi döndürür **FALSE**; Aksi takdirde döndürdüğü **TRUE**. `lCount`ve `lpPrevCount` parametrelerinin tam olarak aynıdır [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock). İkinci biçiminde `Unlock` nadiren multilock durumlar için geçerlidir.  
+ İlk biçimini `Unlock` tarafından yönetilen eşitleme nesnenin kilidini açma girişiminde `CMultiLock`. İkinci biçiminde `Unlock` kilidini açma girişiminde `CSemaphore` tarafından sahip olunan nesneler `CMultiLock`. Varsa `CMultiLock` herhangi kendisine değil kilitli `CSemaphore` nesnesi, işlevi döndürür **FALSE**; Aksi takdirde döndürdüğü **TRUE**. `lCount` ve `lpPrevCount` parametrelerinin tam olarak aynıdır [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock). İkinci biçiminde `Unlock` nadiren multilock durumlar için geçerlidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

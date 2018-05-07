@@ -1,12 +1,9 @@
 ---
-title: "Bağlayıcı araçları hatası LNK1237 | Microsoft Docs"
-ms.custom: 
+title: Bağlayıcı araçları hatası LNK1237 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - LNK1237
@@ -15,22 +12,20 @@ dev_langs:
 helpviewer_keywords:
 - LNK1237
 ms.assetid: 8722ffa8-096a-4bb0-85f9-f3aa0e10872a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee9ec0e197d51f76ff57ef06f5584c55df0a4746
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1ffc337d6b1548db4717dc4b87ff8aa25ef92e93
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="linker-tools-error-lnk1237"></a>Bağlayıcı Araçları Hatası LNK1237
 kod oluşturma sırasında derleyici simgesi 'Modülü 'ile /GL derlenmiş Modülü' tanımlanmış Sembol' referansı sunmuştur.  
   
- Kod oluşturma sırasında derleyici daha sonra derlenmiş tanımları çözülmüş simgeleri eklemeniz gerekir değil **/GL**. `symbol`kullanılmaya başlanan ve daha sonra ile derlenen bir tanımı çözümlenen bir simge **/GL**.  
+ Kod oluşturma sırasında derleyici daha sonra derlenmiş tanımları çözülmüş simgeleri eklemeniz gerekir değil **/GL**. `symbol` kullanılmaya başlanan ve daha sonra ile derlenen bir tanımı çözümlenen bir simge **/GL**.  
   
  Daha fazla bilgi için bkz: [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md).  
   

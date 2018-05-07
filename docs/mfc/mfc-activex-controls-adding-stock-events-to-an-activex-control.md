@@ -1,13 +1,10 @@
 ---
 title: 'MFC ActiveX denetimleri: Bir ActiveX denetimine stok olaylar ekleme | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - EVENT__STOCK_ERROR
 - EVENT__STOCK_READYSTATECHANGE
@@ -51,22 +48,20 @@ helpviewer_keywords:
 - EVENT_STOCK_READYSTATECHANGE event
 - EVENT_STOCK_KEYPRESS event
 ms.assetid: 3eeadc67-4b3d-4444-8caa-53054073988a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99de785bba9f566c5dbb4751f788320b96782427
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 210749906391ccdba2e488b75be98264bcba39cd
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-activex-controls-adding-stock-events-to-an-activex-control"></a>MFC ActiveX Denetimleri: Bir ActiveX Denetimine Stok Olaylar Ekleme
-Stok olayları otomatik olarak bir sınıf tarafından tetiklenen, özel olaylardan farklı [COleControl](../mfc/reference/colecontrol-class.md). `COleControl`Ortak eylemlerden kaynaklanan olaylarını harekete önceden tanımlanmış üye işlevlerini içerir. Bazı ortak eylemler tarafından uygulanan `COleControl` tek - ve çift - clicks denetim, klavye olayları ve değişiklik fare düğmeleri durumda içerir. Stok olayları için olay eşleme girdilerini tarafından başına her zaman **EVENT_STOCK** öneki.  
+Stok olayları otomatik olarak bir sınıf tarafından tetiklenen, özel olaylardan farklı [COleControl](../mfc/reference/colecontrol-class.md). `COleControl` Ortak eylemlerden kaynaklanan olaylarını harekete önceden tanımlanmış üye işlevlerini içerir. Bazı ortak eylemler tarafından uygulanan `COleControl` tek - ve çift - clicks denetim, klavye olayları ve değişiklik fare düğmeleri durumda içerir. Stok olayları için olay eşleme girdilerini tarafından başına her zaman **EVENT_STOCK** öneki.  
   
-##  <a name="_core_stock_events_supported_by_classwizard"></a>Stok olayları tarafından desteklenen olay Ekleme Sihirbazı  
+##  <a name="_core_stock_events_supported_by_classwizard"></a> Stok olayları tarafından desteklenen olay Ekleme Sihirbazı  
  `COleControl` Sınıfı, aşağıdaki tabloda listelenen on stok olaylar sağlar. İstediğiniz kullanarak denetim olayları belirtebilirsiniz [olay Ekleme Sihirbazı'nı](../ide/add-event-wizard.md).  
   
 ### <a name="stock-events"></a>Stok olayları  
@@ -84,7 +79,7 @@ Stok olayları otomatik olarak bir sınıf tarafından tetiklenen, özel olaylar
 |MouseUp|**void FireMouseUp (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)** |Varsa harekete **BUTTONUP** (sol, Orta veya sağ) alındığında. Bu olay tetiklenir önce fare yakalama yayımlanır.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEUP)**|  
 |ReadyStateChange|**void FireReadyStateChange)**|Sonraki hazır durumu nedeniyle alınan veri miktarı için bir denetim geçişleri olduğunda tetiklenir.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_READYSTATECHANGE)**|  
   
-##  <a name="_core_adding_a_stock_event_using_classwizard"></a>Stok olayını kullanarak ekleyerek olay Ekleme Sihirbazı  
+##  <a name="_core_adding_a_stock_event_using_classwizard"></a> Stok olayını kullanarak ekleyerek olay Ekleme Sihirbazı  
  Stok olaylar ekleme gerektirir tetikleme gerçek olayın temel sınıfı tarafından otomatik olarak işlendiğinden özel olaylar ekleme daha az iş `COleControl`. Aşağıdaki yordamı kullanılarak geliştirilen bir denetimine stok olay ekler [MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md). KeyPress adlı olay, bir tuşa ve denetim etkin olduğunda gönderir. Bu yordam, diğer stok olaylar eklemek için de kullanılabilir. KeyPress seçili stok olay adını değiştirin.  
   
 #### <a name="to-add-the-keypress-stock-event-using-the-add-event-wizard"></a>Olay Ekleme Sihirbazı'nı kullanarak KeyPress stok olay eklemek için  
@@ -101,7 +96,7 @@ Stok olayları otomatik olarak bir sınıf tarafından tetiklenen, özel olaylar
   
 5.  **Son**'a tıklayın.  
   
-##  <a name="_core_classwizard_changes_for_stock_events"></a>Olay Sihirbazı değişiklikleri için stok olaylar ekleme  
+##  <a name="_core_classwizard_changes_for_stock_events"></a> Olay Sihirbazı değişiklikleri için stok olaylar ekleme  
  Olay Ekleme Sihirbazı'nı stok olaylar denetimin temel sınıfı tarafından işlenen çünkü sınıf bildiriminize herhangi bir şekilde değiştirmez. Bir giriş yapar ve olay denetimin olay eşlemesi ekler. IDL dosyası. Denetim sınıfı uygulamasında bulunan denetimin olay eşlemesi, aşağıdaki satırı eklenir (. CPP) dosyası:  
   
  [!code-cpp[NVC_MFC_AxUI#5](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-events-to-an-activex-control_1.cpp)]  

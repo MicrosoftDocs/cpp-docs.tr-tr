@@ -1,13 +1,10 @@
 ---
-title: "MFC ActiveX denetimleri: ActiveX denetimini yerelleştirme | Microsoft Docs"
-ms.custom: 
+title: 'MFC ActiveX denetimleri: ActiveX denetimini yerelleştirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - LocaleID
 - AfxOleRegisterTypeLib
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - LocaleID ambient property [MFC]
 - LOCALIZE sample [MFC]
 ms.assetid: a44b839a-c652-4ec5-b824-04392708a5f9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd6384507982f74e02e8e4f42c97926f9125981e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: afe134b4acdcea3ec5f1a6ce381be0ca10c321d8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-activex-controls-localizing-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Yerelleştirme
 Bu makalede ActiveX denetim arabirimleri yerelleştirme için yordamlar açıklanmaktadır.  
@@ -52,7 +47,7 @@ Bu makalede ActiveX denetim arabirimleri yerelleştirme için yordamlar açıkla
   
  Bu makalenin geri kalanında iki yerelleştirme stratejilerini açıklar. İlk stratejisi [denetimin programlama arabirimi yerelletirilmesi](#_core_localizing_your_control.92.s_programmability_interface) (özellikleri, yöntemleri ve olayları adları). İkinci stratejisi [denetimin kullanıcı arabirimi yerelletirilmesi](#_core_localizing_the_control.92.s_user_interface), kapsayıcının ortam LocaleID özelliği kullanarak. MFC ActiveX denetimleri örneği denetimini yerelleştirme tanıtımı için bkz: [LOCALIZE](../visual-cpp-samples.md).  
   
-##  <a name="_core_localizing_your_control.92.s_programmability_interface"></a>Denetimin programlama arabirimi yerelleştirme  
+##  <a name="_core_localizing_your_control.92.s_programmability_interface"></a> Denetimin programlama arabirimi yerelleştirme  
  Denetimin programlama arabirimi (denetiminizi kullanan uygulamaları yazma programcıları tarafından kullanılan arabirim) yerelleştirme, Denetim değiştirilmiş bir sürümünü oluşturmanız gerekir. IDL, desteklemek istediğiniz her dil için (Denetim tür kitaplığı oluşturmak için bir komut dosyası) dosyası. Bu, denetim özellik adları yerelleştirme gereken tek yerdir.  
   
  Yerelleştirilmiş denetimi geliştirirken, yerel ayar kimliği türü kitaplığı düzeyinde bir öznitelik olarak içerir. Örneğin, Fransızca yerelleştirilmiş özellik adlarıyla bir tür kitaplığı sağlamak istiyorsanız, ÖRNEĞİNİZİ bir kopyasını oluşturun. IDL dosya ve SAMPLEFR çağırın. IDL. Yerel ayar kimliği özniteliği (Fransızca için yerel ayar kimliği: 0x040c) dosyasına eklemek için aşağıdakilere benzer:  
@@ -89,7 +84,7 @@ Bu makalede ActiveX denetim arabirimleri yerelleştirme için yordamlar açıkla
   
  Denetim kaydedildiğinde `AfxOleRegisterTypeLib` işlevi otomatik olarak arar için belirtilen. TLB dosyası denetimi ile aynı dizinde ve Windows kayıt veritabanında kaydeder. Varsa. TLB dosya bulunamadı, işlevi hiçbir etkisi olmaz.  
   
-##  <a name="_core_localizing_the_control.92.s_user_interface"></a>Denetimin kullanıcı arabirimi yerelleştirme  
+##  <a name="_core_localizing_the_control.92.s_user_interface"></a> Denetimin kullanıcı arabirimi yerelleştirme  
  Bir denetimin kullanıcı arabirimi yerelleştirme için tüm denetim kullanıcıya görünen kaynakları (örneğin, özellik sayfaları ve hata iletileri) dile özgü kaynak DLL'leri yerleştirin. Kullanıcının yerel ayarı için uygun DLL seçmek için kapsayıcının ortam LocaleID özelliği sonra kullanabilirsiniz.  
   
  Aşağıdaki kod örneğinde bulmak ve belirli bir yerel kaynak DLL'si yüklemek için bir yaklaşım gösterilmektedir. Adlı bu üye işlevi `GetLocalizedResourceHandle` Bu örnekte, ActiveX denetimi sınıfınızın üye işlevi olabilir:  

@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C3421 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3421 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3421
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3421
 ms.assetid: b52050c6-17a4-424a-8894-337b0cec7010
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b702bd6481041599c8ed67cf5f7e2443864bf0a1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 441bfb9d9c5f48b7531b92581a9bf6aad31b38ec
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3421"></a>Derleyici Hatası C3421
 'type': ya da olduğu gibi bu sınıf için sonlandırıcıyı çağrılamıyor erişilemez ya da mevcut değil  

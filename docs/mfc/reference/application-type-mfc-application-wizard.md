@@ -1,13 +1,10 @@
 ---
-title: "Uygulama türü, MFC Uygulama Sihirbazı | Microsoft Docs"
-ms.custom: 
+title: Uygulama türü, MFC Uygulama Sihirbazı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.appwiz.mfc.exe.apptype
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - static libraries, MFC
 ms.assetid: c3f62b0e-3f13-42c5-9859-d3890d0c3e1d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45253eed40e9a79dbcb372f63cc44aaeb99edbe0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5708e823c57ecdb8470a398c4192cba1a5b6e411
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="application-type-mfc-application-wizard"></a>Uygulama Türü, MFC Uygulama Sihirbazı
 Bu sayfanın kullanmak [MFC Uygulama Sihirbazı'nı](../../mfc/reference/mfc-application-wizard.md) tasarımı ve yeni bir MFC uygulaması için temel özellikleri ekleyin.  

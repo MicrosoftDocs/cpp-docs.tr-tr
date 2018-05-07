@@ -1,13 +1,10 @@
 ---
-title: "İletişim kutusu veri değişimi ve doğrulaması | Microsoft Docs"
-ms.custom: 
+title: İletişim kutusu veri değişimi ve doğrulaması | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -24,17 +21,15 @@ helpviewer_keywords:
 - dialog boxes [MFC], retrieving data
 - retrieving dialog box data
 ms.assetid: 7d373554-7330-43ae-abf1-4bb14e437b4a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af38919a65c7ecb16692f5833873a630e713951c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0cc12a76f73e2d84a4cb5df66a6dd3d01249265a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dialog-data-exchange-and-validation"></a>İletişim Kutusu Veri Değişimi ve Doğrulaması
 İletişim kutusu veri değişimi (DDX) bir iletişim kutusu denetimleri başlatmak ve kullanıcı tarafından veri girişi toplamak için kolay yoludur. İletişim verisi doğrulama (DDV), bir iletişim kutusu veri girişi doğrulamak için kolay bir yoludur. DDX ve DDV iletişim kutularında yararlanmak için kullanmak [üye değişkeni ekleme](../ide/add-member-variable-wizard.md) veri üyeleri oluşturmak ve kendi veri türleri ayarlama ve doğrulama kurallarını belirtmek için.  

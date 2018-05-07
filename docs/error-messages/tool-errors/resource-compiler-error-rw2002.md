@@ -2,11 +2,8 @@
 title: Kaynak Derleyicisi hatası RW2002 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: ''
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - RW2002
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - RW2002
 ms.assetid: b1d1a49b-b50b-4b0b-9f09-c7762e2dbe8f
-caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db322791c3804f387c452b3839260826585a2e30
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bb42298a7140439e3578281de60075f540b09175
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="resource-compiler-error-rw2002"></a>Kaynak Derleyicisi Hatası RW2002
 Ayrıştırma hatası  
@@ -56,7 +51,7 @@ Ayrıştırma hatası
   
      **Başlamak** anahtar sözcüğü hemen uymalıdır **STRINGTABLE** anahtar sözcüğü.  
   
-7.  **Dize sabitleri yeniden kullanamazsınız**  
+7.  **dize sabitleri yeniden kullanamazsınız**  
   
      İki kez içinde aynı değere kullanarak bir **STRINGTABLE** deyimi. Ondalık ve onaltılık değerler çakışan karıştırma değil emin olun. Her Kimliğinde bir **STRINGTABLE** benzersiz olması gerekir. En yüksek verimlilik için 16 birden fazla üzerinde Başlat bitişik sabitleri kullanın.  
   
@@ -64,7 +59,7 @@ Ayrıştırma hatası
   
      Bir denetim karakteri **HIZLANDIRICILARI** ifadesi geçersiz. Aşağıdaki düzeltme işareti karakteri (**^**) arasında olmalıdır A ile Z, kapsayıcı.  
   
-9. **İzin boş menüleri**  
+9. **izin boş menüleri**  
   
      Bir **son** anahtar sözcüğü görünür tüm menü öğelerini tanımlanan önce **menü** deyimi. Kaynak Derleyicisi boş menüleri izin vermez. Tüm açık tırnak içine sahip olmadığınız emin olun **menü** deyimi.  
   
@@ -108,7 +103,7 @@ Ayrıştırma hatası
   
      *Pointsize* yazı tipi seçeneğinde alanını **iletişim** deyimi bir nokta boyutu tamsayı olmalıdır.  
   
-20. **Beklenen sayısal iletişim sabiti**  
+20. **beklenen sayısal iletişim sabiti**  
   
      A **iletişim** deyimi için tamsayı değerlerini gerektirir *x, y, genişlik*, ve *yükseklik* alanları. Bu değerleri sonra dahil olduğundan emin olun **iletişim** anahtar sözcüğü ve negatif olmalarını değil.  
   

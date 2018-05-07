@@ -1,13 +1,10 @@
 ---
-title: "Boşta çevrim işleme | Microsoft Docs"
-ms.custom: 
+title: Boşta çevrim işleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - processing [MFC]
 - background processing [MFC]
 ms.assetid: 5c7c46c1-6107-4304-895f-480983bb1e44
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: baabba60ffaf886b7a34acfbff5b923a4495fa1b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d66983eb915c856ecf52e225b71151359a499b4b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="idle-loop-processing"></a>Boşta Çevrim İşleme
 Birçok uygulama "arka planda." uzun yönlendirilmeden Bazen performans değerlendirmeleri gibi iş için çoklu iş parçacığı kullanımı kullanarak dikte. İş parçacığı içeren ek geliştirme yükünü MFC yapar boşta kalma süresi iş gibi basit görevleri için önerilmez şekilde [ONIDLE](../mfc/reference/cwinthread-class.md#onidle) işlevi. Bu makalede üzerindeki boşta işleme odaklanır. Çoklu iş parçacığı kullanımı, bkz: hakkında daha fazla bilgi için [çoklu iş parçacığı kullanımı konuları](../parallel/multithreading-support-for-older-code-visual-cpp.md).  
@@ -48,15 +43,15 @@ Birçok uygulama "arka planda." uzun yönlendirilmeden Bazen performans değerle
   
 -   Başka katıştırma **PeekMessage** uygulamada başka bir yere döngü.  
   
-##  <a name="_core_peekmessage_in_the_mfc_message_loop"></a>MFC ileti döngüsü PeekMessage  
+##  <a name="_core_peekmessage_in_the_mfc_message_loop"></a> MFC ileti döngüsü PeekMessage  
  MFC ile geliştirilen bir uygulamada ana ileti döngü içinde `CWinThread` sınıfı içeren çağıran bir ileti döngüsü [PeekMessage](http://msdn.microsoft.com/library/windows/desktop/ms644943) Win32 API. Bu döngü ayrıca çağrıları `OnIdle` üye işlevini `CWinThread` iletileri arasında. Bir uygulama iletileri bu boşta kalma süresi geçersiz kılarak işleyebilir `OnIdle` işlevi.  
   
 > [!NOTE]
->  **Çalıştırma**, `OnIdle`, ve belirli bir üye işlevleri şimdi sınıf üyesi `CWinThread` yerine sınıfının `CWinApp`. `CWinApp`türetilmiş `CWinThread`.  
+>  **Çalıştırma**, `OnIdle`, ve belirli bir üye işlevleri şimdi sınıf üyesi `CWinThread` yerine sınıfının `CWinApp`. `CWinApp` türetilmiş `CWinThread`.  
   
  Boşta işleme gerçekleştirme hakkında daha fazla bilgi için bkz: [ONIDLE](../mfc/reference/cwinthread-class.md#onidle) içinde *MFC başvurusu*.  
   
-##  <a name="_core_peekmessage_elsewhere_in_your_application"></a>PeekMessage uygulamanızda başka bir yerde  
+##  <a name="_core_peekmessage_elsewhere_in_your_application"></a> PeekMessage uygulamanızda başka bir yerde  
  Bir ileti döngüsü işlevlerinizi birinde katıştırma bir uygulamada işleme boşta gerçekleştirmek için başka bir yöntem içerir. Bu ileti döngüsü bulunan MFC'nin ana ileti döngüsüne çok benzer [CWinThread::Run](../mfc/reference/cwinthread-class.md#run). MFC ile geliştirilen bir uygulamayı bu tür bir döngüde ana ileti döngüsü aynı işlevleri çoğunu gerçekleştirmeniz gerekir anlamına gelir. Aşağıdaki kod parçası, MFC ile uyumlu bir ileti döngüsü yazma gösterir:  
   
  [!code-cpp[NVC_MFCDocView#8](../mfc/codesnippet/cpp/idle-loop-processing_1.cpp)]  

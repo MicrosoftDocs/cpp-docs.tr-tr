@@ -1,13 +1,10 @@
 ---
-title: "MFC araç çubuğu uygulaması | Microsoft Docs"
-ms.custom: 
+title: MFC araç çubuğu uygulaması | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -26,17 +23,15 @@ helpviewer_keywords:
 - toolbars [MFC]
 - toolbars [MFC], implementing MFC toolbars
 ms.assetid: af3319ad-c430-4f90-8361-e6a2c06fd084
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 540f3240588b8e6fde119a167eace8103ef58c5a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b0fd3a41d7574d627ebd374af170ce47801cd351
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-toolbar-implementation"></a>MFC Araç Çubuğu Uygulaması
 Bir araç çubuğu bir [denetim çubuğu](../mfc/control-bars.md) denetimleri bit eşlem görüntülerini içerir. Bu görüntüleri pushbuttons, onay kutusu veya radyo düğmeleri gibi davranabilir. MFC sınıf sağlayan [CToolbar](../mfc/reference/ctoolbar-class.md) araç çubukları yönetmek için.  
@@ -64,12 +59,12 @@ Bir araç çubuğu bir [denetim çubuğu](../mfc/control-bars.md) denetimleri bi
   
 -   [Araç çubuğu bit eşlem](#_core_the_toolbar_bitmap)  
   
-##  <a name="_core_toolbar_buttons"></a>Araç çubuğu düğmeleri  
+##  <a name="_core_toolbar_buttons"></a> Araç çubuğu düğmeleri  
  Araç çubuğu düğmeleri için menü öğeleri benzer. Her iki tür kullanıcı arabirimi nesneleri işleyici işlevleri sağlayarak programınızı işleme komutları oluşturur. Genellikle araç çubuğu düğmeleri aynı işlevselliği için bir alternatif kullanıcı arabirimi sağlayan menü komutlarını işlevlerin birer yinelemesidir. Yalnızca düğme ve menü öğesi aynı kimliğe vererek bu tür çoğaltma düzenlenmiş  
   
  Görünür ve pushbuttons, onay kutusu veya radyo düğmeleri davranır düğmeleri bir araç çubuğu yapabilirsiniz. Daha fazla bilgi için bkz [CToolBar](../mfc/reference/ctoolbar-class.md).  
   
-##  <a name="_core_docking_and_floating_toolbars"></a>Yerleşen ve kayan araç çubukları  
+##  <a name="_core_docking_and_floating_toolbars"></a> Yerleşen ve kayan araç çubukları  
  MFC araç çubuğu yapabilirsiniz:  
   
 -   Sütunlardan biri kendi üst penceresi sabit kalır.  
@@ -82,10 +77,10 @@ Bir araç çubuğu bir [denetim çubuğu](../mfc/control-bars.md) denetimleri bi
   
  Daha fazla bilgi için bkz: [Docking ve kayan araç çubukları](../mfc/docking-and-floating-toolbars.md).  
   
-##  <a name="_core_toolbars_and_tool_tips"></a>Araç çubukları ve araç ipuçları  
+##  <a name="_core_toolbars_and_tool_tips"></a> Araç çubukları ve araç ipuçları  
  MFC araç çubukları de yapılabilir "ipuçları aracı" görüntülenecek — küçük açılır pencereleri içeren bir araç düğmenin amacı kısa metin açıklaması. Kullanıcı bir araç çubuğu düğmesi fare taşınırken, araç ipucu penceresi ipucu sunmak için açılır. Daha fazla bilgi için bkz: [araç çubuğu araç ipuçları](../mfc/toolbar-tool-tips.md).  
   
-##  <a name="_core_the_ctoolbar_and_ctoolbarctrl_classes"></a>CToolBar ve CToolBarCtrl sınıfları  
+##  <a name="_core_the_ctoolbar_and_ctoolbarctrl_classes"></a> CToolBar ve CToolBarCtrl sınıfları  
  Uygulamanızın araç çubukları sınıfı aracılığıyla yönetmek [CToolBar](../mfc/reference/ctoolbar-class.md). MFC sürüm 4.0 itibariyle `CToolBar` araç ortak denetimi Windows 95 altında kullanılabilir veya üstünü ve Windows NT 3.51 veya sonraki bir sürümü kullanmayı reimplemented.  
   
  MFC yaptığından bu yeniden uygulama araç çubukları, daha az MFC kodu sonuçlanır. işletim sistemi desteği kullanın. Yeniden uygulama yeteneği de geliştirir. Kullanabileceğiniz `CToolBar` araç çubukları veya işlemek için üye işlevleri, arka plandaki başvuru edinebilirsiniz [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesne ve araç çubuğunu özelleştirme ve ek işlevsellik için kendi üye işlevlerini çağırın.  
@@ -95,7 +90,7 @@ Bir araç çubuğu bir [denetim çubuğu](../mfc/control-bars.md) denetimleri bi
   
  Ayrıca bkz. MFC genel örnek [DOCKTOOL](../visual-cpp-samples.md).  
   
-##  <a name="_core_the_toolbar_bitmap"></a>Araç çubuğu bit eşlem  
+##  <a name="_core_the_toolbar_bitmap"></a> Araç çubuğu bit eşlem  
  Bir kez oluşturulan bir `CToolBar` nesnesi, her düğme için bir görüntü içeren tek bir bit eşlem yükleyerek araç görüntüsü oluşturur. Uygulama Sihirbazı'nı özelleştirebileceğiniz bir standart araç bit eşlem Visual C++ ile oluşturur [araç çubuğu Düzenleyicisi](../windows/toolbar-editor.md).  
   
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  

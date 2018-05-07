@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4917 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4917 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4917
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4917
 ms.assetid: c05e2610-4a5d-4f4b-a99b-c15fd7f1d5f1
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37849850c89f8c02726b730fbdbabed66bd849b9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: afc38da9bb06879745fb96afd8224a4f599bb252
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4917"></a>Derleyici Uyarısı (düzey 1) C4917
 'bildirimcisi': GUID yalnızca bir sınıf, arabirim veya ad alanı ile ilişkilendirilebilir  

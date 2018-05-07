@@ -1,12 +1,9 @@
 ---
-title: "CMFCFontComboBox sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCFontComboBox sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCFontComboBox
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - CMFCFontComboBox [MFC], Setup
 - CMFCFontComboBox [MFC], m_bDrawUsingFont
 ms.assetid: 9a53fb0c-7b45-486d-8187-2a4c723d9fbb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb549d61f147d24c2eea0a578cda3663c078eb4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4b37901bddec6a886ddb1ae538f3294bd9d28d9a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcfontcombobox-class"></a>CMFCFontComboBox sınıfı
 `CMFCFontComboBox` Sınıfı yazı tipleri listesini içeren bir birleşik giriş kutusu denetimi oluşturur.  
@@ -90,7 +85,7 @@ class CMFCFontComboBox : public CComboBox
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxfontcombobox.h  
   
-##  <a name="cmfcfontcombobox"></a>CMFCFontComboBox::CMFCFontComboBox  
+##  <a name="cmfcfontcombobox"></a>  CMFCFontComboBox::CMFCFontComboBox  
  Oluşturan bir `CMFCFontComboBox` nesnesi.  
   
 ```  
@@ -101,7 +96,7 @@ CMFCFontComboBox();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getselfont"></a>CMFCFontComboBox::GetSelFont  
+##  <a name="getselfont"></a>  CMFCFontComboBox::GetSelFont  
  Şu anda seçili yazı tipi ilgili bilgileri alır.  
   
 ```  
@@ -113,7 +108,7 @@ CMFCFontInfo* GetSelFont() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="m_bdrawusingfont"></a>CMFCFontComboBox::m_bDrawUsingFont  
+##  <a name="m_bdrawusingfont"></a>  CMFCFontComboBox::m_bDrawUsingFont  
  Framework geçerli yazı tipi açılan kutuda öğe etiketlerini çizmek için kullanılacak yazı tipini belirtir.  
   
 ```  
@@ -123,7 +118,7 @@ static BOOL m_bDrawUsingFont;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye kümesine `TRUE` her öğe etiketi çizmek için aynı yazı tipi kullanmaya framework yönlendirmek için. Bu üye kümesine `FALSE` her öğe etiketi adı etiketi ile aynı olan yazı tipiyle çizmek için framework yönlendirmek için. Bu üye varsayılan değeri `FALSE`.  
   
-##  <a name="selectfont"></a>CMFCFontComboBox::SelectFont  
+##  <a name="selectfont"></a>  CMFCFontComboBox::SelectFont  
  Yazı tipi açılan kutusundan belirtilen ölçütlere uyan yazıtipi seçer.  
   
 ```  
@@ -136,17 +131,17 @@ BOOL SelectFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDesc`  
+ [in] `pDesc`  
  Yazı tipi açıklaması nesnesine noktaları.  
   
- [in]`lpszName`  
+ [in] `lpszName`  
  Yazı tipi adı belirtir.  
   
- [in]`nCharSet`  
+ [in] `nCharSet`  
  Bir karakter kümesini belirtir. DEFAULT_CHARSET varsayılan değerdir. Daha fazla bilgi için bkz: `lfCharSet` üyesi [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`yazı tipi açılan kutusunda bir öğe belirtilen yazı tipi açıklaması nesnesine veya yazı tipi adı ve charset eşleşirse; Aksi takdirde `FALSE`.  
+ `TRUE` yazı tipi açılan kutusunda bir öğe belirtilen yazı tipi açıklaması nesnesine veya yazı tipi adı ve charset eşleşirse; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Seçin ve belirtilen yazı tipi için karşılık gelen yazı tipi birleşik giriş kutusu öğesi kaydırma için bu yöntemi kullanın.  
@@ -157,7 +152,7 @@ BOOL SelectFont(
  [!code-cpp[NVC_MFC_NewControls#34](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_1.h)]  
 [!code-cpp[NVC_MFC_NewControls#35](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_2.cpp)]  
   
-##  <a name="setup"></a>CMFCFontComboBox::Setup  
+##  <a name="setup"></a>  CMFCFontComboBox::Setup  
  Yazı tipi birleşik giriş kutusu öğeleri listesini başlatır.  
   
 ```  
@@ -168,17 +163,17 @@ BOOL Setup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nFontType`  
+ [in] `nFontType`  
  Yazı tipini belirtir. Varsayılan değer Bitsel (veya) DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE birleşimidir.  
   
- [in]`nCharSet`  
+ [in] `nCharSet`  
  Yazı tipi karakter kümesini belirtir. DEFAULT_CHARSET varsayılan değerdir.  
   
- [in]`nPitchAndFamily`  
+ [in] `nPitchAndFamily`  
  Aile ve yazı tipi aralığı belirtir. DEFAULT_PITCH varsayılan değerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`yazı tipi birleşik giriş kutusu başarıyla başlatıldı Aksi takdirde `FALSE`.  
+ `TRUE` yazı tipi birleşik giriş kutusu başarıyla başlatıldı Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, belirtilen parametrelerle eşleşen yüklü yazı tiplerini numaralandırma ve bu yazı tipi adlarını yazı tipi açılan kutuda ekleme yazı tipi birleşik giriş kutusu başlatır.  

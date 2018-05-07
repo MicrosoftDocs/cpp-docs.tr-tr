@@ -1,12 +1,9 @@
 ---
-title: "CSinusoidalTransitionFromRange sınıfı | Microsoft Docs"
-ms.custom: 
+title: CSinusoidalTransitionFromRange sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CSinusoidalTransitionFromRange
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - CSinusoidalTransitionFromRange [MFC], m_period
 - CSinusoidalTransitionFromRange [MFC], m_slope
 ms.assetid: 8b66a729-5f10-431a-b055-e3600d0065da
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d53e89f1fa73926976896743ab5293d85e5d81c0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 09c302ec414e26c71d8989bb6d624314c8eb6db4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="csinusoidaltransitionfromrange-class"></a>CSinusoidalTransitionFromRange sınıfı
 Verilen oscillation aralığındadır bir aralık sinusoidal geçiş yalıtır.  
@@ -87,7 +82,7 @@ class CSinusoidalTransitionFromRange : public CBaseTransition;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxanimationcontroller.h  
   
-##  <a name="create"></a>CSinusoidalTransitionFromRange::Create  
+##  <a name="create"></a>  CSinusoidalTransitionFromRange::Create  
  Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.  
   
 ```  
@@ -103,7 +98,7 @@ virtual BOOL Create(
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçiş başarılı bir şekilde oluşturulursa TRUE; Aksi takdirde FALSE.  
   
-##  <a name="csinusoidaltransitionfromrange"></a>CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange  
+##  <a name="csinusoidaltransitionfromrange"></a>  CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange  
  Bir geçiş nesnesi oluşturur.  
   
 ```  
@@ -131,35 +126,35 @@ CSinusoidalTransitionFromRange(
  `slope`  
  Geçiş başlangıcında eğimi.  
   
-##  <a name="m_dblmaximumvalue"></a>CSinusoidalTransitionFromRange::m_dblMaximumValue  
+##  <a name="m_dblmaximumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMaximumValue  
  En yoğun sinusoidal wave, animasyon değişkeninin değeri.  
   
 ```  
 DOUBLE m_dblMaximumValue;  
 ```  
   
-##  <a name="m_dblminimumvalue"></a>CSinusoidalTransitionFromRange::m_dblMinimumValue  
+##  <a name="m_dblminimumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMinimumValue  
  Sinusoidal wave, trough adresindeki animasyon değişkeninin değeri.  
   
 ```  
 DOUBLE m_dblMinimumValue;  
 ```  
   
-##  <a name="m_duration"></a>CSinusoidalTransitionFromRange::m_duration  
+##  <a name="m_duration"></a>  CSinusoidalTransitionFromRange::m_duration  
  Geçiş süresi.  
   
 ```  
 UI_ANIMATION_SECONDS m_duration;  
 ```  
   
-##  <a name="m_period"></a>CSinusoidalTransitionFromRange::m_period  
+##  <a name="m_period"></a>  CSinusoidalTransitionFromRange::m_period  
  Sinusoidal wave oscillation saniye cinsinden süre.  
   
 ```  
 UI_ANIMATION_SECONDS m_period;  
 ```  
   
-##  <a name="m_slope"></a>CSinusoidalTransitionFromRange::m_slope  
+##  <a name="m_slope"></a>  CSinusoidalTransitionFromRange::m_slope  
  Geçiş başlangıcında eğimi.  
   
 ```  

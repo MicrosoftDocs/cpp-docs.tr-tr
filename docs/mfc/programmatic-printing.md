@@ -1,13 +1,10 @@
 ---
-title: "Program aracılığıyla yazdırma | Microsoft Docs"
-ms.custom: 
+title: Program aracılığıyla yazdırma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - IPrint interface
 - printing [MFC]
 ms.assetid: 3db0945b-5e13-4be4-86a0-6aecdae565bd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 927a5d9b4bea41157c8cfac6f3dbfe42fc323bb2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a439080cec7f3ae96014e9df6ddc65782686bf0e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="programmatic-printing"></a>Program Aracılığıyla Yazdırma
 OLE sağlanan kalıcı belgeleri benzersiz şekilde tanımlamak için anlamına gelir (**GetClassFile**) ve bunların ilişkili koda yükleyin (`CoCreateInstance`, **QueryInterface(IID_IPersistFile)**, **QueryInterface(IID_IPersistStorage)**, **IPersistFile::Load**, ve **IPersistStorage::Load**). Etkin belge kapsaması (OLE 2.0 ilk olarak gönderilmeyen varolan bir OLE tasarımı kullanarak) daha fazla yazdırma belgeleri etkinleştirmek için bir temel standart yazdırma arabirimi tanıtır `IPrint`, yükleyebilir herhangi bir nesne aracılığıyla genel olarak kullanılabilir kalıcı durum belge türü. Etkin belge her görünümünü isteğe bağlı olarak destekleyebilir **IPrint** bu yetenekleri sağlamak için arabirim.  
@@ -61,7 +56,7 @@ interface IPrint : IUnknown
   
  HKEY_CLASSES_ROOT\CLSID\\{...} \Printable  
   
- `IPrint`genellikle ya da destekler aynı nesne üzerinde uygulanan `IPersistFile` veya `IPersistStorage`. Arayanlar "Printable" anahtarı için kayıt defterinde bakarak bazı sınıfı kalıcı durumunu program aracılığıyla yazdırma olanağı unutmayın. Şu anda "Yazdırılabilir" için destek en az gösterir `IPrint`; diğer arabirimleri gelecekte bu ardından ile de kullanılabilir olur tanımlanabilir `QueryInterface` nerede **IPrint** yalnızca temel düzeyde desteği temsil eder.  
+ `IPrint` genellikle ya da destekler aynı nesne üzerinde uygulanan `IPersistFile` veya `IPersistStorage`. Arayanlar "Printable" anahtarı için kayıt defterinde bakarak bazı sınıfı kalıcı durumunu program aracılığıyla yazdırma olanağı unutmayın. Şu anda "Yazdırılabilir" için destek en az gösterir `IPrint`; diğer arabirimleri gelecekte bu ardından ile de kullanılabilir olur tanımlanabilir `QueryInterface` nerede **IPrint** yalnızca temel düzeyde desteği temsil eder.  
   
  Yazdırma işlemi sırasında istemci veya yazdırma devam denetlemek için yazdırma başlatılan kapsayıcı isteyebilirsiniz. Örneğin, kapsayıcı yazdırma işi mümkün olan en kısa sürede sonlanmalıdır "yazdırma Durdur" bir komutu destekleyebilir. Bu özelliği desteklemek için istemcinin yazdırılabilir nesnesinin bir küçük Bildirim havuzu nesnesi arabirimi uygulayabilirsiniz `IContinueCallback`:  
   

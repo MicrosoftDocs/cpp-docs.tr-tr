@@ -1,13 +1,10 @@
 ---
-title: "Olay eşlemeleri havuzu | Microsoft Docs"
-ms.custom: 
+title: Olay eşlemeleri havuzu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.maps
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - event sink maps [MFC]
 ms.assetid: a9757eb2-5f4a-45ec-a2cd-ce5eec85b16f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 309474220f081a0eca67d0f83ead21c59eb649e5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ababaab7324d712457f6411ed731274ea361084b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="event-sink-maps"></a>Olay İç Havuz Eşlemeleri
 Katıştırılmış OLE denetimi bir olay başlatıldığında, denetimin kapsayıcı "MFC tarafından sağlanan bir olay havuz haritası," olarak adlandırılan bir mekanizma kullanarak olayı alır. Bu olay havuz eşlemesi her belirli olay yanı sıra bu olayların parametreleri için işleyici işlevleri belirler. Olay iç havuz eşlemeleri hakkında daha fazla bilgi için bkz: [ActiveX denetimi kapsayıcıları](../../mfc/activex-control-containers.md).  
@@ -44,7 +39,7 @@ Katıştırılmış OLE denetimi bir olay başlatıldığında, denetimin kapsay
 |[ON_PROPNOTIFY_RANGE](#on_propnotify_range)|OLE denetimleri kümesinden özelliği bildirimleri işleme için bir işleyici tanımlar.|  
 |[ON_PROPNOTIFY_REFLECT](#on_propnotify_reflect)|Denetimin kapsayıcı tarafından işlenen önce denetim tarafından gönderilen özellik bildirimlerini alır.|  
   
-##  <a name="begin_eventsink_map"></a>BEGIN_EVENTSINK_MAP  
+##  <a name="begin_eventsink_map"></a>  BEGIN_EVENTSINK_MAP  
  Olay iç havuz haritanızı tanımını başlar.  
   
 ```   
@@ -66,7 +61,7 @@ BEGIN_EVENTSINK_MAP(theClass, baseClass)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="declare_eventsink_map"></a>DECLARE_EVENTSINK_MAP  
+##  <a name="declare_eventsink_map"></a>  DECLARE_EVENTSINK_MAP  
  OLE kapsayıcı, kapsayıcı olarak bildirilecek olayları belirtmek için bir olay havuz eşlemesi sağlayabilir.  
   
 ```   
@@ -81,7 +76,7 @@ DECLARE_EVENTSINK_MAP()
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="end_eventsink_map"></a>END_EVENTSINK_MAP  
+##  <a name="end_eventsink_map"></a>  END_EVENTSINK_MAP  
  Olay iç havuz haritanızı tanımını sona erer.  
   
 ```   
@@ -91,7 +86,7 @@ END_EVENTSINK_MAP()
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="on_event"></a>ON_EVENT  
+##  <a name="on_event"></a>  ON_EVENT  
  Kullanım `ON_EVENT` bir olay için bir olay işleyicisi işlevi tanımlamak için makrosu OLE denetimi tarafından tetiklenir.  
   
 ```   
@@ -126,7 +121,7 @@ ON_EVENT(theClass, id, dispid, pfnHandler,  vtsParams)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="on_event_range"></a>ON_EVENT_RANGE  
+##  <a name="on_event_range"></a>  ON_EVENT_RANGE  
  Kullanım `ON_EVENT_RANGE` bir olay için bir olay işleyicisi işlevi tanımlamak için makrosu harekete bitişik olarak kimlikleri aralığı içindeki bir denetim kimliği sahip herhangi bir OLE denetimi tarafından.  
   
 ```   
@@ -173,7 +168,7 @@ ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="on_event_reflect"></a>ON_EVENT_REFLECT  
+##  <a name="on_event_reflect"></a>  ON_EVENT_REFLECT  
  `ON_EVENT_REFLECT` Olay bir OLE denetimin sarmalayıcı sınıfı, havuz haritasını kullanıldığında makrosu denetimin kapsayıcı tarafından işlenen önce denetim tarafından tetiklenen olayları alır.  
   
 ```   
@@ -207,7 +202,7 @@ ON_EVENT_REFLECT(theClass,  dispid, pfnHandler,  vtsParams)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="on_propnotify"></a>ON_PROPNOTIFY  
+##  <a name="on_propnotify"></a>  ON_PROPNOTIFY  
  Kullanım `ON_PROPNOTIFY` OLE denetimindeki özellik bildirimlerini işleme için bir olay havuz eşleme girişi tanımlamak için makrosu.  
   
 ```   
@@ -240,7 +235,7 @@ ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)
   
  Bir listesi için **VTS_** sabitleri, bkz: [EVENT_CUSTOM](event-maps.md#event_custom).  
   
-##  <a name="on_propnotify_range"></a>ON_PROPNOTIFY_RANGE  
+##  <a name="on_propnotify_range"></a>  ON_PROPNOTIFY_RANGE  
  Kullanım `ON_PROPNOTIFY_RANGE` bitişik olarak kimlikleri aralığı içindeki bir denetim kimliği sahip herhangi bir OLE denetimi özelliği bildirimleri işlemek için bir olay havuz eşleme girişi tanımlamak için makrosu.  
   
 ```  
@@ -271,7 +266,7 @@ ON_PROPNOTIFY_RANGE(theClass, idFirst, idLast, dispid, pfnRequest, pfnChanged)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
   
-##  <a name="on_propnotify_reflect"></a>ON_PROPNOTIFY_REFLECT  
+##  <a name="on_propnotify_reflect"></a>  ON_PROPNOTIFY_REFLECT  
  `ON_PROPNOTIFY_REFLECT` Olay bir OLE denetimin sarmalayıcı sınıfı, havuz haritasını kullanıldığında makrosu denetimin kapsayıcı tarafından işlenen önce denetim tarafından gönderilen özellik bildirimlerini alır.  
   
 ```  

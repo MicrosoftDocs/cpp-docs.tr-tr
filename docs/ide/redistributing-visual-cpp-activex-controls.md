@@ -1,30 +1,25 @@
 ---
-title: "Visual C++ ActiveX denetimlerini yeniden dağıtma | Microsoft Docs"
-ms.custom: 
+title: Visual C++ ActiveX denetimlerini yeniden dağıtma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - controls [C++], redistributing
 - controls [C++], distributing
 ms.assetid: eefbb7e4-d28c-4c35-98bf-d9540cfaae83
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c520d365a259c36baab8edeb9049aab9ac89925a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2b770bbacca06c6edfb3b9b4eda53fc7be8a7ae0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="redistributing-visual-c-activex-controls"></a>Visual C++ ActiveX Denetimlerini Yeniden Dağıtma
 Visual C++ 6.0 sonra dağıtmanız uygulamalarda kullanabileceğiniz ActiveX denetimleri sağlar. Bu denetimler, artık Visual c++'ta dahil edilir. Visual C++ 6.0 için lisans sözleşmelerine göre Visual c++'ta geliştirilen uygulamaları ile bu denetimleri dağıtabilirsiniz.  
@@ -46,7 +41,7 @@ Visual C++ 6.0 sonra dağıtmanız uygulamalarda kullanabileceğiniz ActiveX den
   
 -   Stdole2.tlb  
   
- Bu DLL'ler hedef sistemde mevcut değilse, bunlara karşılık gelen işletim sistemini güncelleştirmek için öngörülen mekanizmasını kullanarak güncelleştirilmiş almanız gerekir. Windows işletim sistemleri için en son hizmet paketleri indirebilirsiniz [http://windowsupdate.microsoft.com](http://windowsupdate.microsoft.com).  
+ Bu DLL'ler hedef sistemde mevcut değilse, bunlara karşılık gelen işletim sistemini güncelleştirmek için öngörülen mekanizmasını kullanarak güncelleştirilmiş almanız gerekir. Windows işletim sistemleri için en son hizmet paketleri indirebilirsiniz [ http://windowsupdate.microsoft.com ](http://windowsupdate.microsoft.com).  
   
  Uygulamanız bir veritabanına bağlanan ActiveX denetimlerini kullanıyorsa, Microsoft Data Access Components (MDAC) hedef sistemde yüklü olması gerekir. Daha fazla bilgi için bkz: [veritabanı destek dosyalarını yeniden dağıtma](../ide/redistributing-database-support-files.md).  
   

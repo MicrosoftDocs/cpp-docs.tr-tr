@@ -1,12 +1,9 @@
 ---
-title: "CNotSupportedException sınıfı | Microsoft Docs"
-ms.custom: 
+title: CNotSupportedException sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CNotSupportedException
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - CNotSupportedException [MFC], CNotSupportedException
 ms.assetid: e517391b-eb94-4c39-ae32-87b45bf7d624
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4013b26e3c07d6ec2a729bf9868db48923e35f86
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 510f9db4a7e5688df76baafa868846fd1614f584
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cnotsupportedexception-class"></a>CNotSupportedException sınıfı
 Desteklenmeyen bir özellik için bir istek sonucu bir özel durumu temsil eder.  
@@ -63,7 +58,7 @@ class CNotSupportedException : public CSimpleException
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afx.h  
   
-##  <a name="cnotsupportedexception"></a>CNotSupportedException::CNotSupportedException  
+##  <a name="cnotsupportedexception"></a>  CNotSupportedException::CNotSupportedException  
  Oluşturan bir `CNotSupportedException` nesnesi.  
   
 ```  

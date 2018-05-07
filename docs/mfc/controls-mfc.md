@@ -1,13 +1,10 @@
 ---
 title: Denetimler (MFC) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - common controls [MFC]
 - controls [MFC]
 ms.assetid: b2842884-6435-4b8f-933b-21671bf8af95
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b18979ec502ea645cf8cdac39ca9ea75cb229e61
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: cd841b6bc3c55ed58db101c6226bbc24819b248f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="controls-mfc"></a>Denetimler (MFC)
 Kullanıcıları girin ya da verileri işlemek için etkileşim kurabildikleri nesneleri denetimleridir. Bunlar genellikle iletişim kutularında veya araç çubukları görüntülenir. Bu konuda ailesi denetimleri üç ana türlerini kapsar:  
@@ -53,35 +48,35 @@ Kullanıcıları girin ya da verileri işlemek için etkileşim kurabildikleri n
   
 -   [CDragListBox](../mfc/reference/cdraglistbox-class.md)  
   
-##  <a name="_core_finding_information_about_windows_common_controls"></a>Windows ortak denetimleri hakkında bilgi bulma  
+##  <a name="_core_finding_information_about_windows_common_controls"></a> Windows ortak denetimleri hakkında bilgi bulma  
  Aşağıdaki tabloda her denetimin MFC sarmalayıcı sınıfı dahil olmak üzere Windows ortak denetimleri kısaca açıklanmaktadır.  
   
-### <a name="_core_windows_common_controls_and_mfc_classes"></a>Windows ortak denetimleri ve MFC sınıfları  
+### <a name="_core_windows_common_controls_and_mfc_classes"></a>  Windows ortak denetimleri ve MFC sınıfları  
   
-|Denetim|MFC class|Açıklama|Windows 95'de yeni|  
+|Denetim|MFC sınıfı|Açıklama|Windows 95'de yeni|  
 |-------------|---------------|-----------------|------------------------|  
-|[animasyon](../mfc/using-canimatectrl.md)|[CAnimateCtrl](../mfc/reference/canimatectrl-class.md)|Bir AVI video klip, art arda çerçeveleri görüntüler|Evet|  
+|[Animasyon](../mfc/using-canimatectrl.md)|[CAnimateCtrl](../mfc/reference/canimatectrl-class.md)|Bir AVI video klip, art arda çerçeveleri görüntüler|Evet|  
 |Düğmesi|[CButton](../mfc/reference/cbutton-class.md)|Bir eylemin gerçekleşmesini pushbuttons; onay kutuları, radyo düğmeleri ve Grup kutuları için de kullanılır|Hayır|  
 |birleşik giriş kutusu|[CComboBox](../mfc/reference/ccombobox-class.md)|Düzenleme kutusu ve liste kutusu birleşimi|Hayır|  
 |[Tarih ve Saat Seçici](../mfc/using-cdatetimectrl.md)|[CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)|Kullanıcının belirli bir tarih veya saat değeri seçmesine izin verir|Evet|  
 |Düzenleme kutusu|[CEdit](../mfc/reference/cedit-class.md)|Metin girerek kutuları|Hayır|  
 |[Genişletilmiş Birleşik giriş kutusu](../mfc/using-ccomboboxex.md)|[CComboBoxEx](../mfc/reference/ccomboboxex-class.md)|Birleşik giriş kutusu denetimi resimleri görüntüleme olanağı|Evet|  
-|[header](../mfc/using-cheaderctrl.md)|[CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)|Bir metin sütunu görünür düğme; görüntülenen metin genişliğini denetler|Evet|  
-|[hotkey](../mfc/using-chotkeyctrl.md)|[CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)|"Sık kullanılan tuş" oluşturmak kullanıcının sağlayan penceresi hızlı bir şekilde bir eylemi gerçekleştirmek için|Evet|  
+|[Üstbilgi](../mfc/using-cheaderctrl.md)|[CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)|Bir metin sütunu görünür düğme; görüntülenen metin genişliğini denetler|Evet|  
+|[Kısayol tuşu](../mfc/using-chotkeyctrl.md)|[CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)|"Sık kullanılan tuş" oluşturmak kullanıcının sağlayan penceresi hızlı bir şekilde bir eylemi gerçekleştirmek için|Evet|  
 |[Resim Listesi](../mfc/using-cimagelist.md)|[Cımagelist](../mfc/reference/cimagelist-class.md)|Simgeler veya bit eşlemler büyük kümelerini yönetmek için kullanılan görüntü koleksiyonu (resim listesi denetim gerçekten değildir; diğer denetimler tarafından kullanılan listelerini destekler)|Evet|  
 |[list](../mfc/using-clistctrl.md)|[CListCtrl](../mfc/reference/clistctrl-class.md)|Metin simgelerle görüntüler penceresi|Evet|  
 |Liste kutusu|[CListBox](../mfc/reference/clistbox-class.md)|Dizeleri listesini içeren kutusu|Hayır|  
 |[Ay takvim](../mfc/using-cmonthcalctrl.md)|[CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)|Tarih bilgileri görüntüleyen denetimi|Evet|  
-|[ilerleme durumu](../mfc/using-cprogressctrl.md)|[CProgressCtrl](../mfc/reference/cprogressctrl-class.md)|Uzun bir işlemin ilerlemesini gösterir penceresi|Evet|  
-|[rebar](../mfc/using-crebarctrl.md)|[CRebarCtrl](../mfc/reference/crebarctrl-class.md)|Ek alt windows denetimleri biçiminde içerebilir araç çubuğu|Evet|  
-|[zengin düzenleme](../mfc/using-cricheditctrl.md)|[CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)|Hangi kullanıcı penceresinde karakter ve paragraf biçimlendirmesini düzenleyebilirsiniz (bkz [zengin düzenleme denetimleri ilgili sınıflar](../mfc/classes-related-to-rich-edit-controls.md))|Evet|  
+|[İlerleme durumu](../mfc/using-cprogressctrl.md)|[CProgressCtrl](../mfc/reference/cprogressctrl-class.md)|Uzun bir işlemin ilerlemesini gösterir penceresi|Evet|  
+|[Rebar](../mfc/using-crebarctrl.md)|[CRebarCtrl](../mfc/reference/crebarctrl-class.md)|Ek alt windows denetimleri biçiminde içerebilir araç çubuğu|Evet|  
+|[Zengin düzenleme](../mfc/using-cricheditctrl.md)|[CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)|Hangi kullanıcı penceresinde karakter ve paragraf biçimlendirmesini düzenleyebilirsiniz (bkz [zengin düzenleme denetimleri ilgili sınıflar](../mfc/classes-related-to-rich-edit-controls.md))|Evet|  
 |kaydırma çubuğu|[CScrollBar](../mfc/reference/cscrollbar-class.md)|Bir iletişim kutusu (değil, bir pencere) içindeki bir denetim olarak kullanılan kaydırma çubuğu|Hayır|  
-|[slider](../mfc/using-csliderctrl.md)|[CSliderCtrl](../mfc/reference/csliderctrl-class.md)|İsteğe bağlı bir kaydırıcı denetimi içeren pencere onay işaretleri|Evet|  
+|[Kaydırıcı](../mfc/using-csliderctrl.md)|[CSliderCtrl](../mfc/reference/csliderctrl-class.md)|İsteğe bağlı bir kaydırıcı denetimi içeren pencere onay işaretleri|Evet|  
 |[değer değiştirme düğmesi](../mfc/using-cspinbuttonctrl.md)|[CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)|Ok düğmelerini kullanıcı çifti için artışı tıklatın veya bir değer azaltma|Evet|  
-|static-text|[CStatic](../mfc/reference/cstatic-class.md)|Diğer denetimleri etiketlemek için metin|Hayır|  
-|[Durum çubuğu](../mfc/using-cstatusbarctrl.md)|[CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)|MFC sınıfı benzer durumu bilgilerini görüntüleme penceresi`CStatusBar`|Evet|  
-|[tab](../mfc/using-ctabctrl.md)|[CTabCtrl](../mfc/reference/ctabctrl-class.md)|Bir dizüstü bilgisayarın Bölücü benzer; kullanılan "sekme iletişim kutuları" veya özellik sayfaları|Evet|  
-|[araç çubuğu](../mfc/using-ctoolbarctrl.md)|[CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)|Komut oluşturma penceresiyle düğmeleri, benzer şekilde MFC sınıfı`CToolBar`|Evet|  
+|statik metin|[CStatic](../mfc/reference/cstatic-class.md)|Diğer denetimleri etiketlemek için metin|Hayır|  
+|[Durum çubuğu](../mfc/using-cstatusbarctrl.md)|[CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)|MFC sınıfı benzer durumu bilgilerini görüntüleme penceresi `CStatusBar`|Evet|  
+|[Sekmesi](../mfc/using-ctabctrl.md)|[CTabCtrl](../mfc/reference/ctabctrl-class.md)|Bir dizüstü bilgisayarın Bölücü benzer; kullanılan "sekme iletişim kutuları" veya özellik sayfaları|Evet|  
+|[Araç çubuğu](../mfc/using-ctoolbarctrl.md)|[CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)|Komut oluşturma penceresiyle düğmeleri, benzer şekilde MFC sınıfı `CToolBar`|Evet|  
 |[Araç İpucu](../mfc/using-ctooltipctrl.md)|[CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md)|Araç çubuğu düğmesi veya başka bir araç amacını açıklayan küçük açılır penceresi|Evet|  
 |[Ağaç](../mfc/using-ctreectrl.md)|[CTreeCtrl](../mfc/reference/ctreectrl-class.md)|Hiyerarşik öğelerin listesini görüntüleyen penceresi|Evet|  
   

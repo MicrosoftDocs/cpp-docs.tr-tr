@@ -1,12 +1,9 @@
 ---
-title: "Eksik işlev gövdesi veya değişken | Microsoft Docs"
-ms.custom: 
+title: Eksik işlev gövdesi veya değişken | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 dev_langs:
 - C++
@@ -14,17 +11,15 @@ helpviewer_keywords:
 - function body
 - variables, missing
 ms.assetid: 1a88d809-b14f-46a4-97c4-3e48beb418f2
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 356d0f0a71feccee953a0b1bd7dc54bc64a0e233
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 54e2b8c5831eb6d487cf530df1b733b73580cbb8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="missing-function-body-or-variable"></a>Eksik İşlev Gövdesi veya Değişken
 Yalnızca bir işlev prototipi derleyici hatasız devam edebilirsiniz, ancak işlev kodu veya ayrılmış değişken alanı olmadığından bağlayıcı bir adresi çağrısı çözümlenemiyor. Bağlayıcı çözülmelidir işlevi çağrısı oluşturana kadar bu hata görmezsiniz.  

@@ -1,13 +1,10 @@
 ---
 title: 'WM_ iletileri: T - Z | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - ON_WM_TCARD
 - ON_WM_WININICHANGE
@@ -32,17 +29,15 @@ helpviewer_keywords:
 - ON_WM_VKEYTOITEM [MFC]
 - ON_WM_VSCROLL
 ms.assetid: c528bb2e-ddb5-4da6-b652-432a387408b8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b71d7935b2064d5e83e5b6de5c0714b1db52b49
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 517458158cd94421ba301047bcf3810f1cac3a08
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="wm-messages-t---z"></a>WM_ İletileri: T - Z
 Aşağıdaki harita girişler işlev prototipleri karşılık gelir:  

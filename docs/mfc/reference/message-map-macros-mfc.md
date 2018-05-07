@@ -1,13 +1,10 @@
 ---
-title: "İleti eşleme makroları (MFC) | Microsoft Docs"
-ms.custom: 
+title: İleti eşleme makroları (MFC) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - AFXWIN/DECLARE_MESSAGE_MAP
 - AFXWIN/BEGIN_MESSAGE_MAP
@@ -37,17 +34,15 @@ helpviewer_keywords:
 - ranges, message map
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bf56b243118ceb7fdd995fc6970f6c49e0a5499
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 28b8a6e6e34399cb16ba3ec9e4f25562962c2dd6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="message-map-macros-mfc"></a>İleti Eşleme Makroları (MFC)
 İleti eşlemeleri desteklemek için aşağıdaki makroları MFC sağlar:  
@@ -86,7 +81,7 @@ ms.lasthandoff: 01/03/2018
  İleti eşlemeleri, ileti eşleme bildirim ve düzenleme makroları ve ileti eşleme makroları hakkında daha fazla bilgi için bkz: [ileti eşlemeleri](../../mfc/reference/message-maps-mfc.md) ve [ileti işleme ve eşleme konuları](../../mfc/message-handling-and-mapping.md). İleti eşleme aralıkları hakkında daha fazla bilgi için bkz: [ileti eşleme aralıkları için işleyiciler](../../mfc/handlers-for-message-map-ranges.md).  
 
 
-## <a name="begin_message_map"></a>BEGIN_MESSAGE_MAP
+## <a name="begin_message_map"></a> BEGIN_MESSAGE_MAP
 İleti eşlemesi tanımını başlar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -142,7 +137,7 @@ BEGIN_TEMPLATE_MESSAGE_MAP( theClass, type_name, baseClass )
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
  
-## <a name="declare_message_map"></a>DECLARE_MESSAGE_MAP
+## <a name="declare_message_map"></a>  DECLARE_MESSAGE_MAP
  Sınıfı ileti eşlemesi tanımlar bildirir. Her `CCmdTarget`-programınızı türetilen sınıfta iletileri işlemek için ileti eşlemesi sağlamalıdır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -172,7 +167,7 @@ class CMainFrame : public CMDIFrameWnd
  **Başlık:** afxwin.h  
 
 
-## <a name="end_message_map"></a>END_MESSAGE_MAP
+## <a name="end_message_map"></a>  END_MESSAGE_MAP
 İleti eşlemesi tanımını sona erer.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -187,7 +182,7 @@ END_MESSAGE_MAP( )
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
 
-## <a name="on_command"></a>ON_COMMAND
+## <a name="on_command"></a>  ON_COMMAND
 Bu makrosu üye işlevi için bir komut iletisi eşler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -220,7 +215,7 @@ END_MESSAGE_MAP()
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxmsg_.h  
 
- ## <a name="on_command_ex"></a>ON_COMMAND_EX
+ ## <a name="on_command_ex"></a>  ON_COMMAND_EX
 Komut işleyici üye işlevi genişletilmiş.  
    
 ### <a name="syntax"></a>Sözdizimi  
@@ -262,7 +257,7 @@ Daha fazla bilgi için bkz. Teknik Not [TN006: ileti eşlemeleri] tm006 ileti ma
  [TN006: ileti eşlemeleri] tm006 ileti maps.md)
 
   
-## <a name="on_control"></a>ON_CONTROL
+## <a name="on_control"></a>  ON_CONTROL
 Hangi işlev bir özel denetim bildirim iletisi işleyeceğini gösterir.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -292,7 +287,7 @@ ON_CONTROL( wNotifyCode, id, memberFxn )
  **Başlık:** afxmsg_.h  
   
 
-## <a name="on_message"></a>ON_MESSAGE  
+## <a name="on_message"></a>  ON_MESSAGE  
 Hangi işlevi bir kullanıcı tarafından tanımlanan ileti işleyeceğini gösterir.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -345,7 +340,7 @@ END_MESSAGE_MAP()
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxmsg_.h  
 
-## <a name="on_olecmd"></a>ON_OLECMD  
+## <a name="on_olecmd"></a>  ON_OLECMD  
 Komut gönderme arabirimi aracılığıyla komutları yönlendirir `IOleCommandTarget`.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -365,9 +360,9 @@ ON_OLECMD( pguid, olecmdid, id )
  Menü kimliği, araç kimliği, düğme kodu veya diğer kimliği kaynak ya da komutu veren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `IOleCommandTarget`DocObject'ın kullanıcı arabiriminde kaynaklanan komutları almak için bir kapsayıcı sağlar ve aynı komutları göndermek kapsayıcı sağlar (yeni, Aç, Farklı Kaydet ve Dosya menüsünde; yazdırma gibi ve kopyalama, yapıştırma, vb. Düzen menüsünden geri) DocObject için.  
+ `IOleCommandTarget` DocObject'ın kullanıcı arabiriminde kaynaklanan komutları almak için bir kapsayıcı sağlar ve aynı komutları göndermek kapsayıcı sağlar (yeni, Aç, Farklı Kaydet ve Dosya menüsünde; yazdırma gibi ve kopyalama, yapıştırma, vb. Düzen menüsünden geri) DocObject için.  
   
- `IOleCommandTarget`OLE Otomasyonu'nun basittir `IDispatch`. `IOleCommandTarget`tamamen komutları standart kümesinde kullanır, nadiren bağımsız değişkenlere sahiptir ve hiçbir tür bilgileri söz konusu (de komut bağımsız değişkenleri için tür güvenliği yayınladıklarını). Komutlar bağımsız değişkenlerle gönderilmesi gerekiyorsa, [COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd).  
+ `IOleCommandTarget` OLE Otomasyonu'nun basittir `IDispatch`. `IOleCommandTarget` tamamen komutları standart kümesinde kullanır, nadiren bağımsız değişkenlere sahiptir ve hiçbir tür bilgileri söz konusu (de komut bağımsız değişkenleri için tür güvenliği yayınladıklarını). Komutlar bağımsız değişkenlerle gönderilmesi gerekiyorsa, [COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd).  
   
  `IOleCommandTarget` Standart menü komutlarını uygulanmıştır MFC tarafından aşağıdaki makroları:  
   
@@ -474,7 +469,7 @@ ON_OLECMD( pguid, olecmdid, id )
  [COleCmdUI sınıfı](colecmdui-class.md)   
  [COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd)
 
-## <a name="on_registered_message"></a>ON_REGISTERED_MESSAGE
+## <a name="on_registered_message"></a>  ON_REGISTERED_MESSAGE
 Windows **RegisterWindowMessage** işlevi, sistem genelinde benzersiz olması garanti yeni bir pencere iletisi tanımlamak için kullanılır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -512,7 +507,7 @@ END_MESSAGE_MAP()
  [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947)   
  [Kullanıcı Tanımlı İşleyiciler](user-defined-handlers.md)
 
-## <a name="on_registered_thread_message"></a>ON_REGISTERED_THREAD_MESSAGE    
+## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE    
 Hangi işlev Windows RegisterWindowMessage işlevi tarafından kaydedilen iletinin işleyecek gösterir.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -534,7 +529,7 @@ ON_REGISTERED_THREAD_MESSAGE(nMessageVariable, memberFxn )
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxmsg_.h  
 
-## <a name="on_thread_message"></a>ON_THREAD_MESSAGE  
+## <a name="on_thread_message"></a>  ON_THREAD_MESSAGE  
 Hangi işlevi bir kullanıcı tarafından tanımlanan ileti işleyeceğini gösterir.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -551,12 +546,12 @@ ON_THREAD_MESSAGE( message, memberFxn )
  Adı `CWinThread`-iletisi-ileti eşlendiği işleyici işlevi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `ON_THREAD_MESSAGE`yerine kullanılmalıdır `ON_MESSAGE` olduğunda bir `CWinThread` sınıfı. Kullanıcı tanımlı iletiler olan standart Windows olmayan herhangi bir iletisi **WM_MESSAGE** iletileri. Olması gerektiğini tam olarak bir `ON_THREAD_MESSAGE` bir ileti işleyicisi işleve eşlenmelidir her kullanıcı tarafından tanımlanan ileti, ileti eşlemesi makrosu deyiminde.  
+ `ON_THREAD_MESSAGE` yerine kullanılmalıdır `ON_MESSAGE` olduğunda bir `CWinThread` sınıfı. Kullanıcı tanımlı iletiler olan standart Windows olmayan herhangi bir iletisi **WM_MESSAGE** iletileri. Olması gerektiğini tam olarak bir `ON_THREAD_MESSAGE` bir ileti işleyicisi işleve eşlenmelidir her kullanıcı tarafından tanımlanan ileti, ileti eşlemesi makrosu deyiminde.  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxole.h  
 
-## <a name="on_update_command_ui"></a>ON_UPDATE_COMMAND_UI    
+## <a name="on_update_command_ui"></a>  ON_UPDATE_COMMAND_UI    
 Bu makrosu hangi işlevi bir kullanıcı arabirimi güncelleştirme komut iletisi işleyeceğini gösterir.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -583,7 +578,7 @@ ON_UPDATE_COMMAND_UI( id, memberFxn )
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [CCmdUI Sınıfı](ccmdui-class.md)
 
-## <a name="on_command_range"></a>ON_COMMAND_RANGE  
+## <a name="on_command_range"></a>  ON_COMMAND_RANGE  
 Komut kimlikleri bitişik bir dizi tek ileti işleyicisi işleve eşlemek için bu makrosu kullanın.  
   
 ### <a name="syntax"></a>Sözdizimi
@@ -633,7 +628,7 @@ void CChildFrame::OnRangeCmds(UINT nID)
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxmsg_.h  
 
-## <a name="on_update_command_ui_range"></a>ON_UPDATE_COMMAND_UI_RANGE    
+## <a name="on_update_command_ui_range"></a>  ON_UPDATE_COMMAND_UI_RANGE    
 Komut kimlikleri bitişik bir dizi bir tek güncelleştirme ileti işleyicisi işleve eşler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -660,7 +655,7 @@ ON_UPDATE_COMMAND_UI_RANGE( id1, id2, memberFxn )
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxmsg_.h  
 
-## <a name="on_control_range"></a>ON_CONTROL_RANGE     
+## <a name="on_control_range"></a>  ON_CONTROL_RANGE     
 Denetim kimliklerinin bitişik bir dizi belirtilen bir Windows bildirim iletisi için bir tek ileti işleyicisi işlevi gibi eşleştirmek için bu makrosu kullanma **BN_CLICKED**.  
   
 ### <a name="syntax"></a>Sözdizimi  

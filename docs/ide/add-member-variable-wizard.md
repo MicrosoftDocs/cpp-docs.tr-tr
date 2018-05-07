@@ -1,13 +1,10 @@
 ---
-title: "Üye değişkeni Ekleme Sihirbazı | Microsoft Docs"
-ms.custom: 
+title: Üye değişkeni Ekleme Sihirbazı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.variable.overview
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - Add Member Variable Wizard [C++]
 ms.assetid: 73e8fa99-ac1a-42e2-8fc2-4684b9eb6d4d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b909ec7ccd830e088df81ca0b2db8cda133c7a20
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f3ae6a3aef4bdf774b5630a9bb0b2a0b49f7f29b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="add-member-variable-wizard"></a>Üye Değişkeni Ekleme Sihirbazı
 Bu sihirbaz bir üye değişken bildirimi üstbilgi dosyası ekler ve belirlediğiniz seçeneklere bağlı olarak bu kodu .cpp dosyasına ekleyebilirsiniz. Sihirbazı'nı kullanarak üye değişkeni ekledikten sonra geliştirme ortamı kodda düzenleyebilirsiniz.  
@@ -69,7 +64,7 @@ Bu sihirbaz bir üye değişken bildirimi üstbilgi dosyası ekler ve belirledi�
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|**Denetimi**|Bu seçenek, Denetim türü için varsayılan olarak ayarlanır. (Liste kutusu, birleşik giriş kutusu veya düzenleme kutusu yapmak istediğiniz gibi) kendisi ve değil durumu veya içeriği denetimi yönettiği denetimi.|  
+|**denetimi**|Bu seçenek, Denetim türü için varsayılan olarak ayarlanır. (Liste kutusu, birleşik giriş kutusu veya düzenleme kutusu yapmak istediğiniz gibi) kendisi ve değil durumu veya içeriği denetimi yönettiği denetimi.|  
 |**Değer**|Kendisi için ve (örneğin, bir düzenleme kutusu) bir değer içeren veya durumu (örneğin, bir onay kutusu) yansıtacak denetim türleri için bu seçeneği kullanılabilir aralığı, içeriği veya durum yönetmek. Bkz: [iletişim kutusu denetimleri ve değişken türleri](../ide/dialog-box-controls-and-variable-types.md) daha fazla bilgi için.|  
   
  **Kategori**  

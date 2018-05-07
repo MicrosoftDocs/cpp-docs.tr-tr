@@ -1,24 +1,22 @@
 ---
-title: "Genel Özellikler (Linux C++ derleme görevleri dosyası projesi) | Microsoft Docs"
-ms.custom: 
+title: Genel Özellikler (Linux C++ derleme görevleri dosyası projesi) | Microsoft Docs
+ms.custom: ''
 ms.date: 9/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: Linux
+ms.topic: conceptual
 ms.assetid: 3dec6853-43f6-412b-9806-9bfad333a204
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: afebfa3585f780ea54961804174e8e763f51f34f
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: c0e0422859bc4053ea1e8fff424ff79c3b22f8b7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="makefile-project-properties-linux-c"></a>Derleme görevleri dosyası proje özellikleri (Linux C++)
 

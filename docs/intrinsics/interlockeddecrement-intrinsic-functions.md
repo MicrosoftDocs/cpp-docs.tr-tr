@@ -1,12 +1,9 @@
 ---
-title: "_InterlockedDecrement iç işlevler | Microsoft Docs"
-ms.custom: 
+title: _InterlockedDecrement iç işlevler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - _InterlockedDecrement16_rel_cpp
@@ -53,20 +50,18 @@ helpviewer_keywords:
 - _InterlockedDecrement64_nf intrinsic
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2be4a72bfdcb0b952e3fcd1fa3c7e8b3bff8d532
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: eacca8241bc32965d3f22fcb3e4d5ed8b72a1651
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement iç işlevler
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Derleyici iç Win32 desteği sağlar [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] [InterlockedDecrement](http://msdn.microsoft.com/library/ms683580.aspx) işlevi.  
   

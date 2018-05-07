@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4544 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4544 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4544
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4544
 ms.assetid: 11ee04df-41ae-435f-af44-881e801315a8
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b84683c4b3fffcb9e23c6d80fb3f81684006f15
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dc07340c0b8c9cc513e8b10910ccee21152328f0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4544"></a>Derleyici Uyarısı (düzey 1) C4544
 'bildirimi': varsayılan bu şablonu bildiriminde göz ardı şablon bağımsız değişken  

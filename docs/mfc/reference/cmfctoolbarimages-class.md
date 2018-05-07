@@ -2,11 +2,8 @@
 title: CMFCToolBarImages sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCToolBarImages
@@ -149,17 +146,15 @@ helpviewer_keywords:
 - CMFCToolBarImages [MFC], PreMultiplyAlpha
 - CMFCToolBarImages [MFC], m_bDisableTrueColorAlpha
 ms.assetid: d4e50518-9ffc-406f-9996-f79e5cd38155
-caps.latest.revision: 31
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e2e46c4716627a4e1310dc7b1adb0ddb93aa178
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
-ms.translationtype: HT
+ms.openlocfilehash: f5d837ec17623887eb63b49810066937fcd4bf5a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfctoolbarimages-class"></a>CMFCToolBarImages sınıfı
 Araç çubuğundaki görüntüler. `CMFCToolBarImages` Sınıfı yönetir uygulama kaynakları veya dosyalarından yüklenen araç görüntüler.  

@@ -2,12 +2,9 @@
 title: Derleyici Hatası C3027 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3027
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3027
 ms.assetid: 6562a5c2-2f28-4b36-91ca-2a64c0f0501a
-caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c787d316ad0421f3dcfb5341a72d6c43d727e3c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1616d5b3d493c7e6fd2c9eff6041a43f064713e6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3027"></a>Derleyici Hatası C3027
 'yan tümcesi': aritmetik veya işaretçi ifade bekleniyordu  

@@ -1,29 +1,24 @@
 ---
-title: "Nasıl yapılır: Varolan koddan C++ projesi oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: Varolan koddan C++ projesi oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - C++, creating projects from existing code
 ms.assetid: e328a938-395c-48ea-9e35-dd433de12b31
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6781709c105c606f6ceb856654525385738c1ca
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1786e5704d7afd07576ab738d907eb841518f8be
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="how-to-create-a-c-project-from-existing-code"></a>Nasıl Yapılır: Varolan Koddan C++ Projesi Oluşturma
 

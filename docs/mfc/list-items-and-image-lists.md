@@ -1,13 +1,10 @@
 ---
-title: "Liste öğeleri ve resim listeleri | Microsoft Docs"
-ms.custom: 
+title: Liste öğeleri ve resim listeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CListCtrl class [MFC], image lists
 - list items [MFC], image lists
 ms.assetid: 317d095f-f978-47da-acb6-7bfe7dd3bc69
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 525d8353c308796d70f974fa56cde3aa76c12142
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f6bd7a97330a8a646a880bf229562dbec9a70181
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="list-items-and-image-lists"></a>Liste Öğeleri ve Görüntü Listeleri
 Liste denetiminde bir "öğesi" ([CListCtrl](../mfc/reference/clistctrl-class.md)) bir simge, bir etiket ve büyük olasılıkla diğer bilgileri ("alt öğeler") oluşur.  

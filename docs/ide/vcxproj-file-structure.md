@@ -1,29 +1,24 @@
 ---
-title: "dosya yapısı .vcxproj ve .props | Microsoft Docs"
-ms.custom: 
+title: dosya yapısı .vcxproj ve .props | Microsoft Docs
+ms.custom: ''
 ms.date: 04/27/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - .vcxproj file structure
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d48b16d9a4250de8c8c3dfef62fdcfb5c1434960
-ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
+ms.openlocfilehash: fe466ff9250543a61fde8da41900b152a9874e09
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vcxproj-and-props-file-structure"></a>.vcxproj ve .props dosya yapısı
 
@@ -100,7 +95,7 @@ Aşağıdaki bölümlerde bu öğelerin her birini amacını ve bu şekilde nede
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns='http://schemas.microsoft.com/developer/msbuild/2003' >
 ```
 
-`Project`kök düğümdür. MSBuild sürümü kullanmak için ve ayrıca bu dosya için MSBuild.exe geçirildiğinde yürütülecek varsayılan hedef belirtir.
+`Project` kök düğümdür. MSBuild sürümü kullanmak için ve ayrıca bu dosya için MSBuild.exe geçirildiğinde yürütülecek varsayılan hedef belirtir.
 
 ### <a name="projectconfigurations-itemgroup-element"></a>ProjectConfigurations ItemGroup öğesi
 
@@ -108,7 +103,7 @@ Aşağıdaki bölümlerde bu öğelerin her birini amacını ve bu şekilde nede
 <ItemGroup Label="ProjectConfigurations" />
 ```
 
-`ProjectConfigurations`Proje yapılandırma açıklaması içerir. Örnekler hata ayıklama | Win32, sürüm | Win32, hata ayıklama | ARM ve benzeri. Çok sayıda proje ayarları belirli bir yapılandırmaya özeldir. Örneğin, bir yayın derlemesi ancak hata ayıklama derlemesi iyileştirme özelliklerini ayarlamak büyük olasılıkla isteyeceksiniz.
+`ProjectConfigurations` Proje yapılandırma açıklaması içerir. Örnekler hata ayıklama | Win32, sürüm | Win32, hata ayıklama | ARM ve benzeri. Çok sayıda proje ayarları belirli bir yapılandırmaya özeldir. Örneğin, bir yayın derlemesi ancak hata ayıklama derlemesi iyileştirme özelliklerini ayarlamak büyük olasılıkla isteyeceksiniz.
 
 `ProjectConfigurations` Öğesi grubu derleme zamanında kullanılmaz. Visual Studio IDE proje yüklemek için gerektiriyor. Bu öğe grubu .props dosyasına taşınır ve .vcxproj dosyasına içeri. Yapılandırması ekleme ve kaldırma ihtiyacınız varsa, ancak bu durumda, el ile .props dosyayı düzenlemeniz gerekir; IDE kullanamazsınız.
 
@@ -126,13 +121,13 @@ Aşağıdaki kod parçacığını bir proje yapılandırması gösterilmektedir.
 Herhangi bir bileşimini tüm ProjectConfiguration öğelerde kullanılan yapılandırması ve platformu değerler için bir proje yapılandırma bulmak IDE bekliyor. Bu, genellikle bir proje bu gereksinimi karşılamak için anlamsız proje yapılandırmaları gerekebileceği anlamına gelir. Örneğin, bir projenin Bu yapılandırmalar varsa:
 
 - Hata ayıklama | Win32
-- Retail|Win32
+- Perakende | Win32
 - Özel 32-bit en iyi duruma getirme | Win32
 
 ardından "Özel 32-bit iyileştirme" için x64 anlamsız olsa bile bu yapılandırmalar olmalıdır:
 
 - Hata ayıklama | x64
-- Retail|x64
+- Perakende | x64
 - Özel 32-bit en iyi duruma getirme | x64
 
 Yapı devre dışı bırakmak ve herhangi bir yapılandırma için komutları dağıtma **çözüm Configuration Manager**.
@@ -143,9 +138,9 @@ Yapı devre dışı bırakmak ve herhangi bir yapılandırma için komutları da
  <PropertyGroup Label="Globals" />
 ```
 
-`Globals`Proje düzeyi ayarları ProjectGuid, RootNamespace ve ApplicationType gibi içeren / ApplicationTypeRevision. Son iki genellikle işletim sistemi hedef tanımlayın. References ve proje öğeleri koşulları şu anda sahip olamaz due için nedeni, bir proje yalnızca tek bir işletim sistemi hedefleyebilirsiniz. Bu özellikleri genellikle başka bir yerde proje dosyasında geçersiz kılınmaz. Bu grubun yapılandırma bağımlı değildir ve bu nedenle yalnızca bir Globals grup proje dosyasında genellikle mevcut.
+`Globals` Proje düzeyi ayarları ProjectGuid, RootNamespace ve ApplicationType gibi içeren / ApplicationTypeRevision. Son iki genellikle işletim sistemi hedef tanımlayın. References ve proje öğeleri koşulları şu anda sahip olamaz due için nedeni, bir proje yalnızca tek bir işletim sistemi hedefleyebilirsiniz. Bu özellikleri genellikle başka bir yerde proje dosyasında geçersiz kılınmaz. Bu grubun yapılandırma bağımlı değildir ve bu nedenle yalnızca bir Globals grup proje dosyasında genellikle mevcut.
 
-### <a name="microsoftcppdefaultprops-import-element"></a>Microsoft.Cpp.default.props Import element
+### <a name="microsoftcppdefaultprops-import-element"></a>Microsoft.Cpp.default.props içeri aktarma öğesi
 
 ```xml
 <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
@@ -191,7 +186,7 @@ A `Configuration` özellik grubu ekli yapılandırma koşula sahip (gibi `Condit
 <PropertyGroup Label="UserMacros" />
 ```
 
-`UserMacros`Özellikler içeren yapı işleminizin özelleştirmek için kullanılan değişkenleri olarak oluşturun. Örneğin, özel çıkış yolu $(CustomOutputPath) tanımlayın ve diğer değişkenleri tanımlamak için kullanmak üzere bir kullanıcı makrosu tanımlayabilirsiniz. Bu özellik grubu gibi özellikleri barındırır. Visual C++ yapılandırmaları için kullanıcı makroları desteklemediğinden Visual Studio'da bu grubun proje dosyasında doldurulmaz olduğunu unutmayın. Kullanıcı makroları özellik sayfalarında desteklenir.
+`UserMacros` Özellikler içeren yapı işleminizin özelleştirmek için kullanılan değişkenleri olarak oluşturun. Örneğin, özel çıkış yolu $(CustomOutputPath) tanımlayın ve diğer değişkenleri tanımlamak için kullanmak üzere bir kullanıcı makrosu tanımlayabilirsiniz. Bu özellik grubu gibi özellikleri barındırır. Visual C++ yapılandırmaları için kullanıcı makroları desteklemediğinden Visual Studio'da bu grubun proje dosyasında doldurulmaz olduğunu unutmayın. Kullanıcı makroları özellik sayfalarında desteklenir.
 
 ### <a name="per-configuration-propertygroup-elements"></a>Yapılandırma başına PropertyGroup öğeleri
 

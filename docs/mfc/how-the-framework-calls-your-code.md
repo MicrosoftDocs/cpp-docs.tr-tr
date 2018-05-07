@@ -1,13 +1,10 @@
 ---
-title: "Framework kodunuzu çağırması | Microsoft Docs"
-ms.custom: 
+title: Framework kodunuzu çağırması | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - application-specific events [MFC]
 - command routing [MFC], MFC
 ms.assetid: 39e68189-a580-40d0-9e35-bf5cd24a8ecf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83eeb1c7fd3032ae33c213f17522b171bdb46e55
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f746ce3c3d658ab1dccc098939410b52d91b1188
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="how-the-framework-calls-your-code"></a>Framework'ün Kodunuzu Çağırması
 Kaynak kodunuz ve MFC çerçevesi kodda arasındaki ilişkiyi anlamak önemlidir. Uygulamanızı çalıştığında, denetim akışını çoğunu framework'ün kodda yer alıyor. Framework'te kullanıcı komutları seçer ve bir görünümündeki verileri düzenler gibi Windows iletilerini alır ileti döngüsü yönetir. Framework tek başına işleyebilir olayları kodunuz üzerinde hiç kullanmayın. Örneğin, çerçeve pencereleri kapatın ve kullanıcı komutlarına yanıt olarak uygulamadan çıkmak bilir. Bu görevleri işleme gibi framework fırsatlar bu olaylarına yanıt vermek için ileti işleyicileri ve C++ sanal işlevleri kullanır. Kodunuz denetiminde değildir, ancak:; çerçevedir.  

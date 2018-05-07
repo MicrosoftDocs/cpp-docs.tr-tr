@@ -1,12 +1,9 @@
 ---
-title: "MFC sınıfları | Microsoft Docs"
-ms.custom: 
+title: MFC sınıfları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 dev_langs:
 - C++
@@ -14,17 +11,15 @@ helpviewer_keywords:
 - MFC, classes
 - classes [MFC], MFC
 ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3775ad9c67e2ab4be4f36d0de257cd075b77ce86
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: 2d2865d56c899cc9489fd4e09720ed22ef1bf540
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-classes"></a>MFC Sınıfları
 Aşağıdaki listede sınıfları Microsoft Foundation Class (MFC) Kitaplığı'nda bulunur.  
@@ -36,7 +31,7 @@ Aşağıdaki listede sınıfları Microsoft Foundation Class (MFC) Kitaplığı'
 >  MFC sınıfları ve üyeleri Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [CAccelerateDecelerateTransition Class](../../mfc/reference/cacceleratedeceleratetransition-class1.md)  
+ [CAccelerateDecelerateTransition sınıfı](../../mfc/reference/cacceleratedeceleratetransition-class1.md)  
  Bir accelerate uygulayan-geçiş hızını düşürün.  
   
  [CAnimateCtrl Sınıfı](../../mfc/reference/canimatectrl-class.md)  
@@ -826,7 +821,7 @@ Aşağıdaki listede sınıfları Microsoft Foundation Class (MFC) Kitaplığı'
  Uygulama kaynakları veya dosyalarından yüklenen araç görüntüler yönetir.  
   
  [CMFCToolBarInfo Sınıfı](../../mfc/reference/cmfctoolbarinfo-class.md)  
- Kaynak kimlikleri araç görüntülerinin çeşitli durumlarını içerir. `CMFCToolBarInfo`bir parametresi olarak kullanılan bir yardımcı sınıf olan [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) yöntemi.  
+ Kaynak kimlikleri araç görüntülerinin çeşitli durumlarını içerir. `CMFCToolBarInfo` bir parametresi olarak kullanılan bir yardımcı sınıf olan [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) yöntemi.  
   
  [CMFCToolBarMenuButton Sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md)  
  Açılır menü içeren bir araç çubuğu düğmesi.  

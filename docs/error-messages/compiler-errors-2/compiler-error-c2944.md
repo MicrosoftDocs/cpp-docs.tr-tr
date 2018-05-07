@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2944 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2944 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2944
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2944
 ms.assetid: f209e668-e72f-442a-a438-8c4ff43a404a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08d9aefd3e28108652bea3444a41923c0fc5924c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c93cde44e7e7816117cc20e4418c57fbf51048d7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2944"></a>Derleyici Hatası C2944
 'class': türü sınıfı kimliği bir şablon bir değer bağımsız değişken olarak yeniden tanımlandı  

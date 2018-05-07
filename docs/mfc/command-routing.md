@@ -1,13 +1,10 @@
 ---
-title: "Komut yönlendirme | Microsoft Docs"
-ms.custom: 
+title: Komut yönlendirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - handlers, command [MFC]
 - command routing
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4299d5bb0f638d33714a5b5daeff60fde3f49be
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ecb836f8fee1efab7f5f925c6ec3ce0f470d666b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="command-routing"></a>Komut Yönlendirme
 İleti eşleme bağlantıları işleyici işlevlerini Özellikler penceresini kullanın görev ve komutları arasında yapmaya komutları ile çalışırken sizin sorumluluğunuzdadır sınırlıdır. Ayrıca, çoğu komut işleyicileri yazmanız gerekir.  
@@ -44,11 +39,11 @@ ms.lasthandoff: 12/21/2017
   
  Yönlendirme maliyeti, pahalı bir komutuna yanıt olarak işleyicinizi ne için bu yönlendirme ile karşılaştırıldığında mekanizmasıdır nasıl düşüktür. Yalnızca kullanıcı bir kullanıcı arabirimi nesnesi ile etkileşim olduğunda framework komutları oluşturur aklınızda size aittir.  
   
-### <a name="_core_standard_command_route"></a>Standart komut yönlendirme  
+### <a name="_core_standard_command_route"></a> Standart komut yönlendirme  
   
 |Ne zaman bir komutu bu tür bir nesne alır. biçimindeki telefon numarasıdır. biçimindeki telefon numarasıdır.|Kendisi ve diğer komut hedefi nesneleri bu sırada komutu işlemek için bir fırsat sunar:|  
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|  
-|MDI çerçeve penceresi (`CMDIFrameWnd`)|1.  Etkin`CMDIChildWnd`<br />2.  Bu çerçeve penceresi<br />3.  Uygulama (`CWinApp` nesne)|  
+|MDI çerçeve penceresi (`CMDIFrameWnd`)|1.  Etkin `CMDIChildWnd`<br />2.  Bu çerçeve penceresi<br />3.  Uygulama (`CWinApp` nesne)|  
 |Belge çerçeve penceresi (`CFrameWnd`, `CMDIChildWnd`)|1.  Etkin görünümü<br />2.  Bu çerçeve penceresi<br />3.  Uygulama (`CWinApp` nesne)|  
 |Görüntüle|1.  Bu görünüm<br />2.  Görünüme bağlı belge|  
 |Belge|1.  Bu belgede<br />2.  Belgeye ekli belge şablonu|  

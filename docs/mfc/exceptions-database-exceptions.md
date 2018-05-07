@@ -1,13 +1,10 @@
 ---
-title: "Özel durumlar: Veritabanı özel durumları | Microsoft Docs"
-ms.custom: 
+title: 'Özel durumlar: Veritabanı özel durumları | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - databases [MFC], exception handling
 - error codes [MFC], database exception handling
 ms.assetid: 28daf260-f824-4be6-aecc-1f859e6dec26
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e853f2bd6f57c7ccc63e802f013661efb85d9796
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2168bc530accfdde6fad4d41cd68e94d3088f153
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="exceptions-database-exceptions"></a>Özel durumlar: Veritabanı Özel Durumları
 Bu makalede, veritabanı özel durumları işleme açıklanmaktadır. Bu makaledeki malzemesini çoğunu ile MFC sınıfları açık veritabanı bağlantısı (ODBC) veya MFC sınıfları için veri erişim nesneleri (DAO) çalıştığınız olup olmadığını geçerlidir. Malzeme birini veya diğer model belirli açık olarak işaretlenir. Konular şunlardır:  
@@ -39,7 +34,7 @@ Bu makalede, veritabanı özel durumları işleme açıklanmaktadır. Bu makaled
   
 -   [Bir veritabanı özel durum işleme örneği](#_core_a_database_exception.2d.handling_example)  
   
-##  <a name="_core_approaches_to_exception_handling"></a>Özel durum işleme yaklaşımları  
+##  <a name="_core_approaches_to_exception_handling"></a> Özel durum işleme yaklaşımları  
  DAO veya ODBC ile çalışıyorsanız olup olmadığını aynı yaklaşımdır.  
   
  Her zaman özel durumları işlemek için özel durum işleyicileri yazmanız gerekir.  
@@ -62,7 +57,7 @@ Bu makalede, veritabanı özel durumları işleme açıklanmaktadır. Bu makaled
   
  DAO hatalar, DAO hata nesne türü ve DAO hatalar koleksiyonuna hakkında ek bilgi sınıfı altında kullanılabilir [CDaoException](../mfc/reference/cdaoexception-class.md).  
   
-##  <a name="_core_a_database_exception.2d.handling_example"></a>Bir veritabanı özel durum işleme örneği  
+##  <a name="_core_a_database_exception.2d.handling_example"></a> Bir veritabanı özel durum işleme örneği  
  Aşağıdaki örnek oluşturmak çalışır bir [CRecordset](../mfc/reference/crecordset-class.md)-yığınla nesnesinde türetilmiş **yeni** işleci ve kayıt kümesi (ODBC veri kaynağını) açın. DAO sınıfları için benzer bir örnek için "DAO özel durum" aşağıdaki örneğe bakın.  
   
 ### <a name="odbc-exception-example"></a>ODBC özel durumu örneği  

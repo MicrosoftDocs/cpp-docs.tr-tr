@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 4) C4295 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 4) C4295 | Microsoft Docs
+ms.custom: ''
 ms.date: 1/09/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4295
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4295
 ms.assetid: 20dbff85-9f62-4ca3-8fe9-079d4512006d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56ffdce8c2790a3944a8f79753177bc80e249778
-ms.sourcegitcommit: bc086a7acbe2d9fd77d115f269cc2a0dbeeb5b88
+ms.openlocfilehash: 815a669bc359121b13b1d636009cad81dc332304
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-4-c4295"></a>Derleyici Uyarısı (düzey 4) C4295
   

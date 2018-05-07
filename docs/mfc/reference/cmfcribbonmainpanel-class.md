@@ -1,12 +1,9 @@
 ---
-title: "CMFCRibbonMainPanel sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCRibbonMainPanel sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCRibbonMainPanel
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - CMFCRibbonMainPanel [MFC], AddToRight
 - CMFCRibbonMainPanel [MFC], GetCommandsFrame
 ms.assetid: 1af78798-5e75-4365-9c81-a54aa5679602
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8b5508abdc90c4c566d078f2f75c30822c7a18e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 05257749c95b619c479538a1322746ae2b487b6a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcribbonmainpanel-class"></a>CMFCRibbonMainPanel sınıfı
 ' I tıklattığınızda görüntüleyen bir Şerit panel uygulayan [CMFCRibbonApplicationButton](../../mfc/reference/cmfcribbonapplicationbutton-class.md).  
@@ -86,7 +81,7 @@ class CMFCRibbonMainPanel : public CMFCRibbonPanel
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxRibbonMainPanel.h  
   
-##  <a name="add"></a>CMFCRibbonMainPanel::Add  
+##  <a name="add"></a>  CMFCRibbonMainPanel::Add  
  Uygulama düğmesi bölmenin sol bölmeye Şerit öğesi ekler.  
   
 ```  
@@ -94,13 +89,13 @@ virtual void Add(CMFCRibbonBaseElement* pElem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] [out]`pElem`  
+ [in] [out] `pElem`  
  Ana paneline eklemek için Şerit öğesi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Panele bir Şerit öğesi ekler. Bu yöntem kullanılarak eklenen öğeleri ana bölmesi sol sütunda yer alır.  
   
-##  <a name="addrecentfileslist"></a>CMFCRibbonMainPanel::AddRecentFilesList  
+##  <a name="addrecentfileslist"></a>  CMFCRibbonMainPanel::AddRecentFilesList  
  Bir metin dizesi son dosyalar listesi menüsüne ekler.  
   
 ```  
@@ -118,7 +113,7 @@ void AddRecentFilesList(
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="addtobottom"></a>CMFCRibbonMainPanel::AddToBottom  
+##  <a name="addtobottom"></a>  CMFCRibbonMainPanel::AddToBottom  
  Şerit uygulaması panelinin alt bölmesinde bir Şerit öğesi ekler.  
   
 ```  
@@ -126,12 +121,12 @@ void AddToBottom(CMFCRibbonMainPanelButton* pElem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] [out]`pElem`  
+ [in] [out] `pElem`  
  Ana bölmesi alt kısmına eklemek için Şerit öğesi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="addtoright"></a>CMFCRibbonMainPanel::AddToRight  
+##  <a name="addtoright"></a>  CMFCRibbonMainPanel::AddToRight  
  Uygulama düğmesi bölmenin sağ bölmede bir Şerit öğesi ekler.  
   
 ```  
@@ -150,7 +145,7 @@ void AddToRight(
 ### <a name="remarks"></a>Açıklamalar  
  Sağ panelde bir Şerit öğesi eklemek için bu işlevi kullanın. Son kullanılan dosya listesi genellikle sağ panelde görüntüler, ancak tüm diğer Şerit öğesi buraya ekleyebilirsiniz.  
   
-##  <a name="getcommandsframe"></a>CMFCRibbonMainPanel::GetCommandsFrame  
+##  <a name="getcommandsframe"></a>  CMFCRibbonMainPanel::GetCommandsFrame  
  Şerit ana bölmesi alanını temsil eden bir dikdörtgen döndürür.  
   
 ```  

@@ -1,13 +1,10 @@
 ---
-title: "MFC'de durum çubuğu uygulaması | Microsoft Docs"
-ms.custom: 
+title: MFC'de durum çubuğu uygulaması | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - COldStatusBar
 dev_langs:
@@ -25,24 +22,22 @@ helpviewer_keywords:
 - status indicators
 - status bars [MFC], Windows 95 implementation
 ms.assetid: be5cd876-38e3-4d5c-b8cb-16d57a16a142
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d81982e23f100fe75d6cc5769cd19359bfaa6f5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 13a85ba03089a9536c8c6512bccd09f1eb34c0a9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="status-bar-implementation-in-mfc"></a>MFC'de Durum Çubuğu Uygulaması
 A [CStatusBar](../mfc/reference/cstatusbar-class.md) denetim çubuğu metni çıkış bölmeleri oluşan bir satır içeren bir nesnedir. Çıkış bölmeleri, ileti satırları ve durum göstergesi olarak yaygın olarak kullanılır. Örnekler seçili menü komutu kısaca açıklayan menü Yardım iletisi satırları ve Kaydırma kilidi, NUM LOCK ve diğer anahtarlar durumunu göster göstergelerini içerir.  
   
  MFC sürüm 4. 0'dan sonra durum çubukları sınıfı kullanılarak uygulanan [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md), bir durum çubuğu ortak denetimi yalıtır. Geriye dönük uyumluluk için MFC eski durum çubuğu uygulaması sınıfında korur **COldStatusBar**. MFC önceki sürümleri için belgelere açıklar **COldStatusBar** altında `CStatusBar`.  
   
- [CStatusBar::GetStatusBarCtrl](../mfc/reference/cstatusbar-class.md#getstatusbarctrl), üye işlevi yeni MFC 4.0 ile Windows ortak denetimin durum çubuğu özelleştirme ve ek işlevsellik için desteğinden olanak tanır. `CStatusBar`Windows ortak denetimleri işlevselliğini çoğunu size üye işlevleri; çağırdığınızda ancak `GetStatusBarCtrl`, durum çubukları durum çubuğu özelliklerini daha da verebilirsiniz. Çağırdığınızda `GetStatusBarCtrl`, bir başvuru döndürür bir `CStatusBarCtrl` nesnesi. Durum çubuğu denetimi işlemek için bu başvuruyu kullanabilirsiniz.  
+ [CStatusBar::GetStatusBarCtrl](../mfc/reference/cstatusbar-class.md#getstatusbarctrl), üye işlevi yeni MFC 4.0 ile Windows ortak denetimin durum çubuğu özelleştirme ve ek işlevsellik için desteğinden olanak tanır. `CStatusBar` Windows ortak denetimleri işlevselliğini çoğunu size üye işlevleri; çağırdığınızda ancak `GetStatusBarCtrl`, durum çubukları durum çubuğu özelliklerini daha da verebilirsiniz. Çağırdığınızda `GetStatusBarCtrl`, bir başvuru döndürür bir `CStatusBarCtrl` nesnesi. Durum çubuğu denetimi işlemek için bu başvuruyu kullanabilirsiniz.  
   
  Aşağıdaki şekilde birkaç göstergeleri görüntüleyen bir durum çubuğunu gösterir.  
   

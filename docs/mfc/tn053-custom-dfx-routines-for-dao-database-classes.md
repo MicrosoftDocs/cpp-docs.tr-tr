@@ -1,13 +1,10 @@
 ---
-title: "TN053: DAO için özel DFX rutinleri veritabanı sınıfları | Microsoft Docs"
-ms.custom: 
+title: 'TN053: DAO için özel DFX rutinleri veritabanı sınıfları | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.mfc.dfx
 dev_langs:
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - DFX (DAO record field exchange) [MFC]
 - custom DFX routines [MFC]
 ms.assetid: fdcf3c51-4fa8-4517-9222-58aaa4f25cac
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6935e4b3f2c8159677d1d322f6f875246160da2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 47d1c9769055e0ab69f57f58b136b7844cb1f860
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn053-custom-dfx-routines-for-dao-database-classes"></a>TN053: DAO Veritabanı Sınıfları için Özel DFX Rutinleri
 > [!NOTE]
@@ -59,7 +54,7 @@ ms.lasthandoff: 12/21/2017
 > [!NOTE]
 >  Statik ve dinamik bağlama karma kullanımını kullanılabilmesi için DFX ve dinamik bağlama birbirini dışlayan değildir.  
   
-## <a name="_mfcnotes_tn053_examples"></a>Örnek 1 — DAO kayıt alanı değişimi yalnızca kullanımı  
+## <a name="_mfcnotes_tn053_examples"></a> Örnek 1 — DAO kayıt alanı değişimi yalnızca kullanımı  
   
  (varsayar `CDaoRecordset` — türetilmiş sınıf `CMySet` açık)  
   
@@ -122,7 +117,7 @@ PopUpEmployeeData(emp.m_strFirstName,
     varPhoto);
 ```  
   
-## <a name="_mfcnotes_tn053_how_dfx_works"></a>DFX nasıl çalışır?  
+## <a name="_mfcnotes_tn053_how_dfx_works"></a> DFX nasıl çalışır?  
   
  MFC ODBC sınıfları tarafından kullanılan kayıt alanı değişimi (RFX) mekanizması için benzer bir şekilde DFX mekanizması çalışır. DFX ve RFX ilkeleri aynıdır, ancak çok sayıda dahili farklılıklar vardır. DFX işlevleri tasarımını sağlayacak şekilde neredeyse tüm kod tek tek DFX yordamları tarafından paylaşılan oluştu. Yüksek düzey DFX yalnızca birkaç şey yapar.  
   
@@ -164,12 +159,12 @@ PopUpEmployeeData(emp.m_strFirstName,
   
 -   DAO "geri çağıran değişken uzunlukta sütunlar için bellek tahsis etmek arayan izin vermek üzere çağırıp" olur. Bu ikinci özelliği veri kopya sayısını en aza yanı sıra veri doğrudan depolama bir sınıf üyeleri izin verme avantajına sahiptir ( `CDaoRecordset` türetilmiş sınıf). MFC kullandığı veri üyeleri bağlamak için bir yöntem bu ikinci mekanizmasıdır `CDaoRecordset` türetilmiş sınıfları.  
   
-##  <a name="_mfcnotes_tn053_what_your_custom_dfx_routine_does"></a>Özel DFX alışkanlık yaptığı  
+##  <a name="_mfcnotes_tn053_what_your_custom_dfx_routine_does"></a> Özel DFX alışkanlık yaptığı  
  Herhangi bir DFX işlevde uygulanan en önemli işlemi başarıyla çağırmak için gerekli veri yapılarını ayarlamanıza olanak olması gereken Bu tartışmayı açıktır `GetRows`. DFX işlevi de desteklemesi gereken diğer işlemleri, ancak none önemli veya karmaşık doğru hazırlık olarak bir dizi vardır `GetRows` çağırın.  
   
  DFX kullanımını çevrimiçi belgelerinde açıklanmıştır. Esas olarak, iki gereksinimi yoktur. İlk olarak, üyeler eklenmeli `CDaoRecordset` türetilmiş sınıf her ilişkili alan ve parametre. Bu aşağıdaki `CDaoRecordset::DoFieldExchange` geçersiz kılınmalıdır. Veri türü üyesinin önemli olduğunu unutmayın. Bu alanın veritabanındaki verilerden eşleşen veya en az bu türe dönüştürülebilir gerekir. Örneğin bir sayısal alana uzun tamsayı gibi veritabanına zaman metne dönüştürülecek ve bağlı bir `CString` üye, ancak bir metin alanı bir veritabanında mutlaka uzun tamsayı gibi sayısal bir gösterimi dönüştürülür ve uzun integ için bağlı er üye. DAO ve Microsoft Jet veritabanı altyapısı dönüştürme (yerine için MFC) sorumludur.  
   
-##  <a name="_mfcnotes_tn053_details_of_dfx_text"></a>DFX_Text ayrıntıları  
+##  <a name="_mfcnotes_tn053_details_of_dfx_text"></a> DFX_Text ayrıntıları  
  Daha önce belirtildiği gibi DFX nasıl çalıştığını açıklamak için iyi bir örnek üzerinde çalışmak için yoludur. İçyüzü giderek bu amaçla `DFX_Text` DFX temel en az bir anlayış sağlanmasına yardımcı olmak amacıyla oldukça düzgün çalışması gerekir.  
   
  **AddToParameterList**  

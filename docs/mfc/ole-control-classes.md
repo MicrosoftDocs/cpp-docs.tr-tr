@@ -1,13 +1,10 @@
 ---
-title: "OLE denetim sınıfları | Microsoft Docs"
-ms.custom: 
+title: OLE denetim sınıfları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.classes.ole
 dev_langs:
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - OLE control classes [MFC]
 - reusable component classes [MFC]
 ms.assetid: 96495ec3-319e-4163-b839-1af0428ed9dd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e61d0ca8ed269557efbd566da1aca160ef669e83
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5dcbda85c33bab37babe5da861067d25cf31e32c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ole-control-classes"></a>OLE Denetim Sınıfları
 Bunlar, OLE denetimleri yazarken kullanmak, birincil sınıflarıdır. `COleControlModule` OLE denetim modülü sınıfında benzer [CWinApp](../mfc/reference/cwinapp-class.md) bir uygulamada sınıfı. Her modül bir veya daha fazla OLE denetimleri uygular; Bu denetimler tarafından temsil edilen `COleControl` nesneleri. Bu denetimleri kullanarak kapsayıcılarına ile iletişim `CConnectionPoint` nesneleri.  

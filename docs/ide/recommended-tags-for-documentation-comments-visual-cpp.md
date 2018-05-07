@@ -1,27 +1,22 @@
 ---
-title: "Belge açıklamaları (Visual C++) için önerilen etiketler | Microsoft Docs"
-ms.custom: 
+title: Belge açıklamaları (Visual C++) için önerilen etiketler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 6548e798-5235-4a38-9482-bdc7b88f40a9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c1b0e762ec2167a988e8e18f3dce932214716c9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1b25ad029a59c4b23bcab093b3742f16f7ca9175
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="recommended-tags-for-documentation-comments-visual-c"></a>Belge Açıklamaları için Önerilen Etiketler (Visual C++)
 Visual C++ Derleyici, kodundaki belge açıklamaları işler ve her derlenecek dosya için bir .xdc dosyası oluşturur ve xdcmake.exe bir .xml dosyasına .xdc dosyaları işler. Belgeleri oluşturmak için .xml dosyası işleme sitenizde uygulanması gereken bir ayrıntı yoktur.  

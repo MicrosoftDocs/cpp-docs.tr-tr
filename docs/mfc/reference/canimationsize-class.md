@@ -1,12 +1,9 @@
 ---
-title: "CAnimationSize sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAnimationSize sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CAnimationSize
@@ -35,17 +32,15 @@ helpviewer_keywords:
 - CAnimationSize [MFC], m_cxValue
 - CAnimationSize [MFC], m_cyValue
 ms.assetid: ea06d1b5-502c-44a3-82ca-8bd6ba6a9364
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2acbdad3ec5b08ef5d83b3a6cfdb2eadd3c0e17
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d1002ace78cf58c34c5e89bbafd81460ec5dabc1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="canimationsize-class"></a>CAnimationSize sınıfı
 Olan boyutlar animasyonlu boyutu nesnesinin işlevselliğini uygular.  
@@ -108,7 +103,7 @@ class CAnimationSize : public CAnimationBaseObject;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxanimationcontroller.h  
   
-##  <a name="addtransition"></a>CAnimationSize::AddTransition  
+##  <a name="addtransition"></a>  CAnimationSize::AddTransition  
  Genişlik ve yükseklik geçişleri ekler.  
   
 ```  
@@ -127,7 +122,7 @@ void AddTransition(
 ### <a name="remarks"></a>Açıklamalar  
  Belirtilen geçişleri iç genişliği ve yüksekliği için animasyon değişkenlere uygulanacak geçişleri listesine eklemek için bu işlevini çağırın. Geçişleri eklediğinizde, bunlar değil hemen uygulanır ve bir iç listede depolanmış. Geçişleri (belirli bir değeri bir film şeridi eklenebilir) uygulanır CAnimationController::AnimateGroup çağırdığınızda. Bir geçiş boyutları biri için geçerli gerekmiyorsa, NULL geçirebilirsiniz.  
   
-##  <a name="canimationsize"></a>CAnimationSize::CAnimationSize  
+##  <a name="canimationsize"></a>  CAnimationSize::CAnimationSize  
  Bir animasyon boyutu nesnesi oluşturur.  
   
 ```  
@@ -157,7 +152,7 @@ CAnimationSize(
 ### <a name="remarks"></a>Açıklamalar  
  Nesne kimliği ve 0 olarak ayarlanacak Grup Kimliği nesneyi genişlik, yükseklik için varsayılan değerlerle oluşturulur. SetDefaultValue ve SetID kullanarak çalışma zamanında daha sonra değiştirilebilir.  
   
-##  <a name="getanimationvariablelist"></a>CAnimationSize::GetAnimationVariableList  
+##  <a name="getanimationvariablelist"></a>  CAnimationSize::GetAnimationVariableList  
  Kapsüllenmiş animasyon değişkenleri bir listesine koyar.  
   
 ```  
@@ -170,7 +165,7 @@ virtual void GetAnimationVariableList(
  `lst`  
  İşlevi döndüğünde, genişlik ve yükseklik temsil eden iki CAnimationVariable nesnelerine işaretçiler içerir.  
   
-##  <a name="getcx"></a>CAnimationSize::GetCX  
+##  <a name="getcx"></a>  CAnimationSize::GetCX  
  Genişlik temsil eden CAnimationVariable erişim sağlar.  
   
 ```  
@@ -183,7 +178,7 @@ CAnimationVariable& GetCX();
 ### <a name="remarks"></a>Açıklamalar  
  Temel alınan CAnimationVariable genişliği temsil eden doğrudan erişmek için bu yöntemi çağırabilirsiniz.  
   
-##  <a name="getcy"></a>CAnimationSize::GetCY  
+##  <a name="getcy"></a>  CAnimationSize::GetCY  
  Yükseklik temsil eden CAnimationVariable erişim sağlar.  
   
 ```  
@@ -196,7 +191,7 @@ CAnimationVariable& GetCY();
 ### <a name="remarks"></a>Açıklamalar  
  Yükseklik temsil eden temel CAnimationVariable doğrudan erişmek için bu yöntemi çağırabilirsiniz.  
   
-##  <a name="getdefaultvalue"></a>CAnimationSize::GetDefaultValue  
+##  <a name="getdefaultvalue"></a>  CAnimationSize::GetDefaultValue  
  Genişlik ve yükseklik için varsayılan değerleri döndürür.  
   
 ```  
@@ -209,7 +204,7 @@ CSize GetDefaultValue();
 ### <a name="remarks"></a>Açıklamalar  
  Oluşturucu veya SetDefaultValue tarafından önceden ayarlanmış varsayılan değerini almak için bu işlevini çağırın.  
   
-##  <a name="getvalue"></a>CAnimationSize::GetValue  
+##  <a name="getvalue"></a>  CAnimationSize::GetValue  
  Geçerli bir değer döndürür.  
   
 ```  
@@ -226,21 +221,21 @@ BOOL GetValue(CSize& szValue);
 ### <a name="remarks"></a>Açıklamalar  
  Animasyon boyutu geçerli değerini almak için bu işlevini çağırın. Bu yöntem başarısız ya da henüz başlatılmamış genişlik ve boyutu için temel alınan COM nesneleri, szValue Oluşturucusu veya SetDefaultValue tarafından önceden ayarlanmış varsayılan değeri içerir.  
   
-##  <a name="m_cxvalue"></a>CAnimationSize::m_cxValue  
+##  <a name="m_cxvalue"></a>  CAnimationSize::m_cxValue  
  Animasyon boyutu genişliğini temsil eden kapsüllenmiş animasyon değişken.  
   
 ```  
 CAnimationVariable m_cxValue;  
 ```  
   
-##  <a name="m_cyvalue"></a>CAnimationSize::m_cyValue  
+##  <a name="m_cyvalue"></a>  CAnimationSize::m_cyValue  
  Animasyon boyutunun yüksekliğini temsil eden kapsüllenmiş animasyon değişken.  
   
 ```  
 CAnimationVariable m_cyValue;  
 ```  
   
-##  <a name="operator_csize"></a>CAnimationSize::operator CSize  
+##  <a name="operator_csize"></a>  CAnimationSize::operator CSize  
  Bir CAnimationSize bir CSize dönüştürür.  
   
 ```  
@@ -253,7 +248,7 @@ operator CSize();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev GetValue dahili olarak çağırır. GetValue herhangi bir nedenle başarısız olursa, döndürülen boyutu genişlik ve yükseklik için varsayılan değerleri içerecektir.  
   
-##  <a name="operator_eq"></a>CAnimationSize::operator =  
+##  <a name="operator_eq"></a>  CAnimationSize::operator =  
  CAnimationSize szSrc atar.  
   
 ```  
@@ -267,7 +262,7 @@ void operator=(const CSize& szSrc);
 ### <a name="remarks"></a>Açıklamalar  
  CAnimationSize szSrc atar. Bu işleç oluşturulmuş durumunda, genişlik ve yükseklik için temel alınan COM nesneleri yeniden SetDefaultValue çağırdığı için animasyon başlamadan önce bunu yapmak için önerilen. Bu olayları (ValueChanged veya IntegerValueChanged) animasyon nesneye abone, bu olayları yeniden etkinleştirmeniz gerekir.  
   
-##  <a name="setdefaultvalue"></a>CAnimationSize::SetDefaultValue  
+##  <a name="setdefaultvalue"></a>  CAnimationSize::SetDefaultValue  
  Varsayılan değer ayarlar.  
   
 ```  

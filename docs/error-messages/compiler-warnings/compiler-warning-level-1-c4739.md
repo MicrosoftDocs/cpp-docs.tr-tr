@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4739 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4739 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C4739
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4739
 ms.assetid: 600873b3-7c85-4cd4-944e-cd8e01bfcbb0
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d11002afb2eac0c7f9c6971bca3610463eed0d55
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c90acdbc8ab32522e8e7cfac079547caaf84398d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4739"></a>Derleyici Uyarısı (düzey 1) C4739
 değişken 'var' referansı, depolama alanı aşıyor  

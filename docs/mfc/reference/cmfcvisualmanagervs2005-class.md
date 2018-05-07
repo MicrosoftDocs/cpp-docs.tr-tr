@@ -1,12 +1,9 @@
 ---
-title: "CMFCVisualManagerVS2005 sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCVisualManagerVS2005 sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCVisualManagerVS2005
@@ -47,20 +44,18 @@ helpviewer_keywords:
 - CMFCVisualManagerVS2005 [MFC], OnFillMiniFrameCaption
 - CMFCVisualManagerVS2005 [MFC], OnUpdateSystemColors
 ms.assetid: ea39b9ae-327e-4a51-bce7-dc84c78f005b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9678ef4472f2bcb44a04d3484988033542aae243
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4a48cbe09d493ecc86bf8927ad4c66fd03d7662f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcvisualmanagervs2005-class"></a>CMFCVisualManagerVS2005 sınıfı
-`CMFCVisualManagerVS2005`bir uygulama Microsoft Visual Studio 2005 çalışmasıdır.  
+`CMFCVisualManagerVS2005` Bir uygulama Microsoft Visual Studio 2005 çalışmasıdır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -117,7 +112,7 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxvisualmanagervs2005.h  
   
-##  <a name="getdockingtabsborderssize"></a>CMFCVisualManagerVS2005::GetDockingTabsBordersSize  
+##  <a name="getdockingtabsborderssize"></a>  CMFCVisualManagerVS2005::GetDockingTabsBordersSize  
 
   
 ```  
@@ -128,7 +123,7 @@ virtual int GetDockingTabsBordersSize();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getmditabsborderssize"></a>CMFCVisualManagerVS2005::GetMDITabsBordersSize  
+##  <a name="getmditabsborderssize"></a>  CMFCVisualManagerVS2005::GetMDITabsBordersSize  
 
   
 ```  
@@ -139,7 +134,7 @@ virtual int GetMDITabsBordersSize();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getpropertygridgroupcolor"></a>CMFCVisualManagerVS2005::GetPropertyGridGroupColor  
+##  <a name="getpropertygridgroupcolor"></a>  CMFCVisualManagerVS2005::GetPropertyGridGroupColor  
 
   
 ```  
@@ -147,13 +142,13 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pPropList`  
+ [in] `pPropList`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="gettabframecolors"></a>CMFCVisualManagerVS2005::GetTabFrameColors  
+##  <a name="gettabframecolors"></a>  CMFCVisualManagerVS2005::GetTabFrameColors  
 
   
 ```  
@@ -170,19 +165,19 @@ virtual void GetTabFrameColors(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pTabWnd`  
- [in]`clrDark`  
- [in]`clrBlack`  
- [in]`clrHighlight`  
- [in]`clrFace`  
- [in]`clrDarkShadow`  
- [in]`clrLight`  
- [in]`pbrFace`  
- [in]`pbrBlack`  
+ [in] `pTabWnd`  
+ [in] `clrDark`  
+ [in] `clrBlack`  
+ [in] `clrHighlight`  
+ [in] `clrFace`  
+ [in] `clrDarkShadow`  
+ [in] `clrLight`  
+ [in] `pbrFace`  
+ [in] `pbrBlack`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="hasoverlappedautohidebuttons"></a>CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons  
+##  <a name="hasoverlappedautohidebuttons"></a>  CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons  
 
   
 ```  
@@ -193,7 +188,7 @@ virtual BOOL HasOverlappedAutoHideButtons() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondrawautohidebuttonborder"></a>CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder  
+##  <a name="ondrawautohidebuttonborder"></a>  CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder  
 
   
 ```  
@@ -205,14 +200,14 @@ virtual void OnDrawAutoHideButtonBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`rectBounds`  
- [in]`rectBorderSize`  
- [in]`pButton`  
+ [in] `pDC`  
+ [in] `rectBounds`  
+ [in] `rectBorderSize`  
+ [in] `pButton`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondrawcaptionbutton"></a>CMFCVisualManagerVS2005::OnDrawCaptionButton  
+##  <a name="ondrawcaptionbutton"></a>  CMFCVisualManagerVS2005::OnDrawCaptionButton  
 
   
 ```  
@@ -227,17 +222,17 @@ virtual void OnDrawCaptionButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`pButton`  
- [in]`bActive`  
- [in]`bHorz`  
- [in]`bMaximized`  
- [in]`bDisabled`  
- [in]`nImageID`  
+ [in] `pDC`  
+ [in] `pButton`  
+ [in] `bActive`  
+ [in] `bHorz`  
+ [in] `bMaximized`  
+ [in] `bDisabled`  
+ [in] `nImageID`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondrawpanecaption"></a>CMFCVisualManagerVS2005::OnDrawPaneCaption  
+##  <a name="ondrawpanecaption"></a>  CMFCVisualManagerVS2005::OnDrawPaneCaption  
 
   
 ```  
@@ -250,17 +245,17 @@ virtual COLORREF OnDrawPaneCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`pBar`  
- [in]`bActive`  
- [in]`rectCaption`  
- [in]`rectButtons`  
+ [in] `pDC`  
+ [in] `pBar`  
+ [in] `bActive`  
+ [in] `rectCaption`  
+ [in] `rectButtons`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondrawseparator"></a>CMFCVisualManagerVS2005::OnDrawSeparator  
+##  <a name="ondrawseparator"></a>  CMFCVisualManagerVS2005::OnDrawSeparator  
 
   
 ```  
@@ -272,14 +267,14 @@ virtual void OnDrawSeparator(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`pBar`  
- [in]`rect`  
- [in]`bIsHoriz`  
+ [in] `pDC`  
+ [in] `pBar`  
+ [in] `rect`  
+ [in] `bIsHoriz`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondrawtab"></a>CMFCVisualManagerVS2005::OnDrawTab  
+##  <a name="ondrawtab"></a>  CMFCVisualManagerVS2005::OnDrawTab  
 
   
 ```  
@@ -292,15 +287,15 @@ virtual void OnDrawTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`rectTab`  
- [in]`iTab`  
- [in]`bIsActive`  
- [in]`pTabWnd`  
+ [in] `pDC`  
+ [in] `rectTab`  
+ [in] `iTab`  
+ [in] `bIsActive`  
+ [in] `pTabWnd`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondrawtoolboxframe"></a>CMFCVisualManagerVS2005::OnDrawToolBoxFrame  
+##  <a name="ondrawtoolboxframe"></a>  CMFCVisualManagerVS2005::OnDrawToolBoxFrame  
 
   
 ```  
@@ -310,12 +305,12 @@ virtual void OnDrawToolBoxFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`rect`  
+ [in] `pDC`  
+ [in] `rect`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onerasetabsarea"></a>CMFCVisualManagerVS2005::OnEraseTabsArea  
+##  <a name="onerasetabsarea"></a>  CMFCVisualManagerVS2005::OnEraseTabsArea  
 
   
 ```  
@@ -326,13 +321,13 @@ virtual void OnEraseTabsArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`rect`  
- [in]`pTabWnd`  
+ [in] `pDC`  
+ [in] `rect`  
+ [in] `pTabWnd`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onfillautohidebuttonbackground"></a>CMFCVisualManagerVS2005::OnFillAutoHideButtonBackground  
+##  <a name="onfillautohidebuttonbackground"></a>  CMFCVisualManagerVS2005::OnFillAutoHideButtonBackground  
 
   
 ```  
@@ -343,13 +338,13 @@ virtual void OnFillAutoHideButtonBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`rect`  
- [in]`pButton`  
+ [in] `pDC`  
+ [in] `rect`  
+ [in] `pButton`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onfillhighlightedarea"></a>CMFCVisualManagerVS2005::OnFillHighlightedArea  
+##  <a name="onfillhighlightedarea"></a>  CMFCVisualManagerVS2005::OnFillHighlightedArea  
 
   
 ```  
@@ -361,14 +356,14 @@ virtual void OnFillHighlightedArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`rect`  
- [in]`pBrush`  
- [in]`pButton`  
+ [in] `pDC`  
+ [in] `rect`  
+ [in] `pBrush`  
+ [in] `pButton`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onfillminiframecaption"></a>CMFCVisualManagerVS2005::OnFillMiniFrameCaption  
+##  <a name="onfillminiframecaption"></a>  CMFCVisualManagerVS2005::OnFillMiniFrameCaption  
 
   
 ```  
@@ -380,16 +375,16 @@ virtual COLORREF OnFillMiniFrameCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`rectCaption`  
- [in]`pFrameWnd`  
- [in]`bActive`  
+ [in] `pDC`  
+ [in] `rectCaption`  
+ [in] `pFrameWnd`  
+ [in] `bActive`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onupdatesystemcolors"></a>CMFCVisualManagerVS2005::OnUpdateSystemColors  
+##  <a name="onupdatesystemcolors"></a>  CMFCVisualManagerVS2005::OnUpdateSystemColors  
 
   
 ```  

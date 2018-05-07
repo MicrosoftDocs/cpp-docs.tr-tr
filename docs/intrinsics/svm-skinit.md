@@ -1,12 +1,9 @@
 ---
 title: __svm_skinit | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - __svm_skinit
@@ -16,20 +13,18 @@ helpviewer_keywords:
 - SKINIT instruction
 - __svm_skinit intrinsic
 ms.assetid: 787ec781-4cf2-40a2-aa20-5192334b131a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 918bd300e11c52b7b4139cfc80b12a5de2b828a4
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 95e47608b7ec58e433d9be5e2f2178a825b6be2e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="svmskinit"></a>__svm_skinit
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Bir sanal makine izleme gibi doğrulanabilir şekilde güvenli yazılım yüklemesini başlatır.  
   

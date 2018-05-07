@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4091 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4091 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4091
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4091
 ms.assetid: 3a404967-ab42-49b0-b324-fd7ba1859d78
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9be40d65b657a7ac34fb105a2b1b16c702e4922c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 79a0a74ad2cf6471679fd776f296d465ee8dd29c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4091"></a>Derleyici Uyarısı (düzey 1) C4091
 'anahtar sözcüğü': 'type' sol tarafta hiçbir değişken bildirilmişse yoksayıldı  

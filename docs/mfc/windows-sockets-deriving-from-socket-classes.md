@@ -1,13 +1,10 @@
 ---
-title: "Windows Yuvaları: Yuva sınıflarından türetme | Microsoft Docs"
-ms.custom: 
+title: 'Windows Yuvaları: Yuva sınıflarından türetme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - Windows Sockets [MFC], deriving from socket classes
 - sockets [MFC], deriving from socket classes
 ms.assetid: 3a26e67a-e323-433b-9b05-eca018799801
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 63f8b8f735b62c1cbfedd50320bf65cec5905632
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 64fb9a3ff1c27aade9f74a8ed95a8016829874ab
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="windows-sockets-deriving-from-socket-classes"></a>Windows Yuvaları: Yuva Sınıflarından Türetme
 Bu makalede kendi sınıfı bir yuva sınıflarından türetme tarafından kazanmadan işlevselliği bazıları açıklanmaktadır.  

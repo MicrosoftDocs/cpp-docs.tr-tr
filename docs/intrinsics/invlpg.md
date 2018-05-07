@@ -1,12 +1,9 @@
 ---
 title: __invlpg | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - __invlpg
@@ -17,20 +14,18 @@ helpviewer_keywords:
 - invlpg instruction
 - __invlpg intrinsic
 ms.assetid: 3fb3633f-d9b7-4ec0-9e7f-a7f2fa8ed794
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6977d9a8cb21cf1eeefb404ddbff263643189d9
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 373e9c1f8cc24ca4de4f0a78dd75011681c78056
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="invlpg"></a>__invlpg
-**Microsoft Specific**  
+**Microsoft özel**  
   
  X86 oluşturur `invlpg` çeviri arabelleğinde arabelleği (TLB) gösterdiği bellek ile ilgili sayfa için geçersiz kılar yönerge `Address`.  
   

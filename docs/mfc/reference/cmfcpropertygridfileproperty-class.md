@@ -1,12 +1,9 @@
 ---
-title: "CMFCPropertyGridFileProperty sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCPropertyGridFileProperty sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCPropertyGridFileProperty
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - CMFCPropertyGridFileProperty [MFC], CMFCPropertyGridFileProperty
 ms.assetid: 2bb8b8b4-47fc-4798-bd5e-dc8ea0b4cd9d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4111c7da24300d83128d56b85266ee808b304ace
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a2b123b5c473c834e958263edb926ef25103d788
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcpropertygridfileproperty-class"></a>CMFCPropertyGridFileProperty sınıfı
 `CMFCPropertyGridFileProperty` Sınıfı, bir dosya seçimi iletişim kutusunu açar bir özelliği liste denetim öğesi destekler.  
@@ -66,7 +61,7 @@ class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxpropertygridctrl.h  
   
-##  <a name="cmfcpropertygridfileproperty"></a>CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty  
+##  <a name="cmfcpropertygridfileproperty"></a>  CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty  
  Oluşturan bir `CMFCPropertyGridFileProperty` nesnesi.  
   
 ```  
@@ -82,28 +77,28 @@ CMFCPropertyGridFileProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`strName`  
+ [in] `strName`  
  Özellik adı.  
   
- [in]`bOpenFileDialog`  
- `TRUE`açmak için bir **Dosya Aç** iletişim kutusu; `FALSE` açmak için bir **dosyayı Kaydet** iletişim kutusu.  
+ [in] `bOpenFileDialog`  
+ `TRUE` açmak için bir **Dosya Aç** iletişim kutusu; `FALSE` açmak için bir **dosyayı Kaydet** iletişim kutusu.  
   
- [in]`strFileName`  
+ [in] `strFileName`  
  İlk dosya adı.  
   
- [in]`lpszDefExt`  
+ [in] `lpszDefExt`  
  Bir veya daha fazla dosya adı uzantılarını dizesi. Varsayılan değer `NULL` şeklindedir.  
   
- [in]`dwFlags`  
+ [in] `dwFlags`  
  İletişim kutusu bayraklar. Bit düzeyinde bileşimini (veya) varsayılan değerdir `OFN_HIDEREADONLY` ve `OFN_OVERWRITEPROMPT`.  
   
- [in]`lpszFilter`  
+ [in] `lpszFilter`  
  Bir veya daha fazla dosya filtreleri dizesi. Varsayılan değer `NULL` şeklindedir.  
   
- [in]`lpszDescr`  
+ [in] `lpszDescr`  
  Özellik öğesi açıklaması. Varsayılan değer `NULL` şeklindedir.  
   
- [in]`dwData`  
+ [in] `dwData`  
  Özellik öğesi ile ilişkilendirilen uygulamaya özgü verileri. Örneğin, bir 32 bit tamsayı veya diğer veri için bir işaretçi. Varsayılan değer 0’dır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

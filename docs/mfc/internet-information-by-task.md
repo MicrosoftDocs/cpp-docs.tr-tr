@@ -1,29 +1,24 @@
 ---
-title: "Göreve göre Internet bilgileri | Microsoft Docs"
-ms.custom: 
+title: Göreve göre Internet bilgileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - MFC, Internet applications
 ms.assetid: da078bf5-53c3-4167-b1ef-509b5a544ad9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8b76495ce5418be052ee0fba8a1eb420a51db4b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 086955d2d5668b447163e7b14677c265d4823190
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="internet-information-by-task"></a>Göreve Göre Internet Bilgileri
 Bu konu başlığı altında listelenen görevleri gerçekleştirmek istediğiniz göreve göre sıralanır.  
@@ -36,7 +31,7 @@ Bu konu başlığı altında listelenen görevleri gerçekleştirmek istediğini
   
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz  
   
-###  <a name="_core_activex_controls.2c_.documents_and_asynchronous_moniker_tasks"></a>ActiveX denetimleri, belgeler ve zaman uyumsuz ad görevleri  
+###  <a name="_core_activex_controls.2c_.documents_and_asynchronous_moniker_tasks"></a> ActiveX denetimleri, belgeler ve zaman uyumsuz ad görevleri  
   
 -   [Etkin belgeler hakkında bilgi edinin](../mfc/active-documents-on-the-internet.md)  
   
@@ -50,7 +45,7 @@ Bu konu başlığı altında listelenen görevleri gerçekleştirmek istediğini
   
 -   [İmzalı CAB dosyaları MFC ve ATL denetimler için oluşturma](http://msdn.microsoft.com/en-us/14e50724-2505-4258-ae6b-326b706de409)  
   
-###  <a name="_core_wininet_tasks"></a>WinINet görevleri  
+###  <a name="_core_wininet_tasks"></a> WinINet görevleri  
   
 -   [WinINet, Internet erişimi için Win32 API işlevleri hakkında bilgi edinin](../mfc/wininet-basics.md)  
   

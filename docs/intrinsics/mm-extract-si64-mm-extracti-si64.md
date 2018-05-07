@@ -1,12 +1,9 @@
 ---
 title: _mm_extract_si64, _mm_extracti_si64 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - _mm_extracti_si64
@@ -18,20 +15,18 @@ helpviewer_keywords:
 - _mm_extracti_si64 intrinsic
 - _mm_extract_si64 intrinsic
 ms.assetid: 459fdd72-cc54-4ee5-bbd5-d2c6067a88e7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4bc65289ce52be9acb1cfe01d1149480a8381e3b
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: a8ba4986abf097a5827d3db7f93dbbd0a9640862
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mmextractsi64-mmextractisi64"></a>_mm_extract_si64, _mm_extracti_si64
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Oluşturur `extrq` belirtilen BITS düşük 64 bitten ilk bağımsız değişkenin değerini ayıklamak için yönerge.  
   
@@ -53,13 +48,13 @@ __m128i _mm_extracti_si64(
  [in] `Source`  
  Kendi alt 64 bit giriş verilerini 128-bit alanıyla.  
   
- [in] `Descriptor`  
+ [in]  `Descriptor`  
  Ayıklanacak bit alan açıklar 128-bit alanı.  
   
- [in] `Length`  
+ [in]  `Length`  
  Ayıklanacak alanının uzunluğunu belirten bir tamsayı.  
   
- [in] `Index`  
+ [in]  `Index`  
  Ayıklanacak alanın dizinini belirten bir tamsayı  
   
 ## <a name="return-value"></a>Dönüş Değeri  

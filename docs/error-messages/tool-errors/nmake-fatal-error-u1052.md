@@ -1,12 +1,9 @@
 ---
-title: "NMAKE önemli hatası U1052 | Microsoft Docs"
-ms.custom: 
+title: NMAKE önemli hatası U1052 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - U1052
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - U1052
 ms.assetid: b19b3691-e60b-46bd-8822-8426740a9bc7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15ef5b8c537848cffb7d588e2dac435084394c85
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f6bed402603541ae217d6a8b02f75120e6e1f854
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="nmake-fatal-error-u1052"></a>NMAKE Önemli Hatası U1052
 Dosya 'filename' bulunamadı  

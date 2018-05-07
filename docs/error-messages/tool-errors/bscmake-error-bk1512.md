@@ -1,12 +1,9 @@
 ---
-title: "BSCMAKE hatası BK1512 | Microsoft Docs"
-ms.custom: 
+title: BSCMAKE hatası BK1512 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - BK1512
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - BK1512
 ms.assetid: 0a626ff3-63db-4797-abe4-31545ce2c2c1
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c102a0959a91b43251b310c04b5f14f56e39e717
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b161375d9f8396854cc491e038e39d096d30d246
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="bscmake-error-bk1512"></a>BSCMAKE Hatası BK1512
 Dosya adı: kapasitesi aşıldı  

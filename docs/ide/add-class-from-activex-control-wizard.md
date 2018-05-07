@@ -1,13 +1,10 @@
 ---
-title: "ActiveX denetimi sihirbazından sınıf ekleme | Microsoft Docs"
-ms.custom: 
+title: ActiveX denetimi sihirbazından sınıf ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.class.axcontrol
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - ActiveX Control Wizard
 - Add Class from ActiveX Control Wizard [C++]
 ms.assetid: 668d801c-5fb6-4176-9191-5c38995a4713
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2b3b1d2b15db47eea8ebc10b2a73cafba5d6952
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7ab96943e47287c9b54753c8d3a1edb868804274
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="add-class-from-activex-control-wizard"></a>ActiveX Denetimi Sihirbazından Sınıf Ekleme
 Kullanılabilir ActiveX denetiminden bir MFC sınıfı eklemek için bu sihirbazı kullanın. Sihirbaz seçili ActiveX denetiminden eklediğiniz her bir arabirim için bir sınıf oluşturur.  
@@ -60,9 +55,9 @@ Kullanılabilir ActiveX denetiminden bir MFC sınıfı eklemek için bu sihirbaz
 |**<\<**|Tüm sınıflarda kaldırır **sınıflar** listesi. Kullanılamayan IF **sınıflar** listesi boş.|  
   
  **Oluşturulan sınıflar**  
- Sınıf adları kullanarak eklediğiniz arabirimlerinden oluşturulacak belirtir  **>**  veya  **>>**  düğmesi. Her sınıf adı görüntüleme bir sınıf seçin ve ardından yukarı veya aşağı tuşlarını liste boyunca kaydırma için bu kutuyu tıklatabilirsiniz `Class` kutusunu ve dosya adı **.h dosyası** tıkladığınızda, sihirbazın oluşturduğu kutusunu  **Son**. Bu kutuya bir kerede yalnızca bir sınıf seçebilirsiniz.  
+ Sınıf adları kullanarak eklediğiniz arabirimlerinden oluşturulacak belirtir **>** veya **>>** düğmesi. Her sınıf adı görüntüleme bir sınıf seçin ve ardından yukarı veya aşağı tuşlarını liste boyunca kaydırma için bu kutuyu tıklatabilirsiniz `Class` kutusunu ve dosya adı **.h dosyası** tıkladığınızda, sihirbazın oluşturduğu kutusunu  **Son**. Bu kutuya bir kerede yalnızca bir sınıf seçebilirsiniz.  
   
- Bu listede seçerek ve tıklatarak bir sınıf kaldırabilirsiniz  **<** . Bir sınıf seçin gerekmez **sınıflar** kutusunu tüm sınıflar kaldırmak için; tıklayarak  **<<** , tüm sınıflarda kaldırmak **sınıflar** bir kutu.  
+ Bu listede seçerek ve tıklatarak bir sınıf kaldırabilirsiniz **<**. Bir sınıf seçin gerekmez **sınıflar** kutusunu tüm sınıflar kaldırmak için; tıklayarak **<<**, tüm sınıflarda kaldırmak **sınıflar** bir kutu.  
   
  `Class`  
  Seçilen sınıfın adını belirtir **sınıflar** tıkladığınızda, sihirbaz ekler kutusunu **son**. Adı düzenleyebilirsiniz `Class` kutusu.  

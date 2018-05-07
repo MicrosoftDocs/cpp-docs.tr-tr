@@ -2,12 +2,9 @@
 title: Derleme olaylarını belirtme | Microsoft Docs
 ms.custom: ''
 ms.date: 12/28/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCEventTool.CommandLine
 - VC.Project.IVCEventTool.ExcludedFromBuild
@@ -24,17 +21,15 @@ helpviewer_keywords:
 - build events [C++]
 - post-build events
 ms.assetid: 788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc
-caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 825eec000a2b08bd7a5a4d7769405df2f5570523
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 5940f0d6efaec402a4a85ed659f42d7eab1bf91d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="specifying-build-events"></a>Derleme olayları belirtme
 
@@ -60,7 +55,7 @@ Derleme olayları hakkında genel bilgi için bkz: [anlama özel derleme adımla
 
       Birden çok girdi ve çıktı dosyası sembolik olarak MSBuild makroları ile belirtilebilir. Dosyalarının konumu veya dosya kümelerini adlarını belirtme hakkında daha fazla bilgi için bkz: [derleme komutları ve özellikler için ortak makrolar](../ide/common-macros-for-build-commands-and-properties.md).
 
-      Bir ortam değişkeni yerine her belirtirseniz, '%' karakteri MSBuild tarafından ayrılmış olduğundan  **%**  kaçış karakteri ile **% 25** onaltılık çıkış dizisi. Örneğin, **% WINDIR %** ile **25WINDIR % 25**. MSBuild değiştirir her **% 25** ile sıra  **%**  ortam değişkeni erişim izni vermeden önce karakter.
+      Bir ortam değişkeni yerine her belirtirseniz, '%' karakteri MSBuild tarafından ayrılmış olduğundan **%** kaçış karakteri ile **% 25** onaltılık çıkış dizisi. Örneğin, **% WINDIR %** ile **25WINDIR % 25**. MSBuild değiştirir her **% 25** ile sıra **%** ortam değişkeni erişim izni vermeden önce karakter.
 
    - İçinde **açıklama**, bu olay için bir açıklama yazın. Açıklama yazdırıldığında **çıkış** bu olay oluştuğunda penceresi.
 

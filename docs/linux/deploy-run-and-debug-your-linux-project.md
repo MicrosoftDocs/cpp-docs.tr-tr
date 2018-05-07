@@ -2,24 +2,21 @@
 title: Dağıtma, çalıştırmak ve Linux projenizin hatalarını ayıklama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/06/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-linux
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.tgt_pltfrm: Linux
+ms.topic: conceptual
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: ebd8783bdcf3c188e04c1d6808d5a727a2bc7cdd
-ms.sourcegitcommit: cff1a8a49f0cd50f315a250c5dd27e15c173845f
+ms.openlocfilehash: b3f3742f8a63bf93f5686143daeea23ba13255be
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="deploy-run-and-debug-your-linux-project"></a>Dağıtma, çalıştırmak ve Linux projenizin hatalarını ayıklama
 

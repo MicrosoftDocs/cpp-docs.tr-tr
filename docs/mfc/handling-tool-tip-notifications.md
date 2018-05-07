@@ -1,13 +1,10 @@
 ---
-title: "Araç İpucu bildirimlerini işleme | Microsoft Docs"
-ms.custom: 
+title: Araç İpucu bildirimlerini işleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - notifications [MFC], tool tips
 - tool tips [MFC], notifications
 ms.assetid: ddb93b5f-2e4f-4537-8053-3453c86e2bbb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b7668420b849dc08215a4fc309edf86e9171462
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3b9dffa2513c11a5feb3228cb4fdb1f6efbebe7a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="handling-tool-tip-notifications"></a>Araç İpucu Bildirimlerini İşleme
 Belirttiğinizde `TBSTYLE_TOOLTIPS` stili, araç oluşturur ve bir araç ipucunu denetimini yönetir. Araç İpucu araç çubuğu düğmesi açıklayan metin satırının içeren küçük bir açılır penceredir. Yalnızca kullanıcı imleci bir araç çubuğu düğmesini koyar ve onu var. yaklaşık yarısı için ikinci bırakır görünen araç ipucu gizlenir. Araç İpucu imlecin yanında görüntülenir.  

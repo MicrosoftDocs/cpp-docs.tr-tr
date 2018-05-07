@@ -1,12 +1,9 @@
 ---
-title: "C çalışma zamanı hatası R6009 | Microsoft Docs"
-ms.custom: 
+title: C çalışma zamanı hatası R6009 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - R6009
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - R6009
 ms.assetid: edfb1f8b-3807-48f4-a994-318923b747ae
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 137bb74bcc091721633fe22fc9c56ef6ce99a535
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2c44c08ec3b52cc53e1b29a0ecf23606c3ec06a4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="c-runtime-error-r6009"></a>C çalışma zamanı hatası R6009
 ortam için yeterli alan yok  

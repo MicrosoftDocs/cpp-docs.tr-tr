@@ -1,13 +1,10 @@
 ---
-title: "Visual C++ proje oluşturma ve yönetme | Microsoft Docs"
-ms.custom: 
+title: Visual C++ proje oluşturma ve yönetme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vcprojects
 - creatingmanagingVC
@@ -20,32 +17,30 @@ helpviewer_keywords:
 - Visual C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c38f4c75a41de8b2f2b494941c6a52b1ff46fa4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b3afbd2019965d859895462cfdad57292bc2e0b3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-and-managing-msbuild-based-visual-c-projects"></a>Visual C++ MSBuild tabanlı projeler oluşturma ve yönetme
 MSBuild Visual C++ için yerel yapılandırma sistemi ve genellikle en iyi oluşturma MFC ya da ATL kitaplıkları kullanan masaüstü uygulamaları yanı sıra UWP uygulamaları için kullanmak üzere sistemi. MSBuild proje sistemi ve Visual Studio IDE ile tümleşiktir, ancak bunu da komut satırından kullanabilirsiniz. Visual C++ Visual Studio 2017'dan başlayarak, destekler [CMake ve diğer MSBuild olmayan sistemleri Klasör Aç özelliği aracılığıyla](non-msbuild-projects.md).
 
 MSBuild tabanlı projesinde bir proje dosyası örneğin hedef Platformu (x 86, x64 veya ARM) ve olup oluşturmakta olduğunuz diğer yapılandırma ayarlarını yanı sıra program derleme için gereken tüm dosyaları ve kaynakları belirten XML biçiminde (.vcxproj) sahip bir hata ayıklama program sürümünü veya bırakın. Bir proje (ya da çok sayıda proje) bulunan bir *çözüm*; Örneğin, bir çözüm birkaç Win32 DLL projeleri ve bu DLL'leri kullanan tek bir Win32 konsol uygulaması içerebilir. Projeyi derlerken MSBuild altyapısı proje dosyası tüketir ve yürütülebilir dosya ve/veya belirttiğiniz diğer herhangi bir özel çıktı üretir.
 
-Visual C++ projeleri seçerek oluşturabileceğiniz **dosyası &#124; Yeni &#124; Proje**, Visual C++ sol bölmede seçili olduğundan emin olduktan ve Orta bölmede proje şablonları listesinden seçme. Bir şablonu temel tıkladığınızda, çoğu durumda proje oluşturmadan önce çeşitli proje özelliklerini ayarlamanıza olanak sağlayan bir Sihirbazı görünür. Görüntüleyebilir ve proje özellik sayfalarını kullanarak bu özellikleri daha sonra değiştirme (**proje &#124; Özellikler**).  
+Visual C++ projeleri seçerek oluşturabileceğiniz **dosya &#124; yeni &#124; proje**, Visual C++ sol bölmede seçili olduğundan emin olduktan ve Orta bölmede proje şablonları listesinden seçme. Bir şablonu temel tıkladığınızda, çoğu durumda proje oluşturmadan önce çeşitli proje özelliklerini ayarlamanıza olanak sağlayan bir Sihirbazı görünür. Görüntüleyebilir ve proje özellik sayfalarını kullanarak bu özellikleri daha sonra değiştirme (**proje &#124; özellikleri**).  
   
  Ayrıca yeni projeler tarafından oluşturabilirsiniz:  
   
--   seçme **dosyası &#124; Yeni &#124; Var olan koddan proje** ve mevcut kaynak kodu dosyaları eklemek için komut istemlerini izleyerek. Bu seçenek görece küçük ve basit projeleri için en iyi 25 kaynak kodu dosyaları veya az değişiklikle veya hiç karmaşık bağımlılıklar belki de çalışır.  
+-   seçme **dosya &#124; yeni &#124; var olan koddan proje** ve mevcut kaynak kodu dosyaları eklemek için komut istemlerini izleyerek. Bu seçenek görece küçük ve basit projeleri için en iyi 25 kaynak kodu dosyaları veya az değişiklikle veya hiç karmaşık bağımlılıklar belki de çalışır.  
   
 -   derleme görevleri ile başlayan ve Genel sekmesi altında Makefile proje şablonu seçin.  
   
--   boş bir proje oluşturma (altında **genel** sekmesinde) ve kaynak kodu dosyaları, Çözüm Gezgini'nde proje düğümüne sağ tıklayıp seçerek el ile ekleme **Ekle &#124; Varolan öğeyi**.  
+-   boş bir proje oluşturma (altında **genel** sekmesinde) ve kaynak kodu dosyaları, Çözüm Gezgini'nde proje düğümüne sağ tıklayıp seçerek el ile ekleme **Ekle &#124; varolan öğeyi**.  
   
 -   kullanarak [Win32 Uygulama Sihirbazı'nı](../windows/win32-application-wizard.md).  
   

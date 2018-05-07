@@ -1,12 +1,9 @@
 ---
-title: "CDataExchange sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDataExchange sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CDataExchange
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - CDataExchange [MFC], m_bSaveAndValidate
 - CDataExchange [MFC], m_pDlgWnd
 ms.assetid: 84ed6113-325d-493e-a75d-223f03a992b8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e56df3ec4604a02ba9cf1075152a11eefe7e28f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 03d68359d075efd72a1bf1907daa71e74110fa28
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdataexchange-class"></a>CDataExchange sınıfı
 İletişim kutusu veri değişimi (DDX) ve Microsoft Foundation sınıfları tarafından kullanılan iletişim kutusu veri doğrulama (DDV) yordamları destekler.  
@@ -75,7 +70,7 @@ class CDataExchange
 |[CDataExchange::m_pDlgWnd](#m_pdlgwnd)|Burada veri değişimi penceresi ya da iletişim kutusunda gerçekleşir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CDataExchange`bir taban sınıfı yok.  
+ `CDataExchange` bir taban sınıfı yok.  
   
  Özel veri türleri veya denetimleri için veri değişimi rutinleri yazıyorsanız, bu sınıfı kullanın veya kendi veri doğrulama yordamları yazıyorsanız. Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutuları](../../mfc/dialog-boxes.md).  
   
@@ -87,7 +82,7 @@ class CDataExchange
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="cdataexchange"></a>CDataExchange::CDataExchange  
+##  <a name="cdataexchange"></a>  CDataExchange::CDataExchange  
  Oluşturmak için bu üye işlevini çağırın bir `CDataExchange` nesnesi.  
   
 ```  
@@ -109,7 +104,7 @@ CDataExchange(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCControlLadenDialog#70](../../mfc/codesnippet/cpp/cdataexchange-class_1.cpp)]  
   
-##  <a name="fail"></a>CDataExchange::Fail  
+##  <a name="fail"></a>  CDataExchange::Fail  
  Bir iletişim kutusu veri doğrulama (DDV) işlemi başarısız olduğunda framework bu üye işlevi çağırır.  
   
 ```  
@@ -123,7 +118,7 @@ void Fail();
   
  Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutusunu konularına](../../mfc/dialog-boxes.md).  
   
-##  <a name="m_bsaveandvalidate"></a>CDataExchange::m_bSaveAndValidate  
+##  <a name="m_bsaveandvalidate"></a>  CDataExchange::m_bSaveAndValidate  
  Bu bayrak bir iletişim kutusu veri değişimi (DDX) işlemi yönünü belirtir.  
   
 ```  
@@ -137,7 +132,7 @@ BOOL m_bSaveAndValidate;
   
  Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutusunu konularına](../../mfc/dialog-boxes.md).  
   
-##  <a name="m_pdlgwnd"></a>CDataExchange::m_pDlgWnd  
+##  <a name="m_pdlgwnd"></a>  CDataExchange::m_pDlgWnd  
  Bir işaretçi içeriyor [CWnd](../../mfc/reference/cwnd-class.md) nesne için hangi iletişim kutusu veri değişimi (DDX) veya doğrulama (DDV) sürüyor yerleştir.  
   
 ```  
@@ -149,7 +144,7 @@ CWnd* m_pDlgWnd;
   
  Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutusunu konularına](../../mfc/dialog-boxes.md).  
   
-##  <a name="preparectrl"></a>CDataExchange::PrepareCtrl  
+##  <a name="preparectrl"></a>  CDataExchange::PrepareCtrl  
  Framework'te iletişim kutusu veri değişimi (DDX) ve doğrulama (DDV) için belirtilen denetim hazırlamak için bu üye işlevi çağırır.  
   
 ```  
@@ -172,7 +167,7 @@ HWND PrepareCtrl(int nIDC);
   
  Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutusunu konularına](../../mfc/dialog-boxes.md).  
   
-##  <a name="prepareeditctrl"></a>CDataExchange::PrepareEditCtrl  
+##  <a name="prepareeditctrl"></a>  CDataExchange::PrepareEditCtrl  
  Framework'te iletişim kutusu veri değişimi (DDX) ve doğrulama (DDV) için belirtilen düzenleme denetimi hazırlamak için bu üye işlevi çağırır.  
   
 ```  
@@ -195,7 +190,7 @@ HWND PrepareEditCtrl(int nIDC);
   
  Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutusunu konularına](../../mfc/dialog-boxes.md).  
   
-##  <a name="prepareolectrl"></a>CDataExchange::PrepareOleCtrl  
+##  <a name="prepareolectrl"></a>  CDataExchange::PrepareOleCtrl  
  Framework'te iletişim kutusu veri değişimi (DDX) ve doğrulama (DDV) için belirtilen OLE denetim hazırlamak için bu üye işlevi çağırır.  
   
 ```  

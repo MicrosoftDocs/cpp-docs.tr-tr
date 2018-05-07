@@ -1,24 +1,20 @@
 ---
-title: "İşlev ayıklamak | Microsoft Docs"
-ms.custom: 
+title: İşlev ayıklamak | Microsoft Docs
+ms.custom: ''
 ms.date: 11/16/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e31d1249-9705-4511-acbd-9f6fe73bdf2d
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dbcd323292e301857c65d908047ab14948b86573
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 7fc4d48c972bca9352f326085574e4cf4df83aea
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="extract-function"></a>Extract işlevi
 **Ne:** kendi işlevdeki bir kod parçacığını kapatmanızı sağlar.

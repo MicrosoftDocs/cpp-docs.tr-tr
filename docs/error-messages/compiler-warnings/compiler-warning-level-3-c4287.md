@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (Düzey 3) C4287 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (Düzey 3) C4287 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4287
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4287
 ms.assetid: 1bf3bff8-6402-4d06-95ba-431678a790a7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 853ead3a00c28affec82f8569704437f39e194f4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6adea398c1e4f9383cbbf6f828562bf1ea63c9eb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-3-c4287"></a>Derleyici Uyarısı (Düzey 3) C4287
 'işleci': İmzasız negatif sabit uyuşmazlığı  

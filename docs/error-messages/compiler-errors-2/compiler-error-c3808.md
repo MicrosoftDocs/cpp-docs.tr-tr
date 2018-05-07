@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3808 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3808 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3808
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3808
 ms.assetid: 2ee8ac97-3ea4-417a-8710-be73a7f98cf4
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5528760b28337f1c320195c68d54efb975696c7a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d645760a15a82f502c82f4c0d0310f7826e70e45
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3808"></a>Derleyici Hatası C3808
 'type': ComImport özniteliğine sahip bir sınıf üyesi 'member', yalnızca soyut tanımlanamıyor veya dllimport işlevleri izin verilir  

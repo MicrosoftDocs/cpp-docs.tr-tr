@@ -1,12 +1,9 @@
 ---
-title: "CAnimationVariableIntegerChangeHandler sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAnimationVariableIntegerChangeHandler sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CAnimationVariableIntegerChangeHandler
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - CAnimationVariableIntegerChangeHandler [MFC], OnIntegerValueChanged
 - CAnimationVariableIntegerChangeHandler [MFC], SetAnimationController
 ms.assetid: 6ac8e91b-e514-4ff6-babd-33f77c4b2b61
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d94576c2a831f9e7fa744d0a3c5a50a33809aaa0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 55658efabf8c9df795ed8069d9659ebf0e01e364
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="canimationvariableintegerchangehandler-class"></a>CAnimationVariableIntegerChangeHandler sınıfı
 Bir animasyon değişkeninin değeri değiştiğinde animasyon API tarafından çağrılan bir geri çağırma uygular.  
@@ -75,14 +70,14 @@ class CAnimationVariableIntegerChangeHandler : public CUIAnimationVariableIntege
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxanimationcontroller.h  
   
-##  <a name="canimationvariableintegerchangehandler"></a>CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler  
+##  <a name="canimationvariableintegerchangehandler"></a>  CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler  
  CAnimationVariableIntegerChangeHandler nesnesi oluşturur.  
   
 ```  
 CAnimationVariableIntegerChangeHandler ();
 ```  
   
-##  <a name="createinstance"></a>CAnimationVariableIntegerChangeHandler::CreateInstance  
+##  <a name="createinstance"></a>  CAnimationVariableIntegerChangeHandler::CreateInstance  
  CAnimationVariableIntegerChangeHandler geri çağırma örneği oluşturur.  
   
 ```  
@@ -100,7 +95,7 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
   
-##  <a name="onintegervaluechanged"></a>CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged  
+##  <a name="onintegervaluechanged"></a>  CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged  
  Bir animasyon değişkenin değerini değiştirildiğinde çağrılır.  
   
 ```  
@@ -127,7 +122,7 @@ IFACEMETHOD(OnIntegerValueChanged) (
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa S_OK; Aksi takdirde E_FAIL.  
   
-##  <a name="setanimationcontroller"></a>CAnimationVariableIntegerChangeHandler::SetAnimationController  
+##  <a name="setanimationcontroller"></a>  CAnimationVariableIntegerChangeHandler::SetAnimationController  
  Animasyon denetleyicisi rota olayları gösteren bir işaretçi depolar.  
   
 ```  

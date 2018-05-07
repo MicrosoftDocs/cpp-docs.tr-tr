@@ -1,13 +1,10 @@
 ---
-title: "Çerçeve penceresi sınıfları (Mimari) | Microsoft Docs"
-ms.custom: 
+title: Çerçeve penceresi sınıfları (Mimari) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.classes.frame
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - frame window classes [MFC], document/view architecture
 ms.assetid: 5da01fb4-f531-46cc-914f-e422e4f07f5d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1caf8e4b93e18675b810ced962df6e8adcf521a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b7de72b77be9be90ca876cfef943500a0312d183
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="frame-window-classes-architecture"></a>Çerçeve Penceresi Sınıfları (Mimari)
 Belge/görünüm mimarisi çerçeve pencereleri bir Görünüm penceresi içeren windows ' dir. Bunlar ayrıca sahip denetim çubukları kendisine bağlı destekler.  

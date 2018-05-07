@@ -1,13 +1,10 @@
 ---
 title: MFC COM | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - MFC COM (MFC)
 dev_langs:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - Active technology [MFC]
 - COM [MFC], MFC support
 ms.assetid: 7646bdcb-3a06-4ed5-9386-9b00f3979dcb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd9035c7b80b36e8124c827c0b3d1b76c59deb52
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 8257631e46a1ebcf5c882d9f87c628c04ccc84f5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-com"></a>MFC COM
 Çoğu Etkin Şablon kitaplığı (ATL) olarak tasarlanmıştır ancak bir alt kümesini MFC COM, desteklemek için tasarlanmıştır COM programlama için. MFC'nin COM desteği konu bu bölümde açıklanmaktadır  

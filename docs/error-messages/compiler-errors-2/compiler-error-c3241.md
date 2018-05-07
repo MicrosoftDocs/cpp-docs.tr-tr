@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3241 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3241 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3241
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3241
 ms.assetid: 2ca14879-bba0-4a23-b22a-72cfff92d6a4
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72594f79cf1ba70e6977396420ed652dbc7e3d61
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e1a3849dd404c82811eee9176fe87861cfd4a435
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3241"></a>Derleyici Hatası C3241
 'yöntemi': Bu yöntem 'arabirimi' tarafından sunulan değil  

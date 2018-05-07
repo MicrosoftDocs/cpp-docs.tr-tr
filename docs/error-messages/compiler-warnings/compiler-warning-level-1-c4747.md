@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4747 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4747 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4747
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4747
 ms.assetid: af37befd-ba1f-4bdc-96e1-a953f7a2ad9c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 094576ec19582b640ba0d4c57dfa34593177a267
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 203943f3741d07e278652a7032a6dcdcb305a384
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4747"></a>Derleyici Uyarısı (düzey 1) C4747
 Yönetilen 'entrypoint' çağrılırken: yönetilen kod çalıştıramıyor DLL entrypoint ve DLL entrypoint ulaşıldı çağrıları dahil olmak üzere, yükleyici kilidi altında  
