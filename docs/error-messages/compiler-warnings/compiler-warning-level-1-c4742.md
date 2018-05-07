@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4742 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4742 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4742
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4742
 ms.assetid: e520881d-1eeb-48b1-9df0-8017ee8ba076
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da12d4d1e5e8b6f9be6c21601e04f08d1b269cec
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d9c5c891699e89b177f9a3c070a95f496e2c77ac
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4742"></a>Derleyici Uyarısı (düzey 1) C4742
 'var' olan 'dosya1' ve 'dosya2' farklı hizalama: ve numarası  

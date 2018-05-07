@@ -1,12 +1,9 @@
 ---
 title: hash_multimap::upper_bound (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_multimap::upper_bound
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - upper_bound member [STL/CLR]
 ms.assetid: 4fa58df6-63ec-411d-bcf9-301d3c88569a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 8da5c64a24f9d31c254831e87b844feec724f254
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0b062f8cb59e31529d1b3b4da9d7e602255ed2ed
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hashmultimapupperbound-stlclr"></a>hash_multimap::upper_bound (STL/CLR)
 Belirtilen anahtarla eşleşen aralığın sonuna bulur.  

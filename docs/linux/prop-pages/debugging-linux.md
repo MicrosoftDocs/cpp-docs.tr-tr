@@ -1,24 +1,22 @@
 ---
-title: "Hata ayıklayıcı özellikleri (Linux C++) | Microsoft Docs"
-ms.custom: 
+title: Hata ayıklayıcı özellikleri (Linux C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 9/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: Linux
+ms.topic: conceptual
 ms.assetid: 0c1c0fcc-a49b-451c-a5cb-ce9711fac064
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 11ebb11cca19c98bf9f72b9f99f33d66464cd485
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 55f07d8903d8110410648e352d364151bf6d2a73
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="c-debugging-properties-linux-c"></a>C++ hata ayıklama özellikleri (Linux C++)
 

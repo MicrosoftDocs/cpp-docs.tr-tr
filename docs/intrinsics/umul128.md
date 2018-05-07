@@ -1,12 +1,9 @@
 ---
 title: _umul128 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - __umul128
@@ -15,20 +12,18 @@ dev_langs:
 helpviewer_keywords:
 - __umul128 intrinsic
 ms.assetid: 13684df3-3ac7-467c-b258-a0e93bc490b5
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64e4658fbb92a9ae693aed7bb8c940230b11d88c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: a6998b51be8fd11092c4266fa7eee7434be8e5b1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="umul128"></a>_umul128
-**Microsoft Specific**  
+**Microsoft özel**  
   
  İlk iki bağımsız değişken olarak geçirilen iki 64-bit işaretsiz tamsayı çarpar ve ürünün yüksek 64 bit gösterdiği 64 bit işaretsiz tamsayıyı koyan `HighProduct` ve ürünün düşük 64 bit döndürür.  
   

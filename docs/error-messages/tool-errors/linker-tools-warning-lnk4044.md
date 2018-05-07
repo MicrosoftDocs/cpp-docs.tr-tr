@@ -1,12 +1,9 @@
 ---
-title: "Bağlayıcı araçları uyarısı LNK4044 | Microsoft Docs"
-ms.custom: 
+title: Bağlayıcı araçları uyarısı LNK4044 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - LNK4044
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - LNK4044
 ms.assetid: f3a67a15-98c0-42ed-afcb-f5f9540e2671
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f5e4dd5edebd3f9f7875dfc4d8d4fa15974dd08
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b921f07638751b9e0702517b125b0f9de828f81b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="linker-tools-warning-lnk4044"></a>Bağlayıcı Araçları Uyarısı LNK4044
 Tanınmayan bir seçenek 'seçeneği'; göz ardı  

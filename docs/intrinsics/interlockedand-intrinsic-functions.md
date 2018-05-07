@@ -1,12 +1,9 @@
 ---
-title: "_InterlockedAnd iç işlevler | Microsoft Docs"
-ms.custom: 
+title: _InterlockedAnd iç işlevler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - _InterlockedAnd_rel
@@ -65,20 +62,18 @@ helpviewer_keywords:
 - _InterlockedAnd8 intrinsic
 - _InterlockedAnd_HLEAcquire intrinsic
 ms.assetid: ad271dc3-42cd-47d0-9f65-30d5cfeb66fc
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c1b9578accea832ceb4ff5bf58e0e750851d736
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 009c3dd2fd7e7ce123f760ae832c2c4e25fedd92
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="interlockedand-intrinsic-functions"></a>_InterlockedAnd iç işlevler
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Birden çok iş parçacığı tarafından paylaşılan bir değişken üzerinde atomik bit düzeyinde AND işlemi gerçekleştirmek için kullanılır.  
   

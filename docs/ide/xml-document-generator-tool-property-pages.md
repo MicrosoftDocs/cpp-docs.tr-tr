@@ -1,13 +1,10 @@
 ---
-title: "XML belgesi oluşturma aracı özellik sayfaları | Microsoft Docs"
-ms.custom: 
+title: XML belgesi oluşturma aracı özellik sayfaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCXDCMakeTool.ValidateIntelliSense
 - VC.Project.VCXDCMakeTool.SuppressStartupBanner
@@ -17,17 +14,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 645912b5-197a-4c36-ba58-64df09444ca0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc09dafc0f07bc16a11dd255419440b6464456c5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 772e9dc6a296873ef27171676ebca0c185c1771c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="xml-document-generator-tool-property-pages"></a>XML Belgesi Oluşturma Aracı Özellik Sayfaları
 XML belgesi oluşturma aracı özellik sayfası xdcmake.exe işlevselliğini kullanıma sunar. xdcmake.exe kaynak kodunuzu belge açıklamaları içerdiğinde bu .xdc dosyaları bir .xml dosyasına birleştirir ve [/doc (işlem belgesi açıklamaları) (C/C++)](../build/reference/doc-process-documentation-comments-c-cpp.md) belirtilirse,. Bkz: [belge açıklamaları için önerilen etiketler](../ide/recommended-tags-for-documentation-comments-visual-cpp.md) kaynak koduna belge açıklamaları ekleme hakkında bilgi için.  

@@ -1,13 +1,10 @@
 ---
-title: "Nccalcsıze_params yapısı | Microsoft Docs"
-ms.custom: 
+title: Nccalcsıze_params yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - NCCALCSIZE_PARAMS
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - NCCALCSIZE_PARAMS structure [MFC]
 ms.assetid: 3424cd9f-806a-4089-82fb-414187589edf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76a0a16ff0a2c90c6dd6060badc2c79dde1af231
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 07db612cb6dbde0dd762cf709ac6040bbd836c4b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="nccalcsizeparams-structure"></a>NCCALCSIZE_PARAMS Yapısı
 `NCCALCSIZE_PARAMS` Yapısı işlenirken bir uygulama kullanan bilgiler içermektedir `WM_NCCALCSIZE` ileti boyutu, konumu ve geçerli bir pencere istemci alanını içeriğini hesaplamak için.  

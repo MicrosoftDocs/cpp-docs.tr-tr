@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0027 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0027 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0027
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CAN0027
 - CXX0027
 ms.assetid: 0127cfc0-c292-4923-a58b-25542343cdad
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6872ca316e43281bb2b65f3a166b2903bebaf8c1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f1559aa2f3fc43080841810e11ce792db8e13b95
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0027"></a>İfade Değerlendirici Hatası CXX0027
 TP addr l-değeri  

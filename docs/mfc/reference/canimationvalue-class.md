@@ -1,12 +1,9 @@
 ---
-title: "CAnimationValue sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAnimationValue sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CAnimationValue
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - CAnimationValue [MFC], GetAnimationVariableList
 - CAnimationValue [MFC], m_value
 ms.assetid: 78c5ae19-ede5-4f20-bfbe-68b467b603c2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b37801619fae84519dde000c922d34c4b9e1509
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 923b1b74a50fd13a57c1d9c7696f81acb28453e3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="canimationvalue-class"></a>CAnimationValue sınıfı
 Bir değere sahip animasyon nesnesinin işlevselliğini uygular.  
@@ -100,7 +95,7 @@ class CAnimationValue : public CAnimationBaseObject;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxanimationcontroller.h  
   
-##  <a name="addtransition"></a>CAnimationValue::AddTransition  
+##  <a name="addtransition"></a>  CAnimationValue::AddTransition  
  Bir değere uygulanacak bir geçiş ekler.  
   
 ```  
@@ -114,7 +109,7 @@ void AddTransition(CBaseTransition* pTransition);
 ### <a name="remarks"></a>Açıklamalar  
  Bir geçiş bir animasyon değişkenine uygulanacak geçişleri iç listesine eklemek için bu işlevini çağırın. Geçişleri eklediğinizde, bunlar değil hemen uygulanır ve bir iç listede depolanmış. Geçişleri (belirli bir değeri bir film şeridi eklenebilir) uygulanır CAnimationController::AnimateGroup çağırdığınızda.  
   
-##  <a name="canimationvalue"></a>CAnimationValue::CAnimationValue  
+##  <a name="canimationvalue"></a>  CAnimationValue::CAnimationValue  
  CAnimationValue nesnesi oluşturur.  
   
 ```  
@@ -144,7 +139,7 @@ CAnimationValue(
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan özelliklerine sahip CAnimationValue nesnesi oluşturur: varsayılan değer, grup kimliği ve nesne kimliği 0 olarak ayarlanmış.  
   
-##  <a name="getanimationvariablelist"></a>CAnimationValue::GetAnimationVariableList  
+##  <a name="getanimationvariablelist"></a>  CAnimationValue::GetAnimationVariableList  
  Kapsüllenmiş animasyon değişkeni bir liste olarak geçirir.  
   
 ```  
@@ -157,7 +152,7 @@ virtual void GetAnimationVariableList(
  `lst`  
  İşlevi döndüğünde CAnimationVariable animasyonlu değerini gösteren bir işaretçi içeriyor.  
   
-##  <a name="getvalue"></a>CAnimationValue::GetValue  
+##  <a name="getvalue"></a>  CAnimationValue::GetValue  
  Geçerli değeri alır.  
   
 ```  
@@ -178,7 +173,7 @@ BOOL GetValue(INT32& nValue);
 ### <a name="remarks"></a>Açıklamalar  
  Geçerli değer almak için bu işlevini çağırın. Bu uygulama kapsüllenmiş COM nesnesi çağırır ve çağrısı başarısız olursa, bu yöntem Oluşturucusu veya SetDefaultValue önceden ayarlanmış varsayılan değerini döndürür.  
   
-##  <a name="getvariable"></a>CAnimationValue::GetVariable  
+##  <a name="getvariable"></a>  CAnimationValue::GetVariable  
  Kapsüllenmiş animasyon değişkenine erişim sağlar.  
   
 ```  
@@ -191,14 +186,14 @@ CAnimationVariable& GetVariable();
 ### <a name="remarks"></a>Açıklamalar  
  Kapsüllenmiş animasyon değişkeni erişmek için bu yöntemi kullanın. CAnimationVariable animasyon değişkeni oluşturulmadı, işaretçisi NULL olabilir, temel alınan IUIAnimationVariable nesnesini erişin.  
   
-##  <a name="m_value"></a>CAnimationValue::m_value  
+##  <a name="m_value"></a>  CAnimationValue::m_value  
  Animasyon değeri temsil eden kapsüllenmiş animasyon değişken.  
   
 ```  
 CAnimationVariable m_value;  
 ```  
   
-##  <a name="operator_double"></a>CAnimationValue::operator çift  
+##  <a name="operator_double"></a>  CAnimationValue::operator çift  
  CAnimationValue ve çift arasında dönüştürme sağlar.  
   
 ```  
@@ -211,7 +206,7 @@ operator DOUBLE();
 ### <a name="remarks"></a>Açıklamalar  
  CAnimationValue ve çift arasında dönüştürme sağlar. Bu yöntem, dahili olarak GetValue çağırır ve hatalar için denetlemez. GetValue başarısız olursa, döndürülen değer Oluşturucusu veya SetDefaultValue önceden ayarlanmış bir varsayılan değeri içerir.  
   
-##  <a name="operator_int32"></a>CAnimationValue::operator Int32  
+##  <a name="operator_int32"></a>  CAnimationValue::operator Int32  
  CAnimationValue ve Int32 arasında dönüştürme sağlar.  
   
 ```  
@@ -224,7 +219,7 @@ operator INT32();
 ### <a name="remarks"></a>Açıklamalar  
  CAnimationValue ve Int32 arasında dönüştürme sağlar. Bu yöntem, dahili olarak GetValue çağırır ve hatalar için denetlemez. GetValue başarısız olursa, döndürülen değer Oluşturucusu veya SetDefaultValue önceden ayarlanmış bir varsayılan değeri içerir.  
   
-##  <a name="operator_eq"></a>CAnimationValue::operator =  
+##  <a name="operator_eq"></a>  CAnimationValue::operator =  
  DOUBLE değeri için CAnimationValue atar.  
   
 ```  
@@ -242,7 +237,7 @@ void operator=(INT32 nVal);
 ### <a name="remarks"></a>Açıklamalar  
  DOUBLE değeri için CAnimationValue atar. Bu değer, kapsüllenmiş animasyon değişken için bir varsayılan değer olarak ayarlanır. Bu olayları (ValueChanged veya IntegerValueChanged) animasyon nesneye abone, bu olayları yeniden etkinleştirmeniz gerekir.  
   
-##  <a name="setdefaultvalue"></a>CAnimationValue::SetDefaultValue  
+##  <a name="setdefaultvalue"></a>  CAnimationValue::SetDefaultValue  
  Varsayılan değer ayarlar.  
   
 ```  

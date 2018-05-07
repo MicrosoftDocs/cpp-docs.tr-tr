@@ -1,12 +1,9 @@
 ---
-title: "CDocument sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDocument sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CDocument
@@ -129,17 +126,15 @@ helpviewer_keywords:
 - CDocument [MFC], m_clrRichPreviewTextColor
 - CDocument [MFC], m_lfRichPreviewFont
 ms.assetid: e5a2891d-e1e1-4599-8c7e-afa9b4945446
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dad4a2bb3da49b0163367761aeefe85384ecdfb2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 696b0d63a7b81b550e99981f199132713fe8a6ed
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdocument-class"></a>CDocument sınıfı
 Temel işlevleri için kullanıcı tanımlı belge sınıfları sağlar.  
@@ -266,7 +261,7 @@ class CDocument : public CCmdTarget
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="addview"></a>CDocument::AddView  
+##  <a name="addview"></a>  CDocument::AddView  
  Belgeye bir görünüm eklemek için bu işlevini çağırın.  
   
 ```  
@@ -285,7 +280,7 @@ void AddView(CView* pView);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocViewSDI#12](../../mfc/codesnippet/cpp/cdocument-class_1.cpp)]  
   
-##  <a name="beginreadchunks"></a>CDocument::BeginReadChunks  
+##  <a name="beginreadchunks"></a>  CDocument::BeginReadChunks  
  Başlatır okuma öbek.  
   
 ```  
@@ -294,7 +289,7 @@ virtual void BeginReadChunks ();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="cancloseframe"></a>CDocument::CanCloseFrame  
+##  <a name="cancloseframe"></a>  CDocument::CanCloseFrame  
  Belge görüntüleyen bir çerçeve pencere kapatılmadan önce çerçevesi tarafından çağrılır.  
   
 ```  
@@ -311,7 +306,7 @@ virtual BOOL CanCloseFrame(CFrameWnd* pFrame);
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama, belgeyi görüntüleme diğer çerçeve pencereleri olup olmadığını denetler. Belirtilen çerçeve penceresi belgeyi görüntüler sonuncu ise, işlev, güncellendiyse belgeyi kaydetmek için kullanıcıya sorar. Çerçeve penceresi kapatıldığında özel işlem gerçekleştirmek istiyorsanız, bu işlev geçersiz kılar. Gelişmiş budur geçersiz kılınabilir.  
   
-##  <a name="cdocument"></a>CDocument::CDocument  
+##  <a name="cdocument"></a>  CDocument::CDocument  
  Oluşturan bir **CDocument** nesnesi.  
   
 ```  
@@ -321,7 +316,7 @@ CDocument();
 ### <a name="remarks"></a>Açıklamalar  
  Framework belge oluşturma sizin için işler. Geçersiz kılma [OnNewDocument](#onnewdocument) bir belge başına temelinde; başlatılmasını gerçekleştirmek için üye işlevi bu tek belge arabirimi (SDI) uygulamalarında özellikle önemlidir.  
   
-##  <a name="clearchunklist"></a>CDocument::ClearChunkList  
+##  <a name="clearchunklist"></a>  CDocument::ClearChunkList  
  Öbek listesini temizler.  
   
 ```  
@@ -330,7 +325,7 @@ virtual void ClearChunkList ();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="clearpathname"></a>CDocument::ClearPathName  
+##  <a name="clearpathname"></a>  CDocument::ClearPathName  
  Belge nesne yolunu temizler.  
   
 ```  
@@ -340,7 +335,7 @@ virtual void ClearPathName();
 ### <a name="remarks"></a>Açıklamalar  
  Yolundan temizleyerek bir `CDocument` nesne belge sonraki kaydedildiğinde kullanıcıdan uygulamaya neden olur. Böylece bir **kaydetmek** komutu davranır gibi bir **Kaydet** komutu.  
   
-##  <a name="deletecontents"></a>CDocument::DeleteContents  
+##  <a name="deletecontents"></a>  CDocument::DeleteContents  
  Yok etme olmadan belgenin verilerini silmek için framework tarafından çağrılan **CDocument** nesnesinin kendisi.  
   
 ```  
@@ -353,7 +348,7 @@ virtual void DeleteContents();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#57](../../mfc/codesnippet/cpp/cdocument-class_2.cpp)]  
   
-##  <a name="findchunk"></a>CDocument::FindChunk  
+##  <a name="findchunk"></a>  CDocument::FindChunk  
  Belirtilen GUID'ye sahip bir öbek arar.  
   
 ```  
@@ -374,7 +369,7 @@ virtual POSITION FindChunk(
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getadapter"></a>CDocument::GetAdapter  
+##  <a name="getadapter"></a>  CDocument::GetAdapter  
  Uygulama nesnesi için bir işaretçi döndüren `IDocument` arabirimi.  
   
 ```  
@@ -386,7 +381,7 @@ virtual ATL::IDocument* GetAdapter();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getdoctemplate"></a>CDocument::GetDocTemplate  
+##  <a name="getdoctemplate"></a>  CDocument::GetDocTemplate  
  Bu belge türü için belge şablonu için bir işaretçi almak için bu işlevini çağırın.  
   
 ```  
@@ -399,7 +394,7 @@ CDocTemplate* GetDocTemplate() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#58](../../mfc/codesnippet/cpp/cdocument-class_3.cpp)]  
   
-##  <a name="getfile"></a>CDocument::GetFile  
+##  <a name="getfile"></a>  CDocument::GetFile  
  Bir işaretçi almak için bu üye işlevini çağırın bir `CFile` nesnesi.  
   
 ```  
@@ -417,12 +412,12 @@ virtual CFile* GetFile(
  Bir işaretçi var olan bir dosya özel durumu nesneye işleminin tamamlanma durumunu gösteren.  
   
  `nOpenFlags`  
- Paylaşım ve erişim modu. Dosyayı açarken gerçekleştirilecek eylemi belirtir. CFile oluşturucuda listelenen seçenekleri birleştirebilirsiniz [CFile::CFile](../../mfc/reference/cfile-class.md#cfile) bit düzeyinde OR (&#124;) kullanarak işleci. Bir erişim izni ve bir paylaşım seçeneği gereklidir; **modeCreate** ve **modeNoInherit** modları isteğe bağlıdır.  
+ Paylaşım ve erişim modu. Dosyayı açarken gerçekleştirilecek eylemi belirtir. CFile oluşturucuda listelenen seçenekleri birleştirebilirsiniz [CFile::CFile](../../mfc/reference/cfile-class.md#cfile) Bitsel veya kullanarak (&#124;) işleci. Bir erişim izni ve bir paylaşım seçeneği gereklidir; **modeCreate** ve **modeNoInherit** modları isteğe bağlıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi bir `CFile` nesnesi.  
   
-##  <a name="getfirstviewposition"></a>CDocument::GetFirstViewPosition  
+##  <a name="getfirstviewposition"></a>  CDocument::GetFirstViewPosition  
  Belgeyle ilişkilendirilen görünümlerinin listedeki ilk görünüm konumunu almak için bu işlevini çağırın.  
   
 ```  
@@ -435,7 +430,7 @@ virtual POSITION GetFirstViewPosition() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#59](../../mfc/codesnippet/cpp/cdocument-class_4.cpp)]  
   
-##  <a name="getnextview"></a>CDocument::GetNextView  
+##  <a name="getnextview"></a>  CDocument::GetNextView  
  Tüm belgenin görünümleri yinelemek için bu işlevini çağırın.  
   
 ```  
@@ -455,7 +450,7 @@ virtual CView* GetNextView(POSITION& rPosition) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#59](../../mfc/codesnippet/cpp/cdocument-class_4.cpp)]  
   
-##  <a name="getpathname"></a>CDocument::GetPathName  
+##  <a name="getpathname"></a>  CDocument::GetPathName  
  Belgenin disk dosyasının tam yolunu almak için bu işlevini çağırın.  
   
 ```  
@@ -465,7 +460,7 @@ const CString& GetPathName() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Belgenin tam yolu. Belge kaydedilmedi ya da ilişkili disk dosyası yok. Bu boş bir dizedir.  
   
-##  <a name="getthumbnail"></a>CDocument::GetThumbnail  
+##  <a name="getthumbnail"></a>  CDocument::GetThumbnail  
  Küçük resim görüntülemek için küçük resim sağlayıcı tarafından kullanılacak bir bit eşlem oluşturur.  
   
 ```  
@@ -490,7 +485,7 @@ virtual BOOL GetThumbnail(
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="gettitle"></a>CDocument::GetTitle  
+##  <a name="gettitle"></a>  CDocument::GetTitle  
  Belgenin dosya adlarından genellikle türetilmiş belgenin başlığını almak için bu işlevini çağırın.  
   
 ```  
@@ -500,7 +495,7 @@ const CString& GetTitle() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Belgenin başlığı.  
   
-##  <a name="initializesearchcontent"></a>CDocument::InitializeSearchContent  
+##  <a name="initializesearchcontent"></a>  CDocument::InitializeSearchContent  
  Arama içerik arama işleyicisi başlatmak üzere çağrılır.  
   
 ```  
@@ -510,7 +505,7 @@ virtual void InitializeSearchContent ();
 ### <a name="remarks"></a>Açıklamalar  
  Arama içeriği başlatmak için bir türetilmiş sınıfta bu yöntemi geçersiz kılın. İçerik virgülle ayrılan bölümleri içeren bir dize olmalıdır ";". Örneğin, "noktası; Dikdörtgen; OLE öğesi".  
   
-##  <a name="ismodified"></a>CDocument::IsModified  
+##  <a name="ismodified"></a>  CDocument::IsModified  
  Son kaydedilişinden belgenin değiştirilmiş olup olmadığını belirlemek için bu işlevini çağırın.  
   
 ```  
@@ -520,7 +515,7 @@ virtual BOOL IsModified();
 ### <a name="return-value"></a>Dönüş Değeri  
  Son kaydedilişinden belge güncellendiyse sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="issearchandorganizehandler"></a>CDocument::IsSearchAndOrganizeHandler  
+##  <a name="issearchandorganizehandler"></a>  CDocument::IsSearchAndOrganizeHandler  
  Söyler olup, bu örneği `CDocument` arama & düzenleme işleyicisi oluşturuldu.  
   
 ```  
@@ -533,7 +528,7 @@ BOOL IsSearchAndOrganizeHandler() const;
 ### <a name="remarks"></a>Açıklamalar  
  Şu anda bu işlevi döndürür `TRUE` dışı bir işlem sunucusu uygulanan Zengin Önizleme işleyicileri için. Bu işlev dönmesi için uygulama düzeyinde uygun bayrakları (m_bPreviewHandlerMode, m_bSearchMode, m_bGetThumbnailMode) ayarlayabilirsiniz `TRUE`.  
   
-##  <a name="loaddocumentfromstream"></a>CDocument::LoadDocumentFromStream  
+##  <a name="loaddocumentfromstream"></a>  CDocument::LoadDocumentFromStream  
  Belge verileri bir akıştan yüklemek için çağrılır.  
   
 ```  
@@ -555,7 +550,7 @@ virtual HRESULT LoadDocumentFromStream(
 ### <a name="remarks"></a>Açıklamalar  
  Veriler akıştan yükleme özelleştirmek için bir türetilmiş sınıfta bu yöntemin üzerine yazabilir.  
   
-##  <a name="m_bgetthumbnailmode"></a>CDocument::m_bGetThumbnailMode  
+##  <a name="m_bgetthumbnailmode"></a>  CDocument::m_bGetThumbnailMode  
  Belirleyen `CDocument` nesne küçük resimleri için dllhost tarafından oluşturuldu. Denetlenmesi `CView::OnDraw`.  
   
 ```  
@@ -563,9 +558,9 @@ BOOL m_bGetThumbnailMode;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `TRUE`Belge küçük resimleri için dllhost tarafından oluşturulduğunu gösterir.  
+ `TRUE` Belge küçük resimleri için dllhost tarafından oluşturulduğunu gösterir.  
   
-##  <a name="m_bpreviewhandlermode"></a>CDocument::m_bPreviewHandlerMode  
+##  <a name="m_bpreviewhandlermode"></a>  CDocument::m_bPreviewHandlerMode  
  Belirleyen `CDocument` nesne için Zengin Önizleme prevhost tarafından oluşturuldu. Denetlenmesi `CView::OnDraw`.  
   
 ```  
@@ -573,9 +568,9 @@ BOOL m_bPreviewHandlerMode;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `TRUE`Belge için Zengin Önizleme prevhost tarafından oluşturulduğunu gösterir.  
+ `TRUE` Belge için Zengin Önizleme prevhost tarafından oluşturulduğunu gösterir.  
   
-##  <a name="m_bsearchmode"></a>CDocument::m_bSearchMode  
+##  <a name="m_bsearchmode"></a>  CDocument::m_bSearchMode  
  Belirleyen `CDocument` nesne dizin oluşturucu veya başka bir arama uygulaması tarafından oluşturuldu.  
   
 ```  
@@ -583,9 +578,9 @@ BOOL m_bSearchMode;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `TRUE`Belge, dizin oluşturucu veya başka bir arama uygulaması tarafından oluşturulduğunu gösterir.  
+ `TRUE` Belge, dizin oluşturucu veya başka bir arama uygulaması tarafından oluşturulduğunu gösterir.  
   
-##  <a name="m_clrrichpreviewbackcolor"></a>CDocument::m_clrRichPreviewBackColor  
+##  <a name="m_clrrichpreviewbackcolor"></a>  CDocument::m_clrRichPreviewBackColor  
  Zengin Önizleme penceresi arka plan rengini belirtir. Bu renk ana bilgisayar tarafından ayarlanır.  
   
 ```  
@@ -594,7 +589,7 @@ COLORREF m_clrRichPreviewBackColor;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="m_clrrichpreviewtextcolor"></a>CDocument::m_clrRichPreviewTextColor  
+##  <a name="m_clrrichpreviewtextcolor"></a>  CDocument::m_clrRichPreviewTextColor  
  Zengin Önizleme penceresi ön plan rengini belirtir. Bu renk ana bilgisayar tarafından ayarlanır.  
   
 ```  
@@ -603,7 +598,7 @@ COLORREF m_clrRichPreviewTextColor;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="m_lfrichpreviewfont"></a>CDocument::m_lfRichPreviewFont  
+##  <a name="m_lfrichpreviewfont"></a>  CDocument::m_lfRichPreviewFont  
  Zengin Önizleme penceresi metin yazı tipini belirtir. Bu yazı tipi bilgileri ana bilgisayar tarafından ayarlanır.  
   
 ```  
@@ -612,7 +607,7 @@ CFont m_lfRichPreviewFont;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onbeforerichpreviewfontchanged"></a>CDocument::OnBeforeRichPreviewFontChanged  
+##  <a name="onbeforerichpreviewfontchanged"></a>  CDocument::OnBeforeRichPreviewFontChanged  
  Zengin Önizleme yazı tipi değiştirilmeden önce çağrılır.  
   
 ```  
@@ -621,7 +616,7 @@ virtual void OnBeforeRichPreviewFontChanged();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onchangedviewlist"></a>CDocument::OnChangedViewList  
+##  <a name="onchangedviewlist"></a>  CDocument::OnChangedViewList  
  Bir görünüm listeye eklenen veya belgeden çıkarılan sonra çerçevesi tarafından çağrılır.  
   
 ```  
@@ -631,7 +626,7 @@ virtual void OnChangedViewList();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev varsayılan uygulaması son görünümü kaldırılıyor varsa, belge siler olup olmadığını denetler ve. Framework ekler veya bir görünüm kaldırdığında özel işlem gerçekleştirmek istiyorsanız, bu işlev geçersiz kılar. Örneğin, bir belgenin bağlı Görünüm olduğunda bile açık kalmasını istiyorsanız, bu işlev geçersiz kılar.  
   
-##  <a name="onclosedocument"></a>CDocument::OnCloseDocument  
+##  <a name="onclosedocument"></a>  CDocument::OnCloseDocument  
  Belge, genellikle Dosya Kapat komutunu bir parçası olarak kapatıldığı zaman çerçevesi tarafından çağrılır.  
   
 ```  
@@ -643,7 +638,7 @@ virtual void OnCloseDocument();
   
  Çerçeve bir belge kapandığında özel temizleme işleme gerçekleştirmek istiyorsanız, bu işlev geçersiz kılar. Örneğin, bir veritabanındaki bir kaydı belgeyi temsil ediyorsa, veritabanını kapatmak için bu işlevi geçersiz isteyebilirsiniz. Bu işlev temel sınıf sürümü geçersiz kılma çağırmalıdır.  
   
-##  <a name="oncreatepreviewframe"></a>CDocument::OnCreatePreviewFrame  
+##  <a name="oncreatepreviewframe"></a>  CDocument::OnCreatePreviewFrame  
  Önizleme çerçevesi Zengin Önizleme için oluşturun gerektiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -655,7 +650,7 @@ virtual BOOL OnCreatePreviewFrame();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondocumentevent"></a>CDocument::OnDocumentEvent  
+##  <a name="ondocumentevent"></a>  CDocument::OnDocumentEvent  
  Belge olaya yanıt olarak çerçevesi tarafından çağrılır.  
   
 ```  
@@ -663,7 +658,7 @@ virtual void OnDocumentEvent(DocumentEvent deEvent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`deEvent`  
+ [in] `deEvent`  
  Olay türünü tanımlayan bir numaralandırılmış veri türü.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -678,7 +673,7 @@ virtual void OnDocumentEvent(DocumentEvent deEvent);
 |`onAfterSaveDocument`|Belge kaydedildi.|  
 |`onAfterCloseDocument`|Belge kapatıldı.|  
   
-##  <a name="ondrawthumbnail"></a>CDocument::OnDrawThumbnail  
+##  <a name="ondrawthumbnail"></a>  CDocument::OnDrawThumbnail  
  Küçük resim çizmek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
   
 ```  
@@ -696,7 +691,7 @@ virtual void OnDrawThumbnail(
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onfilesendmail"></a>CDocument::OnFileSendMail  
+##  <a name="onfilesendmail"></a>  CDocument::OnFileSendMail  
  Yerleşik posta ana bilgisayar üzerinden bir ileti (varsa) belgeyle ek olarak gönderir.  
   
 ```  
@@ -704,13 +699,13 @@ void OnFileSendMail();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `OnFileSendMail`çağrıları [OnSaveDocument](#onsavedocument) (Kaydet) adsız ve değiştirilmiş belgeleri elektronik posta gönderilir geçici bir dosya için seri hale getirilemedi. Belge değiştirilmedi, geçici bir dosya gerekli değildir; özgün gönderilir. `OnFileSendMail`MAPI32 yükler. DLL zaten yüklü.  
+ `OnFileSendMail` çağrıları [OnSaveDocument](#onsavedocument) (Kaydet) adsız ve değiştirilmiş belgeleri elektronik posta gönderilir geçici bir dosya için seri hale getirilemedi. Belge değiştirilmedi, geçici bir dosya gerekli değildir; özgün gönderilir. `OnFileSendMail` MAPI32 yükler. DLL zaten yüklü.  
   
  Özel bir uyarlamasını `OnFileSendMail` için [COleDocument](../../mfc/reference/coledocument-class.md) tanıtıcıları bileşik dosyaları doğru.  
   
  **CDocument** posta desteği (MAPI) varsa, belgenizi posta aracılığıyla göndermeyi destekler. Makalelerine bakın [MAPI konuları](../../mfc/mapi.md) ve [MFC içinde MAPI desteği](../../mfc/mapi-support-in-mfc.md).  
   
-##  <a name="onloaddocumentfromstream"></a>CDocument::OnLoadDocumentFromStream  
+##  <a name="onloaddocumentfromstream"></a>  CDocument::OnLoadDocumentFromStream  
  Belge verileri bir akıştan yükleme gerektiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -731,7 +726,7 @@ virtual HRESULT OnLoadDocumentFromStream(
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onnewdocument"></a>CDocument::OnNewDocument  
+##  <a name="onnewdocument"></a>  CDocument::OnNewDocument  
  Dosya yeni komutun parçası olarak çerçevesi tarafından çağrılır.  
   
 ```  
@@ -757,7 +752,7 @@ virtual BOOL OnNewDocument();
   
  [!code-cpp[NVC_MFCDocView#62](../../mfc/codesnippet/cpp/cdocument-class_7.cpp)]  
   
-##  <a name="onopendocument"></a>CDocument::OnOpenDocument  
+##  <a name="onopendocument"></a>  CDocument::OnOpenDocument  
  Dosya Aç komutu bir parçası olarak çerçevesi tarafından çağrılır.  
   
 ```  
@@ -787,7 +782,7 @@ virtual BOOL OnOpenDocument(LPCTSTR lpszPathName);
   
  [!code-cpp[NVC_MFCDocView#63](../../mfc/codesnippet/cpp/cdocument-class_8.cpp)]  
   
-##  <a name="onpreviewhandlerqueryfocus"></a>CDocument::OnPreviewHandlerQueryFocus  
+##  <a name="onpreviewhandlerqueryfocus"></a>  CDocument::OnPreviewHandlerQueryFocus  
  HWND arama öğesinden alınan döndürmek için Önizleme işleyicisi yönlendirir `GetFocus` işlevi.  
   
 ```  
@@ -803,7 +798,7 @@ virtual HRESULT OnPreviewHandlerQueryFocus(HWND* phwnd);
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onpreviewhandlertranslateaccelerator"></a>CDocument::OnPreviewHandlerTranslateAccelerator  
+##  <a name="onpreviewhandlertranslateaccelerator"></a>  CDocument::OnPreviewHandlerTranslateAccelerator  
  Önizleme işleyicisi çalıştığı işlem ileti Pompalama aktarılabilir bir tuş vuruşu işlemek için Önizleme işleyicisi yönlendirir.  
   
 ```  
@@ -819,7 +814,7 @@ virtual HRESULT OnPreviewHandlerTranslateAccelerator(MSG* pmsg);
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onrichpreviewbackcolorchanged"></a>CDocument::OnRichPreviewBackColorChanged  
+##  <a name="onrichpreviewbackcolorchanged"></a>  CDocument::OnRichPreviewBackColorChanged  
  Zengin Önizleme arka plan rengi değiştirildiğinde çağrılır.  
   
 ```  
@@ -828,7 +823,7 @@ virtual void OnRichPreviewBackColorChanged();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onrichpreviewfontchanged"></a>CDocument::OnRichPreviewFontChanged  
+##  <a name="onrichpreviewfontchanged"></a>  CDocument::OnRichPreviewFontChanged  
  Zengin Önizleme yazı tipi değiştirildiğinde çağrılır.  
   
 ```  
@@ -837,7 +832,7 @@ virtual void OnRichPreviewFontChanged();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onrichpreviewsitechanged"></a>CDocument::OnRichPreviewSiteChanged  
+##  <a name="onrichpreviewsitechanged"></a>  CDocument::OnRichPreviewSiteChanged  
  Zengin Önizleme site değiştirildiğinde çağrılır.  
   
 ```  
@@ -846,7 +841,7 @@ virtual void OnRichPreviewSiteChanged();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onrichpreviewtextcolorchanged"></a>CDocument::OnRichPreviewTextColorChanged  
+##  <a name="onrichpreviewtextcolorchanged"></a>  CDocument::OnRichPreviewTextColorChanged  
  Zengin Önizleme metin rengi değiştirildiğinde çağrılır.  
   
 ```  
@@ -855,7 +850,7 @@ virtual void OnRichPreviewTextColorChanged();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onsavedocument"></a>CDocument::OnSaveDocument  
+##  <a name="onsavedocument"></a>  CDocument::OnSaveDocument  
  Dosya dosyasını Kaydet veya komutun parçası olarak çerçevesi tarafından çağrılır.  
   
 ```  
@@ -872,7 +867,7 @@ virtual BOOL OnSaveDocument(LPCTSTR lpszPathName);
 ### <a name="remarks"></a>Açıklamalar  
  Belirtilen dosya, çağrıları bu işlev varsayılan uygulaması açılır [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) belgenin veri yazmak için dosya ve ardından işaretleri belgesi olarak temizleyin. Framework belgeyi kaydettiğinde özel işlem gerçekleştirmek istiyorsanız, bu işlev geçersiz kılar. Örneğin, burada belgeleri ayrı dosyalar yerine bir veritabanı kayıtları temsil bir uygulama yazabilirsiniz.  
   
-##  <a name="onunloadhandler"></a>CDocument::OnUnloadHandler  
+##  <a name="onunloadhandler"></a>  CDocument::OnUnloadHandler  
  Önizleme işleyicisi kaldırıldığında çerçevesi tarafından çağrılır.  
   
 ```  
@@ -881,7 +876,7 @@ virtual void OnUnloadHandler();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onupdatefilesendmail"></a>CDocument::OnUpdateFileSendMail  
+##  <a name="onupdatefilesendmail"></a>  CDocument::OnUpdateFileSendMail  
  Etkinleştirir **ID_FILE_SEND_MAIL** posta desteği (MAPI) yüklü olup olmadığını komutu.  
   
 ```  
@@ -897,7 +892,7 @@ void OnUpdateFileSendMail(CCmdUI* pCmdUI);
   
  **CDocument** posta desteği (MAPI) varsa, belgenizi posta aracılığıyla göndermeyi destekler. Makalelerine bakın [MAPI konuları](../../mfc/mapi.md) ve [MFC içinde MAPI desteği](../../mfc/mapi-support-in-mfc.md).  
   
-##  <a name="precloseframe"></a>CDocument::PreCloseFrame  
+##  <a name="precloseframe"></a>  CDocument::PreCloseFrame  
  Çerçeve penceresi yok önce bu üye işlev çerçevesi tarafından çağrılır.  
   
 ```  
@@ -913,7 +908,7 @@ virtual void PreCloseFrame(CFrameWnd* pFrame);
   
  Varsayılan değer olan `PreCloseFrame` hiçbir şey yapmaz **CDocument**. **CDocument**-türetilmiş sınıfları [COleDocument](../../mfc/reference/coledocument-class.md) ve [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md) bu üye işlevini kullanın.  
   
-##  <a name="readnextchunkvalue"></a>CDocument::ReadNextChunkValue  
+##  <a name="readnextchunkvalue"></a>  CDocument::ReadNextChunkValue  
  Sonraki öbek değerini okur.  
   
 ```  
@@ -929,7 +924,7 @@ virtual BOOL ReadNextChunkValue(IFilterChunkValue** ppValue);
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="releasefile"></a>CDocument::ReleaseFile  
+##  <a name="releasefile"></a>  CDocument::ReleaseFile  
  Bu üye işlevi, diğer uygulamalar tarafından kullanılabilir hale getirerek bir dosya yayımlamayı çerçevesi tarafından çağrılır.  
   
 ```  
@@ -946,13 +941,13 @@ virtual void ReleaseFile(
  Dosyanın kullanarak yayımlanacak olup olmadığını belirtir `CFile::Close` veya `CFile::Abort`. **YANLIŞ** dosya kullanarak yayımlanacak ise [CFile::Close](../../mfc/reference/cfile-class.md#close); **TRUE** dosya kullanarak yayımlanacak ise [CFile::Abort](../../mfc/reference/cfile-class.md#abort).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bAbort` olan **TRUE**, `ReleaseFile` çağrıları `CFile::Abort`, ve dosyayı serbest bırakılır. `CFile::Abort`bir özel durum oluşturmayacaksa.  
+ Varsa `bAbort` olan **TRUE**, `ReleaseFile` çağrıları `CFile::Abort`, ve dosyayı serbest bırakılır. `CFile::Abort` bir özel durum oluşturmayacaksa.  
   
  Varsa `bAbort` olan **FALSE**, `ReleaseFile` çağrıları `CFile::Close` ve dosyayı serbest bırakılır.  
   
  Dosya yayımlanmadan önce kullanıcı tarafından bir eylem gerektirecek şekilde bu üye işlevi geçersiz kılar.  
   
-##  <a name="removechunk"></a>CDocument::RemoveChunk  
+##  <a name="removechunk"></a>  CDocument::RemoveChunk  
  Belirtilen GUID'ye sahip bir öbek kaldırır.  
   
 ```  
@@ -970,7 +965,7 @@ virtual void RemoveChunk(
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="removeview"></a>CDocument::RemoveView  
+##  <a name="removeview"></a>  CDocument::RemoveView  
  Bir belgeden bir görünüm ayırmak için bu işlevini çağırın.  
   
 ```  
@@ -988,7 +983,7 @@ void RemoveView(CView* pView);
   
  Örneğe bakın [AddView](#addview) örnek uygulama için.  
   
-##  <a name="reportsaveloadexception"></a>CDocument::ReportSaveLoadException  
+##  <a name="reportsaveloadexception"></a>  CDocument::ReportSaveLoadException  
  Bir özel durum durdurulduysa (genellikle bir [CFileException](../../mfc/reference/cfileexception-class.md) veya [CArchiveException](../../mfc/reference/carchiveexception-class.md)) kaydetme veya belge yükleme.  
   
 ```  
@@ -1015,7 +1010,7 @@ virtual void ReportSaveLoadException(
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama, özel durum nesnesini inceler ve özellikle nedenini açıklayan bir hata iletisi görünür. Belirli bir ileti bulunamadı veya gerekiyorsa *e* olan **NULL**, tarafından belirtilen genel bir ileti `nIDPDefault` parametresi kullanılır. İşlev sonra hata iletisini içeren bir ileti kutusu görüntüler. Özelleştirilmiş, ek hata iletileri sağlamak istiyorsanız bu işlev geçersiz kılar. Gelişmiş budur geçersiz kılınabilir.  
   
-##  <a name="savemodified"></a>CDocument::SaveModified  
+##  <a name="savemodified"></a>  CDocument::SaveModified  
  Değiştirilmiş bir belgeyi kapatılması önce çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1028,7 +1023,7 @@ virtual BOOL SaveModified();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev varsayılan uygulaması herhangi yapılıp yapılmadığını kullanıcı değişiklikleri belgeye kaydedilip kaydedilmeyeceğini soran bir ileti kutusu görüntüler. Farklı bir sorulma yordam programınızı gerektiriyorsa, bu işlev geçersiz kılar. Gelişmiş budur geçersiz kılınabilir.  
   
-##  <a name="setchunkvalue"></a>CDocument::SetChunkValue  
+##  <a name="setchunkvalue"></a>  CDocument::SetChunkValue  
  Öbek değerini ayarlar.  
   
 ```  
@@ -1044,7 +1039,7 @@ virtual BOOL SetChunkValue (IFilterChunkValue* pValue);
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setmodifiedflag"></a>CDocument::SetModifiedFlag  
+##  <a name="setmodifiedflag"></a>  CDocument::SetModifiedFlag  
  Belge yapılan tüm değişiklikleri yaptıktan sonra bu işlevini çağırın.  
   
 ```  
@@ -1058,7 +1053,7 @@ virtual void SetModifiedFlag(BOOL bModified = TRUE);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev tutarlı bir şekilde çağırarak framework bir belgeyi kapatmadan önce değişiklikleri kaydetmek için kullanıcı komut istemleri emin olun. Genellikle varsayılan değeri kullanması gereken **TRUE** için `bModified` parametresi. Temiz bir belge (değiştirilmemiş) işaretlemek için değerini bu işlev çağrısı **FALSE**.  
   
-##  <a name="setpathname"></a>CDocument::SetPathName  
+##  <a name="setpathname"></a>  CDocument::SetPathName  
  Belgenin disk dosyasının tam yolunu belirtmek için bu işlevini çağırın.  
   
 ```  
@@ -1077,7 +1072,7 @@ virtual void SetPathName(
 ### <a name="remarks"></a>Açıklamalar  
  Değerine bağlı olarak `bAddToMRU` yol eklenen veya, uygulama tarafından tutulan MRU listesine eklenmedi. Bazı belgeleri bir disk dosyası ile ilişkili değildir. Bu işlev yalnızca çerçevesi tarafından kullanılan dosyaları açma ve kaydetme için varsayılan uygulama kılıyorsa çağırın.  
   
-##  <a name="settitle"></a>CDocument::SetTitle  
+##  <a name="settitle"></a>  CDocument::SetTitle  
  Belgenin başlığı (dize bir çerçeve penceresinin başlık çubuğunda görüntülenir) belirtmek için bu işlevini çağırın.  
   
 ```  
@@ -1091,7 +1086,7 @@ virtual void SetTitle(LPCTSTR lpszTitle);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev çağırma belgeyi görüntülemek tüm çerçeve pencereleri başlıklarını güncelleştirir.  
   
-##  <a name="updateallviews"></a>CDocument::UpdateAllViews  
+##  <a name="updateallviews"></a>  CDocument::UpdateAllViews  
  Belge değiştirildikten sonra bu işlevini çağırın.  
   
 ```  

@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (Düzey 2) C4275 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (Düzey 2) C4275 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4275
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4275
 ms.assetid: 18de967a-0a44-4dbc-a2e8-fc4c067ba909
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8434194a216ba233cec26a5700cf4864a0eca8c9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a5d2a3cd7c4b937f8bee1b8f8e37e0619cc224ba
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-2-c4275"></a>Derleyici Uyarısı (Düzey 2) C4275
 olmayan - DLL arabirim classkey 'tanımlayıcısı' temel olarak kullanılan DLL arabirimi classkey 'tanımlayıcısı'  
@@ -46,7 +41,7 @@ olmayan - DLL arabirim classkey 'tanımlayıcısı' temel olarak kullanılan DLL
   
  Sanal işlevlere sahip bir sınıf tanımlar ve işlevleri DLL örneği oluşturmak için çağırabilirsiniz tanımlama ve delete Nesne türü tarafından sınıfları dışarı aktarma önleyebilirsiniz.  Ardından yalnızca sanal işlevler türüne çağırabilirsiniz.  
   
- Şablonları dışarı aktarma ile ilgili daha fazla bilgi için bkz: [http://support.microsoft.com/default.aspx?scid=kb;TR;269238 EN-US; 168958](http://support.microsoft.com/default.aspx?scid=KB;EN-US;168958).  
+ Şablonları dışarı aktarma ile ilgili daha fazla bilgi için bkz: [ http://support.microsoft.com/default.aspx?scid=KB; EN-US; 168958](http://support.microsoft.com/default.aspx?scid=KB;EN-US;168958).  
   
  C4275 dikkate Visual C++'da bir tür kitaplığı'nda C++ standart bir hata ayıklama yayın derleme türetme varsa (**/MTd**) ve derleyici hata iletisi için _Container_base olduğu anlamına gelir.  
   

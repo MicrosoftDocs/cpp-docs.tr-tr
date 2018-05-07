@@ -1,13 +1,10 @@
 ---
-title: "ODBC sınıfları | Microsoft Docs"
-ms.custom: 
+title: ODBC sınıfları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.classes.data
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - database classes [MFC], ODBC
 - ODBC classes [MFC]
 ms.assetid: 6c40fca8-3033-4873-9abe-7f51725de0e0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33fcc3453d36a2567330f60cec73383f842210c6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 98ef4509e7e7570d8c07013f0287fe01105e154a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="odbc-classes"></a>ODBC Sınıfları
 Bu sınıfları, çok çeşitli açık veritabanı bağlantısı (ODBC) sürücüler kullanılabilir veritabanları için kolay erişim sağlamak için diğer uygulama framework sınıfları birlikte çalışın.  
@@ -50,10 +45,10 @@ Bu sınıfları, çok çeşitli açık veritabanı bağlantısı (ODBC) sürüc�
   
 ## <a name="related-classes"></a>İlgili sınıflar  
  [CLongBinary](../mfc/reference/clongbinary-class.md)  
- İkili büyük nesne (BLOB) için depolama alanı için bir tanıtıcı bir bit eşlem gibi yalıtır. `CLongBinary`nesneleri veritabanı tablolarında depolanan büyük veri nesneleri yönetmek için kullanılır.  
+ İkili büyük nesne (BLOB) için depolama alanı için bir tanıtıcı bir bit eşlem gibi yalıtır. `CLongBinary` nesneleri veritabanı tablolarında depolanan büyük veri nesneleri yönetmek için kullanılır.  
   
  [CDBVariant](../mfc/reference/cdbvariant-class.md)  
- Bir değer değerinin veri türü hakkında endişelenmeden depolamanıza olanak sağlar. `CDBVariant`veri türü bir birleşim içinde depolanan geçerli değeri izler.  
+ Bir değer değerinin veri türü hakkında endişelenmeden depolamanıza olanak sağlar. `CDBVariant` veri türü bir birleşim içinde depolanan geçerli değeri izler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../mfc/class-library-overview.md)

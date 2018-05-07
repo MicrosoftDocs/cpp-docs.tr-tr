@@ -1,13 +1,10 @@
 ---
-title: "Bit eşlem yapısı | Microsoft Docs"
-ms.custom: 
+title: Bit eşlem yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - BITMAP
 dev_langs:
@@ -15,20 +12,18 @@ dev_langs:
 helpviewer_keywords:
 - BITMAP structure [MFC]
 ms.assetid: 05d33b4d-7232-4643-a108-87dda8ff5f22
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ed782c3e67a55797bfb2d302265924393946962
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fa8bb4ab914b4e05eb21cfc45a243328d32bb6d8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="bitmap-structure"></a>BITMAP Yapısı
-**Bit eşlem** yapısını tanımlar yüksekliğini, genişlik, renk biçimi ve mantıksal bir bit eşlem bit değerleri**.**  
+**Bit eşlem** yapısını tanımlar yüksekliğini, genişlik, renk biçimi ve mantıksal bir bit eşlem bit değerleri **.**  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -69,7 +64,7 @@ typedef struct tagBITMAP {  /* bm */
 ## <a name="remarks"></a>Açıklamalar  
  Şu anda kullanılan bit eşlem biçimler şunlardır: tek renkli ve rengi. Tek renkli bitmap 1-bit, 1-düzlemi biçimi kullanır. Her tarama 16 bit katı.  
   
- Taramaları şu şekilde bir tek renkli yükseklik bit eşlem için düzenlenmiş  *n* :  
+ Taramaları şu şekilde bir tek renkli yükseklik bit eşlem için düzenlenmiş *n*:  
   
  `Scan 0`  
   

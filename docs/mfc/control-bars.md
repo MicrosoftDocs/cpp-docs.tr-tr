@@ -1,13 +1,10 @@
 ---
-title: "Denetim çubukları | Microsoft Docs"
-ms.custom: 
+title: Denetim çubukları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - CToolBar class [MFC], control bars
 - CStatusBar class [MFC], control bars
 ms.assetid: 31831910-3d23-4d70-9e71-03cc02f01ec4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3550043e5b85247d4188c830873099c6ea9831a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bd25089594d31de21a3a315d997ee01111aff4fd
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="control-bars"></a>Denetim Çubukları
 "Denetim çubuğu" araç çubukları, durum çubukları ve iletişim kutusu çubukları genel adıdır. MFC sınıfları `CToolBar`, `CStatusBar`, `CDialogBar`, `COleResizeBar`, ve **CReBar** sınıfından türetilen [CControlBar](../mfc/reference/ccontrolbar-class.md), ortak işlevleri uygular.  
@@ -54,7 +49,7 @@ ms.lasthandoff: 12/21/2017
  Denetim çubuğu türlerine kısa tanıtımları izleyin. Daha fazla bilgi için aşağıdaki bağlantılara bakın.  
   
 ## <a name="control-bars"></a>Denetim Çubukları  
- Denetim çubukları hızlı tek adımlı komutu Eylemler sağlayarak bir programın kullanılabilirlik büyük ölçüde artırır. Sınıf `CControlBar` tüm araç çubukları, durum çubukları ve iletişim kutusu çubukları ortak işlevsellik sağlar. `CControlBar`denetim çubuğu kendi üst çerçeve penceresinde konumlandırma için işlevsellik sağlar. Denetim çubuğu genellikle bir üst çerçeve penceresinin alt pencere olduğundan, istemci görünüm veya MDI istemcisi çerçeve penceresi "eşdüzey" dir. Denetim çubuğu nesne kendi üst pencerenin istemci dikdörtgen hakkında bilgi kendisini konumlandırmak için kullanır. Ardından istemci görünümü ya da MDI istemcisi penceresinde istemci pencerenin geri kalanını doldurması üst öğenin kalan istemci Pencere dikdörtgeni değiştirir.  
+ Denetim çubukları hızlı tek adımlı komutu Eylemler sağlayarak bir programın kullanılabilirlik büyük ölçüde artırır. Sınıf `CControlBar` tüm araç çubukları, durum çubukları ve iletişim kutusu çubukları ortak işlevsellik sağlar. `CControlBar` denetim çubuğu kendi üst çerçeve penceresinde konumlandırma için işlevsellik sağlar. Denetim çubuğu genellikle bir üst çerçeve penceresinin alt pencere olduğundan, istemci görünüm veya MDI istemcisi çerçeve penceresi "eşdüzey" dir. Denetim çubuğu nesne kendi üst pencerenin istemci dikdörtgen hakkında bilgi kendisini konumlandırmak için kullanır. Ardından istemci görünümü ya da MDI istemcisi penceresinde istemci pencerenin geri kalanını doldurması üst öğenin kalan istemci Pencere dikdörtgeni değiştirir.  
   
 > [!NOTE]
 >  Denetim çubuğu düğmesinde yoksa, bir **KOMUTU** veya **UPDATE_COMMAND_UI** işleyici, framework otomatik olarak devre dışı bırakır düğmesi.  

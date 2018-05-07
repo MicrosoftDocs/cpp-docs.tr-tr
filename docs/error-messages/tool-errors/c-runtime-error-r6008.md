@@ -1,12 +1,9 @@
 ---
-title: "C çalışma zamanı hatası R6008 | Microsoft Docs"
-ms.custom: 
+title: C çalışma zamanı hatası R6008 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - R6008
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - R6008
 ms.assetid: f0f304fc-709a-4843-bc7e-bad1ae0d1649
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86b64f97768359b95d2c5e2003cfb5b95a2aac71
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2d32734850c58b64694e96c3a27b759131e6c5ff
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="c-runtime-error-r6008"></a>C çalışma zamanı hatası R6008
 bağımsız değişkenler için yeterli alan yok  

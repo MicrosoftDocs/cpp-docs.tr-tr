@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4305 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4305 | Microsoft Docs
+ms.custom: ''
 ms.date: 1/17/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4305
@@ -16,14 +13,13 @@ helpviewer_keywords:
 - C4305
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fe4b2b420c44584fdd5b4d48b4264bbc7a51bee
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 7694c511f57b6907227d62f969b61218f836cb14
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4305"></a>Derleyici Uyarısı (düzey 1) C4305
 

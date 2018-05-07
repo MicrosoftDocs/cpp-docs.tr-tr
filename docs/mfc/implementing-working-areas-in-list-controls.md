@@ -1,30 +1,25 @@
 ---
-title: "Liste denetimlerinde çalışma alanlarını uygulama | Microsoft Docs"
-ms.custom: 
+title: Liste denetimlerinde çalışma alanlarını uygulama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - list controls [MFC], working areas
 - working areas in list control [MFC]
 ms.assetid: fbbb356b-3359-4348-8603-f1cb114cadde
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cefb8007fd9b73dda4c0e8a99e9ae9daa1bfcc34
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 44b92fbda7f00c761059a44b5bf9483e2dfac814
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="implementing-working-areas-in-list-controls"></a>Liste Denetimlerinde Çalışma Alanlarını Uygulama
 Varsayılan olarak, bir liste denetimini tüm öğeleri bir standart kılavuz şekilde düzenler. Ancak, çalışma liste öğeleri dikdörtgen gruplar halinde düzenler alanlarını, başka bir yöntem desteklenir. Çalışma alanları uygulayan bir liste denetimi görüntüsü için liste görünümü denetimlerinde kullanarak Windows SDK'sı bakın.  
@@ -34,7 +29,7 @@ Varsayılan olarak, bir liste denetimini tüm öğeleri bir standart kılavuz ş
   
  Çalışma alanları (sol, üst ve/veya öğeleri sağındaki üzerinde) boş bir sınır görüntülemek veya normalde olmayacaktır olması bir görüntülenecek yatay kaydırma çubuğu neden için kullanılabilir. Başka bir yaygın kullanım için öğeleri taşınmış bırakılan veya birden çok çalışma alanları oluşturmaktır. Bu yöntemle farklı anlamları tek bir görünümde alanları oluşturabilirsiniz. Kullanıcı farklı bir alanında koyarak öğeleri ardından kategorilere. Bunun bir örneğini okuma/yazma dosyaları için bir alan ve salt okunur dosyalar için başka bir alana sahip bir dosya sistemi görünümünü olacaktır. Dosya öğesi salt okunur alanına taşındıysa, onu otomatik olarak salt okunur. Bir dosya salt okunur alanından okuma/yazma alanına taşıma, okuma/yazma dosya hale getirir.  
   
- `CListCtrl`oluşturma ve yönetme, liste denetiminde çalışma alanları için birden fazla üye işlevleri sağlar. [GetWorkAreas](../mfc/reference/clistctrl-class.md#getworkareas) ve [SetWorkAreas](../mfc/reference/clistctrl-class.md#setworkareas) almak ve bir dizi ayarlamak `CRect` nesneler (veya `RECT` yapıları), şu anda uygulanan çalışma alanları listesi denetlemek için depolama. Ayrıca, [GetNumberOfWorkAreas](../mfc/reference/clistctrl-class.md#getnumberofworkareas) çalışma alanları liste denetimi için geçerli sayısını alır (varsayılan olarak, sıfır).  
+ `CListCtrl` oluşturma ve yönetme, liste denetiminde çalışma alanları için birden fazla üye işlevleri sağlar. [GetWorkAreas](../mfc/reference/clistctrl-class.md#getworkareas) ve [SetWorkAreas](../mfc/reference/clistctrl-class.md#setworkareas) almak ve bir dizi ayarlamak `CRect` nesneler (veya `RECT` yapıları), şu anda uygulanan çalışma alanları listesi denetlemek için depolama. Ayrıca, [GetNumberOfWorkAreas](../mfc/reference/clistctrl-class.md#getnumberofworkareas) çalışma alanları liste denetimi için geçerli sayısını alır (varsayılan olarak, sıfır).  
   
 ## <a name="items-and-working-areas"></a>Öğeleri ve çalışma alanları  
  Bir çalışma alanı oluşturulduğunda, çalışma alanının içinde bulunan öğeler üyelerini haline gelir. Benzer şekilde, bir öğe çalışma alanına taşınırsa, taşınmış olan çalışma alanının bir üyesi haline gelir. Otomatik olarak bir öğe içinde herhangi bir çalışma alanına bulunmayacak, ilk (dizin 0) çalışma alanının bir üyesi haline gelir. Bir öğe oluşturun ve belirli bir çalışma alanı içinde yerleştirilen sağlamak istiyorsanız, öğesi oluşturun ve ardından taşımak istediğiniz çalışma alanına çağrısıyla gerekir [SetItemPosition](../mfc/reference/clistctrl-class.md#setitemposition). Aşağıdaki ikinci örneği, bu tekniği gösterir.  

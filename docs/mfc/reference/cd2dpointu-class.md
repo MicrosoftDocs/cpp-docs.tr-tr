@@ -1,12 +1,9 @@
 ---
-title: "CD2DPointU sınıfı | Microsoft Docs"
-ms.custom: 
+title: CD2DPointU sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CD2DPointU
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - CD2DPointU [MFC], CD2DPointU
 ms.assetid: 04733f96-b6de-4a89-82e3-caad1e8087a9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f5af7ab3327a7c3d2f1afc31ad8cc2bde144eeb3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 91496e96763ab8c79ae1c71d68b9ae8f8db15e50
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cd2dpointu-class"></a>CD2DPointU sınıfı
 İçin sarmalayıcı `D2D1_POINT_2U`.  
@@ -60,7 +55,7 @@ class CD2DPointU : public D2D1_POINT_2U;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxrendertarget.h  
   
-##  <a name="cd2dpointu"></a>CD2DPointU::CD2DPointU  
+##  <a name="cd2dpointu"></a>  CD2DPointU::CD2DPointU  
  CPoint nesnesinden CD2DPointU nesnesi oluşturur.  
   
 ```  
@@ -80,7 +75,7 @@ CD2DPointU(UINT32 uX = 0, UINT32 uY = 0);
  `uY`  
  Kaynak Y  
   
-##  <a name="operator_cpoint"></a>CD2DPointU::operator CPoint  
+##  <a name="operator_cpoint"></a>  CD2DPointU::operator CPoint  
  CD2DPointU CPoint nesnesine dönüştürür.  
   
 ```  

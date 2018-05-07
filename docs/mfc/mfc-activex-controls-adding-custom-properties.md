@@ -1,30 +1,25 @@
 ---
-title: "MFC ActiveX denetimleri: Özel özellikler ekleme | Microsoft Docs"
-ms.custom: 
+title: 'MFC ActiveX denetimleri: Özel özellikler ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], properties
 - properties [MFC], custom
 ms.assetid: 85af5167-74c7-427b-b8f3-e0d7b73942e5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f64154142c4c5f0fb3f24dc63120799132983880
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fc3aa3f7aa8b6f4abf28c12a11f75540f59238e4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-activex-controls-adding-custom-properties"></a>MFC ActiveX Denetimleri: Özel Özellikler Ekleme
 Özel özellikler farklı stok özelliklerinden özel özellikler tarafından zaten uygulanmaz, `COleControl` sınıfı. Özel bir özellik, belirli bir durumu veya bir ActiveX denetimine denetimi kullanarak Programcı görünümünü göstermek için kullanılır.  
@@ -53,7 +48,7 @@ ms.lasthandoff: 12/21/2017
   
      Parametreli uygulama Özellik Ekleme Sihirbazı tarafından desteklenir. (Bazen özellik dizisi denir) parametreli özellik değerleri kümesi tek bir denetim özelliği üzerinden erişmek için kullanılabilir. Bu uygulama için gönderme eşleme girişi makro `DISP_PROPERTY_PARAM`. Böyle bir uygulama ile ilgili daha fazla bilgi için bkz: [parametreli özellik uygulama](../mfc/mfc-activex-controls-advanced-topics.md) makalede ActiveX denetimleri: Gelişmiş Konular.  
   
-##  <a name="_core_using_classwizard_to_add_a_custom_property"></a>Kullanarak bir özel özellik eklemek için özellik Sihirbazı Ekle  
+##  <a name="_core_using_classwizard_to_add_a_custom_property"></a> Kullanarak bir özel özellik eklemek için özellik Sihirbazı Ekle  
  Aşağıdaki yordamda özel bir özellik Get/Set yöntemleri uygulama kullanan CircleOffset ekleme gösterilmektedir. CircleOffset özel özellik denetimin kullanıcının denetimin sınırlayıcı dikdörtgenini Merkezi'nden daire uzaklığı izin verir. Get/Set yöntemleri dışında uygulaması ile özel özellikler ekleme yordamı çok benzer.  
   
  Bu yordamı, istediğiniz diğer özel özelliklerini eklemek için de kullanılabilir. CircleOffset özellik adı ve parametreleri için özel özellik adınızı değiştirin.  
@@ -80,7 +75,7 @@ ms.lasthandoff: 12/21/2017
   
 9. **Son**'a tıklayın.  
   
-##  <a name="_core_classwizard_changes_for_custom_properties"></a>Özellik Sihirbazı değişiklikleri için özel özellikler ekleme  
+##  <a name="_core_classwizard_changes_for_custom_properties"></a> Özellik Sihirbazı değişiklikleri için özel özellikler ekleme  
  Özellik Ekleme Sihirbazı'nı CircleOffset özel özellik eklediğinizde, üstbilgiye değişiklikleri yapar (. Y) ve uygulama (. Denetim sınıfı CPP) dosyaları.  
   
  Aşağıdaki satırları eklenir. H adlı iki işlevleri bildirme dosyaya `GetCircleOffset` ve `SetCircleOffset`:  

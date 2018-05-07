@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4659 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4659 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4659
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4659
 ms.assetid: e29ba8db-7917-43f6-8e34-868b752279ae
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd974c730a67489d9197b448f02a5042f77159f0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 643b599cd11d0935f1769ad37dca4e764f0418e6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4659"></a>Derleyici Uyarısı (düzey 1) C4659
 \#pragma 'pragma': ayrılmış segment 'segmenti' kullanımını davranışı tanımlı olmayan, #pragma Açıklama (Bağlayıcı,...) kullanın  

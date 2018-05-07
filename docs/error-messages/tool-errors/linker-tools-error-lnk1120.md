@@ -2,11 +2,8 @@
 title: Bağlayıcı araçları hatası LNK1120 | Microsoft Docs
 ms.custom: ''
 ms.date: 05/17/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: ''
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - LNK1120
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - LNK1120
 ms.assetid: 56aa7d36-921f-4daf-b44d-cca0d4fb1b51
-caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82fb2f290bc0aeaf8332e642c014006d38b5c97d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fab2b937f8bf941219c678c638e9757903ee7698
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="linker-tools-error-lnk1120"></a>Bağlayıcı Araçları Hatası LNK1120
 *sayı* çözümlenmemiş externals  

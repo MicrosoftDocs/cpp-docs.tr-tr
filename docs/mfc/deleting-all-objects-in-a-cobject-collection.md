@@ -1,13 +1,10 @@
 ---
-title: "CObject koleksiyonundaki tüm nesneleri silme | Microsoft Docs"
-ms.custom: 
+title: CObject koleksiyonundaki tüm nesneleri silme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - objects in CObject collections
 - collection classes [MFC], shared objects
 ms.assetid: 81d2c1d5-a0a5-46e1-8ab9-82b45cf7afd2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04f1edc7f181bdb23e050d2fa608c9b3a2056749
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4f57e503e43bdb637b85e4642349203b9f2e8aa6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="deleting-all-objects-in-a-cobject-collection"></a>CObject Koleksiyonundaki Tüm Nesneleri Silme
 Bu makalede (koleksiyon nesnesi silmeden) koleksiyonundaki tüm nesneleri silme açıklanmaktadır.  
@@ -47,7 +42,7 @@ Bu makalede (koleksiyon nesnesi silmeden) koleksiyonundaki tüm nesneleri silme 
   
 -   [Bir eşleme](#_core_to_delete_all_elements_in_a_map)  
   
-#### <a name="_core_to_delete_all_objects_in_a_list_of_pointers_to_cobject"></a>CObject işaretçiler listesindeki tüm nesneleri silmek için  
+#### <a name="_core_to_delete_all_objects_in_a_list_of_pointers_to_cobject"></a>  CObject işaretçiler listesindeki tüm nesneleri silmek için  
   
 1.  Kullanım `GetHeadPosition` ve `GetNext` eşlemeleri yinelemek için.  
   
@@ -63,7 +58,7 @@ Bu makalede (koleksiyon nesnesi silmeden) koleksiyonundaki tüm nesneleri silme 
   
  Bir öğenin nesne silme ve öğe kaldırıldığında arasındaki fark. Yalnızca listeden bir öğe kaldırıldığında nesnesine listenin başvuru kaldırır. Nesne hala bellekte mevcut. Bir nesne sildiğinizde, mevcut işlemiyorsa ve kendi bellek iadesi. Bu nedenle, böylece artık mevcut nesnelere erişmek listenin denemez öğenin nesne hemen silindikten sonra bir öğeyi kaldırmak önemlidir.  
   
-#### <a name="_core_to_delete_all_elements_in_an_array"></a>Bir dizinin tüm öğeleri silmek için  
+#### <a name="_core_to_delete_all_elements_in_an_array"></a>  Bir dizinin tüm öğeleri silmek için  
   
 1.  Kullanım `GetSize` ve dizi boyunca yinelemek için tamsayı dizini değerleri.  
   
@@ -77,7 +72,7 @@ Bu makalede (koleksiyon nesnesi silmeden) koleksiyonundaki tüm nesneleri silme 
   
  Liste örneği yukarıdaki arayabileceğiniz gibi `RemoveAll` bir dizideki tüm öğeleri kaldırmak için veya `RemoveAt` tek bir öğe kaldırmak için.  
   
-#### <a name="_core_to_delete_all_elements_in_a_map"></a>Bir eşlemindeki tüm öğeleri silmek için  
+#### <a name="_core_to_delete_all_elements_in_a_map"></a> Bir eşlemindeki tüm öğeleri silmek için  
   
 1.  Kullanım `GetStartPosition` ve `GetNextAssoc` dizi boyunca yinelemek için.  
   

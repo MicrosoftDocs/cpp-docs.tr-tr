@@ -1,12 +1,9 @@
 ---
-title: "Komut satırı hatası D8037 | Microsoft Docs"
-ms.custom: 
+title: Komut satırı hatası D8037 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - D8037
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - D8037
 ms.assetid: acddaaa0-bd84-426f-a37b-8f680b379c9d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cc19633528cddfdd18f8cb8bb17b150432462c4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 729a7fedbe1be3acbe7d68d9037b2f9c8b9f9806
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="command-line-error-d8037"></a>Komut Satırı Hatası D8037
 Geçici IL dosya oluşturulamıyor; eski IL dosyaların temiz temp dizini  

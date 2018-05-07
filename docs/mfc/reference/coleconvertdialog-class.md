@@ -1,12 +1,9 @@
 ---
-title: "COleConvertDialog sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleConvertDialog sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleConvertDialog
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - COleConvertDialog [MFC], GetSelectionType
 - COleConvertDialog [MFC], m_cv
 ms.assetid: a7c57714-31e8-4b78-834d-8ddd1b856a1c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f93c17416c81d4c152608f4d8a8b78f48e5422c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 90453d4e8550038493545b691c978b59bda90fad
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coleconvertdialog-class"></a>COleConvertDialog sınıfı
 Daha fazla bilgi için bkz: [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) Windows SDK'sındaki yapısı.  
@@ -102,7 +97,7 @@ class COleConvertDialog : public COleDialog
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxodlgs.h  
   
-##  <a name="coleconvertdialog"></a>COleConvertDialog::COleConvertDialog  
+##  <a name="coleconvertdialog"></a>  COleConvertDialog::COleConvertDialog  
  Yalnızca oluşturan bir `COleConvertDialog` nesnesi.  
   
 ```  
@@ -124,7 +119,7 @@ explicit COleConvertDialog (
   
 - **CF_SELECTACTIVATEAS** iletişim kutusu çağrıldığında, etkinleştirme olarak radyo düğmesi'nin başlangıçta seçili olur belirtir.  
   
-- **CF_SETCONVERTDEFAULT** belirleyen sınıfı olan **CLSID** tarafından belirtilen **clsidConvertDefault** üyesi `m_cv` yapısı varsayılan olarak kullanılır Dönüştürülecek radyo düğmesi seçildiğinde sınıf listesi kutusunda seçim.  
+- **CF_SETCONVERTDEFAULT** belirleyen sınıfı olan **CLSID** tarafından belirtilen **clsidConvertDefault** üyesi `m_cv` yapısı varsayılan seçim olarak kullanılır sınıf listesinde dönüştürmek için radyo düğmesi kutusunu seçilir.  
   
 - **CF_SETACTIVATEDEFAULT** belirleyen sınıfı olan **CLSID** tarafından belirtilen **clsidActivateDefault** üyesi `m_cv` yapısı varsayılan olarak kullanılır Etkinleştirme olarak radyo düğmesi seçildiğinde sınıf listesi kutusunda seçim.  
   
@@ -141,7 +136,7 @@ explicit COleConvertDialog (
   
  Daha fazla bilgi için bkz: [CLSID anahtarı](http://msdn.microsoft.com/library/windows/desktop/ms691424) ve [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) yapısı.  
   
-##  <a name="doconvert"></a>COleConvertDialog::DoConvert  
+##  <a name="doconvert"></a>  COleConvertDialog::DoConvert  
  Başarıyla döndürme sonra bu işlevi çağırmak [DoModal](#domodal)veya dönüştürmek için bir nesne türü etkinleştirmek için [COleClientItem](../../mfc/reference/coleclientitem-class.md).  
   
 ```  
@@ -158,7 +153,7 @@ BOOL DoConvert(COleClientItem* pItem);
 ### <a name="remarks"></a>Açıklamalar  
  Öğe dönüştürülen veya Dönüştür iletişim kutusu kullanıcı tarafından seçilen bilgileri göre etkin.  
   
-##  <a name="domodal"></a>COleConvertDialog::DoModal  
+##  <a name="domodal"></a>  COleConvertDialog::DoModal  
  OLE Dönüştür iletişim kutusu görüntülemek için bu işlevini çağırın.  
   
 ```  
@@ -179,7 +174,7 @@ virtual INT_PTR DoModal();
   
  Varsa `DoModal` döndürür **IDOK**, diğer üye ayarları veya kullanıcı tarafından iletişim kutusuna giriş bilgileri almak için işlevleri çağırabilir.  
   
-##  <a name="getclassid"></a>COleConvertDialog::GetClassID  
+##  <a name="getclassid"></a>  COleConvertDialog::GetClassID  
  Almak için bu işlevi çağırmak **CLSID** Dönüştür iletişim kutusunda seçili kullanıcı öğeyle ilişkili.  
   
 ```  
@@ -194,7 +189,7 @@ REFCLSID GetClassID() const;
   
  Daha fazla bilgi için bkz: [CLSID anahtarı](http://msdn.microsoft.com/library/windows/desktop/ms691424) Windows SDK'sındaki.  
   
-##  <a name="getdrawaspect"></a>COleConvertDialog::GetDrawAspect  
+##  <a name="getdrawaspect"></a>  COleConvertDialog::GetDrawAspect  
  Seçilen öğe bir simge olarak görüntülemek kullanıcının seçtiği olup olmadığını belirlemek için bu işlevini çağırın.  
   
 ```  
@@ -204,16 +199,16 @@ DVASPECT GetDrawAspect() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Nesneyi işlemek için gerekli yöntemi.  
   
-- `DVASPECT_CONTENT`Simge olarak göster onay kutusu işaretli değilse döndürdü.  
+- `DVASPECT_CONTENT` Simge olarak göster onay kutusu işaretli değilse döndürdü.  
   
-- `DVASPECT_ICON`Simge olarak göster onay kutusu denetlendi döndürdü.  
+- `DVASPECT_ICON` Simge olarak göster onay kutusu denetlendi döndürdü.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev yalnızca sonra çağrısı [DoModal](#domodal) döndürür **IDOK**.  
   
  En boy çizim daha fazla bilgi için bkz: [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK'sındaki veri yapısı.  
   
-##  <a name="geticonicmetafile"></a>COleConvertDialog::GetIconicMetafile  
+##  <a name="geticonicmetafile"></a>  COleConvertDialog::GetIconicMetafile  
  Seçilen öğenin simge en boy içeren meta dosyası için bir tanıtıcı almak için bu işlevini çağırın.  
   
 ```  
@@ -223,7 +218,7 @@ HGLOBAL GetIconicMetafile() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  İletişim kutusu seçerek zaman kapatıldığında simge olarak göster onay kutusu ise, simge en boy seçilen öğenin içeren meta dosyası tanıtıcısını işaretli **Tamam**; Aksi halde **NULL**.  
   
-##  <a name="getselectiontype"></a>COleConvertDialog::GetSelectionType  
+##  <a name="getselectiontype"></a>  COleConvertDialog::GetSelectionType  
  Dönüştür iletişim kutusunda seçili dönüştürme türünü belirlemek için bu işlevini çağırın.  
   
 ```  
@@ -252,7 +247,7 @@ enum Selection {
   
 - **COleConvertDialog::activateAs** kullanıcı etkinleştirme olarak radyo düğmesi işaretlediyseniz etkinleştirmek için farklı bir öğeyi seçilen döndürülen ve `DoModal` döndürülen **IDOK**.  
   
-##  <a name="m_cv"></a>COleConvertDialog::m_cv  
+##  <a name="m_cv"></a>  COleConvertDialog::m_cv  
  Türü yapısını **OLEUICONVERT** Dönüştür iletişim kutusu davranışını denetlemek için kullanılır.  
   
 ```  

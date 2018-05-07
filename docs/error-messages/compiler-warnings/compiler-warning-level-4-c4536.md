@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 4) C4536 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 4) C4536 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4536
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4536
 ms.assetid: ab4d0686-f813-4e88-a264-b40d3630ed6c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43e7109ea4a45af68d12220e0352dc6dfd9ce816
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ab098c240c75fa7b06c9bce73a64c61c1f46f99a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-4-c4536"></a>Derleyici Uyarısı (düzey 4) C4536
 'tür adı': tür adı meta verileri 'sınırı' karakter sınırını aşıyor  

@@ -1,26 +1,24 @@
 ---
-title: "C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak | Microsoft Docs"
+title: C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak | Microsoft Docs
 ms.date: 11/27/2017
 ms.technology:
 - cpp-ide
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDE [C++]
 - Visual Studio IDE [C++]
 ms.assetid: d985c230-8e81-49d6-92be-2db9cac8d023
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e44e9a446322cd25464a2b91ca760f6ab5a45902
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 29810e928ee910efe0eb9a4bdbcda8576bcb7a9e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-the-visual-studio-ide-for-c-desktop-development"></a>C++ Masaüstü Geliştirmesi için Visual Studio IDE Kullanma
 

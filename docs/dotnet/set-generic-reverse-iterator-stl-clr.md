@@ -1,12 +1,9 @@
 ---
 title: set::generic_reverse_iterator (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::set::generic_reverse_iterator
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - generic_reverse_iterator member [STL/CLR]
 ms.assetid: 1d223de6-f47b-4c29-a39b-2b06ddb63351
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 12ae16a4caf990bb482cc14bc98a27f569d99034
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5042daa269737a25e90d08cc1068c7df3803fab3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="setgenericreverseiterator-stlclr"></a>set::generic_reverse_iterator (STL/CLR)
 Kullanmak için ters yineleyici kapsayıcısı için genel arabirimi türü.  

@@ -3,8 +3,8 @@ title: Derleyici Uyarısı (düzey 1) C4052 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
-- cpp-tools
-ms.topic: reference
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C4055
 dev_langs:
@@ -16,11 +16,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29b1c8bcc836e35f7b8b81954ef247527d8ec35e
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 47d7d8891b589dc8205b0d799f88466c1e7d8a59
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4055"></a>Derleyici Uyarısı (düzey 1) C4055
 

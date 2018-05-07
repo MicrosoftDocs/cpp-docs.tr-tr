@@ -1,13 +1,10 @@
 ---
-title: "Etkin belge kapsaması | Microsoft Docs"
-ms.custom: 
+title: Etkin belge kapsaması | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - active document containers [MFC], about active document containers
 - MFC COM, active document containment
 ms.assetid: b8dfa74b-75ce-47df-b75e-fc87b7f7d687
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16c0311c3eedc13cbc47214b44fc8810dee3eecd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 74ad16aa453c6fa0df2c84bd0a0a789b05f83169
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="active-document-containment"></a>Etkin Belge Kapsaması
 Etkin belge kapsaması belgelerle oluşturmak ve her belge türü için birden çok uygulama çerçeveleri kullanmak için zorlama yerine çalışmak üzere tek bir çerçeve sağlayan bir teknolojidir. OLE katıştırılmış nesneler yalnızca tek bir içerik etkinleştirilebilir bileşik belge içinde çalışır, temel OLE teknolojisini farklıdır. Etkin belge kapsaması ile tek bir çerçevesi bağlamında tüm belgeyi (ilişkili menüleri, araç çubukları ve benzeri dahil olmak üzere diğer bir deyişle, tüm uygulamanın) etkinleştirin.  

@@ -1,22 +1,20 @@
 ---
-title: "İmza değiştirme | Microsoft Docs"
-ms.custom: 
+title: İmza değiştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/16/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- cpp-ide
+ms.topic: conceptual
 ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5280b4940c2a52fc6e72b397300040ca4c1ac92e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4f913f0b3065b136f626ef15cc2a77dce8d0254f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="change-signature"></a>Değişiklik imza
 **Ne:** bir işlevin parametreleri değiştirmenize olanak tanır.

@@ -1,12 +1,9 @@
 ---
-title: "CUIntArray sınıfı | Microsoft Docs"
-ms.custom: 
+title: CUIntArray sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CUIntArray
@@ -51,17 +48,15 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: d71f3d8f-ef9f-4e48-9b69-7782c0e2ddf7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5132dddcdd707d6fef63627c48e4b5619cead084
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: eb8c7d46a2ffc2d569cc123d51aaebbf43b5e328
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cuintarray-class"></a>CUIntArray sınıfı
 İmzasız tamsayılar dizileri destekler.  
@@ -118,7 +113,7 @@ class CUIntArray : public CObject
 ## <a name="remarks"></a>Açıklamalar  
  İmzasız tamsayı veya **UINT**, sözcükleri ve doublewords söz farklı fiziksel boyutu bir **UINT** işletim ortamı hedef bağlı olarak değiştirebilirsiniz. A **UINT** bir doubleword aynı boyutta değil.  
   
- `CUIntArray`bir araya getirir [ımplement_dynamıc](run-time-object-model-services.md#implement_dynamic) çalışma zamanı tür erişimi ve için dökme desteklemek için makrosu bir [CDumpContext](../../mfc/reference/cdumpcontext-class.md) nesnesi. Tek tek işaretsiz tamsayı öğelerinin bir döküm gerekiyorsa, 1 veya daha büyük döküm bağlam derinliği ayarlamanız gerekir. İşaretsiz tamsayı diziler seri hale getirilemez.  
+ `CUIntArray` bir araya getirir [ımplement_dynamıc](run-time-object-model-services.md#implement_dynamic) çalışma zamanı tür erişimi ve için dökme desteklemek için makrosu bir [CDumpContext](../../mfc/reference/cdumpcontext-class.md) nesnesi. Tek tek işaretsiz tamsayı öğelerinin bir döküm gerekiyorsa, 1 veya daha büyük döküm bağlam derinliği ayarlamanız gerekir. İşaretsiz tamsayı diziler seri hale getirilemez.  
   
 > [!NOTE]
 >  Bir dizi kullanmadan önce kullanın `SetSize` boyutuna kurmak ve bunun için bellek ayrılamadı. Kullanmıyorsanız, `SetSize`, dizinizi için öğe eklemek görüntülenmesine neden olur sık bırakılan ve kopyalanır. Sık sık yeniden ayırma ve kopyalama verimsiz ve bellek parçalara.  

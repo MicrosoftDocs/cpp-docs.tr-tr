@@ -1,10 +1,10 @@
 ---
-title: "Derleme görevleri dosyası projesi oluşturma | Microsoft Docs"
-ms.custom: 
+title: Derleme görevleri dosyası projesi oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 02/28/2018
 ms.technology:
 - cpp-ide
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.appwiz.makefile.project
 dev_langs:
@@ -13,17 +13,15 @@ helpviewer_keywords:
 - Makefile projects, creating
 - project files [C++], Makefile projects
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f487126b58dddc0243646ebce7faa2754ffa7053
-ms.sourcegitcommit: 4e01d36ffa64ea11bacf589f79d2f1df947e2510
+ms.openlocfilehash: dc854f96f1c41baf28a5af4ca1f253e47d9a8914
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-a-makefile-project"></a>Derleme Görevleri Dosyası Projesi Oluşturma
 

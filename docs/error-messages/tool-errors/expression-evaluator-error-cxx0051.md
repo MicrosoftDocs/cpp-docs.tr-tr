@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0051 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0051 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0051
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CAN0051
 - CXX0051
 ms.assetid: 031cd2ed-d9bb-4aa5-9858-71581bcca49c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d46a1e0b05c5068b29d4bc33835bd27e920d73bb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7a922738aa9ba3672e1f8f7c801f02d13a90a99c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0051"></a>İfade Değerlendirici Hatası CXX0051
 kesme noktası içinde belirtilen birden fazla aşırı yüklenmiş simgesi  

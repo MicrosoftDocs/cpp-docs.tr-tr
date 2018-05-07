@@ -1,8 +1,8 @@
 ---
-title: "Derleyici uyarıları C4400 C4599 aracılığıyla | Microsoft Docs"
+title: Derleyici uyarıları C4400 C4599 aracılığıyla | Microsoft Docs
 ms.date: 11/17/2017
 ms.technology:
-- cpp-tools
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4413
@@ -147,14 +147,13 @@ dev_langs:
 ms.assetid: b07850a5-ae89-48ea-bf9a-f0e30939f9b9
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9843c3725022ff500d31b90677192c4178c42596
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: aa15d1e23178350dc8b19859db77f272492c2758
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warnings-c4400-through-c4599"></a>Derleyici uyarıları C4400 C4599 aracılığıyla
 
@@ -182,7 +181,7 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı ilet
 |[Derleyici Uyarısı (düzey 2) C4412](../../error-messages/compiler-warnings/compiler-warning-level-2-c4412.md)|'*işlevi*': işlev imzası içeren türü '*türü*'; Saf kod arasında geçirmek için güvenli ve karma veya yerel C++ nesneleri.|
 |C4413 uyarı derleyici|'classname::member': başvuru üyesi Oluşturucusu çıktıktan sonra kalmıyor geçici bir başlatıldı|
 |[Derleyici Uyarısı (düzey 3) C4414](../../error-messages/compiler-warnings/compiler-warning-level-3-c4414.md)|'*işlevi*': yakınında dönüştürülür kısa atlama işlevi|
-|Derleyici Uyarısı (düzey 1) C4415|duplicate __declspec(code_seg('*name*'))|
+|Derleyici Uyarısı (düzey 1) C4415|Yinelenen __declspec (code_seg ('*adı*'))|
 |Derleyici Uyarısı (düzey 1) C4416|__declspec(code_seg(...)) boş dize içeriyor: yoksayıldı|
 |Derleyici Uyarısı (düzey 1) C4417|bir açık şablonu örneklemesi __declspec(code_seg(...)) olamaz: yoksayıldı|
 |Derleyici Uyarısı (düzey 1) C4418|bir enum göz ardı __declspec(code_seg(...))|
@@ -227,7 +226,7 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı ilet
 |[Derleyici Uyarısı (düzey 1) C4461](../../error-messages/compiler-warnings/compiler-warning-level-1-c4461.md)|'*classname*': Bu sınıf bir sonlandırıcı sahip '! *Sonlandırıcı*', ancak hiçbir yıkıcı ' ~*dtor*'|
 |[Derleyici Uyarısı (düzey 1, hata) C4462](../../error-messages/compiler-warnings/compiler-warning-level-1-c4462.md)|'*türü*': GUID türü belirlenemiyor. Program çalışma zamanında başarısız olabilir.|
 |[Derleyici Uyarısı (düzey 4) C4463](compiler-warning-level-4-c4463.md)|taşma; atama '*değeri*'için değerleri yalnızca tutabilir bit alanlı'*MIN_VALUE*'to'*max_value*'|
-|[Derleyici Uyarısı (düzey 4) C4464](../../error-messages/compiler-warnings/c4464.md)|göreli yol dahil içeren '..'|
+|[Derleyici uyarısı (düzey 4) C4464](../../error-messages/compiler-warnings/c4464.md)|göreli yol dahil içeren '..'|
 |[Derleyici Uyarısı (düzey 1) C4470](../../error-messages/compiler-warnings/compiler-warning-level-1-c4470.md)|/ CLR altında göz ardı kayan nokta denetim pragmaları|
 |[Derleyici Uyarısı (düzey 4) C4471](compiler-warning-level-4-c4471.md)|'*numaralandırma*': dizininden kapsam dışı numaralandırma ileriye dönük bildirimi bir temel alınan türü (int olduğu varsayılır) olması gerekir|
 |Derleyici Uyarısı (düzey 1) C4472|'*tanımlayıcısı*' yerel Enum: bildirmek için bir erişim belirteci (özel/ortak) eklemek bir ' WinRT&#124;yönetilen ' enum|

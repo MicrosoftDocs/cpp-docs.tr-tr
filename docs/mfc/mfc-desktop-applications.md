@@ -1,13 +1,10 @@
 ---
-title: "MFC Masaüstü uygulamaları | Microsoft Docs"
-ms.custom: 
+title: MFC Masaüstü uygulamaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - MFC
 - mfc
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - class libraries, MFC
 - MFC, about MFC
 ms.assetid: 7101cb18-a681-495c-8f2b-069ad20c72f7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5f99270afc1f603b8e5e44a23cd422f96558efb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c3afd68e8407d1e02fa39b76316da66fcfe56b8c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-desktop-applications"></a>MFC Masaüstü Uygulamaları
 Microsoft Foundation Class (MFC) kitaplığı, nesne yönelimli bir sarmalayıcı çoğunu Win32 ve COM API'leri sağlar. Çok basit Masaüstü uygulamaları oluşturmak için kullanılır ancak, birden çok denetimleri ile daha karmaşık kullanıcı arabirimleri geliştirmek gerektiğinde en yararlı olur. MFC uygulamaları Office stili kullanıcı arabirimleri ile oluşturmak için kullanabilirsiniz.  
@@ -96,7 +91,7 @@ Microsoft Foundation Class (MFC) kitaplığı, nesne yönelimli bir sarmalayıc�
  [Visual C++ Kitaplık Başvurusu](../standard-library/cpp-standard-library-reference.md)  
  Visual C++ ile ATL, MFC, OLE DB Şablonları, C çalışma zamanı kitaplığı ve C++ Standart Kitaplığı dahil olmak üzere sağlanan çeşitli kitaplıklarına bağlantılar sağlar.  
   
- [Visual Studio'da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio.md)  
+ [Visual Studio’da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio.md)  
  Uygulama ya da saklı yordamlar mantık hataları düzeltmek için Visual Studio hata ayıklayıcısı kullanma için bağlantılar sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

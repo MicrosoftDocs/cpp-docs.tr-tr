@@ -1,13 +1,10 @@
 ---
-title: "MFC ActiveX denetimleri: Gelişmiş özellik uygulama | Microsoft Docs"
-ms.custom: 
+title: 'MFC ActiveX denetimleri: Gelişmiş özellik uygulama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - properties [MFC], ActiveX controls
 - MFC ActiveX controls [MFC], properties
 ms.assetid: ec2e6759-5a8e-41d8-a275-99af8ff6f32e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ac8b2cb1a9c8de43ecfbd2f4712d19750bb143a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 97b6bbcbcf226d343d8b3cb51f110442e133a379
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-activex-controls-advanced-property-implementation"></a>MFC ActiveX Denetimleri: Gelişmiş Özellik Uygulama
 Bu makalede bir ActiveX denetimini özelliklerinde Gelişmiş uygulama için ilgili konular açıklanmaktadır:  
@@ -34,7 +29,7 @@ Bu makalede bir ActiveX denetimini özelliklerinde Gelişmiş uygulama için ilg
   
 -   [Bir özellikten hata kodları döndürme](#_core_returning_error_codes_from_a_property)  
   
-##  <a name="_core_read2donly_and_write2donly_properties"></a>Salt okunur ve salt yazılır Özellikler  
+##  <a name="_core_read2donly_and_write2donly_properties"></a> Salt okunur ve salt yazılır Özellikler  
  Özellik Ekleme Sihirbazı'nı denetimi için salt okunur veya salt yazılır özellikler uygulamak için hızlı ve kolay bir yöntem sağlar.  
   
 #### <a name="to-implement-a-read-only-or-write-only-property"></a>Bir salt okunur veya sadece yazılabilir özelliği uygulamak için  
@@ -69,13 +64,13 @@ Bu makalede bir ActiveX denetimini özelliklerinde Gelişmiş uygulama için ilg
   
  Bu kod örneği çağırır `SetNotSupported` varsa `m_bReadOnlyMode` veri üyesi olduğu **doğru**. Varsa **yanlış**, özelliği yeni değere ayarlanır.  
   
-##  <a name="_core_returning_error_codes_from_a_property"></a>Bir özellikten hata kodları döndürme  
+##  <a name="_core_returning_error_codes_from_a_property"></a> Bir özellikten hata kodları döndürme  
  Get veya bir özellik Ayarla çalışılırken bir hata oluştu belirtmek için kullanın `COleControl::ThrowError` geçen işlevi bir `SCODE` (durum kodu) bir parametre olarak. Kullanabileceğiniz önceden tanımlanmış bir `SCODE` veya kendi tanımlayın. Bir listesi için önceden tanımlanmış `SCODE`s ve özel tanımlamaya yönelik yönergeler `SCODE`s, bkz: [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) makale ActiveX denetimleri: Gelişmiş Konular.  
   
  Yardımcı işlevleri mevcut önceden tanımlanmış en sık karşılaşılan için `SCODE`s, gibi [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported), ve [COleControl:: SetNotPermitted](../mfc/reference/colecontrol-class.md#setnotpermitted).  
   
 > [!NOTE]
->  `ThrowError`bir özelliğin Get veya kümesi içinde bir hatadan döndüren yalnızca bir aracı olarak kullanılması amaçlanmıştır işlevi ya da bir Otomasyon yöntemi. Yalnızca bunlar uygun özel durum işleyici olacaktır kez yığında sunar.  
+>  `ThrowError` bir özelliğin Get veya kümesi içinde bir hatadan döndüren yalnızca bir aracı olarak kullanılması amaçlanmıştır işlevi ya da bir Otomasyon yöntemi. Yalnızca bunlar uygun özel durum işleyici olacaktır kez yığında sunar.  
   
  Diğer alanlarda özel durum kodunun raporlama ile ilgili daha fazla bilgi için bkz: [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) ve bölüm [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) makalede ActiveX denetimleri: Gelişmiş Konular.  
   

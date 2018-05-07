@@ -1,13 +1,10 @@
 ---
-title: "Özel durum işleme | Microsoft Docs"
-ms.custom: 
+title: Özel durum işleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.exceptions
 dev_langs:
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - MFC, exceptions
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adad6183d15b378feb7ec96aedff6a0013a2dd24
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5a24d78089e468a2020e0ecdb1fba34783965325
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="exception-processing"></a>Özel Durum İşleme
 Bir program yürütüldüğünde, bir dizi anormal koşullar ve "özel durumlar" adlı hataları oluşabilir. Bunlar, bellek, kaynak ayırma hatalarını ve dosyaları bulmak için hata tükenmesinden olabilir.  
@@ -101,7 +96,7 @@ Bir program yürütüldüğünde, bir dizi anormal koşullar ve "özel durumlar"
 |-|-|  
 |[AfxAbort](#afxabort)|Adlı bir uygulamayı önemli bir hata olduğunda meydana gelir.|  
   
-##  <a name="try"></a>DENEYİN  
+##  <a name="try"></a>  DENEYİN  
  Ayarlayan bir **deneyin** bloğu.  
   
 ```   
@@ -119,7 +114,7 @@ TRY
 ### <a name="requirements"></a>Gereksinimler
 Başlık: afx.h
 
-##  <a name="catch"></a>YAKALAMA  
+##  <a name="catch"></a>  YAKALAMA  
  Önceki durum ilk özel durum türü yakalar kod bloğunu tanımlar **deneyin** bloğu.  
   
 ```   
@@ -149,7 +144,7 @@ CATCH(exception_class, exception_object_pointer_name)
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCExceptions#26](../../mfc/codesnippet/cpp/exception-processing_1.cpp)]  
   
-##  <a name="catch_all"></a>CATCH_ALL  
+##  <a name="catch_all"></a>  CATCH_ALL  
  Önceki oluşturulan tüm özel durum türlerini yakalaması kod bloğunu tanımlar **deneyin** bloğu.  
   
 ```   
@@ -174,7 +169,7 @@ CATCH_ALL(exception_object_pointer_name)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
 
-##  <a name="and_catch"></a>AND_CATCH  
+##  <a name="and_catch"></a>  AND_CATCH  
  Bir önceki oluşturulan ek özel durum türleri yakalama için kod bloğunu tanımlar **deneyin** bloğu.  
   
 ```   
@@ -191,7 +186,7 @@ AND_CATCH(exception_class, exception_object_pointer_name)
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım **CATCH** bir özel durum türü, catch makrosu sonra `AND_CATCH` makrosu catch sonraki her türü. Son **deneyin** ile engelleme bir `END_CATCH` makrosu.  
   
- Özel durum işleme kodunda uygunsa, özel durumun belirli nedeni hakkında daha fazla bilgi, özel durum nesnesi sorgulayın. Çağrı `THROW_LAST` makrosu içinde `AND_CATCH` engellemek için sonraki dış özel durum çerçeve işleme shift. `AND_CATCH`Yukarıdaki sonunu işaretler **CATCH** veya `AND_CATCH` bloğu.  
+ Özel durum işleme kodunda uygunsa, özel durumun belirli nedeni hakkında daha fazla bilgi, özel durum nesnesi sorgulayın. Çağrı `THROW_LAST` makrosu içinde `AND_CATCH` engellemek için sonraki dış özel durum çerçeve işleme shift. `AND_CATCH` Yukarıdaki sonunu işaretler **CATCH** veya `AND_CATCH` bloğu.  
   
 > [!NOTE]
 >  `AND_CATCH` Blok (küme ayraçları işaretleriyle) C++ kapsam olarak tanımlanır. Bu kapsamdaki Değişkenler bildirirseniz, yalnızca bu kapsamda erişilebilir unutmayın. Bu durum için de geçerlidir *exception_object_pointer_name* değişkeni.  
@@ -201,7 +196,7 @@ AND_CATCH(exception_class, exception_object_pointer_name)
   
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
-##  <a name="and_catch_all"></a>AND_CATCH_ALL  
+##  <a name="and_catch_all"></a>  AND_CATCH_ALL  
  Bir önceki oluşturulan ek özel durum türleri yakalama için kod bloğunu tanımlar **deneyin** bloğu.  
   
 ```   
@@ -215,7 +210,7 @@ AND_CATCH_ALL(exception_object_pointer_name)
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım **CATCH** bir özel durum türü, catch makrosu sonra `AND_CATCH_ALL` diğer tüm sonraki türleri catch makrosu. Kullanırsanız `AND_CATCH_ALL`, son **deneyin** ile engelleme bir `END_CATCH_ALL` makrosu.  
   
- Özel durum işleme kodunda uygunsa, özel durumun belirli nedeni hakkında daha fazla bilgi, özel durum nesnesi sorgulayın. Çağrı `THROW_LAST` makrosu içinde `AND_CATCH_ALL` engellemek için sonraki dış özel durum çerçeve işleme shift. `AND_CATCH_ALL`Yukarıdaki sonunu işaretler **CATCH** veya `AND_CATCH_ALL` bloğu.  
+ Özel durum işleme kodunda uygunsa, özel durumun belirli nedeni hakkında daha fazla bilgi, özel durum nesnesi sorgulayın. Çağrı `THROW_LAST` makrosu içinde `AND_CATCH_ALL` engellemek için sonraki dış özel durum çerçeve işleme shift. `AND_CATCH_ALL` Yukarıdaki sonunu işaretler **CATCH** veya `AND_CATCH_ALL` bloğu.  
   
 > [!NOTE]
 >  `AND_CATCH_ALL` Blok (kaşlı ayraç işaretleriyle) C++ kapsam olarak tanımlanır. Bu kapsamdaki Değişkenler bildirirseniz, yalnızca bu kapsamda erişilebilir unutmayın.  
@@ -223,7 +218,7 @@ AND_CATCH_ALL(exception_object_pointer_name)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
   
-##  <a name="end_catch"></a>END_CATCH  
+##  <a name="end_catch"></a>  END_CATCH  
  Son sonunu işaretler **CATCH** veya `AND_CATCH` bloğu.  
   
 ```   
@@ -236,7 +231,7 @@ END_CATCH
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
   
-##  <a name="end_catch_all"></a>END_CATCH_ALL  
+##  <a name="end_catch_all"></a>  END_CATCH_ALL  
  Son sonunu işaretler `CATCH_ALL` veya `AND_CATCH_ALL` bloğu.  
   
 ```   
@@ -246,7 +241,7 @@ END_CATCH_ALL
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
   
-##  <a name="throw"></a>THROW (MFC)  
+##  <a name="throw"></a>  THROW (MFC)  
  Belirtilen özel durum oluşturur.  
   
 ```   
@@ -265,7 +260,7 @@ THROW(exception_object_pointer)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
   
-##  <a name="throw_last"></a>THROW_LAST  
+##  <a name="throw_last"></a>  THROW_LAST  
  Özel durum geri sonraki oluşturur dış **CATCH** bloğu.  
   
 ```   
@@ -283,7 +278,7 @@ THROW_LAST()
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
   
-##  <a name="afxthrowarchiveexception"></a>AfxThrowArchiveException  
+##  <a name="afxthrowarchiveexception"></a>  AfxThrowArchiveException  
  Arşiv özel durum oluşturur.  
   
 ```   
@@ -300,7 +295,7 @@ void  AfxThrowArchiveException(int cause, LPCTSTR lpszArchiveName);
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
   
-##  <a name="afxthrowfileexception"></a>AfxThrowFileException  
+##  <a name="afxthrowfileexception"></a>  AfxThrowFileException  
  Bir dosya özel durum oluşturur.  
   
 ```   
@@ -326,7 +321,7 @@ void AfxThrowFileException(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
 
-## <a name="afxthrowinvalidargexception"></a>AfxThrowInvalidArgException
+## <a name="afxthrowinvalidargexception"></a>  AfxThrowInvalidArgException
 Geçersiz bağımsız değişken özel durum oluşturur.  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -346,7 +341,7 @@ void AfxThrowInvalidArgException( );
  [THROW](#throw)
   
   
-##  <a name="afxthrowmemoryexception"></a>AfxThrowMemoryException  
+##  <a name="afxthrowmemoryexception"></a>  AfxThrowMemoryException  
  Bellek özel durum oluşturur.  
   
 ```   
@@ -359,7 +354,7 @@ void AfxThrowMemoryException();
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
   
-##  <a name="afxthrownotsupportedexception"></a>AfxThrowNotSupportedException  
+##  <a name="afxthrownotsupportedexception"></a>  AfxThrowNotSupportedException  
  Desteklenmeyen bir özellik için bir istek sonucu bir özel durum oluşturur.  
   
 ```  
@@ -369,7 +364,7 @@ void AfxThrowNotSupportedException();
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
   
-##  <a name="afxthrowresourceexception"></a>AfxThrowResourceException  
+##  <a name="afxthrowresourceexception"></a>  AfxThrowResourceException  
  Bir kaynak özel durum oluşturur.  
   
 ```   
@@ -382,7 +377,7 @@ void  AfxThrowResourceException();
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
   
-##  <a name="afxthrowuserexception"></a>AfxThrowUserException  
+##  <a name="afxthrowuserexception"></a>  AfxThrowUserException  
  Bir son kullanıcı işlemi durdurmak için bir özel durum oluşturur.  
   
 ```   
@@ -395,7 +390,7 @@ void AfxThrowUserException();
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
   
-##  <a name="afxthrowoledispatchexception"></a>AfxThrowOleDispatchException  
+##  <a name="afxthrowoledispatchexception"></a>  AfxThrowOleDispatchException  
  OLE Otomasyon işlevinin içindeki bir özel durum için bu işlevi kullanın.  
   
 ```   
@@ -432,7 +427,7 @@ void AFXAPI AfxThrowOleDispatchException(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
   
-##  <a name="afxthrowoleexception"></a>AfxThrowOleException  
+##  <a name="afxthrowoleexception"></a>  AfxThrowOleException  
  Türünde bir nesne oluşturur `COleException` ve bir özel durum oluşturur.  
   
 ``` 
@@ -453,7 +448,7 @@ void AFXAPI AfxThrowOleException(HRESULT hr);
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdao.h  
   
-##  <a name="afxthrowdaoexception"></a>AfxThrowDaoException  
+##  <a name="afxthrowdaoexception"></a>  AfxThrowDaoException  
  Bu işlev türünde bir özel durum çağrı [CDaoException](../../mfc/reference/cdaoexception-class.md) kendi kodundan.  
   
 ```   
@@ -477,7 +472,7 @@ void AFXAPI AfxThrowDaoException(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdb.h  
   
-##  <a name="afxthrowdbexception"></a>AfxThrowDBException  
+##  <a name="afxthrowdbexception"></a>  AfxThrowDBException  
  Bu işlev türünde bir özel durum çağrı `CDBException` kendi kodundan.  
   
 ```  
@@ -505,7 +500,7 @@ void AfxThrowDBException(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afx.h  
   
-##  <a name="afxabort"></a>AfxAbort  
+##  <a name="afxabort"></a>  AfxAbort  
  MFC tarafından sağlanan varsayılan sonlandırma işlev.  
   
 ```   
@@ -513,7 +508,7 @@ void  AfxAbort();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AfxAbort`işlenemez yakalanmayan bir özel durum gibi önemli bir hata olduğunda MFC üye işlevleri tarafından dahili olarak adlandırılır. Çağırabilirsiniz `AfxAbort` , olamaz kurtarma işlemi yıkıcı hatayla karşılaştığında nadir durumda.  
+ `AfxAbort` işlenemez yakalanmayan bir özel durum gibi önemli bir hata olduğunda MFC üye işlevleri tarafından dahili olarak adlandırılır. Çağırabilirsiniz `AfxAbort` , olamaz kurtarma işlemi yıkıcı hatayla karşılaştığında nadir durumda.  
   
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CATCH](#catch).  

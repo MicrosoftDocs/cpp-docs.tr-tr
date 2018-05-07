@@ -1,13 +1,10 @@
 ---
-title: "&lt;Özet&gt; (Visual C++) | Microsoft Docs"
-ms.custom: 
+title: '&lt;Özet&gt; (Visual C++) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - <summary>
 - summary
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - <summary> C++ XML tag
 - summary C++ XML tag
 ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48e4401967719313d9af7924d12cf68b870f4543
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c0dff1d6ce31f6b26c0f8a46ef2ff620a4d40f93
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ltsummarygt-visual-c"></a>&lt;Özet&gt; (Visual C++)
 \<Özet > etiketi, bir tür veya bir tür üyesi açıklamak için kullanılmalıdır. Kullanım [ \<açıklamalar >](../ide/remarks-visual-cpp.md) türü açıklaması için ek bilgiler eklemek için.  

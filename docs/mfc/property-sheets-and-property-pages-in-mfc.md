@@ -1,13 +1,10 @@
 ---
-title: "Özellik bölümleri ve özellik sayfaları MFC'de | Microsoft Docs"
-ms.custom: 
+title: Özellik bölümleri ve özellik sayfaları MFC'de | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - property sheets, MFC
 - tab dialog boxes
 ms.assetid: e1bede2b-0285-4b88-a052-0f8a372807a2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24a66bf9e062e43225827afdbb0bba45511c5f13
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a54469672c67e43d3692bc47d0b3efa00c18f8f6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="property-sheets-and-property-pages-in-mfc"></a>MFC'de Özellik Bölümleri ve Özellik Sayfaları
 Özellik sayfasını, olarak da bilinen bir sekme iletişim kutusu, özellik sayfaları içeren bir iletişim kutusudur. Her özellik sayfası, bir iletişim şablon kaynağını temel ve denetimleri içerir. Bu sayfada üst sekmesinde ile içine alınır. Sekme adları sayfası ve amacını gösterir. Kullanıcı denetimleri kümesini seçmek için özellik sayfasında bir sekmesini tıklatın.  

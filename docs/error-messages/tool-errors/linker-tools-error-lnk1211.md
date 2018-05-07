@@ -1,9 +1,8 @@
 ---
-title: "Bağlayıcı araçları hatası LNK1211 | Microsoft Docs"
+title: Bağlayıcı araçları hatası LNK1211 | Microsoft Docs
 ms.date: 12/05/2017
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - LNK1211
@@ -14,14 +13,13 @@ helpviewer_keywords:
 ms.assetid: 607400eb-4180-4892-817f-eedfa628af61
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51150fb2a57f48f04cca97e5f16fe1a28ead2c50
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 57948556ae7b94b9a1788b7cb4453646b5b504f1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="linker-tools-error-lnk1211"></a>Bağlayıcı Araçları Hatası LNK1211
 

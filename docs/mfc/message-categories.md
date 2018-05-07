@@ -1,13 +1,10 @@
 ---
-title: "İleti kategorileri | Microsoft Docs"
-ms.custom: 
+title: İleti kategorileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - messages [MFC], Windows
 - message handling [MFC], message types
 ms.assetid: 68e1db75-9da6-4a4d-b2c2-dc4d59f8d87b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be3bc617c0f3a9915c7ae0314b0e3889ecc561f9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7d0e4710c74c12bf62cd19df6a053aea9ac35eaf
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="message-categories"></a>İleti Kategorileri
 Üç ana kategoride için ne tür iletileri işleyicileri yazma:  
@@ -48,10 +43,10 @@ ms.lasthandoff: 12/21/2017
   
      Bu içerir **WM_COMMAND** kullanıcı arabirimi nesneleri bildirim iletileri: menüleri ve araç çubuğu düğmeleri Hızlandırıcı tuşları. Diğer iletileri farklı komutlarından framework işler ve bunlar daha fazla tür nesneler tarafından açıklandığı şekilde işlenebilir [komut hedefleri](../mfc/command-targets.md).  
   
-##  <a name="_core_windows_messages_and_control.2d.notification_messages"></a>Windows iletileri ve denetim bildirimi iletileri  
+##  <a name="_core_windows_messages_and_control.2d.notification_messages"></a> Windows iletileri ve denetim bildirimi iletileri  
  1 ve 2 kategorilerdeki iletileri — Windows iletileri ve denetim bildirimleri — windows tarafından işlenen: sınıfların nesnelerini sınıfından türetilen `CWnd`. Bu içerir `CFrameWnd`, `CMDIFrameWnd`, `CMDIChildWnd`, `CView`, `CDialog`, ve kendi sınıflarınızı bu temel sınıflardan türetilmiş. Bu tür nesneleri kapsülleyen bir `HWND`, bir Windows penceresi için bir tanıtıcı.  
   
-##  <a name="_core_command_messages"></a>Komut iletileri  
+##  <a name="_core_command_messages"></a> Komut iletileri  
  İletileri kategorisinde 3 — komutları — çeşitli nesneleri tarafından işlenebilir: belgeleri, belge şablonları ve uygulama nesnesi kendisini yanı sıra windows ve görünümler. Bir komut doğrudan bazı belirli nesne etkilediğinde, söz konusu nesne komutu işlemek için mantıklıdır. Örneğin, Dosya menüsündeki Aç komutu uygulamayla mantıksal olarak ilişkilendirilen: uygulama komut alındıktan sonra belirtilen bir belge açılır. Bu nedenle Aç komutu için uygulama sınıfının üye işlevi işleyicidir. Komutlar ve nesnelere nasıl yönlendirildiği hakkında daha fazla bilgi için bkz: [Framework bir işleyici çağırması](../mfc/how-the-framework-calls-a-handler.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

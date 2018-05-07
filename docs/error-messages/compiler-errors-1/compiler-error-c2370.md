@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2370 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2370 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2370
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2370
 ms.assetid: 03403e8f-f393-47c4-bd25-5c1c7ea7d5cd
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 507d0460cb14a0d39f309110cb7c3fedca9084a8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c939ee4c0c5200506c16360aa02afd8a1b733d8e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2370"></a>Derleyici Hatası C2370
 'tanımlayıcısı': şemadaki; farklı depolama sınıfı  

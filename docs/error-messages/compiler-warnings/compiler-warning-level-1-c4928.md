@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4928 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4928 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4928
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4928
 ms.assetid: 77235d7f-9360-45cb-8348-d148c605c4a3
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e5f096ada450818f8175a8807d074b407afd2d1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 625fbfd6bb67f1fc2636939ac7b05278c0bb26a8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4928"></a>Derleyici Uyarısı (düzey 1) C4928
 hatalı kopya başlatma; birden çok kullanıcı tanımlı dönüştürme örtük olarak uygulandı  

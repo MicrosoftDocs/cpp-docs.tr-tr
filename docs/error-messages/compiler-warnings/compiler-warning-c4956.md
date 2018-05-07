@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Uyarısı C4956 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı C4956 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C4956
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4956
 ms.assetid: 9154f2d1-d49f-4e07-90d2-0e9bc028011a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cda1c616eabbbbd2972f9d60f6d140758103aa6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ac369ab3bbdd4afdfb5e8aa555770564f54732de
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-c4956"></a>Derleyici Uyarısı C4956
 'type': Bu tür doğrulanabilen değil  

@@ -1,12 +1,9 @@
 ---
-title: "CNetAddressCtrl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CNetAddressCtrl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CNetAddressCtrl
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a433d723e15d910674c129b1e62ca82c1de4bb0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c579f452f26761abd7b52c849fa0117a98777355
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl sınıfı
 `CNetAddressCtrl` Sınıfı, giriş ve IPv4, IPv6 ve adlandırılmış DNS adreslerini biçimi doğrulamak için kullanabileceğiniz ağ adresi denetimi temsil eder.  
@@ -106,7 +101,7 @@ class CNetAddressCtrl : public CEdit
   
  Bu sınıf için ek gereksinimler açıklanmıştır [yapı gereksinimleri için Windows Vista ortak denetimleri](../../mfc/build-requirements-for-windows-vista-common-controls.md).  
   
-##  <a name="cnetaddressctrl"></a>CNetAddressCtrl::CNetAddressCtrl  
+##  <a name="cnetaddressctrl"></a>  CNetAddressCtrl::CNetAddressCtrl  
  Oluşturan bir `CNetAddressCtrl` nesnesi.  
   
 ```  
@@ -116,7 +111,7 @@ CNetAddressCtrl();
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [CNetAddressCtrl::Create](#create) veya [CNetAddressCtrl::CreateEx](#createex) Ağ denetimi oluşturmak ve ona eklemek için yöntemi `CNetAddressCtrl` nesnesi.  
   
-##  <a name="create"></a>CNetAddressCtrl::Create  
+##  <a name="create"></a>  CNetAddressCtrl::Create  
  Bir ağ adresi denetimi ile belirtilen stilleri oluşturur ve geçerli iliştirir `CNetAddressCtrl` nesnesi.  
   
 ```  
@@ -131,15 +126,15 @@ virtual BOOL Create(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`dwStyle`|Denetime uygulanacak stilleri Bitsel bir birleşimi. Daha fazla bilgi için bkz: [düzenleme stilleri](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|  
-|[in]`rect`|Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) denetimin boyutunu ve konumunu içeren yapısı.|  
-|[in]`pParentWnd`|Null olmayan gösteren bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst pencere nesnesi.|  
-|[in]`nID`|Denetimin kimliği.|  
+|[in] `dwStyle`|Denetime uygulanacak stilleri Bitsel bir birleşimi. Daha fazla bilgi için bkz: [düzenleme stilleri](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|  
+|[in] `rect`|Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) denetimin boyutunu ve konumunu içeren yapısı.|  
+|[in] `pParentWnd`|Null olmayan gösteren bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst pencere nesnesi.|  
+|[in] `nID`|Denetimin kimliği.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
-##  <a name="createex"></a>CNetAddressCtrl::CreateEx  
+##  <a name="createex"></a>  CNetAddressCtrl::CreateEx  
  Belirtilen genişletilmiş stilleri ile bir ağ adresi denetimi oluşturur ve geçerli iliştirir `CNetAddressCtrl` nesnesi.  
   
 ```  
@@ -155,16 +150,16 @@ virtual BOOL CreateEx(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`dwExStyle`|Bitsel bir birleşimi (veya) denetime uygulanacak genişletilmiş stilleri. Daha fazla bilgi için bkz: `dwExStyle` parametresinin [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) işlevi.|  
-|[in]`dwStyle`|Bitsel bir birleşimi (veya) denetime uygulanacak stilleri. Daha fazla bilgi için bkz: [düzenleme stilleri](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|  
-|[in]`rect`|Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) denetimin boyutunu ve konumunu içeren yapısı.|  
-|[in]`pParentWnd`|Null olmayan gösteren bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst pencere nesnesi.|  
-|[in]`nID`|Denetimin kimliği.|  
+|[in] `dwExStyle`|Bitsel bir birleşimi (veya) denetime uygulanacak genişletilmiş stilleri. Daha fazla bilgi için bkz: `dwExStyle` parametresinin [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) işlevi.|  
+|[in] `dwStyle`|Bitsel bir birleşimi (veya) denetime uygulanacak stilleri. Daha fazla bilgi için bkz: [düzenleme stilleri](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|  
+|[in] `rect`|Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) denetimin boyutunu ve konumunu içeren yapısı.|  
+|[in] `pParentWnd`|Null olmayan gösteren bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst pencere nesnesi.|  
+|[in] `nID`|Denetimin kimliği.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
-##  <a name="displayerrortip"></a>CNetAddressCtrl::DisplayErrorTip  
+##  <a name="displayerrortip"></a>  CNetAddressCtrl::DisplayErrorTip  
  Geçerli ağ adresi denetimle ilişkili balon ipucu bir hata iletisi görüntüler.  
   
 ```  
@@ -179,7 +174,7 @@ HRESULT DisplayErrorTip();
   
  Bu ileti çağırır [NetAddr_DisplayErrorTip](http://msdn.microsoft.com/library/windows/desktop/bb774314) Windows SDK'ın açıklanan makrosu. Bu makrosu gönderir `NCM_DISPLAYERRORTIP` ileti.  
   
-##  <a name="getaddress"></a>CNetAddressCtrl::GetAddress  
+##  <a name="getaddress"></a>  CNetAddressCtrl::GetAddress  
  Geçerli ağ adresi denetimi ile ilişkilendirilmiş ağ adresi doğrulanmış ve ayrıştırılmış bir gösterimini alır.  
   
 ```  
@@ -190,7 +185,7 @@ HRESULT GetAddress(PNC_ADDRESS pAddress) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[içinde out]`pAddress`|İşaretçi bir [NC_ADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb773345) yapısı.  Ayarlama `pAddrInfo` adresine bu yapı üyesi bir [NET_ADDRESS_INFO](http://msdn.microsoft.com/library/windows/desktop/bb773346) GetAddress yöntemi çağırmadan önce yapılandırın.|  
+|[içinde out] `pAddress`|İşaretçi bir [NC_ADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb773345) yapısı.  Ayarlama `pAddrInfo` adresine bu yapı üyesi bir [NET_ADDRESS_INFO](http://msdn.microsoft.com/library/windows/desktop/bb773346) GetAddress yöntemi çağırmadan önce yapılandırın.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Değer `S_OK` bu yöntem başarılı olursa Aksi durumda, bir COM hata kodu. Dönüş değeri bölümünü olası hata kodları hakkında daha fazla bilgi için bkz [NetAddr_GetAddress](http://msdn.microsoft.com/library/windows/desktop/bb774316) makrosu.  
@@ -202,7 +197,7 @@ HRESULT GetAddress(PNC_ADDRESS pAddress) const;
   
  Bu yöntemi çağırır [NetAddr_GetAddress](http://msdn.microsoft.com/library/windows/desktop/bb774316) Windows SDK'ın açıklanan makrosu. Bu makrosu gönderir `NCM_GETADDRESS` ileti.  
   
-##  <a name="getallowtype"></a>CNetAddressCtrl::GetAllowType  
+##  <a name="getallowtype"></a>  CNetAddressCtrl::GetAllowType  
  Geçerli ağ adresi denetimi destekleyebilir ağ adres türünü alır.  
   
 ```  
@@ -215,7 +210,7 @@ DWORD GetAllowType() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu ileti çağırır [NetAddr_GetAllowType](http://msdn.microsoft.com/library/windows/desktop/bb774318) Windows SDK'ın açıklanan makrosu. Bu makrosu gönderir `NCM_GETALLOWTYPE` ileti.  
   
-##  <a name="setallowtype"></a>CNetAddressCtrl::SetAllowType  
+##  <a name="setallowtype"></a>  CNetAddressCtrl::SetAllowType  
  Geçerli ağ adresi denetimi destekleyebilir ağ adres türünü ayarlar.  
   
 ```  
@@ -226,10 +221,10 @@ HRESULT SetAllowType(DWORD dwAddrMask);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`dwAddrMask`|Ağ adresi denetimi adres türleri belirten Bitsel bir birleşimi (veya) bayrakları destekler. Daha fazla bilgi için bkz: [NET_STRING](http://msdn.microsoft.com/library/windows/desktop/bb762586).|  
+|[in] `dwAddrMask`|Ağ adresi denetimi adres türleri belirten Bitsel bir birleşimi (veya) bayrakları destekler. Daha fazla bilgi için bkz: [NET_STRING](http://msdn.microsoft.com/library/windows/desktop/bb762586).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`Bu yöntem başarılı olursa; Aksi halde, bir COM hata kodu.  
+ `S_OK` Bu yöntem başarılı olursa; Aksi halde, bir COM hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [CNetAddressCtrl::SetAllowType](#setallowtype) yöntemi geçerli ağ adresi denetimi destekleyebilir adresleri türlerini belirtin. Kullanım [CNetAddressCtrl::GetAddress](#getaddress) yöntemi doğrulamak ve kullanıcının girdiği ağ adresi ayrıştırılamadı. Kullanım [CNetAddressCtrl::DisplayErrorTip](#displayerrortip) durumunda bir hata iletisi bilgi ipucu görüntülenecek yöntemi [CNetAddressCtrl::GetAddress](#getaddress) yöntemdir başarısız.  

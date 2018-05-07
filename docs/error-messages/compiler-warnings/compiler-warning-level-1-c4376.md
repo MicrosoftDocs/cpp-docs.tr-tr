@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4376 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4376 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4376
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4376
 ms.assetid: 5f202c74-9489-48fe-b36f-19cd882b1589
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a0bb98149ca800fd7cfde7b85ec52e1133bd894
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 615faaaa586e60a32ce670cd554a8b0b1c157a25
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4376"></a>Derleyici Uyarısı (düzey 1) C4376
 erişim tanımlayıcısı ' old_specifier:' artık desteklenmiyor: Lütfen kullanın ' new_specifier:' yerine  

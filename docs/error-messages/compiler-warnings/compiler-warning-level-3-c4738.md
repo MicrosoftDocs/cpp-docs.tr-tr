@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (Düzey 3) C4738 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (Düzey 3) C4738 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4738
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4738
 ms.assetid: 9094895f-7eec-46c2-83d3-249b761d585e
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30f56b7963d8c6e98d4564ec90adee6bd3d29f9f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 50b94cde2f8809b8ce56dc599804d11b8d058166
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-3-c4738"></a>Derleyici Uyarısı (Düzey 3) C4738
 32 bit kayan sonuç bellekte depolanıyor, olası performans kaybı  

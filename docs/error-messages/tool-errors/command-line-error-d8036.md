@@ -1,12 +1,9 @@
 ---
-title: "Komut satırı hatası D8036 | Microsoft Docs"
-ms.custom: 
+title: Komut satırı hatası D8036 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - D8036
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - D8036
 ms.assetid: 420a8daf-1873-49cd-95ea-a603d77b9410
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b3e57ad06bb8bb2679cbef01805f62da3216562
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7f121310318cbb91b1f983ec240b42d5d9ea34b8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="command-line-error-d8036"></a>Komut Satırı Hatası D8036
 '/ seçeneği' birden çok kaynak dosyalarını içeren izin verilmiyor  

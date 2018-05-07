@@ -2,11 +2,8 @@
 title: Derleyici Hatası C2108 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: ''
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2108
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2108
 ms.assetid: c84f0b47-5e2c-47d2-8edb-427a40e17c36
-caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce08561723dcc8d4440bece0b0bb10536b7fcccc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 066cb589b81223085f0ced589695eb3cda4c5fea
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2108"></a>Derleyici Hatası C2108
 alt simge Tamsayı türünde değil  

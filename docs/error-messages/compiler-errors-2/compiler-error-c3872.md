@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3872 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3872 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3872
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3872
 ms.assetid: 519e95be-5641-40cc-894c-da4819506604
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 327a0300e8df9cbc225e130d69bfe359359a0d6e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a3259e87eb8939129ebc84c0a08acab2c7d7c509
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3872"></a>Derleyici Hatası C3872
 'char': bu karakterin bir tanımlayıcı izin verilmiyor  

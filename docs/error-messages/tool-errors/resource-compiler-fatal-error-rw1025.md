@@ -1,12 +1,9 @@
 ---
-title: "Kaynak Derleyicisi önemli hatası RW1025 | Microsoft Docs"
-ms.custom: 
+title: Kaynak Derleyicisi önemli hatası RW1025 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - RW1025
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - RW1025
 ms.assetid: 561a02af-e7e0-442a-8ad3-a00b2ca1b62e
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 487968f8a1242dd4c36e4bbd9b4ede08a5ab4d95
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0ba216e63cb0cae92b4541800493a2fb6195553a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="resource-compiler-fatal-error-rw1025"></a>Kaynak Derleyicisi Önemli Hatası RW1025
 Şimdiye kadar yığın bellek yetersiz  

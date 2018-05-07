@@ -1,13 +1,10 @@
 ---
-title: "Pano: Diğer biçimleri ekleme | Microsoft Docs"
-ms.custom: 
+title: 'Pano: Diğer biçimleri ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,25 +15,23 @@ helpviewer_keywords:
 - registering custom Clipboard data formats
 - custom Clipboard data formats
 ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e6f7f21a64c062e2f210be9f13ce04428c397f9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c28fd1d628d0aed79028e43d9cce383f3acbb4ae
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="clipboard-adding-other-formats"></a>Pano: Diğer Biçimleri Ekleme
 Bu konuda, özellikle OLE desteği için desteklenen biçimler listesini genişletmek açıklanmaktadır. Konu [Pano: veri kopyalama ve yapıştırmayı](../mfc/clipboard-copying-and-pasting-data.md) kopyalama ve yapıştırma panodan desteklemek için gereken en düşük uygulamayı açıklar. Bu tüm uygulamanız ise, Pano'ya yerleştirilen yalnızca biçimler: `CF_METAFILEPICT`, **CF_EMBEDSOURCE**, **CF_OBJECTDESCRIPTOR**ve büyük olasılıkla `CF_LINKSOURCE`. Uygulamaların çoğu bu üç Pano üzerinde daha fazla biçiminden gerekir.  
   
-##  <a name="_core_registering_custom_formats"></a>Özel kaydetme biçimleri  
+##  <a name="_core_registering_custom_formats"></a> Özel kaydetme biçimleri  
  Kendi özel biçimler oluşturmak için özel bir pano biçimi kaydederken kullandığınız aynı yordamı izleyin: biçimine adını geçirmek **RegisterClipboardFormat** işlev ve dönüş değerini biçim ID olarak kullan.  
   
-##  <a name="_core_placing_formats_on_the_clipboard"></a>Biçimleri Pano'ya yerleştirme  
+##  <a name="_core_placing_formats_on_the_clipboard"></a> Biçimleri Pano'ya yerleştirme  
  Bu panoya yerleştirilen daha fazla biçimleri eklemek için geçersiz kılmanız gerekir `OnGetClipboardData` herhangi birinden türetilmiş sınıf işlevinde `COleClientItem` veya `COleServerItem` (kopyalanacak verileri yerel olup olmamasına bağlı olarak). Bu işlevde, aşağıdaki yordamı kullanmanız gerekir.  
   
 #### <a name="to-place-formats-on-the-clipboard"></a>Pano'ya biçimleri yerleştirmek için  

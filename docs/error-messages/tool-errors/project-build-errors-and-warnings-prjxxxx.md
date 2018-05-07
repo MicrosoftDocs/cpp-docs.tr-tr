@@ -1,27 +1,22 @@
 ---
-title: "Proje derleme hataları ve Uyarıları (PRJxxxx) | Microsoft Docs"
-ms.custom: 
+title: Proje derleme hataları ve Uyarıları (PRJxxxx) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 dev_langs:
 - C++
 ms.assetid: 79d223ed-986a-4536-8299-aec8356b449c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 183bbc0cfce9ad0ac049380acf89dbe610999a7e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 14dfa66657b8e3c3753cf47e4f5e84df9b31d4c4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="project-build-errors-and-warnings-prjxxxx"></a>Proje Derleme Hataları ve Uyarıları (PRJxxxx)
 

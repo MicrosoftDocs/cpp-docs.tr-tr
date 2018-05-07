@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0002 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0002 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0002
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CXX0002
 - CAN0002
 ms.assetid: 5f136470-505f-4224-a29a-2d34e896d78b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e28525080f7f5a5f12ee5569258cbfe591b103b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3faf350fa14156a82218fed506f50e45084501dc
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0002"></a>İfade Değerlendirici Hatası CXX0002
 kullanıcı belleğine erişmede hata  

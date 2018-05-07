@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0000 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0000 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0000
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CAN0000
 - CXX0000
 ms.assetid: 95a7f17d-88ea-4a6c-a3af-2289bf0529fe
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c37b00c8ac743de37052ba284b6ba3c0aaab768
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 61099ba206269f13413fefe14ef02002968c65b0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0000"></a>İfade Değerlendirici Hatası CXX0000
 hata koşulu yok  

@@ -1,13 +1,10 @@
 ---
-title: "Bir koleksiyonun tüm üyelerine erişme | Microsoft Docs"
-ms.custom: 
+title: Bir koleksiyonun tüm üyelerine erişme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -24,17 +21,15 @@ helpviewer_keywords:
 - ', '
 - ', '
 ms.assetid: 7bbae518-062e-4393-81f9-b22abd2e5f59
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34ba2795c12695702b2e38034081e17d69c156d4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ec9757a463bce7ef873720f229b70da695deae8d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="accessing-all-members-of-a-collection"></a>Bir Koleksiyonun Tüm Üyelerine Erişme
 MFC dizi koleksiyon sınıfları — hem şablona dayalı ve — dizinleri öğelerini erişmek için kullanın. MFC liste ve eşleme koleksiyon sınıfları — hem şablona dayalı ve — türünün bir göstergesi kullanın **konumu** koleksiyonundaki belirli bir konuma açıklamak için. Bu koleksiyonun bir veya daha fazla üyelerini erişmek için ilk konumu göstergesi başlatmak sürekli olarak o konumdan koleksiyonuna geçirmek ve sonraki öğeye dönmek için isteyin. Koleksiyon yinelemeyi ilerleme durumu ile ilgili durum bilgilerini korumak için sorumlu değildir. Bu bilgiler konumu göstergesi tutulur. Ancak, belirli bir konuma göz önüne alındığında, koleksiyon sonraki öğeye döndürmek için sorumludur.  
@@ -47,13 +42,13 @@ MFC dizi koleksiyon sınıfları — hem şablona dayalı ve — dizinleri öğe
   
 -   [Bir harita yineleme](#_core_to_iterate_a_map)  
   
-### <a name="_core_to_iterate_an_array"></a>Bir dizi yinelemek için  
+### <a name="_core_to_iterate_an_array"></a> Bir dizi yinelemek için  
   
 1.  İle sıralı dizin numaralarını kullanın `GetAt` üye fonksiyonu:  
   
      [!code-cpp[NVC_MFCCollections#12](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_1.cpp)]  
   
-     Bu örnek işaretçileri içeren yazılan işaretçi bir dizi kullanır `CPerson` nesneleri. Dizi sınıfından türetilen `CObArray`, önceden tanımlı bir şablon Olmayandan sınıfları. `GetAt`bir işaretçi döndüren bir `CPerson` nesnesi. Yazılan işaretçi koleksiyon sınıfları için — diziler veya listeleri — ilk parametresi, temel sınıf; belirtir. İkinci parametre depolamak için türünü belirtir.  
+     Bu örnek işaretçileri içeren yazılan işaretçi bir dizi kullanır `CPerson` nesneleri. Dizi sınıfından türetilen `CObArray`, önceden tanımlı bir şablon Olmayandan sınıfları. `GetAt` bir işaretçi döndüren bir `CPerson` nesnesi. Yazılan işaretçi koleksiyon sınıfları için — diziler veya listeleri — ilk parametresi, temel sınıf; belirtir. İkinci parametre depolamak için türünü belirtir.  
   
      `CTypedPtrArray` Sınıfı ayrıca aşırı **[]** işleci böylece her zamanki dizi erişim öğelerini dizi alt simge sözdizimine kullanabilirsiniz. Alternatif gövdesini deyiminde `for` yukarıdaki döngüsü  
   
@@ -61,15 +56,15 @@ MFC dizi koleksiyon sınıfları — hem şablona dayalı ve — dizinleri öğe
   
      Bu işleci hem de mevcut **const** ve olmayan-**const** sürümleri. **Const** için çağrılan sürüm **const** dizileri, yalnızca sağ tarafta Atama ifadesinin görünebilir.  
   
-### <a name="_core_to_iterate_a_list"></a>Bir liste yinelemek için  
+### <a name="_core_to_iterate_a_list"></a> Bir liste yinelemek için  
   
 1.  Üye işlevlerini `GetHeadPosition` ve `GetNext` yolunuzu listesi kullanılarak çalışmak için:  
   
      [!code-cpp[NVC_MFCCollections#14](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_3.cpp)]  
   
-     Bu örnek, işaretçileri içeren için yazılan işaretçi listesini kullanır. `CPerson` nesneleri. Liste bildirimi yordamda dizi benzer [bir dizi yinelemek için](#_core_to_iterate_an_array) sınıfından türetilen ancak `CObList`. `GetNext`bir işaretçi döndüren bir `CPerson` nesnesi.  
+     Bu örnek, işaretçileri içeren için yazılan işaretçi listesini kullanır. `CPerson` nesneleri. Liste bildirimi yordamda dizi benzer [bir dizi yinelemek için](#_core_to_iterate_an_array) sınıfından türetilen ancak `CObList`. `GetNext` bir işaretçi döndüren bir `CPerson` nesnesi.  
   
-### <a name="_core_to_iterate_a_map"></a>Bir harita yinelemek için  
+### <a name="_core_to_iterate_a_map"></a> Bir harita yinelemek için  
   
 1.  Kullanım `GetStartPosition` harita başlangıcına almak için ve `GetNextAssoc` art arda sonraki anahtar ve değer eşlemesinden aşağıdaki örnekte gösterildiği gibi almak için:  
   

@@ -1,12 +1,9 @@
 ---
-title: "CMFCAutoHideButton sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCAutoHideButton sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCAutoHideButton
@@ -59,17 +56,15 @@ helpviewer_keywords:
 - CMFCAutoHideButton [MFC], ShowButton
 - CMFCAutoHideButton [MFC], UnSetAutoHideMode
 ms.assetid: c80e6b8b-25ca-4d12-9d27-457731028ab0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80f40b7ab03e79d38d36a1b25a4cd973a5077468
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 48dc35a5b3e7f6b12376a47d68a95602bed48c49
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcautohidebutton-class"></a>CMFCAutoHideButton sınıfı
 Gösterir veya gizler bir düğmeyi bir [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) gizlemek için yapılandırılmış.  
@@ -128,7 +123,7 @@ class CMFCAutoHideButton : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxautohidebutton.h  
   
-##  <a name="bringtotop"></a>CMFCAutoHideButton::BringToTop  
+##  <a name="bringtotop"></a>  CMFCAutoHideButton::BringToTop  
 
   
 ```  
@@ -137,7 +132,7 @@ void BringToTop();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="create"></a>CMFCAutoHideButton::Create  
+##  <a name="create"></a>  CMFCAutoHideButton::Create  
  Oluşturur ve bir otomatik olarak gizle düğmesi başlatır.  
   
 ```  
@@ -148,13 +143,13 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pParentBar`  
+ [in] `pParentBar`  
  Üst araç için bir işaretçi.  
   
- [in]`pAutoHideWnd`  
+ [in] `pAutoHideWnd`  
  Bir işaretçi bir [CDockablePane](../../mfc/reference/cdockablepane-class.md) nesnesi. Bu otomatik olarak gizle düğme gizler ve gösterir `CDockablePane`.  
   
- [in]`dwAlignment`  
+ [in] `dwAlignment`  
  Düğme hizalamasını ile ana çerçeve penceresi belirten bir değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -173,7 +168,7 @@ virtual BOOL Create(
   
 - `CBRS_ALIGN_BOTTOM`  
   
-##  <a name="getalignment"></a>CMFCAutoHideButton::GetAlignment  
+##  <a name="getalignment"></a>  CMFCAutoHideButton::GetAlignment  
  Otomatik Gizle düğmesini hizalamasını alır.  
   
 ```  
@@ -194,7 +189,7 @@ DWORD GetAlignment() const;
   
 - `CBRS_ALIGN_BOTTOM`  
   
-##  <a name="getautohidewindow"></a>CMFCAutoHideButton::GetAutoHideWindow  
+##  <a name="getautohidewindow"></a>  CMFCAutoHideButton::GetAutoHideWindow  
  Döndürür [CDockablePane](../../mfc/reference/cdockablepane-class.md) otomatik olarak gizle düğmesi ile ilişkili nesne.  
   
 ```  
@@ -207,7 +202,7 @@ CDockablePane* GetAutoHideWindow() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bir otomatik olarak gizle düğmesi ile ilişkilendirilecek bir `CDockablePane`, geçirmek `CDockablePane` bir parametre olarak [CMFCAutoHideButton::Create](#create) yöntemi.  
   
-##  <a name="getparenttoolbar"></a>CMFCAutoHideButton::GetParentToolBar  
+##  <a name="getparenttoolbar"></a>  CMFCAutoHideButton::GetParentToolBar  
 
   
 ```  
@@ -218,7 +213,7 @@ CMFCAutoHideBar* GetParentToolBar();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getrect"></a>CMFCAutoHideButton::GetRect  
+##  <a name="getrect"></a>  CMFCAutoHideButton::GetRect  
 
   
 ```  
@@ -229,7 +224,7 @@ CRect GetRect() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getsize"></a>CMFCAutoHideButton::GetSize  
+##  <a name="getsize"></a>  CMFCAutoHideButton::GetSize  
  Otomatik Gizle düğmesini boyutunu belirler.  
   
 ```  
@@ -242,7 +237,7 @@ CSize GetSize() const;
 ### <a name="remarks"></a>Açıklamalar  
  Hesaplanan boyutu otomatik olarak gizle düğmesi kenarlık boyutunu içerir.  
   
-##  <a name="gettextsize"></a>CMFCAutoHideButton::GetTextSize  
+##  <a name="gettextsize"></a>  CMFCAutoHideButton::GetTextSize  
  Otomatik olarak gizle düğmesi için metin etiketi boyutu döndürür.  
   
 ```  
@@ -252,7 +247,7 @@ virtual CSize GetTextSize() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) otomatik olarak gizle düğmesi için metin boyutu içeren nesne.  
   
-##  <a name="isactive"></a>CMFCAutoHideButton::IsActive  
+##  <a name="isactive"></a>  CMFCAutoHideButton::IsActive  
  Otomatik olarak gizle düğmesi etkin olup olmadığını gösterir.  
   
 ```  
@@ -260,12 +255,12 @@ BOOL IsActive() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`otomatik olarak gizle düğmesi etkin değilse; `FALSE` Aksi takdirde.  
+ `TRUE` otomatik olarak gizle düğmesi etkin değilse; `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir otomatik olarak gizle düğmesi etkindir ilişkili [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) penceresi gösterilir.  
   
-##  <a name="ishorizontal"></a>CMFCAutoHideButton::IsHorizontal  
+##  <a name="ishorizontal"></a>  CMFCAutoHideButton::IsHorizontal  
  Otomatik Gizle düğmesini yatay veya dikey olup olmadığını belirler.  
   
 ```  
@@ -278,7 +273,7 @@ BOOL IsHorizontal() const;
 ### <a name="remarks"></a>Açıklamalar  
  Framework yönünü ayarlar bir [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) nesne oluşturduğunuzda.  Yönlendirme kullanarak denetleyebilirsiniz `dwAlignment` parametresinde [CMFCAutoHideButton::Create](#create) yöntemi.  
   
-##  <a name="istop"></a>CMFCAutoHideButton::IsTop  
+##  <a name="istop"></a>  CMFCAutoHideButton::IsTop  
 
   
 ```  
@@ -289,7 +284,7 @@ BOOL IsTop() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isvisible"></a>CMFCAutoHideButton::IsVisible  
+##  <a name="isvisible"></a>  CMFCAutoHideButton::IsVisible  
  Otomatik olarak gizle düğmesi görünür olup olmadığını gösterir.  
   
 ```  
@@ -297,9 +292,9 @@ virtual BOOL IsVisible() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`düğmenin görünür durumdaysa; `FALSE` Aksi takdirde.  
+ `TRUE` düğmenin görünür durumdaysa; `FALSE` Aksi takdirde.  
   
-##  <a name="ondraw"></a>CMFCAutoHideButton::OnDraw  
+##  <a name="ondraw"></a>  CMFCAutoHideButton::OnDraw  
  Otomatik Gizle düğmesini çizer zaman çerçevesi bu yöntemi çağırır.  
   
 ```  
@@ -307,13 +302,13 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Uygulamanızı otomatik olarak gizle düğmeleri görünümünü özelleştirmek istiyorsanız, türetilen yeni bir sınıf oluşturun `CMFCAutoHideButton`. Türetilen sınıfta bu yöntemi geçersiz kılın.  
   
-##  <a name="ondrawborder"></a>CMFCAutoHideButton::OnDrawBorder  
+##  <a name="ondrawborder"></a>  CMFCAutoHideButton::OnDrawBorder  
  Bir otomatik olarak gizle düğmesi kenarlık çizer zaman çerçevesi bu yöntemi çağırır.  
   
 ```  
@@ -324,19 +319,19 @@ virtual void OnDrawBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in]`rectBounds`  
+ [in] `rectBounds`  
  Otomatik olarak gizle düğmesinin sınırlayıcı dikdörtgenini.  
   
- [in]`rectBorderSize`  
+ [in] `rectBorderSize`  
  Otomatik Gizle düğmesini her iki tarafındaki kenarlığın kalınlığı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Uygulamanızdaki her Otomatik Gizle düğmesini kenarlık özelleştirmek istiyorsanız, türetilen yeni bir sınıf oluşturun `CMFCAutoHideButton`. Türetilen sınıfta bu yöntemi geçersiz kılın.  
   
-##  <a name="onfillbackground"></a>CMFCAutoHideButton::OnFillBackground  
+##  <a name="onfillbackground"></a>  CMFCAutoHideButton::OnFillBackground  
  Bir otomatik olarak gizle düğmenin arka planı doldurduğunda framework bu yöntemi çağırır.  
   
 ```  
@@ -346,16 +341,16 @@ virtual void OnFillBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in]`rect`  
+ [in] `rect`  
  Otomatik olarak gizle düğmesinin sınırlayıcı dikdörtgenini.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Uygulamanızı otomatik olarak gizle düğmeleri için arka plan özelleştirmek istiyorsanız, türetilen yeni bir sınıf oluşturun `CMFCAutoHideButton`. Türetilen sınıfta bu yöntemi geçersiz kılın.  
   
-##  <a name="showattachedwindow"></a>CMFCAutoHideButton::ShowAttachedWindow  
+##  <a name="showattachedwindow"></a>  CMFCAutoHideButton::ShowAttachedWindow  
  Gösterir veya gizler ilişkili [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md).  
   
 ```  
@@ -363,10 +358,10 @@ void ShowAttachedWindow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bShow`  
+ [in] `bShow`  
  Bu yöntem ekli gösterip göstermediğini belirten bir Boole değeri `CDockablePane`.  
   
-##  <a name="showbutton"></a>CMFCAutoHideButton::ShowButton  
+##  <a name="showbutton"></a>  CMFCAutoHideButton::ShowButton  
  Gösterir veya gizler otomatik gizle düğmesi.  
   
 ```  
@@ -374,10 +369,10 @@ virtual void ShowButton(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bShow`  
+ [in] `bShow`  
  Otomatik olarak gizle düğmesinin gösterilip gösterilmeyeceğini belirten bir Boole değeri.  
   
-##  <a name="move"></a>CMFCAutoHideButton::Move  
+##  <a name="move"></a>  CMFCAutoHideButton::Move  
 
   
 ```  
@@ -385,11 +380,11 @@ void Move(int nOffset);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nOffset`  
+ [in] `nOffset`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="replacepane"></a>CMFCAutoHideButton::ReplacePane  
+##  <a name="replacepane"></a>  CMFCAutoHideButton::ReplacePane  
 
   
 ```  
@@ -397,11 +392,11 @@ void ReplacePane(CDockablePane* pNewBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pNewBar`  
+ [in] `pNewBar`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="unsetautohidemode"></a>CMFCAutoHideButton::UnSetAutoHideMode  
+##  <a name="unsetautohidemode"></a>  CMFCAutoHideButton::UnSetAutoHideMode  
  Otomatik olarak gizle modu devre dışı bırakın.  
   
 ```  
@@ -409,12 +404,12 @@ virtual void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pFirstBarInGroup`  
+ [in] `pFirstBarInGroup`  
  Grup ilk çubuğunda bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="highlightbutton"></a>CMFCAutoHideButton::HighlightButton  
+##  <a name="highlightbutton"></a>  CMFCAutoHideButton::HighlightButton  
  Otomatik Gizle düğmesini vurgular.  
   
 ```  
@@ -423,11 +418,11 @@ virtual void HighlightButton(BOOL bHighlight);
   
 ### <a name="parameters"></a>Parametreler  
  `bHighlight`  
- Yeni Otomatik Gizle düğme durumu belirtir. `TRUE`Düğme vurgulandığı gösterir `FALSE` düğmesi vurgulanmış değil gösterir.  
+ Yeni Otomatik Gizle düğme durumu belirtir. `TRUE` Düğme vurgulandığı gösterir `FALSE` düğmesi vurgulanmış değil gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ishighlighted"></a>CMFCAutoHideButton::IsHighlighted  
+##  <a name="ishighlighted"></a>  CMFCAutoHideButton::IsHighlighted  
  Otomatik Gizle düğmesini Vurgu durumunu döndürür.  
   
 ```  

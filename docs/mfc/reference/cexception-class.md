@@ -1,12 +1,9 @@
 ---
-title: "CException sınıfı | Microsoft Docs"
-ms.custom: 
+title: CException sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CException
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - CException [MFC], Delete
 - CException [MFC], ReportError
 ms.assetid: cfacf14d-bfe4-4666-a5c7-38b800512920
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72272630dc475f2c40b8f249e969822a872015e0
-ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.openlocfilehash: a152c55944fca5fa858c148c009ef6301ff0f762
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cexception-class"></a>CException sınıfı
 Microsoft Foundation Class Kitaplığı'ndaki tüm özel durumlar için temel sınıf.  
@@ -94,7 +89,7 @@ class AFX_NOVTABLE CException : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afx.h  
   
-##  <a name="cexception">CException::CException</a>  
+##  <a name="cexception"></a>  CException::CException  
  Bu üye işlevi oluşturan bir `CException` nesnesi.  
   
 ```  
@@ -108,7 +103,7 @@ explicit CException(BOOL bAutoDelete);
 ### <a name="remarks"></a>Açıklamalar  
  Normalde hiçbir zaman bu oluşturucu doğrudan çağırmanız gerekir. Bir özel durum oluşturur işlevi bir örneğini oluşturmanız gerekir bir `CException`-türetilmiş sınıf ve MFC'nin kullanım throw işlevleri gibi kurucusu veya çağrı [AfxThrowFileException](exception-processing.md#afxthrowfileexception), önceden tanımlanmış bir türü atmak için. Bu belge, yalnızca bütünlük açısından sağlanır.  
   
-##  <a name="delete">CException::Delete</a>  
+##  <a name="delete"></a>  CException::Delete  
  Bu işlev olup olmadığını denetler. **CException** nesne öbek üzerinde oluşturuldu ve bu durumda, çağırır **silmek** nesne üzerinde işleci.  
   
 ```  
@@ -172,7 +167,7 @@ if (pFile != NULL)
 }   
  ```
   
-##  <a name="reporterror">CException::ReportError</a>  
+##  <a name="reporterror"></a>  CException::ReportError  
  Kullanıcıya bir ileti kutusunda rapor hata metni için bu üye işlevini çağırın.  
   
 ```  

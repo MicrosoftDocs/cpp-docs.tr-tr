@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0058 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0058 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0058
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CXX0058
 - CAN0058
 ms.assetid: b6246c6e-5845-4ad5-ac2a-e6c4faf8f3f9
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fadfee19a72035b78b353b19df8d0e566e32584c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6e586c6e46238ec58a4569e1f34abc2e7572cc9d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0058"></a>İfade Değerlendirici Hatası CXX0058
 Aşırı yüklenmiş işleci bulunamadı  

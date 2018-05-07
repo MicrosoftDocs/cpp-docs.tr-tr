@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2701 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2701 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2701
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2701
 ms.assetid: 31cf2ab7-ced9-4f75-aa51-e169e20407fb
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d5d75279ecfb6ff6fd210c2e8185bd8fc5a6d5d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 42529b3cd6e0fae7ff47ef47b60bc0a0acb42b53
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2701"></a>Derleyici Hatası C2701
 'function': işlevi şablonu yerel bir sınıfın bir arkadaş olamaz  

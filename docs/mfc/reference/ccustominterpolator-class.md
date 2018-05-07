@@ -1,12 +1,9 @@
 ---
-title: "CCustomInterpolator sınıfı | Microsoft Docs"
-ms.custom: 
+title: CCustomInterpolator sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CCustomInterpolator
@@ -45,17 +42,15 @@ helpviewer_keywords:
 - CCustomInterpolator [MFC], m_initialValue
 - CCustomInterpolator [MFC], m_initialVelocity
 ms.assetid: 28d85595-989a-40a3-b003-e0e38437a94d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26763a16c4de59f33622ea904ea8aa132fe0d5f2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b093ff87d7f2c8c52b6745be4e2a31580fce0fce
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ccustominterpolator-class"></a>CCustomInterpolator sınıfı
 Temel bir ara uygular.  
@@ -107,7 +102,7 @@ class CCustomInterpolator;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxanimationcontroller.h  
   
-##  <a name="ccustominterpolator"></a>CCustomInterpolator::CCustomInterpolator  
+##  <a name="ccustominterpolator"></a>  CCustomInterpolator::CCustomInterpolator  
  Özel bir ara nesnesi oluşturur ve 0 varsayılan olarak tüm değerlerini ayarlar.  
   
 ```  
@@ -128,7 +123,7 @@ CCustomInterpolator(
 ### <a name="remarks"></a>Açıklamalar  
  Süre ve daha sonra kodunuzda son değerini başlatmak için CCustomInterpolator::Init kullanın.  
   
-##  <a name="getdependencies"></a>CCustomInterpolator::GetDependencies  
+##  <a name="getdependencies"></a>  CCustomInterpolator::GetDependencies  
  Bir Ara'nın bağımlılıkları alır.  
   
 ```  
@@ -151,7 +146,7 @@ virtual BOOL GetDependencies(
 ### <a name="return-value"></a>Dönüş Değeri  
  Temel uygulama her zaman TRUE değerini döndürür. Olay başarısız isterseniz, geçersiz kılınan uygulamasından false değerini döndürür.  
   
-##  <a name="getduration"></a>CCustomInterpolator::GetDuration  
+##  <a name="getduration"></a>  CCustomInterpolator::GetDuration  
  Bir Ara'nın süresi alır.  
   
 ```  
@@ -165,7 +160,7 @@ virtual BOOL GetDuration(UI_ANIMATION_SECONDS* duration);
 ### <a name="return-value"></a>Dönüş Değeri  
  Temel uygulama her zaman TRUE değerini döndürür. Olay başarısız isterseniz, geçersiz kılınan uygulamasından false değerini döndürür.  
   
-##  <a name="getfinalvalue"></a>CCustomInterpolator::GetFinalValue  
+##  <a name="getfinalvalue"></a>  CCustomInterpolator::GetFinalValue  
  İçin bir ara müşteri adayları son değerini alır.  
   
 ```  
@@ -179,7 +174,7 @@ virtual BOOL GetFinalValue(DOUBLE* value);
 ### <a name="return-value"></a>Dönüş Değeri  
  Temel uygulama her zaman TRUE değerini döndürür. Olay başarısız isterseniz, geçersiz kılınan uygulamasından false değerini döndürür.  
   
-##  <a name="init"></a>CCustomInterpolator::Init  
+##  <a name="init"></a>  CCustomInterpolator::Init  
  Süre ve son değer başlatır.  
   
 ```  
@@ -195,7 +190,7 @@ void Init(
  `finalValue`  
  Geçiş işleminin sonunda bir değişkenin son değeri.  
   
-##  <a name="interpolatevalue"></a>CCustomInterpolator::InterpolateValue  
+##  <a name="interpolatevalue"></a>  CCustomInterpolator::InterpolateValue  
  Belirtilen uzaklık değeri ilişkilendirileceğini.  
   
 ```  
@@ -211,7 +206,7 @@ virtual BOOL InterpolateValue(
 ### <a name="return-value"></a>Dönüş Değeri  
  Temel uygulama her zaman TRUE değerini döndürür. Olay başarısız isterseniz, geçersiz kılınan uygulamasından false değerini döndürür.  
   
-##  <a name="interpolatevelocity"></a>CCustomInterpolator::InterpolateVelocity  
+##  <a name="interpolatevelocity"></a>  CCustomInterpolator::InterpolateVelocity  
  Verilen uzaklığındaki hız ilişkilendirileceğini  
   
 ```  
@@ -227,49 +222,49 @@ virtual BOOL InterpolateVelocity(
 ### <a name="return-value"></a>Dönüş Değeri  
  Temel uygulama her zaman TRUE değerini döndürür. Olay başarısız isterseniz, geçersiz kılınan uygulamasından false değerini döndürür.  
   
-##  <a name="m_currentvalue"></a>CCustomInterpolator::m_currentValue  
+##  <a name="m_currentvalue"></a>  CCustomInterpolator::m_currentValue  
  Ara değerli değeri.  
   
 ```  
 DOUBLE m_currentValue;  
 ```  
   
-##  <a name="m_currentvelocity"></a>CCustomInterpolator::m_currentVelocity  
+##  <a name="m_currentvelocity"></a>  CCustomInterpolator::m_currentVelocity  
  Ara değerli hız.  
   
 ```  
 DOUBLE m_currentVelocity;  
 ```  
   
-##  <a name="m_duration"></a>CCustomInterpolator::m_duration  
+##  <a name="m_duration"></a>  CCustomInterpolator::m_duration  
  Geçiş süresi.  
   
 ```  
 UI_ANIMATION_SECONDS m_duration;  
 ```  
   
-##  <a name="m_finalvalue"></a>CCustomInterpolator::m_finalValue  
+##  <a name="m_finalvalue"></a>  CCustomInterpolator::m_finalValue  
  Geçiş işleminin sonunda bir değişkenin son değeri.  
   
 ```  
 DOUBLE m_finalValue;  
 ```  
   
-##  <a name="m_initialvalue"></a>CCustomInterpolator::m_initialValue  
+##  <a name="m_initialvalue"></a>  CCustomInterpolator::m_initialValue  
  Geçiş başlangıcında değişkeninin değeri.  
   
 ```  
 DOUBLE m_initialValue;  
 ```  
   
-##  <a name="m_initialvelocity"></a>CCustomInterpolator::m_initialVelocity  
+##  <a name="m_initialvelocity"></a>  CCustomInterpolator::m_initialVelocity  
  Geçiş başlangıcında değişkeni hız.  
   
 ```  
 DOUBLE m_initialVelocity;  
 ```  
   
-##  <a name="setduration"></a>CCustomInterpolator::SetDuration  
+##  <a name="setduration"></a>  CCustomInterpolator::SetDuration  
  Bir Ara'nın süresi ayarlar.  
   
 ```  
@@ -283,7 +278,7 @@ virtual BOOL SetDuration(UI_ANIMATION_SECONDS duration);
 ### <a name="return-value"></a>Dönüş Değeri  
  Temel uygulama her zaman TRUE değerini döndürür. Olay başarısız isterseniz, geçersiz kılınan uygulamasından false değerini döndürür.  
   
-##  <a name="setinitialvalueandvelocity"></a>CCustomInterpolator::SetInitialValueAndVelocity  
+##  <a name="setinitialvalueandvelocity"></a>  CCustomInterpolator::SetInitialValueAndVelocity  
  Bir Ara'nın ilk değer ve hız ayarlar.  
   
 ```  

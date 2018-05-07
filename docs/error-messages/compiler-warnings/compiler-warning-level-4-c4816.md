@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Uyarısı (düzey 4) C4816 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 4) C4816 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C4816
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4816
 ms.assetid: 60f730ae-d942-4db9-ab97-41d4a874d8da
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8002b165d80763c00fe7fa7d2b3c44cddbd2e199
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 74386e980171ce1b54c8256ad505b363df7830d8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-4-c4816"></a>Derleyici Uyarısı (düzey 4) C4816
 'param': parametre (nesne başvurusu tarafından geçirilen sürece) bu kesilecek sıfır boyutlu bir dizi içeriyor  

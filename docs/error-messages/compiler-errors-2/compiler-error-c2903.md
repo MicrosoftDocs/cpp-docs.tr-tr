@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2903 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2903 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2903
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2903
 ms.assetid: bf6b223f-4921-48c7-82b9-ff318b42c801
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9632a481227cfe428a84c1c0366f88a44f7f27dd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9c822870f9e73b28a5ebeb7fd43438054e45ee75
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2903"></a>Derleyici Hatası C2903
 'tanımlayıcısı': simgenin olup bir sınıf şablonu ne işlevi şablonu  

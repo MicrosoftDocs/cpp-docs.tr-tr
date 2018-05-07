@@ -1,12 +1,9 @@
 ---
 title: Vector::const_reference (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::vector::const_reference
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - const_reference member [STL/CLR]
 ms.assetid: c68743cd-5367-46ca-88ae-b90b2f0ecc34
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: be4558111dc41d5a2c6c66463ea2c749e68bb1b2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 926e5c763c1e50b6792cce29bfa1ff814cf32777
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vectorconstreference-stlclr"></a>vector::const_reference (STL/CLR)
 Bir öğe için sabit bir başvuru türü.  

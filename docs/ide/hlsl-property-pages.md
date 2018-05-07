@@ -1,29 +1,24 @@
 ---
-title: "HLSL özellik sayfaları | Microsoft Docs"
-ms.custom: 
+title: HLSL özellik sayfaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.FXCompilerTool.AdditionalOptionsPage
 dev_langs:
 - C++
 ms.assetid: 0c65f5ec-a2a5-4f5b-8d4c-fa57113a5a1d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82fdaeb1da213a435718d074b33f385145c211d7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 86bbd23f1c9fcfcc0a19d7a2c1b66f3500d84361
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hlsl-property-pages"></a>HLSL Özellik Sayfaları
 HLSL derleyici (fxc.exe) özellik sayfaları dosyaları yerleşik tek tek nasıl HLSL gölgelendirici yapılandırmak için kullanabilirsiniz. Özellikler üç kategoriye ayrılır:  

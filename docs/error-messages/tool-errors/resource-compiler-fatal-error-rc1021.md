@@ -1,12 +1,9 @@
 ---
-title: "Kaynak Derleyicisi önemli hatası RC1021 | Microsoft Docs"
-ms.custom: 
+title: Kaynak Derleyicisi önemli hatası RC1021 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - RC1021
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - RC1021
 ms.assetid: 9bc8858c-aa50-4b94-b60e-daf75ab45d77
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3f8e7b45b1c95568c80cb3e98554077b32acec7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 27cc4096f84abc47c53b5c08eeacf5ebc92186da
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="resource-compiler-fatal-error-rc1021"></a>Kaynak Derleyicisi Önemli Hatası RC1021
 Geçersiz önişlemci komut 'string'  

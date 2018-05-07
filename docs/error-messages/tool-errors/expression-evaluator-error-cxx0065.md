@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0065 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0065 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0065
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CAN0065
 - CXX0065
 ms.assetid: aac68f87-0b90-4c19-afa6-1c587625a5fd
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db01baa10191df50c1f319bf8320263657088d75
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 78c25c9c6bde27219f10e4047dc7a6ab416f55d5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0065"></a>İfade Değerlendirici Hatası CXX0065
 yığın çerçevesi değişkeni gerekiyor  

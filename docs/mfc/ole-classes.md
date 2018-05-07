@@ -1,13 +1,10 @@
 ---
-title: "OLE sınıfları | Microsoft Docs"
-ms.custom: 
+title: OLE sınıfları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.classes.ole
 dev_langs:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - OLE classes [MFC]
 - OLE [MFC], classes
 ms.assetid: 4c2b2bca-fafb-4d2d-8498-9ed1e04011d2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 927643d467433d1a88e9b38d6c050bcc758e64c6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 79fbf4ba0c176c495ca63a84bda04e0a4872c0c0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ole-classes"></a>OLE Sınıfları
 OLE sınıfları programlarınızı kullanıcılarınıza ActiveX gücünü sağlamak için kolay bir yol vermiş ActiveX API kolay erişim sağlamak için diğer uygulama framework sınıfları çalışırlar. ActiveX kullanarak şunları yapabilirsiniz:  

@@ -1,13 +1,10 @@
 ---
-title: "Bildirim aracı, yapılandırma özellikleri, Gelişmiş &lt;Projectname&gt; özellik sayfaları iletişim kutusu | Microsoft Docs"
-ms.custom: 
+title: Bildirim aracı, yapılandırma özellikleri, Gelişmiş &lt;Projectname&gt; özellik sayfaları iletişim kutusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCManifestTool.KeyFile
 - VC.Project.VCManifestTool.UpdateFileHashes
@@ -17,17 +14,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 3d587366-05ea-4956-a978-313069660735
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c756da4ef7b89113ce26e7218011d708ff4c935c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 47d4dc3ab325a7346d0e787a15d69d646896827d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="advanced-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Bildirim aracı, yapılandırma özellikleri, Gelişmiş &lt;Projectname&gt; özellik sayfaları iletişim kutusu
 Gelişmiş seçeneklerini belirtmek için bu iletişim kutusunu kullanın [Mt.exe](http://msdn.microsoft.com/library/aa375649).  

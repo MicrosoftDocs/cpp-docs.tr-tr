@@ -1,13 +1,10 @@
 ---
-title: "Özel durumlar: MFC özel durum makrolarından dönüştürme | Microsoft Docs"
-ms.custom: 
+title: 'Özel durumlar: MFC özel durum makrolarından dönüştürme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - catch blocks [MFC], delimiting
 - exception handling [MFC], converting exceptions
 ms.assetid: bd3ac3b3-f3ce-4fdd-a168-a2cff13ed796
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36adda235cf71d1a44218c98c109e72847ca9136
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8953cc28e35974f7a2a63754533ffd851ca62a3e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="exceptions-converting-from-mfc-exception-macros"></a>Özel Durumlar: MFC Özel Durum Makrolarından Dönüştürme
 Bu gelişmiş bir konudur.  
@@ -44,7 +39,7 @@ Bu gelişmiş bir konudur.
   
 -   [C++ özel durumlarını kullanmak için özel durum makroları koduyla dönüştürme](#_core_doing_the_conversion)  
   
-##  <a name="_core_advantages_of_converting"></a>Dönüştürme avantajları  
+##  <a name="_core_advantages_of_converting"></a> Dönüştürme avantajları  
  MFC sürüm 3.0 makrosu uygulamalarında ve önceki sürümleri uygulamalarında arasındaki farklar bilincinde olmanız gereken olsa da, büyük olasılıkla var olan kodu dönüştürmek gerekmez. Bu farklılıklar ve sonraki kod davranış değişiklikleri ele alınmıştır [özel durumlar: sürüm 3.0 özel durum makrolarındaki değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md).  
   
  Dönüştürme asıl avantajları şunlardır:  
@@ -67,7 +62,7 @@ Bu gelişmiş bir konudur.
   
      Özel durum bildirimi **catch** anahtar sözcüğü bu söz dizimini kullanır:  
   
-     **catch (** *exception_type* *exception_name***)**  
+     **catch (** *exception_type* *exception_name ***)**  
   
      Bu özel durum bildirimi deyimi catch özel durum türünü gösterir tanıtıcıları engelleyin.  
   
@@ -81,7 +76,7 @@ Bu gelişmiş bir konudur.
   
      Makroları kullanma `THROW_LAST` geçerli özel durumun yeniden oluşturulacak. `throw` Hiçbir bağımsız değişkeniyle anahtar sözcüğü ile aynı etkiye sahiptir.  
   
-##  <a name="_core_doing_the_conversion"></a>Dönüştürme yapmak  
+##  <a name="_core_doing_the_conversion"></a> Dönüştürme yapmak  
   
 #### <a name="to-convert-code-using-macros-to-use-the-c-exception-handling-keywords"></a>C++ özel durum işleme anahtar sözcükleri kullanmak için makroları kullanarak kod dönüştürmek için  
   
@@ -93,13 +88,13 @@ Bu gelişmiş bir konudur.
   
      **CATCH** (bunların yerine **catch**)  
   
-     `AND_CATCH`(Bunların yerine **catch**)  
+     `AND_CATCH` (Bunların yerine **catch**)  
   
-     `END_CATCH`(Silme)  
+     `END_CATCH` (Silme)  
   
      **THROW** (bunların yerine `throw`)  
   
-     `THROW_LAST`(Bunların yerine `throw`)  
+     `THROW_LAST` (Bunların yerine `throw`)  
   
 3.  Geçerli özel durum bildirimleri form makrosu bağımsız değişkenleri değiştirin.  
   

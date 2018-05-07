@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (Düzey 3) C4511 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (Düzey 3) C4511 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4511
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4511
 ms.assetid: a01286b2-3dd9-4a97-a5ee-dd0e7b63ef8b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 709d7f67cbb690a9f445b01be19bb92dbdcaa1b8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 602b92d52860429a70b2339f35093ab85934fc89
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-3-c4511"></a>Derleyici Uyarısı (Düzey 3) C4511
 'class': kopya Oluşturucu oluşturulamadı  

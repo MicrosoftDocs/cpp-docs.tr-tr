@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (Düzey 2) C4756 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (Düzey 2) C4756 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4756
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4756
 ms.assetid: 5a16df83-6b82-4619-83bd-319af4ef1d1d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fe10174d8d4cb0e8b982c5da205c290fc1d53e7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1b6f6cca331fdcd36c0917a9043b1f08ec4c2374
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-2-c4756"></a>Derleyici Uyarısı (Düzey 2) C4756
 içinde sabit aritmetik taşma  

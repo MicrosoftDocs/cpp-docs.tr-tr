@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0028 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0028 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0028
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CAN0028
 - CXX0028
 ms.assetid: 172eb81f-c0b0-43b1-b418-766f35f1a561
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2854c0843a1e61aef94d83cb845e10422a09641e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ffb894a9960e74fe2b6c2569aab01b66a0de077e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0028"></a>İfade Değerlendirici Hatası CXX0028
 struct/union ögesi  

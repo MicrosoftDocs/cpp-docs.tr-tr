@@ -1,29 +1,24 @@
 ---
-title: "Sihirbaz olarak özellik sayfaları | Microsoft Docs"
-ms.custom: 
+title: Sihirbaz olarak özellik sayfaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - property sheets, as wizards
 ms.assetid: 1ea66ecb-23b0-484a-838d-58671a2999b5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65aedc5dbeb8a740d5713983f66eefe693864937
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 634359763f24e02987664fe3de1094e3e7fec64c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="property-sheets-as-wizards"></a>Sihirbaz Olarak Özellik Sayfaları
 Bir anahtar Sihirbazı özellik sayfası sekmeleri yerine İleri veya Son'u, geri ve İptal düğmeleri ile gezinti sağlanır özelliğidir. Çağırmanız gerekir [CPropertySheet::SetWizardMode](../mfc/reference/cpropertysheet-class.md#setwizardmode) çağırmadan önce [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#domodal) bu özelliğin avantajlarından yararlanmak için özellik sayfası nesne üzerinde.  

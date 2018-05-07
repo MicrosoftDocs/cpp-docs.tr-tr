@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4224 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4224 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4224
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4224
 ms.assetid: 1531cae0-5040-49fd-b149-005bb5085391
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 618e0b12ed20b13d85a7198781d1bec0fea78456
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 91f74aee988264706d5c74e94c8198a448f66465
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4224"></a>Derleyici Uyarısı (düzey 1) C4224
 kullanılan standart olmayan uzantısı: biçimsel parametresi 'tanımlayıcısı' daha önce bir tür olarak tanımlanmıştı  

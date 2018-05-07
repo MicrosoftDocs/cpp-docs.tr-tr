@@ -1,12 +1,9 @@
 ---
-title: "Cformview'yu sınıfı | Microsoft Docs"
-ms.custom: 
+title: Cformview'yu sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CFormView
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CFormView [MFC], CFormView
 - CFormView [MFC], IsInitDlgCompleted
 ms.assetid: a99ec313-36f0-4f28-9d2b-de11de14ac19
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 386e28631d20721f22eb2b778ffbe2e1d4b1824d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3486285b7b6430e9cd6f0e4a936aa3341bd72e0f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cformview-class"></a>Cformview'yu sınıfı
 Form görünümleri için kullanılan temel sınıf.  
@@ -79,7 +74,7 @@ class CFormView : public CScrollView
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxext.h  
   
-##  <a name="cformview"></a>CFormView::CFormView  
+##  <a name="cformview"></a>  CFormView::CFormView  
  Oluşturan bir `CFormView` nesnesi.  
   
 ```  
@@ -97,7 +92,7 @@ CFormView(UINT nIDTemplate);
 ### <a name="remarks"></a>Açıklamalar  
  Bir türdeki bir nesne oluştururken türetilen `CFormView`, bir görünüm nesnesi oluşturmak ve görünüm temel iletişim kutusu kaynağı tanımlamak için oluşturucular çağırma. Kaynak adı (pass bağımsız değişkeni olarak bir dize oluşturucusu için) veya (pass imzasız tamsayı bağımsız değişkeni olarak) Kimliğine göre tanımlayabilirsiniz.  
   
- Form görünümünde pencere ve alt denetimleri kadar oluşturulmaz `CWnd::Create` olarak adlandırılır. `CWnd::Create`Belge şablonu tarafından yönlendirilen belge ve görünüm oluşturma işleminin bir parçası olarak çerçevesi tarafından çağrılır.  
+ Form görünümünde pencere ve alt denetimleri kadar oluşturulmaz `CWnd::Create` olarak adlandırılır. `CWnd::Create` Belge şablonu tarafından yönlendirilen belge ve görünüm oluşturma işleminin bir parçası olarak çerçevesi tarafından çağrılır.  
   
 > [!NOTE]
 >  Türetilmiş sınıf *gerekir* kendi Oluşturucusu sağlayın. Oluşturucuda Oluşturucusu çağırma `CFormView::CFormView`, kaynak adı veya önceki sınıfına genel bakış gösterildiği gibi bir bağımsız değişken olarak Kimliğine sahip.  
@@ -107,7 +102,7 @@ CFormView(UINT nIDTemplate);
   
  [!code-cpp[NVC_MFCDocView#91](../../mfc/codesnippet/cpp/cformview-class_2.cpp)]  
   
-##  <a name="isinitdlgcompleted"></a>CFormView::IsInitDlgCompleted  
+##  <a name="isinitdlgcompleted"></a>  CFormView::IsInitDlgCompleted  
  MFC tarafından diğer işlemleri gerçekleştirmeden önce bu başlatma tamamlandı sağlamak için kullanılır.  
   
 ```  

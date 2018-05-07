@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C3069 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3069 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3069
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3069
 ms.assetid: ca94291b-2bb4-4e3f-9acf-534234b83513
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a6d4ccfd4f532c8f7c64f775e17260f26f8d457
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2b68471b866888baf0de11915dd16a150e12a8c5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3069"></a>Derleyici Hatası C3069
 'işleci': numaralandırma türü için izin verilmiyor  

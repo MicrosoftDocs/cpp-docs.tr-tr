@@ -1,12 +1,9 @@
 ---
 title: _bittestandset, _bittestandset64 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - _bittestandset_cpp
@@ -20,20 +17,18 @@ helpviewer_keywords:
 - _bittestandset intrinsic
 - _bittestandset64 intrinsic
 ms.assetid: 6d6c8670-fea0-4c1c-9aad-2bb842715203
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6efdab3cf087d5a1301f7f1e005b804875b769a
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 928391912d325faaf2e70a27519fdf969539fbca
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="bittestandset-bittestandset64"></a>_bittestandset, _bittestandset64
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Bit arabirimini inceleyen bir yönerge oluşturmak `b` adresinin `a`, geçerli değerini döndürür ve bit 1'e ayarlar.  
   

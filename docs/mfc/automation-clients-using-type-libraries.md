@@ -1,13 +1,10 @@
 ---
-title: "Otomasyon istemcileri: Tür kitaplıklarını kullanma | Microsoft Docs"
-ms.custom: 
+title: 'Otomasyon istemcileri: Tür kitaplıklarını kullanma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - MkTypLib
 dev_langs:
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - MkTypLib tool
 - .odl files
 ms.assetid: d405bc47-118d-4786-b371-920d035b2047
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b63f6d05415b163e523589756ba2eb67ab2c61a3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 67fa0f5d164ae325caff576fb41695fc8689fda0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="automation-clients-using-type-libraries"></a>Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma
 Otomasyon istemcileri istemcileridir sunucuları nesneleri yönetmek için sunucu nesneleri özellikleri ve yöntemleri hakkında bilgi olması gerekir. Özellikler veri türlerine sahip; yöntemleri genellikle dönüş değerleri ve parametreleri kabul eder. İstemci, sunucu nesnesi türü için statik olarak bağlamak için tüm bunların veri türleri hakkında bilgi gerektirir.  

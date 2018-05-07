@@ -1,12 +1,9 @@
 ---
-title: "COleDispatchException sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleDispatchException sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleDispatchException
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - COleDispatchException [MFC], m_strSource
 - COleDispatchException [MFC], m_wCode
 ms.assetid: 0e95c8be-e21a-490c-99ec-181c6a9a26d0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d90c59e4f85c871c113e51063ef1d50997bb508b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2ed492198c5c667fa1ffadcaa9a3bcc0461c16d4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coledispatchexception-class"></a>COleDispatchException sınıfı
 OLE belirli özel durumları işler `IDispatch` OLE Otomasyon önemli bir parçası olan arabirimi.  
@@ -75,7 +70,7 @@ class COleDispatchException : public CException
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h  
   
-##  <a name="m_dwhelpcontext"></a>COleDispatchException::m_dwHelpContext  
+##  <a name="m_dwhelpcontext"></a>  COleDispatchException::m_dwHelpContext  
  Uygulamanızın Yardımı'nda Yardım bağlamı tanımlar (. HLP) dosyası.  
   
 ```  
@@ -88,7 +83,7 @@ DWORD m_dwHelpContext;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).  
   
-##  <a name="m_strdescription"></a>COleDispatchException::m_strDescription  
+##  <a name="m_strdescription"></a>  COleDispatchException::m_strDescription  
  "Disk dolu." gibi sözlü hata açıklamasını içerir  
   
 ```  
@@ -101,14 +96,14 @@ CString m_strDescription;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).  
   
-##  <a name="m_strhelpfile"></a>COleDispatchException::m_strHelpFile  
+##  <a name="m_strhelpfile"></a>  COleDispatchException::m_strHelpFile  
  Bu dize uygulamanın Yardım dosyasının adı ile framework doldurur.  
   
 ```  
 CString m_strHelpFile;  
 ```  
   
-##  <a name="m_strsource"></a>COleDispatchException::m_strSource  
+##  <a name="m_strsource"></a>  COleDispatchException::m_strSource  
  Bu dize özel durum oluşturdu uygulamanın adı ile framework doldurur.  
   
 ```  
@@ -118,7 +113,7 @@ CString m_strSource;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).  
   
-##  <a name="m_wcode"></a>COleDispatchException::m_wCode  
+##  <a name="m_wcode"></a>  COleDispatchException::m_wCode  
  Uygulamanız için belirli bir hata kodunu içeriyor.  
   
 ```  

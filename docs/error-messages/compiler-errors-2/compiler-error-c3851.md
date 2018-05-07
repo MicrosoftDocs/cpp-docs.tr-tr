@@ -2,11 +2,8 @@
 title: Derleyici Hatası C3851 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: ''
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3851
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3851
 ms.assetid: da30c21c-33aa-4439-8fb3-2f5021ea4985
-caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 792d13ece8b864b3d8d7e251bf530f685a02ccf7
-ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
+ms.openlocfilehash: 82104776b2d1153310d0552bd873238333e746f2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3851"></a>Derleyici Hatası C3851
 'char': evrensel-karakter-name temel karakter kümesinde bir karakter belirtemezsiniz  

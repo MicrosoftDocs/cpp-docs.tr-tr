@@ -1,8 +1,8 @@
 ---
-title: "Derleyici hataları C2600 C2699 aracılığıyla | Microsoft Docs"
+title: Derleyici hataları C2600 C2699 aracılığıyla | Microsoft Docs
 ms.date: 11/17/2017
 ms.technology:
-- cpp-tools
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2604
@@ -59,14 +59,13 @@ dev_langs:
 ms.assetid: 73c6319f-cbea-4a2f-913b-90dc1af61f64
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b67597e6b841546b624d235ab017f138b969135
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f0637ff146ca71c1ee14c534792cf70c44c0616b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-errors-c2600-through-c2699"></a>Derleyici hataları C2600 C2699 aracılığıyla
 

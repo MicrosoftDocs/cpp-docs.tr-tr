@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 4) C4242 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 4) C4242 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4242
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4242
 ms.assetid: 8df742e1-fbf1-42f3-8e93-c0e1c222dc7e
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bee4a165ae59bd21491fdecfc8c25d18477d7c36
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: befe02b363c17a670d3b33632ffa50ed8a7cb1f5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-4-c4242"></a>Derleyici Uyarısı (düzey 4) C4242
 'tanımlayıcısı': 'type1' öğesinden 'type2', olası veri kaybını dönüştürme  

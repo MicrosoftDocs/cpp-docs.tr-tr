@@ -1,13 +1,10 @@
 ---
-title: "Liste Denetim stillerini değiştirme | Microsoft Docs"
-ms.custom: 
+title: Liste Denetim stillerini değiştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - CListCtrl class [MFC], styles
 - CListCtrl class [MFC], changing styles
 ms.assetid: be74a005-0795-417c-9056-f6342aa74b26
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6758cce9ab42c0dea490dd8ac9803588edceac5d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f9d93511ad4f4ca835e09b6eaa3f612f0888e844
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="changing-list-control-styles"></a>Liste Denetim Stillerini Değiştirme
 Liste denetimi penceresi stilini değiştirebilirsiniz ([CListCtrl](../mfc/reference/clistctrl-class.md)) oluşturduktan sonra dilediğiniz zaman. Pencere stili değiştirerek ekleyeceğini görünüm türünü değiştirin. Örneğin, Explorer benzetmek için menü öğeleri veya denetimleri farklı görünümleri arasında geçiş için araç çubuğu düğmeleri sağlayabilir: simge görünümü, liste görünümü ve benzeri.  

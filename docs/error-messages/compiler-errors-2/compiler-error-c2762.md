@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2762 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2762 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2762
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2762
 ms.assetid: 8b81a801-fd48-40a1-8bee-0748795b12e4
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15e96c7df9d407bcb3b0b5686b83c5e8c42c33fa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: eb2ab9324639cb4f1e47858f9601c314b25fb96f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2762"></a>Derleyici Hatası C2762
 'class': 'bağımsız değişkeni' için bir şablon bağımsız değişken olarak geçersiz bir ifade  

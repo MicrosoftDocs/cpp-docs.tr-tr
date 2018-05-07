@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C3213 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3213 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3213
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3213
 ms.assetid: 1f079e36-b3e9-40f8-8e95-08eeba3adc82
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 593e967d944f4a29371469c69d80605e3e2579ac
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dbfdbb3554aad858cf412ace7709bbf63b3ae311
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3213"></a>Derleyici Hatası C3213
 taban sınıfı 'taban_türü' 'derived_type' az erişilebilir  

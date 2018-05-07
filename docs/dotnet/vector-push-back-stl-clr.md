@@ -1,12 +1,9 @@
 ---
 title: Vector::push_back (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::vector::push_back
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - push_back member [STL/CLR]
 ms.assetid: 4a4c302b-e29f-4b68-b759-2f831814d896
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 3721f967290b540dd03d1cab2d12a4d47f3b3f73
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c36668b2f2c4c61a2c4c0047b8a8fb8c9100778f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vectorpushback-stlclr"></a>vector::push_back (STL/CLR)
 Yeni bir son öğesi ekler.  

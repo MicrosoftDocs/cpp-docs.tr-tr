@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0017 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0017 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0017
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CAN0017
 - CXX0017
 ms.assetid: af74db02-a64d-49ca-8363-3e044a107580
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e769e9886168c9f19ad110c48d848a9b84ab8aac
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f7540dc701ffa6e0acb3d2661e1196e5f4552d2c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0017"></a>İfade Değerlendirici Hatası CXX0017
 Sembol bulunamadı  

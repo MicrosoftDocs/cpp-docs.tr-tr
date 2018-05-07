@@ -12,14 +12,13 @@ helpviewer_keywords:
 ms.assetid: 1fe3958e-d2fe-4188-8e34-5896738246eb
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85757d914a88f29dd4378159a0e30f317b46a70a
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: dbe070c2bae69563d65344072a56003f808d1486
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="intrinsics-available-on-all-architectures"></a>İç bilgiler kullanılabilir tüm mimarileri hakkında
 

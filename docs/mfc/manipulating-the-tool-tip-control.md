@@ -1,30 +1,25 @@
 ---
-title: "Araç ipucunu denetimini düzenleme | Microsoft Docs"
-ms.custom: 
+title: Araç ipucunu denetimini düzenleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - CToolTipCtrl class [MFC], manipulating tool tip attributes
 - tool tips [MFC], attributes
 ms.assetid: 3600afe5-712a-4b56-8456-96e85fe879af
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae30c39a26379aaa8a6f786b5fe2542abde2c2df
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 76976c0907d645ad945700c4d396217880712f11
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="manipulating-the-tool-tip-control"></a>Araç İpucunu Denetimini Düzenleme
 Sınıf `CToolTipCtrl` bir grup üyesi çeşitli özniteliklerini denetim işlevleri sağlayan `CToolTipCtrl` nesne ve araç ipucu penceresi.  

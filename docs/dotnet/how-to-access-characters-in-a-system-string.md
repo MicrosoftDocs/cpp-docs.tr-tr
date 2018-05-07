@@ -1,13 +1,10 @@
 ---
 title: "Nasıl yapılır: String'deki karakterlere erişme | Microsoft Docs"
-ms.custom: 
+ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,24 +12,22 @@ helpviewer_keywords:
 - examples [C++], strings
 - strings [C++], accessing characters
 ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 888370cac57025418bc70b322703d8569a4be3d0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ed9682492eedc915919758d42d5594560cb4a83a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="how-to-access-characters-in-a-systemstring"></a>Nasıl yapılır: Bir System::String'deki Karakterlere Erişme
 Karakter erişmek için bir <xref:System.String> nesne yüksek performanslı çağrılar için yönetilmeyen işlevlere `wchar_t*` dizeleri. İlk karakteri iç işaretçi yöntemi verir <xref:System.String> nesnesi. Bu işaretçinin kullanılabilir doğrudan değiştirilebilir veya sabitlenmiş ve sıradan bekleyen bir işleve geçirilen `wchar_t` dize.  
   
 ## <a name="example"></a>Örnek  
- `PtrToStringChars`döndüren bir <xref:System.Char>, bir iç işaretçi olan (olarak da bilinen bir `byref`). Bu nedenle, atık toplama tabi değil. Yerel bir işleve aktardığınızda oluşturacağız sürece bu işaretçinin PIN gerekmez.  
+ `PtrToStringChars` döndüren bir <xref:System.Char>, bir iç işaretçi olan (olarak da bilinen bir `byref`). Bu nedenle, atık toplama tabi değil. Yerel bir işleve aktardığınızda oluşturacağız sürece bu işaretçinin PIN gerekmez.  
   
  Aşağıdaki kod göz önünde bulundurun.  Sabitleme gerekli değildir çünkü `ppchar` iç işaretçidir ve atık toplayıcı onun işaret dize geçerse, aynı zamanda güncelleştirecektir `ppchar`. Olmadan bir [pin_ptr (C + +/ CLI)](../windows/pin-ptr-cpp-cli.md), kod çalışır ve değil olası performans isabet olmuş sabitlemenin.  
   

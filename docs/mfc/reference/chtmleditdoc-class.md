@@ -1,12 +1,9 @@
 ---
-title: "CHtmlEditDoc sınıfı | Microsoft Docs"
-ms.custom: 
+title: CHtmlEditDoc sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CHtmlEditDoc
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - CHtmlEditDoc [MFC], IsModified
 - CHtmlEditDoc [MFC], OpenURL
 ms.assetid: b2cca61f-e5d6-4099-b0d1-46bf85f0bd64
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1e60c3b175346268b2c6b755786adbd8eb86467
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: de452365a02b69798c62e2eecfd8051afcf08bb8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="chtmleditdoc-class"></a>CHtmlEditDoc sınıfı
 İle [CHtmlEditView](../../mfc/reference/chtmleditview-class.md), MFC belge görünüm mimarisi bağlamında WebBrowser düzenleme platform işlevselliğini sağlar.  
@@ -72,14 +67,14 @@ class AFX_NOVTABLE CHtmlEditDoc : public CDocument
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxhtml.h  
   
-##  <a name="chtmleditdoc"></a>CHtmlEditDoc::CHtmlEditDoc  
+##  <a name="chtmleditdoc"></a>  CHtmlEditDoc::CHtmlEditDoc  
  Oluşturan bir **CHtmlEditDoc** nesnesi.  
   
 ```  
 CHtmlEditDoc();
 ```  
   
-##  <a name="getview"></a>CHtmlEditDoc::GetView  
+##  <a name="getview"></a>  CHtmlEditDoc::GetView  
  Alır [CHtmlEditView](../../mfc/reference/chtmleditview-class.md) nesne bu belgeye eklendi.  
   
 ```  
@@ -89,14 +84,14 @@ virtual CHtmlEditView* GetView() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  İşaretçi belgenin döndüren **CHtmlEditView** nesnesi.  
   
-##  <a name="ismodified"></a>CHtmlEditDoc::IsModified  
+##  <a name="ismodified"></a>  CHtmlEditDoc::IsModified  
  İlişkili görünümün WebBrowser denetimi kullanıcı tarafından değiştirilmiş bir belgenin içerip içermediğini döndürür.  
   
 ```  
 virtual BOOL IsModified();
 ```  
   
-##  <a name="openurl"></a>CHtmlEditDoc::OpenURL  
+##  <a name="openurl"></a>  CHtmlEditDoc::OpenURL  
  Bir URL açılır.  
   
 ```  

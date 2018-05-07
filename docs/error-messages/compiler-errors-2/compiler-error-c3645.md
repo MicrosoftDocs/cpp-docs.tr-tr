@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3645 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3645 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3645
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3645
 ms.assetid: 346da528-ae86-4cd0-9654-f41bee26ac0d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94745c4cc6edc66ad31acc61a868e1db59795496
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a711f37e3ab54de5e3cfad77b82fbd603edfaf6e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3645"></a>Derleyici Hatası C3645
 'function': __clrcall yerel koda derlenmiş işlevleri kullanılamaz  

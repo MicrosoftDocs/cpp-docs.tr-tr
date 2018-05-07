@@ -1,24 +1,22 @@
 ---
-title: "Kopya kaynakları proje özellikleri (Linux C++) | Microsoft Docs"
-ms.custom: 
+title: Kopya kaynakları proje özellikleri (Linux C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 9/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: Linux
+ms.topic: conceptual
 ms.assetid: 1a44230d-5dd8-4d33-93b4-e77e03e00150
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 586244da6cc8c0a682146caf3ea75bdf72b5824e
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: d13bc7c129696e2b7251ccb23b68338956864321
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="copy-sources-project-properties-linux-c"></a>Proje Özellikleri (Linux C++) kopyalama kaynakları
 

@@ -1,13 +1,10 @@
 ---
 title: Etkin belgeler | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - views [MFC], active documents
 - active documents [MFC], views
 ms.assetid: 1378f18e-aaa6-420b-8501-4b974905baa0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52f3165f69d47f63fc52ae01bbbd1947e7755a43
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c7a391dda8f8ffee6cec3cebc9d03250336195db
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="active-documents"></a>Etkin Belgeler
 Etkin belgeler OLE bileşik belge teknolojisinin genişletir. Bu uzantılar, görünümler, böylece nesneleri kapsayıcılara işlev ve henüz kendi görüntüleme ve yazdırma işlevleri üzerinde denetimi korumak yöneten ek arabirimler biçiminde sağlanır. Bu işlem belgeleri yabancı çerçeveleri (örneğin, Microsoft Internet Explorer veya Microsoft Office Binder) hem de yerel çerçeveler (ürünün kendi görünüm bağlantı noktaları gibi) görüntülemek mümkün kılar.  
@@ -58,7 +53,7 @@ interface IOleDocument : IUnknown
   
  Etkin belge bir veya daha fazla tür oluşturabilirsiniz [görünümleri](#requirements_for_view_objects) verilerini (örneğin, normal, Anahat, sayfa düzeni ve benzeri). Görünümleri veri görülebilir filtreler gibi davranır. Belgeyi yalnızca bir görünüm türünü olsa bile, yine birden çok görünüm yeni pencere işlevleri destekleyen bir araç desteklemek istediğiniz (örneğin, **yeni pencere** üzerinde öğesi **penceresi** Office menüsü uygulamalar için).  
   
-##  <a name="requirements_for_active_documents"></a>Etkin belgeler için gereksinimleri  
+##  <a name="requirements_for_active_documents"></a> Etkin belgeler için gereksinimleri  
  Etkin belge kapsayıcısı içinde görüntülenebilir etkin bir belge gerekir:  
   
 -   OLE'ın bileşik dosyaları uygulayarak kendi depolama mekanizması olarak kullanmak `IPersistStorage`.  
@@ -71,7 +66,7 @@ interface IOleDocument : IUnknown
   
  Bilgi ne zaman ve nasıl kapsayıcı tarafı arabirimleri kullanılacağını bu gereksinimleri uygulanmaktadır.  
   
-##  <a name="requirements_for_view_objects"></a>Görünüm nesneleri için gereksinimleri  
+##  <a name="requirements_for_view_objects"></a> Görünüm nesneleri için gereksinimleri  
  Etkin belge verilerini bir veya daha fazla görünümler oluşturabilirsiniz. İşlevsel olarak, bu verileri görüntülemek için belirli bir yöntemin üzerine bağlantı noktaları gibi görünümlerdir. Etkin belgeyi yalnızca tek bir görünüm destekliyorsa, etkin belgeyi tek bir görünüm tek bir sınıf kullanarak uygulanabilir. **IOleDocument::CreateView** aynı nesnenin döndürür `IOleDocumentView` arabirim işaretçisi.  
   
  Etkin belge kapsayıcı içinde gösterilemeyecek kadar görünümü bileşen desteklemelidir **IOleInPlaceObject** ve **IOleInPlaceActiveObject** ek olarak `IOleDocumentView`:  

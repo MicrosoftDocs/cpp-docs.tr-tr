@@ -1,12 +1,9 @@
 ---
-title: "NMAKE önemli hatası U1099 | Microsoft Docs"
-ms.custom: 
+title: NMAKE önemli hatası U1099 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - U1099
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - U1099
 ms.assetid: 6688a805-43e6-4247-a2d0-14be082f0b13
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bf8d662960e5857686f3f8301cc8481f350d4b3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7be09691de4212d07b1452ffe33725a3978fc053
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="nmake-fatal-error-u1099"></a>NMAKE Önemli Hatası U1099
 yığın taşması  

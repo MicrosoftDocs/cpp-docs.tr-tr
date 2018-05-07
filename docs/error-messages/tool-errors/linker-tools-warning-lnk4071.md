@@ -1,12 +1,9 @@
 ---
-title: "Bağlayıcı araçları uyarısı LNK4071 | Microsoft Docs"
-ms.custom: 
+title: Bağlayıcı araçları uyarısı LNK4071 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - LNK4071
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - LNK4071
 ms.assetid: 803f8c34-8219-4f55-a4ae-7133ceff2ba3
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3be5732ea9fd05fd8bae61773431e7d092dd9c5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2cb0d4b8d78eb8c7cf1812abb1a7981c605f2c4e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="linker-tools-warning-lnk4071"></a>Bağlayıcı Araçları Uyarısı LNK4071
 sonraki bağlantıları artımlı olarak bağlanamaz  

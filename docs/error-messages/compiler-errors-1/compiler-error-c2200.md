@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2200 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2200 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2200
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2200
 ms.assetid: a04139a6-ce18-404b-9bfd-2369fc0af3cb
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 199452b63cff8f34bd9f882f3f51f159b173af15
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 82d9307efba9dcc6ebfef94b770a79b135515e12
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2200"></a>Derleyici Hatası C2200
 'function': işlevi zaten tanımlandı  

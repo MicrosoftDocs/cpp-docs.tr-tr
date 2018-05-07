@@ -1,12 +1,9 @@
 ---
-title: "CMFCRibbonLabel sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCRibbonLabel sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCRibbonLabel
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CMFCRibbonLabel [MFC], CMFCRibbonLabel
 - CMFCRibbonLabel [MFC], SetACCData
 ms.assetid: 0346c891-83bf-4f20-b8a1-c84cf2aadced
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32732c08542ff766c265fda93b8cf09ad04387ea
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fcbc552560325e844cf0812a3002088f829d6c60
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcribbonlabel-class"></a>CMFCRibbonLabel sınıfı
 Şerit için tıklanabilir olmayan metin etiketi uygular.  
@@ -74,7 +69,7 @@ class CMFCRibbonLabel : public CMFCRibbonButton
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxRibbonLabel.h  
   
-##  <a name="cmfcribbonlabel"></a>CMFCRibbonLabel::CMFCRibbonLabel  
+##  <a name="cmfcribbonlabel"></a>  CMFCRibbonLabel::CMFCRibbonLabel  
  Oluşturur ve başlatır bir [CMFCRibbonLabel](../../mfc/reference/cmfcribbonlabel-class.md) belirtilen metin dizesini görüntüler nesnesi.  
   
 ```  
@@ -84,13 +79,13 @@ CMFCRibbonLabel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszText`  
+ [in] `lpszText`  
  Etiketinde görüntülenecek metin.  
   
- [in]`bIsMultiLine`  
- `TRUE`Etiket çok satırlı etiket olduğunu belirtmek için; Aksi takdirde `FALSE`.  
+ [in] `bIsMultiLine`  
+ `TRUE` Etiket çok satırlı etiket olduğunu belirtmek için; Aksi takdirde `FALSE`.  
   
-##  <a name="setaccdata"></a>CMFCRibbonLabel::SetACCData  
+##  <a name="setaccdata"></a>  CMFCRibbonLabel::SetACCData  
  Geçerli Şerit label öğesi için erişilebilirlik verileri belirler.  
   
 ```  
@@ -100,14 +95,14 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pParent`  
+ [in] `pParent`  
  Geçerli Şerit etiketin üst pencere temsil eder.  
   
- [out]`data`  
+ [out] `data`  
  Türünde bir nesne `CAccessibilityData` geçerli Şerit etiketi erişilebilirlik verilerle doldurulur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`varsa `data` parametresi başarıyla geçerli Şerit etiketin erişilebilirlik verilerle doldurulan; Aksi takdirde `FALSE`.  
+ `TRUE` varsa `data` parametresi başarıyla geçerli Şerit etiketin erişilebilirlik verilerle doldurulan; Aksi takdirde `FALSE`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

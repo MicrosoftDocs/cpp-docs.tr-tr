@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C3097 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3097 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3097
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3097
 ms.assetid: b24bd8f8-e04f-4fbb-be57-4feb9165572e
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98dbe882261040392c9629964b2b1f31cb6b626b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 817e6095a0141d33352946acf52a765578dafcb3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3097"></a>Derleyici Hatası C3097
 'öznitelik': öznitelik kapsamı, ile ' derleme:' veya ' modül:'  

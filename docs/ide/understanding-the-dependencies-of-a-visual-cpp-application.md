@@ -1,13 +1,10 @@
 ---
-title: "Visual C++ uygulaması bağımlılıklarını anlama | Microsoft Docs"
-ms.custom: 
+title: Visual C++ uygulaması bağımlılıklarını anlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,22 +17,20 @@ helpviewer_keywords:
 - depends.exe
 - libraries [C++], application deployment issues
 ms.assetid: 62a44c95-c389-4c5f-82fd-07d7ef09dbf9
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b7974b16767d226df5e71e7f3ae0e61514ed37
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: da2aadeba69a8be29627650ba6ef24516098a8e3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="understanding-the-dependencies-of-a-visual-c-application"></a>Visual C++ Uygulaması Bağımlılıklarını Anlama
 Bir uygulamanın bağımlı hangi Visual C++ kitaplıkları belirlemek için proje özelliklerini görüntüleyebilirsiniz. (Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **özellikleri** açmak için **özellik sayfaları** iletişim kutusu.) Bağımlılıklara dair daha kapsamlı bir resim sunan Bağımlılık Denetçisi'ni (depends.exe) de kullanabilirsiniz.  
   
- İçinde **özellik sayfaları** iletişim kutusu, altındaki çeşitli sayfalar incelemek **yapılandırma özellikleri** bağımlılıkları anlamak için. Örneğin, MFC kitaplıklarını projenize kullanır ve seçerseniz **kullanın, MFC**, **MFC'yi paylaşılan DLL'de** üzerinde **yapılandırma özellikleri**, **genel**  sayfasında, uygulamanızın çalışma zamanında bağlıdır MFC DLL'leri gibi mfc\<sürüm > .dll. Uygulamanızı MFC kullanmıyorsa, seçerseniz, CRT kitaplığına bağımlı olabilir bir **çalışma zamanı kitaplığı** değerini **çok iş parçacıklı hata ayıklama DLL (/ MDd)** veya **çok iş parçacıklı DLL (/ MD)**üzerinde **yapılandırma özellikleri**, **C/C++**, **kod oluşturma** sayfası.  
+ İçinde **özellik sayfaları** iletişim kutusu, altındaki çeşitli sayfalar incelemek **yapılandırma özellikleri** bağımlılıkları anlamak için. Örneğin, MFC kitaplıklarını projenize kullanır ve seçerseniz **kullanın, MFC**, **MFC'yi paylaşılan DLL'de** üzerinde **yapılandırma özellikleri**, **genel**  sayfasında, uygulamanızın çalışma zamanında bağlıdır MFC DLL'leri gibi mfc\<sürüm > .dll. Uygulamanızı MFC kullanmıyorsa, seçerseniz, CRT kitaplığına bağımlı olabilir bir **çalışma zamanı kitaplığı** değerini **çok iş parçacıklı hata ayıklama DLL (/ MDd)** veya **çok iş parçacıklı DLL (/ MD)** üzerinde **yapılandırma özellikleri**, **C/C++**, **kod oluşturma** sayfası.  
   
  Uygulamanızın bağımlı hangi DLL'lerin belirlemek için daha kapsamlı bir şekilde uygulamayı açmak için bağımlılık bekçisi (depends.exe) kullanmaktır. Aracından indirebilirsiniz [bağımlılık bekçisi](http://go.microsoft.com/fwlink/p/?LinkId=132640) web sitesi.  
   

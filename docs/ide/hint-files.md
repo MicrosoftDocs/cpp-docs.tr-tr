@@ -1,13 +1,10 @@
 ---
-title: "İpucu dosyaları | Microsoft Docs"
-ms.custom: 
+title: İpucu dosyaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cpp.hint
 - vc.hint.file
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - cpp.stop
 - Class View, hint file
 ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 432b5fa5041a7997c9df0593dc511c29854387ab
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 687e5cba94693a752f934d7816e6a7c36e318354
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hint-files"></a>İpucu Dosyaları
 A *ipucu dosyası* yardımcı olan Visual Studio tümleşik geliştirme ortamı (IDE) yorumlama adlarını, İşlevler ve makrolar gibi Visual C++ tanımlayıcıları. Bir Visual C++ proje, IDE açtığınızda *sistem ayrıştırma* kodunu projeyi her kaynak dosyasında çözümler ve her bir tanımlayıcı hakkında bilgi toplar. IDE gibi özellikleri desteklemek için bu bilgileri kullanıyorsa **sınıf görünümü** tarayıcı ve **gezinti çubuğu**.  
@@ -107,13 +102,13 @@ STDMETHOD(myMethod)(int parameter1);
   
 |Sözdizimi|Açıklama|  
 |------------|-------------|  
-|`#define`*ipucu adı* *değiştirme dizesi*<br /><br /> `#define`*ipucu adı* `(` *parametresi*,... `)` *değiştirme dizesi*|Yeni bir ipucu tanımlar ya da varolan bir ipucu yeniden tanımlamaktadır preprocesser yönergesi. Her oluşumu önişlemci yönergesi sonra değiştirir *ipucu adı* içeren kaynak kodu *değiştirme dizesini*.<br /><br /> İkinci sözdizimi işlevi benzeri ipucu biçimini tanımlar. Önişlemci işlevi benzeri ipucu kaynak kodunda meydana gelirse, önce her oluşumu değiştirir. *parametresi* içinde *değiştirme dizesini* kaynak kodu ve değiştirir karşılık gelen bağımsız değişkeni ile *ipucu adı* ile *değiştirme dizesini*.|  
+|`#define` *İpucu adı* *değiştirme dizesi*<br /><br /> `#define` *İpucu adı* `(` *parametresi*,... `)` *değiştirme dizesi*|Yeni bir ipucu tanımlar ya da varolan bir ipucu yeniden tanımlamaktadır preprocesser yönergesi. Her oluşumu önişlemci yönergesi sonra değiştirir *ipucu adı* içeren kaynak kodu *değiştirme dizesini*.<br /><br /> İkinci sözdizimi işlevi benzeri ipucu biçimini tanımlar. Önişlemci işlevi benzeri ipucu kaynak kodunda meydana gelirse, önce her oluşumu değiştirir. *parametresi* içinde *değiştirme dizesini* kaynak kodu ve değiştirir karşılık gelen bağımsız değişkeni ile *ipucu adı* ile *değiştirme dizesini*.|  
 |`@<`|İpucu dosyası belirli bir *değiştirme dizesini* harita öğelerine kümesi başlangıcını gösterir.|  
 |`@=`|İpucu dosyası belirli bir *değiştirme dizesini* Ara map öğesi gösterir. Bir harita birden çok harita öğelerine sahip olabilir.|  
 |`@>`|İpucu dosyası belirli bir *değiştirme dizesini* harita öğelerine kümesi sonunu gösterir.|  
-|`#undef`*ipucu adı*|Varolan bir ipucu siler önişlemci yönergesi. İpucu adı tarafından sağlanan *ipucu adı* tanımlayıcısı.|  
-|`//`*açıklama*|Tek satırlı yorum.|  
-|`/*`*açıklama*`*/`|Çok satırlı açıklaması.|  
+|`#undef` *İpucu adı*|Varolan bir ipucu siler önişlemci yönergesi. İpucu adı tarafından sağlanan *ipucu adı* tanımlayıcısı.|  
+|`//` *Açıklama*|Tek satırlı yorum.|  
+|`/*` *Açıklama* `*/`|Çok satırlı açıklaması.|  
   
 ## <a name="what-macros-require-a-hint"></a>Ne makroları gerektiren bir ipucu?  
  Belirli türde bir makroları ayrıştırma sistemiyle etkileyebilir. Bu bölümde, bir soruna neden olabilir makroları türleri ve bu sorunu çözmek için oluşturabileceğiniz ipucu türünü açıklar.  
@@ -244,7 +239,7 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
  Aşağıda bazı Visual C++ projesinde fiziksel dizinlerin gösterilmektedir. İpucu dosyaları olan `vcpackages`, `Debug`, `A1`, ve `A2` dizinleri.  
   
 ### <a name="hint-file-directories"></a>İpucu dosyası dizinleri  
- ![Ortak proje &#45; ve belirli ipucu dosyası dizinleri. ] (../ide/media/hintfile.png "HintFile")  
+ ![Ortak ve proje&#45;belirli ipucu dosyası dizinleri. ] (../ide/media/hintfile.png "HintFile")  
   
 ### <a name="directories-and-hint-file-contents"></a>Dizinler ve ipucu dosya içerikleri  
  Aşağıdaki listede ipucu dosyaları ve bu ipucu dosyaların içeriğini içeren bu projede dizinleri gösterir. Birçok ipuçlarında yalnızca bazılarını `vcpackages` dizin ipucu dosyası listelenir.  

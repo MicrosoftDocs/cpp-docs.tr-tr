@@ -1,12 +1,9 @@
 ---
-title: "_InterlockedIncrement iç işlevler | Microsoft Docs"
-ms.custom: 
+title: _InterlockedIncrement iç işlevler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - _InterlockedIncrement_acq
@@ -53,20 +50,18 @@ helpviewer_keywords:
 - _InterlockedIncrement_acq intrinsic
 - InterlockedIncrement intrinsic
 ms.assetid: 37700615-f372-438b-bcef-d76e11839482
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d07341e9b3580bc82f85adff68a817d7db7193f
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 598365e4a5439bc17baaed5e603f30c10c49bc1e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="interlockedincrement-intrinsic-functions"></a>_InterlockedIncrement iç işlevler
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Derleyici iç Win32 desteği sağlamak [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [InterlockedIncrement](http://msdn.microsoft.com/library/ms683614.aspx) işlevi.  
   

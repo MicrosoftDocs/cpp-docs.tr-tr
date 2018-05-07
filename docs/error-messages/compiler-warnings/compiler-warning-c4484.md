@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı C4484 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı C4484 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4484
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4484
 ms.assetid: 3d30e5b3-2297-45b7-a37a-1360056fdd0e
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa5f209dd3a77bcc4ec3c21d589fb8ba1ed3faf1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 75531c207f0136f16109b4d69d689b883998aae2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-c4484"></a>Derleyici Uyarısı C4484
 'override_function': temel ref sınıf yöntemi 'base_class_function' ile eşleşir, ancak 'sanal', 'new' veya 'override'; işaretlenmedi 'Yeni' (ve 'sanal') kabul edilir  
@@ -34,7 +29,7 @@ ms.lasthandoff: 12/21/2017
   
  Daha fazla bilgi için bkz.:  
   
--   [/ CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)  
+-   [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)  
   
 -   [override](../../windows/override-cpp-component-extensions.md)  
   

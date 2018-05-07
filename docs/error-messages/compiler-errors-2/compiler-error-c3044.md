@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C3044 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3044 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3044
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3044
 ms.assetid: 9f3e25b2-4676-49ab-97bf-6c88cd0fa377
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 565c30afd75277c2b11ce5252c5df0ae2238263a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 61021438711544bb9e6489855f8bcb46a867a1d4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3044"></a>Derleyici Hatası C3044
 'bölüm': yalnızca doğrudan bir OpenMP 'bölüm' yönergesi altında iç içe geçmiş  

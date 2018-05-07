@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2947 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2947 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2947
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2947
 ms.assetid: 6c056f62-ec90-4883-8a67-aeeb6ec13546
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79083bc2713a21de24008a58ebb02ef15265cf39
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e1af4e6a5a27c13d69351eaf0cddfafe11ba5f22
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2947"></a>Derleyici Hatası C2947
 bekleniyor ' >' yapı sonlandırmak için 'sözdizimi' bulundu  

@@ -1,13 +1,10 @@
 ---
 title: '&lt;c&gt; (Visual C++) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - <c>
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - <c> C++ XML tag
 - c C++ XML tag
 ms.assetid: 3b23fc0f-e10d-4dd0-b197-48a46cbddd9f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8d4ea984864975196251c9f362283a0df1932cb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f17d56601f49056144433155e0d898f56c42bdab
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ltcgt-visual-c"></a>&lt;c&gt; (Visual C++)
 \<c > etiketi belirten bir açıklama metni kodu olarak işaretlenmelidir. Kullanım [ \<kodu >](../ide/code-visual-cpp.md) birden fazla satır kodu olarak belirtmek için.  

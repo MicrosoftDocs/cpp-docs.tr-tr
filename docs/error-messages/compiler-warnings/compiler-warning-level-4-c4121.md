@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 4) C4121 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 4) C4121 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4121
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4121
 ms.assetid: 8c5b85c9-2543-426b-88bc-319c50158c7e
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4886f8274ed8813cf556529efe657dca786f0e36
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7c1cda66d120278034fc8c19ba0221be047a75eb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-4-c4121"></a>Derleyici Uyarısı (düzey 4) C4121
 'sembol': bir üyenin hizalaması paketlemeye duyarlıydı  

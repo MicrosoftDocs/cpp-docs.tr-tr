@@ -1,12 +1,9 @@
 ---
-title: "CMFCDesktopAlertWndInfo sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCDesktopAlertWndInfo sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCDesktopAlertWndInfo
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - CMFCDesktopAlertWndInfo [MFC], m_strText
 - CMFCDesktopAlertWndInfo [MFC], m_strURL
 ms.assetid: 5c9bb84e-6c96-4748-8e74-6951b6ae8e84
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f257575abbf405177b2524c4c803c0b3d250187
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b775b06f605edc68c6f1dbe47035d9ecf214b396
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcdesktopalertwndinfo-class"></a>CMFCDesktopAlertWndInfo sınıfı
 `CMFCDesktopAlertWndInfo` Sınıfı ile kullanılır [CMFCDesktopAlertWnd sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md). Masaüstü uyarı pencere açılırsa görüntülenen denetimleri belirtir.  
@@ -89,7 +84,7 @@ class CMFCDesktopAlertWndInfo
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxDesktopAlertDialog.h  
   
-##  <a name="operator_eq"></a>CMFCDesktopAlertWndInfo::operator =  
+##  <a name="operator_eq"></a>  CMFCDesktopAlertWndInfo::operator =  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -97,13 +92,13 @@ CMFCDesktopAlertWndInfo& operator=(CMFCDesktopAlertWndInfo& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`src`  
+ [in] `src`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="m_hicon"></a>CMFCDesktopAlertWndInfo::m_hIcon  
+##  <a name="m_hicon"></a>  CMFCDesktopAlertWndInfo::m_hIcon  
  Görüntülenen simge için bir tanıtıcı.  
   
 ```  
@@ -112,7 +107,7 @@ HICON m_hIcon;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="m_nurlcmdid"></a>CMFCDesktopAlertWndInfo::m_nURLCmdID  
+##  <a name="m_nurlcmdid"></a>  CMFCDesktopAlertWndInfo::m_nURLCmdID  
  Masaüstü uyarı pencere üzerinde bir bağlantı ile ilişkili komut kimliği.  
   
 ```  
@@ -122,7 +117,7 @@ UINT m_nURLCmdID;
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı tarafından belirtilen bağlantıyı tıklattığında komut kimliği açılan pencerede sahibine gönderilen [CMFCDesktopAlertWndInfo::m_strURL](#m_strurl).  
   
-##  <a name="m_strtext"></a>CMFCDesktopAlertWndInfo::m_strText  
+##  <a name="m_strtext"></a>  CMFCDesktopAlertWndInfo::m_strText  
  Masaüstü uyarı penceresinde görüntülenen metin.  
   
 ```  
@@ -131,7 +126,7 @@ CString m_strText;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="m_strurl"></a>CMFCDesktopAlertWndInfo::m_strURL  
+##  <a name="m_strurl"></a>  CMFCDesktopAlertWndInfo::m_strURL  
  Masaüstü uyarı penceresinde görüntülenen bağlantısı.  
   
 ```  

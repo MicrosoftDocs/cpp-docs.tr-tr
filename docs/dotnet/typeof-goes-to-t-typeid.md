@@ -1,13 +1,10 @@
 ---
-title: 'typeof t:: typeid''e gider | Microsoft Docs'
-ms.custom: 
+title: "typeof t:: typeid'e gider | Microsoft Docs"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - __typeof keyword
 - typeid keyword [C++]
 ms.assetid: 6a0d35a7-7a1a-4070-b187-cff37cfdc205
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 09ec4aef4c8bc68f8a808193b30d86b8519ba881
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0ae9f772a68735555748e6edbeb6196f1a73d2c9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="typeof-goes-to-ttypeid"></a>typeof T::typeid'e gider
 `typeof` C++ almıştır için Yönetilen Uzantılar'da kullanılan işleç `typeid` Visual C++'ta anahtar sözcüğü.  

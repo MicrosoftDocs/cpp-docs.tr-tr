@@ -1,13 +1,10 @@
 ---
-title: "Kapsayıcılar: Gelişmiş Özellikler | Microsoft Docs"
-ms.custom: 
+title: 'Kapsayıcılar: Gelişmiş Özellikler | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - server/container applications [MFC]
 - containers [MFC], container applications
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e79b1c88996e835a907129fa5810d4c4dca0770
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1ff48585a7f3e19939e8d951c513a8d39c0de47e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="containers-advanced-features"></a>Kapsayıcılar: Gelişmiş Özellikler
 Bu makalede, isteğe bağlı Gelişmiş Özellikler varolan kapsayıcı uygulamalarına kavramak gereken adımları açıklar. Bu özellikler şunlardır:  
@@ -40,7 +35,7 @@ Bu makalede, isteğe bağlı Gelişmiş Özellikler varolan kapsayıcı uygulama
   
 -   [Katıştırılmış nesne için bir OLE bağlantısı](#_core_links_to_embedded_objects)  
   
-##  <a name="_core_creating_a_container_server_application"></a>Bir kapsayıcı/sunucu uygulaması oluşturma  
+##  <a name="_core_creating_a_container_server_application"></a> Bir kapsayıcı/sunucu uygulaması oluşturma  
  Kapsayıcı/sunucu uygulaması, bir kapsayıcı ve bir sunucu gibi davranan bir uygulamadır. Windows için Microsoft Word, bu bir örnektir. Windows için Word belgeleri diğer uygulamalarda eklenebilir ve Windows için Word belgelerinde öğeleri de eklenebilir. Bir kapsayıcı ve (bir birleşimi kapsayıcı/miniserver uygulaması oluşturamazsınız) tam bir sunucu, kapsayıcı uygulamanızın değiştirme işlemi, bir tam sunucu oluşturma işlemi benzerdir.  
   
  Makaleyi [sunucular: sunucu uygulama](../mfc/servers-implementing-a-server.md) bir sunucu uygulaması uygulamak için gereken görevleri sayısını listeler. Bir kapsayıcı/sunucu uygulaması için bir kapsayıcı uygulama dönüştürürseniz, daha sonra aynı bu görevlerden bazılarını gerçekleştirmek kapsayıcıya kod ekleme gerekir. Aşağıda, dikkate alınması gereken önemli şeyler listelenmektedir:  
@@ -57,7 +52,7 @@ Bu makalede, isteğe bağlı Gelişmiş Özellikler varolan kapsayıcı uygulama
   
  Kendi içine bir MDI uygulama ekleyemiyor unutmayın. SDI uygulama olmadığı sürece bir kapsayıcı/sunucu uygulamanın kendi içine eklenemez.  
   
-##  <a name="_core_links_to_embedded_objects"></a>Katıştırılmış nesneler bağlantılar  
+##  <a name="_core_links_to_embedded_objects"></a> Katıştırılmış nesneler bağlantılar  
  Katıştırılmış nesneler özelliği bağlanan bir belge kapsayıcı uygulamanızı içine katıştırılmış nesne için bir OLE bağlantısı oluşturmak bir kullanıcı sağlar. Örneğin, bir sözcük işlemci katıştırılmış bir elektronik tablo içeren bir belge oluşturun. Katıştırılmış nesneler bağlantılar uygulamanız destekliyorsa, word işlemcinin belgedeki elektronik tablo bağlantısını yapıştırın. Bu özellik, burada sözcük işlemci başlangıçta var bilmeden elektronik tabloda yer alan bilgileri kullanmak için uygulamanızı sağlar.  
   
 #### <a name="to-link-to-embedded-objects-in-your-application"></a>Katıştırılmış nesneler, uygulamanızda bağlamak için  

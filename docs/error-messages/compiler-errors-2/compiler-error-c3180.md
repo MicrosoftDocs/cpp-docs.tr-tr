@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3180 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3180 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3180
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3180
 ms.assetid: 5281f583-7df7-418a-8507-d4da67ed6572
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4df29d0a9927526b8bc3ec80bc26cf82858e9592
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3e08b46dda1d9d350ca955ecd0f05cac4f484cea
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3180"></a>Derleyici Hatası C3180
 'tür adı': ad meta verileri 'sınırı' karakter sınırını aşıyor  

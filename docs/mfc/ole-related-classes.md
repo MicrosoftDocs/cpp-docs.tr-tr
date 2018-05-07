@@ -1,13 +1,10 @@
 ---
-title: "OLE ile ilgili sınıflar | Microsoft Docs"
-ms.custom: 
+title: OLE ile ilgili sınıflar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.classes.ole
 dev_langs:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - OLE classes [MFC]
 - OLE [MFC], classes
 ms.assetid: 2135cf54-1d9d-4e0e-91b4-943b3440effa
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4cb40e237eb6197dfe7e0cf944f12d25ca0e28e4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: baa4ec3de21ce91e0d8723ad0e4debb39a26b3cf
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ole-related-classes"></a>OLE İle İlgili Sınıflar
 Bu sınıfların farklı hizmetler, girdi ve çıktı dosyası için özel durumlar arasında değişen bir dizi sağlar.  

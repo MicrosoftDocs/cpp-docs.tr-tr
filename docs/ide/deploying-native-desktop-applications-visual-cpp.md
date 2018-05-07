@@ -1,13 +1,10 @@
 ---
-title: "Yerel Masaüstü uygulamaları (Visual C++) dağıtma | Microsoft Docs"
-ms.custom: 
+title: Yerel Masaüstü uygulamaları (Visual C++) dağıtma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - deploying applications [C++], about deploying applications
 - distributing applications [C++]
 ms.assetid: 37f1691e-d67c-41e4-926e-528a237a9bac
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1fe88a322314ac24fa5799735e84ff100efa2e79
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 833b3eb674dc2f6efc99b852cd366f699d46e716
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="deploying-native-desktop-applications-visual-c"></a>Yerel Masaüstü Uygulamaları Dağıtma (Visual C++)
 Dağıtım olarak diğer bilgisayarlara yüklenmesi tamamlanmış uygulamanın veya bileşenin dağıttığınız işlemidir. Bir geliştiricinin bilgisayarında bir uygulama oluşturduğunuzda dağıtım planlama başlatır. Uygulama yüklü ve bir kullanıcının bilgisayarında çalıştırılmaya hazır olduğunda dağıtım sona erer.  

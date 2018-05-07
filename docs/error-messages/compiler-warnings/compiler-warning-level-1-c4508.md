@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4508 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4508 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4508
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4508
 ms.assetid: c05f113b-b789-4df0-a4ef-78bce4767021
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52139327831be17d6800f30b00f667da7d3b0376
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 53f152c2f3573e5f3bd7b8e9be0603ed6d3f11bb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4508"></a>Derleyici Uyarısı (düzey 1) C4508
 'function': işlevi; bir değer döndürmesi gerekir 'void' dönüş türü varsayılır  

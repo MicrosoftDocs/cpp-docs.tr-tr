@@ -1,29 +1,24 @@
 ---
-title: "CVTRES hataları CVT1100-CVT4001 | Microsoft Docs"
-ms.custom: 
+title: CVTRES hataları CVT1100-CVT4001 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - cvtres
 dev_langs:
 - C++
 ms.assetid: ac94d0fb-0da3-4327-b3d9-ceaeb3fc2e4d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c83bd98e881604c4256b24a4091a01452296457c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 79f010e39486adac8ac649f33a433d6a502791a6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cvtres-errors-cvt1100-through-cvt4001"></a>CVTRES Hataları CVT1100 - CVT4001
 

@@ -1,12 +1,9 @@
 ---
-title: "Proje derleme uyarısı PRJ0029 | Microsoft Docs"
-ms.custom: 
+title: Proje derleme uyarısı PRJ0029 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - PRJ0029
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - PRJ0029
 ms.assetid: f02c09c6-09f3-4d44-8cd4-9a25336be1ea
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 924b37c40ee8b008fbf0a10896ef53e51fcbcc0a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cd6e7b738785d9cfacfb2128e03d3a3123da4fa1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="project-build-warning-prj0029"></a>Proje Derleme Uyarısı PRJ0029
 Proje düzeyi özel derleme adımı için 'Outputs' özelliği ayarlanmadı. Özel derleme adımı atlanır.  

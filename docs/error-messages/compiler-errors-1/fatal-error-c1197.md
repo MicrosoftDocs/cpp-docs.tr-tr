@@ -1,12 +1,9 @@
 ---
-title: "Önemli hata C1197 | Microsoft Docs"
-ms.custom: 
+title: Önemli hata C1197 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C1197
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C1197
 ms.assetid: 22b801b7-e792-41f6-a461-973c03c69f25
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1658e55a9298df703051b856bb9b10dd02d8cc68
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dacd459729161cf635287697a4a6d35c15eab3e4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="fatal-error-c1197"></a>Önemli hata C1197
 program zaten 'mscorlib.dll_2' başvurmuş gibi 'mscorlib.dll_1' başvuramaz.  

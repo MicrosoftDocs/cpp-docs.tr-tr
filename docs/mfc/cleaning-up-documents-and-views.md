@@ -1,13 +1,10 @@
 ---
-title: "Belgeleri ve görünümleri temizleme | Microsoft Docs"
-ms.custom: 
+title: Belgeleri ve görünümleri temizleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - documents [MFC], cleaning up
 - documents [MFC], closing
 ms.assetid: 0c454db2-3644-434d-9e53-8108a7aedfe1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a95193d5ca3df890c9c97f458b76413e588bc59
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2dfe54c13db6f44bc70289380ae5f50d99c3722b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cleaning-up-documents-and-views"></a>Belgeleri ve Görünümleri Temizleme
 Bir belgeyi kapatırken framework önce çağırır kendi [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) üye işlevi. Belgenin işlemi sürecinde yığında belleği ayırdığınızda `DeleteContents` ayırması için en iyi yerdir.  

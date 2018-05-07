@@ -1,12 +1,9 @@
 ---
-title: "Derleyici hataları C3300 C3399 aracılığıyla | Microsoft Docs"
-ms.custom: 
+title: Derleyici hataları C3300 C3399 aracılığıyla | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3300
@@ -109,17 +106,15 @@ helpviewer_keywords:
 dev_langs:
 - C++
 ms.assetid: 190b7d29-ffe6-4261-921d-140da1935d00
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28ddf69b329b7daac2dab9702dd5d11aa665e05e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4c5976e57e0a3b7f51c9df3fbdf3ebebb08dd1b4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-errors-c3300-through-c3399"></a>Derleyici hataları C3300 C3399 aracılığıyla
 

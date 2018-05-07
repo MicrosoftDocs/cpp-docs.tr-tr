@@ -1,13 +1,10 @@
 ---
-title: "MFC ActiveX denetimleri: ActiveX denetiminde veri bağlama işlemini kullanma | Microsoft Docs"
-ms.custom: 
+title: 'MFC ActiveX denetimleri: ActiveX denetiminde veri bağlama işlemini kullanma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - bindable
 - requestedit
@@ -23,24 +20,22 @@ helpviewer_keywords:
 - controls [MFC], data binding
 - bound controls [MFC], MFC ActiveX
 ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 691f832717f5a71c461316b725ee9a69d1350124
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ab5195cc2381e515688182ad73452b07afd06b98
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma
 ActiveX denetimleri daha güçlü kullanımlarını bir veritabanında belirli bir alanla bağlamak için denetimin özelliğini sağlayan veri bağlama biridir. Bir kullanıcı bu bağlı özellik verilerde değişiklik yaptığında denetim veritabanı ve kayıt alanını güncelleştirilmesi istekleri bildirir. Veritabanı ardından Denetim başarı veya hata isteğin bildirir.  
   
  Bu makalede göreviniz denetim tarafında yer almaktadır. Veri bağlama etkileşimleri veritabanı ile uygulama denetimi kapsayıcısı sorumluluğundadır. Kapsayıcı içinde veritabanı etkileşimlerini yönetme bu belgenin kapsamında değildir. Veri bağlama denetimi nasıl hazırlamanız bu makalenin geri kalanında açıklanmıştır.  
   
- ![Veri &#45;kavramsal diyagramı; ilişkili denetim](../mfc/media/vc374v1.gif "vc374v1")  
+ ![Bir veri kavramsal diyagramı&#45;bağlı denetim](../mfc/media/vc374v1.gif "vc374v1")  
 Veri bağlama denetimi kavramsal diyagramı  
   
  `COleControl` Sınıfı, veri uygulamak için kolay bir işlem bağlama olun iki üye işlevleri sağlar. İlk işlev [BoundPropertyRequestEdit](../mfc/reference/colecontrol-class.md#boundpropertyrequestedit), özellik değeri değiştirme izni istemek için kullanılır. [BoundPropertyChanged](../mfc/reference/colecontrol-class.md#boundpropertychanged), ikinci işlev, özellik değeri başarıyla değiştirildikten sonra çağrılır.  
@@ -51,7 +46,7 @@ Veri bağlama denetimi kavramsal diyagramı
   
 -   [Bağlanabilir Get/Set yöntemi oluşturma](#vchowcreatingbindablegetsetmethod)  
   
-##  <a name="vchowcreatingbindablestockproperty"></a>Bağlanabilir stok özellik oluşturma  
+##  <a name="vchowcreatingbindablestockproperty"></a> Bağlanabilir stok özellik oluşturma  
  İsteyeceksiniz daha büyük bir olasılıkla olmasına rağmen bir veriye bağlı stok özellik oluşturmak mümkün bir [bağlanabilirse get/set yöntemi](#vchowcreatingbindablegetsetmethod).  
   
 > [!NOTE]
@@ -79,7 +74,7 @@ Veri bağlama denetimi kavramsal diyagramı
   
  Şimdi denetimi kaydedeceksiniz proje oluşturabilirsiniz. Bir iletişim kutusu denetimi eklediğinizde **veri alanı** ve **veri kaynağı** özellikler eklendi ve artık bir veri kaynağı ve Denetimde görüntülenecek alan seçebilirsiniz.  
   
-##  <a name="vchowcreatingbindablegetsetmethod"></a>Bağlanabilir Get/Set yöntemi oluşturma  
+##  <a name="vchowcreatingbindablegetsetmethod"></a> Bağlanabilir Get/Set yöntemi oluşturma  
  Bir veri yöntemi get/set bağlama ek olarak, ayrıca oluşturabileceğiniz bir [bağlanabilirse stok özellik](#vchowcreatingbindablestockproperty).  
   
 > [!NOTE]

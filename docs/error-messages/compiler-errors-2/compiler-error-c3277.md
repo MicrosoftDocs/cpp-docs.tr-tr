@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3277 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3277 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3277
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3277
 ms.assetid: 8ac5f476-e30c-4879-92c6-f03cdbd74045
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68ff09360a5ea247aae4ca9ad47242b80c194451
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dd38ccc8a4f812a458073c429d83cebe5dff151b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3277"></a>Derleyici Hatası C3277
 Yönetilmeyen enum 'enum' yönetilen 'type' tanımlanamıyor  

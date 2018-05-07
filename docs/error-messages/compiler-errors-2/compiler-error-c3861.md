@@ -3,8 +3,8 @@ title: Derleyici Hatası C3861 | Microsoft Docs
 ms.custom: ''
 ms.date: 03/23/2018
 ms.technology:
-- cpp-tools
-ms.topic: reference
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3861
 dev_langs:
@@ -14,14 +14,13 @@ helpviewer_keywords:
 ms.assetid: 0a1eee30-b3db-41b1-b1e5-35949c3924d7
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: afe6a83e2dad9b836fdd602aca98fb9f20b89a62
-ms.sourcegitcommit: 604907f77eb6c5b1899194a9877726f3e8c2dabc
+ms.openlocfilehash: 6dbfbb11184928331b94b7addc747ffb7e44d6d4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3861"></a>Derleyici Hatası C3861
 

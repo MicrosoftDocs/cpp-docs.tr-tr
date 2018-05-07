@@ -1,13 +1,10 @@
 ---
-title: "Birleşik giriş kutusu işleyicileri | Microsoft Docs"
-ms.custom: 
+title: Birleşik giriş kutusu işleyicileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - ON_CBN_KILLFOCUS
 - ON_CBN_ERRSPACE
@@ -36,17 +33,15 @@ helpviewer_keywords:
 - ON_CBN_SELENDOK
 - ON_CBN_SELCHANGE
 ms.assetid: 7f092412-01b7-4242-95ec-41ba506b9d71
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6a61b1e3570f0e4cb5fea680eb1ff427676ddce
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9e1dcd48bfadcc4ed5a4b64fd0dcdee334c1f1b4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="combo-box-handlers"></a>Birleşik Giriş Kutusu İşleyicileri
 Aşağıdaki harita girişler işlev prototipleri karşılık gelir.  

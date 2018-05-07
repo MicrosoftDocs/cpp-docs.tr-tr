@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 4) C4513 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 4) C4513 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4513
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4513
 ms.assetid: 6877334a-f30a-4184-9483-dac3348737a4
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c07828569b789c6035b5ea28d47d7fd026341026
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 92c3e89204ec30f9c96a5ea03ede5093dd013d0c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-4-c4513"></a>Derleyici Uyarısı (düzey 4) C4513
 'class': yıkıcı oluşturulamadı  

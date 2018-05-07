@@ -1,27 +1,22 @@
 ---
-title: "Derleyici Uyarısı (düzey 4) C4435 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 4) C4435 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 dev_langs:
 - C++
 ms.assetid: a04524af-2b71-4ff9-9729-d9d1d1904ed7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7136cfb61a7452b7e835030216d08f064874df8b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 72c29bd6d9ffdb4eabb036c61d85a6572cef8fe2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-4-c4435"></a>Derleyici Uyarısı (düzey 4) C4435
 'class1' : /vd2 altındaki nesne düzeni 'class2' sanal tabanı nedeniyle değişecek  
@@ -49,4 +44,4 @@ class B : public virtual A  // C4435
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [vtordisp](../../preprocessor/vtordisp.md)   
- [/VD (yapı yer devre dışı bırak) değiştirmelerini](../../build/reference/vd-disable-construction-displacements.md)
+ [/vd (Yapı Yer Değiştirmelerini Devre Dışı Bırak)](../../build/reference/vd-disable-construction-displacements.md)

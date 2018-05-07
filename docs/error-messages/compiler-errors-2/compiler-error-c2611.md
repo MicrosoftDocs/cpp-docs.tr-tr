@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2611 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2611 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2611
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2611
 ms.assetid: 3f2d5253-f24f-4724-83d0-6b2aa6a4e551
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e079376bcdf77d03e4f6d3ccc2db74d0d292af2e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0ee4215d9407a9dc873c7affdf97e4d16c55ec2a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2611"></a>Derleyici Hatası C2611
 'belirteci': Geçersiz aşağıdaki ' ~' (beklenen tanımlayıcısı)  

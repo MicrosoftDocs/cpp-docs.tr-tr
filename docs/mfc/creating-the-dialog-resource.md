@@ -1,13 +1,10 @@
 ---
-title: "İletişim kaynağını oluşturma | Microsoft Docs"
-ms.custom: 
+title: İletişim kaynağını oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - resources [MFC], creating dialog boxes
 - MFC dialog boxes [MFC], dialog resource
 ms.assetid: 0b83bd33-14d3-4611-8129-fccdae18053e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c94bd3a31d74f2870ae2016bf734739da212c3e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 31011c9fffc87aa6bdac410009ad6170ad75eb5b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-the-dialog-resource"></a>İletişim Kaynağını Oluşturma
 Tasarım [iletişim kutusu](../mfc/dialog-boxes.md) ve iletişim kaynağını oluşturma, kullandığınız [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md). İletişim kutusu Düzenleyicisi'nde, şunları yapabilirsiniz:  

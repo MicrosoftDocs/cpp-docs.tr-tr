@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C3030 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3030 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3030
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3030
 ms.assetid: de92fd7e-29ba-46e8-b43b-f4b985cd74de
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f443b29e1d7fb8b2913b088bee08fa90b00d0d38
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 97e49f413b850237998c9427be7982b36ec4146c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3030"></a>Derleyici Hatası C3030
 'var': 'azaltma' yan tümcesi/yönergesi değişkeninde başvuru türüne sahip olamaz  

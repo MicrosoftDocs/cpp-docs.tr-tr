@@ -1,12 +1,9 @@
 ---
-title: "Bağlayıcı araçları uyarısı LNK4098 | Microsoft Docs"
-ms.custom: 
+title: Bağlayıcı araçları uyarısı LNK4098 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - LNK4098
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - LNK4098
 ms.assetid: 1f1b1408-1316-4e34-80f5-6a02f2db0ac1
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b199c19417d7d3be866109fff7361fb4ead959d2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8aadf25d968d6d457f891cab49a43591455b9d12
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="linker-tools-warning-lnk4098"></a>Bağlayıcı Araçları Uyarısı LNK4098
 DEFAULTLIB 'Kitaplığı' çakışıyor diğer kitaplıklar kullanın; /NODEFAULTLIB:library kullanın  

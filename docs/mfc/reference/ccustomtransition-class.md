@@ -1,12 +1,9 @@
 ---
-title: "CCustomTransition sınıfı | Microsoft Docs"
-ms.custom: 
+title: CCustomTransition sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CCustomTransition
@@ -33,17 +30,15 @@ helpviewer_keywords:
 - CCustomTransition [MFC], m_initialVelocity
 - CCustomTransition [MFC], m_pInterpolator
 ms.assetid: 5bd3f492-940f-4290-a38b-fa68eb8f8401
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b94fd32bd00a484c5f8e3ba9e86efc5a9637e4e2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 89c3ec260fad8b0e2f8224c639aa745a9101e8b7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ccustomtransition-class"></a>CCustomTransition sınıfı
 Özel bir geçiş uygular.  
@@ -93,7 +88,7 @@ class CCustomTransition : public CBaseTransition;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxanimationcontroller.h  
   
-##  <a name="ccustomtransition"></a>CCustomTransition::CCustomTransition  
+##  <a name="ccustomtransition"></a>  CCustomTransition::CCustomTransition  
  Bir özel geçiş nesnesi oluşturur.  
   
 ```  
@@ -104,7 +99,7 @@ CCustomTransition(CCustomInterpolator* pInterpolator);
  `pInterpolator`  
  Özel bir ara gösteren bir işaretçi.  
   
-##  <a name="create"></a>CCustomTransition::Create  
+##  <a name="create"></a>  CCustomTransition::Create  
  Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.  
   
 ```  
@@ -122,42 +117,42 @@ virtual BOOL Create(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, ilk değer ve bu geçiş ile ilişkili bir animasyon değişkeni uygulanacak ilk hız de ayarlayabilirsiniz. Bu amaçla framework (CAnimationController::AnimateGroup çağırdığınızda gerçekleşir) kapsüllenmiş geçiş COM nesnesi oluşturmadan önce SetInitialValue ve SetInitialVelocity çağırması gerekir.  
   
-##  <a name="m_binitialvaluespecified"></a>CCustomTransition::m_bInitialValueSpecified  
+##  <a name="m_binitialvaluespecified"></a>  CCustomTransition::m_bInitialValueSpecified  
  İlk değer SetInitialValue ile belirtilen olup olmadığını belirtir.  
   
 ```  
 BOOL m_bInitialValueSpecified;  
 ```  
   
-##  <a name="m_binitialvelocityspecified"></a>CCustomTransition::m_bInitialVelocitySpecified  
+##  <a name="m_binitialvelocityspecified"></a>  CCustomTransition::m_bInitialVelocitySpecified  
  İlk hız SetInitialVelocity ile belirtilmiş olup olmadığını belirtir.  
   
 ```  
 BOOL m_bInitialVelocitySpecified;  
 ```  
   
-##  <a name="m_initialvalue"></a>CCustomTransition::m_initialValue  
+##  <a name="m_initialvalue"></a>  CCustomTransition::m_initialValue  
  İlk değerini depolar.  
   
 ```  
 DOUBLE m_initialValue;  
 ```  
   
-##  <a name="m_initialvelocity"></a>CCustomTransition::m_initialVelocity  
+##  <a name="m_initialvelocity"></a>  CCustomTransition::m_initialVelocity  
  İlk hız depolar.  
   
 ```  
 DOUBLE m_initialVelocity;  
 ```  
   
-##  <a name="m_pinterpolator"></a>CCustomTransition::m_pInterpolator  
+##  <a name="m_pinterpolator"></a>  CCustomTransition::m_pInterpolator  
  Özel bir ara gösteren bir işaretçi depolar.  
   
 ```  
 CCustomInterpolator* m_pInterpolator;  
 ```  
   
-##  <a name="setinitialvalue"></a>CCustomTransition::SetInitialValue  
+##  <a name="setinitialvalue"></a>  CCustomTransition::SetInitialValue  
  Bu geçiş ile ilişkili bir animasyon değişkeni uygulanacak bir başlangıç değeri ayarlar.  
   
 ```  
@@ -167,7 +162,7 @@ void SetInitialValue(DOUBLE initialValue);
 ### <a name="parameters"></a>Parametreler  
  `initialValue`  
   
-##  <a name="setinitialvelocity"></a>CCustomTransition::SetInitialVelocity  
+##  <a name="setinitialvelocity"></a>  CCustomTransition::SetInitialVelocity  
  Bu geçiş ile ilişkili bir animasyon değişkeni uygulanacak bir ilk hız ayarlar.  
   
 ```  

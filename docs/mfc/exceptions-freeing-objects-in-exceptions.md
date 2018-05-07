@@ -1,13 +1,10 @@
 ---
-title: "Özel durumlar: Özel durumlarda nesneleri serbest bırakma | Microsoft Docs"
-ms.custom: 
+title: 'Özel durumlar: Özel durumlarda nesneleri serbest bırakma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - throwing exceptions [MFC], after destroying
 - exception handling [MFC], destroying objects
 ms.assetid: 3b14b4ee-e789-4ed2-b8e3-984950441d97
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a422347e319fabbd91f20e0ebf7897865f1ca4c7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 21a63a55103cbefda2ba501c5609b772b2203166
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="exceptions-freeing-objects-in-exceptions"></a>Özel Durumlar: Özel Durumlarda Nesneleri Serbest Bırakma
 Bu makalede, gereken ve bir özel durum oluştuğunda nesneleri serbest bırakma yöntemi açıklanmaktadır. Konular şunlardır:  
@@ -53,14 +48,14 @@ Bu makalede, gereken ve bir özel durum oluştuğunda nesneleri serbest bırakma
   
  Yukarıda yazıldığı şekilde `myPerson` tarafından bir özel durum oluşursa silinmez `SomeFunc`. Yürütme normal işlevi çıkış ve nesneyi siler kodu atlayarak doğrudan sonraki dış özel durum işleyici için atlar. Nesne işaretçisine kapsamının dışına işlev özel durum bırakır ve program çalışmadığı sürece nesnenin kapladığı bellek hiçbir zaman kurtarılacak gerekmesi. Bellek sızıntısı budur; Bellek Tanılama'yı kullanarak algılanabilmesi.  
   
-##  <a name="_core_handling_the_exception_locally"></a>Yerel olarak özel durum işleme  
+##  <a name="_core_handling_the_exception_locally"></a> Yerel olarak özel durum işleme  
  **Try/catch** kip bellek sızıntılarını önleme ve özel durumları oluştuğunda nesnelerinizi yok sağlayarak bir savunma programlama yöntem sunar. Örneğin, bu makalenin önceki bölümlerinde gösterilen örnek gibi yazılması:  
   
  [!code-cpp[NVC_MFCExceptions#15](../mfc/codesnippet/cpp/exceptions-freeing-objects-in-exceptions_2.cpp)]  
   
  Bu yeni örnek özel durumu yakalayın ve yerel olarak işlemek için bir özel durum işleyici ayarlar. İşlev normal olarak çıkar ve nesnesini yok eder. Önemli Bu örnek özel durumu yakalamak için bir bağlam ile kurulur yönüdür **try/catch** engeller. Yerel özel durum çerçeve işlev hiçbir zaman bir özel durum ve normalde çıkmak ve nesne yok etmek için Fırsat sahip olmaz anlarsınız.  
   
-##  <a name="_core_throwing_exceptions_after_destroying_objects"></a>Nesneleri yok etme sonra özel durumları atma  
+##  <a name="_core_throwing_exceptions_after_destroying_objects"></a> Nesneleri yok etme sonra özel durumları atma  
  Özel durumları işlemek için başka bir yolu, bunları açın sonraki dış özel durum işleme bağlam geçirmektir. İçinde **catch** bloğu, yerel olarak ayrılmış nesnelerinin bazı temizleme yapın ve ardından başka bir işleme için özel durum.  
   
  Oluşturma işlevi olabilir veya yığın nesneleri serbest bırakma gerek kalmaz. Her zaman işlevi normal durumda döndürmeden önce yığın nesnesi kaldırır, ardından işlevi de yığın nesnesi özel durum atma önce ayırması. İşlev normalde nesne normal durumda döndürmeden önce ayırması değil, diğer yandan, ardından, bir olay temelinde yığın nesnesi serbest olup olmadığını karar vermeniz gerekir.  

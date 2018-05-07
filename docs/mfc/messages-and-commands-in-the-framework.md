@@ -1,13 +1,10 @@
 ---
-title: "İletiler ve komutlar Framework'te | Microsoft Docs"
-ms.custom: 
+title: İletiler ve komutlar Framework'te | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - events [MFC], event-driven programming
 - message-driven programming [MFC]
 ms.assetid: d799ed8c-6a9f-4f05-be5d-29cb5bc6d185
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 390f094b05994dcf2b3b2351a24f163b06554f84
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 07f38fd833f6efe66dac23e25fe4a10fd5a6ca8d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="messages-and-commands-in-the-framework"></a>Framework'teki İletiler ve Komutlar
 Microsoft Windows "ileti güdümlü." için yazılmış uygulamalar Fare tıklamaları, tuş vuruşları, pencere hareketleri vb. gibi olaylara yanıt olarak, Windows uygun pencere iletileri gönderir. Framework uygulamalarını Windows için başka bir uygulama gibi Windows iletilerini işleme. Ancak framework de daha kolay, daha rahat ve daha iyi iletilerini işleme kapsüllenmiş olun bazı geliştirmeler içerir.  

@@ -1,13 +1,10 @@
 ---
-title: "Uygulama Arabirimi Sihirbazı | Microsoft Docs"
-ms.custom: 
+title: Uygulama Arabirimi Sihirbazı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.impl.interface.overview
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - Implement Interface Wizard [C++]
 ms.assetid: 947c329e-0815-4ca7-835e-c41dfeb75f9e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d224546eb8bb06421c2e84206e1f4d4dc77f9668
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bf2ddf83b7a03f8d4e01b61f82e46e0d26a5547b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="implement-interface-wizard"></a>Arabirim Uygulama Sihirbazı
 Bu sihirbaz bir COM nesnesi için bir arabirimi uygular. Birçok arabirimleri uygulamalarını Visual Studio ve Windows ile kullanılabilir COM kitaplıkları dahil edilmiştir. Söz konusu nesne örneği oluşturulduğunda ve nesne sunar hizmetleri sağlayan bir arabirim uygulamasına sahip bir nesne ilişkilidir.  
@@ -37,7 +32,7 @@ Bu sihirbaz bir COM nesnesi için bir arabirimi uygular. Birçok arabirimleri uy
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|**Proje**|Tür kitaplığı projesinin bir parçasıdır.|  
+|**Project**|Tür kitaplığı projesinin bir parçasıdır.|  
 |**Kayıt defteri**|Tür kitaplığı sistemde kayıtlı değil. Kayıtlı tür kitaplıklarına içinde listelenen **kullanılabilir tür kitaplıklarının**.|  
 |**Dosya**|Tür kitaplığı mutlaka sistemde kayıtlı değil ancak bir dosyada yer alan. Dosya konumu sağlamalısınız **konumu**.|  
   

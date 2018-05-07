@@ -1,13 +1,10 @@
 ---
 title: "Özel durumlar: Sürüm 3. 0'da özel durum makrolarındaki değişiklikler | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - exceptions [MFC], what's changed
 - THROW_LAST macro [MFC]
 ms.assetid: 3aa20d8c-229e-449c-995c-ab879eac84bc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 073715c72dfad83490b377b5d55e1169297be1ef
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 92d1691f9a61a11dc4d9dfe7e869ccb7899746bc
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="exceptions-changes-to-exception-macros-in-version-30"></a>Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler
 Bu gelişmiş bir konudur.  
@@ -50,7 +45,7 @@ Bu gelişmiş bir konudur.
   
  [!code-cpp[NVC_MFCExceptions#19](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_2.cpp)]  
   
- olarak oluşturulan bir **CException\***rağmen olarak oluşturulan bir **CCustomException**. **CATCH** makrosu MFC sürüm 2.5 ve önceki kullanır `CObject::IsKindOf` çalışma zamanında tür test etmek için. Çünkü ifade  
+ olarak oluşturulan bir **CException\*** rağmen olarak oluşturulan bir **CCustomException**. **CATCH** makrosu MFC sürüm 2.5 ve önceki kullanır `CObject::IsKindOf` çalışma zamanında tür test etmek için. Çünkü ifade  
   
  [!code-cpp[NVC_MFCExceptions#20](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_3.cpp)]  
   

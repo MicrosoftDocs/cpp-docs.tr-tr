@@ -1,29 +1,24 @@
 ---
-title: "Makrolar ve İşlevler DLL'leri yönetme | Microsoft Docs"
-ms.custom: 
+title: Makrolar ve İşlevler DLL'leri yönetme | Microsoft Docs
+ms.custom: ''
 ms.date: 04/03/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - module macros in MFC
 ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 535045d715651d6393227457068a86f240c27dce
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e5e79556bf6e3ae92f7a8d4975dbd30f199e2ca8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>Makrolar ve İşlevler DLL'leri yönetmek için
 
@@ -40,7 +35,7 @@ ms.lasthandoff: 12/21/2017
 |[AfxTermExtensionModule]()#afxtermextensionmodule)|MFC DLL her işlem ayırır olduğunda Temizleme için MFC uzantı DLL'si izin verir.|
 
 
-## <a name="afx_ext_class"></a>AFX_EXT_CLASS
+## <a name="afx_ext_class"></a>  AFX_EXT_CLASS
 [MFC uzantı DLL'leri](../../build/extension-dlls.md) makrosu kullanma **AFX_EXT_CLASS** dışarı aktarmak için sınıfları; sınıflarını içeri aktarmak için makro MFC uzantı DLL'si bağlantı yürütülebilir dosyaları kullanın.  
    
 ### <a name="remarks"></a>Açıklamalar  
@@ -58,9 +53,9 @@ class AFX_EXT_CLASS CMyClass : public CDocument
  Daha fazla bilgi için bkz: [dışarı ve içeri aktarma AFX_EXT_CLASS kullanarak](../../build/exporting-and-importing-using-afx-ext-class.md).  
    
 ### <a name="requirements"></a>Gereksinimler  
- Başlık: **afxv_**dll.h  
+ Başlık: **afxv_** dll.h  
    
-## <a name="afx_manage_state"></a>AFX_MANAGE_STATE
+## <a name="afx_manage_state"></a>  AFX_MANAGE_STATE
 DLL'den dışarı aktarılan bir işlevinde korumak için bu makrosu çağırın.  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -89,7 +84,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ));
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [AfxGetStaticModuleState](#afxgetstaticmodulestate)
 
-## <a name="a-nameafxoleinitmodulea-afxoleinitmodule"></a><a name="afxoleinitmodule"><a/>AfxOleInitModule
+## <a name="a-nameafxoleinitmodulea-afxoleinitmodule"></a><a name="afxoleinitmodule"><a/> AfxOleInitModule
 Dinamik olarak MFC'ye bağlı normal bir MFC DLL gelen OLE desteği için bu işlev, Normal MFC DLL içinde çağrı `CWinApp::InitInstance` işlevi MFC OLE DLL başlatılamadı.  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -98,7 +93,7 @@ void AFXAPI AfxOleInitModule( );
 ```  
    
 ### <a name="remarks"></a>Açıklamalar  
- MFC OLE MFC uzantı DLL'si DLL'dir; MFC uzantı DLL'si sipariş içine kablolu için de bir **CDynLinkLibrary** zinciri, onu oluşturmanız gerekir bir **CDynLinkLibrary** kullanarak her bir modüle bağlamda nesnesi. `AfxOleInitModule`oluşturur **CDynLinkLibrary** içine kablolu böylece Normal MFC DLL bağlamda nesne **CDynLinkLibrary** nesne Normal MFC DLL zinciri.  
+ MFC OLE MFC uzantı DLL'si DLL'dir; MFC uzantı DLL'si sipariş içine kablolu için de bir **CDynLinkLibrary** zinciri, onu oluşturmanız gerekir bir **CDynLinkLibrary** kullanarak her bir modüle bağlamda nesnesi. `AfxOleInitModule` oluşturur **CDynLinkLibrary** içine kablolu böylece Normal MFC DLL bağlamda nesne **CDynLinkLibrary** nesne Normal MFC DLL zinciri.  
   
  OLE denetim oluşturma ve kullanıyorsanız `COleControlModule`, değil çağırmalıdır **AfxOleInitModule** çünkü `InitInstance` üye işlevi için `COleControlModule` çağrıları `AfxOleInitModule`.  
    
@@ -109,7 +104,7 @@ void AFXAPI AfxOleInitModule( );
  [Makroları ve genel öğeleri](mfc-macros-and-globals.md)   
  [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)
 
-## <a name="afxnetinitmodule"></a>AfxNetInitModule
+## <a name="afxnetinitmodule"></a>  AfxNetInitModule
 Dinamik olarak MFC'ye bağlı normal bir MFC DLL gelen MFC yuva desteklemek için bu işlevi çağrısı, Normal MFC DLL içinde eklemek **CWinApp::InitInstance** işlevi MFC yuva DLL başlatılamadı.  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -118,7 +113,7 @@ void AFXAPI AfxNetInitModule( );
 ```  
    
 ### <a name="remarks"></a>Açıklamalar  
- MFC yuva MFC uzantı DLL'si DLL'dir; MFC uzantı DLL'si sipariş içine kablolu için de bir **CDynLinkLibrary** zinciri, onu oluşturmanız gerekir bir **CDynLinkLibrary** kullanarak her bir modüle bağlamda nesnesi. `AfxNetInitModule`oluşturur **CDynLinkLibrary** içine kablolu böylece Normal MFC DLL bağlamda nesne **CDynLinkLibrary** nesne Normal MFC DLL zinciri.  
+ MFC yuva MFC uzantı DLL'si DLL'dir; MFC uzantı DLL'si sipariş içine kablolu için de bir **CDynLinkLibrary** zinciri, onu oluşturmanız gerekir bir **CDynLinkLibrary** kullanarak her bir modüle bağlamda nesnesi. `AfxNetInitModule` oluşturur **CDynLinkLibrary** içine kablolu böylece Normal MFC DLL bağlamda nesne **CDynLinkLibrary** nesne Normal MFC DLL zinciri.  
    
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** < afxdll_.h >  
@@ -127,7 +122,7 @@ void AFXAPI AfxNetInitModule( );
  [Makroları ve genel öğeleri](mfc-macros-and-globals.md)   
  [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)
 
-## <a name="afxgetambientactctx"></a>AfxGetAmbientActCtx
+## <a name="afxgetambientactctx"></a> AfxGetAmbientActCtx
 MFC WinSxS davranışını etkileyen modül başına durumu bayrağı geçerli durumunu almak için bu işlevi kullanın.  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -154,7 +149,7 @@ BOOL AFXAPI AfxGetAmbientActCtx();
  [MFC modüllerinin durum verisini yönetme](../managing-the-state-data-of-mfc-modules.md)   
  [AfxSetAmbientActCtx](#setambientactctx)
  
-## <a name="afxgetstaticmodulestate"></a>AfxGetStaticModuleState
+## <a name="afxgetstaticmodulestate"></a> AfxGetStaticModuleState
 Modül durumu başlatmadan önce ayarlamak için ve/veya önceki Modül durumu temizleme sonrasında geri yüklemek için bu işlevini çağırın.  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -183,7 +178,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ));
  **Başlık:** afxstat_.h  
    
 
-## <a name="afxinitextensionmodule"></a>AfxInitExtensionModule
+## <a name="afxinitextensionmodule"></a> AfxInitExtensionModule
 Bir MFC uzantı DLL'in bu işlevi çağırmak `DllMain` DLL başlatılamadı.  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -221,7 +216,7 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 
 ```
   
- `AfxInitExtensionModule`DLL'in bir kopyasını oluşturur **hModule'ü** ve DLL'nin çalışma zamanı-sınıfları yakalar (`CRuntimeClass` yapıları) yanı sıra kendi nesne oluşturucuları (`COleObjectFactory` nesneleri) kullanmak için sonraki olduğunda **CDynLinkLibrary**nesnesi oluşturulur.    
+ `AfxInitExtensionModule` DLL'in bir kopyasını oluşturur **hModule'ü** ve DLL'nin çalışma zamanı-sınıfları yakalar (`CRuntimeClass` yapıları) yanı sıra kendi nesne oluşturucuları (`COleObjectFactory` nesneleri) kullanmak için sonraki olduğunda **CDynLinkLibrary**nesnesi oluşturulur.    
  MFC uzantı DLL'leri iki şeyler gerek kendi `DllMain` işlevi:    
 -   Çağrı [AfxInitExtensionModule](#_mfc_afxinitextensionmodule) ve dönüş değerini denetleyin.   
 -   Oluşturma bir **CDynLinkLibrary** DLL verme durumunda nesne [CRuntimeClass yapısı](cruntimeclass-structure.md) nesneleri veya kendi özel kaynaklar içeriyor.    
@@ -234,7 +229,7 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
  [Makroları ve genel öğeleri](mfc-macros-and-globals.md)   
  [AfxTermExtensionModule](#afxtermextensionmodule)
 
- ## <a name="afxsetambientactctx"></a>AfxSetAmbientActCtx
+ ## <a name="afxsetambientactctx"></a>  AfxSetAmbientActCtx
 MFC WinSxS davranışını etkileyen modül başına durumu bayrağı ayarlamak için bu işlevi kullanın.  
    
 ### <a name="syntax"></a>Sözdizimi  
@@ -268,7 +263,7 @@ BOOL CMFCListViewApp::InitInstance()
  [AFX_MANAGE_STATE](#afx_manage_state)   
  [MFC Modüllerinin Durum Verisini Yönetme](../managing-the-state-data-of-mfc-modules.md) 
 
-## <a name="afxtermextensionmodule"></a>AfxTermExtensionModule
+## <a name="afxtermextensionmodule"></a>  AfxTermExtensionModule
 
 Her işlem DLL'den ayırır olduğunda MFC Temizleme için MFC uzantı DLL'si izin verir. Bu işlev çağrısı (işlem çıktığında ya da DLL sonucu olarak kaldırıldığında gerçekleşir bir `AfxFreeLibrary` çağrısı).  
    
@@ -284,7 +279,7 @@ void AFXAPI AfxTermExtensionModule(  AFX_EXTENSION_MODULE& state,  BOOL bAll  = 
  Varsa **doğru**, Temizle tüm MFC uzantı DLL modülleri. Aksi takdirde temizleme yalnızca geçerli DLL modülü.  
    
 ### <a name="remarks"></a>Açıklamalar  
- `AfxTermExtensionModule`işlem modülü bağlı herhangi bir yerel depolama silecek ve herhangi bir giriş ileti eşlemesi önbelleğinden kaldırın. Örneğin:  
+ `AfxTermExtensionModule` işlem modülü bağlı herhangi bir yerel depolama silecek ve herhangi bir giriş ileti eşlemesi önbelleğinden kaldırın. Örneğin:  
   
 ```cpp
 static AFX_EXTENSION_MODULE NVC_MFC_DLLDLL = { NULL, NULL };

@@ -1,13 +1,10 @@
 ---
-title: "Internet İstemci sınıfları için Önkoşullar | Microsoft Docs"
-ms.custom: 
+title: Internet İstemci sınıfları için Önkoşullar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - prerequisites, Internet client classes [MFC]
 - Gopher client applications [MFC]
 ms.assetid: c51d1dfe-260c-4228-8100-e4efd90e9599
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77d73ef71854753ffd561053cc71509c7654d33b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b6c16c3658ee5d27def4892997c50115dc0b8831
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="prerequisites-for-internet-client-classes"></a>Internet İstemci Sınıfları için Önkoşullar
 (Örneğin bir dosya okuma) bir Internet istemcisi tarafından yapılan bazı eylemler önkoşul eylemleri (bir Internet bağlantısı kurmadan bu durumda,) sahip. Aşağıdaki tablolar, bazı istemci eylemleri için önkoşulları listeler.  

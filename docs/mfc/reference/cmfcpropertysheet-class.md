@@ -1,12 +1,9 @@
 ---
-title: "CMFCPropertySheet sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCPropertySheet sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCPropertySheet
@@ -49,17 +46,15 @@ helpviewer_keywords:
 - CMFCPropertySheet [MFC], SetIconsList
 - CMFCPropertySheet [MFC], SetLook
 ms.assetid: 01d93573-9698-440f-a6a4-5bebbee879dc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2684de5c72dcc755c2a75e2553eed509ce76533
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7b61adc98f6b6e84f5e2ef10f88ae41720e2fbf9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcpropertysheet-class"></a>CMFCPropertySheet sınıfı
 `CMFCPropertySheet` Sınıfı, burada her özellik sayfası belirtilen bir sayfa sekmesi, araç çubuğu düğmesi, ağaç denetim düğümü veya bir liste öğesi tarafından bir özellik sayfası destekler.  
@@ -147,7 +142,7 @@ class CMFCPropertySheet : public CPropertySheet
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxpropertysheet.h  
   
-##  <a name="addpage"></a>CMFCPropertySheet::AddPage  
+##  <a name="addpage"></a>  CMFCPropertySheet::AddPage  
  Bir sayfa özellik sayfasına ekler.  
   
 ```  
@@ -155,7 +150,7 @@ void AddPage(CPropertyPage* pPage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pPage`  
+ [in] `pPage`  
  Bir sayfa nesnesine işaretçi. Bu parametre olamaz `NULL`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -163,7 +158,7 @@ void AddPage(CPropertyPage* pPage);
   
  Özellik sayfasını Microsoft Outlook stilinde ise, framework özellik sayfanın sol tarafında gezinti düğmeleri listesini görüntüler. Bu yöntem bir özellik sayfası ekledikten sonra karşılık gelen bir düğme listesine ekler. Bir özellik sayfasını görüntülemek için karşılık gelen düğmesini tıklatın. Özellik sayfaları stilleri hakkında daha fazla bilgi için bkz: [CMFCPropertySheet::SetLook](#setlook).  
   
-##  <a name="addpagetotree"></a>CMFCPropertySheet::AddPageToTree  
+##  <a name="addpagetotree"></a>  CMFCPropertySheet::AddPageToTree  
  Ağaç denetimi için yeni bir özellik sayfası ekler.  
   
 ```  
@@ -175,22 +170,22 @@ void AddPageToTree(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pCategory`  
+ [in] `pCategory`  
  Bir üst ağaç düğümü işaretçi veya `NULL` belirtilen sayfa üst düzey düğümle ilişkilendirilecek. Çağrı [CMFCPropertySheet::AddTreeCategory](#addtreecategory) Bu işaretçinin elde etmek için yöntemi.  
   
- [in]`pPage`  
+ [in] `pPage`  
  Özellik sayfası nesnesine işaretçi.  
   
- [in]`nIconNum`  
+ [in] `nIconNum`  
  Simge veya hiçbir simge kullanılırsa, -1 sıfır tabanlı dizini. Sayfa seçilmediğinde simgesinin yanında ağaç denetimi özellik sayfası görüntülenir. Varsayılan değer -1'dir.  
   
- [in]`nSelIconNum`  
+ [in] `nSelIconNum`  
  Simge veya hiçbir simge kullanılırsa, -1 sıfır tabanlı dizini. Sayfa seçildiğinde simgesinin yanında ağaç denetimi özellik sayfası görüntülenir. Varsayılan değer -1'dir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, özellik sayfası bir ağaç denetimi yaprak ekler. Özellik sayfası eklemek için oluşturma bir `CMFCPropertySheet` nesne, çağrı [CMFCPropertySheet::SetLook](#setlook) yöntemiyle `look` parametre kümesine `CMFCPropertySheet::PropSheetLook_Tree`ve özellik sayfası eklemek için bu yöntemi kullanın.  
   
-##  <a name="addtreecategory"></a>CMFCPropertySheet::AddTreeCategory  
+##  <a name="addtreecategory"></a>  CMFCPropertySheet::AddTreeCategory  
  Ağaç denetimi için yeni bir düğüm ekler.  
   
 ```  
@@ -202,16 +197,16 @@ CMFCPropertySheetCategoryInfo* AddTreeCategory(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszLabel`  
+ [in] `lpszLabel`  
  Düğümün adı.  
   
- [in]`nIconNum`  
+ [in] `nIconNum`  
  Simge veya hiçbir simge kullanılırsa, -1 sıfır tabanlı dizini. Sayfa seçilmediğinde simgesinin yanında ağaç denetimi özellik sayfası görüntülenir. Varsayılan değer -1'dir.  
   
- [in]`nSelectedIconNum`  
+ [in] `nSelectedIconNum`  
  Simge veya hiçbir simge kullanılırsa, -1 sıfır tabanlı dizini. Sayfa seçildiğinde simgesinin yanında ağaç denetimi özellik sayfası görüntülenir. Varsayılan değer -1'dir.  
   
- [in]`pParentCategory`  
+ [in] `pParentCategory`  
  Bir üst ağaç düğümü işaretçi veya `NULL` belirtilen sayfa üst düzey düğümle ilişkilendirilecek. Bu parametre ile [CMFCPropertySheet::AddTreeCategory](#addtreecategory) yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -222,7 +217,7 @@ CMFCPropertySheetCategoryInfo* AddTreeCategory(
   
  Bu yöntemin dönüş değeri yapılan sonraki çağrılar kullanın [CMFCPropertySheet::AddPageToTree](#addpagetotree) ve [CMFCPropertySheet::AddTreeCategory](#addtreecategory).  
   
-##  <a name="cmfcpropertysheet"></a>CMFCPropertySheet::CMFCPropertySheet  
+##  <a name="cmfcpropertysheet"></a>  CMFCPropertySheet::CMFCPropertySheet  
  Oluşturan bir `CMFCPropertySheet` nesnesi.  
   
 ```  
@@ -238,22 +233,22 @@ CMFCPropertySheet(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pszCaption`  
+ [in] `pszCaption`  
  Özellik sayfası başlığını içeren bir dize. Olamaz `NULL`.  
   
- [in]`nIDCaption`  
+ [in] `nIDCaption`  
  Özellik sayfası başlığını içeren bir kaynak kimliği.  
   
- [in]`pParentWnd`  
+ [in] `pParentWnd`  
  İşaretçi özellik sayfasının üst penceresine veya `NULL` üst pencere uygulamanın ana penceresi ise. Varsayılan değer `NULL` şeklindedir.  
   
- [in]`iSelectPage`  
+ [in] `iSelectPage`  
  Üst özellik sayfasının sıfır tabanlı dizini. Varsayılan değer 0’dır.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Parametreler için daha fazla bilgi için bkz: [CPropertySheet::CPropertySheet](../../mfc/reference/cpropertysheet-class.md#cpropertysheet) Oluşturucusu.  
   
-##  <a name="enablepageheader"></a>CMFCPropertySheet::EnablePageHeader  
+##  <a name="enablepageheader"></a>  CMFCPropertySheet::EnablePageHeader  
  Sayfanın üst kısmındaki bir özel üst bilgi çizmek için her alan ayırır.  
   
 ```  
@@ -261,13 +256,13 @@ void EnablePageHeader(int nHeaderHeight);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nHeaderHeight`  
+ [in] `nHeaderHeight`  
  Üstbilginin piksel cinsinden yüksekliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Değerini kullanacak şekilde `nHeaderHeight` özel bir üstbilgi çizmek için parametre geçersiz kılma [CMFCPropertySheet::OnDrawPageHeader](#ondrawpageheader) yöntemi.  
   
-##  <a name="getheaderheight"></a>CMFCPropertySheet::GetHeaderHeight  
+##  <a name="getheaderheight"></a>  CMFCPropertySheet::GetHeaderHeight  
  Geçerli üstbilgi yüksekliğini alır.  
   
 ```  
@@ -280,7 +275,7 @@ int GetHeaderHeight() const;
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı [CMFCPropertySheet::EnablePageHeader](#enablepageheader) bu yöntemi çağırmadan önce yöntemi.  
   
-##  <a name="getlook"></a>CMFCPropertySheet::GetLook  
+##  <a name="getlook"></a>  CMFCPropertySheet::GetLook  
  Geçerli özellik sayfası görünümünü belirten bir numaralandırma değeri alır.  
   
 ```  
@@ -290,7 +285,7 @@ PropSheetLook GetLook() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Özellik sayfasını görünümünü belirten numaralandırma değerlerinden biri. Olası değerler listesi için bkz: Açıklamalar bölümünde numaralandırması tablosu [CMFCPropertySheet::SetLook](#setlook).  
   
-##  <a name="getnavbarwidth"></a>CMFCPropertySheet::GetNavBarWidth  
+##  <a name="getnavbarwidth"></a>  CMFCPropertySheet::GetNavBarWidth  
  Gezinti çubuğunun genişliğini alır.  
   
 ```  
@@ -300,7 +295,7 @@ int GetNavBarWidth() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Gezinti çubuğu piksel cinsinden genişliği.  
   
-##  <a name="gettab"></a>CMFCPropertySheet::GetTab  
+##  <a name="gettab"></a>  CMFCPropertySheet::GetTab  
  Geçerli özellik sayfası denetimi destekleyen iç sekmesi denetim nesnesi alır.  
   
 ```  
@@ -317,7 +312,7 @@ CMFCTabCtrl& GetTab() const;
   
  Bu yöntem, özellik sayfası denetimi Microsoft OneNote stilde görünmesi ayarlanmamışsa hata ayıklama modunda onaylar.  
   
-##  <a name="initnavigationcontrol"></a>CMFCPropertySheet::InitNavigationControl  
+##  <a name="initnavigationcontrol"></a>  CMFCPropertySheet::InitNavigationControl  
  Geçerli özellik sayfası denetiminin görünümünü başlatır.  
   
 ```  
@@ -330,7 +325,7 @@ virtual CWnd* InitNavigationControl();
 ### <a name="remarks"></a>Açıklamalar  
  Özellik sayfası denetimi sekmeli sayfalar, ağaç denetimi ya da gezinti düğmeleri listesi gibi birkaç farklı form görüntülenebilir. Kullanım [CMFCPropertySheet::SetLook](#setlook) özellik sayfası denetiminin görünümünü belirtmek için yöntem.  
   
-##  <a name="onactivatepage"></a>CMFCPropertySheet::OnActivatePage  
+##  <a name="onactivatepage"></a>  CMFCPropertySheet::OnActivatePage  
  Özellik sayfası etkinleştirildiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -338,13 +333,13 @@ virtual void OnActivatePage(CPropertyPage* pPage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pPage`  
+ [in] `pPage`  
  Etkin özellik sayfasını temsil eden bir özellik sayfası nesnesi işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak etkin özellik sayfası görünüme kaydırılan, bu yöntem sağlar. Geçerli özellik sayfası stili Microsoft Outlook bölmesi içeriyorsa, bu yöntem karşılık gelen bir Outlook düğme checked durumuna ayarlar.  
   
-##  <a name="ondrawpageheader"></a>CMFCPropertySheet::OnDrawPageHeader  
+##  <a name="ondrawpageheader"></a>  CMFCPropertySheet::OnDrawPageHeader  
  Bir özel özellik sayfası için üstbilgi çizmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -355,19 +350,19 @@ virtual void OnDrawPageHeader(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Bir cihaz bağlamı işaretçi.  
   
- [in]`nPage`  
+ [in] `nPage`  
  Sıfır tabanlı özellik sayfa numarası.  
   
- [in]`rectHeader`  
+ [in] `rectHeader`  
  Üstbilgi çizmek konumu belirtir sınırlayıcı dikdörtgenini.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bu yöntem hiçbir şey yapmaz. Bu yöntemi geçersiz kılarsanız, çağrı [CMFCPropertySheet::EnablePageHeader](#enablepageheader) framework bu yöntemi çağırmadan önce yöntemi.  
   
-##  <a name="onremovetreepage"></a>CMFCPropertySheet::OnRemoveTreePage  
+##  <a name="onremovetreepage"></a>  CMFCPropertySheet::OnRemoveTreePage  
  Özellik sayfası ağaç denetiminden kaldırmak için framework tarafından çağrılır.  
   
 ```  
@@ -375,13 +370,13 @@ virtual BOOL OnRemoveTreePage(CPropertyPage* pPage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pPage`  
+ [in] `pPage`  
  Kaldırmak üzere özellik sayfasını temsil eden bir özellik sayfası nesnesi işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
-##  <a name="removecategory"></a>CMFCPropertySheet::RemoveCategory  
+##  <a name="removecategory"></a>  CMFCPropertySheet::RemoveCategory  
  Bir düğüm ağaç denetiminden kaldırır.  
   
 ```  
@@ -389,13 +384,13 @@ void RemoveCategory(CMFCPropertySheetCategoryInfo* pCategory);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pCategory`  
+ [in] `pCategory`  
  İşaretçi kaldırmak için bir kategoriye (düğüm).  
   
 ### <a name="remarks"></a>Açıklamalar  
  Aynı zamanda bir kategori olarak ağaç denetiminden adlandırılır bir düğümünü kaldırmak için bu yöntemi kullanın. Kullanım [CMFCPropertySheet::AddTreeCategory](#addtreecategory) ağaç denetimi için bir düğüm eklemek için yöntem.  
   
-##  <a name="removepage"></a>CMFCPropertySheet::RemovePage  
+##  <a name="removepage"></a>  CMFCPropertySheet::RemovePage  
  Özellik sayfası özellik sayfasından kaldırır.  
   
 ```  
@@ -404,16 +399,16 @@ void RemovePage(int nPage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pPage`  
+ [in] `pPage`  
  Kaldırmak üzere özellik sayfasını temsil eden özellik sayfası nesnesine işaretçi. Olamaz `NULL`.  
   
- [in]`nPage`  
+ [in] `nPage`  
  Sayfanın kaldırmak için sıfır tabanlı dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, belirtilen özellik sayfasını kaldırır ve ilişkili onun penceresi yok eder. Özellik sayfası nesne `pPage` parametresi belirtir değil bozulur kadar [CMFCPropertySheet](../../mfc/reference/cmfcpropertysheet-class.md) penceresi kapatıldığında.  
   
-##  <a name="seticonslist"></a>CMFCPropertySheet::SetIconsList  
+##  <a name="seticonslist"></a>  CMFCPropertySheet::SetIconsList  
  Kullanılan görüntüleri listesini Outlook bölmesi gezinti denetiminde belirtir.  
   
 ```  
@@ -425,16 +420,16 @@ void SetIconsList(HIMAGELIST hIcons);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiImageListResID`  
+ [in] `uiImageListResID`  
  Görüntü listesi kaynak kimliği.  
   
- [in]`cx`  
+ [in] `cx`  
  Görüntü listesinde simgelerin piksel cinsinden genişliği.  
   
- [in]`clrTransparent`  
+ [in] `clrTransparent`  
  Saydam Görüntü rengi. Bu renk olan bölümleri resminin saydam olacaktır. Renk Eflatun, RGB(255,0,255) varsayılan değerdir.  
   
- [in]`hIcons`  
+ [in] `hIcons`  
  Varolan bir görüntü listesi için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -445,7 +440,7 @@ void SetIconsList(HIMAGELIST hIcons);
   
  Bu yöntem destek yöntemleri hakkında daha fazla bilgi için bkz: [CImageList::Create](../../mfc/reference/cimagelist-class.md#create) ve [CImageList::Add](../../mfc/reference/cimagelist-class.md#add). Bir özellik sayfası stilini ayarlama hakkında daha fazla bilgi için bkz: [CMFCPropertySheet::SetLook](#setlook).  
   
-##  <a name="setlook"></a>CMFCPropertySheet::SetLook  
+##  <a name="setlook"></a>  CMFCPropertySheet::SetLook  
  Özellik sayfasını görünümünü belirtir.  
   
 ```  
@@ -455,10 +450,10 @@ void SetLook(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`look`  
+ [in] `look`  
  Özellik sayfasını görünümünü belirten numaralandırma değerlerinden biri. Bir özellik sayfası için varsayılan stili `CMFCPropertySheet::PropSheetLook_Tabs`. Daha fazla bilgi için bu konunun Açıklamalar bölümündeki tabloya bakın.  
   
- [in]`nNavControlWidth`  
+ [in] `nNavControlWidth`  
  Gezinti denetimin piksel cinsinden genişliği. Varsayılan değer 100’dür.  
   
 ### <a name="remarks"></a>Açıklamalar  

@@ -1,29 +1,24 @@
 ---
-title: "Var olan koddan yeni proje ayarı (Visual C++) hata ayıklama | Microsoft Docs"
-ms.custom: 
+title: Var olan koddan yeni proje ayarı (Visual C++) hata ayıklama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.appwiz.importwiz.debugsettings
 dev_langs:
 - C++
 ms.assetid: 607339a8-9d33-458b-8095-dc73f374e29d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec7d357d53cb93ad5ba81c02fc3ccf1931cdd1cf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b40bafe817ebf1dd25cc40115635b895502e0df8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="specify-debug-configuration-settings-create-new-project-from-existing-code-files-wizard"></a>Yapılandırma Ayarlarında Hata Ayıklamayı Belirtme, Varolan Kod Dosyalarından Yeni Proje Oluşturma Sihirbazı
 Hata ayıklama yapılandırması proje ayarları belirtmek için bu sayfayı oluşturmak yeni proje varolan kod dosyaları Sihirbazı kullanın.  

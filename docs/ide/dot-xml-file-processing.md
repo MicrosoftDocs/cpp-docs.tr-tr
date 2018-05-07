@@ -1,29 +1,24 @@
 ---
-title: ". XML dosyasını işleme | Microsoft Docs"
-ms.custom: 
+title: . XML dosyasını işleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - XML documentation, processing XML file
 ms.assetid: e70fdeae-80ac-4872-ab24-771c5635cfbf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b3340df4ef1d36994182e2315c8eb437e76fd4e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1cf6f5660e1aaeaeff4050bb80009eda7d14c3ba
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="xml-file-processing"></a>.Xml Dosyası İşleme
 Derleyici kodunuzda belgeleri oluşturmak için etiketli her yapı için bir kimlik dizesi oluşturur. Daha fazla bilgi için bkz: [önerilen etiketler belge açıklamaları](../ide/recommended-tags-for-documentation-comments-visual-cpp.md). Kimlik dizesi, yapı benzersiz olarak tanımlar. .Xml dosyası işleme programları kimlik dizesi belgelere uygulandığı karşılık gelen .NET Framework meta verileri veya yansıma öğesi tanımlamak için kullanabilirsiniz.  
@@ -61,7 +56,7 @@ Derleyici kodunuzda belgeleri oluşturmak için etiketli her yapı için bir kim
   
     -   ELEMENT_TYPE_PINNED olarak temsil edilir bir ' ^' değiştirilmiş türü aşağıdaki. Visual C++ Derleyici hiçbir zaman bu oluşturur.  
   
-    -   ELEMENT_TYPE_CMOD_REQ olarak temsil edilir bir ' &#124;' ve değiştirilen türü aşağıdaki değiştiricisi sınıfın tam adı. Visual C++ Derleyici hiçbir zaman bu oluşturur.  
+    -   ELEMENT_TYPE_CMOD_REQ olarak temsil edilir bir '&#124;' ve değiştirilen türü aşağıdaki değiştiricisi sınıfın tam adı. Visual C++ Derleyici hiçbir zaman bu oluşturur.  
   
     -   ELEMENT_TYPE_CMOD_OPT olarak temsil edilir bir '!' ve değiştirilen türü aşağıdaki değiştiricisi sınıfın tam adı.  
   

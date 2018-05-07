@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2255 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2255 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2255
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2255
 ms.assetid: 67dc4cb0-de6b-4405-bd64-d47736367a93
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ca5f2a33b07ff0b78f12c20f528f1d9b6c3c20d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 314d53017cf809e0ca38838cdfb3b3bb4b22437c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2255"></a>Derleyici Hatası C2255
 'element': bir sınıf tanımı dışında izin verilmiyor  

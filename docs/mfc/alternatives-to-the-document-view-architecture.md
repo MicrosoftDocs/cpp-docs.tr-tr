@@ -1,13 +1,10 @@
 ---
-title: "Belge görünüm mimarisinin alternatifleri | Microsoft Docs"
-ms.custom: 
+title: Belge görünüm mimarisinin alternatifleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - CDocument class [MFC], space requirements
 - views [MFC], applications without
 ms.assetid: 2c22f352-a137-45ce-9971-c142173496fb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 459383474c9ffed9a7ad6cefe01ea21626cb23b1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 332f84346e6445fdf0550c3ddb142d9582722f0d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="alternatives-to-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Alternatifleri
 MFC uygulamaları, belge/görünüm mimarisinin normalde bilgiler, dosya biçimlerini ve görsel veri kullanıcılarına yönetmek için kullanın. Masaüstü uygulamaları çoğunluğu için belge/görünüm mimarisinin bir uygun ve etkili uygulama mimarisidir. Bu mimari veri görüntüleme ve, çoğu durumda ayıran, uygulamanızı kolaylaştırır ve gereksiz kod azaltır.  

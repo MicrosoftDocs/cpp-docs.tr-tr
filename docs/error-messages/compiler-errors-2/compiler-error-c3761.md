@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3761 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3761 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3761
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3761
 ms.assetid: 0c16f093-7a78-4838-b90b-0c67ef6e9270
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a854ddbd481616e799b6c6df7b814d955faedce
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 327c1526b59f84064c9ba0e444341d8795fb98a7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3761"></a>Derleyici Hatası C3761
 'function': 'retval' yalnızca bir işlevi son bağımsız değişken görünür  

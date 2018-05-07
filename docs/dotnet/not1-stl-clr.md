@@ -1,12 +1,9 @@
 ---
 title: Not1 (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::not1
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - not1 function [STL/CLR]
 ms.assetid: a50cd819-10de-4d81-84da-8a34c5414a43
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: c159c0667cf09d466a50487a0369a724a538676d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1ea947c86569a8725e372a31a9820f68984cfa27
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="not1-stlclr"></a>not1 (STL/CLR)
 Oluşturan bir `unary_negate` bir functor için.  

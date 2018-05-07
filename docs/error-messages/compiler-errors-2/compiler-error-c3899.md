@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3899 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3899 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3899
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3899
 ms.assetid: 14e07e4a-f7a7-4309-baaa-649d69e12e23
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6faa02f969815964a720b8f1084298eeb71227cf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f40f1065514437463be06a89f01e067c4324cd2e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3899"></a>Derleyici Hatası C3899
 'var': l-değeri kullanım initonly veri üyesi doğrudan sınıfı 'sınıfı' paralel bir bölgede içinde izin verilmeyen  

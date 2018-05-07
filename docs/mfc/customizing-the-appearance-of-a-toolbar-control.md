@@ -1,13 +1,10 @@
 ---
-title: "Araç çubuğu denetiminin görünümünü özelleştirme | Microsoft Docs"
-ms.custom: 
+title: Araç çubuğu denetiminin görünümünü özelleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - TBSTYLE_
 dev_langs:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - CToolBarCtrl class [MFC], object styles
 - toolbar controls [MFC], style
 ms.assetid: fd0a73db-7ad1-4fe4-889b-02c3980f49e8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c40b7e055585a11b90c2cec1fefb967b51b35cf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 96ec459e1c956c805991f2e37d22b8260f0ffdf2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="customizing-the-appearance-of-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminin Görünümünü Özelleştirme
 Sınıf `CToolBarCtrl` görünümü (ve bazen davranışı) araç nesnesinin etkileyen birçok stil sağlar. Araç çubuğu nesnesi ayarlayarak değiştirme `dwCtrlStyle` parametresinin `CToolBarCtrl::Create` (veya `CToolBar::CreateEx`) araç çubuğu denetimi ilk oluşturduğunuzda üye işlevi.  
@@ -57,11 +52,11 @@ Sınıf `CToolBarCtrl` görünümü (ve bazen davranışı) araç nesnesinin etk
   
  Kalan stilleri araç çubuğu nesnesi yönlerini görsel ve görsel olmayan etkiler:  
   
--   `TBSTYLE_WRAPABLE`Düğmeleri birden çok satırı olan bir araç çubuğu oluşturur. "Araç aynı satırdaki tüm düğmeleri dahil etmek için çok dar olduğunda araç çubuğu düğmeleri sonraki satıra kayabilir". Kaydırma ayırma ve nongroup sınırları oluşur.  
+-   `TBSTYLE_WRAPABLE` Düğmeleri birden çok satırı olan bir araç çubuğu oluşturur. "Araç aynı satırdaki tüm düğmeleri dahil etmek için çok dar olduğunda araç çubuğu düğmeleri sonraki satıra kayabilir". Kaydırma ayırma ve nongroup sınırları oluşur.  
   
 -   **TBSTYLE_CUSTOMERASE** oluşturur **NM_CUSTOMDRAW** bildirim iletileri bu işlerken `WM_ERASEBKGND` iletileri.  
   
--   `TBSTYLE_TOOLTIPS`Bir uygulama düğmelerinin açıklayıcı metin araç çubuğunda görüntülemek için kullanabileceğiniz bir araç ipucunu denetimini oluşturur.  
+-   `TBSTYLE_TOOLTIPS` Bir uygulama düğmelerinin açıklayıcı metin araç çubuğunda görüntülemek için kullanabileceğiniz bir araç ipucunu denetimini oluşturur.  
   
  Araç çubuğu stilleri ve genişletilmiş stilleri tam bir listesi için bkz: [araç çubuğu denetimi ve düğme stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760439) ve [araç genişletilmiş stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760430) Windows SDK.  
   

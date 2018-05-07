@@ -1,12 +1,9 @@
 ---
-title: "COleLinksDialog sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleLinksDialog sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleLinksDialog
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - COleLinksDialog [MFC], DoModal
 - COleLinksDialog [MFC], m_el
 ms.assetid: fb2eb638-2809-46db-ac74-392a732affc7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b998cc18ac0c357b57bc841f6db13700b078063
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e190c8b8cb11fefccb2847214dcaebf713f35dc4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="colelinksdialog-class"></a>COleLinksDialog sınıfı
 OLE bağlantıları Düzenle iletişim kutusu için kullanılır.  
@@ -90,7 +85,7 @@ class COleLinksDialog : public COleDialog
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxodlgs.h  
   
-##  <a name="domodal"></a>COleLinksDialog::DoModal  
+##  <a name="domodal"></a>  COleLinksDialog::DoModal  
  OLE bağlantıları Düzenle iletişim kutusu görüntüler.  
   
 ```  
@@ -109,7 +104,7 @@ virtual INT_PTR DoModal();
 ### <a name="remarks"></a>Açıklamalar  
  Üyeleri ayarlayarak çeşitli iletişim kutusu denetimleri başlatmak istiyorsanız [m_el](#m_el) yapısı, size bunu çağırmadan önce `DoModal`, ancak iletişim nesnesi oluşturulur.  
   
-##  <a name="colelinksdialog"></a>COleLinksDialog::COleLinksDialog  
+##  <a name="colelinksdialog"></a>  COleLinksDialog::COleLinksDialog  
  Oluşturan bir `COleLinksDialog` nesnesi.  
   
 ```  
@@ -136,7 +131,7 @@ COleLinksDialog (
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev yalnızca oluşturan bir `COleLinksDialog` nesnesi. İletişim kutusunu görüntülemek için arama [DoModal](#domodal) işlevi.  
   
-##  <a name="m_el"></a>COleLinksDialog::m_el  
+##  <a name="m_el"></a>  COleLinksDialog::m_el  
  Türü yapısını **OLEUIEDITLINKS** Bağlantıları Düzenle iletişim kutusu davranışını denetlemek için kullanılır.  
   
 ```  

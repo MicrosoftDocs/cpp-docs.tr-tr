@@ -1,13 +1,10 @@
 ---
 title: Visual C++ projelerinde CMake | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/08/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,14 +12,13 @@ helpviewer_keywords:
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b9f00e511be43e5a6b77abae6394013e4e33a34
-ms.sourcegitcommit: 2cca90d965f76ebf1d741ab901693a15d5b8a4df
+ms.openlocfilehash: f3a65ae6cc58f649fee5f47b33a146263a3b6c55
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmake-projects-in-visual-c"></a>Visual C++ projelerinde CMake
 
@@ -115,7 +111,7 @@ Tüm yürütülebilir CMake hedefleri gösterilen **başlangıç öğesi** açı
 
 Ayrıca, bir hata ayıklama oturumu CMake menülerden başlatabilirsiniz.
 
-Projenizdeki yürütülebilir herhangi CMake hedefi için hata ayıklayıcı ayarları özelleştirmek için belirli CMakeLists.txt dosyasını sağ tıklatın ve seçin **hata ayıklama ve başlatma ayarları**. Alt menüde CMake hedef seçtiğinizde, launch.vs.json adlı bir dosya oluşturulur. Bu dosya, seçtiğiniz CMake hedef hakkındaki bilgilerle önceden doldurulmuştur ve program bağımsız değişken veya hata ayıklayıcı türü gibi ek parametreler belirtmenizi sağlar. Herhangi bir tuşa CMakeSettings.json dosyasına başvurmak için "cmake" ile yazdığınızdan in launch.vs.json. Aşağıdaki örnek çeken bir basit launch.vs.json dosyası şu anda seçili yapılandırma CMakeSettings.json dosyasında "remoteCopySources" anahtar değeri gösterir:
+Projenizdeki yürütülebilir herhangi CMake hedefi için hata ayıklayıcı ayarları özelleştirmek için belirli CMakeLists.txt dosyasını sağ tıklatın ve seçin **hata ayıklama ve başlatma ayarları**. Alt menüde CMake hedef seçtiğinizde, launch.vs.json adlı bir dosya oluşturulur. Bu dosya, seçtiğiniz CMake hedef hakkındaki bilgilerle önceden doldurulmuştur ve program bağımsız değişken veya hata ayıklayıcı türü gibi ek parametreler belirtmenizi sağlar. Herhangi bir tuşa CMakeSettings.json dosyasına başvurmak için "cmake" ile yazdığınızdan Launch.vs.JSON içinde. Aşağıdaki örnek çeken bir basit launch.vs.json dosyası şu anda seçili yapılandırma CMakeSettings.json dosyasında "remoteCopySources" anahtar değeri gösterir:
 
 ```json
 {
@@ -239,7 +235,7 @@ usage: ninja [options] [targets...]
 
 |Seçenek|Açıklama|
 |--------------|------------|
-| --version  | Yazdırma ninja sürümü ("1.7.1")|
+| --Sürüm  | Yazdırma ninja sürümü ("1.7.1")|
 |   -C DIR   | başka bir şey yapmadan önce DIR değiştirme|
 |   -f dosyası  | Giriş derleme dosyası (default=build.ninja) belirtin|
 |   -j N     | N işleri paralel olarak çalıştırma (varsayılan = CPU kullanılabilir türetilmiş 14)|
@@ -249,7 +245,7 @@ usage: ninja [options] [targets...]
 |   -v       | derleme sırasında tüm komut satırları göster|
 |   -d modu  | (kullanım -d listesini modları) hata ayıklamayı etkinleştir|
 |   -t aracı  | subtool (kullanın -t listesini alt araçları) çalıştırın. TopLevel seçenekleri sonlandırır; Daha fazla bayrakları araç geçirilir| 
-|   -w FLAG  | Uyarılar (kullanın -w listesini uyarıları) ayarla|
+|   -w BAYRAĞI  | Uyarılar (kullanın -w listesini uyarıları) ayarla|
 
 ### <a name="inherited-environments-visual-studio-2017-version-155"></a>Devralınan ortamları (Visual Studio 2017 sürüm 15,5)
 CMakeSettings.json artık devralınan ortamları destekler. Bu özellik (1) varsayılan ortamları devralır ve (2) çalıştırıldığında CMake.exe için geçirilen özel ortam değişkenleri oluşturmanıza olanak sağlar.

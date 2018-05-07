@@ -1,9 +1,8 @@
 ---
-title: "Bağlayıcı araçları uyarısı LNK4206 | Microsoft Docs"
+title: Bağlayıcı araçları uyarısı LNK4206 | Microsoft Docs
 ms.date: 12/05/2017
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - LNK4206
@@ -14,14 +13,13 @@ helpviewer_keywords:
 ms.assetid: 6c108e33-00cf-4c5a-830d-d65d470930a7
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd13ac59aefa074db869f0502743c7a49d23082c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f0cb74776f307affb0455d972e27e594e6d06294
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="linker-tools-warning-lnk4206"></a>Bağlayıcı Araçları Uyarısı LNK4206
 

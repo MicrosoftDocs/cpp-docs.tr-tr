@@ -1,12 +1,9 @@
 ---
-title: "COleVariant sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleVariant sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleVariant
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - COleVariant [MFC], GetByteArrayFromVariantArray
 - COleVariant [MFC], SetString
 ms.assetid: e1b5cd4a-b066-4b9b-b48b-6215ed52d998
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c3c9d961c69616df05975f2d484d0bbfd43f514
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6b7f0da1f53bf2c6b0e216195be37746eab9abd1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="colevariant-class"></a>COleVariant sınıfı
 Yalıtan [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) veri türü.  
@@ -77,7 +72,7 @@ class COleVariant : public tagVARIANT
 |[COleVariant::operator LPVARIANT](#operator_lpvariant)|Dönüştüren bir `COleVariant` içine nesne bir `LPVARIANT`.|  
 |[COleVariant::operator =](#operator_eq)|Kopya bir `COleVariant` değeri.|  
 |[COleVariant::operator ==](#operator_eq_eq)|İki karşılaştırır `COleVariant` değerleri.|  
-|[COleVariant::operator &lt; &lt;,&gt;&gt;](#operator_lt_lt__gt_gt)|Çıkış bir `COleVariant` değeri `CArchive` veya `CDumpContext` ve girdi bir `COleVariant` nesnesinin `CArchive`.|  
+|[COleVariant::operator &lt; &lt;, &gt;&gt;](#operator_lt_lt__gt_gt)|Çıkış bir `COleVariant` değeri `CArchive` veya `CDumpContext` ve girdi bir `COleVariant` nesnesinin `CArchive`.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu veri türü OLE Otomasyon kullanılır. Özellikle, [DISPPARAMS](http://msdn.microsoft.com/en-us/a16e5a21-766e-4287-b039-13429aa78f8b) yapısı içeren bir dizi için bir işaretçi **değişken** yapıları. A **DISPPARAMS** yapısı parametrelerini iletmek için kullanılan [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d).  
@@ -99,7 +94,7 @@ class COleVariant : public tagVARIANT
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h  
   
-##  <a name="attach"></a>COleVariant::Attach  
+##  <a name="attach"></a>  COleVariant::Attach  
  Eklemek için bu işlevi çağırmak verilen [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) geçerli nesne `COleVariant` nesne.  
   
 ```  
@@ -115,7 +110,7 @@ void Attach(VARIANT& varSrc);
   
  Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) ve [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) Windows SDK'sı giriş.  
   
-##  <a name="colevariant"></a>COleVariant::COleVariant  
+##  <a name="colevariant"></a>  COleVariant::COleVariant  
  Oluşturan bir `COleVariant` nesnesi.  
   
 ```  
@@ -213,7 +208,7 @@ COleVariant(LPCITEMIDLIST pidl);
   
  Daha fazla bilgi için `SCODE`, bkz: [COM hata kodları yapısı](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK'sındaki.  
   
-##  <a name="changetype"></a>COleVariant::ChangeType  
+##  <a name="changetype"></a>  COleVariant::ChangeType  
  Bu değişken değeri türüne dönüştürür `COleVariant` nesnesi.  
   
 ```  
@@ -230,7 +225,7 @@ void ChangeType(VARTYPE vartype, LPVARIANT pSrc = NULL);
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4), ve [VariantChangeType](http://msdn.microsoft.com/en-us/48a51e32-95d7-4eeb-8106-f5043ffa2fd1) Windows SDK'sı giriş.  
   
-##  <a name="clear"></a>COleVariant::Clear  
+##  <a name="clear"></a>  COleVariant::Clear  
  Temizler **değişken**.  
   
 ```  
@@ -242,7 +237,7 @@ void Clear();
   
  Daha fazla bilgi için bkz: `VARIANT`, `VARTYPE`, ve `VariantClear` Windows SDK'sı giriş.  
   
-##  <a name="detach"></a>COleVariant::Detach  
+##  <a name="detach"></a>  COleVariant::Detach  
  Arka plandaki ayırır [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) bu nesneden `COleVariant` nesnesi.  
   
 ```  
@@ -257,7 +252,7 @@ VARIANT Detach();
   
  Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4), ve [VariantClear](http://msdn.microsoft.com/en-us/28741d81-8404-4f85-95d3-5c209ec13835) Windows SDK'sı giriş.  
   
-##  <a name="getbytearrayfromvariantarray"></a>COleVariant::GetByteArrayFromVariantArray  
+##  <a name="getbytearrayfromvariantarray"></a>  COleVariant::GetByteArrayFromVariantArray  
  Bir bayt dizisi mevcut bir değişken dizisini alır.  
   
 ```  
@@ -268,7 +263,7 @@ void GetByteArrayFromVariantArray(CByteArray& bytes);
  `bytes`  
  Var olan bir başvuru [CLongBinary](../../mfc/reference/cbytearray-class.md) nesnesi.  
   
-##  <a name="operator_lpcvariant"></a>COleVariant::operator LPCVARIANT  
+##  <a name="operator_lpcvariant"></a>  COleVariant::operator LPCVARIANT  
  Bu atama işleci döndüren bir `VARIANT` değeri öğesinden kopyalanır yapısı `COleVariant` nesnesi.  
   
 ```  
@@ -277,7 +272,7 @@ operator LPCVARIANT() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="operator_lpvariant"></a>COleVariant::operator LPVARIANT  
+##  <a name="operator_lpvariant"></a>  COleVariant::operator LPVARIANT  
  Arka plandaki erişmek için bu atama işleci çağrısı `VARIANT` yapısı bu `COleVariant` nesnesi.  
   
 ```  
@@ -289,7 +284,7 @@ operator LPVARIANT();
 > [!CAUTION]
 >  Değer değiştirme **değişken** bu işlev tarafından döndürülen işaretçi tarafından erişilen yapısı, bu değeri değiştirir `COleVariant` nesnesi.  
   
-##  <a name="operator_eq"></a>COleVariant::operator =  
+##  <a name="operator_eq"></a>  COleVariant::operator =  
  Bu aşırı yüklenmiş atama işleçleri kaynak değeri bu kopyalamak `COleVariant` nesnesi.  
   
 ```  
@@ -312,7 +307,7 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
 ### <a name="remarks"></a>Açıklamalar  
  Her işleç kısa bir açıklamasını aşağıdaki gibidir:  
   
-- **işleç = (** *varSrc***)** kopyalar varolan **değişken** veya `COleVariant` bu nesne nesnesine.  
+- **işleç = (** *varSrc ***)** kopyalar varolan **değişken** veya `COleVariant` bu nesne nesnesine.  
   
 - **işleç = (** `pSrc` **)** kopya **değişken** tarafından erişilen nesne `pSrc` bu nesne içinde.  
   
@@ -338,7 +333,7 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
   
  Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) ve [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) Windows SDK'sı giriş.  
   
-##  <a name="operator_eq_eq"></a>COleVariant::operator ==  
+##  <a name="operator_eq_eq"></a>  COleVariant::operator ==  
  Bu işleç iki değişken değerlerini karşılaştırır ve eşit olup olmadıkları sıfır olmayan döndürür; Aksi takdirde 0.  
   
 ```  
@@ -346,7 +341,7 @@ BOOL operator==(const VARIANT& varSrc) const;
 BOOL operator==(LPCVARIANT pSrc) const;
 ```  
   
-##  <a name="operator_lt_lt__gt_gt"></a>COleVariant::operator &lt; &lt;,&gt;&gt;  
+##  <a name="operator_lt_lt__gt_gt"></a>  COleVariant::operator &lt; &lt;, &gt;&gt;  
  Çıkış bir `COleVariant` değeri `CArchive` veya **CdumpContext** ve girdi bir `COleVariant` nesnesinin `CArchive`.  
   
 ```  
@@ -364,9 +359,9 @@ friend CArchive& AFXAPI operator>>(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `COleVariant` Ekleme (  **< \<** ) işleci tanılama dökme ve arşive depolama destekler. Ayıklama (  **>>** ) işleci bir arşiv yüklenmesini destekler.  
+ `COleVariant` Ekleme ( **< \<**) işleci tanılama dökme ve arşive depolama destekler. Ayıklama ( **>>**) işleci bir arşiv yüklenmesini destekler.  
   
-##  <a name="setstring"></a>COleVariant::SetString  
+##  <a name="setstring"></a>  COleVariant::SetString  
  Dize için belirli bir tür ayarlar.  
   
 ```  
@@ -381,7 +376,7 @@ void SetString(LPCTSTR lpszSrc, VARTYPE vtSrc);
  **VARTYPE** yeni `COleVariant` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Parametre `vtSrc` olmalıdır `VT_BSTR` (UNICODE) veya `VT_BSTRT` (ANSI). `SetString`dizeler için varsayılan itibaren ANSI olarak ayarlamak için genellikle kullanılan [COleVariant::COleVariant](#colevariant) bir dize veya dize işaretçi parametresi ve Hayır Oluşturucusu **VARTYPE** Unicode.  
+ Parametre `vtSrc` olmalıdır `VT_BSTR` (UNICODE) veya `VT_BSTRT` (ANSI). `SetString` dizeler için varsayılan itibaren ANSI olarak ayarlamak için genellikle kullanılan [COleVariant::COleVariant](#colevariant) bir dize veya dize işaretçi parametresi ve Hayır Oluşturucusu **VARTYPE** Unicode.  
   
  DAO kayıt kümesinde bir UNICODE olmayan yapı dizeleri ANSI olmasını bekler. Bu nedenle, DAO için işlevleri kullanan `COleVariant` nesneleri, UNICODE kayıt kümesi oluşturuyorsanız değil, kullanmalıdır **COleVariant::COleVariant (** `lpszSrc` **,** `vtSrc` **)**  Oluşturucusu ile form `vtSrc` kümesine `VT_BSTRT` (ANSI) veya kullanın `SetString` ile `vtSrc` kümesine `VT_BSTRT` ANSI dizelerini yapma. Örneğin, `CDaoRecordset` işlevleri [CDaoRecordset::Seek](../../mfc/reference/cdaorecordset-class.md#seek) ve [CDaoRecordset::SetFieldValue](../../mfc/reference/cdaorecordset-class.md#setfieldvalue) kullanmak `COleVariant` parametre olarak nesneleri. DAO kayıt kümesi UNICODE değilse, bu nesnelerin ANSI olması gerekir.  
   

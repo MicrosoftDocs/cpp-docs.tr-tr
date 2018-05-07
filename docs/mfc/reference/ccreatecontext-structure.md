@@ -1,12 +1,9 @@
 ---
-title: "CCreateContext yapısı | Microsoft Docs"
-ms.custom: 
+title: CCreateContext yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CCreateContext
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - CCreateContext structure [MFC]
 ms.assetid: 337a0e44-d910-49a8-afc0-c7207666a9dc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 929ed0971f9b69bf8e98ae247957110e78ac33ba
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: af6e81b9215aa6e7bc9e5f294a1d95aee4b51321
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ccreatecontext-structure"></a>CCreateContext yapısı
 Çerçeve kullanır `CCreateContext` belge ile ilişkili görünümler ve çerçeve pencereleri oluşturduğunda yapısı.  
@@ -37,7 +32,7 @@ struct CCreateContext
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CCreateContext`bir yapıdır ve bir taban sınıfı yok.  
+ `CCreateContext` bir yapıdır ve bir taban sınıfı yok.  
   
  Bir pencere oluşturduğunuzda, bu yapıyı değerleri kendi veri görünümüne bir belge bileşenlerinin bağlanmak için kullanılan bilgiler sağlar. Yalnızca kullanmak zorunda `CCreateContext` bölümleri oluşturma işleminin kılıyorsa.  
   
@@ -45,7 +40,7 @@ struct CCreateContext
   
 |Üye|Tür|İçin nedir|  
 |------------|----------|--------------------|  
-|`m_pNewViewClass`|`CRuntimeClass*`|`CRuntimeClass`Oluşturulacak yeni görünümü.|  
+|`m_pNewViewClass`|`CRuntimeClass*`|`CRuntimeClass` Oluşturulacak yeni görünümü.|  
 |`m_pCurrentDoc`|`CDocument*`|Yeni görünümü ile ilişkilendirilecek mevcut belge.|  
 |`m_pNewDocTemplate`|`CDocTemplate*`|Belge şablonu yeni bir MDI çerçeve penceresi oluşturma ile ilişkilendirilmiş.|  
 |`m_pLastView`|`CView*`|Üzerinde ek görünümler, bölümlendirici pencere görünümleri oluşturma veya bir belge üzerinde ikinci bir görünüm oluşturma gibi Modellenen özgün görüntüleyin.|  
@@ -56,7 +51,7 @@ struct CCreateContext
 > [!NOTE]
 >  Tüm İşaretçiler `CCreateContext` isteğe bağlıdır ve olabilir `NULL` belirtilmemiş ya da bilinmiyor.  
   
- `CCreateContext`altında listelenen üye işlevleri tarafından kullanılan "Ayrıca bkz." Geçersiz kılmadığınız planlıyorsanız, bu işlevler açıklamalarını özel bilgiler için başvurun.  
+ `CCreateContext` altında listelenen üye işlevleri tarafından kullanılan "Ayrıca bkz." Geçersiz kılmadığınız planlıyorsanız, bu işlevler açıklamalarını özel bilgiler için başvurun.  
   
  Birkaç genel kurallar şunlardır:  
   

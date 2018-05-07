@@ -1,12 +1,9 @@
 ---
-title: "Proje derleme hatası PRJ0044 | Microsoft Docs"
-ms.custom: 
+title: Proje derleme hatası PRJ0044 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - PRJ0044
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - PRJ0044
 ms.assetid: 5d78c45a-f9e9-4d2b-a3b6-5a5d1421ab84
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69c2d899bb0459d2743b6e9f0d9b51fd1665e75e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7091025f49343ce0054d6033dc54a3397318b37a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="project-build-error-prj0044"></a>Proje Derleme Hatası PRJ0044
 Özel derleme kural 'dosyası 'dosya' atanmış Kuralı' için 'Ek bağımlılıklar' özelliği geçersiz. Özelliği, '' value' değerlendiren dize' içeriyor.  

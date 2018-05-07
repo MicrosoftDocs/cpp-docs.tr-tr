@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3723 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3723 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3723
@@ -15,22 +12,20 @@ dev_langs:
 helpviewer_keywords:
 - C3723
 ms.assetid: ef0fb1ff-3f9a-4093-a6b6-894d1ab0c4b9
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90dd5820b38dbecc1ced5c1f393c0f1fa1c0a7ff
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b1692ee4fcd2a3ac31350dcacf568cfe132ff028
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3723"></a>Derleyici Hatası C3723
 'function': olay çözümlenemedi  
   
- `function`çağrılacak olay çözümlenemedi.  
+ `function` çağrılacak olay çözümlenemedi.  
   
  Aşağıdaki örnek C3723 oluşturur:  
   
@@ -55,7 +50,7 @@ int main() {
 }  
 ```  
   
- `__hook`ve  `__unhook` /CLR programlama ile uyumlu değil.  += Ve-= işleç kullanın.  
+ `__hook` ve  `__unhook` /CLR programlama ile uyumlu değil.  += Ve-= işleç kullanın.  
   
  Aşağıdaki örnek C3723 oluşturur:  
   

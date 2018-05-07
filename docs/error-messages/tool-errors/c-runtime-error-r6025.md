@@ -1,12 +1,9 @@
 ---
-title: "C çalışma zamanı hatası R6025 | Microsoft Docs"
-ms.custom: 
+title: C çalışma zamanı hatası R6025 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - R6025
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - R6025
 ms.assetid: afa06d98-9c36-445b-b3e7-b6409bc8e779
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfb7413cd6fd8dca976d668763fab678bb5c9ebf
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: abdbdbf918462dfb83eff07190c32af1f1b3d015
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="c-runtime-error-r6025"></a>C çalışma zamanı hatası R6025
 saf sanal işlev çağrısı  

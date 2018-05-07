@@ -1,37 +1,32 @@
 ---
-title: "Pano: Veri kopyalama ve yapıştırma | Microsoft Docs"
-ms.custom: 
+title: 'Pano: Veri kopyalama ve yapıştırma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Clipboard, copying data to
 - Clipboard, pasting
 ms.assetid: 580e10be-241f-4f9f-94cf-8302edc5beef
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d76be3bd3863826391cc812f17dca88cb3a5457
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bdfd43933453e44c49d713a1565ac3f71e019de4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="clipboard-copying-and-pasting-data"></a>Pano: Veri Kopyalama ve Yapıştırma
 Bu konu, kopyalama ve OLE uygulamanızda panodan yapıştırma uygulanması için gerekli en düşük iş açıklar. Okumanız önerilir [veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md) devam etmeden önce konuları.  
   
  Kopyalama veya yapıştırarak uygulamadan önce kopyalama, kesme ve yapıştırma seçenekleri Düzen menüsünde işlemek için işlevleri sağlamanız gerekir.  
   
-##  <a name="_core_copying_or_cutting_data"></a>Kopyalama veya kesme verileri  
+##  <a name="_core_copying_or_cutting_data"></a> Kopyalama veya kesme verileri  
   
 #### <a name="to-copy-data-to-the-clipboard"></a>Verileri panoya kopyalamak için  
   
@@ -47,7 +42,7 @@ Bu konu, kopyalama ve OLE uygulamanızda panodan yapıştırma uygulanması içi
   
  Bu sıranın bir örnek görmek için bkz **OnEditCut** ve **OnEditCopy** işlevlerde MFC OLE örnek programlar [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md). 1. adım zaten eksiksiz olması için bu örnekleri şu anda seçili veri için bir işaretçi korumak unutmayın.  
   
-##  <a name="_core_pasting_data"></a>Veri yapıştırma  
+##  <a name="_core_pasting_data"></a> Veri yapıştırma  
  Veri yapıştırma, verileri uygulamanıza yapıştırma içinde kullanılacak biçimi seçin gerektiğinden kopyalamak daha çok daha karmaşıktır.  
   
 #### <a name="to-paste-data-from-the-clipboard"></a>Pano'dan veri yapıştırmak için  

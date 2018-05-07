@@ -1,12 +1,9 @@
 ---
 title: Vector::operator(stl/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::vector::operator[]
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - operatormember [] [STL/CLR]
 ms.assetid: 379a7029-460d-4de8-918b-c79e3e13b9d4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 4fa87557c7df4560abf77999d414d630de7e6da1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 516b999fd6cc9c38304faf09beb354d846b6ab09
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vectoroperatorstlclr"></a>Vector::operator(stl/CLR)
 Belirtilen konumda bir öğe erişir.  

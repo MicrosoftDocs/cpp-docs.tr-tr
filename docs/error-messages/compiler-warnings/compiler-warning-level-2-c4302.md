@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (Düzey 2) C4302 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (Düzey 2) C4302 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4302
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4302
 ms.assetid: f5e1c939-e134-4cca-ba1e-9b15a81549ae
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b72b6149e1f904bb78d8c4c1f909faf8b9c0efe0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9f9a94e75b0d2ce522c2ec9f45d8a2386e85b136
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-2-c4302"></a>Derleyici Uyarısı (Düzey 2) C4302
 'dönüştürme': gelen 'türü: 1' kesme '2 türü için '  

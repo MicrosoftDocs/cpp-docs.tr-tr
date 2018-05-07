@@ -1,24 +1,22 @@
 ---
-title: "Bağlayıcı özellikleri (Linux C++) | Microsoft Docs"
-ms.custom: 
+title: Bağlayıcı özellikleri (Linux C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 9/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: Linux
+ms.topic: conceptual
 ms.assetid: a0243a94-8164-425b-b2fe-b84ff363d546
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 5396021410ec04baa8eb1218c676919a322ac978
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 9187222d2ced21ece2f183655591c483abc8d500
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="linker-properties-linux-c"></a>Bağlayıcı özellikleri (Linux C++)
 
@@ -49,7 +47,7 @@ Belirli varsayılan kitaplıkları yoksay | Bir veya daha fazla yok saymak için
 Varsayılan kitaplıklar yoksay | Varsayılan kitaplıklar yoksay ve yalnızca belirtilen kitaplıkları explicitely arayın.
 Tanımsız simge başvurularını zorla | Tanımlanmamış bir simge olarak çıktı dosyasında girilecek simgesi zorlar. (- u simgesi--tanımsız simgesi =)
 Kitaplık bağımlılıkları | Bu seçenek bağlayıcı komut satırına eklenecek ek kitaplıklarını belirtme sağlar. Ek Kitaplığı 'lib' ve 'bir' uzantısı ile biten önekli bağlayıcı komut satırının sonuna eklenir.  (-lFILE)
-Ek Bağımlılıklar | Bağlantı komut satırına eklenecek ek öğelerini belirtir.
+{1&gt;Ek Bağımlılıklar&lt;1} | Bağlantı komut satırına eklenecek ek öğelerini belirtir.
 
 ## <a name="debugging"></a>Hata Ayıklama
 

@@ -1,13 +1,10 @@
 ---
-title: "Bir Web tarayıcısı stilinde MFC uygulaması oluşturma | Microsoft Docs"
-ms.custom: 
+title: Bir Web tarayıcısı stilinde MFC uygulaması oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.appwiz.mfcweb.project
 dev_langs:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - Web browsers
 - Web applications [MFC], creating
 ms.assetid: 257f8c03-33c3-428c-832e-0b70aff6168d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7b886f2f1eeed327c2f07f1776777771a5d6ad6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 20c7228b08200466bd62d1cdbbf7e2f66f8efebb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-a-web-browser-style-mfc-application"></a>Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma
 Bir Web tarayıcısı stilinde uygulama bilgileri (örneğin, HTML veya etkin belgeler) Internet veya intranet yanı sıra klasörler yerel dosya sistemi ve ağ üzerinde erişebilir. Uygulamanın görünümü sınıfından türetilen tarafından [CHtmlView](../../mfc/reference/chtmlview-class.md), etkili bir şekilde WebBrowser denetimi ile görünümü sağlayarak uygulama bir Web tarayıcısı olun.  
@@ -52,7 +47,7 @@ Bir Web tarayıcısı stilinde uygulama bilgileri (örneğin, HTML veya etkin be
   
  Çünkü `CHtmlView` yazdırma gibi diğer değil yalnızca Microsoft Web tarayıcısı denetimi desteğini uygulayan [CView](../../mfc/reference/cview-class.md)-türetilmiş sınıfları. Bunun yerine, yazıcı kullanıcı arabirimi ve yazdırma WebBrowser denetimi uygular. Sonuç olarak, `CHtmlView` mu desteklemediğinden Baskı Önizleme ve framework için diğer yazdırma desteği işlevleri sağlamaz: Örneğin, [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting), [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting), ve [CView::OnEndPrinting](../../mfc/reference/cview-class.md#onendprinting), diğer MFC uygulamalarında kullanılabilir olduğu.  
   
- `CHtmlView`Uygulamanızı bir Web veya HTML sayfası üzerine bir görünüm verir Web tarayıcısı denetimi için sarmalayıcı gibi davranır. Bir geçersiz kılma için sihirbazın oluşturduğu [OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) Microsoft Visual C++ Web sitesine gezinme bağlantı sağlama view sınıfında, işlevi:  
+ `CHtmlView` Uygulamanızı bir Web veya HTML sayfası üzerine bir görünüm verir Web tarayıcısı denetimi için sarmalayıcı gibi davranır. Bir geçersiz kılma için sihirbazın oluşturduğu [OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) Microsoft Visual C++ Web sitesine gezinme bağlantı sağlama view sınıfında, işlevi:  
   
 ```  
 void CWebView::OnInitialUpdate()  

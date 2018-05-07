@@ -1,12 +1,9 @@
 ---
 title: _InterlockedAddLargeStatistic | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - _InterlockedAddLargeStatistic
@@ -17,20 +14,18 @@ helpviewer_keywords:
 - _InterlockedAddLargeStatistic intrinsic
 - InterlockedAddLargeStatistic intrinsic
 ms.assetid: 2802e74b-bcee-46e4-b562-894908d44409
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa3a9a88520516051b067d45f4e18a92946c1346
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 602cfb415c17c9e57d9fc1e932777cd1929e5f40
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="interlockedaddlargestatistic"></a>_InterlockedAddLargeStatistic
-**Microsoft Specific**  
+**Microsoft özel**  
   
  İlk işleneni bir 64-bit değeri olduğu ınterlocked ek gerçekleştirir.  
   

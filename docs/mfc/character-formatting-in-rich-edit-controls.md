@@ -1,13 +1,10 @@
 ---
-title: "Zengin düzenleme denetimlerinde karakter biçimlendirme | Microsoft Docs"
-ms.custom: 
+title: Zengin düzenleme denetimlerinde karakter biçimlendirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,22 +12,20 @@ helpviewer_keywords:
 - rich edit controls [MFC], character formatting in
 - CRichEditCtrl class [MFC], character formatting in
 ms.assetid: c80f4305-75ad-45f9-8d17-d83d0fe79be5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93bb2cda113a56276ad54edb5ccdb6c9d430ed06
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c02165635e8715c1fcac28b9fbee72612b72c1f2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="character-formatting-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Karakter Biçimlendirme
 Zengin düzenleme denetimine üye işlevlerini kullanabilirsiniz ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) karakter biçimlendirme ve biçimlendirme bilgilerini almak için. Karakterler için yazı tipi, boyut, renk ve kalın, italik gibi efektler belirtebilirsiniz ve korumalı.  
   
- Karakter kullanarak biçimlendirme uygulayabilirsiniz [SetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#setselectioncharformat) ve [SetWordCharFormat](../mfc/reference/cricheditctrl-class.md#setwordcharformat) üye işlevleri. Seçili metni biçimlendirme geçerli karakteri belirlemek için [GetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#getselectioncharformat) üye işlevi. [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) yapısı karakter özniteliklerini belirtmek için bu üye işlevleri ile kullanılır. Önemli üyelerinden birinde **CHARFORMAT** olan **dwMask**. İçinde `SetSelectionCharFormat` ve `SetWordCharFormat`, **dwMask** bu işlev çağrısı tarafından hangi karakter özniteliklerini ayarlanacağını belirtir. `GetSelectionCharFormat`Raporlar seçim içindeki ilk karakter özniteliklerini; **dwMask** seçimi tutarlı özniteliklerini belirtir.  
+ Karakter kullanarak biçimlendirme uygulayabilirsiniz [SetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#setselectioncharformat) ve [SetWordCharFormat](../mfc/reference/cricheditctrl-class.md#setwordcharformat) üye işlevleri. Seçili metni biçimlendirme geçerli karakteri belirlemek için [GetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#getselectioncharformat) üye işlevi. [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) yapısı karakter özniteliklerini belirtmek için bu üye işlevleri ile kullanılır. Önemli üyelerinden birinde **CHARFORMAT** olan **dwMask**. İçinde `SetSelectionCharFormat` ve `SetWordCharFormat`, **dwMask** bu işlev çağrısı tarafından hangi karakter özniteliklerini ayarlanacağını belirtir. `GetSelectionCharFormat` Raporlar seçim içindeki ilk karakter özniteliklerini; **dwMask** seçimi tutarlı özniteliklerini belirtir.  
   
  Ayrıca almak ve "varsayılan karakter biçimlendirme," ayarlamak için daha sonra eklenen tüm karakterleri uygulanan biçimlendirme olduğu. Örneğin, bir uygulamanın varsayılan karakter kalın biçimlendirme ayarlar ve kullanıcı daha sonra bir karakter türleri, bu kalın karakterdir. Alma ve varsayılan karakter biçimlendirme ayarlamak için kullanın [GetDefaultCharFormat](../mfc/reference/cricheditctrl-class.md#getdefaultcharformat) ve [SetDefaultCharFormat](../mfc/reference/cricheditctrl-class.md#setdefaultcharformat) üye işlevleri.  
   
