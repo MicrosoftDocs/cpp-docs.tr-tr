@@ -1,13 +1,10 @@
 ---
-title: "MFC kitaplık sürümleri | Microsoft Docs"
-ms.custom: 
+title: MFC kitaplık sürümleri | Microsoft Docs
+ms.custom: ''
 ms.date: 1/09/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,14 +17,13 @@ helpviewer_keywords:
 - libraries [MFC], versions
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7641a970c747576fa3cfd8cd1c00602edb3541e2
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 9fb4f73d1a0360ddad3983179415d0f7fc2d3cda
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-library-versions"></a>MFC Kitaplık Sürümleri
 
@@ -129,10 +125,10 @@ MFC DLL'leri sahip *sürüm* ikili uyumluluğu gösteren sayı. Diğer kitaplık
 
 |DLL|Açıklama|
 |---------|-----------------|
-|MFC*version*.DLL|MFC DLL, ANSI veya MBCS yayın sürümü|
-|MFC*version*U.DLL|MFC DLL, Unicode yayın sürümü|
-|MFC*version*D.DLL|MFC DLL, ANSI veya MBCS hata ayıklama sürümü|
-|MFC*version*UD.DLL|MFC DLL, Unicode hata ayıklama sürümü|
+|MFC*sürüm*. DLL|MFC DLL, ANSI veya MBCS yayın sürümü|
+|MFC*sürüm*U.DLL|MFC DLL, Unicode yayın sürümü|
+|MFC*sürüm*D.DLL|MFC DLL, ANSI veya MBCS hata ayıklama sürümü|
+|MFC*sürüm*UD. DLL|MFC DLL, Unicode hata ayıklama sürümü|
 |MFCM*sürüm*. DLL|Windows Forms denetimleri ile MFC DLL ANSI veya MBCS yayın sürümü|
 |MFCM*sürüm*U.DLL|Windows Forms denetimleri, Unicode yayın sürümü ile MFC DLL|
 |MFCM*sürüm*D.DLL|Windows Forms denetimleri ile MFC DLL ANSI veya MBCS hata ayıklama sürümü|

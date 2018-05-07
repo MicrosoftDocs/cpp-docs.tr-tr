@@ -1,13 +1,10 @@
 ---
 title: Uygulama denetimi | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.macros
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - application control [MFC]
 ms.assetid: c1f69f15-e0fe-4515-9f36-d63d31869deb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c055f5489c7b85f5f974256709451426b614db47
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 76d8ec079a7c3534211118e60c1d9d95a3a8510a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="application-control"></a>Uygulama Denetimi
 OLE uygulamaları ve bunların nesneler üzerinde önemli denetim gerektirir. OLE sistem DLL'leri başlatma ve uygulamaları otomatik olarak bırakın, kendi üretim ve nesneleri değiştirilmesini koordine ve benzeri kurabilmesi gerekir. Bu konudaki işlevleri bu gereksinimleri karşılar. OLE sistem DLL'leri tarafından çağrılan ek olarak, bu işlevler, bazen de uygulamalar tarafından çağrılmalıdır. 
@@ -46,7 +41,7 @@ OLE uygulamaları ve bunların nesneler üzerinde önemli denetim gerektirir. OL
 |[AfxOleSetEditMenu](#afxoleseteditmenu)|İçin kullanıcı arabirimi uygulayan *typename* nesne komutu.|  
 
   
-##  <a name="afxolecanexitapp"></a>AfxOleCanExitApp  
+##  <a name="afxolecanexitapp"></a>  AfxOleCanExitApp  
  Uygulama sonlandırabilir olup olmadığını gösterir.  
   
 ```   
@@ -65,7 +60,7 @@ BOOL AFXAPI AfxOleCanExitApp();
 ## <a name="requirements"></a>Gereksinimler  
  **Üstbilgi**: afxdisp.h 
 
-##  <a name="afxolegetmessagefilter"></a>AfxOleGetMessageFilter  
+##  <a name="afxolegetmessagefilter"></a>  AfxOleGetMessageFilter  
  Uygulamanın geçerli ileti filtresini alır.  
   
 ```   
@@ -86,7 +81,7 @@ COleMessageFilter* AFXAPI AfxOleGetMessageFilter();
 ### <a name="requirements"></a>Gereksinimler  
  **Üstbilgi**: afxwin.h 
 
-##  <a name="afxolegetuserctrl"></a>AfxOleGetUserCtrl  
+##  <a name="afxolegetuserctrl"></a>  AfxOleGetUserCtrl  
  Geçerli kullanıcı denetimi bayrağı alır.  
   
 ```   
@@ -102,7 +97,7 @@ BOOL AFXAPI AfxOleGetUserCtrl();
 ### <a name="requirements"></a>Gereksinimler  
  **Üstbilgi**: afxdisp.h
 
-##  <a name="afxolesetuserctrl"></a>AfxOleSetUserCtrl  
+##  <a name="afxolesetuserctrl"></a>  AfxOleSetUserCtrl  
  Başvuru için açıklandığı kullanıcı denetimi bayrağını ayarlar veya temizler `AfxOleGetUserCtrl`.  
   
 ```  
@@ -121,7 +116,7 @@ void AFXAPI AfxOleSetUserCtrl(BOOL bUserCtrl);
 ### <a name="requirements"></a>Gereksinimler  
  **Üstbilgi**: afxdisp.h
 
-##  <a name="afxolelockapp"></a>AfxOleLockApp  
+##  <a name="afxolelockapp"></a>  AfxOleLockApp  
  Framework'ün genel uygulama etkin nesnelerin sayısı sayısını artırır.  
   
 ```   
@@ -141,7 +136,7 @@ void AFXAPI AfxOleLockApp();
 ### <a name="requirements"></a>Gereksinimler  
  **Üstbilgi**: afxdisp.h
 
-##  <a name="afxoleunlockapp"></a>AfxOleUnlockApp  
+##  <a name="afxoleunlockapp"></a>  AfxOleUnlockApp  
  Azaltır framework'ün uygulamadaki etkin nesne sayısı.  
   
 ```   
@@ -196,7 +191,7 @@ AfxOleLockControl(_T("MSCAL.Calendar"));
  [Makroları ve genel öğeleri](mfc-macros-and-globals.md)   
  [AfxOleUnlockControl](#afxoleunlockcontrol)
  
-##  <a name="afxoleregisterserverclass"></a>AfxOleRegisterServerClass  
+##  <a name="afxoleregisterserverclass"></a>  AfxOleRegisterServerClass  
  Bu işlev sunucunuz OLE sistem kayıt defterinde kaydetmenizi sağlar.  
   
 ```   
@@ -226,13 +221,13 @@ BOOL AFXAPI AfxOleRegisterServerClass(
  `nAppType`  
  Alınan bir değer **OLE_APPTYPE** OLE uygulama türünü belirleyen numaralandırması. Olası değerler şunlardır:  
   
-- `OAT_INPLACE_SERVER`Sunucu tam sunucu kullanıcı arabirimi sahiptir.  
+- `OAT_INPLACE_SERVER` Sunucu tam sunucu kullanıcı arabirimi sahiptir.  
   
-- `OAT_SERVER`Sunucusu yalnızca katıştırma destekler.  
+- `OAT_SERVER` Sunucusu yalnızca katıştırma destekler.  
   
-- `OAT_CONTAINER`Kapsayıcı eklerinin bağlantılarını destekler.  
+- `OAT_CONTAINER` Kapsayıcı eklerinin bağlantılarını destekler.  
   
-- `OAT_DISPATCH_OBJECT``IDispatch`-özellikli nesne.  
+- `OAT_DISPATCH_OBJECT` `IDispatch`-özellikli nesne.  
   
  `rglpszRegister`  
  Anahtarları ve anahtarlar için var olan hiçbir değer bulunursa OLE sistem kayıt defterine eklenecek değerleri temsil eden dizeleri işaretçiler dizisi.  
@@ -261,7 +256,7 @@ BOOL AFXAPI AfxOleRegisterServerClass(
 ### <a name="requirements"></a>Gereksinimler  
  **Üstbilgi**: afxdisp.h
 
-##  <a name="afxoleseteditmenu"></a>AfxOleSetEditMenu  
+##  <a name="afxoleseteditmenu"></a>  AfxOleSetEditMenu  
  İçin kullanıcı arabirimi uygulayan *typename* nesne komutu.  
   
 ```   
@@ -306,7 +301,7 @@ void AFXAPI AfxOleSetEditMenu(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
 
-## <a name="afxoleunlockcontrol"></a>AfxOleUnlockControl
+## <a name="afxoleunlockcontrol"></a> AfxOleUnlockControl
 Belirtilen denetiminin üreteci kilidini açar.  
    
 ### <a name="syntax"></a>Sözdizimi  

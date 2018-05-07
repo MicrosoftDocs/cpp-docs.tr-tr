@@ -1,13 +1,10 @@
 ---
-title: "İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştirme | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - MFC Feature Pack, update existing application
 - walkthroughs [MFC], update existing application
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65dea486e80e4f6f1b98dffe6c387f2e530c9ef3
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: a2d55768f423feef3b5093ec0af6365aecfaafee
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştirme
 Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygulamasına değiştirme gösterilir. Visual Studio Office 2007 Şerit ve Windows 7 manzara Şerit destekler. Şerit kullanıcı arabirimi hakkında daha fazla bilgi için bkz: [Şerit](http://go.microsoft.com/fwlink/p/?linkid=129233) MSDN Web sitesinde.  
@@ -40,7 +35,7 @@ Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygul
   
  [Visual C++ Örnekleri](../visual-cpp-samples.md)  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Kılavuzun bu bölümü aşağıdaki bölümleri içerir:  
   
 - [Temel sınıflar değiştirme](#replaceclass)  
@@ -55,7 +50,7 @@ Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygul
   
 - [Uygulama görünümünü ayarlama](#setlook)  
   
-##  <a name="replaceclass"></a>Temel sınıflar değiştirme  
+##  <a name="replaceclass"></a> Temel sınıflar değiştirme  
  Şerit destekleyen bir uygulama menüsüne destekleyen bir uygulama dönüştürmek için uygulama, çerçeve penceresi ve araç sınıfları güncelleştirilmiş temel sınıflarından türetilmesi gerekir. (, Değil özgün karalama örnek değiştirin; bunun yerine, karalama projeyi temizleyin, başka bir dizine kopyalayın ve kopyayı değiştirin, öneririz.)  
   
 #### <a name="to-replace-the-base-classes-in-the-scribble-application"></a>Karalama uygulamasını temel sınıflarda değiştirmek için  
@@ -101,11 +96,11 @@ Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygul
   
 8.  Mainfrm.cpp dosyasında:  
   
-    1.  Değiştir `m_wndToolBar.SetBarStyle` ile`m_wndToolBar.SetPaneStyle`  
+    1.  Değiştir `m_wndToolBar.SetBarStyle` ile `m_wndToolBar.SetPaneStyle`  
   
-    2.  Değiştir `m_wndToolBar.GetBarStyle` ile`m_wndToolBar.GetPaneStyle`  
+    2.  Değiştir `m_wndToolBar.GetBarStyle` ile `m_wndToolBar.GetPaneStyle`  
   
-    3.  Değiştir `DockControlBar(&m_wndToolBar)` ile`DockPane(&m_wndToolBar)`  
+    3.  Değiştir `DockControlBar(&m_wndToolBar)` ile `DockPane(&m_wndToolBar)`  
   
 9. İpframe.cpp dosyasında, aşağıdaki üç kod satırı açıklama.  
   
@@ -130,7 +125,7 @@ Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygul
   
  [[Bölümleri](#top)]  
   
-##  <a name="addbitmap"></a>Bit eşlemler projesine ekleniyor  
+##  <a name="addbitmap"></a> Bit eşlemler projesine ekleniyor  
  Bu kılavuzun sonraki dört adımları bit eşlem kaynakları gerektirir. Çeşitli şekillerde uygun bit eşlemler elde edebilirsiniz:  
   
 -   Kullanım [kaynak düzenleyicileri](../windows/resource-editors.md) kendi bit eşlemler stok için. Veya kaynak düzenleyicileri dahil edilen Taşınabilir Ağ Grafikleri (.png) görüntülerden bit eşlemler derleyecek kullanmayı [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. Bu görüntüleri bulunan `VS2008ImageLibrary` dizin.  
@@ -175,7 +170,7 @@ Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygul
   
  [[Bölümleri](#top)]  
   
-##  <a name="addribbon"></a>Projeye Şerit kaynağı ekleme  
+##  <a name="addribbon"></a> Projeye Şerit kaynağı ekleme  
  Şerit kullanan bir uygulama menüleri kullanan bir uygulamayı dönüştürürken kaldırın veya varolan menüleri devre dışı bırakma gerekmez. Bunun yerine, bir Şerit kaynağı oluşturun, Şerit düğmeleri ekleyin ve ardından yeni düğmeler varolan menü öğeleriyle ilişkilendirmek. Menüleri artık görünür olsa da, iletiler Şerit çubuğundan menülerde yönlendirilir. Ayrıca, menüsü kısayolları çalışmaya devam eder.  
   
  Şerit Şerit sol üst tarafındaki büyük düğme olan uygulama düğmesi ve bir veya daha fazla kategoriye sekmeleri oluşur. Her kategori sekme Şerit düğmeleri ve denetimler için kapsayıcı olarak davranan bir veya daha fazla paneller içerir. Aşağıdaki yordam, bir Şerit kaynak oluşturmak ve uygulama düğmesini özelleştirme gösterilmektedir.  
@@ -226,7 +221,7 @@ Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygul
   
  [[Bölümleri](#top)]  
   
-##  <a name="createinstance"></a>Şerit çubuğu örneği oluşturma  
+##  <a name="createinstance"></a> Şerit çubuğu örneği oluşturma  
  Aşağıdaki adımları uygulamanız başladığında Şerit çubuğu örneği oluşturmayı gösterir. Şerit çubuğu bir uygulama eklemek için mainfrm.h dosya Şerit çubuğunda bildirin. Ardından, mainfrm.cpp dosyasında Şerit kaynağı yüklemek için kod yazma.  
   
 #### <a name="to-create-an-instance-of-the-ribbon-bar"></a>Şerit çubuğundaki bir örneğini oluşturmak için  
@@ -250,7 +245,7 @@ Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygul
   
  [[Bölümleri](#top)]  
   
-##  <a name="addcategory"></a>Şerit kaynağı özelleştirme  
+##  <a name="addcategory"></a> Şerit kaynağı özelleştirme  
  Uygulama düğmesi oluşturduğunuza göre için Şerit öğeleri ekleyebilirsiniz.  
   
 > [!NOTE]
@@ -268,7 +263,7 @@ Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygul
   
  [[Bölümleri](#top)]  
   
-##  <a name="setlook"></a>Uygulama görünümünü ayarlama  
+##  <a name="setlook"></a> Uygulama görünümünü ayarlama  
  A *visual Yöneticisi* bir uygulama için tüm çizim denetleyen genel bir nesnedir. Özgün karalama uygulamasını Office 2000 kullanıcı arabirimi (UI) stili kullandığından, uygulamanın eski moda görünebilir. Bir Office 2007 uygulama benzer şekilde, Office 2007 visual Yöneticisi'ni kullanmak için uygulamayı sıfırlayabilirsiniz.  
   
 #### <a name="to-set-the-look-of-the-application"></a>Uygulama görünümünü ayarlamak için  

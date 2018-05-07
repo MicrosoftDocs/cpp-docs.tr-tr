@@ -1,12 +1,9 @@
 ---
 title: IAccessorImpl::IAccessorImpl | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL.IAccessorImpl.IAccessorImpl
@@ -20,18 +17,16 @@ helpviewer_keywords:
 - IAccessorImpl class, constructor
 - IAccessorImpl constructor
 ms.assetid: be8343f7-c0ab-4537-b099-3d5dca66d607
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3f7284b056fe730ce1840251524016658d66e5d4
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: c565ccd5404154dc9709bceeb5f1f5e98d685e22
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="iaccessorimpliaccessorimpl"></a>IAccessorImpl::IAccessorImpl
 Oluşturucu.  

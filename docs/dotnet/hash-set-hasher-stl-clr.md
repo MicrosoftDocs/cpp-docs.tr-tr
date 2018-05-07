@@ -1,12 +1,9 @@
 ---
 title: hash_set::hasher (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_set::hasher
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - hasher member [STL/CLR]
 ms.assetid: 0fafd645-0bdf-4d4c-8630-c536fbc4bd2c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 21bc7b18a375435989a3ac4b612f123cf6e473d3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e8f51d37f8b35f1ff10a11f7afa4038bfe2bd8e4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hashsethasher-stlclr"></a>hash_set::hasher (STL/CLR)
 Bir anahtar için karma temsilcisi.  

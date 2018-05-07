@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C3013 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3013 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3013
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3013
 ms.assetid: f896777d-27e6-4b6d-baab-1567317f3374
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 843f3d8e74574a473c1c29826b3e753277e6aacc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 443a10936ebb08a5d9243b534bd93bb6a2753871
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3013"></a>Derleyici Hatası C3013
 'yan tümcesi': yan tümcesi yalnızca görünebilir kez OpenMP 'yönergesi' yönergesi  

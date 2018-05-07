@@ -1,12 +1,9 @@
 ---
 title: CArrayRowset::m_nRowsRead | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL::CArrayRowset::m_nRowsRead
@@ -22,18 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - m_nRowsRead
 ms.assetid: efb8973f-59f7-46fb-a5f5-2eebd61fdd95
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 160725919a8ce4c86bc12c6b002b3ab7a393ceb9
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: a647f9839e1de38707027445e3eb2adad8242854
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="carrayrowsetmnrowsread"></a>CArrayRowset::m_nRowsRead
 Zaten okuma satır kümesinde satır sayısını içerir.  

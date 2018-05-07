@@ -1,12 +1,9 @@
 ---
 title: hash_set::rehash (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_set::rehash
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - rehash member [STL/CLR]
 ms.assetid: f62bae81-4321-44e1-97d0-77174a13e0de
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 60fbc2cc0b0d8520fd2d682c369a7f7feffd04d1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c4a90a2429f1c35e6a5617a2eeb145acb2f7239c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hashsetrehash-stlclr"></a>hash_set::rehash (STL/CLR)
 Karma tabloyu yeniden oluşturur.  

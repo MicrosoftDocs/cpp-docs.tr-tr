@@ -1,13 +1,10 @@
 ---
-title: "WM_ ileti işleyicileri: A - C | Microsoft Docs"
-ms.custom: 
+title: 'WM_ ileti işleyicileri: A - C | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - ON_WM_CREATE
 - ON_WM_COMPACTING
@@ -44,17 +41,15 @@ helpviewer_keywords:
 - ON_WM_ACTIVATEAPP [MFC]
 - ON_WM_CHANGECBCHAIN
 ms.assetid: 4e315896-d646-4b87-b0ab-41a4a753b045
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9272b54be2717276825dd770bfa15865fea6e631
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f82f77dc009e40aa02bee3a086dceed8a8d55743
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="wm-message-handlers-a---c"></a>WM_ İleti İşleyicileri: A - C
 Aşağıdaki harita girişler soldaki sağdaki işlev prototipleri karşılık gelir:  

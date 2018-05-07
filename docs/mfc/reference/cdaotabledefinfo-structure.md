@@ -2,12 +2,9 @@
 title: CDaoTableDefInfo yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - CDaoTableDefInfo
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CDaoTableDefInfo structure [MFC]
 - DAO (Data Access Objects), TableDefs collection
 ms.assetid: c01ccebb-5615-434e-883c-4f60eac943dd
-caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e949cb0348cb55fcee5a940b5753a5a8197e600b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 53e20ca3f483bd9c00b298c69a526d8f5dd31cdb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdaotabledefinfo-structure"></a>CDaoTableDefInfo Yapısı
 `CDaoTableDefInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan bir tabledef nesne hakkında bilgiler içerir.  
@@ -54,7 +49,7 @@ struct CDaoTableDefInfo
  Tabledef nesnesi adlandıran. Bu özelliğin değerini doğrudan almak için tabledef nesnesinin çağrısı [GetName](../../mfc/reference/cdaotabledef-class.md#getname) üye işlevi. Daha fazla bilgi için DAO Yardımı'ndaki "Name özelliği" konusuna bakın.  
   
  `m_bUpdatable`  
- Tabloda değişiklikleri yapılan olup olmadığını gösterir. Açmak için bir tablo güncelleştirilebilir olup olmadığını belirlemek için en hızlı yolu olan bir `CDaoTableDef` nesne için tablo ve nesnenin çağrısı [CanUpdate](../../mfc/reference/cdaotabledef-class.md#canupdate) üye işlevi. `CanUpdate`her zaman sıfır olmayan bir değer döndürür (**TRUE**) yeni oluşturulan tabledef nesnesi ve 0 (**FALSE**) ekli tabledef nesnesi. Yeni bir tabledef nesnesi yalnızca geçerli kullanıcının yazma izni olan bir veritabanı eklenmiş. Tablo yalnızca güncellenemeyen alanları içeriyorsa `CanUpdate` 0 döndürür. Bir veya daha fazla alan güncelleştirilebilir, olduğunda `CanUpdate` sıfır olmayan bir değer döndürür. Yalnızca güncelleştirilebilir alanları düzenleyebilirsiniz. Daha fazla bilgi için DAO Yardımı'ndaki "güncelleştirilebilir özellik" konusuna bakın.  
+ Tabloda değişiklikleri yapılan olup olmadığını gösterir. Açmak için bir tablo güncelleştirilebilir olup olmadığını belirlemek için en hızlı yolu olan bir `CDaoTableDef` nesne için tablo ve nesnenin çağrısı [CanUpdate](../../mfc/reference/cdaotabledef-class.md#canupdate) üye işlevi. `CanUpdate` her zaman sıfır olmayan bir değer döndürür (**TRUE**) yeni oluşturulan tabledef nesnesi ve 0 (**FALSE**) ekli tabledef nesnesi. Yeni bir tabledef nesnesi yalnızca geçerli kullanıcının yazma izni olan bir veritabanı eklenmiş. Tablo yalnızca güncellenemeyen alanları içeriyorsa `CanUpdate` 0 döndürür. Bir veya daha fazla alan güncelleştirilebilir, olduğunda `CanUpdate` sıfır olmayan bir değer döndürür. Yalnızca güncelleştirilebilir alanları düzenleyebilirsiniz. Daha fazla bilgi için DAO Yardımı'ndaki "güncelleştirilebilir özellik" konusuna bakın.  
   
  `m_lAttributes`  
  Tabledef nesnesinin temsil ettiği tablo özelliklerini belirtir. Geçerli bir tabledef özniteliklerini almak için arama kendi [GetAttributes](../../mfc/reference/cdaotabledef-class.md#getattributes) üye işlevi. Döndürülen değer bu uzun sabitleri bir bileşimi olabilir (veya Bitsel kullanarak (**&#124;**) işleci):  
@@ -95,7 +90,7 @@ struct CDaoTableDefInfo
 ## <a name="remarks"></a>Açıklamalar  
  Sınıfın bir nesnesi tabledef olan [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md). Birincil, ikincil ve yukarıdaki tüm başvuruları nasıl bilgileri tarafından döndürülen belirtmek [GetTableDefInfo](../../mfc/reference/cdaodatabase-class.md#gettabledefinfo) üye işlevi sınıfında `CDaoDatabase`.  
   
- Tarafından alınan bilgileri [CDaoDatabase::GetTableDefCount](../../mfc/reference/cdaodatabase-class.md#gettabledefinfo) üye işlevi depolanır bir `CDaoTableDefInfo` yapısı. Çağrı `GetTableDefInfo` üye işlevini `CDaoDatabase` nesne olan TableDefs koleksiyonu tabledef nesnesi depolanır. `CDaoTableDefInfo`Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümü bir `CDaoTableDefInfo` nesnesi.  
+ Tarafından alınan bilgileri [CDaoDatabase::GetTableDefCount](../../mfc/reference/cdaodatabase-class.md#gettabledefinfo) üye işlevi depolanır bir `CDaoTableDefInfo` yapısı. Çağrı `GetTableDefInfo` üye işlevini `CDaoDatabase` nesne olan TableDefs koleksiyonu tabledef nesnesi depolanır. `CDaoTableDefInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümü bir `CDaoTableDefInfo` nesnesi.  
   
  Tarih ve saat ayarları üzerinde temel tablo oluşturulmuş veya son güncelleştirme bilgisayardan türetilir. Çok kullanıcılı bir ortamda, bu dosya sunucusundan doğrudan Notes Tutarsızlıklardan kaçınmak için ayarları ve LastUpdated özellik ayarları kullanıcıların almanız gerekir.  
   

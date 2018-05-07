@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2313 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2313 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2313
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2313
 ms.assetid: f70eb19b-c0a3-4fb2-ade1-3890a589928d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0c13aaa35f58a1ecc5ef51750416e86acb4429f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 984e9e5e9163137537c9da2cd8c14bd1271ebeb0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2313"></a>Derleyici Hatası C2313
 'type1': satır numarasında ('type2') başvuruya yakalandı  

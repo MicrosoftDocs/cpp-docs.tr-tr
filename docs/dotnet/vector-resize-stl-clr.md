@@ -2,11 +2,8 @@
 title: Vector::resize (STL/CLR) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::vector::resize
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - resize member [STL/CLR]
 ms.assetid: a3556fbc-67d9-463a-9ffc-cb43ee15657f
-caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 3b4fbc196f9e4ca14ee8d8e744da380e08ec4d8a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f7327b62906746ef3bb561d88f8c6ddc2134aa65
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vectorresize-stlclr"></a>vector::resize (STL/CLR)
 Öğe sayısını değiştirir.  

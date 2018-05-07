@@ -1,12 +1,9 @@
 ---
-title: "CMFCReBar sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCReBar sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCReBar
@@ -37,17 +34,15 @@ helpviewer_keywords:
 - CMFCReBar [MFC], OnUpdateCmdUI
 - CMFCReBar [MFC], SetPaneAlignment
 ms.assetid: 02a60e29-6224-49c1-9e74-e0a7d9f8d023
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 118c792b1b732fa1e8b024bb6b80da5ea0e7aa31
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: abb880c1add83ec03d787c28b816f2e82caeddd6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcrebar-class"></a>CMFCReBar sınıfı
 A `CMFCReBar` düzeni, sürdürme ve rebar denetimleri için durum bilgilerini sağlayan bir denetim çubuğu nesnesidir.  
@@ -95,7 +90,7 @@ class CMFCReBar : public CPane
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxRebar.h  
   
-##  <a name="addbar"></a>CMFCReBar::AddBar  
+##  <a name="addbar"></a>  CMFCReBar::AddBar  
  Bir bandı bir rebar ekler.  
   
 ```  
@@ -114,28 +109,28 @@ BOOL AddBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] [out]`pBar`  
+ [in] [out] `pBar`  
  Rebar eklenecek alt pencere için bir işaretçi. Başvurulan nesne olmalıdır **WS_CHILD** pencere stili.  
   
- [in]`pszText`  
+ [in] `pszText`  
  Rebar üzerinde görüntülenecek metni belirtir. Metnin alt pencere parçası değil. Bunun yerine, rebar üzerinde görüntülenir.  
   
- [in] [out]`pbmp`  
+ [in] [out] `pbmp`  
  Rebar arka planda görüntülenecek bit eşlem belirtir.  
   
- [in]`dwStyle`  
+ [in] `dwStyle`  
  Bant için uygulanacak stilini içerir. Açıklamasını bant stilleri tam bir listesi için bkz `fStyle` içinde [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) yapısı içinde Windows SDK Belgeleri.  
   
- [in]`clrFore`  
+ [in] `clrFore`  
  Rebar ön plan rengini temsil eder.  
   
- [in]`clrBack`  
+ [in] `clrBack`  
  Rebar arka plan rengi temsil eder.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`bant rebar başarıyla eklendi Aksi takdirde `FALSE`.  
+ `TRUE` bant rebar başarıyla eklendi Aksi takdirde `FALSE`.  
   
-##  <a name="create"></a>CMFCReBar::Create  
+##  <a name="create"></a>  CMFCReBar::Create  
  Rebar denetimi oluşturur ve ona ekler [CMFCReBar](../../mfc/reference/cmfcrebar-class.md) nesnesi.  
   
 ```  
@@ -147,24 +142,24 @@ BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] [out]`pParentWnd`  
+ [in] [out] `pParentWnd`  
  Üst pencere bu rebar denetimi için bir işaretçi.  
   
- [in]`dwCtrlStyle`  
+ [in] `dwCtrlStyle`  
  Rebar denetimiyle stilini belirtir. Varsayılan Stil değer **RBS_BANDBORDERS**, hangi görüntüler rebar denetiminde bitişik bantları ayırmak için satırları daraltın. Geçerli stilleri listesi için bkz: [Rebar denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774377) Windows SDK belgelerinde.  
   
- [in]`dwStyle`  
+ [in] `dwStyle`  
  Rebar denetimiyle pencere stili. Geçerli stilleri listesi için bkz: [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in]`nID`  
+ [in] `nID`  
  Rebar ait alt pencere kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`rebar başarıyla oluşturulduysa; Aksi takdirde `FALSE`.  
+ `TRUE` rebar başarıyla oluşturulduysa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getrebarctrl"></a>CMFCReBar::GetReBarCtrl  
+##  <a name="getrebarctrl"></a>  CMFCReBar::GetReBarCtrl  
  Doğrudan erişim sağlayan `CReBarCtrl` için yaygın bir temel alınan denetim `CMFCReBar` nesneleri.  
   
 ```  
@@ -177,7 +172,7 @@ CReBarCtrl& GetReBarCtrl() const;
 ### <a name="remarks"></a>Açıklamalar  
  Windows rebar ortak denetim işlevselliği, rebar özelleştirirken yararlanmak için bu yöntemi çağırın.  
   
-##  <a name="calcfixedlayout"></a>CMFCReBar::CalcFixedLayout  
+##  <a name="calcfixedlayout"></a>  CMFCReBar::CalcFixedLayout  
 
   
 ```  
@@ -187,14 +182,14 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bStretch`  
- [in]`bHorz`  
+ [in] `bStretch`  
+ [in] `bHorz`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="canfloat"></a>CMFCReBar::CanFloat  
+##  <a name="canfloat"></a>  CMFCReBar::CanFloat  
 
   
 ```  
@@ -205,7 +200,7 @@ virtual BOOL CanFloat() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="enabledocking"></a>CMFCReBar::EnableDocking  
+##  <a name="enabledocking"></a>  CMFCReBar::EnableDocking  
 
   
 ```  
@@ -213,11 +208,11 @@ void EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`dwDockStyle`  
+ [in] `dwDockStyle`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getrebarbandinfosize"></a>CMFCReBar::GetReBarBandInfoSize  
+##  <a name="getrebarbandinfosize"></a>  CMFCReBar::GetReBarBandInfoSize  
 
   
 ```  
@@ -228,7 +223,7 @@ UINT GetReBarBandInfoSize() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onshowcontrolbarmenu"></a>CMFCReBar::OnShowControlBarMenu  
+##  <a name="onshowcontrolbarmenu"></a>  CMFCReBar::OnShowControlBarMenu  
 
   
 ```  
@@ -236,13 +231,13 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`CPoint`  
+ [in] `CPoint`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ontoolhittest"></a>CMFCReBar::OnToolHitTest  
+##  <a name="ontoolhittest"></a>  CMFCReBar::OnToolHitTest  
 
   
 ```  
@@ -252,14 +247,14 @@ virtual INT_PTR OnToolHitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`point`  
- [in]`pTI`  
+ [in] `point`  
+ [in] `pTI`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onupdatecmdui"></a>CMFCReBar::OnUpdateCmdUI  
+##  <a name="onupdatecmdui"></a>  CMFCReBar::OnUpdateCmdUI  
 
   
 ```  
@@ -269,12 +264,12 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pTarget`  
- [in]`bDisableIfNoHndler`  
+ [in] `pTarget`  
+ [in] `bDisableIfNoHndler`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setpanealignment"></a>CMFCReBar::SetPaneAlignment  
+##  <a name="setpanealignment"></a>  CMFCReBar::SetPaneAlignment  
 
   
 ```  
@@ -282,7 +277,7 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`dwAlignment`  
+ [in] `dwAlignment`  
   
 ### <a name="remarks"></a>Açıklamalar  
   

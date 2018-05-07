@@ -1,13 +1,10 @@
 ---
-title: "TN038: MFC OLE IUnknown uygulaması | Microsoft Docs"
-ms.custom: 
+title: 'TN038: MFC OLE IUnknown uygulaması | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.mfc.ole
 dev_langs:
@@ -27,17 +24,15 @@ helpviewer_keywords:
 - END_INTERFACE_PART macro [MFC]
 - INTERFACE_PART macro
 ms.assetid: 19d946ba-beaf-4881-85c6-0b598d7f6f11
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a17ce210dffd13e0ffdac142c6121954eec1045d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e93c4e9d8707d3960e768b6929bb2b1c16d60b42
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn038-mfcole-iunknown-implementation"></a>TN038: MFC/OLE IUnknown Uygulaması
 > [!NOTE]
@@ -295,7 +290,7 @@ HRESULT CEditPrintObj::CPrintObj::QueryInterface(
   
  Toplama hakkında daha fazla bilgi için bkz: [toplama](http://msdn.microsoft.com/library/windows/desktop/ms686558\(v=vs.85\).aspx) konu.  
   
- MFC'nin arabirimi harita desteği kökü `CCmdTarget` sınıfı. `CCmdTarget`"*sahip bir*" başvuru sayısı yanı sıra tüm üye işlevleri ilişkili [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) uygulaması (bulunduğu örneğin başvuru sayısı `CCmdTarget`). OLE COM destekleyen bir sınıf oluşturmak için öğesinden bir sınıf türetin `CCmdTarget` ve çeşitli makroları kullanma üye işlevlerinin yanı sıra `CCmdTarget` istenen arabirimlerini. MFC'nin uygulama iç içe geçmiş sınıflar her arabirim uygulamasına yukarıdaki örnekte olduğu gibi tanımlamak için kullanır. Bu, bazı yinelenen kodları ortadan makroları sayısı yanı sıra IUnknown standart bir uygulama ile daha kolay hale getirilmiştir.  
+ MFC'nin arabirimi harita desteği kökü `CCmdTarget` sınıfı. `CCmdTarget` "*sahip bir*" başvuru sayısı yanı sıra tüm üye işlevleri ilişkili [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) uygulaması (bulunduğu örneğin başvuru sayısı `CCmdTarget`). OLE COM destekleyen bir sınıf oluşturmak için öğesinden bir sınıf türetin `CCmdTarget` ve çeşitli makroları kullanma üye işlevlerinin yanı sıra `CCmdTarget` istenen arabirimlerini. MFC'nin uygulama iç içe geçmiş sınıflar her arabirim uygulamasına yukarıdaki örnekte olduğu gibi tanımlamak için kullanır. Bu, bazı yinelenen kodları ortadan makroları sayısı yanı sıra IUnknown standart bir uygulama ile daha kolay hale getirilmiştir.  
   
 ## <a name="interface-map-basics"></a>Harita temel arabirim  
   
@@ -315,7 +310,7 @@ HRESULT CEditPrintObj::CPrintObj::QueryInterface(
   
 7.  Kullanım `METHOD_PROLOGUE` üst erişmek için makrosu `CCmdTarget`-türetilmiş bir nesne içermelidir.  
   
-8. [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317), ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) için devredebilirsiniz `CCmdTarget` bu işlevlerin uygulaması (`ExternalAddRef`, `ExternalRelease`, ve `ExternalQueryInterface` ).  
+8. [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317), ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) için devredebilirsiniz `CCmdTarget` bu işlevlerin uygulaması (`ExternalAddRef`, `ExternalRelease`, ve `ExternalQueryInterface`).  
   
  Yukarıdaki CPrintEditObj örnek gibi uygulanabilir:  
   
@@ -474,7 +469,7 @@ BEGIN_INTERFACE_MAP(CAggrExample,
 END_INTERFACE_MAP()  
 ```  
   
- M_lpAggrInner değişkeni null oluşturucuda başlatılır. Framework varsayılan uygulaması bir NULL üye değişkeni yok sayıyor [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521). `OnCreateAggregates`Aslında, toplama nesneleri oluşturmak için uygun bir yerdir. MFC uygulaması dışında nesne oluşturuyorsanız açıkça çağırın gerekecek `COleObjectFactory`. Toplamaların oluşturma nedenini `CCmdTarget::OnCreateAggregates` kullanımını yanı sıra `CCmdTarget::GetControllingUnknown` toplanabilir nesneleri oluşturma açıklanan zaman görünür olur.  
+ M_lpAggrInner değişkeni null oluşturucuda başlatılır. Framework varsayılan uygulaması bir NULL üye değişkeni yok sayıyor [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521). `OnCreateAggregates` Aslında, toplama nesneleri oluşturmak için uygun bir yerdir. MFC uygulaması dışında nesne oluşturuyorsanız açıkça çağırın gerekecek `COleObjectFactory`. Toplamaların oluşturma nedenini `CCmdTarget::OnCreateAggregates` kullanımını yanı sıra `CCmdTarget::GetControllingUnknown` toplanabilir nesneleri oluşturma açıklanan zaman görünür olur.  
   
  Bu teknik nesnenizin tüm yerel arabirimlerinden toplama bir nesne destekleyen arabirimleri sunar. Yalnızca bir alt toplam destekleyen arabirimlerin istiyorsanız, geçersiz kılabilirsiniz `CCmdTarget::GetInterfaceHook`. Çok düşük düzeyli hookability, benzer şekilde bu sayede [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521). Genellikle, toplama destekleyen tüm arabirimler istiyor.  
   

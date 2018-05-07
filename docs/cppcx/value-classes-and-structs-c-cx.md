@@ -1,27 +1,22 @@
 ---
-title: "Değer sınıflar ve yapılar (C + +/ CX) | Microsoft Docs"
-ms.custom: 
+title: Değer sınıflar ve yapılar (C + +/ CX) | Microsoft Docs
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 helpviewer_keywords:
 - value struct
 - value class
 ms.assetid: 262a0992-9721-4c02-8297-efc07d90e5a4
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3943b70d68eeeda91ddc6f8f1737e838d696e16
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 3b623e706fae0dfd8fca6b9aaf217e76b27dbbda
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="value-classes-and-structs-ccx"></a>Değer sınıflar ve yapılar (C + +/ CX)
 A *değer yapısı* veya *değer sınıfının* Windows çalışma zamanı uyumlu POD ("düz eski veri yapısı"). Sabit bir boyutu vardır ve yalnızca alandan oluşur; ref sınıfın aksine özelliği yok.  

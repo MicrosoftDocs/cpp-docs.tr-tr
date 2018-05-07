@@ -1,27 +1,22 @@
 ---
-title: "İfade değerlendirici hataları CXX0000-CXX0072 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hataları CXX0000-CXX0072 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 dev_langs:
 - C++
 ms.assetid: a47a9866-7fb2-4b21-978c-2b77402c7105
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 053fa173c19c8aa32169cbe67834cbcf8b7ed7de
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2b46db5fd95d58691ea74df4d945a427fe4d4fb4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-errors-cxx0000-through-cxx0072"></a>İfade Değerlendirici Hataları CXX0000 - CXX0072
 

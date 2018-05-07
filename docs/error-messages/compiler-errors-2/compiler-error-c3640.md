@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3640 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3640 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3640
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3640
 ms.assetid: fcc56894-0f98-48af-8561-3bf7c7b2b93f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a35321dfd1c0e290672d8a076fd9707eb4e2ca3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f8ec2e22033ea4cc1b475ab1f838bb77d96916e7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3640"></a>Derleyici Hatası C3640
 'member': yerel bir sınıfın başvurulan veya sanal üye işlevi tanımlanmış olması gerekir  

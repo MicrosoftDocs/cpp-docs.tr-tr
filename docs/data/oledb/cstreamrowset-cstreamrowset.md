@@ -1,12 +1,9 @@
 ---
 title: CStreamRowset::CStreamRowset | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CStreamRowset::CStreamRowset
@@ -21,18 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - CStreamRowset class, constructor
 ms.assetid: 66f0f56b-ae7a-4e71-80cd-f17b1bd1c458
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 06c8fc811688474d5b80371ea9f678a23456ddc3
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 965ae5d0f97a4aef29260bff3908d199c0d0eb83
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cstreamrowsetcstreamrowset"></a>CStreamRowset::CStreamRowset
 Oluşturur ve başlatır `CStreamRowset` nesnesi.  

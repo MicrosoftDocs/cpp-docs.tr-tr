@@ -1,37 +1,32 @@
 ---
-title: "MFC ActiveX denetimleri: Özel yöntemler ekleme | Microsoft Docs"
-ms.custom: 
+title: 'MFC ActiveX denetimleri: Özel yöntemler ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], methods
 - PtInCircle custom method [MFC]
 ms.assetid: 8f8dc344-44a0-4021-8db5-4cdd3d700e18
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f79d4c5f7407e3de12ccf180a68b2b22e35bf10
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1cdf264bd0c2aa44bdeecc58b4bc8eb89c70fb91
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-activex-controls-adding-custom-methods"></a>MFC ActiveX Denetimleri: Özel Yöntemler Ekleme
 Bunlar zaten tarafından uygulanmaz, özel yöntemler farklı stok yöntemleri `COleControl`. Denetiminize eklediğiniz her özel yöntem uygulamasını sağlamanız gerekir.  
   
  ActiveX denetimi kullanıcısı özel bir yöntem özel denetim eylemleri gerçekleştirmek için herhangi bir zamanda çağırabilirsiniz. Özel yöntemler için gönderme eşleme girişi biçimidir `DISP_FUNCTION`.  
   
-##  <a name="_core_adding_a_custom_method_with_classwizard"></a>Özel bir yöntemle ekleme yöntem Ekleme Sihirbazı  
+##  <a name="_core_adding_a_custom_method_with_classwizard"></a> Özel bir yöntemle ekleme yöntem Ekleme Sihirbazı  
  Aşağıdaki yordamda bir ActiveX denetiminin iskelet kodu Ptıncircle özel yöntemi ekleme gösterilmektedir. Ptıncircle denetime geçirilen koordinatları içinde veya dışında daireye olup olmadığını belirler. Bu yordamı, diğer özel yöntemler eklemek için de kullanılabilir. Özel yöntem adınızı ve parametreleri Ptıncircle yöntemi adını ve parametreleri için yerleştirin.  
   
 > [!NOTE]
@@ -61,7 +56,7 @@ Bunlar zaten tarafından uygulanmaz, özel yöntemler farklı stok yöntemleri `
   
 10. **Son**'a tıklayın.  
   
-##  <a name="_core_classwizard_changes_for_custom_methods"></a>Yöntem Sihirbazı değişiklikleri için özel yöntemler ekleme  
+##  <a name="_core_classwizard_changes_for_custom_methods"></a> Yöntem Sihirbazı değişiklikleri için özel yöntemler ekleme  
  Özel bir yöntem eklediğinizde, yöntem Ekleme Sihirbazı'nı bazı değişiklikler denetim sınıfı başlığına hale getirir. (. Y) ve uygulama (. CPP) dosyaları. Aşağıdaki satırı control sınıfı üstbilgisini gönderme harita bildiriminde eklenir (. H) dosyası:  
   
  [!code-cpp[NVC_MFC_AxUI#18](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-methods_1.h)]  

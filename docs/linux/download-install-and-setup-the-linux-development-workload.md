@@ -1,24 +1,22 @@
 ---
-title: "İndirme, yükleme ve Linux iş yükü Kurulumu | Microsoft Docs"
-ms.custom: 
+title: İndirme, yükleme ve Linux iş yükü Kurulumu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/16/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: cpp-linux
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- cpp-linux
+ms.tgt_pltfrm: Linux
+ms.topic: conceptual
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 13201f9fd397eaf191b7621ec0807a9901e961f8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1d28f0db0ff91dbdb08c9ca88dfe197e8942a7f4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="download-install-and-setup-the-linux-workload"></a>İndirme, yükleme ve Linux iş yükü Kurulumu
 

@@ -1,12 +1,9 @@
 ---
-title: "CEdit sınıfı | Microsoft Docs"
-ms.custom: 
+title: CEdit sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CEdit
@@ -103,17 +100,15 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e14a675f3dac5f2431622f0dfd6002228abe4d2
-ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.openlocfilehash: 72bf4ffb56ad34926b3a47d86d7609aae5dff4f5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
 Bir Windows düzenleme denetimi işlevselliğini sağlar.  
@@ -193,13 +188,13 @@ class CEdit : public CWnd
   
  Her ileti eşleme girişi aşağıdaki biçimdedir:  
   
- **ON_**bildirim **(** *kimliği, memberFxn ***)**  
+ **ON_** bildirim **(** *kimliği, memberFxn ***)**  
   
  Burada `id` bildirim göndererek düzenleme denetimi alt pencere Kimliğini belirtir ve `memberFxn` bildirimini işlemek için yazılmış üst üye işlevi adıdır.  
   
  Üst öğenin işlev prototipi aşağıdaki gibidir:  
   
- **afx_msg** void memberFxn **( );**  
+ **afx_msg** void memberFxn **();**  
   
  Olası ileti eşleme girişleri ve açıklamasını, bunlar üst gönderilecek örneklerinin listesi aşağıdadır:  
   
@@ -1077,7 +1072,7 @@ void SetPasswordChar(TCHAR ch);
   
  Zaman `SetPasswordChar` üye işlevi çağrıldığında `CEdit` tarafından belirlenen karakteri kullanarak tüm görünür karakterleri yeniden çizer *ch*.  
   
- Düzenleme denetimi ile oluşturulursa [ES_PASSWORD](styles-used-by-mfc.md#edit-styles) stili, varsayılan parola karakteri olarak ayarlanmış bir yıldız işareti (  **\*** ). Bu stili kaldırılır `SetPasswordChar` çağrılır *ch* 0 olarak ayarlayın.  
+ Düzenleme denetimi ile oluşturulursa [ES_PASSWORD](styles-used-by-mfc.md#edit-styles) stili, varsayılan parola karakteri olarak ayarlanmış bir yıldız işareti ( **\***). Bu stili kaldırılır `SetPasswordChar` çağrılır *ch* 0 olarak ayarlayın.  
   
  Daha fazla bilgi için bkz: [EM_SETPASSWORDCHAR](http://msdn.microsoft.com/library/windows/desktop/bb761653) Windows SDK'sındaki.  
   

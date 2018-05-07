@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2312 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2312 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2312
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2312
 ms.assetid: c8bcfd06-12c1-4323-bb53-ba392d36daa4
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 836c7b09a446a922dd33a57b201745b7a517dfb4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ba85254d32ef6b92266d0556aa7f5eb760f1835e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2312"></a>Derleyici Hatası C2312
 'exception1': satır numarası 'exception2' tarafından yakalandı  

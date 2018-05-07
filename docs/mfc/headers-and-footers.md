@@ -1,13 +1,10 @@
 ---
-title: "Üstbilgiler ve altbilgiler | Microsoft Docs"
-ms.custom: 
+title: Üstbilgiler ve altbilgiler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - printing [MFC], headers and footers
 - page footers [MFC]
 ms.assetid: b0be9c53-5773-4955-a777-3c15da745128
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7525cba7d05c4d04f0548bd2dc774503b284c220
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c82df1a77cdbf677a6b5e6f84c371da243b9b08d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="headers-and-footers"></a>Üstbilgiler ve Altbilgiler
 Bu makalede, yazdırılan belgeye üstbilgiler ve altbilgiler ekleme açıklanmaktadır.  

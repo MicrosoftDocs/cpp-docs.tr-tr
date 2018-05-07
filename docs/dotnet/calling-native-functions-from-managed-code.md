@@ -1,13 +1,10 @@
 ---
-title: "Yönetilen koddan yerel işlevleri çağırma | Microsoft Docs"
-ms.custom: 
+title: Yönetilen koddan yerel işlevleri çağırma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - calling native functions from managed code
 - interop [C++], calling native functions from managed code
 ms.assetid: 982cef18-20d9-42b4-8242-a77fa65f2e36
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 159b80fcc015db2999309fe99e9617f7dcd409ac
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c0d7e69c95790122f44dc59d06f2843afbddfb2c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="calling-native-functions-from-managed-code"></a>Yönetilen Koddan Yerel İşlevleri Çağırma
 Ortak dil çalışma zamanı Platform Başlatma Hizmetleri ya da yerel dinamik bağlantı kitaplıkları (dll) C stili işlevleri çağırmak için kodu yönetilen tanır PInvoke sağlar. Aynı veri hazırlama "Sadece çalışır" ya da IJW, mekanizması için çalışma zamanı ile COM birlikte çalışabilirliği için kullanılır.  
@@ -42,7 +37,7 @@ Ortak dil çalışma zamanı Platform Başlatma Hizmetleri ya da yerel dinamik b
   
 -   [Yakından Platform çağırma](http://msdn.microsoft.com/en-us/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)  
   
- Bu bölümdeki örnekler yalnızca göstermek nasıl `PInvoke` kullanılabilir. `PInvoke`yordam sıralama kodu yazmak yerine bildirimli olarak öznitelikler hazırlama bilgi sağlamak için özelleştirilmiş verileri hazırlama basitleştirebilirsiniz.  
+ Bu bölümdeki örnekler yalnızca göstermek nasıl `PInvoke` kullanılabilir. `PInvoke` yordam sıralama kodu yazmak yerine bildirimli olarak öznitelikler hazırlama bilgi sağlamak için özelleştirilmiş verileri hazırlama basitleştirebilirsiniz.  
   
 > [!NOTE]
 >  Hazırlama kitaplığını en iyi duruma getirilmiş bir yöntem yerel ve Yönetilen ortamlarda arasında verileri hazırlamak için alternatif bir yol sağlar. Bkz: [, genel bakış hazırlama c++](../dotnet/overview-of-marshaling-in-cpp.md) hazırlama kitaplığını hakkında daha fazla bilgi. Hazırlama kitaplığını, yalnızca veri ve işlevleri için kullanılabilir.  

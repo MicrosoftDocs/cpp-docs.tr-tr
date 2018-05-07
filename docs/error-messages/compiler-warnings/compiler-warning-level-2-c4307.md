@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (Düzey 2) C4307 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (Düzey 2) C4307 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4307
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4307
 ms.assetid: 7cca11e9-be61-49e4-8b15-88b84f0cbf07
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2647133788bdaafb2f69f2edc5b8e13cfa07cc5b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 52914fc5825bda5647308c006b853538f3d6225e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-2-c4307"></a>Derleyici Uyarısı (Düzey 2) C4307
 'işleci': tam sayı sabit taşması  

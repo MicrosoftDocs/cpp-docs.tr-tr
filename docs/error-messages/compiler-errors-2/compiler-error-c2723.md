@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2723 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2723 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2723
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2723
 ms.assetid: 86925601-2297-4cfd-94e2-2caf27c474c4
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 587dd742a089a0eddc416e59563cd1e0707e662b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 01476218683205d0fb06e81847cfe9727b733158
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2723"></a>Derleyici Hatası C2723
 'function': 'tanımlayıcısı' tanımlayıcısı işlev tanımı geçersiz  

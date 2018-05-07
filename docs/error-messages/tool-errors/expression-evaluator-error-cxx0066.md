@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0066 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0066 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0066
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CXX0066
 - CAN0066
 ms.assetid: 1321e4e1-b441-424b-9e76-c208d4a6f6ea
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77303e34f3c8cea5a25ae9350bd64c3295fff579
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7a4e2f71de2f883e54a17a08aa4735f63f167915
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0066"></a>İfade Değerlendirici Hatası CXX0066
 statik üye yok  

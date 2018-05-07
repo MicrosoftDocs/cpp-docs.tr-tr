@@ -1,12 +1,9 @@
 ---
-title: "C2300 ile c2399 arasındaki derleyici hataları | Microsoft Docs"
-ms.custom: 
+title: C2300 ile c2399 arasındaki derleyici hataları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2303
@@ -65,17 +62,15 @@ helpviewer_keywords:
 dev_langs:
 - C++
 ms.assetid: 07ca45b5-b2f0-4049-837b-40a7a3caed88
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de20e1db0165510accebc321f47bb018f882f67e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d8b758ce26897d5c2ad8baa176c8a83b2c9954df
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-errors-c2300-through-c2399"></a>C2300 ile C2399 Arasındaki Derleyici Hataları
 

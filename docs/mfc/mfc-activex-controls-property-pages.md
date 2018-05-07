@@ -1,13 +1,10 @@
 ---
-title: "MFC ActiveX denetimleri: Özellik sayfaları | Microsoft Docs"
-ms.custom: 
+title: 'MFC ActiveX denetimleri: Özellik sayfaları | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CPropertyPageDialog class [MFC]
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: 1506f87a-9fd6-4505-8380-0dbc9636230e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dde35df301c34a6c3a29c48d5ad145681b64a72e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 81d28a7c5fdb48201cc1f4f2998fd0904749445d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-activex-controls-property-pages"></a>MFC ActiveX Denetimleri: Özellik Sayfaları
 Özellik sayfaları ActiveX denetimi özelliklerini görüntülemek ve değiştirmek bir ActiveX denetimi verin. Bu özellikleri görüntülemek ve denetim özelliklerini düzenleme için özelleştirilmiş, grafik bir arabirim sağlayan bir veya daha fazla özellik sayfaları içeren bir denetim özellikleri iletişim kutusu çağırarak erişilir.  
@@ -61,7 +56,7 @@ ms.lasthandoff: 12/21/2017
   
  ActiveX denetimi dışında bir MFC uygulamasında özellik sayfalarını kullanma hakkında daha fazla bilgi için bkz: [özellik sayfalarını](../mfc/property-sheets-mfc.md).  
   
-##  <a name="_core_implementing_the_default_property_page"></a>Varsayılan özellik sayfası uygulama  
+##  <a name="_core_implementing_the_default_property_page"></a> Varsayılan özellik sayfası uygulama  
  Denetim projenizi oluşturmak için ActiveX Denetim Sihirbazı'nı kullanırsanız denetimi türetildiği için ActiveX Denetim Sihirbazı'nı varsayılan özellik sayfası sınıfı sağlar [COlePropertyPage sınıfı](../mfc/reference/colepropertypage-class.md). Başlangıçta, bu özellik sayfası boş kalır, ancak herhangi bir iletişim kutusu denetimi veya denetimleri kümesini ona ekleyebilirsiniz. ActiveX Denetim Sihirbazı'nı varsayılan olarak, ek özellik sayfası sınıfları yalnızca bir özellik sayfası sınıfı oluşturduğundan (aynı zamanda türetilmiş `COlePropertyPage`) Sınıf Görünümü kullanılarak oluşturulmalıdır. Bu yordam hakkında daha fazla bilgi için bkz: [MFC ActiveX denetimleri: başka bir özel özellik sayfası ekleme](../mfc/mfc-activex-controls-adding-another-custom-property-page.md).  
   
  Bir özellik uygulama sayfasıdır (Bu durumda, varsayılan) üç adımlık bir işlemdir:  
@@ -76,7 +71,7 @@ ms.lasthandoff: 12/21/2017
   
  Örneğin ("Örnek" olarak adlandırılır) basit bir denetim amacıyla, aşağıdaki yordamları kullanın. Örnek ActiveX Denetim Sihirbazı'nı kullanarak oluşturulmuş ve yalnızca stok resim yazısı özelliğini içerir.  
   
-##  <a name="_core_adding_controls_to_a_property_page"></a>Özellik sayfasına denetim ekleme  
+##  <a name="_core_adding_controls_to_a_property_page"></a> Özellik sayfasına denetim ekleme  
   
 #### <a name="to-add-controls-to-a-property-page"></a>Özellik sayfasına denetim eklemek için  
   
@@ -96,7 +91,7 @@ ms.lasthandoff: 12/21/2017
   
  Kullanıcı arabirimi değiştirildi, resim yazısı özelliğini Düzenle kutusuyla bağlamanız gerekir. Bu aşağıdaki bölümde düzenleyerek yapılır `CSamplePropPage::DoDataExchange` işlevi.  
   
-##  <a name="_core_customizing_the_dodataexchange_function"></a>DoDataExchange işlevi özelleştirme  
+##  <a name="_core_customizing_the_dodataexchange_function"></a> DoDataExchange işlevi özelleştirme  
  Özellik sayfası [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) işlevi bağlantı özellik sayfası değerlerini denetiminde özelliklerinin gerçek değerlerle izin verir. Bağlantıları kurmak için ilgili denetim özelliklerini uygun özellik sayfası alanları eşlemeniz gerekir.  
   
  Bu eşlemeler özellik sayfası kullanılarak uygulanan **DDP_** işlevleri. **DDP_** işlevleri çalışır gibi **COleDBRecordView** standart MFC iletişim kutuları, bir özel durum ile kullanılan işlevler. Ek olarak bir üye değişkenine başvuruyu **DDP_** işlevleri ele denetim özelliğin adı. Aşağıdaki normal bir giriştir `DoDataExchange` işlevi için bir özellik sayfası.  

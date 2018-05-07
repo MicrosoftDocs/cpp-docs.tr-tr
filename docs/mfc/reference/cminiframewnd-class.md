@@ -1,12 +1,9 @@
 ---
-title: "CMiniFrameWnd sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMiniFrameWnd sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMiniFrameWnd
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - CMiniFrameWnd [MFC], Create
 - CMiniFrameWnd [MFC], CreateEx
 ms.assetid: b8f534ed-0532-4d8e-9657-5595cf677749
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75fe37703e9956c8272226d33a1bb169c23ea916
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 51fa0fc4f58a7b83267863918d3e1b46baa38e59
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cminiframewnd-class"></a>CMiniFrameWnd sınıfı
 Kayan araç çubukları genellikle görülen yarım yükseklikte çerçeve penceresi temsil eder.  
@@ -78,7 +73,7 @@ class CMiniFrameWnd : public CFrameWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="cminiframewnd"></a>CMiniFrameWnd::CMiniFrameWnd  
+##  <a name="cminiframewnd"></a>  CMiniFrameWnd::CMiniFrameWnd  
  Oluşturan bir `CMiniFrameWnd` nesnesi, ancak pencere oluşturmaz.  
   
 ```  
@@ -88,7 +83,7 @@ CMiniFrameWnd();
 ### <a name="remarks"></a>Açıklamalar  
  Pencere oluşturmak için çağrı [CMiniFrameWnd::Create](#create).  
   
-##  <a name="create"></a>CMiniFrameWnd::Create  
+##  <a name="create"></a>  CMiniFrameWnd::Create  
  Windows mini çerçeve penceresi oluşturur ve ona ekler `CMiniFrameWnd` nesnesi.  
   
 ```  
@@ -133,7 +128,7 @@ virtual BOOL Create(
   
 - **MFS_BLOCKSYSMENU** Sistem menüsünü ve Denetim menüsü erişimi devre dışı bırakır ve resim yazısı (başlık çubuğu) bir parçası için dönüştürür.  
   
- Bkz: [CWnd::Create](../../mfc/reference/cwnd-class.md#create) olası pencere stili değerleri açıklaması. Kısa çerçeve pencereleri için kullanılan normal bileşimi **WS_POPUP &#124; Ws_captıon &#124; WS_SYSMENU**.  
+ Bkz: [CWnd::Create](../../mfc/reference/cwnd-class.md#create) olası pencere stili değerleri açıklaması. Kısa çerçeve pencereleri için kullanılan normal bileşimi **WS_POPUP&#124;ws_captıon&#124;WS_SYSMENU**.  
   
  `rect`  
  A `RECT` yapısı pencerenin istenen boyutlarını belirleme.  
@@ -150,7 +145,7 @@ virtual BOOL Create(
 ### <a name="remarks"></a>Açıklamalar  
  **Oluşturma** pencere sınıfı adı ve pencere adı başlatır ve stil ve üst varsayılan değerleri kaydeder.  
   
-##  <a name="createex"></a>CMiniFrameWnd::CreateEx  
+##  <a name="createex"></a>  CMiniFrameWnd::CreateEx  
  Oluşturur bir `CMiniFrameWnd` nesnesi.  
   
 ```  
@@ -190,13 +185,13 @@ virtual BOOL CreateEx(
  Başarılıysa TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CreateEx` Parametrelerini belirtin **WNDCLASS**, pencere stili ve (isteğe bağlı) ilk konum ve pencere boyutunu. `CreateEx`Ayrıca pencerenin üst (varsa) ve kimliği belirtir  
+ `CreateEx` Parametrelerini belirtin **WNDCLASS**, pencere stili ve (isteğe bağlı) ilk konum ve pencere boyutunu. `CreateEx` Ayrıca pencerenin üst (varsa) ve kimliği belirtir  
   
  Zaman `CreateEx` yürütür, Windows gönderir [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo), [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), ve [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate) pencere iletileri.  
   
  Varsayılan ileti işleme genişletmek için öğesinden bir sınıf türetin `CMiniFrameWnd`, ileti eşlemesi için yeni sınıf ekleyin ve yukarıdaki iletiler için üye işlevleri sağlar. Geçersiz kılma `OnCreate`, örneğin, gerekli başlatma için yeni bir sınıf gerçekleştirmek için.  
   
- Daha fazla geçersiz kılma **üzerinde***ileti* ileti işleyicileri daha fazla işlevsellik türetilmiş sınıfınıza ekleyin.  
+ Daha fazla geçersiz kılma **üzerinde *** ileti* ileti işleyicileri daha fazla işlevsellik türetilmiş sınıfınıza ekleyin.  
   
  Varsa **ws_vısıble** stili verilen, Windows penceresi etkinleştirmek ve pencere göstermek için gerekli tüm iletileri gönderir. Pencere stili bir başlık çubuğu belirtiyorsa, pencere başlığı işaret için tarafından `lpszWindowName` parametresi başlık çubuğunda görüntülenir.  
   

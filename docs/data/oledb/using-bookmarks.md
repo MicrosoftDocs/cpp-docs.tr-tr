@@ -1,12 +1,9 @@
 ---
-title: "Yer işaretlerini kullanma | Microsoft Docs"
-ms.custom: 
+title: Yer işaretlerini kullanma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 dev_langs:
 - C++
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - bookmarks, OLE DB
 - OLE DB providers, bookmark support
 ms.assetid: 7fa1d1a8-5063-4aa9-93ee-815bb9c98fae
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 18c3f8cfb77e9bcd0719fd7130441f628df6eb58
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 5aa16d5f2a3a02d0e9fd6bb3dd5de71494e81d4a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-bookmarks"></a>Yer İşaretlerini Kullanma
 Satır kümesi açmadan önce yer işaretleri kullanmak istediğiniz sağlayıcı bildirmeniz gerekir. Bunu yapmak için ayarlayın **DBPROP_BOOKMARKS** özelliğine **doğru** , özelliğini ayarlayın. Özel makrosu kullanmalısınız sağlayıcı yer işaretlerini sütun sıfır olarak alır. `BOOKMARK_ENTRY` ve `CBookmark` statik erişimci kullanıyorsanız sınıfı. `CBookmark` bağımsız değişkeni yer işareti arabelleğinin bayt cinsinden uzunluğu olduğu bir şablon sınıfıdır. Yer işareti için gerekli olan arabellek uzunluğu sağlayıcısına bağlıdır. Aşağıdaki örnekte gösterildiği gibi ODBC OLE DB Sağlayıcısı'nı kullanıyorsanız, arabellek 4 bayt olmalıdır.  

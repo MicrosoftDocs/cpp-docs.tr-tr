@@ -1,12 +1,9 @@
 ---
 title: Vector::pop_back (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::vector::pop_back
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - pop_back member [STL/CLR]
 ms.assetid: 7e9fb72c-e733-4434-a71c-e4389629a821
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: fd4d93caf98a9a79ccf88799239d93bcefc830f3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7c715f297f34158ef08e559448ebf9a44ec9b9af
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vectorpopback-stlclr"></a>vector::pop_back (STL/CLR)
 Son öğeyi kaldırır.  

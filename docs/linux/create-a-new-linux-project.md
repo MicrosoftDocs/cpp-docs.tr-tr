@@ -1,24 +1,22 @@
 ---
-title: "Visual Studio'da yeni bir C++ Linux projesi oluşturun | Microsoft Docs"
-ms.custom: 
+title: Visual Studio'da yeni bir C++ Linux projesi oluşturun | Microsoft Docs
+ms.custom: ''
 ms.date: 11/15/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: cpp-linux
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- cpp-linux
+ms.tgt_pltfrm: Linux
+ms.topic: conceptual
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 8b9eda4c238ae1a3ea3e59d0e5c39ee6b59cff02
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4d4d11ec459215d81996d1daea420513c21b10b9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="create-a-new-linux-project"></a>Yeni Linux projesi oluşturma
 Linux için kodlama yaparken, Visual Studio projesi veya CMake projesi oluşturma seçeneğiniz vardır. Bu konuda bir Visual Studio projesi oluşturmayı açıklar. CMake projeler hakkında daha fazla bilgi için bkz: [bir Linux CMake proje yapılandırma ](cmake-linux-project.md).

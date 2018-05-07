@@ -1,12 +1,9 @@
 ---
 title: multiset::key_compare (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::multiset::key_compare
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - key_compare member [STL/CLR]
 ms.assetid: 172c1ac7-fc71-409e-898a-5521eea7201a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: bcf70787ecf129a920392555ab25b91f84c98a12
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 34617651bfd355cc62738c1488651613372c5d85
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="multisetkeycompare-stlclr"></a>multiset::key_compare (STL/CLR)
 İki anahtar sıralama temsilcisi.  

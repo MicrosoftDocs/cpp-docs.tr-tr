@@ -1,12 +1,9 @@
 ---
-title: IErrorRecordsImpl::GetBasicErrorInfo | Microsoft Docs
-ms.custom: 
+title: Ierrorrecordsımpl::getbasicerrorınfo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL::IErrorRecordsImpl::GetBasicErrorInfo
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - GetBasicErrorInfo method
 ms.assetid: d0b4dec3-f32a-4aaa-8365-524f2e7c8395
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 787cbeaea106d33b276458c75251ec5850e51550
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 96b5561a34b20f51a0543260c6dbf68033cb93c1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ierrorrecordsimplgetbasicerrorinfo"></a>IErrorRecordsImpl::GetBasicErrorInfo
 Dönüş kodu ve sağlayıcıya özgü hata numarası gibi hata ile ilgili temel bilgileri döndürür.  

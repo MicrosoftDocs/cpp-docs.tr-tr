@@ -1,12 +1,9 @@
 ---
-title: "CTreeView sınıfı | Microsoft Docs"
-ms.custom: 
+title: CTreeView sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CTreeView
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CTreeView [MFC], CTreeView
 - CTreeView [MFC], GetTreeCtrl
 ms.assetid: 5df583a6-d69f-42ca-9d8d-57e04558afff
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7530569d5e5313ebfcbdaf92ebd245962b9e443c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8d19d4958de2f7909f2072b2ae2f59c00e63d65a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ctreeview-class"></a>CTreeView sınıfı
 Ağaç denetimi'nin ve kullanım basitleştirir [CTreeCtrl](../../mfc/reference/ctreectrl-class.md), MFC'nin belge görünüm mimarisi ile ağaç denetimi işlevselliği kapsar sınıfı.  
@@ -73,14 +68,14 @@ class CTreeView : public CCtrlView
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxcview.h  
   
-##  <a name="ctreeview"></a>CTreeView::CTreeView  
+##  <a name="ctreeview"></a>  CTreeView::CTreeView  
  Oluşturan bir `CTreeView` nesnesi.  
   
 ```  
 CTreeView();
 ```  
   
-##  <a name="gettreectrl"></a>CTreeView::GetTreeCtrl  
+##  <a name="gettreectrl"></a>  CTreeView::GetTreeCtrl  
  Ağaç denetimi görünüm ile ilişkilendirilen bir başvuru döndürür.  
   
 ```  

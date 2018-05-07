@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C3293 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3293 | Microsoft Docs
+ms.custom: ''
 ms.date: 07/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3293
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3293
 ms.assetid: b772cf98-52e0-4e24-be23-1f5d87d999ac
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ccf6bd08b1ca540fcdf46d18631e0ab11c7fe4f6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b195a91825b0f20445b29e330f67810329584db7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3293"></a>Derleyici Hatası C3293
 'erişimcisi': 'default' sınıfı 'type' için varsayılan özelliği (Dizin Oluşturucu) erişmek için kullanın  

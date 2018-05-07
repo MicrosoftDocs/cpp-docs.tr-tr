@@ -1,11 +1,8 @@
 ---
-title: "Platform::Agile sınıfı | Microsoft Docs"
-ms.custom: 
+title: Platform::Agile sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - AGILE/Platform::Platform
@@ -19,17 +16,15 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Agile
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c670ffc10858e709129caf9fabf80b656cbdb18
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 4d7d2299dd1395e93f4cd88cbeaec6c0b9467308
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="platformagile-class"></a>Platform::Agile sınıfı
 Bir MashalingBehavior olan bir nesneyi temsil eden standart çalışma zamanı özel durumları iş parçacığı oluşturma olasılığını önemli ölçüde azaltır Çevik bir nesne olarak =. `Agile<T>` Çağrısı veya aynı veya farklı bir iş parçacığı, çağrılması için Çevik olmayan nesnesi sağlar. Daha fazla bilgi için bkz: [iş parçacığı oluşturma ve hazırlama](../cppcx/threading-and-marshaling-c-cx.md).  
@@ -57,13 +52,13 @@ class Agile;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Agile::Agile](#ctor)|Çevik sınıfının yeni bir örneğini başlatır.|  
-|[Agile::~Agile Destructor](#dtor)|Çevik sınıfının geçerli örneği yok eder.|  
+|[Çevik:: ~ Çevik yok Edicisi](#dtor)|Çevik sınıfının geçerli örneği yok eder.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Agile::Get](#get)|Geçerli Çevik nesne tarafından temsil edilen nesne için bir işleyici döner.|  
+|[Agile::get](#get)|Geçerli Çevik nesne tarafından temsil edilen nesne için bir işleyici döner.|  
 |[Agile::GetAddressOf](#getaddressof)|Geçerli Çevik nesne yeniden başlatır ve ardından bir nesne türü için bir tanıtıcı adresini döndürür `T`.|  
 |[Agile::GetAddressOfForInOut](#getaddressofforinout)|Geçerli Çevik nesne tarafından temsil edilen nesne için bir tanıtıcı adresini döndürür.|  
 |[Agile::Release](#release)|Geçerli Çevik nesnenin nesnesini ve içerik atar.|  
@@ -72,7 +67,7 @@ class Agile;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Agile::operator->](#operator-arrow)|Geçerli Çevik nesne tarafından temsil edilen nesne için bir tanıtıcı alır.|  
+|[Agile::operator ->](#operator-arrow)|Geçerli Çevik nesne tarafından temsil edilen nesne için bir tanıtıcı alır.|  
 |[Agile::operator=](#operator-assign)|Belirtilen değer geçerli Çevik nesneye atar.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
@@ -89,7 +84,7 @@ class Agile;
   
  **Başlık:** agile.h  
 
-## <a name="ctor"></a>  Agile::Agile Constructor
+## <a name="ctor"></a>  Agile::Agile Oluşturucusu
 Çevik sınıfının yeni bir örneğini başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -116,7 +111,7 @@ Agile(Agile<T>&& object);
 ### <a name="remarks"></a>Açıklamalar  
  İlk bu oluşturucuyu varsayılan oluşturucu sürümüdür. İkinci sürümü tarafından belirtilen nesneden yeni Çevik örneği sınıfı başlatır `object` parametresi. Kopya Oluşturucu üçüncü sürümüdür. Taşıma Oluşturucusu dördüncü sürümüdür. Bu oluşturucu, özel durumlar oluşturulamıyor.  
 
-## <a name="dtor"></a>  Agile::~Agile Destructor
+## <a name="dtor"></a>  Çevik:: ~ Çevik yok Edicisi
 Çevik sınıfının geçerli örneği yok eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -201,7 +196,7 @@ void Release() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Geçerli Çevik nesnenin nesnesini ve içerik, kaldıklarından ve ardından Çevik nesnenin değerini ayarlarsanız atılır null.  
 
-## <a name="operator-arrow"></a>  Agile::operator-&gt; Operator
+## <a name="operator-arrow"></a>  Agile::operator -&gt; işleci
 Geçerli Çevik nesne tarafından temsil edilen nesne için bir tanıtıcı alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -217,7 +212,7 @@ const throw();
   
  Bu işleç gerçekte belirlenmemiş bir iç türü döndürür. Dönüş değeri tutmak için uygun bir ile bildirilen bir değişken atamak üzere yoludur **otomatik** kesintisi anahtar sözcüğü yazın.  
 
-## <a name="operator-assign"></a>  Agile::operator= Operator
+## <a name="operator-assign"></a>  Agile::operator = işleci
 Belirtilen nesne geçerli Çevik nesneye atar.  
   
 ## <a name="syntax"></a>Sözdizimi  

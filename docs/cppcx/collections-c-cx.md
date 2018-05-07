@@ -1,31 +1,26 @@
 ---
 title: Koleksiyonlar (C + +/ CX) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/22/2017
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b4f98b17ceb7e7ccde15d2b7def17ee1e57b5ff
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 0296422ce0f9ef49b096d5ea8512530871fc733b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="collections-ccx"></a>Koleksiyonlar (C + +/ CX)
 C + +/ CX programı standart Şablon kitaplığı (STL) kapsayıcıları veya herhangi bir kullanıcı tanımlı koleksiyon türü boş kullanımını yapabilir. Ancak, geçirdiğiniz zaman koleksiyonları ve geriye Windows çalışma zamanı uygulama ikili arabirimi (ABI) — Örneğin, bir XAML denetimi veya bir JavaScript istemci — Windows çalışma zamanı koleksiyon türleri kullanmanız gerekir.  
   
  Windows Çalışma Zamanı Modülü arabirimler koleksiyonları ve ilgili türleri ve C + için tanımlar +/ CX collection.h üstbilgi dosyası somut C++ uygulamalarında sağlar. Bu çizim koleksiyon türleri arasındaki ilişkileri göstermektedir:  
   
- ![C &#43; &#43; &#47; Koleksiyon türleri için CX devralma ağacı](../cppcx/media/cppcxcollectionsinheritancetree.png "CPPCXCollectionsInheritanceTree")  
+ ![C&#43;&#43;&#47;CX devralma ağacında koleksiyon türleri için](../cppcx/media/cppcxcollectionsinheritancetree.png "CPPCXCollectionsInheritanceTree")  
   
 -   [Platform::Collections:: Vector sınıfı](../cppcx/platform-collections-vector-class.md) benzer [std::vector sınıfı](../standard-library/vector-class.md).  
   
@@ -64,14 +59,14 @@ C + +/ CX programı standart Şablon kitaplığı (STL) kapsayıcıları veya he
  Depolanması için herhangi bir öğe bir [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) eşitlik karşılaştırması örtük veya özel bir kullanarak desteklemelidir [std::equal_to](../standard-library/equal-to-struct.md) sağladığınız karşılaştırıcı. Tüm başvuru türleri ve örtük olarak eşitlik karşılaştırmaları destekleyen tüm skaler türler. Skaler olmayan için değer türleri gibi [Windows::Foundation::DateTime](http://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx), veya özel karşılaştırmaları — Örneğin, `objA->UniqueID == objB->UniqueID`— özel işlev nesnesi sağlamanız gerekir.  
    
   
-## <a name="vectorproxy-elements"></a>VectorProxy elements  
+## <a name="vectorproxy-elements"></a>VectorProxy öğeleri  
  [Platform::Collections::VectorIterator](../cppcx/platform-collections-vectoriterator-class.md) ve [Platform::Collections::VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) kullanımını etkinleştirmek `range for` döngüler ve algoritmalar gibi [std::sort](../standard-library/algorithm-functions.md#sort) bir ile[ IVector\<T >](http://msdn.microsoft.com/en-us/library/windows/apps/br206631.aspx) kapsayıcı. Ancak `IVector` öğeleri C++ erişilemiyor işaretçiye; yalnızca aracılığıyla erişilebilen [GetAt](http://msdn.microsoft.com/library/windows/apps/br206634.aspx) ve [SetAt](http://msdn.microsoft.com/library/windows/apps/br206642.aspx) yöntemleri. Bu nedenle, bu yineleyiciler proxy sınıfları kullanan `Platform::Details::VectorProxy<T>` ve `Platform::Details::ArrowProxy<T>` ayrı ayrı öğeler erişim sağlamak için `*`, `->`, ve `[]` STL gerektirdiği işleçler. NET olarak söylemek verilen bir `IVector<Person^> vec`, türü `*begin(vec)` olan `VectorProxy<Person^>`. Ancak, proxy neredeyse her zaman kodunuzu saydam nesnesidir. Bu proxy nesneleri, çünkü bunlar yalnızca yineleyiciler tarafından dahili kullanım içindir, ancak mekanizması nasıl çalıştığını anlamak kullanışlıdır açıklanmamıştır.  
   
  Kullandığınızda, bir `range for` üzerinden döngü `IVector` kapsayıcılar, kullanma `auto&&` doğru olarak bağlamak için yineleyici değişken etkinleştirmek için `VectorProxy` öğeleri. Kullanırsanız `auto` veya `auto&`, derleyici uyarısı C4239 oluşturulur ve `VectoryProxy` uyarı metni belirtiliyor.  
   
  Aşağıdaki çizimde gösterildiği bir `range for` üzerinden döngü bir `IVector<Person^>`. Yürütme satırında 64 kesme durdurulur dikkat edin. **QuickWatch** penceresi gösterir, yineleyici değişken `p` aslında bir `VectorProxy<Person^>` olan `m_v` ve `m_i` üye değişkenleri. Çağırdığınızda ancak `GetType` isteğe bağlı olarak bu değişken üzerinde aynı türde döndürür `Person` örneği `p2`. Takeaway rağmen olan `VectorProxy` ve `ArrowProxy` görünebilir **QuickWatch**, hata ayıklayıcı belirli derleyici hataları veya başka bir yerde, genellikle açıkça kendileri için kod gerekmez.  
   
- ![Aralık &#45; VectorProxy döngü için temel](../cppcx/media/vectorproxy-1.png "VectorProxy_1")  
+ ![Aralıktaki VectorProxy&#45;döngü için temel](../cppcx/media/vectorproxy-1.png "VectorProxy_1")  
   
  Sahip olduğunuz koduna proxy nesnesi geçici bir senaryo gerçekleştirmek sahip olduğunda bir `dynamic_cast` öğelerde — Örneğin, ne zaman aradığınız XAML nesneleri belirli bir türdeki bir `UIElement` öğe koleksiyonu. Bu durumda, ilk öğeye atamalısınız [Platform::Object](../cppcx/platform-object-class.md)^ ve dinamik atama gerçekleştirin:  
   

@@ -1,12 +1,9 @@
 ---
-title: "CViews, Cviewınfo | Microsoft Docs"
-ms.custom: 
+title: CViews, Cviewınfo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - m_szTableSchema
@@ -38,18 +35,16 @@ helpviewer_keywords:
 - IS_UPDATABLE
 - CViews typedef class
 ms.assetid: ad864181-4fab-4919-b0fd-45df5da230d9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: af8afa49f2290c179afab00330df480ce3a787c9
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: b17df30dac07222f026f23f778a201cc5824d72a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cviews-cviewinfo"></a>CViews, CViewInfo
 Çağrı typedef sınıfı **CViews** parametre sınıfı uygulamak için **Cviewınfo**.  

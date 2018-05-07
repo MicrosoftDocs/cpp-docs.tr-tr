@@ -1,12 +1,9 @@
 ---
 title: unary_delegate (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::unary_delegate
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - unary_delegate function [STL/CLR]
 ms.assetid: b3ee253c-98e8-466e-a272-505e47aed061
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: df8c3177750433c95b6a98865409d51926c327d2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 689fc3afba26d4b20816f3513262b6c1fc269e2e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="unarydelegate-stlclr"></a>unary_delegate (STL/CLR)
 Genereic sınıfı tek bağımsız değişkenli temsilci açıklar. Kullandığınız bir temsilci yazmaç türlerinden bakımından belirtin.  

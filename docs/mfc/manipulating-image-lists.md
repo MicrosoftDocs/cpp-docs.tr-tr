@@ -1,13 +1,10 @@
 ---
-title: "Görüntü listelerini düzenleme | Microsoft Docs"
-ms.custom: 
+title: Görüntü listelerini düzenleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - lists [MFC], image
 - CImageList class [MFC], manipulating
 ms.assetid: 043418f8-077e-4dce-b8bb-2b7b0d7b5156
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c2670f3935e2f4c482728000a268cb46cc9dbdd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 559cb87dbed412e706cc85b3db1120083b694991
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="manipulating-image-lists"></a>Görüntü Listelerini Düzenleme
 [Değiştir](../mfc/reference/cimagelist-class.md#replace) üye işlevi bir resim listesi görüntüdeki değiştirir ([Cımagelist](../mfc/reference/cimagelist-class.md)) yeni bir görüntü ile. Bu işlev, ayrıca dinamik olarak bir resim listesi nesnesi görüntülerinde sayısını artırmak gerektiğinde kullanışlı olur. [SetImageCount](../mfc/reference/cimagelist-class.md#setimagecount) işlevi görüntü listesinde depolanan görüntü sayısını dinamik olarak değişir. Resim listesi boyutunu artırmak için arama **Değiştir** yeni görüntü yuvalarına görüntüleri eklemek için. Görüntü listesi boyutu azaltırsanız, yeni boyutunu aşan görüntüleri kurtulurlar.  

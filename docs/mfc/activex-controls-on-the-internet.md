@@ -1,13 +1,10 @@
 ---
 title: Internet'te ActiveX denetimlerini | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - Internet applications [MFC], ActiveX controls
 - networks [MFC], downloading with ActiveX controls
 ms.assetid: 7ab943c8-2022-41df-9065-d629b616eeec
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c02d807f6b77ca7aa35ffe91b929122a3743be6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1a42a7bc042301cfbd7d62f82b7c676686146850
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="activex-controls-on-the-internet"></a>Internet'te ActiveX Denetimleri
 ActiveX denetimleri OLE denetim belirtimi güncelleştirilmiş sürümü bulunur. Farklı kapsayıcılar, Internet üzerindeki COM kullanan Web tarayıcıları dahil olmak üzere çeşitli kullanılan programlanabilir yazılım bileşenleri geliştirmek için birincil bir mimari denetimleridir. Herhangi bir ActiveX denetimi bir Internet Denetim olması ve işlevselliği için etkin bir belge ekleyebilir veya bir Web sayfası bir parçası olarak. Bir Web sayfasındaki denetimleri birbirleri ile komut dosyası kullanarak iletişim kurabilir.  
@@ -165,9 +160,9 @@ ActiveX denetimleri OLE denetim belirtimi güncelleştirilmiş sürümü bulunur
   
  Uygulamanız [zaman uyumsuz adlar](../mfc/asynchronous-monikers-on-the-internet.md) kullanarak `CAsyncMonikerFile` sınıfı. Ancak, ActiveX denetimlerini kullanabilirsiniz `CDataPathProperty` türetilmiş sınıf `CAsyncMonikerFile`, zaman uyumsuz denetim özellikleri uygulamak yardımcı olacak.  
   
- ASYNDOWN örnek verileri okumak için zamanlayıcılar kullanılarak zaman uyumsuz bir döngü ayarlanacağı gösterilmiştir. ASYNDOWN "Nasıl yapılır: AsyncDown gösteren zaman uyumsuz veri indirme" (Q177244) Bilgi Bankası makalesinde ayrıntılı açıklanan ve Microsoft Download Center Merkezi'nden yüklenebilir. (Microsoft Download Center'dan gelen dosyaları indirme hakkında daha fazla bilgi için "Nasıl elde Microsoft destek dosyaları gelen çevrimiçi Hizmetleri" (Q119591) Microsoft Bilgi Bankası makalesine bakın.) Bilgi Bankası makalelerini bulabilirsiniz [http://support.microsoft.com/support](http://support.microsoft.com/support).  
+ ASYNDOWN örnek verileri okumak için zamanlayıcılar kullanılarak zaman uyumsuz bir döngü ayarlanacağı gösterilmiştir. ASYNDOWN "Nasıl yapılır: AsyncDown gösteren zaman uyumsuz veri indirme" (Q177244) Bilgi Bankası makalesinde ayrıntılı açıklanan ve Microsoft Download Center Merkezi'nden yüklenebilir. (Microsoft Download Center'dan gelen dosyaları indirme hakkında daha fazla bilgi için "Nasıl elde Microsoft destek dosyaları gelen çevrimiçi Hizmetleri" (Q119591) Microsoft Bilgi Bankası makalesine bakın.) Bilgi Bankası makalelerini bulabilirsiniz [ http://support.microsoft.com/support ](http://support.microsoft.com/support).  
   
- ASYNDOWN içinde kullanılan temel bir süreölçer ayarlamak için bir tekniktir **CDataPathProperty::OnDataAvailable** veriler kullanılabilir olduğunda belirtmek için. Süreölçer iletisi alındığında, uygulama veri 128 bayt bloklarında okur ve düzenleme denetimi doldurur. Zamanlayıcı ileti işlendiğinde veri kullanılabilir durumda değilse, Zamanlayıcı kapalıdır. `OnDataAvailable`Daha fazla veri daha sonra alınırsa zamanlayıcıda etkinleştirir.  
+ ASYNDOWN içinde kullanılan temel bir süreölçer ayarlamak için bir tekniktir **CDataPathProperty::OnDataAvailable** veriler kullanılabilir olduğunda belirtmek için. Süreölçer iletisi alındığında, uygulama veri 128 bayt bloklarında okur ve düzenleme denetimi doldurur. Zamanlayıcı ileti işlendiğinde veri kullanılabilir durumda değilse, Zamanlayıcı kapalıdır. `OnDataAvailable` Daha fazla veri daha sonra alınırsa zamanlayıcıda etkinleştirir.  
   
 ## <a name="displaying-a-control-on-a-web-page"></a>Bir Web sayfasında bir denetimi görüntüleme  
  Bir nesne etiketinin ve bir Web sayfasına denetim ekleme öznitelikleri bir örneği burada verilmiştir.  

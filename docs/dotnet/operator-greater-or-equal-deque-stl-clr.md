@@ -1,12 +1,9 @@
 ---
-title: "İşleç&gt;(deque) (STL/CLR) = | Microsoft Docs"
-ms.custom: 
+title: İşleç&gt;(deque) (STL/CLR) = | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::deque::operator>=
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - operator>= member [STL/CLR]
 ms.assetid: 14746073-60a3-4088-b7ea-f987e963d418
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: c7e9c134bfc379bbcd747f45e3d0e6eb093e92d2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 98e7e13bcf25c5332751ac56cf83ffe36d962ad2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="operatorgt-deque-stlclr"></a>İşleç&gt;= (deque) (STL/CLR)
 Deque büyük veya ona eşit karşılaştırması.  

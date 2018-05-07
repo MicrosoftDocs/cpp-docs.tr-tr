@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2474 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2474 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2474
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2474
 ms.assetid: 64e6c61e-6e77-480e-bcf0-b30a2fc482ac
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91384ef6ea2a26ad21a8a43f022819b846efb385
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0b42e93630bdfba0400c30aafa1b6436f5b9e868
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2474"></a>Derleyici Hatası C2474
 'anahtar sözcüğü': bitişik bir noktalı virgül eksik olabilir anahtar sözcüğü veya tanımlayıcısı.  

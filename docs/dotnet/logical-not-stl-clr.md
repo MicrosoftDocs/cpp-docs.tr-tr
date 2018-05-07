@@ -1,12 +1,9 @@
 ---
 title: logical_not (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::logical_not
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - logical_not function [STL/CLR]
 ms.assetid: 32a2c6e2-1c58-41ac-8827-f3ee5adfe81d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 8d27e18d540d9638caf819636a37f243b362d369
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d4048c642a1c562237bccba8fa3e5fd5429bba4e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="logicalnot-stlclr"></a>logical_not (STL/CLR)
 Şablon sınıfı bir functor açıklar çağrıldığında, yalnızca, sahipse true değerini döndürür, bağımsız değişkeni false olarak sınar. Kullandığınız kendi bağımsız değişken türü bakımından işlevi nesnesi belirtin.  

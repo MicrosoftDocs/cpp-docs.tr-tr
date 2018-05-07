@@ -1,13 +1,10 @@
 ---
-title: "Kayıt Alanı Değişimi: RFX işlevlerini kullanma | Microsoft Docs"
-ms.custom: 
+title: 'Kayıt Alanı Değişimi: RFX işlevlerini kullanma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,18 +16,16 @@ helpviewer_keywords:
 - RFX (ODBC) [C++], data types
 - function calls, RFX functions
 ms.assetid: c594300b-5a29-4119-a68b-e7ca32def696
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a270b26fc0fd9be721ee0656f9f0d14ab579b477
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1f834f9f52c8d01dbd7eb3ff54b794afc11630ae
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="record-field-exchange-using-the-rfx-functions"></a>Kayıt Alanı Değişimi: RFX İşlevlerini Kullanma
 Bu konu gövdesini oluşturan RFX işlevi çağrılarının nasıl kullanılacağını açıklar, `DoFieldExchange` geçersiz kılar.  
@@ -40,7 +35,7 @@ Bu konu gövdesini oluşturan RFX işlevi çağrılarının nasıl kullanılaca�
   
  RFX genel işlevleri veri kaynağını ve alan veri üyeleri kümenizin sütunlarda arasında veri değişimi. RFX işlev çağrılarını kümenizin içinde yazma [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) üye işlevi. Bu konu işlevleri kısaca açıklar ve RFX işlevleri kullanılabilir veri türleri gösterir. [Teknik Not 43](../../mfc/tn043-rfx-routines.md) ek veri türleri için kendi RFX işlevleri yazılacağını açıklar.  
   
-##  <a name="_core_rfx_function_syntax"></a>RFX işlev sözdizimi  
+##  <a name="_core_rfx_function_syntax"></a> RFX işlev sözdizimi  
  Her RFX işlevi üç parametre alır (ve bazı isteğe bağlı bir dördüncü veya beşinci parametre alan):  
   
 -   Bir işaretçi bir [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) nesnesi. Geçirirsiniz `pFX` işaretçi geçirilen `DoFieldExchange`.  
@@ -55,7 +50,7 @@ Bu konu gövdesini oluşturan RFX işlevi çağrılarının nasıl kullanılaca�
   
  RFX işlevleri altında daha fazla bilgi için bkz: [makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md) içinde *sınıf kitaplığı başvurusu*. Ne zaman özel yapabileceğiniz bir örnek için parametrelerini kullanmak için bkz: [kayıt kümesi: SUM'ları alma ve diğer toplama sonuçlarını (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md).  
   
-##  <a name="_core_rfx_data_types"></a>RFX veri türleri  
+##  <a name="_core_rfx_data_types"></a> RFX veri türleri  
  Sınıf kitaplığı veri kaynağını ve kümeleriniz arasında birçok farklı veri türleri aktarımı için RFX işlevleri sunar. Aşağıdaki liste, veri türüne göre RFX işlevlerini özetler. Burada, kendi RFX işlev çağrılarını yazmanız gereken durumlarda, bu işlevler veri türüne göre seçin.  
   
 |İşlev|Veri türü|  

@@ -1,12 +1,9 @@
 ---
 title: PTR::detach | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - ptr.Detach
@@ -18,18 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - ptr::Detach
 ms.assetid: 23370c8a-8f79-4880-9fa1-46e110c1a92c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: bf50fa11677ea8d93ce557f94015030e8b16331e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 24e5c71a20b3bffebd9cd25bf2795fd309491d11
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ptrdetach"></a>ptr::Detach
 Nesnesine bir işaretçi döndüren COM nesnesi sahipliğini sağlar.  
@@ -49,7 +44,7 @@ _interface_type * Detach();
  Dahili olarak, `QueryInterface` ait COM nesnesi ve herhangi bir hata adlı `HRESULT` bir özel durum tarafından dönüştürülür <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `Detach`ilk çağıran adına COM nesnesi için bir başvuru ekler ve tarafından sahip olunan tüm başvurularını serbest `com::ptr`.  Arayan Sonuçta, yok etmek için döndürülen nesne serbest bırakmanız gerekir.  
+ `Detach` ilk çağıran adına COM nesnesi için bir başvuru ekler ve tarafından sahip olunan tüm başvurularını serbest `com::ptr`.  Arayan Sonuçta, yok etmek için döndürülen nesne serbest bırakmanız gerekir.  
   
 ## <a name="example"></a>Örnek  
  Bu örnek kullanan bir CLR sınıfı uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesnesi.  `DetachDocument` Üye işlev çağrılarını `Detach` COM nesnesi sahipliğini vermek ve bir işaretçi çağırana dönmek için.  

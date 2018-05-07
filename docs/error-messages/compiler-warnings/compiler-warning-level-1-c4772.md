@@ -1,8 +1,8 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4772 | Microsoft Docs"
+title: Derleyici Uyarısı (düzey 1) C4772 | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology:
-- cpp-tools
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4772
@@ -13,14 +13,13 @@ helpviewer_keywords:
 ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 631cd4f872c7b8912b791417c04f6c6e9e056bdd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cbdcfec8d36568c31c291a9de8f9af3aac821fc6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4772"></a>Derleyici Uyarısı (düzey 1) C4772
 

@@ -2,12 +2,9 @@
 title: 'Kayıt kümesi: Kayıtları kilitleme (ODBC) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,18 +16,16 @@ helpviewer_keywords:
 - ODBC recordsets [C++], locking records
 - data [C++], locking
 ms.assetid: 8fe8fcfe-b55a-41a8-9136-94a7cd1e4806
-caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 76d7ab2df01e485ffff70120609227b9fbae6ac5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1fcef3233e4c2035cc481128d81723dad03fb18b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="recordset-locking-records-odbc"></a>Kayıt Kümesi: Kayıtları Kilitleme (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -46,7 +41,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
 > [!NOTE]
 >  Bu konuda türetilen nesnelere uygulanır `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme uyguladıysanız, bazı bilgiler uygulanmaz. Örneğin, çağıramazsınız **Düzenle** ve **güncelleştirme** üye işlevleri. Toplu satır getirme hakkında daha fazla bilgi için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
-##  <a name="_core_record.2d.locking_modes"></a>Kayıt kilitleme modları  
+##  <a name="_core_record.2d.locking_modes"></a> Kayıt kilitleme modları  
  Veritabanı sınıfları iki sağlar [kayıt kilitleme modu](../../mfc/reference/crecordset-class.md#setlockingmode):  
   
 -   İyimser kilitleme (varsayılan)  
@@ -63,7 +58,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
  İyimser kilitleme, kayıt sırasında yalnızca veri kaynağı üzerinde kilitler **güncelleştirme** çağırın. Çok kullanıcılı ortamda İyimser kilitleme kullanırsanız, uygulama işlemelidir bir **güncelleştirme** hata koşulu. Kötümser kilitleme kilitler kaydı çağırmanız hemen **Düzenle** ve dek çağrısı bırakmaz **güncelleştirme** (hataları aracılığıyla gösterilir `CDBException` değeritarafındanmekanizması**Yanlış** tarafından döndürülen **güncelleştirme**). Kötümser kilitleme sahip diğer kullanıcılar için olası başarım kaybı aynı kaydı eş zamanlı erişim, uygulamanızın tamamlanana kadar beklemeniz gerekebilir çünkü **güncelleştirme** işlemi.  
   
-##  <a name="_core_locking_records_in_your_recordset"></a>Kümenizde kayıtları kilitleme  
+##  <a name="_core_locking_records_in_your_recordset"></a> Kümenizde kayıtları kilitleme  
  Kayıt kümesi nesnesinin değiştirmek istiyorsanız [kilitleme modu](#_core_record.2d.locking_modes) varsayılandan çağırmadan önce modu değiştirmelisiniz **Düzenle**.  
   
 #### <a name="to-change-the-current-locking-mode-for-your-recordset"></a>Kümeniz için geçerli kilitleme modunu değiştirmek için  

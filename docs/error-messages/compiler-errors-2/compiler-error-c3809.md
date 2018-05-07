@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3809 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3809 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3809
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3809
 ms.assetid: 37eca584-c20c-464e-8e45-a987214b7ce4
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22b4406676ced6c2a96241eb15a4329d8933b777
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b4b9fabec4da63bfe881e0020e99cd5c49a51789
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3809"></a>Derleyici Hatası C3809
 'class': yönetilen veya WinRT türü arkadaş işlevleri/sınıfları/arabirimlerden sahip olamaz  

@@ -1,12 +1,9 @@
 ---
-title: "Cdbpropıdset sınıfı | Microsoft Docs"
-ms.custom: 
+title: Cdbpropıdset sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CDBPropIDSet
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - CDBPropIDSet class
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ee03feb715ebf96bd4de1af5374a2029f52bbf86
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 67bfd11a46d8e0c852c1881ff8874b7fbd817164
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet Sınıfı
 Öğesinden devralınan **DBPROPIDSET** yapısı ve anahtar alanları başlatır bir oluşturucu ekler yanı sıra [Addpropertyıd](../../data/oledb/cdbpropidset-addpropertyid.md) erişim yöntemi.  
@@ -47,7 +42,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 |-|-|  
 |[AddPropertyID](../../data/oledb/cdbpropidset-addpropertyid.md)|Bir özellik için özellik kimliği kümesi ekler.|  
 |[CDBPropIDSet](../../data/oledb/cdbpropidset-cdbpropidset.md)|Oluşturucu.|  
-|[SetGUID](../../data/oledb/cdbpropidset-setguid.md)|Özellik kimliği GUID ayarlar.|  
+|[Setguıd](../../data/oledb/cdbpropidset-setguid.md)|Özellik kimliği GUID ayarlar.|  
   
 ### <a name="operators"></a>İşleçler  
   

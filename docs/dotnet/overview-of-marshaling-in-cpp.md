@@ -1,12 +1,9 @@
 ---
-title: "C++'da hazırlamaya genel bakış | Microsoft Docs"
-ms.custom: 
+title: C++'da hazırlamaya genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - marshaling
@@ -18,21 +15,19 @@ helpviewer_keywords:
 - C++ Support Library, marshaling
 - marshaling, about marshaling
 ms.assetid: 997dd4bc-5f98-408f-b890-f35de9ce3bb8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 9d910c7d6346d23f094e9359f0e5fe3536ee09dc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1f950c8efbdd75e16096d158075e92594fb6b2d1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="overview-of-marshaling-in-c"></a>C++'da Hazırlamaya Genel Bakış
-Karma modda bazen yerel ve yönetilen türler arasında verilerinizi sıralamanız gerekir. [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)]yardımcı olmak için hazırlama kitaplığını sunulan sıralama ve basit bir şekilde veri dönüştürün.  
+Karma modda bazen yerel ve yönetilen türler arasında verilerinizi sıralamanız gerekir. [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)] yardımcı olmak için hazırlama kitaplığını sunulan sıralama ve basit bir şekilde veri dönüştürün.  
   
  Hazırlama kitaplığını ile veya olmadan kullanabilirsiniz bir [marshal_context sınıfı](../dotnet/marshal-context-class.md). Bazı dönüşümleri bir bağlam gerektirir. Diğer dönüştürme kullanarak uygulanabilir [marshal_as](../dotnet/marshal-as.md) işlevi. Aşağıdaki tabloda desteklenen geçerli dönüşümleri, bir bağlam ihtiyaç olup olmadığını ve hangi sıralama dosya eklemek zorunda:  
   
@@ -41,7 +36,7 @@ Karma modda bazen yerel ve yönetilen türler arasında verilerinizi sıralaman�
 |System::String ^|const char *|marshal_context|Marshal.h|  
 |const char *|System::String ^|marshal_as|Marshal.h|  
 |char *|System::String ^|marshal_as|Marshal.h|  
-|System::String ^|const wchar_t *|marshal_context|Marshal.h|  
+|System::String ^|const wchar_t*|marshal_context|Marshal.h|  
 |const wchar_t *|System::String ^|marshal_as|Marshal.h|  
 |wchar_t *|System::String ^|marshal_as|Marshal.h|  
 |System::IntPtr|İŞLEME|marshal_as|marshal_windows.h|  

@@ -1,13 +1,10 @@
 ---
 title: CTabCtrl kullanma | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - CTabCtrl
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CTabCtrl class [MFC], using
 - tab controls [MFC], using
 ms.assetid: 6bda6798-0085-4c09-a5ea-fe0e97af5c95
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c6386c5baf4af7447e4d3c711e644cb2ae5209a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a3fd34d88a035e4180eff955238004a18d9af09a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-ctabctrl"></a>CTabCtrl Kullanma
 "Sekme denetimi" Bölücü bir dizüstü bilgisayarın veya bir dosya dolabı etiketli klasörlerde benzerdir. Sınıfı tarafından temsil edilen sekme denetimi kullanmak [CTabCtrl](../mfc/reference/ctabctrl-class.md), bir kullanıcıya bir eş veya her bir sayfa arasındaki mantıksal ilişki öneren bir biçimde bir defada birden çok sayfa bilgiler veya denetimler göstermek için.  

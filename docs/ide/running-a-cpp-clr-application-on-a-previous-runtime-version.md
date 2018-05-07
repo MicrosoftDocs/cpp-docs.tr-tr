@@ -1,13 +1,10 @@
 ---
-title: "Önceki bir çalışma zamanı sürümünde C++ - clr uygulaması çalıştırma | Microsoft Docs"
-ms.custom: 
+title: Önceki bir çalışma zamanı sürümünde C++ - clr uygulaması çalıştırma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - common language runtime [C++], version specified
 - deploying applications [C++], runtime version specified
 ms.assetid: 940171b7-6937-4b14-8e87-c199e23f4f2e
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f64c0dc31be260332d4d79e8fa38d63bbf6357c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4f8e76930eb9191d27085d92a9d3a678812715fc
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="running-a-c-clr-application-on-a-previous-runtime-version"></a>Önceki Çalışma Zamanı Sürümünde C++ /clr Uygulaması Çalıştırma
 Aksi belirtilmediği sürece, C++ .NET Framework uygulama derleyici uygulamayı oluşturmak için kullandığı ortak dil çalışma zamanı (CLR) sürümünde çalıştırmak için oluşturulmuştur. Ancak, gerekli işlevselliği sağlayan başka bir sürüm üzerinde çalıştırmak için çalışma zamanı'nın bir sürümü için derlenmiş bir .exe uygulama mümkündür.  

@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2394 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2394 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2394
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2394
 ms.assetid: 653fa9a0-29b3-48aa-bc01-82f98f717a2b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d9cdfb2ace09bfc3aae4fa4afabd0d45117a80a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6a31a43e50a19765d7d5a07ca61f3195099793ba
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2394"></a>Derleyici Hatası C2394
 'your_type::operator'op' ": CLR veya WinRToperator geçerli değil. En az bir parametre aşağıdaki türden olması gerekir: 'T ^', 'T ^ %', 'T ^ &', burada T 'your_type' =  

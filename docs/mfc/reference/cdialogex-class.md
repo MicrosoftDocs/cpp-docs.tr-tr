@@ -2,11 +2,8 @@
 title: CDialogEx sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CDialogEx
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - CDialogEx [MFC], SetBackgroundColor
 - CDialogEx [MFC], SetBackgroundImage
 ms.assetid: a6ed3b1f-aef8-4b66-ac78-2160faf63c13
-caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c22e258c8306eab1f55fa94f875dde5b68256c71
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 42da6afd054f05bb37ac0b4ea8bf497a31e433b8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdialogex-class"></a>CDialogEx sınıfı
 `CDialogEx` Sınıfı bir iletişim kutusunun arka plan resmi ve arka plan rengini belirtir.  
@@ -79,7 +74,7 @@ class CDialogEx : public CDialog
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdialogex.h  
   
-##  <a name="cdialogex"></a>CDialogEx::CDialogEx  
+##  <a name="cdialogex"></a>  CDialogEx::CDialogEx  
  Oluşturan bir `CDialogEx` nesnesi.  
   
 ```  
@@ -94,23 +89,23 @@ CDialogEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nIDTemplate`  
+ [in] `nIDTemplate`  
  Bir iletişim kutusu şablonu kaynak kimliği.  
   
- [in]`lpszTemplateName`  
+ [in] `lpszTemplateName`  
  Bir iletişim kutusu şablonu kaynak adı.  
   
- [in]`pParent`  
+ [in] `pParent`  
  Üst pencere için bir işaretçi. Varsayılan değer `NULL` şeklindedir.  
   
- [in]`pParentWnd`  
+ [in] `pParentWnd`  
  Üst pencere için bir işaretçi. Varsayılan değer `NULL` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setbackgroundcolor"></a>CDialogEx::SetBackgroundColor  
+##  <a name="setbackgroundcolor"></a>  CDialogEx::SetBackgroundColor  
  İletişim kutusunun arka plan rengini belirler.  
   
 ```  
@@ -120,15 +115,15 @@ void SetBackgroundColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`color`  
+ [in] `color`  
  RGB renk değeri.  
   
- [in]`bRepaint`  
- `TRUE`Ekran hemen güncelleştirmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ [in] `bRepaint`  
+ `TRUE` Ekran hemen güncelleştirmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setbackgroundimage"></a>CDialogEx::SetBackgroundImage  
+##  <a name="setbackgroundimage"></a>  CDialogEx::SetBackgroundImage  
  İletişim kutusunun arka plan görüntüsü olarak ayarlar.  
   
 ```  
@@ -146,20 +141,20 @@ BOOL SetBackgroundImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hBitmap`  
+ [in] `hBitmap`  
  Arka plan görüntüsü için bir tanıtıcı.  
   
- [in]`uiBmpResId`  
+ [in] `uiBmpResId`  
  Arka plan görüntü kaynak kimliği.  
   
- [in]`location`  
+ [in] `location`  
  Aşağıdakilerden birini `CDialogEx::BackgroundLocation` görüntüsünün konumu belirten değerleri. Geçerli değerler BACKGR_TILE, BACKGR_TOPLEFT, BACKGR_TOPRIGHT, BACKGR_BOTTOMLEFT ve BACKGR_BOTTOMRIGHT içerir. BACKGR_TILE varsayılan değerdir.  
   
- [in]`bAutoDestroy`  
- `TRUE`otomatik olarak arka plan görüntüsü yok etmek için; Aksi takdirde `FALSE`.  
+ [in] `bAutoDestroy`  
+ `TRUE` otomatik olarak arka plan görüntüsü yok etmek için; Aksi takdirde `FALSE`.  
   
- [in]`bRepaint`  
- `TRUE`anında iletişim kutusunu yeniden boyutlandırmaya; Aksi takdirde `FALSE`.  
+ [in] `bRepaint`  
+ `TRUE` anında iletişim kutusunu yeniden boyutlandırmaya; Aksi takdirde `FALSE`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İkinci yöntemde sözdizimi, aşırı `TRUE` yöntemi ise, başarılı, aksi takdirde `FALSE`.  

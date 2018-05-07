@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2293 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2293 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2293
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2293
 ms.assetid: 17e7b4e2-368b-4dd7-a01b-d82be60f8e56
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9aa5420a0de44224773ec6948184711d18b83e10
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c6b3f395199a1621d507683aa6c79b1212888145
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2293"></a>Derleyici Hatası C2293
 'tanımlayıcısı': __based tanımlayıcısı olarak bir üye değişkeni için geçersiz  

@@ -1,13 +1,10 @@
 ---
-title: "Özel durumlar: MFC makroları ve C++ özel durumlarını kullanma | Microsoft Docs"
-ms.custom: 
+title: 'Özel durumlar: MFC makroları ve C++ özel durumlarını kullanma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - heap corruption [MFC]
 - nested catch blocks [MFC]
 ms.assetid: d664a83d-879b-44d4-bdf0-029f0aca69e9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6597f43deee73addff8e8f2045a38d7b1109fc0b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7c50e7358d29e04c81a5e443d5b1a03881fed7f6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="exceptions-using-mfc-macros-and-c-exceptions"></a>Özel Durumlar: MFC Makroları ve C++ Özel Durumlarını Kullanma
 Bu makalede MFC özel durum işleme makroları ve C++ özel durum işleme anahtar sözcükleri kullanan kodu yazmada dikkat edilmesi gerekenler açıklanmaktadır.  
@@ -46,7 +41,7 @@ Bu makalede MFC özel durum işleme makroları ve C++ özel durum işleme anahta
   
 -   [Try blokları içindeki catch blokları](#_core_try_blocks_inside_catch_blocks)  
   
-##  <a name="_core_mixing_exception_keywords_and_macros"></a>Özel anahtar sözcükleri ve makrolar karıştırma  
+##  <a name="_core_mixing_exception_keywords_and_macros"></a> Özel anahtar sözcükleri ve makrolar karıştırma  
  MFC özel durum makroları ve C++ özel durum anahtar sözcükleri aynı program karıştırabilirsiniz. Ancak, kapsam dışı olduğunuzda özel durum işleme anahtar sözcükleri kullanarak kod'in almadığı makrolar özel durum nesneleri otomatik olarak silmek için aynı blokta C++ özel durum sözcüklerle MFC makroları karıştıramazsınız. Daha fazla bilgi için bkz: [özel durumlar: çalýþýrçalýþma yakalama ve silme özel durumları](../mfc/exceptions-catching-and-deleting-exceptions.md).  
   
  Makrolar ve anahtar sözcükler arasındaki temel fark özel kapsam dışına çıktığında makrolar Yakalanan özel durum "otomatik olarak" Sil ' dir. Anahtar sözcükler kullanarak kod yoktur; özel durumlar bir catch bloğu içinde yakalanan açıkça silinmelidir. Makrolar ve C++ özel durum anahtar sözcüklerini karıştırma bir özel durum nesnesi silinmedi bellek sızıntıları neden veya bir özel durum iki kez silindiğinde yığın bozulması.  
@@ -59,7 +54,7 @@ Bu makalede MFC özel durum işleme makroları ve C++ özel durum işleme anahta
   
  [!code-cpp[NVC_MFCExceptions#11](../mfc/codesnippet/cpp/exceptions-using-mfc-macros-and-cpp-exceptions_2.cpp)]  
   
-##  <a name="_core_try_blocks_inside_catch_blocks"></a>Try blokları içindeki Catch blokları  
+##  <a name="_core_try_blocks_inside_catch_blocks"></a> Try blokları içindeki Catch blokları  
  Geçerli özel durumun içinden yeniden atılamıyor bir **deneyin** içinde blok bir **CATCH** bloğu. Aşağıdaki örnekte geçersiz:  
   
  [!code-cpp[NVC_MFCExceptions#12](../mfc/codesnippet/cpp/exceptions-using-mfc-macros-and-cpp-exceptions_3.cpp)]  

@@ -1,13 +1,10 @@
 ---
-title: "Tek bir belgeye birden çok görünüm ekleme | Microsoft Docs"
-ms.custom: 
+title: Tek bir belgeye birden çok görünüm ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - single document interface (SDI), adding views
 - views [MFC], SDI applications
 ms.assetid: 86d0c134-01d5-429c-b672-36cfb956dc01
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 865b30ac7b4c8910e92d14274f1224c25e7f74d8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cb40b356b5601e19c33083c7b731a1dc411de3c5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="adding-multiple-views-to-a-single-document"></a>Tek Bir Belgeye Birden Çok Görünüm Ekleme
 Microsoft Foundation Class (MFC) kitaplığı ile oluşturulan bir tek belge arabirimi (SDI) uygulamasında her belge türü tek bir görünüm türü ile ilişkilidir. Bazı durumlarda, yeni bir görünüm geçerli görünümüyle belgenin geçme özelliğine sahip önerilir.  
@@ -52,9 +47,9 @@ Microsoft Foundation Class (MFC) kitaplığı ile oluşturulan bir tek belge ara
   
 -   Adını `CWinApp`-türetilen nesne `CMyWinApp`, ve `CMyWinApp` bildirilir ve MYWINAPP tanımlanmış. H ve MYWINAPP. CPP.  
   
--   `CNewView`Yeni adı `CView`-nesne, türetilmiş ve `CNewView` bildirilir ve yeni görünüm tanımlanmış. H ve yeni görünüm. CPP.  
+-   `CNewView` Yeni adı `CView`-nesne, türetilmiş ve `CNewView` bildirilir ve yeni görünüm tanımlanmış. H ve yeni görünüm. CPP.  
   
-##  <a name="vcconmodifyexistingapplicationa1"></a>Mevcut uygulama sınıfını değiştirme  
+##  <a name="vcconmodifyexistingapplicationa1"></a> Mevcut uygulama sınıfını değiştirme  
  Uygulamanın görünümleri arasında geçiş yapmak için görünümleri ve bunları geçiş yapmak için bir yöntem depolamak için üye değişkenleri ekleyerek uygulama sınıfı değiştirmeniz gerekir.  
   
  Bildirimi için aşağıdaki kodu ekleyin `CMyWinApp` MYWINAPP içinde. Y:  
@@ -71,7 +66,7 @@ Microsoft Foundation Class (MFC) kitaplığı ile oluşturulan bir tek belge ara
   
  Yaptığınız değişiklikleri kaydedin ve sonraki adıma devam edin.  
   
-##  <a name="vcconnewviewclassa2"></a>Oluşturma ve yeni görünüm sınıfı değiştirme  
+##  <a name="vcconnewviewclassa2"></a> Oluşturma ve yeni görünüm sınıfı değiştirme  
  Yeni Görünüm sınıfı oluşturma yapılan kolay kullanarak **yeni sınıf** komutunu sınıfı görünümünden kullanılabilir. Yalnızca bu sınıf için öğesinden türetilen gereksinimdir `CView`. Bu yeni sınıf uygulamaya ekleyin. Projeye yeni bir sınıf ekleme ile ilgili ayrıntılı bilgi için bkz: [sınıf ekleme](../ide/adding-a-class-visual-cpp.md).  
   
  Projeye sınıfı ekledikten sonra bazı görünüm sınıfı üyeleri erişilebilirliğini değiştirmek gerekir.  
@@ -80,7 +75,7 @@ Microsoft Foundation Class (MFC) kitaplığı ile oluşturulan bir tek belge ara
   
  Yaptığınız değişiklikleri kaydedin ve sonraki adıma devam edin.  
   
-##  <a name="vcconattachnewviewa3"></a>Oluşturun ve yeni görünüm ekleyin  
+##  <a name="vcconattachnewviewa3"></a> Oluşturun ve yeni görünüm ekleyin  
  Değiştirmenize gerek oluşturmak ve yeni görünüm eklemek için `InitInstance` uygulama sınıfınızın işlevi. Yeni bir görünüm nesnesi ve ardından başlatır hem oluşturur Yeni kod değişikliği ekler `m_pOldView` ve `m_pNewView` nesnelerle iki varolan görünümü.  
   
  İçinde yeni görünüm oluşturulduğundan `InitInstance` işlevi, yeni ve mevcut görünümleri uygulama ömrü boyunca kalır. Ancak, uygulama yeni görünüm kolayca dinamik olarak oluşturabilir.  
@@ -91,7 +86,7 @@ Microsoft Foundation Class (MFC) kitaplığı ile oluşturulan bir tek belge ara
   
  Yaptığınız değişiklikleri kaydedin ve sonraki adıma devam edin.  
   
-##  <a name="vcconswitchingfunctiona4"></a>Geçiş işlevini uygulayın  
+##  <a name="vcconswitchingfunctiona4"></a> Geçiş işlevini uygulayın  
  Önceki adımda oluşturulan ve yeni bir görünüm nesnesi başlatılmadı kodu eklendi. Son ana anahtarlama yöntemi uygulamak için parçasıdır `SwitchView`.  
   
  Uygulamanız için uygulama dosya sonunda (MYWINAPP. sınıfı CPP), aşağıdaki yöntemi ekleyin:  
@@ -100,7 +95,7 @@ Microsoft Foundation Class (MFC) kitaplığı ile oluşturulan bir tek belge ara
   
  Yaptığınız değişiklikleri kaydedin ve sonraki adıma devam edin.  
   
-##  <a name="vcconswitchingtheviewa5"></a>Görünüm geçmek için desteği ekleme  
+##  <a name="vcconswitchingtheviewa5"></a> Görünüm geçmek için desteği ekleme  
  Çağıran kodu ekleyerek son adım içerir `SwitchView` uygulama görünümleri arasında geçiş yapma gerektiğinde yöntemi. Bu çeşitli şekillerde yapılabilir: seçmek kullanıcı için yeni menü öğesi ekleme ya da belirli koşullar karşılandığında görünüm dahili olarak geçiş tarafından.  
   
  Yeni menü öğeleri ve komut işleyici işlevleri ekleme hakkında daha fazla bilgi için bkz: [komutlar ve denetim bildirimleri için işleyiciler](../mfc/handlers-for-commands-and-control-notifications.md).  

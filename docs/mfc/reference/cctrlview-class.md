@@ -1,12 +1,9 @@
 ---
-title: "CCtrlView sınıfı | Microsoft Docs"
-ms.custom: 
+title: CCtrlView sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CCtrlView
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - CCtrlView [MFC], m_dwDefaultStyle
 - CCtrlView [MFC], m_strClass
 ms.assetid: ff488596-1e71-451f-8fec-b0831a7b44e0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 484abaf5344400e03b53038d2c137497c202345f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c3503f59096d3879f986b2a8c99bdb9823ef4e24
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cctrlview-class"></a>CCtrlView sınıfı
 Windows 98 ve Windows NT tarafından 3.51 ve sonraki sürümlerde desteklenen ortak denetimleri için belge görünüm mimarisi uyum sağlar.  
@@ -85,7 +80,7 @@ class CCtrlView : public CView
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="cctrlview"></a>CCtrlView::CCtrlView  
+##  <a name="cctrlview"></a>  CCtrlView::CCtrlView  
  Oluşturan bir `CCtrlView` nesnesi.  
   
 ```  
@@ -104,14 +99,14 @@ CCtrlView(
 ### <a name="remarks"></a>Açıklamalar  
  Yeni bir çerçeve penceresi oluşturulduğunda veya bir pencereyi bölmek framework Oluşturucusu çağırır. Geçersiz kılma [CView::OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) belge eklendikten sonra Görünüm başlatılamadı. Çağrı [CWnd::Create](../../mfc/reference/cwnd-class.md#create) veya [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex) Windows nesnesi oluşturulamıyor.  
   
-##  <a name="m_strclass"></a>CCtrlView::m_strClass  
+##  <a name="m_strclass"></a>  CCtrlView::m_strClass  
  View sınıfı Windows sınıf adı içeriyor.  
   
 ```  
 CString m_strClass;  
 ```  
   
-##  <a name="m_dwdefaultstyle"></a>CCtrlView::m_dwDefaultStyle  
+##  <a name="m_dwdefaultstyle"></a>  CCtrlView::m_dwDefaultStyle  
  View sınıfı için varsayılan stili içerir.  
   
 ```  
@@ -121,7 +116,7 @@ DWORD m_dwDefaultStyle;
 ### <a name="remarks"></a>Açıklamalar  
  Bir pencere oluşturulduğunda bu stili uygulanır.  
   
-##  <a name="ondraw"></a>CCtrlView::OnDraw  
+##  <a name="ondraw"></a>  CCtrlView::OnDraw  
  İçeriğini çizmek için çerçevesi tarafından çağrılır `CCtrlView` belirtilen cihaz bağlamı kullanma nesne.  
   
 ```  
@@ -133,9 +128,9 @@ virtual void OnDraw(CDC* pDC);
  Çizim oluştuğu cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `OnDraw`ekran görüntüsü, tarafından belirtilen bir ekran cihaz bağlamı geçirme için genellikle adlı `pDC`.  
+ `OnDraw` ekran görüntüsü, tarafından belirtilen bir ekran cihaz bağlamı geçirme için genellikle adlı `pDC`.  
   
-##  <a name="precreatewindow"></a>CCtrlView::PreCreateWindow  
+##  <a name="precreatewindow"></a>  CCtrlView::PreCreateWindow  
  Bu bağlı Windows penceresi oluşturulmasını önce adlı `CWnd` nesnesi.  
   
 ```  

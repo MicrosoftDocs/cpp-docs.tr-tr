@@ -1,12 +1,9 @@
 ---
-title: "Icommandtextımpl::setCommandText | Microsoft Docs"
-ms.custom: 
+title: Icommandtextımpl::setCommandText | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ICommandTextImpl.SetCommandText
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - SetCommandText method
 ms.assetid: 7271bfb0-7a8b-4281-b3e8-7c80b9fe79d4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6025413a507aa7fb54e0c8672c94e0f8f162f895
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 2a45b1f2bbe2318d1a08b80a7370b4077a985c03
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="icommandtextimplsetcommandtext"></a>ICommandTextImpl::SetCommandText
 Varolan komut metni değiştirme komut metni ayarlar.  

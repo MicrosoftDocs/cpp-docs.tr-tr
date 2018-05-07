@@ -1,12 +1,9 @@
 ---
-title: "Cdberrorınfo sınıfı | Microsoft Docs"
-ms.custom: 
+title: Cdberrorınfo sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CDBErrorInfo
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - CDBErrorInfo class
 ms.assetid: 9a5c18a2-ee3e-40f5-ab4c-581288d7f737
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ae65a1a04d5befdfcd22327def8f60d96c9d4cff
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 59222e30fe4a0ee7914c4a4d4e8dfa0d6d3a260b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdberrorinfo-class"></a>CDBErrorInfo Sınıfı
 OLE DB kullanarak OLE DB hata işleme için destek sağlar [IErrorRecords](https://msdn.microsoft.com/en-us/library/ms718112.aspx) arabirimi.  
@@ -59,6 +54,6 @@ class CDBErrorInfo
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [DBViewer](../../visual-cpp-samples.md)   
+ [DBVIEWER](../../visual-cpp-samples.md)   
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
  [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

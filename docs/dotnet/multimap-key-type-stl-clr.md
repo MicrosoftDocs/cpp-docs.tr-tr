@@ -1,12 +1,9 @@
 ---
 title: multimap::key_type (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::multimap::key_type
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - key_type member [STL/CLR]
 ms.assetid: e6de1714-6e68-4f64-a2aa-a2571059bd59
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 86ec1d20790a75412748d5af683ea099fc010903
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 80e4ea26757795dc24123787fe8248fa45adec83
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="multimapkeytype-stlclr"></a>multimap::key_type (STL/CLR)
 Bir sıralama anahtarının türü.  

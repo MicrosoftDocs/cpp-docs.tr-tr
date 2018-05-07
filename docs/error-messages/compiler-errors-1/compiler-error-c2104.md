@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2104 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2104 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2104
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2104
 ms.assetid: 2ea78896-72a6-4901-a1fa-f33ea88ad61b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b8c490c4cdd4a08e953d90a7dd88ac2a3564f68
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 28f3a9173f1141c055547149bc18b5f96a3a475b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2104"></a>Derleyici Hatası C2104
 ' &' göz ardı bit alanı  

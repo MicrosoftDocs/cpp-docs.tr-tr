@@ -1,12 +1,9 @@
 ---
-title: "CCommonDialog sınıfı | Microsoft Docs"
-ms.custom: 
+title: CCommonDialog sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CCommonDialog
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - CCommonDialog [MFC], CCommonDialog
 ms.assetid: 1f68d65f-a0fd-4778-be22-ebbe51a95f95
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a42acf9c4655868bcc078b3e40d3966587aeaaad
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 19f8c0aa6aaa4980466918eac2649cc246b2e6ce
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ccommondialog-class"></a>CCommonDialog sınıfı
 Windows ortak iletişim kutuları işlevselliğini kapsülleyen sınıflar için temel sınıf.  
@@ -79,7 +74,7 @@ class CCommonDialog : public CDialog
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdlgs.h  
   
-##  <a name="ccommondialog"></a>CCommonDialog::CCommonDialog  
+##  <a name="ccommondialog"></a>  CCommonDialog::CCommonDialog  
  Oluşturan bir `CCommonDialog` nesnesi.  
   
 ```  

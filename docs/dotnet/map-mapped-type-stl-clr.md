@@ -1,12 +1,9 @@
 ---
 title: Map::mapped_type (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::map::mapped_type
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - mapped_type member [STL/CLR]
 ms.assetid: 818ee40d-8355-446e-a7b2-eb5bf8cc689d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 5e2a482582d49680c448c3172a11b54404d8390a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 549a5b6f31375a9b6ea5cc8f07d93d2c223ff6e8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mapmappedtype-stlclr"></a>map::mapped_type (STL/CLR)
 Her bir anahtar ile ilişkili bir eşlenen değer türü.  

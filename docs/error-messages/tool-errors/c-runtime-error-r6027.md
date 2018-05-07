@@ -1,12 +1,9 @@
 ---
-title: "C çalışma zamanı hatası R6027 | Microsoft Docs"
-ms.custom: 
+title: C çalışma zamanı hatası R6027 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - R6027
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - R6027
 ms.assetid: c06a62b3-08d9-4bf5-bcad-8340ec552f69
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 080b5cdf2e68889e7d11fe14f20524f9cced03c3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cc38d664a6c9e2e2be0c360709ed6b39b1014b05
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="c-runtime-error-r6027"></a>C çalışma zamanı hatası R6027
 lowio başlatma için yeterli alan yok  

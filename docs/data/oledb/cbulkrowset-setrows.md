@@ -1,12 +1,9 @@
 ---
 title: CBulkRowset::SetRows | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL.CBulkRowset.SetRows
@@ -23,18 +20,16 @@ dev_langs:
 helpviewer_keywords:
 - SetRows method
 ms.assetid: 7e92312a-bfd0-4c24-a799-62bef663f28e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fa6305139e554c164f01acf74b78c069e1d030db
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 1519c0113744bb3c1e03bec52d5504ce504ee719
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cbulkrowsetsetrows"></a>CBulkRowset::SetRows
 Her çağrısı tarafından alınan satır işleyicilerini sayısını ayarlar.  

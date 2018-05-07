@@ -1,13 +1,10 @@
 ---
-title: "Alt pencere bildirim iletisi işleyicileri | Microsoft Docs"
-ms.custom: 
+title: Alt pencere bildirim iletisi işleyicileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - ChildWindow
 dev_langs:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - windows [MFC], message handlers
 - child windows [MFC], messages
 ms.assetid: fddfdd08-8ecf-4f84-8b45-5a84616aaa8d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f56f02bd845efdeb59a2b68604098c637ccd45c3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e88a26c96564a75a41f221302169dd1f1e46e9e2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="child-window-notification-message-handlers"></a>Alt Pencere Bildirim İletisi İşleyicileri
 Alt pencere bildirim iletileri beş kategoriye ayrılır:  

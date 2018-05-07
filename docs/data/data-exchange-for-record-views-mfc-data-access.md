@@ -2,12 +2,9 @@
 title: Kayıt görünümleri (MFC veri erişimi) için veri değişimi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - DDX (dialog data exchange), record views
 - RFX (record field exchange)
 ms.assetid: abc52ca7-6997-47a7-98f3-f347f52b1f72
-caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1db5adaab66fec2b587f7a15005caa3a9374ff12
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 58bda2d9a712e38951b8201c08e5bbbe369537eb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="data-exchange-for-record-views---mfc-data-access"></a>Kayıt görünümleri (MFC veri erişimi) için veri değişimi
 Kullandığınızda [sınıfı Ekle](../mfc/reference/adding-an-mfc-odbc-consumer.md) kayıt görünümünün iletişim şablon kaynağı denetimlerinde kayıt alanlarına eşlemek için her iki yönde veri değişimi framework yönetir — denetimlerine kayıt kümesi ve kayıt kümesine denetimleri. DDX mekanizmasını kullanarak kendiniz geri ve İleri veri aktarmak için kod yazmanız gerekmez anlamına gelir.  
@@ -37,7 +32,7 @@ Kullandığınızda [sınıfı Ekle](../mfc/reference/adding-an-mfc-odbc-consume
   
  Aşağıdaki şekil kayıt görünümleri için DDX ve RFX arasındaki ilişkiyi gösterir.  
   
- ![İletişim &#45; veri değişimi ve kayıt &#45; alan exchange](../data/media/vc37xt1.gif "vc37xt1")  
+ ![İletişim&#45;veri değişimi ve kayıt&#45;alan exchange](../data/media/vc37xt1.gif "vc37xt1")  
 İletişim kutusu veri değişimi ve kayıt alanı değişimi  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md). RFX hakkında daha fazla bilgi için bkz: [kayıt alanı değişimi (RFX)](../data/odbc/record-field-exchange-rfx.md).  

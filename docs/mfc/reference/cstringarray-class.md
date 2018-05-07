@@ -1,12 +1,9 @@
 ---
-title: "CStringArray sınıfı | Microsoft Docs"
-ms.custom: 
+title: CStringArray sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CStringArray
@@ -51,17 +48,15 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: 6c637e06-bba8-4c08-b0fc-cf8cb067ce34
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a2e9bc2a8f88ce79b6d4c31a4754ad660ecfcbe
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4a3ebc30304f2d194a10b71f832b42039bac6a53
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cstringarray-class"></a>CStringArray sınıfı
 Dizileri destekler [CString](../../atl-mfc-shared/using-cstring.md) nesneleri.  
@@ -124,7 +119,7 @@ class CStringArray : public CObject
 |[CObArray::operator]](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi alır veya ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CStringArray`bir araya getirir `IMPLEMENT_SERIAL` makrosu seri hale getirme ve alt öğeleri dökme desteklemek için. Bir dizi varsa `CString` nesneleri aşırı yüklenmiş ekleme işleciyle veya ile bir arşiv depolandığı `Serialize` üye işlevi, her öğe sırayla serileştirilmiş.  
+ `CStringArray` bir araya getirir `IMPLEMENT_SERIAL` makrosu seri hale getirme ve alt öğeleri dökme desteklemek için. Bir dizi varsa `CString` nesneleri aşırı yüklenmiş ekleme işleciyle veya ile bir arşiv depolandığı `Serialize` üye işlevi, her öğe sırayla serileştirilmiş.  
   
 > [!NOTE]
 >  Bir dizi kullanmadan önce kullanın `SetSize` boyutuna kurmak ve bunun için bellek ayrılamadı. Kullanmıyorsanız, `SetSize`, dizinizi için öğe eklemek görüntülenmesine neden olur sık bırakılan ve kopyalanır. Sık sık yeniden ayırma ve kopyalama verimsiz ve bellek parçalara.  

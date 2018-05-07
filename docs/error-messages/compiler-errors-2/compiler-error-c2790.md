@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2790 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2790 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2790
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2790
 ms.assetid: 38d4fce1-ba00-413d-8bc1-e8aa43d7bc1f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b10da64605743612a4d5522b5c19d1f2029ced8c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 11f1c90fed93666fad7513e2b4186a5baa2aa406
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2790"></a>Derleyici Hatası C2790
 'Süper': Bu anahtar sözcüğü yalnızca sınıf üye işlevi gövdesi içinde kullanılabilir  

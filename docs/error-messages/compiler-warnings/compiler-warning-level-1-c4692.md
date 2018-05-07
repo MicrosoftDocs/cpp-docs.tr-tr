@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4692 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4692 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4692
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4692
 ms.assetid: f6fb3acc-8228-491a-9c30-ce302d8a9c75
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8088c1434ab33899f60b08c0817464f9ddb9c82e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a908aae7e561f78514cda1f31b78060ce88d90ee
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4692"></a>Derleyici Uyarısı (düzey 1) C4692
 'function': özel olmayan üyenin imzası 'native_type' derleme özel yerel türünü içeriyor  

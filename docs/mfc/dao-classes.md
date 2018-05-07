@@ -1,13 +1,10 @@
 ---
-title: "DAO sınıfları | Microsoft Docs"
-ms.custom: 
+title: DAO sınıfları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - vc.classes.data
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - database classes [MFC], DAO
 - DAO [MFC], classes
 ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c80351071318b88956fa3717875561bdf30232dc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f43595ca5f688372a70999231ceebec5282cd3b6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dao-classes"></a>DAO Sınıfları
 Microsoft Visual Basic ve Microsoft Access aynı veritabanı altyapısı'nı kullanan veri erişim nesnesi (DAO) veritabanları kolay erişim sağlamak için diğer uygulama framework sınıfları ile bu sınıfların çalışır. DAO sınıfları, çok çeşitli açık veritabanı bağlantısı (ODBC) sürücüler kullanılabilir veritabanlarını da erişebilirsiniz.  
@@ -62,7 +57,7 @@ Microsoft Visual Basic ve Microsoft Access aynı veritabanı altyapısı'nı kul
   
 ## <a name="related-classes"></a>İlgili sınıflar  
  [CLongBinary](../mfc/reference/clongbinary-class.md)  
- İkili büyük nesne (BLOB) için depolama alanı için bir tanıtıcı bir bit eşlem gibi yalıtır. `CLongBinary`nesneleri veritabanı tablolarında depolanan büyük veri nesneleri yönetmek için kullanılır.  
+ İkili büyük nesne (BLOB) için depolama alanı için bir tanıtıcı bir bit eşlem gibi yalıtır. `CLongBinary` nesneleri veritabanı tablolarında depolanan büyük veri nesneleri yönetmek için kullanılır.  
   
  [COleCurrency](../mfc/reference/colecurrency-class.md)  
  OLE Otomasyon türü için sarmalayıcı **para birimi**, 15 basamağa ondalık ayırıcıdan önce ve sonra 4 basamaklı bir sabit noktalı aritmetik türü.  

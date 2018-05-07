@@ -2,11 +2,8 @@
 title: CWnd sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CWnd
@@ -827,17 +824,15 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e920b9bed8cb46ad960270dc1addda5605cdb302
-ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.openlocfilehash: 3b6dadffe56350904fe4c115550590b21d009868
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 Microsoft Foundation Class Kitaplığı'ndaki tüm pencere sınıfları temel işlevselliğini sağlar.  
@@ -1275,7 +1270,7 @@ class CWnd : public CCmdTarget
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CWnd::operator HWND](#operator_hwnd)|Bir pencere için bir tanıtıcı almak için çağırın.|  
-|[CWnd::operator !=](#operator_neq)|Bir pencere, tanıtıcısı penceresi ile aynı olup olmadığını belirler [m_hWnd](#m_hwnd).|  
+|[CWnd::operator! =](#operator_neq)|Bir pencere, tanıtıcısı penceresi ile aynı olup olmadığını belirler [m_hWnd](#m_hwnd).|  
 |[CWnd::operator ==](#operator_eq_eq)|Bir pencere, tanıtıcısı penceresi ile aynı olup olmadığını belirler [m_hWnd](#m_hwnd).|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
@@ -2308,7 +2303,7 @@ int DlgDirList(
   
 - **DDL_READONLY** salt okunur dosyalar.  
   
-- **DDL_HIDDEN** Hidden files.  
+- **DDL_HIDDEN** gizli dosyaları.  
   
 - **DDL_SYSTEM** sistem dosyaları.  
   
@@ -2318,7 +2313,7 @@ int DlgDirList(
   
 - **DDL_POSTMSGS LB_DIR** flag. Varsa **LB_DIR** bayrağı ayarlanmışsa, Windows tarafından oluşturulan iletileri yerleştirir `DlgDirList` uygulamanın sırada; Aksi halde, doğrudan iletişim kutusu yordamına gönderilirler.  
   
-- **DDL_DRIVES** Drives. Varsa **DDL_DRIVES** bayrağı ayarlandığında, **DDL_EXCLUSIVE** bayrağı otomatik olarak ayarlanır. Bu nedenle, sürücüler ve dosyalar içeren bir dizin listesi oluşturmak için çağırmalısınız `DlgDirList` iki kez: kez **DDL_DRIVES** bayrak kümesi ve bir kez listenin geri kalanı için bayraklarla.  
+- **DDL_DRIVES** sürücüler. Varsa **DDL_DRIVES** bayrağı ayarlandığında, **DDL_EXCLUSIVE** bayrağı otomatik olarak ayarlanır. Bu nedenle, sürücüler ve dosyalar içeren bir dizin listesi oluşturmak için çağırmalısınız `DlgDirList` iki kez: kez **DDL_DRIVES** bayrak kümesi ve bir kez listenin geri kalanı için bayraklarla.  
   
 - **DDL_EXCLUSIVE** özel bit. Özel biti ayarlanmışsa, yalnızca belirtilen türde dosyalar listelenir; Aksi takdirde normal dosyaları ve belirtilen türdeki dosyaları listelenmektedir.  
   
@@ -2332,7 +2327,7 @@ int DlgDirList(
   
  `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`  
   
- Bu örnekte, `drive` bir sürücü harfi `directory` geçerli dizin adı ve *filename* en az bir joker karakter içermelidir geçerli bir dosya adı. Herhangi bir karakter ve bir yıldız işareti aynı anlamı bir soru işareti (*) joker karakter olan (  **\*** ), herhangi bir sayıda karakter eşleşmesi anlamına gelir.  
+ Bu örnekte, `drive` bir sürücü harfi `directory` geçerli dizin adı ve *filename* en az bir joker karakter içermelidir geçerli bir dosya adı. Herhangi bir karakter ve bir yıldız işareti aynı anlamı bir soru işareti (*) joker karakter olan ( **\***), herhangi bir sayıda karakter eşleşmesi anlamına gelir.  
   
  İçin 0 uzunlukta bir dize belirtirseniz `lpPathSpec`, veya yalnızca bir dizin adı belirtin, ancak hiçbir dosya belirtimi dahil etmeyin, dize olacak şekilde değiştirilecek "*.\*".  
   
@@ -2371,7 +2366,7 @@ int DlgDirListComboBox(
   
 - **DDL_READONLY** salt okunur dosyalar.  
   
-- **DDL_HIDDEN** Hidden files.  
+- **DDL_HIDDEN** gizli dosyaları.  
   
 - **DDL_SYSTEM** sistem dosyaları.  
   
@@ -2379,9 +2374,9 @@ int DlgDirListComboBox(
   
 - **DDL_ARCHIVE** arşivler.  
   
-- **DDL_POSTMSGS CB_DIR** flag. Varsa **CB_DIR** bayrağı ayarlanmışsa, Windows tarafından oluşturulan iletileri yerleştirir `DlgDirListComboBox` uygulamanın sırada; Aksi halde, doğrudan iletişim kutusu yordamına gönderilirler.  
+- **DDL_POSTMSGS CB_DIR** bayrağı. Varsa **CB_DIR** bayrağı ayarlanmışsa, Windows tarafından oluşturulan iletileri yerleştirir `DlgDirListComboBox` uygulamanın sırada; Aksi halde, doğrudan iletişim kutusu yordamına gönderilirler.  
   
-- **DDL_DRIVES** Drives. Varsa **DDL_DRIVES** bayrağı ayarlandığında, **DDL_EXCLUSIVE** bayrağı otomatik olarak ayarlanır. Bu nedenle, sürücüler ve dosyalar içeren bir dizin listesi oluşturmak için çağırmalısınız `DlgDirListComboBox` iki kez: kez **DDL_DRIVES** bayrak kümesi ve bir kez listenin geri kalanı için bayraklarla.  
+- **DDL_DRIVES** sürücüler. Varsa **DDL_DRIVES** bayrağı ayarlandığında, **DDL_EXCLUSIVE** bayrağı otomatik olarak ayarlanır. Bu nedenle, sürücüler ve dosyalar içeren bir dizin listesi oluşturmak için çağırmalısınız `DlgDirListComboBox` iki kez: kez **DDL_DRIVES** bayrak kümesi ve bir kez listenin geri kalanı için bayraklarla.  
   
 - **DDL_EXCLUSIVE** özel bit. Özel biti ayarlanmışsa, yalnızca belirtilen türde dosyalar listelenir; Aksi takdirde normal dosyaları ve belirtilen türdeki dosyaları listelenmektedir.  
   
@@ -2395,7 +2390,7 @@ int DlgDirListComboBox(
   
  `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`  
   
- Bu örnekte, `drive` bir sürücü harfi `directory` geçerli dizin adı ve *filename* en az bir joker karakter içermelidir geçerli bir dosya adı. Herhangi bir karakter ve bir yıldız işareti aynı anlamı bir soru işareti (*) joker karakter olan (  **\*** ), herhangi bir sayıda karakter eşleştirilmez.  
+ Bu örnekte, `drive` bir sürücü harfi `directory` geçerli dizin adı ve *filename* en az bir joker karakter içermelidir geçerli bir dosya adı. Herhangi bir karakter ve bir yıldız işareti aynı anlamı bir soru işareti (*) joker karakter olan ( **\***), herhangi bir sayıda karakter eşleştirilmez.  
   
  Sıfır uzunlukta bir dize için belirtirseniz `lpPathSpec`, geçerli dizin kullanılır ve `lpPathSpec` değiştirilmeyecek. Yalnızca bir dizin adı belirtin, ancak hiçbir dosya belirtimi dahil etmeyin, dize olacak şekilde değiştirilecek "*".  
   
@@ -5107,10 +5102,10 @@ int MessageBox(
   
 |||  
 |-|-|  
-|![Stop &#40; x &#41; simge](../../mfc/reference/media/vc364f1.gif "vc364f1")|**MB_ICONHAND**, **mb_ıconstop**, ve **MB_ICONERROR**|  
-|![Yardım &#40; &#41; simge](../../mfc/reference/media/vc364f2.gif "vc364f2")|**MB_ICONQUESTION**|  
-|![Önemli &#40; &#33; &#41; simge](../../mfc/reference/media/vc364f3.gif "vc364f3")|**Mb_ıconexclamatıon** ve **MB_ICONWARNING**|  
-|![Bilgi &#40; i &#41; simge](../../mfc/reference/media/vc364f4.gif "vc364f4")|**MB_ICONASTERISK** ve **mb_ıconınformatıon**|  
+|![Durdur &#40;x&#41; simgesi](../../mfc/reference/media/vc364f1.gif "vc364f1")|**MB_ICONHAND**, **mb_ıconstop**, ve **MB_ICONERROR**|  
+|![Yardım &#40; &#41; simgesi](../../mfc/reference/media/vc364f2.gif "vc364f2")|**MB_ICONQUESTION**|  
+|![Önemli &#40; &#33; &#41; simgesi](../../mfc/reference/media/vc364f3.gif "vc364f3")|**Mb_ıconexclamatıon** ve **MB_ICONWARNING**|  
+|![Bilgi &#40;ı&#41; simgesi](../../mfc/reference/media/vc364f4.gif "vc364f4")|**MB_ICONASTERISK** ve **mb_ıconınformatıon**|  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#104](../../mfc/reference/codesnippet/cpp/cwnd-class_44.cpp)]  
@@ -5139,7 +5134,7 @@ BOOL ModifyStyle(
  Stil başarıyla değiştirilirse sıfır olmayan; Aksi takdirde, 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bit düzeyinde OR (&#124;) kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir işleci. Konulara bakın [pencere stilleri](http://msdn.microsoft.com/library/windows/desktop/ms632600) ve [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sındaki.  
+ Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir (&#124;) işleci. Konulara bakın [pencere stilleri](http://msdn.microsoft.com/library/windows/desktop/ms632600) ve [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sındaki.  
   
  Varsa `nFlags` sıfır olmayan, olan `ModifyStyle` Windows API işlev çağrılarını [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) ve pencere birleştirerek yeniden çizer `nFlags` aşağıdaki dört hazır bayraklarla:  
   
@@ -5183,7 +5178,7 @@ BOOL ModifyStyleEx(
  Stil başarıyla değiştirilirse sıfır olmayan; Aksi takdirde, 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bit düzeyinde OR (&#124;) kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir işleci. Konulara bakın [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) bu kitaptaki ve [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) kullanılabilir hakkında bilgi için Windows SDK'sındaki stilleri genişletilmiş  
+ Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir (&#124;) işleci. Konulara bakın [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) bu kitaptaki ve [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) kullanılabilir hakkında bilgi için Windows SDK'sındaki stilleri genişletilmiş  
   
  Varsa `nFlags` sıfır olmayan, olan `ModifyStyleEx` Windows API işlev çağrılarını [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) ve pencere birleştirerek yeniden çizer `nFlags` aşağıdaki dört hazır bayraklarla:  
   
@@ -5221,7 +5216,7 @@ void MoveWindow(
  *x*  
  Sol tarafındaki yeni konumunu belirtir `CWnd`.  
   
- *y*  
+ *Y*  
  En yeni konumunu belirtir `CWnd`.  
   
  `nWidth`  
@@ -5970,7 +5965,7 @@ afx_msg BOOL OnDeviceChange(
   
 - [DBT_DEVICEREMOVECOMPLETE](http://msdn.microsoft.com/library/windows/desktop/aa363208) Aygıt kaldırıldı.  
   
-- [DBT_DEVICETYPESPECIFIC](http://msdn.microsoft.com/library/windows/desktop/aa363210) Device-specific event.  
+- [DBT_DEVICETYPESPECIFIC](http://msdn.microsoft.com/library/windows/desktop/aa363210) aygıta özgü olay.  
   
 - [DBT_CONFIGCHANGED](http://msdn.microsoft.com/library/windows/desktop/aa363203) geçerli yapılandırması değişti.  
   
@@ -6280,7 +6275,7 @@ afx_msg UINT OnGetDlgCode();
   
 - **DLGC_WANTMESSAGE** tüm giriş klavye. Uygulama denetimi açın bu iletiyi geçirir.  
   
-- **DLGC_WANTTAB** TAB key.  
+- **DLGC_WANTTAB** SEKME tuşu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Normal olarak, Windows tüm ok tuşunu ve SEKME tuşuna girişine işleyen bir `CWnd` denetim. Geçersiz kılma tarafından `OnGetDlgCode`, `CWnd` denetim kendisini işlemek için belirli bir giriş türünü seçebilirsiniz.  
@@ -7164,7 +7159,7 @@ afx_msg void OnMouseHover(
   
  `nFlags` Parametresi, aşağıdaki tabloda listelenen değiştirici tuşları birleşimi olabilir. Daha fazla bilgi için bkz: [hakkında fare girdisi](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
-|Modifier Key|Açıklama|  
+|Değiştirici tuşa|Açıklama|  
 |------------------|-----------------|  
 |MK_CONTROL|CTRL tuşunu basılı.|  
 |MK_LBUTTON|Sol fare düğmesini basılı.|  
@@ -7304,7 +7299,7 @@ afx_msg void OnMove(
  *x*  
  İstemci alanını sol üst köşesindeki yeni x koordinatını konumunu belirtir. Bu yeni konumu için çakışan ve açılır pencereleri ekran koordinatları verilir ve üst istemci alt windows için eşgüdüm sağlar.  
   
- *y*  
+ *Y*  
  İstemci alanını sol üst köşesindeki yeni y koordinatını konumunu belirtir. Bu yeni konumu için çakışan ve açılır pencereleri ekran koordinatları verilir ve üst istemci alt windows için eşgüdüm sağlar.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -8874,7 +8869,7 @@ virtual INT_PTR OnToolHitTest(
   
 - `uId` = **(UINT) hWndChild** işlemek için bir alt pencere  
   
-- `uFlags` &#124; = **TTF_IDISHWND** aracı tanıtıcısı  
+- `uFlags` &#124;= **TTF_IDISHWND** aracı tanıtıcısı  
   
 - `lpszText` = **LPSTR_TEXTCALLBACK** belirtilen penceresinde görüntülenecek dize işaretçi  
   
@@ -9280,7 +9275,7 @@ afx_msg void OnXButtonDblClk(
   
  `nFlags` Parametresi, aşağıdaki tabloda listelenen değiştirici tuşları birleşimi olabilir. Daha fazla bilgi için bkz: [hakkında fare girdisi](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
-|Modifier Key|Açıklama|  
+|Değiştirici tuşa|Açıklama|  
 |------------------|-----------------|  
 |MK_CONTROL|CTRL tuşunu basılı.|  
 |MK_LBUTTON|Sol fare düğmesini basılı.|  
@@ -9316,7 +9311,7 @@ afx_msg void OnXButtonDown(
   
  `nFlags` Parametresi, aşağıdaki tabloda listelenen değiştirici tuşları birleşimi olabilir. Daha fazla bilgi için bkz: [hakkında fare girdisi](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
-|Modifier Key|Açıklama|  
+|Değiştirici tuşa|Açıklama|  
 |------------------|-----------------|  
 |MK_CONTROL|CTRL tuşunu basılı.|  
 |MK_LBUTTON|Sol fare düğmesini basılı.|  
@@ -9352,7 +9347,7 @@ afx_msg void OnXButtonUp(
   
  `nFlags` Parametresi, aşağıdaki tabloda listelenen değiştirici tuşları birleşimi olabilir. Daha fazla bilgi için bkz: [hakkında fare girdisi](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
-|Modifier Key|Açıklama|  
+|Değiştirici tuşa|Açıklama|  
 |------------------|-----------------|  
 |MK_CONTROL|CTRL tuşunu basılı.|  
 |MK_LBUTTON|Sol fare düğmesini basılı.|  
@@ -9390,7 +9385,7 @@ BOOL OpenClipboard();
 operator HWND() const;  
 ```  
   
-##  <a name="operator_neq"></a>  CWnd::operator !=  
+##  <a name="operator_neq"></a>  CWnd::operator! =  
  İki karşılaştırır `CWnd` bunlar aynı yoksa belirlemek için nesneleri [m_hWnd](#m_hwnd).  
   
 ```  
@@ -9893,7 +9888,7 @@ int ScrollWindowEx(
  `dx`  
  Tutar, yatay kaydırmanın aygıt birimler cinsinden belirtir. Bu parametre sola kaydırma için negatif bir değer olmalıdır.  
   
- *dy*  
+ *GN*  
  Tutar, dikey kaydırma aygıt birimler cinsinden belirtir. Bu parametre Yukarı kaydırmak için negatif bir değer olmalıdır.  
   
  `lpRectScroll`  
@@ -10622,7 +10617,7 @@ BOOL SetWindowPos(
  *x*  
  Pencerenin sol tarafında yeni konumunu belirtir.  
   
- *y*  
+ *Y*  
  Pencerenin üst kısmında yeni konumunu belirtir.  
   
  `cx`  

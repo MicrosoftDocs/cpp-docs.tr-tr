@@ -2,12 +2,9 @@
 title: 'Kayıt kümesi: Nasıl AddNew, düzenleme ve silmenin çalışması (ODBC) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -26,18 +23,16 @@ helpviewer_keywords:
 - ODBC recordsets [C++], editing records
 - records [C++], editing
 ms.assetid: cab43d43-235a-4bed-ac05-67d10e94f34e
-caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: dbbf224797bd7d2eed2b085a6a7dd8eb1865de1c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e3d9dc82f4ea31557c4ec330b9737579021a8d35
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="recordset-how-addnew-edit-and-delete-work-odbc"></a>Kayıt Kümesi: AddNew, Düzenleme ve Silmenin Çalışması (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -57,7 +52,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
  Ek olarak, okumak isteyebilirsiniz [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md), RFX karşılık gelen rol güncelleştirme işlemlerinde açıklar.  
   
-##  <a name="_core_adding_a_record"></a>Kayıt ekleme  
+##  <a name="_core_adding_a_record"></a> Kayıt ekleme  
 
  Bir kayıt kümesine yeni bir kayıt ekleme içerir kayıt kümesinin çağırma [AddNew](../../mfc/reference/crecordset-class.md#addnew) yeni kayıttaki alan veri üyeleri değerleri ayarlama ve çağırma üye işlevi [güncelleştirme](../../mfc/reference/crecordset-class.md#update) yazmak için üye işlevi veri kaynağı kaydı.  
   
@@ -95,7 +90,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
     > [!TIP]
     >  Kayıt kümesi veri üyeleri değeri değiştirdiğinizde algılamak için MFC kullanan bir **PSEUDO_NULL** kayıt kümesinde depolayabilir her bir veri türü için uygun değer. Açıkça bir alan ayarlanmalıdır **PSEUDO_NULL** de çağırmanız gerekir değeri ve alan gerçekleşir zaten Null, işaretlenecek `SetFieldNull`, ilk parametre alanında adresini geçirme ve **FALSE**ikinci parametre olarak.  
   
-##  <a name="_core_visibility_of_added_records"></a>Eklenen kayıtların görünürlüğü  
+##  <a name="_core_visibility_of_added_records"></a> Eklenen kayıtların görünürlüğü  
  Ne zaman eklenen kayıt kümenize görünebilir mi? Eklenen kayıtları bazen görünür ve bazen bağlı olarak iki şey görünür değildir:  
   
 -   Sürücünüzün neyi yapabilir.  
@@ -104,7 +99,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
  ODBC sürücüsü destekliyorsa **:: SQLSetPos** ODBC API işlevi, MFC kayıtları eklemek için işlevi kullanır. İle **:: SQLSetPos**, kayıtları herhangi güncelleştirilebilir MFC kayıt kümesine görünür eklenir. İşlev için desteği olmadan kayıtları görünür değildir ve çağırmalısınız eklenen **Requery** bunları görmek için. Kullanarak **:: SQLSetPos** ayrıca daha etkilidir.  
   
-##  <a name="_core_editing_an_existing_record"></a>Varolan bir kaydı düzenleme  
+##  <a name="_core_editing_an_existing_record"></a> Varolan bir kaydı düzenleme  
  Bir kayıt kümesinde varolan kaydı düzenleme içerir kayıt kümesinin çağırma kayda kaydırma [Düzenle](../../mfc/reference/crecordset-class.md#edit) yeni kayıttaki alan veri üyeleri değerleri ayarlama ve çağırma üye işlevi [güncelleştirme](../../mfc/reference/crecordset-class.md#update)veri kaynağına değiştirilen kaydı yazmak için üye işlevi.  
   
  Arama için bir önkoşul olarak **Düzenle**, kayıt kümesinin güncelleştirilebilir ve bir kayıt üzerinde olmalıdır. `CanUpdate` Ve `IsDeleted` üye işlevleri bu koşulları belirlemenize olanak sağlar. Geçerli kayıt de zaten silinmemiş gerekir ve kayıt kümesinde kayıtları olmalıdır (her ikisi de `IsBOF` ve `IsEOF` 0 döndürür).  
@@ -122,7 +117,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
 -   ODBC sürücüsü destekliyorsa **:: SQLSetPos** ODBC API işlevi, MFC kaydı veri kaynağında güncelleştirmek için işlevi kullanır. İle **:: SQLSetPos**, iki farklı ise kayıt sunucu üzerinde güncelleştirme sunucuda karşılık gelen kaydıyla, düzenleme arabelleği sürücü karşılaştırır. İle **:: SQLSetPos**, MFC güncelleştirebilirsiniz bir kaydı daha verimli bir şekilde bir SQL deyimi oluşturmak ve işlemek olmadığından.  
   
-     veya  
+     -veya-  
   
 -   Varsa **:: SQLSetPos** olamaz kullanıldığında, MFC şunları yapar:  
   
@@ -140,7 +135,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
     > [!TIP]
     >  Çağırırsanız `AddNew` veya **Düzenle** ya da işlev daha önce ancak önce çağrılan sonra çağrısı **güncelleştirme**, düzenleme arabelleği saklı kaydıyla yeni veya düzenlenmiş kaydında değiştirme yenilenir devam ediyor. Bu davranışı iptal etmek için bir yöntem sunar bir `AddNew` veya **Düzenle** ve yeni bir tane başlayın: ilerleme içinde kaydı hatalı olduğunu belirlerseniz, yalnızca çağrısı **Düzenle** veya `AddNew` yeniden.  
   
-##  <a name="_core_deleting_a_record"></a>Kayıt silme  
+##  <a name="_core_deleting_a_record"></a> Kayıt silme  
  Kayıt kaydırma ve kayıt kümesinin çağırma ilgilidir kayıt kümesinden bir kaydı silme [silmek](../../mfc/reference/crecordset-class.md#delete) üye işlevi. Farklı `AddNew` ve **Düzenle**, **silmek** eşleşen bir çağrı gerektirmez **güncelleştirme**.  
   
  Arama için bir önkoşul olarak **silmek**, kayıt kümesinin güncelleştirilebilir olmalıdır ve bir kayıt üzerinde olmalıdır. `CanUpdate`, `IsBOF`, `IsEOF`, Ve `IsDeleted` üye işlevleri bu koşulları belirlemenize olanak sağlar.  
@@ -149,7 +144,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
 -   ODBC sürücüsü destekliyorsa **:: SQLSetPos** ODBC API işlevi, MFC veri kaynağı kaydını silmek için işlevi kullanır. Kullanarak **:: SQLSetPos** SQL kullanmaktan genellikle daha verimli olur.  
   
-     veya  
+     -veya-  
   
 -   Varsa **:: SQLSetPos** olamaz kullanıldığında, MFC şunları yapar:  
   

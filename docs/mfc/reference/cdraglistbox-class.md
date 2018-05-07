@@ -1,12 +1,9 @@
 ---
-title: "CDragListBox sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDragListBox sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CDragListBox
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - CDragListBox [MFC], Dropped
 - CDragListBox [MFC], ItemFromPt
 ms.assetid: fee20b42-60ae-4aa9-83f9-5a3d9b96e33b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 424d9db088aa171bdbca868326eb80144a10704b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 34655c244f13cb721693208fa93353582de452e9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdraglistbox-class"></a>CDragListBox sınıfı
 Bir Windows liste kutusu işlevselliğini sağlayan yanı sıra `CDragListBox` sınıfı içinde liste kutusu gibi dosya adları, liste kutusu öğeleri taşımak kullanıcı verir.  
@@ -92,7 +87,7 @@ class CDragListBox : public CListBox
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxcmn.h  
   
-##  <a name="begindrag"></a>CDragListBox::BeginDrag  
+##  <a name="begindrag"></a>  CDragListBox::BeginDrag  
  Çağıran bir olay gerçekleştiğinde framework sol fare düğmesine basarak gibi bir sürükleme işlemi başlamadan.  
   
 ```  
@@ -109,7 +104,7 @@ virtual BOOL BeginDrag(CPoint pt);
 ### <a name="remarks"></a>Açıklamalar  
  Sürükleme işlemi başladığında ne olacağını denetlemek istiyorsanız, bu işlev geçersiz kılar. Varsayılan uygulama fare yakalar ve kullanıcı sola veya sağa fare düğmesini tıklattığında veya sürükleme işlemi aynı zamanda İptal ESC tuşuna bastığında kadar Sürükle modunda kalır.  
   
-##  <a name="canceldrag"></a>CDragListBox::CancelDrag  
+##  <a name="canceldrag"></a>  CDragListBox::CancelDrag  
  Sürükleme işlemi iptal ettiğinizde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -123,14 +118,14 @@ virtual void CancelDrag(CPoint pt);
 ### <a name="remarks"></a>Açıklamalar  
  Liste kutusu denetimi için hiçbir özel işlem işlemek için bu işlev geçersiz kılar.  
   
-##  <a name="cdraglistbox"></a>CDragListBox::CDragListBox  
+##  <a name="cdraglistbox"></a>  CDragListBox::CDragListBox  
  Oluşturan bir `CDragListBox` nesnesi.  
   
 ```  
 CDragListBox();
 ```  
   
-##  <a name="dragging"></a>CDragListBox::Dragging  
+##  <a name="dragging"></a>  CDragListBox::Dragging  
  Liste kutusu öğesi içinde sürüklenen çerçevesi tarafından çağrılır `CDragListBox` nesnesi.  
   
 ```  
@@ -144,16 +139,16 @@ virtual UINT Dragging(CPoint pt);
 ### <a name="return-value"></a>Dönüş Değeri  
  Görüntülenecek kaynak kimliği imleci. Aşağıdaki olası değerler:  
   
-- `DL_COPYCURSOR`Öğenin kopyalanacağı gösterir.  
+- `DL_COPYCURSOR` Öğenin kopyalanacağı gösterir.  
   
-- `DL_MOVECURSOR`Öğe taşınacağını gösterir.  
+- `DL_MOVECURSOR` Öğe taşınacağını gösterir.  
   
-- `DL_STOPCURSOR`Geçerli bırakma hedefi kabul edilebilir değil gösterir.  
+- `DL_STOPCURSOR` Geçerli bırakma hedefi kabul edilebilir değil gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan davranış döndürür `DL_MOVECURSOR`. Ek işlevsellik sağlamak istiyorsanız, bu işlev geçersiz kılar.  
   
-##  <a name="drawinsert"></a>CDragListBox::DrawInsert  
+##  <a name="drawinsert"></a>  CDragListBox::DrawInsert  
  Belirtilen dizinle öğeyi önce ekleme Kılavuzu çizmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -167,7 +162,7 @@ virtual void DrawInsert(int nItem);
 ### <a name="remarks"></a>Açıklamalar  
  Değeri, - 1 ekleme Kılavuzu temizler. Bu işlev görünüm veya ekleme Kılavuzu davranışını değiştirmek için geçersiz kılar.  
   
-##  <a name="dropped"></a>CDragListBox::Dropped  
+##  <a name="dropped"></a>  CDragListBox::Dropped  
  Bir öğe içinde bırakıldığında çerçevesi tarafından çağrılır bir `CDragListBox` nesnesi.  
   
 ```  
@@ -186,7 +181,7 @@ virtual void Dropped(
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan davranış, liste kutusu öğesi ve kendi veri yeni konuma kopyalar ve özgün öğeyi siler. Liste kutusu öğeleri listesi içindeki başka konumlara sürüklenebilir için kopyalarını etkinleştirme gibi varsayılan davranışını özelleştirmek için bu işlevi geçersiz kılar.  
   
-##  <a name="itemfrompt"></a>CDragListBox::ItemFromPt  
+##  <a name="itemfrompt"></a>  CDragListBox::ItemFromPt  
  Liste kutusu öğesi sıfır tabanlı dizini almak için bu işlevi bulunan çağrı `pt`.  
   
 ```  

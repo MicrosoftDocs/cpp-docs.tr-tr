@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2914 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2914 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2914
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2914
 ms.assetid: fc6a0592-f53e-4f5a-88cb-780bbed4acf2
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1fb24322ef9b5aed8c5e6b4079468645e19c2714
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2eda9718af074379381cca62c481020ddf5ed204
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2914"></a>Derleyici Hatası C2914
 'tanımlayıcısı': işlev bağımsız değişkeni belirsiz olduğu gibi tür bağımsız değişkeni türetme olamaz  

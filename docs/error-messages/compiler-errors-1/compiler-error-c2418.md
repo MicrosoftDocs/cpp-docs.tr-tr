@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2418 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2418 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2418
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2418
 ms.assetid: 00e4690f-04a0-4159-b358-b1e0664102c1
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9509ef0f2c9d068ac87995e6d37769f7a679f93b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6943b939fbc7095f8cbdd058ea10a7dc25f84476
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2418"></a>Derleyici Hatası C2418
 Tarayıcı dosyası silinemiyor: dosya adı  

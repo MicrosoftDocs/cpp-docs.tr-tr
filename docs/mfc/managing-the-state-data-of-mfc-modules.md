@@ -1,13 +1,10 @@
 ---
-title: "MFC modüllerinin durum verisini yönetme | Microsoft Docs"
-ms.custom: 
+title: MFC modüllerinin durum verisini yönetme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - multiple modules [MFC]
 - module state restored [MFC]
 ms.assetid: 81889c11-0101-4a66-ab3c-f81cf199e1bb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d070bb91d9c1c229feaa563123c12702a7b5027
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9d87b2a601e6e25d61de6ca6ad639ac6a62861ac
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="managing-the-state-data-of-mfc-modules"></a>MFC Modüllerinin Durum Verisini Yönetme
 Bu makalede durumu verilerini MFC modülleri ve bu durum (yolu kod aracılığıyla bir uygulama yürütülürken alır) akışını girer ve bir modül çıktığında nasıl güncelleştirileceğini açıklar. Modül durumları ile geçiş `AFX_MANAGE_STATE` ve `METHOD_PROLOGUE` makroları da ele alınmıştır.  
@@ -41,7 +36,7 @@ Bu makalede durumu verilerini MFC modülleri ve bu durum (yolu kod aracılığı
   
  Aşağıdaki çizimde gösterildiği gibi MFC durumu verilerini bir uygulamada kullanılan her modül için vardır. Bu veri örneklerindendir Windows örneği tanıtıcıları (kaynakları yüklemek için kullanılan), geçerli işaretçiler `CWinApp` ve `CWinThread` bir uygulama, OLE modül başvurusu sayılarını ve arasındaki bağlantıları korumak eşlemeleri çeşitli nesneleri Windows tanıtıcı ve karşılık gelen örneklerini MFC nesneleri nesne. Bir uygulama birden fazla modülü kullandığında, Bununla birlikte, her modül durumu verileri uygulama değil geniş. Bunun yerine, her modül MFC'nin durumu verilerini kendi özel kopyasını sahiptir.  
   
- ![Durum verileri tek bir modül &#40; uygulama &#41; ] (../mfc/media/vc387n1.gif "vc387n1")  
+ ![Durum verileri tek bir modülün &#40;uygulama&#41;](../mfc/media/vc387n1.gif "vc387n1")  
 Durum verileri tek bir modülün (uygulama)  
   
  Bir modülün durumu verilerini bir yapısında bulunan ve bu yapısına yönelik işaretçinin aracılığıyla her zaman kullanılabilir. Akış yürütme aşağıdaki resimde gösterildiği gibi belirli bir modülün girdiğinde, bu modülün durumu "geçerli" veya "etkin" durumunda olması gerekir. Bu nedenle, her iş parçacığı nesnesi uygulamasının etkin durumu yapısına yönelik işaretçinin sahiptir. Bu işaretçinin en güncel tutma katıdır uygulamanın genel durumunu yönetme ve her modülün durumu bütünlüğünü korumak için önemli. Genel durum, yanlış yönetim edilmesi öngörülemeyen uygulama davranışlarına yol açabilir.  

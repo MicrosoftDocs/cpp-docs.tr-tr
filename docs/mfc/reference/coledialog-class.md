@@ -1,12 +1,9 @@
 ---
-title: "COleDialog sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleDialog sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleDialog
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - COleDialog [MFC], GetLastError
 ms.assetid: b1ed0aca-3914-4b00-af34-4a4fb491aec7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae60b9e5a0d2e79d2bf6d9cc06eebfa9df0c6e23
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2c13b5d0a3bb30e08eaaeb0250da7deef692a66d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coledialog-class"></a>COleDialog sınıfı
 İletişim kutularına ortak işlevsellik için OLE sağlar.  
@@ -85,7 +80,7 @@ class COleDialog : public CCommonDialog
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxodlgs.h  
   
-##  <a name="getlasterror"></a>COleDialog::GetLastError  
+##  <a name="getlasterror"></a>  COleDialog::GetLastError  
  Çağrı `GetLastError` ek hata bilgileri almak için üye işlevini zaman `DoModal` döndürür **IDABORT**.  
   
 ```  

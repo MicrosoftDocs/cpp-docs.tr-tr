@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3182 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3182 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3182
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3182
 ms.assetid: f3681266-308e-4990-a979-8eef8920e186
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3485f017547e572b6090cabe9afb250c83b6fde3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 503ad6d17b197392967681bfdf4e921aa21dc3e9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3182"></a>Derleyici Hatası C3182
 'class': üye kullanarak bildirimi veya erişim bildirimi yönetilen veya WinRTtype içinde geçersiz  

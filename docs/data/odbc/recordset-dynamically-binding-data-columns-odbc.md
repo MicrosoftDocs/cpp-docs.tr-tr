@@ -1,13 +1,10 @@
 ---
-title: "Kayıt kümesi: Veri sütunlarını (ODBC) dinamik olarak bağlama | Microsoft Docs"
-ms.custom: 
+title: 'Kayıt kümesi: Veri sütunlarını (ODBC) dinamik olarak bağlama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - data binding [C++], columns in recordsets
 - columns [C++], binding to recordsets
 ms.assetid: bff67254-d953-4ae4-9716-91c348cb840b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2e834820266e83d2c07bbe46f07e2ac48b0d18e0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9fe71707de20ba02228039e5693cab9c9401d560
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="recordset-dynamically-binding-data-columns-odbc"></a>Kayıt Kümesi: Veri Sütunlarını Dinamik Olarak Bağlama (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -42,7 +37,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
 > [!NOTE]
 >  Bu konuda türetilen nesnelere uygulanır `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız, genellikle açıklanan teknikleri önerilmez. Toplu satır getirme hakkında daha fazla bilgi için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
-##  <a name="_core_when_you_might_bind_columns_dynamically"></a>Sütunları dinamik olarak bağladığınızda  
+##  <a name="_core_when_you_might_bind_columns_dynamically"></a> Sütunları dinamik olarak bağladığınızda  
  Tasarım zamanında, MFC Uygulama Sihirbazı'nı veya [MFC ODBC Tüketici Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) (gelen **sınıfı Ekle**) bilinen tablolar ve sütunlar, veri kaynağında göre kayıt kümesi sınıfları oluşturur. Veritabanları, bunları ve uygulamanızı çalışma zamanında tabloları ve sütunları kullandığında sonraki tasarlarken arasında değiştirebilirsiniz. Siz veya başka bir kullanıcı veya bir tablo bırakma eklediğinizde veya uygulamanızın kayıt dayanan bir tablodan sütun bırakma. Bu büyük olasılıkla tüm veri erişimi uygulamaları için bir sorun değildir, ancak için sizinse, nasıl, veritabanı şemasını, yeniden ve yeniden derlenmesi dışındaki değişiklikler başa? Bu soruyu yanıtlamak için bu konunun amacı budur.  
   
  Bu konu içinde bağladığınız sütunları dinamik olarak en yaygın durumda açıklar — bilinen veritabanı şemasını temel alan bir kayıt kümesi ile başlamış, çalışma zamanında ek sütunları istiyor. Ek sütunlar için eşleme konusunda daha fazla varsayar `CString` diğer veri türleri yönetmenize yardımcı olacak öneriler sağlasa alan veri üyeleri, en yaygın durumda.  
@@ -57,12 +52,12 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
  Bu konu, bırakılan tablolar ve sütunlar gibi diğer dinamik bağlama durumlarını kapsamaz. Bu gibi durumlarda ODBC API çağrılarını doğrudan kullanmanız gerekir. Bilgi için bkz: ODBC SDK *Programcının Başvurusu* MSDN Kitaplığı CD'sindeki.  
   
-##  <a name="_core_how_to_bind_columns_dynamically"></a>Sütunları dinamik olarak bağlamak nasıl  
+##  <a name="_core_how_to_bind_columns_dynamically"></a> Sütunları dinamik olarak bağlamak nasıl  
  Sütunları dinamik olarak bağlamak için bilmeniz (veya gerekir saptayabilmelisiniz) ek sütunlarının adlarını. Ayrıca ek alan veri üyeleri için depolama alanı ayırmak, adlarını ve türlerini belirtin ve eklediğiniz sütun sayısını belirtmeniz gerekir.  
   
  Aşağıdaki tartışma iki farklı kayıt kümeleri tanımlamıştır. İlk hedef tablosundan kayıtları seçer ana kayıt kümesidir. Hedef tabloda sütunları hakkında bilgi almak için kullanılan özel bir sütun kayıt saniyedir.  
   
-###  <a name="_core_the_general_process"></a>Genel işlem  
+###  <a name="_core_the_general_process"></a> Genel işlem  
  En genel düzeyde, aşağıdaki adımları izleyin:  
   
 1.  Ana kayıt kümesi nesnesi oluşturun.  
@@ -77,7 +72,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
      Kayıt kümesi kayıtları seçer ve kayıt alanı değişimi (RFX) (tahsis ek depolama alanı için eşlenen) dinamik sütun, statik sütunlar (olanlar kayıt kümesi alan veri üyeleri için eşlenen) bağlamak için kullanır.  
   
-###  <a name="_core_adding_the_columns"></a>Sütunlar ekleme  
+###  <a name="_core_adding_the_columns"></a> Sütunlar ekleme  
  Dinamik olarak bağlama sütunları çalışma zamanında aşağıdaki adımları gerektirir eklendi:  
   
 1.  Çalışma zamanında hedef tabloda sütun nelerdir belirler. Bu bilgileri, kayıt kümesi sınıfınız tasarlandığından beri tabloya eklenen sütunlar listesi ayıklayın.  
@@ -94,7 +89,7 @@ Sütunları dinamik olarak bağlamak için yapı listesi
   
      Bir yaklaşım ise bir döngü ana kümenizin eklemek için `DoFieldExchange` listesindeki her bir sütun için uygun RFX işlevini çağırma yeni sütun listesi ile döngü işlevi. Her RFX çağrıda bir sütun adı sütun adı listesi ve bir depolama konumuna karşılık gelen sonuç değeri listesi üyesi geçirin.  
   
-###  <a name="_core_lists_of_columns"></a>Sütun listesi  
+###  <a name="_core_lists_of_columns"></a> Sütun listesi  
  Çalışmak için gereken dört liste aşağıdaki tabloda gösterilmiştir.  
   
  **Geçerli tablo sütunları (çizimde liste 1)** şu anda veri kaynağı üzerinde tablodaki sütunlar listesi. Bu liste, şu anda kümenize bağlı sütunlar listesi eşleşebilir.  
@@ -108,7 +103,7 @@ Sütunları dinamik olarak bağlamak için yapı listesi
  **Dinamik sütun değerleri (çizimde liste 4)**  
  Depolama değerleri içeren bir liste dinamik olarak bağlama sütunlarından aldı. Bu liste öğeleri-BIND-dinamik sütunlar, bire bir de karşılık gelir.  
   
-###  <a name="_core_building_your_lists"></a>Listelerinizi oluşturma  
+###  <a name="_core_building_your_lists"></a> Listelerinizi oluşturma  
  Genel bir strateji ile unutmayın, ayrıntılara kapatabilirsiniz. Bu konunun geri kalanında yordamlarda gösterilen listeleri nasıl oluşturacağınızı göstermek [sütun listeleri](#_core_lists_of_columns). Yordamlar size kılavuzluk eder:  
   
 -   [Kümenizde bulunmayan sütunlarının adlarını belirleme](#_core_determining_which_table_columns_are_not_in_your_recordset).  
@@ -117,7 +112,7 @@ Sütunları dinamik olarak bağlamak için yapı listesi
   
 -   [RFX dinamik olarak ekleme çağırır yeni sütunlar için](#_core_adding_rfx_calls_to_bind_the_columns).  
   
-###  <a name="_core_determining_which_table_columns_are_not_in_your_recordset"></a>Hangi tablo sütunları olan kümenizde olmadığını belirleme  
+###  <a name="_core_determining_which_table_columns_are_not_in_your_recordset"></a> Hangi tablo sütunları olan kümenizde olmadığını belirleme  
  Ana kümenize zaten bağlı sütun listesini içeren bir liste (bağlı kayıt kümesi sütunları, liste 2 çizimde olduğu gibi) oluşturun. Ardından veri kaynağında tablo, ancak ana kümenizde bulunmayan sütun adlarını içeren bir liste (-BIND-geçerli tablo sütunları ve bağlı kayıt kümesi sütunları türetilmiş dinamik sütunlar,) oluşturun.  
   
 ##### <a name="to-determine-the-names-of-columns-not-in-the-recordset-columns-to-bind-dynamically"></a>Sütun kümesinde bulunmayan (dinamik bağlama sütunlar) adlarını belirlemek için  
@@ -138,7 +133,7 @@ Sütunları dinamik olarak bağlamak için yapı listesi
   
      Bu liste öğelerini, alan veri üyeleri yeni kayıt kümesi rol oynar. Dinamik sütun bağlı olan depolama konumları oldukları. Listeler açıklamaları için bkz: [sütun listeleri](#_core_lists_of_columns).  
   
-###  <a name="_core_providing_storage_for_the_new_columns"></a>Yeni sütunlar için depolama sağlama  
+###  <a name="_core_providing_storage_for_the_new_columns"></a> Yeni sütunlar için depolama sağlama  
  Ardından, dinamik olarak bağlı sütunlar için depolama konumları ayarlayın. Fikir her sütunun değeri depolanacağı bir liste öğesi sağlamaktır. Bu depolama konumları normal ilişkili sütunlara depolayan kayıt kümesi üye değişkenlerine paralel.  
   
 ##### <a name="to-provide-dynamic-storage-for-new-columns-dynamic-column-values"></a>Yeni sütunlar (dinamik sütun değerleri) için dinamik depolama alanı sağlamak için  
@@ -154,7 +149,7 @@ Sütunları dinamik olarak bağlamak için yapı listesi
 > [!TIP]
 >  Yeni sütunlar aynı veri türünde tümünün emin değilseniz, fazladan bir paralel şekilde sütun listesinde karşılık gelen her öğe türünü tanımlar içeren öğeleri listesinde isteyebilirsiniz. (Değerleri kullanabilirsiniz **AFX_RFX_BOOL**, **AFX_RFX_BYTE**ve benzeri bu için istiyorsanız. Bu sabitleri AFXDB içinde tanımlanmıştır. H.) Veri türleri sütununu nasıl temsil göre bir liste türü seçin.  
   
-###  <a name="_core_adding_rfx_calls_to_bind_the_columns"></a>Sütunları bağlamak için RFX çağrıları ekleme  
+###  <a name="_core_adding_rfx_calls_to_bind_the_columns"></a> Sütunları bağlamak için RFX çağrıları ekleme  
  Son olarak, yeni sütunlar için RFX çağrılarını yerleştirerek gerçekleşmesi dinamik bağlama için düzenleme, `DoFieldExchange` işlevi.  
   
 ##### <a name="to-dynamically-add-rfx-calls-for-new-columns"></a>RFX çağrıları yeni sütunlar için dinamik olarak eklemek için  

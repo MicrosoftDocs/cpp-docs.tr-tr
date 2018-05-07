@@ -1,12 +1,9 @@
 ---
-title: "Önemli hata C1506 | Microsoft Docs"
-ms.custom: 
+title: Önemli hata C1506 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C1506
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C1506
 ms.assetid: c73d5702-c898-4a32-b0fa-a118601a1e14
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c352dc5bdd5ab94afd8808ff35fbb05496cee28c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 09b36d7210a3ed81b7049c1ab011a38c64f7d196
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="fatal-error-c1506"></a>Önemli hata C1506
 kurtarılamaz bloğu kapsam hatası  

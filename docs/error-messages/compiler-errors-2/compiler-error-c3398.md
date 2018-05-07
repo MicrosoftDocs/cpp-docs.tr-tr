@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C3398 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3398 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3398
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3398
 ms.assetid: 26f8c8a4-526f-415b-8047-155c5cd4f180
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b332346dd8e8b7e906e961c86805ad0564f0f79
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b870479977bfb49ff39d5a15fe19fc700ed66b8e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3398"></a>Derleyici Hatası C3398
 'işleci': 'function_signature' 'function_pointer' dönüştürülemiyor. İşlev simgesi kaynağı deyim olmalıdır  

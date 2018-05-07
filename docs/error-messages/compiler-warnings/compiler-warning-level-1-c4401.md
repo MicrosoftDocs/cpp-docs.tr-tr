@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4401 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4401 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4401
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4401
 ms.assetid: 2e7ca136-f144-4b40-b847-82976e8643fc
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1042550b4ea176a314e174549ed560cd3ece025
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f8b8a7a2bced261bbff09422c3dfa6454061f636
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4401"></a>Derleyici Uyarısı (düzey 1) C4401
 'saklayıcısında': üyesidir bit alanı  

@@ -1,13 +1,10 @@
 ---
-title: "OLE denetimlerinin kalıcılığı | Microsoft Docs"
-ms.custom: 
+title: OLE denetimlerinin kalıcılığı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.ole
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - OLE controls [MFC], persistence
 - persistence, OLE controls
 ms.assetid: 64f8dc80-f110-41af-b3ea-14948f6bfdf7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3452bccd4bdf94c84e4549f99829aaa087e1803b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e84e26bae83bd131b53d10e4561ddb60854a8a5e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="persistence-of-ole-controls"></a>OLE Denetimlerinin Kalıcılığı
 OLE denetimlerinin bir yetenek olduğu özelliği kalıcılığı (veya seri hale getirme) okumak veya özellik değerleri için ve bir dosya veya akış yazmak OLE denetimi sağlar. Bir kapsayıcı uygulama serileştirme bile uygulama denetimi yok sonra bir denetimin özellik değerlerini depolamak için kullanabilirsiniz. OLE denetim özellik değerlerinin sonra dosyasından okunabilir veya akış denetiminin yeni örneği olduğunda daha sonraki bir zamanda oluşturulur.  
@@ -54,7 +49,7 @@ OLE denetimlerinin bir yetenek olduğu özelliği kalıcılığı (veya seri hal
   
  Ayrıca, `AfxOleTypeMatchGuid` genel işlevi arasında bir eşleşme için test etmek için sağlanan bir `TYPEDESC` ve belirli bir GUID.  
   
-##  <a name="px_blob"></a>PX_Blob  
+##  <a name="px_blob"></a>  PX_Blob  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya ikili büyük nesne (BLOB) verilerini depolayan bir özellik başlatmak için üye işlevi.  
   
 ```  
@@ -99,7 +94,7 @@ hBlobDefault
   
  Unutmayın `PX_Blob` Windows kullandığı bellek ayırır [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) BLOB türü özellikleri yüklenirken API. Bu bellek boşaltma için sorumlu. Bu nedenle, denetiminizin yıkıcı çağırmalıdır [GlobalFree](http://msdn.microsoft.com/library/windows/desktop/aa366579) herhangi bir BLOB türü özelliğin denetiminize ayrılan belleği boşaltmak için tanıtıcıları yukarı.  
   
-##  <a name="px_bool"></a>PX_Bool  
+##  <a name="px_bool"></a>  PX_Bool  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya türünde bir özellik başlatmak için üye işlevi **BOOL**.  
   
 ```  
@@ -142,7 +137,7 @@ bValue  ,
 ### <a name="remarks"></a>Açıklamalar  
  Özelliğin değeri okunamıyor veya başvurduğu değişkenine yazılmış `bValue`uygun şekilde. Varsa `bDefault` belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin seri hale getirme işlemi herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
   
-##  <a name="px_color"></a>PX_Color  
+##  <a name="px_color"></a>  PX_Color  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya türünde bir özellik başlatmak için üye işlevi **OLE_COLOR**.  
   
 ```  
@@ -184,7 +179,7 @@ clrDefault);
 ### <a name="remarks"></a>Açıklamalar  
  Özelliğin değeri okunamıyor veya başvurduğu değişkenine yazılmış `clrValue`uygun şekilde. Varsa `clrDefault` belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin seri hale getirme işlemi herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
   
-##  <a name="px_currency"></a>PX_Currency  
+##  <a name="px_currency"></a>  PX_Currency  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya türünde bir özellik başlatmak için üye işlevi **para birimi**.  
   
 ```  
@@ -227,7 +222,7 @@ cyValue  ,
 ### <a name="remarks"></a>Açıklamalar  
  Özelliğin değeri okunamıyor veya başvurduğu değişkenine yazılmış `cyValue`uygun şekilde. Varsa `cyDefault` belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin seri hale getirme işlemi herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
   
-##  <a name="px_datapath"></a>PX_DataPath  
+##  <a name="px_datapath"></a>  PX_DataPath  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya türünde bir veri yolu özellik başlatmak için üye işlevi [CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md).  
   
 ```  
@@ -263,7 +258,7 @@ pPX,
 ### <a name="remarks"></a>Açıklamalar  
  Veri yolu özellikleri zaman uyumsuz denetim özelliklerini uygulayın. Özelliğin değeri okunamıyor veya başvurduğu değişkenine yazılmış `dataPathProperty`uygun şekilde.  
   
-##  <a name="px_double"></a>PX_Double  
+##  <a name="px_double"></a>  PX_Double  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya türünde bir özellik başlatmak için üye işlevi **çift**.  
   
 ```  
@@ -306,7 +301,7 @@ doubleValue  ,
 ### <a name="remarks"></a>Açıklamalar  
  Özelliğin değeri okunamıyor veya deftere başvurduğu değişkenine `doubleValue`uygun şekilde. Varsa `doubleDefault` belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin seri hale getirme işlemi herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
   
-##  <a name="px_font"></a>PX_Font  
+##  <a name="px_font"></a>  PX_Font  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya bir özellik türü yazı tipinin başlatmak için üye işlevi.  
   
 ```  
@@ -352,7 +347,7 @@ pFontDispAmbient
 ### <a name="remarks"></a>Açıklamalar  
  Özelliğin değeri okuma veya yazma `font`, `CFontHolder` başvuru, uygun olduğunda. Varsa `pFontDesc` ve `pFontDispAmbient` belirtilirse, bunlar özelliğin varsayılan değeri, gerektiğinde başlatmak için kullanılır. Denetimin seri hale getirme işlemi herhangi bir nedenle başarısız olursa, bu değerler kullanılır. Genellikle, geçirdiğiniz **NULL** için `pFontDesc` ve tarafından döndürülen değeri, ortam `COleControl::AmbientFont` için `pFontDispAmbient`. Yazı tipi nesnesi tarafından döndürülen Not `COleControl::AmbientFont` çağrısı ile serbest bırakılması gereken **IFontDisp::Release** üye işlevi.  
   
-##  <a name="px_float"></a>PX_Float  
+##  <a name="px_float"></a>  PX_Float  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya türünde bir özellik başlatmak için üye işlevi **float**.  
   
 ```  
@@ -395,7 +390,7 @@ floatValue  ,
 ### <a name="remarks"></a>Açıklamalar  
  Özelliğin değeri okunamıyor veya deftere başvurduğu değişkenine `floatValue`uygun şekilde. Varsa `floatDefault` belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin seri hale getirme işlemi herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
   
-##  <a name="px_iunknown"></a>Px_ıunknown  
+##  <a name="px_iunknown"></a>  Px_ıunknown  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya bir nesne sağlayarak temsil edilen bir özellik başlatmak için üye işlevi bir **IUnknown**-arabirimi türetilmiş.  
   
 ```  
@@ -437,7 +432,7 @@ pUnkDefault
 ### <a name="remarks"></a>Açıklamalar  
  Özelliğin değeri okunamıyor veya deftere başvurduğu değişkenine *pUnk*uygun şekilde. Varsa `pUnkDefault` belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin seri hale getirme işlemi herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
   
-##  <a name="px_long"></a>PX_Long  
+##  <a name="px_long"></a>  PX_Long  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya türünde bir özellik başlatmak için üye işlevi **uzun**.  
   
 ```  
@@ -480,7 +475,7 @@ lValue  ,
 ### <a name="remarks"></a>Açıklamalar  
  Özelliğin değeri okunamıyor veya deftere başvurduğu değişkenine `lValue`uygun şekilde. Varsa `lDefault` belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin seri hale getirme işlemi herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
   
-##  <a name="px_picture"></a>PX_Picture  
+##  <a name="px_picture"></a>  PX_Picture  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya resim özelliği denetiminizin başlatmak için üye işlevi.  
   
 ```  
@@ -523,7 +518,7 @@ pict  ,
 ### <a name="remarks"></a>Açıklamalar  
  Özelliğin değeri okunamıyor veya deftere başvurduğu değişkenine `pict`uygun şekilde. Varsa `pictDefault` belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin seri hale getirme işlemi herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
   
-##  <a name="px_short"></a>PX_Short  
+##  <a name="px_short"></a>  PX_Short  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya türünde bir özellik başlatmak için üye işlevi **kısa**.  
   
 ```  
@@ -566,7 +561,7 @@ sValue  ,
 ### <a name="remarks"></a>Açıklamalar  
  Özelliğin değeri okunamıyor veya deftere başvurduğu değişkenine `sValue`uygun şekilde. Varsa `sDefault` belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin seri hale getirme işlemi herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
   
-##  <a name="px_ulong"></a>PX_ULong  
+##  <a name="px_ulong"></a>  PX_ULong  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya türünde bir özellik başlatmak için üye işlevi **ULONG**.  
   
 ```  
@@ -609,7 +604,7 @@ ulValue  ,
 ### <a name="remarks"></a>Açıklamalar  
  Özelliğin değeri okunamıyor veya deftere başvurduğu değişkenine `ulValue`uygun şekilde. Varsa `ulDefault` belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin seri hale getirme işlemi herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
   
-##  <a name="px_ushort"></a>PX_UShort  
+##  <a name="px_ushort"></a>  PX_UShort  
  Bu işlev, denetimin içinde arama `DoPropExchange` serileştirmek veya türünde bir özellik başlatmak için üye işlevi `unsigned` **kısa**.  
   
 ```  
@@ -652,7 +647,7 @@ usValue  ,
 ### <a name="remarks"></a>Açıklamalar  
  Özelliğin değeri okunamıyor veya deftere başvurduğu değişkenine *usValue*uygun şekilde. Varsa *usDefault* belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin seri hale getirme işlemi herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
   
-##  <a name="px_string"></a>PXstring  
+##  <a name="px_string"></a>  PXstring  
  Bu işlev, denetimin içinde arama **DoPropExchange** üye işlevi serileştirmek veya bir karakter dizesi özelliği başlatılamadı.  
   
 ```  
@@ -695,7 +690,7 @@ strValue  ,
 ### <a name="remarks"></a>Açıklamalar  
  Özelliğin değeri okunamıyor veya deftere başvurduğu değişkenine `strValue`uygun şekilde. Varsa `strDefault` belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin seri hale getirme işlemi herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
   
-##  <a name="px_vbxfontconvert"></a>PX_VBXFontConvert  
+##  <a name="px_vbxfontconvert"></a>  PX_VBXFontConvert  
  Bu işlev, denetimin içinde arama `DoPropExchange` üye işlevi VBX denetimin yazı tipi ilgili özellikler dönüştürerek font özelliği başlatılamadı.  
   
 ```  
@@ -718,9 +713,9 @@ pPX  ,
  Exchange başarılı olduğunda sıfır olmayan; işlem başarısız olursa 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, doğrudan yerini alacak yeni bir VBX denetimi için tasarlanmış bir OLE denetimi tarafından kullanılmalıdır. Visual Basic geliştirme ortamını karşılık gelen değiştirme OLE denetimi kullanmak için bir VBX denetimi içeren bir form dönüştürdüğünde, denetimin çağıracak **IDataObject::SetData** işlevi, bir özellik bilgilerinde, Ayarla VBX denetimin özelliği veri içerir. Bu işlem, denetimin sırayla neden olan `DoPropExchange` çağrılacak işlev. `DoPropExchange`çağırabilirsiniz `PX_VBXFontConvert` VBX denetimin yazı tipi ilgili özellikler dönüştürmek için (örneğin, "FontName," "FontSize," vb.) OLE denetimin yazı tipi özelliğine karşılık gelen bileşenlere.  
+ Bu işlev, doğrudan yerini alacak yeni bir VBX denetimi için tasarlanmış bir OLE denetimi tarafından kullanılmalıdır. Visual Basic geliştirme ortamını karşılık gelen değiştirme OLE denetimi kullanmak için bir VBX denetimi içeren bir form dönüştürdüğünde, denetimin çağıracak **IDataObject::SetData** işlevi, bir özellik bilgilerinde, Ayarla VBX denetimin özelliği veri içerir. Bu işlem, denetimin sırayla neden olan `DoPropExchange` çağrılacak işlev. `DoPropExchange` çağırabilirsiniz `PX_VBXFontConvert` VBX denetimin yazı tipi ilgili özellikler dönüştürmek için (örneğin, "FontName," "FontSize," vb.) OLE denetimin yazı tipi özelliğine karşılık gelen bileşenlere.  
   
- `PX_VBXFontConvert`Denetim gerçekte bir VBX form uygulamasından dönüştürülecek olduğunda yalnızca çağrılmalıdır. Örneğin:  
+ `PX_VBXFontConvert` Denetim gerçekte bir VBX form uygulamasından dönüştürülecek olduğunda yalnızca çağrılmalıdır. Örneğin:  
   
  [!code-cpp[NVC_MFCActiveXControl#14](../../mfc/codesnippet/cpp/persistence-of-ole-controls_1.cpp)]  
 [!code-cpp[NVC_MFCActiveXControl#15](../../mfc/codesnippet/cpp/persistence-of-ole-controls_2.cpp)]  

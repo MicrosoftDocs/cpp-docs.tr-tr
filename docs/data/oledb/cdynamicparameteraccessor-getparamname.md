@@ -1,12 +1,9 @@
 ---
 title: CDynamicParameterAccessor::GetParamName | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CDynamicParameterAccessor::GetParamName
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - GetParamName method
 ms.assetid: 707c08ed-d3d0-4ce8-b23e-20b07202a3e2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4fd23af3454a50d4767ad199a0939fcada272716
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: eee62bafbff5d8d9b174013e5165287a5b9f89cf
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdynamicparameteraccessorgetparamname"></a>CDynamicParameterAccessor::GetParamName
 Belirtilen parametre adını alır.  

@@ -1,12 +1,9 @@
 ---
-title: "OLE DB sağlayıcı şablonları başvurusu | Microsoft Docs"
-ms.custom: 
+title: OLE DB sağlayıcı şablonları başvurusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - vc.templates.ole
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - OLE DB provider templates
 ms.assetid: 518358f0-bab1-4de9-bce9-4062cc87c11f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 68c741f09772c881b42dc4e4cd17de31ed107f8c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 040e8a5e244b7978a2b9ead394e243207939655c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ole-db-provider-templates-reference"></a>OLE DB Sağlayıcı Şablonları Başvurusu
 Sınıflar ve arabirimler OLE DB sağlayıcı şablonları için aşağıdaki kategorilerde gruplandırılabilir. Başvuru malzemesinde hakkında bilgiler de içerir. [OLE DB sağlayıcı şablonları için makrolar](../../data/oledb/macros-for-ole-db-provider-templates.md).  
@@ -51,28 +46,28 @@ Sınıflar ve arabirimler OLE DB sağlayıcı şablonları için aşağıdaki ka
  [IAccessorImpl](../../data/oledb/iaccessorimpl-class.md)  
  OLE DB sağlayıcıları uygulamak gerektiren bir **HACCESSOR**, bir dizi etiket olduğu **IAccessor::CreateAccessor'ı** yapıları. Sağlar **HACCESSOR**adresleri olan s **BindType** yapıları. Zorunlu satır kümeleri ve komutları.  
   
- [IColumnsInfoImpl](../../data/oledb/icolumnsinfoimpl-class.md)  
+ [Icolumnsınfoımpl](../../data/oledb/icolumnsinfoimpl-class.md)  
  Sağlayıcı sütun eşlemesi tarafından tanımlanan statik bir işlevi temsil eder. Satır kümeleri ve komutları zorunlu arabirimde.  
   
- [IConvertTypeImpl](../../data/oledb/iconverttypeimpl-class.md)  
+ [Iconverttypeımpl](../../data/oledb/iconverttypeimpl-class.md)  
  Bir komutu veya bir satır kümesi tür dönüşümleri kullanılabilirliği hakkında bilgi sağlar. Zorunlu komutları, satır kümeleri ve dizin satır kümeleri. Implements **IConvertType** OLE DB tarafından sağlanan dönüştürme nesneye temsilci tarafından arabirimi.  
   
  [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md)  
  Implements **IDBSchemaRowset** arabirimi ve şablonlaştırılmış creator işlevi `CreateSchemaRowset`.  
   
- [IOpenRowsetImpl](../../data/oledb/iopenrowsetimpl-class.md)  
+ [Iopenrowsetımpl](../../data/oledb/iopenrowsetimpl-class.md)  
  Açılır ve tek bir temel tablo veya dizini tüm satırları içeren bir satır kümesi döndürür. Bir oturum nesnesi için zorunlu arabirim.  
   
  [IRowsetChangeImpl](../../data/oledb/irowsetchangeimpl-class.md)  
  OLE DB uygulayan [IRowsetChange](https://msdn.microsoft.com/en-us/library/ms715790.aspx) satırları silme ve yeni satırlar ekleme varolan satırları sütunlardaki değerlerin güncelleştirme sağlayan arabirim.  
   
- [IRowsetCreatorImpl](../../data/oledb/irowsetcreatorimpl-class.md)  
+ [Irowsetcreatorımpl](../../data/oledb/irowsetcreatorimpl-class.md)  
  Bu sınıf devraldığı [IObjectWithSite](http://msdn.microsoft.com/library/windows/desktop/ms693765) ve geçersiz kılmalar [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869). `IRowsetCreatorImpl` aynı işlevleri gerçekleştiren `IObjectWithSite` ancak OLE DB özellikleri de etkinleştirir **DBPROPCANSCROLLBACKWARDS** ve **DBPROPCANFETCHBACKWARDS**.  
   
  [IRowsetIdentityImpl](../../data/oledb/irowsetidentityimpl-class.md)  
  Implements **IRowsetIdentity** iki veri satırını aynı olsun olmasın karşılaştırmanıza olanak verir arabirimi.  
   
- [IRowsetImpl](../../data/oledb/irowsetimpl-class.md)  
+ [Irowsetımpl](../../data/oledb/irowsetimpl-class.md)  
  Bir uygulamasını sağlar `IRowset` temel satır kümesi arabirimi arabirimi.  
   
  [IRowsetInfoImpl](../../data/oledb/irowsetinfoimpl-class.md)  
@@ -88,13 +83,13 @@ Sınıflar ve arabirimler OLE DB sağlayıcı şablonları için aşağıdaki ka
  OLE DB uygulayan [IRowsetUpdate](https://msdn.microsoft.com/en-us/library/ms714401.aspx) yapılan değişikliklerle iletimini gecikme tüketicileri sağlayan arabirim [IRowsetChange](https://msdn.microsoft.com/en-us/library/ms715790.aspx) için veri kaynağı ve iletimden önce değişiklikleri geri almak.  
   
 ## <a name="command-classes"></a>Komut sınıfları  
- [ICommandImpl](../../data/oledb/icommandimpl-class.md)  
+ [Icommandımpl](../../data/oledb/icommandimpl-class.md)  
  Bir uygulamasını sağlar `ICommand` arabirimi. Bu arabirim görünür değildir, ancak tarafından işlenen **Icommandtextımpl**. Komut nesnesi üzerinde zorunlu bir arabirim.  
   
  [ICommandPropertiesImpl](../../data/oledb/icommandpropertiesimpl-class.md)  
  Bu uygulaması, **ICommandProperties** arabirimi tarafından tanımlanan statik bir işlev tarafından sağlanan `BEGIN_PROPSET_MAP` makrosu. Zorunlu açma komutları.  
   
- [ICommandTextImpl](../../data/oledb/icommandtextimpl-class.md)  
+ [Icommandtextımpl](../../data/oledb/icommandtextimpl-class.md)  
  Ayarlar, depolar ve komut metni döndürür. Zorunlu açma komutları.  
   
  [IDBCreateCommandImpl](../../data/oledb/idbcreatecommandimpl-class.md)  
@@ -103,7 +98,7 @@ Sınıflar ve arabirimler OLE DB sağlayıcı şablonları için aşağıdaki ka
  Diğer komut sınıflardır `IColumnsInfoImpl` ve `IAccessorImpl`, yukarıdaki satır kümesi sınıfları bölümünde de açıklanmıştır.  
   
 ## <a name="data-source-classes"></a>Veri kaynağı sınıfları  
- [IDBInitializeImpl](../../data/oledb/idbinitializeimpl-class.md)  
+ [Idbınitializeımpl](../../data/oledb/idbinitializeimpl-class.md)  
  Oluşturur ve tüketici bağlantıyla siler. Veri kaynağı nesneleri ve isteğe bağlı bir arabirim numaralandırıcılar üzerinde zorunlu arabirimde.  
   
  [IDBPropertiesImpl](../../data/oledb/idbpropertiesimpl-class.md)  
@@ -116,7 +111,7 @@ Sınıflar ve arabirimler OLE DB sağlayıcı şablonları için aşağıdaki ka
  [CUtlProps](../../data/oledb/cutlprops-class.md)  
  OLE DB özelliği arabirimleri çeşitli özelliklerini uygular (örneğin, `IDBProperties`, **ISessionProperties**, ve `IRowsetInfo`).  
   
- [IErrorRecordsImpl](../../data/oledb/ierrorrecordsimpl-class.md)  
+ [Ierrorrecordsımpl](../../data/oledb/ierrorrecordsimpl-class.md)  
   
  OLE DB uygulayan [IErrorRecords](https://msdn.microsoft.com/en-us/library/ms718112.aspx) kayıtları ekleme ve veri üyeden kayıtları almak arabirimi.  
   

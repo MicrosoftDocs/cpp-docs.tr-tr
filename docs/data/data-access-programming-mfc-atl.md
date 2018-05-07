@@ -1,13 +1,10 @@
 ---
-title: "Veri erişim programlama (MFC-ATL) | Microsoft Docs"
-ms.custom: 
+title: Veri erişim programlama (MFC-ATL) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - data [C++], data access technologies
 - data access [C++], class libraries for databases
 ms.assetid: def97b2c-b5a6-445f-afeb-308050fd4852
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 06ab0ff17db77975d365280b6ee95cafb094db3a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a5f4806d1f9d469088ea10fc56cadb7dd87d3279
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="data-access-programming-mfcatl"></a>Veri erişimi (MFC/ATL) programlama
 Yıllar içinde Visual C++ veritabanları ile çalışmak için çeşitli yollar sağlamıştır. 2011 ', SQL Server ürün yerel koddan erişmek için tercih edilen teknoloji olarak ODBC hizalama Microsoft duyurdu. ODBC sektör standardı olan ve bu aracı kullanarak, kodunuzun maksimum taşınabilirlik birden çok platformları ve veri kaynaklarını elde. Çoğu SQL veritabanı ürünleri ve birçok NoSQL ürünleri ODBC desteği. MFC ODBC sarmalayıcı sınıflar ya da üçüncü taraf C++ sarmalayıcı kitaplık kullanabilirsiniz veya alt düzey ODBC API'lerini doğrudan çağırmak ODBC kullanabilirsiniz. 

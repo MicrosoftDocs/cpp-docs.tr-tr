@@ -2,12 +2,9 @@
 title: Özelleştirme bildirimlerini işleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - TBN_CUSTHELP
 - TBN_QUERYINSERT
@@ -56,17 +53,15 @@ helpviewer_keywords:
 - NM_RDBLCLK notification [MFC]
 - TBN_GETBUTTONINFO notification [MFC]
 ms.assetid: 219ea08e-7515-4b98-85cb-47120f08c0a2
-caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec4561fda34ba2b20f7fe46aea52f272eed3b9ab
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3636d3db480563295213b76de06133e78e30cd0d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="handling-customization-notifications"></a>Özelleştirme Bildirimlerini İşleme
 Windows araç yaygın bir denetim eklemek, silmek veya araç çubuğu düğmeleri yeniden düzenlemek kullanıcı izin veren bir sistem tanımlı özelleştirme iletişim kutusu dahil olmak üzere yerleşik özelleştirme özelliklere sahiptir. Uygulama, özelleştirme özellikleri kullanılabilir olduğunu ve kullanıcının araç çubuğunu özelleştirebilirsiniz uzantı denetimlerini belirler.  
@@ -126,7 +121,7 @@ Windows araç yaygın bir denetim eklemek, silmek veya araç çubuğu düğmeler
  **idFrom**  
  Bildirim göndererek denetim tanımlayıcısı.  
   
- **kod**  
+ **Kod**  
  Bildirim kodu. Bu üye denetim türü için belirli bir değer gibi olabilir **tbn_begınadjust** veya **TTN_NEEDTEXT**, veya aşağıda listelenen ortak bildirim değerlerden biri olabilir:  
   
 -   **Nm_clıck** kullanıcı denetimi içinde sol fare düğmesini tıklamıştır.  
@@ -169,7 +164,7 @@ Windows araç yaygın bir denetim eklemek, silmek veya araç çubuğu düğmeler
  Bildirim ile ilişkilendirilmiş düğmesi dizini.  
   
  **tbButton**  
- `TBBUTTON`bildirim ile ilişkilendirilmiş araç çubuğu düğmesi hakkında bilgi içeren yapısı.  
+ `TBBUTTON` bildirim ile ilişkilendirilmiş araç çubuğu düğmesi hakkında bilgi içeren yapısı.  
   
  **cchText**  
  Düğme metni karakter sayısı.  

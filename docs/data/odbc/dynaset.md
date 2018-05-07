@@ -1,13 +1,10 @@
 ---
 title: Dynaset | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,18 +16,16 @@ helpviewer_keywords:
 - recordsets [C++], dynasets
 - dynasets
 ms.assetid: 2867e6be-208e-4fe7-8bbe-b8697cb1045c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f0f2f7ddd4a1b4021dfff8d533bb81acd84129a4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ec71b5b00b26564f9c8dc3c2d98f53f8182b0ca3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dynaset"></a>Dynaset
 Bu konuda açıklamakta ve anlatılmaktadır kendi [kullanılabilirlik](#_core_availability_of_dynasets).  
@@ -52,7 +47,7 @@ Bu konuda açıklamakta ve anlatılmaktadır kendi [kullanılabilirlik](#_core_a
 > [!NOTE]
 >  Güncelleştirilebilir dynaset'ler için ODBC sürücüsü ya da konumlandırılmış güncelleştirme deyimleri desteklemesi gerekir veya **:: SQLSetPos** ODBC API işlevi. Her ikisi de destekleniyorsa, MFC kullanan **:: SQLSetPos** verimlilik.  
   
-##  <a name="_core_availability_of_dynasets"></a>Dinamik kümeler kullanılabilirliği  
+##  <a name="_core_availability_of_dynasets"></a> Dinamik kümeler kullanılabilirliği  
  Aşağıdaki gereksinimler karşılanırsa MFC veritabanı sınıfları dinamik kümeler destekler:  
   
 -   ODBC imleç kitaplığı DLL bu veri kaynağı için kullanımda olmamalıdır.  

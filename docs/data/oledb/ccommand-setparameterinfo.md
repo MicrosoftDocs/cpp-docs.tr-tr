@@ -1,12 +1,9 @@
 ---
 title: CCommand::SetParameterInfo | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - SetParameterInfo
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - SetParameterInfo method
 ms.assetid: a70e92f4-1e73-41d7-a5b7-c6ebb45a6477
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 453ee4337e18ee20844631eee12ebf724bde2b2b
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: a1bcbc30564b248991859ca2b1911e7b8a67dbe2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ccommandsetparameterinfo"></a>CCommand::SetParameterInfo
 Her komut parametresi yerel türünü belirtir.  

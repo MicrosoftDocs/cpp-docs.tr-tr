@@ -2,12 +2,9 @@
 title: 'SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,18 +16,16 @@ helpviewer_keywords:
 - overriding, SQL statements
 - SQL, opening recordsets
 ms.assetid: 72293a08-cef2-4be2-aa1c-30565fcfbaf9
-caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3099fbf6b97f3ad18a28c071fcd08ec8280fa24a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f385127d1b61e1453eb7a079963da727f82f1874
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sql-customizing-your-recordsets-sql-statement-odbc"></a>SQL: Kayıt Kümenizin SQL Deyimini Özelleştirme (ODBC)
 Bu konuda açıklanmaktadır:  
@@ -69,7 +64,7 @@ SELECT rfx-field-list FROM table-name [WHERE m_strFilter]
 > [!NOTE]
 >  Değişmez değer dizeleri filtrelerinizi (veya diğer bölümleri SQL deyimi) kullanıyorsanız, teklif"" olabilir (belirtilmiş ayırıcılar içine almanız) karakteri (veya karakterleri) gibi dizeleri DBMS özgü değişmez değer öneki ve değişmez değer soneki.  
   
- Dış birleşimler gibi işlemler için özel sözdizimsel gereksinimlerle bağlı olarak, DBMS da karşılaşabilirsiniz. ODBC işlevlerini sürücünüzden DBMS için bu bilgileri almak için kullanın. Örneğin, arama **:: SQLGetTypeInfo** belirli veri türü için aşağıdaki gibi **SQL_VARCHAR**, istemek için **LITERAL_PREFIX** ve **LITERAL_SUFFIX** karakter. Veritabanı bağımsız kod yazıyorsanız, ek C'de bkz *ODBC SDK**Programcının Başvurusu* ayrıntılı sözdizimi bilgi için MSDN Kitaplığı CD'sindeki.  
+ Dış birleşimler gibi işlemler için özel sözdizimsel gereksinimlerle bağlı olarak, DBMS da karşılaşabilirsiniz. ODBC işlevlerini sürücünüzden DBMS için bu bilgileri almak için kullanın. Örneğin, arama **:: SQLGetTypeInfo** belirli veri türü için aşağıdaki gibi **SQL_VARCHAR**, istemek için **LITERAL_PREFIX** ve **LITERAL_SUFFIX** karakter. Veritabanı bağımsız kod yazıyorsanız, ek C'de bkz *ODBC SDK ** Programcının Başvurusu* ayrıntılı sözdizimi bilgi için MSDN Kitaplığı CD'sindeki.  
   
  Özel bir SQL deyimi geçirmezseniz kayıtları seçmek için kullandığı SQL deyimi bir kayıt kümesi nesnesi oluşturur. Bunun nasıl yapılacağı çoğunlukla geçirdiğiniz değere bağlıdır. `lpszSQL` parametresinin **açık** üye işlevi.  
   
@@ -98,13 +93,13 @@ SELECT [ALL | DISTINCT] column-list FROM table-list
   
 |Durumu|LpszSQL'de geçirin|Elde edilen SELECT deyimi|  
 |----------|------------------------------|------------------------------------|  
-|1.|**NULL**|**SEÇİN** *rfx alan listesi* **FROM** *tablo adı*<br /><br /> `CRecordset::Open`çağrıları `GetDefaultSQL` tablo adı alınamıyor. Sonuç dizesini durumlar 2-5, ne bağlı olarak biri `GetDefaultSQL` döndürür.|  
+|1.|**NULL**|**SEÇİN** *rfx alan listesi* **FROM** *tablo adı*<br /><br /> `CRecordset::Open` çağrıları `GetDefaultSQL` tablo adı alınamıyor. Sonuç dizesini durumlar 2-5, ne bağlı olarak biri `GetDefaultSQL` döndürür.|  
 |2|Bir tablo adı|**SEÇİN** *rfx alan listesi* **FROM** *tablo adı*<br /><br /> Alan listesini RFX deyimlerinde alınırlar `DoFieldExchange`. Varsa **m_strFilter** ve `m_strSort` boş olmayan, ekler **nerede** ve/veya **ORDER BY** yan tümceleri.|  
 |3 *|Bir tam **seçin** deyimi olmadan bir **nerede** veya **ORDER BY** yan tümcesi|Geçirilen gibi. Varsa **m_strFilter** ve `m_strSort` boş olmayan, ekler **nerede** ve/veya **ORDER BY** yan tümceleri.|  
 |4 *|Bir tam **seçin** deyimiyle bir **nerede** ve/veya **ORDER BY** yan tümcesi|Geçirilen gibi. **m_strFilter** ve/veya `m_strSort` gerekir boş ya da iki filtre kalır ve/veya sıralama ifadeleri oluşturulur.|  
 |5 *|Saklı yordam çağrısı|Geçirilen gibi.|  
   
- \*`m_nFields` belirtilen sütun sayısı küçük veya buna eşit olmalıdır **seçin** deyimi. Belirtilen her bir sütunun veri türünü **seçin** deyimi ilgili RFX çıktı sütununun veri türü ile aynı olması gerekir.  
+ \* `m_nFields` Belirtilen sütun sayısı küçük veya buna eşit olmalıdır **seçin** deyimi. Belirtilen her bir sütunun veri türünü **seçin** deyimi ilgili RFX çıktı sütununun veri türü ile aynı olması gerekir.  
   
 ### <a name="case-1---lpszsql--null"></a>1 lpszSQL case = NULL  
  Kayıt seçimi ne bağlıdır `GetDefaultSQL` döndürdüğü `CRecordset::Open` çağırır. Durumlar 2-5 olası dizeleri açıklar.  

@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3920 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3920 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3920
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3920
 ms.assetid: 66e91f28-ed82-4ce2-bf22-c0c74905b1ed
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5eeee973258b6d59b7a034e2b71bc453ed7454f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6ced0a0f8fa2b6694de4dd901d71f6721e12493b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3920"></a>Derleyici Hatası C3920
 ' işleci '': bir sonek artırma/azaltma WinRT veya CLR işleci sonek arama tanımlayamazsınız WinRT veya CLR işleci karşılık gelen önek çağıracaktır WinRT veya CLR işleci (op_Increment/op_Decrement), ancak sonek semantiği ile  

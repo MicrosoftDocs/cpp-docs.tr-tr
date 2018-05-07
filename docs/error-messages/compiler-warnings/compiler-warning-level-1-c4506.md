@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4506 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4506 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4506
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4506
 ms.assetid: aa682869-65d1-4dad-ba32-198f10b44f91
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26143e45a567390d64a6d899c31c34dde532194b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 12a8778d8c908e05d0679b0e6c7ecaa1ad830cf5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4506"></a>Derleyici Uyarısı (düzey 1) C4506
 Satır içi işlev 'function' tanımı yok  

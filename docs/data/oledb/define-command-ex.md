@@ -1,12 +1,9 @@
 ---
 title: DEFINE_COMMAND_EX | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - DEFINE_COMMAND_EX
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - DEFINE_COMMAND_EX macro
 ms.assetid: d3e2ef20-1455-46d2-8499-8ab84bbb90a4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e3fb4ce434f578ed79f3ed086adf73a6a49da870
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: b2a77fa0d6655edeee88df3c7c45e1936a766b40
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="definecommandex"></a>DEFINE_COMMAND_EX
 Satır kümesi kullanırken oluşturmak için kullanılan komut belirtir [CCommand](../../data/oledb/ccommand-class.md) sınıfı. Unicode ve ANSI uygulamaları destekler.  

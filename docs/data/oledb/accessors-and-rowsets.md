@@ -1,12 +1,9 @@
 ---
-title: "Erişimciler ve satır kümeleri | Microsoft Docs"
-ms.custom: 
+title: Erişimciler ve satır kümeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 dev_langs:
 - C++
@@ -26,18 +23,16 @@ helpviewer_keywords:
 - accessors [C++], rowsets
 - rowsets [C++], supported types
 ms.assetid: edc9c8b3-1a2d-4c2d-869f-7e058c631042
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7273b4ece8e697eb323c5b6bb6355796aeb72d63
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 49f5415f6c75984f968b25fb709c20d80dde554f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="accessors-and-rowsets"></a>Erişimciler ve Satır Kümeleri
 Ve veri almak için OLE DB Şablonları erişimci ve satır aracılığıyla kullanın [CAccessorRowset](../../data/oledb/caccessorrowset-class.md) sınıfı. Bu sınıf, farklı türlerde çoklu erişimci işleyebilir.  
@@ -56,7 +51,7 @@ Erişimci sınıfları
   
 -   [CDynamicParameterAccessor](../../data/oledb/cdynamicparameteraccessor-class.md) Bilinmeyen komut türlerini yönetmek için bu erişimciyi kullanın. Komutları hazırladığınızda `CDynamicParameterAccessor` parametre bilgileri edinebilirsiniz `ICommandWithParameters` sağlayıcı destekliyorsa, arabirim `ICommandWithParameters`.  
   
--   [CDynamicStringAccessor](../../data/oledb/cdynamicstringaccessor-class.md), [CDynamicStringAccessorA](../../data/oledb/cdynamicstringaccessora-class.md), and [CDynamicStringAccessorW](../../data/oledb/cdynamicstringaccessorw-class.md) Use these classes when you have no knowledge of the database schema. `CDynamicStringAccessorA` verileri ANSI dizeleri olarak alır; `CDynamicStringAccessorW` verileri Unicode dizeleri olarak alır.  
+-   [CDynamicStringAccessor](../../data/oledb/cdynamicstringaccessor-class.md), [CDynamicStringAccessorA](../../data/oledb/cdynamicstringaccessora-class.md), ve [CDynamicStringAccessorW](../../data/oledb/cdynamicstringaccessorw-class.md) veritabanı şeması hiçbir bilgiye sahip olduğunda bu sınıfların kullanın. `CDynamicStringAccessorA` verileri ANSI dizeleri olarak alır; `CDynamicStringAccessorW` verileri Unicode dizeleri olarak alır.  
   
 -   [CManualAccessor](../../data/oledb/cmanualaccessor-class.md) Bu sınıf ile sağlayıcı türü dönüştürebilirsiniz isteyip istemediğinizi hangi veri türlerini kullanabilirsiniz. Sonuç sütunlarının ve komut parametreleri işler.  
   
@@ -75,7 +70,7 @@ Erişimci sınıfları
   
  Aşağıdaki şekilde satır kümesi türleri gösterilmektedir.  
   
- ![RowsetType graphic](../../data/oledb/media/vcrowsettypes.gif "vcrowsettypes")  
+ ![RowsetType grafik](../../data/oledb/media/vcrowsettypes.gif "vcrowsettypes")  
 Satır kümesi sınıfları  
   
  [Şema satır kümeleri](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) yapmak veri verilere erişmek saklar, ancak bunun yerine access meta verileri adlı veri depolama alanı hakkında bilgi. Şema satır kümeleri genellikle veritabanı yapısı derleme zamanında bilinmiyor ve çalışma zamanında alınan durumlarda kullanılır.  

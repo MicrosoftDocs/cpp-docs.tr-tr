@@ -1,12 +1,9 @@
 ---
 title: deque::to_array (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::deque::to_array
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - to_array member [STL/CLR]
 ms.assetid: ecd34f30-2ad8-47b5-8c5e-2466df46fe6d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: f99fd353b9f903e59897f5473855b9ef90be187a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2b1313ce20a0f54f5639cf4a7f65fed7d6bbef28
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dequetoarray-stlclr"></a>deque::to_array (STL/CLR)
 Denetimli sırası yeni bir diziye kopyalar.  

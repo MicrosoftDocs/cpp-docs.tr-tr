@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2196 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2196 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2196
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2196
 ms.assetid: fd2f6a58-48ce-4e58-96f8-e37720feb8e7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 858fbc2f1998aa50b02618655b6ccfcab007cc81
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 378e8dccb5f5f0735cb941b3c0b3a791ba3c06a3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2196"></a>Derleyici Hatası C2196
 Durum değeri 'value' zaten kullanıldı.  

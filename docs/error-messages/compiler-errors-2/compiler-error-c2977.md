@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2977 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2977 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2977
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2977
 ms.assetid: 3c4218e0-5d03-4a2b-b757-c507c35f3542
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df66aed1b9d3e605391ac5ae3562bc7089645141
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a00da68007834b85846fedf07d2466f1448a5b45
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2977"></a>Derleyici Hatası C2977
 'tanımlayıcısı': çok fazla tür bağımsız değişkenleri  

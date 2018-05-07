@@ -1,12 +1,9 @@
 ---
 title: hash_map::const_iterator (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_map::const_iterator
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - const_iterator member [STL/CLR]
 ms.assetid: a1750775-a657-4c9f-8194-c2af938e39ff
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0b7559c47238fecb20b93425fb17d2f618c3937b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7441f66b2ba805e306f71c6cea8544ba838c0dc5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hashmapconstiterator-stlclr"></a>hash_map::const_iterator (STL/CLR)
 Denetlenen dizi için bir sabit yineleyici türü.  

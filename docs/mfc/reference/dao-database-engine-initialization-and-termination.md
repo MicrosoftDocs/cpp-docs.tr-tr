@@ -1,13 +1,10 @@
 ---
-title: "DAO veritabanı motoru başlatma ve sonlandırma | Microsoft Docs"
-ms.custom: 
+title: DAO veritabanı motoru başlatma ve sonlandırma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.data
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - DAO (Data Access Objects), termination
 - DAO (Data Access Objects), initialization
 ms.assetid: a7edf31c-e7c2-4f3e-aada-63c3e48781da
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32dbcb02615f552a2bb26ec047b0b817bb828a95
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3f28c0c166bcbf13181161d6afce484fe4a45b80
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dao-database-engine-initialization-and-termination"></a>DAO Veritabanı Motoru Başlatma ve Sonlandırma
 MFC DAO nesneleri kullanılırken DAO veritabanı motoru ilk olmalıdır başlatılmadı ve sonra sonlandırılan uygulamanızı veya DLL sonlandırılmadan önce. İki işlevleri `AfxDaoInit` ve `AfxDaoTerm`, bu görevleri gerçekleştirin.  
@@ -38,7 +33,7 @@ MFC DAO nesneleri kullanılırken DAO veritabanı motoru ilk olmalıdır başlat
 |[Afxdaoınit](#afxdaoinit)|DAO veritabanı motoru başlatır.|  
 |[AfxDaoTerm](#afxdaoterm)|DAO veritabanı motoru sonlandırır.|  
   
-##  <a name="afxdaoinit"></a>Afxdaoınit  
+##  <a name="afxdaoinit"></a>  Afxdaoınit  
  Bu işlev DAO veritabanı motoru başlatır.  
   
 ```  
@@ -56,7 +51,7 @@ throw(CDaoException*);
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdao.h  
   
-##  <a name="afxdaoterm"></a>AfxDaoTerm  
+##  <a name="afxdaoterm"></a>  AfxDaoTerm  
  Bu işlev DAO veritabanı motoru sonlandırır.  
   
 ```  

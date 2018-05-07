@@ -1,30 +1,25 @@
 ---
-title: "Araç çubukları | Microsoft Docs"
-ms.custom: 
+title: Araç çubukları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - toolbars [MFC]
 - command bars [MFC], MFC toolbars
 ms.assetid: c22ecc5b-a84c-4979-8d1a-8e3e71d5ce33
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e81ab1a51b8d485cd9816b2adb84889d777b3f23
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4477a06e6b181da01eea0e1636406b0cd7023912
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="toolbars"></a>Araç Çubukları
 MFC araç çubukları ve oluşturmak ve bunları nasıl makaleleri araç ailesi açıklar.  
@@ -41,7 +36,7 @@ MFC araç çubukları ve oluşturmak ve bunları nasıl makaleleri araç ailesi 
   
 -   [Örnek](../mfc/toolbar-sample-list.md)  
   
- MFC araç çubukları hakkında daha fazla bilgi için http://support.microsoft.com adresindeki Microsoft Bilgi Bankası'nda makale Q232017, "Nasıl yapılır: ekleme metin için araç çubuğu düğmeleri," konusuna bakın.  
+ MFC araç çubukları hakkında daha fazla bilgi için makale Q232017, "Nasıl yapılır: ekleme metin için araç çubuğu düğmeleri," adresindeki Microsoft Bilgi Bankası'nda bkz. http://support.microsoft.com.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)   

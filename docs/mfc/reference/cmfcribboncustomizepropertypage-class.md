@@ -1,12 +1,9 @@
 ---
-title: "CMFCRibbonCustomizePropertyPage sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCRibbonCustomizePropertyPage sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCRibbonCustomizePropertyPage
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - CMFCRibbonCustomizePropertyPage [MFC], AddCustomCategory
 - CMFCRibbonCustomizePropertyPage [MFC], OnOK
 ms.assetid: ea32a99a-dfbe-401e-8975-aa191552532f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ad58cb0b062e25a52742eec5491489d3744a9ea
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6b6c5501159cfdb46107b4fef34637195d52f465
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcribboncustomizepropertypage-class"></a>CMFCRibbonCustomizePropertyPage sınıfı
 Özel bir sayfa için uygulayan **Özelleştir** Şerit tabanlı uygulamalarda iletişim kutusu.  
@@ -88,7 +83,7 @@ class CMFCRibbonCustomizePropertyPage: public CMFCPropertyPage
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxribboncustomizedialog.h  
   
-##  <a name="addcustomcategory"></a>CMFCRibbonCustomizePropertyPage::AddCustomCategory  
+##  <a name="addcustomcategory"></a>  CMFCRibbonCustomizePropertyPage::AddCustomCategory  
  Özel bir kategori ekler **komutları** birleşik giriş kutusu.  
   
 ```  
@@ -102,13 +97,13 @@ void AddCustomCategory(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in]`lpszName`|Özel kategori adı belirtir.|  
-|[in]`lstIDS`|Özel kategoride gösterilecek Şerit komut kimlikleri içeriyor.|  
+|[in] `lpszName`|Özel kategori adı belirtir.|  
+|[in] `lstIDS`|Özel kategoride gösterilecek Şerit komut kimlikleri içeriyor.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem adlı bir kategori ekler `lpszName` için **komutları** birleşik giriş kutusu. Komutları kullanıcı kategorisini seçtiğinde, belirtilen `lstIDS` komutu listede görüntülenir.  
   
-##  <a name="cmfcribboncustomizepropertypage"></a>CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage  
+##  <a name="cmfcribboncustomizepropertypage"></a>  CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage  
  Oluşturan bir `CMFCRibbonCustomizePropertyPage` nesnesi.  
   
 ```  
@@ -116,10 +111,10 @@ CMFCRibbonCustomizePropertyPage(CMFCRibbonBar* pRibbonBar = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pRibbonBar`  
+ [in] `pRibbonBar`  
  Kendisi için bir Şerit denetimi için bir işaretçi özelleştirmek için seçenekleri.  
   
-##  <a name="onok"></a>CMFCRibbonCustomizePropertyPage::OnOK  
+##  <a name="onok"></a>  CMFCRibbonCustomizePropertyPage::OnOK  
  Bir kullanıcı tıkladığında sistem tarafından Calleld **Tamam** üzerinde **Özelleştir** iletişim kutusu.  
   
 ```  

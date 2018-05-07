@@ -1,12 +1,9 @@
 ---
-title: "Irowsetımpl::getdbstatus | Microsoft Docs"
-ms.custom: 
+title: Irowsetımpl::getdbstatus | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - GetDBStatus
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - GetDBStatus method
 ms.assetid: e51d8ee2-fc0c-4909-861c-026c94fb0dfc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6da72a2e93278fceb4ba43346ec8233752a8e1ac
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: ebebbc2d1392e4f3c863ce366e8d19cfad3b7162
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="irowsetimplgetdbstatus"></a>IRowsetImpl::GetDBStatus
 Döndürür `DBSTATUS` durumu bayrakları belirtilen alan için.  

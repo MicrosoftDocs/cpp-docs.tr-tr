@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4811 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4811 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C4811
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4811
 ms.assetid: fbd79351-3dc1-45cf-b5b3-411f48c1590f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 901465650c74ff0d95225c2ca361e6c61107eb72
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c5644a8d372b96c72394760a362376606964c93c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4811"></a>Derleyici Uyarısı (düzey 1) C4811
 pragma değerini uygun (forScope, Göster) değeri ==  

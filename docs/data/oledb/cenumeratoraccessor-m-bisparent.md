@@ -1,12 +1,9 @@
 ---
-title: CEnumeratorAccessor::m_bIsParent | Microsoft Docs
-ms.custom: 
+title: Cenumeratoraccessor::m_bısparent | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CEnumeratorAccessor.m_bIsParent
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - m_bIsParent
 ms.assetid: ab267905-d7d9-41cb-96ff-7be4d8875657
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5e8e8d73fe87649e8e1eed2abbf23742bdf41806
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 1943ddda17aa1d2e6cf9456f5a4018978f1d99d3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cenumeratoraccessormbisparent"></a>CEnumeratorAccessor::m_bIsParent
 Satır bir numaralandırıcı ise Numaralandırıcı üst Numaralandırıcı olup olmadığını belirten bir değişken.  

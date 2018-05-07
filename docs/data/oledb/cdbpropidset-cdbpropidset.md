@@ -1,12 +1,9 @@
 ---
-title: CDBPropIDSet::CDBPropIDSet | Microsoft Docs
-ms.custom: 
+title: Cdbpropıdset::cdbpropıdset | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL::CDBPropIDSet::CDBPropIDSet
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - CDBPropIDSet class, constructor
 ms.assetid: e68cc20e-fce2-4cc1-9e9d-05c542334cc8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8ced375c762bb231053a4ba0a8f0ff11443853ee
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: eb1aa5b832e8be0e90e34c32c9ad76a8c1c314f4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdbpropidsetcdbpropidset"></a>CDBPropIDSet::CDBPropIDSet
 Oluşturucu. Başlatır **rgProperties**, **cProperties**ve (isteğe bağlı) **guidPropertySet** alanlarının [DBPROPIDSET](https://msdn.microsoft.com/en-us/library/ms717981.aspx) yapısı.  
@@ -56,5 +51,5 @@ CDBPropIDSet();
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CDBPropIDSet Class](../../data/oledb/cdbpropidset-class.md)   
+ [Cdbpropıdset sınıfı](../../data/oledb/cdbpropidset-class.md)   
  [CDBPropIDSet::SetGUID](../../data/oledb/cdbpropidset-setguid.md)

@@ -1,12 +1,9 @@
 ---
-title: "CView sınıfı | Microsoft Docs"
-ms.custom: 
+title: CView sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CView
@@ -61,17 +58,15 @@ helpviewer_keywords:
 - CView [MFC], OnPrint
 - CView [MFC], OnUpdate
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 843417508fc43f99b0027873988746d03a7863cd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9ca94e9d1f870fe028faec413a79f13d8a3b8eaa
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cview-class"></a>CView sınıfı
 Temel işlevleri için kullanıcı tanımlı görünüm sınıfları sağlar.  
@@ -173,7 +168,7 @@ class AFX_NOVTABLE CView : public CWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="cview"></a>CView::CView  
+##  <a name="cview"></a>  CView::CView  
  Oluşturan bir `CView` nesnesi.  
   
 ```  
@@ -183,7 +178,7 @@ CView();
 ### <a name="remarks"></a>Açıklamalar  
  Yeni bir çerçeve penceresi oluşturulduğunda veya bir pencereyi bölmek framework Oluşturucusu çağırır. Geçersiz kılma [OnInitialUpdate](#oninitialupdate) üye işlevi belge eklendikten sonra başlatın.  
   
-##  <a name="doprepareprinting"></a>CView::DoPreparePrinting  
+##  <a name="doprepareprinting"></a>  CView::DoPreparePrinting  
  Bu işlev geçersiz kılma çağrı [OnPreparePrinting](#onprepareprinting) Yazdır iletişim kutusunu çağırmak ve bir yazıcı cihaz bağlamı oluşturmak için.  
   
 ```  
@@ -202,7 +197,7 @@ BOOL DoPreparePrinting(CPrintInfo* pInfo);
   
  Bir dosyanın önizlemesi, bu işlev geçerli yazıcı ayarlarını kullanarak yazıcı cihaz bağlamı oluşturur; Bu cihaz bağlamı, Önizleme süresince yazıcı benzetimi için kullanılır.  
   
-##  <a name="getdocument"></a>CView::GetDocument  
+##  <a name="getdocument"></a>  CView::GetDocument  
  Görünümün belge için bir işaretçi almak için bu işlevini çağırın.  
   
 ```  
@@ -215,7 +210,7 @@ CDocument* GetDocument() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu belgenin üye işlevleri çağırma olanak sağlar.  
   
-##  <a name="isselected"></a>CView::IsSelected  
+##  <a name="isselected"></a>  CView::IsSelected  
  Belirtilen belge öğesi seçili olup olmadığını denetlemek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -232,7 +227,7 @@ virtual BOOL IsSelected(const CObject* pDocItem) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev varsayılan uygulamasını döndürür **FALSE**. Seçim kullanarak uyguluyorsanız, bu işlevi geçersiz kılma [CDocItem](../../mfc/reference/cdocitem-class.md) nesneleri. OLE öğeleri görünümü içeriyorsa, bu işlev geçersiz kılmanız gerekir.  
   
-##  <a name="onactivateframe"></a>CView::OnActivateFrame  
+##  <a name="onactivateframe"></a>  CView::OnActivateFrame  
  Görünümü içeren çerçeve penceresi etkin veya devre dışı olduğunda çerçevesi tarafından çağrılır.  
   
 ```  
@@ -257,7 +252,7 @@ virtual void OnActivateFrame(
 ### <a name="remarks"></a>Açıklamalar  
  Görünüm ile ilişkilendirilen çerçeve penceresi etkin veya devre dışı olduğunda özel işlem gerçekleştirmek istiyorsanız, bu üye işlevi geçersiz kılar. Örneğin, [Cformview'yu](../../mfc/reference/cformview-class.md) kaydeder ve odaklanmış denetimi yükler, bu geçersiz kılma gerçekleştirir.  
   
-##  <a name="onactivateview"></a>CView::OnActivateView  
+##  <a name="onactivateview"></a>  CView::OnActivateView  
  Bir görünüm etkinleştirilmiş veya devre dışı olduğunda çerçevesi tarafından çağrılır.  
   
 ```  
@@ -284,7 +279,7 @@ virtual void OnActivateView(
   
  Bu parametreler farklı olduğunda [CFrameWnd::SetActiveView](../../mfc/reference/cframewnd-class.md#setactiveview) farklı bir görünümle adlı [CFrameWnd::GetActiveView](../../mfc/reference/cframewnd-class.md#getactiveview) döndürür. Bu çoğunlukla Bölümlendirici pencereler ile gerçekleşir.  
   
-##  <a name="onbeginprinting"></a>CView::OnBeginPrinting  
+##  <a name="onbeginprinting"></a>  CView::OnBeginPrinting  
  Sonra bir yazdırın veya Önizleme iş başında framework tarafından çağrılan `OnPreparePrinting` çağrıldı.  
   
 ```  
@@ -305,7 +300,7 @@ virtual void OnBeginPrinting(
   
  Bu işlev, yazıcı cihaz bağlamı özelliklerindeki bağımlı başlatmaları gerçekleştirmek için de kullanabilirsiniz. Örneğin, belge yazdırmak için gereken sayfa sayısı, (örneğin, sayfa uzunluğu) yazdırma iletişim kutusundan kullanıcı belirtilen ayarlara bağlı olabilir. Böyle bir durumda, belge uzunluğu belirtemezsiniz [OnPreparePrinting](#onprepareprinting) üye işlevi, burada normalde bunu; yazıcı cihaz bağlamı iletişim kutusu ayarlar tabanlı oluşturuluncaya kadar beklemeniz gerekir. [OnBeginPrinting](#onbeginprinting) sağlayan ilk geçersiz kılınabilir işlev erişmek için [CDC](../../mfc/reference/cdc-class.md) bu işlevden belge uzunluğunu ayarlayabilirsiniz yazıcı cihaz bağlamı temsil eden nesne. Belgenin uzunluğu bu zamana kadar belirtilmezse, bir kaydırma çubuğunun Baskı Önizleme sırasında görüntülenmez unutmayın.  
   
-##  <a name="ondragenter"></a>CView::OnDragEnter  
+##  <a name="ondragenter"></a>  CView::OnDragEnter  
  Fare ilk açılan hedef penceresinin kaydırılamayan bölge girdiğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -328,13 +323,13 @@ virtual DROPEFFECT OnDragEnter(
 ### <a name="return-value"></a>Dönüş Değeri  
  Arasında bir değer `DROPEFFECT` numaralandırılmış kullanıcı bu konumda nesne düştüğünde oluşacak açılan türünü gösterir türü. Bırakma türü tarafından belirtilen anahtar geçerli durumu genellikle bağlıdır `dwKeyState`. Aktarıyorsanız için standart eşlemesi `DROPEFFECT` değerler:  
   
-- `DROPEFFECT_NONE`Veri nesnesi bu pencerede bırakılamıyor.  
+- `DROPEFFECT_NONE` Veri nesnesi bu pencerede bırakılamıyor.  
   
-- `DROPEFFECT_LINK`için **MK_CONTROL &#124; MK_SHIFT** nesne sunucusu arasındaki bir bağlantı oluşturur.  
+- `DROPEFFECT_LINK` için **MK_CONTROL &#124; MK_SHIFT** nesne sunucusu arasındaki bir bağlantı oluşturur.  
   
-- `DROPEFFECT_COPY`için **MK_CONTROL** bırakılan nesnesinin bir kopyasını oluşturur.  
+- `DROPEFFECT_COPY` için **MK_CONTROL** bırakılan nesnesinin bir kopyasını oluşturur.  
   
-- `DROPEFFECT_MOVE`için **MK_ALT** bırakılan nesnesinin bir kopyasını oluşturur ve özgün nesne silin. Görünümü Bu verisi nesnesini kabul edebilir, bu genellikle varsayılan açılan etkili olur.  
+- `DROPEFFECT_MOVE` için **MK_ALT** bırakılan nesnesinin bir kopyasını oluşturur ve özgün nesne silin. Görünümü Bu verisi nesnesini kabul edebilir, bu genellikle varsayılan açılan etkili olur.  
   
  Daha fazla bilgi için bkz: MFC Gelişmiş kavramları örnek [OCLIENT](../../visual-cpp-samples.md).  
   
@@ -343,7 +338,7 @@ virtual DROPEFFECT OnDragEnter(
   
  Sonraki çağrılar için hazırlamak için bu işlevi geçersiz [OnDragOver](#ondragover) üye işlevi. Daha sonra kullanmak için şu anda veri nesnesinden gerekli herhangi bir veri alınan `OnDragOver` üye işlevi. Görünüm kullanıcı visual geribildirim vermek için şu anda da güncelleştirilmesi gerekir. Daha fazla bilgi için bkz: [sürükle ve bırak: bir bırakma hedefi uygulama](../../mfc/drag-and-drop-implementing-a-drop-target.md).  
   
-##  <a name="ondragleave"></a>CView::OnDragLeave  
+##  <a name="ondragleave"></a>  CView::OnDragLeave  
  Fare Bu pencere için geçerli bırak alanı dışına taşındığında bir sürükleme işlemi sırasında çerçevesi tarafından çağrılır.  
   
 ```  
@@ -353,7 +348,7 @@ virtual void OnDragLeave();
 ### <a name="remarks"></a>Açıklamalar  
  Geçerli görünümü sırasında gerçekleştirilecek eylemler temizleme gerekiyorsa, bu işlevi geçersiz kılma [OnDragEnter](#ondragenter) veya [OnDragOver](#ondragover) nesnesi sürüklenebilir ve bırakılan gibi herhangi bir görsel kullanıcı geribildirim kaldırma çağrıları .  
   
-##  <a name="ondragover"></a>CView::OnDragOver  
+##  <a name="ondragover"></a>  CView::OnDragOver  
  Fare açılan hedef pencere üzerinde taşındığında bir sürükleme işlemi sırasında çerçevesi tarafından çağrılır.  
   
 ```  
@@ -376,13 +371,13 @@ virtual DROPEFFECT OnDragOver(
 ### <a name="return-value"></a>Dönüş Değeri  
  Arasında bir değer `DROPEFFECT` numaralandırılmış kullanıcı bu konumda nesne düştüğünde oluşacak açılan türünü gösterir türü. Bırakma türü genellikle belirtildiği gibi geçerli anahtar durumuna bağlıdır `dwKeyState`. Aktarıyorsanız için standart eşlemesi `DROPEFFECT` değerler:  
   
-- `DROPEFFECT_NONE`Veri nesnesi bu pencerede bırakılamıyor.  
+- `DROPEFFECT_NONE` Veri nesnesi bu pencerede bırakılamıyor.  
   
-- `DROPEFFECT_LINK`için **MK_CONTROL &#124; MK_SHIFT** nesne sunucusu arasındaki bir bağlantı oluşturur.  
+- `DROPEFFECT_LINK` için **MK_CONTROL &#124; MK_SHIFT** nesne sunucusu arasındaki bir bağlantı oluşturur.  
   
-- `DROPEFFECT_COPY`için **MK_CONTROL** bırakılan nesnesinin bir kopyasını oluşturur.  
+- `DROPEFFECT_COPY` için **MK_CONTROL** bırakılan nesnesinin bir kopyasını oluşturur.  
   
-- `DROPEFFECT_MOVE`için **MK_ALT** bırakılan nesnesinin bir kopyasını oluşturur ve özgün nesne silin. Görünüm Verisi nesnesini kabul edebilir, bu genellikle varsayılan açılan etkili olur.  
+- `DROPEFFECT_MOVE` için **MK_ALT** bırakılan nesnesinin bir kopyasını oluşturur ve özgün nesne silin. Görünüm Verisi nesnesini kabul edebilir, bu genellikle varsayılan açılan etkili olur.  
   
  Daha fazla bilgi için bkz: MFC Gelişmiş kavramları örnek [OCLIENT](../../visual-cpp-samples.md).  
   
@@ -391,7 +386,7 @@ virtual DROPEFFECT OnDragOver(
   
  Sürükleme işlemi sırasında kullanıcı visual geribildirim vermek için bu işlevi geçersiz kılar. Bu işlev sürekli olarak adlandırılır olduğundan, içerdiği herhangi bir kod mümkün olduğunca hale getirilmiştir. Daha fazla bilgi için bkz: [sürükle ve bırak: bir bırakma hedefi uygulama](../../mfc/drag-and-drop-implementing-a-drop-target.md).  
   
-##  <a name="ondragscroll"></a>CView::OnDragScroll  
+##  <a name="ondragscroll"></a>  CView::OnDragScroll  
  Çağırmadan önce framework tarafından çağrılan [OnDragEnter](#ondragenter) veya [OnDragOver](#ondragover) noktası kaydırma bölgede olup olmadığını belirlemek için.  
   
 ```  
@@ -410,22 +405,22 @@ virtual DROPEFFECT OnDragScroll(
 ### <a name="return-value"></a>Dönüş Değeri  
  Arasında bir değer `DROPEFFECT` numaralandırılmış kullanıcı bu konumda nesne düştüğünde oluşacak açılan türünü gösterir türü. Bırakma türü tarafından belirtilen anahtar geçerli durumu genellikle bağlıdır `dwKeyState`. Aktarıyorsanız için standart eşlemesi `DROPEFFECT` değerler:  
   
-- `DROPEFFECT_NONE`Veri nesnesi bu pencerede bırakılamıyor.  
+- `DROPEFFECT_NONE` Veri nesnesi bu pencerede bırakılamıyor.  
   
-- `DROPEFFECT_LINK`için **MK_CONTROL &#124; MK_SHIFT** nesne sunucusu arasındaki bir bağlantı oluşturur.  
+- `DROPEFFECT_LINK` için **MK_CONTROL &#124; MK_SHIFT** nesne sunucusu arasındaki bir bağlantı oluşturur.  
   
-- `DROPEFFECT_COPY`için **MK_CONTROL** bırakılan nesnesinin bir kopyasını oluşturur.  
+- `DROPEFFECT_COPY` için **MK_CONTROL** bırakılan nesnesinin bir kopyasını oluşturur.  
   
-- `DROPEFFECT_MOVE`için **MK_ALT** bırakılan nesnesinin bir kopyasını oluşturur ve özgün nesne silin.  
+- `DROPEFFECT_MOVE` için **MK_ALT** bırakılan nesnesinin bir kopyasını oluşturur ve özgün nesne silin.  
   
-- `DROPEFFECT_SCROLL`Sürükleme kaydırma işlemi gerçekleşmek üzere veya hedef görünümünde oluştuğunu gösterir.  
+- `DROPEFFECT_SCROLL` Sürükleme kaydırma işlemi gerçekleşmek üzere veya hedef görünümünde oluştuğunu gösterir.  
   
  Daha fazla bilgi için bkz: MFC Gelişmiş kavramları örnek [OCLIENT](../../visual-cpp-samples.md).  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu olay için özel davranışı sağlamak istediğinizde bu işlevi geçersiz kılar. İmleç varsayılan kaydırma bölgesi iç kenarlık her penceresinin içine sürüklendiğinde varsayılan uygulaması windows otomatik olarak kayar. Daha fazla bilgi için bkz: [sürükle ve bırak: bir bırakma hedefi uygulama](../../mfc/drag-and-drop-implementing-a-drop-target.md).  
   
-##  <a name="ondraw"></a>CView::OnDraw  
+##  <a name="ondraw"></a>  CView::OnDraw  
  Belge görüntüsü oluşturmak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -443,7 +438,7 @@ virtual void OnDraw(CDC* pDC) = 0;
   
  Çizim iyileştirmek için çağrı [RectVisible](../../mfc/reference/cdc-class.md#rectvisible) üye işlevini olup belirtilen dikdörtgen çizileceğini bulmak için cihaz bağlamı. Normal ekran görüntüsünü yazdırma arasında ayrım yapmak gereksinim duyarsanız, çağrı [IsPrinting](../../mfc/reference/cdc-class.md#isprinting) üye işlevini cihaz bağlamı.  
   
-##  <a name="ondrop"></a>CView::OnDrop  
+##  <a name="ondrop"></a>  CView::OnDrop  
  Kullanıcı bir veri nesnesi geçerli bırakma hedefi bıraktığında çerçevesi tarafından çağrılır.  
   
 ```  
@@ -460,11 +455,11 @@ virtual BOOL OnDrop(
  `dropEffect`  
  Kullanıcının istediği açılan etkisi.  
   
-- `DROPEFFECT_COPY`Bırakılan veri nesnesinin bir kopyasını oluşturur.  
+- `DROPEFFECT_COPY` Bırakılan veri nesnesinin bir kopyasını oluşturur.  
   
-- `DROPEFFECT_MOVE`Veri nesnesi geçerli fare konuma taşır.  
+- `DROPEFFECT_MOVE` Veri nesnesi geçerli fare konuma taşır.  
   
-- `DROPEFFECT_LINK`Bir veri nesnesi sunucusu arasındaki bir bağlantı oluşturur.  
+- `DROPEFFECT_LINK` Bir veri nesnesi sunucusu arasındaki bir bağlantı oluşturur.  
   
  `point`  
  Görünüm istemci alanını göreli fare geçerli konumu.  
@@ -480,7 +475,7 @@ virtual BOOL OnDrop(
 > [!NOTE]
 >  Bir geçersiz kılma ise bu işlev framework çağırmaz [OnDropEx](#ondropex) bu görünüm sınıfta.  
   
-##  <a name="ondropex"></a>CView::OnDropEx  
+##  <a name="ondropex"></a>  CView::OnDropEx  
  Kullanıcı bir veri nesnesi geçerli bırakma hedefi bıraktığında çerçevesi tarafından çağrılır.  
   
 ```  
@@ -528,19 +523,19 @@ virtual DROPEFFECT OnDropEx(
   
  Açılan etkileri açılan işlemle ilişkili eylemi açıklar. Açılan etkileri aşağıdaki listeye bakın:  
   
-- `DROPEFFECT_NONE`Bir açılan izin verilmez.  
+- `DROPEFFECT_NONE` Bir açılan izin verilmez.  
   
-- `DROPEFFECT_COPY`Bir kopyalama işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_MOVE`Bir taşıma işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_MOVE` Bir taşıma işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_LINK`Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
+- `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
   
-- `DROPEFFECT_SCROLL`Sürükleme kaydırma işlemi gerçekleşmek üzere veya hedef oluştuğunu gösterir.  
+- `DROPEFFECT_SCROLL` Sürükleme kaydırma işlemi gerçekleşmek üzere veya hedef oluştuğunu gösterir.  
   
  Varsayılan menü komutu ayarlama hakkında daha fazla bilgi için bkz: [SetMenuDefaultItem](http://msdn.microsoft.com/library/windows/desktop/ms647996) Windows SDK ve [CMenu::GetSafeHmenu](../../mfc/reference/cmenu-class.md#getsafehmenu) bu birimdeki.  
   
-##  <a name="onendprinting"></a>CView::OnEndPrinting  
+##  <a name="onendprinting"></a>  CView::OnEndPrinting  
  Bir belge yazdırılması veya önizlemesi sonra çerçevesi tarafından çağrılır.  
   
 ```  
@@ -559,7 +554,7 @@ virtual void OnEndPrinting(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev varsayılan uygulaması hiçbir şey yapmaz. Bu işlev, ayrılan tüm GDI kaynaklarını serbest geçersiz kılma [OnBeginPrinting](#onbeginprinting) üye işlevi.  
   
-##  <a name="onendprintpreview"></a>CView::OnEndPrintPreview  
+##  <a name="onendprintpreview"></a>  CView::OnEndPrintPreview  
  Kullanıcı Baskı Önizleme modunu çıktığında çerçevesi tarafından çağrılır.  
   
 ```  
@@ -588,7 +583,7 @@ virtual void OnEndPrintPreview(
   
  Her zaman temel sınıf sürümü çağrı `OnEndPrintPreview` genellikle işlevi sonunda geçersiz kılma, gelen.  
   
-##  <a name="oninitialupdate"></a>CView::OnInitialUpdate  
+##  <a name="oninitialupdate"></a>  CView::OnInitialUpdate  
  Görünüm ilk belgeye eklendikten sonra ancak görünümü başlangıçta görüntülenmeden önce çerçevesi tarafından çağrılır.  
   
 ```  
@@ -598,7 +593,7 @@ virtual void OnInitialUpdate();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev varsayılan uygulamasını çağıran [in](#onupdate) hiçbir ipucu bilgilerle üye işlevi (diğer bir deyişle, 0 için varsayılan değerleri kullanılarak `lHint` parametre ve **NULL** için`pHint` parametresi). Belge hakkındaki bilgileri gerektiren herhangi bir kerelik başlatma gerçekleştirmek için bu işlevi geçersiz kılar. Örneğin, sabit boyutlu belgeleri uygulamanız varsa, belge boyutuna göre bir görünümün kayan sınırları başlatmak için bu işlevi kullanabilirsiniz. Uygulamanızın değişken boyutlu belgeleri destekliyorsa kullanın [in](#onupdate) kaydırma güncelleştirmek için belge değişiklikleri her zaman sınırlar.  
   
-##  <a name="onpreparedc"></a>CView::OnPrepareDC  
+##  <a name="onpreparedc"></a>  CView::OnPrepareDC  
  Önce framework tarafından çağrılan [OnDraw](#ondraw) üye işlevi çağrılmadan önce ve ekran görüntüsü için [OnPrint](#onprint) üye işlevi, yazdırma veya Baskı Önizleme sırasında her bir sayfa için çağrılır.  
   
 ```  
@@ -632,7 +627,7 @@ virtual void OnPrepareDC(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#183](../../mfc/codesnippet/cpp/cview-class_1.cpp)]  
   
-##  <a name="onprepareprinting"></a>CView::OnPreparePrinting  
+##  <a name="onprepareprinting"></a>  CView::OnPreparePrinting  
  Bir belge yazdırılması veya önizlemesi önce çerçevesi tarafından çağrılır.  
   
 ```  
@@ -651,7 +646,7 @@ virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
   
  Yazdırma ve baskı önizlemeyi etkinleştirmek için bu işlevi geçersiz kılmanız gerekir. Çağrı [DoPreparePrinting](#doprepareprinting) onu üye işlevi `pInfo` parametre ve dönüş değerini; döndürür `DoPreparePrinting` yazıcı cihaz bağlamı oluşturur ve Yazdır iletişim kutusu görüntüler. Yazdır iletişim kutusu dışındaki varsayılan değerlerle başlatmak istiyorsanız, üyelerine atayabilmeniz `pInfo`. Belgenin uzunluğunu biliyorsanız, örneğin, değerine geçirmek [SetMaxPage](../../mfc/reference/cprintinfo-structure.md#setmaxpage) üye işlevini `pInfo` çağırmadan önce `DoPreparePrinting`. Bu değer Kime görüntülenir: Yazdır iletişim kutusu aralığı kısmı kutusu.  
   
- `DoPreparePrinting`Yazdır iletişim kutusu Önizleme işi için görüntülemez. Bir yazdırma işinin yazdırma iletişim kutusunda atlamak istiyorsanız, denetleyin **m_bPreview** üyesi `pInfo` olan **FALSE** ve daha sonra ayarlamak **TRUE** kendisine geçirmeden önce `DoPreparePrinting`; için sıfırlayın **FALSE** daha sonra.  
+ `DoPreparePrinting` Yazdır iletişim kutusu Önizleme işi için görüntülemez. Bir yazdırma işinin yazdırma iletişim kutusunda atlamak istiyorsanız, denetleyin **m_bPreview** üyesi `pInfo` olan **FALSE** ve daha sonra ayarlamak **TRUE** kendisine geçirmeden önce `DoPreparePrinting`; için sıfırlayın **FALSE** daha sonra.  
   
  Erişim gerektiren başlatmaları yapmanız gereken `CDC` (örneğin, sayfa boyutu belgenin uzunluğunu belirtmeden önce bilmeniz gereken,), yazıcı cihaz bağlamı temsil eden nesnesi geçersiz kılma `OnBeginPrinting` üyesi işlev.  
   
@@ -666,7 +661,7 @@ virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
   
  [!code-cpp[NVC_MFCDocView#185](../../mfc/codesnippet/cpp/cview-class_3.cpp)]  
   
-##  <a name="onprint"></a>CView::OnPrint  
+##  <a name="onprint"></a>  CView::OnPrint  
  Belge sayfasının yazdıramaz veya çerçevesi tarafından çağrılır.  
   
 ```  
@@ -706,7 +701,7 @@ virtual void OnPrint(
   
  Başka bir örnek için bkz: [CRichEditView::PrintInsideRect](../../mfc/reference/cricheditview-class.md#printinsiderect).  
   
-##  <a name="onscroll"></a>CView::OnScroll  
+##  <a name="onscroll"></a>  CView::OnScroll  
  Kaydırma olup olmadığını belirlemek için çerçevesi tarafından çağrılır mümkündür.  
   
 ```  
@@ -746,7 +741,7 @@ virtual BOOL OnScroll(
 ### <a name="remarks"></a>Açıklamalar  
  Bir durumda bu işlev ile çerçevesi tarafından çağrılır `bDoScroll` kümesine **TRUE** zaman görünümü scrollbar iletisi alır. Bu durumda, aslında görünüme gitmeniz gerekir. Bu işlev çağrılır başka bir durumda `bDoScroll` kümesine **FALSE** zaman OLE öğeyi başlangıçta sürüklenebilir bir bırakma hedefi otomatik kaydırma bölgeye kaydırma gerçekte gerçekleşmeden önce. Bu durumda, aslında görünüme gitmeniz gerekir değil.  
   
-##  <a name="onscrollby"></a>CView::OnScrollBy  
+##  <a name="onscrollby"></a>  CView::OnScrollBy  
  Kullanıcı bir alan ya bir OLE öğesi görünümün geçerli Kenarlıklar karşı sürükleyerek veya dikey veya yatay kaydırma çubukları düzenleme belge mevcut görünümünü ötesinde görüntülediğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -772,7 +767,7 @@ virtual BOOL OnScrollBy(
   
  Belge genişliği veya yüksekliği 32767 piksel aşıyor, 32767 kaydırma başarısız olur `OnScrollBy` geçersiz bir adlı `sizeScroll` bağımsız değişkeni.  
   
-##  <a name="onupdate"></a>CView::OnUpdate  
+##  <a name="onupdate"></a>  CView::OnUpdate  
  Görünümün belge değiştirildikten sonra çerçevesi tarafından çağrılır; Bu işlev tarafından çağrılır [CDocument::UpdateAllViews](../../mfc/reference/cdocument-class.md#updateallviews) ve görünümünü bu değişiklikleri yansıtacak şekilde güncelleştirmek görünümü sağlar.  
   
 ```  

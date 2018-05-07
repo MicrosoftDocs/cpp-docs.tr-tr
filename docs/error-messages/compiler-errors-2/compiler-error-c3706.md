@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3706 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3706 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3706
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3706
 ms.assetid: d20a33eb-d625-46c5-ac87-32075a590d07
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b33ea3c7de9afc605622cc55f4a45f73350d7db
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8cb54dfce6a6974fcf09886f2d13047cdab53ced
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3706"></a>Derleyici Hatası C3706
 'function': COM olayları tetiklenecek COM arabirimi olmalıdır  

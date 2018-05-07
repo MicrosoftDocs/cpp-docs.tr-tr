@@ -1,13 +1,10 @@
 ---
-title: "MFC uygulamaları yazma | Microsoft Docs"
-ms.custom: 
+title: MFC uygulamaları yazma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/16/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - application wizards [MFC], Internet applications
 - MFC, application development
 ms.assetid: 6a8d8a03-abfa-4976-86c2-c5773a4b7179
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6a3a961ca0197eb80a8fafeee16c6e54cce8579
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 267fee7f3309cf5cbc4daa48f65e647c4d85a47d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="writing-mfc-applications"></a>MFC Uygulamaları Yazma
 Bu makalede, uygulamanız geliştirmek için ilk adımlar açıklanmaktadır. İlk olarak, ne tür bir uygulama yazmakta olduğunuz karar vermeniz gerekir. Birkaç seçenek ele alınan [uygulama tasarımı seçimleri](../mfc/application-design-choices.md). Uygulamanızı olacaktır:  

@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2462 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2462 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2462
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2462
 ms.assetid: a8601bf8-f5ce-41de-9117-e2632bd4996b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af4b7e303a67ed1eae3d217964818d1b4cd05b96
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e4ce82ed15bdb8844f69abc260446c1af2fd4a0f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2462"></a>Derleyici Hatası C2462
 'tanımlayıcısı': türü bir 'yeni ifadede' tanımlanamıyor  

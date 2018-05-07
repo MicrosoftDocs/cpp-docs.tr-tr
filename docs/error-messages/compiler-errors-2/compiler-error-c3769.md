@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3769 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3769 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3769
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3769
 ms.assetid: 341675e1-7428-4da6-8275-1b2f0a70dacc
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea13880843f5ca35b8cdda2218f19e5491be504c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5258c3dadd7ede384520b76e95c1b8e691882f8c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3769"></a>Derleyici Hatası C3769
 'type': iç içe geçmiş sınıf hemen kapsayan sınıfı aynı ada sahip olamaz  

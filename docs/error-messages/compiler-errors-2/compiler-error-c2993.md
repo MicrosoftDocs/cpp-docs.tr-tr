@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2993 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2993 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2993
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2993
 ms.assetid: 4ffd2b78-654b-46aa-95a6-b62101cf91c8
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3715e2183c8194fe7bcf2613cbee3a0052588385
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e25e70a9d16ee166772cf03ea1837afaf14cae29
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2993"></a>Derleyici Hatası C2993
 'tanımlayıcısı': 'parametresi' tür olmayan şablon parametresi için geçersiz tür  

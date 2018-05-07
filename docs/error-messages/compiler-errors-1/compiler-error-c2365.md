@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2365 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2365 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2365
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2365
 ms.assetid: 35839b0b-4055-4b79-8957-b3a0871bdd02
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f696a9379550bfeb47c65471a345322ddaadcf4a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 952d1ea71f0388b26d72e3cbdcb10185813242e2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2365"></a>Derleyici Hatası C2365
 'sınıf üyesi': şemadaki; Önceki tanımı 'sınıf üyesi' idi  

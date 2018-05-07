@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2617 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2617 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2617
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2617
 ms.assetid: d6a435d2-7d95-4dbf-ad4a-abe4744f63e8
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 502893544555ca5ec827efd667779fe87dc2976a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cf84ec0de54b96800d56086c79dc5ff5f82b59e7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2617"></a>Derleyici Hatası C2617
 'function': tutarsız return deyimi  

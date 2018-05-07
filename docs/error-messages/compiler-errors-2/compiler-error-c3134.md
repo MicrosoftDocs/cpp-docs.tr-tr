@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3134 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3134 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3134
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3134
 ms.assetid: f887e4d2-7740-49e4-9972-7edceb8fa77b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46dd810489003f6e45522e03fbcaf527b97f5724
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4aaf9ab8175e56615bf61b1c020e44cf20c10562
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3134"></a>Derleyici Hatası C3134
 'value': 'öznitelik' sahip değil geçerli türü 'type' özniteliği bağımsız değişkeninin değeri  

@@ -1,13 +1,10 @@
 ---
-title: "TN071: MFC IOleCommandTarget uygulaması | Microsoft Docs"
-ms.custom: 
+title: 'TN071: MFC IOleCommandTarget uygulaması | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - IOleCommandTarget
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - TN071 [MFC]
 - IOleCommandTarget interface [MFC]
 ms.assetid: 3eef571e-6357-444d-adbb-6f734a0c3161
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43f97774036c42fa0f681a65e0a335f944daf09c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 21745762fb6f6eb1eb324013db12207c4b3b81d0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn071-mfc-iolecommandtarget-implementation"></a>TN071: MFC IOleCommandTarget Uygulaması
 > [!NOTE]
@@ -34,11 +29,11 @@ ms.lasthandoff: 12/21/2017
   
  `IOleCommandTarget` Nesneleri ve kapsayıcılarına birbirlerine komutları gönderilmesi için arabirim sağlar. Örneğin, bir nesnenin araç çubukları komutları için düğmeler gibi içerebilir **yazdırma**, **Baskı Önizleme**, **kaydetmek**, `New`, ve **yakınlaştırma**. Böyle bir nesnenin katıştırılmış varsa destekleyen bir kapsayıcıda `IOleCommandTarget`, nesne düğmeleri etkinleştirebilir ve kullanıcı bunları tıklatıldığında işlemek için kapsayıcısı komutları iletin. Bir kapsayıcı kendisini yazdırmak için katıştırılmış nesne istediyseniz, bu istek bir komutu aracılığıyla göndererek kolaylaştırır `IOleCommandTarget` katıştırılmış nesnenin arabirimi.  
   
- `IOleCommandTarget`İstemci tarafından bir sunucuda yöntemleri çağırmak için kullanılan bir Otomasyon benzeri arabirimiyle olmamasıdır. Ancak, kullanarak `IOleCommandTarget` programcıları genellikle pahalı kullanmanız gerekmez çünkü Otomasyon arabirimleri çağrıları yapma yükünü kaydeder `Invoke` yöntemi `IDispatch`.  
+ `IOleCommandTarget` İstemci tarafından bir sunucuda yöntemleri çağırmak için kullanılan bir Otomasyon benzeri arabirimiyle olmamasıdır. Ancak, kullanarak `IOleCommandTarget` programcıları genellikle pahalı kullanmanız gerekmez çünkü Otomasyon arabirimleri çağrıları yapma yükünü kaydeder `Invoke` yöntemi `IDispatch`.  
   
  MFC'de, `IOleCommandTarget` arabirimi komutları sunucusuna gönderilmesi etkin belge kapsayıcıları izin vermek için etkin belge sunucuları tarafından kullanılır. Etkin belge sunucu sınıfı `CDocObjectServerItem`, MFC arabirimi eşlemelerini kullanır (bkz [TN038: MFC/OLE IUnknown uygulaması](../mfc/tn038-mfc-ole-iunknown-implementation.md)) uygulamak için `IOleCommandTarget` arabirimi.  
   
- `IOleCommandTarget`Ayrıca uygulanan **COleFrameHook** sınıfı. **COleFrameHook** olan yerinde çerçeve penceresi işlevselliğini uygulayan belgelenmemiş MFC sınıfı düzenleme kapsayıcıları. **COleFrameHook** MFC arabirimi eşlemeleri uygulamak için de kullanır `IOleCommandTarget` arabirimi. **COleFrameHook**'s uyarlamasını `IOleCommandTarget` OLE komutları iletir `COleDocObjectItem`-etkin belge kapsayıcıları türetilmiş. Kapsanan etkin belgeyi sunucularından iletileri almak tüm MFC etkin belge kapsayıcı sağlar.  
+ `IOleCommandTarget` Ayrıca uygulanan **COleFrameHook** sınıfı. **COleFrameHook** olan yerinde çerçeve penceresi işlevselliğini uygulayan belgelenmemiş MFC sınıfı düzenleme kapsayıcıları. **COleFrameHook** MFC arabirimi eşlemeleri uygulamak için de kullanır `IOleCommandTarget` arabirimi. **COleFrameHook**'s uyarlamasını `IOleCommandTarget` OLE komutları iletir `COleDocObjectItem`-etkin belge kapsayıcıları türetilmiş. Kapsanan etkin belgeyi sunucularından iletileri almak tüm MFC etkin belge kapsayıcı sağlar.  
   
 ## <a name="mfc-ole-command-maps"></a>MFC OLE komutu eşlemeleri  
  MFC geliştiriciler yararlanabilir `IOleCommandTarget` MFC OLE kullanarak eşlemeleri komutu. Komut eşleme içeren sınıf üyesi işlevleri için OLE komutları eşleştirmek için kullanılabilir olduğundan ileti eşlemeleri gibi OLE komutu eşlemeleri var. Bunun çalışmasını sağlamak için makroları OLE komut grubunun işlemek istediğiniz komut, OLE komut ve komut Kimliğini belirtmek için komut eşlemesinde yerleştirin [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) OLE komutu alındığında gönderilecek ileti. MFC önceden tanımlı makrolar bir dizi standart OLE komutları için de sağlar. Standart OLE listesi için tasarlanmış komutları Microsoft Office uygulamalarıyla kullanmak, docobj.h içinde tanımlanan OLECMDID numaralandırma bakın.  

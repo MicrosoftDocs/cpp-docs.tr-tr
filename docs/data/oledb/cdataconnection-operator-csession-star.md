@@ -1,12 +1,9 @@
 ---
-title: CDataConnection::operator CSession* | Microsoft Docs
-ms.custom: 
+title: CDataConnection::operator CSession * | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CDataConnection.operatorCSession*
@@ -19,18 +16,16 @@ helpviewer_keywords:
 - operator CSession*
 - CSession* operator
 ms.assetid: 0b0feede-5c3e-4835-be5b-03651597014d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 957e13346cb187540c21cbec71a642a917b69908
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 97219418f18220cde84c80cb9052f17552a3a45d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdataconnectionoperator-csession"></a>CDataConnection::operator CSession*
 İşaretçi içerdiği için döndüren `CSession` nesnesi.  

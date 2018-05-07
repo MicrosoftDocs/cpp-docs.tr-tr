@@ -1,13 +1,10 @@
 ---
-title: "MIDL özellik sayfaları | Microsoft Docs"
-ms.custom: 
+title: MIDL özellik sayfaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - MIDL, property pages
 - property pages, MIDL
 ms.assetid: 57498a01-fccc-4a0e-a036-6ff702f83126
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61bf005ca65948ea347fb6fed71db108628402b4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f4b32aaa7626bcb5cfabc59e0d3b9554d73379e5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="midl-property-pages"></a>MIDL Özellik Sayfaları
 **MIDL** düğümü birkaç özellik sayfalarını içerir. Bunlara erişmek için. .idl dosyasına sağ tıklayın **Çözüm Gezgini**.  
@@ -36,7 +31,7 @@ ms.lasthandoff: 12/21/2017
   
 -   [MIDL Özellik Sayfaları: Gelişmiş](../ide/midl-property-pages-advanced.md)  
   
- MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz:<xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>  
+ MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

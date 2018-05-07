@@ -1,12 +1,9 @@
 ---
 title: END_PROPERTY_SET | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - END_PROPERTY_SET
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - END_PROPERTY_SET macro
 ms.assetid: c20a5c97-1d6e-41c5-be2f-244e008e87af
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 77d28b7bed8ee55838d1a5a93dc8feb2d47e682a
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: f6c3dc4bac4f6d22758fed1f8f6f4236dcd04a2e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="endpropertyset"></a>END_PROPERTY_SET
 Bir özellik kümesi sonunu işaretler.  

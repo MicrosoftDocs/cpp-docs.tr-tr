@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2140 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2140 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2140
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2140
 ms.assetid: d44a0500-002c-4632-9e5e-c71c3a473ec4
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad091a889b3284f0197ab5365036c6e31c151134
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f1634e2a61ed9ee22bdfde619f8710226b74e48a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2140"></a>Derleyici Hatası C2140
 'type': bir genel tür parametresi bağımlı olan bir türü derleyici geçerli bir tür ayırdedici nitelik 'ayırdedici nitelik' bağımsız değişkeni olarak izin verilmiyor  

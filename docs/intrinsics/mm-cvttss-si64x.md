@@ -1,12 +1,9 @@
 ---
 title: _mm_cvttss_si64x | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - _mm_cvttss_si64x
@@ -16,20 +13,18 @@ helpviewer_keywords:
 - _mm_cvttss_si64x intrinsic
 - cvttss2si instruction
 ms.assetid: f9a3fd07-5bd8-4758-8744-6315c082cf87
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e9667f93f6255ce1e1bc42b5fac1e8e68543e8e
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: c4fd8aebb3f9a4f0078c8174aa25b9abb9378f1b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mmcvttsssi64x"></a>_mm_cvttss_si64x
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Genişletilmiş x64 yayar sürüm numarasıyla kesilmesi tek duyarlıklı Floating-Point 64-Bit tamsayı Convert (`cvttss2si`) yönerge.  
   

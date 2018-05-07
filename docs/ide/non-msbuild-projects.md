@@ -1,13 +1,10 @@
 ---
-title: "Visual c++'ta klasörü projeleri Aç | Microsoft Docs"
-ms.custom: 
+title: Visual c++'ta klasörü projeleri Aç | Microsoft Docs
+ms.custom: ''
 ms.date: 08/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,14 +12,13 @@ helpviewer_keywords:
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 721dd39cf8cda6277eb129f259b7ede2d9f0da28
-ms.sourcegitcommit: ef2a263e193410782c6dfe47d00764263439537c
+ms.openlocfilehash: 0fe4eba09f06b987ab11f35429e13796fe6baafb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="open-folder-projects-in-visual-c"></a>Visual C++'ta açık klasörü projeler
 Visual Studio 2017, kaynak dosyaları klasörünü açın ve hemen kodlama gözatma, yeniden düzenleme, hata ayıklama, IntelliSense desteği ile başlayın ve benzeri olanak tanıyan "Klasörünü aç" özelliği sunmaktadır. Hiçbir .sln veya .vcxproj dosyalar yüklenir; Gerekirse, özel görevler oluşturun ve parametreleri basit .json dosyalar ile başlatma olarak belirtebilirsiniz. Klasör Aç gücü, yalnızca dosyaların kaybolmasını koleksiyonları, ancak de ayrıca neredeyse tüm yapı sistem, CMake Ninja, QMake (Qt projelerde), gyp, SCons, Gradle, Buck, marka ve çok çeşitli şimdi Visual C++ destekleyebilir. 
@@ -43,8 +39,8 @@ Visual C++'da herhangi bir yapı sistemini kullanın ve hala avantajlarını Vis
 |||
 |-|-|
 |CppProperties.json|Tarama için özel yapılandırma bilgilerini belirtin. Bu dosya, gerekirse, kök proje klasörünüzde oluşturun.|
-|launch.vs.json|Komut satırı bağımsız değişkenleri belirtin. Üzerinden erişilen **Çözüm Gezgini** bağlam menüsü öğesini **hata ayıklama ve başlatma ayarları**.|
-|tasks.vs.json|Özel derleme komutları ve derleyici anahtarları belirtin. Üzerinden erişilen **Çözüm Gezgini** bağlam menüsü öğesini **yapılandırma görevleri**.|
+|Launch.vs.JSON|Komut satırı bağımsız değişkenleri belirtin. Üzerinden erişilen **Çözüm Gezgini** bağlam menüsü öğesini **hata ayıklama ve başlatma ayarları**.|
+|Tasks.vs.JSON|Özel derleme komutları ve derleyici anahtarları belirtin. Üzerinden erişilen **Çözüm Gezgini** bağlam menüsü öğesini **yapılandırma görevleri**.|
 
 ### <a name="configure-intellisense-with-cpppropertiesjson"></a>IntelliSense CppProperties.json ile yapılandırma
 IntelliSense ve göz atma davranışlarına kısmen tanımlar etkin yapı yapılandırmasına bağlıdır # yolları, derleyici anahtarları ve diğer parametreleri include. Varsayılan olarak, Visual Studio hata ayıklama ve yayın yapılandırmaları sağlar. Bazı projeler için IntelliSense ve göz atma özellikleri tam olarak kodunuzu kavrama sırayla özel yapılandırma oluşturmak gerekebilir. Yeni bir yapılandırma tanımlamak için kök klasöründe CppProperties.json adlı bir dosya oluşturun. Aşağıda bir örnek verilmiştir:
@@ -75,15 +71,15 @@ Bir yapılandırma aşağıdaki özelliklerden herhangi biri olabilir:
 |`forcedInclude`|Her derleme biriminde otomatik olarak eklenecek üstbilgi (eşler için /FI için MSVC veya - clang için dahil)|
 |`undefines`|Tanımsız (maps) MSVC /U için olacak şekilde makroları listesi|
 |`intelliSenseMode`|kullanılacak IntelliSense altyapısı. Mimari belirli çeşitleri MSVC, gcc veya Clang belirtebilirsiniz:
-- msvc-x86 (default)
+- MSVC x86 (varsayılan)
 - msvc-x64
-- msvc-arm
-- windows-clang-x86
+- MSVC arm
+- Windows clang x86
 - windows-clang-x64
-- windows-clang-arm
+- Windows clang arm
 - Linux-x64
 - Linux-x86
-- Linux-arm
+- Linux arm
 - gccarm
 
 #### <a name="environment-variables"></a>Ortam değişkenleri
@@ -253,7 +249,7 @@ Yapı komut dosyaları veya diğer dış işlemleri doğrudan IDE'de görevler o
 
 ![Klasör Aç yapılandırma görevleri](media/open-folder-config-tasks.png)
 
-Bu oluşturur (veya açar) `tasks.vs.json` Visual Studio, kök proje klasöründe oluşturan .vs klasördeki dosya. Bu dosyada herhangi bir rastgele görev tanımlayın ve ondan çağırma **Çözüm Gezgini** bağlam menüsü. Aşağıdaki örnek, tek bir görev tanımlayan bir tasks.vs.json dosyası gösterir. `taskName`görünen adı bağlam menüsünde tanımlar. `appliesTo`komut gerçekleştirilebilir hangi dosyaların tanımlar. `command` Özelliği (cmd.exe Windows) konsol yolunu tanımlar COMSPEC ortam değişkeni anlamına gelmektedir. CppProperties.json veya CMakeSettings.json bildirilen ortam değişkenlerini de başvurabilirsiniz. `args` Özelliği çağrılacak komut satırını belirtir. `${file}` Makrosu alır seçili dosyasında **Çözüm Gezgini**. Aşağıdaki örnek şu anda seçili .cpp dosyasının dosya adını görüntüler.
+Bu oluşturur (veya açar) `tasks.vs.json` Visual Studio, kök proje klasöründe oluşturan .vs klasördeki dosya. Bu dosyada herhangi bir rastgele görev tanımlayın ve ondan çağırma **Çözüm Gezgini** bağlam menüsü. Aşağıdaki örnek, tek bir görev tanımlayan bir tasks.vs.json dosyası gösterir. `taskName` görünen adı bağlam menüsünde tanımlar. `appliesTo` komut gerçekleştirilebilir hangi dosyaların tanımlar. `command` Özelliği (cmd.exe Windows) konsol yolunu tanımlar COMSPEC ortam değişkeni anlamına gelmektedir. CppProperties.json veya CMakeSettings.json bildirilen ortam değişkenlerini de başvurabilirsiniz. `args` Özelliği çağrılacak komut satırını belirtir. `${file}` Makrosu alır seçili dosyasında **Çözüm Gezgini**. Aşağıdaki örnek şu anda seçili .cpp dosyasının dosya adını görüntüler.
 
 ```json
 {

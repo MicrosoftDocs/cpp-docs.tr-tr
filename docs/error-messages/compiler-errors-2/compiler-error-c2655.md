@@ -2,11 +2,8 @@
 title: Derleyici Hatası C2655 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: ''
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2655
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2655
 ms.assetid: beaefa6e-51b3-4df9-9150-960f3fbf40e0
-caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bf0a7e7feab969819eccd6f8a0a8a33d5e4e56e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 77869c646e0804b5f3d942ea3acc97b0810196a4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2655"></a>Derleyici Hatası C2655
 'tanımlayıcısı': tanımı veya geçerli kapsamda geçersiz yeniden bildirimi  

@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2878 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2878 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2878
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2878
 ms.assetid: 83ee3de1-f554-49e8-a840-1f550cee7f69
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b050a77b944f4eee5bc26f8c9e8a84519b6e9d6e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 67da9f25adfa99cf385eeb7795559102ca56b9d6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2878"></a>Derleyici Hatası C2878
 'name': bir ad alanı veya sınıf adı yok  

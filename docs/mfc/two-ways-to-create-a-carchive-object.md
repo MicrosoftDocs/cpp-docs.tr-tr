@@ -1,13 +1,10 @@
 ---
-title: "CArchive nesnesi oluşturmanın iki yolu | Microsoft Docs"
-ms.custom: 
+title: CArchive nesnesi oluşturmanın iki yolu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - CArchive
 dev_langs:
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - data storage [MFC], CArchive class
 - CArchive class [MFC], constructor
 ms.assetid: aefa28ce-b55c-40dc-9e42-5f038030985d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b1db549544d421600ed6dae1a8a987006c2ab6c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 87abaa5a3564c61a6944e0cc31e81375f92a3a80
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="two-ways-to-create-a-carchive-object"></a>CArchive Nesnesi Oluşturmanın İki Yolu
 Oluşturmanın iki yolu vardır bir `CArchive` nesnesi:  
@@ -41,7 +36,7 @@ Oluşturmanın iki yolu vardır bir `CArchive` nesnesi:
   
 -   [CArchive nesnesi açık oluşturma](#_core_explicit_creation_of_a_carchive_object)  
   
-##  <a name="_core_implicit_creation_of_a_carchive_object_via_the_framework"></a>CArchive nesnesi çerçevesi aracılığıyla örtük oluşturma  
+##  <a name="_core_implicit_creation_of_a_carchive_object_via_the_framework"></a> CArchive nesnesi çerçevesi aracılığıyla örtük oluşturma  
  Oluşturduğunuz iskelet izin vermek için en yaygın ve kolay bir yol olduğu bir `CArchive` Kaydet, Farklı Kaydet ve Aç komutlarını Dosya menüsünde adına belgeniz için nesne.  
   
  Kullanıcı, uygulamanızın Dosya menüsünden Kaydet komutu verdiğinde framework yaptığı aşağıda verilmiştir:  
@@ -58,7 +53,7 @@ Oluşturmanın iki yolu vardır bir `CArchive` nesnesi:
   
  Bu nedenle, oluşturduğunuz iskelet izin verirseniz `CArchive` nesne belgeniz için tüm yapmanız gereken belgenin uygulamak olduğu `Serialize` yazar ve okur ve Arşiv gelen işlev. Uygulamak de `Serialize` herhangi `CObject`-türetilmiş nesneleri, belgenin `Serialize` işlevi sırayla doğrudan veya dolaylı olarak serileştirir.  
   
-##  <a name="_core_explicit_creation_of_a_carchive_object"></a>CArchive nesnesi açık oluşturma  
+##  <a name="_core_explicit_creation_of_a_carchive_object"></a> CArchive nesnesi açık oluşturma  
  Belge çerçeve aracılığıyla seri hale getirme yanı sıra zaman ihtiyacınız olabilecek diğer durumlar vardır bir `CArchive` nesnesi. Örneğin, verileri için ve panodan tarafından temsil edilen seri hale getirmek isteyebilirsiniz bir `CSharedFile` nesnesi. Veya, bir kullanıcı arabirimi çerçevesi tarafından sunulan olandan farklı bir dosya kaydetmek için kullanmak isteyebilirsiniz. Bu durumda, açıkça oluşturabileceğiniz bir `CArchive` nesnesi. Bunu, framework değil, aynı şekilde, aşağıdaki yordamı kullanarak yapabilirsiniz.  
   
 #### <a name="to-explicitly-create-a-carchive-object"></a>Açıkça CArchive nesnesi oluşturmak için  

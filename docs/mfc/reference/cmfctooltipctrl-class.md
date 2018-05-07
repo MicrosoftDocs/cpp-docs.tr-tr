@@ -1,12 +1,9 @@
 ---
-title: "CMFCToolTipCtrl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCToolTipCtrl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCToolTipCtrl
@@ -41,17 +38,15 @@ helpviewer_keywords:
 - CMFCToolTipCtrl [MFC], SetLocation
 - CMFCToolTipCtrl [MFC], SetParams
 ms.assetid: 9fbfcfb1-a8ab-417f-ae29-9a9ca85ee58f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae37349599977b236f111530f170da746b44b425
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 09a701498b47957f64558fe42408ff64351c238b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfctooltipctrl-class"></a>CMFCToolTipCtrl sınıfı
 Genişletilmiş araç ipucu uygulaması temel alarak [CToolTipCtrl sınıfı](../../mfc/reference/ctooltipctrl-class.md). Bir araç ipucu temel alarak `CMFCToolTipCtrl` sınıfı bir simge, bir etiket ve açıklama görüntüleyebilirsiniz. Gradyan Dolgu, özel metin ve renkler, kalın metin, yuvarlatılmış köşeleri veya balon stil kullanarak görünümünü özelleştirebilirsiniz.  
@@ -165,7 +160,7 @@ theApp.GetTooltipManager ()->SetTooltipParams (AFX_TOOLTIP_TYPE_ALL,
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxtooltipctrl.h  
   
-##  <a name="cmfctooltipctrl"></a>CMFCToolTipCtrl::CMFCToolTipCtrl  
+##  <a name="cmfctooltipctrl"></a>  CMFCToolTipCtrl::CMFCToolTipCtrl  
 
   
 ```  
@@ -173,11 +168,11 @@ CMFCToolTipCtrl(CMFCToolTipInfo* pParams = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pParams`  
+ [in] `pParams`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="geticonsize"></a>CMFCToolTipCtrl::GetIconSize  
+##  <a name="geticonsize"></a>  CMFCToolTipCtrl::GetIconSize  
  Bir simge boyutu bir araç ipucunda döndürür.  
   
 ```  
@@ -187,7 +182,7 @@ virtual CSize GetIconSize();
 ### <a name="return-value"></a>Dönüş Değeri  
  Simge piksel cinsinden büyüklüğü.  
   
-##  <a name="getparams"></a>CMFCToolTipCtrl::GetParams  
+##  <a name="getparams"></a>  CMFCToolTipCtrl::GetParams  
  Araç İpucu görüntü ayarlarını döndürür.  
   
 ```  
@@ -197,7 +192,7 @@ const CMFCToolTipInfo& GetParams() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  İçinde depolanan geçerli araç ipucu görüntü ayarlarını bir [CMFCToolTipInfo sınıfı](../../mfc/reference/cmfctooltipinfo-class.md) nesnesi.  
   
-##  <a name="ondrawborder"></a>CMFCToolTipCtrl::OnDrawBorder  
+##  <a name="ondrawborder"></a>  CMFCToolTipCtrl::OnDrawBorder  
  Bir araç ipucu kenarlık çizer.  
   
 ```  
@@ -220,7 +215,7 @@ virtual void OnDrawBorder(
 ### <a name="remarks"></a>Açıklamalar  
  Araç İpucu kenarlık görünümünü özelleştirmek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
   
-##  <a name="ondrawdescription"></a>CMFCToolTipCtrl::OnDrawDescription  
+##  <a name="ondrawdescription"></a>  CMFCToolTipCtrl::OnDrawDescription  
 
   
 ```  
@@ -231,15 +226,15 @@ virtual CSize OnDrawDescription(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
- [in]`rect`  
- [in]`bCalcOnly`  
+ [in] `pDC`  
+ [in] `rect`  
+ [in] `bCalcOnly`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondrawicon"></a>CMFCToolTipCtrl::OnDrawIcon  
+##  <a name="ondrawicon"></a>  CMFCToolTipCtrl::OnDrawIcon  
  Simge bir araç ipucunda görüntüler.  
   
 ```  
@@ -249,19 +244,19 @@ virtual BOOL OnDrawIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in]`rectImage`  
+ [in] `rectImage`  
  Simge koordinatları.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`simge çizilmiş durumunda. Aksi takdirde `FALSE`.  
+ `TRUE` simge çizilmiş durumunda. Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Özel bir simge görüntülemek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın. Ayrıca geçersiz kılmanız gerekir [CMFCToolTipCtrl::GetIconSize](#geticonsize) metin ve açıklama düzenini doğru hesaplamak araç ipucu etkinleştirmek için.  
   
-##  <a name="ondrawlabel"></a>CMFCToolTipCtrl::OnDrawLabel  
+##  <a name="ondrawlabel"></a>  CMFCToolTipCtrl::OnDrawLabel  
  Bir araç ipucu etiketini çizer veya etiketin boyutunu hesaplar.  
   
 ```  
@@ -287,7 +282,7 @@ virtual CSize OnDrawLabel(
 ### <a name="remarks"></a>Açıklamalar  
  Araç İpucu etiket görünümünü özelleştirmek istiyorsanız bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
   
-##  <a name="ondrawseparator"></a>CMFCToolTipCtrl::OnDrawSeparator  
+##  <a name="ondrawseparator"></a>  CMFCToolTipCtrl::OnDrawSeparator  
  Etiket ve araç ipucu açıklamasında arasında ayırıcı çizer.  
   
 ```  
@@ -299,16 +294,16 @@ virtual void OnDrawSeparator(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in]`x1`  
+ [in] `x1`  
  Ayırıcının solundaki yatay koordinatı.  
   
- [in]`x2`  
+ [in] `x2`  
  Ayırıcı sağ ucunu yatay koordinatı.  
   
- [in]`Y`  
+ [in] `Y`  
  Ayırıcı dikey koordinatı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -316,7 +311,7 @@ virtual void OnDrawSeparator(
   
  Ayırıcı görünümünü özelleştirmek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
   
-##  <a name="onfillbackground"></a>CMFCToolTipCtrl::OnFillBackground  
+##  <a name="onfillbackground"></a>  CMFCToolTipCtrl::OnFillBackground  
  Araç İpucu arka plan doldurur.  
   
 ```  
@@ -345,7 +340,7 @@ virtual void OnFillBackground(
   
  Araç İpucu görünümünü özelleştirmek istiyorsanız bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
   
-##  <a name="setdescription"></a>CMFCToolTipCtrl::SetDescription  
+##  <a name="setdescription"></a>  CMFCToolTipCtrl::SetDescription  
  Araç İpucu gösterilecek açıklama ayarlar.  
   
 ```  
@@ -359,7 +354,7 @@ virtual void SetDescription(const CString strDesrciption);
 ### <a name="remarks"></a>Açıklamalar  
  Açıklama metnini araç ipucu ayırıcı altında görüntülenir.  
   
-##  <a name="setfixedwidth"></a>CMFCToolTipCtrl::SetFixedWidth  
+##  <a name="setfixedwidth"></a>  CMFCToolTipCtrl::SetFixedWidth  
 
   
 ```  
@@ -369,12 +364,12 @@ void SetFixedWidth(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nWidthRegular`  
- [in]`nWidthLargeImage`  
+ [in] `nWidthRegular`  
+ [in] `nWidthLargeImage`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="sethotribbonbutton"></a>CMFCToolTipCtrl::SetHotRibbonButton  
+##  <a name="sethotribbonbutton"></a>  CMFCToolTipCtrl::SetHotRibbonButton  
 
   
 ```  
@@ -382,11 +377,11 @@ void SetHotRibbonButton(CMFCRibbonButton* pRibbonButton);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pRibbonButton`  
+ [in] `pRibbonButton`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setlocation"></a>CMFCToolTipCtrl::SetLocation  
+##  <a name="setlocation"></a>  CMFCToolTipCtrl::SetLocation  
 
   
 ```  
@@ -394,11 +389,11 @@ void SetLocation(CPoint pt);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pt`  
+ [in] `pt`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setparams"></a>CMFCToolTipCtrl::SetParams  
+##  <a name="setparams"></a>  CMFCToolTipCtrl::SetParams  
  Bir araç ipucu görsel görünümünü kullanarak belirtir bir [CMFCToolTipInfo sınıfı](../../mfc/reference/cmfctooltipinfo-class.md) nesnesi.  
   
 ```  

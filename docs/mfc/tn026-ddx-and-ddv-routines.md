@@ -1,13 +1,10 @@
 ---
 title: 'TN026: DDX ve DDV rutinleri | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - DDX
 - DDV
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - TN026
 - DDV (dialog data validation), procedures
 ms.assetid: c2eba87a-4b47-4083-b28b-e2fa77dfb4c4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15c2309e8080892bdca2753c1ea6128ce419862f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 44a946b21908f45b595056a956c75b234fdbb886
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn026-ddx-and-ddv-routines"></a>TN026: DDX ve DDV Rutinleri
 > [!NOTE]
@@ -78,7 +73,7 @@ DDV_Custom(pDX,
   
  Verilerin ilk değerleri standart C++ oluşturucuda, genellikle bir blok ile ayarlanır `//{{AFX_DATA_INIT` ve `//}}AFX_DATA_INIT` açıklamaları.  
   
- `CWnd::UpdateData`başlatma ve hata çağrısı geçici işleme işlemi `DoDataExchange`.  
+ `CWnd::UpdateData` başlatma ve hata çağrısı geçici işleme işlemi `DoDataExchange`.  
   
  Çağırabilirsiniz `CWnd::UpdateData` veri değişimi ve doğrulaması gerçekleştirmek için herhangi bir zamanda. Varsayılan olarak `UpdateData`(TRUE) varsayılan olarak adlandırılan `CDialog::OnOK` işleyici ve `UpdateData`(FALSE), varsayılan olarak çağrılır `CDialog::OnInitDialog`.  
   
@@ -99,7 +94,7 @@ DDV_Custom(pDX,
   
 - `m_pDlgWnd`: Denetimleri içerir penceresi (genellikle bir iletişim kutusu). 'This' geçirmek zorunda kalmaktan COleDBRecordView ve DDV_ genel işlevler arayanlar önlemek için her DDX/DDV yordamına budur.  
   
-- `PrepareCtrl`, ve `PrepareEditCtrl`: bir iletişim kutusu denetim veri değişimi için hazırlar. Doğrulama başarısız olursa odağı ayarlamak için bu denetimin işleyicisi depolar. `PrepareCtrl`nonedit denetimleri için kullanılır ve `PrepareEditCtrl` düzenleme denetimleri için kullanılır.  
+- `PrepareCtrl`, ve `PrepareEditCtrl`: bir iletişim kutusu denetim veri değişimi için hazırlar. Doğrulama başarısız olursa odağı ayarlamak için bu denetimin işleyicisi depolar. `PrepareCtrl` nonedit denetimleri için kullanılır ve `PrepareEditCtrl` düzenleme denetimleri için kullanılır.  
   
 - **Başarısız**: giriş hatası kullanıcıya uyarı bir ileti kutusu getiren sonra çağrılır. Bu yordam son denetim odağı geri yükler (son çağrısı `PrepareCtrl` / `PrepareEditCtrl`) ve bir özel durum. Bu üye işlevi COleDBRecordView ve DDV_ yordamlarından çağrılabilir.  
   

@@ -1,12 +1,9 @@
 ---
 title: BEGIN_PROPERTY_SET | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - BEGIN_PROPERTY_SET
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - BEGIN_PROPERTY_SET macro
 ms.assetid: 5995f21a-5161-4ecf-b9da-e2ff6754d40e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 66a85baffb88b543ca26b819cf2076ec30b78bf1
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: cd8b38bb125e01c2f2ad0cf1b95699ae9508136d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="beginpropertyset"></a>BEGIN_PROPERTY_SET
 Bir özelliğin başına bir özellik Ayarla işaretleri eşlemesi ayarlayın.  

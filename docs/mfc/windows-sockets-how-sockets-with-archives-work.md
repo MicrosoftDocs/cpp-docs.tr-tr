@@ -1,13 +1,10 @@
 ---
-title: "Windows Yuvaları: Yuvaların arşivlerle çalışması | Microsoft Docs"
-ms.custom: 
+title: 'Windows Yuvaları: Yuvaların arşivlerle çalışması | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - Windows Sockets [MFC], with archives
 - two-state socket object
 ms.assetid: d8ae4039-391d-44f0-a19b-558817affcbb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b6ff5f07e3662e61a7ba6260bb90459f3aebd7d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c03ae586e346be2ba1e7c71475b69318ded0dd18
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="windows-sockets-how-sockets-with-archives-work"></a>Windows Yuvaları: Yuvaların Arşivlerle Çalışması
 Bu makalede açıklanır nasıl bir [CSocket](../mfc/reference/csocket-class.md) nesne, bir [CSocketFile](../mfc/reference/csocketfile-class.md) nesnesi ve [CArchive](../mfc/reference/carchive-class.md) nesnesi, bir Windows aracılığıyla veri gönderme ve alma basitleştirmek için birleştirilir Yuva.  
@@ -37,7 +32,7 @@ Bu makalede açıklanır nasıl bir [CSocket](../mfc/reference/csocket-class.md)
   
  A `CArchive` nesnesi bir arabellek yönetir. Depolama (gönderen) arşiv arabellek dolduğunda, ilişkili bir `CFile` nesnesi arabellek içeriğini yazar. İleti gönderme için düzenleniyor yuvaya bağlı bir arşiv arabellek eşdeğerdir. Arşiv yüklenirken (alma) arabellek dolduğunda, `CFile` nesnesi, arabellek yeniden kullanılabilir hale gelene kadar okuma durdurur.  
   
- Sınıf `CSocketFile` türetilen `CFile`, ancak desteklemediği [CFile](../mfc/reference/cfile-class.md) konumlandırma işlevleri gibi üye işlevleri (`Seek`, `GetLength`, `SetLength`, vb.), işlevleri (kilitleme `LockRange`, `UnlockRange`), veya `GetPosition` işlevi. Tüm [CSocketFile](../mfc/reference/csocketfile-class.md) nesne gerçekleştirmelisiniz yazma veya okuma için veya ilişkili bayt dizisi veya `CSocket` nesnesi. Bir dosya dahil değil çünkü gibi işlemleri `Seek` ve `GetPosition` hiçbir anlamlıdır. `CSocketFile`türetilmiş `CFile`, tüm bu üye işlevleri devralan normalde. Bu, desteklenmeyen önlemek için `CFile` geçersiz kılınan üye işlevleri de `CSocketFile` atmak için bir [CNotSupportedException](../mfc/reference/cnotsupportedexception-class.md).  
+ Sınıf `CSocketFile` türetilen `CFile`, ancak desteklemediği [CFile](../mfc/reference/cfile-class.md) konumlandırma işlevleri gibi üye işlevleri (`Seek`, `GetLength`, `SetLength`, vb.), işlevleri (kilitleme `LockRange`, `UnlockRange`), veya `GetPosition` işlevi. Tüm [CSocketFile](../mfc/reference/csocketfile-class.md) nesne gerçekleştirmelisiniz yazma veya okuma için veya ilişkili bayt dizisi veya `CSocket` nesnesi. Bir dosya dahil değil çünkü gibi işlemleri `Seek` ve `GetPosition` hiçbir anlamlıdır. `CSocketFile` türetilmiş `CFile`, tüm bu üye işlevleri devralan normalde. Bu, desteklenmeyen önlemek için `CFile` geçersiz kılınan üye işlevleri de `CSocketFile` atmak için bir [CNotSupportedException](../mfc/reference/cnotsupportedexception-class.md).  
   
  `CSocketFile` Nesnesi çağırır üye işlevlerini kendi `CSocket` veri göndermek ve almak için nesne.  
   

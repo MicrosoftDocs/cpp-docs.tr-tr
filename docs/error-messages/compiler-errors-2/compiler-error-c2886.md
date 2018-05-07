@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2886 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2886 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2886
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2886
 ms.assetid: c01588a1-484c-4dc9-a3f1-f900c6e44543
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 464b593c3639f66a6afc7a165a22b5d327c86671
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1472c475a89fc219f8fe94fdbc69ae7c8a176f24
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2886"></a>Derleyici Hatası C2886
 'class::identifier': sembol bir üye kullanarak-bildiriminde kullanılamaz  

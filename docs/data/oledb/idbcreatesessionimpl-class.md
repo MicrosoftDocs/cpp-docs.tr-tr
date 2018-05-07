@@ -1,12 +1,9 @@
 ---
-title: "Idbcreatesessionımpl sınıfı | Microsoft Docs"
-ms.custom: 
+title: Idbcreatesessionımpl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - IDBCreateSessionImpl
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - IDBCreateSessionImpl class
 ms.assetid: 48c02c5c-8362-45ac-af8e-bb119cf8c5c7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4cd7abcc35a7e3bff95c0945069689750c4d55ac
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 3e027faa11ec7c2a2b6c8d29ef99fe95419a7594
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="idbcreatesessionimpl-class"></a>IDBCreateSessionImpl Sınıfı
 Bir uygulamasını sağlar [IDBCreateSession](https://msdn.microsoft.com/en-us/library/ms724076.aspx) arabirimi.  

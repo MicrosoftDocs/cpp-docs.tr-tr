@@ -1,12 +1,9 @@
 ---
-title: "COleSafeArray sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleSafeArray sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleSafeArray
@@ -69,17 +66,15 @@ helpviewer_keywords:
 - COleSafeArray [MFC], UnaccessData
 - COleSafeArray [MFC], Unlock
 ms.assetid: f45a5224-5f48-40ec-9ddd-287ef9740150
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39c7a471b5c397c430f419514b9ebf1d4da62f62
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e21cecc00c9aab170c79247bced635783541be48
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="colesafearray-class"></a>COleSafeArray sınıfı
 Rastgele tür ve boyut dizilerle çalışmaya yönelik bir sınıf.  
@@ -137,10 +132,10 @@ class COleSafeArray : public tagVARIANT
 |[COleSafeArray::operator LPVARIANT](#operator_lpvariant)|Erişen temel **değişken** yapısını `COleSafeArray` nesnesi.|  
 |[COleSafeArray::operator =](#operator_eq)|Kopyalar değerlere bir `COleSafeArray` nesne ( **SAFEARRAY**, **değişken**, `COleVariant`, veya `COleSafeArray` array).|  
 |[COleSafeArray::operator ==](#operator_eq_eq)|İki değişken dizisi karşılaştırır ( **SAFEARRAY**, **değişken**, `COleVariant`, veya `COleSafeArray` Diziler).|  
-|[COleSafeArray::operator&lt;&lt;](#operator_lt_lt)|İçeriğini çıkarır bir `COleSafeArray` döküm bağlam nesnesi.|  
+|[COleSafeArray::operator &lt;&lt;](#operator_lt_lt)|İçeriğini çıkarır bir `COleSafeArray` döküm bağlam nesnesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `COleSafeArray`OLE türetilen **değişken** yapısı. OLE **SAFEARRAY** üye işlevleri aracılığıyla kullanılabilen `COleSafeArray`yanı üye işlevleri bayt tek boyutlu diziler için özel olarak tasarlanmış bir dizi olarak.  
+ `COleSafeArray` OLE türetilen **değişken** yapısı. OLE **SAFEARRAY** üye işlevleri aracılığıyla kullanılabilen `COleSafeArray`yanı üye işlevleri bayt tek boyutlu diziler için özel olarak tasarlanmış bir dizi olarak.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `tagVARIANT`  
@@ -150,7 +145,7 @@ class COleSafeArray : public tagVARIANT
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h  
   
-##  <a name="accessdata"></a>COleSafeArray::AccessData  
+##  <a name="accessdata"></a>  COleSafeArray::AccessData  
  Dizi veri için bir işaretçi alır.  
   
 ```  
@@ -167,7 +162,7 @@ void AccessData(void** ppvData);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#26](../../mfc/codesnippet/cpp/colesafearray-class_1.cpp)]  
   
-##  <a name="allocdata"></a>COleSafeArray::AllocData  
+##  <a name="allocdata"></a>  COleSafeArray::AllocData  
  Bellek için güvenli diziye ayırır.  
   
 ```  
@@ -177,7 +172,7 @@ void AllocData();
 ### <a name="remarks"></a>Açıklamalar  
  Hata üzerinde işlevi oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) veya [COleException](../../mfc/reference/coleexception-class.md).  
   
-##  <a name="allocdescriptor"></a>COleSafeArray::AllocDescriptor  
+##  <a name="allocdescriptor"></a>  COleSafeArray::AllocDescriptor  
  Bellek için güvenli diziye tanımlayıcısı ayırır.  
   
 ```  
@@ -191,7 +186,7 @@ void AllocDescriptor(DWORD dwDims);
 ### <a name="remarks"></a>Açıklamalar  
  Hata üzerinde işlevi oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) veya [COleException](../../mfc/reference/coleexception-class.md).  
   
-##  <a name="attach"></a>COleSafeArray::Attach  
+##  <a name="attach"></a>  COleSafeArray::Attach  
  Var olan verileri denetimin verir **değişken** için dizi `COleSafeArray` nesnesi.  
   
 ```  
@@ -208,7 +203,7 @@ void Attach(VARIANT& varSrc);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [COleSafeArray::AccessData](#accessdata).  
   
-##  <a name="clear"></a>COleSafeArray::Clear  
+##  <a name="clear"></a>  COleSafeArray::Clear  
  Güvenli dizi temizler.  
   
 ```  
@@ -218,7 +213,7 @@ void Clear();
 ### <a name="remarks"></a>Açıklamalar  
  Ayarlayarak güvenli bir dizi işlev temizler `VARTYPE` nesnenin `VT_EMPTY`. İçeriğiyle yayımlanan ve dizi serbest bırakılır.  
   
-##  <a name="colesafearray"></a>COleSafeArray::COleSafeArray  
+##  <a name="colesafearray"></a>  COleSafeArray::COleSafeArray  
  Oluşturan bir `COleSafeArray` nesnesi.  
   
 ```  
@@ -261,7 +256,7 @@ COleSafeArray(const COleVariant& varSrc);
   
  Hata üzerinde işlevi oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) veya [COleException](../../mfc/reference/coleexception-class.md).  
   
-##  <a name="copy"></a>COleSafeArray::Copy  
+##  <a name="copy"></a>  COleSafeArray::Copy  
  Varolan bir güvenli dizisinin bir kopyasını oluşturur.  
   
 ```  
@@ -275,7 +270,7 @@ void Copy(LPSAFEARRAY* ppsa);
 ### <a name="remarks"></a>Açıklamalar  
  Hata üzerinde işlevi oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) veya [COleException](../../mfc/reference/coleexception-class.md).  
   
-##  <a name="create"></a>COleSafeArray::Create  
+##  <a name="create"></a>  COleSafeArray::Create  
  Ayırır ve dizi veri başlatır.  
   
 ```  
@@ -293,7 +288,7 @@ void Create(
   
 ### <a name="parameters"></a>Parametreler  
  `vtSrc`  
- Dizi temel türü (diğer bir deyişle, **VARTYPE** dizinin her öğesinin). **VARTYPE** VARIANT türleri bir kısmı için kısıtlanmış. Ne **VT_ARRAY** veya **VT_BYREF** bayrak ayarlanabilir. `VT_EMPTY`ve **VT_NULL** dizisi için geçerli temel türleri değildir. Tüm diğer yasal türleridir.  
+ Dizi temel türü (diğer bir deyişle, **VARTYPE** dizinin her öğesinin). **VARTYPE** VARIANT türleri bir kısmı için kısıtlanmış. Ne **VT_ARRAY** veya **VT_BYREF** bayrak ayarlanabilir. `VT_EMPTY` ve **VT_NULL** dizisi için geçerli temel türleri değildir. Tüm diğer yasal türleridir.  
   
  `dwDims`  
  Dizi boyutları sayısı. Dizi ile oluşturulduktan sonra bu değiştirilebilir [Redim](#redim).  
@@ -310,7 +305,7 @@ void Create(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#27](../../mfc/codesnippet/cpp/colesafearray-class_2.cpp)]  
   
-##  <a name="createonedim"></a>COleSafeArray::CreateOneDim  
+##  <a name="createonedim"></a>  COleSafeArray::CreateOneDim  
  Yeni bir tek boyutlu `COleSafeArray` nesnesi.  
   
 ```  
@@ -342,7 +337,7 @@ void CreateOneDim(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#28](../../mfc/codesnippet/cpp/colesafearray-class_3.cpp)]  
   
-##  <a name="destroy"></a>COleSafeArray::Destroy  
+##  <a name="destroy"></a>  COleSafeArray::Destroy  
  Var olan bir dizi tanımlayıcısı ve dizisindeki tüm veriler yok eder.  
   
 ```  
@@ -352,7 +347,7 @@ void Destroy();
 ### <a name="remarks"></a>Açıklamalar  
  Nesneleri dizideki depolanıyorsa, her nesne serbest bırakılır. Hata üzerinde işlevi oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) veya [COleException](../../mfc/reference/coleexception-class.md).  
   
-##  <a name="destroydata"></a>COleSafeArray::DestroyData  
+##  <a name="destroydata"></a>  COleSafeArray::DestroyData  
  Güvenli bir dizi tüm veriler yok eder.  
   
 ```  
@@ -362,7 +357,7 @@ void DestroyData();
 ### <a name="remarks"></a>Açıklamalar  
  Nesneleri dizideki depolanıyorsa, her nesne serbest bırakılır. Hata üzerinde işlevi oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) veya [COleException](../../mfc/reference/coleexception-class.md).  
   
-##  <a name="destroydescriptor"></a>COleSafeArray::DestroyDescriptor  
+##  <a name="destroydescriptor"></a>  COleSafeArray::DestroyDescriptor  
  Güvenli bir dizi tanımlayıcısının bozar.  
   
 ```  
@@ -372,7 +367,7 @@ void DestroyDescriptor();
 ### <a name="remarks"></a>Açıklamalar  
  Hata üzerinde işlevi oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) veya [COleException](../../mfc/reference/coleexception-class.md).  
   
-##  <a name="detach"></a>COleSafeArray::Detach  
+##  <a name="detach"></a>  COleSafeArray::Detach  
  Ayırır **değişken** verilerden `COleSafeArray` nesnesi.  
   
 ```  
@@ -390,7 +385,7 @@ VARIANT Detach();
 ### <a name="example"></a>Örnek  
   Örneğin bkz [COleSafeArray::PutElement](#putelement).  
   
-##  <a name="getbytearray"></a>COleSafeArray::GetByteArray  
+##  <a name="getbytearray"></a>  COleSafeArray::GetByteArray  
  Güvenli diziye içeriğini kopyalar bir `CByteArray`.  
   
 ```  
@@ -401,7 +396,7 @@ void GetByteArray(CByteArray& bytes);
  `bytes`  
  Bir başvuru bir [CLongBinary](../../mfc/reference/cbytearray-class.md) nesnesi.  
   
-##  <a name="getdim"></a>COleSafeArray::GetDim  
+##  <a name="getdim"></a>  COleSafeArray::GetDim  
  Boyutlar sayısını döndürür `COleSafeArray` nesnesi.  
   
 ```  
@@ -414,7 +409,7 @@ DWORD GetDim();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#27](../../mfc/codesnippet/cpp/colesafearray-class_2.cpp)]  
   
-##  <a name="getelement"></a>COleSafeArray::GetElement  
+##  <a name="getelement"></a>  COleSafeArray::GetElement  
  Güvenli dizinin tek bir öğesi alır.  
   
 ```  
@@ -438,7 +433,7 @@ void GetElement(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#29](../../mfc/codesnippet/cpp/colesafearray-class_4.cpp)]  
   
-##  <a name="getelemsize"></a>COleSafeArray::GetElemSize  
+##  <a name="getelemsize"></a>  COleSafeArray::GetElemSize  
  Bir öğedeki boyutunu alır bir `COleSafeArray` nesnesi.  
   
 ```  
@@ -448,7 +443,7 @@ DWORD GetElemSize();
 ### <a name="return-value"></a>Dönüş Değeri  
  Güvenli bir dizi öğelerinin bayt cinsinden boyutu.  
   
-##  <a name="getlbound"></a>COleSafeArray::GetLBound  
+##  <a name="getlbound"></a>  COleSafeArray::GetLBound  
  Herhangi bir boyutu alt sınırı döndüren bir `COleSafeArray` nesnesi.  
   
 ```  
@@ -470,7 +465,7 @@ void GetLBound(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#30](../../mfc/codesnippet/cpp/colesafearray-class_5.cpp)]  
   
-##  <a name="getonedimsize"></a>COleSafeArray::GetOneDimSize  
+##  <a name="getonedimsize"></a>  COleSafeArray::GetOneDimSize  
  Tek boyutlu içinde öğe sayısını döndürür `COleSafeArray` nesnesi.  
   
 ```  
@@ -483,7 +478,7 @@ DWORD GetOneDimSize();
 ### <a name="example"></a>Örnek  
   Örneğin bkz [COleSafeArray::CreateOneDim](#createonedim).  
   
-##  <a name="getubound"></a>COleSafeArray::GetUBound  
+##  <a name="getubound"></a>  COleSafeArray::GetUBound  
  Herhangi bir güvenli bir dizi boyutu üst sınırı döndürür.  
   
 ```  
@@ -505,7 +500,7 @@ void GetUBound(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#31](../../mfc/codesnippet/cpp/colesafearray-class_6.cpp)]  
   
-##  <a name="lock"></a>COleSafeArray::Lock  
+##  <a name="lock"></a>  COleSafeArray::Lock  
  Bir dizi ve yeri dizi tanımlayıcısındaki dizi veri için bir işaretçi kilit sayısını artırır.  
   
 ```  
@@ -519,14 +514,14 @@ void Lock();
   
  Kilitliyken bir dizi silinemiyor.  
   
-##  <a name="operator_lpcvariant"></a>COleSafeArray::operator LPCVARIANT  
+##  <a name="operator_lpcvariant"></a>  COleSafeArray::operator LPCVARIANT  
  Arka plandaki erişmek için bu atama işleci çağrısı **değişken** yapısı bu `COleSafeArray` nesnesi.  
   
 ```  
 operator LPCVARIANT() const;  
 ```  
   
-##  <a name="operator_lpvariant"></a>COleSafeArray::operator LPVARIANT  
+##  <a name="operator_lpvariant"></a>  COleSafeArray::operator LPVARIANT  
  Arka plandaki erişmek için bu atama işleci çağrısı **değişken** yapısı bu `COleSafeArray` nesnesi.  
   
 ```  
@@ -536,7 +531,7 @@ operator LPVARIANT();
 ### <a name="remarks"></a>Açıklamalar  
  Bu değeri değiştirme Not **değişken** bu işlev tarafından döndürülen işaretçi tarafından erişilen yapısı, bu değeri değiştirir `COleSafeArray` nesnesi.  
   
-##  <a name="operator_eq"></a>COleSafeArray::operator =  
+##  <a name="operator_eq"></a>  COleSafeArray::operator =  
  Bu aşırı yüklenmiş atama işleçleri kaynak değeri bu kopyalamak `COleSafeArray` nesnesi.  
   
 ```  
@@ -551,11 +546,11 @@ COleSafeArray& operator=(const COleVariant& varSrc);
   
 - **işleç = (** *saSrc* **)** kopyalar varolan `COleSafeArray` bu nesne nesnesine.  
   
-- **işleç = (** *varSrc***)** kopyalar varolan **değişken** veya `COleVariant` bu nesne dizisine.  
+- **işleç = (** *varSrc ***)** kopyalar varolan **değişken** veya `COleVariant` bu nesne dizisine.  
   
 - **işleç = (** `pSrc` **)** kopya **değişken** dizi nesnesi tarafından erişilen `pSrc` bu nesne içinde.  
   
-##  <a name="operator_eq_eq"></a>COleSafeArray::operator ==  
+##  <a name="operator_eq_eq"></a>  COleSafeArray::operator ==  
  Bu işleç dizilerinin karşılaştırır ( **SAFEARRAY**, **değişken**, `COleVariant`, veya `COleSafeArray` Diziler) ve olmaları durumunda eşit; Aksi halde 0 sıfır olmayan bir değer döndürür.  
   
 ```  

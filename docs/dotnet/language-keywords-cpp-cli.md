@@ -1,30 +1,25 @@
 ---
-title: "Dil anahtar sözcükleri (C + +/ CLI) | Microsoft Docs"
-ms.custom: 
+title: Dil anahtar sözcükleri (C + +/ CLI) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - keywords [C++]
 ms.assetid: 021013b2-70ac-4df9-aa77-4af1c67a1a67
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: e1107ad45feaae470ed2a7481f80bb17c389042d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 241205ad25314034d8d36fa7ad1b156b13080fd6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="language-keywords-ccli"></a>Dil Anahtar Sözcükleri (C++/CLI)
 Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirilen çeşitli dil anahtar sözcükleri.  

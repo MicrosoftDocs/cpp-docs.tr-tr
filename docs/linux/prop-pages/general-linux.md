@@ -1,24 +1,22 @@
 ---
-title: "Genel Özellikler (Linux C++ projesi) | Microsoft Docs"
-ms.custom: 
+title: Genel Özellikler (Linux C++ projesi) | Microsoft Docs
+ms.custom: ''
 ms.date: 9/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: Linux
+ms.topic: conceptual
 ms.assetid: 56c800a9-3df9-4196-87b2-81adb00e4767
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: d5e6006c3951f8bc435e7a450347ed525d8bfcad
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 82dbdb4b2978860faba4e31c756ab0b69928e080
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="general-properties-linux-c"></a>Genel Özellikler (Linux C++)
 

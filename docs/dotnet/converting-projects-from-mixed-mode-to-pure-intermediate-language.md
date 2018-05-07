@@ -1,13 +1,10 @@
 ---
-title: "Karışık mod saf Ara dile projelerden dönüştürme | Microsoft Docs"
-ms.custom: 
+title: Karışık mod saf Ara dile projelerden dönüştürme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - mixed-mode applications, intermediate language
 - projects [C++], converting to intermediate language
 ms.assetid: 855f9e3c-4f09-4bfe-8eab-a45f68292be9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0276d5b5420ed0294b2cf3438190f79d03585744
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ad39f7943effdea8029390971071724bf2294bdf
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="converting-projects-from-mixed-mode-to-pure-intermediate-language"></a>Projeleri Karışık Moddan Saf Ara Dile Dönüştürme
 Tüm Visual C++ CLR projeleri için C çalışma zamanı kitaplıkları varsayılan olarak bağlayın. Sonuç olarak, ortak dil çalışma zamanı (yönetilen kod) hedefleyen kod ile yerel kod birleştirdiğinden bu projeleri karışık mod uygulamaları sınıflandırılır. Derlenmiş, bunlar Ara dile (IL) olarak da bilinen Microsoft Ara dili (MSIL) derlenir.  
@@ -54,7 +49,7 @@ Tüm Visual C++ CLR projeleri için C çalışma zamanı kitaplıkları varsayı
         // #include <tchar.h>  
         ```  
   
-         veya  
+         -veya-  
   
          Örneğin, Windows Forms uygulamalarında:  
   
@@ -88,7 +83,7 @@ Tüm Visual C++ CLR projeleri için C çalışma zamanı kitaplıkları varsayı
         |---------------|-----------------|  
         |[Boole değeri](https://msdn.microsoft.com/en-us/library/system.boolean\(v=vs.140\).aspx)|Bir Boole değeri temsil eder.|  
         |[Bayt](https://msdn.microsoft.com/en-us/library/system.byte\(v=vs.140\).aspx)|Bir 8 bit işaretsiz tamsayıyı temsil eder.|  
-        |[Char](https://msdn.microsoft.com/en-us/library/system.char\(v=vs.140\).aspx)|Unicode karakteri temsil eder.|  
+        |[char](https://msdn.microsoft.com/en-us/library/system.char\(v=vs.140\).aspx)|Unicode karakteri temsil eder.|  
         |[Tarih saat](https://msdn.microsoft.com/en-us/library/system.datetime.datetime.aspx)|Anlık, genellikle bir tarih ve saat ifade edilen, zaman içindeki temsil eder.|  
         |[Ondalık](https://msdn.microsoft.com/en-us/library/system.decimal\(v=vs.140\).aspx)|Ondalık bir sayı temsil eder.|  
         |[Çift](https://msdn.microsoft.com/en-us/library/system.double\(v=vs.140\).aspx)|Çift duyarlıklı kayan noktalı sayıyı temsil eder.|  

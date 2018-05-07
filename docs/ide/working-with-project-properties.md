@@ -1,13 +1,10 @@
 ---
-title: "Proje özellikleriyle çalışma | Microsoft Docs"
-ms.custom: 
+title: Proje özellikleriyle çalışma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,41 +13,39 @@ helpviewer_keywords:
 - Visual C++ projects, properties
 - projects [C++], properties
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de48e03c62d924334e005ffd7f008e0083fb405f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3c33a18ff0d492ef3a870a342c9d8ff292007748
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="working-with-project-properties"></a>Proje Özellikleriyle Çalışma
-IDE içinde bir proje oluşturmak için gereken tüm bilgileri olarak sunulan *özellikleri*. Bu bilgiler, uygulama adı, (örneğin, DLL, LIB, EXE) uzantısı, derleyici seçenekleri, bağlayıcı seçenekleri, hata ayıklayıcı ayarları, özel derleme adımları ve diğer pek çok şeyi içerir. Genellikle, kullandığınız *özellik sayfaları* ( **proje &#124; Özellikler**) görüntülemek ve bu özellikleri değiştirmek için. 
+IDE içinde bir proje oluşturmak için gereken tüm bilgileri olarak sunulan *özellikleri*. Bu bilgiler, uygulama adı, (örneğin, DLL, LIB, EXE) uzantısı, derleyici seçenekleri, bağlayıcı seçenekleri, hata ayıklayıcı ayarları, özel derleme adımları ve diğer pek çok şeyi içerir. Genellikle, kullandığınız *özellik sayfaları* ( **proje &#124; özellikleri**) görüntülemek ve bu özellikleri değiştirmek için. 
   
  Bir proje oluşturduğunuzda, sistem çeşitli özellikleri için değer atar. Varsayılanları türü bağlı olarak biraz farklılık Uygulama Sihirbazı'nda proje ve ne seçeneklerini seçin. Örneğin, ATL projesinde MIDL dosyalarıyla ilgili özellikleri vardır, ancak bunlar yok temel konsol uygulamasındaki. Özellik sayfaları genel bölmesinde varsayılan özellikleri gösterilmektedir:  
   
- ![Visual C# 43; &#43; Proje Varsayılanları](../ide/media/visual-c---project-defaults.png "Visual C++ Proje Varsayılanları")  
+ ![Visual C&#43; &#43; Proje Varsayılanları](../ide/media/visual-c---project-defaults.png "Visual C++ Proje Varsayılanları")  
   
  Uygulama adı gibi bazı özellikleri hedef platform veya hata ayıklama veya yayın derlemesi olmasından bağımsız olarak tüm yapı değişimler için geçerlidir. Ancak özelliklerinin çoğu yapılandırma bağımlıdır. Hangi belirli platform program çalışır ve doğru kodu oluşturmak için kullanılacak belirli hangi derleyici seçenekleri bilmek derleyici sahip olmasıdır. Bu nedenle, bir özellik ayarladığınızda, hangi yapılandırma ve yeni değer uygulanması gereken platform dikkat etmek önemlidir. Yalnızca Win32 hata ayıklama derlemeleri uygulamalıdır ya da hata ayıklama ARM uygulamalıdır ve hata ayıklama x64? Örneğin, **en iyi duruma getirme** özelliği, varsayılan olarak ayarlanmış **en üst düzeye hızı (/ O2)** bir sürüm yapılandırmasında, ancak hata ayıklama yapılandırmasını da devre dışı.  
   
  Özellik sayfaları, her zaman görebilir ve gerekirse değiştirirseniz, hangi yapılandırması ve platformu bir özellik değeri uygulanması gereken şekilde tasarlanmıştır. Aşağıdaki çizimde yapılandırma ve platform bilgilerini özellik sayfalarıyla üst liste kutuları gösterir. Zaman **en iyi duruma getirme** özelliği burada ayarlanmışsa, gerçekleşen etkin bir yapılandırma olmaya kırmızı oklarla gösterildiği gibi yalnızca Win32 hata ayıklama derlemeleri uygulanır.  
   
- ![Visual C# 43; &#43; Özellik sayfaları etkin yapılandırmasını gösteren](../ide/media/visual-c---property-pages-showing-active-configuration.png "Visual C++ özellik sayfaları gösteren etkin yapılandırma")  
+ ![Visual C&#43; &#43; özellik sayfaları gösteren etkin yapılandırma](../ide/media/visual-c---property-pages-showing-active-configuration.png "Visual C++ özellik sayfaları gösteren etkin yapılandırma")  
   
  Aynı proje özellik sayfası aşağıda gösterilmektedir, ancak yapılandırması yayın olarak değiştirildi. En iyi duruma getirme özelliği için farklı bir değer unutmayın. Ayrıca hata ayıklama etkin yapılandırma hala olduğuna dikkat edin. Burada herhangi bir yapılandırma için özellikleri ayarlayabilirsiniz; etkin olması gerekmez.  
   
- ![Visual C# 43; &#43; Özellik sayfaları gösteren yayın config](../ide/media/visual-c---property-pages-showing-release-config.png "Visual C++ özellik sayfaları gösteren yayın yapılandırma")  
+ ![Visual C&#43; &#43; özellik sayfaları gösteren yayın config](../ide/media/visual-c---property-pages-showing-release-config.png "Visual C++ özellik sayfaları gösteren yayın yapılandırma")  
   
  Dosya biçimlerini ve herhangi bir türde projeleri oluşturmak için kurallar tanımlar MSBuild proje sistemi dayanır. MSBuild birden çok yapılandırmalar ve platformlar için yapı karmaşıklığını çoğunu yönetir ancak nasıl çalıştığı hakkında biraz anlamanız gerekir. Özel yapılandırmalar tanımlamak veya paylaşan ve birden çok projelerine içeri özelliklerinin yeniden kullanılabilir kümeleri oluşturmak istiyorsanız, bu özellikle önemlidir.  
   
  Proje özellikleri doğrudan proje dosyasında (*.vcxproj) ya da proje dosyası içeri aktarmalar ve hangi varsayılan değerler sağlamanızı diğer .xml veya .props dosyalarında depolanır. Daha önce gösterildiği gibi aynı yapılandırması için aynı özelliği farklı dosyaları farklı bir değer atanabilir. Bir projeyi derlerken MSBuild altyapısı proje dosyası ve içe aktarılan tüm dosyaları (aşağıda açıklanmıştır) iyi tanımlanmış bir sırada değerlendirir. Her dosya değerlendirilir gibi bu dosyasında tanımlanan tüm özellik değerlerini varolan değerlerini geçersiz kılar. Belirtilmemiş herhangi bir değeri önceki değerlendirilen dosyalarından devralınır. Özellik sayfaları özelliğiyle ayarladığınızda, bu nedenle, da burada ayarladığınız için dikkat önemlidir. .Props dosyasında "X" özelliğini ayarlama, ancak proje dosyasında ayarlanan özelliği "Y", "Y" özelliğini projesi oluşturacaksınız. Aynı özellik için bir proje öğesi "Z".cpp dosyası gibi ayarlanırsa, MSBuild altyapısı "Z" değerini kullanır. Daha fazla bilgi için bkz: [özellik devralma](#bkmkPropertyInheritance) bu makalenin ilerisinde yer.  
   
 ## <a name="build-configurations"></a>Derleme yapılandırmaları  
- Bir yapılandırma yalnızca bir rastgele bir ad verilen özellikler grubudur. Visual Studio hata ayıklama ve yayın yapılandırmaları sağlar ve her bir hata ayıklama derlemesi veya yayın derlemesi için uygun şekilde çeşitli özellikleri ayarlar. Kullanabileceğiniz **Configuration Manager** özel yapılandırmalar yapı belirli bir özellik için Grup Özellikleri için kolay bir yol tanımlamak için. Özellik Yöneticisi Gelişmiş Özellikler çalışmak için kullanılır, ancak özellik yapılandırmaları görselleştirmenize yardımcı olduğu için biz bunu burada tanıtır. Buradan erişim **Görünüm &#124;  Özellik Yöneticisi** veya **Görünüm &#124; Diğer Windows &#124; Özellik Yöneticisi** ayarlarınızı bağlı olarak. Her yapılandırma/platform çifti için düğümleri projede içeriyor. Her bu düğümü altında bu yapılandırma için bazı belirli özellikleri ayarlamak özellik sayfaları (.props dosyaları) için düğümleri olan.  
+ Bir yapılandırma yalnızca bir rastgele bir ad verilen özellikler grubudur. Visual Studio hata ayıklama ve yayın yapılandırmaları sağlar ve her bir hata ayıklama derlemesi veya yayın derlemesi için uygun şekilde çeşitli özellikleri ayarlar. Kullanabileceğiniz **Configuration Manager** özel yapılandırmalar yapı belirli bir özellik için Grup Özellikleri için kolay bir yol tanımlamak için. Özellik Yöneticisi Gelişmiş Özellikler çalışmak için kullanılır, ancak özellik yapılandırmaları görselleştirmenize yardımcı olduğu için biz bunu burada tanıtır. Buradan erişim **Görünüm &#124; özellik Yöneticisi** veya **Görünüm &#124; diğer pencereler &#124; özellik Yöneticisi** ayarlarınızı bağlı olarak. Her yapılandırma/platform çifti için düğümleri projede içeriyor. Her bu düğümü altında bu yapılandırma için bazı belirli özellikleri ayarlamak özellik sayfaları (.props dosyaları) için düğümleri olan.  
   
  ![Özellik Yöneticisi](../ide/media/property-manager.png "özellik Yöneticisi")  
   
@@ -69,7 +64,7 @@ IDE içinde bir proje oluşturmak için gereken tüm bilgileri olarak sunulan *�
 ## <a name="property-pages"></a>Özellik sayfaları  
  Daha önce belirtildiği gibi Visual C++ proje sistemi dayanır [MSBuild](/visualstudio/msbuild/msbuild-properties) ve değerler depolanır .props ve .targets dosyaları XML proje dosyasında varsayılan. Bu dosyalar bulunur Visual Studio 2015 için **\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140**. Bu dosyalar bulunur Visual Studio 2017  **\\Program Files (x86)\\Microsoft Visual Studio\\2017\\_edition_\\Common7\\ IDE\\VC\\VCTargets**, burada _edition_ olan yüklü Visual Studio sürümü. Özellikleri de kendi projenize ekleme olasılığınız herhangi özel .props dosyalarında saklanır. Yüksek oranda, değil Bu dosyaları el ile düzenleyin ve bunun yerine özellik sayfaları IDE içinde özellikle olanlar MSBuild çok iyi bir anlayış olmadığı sürece, devralma katılmak tüm özelliklerini değiştirmek için kullanmanızı öneririz.  
   
- Bir Visual C++ projesinin özellik sayfaları aşağıdaki resimde gösterilmektedir. Sol bölmede, **VC ++ dizinleri***kural* seçili ve sağ bölmede bu kuralla ilişkili özellikleri listeler. `$(...)` Değerleri ne yazık ki adlı *makroları*. Bunlar *değil* C/C++ makroları ancak yalnızca derleme zamanı sabitleri. Makrolar içinde ele alınmıştır [özellik sayfası makroları](#bkmkPropertiesVersusMacros) bölümünde bu makalenin sonraki bölümlerinde.)  
+ Bir Visual C++ projesinin özellik sayfaları aşağıdaki resimde gösterilmektedir. Sol bölmede, **VC ++ dizinleri *** kural* seçili ve sağ bölmede bu kuralla ilişkili özellikleri listeler. `$(...)` Değerleri ne yazık ki adlı *makroları*. Bunlar *değil* C/C++ makroları ancak yalnızca derleme zamanı sabitleri. Makrolar içinde ele alınmıştır [özellik sayfası makroları](#bkmkPropertiesVersusMacros) bölümünde bu makalenin sonraki bölümlerinde.)  
   
  ![Proje özellik sayfalarını](../ide/media/project_property_pages_vc.png "Project_Property_Pages_VC")  
   
@@ -78,7 +73,7 @@ IDE içinde bir proje oluşturmak için gereken tüm bilgileri olarak sunulan *�
   
 #### <a name="to-set-a-property-for-a-project"></a>Projeye ilişkin bir özelliği ayarlamak için  
   
-1.  Çoğu senaryoda, bir özel özellik sayfası oluşturmadan proje düzeyinde özellikleri ayarlayabilirsiniz. Ana menüde seçin **proje &#124; Özellikler**, veya'nde proje düğümüne sağ tıklayın **Çözüm Gezgini** ve **özellikleri**.  
+1.  Çoğu senaryoda, bir özel özellik sayfası oluşturmadan proje düzeyinde özellikleri ayarlayabilirsiniz. Ana menüde seçin **proje &#124; özellikleri**, veya'nde proje düğümüne sağ tıklayın **Çözüm Gezgini** ve **özellikleri**.  
   
 2.  Kullanım **yapılandırma** ve **Platform** liste kutuları değişikliklerinizi hangi özellik gruplarına uygulanacağını belirlemek için iletişim kutusunun üstündeki. Çoğu durumda **tüm platformlar** ve **tüm yapılandırmaları** doğru seçimdir. Yalnızca bazı yapılandırmalar için çoklu seçim özelliklerini ayarlamak için bunları **özellik Yöneticisi**ve ardından kısayol menüsünü açın ve seçin **özellikleri**.  
   
@@ -109,7 +104,7 @@ IDE içinde bir proje oluşturmak için gereken tüm bilgileri olarak sunulan *�
 -   [XML Verileri Oluşturma Aracı özellik sayfası](../ide/xml-data-generator-tool-property-page.md)  
   
 ## <a name="to-quickly-browse-and-search-all-properties"></a>Hızlı bir şekilde göz atmak ve tüm özellikleri aramak için  
- **Tüm seçenekleri** özellik sayfası (altında **yapılandırma özellikleri &#124; C/C++** düğümünde **özellik sayfaları** iletişim kutusu) göz atın ve geçerli bağlamda kullanılabilen özellikleri arama yapmak için hızlı bir yolunu sağlar. Özel bir arama kutusu ve sonuçlara filtre uygulamanıza yardımcı olacak basit bir sözdizimi vardır:  
+ **Tüm seçenekleri** özellik sayfası (altında **yapılandırma özellikleri &#124; C/C++** düğümünde **özellik sayfaları** iletişim kutusu) göz atın ve arama yapmak için hızlı bir yolunu sağlar Geçerli bağlamda kullanılabilen özellikleri. Özel bir arama kutusu ve sonuçlara filtre uygulamanıza yardımcı olacak basit bir sözdizimi vardır:  
   
  Önek yok:  
  Yalnızca özellik adlarında arayın (büyük/küçük harf duyarsız alt dize).  
@@ -120,7 +115,7 @@ IDE içinde bir proje oluşturmak için gereken tüm bilgileri olarak sunulan *�
  v:  
  Yalnızca değerlerde arayın (büyük/küçük harf duyarsız alt dize).  
   
-##  <a name="bkmkPropertiesVersusMacros"></a>Özellik sayfası makroları  
+##  <a name="bkmkPropertiesVersusMacros"></a> Özellik sayfası makroları  
  A *makrosu* Visual Studio veya MSBuild sistem tarafından tanımlanan bir değer veya kullanıcı tanımlı bir değer başvurabilir bir derleme zamanı sabit değer. Dizin yolları gibi sabit kodlu değerler yerine makroları kullanarak, makineler arasında ve Visual Studio sürümleri arasında özellik ayarlarını daha kolay paylaşabilir ve proje ayarlarınızın özellik devralmada doğru şekilde rol oynamasını sağlayabilirsiniz. Özellik Düzenleyici, tüm kullanılabilir makroları değerlerini görüntülemek için kullanabilirsiniz.  
   
 ### <a name="predefined-macros"></a>Önceden tanımlı makrolar  
@@ -146,13 +141,13 @@ IDE içinde bir proje oluşturmak için gereken tüm bilgileri olarak sunulan *�
 ## <a name="property-editor"></a>Özellik Düzenleyicisi  
  Belirli dize özelliklerini değiştirmek ve makroları değer olarak seçmek için Özellik Düzenleyicisi'ni kullanabilirsiniz. Özellik Düzenleyicisi'ne erişmek için, özellik sayfasında bir özellik seçin ve sonra sağdaki aşağı ok düğmesini seçin. Aşağı açılan listede varsa  **\<Düzenle >**, bu özellik için Özellik Düzenleyici görüntülemek için seçin.  
   
- ![Özellik &#95; Düzenleyici &#95; açılır](../ide/media/property_editor_dropdown.png "Property_Editor_Dropdown")  
+ ![Özellik&#95;Düzenleyicisi&#95;açılır](../ide/media/property_editor_dropdown.png "Property_Editor_Dropdown")  
   
  Özellik Düzenleyicisi'nde, seçtiğiniz **makroları** düğmesi kullanılabilir makroları ve geçerli değerlerini görüntülemek için. Özellik Düzenleyici için aşağıda gösterilmiştir **ek içeren dizinler** sonra özelliği **makroları** düğmesi seçildi. Zaman **üst ya da Proje Varsayılanları nesneden devral** onay kutusu seçilidir ve yeni bir değer eklemek için şu anda devralınan tüm değerleri eklenir. Onay kutusunun işaretini kaldırırsanız, yeni değeriniz devralınan değerlerin yerini alır. Çoğu durumda, onay kutusunu seçili bırakın.  
   
- ![Özellik Düzenleyici, Visual C# 43; &#43; ] (../ide/media/propertyeditorvc.png "PropertyEditorVC")  
+ ![Özellik Düzenleyici, Visual C&#43;&#43;](../ide/media/propertyeditorvc.png "PropertyEditorVC")  
   
-##  <a name="bkmkPropertySheets"></a>Yeniden kullanılabilir özellik yapılandırmaları oluşturma  
+##  <a name="bkmkPropertySheets"></a> Yeniden kullanılabilir özellik yapılandırmaları oluşturma  
  Kullanıcı başına ve bilgisayar başına esasına göre "genel" özellikleri ayarlayabilseniz de, artık bunu yapmanızı önermiyoruz. Bunun yerine, kullanmanızı öneririz **özellik Yöneticisi** oluşturmak için bir *özellik sayfası* her tür yeniden veya diğer kişilerle paylaşmak istediğiniz proje ayarlarını depolamak için. Özellik sayfaları, diğer proje türleri için özellik ayarlarının yanlışlıkla değiştirilmesi olasılığını da azaltır. Özellik sayfaları daha ayrıntılı olarak ele alınmıştır [yeniden kullanılabilir özellik yapılandırmaları oluşturma](#bkmkPropertySheets).  
   
 > [!IMPORTANT]
@@ -191,7 +186,7 @@ IDE içinde bir proje oluşturmak için gereken tüm bilgileri olarak sunulan *�
   
 3.  İçinde **özellik Yöneticisi**, yeni özellik sayfasını açın ve dahil etmek istediğiniz özellikleri ayarlayın.  
   
-##  <a name="bkmkPropertyInheritance"></a>Özellik devralma  
+##  <a name="bkmkPropertyInheritance"></a> Özellik devralma  
  Proje özellikleri katmanlıdır. Her katman önceki katmanın değerlerini devralır, ancak özelliğin açıkça ayarlanması devralınan değeri geçersiz kılabilir. Temel devralma ağacı şöyledir:  
   
 1.  MSBuild CPP Araç Takımı'ndaki varsayılan ayarlar (.vcxproj dosyası tarafından içeri aktarılan ..\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.Cpp.Default.props.)  

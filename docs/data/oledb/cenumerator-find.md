@@ -1,12 +1,9 @@
 ---
 title: CEnumerator::Find | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CEnumerator::Find
@@ -18,18 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - Find method
 ms.assetid: 69a153af-d6c3-40fd-9018-27c7d2f344c6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 66298c4be2bb1e43aa37899fe652ccbf6694faae
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 2466127dab53fa6646a4f149400e4318aed59970
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cenumeratorfind"></a>CEnumerator::Find
 Kullanılabilir sağlayıcılar arasında belirli bir ad arar.  

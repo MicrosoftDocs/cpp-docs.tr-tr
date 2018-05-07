@@ -1,12 +1,9 @@
 ---
-title: "CMFCImageEditorPaletteBar sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCImageEditorPaletteBar sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCImageEditorPaletteBar
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CMFCImageEditorPaletteBar [MFC], GetRowHeight
 - CMFCImageEditorPaletteBar [MFC], IsButtonExtraSizeAvailable
 ms.assetid: 3fb7ba8e-f254-4d56-b913-9941b4ed8138
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 539c24acb9b58c96324bc89cdeca6c0d03c6dfdf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e377a465dd55d8940e74617130216220d03f1218
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcimageeditorpalettebar-class"></a>CMFCImageEditorPaletteBar sınıfı
 Görüntü Düzenleyicisi iletişim kutusu palet çubuğu işlevsellik sağlar.  
@@ -75,7 +70,7 @@ class CMFCImageEditorPaletteBar : public CMFCToolBar
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afximageeditordialog.h  
   
-##  <a name="getrowheight"></a>CMFCImageEditorPaletteBar::GetRowHeight  
+##  <a name="getrowheight"></a>  CMFCImageEditorPaletteBar::GetRowHeight  
  Araç çubuğu düğmeleri yüksekliğini döndürür.  
   
 ```  
@@ -85,7 +80,7 @@ virtual int GetRowHeight() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Her araç çubuğunda yüksekliği.  
   
-##  <a name="isbuttonextrasizeavailable"></a>CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable  
+##  <a name="isbuttonextrasizeavailable"></a>  CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable  
  Araç çubuğu kenarlık genişletilmiş düğmeleri görüntülemek olup olmadığını belirler.  
   
 ```  

@@ -1,12 +1,9 @@
 ---
-title: "Nasıl yapılır: bir derlemeden STL/CLR kapsayıcı kullanıma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: bir derlemeden STL/CLR kapsayıcı kullanıma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 dev_langs:
 - C++
@@ -14,18 +11,16 @@ helpviewer_keywords:
 - STL/CLR Containers [STL/CLR]
 - STL/CLR, cross-assembly issues
 ms.assetid: 87efb41b-3db3-4498-a2e7-f3ef8a99f04d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 84505edf0877a5ae20d28906dde7f4c709574034
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 58edb96d3947cc5694731d78c6aa71a855ef7aa9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="how-to-expose-an-stlclr-container-from-an-assembly"></a>Nasıl yapılır: Bir Derlemeden STL/CLR Kapsayıcısı Sunma
 STL/CLR kapsayıcıları gibi `list` ve `map` şablon ref sınıfları uygulanır. C++ şablonları derleme zamanında örneği için tam olarak aynı imzaya sahip, ancak farklı derlemelerde olan iki şablon sınıfları gerçekte farklı türleridir. Bu şablon sınıfları derleme sınırlarında kullanılamaz anlamına gelir.  

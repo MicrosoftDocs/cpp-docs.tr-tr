@@ -2,11 +2,8 @@
 title: multiset (STL/CLR) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::multiset
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - <set> header [STL/CLR]
 - multiset class [STL/CLR]
 ms.assetid: 7c46e2b4-cd88-49b7-a9e6-63ad5ae7feb5
-caps.latest.revision: 18
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 9f964fd511d87d2fd5ca460eb72dc5c9db8351ae
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3e01ec2d9c426d6b95b12fe0db9e5a2e328ae1cc
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="multiset-stlclr"></a>çoklu set (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `multiset` öğeleri dizisi (neredeyse) dengeli sıralı ağacı düğümleri olarak her bir öğe depolamak yönetmek için.  
@@ -127,7 +122,7 @@ template<typename Key>
   
  Böyle bir temsilci nesnenin katı bir zayıf türü anahtarları sıralama zorunlu tuttukları gerekir [multiset::key_type (STL/CLR)](../dotnet/multiset-key-type-stl-clr.md). Yani, herhangi iki tuşları `X` ve `Y`:  
   
- `key_comp()(X, Y)`Her çağrıda aynı Boolean sonucu döndürür.  
+ `key_comp()(X, Y)` Her çağrıda aynı Boolean sonucu döndürür.  
   
  Varsa `key_comp()(X, Y)` true ise `key_comp()(Y, X)` false olmalıdır.  
   
@@ -158,6 +153,6 @@ template<typename Key>
  [hash_multiset (STL/CLR)](../dotnet/hash-multiset-stl-clr.md)   
  [hash_set (STL/CLR)](../dotnet/hash-set-stl-clr.md)   
  [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)   
- [multiset](../dotnet/multiset-stl-clr.md)   
+ [Multiset](../dotnet/multiset-stl-clr.md)   
  [set (STL/CLR)](../dotnet/set-stl-clr.md)   
  [STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)

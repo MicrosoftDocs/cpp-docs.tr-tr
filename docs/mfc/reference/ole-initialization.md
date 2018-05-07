@@ -1,13 +1,10 @@
 ---
-title: "OLE başlatma | Microsoft Docs"
-ms.custom: 
+title: OLE başlatma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - afxdisp/AfxOleInit
 - afxdisp/AfxEnableControlContainer
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - OLE initialization
 ms.assetid: aa8a54a7-24c3-4344-b2c6-dbcf6084fa31
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 014d0679be8a03b60c2e759b36c056b35784be78
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b8224cf27313b056b95990f514e02eb9d9c08cad
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ole-initialization"></a>OLE Başlatma
 Bir uygulama OLE Sistem Hizmetleri kullanabilmeniz için OLE sistem DLL'leri başlatma ve DLL'ler sürümünün doğru olduğundan emin olun gerekir. **Afxoleınit** işlevi OLE sistem DLL'leri başlatır.  
@@ -39,7 +34,7 @@ Bir uygulama OLE Sistem Hizmetleri kullanabilmeniz için OLE sistem DLL'leri ba�
 |[AfxEnableControlContainer](#afxenablecontrolcontainer)|Bu işlev, uygulama nesnesinin çağrı `InitInstance` OLE denetimlerinin kapsama desteğini etkinleştirmek için işlevi.| 
 
 
-## <a name="afxenablecontrolcontainer"></a>AfxEnableControlContainer
+## <a name="afxenablecontrolcontainer"></a> AfxEnableControlContainer
 Bu işlev, uygulama nesnesinin çağrı `InitInstance` OLE denetimlerinin kapsama desteğini etkinleştirmek için işlevi.  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -54,7 +49,7 @@ void AfxEnableControlContainer( );
  **Başlık:** afxdisp.h  
 
   
-##  <a name="afxoleinit"></a>Afxoleınit  
+##  <a name="afxoleinit"></a>  Afxoleınit  
  OLE desteği için uygulamayı başlatır.  
   
 ``` 
@@ -75,7 +70,7 @@ BOOL AFXAPI AfxOleInit();
 >  Varsa **Afxoleınit** adı verilen bir MFC DLL dosyasından çağrı başarısız olur. DLL'den çağrılırsa, OLE sistem önceden çağıran uygulama tarafından başlatıldı, işlevi varsayar çünkü hata oluşur.  
   
 > [!NOTE]
->  MFC uygulamaları tek iş parçacıklı (STA) başlatılması gerekir. Çağırırsanız [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279) içinde `InitInstance` geçersiz kılma, belirtin `COINIT_APARTMENTTHREADED` (yerine `COINIT_MULTITHREADED`). Daha fazla bilgi için bkz: MFC uygulaması olarak bir birden çok iş parçacıklı grup (828643) uygulama başlattığınızda yanıt vermiyor [http://support.microsoft.com/default.aspxscid=kb;en-us;828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).  
+>  MFC uygulamaları tek iş parçacıklı (STA) başlatılması gerekir. Çağırırsanız [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279) içinde `InitInstance` geçersiz kılma, belirtin `COINIT_APARTMENTTHREADED` (yerine `COINIT_MULTITHREADED`). Daha fazla bilgi için bkz: MFC uygulaması olarak bir birden çok iş parçacıklı grup (828643) uygulama başlattığınızda yanıt vermiyor [ http://support.microsoft.com/default.aspxscid=kb; en-us; 828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h

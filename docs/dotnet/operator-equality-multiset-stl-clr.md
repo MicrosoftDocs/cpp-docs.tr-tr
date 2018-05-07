@@ -1,12 +1,9 @@
 ---
 title: operator == (multiset) (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::multiset::operator==
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - operator== member [STL/CLR]
 ms.assetid: 327918f8-ed9b-4549-a85e-11632757b317
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 114905ff52a6f2774faf2358d4b97fc56d8fcc03
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6a3e84e6cd17a7e7c037e6fa7549c43cd9fa2ab6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="operator-multiset-stlclr"></a>operator== (multiset) (STL/CLR)
 Eşit karşılaştırma listeleyin.  

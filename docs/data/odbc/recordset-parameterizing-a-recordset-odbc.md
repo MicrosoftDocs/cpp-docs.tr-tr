@@ -1,13 +1,10 @@
 ---
-title: "Kayıt kümesi: kayıt kümesi (ODBC) kümesini parametreleştirme | Microsoft Docs"
-ms.custom: 
+title: 'Kayıt kümesi: kayıt kümesi (ODBC) kümesini parametreleştirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - recordsets, parameterizing
 - passing parameters, to queries at runtime
 ms.assetid: 7d1dfeb6-5ee0-45e2-aacc-63bc52a465cd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 38b17950a7aaf89cc041c4933768bf6b2da0c9b0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 275cd9d2ee7ccbd4c9972c00ae6fbb8f33166a0a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="recordset-parameterizing-a-recordset-odbc"></a>Kayıt Kümesi: Bir Kayıt Kümesini Parametreleştirme (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -44,7 +39,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
 -   [Parametre bilgileri çalışma zamanında bir kayıt kümesi nesnesine geçirmek nasıl](#_core_passing_parameter_values_at_run_time).  
   
-##  <a name="_core_parameterized_recordsets"></a>Parametreli kayıt kümeleri  
+##  <a name="_core_parameterized_recordsets"></a> Parametreli kayıt kümeleri  
  Parametreli kayıt kümesi çalışma zamanında parametre bilgilerini geçirmenize olanak sağlar. Bu iki değerli etkilere sahiptir:  
   
 -   Daha iyi yürütme hızıyla sonuçlanabilir.  
@@ -53,7 +48,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
  Çağırdığınızda **açık** sorguyu çalıştırmak için tamamlamak için parametre bilgilerini kayıt kümesi kullanan kendi **SQL SELECT** deyimi. Herhangi bir kayıt kümesini parametreleştirme.  
   
-##  <a name="_core_when_to_use_parameters"></a>Zaman parametrelerini kullanmak için  
+##  <a name="_core_when_to_use_parameters"></a> Zaman parametrelerini kullanmak için  
  Parametrelerin tipik kullanımları şunları içerir:  
   
 -   Çalışma zamanı bağımsız değişkenleri geçirme önceden tanımlanmış sorgu için.  
@@ -97,7 +92,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
  Filtreler hakkında daha fazla bilgi için bkz: [kayıt kümesi: kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).  
   
-##  <a name="_core_parameterizing_your_recordset_class"></a>Kayıt kümesi sınıfınız kümesini parametreleştirme  
+##  <a name="_core_parameterizing_your_recordset_class"></a> Kayıt kümesi sınıfınız kümesini parametreleştirme  
   
 > [!NOTE]
 >  Bu bölümde türetilen nesnelere uygulanır `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme, parametreleri uygulamak kullanıyorsanız benzer bir işlemdir. Daha fazla bilgi için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
@@ -149,7 +144,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
 
 >  Çalışmak için büyük olasılıkla dizesi belirttiğiniz dizesidir (varsa) sınıfının için [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) veri üyesi, ancak bazı ODBC sürücüleri izin parametreleri diğer SQL yan tümcelerinde.  
   
-##  <a name="_core_passing_parameter_values_at_run_time"></a>Çalışma zamanında parametre değerlerini geçirme  
+##  <a name="_core_passing_parameter_values_at_run_time"></a> Çalışma zamanında parametre değerlerini geçirme  
  Çağırmadan önce parametre değerlerini belirtmelisiniz **açık** (için yeni bir kayıt kümesi nesnesi) veya **Requery** (için mevcut bir).  
   
 #### <a name="to-pass-parameter-values-to-a-recordset-object-at-run-time"></a>Parametre değerleri için bir kayıt kümesi nesnesi çalışma zamanında geçirmek için  

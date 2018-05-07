@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2613 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2613 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2613
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2613
 ms.assetid: d8fa7b32-08cb-4bb4-96e7-c04dded0e917
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c93780946d3643877e8bfe30098d09d53c1da41
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b86737654a8b3643b473703e6d5f3acece3e29db
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2613"></a>Derleyici Hatası C2613
 sondaki ',' temel sınıfı listesinde geçersiz  

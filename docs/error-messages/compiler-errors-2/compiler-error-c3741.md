@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3741 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3741 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3741
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3741
 ms.assetid: ed311315-cc32-49c9-97fa-01b293d81526
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34b9cb5e8bc9377efb7c04593af825eb82cf5bae
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 67c1bdb78a48571f58b59930615bc3251f3eeea5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3741"></a>Derleyici Hatası C3741
 'class': bir coclass'ı olmalıdır, event_receiver 'layout_dependent' parametresinin = true  

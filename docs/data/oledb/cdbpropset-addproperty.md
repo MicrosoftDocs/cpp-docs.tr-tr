@@ -1,12 +1,9 @@
 ---
 title: CDBPropSet::AddProperty | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CDBPropSet::AddProperty
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - AddProperty method
 ms.assetid: dc9539d3-1ee4-40f3-9281-2068e6d65e93
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7daa1146bbd4e288d20c59f7f1fff8c4bcbbb455
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 454d86b7c5b654ac1af5b628abc5db7d3678d2f2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdbpropsetaddproperty"></a>CDBPropSet::AddProperty
 Bir özellik için özellik kümesi ekler.  

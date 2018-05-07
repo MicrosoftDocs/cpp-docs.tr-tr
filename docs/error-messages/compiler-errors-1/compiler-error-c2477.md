@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2477 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2477 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2477
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2477
 ms.assetid: 60bc324b-6605-4833-8099-a291efc712e7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28cdd86ac20ed1c519905f7908e8b4a1d34cf6f1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ca1212a664582f19e91fbf21bde36431ec715946
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2477"></a>Derleyici Hatası C2477
 'member': statik veri üyesi türetilmiş sınıf başlatılamıyor  

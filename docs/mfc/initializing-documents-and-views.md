@@ -1,13 +1,10 @@
 ---
-title: "Belgeleri ve görünümleri başlatma | Microsoft Docs"
-ms.custom: 
+title: Belgeleri ve görünümleri başlatma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - initializing objects [MFC], document objects
 - initializing views [MFC]
 ms.assetid: 33cb8643-8a16-478c-bc26-eccc734e3661
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f80d870f9804454dc652fdda00f34fcdb7a52062
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e46d130f535076c2591101ab57423db1130ef749
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="initializing-documents-and-views"></a>Belgeleri ve Görünümleri Başlatma
 Belge sınıfı her iki yönde desteklemesi gerekir böylece belgeleri iki farklı şekilde oluşturulur. İlk olarak, kullanıcı yeni, boş bir belge dosya yeni komutla oluşturabilirsiniz. Bu durumda geçersiz kılma belgede başlatma [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) sınıfının üye işlevini [CDocument](../mfc/reference/cdocument-class.md). İkinci olarak, içeriği bir dosyadan okunan yeni bir belge oluşturmak için kullanıcı Aç komutu Dosya menüsünde kullanabilirsiniz. Bu durumda geçersiz kılma belgede başlatma [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) sınıfının üye işlevini **CDocument**. Her iki başlatmada aynıysa iki geçersiz kılmaları, ortak bir üye işlevi çağırabilir veya `OnOpenDocument` çağırabilirsiniz `OnNewDocument` temiz bir belge başlatmak ve açma işlemi tamamlamak için.  

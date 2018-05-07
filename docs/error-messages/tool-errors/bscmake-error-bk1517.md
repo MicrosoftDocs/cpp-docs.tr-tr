@@ -1,12 +1,9 @@
 ---
-title: "BSCMAKE hatası BK1517 | Microsoft Docs"
-ms.custom: 
+title: BSCMAKE hatası BK1517 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - BK1517
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - BK1517
 ms.assetid: 24391f42-0a3e-40a9-9991-c8b9a6a7b1c7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5978ceab4a5a5e768ddda635398466bb941c42cd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c6f5619a7c2a6ccf671845b27bbedf93d8eb2d69
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="bscmake-error-bk1517"></a>BSCMAKE Hatası BK1517
 /Yc ve /Yu ile derlenmiş sbrfile için kaynak dosyası  

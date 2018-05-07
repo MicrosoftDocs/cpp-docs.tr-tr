@@ -1,11 +1,8 @@
 ---
-title: "Platform::String sınıfı | Microsoft Docs"
-ms.custom: 
+title: Platform::String sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::String::String
@@ -26,17 +23,15 @@ dev_langs:
 helpviewer_keywords:
 - Platform::String
 ms.assetid: 72dd04a4-a694-40d3-b899-eaa0b503eab8
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c665b6767ea7a7a7d97d232f5253f8e182e6b0a
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: e7a18b1a8ced533389b5938d44a73589336f717f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="platformstring-class"></a>Platform::String sınıfı
 Metin göstermek için kullanılan sıralı Unicode karakterler koleksiyonunu temsil eder. Daha fazla bilgi ve örnekler için bkz: [dizeleri](../cppcx/strings-c-cx.md).  
@@ -96,10 +91,10 @@ public ref class String sealed : Object,
 |Üye|Açıklama|  
 |------------|-----------------|  
 |[String::operator == işleci](#operator-equality)|İki belirtilen dize nesnesi aynı değere sahip olup olmadığını gösterir.|  
-|[operator+ Operator](#operator-plus)|İki dize nesnelerini yeni bir dize nesnesi art arda ekler.|  
+|[operator + işleci](#operator-plus)|İki dize nesnelerini yeni bir dize nesnesi art arda ekler.|  
 |[String::operator > işleci](#operator-greater-than)|Bir dize nesnesi değerini ikinci bir değerden daha büyük olup olmadığını belirten dize nesnesi.|  
 |[String::operator > = işleci](#operator-greater-than-or-equals)|Bir dize nesnesi değerini saniyenin değerine eşit veya daha büyük olup olmadığını belirten dize nesnesi.|  
-|[String::operator!= Operator](#operator-inequality)|İki belirtilen dize nesnesi farklı değerlere sahip olup olmadığını gösterir.|  
+|[String::operator! = işleci](#operator-inequality)|İki belirtilen dize nesnesi farklı değerlere sahip olup olmadığını gösterir.|  
 |[String::operator < işleci](#operator-less-than)|Bir dize nesnesi değerini ikinci bir değerden daha küçük olup olmadığını belirten dize nesnesi.|  
   
 ### <a name="requirements"></a>Gereksinimler  

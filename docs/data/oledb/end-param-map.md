@@ -1,12 +1,9 @@
 ---
 title: END_PARAM_MAP | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - END_PARAM_MAP
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - END_PARAM_MAP macro
 ms.assetid: b7b3dc5d-0f45-44f8-8509-1d5de7aec165
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e74296d3848a8630f6fcd7e9d356aa897738bd96
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 3239b5981817e7703211ab3dbc1d1a7d21245b3e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="endparammap"></a>END_PARAM_MAP
 Parametre eşleme girdilerini sonunu işaretler.  

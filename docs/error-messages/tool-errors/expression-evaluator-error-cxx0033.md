@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0033 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0033 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0033
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CAN0033
 - CXX0033
 ms.assetid: 0bd62c5b-de89-481f-9b12-88fe84805afe
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49f2b6221d385587fa5e62af51d37eb7d3b78872
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 720b1aec6c9be16879119bc0e8148a301507577a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0033"></a>İfade Değerlendirici Hatası CXX0033
 OMF tür bilgisinde hata  

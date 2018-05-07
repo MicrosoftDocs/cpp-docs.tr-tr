@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3353 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3353 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3353
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3353
 ms.assetid: 5699c04b-d504-46ce-bf71-c200318fed71
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01f21bfce44b124955d84c7298cdcb6885ef87ce
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 47c9d1dd8c21e56613b9da00fc2bf4f7fbeafcca
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3353"></a>Derleyici Hatası C3353
 'temsilci': bir temsilci yalnızca genel bir işlevi veya bir üye işlevini yönetilen veya WinRT türünden oluşturulabilir  

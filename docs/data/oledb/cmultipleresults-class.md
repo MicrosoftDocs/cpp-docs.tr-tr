@@ -1,12 +1,9 @@
 ---
-title: "CMultipleResults sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMultipleResults sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL.CMultipleResults
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - CMultipleResults class
 ms.assetid: 6ce5bbb9-b551-483c-988a-e6aee9135a19
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: aa14b76b673e999519e25b4b7102b5fc5457b3f8
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: c2b4f147943e09c0203f863d7514566de8466acf
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmultipleresults-class"></a>CMultipleResults Sınıfı
 Birden çok sonuç kümesi işlemek için bir komut istiyorsanız kullanın `CMultipleResults` için `CCommand` şablon bağımsız değişken *TMultiple*.  

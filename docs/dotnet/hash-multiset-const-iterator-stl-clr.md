@@ -1,12 +1,9 @@
 ---
 title: hash_multiset::const_iterator (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_multiset::const_iterator
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - const_iterator member [STL/CLR]
 ms.assetid: a923b3f2-37c7-4e30-9b45-82ee2588f072
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 715784b9bd777e70c594adb47a88fd68509baeeb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5311e2ec241260f2afc540173f9f5de5e57f6682
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hashmultisetconstiterator-stlclr"></a>hash_multiset::const_iterator (STL/CLR)
 Denetlenen dizi için bir sabit yineleyici türü.  

@@ -1,12 +1,9 @@
 ---
-title: "CMFCDesktopAlertDialog sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCDesktopAlertDialog sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCDesktopAlertDialog
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - CMFCDesktopAlertDialog [MFC], HasFocus
 - CMFCDesktopAlertDialog [MFC], PreTranslateMessage
 ms.assetid: a53c60aa-9607-485b-b826-ec64962075f6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d7bd9ee29f1657b26d830679ae44d6e37580f91
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 815f9e8177cc908d7d76ca6d0f3130d1d50c93ad
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcdesktopalertdialog-class"></a>CMFCDesktopAlertDialog sınıfı
 `CMFCDesktopAlertDialog` Sınıfı ile birlikte kullanılır [CMFCDesktopAlertWnd sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md) özel bir iletişim kutusu açılır penceresinde görüntülenecek.  
@@ -84,7 +79,7 @@ class CMFCDesktopAlertDialog : public CDialogEx
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxDesktopAlertDialog.h  
   
-##  <a name="createfromparams"></a>CMFCDesktopAlertDialog::CreateFromParams  
+##  <a name="createfromparams"></a>  CMFCDesktopAlertDialog::CreateFromParams  
 
   
 ```  
@@ -94,14 +89,14 @@ BOOL CreateFromParams(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`params`  
- [in]`pParent`  
+ [in] `params`  
+ [in] `pParent`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getdlgsize"></a>CMFCDesktopAlertDialog::GetDlgSize  
+##  <a name="getdlgsize"></a>  CMFCDesktopAlertDialog::GetDlgSize  
 
   
 ```  
@@ -112,7 +107,7 @@ CSize GetDlgSize();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="hasfocus"></a>CMFCDesktopAlertDialog::HasFocus  
+##  <a name="hasfocus"></a>  CMFCDesktopAlertDialog::HasFocus  
 
   
 ```  
@@ -123,7 +118,7 @@ BOOL HasFocus() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="pretranslatemessage"></a>CMFCDesktopAlertDialog::PreTranslateMessage  
+##  <a name="pretranslatemessage"></a>  CMFCDesktopAlertDialog::PreTranslateMessage  
 
   
 ```  
@@ -131,7 +126,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pMsg`  
+ [in] `pMsg`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   

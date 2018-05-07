@@ -1,12 +1,9 @@
 ---
-title: "CMFCRibbonCheckBox sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCRibbonCheckBox sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCRibbonCheckBox
@@ -33,17 +30,15 @@ helpviewer_keywords:
 - CMFCRibbonCheckBox [MFC], OnDrawOnList
 - CMFCRibbonCheckBox [MFC], SetACCData
 ms.assetid: 3a6c3891-c8d1-4af0-b954-7b9ab048782a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc46d934c99e24b63ef314ef1f63402893c6bb18
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 109c3b2f6337adece6c371f1fafa98291468485e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcribboncheckbox-class"></a>CMFCRibbonCheckBox sınıfı
 `CMFCRibbonCheckBox` Sınıfı bir Şerit panelinde, hızlı erişim araç çubuğu veya açılan menüye ekleyebilirsiniz bir onay kutusu uygular.  
@@ -97,7 +92,7 @@ Burada `nID` onay kutusunu komut kimliği ve `lpszText` onay kutusunun metin eti
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxribboncheckbox.h  
   
-##  <a name="cmfcribboncheckbox"></a>CMFCRibbonCheckBox::CMFCRibbonCheckBox  
+##  <a name="cmfcribboncheckbox"></a>  CMFCRibbonCheckBox::CMFCRibbonCheckBox  
  Şerit onay kutusunu nesnesinin Oluşturucusu  
   
 ```  
@@ -107,10 +102,10 @@ CMFCRibbonCheckBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nID`  
+ [in] `nID`  
  Komut kimliğini belirtir.  
   
- [in]`lpszText`  
+ [in] `lpszText`  
  Metin etiketi belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -121,7 +116,7 @@ CMFCRibbonCheckBox(
   
  [!code-cpp[NVC_MFC_RibbonApp#17](../../mfc/reference/codesnippet/cpp/cmfcribboncheckbox-class_1.cpp)]  
   
-##  <a name="getcompactsize"></a>CMFCRibbonCheckBox::GetCompactSize  
+##  <a name="getcompactsize"></a>  CMFCRibbonCheckBox::GetCompactSize  
  Geçersiz kılındığında, onay kutusunu compact boyutunu alır.  
   
 ```  
@@ -129,7 +124,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  İşaretçi `CDC` checkbox ile ilişkilendirilmiş.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -138,7 +133,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılınmazsa, onay kutusunu Ara boyutu döndürür.  
   
-##  <a name="getintermediatesize"></a>CMFCRibbonCheckBox::GetIntermediateSize  
+##  <a name="getintermediatesize"></a>  CMFCRibbonCheckBox::GetIntermediateSize  
  Onay kutusu Ara boyutunu alır.  
   
 ```  
@@ -146,7 +141,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  İşaretçi `CDC` bu onay kutusu ile ilişkilendirilmiş.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -155,7 +150,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılınmazsa, Ara boyutu varsayılan onay kutusu boyutu olarak hesaplar ( `AFX_CHECK_BOX_DEFAULT_SIZE`) metin boyutu ve kenar boşlukları artı.  
   
-##  <a name="getregularsize"></a>CMFCRibbonCheckBox::GetRegularSize  
+##  <a name="getregularsize"></a>  CMFCRibbonCheckBox::GetRegularSize  
  Onay kutusu normal boyutunu alır.  
   
 ```  
@@ -163,7 +158,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  İşaretçi `CDC` bu onay kutusu ile ilişkili nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -172,7 +167,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılınmazsa, onay kutusunu Ara boyutu döndürür.  
   
-##  <a name="isdrawtooltipimage"></a>CMFCRibbonCheckBox::IsDrawTooltipImage  
+##  <a name="isdrawtooltipimage"></a>  CMFCRibbonCheckBox::IsDrawTooltipImage  
  Checkbox ile ilişkilendirilmiş bir araç ipucu görüntüsü olup olmadığını gösterir.  
   
 ```  
@@ -184,7 +179,7 @@ virtual BOOL IsDrawTooltipImage() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondraw"></a>CMFCRibbonCheckBox::OnDraw  
+##  <a name="ondraw"></a>  CMFCRibbonCheckBox::OnDraw  
  Belirtilen cihaz bağlamı kullanma onay kutusu Çiz çerçevesi tarafından çağrılır.  
   
 ```  
@@ -192,12 +187,12 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  İşaretçi `CDC` onay kutusu Çiz edileceği.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondrawmenuimage"></a>CMFCRibbonCheckBox::OnDrawMenuImage  
+##  <a name="ondrawmenuimage"></a>  CMFCRibbonCheckBox::OnDrawMenuImage  
  Menü görüntüsü onay kutusu çizmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -205,10 +200,10 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`CDC*`  
+ [in] `CDC*`  
  İşaretçi `CDC` checkbox ile ilişkilendirilmiş.  
   
- [in]`CRect`  
+ [in] `CRect`  
  A `CRect` menü görüntüsü çizmek için dikdörtgende belirtme nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -217,7 +212,7 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılınmazsa, döndürür `FALSE`.  
   
-##  <a name="ondrawonlist"></a>CMFCRibbonCheckBox::OnDrawOnList  
+##  <a name="ondrawonlist"></a>  CMFCRibbonCheckBox::OnDrawOnList  
  Onay kutusu komutları liste kutusunda çizmek için framework tarafından çağrılır.  
   
 ```  
@@ -231,27 +226,27 @@ virtual void OnDrawOnList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Onay kutusu çizmek cihaz bağlamı işaretçi.  
   
- [in]`strText`  
+ [in] `strText`  
  Görüntü metni.  
   
- [in]`nTextOffset`  
+ [in] `nTextOffset`  
  Liste kutusu görüntüleme metni için sol tarafındaki piksel cinsinden uzaklığı.  
   
- [in]`rect`  
+ [in] `rect`  
  Görüntü dikdörtgen onay kutusu.  
   
- [in]`bIsSelected`  
- `TRUE`onay kutusu seçili değilse veya `FALSE` değilse.  
+ [in] `bIsSelected`  
+ `TRUE` onay kutusu seçili değilse veya `FALSE` değilse.  
   
- [in]`bHighlighted`  
- `TRUE`onay kutusu vurgulanmış, veya `FALSE` değilse.  
+ [in] `bHighlighted`  
+ `TRUE` onay kutusu vurgulanmış, veya `FALSE` değilse.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setaccdata"></a>CMFCRibbonCheckBox::SetACCData  
+##  <a name="setaccdata"></a>  CMFCRibbonCheckBox::SetACCData  
  Onay kutusu için erişilebilirlik verilerini ayarlar.  
   
 ```  

@@ -1,13 +1,10 @@
 ---
-title: "Kayıt Alanı Değişimi: sihirbaz kodu ile çalışma | Microsoft Docs"
-ms.custom: 
+title: 'Kayıt Alanı Değişimi: sihirbaz kodu ile çalışma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -24,18 +21,16 @@ helpviewer_keywords:
 - overriding, DoFieldExchange
 - m_nFields data member, initializing
 ms.assetid: f00d882a-ff1b-4a75-9717-98d8762bb237
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8909a9e933e7b3f1c59fa9ab283706f7a6d1f0c0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7d4f817ebfc3e6bb72865b4fc71fd5c5ebe5f671
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="record-field-exchange-working-with-the-wizard-code"></a>Kayıt Alanı Değişimi: Sihirbaz Kodu ile Çalışma
 Bu konuda kod açıklanmaktadır, MFC Uygulama Sihirbazı'nı ve **sınıfı Ekle** (açıklandığı gibi [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) RFX ve nasıl bu kodu değiştirmek isteyebilirsiniz desteklemek yazma.  
@@ -47,11 +42,11 @@ Bu konuda kod açıklanmaktadır, MFC Uygulama Sihirbazı'nı ve **sınıfı Ekl
   
 -   Bildirimleri kayıt kümesi sınıfı kayıt kümesi alan veri üyeleri  
   
--   Geçersiz kılma`CRecordset::DoFieldExchange`  
+-   Geçersiz kılma `CRecordset::DoFieldExchange`  
   
 -   Kayıt kümesi alan veri üyeleri kayıt kümesi sınıfı oluşturucusu başlatma  
   
-##  <a name="_core_the_field_data_member_declarations"></a>Alan veri üye bildirimleri  
+##  <a name="_core_the_field_data_member_declarations"></a> Alan veri üye bildirimleri  
  Sınıfı için aşağıdakilere benzer bir .h dosyasında bir kayıt kümesi sınıf bildirimi sihirbazlar yazma `CSections`:  
   
 ```  
@@ -88,9 +83,9 @@ public:
   
  Ayrıca, sihirbaz geçersiz kılmaları bildirimi `DoFieldExchange` sınıfının üye işlevini `CRecordset`.  
   
-##  <a name="_core_the_dofieldexchange_override"></a>DoFieldExchange geçersiz kılma  
+##  <a name="_core_the_dofieldexchange_override"></a> DoFieldExchange geçersiz kılma  
 
- [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) RFX Kalp değil. Framework çağrıları `DoFieldExchange` dilediğiniz zaman veri kayıt kümesi veri kaynağına veya kayıt kümesi veri kaynağına geri taşımanız gerekir. `DoFieldExchange`Ayrıca hakkında bilgi edinme destekler alan veri üyeleri aracılığıyla [IsFieldDirty](../../mfc/reference/crecordset-class.md#isfielddirty) ve [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull) üye işlevleri.  
+ [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) RFX Kalp değil. Framework çağrıları `DoFieldExchange` dilediğiniz zaman veri kayıt kümesi veri kaynağına veya kayıt kümesi veri kaynağına geri taşımanız gerekir. `DoFieldExchange` Ayrıca hakkında bilgi edinme destekler alan veri üyeleri aracılığıyla [IsFieldDirty](../../mfc/reference/crecordset-class.md#isfielddirty) ve [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull) üye işlevleri.  
   
  Aşağıdaki `DoFieldExchange` geçersiz kıldığından `CSections` sınıfı. Sihirbaz işlevi kayıt kümesi sınıfı için .cpp dosyasına yazar.  
   
@@ -119,7 +114,7 @@ void CSections::DoFieldExchange(CFieldExchange* pFX)
   
 -   `pFX` İşaretçi bir [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) çağırdığında framework geçirir nesne `DoFieldExchange`. `CFieldExchange` Nesnesini belirtir. işlemi, `DoFieldExchange` gerçekleştirmek için yönünü aktarımı ve diğer bağlam bilgileri.  
   
-##  <a name="_core_the_recordset_constructor"></a>Kayıt kümesi Oluşturucusu  
+##  <a name="_core_the_recordset_constructor"></a> Kayıt kümesi Oluşturucusu  
  Sihirbazlar yazma kayıt kümesi oluşturucusu için RFX ilgili iki şey içerir:  
   
 -   Her alan veri üyesi için bir başlatma  

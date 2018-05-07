@@ -2,11 +2,8 @@
 title: hash_multiset::hash_delegate (STL/CLR) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_multiset::hash_delegate
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - hash_delegate member [STL/CLR]
 ms.assetid: 61ccfdfb-6a3c-40aa-902f-49e004a31a75
-caps.latest.revision: 15
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 6451dcd954e85e539a007778214923ea377196dd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 838680260226d222207e1d385f2c0ff25d83e372
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hashmultisethashdelegate-stlclr"></a>hash_multiset::hash_delegate (STL/CLR)
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.  

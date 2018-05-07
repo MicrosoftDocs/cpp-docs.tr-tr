@@ -1,12 +1,9 @@
 ---
 title: CRowset::GetApproximatePosition | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL::CRowset::GetApproximatePosition
@@ -21,18 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - GetApproximatePosition method
 ms.assetid: 8f9ccd41-0590-468e-b202-6731d0f99d21
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ae92a7734c3b6f763ab4d6731e1cb8ff5222c676
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 882d35fae9e352c99a534dc634f105a9b9a35664
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="crowsetgetapproximateposition"></a>CRowset::GetApproximatePosition
 Yaklaşık bir yer işaretine karşılık gelen bir satır konumunu döndürür.  

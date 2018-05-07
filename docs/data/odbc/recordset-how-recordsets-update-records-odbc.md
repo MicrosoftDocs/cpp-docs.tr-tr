@@ -1,13 +1,10 @@
 ---
-title: "Kayıt kümesi: Kayıt kümeleri Güncelleştirmesi (ODBC) nasıl kayıtları. | Microsoft Docs"
-ms.custom: 
+title: 'Kayıt kümesi: Kayıt kümeleri Güncelleştirmesi (ODBC) nasıl kayıtları. | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - updating recordsets
 - recordsets, updating
 ms.assetid: 5ceecc06-7a86-43b1-93db-a54fb1e717c7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e38f2e62e9aa7b01680e9b2fd1e4a540ee552c3c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b16faf4c5ef0208c946cff123ecbe62b513e65ca
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="recordset-how-recordsets-update-records-odbc"></a>Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Güncelleştirmesi (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -51,7 +46,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
  [Kayıt kümesi: Daha fazla ilgili güncelleştirmeleri (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md) işlemlerin güncelleştirmeleri etkilemesi, bir kayıt kümesi kapatma veya kaydırma güncelleştirmeler sürüyor nasıl etkiler ve yaptığınız güncelleştirmeler diğer güncelleştirmeleri ile nasıl etkileşim açıklayarak kayıt kümesi güncelleştirme hikayesi tamamlar Kullanıcılar.  
   
-##  <a name="_core_your_role_in_recordset_updating"></a>Kayıt kümesi güncellemede sizin rolünüz  
+##  <a name="_core_your_role_in_recordset_updating"></a> Kayıt kümesi güncellemede sizin rolünüz  
  Aşağıdaki tabloda, eklemek, düzenlemek veya framework sizin için ne yaptığını birlikte kayıtları silmek için kayıt kümeleri kullanarak rolünüze gösterir.  
   
 ### <a name="recordset-updating-you-and-the-framework"></a>Kayıt kümesi güncelleştiriliyor: Siz ve Framework  
@@ -66,7 +61,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
  İşlemler hakkında daha fazla bilgi için bkz: [işlem (ODBC)](../../data/odbc/transaction-odbc.md).  
   
-##  <a name="_core_the_edit_buffer"></a>Düzenleme arabelleği  
+##  <a name="_core_the_edit_buffer"></a> Düzenleme arabelleği  
  Topluca alındığında, bir kayıt kümesi alan veri üyeleri bir kayıt içeren bir düzenleme arabellek hizmet — geçerli kayıt. Güncelleştirme işlemleri bu arabellek geçerli kayıt üzerinde çalışmak için kullanın.  
   
 -   Bir kayıt eklediğinizde, düzenleme arabelleği yeni bir kayıt oluşturmak için kullanılır. Kayıt eklemeyi bitirdiğinizde, daha önce geçerli kayıt tekrar geçerli olur.  
@@ -78,7 +73,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
 > [!NOTE]
 >  Düzenleme arabelleği kayıt silinmesine hiçbir rol oynar. Geçerli kaydı sildiğinizde, kaydı silinmiş olarak işaretlenmiş ve farklı bir kayda kaydırma dek "kaydında değil" kayıt kümesi olur.  
   
-##  <a name="_core_dynasets_and_snapshots"></a>Dinamik kümeler ve anlık görüntüleri  
+##  <a name="_core_dynasets_and_snapshots"></a> Dinamik kümeler ve anlık görüntüleri  
  [Dinamik kümeler](../../data/odbc/dynaset.md) kayda kaydırma gibi bir kaydın içeriği yenileyin. [Anlık Görüntü](../../data/odbc/snapshot.md) çağırmanız sürece bir kaydın içeriği yenilenmez kayıtları statik gösterimlerini olan [Requery](../../mfc/reference/crecordset-class.md#requery). Dinamik kümeler tüm işlevselliğini kullanmak için doğru düzeyde ODBC API desteği uyan bir ODBC sürücüsü ile çalışmalısınız. Daha fazla bilgi için bkz: [ODBC](../../data/odbc/odbc-basics.md) ve [Dynaset](../../data/odbc/dynaset.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

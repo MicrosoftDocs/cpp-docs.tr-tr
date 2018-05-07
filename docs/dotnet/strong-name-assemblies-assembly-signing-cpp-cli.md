@@ -2,12 +2,9 @@
 title: Tanımlayıcı ad derlemeleri (derleme imzalama) (C + +/ CLI) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - linker [C++], assembly signing
 - strong-named assemblies [C++]
 ms.assetid: c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc
-caps.latest.revision: 6
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2099389131145838a70b579053c65698dbc3a857
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5d7ae911d2572a35ee8dbb21d5484b4679b64c4d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="strong-name-assemblies-assembly-signing-ccli"></a>Tanımlayıcı Ad Derlemeleri (Derleme İmzalama) (C++/CLI)
 Bu konuda, genellikle derlemenizi güçlü bir ad verip olarak adlandırılan derlemenizi ne kaydolabilirsiniz anlatılmaktadır.  
@@ -51,11 +46,11 @@ Bu konuda, genellikle derlemenizi güçlü bir ad verip olarak adlandırılan de
   
  Derleme imzalama aşağıdaki bağlayıcı seçeneklerini destekler:  
   
--   [/ DELAYSIGN (derlemeyi kısmen imzala)](../build/reference/delaysign-partially-sign-an-assembly.md)  
+-   [/DELAYSIGN (Derlemeyi Kısmen İmzala)](../build/reference/delaysign-partially-sign-an-assembly.md)  
   
--   [/ KEYFILE (derlemeyi imzalamak için anahtar veya anahtar çiftini belirt)](../build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)  
+-   [/KEYFILE (Derlemeyi İmzalamak için Anahtar veya Anahtar Çiftini Belirt)](../build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)  
   
--   [/ KEYCONTAINER (derlemeyi imzalamak için anahtar kapsayıcısını belirt)](../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md)  
+-   [/KEYCONTAINER (Derlemeyi İmzalamak için Anahtar Kapsayıcısını Belirt)](../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md)  
   
  Tanımlayıcı derlemeler hakkında daha fazla bilgi için bkz: [bkz](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).  
   

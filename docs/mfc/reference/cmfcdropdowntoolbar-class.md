@@ -1,12 +1,9 @@
 ---
-title: "CMFCDropDownToolBar sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCDropDownToolBar sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCDropDownToolBar
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - CMFCDropDownToolBar [MFC], OnSendCommand
 - CMFCDropDownToolBar [MFC], OnUpdateCmdUI
 ms.assetid: 78818ec5-83ce-42fa-a0d4-2d9d5ecc8770
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a2f53fa75d8637445e155043d6a40787402accb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c4f56a02f469babe22c8e5cbb9ebb4d6b806499f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolBar sınıfı
 Kullanıcının tıklatıp en üst düzey araç çubuğu düğmesi tutan olduğunda görüntülenen bir araç çubuğu.  
@@ -112,7 +107,7 @@ class CMFCDropDownToolBar : public CMFCToolBar
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdropdowntoolbar.h  
   
-##  <a name="allowshowonpanemenu"></a>CMFCDropDownToolBar::AllowShowOnPaneMenu  
+##  <a name="allowshowonpanemenu"></a>  CMFCDropDownToolBar::AllowShowOnPaneMenu  
 
   
 ```  
@@ -123,7 +118,7 @@ virtual BOOL AllowShowOnPaneMenu() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="loadbitmap"></a>CMFCDropDownToolBar::LoadBitmap  
+##  <a name="loadbitmap"></a>  CMFCDropDownToolBar::LoadBitmap  
  Araç çubuğu görüntüleri uygulama kaynaklarından yükler.  
   
 ```  
@@ -137,22 +132,22 @@ virtual BOOL LoadBitmap(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiResID`  
+ [in] `uiResID`  
  Etkin araç görüntülere başvuruyor bit eşlem kaynak kimliği.  
   
- [in]`uiColdResID`  
+ [in] `uiColdResID`  
  Soğuk araç görüntülere başvuruyor bit eşlem kaynak kimliği.  
   
- [in]`uiMenuResID`  
+ [in] `uiMenuResID`  
  Normal menü görüntülere başvuruyor bit eşlem kaynak kimliği.  
   
- [in]`bLocked`  
- `TRUE`araç çubuğu kilitlemek için; Aksi takdirde `FALSE`.  
+ [in] `bLocked`  
+ `TRUE` araç çubuğu kilitlemek için; Aksi takdirde `FALSE`.  
   
- [in]`uiDisabledResID`  
+ [in] `uiDisabledResID`  
  Devre dışı bırakılmış araç görüntülere başvuruyor bit eşlem kaynak kimliği.  
   
- [in]`uiMenuDisabledResID`  
+ [in] `uiMenuDisabledResID`  
  Devre dışı bırakılmış menü görüntülere başvuruyor bit eşlem kaynak kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -163,7 +158,7 @@ virtual BOOL LoadBitmap(
   
  Çağrı `LoadBitmapEx` yöntemi araç oluşturduktan sonra ek görüntüleri yüklenemedi.  
   
-##  <a name="loadtoolbar"></a>CMFCDropDownToolBar::LoadToolBar  
+##  <a name="loadtoolbar"></a>  CMFCDropDownToolBar::LoadToolBar  
 
   
 ```  
@@ -178,19 +173,19 @@ virtual BOOL LoadToolBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiResID`  
- [in]`uiColdResID`  
- [in]`uiMenuResID`  
- [in]`BOOL`  
- [in]`uiDisabledResID`  
- [in]`uiMenuDisabledResID`  
- [in]`uiHotResID`  
+ [in] `uiResID`  
+ [in] `uiColdResID`  
+ [in] `uiMenuResID`  
+ [in] `BOOL`  
+ [in] `uiDisabledResID`  
+ [in] `uiMenuDisabledResID`  
+ [in] `uiHotResID`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onlbuttonup"></a>CMFCDropDownToolBar::OnLButtonUp  
+##  <a name="onlbuttonup"></a>  CMFCDropDownToolBar::OnLButtonUp  
 
   
 ```  
@@ -200,12 +195,12 @@ afx_msg void OnLButtonUp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nFlags`  
- [in]`point`  
+ [in] `nFlags`  
+ [in] `point`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onmousemove"></a>CMFCDropDownToolBar::OnMouseMove  
+##  <a name="onmousemove"></a>  CMFCDropDownToolBar::OnMouseMove  
 
   
 ```  
@@ -215,12 +210,12 @@ afx_msg void OnMouseMove(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nFlags`  
- [in]`point`  
+ [in] `nFlags`  
+ [in] `point`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onsendcommand"></a>CMFCDropDownToolBar::OnSendCommand  
+##  <a name="onsendcommand"></a>  CMFCDropDownToolBar::OnSendCommand  
 
   
 ```  
@@ -228,13 +223,13 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pButton`  
+ [in] `pButton`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onupdatecmdui"></a>CMFCDropDownToolBar::OnUpdateCmdUI  
+##  <a name="onupdatecmdui"></a>  CMFCDropDownToolBar::OnUpdateCmdUI  
 
   
 ```  
@@ -244,8 +239,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pTarget`  
- [in]`bDisableIfNoHndler`  
+ [in] `pTarget`  
+ [in] `bDisableIfNoHndler`  
   
 ### <a name="remarks"></a>Açıklamalar  
   

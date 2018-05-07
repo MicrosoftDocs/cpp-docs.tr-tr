@@ -1,12 +1,9 @@
 ---
-title: "CMultiDocTemplate sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMultiDocTemplate sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMultiDocTemplate
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - CMultiDocTemplate [MFC], CMultiDocTemplate
 ms.assetid: 5b8aa328-e461-41d0-b388-00594535e119
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d5862a547b41ec8d359b09795f7b9985530fc97
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7b53228b6983c0293eb288cd0f38669d1b5db928
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmultidoctemplate-class"></a>CMultiDocTemplate sınıfı
 Birden çok belge arabirimi (MDI) uygulayan bir belge şablonu tanımlar.  
@@ -77,7 +72,7 @@ class CMultiDocTemplate : public CDocTemplate
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="cmultidoctemplate"></a>CMultiDocTemplate::CMultiDocTemplate  
+##  <a name="cmultidoctemplate"></a>  CMultiDocTemplate::CMultiDocTemplate  
  Oluşturan bir `CMultiDocTemplate` nesnesi.  
   
 ```  

@@ -1,12 +1,9 @@
 ---
 title: END_ACCESSOR_MAP | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - END_ACCESSOR_MAP
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - END_ACCESSOR_MAP macro
 ms.assetid: ede813c7-46c9-48a6-aa1a-8ebf38e92023
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: de0bdf9a4e3827272edaaa8a3eae905946de0cf2
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 647e581a86564221ad409caf9addd03ae3d11fb1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="endaccessormap"></a>END_ACCESSOR_MAP
 Erişimci eşleme girdilerini sonunu işaretler.  

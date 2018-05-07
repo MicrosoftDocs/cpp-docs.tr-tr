@@ -1,12 +1,9 @@
 ---
 title: END_ACCESSOR | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - END_ACCESSOR
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - END_ACCESSOR macro
 ms.assetid: 26f74167-68c4-4909-a474-73dc7ebc9542
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2907823c09c481c648c648d86df676fc5c435955
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: f7bab52df0ed05886933a3df827fae5198651b39
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="endaccessor"></a>END_ACCESSOR
 Erişimci girdinin sonuna işaretler.  

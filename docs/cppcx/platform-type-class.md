@@ -1,11 +1,8 @@
 ---
-title: "Platform::type sınıfı | Microsoft Docs"
-ms.custom: 
+title: Platform::type sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Type::GetTypeCode
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Type Class
 ms.assetid: d6b03f1e-b240-49b9-a08e-53a460030475
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cabfa3d382d44448b2c06d0a16864a4fdd0e66bf
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 358bd57dc1c7272818b1dc542991caa59d3663d4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="platformtype-class"></a>Platform::type sınıfı
 Çalışma zamanı türü bilgileri içermektedir; özellikle, bir dize adı ve typecode. Çağırılarak alınır [Object::GetType](../cppcx/platform-object-class.md#gettype) herhangi bir nesne üzerinde veya veya kullanarak [TypeID](../windows/typeid-cpp-component-extensions.md) sınıfta veya yapı adı işleci.  
@@ -60,7 +55,7 @@ public ref class Platform::Type :
 |||  
 |-|-|  
 |[işleç türü ^](../cppcx/operator-subtracttype-hat.md)|Dönüştürme işlemini etkinleştirir `Windows::UI::Xaml::Interop::TypeName` için `Platform::Type`.|  
-|[operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-subtractwindows-ui-xaml-interop-typename.md)|Dönüştürme işlemini etkinleştirir `Platform::Type` için `Windows::UI::Xaml::Interop::TypeName`.|  
+|[Windows::UI::Xaml::Interop::TypeName işleci](../cppcx/operator-subtractwindows-ui-xaml-interop-typename.md)|Dönüştürme işlemini etkinleştirir `Platform::Type` için `Windows::UI::Xaml::Interop::TypeName`.|  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
@@ -99,7 +94,7 @@ MainPage::MainPage()
   
 
 
-## <a name="gettypecode">Type::GetTypeCode yöntemi</a>
+## <a name="gettypecode"></a> Type::GetTypeCode yöntemi
 Yerleşik türler sayısal türün kategorisini alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -114,7 +109,7 @@ Platform::TypeCode GetTypeCode();
 ### <a name="remarks"></a>Açıklamalar  
  GetTypeCode() üye yöntemi eşdeğerdir `typeid` özelliği.
 
-## <a name="tostring">Type::ToString yöntemi</a>
+## <a name="tostring"></a> Type::ToString yöntemi
 Alır bir türünün adı.  
   
 ### <a name="syntax"></a>Sözdizimi  

@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2783 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2783 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2783
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2783
 ms.assetid: 1ce94a11-bb8b-4be3-a222-f1f105da74b3
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86f8c8aff0974cc1908c38bd8b44b26af4812278
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7c16e74e8187b92778eda3392560d2f9a02e05b4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2783"></a>Derleyici Hatası C2783
 'bildirimi': 'tanımlayıcısı' için şablon bağımsız değişken türetme değil  

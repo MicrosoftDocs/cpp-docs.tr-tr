@@ -1,12 +1,9 @@
 ---
-title: "CHtmlView sınıfı | Microsoft Docs"
-ms.custom: 
+title: CHtmlView sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CHtmlView
@@ -203,17 +200,15 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a855100aaab28e5fead062d4a0941741742cf1a0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cdbc5972d244d9dfd969221d88299e868f617a5f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="chtmlview-class"></a>CHtmlView sınıfı
 WebBrowser denetimi MFC'nin belge/görünüm mimarisinin bağlamında işlevselliğini sağlar.  
@@ -336,7 +331,7 @@ class CHtmlView : public CFormView
 > [!NOTE]
 >  WebBrowser ActiveX denetimini (ve bu nedenle `CHtmlView`) yalnızca Windows NT sürüm 4.0 veya daha sonra hangi Internet Explorer 4.0 altında çalışan programlar için kullanılabilir veya sonraki sürümü yüklü.  
   
- `CHtmlView`Web erişim uygulamalar için tasarlanmış (ve/veya HTML belgeleri). Aşağıdaki `CHtmlView` üye işlevleri yalnızca Internet Explorer uygulaması için geçerlidir. Bu işlevler WebBrowser denetimi başarılı olur, ancak bunlar görünür hiçbir etkisi olmaz.  
+ `CHtmlView` Web erişim uygulamalar için tasarlanmış (ve/veya HTML belgeleri). Aşağıdaki `CHtmlView` üye işlevleri yalnızca Internet Explorer uygulaması için geçerlidir. Bu işlevler WebBrowser denetimi başarılı olur, ancak bunlar görünür hiçbir etkisi olmaz.  
   
 - [GetAddressBar](#getaddressbar)  
   
@@ -372,7 +367,7 @@ class CHtmlView : public CFormView
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxhtml.h  
   
-##  <a name="create"></a>CHtmlView::Create  
+##  <a name="create"></a>  CHtmlView::Create  
  WebBrowser denetimi veya kapsayıcı için Internet Explorer yürütülebilir oluşturmak için bu üye işlevini çağırın.  
   
 ```  
@@ -408,7 +403,7 @@ virtual BOOL Create(
  `pContext`  
  Bir işaretçi bir [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). **NULL** varsayılan olarak.  
   
-##  <a name="createcontrolsite"></a>CHtmlView::CreateControlSite  
+##  <a name="createcontrolsite"></a>  CHtmlView::CreateControlSite  
  Overridable formdaki bir denetime barındırmak için bir denetim site örneği oluşturmak için kullanılır.  
   
 ```  
@@ -438,7 +433,7 @@ virtual BOOL CreateControlSite(
 ### <a name="remarks"></a>Açıklamalar  
  Kendi denetim site sınıfının bir örneğini döndürmek için bu üye işlevi geçersiz kılabilirsiniz.  
   
-##  <a name="execformscommand"></a>CHtmlView::ExecFormsCommand  
+##  <a name="execformscommand"></a>  CHtmlView::ExecFormsCommand  
  Belirtilen komutunu kullanarak yürütür `IOleCommandTarget::Exec` yöntemi.  
   
 ```  
@@ -464,7 +459,7 @@ HRESULT ExecFormsCommand(
 ### <a name="remarks"></a>Açıklamalar  
  **ExecFormsCommand** davranışını uygulayan [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300) yöntemi.  
   
-##  <a name="execwb"></a>CHtmlView::ExecWB  
+##  <a name="execwb"></a>  CHtmlView::ExecWB  
  WebBrowser veya Internet Explorer'da bir komut çalıştırmak için bu üye işlevini çağırın.  
   
 ```  
@@ -491,7 +486,7 @@ void ExecWB(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [IWebBrowser2::ExecWB](https://msdn.microsoft.com/library/aa752117.aspx) Windows SDK.  
   
-##  <a name="getaddressbar"></a>CHtmlView::GetAddressBar  
+##  <a name="getaddressbar"></a>  CHtmlView::GetAddressBar  
  Internet Explorer Adres çubuğuna almak için bu üye işlevini çağırın.  
   
 ```  
@@ -504,7 +499,7 @@ BOOL GetAddressBar() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer için geçerlidir. Bu çağrı bir WebBrowser denetimi ile kullanıyorsanız, herhangi bir hata döndürür, ancak bu çağrıyı göz ardı eder.  
   
-##  <a name="getapplication"></a>CHtmlView::GetApplication  
+##  <a name="getapplication"></a>  CHtmlView::GetApplication  
  WebBrowser denetimi içeren uygulama tarafından desteklenen Otomasyon nesnesini almak için bu üye işlevini çağırın.  
   
 ```  
@@ -517,7 +512,7 @@ LPDISPATCH GetApplication() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getbusy"></a>CHtmlView::GetBusy  
+##  <a name="getbusy"></a>  CHtmlView::GetBusy  
  WebBrowser denetimi bir gezinti veya yükleme işlemi gerçekleştiriliyor belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -530,7 +525,7 @@ BOOL GetBusy() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getcontainer"></a>CHtmlView::GetContainer  
+##  <a name="getcontainer"></a>  CHtmlView::GetContainer  
  Web tarayıcısı kapsayıcıya değerlendiren bir nesne almak için bu üye işlevini çağırın.  
   
 ```  
@@ -543,7 +538,7 @@ LPDISPATCH GetContainer() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getfullname"></a>CHtmlView::GetFullName  
+##  <a name="getfullname"></a>  CHtmlView::GetFullName  
  Internet Explorer şu anda görüntüleme dosyasının tam yolunu almak için bu üye işlevini çağırın.  
   
 ```  
@@ -556,7 +551,7 @@ CString GetFullName() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer için geçerlidir. Bu çağrı bir WebBrowser denetimi ile kullanıyorsanız, herhangi bir hata döndürür, ancak bu çağrıyı göz ardı eder.  
   
-##  <a name="getfullscreen"></a>CHtmlView::GetFullScreen  
+##  <a name="getfullscreen"></a>  CHtmlView::GetFullScreen  
  WebBrowser denetimi tam ekran modunda veya normal pencere modu işletim belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -571,7 +566,7 @@ BOOL GetFullScreen() const;
   
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getheight"></a>CHtmlView::GetHeight  
+##  <a name="getheight"></a>  CHtmlView::GetHeight  
  WebBrowser denetimin çerçeve penceresi piksel cinsinden yüksekliği almak için bu üye işlevini çağırın.  
   
 ```  
@@ -581,7 +576,7 @@ long GetHeight() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Denetimin çerçeve penceresi yüksekliğini piksel cinsinden.  
   
-##  <a name="gethtmldocument"></a>CHtmlView::GetHtmlDocument  
+##  <a name="gethtmldocument"></a>  CHtmlView::GetHtmlDocument  
  Etkin belge için HTML belgesi almak için bu üye işlevini çağırın.  
   
 ```  
@@ -594,7 +589,7 @@ LPDISPATCH GetHtmlDocument() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getleft"></a>CHtmlView::GetLeft  
+##  <a name="getleft"></a>  CHtmlView::GetLeft  
  WebBrowser denetimi iç sol kenarı sol kenarı kapsayıcısının arasındaki uzaklığı almak için bu üye işlevini çağırın.  
   
 ```  
@@ -607,7 +602,7 @@ long GetLeft() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getlocationname"></a>CHtmlView::GetLocationName  
+##  <a name="getlocationname"></a>  CHtmlView::GetLocationName  
  WebBrowser görüntülenmesini kaynağın adını almak için bu üye işlevini çağırın.  
   
 ```  
@@ -622,7 +617,7 @@ CString GetLocationName() const;
   
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getlocationurl"></a>CHtmlView::GetLocationURL  
+##  <a name="getlocationurl"></a>  CHtmlView::GetLocationURL  
  WebBrowser denetimi şu anda görüntüleme kaynak URL'sini almak için bu üye işlevini çağırın.  
   
 ```  
@@ -637,7 +632,7 @@ CString GetLocationURL() const;
   
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getmenubar"></a>CHtmlView::GetMenuBar  
+##  <a name="getmenubar"></a>  CHtmlView::GetMenuBar  
  Menü çubuğunda görünür olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -650,7 +645,7 @@ BOOL GetMenuBar() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getoffline"></a>CHtmlView::GetOffline  
+##  <a name="getoffline"></a>  CHtmlView::GetOffline  
  Web tarayıcısı çevrimdışı işletim olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -663,7 +658,7 @@ BOOL GetOffline() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getparentbrowser"></a>CHtmlView::GetParentBrowser  
+##  <a name="getparentbrowser"></a>  CHtmlView::GetParentBrowser  
  WebBrowser denetimi üst nesnesi için bir işaretçi almak için bu üye işlevini çağırın.  
   
 ```  
@@ -676,7 +671,7 @@ LPDISPATCH GetParentBrowser() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getproperty"></a>CHtmlView::GetProperty  
+##  <a name="getproperty"></a>  CHtmlView::GetProperty  
  Şu anda denetimle ilişkili özelliğin değeri almak için bu üye işlevini çağırın.  
   
 ```  
@@ -700,7 +695,7 @@ COleVariant GetProperty(LPCTSTR lpszProperty);
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getreadystate"></a>CHtmlView::GetReadyState  
+##  <a name="getreadystate"></a>  CHtmlView::GetReadyState  
  WebBrowser nesnenin hazır durumunu almak için bu üye işlevini çağırın.  
   
 ```  
@@ -713,7 +708,7 @@ READYSTATE GetReadyState() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getregisterasbrowser"></a>CHtmlView::GetRegisterAsBrowser  
+##  <a name="getregisterasbrowser"></a>  CHtmlView::GetRegisterAsBrowser  
  WebBrowser nesne hedef ad çözümlemesi için üst düzey bir tarayıcı olarak kayıtlı olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -726,7 +721,7 @@ BOOL GetRegisterAsBrowser() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getregisterasdroptarget"></a>CHtmlView::GetRegisterAsDropTarget  
+##  <a name="getregisterasdroptarget"></a>  CHtmlView::GetRegisterAsDropTarget  
  WebBrowser denetimi Gezinti bırakma hedefi olarak kayıtlı olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -739,7 +734,7 @@ BOOL GetRegisterAsDropTarget() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getsilent"></a>CHtmlView::GetSilent  
+##  <a name="getsilent"></a>  CHtmlView::GetSilent  
  Herhangi bir iletişim kutusu, WebBrowser denetimi gösterilen olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -752,7 +747,7 @@ BOOL GetSilent() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getsource"></a>CHtmlView::GetSource  
+##  <a name="getsource"></a>  CHtmlView::GetSource  
  Web sayfasının HTML kaynak kodunu almak için bu üye işlevini çağırın.  
   
 ```  
@@ -769,7 +764,7 @@ BOOL GetSource(CString& strRef);
 ### <a name="remarks"></a>Açıklamalar  
  Kaynak kodu döndürülür dışında bu işlev Internet Explorer'da "Kaynağı görüntüle" komutu için eşdeğer bir `CString`.  
   
-##  <a name="getstatusbar"></a>CHtmlView::GetStatusBar  
+##  <a name="getstatusbar"></a>  CHtmlView::GetStatusBar  
  WebBrowser denetimi durum çubuğu görüntüler olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -782,7 +777,7 @@ BOOL GetStatusBar() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer için geçerlidir. Bu çağrı bir WebBrowser denetimi ile kullanıyorsanız, herhangi bir hata döndürür, ancak bu çağrıyı göz ardı eder.  
   
-##  <a name="gettheatermode"></a>CHtmlView::GetTheaterMode  
+##  <a name="gettheatermode"></a>  CHtmlView::GetTheaterMode  
  Web tarayıcısı tiyatro modunda olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -797,7 +792,7 @@ BOOL GetTheaterMode() const;
   
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="gettoolbar"></a>CHtmlView::GetToolBar  
+##  <a name="gettoolbar"></a>  CHtmlView::GetToolBar  
  Araç çubuğunda görünür olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -807,7 +802,7 @@ int GetToolBar() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Araç çubuğunda görünür olup olmadığını belirten bir değer. Araç çubuğu görünür durumdaysa sıfır olmayan; Aksi takdirde sıfır.  
   
-##  <a name="gettop"></a>CHtmlView::GetTop  
+##  <a name="gettop"></a>  CHtmlView::GetTop  
  WebBrowser denetimin ana penceresinin üst kenarı Ekran koordinatı almak için bu üye işlevini çağırın.  
   
 ```  
@@ -820,7 +815,7 @@ long GetTop() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="gettoplevelcontainer"></a>CHtmlView::GetTopLevelContainer  
+##  <a name="gettoplevelcontainer"></a>  CHtmlView::GetTopLevelContainer  
  Internet Explorer WebBrowser denetimi en üst düzey kapsayıcısına olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -833,7 +828,7 @@ BOOL GetTopLevelContainer() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="gettype"></a>CHtmlView::GetType  
+##  <a name="gettype"></a>  CHtmlView::GetType  
  Kapsanan etkin belge türü adını almak için bu üye işlevini çağırın.  
   
 ```  
@@ -846,7 +841,7 @@ CString GetType() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getvisible"></a>CHtmlView::GetVisible  
+##  <a name="getvisible"></a>  CHtmlView::GetVisible  
  Kapsanan nesne görünür olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -859,7 +854,7 @@ BOOL GetVisible() const;
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="getwidth"></a>CHtmlView::GetWidth  
+##  <a name="getwidth"></a>  CHtmlView::GetWidth  
  Internet Explorer ana penceresinin genişliğini alır.  
   
 ```  
@@ -869,7 +864,7 @@ long GetWidth() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Pencerenin piksel cinsinden geçerli genişliği.  
   
-##  <a name="goback"></a>CHtmlView::GoBack  
+##  <a name="goback"></a>  CHtmlView::GoBack  
  Geriye dönük bir öğe geçmişi listesinde gider.  
   
 ```  
@@ -879,14 +874,14 @@ void GoBack();
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="goforward"></a>CHtmlView::GoForward  
+##  <a name="goforward"></a>  CHtmlView::GoForward  
  İleriye doğru bir öğe geçmişi listesinde gider.  
   
 ```  
 void GoForward();
 ```  
   
-##  <a name="gohome"></a>CHtmlView::GoHome  
+##  <a name="gohome"></a>  CHtmlView::GoHome  
  Geçerli giriş veya Denetim Masası'ndan erişilen Internet Explorer Internet Seçenekleri iletişim kutusu veya Internet Özellikleri iletişim kutusu, belirtilen başlangıç sayfasına götürür.  
   
 ```  
@@ -896,7 +891,7 @@ void GoHome();
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="gosearch"></a>CHtmlView::GoSearch  
+##  <a name="gosearch"></a>  CHtmlView::GoSearch  
  Denetim Masası'ndan erişilen geçerli arama sayfası, Internet Explorer Internet Seçenekleri iletişim kutusu veya Internet Özellikleri iletişim kutusu, belirtildiği gibi gider.  
   
 ```  
@@ -906,7 +901,7 @@ void GoSearch();
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="loadfromresource"></a>CHtmlView::LoadFromResource  
+##  <a name="loadfromresource"></a>  CHtmlView::LoadFromResource  
  Belirtilen kaynak WebBrowser denetimine yüklemek için bu üye işlevini çağırın.  
   
 ```  
@@ -927,7 +922,7 @@ BOOL LoadFromResource(UINT nRes);
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="navigate"></a>CHtmlView::Navigate  
+##  <a name="navigate"></a>  CHtmlView::Navigate  
  URL tarafından tanımlanan kaynak gitmek için bu üye işlevini çağırın.  
   
 ```  
@@ -962,7 +957,7 @@ void Navigate(
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="navigate2"></a>CHtmlView::Navigate2  
+##  <a name="navigate2"></a>  CHtmlView::Navigate2  
  URL tarafından tanımlanan kaynağa ya da bir tam yol tarafından tanımlanan dosyaya gitmek için bu üye işlevini çağırın.  
   
 ```  
@@ -1022,7 +1017,7 @@ void Navigate2(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCHtmlHttp#7](../../mfc/reference/codesnippet/cpp/chtmlview-class_1.cpp)]  
   
-##  <a name="onbeforenavigate2"></a>CHtmlView::OnBeforeNavigate2  
+##  <a name="onbeforenavigate2"></a>  CHtmlView::OnBeforeNavigate2  
  Bu üye işlevi bir gezinti web tarayıcısında gerçekleştiğinde tetiklenecek olaya neden çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1054,7 +1049,7 @@ virtual void OnBeforeNavigate2(
  `pbCancel`  
  İptal bayrağı için bir işaretçi. Bir uygulama bu parametre için sıfır gezinme işlemi iptal etmek ya da devam etmek için izin vermek için sıfır olarak ayarlayabilirsiniz.  
   
-##  <a name="oncommandstatechange"></a>CHtmlView::OnCommandStateChange  
+##  <a name="oncommandstatechange"></a>  CHtmlView::OnCommandStateChange  
  Bu üye işlevi bir web tarayıcısı komutu etkin durumu değişti uygulamanın bildirmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1070,7 +1065,7 @@ virtual void OnCommandStateChange(
  `bEnable`  
  Etkin durumu. Komutu etkin veya devre dışı ise sıfır değilse bu sıfır olmayan bir parametredir.  
   
-##  <a name="ondocumentcomplete"></a>CHtmlView::OnDocumentComplete  
+##  <a name="ondocumentcomplete"></a>  CHtmlView::OnDocumentComplete  
  Bu üye işlevi bir belge ulaştı uygulamanın bildirmek için çerçevesi tarafından çağrılır `READYSTATE_COMPLETE` durumu.  
   
 ```  
@@ -1084,9 +1079,9 @@ virtual void OnDocumentComplete(LPCTSTR lpszURL);
 ### <a name="remarks"></a>Açıklamalar  
  Her çerçeve harekete her çerçeve ancak bu olayı ateşlenir bir [OnDownloadBegin](#ondownloadbegin) olayını ateşle karşılık gelen `OnDocumentComplete` olay.  
   
- URL tarafından belirtilen `lpszURL` bu URL Kurallaştırılan ve tam URL olduğundan, tarayıcı, gitmek için söylediyse URL'SİNDEN farklı olabilir. Örneğin, bir uygulama çağrıda "www.microsoft.com" URL'sini belirtiyorsa [Bul](#navigate) veya [Navigate2](#navigate2), geçirilen URL'yi `OnNavigateComplete2` "http://www.microsoft.com/" olacaktır. Ayrıca, sunucu tarayıcı farklı bir URL'ye yeniden yönlendirilen değilse, yeniden yönlendirilen URL burada yansıtılır.  
+ URL tarafından belirtilen `lpszURL` bu URL Kurallaştırılan ve tam URL olduğundan, tarayıcı, gitmek için söylediyse URL'SİNDEN farklı olabilir. Örneğin, bir uygulama için çağrıda "www.microsoft.com" URL'sini belirtiyorsa [Bul](#navigate) veya [Navigate2](#navigate2), geçirilen URL'yi `OnNavigateComplete2` olacak "http://www.microsoft.com/". Ayrıca, sunucu tarayıcı farklı bir URL'ye yeniden yönlendirilen değilse, yeniden yönlendirilen URL burada yansıtılır.  
   
-##  <a name="ondocwindowactivate"></a>CHtmlView::OnDocWindowActivate  
+##  <a name="ondocwindowactivate"></a>  CHtmlView::OnDocWindowActivate  
  Internet Explorer veya MSHTML uygulamasından adlı **IOleInPlaceActiveObject::OnDocWindowActivate**, kapsayıcının belge penceresine etkinleştirilmiş veya devre dışı olduğunda etkin yerinde nesne bildirir.  
   
 ```  
@@ -1098,12 +1093,12 @@ virtual HRESULT OnDocWindowActivate(BOOL fActivate);
  Belge penceresine durumunu gösterir. Bu değer sıfır değilse, pencere etkinleştiriliyor. Bu değer sıfır ise, pencerenin devre dışı bırakılıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
+ `S_OK` başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılma `OnDocWindowActivate` tepki için `OnDocWindowActivate` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="ondownloadbegin"></a>CHtmlView::OnDownloadBegin  
+##  <a name="ondownloadbegin"></a>  CHtmlView::OnDownloadBegin  
  Bu üye işlevi bir belge karşıdan yüklemeye başlamak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1113,14 +1108,14 @@ virtual void OnDownloadBegin();
 ### <a name="remarks"></a>Açıklamalar  
  Kısa süre sonra bu olay tetiklenir [OnBeforeNavigate2](#onbeforenavigate2) olay, gezinme iptal sürece. Herhangi bir animasyon veya kapsayıcı göstermek için gerek duyduğu "meşgul" göstergesi bu olaya bağlı olması gerekir.  
   
-##  <a name="ondownloadcomplete"></a>CHtmlView::OnDownloadComplete  
+##  <a name="ondownloadcomplete"></a>  CHtmlView::OnDownloadComplete  
  Bu üye işlevini Gezinti işlemi tamamlanmış, durdurulamaz veya başarısız olduğunu belirtmek için çerçevesi tarafından çağrılır.  
   
 ```  
 virtual void OnDownloadComplete();
 ```  
   
-##  <a name="onenablemodeless"></a>CHtmlView::OnEnableModeless  
+##  <a name="onenablemodeless"></a>  CHtmlView::OnEnableModeless  
  Internet Explorer veya MSHTML kalıcı kullanıcı arabirimini görüntüler çağrılır.  
   
 ```  
@@ -1132,12 +1127,12 @@ virtual HRESULT OnEnableModeless(BOOL fEnable);
  Ana bilgisayarın kalıcı olmayan iletişim kutuları etkin veya devre dışı bırakılan gösterir. Bu değer sıfır değilse, kalıcı olmayan iletişim kutuları etkinleştirilir. Bu değer sıfır ise, kalıcı olmayan iletişim kutuları devre dışı bırakılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
+ `S_OK` başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Etkinleştirir veya kapsayıcı oluşturduğunda veya bir modal iletişim kutusu yok eder kalıcı olmayan iletişim kutuları devre dışı bırakır. Geçersiz kılma `OnEnableModeless` tepki için `EnableModeless` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="onfilterdataobject"></a>CHtmlView::OnFilterDataObject  
+##  <a name="onfilterdataobject"></a>  CHtmlView::OnFilterDataObject  
  Internet Explorer veya MSHTML Internet Explorer ya da MSHTML'ın veri nesnesi değiştirmek konak izin vermek için ana bilgisayarda çağrılır.  
   
 ```  
@@ -1154,12 +1149,12 @@ virtual HRESULT OnFilterDataObject(
  Alan adres `IDataObject` ana bilgisayar tarafından sağlanan arabirim işaretçisi. Bu parametrenin içeriği her zaman için başlatılacağı **NULL**yöntem başarısız olsa bile.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`veri nesnesi değiştirirse, **S_FALSE** veri nesnesi değiştirilmediyse, veya bir hata oluşursa bir OLE tanımlı hata kodu.  
+ `S_OK` veri nesnesi değiştirirse, **S_FALSE** veri nesnesi değiştirilmediyse, veya bir hata oluşursa bir OLE tanımlı hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılma `OnFilterDataObject` tepki için `FilterDataObject` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="onframewindowactivate"></a>CHtmlView::OnFrameWindowActivate  
+##  <a name="onframewindowactivate"></a>  CHtmlView::OnFrameWindowActivate  
  Çağrılır [IOleInPlaceActiveObject::OnFrameWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms683969) kapsayıcı en üst düzey nesnenin bildirmek için çerçeve penceresi etkinleştirilmiş devre dışı veya.  
   
 ```  
@@ -1171,12 +1166,12 @@ virtual HRESULT OnFrameWindowActivate(BOOL fActivate);
  Kapsayıcının en üst düzey çerçeve penceresi durumunu gösterir. Bu değer sıfır değilse, pencere etkinleştiriliyor. Bu değer sıfır ise, pencerenin devre dışı bırakılıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
+ `S_OK` başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılma `OnFrameWindowActivate` tepki için `OnFrameWindowActivate` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="onfullscreen"></a>CHtmlView::OnFullScreen  
+##  <a name="onfullscreen"></a>  CHtmlView::OnFullScreen  
  Bu üye işlev çerçevesi tarafından çağrılır zaman [tam ekran](https://msdn.microsoft.com/library/aa752119.aspx) özelliği değişti.  
   
 ```  
@@ -1187,7 +1182,7 @@ virtual void OnFullScreen(BOOL bFullScreen);
  *bFullScreen*  
  Internet Explorer tam ekran modunda değilse sıfır olmayan; sıfır değilse.  
   
-##  <a name="ongetdroptarget"></a>CHtmlView::OnGetDropTarget  
+##  <a name="ongetdroptarget"></a>  CHtmlView::OnGetDropTarget  
  Bırakma hedefi olarak alternatif sağlamak konak izin vermek için kullanılan Internet Explorer veya MSHTML tarafından çağrılır `IDropTarget`.  
   
 ```  
@@ -1209,7 +1204,7 @@ virtual HRESULT OnGetDropTarget(
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılma `OnGetDropTarget` tepki için `GetDropTarget` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="ongetexternal"></a>CHtmlView::OnGetExternal  
+##  <a name="ongetexternal"></a>  CHtmlView::OnGetExternal  
  Ana bilgisayarın almak için Internet Explorer veya MSHTML adlı `IDispatch` arabirimi.  
   
 ```  
@@ -1221,12 +1216,12 @@ virtual HRESULT OnGetExternal(LPDISPATCH* lppDispatch);
  Bir işaretçi alır adresine `IDispatch` konak uygulamanın arabirimi işaretçisi. Konak bir Otomasyon arabirimi kullanıma sunan, Internet Explorer ya da MSHTML başvuru bu parametresi aracılığıyla sağlayabilir. Bu parametrenin içeriği her zaman için başlatılacağı **NULL**yöntem başarısız olsa bile.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
+ `S_OK` başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılma `OnGetExternal` tepki için `GetExternal` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="ongethostinfo"></a>CHtmlView::OnGetHostInfo  
+##  <a name="ongethostinfo"></a>  CHtmlView::OnGetHostInfo  
  Internet Explorer veya MSHTML konak UI özelliklerini alır.  
   
 ```  
@@ -1238,12 +1233,12 @@ virtual HRESULT OnGetHostInfo(DOCHOSTUIINFO* pInfo);
  Adres bir [DOCHOSTUIINFO](https://msdn.microsoft.com/library/aa770044.aspx) ana bilgisayarın kullanıcı Arabirimi özellikleri alır yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
+ `S_OK` başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılma `OnGetHostInfo` tepki için `GetHostInfo` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="ongetoptionkeypath"></a>CHtmlView::OnGetOptionKeyPath  
+##  <a name="ongetoptionkeypath"></a>  CHtmlView::OnGetOptionKeyPath  
  Kullanıcı tercihleri altında Internet Explorer veya MSHTML depolar kayıt defteri anahtarını almak için bu üye işlevini çağırın.  
   
 ```  
@@ -1260,12 +1255,12 @@ virtual HRESULT OnGetOptionKeyPath(
  Daha sonraki kullanımlar için ayrılmıştır. Şu anda kullanılmıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`başarılı olursa ya da **S_FALSE** Aksi takdirde. Varsa **S_FALSE**, Internet Explorer veya MSHTML varsayılan olarak, kendi kullanıcı seçenekleri.  
+ `S_OK` başarılı olursa ya da **S_FALSE** Aksi takdirde. Varsa **S_FALSE**, Internet Explorer veya MSHTML varsayılan olarak, kendi kullanıcı seçenekleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılma `OnGetOptionKeyPath` tepki için `GetOptionKeyPath` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="onhideui"></a>CHtmlView::OnHideUI  
+##  <a name="onhideui"></a>  CHtmlView::OnHideUI  
  Bu üye işlevi, Internet Explorer veya MSHTML menüleri ve araç çubuklarını kaldırdığında çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1273,12 +1268,12 @@ virtual HRESULT OnHideUI();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
+ `S_OK` başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılma `OnHideUI` tepki için `HideUI` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::HideUI](https://msdn.microsoft.com/library/aa753259.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="onmenubar"></a>CHtmlView::OnMenuBar  
+##  <a name="onmenubar"></a>  CHtmlView::OnMenuBar  
  Bu üye işlev çerçevesi tarafından çağrılır zaman [MenuBar](https://msdn.microsoft.com/library/aa752131.aspx) özelliği değişti.  
   
 ```  
@@ -1289,7 +1284,7 @@ virtual void OnMenuBar(BOOL bMenuBar);
  *bMenuBar*  
  Internet Explorer menü çubuğunda görünür durumdaysa sıfır olmayan; sıfır değilse.  
   
-##  <a name="onnavigatecomplete2"></a>CHtmlView::OnNavigateComplete2  
+##  <a name="onnavigatecomplete2"></a>  CHtmlView::OnNavigateComplete2  
  Köprü gezinme (penceresi veya çerçeve öğede) tamamlandıktan sonra bu üye işlev çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1303,9 +1298,9 @@ virtual void OnNavigateComplete2(LPCTSTR strURL);
 ### <a name="remarks"></a>Açıklamalar  
  URL parametresi bir PIDL işaretçisiyle birlikte var olduğu hiçbir URL temsili bir kabuk ad alanı varlık durumunda olabilir.  
   
- URL bulunan Not *strURL* bu URL Kurallaştırılan ve tam URL olduğundan, tarayıcı, gitmek için söylediyse URL'SİNDEN farklı olabilir. Örneğin, bir uygulama çağrıda "www.microsoft.com" URL'sini belirtiyorsa [Bul](#navigate) veya [Navigate2](#navigate2), geçirilen URL'yi `OnNavigateComplete2` "http://www.microsoft.com/" olacaktır. Ayrıca, sunucu tarayıcı farklı bir URL'ye yeniden yönlendirilen değilse, yeniden yönlendirilen URL burada yansıtılır.  
+ URL bulunan Not *strURL* bu URL Kurallaştırılan ve tam URL olduğundan, tarayıcı, gitmek için söylediyse URL'SİNDEN farklı olabilir. Örneğin, bir uygulama için çağrıda "www.microsoft.com" URL'sini belirtiyorsa [Bul](#navigate) veya [Navigate2](#navigate2), geçirilen URL'yi `OnNavigateComplete2` olacak "http://www.microsoft.com/". Ayrıca, sunucu tarayıcı farklı bir URL'ye yeniden yönlendirilen değilse, yeniden yönlendirilen URL burada yansıtılır.  
   
-##  <a name="onnavigateerror"></a>CHtmlView::OnNavigateError  
+##  <a name="onnavigateerror"></a>  CHtmlView::OnNavigateError  
  Köprü gezinme başarısız olursa çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1334,7 +1329,7 @@ virtual void OnNavigateError(
   
  Daha fazla bilgi için bkz: [DWebBrowserEvents2::NavigateError](https://msdn.microsoft.com/library/aa768286.aspx)  
   
-##  <a name="onnewwindow2"></a>CHtmlView::OnNewWindow2  
+##  <a name="onnewwindow2"></a>  CHtmlView::OnNewWindow2  
  Bir kaynak görüntülemek için oluşturulacak yeni bir pencere olduğunda, bu üye işlev çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1353,7 +1348,7 @@ virtual void OnNewWindow2(
 ### <a name="remarks"></a>Açıklamalar  
  Bu olay WebBrowser içinde yeni bir pencere oluşturma koyar.  
   
-##  <a name="onprogresschange"></a>CHtmlView::OnProgressChange  
+##  <a name="onprogresschange"></a>  CHtmlView::OnProgressChange  
  Bu üye işlevi bir uygulama bir yükleme işlemi ilerlemesini güncelleştirildi bildirmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1372,7 +1367,7 @@ virtual void OnProgressChange(
 ### <a name="remarks"></a>Açıklamalar  
  Kapsayıcı, o ana kadarki indirilen bayt sayısını görüntülemek için veya bir İlerleme göstergesi güncelleştirmek için bu olay tarafından sağlanan bilgileri kullanabilirsiniz.  
   
-##  <a name="onpropertychange"></a>CHtmlView::OnPropertyChange  
+##  <a name="onpropertychange"></a>  CHtmlView::OnPropertyChange  
  Bu üye işlevi bir uygulamayı bilgilendirecek çerçevesi tarafından çağrılır, [PutProperty](#putproperty) bir özelliğin değeri değiştirildi.  
   
 ```  
@@ -1383,14 +1378,14 @@ virtual void OnPropertyChange(LPCTSTR lpszProperty);
  `lpszProperty`  
  Özelliğin adını içeren bir dize için bir işaretçi.  
   
-##  <a name="onquit"></a>CHtmlView::OnQuit  
+##  <a name="onquit"></a>  CHtmlView::OnQuit  
  Bu üye işlevi, Internet Explorer uygulamasını çıkmak hazır bir uygulama bildirmek için çerçevesi tarafından çağrılır.  
   
 ```  
 virtual void OnQuit();
 ```  
   
-##  <a name="onresizeborder"></a>CHtmlView::OnResizeBorder  
+##  <a name="onresizeborder"></a>  CHtmlView::OnResizeBorder  
  Internet Explorer veya MSHTML uygulamasından adlı [IOleInPlaceActiveObject::ResizeBorder](http://msdn.microsoft.com/library/windows/desktop/ms680053), kendi kenarlık alanını yeniden boyutlandırmak için gereken nesne uyarır.  
   
 ```  
@@ -1411,12 +1406,12 @@ virtual HRESULT OnResizeBorder(
  **DOĞRU** çerçeve penceresi çağırıyorsa [IOleInPlaceActiveObject::ResizeBorder](http://msdn.microsoft.com/library/windows/desktop/ms680053), aksi takdirde **FALSE**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
+ `S_OK` başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılma `OnResizeBorder` tepki için `ResizeBorder` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="onshowcontextmenu"></a>CHtmlView::OnShowContextMenu  
+##  <a name="onshowcontextmenu"></a>  CHtmlView::OnShowContextMenu  
  Internet Explorer veya MSHTML hakkında bağlam menüsünü göstermek üzere olduğunda çağrılır.  
   
 ```  
@@ -1446,7 +1441,7 @@ virtual HRESULT OnShowContextMenu(
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılma `OnShowContextMenu` tepki için `ShowContextMenu` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="onshowui"></a>CHtmlView::OnShowUI  
+##  <a name="onshowui"></a>  CHtmlView::OnShowUI  
  Internet Explorer veya MSHTML menüleri ve araç çubuklarını görüntülemeden önce çağrılır.  
   
 ```  
@@ -1480,7 +1475,7 @@ virtual HRESULT OnShowUI(
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılma `OnShowUI` tepki için `ShowUI` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="onstatusbar"></a>CHtmlView::OnStatusBar  
+##  <a name="onstatusbar"></a>  CHtmlView::OnStatusBar  
  Bu üye işlev çerçevesi tarafından çağrılır zaman [StatusBar](https://msdn.microsoft.com/library/aa768270.aspx) özelliği değişti.  
   
 ```  
@@ -1491,7 +1486,7 @@ virtual void OnStatusBar(BOOL bStatusBar);
  *bStatusBar*  
  Internet Explorer'ın durum çubuğunda görünür durumdaysa sıfır olmayan veya aksi halde sıfır.  
   
-##  <a name="onstatustextchange"></a>CHtmlView::OnStatusTextChange  
+##  <a name="onstatustextchange"></a>  CHtmlView::OnStatusTextChange  
  Bu üye işlev WebBrowser denetimi ile ilişkilendirilmiş durum çubuğu metni değişti uygulamanın bildirmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1502,7 +1497,7 @@ virtual void OnStatusTextChange(LPCTSTR lpszText);
  `lpszText`  
  Yeni durum çubuğu metni içeren bir dize.  
   
-##  <a name="ontheatermode"></a>CHtmlView::OnTheaterMode  
+##  <a name="ontheatermode"></a>  CHtmlView::OnTheaterMode  
  Bu üye işlev çerçevesi tarafından çağrılır zaman [TheaterMode](https://msdn.microsoft.com/library/aa768273.aspx) özelliği değişti.  
   
 ```  
@@ -1513,7 +1508,7 @@ virtual void OnTheaterMode(BOOL bTheaterMode);
  *bTheaterMode*  
  Internet Explorer tiyatro modundaysa sıfır olmayan; sıfır değilse.  
   
-##  <a name="ontitlechange"></a>CHtmlView::OnTitleChange  
+##  <a name="ontitlechange"></a>  CHtmlView::OnTitleChange  
  Bu üye işlevi WebBrowser denetimi belgede başlığı kullanılabilir hale gelirse bir uygulamayı bilgilendirecek framework veya değişiklikleri tarafından çağrılır.  
   
 ```  
@@ -1527,7 +1522,7 @@ virtual void OnTitleChange(LPCTSTR lpszText);
 ### <a name="remarks"></a>Açıklamalar  
  HTML için başlık değişebilir; HTML hala indirirken belgenin URL'sine başlığı olarak ayarlanır. (Varsa) gerçek başlık HTML ayrıştırılır sonra başlığı gerçek başlık yansıtacak şekilde değiştirilir.  
   
-##  <a name="ontoolbar"></a>CHtmlView::OnToolBar  
+##  <a name="ontoolbar"></a>  CHtmlView::OnToolBar  
  Bu üye işlev çerçevesi tarafından çağrılır zaman [araç](https://msdn.microsoft.com/library/aa768274.aspx) özelliği değişti.  
   
 ```  
@@ -1538,7 +1533,7 @@ virtual void OnToolBar(BOOL bToolBar);
  *bToolBar*  
  Internet Explorer'ın araç görünür durumdaysa sıfır olmayan veya aksi halde sıfır.  
   
-##  <a name="ontranslateaccelerator"></a>CHtmlView::OnTranslateAccelerator  
+##  <a name="ontranslateaccelerator"></a>  CHtmlView::OnTranslateAccelerator  
  Internet Explorer veya MSHTML adlı zaman [IOleInPlaceActiveObject::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693360) veya [IOleControlSite::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693756) menü kısayol tuşu iletileri işlemek üzere çağrılır kapsayıcının ileti sırası.  
   
 ```  
@@ -1559,12 +1554,12 @@ virtual HRESULT OnTranslateAccelerator(
  Komut tanımlayıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`başarılı olursa ya da **S_FALSE** Aksi takdirde.  
+ `S_OK` başarılı olursa ya da **S_FALSE** Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılma `OnTranslateAccelerator` tepki için `TranslateAccelerator` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="ontranslateurl"></a>CHtmlView::OnTranslateUrl  
+##  <a name="ontranslateurl"></a>  CHtmlView::OnTranslateUrl  
  Internet Explorer veya MSHTML tarafından konak URL'sini değiştirmek bir fırsat izin vermek için yüklenecek çağrılır.  
   
 ```  
@@ -1585,12 +1580,12 @@ virtual HRESULT OnTranslateUrl(
  Çevrilen URL adresi alır bir dize işaretçisi adresidir. Ana bilgisayar görev bellek ayırıcısı kullanarak arabellek ayırır. Bu parametrenin içeriği her zaman için başlatılacağı **NULL**URL değil çevrilen veya yöntem başarısız olsa bile.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`URL çevrilmiştir, **S_FALSE** URL çevrilmiştir değil, veya bir hata oluştuysa OLE tanımlı hata kodu.  
+ `S_OK` URL çevrilmiştir, **S_FALSE** URL çevrilmiştir değil, veya bir hata oluştuysa OLE tanımlı hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Geçersiz kılma `OnTranslateUrl` tepki için `TranslateUrl` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) daha fazla bilgi için Windows SDK'sındaki.  
   
-##  <a name="onupdateui"></a>CHtmlView::OnUpdateUI  
+##  <a name="onupdateui"></a>  CHtmlView::OnUpdateUI  
  Komut durumu değişti konak bildirir.  
   
 ```  
@@ -1598,12 +1593,12 @@ virtual HRESULT OnUpdateUI();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK`başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
+ `S_OK` başarılı olursa ya da başka bir OLE tanımlı hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Konak araç çubuğu düğmeleri durumunu güncelleştirmeniz gerekir. Bu yöntem dönüş değerinden bağımsız olarak çağrılır `ShowUI`. Geçersiz kılma `OnUpdateUI` tepki için `UpdateUI` Microsoft Web tarayıcısı denetiminden bildirim.  
   
-##  <a name="onvisible"></a>CHtmlView::OnVisible  
+##  <a name="onvisible"></a>  CHtmlView::OnVisible  
  WebBrowser için pencere gösterileceğini veya gizleneceğini, bu üye işlev çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1617,7 +1612,7 @@ virtual void OnVisible(BOOL bVisible);
 ### <a name="remarks"></a>Açıklamalar  
  Bu, Internet Explorer penceresi davranacaktır aynı şekilde davranır nesne denetimi ana penceresi sağlar.  
   
-##  <a name="putproperty"></a>CHtmlView::PutProperty  
+##  <a name="putproperty"></a>  CHtmlView::PutProperty  
  Belirli bir nesneyle ilişkili özelliğini ayarlamak için bu üye işlevini çağırın.  
   
 ```  
@@ -1671,7 +1666,7 @@ void PutProperty(
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="queryformscommand"></a>CHtmlView::QueryFormsCommand  
+##  <a name="queryformscommand"></a>  CHtmlView::QueryFormsCommand  
  Kullanıcı arabirimi olaylar tarafından oluşturulan bir veya daha fazla komut durumunu sorgular.  
   
 ```  
@@ -1699,9 +1694,9 @@ HRESULT QueryFormsCommand(
  Standart bir `HRESULT` değeri. Olası değerler tam listesi için bkz: [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) Windows SDK'sındaki.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `QueryFormsCommand`davranışını uygulayan [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) yöntemi.  
+ `QueryFormsCommand` davranışını uygulayan [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) yöntemi.  
   
-##  <a name="querystatuswb"></a>CHtmlView::QueryStatusWB  
+##  <a name="querystatuswb"></a>  CHtmlView::QueryStatusWB  
  Komut durumunu sorgulamak için bu üye işlevini çağırın.  
   
 ```  
@@ -1716,11 +1711,11 @@ OLECMDF QueryStatusWB(OLECMDID cmdID) const;
  Adresini [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) komutun durumunu alır değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `QueryStatusWB`davranışını uygulayan [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) yöntemi.  
+ `QueryStatusWB` davranışını uygulayan [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) yöntemi.  
   
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="refresh"></a>CHtmlView::Refresh  
+##  <a name="refresh"></a>  CHtmlView::Refresh  
  URL ya da web tarayıcısı şu anda görüntüleme dosya yeniden yükler.  
   
 ```  
@@ -1732,7 +1727,7 @@ void Refresh();
   
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="refresh2"></a>CHtmlView::Refresh2  
+##  <a name="refresh2"></a>  CHtmlView::Refresh2  
  Internet Explorer şu anda görüntüleme dosya yeniden yükler.  
   
 ```  
@@ -1748,7 +1743,7 @@ void Refresh2(int nLevel);
   
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="setaddressbar"></a>CHtmlView::SetAddressBar  
+##  <a name="setaddressbar"></a>  CHtmlView::SetAddressBar  
  Internet Explorer nesnenin adres çubuğunu göstermek veya gizlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -1762,7 +1757,7 @@ void SetAddressBar(BOOL bNewValue);
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer için geçerlidir. Bu çağrı bir WebBrowser denetimi ile kullanıyorsanız, herhangi bir hata döndürür, ancak bu çağrıyı göz ardı eder.  
   
-##  <a name="setfullscreen"></a>CHtmlView::SetFullScreen  
+##  <a name="setfullscreen"></a>  CHtmlView::SetFullScreen  
  Internet Explorer ya da tam ekran veya normal pencere modu ayarlamak için bu üye işlevini çağırın.  
   
 ```  
@@ -1778,7 +1773,7 @@ void SetFullScreen(BOOL bNewValue);
   
  Internet Explorer için geçerlidir. Bu çağrı bir WebBrowser denetimi ile kullanıyorsanız, herhangi bir hata döndürür, ancak bu çağrıyı göz ardı eder.  
   
-##  <a name="setheight"></a>CHtmlView::SetHeight  
+##  <a name="setheight"></a>  CHtmlView::SetHeight  
  Internet Explorer ana penceresinin yüksekliğini ayarlamak için bu üye işlevini çağırın.  
   
 ```  
@@ -1792,7 +1787,7 @@ void SetHeight(long nNewValue);
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="setleft"></a>CHtmlView::SetLeft  
+##  <a name="setleft"></a>  CHtmlView::SetLeft  
  Internet Explorer ana pencereyi yatay konumunu ayarlar.  
   
 ```  
@@ -1803,7 +1798,7 @@ void SetLeft(long nNewValue);
  `nNewValue`  
  Ana penceresinin sol kenarı Ekran koordinatı.  
   
-##  <a name="setmenubar"></a>CHtmlView::SetMenuBar  
+##  <a name="setmenubar"></a>  CHtmlView::SetMenuBar  
  Internet Explorer menü çubuğunu göstermek veya gizlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -1817,7 +1812,7 @@ void SetMenuBar(BOOL bNewValue);
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer için geçerlidir. Bu çağrı bir WebBrowser denetimi ile kullanıyorsanız, herhangi bir hata döndürür, ancak bu çağrıyı göz ardı eder.  
   
-##  <a name="setoffline"></a>CHtmlView::SetOffline  
+##  <a name="setoffline"></a>  CHtmlView::SetOffline  
  WebBrowser denetimi şu anda çevrimdışı modunda olup olmadığını belirten bir değer ayarlamak için bu üye işlevini çağırın.  
   
 ```  
@@ -1833,7 +1828,7 @@ void SetOffline(BOOL bNewValue);
   
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="setregisterasbrowser"></a>CHtmlView::SetRegisterAsBrowser  
+##  <a name="setregisterasbrowser"></a>  CHtmlView::SetRegisterAsBrowser  
  WebBrowser denetimi hedef ad çözümlemesi için üst düzey bir tarayıcı olarak kayıtlı olup olmadığını belirten bir değer ayarlamak için bu üye işlevini çağırın.  
   
 ```  
@@ -1849,7 +1844,7 @@ void SetRegisterAsBrowser(BOOL bNewValue);
   
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="setregisterasdroptarget"></a>CHtmlView::SetRegisterAsDropTarget  
+##  <a name="setregisterasdroptarget"></a>  CHtmlView::SetRegisterAsDropTarget  
  WebBrowser denetimi Gezinti bırakma hedefi olarak kayıtlı olup olmadığını belirten bir değer ayarlamak için bu üye işlevini çağırın.  
   
 ```  
@@ -1863,7 +1858,7 @@ void SetRegisterAsDropTarget(BOOL bNewValue);
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="setsilent"></a>CHtmlView::SetSilent  
+##  <a name="setsilent"></a>  CHtmlView::SetSilent  
  Herhangi bir iletişim kutusu gösterilen olup olmadığını belirten bir değer ayarlamak için bu üye işlevini çağırın.  
   
 ```  
@@ -1877,7 +1872,7 @@ void SetSilent(BOOL bNewValue);
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="setstatusbar"></a>CHtmlView::SetStatusBar  
+##  <a name="setstatusbar"></a>  CHtmlView::SetStatusBar  
  Durum çubuğu görüntülemek için bu üye işlevini çağırın.  
   
 ```  
@@ -1891,7 +1886,7 @@ void SetStatusBar(BOOL bNewValue);
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer için geçerlidir. Bu çağrı bir WebBrowser denetimi ile kullanıyorsanız, herhangi bir hata döndürür, ancak bu çağrıyı göz ardı eder.  
   
-##  <a name="settheatermode"></a>CHtmlView::SetTheaterMode  
+##  <a name="settheatermode"></a>  CHtmlView::SetTheaterMode  
  WebBrowser denetimi tiyatro modunda olup olmadığını belirten bir değer ayarlamak için bu üye işlevini çağırın.  
   
 ```  
@@ -1907,7 +1902,7 @@ void SetTheaterMode(BOOL bNewValue);
   
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="settoolbar"></a>CHtmlView::SetToolBar  
+##  <a name="settoolbar"></a>  CHtmlView::SetToolBar  
  Göstermek veya Internet Explorer araç gizlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -1921,7 +1916,7 @@ void SetToolBar(int nNewValue);
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer için geçerlidir. Bu çağrı bir WebBrowser denetimi ile kullanıyorsanız, herhangi bir hata döndürür, ancak bu çağrıyı göz ardı eder.  
   
-##  <a name="settop"></a>CHtmlView::SetTop  
+##  <a name="settop"></a>  CHtmlView::SetTop  
  WebBrowser denetimi iç üst kenarı kapsayıcısının üst kenarı arasındaki mesafeyi ayarlamak için bu üye işlevini çağırın  
   
 ```  
@@ -1935,7 +1930,7 @@ void SetTop(long nNewValue);
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="setvisible"></a>CHtmlView::SetVisible  
+##  <a name="setvisible"></a>  CHtmlView::SetVisible  
  WebBrowser denetimi görünürlük durumunu ayarlamak için bu üye işlevini çağırın.  
   
 ```  
@@ -1949,7 +1944,7 @@ void SetVisible(BOOL bNewValue);
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  
   
-##  <a name="setwidth"></a>CHtmlView::SetWidth  
+##  <a name="setwidth"></a>  CHtmlView::SetWidth  
  Internet Explorer ana penceresinin genişliğini ayarlar.  
   
 ```  
@@ -1960,7 +1955,7 @@ void SetWidth(long nNewValue);
  `nNewValue`  
  Internet Explorer ana penceresinin piksel cinsinden genişliği.  
   
-##  <a name="stop"></a>CHtmlView::Stop  
+##  <a name="stop"></a>  CHtmlView::Stop  
  Tüm bekleyen gezinti iptal etmek veya işlemi indirin ve arka plan ses ve animasyon gibi herhangi bir dinamik sayfa öğenin durdurmak için bu üye işlevini çağırın.  
   
 ```  

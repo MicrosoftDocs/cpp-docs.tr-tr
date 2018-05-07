@@ -1,12 +1,9 @@
 ---
-title: "CMenu sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMenu sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMenu
@@ -93,17 +90,15 @@ helpviewer_keywords:
 - CMenu [MFC], TrackPopupMenuEx
 - CMenu [MFC], m_hMenu
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 104c965da403040308386e019d56684577318eee
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 64682066a93618c8646973c76df395883dddf053
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmenu-class"></a>CMenu sınıfı
 Windows bir kapsüllemeyi `HMENU`.  
@@ -193,7 +188,7 @@ class CMenu : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="appendmenu"></a>CMenu::AppendMenu  
+##  <a name="appendmenu"></a>  CMenu::AppendMenu  
  Menü öğesinin sonuna yeni bir öğe ekler.  
   
 ```  
@@ -242,7 +237,7 @@ BOOL AppendMenu(
   
 - **MF_DISABLED** böylece seçilemez ancak onu dim değil menü öğesini devre dışı bırakır.  
   
-- `MF_ENABLED`Böylece seçilebilir ve devre dışı durumuna geri yükler menü öğesi sağlar.  
+- `MF_ENABLED` Böylece seçilebilir ve devre dışı durumuna geri yükler menü öğesi sağlar.  
   
 - **MF_GRAYED** seçilemez ve onu karartır menü öğesini devre dışı bırakır.  
   
@@ -250,7 +245,7 @@ BOOL AppendMenu(
   
 - **MF_MENUBREAK** statik menüleri veya yeni bir sütun açılır menüler içinde yeni bir satıra öğeyi yerleştirir. Hiçbir bölme çizgisi sütunlar arasında yerleştirilir.  
   
-- `MF_OWNERDRAW`Öğe sahip çizim öğeyi olduğunu belirtir. Menü sahip Pencere menüsü ilk kez görüntülendiğinde alır bir `WM_MEASUREITEM` menü öğesinin genişliği ve yüksekliği alır ileti. `WM_DRAWITEM` Sahibi menü öğesi görsel görünümünü güncelleştirdiğinizde gerekir gönderilen bir iletidir. Bu seçenek en üst düzey menü öğesi için geçerli değil.  
+- `MF_OWNERDRAW` Öğe sahip çizim öğeyi olduğunu belirtir. Menü sahip Pencere menüsü ilk kez görüntülendiğinde alır bir `WM_MEASUREITEM` menü öğesinin genişliği ve yüksekliği alır ileti. `WM_DRAWITEM` Sahibi menü öğesi görsel görünümünü güncelleştirdiğinizde gerekir gönderilen bir iletidir. Bu seçenek en üst düzey menü öğesi için geçerli değil.  
   
 - **MF_POPUP** menü öğesi kendisiyle ilişkili bir açılır menü olduğunu belirtir. ID parametresi öğeyle ilişkilendirilecek bir açılır menü için bir tanıtıcı belirtir. Bu, en üst düzey bir açılır menü veya hiyerarşik bir açılır menüyü açılır menü öğesine eklemek için kullanılır.  
   
@@ -273,7 +268,7 @@ BOOL AppendMenu(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::CreateMenu](#createmenu).  
   
-##  <a name="attach"></a>CMenu::Attach  
+##  <a name="attach"></a>  CMenu::Attach  
  Varolan bir Windows menüsü bağlayan bir `CMenu` nesnesi.  
   
 ```  
@@ -295,7 +290,7 @@ BOOL Attach(HMENU hMenu);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#21](../../mfc/reference/codesnippet/cpp/cmenu-class_1.cpp)]  
   
-##  <a name="checkmenuitem"></a>CMenu::CheckMenuItem  
+##  <a name="checkmenuitem"></a>  CMenu::CheckMenuItem  
  Onay işaretleri ekler veya menü öğeleri açılır menüde onay işaretleri kaldırır.  
   
 ```  
@@ -330,7 +325,7 @@ UINT CheckMenuItem(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::GetMenuState](#getmenustate).  
   
-##  <a name="checkmenuradioitem"></a>CMenu::CheckMenuRadioItem  
+##  <a name="checkmenuradioitem"></a>  CMenu::CheckMenuRadioItem  
  Belirtilen menü öğesi denetler ve bir seçenek öğesi kolaylaştırır.  
   
 ```  
@@ -368,7 +363,7 @@ BOOL CheckMenuRadioItem(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [ON_COMMAND_RANGE](message-map-macros-mfc.md#on_command_range).  
   
-##  <a name="cmenu"></a>CMenu::CMenu  
+##  <a name="cmenu"></a>  CMenu::CMenu  
  Boş bir menü oluşturur ve ona ekler bir `CMenu` nesnesi.  
   
 ```  
@@ -388,7 +383,7 @@ CMenu();
   
 - [Attach](#attach)  
   
-##  <a name="createmenu"></a>CMenu::CreateMenu  
+##  <a name="createmenu"></a>  CMenu::CreateMenu  
  Bir menüyü oluşturur ve ona ekler `CMenu` nesnesi.  
   
 ```  
@@ -408,7 +403,7 @@ BOOL CreateMenu();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#22](../../mfc/reference/codesnippet/cpp/cmenu-class_2.cpp)]  
   
-##  <a name="createpopupmenu"></a>CMenu::CreatePopupMenu  
+##  <a name="createpopupmenu"></a>  CMenu::CreatePopupMenu  
  Açılır menü oluşturur ve ona ekler `CMenu` nesnesi.  
   
 ```  
@@ -428,7 +423,7 @@ BOOL CreatePopupMenu();
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::CreateMenu](#createmenu).  
   
-##  <a name="deletemenu"></a>CMenu::DeleteMenu  
+##  <a name="deletemenu"></a>  CMenu::DeleteMenu  
  Bir öğeyi menüden siler.  
   
 ```  
@@ -460,7 +455,7 @@ BOOL DeleteMenu(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CWnd::GetMenu](../../mfc/reference/cwnd-class.md#getmenu).  
   
-##  <a name="deletetempmap"></a>CMenu::DeleteTempMap  
+##  <a name="deletetempmap"></a>  CMenu::DeleteTempMap  
  Tarafından otomatik olarak çağrılır `CWinApp` boşta kalma süresi işleyici, hiçbir geçici siler `CMenu` tarafından oluşturulan nesneler [FromHandle](#fromhandle) üye işlevi.  
   
 ```  
@@ -468,12 +463,12 @@ static void PASCAL DeleteTempMap();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `DeleteTempMap`geçici bir iliştirilmiş Windows menüsü nesne ayırır `CMenu` silmeden önce nesne `CMenu` nesne.  
+ `DeleteTempMap` geçici bir iliştirilmiş Windows menüsü nesne ayırır `CMenu` silmeden önce nesne `CMenu` nesne.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#23](../../mfc/reference/codesnippet/cpp/cmenu-class_3.cpp)]  
   
-##  <a name="destroymenu"></a>CMenu::DestroyMenu  
+##  <a name="destroymenu"></a>  CMenu::DestroyMenu  
  Menü ve kullanılan tüm Windows kaynakları bozar.  
   
 ```  
@@ -489,7 +484,7 @@ BOOL DestroyMenu();
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::CreateMenu](#createmenu).  
   
-##  <a name="detach"></a>CMenu::Detach  
+##  <a name="detach"></a>  CMenu::Detach  
  Bir Windows menüden ayırır bir `CMenu` nesne ve işleyicisini döndürür.  
   
 ```  
@@ -505,7 +500,7 @@ HMENU Detach();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#21](../../mfc/reference/codesnippet/cpp/cmenu-class_1.cpp)]  
   
-##  <a name="drawitem"></a>CMenu::DrawItem  
+##  <a name="drawitem"></a>  CMenu::DrawItem  
  Sahip tarafından çizilmiş menü değişikliklerini visual yönünü zaman çerçevesi tarafından çağrılır.  
   
 ```  
@@ -526,7 +521,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
   
  [!code-cpp[NVC_MFCWindowing#24](../../mfc/reference/codesnippet/cpp/cmenu-class_4.cpp)]  
   
-##  <a name="enablemenuitem"></a>CMenu::EnableMenuItem  
+##  <a name="enablemenuitem"></a>  CMenu::EnableMenuItem  
  Etkinleştirir, devre dışı bırakır veya menü öğesi karartır.  
   
 ```  
@@ -548,7 +543,7 @@ UINT EnableMenuItem(
   
 - **MF_DISABLED** böylece seçilemez ancak onu dim değil menü öğesini devre dışı bırakır.  
   
-- `MF_ENABLED`Böylece seçilebilir ve devre dışı durumuna geri yükler menü öğesi sağlar.  
+- `MF_ENABLED` Böylece seçilebilir ve devre dışı durumuna geri yükler menü öğesi sağlar.  
   
 - **MF_GRAYED** seçilemez ve onu karartır menü öğesini devre dışı bırakır.  
   
@@ -565,7 +560,7 @@ UINT EnableMenuItem(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#25](../../mfc/reference/codesnippet/cpp/cmenu-class_5.cpp)]  
   
-##  <a name="fromhandle"></a>CMenu::FromHandle  
+##  <a name="fromhandle"></a>  CMenu::FromHandle  
  Bir işaretçi döndüren bir `CMenu` Windows tanıtıcı menüye verilen nesnesi.  
   
 ```  
@@ -587,7 +582,7 @@ static CMenu* PASCAL FromHandle(HMENU hMenu);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::CreateMenu](#createmenu).  
   
-##  <a name="getdefaultitem"></a>CMenu::GetDefaultItem  
+##  <a name="getdefaultitem"></a>  CMenu::GetDefaultItem  
  Belirtilen menüsündeki varsayılan menü öğesi belirler.  
   
 ```  
@@ -617,7 +612,7 @@ UINT GetDefaultItem(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::InsertMenu](#insertmenu).  
   
-##  <a name="getmenucontexthelpid"></a>CMenu::GetMenuContextHelpId  
+##  <a name="getmenucontexthelpid"></a>  CMenu::GetMenuContextHelpId  
  Kimliği ile ilişkili Bağlam Yardımı alır `CMenu`.  
   
 ```  
@@ -630,7 +625,7 @@ DWORD GetMenuContextHelpId() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::InsertMenu](#insertmenu).  
   
-##  <a name="getmenuinfo"></a>CMenu::GetMenuInfo  
+##  <a name="getmenuinfo"></a>  CMenu::GetMenuInfo  
  Bir menüye ilişkin bilgileri alır.  
   
 ```  
@@ -647,7 +642,7 @@ BOOL GetMenuInfo(LPMENUINFO lpcmi) const;
 ### <a name="remarks"></a>Açıklamalar  
  Menü hakkında bilgi almak için bu işlevini çağırın.  
   
-##  <a name="getmenuitemcount"></a>CMenu::GetMenuItemCount  
+##  <a name="getmenuitemcount"></a>  CMenu::GetMenuItemCount  
  Açılır veya üst düzey menü öğelerinin sayısını belirler.  
   
 ```  
@@ -660,7 +655,7 @@ UINT GetMenuItemCount() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CWnd::GetMenu](../../mfc/reference/cwnd-class.md#getmenu).  
   
-##  <a name="getmenuitemid"></a>CMenu::GetMenuItemID  
+##  <a name="getmenuitemid"></a>  CMenu::GetMenuItemID  
  Menü öğesi tanımlayıcısı tarafından tanımlanan bir konumda yer menü öğesi için edinir `nPos`.  
   
 ```  
@@ -677,7 +672,7 @@ UINT GetMenuItemID(int nPos) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::InsertMenu](#insertmenu).  
   
-##  <a name="getmenuiteminfo"></a>CMenu::GetMenuItemInfo  
+##  <a name="getmenuiteminfo"></a>  CMenu::GetMenuItemInfo  
  Menü öğesi ilgili bilgileri alır.  
   
 ```  
@@ -706,7 +701,7 @@ BOOL GetMenuItemInfo(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#26](../../mfc/reference/codesnippet/cpp/cmenu-class_6.cpp)]  
   
-##  <a name="getmenustate"></a>CMenu::GetMenuState  
+##  <a name="getmenustate"></a>  CMenu::GetMenuState  
  Açılır menüde bir durumu belirtilen menü öğesi veya öğe sayısını döndürür.  
   
 ```  
@@ -733,7 +728,7 @@ UINT GetMenuState(
   
 - **MF_DISABLED** böylece seçilemez ancak onu dim değil menü öğesini devre dışı bırakır.  
   
-- `MF_ENABLED`Böylece seçilebilir ve devre dışı durumuna geri yükler menü öğesi sağlar. Bu sabit değeri 0 olduğunu unutmayın; bir uygulama hatası için 0 karşı bu değeri kullanılırken sınamalısınız değil.  
+- `MF_ENABLED` Böylece seçilebilir ve devre dışı durumuna geri yükler menü öğesi sağlar. Bu sabit değeri 0 olduğunu unutmayın; bir uygulama hatası için 0 karşı bu değeri kullanılırken sınamalısınız değil.  
   
 - **MF_GRAYED** seçilemez ve onu karartır menü öğesini devre dışı bırakır.  
   
@@ -748,7 +743,7 @@ UINT GetMenuState(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#27](../../mfc/reference/codesnippet/cpp/cmenu-class_7.cpp)]  
   
-##  <a name="getmenustring"></a>CMenu::GetMenuString  
+##  <a name="getmenustring"></a>  CMenu::GetMenuString  
  Belirtilen menü öğesi etiketini belirtilen arabellek kopyalar.  
   
 ```  
@@ -794,7 +789,7 @@ int GetMenuString(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::InsertMenu](#insertmenu).  
   
-##  <a name="getsafehmenu"></a>CMenu::GetSafeHmenu  
+##  <a name="getsafehmenu"></a>  CMenu::GetSafeHmenu  
  Döndürür `HMENU` bu tarafından Sarmalanan `CMenu` nesnesi veya bir **NULL** `CMenu` işaretçi.  
   
 ```  
@@ -804,7 +799,7 @@ HMENU GetSafeHmenu() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::LoadMenu](#loadmenu).  
   
-##  <a name="getsubmenu"></a>CMenu::GetSubMenu  
+##  <a name="getsubmenu"></a>  CMenu::GetSubMenu  
  Alır `CMenu` açılır menü nesnesi.  
   
 ```  
@@ -821,7 +816,7 @@ CMenu* GetSubMenu(int nPos) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::TrackPopupMenu](#trackpopupmenu).  
   
-##  <a name="insertmenu"></a>CMenu::InsertMenu  
+##  <a name="insertmenu"></a>  CMenu::InsertMenu  
  Yeni menü öğesi tarafından belirtilen konumdaki ekler `nPosition` ve diğer öğeleri menüyü taşır.  
   
 ```  
@@ -855,7 +850,7 @@ BOOL InsertMenu(
  Yeni menü öğesi komut Kimliğini belirtir veya `nFlags` ayarlanır **MF_POPUP**, menü işleci ( `HMENU`) açılır menüsünden. `nIDNewItem` Parametresi sayılır (gerekli değil) `nFlags` ayarlanır **MF_SEPARATOR**.  
   
  `lpszNewItem`  
- Yeni menü öğesi içeriğini belirtir. `nFlags`bilgilerini yorumlamak için kullanılacak `lpszNewItem` aşağıdaki yollarla:  
+ Yeni menü öğesi içeriğini belirtir. `nFlags` bilgilerini yorumlamak için kullanılacak `lpszNewItem` aşağıdaki yollarla:  
   
 |nFlags|LpszNewItem yorumu|  
 |------------|-----------------------------------|  
@@ -881,7 +876,7 @@ BOOL InsertMenu(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#28](../../mfc/reference/codesnippet/cpp/cmenu-class_8.cpp)]  
   
-##  <a name="insertmenuitem"></a>CMenu::InsertMenuItem  
+##  <a name="insertmenuitem"></a>  CMenu::InsertMenuItem  
  Bir menüdeki belirli bir konumda yeni menü öğesi ekler.  
   
 ```  
@@ -904,7 +899,7 @@ BOOL InsertMenuItem(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlevi sarmalar [InsertMenuItem](http://msdn.microsoft.com/library/windows/desktop/ms647988), Windows SDK'sındaki açıklanmıştır.  
   
-##  <a name="loadmenu"></a>CMenu::LoadMenu  
+##  <a name="loadmenu"></a>  CMenu::LoadMenu  
  Menü kaynağı uygulamanın yürütülebilir dosyadan yükler ve ekleninceye `CMenu` nesnesi.  
   
 ```  
@@ -928,7 +923,7 @@ BOOL LoadMenu(UINT nIDResource);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#29](../../mfc/reference/codesnippet/cpp/cmenu-class_9.cpp)]  
   
-##  <a name="loadmenuindirect"></a>CMenu::LoadMenuIndirect  
+##  <a name="loadmenuindirect"></a>  CMenu::LoadMenuIndirect  
  Menü şablondan bellekte bir kaynak yükler ve ekleninceye `CMenu` nesnesi.  
   
 ```  
@@ -956,7 +951,7 @@ BOOL LoadMenuIndirect(const void* lpMenuTemplate);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#30](../../mfc/reference/codesnippet/cpp/cmenu-class_10.cpp)]  
   
-##  <a name="m_hmenu"></a>CMenu::m_hMenu  
+##  <a name="m_hmenu"></a>  CMenu::m_hMenu  
  Belirtir `HMENU` Windows menüsü tanıtıcısı iliştirilmiş `CMenu` nesnesi.  
   
 ```  
@@ -966,7 +961,7 @@ HMENU m_hMenu;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::LoadMenu](#loadmenu).  
   
-##  <a name="measureitem"></a>CMenu::MeasureItem  
+##  <a name="measureitem"></a>  CMenu::MeasureItem  
  Sahibi çizim stili menüsüyle oluşturulduğunda çerçevesi tarafından çağrılır.  
   
 ```  
@@ -987,7 +982,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
   
  [!code-cpp[NVC_MFCWindowing#31](../../mfc/reference/codesnippet/cpp/cmenu-class_11.cpp)]  
   
-##  <a name="modifymenu"></a>CMenu::ModifyMenu  
+##  <a name="modifymenu"></a>  CMenu::ModifyMenu  
  Varolan bir menü öğesi tarafından belirtilen konumdaki değişiklikler `nPosition`.  
   
 ```  
@@ -1045,7 +1040,7 @@ BOOL ModifyMenu(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::InsertMenu](#insertmenu).  
   
-##  <a name="operator_hmenu"></a>CMenu::operator HMENU  
+##  <a name="operator_hmenu"></a>  CMenu::operator HMENU  
  İşleyicisini almak için bu işleci kullanın `CMenu` nesnesi.  
   
 ```  
@@ -1058,7 +1053,7 @@ operator HMENU() const;
 ### <a name="remarks"></a>Açıklamalar  
  Windows API'larını doğrudan çağırmak için tanıtıcı kullanabilirsiniz.  
   
-##  <a name="operator_neq"></a>CMenu::operator! =  
+##  <a name="operator_neq"></a>  CMenu::operator! =  
  İki menüleri eşit değilse mantıksal olarak belirler.  
   
 ```  
@@ -1072,7 +1067,7 @@ BOOL operator!=(const CMenu& menu) const;
 ### <a name="remarks"></a>Açıklamalar  
  Sol tarafta menu nesnesini sağ tarafında menü nesnesine eşit değilse testleri.  
   
-##  <a name="operator_eq_eq"></a>CMenu::operator ==  
+##  <a name="operator_eq_eq"></a>  CMenu::operator ==  
  İki menüleri mantıksal olarak eşit olup olmadığını belirler.  
   
 ```  
@@ -1086,7 +1081,7 @@ BOOL operator==(const CMenu& menu) const;
 ### <a name="remarks"></a>Açıklamalar  
  Sol tarafta menü nesnesi eşitse sınar (cinsinden `HMENU` değeri) menü nesnesine sağ tarafında.  
   
-##  <a name="removemenu"></a>CMenu::RemoveMenu  
+##  <a name="removemenu"></a>  CMenu::RemoveMenu  
  İlişkili bir açılır menü ile menü öğesi menüden siler.  
   
 ```  
@@ -1118,7 +1113,7 @@ BOOL RemoveMenu(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::InsertMenu](#insertmenu).  
   
-##  <a name="setdefaultitem"></a>CMenu::SetDefaultItem  
+##  <a name="setdefaultitem"></a>  CMenu::SetDefaultItem  
  Varsayılan menü öğesi için belirtilen menü ayarlar.  
   
 ```  
@@ -1143,7 +1138,7 @@ BOOL SetDefaultItem(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::InsertMenu](#insertmenu).  
   
-##  <a name="setmenucontexthelpid"></a>CMenu::SetMenuContextHelpId  
+##  <a name="setmenucontexthelpid"></a>  CMenu::SetMenuContextHelpId  
  Bir bağlam Yardım kimliği ile ilişkilendirir `CMenu`.  
   
 ```  
@@ -1163,7 +1158,7 @@ BOOL SetMenuContextHelpId(DWORD dwContextHelpId);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMenu::InsertMenu](#insertmenu).  
   
-##  <a name="setmenuinfo"></a>CMenu::SetMenuInfo  
+##  <a name="setmenuinfo"></a>  CMenu::SetMenuInfo  
  Bir menüyü bilgilerini ayarlar.  
   
 ```  
@@ -1180,7 +1175,7 @@ BOOL SetMenuInfo(LPCMENUINFO lpcmi);
 ### <a name="remarks"></a>Açıklamalar  
  Menü hakkındaki belirli bilgileri ayarlamak için bu işlevini çağırın.  
   
-##  <a name="setmenuitembitmaps"></a>CMenu::SetMenuItemBitmaps  
+##  <a name="setmenuitembitmaps"></a>  CMenu::SetMenuItemBitmaps  
  Belirtilen bit eşlemler Menü öğesiyle ilişkilendirir.  
   
 ```  
@@ -1226,7 +1221,7 @@ BOOL SetMenuItemBitmaps(
   
  [!code-cpp[NVC_MFCWindowing#33](../../mfc/reference/codesnippet/cpp/cmenu-class_13.cpp)]  
   
-##  <a name="setmenuiteminfo"></a>CMenu::SetMenuItemInfo  
+##  <a name="setmenuiteminfo"></a>  CMenu::SetMenuItemInfo  
  Menü öğesi hakkında bilgileri değiştirir.  
   
 ```  
@@ -1249,7 +1244,7 @@ BOOL SetMenuItemInfo(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlevi sarmalar [SetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms648001), Windows SDK'sındaki açıklanmıştır.  
   
-##  <a name="trackpopupmenu"></a>CMenu::TrackPopupMenu  
+##  <a name="trackpopupmenu"></a>  CMenu::TrackPopupMenu  
  Belirtilen konumda kayan açılır menü görüntüler ve açılır menüsünden öğelerin seçimini izler.  
   
 ```  
@@ -1268,7 +1263,7 @@ BOOL TrackPopupMenu(
  *x*  
  Açılır menüsünün ekran koordinatları yatay konumu belirtir. Değerine bağlı olarak `nFlags` parametresi, menü sola hizalı, sağa hizalı veya bu konuma göre ortalanmış olabilir.  
   
- *y*  
+ *Y*  
  Ekran koordinatları dikey konumu menüsünün üstünde, ekranda belirtir.  
   
  `pWnd`  
@@ -1286,7 +1281,7 @@ BOOL TrackPopupMenu(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#34](../../mfc/reference/codesnippet/cpp/cmenu-class_14.cpp)]  
   
-##  <a name="trackpopupmenuex"></a>CMenu::TrackPopupMenuEx  
+##  <a name="trackpopupmenuex"></a>  CMenu::TrackPopupMenuEx  
  Belirtilen konumda kayan açılır menü görüntüler ve açılır menüsünden öğelerin seçimini izler.  
   
 ```  
@@ -1305,7 +1300,7 @@ BOOL TrackPopupMenuEx(
  *x*  
  Açılır menüsünün ekran koordinatları yatay konumu belirtir.  
   
- *y*  
+ *Y*  
  Ekran koordinatları dikey konumu menüsünün üstünde, ekranda belirtir.  
   
  `pWnd`  

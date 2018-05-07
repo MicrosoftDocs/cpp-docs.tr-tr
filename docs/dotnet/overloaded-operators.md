@@ -1,31 +1,26 @@
 ---
-title: "Aşırı yüklenmiş işleçler | Microsoft Docs"
-ms.custom: 
+title: Aşırı yüklenmiş işleçler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - operator overloading, in a CLR class
 - operators [C++], overloading
 ms.assetid: 30391426-afe7-4497-bf22-e4816c1e48c8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 94ee9d7bcffe7d17a5d5cf91fa3accdbe206b641
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f60b749cb5955eda7011b4dc087727d3ca7a5a02
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="overloaded-operators"></a>Aşırı Yüklenmiş İşleçler
 İşleç aşırı yüklemesi önemli ölçüde Yönetilen Uzantılar'dan C++ için Visual C++'a değişmiştir.  

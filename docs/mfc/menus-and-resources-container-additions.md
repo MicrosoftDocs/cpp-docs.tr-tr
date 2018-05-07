@@ -1,13 +1,10 @@
 ---
-title: "Menüler ve kaynaklar: kapsayıcı ekleme | Microsoft Docs"
-ms.custom: 
+title: 'Menüler ve kaynaklar: kapsayıcı ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - IDP_OLE_INIT_FAILED
 - IDP_FAILED_TO_CREATE
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - CONTAIN tutorial [MFC]
 - Links menu item [MFC]
 ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 654efeaacd08e0d2c8c51cee012fd58dcbf071ab
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2c71e8a79652a86ba412ef829ac1151256d1bf65
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="menus-and-resources-container-additions"></a>Menüler ve Kaynaklar: Kapsayıcı Ekleme
 Bu makalede menüleri ve diğer kaynaklara bir görsel düzenleme kapsayıcı uygulamasında yapılması gereken değişiklikleri açıklar.  
@@ -52,7 +47,7 @@ Bu makalede menüleri ve diğer kaynaklara bir görsel düzenleme kapsayıcı uy
   
 -   [Dize tablo ekleme](#_core_string_table_additions_for_container_applications)  
   
-##  <a name="_core_container_menu_additions"></a>Kapsayıcı menüsü ekleme  
+##  <a name="_core_container_menu_additions"></a> Kapsayıcı menüsü ekleme  
  Düzen menüsü aşağıdaki öğeleri eklemeniz gerekir:  
   
 |Öğe|Amaç|  
@@ -66,7 +61,7 @@ Bu makalede menüleri ve diğer kaynaklara bir görsel düzenleme kapsayıcı uy
   
  Yerinde etkinleştirme içerilen öğelerin desteklemek istiyorsanız, kapsayıcı uygulamanız için yeni bir menü oluşturmanız gerekir. Bu menü dosyaları açık, ancak aralarında yerleştirilen iki ayırıcı sahip kullanılan penceresi açılır menüler ve aynı dosya menüsü oluşur. Bu ayırıcılar (uygulama) sunucusu (Bileşen) öğesini yerinde etkinleştirildiğinde menülerini nereye belirtmek için kullanılır. Bu menü birleştirme teknik hakkında daha fazla bilgi için bkz: [menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md).  
   
-##  <a name="_core_container_application_accelerator_table_additions"></a>Kapsayıcı uygulama Hızlandırıcı tablo ekleme  
+##  <a name="_core_container_application_accelerator_table_additions"></a> Kapsayıcı uygulama Hızlandırıcı tablo ekleme  
  Bir kapsayıcı uygulama Hızlandırıcı tablosu kaynaklarına küçük değişikliklere yerinde etkinleştirme destekleniyorsa gereklidir. İlk değişiklik (ESC) yerinde düzenleme modunu iptal etmek için ESC tuşuna basın olanak tanır. Şu girdiyi ana Hızlandırıcı tabloya ekleyin:  
   
 |Kimlik|Anahtar|Tür|  
@@ -85,7 +80,7 @@ Bu makalede menüleri ve diğer kaynaklara bir görsel düzenleme kapsayıcı uy
 |**ID_PREV_PANE**|SHIFT + VK_F6|**VIRTKEY**|  
 |**ID_CANCEL_EDIT_CNTR**|VK_ESCAPE|**VIRTKEY**|  
   
-##  <a name="_core_string_table_additions_for_container_applications"></a>Dize tablo eklemeleri için kapsayıcı uygulamaları  
+##  <a name="_core_string_table_additions_for_container_applications"></a> Dize tablo eklemeleri için kapsayıcı uygulamaları  
  Dize tabloları kapsayıcı uygulamaları için yapılan değişiklikler çoğunu karşılık belirtilen ek menü öğelerini [kapsayıcı menü eklemeleri](#_core_container_menu_additions). Bunlar, her bir menü öğesi görüntülendiğinde durum çubuğunda görüntülenen metni sağlayın. Örnek olarak, Uygulama Sihirbazı'nın ürettiği dize tablosu girdileri şunlardır:  
   
 |Kimlik|Dize|  

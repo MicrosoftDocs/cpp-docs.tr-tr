@@ -1,13 +1,10 @@
 ---
-title: "Dosya işleme ve t-O (C + +/ CLI) | Microsoft Docs"
-ms.custom: 
+title: Dosya işleme ve t-O (C + +/ CLI) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - I/O [C++], .NET Framework applications
 - .NET Framework [C++], I/O
 ms.assetid: 3296fd59-a83a-40d4-bd4a-6096cc13101b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 643888b4a2bca802a9314d3468f2f416ff8a77b7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5af048d2686d3e435ff9f312c7acad8ca24ddeee
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="file-handling-and-io-ccli"></a>Dosya İşleme ve G/Ç (C++/CLI)
 .NET Framework kullanılarak çeşitli dosya işlemlerini gösterir.  

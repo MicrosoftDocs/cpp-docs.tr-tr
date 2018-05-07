@@ -1,12 +1,9 @@
 ---
 title: hash_multiset::make_value (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_multiset::make_value
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - make_value member [STL/CLR]
 ms.assetid: 33a4df1c-5451-44f2-af2e-a8419f9be3b9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: fd1d3dbeec874a123b3ab9359f184f8988dfe742
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 695c515bd61fbc2c6d114f64a0715ed7996b8f92
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hashmultisetmakevalue-stlclr"></a>hash_multiset::make_value (STL/CLR)
 Bir değer nesnesi oluşturur.  

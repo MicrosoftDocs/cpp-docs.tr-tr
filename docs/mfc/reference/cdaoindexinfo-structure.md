@@ -1,13 +1,10 @@
 ---
-title: "Cdaoındexınfo yapısı | Microsoft Docs"
-ms.custom: 
+title: Cdaoındexınfo yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - CDaoIndexInfo
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - DAO (Data Access Objects), Indexes collection
 - CDaoIndexInfo structure [MFC]
 ms.assetid: 251d8285-78ce-4716-a0b3-ccc3395fc437
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2617f8cb0d56098c0fef774dc56d56fa182e2482
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3d8c98181a9ec049308d7b85e57c028740927cc2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdaoindexinfo-structure"></a>CDaoIndexInfo Yapısı
 `CDaoIndexInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan bir dizin nesne hakkında bilgiler içerir.  
@@ -110,9 +105,9 @@ struct CDaoIndexInfo {
   
  Dizin nesneleri bir MFC sınıfı tarafından temsil edilmez. Bunun yerine, DAO temel MFC sınıfının nesneleri [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) dizinler koleksiyonu adlı dizin nesnelerinin bir koleksiyonu içerir. Bu sınıfların dizin bilgilerinin tek tek öğelere erişmek için üye işlevleri sağlamak ya da bunları tamamını tek seferde erişebilirsiniz bir `CDaoIndexInfo` çağırarak nesne `GetIndexInfo` kapsayan nesnenin üye işlevi.  
   
- `CDaoIndexInfo`bir oluşturucu ve düzgün şekilde ayırmak ve dizin alan bilgilerini ayırması amacıyla bir yıkıcı sahip `m_pFieldInfos`.  
+ `CDaoIndexInfo` bir oluşturucu ve düzgün şekilde ayırmak ve dizin alan bilgilerini ayırması amacıyla bir yıkıcı sahip `m_pFieldInfos`.  
   
- Tarafından alınan bilgileri `GetIndexInfo` üye işlevi tabledef nesnesinin depolanır bir `CDaoIndexInfo` yapısı. Çağrı `GetIndexInfo` üye işlevi içeren tabledef nesnesinin olan dizinler koleksiyonu dizin nesnesi depolanır. `CDaoIndexInfo`Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümü bir `CDaoIndexInfo` nesnesi.  
+ Tarafından alınan bilgileri `GetIndexInfo` üye işlevi tabledef nesnesinin depolanır bir `CDaoIndexInfo` yapısı. Çağrı `GetIndexInfo` üye işlevi içeren tabledef nesnesinin olan dizinler koleksiyonu dizin nesnesi depolanır. `CDaoIndexInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümü bir `CDaoIndexInfo` nesnesi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdao.h  

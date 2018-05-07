@@ -1,13 +1,10 @@
 ---
-title: "Önemli hata C1016 | Microsoft Docs"
-ms.custom: 
+title: Önemli hata C1016 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C1016
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C1016
 ms.assetid: 33f45c3e-2d8f-43ad-a445-c412d1d54ce1
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 265c4a0bfd331c5a28279351ccd1ad3adf881878
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a8a07f1fc36293b483772087b3325c7e0d0529e1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="fatal-error-c1016"></a>Önemli hata C1016
 \##ifndef tanımlayıcı bir tanımlayıcı bekleniyor ıfdef bekleniyor  

@@ -1,12 +1,9 @@
 ---
-title: "CMFCPreviewCtrlImpl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCPreviewCtrlImpl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCPreviewCtrlImpl
@@ -45,17 +42,15 @@ helpviewer_keywords:
 - CMFCPreviewCtrlImpl [MFC], m_font
 - CMFCPreviewCtrlImpl [MFC], m_pDocument
 ms.assetid: 06257fa0-54c9-478d-9d68-c9698c3f93ed
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8def8a8085bebdd09ce58cb6d9abd026fe713fe8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bb1ef84aabed69554ded868bbe9092c3e8b7082f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcpreviewctrlimpl-class"></a>CMFCPreviewCtrlImpl sınıfı
 Bu sınıf için Zengin Önizleme Kabuk tarafından sağlanan bir konak pencereyi yerleştirildiği bir pencere uygular.  
@@ -116,13 +111,13 @@ class CMFCPreviewCtrlImpl : public CWnd;
   
  [CMFCPreviewCtrlImpl](../../mfc/reference/cmfcpreviewctrlimpl-class.md)
 
-## <a name="cmfcpreviewctrlimpl"></a>CMFCPreviewCtrlImpl::CMFCPreviewCtrlImpl
+## <a name="cmfcpreviewctrlimpl"></a> CMFCPreviewCtrlImpl::CMFCPreviewCtrlImpl
 Önizleme denetim nesnesi oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 CMFCPreviewCtrlImpl();  
 
-## <a name="create"></a>CMFCPreviewCtrlImpl::Create
+## <a name="create"></a> CMFCPreviewCtrlImpl::Create
 Fazla Yüklendi. Windows penceresi oluşturmak için Zengin Önizleme işleyicisi tarafından çağrılır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -150,9 +145,9 @@ virtual BOOL Create(
  Bağlamı oluşturma için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı bir şekilde oluşturuldu Aksi takdirde `FALSE`.  
+ `TRUE` başarılı bir şekilde oluşturuldu Aksi takdirde `FALSE`.  
   
-## <a name="destroy"></a>CMFCPreviewCtrlImpl::Destroy
+## <a name="destroy"></a> CMFCPreviewCtrlImpl::Destroy
 Bu denetim yok etmek gerektiğinde bir Zengin Önizleme işleyicisi tarafından çağrılır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -161,7 +156,7 @@ Bu denetim yok etmek gerektiğinde bir Zengin Önizleme işleyicisi tarafından 
 virtual void Destroy();  
 ```  
   
-## <a name="dopaint"></a>CMFCPreviewCtrlImpl::DoPaint  
+## <a name="dopaint"></a> CMFCPreviewCtrlImpl::DoPaint  
 Önizleme işlemek için çerçevesi tarafından çağrılır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -177,7 +172,7 @@ virtual void DoPaint(
  Boyama için cihaz bağlamı için bir işaretçi.  
 
 
-## <a name="focus"></a>CMFCPreviewCtrlImpl::Focus  
+## <a name="focus"></a> CMFCPreviewCtrlImpl::Focus  
 Ayarlar, bu denetim odağı girin.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -185,7 +180,7 @@ Ayarlar, bu denetim odağı girin.
 ```  
 virtual void Focus();  
 ```  
-## <a name="getdocument"></a>CMFCPreviewCtrlImpl::GetDocument
+## <a name="getdocument"></a> CMFCPreviewCtrlImpl::GetDocument
 Bu önizleme denetimine bağlı bir belgeyi döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -197,7 +192,7 @@ ATL::IDocument* GetDocument();
 ### <a name="return-value"></a>Dönüş Değeri  
  İçerikleri denetiminde önizlemesi, bir belge için bir işaretçi.
 
-## <a name="m_clrbackcolor"></a>CMFCPreviewCtrlImpl::m_clrBackColor  
+## <a name="m_clrbackcolor"></a> CMFCPreviewCtrlImpl::m_clrBackColor  
 Önizleme penceresi arka plan rengi.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -206,7 +201,7 @@ ATL::IDocument* GetDocument();
 COLORREF m_clrBackColor;  
 ```  
 
-## <a name="m_clrtextcolor"></a>CMFCPreviewCtrlImpl::m_clrTextColor
+## <a name="m_clrtextcolor"></a> CMFCPreviewCtrlImpl::m_clrTextColor
 Önizleme penceresi metin rengi.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -214,14 +209,14 @@ COLORREF m_clrBackColor;
 ```  
 COLORREF m_clrTextColor;  
 ```  
-## <a name="m_font"></a>CMFCPreviewCtrlImpl::m_font yazı tipi metin önizleme penceresinde görüntülemek için kullanılır.  
+## <a name="m_font"></a> CMFCPreviewCtrlImpl::m_font yazı tipi metin önizleme penceresinde görüntülemek için kullanılır.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
 ```  
 CFont m_font;  
 ```  
-## <a name="m_pdocument"></a>CMFCPreviewCtrlImpl::m_pDocument  
+## <a name="m_pdocument"></a> CMFCPreviewCtrlImpl::m_pDocument  
 İçerikleri denetiminde önizlemesi bir belge için bir işaretçi.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -230,7 +225,7 @@ CFont m_font;
 ATL::IDocument* m_pDocument;  
 ```  
 
-## <a name="redraw"></a>CMFCPreviewCtrlImpl::Redraw  
+## <a name="redraw"></a> CMFCPreviewCtrlImpl::Redraw  
 Bu denetim yeniden boyutlandırmaya söyler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -238,7 +233,7 @@ Bu denetim yeniden boyutlandırmaya söyler.
 ```  
 virtual void Redraw();  
 ```  
-## <a name="setdocument"></a>CMFCPreviewCtrlImpl::SetDocument 
+## <a name="setdocument"></a> CMFCPreviewCtrlImpl::SetDocument 
 Belge uygulama ve önizleme denetimi arasında bir ilişki oluşturmak için Önizleme işleyicisi tarafından çağrılır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -253,7 +248,7 @@ void SetDocument(
  `pDocument`  
  Belge uygulaması için bir işaretçi.  
 
-## <a name="sethost"></a>CMFCPreviewCtrlImpl::SetHost  
+## <a name="sethost"></a> CMFCPreviewCtrlImpl::SetHost  
 Bu denetim için yeni bir üst öğe olarak ayarlar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -268,7 +263,7 @@ virtual void SetHost(
  `hWndParent`  
  Yeni üst pencere için bir tanıtıcı.  
 
-## <a name="setpreviewvisuals"></a>CMFCPreviewCtrlImpl::SetPreviewVisuals  
+## <a name="setpreviewvisuals"></a> CMFCPreviewCtrlImpl::SetPreviewVisuals  
 Zengin Önizleme görselleri ayarlamak gerektiğinde bir Zengin Önizleme işleyicisi tarafından içerik çağrılır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -291,7 +286,7 @@ virtual void SetPreviewVisuals(
  `plf`  
  Metni Önizleme penceresinde görüntülemek için kullanılan yazıtipi. 
 
-##  <a name="setrect"></a>CMFCPreviewCtrlImpl::SetRect  
+##  <a name="setrect"></a> CMFCPreviewCtrlImpl::SetRect  
 Bu denetim için yeni bir sınırlayıcı dikdörtgenini ayarlar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -313,7 +308,7 @@ virtual void SetRect(
 ### <a name="remarks"></a>Açıklamalar  
  Konak kontrolü yeniden boyutlandırıldığında genellikle yeni bir sınırlayıcı dikdörtgenini ayarlanır.  
 
-## <a name="dtor"></a>CMFCPreviewCtrlImpl:: ~ CMFCPreviewCtrlImpl  
+## <a name="dtor"></a> CMFCPreviewCtrlImpl:: ~ CMFCPreviewCtrlImpl  
 Önizleme denetim nesnesi destructs.  
   
 ### <a name="syntax"></a>Sözdizimi  

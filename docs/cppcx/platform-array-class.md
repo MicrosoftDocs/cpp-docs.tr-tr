@@ -1,11 +1,8 @@
 ---
-title: "Platform::Array sınıfı | Microsoft Docs"
-ms.custom: 
+title: Platform::Array sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Namespace not found::Platform
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Array Class
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e3d2964e1488e74e7a07f20c38ee4fbbcf6e387
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 4c6a326db5400d8dfb335f9c9e20867a26db59b0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="platformarray-class"></a>Platform::Array sınıfı
 Alınan ve uygulama ikili arabirimi (ABI) iletilen tek boyutlu, değiştirilebilir bir dizisini temsil eder.  
@@ -70,10 +65,10 @@ private ref class Array<TArg, 1> :
  Bu sınıf, derleyici tarafından otomatik olarak dahil vccorlib.h başlığında tanımlanır. Platform.winmd içinde tanımlanan genel bir tür olduğundan IntelliSense ancak içinde değil Nesne Tarayıcısı görünür olur.  
   
 ### <a name="requirements"></a>Gereksinimler  
- Compiler option: **/ZW**  
+ Derleyici seçeneği: **/ZW**  
 
  
-## <a name="ctor">Dizi oluşturucular</a>
+## <a name="ctor"></a>  Dizi oluşturucular
 Sınıf şablonu parametresi tarafından belirtilen türleri tek boyutlu, değiştirilebilir bir dizi başlatır *T*.  
   
 ## <a name="syntax"></a>Sözdizimi  

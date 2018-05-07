@@ -2,11 +2,8 @@
 title: CRecentFileList sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CRecentFileList
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - CRecentFileList [MFC], UpdateMenu
 - CRecentFileList [MFC], WriteList
 ms.assetid: a77f0524-7584-4582-849a-7e97b76d186e
-caps.latest.revision: 19
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 968c15b1382233dc166a174e4ef074033c76619c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 337ecf8227f1d5c2abe0369abdea5662f882f3d2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="crecentfilelist-class"></a>CRecentFileList sınıfı
 En son kullanılan (MRU) dosya listesi denetimini destekler.  
@@ -91,7 +86,7 @@ class CRecentFileList
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxadv.h  
   
-##  <a name="add"></a>CRecentFileList::Add  
+##  <a name="add"></a>  CRecentFileList::Add  
  Bir dosyayı en son kullanılan (MRU) dosya listesine ekler.  
   
 ```  
@@ -137,7 +132,7 @@ void Add(
 ### <a name="remarks"></a>Açıklamalar  
  Dosya adı MRU listesinin üstüne eklenir. MRU listesinde dosya adı zaten varsa en çok taşınır.  
   
-##  <a name="crecentfilelist"></a>CRecentFileList::CRecentFileList  
+##  <a name="crecentfilelist"></a>  CRecentFileList::CRecentFileList  
  Oluşturan bir `CRecentFileList` nesnesi.  
   
 ```  
@@ -168,7 +163,7 @@ CRecentFileList(
 ### <a name="remarks"></a>Açıklamalar  
  Tarafından için biçim dizesi işaret `lpszEntryFormat` "% her MRU öğenin dizini değiştirme için kullanılacak olan d", içermelidir. Örneğin, biçim dizesi ise `"file%d"` girişleri adlı sonra `file0`, `file1`ve benzeri.  
   
-##  <a name="getdisplayname"></a>CRecentFileList::GetDisplayName  
+##  <a name="getdisplayname"></a>  CRecentFileList::GetDisplayName  
  MRU dosya listesinde dosyanın MRU Listesi menü görünümünü kullanmak için görünen adını alır.  
   
 ```  
@@ -202,7 +197,7 @@ virtual BOOL GetDisplayName(
 ### <a name="remarks"></a>Açıklamalar  
  Geçerli dizinde dosyasıysa işlevi directory görüntülenmesini devre dışı bırakır. Dosya adı çok uzun olması durumunda dizin ve uzantı kaldırılır. Dosya adı hala çok uzun olduğunda görünen adı boş bir dize olarak sürece ayarlandığı `bAtLeastName` sıfır olmayan bir değer değil.  
   
-##  <a name="getsize"></a>CRecentFileList::GetSize  
+##  <a name="getsize"></a>  CRecentFileList::GetSize  
  MRU dosya listesinde dosyalarının sayısını alır.  
   
 ```  
@@ -212,7 +207,7 @@ int GetSize() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli dosya sayısı, en son (MRU) dosya listesi kullanılır.  
   
-##  <a name="operator_at"></a>CRecentFileList::operator]  
+##  <a name="operator_at"></a>  CRecentFileList::operator]  
  Aşırı yüklenmiş alt simge ( `[]`) operatörü döndürür tek bir `CString` içindeki sıfır tabanlı dizin tarafından belirtilen `nIndex`.  
   
 ```  
@@ -223,14 +218,14 @@ CString& operator[ ](int nindex);
  `nIndex`  
  Sıfır tabanlı dizini bir `CString` kümesinde `CString`s.  
   
-##  <a name="readlist"></a>CRecentFileList::ReadList  
+##  <a name="readlist"></a>  CRecentFileList::ReadList  
  En son kullanılan (MRU) dosya listesi kayıt defterinden ya da uygulamanın okur. INI dosyası.  
   
 ```  
 virtual void ReadList();
 ```  
   
-##  <a name="remove"></a>CRecentFileList::Remove  
+##  <a name="remove"></a>  CRecentFileList::Remove  
  Bir dosya MRU dosya listesinden kaldırır.  
   
 ```  
@@ -241,7 +236,7 @@ virtual void Remove(int nIndex);
  `nIndex`  
  Dosyanın en son kullanılan (MRU) dosya listesinden kaldırılacak sıfır tabanlı dizini.  
   
-##  <a name="updatemenu"></a>CRecentFileList::UpdateMenu  
+##  <a name="updatemenu"></a>  CRecentFileList::UpdateMenu  
  MRU dosya listesi menü görüntüsünü güncelleştirir.  
   
 ```  
@@ -252,7 +247,7 @@ virtual void UpdateMenu(CCmdUI* pCmdUI);
  `pCmdUI`  
  Bir işaretçi [Ccmduı](../../mfc/reference/ccmdui-class.md) en son kullanılan (MRU) dosya listesi menüsü nesne.  
   
-##  <a name="writelist"></a>CRecentFileList::WriteList  
+##  <a name="writelist"></a>  CRecentFileList::WriteList  
  En son kayıt defteri ya da uygulamanın (MRU) dosya listesi kullanılan yazar. INI dosyası.  
   
 ```  

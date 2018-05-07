@@ -2,11 +2,8 @@
 title: CDC sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CDC
@@ -411,17 +408,15 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-caps.latest.revision: 21
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97099ead68a0060862465c9c3e020da523b85b86
-ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.openlocfilehash: e3a677d81343da6185ce37f1f4839f20cef3b943
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdc-class"></a>CDC sınıfı
 Bir cihaz bağlamı nesneler sınıfı tanımlar.  
@@ -461,7 +456,7 @@ class CDC : public CObject
 |[CDC::CreateIC](#createic)|Belirli bir aygıt için bilgileri bağlam oluşturur. Bu cihaz bağlamı oluşturmadan cihaz hakkında bilgi almak için hızlı bir yol sağlar.|  
 |[CDC::DeleteDC](#deletedc)|Bu ile ilişkili Windows cihaz bağlamı siler `CDC` nesnesi.|  
 |[CDC::DeleteTempMap](#deletetempmap)|Tarafından çağrılır `CWinApp` herhangi geçici silmek için boşta kalma süresi işleyici `CDC` tarafından oluşturulan nesne `FromHandle`. Ayrıca cihaz bağlamı ayırır.|  
-|[CDC::Detach](#detach)|Bu Windows cihaz bağlamı ayırır `CDC` nesnesi.|  
+|[CDC::detach](#detach)|Bu Windows cihaz bağlamı ayırır `CDC` nesnesi.|  
 |[CDC::DPtoHIMETRIC](#dptohimetric)|Cihaz birimlerine dönüştürür **HIMETRIC** birimleri.|  
 |[CDC::DPtoLP](#dptolp)|Cihaz birimleri mantıksal birimler halinde dönüştürür.|  
 |[CDC::Draw3dRect](#draw3drect)|Üç boyutlu bir dikdörtgen çizer.|  
@@ -564,7 +559,7 @@ class CDC : public CObject
 |[CDC::LPtoHIMETRIC](#lptohimetric)|Mantıksal birimler halinde dönüştürür **HIMETRIC** birimleri.|  
 |[CDC::MaskBlt](#maskblt)|Verilen maskesi ve Tarama işlemi kullanarak kaynak ve hedef bit eşlemler renk verilerini bir araya getirir.|  
 |[CDC::ModifyWorldTransform](#modifyworldtransform)|Dünya dönüşümü belirtilen modunu kullanarak bir cihaz bağlamı için değiştirir.|  
-|[CDC::MoveTo](#moveto)|Geçerli konuma taşır.|  
+|[CDC::moveTo](#moveto)|Geçerli konuma taşır.|  
 |[CDC::OffsetClipRgn](#offsetcliprgn)|Belirli bir aygıt kırpma bölgesinin taşır.|  
 |[CDC::OffsetViewportOrg](#offsetviewportorg)|Geçerli Görünüm penceresinin başlangıç noktası koordinatları göreli Görünüm penceresi kaynak değiştirir.|  
 |[CDC::OffsetWindowOrg](#offsetwindoworg)|Geçerli penceresi kaynak koordinatlarını göre penceresi kaynak değiştirir.|  
@@ -831,7 +826,7 @@ BOOL AngleArc(
  *x*  
  Mantıksal x koordinatını dairenin merkezi belirtir.  
   
- *y*  
+ *Y*  
  Mantıksal y koordinatını dairenin merkezi belirtir.  
   
  *nRadius*  
@@ -853,7 +848,7 @@ BOOL AngleArc(
   
  Tarama açısı 360 derece büyükse, Yayı birden çok kez gözden geçirilmiştir. Bu işlev, geçerli kalem kullanarak satırları çizer. Şekil doldurulmamış.  
   
-##  <a name="arc"></a>  CDC::Arc  
+##  <a name="arc"></a>  CDC::ARC  
  Elips yay çizer.  
   
 ```  
@@ -1036,7 +1031,7 @@ BOOL BitBlt(
  *x*  
  Mantıksal x koordinatını hedef dikdörtgenin sol üst köşesindeki belirtir.  
   
- *y*  
+ *Y*  
  Hedef dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.  
   
  `nWidth`  
@@ -1283,7 +1278,7 @@ BOOL DeleteDC();
 static void PASCAL DeleteTempMap();
 ```  
   
-##  <a name="detach"></a>  CDC::Detach  
+##  <a name="detach"></a>  CDC::detach  
  Kullanımdan çıkarmak için bu işlevi çağırmak `m_hDC` (çıktı cihaz bağlamı) gelen `CDC` nesnesi ve her iki ayarlar `m_hDC` ve `m_hAttribDC` için **NULL**.  
   
 ```  
@@ -1367,13 +1362,13 @@ void Draw3dRect(
  *x*  
  Mantıksal x koordinatını üç boyutlu dikdörtgenin sol üst köşesindeki belirtir.  
   
- *y*  
+ *Y*  
  Üç boyutlu dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.  
   
  cx  
  Üç boyutlu dikdörtgenin genişliğini belirtir.  
   
- cy  
+ CY  
  Üç boyutlu dikdörtgenin yüksekliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1583,7 +1578,7 @@ BOOL DrawIcon(
  *x*  
  Mantıksal x koordinatını simgesine sol üst köşesindeki belirtir.  
   
- *y*  
+ *Y*  
  Simgenin sol üst köşesinin mantıksal y koordinatını belirtir.  
   
  `hIcon`  
@@ -2114,7 +2109,7 @@ BOOL ExtFloodFill(
  *x*  
  Mantıksal x koordinatını doldurma başladığı noktasını belirtir.  
   
- *y*  
+ *Y*  
  Doldurma başladığı noktasının mantıksal y koordinatını belirtir.  
   
  `crColor`  
@@ -2166,7 +2161,7 @@ BOOL ExtTextOut(
  *x*  
  Mantıksal x koordinatını ilk karakter karakter hücrenin belirtilen dizeyi belirtir.  
   
- *y*  
+ *Y*  
  Mantıksal y koordinatını üst ilk karakter karakter hücrenin belirtilen dizeyi belirtir.  
   
  `nOptions`  
@@ -2288,7 +2283,7 @@ void FillSolidRect(
  *x*  
  Mantıksal x koordinatını dikdörtgen sol üst köşesindeki belirtir.  
   
- *y*  
+ *Y*  
  Hedef dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.  
   
  `cx`  
@@ -2327,7 +2322,7 @@ BOOL FloodFill(
  *x*  
  Mantıksal x koordinatını doldurma başladığı noktasını belirtir.  
   
- *y*  
+ *Y*  
  Doldurma başladığı noktasının mantıksal y koordinatını belirtir.  
   
  `crColor`  
@@ -3273,7 +3268,7 @@ COLORREF GetPixel(POINT point) const;
  *x*  
  Mantıksal x koordinatını incelenmesi için noktasının belirtir.  
   
- *y*  
+ *Y*  
  Mantıksal y koordinatını incelenmesi için noktasının belirtir.  
   
  `point`  
@@ -3736,7 +3731,7 @@ virtual BOOL GrayString(
  *x*  
  Mantıksal x koordinatını dize barındırır dikdörtgen başlangıç konumunu belirtir.  
   
- *y*  
+ *Y*  
  Mantıksal y koordinatını dize barındırır dikdörtgen başlangıç konumunu belirtir.  
   
  `nWidth`  
@@ -3895,7 +3890,7 @@ BOOL LineTo(POINT point);
  *x*  
  Mantıksal x koordinatını satırı için uç nokta belirtir.  
   
- *y*  
+ *Y*  
  Mantıksal y koordinatını satırı için uç nokta belirtir.  
   
  `point`  
@@ -3998,7 +3993,7 @@ BOOL MaskBlt(
  *x*  
  Mantıksal x koordinatını hedef dikdörtgenin sol üst köşesindeki belirtir.  
   
- *y*  
+ *Y*  
  Hedef dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.  
   
  `nWidth`  
@@ -4064,7 +4059,7 @@ BOOL ModifyWorldTransform(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem Windows GDI işlevi sarmalar [ModifyWorldTransform](http://msdn.microsoft.com/library/windows/desktop/dd145060).  
   
-##  <a name="moveto"></a>  CDC::MoveTo  
+##  <a name="moveto"></a>  CDC::moveTo  
  Geçerli konumu tarafından belirtilen noktası gider *x* ve *y* (ya da `point`).  
   
 ```  
@@ -4079,7 +4074,7 @@ CPoint MoveTo(POINT point);
  *x*  
  Mantıksal x koordinatını yeni konumu belirtir.  
   
- *y*  
+ *Y*  
  Mantıksal y koordinatını yeni konumu belirtir.  
   
  `point`  
@@ -4106,7 +4101,7 @@ int OffsetClipRgn(SIZE size);
  *x*  
  Sol taşımak için veya sağa mantıksal birim sayısını belirtir.  
   
- *y*  
+ *Y*  
  Yukarı veya aşağı taşımak için mantıksal birim sayısını belirtir.  
   
  `size`  
@@ -4207,7 +4202,7 @@ BOOL PatBlt(
  *x*  
  Mantıksal x koordinatını düzeni alacak dikdörtgen sol üst köşesindeki belirtir.  
   
- *y*  
+ *Y*  
  Desen alacak dikdörtgen sol üst köşesinin mantıksal y koordinatını belirtir.  
   
  `nWidth`  
@@ -4639,7 +4634,7 @@ BOOL PtVisible(POINT point) const;
  *x*  
  Mantıksal x koordinatı noktasını belirtir.  
   
- *y*  
+ *Y*  
  Mantıksal y koordinatı noktasını belirtir.  
   
  `point`  
@@ -4949,7 +4944,7 @@ BOOL ScrollDC(
  `dx`  
  Yatay kaydırma birimi sayısını belirtir.  
   
- *dy*  
+ *GN*  
  Dikey kaydırma birim sayısını belirtir.  
   
  `lpRectScroll`  
@@ -5343,7 +5338,7 @@ CPoint SetBrushOrg(POINT point);
  *x*  
  X koordinatını (aygıt birimleri) yeni kaynak belirtir. Bu değer, 0-7 aralığında olmalıdır.  
   
- *y*  
+ *Y*  
  Y koordinatını (aygıt birimleri) yeni kaynak belirtir. Bu değer, 0-7 aralığında olmalıdır.  
   
  `point`  
@@ -5553,7 +5548,7 @@ virtual void SetOutputDC(HDC hDC);
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi yalnızca bir cihaz bağlamı için eklenmemiş olduğunda çağrılabilir `CDC` nesnesi. Bu üye işlevi ayarlar `m_hDC` cihaz bağlamına eklemez ancak `CDC` nesnesi.  
   
-##  <a name="setpixel"></a>  CDC::SetPixel  
+##  <a name="setpixel"></a>  CDC::setPixel  
  En yakın yaklaşık tarafından belirtilen renk olarak belirtilen bir noktada piksel ayarlar `crColor`.  
   
 ```  
@@ -5572,7 +5567,7 @@ COLORREF SetPixel(
  *x*  
  Mantıksal x koordinatını ayarlanması için noktasının belirtir.  
   
- *y*  
+ *Y*  
  Ayarlanacak noktasının mantıksal y koordinatını belirtir.  
   
  `crColor`  
@@ -5608,7 +5603,7 @@ BOOL SetPixelV(
  *x*  
  X koordinatını, ayarlanacak noktasının mantıksal birimleri belirtir.  
   
- *y*  
+ *Y*  
  Y ekseni için ayarlanacak noktasının mantıksal birimleri belirtir.  
   
  `crColor`  
@@ -5892,7 +5887,7 @@ CPoint SetViewportOrg(POINT point);
  *x*  
  X koordinatını (aygıt birimleri) görünüm penceresinin başlangıcını belirtir. Değer, cihaz koordinat sistemi aralığında olması gerekir.  
   
- *y*  
+ *Y*  
  Y koordinatını (aygıt birimleri) görünüm penceresinin başlangıcını belirtir. Değer, cihaz koordinat sistemi aralığında olması gerekir.  
   
  `point`  
@@ -5970,7 +5965,7 @@ CPoint SetWindowOrg(POINT point);
  *x*  
  Mantıksal x koordinatını penceresinin yeni kaynak belirtir.  
   
- *y*  
+ *Y*  
  Mantıksal y koordinatını penceresinin yeni kaynak belirtir.  
   
  `point`  
@@ -6078,7 +6073,7 @@ BOOL StretchBlt(
  *x*  
  Hedef dikdörtgenin sol üst köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.  
   
- *y*  
+ *Y*  
  Hedef dikdörtgenin sol üst köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.  
   
  `nWidth`  
@@ -6206,7 +6201,7 @@ CSize TabbedTextOut(
  *x*  
  Mantıksal x koordinatını dizesinin başlangıç noktasını belirler.  
   
- *y*  
+ *Y*  
  Mantıksal y koordinatını dizesinin başlangıç noktasını belirler.  
   
  `lpszString`  
@@ -6258,7 +6253,7 @@ BOOL TextOut(
  *x*  
  Metnin başlangıç noktasının mantıksal x koordinatını belirtir.  
   
- *y*  
+ *Y*  
  Metnin başlangıç noktasının mantıksal y koordinatını belirtir.  
   
  `lpszString`  

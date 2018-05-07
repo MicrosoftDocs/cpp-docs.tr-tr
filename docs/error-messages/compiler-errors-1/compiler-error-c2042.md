@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2042 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2042 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2042
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2042
 ms.assetid: e111788f-41ce-405a-9824-a4c1c26059e6
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 583c813c2fe3eeca5372954c5ba547531093fe6d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b5b0442371b210f40d58a10b6bf1107979ea88db
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2042"></a>Derleyici Hatası C2042
 İmzalı ve imzasız anahtar sözcükleri birbirini dışlayan  

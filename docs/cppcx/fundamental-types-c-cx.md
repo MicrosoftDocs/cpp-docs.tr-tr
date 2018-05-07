@@ -1,24 +1,19 @@
 ---
-title: "Temel türler (C + +/ CX) | Microsoft Docs"
-ms.custom: 
+title: Temel türler (C + +/ CX) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/22/2017
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 ms.assetid: c9f82907-25f2-440b-91d6-afb8dbd46ea6
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 885b996e94c1c3a3d55e48e0f37c5690ba084cf6
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 0da64edaa3f94ac9813408d936e3f83783e6b241
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="fundamental-types-ccx"></a>Temel türler (C + +/ CX)
 Ek olarak standart C++ yerleşik türleri, C + +/ CX destekleyen standart C++ türleri eşlenen temel Windows çalışma zamanı türleri için tür tanımları sağlayarak Windows çalışma zamanı mimarisi tarafından tanımlanan tür sistemi... C + +/ CX Boolean, karakter ve sayısal temel türleri uygular. Bu tür tanımları tanımlanan `default` ad alanı hiçbir zaman açıkça belirtilmesi gerekiyor. Ayrıca, C + +/ CX, sarmalayıcıları ve somut uygulamaları belirli Windows çalışma zamanı türleri ve arabirimleri sağlar.  
@@ -29,7 +24,7 @@ Ek olarak standart C++ yerleşik türleri, C + +/ CX destekleyen standart C++ t�
 |Ad Alanı|C + +/ CX adı|Tanım|Standart C++ adı|Aralık, değerleri|  
 |---------------|-----------------------------------------------------------------------|----------------|-------------------------|---------------------|  
 |Platform|Boole değeri|Bir 8 bit Boole değeri.|bool|`true` (sıfır) ve `false` (sıfır)|  
-|default|char16|Unicode (UTF-16) kod noktası temsil eden bir 16 bit sayısal olmayan değer.|wchar_t<br /><br /> veya<br /><br /> L'c'|(Unicode standart tarafından belirtilen)|  
+|default|char16|Unicode (UTF-16) kod noktası temsil eden bir 16 bit sayısal olmayan değer.|wchar_t<br /><br /> -veya-<br /><br /> L'c'|(Unicode standart tarafından belirtilen)|  
   
 ## <a name="numeric-types"></a>Sayısal türler  
  Aşağıdaki tabloda yerleşik sayısal türler listelenmektedir. Sayısal türler içinde bildirilen `default` karşılık gelen C++ yerleşik türü için tür tanımları ad alanı ve şunlardır. Windows çalışma zamanı'nda (örneğin, uzun) tüm C++ yerleşik türleri desteklenir. Tutarlılık ve daha anlaşılır olması için C + kullanmanızı öneririz +/ CX adı.  
@@ -40,9 +35,9 @@ Ek olarak standart C++ yerleşik türleri, C + +/ CX destekleyen standart C++ t�
 |uint8|Bir 8 bit işaretsiz sayısal değer.|unsigned char|0 ile 255|  
 |Int16|Bir 16 bit işaretli tamsayıyı.|short|-32.768 32.767 aracılığıyla|  
 |uint16|Bir 16 bit işaretsiz tamsayı.|imzasız short|0 ile 65.535|  
-|int32|32 bit imzalı bir tamsayı.|int|-2.147.483.648 2.147.483.647 aracılığıyla|  
+|Int32|32 bit imzalı bir tamsayı.|int|-2.147.483.648 2.147.483.647 aracılığıyla|  
 |uint32|Bir 32 bit işaretsiz tamsayı.|unsigned int|0 ile 4.294.967.295 arasında|  
-|int64|64-bit imzalı bir tamsayı.|uzun uzun - veya - __int64|-9,223,372,036,854, 9,223,372,036,854,775,807 aracılığıyla 775,808|  
+|Int64|64-bit imzalı bir tamsayı.|uzun uzun - veya - __int64|-9,223,372,036,854, 9,223,372,036,854,775,807 aracılığıyla 775,808|  
 |uint64|Bir 64-bit işaretsiz tamsayı.|İmzasız long uzun - veya - imzasız __int64|0 ile 18,446,744,073,709,551,615|  
 |Float32|Bir 32 bit IEEE 754 kayan noktalı sayı.|float|3.4e +/-38 (7 basamak)|  
 |Float64|Bir 64-bit IEEE 754 kayan noktalı sayı.|çift|1.7E +/-308 (15 basamak)|  

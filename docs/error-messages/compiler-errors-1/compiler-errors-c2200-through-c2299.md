@@ -1,12 +1,9 @@
 ---
-title: "Derleyici hataları C2200 C2299 aracılığıyla | Microsoft Docs"
-ms.custom: 
+title: Derleyici hataları C2200 C2299 aracılığıyla | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2202
@@ -61,17 +58,15 @@ helpviewer_keywords:
 dev_langs:
 - C++
 ms.assetid: 9b36d11b-9510-4390-96f1-0c9235124d14
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76de03030f61e56acd2189679704ff939e6e9c8c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 567cd6a9cbb042027b13056fe50330b31f326529
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-errors-c2200-through-c2299"></a>Derleyici hataları C2200 C2299 aracılığıyla
 

@@ -1,12 +1,9 @@
 ---
 title: deque::back_item (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::deque::back_item
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - back_item member [STL/CLR]
 ms.assetid: b112636a-2f18-4eb0-abd6-076acdabeff7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 9af0f0f36c3d504d2b2d28338738e413703af1ce
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 44b7636c9908a88f109da582351828dd4f1515fe
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dequebackitem-stlclr"></a>deque::back_item (STL/CLR)
 Son öğe erişir.  

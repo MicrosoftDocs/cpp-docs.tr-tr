@@ -1,12 +1,9 @@
 ---
-title: "COleDocument sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleDocument sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleDocument
@@ -61,17 +58,15 @@ helpviewer_keywords:
 - COleDocument [MFC], OnUpdatePasteLinkMenu
 - COleDocument [MFC], OnUpdatePasteMenu
 ms.assetid: dc2ecb99-03e1-44c7-bb69-48056dd1b672
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 147a3bca2f4ad91aeaa2c74ac7a356d9404943fb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6317d7c14f76355df908c9809df633533df3fb61
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coledocument-class"></a>COleDocument sınıfı
 Görsel düzenleme desteği OLE belgeleri için temel sınıf.  
@@ -123,15 +118,15 @@ class COleDocument : public CDocument
 |[COleDocument::OnUpdatePasteMenu](#onupdatepastemenu)|' % S'komut UI Yapıştır menü seçeneği için güncelleştirmek için framework tarafından çağrılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `COleDocument`türetilmiş **CDocument**, Microsoft Foundation Class Kitaplığı tarafından sağlanan belge/görünüm mimarisinin kullanmak, OLE uygulamaları sağlar.  
+ `COleDocument` türetilmiş **CDocument**, Microsoft Foundation Class Kitaplığı tarafından sağlanan belge/görünüm mimarisinin kullanmak, OLE uygulamaları sağlar.  
   
- `COleDocument`bir belge koleksiyonu olarak davranır [CDocItem](../../mfc/reference/cdocitem-class.md) OLE öğeleri işlemek için nesneleri. Çünkü, belgeleri OLE öğeleri içeren gerekir kapsayıcı ve sunucu uygulamaları böyle bir mimari gerektirir. [COleServerItem](../../mfc/reference/coleserveritem-class.md) ve [COleClientItem](../../mfc/reference/coleclientitem-class.md) sınıfları, hem de türetilmiş `CDocItem`, uygulamalar ve OLE öğeleri arasındaki etkileşimler yönetin.  
+ `COleDocument` bir belge koleksiyonu olarak davranır [CDocItem](../../mfc/reference/cdocitem-class.md) OLE öğeleri işlemek için nesneleri. Çünkü, belgeleri OLE öğeleri içeren gerekir kapsayıcı ve sunucu uygulamaları böyle bir mimari gerektirir. [COleServerItem](../../mfc/reference/coleserveritem-class.md) ve [COleClientItem](../../mfc/reference/coleclientitem-class.md) sınıfları, hem de türetilmiş `CDocItem`, uygulamalar ve OLE öğeleri arasındaki etkileşimler yönetin.  
   
- Basit kapsayıcı uygulama yazıyorsanız, belge sınıfından türetilen `COleDocument`. Kendi belgeleri tarafından bulunan katıştırılmış öğeleri bağlantılandırma destekleyen bir kapsayıcı uygulama yazıyorsanız, belge sınıfından türetilen [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md). Bir sunucu uygulaması veya birleşimi kapsayıcı/sunucu yazıyorsanız, belge sınıfından türetilen [COleServerDoc](../../mfc/reference/coleserverdoc-class.md). `COleLinkingDoc`ve `COleServerDoc` türetilmiş `COleDocument`, kullanılabilir tüm hizmetleri bu sınıfların devralmak için `COleDocument` ve **CDocument**.  
+ Basit kapsayıcı uygulama yazıyorsanız, belge sınıfından türetilen `COleDocument`. Kendi belgeleri tarafından bulunan katıştırılmış öğeleri bağlantılandırma destekleyen bir kapsayıcı uygulama yazıyorsanız, belge sınıfından türetilen [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md). Bir sunucu uygulaması veya birleşimi kapsayıcı/sunucu yazıyorsanız, belge sınıfından türetilen [COleServerDoc](../../mfc/reference/coleserverdoc-class.md). `COleLinkingDoc` ve `COleServerDoc` türetilmiş `COleDocument`, kullanılabilir tüm hizmetleri bu sınıfların devralmak için `COleDocument` ve **CDocument**.  
   
  Kullanılacak `COleDocument`, buradan bir sınıf türetin ve uygulamanın OLE dışı veri yanı sıra katıştırılmış veya bağlı öğeleri yönetmek için işlevselliği ekleyin. Tanımlarsanız `CDocItem`-türetilmiş uygulamanın yerel verileri depolamak için sınıflar tarafından tanımlanan varsayılan uygulaması kullanabileceğiniz `COleDocument` , OLE ve OLE dışı verilerinizi depolamak için. OLE dışı verilerinizden ayrı olarak OLE öğeleri depolamak için kendi veri yapılarını de tasarlayabilirsiniz. Daha fazla bilgi için bkz: [kapsayıcılar: bileşik dosyaları](../../mfc/containers-compound-files.md)...  
   
- **CDocument** posta desteği (MAPI) varsa, belgenizi posta aracılığıyla göndermeyi destekler. `COleDocument`güncelleştirilmiş [OnFileSendMail](#onfilesendmail) bileşik belgeler düzgün işlenecek. Daha fazla bilgi için makalelere bakın [MAPI](../../mfc/mapi.md) ve [MFC içinde MAPI desteği](../../mfc/mapi-support-in-mfc.md)...  
+ **CDocument** posta desteği (MAPI) varsa, belgenizi posta aracılığıyla göndermeyi destekler. `COleDocument` güncelleştirilmiş [OnFileSendMail](#onfilesendmail) bileşik belgeler düzgün işlenecek. Daha fazla bilgi için makalelere bakın [MAPI](../../mfc/mapi.md) ve [MFC içinde MAPI desteği](../../mfc/mapi-support-in-mfc.md)...  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -145,7 +140,7 @@ class COleDocument : public CDocument
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxole.h  
   
-##  <a name="additem"></a>COleDocument::AddItem  
+##  <a name="additem"></a>  COleDocument::AddItem  
  Belgeye bir öğe eklemek için bu işlevini çağırın.  
   
 ```  
@@ -159,7 +154,7 @@ virtual void AddItem(CDocItem* pItem);
 ### <a name="remarks"></a>Açıklamalar  
  Çağrılır olduğunda bu işlev açıkça çağırın gerekmez `COleClientItem` veya `COleServerItem` bir belge için bir işaretçi kabul Oluşturucusu.  
   
-##  <a name="applyprintdevice"></a>COleDocument::ApplyPrintDevice  
+##  <a name="applyprintdevice"></a>  COleDocument::ApplyPrintDevice  
  Tüm katıştırılmış Hedefi Yazdır aygıtı değiştirmek için bu işlevi çağırmak [COleClientItem](../../mfc/reference/coleclientitem-class.md) uygulamanızın kapsayıcı belge öğeleri.  
   
 ```  
@@ -186,14 +181,14 @@ BOOL ApplyPrintDevice(const PRINTDLG* ppd);
   
  Daha fazla bilgi için bkz: [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) Windows SDK'sındaki yapısı.  
   
-##  <a name="coledocument"></a>COleDocument::COleDocument  
+##  <a name="coledocument"></a>  COleDocument::COleDocument  
  Oluşturan bir `COleDocument` nesnesi.  
   
 ```  
 COleDocument();
 ```  
   
-##  <a name="enablecompoundfile"></a>COleDocument::EnableCompoundFile  
+##  <a name="enablecompoundfile"></a>  COleDocument::EnableCompoundFile  
  Bileşik dosya biçimini kullanarak belgeyi saklamak isterseniz bu işlevini çağırın.  
   
 ```  
@@ -211,7 +206,7 @@ void EnableCompoundFile(BOOL bEnable = TRUE);
   
  Bileşik dosya desteği etkin veya devre dışı bir belge için sonra ayarı belgenin ömrü boyunca değiştirilmemelidir.  
   
-##  <a name="getinplaceactiveitem"></a>COleDocument::GetInPlaceActiveItem  
+##  <a name="getinplaceactiveitem"></a>  COleDocument::GetInPlaceActiveItem  
  OLE almak için bu işlevi öğesi çağrısı tarafından tanımlanan görünüm içeren çerçeve penceresi yerinde şu anda etkinleştirilirse `pWnd`.  
   
 ```  
@@ -225,7 +220,7 @@ virtual COleClientItem* GetInPlaceActiveItem(CWnd* pWnd);
 ### <a name="return-value"></a>Dönüş Değeri  
  Tek, yerinde etkin OLE öğesi için bir işaretçi; **NULL** olup olmadığını OLE öğe şu anda "yerinde etkin" durumunda.  
   
-##  <a name="getnextclientitem"></a>COleDocument::GetNextClientItem  
+##  <a name="getnextclientitem"></a>  COleDocument::GetNextClientItem  
  Art arda belgenize istemci öğelerin her birini erişmek için bu işlevini çağırın.  
   
 ```  
@@ -245,7 +240,7 @@ COleClientItem* GetNextClientItem(POSITION& pos) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#1](../../mfc/codesnippet/cpp/coledocument-class_1.cpp)]  
   
-##  <a name="getnextitem"></a>COleDocument::GetNextItem  
+##  <a name="getnextitem"></a>  COleDocument::GetNextItem  
  Art arda belgenize öğelerin her birini erişmek için bu işlevini çağırın.  
   
 ```  
@@ -265,7 +260,7 @@ virtual CDocItem* GetNextItem(POSITION& pos) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#2](../../mfc/codesnippet/cpp/coledocument-class_2.cpp)]  
   
-##  <a name="getnextserveritem"></a>COleDocument::GetNextServerItem  
+##  <a name="getnextserveritem"></a>  COleDocument::GetNextServerItem  
  Art arda belgenize sunucu öğelerin her birini erişmek için bu işlevini çağırın.  
   
 ```  
@@ -285,7 +280,7 @@ COleServerItem* GetNextServerItem(POSITION& pos) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleServer#2](../../mfc/codesnippet/cpp/coledocument-class_3.cpp)]  
   
-##  <a name="getprimaryselecteditem"></a>COleDocument::GetPrimarySelectedItem  
+##  <a name="getprimaryselecteditem"></a>  COleDocument::GetPrimarySelectedItem  
  Belirtilen görünüm şu anda seçili OLE öğesinde almak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -302,7 +297,7 @@ virtual COleClientItem* GetPrimarySelectedItem(CView* pView);
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama kapsanan OLE listesini tek bir seçili öğe için öğeleri arar ve bir işaretçi kendisine döndürür. Seçilen öğe yok veya olup olmadığını seçili birden fazla öğesi, işlevi döndürür **NULL**. Geçersiz kılmanız gerekir `CView::IsSelected` çalışması bu işlev için Görünüm sınıfınızda üye işlevi. Kapsanan OLE öğeleri depolama kendi yöntemi varsa, bu işlev geçersiz kılar.  
   
-##  <a name="getstartposition"></a>COleDocument::GetStartPosition  
+##  <a name="getstartposition"></a>  COleDocument::GetStartPosition  
  Belge ilk öğe konumunu almak için bu işlevini çağırın.  
   
 ```  
@@ -315,7 +310,7 @@ virtual POSITION GetStartPosition() const;
 ### <a name="remarks"></a>Açıklamalar  
  Döndürülen değer geçirmek `GetNextItem`, `GetNextClientItem`, veya `GetNextServerItem`.  
   
-##  <a name="hasblankitems"></a>COleDocument::HasBlankItems  
+##  <a name="hasblankitems"></a>  COleDocument::HasBlankItems  
  Belgenin boş bir öğe içerip içermediğini belirlemek için bu işlevini çağırın.  
   
 ```  
@@ -328,7 +323,7 @@ BOOL HasBlankItems() const;
 ### <a name="remarks"></a>Açıklamalar  
  Boş bir öğenin, dikdörtgen boştur biridir.  
   
-##  <a name="oneditchangeicon"></a>COleDocument::OnEditChangeIcon  
+##  <a name="oneditchangeicon"></a>  COleDocument::OnEditChangeIcon  
  OLE Simge Değiştir iletişim kutusu görüntüler ve şu anda seçili OLE öğesi iletişim kutusunda kullanıcının seçtiği simgesini temsil eden simgeyi değiştirir.  
   
 ```  
@@ -336,9 +331,9 @@ afx_msg void OnEditChangeIcon();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `OnEditChangeIcon`oluşturur ve başlatır bir `COleChangeIconDialog` Simge Değiştir iletişim kutusu.  
+ `OnEditChangeIcon` oluşturur ve başlatır bir `COleChangeIconDialog` Simge Değiştir iletişim kutusu.  
   
-##  <a name="oneditconvert"></a>COleDocument::OnEditConvert  
+##  <a name="oneditconvert"></a>  COleDocument::OnEditConvert  
  OLE Dönüştür iletişim kutusu görüntüler ve iletişim kutusunda kullanıcı seçimlerini göre şu anda seçili OLE öğesi etkinleştirir veya dönüştürür.  
   
 ```  
@@ -346,11 +341,11 @@ afx_msg void OnEditConvert();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `OnEditConvert`oluşturur ve başlatır bir `COleConvertDialog` Dönüştür iletişim kutusu.  
+ `OnEditConvert` oluşturur ve başlatır bir `COleConvertDialog` Dönüştür iletişim kutusu.  
   
  Dönüştürme örneği Microsoft Word belgesi WordPad belgesine dönüştürülüyor.  
   
-##  <a name="oneditlinks"></a>COleDocument::OnEditLinks  
+##  <a name="oneditlinks"></a>  COleDocument::OnEditLinks  
  OLE düzenleme/bağlantıları iletişim kutusunu görüntüler.  
   
 ```  
@@ -358,9 +353,9 @@ afx_msg void OnEditLinks();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `OnEditLinks`oluşturur ve başlatır bir `COleLinksDialog` bağlantılı nesneleri değiştirmek kullanıcı sağlayan bağlantıları iletişim kutusu.  
+ `OnEditLinks` oluşturur ve başlatır bir `COleLinksDialog` bağlantılı nesneleri değiştirmek kullanıcı sağlayan bağlantıları iletişim kutusu.  
   
-##  <a name="onfilesendmail"></a>COleDocument::OnFileSendMail  
+##  <a name="onfilesendmail"></a>  COleDocument::OnFileSendMail  
  Yerleşik posta ana bilgisayar üzerinden bir ileti (varsa) belgeyle ek olarak gönderir.  
   
 ```  
@@ -368,13 +363,13 @@ afx_msg void OnFileSendMail();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `OnFileSendMail`çağrıları `OnSaveDocument` (Kaydet) adsız ve değiştirilmiş belgeleri elektronik posta gönderilir geçici bir dosya için seri hale getirilemedi. Belge değiştirilmedi, geçici bir dosya gerekli değildir; özgün gönderilir. `OnFileSendMail`MAPI32 yükler. DLL zaten yüklü.  
+ `OnFileSendMail` çağrıları `OnSaveDocument` (Kaydet) adsız ve değiştirilmiş belgeleri elektronik posta gönderilir geçici bir dosya için seri hale getirilemedi. Belge değiştirilmedi, geçici bir dosya gerekli değildir; özgün gönderilir. `OnFileSendMail` MAPI32 yükler. DLL zaten yüklü.  
   
  Uygulaması aksine `OnFileSendMail` için **CDocument**, bu işlev bileşik dosyalar doğru şekilde işler.  
   
  Daha fazla bilgi için bkz: [MAPI konuları](../../mfc/mapi.md) ve [MFC içinde MAPI desteği](../../mfc/mapi-support-in-mfc.md) makaleleri...  
   
-##  <a name="onshowviews"></a>COleDocument::OnShowViews  
+##  <a name="onshowviews"></a>  COleDocument::OnShowViews  
  Framework durum değişiklikleri belgenin görünürlük sonra bu işlevi çağırır.  
   
 ```  
@@ -388,7 +383,7 @@ virtual void OnShowViews(BOOL bVisible);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev varsayılan sürümü hiçbir şey yapmaz. Uygulamanızı belgenin görünürlük değiştiğinde özel bir işlem gerçekleştirmeniz gerekirse geçersiz kılar.  
   
-##  <a name="onupdateeditchangeicon"></a>COleDocument::OnUpdateEditChangeIcon  
+##  <a name="onupdateeditchangeicon"></a>  COleDocument::OnUpdateEditChangeIcon  
  Düzen menüsünde Simge Değiştir komutu güncelleştirmek için framework tarafından çağrılır.  
   
 ```  
@@ -400,9 +395,9 @@ afx_msg void OnUpdateEditChangeIcon(CCmdUI* pCmdUI);
  Bir işaretçi bir `CCmdUI` yapısı güncelleştirme komutu oluşturulan menü temsil eder. Güncelleştirme işleyicisi çağrılarını **etkinleştirmek** üye işlevini `CCmdUI` aracılığıyla yapısı `pCmdUI` kullanıcı arabirimini güncelleştirmek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `OnUpdateEditChangeIcon`Geçerli bir simge olup olmadığına belgede var bağlı olarak komutun kullanıcı arabirimini güncelleştirir. Bu işlev davranışını değiştirmek için geçersiz kılar.  
+ `OnUpdateEditChangeIcon` Geçerli bir simge olup olmadığına belgede var bağlı olarak komutun kullanıcı arabirimini güncelleştirir. Bu işlev davranışını değiştirmek için geçersiz kılar.  
   
-##  <a name="onupdateeditlinksmenu"></a>COleDocument::OnUpdateEditLinksMenu  
+##  <a name="onupdateeditlinksmenu"></a>  COleDocument::OnUpdateEditLinksMenu  
  Düzen menüsünden Bağlantılar komutunu güncelleştirmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -416,7 +411,7 @@ afx_msg void OnUpdateEditLinksMenu(CCmdUI* pCmdUI);
 ### <a name="remarks"></a>Açıklamalar  
  Belge ilk OLE öğesi ile başlayan `OnUpdateEditLinksMenu` erişen her bir öğe, öğe, bir bağlantı olduğu ve bir bağlantı olması durumunda bağlantılar komutunu etkinleştirir olup olmadığını sınar. Bu işlev davranışını değiştirmek için geçersiz kılar.  
   
-##  <a name="onupdateobjectverbmenu"></a>COleDocument::OnUpdateObjectVerbMenu  
+##  <a name="onupdateobjectverbmenu"></a>  COleDocument::OnUpdateObjectVerbMenu  
  Güncelleştirilecek çerçevesi tarafından çağrılır *ObjectName* Düzen menüsü ve erişilen fiil alt komutunu *ObjectName* komutu, burada *ObjectName* adıdır belgede katıştırılmış OLE nesne.  
   
 ```  
@@ -428,9 +423,9 @@ afx_msg void OnUpdateObjectVerbMenu(CCmdUI* pCmdUI);
  Bir işaretçi bir `CCmdUI` yapısı güncelleştirme komutu oluşturulan menü temsil eder. Güncelleştirme işleyicisi çağrılarını **etkinleştirmek** üye işlevini `CCmdUI` aracılığıyla yapısı `pCmdUI` kullanıcı arabirimini güncelleştirmek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `OnUpdateObjectVerbMenu`güncelleştirmeleri *ObjectName* bağlı olarak desteklemediğini geçerli bir nesne belgede komutunun kullanıcı arabirimi. Bir nesne varsa, *ObjectName* Düzenle menüsündeki etkindir. Bu komutu seçildiğinde fiil alt görüntülenir. Fiili alt düzenleme, Özellikler vb. gibi nesne için kullanılabilen tüm fiil komutlarını içerir. Bu işlev davranışını değiştirmek için geçersiz kılar.  
+ `OnUpdateObjectVerbMenu` güncelleştirmeleri *ObjectName* bağlı olarak desteklemediğini geçerli bir nesne belgede komutunun kullanıcı arabirimi. Bir nesne varsa, *ObjectName* Düzenle menüsündeki etkindir. Bu komutu seçildiğinde fiil alt görüntülenir. Fiili alt düzenleme, Özellikler vb. gibi nesne için kullanılabilen tüm fiil komutlarını içerir. Bu işlev davranışını değiştirmek için geçersiz kılar.  
   
-##  <a name="onupdatepastelinkmenu"></a>COleDocument::OnUpdatePasteLinkMenu  
+##  <a name="onupdatepastelinkmenu"></a>  COleDocument::OnUpdatePasteLinkMenu  
  Bağlantılı bir OLE öğe panodan yapıştırılan olup olmadığını belirlemek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -444,7 +439,7 @@ afx_msg void OnUpdatePasteLinkMenu(CCmdUI* pCmdUI);
 ### <a name="remarks"></a>Açıklamalar  
  Özel Yapıştır menü komutu etkin veya devre dışı olup olmadığını öğesi belgeye veya yapıştırılabilmesi için bağlı olarak.  
   
-##  <a name="onupdatepastemenu"></a>COleDocument::OnUpdatePasteMenu  
+##  <a name="onupdatepastemenu"></a>  COleDocument::OnUpdatePasteMenu  
  Katıştırılmış OLE öğe panodan yapıştırılan olup olmadığını belirlemek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -458,7 +453,7 @@ afx_msg void OnUpdatePasteMenu(CCmdUI* pCmdUI);
 ### <a name="remarks"></a>Açıklamalar  
  Yapıştır menü komutu ve düğmesi etkinleştirilir veya olup öğesi belgeye veya yapıştırılabilmesi için bağlı olarak devre dışı.  
   
-##  <a name="removeitem"></a>COleDocument::RemoveItem  
+##  <a name="removeitem"></a>  COleDocument::RemoveItem  
  Belgeden öğe kaldırmak için bu işlevini çağırın.  
   
 ```  
@@ -472,7 +467,7 @@ virtual void RemoveItem(CDocItem* pItem);
 ### <a name="remarks"></a>Açıklamalar  
  Genellikle bu işlev açıkça çağırın gerekmez; için Yıkıcılar tarafından çağrılan `COleClientItem` ve `COleServerItem`.  
   
-##  <a name="updatemodifiedflag"></a>COleDocument::UpdateModifiedFlag  
+##  <a name="updatemodifiedflag"></a>  COleDocument::UpdateModifiedFlag  
  Belge kapsanan OLE öğeleri değiştirilmişse, değiştirilmiş olarak işaretlemek için bu işlevini çağırın.  
   
 ```  

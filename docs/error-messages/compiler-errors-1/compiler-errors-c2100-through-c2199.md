@@ -1,12 +1,9 @@
 ---
-title: "C2100 ile c2199 arasındaki derleyici hataları | Microsoft Docs"
-ms.custom: 
+title: C2100 ile c2199 arasındaki derleyici hataları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2119
@@ -33,17 +30,15 @@ helpviewer_keywords:
 dev_langs:
 - C++
 ms.assetid: 1ccab076-0954-4386-b959-d3112a6793ae
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a95a5fd1c85089c45e766fe0bc82a3896bdc3bd2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f276776028fde88e4ef1e4559f0dd4db08abfe03
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-errors-c2100-through-c2199"></a>C2100 ile C2199 arasındaki Derleyici Hataları
 

@@ -1,12 +1,9 @@
 ---
-title: "OLE DB Sağlayıcı Şablonu Mimarisi | Microsoft Docs"
-ms.custom: 
+title: OLE DB Sağlayıcı Şablonu Mimarisi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 dev_langs:
 - C++
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - architecture [C++], OLE DB Provider
 - OLE DB provider templates, object model
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 122da4031eff1cacfaf3242000cbd36eb7b75356
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 099f6e3ce4a84baa156dd26d9bff62be8a4936da
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB Sağlayıcı Şablonu Mimarisi
 ## <a name="data-sources-and-sessions"></a>Veri Kaynakları ve Oturumlar  
@@ -55,7 +50,7 @@ ms.lasthandoff: 02/23/2018
   
 |Bileşen|Arabirim|Yorum|  
 |---------------|---------------|-------------|  
-|[Veri kaynağı](../../data/oledb/data-source-object-interfaces.md) ([CDataSource](../../data/oledb/cdatasource-class.md))|[mandatory] **IDBCreateSession**<br /><br /> [zorunlu] **IDBInitialize**<br /><br /> [zorunlu] `IDBProperties`<br /><br /> [zorunlu] `IPersist`<br /><br /> [isteğe bağlı] **IConnectionPointContainer**<br /><br /> [isteğe bağlı] **IDBAsynchStatus**<br /><br /> [isteğe bağlı] **IDBDataSourceAdmin**<br /><br /> [isteğe bağlı] **IDBInfo'yu**<br /><br /> [isteğe bağlı] `IPersistFile`<br /><br /> [isteğe bağlı] **ISupportErrorInfo**|Sağlayıcı ile tüketici arasındaki bağlantı. Nesne, kullanıcı kimliği, parola ve veri kaynağı adı gibi bağlantı özelliklerini belirtmek için kullanılır. Nesne bir veri kaynağı yönetmek için de kullanılabilir (oluşturmak, güncelleştirmek, silmek, tablolar vb.).|  
+|[Veri kaynağı](../../data/oledb/data-source-object-interfaces.md) ([CDataSource](../../data/oledb/cdatasource-class.md))|[zorunlu] **IDBCreateSession**<br /><br /> [zorunlu] **IDBInitialize**<br /><br /> [zorunlu] `IDBProperties`<br /><br /> [zorunlu] `IPersist`<br /><br /> [isteğe bağlı] **IConnectionPointContainer**<br /><br /> [isteğe bağlı] **IDBAsynchStatus**<br /><br /> [isteğe bağlı] **IDBDataSourceAdmin**<br /><br /> [isteğe bağlı] **IDBInfo'yu**<br /><br /> [isteğe bağlı] `IPersistFile`<br /><br /> [isteğe bağlı] **ISupportErrorInfo**|Sağlayıcı ile tüketici arasındaki bağlantı. Nesne, kullanıcı kimliği, parola ve veri kaynağı adı gibi bağlantı özelliklerini belirtmek için kullanılır. Nesne bir veri kaynağı yönetmek için de kullanılabilir (oluşturmak, güncelleştirmek, silmek, tablolar vb.).|  
 |[Oturum](../../data/oledb/session-object-interfaces.md) ([CSession](../../data/oledb/cdataconnection-operator-csession-amp.md))|[zorunlu] **IGetDataSource**<br /><br /> [zorunlu] `IOpenRowset`<br /><br /> [zorunlu] **ISessionProperties**<br /><br /> [isteğe bağlı] **IAlterIndex**<br /><br /> [isteğe bağlı] **IAlterTable**<br /><br /> [isteğe bağlı] **IBindResource**<br /><br /> [isteğe bağlı] **ICreateRow**<br /><br /> [isteğe bağlı] **IDBCreateCommand**<br /><br /> [isteğe bağlı] **IDBSchemaRowset**<br /><br /> [isteğe bağlı] **IIndexDefinition**<br /><br /> [isteğe bağlı] **ISupportErrorInfo**<br /><br /> [isteğe bağlı] **ITableCreation**<br /><br /> [isteğe bağlı] **ITableDefinition**<br /><br /> [isteğe bağlı] **ITableDefinitionWithConstraints**<br /><br /> [isteğe bağlı] **ITransaction**<br /><br /> [isteğe bağlı] **ITransactionJoin'i**<br /><br /> [isteğe bağlı] **ITransactionLocal**<br /><br /> [isteğe bağlı] **ITransactionObject**|Oturum nesnesi bir tüketici ve sağlayıcı arasında tek bir görüşmeyi temsil eder. ODBC biraz benzer **HSTMT** olabilir, fazla eşzamanlı oturum etkin.<br /><br /> Oturum nesnesi için OLE DB işlevselliğini kazanması için birincil bağlantıdır. Komut, işlem veya satır kümesi nesnesi almak için oturum nesnesi gidin.|  
 |[Satır kümesi](../../data/oledb/rowset-object-interfaces.md) ([CRowset](../../data/oledb/crowset-class.md))|[zorunlu] `IAccessor`<br /><br /> [zorunlu] `IColumnsInfo`<br /><br /> [zorunlu] **IConvertType**<br /><br /> [zorunlu] `IRowset`<br /><br /> [zorunlu] `IRowsetInfo`<br /><br /> [isteğe bağlı] **IChapteredRowset**<br /><br /> [isteğe bağlı] **IColumnsInfo2**<br /><br /> [isteğe bağlı] **IColumnsRowset**<br /><br /> [isteğe bağlı] **IConnectionPointContainer**<br /><br /> [isteğe bağlı] **IDBAsynchStatus**<br /><br /> [isteğe bağlı] **IGetRow**<br /><br /> [isteğe bağlı] `IRowsetChange`<br /><br /> [isteğe bağlı] **IRowsetChapterMember**<br /><br /> [isteğe bağlı] **IRowsetCurrentIndex**<br /><br /> [isteğe bağlı] **IRowsetFind**<br /><br /> [isteğe bağlı] **IRowsetIdentity**<br /><br /> [isteğe bağlı] **IRowsetIndex**<br /><br /> [isteğe bağlı] `IRowsetLocate`<br /><br /> [isteğe bağlı] **IRowsetRefresh**<br /><br /> [isteğe bağlı] `IRowsetScroll`<br /><br /> [isteğe bağlı] `IRowsetUpdate`<br /><br /> [isteğe bağlı] **IRowsetView**<br /><br /> [isteğe bağlı] **ISupportErrorInfo**<br /><br /> [isteğe bağlı] **IRowsetBookmark**|Satır kümesi nesnesi, veri kaynağından verileri temsil eder. Nesne, bu verileri ve tüm temel (güncelleştirme, getirme, taşıma ve diğerleri) veriler üzerinde işlemler bağlamaları sorumludur. Her zaman içerir ve verileri işlemek için bir satır kümesi nesnesi var.|  
 |[Komut](../../data/oledb/command-object-interfaces.md) ([CCommand](http://msdn.microsoft.com/en-us/52bef5da-c1a0-4223-b4e6-9e464b6db409))|[zorunlu] `IAccessor`<br /><br /> [zorunlu] `IColumnsInfo`<br /><br /> [zorunlu] `ICommand`<br /><br /> [zorunlu] **ICommandProperties**<br /><br /> [zorunlu] `ICommandText`<br /><br /> [zorunlu] **IConvertType**<br /><br /> [isteğe bağlı] **IColumnsRowset**<br /><br /> [isteğe bağlı] **ICommandPersist**<br /><br /> [isteğe bağlı] **ICommandPrepare**<br /><br /> [isteğe bağlı] `ICommandWithParameters`<br /><br /> [isteğe bağlı] **ISupportErrorInfo**<br /><br /> [isteğe bağlı] **ICommandStream**|Komut nesnesi verileri sorgular gibi işlemleri gerçekleştirir. Parametreli veya parametresiz deyimleri işleyebilir.<br /><br /> Komut nesnesi, parametreler ve çıktı sütunları için bağlamaları işlemekten sorumludur. Bir bağlama bir satır kümesindeki bir sütuna nasıl alınacağını hakkında bilgi içeren bir yapıdır. Sıra, veri türü, uzunluğu ve durumu gibi bilgileri içerir.|  

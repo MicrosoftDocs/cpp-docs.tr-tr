@@ -1,13 +1,10 @@
 ---
-title: "Çerçeve Windows | Microsoft Docs"
-ms.custom: 
+title: Çerçeve Windows | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -24,17 +21,15 @@ helpviewer_keywords:
 - MDI [MFC], frame windows
 - splitter windows [MFC], and frame windows
 ms.assetid: 40677339-8135-4f5e-aba6-3fced3078077
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14dabd345f47b064f78a4e9a3dede834bddeb9d3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 515df19bcc11f7a6706985014fc44bc4ff315f36
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="frame-windows"></a>Çerçeve Pencereleri
 Bir uygulamayı Windows altında çalıştığında, kullanıcı çerçeve pencerelerinde görüntülenen belgeleri ile etkileşim kurar. Belge çerçeve penceresi iki önemli bileşeni vardır: çerçeve ve onu çerçeve içeriği. Belge çerçeve penceresi olabilir bir [tek belge arabirimi](../mfc/sdi-and-mdi.md) (SDI) çerçeve penceresi veya [birden çok belge arabirimi](../mfc/sdi-and-mdi.md) (MDI) alt pencere. Windows kullanıcı etkileşimi çerçeve penceresi ile çoğunu yönetir: taşıma pencerede yeniden boyutlandırma, kapatma ve en aza ve onu en üst düzeye çıkarma. Çerçeve içine içeriği yönetin.  

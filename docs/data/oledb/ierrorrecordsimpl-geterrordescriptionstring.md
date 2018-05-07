@@ -1,12 +1,9 @@
 ---
-title: "Ierrorrecordsımpl::geterrordescriptionstring | Microsoft Docs"
-ms.custom: 
+title: Ierrorrecordsımpl::geterrordescriptionstring | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - GetErrorDescriptionString
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - GetErrorDescriptionString method
 ms.assetid: 8bc71c45-ca9f-4632-bb02-1aa9ed8086c4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b52bfba3313b6d5fe6423f3911bbef6af5253e86
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: f0aea94e3a9f444b15b2f0d8f6ad14fe7543031e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ierrorrecordsimplgeterrordescriptionstring"></a>IErrorRecordsImpl::GetErrorDescriptionString
 Hata açıklama dizesi bir hata kayıttan alır.  

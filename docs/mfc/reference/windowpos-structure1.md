@@ -1,13 +1,10 @@
 ---
 title: WINDOWPOS Structure1 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - WINDOWPOS
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - WINDOWPOS structure [MFC]
 ms.assetid: a4ea7cd9-c4c2-4480-9c55-cbbff72195e1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7db3991a6767e33c73857daf40a977ac5f6f0b85
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d4abd236998f37f0d719f41827d05a17fde56fde
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="windowpos-structure1"></a>WINDOWPOS Structure1
 `WINDOWPOS` Yapısı boyutunu ve konumunu penceresinin hakkında bilgiler içerir.  
@@ -54,7 +49,7 @@ typedef struct tagWINDOWPOS { /* wp */
  *x*  
  Pencerenin sol kenarı konumunu belirtir.  
   
- *y*  
+ *Y*  
  Pencerenin sağ köşesine konumunu belirtir.  
   
  `cx`  
@@ -72,15 +67,15 @@ typedef struct tagWINDOWPOS { /* wp */
   
 - **SWP_HIDEWINDOW** penceresini gizler.  
   
-- `SWP_NOACTIVATE`Pencerenin etkinleştirmez.  
+- `SWP_NOACTIVATE` Pencerenin etkinleştirmez.  
   
 - **SWP_NOCOPYBITS** istemci alanını tüm içeriğini atar. Bu bayrak belirtilmezse, istemci alanını geçerli içeriğini kaydedilir ve pencere boyutu ya da yeniden konumlandırılır sonra istemci alanına kopyalanır.  
   
-- `SWP_NOMOVE`Geçerli konumu korur (yoksayar **x** ve **y** üyeleri).  
+- `SWP_NOMOVE` Geçerli konumu korur (yoksayar **x** ve **y** üyeleri).  
   
 - **SWP_NOOWNERZORDER** sahibi pencerenin sıralamasında Z-değiştirmez.  
   
-- `SWP_NOSIZE`Geçerli boyut korur (yoksayar **cx** ve **cy** üyeleri).  
+- `SWP_NOSIZE` Geçerli boyut korur (yoksayar **cx** ve **cy** üyeleri).  
   
 - **SWP_NOREDRAW** değişiklikleri çizmez.  
   
@@ -88,7 +83,7 @@ typedef struct tagWINDOWPOS { /* wp */
   
 - **SWP_NOSENDCHANGING** gelen alma penceresinin engeller `WM_WINDOWPOSCHANGING` ileti.  
   
-- `SWP_NOZORDER`Geçerli sıralama korur (yoksayar **hwndInsertAfter** üyesi).  
+- `SWP_NOZORDER` Geçerli sıralama korur (yoksayar **hwndInsertAfter** üyesi).  
   
 - **SWP_SHOWWINDOW** pencerede görüntülenir.  
   

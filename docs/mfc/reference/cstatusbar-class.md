@@ -1,12 +1,9 @@
 ---
-title: "CStatusBar sınıfı | Microsoft Docs"
-ms.custom: 
+title: CStatusBar sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CStatusBar
@@ -45,17 +42,15 @@ helpviewer_keywords:
 - CStatusBar [MFC], SetPaneStyle
 - CStatusBar [MFC], SetPaneText
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c373f21762c1bf7f21d2a775453bab74c735891d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 199aa7adc6cb96a4bc92e196ff94d57abdedfede
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cstatusbar-class"></a>CStatusBar sınıfı
 Denetim çubuğu satır metin çıktısı bölmeleri ya da "göstergeleri."  
@@ -96,7 +91,7 @@ class CStatusBar : public CControlBar
 ## <a name="remarks"></a>Açıklamalar  
  Çıkış bölmeleri, ileti satırları ve durum göstergesi olarak yaygın olarak kullanılır. Örnekler seçili menü komutu kısaca açıklayan menü Yardım iletisi satırları ve Kaydırma kilidi, NUM LOCK ve diğer anahtarlar durumunu göster göstergelerini içerir.  
   
- [CStatusBar::GetStatusBarCtrl](#getstatusbarctrl), üye işlevi yeni MFC 4.0 ile Windows ortak denetimin durum çubuğu özelleştirme ve ek işlevsellik için desteğinden olanak tanır. `CStatusBar`Windows ortak denetimleri işlevselliğini çoğunu size üye işlevleri; çağırdığınızda ancak `GetStatusBarCtrl`, durum çubukları Windows 95/98 durum çubuğu özelliklerini daha da verebilirsiniz. Çağırdığınızda `GetStatusBarCtrl`, bir başvuru döndürür bir `CStatusBarCtrl` nesnesi. Bkz: [CStatusBarCtrl](../../mfc/reference/cstatusbarctrl-class.md) Windows ortak denetimleri kullanma araç çubukları tasarlama hakkında daha fazla bilgi için. Ortak Denetimler hakkında daha fazla genel bilgi için bkz: [ortak denetimler](http://msdn.microsoft.com/library/windows/desktop/bb775493) Windows SDK'sındaki.  
+ [CStatusBar::GetStatusBarCtrl](#getstatusbarctrl), üye işlevi yeni MFC 4.0 ile Windows ortak denetimin durum çubuğu özelleştirme ve ek işlevsellik için desteğinden olanak tanır. `CStatusBar` Windows ortak denetimleri işlevselliğini çoğunu size üye işlevleri; çağırdığınızda ancak `GetStatusBarCtrl`, durum çubukları Windows 95/98 durum çubuğu özelliklerini daha da verebilirsiniz. Çağırdığınızda `GetStatusBarCtrl`, bir başvuru döndürür bir `CStatusBarCtrl` nesnesi. Bkz: [CStatusBarCtrl](../../mfc/reference/cstatusbarctrl-class.md) Windows ortak denetimleri kullanma araç çubukları tasarlama hakkında daha fazla bilgi için. Ortak Denetimler hakkında daha fazla genel bilgi için bkz: [ortak denetimler](http://msdn.microsoft.com/library/windows/desktop/bb775493) Windows SDK'sındaki.  
   
  Framework 0 konumunda soldaki göstergesi olan bir dizi göstergesi bilgilerini depolar. Durum çubuğu oluşturduğunuzda, karşılık gelen göstergeleriyle framework ilişkilendirir kimlikleri dizesinin bir dizi kullanın. Ardından, bir gösterge erişmek için bir dize kimliği veya bir dizin kullanabilirsiniz.  
   
@@ -136,7 +131,7 @@ class CStatusBar : public CControlBar
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxext.h  
   
-##  <a name="commandtoindex"></a>CStatusBar::CommandToIndex  
+##  <a name="commandtoindex"></a>  CStatusBar::CommandToIndex  
  Verilen kimliğe ait göstergesi dizinini alır  
   
 ```  
@@ -153,7 +148,7 @@ int CommandToIndex(UINT nIDFind) const;
 ### <a name="remarks"></a>Açıklamalar  
  İlk göstergesi dizini 0'dır.  
   
-##  <a name="create"></a>CStatusBar::Create  
+##  <a name="create"></a>  CStatusBar::Create  
  Bir durum çubuğu (alt pencere) oluşturur ve bunu ile ilişkilendirir `CStatusBar` nesnesi.  
   
 ```  
@@ -170,11 +165,11 @@ virtual BOOL Create(
  `dwStyle`  
  Durum çubuğu stili. Standart Windows yanı sıra [stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles), bu stiller desteklenir.  
   
-- `CBRS_TOP`Denetim çubuğu çerçeve penceresi tepesinde bulunur.  
+- `CBRS_TOP` Denetim çubuğu çerçeve penceresi tepesinde bulunur.  
   
-- `CBRS_BOTTOM`Denetim çubuğu çerçeve penceresinin alt kısmındaki ' dir.  
+- `CBRS_BOTTOM` Denetim çubuğu çerçeve penceresinin alt kısmındaki ' dir.  
   
-- `CBRS_NOALIGN`Üst yeniden boyutlandırıldığında denetim çubuğu yeniden konumlandırılır değil.  
+- `CBRS_NOALIGN` Üst yeniden boyutlandırıldığında denetim çubuğu yeniden konumlandırılır değil.  
   
  `nID`  
  Araç çubuğunun alt pencere kimliği  
@@ -185,7 +180,7 @@ virtual BOOL Create(
 ### <a name="remarks"></a>Açıklamalar  
  Ayrıca, ilk yazı tipini ayarlar ve durumunu ayarlar varsayılan bir değerle çubuğunun yüksekliği.  
   
-##  <a name="createex"></a>CStatusBar::CreateEx  
+##  <a name="createex"></a>  CStatusBar::CreateEx  
  Bir durum çubuğu (alt pencere) oluşturun ve bunu ile ilişkilendirmek için bu işlevi çağırmak `CStatusBar` nesnesi.  
   
 ```  
@@ -223,14 +218,14 @@ virtual BOOL CreateEx(
   
  Kullanım `CreateEx`, yerine [oluşturma](#create), belirli stilleri gömülü durum çubuğu denetimi oluşturma sırasında mevcut olması gerekir. Örneğin, `dwCtrlStyle` için **SBT_TOOLTIPS** bir durum çubuğu nesnesinde araç ipuçları görüntülenecek.  
   
-##  <a name="cstatusbar"></a>CStatusBar::CStatusBar  
+##  <a name="cstatusbar"></a>  CStatusBar::CStatusBar  
  Oluşturan bir `CStatusBar` nesnesi, gerekirse varsayılan durum çubuğu yazı oluşturur ve varsayılan değerleri için yazı tipi özelliklerini ayarlar.  
   
 ```  
 CStatusBar();
 ```  
   
-##  <a name="drawitem"></a>CStatusBar::DrawItem  
+##  <a name="drawitem"></a>  CStatusBar::DrawItem  
  Bu üye işlev sahip tarafından çizilmiş durum çubuğu değişikliklerini visual yönünü zaman çerçevesi tarafından çağrılır.  
   
 ```  
@@ -244,7 +239,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="remarks"></a>Açıklamalar  
  **İtemAction** üyesi `DRAWITEMSTRUCT` yapısı gerçekleştirilecek çizim eylemi tanımlar. Çizim sahibi çizim için uygulamak için bu üye işlevi geçersiz kılma `CStatusBar` nesnesi. Tüm grafik cihaz arabirimi (GDI) nesneleri görüntüleme bağlamı içinde sağlanan için seçilen uygulama kurtarmalısınız `lpDrawItemStruct` bu üye işlevinin sona ermeden önce.  
   
-##  <a name="getitemid"></a>CStatusBar::GetItemID  
+##  <a name="getitemid"></a>  CStatusBar::GetItemID  
  Tarafından belirtilen göstergesi Kimliğini döndürür `nIndex`.  
   
 ```  
@@ -258,7 +253,7 @@ UINT GetItemID(int nIndex) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Tarafından belirtilen göstergesi Kimliğini `nIndex`.  
   
-##  <a name="getitemrect"></a>CStatusBar::GetItemRect  
+##  <a name="getitemrect"></a>  CStatusBar::GetItemRect  
  Tarafından belirtilen göstergesi koordinatlarını kopyalar `nIndex` gösterdiği yapıda `lpRect`.  
   
 ```  
@@ -277,7 +272,7 @@ void GetItemRect(
 ### <a name="remarks"></a>Açıklamalar  
  Durum çubuğu sol üst köşesindeki göreli piksel cinsinden koordinatlar belirlenir.  
   
-##  <a name="getpaneinfo"></a>CStatusBar::GetPaneInfo  
+##  <a name="getpaneinfo"></a>  CStatusBar::GetPaneInfo  
  Ayarlar `nID`, `nStyle`, ve `cxWidth` kimliği, stil ve genişlik tarafından belirtilen konumda göstergesi bölmesinin `nIndex`.  
   
 ```  
@@ -301,7 +296,7 @@ void GetPaneInfo(
  `cxWidth`  
  Bölmesinin genişliğini ayarlamak tamsayı başvuru.  
   
-##  <a name="getpanestyle"></a>CStatusBar::GetPaneStyle  
+##  <a name="getpanestyle"></a>  CStatusBar::GetPaneStyle  
  Durum çubuğu bölmesinin stilini almak için bu üye işlevini çağırın.  
   
 ```  
@@ -320,7 +315,7 @@ UINT GetPaneStyle(int nIndex) const;
   
  Durum çubukları stilleri listesi için bkz: [oluşturma](#create).  
   
-##  <a name="getpanetext"></a>CStatusBar::GetPaneText  
+##  <a name="getpanetext"></a>  CStatusBar::GetPaneText  
  Durum çubuğu bölmesinde görüntülenen metni almak için bu üye işlevini çağırın.  
   
 ```  
@@ -340,7 +335,7 @@ CString GetPaneText(int nIndex) const;  void GetPaneText(int nIndex, CString& rS
 ### <a name="remarks"></a>Açıklamalar  
  Bu üyenin ikinci formun işlev dolgular bir `CString` dize metin içeren nesne.  
   
-##  <a name="getstatusbarctrl"></a>CStatusBar::GetStatusBarCtrl  
+##  <a name="getstatusbarctrl"></a>  CStatusBar::GetStatusBarCtrl  
  Bu üye işlevi temel ortak denetimi doğrudan erişim sağlar.  
   
 ```  
@@ -355,7 +350,7 @@ CStatusBarCtrl& GetStatusBarCtrl() const;
   
  Ortak Denetimler hakkında daha fazla genel bilgi için bkz: [ortak denetimler](http://msdn.microsoft.com/library/windows/desktop/bb775493) Windows SDK'sındaki.  
   
-##  <a name="setindicators"></a>CStatusBar::SetIndicators  
+##  <a name="setindicators"></a>  CStatusBar::SetIndicators  
  Dizi karşılık gelen öğesi tarafından belirtilen değere her göstergenin Kimliğini ayarlar `lpIDArray`, her kimliği tarafından belirtilen dize kaynağı yükler ve göstergenin metin dizesi olarak ayarlar.  
   
 ```  
@@ -374,7 +369,7 @@ BOOL SetIndicators(
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="setpaneinfo"></a>CStatusBar::SetPaneInfo  
+##  <a name="setpaneinfo"></a>  CStatusBar::SetPaneInfo  
  Belirtilen gösterge bölmesinde yeni bir kimliği, stil ve genişlik ayarlar.  
   
 ```  
@@ -411,7 +406,7 @@ void SetPaneInfo(
   
 - **SBPS_NORMAL** esnetme, kenarlık veya açılır.  
   
-##  <a name="setpanestyle"></a>CStatusBar::SetPaneStyle  
+##  <a name="setpanestyle"></a>  CStatusBar::SetPaneStyle  
  Durum çubuğu bölmesinin stilini ayarlamak için bu üye işlevini çağırın.  
   
 ```  
@@ -432,7 +427,7 @@ void SetPaneStyle(
   
  Durum çubukları stilleri listesi için bkz: [SetPaneInfo](#setpaneinfo).  
   
-##  <a name="setpanetext"></a>CStatusBar::SetPaneText  
+##  <a name="setpanetext"></a>  CStatusBar::SetPaneText  
  Gösterdiği dizeye bölmesinde metnini ayarlamak için bu üye işlevini çağırın `lpszNewText`.  
   
 ```  

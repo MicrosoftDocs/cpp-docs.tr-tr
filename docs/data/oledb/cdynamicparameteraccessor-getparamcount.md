@@ -1,12 +1,9 @@
 ---
 title: CDynamicParameterAccessor::GetParamCount | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL::CDynamicParameterAccessor::GetParamCount
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - GetParamCount method
 ms.assetid: 2a9bb734-a90c-4f89-aef6-8cbb41fce814
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 28f4172bd644bc87b7f661816e91befef14da4d6
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: c28c9fca1df41c0f3e1f3a5c49da3b5b6e9368e8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdynamicparameteraccessorgetparamcount"></a>CDynamicParameterAccessor::GetParamCount
 Arabellekte saklanan parametreleri sayısını alır.  

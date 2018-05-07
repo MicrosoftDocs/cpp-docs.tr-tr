@@ -2,11 +2,8 @@
 title: binary_negate (STL/CLR) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::binary_negate
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - binary_negate function [STL/CLR]
 ms.assetid: 0c3b47eb-0f37-4cb2-b879-4c9f0e57d275
-caps.latest.revision: 16
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 3780c89c178c0c71f3388d2bd846ed7d52af3ceb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f78f7ab24fdaf48205fc899031c396a2d8e3947e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="binarynegate-stlclr"></a>binary_negate (STL/CLR)
 Şablon sınıfı bir functor açıklar, çağrıldığında, mantıksal döndürür, depolanan iki bağımsız değişken functor örneği değil. Kullandığınız depolanan functor bakımından işlevi nesnesi belirtin.  

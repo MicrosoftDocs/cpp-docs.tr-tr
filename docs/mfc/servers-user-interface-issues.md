@@ -1,13 +1,10 @@
 ---
-title: "Sunucular: Kullanıcı arabirimi sorunları | Microsoft Docs"
-ms.custom: 
+title: 'Sunucular: Kullanıcı arabirimi sorunları | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - servers, user-interface issues
 - user interface issues
 ms.assetid: 7ef55702-b439-43fa-8ced-c69b96239a89
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8ea7130770f88c377aa7f332ac60bb244b66f96
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 18382d305c8128a70e17651de913f38303286885
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="servers-user-interface-issues"></a>Sunucular: Kullanıcı Arabirimi Sorunları
 Bir sunucu uygulaması çok sayıda OLE kapsayıcı uygulamaları öğelerine sağlamak için kullanıcı arabirimi eklenmeli özelliği vardır. Menüleri ve bir sunucu uygulaması eklenmesi gereken ek kaynakları hakkında daha fazla bilgi için bkz: [menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md).  

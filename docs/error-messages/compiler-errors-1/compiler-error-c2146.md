@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2146 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2146 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2146
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2146
 ms.assetid: 6bfb7de6-6723-4486-9350-c66ef88d7a64
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7da8021cabb5eab31ae12912374268ee4d7d24b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 73367284a8c13316d344a4cff87ccae4ee7c832d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2146"></a>Derleyici Hatası C2146
 sözdizimi hatası: 'tanımlayıcısı 'tanımlayıcısı' önce belirteci' eksik  

@@ -1,13 +1,10 @@
 ---
 title: Ortak denetimlerden bildirim alma | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - ON_NOTIFY
 - WM_NOTIFY
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - Windows common controls [MFC], notifications
 - WM_NOTIFY message
 ms.assetid: 50194592-d60d-44d0-8ab3-338a2a2c63e7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58131874ed039378a312acaaa238388f335f8e71
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 30e89c8d25d78477ed98bae0fd06a704e32d3906
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="receiving-notification-from-common-controls"></a>Ortak Denetimlerden Bildirim Alma
 Ortak Denetimler, denetimi, kullanıcı girişi gibi olaylar meydana geldiğinde, ana pencereyi bildirim iletilerini göndermek alt öğe pencerelerini ' dir.  
@@ -48,7 +43,7 @@ Ortak Denetimler, denetimi, kullanıcı girişi gibi olaylar meydana geldiğinde
  Bunu çağırarak gerçekleştirmek için basit bir yolu yoktur `CWnd::GetCurrentMessage`. Ancak, bu yöntem yalnızca iletinin gönderildiği aynı anda imleç konumu alır. Çağırmanız gerekir ileti gönderildiğinde bu yana imleci taşınmış olabilir çünkü **CWnd::GetCursorPos** geçerli imleç konumu alınamıyor.  
   
 > [!NOTE]
->  `CWnd::GetCurrentMessage`yalnızca içinde bir ileti işleyicisini çağrılmalıdır.  
+>  `CWnd::GetCurrentMessage` yalnızca içinde bir ileti işleyicisini çağrılmalıdır.  
   
  Bildirim ileti işleyicisi gövdesi için aşağıdaki kodu ekleyin (Bu örnekte, **nm_rclıck**):  
   

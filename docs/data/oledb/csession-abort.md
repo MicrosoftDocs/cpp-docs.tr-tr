@@ -1,12 +1,9 @@
 ---
 title: CSession::Abort | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CSession.Abort
@@ -18,18 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - Abort method
 ms.assetid: 02413b20-c486-451f-b4d7-73a6e8065df8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: bfaef7dae1472e8d49bfe70afc99d285e86a8294
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 8b4789db8497f314c19eb531327f4b712f37fc5e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="csessionabort"></a>CSession::Abort
 İşlem sona erer.  

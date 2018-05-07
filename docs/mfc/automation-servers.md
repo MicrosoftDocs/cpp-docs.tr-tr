@@ -1,13 +1,10 @@
 ---
-title: "Otomasyon sunucuları | Microsoft Docs"
-ms.custom: 
+title: Otomasyon sunucuları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - dispatch maps [MFC], Automation servers
 - servers, Automation
 ms.assetid: 523fd155-51ce-4f91-b986-b74bdbdd7d92
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a33cf8113825804ac831b518e371c4150f2620ad
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 337d5a1ec25e8fc80cf867aecef0452b1d03fb2b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="automation-servers"></a>Otomasyon Sunucuları
 Otomasyon nesneleri başka bir uygulamaya uygulanan işlemek için ya da bunlar işlenebilir nesnelerini ortaya çıkarmak için uygulamanız için mümkün kılar. Otomasyon sunucusu (Otomasyon nesneleri olarak adlandırılır) programlanabilir nesneleri başka uygulamalar için kullanıma sunan bir uygulamasıdır (adlı [Otomasyon istemcileri](../mfc/automation-clients.md)). Otomasyon sunucuları bazen Otomasyon bileşenleri olarak adlandırılır.  
@@ -40,7 +35,7 @@ Otomasyon nesneleri başka bir uygulamaya uygulanan işlemek için ya da bunlar 
   
  Uygulama işlevselliği ortak, iyi tanımlanmış bir arabirim aracılığıyla göstererek Otomasyonu, bir tek genel programlama dilinde yerine Microsoft Visual Basic gibi çeşitli, uygulamaya özgü makrosu uygulamalarda derleme mümkün kılar Diller.  
   
-##  <a name="_core_support_for_automation_servers"></a>Otomasyon sunucuları desteği  
+##  <a name="_core_support_for_automation_servers"></a> Otomasyon sunucuları desteği  
  Visual C++ ve MFC çerçevesi otomasyon sunucuları için kapsamlı destek sağlar. Uygulamanın işlevselliğini çabalarınız odaklanabilirsiniz bir Otomasyon sunucusu yaparken söz konusu yükünü çoğunu işleyin.  
   
  Otomasyon desteklemek için framework'ün asıl gönderme eşlemesi, bildirimler ve yöntemleri ve özellikleri için OLE kullanıma sunmak için gereken çağrıları genişler makroları birtakım mekanizmadır. Tipik gönderme harita şöyle görünür:  

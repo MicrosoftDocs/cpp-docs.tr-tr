@@ -2,11 +2,8 @@
 title: auto_gcroot::operator! | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr.auto_gcroot.operator!
@@ -18,18 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - auto_gcroot::operator!
 ms.assetid: f9728be3-2e09-4c01-a594-43e0d59d40d3
-caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 525c03560d636ec8c16c26392a241f4826b31cda
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 107ac80f84d949a96132a4fc05c90ad7a7e20fbc
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="autogcrootoperator"></a>auto_gcroot::operator!
 Kullanarak işleci `auto_gcroot` koşullu bir ifadede.  
@@ -41,7 +36,7 @@ bool operator!() const;
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true`Sarmalanan nesnesi geçersiz `false` Aksi takdirde.  
+ `true` Sarmalanan nesnesi geçersiz `false` Aksi takdirde.  
   
 ## <a name="example"></a>Örnek  
   

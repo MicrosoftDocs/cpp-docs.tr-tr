@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2261 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2261 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2261
@@ -15,24 +12,22 @@ dev_langs:
 helpviewer_keywords:
 - C2261
 ms.assetid: 60969482-9e83-49b5-9631-a04bc844da12
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3907a1d270de11af82462815ce87398e10c50513
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 45050daf3149cd813fb23b5814be5fe49c375f03
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2261"></a>Derleyici Hatası C2261
 'string': derleme başvurusu geçerli değil ve çözümlenemedi  
   
  Bir değeri geçerli değil.  
   
- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>bir derlemeyi belirtmek için kullanılır. Örneğin, a.dll b.dll arkadaş derleme olarak belirtmek isterse, (a.dll içinde) belirtmeniz gerekir: InternalsVisibleTo("b"). Çalışma zamanı sonra her şeyi a.dll (dışında özel türleri) erişmek b.dll sağlar.  
+ <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> bir derlemeyi belirtmek için kullanılır. Örneğin, a.dll b.dll arkadaş derleme olarak belirtmek isterse, (a.dll içinde) belirtmeniz gerekir: InternalsVisibleTo("b"). Çalışma zamanı sonra her şeyi a.dll (dışında özel türleri) erişmek b.dll sağlar.  
   
  Arkadaş derlemeleri belirtirken doğru sözdizimi hakkında daha fazla bilgi için bkz: [arkadaş derlemeler (C++)](../../dotnet/friend-assemblies-cpp.md).  
   

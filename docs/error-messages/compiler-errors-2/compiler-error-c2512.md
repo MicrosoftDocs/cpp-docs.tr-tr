@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2512 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2512 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/09/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2512
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2512
 ms.assetid: 15206da9-1164-451a-b869-280e00711aad
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57dbb542eee7e893253e6c3bdd3410c605a8d2db
-ms.sourcegitcommit: 8ae12a602244a5853e941e5e8806e3545d876844
+ms.openlocfilehash: 286be19ca407039a77d51503a34c7a27da1c3d5b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2512"></a>Derleyici Hatası C2512
 

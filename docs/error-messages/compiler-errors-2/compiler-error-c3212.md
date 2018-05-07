@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C3212 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3212 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3212
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3212
 ms.assetid: 9e271bb6-a51f-4b96-b26b-9f4ca28fca0a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: afb2cf5d3d3a4e59a817bdbe1a844cce9f4f10ba
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a3205873a4dfe0eae7284698d310a9c5fb5f474b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3212"></a>Derleyici Hatası C3212
 'uzmanlık': bir şablon üyesi açık alt uzmanlaşması açık uzmanlık üyesi olması gerekir  

@@ -1,12 +1,9 @@
 ---
 title: CStreamRowset::Close | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CStreamRowset<TAccessor>.Close
@@ -22,18 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - Close method
 ms.assetid: 629b441d-978d-408c-8ef5-3a48125d8059
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8e9f3ad16a07e8088f2d172ea74b5e2c8c19cb95
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 711276639aed7961675025ae7ab42441808cc95b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cstreamrowsetclose"></a>CStreamRowset::Close
 Sürümler [ISequentialStream](https://msdn.microsoft.com/en-us/library/ms718035.aspx) sınıfında arabirim işaretçisi.  

@@ -1,12 +1,9 @@
 ---
-title: "CBrush sınıfı | Microsoft Docs"
-ms.custom: 
+title: CBrush sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CBrush
@@ -33,17 +30,15 @@ helpviewer_keywords:
 - CBrush [MFC], FromHandle
 - CBrush [MFC], GetLogBrush
 ms.assetid: e5ef2c62-dd95-4973-9090-f52f605900e1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2c60be4501e14c1a3b55789905be1fb6e753731
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 39c5167c81d6c44fa62f9bff87c6c04f73f9f6d5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cbrush-class"></a>CBrush sınıfı
 Bir Windows grafik cihaz arabirimi (GDI) fırça yalıtır.  
@@ -98,7 +93,7 @@ class CBrush : public CGdiObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="cbrush"></a>CBrush::CBrush  
+##  <a name="cbrush"></a>  CBrush::CBrush  
  Oluşturan bir `CBrush` nesnesi.  
   
 ```  
@@ -115,23 +110,23 @@ explicit CBrush(CBitmap* pBitmap);
  `nIndex`  
  Fırça tarama stilini belirtir. Aşağıdaki değerlerden biri olabilir:  
   
-- `HS_BDIAGONAL`Aşağı tarama 45 derecede (soldan sağa)  
+- `HS_BDIAGONAL` Aşağı tarama 45 derecede (soldan sağa)  
   
-- `HS_CROSS`Yatay ve dikey bir çapraz tarama  
+- `HS_CROSS` Yatay ve dikey bir çapraz tarama  
   
-- `HS_DIAGCROSS`45 derecede çapraz tarama  
+- `HS_DIAGCROSS` 45 derecede çapraz tarama  
   
-- `HS_FDIAGONAL`45 derecede yukarı tarama (soldan sağa)  
+- `HS_FDIAGONAL` 45 derecede yukarı tarama (soldan sağa)  
   
-- `HS_HORIZONTAL`Yatay tarama  
+- `HS_HORIZONTAL` Yatay tarama  
   
-- `HS_VERTICAL`Dikey tarama  
+- `HS_VERTICAL` Dikey tarama  
   
  `pBitmap`  
  İşaret eden bir `CBitmap` ile fırça boyar bir bit eşlem belirtir nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CBrush`Oluşturucular dört aşırı yüklü. Oluşturucu bağımsız değişken içermeyen bir başlatılmamış yapıları `CBrush` nesnesi, kullanılmadan önce başlatılması gerekir.  
+ `CBrush` Oluşturucular dört aşırı yüklü. Oluşturucu bağımsız değişken içermeyen bir başlatılmamış yapıları `CBrush` nesnesi, kullanılmadan önce başlatılması gerekir.  
   
  Bağımsız değişkenler olmadan Oluşturucusu kullanırsanız, sonuç başlatmalıdır `CBrush` nesnesi ile [CreateSolidBrush](#createsolidbrush), [CreateHatchBrush](#createhatchbrush), [CreateBrushIndirect](#createbrushindirect), [CreatePatternBrush](#createpatternbrush), veya [CreateDIBPatternBrush](#createdibpatternbrush). Bağımsız değişken almayan oluşturucular birini kullanırsanız, daha sonra başka başlatma gereklidir. Bağımsız değişken içermeyen Oluşturucusu her zaman başarılı olur ancak, bir hatayla karşılaşılmazsa oluşturucular bağımsız değişkenlere sahip bir özel durum.  
   
@@ -144,7 +139,7 @@ explicit CBrush(CBitmap* pBitmap);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#21](../../mfc/codesnippet/cpp/cbrush-class_1.cpp)]  
   
-##  <a name="createbrushindirect"></a>CBrush::CreateBrushIndirect  
+##  <a name="createbrushindirect"></a>  CBrush::CreateBrushIndirect  
  Fırça stil, renk ve belirtilen desen ile başlatır bir [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) yapısı.  
   
 ```  
@@ -166,7 +161,7 @@ BOOL CreateBrushIndirect(const LOGBRUSH* lpLogBrush);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#22](../../mfc/codesnippet/cpp/cbrush-class_2.cpp)]  
   
-##  <a name="createdibpatternbrush"></a>CBrush::CreateDIBPatternBrush  
+##  <a name="createdibpatternbrush"></a>  CBrush::CreateDIBPatternBrush  
  CİHAZDAN bağımsız bit eşlem (DIB) tarafından belirtilen desen ile fırça başlatır.  
   
 ```  
@@ -221,7 +216,7 @@ BOOL CreateDIBPatternBrush(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#23](../../mfc/codesnippet/cpp/cbrush-class_3.cpp)]  
   
-##  <a name="createhatchbrush"></a>CBrush::CreateHatchBrush  
+##  <a name="createhatchbrush"></a>  CBrush::CreateHatchBrush  
  Fırça belirtilen taranmış desen ve renk ile başlatır.  
   
 ```  
@@ -234,17 +229,17 @@ BOOL CreateHatchBrush(
  `nIndex`  
  Fırça tarama stilini belirtir. Aşağıdaki değerlerden biri olabilir:  
   
-- `HS_BDIAGONAL`Aşağı tarama 45 derecede (soldan sağa)  
+- `HS_BDIAGONAL` Aşağı tarama 45 derecede (soldan sağa)  
   
-- `HS_CROSS`Yatay ve dikey bir çapraz tarama  
+- `HS_CROSS` Yatay ve dikey bir çapraz tarama  
   
-- `HS_DIAGCROSS`45 derecede çapraz tarama  
+- `HS_DIAGCROSS` 45 derecede çapraz tarama  
   
-- `HS_FDIAGONAL`45 derecede yukarı tarama (soldan sağa)  
+- `HS_FDIAGONAL` 45 derecede yukarı tarama (soldan sağa)  
   
-- `HS_HORIZONTAL`Yatay tarama  
+- `HS_HORIZONTAL` Yatay tarama  
   
-- `HS_VERTICAL`Dikey tarama  
+- `HS_VERTICAL` Dikey tarama  
   
  `crColor`  
  Bir RGB rengi (tarama rengi) fırça ön plan rengini belirtir. Bkz: [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) daha fazla bilgi için Windows SDK'sındaki.  
@@ -258,7 +253,7 @@ BOOL CreateHatchBrush(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#24](../../mfc/codesnippet/cpp/cbrush-class_4.cpp)]  
   
-##  <a name="createpatternbrush"></a>CBrush::CreatePatternBrush  
+##  <a name="createpatternbrush"></a>  CBrush::CreatePatternBrush  
  Bir bit eşlem tarafından belirtilen desenle fırça başlatır.  
   
 ```  
@@ -286,7 +281,7 @@ BOOL CreatePatternBrush(CBitmap* pBitmap);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#25](../../mfc/codesnippet/cpp/cbrush-class_5.cpp)]  
   
-##  <a name="createsolidbrush"></a>CBrush::CreateSolidBrush  
+##  <a name="createsolidbrush"></a>  CBrush::CreateSolidBrush  
  Belirtilen bir düz renk ile fırça başlatır.  
   
 ```  
@@ -308,7 +303,7 @@ BOOL CreateSolidBrush(COLORREF crColor);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CBrush::CBrush](#cbrush).  
   
-##  <a name="createsyscolorbrush"></a>CBrush::CreateSysColorBrush  
+##  <a name="createsyscolorbrush"></a>  CBrush::CreateSysColorBrush  
  Fırça Rengi başlatır.  
   
 ```  
@@ -330,7 +325,7 @@ BOOL CreateSysColorBrush(int nIndex);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#26](../../mfc/codesnippet/cpp/cbrush-class_6.cpp)]  
   
-##  <a name="fromhandle"></a>CBrush::FromHandle  
+##  <a name="fromhandle"></a>  CBrush::FromHandle  
  Bir işaretçi döndüren bir `CBrush` nesnesi tanıtıcı Windows verildiğinde [HBRUSH](#operator_hbrush) nesnesi.  
   
 ```  
@@ -339,7 +334,7 @@ static CBrush* PASCAL FromHandle(HBRUSH hBrush);
   
 ### <a name="parameters"></a>Parametreler  
  `hBrush`  
- `HANDLE`bir Windows GDI fırça.  
+ `HANDLE` bir Windows GDI fırça.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi bir `CBrush` nesne başarılı; Aksi takdirde **NULL**.  
@@ -352,7 +347,7 @@ static CBrush* PASCAL FromHandle(HBRUSH hBrush);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CBrush::CBrush](#cbrush).  
   
-##  <a name="getlogbrush"></a>CBrush::GetLogBrush  
+##  <a name="getlogbrush"></a>  CBrush::GetLogBrush  
  Almak için bu üye işlevini çağırın `LOGBRUSH` yapısı.  
   
 ```  
@@ -378,7 +373,7 @@ int GetLogBrush(LOGBRUSH* pLogBrush);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#27](../../mfc/codesnippet/cpp/cbrush-class_7.cpp)]  
   
-##  <a name="operator_hbrush"></a>CBrush::operator HBRUSH  
+##  <a name="operator_hbrush"></a>  CBrush::operator HBRUSH  
  Ekli Windows GDI işleyicisini almak için bu işleci kullanın `CBrush` nesnesi.  
   
 ```  

@@ -1,13 +1,10 @@
 ---
-title: "Veritabanı makroları ve genel öğeleri | Microsoft Docs"
-ms.custom: 
+title: Veritabanı makroları ve genel öğeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - AFXDB/AFX_ODBC_CALL
 - AFXDB/AFX_SQL_ASYNC
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - global functions [MFC], database functions
 - macros [MFC], MFC database
 ms.assetid: 5b9b9e61-1cf9-4345-9f29-3807dd466488
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f43135678c54ed2f837934c19a8543c86a65fdb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bcafff20ad79f68f2bb5d4195c38603da63b9d17
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="database-macros-and-globals"></a>Veritabanı Makroları ve Genel Öğeleri
 Makrolar ve genel öğeleri aşağıda listelenen ODBC tabanlı veritabanı uygulamaları için geçerlidir. DAO tabanlı uygulamalarla kullanılmaz.  
@@ -43,7 +38,7 @@ Makrolar ve genel öğeleri aşağıda listelenen ODBC tabanlı veritabanı uygu
   
 |||  
 |-|-|  
-|[AFX_ODBC_CALL](#afx_odbc_call)|Döndüren bir ODBC API işlev çağrılarını `SQL_STILL_EXECUTING`. `AFX_ODBC_CALL`Art arda işlevi kadar artık döndürür çağıracak `SQL_STILL_EXECUTING`.|  
+|[AFX_ODBC_CALL](#afx_odbc_call)|Döndüren bir ODBC API işlev çağrılarını `SQL_STILL_EXECUTING`. `AFX_ODBC_CALL` Art arda işlevi kadar artık döndürür çağıracak `SQL_STILL_EXECUTING`.|  
 |[AFX_SQL_ASYNC](#afx_sql_async)|Çağrıları `AFX_ODBC_CALL`.|  
 |[AFX_SQL_SYNC](#afx_sql_sync)|Döndürmez bir ODBC API işlev çağrılarını `SQL_STILL_EXECUTING`.|  
   
@@ -55,7 +50,7 @@ Makrolar ve genel öğeleri aşağıda listelenen ODBC tabanlı veritabanı uygu
 |[AfxGetHENV](#afxgethenv)|MFC tarafından kullanılmakta ODBC ortam için bir tanıtıcı alır. Doğrudan ODBC çağrılarında bu tanıtıcıyı kullanabilirsiniz.|  
 
 
-## <a name="afxdbinitmodule"></a>AfxDbInitModule
+## <a name="afxdbinitmodule"></a> AfxDbInitModule
 MFC veritabanı (veya DAO) dinamik olarak MFC'ye bağlı normal bir MFC DLL gelen desteklemek için bu işlevi çağrısı, Normal MFC DLL içinde eklemek **CWinApp::InitInstance** MFC başlatılamadı işlevi DLL veritabanı.  
    
 ### <a name="syntax"></a>Sözdizimi    
@@ -64,7 +59,7 @@ void AFXAPI AfxDbInitModule( );
 ```  
    
 ### <a name="remarks"></a>Açıklamalar  
- Bu çağrı önce herhangi bir temel sınıf çağrısına oluşur veya MFC veritabanı DLL erişen kodu eklenen tüm emin olun. MFC DLL MFC uzantı DLL'si veritabanıdır; MFC uzantı DLL'si sipariş içine kablolu için de bir **CDynLinkLibrary** zinciri, onu oluşturmanız gerekir bir **CDynLinkLibrary** kullanarak her bir modüle bağlamda nesnesi. `AfxDbInitModule`oluşturur **CDynLinkLibrary** içine kablolu böylece Normal MFC DLL bağlamda nesne **CDynLinkLibrary** nesne Normal MFC DLL zinciri.  
+ Bu çağrı önce herhangi bir temel sınıf çağrısına oluşur veya MFC veritabanı DLL erişen kodu eklenen tüm emin olun. MFC DLL MFC uzantı DLL'si veritabanıdır; MFC uzantı DLL'si sipariş içine kablolu için de bir **CDynLinkLibrary** zinciri, onu oluşturmanız gerekir bir **CDynLinkLibrary** kullanarak her bir modüle bağlamda nesnesi. `AfxDbInitModule` oluşturur **CDynLinkLibrary** içine kablolu böylece Normal MFC DLL bağlamda nesne **CDynLinkLibrary** nesne Normal MFC DLL zinciri.  
    
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** < afxdll_.h >  
@@ -74,7 +69,7 @@ void AFXAPI AfxDbInitModule( );
  
   
 
-##  <a name="afx_odbc_call"></a>AFX_ODBC_CALL  
+##  <a name="afx_odbc_call"></a>  AFX_ODBC_CALL  
  Bu makrosu döndürebilir herhangi bir ODBC API işlev çağrısı kullanmasını `SQL_STILL_EXECUTING`.  
   
 ```  
@@ -86,7 +81,7 @@ AFX_ODBC_CALL(SQLFunc)
  Bir ODBC API işlev. ODBC API işlevleri hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AFX_ODBC_CALL`Art arda işlevi kadar artık döndürür çağırır `SQL_STILL_EXECUTING`.  
+ `AFX_ODBC_CALL` Art arda işlevi kadar artık döndürür çağırır `SQL_STILL_EXECUTING`.  
   
  Çağırmadan önce `AFX_ODBC_CALL`, bir değişkeni bildirilmelidir `nRetCode`, türü **RETCODE**.  
   
@@ -101,7 +96,7 @@ AFX_ODBC_CALL(SQLFunc)
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdb.h  
 
-##  <a name="afx_sql_async"></a>AFX_SQL_ASYNC  
+##  <a name="afx_sql_async"></a>  AFX_SQL_ASYNC  
  MFC 4.2 değiştirilen bu makrosu uygulanması.  
   
 ```   
@@ -116,7 +111,7 @@ AFX_SQL_ASYNC(prs, SQLFunc)
  Bir ODBC API işlev. ODBC API işlevleri hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AFX_SQL_ASYNC`yalnızca makrosu çağırır [AFX_ODBC_CALL](#afx_odbc_call) ve yoksayar `prs` parametresi. MFC sürümlerinde 4.2 önce `AFX_SQL_ASYNC` döndürebilir ODBC API işlevleri çağırmak için kullanılan `SQL_STILL_EXECUTING`. ODBC API işlevini geri döndürmedi, `SQL_STILL_EXECUTING`, ardından `AFX_SQL_ASYNC` çağırırdı `prs->OnWaitForDataSource`.  
+ `AFX_SQL_ASYNC` yalnızca makrosu çağırır [AFX_ODBC_CALL](#afx_odbc_call) ve yoksayar `prs` parametresi. MFC sürümlerinde 4.2 önce `AFX_SQL_ASYNC` döndürebilir ODBC API işlevleri çağırmak için kullanılan `SQL_STILL_EXECUTING`. ODBC API işlevini geri döndürmedi, `SQL_STILL_EXECUTING`, ardından `AFX_SQL_ASYNC` çağırırdı `prs->OnWaitForDataSource`.  
   
 > [!NOTE]
 >  MFC ODBC sınıfları artık yalnızca zaman uyumlu işleme kullanın. Zaman uyumsuz bir işlem gerçekleştirmek için ODBC API işlev çağrısı **SQLSetConnectOption**. Daha fazla bilgi için "Yürütme işlevleri zaman uyumsuz olarak" Windows SDK konusuna bakın.  
@@ -124,7 +119,7 @@ AFX_SQL_ASYNC(prs, SQLFunc)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdb.h  
   
-##  <a name="afx_sql_sync"></a>AFX_SQL_SYNC  
+##  <a name="afx_sql_sync"></a>  AFX_SQL_SYNC  
  `AFX_SQL_SYNC` Makrosu yalnızca işlevi çağırır `SQLFunc`.  
   
 ```   
@@ -151,7 +146,7 @@ AFX_SQL_SYNC(SQLFunc)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdb.h  
   
-##  <a name="afxgethenv"></a>AfxGetHENV  
+##  <a name="afxgethenv"></a>  AfxGetHENV  
  Doğrudan ODBC çağrılarında döndürülen tanıtıcı kullanabilirsiniz, ancak siz değil tanıtıcı kapatın veya tanıtıcı var olan sonra hala geçerli ve kullanılabilir olduğunu varsayın `CDatabase`- veya `CRecordset`-türetilen nesneler yok.  
   
 ```   

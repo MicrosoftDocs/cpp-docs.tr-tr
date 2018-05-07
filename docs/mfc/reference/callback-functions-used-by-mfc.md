@@ -2,12 +2,9 @@
 title: MFC tarafından kullanılan geri çağırma işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.functions
 dev_langs:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - functions [MFC], callback
 - callback functions [MFC]
 ms.assetid: b2a6857c-fdd3-45ec-8fd8-2e71fac77582
-caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adcde434c12c11c1df7fc1367b658114f874b3c1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ce96d90506176812ffb70b580c9d95a38c65fa19
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="callback-functions-used-by-mfc"></a>MFC Tarafından Kullanılan Geri Çağırma İşlevleri
 Üç geri arama işlevleri Microsoft Foundation Class Kitaplığı'nda görünür. Bu geri çağırma işlevleri geçirilecek [CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects), [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring), ve [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc). Tüm geri arama işlevleri MFC Windows için geri çağırma sınırlarında durumlar olamaz bu yana döndürmeden önce yakalamak gerekir olduğunu unutmayın. Özel durumlar hakkında daha fazla bilgi için bkz: [özel durumları](../../mfc/exception-handling-in-mfc.md).  
@@ -42,7 +37,7 @@ ms.lasthandoff: 12/21/2017
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h 
 
-## <a name="enum_objects"></a>CDC::EnumObjects için geri çağırma işlevi
+## <a name="enum_objects"></a> CDC::EnumObjects için geri çağırma işlevi
 *ObjectFunc* adı uygulama tarafından sağlanan işlev adı için bir yer tutucudur.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -66,7 +61,7 @@ int CALLBACK EXPORT ObjectFunc(
 ### <a name="remarks"></a>Açıklamalar  
  Gerçek ad verilmelidir.  
   
-## <a name="graystring"></a>CDC::GrayString için geri çağırma işlevi
+## <a name="graystring"></a>  CDC::GrayString için geri çağırma işlevi
 *OutputFunc* uygulama tarafından sağlanan geri çağırma işlevi adı için bir yer tutucudur.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -94,7 +89,7 @@ BOOL CALLBACK EXPORT OutputFunc(
 ### <a name="remarks"></a>Açıklamalar  
  Geri çağırma işlevi (*OutputFunc*) (0,0) koordinatlara göre resim çizme gerekir yerine (*x*, *y*).  
 
-## <a name="setabortproc"></a>CDC::SetAbortProc için geri çağırma işlevi
+## <a name="setabortproc"></a>  CDC::SetAbortProc için geri çağırma işlevi
 Adı *AbortFunc* uygulama tarafından sağlanan işlev adı için bir yer tutucudur.  
   
 ### <a name="syntax"></a>Sözdizimi  

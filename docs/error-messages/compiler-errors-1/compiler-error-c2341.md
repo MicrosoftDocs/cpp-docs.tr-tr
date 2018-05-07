@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2341 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2341 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2341
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2341
 ms.assetid: aa2a7da5-e1c8-4225-9939-5bdc50158f31
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03ceeb7f34ca7aca58151174c327161b18f3678f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 18cc222129f3f12b5e7b5c6cb66e090907ff42a3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2341"></a>Derleyici Hatası C2341
 'bölüm adı': segment #pragma data_seg, code_seg veya önceki bölümde kullanılacak kullanılarak tanımlanması gerekir  

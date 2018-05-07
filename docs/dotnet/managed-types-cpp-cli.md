@@ -1,13 +1,10 @@
 ---
-title: "Yönetilen türler (C + +/ CLI) | Microsoft Docs"
-ms.custom: 
+title: Yönetilen türler (C + +/ CLI) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - .NET Framework [C++], managed types
 - data types [C++], .NET feature access
 ms.assetid: 679b8ed3-d966-4a0c-b627-2a3f3ec96b74
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 1329cb6dd799d44d7810de22479638a105a8538f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3be1f6d3bf0ac76565ec3f7bf69c84fbe7496266
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="managed-types-ccli"></a>Yönetilen Türler (C++/CLI)
 Visual C++ .NET özellikleri ortak dil çalışma zamanı özellikleri için destek sağlar ve avantajları ve sınırlamaları çalışma zamanının tabi yönetilen türleri aracılığıyla erişmesini sağlar.  

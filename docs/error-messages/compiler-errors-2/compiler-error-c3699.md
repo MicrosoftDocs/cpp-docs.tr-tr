@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3699 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3699 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3699
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3699
 ms.assetid: 47c29afc-ab8b-4238-adfe-788dd6e00b3b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d4b89c2b91aab1869c97731731ed03a363767e8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ddbf6ac43b2a3d987faa86fab6d9862068fc0fe0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3699"></a>Derleyici Hatası C3699
 'işleci': Bu yöneltme 'type' türünde kullanamazsınız  

@@ -1,12 +1,9 @@
 ---
-title: IRowsetNotifyImpl::OnFieldChange | Microsoft Docs
-ms.custom: 
+title: IRowsetNotifyImpl::onfieldchange | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - IRowsetNotifyImpl.OnFieldChange
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - OnFieldChange method
 ms.assetid: f26b492c-c86e-423b-9374-175e510a2860
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: aa4d68c6a634600f7afe3295b41b0939675be4f9
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 086918e34322fdeb9bf5d0c1ff623017799a4d6d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="irowsetnotifyimplonfieldchange"></a>IRowsetNotifyImpl::OnFieldChange
 Bir sütunun değeri herhangi bir değişiklik tüketici bildirir.  
@@ -59,5 +54,5 @@ STDMETHOD(OnFieldChange)(
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IRowsetNotifyImpl Class](../../data/oledb/irowsetnotifyimpl-class.md)   
+ [IRowsetNotifyImpl sınıfı](../../data/oledb/irowsetnotifyimpl-class.md)   
  [IRowsetNotify::OnFieldChange](https://msdn.microsoft.com/en-us/library/ms715961.aspx)

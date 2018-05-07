@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4813 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4813 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C4813
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4813
 ms.assetid: c30bf877-ab04-4fe4-897e-8162092426f0
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f4e888d924c79d18f1b12b1d92cfd0d40f5cc47
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 310c4c3a0d4be35e45c9593dc4f3cc1de00077d5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4813"></a>Derleyici Uyarısı (düzey 1) C4813
 'function': yerel bir sınıfın arkadaş işlevi önceden bildirilmiş olmalıdır  

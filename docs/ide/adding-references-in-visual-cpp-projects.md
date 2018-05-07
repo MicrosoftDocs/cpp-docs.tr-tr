@@ -1,13 +1,10 @@
 ---
-title: "Visual C++ projelerine başvuru ekleme | Microsoft Docs"
-ms.custom: 
+title: Visual C++ projelerine başvuru ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.References
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bacb5663d8e06ee5a10629c547de6f96219697e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bda420768b1ff0819ba666f71d62bfffa86e2105
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="adding-references-in-visual-c-projects"></a>Visual C++ projelerine başvuru ekleme
 Programların diğer ikili dosyaları, DLL'ler gibi içinde API'leri çağırmak yaygın Windows çalışma zamanı bileşenleri, uzantı SDK'ları, COM bileşenlerini ve .NET derlemelerini. Bu, diğer ikili dosyaları programınızın bulur biçimi hem de projenizi türünü ve ikili türüne bağlıdır.  
@@ -37,7 +32,7 @@ Programların diğer ikili dosyaları, DLL'ler gibi içinde API'leri çağırmak
   
  Yerel C++ projesinde (ATL) kavram *başvuruları* yalnızca Çözümdeki tüm içinde gördüğünüz olacak şekilde paylaşılan projeleri de dahil olmak üzere diğer projeler için geçerlidir **başvuru Yöneticisi**:  
   
- ![Visual C# 43; &#43; Başvuru Yöneticisi &#40; ATL projeleri &#41; ] (../ide/media/visual-c---reference-manager--atl-projects-.png "Visual C++ başvuru Yöneticisi'ni (ATL projeleri)")  
+ ![Visual C&#43; &#43; başvuru Yöneticisi &#40;ATL projeleri&#41;](../ide/media/visual-c---reference-manager--atl-projects-.png "Visual C++ başvuru Yöneticisi'ni (ATL projeleri)")  
   
  C + +/ CLI ya da evrensel Windows platformu proje başvuruları kavramı ikili dosyaları diğer projeleri yanı sıra daha fazla tür uygulandığı.  Bunlar tüm sunulan **başvuru Yöneticisi**.
   
@@ -120,7 +115,7 @@ Programların diğer ikili dosyaları, DLL'ler gibi içinde API'leri çağırmak
  Başvurulan derlemeyi tanımlamak için kullanılan ortak anahtar belirteci görüntüler.  
   
  **Güçlü ad**  
- `true`Başvurulan derlemeyi tanımlayıcı ad varsa. Güçlü bir adlandırılmış derleme benzersiz olarak sürümlü ' dir.  
+ `true` Başvurulan derlemeyi tanımlayıcı ad varsa. Güçlü bir adlandırılmış derleme benzersiz olarak sürümlü ' dir.  
   
  **Sürüm**  
  Başvurulan derlemeyi sürümünü görüntüler.  

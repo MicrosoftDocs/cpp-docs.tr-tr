@@ -1,12 +1,9 @@
 ---
 title: CHAIN_PROPERTY_SET | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CHAIN_PROPERTY_SET
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - CHAIN_PROPERTY_SET macro
 ms.assetid: 2bcf6d7d-f4e5-480d-9140-1e32a0994c94
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 634ab21ef9ffa18e5c18efa9078eb0606f9ff387
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 9db57535f3f0bc7653c80b83c3e0115727eed707
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="chainpropertyset"></a>CHAIN_PROPERTY_SET
 Bu makrosu özellik grupları zincir oluşturur.  

@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2264 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2264 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2264
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2264
 ms.assetid: 158b72cc-cee9-4a08-bd79-b7a5955345a8
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 704cc6df63c531128dc700ef0486219feaa293e2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8942c5537e7129c5ecd8b8ac6956fdd6c9e1efaa
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2264"></a>Derleyici Hatası C2264
 'function': hata işlev tanımı ya da bildiriminde; çağrılmaz işlevi  

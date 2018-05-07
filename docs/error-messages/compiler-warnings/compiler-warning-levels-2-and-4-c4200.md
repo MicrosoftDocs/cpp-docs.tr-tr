@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (Düzey 2 ve 4) C4200 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (Düzey 2 ve 4) C4200 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4200
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4200
 ms.assetid: e44d6073-937f-42b7-acc1-65e802b475c6
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f160476deb2ab3e4ad0ff00100305c934dfb14c3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6ffc789c3c4da5caf50f0657e17ddabe40a5773c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-levels-2-and-4-c4200"></a>Derleyici Uyarısı (Düzey 2 ve 4) C4200
 kullanılan standart olmayan uzantısı: sıfır boyutlu dizi struct/Birleşimdeki  

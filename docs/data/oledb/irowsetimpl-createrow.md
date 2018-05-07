@@ -1,12 +1,9 @@
 ---
-title: "Irowsetımpl::createrow | Microsoft Docs"
-ms.custom: 
+title: Irowsetımpl::createrow | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - IRowsetImpl.CreateRow
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - CreateRow method
 ms.assetid: b01c430c-9484-4fef-a6cf-a2e8d9d99130
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fd378ed599795911a86fb4bc10625721c76f417b
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: eae3fbdce1db5760d4ee5ca75e007c01e98b7bed
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="irowsetimplcreaterow"></a>IRowsetImpl::CreateRow
 Bir yardımcı yöntemi tarafından çağrılır [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) yeni ayırmak için **HROW**.  

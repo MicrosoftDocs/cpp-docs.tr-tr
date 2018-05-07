@@ -1,12 +1,9 @@
 ---
 title: multimap (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::multimap
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - <cliext/map> header [STL/CLR]
 - multimap class [STL/CLR]
 ms.assetid: 3dfe329d-a078-462a-b050-7999ce6110ad
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2c42fc8d71871a70e3a2d3ffa93a78a4e42d2f53
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 168c6afec0f8f195d1315a54eff2794f7e3fd07e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="multimap-stlclr"></a>çoklu eşleme (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `multimap` öğeleri dizisi (neredeyse) dengeli sıralı ağacı düğümleri olarak her bir öğe depolamak yönetmek için. Bir öğenin dizisi ve için kılma gider eşlenen bir değer sıralama için bir anahtar oluşur.  
@@ -39,9 +34,9 @@ ms.lasthandoff: 12/21/2017
   
  burada:  
   
- `GKey`aynı `Key` ikinci ref türü olmadıkça olmasından; bu durumda`Key^`  
+ `GKey` aynı `Key` ikinci ref türü olmadıkça olmasından; bu durumda `Key^`  
   
- `GMapped`aynı `Mapped` ikinci ref türü olmadıkça olmasından; bu durumda`Mapped^`  
+ `GMapped` aynı `Mapped` ikinci ref türü olmadıkça olmasından; bu durumda `Mapped^`  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -140,7 +135,7 @@ template<typename Key,
   
  Böyle bir temsilci nesnenin katı bir zayıf türü anahtarları sıralama zorunlu tuttukları gerekir [multimap::key_type (STL/CLR)](../dotnet/multimap-key-type-stl-clr.md). Yani, herhangi iki tuşları `X` ve `Y`:  
   
- `key_comp()(X, Y)`Her çağrıda aynı Boolean sonucu döndürür.  
+ `key_comp()(X, Y)` Her çağrıda aynı Boolean sonucu döndürür.  
   
  Varsa `key_comp()(X, Y)` true ise `key_comp()(Y, X)` false olmalıdır.  
   

@@ -1,12 +1,9 @@
 ---
-title: "Proje derleme hatası PRJ0028 | Microsoft Docs"
-ms.custom: 
+title: Proje derleme hatası PRJ0028 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - PRJ0028
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - PRJ0028
 ms.assetid: 0a6e0da7-cb3d-40b6-81a6-6196a9c2526b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9a72142f46f55db5d9b20ea941741c9045cc907
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 42c6e55cdce7294d7d2bc2e2a5634f362a539363
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="project-build-error-prj0028"></a>Proje Derleme Hatası PRJ0028
 Geçici dosya 'dosya' kullanıcının ANSI kod sayfasına çevrilemedi Unicode içeriği içerir.  

@@ -1,13 +1,10 @@
 ---
-title: "Sunucuları | Microsoft Docs"
-ms.custom: 
+title: Sunucuları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - OLE server applications [MFC], server types
 - server applications [MFC]
 ms.assetid: e45172e8-eae3-400a-8139-0fa009a42fdc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0a011201a521ed97cf9ebe4c0a8249526b9d7c8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7d153d73889520deaff12b64da36567a8b9a4087
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="servers"></a>Sunucular
 Bir sunucu uygulaması (veya bileşen uygulama) OLE öğeleri (veya bileşenleri) kullanmak için kapsayıcı uygulamaları tarafından oluşturur. Görsel düzenleme sunucu uygulaması, görsel düzenleme veya yerinde etkinleştirme de destekler. OLE sunucu başka bir biçimidir bir [Otomasyon sunucusu](../mfc/automation-servers.md). Bazı sunucu uygulamaları yalnızca katıştırılmış öğeleri oluşturulmasını destekler; Başkalarının katıştırılmış ve bağlantılı öğeler oluşturulmasını destekler. Bu nadir olmasına rağmen bazı yalnızca bağlama destekler. Kullanıcı bir öğeyi düzenlemek istediğinde tüm sunucu uygulamaları tarafından kapsayıcı uygulamaları etkinleştirme desteklemesi gerekir. Bir uygulama, bir kapsayıcı ve bir sunucu olabilir. Diğer bir deyişle, onu hem de kendi belgelerine verileri birleştirmek ve diğer uygulamaların belgelerine öğeleri olarak birleştirilebilir veri oluşturun.  

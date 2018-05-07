@@ -1,13 +1,10 @@
 ---
-title: "Dönüştürme gösterimi ve safe_cast giriş&lt; &gt; | Microsoft Docs"
-ms.custom: 
+title: Dönüştürme gösterimi ve safe_cast giriş&lt; &gt; | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - C-style casts and /clr, motivation for new cast notation
 - safe_cast keyword [C++]
 ms.assetid: 4eb1d000-3b93-4394-a37b-8b8563f8dc4d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 80d1a6e8b1a1691b4e76bfdc1232c95c22d01408
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6b9432b40099f9893d7fd270faf5375646fb0493
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cast-notation-and-introduction-of-safecastltgt"></a>Dönüştürme gösterimi ve safe_cast giriş&lt;&gt;
 Dönüştürme gösterimi C++ için Visual C++ için Yönetilen Uzantılar'dan değiştirdi.  
@@ -78,7 +73,7 @@ X x = X::X( 10 );
   
  Böylece teklif daha fazla düşünmek için geri alındığı ve birkaç alternatif gösterimler olarak kabul ve formunu geri komitesi getirildi biri oluştu (`?type`), belirlenmemiş - diğer bir deyişle, dinamik doğasını. Bu kullanıcının iki form - statik veya dinamik - arasında geçiş yapmak için özelliği verdi ancak hiç kimse bundan memnun. Bu nedenle çizim panosuna oluştu. Şimdi üçüncü ve başarılı gösterimidir standart `dynamic_cast<type>`, hangi dört yeni stil cast gösterimler kümesine genelleştirilmiş.  
   
- ISO-C++ ' ta `dynamic_cast` döndürür `0` bir uygun olmayan işaretçi türüne uygulanacağını ve bir `std::bad_cast` başvuru türüne uygulandığında özel durum. C++ için Yönetilen Uzantılar uygulama `dynamic_cast` her zaman döndürülen bir yönetilen başvuru türüne (nedeniyle işaretçi yapısından) `0`. `__try_cast<type>`bir analog olarak türevi atma özel durumu sunulan `dynamic_cast`, onu oluşturur dışında `System::InvalidCastException` dönüştürme başarısız olursa.  
+ ISO-C++ ' ta `dynamic_cast` döndürür `0` bir uygun olmayan işaretçi türüne uygulanacağını ve bir `std::bad_cast` başvuru türüne uygulandığında özel durum. C++ için Yönetilen Uzantılar uygulama `dynamic_cast` her zaman döndürülen bir yönetilen başvuru türüne (nedeniyle işaretçi yapısından) `0`. `__try_cast<type>` bir analog olarak türevi atma özel durumu sunulan `dynamic_cast`, onu oluşturur dışında `System::InvalidCastException` dönüştürme başarısız olursa.  
   
 ```  
 public __gc class ItemVerb;  

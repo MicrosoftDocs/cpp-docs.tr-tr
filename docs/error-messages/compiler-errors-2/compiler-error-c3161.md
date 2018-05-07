@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3161 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3161 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3161
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3161
 ms.assetid: 1fe2be85-a343-487b-8476-bf9e257eb29d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0cdbbd9364435ebcfad114331b6ba7289cb8010
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f2d7aff3eb41c03f5be774704922340ac54126fc
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3161"></a>Derleyici Hatası C3161
 'arabirimi': sınıf iç içe geçme, yapısı, UNION veya arabirim arabiriminde; geçersiz iç içe bir sınıf, yapı veya birleşim arabiriminde geçersiz  

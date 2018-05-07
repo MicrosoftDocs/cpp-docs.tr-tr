@@ -1,12 +1,9 @@
 ---
-title: "CSocket sınıfı | Microsoft Docs"
-ms.custom: 
+title: CSocket sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CSocket
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - CSocket [MFC], IsBlocking
 - CSocket [MFC], OnMessagePending
 ms.assetid: 7f23c081-d24d-42e3-b511-8053ca53d729
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ae8a30697783b478e9ffdb1c247f52d7b9f2ac2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0bfaf418ec78a750f6030683801d00a1450364d8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="csocket-class"></a>CSocket sınıfı
 Türetilen `CAsyncSocket`, kendi kapsülleme Windows Sockets API devralır ve daha yüksek bir soyutlama düzeyi daha temsil bir `CAsyncSocket` nesnesi.  
@@ -75,7 +70,7 @@ class CSocket : public CAsyncSocket
 |[CSocket::OnMessagePending](#onmessagepending)|İşlem iletileri bekleyen bir engelleme çağrı tamamlanması beklenirken çağrılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CSocket`çalışır sınıflarıyla `CSocketFile` ve `CArchive` gönderme ve alma veri yönetmek için.  
+ `CSocket` çalışır sınıflarıyla `CSocketFile` ve `CArchive` gönderme ve alma veri yönetmek için.  
   
  A `CSocket` nesnesi de sağlar engellemek, zaman uyumlu çalışması için gerekli olduğu `CArchive`. İşlevler, gibi engelleme `Receive`, `Send`, `ReceiveFrom`, `SendTo`, ve `Accept` (öğesinden devralınan tüm `CAsyncSocket`), döndürmeyin bir `WSAEWOULDBLOCK` hata `CSocket`. Bunun yerine, işlemi tamamlanana kadar bu işlevler bekleyin. Ayrıca, özgün çağrısı şu hata ile sona erdirir `WSAEINTR` varsa `CancelBlockingCall` Bu işlevlerden birini engelleme sırasında çağrılır.  
   
@@ -104,7 +99,7 @@ class CSocket : public CAsyncSocket
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxsock.h  
   
-##  <a name="attach"></a>CSocket::Attach  
+##  <a name="attach"></a>  CSocket::Attach  
  Bu üye işlevi ekleme çağrısı `hSocket` işlemek için bir `CSocket` nesnesi.  
   
 ```  
@@ -130,7 +125,7 @@ BOOL Attach(SOCKET hSocket);
   
  [!code-cpp[NVC_MFCSocketThread#3](../../mfc/reference/codesnippet/cpp/csocket-class_4.cpp)]  
   
-##  <a name="cancelblockingcall"></a>CSocket::CancelBlockingCall  
+##  <a name="cancelblockingcall"></a>  CSocket::CancelBlockingCall  
  Şu anda devam ediyor engelleyen bir çağrı iptal etmek için bu üye işlevini çağırın.  
   
 ```  
@@ -146,7 +141,7 @@ void CancelBlockingCall();
   
  Daha fazla bilgi için bkz: [Windows Yuvaları: arşivlerle kullanılan yuvalara](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
-##  <a name="create"></a>CSocket::Create  
+##  <a name="create"></a>  CSocket::Create  
  Çağrı **oluşturma** Windows yuva oluşturmak ve bunu eklemek için yuva nesnesi oluşturma sonra üye işlevi.  
   
 ```  
@@ -181,7 +176,7 @@ BOOL Create(
   
  Akış ve veri birimi yuvaları hakkında daha fazla bilgi için makalelerine bakın [Windows Yuvaları: arka plan](../../mfc/windows-sockets-background.md), [Windows Yuvaları: bağlantı noktaları ve yuva adresleri](../../mfc/windows-sockets-ports-and-socket-addresses.md), ve [Windows Yuvaları: kullanma Yuvaların arşivlerle](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
-##  <a name="csocket"></a>CSocket::CSocket  
+##  <a name="csocket"></a>  CSocket::CSocket  
  Oluşturan bir `CSocket` nesnesi.  
   
 ```  
@@ -193,7 +188,7 @@ CSocket();
   
  Daha fazla bilgi için bkz: [Windows Yuvaları: arşivlerle kullanılan yuvalara](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
-##  <a name="fromhandle"></a>CSocket::FromHandle  
+##  <a name="fromhandle"></a>  CSocket::FromHandle  
  Bir işaretçi döndüren bir `CSocket` nesnesi.  
   
 ```  
@@ -212,7 +207,7 @@ static CSocket* PASCAL FromHandle(SOCKET hSocket);
   
  Daha fazla bilgi için bkz: [Windows Yuvaları: arşivlerle kullanılan yuvalara](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
-##  <a name="isblocking"></a>CSocket::IsBlocking  
+##  <a name="isblocking"></a>  CSocket::IsBlocking  
  Bir engelleme çağrı sürüyor olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
@@ -225,7 +220,7 @@ BOOL IsBlocking();
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [Windows Yuvaları: arşivlerle kullanılan yuvalara](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
-##  <a name="onmessagepending"></a>CSocket::OnMessagePending  
+##  <a name="onmessagepending"></a>  CSocket::OnMessagePending  
  Bu üye işlevi Windows'dan belirli iletileri arama ve onlara, yuvaya yanıt için geçersiz kılar.  
   
 ```  

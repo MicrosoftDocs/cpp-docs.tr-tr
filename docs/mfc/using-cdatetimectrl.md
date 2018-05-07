@@ -1,13 +1,10 @@
 ---
 title: CDateTimeCtrl kullanma | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - CDateTimeCtrl
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - DateTimePicker control [MFC], CDateTimeCtrl class
 ms.assetid: cb2a8720-43f1-4c33-a3a4-def9a1622e00
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab0f8c64b953a9ddaffa3382863762256b90c6c9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 60b41c31c2fa8985953515700cc2e3c802aced31
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-cdatetimectrl"></a>CDateTimeCtrl Kullanma
 Tarih ve Saat Seçici denetimini ([CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)) girerek veya belirli bir tarih seçme sezgisel ve tanınabilir bir yöntem uygular. Bir birleşik giriş kutusu işlevindeki denetiminin ana arabirimi benzer. Aylık takvim denetiminin (varsayılan), görünen kullanıcı denetimi genişletir, ancak kullanıcının belirli bir tarih belirtmek izin verme. Aylık takvim denetiminin bir tarih seçildiğinde otomatik olarak kaybolur.  

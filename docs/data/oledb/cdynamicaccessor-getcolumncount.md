@@ -1,12 +1,9 @@
 ---
 title: CDynamicAccessor::GetColumnCount | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL.CDynamicAccessor.GetColumnCount
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - GetColumnCount method
 ms.assetid: cd72cb01-6b89-4b13-9867-fbac6efc90d0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: dc6d405a3e2df07f0eb1e74a5d428c49e33e551a
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: fedad35e2ce017cf61c91add5938f7d5a1a829ee
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdynamicaccessorgetcolumncount"></a>CDynamicAccessor::GetColumnCount
 Sütun sayısını alır.  

@@ -1,12 +1,9 @@
 ---
 title: Lock::LOCK | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - lock::lock
@@ -18,18 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - lock constructor
 ms.assetid: c9ad6c71-36ec-49c5-8ebd-f5c3a0cc94f0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 5148da4421b24a64dca97288975af42b9688e4ae
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: df35eed8711e83174316ac9912f7ba535ef9ebf9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="locklock"></a>lock::lock
 Oluşturan bir `lock` nesnesi, isteğe bağlı olarak her zaman, belirtilen bir miktar süre ya da hiç için kilit bekleniyor.  
@@ -67,11 +62,11 @@ template<class T> lock(
 ## <a name="remarks"></a>Açıklamalar  
  Oluşturucusu ilk üç formlarını üzerinde kilit elde etmeye `_object` belirtilen zaman aşımı süresi içinde (veya <xref:System.Threading.Timeout.Infinite> hiçbiri belirtilen).  
   
- Oluşturucusu dördüncü biçiminde bir üzerinde kilit yok `_object`. `lock_later`üye [lock_when numaralandırması](../dotnet/lock-when-enum.md). Kullanım [lock::acquire](../dotnet/lock-acquire.md) veya [lock::try_acquire](../dotnet/lock-try-acquire.md) bu durumda kilidinin alınması.  
+ Oluşturucusu dördüncü biçiminde bir üzerinde kilit yok `_object`. `lock_later` üye [lock_when numaralandırması](../dotnet/lock-when-enum.md). Kullanım [lock::acquire](../dotnet/lock-acquire.md) veya [lock::try_acquire](../dotnet/lock-try-acquire.md) bu durumda kilidinin alınması.  
   
  Yok Edicisi çağrıldığında kilidi otomatik olarak yayınlanacaktır.  
   
- `_object`olamaz <xref:System.Threading.ReaderWriterLock>.  Derleyici Hatası ise, neden olur.  
+ `_object` olamaz <xref:System.Threading.ReaderWriterLock>.  Derleyici Hatası ise, neden olur.  
   
 ## <a name="example"></a>Örnek  
  Bu örnek, birden çok iş parçacıkları arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisini iç verilerine erişir her iş parçacığı için tutarlı olduğundan emin olmak için kullanır.  Ana uygulama iş parçacığı bir kilit sınıfı aynı örneğinde hiçbir çalışan iş parçacığı hala var ve tüm çalışan iş parçacığı kadar çıkmak için bekleyeceği görevlerini tamamladınız görmek için düzenli aralıklarla denetlemek için kullanır.  

@@ -1,12 +1,9 @@
 ---
-title: "Sağlayıcı hizmet Varsayılanları geçersiz kılma | Microsoft Docs"
-ms.custom: 
+title: Sağlayıcı hizmet Varsayılanları geçersiz kılma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 dev_langs:
 - C++
@@ -14,18 +11,16 @@ helpviewer_keywords:
 - service providers [OLE DB]
 - OLE DB services [OLE DB], overriding defaults
 ms.assetid: 08e366c0-74d8-463b-93a6-d58a8dc195f8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8788de8ad28dc3c746155f59dee3ba5bb763bcaa
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: be802c1c3c6ba4b77d1418c9c620840e9ab10170
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="overriding-provider-service-defaults"></a>Sağlayıcı Hizmet Varsayılanlarını Geçersiz Kılma
 Sağlayıcının kayıt defteri değeri için **OLEDB_SERVICES** için varsayılan değer olarak döndürülür [DBPROP_INIT_OLEDBSERVICES](https://msdn.microsoft.com/en-us/library/ms716898.aspx) başlatma özelliği veri kaynağı nesnesi.  
@@ -35,10 +30,10 @@ Sağlayıcının kayıt defteri değeri için **OLEDB_SERVICES** için varsayıl
 |Varsayılan hizmetler etkin|DBPROP_INIT_OLEDBSERVICES özellik değeri|Bağlantı dizesindeki değer|  
 |------------------------------|------------------------------------------------|--------------------------------|  
 |Tüm hizmetler (varsayılan)|**DBPROPVAL_OS_ENABLEALL**|"OLE DB hizmetleri = -1;"|  
-|Hariç tüm ve AutoEnlistment|**DBPROPVAL_OS_ENABLEALL &**<br /><br /> **~ DBPROPVAL_OS_RESOURCEPOOLING &**<br /><br /> **~ DBPROPVAL_OS_TXNENLISTMENT**|"OLE DB Hizmetleri-; 4 ="|  
+|Hariç tüm ve AutoEnlistment|**DBPROPVAL_OS_ENABLEALL &AMP;**<br /><br /> **~ DBPROPVAL_OS_RESOURCEPOOLING &AMP;**<br /><br /> **~ DBPROPVAL_OS_TXNENLISTMENT**|"OLE DB Hizmetleri-; 4 ="|  
 |Tüm istemci imleci hariç|**DBPROPVAL_OS_ENABLEALL** &<br /><br /> ~**DBPROPVAL_OS_CLIENTCURSOR**|"OLE DB Hizmetleri = -5;"|  
-|Tüm hariç, AutoEnlistment ve istemci imleci|**DBPROPVAL_OS_ENABLEALL &**<br /><br /> **~ DBPROPVAL_OS_TXNENLISTMENT &**<br /><br /> **~DBPROPVAL_OS_CLIENTCURSOR**|"OLE DB Services = -7;"|  
-|Hizmet yok|~**DBPROPVAL_OS_ENABLEALL**|"OLE DB Services = 0;"|  
+|Tüm hariç, AutoEnlistment ve istemci imleci|**DBPROPVAL_OS_ENABLEALL &AMP;**<br /><br /> **~ DBPROPVAL_OS_TXNENLISTMENT &AMP;**<br /><br /> **~ DBPROPVAL_OS_CLIENTCURSOR**|"OLE DB hizmetleri -7; ="|  
+|Hizmet yok|~**DBPROPVAL_OS_ENABLEALL**|"OLE DB hizmetleri = 0;"|  
   
  Kayıt defteri girdisini sağlayıcı için mevcut değilse, bileşen yöneticilerinin sağlayıcının nesnelerin araya değil ve hiçbir hizmet, kullanıcı tarafından açıkça istenmiş olsa bile çağrılır.  
   

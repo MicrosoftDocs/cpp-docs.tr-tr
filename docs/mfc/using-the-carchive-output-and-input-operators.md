@@ -1,13 +1,10 @@
 ---
-title: "CArchive kullanarak &lt; &lt; ve &gt; &gt; işleçleri | Microsoft Docs"
-ms.custom: 
+title: CArchive kullanarak &lt; &lt; ve &gt; &gt; işleçleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - CArchive
 dev_langs:
@@ -17,20 +14,18 @@ helpviewer_keywords:
 - CArchive class [MFC], storing and loading objects
 - CArchive class [MFC], operators
 ms.assetid: 56aef326-02dc-4992-8282-f0a4b78a064e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ab2da8cc885f94bf15164ff17fdef2b2af13a41
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 82b729caaa650fde72741497d3f4ab3c131f46ab
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-the-carchive-ltlt-and-gtgt-operators"></a>CArchive kullanarak &lt; &lt; ve &gt; &gt; işleçleri
-`CArchive`sağlar <\< ve >> yazma ve okuma basit veri türleri için işleçleri yanı `CObject`s için ve bir dosya.  
+`CArchive` sağlar <\< ve >> yazma ve okuma basit veri türleri için işleçleri yanı `CObject`s için ve bir dosya.  
   
 #### <a name="to-store-an-object-in-a-file-via-an-archive"></a>Bir arşiv aracılığıyla bir dosyada bir nesne depolamak için  
   
@@ -54,21 +49,21 @@ ms.lasthandoff: 12/21/2017
   
  [!code-cpp[NVC_MFCSerialization#10](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_4.cpp)]  
   
- Kitaplık tanımlar  **< \<**  ve  **>>**  işleçlerini `CArchive` ilk işlenen ve aşağıdaki veri türlerini ve ikinci işlenen olarak sınıf türleri olarak :  
+ Kitaplık tanımlar **< \<** ve **>>** işleçlerini `CArchive` ilk işlenen ve aşağıdaki veri türlerini ve ikinci işlenen olarak sınıf türleri olarak :  
   
 ||||  
 |-|-|-|  
 |`CObject*`|**Boyut ve CSize**|**float**|  
-|**WORD**|`CString`|**NOKTASI** ve`CPoint`|  
-|`DWORD`|**BAYT**|`RECT`ve`CRect`|  
-|**Çift**|**UZUN**|`CTime`ve`CTimeSpan`|  
+|**WORD**|`CString`|**NOKTASI** ve `CPoint`|  
+|`DWORD`|**BAYT**|`RECT` Ve `CRect`|  
+|**Çift**|**UZUN**|`CTime` Ve `CTimeSpan`|  
 |`Int`|**COleCurrency**|`COleVariant`|  
 |`COleDateTime`|`COleDateTimeSpan`||  
   
 > [!NOTE]
 >  Depolama ve yükleme `CObject`s bir arşiv aracılığıyla ek göz önünde bulundurarak gerektirir. Daha fazla bilgi için bkz: [saklama ve bir Arşiv yüklenirken Cobject'leri](../mfc/storing-and-loading-cobjects-via-an-archive.md).  
   
- **CArchive <\<**  ve  **>>**  işleçleri her zaman bir başvuru döndürür `CArchive` ilk işleneni nesnesi. Bu, işleçler zincir aşağıda gösterildiği gibi sağlar:  
+ **CArchive <\<**  ve **>>** işleçleri her zaman bir başvuru döndürür `CArchive` ilk işleneni nesnesi. Bu, işleçler zincir aşağıda gösterildiği gibi sağlar:  
   
  [!code-cpp[NVC_MFCSerialization#11](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_5.cpp)]  
   

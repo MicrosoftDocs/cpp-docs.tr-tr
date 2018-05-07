@@ -1,13 +1,10 @@
 ---
-title: "Yaygın olarak geçersiz kılınan üye işlevleri | Microsoft Docs"
-ms.custom: 
+title: Yaygın olarak geçersiz kılınan üye işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - OnOK function
 - MFC dialog boxes [MFC], overriding member functions
 ms.assetid: 78eb566c-e361-4c86-8db5-c7e2791b249a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5aa3fb072ca882b03b9da96d54cdefbba5e59a68
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ed090057394c385dd12825864c5de9ff7d079e29
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="commonly-overridden-member-functions"></a>Yaygın Olarak Geçersiz Kılınan Üye İşlevleri
 Aşağıdaki tabloda en olası üye işlevlerini geçersiz kılması listeler, `CDialog`-türetilmiş sınıf.  
@@ -44,11 +39,11 @@ Aşağıdaki tabloda en olası üye işlevlerini geçersiz kılması listeler, `
   
  `OnInitDialog`, `OnOK`, ve `OnCancel` sanal işlevlerdir. Bunları geçersiz kılmak için bir geçersiz kılma işlevi türetilmiş iletişim sınıfı kullanarak bildirdiğiniz [Özellikler penceresini](/visualstudio/ide/reference/properties-window).  
   
- `OnInitDialog`yalnızca iletişim kutusu görüntülenmeden önce çağrılır. Varsayılan çağırmalısınız `OnInitDialog` geçersiz kılma işleyicisinden — genellikle işleyici ilk eylem olarak. Varsayılan olarak, `OnInitDialog` döndürür **TRUE** odağı iletişim kutusunda ilk denetime ayarlanmalıdır belirtmek için.  
+ `OnInitDialog` yalnızca iletişim kutusu görüntülenmeden önce çağrılır. Varsayılan çağırmalısınız `OnInitDialog` geçersiz kılma işleyicisinden — genellikle işleyici ilk eylem olarak. Varsayılan olarak, `OnInitDialog` döndürür **TRUE** odağı iletişim kutusunda ilk denetime ayarlanmalıdır belirtmek için.  
   
- `OnOK`genellikle kalıcı olmayan ancak kalıcı olmayan iletişim kutuları için geçersiz kılındı. Modal bir iletişim kutusu için bu işleyici geçersiz kılarsanız, temel sınıf sürümü geçersiz kılma çağrı — emin olmak için `EndDialog` adlandırılır — veya arama `EndDialog` kendiniz.  
+ `OnOK` genellikle kalıcı olmayan ancak kalıcı olmayan iletişim kutuları için geçersiz kılındı. Modal bir iletişim kutusu için bu işleyici geçersiz kılarsanız, temel sınıf sürümü geçersiz kılma çağrı — emin olmak için `EndDialog` adlandırılır — veya arama `EndDialog` kendiniz.  
   
- `OnCancel`genellikle kalıcı olmayan iletişim kutuları için geçersiz kılındı.  
+ `OnCancel` genellikle kalıcı olmayan iletişim kutuları için geçersiz kılındı.  
   
  Bu üye işlevleri hakkında daha fazla bilgi için bkz [CDialog](../mfc/reference/cdialog-class.md) içinde *MFC başvurusu* ve tartışma [iletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md).  
   

@@ -1,13 +1,10 @@
 ---
-title: "Form görünümleri (MFC) | Microsoft Docs"
-ms.custom: 
+title: Form görünümleri (MFC) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - forms-based applications [MFC]
 - forms [MFC], adding to applications
 ms.assetid: efbe73c1-4ca4-4613-aac2-30d916e92c0e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e784858c17c01c8a538edebdb15a89863d16438
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 87775c8afa1fa6eec8fbbdbbaa11bc9b5e6f1faa
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="form-views-mfc"></a>Form Görünümleri (MFC)
 Formlar dahil olmak üzere MFC kitaplıkları destekleyen Visual C++ uygulamasını ekleyebilirsiniz bir [forms tabanlı uygulama](../mfc/reference/creating-a-forms-based-mfc-application.md) (biri olan Görünüm sınıfı türetilir `CFormView`). Forms desteklemek için uygulamanızın başlangıçta oluşturmadıysanız, Visual C++ yeni bir form eklediğinizde, bu desteği ekler. SDI veya MDI bir uygulamada varsayılan uygulayan [belge/görünüm mimarisi](../mfc/document-view-architecture.md), kullanıcı seçtiğinde `New` komutu (varsayılan olarak, üzerinde **dosya** menüsü), Visual C++ kullanıcıya sorar kullanılabilir formlardan seçin.  
@@ -35,7 +30,7 @@ Formlar dahil olmak üzere MFC kitaplıkları destekleyen Visual C++ uygulaması
  Kullanıcı seçtiğinde bir uygulamayla SDI, `New` komutu, formun geçerli örneği çalışmaya devam eder ancak biri bulunamazsa, seçili form uygulamayla yeni bir örneğini oluşturulur. MDI uygulamada formu geçerli örneği kullanıcı seçtiğinde çalıştırmaya devam `New` komutu.  
   
 > [!NOTE]
->  Form iletişim tabanlı bir uygulamaya ekleyebilirsiniz (iletişim kutusu sınıfı, temel bir `CDialog` ve hangi hiçbir görünümünde sınıfı uygulanır). Ancak, belge/görünüm mimarisinin Visual C++ otomatik olarak uygulamayan **dosya**&#124; **Yeni** işlevselliği. Kullanıcının çeşitli özellik sayfaları sekmeli iletişim kutusuyla uygulayarak gibi başka biçimlerde görüntülemek bir yol oluşturmanız gerekir.  
+>  Form iletişim tabanlı bir uygulamaya ekleyebilirsiniz (iletişim kutusu sınıfı, temel bir `CDialog` ve hangi hiçbir görünümünde sınıfı uygulanır). Ancak, belge/görünüm mimarisinin Visual C++ otomatik olarak uygulamayan **dosya**&#124;**yeni** işlevselliği. Kullanıcının çeşitli özellik sayfaları sekmeli iletişim kutusuyla uygulayarak gibi başka biçimlerde görüntülemek bir yol oluşturmanız gerekir.  
   
  Yeni bir form uygulamanıza eklediğinizde, Visual C++ şunları yapar:  
   
@@ -51,7 +46,7 @@ Formlar dahil olmak üzere MFC kitaplıkları destekleyen Visual C++ uygulaması
   
      **Ws_vısıble**= kapalı  
   
-     **Ws_captıon =**devre dışı  
+     **Ws_captıon =** devre dışı  
   
  Belge/görünüm mimarisine bağlı uygulamalar için **yeni bir Form** komutu (sağ tıklatma Sınıf Görünümü'nde) de:  
   

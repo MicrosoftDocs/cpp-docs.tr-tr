@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2524 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2524 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2524
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2524
 ms.assetid: e71d17f5-2fc2-416b-8dbd-e9bed85eb33a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6f6a8375edc8db75895b103c6311365d571dc65
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b21a907de69291c6d7fbc23f3ea093271a1ad3b3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2524"></a>Derleyici Hatası C2524
 'yıkıcı': yıkıcı/sonlandırıcıyı 'void' parametre listesi olmalıdır  

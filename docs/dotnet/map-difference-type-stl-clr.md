@@ -1,12 +1,9 @@
 ---
 title: Map::difference_type (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::map::difference_type
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - difference_type member [STL/CLR]
 ms.assetid: 22c80391-f97b-4ac4-9e2d-7f4caa2c5ac8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: ac6e4e93b4724c5b25d17363f89ccdcb3fd2a549
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3176af2c0fbe5845b245666f3697aa63f9ca3c2b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mapdifferencetype-stlclr"></a>map::difference_type (STL/CLR)
 İki öğe arasındaki imzalı uzaklığı türü.  

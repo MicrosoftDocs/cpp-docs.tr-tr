@@ -1,12 +1,9 @@
 ---
 title: hash_multimap::mapped_type (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_multimap::mapped_type
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - mapped_type member [STL/CLR]
 ms.assetid: b97db6a7-9d4e-42f0-a725-ac309f5374bf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 24a5b4d5be8579f4de0e6bcc3479ac82bc324b81
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cafb9c8b860571e18cd21049e4a208c27d59ad75
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hashmultimapmappedtype-stlclr"></a>hash_multimap::mapped_type (STL/CLR)
 Her bir anahtar ile ilişkili bir eşlenen değer türü.  

@@ -1,13 +1,10 @@
 ---
-title: "MFC ActiveX denetimi kapsayıcısı oluşturma | Microsoft Docs"
-ms.custom: 
+title: MFC ActiveX denetimi kapsayıcısı oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.appwiz.activex.container
 dev_langs:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - containers [MFC], creating
 - OLE controls [MFC], containers
 ms.assetid: ec70e137-7c14-4940-bd0e-fd4edcc63ea5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2054a11365cc6f9db7a5608f0b056d0d85ff117d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 322e7feba87b83802299a99ad36b16e35704f2ed
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-an-mfc-activex-control-container"></a>MFC ActiveX Denetimi Kapsayıcısı Oluşturma
 ActiveX denetimi kapsayıcısı çalıştırmak (önceki adıyla OLE) ActiveX denetimi için ortam sağlayan bir üst programdır. Bir uygulama ile veya olmadan MFC ActiveX denetimleri içeren yeteneğine oluşturabilirsiniz, ancak MFC ile yapmak daha kolaydır.  

@@ -1,30 +1,25 @@
 ---
-title: "Ağaç denetimlerini kullanma | Microsoft Docs"
-ms.custom: 
+title: Ağaç denetimlerini kullanma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - CTreeCtrl class [MFC], using
 - tree controls [MFC], about tree controls
 ms.assetid: 4e92941a-e477-4fb1-b1ce-4abeafbef1c1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea3b7e0348cb21aa4338293f7cc1119e380f92dc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5bd7210f2f63d55fc4244a6b88456ede1265c8e9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-tree-controls"></a>Ağaç Denetimlerini Kullanma
 Ağaç denetimi tipik kullanımını ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) deseni izler:  
@@ -33,7 +28,7 @@ Ağaç denetimi tipik kullanımını ([CTreeCtrl](../mfc/reference/ctreectrl-cla
   
 -   Ağaç denetim görüntüleri kullanmak istiyorsanız, bir resim listesi aranarak [SetImageList](../mfc/reference/ctreectrl-class.md#setimagelist). Çağırarak girinti değiştirebilirsiniz [SetIndent](../mfc/reference/ctreectrl-class.md#setindent). Bunu yapmak için iyi bir zamandır bulunduğu [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) (için iletişim kutularındaki denetimler) veya [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) (için görünümler).  
   
--   Verileri çağırarak denetime yerleştirme `CTreeCtrl`'s [InsertItem](../mfc/reference/ctreectrl-class.md#insertitem) işlevi için her bir veri öğesi için bir kez. `InsertItem`tanıtıcı döndürür, daha sonra zaman gibi başvurduğu için kullanabileceğiniz öğesine alt öğeleri ekleniyor. Verileri başlatma için iyi bir zamandır bulunduğu `OnInitDialog` (için iletişim kutularındaki denetimler) veya `OnInitialUpdate` (için görünümler).  
+-   Verileri çağırarak denetime yerleştirme `CTreeCtrl`'s [InsertItem](../mfc/reference/ctreectrl-class.md#insertitem) işlevi için her bir veri öğesi için bir kez. `InsertItem` tanıtıcı döndürür, daha sonra zaman gibi başvurduğu için kullanabileceğiniz öğesine alt öğeleri ekleniyor. Verileri başlatma için iyi bir zamandır bulunduğu `OnInitDialog` (için iletişim kutularındaki denetimler) veya `OnInitialUpdate` (için görünümler).  
   
 -   Kullanıcı denetimi ile etkileşim gibi çeşitli bildirim iletileri gönderir. Her ekleyerek işlemek istediğiniz iletileri işlemek için bir işlev belirtebilirsiniz bir **on_notıfy_reflect** makrosu denetim pencerenin ileti eşlemesi veya ekleyerek bir `ON_NOTIFY` makrosu üst pencerenin ileti eşlemesi için. Bkz: [ağaç denetimi bildirim iletileri](../mfc/tree-control-notification-messages.md) olası bildirimler listesi için bu konudaki sonraki.  
   

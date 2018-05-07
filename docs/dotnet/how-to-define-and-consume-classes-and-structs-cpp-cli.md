@@ -1,36 +1,31 @@
 ---
-title: "Nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI) | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - structs [C++]
 - classes [C++], instantiating
 ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: a0a276854c9f2e27439c2c16e9299d4eaa9243d4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d8356d96b0193566814c0d52173a03a3a79d08d9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>Nasıl yapılır: Sınıfları ve Yapıları Tanımlama ve Kullanma (C++/CLI)
 Bu makalede kullanıcı tanımlı başvuru türleri ve türlerin C + tanımlama ve kullanma gösterilmektedir +/ CLI.  
   
-##  <a name="BKMK_Contents"></a>İçeriği  
+##  <a name="BKMK_Contents"></a> içeriği  
  [Nesne örnek oluşturma](#BKMK_Object_instantiation)  
   
  [Örtük olarak soyut sınıflar](#BKMK_Implicitly_abstract_classes)  
@@ -51,7 +46,7 @@ Bu makalede kullanıcı tanımlı başvuru türleri ve türlerin C + tanımlama 
   
  [Yok ediciler ve sonlandırıcılar](#BKMK_Destructors_and_finalizers)  
   
-##  <a name="BKMK_Object_instantiation"></a>Nesne örnek oluşturma  
+##  <a name="BKMK_Object_instantiation"></a> Nesne örnek oluşturma  
  Başvuru (ref) türleri ve değer türleri, yalnızca yönetilen yığında, yığında veya yerel yığında oluşturulabilir.  
   
 ```  
@@ -105,7 +100,7 @@ int main() {
 }  
 ```  
   
-##  <a name="BKMK_Implicitly_abstract_classes"></a>Örtük olarak soyut sınıflar  
+##  <a name="BKMK_Implicitly_abstract_classes"></a> Örtük olarak soyut sınıflar  
  Bir *örtük olarak soyut sınıf* örneği oluşturulamıyor. Bir sınıfın temel türü bir arabirim ise ve sınıf tüm arabiriminin üye işlevleri uygulamıyor örtük olarak soyut sınıftır.  
   
  Arabirimden türetilen bir sınıftan nesneleri oluşturmak erişemiyorsanız sınıfı örtük olarak soyut neden olabilir. Soyut sınıflar hakkında daha fazla bilgi için bkz: [soyut](../windows/abstract-cpp-component-extensions.md).  
@@ -132,10 +127,10 @@ int main() {
 }  
 ```  
   
-##  <a name="BKMK_Type_visibility"></a>Tür görünürlüğü  
+##  <a name="BKMK_Type_visibility"></a> Tür görünürlüğü  
  Bir derlemeyi başvurulduğunda derlemesindeki türler görünür veya derleme dışına görünür olmasını, ortak dil çalışma zamanı (CLR) türleri görünürlüğünü kontrol edebilirsiniz.  
   
- `public`bir tür içeren kaynak dosyası görünür olduğunu belirten bir `#using` türünü içeren derleme için yönerge.  `private`bir türü içeren kaynak dosyaları için görünür olmamasını gösterir bir `#using` türünü içeren derleme için yönerge. Ancak, özel türleri aynı bütünleştirilmiş kodda içinde görünür. Varsayılan olarak, bir sınıf için görünürlük olduğu `private`.  
+ `public` bir tür içeren kaynak dosyası görünür olduğunu belirten bir `#using` türünü içeren derleme için yönerge.  `private` bir türü içeren kaynak dosyaları için görünür olmamasını gösterir bir `#using` türünü içeren derleme için yönerge. Ancak, özel türleri aynı bütünleştirilmiş kodda içinde görünür. Varsayılan olarak, bir sınıf için görünürlük olduğu `private`.  
   
  Visual C++ 2005 önce varsayılan olarak, yerel türler derleme dışına ortak erişilebilirlik vardı. Etkinleştirme [Derleyici Uyarısı (düzey 1) C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) özel yerel türler yanlış kullanıldığı görmenize yardımcı olmak için. Kullanım [make_public](../preprocessor/make-public.md) pragma değiştiremeyeceğiniz bir kaynak kodu dosyasının yerel tür ortak erişilebilirlik vermek için.  
   
@@ -228,8 +223,8 @@ int main() {
 in Public_Class  
 ```  
   
-##  <a name="BKMK_Member_visibility"></a>Üye görünürlüğü  
- Erişim aynı bütünleştirilmiş kod içinde bir ortak sınıf üyesi için farklı erişim içinden derleme dışına erişim tanımlayıcıları çiftlerini kullanarak yapabileceğiniz `public`, `protected`, ve`private`  
+##  <a name="BKMK_Member_visibility"></a> Üye görünürlüğü  
+ Erişim aynı bütünleştirilmiş kod içinde bir ortak sınıf üyesi için farklı erişim içinden derleme dışına erişim tanımlayıcıları çiftlerini kullanarak yapabileceğiniz `public`, `protected`, ve `private`  
   
  Bu tabloda, çeşitli erişim tanımlayıcıları etkisini özetlenmektedir:  
   
@@ -238,7 +233,7 @@ in Public_Class
 |public|Üye içinden ve dışından derleme erişilebilir.  Bkz: [ortak](../cpp/public-cpp.md) daha fazla bilgi için.|  
 |private|Üye içinde ne derleme dışına erişilebilir değil.  Bkz: [özel](../cpp/private-cpp.md) daha fazla bilgi için.|  
 |protected|Üye içinde ve derleme dışına, ancak yalnızca türetilmiş türler erişilebilir.  Bkz: [korumalı](../cpp/protected-cpp.md) daha fazla bilgi için.|  
-|internal|Derleme içindeki ortak ancak derleme dışına özel üyesidir.  `internal`bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md).|  
+|internal|Derleme içindeki ortak ancak derleme dışına özel üyesidir.  `internal` bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md).|  
 |Genel korumalı - veya - korumalı ortak|Derleme içindeki ortak ancak derleme dışına korumalı üyesidir.|  
 |Özel korumalı - veya - korumalı özel|Üye derlemesi içinde korumalı ancak derleme dışına özel değildir.|  
   
@@ -418,7 +413,7 @@ exiting function of derived class
 =======================  
 ```  
   
-##  <a name="BKMK_Public_and_private_native_classes"></a>Ortak ve özel yerel sınıfları  
+##  <a name="BKMK_Public_and_private_native_classes"></a> Ortak ve özel yerel sınıfları  
  Yerel tür yönetilen türünden başvurulabilir.  Örneğin, bir yönetilen türü işlevinde yerel yapı türü olan bir parametre alabilir.  Yönetilen tür ve işlevi bir derlemede ortak sonra yerel tür Ayrıca ortak olması gerekir.  
   
 ```  
@@ -459,7 +454,7 @@ int main() {
 }  
 ```  
   
-##  <a name="BKMK_Static_constructors"></a>Statik oluşturucular  
+##  <a name="BKMK_Static_constructors"></a> Statik oluşturucular  
  Bir CLR türü — örneğin, bir sınıf veya yapı — statik veri üyeleri başlatmak için kullanılan statik bir oluşturucuya sahip.  Statik Oluşturucu en fazla bir kez çağrılır ve türü herhangi bir statik üyenin ilk kez erişmeden önce çağrılır.  
   
  Örnek oluşturucu statik Oluşturucu sonra her zaman çalışır.  
@@ -505,7 +500,7 @@ in static constructor
 11  
 ```  
   
-##  <a name="BKMK_Semantics_of_the_this_pointer"></a>Bu semantiği işaretçi  
+##  <a name="BKMK_Semantics_of_the_this_pointer"></a> Bu semantiği işaretçi  
  Visual C++ türlerini tanımlamak için kullandığınız zaman `this` işaretçidir bir başvuru türü "tanıtıcısı" tür. `this` İşaretçidir değer türünde "iç işaretçi" tür.  
   
  Bu farklı semantiği `this` işaretçi varsayılan dizin oluşturucu çağrıldığında beklenmeyen davranışlara neden olabilir. Sonraki örnek hem ref türü hem de bir değer türü varsayılan oluşturucuda erişmek için doğru bir şekilde gösterir.  
@@ -560,7 +555,7 @@ int main() {
 10.89  
 ```  
   
-##  <a name="BKMK_Hide_by_signature_functions"></a>İmzaya göre Gizle işlevleri  
+##  <a name="BKMK_Hide_by_signature_functions"></a> İmzaya göre Gizle işlevleri  
  Türetilmiş sınıf işlevi aynı sayıda veya parametre türünü bile yoksa standart C++'da, bir taban sınıf işlevinde türetilen bir sınıfta aynı ada sahip bir işlev tarafından gizlenmiş. Bu olarak adlandırılır *ada göre Gizle* semantiği. Hem adı hem de parametre listesi aynı olması durumunda bir başvuru türü bir taban sınıf işlevinde yalnızca türetilmiş bir sınıf içindeki bir işlev tarafından gizlenebilir. Bu olarak bilinir *imzaya göre Gizle* semantiği.  
   
  Tüm işlevlerini meta veriler işaretlendiğinde bir sınıf bir imzaya göre Gizle sınıf olarak kabul edilir `hidebysig`. Varsayılan olarak, altında oluşturulan tüm sınıflar **/CLR** sahip `hidebysig` işlevleri. Bir sınıf olduğunda `hidebysig` İşlevler, derleyici değil Gizle işlevleri doğrudan tüm temel sınıflar ada göre ancak bir devralma zincirini ada göre Gizle sınıfında derleyici karşılaşırsa, bu ada göre Gizle davranışı devam eder.  
@@ -670,7 +665,7 @@ Derived::Test4
 97  
 ```  
   
-##  <a name="BKMK_Copy_constructors"></a>Kopya oluşturucuları  
+##  <a name="BKMK_Copy_constructors"></a> Kopya oluşturucuları  
  C++ standart bir nesne taşındığında sağlayacak şekilde bir nesne oluşturulur ve aynı adresinde yok kopya Oluşturucu çağrılır söyler.  
   
  Ancak, ne zaman **/CLR** derleme ve yerel bir işlev yerel sınıfı burada MSIL çağrıları için derlenmiş bir işlev için kullanılan — ya da birden fazla — değer ve yerel sınıfı sahip olduğu bir kopya oluşturucu ve/veya yıkıcı, hiçbir kopya tarafından geçirilen Oluşturucu çağrılır ve nesne oluşturulduğu daha farklı adresindeki yok. Sınıfın bir işaretçi kendisini içine varsa ya da kod adresine göre izleme nesnelerini bu sorunlara neden olabilir.  
@@ -735,7 +730,7 @@ S object 1 being destroyed, this=0018F37C
 S object 0 being destroyed, this=0018F378  
 ```  
   
-##  <a name="BKMK_Destructors_and_finalizers"></a>Yok ediciler ve sonlandırıcılar  
+##  <a name="BKMK_Destructors_and_finalizers"></a> Yok ediciler ve sonlandırıcılar  
  Bir başvuru türü yıkıcılarda bir belirleyici temizleyin kaynakların gerçekleştirin. Sonlandırıcılar yönetilmeyen kaynakları temizlemek ve belirleyici biçimde yıkıcı veya belirleyici olmayan şekilde atık toplayıcı tarafından çağrılabilir. Standart c++ Yıkıcılar hakkında daha fazla bilgi için bkz: [Yıkıcılar](../cpp/destructors-cpp.md).  
   
 ```  

@@ -1,12 +1,9 @@
 ---
 title: CUtlProps::GetPropValue | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CUtlProps::GetPropValue
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - GetPropValue method
 ms.assetid: 9a3fbadb-7814-48f7-96a4-b960fc4ecf2e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 819ce368f636f0470da17d5f3701601c8882f26f
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 00f56c317f9325fa51f7165fc3872b1e4ca6e9da
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cutlpropsgetpropvalue"></a>CUtlProps::GetPropValue
 Bir özelliği bir özellik kümesinden alır.  

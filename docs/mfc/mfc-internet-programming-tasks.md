@@ -1,30 +1,25 @@
 ---
-title: "MFC Internet programlama görevleri | Microsoft Docs"
-ms.custom: 
+title: MFC Internet programlama görevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Internet applications [MFC], getting started
 - Internet applications [MFC], first steps
 ms.assetid: 6377e9b8-07c4-4380-b63b-05f5a9061313
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd726860e181eb352d7368f31a31d2cbd7489000
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: df7efbc8d29b2e36c6911255389cc270e7bf5e37
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-internet-programming-tasks"></a>MFC Internet Programlama Görevleri
 Bu bölüm, uygulamalarınızı Internet desteği eklemek için ayrıntılı adımlar içerir. Mevcut uygulamalarınızı Internet etkinleştir MFC sınıfları kullanma ve etkin belge desteği, varolan bir COM bileşeni eklemek nasıl konuları içerir. En güncel stok teklifler, Pittsburgh'ın futbol puanları, bir belge oluşturmak istiyor musunuz ve en son sıcaklık Antarktika Microsoft teknolojileri Internet üzerinden yapmanıza yardımcı olmak için çeşitli sağlar.  

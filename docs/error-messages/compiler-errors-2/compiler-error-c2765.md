@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2765 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2765 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2765
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2765
 ms.assetid: 47ad86f3-a7e0-47ad-85ff-0f5534458cb9
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec01af8ee743ff9eeccce11ed42c047149457ce6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 926cc1657db67530f866a2b2e00e4b23f4ccd0bb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2765"></a>Derleyici Hatası C2765
 'function': herhangi bir varsayılan bağımsız değişkeni bir işlev şablonunun açık alt uzmanlaşması sahip olamaz  

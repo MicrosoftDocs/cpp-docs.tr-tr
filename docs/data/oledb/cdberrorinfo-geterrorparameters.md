@@ -1,12 +1,9 @@
 ---
-title: CDBErrorInfo::GetErrorParameters | Microsoft Docs
-ms.custom: 
+title: Cdberrorınfo::geterrorparameters | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL.CDBErrorInfo.GetErrorParameters
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - GetErrorParameters method
 ms.assetid: 3a2dd8e2-fecc-4315-9f2b-ce3138cdd187
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 703de648f78111c3fd14f214c19571ac40d4bc63
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 8765482b3f3bd47acee00c1c345ba7b96b228c51
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdberrorinfogeterrorparameters"></a>CDBErrorInfo::GetErrorParameters
 Çağrıları [IErrorRecords::GetErrorParameters](https://msdn.microsoft.com/en-us/library/ms715793.aspx) hata parametreleri dönün.  

@@ -1,12 +1,9 @@
 ---
 title: greater_equal (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::greater_equal
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - greater_equal function [STL/CLR]
 ms.assetid: 4d4d8301-72dd-4a06-a652-5237e1e72a88
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2d66689ff8b9cddb1ac2e88cb5e4c01f9f09b4ca
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5642fe8e4c2567d63b69fcfc5156f248e7b39bd3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="greaterequal-stlclr"></a>greater_equal (STL/CLR)
 Şablon sınıfı bir functor açıklar, çağrıldığında, yalnızca ilk bağımsız değişkeni sıfırdan büyük veya ona eşit olup olmadığını true değerini döndürür. Kullandığınız kendi bağımsız değişken türü bakımından işlevi nesnesi belirtin.  

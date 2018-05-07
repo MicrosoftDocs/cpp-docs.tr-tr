@@ -1,13 +1,10 @@
 ---
-title: "Gri ve Titremeli bit eşlem işlevleri | Microsoft Docs"
-ms.custom: 
+title: Gri ve Titremeli bit eşlem işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - AFXWIN/AfxDrawGrayBitmap
 - AFXWIN/AfxGetGrayBitmap
@@ -18,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - gray and dithered bitmap functions [MFC]
 ms.assetid: cb139a77-b85e-4504-9d93-24156ad77a41
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f895fb22e4f4d2649cdec1e4c9925b69b013e49
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: de887cdbe80642925bc935eb48726a59850f6f96
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="gray-and-dithered-bitmap-functions"></a>Gri ve Titremeli Bit Eşlem İşlevleri
 **Gri bit eşlem işlevleri**  
@@ -53,7 +48,7 @@ ms.lasthandoff: 12/21/2017
 |[AfxDrawDitheredBitmap](#afxdrawditheredbitmap)|Titremeli arka plana sahip bir bit eşlem çizer.|  
 |[AfxGetDitheredBitmap](#afxgetditheredbitmap)|Titremeli arka plana sahip bir bit eşlem kopyalar.|  
   
-##  <a name="afxdrawgraybitmap"></a>AfxDrawGrayBitmap  
+##  <a name="afxdrawgraybitmap"></a>  AfxDrawGrayBitmap  
  Bir bit eşlem gri sürümü çizer.  
   
 ```   
@@ -72,7 +67,7 @@ void AFXAPI AfxDrawGrayBitmap(
  *x*  
  Hedef x koordinatı.  
   
- *y*  
+ *Y*  
  Hedef y koordinatı.  
   
  `rSrc`  
@@ -92,7 +87,7 @@ void AFXAPI AfxDrawGrayBitmap(
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
 
-##  <a name="afxgetgraybitmap"></a>AfxGetGrayBitmap  
+##  <a name="afxgetgraybitmap"></a>  AfxGetGrayBitmap  
  Bir bit eşlem gri sürümünü kopyalar.  
   
 ```   
@@ -123,7 +118,7 @@ void AFXAPI AfxGetGrayBitmap(
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="afxdrawditheredbitmap"></a>AfxDrawDitheredBitmap  
+##  <a name="afxdrawditheredbitmap"></a>  AfxDrawDitheredBitmap  
  Arka plan Titremeli (denetleyicisi) deseni ile değiştirme bir bit eşlem çizer.  
   
 ```   
@@ -143,7 +138,7 @@ void AFXAPI AfxDrawDitheredBitmap(
  *x*  
  Hedef x koordinatı.  
   
- *y*  
+ *Y*  
  Hedef y koordinatı.  
   
  `rSrc`  
@@ -167,7 +162,7 @@ void AFXAPI AfxDrawDitheredBitmap(
  **Başlık:** afxwin.h  
 
 
-##  <a name="afxgetditheredbitmap"></a>AfxGetDitheredBitmap  
+##  <a name="afxgetditheredbitmap"></a>  AfxGetDitheredBitmap  
  Arka plan Titremeli (denetleyicisi) deseni ile değiştirme bir bit eşlem kopyalar.  
   
 ```   

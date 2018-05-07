@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2757 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2757 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2757
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2757
 ms.assetid: 421f102f-8a32-4d47-a109-811ddf2c909d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6100e413c599a9aa6300e6cd7c675c6e2b156178
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 14a65233ae0ad0a925d0b0d18cbc1b196fa5949a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2757"></a>Derleyici Hatası C2757
 'simgesi': Bu ada sahip bir sembolü zaten var ve bu nedenle bu ad ad alanı adı kullanılamaz  

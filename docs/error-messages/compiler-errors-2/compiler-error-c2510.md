@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2510 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2510 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2510
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2510
 ms.assetid: bf6d28db-f2f4-48f8-8f4e-7d662ed278fe
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bbc9e19a6eed3825f6625f1447266c96f9df2ebd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 555d6d30f78c82e4c37e9fd5a047f62018b3d3d7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2510"></a>Derleyici Hatası C2510
 'tanımlayıcısı': sol '::' sınıfı/struct/UNION olmalıdır  

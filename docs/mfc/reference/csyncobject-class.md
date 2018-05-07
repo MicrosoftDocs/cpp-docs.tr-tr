@@ -1,12 +1,9 @@
 ---
-title: "CSyncObject sınıfı | Microsoft Docs"
-ms.custom: 
+title: CSyncObject sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CSyncObject
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - CSyncObject [MFC], Unlock
 - CSyncObject [MFC], m_hObject
 ms.assetid: c62ea6eb-a17b-4e01-aed4-321fc435a5f4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b0c5f53c80bed1814295fd190cf73675a269b32
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1712f0d26fc0d9ac3dcfb0f2a15a906351f43154
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="csyncobject-class"></a>CSyncObject sınıfı
 Win32 eşitleme nesneleri için ortak işlevselliği sağlayan bir saf sanal sınıf.  
@@ -84,7 +79,7 @@ class CSyncObject : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxmt.h  
   
-##  <a name="csyncobject"></a>CSyncObject::CSyncObject  
+##  <a name="csyncobject"></a>  CSyncObject::CSyncObject  
  Verilen ada sahip bir eşitleme nesnesi oluşturur.  
   
 ```  
@@ -96,7 +91,7 @@ virtual ~CSyncObject();
  `pstrName`  
  Nesnenin adı. Varsa **NULL**, *pstrName* null olur.  
   
-##  <a name="lock"></a>CSyncObject::Lock  
+##  <a name="lock"></a>  CSyncObject::Lock  
  Eşitleme nesnesi tarafından denetlenen kaynak erişim kazanmak için bu işlevini çağırın.  
   
 ```  
@@ -113,14 +108,14 @@ virtual BOOL Lock(DWORD dwTimeout = INFINITE);
 ### <a name="remarks"></a>Açıklamalar  
  Eşitleme nesnesi işaret edildiyse `Lock` başarıyla döndürür ve iş parçacığı şimdi nesnenin sahibi. Eşitleme nesnesi nonsignaled ise (kullanılamaz), `Lock` eşitleme nesne belirtilen milisaniye sayısı kadar işaret hale bekleyecek *dwTimeOut* parametresi. Eşitleme nesnesi belirtilen sürede, işaret hale değil, `Lock` hatasını döndürür.  
   
-##  <a name="m_hobject"></a>CSyncObject::m_hObject  
+##  <a name="m_hobject"></a>  CSyncObject::m_hObject  
  Eşitleme nesnesini için tanıtıcı.  
   
 ```  
 HANDLE m_hObject;  
 ```  
   
-##  <a name="operator_handle"></a>CSyncObject::operator TANITICISI  
+##  <a name="operator_handle"></a>  CSyncObject::operator TANITICISI  
  İşleyicisini almak için bu işleci kullanın `CSyncObject` nesnesi.  
   
 ```  
@@ -133,7 +128,7 @@ operator HANDLE() const;
 ### <a name="remarks"></a>Açıklamalar  
  Windows API'larını doğrudan çağırmak için tanıtıcı kullanabilirsiniz.  
   
-##  <a name="unlock"></a>CSyncObject::Unlock  
+##  <a name="unlock"></a>  CSyncObject::Unlock  
  Bildirimi `Unlock` saf sanal işlevi parametresiz olduğu ve türetme tüm sınıflar tarafından geçersiz kılınmalıdır `CSyncObject`.  
   
 ```  

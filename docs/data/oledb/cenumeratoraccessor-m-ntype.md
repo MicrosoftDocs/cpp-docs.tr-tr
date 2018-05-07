@@ -1,12 +1,9 @@
 ---
 title: CEnumeratorAccessor::m_nType | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL::CEnumeratorAccessor::m_nType
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - m_nType
 ms.assetid: e01e5ab9-9aae-4191-87cc-4f7aa010ac4e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1dcce8fdc40fd1ef771f59b1be48b15401bddc00
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 25107b0678b7aa99a9920cadd812a3ab0537983b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cenumeratoraccessormntype"></a>CEnumeratorAccessor::m_nType
 Satır bir veri kaynağı veya bir numaralandırıcı tanımlayıp tanımlamadığını belirten bir değişken.  

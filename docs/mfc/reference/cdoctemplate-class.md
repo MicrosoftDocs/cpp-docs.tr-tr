@@ -1,12 +1,9 @@
 ---
-title: "CDocTemplate sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDocTemplate sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CDocTemplate
@@ -55,17 +52,15 @@ helpviewer_keywords:
 - CDocTemplate [MFC], SetPreviewInfo
 - CDocTemplate [MFC], SetServerInfo
 ms.assetid: 14b41a1f-bf9d-4eac-b6a8-4c54ffcc77f6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71d44aac1ca7a018be7be1b375dd92920af96dba
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7674e9a25f4794d40a977fce914ab6ac0131de25
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdoctemplate-class"></a>CDocTemplate sınıfı
 Belge şablonları için temel işlevleri tanımlar Özet bir temel sınıf.  
@@ -141,7 +136,7 @@ class CDocTemplate : public CCmdTarget
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="adddocument"></a>CDocTemplate::AddDocument  
+##  <a name="adddocument"></a>  CDocTemplate::AddDocument  
  Bir belge için bir şablon eklemek için bu işlevi kullanın.  
   
 ```  
@@ -155,7 +150,7 @@ virtual void AddDocument(CDocument* pDoc);
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen sınıflar [CMultiDocTemplate](../../mfc/reference/cmultidoctemplate-class.md) ve [CSingleDocTemplate](../../mfc/reference/csingledoctemplate-class.md) bu işlevi geçersiz. Kendi belge şablonu sınıfından türetilen varsa `CDocTemplate`, bu işlev, türetilmiş bir sınıf geçersiz kılmanız gerekir.  
   
-##  <a name="cdoctemplate"></a>CDocTemplate::CDocTemplate  
+##  <a name="cdoctemplate"></a>  CDocTemplate::CDocTemplate  
  Oluşturan bir `CDocTemplate` nesnesi.  
   
 ```  
@@ -196,7 +191,7 @@ CDocTemplate (
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi oluşturmak için kullandığı bir `CDocTemplate` nesnesi. Dinamik olarak ayırabilir bir `CDocTemplate` nesne ve ona geçirin [CWinApp::AddDocTemplate](../../mfc/reference/cwinapp-class.md#adddoctemplate) gelen `InitInstance` uygulama sınıfının üye işlevi.  
   
-##  <a name="closealldocuments"></a>CDocTemplate::CloseAllDocuments  
+##  <a name="closealldocuments"></a>  CDocTemplate::CloseAllDocuments  
  Tüm açık belgeleri kapatmak için bu üye işlevini çağırın.  
   
 ```  
@@ -212,7 +207,7 @@ virtual void CloseAllDocuments(BOOL bEndSession);
   
  Belge kapatılmadan önce özel temizleme işleme gerçekleştirmek kullanıcının gerektiren istiyorsanız, bu işlev geçersiz kılar. Örneğin, bir veritabanındaki bir kaydı belgeyi temsil ediyorsa, veritabanını kapatmak için bu işlevi geçersiz isteyebilirsiniz.  
   
-##  <a name="createnewdocument"></a>CDocTemplate::CreateNewDocument  
+##  <a name="createnewdocument"></a>  CDocTemplate::CreateNewDocument  
  Bu belge şablonuyla ilişkili türü yeni bir belge oluşturmak için bu üye işlevini çağırın.  
   
 ```  
@@ -222,7 +217,7 @@ virtual CDocument* CreateNewDocument();
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni oluşturulan belge için bir işaretçi veya **NULL** bir hata oluşursa.  
   
-##  <a name="createnewframe"></a>CDocTemplate::CreateNewFrame  
+##  <a name="createnewframe"></a>  CDocTemplate::CreateNewFrame  
  Bir belge ve görünüm içeren yeni bir çerçeve penceresi oluşturur.  
   
 ```  
@@ -242,11 +237,11 @@ virtual CFrameWnd* CreateNewFrame(
  Yeni oluşturulan çerçeve penceresi için bir işaretçi veya **NULL** bir hata oluşursa.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CreateNewFrame`kullanan `CRuntimeClass` nesneleri geçirilen bir görünüm ve ekli belgeyi ile yeni bir çerçeve penceresi oluşturma Oluşturucu. Varsa `pDoc` parametresi **NULL**, izleme iletisi framework çıkarır.  
+ `CreateNewFrame` kullanan `CRuntimeClass` nesneleri geçirilen bir görünüm ve ekli belgeyi ile yeni bir çerçeve penceresi oluşturma Oluşturucu. Varsa `pDoc` parametresi **NULL**, izleme iletisi framework çıkarır.  
   
  `pOther` Parametresi penceresi yeni komutu uygulamak için kullanılır. Yeni bir çerçeve penceresi modellemek bir çerçeve penceresinde sağlar. Yeni bir çerçeve penceresi çoğunlukla görünmeyen oluşturulur. Çerçeve pencereleri dosya yeni ve Dosya Aç standart framework uygulamasını dışında oluşturmak için bu işlevini çağırın.  
   
-##  <a name="createoleframe"></a>CDocTemplate::CreateOleFrame  
+##  <a name="createoleframe"></a>  CDocTemplate::CreateOleFrame  
  OLE çerçeve penceresi oluşturur.  
   
 ```  
@@ -272,7 +267,7 @@ CFrameWnd* CreateOleFrame(
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `bCreateView` sıfırsa, boş bir çerçeve oluşturulur.  
   
-##  <a name="getdocstring"></a>CDocTemplate::GetDocString  
+##  <a name="getdocstring"></a>  CDocTemplate::GetDocString  
  Belge türü ile ilişkili bir dize alır.  
   
 ```  
@@ -310,7 +305,7 @@ virtual BOOL GetDocString(
   
  Yalnızca kendi sınıfından türetilen ise bu işlev çağrısı `CDocTemplate`.  
   
-##  <a name="getfirstdocposition"></a>CDocTemplate::GetFirstDocPosition  
+##  <a name="getfirstdocposition"></a>  CDocTemplate::GetFirstDocPosition  
  Bu şablonla ilişkili ilk belgenin konumunu alır.  
   
 ```  
@@ -325,7 +320,7 @@ virtual POSITION GetFirstDocPosition() const = 0;
   
  [CSingleDocTemplate](../../mfc/reference/csingledoctemplate-class.md) ve [CMultiDocTemplate](../../mfc/reference/cmultidoctemplate-class.md) hem de bu saf sanal işlevi geçersiz. Öğesinden türetilen herhangi bir sınıf `CDocTemplate` Ayrıca bu işlev geçersiz kılmanız gerekir.  
   
-##  <a name="getnextdoc"></a>CDocTemplate::GetNextDoc  
+##  <a name="getnextdoc"></a>  CDocTemplate::GetNextDoc  
  Tarafından tanımlanan liste öğesi alır `rPos`, ardından ayarlar `rPos` için **konumu** listesinde sonraki girdisinin değeri.  
   
 ```  
@@ -346,7 +341,7 @@ virtual CDocument* GetNextDoc(POSITION& rPos) const = 0;
   
  Emin olmanız gerekir, **konumu** değer listesinde geçerli bir konumu temsil eder. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.  
   
-##  <a name="initialupdateframe"></a>CDocTemplate::InitialUpdateFrame  
+##  <a name="initialupdateframe"></a>  CDocTemplate::InitialUpdateFrame  
  Çerçeve penceresi başlatır ve isteğe bağlı olarak görünür yapar.  
   
 ```  
@@ -371,7 +366,7 @@ virtual void InitialUpdateFrame(
   
  Framework'ün uygulama ve dosya yeni dosya Aç kullanırken bu işlevi çağırmak gerekli değildir.  
   
-##  <a name="loadtemplate"></a>CDocTemplate::LoadTemplate  
+##  <a name="loadtemplate"></a>  CDocTemplate::LoadTemplate  
  Kaynaklar için yükleyen bir verilen `CDocTemplate` veya türetilmiş bir sınıf.  
   
 ```  
@@ -381,7 +376,7 @@ virtual void LoadTemplate();
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi için kaynakları yüklemek için framework tarafından çağrılan bir verilen `CDocTemplate` veya türetilmiş bir sınıf. Şablon genel oluşturulmuyor normalde, oluşturma sırasında dışında denir. Bu durumda, çağrısı `LoadTemplate` kadar Gecikmeli [CWinApp::AddDocTemplate](../../mfc/reference/cwinapp-class.md#adddoctemplate) olarak adlandırılır.  
   
-##  <a name="matchdoctype"></a>CDocTemplate::MatchDocType  
+##  <a name="matchdoctype"></a>  CDocTemplate::MatchDocType  
  Bir belge türü ve bu şablonu arasında eşleşme güven düzeyini belirler.  
   
 ```  
@@ -423,7 +418,7 @@ enum Confidence
   
  Varsayılan uygulama döndürmez **CDocTemplate::maybeAttemptForeign** veya **CDocTemplate::maybeAttemptNative**. Türüyle eşleşen belki de bu iki değerleri kullanarak uygulamanıza uygun mantığını uygulamak için bu işlevi geçersiz **güvenirlik** numaralandırması.  
   
-##  <a name="opendocumentfile"></a>CDocTemplate::OpenDocumentFile  
+##  <a name="opendocumentfile"></a>  CDocTemplate::OpenDocumentFile  
  Bir yol tarafından belirtilen bir dosyayı açar.  
   
 ```  
@@ -435,11 +430,11 @@ virtual CDocument* OpenDocumentFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszPathName`  
+ [in] `lpszPathName`  
  İşaretçi açılması belgeye içeren dosyanın yolu.  
   
- [in]`bAddToMRU`  
- `TRUE`Belgenin en son dosyalardan biri olduğunu gösterir; `FALSE` belgenin en son dosyalardan biri olmadığını gösterir.  
+ [in] `bAddToMRU`  
+ `TRUE` Belgenin en son dosyalardan biri olduğunu gösterir; `FALSE` belgenin en son dosyalardan biri olmadığını gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi olarak adlandırılan, dosya belge `lpszPathName`; `NULL` başarısız olursa.  
@@ -447,7 +442,7 @@ virtual CDocument* OpenDocumentFile(
 ### <a name="remarks"></a>Açıklamalar  
  Dizinin yolu tarafından belirtilen dosya açılır `lpszPathName`. Varsa `lpszPathName` olan `NULL`, bir belge türü bu şablonla ilişkili içeren yeni bir dosya oluşturulur.  
   
-##  <a name="removedocument"></a>CDocTemplate::RemoveDocument  
+##  <a name="removedocument"></a>  CDocTemplate::RemoveDocument  
  Gösterdiği belgeyi kaldırır `pDoc` bu şablonla ilişkili belgeleri listesinden.  
   
 ```  
@@ -461,7 +456,7 @@ virtual void RemoveDocument(CDocument* pDoc);
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen sınıflar `CMultiDocTemplate` ve `CSingleDocTemplate` bu işlevi geçersiz. Kendi belge şablonu sınıfından türetilen varsa `CDocTemplate`, bu işlev, türetilmiş bir sınıf geçersiz kılmanız gerekir.  
   
-##  <a name="saveallmodified"></a>CDocTemplate::SaveAllModified  
+##  <a name="saveallmodified"></a>  CDocTemplate::SaveAllModified  
  Değiştirilmiş tüm belgeleri kaydeder.  
   
 ```  
@@ -471,7 +466,7 @@ virtual BOOL SaveAllModified();
 ### <a name="return-value"></a>Dönüş Değeri  
  Sıfır dışı başarılıysa; Aksi takdirde 0.  
   
-##  <a name="setcontainerinfo"></a>CDocTemplate::SetContainerInfo  
+##  <a name="setcontainerinfo"></a>  CDocTemplate::SetContainerInfo  
  OLE kapsayıcıları için kaynakları, bir yerinde OLE öğesi düzenlerken belirler.  
   
 ```  
@@ -487,7 +482,7 @@ void SetContainerInfo(UINT nIDOleInPlaceContainer);
   
  İle ilişkili menü `nIDOleInPlaceContainer` birleştirmek için etkinleştirilmiş yerinde öğesi menü kapsayıcı uygulama menüsüyle izin ayırıcılar içerir. Sunucu ve kapsayıcı menülerini birleştirme hakkında daha fazla bilgi için bkz: [menüleri ve kaynakları (OLE)](../../mfc/menus-and-resources-ole.md).  
   
-##  <a name="setdefaulttitle"></a>CDocTemplate::SetDefaultTitle  
+##  <a name="setdefaulttitle"></a>  CDocTemplate::SetDefaultTitle  
  Belgenin varsayılan başlık yüklemek ve belgenin başlık çubuğunda görüntülemek için bu işlevini çağırın.  
   
 ```  
@@ -501,7 +496,7 @@ virtual void SetDefaultTitle(CDocument* pDocument) = 0;
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan başlığı hakkında daha fazla bilgi için açıklamasına bakın **CDocTemplate::docName** içinde [CDocTemplate::GetDocString](#getdocstring).  
   
-##  <a name="setserverinfo"></a>CDocTemplate::SetServerInfo  
+##  <a name="setserverinfo"></a>  CDocTemplate::SetServerInfo  
  Sunucu belgesinin katıştırılır veya yerinde düzenlenmiş olduğunda kaynakları ve sınıfları belirler.  
   
 ```  
@@ -530,7 +525,7 @@ void SetServerInfo(
   
  İle ilişkili menü `nIDOleInPlaceServer` birleştirmek sunucu menüsü kapsayıcısının menüsüyle izin ayırıcılar içerir. Sunucu ve kapsayıcı menülerini birleştirme hakkında daha fazla bilgi için bkz: [menüleri ve kaynakları (OLE)](../../mfc/menus-and-resources-ole.md).  
   
-##  <a name="createpreviewframe"></a>CDocTemplate::CreatePreviewFrame  
+##  <a name="createpreviewframe"></a>  CDocTemplate::CreatePreviewFrame  
  Zengin önizlemesi için kullanılan bir alt çerçeve oluşturur.  
   
 ```  
@@ -551,7 +546,7 @@ CFrameWnd* CreatePreviewFrame(
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setpreviewinfo"></a>CDocTemplate::SetPreviewInfo  
+##  <a name="setpreviewinfo"></a>  CDocTemplate::SetPreviewInfo  
  İşlem Önizleme işleyicisi dışı ayarlar.  
   
 ```  

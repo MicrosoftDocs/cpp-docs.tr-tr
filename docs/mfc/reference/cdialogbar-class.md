@@ -1,12 +1,9 @@
 ---
-title: "CDialogBar sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDialogBar sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CDialogBar
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CDialogBar [MFC], CDialogBar
 - CDialogBar [MFC], Create
 ms.assetid: da2f7a30-970c-44e3-87f0-6094bd002cab
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5663d093022345036f623dd344bae738e0acf5eb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7dbb2d8202e9b87d2825b7d40a0dde4323246aa0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdialogbar-class"></a>CDialogBar sınıfı
 Denetim çubuğu Windows kalıcı olmayan iletişim kutusunda işlevselliğini sağlar.  
@@ -78,14 +73,14 @@ class CDialogBar : public CControlBar
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxext.h  
   
-##  <a name="cdialogbar"></a>CDialogBar::CDialogBar  
+##  <a name="cdialogbar"></a>  CDialogBar::CDialogBar  
  Oluşturan bir `CDialogBar` nesnesi.  
   
 ```  
 CDialogBar();
 ```  
   
-##  <a name="create"></a>CDialogBar::Create  
+##  <a name="create"></a>  CDialogBar::Create  
  İletişim kutusu kaynak şablonu tarafından belirtilen yükler `lpszTemplateName` veya `nIDTemplate`iletişim çubuğu pencere oluşturur, stilini ayarlar ve ile ilişkilendirir `CDialogBar` nesnesi.  
   
 ```  
@@ -113,13 +108,13 @@ virtual BOOL Create(
  `nStyle`  
  Araç çubuğu stili. Desteklenen ek araç çubuğu stilleri şunlardır:  
   
-- `CBRS_TOP`Denetim çubuğu çerçeve penceresi tepesinde bulunur.  
+- `CBRS_TOP` Denetim çubuğu çerçeve penceresi tepesinde bulunur.  
   
-- `CBRS_BOTTOM`Denetim çubuğu çerçeve penceresinin alt kısmındaki ' dir.  
+- `CBRS_BOTTOM` Denetim çubuğu çerçeve penceresinin alt kısmındaki ' dir.  
   
-- `CBRS_NOALIGN`Üst yeniden boyutlandırıldığında denetim çubuğu yeniden konumlandırılır değil.  
+- `CBRS_NOALIGN` Üst yeniden boyutlandırıldığında denetim çubuğu yeniden konumlandırılır değil.  
   
-- `CBRS_TOOLTIPS`Denetim çubuğu araç ipuçları görüntüler.  
+- `CBRS_TOOLTIPS` Denetim çubuğu araç ipuçları görüntüler.  
   
 - **Cbrs_sıze_dynamıc** denetim çubuğu dinamik.  
   
@@ -127,7 +122,7 @@ virtual BOOL Create(
   
 - **CBRS_FLOATING** denetim çubuğu kayan.  
   
-- `CBRS_FLYBY`Durum çubuğu düğme hakkındaki bilgileri görüntüler.  
+- `CBRS_FLYBY` Durum çubuğu düğme hakkındaki bilgileri görüntüler.  
   
 - **CBRS_HIDE_INPLACE** denetim çubuğu kullanıcıya görüntülenmez.  
   

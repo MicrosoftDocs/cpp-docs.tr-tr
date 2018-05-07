@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı C4355 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı C4355 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4355
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4355
 ms.assetid: b819ecab-8a07-42d7-8fa4-1180d51626c0
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7194431235e1bf375d4e6b99b66bf9a4b32e63a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 13f57b8a7c279b820f4f9fc4a68715804a12e625
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-c4355"></a>Derleyici Uyarısı C4355
 'this' : taban üye başlatıcı listesinde kullanıldı  

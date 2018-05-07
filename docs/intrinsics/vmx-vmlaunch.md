@@ -1,12 +1,9 @@
 ---
 title: __vmx_vmlaunch | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - __vmx_vmlaunch
@@ -16,20 +13,18 @@ helpviewer_keywords:
 - VMLAUNCH instruction
 - __vmx_vmlaunch intrinsic
 ms.assetid: 708f7c38-b7c1-4ee7-bfc4-0daeb9cc9360
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14b7328ad2d9cfebb7416241bad3ca1e5081f2cf
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 926195aa8dc612d3972634f8140ce3fff753a48f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vmxvmlaunch"></a>__vmx_vmlaunch
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Geçerli sanal makine denetim yapısı (Windows VMCS) kullanarak VMX kök olmayan işlemi durumu (VM girin) arama uygulamasında yerleştirir.  
   

@@ -1,13 +1,10 @@
 ---
-title: "Değer türü anlamları | Microsoft Docs"
-ms.custom: 
+title: Değer türü anlamları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - pin_ptr keyword [C++]
 - __pin keyword
 ms.assetid: 7f065589-ad25-4850-baf1-985142e35e52
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 21a7d6bcba2fca3fddd6f5e234663d6791398f5d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 44662f2ad8e79712b4aab17e2784a72e01ec4116
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="value-type-semantics"></a>Değer Türü Anlamları
 Değer türü anlamları, Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirilmiştir.  
@@ -51,7 +46,7 @@ __box V* pvbx = 0; // Form (4) must be local
 ```  
   
 ## <a name="invoking-inherited-virtual-methods"></a>Devralınan sanal yöntemleri çağırma  
- `Form (1)`kurallı değer nesnesidir ve onu makul iyi, birisi devralınan sanal bir yöntem gibi çağrılacak çalıştığında dışında anlaşılmalıdır `ToString()`. Örneğin:  
+ `Form (1)` kurallı değer nesnesidir ve onu makul iyi, birisi devralınan sanal bir yöntem gibi çağrılacak çalıştığında dışında anlaşılmalıdır `ToString()`. Örneğin:  
   
 ```  
 v.ToString(); // error!  
@@ -91,7 +86,7 @@ v.ToString(); // new syntax
  Değer türü yerine bir başvuru türü çift yığın ayırma önlemek için küçük bir yerel sınıfı sarmalama isteriz: yerel tür tutmak için yerel yığın ve yönetilen sarmalayıcıyı tutmak için CLR yığını. Değer türü içinde yerel sınıfı sarmalama yönetilen yığını engellemenize olanak sağlar, ancak yerel yığın bellek kazanılmasını otomatikleştirmek için bir yol sağlar. Başvuru türleri Önemsiz olmayan yerel sınıflarda sarmalamak için içinde yalnızca mümkün yönetilen türüdür.  
   
 ## <a name="interior-pointers"></a>İç işaretçiler  
- `Form (2)`ve `Form (3)` bu world sonraki (diğer bir deyişle, yönetilen veya yerel her şey) neredeyse her şeyi yukarıdaki karşılayabilir. Bu nedenle, örneğin, aşağıdakilerin tümü Yönetilen Uzantılar'izin verilir:  
+ `Form (2)` ve `Form (3)` bu world sonraki (diğer bir deyişle, yönetilen veya yerel her şey) neredeyse her şeyi yukarıdaki karşılayabilir. Bu nedenle, örneğin, aşağıdakilerin tümü Yönetilen Uzantılar'izin verilir:  
   
 ```  
 __value struct V { int i; };  
@@ -126,7 +121,7 @@ V *pv = 0;
 interior_ptr<V> pvgc = nullptr;   
 ```  
   
- `Form (2)`ve `Form (3)` Yönetilen Uzantılar ' eşlenir `interior_ptr<V>`. `Form (4)`İzleme işleyicisidir. Yönetilen yığın Kutulu nesnenin tamamı giderir. Yeni sözdiziminde çevrilmiş bir `V^`,  
+ `Form (2)` ve `Form (3)` Yönetilen Uzantılar ' eşlenir `interior_ptr<V>`. `Form (4)` İzleme işleyicisidir. Yönetilen yığın Kutulu nesnenin tamamı giderir. Yeni sözdiziminde çevrilmiş bir `V^`,  
   
 ```  
 V^ pvbx = nullptr; // __box V* pvbx = 0;    

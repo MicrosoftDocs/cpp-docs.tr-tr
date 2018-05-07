@@ -1,11 +1,8 @@
 ---
-title: "Platform::Collections:: Vector sınıfı | Microsoft Docs"
-ms.custom: 
+title: 'Platform::Collections:: Vector sınıfı | Microsoft Docs'
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::Vector::Vector
@@ -28,17 +25,15 @@ dev_langs:
 helpviewer_keywords:
 - Vector Class (C++/Cx)
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00bf369942289752f7043ce5070618260a90c7ff
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: c7433ed3d1a81704180aa724424a39d39b193f15
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="platformcollectionsvector-class"></a>Platform::Collections:: Vector sınıfı
 
@@ -101,7 +96,7 @@ Kullanmayı denerseniz, bir **vektör** türü ortak dönüş değeri veya param
 |[Vector::RemoveAt](#removeat)|Geçerli vektör belirtilen dizinden tarafından tanımlanan öğesini siler.|
 |[Vector::RemoveAtEnd](#removeatend)|Geçerli vektör ucundaki öğe siler.|
 |[Vector::SetAt](#setat)|Belirtilen dizini tarafından tanımlanan geçerli vektör öğesinde belirtilen değeri atar.|
-|[Vector::Size](#size)|Geçerli vektör nesnesinde öğe sayısını döndürür.|
+|[Vector::size](#size)|Geçerli vektör nesnesinde öğe sayısını döndürür.|
 
 ### <a name="events"></a>Olaylar
 
@@ -132,7 +127,7 @@ virtual void Append(T item);
 
 ### <a name="parameters"></a>Parametreler
 
-*index*  
+*Dizin*  
 Vektör eklenecek öğe. Türü *öğesi* tarafından tanımlanan *T* typename.
 
 ## <a name="clear"></a>  Vector::Clear yöntemi
@@ -177,7 +172,7 @@ virtual T GetAt(unsigned int index);
 
 ### <a name="parameters"></a>Parametreler
 
-*index*  
+*Dizin*  
 Belirli bir öğeyle vektör nesnesinde belirtir sıfır tabanlı, imzalanmamış bir tamsayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -201,7 +196,7 @@ virtual unsigned int GetMany(
 *startIndex*  
 Alınacak öğeleri başlangıcı sıfır tabanlı dizini.
 
-*dest*  
+*Hedef*  
 Belirtilen öğede başlayan öğeleri çağıran tarafından ayrılmış bir dizi *startIndex* ve vektör son öğesi sonunda.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -241,7 +236,7 @@ virtual bool IndexOf(T value, unsigned int* index);
 *value*  
 Bulunacak öğe.
 
-*index*  
+*Dizin*  
 Öğenin sıfır tabanlı dizini varsa parametre *değeri* bulundu; Aksi takdirde, 0.
 
 *Dizin* parametresi ise 0 öğe vektör ilk öğedir veya öğe bulunamadı. Dönüş değeri ise `true`, öğe bulundu ve ilk öğedir; Aksi halde, öğe bulunamadı.
@@ -266,10 +261,10 @@ virtual void InsertAt(unsigned int index, T item)
 
 ### <a name="parameters"></a>Parametreler
 
-*index*  
+*Dizin*  
 Belirli bir öğeyle vektör nesnesinde belirtir sıfır tabanlı, imzalanmamış bir tamsayı.
 
-*item*  
+*Öğesi*  
 Tarafından belirtilen öğesinden sonra vektör eklemek için bir öğe *dizin*. Türü *öğesi* tarafından tanımlanan *T* typename.
 
 ## <a name="removeat"></a>  Vector::RemoveAt yöntemi
@@ -284,7 +279,7 @@ virtual void RemoveAt(unsigned int index);
 
 ### <a name="parameters"></a>Parametreler
 
-*index*  
+*Dizin*  
 Belirli bir öğeyle vektör nesnesinde belirtir sıfır tabanlı, imzalanmamış bir tamsayı.
 
 ## <a name="removeatend"></a>  Vector::RemoveAtEnd yöntemi
@@ -324,10 +319,10 @@ virtual void SetAt(unsigned int index, T item);
 
 ### <a name="parameters"></a>Parametreler
 
-*index*  
+*Dizin*  
 Belirli bir öğeyle vektör nesnesinde belirtir sıfır tabanlı, imzalanmamış bir tamsayı.
 
-*item*  
+*Öğesi*  
 Belirtilen öğe atanacak değer. Türü *öğesi* tarafından tanımlanan *T* typename.
 
 ## <a name="size"></a>  Vector::size yöntemi
@@ -344,7 +339,7 @@ virtual property unsigned int Size;
 
 Geçerli vektör öğe sayısı.
 
-## <a name="ctor"></a>  Vector::Vector Constructor
+## <a name="ctor"></a>  Vector::Vector Oluşturucusu
 
 Vector sınıfı yeni bir örneğini başlatır.
 
@@ -375,10 +370,10 @@ A [std::array](../standard-library/array-class-stl.md) vektör başlatmak için 
 *arr*  
 A [Platform::Array](../cppcx/platform-array-class.md) vektör başlatmak için kullanılır.
 
-*InIt*  
+*Init*  
 Geçerli vektör başlatmak için kullanılan nesneleri koleksiyonu türü.
 
-*il*  
+*IL*  
 A [std::initializer_list](../standard-library/initializer-list-class.md) nesne türü *T* vektör başlatmak için kullanılır.
 
 *N*  
@@ -396,7 +391,7 @@ Bir [Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) için bir [st
 *ptr*  
 İşaretçi bir `std::vector` geçerli vektör başlatmak için kullanılır.
 
-*first*  
+*ilk*  
 Geçerli vektör başlatmak için kullanılan nesnelerinin bir dizisi ilk öğe. Türü *ilk* yoluyla geçirilen *kusursuz iletme*. Daha fazla bilgi için bkz: [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 *Son*  

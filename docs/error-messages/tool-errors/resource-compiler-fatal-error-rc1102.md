@@ -1,12 +1,9 @@
 ---
-title: "Kaynak Derleyicisi önemli hatası RC1102 | Microsoft Docs"
-ms.custom: 
+title: Kaynak Derleyicisi önemli hatası RC1102 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - RC1102
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - RC1102
 ms.assetid: bd2091f8-ef5e-4151-a8d6-98043e9422b6
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe69fe0ebaaeee6359b8407a32417a4cc7f6c68c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4f92c7faf3c5c2d58aabba5ecf4d8d401470cfc5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="resource-compiler-fatal-error-rc1102"></a>Kaynak Derleyicisi Önemli Hatası RC1102
 İç hata: RCPP için çok fazla bağımsız değişken  

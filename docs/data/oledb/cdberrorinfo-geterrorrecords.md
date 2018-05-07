@@ -1,12 +1,9 @@
 ---
-title: CDBErrorInfo::GetErrorRecords | Microsoft Docs
-ms.custom: 
+title: Cdberrorınfo::geterrorrecords | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CDBErrorInfo.GetErrorRecords
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - GetErrorRecords method
 ms.assetid: 07746774-bcca-4833-8f55-a619e9777c17
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5187de6c9150ead2c01c770e09cb1a7e64c48004
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 33e0ab54bc3da570aecba0df347e14a511b0a833
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdberrorinfogeterrorrecords"></a>CDBErrorInfo::GetErrorRecords
 Hata kayıtları için belirtilen nesneyi alır.  

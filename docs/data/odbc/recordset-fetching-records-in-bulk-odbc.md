@@ -1,13 +1,10 @@
 ---
-title: "Kayıt kümesi: Kayıtları toplu (ODBC) yakalama | Microsoft Docs"
-ms.custom: 
+title: 'Kayıt kümesi: Kayıtları toplu (ODBC) yakalama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -23,18 +20,16 @@ helpviewer_keywords:
 - rowsets, bulk row fetching
 - RFX (ODBC), bulk row fetching
 ms.assetid: 20d10fe9-c58a-414a-b675-cdf9aa283e4f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8d9738af557cb8d4dd26b792851f8be276e91380
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8ef8803459edeba98e472a0e7fd07e7f5daf2c4e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="recordset-fetching-records-in-bulk-odbc"></a>Kayıt Kümesi: Kayıtları Toplu Yakalama (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -49,7 +44,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
 -   [Toplu kayıt alanı değişimi uygulamak nasıl](#_core_how_to_implement_bulk_record_field_exchange).  
   
-##  <a name="_core_how_crecordset_supports_bulk_row_fetching"></a>Toplu satır getirme CRecordset nasıl destekler  
+##  <a name="_core_how_crecordset_supports_bulk_row_fetching"></a> Toplu satır getirme CRecordset nasıl destekler  
  Kayıt kümesi nesnenizi açmadan önce bir satır kümesi boyutu ile tanımlayabilirsiniz `SetRowsetSize` üye işlevi. Satır kümesi boyutu, tek bir getirme sırasında kaç kayıt alınması gerektiğini belirtir. Toplu satır getirme uygulandığında varsayılan satır kümesi boyutu 25'tir. Toplu satır getirme uygulanmadıysa, satır kümesi boyutu 1 sabit kalır.  
   
  Satır kümesi boyutunu ayarladıktan sonra arama [açık](../../mfc/reference/crecordset-class.md#open) üye işlevi. Burada, belirtmeniz gerekir `CRecordset::useMultiRowFetch` seçeneği **dwOptions** toplu satır getirme uygulamak için parametre. Ayrıca ayarlayabilirsiniz **CRecordset::userAllocMultiRowBuffers** seçeneği. Toplu kayıt alanı değişimi mekanizması diziler getirme sırasında alınan verilerin birden çok satır depolamak için kullanır. Bu depolama arabellekleri çerçevesi tarafından otomatik olarak ayrılabilen veya el ile ayırın. Belirtme **CRecordset::userAllocMultiRowBuffers** seçeneği ayırma ne yapacağını anlamına gelir.  
@@ -67,7 +62,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
 |[SetRowsetCursorPosition](../../mfc/reference/crecordset-class.md#setrowsetcursorposition)|İmleç bir satır kümesi içinde belirli bir satır taşır.|  
 |[SetRowsetSize](../../mfc/reference/crecordset-class.md#setrowsetsize)|Satır kümesi boyutu ayarı için belirtilen değer değişiklikleri sanal işlev.|  
   
-##  <a name="_core_special_considerations"></a>Özel durumlar  
+##  <a name="_core_special_considerations"></a> Özel durumlar  
  Toplu satır getirme bir performans kazancı olsa da, bazı özellikler farklı çalışır. Toplu satır getirme uygulamaya karar vermeden önce aşağıdakileri göz önünde bulundurun:  
   
 -   Framework otomatik olarak çağırır `DoBulkFieldExchange` kayıt kümesi nesnesi için veri kaynağından veri aktarmak için üye işlevi. Ancak, veri kayıt kümesinden veri kaynağına geri aktarılmaz. Çağırma `AddNew`, **Düzenle**, **silmek**, veya **güncelleştirme** üye işlevleri başarısız onaylama sonuçlanır. Ancak `CRecordset` şu anda bir mekanizma sağlamaz toplu veri satırlarını güncelleştirmek için kendi işlevleri ODBC API işlevini kullanarak yazabilirsiniz **SQLSetPos**. Hakkında daha fazla bilgi için **SQLSetPos**, bkz: *ODBC SDK Programcının Başvurusu* MSDN belgelerinde.  
@@ -78,7 +73,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
 -   Kayıt alanı değişimi sihirbazlar toplu kayıt alanı değişimi desteklemez. Bunun anlamı, el ile alan veri üyeleri bildirme ve el ile geçersiz kılma `DoBulkFieldExchange` toplu RFX işlevleri çağrıları yazarak. Daha fazla bilgi için bkz: [kayıt alanı değişim işlevleri](../../mfc/reference/record-field-exchange-functions.md) içinde *sınıf kitaplığı başvurusu*.  
   
-##  <a name="_core_how_to_implement_bulk_record_field_exchange"></a>Toplu kayıt alanı değişimi nasıl uygulanır  
+##  <a name="_core_how_to_implement_bulk_record_field_exchange"></a> Toplu kayıt alanı değişimi nasıl uygulanır  
  Toplu kayıt alanı değişimi veri kümesi veri kaynağından kayıt kümesi nesnesine aktarır. Toplu RFX işlevleri uzunluğu her bir veri öğesi, satır kümesinde depolamak için diziler yanı sıra, bu verileri depolamak için diziler kullanın. Sınıf tanımınız içinde veri dizilerine erişmek için işaretçiler alan veri üyeleri tanımlamanız gerekir. Ayrıca, dizilerin uzunluklarına erişmek için işaretçiler kümesi tanımlamanız gerekir. Hiçbir parametre veri üyeleri işaretçilerini bildirilmemelidir; Toplu kayıt alanı değişimi kullanırken parametre veri üyeleri bildirme kayıt alanı değişimi kullanırken bildirme aynıdır. Aşağıdaki kod basit bir örnek gösterilmektedir:  
   
 ```  

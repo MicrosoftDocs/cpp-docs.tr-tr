@@ -1,12 +1,9 @@
 ---
-title: "İşleç&gt; (multiset) (STL/CLR) | Microsoft Docs"
-ms.custom: 
+title: İşleç&gt; (multiset) (STL/CLR) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::multiset::operator>
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - operator> member [STL/CLR]
 ms.assetid: 88b4d56d-c7e9-4ac9-a460-0f26e1e5b837
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 39acfd3b3d38186057c18ecb8701b23eba95a061
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 95fd4088bd0b6259bf0e8053f3ee6cf702958538
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="operatorgt-multiset-stlclr"></a>İşleç&gt; (multiset) (STL/CLR)
 Liste karşılaştırma büyük.  

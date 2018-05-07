@@ -1,13 +1,10 @@
 ---
-title: "Önceden derlenmiş üstbilgi dosyaları | Microsoft Docs"
-ms.custom: 
+title: Önceden derlenmiş üstbilgi dosyaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - stdafx.h
 dev_langs:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - precompiled header files, file descriptions
 - stdafx.cpp
 ms.assetid: 8228d87a-5609-41f3-9697-b16094c000e5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1208b000f57397764277cc0a43e223f7c781a06e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4595ea9ce27c40fb798ac050ce456c4d43b2cacb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="precompiled-header-files"></a>Önceden Derlenmiş Üst Bilgi Dosyaları
 Bu dosyalar önceden derlenmiş üst bilgi dosyasını oluşturmak için kullanılan *Projname*Stdafx.obj dosya .pch ve önceden derlenmiş türleri.  

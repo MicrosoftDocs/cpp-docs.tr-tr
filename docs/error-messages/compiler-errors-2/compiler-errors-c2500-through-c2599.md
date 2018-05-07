@@ -1,12 +1,9 @@
 ---
-title: "Derleyici hataları C2500 C2599 aracılığıyla | Microsoft Docs"
-ms.custom: 
+title: Derleyici hataları C2500 C2599 aracılığıyla | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2501
@@ -61,17 +58,15 @@ helpviewer_keywords:
 dev_langs:
 - C++
 ms.assetid: a869aaed-e9f6-49e3-b273-00ea7f45bed7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93616954d94c2e8ae1d679e5c8181520fd306237
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 994f29009294e6b49851a817a5872fcaa122b153
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-errors-c2500-through-c2599"></a>Derleyici hataları C2500 C2599 aracılığıyla
 

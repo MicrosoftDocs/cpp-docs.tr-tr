@@ -1,13 +1,10 @@
 ---
 title: CListCtrl kullanma | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - CListCtrl
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - CListCtrl class [MFC], using
 ms.assetid: 20d6a5d6-8f07-4ddf-975f-ea2dfebcc835
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc61b0bb9e1df702424c2e95d3d4ef3b2186dea0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3ce28c5be7ff87d9ebad38d35bf19b7d182531ca
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-clistctrl"></a>CListCtrl Kullanma
 Tüm simgeleri düzenleme dosya Gezgini veya sütun listesi ile veya olmadan simgeleri metin olduğu gibi etiketlerle görüntülemek için bir liste denetimini kullanın. Dört olası "Görünüm" (MFC görünümlerle kafası olarak değil) bir açıklaması için bir liste denetiminde olabilir — simge görünümü, küçük simge görünümü, liste görünümü ve rapor görünümü — görünümlerde bkz [CListCtrl](../mfc/reference/clistctrl-class.md) sınıfına genel bakış.  

@@ -1,12 +1,9 @@
 ---
-title: "CSharedFile sınıfı | Microsoft Docs"
-ms.custom: 
+title: CSharedFile sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CSharedFile
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - CSharedFile [MFC], Detach
 - CSharedFile [MFC], SetHandle
 ms.assetid: 5d000422-9ede-4318-a8c9-f7412b674f39
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27c749f86f9e3fbd310fd03b3a82768d58632087
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bee22940fb197d480f4ae3550d8dd59780c256b5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="csharedfile-class"></a>CSharedFile sınıfı
 [CMemFile](../../mfc/reference/cmemfile-class.md)-destekleyen türetilmiş bir sınıf paylaşılan bellek dosyaları.  
@@ -66,7 +61,7 @@ class CSharedFile : public CMemFile
   
  Lütfen unutmayın `CSharedFile` değil bellekle eşlenen kullanım dosyalar yapar ve verileri doğrudan işlemler arasında paylaşılamaz.  
   
- `CSharedFile`nesneleri otomatik olarak kendi bellek ayırmak veya kendi bellek bloğu iliştirebilirsiniz `CSharedFile` çağırarak nesne [CSharedFile::SetHandle](#sethandle). Her iki durumda da, bellek dosyası otomatik olarak büyüyen için bellek tahsis edilir `nGrowBytes`-artışlarla, boyutta `nGrowBytes` sıfır değil.  
+ `CSharedFile` nesneleri otomatik olarak kendi bellek ayırmak veya kendi bellek bloğu iliştirebilirsiniz `CSharedFile` çağırarak nesne [CSharedFile::SetHandle](#sethandle). Her iki durumda da, bellek dosyası otomatik olarak büyüyen için bellek tahsis edilir `nGrowBytes`-artışlarla, boyutta `nGrowBytes` sıfır değil.  
   
  Daha fazla bilgi için bkz: [MFC'deki dosyalar](../../mfc/files-in-mfc.md) ve [dosya işleme](../../c-runtime-library/file-handling.md) içinde *çalışma zamanı kitaplığı başvurusu*.  
   
@@ -82,7 +77,7 @@ class CSharedFile : public CMemFile
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxadv.h  
   
-##  <a name="csharedfile"></a>CSharedFile::CSharedFile  
+##  <a name="csharedfile"></a>  CSharedFile::CSharedFile  
  Oluşturan bir `CSharedFile` nesne ve bunun için bellek ayırır.  
   
 ```  
@@ -98,7 +93,7 @@ CSharedFile(
  `nGrowBytes`  
  Bellek ayırma artırma bayt.  
   
-##  <a name="detach"></a>CSharedFile::Detach  
+##  <a name="detach"></a>  CSharedFile::Detach  
  Bellek dosyayı kapatın ve bellek bloğundan ayırmak için bu işlevini çağırın.  
   
 ```  
@@ -111,7 +106,7 @@ HGLOBAL Detach();
 ### <a name="remarks"></a>Açıklamalar  
  Çağırarak yeniden açabilirsiniz [SetHandle](#sethandle), tarafından döndürülen işleci kullanılarak **ayırma**.  
   
-##  <a name="sethandle"></a>CSharedFile::SetHandle  
+##  <a name="sethandle"></a>  CSharedFile::SetHandle  
  Bir genel bellek bloğu eklemek için bu işlevi çağırmak `CSharedFile` nesnesi.  
   
 ```  

@@ -1,13 +1,10 @@
 ---
-title: "MFC ActiveX denetimleri: Gelişmiş konular | Microsoft Docs"
-ms.custom: 
+title: 'MFC ActiveX denetimleri: Gelişmiş konular | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], parameterized property
 - ThrowError method [MFC]
 ms.assetid: e9e34abb-8e2d-461e-bb9c-a1aec5dcecbd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2205862a438099c08801556f511ebf3c5e93a277
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: eb451abc3aabe52d9aeffbc92f80df38f02e0b99
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-activex-controls-advanced-topics"></a>MFC ActiveX Denetimleri: Gelişmiş Konular
 Bu makalede, ActiveX denetimleri geliştirme ile ilgili gelişmiş konular yer almaktadır. Bu güncelleştirmeler şunlardır:  
@@ -46,7 +41,7 @@ Bu makalede, ActiveX denetimleri geliştirme ile ilgili gelişmiş konular yer a
   
 -   [Çalışma zamanında görünmez iletişim kutusu denetimlerine erişme](#_core_accessing_dialog_controls_that_are_invisible_at_run_time)  
   
-##  <a name="_core_using_database_classes_in_activex_controls"></a>ActiveX denetimlerinde veritabanı sınıflarını kullanma  
+##  <a name="_core_using_database_classes_in_activex_controls"></a> ActiveX denetimlerinde veritabanı sınıflarını kullanma  
  ActiveX denetim sınıfları sınıf kitaplığı parçası olduğundan, aynı yordamlar ve MFC veritabanı sınıfları kullanan ActiveX denetimleri geliştirme için standart bir MFC uygulamasında veritabanı sınıflarını kullanma kuralları uygulayabilirsiniz.  
   
  MFC veritabanı sınıfları genel bir bakış için bkz: [MFC veritabanı sınıfları (DAO ve ODBC)](../data/mfc-database-classes-odbc-and-dao.md). MFC ODBC sınıfları makaleyi tanıtır ve MFC DAO sınıflarını ve ya da daha fazla ayrıntı için yönlendirir.  
@@ -54,7 +49,7 @@ Bu makalede, ActiveX denetimleri geliştirme ile ilgili gelişmiş konular yer a
 > [!NOTE]
 >  Visual C++ ortamı ve sihirbazları DAO (DAO sınıfları dahil edilmiştir ve bunları kullanmaya devam edebilirsiniz ancak) desteklemez. Microsoft, kullanmanızı önerir [OLE DB Şablonları](../data/oledb/ole-db-programming.md) veya [ODBC ve MFC](../data/odbc/odbc-and-mfc.md) yeni projeler için. Yalnızca var olan uygulamaları sürdürmek DAO kullanmanız gerekir.  
   
-##  <a name="_core_implementing_a_parameterized_property"></a>Parametreli özellik uygulama  
+##  <a name="_core_implementing_a_parameterized_property"></a> Parametreli özellik uygulama  
  (Bazen özellik dizisi denir) parametreli özellik değerleri homojen koleksiyonunu denetiminin tek bir özellik olarak gösterme bir yöntemdir. Örneğin, bir dizi veya bir sözlük bir özellik olarak kullanıma sunmak için parametreli bir özelliğini kullanabilirsiniz. Visual Basic'te, böyle bir özellik, dizi gösterim kullanılarak erişilir:  
   
  [!code-vb[NVC_MFC_AxVb#1](../mfc/codesnippet/visualbasic/mfc-activex-controls-advanced-topics_1.vb)]  
@@ -106,7 +101,7 @@ Bu makalede, ActiveX denetimleri geliştirme ile ilgili gelişmiş konular yer a
   
  Bu özellik kullanışlı olması, Denetim sınıfının türü iki boyutlu dizi üye değişkeninde bildirebilirsiniz **kısa**, parametreli özellik değerlerini depolamak için. Ardından Get işlevi parametreleri tarafından belirtildiği şekilde doğru satır ve sütun, depolanan değeri döndürecek şekilde değiştirin ve satır ve sütun parametreleri tarafından başvurulan değer güncelleştirmek için Set işlevi değiştirin.  
   
-##  <a name="_core_handling_errors_in_your_activex_control"></a>ActiveX denetiminde hataları işleme  
+##  <a name="_core_handling_errors_in_your_activex_control"></a> ActiveX denetiminde hataları işleme  
  Hata koşulları denetiminde meydana gelirse, denetimi kapsayıcısı hata raporu gerekebilir. Hata oluştuğu durum bağlı olarak, hata raporlama için iki yöntem vardır. Hata oluşursa bir özelliğin içinde almak veya ayarlamak işlevi veya OLE Otomasyon yöntemi uygulama içinde denetimi çağırmalıdır [COleControl::ThrowError](../mfc/reference/colecontrol-class.md#throwerror), hangi sinyalleri denetim kullanıcıya bir hata oluştu. Diğer herhangi bir zamanda hata oluşursa, Denetim çağırmalıdır [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror), bir stok hata olayı ateşlenir.  
   
  Oluştu hata türünü belirtmek için denetim bir hata kodu için geçmesi gereken `ThrowError` veya `FireError`. 32-bit değerine sahip bir OLE durum kodu bir hata kodudur. Mümkün olduğunda, bir hata kodu OLECTL tanımlanan kodları standart kümesi seçin. H üstbilgi dosyası. Aşağıdaki tabloda bu kodları özetler.  
@@ -162,7 +157,7 @@ Bu makalede, ActiveX denetimleri geliştirme ile ilgili gelişmiş konular yer a
   
  Varolan bir VBX denetim değiştirmek için bir ActiveX denetimi oluşturuyorsanız, ActiveX denetimi hata kodları VBX denetimi hata kodları uyumlu olduğundan emin olmak için kullanır aynı sayısal değerleri tanımlayın.  
   
-##  <a name="_core_handling_special_keys_in_your_control"></a>Özel anahtarları denetiminde işleme  
+##  <a name="_core_handling_special_keys_in_your_control"></a> Özel anahtarları denetiminde işleme  
  Bazı durumlarda, özel bir yolla belirli tuş birleşimleri işlemek isteyebilirsiniz; Örneğin, bir çok satırlı metin ENTER tuşuna basıldığında yeni bir satır kutusu denetim veya bir düzen grubu arasında taşıma Ekle denetleyen bir yönlü zaman anahtar basılı kimliği.  
   
  ActiveX denetimi temel sınıfını ise `COleControl`, geçersiz kılabilirsiniz [CWnd::PreTranslateMessage](../mfc/reference/cwnd-class.md#pretranslatemessage) kapsayıcı bunları işlemeden önce iletileri işlemek için. Bu yöntemi kullanırken, her zaman geri **TRUE** geçersiz kılmada iletiyi işlemek, `PreTranslateMessage`.  
@@ -173,12 +168,12 @@ Bu makalede, ActiveX denetimleri geliştirme ile ilgili gelişmiş konular yer a
   
  ActiveX denetimi için klavye arabirimleri işleme ile ilgili daha fazla bilgi için ActiveX SDK belgelerine bakın.  
   
-##  <a name="_core_accessing_dialog_controls_that_are_invisible_at_run_time"></a>Çalışma zamanında görünmez iletişim kutusu denetimlerine erişme  
+##  <a name="_core_accessing_dialog_controls_that_are_invisible_at_run_time"></a> Çalışma zamanında görünmez iletişim kutusu denetimlerine erişme  
  Kullanıcı arabirimi ve çalışma zamanında görünmez iletişim kutusu denetimleri oluşturabilirsiniz. ActiveX denetiminin çalışma zamanında bir iletişim kutusu ve kullanmak için bir görünmez eklerseniz, [CWnd::GetDlgItem](../mfc/reference/cwnd-class.md#getdlgitem) erişim denetimi için denetim düzgün çalışmaz. Bunun yerine, denetimini temsil eden bir nesne almak için aşağıdaki teknikleri birini kullanmalıdır:  
   
 -   Ekleme üye değişkeni Sihirbazı'nı kullanarak seçin **denetim değişken** ve denetimin kimliği seçin. Denetimin sarmalayıcı sınıfı olarak bir üye değişken adı girin ve **denetim türü**.  
   
-     veya  
+     -veya-  
   
 -   Bir yerel değişken ve bir alt iletişim öğesi olarak bildirin. Aşağıdakine benzer bir kod ekleme (`CMyCtrl` sarmalayıcı sınıftır `IDC_MYCTRL1` denetimin kimliği):  
   

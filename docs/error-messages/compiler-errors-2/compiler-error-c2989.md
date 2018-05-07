@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2989 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2989 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2989
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2989
 ms.assetid: 936303d8-eb3b-4746-82ec-2f18020a6f64
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: badfecd1c92b42a26682b714a16e24206ca05736
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7831f9255485ede8db9d853ca5fe89dc9a4c2a65
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2989"></a>Derleyici Hatası C2989
 'class': sınıf türü olmayan sınıf türü olarak zaten bildirildikten  

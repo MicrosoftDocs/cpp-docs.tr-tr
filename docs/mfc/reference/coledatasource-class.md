@@ -1,12 +1,9 @@
 ---
-title: "COleDataSource sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleDataSource sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleDataSource
@@ -45,17 +42,15 @@ helpviewer_keywords:
 - COleDataSource [MFC], OnSetData
 - COleDataSource [MFC], SetClipboard
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ce9abdccba549e0b0fd3c55bfb7fbaee6a11e27
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4df2584bd9b74640266d8ddf87087e2820deaac8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coledatasource-class"></a>COleDataSource sınıfı
 İçine bir uygulama veri sırasında sunacaktır veri yerleştirir bir önbellek görür Pano ya da sürükle ve bırak işlemleri gibi işlemleri aktarın.  
@@ -110,7 +105,7 @@ class COleDataSource : public CCmdTarget
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxole.h  
   
-##  <a name="cachedata"></a>COleDataSource::CacheData  
+##  <a name="cachedata"></a>  COleDataSource::CacheData  
  Veri aktarım işlemleri sırasında veri sunulur biçimini belirtmek için bu işlevini çağırın.  
   
 ```  
@@ -143,7 +138,7 @@ void CacheData(
   
  Daha fazla bilgi için bkz: [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK'sındaki.  
   
-##  <a name="cacheglobaldata"></a>COleDataSource::CacheGlobalData  
+##  <a name="cacheglobaldata"></a>  COleDataSource::CacheGlobalData  
  Veri aktarım işlemleri sırasında veri sunulur biçimini belirtmek için bu işlevini çağırın.  
   
 ```  
@@ -172,14 +167,14 @@ void CacheGlobalData(
   
  Daha fazla bilgi için bkz: [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK'sındaki.  
   
-##  <a name="coledatasource"></a>COleDataSource::COleDataSource  
+##  <a name="coledatasource"></a>  COleDataSource::COleDataSource  
  Oluşturan bir `COleDataSource` nesnesi.  
   
 ```  
 COleDataSource();
 ```  
   
-##  <a name="delayrenderdata"></a>COleDataSource::DelayRenderData  
+##  <a name="delayrenderdata"></a>  COleDataSource::DelayRenderData  
  Veri aktarım işlemleri sırasında veri sunulur biçimini belirtmek için bu işlevini çağırın.  
   
 ```  
@@ -206,7 +201,7 @@ void DelayRenderData(
   
  Daha fazla bilgi için bkz: [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK'sındaki.  
   
-##  <a name="delayrenderfiledata"></a>COleDataSource::DelayRenderFileData  
+##  <a name="delayrenderfiledata"></a>  COleDataSource::DelayRenderFileData  
  Veri aktarım işlemleri sırasında veri sunulur biçimini belirtmek için bu işlevini çağırın.  
   
 ```  
@@ -233,7 +228,7 @@ void DelayRenderFileData(
   
  Daha fazla bilgi için bkz: [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK'sındaki.  
   
-##  <a name="delaysetdata"></a>COleDataSource::DelaySetData  
+##  <a name="delaysetdata"></a>  COleDataSource::DelaySetData  
  Veri kaynağı içeriğini değiştirme desteklemek için bu işlevini çağırın.  
   
 ```  
@@ -250,13 +245,13 @@ void DelaySetData(
  İşaret eden bir [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) veri olduğu değiştirilecek biçimi açıklayan yapısı. Pano biçimi tarafından belirtilen ötesinde ek biçim bilgilerini belirtmek istiyorsanız, bu parametre için bir değer sağlayın `cfFormat`. Eğer öyleyse **NULL**, diğer alanları için varsayılan değerler kullanılır **FORMATETC** yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- [OnSetData](#onsetdata) bu durumda çerçevesi tarafından çağrılır. Veri kaynağından framework geri döndüğünde bu yalnızca kullanılır [COleServerItem::GetDataSource](../../mfc/reference/coleserveritem-class.md#getdatasource). Varsa `DelaySetData` adlı değil, `OnSetData` işlevi hiçbir zaman çağrılır. `DelaySetData`Her bir Pano için çağrılmalıdır veya **FORMATETC** desteklediğiniz biçimi.  
+ [OnSetData](#onsetdata) bu durumda çerçevesi tarafından çağrılır. Veri kaynağından framework geri döndüğünde bu yalnızca kullanılır [COleServerItem::GetDataSource](../../mfc/reference/coleserveritem-class.md#getdatasource). Varsa `DelaySetData` adlı değil, `OnSetData` işlevi hiçbir zaman çağrılır. `DelaySetData` Her bir Pano için çağrılmalıdır veya **FORMATETC** desteklediğiniz biçimi.  
   
  Daha fazla bilgi için bkz: [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK'sındaki yapısı.  
   
  Daha fazla bilgi için bkz: [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK'sındaki.  
   
-##  <a name="dodragdrop"></a>COleDataSource::DoDragDrop  
+##  <a name="dodragdrop"></a>  COleDataSource::DoDragDrop  
  Çağrı `DoDragDrop` bir Sürükle ve bırak işlemi bu veri kaynağı için genellikle gerçekleştirmek için üye işlevi bir [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown) işleyicisi.  
   
 ```  
@@ -270,13 +265,13 @@ DROPEFFECT DoDragDrop(
  `dwEffects`  
  İzin verilen sürükle ve bırak işlemleri bu veri kaynağı üzerinde. Aşağıdakilerden birini veya birkaçını olabilir:  
   
-- `DROPEFFECT_COPY`Bir kopyalama işlemi gerçekleştirilebilir.  
+- `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilebilir.  
   
-- `DROPEFFECT_MOVE`Bir taşıma işlemi gerçekleştirilebilir.  
+- `DROPEFFECT_MOVE` Bir taşıma işlemi gerçekleştirilebilir.  
   
-- `DROPEFFECT_LINK`Özgün veriler bırakılan verilerden bir bağlantı kurulamadı.  
+- `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamadı.  
   
-- `DROPEFFECT_SCROLL`Sürükleme kaydırma işlemi oluşabilir gösterir.  
+- `DROPEFFECT_SCROLL` Sürükleme kaydırma işlemi oluşabilir gösterir.  
   
  `lpRectStartDrag`  
  Sürükle gerçekte başladığı tanımlar dikdörtgen işaretçi. Daha fazla bilgi için aşağıdaki Açıklamalar bölümüne bakın.  
@@ -302,7 +297,7 @@ DROPEFFECT DoDragDrop(
   
  Daha fazla bilgi için bkz: [sürükle ve bırak: bir bırakma kaynağı uygulama](../../mfc/drag-and-drop-implementing-a-drop-source.md).  
   
-##  <a name="empty"></a>COleDataSource::Empty  
+##  <a name="empty"></a>  COleDataSource::Empty  
  Bu işlev boş çağırın `COleDataSource` veri nesnesi.  
   
 ```  
@@ -314,7 +309,7 @@ void Empty();
   
  Daha fazla bilgi için bkz: [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) Windows SDK'sındaki.  
   
-##  <a name="flushclipboard"></a>COleDataSource::FlushClipboard  
+##  <a name="flushclipboard"></a>  COleDataSource::FlushClipboard  
  Pano'ya ve ardından uygulamanızı kapandıktan sonra Pano'dan veri yapıştırma olanak tanır verileri işler.  
   
 ```  
@@ -324,7 +319,7 @@ static void PASCAL FlushClipboard();
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [SetClipboard](#setclipboard) verileri Pano'ya yerleştirme.  
   
-##  <a name="getclipboardowner"></a>COleDataSource::GetClipboardOwner  
+##  <a name="getclipboardowner"></a>  COleDataSource::GetClipboardOwner  
  Panodaki veriler itibaren değişip değişmediğini belirleyen [SetClipboard](#setclipboard) son kez çağrıldı ve bu durumda, geçerli sahibi tanımlar.  
   
 ```  
@@ -334,7 +329,7 @@ static COleDataSource* PASCAL GetClipboardOwner();
 ### <a name="return-value"></a>Dönüş Değeri  
  Veri kaynağı şu anda Panosu'nda veya **NULL** yoksa hiçbir şey panoya veya Pano çağıran uygulama tarafından sahiplenilmedi.  
   
-##  <a name="onrenderdata"></a>COleDataSource::OnRenderData  
+##  <a name="onrenderdata"></a>  COleDataSource::OnRenderData  
  Belirtilen biçim verileri almak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -362,7 +357,7 @@ virtual BOOL OnRenderData(
   
  Daha fazla bilgi için bkz: [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) ve [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) yapıları [ortam türü](http://msdn.microsoft.com/library/windows/desktop/ms691227) numaralandırma türü ve [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) Windows SDK.  
   
-##  <a name="onrenderfiledata"></a>COleDataSource::OnRenderFileData  
+##  <a name="onrenderfiledata"></a>  COleDataSource::OnRenderFileData  
  Belirtilen depolama ortamına bir dosyası olduğunda belirtilen biçiminde veri almak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -388,7 +383,7 @@ virtual BOOL OnRenderFileData(
   
  Daha fazla bilgi için bkz: [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) yapısı ve [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) Windows SDK'sındaki.  
   
-##  <a name="onrenderglobaldata"></a>COleDataSource::OnRenderGlobalData  
+##  <a name="onrenderglobaldata"></a>  COleDataSource::OnRenderGlobalData  
  Belirtilen depolama ortamına genel bellek olduğunda belirtilen biçim verileri almak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -416,7 +411,7 @@ virtual BOOL OnRenderGlobalData(
   
  Daha fazla bilgi için bkz: [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) yapısı ve [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) Windows SDK'sındaki.  
   
-##  <a name="onsetdata"></a>COleDataSource::OnSetData  
+##  <a name="onsetdata"></a>  COleDataSource::OnSetData  
  Ayarlayın veya verileri değiştirmek için framework tarafından çağrılan `COleDataSource` nesne belirtilen biçiminde.  
   
 ```  
@@ -446,7 +441,7 @@ virtual BOOL OnSetData(
   
  Daha fazla bilgi için bkz: [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) ve [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) yapıları ve [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) ve [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) Windows SDK'sındaki işlevleri.  
   
-##  <a name="setclipboard"></a>COleDataSource::SetClipboard  
+##  <a name="setclipboard"></a>  COleDataSource::SetClipboard  
  Bulunan verileri koyar `COleDataSource` aşağıdaki işlevleri birini çağrıldıktan sonra Pano nesnesinde: [CacheData](#cachedata), [CacheGlobalData](#cacheglobaldata), [DelayRenderData](#delayrenderdata), veya [DelayRenderFileData](#delayrenderfiledata).  
   
 ```  

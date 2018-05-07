@@ -1,12 +1,9 @@
 ---
 title: deque::operator(stl/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::deque::operator[]
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - operatormember [] [STL/CLR]
 ms.assetid: d7653bb5-db48-4637-a25c-e7303e5d28da
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 9729d163bfde41c2f36e3b34962e038279084d1f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b7b07f9206e5794b3bcbe219b35cf4d90fd4d8bc
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dequeoperatorstlclr"></a>deque::operator(stl/CLR)
 Belirtilen konumda bir öğe erişir.  

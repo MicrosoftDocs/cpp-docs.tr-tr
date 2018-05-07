@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0007 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0007 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0007
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CXX0007
 - CAN0007
 ms.assetid: 270a6d2d-ea6b-4a94-9871-841a6a133292
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9519a7f3b33dfcf734eafcf903994b491f287ea
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ab244578d7a44b1fd952ee441cd8cc51f1ca1fa1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0007"></a>İfade Değerlendirici Hatası CXX0007
 Sağ parantez eksik  

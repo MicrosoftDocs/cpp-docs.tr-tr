@@ -2,11 +2,8 @@
 title: deque::Swap (STL/CLR) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::deque::swap
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - swap member [STL/CLR]
 ms.assetid: 511e1aa8-3069-43f3-aa77-150f1de1e195
-caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2f86fa7455edfc29190593660c365e0cfe5ef629
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 61c38d929c64aa3386a22292f8c6b395d472740d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dequeswap-stlclr"></a>deque::swap (STL/CLR)
 İki kapsayıcının içeriğinin yerini değiştirir.  

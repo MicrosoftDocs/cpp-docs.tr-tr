@@ -1,13 +1,10 @@
 ---
-title: "CString biçimlendirmesi ve ileti kutusu görüntüleme | Microsoft Docs"
-ms.custom: 
+title: CString biçimlendirmesi ve ileti kutusu görüntüleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.strings
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - CString objects [MFC], formatting and message boxes
 ms.assetid: d1068cf4-9cc5-4952-b9e7-d612c53cbc28
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bc86e066e57978bee0953e233edbb2aefbe61c5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8074d84d739b59acfa0c6040bedf76f46b6ea9c6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cstring-formatting-and-message-box-display"></a>CString Biçimlendirmesi ve İleti Kutusu Görüntüleme
 Biçimlendirmek ve ayrıştırmak için bir dizi işlev sağlanan `CString` nesneleri. İşlemek sahip olduğunda bu işlevler kullanabilirsiniz `CString` nesneleri, ancak ileti kutusu metin olarak görünür dizeleri biçimlendirme için yararlıdır.  
@@ -44,7 +39,7 @@ Biçimlendirmek ve ayrıştırmak için bir dizi işlev sağlanan `CString` nesn
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="afxextractsubstring"></a>AfxExtractSubString  
+##  <a name="afxextractsubstring"></a>  AfxExtractSubString  
  Bu genel işlevi, bir alt dizenin belirtilen kaynak çıkartmak için kullanılabilir.  
   
 ```   
@@ -82,7 +77,7 @@ BOOL AFXAPI AfxExtractSubString (
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="afxformatstring1"></a>AfxFormatString1  
+##  <a name="afxformatstring1"></a>  AfxFormatString1  
  Gösterdiği dize değiştirir `lpsz1` tarafından tanımlanan şablon dize kaynağı "%1" karakter tüm örnekleri için `nIDS`.  
   
 ```  
@@ -113,7 +108,7 @@ void  AfxFormatString1(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="afxformatstring2"></a>AfxFormatString2  
+##  <a name="afxformatstring2"></a>  AfxFormatString2  
  Gösterdiği dize değiştirir `lpsz1` "%1" karakterleri ve gösterdiği dize tüm örnekleri için `lpsz2` tarafından tanımlanan şablon dize kaynağı "%2" karakter tüm örnekleri için `nIDS`.  
   
 ```   
@@ -148,7 +143,7 @@ void AfxFormatString2(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxwin.h  
   
-##  <a name="afxmessagebox"></a>AfxMessageBox  
+##  <a name="afxmessagebox"></a>  AfxMessageBox  
  Ekranda bir ileti kutusu görüntüler.  
   
 ```  

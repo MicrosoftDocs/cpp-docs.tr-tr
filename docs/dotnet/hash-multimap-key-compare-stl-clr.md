@@ -1,12 +1,9 @@
 ---
 title: hash_multimap::key_compare (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_multimap::key_compare
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - key_compare member [STL/CLR]
 ms.assetid: 011f5bc3-0e40-48fe-9d6f-f6960210a27a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 7394d12b7f17da61b966399203837430b3a7713f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e45ea594e9ee761ad18bb718c5c6352909ca44c9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hashmultimapkeycompare-stlclr"></a>hash_multimap::key_compare (STL/CLR)
 İki anahtar sıralama temsilcisi.  

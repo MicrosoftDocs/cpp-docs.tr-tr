@@ -1,13 +1,10 @@
 ---
-title: "(MFC veri erişimi) ikinci kayıt kümesinden liste kutusunu doldurma | Microsoft Docs"
-ms.custom: 
+title: (MFC veri erişimi) ikinci kayıt kümesinden liste kutusunu doldurma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,18 +16,16 @@ helpviewer_keywords:
 - combo boxes [C++], filling from second recordset
 - CListCtrl class, filling from second recordset
 ms.assetid: 360c0834-da6b-4dc0-bcea-80e9acd611f0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6e411ebcf40099a2236048dd8f151b438fe5b947
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ed294527b4335459ab6d0658d9f57a5cb64a8fd1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="filling-a-list-box-from-a-second-recordset--mfc-data-access"></a>(MFC veri erişimi) ikinci kayıt kümesinden liste kutusunu doldurma
 Varsayılan olarak, kayıt görünümü alanları kayıt görünümünün denetimleriyle eşleştirilen bir tek kayıt kümesi nesnesi ile ilişkilidir. Bazen bir liste kutusu koymak isteyebilirsiniz veya birleşik giriş kutusunu kayıt görünümünüzde denetlemek ve ikinci bir kayıt kümesi nesnesi değerlerle doldurun. Kullanıcı, kayıt görünümünde görüntülenecek bilgileri yeni bir kategori seçmek için liste kutusunu kullanabilirsiniz. Bu konuda nasıl ve ne zaman açıklanmaktadır Bunu yapmak için.  

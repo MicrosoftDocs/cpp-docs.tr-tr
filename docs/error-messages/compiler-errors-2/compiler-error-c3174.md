@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3174 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3174 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3174
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3174
 ms.assetid: fe6b3b5a-8196-485f-a45f-0b2e51df4086
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09a0bdf1732ccd58b201e6cf1f52b3cbf17efab1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8b8898bc2079c3f62c2c1db1ac2a7420db7be7f1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3174"></a>Derleyici Hatası C3174
 Modül özniteliği belirtilmedi.  

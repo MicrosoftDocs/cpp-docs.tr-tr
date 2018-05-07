@@ -1,12 +1,9 @@
 ---
 title: deque::pop_back (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::deque::pop_back
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - pop_back member [STL/CLR]
 ms.assetid: 528d2c89-104c-45f7-8f05-41fe217ee37c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 4f2657de9f3186a9ec9732f5403552311438beda
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 74ee3030b203c66f63e87ac4a9725785078a7017
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dequepopback-stlclr"></a>deque::pop_back (STL/CLR)
 Son öğeyi kaldırır.  

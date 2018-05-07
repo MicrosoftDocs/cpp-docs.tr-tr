@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2567 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2567 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2567
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2567
 ms.assetid: 9c140ac9-7059-47e6-9ba1-e7939c8c0dc3
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28cd1dc74e15ae3cd63286fc6de9c3508bb1d279
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 05f89362f36a6ba576e9829153f0d8931c4975c6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2567"></a>Derleyici Hatası C2567
 meta verilerde 'dosya' açılamıyor, dosya taşınmış veya silinmiş  

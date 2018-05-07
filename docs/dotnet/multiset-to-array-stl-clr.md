@@ -1,12 +1,9 @@
 ---
 title: multiset::to_array (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::multiset::to_array
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - to_array member [STL/CLR]
 ms.assetid: 3ca4482d-2584-4a93-89b9-33ea29692de2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: b46ce18ed3726e1cb109a7ddd86207acdfba8977
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0cc47e2a78e49aa9eb5debeae4dc11d9b3e20c6f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="multisettoarray-stlclr"></a>multiset::to_array (STL/CLR)
 Denetimli sırası yeni bir diziye kopyalar.  

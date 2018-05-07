@@ -1,13 +1,10 @@
 ---
-title: "MFC'de özel durum işleme | Microsoft Docs"
-ms.custom: 
+title: MFC'de özel durum işleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -42,17 +39,15 @@ helpviewer_keywords:
 - function calls [MFC], results
 - out-of-memory exceptions [MFC]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 544130f27fb01d0d29652087351c8a5bbc5bd5c7
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 0792ddf067f6289d612a9adb0c8ffeaf8e554ed6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="exception-handling-in-mfc"></a>MFC'de Özel Durum İşleme
 Bu makalede MFC'de özel durum işleme mekanizmalarını açıklanmaktadır. İki mekanizma vardır:  
@@ -78,7 +73,7 @@ Bu makalede MFC'de özel durum işleme mekanizmalarını açıklanmaktadır. İk
   
 -   [Özel durumlar hakkında daha fazla bilgi](#_core_further_reading_about_exceptions)  
   
-##  <a name="_core_when_to_use_exceptions"></a>Özel durumlar kullanma zamanı  
+##  <a name="_core_when_to_use_exceptions"></a> Özel durumlar kullanma zamanı  
  Program yürütülmesi sırasında bir işlev çağrıldığında sonuçlar üç kategorisi oluşabilir: normal yürütme, hatalı yürütme veya anormal yürütme. Her kategori aşağıda açıklanmıştır.  
   
 -   Normal yürütme  
@@ -95,7 +90,7 @@ Bu makalede MFC'de özel durum işleme mekanizmalarını açıklanmaktadır. İk
   
  Özel durumlar kullanma, anormal yürütme için özellikle uygundur.  
   
-##  <a name="_core_mfc_exception_support"></a>MFC özel durum desteği  
+##  <a name="_core_mfc_exception_support"></a> MFC özel durum desteği  
  C++ özel durumlarını doğrudan kullanın ya da MFC özel durum makroları kullanmak isteyip kullanacağınız [CException sınıfı](../mfc/reference/cexception-class.md) veya `CException`-türetilmiş framework veya uygulamanız tarafından oluşturulan nesneleri.  
   
  MFC tarafından sağlanan önceden tanımlanmış özel durumlar aşağıdaki tabloda gösterilmektedir.  
@@ -116,7 +111,7 @@ Bu makalede MFC'de özel durum işleme mekanizmalarını açıklanmaktadır. İk
 > [!NOTE]
 >  MFC C++ özel durumlarını ve MFC özel durum makroları destekler. MFC doğrudan desteklemez Windows NT yapılandırılmış özel durum işleyicileri (SEH) anlatıldığı gibi [yapılandırılmış özel durum işleme](http://msdn.microsoft.com/library/windows/desktop/ms680657).  
   
-##  <a name="_core_further_reading_about_exceptions"></a>Özel durumlar hakkında daha fazla okuma  
+##  <a name="_core_further_reading_about_exceptions"></a> Özel durumlar hakkında daha fazla okuma  
  Aşağıdaki makaleler, özel durum teslim etme için MFC kitaplığını kullanarak açıklamaktadır:  
   
 -   [Özel Durumlar: Özel Durumları Yakalama ve Silme](../mfc/exceptions-catching-and-deleting-exceptions.md)  

@@ -1,12 +1,9 @@
 ---
-title: "Kaynak Derleyicisi hatası RC2112 | Microsoft Docs"
-ms.custom: 
+title: Kaynak Derleyicisi hatası RC2112 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - RC2112
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - RC2112
 ms.assetid: e9f29540-a90d-4989-a6e8-5f8f32015bd9
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60b7b869af5e3751fc804c28acdc7e23a4c80a28
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4007e714a69665758a44c5f80c03fd7dbbfe7f8d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="resource-compiler-error-rc2112"></a>Kaynak Derleyicisi Hatası RC2112
 İletişim kutusunda beklenen BAŞLAMA  

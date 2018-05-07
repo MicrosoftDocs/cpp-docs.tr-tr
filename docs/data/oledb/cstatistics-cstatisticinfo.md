@@ -1,12 +1,9 @@
 ---
-title: "CStatistics, Cstatisticınfo | Microsoft Docs"
-ms.custom: 
+title: CStatistics, Cstatisticınfo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CStatistics
@@ -28,18 +25,16 @@ helpviewer_keywords:
 - m_szTableName
 - CStatisticInfo parameter class
 ms.assetid: 5822231c-6963-44a6-ae2f-29aca76e1600
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d267bbedf1663f7dfc5f31cd102a45c121c77af8
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 9ad61624077eb1c02337fdd4737853522533a8a6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cstatistics-cstatisticinfo"></a>CStatistics, CStatisticInfo
 Çağrı typedef sınıfı **CStatistics** parametre sınıfı uygulamak için **Cstatisticınfo**.  

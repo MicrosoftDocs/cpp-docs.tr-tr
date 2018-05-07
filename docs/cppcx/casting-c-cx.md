@@ -1,24 +1,19 @@
 ---
 title: Atama (C + +/ CX) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e16aacdf713d1f9ff2b40532abfd2b5d6316f7a
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 8f71be537ecc0dc0cb58a3ada13612dbe8cbd7d3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="casting-ccx"></a>Atama (C + +/ CX)
 Dört farklı atama işleçleri uygulamak için Windows çalışma zamanı türleri: [static_cast işleci](../cpp/static-cast-operator.md), [dynamic_cast işleci](../cpp/dynamic-cast-operator.md), **safe_cast işleci**, ve [ reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md). `safe_cast` ve `static_cast` dönüştürme gerçekleştirilemediğinde; bir özel durum [static_cast işleci](../cpp/static-cast-operator.md) ayrıca derleme zamanı tür denetimi gerçekleştirir. `dynamic_cast` döndürür `nullptr` türü dönüştürme işlemi başarısız olursa. Ancak `reinterpret_cast` boş olmayan bir değer döndürür geçersiz olabilir. Bu nedenle, değil kullanmanızı öneririz `reinterpret_cast` dönüştürme başarılı olur bilmiyorsanız. Ayrıca, C türü Atamalar, C + kullanmamanızı öneririz +/ CX kod özdeş olduğundan `reinterpret_cast`.  
@@ -113,13 +108,13 @@ ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(winRtObject);
 |||  
 |-|-|  
 |HSTRING|Dize ^|  
-|HSTRING *|String^*|  
-|Iınspectable *|Object^|  
+|HSTRING *|Dize ^ *|  
+|Iınspectable *|Nesne ^|  
 |Iınspectable **|Object^*|  
-|Iınspectable-türetilen-türü *|same-interface-from-winmd^|  
-|Iınspectable-türetilen-türü **|same-interface-from-winmd^*|  
-|IDefault-interface-of-RuntimeClass*|aynı-RefClass-gelen-winmd ^|  
-|IDefault-interface-of-RuntimeClass**|same-RefClass-from-winmd^*|  
+|Iınspectable-türetilen-türü *|aynı-arabirimi-gelen-winmd ^|  
+|Iınspectable-türetilen-türü **|aynı-arabirimi-gelen-winmd ^ *|  
+|IDefault-arabirimi-in-RuntimeClass *|aynı-RefClass-gelen-winmd ^|  
+|IDefault-arabirimi-in-RuntimeClass **|aynı-RefClass-gelen-winmd ^ *|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tür sistemi](../cppcx/type-system-c-cx.md)   

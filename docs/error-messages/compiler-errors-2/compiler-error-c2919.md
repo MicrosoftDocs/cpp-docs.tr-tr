@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2919 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2919 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2919
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2919
 ms.assetid: 140a6db9-eb48-4c5e-84a7-a09d2653605b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e2bde12c4c6ffa94f55e9dd205c3132a755ad94
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c5e2eb2a32f1a906814f5b347ba1ebf13eba71ff
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2919"></a>Derleyici Hatası C2919
 'type': WinRT türü yayımlanan yüzeyine işleçler kullanılamaz  

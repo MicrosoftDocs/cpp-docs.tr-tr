@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3364 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3364 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3364
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3364
 ms.assetid: 98654741-60fe-4472-a6af-e580f8c0a6e1
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cdf9f9a6d4ae6584ff3b30e71a0c74b0ca777afe
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 337bcf71e89dc1ff3e434eba6645f76df1022a11
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3364"></a>Derleyici Hatası C3364
 'temsilci': temsilci Oluşturucu: yönetilen sınıfının üye işlevini veya genel işlev işaretçisi bağımsız değişkeni olmalıdır.  

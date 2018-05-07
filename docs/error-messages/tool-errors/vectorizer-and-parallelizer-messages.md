@@ -1,12 +1,9 @@
 ---
-title: "Vektör yapıcı ve paralel hale getirici iletileri | Microsoft Docs"
-ms.custom: 
+title: Vektör yapıcı ve paralel hale getirici iletileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C5011
@@ -17,17 +14,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26d33c64fd57d9f0e9f9a33de6097601e65aa67d
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: b5ae296c468ce132b4ddcebe8a8894c1ba53e751
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>Vektör Yapıcı ve Paralel Hale Getirici İletileri
 Visual C++ derleyici seçenekleri kullanabileceğiniz [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) ve [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) ayarlamak için [otomatik Paralelleştirme ve otomatik Vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) çıkış neden kodları için ve bilgilendirme iletileri kendi etkinliği hakkında. Bu makalede, neden kodları ve iletiler açıklanmaktadır.  
@@ -48,7 +43,7 @@ Visual C++ derleyici seçenekleri kullanabileceğiniz [/Qpar-report](../../build
   
 -   [15xx](#BKMK_ReasonCode150x)  
   
-##  <a name="BKMK_InformationalMessages"></a>Bilgilendirme iletileri  
+##  <a name="BKMK_InformationalMessages"></a> Bilgilendirme iletileri  
  Belirttiğiniz raporlama düzeyine bağlı olarak, aşağıdaki bilgi iletilerinin biri her döngü için görünür.  
   
  Neden kodları hakkında daha fazla bilgi için bu makalenin sonraki bölümüne bakın.  
@@ -64,7 +59,7 @@ Visual C++ derleyici seçenekleri kullanabileceğiniz [/Qpar-report](../../build
 ## <a name="reason-codes"></a>Neden Kodları  
  Aşağıdaki bölümlerde, otomatik paralel hale getirici ve otomatik vektör hale getirici için olası neden kodları listelenmiştir.  
   
-###  <a name="BKMK_ReasonCode50x"></a>5XX  
+###  <a name="BKMK_ReasonCode50x"></a> 5XX  
  5*xx* neden kodlarını otomatik paralel hale getirici ve otomatik vektör hale getirici için geçerlidir.  
   
 |Neden Kodu|Açıklama|  
@@ -227,7 +222,7 @@ void code_504(int *A) {
   
 ```  
   
-###  <a name="BKMK_ReasonCode100x"></a>10xx  
+###  <a name="BKMK_ReasonCode100x"></a> 10xx  
  10*xx* neden kodlarını otomatik paralel hale getirici için geçerlidir.  
   
 |Neden Kodu|Açıklama|  
@@ -436,7 +431,7 @@ void code_1010()
   
 ```  
   
-###  <a name="BKMK_ReasonCode110x"></a>11xx  
+###  <a name="BKMK_ReasonCode110x"></a> 11xx  
  11*xx* neden kodlarını otomatik vektör hale getirici için geçerlidir.  
   
 |Neden Kodu|Açıklama|  
@@ -584,7 +579,7 @@ void code_1106(int *A)
   
 ```  
   
-###  <a name="BKMK_ReasonCode120x"></a>12xx  
+###  <a name="BKMK_ReasonCode120x"></a> 12xx  
  12*xx* neden kodlarını otomatik vektör hale getirici için geçerlidir.  
   
 |Neden Kodu|Açıklama|  
@@ -659,7 +654,7 @@ void code_1203(int *A)
   
 ```  
   
-###  <a name="BKMK_ReasonCode130x"></a>13xx  
+###  <a name="BKMK_ReasonCode130x"></a> 13xx  
  13*xx* neden kodlarını otomatik vektör hale getirici için geçerlidir.  
   
 |Neden Kodu|Açıklama|  
@@ -791,7 +786,7 @@ void code_1305( S_1305 *s, S_1305 x)
   
 ```  
   
-###  <a name="BKMK_ReasonCode140x"></a>14xx  
+###  <a name="BKMK_ReasonCode140x"></a> 14xx  
  14*xx* neden kodları otomatik vektörleştirme ile uyumlu olmayan bazı seçeneği belirtildiğinde oluşur.  
   
 |Neden Kodu|Açıklama|  
@@ -863,7 +858,7 @@ void code_1404(int *A)
   
 ```  
   
-###  <a name="BKMK_ReasonCode150x"></a>15xx  
+###  <a name="BKMK_ReasonCode150x"></a> 15xx  
  15 bloğunu*xx* neden kodlarını uygulamak için diğer ad. Bellekte bir konuma iki farklı ad tarafından erişilebildiğinde yumuşatma meydana gelir.  
   
 |Neden Kodu|Açıklama|  
@@ -997,4 +992,4 @@ void code_1505(int *A, int *B)
  [#pragma loop()](../../preprocessor/loop.md)   
  [/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)   
  [/ Qpar (otomatik paralel hale getirici düzeyi raporlama) raporu](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)   
- [/ Qvec-(Raporlama düzeyi otomatik vektör hale getirici) raporu](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md)
+ [/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md)

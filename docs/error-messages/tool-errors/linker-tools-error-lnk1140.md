@@ -1,12 +1,9 @@
 ---
-title: "Bağlayıcı araçları hatası LNK1140 | Microsoft Docs"
-ms.custom: 
+title: Bağlayıcı araçları hatası LNK1140 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - LNK1140
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - LNK1140
 ms.assetid: 468d7651-a7cd-47b9-aead-5bb2fab56121
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5a7bce157359d547f91ba2b560cf258e231b4a2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fc0d59589a1882aca4ef2deb419e1e4f1081e52b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="linker-tools-error-lnk1140"></a>Bağlayıcı Araçları Hatası LNK1140
 program veritabanı için çok fazla modülleri; / pdb bağlantısıyla: yok  

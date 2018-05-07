@@ -1,12 +1,9 @@
 ---
-title: "CGdiObject sınıfı | Microsoft Docs"
-ms.custom: 
+title: CGdiObject sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CGdiObject
@@ -39,17 +36,15 @@ helpviewer_keywords:
 - CGdiObject [MFC], UnrealizeObject
 - CGdiObject [MFC], m_hObject
 ms.assetid: 1cba3ba5-3d49-4e43-8293-209299f2f6f4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2970dddd4711c431b3809127e7eeb6f7cd3f9eb1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ba88269cf37f41cf8a594745eb2e98a57ccf64ca
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cgdiobject-class"></a>CGdiObject sınıfı
 Bir temel sınıf çeşitli Windows grafik için bit eşlemler, bölgeler, Fırçalar, kalemler, paletleri ve yazı tipleri gibi cihaz arabirimi (GDI) nesneleri sağlar.  
@@ -110,7 +105,7 @@ class CGdiObject : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="attach"></a>CGdiObject::Attach  
+##  <a name="attach"></a>  CGdiObject::Attach  
  Bir Windows GDI nesnesine ekler bir `CGdiObject` nesnesi.  
   
 ```  
@@ -124,7 +119,7 @@ BOOL Attach(HGDIOBJ hObject);
 ### <a name="return-value"></a>Dönüş Değeri  
  Ek başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="cgdiobject"></a>CGdiObject::CGdiObject  
+##  <a name="cgdiobject"></a>  CGdiObject::CGdiObject  
  Oluşturan bir `CGdiObject` nesnesi.  
   
 ```  
@@ -134,7 +129,7 @@ CGdiObject();
 ### <a name="remarks"></a>Açıklamalar  
  Hiçbir zaman oluşturduğunuz bir `CGdiObject` doğrudan. Bunun yerine, bir nesne türetilmiş sınıflarından biri gibi oluşturduğunuz `CPen` veya **Cbrush**.  
   
-##  <a name="createstockobject"></a>CGdiObject::CreateStockObject  
+##  <a name="createstockobject"></a>  CGdiObject::CreateStockObject  
  Önceden tanımlanmış stok Windows GDI kalemler, Fırçalar veya yazı tipi için bir tanıtıcı alır ve GDI nesnesine ekler `CGdiObject` nesnesi.  
   
 ```  
@@ -151,7 +146,7 @@ BOOL CreateStockObject(int nIndex);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev biriyle türetilmiş sınıfları çağrısı Windows GDI nesne türüne gibi karşılık gelen `CPen` stok kalem için.  
   
-##  <a name="deleteobject"></a>CGdiObject::DeleteObject  
+##  <a name="deleteobject"></a>  CGdiObject::DeleteObject  
  Ekli Windows GDI nesnesi Windows GDI nesneyle ilişkili tüm sistem depolama azaltarak bellekten siler.  
   
 ```  
@@ -166,7 +161,7 @@ BOOL DeleteObject();
   
  Bir desen Fırçası silindiğinde, fırça ile ilişkili bit eşlem silinmez. Bit eşlem bağımsız olarak silinmesi gerekir.  
   
-##  <a name="deletetempmap"></a>CGdiObject::DeleteTempMap  
+##  <a name="deletetempmap"></a>  CGdiObject::DeleteTempMap  
  Tarafından otomatik olarak çağrılır `CWinApp` boşta kalma süresi işleyici `DeleteTempMap` herhangi geçici siler `CGdiObject` tarafından oluşturulan nesneler `FromHandle`.  
   
 ```  
@@ -174,12 +169,12 @@ static void PASCAL DeleteTempMap();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `DeleteTempMap`geçici bir eklenen Windows GDI nesnesi ayırır `CGdiObject` silmeden önce nesne `CGdiObject` nesne.  
+ `DeleteTempMap` geçici bir eklenen Windows GDI nesnesi ayırır `CGdiObject` silmeden önce nesne `CGdiObject` nesne.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#175](../../mfc/codesnippet/cpp/cgdiobject-class_1.cpp)]  
   
-##  <a name="detach"></a>CGdiObject::Detach  
+##  <a name="detach"></a>  CGdiObject::Detach  
  Bir Windows GDI nesneden çıkarır bir `CGdiObject` nesne ve Windows GDI nesnesi için bir işleyici döner.  
   
 ```  
@@ -189,7 +184,7 @@ HGDIOBJ Detach();
 ### <a name="return-value"></a>Dönüş Değeri  
  A `HANDLE` ayrılmış; Aksi takdirde Windows GDI nesnesi **NULL** GDI nesnesi yok bağlıysa.  
   
-##  <a name="fromhandle"></a>CGdiObject::FromHandle  
+##  <a name="fromhandle"></a>  CGdiObject::FromHandle  
  Bir işaretçi döndüren bir `CGdiObject` Windows GDI nesnesi için bir tanıtıcı verilen nesnesi.  
   
 ```  
@@ -208,7 +203,7 @@ static CGdiObject* PASCAL FromHandle(HGDIOBJ hObject);
   
  Bu geçici `CGdiObject` nesnesidir yalnızca geçerli uygulama aynı zamanda tüm geçici grafik nesneleri silinir, olay döngüde boşta kalma süresi sahip zamana kadar. Bu bildiren başka bir şekilde geçici nesne yalnızca bir pencere ileti işleme sırasında geçerli olmasıdır.  
   
-##  <a name="getobject"></a>CGdiObject::GetObject  
+##  <a name="getobject"></a>  CGdiObject::GetObject  
  Arabellek belirtilen bir nesneyi tanımlayan verileri ile doldurur.  
   
 ```  
@@ -243,7 +238,7 @@ int GetObject(
   
  Nesne ise bir `CPalette` nesnesi `GetObject` alır bir **WORD** palette girdilerinin sayısını belirtir. İşlev alamadı [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) palet tanımlar yapısı. Bir uygulama çağırarak paleti girdileri hakkında bilgi edinebilirsiniz [CPalette::GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries).  
   
-##  <a name="getobjecttype"></a>CGdiObject::GetObjectType  
+##  <a name="getobjecttype"></a>  CGdiObject::GetObjectType  
  GDI nesne türünü alır.  
   
 ```  
@@ -279,7 +274,7 @@ UINT GetObjectType() const;
   
 - **OBJ_ENHMETADC** geliştirilmiş meta dosyası cihaz bağlamı  
   
-##  <a name="getsafehandle"></a>CGdiObject::GetSafeHandle  
+##  <a name="getsafehandle"></a>  CGdiObject::GetSafeHandle  
  Döndürür `m_hObject` sürece **bu** olan **NULL**, bu durumda **NULL** döndürülür.  
   
 ```  
@@ -295,14 +290,14 @@ HGDIOBJ GetSafeHandle() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CWnd::IsWindowEnabled](../../mfc/reference/cwnd-class.md#iswindowenabled).  
   
-##  <a name="m_hobject"></a>CGdiObject::m_hObject  
+##  <a name="m_hobject"></a>  CGdiObject::m_hObject  
  A `HANDLE` içeren `HBITMAP`, **HRGN**, `HBRUSH`, `HPEN`, `HPALETTE`, veya **HFONT** bu nesneye iliştirilmiş.  
   
 ```  
 HGDIOBJ m_hObject;  
 ```  
   
-##  <a name="operator_neq"></a>CGdiObject::operator! =  
+##  <a name="operator_neq"></a>  CGdiObject::operator! =  
  İki GDI nesneleri eşit değilse mantıksal olarak belirler.  
   
 ```  
@@ -316,7 +311,7 @@ BOOL operator!=(const CGdiObject& obj) const;
 ### <a name="remarks"></a>Açıklamalar  
  Sol tarafta GDI nesnesi sağ tarafında GDI nesnesine eşit olup olmadığını belirler.  
   
-##  <a name="operator_eq_eq"></a>CGdiObject::operator ==  
+##  <a name="operator_eq_eq"></a>  CGdiObject::operator ==  
  İki GDI nesneleri mantıksal olarak eşit olup olmadığını belirler.  
   
 ```  
@@ -330,14 +325,14 @@ BOOL operator==(const CGdiObject& obj) const;
 ### <a name="remarks"></a>Açıklamalar  
  Sol tarafta GDI nesnesi sağ tarafında GDI nesnesine eşit olup olmadığını belirler.  
   
-##  <a name="operator_hgdiobj"></a>CGdiObject::operator HGDIOBJ  
+##  <a name="operator_hgdiobj"></a>  CGdiObject::operator HGDIOBJ  
  Alır bir `HANDLE` nesnesine ekli Windows GDI; Aksi halde **NULL** hiçbir nesne bağlıysa.  
   
 ```  
 operator HGDIOBJ() const;  
 ```  
   
-##  <a name="unrealizeobject"></a>CGdiObject::UnrealizeObject  
+##  <a name="unrealizeobject"></a>  CGdiObject::UnrealizeObject  
  Fırça kökeni sıfırlar veya bir mantıksal paleti sıfırlar.  
   
 ```  

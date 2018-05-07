@@ -1,30 +1,25 @@
 ---
-title: "Veritabanı destek dosyalarını yeniden dağıtma | Microsoft Docs"
-ms.custom: 
+title: Veritabanı destek dosyalarını yeniden dağıtma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - redistributing database support files
 - database support files [C++], redistributing
 ms.assetid: d80cffe0-177c-4515-9de7-fbf0517eb8d6
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7517222b1dc2e61f45c23a9fc91709672f304768
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: a51697367480569e2d27a4cb67791f5fe4d39a8f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="redistributing-database-support-files"></a>Veritabanı Destek Dosyalarını Yeniden Dağıtma
 Veri erişim nesneleri (DAO) ve Microsoft Data Access SDK veritabanı teknolojileri için destek dosyalarını yeniden dağıtabilirsiniz.  

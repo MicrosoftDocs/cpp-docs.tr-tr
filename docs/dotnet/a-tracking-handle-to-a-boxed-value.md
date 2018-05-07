@@ -1,30 +1,25 @@
 ---
-title: "Paketlenmiş değere izleme işleyicisi | Microsoft Docs"
-ms.custom: 
+title: Paketlenmiş değere izleme işleyicisi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - boxed value types, tracking handle to
 ms.assetid: 16c92048-5b74-47d5-8eca-dfea3d38879a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: baae8c5317f1e5c9c5acf5bef26a4b79de281a3e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6d3be5a46eab68a7f02bb97c477c1ec0b7fcd54d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="a-tracking-handle-to-a-boxed-value"></a>Paketlenmiş Değere İzleme İşleyicisi
 Değer türüne başvuru izleme işleyicisi kullanım için Visual C++ C++ için Yönetilen Uzantılar'dan değiştirdi.  

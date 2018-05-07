@@ -1,13 +1,10 @@
 ---
-title: "İzlenecek yol: bir proje derleme (C++) | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: bir proje derleme (C++) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - projects [C++], building
 - project building [C++]
 ms.assetid: d459bc03-88ef-48d0-9f9a-82d17f0b6a4d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65d7a4bf7e4b3fd519911a2a127ec0ac2723b630
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0c8d04dc3692076b867302af0e793eaac7ed25cb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="walkthrough-building-a-project-c"></a>İzlenecek Yol: Proje Derleme (C++)
 Bu kılavuzda, kasıtlı olarak bir Visual C++ söz dizimi hatası derleme hatası nasıl göründüğünü ve nasıl düzeltileceği öğrenmek için kodunuzda tanıtır. Proje derleme yaparken bir hata iletisi sorunun ne olduğunu ve nerede oluştuğunu gösterir.  
@@ -66,7 +61,7 @@ Bu kılavuzda, kasıtlı olarak bir Visual C++ söz dizimi hatası derleme hatas
     ```  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
- **Önceki:** [izlenecek yol: projeler ve çözümler (C++) ile çalışma](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) &#124; **Sonraki:**[izlenecek yol: Proje (C++) test etme](../ide/walkthrough-testing-a-project-cpp.md)  
+ **Önceki:** [izlenecek yol: projeler ve çözümler (C++) ile çalışma](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) &#124; **sonraki:**[izlenecek yol: Proje (C++) test etme](../ide/walkthrough-testing-a-project-cpp.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   

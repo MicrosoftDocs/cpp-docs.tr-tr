@@ -1,13 +1,10 @@
 ---
-title: "TN061: On_notıfy ve wm_notıfy iletileri | Microsoft Docs"
-ms.custom: 
+title: 'TN061: On_notıfy ve wm_notıfy iletileri | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - ON_NOTIFY
 - WM_NOTIFY
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - notification messages
 - WM_NOTIFY message
 ms.assetid: 04a96dde-7049-41df-9954-ad7bb5587caf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cd99f2ff37effb1e153a759eb36c9adba5f3671
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dc8e49ec04e1932c7bac4faa9a8737b480d8ef54
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tn061-onnotify-and-wmnotify-messages"></a>TN061: ON_NOTIFY ve WM_NOTIFY İletileri
 > [!NOTE]
@@ -93,7 +88,7 @@ typedef struct tagLV_KEYDOWN {
 |**NM_KILLFOCUS**|Denetim giriş odağını kaybetmiş|  
 |**NM_OUTOFMEMORY**|Çünkü kullanılabilir yeterli bellek yoktu denetim bir işlem tamamlanamadı|  
   
-##  <a name="_mfcnotes_on_notify.3a_.handling_wm_notify_messages_in_mfc_applications"></a>On_notıfy: MFC uygulamalarında wm_notıfy iletileri işleme  
+##  <a name="_mfcnotes_on_notify.3a_.handling_wm_notify_messages_in_mfc_applications"></a> On_notıfy: MFC uygulamalarında wm_notıfy iletileri işleme  
  İşlev `CWnd::OnNotify` bildirim iletilerini işleme. Varsayılan uygulama çağırmak bildirim işleyicileri için ileti eşlemesi denetler. Genel olarak, size geçersiz `OnNotify`. Bunun yerine, bir işleyici işlevi sağlar ve bu işleyici için bir ileti eşleme girişi sahibi pencerenin sınıfı için ileti eşlemesi ekleyin.  
   
  ClassWizard, ClassWizard özellik sayfası oluşturabilirsiniz `ON_NOTIFY` ileti eşleme girişi ve bir iskelet işleyici işlevi ile sağlayın. Bu işlemi kolaylaştırmak için ClassWizard kullanma hakkında daha fazla bilgi için bkz: [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md).  
@@ -163,7 +158,7 @@ void CMessageReflectionDlg::OnKeydownList1(NMHDR* pNMHDR, LRESULT* pResult)
   
  Not ClassWizard uygun türde bir işaretçi otomatik olarak sağlar. Bildirim yapısı aracılığıyla erişebilirsiniz `pNMHDR` veya `pLVKeyDow`.  
   
-##  <a name="_mfcnotes_on_notify_range"></a>ON_NOTIFY_RANGE  
+##  <a name="_mfcnotes_on_notify_range"></a> ON_NOTIFY_RANGE  
  Aynı işlemi gerekiyorsa **wm_notıfy** ileti denetimleri kümesini için kullandığınız **on_notıfy_range** yerine `ON_NOTIFY`. Örneğin, belirli bir bildirim iletisi için aynı eylemi gerçekleştirmek istediğiniz düğmeler kümesi olabilir.  
   
  Kullandığınızda **on_notıfy_range**, bildirim iletisini başına belirtme ve alt tanımlayıcıları aralığın bitiş işlemek üzere alt tanımlayıcıların bitişik bir aralık belirtin.  
@@ -223,7 +218,7 @@ pNotifyStruct  ,
  *Sonuç*  
  Sonuç kodu için bir işaretçi dönmek önce ayarlamanız.  
   
-##  <a name="_mfcnotes_tn061_on_notify_ex.2c_.on_notify_ex_range"></a>ON_NOTIFY_EX, ON_NOTIFY_EX_RANGE  
+##  <a name="_mfcnotes_tn061_on_notify_ex.2c_.on_notify_ex_range"></a> ON_NOTIFY_EX, ON_NOTIFY_EX_RANGE  
  Bildirim birden fazla nesne istiyorsanız yönlendirme bir ileti işleme, kullanabileceğiniz **on_notıfy_ex** (veya **on_notıfy_ex_range**) yerine `ON_NOTIFY` (veya **on_notıfy_range** ). Arasındaki tek fark **EX** sürümü ve normal sürümü olan üye fonksiyonu için adlı **EX** sürümü döndürür bir **BOOL** belirten olsun veya olmasın ileti işleme devam etmelidir. Döndürme **FALSE** bu işlevden aynı iletiyi birden fazla nesnesindeki işlemenize olanak sağlar.  
   
  ClassWizard işlemiyor **on_notıfy_ex** veya **on_notıfy_ex_range**; bunlardan birini, kullanmak istiyorsanız, ileti eşlemesi kendiniz düzenlemeniz gerekir.  

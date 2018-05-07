@@ -1,29 +1,24 @@
 ---
 title: Internet'te etkin teknoloji | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Internet applications [MFC], Active technology
 ms.assetid: 6f782aa1-5c2f-47a2-9e63-ddd0829d5a08
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 163456b044a50bbbbdf5f4ae229723c8730bc369
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6a7062ae67c9fdfbe79efe20ce3251eba37cc926
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="active-technology-on-the-internet"></a>Internet'te Etkin Teknoloji
 Etkin teknoloji heyecan verici, dinamik içerik ve uygulamaları genel Internet veya intranet bilinen bir şirketin iç ağ oluşturma geliştiricilerinin açık bir platformdur. Internet programlama için Microsoft tarafından sağlanan ana teknolojileri aşağıda açıklanmıştır.  

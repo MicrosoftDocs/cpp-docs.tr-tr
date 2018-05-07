@@ -1,12 +1,9 @@
 ---
-title: "CGopherConnection sınıfı | Microsoft Docs"
-ms.custom: 
+title: CGopherConnection sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CGopherConnection
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - CGopherConnection [MFC], GetAttribute
 - CGopherConnection [MFC], OpenFile
 ms.assetid: b5b96aea-ac99-430e-bd84-d1372b43f78f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d669ebc954b73d848e22dc373704ab3434074274
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: d3dc5dae7758c77d335cf6e1255d8caba28df9f9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cgopherconnection-class"></a>CGopherConnection sınıfı
 Gopher Internet sunucusu bağlantınız yönetir.  
@@ -234,11 +229,11 @@ CGopherFile* OpenFile(
  Geçersiz kılma `dwContext` varsayılan bağlam tanımlayıcı bir değerine ayarlayın. Bağlam tanıtıcısı belirli bu işlemle ilişkili `CGopherConnection` tarafından oluşturulan nesne kendi [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesi. İçin döndürülen değer [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen işlem durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)   
+ [CInternetConnection sınıfı](../../mfc/reference/cinternetconnection-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CFtpConnection sınıfı](../../mfc/reference/cftpconnection-class.md)   
  [CHttpConnection sınıfı](../../mfc/reference/chttpconnection-class.md)   
- [CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)   
+ [CInternetConnection sınıfı](../../mfc/reference/cinternetconnection-class.md)   
  [CGopherLocator sınıfı](../../mfc/reference/cgopherlocator-class.md)   
  [CGopherFile sınıfı](../../mfc/reference/cgopherfile-class.md)   
  [CInternetSession Sınıfı](../../mfc/reference/cinternetsession-class.md)

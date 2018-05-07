@@ -1,12 +1,9 @@
 ---
-title: "CMFCMenuButton sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCMenuButton sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCMenuButton
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - CMFCMenuButton [MFC], m_hMenu
 - CMFCMenuButton [MFC], m_nMenuResult
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fac8fe59fe5dbfb101ec0881dbf17925cf048caa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2d611acb34d4159abb41ffa333b4b2cfb6d94442
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcmenubutton-class"></a>CMFCMenuButton sınıfı
 Açılır menü görüntüler ve kullanıcının menü seçimlere raporları bir düğme.  
@@ -80,7 +75,7 @@ class CMFCMenuButton : public CMFCButton
 ## <a name="remarks"></a>Açıklamalar  
  `CMFCMenuButton` Sınıfı türetilir [CMFCButton sınıfı](../../mfc/reference/cmfcbutton-class.md) buna karşılık, türetilen [CButton sınıfı](../../mfc/reference/cbutton-class.md). Bu nedenle, kullanabileceğiniz `CMFCMenuButton` kodunuzda kullandığınız aynı gibi `CButton`.  
   
- Oluştururken bir `CMFCMenuButton`, ilişkili açılır menü için bir tanıtıcı geçmesi gerekir. Ardından, bir işlevi çağırmak `CMFCMenuButton::SizeToContent`. `CMFCMenuButton::SizeToContent`düğme boyutu nerede açılır pencere - yani, altında veya düğmesinin görüneceğini konumuna işaret eden bir ok dahil etmek yeterli olup olmadığını denetler.  
+ Oluştururken bir `CMFCMenuButton`, ilişkili açılır menü için bir tanıtıcı geçmesi gerekir. Ardından, bir işlevi çağırmak `CMFCMenuButton::SizeToContent`. `CMFCMenuButton::SizeToContent` düğme boyutu nerede açılır pencere - yani, altında veya düğmesinin görüneceğini konumuna işaret eden bir ok dahil etmek yeterli olup olmadığını denetler.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, düğmesine iliştirilmiş menü tanıtıcısı, düğme metin ve görüntü boyutuna göre yeniden boyutlandır ve çerçevesi tarafından görüntülenen açılır menüde ayarlayın gösterilmiştir. Bu kod parçacığını parçası olan [yeni denetimler örnek](../../visual-cpp-samples.md).  
@@ -104,14 +99,14 @@ class CMFCMenuButton : public CMFCButton
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxmenubutton.h  
   
-##  <a name="cmfcmenubutton"></a>CMFCMenuButton::CMFCMenuButton  
+##  <a name="cmfcmenubutton"></a>  CMFCMenuButton::CMFCMenuButton  
  Yeni bir oluşturur [CMFCMenuButton](../../mfc/reference/cmfcmenubutton-class.md) nesnesi.  
   
 ```  
 CMFCMenuButton();
 ```  
   
-##  <a name="m_bosmenu"></a>CMFCMenuButton::m_bOSMenu  
+##  <a name="m_bosmenu"></a>  CMFCMenuButton::m_bOSMenu  
  Hangi açılır menü gösteren bir Boole üye değişkeni framework görüntüler.  
   
 ```  
@@ -121,7 +116,7 @@ BOOL m_bOSMenu;
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `m_bOSMenu` olan `TRUE`, framework devralınan çağırması `TrackPopupMenu` bu nesne için yöntem. Aksi takdirde, framework çağırması [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu).  
   
-##  <a name="m_brightarrow"></a>CMFCMenuButton::m_bRightArrow  
+##  <a name="m_brightarrow"></a>  CMFCMenuButton::m_bRightArrow  
  Açılır menü konumunu belirten bir Boolean üye değişkeni.  
   
 ```  
@@ -131,7 +126,7 @@ BOOL m_bRightArrow;
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı menü düğmesi bastığında uygulama açılır menü gösterir. Framework açılır menü düğmesinin altındaki veya düğmesinin sağa görüntüler. Düğme da açılan menüden nerede görüneceğini belirtir küçük bir ok sahiptir. Varsa `m_bRightArrow` olan `TRUE`, framework açılır menü düğmesinin sağa görüntüler. Aksi takdirde, bu açılır menü düğmesinin altındaki görüntüler.  
   
-##  <a name="m_bstaypressed"></a>CMFCMenuButton::m_bStayPressed  
+##  <a name="m_bstaypressed"></a>  CMFCMenuButton::m_bStayPressed  
  Kullanıcı açılır menüsünden bir seçim olmasını sağlarken menü düğmesi görünür olup olmadığını gösteren bir Boole üye değişkeni basılı.  
   
 ```  
@@ -143,7 +138,7 @@ BOOL m_bStayPressed;
   
  Varsa `m_bStayPressed` üye `TRUE`, kullanıcı düğmesini tıklattığında menü düğmesine basıldığında haline gelir. Kullanıcı açılır menüsünde, bir seçim yaparak veya iptal etme kapandıktan sonra kadar basılı kalır.  
   
-##  <a name="m_hmenu"></a>CMFCMenuButton::m_hMenu  
+##  <a name="m_hmenu"></a>  CMFCMenuButton::m_hMenu  
  Ekli menüsüne işleci.  
   
 ```  
@@ -153,7 +148,7 @@ HMENU m_hMenu;
 ### <a name="remarks"></a>Açıklamalar  
  Framework'te kullanıcı menü düğmesine tıkladığında bu üye değişkeni tarafından belirtilen menüsünü görüntüler.  
   
-##  <a name="m_nmenuresult"></a>CMFCMenuButton::m_nMenuResult  
+##  <a name="m_nmenuresult"></a>  CMFCMenuButton::m_nMenuResult  
  Hangi öğeyi belirten bir tamsayı, açılır menüden kullanıcı seçer.  
   
 ```  
@@ -163,7 +158,7 @@ int m_nMenuResult;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye değişkeni sıfır seçim yapmadan kullanıcı menü iptal ederse veya bir hata oluşursa değeri.  
   
-##  <a name="pretranslatemessage"></a>CMFCMenuButton::PreTranslateMessage  
+##  <a name="pretranslatemessage"></a>  CMFCMenuButton::PreTranslateMessage  
  Bunlar gönderilir önce pencere iletileri çevirmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -171,7 +166,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pMsg`  
+ [in] `pMsg`  
  İşaret eden bir [MSG](../../mfc/reference/msg-structure1.md) işlemek için ileti içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -179,7 +174,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="sizetocontent"></a>CMFCMenuButton::SizeToContent  
+##  <a name="sizetocontent"></a>  CMFCMenuButton::SizeToContent  
  Görüntü boyutu ve metin boyutu göre düğmesi boyutunu değiştirir.  
   
 ```  
@@ -187,7 +182,7 @@ virtual CSize SizeToContent(BOOL bCalcOnly = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bCalcOnly`  
+ [in] `bCalcOnly`  
  Bu yöntem düğmesini yeniden boyutlandırır olup olmadığını gösteren bir Boole parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

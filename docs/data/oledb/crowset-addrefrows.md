@@ -1,12 +1,9 @@
 ---
 title: CRowset::AddRefRows | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CRowset<TAccessor>.AddRefRows
@@ -23,18 +20,16 @@ dev_langs:
 helpviewer_keywords:
 - AddRefRows method
 ms.assetid: 590b5a24-870f-4c42-b0c8-28491f368a82
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fed7e6981f72c9698f38eb91022619b9ad1edfb9
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: f41a33523f30776109624982b9de1a57d4d9227b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="crowsetaddrefrows"></a>CRowset::AddRefRows
 Çağrıları [IRowset::AddRefRows](https://msdn.microsoft.com/en-us/library/ms719619.aspx) geçerli satır işleyici ile ilişkili (bir) başvuru sayısı artırılamıyor.  

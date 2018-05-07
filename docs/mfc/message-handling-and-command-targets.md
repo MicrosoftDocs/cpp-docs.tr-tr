@@ -1,13 +1,10 @@
 ---
-title: "İleti işleme ve komut hedefleri | Microsoft Docs"
-ms.custom: 
+title: İleti işleme ve komut hedefleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - IOleCommandTarget
 dev_langs:
@@ -18,24 +15,22 @@ helpviewer_keywords:
 - IOleCommandTarget interface [MFC]
 - command routing [MFC], command targets
 ms.assetid: e45ce14c-e6b6-4262-8f3b-4e891e0ec2a3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81ec1f2a1f419715a3e8e9fbac2fcba3c7584a9b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7184a6e8df67dfd220173c42bfa3e0580bd2cd3f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="message-handling-and-command-targets"></a>İleti İşleme ve Komut Hedefleri
 Komut gönderme arabirimi `IOleCommandTarget` sorgulamak ve komutları yürütmek için basit ve Genişletilebilir bir mekanizma tanımlar. Bu mekanizma Otomasyonu'nun basittir `IDispatch` tamamen komutları; standart kümesinde kullandığından komutları nadiren sahip bağımsız değişkenler ve hiçbir tür bilgileri söz konusu (de komut bağımsız değişkenleri için tür güvenliği yayınladıklarını).  
   
  Komut gönderme arabirimi tasarımında, her komutun "kendisi ile tanımlanan bir komut grubuna" ait bir **GUID**. Bu nedenle, herkesin yeni bir grup tanımlayın ve Microsoft ile koordine etmek için tüm ihtiyacını veya başka bir satıcının olmadan bu gruptaki tüm komutları tanımlayın. (Bu temelde aynı tanımının araçtır bir **görüntüleme arabirimi** artı **DISPID değerleri** Otomasyon. Var. çakışma Burada, bu komut yönlendirme mekanizması Otomasyon tanıtıcıları yalnızca komut yönlendirme için değil de büyük bir ölçekte komut dosyası/programlamasına olsa)  
   
- `IOleCommandTarget`Aşağıdaki senaryolarda işler:  
+ `IOleCommandTarget` Aşağıdaki senaryolarda işler:  
   
 -   Bir nesne yerinde yalnızca nesnenin araç çubukları genellikle görüntülenir ve nesnenin araç çubukları gibi kapsayıcı komutları bazıları için düğmeler olabilir etkinleştirilmiş olduğunda **yazdırma**, **Baskı Önizleme**,  **Kaydet**, `New`, **yakınlaştırma**ve diğerleri. (Kaldır nesneleri standartları önerilir yerinde etkinleştirme gibi düğmeleri araç çubuklarını veya en az bunları devre dışı bırakın. Bu tasarım etkinleştirilmeli ve henüz sağ işleyicisine yönlendirilen için bu komutları sağlar.) Şu anda, bu komutları kapsayıcısı gönderilmesi nesne için hiçbir mekanizması yoktur.  
   

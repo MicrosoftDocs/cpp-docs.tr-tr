@@ -1,12 +1,9 @@
 ---
-title: "COleInsertDialog sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleInsertDialog sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleInsertDialog
@@ -33,17 +30,15 @@ helpviewer_keywords:
 - COleInsertDialog [MFC], GetSelectionType
 - COleInsertDialog [MFC], m_io
 ms.assetid: a9ec610b-abde-431e-bd01-c40159a66dbb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4638471ed199d08bb21bcf16465fe933af3a584c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 041b707bec58abeb19617fbfd275428ca2cf67e7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coleinsertdialog-class"></a>COleInsertDialog sınıfı
 OLE Nesne Ekle iletişim kutusu için kullanılır.  
@@ -108,7 +103,7 @@ class COleInsertDialog : public COleDialog
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxodlgs.h  
   
-##  <a name="coleinsertdialog"></a>COleInsertDialog::COleInsertDialog  
+##  <a name="coleinsertdialog"></a>  COleInsertDialog::COleInsertDialog  
  Bu işlev yalnızca oluşturan bir `COleInsertDialog` nesnesi.  
   
 ```  
@@ -141,7 +136,7 @@ COleInsertDialog (
 ### <a name="remarks"></a>Açıklamalar  
  İletişim kutusunu görüntülemek için arama [DoModal](#domodal) işlevi.  
   
-##  <a name="createitem"></a>COleInsertDialog::CreateItem  
+##  <a name="createitem"></a>  COleInsertDialog::CreateItem  
  Türünde bir nesne oluşturmak için bu işlevi çağırmak [COleClientItem](../../mfc/reference/coleclientitem-class.md) yalnızca [DoModal](#domodal) döndürür **IDOK**.  
   
 ```  
@@ -158,7 +153,7 @@ BOOL CreateItem(COleClientItem* pItem);
 ### <a name="remarks"></a>Açıklamalar  
  Tahsis etmelisiniz `COleClientItem` bu işlevi çağırmak önce nesne.  
   
-##  <a name="domodal"></a>COleInsertDialog::DoModal  
+##  <a name="domodal"></a>  COleInsertDialog::DoModal  
  OLE Nesne Ekle iletişim kutusunu görüntülemek için bu işlevini çağırın.  
   
 ```  
@@ -174,9 +169,9 @@ INT_PTR
  `dwFlags`  
  Aşağıdaki değerlerden biri:  
   
- `COleInsertDialog::DocObjectsOnly`yalnızca DocObjects ekler.  
+ `COleInsertDialog::DocObjectsOnly` yalnızca DocObjects ekler.  
   
- `COleInsertDialog::ControlsOnly`Yalnızca ActiveX denetimlerini ekler.  
+ `COleInsertDialog::ControlsOnly` Yalnızca ActiveX denetimlerini ekler.  
   
  Sıfır DocObject ne bir ActiveX denetimini ekler. Bu değer ilk prototip olarak aynı uygulaması sonuçlarında, yukarıda listelenen.  
   
@@ -194,7 +189,7 @@ INT_PTR
   
  Varsa `DoModal` IDOK, döndürür diğer üye ayarları veya kullanıcı tarafından iletişim kutusuna bilgi giriş almak için işlevleri çağırabilir.  
   
-##  <a name="getclassid"></a>COleInsertDialog::GetClassID  
+##  <a name="getclassid"></a>  COleInsertDialog::GetClassID  
  Almak için bu işlevi çağırmak **CLSID** seçili öğe yalnızca ilişkili [DoModal](#domodal) döndürür **IDOK** ve Seçim türünü **COleInsertDialog:: createNewItem**.  
   
 ```  
@@ -207,7 +202,7 @@ REFCLSID GetClassID() const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [CLSID anahtarı](http://msdn.microsoft.com/library/windows/desktop/ms691424) Windows SDK'sındaki.  
   
-##  <a name="getdrawaspect"></a>COleInsertDialog::GetDrawAspect  
+##  <a name="getdrawaspect"></a>  COleInsertDialog::GetDrawAspect  
  Seçilen öğe bir simge olarak görüntülemek kullanıcı seçerseniz belirlemek için bu işlevini çağırın.  
   
 ```  
@@ -217,16 +212,16 @@ DVASPECT GetDrawAspect() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Nesneyi işlemek için gerekli yöntemi.  
   
-- `DVASPECT_CONTENT`Simge olarak göster onay kutusu işaretli değilse döndürdü.  
+- `DVASPECT_CONTENT` Simge olarak göster onay kutusu işaretli değilse döndürdü.  
   
-- `DVASPECT_ICON`Simge olarak göster onay kutusu denetlendi döndürdü.  
+- `DVASPECT_ICON` Simge olarak göster onay kutusu denetlendi döndürdü.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev yalnızca, çağrı [DoModal](#domodal) döndürür **IDOK**.  
   
  En boy çizim daha fazla bilgi için bkz: [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK'sındaki veri yapısı.  
   
-##  <a name="geticonicmetafile"></a>COleInsertDialog::GetIconicMetafile  
+##  <a name="geticonicmetafile"></a>  COleInsertDialog::GetIconicMetafile  
  Seçilen öğenin simge en boy içeren meta dosyası için bir tanıtıcı almak için bu işlevini çağırın.  
   
 ```  
@@ -236,7 +231,7 @@ HGLOBAL GetIconicMetafile() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  İletişim kutusu seçerek zaman kapatıldığında simge olarak göster onay kutusu ise, simge en boy seçilen öğenin içeren meta dosyası tanıtıcısını işaretli **Tamam**; Aksi halde **NULL**.  
   
-##  <a name="getpathname"></a>COleInsertDialog::GetPathName  
+##  <a name="getpathname"></a>  COleInsertDialog::GetPathName  
  Seçilen dosya eksikse tam yolunu almak için bu işlevi çağırmak [DoModal](#domodal) döndürür **IDOK** ve Seçim türünü değil **COleInsertDialog::createNewItem**.  
   
 ```  
@@ -246,7 +241,7 @@ CString GetPathName() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  İletişim kutusunda seçili dosyasının tam yolu. Seçim türünü ise `createNewItem`, bu işlev bir anlamsız döndürür `CString` yayın modunda veya bir onaylama hata ayıklama modunda neden olur.  
   
-##  <a name="getselectiontype"></a>COleInsertDialog::GetSelectionType  
+##  <a name="getselectiontype"></a>  COleInsertDialog::GetSelectionType  
  Nesne Ekle iletişim kutusu seçerek zaman kapatıldığında seçilen seçim türünü almak için bu işlevi çağırmak **Tamam**.  
   
 ```  
@@ -275,7 +270,7 @@ enum Selection {
   
 - **COleInsertDialog::linkToFile** Dosyadan Oluştur radyo düğmesi seçildiğinde ve bağlantı onay kutusunu denetlendi.  
   
-##  <a name="m_io"></a>COleInsertDialog::m_io  
+##  <a name="m_io"></a>  COleInsertDialog::m_io  
  Türü yapısını **OLEUIINSERTOBJECT** Nesne Ekle iletişim kutusu davranışını denetlemek için kullanılır.  
   
 ```  

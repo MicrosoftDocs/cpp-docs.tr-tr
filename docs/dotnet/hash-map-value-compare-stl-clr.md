@@ -1,12 +1,9 @@
 ---
 title: hash_map::value_compare (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_map::value_compare
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - value_compare member [STL/CLR]
 ms.assetid: a137d23f-0dd0-4858-ad5e-74782d85bf59
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: bd93bccd3408bef794345ecdb467d80e4c3af0a5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1f6fb402242e6adb8f3a51917e6464f247d55c32
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hashmapvaluecompare-stlclr"></a>hash_map::value_compare (STL/CLR)
 İki öğenin değerleri için sıralama temsilcisi.  

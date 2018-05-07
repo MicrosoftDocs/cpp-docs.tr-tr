@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2630 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2630 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2630
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2630
 ms.assetid: 7a655a9c-bab4-495b-97a3-a3f34cf5369a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2e2f839992a6ff1a6e3389d53d3b58e750daaa6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9a77a658f724f701e67968adb7a1310922b9476d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2630"></a>Derleyici Hatası C2630
 'ne bulunan simge' virgülle ayrılmış bir liste olması gerekir  

@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2077 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2077 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2077
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2077
 ms.assetid: f046f0e3-1987-477a-a0af-fe543a9f5fcb
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4459977a9b80c83e1ead1ba11895ca55b0dba9dd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ba9395bd783307ae184cf7f23f187d4425523968
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2077"></a>Derleyici Hatası C2077
 skaler olmayan alan Başlatıcı 'tanımlayıcısı'  

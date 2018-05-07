@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3894 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3894 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3894
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3894
 ms.assetid: 6d5ac903-1dea-431d-8e3a-cebca4342983
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f911f95506a3b0a48d1f378818e561380824ddf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dc94b207f3e9df607a7599bc960f2423f7acd029
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3894"></a>Derleyici Hatası C3894
 'var': l-değeri kullanım initonly statik veri üyesi sınıfı 'sınıfı' sınıf oluşturucu yalnızca izin  

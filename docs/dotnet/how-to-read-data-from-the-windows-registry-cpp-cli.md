@@ -1,31 +1,26 @@
 ---
-title: "Nasıl yapılır: Windows kayıt defterinden veri okuma (C + +/ CLI) | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: Windows kayıt defterinden veri okuma (C + +/ CLI) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Visual C++, reading from Windows Registry
 - registry, reading
 ms.assetid: aebf52c0-acc7-40e2-adbc-d34e0a1e467e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: dfb654ba2cce069086713322624e947e14bc26f4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 87c882bcf2a7900e1f95ea968407c159333c6cb2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="how-to-read-data-from-the-windows-registry-ccli"></a>Nasıl yapılır: Windows Kayıt Defterinden Veri Okuma (C++/CLI)
 Aşağıdaki kod örneğinde <xref:Microsoft.Win32.Registry.CurrentUser> Windows kayıt defterinden veri okuma anahtarı. İlk olarak, alt anahtarlar kullanılarak numaralandırılır <xref:Microsoft.Win32.RegistryKey.GetSubKeyNames%2A> yöntemi ve ardından kimlikleri alt anahtarı kullanılarak açılır <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> yöntemi. Kök anahtarları gibi her alt tarafından temsil edilen <xref:Microsoft.Win32.RegistryKey> sınıfı. Son olarak, yeni <xref:Microsoft.Win32.RegistryKey> nesnesi anahtar/değer çiftlerini numaralandırmak için kullanılır.  

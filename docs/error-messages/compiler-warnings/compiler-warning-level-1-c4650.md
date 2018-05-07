@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4650 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4650 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4650
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4650
 ms.assetid: 3190b3e3-dcd6-4846-939b-f900ab652b2a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af10d05562c0c60c6a010e105441533362d058df
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6cb1c9979141e7958b6c2802aaf321efe41e9570
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4650"></a>Derleyici Uyarısı (düzey 1) C4650
 hata ayıklama bilgileri önceden derlenmiş üst bilgi içinde değil; yalnızca genel semboller başlığından kullanılabilir  

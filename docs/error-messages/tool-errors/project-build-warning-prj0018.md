@@ -1,12 +1,9 @@
 ---
-title: "Proje derleme uyarısı PRJ0018 | Microsoft Docs"
-ms.custom: 
+title: Proje derleme uyarısı PRJ0018 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - PRJ0018
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - PRJ0018
 ms.assetid: 1a3d9e40-6a35-4a74-b6ba-8079f7a82217
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b5ed1a404a96f60d2e18a4970766f4821453b12
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 914f05b6e2bb3dfb8932b306fb7c84b9a31466c7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="project-build-warning-prj0018"></a>Proje Derleme Uyarısı PRJ0018
 Aşağıdaki ortam değişkenleri bulunamadı:  

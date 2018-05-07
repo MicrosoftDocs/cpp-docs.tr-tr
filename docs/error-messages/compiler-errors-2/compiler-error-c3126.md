@@ -2,11 +2,8 @@
 title: Derleyici Hatası C3126 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: ''
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3126
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3126
 ms.assetid: e72658a3-5d85-4a31-89a4-dbc3d475973d
-caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5735de9365c5e05366f17a45e647563916009988
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 811377ef557cb690dcd8f1cf92b983d9bac60675
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3126"></a>Derleyici Hatası C3126
 Yönetilen türü 'type' içinde ' union' UNION tanımlanamıyor  

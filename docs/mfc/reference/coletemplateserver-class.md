@@ -1,12 +1,9 @@
 ---
-title: "COleTemplateServer sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleTemplateServer sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleTemplateServer
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - COleTemplateServer [MFC], Unregister
 - COleTemplateServer [MFC], UpdateRegistry
 ms.assetid: 47a2887d-8162-4993-a842-a784177c7f5c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4bf5f696eeff3e4e26a9d77714c0d5a6f093aaa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 90b24d65dbd6f800dda0b25088288bee6fdcf3c2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coletemplateserver-class"></a>COleTemplateServer sınıfı
 OLE görsel düzenleme sunucuları, otomasyon sunucuları ve bağlantı kapsayıcıları (eklerinin bağlantılarını destekleyen uygulamalar) için kullanılır.  
@@ -61,9 +56,9 @@ class COleTemplateServer : public COleObjectFactory
 |[COleTemplateServer::UpdateRegistry](#updateregistry)|Belge türü OLE sistem kayıt defteri ile kaydeder.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf sınıfından türetilen [COleObjectFactory](../../mfc/reference/coleobjectfactory-class.md); genellikle, kullanabileceğiniz `COleTemplateServer` kendi sınıf türetme yerine doğrudan. `COleTemplateServer`kullanan bir [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) sunucu belgeleri yönetmek için nesnesi. Kullanım `COleTemplateServer` tam bir sunucu, diğer bir deyişle, bir tek başına uygulaması olarak çalıştırmak bir sunucu uygularken. Tek belge arabirimi (SDI) uygulamaları desteklenir, ancak tam genellikle birden çok belge arabirimi (MDI) uygulamaları, sunucularıdır. Bir `COleTemplateServer` sunucu uygulamanızı çalışma sayfaları ve grafikler destekliyorsa, diğer bir deyişle, iki olmalıdır; nesne her bir uygulama destekleyen sunucu belge türü için gerekli `COleTemplateServer` nesneleri.  
+ Bu sınıf sınıfından türetilen [COleObjectFactory](../../mfc/reference/coleobjectfactory-class.md); genellikle, kullanabileceğiniz `COleTemplateServer` kendi sınıf türetme yerine doğrudan. `COleTemplateServer` kullanan bir [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) sunucu belgeleri yönetmek için nesnesi. Kullanım `COleTemplateServer` tam bir sunucu, diğer bir deyişle, bir tek başına uygulaması olarak çalıştırmak bir sunucu uygularken. Tek belge arabirimi (SDI) uygulamaları desteklenir, ancak tam genellikle birden çok belge arabirimi (MDI) uygulamaları, sunucularıdır. Bir `COleTemplateServer` sunucu uygulamanızı çalışma sayfaları ve grafikler destekliyorsa, diğer bir deyişle, iki olmalıdır; nesne her bir uygulama destekleyen sunucu belge türü için gerekli `COleTemplateServer` nesneleri.  
   
- `COleTemplateServer`geçersiz kılmaları `OnCreateInstance` üye fonksiyonu tarafından tanımlanan `COleObjectFactory`. Bu üye işlev uygun türde bir C++ nesnesi oluşturmak için çerçevesi tarafından çağrılır.  
+ `COleTemplateServer` geçersiz kılmaları `OnCreateInstance` üye fonksiyonu tarafından tanımlanan `COleObjectFactory`. Bu üye işlev uygun türde bir C++ nesnesi oluşturmak için çerçevesi tarafından çağrılır.  
   
  Makaleyi sunucuları hakkında daha fazla bilgi için bkz: [sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md).  
   
@@ -79,7 +74,7 @@ class COleTemplateServer : public COleObjectFactory
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h  
   
-##  <a name="coletemplateserver"></a>COleTemplateServer::COleTemplateServer  
+##  <a name="coletemplateserver"></a>  COleTemplateServer::COleTemplateServer  
  Oluşturan bir `COleTemplateServer` nesnesi.  
   
 ```  
@@ -89,7 +84,7 @@ COleTemplateServer();
 ### <a name="remarks"></a>Açıklamalar  
  Kullanımını kısa bir açıklaması için `COleTemplateServer` sınıfı için bkz: [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md) sınıfına genel bakış.  
   
-##  <a name="connecttemplate"></a>COleTemplateServer::ConnectTemplate  
+##  <a name="connecttemplate"></a>  COleTemplateServer::ConnectTemplate  
  Gösterdiği belge şablonu bağlayan `pDocTemplate` arka plandaki [COleObjectFactory](../../mfc/reference/coleobjectfactory-class.md) nesnesi.  
   
 ```  
@@ -112,7 +107,7 @@ void ConnectTemplate(
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [CLSID anahtarı](http://msdn.microsoft.com/library/windows/desktop/ms691424) Windows SDK'sındaki.  
   
-##  <a name="unregister"></a>COleTemplateServer::Unregister  
+##  <a name="unregister"></a>  COleTemplateServer::Unregister  
  İlişkili belge şablonu kaydını siler.  
   
 ```  
@@ -125,7 +120,7 @@ BOOL Unregister();
 ### <a name="remarks"></a>Açıklamalar  
  EnterRemarks  
   
-##  <a name="updateregistry"></a>COleTemplateServer::UpdateRegistry  
+##  <a name="updateregistry"></a>  COleTemplateServer::UpdateRegistry  
  Belge şablonu dizeden dosya türü bilgilerini yükler ve bu bilgileri OLE sistem kayıt defterinde yerleştirir.  
   
 ```  
@@ -140,13 +135,13 @@ void UpdateRegistry(
  `nAppType`  
  Arasında bir değer **OLE_APPTYPE** AFXDISP içinde tanımlanan numaralandırması. H. Aşağıdaki değerlerden biri olabilir:  
   
-- `OAT_INPLACE_SERVER`Sunucu tam sunucu kullanıcı arabirimi sahiptir.  
+- `OAT_INPLACE_SERVER` Sunucu tam sunucu kullanıcı arabirimi sahiptir.  
   
-- `OAT_SERVER`Sunucusu yalnızca katıştırma destekler.  
+- `OAT_SERVER` Sunucusu yalnızca katıştırma destekler.  
   
-- `OAT_CONTAINER`Kapsayıcı katıştırılmış nesneler bağlantılarını destekler.  
+- `OAT_CONTAINER` Kapsayıcı katıştırılmış nesneler bağlantılarını destekler.  
   
-- `OAT_DISPATCH_OBJECT`Nesne `IDispatch`-özelliğine sahip.  
+- `OAT_DISPATCH_OBJECT` Nesne `IDispatch`-özelliğine sahip.  
   
 - **OAT_DOC_OBJECT_SERVER** sunucu destekler katıştırma ve belge nesnesi bileşen modeli.  
   

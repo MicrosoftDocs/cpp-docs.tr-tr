@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2283 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2283 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2283
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2283
 ms.assetid: 8a5b3175-b480-4598-a1f7-0b50504c5caa
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b71e1217c1ee5f25c348ec05069b76a591a0f98
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bb602d1fa330876820cc7e1fe75fcfe7b736b81e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2283"></a>Derleyici Hatası C2283
 'tanımlayıcısı': Saf belirleyici veya Özet geçersiz kılma tanımlayıcısı adlandırılmamış yapısı üzerinde izin verilmiyor  

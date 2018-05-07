@@ -2,11 +2,8 @@
 title: Map::rbegin (STL/CLR) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::map::rbegin
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - rbegin member [STL/CLR]
 ms.assetid: bd7165a3-561f-48d4-9791-7aaafc2cf3a5
-caps.latest.revision: 15
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2afe7c7a7c3cab411a236339fd2a504308c07141
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 65ae106d9d0e2593f5c06612a04494d2372ec82d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="maprbegin-stlclr"></a>map::rbegin (STL/CLR)
 Ters denetimli dizisi başlangıcını belirtir.  

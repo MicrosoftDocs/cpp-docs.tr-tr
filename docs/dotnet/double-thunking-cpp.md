@@ -1,13 +1,10 @@
 ---
-title: "Çift Thunking (C++) | Microsoft Docs"
-ms.custom: 
+title: Çift Thunking (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - /clr compiler option [C++], double thunking
 - interoperability [C++], double thunking
 ms.assetid: a85090b2-dc3c-498a-b40c-340db229dd6f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 1d905f962af6a9cf07ecb0926503fc24e21c0136
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 47d5bbbecc8e1b9743c543a503df1a0afa0dc0ae
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="double-thunking-c"></a>Çift Dönüştürme (C++)
 Çift dönüştürme, bir Visual C++ yönetilen işlevi ve program yürütmenin yönetilen bağlam çağrıları işlev çağrısında yönetilen işlevi çağırmak için işlevin yerel giriş noktası çağırdığında karşılaşabileceğiniz performans kaybı anlamına gelir. Bu konuda, çift dönüştürme nerede oluştuğunu ve performansı artırmak için kaçının nasıl anlatılmaktadır.  
@@ -40,7 +35,7 @@ ms.lasthandoff: 12/21/2017
   
  Benzer şekilde, dışarı aktarırsanız ([dllexport, dllimport](../cpp/dllexport-dllimport.md)) yönetilen bir işlev yerel giriş noktası oluşturulur ve içe aktarır ve bu işlev çağrıları herhangi bir işlev yerel giriş noktası aracılığıyla çağırır. Bu durumda çift dönüştürme önlemek için yerel dışa aktarma/içe aktarma semantiği kullanmayın; yalnızca meta verileri yoluyla başvuru `#using` (bkz [#using yönergesi](../preprocessor/hash-using-directive-cpp.md)).  
   
- Derleyici, gereksiz çift dönüştürme azaltmak için güncelleştirilmiştir. Örneğin, herhangi bir yönetilen türü (dönüş türü dahil) imzada işleviyle örtük olarak işaretlenir `__clrcall`. Çift dönüştürücü eleme hakkında daha fazla bilgi için bkz: [http://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx).  
+ Derleyici, gereksiz çift dönüştürme azaltmak için güncelleştirilmiştir. Örneğin, herhangi bir yönetilen türü (dönüş türü dahil) imzada işleviyle örtük olarak işaretlenir `__clrcall`. Çift dönüştürücü eleme hakkında daha fazla bilgi için bkz: [ http://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx).  
   
 ## <a name="example"></a>Örnek  
   

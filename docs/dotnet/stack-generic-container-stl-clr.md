@@ -2,11 +2,8 @@
 title: Stack::generic_container (STL/CLR) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::stack::generic_container
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - generic_container member [STL/CLR]
 ms.assetid: 00f106c4-2a02-41cd-80de-f413c9355c74
-caps.latest.revision: 14
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: bf2611401b60341bedf15fd38f85e1701482c9d5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 244d891256b863c38f4f57175aa0d8d71caae359
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="stackgenericcontainer-stlclr"></a>stack::generic_container (STL/CLR)
 Kapsayıcı bağdaştırıcısı için genel arabirim türü.  

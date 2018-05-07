@@ -1,10 +1,8 @@
 ---
-title: "Platform::WriteOnlyArray sınıfı | Microsoft Docs"
-ms.custom: 
+title: Platform::WriteOnlyArray sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::WriteOnlyArray::begin
@@ -18,17 +16,15 @@ dev_langs:
 helpviewer_keywords:
 - Platform::WriteOnlyArray Class
 ms.assetid: 92d7dd56-ec58-4b8c-88ba-9c903668b687
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 081dc6489b6cd16ef9065ce8ec332c7593105617
-ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.openlocfilehash: 8f5c1f1f0260d4f1d1c4a6fb640b7cbf1e9d3f2f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="platformwriteonlyarray-class"></a>Platform::WriteOnlyArray sınıfı
 Arayan doldurmak yöntemi için bir dizi geçtiğinde giriş parametresi olarak kullanılan bir tek boyutlu dizi temsil eder.  
@@ -61,7 +57,7 @@ private ref class WriteOnlyArray<T, 1>
  `WriteOnlyArray`  
   
 ### <a name="requirements"></a>Gereksinimler  
- Compiler option: **/ZW**  
+ Derleyici seçeneği: **/ZW**  
   
  **Meta veriler:** Platform.winmd  
   

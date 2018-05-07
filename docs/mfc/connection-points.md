@@ -1,13 +1,10 @@
 ---
-title: "Bağlantı noktaları | Microsoft Docs"
-ms.custom: 
+title: Bağlantı noktaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - IConnectionPoint
 dev_langs:
@@ -24,17 +21,15 @@ helpviewer_keywords:
 - CCmdTarget class [MFC], and connection points
 - sinks, connection points
 ms.assetid: bc9fd7c7-8df6-4752-ac8c-0b177442c88d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d8bbb131aa5d4ce1b12cba84c3928b80a8b2a7e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 56686fe4ea2920f9365b84ec3064df4be95f4a3b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="connection-points"></a>Bağlantı Noktaları
 Bu makalede, bağlantı noktaları (önceki adıyla OLE bağlantı noktaları bilinir) uygulamak açıklanmaktadır MFC sınıfları kullanarak `CCmdTarget` ve `CConnectionPoint`.  

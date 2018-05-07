@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2777 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2777 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2777
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2777
 ms.assetid: 5fe158c0-2a65-488a-aca2-61d4a8b32d43
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 483e653fd93ca276fdb9a4d54e8feded4b8c8acc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cc3eebe5d3fe12bf102adff0cc77b6647fcf2059
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2777"></a>Derleyici Hatası C2777
 özellik yalnızca bir 'put' yöntemini belirtilebilir.  

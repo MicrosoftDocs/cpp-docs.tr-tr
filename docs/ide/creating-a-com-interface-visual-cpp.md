@@ -1,13 +1,10 @@
 ---
-title: "COM arabirimi (Visual C++) oluşturma | Microsoft Docs"
-ms.custom: 
+title: COM arabirimi (Visual C++) oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.com.creating.interfaces
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - COM interfaces, creating
 ms.assetid: 1be84d3c-6886-4d1e-8493-56c4d38a96d4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7b5820686c3e6f01c37cbf527d0e631e5bcc25c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d2844e9051c5e6adf14085bcd7bfcd8096c6f8f7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-a-com-interface-visual-c"></a>COM Arabirimi Oluşturma (Visual C++)
 Visual C++ sihirbazları ve şablonları kullanan COM tanımlama arabirimleri ve dispinterfaces COM nesneleri ve Otomasyon sınıfları için proje oluşturmak için sağlar.  

@@ -1,29 +1,24 @@
 ---
-title: "Adlar, Özellik Ekleme Sihirbazı | Microsoft Docs"
-ms.custom: 
+title: Adlar, Özellik Ekleme Sihirbazı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.prop.overview
 dev_langs:
 - C++
 ms.assetid: 0453b7ea-89cb-41a1-80a2-d45f61589c0a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c1728dfda3ec29e8df2b7f5480e9bffb161da7f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 17c3fd5cfc86f76fcdc1c301bd92bb1fdfac3b9c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="names-add-property-wizard"></a>Adlar, Özellik Ekleme Sihirbazı
 Bir özellik için bir arabirim eklemek için bu sihirbazı kullanın.  
@@ -40,7 +35,7 @@ Bir özellik için bir arabirim eklemek için bu sihirbazı kullanın.
 |MFC görüntüleme arabirimi, MFC ActiveX denetim görüntüleme arabirimi|Bir özellik adı belirtin veya listeden bir stok özellik seçin. Listeden bir özellik seçerseniz, uygun değere görünür **özellik türü** kutusu. Altında yaptığınız seçime bağlı olarak bu türünü değiştirebilirsiniz **uygulama türü**.|  
   
  **Dönüş türü**  
- ATL yalnızca arabirimleri. Dönüş türü özelliği için ayarlar. Çift arabirimler için `HRESULT` her zaman dönüş türü ise ve bu kutusu kullanılamaz. Özel arabirimler için listeden bir dönüş türü seçebilirsiniz. `HRESULT`hataları döndürmek için standart bir yol sağladığından hala önerilir.  
+ ATL yalnızca arabirimleri. Dönüş türü özelliği için ayarlar. Çift arabirimler için `HRESULT` her zaman dönüş türü ise ve bu kutusu kullanılamaz. Özel arabirimler için listeden bir dönüş türü seçebilirsiniz. `HRESULT` hataları döndürmek için standart bir yol sağladığından hala önerilir.  
   
  **Değişken adı**  
  MFC dispinterfaces yalnızca. Yalnızca belirlediğinizde kullanılabilir **üye değişkeni** altında **uygulama türü**. Özelliği ilişkili olduğu üye değişkeni adını ayarlar. Varsayılan olarak, değişken adı m_ için ayarlanmış*PropertyName*. Bu ad düzenleyebilirsiniz.  

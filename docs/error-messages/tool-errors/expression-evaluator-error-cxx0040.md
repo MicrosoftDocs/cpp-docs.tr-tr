@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0040 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0040 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0040
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CXX0040
 - CAN0040
 ms.assetid: 1914e605-d80b-4abc-9e8f-dbcbefec095b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7aff8ad6cdf377b16cbcf16cdfb2362850e3af21
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bb71bad9fd6f6e1de1bd10b204e720bfee036abc
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0040"></a>İfade Değerlendirici Hatası CXX0040
 örtük dönüştürme işlevi gerektirir  

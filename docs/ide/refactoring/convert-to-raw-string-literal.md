@@ -1,22 +1,20 @@
 ---
-title: "Sabit değer ham dizesi Dönüştür | Microsoft Docs"
-ms.custom: 
+title: Sabit değer ham dizesi Dönüştür | Microsoft Docs
+ms.custom: ''
 ms.date: 11/16/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- cpp-ide
+ms.topic: conceptual
 ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 12aa512270ecce4564561634f99be9cbf155448a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b98825719e7b3c0d8eb760a2ec50644b5eddd54e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="convert-to-raw-string-literal"></a>Sabit değer ham dizesi Dönüştür
 **Ne:** C++ ham dizeye herhangi bir dize sabit değeri kapatmanızı sağlar.

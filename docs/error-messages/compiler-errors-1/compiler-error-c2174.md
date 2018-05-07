@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2174 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2174 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2174
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2174
 ms.assetid: 161d563c-76e9-47e9-9142-7812e9ea169e
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33901511e31d386495fc586dac5354411b5a0abf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b4d11c4234bd4e1343198658b1dfcada556b0e1f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2174"></a>Derleyici Hatası C2174
 'function': Gerçek parametre türü 'void' içeriyor: parametre Sayı1, parametre listesi sayı2  

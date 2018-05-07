@@ -2,11 +2,8 @@
 title: count_if (STL/CLR) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::count_if
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - count_if function [STL/CLR]
 ms.assetid: a8aa149d-20b8-4b3f-917b-1ec66f178a5d
-caps.latest.revision: 4
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 80436e1920b53af284c8029766fc27320c9c1472
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e17e68471f42234d5f09c8c4792324765c5c0981
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="countif-stlclr"></a>count_if (STL/CLR)
 Değerleri belirtilen bir koşulla eşleşen bir aralıktaki öğelerin sayısını döndürür.  

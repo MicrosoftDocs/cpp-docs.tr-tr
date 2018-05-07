@@ -1,13 +1,10 @@
 ---
-title: "Penceresiz etkinleştirme sağlama | Microsoft Docs"
-ms.custom: 
+title: Penceresiz etkinleştirme sağlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], activate options
 - activation [MFC], windowless
 ms.assetid: 094903b5-c344-42fa-96ff-ce01e16891c5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb33f1dd9f8be8cb06cdfcc2aeecb653c2762410
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dbe72fcaf26a245d40544acaf59def9e24e0fa6e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="providing-windowless-activation"></a>Penceresiz Etkinleştirme Sağlama
 Pencere oluşturma kod (diğer bir deyişle, gerçekleşen her şeyi çağırdığınızda **CreateWindow'u**) yürütmek maliyetli olabilir. Tutan bir denetim bir pencere iletileri yönetmek penceresinin ekran vardır. Penceresiz denetimleri, bu nedenle windows denetimleriyle daha hızlı bir şekilde bağlıdır.  
@@ -47,7 +42,7 @@ Pencere oluşturma kod (diğer bir deyişle, gerçekleşen her şeyi çağırdı
   
  Penceresiz etkinleştirme etkinleştirildiğinde, kapsayıcı denetimin giriş iletilerini temsil edecek `IOleInPlaceObjectWindowless` arabirimi. `COleControl`kullanıcının bu arabirim uygulaması fare ayarlama uygun şekilde düzenler sonra denetiminizin ileti eşlemesi üzerinden ileti gönderir. İleti eşlemesi karşılık gelen girdilere ekleyerek sıradan pencere iletileri gibi iletileri işleyebilir. Bu iletiler, işleyicileri kullanmaktan kaçının `m_hWnd` üye değişkeni (veya bunu kullanan herhangi bir üye işlevini) denetlemeden ilk değeri olmayan **NULL**.  
   
- `COleControl`Fare yakalama, klavye odağı, kaydırma ve de dahil olmak üzere diğer pencere Hizmetleri gibi uygun kapsayıcısından çağırma üye işlevleri sağlar:  
+ `COleControl` Fare yakalama, klavye odağı, kaydırma ve de dahil olmak üzere diğer pencere Hizmetleri gibi uygun kapsayıcısından çağırma üye işlevleri sağlar:  
   
 -   [Tıklatma](../mfc/reference/colecontrol-class.md#getfocus), [SetFocus](../mfc/reference/colecontrol-class.md#setfocus)  
   

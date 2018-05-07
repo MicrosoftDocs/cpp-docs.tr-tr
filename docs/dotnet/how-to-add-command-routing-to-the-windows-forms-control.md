@@ -1,38 +1,33 @@
 ---
 title: "Nasıl yapılır: komut ekleme Forms Denetimi'ne yönlendiren Windows | Microsoft Docs"
-ms.custom: 
+ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - command routing [C++], adding to Windows Forms controls
 - Windows Forms controls [C++], command routing
 ms.assetid: bf138ece-b463-442a-b0a0-de7063a760c0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: bcd082b22c61e2444d70d936c225e538c2429222
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4c13b0bedf7c81431449aaed8d4fa8f067cdf3d9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="how-to-add-command-routing-to-the-windows-forms-control"></a>Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme
 [CWinFormsView](../mfc/reference/cwinformsview-class.md) MFC komutlarını (örneğin, çerçeve menü öğeleri ve araç çubuğu düğmeleri) işlemeye izin vermek için kullanıcı denetimi komutlar ve güncelleştirme komut UI iletilerini yönlendirir.  
   
  Kullanıcı denetimini kullanan [ICommandTarget::Initialize'ı](../mfc/reference/icommandtarget-interface.md#initialize) komut kaynak nesnesi başvuru depolamak için `m_CmdSrc`, aşağıdaki örnekte gösterildiği gibi. Kullanılacak `ICommandTarget` mfcmifc80.dll'ye bir başvuru eklemeniz gerekir.  
   
- `CWinFormsView`genel MFC görünüm bildirimlerini çeşitli yönetilen kullanıcı denetimine ileterek işler. Bu bildirimler dahil [OnInitialUpdate](../mfc/reference/iview-interface.md#oninitialupdate), [in](../mfc/reference/iview-interface.md#onupdate) ve [OnActivateView](../mfc/reference/iview-interface.md#onactivateview) yöntemleri.  
+ `CWinFormsView` genel MFC görünüm bildirimlerini çeşitli yönetilen kullanıcı denetimine ileterek işler. Bu bildirimler dahil [OnInitialUpdate](../mfc/reference/iview-interface.md#oninitialupdate), [in](../mfc/reference/iview-interface.md#onupdate) ve [OnActivateView](../mfc/reference/iview-interface.md#onactivateview) yöntemleri.  
   
  Bu konuda daha önce tamamlandı varsayılır [nasıl yapılır: bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) ve [nasıl yapılır: kullanıcı denetimi ve konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).  
   

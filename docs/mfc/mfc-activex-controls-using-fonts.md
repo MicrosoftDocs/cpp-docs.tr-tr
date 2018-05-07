@@ -1,13 +1,10 @@
 ---
-title: "MFC ActiveX denetimleri: Yazı tiplerini kullanma | Microsoft Docs"
-ms.custom: 
+title: 'MFC ActiveX denetimleri: Yazı tiplerini kullanma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 f1_keywords:
 - OnFontChanged
 - HeadingFont
@@ -28,17 +25,15 @@ helpviewer_keywords:
 - SelectStockFont method [MFC]
 - fonts [MFC], ActiveX controls
 ms.assetid: 7c51d602-3f5a-481d-84d1-a5d8a3a71761
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a788285aed8e8b7483e13c954ee193aca69d1100
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b53ab98e44a8696795e810b8d6f643720d8f9655
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma
 ActiveX denetimi metin görüntülüyorsa, yazı tipi özelliğini değiştirerek metin görünümünü değiştirmek denetim kullanıcı izin verebilirsiniz. Yazı tipi özelliklerini yazı tipi nesneleri olarak uygulanır ve iki türden biri olabilir: stok veya özel. Stok yazı tipi özellikleri Özellik Ekleme Sihirbazı'nı kullanarak ekleyebilirsiniz preimplemented yazı tipi özelliklerdir. Özel yazı tipi özelliklerini değil preimplemented ve denetim Geliştirici özelliğin davranışı ve kullanım belirler.  
@@ -49,7 +44,7 @@ ActiveX denetimi metin görüntülüyorsa, yazı tipi özelliğini değiştirere
   
 -   [İçinde denetim özel yazı tipi özelliklerini kullanma](#_core_implementing_a_custom_font_property)  
   
-##  <a name="_core_using_the_stock_font_property"></a>Stok Font özelliğini kullanma  
+##  <a name="_core_using_the_stock_font_property"></a> Stok Font özelliğini kullanma  
  Stok yazı tipi özellikleri sınıfı tarafından preimplemented [COleControl](../mfc/reference/colecontrol-class.md). Ayrıca, standart bir yazı tipi özellik sayfası kullanıcının yazı tipi nesnesinin adı, boyut ve stil gibi çeşitli özniteliklerini değiştirmesine izin, de kullanılabilir.  
   
  Yazı tipi nesnesi üzerinden erişim [GetFont](../mfc/reference/colecontrol-class.md#getfont), [SetFont](../mfc/reference/colecontrol-class.md#setfont), ve [InternalGetFont](../mfc/reference/colecontrol-class.md#internalgetfont) işlevlerini `COleControl`. Denetim kullanıcı yazı tipi nesnesi aracılığıyla erişecek `GetFont` ve `SetFont` herhangi bir Get/Set özelliği ile aynı şekilde işlevlerde. Yazı tipi nesnesine erişim denetimi içinde gelen gerekli olduğunda kullanın `InternalGetFont` işlevi.  
@@ -102,14 +97,14 @@ ActiveX denetimi metin görüntülüyorsa, yazı tipi özelliğini değiştirere
   
  [!code-cpp[NVC_MFC_AxFont#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_3.cpp)]  
   
-##  <a name="_core_modifying_the_ondraw_function"></a>OnDraw işlevi değiştirme  
+##  <a name="_core_modifying_the_ondraw_function"></a> OnDraw işlevi değiştirme  
  Varsayılan uygulaması `OnDraw` denetiminde gösterilen tüm metni için Windows sistem yazı tipi kullanır. Bu, değiştirmelisiniz anlamına gelir `OnDraw` cihaz bağlamına yazı tipi nesne seçerek kodu. Bunu yapmak için arama [COleControl::SelectStockFont](../mfc/reference/colecontrol-class.md#selectstockfont) ve aşağıdaki örnekte gösterildiği gibi denetimin cihaz bağlamı geçirin:  
   
  [!code-cpp[NVC_MFC_AxFont#4](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_4.cpp)]  
   
  Sonra `OnDraw` işlevi, yazı tipi nesnesini kullanmak için değiştirildi, denetimin stok yazı tipi özelliğinden özelliklerle denetim içindeki herhangi bir metin görüntülenir.  
   
-##  <a name="_core_using_custom_font_properties_in_your_control"></a>İçinde denetim özel yazı tipi özelliklerini kullanma  
+##  <a name="_core_using_custom_font_properties_in_your_control"></a> İçinde denetim özel yazı tipi özelliklerini kullanma  
  Stok Font özelliği yanı sıra ActiveX denetimini özel yazı tipi özelliklere sahip olabilir. Özel yazı tipi özellik eklemek için yapmanız gerekir:  
   
 -   Özel yazı tipi özelliği uygulamak için Özellik Ekleme Sihirbazı'nı kullanın.  
@@ -118,7 +113,7 @@ ActiveX denetimi metin görüntülüyorsa, yazı tipi özelliğini değiştirere
   
 -   [Yeni bir yazı tipi bildirim arabirimini uygulayan](#_core_implementing_a_new_font_notification_interface).  
   
-###  <a name="_core_implementing_a_custom_font_property"></a>Özel yazı tipi özellik uygulama  
+###  <a name="_core_implementing_a_custom_font_property"></a> Özel yazı tipi özellik uygulama  
  Özel yazı tipi özelliği uygulamak için özellik ekleyin ve ardından kod bazı değişiklikler yapmak için Özellik Ekleme Sihirbazı'nı kullanın. Aşağıdaki bölümlerde özel ekleme `HeadingFont` örnek denetimi özelliği.  
   
 ##### <a name="to-add-the-custom-font-property-using-the-add-property-wizard"></a>Özellik Ekleme Sihirbazı'nı kullanarak özel yazı tipi özellik eklemek için  
@@ -206,7 +201,7 @@ ActiveX denetimi metin görüntülüyorsa, yazı tipi özelliğini değiştirere
   
  Bu değişiklikleri yaptıktan sonra ek işlevsellik içerecek şekilde tüm projeyi yeniden oluşturun.  
   
-###  <a name="_core_processing_font_notifications"></a>Yazı tipi bildirimleri işleme  
+###  <a name="_core_processing_font_notifications"></a> Yazı tipi bildirimleri işleme  
  Çoğu durumda denetimi yazı tipi nesnesinin özelliklerini değiştirildiğinde bilmesi gerekir. Her bir yazı tipi nesne bir üye işlevini çağırarak değiştiğinde bildirim sağlama yeteneğine **IFontNotification** tarafından uygulanan arabirimi `COleControl`.  
   
  Denetim stok Font özelliği kullanıyorsa, kendi bildirimleri tarafından işlenen `OnFontChanged` üye işlevini `COleControl`. Özel yazı tipi özelliklerini eklediğinizde, bunları aynı uygulaması kullanmak olabilir. Önceki bölümdeki örnekte bu geçirerek gerçekleştirilmiştir &**m_xFontNotification** başlatırken **m_fontHeading** üye değişkeni.  
@@ -218,7 +213,7 @@ Birden çok yazı tipi nesnesi arabirimleri uygulama
   
  Denetimin yazı tipi nesne bildirimler arasında ayrım yapmak için bir yoldur, ayrı bir uygulama oluşturmak için **IFontNotification** denetiminde yazı tipi nesneler için arabirim. Bu yöntem yalnızca dize veya yakın zamanda değiştirilmiş yazı tipi kullanan dizeleri, güncelleştirerek çizim kodunuzu en iyi duruma olanak tanır. Aşağıdaki bölümlerde, ikinci bir yazı tipi özellik için ayrı bildirim arabirimleri uygulamak için gerekli adımları gösterir. İkinci font özelliği olduğu varsayılır `HeadingFont` önceki bölümde eklenen özellik.  
   
-###  <a name="_core_implementing_a_new_font_notification_interface"></a>Yeni bir yazı tipi bildirim arabirimi uygulama  
+###  <a name="_core_implementing_a_new_font_notification_interface"></a> Yeni bir yazı tipi bildirim arabirimi uygulama  
  İki veya daha fazla yazı tipleri bildirimler arasında ayrım yapmak için yeni bir bildirim arabirimi denetiminde kullanılan her yazı tipi için uygulanmalıdır. Aşağıdaki bölümlerde, Denetim üstbilgi ve uygulama dosyalarını değiştirerek yeni bir yazı tipi bildirim arabirimi uygulayan açıklar.  
   
 ### <a name="additions-to-the-header-file"></a>Üst bilgi dosyasını eklemeler  

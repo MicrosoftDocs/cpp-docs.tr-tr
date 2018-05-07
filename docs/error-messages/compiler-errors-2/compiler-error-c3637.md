@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3637 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3637 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3637
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3637
 ms.assetid: 72391377-8519-43d9-870a-73a6423deb74
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8be1b564e3385b4c4f6b04eee80bd80e47b7e7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 29ae2ddb9e55363c54451a0b30199d9ae7503f05
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3637"></a>Derleyici Hatası C3637
 'function': arkadaş işlev tanımı bir işlev türü uzmanlaşması olamaz  

@@ -1,12 +1,9 @@
 ---
-title: "_Interlockedexchangeadd iç işlevleri | Microsoft Docs"
-ms.custom: 
+title: _Interlockedexchangeadd iç işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - _InterlockedExchangeAdd64_nf
@@ -64,20 +61,18 @@ helpviewer_keywords:
 - _InterlockedExchangeAdd16_nf intrinsic
 - _InterlockedExchangeAdd64_rel intrinsic
 ms.assetid: 25809e1f-9c60-4492-9f7c-0fb59c8d13d2
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de07c6adc86b252c5798def46b495cab1a43316a
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: c141caf090eb34482fe53a03138ff71d2740e2fc
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="interlockedexchangeadd-intrinsic-functions"></a>_InterlockedExchangeAdd İç İşlevleri
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Derleyici iç Win32 desteği sağlamak [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [_ınterlockedexchangeadd iç işlevleri](../intrinsics/interlockedexchangeadd-intrinsic-functions.md) işlevi.  
   

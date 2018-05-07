@@ -1,24 +1,19 @@
 ---
 title: Dizi ve WriteOnlyArray (C + +/ CX) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/22/2017
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f06e63996024b3fade734a74acdfedf9ece5fba5
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 47c26ef4058cc3116d964740a93f7395c300b92b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="array-and-writeonlyarray-ccx"></a>Dizi ve WriteOnlyArray (C + +/ CX)
 Normal C tarzı diziler serbestçe kullanabilirsiniz veya [std::array](../standard-library/array-class-stl.md) C + +/ CX programı (rağmen [std::vector](../standard-library/vector-class.md) genellikle daha iyi bir seçimdir), ancak meta verilerinde yayımlanır herhangi bir API'yi içinde bir C tarzı dizi dönüştürmeniz gerekir veya için vektör bir [Platform::Array](../cppcx/platform-array-class.md) veya [Platform::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) nasıl kullanıldığını bağlı olarak türü. [Platform::Array](../cppcx/platform-array-class.md) türüdür ne kadar etkili ne kadar güçlü [std::vector](../standard-library/vector-class.md), genel bir kılavuz olarak dizi işlemlerinin çok gerçekleştirir iç kod kullanımını kaçınmalısınız. öğeleri.  

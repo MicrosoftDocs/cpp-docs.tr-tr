@@ -1,12 +1,9 @@
 ---
-title: "CPrintDialogEx sınıfı | Microsoft Docs"
-ms.custom: 
+title: CPrintDialogEx sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CPrintDialogEx
@@ -47,17 +44,15 @@ helpviewer_keywords:
 - CPrintDialogEx [MFC], PrintSelection
 - CPrintDialogEx [MFC], m_pdex
 ms.assetid: 1d506703-ee1c-44cc-b4ce-4e778fec26b8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aefa1a0e879cbacbf3a971bff2887f72d13f303
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: 7f511eb1414a5cd5e22b9a3e05f81caef15b908e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cprintdialogex-class"></a>CPrintDialogEx sınıfı
 Windows yazdırma özellik sayfası tarafından sağlanan hizmetlerin yalıtır.  
@@ -214,7 +209,7 @@ BOOL GetDefaults();
 ### <a name="remarks"></a>Açıklamalar  
  Bir yazıcı cihaz bağlamı (DC) oluşturur [aygıt MODUNDAN](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.  
   
- `GetDefaults`Yazdırma özellik sayfası görüntülenmez. Bunun yerine, ayarlar **hDevNames** ve **hDevMode** üyeleri [m_pdex](#m_pdex) tanıtıcıları için [aygıt MODUNDAN](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES ](../../mfc/reference/devnames-structure.md) için sistem varsayılan yazıcı başlatılmış yapıları. Her ikisi de **hDevNames** ve **hDevMode** NULL olmalıdır veya `GetDefaults` başarısız olur.  
+ `GetDefaults` Yazdırma özellik sayfası görüntülenmez. Bunun yerine, ayarlar **hDevNames** ve **hDevMode** üyeleri [m_pdex](#m_pdex) tanıtıcıları için [aygıt MODUNDAN](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES ](../../mfc/reference/devnames-structure.md) için sistem varsayılan yazıcı başlatılmış yapıları. Her ikisi de **hDevNames** ve **hDevMode** NULL olmalıdır veya `GetDefaults` başarısız olur.  
   
  Varsa **PD_RETURNDC** bayrağı ayarlanmış, bu işlevi değil yalnızca döndürülecek **hDevNames** ve **hDevMode** (bulunan **m_pdex.hDevNames** ve **m_pdex.hDevMode**) çağırana, ancak aynı zamanda bir yazıcıya DC döndürür **m_pdex.hDC**. Yazıcı DC silme ve Windows çağırmak için arayan sorumluluğundadır [GlobalFree](http://msdn.microsoft.com/library/windows/desktop/aa366579) işlevi ile işiniz bittiğinde tanıtıcıları üzerinde `CPrintDialogEx` nesnesi.  
   
@@ -277,7 +272,7 @@ HDC GetPrinterDC() const;
 ### <a name="remarks"></a>Açıklamalar  
  Windows çağırmalısınız [DeleteDC](http://msdn.microsoft.com/library/windows/desktop/dd183533) işiniz bittiğinde cihaz bağlamı silmek için işlevi kullanıyor.  
   
-##  <a name="m_pdex"></a>CPrintDialogEx::m_pdex  
+##  <a name="m_pdex"></a>  CPrintDialogEx::m_pdex  
  Üyeleri iletişim nesnesinin özelliklerini depolamak PRINTDLGEX yapısı.  
   
 ```  

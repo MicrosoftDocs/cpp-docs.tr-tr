@@ -1,12 +1,9 @@
 ---
-title: "CFtpFileFind sınıfı | Microsoft Docs"
-ms.custom: 
+title: CFtpFileFind sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CFtpFileFind
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - CFtpFileFind [MFC], FindNextFile
 - CFtpFileFind [MFC], GetFileURL
 ms.assetid: 9667cf01-657f-4b11-b9db-f11e5a7b4e4c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4fe3b188d5b03c9e727349b9e30982cf52006c9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 88e6916056f988a1cee52020c8ce7e9fce11e574
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cftpfilefind-class"></a>CFtpFileFind sınıfı
 Internet dosya aramaları FTP sunucularının yardımcı olur.  
@@ -61,7 +56,7 @@ class CFtpFileFind : public CFileFind
 |[CFtpFileFind::GetFileURL](#getfileurl)|Bulunan dosyasının yolu da dahil olmak üzere URL'yi alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CFtpFileFind`bir arama başlatır, bir dosyayı bulmak ve URL veya dosya ile ilgili diğer açıklayıcı bilgiler döndürmek üye işlevlerini içerir.  
+ `CFtpFileFind` bir arama başlatır, bir dosyayı bulmak ve URL veya dosya ile ilgili diğer açıklayıcı bilgiler döndürmek üye işlevlerini içerir.  
   
  Internet ve arama yerel dosya eklemek için tasarlanmış diğer MFC sınıfları [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md) ve [CFileFind](../../mfc/reference/cfilefind-class.md). İle birlikte `CFtpFileFind`, bu sınıfları istemcinin protokolü veya dosya türü (yerel makine veya uzak bir sunucuya) sunucu bakılmaksızın belirli dosyaları bulmak sorunsuz bir mekanizma sağlar. HTTP arar gerekli doğrudan dosya işleme desteklemediğinden HTTP sunucularında aramak için MFC sınıfı yok olduğuna dikkat edin.  
   
@@ -82,7 +77,7 @@ class CFtpFileFind : public CFileFind
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxinet.h  
   
-##  <a name="cftpfilefind"></a>CFtpFileFind::CFtpFileFind  
+##  <a name="cftpfilefind"></a>  CFtpFileFind::CFtpFileFind  
  Bu üye işlevi oluşturmak için çağrılan bir `CFtpFileFind` nesnesi.  
   
 ```  
@@ -104,7 +99,7 @@ explicit CFtpFileFind(
 ### <a name="example"></a>Örnek  
   Bu konunun önceki kısımlarında sınıfına genel bakış örneğe bakın.  
   
-##  <a name="findfile"></a>CFtpFileFind::FindFile  
+##  <a name="findfile"></a>  CFtpFileFind::FindFile  
  Bir FTP dosyayı bulmak için bu üye işlevini çağırın.  
   
 ```  
@@ -118,7 +113,7 @@ virtual BOOL FindFile(
  Bulunacak dosyasının adı içeren bir dize için bir işaretçi. Varsa **NULL**, çağrı (*) joker arama gerçekleştirilir.  
   
  `dwFlags`  
- Bu oturumda ne yapılacağını açıklayan bayrakları. Bu bayrakların bit düzeyinde OR işleci (&#124;) ile birlikte kullanılabilir ve aşağıdaki gibidir:  
+ Bu oturumda ne yapılacağını açıklayan bayrakları. Bu bayrakların bit düzeyinde OR işleci ile birleştirilebilir (&#124;) ve aşağıdaki gibidir:  
   
 -   INTERNET_FLAG_RELOAD veri alma hattan bile yerel olarak önbelleğe alınır. Varsayılan bayrağı budur.  
   
@@ -139,7 +134,7 @@ virtual BOOL FindFile(
 ### <a name="example"></a>Örnek  
   Bu konuda önceki örneğe bakın.  
   
-##  <a name="findnextfile"></a>CFtpFileFind::FindNextFile  
+##  <a name="findnextfile"></a>  CFtpFileFind::FindNextFile  
  Bir çağrı ile başlamış bir dosya aramaya devam etmek için bu üye işlevini çağırın [FindFile](#findfile) üye işlevi.  
   
 ```  
@@ -152,12 +147,12 @@ virtual BOOL FindNextFile();
 ### <a name="remarks"></a>Açıklamalar  
  En az bir kez herhangi bir öznitelik işlevini çağırmadan önce bu işlevini çağırmanız gerekir (bkz [CFileFind::FindNextFile](../../mfc/reference/cfilefind-class.md#findnextfile)).  
   
- `FindNextFile`Win32 işlevi sarmalar ['larını](http://msdn.microsoft.com/library/windows/desktop/aa364428).  
+ `FindNextFile` Win32 işlevi sarmalar ['larını](http://msdn.microsoft.com/library/windows/desktop/aa364428).  
   
 ### <a name="example"></a>Örnek  
   Bu konunun önceki kısımlarında örneğe bakın.  
   
-##  <a name="getfileurl"></a>CFtpFileFind::GetFileURL  
+##  <a name="getfileurl"></a>  CFtpFileFind::GetFileURL  
  Belirtilen dosyanın URL'sini almak için bu üye işlevini çağırın.  
   
 ```  
@@ -168,7 +163,7 @@ CString GetFileURL() const;
  Dosya ve yol Evrensel Kaynak Konum Belirleyicisi (URL).  
   
 ### <a name="remarks"></a>Açıklamalar  
- `GetFileURL`üye işlevine benzer [CFileFind::GetFilePath](../../mfc/reference/cfilefind-class.md#getfilepath), URL biçiminde döndürür dışında `ftp://moose/dir/file.txt`.  
+ `GetFileURL` üye işlevine benzer [CFileFind::GetFilePath](../../mfc/reference/cfilefind-class.md#getfilepath), URL biçiminde döndürür dışında `ftp://moose/dir/file.txt`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CFileFind sınıfı](../../mfc/reference/cfilefind-class.md)   

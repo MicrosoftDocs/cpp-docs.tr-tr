@@ -1,10 +1,9 @@
 ---
-title: "Bağlayıcı araçları hatası LNK2019 | Microsoft Docs"
-ms.custom: 
+title: Bağlayıcı araçları hatası LNK2019 | Microsoft Docs
+ms.custom: ''
 ms.date: 12/15/2017
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - LNK2019
@@ -16,14 +15,13 @@ helpviewer_keywords:
 - _check_commonlanguageruntime_version
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20f6fdad0d26d04c6e8022f7b29dbdd7f13ac874
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4323e5f8357da046db7a9403d7c575dfdde566b6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="linker-tools-error-lnk2019"></a>Bağlayıcı Araçları Hatası LNK2019
 
@@ -77,7 +75,7 @@ Visual Studio'nun önceki sürümleri bu düzeyde bir bağımlılık yeterli. An
 
 ### <a name="you-build-a-console-application-by-using-settings-for-a-windows-application"></a>Bir Windows uygulaması için ayarları kullanarak bir konsol uygulaması oluşturma
 
-Hata iletisi benzer ise **WinMain başvurulan işlevinde çözümlenmemiş dış simgesi** *işlev_adı*, kullanarak bağlantı **/SUBSYSTEM:CONSOLE** yerine**/SUBSYSTEM:WINDOWS**. Bu ayar hakkında daha fazla bilgi ve Visual Studio'da bu özelliği ayarlamak yönergeler için bkz: [/SUBSYSTEM (alt sistemi belirtin)](../../build/reference/subsystem-specify-subsystem.md).
+Hata iletisi benzer ise **WinMain başvurulan işlevinde çözümlenmemiş dış simgesi** *işlev_adı*, kullanarak bağlantı **/SUBSYSTEM:CONSOLE** yerine **/SUBSYSTEM:WINDOWS**. Bu ayar hakkında daha fazla bilgi ve Visual Studio'da bu özelliği ayarlamak yönergeler için bkz: [/SUBSYSTEM (alt sistemi belirtin)](../../build/reference/subsystem-specify-subsystem.md).
 
 ### <a name="you-attempt-to-link-64-bit-libraries-to-32-bit-code-or-32-bit-libraries-to-64-bit-code"></a>64-bit kitaplıkları 32 bit kod ya da 32-bit kitaplıkları 64 bit koda bağlantı girişimi
 

@@ -1,13 +1,10 @@
 ---
-title: "Sürükle ve bırak: bir bırakma hedefi uygulama | Microsoft Docs"
-ms.custom: 
+title: 'Sürükle ve bırak: bir bırakma hedefi uygulama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - OLE drag and drop [MFC], drop target
 - drag and drop [MFC], drop target
 ms.assetid: 0689f1ec-5326-4008-b226-4b373c881358
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fc73eb6627e63b8013180b7608633a9ee424c92
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 414437f044869fef7ae48883a88688ad50c9ac5f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="drag-and-drop-implementing-a-drop-target"></a>Sürükle ve Bırak: Bir Bırakma Hedefi Uygulama
 Bu makalede bir bırakma hedefi uygulamanızı nasıl özetlenmektedir. Bırakma hedefi uygulama bir bırakma kaynağı uygulama değerinden biraz daha fazla iş alır ancak hala oldukça basit bir işlemdir. Bu teknikler OLE olmayan uygulamalar için de geçerlidir.  
@@ -34,7 +29,7 @@ Bu makalede bir bırakma hedefi uygulamanızı nasıl özetlenmektedir. Bırakma
   
 1.  Her bir görünümde bir bırakma hedefi olmasını istediğiniz uygulama için bir üye değişkeni ekleyin. Bu üye değişkeni türü olmalıdır `COleDropTarget` veya ondan türetilmiş bir sınıf.  
   
-2.  İşler görünümü sınıfınızın işlevden `WM_CREATE` ileti (genellikle `OnCreate`), yeni üye değişkenin çağrı `Register` üye işlevi. `Revoke`görünümünüzü kaldırıldığı zaman otomatik olarak sizin için çağrılır.  
+2.  İşler görünümü sınıfınızın işlevden `WM_CREATE` ileti (genellikle `OnCreate`), yeni üye değişkenin çağrı `Register` üye işlevi. `Revoke` görünümünüzü kaldırıldığı zaman otomatik olarak sizin için çağrılır.  
   
 3.  Aşağıdaki işlevleri geçersiz kılar. Uygulamanızın genelinde aynı davranışı istiyorsanız, bu view sınıfı işlevleri geçersiz kılar. Yalıtılmış durumlarda davranışını değiştirmek veya dışı bırakarak etkinleştirmek istediğiniz istiyorsanız`CView` windows, bu işlevleri geçersiz kılma, `COleDropTarget`-türetilmiş sınıf.  
   

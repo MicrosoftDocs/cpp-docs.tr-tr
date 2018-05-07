@@ -1,29 +1,24 @@
 ---
-title: "Standart iletişim kutusu veri doğrulama yordamları | Microsoft Docs"
-ms.custom: 
+title: Standart iletişim kutusu veri doğrulama yordamları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - standard dialog, data validation routines
 ms.assetid: 44dbc222-a897-4949-925e-7660e8964ccd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33566bcdfab1a618dc8ff79deb375b3f9d1221f6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 17b99d87db2fee3cf80c25157cdb2b2d2b54903b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="standard-dialog-data-validation-routines"></a>Standart İletişim Kutusu Veri Doğrulama Rutinleri
 Bu konu genel MFC iletişim kutusu denetimleri için kullanılan standart iletişim kutusu veri doğrulama (DDV) yordamları listeler.  
@@ -53,7 +48,7 @@ Bu konu genel MFC iletişim kutusu denetimleri için kullanılan standart ileti�
   
 
   
-##  <a name="ddv_maxchars"></a>DDV_MaxChars  
+##  <a name="ddv_maxchars"></a>  DDV_MaxChars  
  Çağrı `DDV_MaxChars` denetim karakterleri miktarı ile ilişkili olduğunu doğrulamak için *değeri* aşmayan *nChars*.  
   
 ```   
@@ -79,7 +74,7 @@ void AFXAPI DDV_MaxChars(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddv_minmaxbyte"></a>DDV_MinMaxByte  
+##  <a name="ddv_minmaxbyte"></a>  DDV_MinMaxByte  
  Çağrı `DDV_MinMaxByte` denetimi değeri ile ilişkili olduğunu doğrulamak için *değeri* arasında kalan `minVal` ve `maxVal`.  
   
 ```   
@@ -109,7 +104,7 @@ void AFXAPI DDV_MinMaxByte(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddv_minmaxdatetime"></a>DDV_MinMaxDateTime  
+##  <a name="ddv_minmaxdatetime"></a>  DDV_MinMaxDateTime  
  Çağrı `DDV_MinMaxDateTime` tarih ve Saat Seçici saat/tarih değeri denetim doğrulamak için ( [CDateTimeCtrl](../../mfc/reference/cdatetimectrl-class.md)) ile ilişkili *refValue* arasında kalan `refMinRange` ve `refMaxRange`.  
   
 ```   
@@ -145,7 +140,7 @@ void AFXAPI DDV_MinMaxDateTime(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddv_minmaxdouble"></a>DDV_MinMaxDouble  
+##  <a name="ddv_minmaxdouble"></a>  DDV_MinMaxDouble  
  Çağrı `DDV_MinMaxDouble` denetimi değeri ile ilişkili olduğunu doğrulamak için *değeri* arasında kalan `minVal` ve `maxVal`.  
   
 ```   
@@ -175,7 +170,7 @@ void AFXAPI DDV_MinMaxDouble(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddv_minmaxdword"></a>DDV_MinMaxDWord  
+##  <a name="ddv_minmaxdword"></a>  DDV_MinMaxDWord  
  Çağrı `DDV_MinMaxDWord` denetimi değeri ile ilişkili olduğunu doğrulamak için *değeri* arasında kalan `minVal` ve `maxVal`.  
   
 ```   
@@ -205,7 +200,7 @@ void AFXAPI DDV_MinMaxDWord(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddv_minmaxfloat"></a>DDV_MinMaxFloat  
+##  <a name="ddv_minmaxfloat"></a>  DDV_MinMaxFloat  
  Çağrı `DDV_MinMaxFloat` denetimi değeri ile ilişkili olduğunu doğrulamak için *değeri* arasında kalan `minVal` ve `maxVal`.  
   
 ```   
@@ -235,7 +230,7 @@ void AFXAPI DDV_MinMaxFloat(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddv_minmaxint"></a>Ddv_minmaxınt  
+##  <a name="ddv_minmaxint"></a>  Ddv_minmaxınt  
  Çağrı `DDV_MinMaxInt` denetimi değeri ile ilişkili olduğunu doğrulamak için *değeri* arasında kalan `minVal` ve `maxVal`.  
   
 ```   
@@ -265,7 +260,7 @@ void AFXAPI DDV_MinMaxInt(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddv_minmaxlong"></a>DDV_MinMaxLong  
+##  <a name="ddv_minmaxlong"></a>  DDV_MinMaxLong  
  Çağrı `DDV_MinMaxLong` denetimi değeri ile ilişkili olduğunu doğrulamak için *değeri* arasında kalan `minVal` ve `maxVal`.  
   
 ```   
@@ -295,7 +290,7 @@ void AFXAPI DDV_MinMaxLong(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddv_minmaxlonglong"></a>DDV_MinMaxLongLong  
+##  <a name="ddv_minmaxlonglong"></a>  DDV_MinMaxLongLong  
  Çağrı `DDV_MinMaxLongLong` denetimi değeri ile ilişkili olduğunu doğrulamak için *değeri* arasında kalan `minVal` ve `maxVal`.  
   
 ```   
@@ -325,7 +320,7 @@ void AFXAPI DDV_MinMaxLongLong(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddv_minmaxmonth"></a>DDV_MinMaxMonth  
+##  <a name="ddv_minmaxmonth"></a>  DDV_MinMaxMonth  
  Çağrı `DDV_MinMaxMonth` Ay takvim saat/tarih değeri denetim doğrulamak için ( [CMonthCalCtrl](../../mfc/reference/cmonthcalctrl-class.md)) ile ilişkili *refValue* arasında kalan `refMinRange` ve `refMaxRange`.  
   
 ```   
@@ -361,7 +356,7 @@ void AFXAPI DDV_MinMaxMonth(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddv_minmaxshort"></a>DDV_MinMaxShort  
+##  <a name="ddv_minmaxshort"></a>  DDV_MinMaxShort  
  Çağrı `DDV_MinMaxShort` denetimi değeri ile ilişkili olduğunu doğrulamak için *değeri* arasında kalan `minVal` ve `maxVal`.  
   
 ```   
@@ -391,7 +386,7 @@ void AFXAPI DDV_MinMaxShort(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddv_minmaxslider"></a>DDV_MinMaxSlider  
+##  <a name="ddv_minmaxslider"></a>  DDV_MinMaxSlider  
  Çağrı `DDV_MinMaxSlider` denetimi değeri ile ilişkili olduğunu doğrulamak için *değeri* arasında kalan `minVal` ve `maxVal`.  
   
 ```   
@@ -421,7 +416,7 @@ void AFXAPI DDV_MinMaxSlider(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddv_minmaxuint"></a>DDV_MinMaxUInt  
+##  <a name="ddv_minmaxuint"></a>  DDV_MinMaxUInt  
  Çağrı `DDV_MinMaxUInt` denetimi değeri ile ilişkili olduğunu doğrulamak için *değeri* arasında kalan `minVal` ve `maxVal`.  
   
 ```   
@@ -451,7 +446,7 @@ void AFXAPI DDV_MinMaxUInt(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdd_.h  
   
-##  <a name="ddv_minmaxulonglong"></a>DDV_MinMaxULongLong  
+##  <a name="ddv_minmaxulonglong"></a>  DDV_MinMaxULongLong  
  Çağrı `DDV_MinMaxULongLong` denetimi değeri ile ilişkili olduğunu doğrulamak için *değeri* arasında kalan `minVal` ve `maxVal`.  
   
 ```   

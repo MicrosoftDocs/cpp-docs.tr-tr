@@ -1,12 +1,9 @@
 ---
-title: "Kaynak Derleyicisi hatası RC2144 | Microsoft Docs"
-ms.custom: 
+title: Kaynak Derleyicisi hatası RC2144 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - RC2144
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - RC2144
 ms.assetid: 1b3ff39a-92cd-4a04-b1a3-b1fa6a805813
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c29a1c1f392372b8dfddd84fa9693010e6a52bfa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8b6f83f937e881cdee16c22120e6ac1839f7ad76
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="resource-compiler-error-rc2144"></a>Kaynak Derleyicisi Hatası RC2144
 BİRİNCİL dil kimliği sayı değil  

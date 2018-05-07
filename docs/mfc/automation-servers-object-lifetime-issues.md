@@ -1,13 +1,10 @@
 ---
-title: "Otomasyon sunucuları: Nesne ömrü sorunları | Microsoft Docs"
-ms.custom: 
+title: 'Otomasyon sunucuları: Nesne ömrü sorunları | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - Automation servers, object lifetime
 - servers, lifetime of Automation
 ms.assetid: 342baacf-4015-4a0e-be2f-321424f1cb43
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c9fab7af74dee482c5e8dffb327da9c037796fa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e27812c20a64f5472c29a66298bcdec30bf4ef2b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="automation-servers-object-lifetime-issues"></a>Otomasyon Sunucuları: Nesne Ömrü Sorunları
 Bir otomasyon istemci oluşturur veya OLE öğeyi etkinleştirir, sunucu bu nesne için bir işaretçi istemci geçirir. OLE işlevi çağrısı aracılığıyla nesneye başvuru istemci oluşturur [IUnknown::AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379). Bu başvuru istemci çağrılarını kadar etkili olduğu [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317). (Microsoft Foundation Class Kitaplığı'nın OLE sınıfları ile yazılmış istemci uygulamaların bu çağrıları yapmamanız; framework bunu yapar.) OLE sistemi ve sunucu nesne başvuruları oluşturabilir. Bir sunucu, bir nesne yok nesne dış başvuruları etkin kaldığı sürece.  

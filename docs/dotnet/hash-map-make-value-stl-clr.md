@@ -1,12 +1,9 @@
 ---
 title: hash_map::make_value (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_map::make_value
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - make_value member [STL/CLR]
 ms.assetid: 1fcdcacc-5edf-46b7-9481-9a4aef32b025
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: dda168bf31f85dcf42263ff7e922fb3f3abefc5b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9592a147daf119dd8f8dc1fd9c70d128276784d2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hashmapmakevalue-stlclr"></a>hash_map::make_value (STL/CLR)
 Bir değer nesnesi oluşturur.  

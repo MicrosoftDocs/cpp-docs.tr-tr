@@ -2,36 +2,31 @@
 title: SQL Server ile doğrulanabilen derlemeler kullanma (C + +/ CLI) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - verifiable assemblies [C++], with SQL Server
 ms.assetid: 5248a60d-aa88-4ff3-b30a-b791c3ea2de9
-caps.latest.revision: 21
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: d03d54dd52f95f3fbba35bb896594e90aa92e867
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f172eea3108771e129636e9aa95d721d45c99609
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-verifiable-assemblies-with-sql-server-ccli"></a>SQL Server ile Doğrulanabilen Derlemeler Kullanma (C++/CLI)
 Dinamik bağlantı kitaplıklarını (DLL'ler) paketlenmiş genişletilmiş saklı yordamlar Visual C++ ile geliştirilmiş işlevler aracılığıyla SQL Server işlevselliği genişletmek için bir yol sağlar. Genişletilmiş saklı yordamlar DLL'ler içinde işlevler olarak uygulanır. İşlevler ek olarak, genişletilmiş saklı yordamlar da tanımlayabilirsiniz [kullanıcı tanımlı türler](../cpp/classes-and-structs-cpp.md) ve [toplama işlevlerinin](http://msdn.microsoft.com/en-us/de255454-f45e-4281-81f9-bc61893ac5da) (örneğin, SUM veya AVG).  
   
  Bir istemci bir genişletilmiş saklı yordamı yürütüldüğünde, DLL için SQL Server aramaları genişletilmiş saklı yordamı ile ilişkili ve DLL'yi yükler. SQL Server istenen genişletilmiş saklı yordamı çağırır ve belirtilen güvenlik bağlamı altında çalışır. Geçişleri sonuç ayarlar ve parametreleri sunucuya geri döndürür genişletilmiş saklı yordamı.  
   
- [!INCLUDE[sqprsqlong](../dotnet/includes/sqprsqlong_md.md)]Transact-SQL (SQL Server'a doğrulanabilen derlemeler yükleme olanak tanımak için T-SQL) uzantıları sağlar. SQL Server izin kümesi güvenlik bağlamı aşağıdaki güvenlik düzeylerini belirtir:  
+ [!INCLUDE[sqprsqlong](../dotnet/includes/sqprsqlong_md.md)] Transact-SQL (SQL Server'a doğrulanabilen derlemeler yükleme olanak tanımak için T-SQL) uzantıları sağlar. SQL Server izin kümesi güvenlik bağlamı aşağıdaki güvenlik düzeylerini belirtir:  
   
 -   Kısıtlanmamış mod: kendi sorumluluğunuzdadır; kodu çalıştırma kod doğrulanabilir şekilde tür kullanımı uyumlu olması gerekmez.  
   

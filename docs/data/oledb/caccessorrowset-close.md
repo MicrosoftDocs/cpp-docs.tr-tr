@@ -1,12 +1,9 @@
 ---
 title: CAccessorRowset::Close | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CAccessorRowset.Close
@@ -16,18 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - Close method
 ms.assetid: f5de9124-eb3c-4b78-b97a-f4f7bcd86c3b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 817c00a37e60b9b440633729be262989466c2da4
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 659881661cfa60cbeaf89b14bb9fc598433a4e2d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="caccessorrowsetclose"></a>CAccessorRowset::Close
 Tüm etkin erişimciler ve satır serbest bırakır.  

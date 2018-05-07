@@ -1,12 +1,9 @@
 ---
 title: CCommand::CreateCommand | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CCommand.CreateCommand
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - CreateCommand method
 ms.assetid: 3652a313-07a1-40ec-82d6-fc7182f2a6f6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 60627b2e34798c5b1667c2f3bb7457c5a418a2dd
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: ea3e83c860688d206fae69462b8cb25fb215d8ec
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ccommandcreatecommand"></a>CCommand::CreateCommand
 Yeni bir komut oluşturur.  

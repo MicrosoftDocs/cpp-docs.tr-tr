@@ -1,12 +1,9 @@
 ---
 title: hash_map::generic_container (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_map::generic_container
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - generic_container member [STL/CLR]
 ms.assetid: 82014d95-7804-475a-86c2-649caaa4a8bc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 892c9c735a9bfc3ab204aa06fb51ab6a7a06ed08
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 20c9c4693e552d023e7b8dc0d4f2486a1e7a261d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hashmapgenericcontainer-stlclr"></a>hash_map::generic_container (STL/CLR)
 Genel arabirim kapsayıcının türü.  

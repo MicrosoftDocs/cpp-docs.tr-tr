@@ -1,12 +1,9 @@
 ---
 title: CDataConnection::operator CDataSource&amp; | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CDataSource&
@@ -19,18 +16,16 @@ helpviewer_keywords:
 - CDataSource& operator
 - operator & (CDataSource)
 ms.assetid: 852faeee-f1b1-4465-9828-b261d1edf022
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 255d1fe1d6363277c300fee134c5c41473ee8c3b
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 8aca05cd83123e2866b8d46e5d5f085b5edd04f6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdataconnectionoperator-cdatasourceamp"></a>CDataConnection::operator CDataSource&amp;
 Kapsanan bir başvuru döndürür `CDataSource` nesnesi.  

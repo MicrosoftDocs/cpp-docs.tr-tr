@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0009 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0009 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0009
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CXX0009
 - CAN0009
 ms.assetid: b6f26a46-56f3-430f-a6db-b42934ddf331
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5025b555061fbc0fd37d6d3ceccba73f9e6551bd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d579c22ee72992b16cd39a2cedb82e1219972c5f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0009"></a>İfade Değerlendirici Hatası CXX0009
 eksik ' sonra karakter sabiti  

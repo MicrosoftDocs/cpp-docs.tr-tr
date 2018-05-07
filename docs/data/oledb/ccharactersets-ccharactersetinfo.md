@@ -1,12 +1,9 @@
 ---
-title: CCharacterSets, CCharacterSetInfo | Microsoft Docs
-ms.custom: 
+title: CCharacterSets, Ccharactersetınfo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - m_szCollateName
@@ -49,18 +46,16 @@ helpviewer_keywords:
 - CHARACTER_SET_SCHEMA
 - CHARACTER_SET_CATALOG
 ms.assetid: 029d068c-8bb2-4fc0-8709-78ce7f74446e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 532e988be4a76784a2b81e8b96c302dfb9d7e98c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: e46c61df81a9a527fa637c96c37324319bbe5cf5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ccharactersets-ccharactersetinfo"></a>CCharacterSets, CCharacterSetInfo
 Çağrı typedef sınıfı **CCharacterSets** parametre sınıfı uygulamak için **Ccharactersetınfo**.  

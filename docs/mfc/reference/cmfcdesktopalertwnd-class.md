@@ -1,12 +1,9 @@
 ---
-title: "CMFCDesktopAlertWnd sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCDesktopAlertWnd sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCDesktopAlertWnd
@@ -53,17 +50,15 @@ helpviewer_keywords:
 - CMFCDesktopAlertWnd [MFC], SetSmallCaption
 - CMFCDesktopAlertWnd [MFC], SetTransparency
 ms.assetid: 73a2dd7b-ea84-4ae2-9830-7cf6e8dd2425
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfebb488921d81c36f842885ad49eae3f40a37fb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cf09b2f598391a599df5106fcf8933c580dd30e3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcdesktopalertwnd-class"></a>CMFCDesktopAlertWnd sınıfı
 `CMFCDesktopAlertWnd` Sınıfı kullanıcıyı bir olay hakkında bilgilendirmek için ekranda görünen bir kalıcı olmayan iletişim kutusu işlevselliğini uygular.  
@@ -147,7 +142,7 @@ class CMFCDesktopAlertWnd : public CWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxDesktopAlertWnd.h  
   
-##  <a name="create"></a>CMFCDesktopAlertWnd::Create  
+##  <a name="create"></a>  CMFCDesktopAlertWnd::Create  
  Oluşturur ve Masaüstü uyarı pencere başlatır.  
   
 ```  
@@ -167,26 +162,26 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] [out]`pWndOwner`  
+ [in] [out] `pWndOwner`  
  Uyarı pencere sahibini belirtir. Sahibi sonra Masaüstü uyarı pencere ilişkin tüm bildirimler alır. Bu değer olamaz `NULL`.  
   
- [in]`uiDlgResID`  
+ [in] `uiDlgResID`  
  Uyarı pencere kaynak Kimliğini belirtir.  
   
- [in]`hMenu`  
+ [in] `hMenu`  
  Kullanıcı menü düğmesini tıklattığında görüntüleyen menü belirtir. Varsa `NULL`, menü düğmesi görüntülenmez.  
   
- [in]`ptPos`  
+ [in] `ptPos`  
  Ekran koordinatları kullanarak, uyarı pencere görüntülendiği ilk konumlarını belirtir. Bu parametre, (-1, -1) uyarı penceresini ekranın sağ alt köşesinde görüntülenir.  
   
- [in]`pRTIDlgBar`  
+ [in] `pRTIDlgBar`  
  Uyarı pencere istemci alanını kapsayan bir özel iletişim kutusu sınıfı için çalışma zamanı sınıf bilgileri.  
   
- [in]`params`  
+ [in] `params`  
  Bir uyarı pencere oluşturmak için kullanılan parametreleri belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Uyarı pencere başarıyla oluşturulduysa; Aksi takdirde `FALSE`.  
+ `TRUE` Uyarı pencere başarıyla oluşturulduysa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir uyarı pencere oluşturmak için bu yöntemi çağırın. Uyarı pencere istemci alanını kullanıcıya görüntülenen tüm denetimler barındıran bir alt iletişim kutusu içerir.  
@@ -195,7 +190,7 @@ virtual BOOL Create(
   
  İkinci yöntemi aşırı yüklemesini varsayılan denetimleri içeren bir uyarı pencere oluşturur. Değiştirerek görüntülenecek denetleyen belirtebilirsiniz [CMFCDesktopAlertWndInfo sınıfı](../../mfc/reference/cmfcdesktopalertwndinfo-class.md).  
   
-##  <a name="getanimationspeed"></a>CMFCDesktopAlertWnd::GetAnimationSpeed  
+##  <a name="getanimationspeed"></a>  CMFCDesktopAlertWnd::GetAnimationSpeed  
  Animasyon hızı döndürür.  
   
 ```  
@@ -208,7 +203,7 @@ UINT GetAnimationSpeed() const;
 ### <a name="remarks"></a>Açıklamalar  
  Animasyon hızı ne kadar hızlı uyarı penceresi açar ve kapatır açıklar.  
   
-##  <a name="getanimationtype"></a>CMFCDesktopAlertWnd::GetAnimationType  
+##  <a name="getanimationtype"></a>  CMFCDesktopAlertWnd::GetAnimationType  
  Animasyon türü döndürür.  
   
 ```  
@@ -228,7 +223,7 @@ CMFCPopupMenu::ANIMATION_TYPE GetAnimationType();
   
 - `SYSTEM_DEFAULT_ANIMATION`  
   
-##  <a name="getautoclosetime"></a>CMFCDesktopAlertWnd::GetAutoCloseTime  
+##  <a name="getautoclosetime"></a>  CMFCDesktopAlertWnd::GetAutoCloseTime  
  Otomatik kapat zaman aşımı döndürür.  
   
 ```  
@@ -241,7 +236,7 @@ int GetAutoCloseTime() const;
 ### <a name="remarks"></a>Açıklamalar  
  Uyarı pencere otomatik olarak kapatılacak önce ne kadar zaman geçmesi belirlemek için bu yöntemi kullanın.  
   
-##  <a name="getcaptionheight"></a>CMFCDesktopAlertWnd::GetCaptionHeight  
+##  <a name="getcaptionheight"></a>  CMFCDesktopAlertWnd::GetCaptionHeight  
  Resim yazısını yüksekliğini döndürür.  
   
 ```  
@@ -254,7 +249,7 @@ virtual int GetCaptionHeight();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, türetilen bir sınıfta geçersiz kılınabilir. Varsayılan uygulama ya da: açılan pencerede küçük resim yazısı ya da Windows API işlevinden alınan değer görüntülenmelidir küçük resim yazısı yükseklik değeri (7 piksel) verir `GetSystemMetrics(SM_CYSMCAPTION)`.  
   
-##  <a name="getlastpos"></a>CMFCDesktopAlertWnd::GetLastPos  
+##  <a name="getlastpos"></a>  CMFCDesktopAlertWnd::GetLastPos  
  Ekranda Masaüstü uyarı pencere son konumunu döndürür.  
   
 ```  
@@ -267,7 +262,7 @@ CPoint GetLastPos() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, ekranda uyarı penceresinin son geçerli konumunu döndürür.  
   
-##  <a name="gettransparency"></a>CMFCDesktopAlertWnd::GetTransparency  
+##  <a name="gettransparency"></a>  CMFCDesktopAlertWnd::GetTransparency  
  Saydamlık düzeyi döndürür.  
   
 ```  
@@ -280,7 +275,7 @@ BYTE GetTransparency() const;
 ### <a name="remarks"></a>Açıklamalar  
  Uyarı pencere geçerli saydamlık düzeyi almak için bu yöntemi kullanın.  
   
-##  <a name="hassmallcaption"></a>CMFCDesktopAlertWnd::HasSmallCaption  
+##  <a name="hassmallcaption"></a>  CMFCDesktopAlertWnd::HasSmallCaption  
  Masaüstü uyarı pencere küçük resim yazısını veya normal boyutu resim yazısı olup olmadığını belirler.  
   
 ```  
@@ -288,12 +283,12 @@ BOOL HasSmallCaption() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`açılan pencerede küçük resim yazısını görüntülenir `FALSE` açılan pencereyi normal boyuta sahip bir resim yazısı ile görüntüleniyorsa.  
+ `TRUE` açılan pencerede küçük resim yazısını görüntülenir `FALSE` açılan pencereyi normal boyuta sahip bir resim yazısı ile görüntüleniyorsa.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Açılan pencerede küçük resim yazısını veya normal boyutu resim yazısı olup olmadığını belirlemek için bu yöntemi kullanın. Varsayılan olarak, küçük resim yazısı 7 yüksek pikseldir. Windows API işlevini çağırarak normal boyutu resim yazısı yüksekliğini edinebilirsiniz `GetSystemMetrics(SM_CYCAPTION)`.  
   
-##  <a name="onbeforeshow"></a>CMFCDesktopAlertWnd::OnBeforeShow  
+##  <a name="onbeforeshow"></a>  CMFCDesktopAlertWnd::OnBeforeShow  
 
   
 ```  
@@ -301,13 +296,13 @@ virtual BOOL OnBeforeShow(CPoint&);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`CPoint&`  
+ [in] `CPoint&`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="onclicklinkbutton"></a>CMFCDesktopAlertWnd::OnClickLinkButton  
+##  <a name="onclicklinkbutton"></a>  CMFCDesktopAlertWnd::OnClickLinkButton  
  Kullanıcı masaüstü uyarı menüsünde bulunan bir bağlantı düğmesini tıklattığında çerçevesi tarafından çağrılır.  
   
 ```  
@@ -315,7 +310,7 @@ virtual BOOL OnClickLinkButton(UINT uiCmdID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiCmdID`  
+ [in] `uiCmdID`  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -324,7 +319,7 @@ virtual BOOL OnClickLinkButton(UINT uiCmdID);
 ### <a name="remarks"></a>Açıklamalar  
  Bir kullanıcı uyarı pencere bağlantısına tıkladığında bildirim almak istiyorsanız, bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
   
-##  <a name="oncommand"></a>CMFCDesktopAlertWnd::OnCommand  
+##  <a name="oncommand"></a>  CMFCDesktopAlertWnd::OnCommand  
 
   
 ```  
@@ -334,14 +329,14 @@ virtual BOOL OnCommand(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`wParam`  
- [in]`lParam`  
+ [in] `wParam`  
+ [in] `lParam`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="ondraw"></a>CMFCDesktopAlertWnd::OnDraw  
+##  <a name="ondraw"></a>  CMFCDesktopAlertWnd::OnDraw  
 
   
 ```  
@@ -349,11 +344,11 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="processcommand"></a>CMFCDesktopAlertWnd::ProcessCommand  
+##  <a name="processcommand"></a>  CMFCDesktopAlertWnd::ProcessCommand  
 
   
 ```  
@@ -361,13 +356,13 @@ BOOL ProcessCommand(HWND hwnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hwnd`  
+ [in] `hwnd`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setanimationspeed"></a>CMFCDesktopAlertWnd::SetAnimationSpeed  
+##  <a name="setanimationspeed"></a>  CMFCDesktopAlertWnd::SetAnimationSpeed  
  Yeni animasyon hızı ayarlar.  
   
 ```  
@@ -375,13 +370,13 @@ void SetAnimationSpeed(UINT nSpeed);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nSpeed`  
+ [in] `nSpeed`  
  Yeni animasyon hızı milisaniye cinsinden belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Uyarı pencere animasyon hızı ayarlamak için bu yöntemi çağırın. Varsayılan animasyon hızı 30 milisaniyedir.  
   
-##  <a name="setanimationtype"></a>CMFCDesktopAlertWnd::SetAnimationType  
+##  <a name="setanimationtype"></a>  CMFCDesktopAlertWnd::SetAnimationType  
  Animasyon türünü ayarlar.  
   
 ```  
@@ -389,7 +384,7 @@ void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`type`  
+ [in] `type`  
  Animasyon türünü belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -405,7 +400,7 @@ void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
   
 - `SYSTEM_DEFAULT_ANIMATION`  
   
-##  <a name="setautoclosetime"></a>CMFCDesktopAlertWnd::SetAutoCloseTime  
+##  <a name="setautoclosetime"></a>  CMFCDesktopAlertWnd::SetAutoCloseTime  
  Otomatik kapat zaman aşımı ayarlar.  
   
 ```  
@@ -413,13 +408,13 @@ void SetAutoCloseTime(int nTime);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nTime`  
+ [in] `nTime`  
  Uyarı pencere otomatik olarak kapanmadan önce milisaniye cinsinden süre geçtikten.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı penceresiyle etkileşime girmez varsa uyarı pencere belirlenen süre sonunda otomatik olarak kapatılır.  
   
-##  <a name="setsmallcaption"></a>CMFCDesktopAlertWnd::SetSmallCaption  
+##  <a name="setsmallcaption"></a>  CMFCDesktopAlertWnd::SetSmallCaption  
  Küçük ve normal boyutu resim yazıları arasında geçiş yapar.  
   
 ```  
@@ -427,13 +422,13 @@ void SetSmallCaption(BOOL bSmallCaption = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bSmallCaption`  
- `TRUE`Uyarı pencere küçük resim yazısı görüntüler belirtmek için; Aksi takdirde `FALSE` uyarı Pencereyi normal boyutuna resim yazısı görüntüler belirtmek için.  
+ [in] `bSmallCaption`  
+ `TRUE` Uyarı pencere küçük resim yazısı görüntüler belirtmek için; Aksi takdirde `FALSE` uyarı Pencereyi normal boyutuna resim yazısı görüntüler belirtmek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Küçük veya normal boyutu resim yazısı görüntülemek için bu yöntemi çağırın. Varsayılan olarak, küçük resim yazısı 7 yüksek pikseldir. Windows API işlevini çağırarak normal resim yazısı boyutunu edinebilirsiniz `GetSystemMetrics(SM_CYCAPTION)`.  
   
-##  <a name="settransparency"></a>CMFCDesktopAlertWnd::SetTransparency  
+##  <a name="settransparency"></a>  CMFCDesktopAlertWnd::SetTransparency  
  Açılan pencerede saydamlık düzeyi ayarlar.  
   
 ```  
@@ -441,13 +436,13 @@ void SetTransparency(BYTE nTransparency);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nTransparency`  
+ [in] `nTransparency`  
  Saydamlık düzeyini belirtir. Bu değer, 0 ile 255 (dahil) arasında olmalıdır. Bu değer arttıkça, daha fazla opak penceresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Açılan pencerede saydamlık düzeyi ayarlamak için bu işlevini çağırın.  
   
-##  <a name="getdialogsize"></a>CMFCDesktopAlertWnd::GetDialogSize  
+##  <a name="getdialogsize"></a>  CMFCDesktopAlertWnd::GetDialogSize  
 
   
 ```  

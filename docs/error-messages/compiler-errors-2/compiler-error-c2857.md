@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2857 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2857 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2857
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2857
 ms.assetid: b57302bd-58ec-45ae-992a-1e282d5eeccc
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4bf637f0abb5affdb21deb8e081c8b5156afd88
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4bb2ec5047646bea420bf109f18a72d87a8f7c44
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2857"></a>Derleyici Hatası C2857
 ' #include ' /Ycfilename komut satırı seçeneği ile belirtilen deyim kaynak dosyasında bulunamadı  

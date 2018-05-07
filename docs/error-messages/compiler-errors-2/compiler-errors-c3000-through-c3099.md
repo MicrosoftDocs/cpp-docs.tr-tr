@@ -1,12 +1,9 @@
 ---
-title: "Derleyici hataları C3000 C3099 aracılığıyla | Microsoft Docs"
-ms.custom: 
+title: Derleyici hataları C3000 C3099 aracılığıyla | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3051
@@ -47,17 +44,15 @@ helpviewer_keywords:
 dev_langs:
 - C++
 ms.assetid: 01b7b9cb-b351-4b5a-8cb0-1fcddb08d2ab
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aae3a2b5ceaf84fbb1e4a964eac82ec86ce033fa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d0941b2bd6b998e8beb18fa7e5960aa93beb6a80
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-errors-c3000-through-c3099"></a>Derleyici hataları C3000 C3099 aracılığıyla
 

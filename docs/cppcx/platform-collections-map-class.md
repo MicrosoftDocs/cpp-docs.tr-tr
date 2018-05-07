@@ -1,11 +1,8 @@
 ---
-title: "Platform::Collections sınıfı | Microsoft Docs"
-ms.custom: 
+title: Platform::Collections sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2018
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::Map::Map
@@ -22,17 +19,15 @@ dev_langs:
 helpviewer_keywords:
 - Map Class (C++/Cx)
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e54750d02386795e46675b31a06a082bd35402f1
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 6580ccb9ca19a575bac6a9fedbb4e8f16c7060ba
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections sınıfı
 
@@ -173,7 +168,7 @@ bool HasKey(K key);
 
 ### <a name="parameters"></a>Parametreler
 
-*key*  
+*Anahtarı*  
 Map öğesi bulmak için kullanılan anahtar. Türü *anahtar* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -192,7 +187,7 @@ virtual bool Insert(K key, V value);
 
 ### <a name="parameters"></a>Parametreler
 
-*key*  
+*Anahtarı*  
 Anahtar-değer çifti anahtar bölümünü. Türü *anahtar* TypeName *K*.
 
 *value*  
@@ -214,7 +209,7 @@ V Lookup(K key);
 
 ### <a name="parameters"></a>Parametreler
 
-*key*  
+*Anahtarı*  
 Bir öğenin eşlemesinde bulmak için kullanılan anahtar. Türü *anahtar* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -244,7 +239,7 @@ Map(
 
 ### <a name="parameters"></a>Parametreler
 
-*InIt*  
+*Init*  
 Geçerli eşlemesi typename.
 
 *comp*  
@@ -253,7 +248,7 @@ Geçerli eşlemesi typename.
 *m*  
 Bir başvuru veya [Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) için bir `map Class` geçerli eşlemesi başlatmak için kullanılır.
 
-*first*  
+*ilk*  
 Geçerli eşlemesi başlatmak için kullanılan öğelerin bir aralıktaki ilk öğe giriş yineleyici.
 
 *Son*  
@@ -289,7 +284,7 @@ virtual void Remove(K key);
 
 ### <a name="parameters"></a>Parametreler
 
-*key*  
+*Anahtarı*  
 Anahtar-değer çifti anahtar bölümünü. Türü *anahtar* TypeName *K*.
 
 ## <a name="size"></a>  Map::size yöntemi

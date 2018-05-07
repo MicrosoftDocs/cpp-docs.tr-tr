@@ -2,12 +2,9 @@
 title: Grafik işlemleri (C + +/ CLI) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - GDI+ [C++], about graphics operations
 - graphics [C++], .NET Framework and
 ms.assetid: bba27228-b9b3-4c9c-b31c-a04b76702a95
-caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: d80d490dd53a6a27c610532cb26825dc29f34cde
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ab3b1a8a7333a107ed9d2b368b17b8234d25be19
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="graphics-operations-ccli"></a>Grafik İşlemleri (C++/CLI)
 Görüntü işleme kullanmayı göstermektedir [!INCLUDE[winsdklong](../dotnet/includes/winsdklong_md.md)].  

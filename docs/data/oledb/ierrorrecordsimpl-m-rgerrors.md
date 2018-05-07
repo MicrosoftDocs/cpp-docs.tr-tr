@@ -1,12 +1,9 @@
 ---
-title: "Ierrorrecordsımpl::m_rgerrors | Microsoft Docs"
-ms.custom: 
+title: Ierrorrecordsımpl::m_rgerrors | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - IErrorRecordsImpl::m_rgErrors
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - m_rgErrors
 ms.assetid: 295552bd-7a76-41cb-8f09-90e2caf47f69
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 888051532eaea6a4c306cc30ba039680633a349c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 8c96f73b8b2ff213aeeab6269f6c7a6ddac0b0b1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ierrorrecordsimplmrgerrors"></a>IErrorRecordsImpl::m_rgErrors
 Hata kaydı dizisi.  

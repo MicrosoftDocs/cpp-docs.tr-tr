@@ -2,35 +2,30 @@
 title: -CLR altında özel durum işleme farkları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - EXCEPTION_CONTINUE_EXECUTION macro
 - set_se_translator function
 ms.assetid: 2e7e8daf-d019-44b0-a51c-62d7aaa89104
-caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 56bacf88b2c633704b46c6d0de3bb313767b7b2c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f54678de9f98f68f797cd247232a8e3786ff0112
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="differences-in-exception-handling-behavior-under-clr"></a>/CLR Altında Özel Durum İşleme Farkları
 [Yönetilen özel durumlar kullanarak temel kavramlarını](../dotnet/basic-concepts-in-using-managed-exceptions.md) özel durum işleme yönetilen uygulamalarda açıklanır. Bu konuda, özel durum işleme ve bazı kısıtlamalar standart davranışını arasındaki farklar ayrıntılı olarak ele alınmıştır. Daha fazla bilgi için bkz: [_set_se_translator işlevi](../c-runtime-library/reference/set-se-translator.md).  
   
-##  <a name="vcconjumpingoutofafinallyblock"></a>İşyeri dışında atlama bir son engelle  
+##  <a name="vcconjumpingoutofafinallyblock"></a> İşyeri dışında atlama bir son engelle  
  Atlama __ dışında yerel C/C++ kod**son** bir uyarı üretir ancak yapılandırılmış özel durum işleme (SEH) kullanarak blok izin verilir.  Altında [/CLR](../build/reference/clr-common-language-runtime-compilation.md), atlama dışında bir **son** bloğu bir hataya neden olur:  
   
 ```  
@@ -44,7 +39,7 @@ int main() {
 }   // C3276  
 ```  
   
-##  <a name="vcconraisingexceptionswithinanexceptionfilter"></a>Bir özel durum filtresi içinde özel durumlarını oluşturma  
+##  <a name="vcconraisingexceptionswithinanexceptionfilter"></a> Bir özel durum filtresi içinde özel durumlarını oluşturma  
  Ne zaman bir özel durum oluşturulur işlenmesi sırasında bir [özel durum filtresi](../cpp/writing-an-exception-filter.md) yönetilen kod içinde özel durum yakalandı ve filtre 0 döndürürse gibi işlem görür.  
   
  Burada iç içe geçmiş bir özel durum oluşur, yerel kodda aksine davranış budur **ExceptionRecord** alanındaki **EXCEPTION_RECORD** yapısı (tarafından döndürülen [ GetExceptionInformation](http://msdn.microsoft.com/library/windows/desktop/ms679357)) olarak ayarlanır ve **ExceptionFlags** alan 0x10 bit ayarlar. Aşağıdaki örnek, davranış bu farklılık gösterir:  
@@ -107,7 +102,7 @@ Caught a nested exception
 We should execute this handler if compiled to native  
 ```  
   
-##  <a name="vccondisassociatedrethrows"></a>İlişkisiz yeniden oluşturur  
+##  <a name="vccondisassociatedrethrows"></a> İlişkisiz yeniden oluşturur  
  **/ CLR** (bir ilişkilendirilmemiş yeniden oluşturma da bilinir) bir catch işleyicisi dışında bir özel durum yeniden atma desteklemiyor. Bu tür özel durumları kabul edilir olarak C++ standart bir yeniden oluşturma. Etkin bir yönetilen özel durum olduğunda ilişkilendirilmemiş bir yeniden oluşturulması karşılaşılırsa, özel durum C++ özel durum olarak kaydırılan ve ardından işlenemezse. Bu tür özel durumlar yalnızca bir özel durum belirledi türü [System::SEHException](https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.sehexception.aspx).  
   
  Aşağıdaki örnek, C++ özel durum olarak işlenemezse yönetilen bir özel durum gösterir:  
@@ -158,7 +153,7 @@ int main() {
 caught an SEH Exception  
 ```  
   
-##  <a name="vcconexceptionfiltersandexception_continue_execution"></a>Özel durum filtreleri ve exceptıon_contınue_executıon  
+##  <a name="vcconexceptionfiltersandexception_continue_execution"></a> Özel durum filtreleri ve exceptıon_contınue_executıon  
  Bir filtre döndürürse `EXCEPTION_CONTINUE_EXECUTION` filtre döndürülürse olarak yönetilen bir uygulamada işlem görür `EXCEPTION_CONTINUE_SEARCH`. Bu sabitleri hakkında daha fazla bilgi için bkz: [deneyin-except deyimi](../cpp/try-except-statement.md).  
   
  Aşağıdaki örnekte bu farklılık gösterir:  
@@ -198,7 +193,7 @@ int main() {
 Counter=-3  
 ```  
   
-##  <a name="vcconthe_set_se_translatorfunction"></a>_Set_se_translator işlevi  
+##  <a name="vcconthe_set_se_translatorfunction"></a> _Set_se_translator işlevi  
  Set Çeviricisi işlevi çağrısı ile `_set_se_translator`, yalnızca yönetilmeyen kodunda önbellek etkiler. Aşağıdaki örnek, bu sınırlamaya gösterir:  
   
 ```  

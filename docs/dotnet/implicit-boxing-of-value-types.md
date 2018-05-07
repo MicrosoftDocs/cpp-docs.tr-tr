@@ -1,13 +1,10 @@
 ---
-title: "Değer türlerini örtük kutulama | Microsoft Docs"
-ms.custom: 
+title: Değer türlerini örtük kutulama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - boxing, __box keyword
 - value types, boxed
 ms.assetid: 9597c92f-a3fe-44af-ad80-f9d656847a35
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0c4725cdd7e8630131f77e02eedc2af14a469d20
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f1f5a455333e5cb40b63d5a5237b2df053cef194
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="implicit-boxing-of-value-types"></a>Değer Türlerini Örtük Olarak Kutulama
 Değer türleri kutulama Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirdi.  

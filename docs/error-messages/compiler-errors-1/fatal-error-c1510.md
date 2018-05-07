@@ -1,12 +1,9 @@
 ---
-title: "Önemli hata C1510 | Microsoft Docs"
-ms.custom: 
+title: Önemli hata C1510 | Microsoft Docs
+ms.custom: ''
 ms.date: 04/11/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C1510
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C1510
 ms.assetid: 150c827f-9514-41a9-8d7e-82f820749bcb
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d4128580facdc87239d0087fef1cf9eff701854
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f39a609e1621dab404ff79e49ade56a88277aa80
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="fatal-error-c1510"></a>Önemli hata C1510
 Dil kaynak clui.dll açılamıyor  

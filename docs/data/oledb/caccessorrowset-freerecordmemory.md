@@ -1,12 +1,9 @@
 ---
 title: CAccessorRowset::FreeRecordMemory | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CAccessorRowset::FreeRecordMemory
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - FreeRecordMemory method
 ms.assetid: 6ecedead-ee84-4214-8273-c47ab8030839
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: eb0a90f56330826dad4cb805e3a20cb1a1029cec
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 5b48b6cba46080331d8f9681d6ee474a38549669
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="caccessorrowsetfreerecordmemory"></a>CAccessorRowset::FreeRecordMemory
 Herhangi bir sütundan boşaltılması gerek geçerli kayıttaki alan boşaltır.  

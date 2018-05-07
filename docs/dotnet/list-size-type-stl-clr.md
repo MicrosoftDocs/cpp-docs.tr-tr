@@ -1,12 +1,9 @@
 ---
 title: List::size_type (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::list::size_type
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - size_type member [STL/CLR]
 ms.assetid: bfdf869f-fd7e-47b4-9ce9-68f7146dc3ed
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: d92518d53e878c6b44b01008194095cf8db12c40
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 17bc3c83220b64d94af14c85c24610218e563318
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="listsizetype-stlclr"></a>list::size_type (STL/CLR)
 İki öğe arasındaki imzalı uzaklığı türü.  

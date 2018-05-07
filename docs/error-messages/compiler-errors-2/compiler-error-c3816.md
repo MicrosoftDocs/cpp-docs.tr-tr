@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3816 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3816 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3816
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3816
 ms.assetid: 2e52cc7f-e31c-41a3-8d6f-9f5fab3648c0
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e771249c615bde8fb96243ab665b7ba5beaaa14e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: be09db4d91b511583b3119f03df8abc61a0153e9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3816"></a>Derleyici Hatası C3816
 'bildirimi' daha önce bildirilen veya farklı bir yönetilen veya WinRTmodifier ile tanımlanan  

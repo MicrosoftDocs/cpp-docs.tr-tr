@@ -1,13 +1,10 @@
 ---
 title: SQL | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - SQL [C++], ODBC
 - ODBC [C++], SQL implementation
 ms.assetid: e3923bc4-b317-4e0b-afd8-3cd403eb0faf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0c4283e73b800ac0fd4d448d5137372807f893d5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: df1563d8bb3d53bb405fbb0d89b2b26cc964bd44
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sql"></a>SQL
 SQL (yapılandırılmış sorgu dili) tanımlamak, sorgu, değiştirmek ve veri denetimi olanak sağlayan bir ilişkisel veritabanı ile iletişim kurmak için bir yoldur. SQL sözdizimini kullanarak, belirttiğiniz ölçütlere göre kayıtları ayıklar bir deyim oluşturabilirsiniz.  
@@ -47,10 +42,10 @@ SQL (yapılandırılmış sorgu dili) tanımlamak, sorgu, değiştirmek ve veri 
   
 -   [SQL veritabanı sınıflarını kullanma](#_core_how_the_database_classes_use_sql).  
   
-##  <a name="_core_open_database_connectivity_.28.odbc.29"></a>Açık veritabanı bağlantısı (ODBC)  
+##  <a name="_core_open_database_connectivity_.28.odbc.29"></a> Açık veritabanı bağlantısı (ODBC)  
  Veritabanı sınıfları SQL kodda SQL komutlarını katıştırma yerine bir çağrı düzeyi arabirimi kullanan ODBC ile uygulanır. ODBC ile iletişim kurmak için SQL kullanan bir [veri kaynağı](../../data/odbc/data-source-odbc.md) ODBC sürücüleri aracılığıyla. Bu sürücüleri SQL yorumlar ve, gerekirse, Microsoft Access gibi bir belirli veritabanı biçimi ile kullanılmak üzere çevir. ODBC SQL nasıl kullandığı hakkında daha fazla bilgi için bkz: [ODBC](../../data/odbc/odbc-basics.md) ve ODBC SDK *Programcının Başvurusu* MSDN Kitaplığı CD'sindeki.  
   
-##  <a name="_core_the_database_classes"></a>Veritabanı sınıfları  
+##  <a name="_core_the_database_classes"></a> Veritabanı sınıfları  
  Veritabanı sınıfları işlemek ve var olan verileri güncelleştirmenize izin vermek için tasarlanmış [veri kaynağı](../../data/odbc/data-source-odbc.md). [MFC Uygulama Sihirbazı'nı](../../mfc/reference/database-support-mfc-application-wizard.md), [MFC ODBC Tüketici Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) (üzerinden erişilen **sınıfı Ekle**), ve veritabanı sınıfları SQL deyimlerini çoğunu sizin için oluşturur.  
   
  Veritabanı sınıfları SQL veri işleme dili (DML) olarak bilinen bir bölümünü kullanın. Bu komutlar bölümünü veya tümünü veri kaynağı ile çalışma, yeni kayıtlar ekleme, kaydını düzenlemek ve kayıtlarını sil olanak tanır. Aşağıdaki tabloda en yaygın SQL anahtar sözcükleri listeler ve veritabanı sınıfları yöntemleri kullanabilirsiniz.  
@@ -79,7 +74,7 @@ SQL (yapılandırılmış sorgu dili) tanımlamak, sorgu, değiştirmek ve veri 
   
  Desteklenen SQL deyimleri, veri türleri, SQL temel dilbilgisi ve SQL, ilgili önerilen yayınlara okuma listesi listesi dahil olmak üzere SQL hakkında daha fazla bilgi bulabilirsiniz *ODBC SDK* *Programcı Başvurusu*  MSDN Kitaplığı CD'sindeki.  
   
-##  <a name="_core_how_the_database_classes_use_sql"></a>SQL veritabanı sınıflarını kullanma  
+##  <a name="_core_how_the_database_classes_use_sql"></a> SQL veritabanı sınıflarını kullanma  
  Veri kaynağı ile iletişim kurmak için ODBC veritabanı sınıflarından kayıt kümelerini kullanma ve ODBC kayıtlarını SQL deyimlerini göndererek veri kaynağından alır. Bu konu veritabanı sınıfları ve SQL arasındaki ilişkiyi açıklar.  
   
  Bir SQL deyimini parçalarını oluşturarak bir SQL deyimi bir kayıt oluşturur bir `CString`. Dize olarak oluşturulan bir **seçin** deyimi bir kayıt kümesini döndürür.  

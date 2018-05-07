@@ -1,12 +1,9 @@
 ---
 title: CDataConnection::CDataConnection | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CDataConnection.CDataConnection
@@ -18,18 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - CDataConnection class, constructor
 ms.assetid: ac25c9a0-44d3-4083-b13f-76c07772e12d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4405e0dce66de9f006a23b5b680072b9562af06f
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 267341f88886f3ff94a6b828034e8acbaa2dc0c1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdataconnectioncdataconnection"></a>CDataConnection::CDataConnection
 Oluşturur ve başlatır bir `CDataConnection` nesnesi.  

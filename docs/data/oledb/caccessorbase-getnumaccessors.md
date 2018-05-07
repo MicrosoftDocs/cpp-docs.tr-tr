@@ -1,12 +1,9 @@
 ---
 title: CAccessorBase::GetNumAccessors | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CAccessorBase::GetNumAccessors
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - GetNumAccessors method
 ms.assetid: 54576461-2dc3-431a-8cdc-b5f054ee0bdc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1696d8a5ca2c6705fddab1ffdc2b6113c5d8d45d
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 5ddc967613350622eee16662b524cbfa5114f577
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="caccessorbasegetnumaccessors"></a>CAccessorBase::GetNumAccessors
 Sınıfı tarafından oluşturulan erişimciler sayısını alır.  

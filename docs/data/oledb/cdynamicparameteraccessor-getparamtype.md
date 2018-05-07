@@ -1,12 +1,9 @@
 ---
 title: CDynamicParameterAccessor::GetParamType | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CDynamicParameterAccessor.GetParamType
@@ -20,18 +17,16 @@ dev_langs:
 helpviewer_keywords:
 - GetParamType method
 ms.assetid: d9c46775-c2a6-4100-8b69-99f13c52958b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7bdda452004333874525367a4dd0770f654f83c7
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 0c5c531cb053397c2629c3232e41b8976fe947c1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdynamicparameteraccessorgetparamtype"></a>CDynamicParameterAccessor::GetParamType
 Belirtilen parametre veri türünü alır.  

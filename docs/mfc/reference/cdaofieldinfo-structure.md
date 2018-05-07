@@ -2,12 +2,9 @@
 title: Cdaofieldınfo yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - CDaoFieldInfo
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - DAO (Data Access Objects), Fields collection
 - CDaoFieldInfo structure [MFC]
 ms.assetid: 91b13e3f-bdb8-440c-86fc-ba4181ea0182
-caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 63fdab9bae7238f427ff2015beffd53570603af4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6d08dd9d877d8872c5c8a930e84ae0496c745709
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdaofieldinfo-structure"></a>CDaoFieldInfo Yapısı
 `CDaoFieldInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan bir alan nesne hakkında bilgiler içerir.  
@@ -80,7 +75,7 @@ struct CDaoFieldInfo
   
 - **dbLongBinary** uzun ikili (OLE nesnesi); MFC sınıfı kullanmak isteyebilirsiniz [CLongBinary](../../mfc/reference/cbytearray-class.md) sınıfı yerine `CLongBinary` olarak `CByteArray` daha zengin ve daha kolay kullanılır.  
   
-- **dbMemo** notları; bkz: MFC sınıfı`CString`  
+- **dbMemo** notları; bkz: MFC sınıfı `CString`  
   
 - **dbGUID** bir genel benzersiz tanımlayıcı/evrensel benzersiz uzak yordam çağrıları ile kullanılan tanımlayıcı. Daha fazla bilgi için DAO Yardımı'ndaki "Type özelliği" konusuna bakın.  
   
@@ -159,7 +154,7 @@ struct CDaoFieldInfo
   
  Nesne özelliklerinin incelenmesi için kullanımı yanı sıra, kullanabilirsiniz `CDaoFieldInfo` bir tabledef yeni alanları oluşturmak için bir giriş parametresi oluşturulamadı. Bu görev için daha basit seçenekleri mevcuttur, ancak daha hassas denetim isterseniz, sürümünü kullanabilirsiniz [CDaoTableDef::CreateField](../../mfc/reference/cdaotabledef-class.md#createfield) alan bir `CDaoFieldInfo` parametresi.  
   
- Tarafından alınan bilgileri `GetFieldInfo` sınıfının üye işlevini (alanını içeren) depolanır bir `CDaoFieldInfo` yapısı. Çağrı `GetFieldInfo` üye işlevini, alanlar koleksiyonunda alan nesne depolandığı içeren nesne. `CDaoFieldInfo`Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümü bir `CDaoFieldInfo` nesnesi.  
+ Tarafından alınan bilgileri `GetFieldInfo` sınıfının üye işlevini (alanını içeren) depolanır bir `CDaoFieldInfo` yapısı. Çağrı `GetFieldInfo` üye işlevini, alanlar koleksiyonunda alan nesne depolandığı içeren nesne. `CDaoFieldInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümü bir `CDaoFieldInfo` nesnesi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdao.h  

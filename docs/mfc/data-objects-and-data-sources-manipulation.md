@@ -1,13 +1,10 @@
 ---
-title: "Veri nesneleri ve veri kaynakları: düzenleme | Microsoft Docs"
-ms.custom: 
+title: 'Veri nesneleri ve veri kaynakları: düzenleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - delayed rendering [MFC]
 - OLE [MFC], data sources
 ms.assetid: f7f27e77-bb5d-4131-b819-d71bf929ebaf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40bd83b2e472ff1b1e5d277c27a801b0750fb160
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b4c3414734f40ee81689ffa2f160cbbab8306d2b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="data-objects-and-data-sources-manipulation"></a>Veri Nesneleri ve Veri Kaynakları: Düzenleme
 Bir veri nesnesi veya veri kaynağı oluşturulduktan sonra birkaç ortak işlem verileri ekleme ve kaldırma verileri, verilerin bulunduğu biçimleri numaralandırma gibi ve daha fazlasını gerçekleştirebilirsiniz. Bu makale, en yaygın işlemleri tamamlamak gerekli teknikleri açıklar. Konular şunlardır:  
@@ -42,14 +37,14 @@ Bir veri nesnesi veya veri kaynağı oluşturulduktan sonra birkaç ortak işlem
   
 -   [Bir veri nesnesinden veriyi geri alma](#_core_retrieving_data_from_a_data_object)  
   
-##  <a name="_core_inserting_data_into_a_data_source"></a>Bir veri kaynağına veri ekleme  
+##  <a name="_core_inserting_data_into_a_data_source"></a> Bir veri kaynağına veri ekleme  
  Veriler bir veri kaynağına nasıl eklenir olup verileri hemen sağlanır üzerinde bağlıdır veya isteğe bağlı ve hangi Orta sağlanır. Olanakları aşağıdaki gibidir.  
   
 ### <a name="supplying-data-immediately-immediate-rendering"></a>Sağlama verileri hemen (anlık görüntü oluşturma)  
   
 -   Çağrı `COleDataSource::CacheGlobalData` art arda içinde sağladığını veri her Pano biçimi. Kullanılmak üzere Pano biçimi geçirmek verileri içeren bellek için bir tanıtıcı ve isteğe bağlı olarak bir **FORMATETC** açıklayan veri yapısı.  
   
-     veya  
+     -veya-  
   
 -   İle doğrudan çalışmak isterseniz **STGMEDIUM** yapıları çağırmanız `COleDataSource::CacheData` yerine `COleDataSource::CacheGlobalData` yukarıdaki seçeneği.  
   
@@ -58,11 +53,11 @@ Bir veri nesnesi veya veri kaynağı oluşturulduktan sonra birkaç ortak işlem
   
 -   Çağrı `COleDataSource::DelayRenderData` art arda içinde sağladığını veri her Pano biçimi. Kullanılacak Pano biçimi geçirmek ve isteğe bağlı olarak bir **FORMATETC** açıklayan veri yapısı. Verileri istendiğinde framework çağıracak `COleDataSource::OnRenderData`, hangi geçersiz kılmanız gerekir.  
   
-     veya  
+     -veya-  
   
 -   Kullanırsanız, bir `CFile` veri sağlamak için nesne çağrısı `COleDataSource::DelayRenderFileData` yerine `COleDataSource::DelayRenderData` önceki seçeneği. Verileri istendiğinde framework çağıracak `COleDataSource::OnRenderFileData`, hangi geçersiz kılmanız gerekir.  
   
-##  <a name="_core_determining_the_formats_available_in_a_data_object"></a>Bir veri nesnesi içinde kullanılabilir biçimleri belirleme  
+##  <a name="_core_determining_the_formats_available_in_a_data_object"></a> Bir veri nesnesi içinde kullanılabilir biçimleri belirleme  
  Bir uygulama veri yapıştırın kullanıcıya vermeden önce bunu işleyebileceği panoya biçimleri olup olmadığını bilmek ister. Bunu yapmak için uygulamanızın şunları yapmalıdır:  
   
 1.  Oluşturma bir `COleDataObject` nesne ve **FORMATETC** yapısı.  
@@ -73,13 +68,13 @@ Bir veri nesnesi veya veri kaynağı oluşturulduktan sonra birkaç ortak işlem
   
     -   Veri nesnesinin çağrı `IsDataAvailable` yalnızca bir veya iki biçimleri, üye işlevi gerekir. Bu durumlarda, Panodaki veriler uygulamanızı daha önemli ölçüde daha fazla destekler zaman kazanabilirsiniz.  
   
-         veya  
+         -veya-  
   
     -   Veri nesnesinin çağrı `BeginEnumFormats` Pano'ya biçimlerinden numaralandırma başlatmak için üye işlevi. ' I çağırın `GetNextFormat` Pano dönene kadar uygulamanızın bir biçimini destekler veya daha fazla hiçbir biçimleri vardır.  
   
  Kullanıyorsanız `ON_UPDATE_COMMAND_UI`, yapıştırma ve muhtemelen Düzenle menüsündeki Özel Yapıştır öğeleri artık etkinleştirebilirsiniz. Bunu yapmak için ya da çağrısı `CMenu::EnableMenuItem` veya `CCmdUI::Enable`. Hangi kapsayıcı hakkında daha fazla bilgi için uygulamaları menü öğeleriyle yapın ve gerekir, gördüğünüzde [menüler ve kaynaklar: kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md).  
   
-##  <a name="_core_retrieving_data_from_a_data_object"></a>Bir veri nesnesinden veriyi geri alma  
+##  <a name="_core_retrieving_data_from_a_data_object"></a> Bir veri nesnesinden veriyi geri alma  
  Veri biçimi karar verdikten sonra kalan tek şey veri nesnesinden verileri almak üzere. Bunu yapmak için kullanıcı verileri nereye karar ve uygulama uygun işlevi çağırır. Veriler aşağıdaki ortamlarının birinde kullanılabilir:  
   
 |Orta|Çağrılacak işlevi|  

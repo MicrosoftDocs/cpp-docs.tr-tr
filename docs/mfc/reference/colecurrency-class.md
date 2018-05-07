@@ -1,12 +1,9 @@
 ---
-title: "COleCurrency sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleCurrency sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleCurrency
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - COleCurrency [MFC], m_cur
 - COleCurrency [MFC], m_status
 ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8d20b0f61fc7773899e671bec5b252ef2af1abf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b8139047f47a1984dca9faba3ebff6b0426bb444
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="colecurrency-class"></a>COleCurrency sınıfı
 Yalıtan `CURRENCY` OLE Otomasyon veri türü.  
@@ -104,7 +99,7 @@ class COleCurrency
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h  
   
-##  <a name="colecurrency"></a>COleCurrency::COleCurrency  
+##  <a name="colecurrency"></a>  COleCurrency::COleCurrency  
  Oluşturan bir **COleCurrency** nesnesi.  
   
 ```  
@@ -152,7 +147,7 @@ COleCurrency(
   
  [!code-cpp[NVC_MFCOleContainer#10](../../mfc/codesnippet/cpp/colecurrency-class_1.cpp)]  
   
-##  <a name="format"></a>COleCurrency::Format  
+##  <a name="format"></a>  COleCurrency::Format  
  Para birimi değeri biçimlendirilmiş bir temsilini oluşturmak için bu üye işlevini çağırın.  
   
 ```  
@@ -177,7 +172,7 @@ CString Format(DWORD  dwFlags = 0, LCID  lcid = LANG_USER_DEFAULT) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#11](../../mfc/codesnippet/cpp/colecurrency-class_2.cpp)]  
   
-##  <a name="getstatus"></a>COleCurrency::GetStatus  
+##  <a name="getstatus"></a>  COleCurrency::GetStatus  
  (Geçerlilik) durumunu almak için bu üye işlevini çağırın bir verilen **COleCurrency** nesnesi.  
   
 ```  
@@ -210,7 +205,7 @@ enum CurrencyStatus {
   
 -   Gelen değerini ayarlarsanız bir **değişken** veya `COleVariant` bir para birimi değeri dönüştürülemedi değeri.  
   
--   Bu nesne bir taşması veya underflow aritmetik atama işlemi sırasında örneğin karşılaştı, `+=` veya  **\* =** .  
+-   Bu nesne bir taşması veya underflow aritmetik atama işlemi sırasında örneğin karşılaştı, `+=` veya **\* =**.  
   
 -   Bu nesne için geçersiz bir değer atanmışsa.  
   
@@ -233,7 +228,7 @@ enum CurrencyStatus {
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#12](../../mfc/codesnippet/cpp/colecurrency-class_3.cpp)]  
   
-##  <a name="m_cur"></a>COleCurrency::m_cur  
+##  <a name="m_cur"></a>  COleCurrency::m_cur  
  Arka plandaki [para birimi](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) bu yapısı **COleCurrency** nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -243,7 +238,7 @@ enum CurrencyStatus {
   
  Daha fazla bilgi için bkz: [para birimi](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) Windows SDK'sı giriş.  
   
-##  <a name="m_status"></a>COleCurrency::m_status  
+##  <a name="m_status"></a>  COleCurrency::m_status  
  Bu veri üyesi türü numaralandırılmış türüdür `CurrencyStatus`, içinde tanımlanan **COleCurrency** sınıfı.  
   
 ```  
@@ -267,7 +262,7 @@ enum CurrencyStatus{
   
 -   Gelen değerini ayarlarsanız bir **değişken** veya `COleVariant` bir para birimi değeri dönüştürülemedi değeri.  
   
--   Bu nesne bir taşması veya underflow aritmetik atama işlemi sırasında örneğin karşılaştı, `+=` veya  **\* =** .  
+-   Bu nesne bir taşması veya underflow aritmetik atama işlemi sırasında örneğin karşılaştı, `+=` veya **\* =**.  
   
 -   Bu nesne için geçersiz bir değer atanmışsa.  
   
@@ -290,7 +285,7 @@ enum CurrencyStatus{
     > [!CAUTION]
     >  Gelişmiş programlama durumlar için bu veri üyesidir. Satır içi üye işlevleri kullanması gereken [GetStatus](#getstatus) ve [SetStatus](#setstatus). Bkz: `SetStatus` açıkça bu veri üyesi ayarlama ile ilgili daha fazla uyarılar için.  
   
-##  <a name="operator_eq"></a>COleCurrency::operator =  
+##  <a name="operator_eq"></a>  COleCurrency::operator =  
  Bu aşırı yüklenmiş atama işleçleri kaynak para birimi değeri bu kopyalamak **COleCurrency** nesnesi.  
   
 ```  
@@ -304,7 +299,7 @@ const COleCurrency& operator=(const COleCurrency& curSrc);
   
 - **işleç = (** `cySrc` **)** `CURRENCY` değeri kopyalanır **COleCurrency** nesne ve durumu ayarlanmış için geçerli.  
   
-- **işleç = (** `curSrc` **)** değeri ve var olan işleneni durumunu **COleCurrency** nesne bu aralığa kopyalanır **COleCurrency** nesne.  
+- **işleç = (** `curSrc` **)** değeri ve var olan işleneni durumunu **COleCurrency** nesne bu aralığa kopyalanır **COleCurrency** nesnesi .  
   
 - **işleç = (** *varSrc* **)** varsa dönüştürülmesi `VARIANT` değeri (veya [COleVariant](../../mfc/reference/colevariant-class.md) nesne) bir para birimi için ( `VT_CY`) olan başarılı, dönüştürülen değer bu kopyalanır **COleCurrency** nesne ve durumu ayarlanmış için geçerli. Dönüştürme başarılı değilse değerini **COleCurrency** nesne ayarlanmış 0 ve durumu geçersiz.  
   
@@ -313,7 +308,7 @@ const COleCurrency& operator=(const COleCurrency& curSrc);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]  
   
-##  <a name="operator_plus_minus"></a>COleCurrency::operator +, -  
+##  <a name="operator_plus_minus"></a>  COleCurrency::operator +, -  
  Bu işleçlere ekleme ve iki izin **COleCurrency** değerleri için ve birbirlerinden ve işaretini değiştirmek için bir **COleCurrency** değeri.  
   
 ```  
@@ -334,7 +329,7 @@ COleCurrency operator-() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#16](../../mfc/codesnippet/cpp/colecurrency-class_5.cpp)]  
   
-##  <a name="operator_plus_minus_eq"></a>COleCurrency::operator +=-=  
+##  <a name="operator_plus_minus_eq"></a>  COleCurrency::operator +=-=  
  Ekleme ve çıkarma olanak tanıyan bir **COleCurrency** için ve bu değer **COleCurrency** nesnesi.  
   
 ```  
@@ -354,7 +349,7 @@ const COleCurrency& operator-=(const COleCurrency& cur);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#17](../../mfc/codesnippet/cpp/colecurrency-class_6.cpp)]  
   
-##  <a name="operator_star"></a>COleCurrency::operator * ve /  
+##  <a name="operator_star"></a>  COleCurrency::operator * ve /  
  Ölçeklendirmenizi izin bir **COleCurrency** değer bir tamsayı değeri.  
   
 ```  
@@ -374,7 +369,7 @@ COleCurrency operator/(long nOperand) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#18](../../mfc/codesnippet/cpp/colecurrency-class_7.cpp)]  
   
-##  <a name="operator_star_div_eq"></a>COleCurrency::operator * = / =  
+##  <a name="operator_star_div_eq"></a>  COleCurrency::operator * = / =  
  Bu ölçeklendirmenizi izin **COleCurrency** değer bir tamsayı değeri.  
   
 ```  
@@ -394,7 +389,7 @@ const COleCurrency& operator/=(long nOperand);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#19](../../mfc/codesnippet/cpp/colecurrency-class_8.cpp)]  
   
-##  <a name="operator_stream"></a>COleCurrency::operator &lt; &lt;,&gt;&gt;  
+##  <a name="operator_stream"></a>  COleCurrency::operator &lt; &lt;, &gt;&gt;  
  Tanılama dökme ve arşive depolama destekler.  
   
 ```  
@@ -412,9 +407,9 @@ friend CArchive& operator>>(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayıklama (  **>>** ) işleci bir arşiv yüklenmesini destekler.  
+ Ayıklama ( **>>**) işleci bir arşiv yüklenmesini destekler.  
   
-##  <a name="operator_currency"></a>COleCurrency::operator para birimi  
+##  <a name="operator_currency"></a>  COleCurrency::operator para birimi  
  Döndürür bir `CURRENCY` değeri öğesinden kopyalanır yapısı **COleCurrency** nesnesi.  
   
 ```  
@@ -423,7 +418,7 @@ operator CURRENCY() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="parsecurrency"></a>COleCurrency::ParseCurrency  
+##  <a name="parsecurrency"></a>  COleCurrency::ParseCurrency  
  Para birimi değeri okumak için bir dizeyi ayrıştırmak için bu üye işlevini çağırın.  
   
 ```  
@@ -465,7 +460,7 @@ throw(COleException*);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#13](../../mfc/codesnippet/cpp/colecurrency-class_9.cpp)]  
   
-##  <a name="colecurrency_relational_operators"></a>COleCurrency ilişkisel işleçler  
+##  <a name="colecurrency_relational_operators"></a>  COleCurrency ilişkisel işleçler  
  İki para birimi değerleri karşılaştırmak ve koşulun doğru olması durumunda sıfır olmayan döndürür; Aksi takdirde 0.  
   
 ```  
@@ -480,12 +475,12 @@ BOOL operator>=(const COleCurrency& cur) const;
 ### <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
->  Sıralama işlemleri dönüş değerini (  **<** ,  **\< =** ,  **>** ,  **>=** ) ya da işleneni durumu null veya geçersiz ise tanımlanmadı. Eşitlik işleçleri ( `==`, `!=`) işlenenleri durumunu göz önünde bulundurun.  
+>  Sıralama işlemleri dönüş değerini ( **<**, **\< =**, **>**, **>=**) ya da işleneni durumu null veya geçersiz ise tanımlanmadı. Eşitlik işleçleri ( `==`, `!=`) işlenenleri durumunu göz önünde bulundurun.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#20](../../mfc/codesnippet/cpp/colecurrency-class_10.cpp)]  
   
-##  <a name="setcurrency"></a>COleCurrency::SetCurrency  
+##  <a name="setcurrency"></a>  COleCurrency::SetCurrency  
  Birimleri ve kesirli kısmı ayarlamak için bu üye işlevini çağırın **COleCurrency** nesnesi.  
   
 ```  
@@ -506,7 +501,7 @@ void SetCurrency(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#14](../../mfc/codesnippet/cpp/colecurrency-class_11.cpp)]  
   
-##  <a name="setstatus"></a>COleCurrency::SetStatus  
+##  <a name="setstatus"></a>  COleCurrency::SetStatus  
  Bu durum (geçerlilik) ayarlamak için bu üye işlevini çağırın **COleCurrency** nesnesi.  
   
 ```  
@@ -514,7 +509,7 @@ void SetStatus(CurrencyStatus  status  );
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *durumu*  
+ *Durumu*  
  Bu yeni durum **COleCurrency** nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  

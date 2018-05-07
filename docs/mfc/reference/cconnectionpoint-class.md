@@ -1,12 +1,9 @@
 ---
-title: "CConnectionPoint sınıfı | Microsoft Docs"
-ms.custom: 
+title: CConnectionPoint sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CConnectionPoint
@@ -33,17 +30,15 @@ helpviewer_keywords:
 - CConnectionPoint [MFC], OnAdvise
 - CConnectionPoint [MFC], QuerySinkInterface
 ms.assetid: f0f23a1e-5e8c-41a9-aa6c-1a4793b28e8f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6a9e9fafc2bbee9959a939815a92c9bc63a650f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 22793706a67a3d301f88700ca6b43fb9c83e4dc3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cconnectionpoint-class"></a>CConnectionPoint sınıfı
 Bir özel tür "bağlantı noktası." olarak adlandırılan diğer OLE nesneleri ile iletişim kurmak için kullanılan arabirim tanımlar  
@@ -112,14 +107,14 @@ class CConnectionPoint : public CCmdTarget
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h  
   
-##  <a name="cconnectionpoint"></a>CConnectionPoint::CConnectionPoint  
+##  <a name="cconnectionpoint"></a>  CConnectionPoint::CConnectionPoint  
  Oluşturan bir `CConnectionPoint` nesnesi.  
   
 ```  
 CConnectionPoint();
 ```  
   
-##  <a name="getconnections"></a>CConnectionPoint::GetConnections  
+##  <a name="getconnections"></a>  CConnectionPoint::GetConnections  
  Bir bağlantı noktası için tüm etkin bağlantılar almak için bu işlevini çağırın.  
   
 ```  
@@ -129,7 +124,7 @@ const CPtrArray* GetConnections();
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir dizi etkin bağlantılar (iç havuzlar) için bir işaretçi. Bazı işaretçiler dizideki NULL olabilir. Dizideki her boş olmayan işaretçi güvenli bir şekilde atama işleci kullanarak havuz arabirimi için bir işaretçi dönüştürülebilir.  
   
-##  <a name="getcontainer"></a>CConnectionPoint::GetContainer  
+##  <a name="getcontainer"></a>  CConnectionPoint::GetContainer  
  Alınacak çerçevesi tarafından çağrılır **IConnectionPointContainer** bağlantı noktası için.  
   
 ```  
@@ -142,7 +137,7 @@ virtual LPCONNECTIONPOINTCONTAINER GetContainer();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev genellikle tarafından uygulanan `BEGIN_CONNECTION_PART` makrosu.  
   
-##  <a name="getiid"></a>CConnectionPoint::GetIID  
+##  <a name="getiid"></a>  CConnectionPoint::GetIID  
  Bir bağlantı noktası arabirimi Kimliğini almak için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -155,7 +150,7 @@ virtual REFIID GetIID() = 0;
 ### <a name="remarks"></a>Açıklamalar  
  Bu bağlantı noktası için arabirim kimliği döndürmek için bu işleve geçersiz kılar.  
   
-##  <a name="getmaxconnections"></a>CConnectionPoint::GetMaxConnections  
+##  <a name="getmaxconnections"></a>  CConnectionPoint::GetMaxConnections  
  Bağlantıları bağlantı noktası tarafından desteklenen en fazla sayısını almak üzere çerçevesi tarafından çağrılır.  
   
 ```  
@@ -170,7 +165,7 @@ virtual int GetMaxConnections();
   
  Denetiminize bağlanabilir havuzlarını sayısını sınırlamak istiyorsanız, bu işlev geçersiz kılar.  
   
-##  <a name="getnextconnection"></a>CConnectionPoint::GetNextConnection  
+##  <a name="getnextconnection"></a>  CConnectionPoint::GetNextConnection  
  Konumundaki bağlantı öğe için bir işaretçi alır `pos`.  
   
 ```  
@@ -190,7 +185,7 @@ LPUNKNOWN GetNextConnection(POSITION& pos) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCConnectionPoints#4](../../mfc/codesnippet/cpp/cconnectionpoint-class_3.cpp)]  
   
-##  <a name="getstartposition"></a>CConnectionPoint::GetStartPosition  
+##  <a name="getstartposition"></a>  CConnectionPoint::GetStartPosition  
  Harita yineleme döndürerek başlatır bir **konumu** için geçirilen değer bir [GetNextConnection](#getnextconnection) çağırın.  
   
 ```  
@@ -206,7 +201,7 @@ POSITION GetStartPosition() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CConnectionPoint::GetNextConnection](#getnextconnection).  
   
-##  <a name="onadvise"></a>CConnectionPoint::OnAdvise  
+##  <a name="onadvise"></a>  CConnectionPoint::OnAdvise  
  Bağlantı çerçevesi tarafından kurulan veya bozuk çağrılmaz.  
   
 ```  
@@ -222,7 +217,7 @@ virtual void OnAdvise(BOOL bAdvise);
   
  Havuzlarını bağlanmak veya bağlantı noktasından bağlantı kesme zaman bildirim istiyorsanız, bu işlev geçersiz kılar.  
   
-##  <a name="querysinkinterface"></a>CConnectionPoint::QuerySinkInterface  
+##  <a name="querysinkinterface"></a>  CConnectionPoint::QuerySinkInterface  
  İstenen havuz arayüzü için bir işaretçi alır.  
   
 ```  

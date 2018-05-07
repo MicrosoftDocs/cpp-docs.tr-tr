@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2975 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2975 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2975
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2975
 ms.assetid: 526f6b9d-6c76-4c12-9252-1b1d7c1e06c7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f779ec2623b6b07f61c1e8347304288d0bcfe96a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 53cb020dc0d456f10b7cfbae82a16b2ebe5fda6b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2975"></a>Derleyici Hatası C2975
 
@@ -49,7 +44,7 @@ int main() {
 }
 ```
 
-C2975 de oluşur kullandığınızda &#95; &#95; Çizgi &#95; &#95; derleme zamanı sabit ile olarak [/zı](../../build/reference/z7-zi-zi-debug-information-format.md). Bir çözümü ile derlemek için olacaktır [/zı](../../build/reference/z7-zi-zi-debug-information-format.md) yerine **/zı**.
+C2975 de oluşur kullandığınızda &#95; &#95;satır&#95; &#95; bir derleme zamanı sabit olarak [/zı](../../build/reference/z7-zi-zi-debug-information-format.md). Bir çözümü ile derlemek için olacaktır [/zı](../../build/reference/z7-zi-zi-debug-information-format.md) yerine **/zı**.
 
 ```cpp
 // C2975b.cpp

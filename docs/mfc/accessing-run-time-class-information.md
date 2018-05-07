@@ -1,13 +1,10 @@
 ---
-title: "Çalışma zamanı sınıf bilgilerine erişme | Microsoft Docs"
-ms.custom: 
+title: Çalışma zamanı sınıf bilgilerine erişme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - run-time class [MFC]
 - RUNTIME_CLASS macro, using
 ms.assetid: 3445a9af-0bd6-4496-95c3-aa59b964570b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b74c76e5cc156d106f8358fe729df0bb7026422
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 947102f17a5f35b7e6b5266f637375982d4cd55f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="accessing-run-time-class-information"></a>Çalışma Süresi Sınıf Bilgilerine Erişme
 Bu makalede, çalışma zamanında bir nesne sınıfının hakkındaki bilgilere erişmek açıklanmaktadır.  
@@ -68,7 +63,7 @@ Bu makalede, çalışma zamanında bir nesne sınıfının hakkındaki bilgilere
      [!code-cpp[NVC_MFCCObjectSample#5](../mfc/codesnippet/cpp/accessing-run-time-class-information_3.cpp)]  
   
     > [!NOTE]
-    >  Iskindof döndürür **TRUE** nesne belirtilen sınıf veya belirtilen sınıfından türetilmiş bir sınıf üyesi ise. `IsKindOf`Gerekirse, türetilen Microsoft Foundation sınıflar için birden çok devralma kullanabilmenize karşın, birden çok devralma veya sanal taban sınıflar desteklemez.  
+    >  Iskindof döndürür **TRUE** nesne belirtilen sınıf veya belirtilen sınıfından türetilmiş bir sınıf üyesi ise. `IsKindOf` Gerekirse, türetilen Microsoft Foundation sınıflar için birden çok devralma kullanabilmenize karşın, birden çok devralma veya sanal taban sınıflar desteklemez.  
   
  Bir çalışma zamanı sınıf bilgileri nesneleri dinamik oluşturulmasında kullanılır. Bu işlem makalesinde açıklanan [dinamik Nesne oluşturma](../mfc/dynamic-object-creation.md).  
   

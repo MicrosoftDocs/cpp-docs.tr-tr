@@ -1,12 +1,9 @@
 ---
-title: "CMFCRibbonSeparator sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCRibbonSeparator sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCRibbonSeparator
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - CMFCRibbonSeparator [MFC], OnDraw
 - CMFCRibbonSeparator [MFC], OnDrawOnList
 ms.assetid: bedb1a53-cb07-4c3c-be12-698c5409e7cf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36f05d89388d8722fab7853dc3c1e5bcb4d9a2f1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b1c4c3b286f020d8d409b344c5d8c05ebc200425
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfcribbonseparator-class"></a>CMFCRibbonSeparator sınıfı
 Şerit ayırıcı uygular.  
@@ -107,7 +102,7 @@ pMainPanel->Add(new CMFCRibbonSeparator(TRUE));
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxbaseribbonelement.h  
   
-##  <a name="addtolistbox"></a>CMFCRibbonSeparator::AddToListBox  
+##  <a name="addtolistbox"></a>  CMFCRibbonSeparator::AddToListBox  
  Bir ayırıcı ekler **komutları** listesinde **Özelleştir** iletişim kutusu.  
   
 ```  
@@ -117,16 +112,16 @@ virtual int AddToListBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pWndListBox`  
+ [in] `pWndListBox`  
  Bir işaretçi **komutları** liste ayırıcı burada eklenir.  
   
- [in]`bDeep`  
+ [in] `bDeep`  
  Yoksayıldı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sıfır tabanlı dizini tarafından belirtilen liste kutusunda dizeye `pWndListBox`.  
   
-##  <a name="cmfcribbonseparator"></a>CMFCRibbonSeparator::CMFCRibbonSeparator  
+##  <a name="cmfcribbonseparator"></a>  CMFCRibbonSeparator::CMFCRibbonSeparator  
  Oluşturan bir `CMFCRibbonSeparator` nesnesi.  
   
 ```  
@@ -134,7 +129,7 @@ CMFCRibbonSeparator(BOOL bIsHoriz = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bIsHoriz`  
+ [in] `bIsHoriz`  
  Varsa `TRUE`, ayırıcı yataydır if `FALSE`, ayırıcı dikeydir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -145,7 +140,7 @@ CMFCRibbonSeparator(BOOL bIsHoriz = FALSE);
   
  [!code-cpp[NVC_MFC_RibbonApp#19](../../mfc/reference/codesnippet/cpp/cmfcribbonseparator-class_1.cpp)]  
   
-##  <a name="copyfrom"></a>CMFCRibbonSeparator::CopyFrom  
+##  <a name="copyfrom"></a>  CMFCRibbonSeparator::CopyFrom  
  Ayırıcı 's üye değişkenleri başka bir nesneden ayarlar kopyalama yöntemi.  
   
 ```  
@@ -153,10 +148,10 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`Src`  
+ [in] `Src`  
  Kopyalanacak kaynak Şerit öğesi.  
   
-##  <a name="getregularsize"></a>CMFCRibbonSeparator::GetRegularSize  
+##  <a name="getregularsize"></a>  CMFCRibbonSeparator::GetRegularSize  
  Ayırıcı boyutu döndürür.  
   
 ```  
@@ -164,13 +159,13 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Bir aygıt içerik için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Verilen cihaz bağlamı ayırıcı boyutu.  
   
-##  <a name="isseparator"></a>CMFCRibbonSeparator::IsSeparator  
+##  <a name="isseparator"></a>  CMFCRibbonSeparator::IsSeparator  
  Bu bir ayırıcı olup olmadığını gösterir.  
   
 ```  
@@ -180,7 +175,7 @@ virtual BOOL IsSeparator() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Her zaman `TRUE` Bu sınıf için.  
   
-##  <a name="istabstop"></a>CMFCRibbonSeparator::IsTabStop  
+##  <a name="istabstop"></a>  CMFCRibbonSeparator::IsTabStop  
  Bu sekme durağı olup olmadığını gösterir.  
   
 ```  
@@ -193,7 +188,7 @@ virtual BOOL IsTabStop() const;
 ### <a name="remarks"></a>Açıklamalar  
  Şerit ayırıcı sekme durağı değil.  
   
-##  <a name="ondraw"></a>CMFCRibbonSeparator::OnDraw  
+##  <a name="ondraw"></a>  CMFCRibbonSeparator::OnDraw  
  Şerit veya hızlı erişim araç ayırıcı çizmek için sistem tarafından çağrılır.  
   
 ```  
@@ -201,10 +196,10 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pDC`  
+ [in] `pDC`  
  Bir cihaz bağlamı için bir işaretçi.  
   
-##  <a name="ondrawonlist"></a>CMFCRibbonSeparator::OnDrawOnList  
+##  <a name="ondrawonlist"></a>  CMFCRibbonSeparator::OnDrawOnList  
  Ayırıcı çizileceğini sistem tarafından çağrılan **komutları** listesi.  
   
 ```  
@@ -222,12 +217,12 @@ virtual void OnDrawOnList(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in]`pDC`|Bir cihaz bağlamı için bir işaretçi.|  
-|[in]`strText`|Listede görüntülenecek metin.|  
-|[in]`nTextOffset`|Metin ve sınırlayıcı dikdörtgenini sol tarafındaki arasındaki aralık.|  
-|[in]`rect`|Sınırlayıcı dikdörtgenini belirtir.|  
-|[in]`bIsSelected`|Yoksayıldı.|  
-|[in]`bHighlighted`|Yoksayıldı.|  
+|[in] `pDC`|Bir cihaz bağlamı için bir işaretçi.|  
+|[in] `strText`|Listede görüntülenecek metin.|  
+|[in] `nTextOffset`|Metin ve sınırlayıcı dikdörtgenini sol tarafındaki arasındaki aralık.|  
+|[in] `rect`|Sınırlayıcı dikdörtgenini belirtir.|  
+|[in] `bIsSelected`|Yoksayıldı.|  
+|[in] `bHighlighted`|Yoksayıldı.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2110 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2110 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2110
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2110
 ms.assetid: 48fd76ed-90d6-4a60-9c7b-f6ce9355b4ca
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84f8439a862f049fff902b317c5d185f2898ad54
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 18eafefb4aa7694874c1fbdf994189bbd763826b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2110"></a>Derleyici Hatası C2110
 '+': iki işaretçisi ekleyemezsiniz  

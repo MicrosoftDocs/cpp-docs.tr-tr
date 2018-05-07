@@ -1,12 +1,9 @@
 ---
-title: "CRichEditCtrl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CRichEditCtrl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CRichEditCtrl
@@ -161,17 +158,15 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03ef5135130590d142e9725e1d064b932cc7ff4d
-ms.sourcegitcommit: 2aeb507a426fc7881ea59115b1d5139c0a30ba91
+ms.openlocfilehash: 0d18e1352e0d8ba74709e2f1a5626678e81729a2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl sınıfı
 Zengin düzenleme denetimine işlevselliğini sağlar.  
@@ -297,7 +292,7 @@ class CRichEditCtrl : public CWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxcmn.h  
   
-##  <a name="canpaste"></a>CRichEditCtrl::CanPaste  
+##  <a name="canpaste"></a>  CRichEditCtrl::CanPaste  
  Zengin düzenleme denetimine belirtilen Pano biçimi yapıştırın, belirler.  
   
 ```  
@@ -319,7 +314,7 @@ BOOL CanPaste(UINT nFormat = 0) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#1](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_1.cpp)]  
   
-##  <a name="canredo"></a>CRichEditCtrl::CanRedo  
+##  <a name="canredo"></a>  CRichEditCtrl::CanRedo  
  Yinele sıranın herhangi bir eylem içerip içermediğini belirler.  
   
 ```  
@@ -334,7 +329,7 @@ BOOL CanRedo() const;
   
  Daha fazla bilgi için bkz: [EM_CANREDO](http://msdn.microsoft.com/library/windows/desktop/bb787995) Windows SDK'sındaki.  
   
-##  <a name="canundo"></a>CRichEditCtrl::CanUndo  
+##  <a name="canundo"></a>  CRichEditCtrl::CanUndo  
  Son düzenleme işlemi geri olup olmadığını belirler.  
   
 ```  
@@ -350,7 +345,7 @@ BOOL CanUndo() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#2](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_2.cpp)]  
   
-##  <a name="charfrompos"></a>CRichEditCtrl::CharFromPos  
+##  <a name="charfrompos"></a>  CRichEditCtrl::CharFromPos  
  Parametresi tarafından belirtilen bir noktada karakter ilgili bilgileri alır `pt`.  
   
 ```  
@@ -369,7 +364,7 @@ int CharFromPos(CPoint pt) const;
   
  Daha fazla bilgi için bkz: [EM_CHARFROMPOS](http://msdn.microsoft.com/library/windows/desktop/bb761566) Windows SDK'sındaki.  
   
-##  <a name="clear"></a>CRichEditCtrl::Clear  
+##  <a name="clear"></a>  CRichEditCtrl::Clear  
  (Temizler) siler (varsa) geçerli farklı seçim zengin düzenleme denetimi.  
   
 ```  
@@ -386,7 +381,7 @@ void Clear();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#3](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_3.cpp)]  
   
-##  <a name="copy"></a>CRichEditCtrl::Copy  
+##  <a name="copy"></a>  CRichEditCtrl::Copy  
  Geçerli seçimi (varsa) zengin düzenleme denetimine panoya kopyalar.  
   
 ```  
@@ -399,7 +394,7 @@ void Copy();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#4](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_4.cpp)]  
   
-##  <a name="create"></a>CRichEditCtrl::Create  
+##  <a name="create"></a>  CRichEditCtrl::Create  
  Windows zengin düzenleme denetimine oluşturur ve bu ile ilişkilendirir `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -452,7 +447,7 @@ virtual BOOL Create(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#5](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_5.cpp)]  
   
-##  <a name="createex"></a>CRichEditCtrl::CreateEx  
+##  <a name="createex"></a>  CRichEditCtrl::CreateEx  
  Bir denetimi (alt pencere) oluşturur ve bunu ile ilişkilendirir `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -486,7 +481,7 @@ virtual BOOL CreateEx(
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım `CreateEx` yerine **oluşturma** Windows genişletilmiş stili önsöz tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için **WS_EX_**.  
   
-##  <a name="cricheditctrl"></a>CRichEditCtrl::CRichEditCtrl  
+##  <a name="cricheditctrl"></a>  CRichEditCtrl::CRichEditCtrl  
  Oluşturan bir `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -499,7 +494,7 @@ CRichEditCtrl();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#6](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_6.cpp)]  
   
-##  <a name="cut"></a>CRichEditCtrl::Cut  
+##  <a name="cut"></a>  CRichEditCtrl::Cut  
  (Keser) Sil geçerli seçim (varsa) zengin düzenleme denetiminden ve silinen metni panoya kopyalar.  
   
 ```  
@@ -516,7 +511,7 @@ void Cut();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#7](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_7.cpp)]  
   
-##  <a name="displayband"></a>CRichEditCtrl::DisplayBand  
+##  <a name="displayband"></a>  CRichEditCtrl::DisplayBand  
  Tarafından önceden biçimlendirilmiş bir kısmı (metin ve OLE öğeleri) zengin metin düzenleme denetimi içeriğini görüntüler [FormatRange](#formatrange).  
   
 ```  
@@ -538,7 +533,7 @@ BOOL DisplayBand(LPRECT pDisplayRect);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CRichEditCtrl::FormatRange](#formatrange).  
   
-##  <a name="emptyundobuffer"></a>CRichEditCtrl::EmptyUndoBuffer  
+##  <a name="emptyundobuffer"></a>  CRichEditCtrl::EmptyUndoBuffer  
  (Temizle) Bu zengin düzenleme denetimine geri bayrağı sıfırlar.  
   
 ```  
@@ -555,7 +550,7 @@ void EmptyUndoBuffer();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#8](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_8.cpp)]  
   
-##  <a name="findtext"></a>CRichEditCtrl::FindText  
+##  <a name="findtext"></a>  CRichEditCtrl::FindText  
  Zengin düzenleme denetimine metinde bulur.  
   
 ```  
@@ -582,7 +577,7 @@ long FindText(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#9](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_9.cpp)]  
   
-##  <a name="findwordbreak"></a>CRichEditCtrl::FindWordBreak  
+##  <a name="findwordbreak"></a>  CRichEditCtrl::FindWordBreak  
  Önce veya sonra tarafından belirtilen konumdaki sonraki word sonunu bulur `nStart`.  
   
 ```  
@@ -604,7 +599,7 @@ DWORD FindWordBreak(
 ### <a name="remarks"></a>Açıklamalar  
  Verilen konumunda bir karakter hakkında bilgi almak için bu üye işlevini kullanabilirsiniz.  
   
-##  <a name="formatrange"></a>CRichEditCtrl::FormatRange  
+##  <a name="formatrange"></a>  CRichEditCtrl::FormatRange  
  Belirli bir aygıt için bir zengin düzenleme denetimindeki metin aralığını biçimlendirir.  
   
 ```  
@@ -631,7 +626,7 @@ long FormatRange(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#10](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_10.cpp)]  
   
-##  <a name="getcharpos"></a>CRichEditCtrl::GetCharPos  
+##  <a name="getcharpos"></a>  CRichEditCtrl::GetCharPos  
  Bu içinde belirli bir karakter (sol üst köşesinde) konumunu alır `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -650,7 +645,7 @@ CPoint GetCharPos(long lChar) const;
   
  Daha fazla bilgi için bkz: [EM_POSFROMCHAR](http://msdn.microsoft.com/library/windows/desktop/bb761631) Windows SDK'sındaki.  
   
-##  <a name="getdefaultcharformat"></a>CRichEditCtrl::GetDefaultCharFormat  
+##  <a name="getdefaultcharformat"></a>  CRichEditCtrl::GetDefaultCharFormat  
  Varsayılan karakter bu özniteliklerini biçimlendirme alır `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -672,7 +667,7 @@ DWORD GetDefaultCharFormat(CHARFORMAT& cf) const;  DWORD GetDefaultCharFormat(CH
 ### <a name="example"></a>Örnek  
   Örneğin bkz [SetDefaultCharFormat](#setdefaultcharformat).  
   
-##  <a name="geteventmask"></a>CRichEditCtrl::GetEventMask  
+##  <a name="geteventmask"></a>  CRichEditCtrl::GetEventMask  
  Bu olay maskesi alır `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -690,7 +685,7 @@ long GetEventMask() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CRichEditCtrl::SetEventMask](#seteventmask).  
   
-##  <a name="getfirstvisibleline"></a>CRichEditCtrl::GetFirstVisibleLine  
+##  <a name="getfirstvisibleline"></a>  CRichEditCtrl::GetFirstVisibleLine  
  Bu en üstteki görünür satırını belirler `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -706,7 +701,7 @@ int GetFirstVisibleLine() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#11](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_11.cpp)]  
   
-##  <a name="getiricheditole"></a>CRichEditCtrl::GetIRichEditOle  
+##  <a name="getiricheditole"></a>  CRichEditCtrl::GetIRichEditOle  
  Erişimleri **IRichEditOle** Bu arabirimdeki `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -721,7 +716,7 @@ IRichEditOle* GetIRichEditOle() const;
   
  Daha fazla bilgi için bkz: [EM_GETOLEINTERFACE](http://msdn.microsoft.com/library/windows/desktop/bb788041) ileti ve [IRichEditOle](http://msdn.microsoft.com/library/windows/desktop/bb774306) arabirimi Windows SDK.  
   
-##  <a name="getlimittext"></a>CRichEditCtrl::GetLimitText  
+##  <a name="getlimittext"></a>  CRichEditCtrl::GetLimitText  
  Bu metin sınırını alır `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -739,7 +734,7 @@ long GetLimitText() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#12](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_12.cpp)]  
   
-##  <a name="getline"></a>CRichEditCtrl::GetLine  
+##  <a name="getline"></a>  CRichEditCtrl::GetLine  
  Bu, bir metin satırında alır `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -777,7 +772,7 @@ int GetLine(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [GetLineCount](#getlinecount).  
   
-##  <a name="getlinecount"></a>CRichEditCtrl::GetLineCount  
+##  <a name="getlinecount"></a>  CRichEditCtrl::GetLineCount  
  Satır sayısını alır `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -793,7 +788,7 @@ int GetLineCount() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#13](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_13.cpp)]  
   
-##  <a name="getmodify"></a>CRichEditCtrl::GetModify  
+##  <a name="getmodify"></a>  CRichEditCtrl::GetModify  
  Belirler. Bu içeriği `CRichEditCtrl` nesne değiştirilmiş olabilir.  
   
 ```  
@@ -811,7 +806,7 @@ BOOL GetModify() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#14](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_14.cpp)]  
   
-##  <a name="getoptions"></a>CRichEditCtrl::GetOptions  
+##  <a name="getoptions"></a>  CRichEditCtrl::GetOptions  
  Zengin düzenleme denetimine için ayarlanmış seçenekleri alır.  
   
 ```  
@@ -821,7 +816,7 @@ UINT GetOptions() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli seçenek bayrağı değerlerinin birleşimi. Bu değerler listesi için bkz: *fOptions* parametresinde [EM_SETOPTIONS](http://msdn.microsoft.com/library/windows/desktop/bb774254) , Windows SDK'ın açıklandığı gibi ileti.  
   
-##  <a name="getparaformat"></a>CRichEditCtrl::GetParaFormat  
+##  <a name="getparaformat"></a>  CRichEditCtrl::GetParaFormat  
  Paragraf biçimlendirme geçerli seçimin özniteliklerini alır.  
   
 ```  
@@ -845,7 +840,7 @@ DWORD GetParaFormat(PARAFORMAT& pf) const;  DWORD GetParaFormat(PARAFORMAT2& pf)
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CRichEditCtrl::SetParaFormat](#setparaformat).  
   
-##  <a name="getpunctuation"></a>CRichEditCtrl::GetPunctuation  
+##  <a name="getpunctuation"></a>  CRichEditCtrl::GetPunctuation  
  Geçerli noktalama karakterleri bir zengin düzenleme denetimine alır.  
   
 ```  
@@ -867,7 +862,7 @@ BOOL GetPunctuation(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi yalnızca işletim sisteminin Asya dil sürümleriyle kullanılabilir.  
   
-##  <a name="getrect"></a>CRichEditCtrl::GetRect  
+##  <a name="getrect"></a>  CRichEditCtrl::GetRect  
  Bunun için biçimlendirme dikdörtgen alır `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -886,7 +881,7 @@ void GetRect(LPRECT lpRect) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [LimitText](#limittext).  
   
-##  <a name="getredoname"></a>CRichEditCtrl::GetRedoName  
+##  <a name="getredoname"></a>  CRichEditCtrl::GetRedoName  
  Varsa sonraki kullanılabilir eylemi yinele sırasındaki türünü alır.  
   
 ```  
@@ -899,7 +894,7 @@ UNDONAMEID GetRedoName() const;
 ### <a name="remarks"></a>Açıklamalar  
  Geri alınamaz veya geri alınmış eylemleri türleri dahil yazma, silme, sürükle ve bırak, kesme ve yapıştırma işlemlerini. Bu bilgileri açılan liste kutusu redoable eylemler gibi geri alma ve yineleme işlemleri için bir genişletilmiş kullanıcı arabirimi sağlayan uygulamalar için yararlı olabilir.  
   
-##  <a name="getsel"></a>CRichEditCtrl::GetSel  
+##  <a name="getsel"></a>  CRichEditCtrl::GetSel  
  Geçerli seçim bu sınırları alır `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -923,7 +918,7 @@ void GetSel(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev iki tür sınırları seçimini almanın diğer yollarını sağlar. Bu form kısa açıklamaları izleyin:  
   
-- **GetSel (** `cr` **)** bu formun kullandığı **CHARRANGE** yapısı kendi **cpMin** ve **cpMax** sınırları döndürülecek üyeleri.  
+- **GetSel (** `cr` **)** bu formun kullandığı **CHARRANGE** yapısı kendi **cpMin** ve **cpMax** üyelere sınırları döndür.  
   
 - **GetSel (** `nStartChar` **,** `nEndChar` **)** bu formu sınırları parametrelerinde döndürür `nStartChar` ve `nEndChar`.  
   
@@ -934,7 +929,7 @@ void GetSel(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#15](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_15.cpp)]  
   
-##  <a name="getselectioncharformat"></a>CRichEditCtrl::GetSelectionCharFormat  
+##  <a name="getselectioncharformat"></a>  CRichEditCtrl::GetSelectionCharFormat  
  Karakter biçimlendirme geçerli seçimin özniteliklerini alır.  
   
 ```  
@@ -958,7 +953,7 @@ DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharForma
 ### <a name="example"></a>Örnek  
   Örneğin bkz [SetSelectionCharFormat](#setselectioncharformat).  
   
-##  <a name="getselectiontype"></a>CRichEditCtrl::GetSelectionType  
+##  <a name="getselectiontype"></a>  CRichEditCtrl::GetSelectionType  
  Bu seçim türünü belirler `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -968,15 +963,15 @@ WORD GetSelectionType() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli seçimin içeriğine belirten işaretler. Aşağıdaki bayraklar birleşimi:  
   
-- `SEL_EMPTY`Geçerli seçim olduğunu gösterir.  
+- `SEL_EMPTY` Geçerli seçim olduğunu gösterir.  
   
-- `SEL_TEXT`Geçerli seçim metin içerdiğini gösterir.  
+- `SEL_TEXT` Geçerli seçim metin içerdiğini gösterir.  
   
-- `SEL_OBJECT`Geçerli seçim en az bir OLE öğesi içerdiğini gösterir.  
+- `SEL_OBJECT` Geçerli seçim en az bir OLE öğesi içerdiğini gösterir.  
   
-- `SEL_MULTICHAR`Geçerli seçim metnin birden fazla karakter içerdiğini gösterir.  
+- `SEL_MULTICHAR` Geçerli seçim metnin birden fazla karakter içerdiğini gösterir.  
   
-- `SEL_MULTIOBJECT`Geçerli seçim birden fazla OLE nesnesi içerdiğini gösterir.  
+- `SEL_MULTIOBJECT` Geçerli seçim birden fazla OLE nesnesi içerdiğini gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [EM_SELECTIONTYPE](http://msdn.microsoft.com/library/windows/desktop/bb774223) Windows SDK'sındaki.  
@@ -984,7 +979,7 @@ WORD GetSelectionType() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#16](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_16.cpp)]  
   
-##  <a name="getseltext"></a>CRichEditCtrl::GetSelText  
+##  <a name="getseltext"></a>  CRichEditCtrl::GetSelText  
  Bu geçerli seçimdeki metni alır `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1010,7 +1005,7 @@ long GetSelText(LPSTR lpBuf) const;  CString GetSelText() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CRichEditCtrl::GetSelectionType](#getselectiontype).  
   
-##  <a name="gettextlength"></a>CRichEditCtrl::GetTextLength  
+##  <a name="gettextlength"></a>  CRichEditCtrl::GetTextLength  
  Bu karakter metnin uzunluğunu alır `CRichEditCtrl` nesnesi, sonlandırma null karakteri dahil edilmez.  
   
 ```  
@@ -1026,7 +1021,7 @@ long GetTextLength() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#17](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_17.cpp)]  
   
-##  <a name="gettextlengthex"></a>CRichEditCtrl::GetTextLengthEx  
+##  <a name="gettextlengthex"></a>  CRichEditCtrl::GetTextLengthEx  
  Zengin düzenleme denetimindeki metnin uzunluğunu hesaplar.  
   
 ```  
@@ -1046,9 +1041,9 @@ long GetTextLengthEx(
  Karakter veya düzenleme denetimindeki bayt sayısı. Uyumsuz bayrakları ayarlandıysa `dwFlags`, bu üye işlevinin döndürdüğü `E_INVALIDARG`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `GetTextLengthEx`metnin uzunluğu belirlemek ek yollar sağlar. Zengin düzenleme 2.0 işlevselliği destekler. Bkz: [hakkında zengin düzenleme denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb787873) Windows SDKfor içinde daha fazla bilgi.  
+ `GetTextLengthEx` metnin uzunluğu belirlemek ek yollar sağlar. Zengin düzenleme 2.0 işlevselliği destekler. Bkz: [hakkında zengin düzenleme denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb787873) Windows SDKfor içinde daha fazla bilgi.  
   
-##  <a name="gettextmode"></a>CRichEditCtrl::GetTextMode  
+##  <a name="gettextmode"></a>  CRichEditCtrl::GetTextMode  
  Zengin düzenleme denetimine geçerli metin modu ve geri alma düzeyi alır.  
   
 ```  
@@ -1058,7 +1053,7 @@ UINT GetTextMode() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Bit bayrakları kaldırır kümesi [metin modu](http://msdn.microsoft.com/library/windows/desktop/bb774364) numaralandırma türü, Windows SDK'ın açıklandığı gibi. Bayrakları geçerli metin modunu göstermek ve denetim düzeyi geri.  
   
-##  <a name="gettextrange"></a>CRichEditCtrl::GetTextRange  
+##  <a name="gettextrange"></a>  CRichEditCtrl::GetTextRange  
  Belirtilen aralıktaki karakterleri alır.  
   
 ```  
@@ -1084,9 +1079,9 @@ int GetTextRange(
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [EM_GETTEXTRANGE](http://msdn.microsoft.com/library/windows/desktop/bb774199) Windows SDK'sındaki.  
   
- `GetTextRange`Zengin düzenleme 2.0 işlevselliği destekler. Bkz: [hakkında zengin düzenleme denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb787873) Windows SDKfor içinde daha fazla bilgi.  
+ `GetTextRange` Zengin düzenleme 2.0 işlevselliği destekler. Bkz: [hakkında zengin düzenleme denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb787873) Windows SDKfor içinde daha fazla bilgi.  
   
-##  <a name="getundoname"></a>CRichEditCtrl::GetUndoName  
+##  <a name="getundoname"></a>  CRichEditCtrl::GetUndoName  
  Varsa geri alma işlemi sırasındaki sonraki kullanılabilir eylem türünü alır.  
   
 ```  
@@ -1099,7 +1094,7 @@ UNDONAMEID GetUndoName() const;
 ### <a name="remarks"></a>Açıklamalar  
  Geri alınamaz veya geri alınmış eylemleri türleri dahil yazma, silme, sürükle ve bırak, kesme ve yapıştırma işlemlerini. Bu bilgi alınabilecek eylemlerin aşağı açılan liste kutusu gibi geri alma ve yineleme işlemleri için bir genişletilmiş kullanıcı arabirimi sağlayan uygulamalar için yararlı olabilir.  
   
-##  <a name="getwordwrapmode"></a>CRichEditCtrl::GetWordWrapMode  
+##  <a name="getwordwrapmode"></a>  CRichEditCtrl::GetWordWrapMode  
  Geçerli sözcük kaydırma ve zengin düzenleme denetimine word sonu seçeneklerini alır.  
   
 ```  
@@ -1112,7 +1107,7 @@ UINT GetWordWrapMode() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi yalnızca işletim sisteminin Asya dil sürümleri için kullanılabilir.  
   
-##  <a name="hideselection"></a>CRichEditCtrl::HideSelection  
+##  <a name="hideselection"></a>  CRichEditCtrl::HideSelection  
  Seçimi görünürlüğünü değiştirir.  
   
 ```  
@@ -1136,7 +1131,7 @@ void HideSelection(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#18](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_18.cpp)]  
   
-##  <a name="limittext"></a>CRichEditCtrl::LimitText  
+##  <a name="limittext"></a>  CRichEditCtrl::LimitText  
  Kullanıcı bir Düzenle denetime girebileceği metin uzunluğu sınırlar.  
   
 ```  
@@ -1158,7 +1153,7 @@ void LimitText(long nChars = 0);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#19](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_19.cpp)]  
   
-##  <a name="linefromchar"></a>CRichEditCtrl::LineFromChar  
+##  <a name="linefromchar"></a>  CRichEditCtrl::LineFromChar  
  Belirtilen karakter dizinini içeren satırının satır numarasını alır.  
   
 ```  
@@ -1180,7 +1175,7 @@ long LineFromChar(long nIndex) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#20](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_20.cpp)]  
   
-##  <a name="lineindex"></a>CRichEditCtrl::LineIndex  
+##  <a name="lineindex"></a>  CRichEditCtrl::LineIndex  
  Bu içinden bir çizgi karakter dizinini alır `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1202,7 +1197,7 @@ int LineIndex(int nLine = -1) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#21](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_21.cpp)]  
   
-##  <a name="linelength"></a>CRichEditCtrl::LineLength  
+##  <a name="linelength"></a>  CRichEditCtrl::LineLength  
  Bir zengin düzenleme denetimindeki bir satır uzunluğunu alır.  
   
 ```  
@@ -1224,7 +1219,7 @@ int LineLength(int nLine = -1) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [LineIndex](#lineindex).  
   
-##  <a name="linescroll"></a>CRichEditCtrl::LineScroll  
+##  <a name="linescroll"></a>  CRichEditCtrl::LineScroll  
  Birden çok satırlı düzenleme denetimi metin kayar.  
   
 ```  
@@ -1243,14 +1238,14 @@ void LineScroll(
 ### <a name="remarks"></a>Açıklamalar  
  Düzenleme denetimi dikey metin düzenleme denetimindeki son satırının kaydırarak değil. Tarafından belirtilen satır sayısı artı geçerli satır varsa `nLines` düzenleme denetimindeki satırları toplam sayısını aşıyor, böylece düzenleme denetimi son satırının düzenleme denetimi pencerenin üstündeki kaydırılan değere ayarlanır.  
   
- `LineScroll`her satırın son karakter yatay kaydırma için kullanılabilir.  
+ `LineScroll` her satırın son karakter yatay kaydırma için kullanılabilir.  
   
  Daha fazla bilgi için bkz: [EM_LINESCROLL](http://msdn.microsoft.com/library/windows/desktop/bb761615) Windows SDK'sındaki.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [GetFirstVisibleLine](#getfirstvisibleline).  
   
-##  <a name="paste"></a>CRichEditCtrl::Paste  
+##  <a name="paste"></a>  CRichEditCtrl::Paste  
  Veriler panoya ekler `CRichEditCtrl` ekleme noktasına şapka konumu.  
   
 ```  
@@ -1265,7 +1260,7 @@ void Paste();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#22](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_22.cpp)]  
   
-##  <a name="pastespecial"></a>CRichEditCtrl::PasteSpecial  
+##  <a name="pastespecial"></a>  CRichEditCtrl::PasteSpecial  
  Gönderebilir verileri belirli bir Pano biçimde bu `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1293,7 +1288,7 @@ void PasteSpecial(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#23](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_23.cpp)]  
   
-##  <a name="posfromchar"></a>CRichEditCtrl::PosFromChar  
+##  <a name="posfromchar"></a>  CRichEditCtrl::PosFromChar  
  Belirtilen bir karakterin bir düzenleme denetimindeki istemci alanı koordinatları alır.  
   
 ```  
@@ -1310,7 +1305,7 @@ CPoint PosFromChar(UINT nChar) const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [EM_POSFROMCHAR](http://msdn.microsoft.com/library/windows/desktop/bb761631) Windows SDK'sındaki.  
   
-##  <a name="redo"></a>CRichEditCtrl::Redo  
+##  <a name="redo"></a>  CRichEditCtrl::Redo  
  Denetimin Yinele kuyruktaki bir sonraki eylem yineler.  
   
 ```  
@@ -1323,7 +1318,7 @@ BOOL Redo();
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [EM_REDO](http://msdn.microsoft.com/library/windows/desktop/bb774218) Windows SDK'sındaki.  
   
-##  <a name="replacesel"></a>CRichEditCtrl::ReplaceSel  
+##  <a name="replacesel"></a>  CRichEditCtrl::ReplaceSel  
  Bu geçerli seçim değiştirir `CRichEditCtrl` belirtilen metin içeren nesne.  
   
 ```  
@@ -1351,7 +1346,7 @@ void ReplaceSel(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [LineIndex](#lineindex).  
   
-##  <a name="requestresize"></a>CRichEditCtrl::RequestResize  
+##  <a name="requestresize"></a>  CRichEditCtrl::RequestResize  
  Bu zorlar `CRichEditCtrl` göndermek için nesne **EN_REQUESTRESIZE** kendi üst penceresi bildirim iletileri.  
   
 ```  
@@ -1363,7 +1358,7 @@ void RequestResize();
   
  Daha fazla bilgi için bkz: [EM_REQUESTRESIZE](http://msdn.microsoft.com/library/windows/desktop/bb774220) ileti ve **Tabansız zengin düzenleme denetimleri** bölümünü [hakkında zengin düzenleme denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb787873) Windows SDK.  
   
-##  <a name="setautourldetect"></a>CRichEditCtrl::SetAutoURLDetect  
+##  <a name="setautourldetect"></a>  CRichEditCtrl::SetAutoURLDetect  
  Bir URL otomatik olarak algılamak için zengin düzenleme denetimine ayarlar.  
   
 ```  
@@ -1381,9 +1376,9 @@ BOOL SetAutoURLDetect(BOOL bEnable = TRUE);
  Zengin düzenleme denetimine etkinleştirilirse, standart bir URL biçimi eşleşip eşleşmediğini belirlemek için metin tarar. Bu URL biçimlerinin listesi için bkz [EM_AUTOURLDETECT](http://msdn.microsoft.com/library/windows/desktop/bb787991) Windows SDK'sındaki.  
   
 > [!NOTE]
->  Ayarlamayın `SetAutoURLDetect` için **TRUE** düzenleme denetimi kullanıyorsa, **CFE_LINK** URL'leri dışındaki metin için etkin. `SetAutoURLDetect`Bu etkiyi URL'leri etkinleştirir ve diğer tüm metni devre dışı bırakır. Bkz: [EN_LINK](http://msdn.microsoft.com/library/windows/desktop/bb787970) hakkında daha fazla bilgi için **CFE_LINK** etkisi.  
+>  Ayarlamayın `SetAutoURLDetect` için **TRUE** düzenleme denetimi kullanıyorsa, **CFE_LINK** URL'leri dışındaki metin için etkin. `SetAutoURLDetect` Bu etkiyi URL'leri etkinleştirir ve diğer tüm metni devre dışı bırakır. Bkz: [EN_LINK](http://msdn.microsoft.com/library/windows/desktop/bb787970) hakkında daha fazla bilgi için **CFE_LINK** etkisi.  
   
-##  <a name="setbackgroundcolor"></a>CRichEditCtrl::SetBackgroundColor  
+##  <a name="setbackgroundcolor"></a>  CRichEditCtrl::SetBackgroundColor  
  Bunun için arka plan rengini ayarlar `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1410,7 +1405,7 @@ COLORREF SetBackgroundColor(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#24](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_24.cpp)]  
   
-##  <a name="setdefaultcharformat"></a>CRichEditCtrl::SetDefaultCharFormat  
+##  <a name="setdefaultcharformat"></a>  CRichEditCtrl::SetDefaultCharFormat  
  Bu yeni metin özniteliklerini biçimlendirme karakter kümeleri `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1435,7 +1430,7 @@ BOOL SetDefaultCharFormat(CHARFORMAT2& cf);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#25](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_25.cpp)]  
   
-##  <a name="seteventmask"></a>CRichEditCtrl::SetEventMask  
+##  <a name="seteventmask"></a>  CRichEditCtrl::SetEventMask  
  Bu olay maskesi ayarlar `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1457,7 +1452,7 @@ DWORD SetEventMask(DWORD dwEventMask);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#26](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_26.cpp)]  
   
-##  <a name="setmodify"></a>CRichEditCtrl::SetModify  
+##  <a name="setmodify"></a>  CRichEditCtrl::SetModify  
  Bayrağını ayarlar veya değiştirilmiş bir düzenleme denetimi için temizler.  
   
 ```  
@@ -1476,7 +1471,7 @@ void SetModify(BOOL bModified = TRUE);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [GetModify](#getmodify).  
   
-##  <a name="setolecallback"></a>CRichEditCtrl::SetOLECallback  
+##  <a name="setolecallback"></a>  CRichEditCtrl::SetOLECallback  
  Bu verir `CRichEditCtrl` nesne bir **IRichEditOleCallback** OLE ile ilgili kaynakları ve bilgileri erişmek için kullanılacak nesne.  
   
 ```  
@@ -1495,7 +1490,7 @@ BOOL SetOLECallback(IRichEditOleCallback* pCallback);
   
  Daha fazla bilgi için bkz: [EM_SETOLECALLBACK](http://msdn.microsoft.com/library/windows/desktop/bb774252) ileti ve [IRichEditOleCallback](http://msdn.microsoft.com/library/windows/desktop/bb774308) arabirimi Windows SDK.  
   
-##  <a name="setoptions"></a>CRichEditCtrl::SetOptions  
+##  <a name="setoptions"></a>  CRichEditCtrl::SetOptions  
  Bu seçenekleri ayarlar `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1508,13 +1503,13 @@ void SetOptions(
  *wOp*  
  İşlemi türünü belirtir. Aşağıdaki değerlerden biri:  
   
-- `ECOOP_SET`Tarafından belirtilen için seçenekleri ayarlayın `dwFlags`.  
+- `ECOOP_SET` Tarafından belirtilen için seçenekleri ayarlayın `dwFlags`.  
   
-- `ECOOP_OR`Tarafından belirtilen geçerli seçeneklerini birleştirin `dwFlags`.  
+- `ECOOP_OR` Tarafından belirtilen geçerli seçeneklerini birleştirin `dwFlags`.  
   
-- `ECOOP_AND`Ayrıca tarafından belirtilen bu geçerli seçenekleri korumak `dwFlags`.  
+- `ECOOP_AND` Ayrıca tarafından belirtilen bu geçerli seçenekleri korumak `dwFlags`.  
   
-- `ECOOP_XOR`Mantıksal Dışlayıcı veya tarafından belirtilen geçerli seçenekleriyle `dwFlags`.  
+- `ECOOP_XOR` Mantıksal Dışlayıcı veya tarafından belirtilen geçerli seçenekleriyle `dwFlags`.  
   
  `dwFlags`  
  Zengin Düzenleme Seçenekleri. Bayrak değerleri açıklamalar bölümünde listelenir.  
@@ -1522,28 +1517,28 @@ void SetOptions(
 ### <a name="remarks"></a>Açıklamalar  
  Seçenekler aşağıdaki değerlerden bir bileşimi olabilir:  
   
-- `ECO_AUTOWORDSELECTION`Otomatik sözcük seçimini çift tıklayın.  
+- `ECO_AUTOWORDSELECTION` Otomatik sözcük seçimini çift tıklayın.  
   
-- `ECO_AUTOVSCROLL`Otomatik olarak kullanıcı satırın sonuna bir karakter yazdığında tarafından 10 karakter metni sağa kaydırır. Kullanıcı ENTER tuşuna bastığında denetimi tüm metni geri konumu sıfır kayar.  
+- `ECO_AUTOVSCROLL` Otomatik olarak kullanıcı satırın sonuna bir karakter yazdığında tarafından 10 karakter metni sağa kaydırır. Kullanıcı ENTER tuşuna bastığında denetimi tüm metni geri konumu sıfır kayar.  
   
-- `ECO_AUTOHSCROLL`Kullanıcı son satırında ENTER tuşuna bastığında otomatik olarak bir sayfa yukarı metin kayar.  
+- `ECO_AUTOHSCROLL` Kullanıcı son satırında ENTER tuşuna bastığında otomatik olarak bir sayfa yukarı metin kayar.  
   
-- `ECO_NOHIDESEL`Bir düzen denetimi için varsayılan davranışı geçersiz hale getirir. Denetim giriş odağı kaybettiğinde ve denetim giriş odağını aldığında seçimi gösterir, varsayılan davranışı seçimi gizler. Belirtirseniz `ECO_NOHIDESEL`, Denetim odağı yoksa bile, seçili metni ters.  
+- `ECO_NOHIDESEL` Bir düzen denetimi için varsayılan davranışı geçersiz hale getirir. Denetim giriş odağı kaybettiğinde ve denetim giriş odağını aldığında seçimi gösterir, varsayılan davranışı seçimi gizler. Belirtirseniz `ECO_NOHIDESEL`, Denetim odağı yoksa bile, seçili metni ters.  
   
-- `ECO_READONLY`Yazarak veya metin düzenleme denetimindeki düzenleme kullanıcının engeller.  
+- `ECO_READONLY` Yazarak veya metin düzenleme denetimindeki düzenleme kullanıcının engeller.  
   
-- `ECO_WANTRETURN`Kullanıcı bir iletişim kutusunda birden çok satırlı zengin düzenleme denetimine metin yazarken ENTER tuşuna bastığında bir satır başı karakteri eklenmesini belirtir. Bu stili belirtmezseniz ENTER tuşuna basarak bir komut üst pencerenin varsayılan düğme (örneğin, bir iletişim kutusunda Tamam düğmesi) tıklatarak taklit eder zengin düzenleme denetimin üst pencere gönderir. Bu stili düzenleme denetimi tek satırlı üzerinde hiçbir etkisi yoktur.  
+- `ECO_WANTRETURN` Kullanıcı bir iletişim kutusunda birden çok satırlı zengin düzenleme denetimine metin yazarken ENTER tuşuna bastığında bir satır başı karakteri eklenmesini belirtir. Bu stili belirtmezseniz ENTER tuşuna basarak bir komut üst pencerenin varsayılan düğme (örneğin, bir iletişim kutusunda Tamam düğmesi) tıklatarak taklit eder zengin düzenleme denetimin üst pencere gönderir. Bu stili düzenleme denetimi tek satırlı üzerinde hiçbir etkisi yoktur.  
   
-- `ECO_SAVESEL`Denetim odağı kaybettiğinde seçimi korur. Odağı başlatıldığında, varsayılan olarak, Denetim tüm içeriğini seçilir.  
+- `ECO_SAVESEL` Denetim odağı kaybettiğinde seçimi korur. Odağı başlatıldığında, varsayılan olarak, Denetim tüm içeriğini seçilir.  
   
-- `ECO_VERTICAL`Metin ve nesneleri dikey yönde çizer. Asya dilleri için kullanılabilir.  
+- `ECO_VERTICAL` Metin ve nesneleri dikey yönde çizer. Asya dilleri için kullanılabilir.  
   
  Daha fazla bilgi için bkz: [EM_SETOPTIONS](http://msdn.microsoft.com/library/windows/desktop/bb774254) Windows SDK'sındaki.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#27](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_27.cpp)]  
   
-##  <a name="setparaformat"></a>CRichEditCtrl::SetParaFormat  
+##  <a name="setparaformat"></a>  CRichEditCtrl::SetParaFormat  
  Bu geçerli seçim için öznitelikler paragraf ayarlar `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1568,7 +1563,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#28](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_28.cpp)]  
   
-##  <a name="setpunctuation"></a>CRichEditCtrl::SetPunctuation  
+##  <a name="setpunctuation"></a>  CRichEditCtrl::SetPunctuation  
  Noktalama işareti bir zengin düzenleme denetimine ayarlar.  
   
 ```  
@@ -1590,7 +1585,7 @@ BOOL SetPunctuation(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi yalnızca işletim sisteminin Asya dil sürümleri için kullanılabilir.  
   
-##  <a name="setreadonly"></a>CRichEditCtrl::SetReadOnly  
+##  <a name="setreadonly"></a>  CRichEditCtrl::SetReadOnly  
  Değişiklikleri `ECO_READONLY` için bu seçeneği `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1612,7 +1607,7 @@ BOOL SetReadOnly(BOOL bReadOnly = TRUE);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#29](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_29.cpp)]  
   
-##  <a name="setrect"></a>CRichEditCtrl::SetRect  
+##  <a name="setrect"></a>  CRichEditCtrl::SetRect  
  Biçimlendirme dikdörtgen bu ayarlar `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1631,7 +1626,7 @@ void SetRect(LPCRECT lpRect);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#30](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_30.cpp)]  
   
-##  <a name="setsel"></a>CRichEditCtrl::SetSel  
+##  <a name="setsel"></a>  CRichEditCtrl::SetSel  
  Seçimin içinde bu ayarlar `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1655,7 +1650,7 @@ void SetSel(CHARRANGE& cr);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlevin iki biçim seçimi sınırları ayarlamak için diğer yollar sağlar. Bu form kısa açıklamaları izleyin:  
   
-- **SetSel (** `cr` **)** bu formun kullandığı **CHARRANGE** yapısı kendi **cpMin** ve **cpMax** sınırları ayarlamak için üyeleri.  
+- **SetSel (** `cr` **)** bu formun kullandığı **CHARRANGE** yapısı kendi **cpMin** ve **cpMax** üyelere sınırları ayarlayın.  
   
 - **SetSel (** `nStartChar` **,** `nEndChar` **)** bu formu kullanın parametreleri `nStartChar` ve `nEndChar` sınırları ayarlamak için.  
   
@@ -1668,7 +1663,7 @@ void SetSel(CHARRANGE& cr);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [GetSel](#getsel).  
   
-##  <a name="setselectioncharformat"></a>CRichEditCtrl::SetSelectionCharFormat  
+##  <a name="setselectioncharformat"></a>  CRichEditCtrl::SetSelectionCharFormat  
  Bu geçerli seçim içindeki metnin özelliklerini biçimlendirme karakter kümeleri `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1693,7 +1688,7 @@ BOOL SetSelectionCharFormat(CHARFORMAT2& cf);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#31](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_31.cpp)]  
   
-##  <a name="settargetdevice"></a>CRichEditCtrl::SetTargetDevice  
+##  <a name="settargetdevice"></a>  CRichEditCtrl::SetTargetDevice  
  WYSIWYG için kullanılan hedef aygıt ve çizgi genişliğini ayarlar (gördüğünüz aldığınızdır) Bu biçimlendirme `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1728,7 +1723,7 @@ BOOL SetTargetDevice(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#32](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_32.cpp)]  
   
-##  <a name="settextmode"></a>CRichEditCtrl::SetTextMode  
+##  <a name="settextmode"></a>  CRichEditCtrl::SetTextMode  
  Zengin düzenleme denetimine metin modu veya geri alma ve yineleme düzeyini belirler.  
   
 ```  
@@ -1747,7 +1742,7 @@ BOOL SetTextMode(UINT fMode);
   
  Metin denetim içeriyorsa, bu üye işlev başarısız olur. Denetim boş olduğundan emin olmak için Gönder bir [WM_SETTEXT](http://msdn.microsoft.com/library/windows/desktop/ms632644) boş bir dize içeren ileti.  
   
-##  <a name="setundolimit"></a>CRichEditCtrl::SetUndoLimit  
+##  <a name="setundolimit"></a>  CRichEditCtrl::SetUndoLimit  
  Geri alma sıraya depolanan Eylemler üst sınırını ayarlar.  
   
 ```  
@@ -1764,7 +1759,7 @@ UINT SetUndoLimit(UINT nLimit);
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, geri alma işlemi sırasındaki eylem maksimum sayısı 100'dür. Bu sayı artırırsanız, yeni sayısına uyum sağlayacak yeterli kullanılabilir bellek olmalıdır. Daha iyi performans için sınırı en küçük olası değerine ayarlayın.  
   
-##  <a name="setwordcharformat"></a>CRichEditCtrl::SetWordCharFormat  
+##  <a name="setwordcharformat"></a>  CRichEditCtrl::SetWordCharFormat  
  Bu şu anda seçili Word'de özniteliklerini biçimlendirme karakter kümeleri `CRichEditCtrl` nesnesi.  
   
 ```  
@@ -1789,7 +1784,7 @@ BOOL SetWordCharFormat(CHARFORMAT2& cf);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CRichEditCtrl#33](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_33.cpp)]  
   
-##  <a name="setwordwrapmode"></a>CRichEditCtrl::SetWordWrapMode  
+##  <a name="setwordwrapmode"></a>  CRichEditCtrl::SetWordWrapMode  
  Düzen denetimi zengin sözcük kaydırma ve sözcük bölünmesi seçeneklerini ayarlar.  
   
 ```  
@@ -1806,7 +1801,7 @@ UINT SetWordWrapMode(UINT uFlags) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu ileti yalnızca Asya dili işletim sisteminin sürümlerinde kullanılabilir.  
   
-##  <a name="stopgrouptyping"></a>CRichEditCtrl::StopGroupTyping  
+##  <a name="stopgrouptyping"></a>  CRichEditCtrl::StopGroupTyping  
  Toplama denetimi geçerli geri alma eylemi Eylemler yazmaya ek durdurur.  
   
 ```  
@@ -1818,7 +1813,7 @@ void StopGroupTyping();
   
  Daha fazla bilgi için bkz: [EM_STOPGROUPTYPING](http://msdn.microsoft.com/library/windows/desktop/bb774300) Windows SDK'sındaki.  
   
-##  <a name="streamin"></a>CRichEditCtrl::StreamIn  
+##  <a name="streamin"></a>  CRichEditCtrl::StreamIn  
  Bu metin değiştirir `CRichEditCtrl` belirtilen giriş akışından metin içeren nesne.  
   
 ```  
@@ -1840,9 +1835,9 @@ long StreamIn(
 ### <a name="remarks"></a>Açıklamalar  
  Değeri `nFormat` şunlardan biri olmalıdır:  
   
-- `SF_TEXT`Yalnızca okuma metin gösterir.  
+- `SF_TEXT` Yalnızca okuma metin gösterir.  
   
-- `SF_RTF`Okuma metin ve biçimlendirme gösterir.  
+- `SF_RTF` Okuma metin ve biçimlendirme gösterir.  
   
  Bu değerlerden herhangi biri ile birleştirilebilir `SFF_SELECTION`. Varsa `SFF_SELECTION` belirtilirse, `StreamIn` geçerli seçim Giriş akışı içeriğiyle değiştirir. Belirtilmezse, `StreamIn` bu tüm içeriğini değiştirir `CRichEditCtrl` nesnesi.  
   
@@ -1855,7 +1850,7 @@ long StreamIn(
   
  [!code-cpp[NVC_MFC_CRichEditCtrl#35](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_35.cpp)]  
   
-##  <a name="streamout"></a>CRichEditCtrl::StreamOut  
+##  <a name="streamout"></a>  CRichEditCtrl::StreamOut  
  Bu içeriği Yazar `CRichEditCtrl` belirtilen çıkış akışına nesnesi.  
   
 ```  
@@ -1877,13 +1872,13 @@ long StreamOut(
 ### <a name="remarks"></a>Açıklamalar  
  Değeri `nFormat` şunlardan biri olmalıdır:  
   
-- `SF_TEXT`Yalnızca yazma metin gösterir.  
+- `SF_TEXT` Yalnızca yazma metin gösterir.  
   
-- `SF_RTF`Yazma metin ve biçimlendirme gösterir.  
+- `SF_RTF` Yazma metin ve biçimlendirme gösterir.  
   
-- `SF_RTFNOOBJS`Yazma metin ve biçimlendirme, OLE öğeleri alanları ile değiştirerek gösterir.  
+- `SF_RTFNOOBJS` Yazma metin ve biçimlendirme, OLE öğeleri alanları ile değiştirerek gösterir.  
   
-- `SF_TEXTIZED`Yazma metin ve biçimlendirme, OLE öğeleri metinsel gösterimlerini belirtir.  
+- `SF_TEXTIZED` Yazma metin ve biçimlendirme, OLE öğeleri metinsel gösterimlerini belirtir.  
   
  Bu değerleri ile birleştirilebilir `SFF_SELECTION`. Varsa `SFF_SELECTION` belirtilirse, `StreamOut` geçerli seçim çıkış akışı içine çıkışı yazar. Belirtilmezse, `StreamOut` tüm içeriğini bu Yazar `CRichEditCtrl` nesnesi.  
   
@@ -1896,7 +1891,7 @@ long StreamOut(
   
  [!code-cpp[NVC_MFC_CRichEditCtrl#37](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_37.cpp)]  
   
-##  <a name="undo"></a>CRichEditCtrl::Undo  
+##  <a name="undo"></a>  CRichEditCtrl::Undo  
  Zengin düzenleme denetimindeki son işlemini geri alır.  
   
 ```  

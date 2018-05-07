@@ -1,12 +1,9 @@
 ---
-title: "_InterlockedCompareExchange iç işlevler | Microsoft Docs"
-ms.custom: 
+title: _InterlockedCompareExchange iç işlevler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - _InterlockedCompareExchange_HLERelease
@@ -57,20 +54,18 @@ helpviewer_keywords:
 - InterlockedCompareExchange64_rel intrinsic
 - _InterlockedCompareExchange64_rel intrinsic
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a59050eede8a89825f54e1d5b0d13dd95a22670a
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 3b0fc52585171df740f70e12d81d849e3726dcd7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="interlockedcompareexchange-intrinsic-functions"></a>_InterlockedCompareExchange iç işlevler
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Bir exchange ve ınterlocked karşılaştırmak gerçekleştirir.  
   
@@ -444,7 +439,7 @@ int main(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)   
- [_InterlockedCompareExchangePointer Intrinsic Functions](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)   
+ [_InterlockedCompareExchangePointer iç işlevler](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)   
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   
  [Anahtar sözcükler](../cpp/keywords-cpp.md)   
  [x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)

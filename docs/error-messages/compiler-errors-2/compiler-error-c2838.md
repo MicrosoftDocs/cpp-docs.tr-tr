@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2838 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2838 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2838
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2838
 ms.assetid: 176b2ad6-7a84-4019-b97e-328866054457
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b13ccdc42c9e55268c66758a89eef2af4ae147bc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a170e869a2d8869424b23fb154cd23f0ed26c9fa
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2838"></a>Derleyici Hatası C2838
 'member': üye bildiriminde geçersiz tam ad  

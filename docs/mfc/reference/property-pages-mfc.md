@@ -1,13 +1,10 @@
 ---
-title: "Özellik sayfaları (MFC) | Microsoft Docs"
-ms.custom: 
+title: Özellik sayfaları (MFC) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.macros
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - property page data transfer functions in MFC
 - property pages [MFC], global MFC functions
 ms.assetid: 734f88bc-c776-4136-9b0e-f45c761a45c1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e53260457470ef75ac706779cea323aa5b73da2a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0895cd22870b3a4a266e9be12f0000fae7f7101a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="property-pages-mfc"></a>Özellik Sayfaları (MFC)
 Özellik sayfaları görüntüleme ve düzenleme iletişim kutusu veri değişimi (DDX) dayalı bir veri eşleme mekanizması destekleyerek için özelleştirilebilir, grafik bir arabirim belirli OLE denetim özellikleri geçerli değerlerini görüntüler.  
@@ -60,7 +55,7 @@ ms.lasthandoff: 12/21/2017
 |[END_PROPPAGEIDS](#end_proppageids)|Özellik sayfası kimlikleri listesini sona erer.|  
 |[PROPPAGEID](#proppageid)|Denetim sınıfı bir özellik sayfasında bildirir.|  
   
-##  <a name="ddp_cbindex"></a>Ddp_cbındex  
+##  <a name="ddp_cbindex"></a>  Ddp_cbındex  
  Bu işlev, özellik sayfanın çağrı `DoDataExchange` birleşik giriş kutusu özellik sayfasında bulunan geçerli seçime dizini bir tamsayı özelliği değeri eşitlemek için işlev.  
   
 ```   
@@ -90,7 +85,7 @@ void AFXAPI DDP_CBIndex(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="ddp_cbstring"></a>DDP_CBString  
+##  <a name="ddp_cbstring"></a>  DDP_CBString  
  Bu işlev, özellik sayfanın çağrı `DoDataExchange` dize özelliğinin değeri bir birleşik giriş kutusu özellik sayfasında geçerli seçim ile eşitlemek için işlevi.  
   
 ```  
@@ -120,7 +115,7 @@ void AFXAPI DDP_CBString(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="ddp_cbstringexact"></a>DDP_CBStringExact  
+##  <a name="ddp_cbstringexact"></a>  DDP_CBStringExact  
  Bu işlev, özellik sayfanın çağrı `DoDataExchange` işlevi tam olarak bir birleşik giriş kutusu özellik sayfasında bulunan geçerli seçime eşleşen bir dize özelliği değerini eşitlenecek.  
   
 ```  
@@ -150,7 +145,7 @@ void AFXAPI DDP_CBStringExact(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="ddp_check"></a>DDP_Check  
+##  <a name="ddp_check"></a>  DDP_Check  
  Bu işlev, özellik sayfanın çağrı `DoDataExchange` işlevi özelliğinin değeri ilişkili özellik sayfası onay kutusu denetimi ile eşitleyin.  
   
 ```   
@@ -180,7 +175,7 @@ void AFXAPI DDP_Check(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="ddp_lbindex"></a>Ddp_lbındex  
+##  <a name="ddp_lbindex"></a>  Ddp_lbındex  
  Bu işlev, özellik sayfanın çağrı `DoDataExchange` bir tamsayı özelliğinin değeri bir liste kutusu özellik sayfasında bulunan geçerli seçime dizini ile eşitlemek için işlevi.  
   
 ```   
@@ -210,7 +205,7 @@ void AFXAPI DDP_LBIndex(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="ddp_lbstring"></a>DDP_LBString  
+##  <a name="ddp_lbstring"></a>  DDP_LBString  
  Bu işlev, özellik sayfanın çağrı `DoDataExchange` dize özelliğinin değeri bir liste kutusu özellik sayfasında geçerli seçim ile eşitlemek için işlevi.  
   
 ```   
@@ -240,7 +235,7 @@ void AFXAPI DDP_LBString(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="ddp_lbstringexact"></a>DDP_LBStringExact  
+##  <a name="ddp_lbstringexact"></a>  DDP_LBStringExact  
  Bu işlev, özellik sayfanın çağrı `DoDataExchange` özellik sayfasında liste kutusunda geçerli seçim ile tam olarak bir dize özelliği değeri eşitlemek için işlevi.  
   
 ```   
@@ -270,7 +265,7 @@ void AFXAPI DDP_LBStringExact(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="ddp_postprocessing"></a>DDP_PostProcessing  
+##  <a name="ddp_postprocessing"></a>  DDP_PostProcessing  
  Bu işlev, özellik sayfanın çağrı `DoDataExchange` özellik değerlerini kaydedildiğinde denetiminizi özellik sayfasından özellik değerlerini aktarımını tamamlanması işlevi.  
   
 ```   
@@ -289,7 +284,7 @@ void AFXAPI DDP_PostProcessing(CDataExchange * pDX);
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="ddp_radio"></a>DDP_Radio  
+##  <a name="ddp_radio"></a>  DDP_Radio  
  Denetim içinde bu işlevi çağırmak `DoPropExchange` özelliğinin değeri ile ilişkili özellik sayfası radyo düğmesi denetimini eşitlemek için işlevi.  
   
 ```   
@@ -319,7 +314,7 @@ void AFXAPI DDP_Radio(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="ddp_text"></a>DDP_Text  
+##  <a name="ddp_text"></a>  DDP_Text  
  Denetim içinde bu işlevi çağırmak `DoDataExchange` özelliğinin değeri ile ilişkili özellik sayfası denetimi eşitlemek için işlevi.  
   
 ```   
@@ -391,7 +386,7 @@ void AFXAPI DDP_Text(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="begin_proppageids"></a>BEGIN_PROPPAGEIDS  
+##  <a name="begin_proppageids"></a>  BEGIN_PROPPAGEIDS  
  Özellik sayfası kimlikleri denetiminizin listesi tanımını başlar.  
   
 ```   
@@ -402,7 +397,7 @@ BEGIN_PROPPAGEIDS(class_name,  count)
  *class_name*  
  Sayfaları hangi özelliği için belirtilen control sınıfı adı.  
   
- *sayısı*  
+ *Sayısı*  
  Denetim sınıfı tarafından kullanılan özellik sayfaları sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -413,7 +408,7 @@ BEGIN_PROPPAGEIDS(class_name,  count)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="end_proppageids"></a>END_PROPPAGEIDS  
+##  <a name="end_proppageids"></a>  END_PROPPAGEIDS  
  Özellik sayfası kimliği listenize tanımını sona erer.  
   
 ```   
@@ -427,7 +422,7 @@ END_PROPPAGEIDS(class_name)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxctl.h  
   
-##  <a name="proppageid"></a>PROPPAGEID  
+##  <a name="proppageid"></a>  PROPPAGEID  
  OLE denetim tarafından kullanım için bir özellik sayfası ekler.  
   
 ```   

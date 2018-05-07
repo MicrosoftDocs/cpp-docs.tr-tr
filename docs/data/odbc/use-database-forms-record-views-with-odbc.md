@@ -1,31 +1,26 @@
 ---
-title: "ODBC ile veritabanı formları (Kayıt görünümleri) kullanma | Microsoft Docs"
-ms.custom: 
+title: ODBC ile veritabanı formları (Kayıt görünümleri) kullanma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - ODBC, record views
 - record views, ODBC
 ms.assetid: 6a2ce346-8104-4ccd-b06e-ca0859a132fe
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 35d9cfeaf970c01f94094d1fb3cbf02703281298
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 024df18137e38f7aecf2420b85f8fc4d8b1c30cd
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="use-database-forms-record-views-with-odbc"></a>ODBC ile Veritabanı Formları (Kayıt Görünümleri) Kullanma
 Veri girişi veya veri görüntüleme gibi bazı uygulamalar, bir görünüm stili iletişim kutusu denetimleri ile bir form gerektirir.  

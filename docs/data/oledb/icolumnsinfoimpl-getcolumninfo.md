@@ -1,12 +1,9 @@
 ---
-title: "Icolumnsınfoımpl::GetColumnInfo | Microsoft Docs"
-ms.custom: 
+title: Icolumnsınfoımpl::GetColumnInfo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - GetColumnInfo
@@ -21,18 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - GetColumnInfo method
 ms.assetid: a6739a39-7402-496a-b544-a5b1ed05fadf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3eeb2667577a146c0364490ce42ce4ce0cc80848
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 375cd46cb9e4f4a248b5be4cef19e85901992eed
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="icolumnsinfoimplgetcolumninfo"></a>IColumnsInfoImpl::GetColumnInfo
 Çoğu tüketiciler tarafından gerekli sütun meta verileri döndürür.  

@@ -1,12 +1,9 @@
 ---
 title: Vector::Empty (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::vector::empty
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - empty member [STL/CLR]
 ms.assetid: c09fc4a3-bd79-4458-9a36-1d9c82ac36b1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 63aafd2c817da8143512a777feed47feda03c62a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 23cb3455db73d1f16599222548625df9c9578544
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vectorempty-stlclr"></a>vector::empty (STL/CLR)
 Bir öğe olup olmadığını sınar.  

@@ -1,12 +1,9 @@
 ---
-title: "CEvent sınıfı | Microsoft Docs"
-ms.custom: 
+title: CEvent sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CEvent
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - CEvent [MFC], SetEvent
 - CEvent [MFC], Unlock
 ms.assetid: df676042-ce27-4702-800a-e73ff4f44395
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0646e703f172777817aa569fa28d3430624ccae8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1da3dc6df825988794481795ca7e47e72b5736bb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cevent-class"></a>CEvent sınıfı
 Başka bir olayın oluştuğunu bildirmek bir iş parçacığı sağlayan bir eşitleme nesnesi olan bir olayı temsil eder.  
@@ -66,7 +61,7 @@ class CEvent : public CSyncObject
 ## <a name="remarks"></a>Açıklamalar  
  Bir iş parçacığı, görevi gerçekleştirmek ne zaman bilmelisiniz olduğunda olayları yararlıdır. Örneğin, yeni veriler kullanılabilir olduğunda, bir veri arşivine verileri kopyalayan bir iş parçacığı bildirilmelidir. Kullanarak bir `CEvent` yeni veriler kullanılabilir olduğunda kopyalama iş parçacığı bildirmek için nesnenin iş parçacığı mümkün olan en kısa sürede görevini gerçekleştirebilirsiniz.  
   
- `CEvent`nesnelerinin iki tür vardır: elle ve otomatik.  
+ `CEvent` nesnelerinin iki tür vardır: elle ve otomatik.  
   
  Otomatik `CEvent` nesne en az bir iş parçacığı yayımlandıktan sonra işareti olmayan bir (kullanılamaz) durumu otomatik olarak döndürür. Varsayılan olarak, bir `CEvent` nesne, geçirdiğiniz sürece otomatiktir `TRUE` için `bManualReset` oluşturma sırasında parametre.  
   
@@ -95,7 +90,7 @@ class CEvent : public CSyncObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxmt.h  
   
-##  <a name="cevent"></a>CEvent::CEvent  
+##  <a name="cevent"></a>  CEvent::CEvent  
  Adlandırılmış veya adlandırılmamış oluşturur `CEvent` nesnesi.  
   
 ```  
@@ -127,7 +122,7 @@ CEvent(
 > [!IMPORTANT]
 >  Oluşturduktan sonra `CEvent` nesne, kullanın [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) mutex önceden yoksa emin olmak için. Mutex beklenmedik bir şekilde yoksa, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, önerilen güvenliğe tanıtıcı kapatın ve gibi varsa bir hata nesnesi oluşturulurken devam etmek için bir yordamdır.  
   
-##  <a name="pulseevent"></a>CEvent::PulseEvent  
+##  <a name="pulseevent"></a>  CEvent::PulseEvent  
  Sinyal Olayı durumunu (kullanılabilir) ayarlar, tüm bekleyen iş parçacıklarının serbest bırakır ve kendisine nonsignaled (kullanılamaz) otomatik olarak sıfırlar.  
   
 ```  
@@ -142,9 +137,9 @@ BOOL PulseEvent();
   
  İş parçacığı bekleniyor ya da iş parçacığı hemen serbest bırakılabilir `PulseEvent` olaya durumunu nonsignaled ayarlar ve döndürür.  
   
- `PulseEvent`temel alınan Win32 kullanan `PulseEvent` kısa bir süre içinde bir çekirdek modu zaman uyumsuz yordam çağrısı tarafından bekleme durumundan kaldırılabilir işlevi. Bu nedenle, `PulseEvent` güvenilir olmayan ve yeni uygulamalar tarafından kullanılmamalıdır. Daha fazla bilgi için bkz: [PulseEvent işlevi](http://msdn.microsoft.com/library/windows/desktop/ms684914).  
+ `PulseEvent` temel alınan Win32 kullanan `PulseEvent` kısa bir süre içinde bir çekirdek modu zaman uyumsuz yordam çağrısı tarafından bekleme durumundan kaldırılabilir işlevi. Bu nedenle, `PulseEvent` güvenilir olmayan ve yeni uygulamalar tarafından kullanılmamalıdır. Daha fazla bilgi için bkz: [PulseEvent işlevi](http://msdn.microsoft.com/library/windows/desktop/ms684914).  
   
-##  <a name="resetevent"></a>CEvent::ResetEvent  
+##  <a name="resetevent"></a>  CEvent::ResetEvent  
  Açıkça tarafından için iş ayarlamak için olay durumunu kadar nonsignaled ayarlar [SetEvent](#setevent) üye işlevi.  
   
 ```  
@@ -159,7 +154,7 @@ BOOL ResetEvent();
   
  Bu üye işlevi otomatik olaylar tarafından kullanılmaz.  
   
-##  <a name="setevent"></a>CEvent::SetEvent  
+##  <a name="setevent"></a>  CEvent::SetEvent  
  Tüm bekleyen iş parçacığı bırakılıyor işaret için olay durumunu ayarlar.  
   
 ```  
@@ -172,7 +167,7 @@ BOOL SetEvent();
 ### <a name="remarks"></a>Açıklamalar  
  Olay el ile ise, olay kadar iş kalacak [ResetEvent](#resetevent) olarak adlandırılır. Bu durumda birden çok iş parçacığı serbest bırakılabilir. Olayı otomatik ise, tek bir iş parçacığı serbest kadar olay iş kalır. Sistem, ardından olayın durumu için nonsignaled ayarlarsınız. İş parçacığı bekleyen varsa, bir iş parçacığı serbest kadar durumu iş kalır.  
   
-##  <a name="unlock"></a>CEvent::Unlock  
+##  <a name="unlock"></a>  CEvent::Unlock  
  Olay nesnesi serbest bırakır.  
   
 ```  

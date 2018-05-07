@@ -1,12 +1,9 @@
 ---
-title: "CHtmlEditCtrlBase sınıfı | Microsoft Docs"
-ms.custom: 
+title: CHtmlEditCtrlBase sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CHtmlEditCtrlBase
@@ -229,17 +226,15 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], Unlink
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 545cf67ff790edeb2303f95365c34ca71e4dc7f6
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 40d8c55f212949400bc7948be291d037a34281ce
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase sınıfı
 HTML düzenleme bileşenini temsil eder.  
@@ -379,7 +374,7 @@ template <class T> class CHtmlEditCtrlBase
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxhtml.h  
   
-##  <a name="addtoglyphtable"></a>CHtmlEditCtrlBase::AddToGlyphTable  
+##  <a name="addtoglyphtable"></a>  CHtmlEditCtrlBase::AddToGlyphTable  
  Bir giriş Tasarım modunda belirli etiketleri için görüntülenecek görüntüleri belirtir karakter tablosuna ekler.  
   
 ```  
@@ -427,7 +422,7 @@ HRESULT AddToGlyphTable(
   
  Bu yöntem gönderir [IDM_ADDTOGLYPHTABLE komut kimliği](https://msdn.microsoft.com/library/aa769891.aspx) WebBrowser denetimi için.  
   
-##  <a name="bold"></a>CHtmlEditCtrlBase::Bold  
+##  <a name="bold"></a>  CHtmlEditCtrlBase::Bold  
  Seçili metni kalın durumunu değiştirir.  
   
 ```  
@@ -440,7 +435,7 @@ HRESULT Bold() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_BOLD komut kimliği](https://msdn.microsoft.com/library/aa769861.aspx) WebBrowser denetimi için.  
   
-##  <a name="button"></a>CHtmlEditCtrlBase::Button  
+##  <a name="button"></a>  CHtmlEditCtrlBase::Button  
  Düğme denetimi geçerli seçimini üzerine yazar.  
   
 ```  
@@ -457,7 +452,7 @@ HRESULT Button(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_BUTTON komut kimliği](https://msdn.microsoft.com/library/aa769966.aspx) WebBrowser denetimi için.  
   
-##  <a name="checkbox"></a>CHtmlEditCtrlBase::CheckBox  
+##  <a name="checkbox"></a>  CHtmlEditCtrlBase::CheckBox  
  Bir onay kutusu denetimi geçerli seçimini üzerine yazar.  
   
 ```  
@@ -474,7 +469,7 @@ HRESULT CheckBox(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_CHECKBOX komut kimliği](https://msdn.microsoft.com/library/aa769972.aspx) WebBrowser denetimi için.  
   
-##  <a name="clearselection"></a>CHtmlEditCtrlBase::ClearSelection  
+##  <a name="clearselection"></a>  CHtmlEditCtrlBase::ClearSelection  
  Geçerli seçim temizler.  
   
 ```  
@@ -487,7 +482,7 @@ HRESULT ClearSelection() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_CLEARSELECTION komut kimliği](https://msdn.microsoft.com/library/aa770038.aspx) WebBrowser denetimi için.  
   
-##  <a name="copy"></a>CHtmlEditCtrlBase::Copy  
+##  <a name="copy"></a>  CHtmlEditCtrlBase::Copy  
  Geçerli seçimi panoya kopyalar.  
   
 ```  
@@ -500,7 +495,7 @@ HRESULT Copy() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_COPY komut kimliği](https://msdn.microsoft.com/library/aa769872.aspx) WebBrowser denetimi için.  
   
-##  <a name="cut"></a>CHtmlEditCtrlBase::Cut  
+##  <a name="cut"></a>  CHtmlEditCtrlBase::Cut  
  Geçerli seçimi panoya kopyalar ve ardından siler.  
   
 ```  
@@ -513,7 +508,7 @@ HRESULT Cut() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_CUT komut kimliği](https://msdn.microsoft.com/library/aa769875.aspx) WebBrowser denetimi için.  
   
-##  <a name="delete"></a>CHtmlEditCtrlBase::Delete  
+##  <a name="delete"></a>  CHtmlEditCtrlBase::Delete  
  Geçerli seçimi siler.  
   
 ```  
@@ -526,7 +521,7 @@ HRESULT Delete() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_DELETE komut kimliği](https://msdn.microsoft.com/library/aa769876.aspx) WebBrowser denetimi için.  
   
-##  <a name="dropdownbox"></a>CHtmlEditCtrlBase::DropDownBox  
+##  <a name="dropdownbox"></a>  CHtmlEditCtrlBase::DropDownBox  
  Geçerli seçim aşağı açılan seçimi denetiminde üzerine yazar.  
   
 ```  
@@ -543,7 +538,7 @@ HRESULT DropDownBox(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_DROPDOWNBOX komut kimliği](https://msdn.microsoft.com/library/aa769984.aspx) WebBrowser denetimi için.  
   
-##  <a name="emptyglyphtable"></a>CHtmlEditCtrlBase::EmptyGlyphTable  
+##  <a name="emptyglyphtable"></a>  CHtmlEditCtrlBase::EmptyGlyphTable  
  Tasarım modunda etiketleri için görüntülenen tüm görüntüleri gizler karakter tablodan tüm girişleri siler.  
   
 ```  
@@ -556,7 +551,7 @@ HRESULT EmptyGlyphTable() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_EMPTYGLYPHTABLE komut kimliği](https://msdn.microsoft.com/library/aa769907.aspx) WebBrowser denetimi için.  
   
-##  <a name="execcommand"></a>CHtmlEditCtrlBase::ExecCommand  
+##  <a name="execcommand"></a>  CHtmlEditCtrlBase::ExecCommand  
  Bir komut yürütür.  
   
 ```  
@@ -596,7 +591,7 @@ HRESULT ExecCommand(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem işlevselliğini sağlar [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300).  
   
-##  <a name="font"></a>CHtmlEditCtrlBase::Font  
+##  <a name="font"></a>  CHtmlEditCtrlBase::Font  
  Metin rengi, yazı tipi ve geçerli seçim yazı tipi boyutunu değiştirmek kullanıcının etkinleştirmek için bir yazı tipi iletişim kutusu açılır.  
   
 ```  
@@ -609,7 +604,7 @@ HRESULT Font() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_FONT komut kimliği](https://msdn.microsoft.com/library/aa769913.aspx) WebBrowser denetimi için.  
   
-##  <a name="getabsoluteposition"></a>CHtmlEditCtrlBase::GetAbsolutePosition  
+##  <a name="getabsoluteposition"></a>  CHtmlEditCtrlBase::GetAbsolutePosition  
  Bir öğenin konum özelliğini "absolute" olup olmadığını döndürür  
   
 ```  
@@ -626,7 +621,7 @@ HRESULT GetAbsolutePosition(bool& bCurValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [IDM_ABSOLUTE_POSITION komut kimliği](https://msdn.microsoft.com/library/aa769889.aspx).  
   
-##  <a name="getbackcolor"></a>CHtmlEditCtrlBase::GetBackColor  
+##  <a name="getbackcolor"></a>  CHtmlEditCtrlBase::GetBackColor  
  Geçerli seçim arka plan rengini alır.  
   
 ```  
@@ -643,7 +638,7 @@ HRESULT GetBackColor(int& nColor) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_BACKCOLOR komut kimliği](https://msdn.microsoft.com/library/aa769858.aspx) WebBrowser denetimi için.  
   
-##  <a name="getblockformat"></a>CHtmlEditCtrlBase::GetBlockFormat  
+##  <a name="getblockformat"></a>  CHtmlEditCtrlBase::GetBlockFormat  
  Geçerli blok biçimi etiket alır.  
   
 ```  
@@ -660,7 +655,7 @@ HRESULT GetBlockFormat(CString& strFormat) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_BLOCKFMT komut kimliği](https://msdn.microsoft.com/library/aa769883.aspx) WebBrowser denetimi için.  
   
-##  <a name="getblockformatnames"></a>CHtmlEditCtrlBase::GetBlockFormatNames  
+##  <a name="getblockformatnames"></a>  CHtmlEditCtrlBase::GetBlockFormatNames  
  Kullanılabilir blok biçimi etiketleri karşılık gelen dizeleri alır.  
   
 ```  
@@ -677,7 +672,7 @@ HRESULT GetBlockFormatNames(CStringArray& sa) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_GETBLOCKFMTS komut kimliği](https://msdn.microsoft.com/library/aa769884.aspx) WebBrowser denetimi için.  
   
-##  <a name="getbookmark"></a>CHtmlEditCtrlBase::GetBookMark  
+##  <a name="getbookmark"></a>  CHtmlEditCtrlBase::GetBookMark  
  Yer işareti bağlantı adını alır.  
   
 ```  
@@ -694,7 +689,7 @@ HRESULT GetBookMark(CString& strAnchor) const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [IDM_BOOKMARK komut kimliği](https://msdn.microsoft.com/library/aa769873.aspx).  
   
-##  <a name="getdocument"></a>CHtmlEditCtrlBase::GetDocument  
+##  <a name="getdocument"></a>  CHtmlEditCtrlBase::GetDocument  
  Belge nesnesi alır.  
   
 ```  
@@ -708,7 +703,7 @@ HRESULT GetDocument(IHTMLDocument2** ppDoc) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
-##  <a name="getdocumenthtml"></a>CHtmlEditCtrlBase::GetDocumentHTML  
+##  <a name="getdocumenthtml"></a>  CHtmlEditCtrlBase::GetDocumentHTML  
  Geçerli belgenin HTML alır.  
   
 ```  
@@ -722,7 +717,7 @@ HRESULT GetDocumentHTML(CString& szHTML) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
-##  <a name="getdocumenttitle"></a>CHtmlEditCtrlBase::GetDocumentTitle  
+##  <a name="getdocumenttitle"></a>  CHtmlEditCtrlBase::GetDocumentTitle  
  Belgenin başlığını alır.  
   
 ```  
@@ -736,7 +731,7 @@ HRESULT GetDocumentTitle(CString& szTitle) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
-##  <a name="getevent"></a>CHtmlEditCtrlBase::GetEvent  
+##  <a name="getevent"></a>  CHtmlEditCtrlBase::GetEvent  
  En son olay ilgili bilgileri içeren olay nesne için bir arabirim işaretçisi alır.  
   
 ```  
@@ -750,7 +745,7 @@ HRESULT GetEvent(IHTMLEventObj** ppEventObj) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
-##  <a name="geteventsrcelement"></a>CHtmlEditCtrlBase::GetEventSrcElement  
+##  <a name="geteventsrcelement"></a>  CHtmlEditCtrlBase::GetEventSrcElement  
  Olay harekete nesnesi alır.  
   
 ```  
@@ -764,7 +759,7 @@ HRESULT GetEventSrcElement(IHTMLElement** ppSrcElement) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
-##  <a name="getfontface"></a>CHtmlEditCtrlBase::GetFontFace  
+##  <a name="getfontface"></a>  CHtmlEditCtrlBase::GetFontFace  
  Geçerli seçim için yazı tipi adı alır.  
   
 ```  
@@ -783,7 +778,7 @@ HRESULT GetFontFace(CString& strFace) const;
   
  Bu yöntem gönderir [IDM_FONTNAME komut kimliği](https://msdn.microsoft.com/library/aa769880.aspx) WebBrowser denetimi için.  
   
-##  <a name="getfontsize"></a>CHtmlEditCtrlBase::GetFontSize  
+##  <a name="getfontsize"></a>  CHtmlEditCtrlBase::GetFontSize  
  Geçerli seçim için yazı tipi boyutunu alır.  
   
 ```  
@@ -800,7 +795,7 @@ HRESULT GetFontSize(short& nSize) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_FONTSIZE komut kimliği](https://msdn.microsoft.com/library/aa769881.aspx) WebBrowser denetimi için.  
   
-##  <a name="getforecolor"></a>CHtmlEditCtrlBase::GetForeColor  
+##  <a name="getforecolor"></a>  CHtmlEditCtrlBase::GetForeColor  
  Geçerli seçim (metin) ön plan rengini alır.  
   
 ```  
@@ -817,7 +812,7 @@ HRESULT GetForeColor(int& nColor);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_FORECOLOR komut kimliği](https://msdn.microsoft.com/library/aa769882.aspx) WebBrowser denetimi için.  
   
-##  <a name="getframezone"></a>CHtmlEditCtrlBase::GetFrameZone  
+##  <a name="getframezone"></a>  CHtmlEditCtrlBase::GetFrameZone  
  Geçerli sayfanın güvenlik bölgesi web tarayıcısında döndürür.  
   
 ```  
@@ -834,7 +829,7 @@ HRESULT GetFrameZone(short& nZone) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_GETFRAMEZONE komut kimliği](https://msdn.microsoft.com/library/aa769916.aspx) WebBrowser denetimi için.  
   
-##  <a name="getisdirty"></a>CHtmlEditCtrlBase::GetIsDirty  
+##  <a name="getisdirty"></a>  CHtmlEditCtrlBase::GetIsDirty  
  HTML belgesi değişip değişmediğini gösterir.  
   
 ```  
@@ -842,9 +837,9 @@ HRESULT GetIsDirty() const;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belge değişip değişmediğini gösterir. `GetIsDirty`döndüren bir `HRESULT` gelen [IPersistStorage::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910).  
+ Belge değişip değişmediğini gösterir. `GetIsDirty` döndüren bir `HRESULT` gelen [IPersistStorage::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910).  
   
-##  <a name="getshowalignedsitetags"></a>CHtmlEditCtrlBase::GetShowAlignedSiteTags  
+##  <a name="getshowalignedsitetags"></a>  CHtmlEditCtrlBase::GetShowAlignedSiteTags  
  Bir karakter için sahip tüm öğeleri görüntülenip görüntülenmeyeceğini döndürür bir **styleFloat** özelliği.  
   
 ```  
@@ -861,7 +856,7 @@ HRESULT GetShowAlignedSiteTags(bool& bCurValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [IDM_SHOWALIGNEDSITETAGS komut kimliği](https://msdn.microsoft.com/library/aa769947.aspx).  
   
-##  <a name="getshowalltags"></a>CHtmlEditCtrlBase::GetShowAllTags  
+##  <a name="getshowalltags"></a>  CHtmlEditCtrlBase::GetShowAllTags  
  WebBrowser belgedeki tüm etiketleri konumunu göstermek için karakterlerin görüntülenip görüntülenmeyeceğini döndürür.  
   
 ```  
@@ -878,7 +873,7 @@ HRESULT GetShowAllTags(bool& bCurValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [IDM_SHOWALLTAGS komut kimliği](https://msdn.microsoft.com/library/aa769948.aspx).  
   
-##  <a name="getshowareatags"></a>CHtmlEditCtrlBase::GetShowAreaTags  
+##  <a name="getshowareatags"></a>  CHtmlEditCtrlBase::GetShowAreaTags  
  WebBrowser alan etiketleri karaktere görüntüleyip görüntülemeyeceğini alır.  
   
 ```  
@@ -895,7 +890,7 @@ HRESULT GetShowAreaTags(bool& bCurValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [IDM_SHOWAREATAGS komut kimliği](https://msdn.microsoft.com/library/aa769949.aspx).  
   
-##  <a name="getshowbrtags"></a>CHtmlEditCtrlBase::GetShowBRTags  
+##  <a name="getshowbrtags"></a>  CHtmlEditCtrlBase::GetShowBRTags  
  WebBrowser br etiketleri karaktere görüntüleyip görüntülemeyeceğini alır.  
   
 ```  
@@ -912,7 +907,7 @@ HRESULT GetShowBRTags(bool& bCurValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [IDM_SHOWWBRTAGS komut kimliği](https://msdn.microsoft.com/library/aa769956.aspx).  
   
-##  <a name="getshowcommenttags"></a>CHtmlEditCtrlBase::GetShowCommentTags  
+##  <a name="getshowcommenttags"></a>  CHtmlEditCtrlBase::GetShowCommentTags  
  WebBrowser açıklama etiketleri karaktere görüntüleyip görüntülemeyeceğini alır.  
   
 ```  
@@ -929,7 +924,7 @@ HRESULT GetShowCommentTags(bool& bCurValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [IDM_SHOWCOMMENTTAGS komut kimliği](https://msdn.microsoft.com/library/aa769950.aspx).  
   
-##  <a name="getshowmisctags"></a>CHtmlEditCtrlBase::GetShowMiscTags  
+##  <a name="getshowmisctags"></a>  CHtmlEditCtrlBase::GetShowMiscTags  
  WebBrowser Microsoft Internet Explorer 4. 0 ' gösterilen tüm etiketleri görüntüleyip görüntülemeyeceğini alır.  
   
 ```  
@@ -946,7 +941,7 @@ HRESULT GetShowMiscTags(bool& bCurValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [IDM_SHOWMISCTAGS komut kimliği](https://msdn.microsoft.com/library/aa769952.aspx).  
   
-##  <a name="getshowscripttags"></a>CHtmlEditCtrlBase::GetShowScriptTags  
+##  <a name="getshowscripttags"></a>  CHtmlEditCtrlBase::GetShowScriptTags  
  Tüm komut dosyası etiketleri karaktere WebBrowser görüntüleyip görüntülemeyeceğini alır.  
   
 ```  
@@ -963,7 +958,7 @@ HRESULT GetShowScriptTags(bool& bCurValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [IDM_SHOWSCRIPTTAGS komut kimliği](https://msdn.microsoft.com/library/aa769953.aspx).  
   
-##  <a name="getshowstyletags"></a>CHtmlEditCtrlBase::GetShowStyleTags  
+##  <a name="getshowstyletags"></a>  CHtmlEditCtrlBase::GetShowStyleTags  
  WebBrowser tüm stil etiketleri karaktere görüntüleyip görüntülemeyeceğini alır.  
   
 ```  
@@ -980,7 +975,7 @@ HRESULT GetShowStyleTags(bool& bCurValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [IDM_SHOWSTYLETAGS komut kimliği](https://msdn.microsoft.com/library/aa769954.aspx).  
   
-##  <a name="getshowunknowntags"></a>CHtmlEditCtrlBase::GetShowUnknownTags  
+##  <a name="getshowunknowntags"></a>  CHtmlEditCtrlBase::GetShowUnknownTags  
  Tüm bilinmeyen etiketleri karaktere WebBrowser görüntüleyip görüntülemeyeceğini alır.  
   
 ```  
@@ -997,7 +992,7 @@ HRESULT GetShowUnknownTags(bool& bCurValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [IDM_SHOWUNKNOWNTAGS komut kimliği](https://msdn.microsoft.com/library/aa769955.aspx).  
   
-##  <a name="horizontalline"></a>CHtmlEditCtrlBase::HorizontalLine  
+##  <a name="horizontalline"></a>  CHtmlEditCtrlBase::HorizontalLine  
  Geçerli seçim yatay bir satırda üzerine yazar.  
   
 ```  
@@ -1014,7 +1009,7 @@ HRESULT HorizontalLine(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_HORIZONTALLINE komut kimliği](https://msdn.microsoft.com/library/aa769968.aspx) WebBrowser denetimi için.  
   
-##  <a name="hyperlink"></a>CHtmlEditCtrlBase::HyperLink  
+##  <a name="hyperlink"></a>  CHtmlEditCtrlBase::HyperLink  
  Geçerli seçim köprüye ekler.  
   
 ```  
@@ -1031,7 +1026,7 @@ HRESULT HyperLink(LPCTSTR szUrl = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_HYPERLINK komut kimliği](https://msdn.microsoft.com/library/aa769874.aspx) WebBrowser denetimi için.  
   
-##  <a name="ie50paste"></a>CHtmlEditCtrlBase::IE50Paste  
+##  <a name="ie50paste"></a>  CHtmlEditCtrlBase::IE50Paste  
  Internet Explorer 5 ile uyumlu bir yapıştırma işlemi gerçekleştirir.  
   
 ```  
@@ -1048,7 +1043,7 @@ HRESULT IE50Paste(LPCTSTR szData) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_IE50_PASTE komut kimliği](https://msdn.microsoft.com/library/aa769922.aspx) WebBrowser denetimi için.  
   
-##  <a name="iframe"></a>CHtmlEditCtrlBase::Iframe  
+##  <a name="iframe"></a>  CHtmlEditCtrlBase::Iframe  
  Geçerli seçim bir satır içi çerçevesi üzerine yazar.  
   
 ```  
@@ -1065,7 +1060,7 @@ HRESULT Iframe(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_IFRAME komut kimliği](https://msdn.microsoft.com/library/aa769969.aspx) WebBrowser denetimi için.  
   
-##  <a name="image"></a>CHtmlEditCtrlBase::Image  
+##  <a name="image"></a>  CHtmlEditCtrlBase::Image  
  Geçerli seçim görüntüde üzerine yazar.  
   
 ```  
@@ -1082,7 +1077,7 @@ HRESULT Image(LPCTSTR szUrl = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_IMAGE komut kimliği](https://msdn.microsoft.com/library/aa769970.aspx) WebBrowser denetimi için.  
   
-##  <a name="indent"></a>CHtmlEditCtrlBase::Indent  
+##  <a name="indent"></a>  CHtmlEditCtrlBase::Indent  
  Seçili metni girinti bir girinti artışla artırır.  
   
 ```  
@@ -1095,7 +1090,7 @@ HRESULT Indent() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_INDENT komut kimliği](https://msdn.microsoft.com/library/aa769963.aspx) WebBrowser denetimi için.  
   
-##  <a name="insfieldset"></a>CHtmlEditCtrlBase::InsFieldSet  
+##  <a name="insfieldset"></a>  CHtmlEditCtrlBase::InsFieldSet  
  Geçerli seçim kutusundaki üzerine yazar.  
   
 ```  
@@ -1112,7 +1107,7 @@ HRESULT InsFieldSet(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_INSFIELDSET komut kimliği](https://msdn.microsoft.com/library/aa769967.aspx) WebBrowser denetimi için.  
   
-##  <a name="insinputbutton"></a>CHtmlEditCtrlBase::InsInputButton  
+##  <a name="insinputbutton"></a>  CHtmlEditCtrlBase::InsInputButton  
  Düğme denetimi geçerli seçimini üzerine yazar.  
   
 ```  
@@ -1129,7 +1124,7 @@ HRESULT InsInputButton(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_INSINPUTBUTTON komut kimliği](https://msdn.microsoft.com/library/aa769971.aspx) WebBrowser denetimi için.  
   
-##  <a name="insinputhidden"></a>CHtmlEditCtrlBase::InsInputHidden  
+##  <a name="insinputhidden"></a>  CHtmlEditCtrlBase::InsInputHidden  
  Geçerli seçim üzerinde gizli bir denetim ekler.  
   
 ```  
@@ -1146,7 +1141,7 @@ HRESULT InsInputHidden(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_INSINPUTHIDDEN komut kimliği](https://msdn.microsoft.com/library/aa769974.aspx) WebBrowser denetimi için.  
   
-##  <a name="insinputimage"></a>CHtmlEditCtrlBase::InsInputImage  
+##  <a name="insinputimage"></a>  CHtmlEditCtrlBase::InsInputImage  
  Geçerli seçim bir resim denetimi üzerine yazar.  
   
 ```  
@@ -1163,7 +1158,7 @@ HRESULT InsInputImage(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_INSINPUTIMAGE komut kimliği](https://msdn.microsoft.com/library/aa769975.aspx) WebBrowser denetimi için.  
   
-##  <a name="insinputpassword"></a>CHtmlEditCtrlBase::InsInputPassword  
+##  <a name="insinputpassword"></a>  CHtmlEditCtrlBase::InsInputPassword  
  Geçerli seçim parola denetiminde üzerine yazar.  
   
 ```  
@@ -1180,7 +1175,7 @@ HRESULT InsInputPassword(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_INSINPUTPASSWORD komut kimliği](https://msdn.microsoft.com/library/aa769976.aspx) WebBrowser denetimi için.  
   
-##  <a name="insinputreset"></a>CHtmlEditCtrlBase::InsInputReset  
+##  <a name="insinputreset"></a>  CHtmlEditCtrlBase::InsInputReset  
  Geçerli seçim sıfırlama denetiminde üzerine yazar.  
   
 ```  
@@ -1197,7 +1192,7 @@ HRESULT InsInputReset(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_INSINPUTRESET komut kimliği](https://msdn.microsoft.com/library/aa769978.aspx) WebBrowser denetimi için.  
   
-##  <a name="insinputsubmit"></a>CHtmlEditCtrlBase::InsInputSubmit  
+##  <a name="insinputsubmit"></a>  CHtmlEditCtrlBase::InsInputSubmit  
  Geçerli seçim gönderme denetiminde üzerine yazar.  
   
 ```  
@@ -1214,7 +1209,7 @@ HRESULT InsInputSubmit(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_INSINPUTSUBMIT komut kimliği](https://msdn.microsoft.com/library/aa769979.aspx) WebBrowser denetimi için.  
   
-##  <a name="insinputupload"></a>CHtmlEditCtrlBase::InsInputUpload  
+##  <a name="insinputupload"></a>  CHtmlEditCtrlBase::InsInputUpload  
  Geçerli seçim üzerinde karşıya dosya yükleme denetimi üzerine yazar.  
   
 ```  
@@ -1231,7 +1226,7 @@ HRESULT InsInputUpload(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_INSINPUTUPLOAD komut kimliği](https://msdn.microsoft.com/library/aa769973.aspx) WebBrowser denetimi için.  
   
-##  <a name="is1delement"></a>CHtmlEditCtrlBase::Is1DElement  
+##  <a name="is1delement"></a>  CHtmlEditCtrlBase::Is1DElement  
  Bir öğenin statik olarak konumlandırılmış belirler.  
   
 ```  
@@ -1248,7 +1243,7 @@ HRESULT Is1DElement(bool& bValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_1D_ELEMENT komut kimliği](https://msdn.microsoft.com/library/aa769885.aspx) WebBrowser denetimi için.  
   
-##  <a name="is2delement"></a>CHtmlEditCtrlBase::Is2DElement  
+##  <a name="is2delement"></a>  CHtmlEditCtrlBase::Is2DElement  
  Bir öğenin mutlak olarak konumlandırılmış belirler.  
   
 ```  
@@ -1265,7 +1260,7 @@ HRESULT Is2DElement(bool& bValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_2D_ELEMENT komut kimliği](https://msdn.microsoft.com/library/aa769886.aspx) WebBrowser denetimi için.  
   
-##  <a name="italic"></a>CHtmlEditCtrlBase::Italic  
+##  <a name="italic"></a>  CHtmlEditCtrlBase::Italic  
  Geçerli seçim italik ve nonitalic arasında geçiş yapar.  
   
 ```  
@@ -1278,7 +1273,7 @@ HRESULT Italic() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_ITALIC komut kimliği](https://msdn.microsoft.com/library/aa769988.aspx) WebBrowser denetimi için.  
   
-##  <a name="justifycenter"></a>CHtmlEditCtrlBase::JustifyCenter  
+##  <a name="justifycenter"></a>  CHtmlEditCtrlBase::JustifyCenter  
  Biçim blok merkezleri içinde geçerli seçim bulunduğu.  
   
 ```  
@@ -1291,7 +1286,7 @@ HRESULT JustifyCenter() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_JUSTIFYCENTER komut kimliği](https://msdn.microsoft.com/library/aa769989.aspx) WebBrowser denetimi için.  
   
-##  <a name="justifyleft"></a>CHtmlEditCtrlBase::JustifyLeft  
+##  <a name="justifyleft"></a>  CHtmlEditCtrlBase::JustifyLeft  
  Sol hizalar biçimi bloğu içinde geçerli seçim bulunduğu.  
   
 ```  
@@ -1304,7 +1299,7 @@ HRESULT JustifyLeft() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_JUSTIFYLEFT komut kimliği](https://msdn.microsoft.com/library/aa770011.aspx) WebBrowser denetimi için.  
   
-##  <a name="justifyright"></a>CHtmlEditCtrlBase::JustifyRight  
+##  <a name="justifyright"></a>  CHtmlEditCtrlBase::JustifyRight  
  Sağa hizalar biçimi bloğu içinde geçerli seçim bulunduğu.  
   
 ```  
@@ -1317,7 +1312,7 @@ HRESULT JustifyRight() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_JUSTIFYRIGHT komut kimliği](https://msdn.microsoft.com/library/aa770013.aspx) WebBrowser denetimi için.  
   
-##  <a name="listbox"></a>CHtmlEditCtrlBase::ListBox  
+##  <a name="listbox"></a>  CHtmlEditCtrlBase::ListBox  
  Liste kutusu seçimi denetimi geçerli seçimini üzerine yazar.  
   
 ```  
@@ -1334,7 +1329,7 @@ HRESULT ListBox(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_LISTBOX komut kimliği](https://msdn.microsoft.com/library/aa769985.aspx) WebBrowser denetimi için.  
   
-##  <a name="marquee"></a>CHtmlEditCtrlBase::Marquee  
+##  <a name="marquee"></a>  CHtmlEditCtrlBase::Marquee  
  Geçerli seçim üzerinde boş bir seçim çerçevesi üzerine yazar.  
   
 ```  
@@ -1351,7 +1346,7 @@ HRESULT Marquee(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_MARQUEE komut kimliği](https://msdn.microsoft.com/library/aa769981.aspx) WebBrowser denetimi için.  
   
-##  <a name="newdocument"></a>CHtmlEditCtrlBase::NewDocument  
+##  <a name="newdocument"></a>  CHtmlEditCtrlBase::NewDocument  
  Yeni bir belge oluşturur.  
   
 ```  
@@ -1361,7 +1356,7 @@ HRESULT NewDocument() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
-##  <a name="orderlist"></a>CHtmlEditCtrlBase::OrderList  
+##  <a name="orderlist"></a>  CHtmlEditCtrlBase::OrderList  
  Geçerli seçim sıralı bir listesi ve normal biçim blok arasında geçiş yapar.  
   
 ```  
@@ -1378,7 +1373,7 @@ HRESULT OrderList(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_ORDERLIST komut kimliği](https://msdn.microsoft.com/library/aa769982.aspx) WebBrowser denetimi için.  
   
-##  <a name="outdent"></a>CHtmlEditCtrlBase::Outdent  
+##  <a name="outdent"></a>  CHtmlEditCtrlBase::Outdent  
  Biçim blok girinti bir artış oranında azaltır, geçerli seçim bulunduğunu.  
   
 ```  
@@ -1391,7 +1386,7 @@ HRESULT Outdent() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_OUTDENT komut kimliği](https://msdn.microsoft.com/library/aa770015.aspx) WebBrowser denetimi için.  
   
-##  <a name="paragraph"></a>CHtmlEditCtrlBase::Paragraph  
+##  <a name="paragraph"></a>  CHtmlEditCtrlBase::Paragraph  
  Satır sonu geçerli seçimini üzerine yazar.  
   
 ```  
@@ -1408,7 +1403,7 @@ HRESULT Paragraph(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_PARAGRAPH komut kimliği](https://msdn.microsoft.com/library/aa769983.aspx) WebBrowser denetimi için.  
   
-##  <a name="paste"></a>CHtmlEditCtrlBase::Paste  
+##  <a name="paste"></a>  CHtmlEditCtrlBase::Paste  
  Geçerli seçim üzerinde Panonun içeriğini üzerine yazar.  
   
 ```  
@@ -1421,7 +1416,7 @@ HRESULT Paste() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_PASTE komut kimliği](https://msdn.microsoft.com/library/aa770017.aspx) WebBrowser denetimi için.  
   
-##  <a name="printdocument"></a>CHtmlEditCtrlBase::PrintDocument  
+##  <a name="printdocument"></a>  CHtmlEditCtrlBase::PrintDocument  
  Geçerli belgeyi yazdırır.  
   
 ```  
@@ -1443,7 +1438,7 @@ HRESULT PrintDocument(bool bShowPrintDialog) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_PRINT komut kimliği](https://msdn.microsoft.com/library/aa769937.aspx) WebBrowser denetimi için.  
   
-##  <a name="printpreview"></a>CHtmlEditCtrlBase::PrintPreview  
+##  <a name="printpreview"></a>  CHtmlEditCtrlBase::PrintPreview  
  Varsayılan Baskı Önizleme şablonu veya özel bir şablon kullanarak geçerli belge için baskı önizleme penceresi açılır.  
   
 ```  
@@ -1461,7 +1456,7 @@ HRESULT PrintPreview(LPCTSTR szPrintTemplate) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_PRINTPREVIEW komut kimliği](https://msdn.microsoft.com/library/aa769938.aspx) WebBrowser denetimi için.  
   
-##  <a name="querystatus"></a>CHtmlEditCtrlBase::QueryStatus  
+##  <a name="querystatus"></a>  CHtmlEditCtrlBase::QueryStatus  
  Komutları durumunu sorgulamak için bu yöntemi çağırın.  
   
 ```  
@@ -1475,7 +1470,7 @@ long QueryStatus(long cmdID) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür bir [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) durumunu gösteren `cmdID`, ya da 0 hata durumunda.  
   
-##  <a name="radiobutton"></a>CHtmlEditCtrlBase::RadioButton  
+##  <a name="radiobutton"></a>  CHtmlEditCtrlBase::RadioButton  
  Geçerli Seçim radyo denetiminde üzerine yazar.  
   
 ```  
@@ -1492,7 +1487,7 @@ HRESULT RadioButton(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_RADIOBUTTON komut kimliği](https://msdn.microsoft.com/library/aa769977.aspx) WebBrowser denetimi için.  
   
-##  <a name="refreshdocument"></a>CHtmlEditCtrlBase::RefreshDocument  
+##  <a name="refreshdocument"></a>  CHtmlEditCtrlBase::RefreshDocument  
  Geçerli belge yeniler.  
   
 ```  
@@ -1505,7 +1500,7 @@ HRESULT RefreshDocument() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_REFRESH komut kimliği](https://msdn.microsoft.com/library/aa770020.aspx) WebBrowser denetimi için.  
   
-##  <a name="removeformat"></a>CHtmlEditCtrlBase::RemoveFormat  
+##  <a name="removeformat"></a>  CHtmlEditCtrlBase::RemoveFormat  
  Biçimlendirme etiketleri Geçerli seçimden kaldırır.  
   
 ```  
@@ -1518,7 +1513,7 @@ HRESULT RemoveFormat() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_REMOVEFORMAT komut kimliği](https://msdn.microsoft.com/library/aa770021.aspx) WebBrowser denetimi için.  
   
-##  <a name="saveas"></a>CHtmlEditCtrlBase::SaveAs  
+##  <a name="saveas"></a>  CHtmlEditCtrlBase::SaveAs  
  Geçerli Web sayfasını bir dosyaya kaydeder.  
   
 ```  
@@ -1535,7 +1530,7 @@ HRESULT SaveAs(LPCTSTR szPath = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_SAVEAS komut kimliği](https://msdn.microsoft.com/library/aa770024.aspx) WebBrowser denetimi için.  
   
-##  <a name="selectall"></a>CHtmlEditCtrlBase::SelectAll  
+##  <a name="selectall"></a>  CHtmlEditCtrlBase::SelectAll  
  Tüm belgeyi seçer.  
   
 ```  
@@ -1548,7 +1543,7 @@ HRESULT SelectAll() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_SELECTALL komut kimliği](https://msdn.microsoft.com/library/aa770025.aspx) WebBrowser denetimi için.  
   
-##  <a name="set2dposition"></a>CHtmlEditCtrlBase::Set2DPosition  
+##  <a name="set2dposition"></a>  CHtmlEditCtrlBase::Set2DPosition  
  Mutlak olarak konumlandırılmış öğeleri sürükleyerek taşınmasına izin verir.  
   
 ```  
@@ -1565,7 +1560,7 @@ HRESULT Set2DPosition(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_2D_POSITION komut kimliği](https://msdn.microsoft.com/library/aa769887.aspx) WebBrowser denetimi için.  
   
-##  <a name="setabsoluteposition"></a>CHtmlEditCtrlBase::SetAbsolutePosition  
+##  <a name="setabsoluteposition"></a>  CHtmlEditCtrlBase::SetAbsolutePosition  
  Bir öğenin konum özelliği "absolute" veya "statik" ayarlar  
   
 ```  
@@ -1582,7 +1577,7 @@ HRESULT SetAbsolutePosition(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_ABSOLUTE_POSITION komut kimliği](https://msdn.microsoft.com/library/aa769889.aspx) WebBrowser denetimi için.  
   
-##  <a name="setatomicselection"></a>CHtmlEditCtrlBase::SetAtomicSelection  
+##  <a name="setatomicselection"></a>  CHtmlEditCtrlBase::SetAtomicSelection  
  Atomik seçim modunu ayarlayın.  
   
 ```  
@@ -1599,7 +1594,7 @@ HRESULT SetAtomicSelection(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_ATOMICSELECTION komut kimliği](https://msdn.microsoft.com/library/aa769892.aspx) WebBrowser denetimi için.  
   
-##  <a name="setautourldetectmode"></a>CHtmlEditCtrlBase::SetAutoURLDetectMode  
+##  <a name="setautourldetectmode"></a>  CHtmlEditCtrlBase::SetAutoURLDetectMode  
  Otomatik URL algılama açar ve kapatır.  
   
 ```  
@@ -1616,7 +1611,7 @@ HRESULT SetAutoURLDetectMode(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_AUTOURLDETECT_MODE komut kimliği](https://msdn.microsoft.com/library/aa769893.aspx) WebBrowser denetimi için.  
   
-##  <a name="setbackcolor"></a>CHtmlEditCtrlBase::SetBackColor  
+##  <a name="setbackcolor"></a>  CHtmlEditCtrlBase::SetBackColor  
  Geçerli seçimin arka plan rengini belirler.  
   
 ```  
@@ -1637,7 +1632,7 @@ HRESULT SetBackColor(LPCTSTR szColor) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_BACKCOLOR_ komut kimliği](https://msdn.microsoft.com/library/aa769858.aspx) WebBrowser denetimi için.  
   
-##  <a name="setblockformat"></a>CHtmlEditCtrlBase::SetBlockFormat  
+##  <a name="setblockformat"></a>  CHtmlEditCtrlBase::SetBlockFormat  
  Geçerli blok biçimi etiketini ayarlar.  
   
 ```  
@@ -1654,7 +1649,7 @@ HRESULT SetBlockFormat(LPCTSTR szFormat) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_BLOCKFMT_command kimliği](https://msdn.microsoft.com/library/aa769883.aspx) WebBrowser denetimi için.  
   
-##  <a name="setbookmark"></a>CHtmlEditCtrlBase::SetBookMark  
+##  <a name="setbookmark"></a>  CHtmlEditCtrlBase::SetBookMark  
  Geçerli seçim ya da ekleme noktası için bir yer işareti bağlantı oluşturur.  
   
 ```  
@@ -1671,7 +1666,7 @@ HRESULT SetBookMark(LPCTSTR szAnchorName) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_BOOKMARK komut kimliği](https://msdn.microsoft.com/library/aa769873.aspx) WebBrowser denetimi için.  
   
-##  <a name="setcsseditinglevel"></a>CHtmlEditCtrlBase::SetCSSEditingLevel  
+##  <a name="setcsseditinglevel"></a>  CHtmlEditCtrlBase::SetCSSEditingLevel  
  Hangi CSS düzey (CSS1 veya CSS2) Düzenleyicisi, varsa destekleyecek seçer.  
   
 ```  
@@ -1688,7 +1683,7 @@ HRESULT SetCSSEditingLevel(short nLevel) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_CSSEDITING_LEVEL komut kimliği](https://msdn.microsoft.com/library/aa769903.aspx) WebBrowser denetimi için.  
   
-##  <a name="setdefaultcomposesettings"></a>CHtmlEditCtrlBase::SetDefaultComposeSettings  
+##  <a name="setdefaultcomposesettings"></a>  CHtmlEditCtrlBase::SetDefaultComposeSettings  
  Varsayılan değer ayarlamak için bu yöntem oluşturma ayarlarını çağrısı.  
   
 ```  
@@ -1730,7 +1725,7 @@ HRESULT SetDefaultComposeSettings(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_COMPOSESETTINGS komut kimliği](https://msdn.microsoft.com/library/aa769901.aspx) WebBrowser denetimi için.  
   
-##  <a name="setdesignmode"></a>CHtmlEditCtrlBase::SetDesignMode  
+##  <a name="setdesignmode"></a>  CHtmlEditCtrlBase::SetDesignMode  
  Tasarım modunda ayarlayın.  
   
 ```  
@@ -1744,7 +1739,7 @@ BOOL SetDesignMode(BOOL bMode) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa TRUE döndürür başarısız olduğunda FALSE.  
   
-##  <a name="setdisableeditfocusui"></a>CHtmlEditCtrlBase::SetDisableEditFocusUI  
+##  <a name="setdisableeditfocusui"></a>  CHtmlEditCtrlBase::SetDisableEditFocusUI  
  Taranmış kenarlık devre dışı bırakır ve düzenleme odağı olan bir öğeyi işler.  
   
 ```  
@@ -1761,7 +1756,7 @@ HRESULT SetDisableEditFocusUI(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM_DISABLE_EDITFOCUS_UI komut kimliği](https://msdn.microsoft.com/library/aa769905.aspx) WebBrowser denetimi için.  
   
-##  <a name="setdocumenthtml"></a>CHtmlEditCtrlBase::SetDocumentHTML  
+##  <a name="setdocumenthtml"></a>  CHtmlEditCtrlBase::SetDocumentHTML  
  Geçerli belgenin HTML ayarlar.  
   
 ```  
@@ -1775,7 +1770,7 @@ HRESULT SetDocumentHTML(LPCTSTR szHTML) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
-##  <a name="setfontface"></a>CHtmlEditCtrlBase::SetFontFace  
+##  <a name="setfontface"></a>  CHtmlEditCtrlBase::SetFontFace  
  Geçerli seçim için yazı tipini belirler.  
   
 ```  
@@ -1792,7 +1787,7 @@ HRESULT SetFontFace(LPCTSTR szFace) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM FONTNAME komut kimliği](https://msdn.microsoft.com/library/aa769880.aspx) WebBrowser denetimi için.  
   
-##  <a name="setfontsize"></a>CHtmlEditCtrlBase::SetFontSize  
+##  <a name="setfontsize"></a>  CHtmlEditCtrlBase::SetFontSize  
  Geçerli seçim için yazı tipi boyutunu ayarlar.  
   
 ```  
@@ -1809,7 +1804,7 @@ HRESULT SetFontSize(unsigned short size) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM FONTSIZE komut kimliği](https://msdn.microsoft.com/library/aa769881.aspx) WebBrowser denetimi için.  
   
-##  <a name="setforecolor"></a>CHtmlEditCtrlBase::SetForeColor  
+##  <a name="setforecolor"></a>  CHtmlEditCtrlBase::SetForeColor  
  Geçerli seçimin (metin) ön plan rengini belirler.  
   
 ```  
@@ -1830,7 +1825,7 @@ HRESULT SetForeColor(int nColor) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM FORECOLOR komut kimliği](https://msdn.microsoft.com/library/aa769882.aspx) WebBrowser denetimi için.  
   
-##  <a name="setie5pastemode"></a>CHtmlEditCtrlBase::SetIE5PasteMode  
+##  <a name="setie5pastemode"></a>  CHtmlEditCtrlBase::SetIE5PasteMode  
  Yapıştırma işlemi Microsoft Internet Explorer 5 ile uyumlu olacak şekilde ayarlar.  
   
 ```  
@@ -1847,7 +1842,7 @@ HRESULT SetIE5PasteMode(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM IE50_PASTE_MODE komut kimliği](https://msdn.microsoft.com/library/aa769923.aspx) WebBrowser denetimi için.  
   
-##  <a name="setliveresize"></a>CHtmlEditCtrlBase::SetLiveResize  
+##  <a name="setliveresize"></a>  CHtmlEditCtrlBase::SetLiveResize  
  Yalnızca Taşıma tamamlandığında güncelleştirme yerine bir yeniden boyutlandırma veya taşıma işlemi sırasında sürekli olarak bir öğenin görünümünü güncelleştirin veya yeniden boyutlandırmak WebBrowser neden olur.  
   
 ```  
@@ -1864,7 +1859,7 @@ HRESULT SetLiveResize(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM LIVERESIZE komut kimliği](https://msdn.microsoft.com/library/aa769928.aspx) WebBrowser denetimi için.  
   
-##  <a name="setmultiselect"></a>CHtmlEditCtrlBase::SetMultiSelect  
+##  <a name="setmultiselect"></a>  CHtmlEditCtrlBase::SetMultiSelect  
  Çoklu seçim sağlar.  
   
 ```  
@@ -1881,7 +1876,7 @@ HRESULT SetMultiSelect(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM MULTIPLESELECTION komut kimliği](https://msdn.microsoft.com/library/aa769929.aspx) WebBrowser denetimi için.  
   
-##  <a name="setoverridecursor"></a>CHtmlEditCtrlBase::SetOverrideCursor  
+##  <a name="setoverridecursor"></a>  CHtmlEditCtrlBase::SetOverrideCursor  
  Hiçbir zaman fare işaretçisini değiştirmek için WebBrowser komutları.  
   
 ```  
@@ -1898,7 +1893,7 @@ HRESULT SetOverrideCursor(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM OVERRIDE_CURSOR komut kimliği](https://msdn.microsoft.com/library/aa769932.aspx) WebBrowser denetimi için.  
   
-##  <a name="setoverwritemode"></a>CHtmlEditCtrlBase::SetOverwriteMode  
+##  <a name="setoverwritemode"></a>  CHtmlEditCtrlBase::SetOverwriteMode  
  Değiştirme düğmelerini metin girişi modu arasında Ekle ve üzerine yazma.  
   
 ```  
@@ -1915,7 +1910,7 @@ HRESULT SetOverwriteMode(bool bMode) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM üzerine komut kimliği](https://msdn.microsoft.com/library/aa770016.aspx) WebBrowser denetimi için.  
   
-##  <a name="setrespectvisindesign"></a>CHtmlEditCtrlBase::SetRespectVisInDesign  
+##  <a name="setrespectvisindesign"></a>  CHtmlEditCtrlBase::SetRespectVisInDesign  
  Tasarım modunda görünmeyen öğeleri gizler.  
   
 ```  
@@ -1932,7 +1927,7 @@ HRESULT SetRespectVisInDesign(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM RESPECTVISIBILITY_INDESIGN komut kimliği](https://msdn.microsoft.com/library/aa770023.aspx) WebBrowser denetimi için.  
   
-##  <a name="setshowalignedsitetags"></a>CHtmlEditCtrlBase::SetShowAlignedSiteTags  
+##  <a name="setshowalignedsitetags"></a>  CHtmlEditCtrlBase::SetShowAlignedSiteTags  
  Sahip tüm öğeleri karaktere görüntüler bir **styleFloat** özelliği.  
   
 ```  
@@ -1949,7 +1944,7 @@ HRESULT SetShowAlignedSiteTags(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM SHOWALIGNEDSITETAGS komut kimliği](https://msdn.microsoft.com/library/aa769947.aspx) WebBrowser denetimi için.  
   
-##  <a name="setshowalltags"></a>CHtmlEditCtrlBase::SetShowAllTags  
+##  <a name="setshowalltags"></a>  CHtmlEditCtrlBase::SetShowAllTags  
  Bir belgedeki tüm etiketleri konumunu göstermek için karakterleri görüntüler.  
   
 ```  
@@ -1966,7 +1961,7 @@ HRESULT SetShowAllTags(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM SHOWALLTAGS komut kimliği](https://msdn.microsoft.com/library/aa769948.aspx) WebBrowser denetimi için.  
   
-##  <a name="setshowareatags"></a>CHtmlEditCtrlBase::SetShowAreaTags  
+##  <a name="setshowareatags"></a>  CHtmlEditCtrlBase::SetShowAreaTags  
  Tüm alan etiketleri karaktere görüntüler.  
   
 ```  
@@ -1983,7 +1978,7 @@ HRESULT SetShowAreaTags(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM SHOWAREATAGS komut kimliği](https://msdn.microsoft.com/library/aa769949.aspx) WebBrowser denetimi için.  
   
-##  <a name="setshowbrtags"></a>CHtmlEditCtrlBase::SetShowBRTags  
+##  <a name="setshowbrtags"></a>  CHtmlEditCtrlBase::SetShowBRTags  
  Tüm br etiketleri karaktere görüntüler.  
   
 ```  
@@ -2000,7 +1995,7 @@ HRESULT SetShowBRTags(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM SHOWWBRTAGS komut kimliği](https://msdn.microsoft.com/library/aa769956.aspx) WebBrowser denetimi için.  
   
-##  <a name="setshowcommenttags"></a>CHtmlEditCtrlBase::SetShowCommentTags  
+##  <a name="setshowcommenttags"></a>  CHtmlEditCtrlBase::SetShowCommentTags  
  Tüm açıklama etiketleri karaktere görüntüler.  
   
 ```  
@@ -2017,7 +2012,7 @@ HRESULT SetShowCommentTags(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM SHOWCOMMENTTAGS komut kimliği](https://msdn.microsoft.com/library/aa769950.aspx) WebBrowser denetimi için.  
   
-##  <a name="setshowmisctags"></a>CHtmlEditCtrlBase::SetShowMiscTags  
+##  <a name="setshowmisctags"></a>  CHtmlEditCtrlBase::SetShowMiscTags  
  Microsoft Internet Explorer 4. 0 ' gösterilen tüm etiketleri görüntüler.  
   
 ```  
@@ -2034,7 +2029,7 @@ HRESULT SetShowMiscTags(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM SHOWMISCTAGS komut kimliği](https://msdn.microsoft.com/library/aa769952.aspx) WebBrowser denetimi için.  
   
-##  <a name="setshowscripttags"></a>CHtmlEditCtrlBase::SetShowScriptTags  
+##  <a name="setshowscripttags"></a>  CHtmlEditCtrlBase::SetShowScriptTags  
  Tüm komut dosyası etiketleri karaktere görüntüler.  
   
 ```  
@@ -2051,7 +2046,7 @@ HRESULT SetShowScriptTags(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM SHOWSCRIPTTAGS komut kimliği](https://msdn.microsoft.com/library/aa769953.aspx) WebBrowser denetimi için.  
   
-##  <a name="setshowstyletags"></a>CHtmlEditCtrlBase::SetShowStyleTags  
+##  <a name="setshowstyletags"></a>  CHtmlEditCtrlBase::SetShowStyleTags  
  Tüm stil etiketleri karaktere görüntüler.  
   
 ```  
@@ -2068,7 +2063,7 @@ HRESULT SetShowStyleTags(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM SHOWSTYLETAGS komut kimliği](https://msdn.microsoft.com/library/aa769954.aspx) WebBrowser denetimi için.  
   
-##  <a name="setshowunknowntags"></a>CHtmlEditCtrlBase::SetShowUnknownTags  
+##  <a name="setshowunknowntags"></a>  CHtmlEditCtrlBase::SetShowUnknownTags  
  Tüm bilinmeyen etiketleri karaktere görüntüler.  
   
 ```  
@@ -2085,7 +2080,7 @@ HRESULT SetShowUnknownTags(bool bNewValue) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM SHOWUNKNOWNTAGS komut kimliği](https://msdn.microsoft.com/library/aa769955.aspx) WebBrowser denetimi için.  
   
-##  <a name="textarea"></a>CHtmlEditCtrlBase::TextArea  
+##  <a name="textarea"></a>  CHtmlEditCtrlBase::TextArea  
  Geçerli seçim üzerinde çok satırlı metin girişi denetiminin üzerine yazar.  
   
 ```  
@@ -2102,7 +2097,7 @@ HRESULT TextArea(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM TEXTAREA komut kimliği](https://msdn.microsoft.com/library/aa769986.aspx) WebBrowser denetimi için.  
   
-##  <a name="textbox"></a>CHtmlEditCtrlBase::TextBox  
+##  <a name="textbox"></a>  CHtmlEditCtrlBase::TextBox  
  Geçerli seçim metin denetiminde üzerine yazar.  
   
 ```  
@@ -2119,7 +2114,7 @@ HRESULT TextBox(LPCTSTR szId = NULL) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM TEXTBOX komut kimliği](https://msdn.microsoft.com/library/aa769980.aspx) WebBrowser denetimi için.  
   
-##  <a name="unbookmark"></a>CHtmlEditCtrlBase::UnBookmark  
+##  <a name="unbookmark"></a>  CHtmlEditCtrlBase::UnBookmark  
  Herhangi bir yer işareti Geçerli seçimden kaldırır.  
   
 ```  
@@ -2132,7 +2127,7 @@ HRESULT UnBookmark() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM UNBOOKMARK komut kimliği](https://msdn.microsoft.com/library/aa770034.aspx) WebBrowser denetimi için.  
   
-##  <a name="underline"></a>CHtmlEditCtrlBase::Underline  
+##  <a name="underline"></a>  CHtmlEditCtrlBase::Underline  
  Geçerli seçim arasında altı çizili ve altı çizili değiştirir.  
   
 ```  
@@ -2145,7 +2140,7 @@ HRESULT Underline() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM altı ÇİZİLİ komut kimliği](https://msdn.microsoft.com/library/aa770035.aspx) WebBrowser denetimi için.  
   
-##  <a name="unlink"></a>CHtmlEditCtrlBase::Unlink  
+##  <a name="unlink"></a>  CHtmlEditCtrlBase::Unlink  
  Herhangi bir köprüye Geçerli seçimden kaldırır.  
   
 ```  
@@ -2158,7 +2153,7 @@ HRESULT Unlink() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [IDM Kes komut kimliği](https://msdn.microsoft.com/library/aa770037.aspx) WebBrowser denetimi için.  
   
-##  <a name="unorderlist"></a>CHtmlEditCtrlBase::UnorderList  
+##  <a name="unorderlist"></a>  CHtmlEditCtrlBase::UnorderList  
  Geçerli seçim sıralı bir listesi ve normal biçim blok arasında geçiş yapar.  
   
 ```  

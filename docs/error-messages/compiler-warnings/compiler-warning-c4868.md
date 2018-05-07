@@ -1,5 +1,5 @@
 ---
-title: "Derleyici Uyarısı C4868 | Microsoft Docs"
+title: Derleyici Uyarısı C4868 | Microsoft Docs
 ms.date: 10/26/2017
 ms.topic: error-reference
 f1_keywords:
@@ -7,14 +7,13 @@ f1_keywords:
 ms.assetid: fc6aa7e5-34dd-4ec2-88bd-16e430361dc7
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 261e826043a4f922902de91573a16707897ae6b9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 922a1a8434da8449758b9d55ebe89ace2f262cd5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-4-c4868"></a>Derleyici Uyarısı (düzey 4) C4868
 

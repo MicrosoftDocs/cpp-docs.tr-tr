@@ -2,11 +2,8 @@
 title: CHttpFile sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CHttpFile
@@ -35,17 +32,15 @@ helpviewer_keywords:
 - CHttpFile [MFC], SendRequest
 - CHttpFile [MFC], SendRequestEx
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
-caps.latest.revision: 23
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e9af23bb74ba8e96f29a5b7cc4139d2932df8c1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7a7fbdb3baff7531aa4e391e5d7e936c39e38fc0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="chttpfile-class"></a>CHttpFile sınıfı
 İstek ve bir HTTP sunucusunda dosyaları okumak için işlevsellik sağlar.  
@@ -97,7 +92,7 @@ class CHttpFile : public CInternetFile
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxinet.h  
   
-##  <a name="addrequestheaders"></a>CHttpFile::AddRequestHeaders  
+##  <a name="addrequestheaders"></a>  CHttpFile::AddRequestHeaders  
  Bir eklemek için bu üye işlevini çağırın veya daha fazla HTTP istek üstbilgilerinin HTTP isteğini işleyecek.  
   
 ```  
@@ -119,13 +114,13 @@ BOOL AddRequestHeaders(
  `dwFlags`  
  Yeni üst bilgileri semantiğini değiştirir. Aşağıdakilerden biri olabilir:  
   
-- `HTTP_ADDREQ_FLAG_COALESCE`Sonraki üstbilgiye bulunan ilk üstbilgisi eklemek için bayrağını kullanarak aynı ada sahip üstbilgileri birleştirir. Örneğin, "kabul et: metin / *" ve ardından "kabul et: ses /\*" sonuçları tek üstbilgi oluşturulması "kabul et: metin /\*, ses /\*". Bağlı bir düzeni birleştirmesine veya ayrı başlığı ile gönderilen istekleri tarafından alınan veri göre emin olmak için çağrı yapan uygulamanın kadar olur.  
+- `HTTP_ADDREQ_FLAG_COALESCE` Sonraki üstbilgiye bulunan ilk üstbilgisi eklemek için bayrağını kullanarak aynı ada sahip üstbilgileri birleştirir. Örneğin, "kabul et: metin / *" ve ardından "kabul et: ses /\*" sonuçları tek üstbilgi oluşturulması "kabul et: metin /\*, ses /\*". Bağlı bir düzeni birleştirmesine veya ayrı başlığı ile gönderilen istekleri tarafından alınan veri göre emin olmak için çağrı yapan uygulamanın kadar olur.  
   
-- `HTTP_ADDREQ_FLAG_REPLACE`Bir kaldırma gerçekleştirir ve geçerli üstbilgi değiştirmek için ekleyin. Üstbilgi adı geçerli üstbilgiyi kaldırmak için kullanılan ve yeni üstbilgi eklemek için tam değer kullanılır. Üstbilgi değeri boş ise ve üst bilgi bulunamadı, kaldırılır. Değilse boş üstbilgi değeri değiştirilir.  
+- `HTTP_ADDREQ_FLAG_REPLACE` Bir kaldırma gerçekleştirir ve geçerli üstbilgi değiştirmek için ekleyin. Üstbilgi adı geçerli üstbilgiyi kaldırmak için kullanılan ve yeni üstbilgi eklemek için tam değer kullanılır. Üstbilgi değeri boş ise ve üst bilgi bulunamadı, kaldırılır. Değilse boş üstbilgi değeri değiştirilir.  
   
-- `HTTP_ADDREQ_FLAG_ADD_IF_NEW`Zaten yoksa, yalnızca bir üst bilgi ekler. Varsa, bir hata döndürülür.  
+- `HTTP_ADDREQ_FLAG_ADD_IF_NEW` Zaten yoksa, yalnızca bir üst bilgi ekler. Varsa, bir hata döndürülür.  
   
-- `HTTP_ADDREQ_FLAG_ADD`METİNLE kullanılır. Yoksa üstbilgisi ekler.  
+- `HTTP_ADDREQ_FLAG_ADD` METİNLE kullanılır. Yoksa üstbilgisi ekler.  
   
  `dwHeadersLen`  
  Karakter cinsinden uzunluğu, `pstrHeaders`. Bu-1 M ise, `pstrHeaders` sıfır sonlandırılan olduğu varsayılır ve uzunluğu hesaplanır.  
@@ -137,12 +132,12 @@ BOOL AddRequestHeaders(
  Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, Win32 işlevi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AddRequestHeaders`HTTP istek işleyicisi için ek, serbest biçimli üstbilgileri ekler. HTTP sunucuya gönderilen tam istek üzerinde ayrıntılı denetim isteyen Gelişmiş istemcileri tarafından kullanılmak üzere tasarlanmıştır.  
+ `AddRequestHeaders` HTTP istek işleyicisi için ek, serbest biçimli üstbilgileri ekler. HTTP sunucuya gönderilen tam istek üzerinde ayrıntılı denetim isteyen Gelişmiş istemcileri tarafından kullanılmak üzere tasarlanmıştır.  
   
 > [!NOTE]
 >  Uygulamanın birden çok üst bilgilerinde geçirebilirsiniz `pstrHeaders` veya `str` için bir `AddRequestHeaders` çağrıda `HTTP_ADDREQ_FLAG_ADD` veya `HTTP_ADDREQ_FLAG_ADD_IF_NEW`. Uygulama kullanarak bir başlık değiştirin veya kaldırmak çalışırsa **HTTP_ADDREQ_FLAG_REMOVE** veya `HTTP_ADDREQ_FLAG_REPLACE`, yalnızca bir üstbilgi sağlanan içinde `lpszHeaders`.  
   
-##  <a name="chttpfile"></a>CHttpFile::CHttpFile  
+##  <a name="chttpfile"></a>  CHttpFile::CHttpFile  
  Bu üye işlevi oluşturmak için çağrılan bir `CHttpFile` nesnesi.  
   
 ```  
@@ -189,7 +184,7 @@ CHttpFile(
   
  İçin varsayılan değer `dwContext` MFC'ye tarafından gönderilen `CHttpFile` nesnesinin [CInternetSession](../../mfc/reference/cinternetsession-class.md) oluşturulan nesne `CHttpFile` nesne. Çağırdığınızda `CInternetSession::OpenURL` veya `CHttpConnection` oluşturmak için bir `CHttpFile` nesne bağlamı tanımlayıcı bir değerine ayarlamak için varsayılan geçersiz kılabilirsiniz. Bağlam tanıtıcısı döndürülen [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen bir nesne üzerinde durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
   
-##  <a name="endrequest"></a>CHttpFile::EndRequest  
+##  <a name="endrequest"></a>  CHttpFile::EndRequest  
  Bir HTTP sunucusuna gönderilen bir istek sonlandırmak için bu üye işlevini çağırın [SendRequestEx](#sendrequestex) üye işlevi.  
   
 ```  
@@ -215,7 +210,7 @@ BOOL EndRequest(
 ### <a name="remarks"></a>Açıklamalar  
  İçin varsayılan değer `dwContext` MFC'ye tarafından gönderilen `CHttpFile` nesnesinin [CInternetSession](../../mfc/reference/cinternetsession-class.md) oluşturulan nesne `CHttpFile` nesne. Çağırdığınızda [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) veya [CHttpConnection](../../mfc/reference/chttpconnection-class.md) oluşturmak için bir `CHttpFile` nesne bağlamı tanımlayıcı bir değerine ayarlamak için varsayılan geçersiz kılabilirsiniz. Bağlam tanıtıcısı döndürülen [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen bir nesne üzerinde durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
   
-##  <a name="getfileurl"></a>CHttpFile::GetFileURL  
+##  <a name="getfileurl"></a>  CHttpFile::GetFileURL  
  URL olarak HTTP dosyasının adı almak için bu üye işlevini çağırın.  
   
 ```  
@@ -228,7 +223,7 @@ virtual CString GetFileURL() const;
 ### <a name="remarks"></a>Açıklamalar  
  Yalnızca başarılı çağrısı yapıldıktan sonra bu üye işlevi kullanmak [SendRequest](#sendrequest) veya bir `CHttpFile` başarıyla tarafından oluşturulan nesne [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
-##  <a name="getobject"></a>CHttpFile::GetObject  
+##  <a name="getobject"></a>  CHttpFile::GetObject  
  Bu ile ilişkili nesne adını almak için bu üye işlevini çağırın `CHttpFile`.  
   
 ```  
@@ -241,7 +236,7 @@ CString GetObject() const;
 ### <a name="remarks"></a>Açıklamalar  
  Yalnızca başarılı çağrısı yapıldıktan sonra bu üye işlevi kullanmak [SendRequest](#sendrequest) veya bir `CHttpFile` başarıyla tarafından oluşturulan nesne [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
-##  <a name="getverb"></a>CHttpFile::GetVerb  
+##  <a name="getverb"></a>  CHttpFile::GetVerb  
  HTTP fiili (veya yöntem) bu ile ilişkili almak için bu üye işlevini çağırın `CHttpFile`.  
   
 ```  
@@ -254,7 +249,7 @@ CString GetVerb() const;
 ### <a name="remarks"></a>Açıklamalar  
  Yalnızca başarılı çağrısı yapıldıktan sonra bu üye işlevi kullanmak [SendRequest](#sendrequest) veya bir `CHttpFile` başarıyla tarafından oluşturulan nesne [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
-##  <a name="queryinfo"></a>CHttpFile::QueryInfo  
+##  <a name="queryinfo"></a>  CHttpFile::QueryInfo  
  Yanıt döndürür veya HTTP isteğinden üstbilgileri istemek için bu üye işlevini çağırın.  
   
 ```  
@@ -317,9 +312,9 @@ BOOL QueryInfo(
   
 -   dizeler (varsayılan)  
   
-- `SYSTEMTIME`(için "verileri:" "Expires:" vb., üst bilgiler)  
+- `SYSTEMTIME` (için "verileri:" "Expires:" vb., üst bilgiler)  
   
-- `DWORD`(için **STATUS_CODE**, **CONTENT_LENGTH is sıfırdan büyük**, vb..)  
+- `DWORD` (için **STATUS_CODE**, **CONTENT_LENGTH is sıfırdan büyük**, vb..)  
   
  Bir dize arabelleğe yazılır ve üye fonksiyonu başarılı, `lpdwBufferLength` eksi sonlandırma için 1 karakter dize uzunluğunu içeren **NULL** karakter.  
   
@@ -371,7 +366,7 @@ BOOL QueryInfo(
   
 - **HTTP_QUERY_RAW_HEADERS_CRLF**  
   
-##  <a name="queryinfostatuscode"></a>CHttpFile::QueryInfoStatusCode  
+##  <a name="queryinfostatuscode"></a>  CHttpFile::QueryInfoStatusCode  
  Bir HTTP isteğiyle ilgili durum kodu almak için bu üye işlevini çağırın ve sağlanan yerleştirin `dwStatusCode` parametresi.  
   
 ```  
@@ -408,7 +403,7 @@ BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
 |500|Bilinmeyen sunucu hatası|  
 |503|Sunucu kapasitesini ulaşıldı|  
   
-##  <a name="sendrequest"></a>CHttpFile::SendRequest  
+##  <a name="sendrequest"></a>  CHttpFile::SendRequest  
  Bir HTTP sunucusuna bir istek göndermek için bu üye işlevini çağırın.  
   
 ```  
@@ -444,7 +439,7 @@ BOOL SendRequest(
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, atılmış inceleyerek hatanın nedenini belirleyin [CInternetException](../../mfc/reference/cinternetexception-class.md) nesnesi.  
   
-##  <a name="sendrequestex"></a>CHttpFile::SendRequestEx  
+##  <a name="sendrequestex"></a>  CHttpFile::SendRequestEx  
  Bir HTTP sunucusuna bir istek göndermek için bu üye işlevini çağırın.  
   
 ```  

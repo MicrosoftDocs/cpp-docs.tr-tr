@@ -1,12 +1,9 @@
 ---
-title: "CMFCTabToolTipInfo yapısı | Microsoft Docs"
-ms.custom: 
+title: CMFCTabToolTipInfo yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMFCTabToolTipInfo
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - CMFCTabToolTipInfo struct
 ms.assetid: 9c3b3fb9-1497-4d59-932b-0da9348dd5e2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4cfb12ca9660259a4451d2841a921a566cf54505
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fb2d1a139a5bc61d665a28f21ab10979802045b3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmfctabtooltipinfo-structure"></a>CMFCTabToolTipInfo yapısı
 Bu yapı kullanıcı üzerine getirildiğinde MDI sekmesi hakkında bilgi sağlar.  
@@ -60,7 +55,7 @@ struct CMFCTabToolTipInfo
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxbasetabctrl.h  
   
-##  <a name="m_ntabindex"></a>CMFCTabToolTipInfo::m_nTabIndex  
+##  <a name="m_ntabindex"></a>  CMFCTabToolTipInfo::m_nTabIndex  
  Sekme denetimi dizinini belirtir.  
   
 ```  
@@ -75,7 +70,7 @@ int m_nTabIndex;
   
  [!code-cpp[NVC_MFC_MDITabsDemo#2](../../mfc/reference/codesnippet/cpp/cmfctabtooltipinfo-structure_1.cpp)]  
   
-##  <a name="m_ptabwnd"></a>CMFCTabToolTipInfo::m_pTabWnd  
+##  <a name="m_ptabwnd"></a>  CMFCTabToolTipInfo::m_pTabWnd  
  Sekme denetimi için bir işaretçi.  
   
 ```  
@@ -87,7 +82,7 @@ CMFCBaseTabCtrl* m_pTabWnd;
   
  [!code-cpp[NVC_MFC_MDITabsDemo#2](../../mfc/reference/codesnippet/cpp/cmfctabtooltipinfo-structure_1.cpp)]  
   
-##  <a name="m_strtext"></a>CMFCTabToolTipInfo::m_strText  
+##  <a name="m_strtext"></a>  CMFCTabToolTipInfo::m_strText  
  Araç İpucu metni.  
   
 ```  

@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3736 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3736 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3736
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3736
 ms.assetid: 579b773c-41e7-40ea-8382-2e3ce2667f4c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28fdb1422a00561a4630155c52bed3dc904d2d5a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8e4268e8f01d01147351cb1e9810c05eae0ef215
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3736"></a>Derleyici Hatası C3736
 'event': bir yöntem olmalıdır veya durumunda olayları, isteğe bağlı olarak yönetilen bir veri üyesi  

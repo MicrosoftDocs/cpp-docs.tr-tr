@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0026 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0026 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0026
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CXX0026
 - CAN0026
 ms.assetid: b5bc15f2-f179-4b87-ae88-a57e08e43bfa
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d07121e18eacbee214dacfa37a0a10df2a4ed711
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 45f95a69827d3753307e210b348a6f490a756240
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0026"></a>İfade Değerlendirici Hatası CXX0026
 hatalı biçim dizesi  

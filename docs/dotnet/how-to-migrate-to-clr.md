@@ -1,13 +1,10 @@
 ---
-title: "Nasıl yapılır: - clr geçirme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: - clr geçirme | Microsoft Docs'
+ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - migration [C++], /clr compiler option
 - /clr compiler option [C++], porting to
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: cd40443bc656b0e0ec02b1ec05b604a758628321
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.openlocfilehash: f5d7dafdc377723e33372529af1b8f125561366e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: /clr'ye Geçiş
 Bu konuda yerel kodu derleme sırasında ortaya çıkan sorunları ele alınmıştır **/CLR** (bkz [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) daha fazla bilgi için). **/ CLR** çağırma ve .NET derlemelerden yönetilmeyen modüller ile uyumluluğunu korurken çağrılması için Visual C++ modül sağlar. Bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md) ve [yerel ve .NET birlikte çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md) avantajları hakkında daha fazla bilgi ile derlenen **/CLR**.  
@@ -118,7 +113,7 @@ COMObj2->Method(args);  // C++ equivalent
 ## <a name="fixing-errors"></a>Hatalarını çözme  
  İle derleme **/CLR** derleyici, bağlayıcı veya çalışma zamanı hatalarına neden olabilir. Bu bölümde, en sık karşılaşılan sorunlar açıklanmaktadır.  
   
-### <a name="metadata-merge"></a>Metadata Merge  
+### <a name="metadata-merge"></a>Meta veri birleştirme  
  Veri türleri farklı sürümlerini bağlayıcının iki tür için oluşturulan meta veri eşleşmediği için başarısız olmasına neden olabilir. (Bu genellikle bir türün üyeleri koşullu olarak tanımlanır, ancak koşulları türünü kullanan tüm CPP dosyaları için aynı olmayan neden olur.) Bu durumda bağlayıcı, yalnızca simge adı ve türü tanımlandığı ikinci OBJ dosyasının adı raporlama başarısız olur. Genellikle, bir veri türü sürümünün konumunu bulmak için OBJ dosyaları bağlayıcıya gönderilir sırasını döndürmek kullanışlıdır.  
   
 ### <a name="loader-lock-deadlock"></a>Yükleyici kilidi kilitlenmesi  
@@ -131,7 +126,7 @@ COMObj2->Method(args);  // C++ equivalent
  Yerel türler varsayılan olarak özeldir. Bu DLL dışında görünür olmaması yerel bir tür neden olabilir. Ekleyerek bu hatayı gidermek `public` bu tür için.  
   
 ### <a name="floating-point-and-alignment-issues"></a>Kayan nokta ve hizalama sorunları  
- `__controlfp`Ortak dil çalışma zamanı üzerinde desteklenmiyor (bkz [_control87, _controlfp, \__control87_2](../c-runtime-library/reference/control87-controlfp-control87-2.md) daha fazla bilgi için). CLR ayrıca saygı göstermeyecektir [Hizala](../cpp/align-cpp.md).  
+ `__controlfp` Ortak dil çalışma zamanı üzerinde desteklenmiyor (bkz [_control87, _controlfp, \__control87_2](../c-runtime-library/reference/control87-controlfp-control87-2.md) daha fazla bilgi için). CLR ayrıca saygı göstermeyecektir [Hizala](../cpp/align-cpp.md).  
   
 ### <a name="com-initialization"></a>COM başlatma  
  Bir modül başlatıldığında ortak dil çalışma zamanı COM otomatik olarak başlatır (COM otomatik olarak başlatıldığında, bunu MTA gibi yapılır). Sonuç olarak, COM açıkça başlatma COM önceden başlatıldı gösteren dönüş kodları verir. CLR zaten başka bir iş parçacığı modeline COM başlatıldı, COM ile bir iş parçacığı modelini açıkça başlatma girişiminde, uygulamanızın başarısız olmasına neden olabilir.  

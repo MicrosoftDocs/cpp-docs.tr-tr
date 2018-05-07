@@ -1,12 +1,9 @@
 ---
 title: CBulkRowset::MoveNext | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL.CBulkRowset<TAccessor>.MoveNext
@@ -22,18 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - MoveNext method
 ms.assetid: 788f3344-cf60-4af1-8f5f-0098c8d1a3f0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e03a1449ec448d6c06dc90f3a18594bad97cfb95
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 68ec7e4a583039a0087654dadde36598a3ced629
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cbulkrowsetmovenext"></a>CBulkRowset::MoveNext
 Sonraki satıra veri alır.  

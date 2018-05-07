@@ -1,12 +1,9 @@
 ---
-title: "İfade değerlendirici hatası CXX0043 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0043 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - CXX0043
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - CXX0043
 - CAN0043
 ms.assetid: 5e5d55bb-0f3e-40e6-b3c3-d0dfb701a65c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fd9866c1d016abebe21b7c970afb202449a7217
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a5b27c1fffca8c21a0fa3e3e79eedae0c17ae580
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="expression-evaluator-error-cxx0043"></a>İfade Değerlendirici Hatası CXX0043
 Bu işaretçinin kullanılan dış üye işlevi  

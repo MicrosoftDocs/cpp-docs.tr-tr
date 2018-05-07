@@ -1,11 +1,8 @@
 ---
-title: "Platform::FailureException sınıfı | Microsoft Docs"
-ms.custom: 
+title: Platform::FailureException sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::FailureException::FailureException
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - Platform::FailureException
 ms.assetid: 1729cd07-bfc2-448e-9db5-185d5cbf5b81
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7cf6691f7f591f15660a8d8bfc5e4ebfc4a12ec
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 1094810663ce0a0abf8234af386d7a8427472ced
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="platformfailureexception-class"></a>Platform::FailureException sınıfı
 İşlemi başarısız olduğunda oluşturulur. E_FAIL HRESULT eşdeğeridir.  

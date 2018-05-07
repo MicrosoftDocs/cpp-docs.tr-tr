@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2185 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2185 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2185
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2185
 ms.assetid: 74bc9f64-7b4c-4735-ba13-67c43f8c47db
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b8247f36cad267847a57407381975d92df9bd9f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 078860f39ff75c9475678a95adabfdc8ba1a91c7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2185"></a>Derleyici Hatası C2185
 'tanımlayıcısı': Geçersiz ayırma dayalı  

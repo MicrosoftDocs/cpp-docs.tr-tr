@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2039 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2039 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2039
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2039
 ms.assetid: f9dfd521-9b36-4454-a69c-d63f45b606bb
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 753ba66cfbc20e19bab5351ff67d9e6f8cc3a392
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2830ead70ba82a513af4e6682a01a5f9722d1ac7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2039"></a>Derleyici Hatası C2039
 'identifier1': 'identifier2' üyesi değil  

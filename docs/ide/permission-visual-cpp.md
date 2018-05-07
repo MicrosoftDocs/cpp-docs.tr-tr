@@ -1,13 +1,10 @@
 ---
 title: '&lt;izin&gt; (Visual C++) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - permission
 - <permission>
@@ -17,20 +14,18 @@ helpviewer_keywords:
 - <permission> C++ XML tag
 - permission C++ XML tag
 ms.assetid: 537ee2bc-95bd-48e4-9ce6-3420c3da87f4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 416467782be92760ac999301f9899be1260905aa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e13824780a5c73d4423bd544a97108b45d1b770a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ltpermissiongt-visual-c"></a>&lt;izin&gt; (Visual C++)
-\<İzni > etiketi üyesi erişim belge olanak sağlar. <xref:System.Security.PermissionSet>üye erişimi belirtmenize olanak sağlar.  
+\<İzni > etiketi üyesi erişim belge olanak sağlar. <xref:System.Security.PermissionSet> üye erişimi belirtmenize olanak sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

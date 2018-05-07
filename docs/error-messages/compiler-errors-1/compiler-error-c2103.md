@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2103 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2103 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2103
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2103
 ms.assetid: dfe95972-35e9-469a-b8a8-52c849d4e4e4
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f9d2857acdc2c36ccc52b324c4848ae783c5998
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 94a8d5eed933461a3898026f4bac051245c94dbb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2103"></a>Derleyici Hatası C2103
 ' &' değişkeni kaydedebilirsiniz  

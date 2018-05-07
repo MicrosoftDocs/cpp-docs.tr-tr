@@ -1,12 +1,9 @@
 ---
 title: CRowset::GetData | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CRowset<TAccessor>::GetData
@@ -22,18 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - GetData method [OLE DB]
 ms.assetid: 1e0347b5-3e24-4ff8-a790-839616c1522f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 91cd3322461be0cfaaefb793e63cb452253ba2aa
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: c0a8268f115f6c6d5a887bea7aad8a244d7e530c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="crowsetgetdata"></a>CRowset::GetData
 Satır satır kümesinin kopyadan verileri alır.  

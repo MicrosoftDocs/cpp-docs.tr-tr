@@ -1,27 +1,22 @@
 ---
-title: "Dinamik düzen | Microsoft Docs"
-ms.custom: 
+title: Dinamik düzen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 8598cfb2-c8d4-4f5a-bf2b-59dc4653e042
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e309d8ef023346c0e37babeabe23f7e6e1762939
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7518e2fdd07254b8b1991fae8a41f26058920858
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dynamic-layout"></a>Dinamik Düzen
 MFC Visual Studio 2015'te kullanıcı genişletebilir iletişim kutuları oluşturma ve düzeni boyutundaki değişikliği ayarlar yolunu kontrol edebilirsiniz. Örneğin, her zaman en altında kalırlar şekilde alt kenarı bir iletişim kutusunun altındaki düğmeleri ekleyebilirsiniz. Ayrıca belirli denetimleri süzer, editboxes ve metin alanları gibi kullanıcı iletişim kutusu genişlediği sürece genişletmek için ayarlayabilirsiniz.  
@@ -46,7 +41,7 @@ MFC Visual Studio 2015'te kullanıcı genişletebilir iletişim kutuları oluşt
   
      ![İletişim kutusu, kaynak düzenleyicisinde açın. ] (../mfc/media/mfcdynamiclayout3.png "mfcdynamiclayout3")  
   
-2.  Bir denetim seçin ve Özellikler penceresinde dinamik düzen özelliklerini ayarlayın. **Dinamik düzen** Özellikler penceresini bölümünde özelliklerini içeren **taşıma türü**, **boyutlandırma türü**ve bu özellikler için seçilen değerlere bağlı olarak ne kadar denetimleri tanımlayan belirli özellikleri taşıyın veya boyutunu değiştirin. **Türü taşıma** denetim nasıl taşınır belirler iletişim kutusunun boyutunu değiştikçe; **Boyutlandırma türü** denetim nasıl boyutlandırılır belirler iletişim kutusunun boyutunu değiştirilmiş olarak. **Türü taşıma** ve **boyutlandırma türü** olabilir **yatay**, **dikey**, **her ikisi de**, veya **hiçbiri** bağlı olarak, dinamik olarak değiştirmek istediğiniz boyutları. Yatay X boyutudur; Dikey Y yönünde ' dir.  
+2.  Bir denetim seçin ve Özellikler penceresinde dinamik düzen özelliklerini ayarlayın. **Dinamik düzen** Özellikler penceresini bölümünde özelliklerini içeren **taşıma türü**, **boyutlandırma türü**ve bu özellikler için seçilen değerlere bağlı olarak ne kadar denetimleri tanımlayan belirli özellikleri taşıyın veya boyutunu değiştirin. **Türü taşıma** denetim nasıl taşınır belirler iletişim kutusunun boyutunu değiştikçe; **Boyutlandırma türü** denetim nasıl boyutlandırılır belirler iletişim kutusunun boyutunu değiştirilmiş olarak. **Türü taşıma** ve **boyutlandırma türü** olabilir **yatay**, **dikey**, **her ikisi de**, veya **hiçbiri**bağlı olarak, dinamik olarak değiştirmek istediğiniz boyutları. Yatay X boyutudur; Dikey Y yönünde ' dir.  
   
 3.  Bir sabit boyutta olmasını ve sağ alt köşede yerinde kalmaya düğmesi gibi bir denetim isterseniz, olduğu gibi yaygın **Tamam** veya **iptal** düğmeler kümesi **boyutlandırma türü** için **Hiçbiri**ve **taşıma türü** için **her ikisi de**. İçin **taşıma X** ve **taşıma Y** altında değerleri **taşıma türü**, % 100 alt sabit bir uzaklıkta sağ alt köşesinde kalmak denetimi neden ayarlayın.  
   

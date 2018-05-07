@@ -1,12 +1,9 @@
 ---
-title: "CMenuTearOffManager sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMenuTearOffManager sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMenuTearOffManager
@@ -33,17 +30,15 @@ helpviewer_keywords:
 - CMenuTearOffManager [MFC], SetInUse
 - CMenuTearOffManager [MFC], SetupTearOffMenus
 ms.assetid: ab7ca272-ce42-4678-95f7-6ad75038f5a0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: efb1b7acc2f4eb779de49559b5b566e89d518a0e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4dcbd5ea33b50e66d1c9e858669a3174042a19e0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmenutearoffmanager-class"></a>CMenuTearOffManager sınıfı
 Etiketleri menüleri yönetir. Etiketleri menü menü çubuğu menüsünde bulunur. Kullanıcı bir etiketleri menü menü çubuğu, etiketleri menü float neden kaldırabilirsiniz.  
@@ -93,7 +88,7 @@ class CMenuTearOffManager : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxmenutearoffmanager.h  
   
-##  <a name="build"></a>CMenuTearOffManager::Build  
+##  <a name="build"></a>  CMenuTearOffManager::Build  
 
   
 ```  
@@ -103,12 +98,12 @@ void Build(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiTearOffBarID`  
- [in]`strText`  
+ [in] `uiTearOffBarID`  
+ [in] `strText`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="cmenutearoffmanager"></a>CMenuTearOffManager::CMenuTearOffManager  
+##  <a name="cmenutearoffmanager"></a>  CMenuTearOffManager::CMenuTearOffManager  
  Oluşturan bir [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) nesnesi.  
   
 ```  
@@ -118,7 +113,7 @@ CMenuTearOffManager();
 ### <a name="remarks"></a>Açıklamalar  
  Çoğu durumda, değil oluşturmalısınız bir `CMenuTearOffManager` el ile. Uygulamanızı çerçevesini oluşturur `CMenuTearOffManager` nesne çağırdığınızda [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus).  
   
-##  <a name="getregpath"></a>CMenuTearOffManager::GetRegPath  
+##  <a name="getregpath"></a>  CMenuTearOffManager::GetRegPath  
 
   
 ```  
@@ -129,7 +124,7 @@ LPCTSTR GetRegPath() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="initialize"></a>CMenuTearOffManager::Initialize  
+##  <a name="initialize"></a>  CMenuTearOffManager::Initialize  
  Başlatır bir [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) nesnesi.  
   
 ```  
@@ -140,13 +135,13 @@ BOOL Initialize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszRegEntry`  
+ [in] `lpszRegEntry`  
  Bir kayıt defteri girdisi yolunu içeren bir dize. Uygulamalarınız, bu kayıt defteri girdisi etiketleri çubukları ayarlarını depolar.  
   
- [in]`uiTearOffMenuFirst`  
+ [in] `uiTearOffMenuFirst`  
  Etiketleri menü ilk menü kimliği.  
   
- [in]`uiTearOffMenuLast`  
+ [in] `uiTearOffMenuLast`  
  Etiketleri menü son menü kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -155,7 +150,7 @@ BOOL Initialize(
 ### <a name="remarks"></a>Açıklamalar  
  Menü kimlikleri aralığını `uiTearOffMenuFirst` için `uiTearOffMenuLast` sürekli bir aralık olmalıdır. Aralık uygulamada aynı anda görünebilir etiketleri menüleri sayısını tanımlar.  
   
-##  <a name="isdynamicid"></a>CMenuTearOffManager::IsDynamicID  
+##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID  
 
   
 ```  
@@ -163,13 +158,13 @@ BOOL IsDynamicID(UINT uiID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiID`  
+ [in] `uiID`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="parse"></a>CMenuTearOffManager::Parse  
+##  <a name="parse"></a>  CMenuTearOffManager::Parse  
 
   
 ```  
@@ -177,13 +172,13 @@ UINT Parse(CString& str);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`str`  
+ [in] `str`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="reset"></a>CMenuTearOffManager::Reset  
+##  <a name="reset"></a>  CMenuTearOffManager::Reset  
 
   
 ```  
@@ -191,11 +186,11 @@ void Reset(HMENU hmenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hmenu`  
+ [in] `hmenu`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setinuse"></a>CMenuTearOffManager::SetInUse  
+##  <a name="setinuse"></a>  CMenuTearOffManager::SetInUse  
 
   
 ```  
@@ -205,12 +200,12 @@ void SetInUse(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiCmdId`  
- [in]`bUse`  
+ [in] `uiCmdId`  
+ [in] `bUse`  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setuptearoffmenus"></a>CMenuTearOffManager::SetupTearOffMenus  
+##  <a name="setuptearoffmenus"></a>  CMenuTearOffManager::SetupTearOffMenus  
 
   
 ```  
@@ -218,7 +213,7 @@ void SetupTearOffMenus(HMENU hMenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`hMenu`  
+ [in] `hMenu`  
   
 ### <a name="remarks"></a>Açıklamalar  
   

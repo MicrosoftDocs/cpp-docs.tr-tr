@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3856 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3856 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3856
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3856
 ms.assetid: 242d9322-c325-4f20-be58-b2be6da56d60
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba0be4ea7cf7d82ce8c0ee412f8373ea14f1162e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2d88b0168809fb230c399485520592acc92f7aec
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3856"></a>Derleyici Hatası C3856
 'type': sınıf bir sınıf türü değil  

@@ -2,12 +2,9 @@
 title: Zengin düzenleme denetimindeki geçerli bölüm | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - rich edit controls [MFC], current selection in
 - selection, current in CRichEditCtrl
 ms.assetid: f6b2a2b6-5481-4ad3-9720-6dd772ea6fc8
-caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5f0d9332d1118809ae3d62c187ec848ec95ffbf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 782984bc53bc16f8dc89e4e705811fef24b8931e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="current-selection-in-a-rich-edit-control"></a>Bir Zengin Düzenleme Denetimindeki Geçerli Bölüm
 Kullanıcı bir zengin düzenleme denetimine metin seçebilirsiniz ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) fare veya klavyeyi kullanarak. Geçerli seçim seçili karakter aralığı veya ekleme noktasını hiçbir karakter varsa konumunu seçilir. Uygulamanın geçerli seçim hakkında bilgi almak, geçerli seçim ayarlayın, geçerli seçim değişiklikleri ve Göster veya gizle seçim zaman vurgulayın belirleyin.  

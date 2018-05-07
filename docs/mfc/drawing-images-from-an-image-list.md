@@ -1,13 +1,10 @@
 ---
-title: "Görüntü listesinden görüntü çizme | Microsoft Docs"
-ms.custom: 
+title: Görüntü listesinden görüntü çizme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - image lists [MFC], drawing images from
 - images [MFC], drawing
 ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deb9a96d5096b489f8e4dcbaf987509d60bd5024
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 86983506770b9719972170dfbb70b02c8026e108
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="drawing-images-from-an-image-list"></a>Görüntü Listesinden Görüntü Çizme
 Resim çizmek için kullanmak [CImageList::Draw](../mfc/reference/cimagelist-class.md#draw) üye işlevi. Bir cihaz bağlamı nesnesi, çizmek için resim çizmek cihaz bağlamı konumda görüntünün dizinini ve çizim stilini belirtmek için bayrakları kümesi için bir işaretçi belirtirsiniz.  
@@ -41,7 +36,7 @@ Resim çizmek için kullanmak [CImageList::Draw](../mfc/reference/cimagelist-cla
   
  Hedef aygıt kullanarak içerik nonmasked görüntü kopyalanan **SRCCOPY** tarama işlemi. Görüntü renkleri cihaz bağlamı arka plan rengini bakılmaksızın aynı görünür. Belirtilen çizim stili **çizin** de nonmasked görüntünün görünümünü üzerinde hiçbir etkisi yoktur.  
   
- Draw üye işlevi, başka bir işlev yanı sıra [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect), görüntü işleme yeteneği genişletir. `DrawIndirect`bir parametre olarak alır bir [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) yapısı. Bu yapı, tarama işlemi (KIRPMA) kodları kullanımı dahil olmak üzere geçerli görüntü işleme özelleştirmek için kullanılabilir. KIRPMA kodları hakkında daha fazla bilgi için bkz: [tarama işlemi kodları](http://msdn.microsoft.com/library/windows/desktop/dd162892) ve [Fırçalar eşlemleri](http://msdn.microsoft.com/library/windows/desktop/dd183378) Windows SDK'sındaki.  
+ Draw üye işlevi, başka bir işlev yanı sıra [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect), görüntü işleme yeteneği genişletir. `DrawIndirect` bir parametre olarak alır bir [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) yapısı. Bu yapı, tarama işlemi (KIRPMA) kodları kullanımı dahil olmak üzere geçerli görüntü işleme özelleştirmek için kullanılabilir. KIRPMA kodları hakkında daha fazla bilgi için bkz: [tarama işlemi kodları](http://msdn.microsoft.com/library/windows/desktop/dd162892) ve [Fırçalar eşlemleri](http://msdn.microsoft.com/library/windows/desktop/dd183378) Windows SDK'sındaki.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Cımagelist kullanma](../mfc/using-cimagelist.md)   

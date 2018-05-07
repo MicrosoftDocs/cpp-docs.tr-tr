@@ -1,13 +1,10 @@
 ---
-title: "Liste denetimi ve liste görünümü | Microsoft Docs"
-ms.custom: 
+title: Liste denetimi ve liste görünümü | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - list views [MFC]
 - list controls [MFC], List view
 ms.assetid: 7aee1c48-b158-4399-be0b-be366993665e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46c9d559d642b6edf926b9feb49332ef7ec2924a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a3279ae5edc02ec52ded065c4a45d18e3236802f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="list-control-and-list-view"></a>Liste Denetimi ve Liste Görünümü
 Kolaylık olması için iki yolla liste denetimi MFC yalıtır. Liste denetimleri kullanabilirsiniz:  
@@ -36,7 +31,7 @@ Kolaylık olması için iki yolla liste denetimi MFC yalıtır. Liste denetimler
   
 -   Sınıf kullanarak dolaylı olarak [CListView](../mfc/reference/clistview-class.md).  
   
- `CListView`Liste denetimi denetimi Kapsüllenen MFC belge/görünüm mimarisi ile tümleştirmek kadar kolaylaştırır [CEditView](../mfc/reference/ceditview-class.md) düzenleme denetimi yalıtır: denetim MFC Görünümü tüm yüzey alanını doldurur. (Görünümü *olan* için cast denetim `CListView`.)  
+ `CListView` Liste denetimi denetimi Kapsüllenen MFC belge/görünüm mimarisi ile tümleştirmek kadar kolaylaştırır [CEditView](../mfc/reference/ceditview-class.md) düzenleme denetimi yalıtır: denetim MFC Görünümü tüm yüzey alanını doldurur. (Görünümü *olan* için cast denetim `CListView`.)  
   
  A `CListView` nesne devraldığı [CCtrlView](../mfc/reference/cctrlview-class.md) ve bunun temel sınıfları ve temel alınan liste denetimini almak için bir üye fonksiyonu ekler. Görünüm üyeleri görünüm olarak çalışmak için kullanır. Kullanım [GetListCtrl](../mfc/reference/clistview-class.md#getlistctrl) listesi denetimin üye işlevleri erişmek için üye işlevi. Bu üyeler için kullanın:  
   

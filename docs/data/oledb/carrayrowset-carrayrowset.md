@@ -1,12 +1,9 @@
 ---
 title: CArrayRowset::CArrayRowset | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL::CArrayRowset::CArrayRowset
@@ -22,18 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - CArrayRowset class, constructor
 ms.assetid: 189076f3-4a7f-4284-ba96-aa0b284fd8f0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9659e144e95b1721ebf9930f10be1a5c40a7f57b
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 613b563ccd5bbefcd5425f0c8049c56181f56341
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="carrayrowsetcarrayrowset"></a>CArrayRowset::CArrayRowset
 Yeni bir `CArrayRowset` nesnesi.  

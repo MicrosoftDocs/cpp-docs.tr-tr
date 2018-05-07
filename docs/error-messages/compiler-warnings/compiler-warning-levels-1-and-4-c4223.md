@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1 ve 4) C4223 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1 ve 4) C4223 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4223
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4223
 ms.assetid: 6fc44336-0250-4432-928b-fc5dbe7b7c1c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7db11d0fcc2107f82b10438256fd0d40b908913
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b3ac6890a5a51d7448c3317a8cf37f23791d27f0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-levels-1-and-4-c4223"></a>Derleyici Uyarısı (düzey 1 ve 4) C4223
 kullanılan standart olmayan uzantısı: lvalue olmayan dizi dönüştürülen işaretçi  

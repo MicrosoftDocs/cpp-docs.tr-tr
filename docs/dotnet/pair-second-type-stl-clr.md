@@ -1,12 +1,9 @@
 ---
 title: pair::second_type (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::pair::second_type
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - second_type member [STL/CLR]
 ms.assetid: 555f0216-186b-4dac-babc-1499f69e5c1b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 684b233eeb77093e686cfb0af7d2fd6fc1ae80e2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d17a456d8e57a7cde61773da310a766374294d3e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="pairsecondtype-stlclr"></a>pair::second_type (STL/CLR)
 İkinci sarılan değer türü.  

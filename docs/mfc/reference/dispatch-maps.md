@@ -1,13 +1,10 @@
 ---
-title: "Eşlemeleri dağıtma | Microsoft Docs"
-ms.custom: 
+title: Eşlemeleri dağıtma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.maps
 dev_langs:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - dispatch maps [MFC]
 - dispatch map macros [MFC]
 ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3112c092a4e1d6eb970fb50153c543baa98ee853
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 313e465698da5799a107bc3bdbeb6d2cbbe47303
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dispatch-maps"></a>Eşlemeleri Dağıtma
 OLE Otomasyon yöntemlerini çağırmaya ve uygulamalar arasında özelliklere erişmek için yöntemler sağlar. Bu istekleri gönderme için Microsoft Foundation Class Kitaplığı tarafından sağlanan "nesne işlevler ve Özellikler yanı sıra, Özellikler'in ve veri türleri iç ve dış adlarını atar gönderme harita" mekanizmadır işlev bağımsız değişkenleri.  
@@ -46,7 +41,7 @@ OLE Otomasyon yöntemlerini çağırmaya ve uygulamalar arasında özelliklere e
 |[DISP_PROPERTY_PARAM](#disp_property_param)|Parametreleri ve adları alma ve ayarlama işlevleri alır OLE Otomasyon özelliği tanımlar.|  
 |[DISP_DEFVALUE](#disp_defvalue)|Mevcut bir özellik bir nesnenin varsayılan değer kılar.|  
   
-##  <a name="declare_dispatch_map"></a>DECLARE_DISPATCH_MAP  
+##  <a name="declare_dispatch_map"></a>  DECLARE_DISPATCH_MAP  
  Varsa bir `CCmdTarget`-programınızı türetilen sınıfta OLE sınıfı yöntemleri ve özellikleri kullanıma sunmak için bir gönderme harita sağlamalısınız Otomasyon destekler.  
   
 ```   
@@ -67,7 +62,7 @@ DECLARE_DISPATCH_MAP()
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
 
-##  <a name="begin_dispatch_map"></a>BEGIN_DISPATCH_MAP  
+##  <a name="begin_dispatch_map"></a>  BEGIN_DISPATCH_MAP  
  Gönderme haritanızı tanımını bildirir.  
   
 ```  
@@ -87,7 +82,7 @@ BEGIN_DISPATCH_MAP(theClass, baseClass)
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h  
 
-##  <a name="end_dispatch_map"></a>END_DISPATCH_MAP  
+##  <a name="end_dispatch_map"></a>  END_DISPATCH_MAP  
  Gönderme haritanızı tanımını sona erer.  
   
 ```   
@@ -100,7 +95,7 @@ END_DISPATCH_MAP()
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h  
 
-##  <a name="disp_function"></a>DISP_FUNCTION  
+##  <a name="disp_function"></a>  DISP_FUNCTION  
  OLE Otomasyon işlevi bir gönderme eşleminde tanımlar.  
   
 ```   
@@ -171,8 +166,8 @@ DISP_FUNCTION(
 |**VTS_UNKNOWN**|`LPUNKNOWN`|  
 |**VTS_PI2**|**kısa\***|  
 |**VTS_PI4**|**uzun\***|  
-|**VTS_PR4**|**kayan nokta\***|  
-|**VTS_PR8**|**çift\***|  
+|**VTS_PR4**|**Kayan nokta\***|  
+|**VTS_PR8**|**Çift\***|  
 |**VTS_PCY**|**CY\***|  
 |**VTS_PDATE**|**TARİH\***|  
 |**VTS_PBSTR**|**BSTR\***|  
@@ -186,7 +181,7 @@ DISP_FUNCTION(
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h 
 
-##  <a name="disp_property"></a>DISP_PROPERTY  
+##  <a name="disp_property"></a>  DISP_PROPERTY  
  OLE Otomasyon özelliği gönderme eşlemesinde tanımlar.  
   
 ```   
@@ -233,7 +228,7 @@ DISP_PROPERTY(
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h 
 
-##  <a name="disp_property_ex"></a>DISP_PROPERTY_EX  
+##  <a name="disp_property_ex"></a>  DISP_PROPERTY_EX  
  OLE Otomasyon özelliği ve adını alma ve gönderme eşlemesinde özelliğin değerini ayarlamak için kullanılan işlevleri tanımlar.  
   
 ```   
@@ -269,7 +264,7 @@ DISP_PROPERTY_EX(
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h 
 
-##  <a name="disp_property_notify"></a>DISP_PROPERTY_NOTIFY  
+##  <a name="disp_property_notify"></a>  DISP_PROPERTY_NOTIFY  
  OLE Otomasyon özelliği bildirim gönderme eşlemesinde tanımlar.  
   
 ```   
@@ -320,7 +315,7 @@ DISP_PROPERTY_NOTIFY(
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h 
 
-##  <a name="disp_property_param"></a>DISP_PROPERTY_PARAM  
+##  <a name="disp_property_param"></a>  DISP_PROPERTY_PARAM  
  Ayrı erişilen bir özelliğini tanımlar **almak** ve `Set` üye işlevleri.  
   
 ```   
@@ -375,7 +370,7 @@ DISP_PROPERTY_PARAM(
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h 
 
-##  <a name="disp_defvalue"></a>DISP_DEFVALUE  
+##  <a name="disp_defvalue"></a>  DISP_DEFVALUE  
  Mevcut bir özellik bir nesnenin varsayılan değer kılar.  
   
 ```   

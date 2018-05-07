@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C3205 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3205 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3205
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3205
 ms.assetid: 802d306e-5ff3-4491-8a22-c5f1c072d005
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e86f78c5c473b1722e3a3738c1f96b5f5133d3b0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3419643e846bab394ab032dc428d4f06a1040164
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3205"></a>Derleyici Hatası C3205
 'parametresi' şablon parametresi için bağımsız değişken listesi eksik  

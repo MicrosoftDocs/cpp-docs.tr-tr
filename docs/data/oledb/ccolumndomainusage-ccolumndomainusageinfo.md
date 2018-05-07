@@ -1,12 +1,9 @@
 ---
-title: CColumnDomainUsage, CColumnDomainUsageInfo | Microsoft Docs
-ms.custom: 
+title: CColumnDomainUsage, Ccolumndomainusageınfo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - m_szTableSchema
@@ -51,18 +48,16 @@ helpviewer_keywords:
 - m_guidColumn
 - DOMAIN_CATALOG
 ms.assetid: 5ff331f1-b99c-4002-9e04-367708c5759f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: af56c72f7dcef0d3a611fdffe9f65cb66699ebd4
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: f0ca95cadf5ac3502ba8de034fad91a75ba123f9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ccolumndomainusage-ccolumndomainusageinfo"></a>CColumnDomainUsage, CColumnDomainUsageInfo
 Çağrı typedef sınıfı **CColumnDomainUsage** parametre sınıfı uygulamak için **Ccolumndomainusageınfo**.  

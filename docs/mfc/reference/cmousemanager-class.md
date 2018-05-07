@@ -1,12 +1,9 @@
 ---
-title: "CMouseManager sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMouseManager sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMouseManager
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - CMouseManager [MFC], SaveState
 - CMouseManager [MFC], SetCommandForDblClk
 ms.assetid: a4d05017-4e44-4a40-8b57-4ece0de20481
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d019bedd63e7b7700ec91309c9ccaa0a41bf1ed
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.openlocfilehash: c58469086089dafe2447446723e06d6aa20a845c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmousemanager-class"></a>CMouseManager sınıfı
 Farklı komutlar belirli bir ile ilişkilendirilecek bir kullanıcının [CView](../../mfc/reference/cview-class.md) kullanıcı bu görünüm içinde tıklattığında nesne.  
@@ -97,19 +92,19 @@ BOOL AddView(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iViewId`  
+ [in] `iViewId`  
  Bir görünüm kimliği  
   
- [in]`uiViewNameResId`  
+ [in] `uiViewNameResId`  
  Görünüm adı başvuruda bulunan bir kaynak dize kimliği.  
   
- [in]`uiIconId`  
+ [in] `uiIconId`  
  Bir görünümü simgesi kimliği  
   
- [in]`iId`  
+ [in] `iId`  
  Bir görünüm kimliği  
   
- [in]`lpszViewName`  
+ [in] `lpszViewName`  
  Bir görünüm adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -135,7 +130,7 @@ UINT GetViewDblClickCommand(int iId) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iId`  
+ [in] `iId`  
  Görünüm kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -149,7 +144,7 @@ UINT GetViewIconId(int iViewId) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iViewId`  
+ [in] `iViewId`  
  Görünüm kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -166,7 +161,7 @@ int GetViewIdByName(LPCTSTR lpszName) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszName`  
+ [in] `lpszName`  
  Görünüm adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -183,13 +178,13 @@ void GetViewNames(CStringList& listOfNames) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out]`listOfNames`  
+ [out] `listOfNames`  
  Bir başvuru `CStringList` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem parametresi doldurur `listOfNames` kullanarak kayıtlı tüm görünümleri adlarıyla [CMouseManager::AddView](#addview).  
   
-##  <a name="loadstate"></a>CMouseManager::LoadState  
+##  <a name="loadstate"></a>  CMouseManager::LoadState  
  Durumu yükler [CMouseManager sınıfı](../../mfc/reference/cmousemanager-class.md) kayıt defterinden.  
   
 ```  
@@ -197,7 +192,7 @@ BOOL LoadState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszProfileName`  
+ [in] `lpszProfileName`  
  Bir kayıt defteri anahtarı yolu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -208,7 +203,7 @@ BOOL LoadState(LPCTSTR lpszProfileName = NULL);
   
  Çoğu durumda, bu işlev doğrudan çağırmanız gerekmez. Çalışma alanı başlatma işleminin bir parçası olarak adlandırılır. Çalışma alanı başlatma işlemi hakkında daha fazla bilgi için bkz: [CWinAppEx::LoadState](../../mfc/reference/cwinappex-class.md#loadstate).  
   
-##  <a name="savestate"></a>CMouseManager::SaveState  
+##  <a name="savestate"></a>  CMouseManager::SaveState  
  Durumu Yazar [CMouseManager sınıfı](../../mfc/reference/cmousemanager-class.md) kayıt defteri.  
   
 ```  
@@ -216,7 +211,7 @@ BOOL SaveState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszProfileName`  
+ [in] `lpszProfileName`  
  Bir kayıt defteri anahtarı yolu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -237,10 +232,10 @@ void SetCommandForDblClk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`iViewId`  
+ [in] `iViewId`  
  Görünüm tanımlayıcısı.  
   
- [in]`uiCmd`  
+ [in] `uiCmd`  
  Komut tanımlayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  

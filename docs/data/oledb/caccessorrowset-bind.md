@@ -1,12 +1,9 @@
 ---
 title: CAccessorRowset::Bind | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CAccessorRowset.Bind
@@ -16,18 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - Bind method
 ms.assetid: 42a1fc86-f570-4e54-9b82-7f7141564214
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 778f8afabbe845c382782ea15e3e47f8736d07fa
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 2d875d2b10c3184643a0da6629527696ce412408
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="caccessorrowsetbind"></a>CAccessorRowset::Bind
 Belirttiyseniz bağlamaları oluşturur **bBind** false olarak [CCommand::Open](../../data/oledb/ccommand-open.md).  

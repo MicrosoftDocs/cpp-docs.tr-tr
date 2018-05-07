@@ -1,12 +1,9 @@
 ---
-title: "Ierrorrecordsımpl::geterrorhelpcontext | Microsoft Docs"
-ms.custom: 
+title: Ierrorrecordsımpl::geterrorhelpcontext | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - GetErrorHelpContext
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - GetErrorHelpContext method
 ms.assetid: 53d70239-0d64-482e-9ad4-4e1f4f02d5a3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d3064f505c87b7d828c99206eb4006226718da82
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 684f619dfbf8318951d5668789b6aad18ae48aef
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ierrorrecordsimplgeterrorhelpcontext"></a>IErrorRecordsImpl::GetErrorHelpContext
 Yardım içerik kimliği bir hata kayıttan alır.  

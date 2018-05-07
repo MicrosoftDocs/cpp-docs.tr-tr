@@ -1,12 +1,9 @@
 ---
-title: "Kaynak Derleyicisi önemli hatası RC1022 | Microsoft Docs"
-ms.custom: 
+title: Kaynak Derleyicisi önemli hatası RC1022 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - RC1022
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - RC1022
 ms.assetid: 30a0f3c7-08a8-4c40-b0de-46ee5feb789d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a28a18ea569e16c8a829cd681df88e4af3d6287d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c81a6afc3316c163e9d1451af51f57f208b6a209
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="resource-compiler-fatal-error-rc1022"></a>Kaynak Derleyicisi Önemli Hatası RC1022
 Beklenen '#endif'  

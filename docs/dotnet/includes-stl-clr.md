@@ -1,12 +1,9 @@
 ---
-title: "içerir (STL/CLR) | Microsoft Docs"
-ms.custom: 
+title: içerir (STL/CLR) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::includes
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - includes function [STL/CLR]
 ms.assetid: 566307f4-92e0-4acc-ba49-caa48f3ec744
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 94ba313a960b986412a5fc41293b0770ace01211
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 34b14f34dd83c405bfcd870314c318587df61134
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="includes-stlclr"></a>içerir (STL/CLR)
 Sıralanmış bir aralığın ikinci bir sıralanmış aralıkta kapsanan tüm öğeleri içerip içermediğini sınar, burada öğeler arasındaki sıralama veya denklik ölçütü bir ikili koşula göre belirlenebilir.  

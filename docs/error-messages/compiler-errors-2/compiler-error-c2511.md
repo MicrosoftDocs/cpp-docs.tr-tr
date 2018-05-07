@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2511 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2511 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2511
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2511
 ms.assetid: df999efe-fe2b-418b-bb55-4af6a0592631
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 904f8671aff18d7a9216567abc3db0f2f5cd82de
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d97cbbd75d3b39b55ff640ed99e261ba349043d3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2511"></a>Derleyici Hatası C2511
 'tanımlayıcısı': 'sınıfında' bulunamadı üye işlevi aşırı yüklenmiş  

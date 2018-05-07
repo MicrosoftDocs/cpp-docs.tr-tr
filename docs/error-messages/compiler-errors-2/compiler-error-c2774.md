@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2774 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2774 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2774
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2774
 ms.assetid: 10f428c6-7f49-489a-92ba-6ef978b7caaf
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b5b8b898dead7d08795e25d87f66a2c24214fc3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0a6fc100bf7cd4a57c5c23630b28c41d92cf43d6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2774"></a>Derleyici Hatası C2774
 'tanımlayıcısı': Bu özellik ile ilişkili 'put' yöntemi yok  

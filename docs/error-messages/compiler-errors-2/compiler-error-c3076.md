@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3076 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3076 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3076
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3076
 ms.assetid: 8a87b3e4-2c17-4b87-9622-ef0962d6a34e
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfd5604b1807cb0023ad354c6efaff34f3c59ce6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 465dd45c4ddfc41e3ba7a059619028711d6f73e2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3076"></a>Derleyici Hatası C3076
 'Instance': yerel tür içinde bir başvuru türü 'type' örneği eklenemiyor  

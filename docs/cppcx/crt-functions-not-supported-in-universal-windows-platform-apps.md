@@ -1,24 +1,19 @@
 ---
-title: "Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri | Microsoft Docs"
-ms.custom: 
+title: Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 ms.assetid: cbfc957d-6c60-48f4-97e3-1ed8526743b4
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 295b7810c562e141f1b2e22c993bcc7455c0f1d9
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ed8b5c150632d035060b0e34f3962f2e903990a8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="crt-functions-not-supported-in-universal-windows-platform-apps"></a>Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri
 Evrensel Windows Platformu (UWP) uygulamaları oluştururken birçok C çalışma zamanı (CRT) işlevleri kullanılamaz. Bazı durumlarda, geçici çözümler kullanılabilir —-örneğin, Windows çalışma zamanı veya Win32 API'larını kullanabilirsiniz. Bunları veya destekleyen API'leri karşılık özellikleri UWP uygulamaları için geçerli olmadığından Bununla birlikte, diğer durumlarda, CRT işlevleri yasaklanan. Windows çalışma zamanı için desteklenen alternatif bir yöntem aramak için bkz: [UWP uygulamaları Windows API'leri alternatifleri](/uwp/win32-and-com/alternatives-to-windows-apis-uwp).  
@@ -60,6 +55,6 @@ Aşağıdaki tabloda, UWP uygulamaları oluştururken, kullanılabilir olmayan C
 |_beginthread _beginthreadex _endthread _endthreadex|İş parçacığı Win32 API'larının Windows 8.x mağazası uygulamaları kullanılabilir değil.|Kullanım `Windows Runtime Windows::System::Threading::ThreadPool` veya `concurrency::task` yerine.|  
 |_chdir _wchdir _getcwd _getdcwd _wgetcwd _wgetdcwd|Bir çalışma dizini kavramı, Windows 8.x mağazası uygulamaları için geçerli değildir.|Tam yollar kullanın.|  
 |_getpid|Bu işlev CRT önceki sürümleri artık kullanılmıyor.|Win32 API kullanın `GetCurrentProcessId()`|  
-|_isleadbyte_l _ismbbalnum, _ismbbalnum_l, _ismbbalpha, _ismbbalpha _ismbbalpha_l _ismbbgraph _ismbbgraph_l _ismbbkalnum _ismbbkalnum_l _ismbbkana _ismbbkana_l _ismbbkprint _ismbbkprint_l _ismbbkpunct _ismbbkpunct_l _ismbblead _ismbblead_l _ismbbprint _ismbbprint_l _ismbbpunct _ismbbpunct_l _ismbbtrail _ismbbtrail_l _ismbslead _ismbslead_l _ismbstrail _ismbstrail_l _mbsdup isleadbyte|Çok baytlı dizeleri, Windows 8.x mağazası uygulamaları desteklenmez.|Unicode dizelerini kullanın.|  
+|_isleadbyte_l _ismbbalnum, _ismbbalnum_l, _ismbbalpha, _ismbbalpha _ismbbalpha_l _ismbbgraph _ismbbgraph_l _ismbbkalnum _ismbbkalnum_l _ismbbkana _ismbbkana_l _ismbbkprint _ismbbkprint_l _ismbbkpunct _ismbbkpunct_l _ismbblead _ismbblead_l _ ismbbprint _ismbbprint_l _ismbbpunct _ismbbpunct_l _ismbbtrail _ismbbtrail_l _ismbslead _ismbslead_l _ismbstrail _ismbstrail_l _mbsdup isleadbyte|Çok baytlı dizeleri, Windows 8.x mağazası uygulamaları desteklenmez.|Unicode dizelerini kullanın.|  
 |_tzset|Ortam değişkenleri, Windows 8.x mağazası uygulamaları için kullanılabilir değildir.|Geçici çözüm yok.|  
 |_get_heap_handle, _heapmin|Karşılık gelen Win32 API'larının Windows 8.x mağazası uygulamaları desteklenmez. Ve uygulamaları artık özel yığınlara oluşturabilirsiniz.|Geçici çözüm yok. Ancak, `_get_heap_handle` hata ayıklama yalnızca hata ayıklama için CRT, kullanılabilir.|

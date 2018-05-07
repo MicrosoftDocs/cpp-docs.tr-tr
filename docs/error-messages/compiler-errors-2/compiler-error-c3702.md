@@ -2,11 +2,8 @@
 title: Derleyici Hatası C3702 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: ''
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3702
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3702
 ms.assetid: 14fcc20e-4404-45d7-be54-e4f09332fa5a
-caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4dfc7390a6755010f1b40dadba5b79b8bb5a784d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 22c1ab2e52746e7a2e4b418eab9c3afa63ef2377
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3702"></a>Derleyici Hatası C3702
 'function': ATL COM olaylar için gereklidir  

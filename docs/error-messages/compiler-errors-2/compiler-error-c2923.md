@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2923 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2923 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2923
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2923
 ms.assetid: 6b92933b-13ef-4124-99d9-b89f9fdae030
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ac40932aaabb711a1f4088fc48280a1c18c3696
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b71470ed288abe0a0868c788917dfcecdeeb914a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2923"></a>Derleyici Hatası C2923
 'type': 'tanımlayıcısı' parametresi 'param' için geçerli bir şablon tür bağımsız değişkeni değil  

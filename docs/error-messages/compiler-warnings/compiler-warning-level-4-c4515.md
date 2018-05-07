@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 4) C4515 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 4) C4515 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4515
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4515
 ms.assetid: 167b5177-3f89-418b-b6c8-7de634f6b28f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53fbb6ad008ab004d689dcd8dbb0a1e3341256d5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 42bdf6edbd55f533a01c5c430ed328ded7e71dde
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-4-c4515"></a>Derleyici Uyarısı (düzey 4) C4515
 'namespace': ad alanı kendisini kullanır  

@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2272 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2272 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2272
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2272
 ms.assetid: 1517706a-9c27-452e-9b10-3424b3d232bc
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa5a23c636b89e3b3c234881a9b2c43d4a288bbb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e969e7cadadf1102dadfb8089a847046731b568f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2272"></a>Derleyici Hatası C2272
 'function': değiştiricileri statik üye işlevleri izin verilmiyor  

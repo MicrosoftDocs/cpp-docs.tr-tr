@@ -1,12 +1,9 @@
 ---
-title: "NMAKE önemli hatası U1088 | Microsoft Docs"
-ms.custom: 
+title: NMAKE önemli hatası U1088 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - U1088
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - U1088
 ms.assetid: 75f3527b-9923-408b-a66e-701322c63803
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 509970bca2794bb272bd325a239260acd38c5876
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c3934e39cd87bd41432e90af1b7053815e5e44ad
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="nmake-fatal-error-u1088"></a>NMAKE Önemli Hatası U1088
 Geçersiz ayırıcı '::' çıkarım kuralı üzerinde  

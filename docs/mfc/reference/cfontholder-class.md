@@ -1,12 +1,9 @@
 ---
-title: "CFontHolder sınıfı | Microsoft Docs"
-ms.custom: 
+title: CFontHolder sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CFontHolder
@@ -35,17 +32,15 @@ helpviewer_keywords:
 - CFontHolder [MFC], SetFont
 - CFontHolder [MFC], m_pFont
 ms.assetid: 728ab472-0c97-440d-889f-1324c6e1b6b8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd5f13f2ec48f38fde140361d31a5e08ae6228b9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d5cb28b738822b3e35aa840c731eb11bc2c2b83d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cfontholder-class"></a>CFontHolder sınıfı
 Stok Font özelliği uygular ve bir Windows yazı tipi nesnesi işlevselliği kapsar ve `IFont` arabirimi.  
@@ -84,7 +79,7 @@ class CFontHolder
 |[CFontHolder::m_pFont](#m_pfont)|Bir işaretçi `CFontHolder` nesnenin `IFont` arabirimi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CFontHolder`bir taban sınıfı yok.  
+ `CFontHolder` bir taban sınıfı yok.  
   
  Özel yazı tipi özelliklerini denetlemek için uygulamak için bu sınıf kullanın. Makaleyi gibi özellikleri oluşturma hakkında daha fazla bilgi için bkz: [ActiveX denetimleri: yazı tiplerini kullanarak](../../mfc/mfc-activex-controls-using-fonts.md).  
   
@@ -94,7 +89,7 @@ class CFontHolder
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxctl.h  
   
-##  <a name="cfontholder"></a>CFontHolder::CFontHolder  
+##  <a name="cfontholder"></a>  CFontHolder::CFontHolder  
  Oluşturan bir `CFontHolder` nesnesi.  
   
 ```  
@@ -108,7 +103,7 @@ explicit CFontHolder(LPPROPERTYNOTIFYSINK pNotify);
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız `InitializeFont` kullanmadan önce sonuç nesnesi başlatılamadı.  
   
-##  <a name="getdisplaystring"></a>CFontHolder::GetDisplayString  
+##  <a name="getdisplaystring"></a>  CFontHolder::GetDisplayString  
  Bir kapsayıcının özelliği tarayıcıda görüntülenen bir dize alır.  
   
 ```  
@@ -122,7 +117,7 @@ BOOL GetDisplayString(CString& strValue);
 ### <a name="return-value"></a>Dönüş Değeri  
  Dize başarıyla alınırsa sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="getfontdispatch"></a>CFontHolder::GetFontDispatch  
+##  <a name="getfontdispatch"></a>  CFontHolder::GetFontDispatch  
  Yazı tipinin dağıtma arabirimi bir işaretçi almak için bu işlevini çağırın.  
   
 ```  
@@ -135,7 +130,7 @@ LPFONTDISP GetFontDispatch();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı `InitializeFont` çağırmadan önce `GetFontDispatch`.  
   
-##  <a name="getfonthandle"></a>CFontHolder::GetFontHandle  
+##  <a name="getfonthandle"></a>  CFontHolder::GetFontHandle  
  Bir Windows yazı tipi için bir tanıtıcı almak için bu işlevini çağırın.  
   
 ```  
@@ -164,7 +159,7 @@ HFONT GetFontHandle(
   
  Hiçbir parametre sürüm ekran için doğru boyutta bir yazı tipi için bir tanıtıcı döndürür.  
   
-##  <a name="initializefont"></a>CFontHolder::InitializeFont  
+##  <a name="initializefont"></a>  CFontHolder::InitializeFont  
  Başlatır bir `CFontHolder` nesnesi.  
   
 ```  
@@ -187,14 +182,14 @@ void InitializeFont(
   
  Oluşturduktan sonra bu işlev çağrısı bir `CFontHolder` nesnesi.  
   
-##  <a name="m_pfont"></a>CFontHolder::m_pFont  
+##  <a name="m_pfont"></a>  CFontHolder::m_pFont  
  Bir işaretçi `CFontHolder` nesnenin `IFont` arabirimi.  
   
 ```  
 LPFONT m_pFont;  
 ```  
   
-##  <a name="querytextmetrics"></a>CFontHolder::QueryTextMetrics  
+##  <a name="querytextmetrics"></a>  CFontHolder::QueryTextMetrics  
  Tarafından temsil edilen fiziksel yazı tipi hakkında bilgi alır `CFontHolder` nesnesi.  
   
 ```  
@@ -205,14 +200,14 @@ void QueryTextMetrics(LPTEXTMETRIC lptm);
  `lptm`  
  Bir işaretçi bir [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) bilgi alacak yapısı.  
   
-##  <a name="releasefont"></a>CFontHolder::ReleaseFont  
+##  <a name="releasefont"></a>  CFontHolder::ReleaseFont  
  Bu işlev bağlantısını keser `CFontHolder` nesnesinin kendi `IFont` arabirimi.  
   
 ```  
 void ReleaseFont();
 ```  
   
-##  <a name="select"></a>CFontHolder::Select  
+##  <a name="select"></a>  CFontHolder::Select  
  Belirtilen cihaz bağlamına denetiminizin yazı tipi seçmek için bu işlevini çağırın.  
   
 ```  
@@ -238,7 +233,7 @@ CFont* Select(
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetFontHandle](#getfonthandle) bir irdelemesi `cyLogical` ve `cyHimetric` parametreleri.  
   
-##  <a name="setfont"></a>CFontHolder::SetFont  
+##  <a name="setfont"></a>  CFontHolder::SetFont  
  Varolan bir yazı tipi serbest bırakır ve bağlayan `CFontHolder` nesnesine bir `IFont` arabirimi.  
   
 ```  

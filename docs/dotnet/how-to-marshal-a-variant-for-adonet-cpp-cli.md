@@ -1,13 +1,10 @@
 ---
 title: "Nasıl yapılır: ADO.NET için bir VARIANT'ı sıralama (C + +/ CLI) | Microsoft Docs"
-ms.custom: 
+ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - ADO.NET [C++], marshaling VARIANT types
 - VARIANT
 ms.assetid: 67a180a7-5691-48ab-8d85-7f75a68dde91
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 504f9553b85acefa085a7a8d6c85768ff934bab7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b442dcce2cdde28de8db1610971dd72dba84ab52
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="how-to-marshal-a-variant-for-adonet-ccli"></a>Nasıl yapılır: ADO.NET için bir VARIANT'ı Sıralama (C++/CLI)
 Yerel ekleneceği gösterilmektedir `VARIANT` bir veritabanı ve nasıl hazırlanacağını bir <xref:System.Object?displayProperty=fullName> yerel bir veritabanından `VARIANT`.  

@@ -1,12 +1,9 @@
 ---
-title: "CTable sınıfı | Microsoft Docs"
-ms.custom: 
+title: CTable sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL::CTable
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - CTable class
 ms.assetid: f13fdaa3-e198-4557-977d-54b0bbc3454d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c8bf7bb8daa33a69dfbc6a3de41171004244cbd5
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: e12ec9f7cc7db4da78df8f3b49ed4fdadef3f769
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ctable-class"></a>CTable Sınıfı
 Basit bir satır kümesinde (bir parametre olmadan) doğrudan erişmesini sağlar.  

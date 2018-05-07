@@ -1,12 +1,9 @@
 ---
-title: "CProcedures, Cprocedureınfo | Microsoft Docs"
-ms.custom: 
+title: CProcedures, Cprocedureınfo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CProcedures
@@ -29,18 +26,16 @@ helpviewer_keywords:
 - m_szDefinition
 - CProcedures typedef class
 ms.assetid: d0c7375e-ee0c-441d-aae6-6108150860a0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ac55323f3c3ed22c1cb90fdd2c2eb848b0fb9cd1
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 643904ac0a1887f2812ec19420180560dcd568b2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cprocedures-cprocedureinfo"></a>CProcedures, CProcedureInfo
 Çağrı typedef sınıfı **CProcedures** parametre sınıfı uygulamak için **Cprocedureınfo**.  

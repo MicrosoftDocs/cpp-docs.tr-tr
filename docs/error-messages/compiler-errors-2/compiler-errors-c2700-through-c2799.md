@@ -1,12 +1,9 @@
 ---
-title: "Derleyici hataları C2700 C2799 aracılığıyla | Microsoft Docs"
-ms.custom: 
+title: Derleyici hataları C2700 C2799 aracılığıyla | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2716
@@ -49,17 +46,15 @@ helpviewer_keywords:
 dev_langs:
 - C++
 ms.assetid: 6ee257bb-94bc-42b9-af2c-3c73926afba4
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd610e74ec877229fdc720ed3c57c5a653370d94
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8cab784c772b8b0faac2bca2bdc3ff7a3465b551
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-errors-c2700-through-c2799"></a>Derleyici hataları C2700 C2799 aracılığıyla
 

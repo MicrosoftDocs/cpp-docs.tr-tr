@@ -1,12 +1,9 @@
 ---
-title: "CD2DSizeF sınıfı | Microsoft Docs"
-ms.custom: 
+title: CD2DSizeF sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CD2DSizeF
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - CD2DSizeF [MFC], CD2DSizeF
 - CD2DSizeF [MFC], IsNull
 ms.assetid: f486a1e1-997d-4286-8cb9-26369dc82055
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f19063c29c7cbb08fadad4d55724dbbdad3ff58d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0093c92604013e4c1aef4046f244d7bcd3f71958
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cd2dsizef-class"></a>CD2DSizeF sınıfı
 D2D1_SIZE_F için sarmalayıcı.  
@@ -68,7 +63,7 @@ class CD2DSizeF : public D2D1_SIZE_F;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxrendertarget.h  
   
-##  <a name="cd2dsizef"></a>CD2DSizeF::CD2DSizeF  
+##  <a name="cd2dsizef"></a>  CD2DSizeF::CD2DSizeF  
  CSize nesnesinden CD2DSizeF nesnesi oluşturur.  
   
 ```  
@@ -92,7 +87,7 @@ CD2DSizeF(
  `cy`  
  Kaynak yüksekliği  
   
-##  <a name="isnull"></a>CD2DSizeF::IsNull  
+##  <a name="isnull"></a>  CD2DSizeF::IsNull  
  Bir ifade (boş) geçerli veri içerip içermediğini gösteren bir Boole değeri döndürür.  
   
 ```  
@@ -102,7 +97,7 @@ BOOL IsNull() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Genişlik ve yükseklik boş ise TRUE; Aksi takdirde FALSE.  
   
-##  <a name="operator_csize"></a>CD2DSizeF::operator CSize  
+##  <a name="operator_csize"></a>  CD2DSizeF::operator CSize  
  CD2DSizeF CSize nesnesine dönüştürür.  
   
 ```  

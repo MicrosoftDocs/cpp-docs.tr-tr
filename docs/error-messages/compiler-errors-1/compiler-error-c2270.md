@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2270 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2270 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2270
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2270
 ms.assetid: b52c068e-0b61-42e7-b775-4d57b3ddcba0
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b53e71e344d37fc9951fdb5b4a2ef75cf9c0012
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8bbafbf35f2aed6d6bddc3298ecfe0e1bf9912e7
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2270"></a>Derleyici Hatası C2270
 'function': değiştiricileri dahil olmayan işlevlere izin verilmiyor  

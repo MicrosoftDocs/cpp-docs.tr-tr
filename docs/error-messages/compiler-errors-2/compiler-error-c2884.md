@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2884 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2884 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2884
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2884
 ms.assetid: 8b4d43e3-3fb5-4360-86c8-de59d8736d4f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72fdf38e9aa2ec01a4ee8018cc24f526b2a144da
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 41bacfc53f8b1f14a9b7409a43db39fd943739e5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2884"></a>Derleyici Hatası C2884
 'name': yerel işlevi 'function' kullanarak bildirimi çakışıyor tarafından sunulan  

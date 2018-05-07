@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2654 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2654 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2654
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2654
 ms.assetid: ca7de1bd-576b-40bf-96fc-a91984827d20
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcb6ca8de876c94840e2efe98268128ec9021fab
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6b28fb3de46d9071c9ee19711344c5b41e337934
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2654"></a>Derleyici Hatası C2654
 'tanımlayıcısı': üye işlevi dışında erişim üye girişimi  

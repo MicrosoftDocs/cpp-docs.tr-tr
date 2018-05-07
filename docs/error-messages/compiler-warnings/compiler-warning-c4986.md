@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı C4986 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı C4986 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4986
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4986
 ms.assetid: a3a7b008-29dd-4203-85f3-7740ab6790bb
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c83c03d746949edd880e815a578dc437e9d1d1ce
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b5c5342a65e9f900582246bb007d9dd67338dd8e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-c4986"></a>Derleyici Uyarısı C4986
 'function': özel durum belirtimi önceki bildirimi eşleşmiyor  

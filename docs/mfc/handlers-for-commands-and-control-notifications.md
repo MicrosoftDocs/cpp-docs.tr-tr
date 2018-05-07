@@ -1,13 +1,10 @@
 ---
-title: "Komutlar ve denetim bildirimleri için işleyiciler | Microsoft Docs"
-ms.custom: 
+title: Komutlar ve denetim bildirimleri için işleyiciler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - notifications [MFC], handlers for control
 - handlers [MFC], command
 ms.assetid: 20f57f4a-f577-4c09-80a2-43faf32a1c2e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 748bdd1a2ce6b94a2c935df94de68767ee36875e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7e6492c6ecc4c21c5c978ad031fed7182f2acee4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="handlers-for-commands-and-control-notifications"></a>Komutlar ve Denetim Bildirimleri için İşleyiciler
 Komutları veya denetim bildirimi iletileri için hiçbir varsayılan işleyiciler vardır. Bu nedenle, bu kategorilerdeki iletileri için işleyicileri adlandırma, yalnızca kural tarafından bağlıdır. Bir işleyiciye komut veya denetim bildirim eşlediğinizde özellikleri windows komut kimliği veya denetim bildirimi koduna göre bir ad önerir. Önerilen adı kabul edin veya değiştirmek.  

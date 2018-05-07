@@ -1,12 +1,9 @@
 ---
-title: "Komut satırı uyarısı D9026 | Microsoft Docs"
-ms.custom: 
+title: Komut satırı uyarısı D9026 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - D9026
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - D9026
 ms.assetid: 149fe5e3-5329-4be8-b871-49dfd423aaba
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9127ad1887d476e5460798f806c2db1ff3144de3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9e2d99573ee46c51178cc2fe995fa0f526b800f9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="command-line-warning-d9026"></a>Komut Satırı Uyarısı D9026
 tüm komut satırı seçenekleri Uygula  

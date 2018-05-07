@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C3005 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3005 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C3005
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3005
 ms.assetid: 30bad565-e79f-4c3f-82cb-a74bd0baab8f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ce2fa62f525f5f322e0b45f35d129dbd74166ec
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 80c0bdb0f17670c5acd178b7eadcbc6d3868637c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3005"></a>Derleyici Hatası C3005
 'error_text': beklenmeyen bir belirteç OpenMP 'yönergesi' yönergesi karşılaştı  

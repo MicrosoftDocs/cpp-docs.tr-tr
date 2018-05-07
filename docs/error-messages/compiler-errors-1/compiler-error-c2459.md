@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2459 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2459 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2459
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2459
 ms.assetid: 81e29f4c-5b60-40fb-9557-1cdc630d77e8
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 702b7f29cf0fe8be51f073e66efe701824ab0793
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6013720b55892ffd34e1faf132a69842e4bceb50
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2459"></a>Derleyici Hatası C2459
 'tanımlayıcısı': tanımlanıyorsa; Anonim bir üye olarak eklenemez  

@@ -1,12 +1,9 @@
 ---
-title: "CPen sınıfı | Microsoft Docs"
-ms.custom: 
+title: CPen sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CPen
@@ -27,17 +24,15 @@ helpviewer_keywords:
 - CPen [MFC], GetExtLogPen
 - CPen [MFC], GetLogPen
 ms.assetid: 93175a3a-d46c-4768-be8d-863254f97a5f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51ea9aadc5d5ca8fb5a5a253d2ddb5972bf0dfdc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 995e3f85ec21cae1be18f0bf7b6548c912ca5254
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cpen-class"></a>CPen sınıfı
 Windows grafik cihaz arabirimi (GDI) kalem yalıtır.  
@@ -85,7 +80,7 @@ class CPen : public CGdiObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="cpen"></a>CPen::CPen  
+##  <a name="cpen"></a>  CPen::CPen  
  Oluşturan bir `CPen` nesnesi.  
   
 ```  
@@ -124,7 +119,7 @@ CPen(
   
 - **PS_INSIDEFRAME** sınırlayıcı dikdörtgenini belirtin Windows GDI çıkış işlevleri tarafından üretilen kapalı şekiller çerçeve içine bir satır çizer kalem oluşturur (örneğin, **elips**, **dikdörtgen** , `RoundRect`, `Pie`, ve `Chord` üye işlevleri). Bu stili sınırlayıcı dikdörtgenini belirtmeyin Windows GDI çıkış işlevleri ile kullanıldığında (örneğin, `LineTo` üye işlevi), kalem çizim alanının çerçevesi tarafından sınırlı değildir.  
   
- İkinci sürümü `CPen` Oluşturucusu türü, stil, son harf ve birleştirme öznitelikleri bileşimini belirtir. Bit düzeyinde OR işleci (&#124;) kullanarak her kategori değerleri birleştirilmelidir. Kalem türü aşağıdaki değerlerden biri olabilir:  
+ İkinci sürümü `CPen` Oluşturucusu türü, stil, son harf ve birleştirme öznitelikleri bileşimini belirtir. Bit düzeyinde OR işleci kullanarak her kategori değerleri birleştirilmelidir (&#124;). Kalem türü aşağıdaki değerlerden biri olabilir:  
   
 - **PS_GEOMETRIC** geometrik kalem oluşturur.  
   
@@ -179,7 +174,7 @@ CPen(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#99](../../mfc/codesnippet/cpp/cpen-class_1.cpp)]  
   
-##  <a name="createpen"></a>CPen::CreatePen  
+##  <a name="createpen"></a>  CPen::CreatePen  
  Belirtilen stilini, genişlik ve fırça özniteliklerini mantıksal yüzeysel veya geometrik kalem oluşturur ve ona iliştirir `CPen` nesnesi.  
   
 ```  
@@ -243,7 +238,7 @@ BOOL CreatePen(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#100](../../mfc/codesnippet/cpp/cpen-class_2.cpp)]  
   
-##  <a name="createpenindirect"></a>CPen::CreatePenIndirect  
+##  <a name="createpenindirect"></a>  CPen::CreatePenIndirect  
  Stil, genişlik ve gösterdiği yapısı verilen renk sahip kalem başlatır `lpLogPen`.  
   
 ```  
@@ -265,7 +260,7 @@ BOOL CreatePenIndirect(LPLOGPEN lpLogPen);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#101](../../mfc/codesnippet/cpp/cpen-class_3.cpp)]  
   
-##  <a name="fromhandle"></a>CPen::FromHandle  
+##  <a name="fromhandle"></a>  CPen::FromHandle  
  Bir işaretçi döndüren bir `CPen` Windows GDI kalem nesnesi için bir tanıtıcı verilen nesnesi.  
   
 ```  
@@ -274,7 +269,7 @@ static CPen* PASCAL FromHandle(HPEN hPen);
   
 ### <a name="parameters"></a>Parametreler  
  *hPen*  
- `HPEN`Windows GDI kalem işleyin.  
+ `HPEN` Windows GDI kalem işleyin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi bir `CPen` nesne başarılı; Aksi takdirde **NULL**.  
@@ -285,7 +280,7 @@ static CPen* PASCAL FromHandle(HPEN hPen);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#105](../../mfc/codesnippet/cpp/cpen-class_4.cpp)]  
   
-##  <a name="getextlogpen"></a>CPen::GetExtLogPen  
+##  <a name="getextlogpen"></a>  CPen::GetExtLogPen  
  Alır bir **EXTLOGPEN** yapısı temel.  
   
 ```  
@@ -317,7 +312,7 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
   
  [!code-cpp[NVC_MFCDocView#102](../../mfc/codesnippet/cpp/cpen-class_5.cpp)]  
   
-##  <a name="getlogpen"></a>CPen::GetLogPen  
+##  <a name="getlogpen"></a>  CPen::GetLogPen  
  Alır bir `LOGPEN` yapısı temel.  
   
 ```  
@@ -347,7 +342,7 @@ int GetLogPen(LOGPEN* pLogPen);
   
  [!code-cpp[NVC_MFCDocView#103](../../mfc/codesnippet/cpp/cpen-class_6.cpp)]  
   
-##  <a name="operator_hpen"></a>CPen::operator HPEN  
+##  <a name="operator_hpen"></a>  CPen::operator HPEN  
  Ekli Windows GDI işleyicisini alır `CPen` nesnesi.  
   
 ```  

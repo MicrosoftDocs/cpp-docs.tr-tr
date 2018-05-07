@@ -1,12 +1,9 @@
 ---
-title: "Icommandtextımpl::getcommandtext | Microsoft Docs"
-ms.custom: 
+title: Icommandtextımpl::getcommandtext | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - GetCommandText
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - GetCommandText method
 ms.assetid: 0f8da470-b1c3-4573-974f-1acc111e3984
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a5da83e0be8b15c317e9bf97d2f11acc3d7f85e2
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: e2f52f17258e4a317f58e40a60583998673f2efd
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="icommandtextimplgetcommandtext"></a>ICommandTextImpl::GetCommandText
 Son çağrı tarafından ayarlanan metin komutu döndürür [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).  

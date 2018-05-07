@@ -1,12 +1,9 @@
 ---
-title: IRowsetUpdateImpl::m_mapCachedData | Microsoft Docs
-ms.custom: 
+title: IRowsetUpdateImpl::m_mapcacheddata | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - IRowsetUpdateImpl.m_mapCachedData
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - m_mapCachedData
 ms.assetid: 65131743-8580-48c8-bb22-68f17c9dfa13
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 55a48b9a6636a95ee4b91aa15c820560ffa0f9d5
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: bd19f8706e50d1eefb26dadfb837d8bd4f13f061
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="irowsetupdateimplmmapcacheddata"></a>IRowsetUpdateImpl::m_mapCachedData
 Ertelenmiş işlemi için orijinal verileri içeren bir eşleme.  

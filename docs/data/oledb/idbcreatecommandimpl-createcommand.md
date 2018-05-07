@@ -1,12 +1,9 @@
 ---
-title: IDBCreateCommandImpl::CreateCommand | Microsoft Docs
-ms.custom: 
+title: Idbcreatecommandımpl::CreateCommand | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - IDBCreateCommandImpl.CreateCommand
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - CreateCommand method
 ms.assetid: 50ffbf8b-2c07-4bcb-96c5-ffce4519c7f7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 83566713a42de25fb2c0e515daa94ee61eed53ed
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 709f734ad0349ea7908466958e282a8ca2a5c2db
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="idbcreatecommandimplcreatecommand"></a>IDBCreateCommandImpl::CreateCommand
 Yeni bir komut oluşturur ve istenen arabirimi döndürür.  

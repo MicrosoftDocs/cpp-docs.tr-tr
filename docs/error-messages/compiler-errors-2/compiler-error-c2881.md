@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2881 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2881 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2881
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2881
 ms.assetid: b49c63c2-b064-4d4b-a75e-ddd2af947522
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6f34c3f48e90ce773f23068bd7f0b3712197ec9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 68be8efee689caab28c420d745bdfb59fb25f641
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2881"></a>Derleyici Hatası C2881
 'namespace1': 'namespace2' için bir diğer ad olarak kullanılıyor  

@@ -1,13 +1,10 @@
 ---
-title: "Win32 Internet Uzantıları (WinINet) | Microsoft Docs"
-ms.custom: 
+title: Win32 Internet Uzantıları (WinINet) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - client applications [MFC], Win32 Internet
 - WinInet classes [MFC], about WinInet classes
 ms.assetid: f8c80f0b-ce14-4f0d-a3cf-4f7d8c5cca59
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a3730c7e0ae1dbbae299ddbe6128044effa101a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 32e4f236977884924e611eed45136a76c1ad6527
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="win32-internet-extensions-wininet"></a>Win32 Internet Uzantıları (WinInet)
 Internet istemci uygulaması gopher, FTP veya HTTP gibi Internet protokolleri kullanarak bir ağ veri kaynağından (sunucu) bilgi erişen bir programdır. Internet istemci uygulaması, örneğin hava durumu eşlemeleri, hisse senedi fiyatları veya gazete başlıkları gibi veri almak için bir sunucu erişebilir. Internet istemcisi sunucunun bir dış ağa (Internet) veya (bazen intranet denir) bir iç ağ erişebilirsiniz.  

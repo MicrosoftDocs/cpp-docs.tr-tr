@@ -1,12 +1,9 @@
 ---
-title: "Proje derleme hatası PRJ0024 | Microsoft Docs"
-ms.custom: 
+title: Proje derleme hatası PRJ0024 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - PRJ0024
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - PRJ0024
 ms.assetid: 8bde6368-6c1b-4e04-bc5e-3c6d0b8fa1d7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2cf9ad974856f132599932a32b954e50453adf56
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 59bf76aba80093bf9e8e653bdfb9fad49687a501
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="project-build-error-prj0024"></a>Proje Derleme Hatası PRJ0024
 Unicode yolu 'path' kullanıcının ANSI kod sayfasına çevrilemedi.  

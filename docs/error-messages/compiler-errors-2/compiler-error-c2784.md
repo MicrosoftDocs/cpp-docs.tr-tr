@@ -2,11 +2,8 @@
 title: Derleyici Hatası C2784 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: ''
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2784
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2784
 ms.assetid: 3d761fe2-881c-48bd-afae-e2e714e20473
-caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7436f86da574763f3f19e7cc5eb44a9921471739
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: beca5e3db426828eeec884cfc8e5e6048006fcd5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2784"></a>Derleyici Hatası C2784
 'bildirimi': 'type' için şablon bağımsız değişken 'türünden' modülüne yapılan değil  

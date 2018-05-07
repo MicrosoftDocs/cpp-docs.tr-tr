@@ -1,12 +1,9 @@
 ---
-title: "CMonthCalCtrl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMonthCalCtrl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CMonthCalCtrl
@@ -99,17 +96,15 @@ helpviewer_keywords:
 - CMonthCalCtrl [MFC], SizeMinReq
 - CMonthCalCtrl [MFC], SizeRectToMin
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dad90540f74438ac17cfe1d5e14963492ee6d371
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9f8dd962a06d6c7edadcdd029bd83d44b251aec8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl sınıfı
 Aylık takvim denetiminin işlevselliği kapsar.  
@@ -201,7 +196,7 @@ class CMonthCalCtrl : public CWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdtctl.h  
   
-##  <a name="cmonthcalctrl"></a>CMonthCalCtrl::CMonthCalCtrl  
+##  <a name="cmonthcalctrl"></a>  CMonthCalCtrl::CMonthCalCtrl  
  Oluşturan bir `CMonthCalCtrl` nesnesi.  
   
 ```  
@@ -211,7 +206,7 @@ CMonthCalCtrl();
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız **oluşturma** nesneyi oluşturduktan sonra.  
   
-##  <a name="create"></a>CMonthCalCtrl::Create  
+##  <a name="create"></a>  CMonthCalCtrl::Create  
  Aylık takvim denetiminin oluşturur ve ona ekler `CMonthCalCtrl` nesnesi.  
   
 ```  
@@ -264,7 +259,7 @@ virtual BOOL Create(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CMonthCalCtrl#1](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_1.cpp)]  
   
-##  <a name="getcalendarborder"></a>CMonthCalCtrl::GetCalendarBorder  
+##  <a name="getcalendarborder"></a>  CMonthCalCtrl::GetCalendarBorder  
  Geçerli aylık takvim denetiminin kenarlık genişliğini alır.  
   
 ```  
@@ -277,7 +272,7 @@ int GetCalendarBorder() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [MCM_GETCALENDARBORDER](http://msdn.microsoft.com/library/windows/desktop/bb760945) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="getcalendarcount"></a>CMonthCalCtrl::GetCalendarCount  
+##  <a name="getcalendarcount"></a>  CMonthCalCtrl::GetCalendarCount  
  Geçerli ay Takvim denetiminde gösterilen takvimleri sayısını alır.  
   
 ```  
@@ -290,7 +285,7 @@ int GetCalendarCount() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [MCM_GETCALENDARCOUNT](http://msdn.microsoft.com/library/windows/desktop/bb760947) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="getcalendargridinfo"></a>CMonthCalCtrl::GetCalendarGridInfo  
+##  <a name="getcalendargridinfo"></a>  CMonthCalCtrl::GetCalendarGridInfo  
  Geçerli aylık takvim denetiminin ilgili bilgileri alır.  
   
 ```  
@@ -301,10 +296,10 @@ BOOL GetCalendarGridInfo(PMCGRIDINFO pmcGridInfo) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out]`pmcGridInfo`|İşaretçi bir [MCGRIDINFO](http://msdn.microsoft.com/library/windows/desktop/bb760925) yapısı geçerli ay Takvim denetimi hakkında bilgi alır. Ayırma ve bu yapı başlatma çağıran sorumludur.|  
+|[out] `pmcGridInfo`|İşaretçi bir [MCGRIDINFO](http://msdn.microsoft.com/library/windows/desktop/bb760925) yapısı geçerli ay Takvim denetimi hakkında bilgi alır. Ayırma ve bu yapı başlatma çağıran sorumludur.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [MCM_GETCALENDARGRIDINFO](http://msdn.microsoft.com/library/windows/desktop/bb760949) Windows SDK'ın açıklanan ileti.  
@@ -319,7 +314,7 @@ BOOL GetCalendarGridInfo(PMCGRIDINFO pmcGridInfo) const;
   
  [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_3.cpp)]  
   
-##  <a name="getcalid"></a>CMonthCalCtrl::GetCalID  
+##  <a name="getcalid"></a>  CMonthCalCtrl::GetCalID  
  Geçerli aylık takvim denetiminin Takvim tanımlayıcısını alır.  
   
 ```  
@@ -334,7 +329,7 @@ CALID GetCalID() const;
   
  Bu yöntem gönderir [MCM_GETCALID](http://msdn.microsoft.com/library/windows/desktop/bb760951) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="getcolor"></a>CMonthCalCtrl::GetColor  
+##  <a name="getcolor"></a>  CMonthCalCtrl::GetColor  
  Ayın bir alanının rengini Takvim denetimi tarafından belirtilen alır `nRegion`.  
   
 ```  
@@ -348,7 +343,7 @@ COLORREF GetColor(int nRegion) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) aylık takvim denetiminin bölümüyle ilişkili renk başarılı olursa belirten değer. Aksi takdirde, bu üye işlevi -1 döndürür.  
   
-##  <a name="getcurrentview"></a>CMonthCalCtrl::GetCurrentView  
+##  <a name="getcurrentview"></a>  CMonthCalCtrl::GetCurrentView  
  Şu anda geçerli ay Takvim denetimi tarafından görüntülenen görünümü alır.  
   
 ```  
@@ -378,7 +373,7 @@ DWORD GetCurrentView() const;
   
  [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#7](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_4.cpp)]  
   
-##  <a name="getcursel"></a>CMonthCalCtrl::GetCurSel  
+##  <a name="getcursel"></a>  CMonthCalCtrl::GetCurSel  
  Şu anda seçili tarihe göre belirtildiği gibi sistem saatini alır.  
   
 ```  
@@ -405,7 +400,7 @@ BOOL GetCurSel(LPSYSTEMTIME pDateTime) const;
   
  MFC'nin uygulamasında `GetCurSel`, belirleyebileceğiniz bir `COleDateTime` kullanımı, bir `CTime` kullanımı, veya bir `SYSTEMTIME` yapı kullanımı.  
   
-##  <a name="getfirstdayofweek"></a>CMonthCalCtrl::GetFirstDayOfWeek  
+##  <a name="getfirstdayofweek"></a>  CMonthCalCtrl::GetFirstDayOfWeek  
  Takvim en sol sütununda görüntülenecek haftanın ilk günü alır.  
   
 ```  
@@ -435,7 +430,7 @@ int GetFirstDayOfWeek(BOOL* pbLocal = NULL) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMonthCalCtrl::SetFirstDayOfWeek](#setfirstdayofweek).  
   
-##  <a name="getmaxselcount"></a>CMonthCalCtrl::GetMaxSelCount  
+##  <a name="getmaxselcount"></a>  CMonthCalCtrl::GetMaxSelCount  
  Ay takvim denetim içinde seçilen gün geçerli maksimum sayısını alır.  
   
 ```  
@@ -451,7 +446,7 @@ int GetMaxSelCount() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMonthCalCtrl::SetMaxSelCount](#setmaxselcount).  
   
-##  <a name="getmaxtodaywidth"></a>CMonthCalCtrl::GetMaxTodayWidth  
+##  <a name="getmaxtodaywidth"></a>  CMonthCalCtrl::GetMaxTodayWidth  
  "Bugün" dizesi geçerli ay Takvim denetimi için en büyük genişliğini alır.  
   
 ```  
@@ -476,7 +471,7 @@ DWORD GetMaxTodayWidth() const;
   
  Bu yöntem gönderir [MCM_GETMAXTODAYWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb760962) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="getminreqrect"></a>CMonthCalCtrl::GetMinReqRect  
+##  <a name="getminreqrect"></a>  CMonthCalCtrl::GetMinReqRect  
  Aylık takvim denetiminin içinde tam bir ay göstermek için gereken en küçük boyut alır.  
   
 ```  
@@ -493,7 +488,7 @@ BOOL GetMinReqRect(RECT* pRect) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [MCM_GETMINREQRECT](http://msdn.microsoft.com/library/windows/desktop/bb760978), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="getmonthdelta"></a>CMonthCalCtrl::GetMonthDelta  
+##  <a name="getmonthdelta"></a>  CMonthCalCtrl::GetMonthDelta  
  Aylık takvim denetiminin kaydırma oranını alır.  
   
 ```  
@@ -506,7 +501,7 @@ int GetMonthDelta() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [MCM_GETMONTHDELTA](http://msdn.microsoft.com/library/windows/desktop/bb760980), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="getmonthrange"></a>CMonthCalCtrl::GetMonthRange  
+##  <a name="getmonthrange"></a>  CMonthCalCtrl::GetMonthRange  
  Ay takvim denetimin görüntüleme yüksek ve düşük sınırlarını temsil eden bilgilerini alır tarih.  
   
 ```  
@@ -556,7 +551,7 @@ int GetMonthRange(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMonthCalCtrl::SetDayState](#setdaystate).  
   
-##  <a name="getrange"></a>CMonthCalCtrl::GetRange  
+##  <a name="getrange"></a>  CMonthCalCtrl::GetRange  
  Aylık takvim denetiminin içinde geçerli minimum ve maksimum tarihleri alır.  
   
 ```  
@@ -594,7 +589,7 @@ DWORD GetRange(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CMonthCalCtrl#2](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_6.cpp)]  
   
-##  <a name="getselrange"></a>CMonthCalCtrl::GetSelRange  
+##  <a name="getselrange"></a>  CMonthCalCtrl::GetSelRange  
  Şu anda kullanıcı tarafından seçilen tarih aralığının üst ve alt sınırlarını temsil eden tarih bilgilerini alır.  
   
 ```  
@@ -628,11 +623,11 @@ BOOL GetSelRange(
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [MCM_GETSELRANGE](http://msdn.microsoft.com/library/windows/desktop/bb760985), Windows SDK'ın açıklandığı gibi. `GetSelRange`kullanmayan bir aylık takvim denetiminin uyguladıysanız başarısız olur **MCS_MULTISELECT** stili.  
+ Bu üye işlevi Win32 ileti davranışını uygulayan [MCM_GETSELRANGE](http://msdn.microsoft.com/library/windows/desktop/bb760985), Windows SDK'ın açıklandığı gibi. `GetSelRange` kullanmayan bir aylık takvim denetiminin uyguladıysanız başarısız olur **MCS_MULTISELECT** stili.  
   
  MFC'nin uygulamasında `GetSelRange`, belirleyebileceğiniz `COleDateTime` kullanımı, bir `CTime` kullanımı, veya bir `SYSTEMTIME` yapı kullanımı.  
   
-##  <a name="gettoday"></a>CMonthCalCtrl::GetToday  
+##  <a name="gettoday"></a>  CMonthCalCtrl::GetToday  
  Aylık takvim denetiminin için "Bugün" olarak belirtilen tarih için tarih bilgisini alır.  
   
 ```  
@@ -657,7 +652,7 @@ BOOL GetToday(LPSYSTEMTIME pDateTime) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CMonthCalCtrl#3](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_7.cpp)]  
   
-##  <a name="hittest"></a>CMonthCalCtrl::HitTest  
+##  <a name="hittest"></a>  CMonthCalCtrl::HitTest  
  Herhangi biri, belirtilen bir konumda hangi aylık takvim denetiminin belirler.  
   
 ```  
@@ -672,9 +667,9 @@ DWORD HitTest(PMCHITTESTINFO pMCHitTest);
  A `DWORD` değeri. Eşit **uHit** üyesi **MCHITTESTINFO** yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `HitTest`kullanan **MCHITTESTINFO** isabet testi hakkında bilgi içeren yapısı.  
+ `HitTest` kullanan **MCHITTESTINFO** isabet testi hakkında bilgi içeren yapısı.  
   
-##  <a name="iscenturyview"></a>CMonthCalCtrl::IsCenturyView  
+##  <a name="iscenturyview"></a>  CMonthCalCtrl::IsCenturyView  
  Geçerli aylık takvim denetiminin geçerli görünümünü century görünüm olup olmadığını gösterir.  
   
 ```  
@@ -682,12 +677,12 @@ BOOL IsCenturyView() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Geçerli görünümü century görünümü ise; Aksi takdirde `false`.  
+ `true` Geçerli görünümü century görünümü ise; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [MCM_GETCURRENTVIEW](http://msdn.microsoft.com/library/windows/desktop/bb760955) Windows SDK'ın açıklanan ileti. Döndürür ileti `MCMV_CENTURY`, bu yöntem `true`.  
   
-##  <a name="isdecadeview"></a>CMonthCalCtrl::IsDecadeView  
+##  <a name="isdecadeview"></a>  CMonthCalCtrl::IsDecadeView  
  Geçerli aylık takvim denetiminin geçerli görünümünü on görünüm olup olmadığını gösterir.  
   
 ```  
@@ -695,12 +690,12 @@ BOOL IsDecadeView() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Geçerli görünümü on görünümü ise; Aksi takdirde `false`.  
+ `true` Geçerli görünümü on görünümü ise; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [MCM_GETCURRENTVIEW](http://msdn.microsoft.com/library/windows/desktop/bb760955) Windows SDK'ın açıklanan ileti. Döndürür ileti `MCMV_DECADE`, bu yöntem `true`.  
   
-##  <a name="ismonthview"></a>CMonthCalCtrl::IsMonthView  
+##  <a name="ismonthview"></a>  CMonthCalCtrl::IsMonthView  
  Geçerli aylık takvim denetiminin geçerli görünümünü ay görünümü olup olmadığını gösterir.  
   
 ```  
@@ -708,12 +703,12 @@ BOOL IsMonthView() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Geçerli görünümü ay görünümü Aksi takdirde `false`.  
+ `true` Geçerli görünümü ay görünümü Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [MCM_GETCURRENTVIEW](http://msdn.microsoft.com/library/windows/desktop/bb760955) Windows SDK'ın açıklanan ileti. Döndürür ileti `MCMV_MONTH`, bu yöntem `true`.  
   
-##  <a name="isyearview"></a>CMonthCalCtrl::IsYearView  
+##  <a name="isyearview"></a>  CMonthCalCtrl::IsYearView  
  Geçerli aylık takvim denetiminin geçerli görünümünü yıl görünüm olup olmadığını gösterir.  
   
 ```  
@@ -721,12 +716,12 @@ BOOL IsYearView() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Geçerli görünümü yıl görünümü ise; Aksi takdirde `false`.  
+ `true` Geçerli görünümü yıl görünümü ise; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [MCM_GETCURRENTVIEW](http://msdn.microsoft.com/library/windows/desktop/bb760955) Windows SDK'ın açıklanan ileti. Döndürür ileti `MCMV_YEAR`, bu yöntem `true`.  
   
-##  <a name="setcalendarborder"></a>CMonthCalCtrl::SetCalendarBorder  
+##  <a name="setcalendarborder"></a>  CMonthCalCtrl::SetCalendarBorder  
  Geçerli aylık takvim denetiminin kenarlık genişliğini ayarlar.  
   
 ```  
@@ -737,7 +732,7 @@ void SetCalendarBorder(int cxyBorder);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`cxyBorder`|Kenarlığın piksel cinsinden genişliği.|  
+|[in] `cxyBorder`|Kenarlığın piksel cinsinden genişliği.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem başarılı olursa, kenarlık genişliği kümesine `cxyBorder` parametresi. Aksi halde, kenarlık genişliği geçerli tarafından belirtilen varsayılan değere sıfırlanır [tema](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx), veya Temalar kullanılmıyorsa sıfır.  
@@ -754,7 +749,7 @@ void SetCalendarBorder(int cxyBorder);
   
  [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#6](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_8.cpp)]  
   
-##  <a name="setcalendarborderdefault"></a>CMonthCalCtrl::SetCalendarBorderDefault  
+##  <a name="setcalendarborderdefault"></a>  CMonthCalCtrl::SetCalendarBorderDefault  
  Geçerli aylık takvim denetiminin kenarlığın varsayılan genişliğini ayarlar.  
   
 ```  
@@ -766,7 +761,7 @@ void SetCalendarBorderDefault();
   
  Bu yöntem gönderir [MCM_SETCALENDARBORDER](http://msdn.microsoft.com/library/windows/desktop/bb760993) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="setcalid"></a>CMonthCalCtrl::SetCalID  
+##  <a name="setcalid"></a>  CMonthCalCtrl::SetCalID  
  Takvim tanımlayıcısı geçerli ay Takvim denetimi için ayarlar.  
   
 ```  
@@ -777,10 +772,10 @@ BOOL SetCalID(CALID calid);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`calid`|Aşağıdakilerden birini [Takvim tanımlayıcısı](http://msdn.microsoft.com/library/windows/desktop/dd317732) sabitleri.|  
+|[in] `calid`|Aşağıdakilerden birini [Takvim tanımlayıcısı](http://msdn.microsoft.com/library/windows/desktop/dd317732) sabitleri.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir takvim tanımlayıcısı Gregoryen (yerelleştirilmiş), Japonca veya Hicri gibi bir bölgeye özgü takvimi belirtir takvimleri. Kullanım `SetCalID` tarafından belirtilen bir takvim görüntülemek için yöntemi `calid` takvim içeriyor yerel bilgisayarınızda yüklü, parametre.  
@@ -797,7 +792,7 @@ BOOL SetCalID(CALID calid);
   
  [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#4](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_9.cpp)]  
   
-##  <a name="setcenturyview"></a>CMonthCalCtrl::SetCenturyView  
+##  <a name="setcenturyview"></a>  CMonthCalCtrl::SetCenturyView  
  Century görüntülemek için geçerli aylık takvim denetiminin ayarlar.  
   
 ```  
@@ -805,12 +800,12 @@ BOOL SetCenturyView();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem [CMonthCalCtrl::SetCurrentView](#setcurrentview) görünümü ayarlanacak yöntemi `MCMV_CENTURY`, century görünümü temsil eder.  
   
-##  <a name="setcolor"></a>CMonthCalCtrl::SetColor  
+##  <a name="setcolor"></a>  CMonthCalCtrl::SetColor  
  Aylık takvim denetiminin belirtilen alanının rengini belirler.  
   
 ```  
@@ -844,7 +839,7 @@ COLORREF SetColor(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CMonthCalCtrl#4](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_10.cpp)]  
   
-##  <a name="setcurrentview"></a>CMonthCalCtrl::SetCurrentView  
+##  <a name="setcurrentview"></a>  CMonthCalCtrl::SetCurrentView  
  Belirtilen görünüm görüntülemek için geçerli aylık takvim denetiminin ayarlar.  
   
 ```  
@@ -855,15 +850,15 @@ BOOL SetCurrentView(DWORD dwNewView);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`dwNewView`|Aylık, yıllık, on veya century görünümü belirtir aşağıdaki değerlerden biri.<br /><br /> MCMV_MONTH: Aylık görünümü<br /><br /> MCMV_YEAR: Yıllık görünümü<br /><br /> MCMV_DECADE: On görünümü<br /><br /> MCMV_CENTURY: Century görünümü|  
+|[in] `dwNewView`|Aylık, yıllık, on veya century görünümü belirtir aşağıdaki değerlerden biri.<br /><br /> MCMV_MONTH: Aylık görünümü<br /><br /> MCMV_YEAR: Yıllık görünümü<br /><br /> MCMV_DECADE: On görünümü<br /><br /> MCMV_CENTURY: Century görünümü|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [MCM_SETCURRENTVIEW](http://msdn.microsoft.com/library/windows/desktop/bb760998) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="setcursel"></a>CMonthCalCtrl::SetCurSel  
+##  <a name="setcursel"></a>  CMonthCalCtrl::SetCurSel  
  Aylık takvim denetiminin şu anda seçili tarihini ayarlar.  
   
 ```  
@@ -888,7 +883,7 @@ BOOL SetCurSel(const CTime& refDateTime);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CMonthCalCtrl#5](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_11.cpp)]  
   
-##  <a name="setdaystate"></a>CMonthCalCtrl::SetDayState  
+##  <a name="setdaystate"></a>  CMonthCalCtrl::SetDayState  
  Görüntü gün içinde aylık takvim denetiminin ayarlar.  
   
 ```  
@@ -913,7 +908,7 @@ BOOL SetDayState(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CMonthCalCtrl#6](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_12.cpp)]  
   
-##  <a name="setdecadeview"></a>CMonthCalCtrl::SetDecadeView  
+##  <a name="setdecadeview"></a>  CMonthCalCtrl::SetDecadeView  
  Ayarlar, geçerli ay Takvim on görünümüne denetler.  
   
 ```  
@@ -921,12 +916,12 @@ BOOL SetDecadeView();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem [CMonthCalCtrl::SetCurrentView](#setcurrentview) görünümü ayarlanacak yöntemi `MCMV_DECADE`, on görünümü temsil eder.  
   
-##  <a name="setfirstdayofweek"></a>CMonthCalCtrl::SetFirstDayOfWeek  
+##  <a name="setfirstdayofweek"></a>  CMonthCalCtrl::SetFirstDayOfWeek  
  Haftanın Takvim en sol sütununda görüntülenecek ayarlar.  
   
 ```  
@@ -951,7 +946,7 @@ BOOL SetFirstDayOfWeek(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CMonthCalCtrl#7](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_13.cpp)]  
   
-##  <a name="setmaxselcount"></a>CMonthCalCtrl::SetMaxSelCount  
+##  <a name="setmaxselcount"></a>  CMonthCalCtrl::SetMaxSelCount  
  Ay takvim denetim içinde seçilen gün sayısını ayarlar.  
   
 ```  
@@ -971,7 +966,7 @@ BOOL SetMaxSelCount(int nMax);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CMonthCalCtrl#8](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_14.cpp)]  
   
-##  <a name="setmonthdelta"></a>CMonthCalCtrl::SetMonthDelta  
+##  <a name="setmonthdelta"></a>  CMonthCalCtrl::SetMonthDelta  
  Aylık takvim denetiminin kaydırma hızı ayarlar.  
   
 ```  
@@ -988,7 +983,7 @@ int SetMonthDelta(int iDelta);
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [MCM_SETMONTHDELTA](http://msdn.microsoft.com/library/windows/desktop/bb761010), Windows SDK'ın açıklandığı gibi.  
   
-##  <a name="setmonthview"></a>CMonthCalCtrl::SetMonthView  
+##  <a name="setmonthview"></a>  CMonthCalCtrl::SetMonthView  
  Ay görüntülemek için geçerli aylık takvim denetiminin ayarlar.  
   
 ```  
@@ -996,7 +991,7 @@ BOOL SetMonthView();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem [CMonthCalCtrl::SetCurrentView](#setcurrentview) görünümü ayarlanacak yöntemi `MCMV_MONTH`, ay görünümü temsil eder.  
@@ -1011,7 +1006,7 @@ BOOL SetMonthView();
   
  [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_15.cpp)]  
   
-##  <a name="setrange"></a>CMonthCalCtrl::SetRange  
+##  <a name="setrange"></a>  CMonthCalCtrl::SetRange  
  Aylık takvim denetiminin için minimum ve maksimum izin verilen tarihleri ayarlar.  
   
 ```  
@@ -1046,7 +1041,7 @@ BOOL SetRange(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMonthCalCtrl::GetRange](#getrange).  
   
-##  <a name="setselrange"></a>CMonthCalCtrl::SetSelRange  
+##  <a name="setselrange"></a>  CMonthCalCtrl::SetSelRange  
  Ay takvim seçimini kümeleri için verilen tarih aralığı denetler.  
   
 ```  
@@ -1078,7 +1073,7 @@ BOOL SetSelRange(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [MCM_SETSELRANGE](http://msdn.microsoft.com/library/windows/desktop/bb761014), Windows SDK'ın açıklandığı gibi. MFC'nin uygulamasında `SetSelRange`, belirleyebileceğiniz `COleDateTime` kullanımı, bir `CTime` kullanımı, veya bir `SYSTEMTIME` yapı kullanımı.  
   
-##  <a name="settoday"></a>CMonthCalCtrl::SetToday  
+##  <a name="settoday"></a>  CMonthCalCtrl::SetToday  
  Takvim denetiminin gün için geçerli ayarlar.  
   
 ```  
@@ -1100,7 +1095,7 @@ void SetToday(const CTime* pDateTime);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CMonthCalCtrl::GetToday](#gettoday).  
   
-##  <a name="setyearview"></a>CMonthCalCtrl::SetYearView  
+##  <a name="setyearview"></a>  CMonthCalCtrl::SetYearView  
  Ayarlar geçerli ay takvim yılı görünümüne denetler.  
   
 ```  
@@ -1108,12 +1103,12 @@ BOOL SetYearView();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem [CMonthCalCtrl::SetCurrentView](#setcurrentview) görünümü ayarlanacak yöntemi `MCMV_YEAR`, yıllık görünümü temsil eder.  
   
-##  <a name="sizeminreq"></a>CMonthCalCtrl::SizeMinReq  
+##  <a name="sizeminreq"></a>  CMonthCalCtrl::SizeMinReq  
  Görüntüler, bir ay Takvim denetimi için en düşük boyut ay görüntüler.  
   
 ```  
@@ -1130,7 +1125,7 @@ BOOL SizeMinReq(BOOL bRepaint = TRUE);
 ### <a name="remarks"></a>Açıklamalar  
  Çağırma `SizeMinReq` başarıyla bir ayın takvim için tüm ay Takvim denetimi görüntüler.  
   
-##  <a name="sizerecttomin"></a>CMonthCalCtrl::SizeRectToMin  
+##  <a name="sizerecttomin"></a>  CMonthCalCtrl::SizeRectToMin  
  Geçerli ay Takvim denetimi için belirtilen dikdörtgene uyan tüm takvimleri içerebilir en küçük dikdörtgen hesaplar.  
   
 ```  
@@ -1141,7 +1136,7 @@ LPRECT SizeRectToMin(LPRECT lpRect);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`lpRect`|İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) takvimleri istenen sayısını içeren bir dikdörtgen tanımlar yapısı.|  
+|[in] `lpRect`|İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) takvimleri istenen sayısını içeren bir dikdörtgen tanımlar yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) büyüklüğü dikdörtgen küçük veya buna eşit olan bir dikdörtgen tanımlar yapısı tarafından tanımlanan `lpRect` parametresi.  

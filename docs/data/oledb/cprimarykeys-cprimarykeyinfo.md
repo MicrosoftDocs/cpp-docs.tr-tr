@@ -1,12 +1,9 @@
 ---
-title: "CPrimaryKeys, Cprimarykeyınfo | Microsoft Docs"
-ms.custom: 
+title: CPrimaryKeys, Cprimarykeyınfo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - m_nOrdinal
@@ -41,18 +38,16 @@ helpviewer_keywords:
 - COLUMN_GUID
 - m_guidColumn
 ms.assetid: c27b97a4-a156-4f66-89e3-95f85d7d6281
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a7c4be146df38e0dd55a09005af27deef175318c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: f10596e66bdca8bef639f680ae838ce9016ad60d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cprimarykeys-cprimarykeyinfo"></a>CPrimaryKeys, CPrimaryKeyInfo
 Çağrı typedef sınıfı **CPrimaryKeys** parametre sınıfı uygulamak için **Cprimarykeyınfo**.  

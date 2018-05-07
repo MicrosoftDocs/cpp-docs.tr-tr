@@ -1,12 +1,9 @@
 ---
-title: "Salt okunur sağlayıcıyı test etme | Microsoft Docs"
-ms.custom: 
+title: Salt okunur sağlayıcıyı test etme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 dev_langs:
 - C++
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - OLE DB providers, calling
 - OLE DB providers, testing
 ms.assetid: e4aa30c1-391b-41f8-ac73-5270e46fd712
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 49f86150afe9116909a137e97a0e04d5a7d54bac
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 703d33f44fae534b206050e85086edb1ccc816f9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="testing-the-read-only-provider"></a>Salt Okunur Sağlayıcıyı Test Etme
 Bir sağlayıcı test etmek için bir tüketici gerekir. Tüketici sağlayıcı ile eşleşebilmesi durumunda yardımcı olur. OLE DB Tüketici Şablonları OLE DB çevresinde ince bir sarmalayıcı olan ve Sağlayıcısı COM nesneleriyle eşleşir. Kaynak tüketici şablonlarıyla geldiği için bir sağlayıcıyla hata ayıklama kolaydır. Tüketici Şablonları ayrıca tüketici uygulamaları geliştirmek için çok küçük ve hızlı bir yolu değildir.  

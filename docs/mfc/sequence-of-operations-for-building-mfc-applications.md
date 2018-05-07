@@ -1,29 +1,24 @@
 ---
-title: "MFC uygulamaları oluşturmak için işlem dizisi | Microsoft Docs"
-ms.custom: 
+title: MFC uygulamaları oluşturmak için işlem dizisi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - applications [MFC], developing
 ms.assetid: 6973c714-fe20-48c6-926b-de88356b3a3d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae1169b438a181e22696502352c19353421469b1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1bafcec75643c292a887b54de1b852609dd251c0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sequence-of-operations-for-building-mfc-applications"></a>MFC Uygulamaları Oluşturmak için İşlem Dizisi
 Aşağıdaki tabloda, MFC Uygulama geliştirirken, genellikle uygulayabilir genel sıra açıklanmaktadır.  
@@ -50,7 +45,7 @@ Aşağıdaki tabloda, MFC Uygulama geliştirirken, genellikle uygulayabilir gene
 |Kaydırma ekleyin.|View sınıfı veya sınıflardan kaydırma desteklemeniz gerekiyorsa, türetilen [CScrollView](../mfc/reference/cscrollview-class.md).|Görünüm penceresi çok küçük olduğunda görünüm kaydırma çubukları otomatik olarak ekler.|  
 |Form görünümleri oluşturun.|View sınıfı veya sınıflardan görünümlerinizi iletişim şablonu kaynaklardaki temel almasını istiyorsanız, türetilen [Cformview'yu](../mfc/reference/cformview-class.md).|Görünüm iletişim şablon kaynağı denetimleri göstermek için kullanır. Kullanıcı denetimden denetim görünümünde sekmesinde.|  
 |Veritabanı formları oluşturun.|Bir form tabanlı veri erişimi uygulama istiyorsanız, görünüm sınıfından türetilen [CRecordView](../mfc/reference/crecordview-class.md) (için ODBC programlama).|Görünüm bir form görünümü gibi çalışır, ancak kendi denetimler alanları için bağlı bir [CRecordset](../mfc/reference/crecordset-class.md) bir veritabanı tablosu temsil eden nesne. MFC veri denetimleri ve kayıt kümesi arasında sizin için taşır.|  
-|Basit bir metin düzenleyicisi oluşturun.|Görünümünüzü basit bir metin düzenleyicisi olmasını istiyorsanız, görünüm sınıfı veya sınıftan türetilen [CEditView](../mfc/reference/ceditview-class.md) veya [CRichEditView](../mfc/reference/cricheditview-class.md).|İşlevler, Pano desteği ve dosya giriş/çıkış düzenleme görünümü sağlar. `CRichEditView`stilde metin sağlar.|  
+|Basit bir metin düzenleyicisi oluşturun.|Görünümünüzü basit bir metin düzenleyicisi olmasını istiyorsanız, görünüm sınıfı veya sınıftan türetilen [CEditView](../mfc/reference/ceditview-class.md) veya [CRichEditView](../mfc/reference/cricheditview-class.md).|İşlevler, Pano desteği ve dosya giriş/çıkış düzenleme görünümü sağlar. `CRichEditView` stilde metin sağlar.|  
 |Bölümlendirici pencereler ekleyin.|Pencere bölme desteklemek istiyorsanız, ekleme bir [CSplitterWnd](../mfc/reference/csplitterwnd-class.md) SDI çerçeve penceresi ya da MDI alt pencere nesnesi ve pencerenin içinde takma [OnCreateClient](../mfc/reference/cframewnd-class.md#oncreateclient) üye işlevi.|Framework kaydırma çubukları yanındaki Bölümlendirici kutusu denetimleri sağlar ve birden çok bölmelere görünümünüzü bölme yönetir. Kullanıcı bir pencere ayırır, framework oluşturur ve ek görünüm nesneleri belgeye ekler.|  
 |Derleme, test ve uygulamanızda hata ayıklama.|Derleme, test ve uygulamanızda hata ayıklama için Visual C++ tesis kullanın.|Visual C++, derleme, bağlantı ve diğer seçenekleri ayarlamanıza olanak sağlar. Ayrıca, kaynak kodu ve sınıf yapısı Gözat sağlar.|  
   

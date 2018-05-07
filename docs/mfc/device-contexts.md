@@ -1,13 +1,10 @@
 ---
-title: "Cihaz bağlamları | Microsoft Docs"
-ms.custom: 
+title: Cihaz bağlamları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -41,17 +38,15 @@ helpviewer_keywords:
 - drawing [MFC], directly into windows
 - painting and device context
 ms.assetid: d0cd51f1-f778-4c7e-bf50-d738d10433c7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26d4a0e32a8b24a72447cf4227be128659316c0b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 45a2f99001d45de71ca3ea8a525152d53d67ee64
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="device-contexts"></a>Cihaz Bağlamları
 Bir cihaz bağlamı bir görünüm veya yazıcı gibi bir aygıtı çizim öznitelikleri hakkında bilgi içeren bir Windows veri yapısıdır. Tüm çizim çağrılar çizim satırları, Şekil ve metinler için Windows API'larını yalıtan bir aygıt-context nesnesi aracılığıyla yapılır. Cihaz bağlamları CİHAZDAN bağımsız çizim Windows izin verir. Cihaz bağlamları ekran, yazıcı veya bir meta dosyası çizmek için kullanılabilir.  
@@ -81,7 +76,7 @@ Bir cihaz bağlamı bir görünüm veya yazıcı gibi bir aygıtı çizim öznit
   
 -   [Yazı tipleri ve metin](http://msdn.microsoft.com/library/windows/desktop/dd144819)  
   
--   [Renkleri](http://msdn.microsoft.com/library/windows/desktop/dd183450)  
+-   [Renkler](http://msdn.microsoft.com/library/windows/desktop/dd183450)  
   
 -   [Koordinat alanları ve dönüştürmeler](http://msdn.microsoft.com/library/windows/desktop/dd183475)  
   

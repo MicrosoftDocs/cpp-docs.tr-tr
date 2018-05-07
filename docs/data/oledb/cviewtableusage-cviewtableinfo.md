@@ -1,12 +1,9 @@
 ---
-title: "CViewTableUsage, Cviewtableınfo | Microsoft Docs"
-ms.custom: 
+title: CViewTableUsage, Cviewtableınfo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - m_szTableSchema
@@ -32,18 +29,16 @@ helpviewer_keywords:
 - m_szTableCatalog
 - m_szTableName
 ms.assetid: 10b74f2a-8010-4f97-acc2-ffce07349981
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 470a7be46c5afbae5f6d3a1fb88377e56ea0e1fa
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 2b66c159e2825884ef59fbfb278b5eddd99d38c0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cviewtableusage-cviewtableinfo"></a>CViewTableUsage, CViewTableInfo
 Çağrı typedef sınıfı **CViewTableUsage** parametre sınıfı uygulamak için **Cviewtableınfo**.  

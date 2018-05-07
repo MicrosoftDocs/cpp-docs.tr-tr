@@ -1,13 +1,10 @@
 ---
-title: "Kayıt alanı değişimi (RFX) | Microsoft Docs"
-ms.custom: 
+title: Kayıt alanı değişimi (RFX) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - data [MFC]
 - ODBC [C++], RFX
 ms.assetid: f5ddfbf0-2901-48d7-9848-4fb84de3c7ee
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 50fc0aea1ef50124cd98b0d0498b767d1f00e5c0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8b214cf05115056efc96c4a078dedd4b7f9a3a1a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="record-field-exchange-rfx"></a>Kayıt Alanı Değişimi (RFX)
 MFC ODBC veritabanı sınıfları veri kaynağı arasında veri taşımayı otomatikleştirmek ve [kayıt kümesi](../../data/odbc/recordset-odbc.md) nesnesi. Öğesinden bir sınıf türetin zaman [CRecordset](../../mfc/reference/crecordset-class.md) ve toplu satır getirme kullanmayın, kayıt alanı değişimi (RFX) mekanizması tarafından aktarılan veriler.  

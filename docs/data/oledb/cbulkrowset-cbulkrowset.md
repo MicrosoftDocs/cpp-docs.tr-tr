@@ -1,12 +1,9 @@
 ---
 title: CBulkRowset::CBulkRowset | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL.CBulkRowset<TAccessor>.CBulkRowset
@@ -22,18 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - CBulkRowset class, constructor
 ms.assetid: 930e3562-63b6-4dd9-b248-8e8fb27d9c63
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f174dbcf8be45927eab6821cbd42cced0248b56e
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 61f0e9d64e7bd33764494c1f5951f1331088fc4d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cbulkrowsetcbulkrowset"></a>CBulkRowset::CBulkRowset
 Yeni bir `CBulkRowset` nesne ve varsayılan satır sayısı 10'a ayarlar.  

@@ -1,12 +1,9 @@
 ---
 title: CDynamicAccessor::CDynamicAccessor | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CDynamicAccessor::CDynamicAccessor
@@ -18,18 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - CDynamicAccessor class, constructor
 ms.assetid: bf40fe81-2c85-473e-9075-51ad9b060b39
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4d660b3e7fa537e7abd3ea2b713e5b4f7a0ce798
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 80446719ac8e523efc5ef885fe55fb89561509e4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdynamicaccessorcdynamicaccessor"></a>CDynamicAccessor::CDynamicAccessor
 Oluşturur ve başlatır `CDynamicAccessor` nesnesi.  

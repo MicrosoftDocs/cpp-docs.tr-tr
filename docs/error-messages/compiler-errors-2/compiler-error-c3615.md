@@ -1,8 +1,8 @@
 ---
-title: "Derleyici Hatası C3615 | Microsoft Docs"
+title: Derleyici Hatası C3615 | Microsoft Docs
 ms.date: 10/24/2017
 ms.technology:
-- cpp-tools
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3615
@@ -13,14 +13,13 @@ helpviewer_keywords:
 ms.assetid: 5ce96ba9-3d31-49f3-9aa8-24e5cdf6dcfc
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea5502ee6e66cf3add4a4ff97e4922a66712ed70
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ce1ab43f8e15535614cedf43dba42fef882bf87a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3615"></a>Derleyici Hatası C3615
 

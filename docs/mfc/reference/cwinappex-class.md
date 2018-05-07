@@ -1,12 +1,9 @@
 ---
-title: "CWinAppEx sınıfı | Microsoft Docs"
-ms.custom: 
+title: CWinAppEx sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CWinAppEx
@@ -127,20 +124,18 @@ helpviewer_keywords:
 - CWinAppEx [MFC], StoreWindowPlacement
 - CWinAppEx [MFC], m_bForceImageReset
 ms.assetid: a3d3e053-3e22-463f-9444-c73abb1bb9d7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 941a496d52dbf38401484bd6ddcd857875849dc6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 63882cd6ae167e78bc5e3cf509650ae3d84fd0ef
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cwinappex-class"></a>CWinAppEx sınıfı
-`CWinAppEx`uygulama durumu işler, kayıt defterine durumunu kaydeder, kayıt defterinden durumu yükler, uygulama yöneticileri başlatır ve o aynı uygulama yöneticileri için bağlantılar sağlar.  
+`CWinAppEx` Uygulama durumu işler, kayıt defterine durumunu kaydeder, kayıt defterinden durumu yükler, uygulama yöneticileri başlatır ve o aynı uygulama yöneticileri için bağlantılar sağlar.  
   
    [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
 ## <a name="syntax"></a>Sözdizimi  
@@ -250,7 +245,7 @@ class CWinAppEx : public CWinApp
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwinappex.h  
   
-##  <a name="cleanstate"></a>CWinAppEx::CleanState  
+##  <a name="cleanstate"></a>  CWinAppEx::CleanState  
  Uygulama hakkındaki tüm bilgileri Windows kayıt defterinden kaldırır.  
   
 ```  
@@ -258,7 +253,7 @@ virtual BOOL CleanState(LPCTSTR lpszSectionName=NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszSectionName`  
+ [in] `lpszSectionName`  
  Bir kayıt defteri anahtarının yolunu içeren bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -267,7 +262,7 @@ virtual BOOL CleanState(LPCTSTR lpszSectionName=NULL);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, kayıt defteri belirli bir kısmını uygulama verilerini temizler. Parametresini kullanarak temizlemek için bölüm belirtebilirsiniz `lpszSectionName`. Varsa `lpszSectionName` olan `NULL`, bu yöntem, depolanan varsayılan kayıt defteri yolu kullanacağı `CWinAppEx` nesnesi. Varsayılan kayıt defteri yolu almak için [CWinAppEx::GetRegistryBase](#getregistrybase).  
   
-##  <a name="cwinappex"></a>CWinAppEx::CWinAppEx  
+##  <a name="cwinappex"></a>  CWinAppEx::CWinAppEx  
  Oluşturan bir `CWinAppEx` nesnesi.  
   
 ```  
@@ -275,13 +270,13 @@ CWinAppEx(BOOL bResourceSmartUpdate = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bResourceSmartUpdate`  
+ [in] `bResourceSmartUpdate`  
  Çalışma alanı nesnesi algılamak ve kaynak güncelleştirmeleri işleme belirten Boolean bir parametre.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `CWinAppEx` Sınıfı başlatma yöntemlerine sahiptir, kaydetme ve uygulama bilgilerini kayıt defterine yükleme için işlevsellik sağlar ve genel uygulama ayarlarını denetler. Ayrıca, genel yöneticileri gibi kullanmasına olanak sağlar [CKeyboardManager sınıfı](../../mfc/reference/ckeyboardmanager-class.md) ve [CUserToolsManager sınıfı](../../mfc/reference/cusertoolsmanager-class.md). Her uygulama, yalnızca bir örneğine sahip `CWinAppEx` sınıfı.  
   
-##  <a name="enableloadwindowplacement"></a>CWinAppEx::EnableLoadWindowPlacement  
+##  <a name="enableloadwindowplacement"></a>  CWinAppEx::EnableLoadWindowPlacement  
  Uygulama ana çerçeve penceresi konumunu ve başlangıç boyutu kayıt defterinden yükleyecek olup olmadığını belirtir.  
   
 ```  
@@ -289,13 +284,13 @@ void EnableLoadWindowPlacement(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`bEnable`  
+ [in] `bEnable`  
  Uygulama ana çerçeve penceresi konumunu ve başlangıç boyutu kayıt defterinden olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, boyut ve konum ana çerçevesinin yüklendiği diğer uygulama ayarları ile birlikte kayıt defterinden. Bu sistemdeki [CWinAppEx::LoadState](#loadstate). Kayıt defterinden ilk penceresi yerleştirme yüklemek istemiyorsanız, bu yöntemle çağrısı `bEnable` kümesine `false`.  
   
-##  <a name="enabletearoffmenus"></a>CWinAppEx::EnableTearOffMenus  
+##  <a name="enabletearoffmenus"></a>  CWinAppEx::EnableTearOffMenus  
  Oluşturur ve başlatır bir [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) nesnesi.  
   
 ```  
@@ -306,22 +301,22 @@ BOOL EnableTearOffMenus(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszRegEntry`  
+ [in] `lpszRegEntry`  
  Kayıt defteri anahtarının yolunu içeren bir dize. Uygulama bu kayıt defteri anahtarı etiketleri menüleri bilgilerini depolamak için kullanır.  
   
- [in]`uiCmdFirst`  
+ [in] `uiCmdFirst`  
  Menü ilk kapatmayı kimliği  
   
- [in]`uiCmdLast`  
+ [in] `uiCmdLast`  
  Menü son kapatmayı kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `True`varsa `CMenuTearOffManager` oluşturulur ve başarıyla başlatıldı `false` bir hata oluşursa veya `CMenuTearOffManager` zaten mevcut.  
+ `True` varsa `CMenuTearOffManager` oluşturulur ve başarıyla başlatıldı `false` bir hata oluşursa veya `CMenuTearOffManager` zaten mevcut.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Etiketleri menüleri uygulamanızda etkinleştirmek için bu işlevi kullanın. Bu işlevden çağırmalıdır `InitInstance`.  
   
-##  <a name="enableusertools"></a>CWinAppEx::EnableUserTools  
+##  <a name="enableusertools"></a>  CWinAppEx::EnableUserTools  
  Tuş vuruşları uygulamanızda azaltmak özel menü komutlarını oluşturmak kullanıcının sağlar. Bu yöntem oluşturur bir [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) nesnesi.  
   
 ```  
@@ -335,26 +330,26 @@ BOOL EnableUserTools(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiCmdToolsDummy`  
+ [in] `uiCmdToolsDummy`  
  Framework'te kullanıcı Araçlar menüsünü komut kimliği için bir yer tutucu olarak kullanan imzalanmamış tamsayı.  
   
- [in]`uiCmdFirst`  
+ [in] `uiCmdFirst`  
  İlk kullanıcı aracını komut komut kimliği.  
   
- [in]`uiCmdLast`  
+ [in] `uiCmdLast`  
  Son kullanıcı aracını komut komut kimliği.  
   
- [in]`pToolRTC`  
+ [in] `pToolRTC`  
  Sınıf A `CUserToolsManager` yeni kullanıcı araçları oluşturmak için nesne kullanır.  
   
- [in]`uArgMenuID`  
+ [in] `uArgMenuID`  
  Bağımsız değişken menü kimliği  
   
- [in]`uInitDirMenuID`  
+ [in] `uInitDirMenuID`  
  İlk aracı dizin menü kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`yöntem oluşturur ve başlatır, bir `CUserToolsManager` nesne; `FALSE` yöntem başarısız olursa veya bir `CUserToolsManager` nesne zaten mevcut.  
+ `TRUE` yöntem oluşturur ve başlatır, bir `CUserToolsManager` nesne; `FALSE` yöntem başarısız olursa veya bir `CUserToolsManager` nesne zaten mevcut.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı tanımlı Araçlar etkinleştirdiğinizde, framework özelleştirme sırasında genişletilmiş dinamik bir menü otomatik olarak destekler. Framework'te yeni her öğe bir dış komut ile ilişkilendirir. Kullanıcı uygun öğesinden seçtiğinde framework bu komutlarını çağıran **Araçları** menüsü.  
@@ -363,7 +358,7 @@ BOOL EnableUserTools(
   
  Kullanıcı araçları ve uygulamanıza eklemenizi nasıl hakkında daha fazla bilgi için bkz: [kullanıcı tanımlı Araçlar](../../mfc/user-defined-tools.md).  
   
-##  <a name="exitinstance"></a>CWinAppEx::ExitInstance  
+##  <a name="exitinstance"></a>  CWinAppEx::ExitInstance  
 
   
 ```  
@@ -374,7 +369,7 @@ virtual int ExitInstance();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getbinary"></a>CWinAppEx::GetBinary  
+##  <a name="getbinary"></a>  CWinAppEx::GetBinary  
  Belirtilen kayıt defteri anahtarından ikili verileri okur.  
   
 ```  
@@ -385,24 +380,24 @@ BOOL GetBinary(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Bir kayıt defteri anahtarı adını içeren dize.  
   
- [out]`ppData`  
+ [out] `ppData`  
  İkili veriler yöntemi doldurur arabellek için bir işaretçi.  
   
- [out]`pBytes`  
+ [out] `pBytes`  
  Bir işaretçi imzasız tamsayı okunan bayt sayısını yazmak için yöntemi kullanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `True`başarılı olursa; `false` Aksi takdirde.  
+ `True` başarılı olursa; `false` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, kayıt defterine yazılır ikili verileri okur. Kayıt defterine veri yazma için yöntemleri kullanın [CWinAppEx::WriteBinary](#writebinary) ve [CWinAppEx::WriteSectionBinary](#writesectionbinary).  
   
  `lpszEntry` Parametresi, uygulamanız için varsayılan kayıt defteri anahtarı altında bulunan bir kayıt defteri girdisi adıdır. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
-##  <a name="getcontextmenumanager"></a>CWinAppEx::GetContextMenuManager  
+##  <a name="getcontextmenumanager"></a>  CWinAppEx::GetContextMenuManager  
  İşaretçi genel döndüren [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) nesnesi.  
   
 ```  
@@ -415,7 +410,7 @@ CContextMenuManager* GetContextMenuManager();
 ### <a name="remarks"></a>Açıklamalar  
  CContextMenuManager nesnesi başlatılmadı, bu işlev çağrıları [CWinAppEx::InitContextMenuManager](#initcontextmenumanager) önce bir işaretçi döndürür.  
   
-##  <a name="getdataversion"></a>CWinAppEx::GetDataVersion  
+##  <a name="getdataversion"></a>  CWinAppEx::GetDataVersion  
 
   
 ```  
@@ -426,7 +421,7 @@ int GetDataVersion() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="getdataversionmajor"></a>CWinAppEx::GetDataVersionMajor  
+##  <a name="getdataversionmajor"></a>  CWinAppEx::GetDataVersionMajor  
  Ana sürüm çağırdığınızda Windows kayıt defterinde kaydedilmiş uygulamanın döndürür [CWinAppEx::SaveState](#savestate).  
   
 ```  
@@ -436,7 +431,7 @@ int GetDataVersionMajor() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Ana sürüm numarasını içeren bir tamsayı değeri.  
   
-##  <a name="getdataversionminor"></a>CWinAppEx::GetDataVersionMinor  
+##  <a name="getdataversionminor"></a>  CWinAppEx::GetDataVersionMinor  
  Alt sürüm çağırdığınızda Windows kayıt defterinde kaydedilmiş uygulamanın döndürür [CWinAppEx::SaveState](#savestate).  
   
 ```  
@@ -446,7 +441,7 @@ int GetDataVersionMinor() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Alt sürüm numarasını içeren bir tamsayı değeri.  
   
-##  <a name="getint"></a>CWinAppEx::GetInt  
+##  <a name="getint"></a>  CWinAppEx::GetInt  
  Tamsayı veri belirtilen kayıt defteri anahtarından okur.  
   
 ```  
@@ -456,10 +451,10 @@ int GetInt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Bir kayıt defteri girdisi adını içeren dize.  
   
- [in]`nDefault`  
+ [in] `nDefault`  
  Belirtilen kayıt defteri girdisi yok, bu yöntem varsayılan değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -470,7 +465,7 @@ int GetInt(
   
  `lpszEntry` Parametresi, uygulamanız için varsayılan kayıt defteri anahtarı altında bulunan bir kayıt defteri girdisi adıdır. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
-##  <a name="getkeyboardmanager"></a>CWinAppEx::GetKeyboardManager  
+##  <a name="getkeyboardmanager"></a>  CWinAppEx::GetKeyboardManager  
  İşaretçi genel döndüren [CKeyboardManager](../../mfc/reference/ckeyboardmanager-class.md) nesnesi.  
   
 ```  
@@ -483,7 +478,7 @@ CKeyboardManager* GetKeyboardManager();
 ### <a name="remarks"></a>Açıklamalar  
  Klavye Yöneticisi başlatılamadı, bu işlev çağrıları [CWinAppEx::InitKeyboardManager](#initkeyboardmanager) önce bir işaretçi döndürür.  
   
-##  <a name="getmousemanager"></a>CWinAppEx::GetMouseManager  
+##  <a name="getmousemanager"></a>  CWinAppEx::GetMouseManager  
  İşaretçi genel döndüren [CMouseManager](../../mfc/reference/cmousemanager-class.md) nesnesi.  
   
 ```  
@@ -496,7 +491,7 @@ CMouseManager* GetMouseManager();
 ### <a name="remarks"></a>Açıklamalar  
  Fare Yöneticisi başlatılamazsa, bu işlev çağrıları [CWinAppEx::InitMouseManager](#initmousemanager) önce bir işaretçi döndürür.  
   
-##  <a name="getobject"></a>CWinAppEx::GetObject  
+##  <a name="getobject"></a>  CWinAppEx::GetObject  
  Okur [CObject](../../mfc/reference/cobject-class.md)- dervied verileri kayıt defterinden.  
   
 ```  
@@ -506,10 +501,10 @@ BOOL GetObject(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Bir kayıt defteri girdisi göreli yolunu içeren bir dize.  
   
- [out]`obj`  
+ [out] `obj`  
  Bir başvuru bir `CObject`. Kayıt defteri verilerini depolamak için bu başvuru yöntemini kullanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -520,7 +515,7 @@ BOOL GetObject(
   
  `lpszEntry` Parametresi, uygulamanız için varsayılan kayıt defteri anahtarı altında bulunan bir kayıt defteri girdisi adıdır. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
-##  <a name="getregistrybase"></a>CWinAppEx::GetRegistryBase  
+##  <a name="getregistrybase"></a>  CWinAppEx::GetRegistryBase  
  Uygulama için varsayılan kayıt defteri yolunu alır.  
   
 ```  
@@ -533,7 +528,7 @@ LPCTSTR GetRegistryBase();
 ### <a name="remarks"></a>Açıklamalar  
  Tüm yöntemleri [CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md) kayıt defteri başlangıç varsayılan konumuna erişim. Varsayılan kayıt defteri konumunun yolunu almak için bu yöntemi kullanın. Kullanım [CWinAppEx::SetRegistryBase](#setregistrybase) varsayılan kayıt defteri konumu değiştirmek için.  
   
-##  <a name="getregsectionpath"></a>CWinAppEx::GetRegSectionPath  
+##  <a name="getregsectionpath"></a>  CWinAppEx::GetRegSectionPath  
  Oluşturur ve kayıt defteri anahtarının tam yolunu döndürür.  
   
 ```  
@@ -541,7 +536,7 @@ CString GetRegSectionPath(LPCTSTR szSectionAdd = _T(""));
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`szSectionAdd`  
+ [in] `szSectionAdd`  
  Bir kayıt defteri anahtarı göreli yolunu içeren bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -550,7 +545,7 @@ CString GetRegSectionPath(LPCTSTR szSectionAdd = _T(""));
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem kayıt defteri anahtarının mutlak bir yol göreli yolda ekleyerek tanımlar `szSectionAdd` uygulamanız için varsayılan kayıt defteri konumuna. Varsayılan kayıt defteri anahtarını almak için yöntemini kullanın [CWinAppEx::GetRegistryBase](#getregistrybase).  
   
-##  <a name="getsectionbinary"></a>CWinAppEx::GetSectionBinary  
+##  <a name="getsectionbinary"></a>  CWinAppEx::GetSectionBinary  
  İkili veriler kayıt defterinden okur.  
   
 ```  
@@ -562,27 +557,27 @@ BOOL GetSectionBinary(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszSubSection`  
+ [in] `lpszSubSection`  
  Bir kayıt defteri anahtarı göreli yolunu içeren bir dize.  
   
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Okunacak değeri içeren bir dize.  
   
- [out]`ppData`  
+ [out] `ppData`  
  Yöntem verileri depoladığı arabellek için bir işaretçi.  
   
- [out]`pBytes`  
+ [out] `pBytes`  
  İşaretsiz tamsayıya gösteren bir işaretçi. Yöntem boyutunu Yazar `ppData` Bu parametre için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `True`başarılı olursa; Aksi takdirde `false`.  
+ `True` başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yöntemleri kullanarak kayıt defterine yazılır ikili veri okuyan [CWinAppEx::WriteBinary](#writebinary) ve [CWinAppEx::WriteSectionBinary](#writesectionbinary).  
   
  `lpszSubSection` Parametresi bir kayıt defteri girişi için mutlak bir yol değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
-##  <a name="getsectionint"></a>CWinAppEx::GetSectionInt  
+##  <a name="getsectionint"></a>  CWinAppEx::GetSectionInt  
  Tamsayı veri kayıt defterinden okur.  
   
 ```  
@@ -593,13 +588,13 @@ int GetSectionInt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszSubSection`  
+ [in] `lpszSubSection`  
  Bir kayıt defteri anahtarı göreli yolunu içeren bir dize.  
   
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Okunacak değeri içeren bir dize.  
   
- [in]`nDefault`  
+ [in] `nDefault`  
  Belirtilen değer yok ise döndürülecek varsayılan değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -610,7 +605,7 @@ int GetSectionInt(
   
  `lpszSubSection` Parametresi bir kayıt defteri girdisinin mutlak bir yol değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
-##  <a name="getsectionobject"></a>CWinAppEx::GetSectionObject  
+##  <a name="getsectionobject"></a>  CWinAppEx::GetSectionObject  
  Okur [CObject](../../mfc/reference/cobject-class.md) kayıt defteri verileri kayıt defterinden.  
   
 ```  
@@ -621,13 +616,13 @@ BOOL GetSectionObject(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszSubSection`  
+ [in] `lpszSubSection`  
  Bir kayıt defteri anahtarı göreli yolunu içeren bir dize.  
   
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Okunacak değeri içeren bir dize.  
   
- [out]`obj`  
+ [out] `obj`  
  Bir başvuru bir `CObject`. Bu yöntemi kullanır `CObject` kayıt defteri verilerini depolamak için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -638,7 +633,7 @@ BOOL GetSectionObject(
   
  `lpszSubSection` Parametresi bir kayıt defteri girişi için mutlak bir yol değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
-##  <a name="getsectionstring"></a>CWinAppEx::GetSectionString  
+##  <a name="getsectionstring"></a>  CWinAppEx::GetSectionString  
  Kayıt defterinden veri okuma dize.  
   
 ```  
@@ -649,13 +644,13 @@ CString GetSectionString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszSubSection`  
+ [in] `lpszSubSection`  
  Bir kayıt defteri anahtarı göreli yolunu içeren bir dize.  
   
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Okunacak değeri içeren bir dize.  
   
- [in]`lpszDefault`  
+ [in] `lpszDefault`  
  Belirtilen değer yok ise döndürülecek varsayılan değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -666,7 +661,7 @@ CString GetSectionString(
   
  `lpszSubSection` Parametresi bir kayıt defteri girişi için mutlak bir yol değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
-##  <a name="getshellmanager"></a>CWinAppEx::GetShellManager  
+##  <a name="getshellmanager"></a>  CWinAppEx::GetShellManager  
  İşaretçi genel döndüren [CShellManager](../../mfc/reference/cshellmanager-class.md) nesnesi.  
   
 ```  
@@ -679,7 +674,7 @@ CShellManager* GetShellManager();
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `CShellManager` nesnesi başlatılmadı, bu işlev çağrılarını [CWinAppEx::InitShellManager](#initshellmanager) önce bir işaretçi döndürür.  
   
-##  <a name="getstring"></a>CWinAppEx::GetString  
+##  <a name="getstring"></a>  CWinAppEx::GetString  
  Dize belirtilen kayıt defteri anahtarından verileri okur.  
   
 ```  
@@ -689,10 +684,10 @@ CString GetString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Bir kayıt defteri anahtarı adını içeren bir dize  
   
- [in]`lpzDefault`  
+ [in] `lpzDefault`  
  Belirtilen kayıt defteri girdisi yok, bu yöntem varsayılan değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -703,7 +698,7 @@ CString GetString(
   
  `lpszEntry` Parametresi, uygulamanız için varsayılan kayıt defteri anahtarı altında bulunan bir kayıt defteri girdisi adıdır. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
-##  <a name="gettooltipmanager"></a>CWinAppEx::GetTooltipManager  
+##  <a name="gettooltipmanager"></a>  CWinAppEx::GetTooltipManager  
  İşaretçi genel döndüren [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) nesnesi.  
   
 ```  
@@ -716,7 +711,7 @@ CTooltipManager* GetTooltipManager();
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `CTooltipManager` nesnesi başlatılmadı, bu işlev çağrılarını [CWinAppEx::InitTooltipManager](#inittooltipmanager) önce bir işaretçi döndürür.  
   
-##  <a name="getusertoolsmanager"></a>CWinAppEx::GetUserToolsManager  
+##  <a name="getusertoolsmanager"></a>  CWinAppEx::GetUserToolsManager  
  İşaretçi genel döndüren [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) nesnesi.  
   
 ```  
@@ -729,7 +724,7 @@ CUserToolsManager* GetUserToolsManager();
 ### <a name="remarks"></a>Açıklamalar  
  Bir işaretçi almak önce `CUserToolsManager` nesne gerekir başlatır Yöneticisi çağırarak [CWinAppEx::EnableUserTools](#enableusertools).  
   
-##  <a name="initcontextmenumanager"></a>CWinAppEx::InitContextMenuManager  
+##  <a name="initcontextmenumanager"></a>  CWinAppEx::InitContextMenuManager  
  Başlatır [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) nesnesi.  
   
 ```  
@@ -744,7 +739,7 @@ BOOL InitContextMenuManager();
   
  Bir bağlam menüsü Yöneticisi'ni uygulamanızı zaten varsa ve çağırmanız `InitContextMenuManager`, uygulamanız sahip bir [ASSERT](diagnostic-services.md#assert) hatası. Bu nedenle, değil çağırmalısınız `InitContextMenuManager` oluşturursanız, bir `CContextMenuManager` doğrudan nesne. Özel bir kullanmıyorsanız `CContextMenuManager`, kullanmanız gereken `GetContextMenuManager` oluşturmak için bir `CContextMenuManager` nesnesi.  
   
-##  <a name="initkeyboardmanager"></a>CWinAppEx::InitKeyboardManager  
+##  <a name="initkeyboardmanager"></a>  CWinAppEx::InitKeyboardManager  
  Başlatır [CKeyboardManager](../../mfc/reference/ckeyboardmanager-class.md) nesnesi.  
   
 ```  
@@ -759,7 +754,7 @@ BOOL InitKeyboardManager();
   
  Klavye Yöneticisi uygulamanız zaten varsa ve çağırmanız `InitKeyboardManager`, uygulamanız sahip bir [ASSERT](diagnostic-services.md#assert) hatası. Bu nedenle, değil çağırmalısınız `InitKeyboardManager` oluşturursanız, bir `CKeyboardManager` doğrudan nesne. Özel bir kullanmıyorsanız `CKeyboardManager`, kullanmanız gereken `GetKeyboardManager` oluşturmak için bir `CKeyboardManager` nesnesi.  
   
-##  <a name="initmousemanager"></a>CWinAppEx::InitMouseManager  
+##  <a name="initmousemanager"></a>  CWinAppEx::InitMouseManager  
  Başlatır [CMouseManager](../../mfc/reference/cmousemanager-class.md) nesnesi.  
   
 ```  
@@ -774,7 +769,7 @@ BOOL InitMouseManager();
   
  Fare Yöneticisi uygulamanız zaten varsa ve çağırmanız `InitMouseManager`, uygulamanız sahip bir [ASSERT](diagnostic-services.md#assert) hatası. Bu nedenle değil çağırmalısınız `InitMouseManager` oluşturursanız, bir `CMouseManager` doğrudan nesne. Özel bir kullanmıyorsanız `CMouseManager`, kullanmanız gereken `GetMouseManager` oluşturmak için bir `CMouseManager` nesnesi.  
   
-##  <a name="initshellmanager"></a>CWinAppEx::InitShellManager  
+##  <a name="initshellmanager"></a>  CWinAppEx::InitShellManager  
  Başlatır [CShellManager](../../mfc/reference/cshellmanager-class.md) nesnesi.  
   
 ```  
@@ -789,7 +784,7 @@ BOOL InitShellManager();
   
  Kabuk Yöneticisi uygulamanız zaten varsa ve çağırmanız `InitShellManager`, uygulama başlatır bir [ASSERT](diagnostic-services.md#assert) hatası. Bu nedenle, çağırmayın `InitShellManager` oluşturursanız, bir `CShellManager` doğrudan nesne. Özel bir kullanmıyorsanız `CShellManager`, kullanın `GetShellManager` oluşturmak için bir `CShellManager` nesnesi.  
   
-##  <a name="inittooltipmanager"></a>CWinAppEx::InitTooltipManager  
+##  <a name="inittooltipmanager"></a>  CWinAppEx::InitTooltipManager  
  Başlatır [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) nesnesi.  
   
 ```  
@@ -804,7 +799,7 @@ BOOL InitTooltipManager();
   
  Araç İpucu Yöneticisi uygulamanız zaten varsa ve çağırmanız `InitTooltipManager`, uygulamanız sahip bir [ASSERT](diagnostic-services.md#assert) hatası. Bu nedenle, değil çağırmalısınız `InitTooltipManager` oluşturursanız, bir `CTooltipManager` doğrudan nesne. Özel bir kullanmıyorsanız `CTooltipManager`, kullanmanız gereken `GetTooltipManager` oluşturmak için bir `CTooltipManager` nesnesi.  
   
-##  <a name="isresourcesmartupdate"></a>CWinAppEx::IsResourceSmartUpdate  
+##  <a name="isresourcesmartupdate"></a>  CWinAppEx::IsResourceSmartUpdate  
 
   
 ```  
@@ -815,7 +810,7 @@ BOOL IsResourceSmartUpdate() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="isstateexists"></a>CWinAppEx::IsStateExists  
+##  <a name="isstateexists"></a>  CWinAppEx::IsStateExists  
  Belirtilen anahtarı kayıt defterinde olup olmadığını gösterir.  
   
 ```  
@@ -823,13 +818,13 @@ BOOL IsStateExists(LPCTSTR lpszSectionName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszSectionName`  
+ [in] `lpszSectionName`  
  Bir kayıt defteri anahtarının yolunu içeren bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kayıt defterinde anahtar ise, sıfır olmayan; Aksi takdirde 0.  
   
-##  <a name="loadcustomstate"></a>CWinAppEx::LoadCustomState  
+##  <a name="loadcustomstate"></a>  CWinAppEx::LoadCustomState  
  Kayıt defterinden uygulama durumunun yüklendikten sonra framework bu yöntemi çağırır.  
   
 ```  
@@ -841,7 +836,7 @@ virtual void LoadCustomState();
   
  Özel durum bilgileri kayıt defterinden yüklemek için bilgiler ilk kullanarak kaydedilmelidir [CWinAppEx::SaveCustomState](#savecustomstate).  
   
-##  <a name="loadstate"></a>CWinAppEx::LoadState  
+##  <a name="loadstate"></a>  CWinAppEx::LoadState  
  Uygulama durumu Windows kayıt defterinden okur.  
   
 ```  
@@ -866,13 +861,13 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pFrame`  
+ [in] `pFrame`  
  Çerçeve pencere nesnesi için bir işaretçi. Yöntemi kayıt defterinde durum bilgilerini bu çerçeve penceresi uygular.  
   
- [in]`lpszSectionName`  
+ [in] `lpszSectionName`  
  Bir kayıt defteri anahtarı göreli yolunu içeren bir dize.  
   
- [in]`pFrameImpl`  
+ [in] `pFrameImpl`  
  Bir işaretçi bir `CFrameImpl` nesnesi. Yöntemi kayıt defterinde durum bilgilerini bu çerçeve penceresi uygular.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -885,7 +880,7 @@ virtual BOOL LoadState(
   
  `lpszSectionName` Parametresi bir kayıt defteri girdisi mutlak yolu değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
-##  <a name="loadwindowplacement"></a>CWinAppEx::LoadWindowPlacement  
+##  <a name="loadwindowplacement"></a>  CWinAppEx::LoadWindowPlacement  
  Bu kayıt defterinden ana çerçeve penceresi konumunu ve boyutunu yüklediğinde çerçevesi tarafından çağrılır.  
   
 ```  
@@ -896,13 +891,13 @@ virtual BOOL LoadWindowPlacement(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out]`rectNormalPosition`  
+ [out] `rectNormalPosition`  
  Geri yüklenen konumda olduğunda, ana çerçeve penceresi koordinatlarını içerir dikdörtgen.  
   
- [out]`nFlags`  
+ [out] `nFlags`  
  Simge durumuna küçültülmüş pencereyi ve nasıl işletim sistemi bir simge durumuna küçültülmüş pencereyi geri yüklenen bir pencere arasında geçiş yapar konumunu denetlemek bayraklar.  
   
- [out]`nShowCmd`  
+ [out] `nShowCmd`  
  Pencereyi Göster durumunu belirten bir tamsayı. Olası değerler hakkında daha fazla bilgi için bkz: [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -913,7 +908,7 @@ virtual BOOL LoadWindowPlacement(
   
  Ana çerçeve penceresi hakkında ek bilgi yüklemek istiyorsanız bu yöntemi geçersiz kılın.  
   
-##  <a name="m_bforceimagereset"></a>CWinAppEx::m_bForceImageReset  
+##  <a name="m_bforceimagereset"></a>  CWinAppEx::m_bForceImageReset  
  Araç çubuğu içerir çerçeve penceresi yüklediğinde framework tüm araç görüntüleri sıfırlayıp sıfırlamayacağını belirtir.  
   
 ```  
@@ -923,7 +918,7 @@ BOOL m_bForceImageReset;
 ### <a name="remarks"></a>Açıklamalar  
  `m_bForceImageReset` Veri üyesi korumalı bir değişkendir.  
   
-##  <a name="onappcontexthelp"></a>CWinAppEx::OnAppContextHelp  
+##  <a name="onappcontexthelp"></a>  CWinAppEx::OnAppContextHelp  
  Kullanıcı için içerik Yardımı istediğinde framework bu yöntemi çağırır **özelleştirme** iletişim kutusu.  
   
 ```  
@@ -933,16 +928,16 @@ virtual void OnAppContextHelp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pWndControl`  
+ [in] `pWndControl`  
  Bağlam Yardımı için kullanıcı çağrılan bir pencere nesnesi için bir işaretçi.  
   
- [in]`dwHelpIDArray[]`  
+ [in] `dwHelpIDArray[]`  
  Ayrılmış bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, şu anda gelecekte kullanılmak üzere ayrılmıştır. Varsayılan uygulama hiçbir şey yapmaz ve çerçevesi tarafından şu anda çağrılmaz.  
   
-##  <a name="onclosingmainframe"></a>CWinAppEx::OnClosingMainFrame  
+##  <a name="onclosingmainframe"></a>  CWinAppEx::OnClosingMainFrame  
  Çerçeve penceresi işlerken framework bu yöntemi çağırır `WM_CLOSE`.  
   
 ```  
@@ -950,13 +945,13 @@ virtual void OnClosingMainFrame(CFrameImpl* pFrameImpl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pFrameImpl`  
+ [in] `pFrameImpl`  
  Bir işaretçi bir `CFrameImpl` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem varsayılan uygulamasını durumunu kaydeder, `pFrameImpl`.  
   
-##  <a name="onviewdoubleclick"></a>CWinAppEx::OnViewDoubleClick  
+##  <a name="onviewdoubleclick"></a>  CWinAppEx::OnViewDoubleClick  
  Kullanıcı Bu görünümde herhangi bir yere tıklattığında bir görünümle ilişkili olan kullanıcı tanımlı komutu çağırır.  
   
 ```  
@@ -966,19 +961,19 @@ virtual BOOL OnViewDoubleClick(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pWnd`  
+ [in] `pWnd`  
  Bir nesne için bir işaretçi türetilmiş [CView sınıfı](../../mfc/reference/cview-class.md).  
   
- [in]`iViewId`  
+ [in] `iViewId`  
  Görünüm kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `True`bir komut framework bulursa, Aksi takdirde false.  
+ `True` bir komut framework bulursa, Aksi takdirde false.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İşlerken özel fare davranışı desteklemek için bu işlev çağırmalısınız `WM_LBUTTONDBLCLK` ileti. Bu yöntem tarafından sağlanan görünüm kimliği ile ilişkili komutu yürütecek `iViewId`. Özel fare davranışı hakkında daha fazla bilgi için bkz: [klavye ve fare özelleştirmesi](../../mfc/keyboard-and-mouse-customization.md).  
   
-##  <a name="onworkspaceidle"></a>CWinAppEx::OnWorkspaceIdle  
+##  <a name="onworkspaceidle"></a>  CWinAppEx::OnWorkspaceIdle  
 
   
 ```  
@@ -986,13 +981,13 @@ virtual BOOL OnWorkspaceIdle(CWnd*);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`CWnd*`  
+ [in] `CWnd*`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="preloadstate"></a>CWinAppEx::PreLoadState  
+##  <a name="preloadstate"></a>  CWinAppEx::PreLoadState  
  Hemen kayıt defterinden uygulamasının durumu yüklenmeden önce framework bu yöntemi çağırır.  
   
 ```  
@@ -1002,7 +997,7 @@ virtual void PreLoadState();
 ### <a name="remarks"></a>Açıklamalar  
  Uygulama durumu hemen framework yüklenmeden önce herhangi bir işlem yapmak istiyorsanız bu yöntemi geçersiz kılın.  
   
-##  <a name="presavestate"></a>CWinAppEx::PreSaveState  
+##  <a name="presavestate"></a>  CWinAppEx::PreSaveState  
  Framework hemen uygulama durumu kaydetmeden önce bu yöntemi çağırır.  
   
 ```  
@@ -1012,7 +1007,7 @@ virtual void PreSaveState();
 ### <a name="remarks"></a>Açıklamalar  
  Uygulama durumu hemen framework kaydetmeden önce herhangi bir işlem yapmak istiyorsanız bu yöntemi geçersiz kılın.  
   
-##  <a name="reloadwindowplacement"></a>CWinAppEx::ReloadWindowPlacement  
+##  <a name="reloadwindowplacement"></a>  CWinAppEx::ReloadWindowPlacement  
  Kayıt defterinden bir pencere konumunu ve boyutunu yeniden yükler.  
   
 ```  
@@ -1020,7 +1015,7 @@ virtual BOOL ReloadWindowPlacement(CFrameWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pFrame`  
+ [in] `pFrame`  
  Çerçeve penceresi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1029,7 +1024,7 @@ virtual BOOL ReloadWindowPlacement(CFrameWnd* pFrame);
 ### <a name="remarks"></a>Açıklamalar  
  İşlevini [CWinAppEx::StoreWindowPlacement](#storewindowplacement) boyutunu ve pencere konumunu kayıt defterine yazılamıyor.  
   
-##  <a name="savecustomstate"></a>CWinAppEx::SaveCustomState  
+##  <a name="savecustomstate"></a>  CWinAppEx::SaveCustomState  
  Kayıt için uygulama durumunu kaydeder sonra framework bu yöntemi çağırır.  
   
 ```  
@@ -1039,7 +1034,7 @@ virtual void SaveCustomState();
 ### <a name="remarks"></a>Açıklamalar  
  Uygulama durumu kayıt defterine kaydeder sonra herhangi bir işlem yapmak istiyorsanız bu yöntemi geçersiz kılın. Varsayılan olarak, bu yöntem hiçbir şey yapmaz.  
   
-##  <a name="savestate"></a>CWinAppEx::SaveState  
+##  <a name="savestate"></a>  CWinAppEx::SaveState  
  Uygulama durumu Windows kayıt defterine yazar.  
   
 ```  
@@ -1064,24 +1059,24 @@ BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszSectionName`  
+ [in] `lpszSectionName`  
  Bir kayıt defteri anahtarı göreli yolunu içeren bir dize.  
   
- [in]`pFrameImpl`  
+ [in] `pFrameImpl`  
  Bir işaretçi bir `CFrameImpl` nesnesi. Bu çerçeve, Windows kayıt defterine kaydedilir.  
   
- [in]`pFrame`  
+ [in] `pFrame`  
  Çerçeve pencere nesnesi için bir işaretçi. Bu çerçeve, Windows kayıt defterine kaydedilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `True`başarılı olursa; `false` Aksi takdirde.  
+ `True` başarılı olursa; `false` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, uygulama ve sağlanan çerçeve penceresi için herhangi bir durum bilgisini durumunu kaydeder. Çerçeve penceresi belirtmezseniz, yöntem, yalnızca uygulama durumu kaydeder. Uygulama bilgileri durumunu içeren [CMouseManager sınıfı](../../mfc/reference/cmousemanager-class.md), [CContextMenuManager sınıfı](../../mfc/reference/ccontextmenumanager-class.md), [CKeyboardManager sınıfı](../../mfc/reference/ckeyboardmanager-class.md)ve [ CUserToolsManager sınıfı](../../mfc/reference/cusertoolsmanager-class.md).  
   
  `lpszSectionName` Parametresi bir kayıt defteri girdisi mutlak yolu değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
-##  <a name="setregistrybase"></a>CWinAppEx::SetRegistryBase  
+##  <a name="setregistrybase"></a>  CWinAppEx::SetRegistryBase  
  Uygulama için varsayılan kayıt defteri yolunu ayarlar.  
   
 ```  
@@ -1089,7 +1084,7 @@ LPCTSTR SetRegistryBase(LPCTSTR lpszSectionName = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszSectionName`  
+ [in] `lpszSectionName`  
  Kayıt defteri anahtarının yolunu içeren bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1098,7 +1093,7 @@ LPCTSTR SetRegistryBase(LPCTSTR lpszSectionName = NULL);
 ### <a name="remarks"></a>Açıklamalar  
  Tüm yöntemleri [CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md) kayıt defteri başlangıç varsayılan konumuna erişim. Bu varsayılan kayıt defteri konumu değiştirmek için bu yöntemi kullanın. Kullanım [CWinAppEx::GetRegistryBase](#getregistrybase) varsayılan kayıt defteri konumu alınamadı.  
   
-##  <a name="showpopupmenu"></a>CWinAppEx::ShowPopupMenu  
+##  <a name="showpopupmenu"></a>  CWinAppEx::ShowPopupMenu  
  Açılan menüsünü görüntüler.  
   
 ```  
@@ -1109,13 +1104,13 @@ virtual BOOL ShowPopupMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`uiMenuResId`  
+ [in] `uiMenuResId`  
  Bir menü kaynak kimliği  
   
- [in]`point`  
+ [in] `point`  
  A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) ekran koordinatları olarak menü konumunu belirtir.  
   
- [in]`pWnd`  
+ [in] `pWnd`  
  Açılır menünün sahibi penceresi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1126,7 +1121,7 @@ virtual BOOL ShowPopupMenu(
   
  Açılır menüler desteklemek için bilmeniz gereken bir [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) nesnesi. Başlatılmamış durumunda `CContextMenuManager` nesnesi `ShowPopupMenu` başarısız olur.  
   
-##  <a name="storewindowplacement"></a>CWinAppEx::StoreWindowPlacement  
+##  <a name="storewindowplacement"></a>  CWinAppEx::StoreWindowPlacement  
  Ana çerçeve penceresi konumunu ve boyutunu kayıt defterine yazılamıyor çerçevesi tarafından çağrılır.  
   
 ```  
@@ -1137,13 +1132,13 @@ virtual BOOL StoreWindowPlacement(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`nFlags`  
+ [in] `nFlags`  
  Simge durumuna küçültülmüş pencereyi ve nasıl işletim sistemi bir simge durumuna küçültülmüş pencereyi geri yüklenen bir pencere arasında geçiş yapar konumunu denetlemek bayraklar.  
   
- [in]`nShowCmd`  
+ [in] `nShowCmd`  
  Pencereyi Göster durumunu belirten bir tamsayı. Olası değerler hakkında daha fazla bilgi için bkz: [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow).  
   
- [in]`rectNormalPosition`  
+ [in] `rectNormalPosition`  
  Geri yüklenen durumdayken ana çerçeve penceresi koordinatlarını içeriyor. bir dikdörtgen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1154,7 +1149,7 @@ virtual BOOL StoreWindowPlacement(
   
  Ana çerçeve penceresi hakkında ek bilgi depolamak istiyorsanız bu yöntemi geçersiz kılın.  
   
-##  <a name="writebinary"></a>CWinAppEx::WriteBinary  
+##  <a name="writebinary"></a>  CWinAppEx::WriteBinary  
  İkili veriler kayıt defterine yazar.  
   
 ```  
@@ -1165,24 +1160,24 @@ BOOL WriteBinary(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Bir kayıt defteri anahtarı adını içeren dize.  
   
- [in]`pData`  
+ [in] `pData`  
  Depolamak için veriler.  
   
- [in]`nBytes`  
+ [in] `nBytes`  
  Boyutunu `pData` bayt.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `lpszEntry` Parametresi, uygulamanız için varsayılan kayıt defteri anahtarı altında bulunan bir kayıt defteri girdisi adıdır. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
  Anahtar belirtilen `lpszEntry` yok, bu yöntem oluşturur.  
   
-##  <a name="writeint"></a>CWinAppEx::WriteInt  
+##  <a name="writeint"></a>  CWinAppEx::WriteInt  
  Sayısal veri kayıt defterine yazar.  
   
 ```  
@@ -1192,21 +1187,21 @@ BOOL WriteInt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Bir kayıt defteri anahtarı adını içeren dize.  
   
- [in]`nValue`  
+ [in] `nValue`  
  Depolamak için veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `lpszEntry` Parametresi, uygulamanız için varsayılan kayıt defteri anahtarı altında bulunan bir kayıt defteri girdisi adıdır. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
  Anahtar belirtilen `lpszEntry` yok, bu yöntem oluşturur.  
   
-##  <a name="writeobject"></a>CWinAppEx::WriteObject  
+##  <a name="writeobject"></a>  CWinAppEx::WriteObject  
  Türetilen verileri Yazar [CObject sınıfı](../../mfc/reference/cobject-class.md) kayıt defteri.  
   
 ```  
@@ -1216,19 +1211,19 @@ BOOL WriteObject(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Ayarlanacak değer içeren bir dize.  
   
- [in]`obj`  
+ [in] `obj`  
  Bir başvuru `CObject` yöntemi depolayacak veri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem Yazar `obj` veri belirtilen değerle varsayılan kayıt defteri anahtarı altında. Kullanım [CWinAppEx::GetRegistryBase](#getregistrybase) geçerli kayıt defteri anahtarı belirlemek için.  
   
-##  <a name="writesectionbinary"></a>CWinAppEx::WriteSectionBinary  
+##  <a name="writesectionbinary"></a>  CWinAppEx::WriteSectionBinary  
  Kayıt defteri değerinde ikili verileri yazar.  
   
 ```  
@@ -1240,27 +1235,27 @@ BOOL WriteSectionBinary(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszSubSection`  
+ [in] `lpszSubSection`  
  Bir kayıt defteri anahtarı adını içeren bir dize  
   
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Ayarlanacak değer içeren bir dize.  
   
- [in]`pData`  
+ [in] `pData`  
  Kayıt defterine yazılacak veriler.  
   
- [in]`nBytes`  
+ [in] `nBytes`  
  Boyutunu `pData` bayt.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `lpszSubSection` Parametresi bir kayıt defteri girdisi mutlak yolu değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
  Anahtar belirtilen `lpszEntry` yok, bu yöntem oluşturur.  
   
-##  <a name="writesectionint"></a>CWinAppEx::WriteSectionInt  
+##  <a name="writesectionint"></a>  CWinAppEx::WriteSectionInt  
  Sayısal veri kayıt defterine yazar.  
   
 ```  
@@ -1271,24 +1266,24 @@ BOOL WriteSectionInt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszSubSection`  
+ [in] `lpszSubSection`  
  Bir kayıt defteri anahtarı göreli yolunu içeren bir dize.  
   
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Ayarlanacak değer içeren bir dize.  
   
- [in]`nValue`  
+ [in] `nValue`  
  Kayıt defterine yazılacak veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `lpszSubSection` Parametresi bir kayıt defteri girişi için mutlak bir yol değil. Uygulamanız için varsayılan kayıt defteri anahtarına eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  
   
  Anahtar belirtilen `lpszEntry` yok, bu yöntem oluşturur.  
   
-##  <a name="writesectionobject"></a>CWinAppEx::WriteSectionObject  
+##  <a name="writesectionobject"></a>  CWinAppEx::WriteSectionObject  
  Türetilen verileri Yazar [CObject sınıfı](../../mfc/reference/cobject-class.md) belirli kayıt defteri değeri.  
   
 ```  
@@ -1299,24 +1294,24 @@ BOOL WriteSectionObject(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszSubSection`  
+ [in] `lpszSubSection`  
  Bir kayıt defteri anahtarı adını içeren dize.  
   
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Ayarlanacak değer adını içeren dize.  
   
- [in]`obj`  
+ [in] `obj`  
  Depolamak için veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `lpszSubSection` Parametresi bir kayıt defteri girişi için mutlak bir yol değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase)sırasıyla.  
   
  Değeri belirtilen `lpszEntry` tarafından belirtilen kayıt defteri anahtarı altında yok `lpszSubSection`, bu yöntem bu değeri oluşturur.  
   
-##  <a name="writesectionstring"></a>CWinAppEx::WriteSectionString  
+##  <a name="writesectionstring"></a>  CWinAppEx::WriteSectionString  
  Kayıt defteri değerinde string veri yazar.  
   
 ```  
@@ -1327,24 +1322,24 @@ BOOL WriteSectionString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszSubSection`  
+ [in] `lpszSubSection`  
  Bir kayıt defteri anahtarı adını içeren dize.  
   
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Ayarlanacak değer içeren bir dize.  
   
- [in]`lpszValue`  
+ [in] `lpszValue`  
  Kayıt defterine yazılamıyor dizesi verileri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `lpszSubSection` Parametresi bir kayıt defteri girişi için mutlak bir yol değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase)sırasıyla.  
   
  Değeri belirtilen `lpszEntry` altında yok `lpszSubSection`, bu yöntem oluşturur.  
   
-##  <a name="writestring"></a>CWinAppEx::WriteString  
+##  <a name="writestring"></a>  CWinAppEx::WriteString  
  Kayıt defterine veri yazma dize.  
   
 ```  
@@ -1354,14 +1349,14 @@ BOOL WriteString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszEntry`  
+ [in] `lpszEntry`  
  Bir kayıt defteri anahtarı adını içeren dize.  
   
- [in]`lpszValue`  
+ [in] `lpszValue`  
  Depolamak için veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `lpszEntry` Parametresi, uygulamanız için varsayılan kayıt defteri anahtarı altında bulunan bir kayıt defteri girdisi adıdır. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](#getregistrybase) ve [CWinAppEx::SetRegistryBase](#setregistrybase) sırasıyla.  

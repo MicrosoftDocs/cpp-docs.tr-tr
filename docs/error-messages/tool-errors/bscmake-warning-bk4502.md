@@ -1,12 +1,9 @@
 ---
-title: "BSCMAKE uyarısı BK4502 | Microsoft Docs"
-ms.custom: 
+title: BSCMAKE uyarısı BK4502 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - BK4502
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - BK1513
 - BK4502
 ms.assetid: ee412ec8-df03-4cdb-91ee-5d609ded8691
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 042aaf4c416bf88c87b3177c40cf3f1611385922
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1ed7145c28b10885dc6edf0c399478aea4503ca0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="bscmake-warning-bk4502"></a>BSCMAKE Uyarısı BK4502
 kesirli kısmı. SBR dosya 'filename' filename içinde değil  

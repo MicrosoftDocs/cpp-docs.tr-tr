@@ -2,11 +2,8 @@
 title: Derleyici Hatası C3507 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: ''
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3507
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3507
 ms.assetid: 75f89767-f6f9-40f6-9820-81a49e09abdf
-caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a31dfd75c6a7278353f5efb7b9e8fae5280b317
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 008267fddbd1d83574081d7b257e6627b32a1f58
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3507"></a>Derleyici Hatası C3507
 bir ProgID en fazla 39 'ID'; karakter uzunluğunda olabilir ya da apart gelen tüm noktalama işaretlerini içeren '.'; veya bir rakamla Başlat  

@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2482 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2482 | Microsoft Docs
+ms.custom: ''
 ms.date: 09/15/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2482
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2482
 ms.assetid: 98c87da2-625c-4cc2-9bf7-78d15921e779
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4a5d081e7a19f09f10e40e3799f724f44b295fc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f2c4725dd357854db504272e5b8b9d88641b143d
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2482"></a>Derleyici Hatası C2482
 

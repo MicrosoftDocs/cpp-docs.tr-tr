@@ -1,12 +1,9 @@
 ---
-title: "CStatic sınıfı | Microsoft Docs"
-ms.custom: 
+title: CStatic sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CStatic
@@ -37,17 +34,15 @@ helpviewer_keywords:
 - CStatic [MFC], SetEnhMetaFile
 - CStatic [MFC], SetIcon
 ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3319535bdcf3693fcf9427572e3902f96261d33e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0d3b1a5dcfc8481727bffd8b80e0bb1b230d56ff
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cstatic-class"></a>CStatic sınıfı
 Windows statik denetimi işlevselliğini sağlar.  
@@ -102,7 +97,7 @@ class CStatic : public CWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="create"></a>CStatic::Create  
+##  <a name="create"></a>  CStatic::Create  
  Windows statik denetimi oluşturur ve ona ekler `CStatic` nesnesi.  
   
 ```  
@@ -159,7 +154,7 @@ virtual BOOL Create(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CStatic#1](../../mfc/reference/codesnippet/cpp/cstatic-class_1.cpp)]  
   
-##  <a name="cstatic"></a>CStatic::CStatic  
+##  <a name="cstatic"></a>  CStatic::CStatic  
  Oluşturan bir `CStatic` nesnesi.  
   
 ```  
@@ -169,7 +164,7 @@ CStatic();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CStatic#2](../../mfc/reference/codesnippet/cpp/cstatic-class_2.cpp)]  
   
-##  <a name="drawitem"></a>CStatic::DrawItem  
+##  <a name="drawitem"></a>  CStatic::DrawItem  
  Sahip tarafından çizilmiş statik denetimi çizmek için çerçevesi tarafından çağrılır.  
   
 ```  
@@ -183,7 +178,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="remarks"></a>Açıklamalar  
  Bir sahip tarafından çizilmiş için çizim uygulamak için bu işlevi geçersiz **CStatic** nesne (Denetim stilde **SS_OWNERDRAW**).  
   
-##  <a name="getbitmap"></a>CStatic::GetBitmap  
+##  <a name="getbitmap"></a>  CStatic::GetBitmap  
  İle önceden ayarlanmış bit eşlem işleyicisini alır [SetBitmap](#setbitmap), yani ilişkili `CStatic`.  
   
 ```  
@@ -196,7 +191,7 @@ HBITMAP GetBitmap() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]  
   
-##  <a name="getcursor"></a>CStatic::GetCursor  
+##  <a name="getcursor"></a>  CStatic::GetCursor  
  İle önceden ayarlanmış imleci işleyicisini alır [SetCursor](#setcursor), yani ilişkili `CStatic`.  
   
 ```  
@@ -209,7 +204,7 @@ HCURSOR GetCursor();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]  
   
-##  <a name="getenhmetafile"></a>CStatic::GetEnhMetaFile  
+##  <a name="getenhmetafile"></a>  CStatic::GetEnhMetaFile  
  İle önceden ayarlanmış geliştirilmiş meta dosyası işleyicisini alır [SetEnhMetafile](#setenhmetafile), yani ilişkili `CStatic`.  
   
 ```  
@@ -222,7 +217,7 @@ HENHMETAFILE GetEnhMetaFile() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]  
   
-##  <a name="geticon"></a>CStatic::GetIcon  
+##  <a name="geticon"></a>  CStatic::GetIcon  
  İle önceden ayarlanmış simgesi işleyicisini alır [SetIcon](#seticon), yani ilişkili `CStatic`.  
   
 ```  
@@ -235,7 +230,7 @@ HICON GetIcon() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/cpp/cstatic-class_6.cpp)]  
   
-##  <a name="setbitmap"></a>CStatic::SetBitmap  
+##  <a name="setbitmap"></a>  CStatic::SetBitmap  
  Yeni bir bitmap statik denetimi ile ilişkilendirir.  
   
 ```  
@@ -260,7 +255,7 @@ HBITMAP SetBitmap(HBITMAP hBitmap);
   
 -   MFC sınıf sağlar `CBitmap`, bir bit eşlem görüntü yalnızca Win32 çağrısı daha fazla işlev olduğunda kullanabileceğiniz `LoadBitmap`. `CBitmap`, bir tür GDI nesnesi içeren Sık kullanılan işbirliği içinde `CStatic`, olduğu bir `CWnd` grafik nesnesi statik bir denetim olarak görüntülemek için kullanılan sınıf.  
   
- `CImage`Daha fazla kolayca aygıt bağımsız bit eşlemler (DIB) çalışmanıza imkan tanıyan bir ATL/MFC sınıftır. Daha fazla bilgi için bkz: [Cımage sınıfı](../../atl-mfc-shared/reference/cimage-class.md).  
+ `CImage` Daha fazla kolayca aygıt bağımsız bit eşlemler (DIB) çalışmanıza imkan tanıyan bir ATL/MFC sınıftır. Daha fazla bilgi için bkz: [Cımage sınıfı](../../atl-mfc-shared/reference/cimage-class.md).  
   
 -   Genel kullanımdır vermek için `CStatic::SetBitmap` HBITMAP operatör tarafından döndürülen GDI nesnesi bir `CBitmap` veya `CImage` nesnesi. Bunu yapmak için kod aşağıdaki satırı benzer.  
   
@@ -272,7 +267,7 @@ Aşağıdaki örnekte iki oluşturur `CStatic` yığında nesneleri. Ardından b
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]  
   
-##  <a name="setcursor"></a>CStatic::SetCursor  
+##  <a name="setcursor"></a>  CStatic::SetCursor  
  Yeni bir imleç görüntüsü statik denetimi ile ilişkilendirir.  
   
 ```  
@@ -298,7 +293,7 @@ HCURSOR SetCursor(HCURSOR hCursor);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]  
   
-##  <a name="setenhmetafile"></a>CStatic::SetEnhMetaFile  
+##  <a name="setenhmetafile"></a>  CStatic::SetEnhMetaFile  
  Yeni bir Gelişmiş Meta dosyası görüntüsü statik denetimi ile ilişkilendirir.  
   
 ```  
@@ -322,7 +317,7 @@ HENHMETAFILE SetEnhMetaFile(HENHMETAFILE hMetaFile);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]  
   
-##  <a name="seticon"></a>CStatic::SetIcon  
+##  <a name="seticon"></a>  CStatic::SetIcon  
  Yeni bir simge görüntüsü statik denetimi ile ilişkilendirir.  
   
 ```  

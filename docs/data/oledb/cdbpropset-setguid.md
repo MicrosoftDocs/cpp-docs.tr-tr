@@ -1,12 +1,9 @@
 ---
-title: "CDBPropSet::setguıd | Microsoft Docs"
-ms.custom: 
+title: CDBPropSet::setguıd | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL.CDBPropSet.SetGUID
@@ -20,18 +17,16 @@ helpviewer_keywords:
 - SetGUID method
 - AddProperty method
 ms.assetid: a4cce036-cf1f-4897-9712-7b01eaf887ff
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: edf9720e0f116060a06ffa56bf5c3e6c4c8691e1
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 140bc76968780efff826ccc42343f27b2cd2eae6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdbpropsetsetguid"></a>CDBPropSet::SetGUID
 Ayarlar **guidPropertySet** alanındaki **DBPROPSET** yapısı.  

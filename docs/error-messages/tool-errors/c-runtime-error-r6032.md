@@ -1,12 +1,9 @@
 ---
-title: "C çalışma zamanı hatası R6032 | Microsoft Docs"
-ms.custom: 
+title: C çalışma zamanı hatası R6032 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - R6032
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - R6032
 ms.assetid: 52092a63-cc51-444a-bfc3-fad965a3558e
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2b49341d9dc821b54a7bf4a07a2692504cc6e95
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1f82690dd9b8f7c224db473b15627b632dcc96d8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="c-runtime-error-r6032"></a>C çalışma zamanı hatası R6032
 Yerel ayar bilgileri için yeterli alan yok  

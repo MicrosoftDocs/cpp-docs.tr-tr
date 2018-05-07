@@ -1,13 +1,10 @@
 ---
-title: "Kapsayıcılar: İstemci öğesi durumları | Microsoft Docs"
-ms.custom: 
+title: 'Kapsayıcılar: İstemci öğesi durumları | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - lifetime, lifetime states and OLE container client items
 - client items and OLE containers
 ms.assetid: e7021caa-bd07-4adb-976e-f5f3d025bc53
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bcc43d4e8b32a8766eef7c50e45bece569ef5c3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5046ea7f3f3775cfe0009afe50f33a6ce6723cc0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="containers-client-item-states"></a>Kapsayıcılar: İstemci Öğesi Durumları
 Bu makalede, bir istemci öğesi ömrü geçtiği farklı durumlara açıklanmaktadır.  
@@ -45,7 +40,7 @@ Bu makalede, bir istemci öğesi ömrü geçtiği farklı durumlara açıklanmak
   
  Boş durumunda bir istemci madde henüz tamamen bir öğe değil. Bellek için ayrıldı, ancak bunu henüz OLE öğesi'nin verilerle başlatılmadı. Bu istemci öğesi olduğundan, bir çağrıyla oluşturulduğunda durumdur **yeni** henüz tipik iki aşamalı oluşturma ikinci adım geçmemiştir ancak.  
   
- İkinci adımda çağrısıyla gerçekleştirilen `COleClientItem::CreateFromFile` veya başka bir **CreateFrom***xxxx* işlevi, öğe tamamen oluşturuldu. OLE verilerden (bir dosyayı veya başka bir kaynaktan, Pano gibi) ile ilişkili `COleClientItem`-türetilmiş bir nesne içermelidir. Şimdi öğesi yüklü durumda.  
+ İkinci adımda çağrısıyla gerçekleştirilen `COleClientItem::CreateFromFile` veya başka bir **CreateFrom *** xxxx* işlevi, öğe tamamen oluşturuldu. OLE verilerden (bir dosyayı veya başka bir kaynaktan, Pano gibi) ile ilişkili `COleClientItem`-türetilmiş bir nesne içermelidir. Şimdi öğesi yüklü durumda.  
   
  Bir öğe sunucunun pencerede açıldı yerine, kapsayıcının belge yerinde açılan Aç (veya tam olarak açık) durumda değil. Bu durumda, geçici tarama genellikle öğesi başka bir yerde etkin olduğunu belirtmek için kapsayıcının pencere öğesinde gösterimini üzerinden çizilir.  
   

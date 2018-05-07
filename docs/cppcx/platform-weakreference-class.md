@@ -1,26 +1,21 @@
 ---
-title: "Platform::WeakReference sınıfı | Microsoft Docs"
-ms.custom: 
+title: Platform::WeakReference sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - Platform::WeakReference
 ms.assetid: 8cfe1977-a8c7-4b7b-b539-25c77ed4c5f1
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59d87d2e00ef567c0273e71410ad58ebf0a5c061
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: a8db5c855b6a377a0202183d48b8fd34e93b6072
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="platformweakreference-class"></a>Platform::WeakReference sınıfı
 Ref sınıfının bir örneği zayıf başvuru temsil eder.  
@@ -51,7 +46,7 @@ class WeakReference
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|[WeakReference::operator=](#operator-assign)|Yeni bir değer WeakReference nesneye atar.|  
+|[WeakReference::operator =](#operator-assign)|Yeni bir değer WeakReference nesneye atar.|  
 |[WeakReference::operator BoolType](#booltype)|Güvenli bool deseni uygular.|  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -72,7 +67,7 @@ WeakReference& operator=(const volatile ::Platform::Object^ const otherArg);
 ### <a name="remarks"></a>Açıklamalar  
  Yukarıdaki listede son aşırı WeakReference değişkenine ref sınıfı atamanızı sağlar. Bu durumda ref alta sınıftır [Platform::Object](../cppcx/platform-object-class.md)^. Özgün türü daha sonra tür parametresi için bağımsız değişken olarak belirterek geri [WeakReference::Resolve\<T >](#resolve) üye işlevi.  
   
-## <a name="booltype">WeakReference::operator BoolType</a>
+## <a name="booltype"></a> WeakReference::operator BoolType
 WeakReference sınıfı için güvenli bool deseni uygular. Açıkça kodunuzdan çağrılması değil.  
   
 ### <a name="syntax"></a>Sözdizimi  

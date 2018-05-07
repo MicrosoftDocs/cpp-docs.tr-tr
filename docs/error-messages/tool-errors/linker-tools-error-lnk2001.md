@@ -1,12 +1,9 @@
 ---
-title: "Bağlayıcı araçları hatası LNK2001 | Microsoft Docs"
-ms.custom: 
+title: Bağlayıcı araçları hatası LNK2001 | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - LNK2001
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - LNK2001
 ms.assetid: dc1cf267-c984-486c-abd2-fd07c799f7ef
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51f78f436d0e19779d0ebca499a559a60d12bcf9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 78dc0c0a3a030ecb88d7138484e2c64e145f69ec
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="linker-tools-error-lnk2001"></a>Bağlayıcı Araçları Hatası LNK2001
 Çözümlenmemiş dış simgesi "*simgesi*"  
@@ -76,7 +71,7 @@ Bir uygulamanın hata ayıklama sürümü oluştururken sürüm modu kitaplıkla
   
 Kodunuzu bir kitaplık bir sürümünden bir simgeye başvuruyor, ancak bağlayıcı kitaplığa farklı bir sürümünü sağlayın bu hata oluşabilir. Genellikle, nesne dosyaları ya da farklı derleyici sürümler için yerleşik kitaplıkları karıştıramazsınız. Yeni bir sürümünde sevk kitaplıkları önceki sürümleri ve tam tersini içinde yer alan kitaplıklarında bulunamıyor simgeleri içerebilir. Bu sorunu gidermek için tüm nesne dosyaları ve kitaplıkları derleyici aynı sürümü ile bunları birlikte bağlamadan önce oluşturun.  
   
--  Araçlar &#124; Seçenekler &#124; Projeleri &#124; VC ++ dizinleri iletişim kutusunda, kitaplık dosyaları seçimi altında Kitaplığı arama sırası değiştirmenize izin verir. Projenin özellik sayfaları iletişim kutusu bağlayıcı klasöründe, güncel yollarını içerebilir.  
+-  Araçlar &#124; seçenekleri &#124; projeleri &#124; kitaplık dosyaları seçimi altında VC ++ dizinleri iletişim kutusu Kitaplığı arama sırası değiştirmenize olanak sağlar. Projenin özellik sayfaları iletişim kutusu bağlayıcı klasöründe, güncel yollarını içerebilir.  
   
 -  Bu sorun, yeni bir SDK (belki farklı bir konuma) yüklendiğinde ve arama sırasını yeni konumunu gösterecek şekilde güncelleştirilmez görünebilir. Normalde, yeni bir SDK yolun yerleştirileceği lib dizinleri varsayılan Visual C++ konumu önünde ve içerir. Ayrıca, katıştırılmış yollarını içeren bir proje hala geçerlidir, ancak farklı bir konuma yüklenen yeni sürümü tarafından eklenen yeni işlevsellik için güncel eski yolları işaret edebilir.  
   

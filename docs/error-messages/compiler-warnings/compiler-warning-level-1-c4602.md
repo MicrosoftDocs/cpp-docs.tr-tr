@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4602 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4602 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C4602
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4602
 ms.assetid: c1f0300f-e2a2-4c9e-a7c3-4c7318d10509
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ff97549aed96263814c4d6a52e7634b6fd8ec04
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b2c25fd983f1ac7cebcc568a0b47c06c4d8e23a9
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4602"></a>Derleyici Uyarısı (düzey 1) C4602
 \#pragma pop_macro: 'makrosu name' hiçbir önceki #pragma push_macro bu tanımlayıcısı  

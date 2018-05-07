@@ -1,12 +1,9 @@
 ---
 title: __ll_rshift | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - __ll_rshift_cpp
@@ -17,20 +14,18 @@ helpviewer_keywords:
 - __ll_rshift intrinsic
 - ll_rshift intrinsic
 ms.assetid: ef13b732-d122-44a0-add9-f5544a2c4ab2
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e404375eefaf456ae22d2eca5cb66a13dd6a72ae
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 4e086339c41f789323cb4aab386a96dae27a0eeb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="llrshift"></a>__ll_rshift
-**Microsoft Specific**  
+**Microsoft özel**  
   
  İkinci parametresi tarafından belirtilen bit sayısı tarafından sağındaki ilk parametresi tarafından belirtilen bir 64-bit değeri kaydırır.  
   

@@ -1,13 +1,10 @@
 ---
-title: "Tasarlama ve oluşturma (MFC veri erişimi) kayıt görünümü | Microsoft Docs"
-ms.custom: 
+title: Tasarlama ve oluşturma (MFC veri erişimi) kayıt görünümü | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - application wizards [C++], creating record view classes
 - designing record views
 ms.assetid: 1d6f5439-754f-4b8b-a19d-841a4657827b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 19f4f248a7fdca0d89df9c8becad69876bf6ac7d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6ac82f3d946a376256152ad5c173786baea1de3c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="designing-and-creating-a-record-view--mfc-data-access"></a>Tasarlama ve oluşturma (MFC veri erişimi) kayıt görünümü
 Kayıt görünümü sınıfıyla oluşturabilirsiniz [MFC Uygulama Sihirbazı'nı](../mfc/reference/database-support-mfc-application-wizard.md). Bir uygulama Sihirbazı'nı kullanırsanız kayıt görünümü sınıfı ve bir iletişim şablonunu kaynak için (denetimleri olmadan) oluşturur. Denetimleri için iletişim şablon kaynağı eklemek için Visual C++ iletişim kutusu Düzenleyicisi'ni kullanmanız gerekir. Kullanırsanız, diğer yandan, **sınıfı Ekle**, ilk iletişim şablon kaynağı Düzenleyicisi iletişim kutusunda oluşturun ve kayıt görünümü sınıfı oluşturmanız gerekir.  

@@ -2,12 +2,9 @@
 title: 'Kayıt kümesi: Kaydırma (ODBC) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,18 +17,16 @@ helpviewer_keywords:
 - scrolling [C++], recordsets
 - Move method (recordsets)
 ms.assetid: f38d2dcb-1e88-4e41-af25-98b00c276be4
-caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 34dcfb9cb1d45710accba2ee6155e3c741b727be
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 19058ec3d9a7840fc0e90be84f2734c49f2c8e85
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="recordset-scrolling-odbc"></a>Kayıt Kümesi: Kaydırma (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -44,7 +39,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
 -   [Ne kaydırma durumlarda olan ve desteklenmeyen altında](#_core_when_scrolling_is_supported).  
   
-##  <a name="_core_scrolling_from_one_record_to_another"></a>Bir kayıttan diğerine kaydırma  
+##  <a name="_core_scrolling_from_one_record_to_another"></a> Bir kayıttan diğerine kaydırma  
  Sınıf `CRecordset` sağlar **taşıma** kayıt kümesi içinde kaydırma için üye işlevleri. Bu işlevler geçerli kaydı satır kümelerine göre taşır. Toplu satır getirme, uyguladıysanız bir **taşıma** işlemi kayıt kümesi satır kümesi boyutu tarafından yeniden konumlandırır. Toplu satır getirme, çağrı uyguladıysanız olmayan bir **taşıma** işlevi yeniden konumlandırır kayıt kümesi tek bir kayıt olarak her zaman. Toplu satır getirme hakkında daha fazla bilgi için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
 > [!NOTE]
@@ -100,11 +95,11 @@ while( !rsCustSet.IsBOF( ) )
 rsCustSet.MoveFirst( );  
 ```  
   
- `IsEOF`kayıt kümesi son kaydı konumlandırılır, sıfır olmayan bir değer döndürür. `IsBOF`kayıt kümesi (önce tüm kayıtları) ilk kaydı öncesinde konumlandırılır, sıfır olmayan bir değer döndürür. Her iki durumda da, üzerinde çalışılacak geçerli kayıt yok. Çağırırsanız `MovePrev` zaman `IsBOF` zaten **TRUE** veya arama `MoveNext` zaman `IsEOF` zaten **TRUE**, framework oluşturur bir `CDBException`. Aynı zamanda `IsBOF` ve `IsEOF` için boş bir kayıt kümesi denetlemek için.  
+ `IsEOF` kayıt kümesi son kaydı konumlandırılır, sıfır olmayan bir değer döndürür. `IsBOF` kayıt kümesi (önce tüm kayıtları) ilk kaydı öncesinde konumlandırılır, sıfır olmayan bir değer döndürür. Her iki durumda da, üzerinde çalışılacak geçerli kayıt yok. Çağırırsanız `MovePrev` zaman `IsBOF` zaten **TRUE** veya arama `MoveNext` zaman `IsEOF` zaten **TRUE**, framework oluşturur bir `CDBException`. Aynı zamanda `IsBOF` ve `IsEOF` için boş bir kayıt kümesi denetlemek için.  
   
  Kayıt kümesi gezinme hakkında daha fazla bilgi için bkz: [kayıt kümesi: yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).  
   
-##  <a name="_core_when_scrolling_is_supported"></a>Kaydırma Desteklendiğinde  
+##  <a name="_core_when_scrolling_is_supported"></a> Kaydırma Desteklendiğinde  
  İlk olarak tasarlanan haliyle yalnızca ileri kaydırma SQL sağlanan ancak ODBC kaydırma yeteneklerini genişletir. Uygulamanızı çalışır sürücünüzün ODBC API uyumluluk düzeyi, ODBC sürücüleri kaydırma desteği kullanılabilir düzeyine bağlıdır ve ODBC imleç kitaplığı belleğe mi yüklenir. Daha fazla bilgi için bkz: [ODBC](../../data/odbc/odbc-basics.md) ve [ODBC: ODBC İmleç Kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md).  
   
 > [!TIP]

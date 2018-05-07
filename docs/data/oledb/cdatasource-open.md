@@ -1,12 +1,9 @@
 ---
 title: CDataSource::Open | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL::CDataSource::Open
@@ -18,18 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - Open method
 ms.assetid: a6d28bd1-799a-48ed-8993-5f82d1705b77
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6b21add1180343070fb85da113309e0a31f86aeb
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 3196aa89426e895dd6b73b28ce197e8f271a0262
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdatasourceopen"></a>CDataSource::Open
 Kullanarak bir veri kaynağı için bir bağlantı açar bir **CLSID**, **ProgID**, veya `CEnumerator` ad veya bir Bulucu iletişim kutusu ile kullanıcıya sorar.  
@@ -114,7 +109,7 @@ HRESULT Open(LPCSTR szProgID,
  Standart bir `HRESULT`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanan yöntemi aşırı yüklemesini `hWnd` parametresi oledb32.dll hizmet bileşenlerinde ile bir veri kaynağı nesnesi açılır; bu DLL kaynak havuzu, otomatik işlem kaydı gibi hizmet bileşenleri özellikleri uygulamasını içerir ve benzeri. Daha fazla bilgi için bkz: "OLE DB hizmetleri" OLE DB Programcı Başvurusu, [http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).  
+ Kullanan yöntemi aşırı yüklemesini `hWnd` parametresi oledb32.dll hizmet bileşenlerinde ile bir veri kaynağı nesnesi açılır; bu DLL kaynak havuzu, otomatik işlem kaydı gibi hizmet bileşenleri özellikleri uygulamasını içerir ve benzeri. Daha fazla bilgi için bkz: "OLE DB hizmetleri" OLE DB Programcı Başvurusu, [ http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).  
   
  Kullanmayın yöntemi aşırı `hWnd` parametresi oledb32.dll içinde hizmet bileşenlerini kullanmadan bir veri kaynağı nesnesi açın. A [CDataSource](../../data/oledb/cdatasource-class.md) bu işlev aşırı yüklemelerinin ile açılmış nesne bağlanamaz hizmet bileşenleri işlevlerden herhangi birini kullanma.  
   

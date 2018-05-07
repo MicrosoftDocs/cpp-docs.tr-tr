@@ -1,31 +1,26 @@
 ---
-title: "Nasıl yapılır: C# dizin oluşturucusunu kullanma (C + +/ CLI) | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: C# dizin oluşturucusunu kullanma (C + +/ CLI) | Microsoft Docs'
+ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - C++, indexers
 - indexers, consuming C#
 ms.assetid: 5a11850c-a1a2-4a0a-b95e-f6dc5a87f439
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2ed069e1f9d7effa686cd572bd505a41dcf60c04
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 00a8164b91a4e483330d4969325a7bd4b6fe6e6a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="how-to-consume-a-c-indexer-ccli"></a>Nasıl yapılır: C# Dizin Oluşturucusunu Kullanma (C++/CLI)
 Visual C++ oluşturucusu içermez; Özellikler dizine. Bir dizin oluşturulmuş özellik değilmiş gibi bir C# dizin oluşturucusunu kullanma, dizin oluşturucu erişim sağlar.  

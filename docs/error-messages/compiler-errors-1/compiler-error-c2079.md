@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2079 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2079 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2079
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2079
 ms.assetid: ca58d6d5-eccd-40b7-ba14-c003223c5bc7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9eb8dda8af6a71cda1d3a4f9114af238110afc01
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b29200be08c10dcfaeb178941309c6f3aec6ff9e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2079"></a>Derleyici Hatası C2079
 'tanımlayıcı' tanımsız sınıfı/struct/union 'name' kullanır  

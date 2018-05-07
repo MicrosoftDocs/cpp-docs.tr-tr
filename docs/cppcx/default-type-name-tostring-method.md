@@ -1,28 +1,23 @@
 ---
-title: "Varsayılan:: (type_name):: ToString yöntemini | Microsoft Docs"
-ms.custom: 
+title: 'Varsayılan:: (type_name):: ToString yöntemini | Microsoft Docs'
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - VCCORLIB/Platform::Object::ToString
 dev_langs:
 - C++
 ms.assetid: 2541955f-d844-4bd8-944d-185198c86579
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 456625e3e7d7472432d9a89b2dc55d6885223a89
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 13d94186c9ca271c586ad0b487b80b63608a1ec3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="defaulttypenametostring-method"></a>Varsayılan:: (type_name):: ToString yöntemi
 Geçerli türünü temsil eden bir dize döndürür.  

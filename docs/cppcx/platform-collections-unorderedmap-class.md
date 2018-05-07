@@ -1,26 +1,21 @@
 ---
-title: "Platform::Collections:: unorderedmap sınıfı | Microsoft Docs"
-ms.custom: 
+title: 'Platform::Collections:: unorderedmap sınıfı | Microsoft Docs'
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMap
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 248b25e61af0ce766c81d480d7ebf39618a8dfec
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: fbc1905023f64c4983cf041eda244b28ce507abc
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap Sınıfı
 
@@ -162,7 +157,7 @@ bool HasKey(
 
 ### <a name="parameters"></a>Parametreler
 
-*key*  
+*Anahtarı*  
 UnorderedMap öğesi bulmak için kullanılan anahtar. Türü *anahtar* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -184,7 +179,7 @@ virtual bool Insert(
 
 ### <a name="parameters"></a>Parametreler
 
-*key*  
+*Anahtarı*  
 Anahtar-değer çifti anahtar bölümünü. Türü *anahtar* TypeName *K*.
 
 *value*  
@@ -208,7 +203,7 @@ V Lookup(
 
 ### <a name="parameters"></a>Parametreler
 
-*key*  
+*Anahtarı*  
 Bir öğenin UnorderedMap bulmak için kullanılan anahtar. Türü *anahtar* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -246,7 +241,7 @@ virtual void Remove(
 
 ### <a name="parameters"></a>Parametreler
 
-*key*  
+*Anahtarı*  
 Anahtar-değer çifti anahtar bölümünü. Türü *anahtar* TypeName *K*.
 
 ## <a name="size"></a>  UnorderedMap::Size yöntemi
@@ -350,7 +345,7 @@ UnorderedMap(
 
 ### <a name="parameters"></a>Parametreler
 
-*InIt*  
+*Init*  
 Geçerli UnorderedMap typename.
 
 *P*  
@@ -364,7 +359,7 @@ Bir başvuru veya [Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)
 
 *IL* A [std::initializer_list](../standard-library/initializer-list-class.md) , [std::pair](../standard-library/pair-structure.md) harita başlatmak için kullanılan nesne.
 
-*first*  
+*ilk*  
 Geçerli UnorderedMap başlatmak için kullanılan öğelerin bir aralıktaki ilk öğe giriş yineleyici.
 
 *Son*  

@@ -1,13 +1,10 @@
 ---
-title: "MFC ActiveX denetimleri: Özel olaylar ekleme | Microsoft Docs"
-ms.custom: 
+title: 'MFC ActiveX denetimleri: Özel olaylar ekleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -24,22 +21,20 @@ helpviewer_keywords:
 - custom events [MFC]
 - FireEvent method, adding custom events
 ms.assetid: c584d053-1e34-47aa-958e-37d3e9b85892
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bbf62500d3aaca21e9b01401e839d08fa56755c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5b82232b8f2ad7a5e3bc1ff8fed0e8a38b1a7d66
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-activex-controls-adding-custom-events"></a>MFC ActiveX Denetimleri: Özel Olaylar Ekleme
 Özel olaylar, bunlar otomatik olarak bir sınıf tarafından tetiklenen değil, stok olayları farklı `COleControl`. Özel bir olay bir olay olarak denetim geliştirici tarafından belirlenen belirli bir eylemi, tanır. Özel olaylar için olay eşleme girdilerini tarafından temsil edilen `EVENT_CUSTOM` makrosu. Aşağıdaki bölümde ActiveX Denetim Sihirbazı kullanılarak oluşturulmuş bir ActiveX denetimi projesi için özel bir olay uygular.  
   
-##  <a name="_core_adding_a_custom_event_with_classwizard"></a>Özel bir olay ile ekleyerek olay Ekleme Sihirbazı  
+##  <a name="_core_adding_a_custom_event_with_classwizard"></a> Özel bir olay ile ekleyerek olay Ekleme Sihirbazı  
  Aşağıdaki yordam, belirli bir özel olay Clickın ekler. Diğer özel olaylar eklemek için bu yordamı kullanın. Özel olay adınızı ve parametreleri Clickın olayı adını ve parametreleri için yerleştirin.  
   
 #### <a name="to-add-the-clickin-custom-event-using-the-add-event-wizard"></a>Olay Ekleme Sihirbazı'nı kullanarak Clickın özel olay eklemek için  
@@ -62,7 +57,7 @@ ms.lasthandoff: 12/21/2017
   
 8.  Tıklatın **son** olay oluşturamadı.  
   
-##  <a name="_core_classwizard_changes_for_custom_events"></a>Olay Sihirbazı değişiklikleri için özel olaylar ekleme  
+##  <a name="_core_classwizard_changes_for_custom_events"></a> Olay Sihirbazı değişiklikleri için özel olaylar ekleme  
  Özel bir olay eklediğinizde, olay Ekleme Sihirbazı'nı denetim sınıfına değişiklikleri yapar. H. CPP, ve. IDL dosyaları. Aşağıdaki kod örnekleri Clickın olayı özgüdür.  
   
  Aşağıdaki satırları üstbilgiye eklenir (. H) denetim sınıfınıza dosyası:  
@@ -83,7 +78,7 @@ ms.lasthandoff: 12/21/2017
   
  Bu satırı Clickın olayı olay Ekleme Sihirbazı'nı olay listesinde olayın konumdan gerçekleştirilen belirli bir kimlik numarası atar. Olay listesi girişi olay düşündüğünüz için bir kapsayıcı sağlar. Örneğin, olay başlatıldığında çalıştırılacak işleyici kodu sağlayabilir.  
   
-##  <a name="_core_calling_fireclickin"></a>Fireclickın çağırma  
+##  <a name="_core_calling_fireclickin"></a> Fireclickın çağırma  
  Olay Ekleme Sihirbazı'nı kullanarak Clickın özel olayı eklediyseniz, bu olay harekete olduğunda, karar vermeniz gerekir. Çağırarak bunu `FireClickIn` uygun eylemi oluştuğunda. Bu tartışma için denetim kullanır `InCircle` içinde işlev bir `WM_LBUTTONDOWN` bir kullanıcı bir dairesel veya Oval bölge içinde tıkladığında Clickın olayı tetiklenecek ileti işleyicisi. Aşağıdaki yordam ekler `WM_LBUTTONDOWN` işleyicisi.  
   
 #### <a name="to-add-a-message-handler-with-the-add-event-wizard"></a>Olay Ekleme Sihirbazı'nı bir ileti işleyicisini eklemek için  
@@ -117,7 +112,7 @@ ms.lasthandoff: 12/21/2017
   
  [!code-cpp[NVC_MFC_AxUI#12](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_6.h)]  
   
-##  <a name="_core_custom_events_with_stock_names"></a>Stok adlarıyla özel olaylar  
+##  <a name="_core_custom_events_with_stock_names"></a> Stok adlarıyla özel olaylar  
  Hem de aynı denetimi uygulayabileceğiniz değil ancak stok olaylar, aynı ada sahip özel olaylar oluşturabilirsiniz. Örneğin, stok olay tıklatın normalde tetiklendiğinde başlatılmıyor Click adlı özel bir olay oluşturmak isteyebilirsiniz. Kendi tetikleme işlevini çağırarak herhangi bir zamanda sonra Click olayını ateşle.  
   
  Aşağıdaki yordamda özel bir tıklatma ekler olay.  

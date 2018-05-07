@@ -1,12 +1,9 @@
 ---
-title: "CAccessorBase sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAccessorBase sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CAccessorBase
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - CAccessorBase class
 ms.assetid: 389b65be-11ca-4ae0-9290-60c621c4982b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 030e06c40912a6b32c076b86f4a7456177b4ce93
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: f598f49d279085b23e0bd3b94c48620363b5a816
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="caccessorbase-class"></a>CAccessorBase Sınıfı
 OLE DB şablonlarında tüm erişimciler bu sınıfından türetilir. `CAccessorBase` Çoklu Erişimci yönetmek bir satır kümesi sağlar. Ayrıca bağlama parametreler ve çıktı sütunları için sağlar.  
@@ -46,7 +41,7 @@ OLE DB şablonlarında tüm erişimciler bu sınıfından türetilir. `CAccessor
 |[Kapat](../../data/oledb/caccessorbase-close.md)|Erişimciler kapatır.|  
 |[GetHAccessor](../../data/oledb/caccessorbase-gethaccessor.md)|Erişimci tanıtıcısı alır.|  
 |[GetNumAccessors](../../data/oledb/caccessorbase-getnumaccessors.md)|Sınıfı tarafından oluşturulan erişimciler sayısını alır.|  
-|[IsAutoAccessor](../../data/oledb/caccessorbase-isautoaccessor.md)|Belirli erişimci erişimcinin olup olmadığını sınar.|  
+|[Isautoaccessor](../../data/oledb/caccessorbase-isautoaccessor.md)|Belirli erişimci erişimcinin olup olmadığını sınar.|  
 |[ReleaseAccessors](../../data/oledb/caccessorbase-releaseaccessors.md)|Erişimciler serbest bırakır.|  
   
 ## <a name="requirements"></a>Gereksinimler  

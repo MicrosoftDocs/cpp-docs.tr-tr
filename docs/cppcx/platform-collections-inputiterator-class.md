@@ -1,11 +1,8 @@
 ---
-title: "Platform::Collections::InputIterator sınıfı | Microsoft Docs"
-ms.custom: 
+title: Platform::Collections::InputIterator sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::InputIterator::InputIterator
@@ -14,17 +11,15 @@ dev_langs:
 helpviewer_keywords:
 - InputIterator Class
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: caf29e32fc4af5c6d1e3f65abbe250bb150679c0
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 7188cba0655e2ca89f82b60ffe9ee4b8ce94633a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="platformcollectionsinputiterator-class"></a>Platform::Collections::InputIterator sınıfı
 Windows çalışma zamanı türetilen koleksiyonlar için bir standart Şablon kitaplığı InputIterator sağlar.  
@@ -62,11 +57,11 @@ class InputIterator;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[InputIterator::operator!= Operator](#operator-inequality)|Geçerli InputIterator için belirtilen InputIterator eşit olup olmadığını gösterir.|  
-|[InputIterator::operator* Operator](#operator-decrement)|Geçerli InputIterator tarafından belirtilen öğenin bir başvuru alır.|  
-|[InputIterator::operator++ Operator](#operator-increment)|Geçerli InputIterator artırır.|  
-|[InputIterator::operator== Operator](#operator-equality)|Geçerli InputIterator için belirtilen InputIterator eşit olup olmadığını gösterir.|  
-|[InputIterator::operator-> Operator](#operator-arrow)|Geçerli InputIterator tarafından başvurulan öğenin adresi alır.|  
+|[InputIterator::operator! = işleci](#operator-inequality)|Geçerli InputIterator için belirtilen InputIterator eşit olup olmadığını gösterir.|  
+|[InputIterator::operator * işleci](#operator-decrement)|Geçerli InputIterator tarafından belirtilen öğenin bir başvuru alır.|  
+|[InputIterator::operator ++ işleci](#operator-increment)|Geçerli InputIterator artırır.|  
+|[InputIterator::operator == işleci](#operator-equality)|Geçerli InputIterator için belirtilen InputIterator eşit olup olmadığını gösterir.|  
+|[InputIterator::operator -> işleci](#operator-arrow)|Geçerli InputIterator tarafından başvurulan öğenin adresi alır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `InputIterator`  
@@ -92,7 +87,7 @@ explicit InputIterator(Windows::Foundation::Collections<X>^ iter);
   
 
 
-## <a name="operator-arrow"></a>  InputIterator::operator-&gt; Operator
+## <a name="operator-arrow"></a>  InputIterator::operator -&gt; işleci
 Geçerli InputIterator tarafından belirtilen öğenin adresini alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -120,7 +115,7 @@ reference operator*() const;
   
 
 
-## <a name="operator-equality"></a>  InputIterator::operator== Operator
+## <a name="operator-equality"></a>  InputIterator::operator == işleci
 Geçerli InputIterator için belirtilen InputIterator eşit olup olmadığını gösterir.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -138,7 +133,7 @@ bool operator== (const InputIterator& other) const;
   
 
 
-## <a name="operator-increment"></a>  InputIterator::operator++ Operator
+## <a name="operator-increment"></a>  InputIterator::operator ++ işleci
 Geçerli InputIterator artırır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -158,7 +153,7 @@ InputIterator operator++(int);
   
 
 
-## <a name="operator-inequality"></a>  InputIterator::operator!= Operator
+## <a name="operator-inequality"></a>  InputIterator::operator! = işleci
 Geçerli InputIterator için belirtilen InputIterator eşit olup olmadığını gösterir.  
   
 ### <a name="syntax"></a>Sözdizimi  

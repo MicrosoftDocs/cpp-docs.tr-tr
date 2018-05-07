@@ -1,13 +1,10 @@
 ---
-title: "Veri kaynağı: Program aracılığıyla ODBC veri kaynağını yapılandırma | Microsoft Docs"
-ms.custom: 
+title: 'Veri kaynağı: Program aracılığıyla ODBC veri kaynağını yapılandırma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 f1_keywords:
 - SQLConfigDataSource
 dev_langs:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - ODBC connections, configuring
 - configuring ODBC data sources
 ms.assetid: b8cabe9b-9e12-4d73-ae36-7cb12dee3213
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ac5756452a8b1c2d5dbf2f27ac7d3e1a8b069ca2
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: e1f46ad566874d80b45593e7aecfeee2d5d88841
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="data-source-programmatically-configuring-an-odbc-data-source"></a>Veri Kaynağı: Program Aracılığıyla ODBC Veri Kaynağını Yapılandırma
 Bu konuda, açık veritabanı bağlantısı (ODBC) veri kaynağı adları programlı olarak nasıl yapılandırabileceğiniz açıklanmaktadır. Bu size esneklik verilere erişmek için açıkça veri kaynakları adlarını belirtmek için ODBC Yöneticisi veya diğer programları kullanmak üzere kullanıcı zorlamadan sağlar.  
@@ -105,7 +100,7 @@ BOOL SQLConfigDataSource(HWND hwndParent,UINT fRequest, LPCSTR lpszDriver, LPCST
   
     -   32 bit için anahtar Bul **HKEY_CURRENT_USER\Software\ODBC\ODBC. INI\ODBC veri kaynakları** sol bölmede.  
   
-         Sağ bölmede form girişlerini listeler: "pub: REG_SZ:*<data source name>*", burada  *<data source name>*  zaten düşündüğünüz sürücü için istenen ayarları ile yapılandırılmış bir veri kaynağı kullanmak için. İstediğiniz veri kaynağını, örneğin, SQL Server seçin. Dize izleyen öğeler "pub:" sipariş, keyname ve değerini kullanmak için olan, `lpszAttributes` parametresi.  
+         Sağ bölmede form girişlerini listeler: "pub: REG_SZ:*<data source name>*", burada *<data source name>* zaten düşündüğünüz sürücü için istenen ayarları ile yapılandırılmış bir veri kaynağı kullanmak için. İstediğiniz veri kaynağını, örneğin, SQL Server seçin. Dize izleyen öğeler "pub:" sipariş, keyname ve değerini kullanmak için olan, `lpszAttributes` parametresi.  
   
     -   16 bit tarafından işaretlenen Odbc.ini dosyasındaki bölüm Bul [*\<veri kaynağı adı >*].  
   

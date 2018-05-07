@@ -1,30 +1,25 @@
 ---
-title: "Üstbilgi denetimine örnekler | Microsoft Docs"
-ms.custom: 
+title: Üstbilgi denetimine örnekler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - sample applications [MFC], header controls
 - controls [MFC], header
 ms.assetid: 30050732-d53e-4eab-88d7-61aac52914c9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4194669f25a851e215046c963db0a01fbb8d4e8a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d20cdf22a91f7c144c2bbdb96d6789ca45778994
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="header-control-examples"></a>Üstbilgi Denetimine Örnekler
 Üstbilgi denetimleri örnekleri için bkz: [üstbilgi denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775238) Windows SDK.  

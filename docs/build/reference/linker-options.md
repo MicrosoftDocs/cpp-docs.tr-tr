@@ -19,11 +19,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57f313f82b0b75776b9a7a06a045bef1b7002f56
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
-ms.translationtype: HT
+ms.openlocfilehash: 835d7b1b74c8d465b44ec6274926f0b06d4f1296
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="linker-options"></a>Bağlayıcı Seçenekleri
 
@@ -116,6 +116,7 @@ Kullanabileceğiniz [açıklama](../../preprocessor/comment-c-cpp.md) pragma baz
 |[/ PDBALTPATH](../../build/reference/pdbaltpath-use-alternate-pdb-path.md)|PDB dosyası kaydetmek için farklı bir konuma kullanır.|
 |[/ PDBSTRIPPED](../../build/reference/pdbstripped-strip-private-symbols.md)|Hiçbir özel sembolleri sahip bir program veritabanı (PDB) dosyası oluşturur.|
 |[/ PGD](../../build/reference/pgd-specify-database-for-profile-guided-optimizations.md)|Profil temelli iyileştirmeler için .pgd dosyasını belirtir.|
+|[/POGOSAFEMODE](../../build/reference/pogosafemode-linker-option.md)|**Artık kullanılmayan** bir iş parçacığı izlenmiş PGO yapı oluşturur.|
 |[/ PROFİL](../../build/reference/profile-performance-tools-profiler.md)|Performans araçları Profil Oluşturucu ile kullanılan bir çıktı dosyası oluşturur.|
 |[/RELEASE](../../build/reference/release-set-the-checksum.md)|Sağlama toplamı .exe üstbilgisinde ayarlar.|
 |[/ SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md)|Görüntünün güvenli özel durum işleyicileri tablosu içerecek belirtir.|
@@ -127,6 +128,7 @@ Kullanabileceğiniz [açıklama](../../preprocessor/comment-c-cpp.md) pragma baz
 |[/ TLBID](../../build/reference/tlbid-specify-resource-id-for-typelib.md)|Bağlayıcı tarafından oluşturulan tür kitaplığı kaynak Kimliğini belirtir.|
 |[/ TLBOUT](../../build/reference/tlbout-name-dot-tlb-file.md)|.Tlb dosyası ve diğer MIDL çıktı dosyalarını adını belirtir.|
 |[/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md)|Özellikle Terminal sunucusu altında çalışması için tasarlanmış bir uygulama oluşturur.|
+|[/ USEPROFILE](../../build/reference/useprofile.md)|En iyi duruma getirilmiş bir görüntü oluşturmak için en iyi duruma getirme eğitim verileri profil temelli kullanır.|
 |[/ VERBOSE](../../build/reference/verbose-print-progress-messages.md)|Bağlayıcı ilerleme iletilerini yazdırır.|
 |[/VERSION](../../build/reference/version-version-information.md)|Sürüm numarası atar.|
 |[/ WHOLEARCHIVE](../../build/reference/wholearchive-include-all-library-object-files.md)|Belirtilen statik kitaplıklarından her nesne dosyası içerir.|

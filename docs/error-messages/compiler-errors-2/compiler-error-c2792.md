@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2792 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2792 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2792
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2792
 ms.assetid: 392cf748-4f5e-4e62-a364-3118d5658408
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b0e2436cda7763ab0256082b42a3a46fa010737
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 608d7b799f9f5dc4cf4717f46f61af3e1c5240b6
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2792"></a>Derleyici Hatası C2792
 'Süper': Bu anahtar sözcük gelmelidir '::'  

@@ -1,12 +1,9 @@
 ---
-title: "CWinFormsDialog sınıfı | Microsoft Docs"
-ms.custom: 
+title: CWinFormsDialog sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CWinFormsDialog
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - CWinFormsDialog [MFC], GetControlHandle
 - CWinFormsDialog [MFC], OnInitDialog
 ms.assetid: e3cec000-a578-448e-b06a-8af256312f61
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c59faec7fc981cff31bea4ce6e846d89d0b8bf99
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b7596140f48b62a63189444bee6fb363552766fe
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cwinformsdialog-class"></a>CWinFormsDialog sınıfı
 Bir Windows Forms kullanıcı denetimi barındıran bir MFC iletişim kutusu sınıfı için sarmalayıcı.  
@@ -74,14 +69,14 @@ class CWinFormsDialog :
 |[CWinFormsDialog::operator TManagedControl ^](#operator_tmanagedcontrol)|Bir Windows Forms kullanıcı denetimi için bir başvuru olarak bir tür çevirir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CWinFormsDialog`MFC iletişim kutusu sınıfı için sarmalayıcı olduğu ( [CDialog](../../mfc/reference/cdialog-class.md)), bir Windows Forms kullanıcı denetimi barındıran. Bu, .NET Framework denetimleri kalıcı veya geçici bir MFC iletişim kutusunda görüntülenmesini sağlar.  
+ `CWinFormsDialog` MFC iletişim kutusu sınıfı için sarmalayıcı olduğu ( [CDialog](../../mfc/reference/cdialog-class.md)), bir Windows Forms kullanıcı denetimi barındıran. Bu, .NET Framework denetimleri kalıcı veya geçici bir MFC iletişim kutusunda görüntülenmesini sağlar.  
   
  Windows Forms kullanma hakkında daha fazla bilgi için bkz: [MFC içinde Windows formu kullanıcı denetimi kullanarak](../../dotnet/using-a-windows-form-user-control-in-mfc.md) ve [MFC iletişim kutusu olarak Windows formu kullanıcı denetimi barındırma](../../dotnet/hosting-a-windows-form-user-control-as-an-mfc-dialog-box.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwinforms.h  
   
-##  <a name="cwinformsdialog"></a>CWinFormsDialog::CWinFormsDialog  
+##  <a name="cwinformsdialog"></a>  CWinFormsDialog::CWinFormsDialog  
  Oluşturan bir `CWinFormsDialog` nesnesi.  
   
 ```  
@@ -92,7 +87,7 @@ CWinFormsDialog(UINT nIDTemplate = IDD);
  `nIDTemplate`  
  Bir iletişim kutusu şablonu kaynak Kimliğini içerir. İletişim kutusu Düzenleyicisi iletişim şablonu oluşturmak ve uygulamanın kaynak betik dosyasında depolamak için kullanın. İletişim kutusu şablonları hakkında daha fazla bilgi için bkz: [CDialog sınıfı](../../mfc/reference/cdialog-class.md).  
   
-##  <a name="getcontrol"></a>CWinFormsDialog::GetControl  
+##  <a name="getcontrol"></a>  CWinFormsDialog::GetControl  
  Windows Forms kullanıcı denetimi için bir başvuru alır.  
   
 ```  
@@ -102,7 +97,7 @@ inline TManagedControl^ GetControl() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  MFC iletişim kutusunda Windows Forms denetimini bir başvuru döndürür.  
   
-##  <a name="getcontrolhandle"></a>CWinFormsDialog::GetControlHandle  
+##  <a name="getcontrolhandle"></a>  CWinFormsDialog::GetControlHandle  
  Windows Forms kullanıcı denetimi için pencere tanıtıcı alır.  
   
 ```  
@@ -112,7 +107,7 @@ inline HWND GetControlHandle() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Windows Forms kullanıcı denetimi için pencere tanıtıcının döndürür.  
   
-##  <a name="oninitdialog"></a>CWinFormsDialog::OnInitDialog  
+##  <a name="oninitdialog"></a>  CWinFormsDialog::OnInitDialog  
  MFC iletişim kutusu oluşturarak ve üzerindeki bir Windows Forms kullanıcı denetimi barındırma başlatır.  
   
 ```  
@@ -127,7 +122,7 @@ virtual BOOL OnInitDialog();
   
  İletişim kutusu başlatıldığında özel işlem gerçekleştirmeniz gerekiyorsa, bu üye işlevi geçersiz kılar. Bu yöntemi kullanma hakkında daha fazla bilgi için bkz: [CDialog::OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog).  
   
-##  <a name="operator_-_gt"></a>CWinFormsDialog::operator-&gt;  
+##  <a name="operator_-_gt"></a>  CWinFormsDialog::operator-&gt;  
  Değiştirir [CWinFormsDialog::GetControl](#getcontrol) ifadelerde.  
   
 ```  
@@ -139,7 +134,7 @@ inline TManagedControl^  operator->() const throw();
   
  Windows Forms kullanma hakkında daha fazla bilgi için bkz: [MFC içinde Windows formu kullanıcı denetimi kullanarak](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  
   
-##  <a name="operator_tmanagedcontrol_xor"></a>CWinFormsDialog::operator TManagedControl ^  
+##  <a name="operator_tmanagedcontrol_xor"></a>  CWinFormsDialog::operator TManagedControl ^  
  Bir Windows Forms kullanıcı denetimi için bir başvuru olarak bir tür çevirir.  
   
 ```  

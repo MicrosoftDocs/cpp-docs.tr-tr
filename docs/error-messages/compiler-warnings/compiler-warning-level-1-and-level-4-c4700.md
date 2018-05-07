@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1 ve düzey 4) C4700 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1 ve düzey 4) C4700 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/21/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4700
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4700
 ms.assetid: 2da0deb4-77dd-4b05-98d3-b78d74ac4ca7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00b871d6199338cc3040d6bddedb85f8732dfccd
-ms.sourcegitcommit: 4e416049665819ac62f5300ddf86e94adede4ba0
+ms.openlocfilehash: 876ae98fb2fdea5a9d8bdaecb93b8c229213d329
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-and-level-4-c4700"></a>Derleyici Uyarısı (düzey 1 ve düzey 4) C4700
 

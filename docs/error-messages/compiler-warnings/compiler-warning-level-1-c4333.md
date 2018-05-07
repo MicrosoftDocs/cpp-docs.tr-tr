@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4333 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4333 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4333
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C4333
 ms.assetid: d3763c52-6110-4da0-84db-5264e3f3f166
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22704292cae37b4c4395c49fb69fb2c59c1ccd48
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 67fb838ecbf34f1fb09242a93f6943d81fd0de1e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-c4333"></a>Derleyici Uyarısı (düzey 1) C4333
 'işleci': çok büyük bir miktarını, veri kaybı tarafından sağa kaydırma  

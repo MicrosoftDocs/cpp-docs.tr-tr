@@ -1,12 +1,9 @@
 ---
-title: "CRowset sınıfı | Microsoft Docs"
-ms.custom: 
+title: CRowset sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL.CRowset<TAccessor>
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - CRowset class
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0774c82715ab2fd85098147ebe1697daf7d2d2fa
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 5c9a23c2e879f0d2fe1add1a970c64f6fbcc27b2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="crowset-class"></a>CRowset Sınıfı
 OLE DB satır kümesi nesnesi ve birkaç ilgili yalıtır arabirimleri ve satır kümesi veri işleme yöntemlerini sağlar.  
@@ -56,7 +51,7 @@ class CRowset
 |[Kapat](../../data/oledb/crowset-close.md)|Satır ve geçerli serbest `IRowset` arabirimi.|  
 |[Karşılaştırma](../../data/oledb/crowset-compare.md)|Karşılaştırır iki yer işaret kullanarak [IRowsetLocate::Compare](https://msdn.microsoft.com/en-us/library/ms709539.aspx).|  
 |[CRowset](../../data/oledb/crowset-crowset.md)|Yeni bir `CRowset` nesne ve (isteğe bağlı olarak) ile ilişkilendirir bir **IRowset** parametre olarak sağlanan arabirim.|  
-|[Delete](../../data/oledb/crowset-delete.md)|Satır kümesi kullanımından satırları siler [IRowsetChange:DeleteRows](https://msdn.microsoft.com/en-us/library/ms724362.aspx).|  
+|[Sil](../../data/oledb/crowset-delete.md)|Satır kümesi kullanımından satırları siler [IRowsetChange:DeleteRows](https://msdn.microsoft.com/en-us/library/ms724362.aspx).|  
 |[FindNextRow](../../data/oledb/crowset-findnextrow.md)|Sonraki eşleşen satır sonra belirtilen yer işareti bulur.|  
 |[GetApproximatePosition](../../data/oledb/crowset-getapproximateposition.md)|Yaklaşık bir yer işaretine karşılık gelen bir satır konumunu döndürür.|  
 |[GetData](../../data/oledb/crowset-getdata.md)|Satır satır kümesinin kopyadan verileri alır.|  
@@ -64,7 +59,7 @@ class CRowset
 |[GetOriginalData](../../data/oledb/crowset-getoriginaldata.md)|En son öğesinden alınan veya bekleyen değişiklikleri yoksayılıyor veri kaynağına aktarılan verileri alır.|  
 |[GetRowStatus](../../data/oledb/crowset-getrowstatus.md)|Tüm satırları durumunu döndürür.|  
 |[Ekle](../../data/oledb/crowset-insert.md)|Oluşturur ve kullanarak yeni bir satır ekler [IRowsetChange:InsertRow](https://msdn.microsoft.com/en-us/library/ms716921.aspx).|  
-|[IsSameRow](../../data/oledb/crowset-issamerow.md)|Geçerli satır belirtilen satır karşılaştırır.|  
+|[Issamerow](../../data/oledb/crowset-issamerow.md)|Geçerli satır belirtilen satır karşılaştırır.|  
 |[MoveFirst](../../data/oledb/crowset-movefirst.md)|Sonraki getirme konumunu ilk konumuna yeniden konumlandırır.|  
 |[MoveLast](../../data/oledb/crowset-movelast.md)|Son kayıt taşır.|  
 |[MoveNext](../../data/oledb/crowset-movenext.md)|Bir sonraki sıralı satır veya sonraki satıra ötesinde konumlar belirtilen sayıda gelen verileri getirir.|  

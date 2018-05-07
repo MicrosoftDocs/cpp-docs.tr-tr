@@ -1,13 +1,10 @@
 ---
-title: "Kayıt kümesi: Nasıl kümelerinin kayıtları seçme biçimi (ODBC) | Microsoft Docs"
-ms.custom: 
+title: 'Kayıt kümesi: Nasıl kümelerinin kayıtları seçme biçimi (ODBC) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - recordsets, constructing SQL statements
 - ODBC recordsets, selecting records
 ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8664c5732c0cdf1042b6af338ea388ab29ab7863
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a9ff2f1e9946eb32356eb09fa2ee216aa636a351
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="recordset-how-recordsets-select-records-odbc"></a>Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -44,7 +39,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
  Kayıt kümeleri kayıtları bir veri kaynağı bir ODBC sürücüsü aracılığıyla sürücüye SQL deyimlerini göndererek seçin. Gönderilen SQL nasıl, tasarım ve kayıt kümesi sınıfınız açmak bağlıdır.  
   
-##  <a name="_core_your_options_in_selecting_records"></a>Kayıtları seçme, seçenekleri  
+##  <a name="_core_your_options_in_selecting_records"></a> Kayıtları seçme, seçenekleri  
  Aşağıdaki tabloda, kayıtları seçme seçeneklerinizi gösterir.  
   
 ### <a name="how-and-when-you-can-affect-a-recordset"></a>Ne zaman ve nasıl kayıt etkileyebilir  
@@ -59,7 +54,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
 
 | Çağrı **Requery** kayıt kümesi veri kaynağında en son değerleri ile sorgulayacak | Yeni parametreler, filtre ya da sıralama belirtin. Bkz: [kayıt kümesi: kayıt kümesi (ODBC) yeniden sorgulama](../../data/odbc/recordset-requerying-a-recordset-odbc.md). |  
   
-##  <a name="_core_how_a_recordset_constructs_its_sql_statement"></a>Bir kayıt kümesi kendi SQL deyimini nasıl oluşturur  
+##  <a name="_core_how_a_recordset_constructs_its_sql_statement"></a> Bir kayıt kümesi kendi SQL deyimini nasıl oluşturur  
  Kayıt kümesi nesnesinin çağırdığınızda [açık](../../mfc/reference/crecordset-class.md#open) üye işlevi **açık** bazılarını veya tümünü aşağıdaki içeriklerin kullanarak bir SQL deyimi oluşturur:  
   
 -   **LpszSQL** parametresi geçirilen **açık**. Aksi takdirde **NULL**, bu parametre bir özel SQL dizesi ya da bir parçası belirtir. Çerçeve dizeyi ayrıştırır. Dize bir SQL ise **seçin** deyimi veya ODBC **ÇAĞRISI** deyimi, framework dize kayıt kümenizin SQL deyimini kullanır. Bir SQL oluşturmak için sağlanan dize "Seç" veya "{çağrı" ile başlamıyorsa çerçevesi kullanır **FROM** yan tümcesi.  
@@ -85,7 +80,7 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
  Açmak için bu teknikler birleşimini kullanabilirsiniz [tabloları](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md) ve dayalı bir sorgu oluşturmak için bir [birleştirme](../../data/odbc/recordset-performing-a-join-odbc.md) birden çok tablo. Ek özelleştirme ile çağırabilirsiniz [önceden tanımlanmış sorgular](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md) (saklı yordamları), select tablo tasarım zamanında bilinmiyor sütunları ve [bağlamak](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md) kendilerine kayıt kümesi alanları veya diğer birçok gerçekleştirebilirsiniz Veri erişim görevleri. Olamaz gerçekleştirmek kayıt kümeleri özelleştirerek görevleri hala gerçekleştirilebilir tarafından [ODBC API işlevlerini çağırma](../../data/odbc/odbc-calling-odbc-api-functions-directly.md) veya doğrudan SQL deyimleri ile çalıştırma [CDatabase::ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql).  
   
-##  <a name="_core_customizing_the_selection"></a>Seçimi özelleştirme  
+##  <a name="_core_customizing_the_selection"></a> Seçimi özelleştirme  
  Bir filtre, sıralama düzeni veya parametreler sağlamanın yanı sıra, kümenizin seçimi özelleştirmek için aşağıdaki eylemleri gerçekleştirebilirsiniz:  
   
 -   İçinde özel bir SQL dizesi geçirin **lpszSQL** çağırdığınızda [açık](../../mfc/reference/crecordset-class.md#open) kayıt kümesi için. Geçirdiğiniz herhangi bir şey **lpsqSQL** ne önceliklidir [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql) üye işlevi döndürür.  

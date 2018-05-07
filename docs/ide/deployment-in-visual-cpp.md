@@ -1,10 +1,10 @@
 ---
-title: "Visual C++ üzerinde dağıtım | Microsoft Docs"
-ms.custom: 
+title: Visual C++ üzerinde dağıtım | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2018
 ms.technology:
 - cpp-ide
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -13,14 +13,13 @@ helpviewer_keywords:
 ms.assetid: d4b4ffc0-d2bd-4e4a-84a6-62f1c26f6a09
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2356e98e911978dcaef9471f2b474c2a2377716d
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: d9880272a09cde3bec0dbbbe03bfc30821591d6b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="deployment-in-visual-c"></a>Visual C++ üzerinde Dağıtım
 

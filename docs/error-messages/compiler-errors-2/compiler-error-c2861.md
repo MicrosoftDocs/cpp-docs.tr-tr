@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2861 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2861 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2861
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2861
 ms.assetid: 012bb44d-6c9b-4def-b54e-b19f1f8ddd1b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 927c1fb7e80da9d3a2dd221cb5bab3bb17abb109
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4e1f7010ca6d98c4c27f85ecc858cf7703a87e90
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2861"></a>Derleyici Hatası C2861
 'işlev adı': bir arabirim üye işlevi tanımlanamıyor  

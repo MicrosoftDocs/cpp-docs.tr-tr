@@ -1,13 +1,10 @@
 ---
 title: Otomasyon istemcileri | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - type libraries, Automation clients
 - clients
 ms.assetid: 84e34a79-06f6-4752-a33b-ae0ede1d8ecf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cfb6aae5c947d1f36019e548c72b22a3304aa12
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 52eaae8074b984da32e115e779724fa86602b8f5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="automation-clients"></a>Otomasyon İstemcileri
 Otomasyon nesneleri başka bir uygulamaya uygulanan işlemek için ya da bunlar işlenebilir nesnelerini ortaya çıkarmak için uygulamanız için mümkün kılar. Bir otomasyon istemci, başka bir uygulamaya ait gösterilen nesneleri işleyebileceğiniz bir uygulamadır. Nesneleri gösteren uygulama Otomasyon sunucusu adı verilir. İstemci, bu nesnelerin özelliklerini ve işlevlerini erişerek sunucu uygulamasının nesneleri yönetir.  
@@ -47,7 +42,7 @@ Otomasyon nesneleri başka bir uygulamaya uygulanan işlemek için ya da bunlar 
  Ardından, özelliklerini ve işlevlerini sunucu uygulamasının nesnesinin açıklayan tür kitaplığı dosya de belirtin. Öğe Ekle iletişim kutusunda bu dosyasını okur ve oluşturur `COleDispatchDriver`-türetilmiş bir tür kullanımı uyumlu şekilde c++ sunucu uygulamasının nesnelere erişmek için uygulamanız çağırabilir üye işlevleri ile sınıf. Ek işlevsellik devralınan `COleDispatchDriver` uygun Otomasyon sunucusu çağırma işlemini basitleştirir.  
   
 ### <a name="handling-events-in-automation-clients"></a>Otomasyon istemcileri olayları işleme  
- Otomasyon İstemcisi'nde olayları işlemek istiyorsanız, bir havuz arabirimi eklemeniz gerekir. MFC ActiveX denetimleri için havuz arabirimlerini ekleyin, ancak diğer COM sunucuları için desteklemiyor için sihirbaz desteği sağlar. COM sunucuları tarafından tanımlanan kaynak arabirimleri için MFC istemcisinde bir havuz arabirimi ekleme hakkında daha fazla bilgi için bkz: nasıl yapılır: MFC-Based COM istemcisi (KB 181845) havuz arabiriminde oluşturmak [http://support.microsoft.com/default.aspxscid=kb;en-us; 181845](http://support.microsoft.com/default.aspxscid=kb;en-us;181845).  
+ Otomasyon İstemcisi'nde olayları işlemek istiyorsanız, bir havuz arabirimi eklemeniz gerekir. MFC ActiveX denetimleri için havuz arabirimlerini ekleyin, ancak diğer COM sunucuları için desteklemiyor için sihirbaz desteği sağlar. COM sunucuları tarafından tanımlanan kaynak arabirimleri için MFC istemcisinde bir havuz arabirimi ekleme hakkında daha fazla bilgi için bkz: nasıl yapılır: MFC-Based COM istemcisi (KB 181845) havuz arabiriminde oluşturmak [ http://support.microsoft.com/default.aspxscid=kb; en-us; 181845](http://support.microsoft.com/default.aspxscid=kb;en-us;181845).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Otomasyon istemcileri: Tür kitaplıklarını kullanma](../mfc/automation-clients-using-type-libraries.md)   

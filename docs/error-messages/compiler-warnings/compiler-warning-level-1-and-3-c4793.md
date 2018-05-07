@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Uyarısı (düzey 1 ve 3) C4793 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1 ve 3) C4793 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4793
@@ -24,17 +21,15 @@ helpviewer_keywords:
 - C6637
 - C4793
 ms.assetid: 819ada53-1d9c-49b8-a629-baf8c12314e6
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca10ae4303a77d65c7ad88ba08b20e06a31e4bf1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 56b60a028f3fa1a847d4242c0768f8082d6a686e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warning-level-1-and-3-c4793"></a>Derleyici Uyarısı (düzey 1 ve 3) C4793
 'function': işlevi yerel koda derlenmiş: 'gerekçe'  
@@ -48,7 +43,7 @@ ms.lasthandoff: 12/21/2017
 |Neden iletisi|Açıklamalar|  
 |--------------------|-------------|  
 |Yönetilen kodda hizalanmış veri türleri desteklenmiyor|Hangi veri bildirimlerle gibi hizalanır varsa mümkün olmayabilir CLR veri gerektiği gibi ayırabilirsiniz olmalıdır [__m128](../../cpp/m128.md) veya [Hizala](../../cpp/align-cpp.md).|  
-|Yönetilen kodda '__ImageBase' kullanan işlevler desteklenmez.|`__ImageBase`DLL yüklemek için yalnızca alt düzey yerel kod tarafından genellikle kullanılan bir özel bağlayıcı simge olur.|  
+|Yönetilen kodda '__ImageBase' kullanan işlevler desteklenmez.|`__ImageBase` DLL yüklemek için yalnızca alt düzey yerel kod tarafından genellikle kullanılan bir özel bağlayıcı simge olur.|  
 |VarArgs tarafından desteklenmeyen ' / clr' derleyici seçeneği|Yerel işlevler sahip yönetilen işlevler çağıramaz [değişken bağımsız değişken listeleri](../../cpp/functions-with-variable-argument-lists-cpp.md) (varargs) işlevleri farklı yığın düzeni gereksinimlere sahip olduğundan. Ancak, belirtirseniz `/clr:pure` derleyici seçeneği, değişken bağımsız değişken listeleri derleme yönetilen işlevler yalnızca içerebileceğinden desteklenir. Daha fazla bilgi için bkz: [saf ve doğrulanabilen kod (C + +/ CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).|  
 |64-bit CLR veri __ptr32 değiştiricisi ile bildirilmiş desteklemez|Bir işaretçi geçerli platformdaki yerel bir işaretçi aynı boyutta olmalıdır. Daha fazla bilgi için bkz: [__ptr32, \__ptr64](../../cpp/ptr32-ptr64.md).|  
 |32-bit CLR veri __ptr64 değiştiricisi ile bildirilmiş desteklemez|Bir işaretçi geçerli platformdaki yerel bir işaretçi aynı boyutta olmalıdır. Daha fazla bilgi için bkz: [__ptr32, \__ptr64](../../cpp/ptr32-ptr64.md).|  

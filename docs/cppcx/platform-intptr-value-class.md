@@ -1,11 +1,8 @@
 ---
-title: "Platform::IntPtr değer sınıfı | Microsoft Docs"
-ms.custom: 
+title: Platform::IntPtr değer sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/PlatformIntPtr::IntPtr
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Platform::IntPtr Struct
 ms.assetid: 6c0326e8-edfd-4e53-a963-240b845dcde8
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93263e1347857b9c78a62852bea96e10c8d68fac
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: b54facc94be3f43b500e38371e0eba9e00d130a4
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="platformintptr-value-class"></a>Platform::IntPtr değer sınıfı
 İmzalı bir işaretçi veya tanıtıcısı ve özelliği temsil eden platforma özgü boyutudur (32 bit veya 64 bit).  
@@ -43,7 +38,7 @@ public value struct IntPtr
 |Üye|Açıklama|  
 |------------|-----------------|  
 |[IntPtr::IntPtr](#ctor)|IntPtr yeni bir örneğini başlatır.|  
-|[IntPtr::op_explicit Operator](#op-explicit)|Belirtilen parametre IntPtr veya bir işaretçi bir IntPtr değerine dönüştürür.|  
+|[IntPtr::op_Explicit işleci](#op-explicit)|Belirtilen parametre IntPtr veya bir işaretçi bir IntPtr değerine dönüştürür.|  
 |[IntPtr::ToInt32](#toint32)|Geçerli IntPtr 32-bit tamsayıya dönüştürür.|  
   
 ### <a name="requirements"></a>Gereksinimler  
@@ -70,7 +65,7 @@ IntPtr( __int64 handle-or-pointer );   IntPtr( void* value );   IntPtr( int 32-b
   
 
 
-## <a name="op-explicit"> </a> IntPtr::op_explicit Operator
+## <a name="op-explicit"> </a> IntPtr::op_Explicit işleci
 Belirtilen parametre IntPtr veya bir işaretçi bir IntPtr değerine dönüştürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -87,7 +82,7 @@ static IntPtr::operator IntPtr( void* value1);   static IntPtr::operator IntPtr(
  Bir IntPtr dönüştürülebilir bir 32 bit tam sayı.  
   
  Değer3  
- An IntPtr.  
+ IntPtr.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Birinci ve ikinci işleçleri IntPtr döndür. Üçüncü işleci geçerli IntPtr tarafından temsil edilen değer için bir işaretçi döndürür.  

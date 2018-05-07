@@ -1,12 +1,9 @@
 ---
-title: "Derleyici hataları C3400 C3499 aracılığıyla | Microsoft Docs"
-ms.custom: 
+title: Derleyici hataları C3400 C3499 aracılığıyla | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3401
@@ -107,17 +104,15 @@ helpviewer_keywords:
 dev_langs:
 - C++
 ms.assetid: a5651dfb-c402-4e01-b3ae-28f371e51d6a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3842530bdec6a1247e8a6f5a4fc1f99d13a537ed
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bcc3a06a5c39aff2fea0850879a8d95f757e1b66
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-errors-c3400-through-c3499"></a>Derleyici hataları C3400 C3499 aracılığıyla
 
@@ -173,8 +168,8 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından oluşturulan hata ile
 |Derleyici Hatası C3441|'*bildirimi*': '*anahtar sözcüğü*' sınıfı tanımlandıktan sonra uygulanamaz|
 |Derleyici Hatası C3442|Birden çok üye birleşim başlatılıyor: '*Üye1*'ve'*üye2*'|
 |Derleyici Hatası C3443|İçin varsayılan üye başlatıcıdan '*sınıfı*' yinelemelidir|
-|Derleyici Hatası C3444|Boş toplama sınıfı*sınıfı*' başlatılmalıdır 'ile '{}|
-|Derleyici Hatası C3445|Copy-listesi-başlatılması '*türü*' açık Oluşturucu kullanamazsınız|
+|Derleyici Hatası C3444|Boş toplama sınıfı*sınıfı*'ile başlatılması gerekir'{}'|
+|[Derleyici Hatası C3445](compiler-error-c3445.md)|Copy-listesi-başlatılması '*türü*' açık Oluşturucu kullanamazsınız|
 |[Derleyici Hatası C3446](compiler-error-c3446.md)|'*sınıfı*': varsayılan üye başlatıcıdan değer sınıfı üyeleri için izin verilmiyor|
 |Derleyici Hatası C3447|Kullanımdan kalktı.|
 |Derleyici Hatası C3448|Kullanımdan kalktı.|

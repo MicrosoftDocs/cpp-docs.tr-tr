@@ -1,13 +1,10 @@
 ---
-title: "Koleksiyonları | Microsoft Docs"
-ms.custom: 
+title: Koleksiyonları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -26,17 +23,15 @@ helpviewer_keywords:
 - collection classes [MFC], lists
 - collection classes [MFC], shapes
 ms.assetid: 02586e4c-851d-41d0-a722-feb11c17c74c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e980f3f8fe86b621cb1494b08aec3fcdcb49f54
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: beae5370c86bf0142b29f029778083f3042ae931
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="collections"></a>Koleksiyonlar
 Microsoft Foundation Class Kitaplığı nesnelerin grupları yönetmek için koleksiyon sınıfları sağlar. Bu sınıfların iki türleri şunlardır:  
@@ -48,7 +43,7 @@ Microsoft Foundation Class Kitaplığı nesnelerin grupları yönetmek için kol
 > [!NOTE]
 >  Kodunuzu şablon Olmayandan koleksiyon sınıfları kullanıyorsa, bunları kullanmaya devam edebilirsiniz. Kendi veri türleri için yeni tür kullanımı uyumlu koleksiyon sınıfları yazarsanız, daha yeni şablona dayalı sınıflar kullanmanızı öneririz.  
   
-##  <a name="_core_collection_shapes"></a>Koleksiyon şekiller  
+##  <a name="_core_collection_shapes"></a> Koleksiyon şekiller  
  Koleksiyon sınıfı öğelerini türlerini ve "şeklini" tarafından belirlenir. Şekil nesneleri düzenlenir ve koleksiyon tarafından depolanan biçimini ifade eder. MFC üç temel koleksiyonu şekiller sağlar: listeler, dizi ve (sözlükleri olarak da bilinir) eşler. Belirli programlama sorununuz için en uygun olan koleksiyon şekli seçebilirsiniz.  
   
  Her üç sağlanan koleksiyon şekillerin bu konuda daha sonra kısaca açıklanmıştır. Program için en iyi olduğu karar vermenize yardımcı olacak şekilleri özelliklerini karşılaştırmak için bkz: [koleksiyon sınıfı seçme önerileri](../mfc/recommendations-for-choosing-a-collection-class.md).  
@@ -65,7 +60,7 @@ Microsoft Foundation Class Kitaplığı nesnelerin grupları yönetmek için kol
   
      Bir harita anahtar nesne bir değer nesnesi ile ilişkilendiren bir koleksiyondur.  
   
-##  <a name="_core_the_template_based_collection_classes"></a>Şablona dayalı koleksiyon sınıfları  
+##  <a name="_core_the_template_based_collection_classes"></a> Şablona dayalı koleksiyon sınıfları  
  Herhangi bir türde nesneleri içeren bir tür kullanımı uyumlu koleksiyon uygulamak için en kolay yolu MFC şablona dayalı sınıflar birini kullanmaktır. Bu sınıfların örnekleri için bkz: MFC örnek [TOPLAMAK](../visual-cpp-samples.md).  
   
  Aşağıdaki tabloda MFC şablona dayalı koleksiyon sınıfları listeler.  
@@ -77,7 +72,7 @@ Microsoft Foundation Class Kitaplığı nesnelerin grupları yönetmek için kol
 |Herhangi bir türde nesne koleksiyonları|`CArray`|`CList`|`CMap`|  
 |Herhangi bir türde nesne işaretçileri koleksiyonları|`CTypedPtrArray`|`CTypedPtrList`|`CTypedPtrMap`|  
   
-##  <a name="_core_the_collection_classes_not_based_on_templates"></a>Şablonlar temelinde değil koleksiyon sınıfları  
+##  <a name="_core_the_collection_classes_not_based_on_templates"></a> Şablonlar temelinde değil koleksiyon sınıfları  
  Uygulama zaten MFC şablon Olmayandan sınıfları kullanıyorsa, bunları kullanmaya devam edebilirsiniz. Ancak, yeni koleksiyonlar için şablona dayalı sınıflar kullanmanızı öneririz. Aşağıdaki tabloda, şablonlar temelinde değil MFC koleksiyon sınıfları listeler.  
   
 ### <a name="nontemplate-collection-classes"></a>Şablon Olmayandan koleksiyon sınıfları  

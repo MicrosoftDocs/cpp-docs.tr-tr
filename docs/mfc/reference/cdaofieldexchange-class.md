@@ -1,12 +1,9 @@
 ---
-title: "CDaoFieldExchange sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDaoFieldExchange sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CDaoFieldExchange
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - CDaoFieldExchange [MFC], m_nOperation
 - CDaoFieldExchange [MFC], m_prs
 ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c4a62d3f9631d4e2807bf12e1eda3bd4b4f5112
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b4f702f619eb06a11cbbf7ec5be7407d12f7f445
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdaofieldexchange-class"></a>CDaoFieldExchange sınıfı
 DAO veritabanı sınıfları tarafından kullanılan DAO kayıt alanı değişimi (DFX) yordamları destekler.  
@@ -61,7 +56,7 @@ class CDaoFieldExchange
 |[CDaoFieldExchange::m_prs](#m_prs)|Hangi DFX üzerinde işlem gerçekleştiriliyor kayıt kümesi için bir işaretçi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CDaoFieldExchange`bir taban sınıfı yok.  
+ `CDaoFieldExchange` bir taban sınıfı yok.  
   
  Özel veri türleri için veri değişimi rutinleri yazıyorsanız, bu sınıfı kullanın; Aksi takdirde, bu sınıfın doğrudan kullanmaz. DFX alan veri üyeleri arasında veri alış verişleri, [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesne ve geçerli kayıt veri kaynağı için karşılık gelen alanları. DFX veri kaynağından ve veri kaynağı için her iki yönde exchange yönetir. Bkz: [Teknik Not 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md) özel DFX yordamları yazma konusunda bilgi.  
   
@@ -71,7 +66,7 @@ class CDaoFieldExchange
 > [!NOTE]
 >  DAO kayıt alanı değişimi (DFX) benzer çok ODBC tabanlı MFC veritabanı sınıfları içinde kayıt alanı değişimi (RFX) ( `CDatabase`, `CRecordset`). RFX anlarsanız, kullanımı kolay DFX bulacaksınız.  
   
- A `CDaoFieldExchange` nesnesi, bağlam bilgilerini DAO için kayıt alanı değişimi gerçekleşmesi sağlar. `CDaoFieldExchange`nesneleri bir dizi bağlama parametreleri ve alan veri üyeleri de dahil olmak üzere ve geçerli kayıt alanlarını üzerinde çeşitli bayrakları ayarlama işlemi destekler. Kayıt kümesi sınıfı verileri üyeleri tarafından tanımlanan türleri üzerinde gerçekleştirilen DFX işlemler `enum` **FieldType** içinde `CDaoFieldExchange`. Olası **FieldType** değerler şunlardır:  
+ A `CDaoFieldExchange` nesnesi, bağlam bilgilerini DAO için kayıt alanı değişimi gerçekleşmesi sağlar. `CDaoFieldExchange` nesneleri bir dizi bağlama parametreleri ve alan veri üyeleri de dahil olmak üzere ve geçerli kayıt alanlarını üzerinde çeşitli bayrakları ayarlama işlemi destekler. Kayıt kümesi sınıfı verileri üyeleri tarafından tanımlanan türleri üzerinde gerçekleştirilen DFX işlemler `enum` **FieldType** içinde `CDaoFieldExchange`. Olası **FieldType** değerler şunlardır:  
   
 - **CDaoFieldExchange::outputColumn** alan veri üyeleri için.  
   
@@ -85,7 +80,7 @@ class CDaoFieldExchange
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdao.h  
   
-##  <a name="isvalidoperation"></a>CDaoFieldExchange::IsValidOperation  
+##  <a name="isvalidoperation"></a>  CDaoFieldExchange::IsValidOperation  
  Kendi DFX işlevi yazarsanız, çağrı `IsValidOperation` üzerinde belirli alan veri üye türü geçerli işlemi gerçekleştirip gerçekleştirmediğini belirlemek için işlevinizi başındaki (bir **CDaoFieldExchange::outputColumn** veya **CDaoFieldExchange::param**).  
   
 ```  
@@ -100,7 +95,7 @@ BOOL IsValidOperation();
   
  Özel DFX yordamları yazma hakkında ek bilgi için bkz: [Teknik Not 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md).  
   
-##  <a name="m_noperation"></a>CDaoFieldExchange::m_nOperation  
+##  <a name="m_noperation"></a>  CDaoFieldExchange::m_nOperation  
  Gerçekleştirilecek işlem tanımlayan [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) alan exchange nesneyle ilişkili nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -129,12 +124,12 @@ BOOL IsValidOperation();
 |**DumpField**|Bir alanın içeriği (yalnızca hata ayıklama) dökümünü alır.|  
 |**MaxDFXOperation**|Giriş denetlemek için kullanılır.|  
   
-##  <a name="m_prs"></a>CDaoFieldExchange::m_prs  
+##  <a name="m_prs"></a>  CDaoFieldExchange::m_prs  
  Bir işaretçi içeriyor [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ilişkili nesne `CDaoFieldExchange` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="setfieldtype"></a>CDaoFieldExchange::SetFieldType  
+##  <a name="setfieldtype"></a>  CDaoFieldExchange::SetFieldType  
  Çağrı `SetFieldType` içinde `CDaoRecordset` sınıfının `DoFieldExchange` geçersiz kılar.  
   
 ```  

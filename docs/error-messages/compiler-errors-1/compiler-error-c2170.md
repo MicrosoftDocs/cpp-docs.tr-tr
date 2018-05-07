@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2170 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2170 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2170
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2170
 ms.assetid: d5c663f0-2459-4e11-a8bf-a52b62f3c71d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 118caa1ce0d5b1b2472153bf6fed58844901e9fc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ad0d19dff10d04d155d8071ffb349664f6b3104e
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2170"></a>Derleyici Hatası C2170
 'tanımlayıcısı': bir işlevi olarak bildirilmedi, iç olamaz  

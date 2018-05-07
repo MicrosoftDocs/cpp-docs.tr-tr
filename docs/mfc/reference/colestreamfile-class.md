@@ -1,12 +1,9 @@
 ---
-title: "COleStreamFile sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleStreamFile sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleStreamFile
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - COleStreamFile [MFC], GetStream
 - COleStreamFile [MFC], OpenStream
 ms.assetid: e4f93698-e17c-4a18-a7c0-4b4df8eb4d93
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: efb042f87e10bec9fff53fcb1d22d56ed3c68ef3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 805c32145d844cc1103cab7c4987c0595ff5935f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="colestreamfile-class"></a>COleStreamFile sınıfı
 Veri akışı temsil eder ( `IStream`) bileşik bir dosyada OLE yapılı depolama bir parçası olarak.  
@@ -72,7 +67,7 @@ class COleStreamFile : public CFile
 ## <a name="remarks"></a>Açıklamalar  
  Bir `IStorage` nesne akışı açılamıyor veya bir bellek akış olmadığı sürece oluşturulan önce bulunmalıdır.  
   
- `COleStreamFile`nesneleri yönetilen tam olarak gibi [CFile](../../mfc/reference/cfile-class.md) nesneleri.  
+ `COleStreamFile` nesneleri yönetilen tam olarak gibi [CFile](../../mfc/reference/cfile-class.md) nesneleri.  
   
  Akışlar ve depolamayı düzenleme hakkında daha fazla bilgi için bkz: [kapsayıcılar: bileşik dosyaları](../../mfc/containers-compound-files.md)...  
   
@@ -88,7 +83,7 @@ class COleStreamFile : public CFile
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxole.h  
   
-##  <a name="attach"></a>COleStreamFile::Attach  
+##  <a name="attach"></a>  COleStreamFile::Attach  
  Sağlanan OLE akış ile ilişkilendirir `COleStreamFile` nesnesi.  
   
 ```  
@@ -104,7 +99,7 @@ void Attach(LPSTREAM lpStream);
   
  Daha fazla bilgi için bkz: [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK'sındaki.  
   
-##  <a name="colestreamfile"></a>COleStreamFile::COleStreamFile  
+##  <a name="colestreamfile"></a>  COleStreamFile::COleStreamFile  
  Oluşturur bir `COleStreamFile` nesnesi.  
   
 ```  
@@ -120,7 +115,7 @@ COleStreamFile(LPSTREAM lpStream = NULL);
   
  Daha fazla bilgi için bkz: [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK'sındaki.  
   
-##  <a name="creatememorystream"></a>COleStreamFile::CreateMemoryStream  
+##  <a name="creatememorystream"></a>  COleStreamFile::CreateMemoryStream  
  Güvenli bir şekilde hata normal, beklenen bir durum olduğu yeni bir akış genel, paylaşılan bellek yetersiz oluşturur.  
   
 ```  
@@ -139,7 +134,7 @@ BOOL CreateMemoryStream(CFileException* pError = NULL);
   
  Daha fazla bilgi için bkz: [CreateStreamOnHGlobal](http://msdn.microsoft.com/library/windows/desktop/aa378980) Windows SDK'sındaki.  
   
-##  <a name="createstream"></a>COleStreamFile::CreateStream  
+##  <a name="createstream"></a>  COleStreamFile::CreateStream  
  Güvenli bir şekilde yeni bir akış burada bir hata çok normal, beklenen bir durumdur sağlanan depolama nesnesinde oluşturur.  
   
 ```  
@@ -171,7 +166,7 @@ BOOL CreateStream(
   
  Daha fazla bilgi için bkz: [IStorage::CreateStream](http://msdn.microsoft.com/library/windows/desktop/aa380020) Windows SDK'sındaki.  
   
-##  <a name="detach"></a>COleStreamFile::Detach  
+##  <a name="detach"></a>  COleStreamFile::Detach  
  Nesne akıştan akış kapatmadan keser.  
   
 ```  
@@ -186,7 +181,7 @@ LPSTREAM Detach();
   
  Daha fazla bilgi için bkz: [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK'sındaki.  
   
-##  <a name="getstream"></a>COleStreamFile::GetStream  
+##  <a name="getstream"></a>  COleStreamFile::GetStream  
  Bir işaretçi geçerli akışına döndürmek için bu işlevini çağırın.  
   
 ```  
@@ -196,7 +191,7 @@ IStream* GetStream() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli akış arabirimi işaretçisi ( [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034)).  
   
-##  <a name="openstream"></a>COleStreamFile::OpenStream  
+##  <a name="openstream"></a>  COleStreamFile::OpenStream  
  Var olan bir akış açar.  
   
 ```  

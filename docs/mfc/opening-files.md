@@ -1,13 +1,10 @@
 ---
-title: "Dosyaları açma | Microsoft Docs"
-ms.custom: 
+title: Dosyaları açma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - opening files [MFC]
 - exception handling [MFC], opening files
 ms.assetid: a991b8ec-b04a-4766-b47e-7485b5dd0b01
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ebc650aa4a3f13a0cbc9d9b0026d948d64ae8b4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 379449469d37f01c7c0fd225688a019eaec9e977
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="opening-files"></a>Dosyaları Açma
 MFC içinde bir dosyayı açmak için en yaygın yolu bir iki aşamalı işlemidir.  
@@ -64,5 +59,5 @@ MFC içinde bir dosyayı açmak için en yaygın yolu bir iki aşamalı işlemid
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CFile sınıfı](../mfc/reference/cfile-class.md)   
  [CFile::Open](../mfc/reference/cfile-class.md#open)   
- [Dosyaları](../mfc/files-in-mfc.md)
+ [Dosyalar](../mfc/files-in-mfc.md)
 

@@ -1,12 +1,9 @@
 ---
-title: "Kaynak Derleyicisi hatası RC2127 | Microsoft Docs"
-ms.custom: 
+title: Kaynak Derleyicisi hatası RC2127 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - RC2127
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - RC2127
 ms.assetid: 13c1599d-ac4c-4044-a59a-48e69511ef7e
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4871a56d513845bd28a7ead5cc36bba34662cfc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 585dc9b7aaa189d5f9726d1519687849991fc701
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="resource-compiler-error-rc2127"></a>Kaynak Derleyicisi Hatası RC2127
 Beklenen virgülle ayrılmış sürüm sözcükler  

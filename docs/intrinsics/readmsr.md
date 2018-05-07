@@ -1,12 +1,9 @@
 ---
 title: __readmsr | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - __readmsr
@@ -17,20 +14,18 @@ helpviewer_keywords:
 - rdmsr instruction
 - __readmsr intrinsic
 ms.assetid: 7ab1f8e8-72cb-4ce4-817d-3e728a3c9716
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24720a6a11809dfb47d8fd10a2f0efa4c2aa73ab
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 4e8196b25b1507c92542faa6dd8ca59b4632d8f0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="readmsr"></a>__readmsr
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Oluşturur `rdmsr` tarafından belirtilen modele özgü kaydı okur yönerge `register` ve değerini döndürür.  
   

@@ -1,13 +1,10 @@
 ---
-title: "Kayıt kümesi: Ekleme, güncelleştirme ve silme kayıtlarını (ODBC) | Microsoft Docs"
-ms.custom: 
+title: 'Kayıt kümesi: Ekleme, güncelleştirme ve silme kayıtlarını (ODBC) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -27,18 +24,16 @@ helpviewer_keywords:
 - ODBC recordsets [C++], editing records
 - records [C++], editing
 ms.assetid: 760c8889-bec4-482b-a8f2-319792a6af98
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: cad50d25f6b9e2cc619fb19e21c2b6575ababa47
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: af3a3eb08ce5749c0cfe5ca2d1f59213826ff7ce
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="recordset-adding-updating-and-deleting-records-odbc"></a>Kayıt kümesi: Kayıtları Ekleme, Güncelleştirme ve Silme (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -71,16 +66,16 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
 |Yalnızca ekleme|Y|N|N|Y|  
 |Tam olarak güncelleştirilebilir|Y|Y|Y|Y|  
   
-##  <a name="_core_determining_whether_your_recordset_is_updatable"></a>Belirleme olup olmadığını kümenizin güncelleştirilebilir değil  
+##  <a name="_core_determining_whether_your_recordset_is_updatable"></a> Belirleme olup olmadığını kümenizin güncelleştirilebilir değil  
  Kayıt kümesi nesnesi veri kaynağını güncelleştirilebilir ise ve kayıt kümesini güncelleştirilebilir olarak açtığınız güncelleştirilebilir. Kendi güncellenebilirliğini kullanın, SQL deyimini üzerinde ODBC sürücünüz yeteneklerini de bağlıdır ve ODBC imleç kitaplığı bellekte olup olmadığı. Salt okunur bir kayıt kümesi veya veri kaynağı güncelleştirilemiyor.  
   
 #### <a name="to-determine-whether-your-recordset-is-updatable"></a>Kümenizin güncelleştirilebilir olup olmadığını belirlemek için  
   
 1.  Kayıt kümesi nesnesinin çağrısı [CanUpdate](../../mfc/reference/crecordset-class.md#canupdate) üye işlevi.  
   
-     `CanUpdate`kayıt kümesi güncelleştirilebilir ise sıfır olmayan bir değer döndürür.  
+     `CanUpdate` kayıt kümesi güncelleştirilebilir ise sıfır olmayan bir değer döndürür.  
   
- Varsayılan olarak, kayıt kümeleri tamamen güncelleştirilebilir (gerçekleştirebileceğiniz `AddNew`, **Düzenle**, ve **silmek** işlemleri). Ancak aynı zamanda [appendOnly](../../mfc/reference/crecordset-class.md#open) güncelleştirilebilir kayıt kümelerini açmak için seçeneği. Bu şekilde açılan bir kayıt kümesi yalnızca yenileriyle eklenmesine olanak veren `AddNew`. Düzenleyemez veya mevcut kayıtları silin. Bir kayıt kümesi yalnızca çağırarak ekleme için açık olup olmadığını sınayabilirsiniz [CanAppend](../../mfc/reference/crecordset-class.md#canappend) üye işlevi. `CanAppend`kayıt kümesi tamamen güncelleştirilebilir veya yalnızca ekleme için açık ise sıfır olmayan bir değer döndürür.  
+ Varsayılan olarak, kayıt kümeleri tamamen güncelleştirilebilir (gerçekleştirebileceğiniz `AddNew`, **Düzenle**, ve **silmek** işlemleri). Ancak aynı zamanda [appendOnly](../../mfc/reference/crecordset-class.md#open) güncelleştirilebilir kayıt kümelerini açmak için seçeneği. Bu şekilde açılan bir kayıt kümesi yalnızca yenileriyle eklenmesine olanak veren `AddNew`. Düzenleyemez veya mevcut kayıtları silin. Bir kayıt kümesi yalnızca çağırarak ekleme için açık olup olmadığını sınayabilirsiniz [CanAppend](../../mfc/reference/crecordset-class.md#canappend) üye işlevi. `CanAppend` kayıt kümesi tamamen güncelleştirilebilir veya yalnızca ekleme için açık ise sıfır olmayan bir değer döndürür.  
   
  Aşağıdaki kodu nasıl kullanacağınızı gösterir `CanUpdate` için bir kayıt kümesi nesnesi adlı `rsStudentSet`:  
   
@@ -97,7 +92,7 @@ if( !rsStudentSet.CanUpdate( ) )
 > [!CAUTION]
 >  Kayıt çağırarak güncelleştirmek hazırlama zaman **güncelleştirme**, kümenizin tablonun (veya tüm tablo üzerinde benzersiz bir dizin sütunları) birincil anahtarı yapmadan tüm sütunları içeren dikkatli olun. Bazı durumlarda, framework yalnızca kümenize seçili sütun güncelleştirmek için tablodaki hangi kaydı tanımlamak için kullanabilirsiniz. Tüm gerekli sütunları, büyük olasılıkla tablosunun başvuru bütünlüğü zarar tablosunda birden çok kayıt güncelleştirilebilir. Bu durumda, çağırdığınızda çerçeve özel durumlar atar **güncelleştirme**.  
   
-##  <a name="_core_adding_a_record_to_a_recordset"></a>Bir kayıt kümesine kayıt ekleme  
+##  <a name="_core_adding_a_record_to_a_recordset"></a> Bir kayıt kümesine kayıt ekleme  
  Yeni kayıtlar, kayıt kümesine ekleyebilirsiniz, [CanAppend](../../mfc/reference/crecordset-class.md#canappend) üye işlevi sıfır olmayan bir değer döndürür.  
   
 #### <a name="to-add-a-new-record-to-a-recordset"></a>Bir kayıt kümesine yeni bir kayıt eklemek için  
@@ -106,7 +101,7 @@ if( !rsStudentSet.CanUpdate( ) )
   
 2.  Kayıt kümesi nesnesinin çağrısı [AddNew](../../mfc/reference/crecordset-class.md#addnew) üye işlevi.  
   
-     `AddNew`kayıt düzenleme arabellek olarak davranacak şekilde hazırlar. Tüm alan veri üyeleri özel Null değere ayarlanır ve çağırdığınızda yalnızca değiştirilen (kirli) değerleri veri kaynağına yazılır şekilde değiştirilmemiş olarak işaretlenmiş [güncelleştirme](../../mfc/reference/crecordset-class.md#update).  
+     `AddNew` kayıt düzenleme arabellek olarak davranacak şekilde hazırlar. Tüm alan veri üyeleri özel Null değere ayarlanır ve çağırdığınızda yalnızca değiştirilen (kirli) değerleri veri kaynağına yazılır şekilde değiştirilmemiş olarak işaretlenmiş [güncelleştirme](../../mfc/reference/crecordset-class.md#update).  
   
 3.  Yeni kayıttaki alan veri üyeleri değerlerini ayarlayın.  
   
@@ -139,7 +134,7 @@ if( !rsStudent.Update( ) )
 > [!TIP]
 >  İptal etmek için bir `AddNew` veya **Düzenle** çağrısı, yalnızca başka bir çağırmaya `AddNew` veya **Düzenle** veya arama **taşıma** ile **AFX_MOVE_REFRESH**  parametresi. Veri üyeleri önceki değerlerine sıfırlanır ve hala olduğunuz **Düzenle** veya **Ekle** modu.  
   
-##  <a name="_core_editing_a_record_in_a_recordset"></a>Bir kayıt kümesindeki bir kaydı düzenleme  
+##  <a name="_core_editing_a_record_in_a_recordset"></a> Bir kayıt kümesindeki bir kaydı düzenleme  
  Varolan kayıtları düzenleyebilirsiniz kümenizin [CanUpdate](../../mfc/reference/crecordset-class.md#canupdate) üye işlevi sıfır olmayan bir değer döndürür.  
   
 #### <a name="to-edit-an-existing-record-in-a-recordset"></a>Bir kayıt kümesinde varolan kaydını düzenlemek için  
@@ -180,7 +175,7 @@ if( !rsStudent.Update( ) )
 > [!TIP]
 >  İptal etmek için bir `AddNew` veya **Düzenle** çağrısı, yalnızca başka bir çağırmaya `AddNew` veya **Düzenle** veya arama **taşıma** ile **AFX_MOVE_REFRESH**  parametresi. Veri üyeleri önceki değerlerine sıfırlanır ve hala olduğunuz **Düzenle** veya **Ekle** modu.  
   
-##  <a name="_core_deleting_a_record_from_a_recordset"></a>Bir kayıt kümesinden bir kaydı siliniyor  
+##  <a name="_core_deleting_a_record_from_a_recordset"></a> Bir kayıt kümesinden bir kaydı siliniyor  
  Kayıt yoksa silebilirsiniz kümenizin [CanUpdate](../../mfc/reference/crecordset-class.md#canupdate) üye işlevi sıfır olmayan bir değer döndürür.  
   
 #### <a name="to-delete-a-record"></a>A kaydı silinemiyor  

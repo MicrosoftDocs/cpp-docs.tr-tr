@@ -1,12 +1,9 @@
 ---
-title: "Kullanıcı kayıtları | Microsoft Docs"
-ms.custom: 
+title: Kullanıcı kayıtları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - COLUMN_ENTRY_MAP
@@ -24,18 +21,16 @@ helpviewer_keywords:
 - accessors [C++], static
 - BEGIN_ACCESSOR macro, example
 ms.assetid: 2de9e5eb-53ce-42b1-80fa-57d46600a80c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: faead3ec85fc799abd26613979f7611c9159cc9b
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: aea6b4b2ebb1a02e4ef669b437fbe7eb30937f9b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="user-records"></a>Kullanıcı Kayıtları
 Statik erişimci kullanmak için (öğesinden türetilen bir erişimci **CAccessor)**, bir kullanıcı kaydı, tüketici olmalıdır. Kullanıcı kaydını tanıtıcı giriş veya çıkış veri öğeleri içeren bir C++ sınıfıdır. ATL OLE DB Tüketici Sihirbazı tüketici için bir kullanıcı kaydı oluşturur. Komutları işleme gibi isteğe bağlı görevleri için kullanıcı kayıt yöntemleri ekleyebilirsiniz.  

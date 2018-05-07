@@ -1,30 +1,25 @@
 ---
-title: "Geri çağrı öğeleri ve geri çağrı maskesi | Microsoft Docs"
-ms.custom: 
+title: Geri çağrı öğeleri ve geri çağrı maskesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - callback items in CListCtrl class [MFC]
 - CListCtrl class [MFC], callback item and callback mask
 ms.assetid: 67c1f76f-6144-453e-9376-6712f89430ae
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24d9992b8a9db679b30624d85ede1a35bfd9826d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 95c896308970ffc6a2040657927dc127eee278ba
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="callback-items-and-the-callback-mask"></a>Geri Çağrı Öğeleri ve Geri Çağrı Maskesi
 Her öğelerinden biri için bir liste görünümü denetimi genellikle etiket metnini, öğenin simgelerin görüntü listesi dizini depolar ve bit kümesi için öğesi'nin durumu bayrakları. Uygulama zaten bir öğe için bilgilerin bazıları depoluyorsa yararlı geri çağrı öğeleri olarak ayrı öğeleri tanımlayabilirsiniz.  
@@ -33,13 +28,13 @@ Her öğelerinden biri için bir liste görünümü denetimi genellikle etiket m
   
  Geri çağrı öğeleri tanımlamanın yanı sıra, denetimin geri çağrı maskesi de değiştirebilirsiniz. Bir dizi denetim yerine uygulama geçerli verileri depoladığı öğesi durumları belirtin bit bayrakları maskesidir. Geri çağrı maskesi, belirli bir öğeye uygular geri çağırma öğesi ataması aksine denetimin öğelerin tümünü uygular. Geri çağrı maskesi denetimi tüm öğesi durumları izler anlamı varsayılan sıfırdır. Bu varsayılan davranışı değiştirmek için aşağıdaki değerlerden herhangi bir bileşimini maskeye başlatın:  
   
--   `LVIS_CUT`Öğe kesme ve yapıştırma işlemi için işaretlenir.  
+-   `LVIS_CUT` Öğe kesme ve yapıştırma işlemi için işaretlenir.  
   
--   `LVIS_DROPHILITED`Öğe bir Sürükle ve bırak hedefi olarak vurgulanır.  
+-   `LVIS_DROPHILITED` Öğe bir Sürükle ve bırak hedefi olarak vurgulanır.  
   
--   `LVIS_FOCUSED`Öğenin odağa sahip.  
+-   `LVIS_FOCUSED` Öğenin odağa sahip.  
   
--   `LVIS_SELECTED`Öğe seçilir.  
+-   `LVIS_SELECTED` Öğe seçilir.  
   
 -   **LVIS_OVERLAYMASK** geçerli katmana görüntünün her öğe için resim listesi dizinini uygulamayı depolar.  
   

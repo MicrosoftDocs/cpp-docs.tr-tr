@@ -1,12 +1,9 @@
 ---
-title: "Dönüşüm (STL/CLR) | Microsoft Docs"
-ms.custom: 
+title: Dönüşüm (STL/CLR) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::transform
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - transform function [STL/CLR]
 ms.assetid: 08940969-6d10-40e4-a35b-68dd801b3949
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: f5120b2408649893e0b796bbdb256ff0187741ba
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2301cfbdcd60d60541c0240ced59d44a844b502f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="transform-stlclr"></a>dönüşüm (STL/CLR)
 Belirtilen işlev nesnesini bir kaynak aralıktaki her bir öğeye veya iki kaynak aralıktaki bir öğe çiftine uygular ve işlev nesnenin dönüş değerlerini bir hedef aralığa kopyalar.  

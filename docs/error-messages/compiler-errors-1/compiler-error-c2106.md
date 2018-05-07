@@ -2,11 +2,8 @@
 title: Derleyici Hatası C2106 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: ''
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2106
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2106
 ms.assetid: d5c91a2e-04e4-4770-8478-788b98c52a53
-caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b4c09d450bdb010b8436c841cd57b7c2978567c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d0d8b55bed4b86e44ada9f81dc2bf0269af604ec
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2106"></a>Derleyici Hatası C2106
 'işleci': sol işleneni, l-değeri olmalıdır  

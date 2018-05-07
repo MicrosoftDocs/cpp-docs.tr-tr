@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2920 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2920 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2920
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2920
 ms.assetid: 0a4cb2de-00a0-4209-8160-c7ce6ed7d9ab
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba5a7706dc4607897cb2ef71f2072209e0516f53
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 18a2ccc8809b18d9a28b1fc60f5460dd4272a49c
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2920"></a>Derleyici Hatası C2920
 yeniden tanımlama: 'sınıfı': sınıf şablonu veya genel zaten bildirildiği 'türünde'  

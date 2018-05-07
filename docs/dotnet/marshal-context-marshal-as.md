@@ -1,12 +1,9 @@
 ---
 title: marshal_context::marshal_as | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - marshal_context::marshal_as
@@ -18,18 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - marshal_context class [C++], operations
 ms.assetid: 24a1afee-51c0-497c-948c-f77fe43635c8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: e56e225d136fb02445eeeb398937adc075f2dae7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 27f27b164d7a00e05e8d080a692f97b696776cbe
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="marshalcontextmarshalas"></a>marshal_context::marshal_as
 Yönetilen ve yerel veri türü arasında dönüştürme için belirli bir veri nesnesi üzerinde sıralama gerçekleştirir.  
@@ -43,7 +38,7 @@ To_Type marshal_as<To_Type>(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`input`  
+ [in] `input`  
  İçin hazırlamak istediğiniz değeri bir `To_Type` değişkeni.  
   
 ## <a name="return-value"></a>Dönüş Değeri  

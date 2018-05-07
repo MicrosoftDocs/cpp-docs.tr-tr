@@ -1,12 +1,9 @@
 ---
-title: "Irowsetımpl::refrows | Microsoft Docs"
-ms.custom: 
+title: Irowsetımpl::refrows | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL::IRowsetImpl::RefRows
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - RefRows method
 ms.assetid: 1c048a2a-65dc-4bba-9c81-a23c0dc249c8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: db2ae7e068f3c253e546274dbdfe693889a06504
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 9aa841444f9cfa2758e8d5a8d8d4ec831a531d6f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="irowsetimplrefrows"></a>IRowsetImpl::RefRows
 Tarafından çağrılır [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) ve [ReleaseRows](../../data/oledb/irowsetimpl-releaserows.md) Artır veya varolan bir satır işleyici için bir başvuru sayısı bırakın.  

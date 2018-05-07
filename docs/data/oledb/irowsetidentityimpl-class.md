@@ -1,12 +1,9 @@
 ---
-title: "Irowsetıdentityımpl sınıfı | Microsoft Docs"
-ms.custom: 
+title: Irowsetıdentityımpl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL::IRowsetIdentityImpl
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - IRowsetIdentityImpl class
 ms.assetid: 56821edf-e045-40c8-96bd-231552cd5799
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: da2833ba774035da38deb2bf4f0e0afc892e6caf
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 29ec88546a622ee42ce0e81efa9400305e2e14ae
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="irowsetidentityimpl-class"></a>IRowsetIdentityImpl Sınıfı
 OLE DB uygulayan [IRowsetIdentity](https://msdn.microsoft.com/en-us/library/ms715913.aspx) satır kimliği için testler arabirimi.  
@@ -54,7 +49,7 @@ class ATL_NO_VTABLE IRowsetIdentityImpl
   
 |||  
 |-|-|  
-|[IsSameRow](../../data/oledb/irowsetidentityimpl-issamerow.md)|Aynı satır başvurursanız görmek için iki satır işleyicilerini karşılaştırır.|  
+|[Issamerow](../../data/oledb/irowsetidentityimpl-issamerow.md)|Aynı satır başvurursanız görmek için iki satır işleyicilerini karşılaştırır.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atldb.h  

@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Hatası C2135 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2135 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-diagnostics
+ms.topic: error-reference
 f1_keywords:
 - C2135
 dev_langs:
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2135
 ms.assetid: aa360d22-4f79-4de1-b384-93cadd10975f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e520918edc1534f1bd6f0af89ab8accf377b2587
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a8029738e18af87b8c6a9f3e6ee9d9d2e3f6a46f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2135"></a>Derleyici Hatası C2135
 'bit işleci': geçersiz bit alan işlemi  

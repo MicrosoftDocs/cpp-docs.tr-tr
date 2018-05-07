@@ -1,12 +1,9 @@
 ---
-title: "OLE DB Şablonları | Microsoft Docs"
-ms.custom: 
+title: OLE DB Şablonları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - vc.templates.ole
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - OLE DB templates
 ms.assetid: 73918f6f-1fd7-4fa2-a0ff-7f9d792fce7e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 037cb338db89e03b4e9457c5a0abc72c33c0ba57
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 3133341b3dffa27cb5a6cec60ab58254fbe12dea
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ole-db-templates"></a>OLE DB Şablonları
 OLE DB Şablonları OLE DB veri erişimi kolaylaştırır. Visual C++ birçok yaygın olarak kullanılan OLE DB arabirimlerini uygulayan şablon sınıfları sağlar. OLE DB istemci (tüketici) uygulama yazmak için Visual C++ Tüketici Şablonları ve bir sunucu (sağlayıcı) uygulama yazmak için sağlayıcı şablonları kullanabilirsiniz.  

@@ -1,30 +1,25 @@
 ---
-title: "Nasıl yapılır: foreach ile diziler üzerinden | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: foreach ile diziler üzerinden | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - arrays [C++], iterating with for each
 ms.assetid: ddc88ce2-69e1-44fc-af84-5b6f62fcb9e3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 437e9134e489d9ca91f95979ad5165798d90cdef
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3e37ea551af0e985bd4c1b76ec1cd495a24c0c07
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="how-to-iterate-over-arrays-with-for-each"></a>Nasıl yapılır: foreach ile Diziler Üzerinden Yineleme Yapma
 Bu konuda nasıl kullanılacağını gösterir [her biri için de](../dotnet/for-each-in.md) farklı dizi türlerini on anahtar sözcüğü.  

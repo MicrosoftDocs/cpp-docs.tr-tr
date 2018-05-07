@@ -1,12 +1,9 @@
 ---
 title: PROVIDER_COLUMN_ENTRY_GN | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - PROVIDER_COLUMN_ENTRY_GN
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - PROVIDER_COLUMN_ENTRY_GN macro
 ms.assetid: be77ba85-634c-4e28-832f-d2fa40413254
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ff73cda1e676387b4f8ca79ce1ef7cbf8fce13e1
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: be0cfa80b0d2a18d04dd329feda6547b5d89e6e1
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="providercolumnentrygn"></a>PROVIDER_COLUMN_ENTRY_GN
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.  
@@ -54,7 +49,7 @@ PROVIDER_COLUMN_ENTRY_GN (name
  `dbtype`  
  [in] Değer veri türünü belirtir. Bkz: **wType** açıklamasında [IAccessor::CreateAccessor'ı yapıları](https://msdn.microsoft.com/en-us/library/ms716845.aspx).  
   
- *precision*  
+ *Duyarlılık*  
  [in] Veri alınırken kullanılacak duyarlık gösterir *dbType* olan `DBTYPE_NUMERIC` veya **DBTYPE_DECIMAL**. Bkz: **bPrecision** açıklamasında [IAccessor::CreateAccessor'ı yapıları](https://msdn.microsoft.com/en-us/library/ms716845.aspx).  
   
  `scale`  

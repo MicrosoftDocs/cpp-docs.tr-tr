@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3630 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3630 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3630
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3630
 ms.assetid: 865626a9-98cc-465d-acde-44d4574c019a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36bac9c7e37bc2c8de816974cd3ab37bbea3a4c7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e8e38e06f2a32e9a95421ac113cdd0b5f1371334
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3630"></a>Derleyici Hatası C3630
 belirtecin 'belirteci' işlenirken hata oluştu  

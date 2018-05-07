@@ -1,12 +1,9 @@
 ---
-title: IErrorRecordsImpl::AddErrorRecord | Microsoft Docs
-ms.custom: 
+title: Ierrorrecordsımpl::adderrorrecord | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - IErrorRecordsImpl.AddErrorRecord
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - AddErrorRecord method
 ms.assetid: b5f8e9ae-509d-454f-b511-4bda7e972607
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 63b2a768a3670a5c1d81c44cafe2dd3c893ba9c2
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: bc60982a99b6c052d10ffe300efbfbcdde49d0fa
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ierrorrecordsimpladderrorrecord"></a>IErrorRecordsImpl::AddErrorRecord
 Bir kayıt için OLE DB hata nesnesi ekler.  

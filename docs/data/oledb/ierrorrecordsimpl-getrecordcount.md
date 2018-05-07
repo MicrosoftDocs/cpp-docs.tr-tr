@@ -1,12 +1,9 @@
 ---
-title: "Ierrorrecordsımpl::getrecordcount | Microsoft Docs"
-ms.custom: 
+title: Ierrorrecordsımpl::getrecordcount | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - IErrorRecordsImpl::GetRecordCount
@@ -18,18 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - GetRecordCount method
 ms.assetid: 44388bc3-1c64-4491-a1c5-28f3497ef040
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0a1f30786049de6bd9c557d792cdec932f8d7d93
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 6b12c157c5d1a2ccfd9727d0c5ccbae17f5d4adf
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ierrorrecordsimplgetrecordcount"></a>IErrorRecordsImpl::GetRecordCount
 OLE DB kayıt nesnesinde kayıt sayısını döndürür.  

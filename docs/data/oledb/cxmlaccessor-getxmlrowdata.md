@@ -1,12 +1,9 @@
 ---
 title: CXMLAccessor::GetXMLRowData | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL::CXMLAccessor::GetXMLRowData
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - GetXMLRowData method
 ms.assetid: 156b66e3-42fd-491c-8943-38cf5e36f687
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2e356be7a5ab7c125dc92a822384a3e6b02b8f8e
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 147a79a4d9db17ac0f418356ba45909d02d93c06
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cxmlaccessorgetxmlrowdata"></a>CXMLAccessor::GetXMLRowData
 Bir tablonun tüm içeriği satır XML biçimli dize verilerini alır.  

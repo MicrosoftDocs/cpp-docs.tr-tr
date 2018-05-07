@@ -1,13 +1,10 @@
 ---
 title: El ile denetim ekleme | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - controls [MFC], adding to dialog boxes
 - common controls [MFC], adding
 ms.assetid: bc843e59-0c51-4b5b-8bf2-343f716469d2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b13f6fdfb3c11819eb8d8838e5617e7a349d1023
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: efe510c4376255c24470a799b5dde17021894bf0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="adding-controls-by-hand"></a>El İle Denetim Ekleme
 Seçebilir ya da [ile iletişim kutusu Düzenleyicisi için bir iletişim kutusu denetimleri ekleme](../mfc/using-the-dialog-editor-to-add-controls.md) veya bunları kendiniz koduyla ekleyin.  
@@ -48,6 +43,6 @@ Seçebilir ya da [ile iletişim kutusu Düzenleyicisi için bir iletişim kutusu
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Denetimleri yapma ve kullanma](../mfc/making-and-using-controls.md)   
- [Denetimleri](../mfc/controls-mfc.md)   
+ [denetimleri](../mfc/controls-mfc.md)   
  [CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)
 

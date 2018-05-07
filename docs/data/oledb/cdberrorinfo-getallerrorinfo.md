@@ -1,12 +1,9 @@
 ---
-title: CDBErrorInfo::GetAllErrorInfo | Microsoft Docs
-ms.custom: 
+title: Cdberrorınfo::getallerrorınfo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL.CDBErrorInfo.GetAllErrorInfo
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - GetAllErrorInfo method
 ms.assetid: 630049fa-d296-497a-bbf6-f5d3d71d271d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2642694c8031980bc548839c760081bef570191a
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 590215ddc5c62e5c717aebe196bc33ce7d514e7a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdberrorinfogetallerrorinfo"></a>CDBErrorInfo::GetAllErrorInfo
 Bir hata kaydında bulunan hata bilgilerinin tüm türleri döndürür.  

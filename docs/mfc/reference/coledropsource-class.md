@@ -1,12 +1,9 @@
 ---
-title: "COleDropSource sınıfı | Microsoft Docs"
-ms.custom: 
+title: COleDropSource sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - COleDropSource
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - COleDropSource [MFC], OnBeginDrag
 - COleDropSource [MFC], QueryContinueDrag
 ms.assetid: d3eecc5f-a70b-4a01-b705-7d2c098ebe17
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 486a236075ff33093b9a734d7f368e05ed29588e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e510811fcaac81aa54699250ef37f48ffe1f40e2
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coledropsource-class"></a>COleDropSource sınıfı
 Verilerin bir bırakma hedefi sürüklenen olanak tanır.  
@@ -79,14 +74,14 @@ class COleDropSource : public CCmdTarget
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxole.h  
   
-##  <a name="coledropsource"></a>COleDropSource::COleDropSource  
+##  <a name="coledropsource"></a>  COleDropSource::COleDropSource  
  Oluşturan bir `COleDropSource` nesnesi.  
   
 ```  
 COleDropSource();
 ```  
   
-##  <a name="givefeedback"></a>COleDropSource::GiveFeedback  
+##  <a name="givefeedback"></a>  COleDropSource::GiveFeedback  
  Çağrıldıktan sonra çerçevesi tarafından çağrılır [COleDropTarget::OnDragOver](../../mfc/reference/coledroptarget-class.md#ondragover) veya [COleDropTarget::DragEnter](../../mfc/reference/coledroptarget-class.md#ondragenter).  
   
 ```  
@@ -97,15 +92,15 @@ virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
  `dropEffect`  
  Seçili verileri ile bu noktada bir açılan oluştu kullanıcıya görüntülemek istediğiniz etkisi, genellikle ne belirten gerçekleşir. Genellikle, en son çağrı tarafından döndürülen değer budur [CView::OnDragEnter](../../mfc/reference/cview-class.md#ondragenter) veya [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover). Aşağıdakilerden birini veya birkaçını olabilir:  
   
-- `DROPEFFECT_NONE`Bir açılan izin verilmez.  
+- `DROPEFFECT_NONE` Bir açılan izin verilmez.  
   
-- `DROPEFFECT_COPY`Bir kopyalama işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_MOVE`Bir taşıma işlemi gerçekleştirilmesi.  
+- `DROPEFFECT_MOVE` Bir taşıma işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_LINK`Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
+- `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
   
-- `DROPEFFECT_SCROLL`Sürükleme kaydırma işlemi gerçekleşmek üzere olduğu veya hedef gerçekleştirilmektedir.  
+- `DROPEFFECT_SCROLL` Sürükleme kaydırma işlemi gerçekleşmek üzere olduğu veya hedef gerçekleştirilmektedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **DRAGDROP_S_USEDEFAULTCURSORS** sürükleyerek, sürüyorsa **NOERROR** değilse.  
@@ -115,7 +110,7 @@ virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
   
  Daha fazla bilgi için bkz: [IDropSource::GiveFeedback](http://msdn.microsoft.com/library/windows/desktop/ms693723), [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129), ve [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) Windows SDK'sındaki.  
   
-##  <a name="onbegindrag"></a>COleDropSource::OnBeginDrag  
+##  <a name="onbegindrag"></a>  COleDropSource::OnBeginDrag  
  Çağıran bir olay gerçekleştiğinde framework sol fare düğmesine basarak gibi bir sürükleme işlemi başlamadan.  
   
 ```  
@@ -132,7 +127,7 @@ virtual BOOL OnBeginDrag(CWnd* pWnd);
 ### <a name="remarks"></a>Açıklamalar  
  Sürükleme işlemi başlatıldı yolu değiştirmek istiyorsanız, bu işlev geçersiz kılar. Varsayılan uygulama fare yakalar ve kullanıcı sola veya sağa fare düğmesini tıklattığında veya isteğe bağlı olarak hangi zaman fare serbest ESC isabetler kadar Sürükle modunda kalır.  
   
-##  <a name="querycontinuedrag"></a>COleDropSource::QueryContinueDrag  
+##  <a name="querycontinuedrag"></a>  COleDropSource::QueryContinueDrag  
  Sürükleme başladıktan sonra sürükleme işlemi iptal tamamlandı ya da kadar bu işlev art arda çerçevesi tarafından çağrılır.  
   
 ```  

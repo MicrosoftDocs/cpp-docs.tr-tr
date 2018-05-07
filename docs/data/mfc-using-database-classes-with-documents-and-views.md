@@ -1,13 +1,10 @@
 ---
-title: "MFC: Belgeler ve görünümler ile veritabanı sınıflarını kullanma | Microsoft Docs"
-ms.custom: 
+title: 'MFC: Belgeler ve görünümler ile veritabanı sınıflarını kullanma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -23,18 +20,16 @@ helpviewer_keywords:
 - ODBC recordsets [C++], documents and views
 - ODBC [C++], forms
 ms.assetid: 83979974-fc63-46ac-b162-e8403a572e2c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6d3e2286c10d83b25576474692b5a7faeb9bb332
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fcaee376b53c1d592f02aafc830a35d72f64feeb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mfc-using-database-classes-with-documents-and-views"></a>MFC: Belgeler ve Görünümler ile Veritabanı Sınıflarını Kullanma
 MFC veritabanı sınıfları ile veya belge/görünüm mimarisinin olmadan kullanabilirsiniz. Bu konu, belgeler ve görünümler ile çalışma vurgular. Açıklar:  
@@ -47,16 +42,16 @@ MFC veritabanı sınıfları ile veya belge/görünüm mimarisinin olmadan kulla
   
  Alternatifler için bkz: [MFC: olmadan veritabanı sınıflarını belgeleri kullanarak ve görünümleri](../data/mfc-using-database-classes-without-documents-and-views.md).  
   
-##  <a name="_core_writing_a_form.2d.based_application"></a>Form tabanlı bir uygulama yazma  
+##  <a name="_core_writing_a_form.2d.based_application"></a> Form tabanlı bir uygulama yazma  
  Birçok veri erişimi uygulamaları formlarını temel alır. Kullanıcı arabirimi, kullanıcı inceler, girer veya veri düzenler denetimleri içeren bir biçimidir. Uygulamanızı form temelli yapmak için bir sınıf kullanma `CRecordView`. MFC Uygulama Sihirbazı'nı çalıştırın ve seçin, **ODBC** istemci türüne **veritabanı desteği** sayfası, proje kullanır `CRecordView` görünüm sınıfı için.
   
- Form tabanlı bir uygulama, her kayıt görünümü nesneyi gösteren bir işaretçi depolar bir `CRecordset` nesnesi. Framework'ün kayıt alanı değişimi (RFX) mekanizması kayıt kümesi ve veri kaynağı arasında veri değiş tokuş eder. İletişim verisi (DDX) mekanizması kayıt kümesi nesnesi alan veri üyeleri ve form üzerinde denetimleri arasında veri değişimi. `CRecordView`Ayrıca varsayılan kayıt kaydı formda gezinme için komut işleyici işlevleri sağlar.  
+ Form tabanlı bir uygulama, her kayıt görünümü nesneyi gösteren bir işaretçi depolar bir `CRecordset` nesnesi. Framework'ün kayıt alanı değişimi (RFX) mekanizması kayıt kümesi ve veri kaynağı arasında veri değiş tokuş eder. İletişim verisi (DDX) mekanizması kayıt kümesi nesnesi alan veri üyeleri ve form üzerinde denetimleri arasında veri değişimi. `CRecordView` Ayrıca varsayılan kayıt kaydı formda gezinme için komut işleyici işlevleri sağlar.  
   
  Uygulama Sihirbazı'nı form tabanlı bir uygulama oluşturmak için bkz: [bir form tabanlı MFC uygulaması oluşturma](../mfc/reference/creating-a-forms-based-mfc-application.md) ve [veritabanı desteği, MFC Uygulama Sihirbazı'nı](../mfc/reference/database-support-mfc-application-wizard.md).  
   
  Forms tam bir irdelemesi için bkz: [kayıt görünümleri](../data/record-views-mfc-data-access.md).  
   
-##  <a name="_core_using_recordsets_in_documents_and_views"></a>Kayıt kümeleri belgeler ve görünümler içinde kullanma  
+##  <a name="_core_using_recordsets_in_documents_and_views"></a> Kayıt kümeleri belgeler ve görünümler içinde kullanma  
  Birçok basit form tabanlı uygulamalar belgeleri gerekmez. Uygulamanızı büyük olasılıkla bir belge bir proxy olarak veritabanı için kullanmak istediğiniz daha karmaşık ise, depolama bir `CDatabase` veri kaynağına bağlanan nesne. Form tabanlı uygulamalar genellikle görünümde bir kayıt kümesi nesnesi için bir işaretçi depolar. Veritabanı uygulamaları diğer tür kayıt kümelerini depolamak ve `CDatabase` belgedeki nesne. Veritabanı uygulamalarında belgeleri kullanmak için bazı olanaklar şunlardır:  
   
 -   Kayıt kümesi yerel bağlamda erişiyorsanız, oluşturma bir `CRecordset` nesne yerel olarak içindeki üye işlevleri belge veya görünümünün gerektiğinde.  
@@ -73,7 +68,7 @@ MFC veritabanı sınıfları ile veya belge/görünüm mimarisinin olmadan kulla
   
      `CDatabase` Nesnesi, veri kaynağına bağlantı yönetir. Nesne belge oluşturma sırasında otomatik olarak oluşturulur ve çağırmanız kendi **açık** belge başlattığınızda üye işlevi. Belge üye işlevlerinde kayıt kümesi nesneleri oluşturmak olduğunda, belgenin bir işaretçi geçir `CDatabase` nesnesi. Bu, her kayıt kümesi kendi veri kaynağı ile ilişkilendirir. Belge kapandığında veritabanı nesnesi genellikle yok. Bir işlev kapsamını çıktığınızda kayıt kümesi nesneleri genellikle yok olur.  
   
-##  <a name="_core_other_factors"></a>Diğer etkenlere bağlı  
+##  <a name="_core_other_factors"></a> Diğer etkenlere bağlı  
  Form tabanlı uygulamalar genellikle yok kullanım framework'ün belge serileştirme mekanizması, Kaldır, devre dışı bırakın ya da değiştirmek isteyebilirsiniz `New` ve **açık** komutlarını **dosya**menüsü. Makalesine bakın [seri hale getirme: seri hale getirme vs. Veritabanı giriş/çıkış](../mfc/serialization-serialization-vs-database-input-output.md).  
   
  Yapmak isteyebilirsiniz çerçevesini destekleyen birçok kullanıcı arabirimi fırsatından kullanın. Örneğin, birden çok kullanabilirsiniz `CRecordView` Bölümlendirici penceresinde açık nesneleri birden çok kayıt kümeleri farklı birden çok belge arabirimi (MDI) alt pencereleri ve benzeri.  

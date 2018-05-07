@@ -1,12 +1,9 @@
 ---
 title: _AddressOfReturnAddress | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - _AddressOfReturnAddress_cpp
@@ -17,20 +14,18 @@ helpviewer_keywords:
 - _AddressOfReturnAddress intrinsic
 - AddressOfReturnAddress intrinsic
 ms.assetid: c7e10b8c-445e-4236-a602-e2d90200f70a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05f6632b21d0534ea81ef285333f9665bbb25b9a
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 2bdfe58f5b42b4c06b3eda3f641bb9f2a4c628cd
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="addressofreturnaddress"></a>_AddressOfReturnAddress
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Dönüş adresi geçerli işlevinin tutan bellek konumunun adresi sağlar. Bu adres, diğer bellek konumlarını (örneğin, işlevin bağımsız değişkenler) erişmek için kullanılamaz.  
   

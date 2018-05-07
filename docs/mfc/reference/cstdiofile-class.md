@@ -2,11 +2,8 @@
 title: CStdioFile sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CStdioFile
@@ -27,19 +24,17 @@ helpviewer_keywords:
 - CStdioFile [MFC], WriteString
 - CStdioFile [MFC], m_pStream
 ms.assetid: 88c2274c-4f0e-4327-882a-557ba4b3ae15
-caps.latest.revision: 22
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 868442a2936781ed24588f47dcb591cadcc48f0d
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: 89de8dddae6d6549fe12086b84e6bb656afcbc4f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="cstdiofile-class"></a>CStdioFile Class
+# <a name="cstdiofile-class"></a>CStdioFile sınıfı
 Çalışma zamanı işlevi tarafından açılan C çalışma zamanı akışı dosyasını temsil eder [fopen](../../c-runtime-library/reference/fopen-wfopen.md).  
   
 ## <a name="syntax"></a>Sözdizimi  

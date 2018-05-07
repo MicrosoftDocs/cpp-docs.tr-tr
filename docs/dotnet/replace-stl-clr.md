@@ -1,12 +1,9 @@
 ---
-title: "(STL/CLR) değiştirme | Microsoft Docs"
-ms.custom: 
+title: (STL/CLR) değiştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::replace
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - replace function [STL/CLR]
 ms.assetid: 3792abca-8d73-476a-8540-c5f739aa48c2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: fe1f9cf94f39deb2a8db662a149a625b035b8567
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7a81bab1fbe77a7fc313e14d8d356abdd480f074
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="replace-stlclr"></a>değiştirme (STL/CLR)
 Bir aralıktaki tüm öğeleri inceler ve belirtilen bir değerle eşleşiyorsa değiştirir.  

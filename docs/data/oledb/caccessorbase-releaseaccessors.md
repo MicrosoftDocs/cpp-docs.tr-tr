@@ -1,12 +1,9 @@
 ---
 title: CAccessorBase::ReleaseAccessors | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CAccessorBase::ReleaseAccessors
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - ReleaseAccessors method
 ms.assetid: f08bc88e-0552-4a9c-9c65-b4061094649a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e68556f39d256cd0173ec24d7a2310076b6eca42
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 1c73035e27b1f896891630cd9b4d9a135b3c4758
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="caccessorbasereleaseaccessors"></a>CAccessorBase::ReleaseAccessors
 Sınıfı tarafından oluşturulan erişimciler serbest bırakır.  

@@ -1,12 +1,9 @@
 ---
-title: "Derleyici hataları C3200 C3299 aracılığıyla | Microsoft Docs"
-ms.custom: 
+title: Derleyici hataları C3200 C3299 aracılığıyla | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3220
@@ -43,17 +40,15 @@ helpviewer_keywords:
 dev_langs:
 - C++
 ms.assetid: 6b3104f6-63bc-4823-b6f3-b8a16be4b87f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 339a4e0f1337e120d192515cecd4dba4e04e310e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 831f51981ff72a67a55698693514dce0a3d87535
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-errors-c3200-through-c3299"></a>Derleyici hataları C3200 C3299 aracılığıyla
 
@@ -139,9 +134,9 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından oluşturulan hata ile
 |[Derleyici Hatası C3271](compiler-error-c3271.md)|'*alan*': geçersiz bir değer '*numarası*' FieldOffset özniteliği|
 |[Derleyici Hatası C3272](compiler-error-c3272.md)|'*simgesi*': sembol gerektirir FieldOffset, yapı/sınıf üyesi olduğu gibi *type_name* StructLayout(LayoutKind::Explicit) ile tanımlanan|
 |[Derleyici Hatası C3273](compiler-error-c3273.md)|'*anahtar sözcüğü*': C++ try blok izin verilmiyor|
-|[Derleyici Hatası C3274](compiler-error-c3274.md)|Son olarak / &#95; &#95; son eşleşen olmadan deneyin.|
+|[Derleyici Hatası C3274](compiler-error-c3274.md)|Son olarak /&#95;&#95;son eşleşen olmadan deneyin.|
 |[Derleyici Hatası C3275](compiler-error-c3275.md)|'*tanımlayıcısı*': Bu simgeyi niteleyicisi olmadan kullanamazsınız|
-|[Derleyici Hatası C3276](compiler-error-c3276.md)|'*anahtar sözcüğü*': dışı son atlama / &#95; &#95; finally bloğu davranışı sonlandırma işleme sırasında tanımlanmamış|
+|[Derleyici Hatası C3276](compiler-error-c3276.md)|'*anahtar sözcüğü*': dışı son atlama /&#95;&#95;finally bloğu davranışı sonlandırma işleme sırasında tanımlanmamış|
 |[Derleyici Hatası C3277](compiler-error-c3277.md)|Yönetilmeyen enum tanımlayamazsınız '*numaralandırma*'iç yönetilen'*türü*'|
 |[Derleyici Hatası C3278](compiler-error-c3278.md)|doğrudan arabirimi veya saf yöntem çağrısı '*işlevi*' çalışma zamanında başarısız olur|
 |[Derleyici Hatası C3279](compiler-error-c3279.md)|sınıf şablonları de olarak açık işlemlerinden CLI ad alanında bildirilen kısmi ve açık özelleştirmeleri izin verilmiyor|

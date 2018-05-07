@@ -1,13 +1,10 @@
 ---
-title: "Karışık (yerel ve yönetilen) derlemeler | Microsoft Docs"
-ms.custom: 
+title: Karışık (yerel ve yönetilen) derlemeler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-cli
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -21,18 +18,16 @@ helpviewer_keywords:
 - mixed assemblies [C++]
 - native code [C++], .NET interoperatibility
 ms.assetid: 4299dfce-392f-4933-8bf0-5da2f0d1c282
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: aeb0a4f21487d9d230c72bfbfc6a06928455dfe2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0ac18841d5050bc8fb849ac542dc298ce89c964f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="mixed-native-and-managed-assemblies"></a>Karışık (Yerel ve Yönetilen) Derlemeler
 Karışık derlemeler yönetilmeyen makine yönergeleri ve MSIL yönergeleri içeremeyeceğini. Bu arayın ve .NET bileşenleri tarafından tamamen yönetilmeyen bileşenleri ile uyumluluk korurken çağrılması sağlar. Karışık derlemeler kullanarak, geliştiriciler yönetilen ve yönetilmeyen işlevleri karışımını kullanan uygulamalar yazabilirsiniz. Bu karışık derlemeler mevcut Visual C++ uygulamaları geçirme .NET platformu için ideal hale getirir.  
@@ -69,7 +64,7 @@ Karışık derlemeler yönetilmeyen makine yönergeleri ve MSIL yönergeleri iç
  [Nasıl yapılır: CRT Kitaplık DLL'inden Bağımlılık Kaldırarak Kısmen Güvenilir Uygulama Oluşturma](../dotnet/create-a-partially-trusted-application.md)  
  Visual C++ kullanarak msvcm90.dll bağımlılık kaldırarak kısmen güvenilir bir ortak dil çalışma zamanı uygulamasının nasıl oluşturulacağını açıklar.  
   
- Karışık derlemeler için kodlama yönergeleri hakkında daha fazla bilgi için bkz: "Bir genel bakış, yönetilen/yönetilmeyen kod birlikte çalışabilirliği" MSDN makalesine [http://msdn.microsoft.com/netframework/default.aspx?pull=/library/dndotnet/html/manunmancode.asp](http://msdn.microsoft.com/netframework/default.aspx?pull=/library/dndotnet/html/manunmancode.asp).  
+ Karışık derlemeler için kodlama yönergeleri hakkında daha fazla bilgi için bkz: "Bir genel bakış, yönetilen/yönetilmeyen kod birlikte çalışabilirliği" MSDN makalesine [ http://msdn.microsoft.com/netframework/default.aspx?pull=/library/dndotnet/html/manunmancode.asp ](http://msdn.microsoft.com/netframework/default.aspx?pull=/library/dndotnet/html/manunmancode.asp).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yerel ve.NET Birlikte Çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)

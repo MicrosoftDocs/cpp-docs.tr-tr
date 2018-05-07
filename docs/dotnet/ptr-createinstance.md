@@ -2,11 +2,8 @@
 title: PTR::CreateInstance | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - ptr.CreateInstance
@@ -18,18 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - ptr::CreateInstance
 ms.assetid: 9e8e4c4c-1651-4839-8829-5857d74470fe
-caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: d764d18f3148dba663e1e6796c44a0add6aa8109
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dd4ba56b92150046b986f2b101f6a004c114bf28
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ptrcreateinstance"></a>ptr::CreateInstance
 İçinde bir COM nesnesinin örneği oluşturur bir `com::ptr`.  
@@ -86,7 +81,7 @@ void CreateInstance(
  Yeni oluşturulan nesnenin yönetir kod çalışacağı bağlamı. Değerleri alındığı `CLSCTX` numaralandırması. Varsa `cls_context` belirtilmezse, değerin CLSCTX_ALL kullanılır.  
   
  `rclsid`  
- `CLSID`nesne oluşturmak için kullanılan kod ve veri ile ilişkilendirilmiş.  
+ `CLSID` nesne oluşturmak için kullanılan kod ve veri ile ilişkilendirilmiş.  
   
 ## <a name="exceptions"></a>Özel Durumlar  
  Varsa `com::ptr` zaten bir COM nesnesi başvuru sahibi `CreateInstance` oluşturur <xref:System.InvalidOperationException>.  
@@ -94,7 +89,7 @@ void CreateInstance(
  Bu işlev çağrılarını `CoCreateInstance` ve kullandığı <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> herhangi bir hata dönüştürmek için `HRESULT` için uygun bir özel durum.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CreateInstance`kullanan `CoCreateInstance` ProgID veya CLSID tanımlanan belirtilen nesne yeni bir örneğini oluşturmak için. `com::ptr` Yeni oluşturulan nesnenin başvuruyor ve yok etme bağlı tüm ait başvuruları otomatik olarak serbest bırakır.  
+ `CreateInstance` kullanan `CoCreateInstance` ProgID veya CLSID tanımlanan belirtilen nesne yeni bir örneğini oluşturmak için. `com::ptr` Yeni oluşturulan nesnenin başvuruyor ve yok etme bağlı tüm ait başvuruları otomatik olarak serbest bırakır.  
   
 ## <a name="example"></a>Örnek  
  Bu örnek kullanan bir CLR sınıfı uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesnesi. Sınıf oluşturucuları iki farklı tür kullanmanıza `CreateInstance` ProgID veya CLSID artı bir CLSCTX belge nesnesi oluşturulamadı.  

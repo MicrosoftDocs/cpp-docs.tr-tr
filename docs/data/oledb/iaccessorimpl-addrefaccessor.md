@@ -1,12 +1,9 @@
 ---
 title: IAccessorImpl::addrefaccessor | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - ATL::IAccessorImpl::AddRefAccessor
@@ -19,18 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - AddRefAccessor method
 ms.assetid: 4c15392c-944b-4cbd-8cc7-2a5c2f308a70
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 74ae97d1e9397d401b7e2eaadecb9abcc61306ff
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 856148d718832fdb0f898dbbbe23958c9ba4f99a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="iaccessorimpladdrefaccessor"></a>IAccessorImpl::AddRefAccessor
 Bir başvuru sayısı varolan erişimci ekler.  

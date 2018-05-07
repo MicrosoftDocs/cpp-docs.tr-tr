@@ -1,12 +1,9 @@
 ---
-title: "CArchiveException sınıfı | Microsoft Docs"
-ms.custom: 
+title: CArchiveException sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CArchiveException
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - CArchiveException [MFC], m_cause
 - CArchiveException [MFC], m_strFileName
 ms.assetid: da31a127-e86c-41d1-b0b6-bed0865b1b49
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c2ca798bf3cac50e00627fc3986072af7b2ff94
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ac864831e9d3a0cf0cd5e67501f1ac8396f99473
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="carchiveexception-class"></a>CArchiveException sınıfı
 Bir seri hale getirme özel durumu temsil eder  
@@ -60,7 +55,7 @@ class CArchiveException : public CException
 ## <a name="remarks"></a>Açıklamalar  
  `CArchiveException` Sınıfı, özel durum nedenini belirten bir genel veri üyesi içerir.  
   
- `CArchiveException`nesneleri oluşturulur ve içinde oluşturulan [CArchive](../../mfc/reference/carchive-class.md) üye işlevleri. Bu nesneler kapsamında erişim bir **CATCH** ifade. Neden kodu işletim sistemini bağımsızdır. Özel durum işleme hakkında daha fazla bilgi için bkz: [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).  
+ `CArchiveException` nesneleri oluşturulur ve içinde oluşturulan [CArchive](../../mfc/reference/carchive-class.md) üye işlevleri. Bu nesneler kapsamında erişim bir **CATCH** ifade. Neden kodu işletim sistemini bağımsızdır. Özel durum işleme hakkında daha fazla bilgi için bkz: [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -72,7 +67,7 @@ class CArchiveException : public CException
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afx.h  
   
-##  <a name="carchiveexception"></a>CArchiveException::CArchiveException  
+##  <a name="carchiveexception"></a>  CArchiveException::CArchiveException  
  Oluşturan bir `CArchiveException` değerini depolama nesnesi `cause` nesnesindeki.  
   
 ```  
@@ -93,7 +88,7 @@ CArchiveException(
   
  Bu oluşturucu doğrudan kullanmayın; Bunun yerine, genel bir işlevi çağırmak `AfxThrowArchiveException`.  
   
-##  <a name="m_cause"></a>CArchiveException::m_cause  
+##  <a name="m_cause"></a>  CArchiveException::m_cause  
  Özel durum nedenini belirtir.  
   
 ```  
@@ -125,7 +120,7 @@ int m_cause;
     > [!NOTE]
     > **CArchiveException::generic** kullanım dışı bırakılmıştır. Kullanım **genericException** yerine. Varsa **genel** bir uygulamada kullanılan ve yerleşik/CLR ile olacaktır geçirilirse kolay olmayan sözdizimi hataları.  
   
-##  <a name="m_strfilename"></a>CArchiveException::m_strFileName  
+##  <a name="m_strfilename"></a>  CArchiveException::m_strFileName  
  Bu özel durum için dosya adını belirtir.  
   
 ```  

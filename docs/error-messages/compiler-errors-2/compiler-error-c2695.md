@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2695 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2695 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2695
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2695
 ms.assetid: 3f6f2091-c38b-40ea-ab6c-f1846f5702d7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1799e5efbf6428c5cc8f4247fb49259ef9da55ef
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 67dc97688dddde37323f25b96bd8bbc596660e2f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2695"></a>Derleyici Hatası C2695
 'function1': sanal işlevi geçersiz kılma farklı 'function2' yalnızca çağırma  

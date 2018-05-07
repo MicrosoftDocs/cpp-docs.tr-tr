@@ -1,12 +1,9 @@
 ---
-title: "İşleç&lt; (map) (STL/CLR) | Microsoft Docs"
-ms.custom: 
+title: İşleç&lt; (map) (STL/CLR) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::map::operator<
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - operator< member [STL/CLR]
 ms.assetid: 9ff87b44-663e-4b99-9dba-d775d9f6f853
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 73004f03191ba09eefdf1a0ea91dbdbe14d973d2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4d66b8463676cf0cc20876bc444cecfb8084a1a8
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="operatorlt-map-stlclr"></a>İşleç&lt; (map) (STL/CLR)
 Liste değerinden karşılaştırma.  

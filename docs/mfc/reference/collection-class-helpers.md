@@ -1,13 +1,10 @@
 ---
-title: "Koleksiyon sınıfı Yardımcıları | Microsoft Docs"
-ms.custom: 
+title: Koleksiyon sınıfı Yardımcıları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.classes
 dev_langs:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - collection classes [MFC], helper functions
 - helper functions collection class [MFC]
 ms.assetid: bc3a2368-9edd-4748-9e6a-13cba79517ca
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82b11c4cbe8f862121d89c308ab11d53582931d7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d00d78acf7ddf8cfa27e117cbcdbbb00c7d6fa6b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="collection-class-helpers"></a>Koleksiyon Sınıfı Yardımcıları
 Koleksiyon sınıfları `CMap`, `CList`, ve `CArray` karşılaştırma, kopyalama ve öğelerini serileştirme gibi amaçlarla şablonlu genel yardımcı işlevleri kullanın. Temel sınıflarının, uygulamanızı bir parçası olarak `CMap`, `CList`, ve `CArray`, eşlemesi, liste veya dizi depolanan verilerin türünü uyarlanmış sürümleriyle gerektikçe bu işlevleri geçersiz kılmalıdır. Yardımcı işlevleri gibi geçersiz kılma hakkında bilgi için `SerializeElements`, makaleye bakın [koleksiyonları: tür kullanımı uyumlu koleksiyon yapma](../../mfc/how-to-make-a-type-safe-collection.md). Unutmayın **ConstructElements** ve **DestructElements** kullanım dışı bırakıldı.  
@@ -46,8 +41,8 @@ Koleksiyon sınıfları `CMap`, `CList`, ve `CArray` karşılaştırma, kopyalam
 |[HashKey](#hashkey)|Karma anahtar hesaplar.|  
 |[SerializeElements](#serializeelements)|Bir arşiv öğelerin alır veya depolar.|  
   
-##  <a name="compareelements"></a>CompareElements  
- Doğrudan göre adlı [CList::Find] (clist class.md #not_found.md #clist__find ve dolaylı olarak [cmap__lookup](cmap-class.md#lookup) ve [cmap__operator &#91; &#93;](cmap-class.md#operator_at).  
+##  <a name="compareelements"></a>  CompareElements  
+ Doğrudan göre adlı [CList::Find] (clist class.md #not_found.md #clist__find ve dolaylı olarak [cmap__lookup](cmap-class.md#lookup) ve [cmap__operator &#91; &#93; ](cmap-class.md#operator_at).  
   
 ```   
 template<class TYPE, class ARG_TYPE>  
@@ -83,7 +78,7 @@ CompareElements(
 ### <a name="requirements"></a>Gereksinimler  
    **Başlık:** afxtempl.h   
   
-##  <a name="copyelements"></a>CopyElements  
+##  <a name="copyelements"></a>  CopyElements  
  Bu işlev doğrudan göre adlandırılır [CArray::Append](carray-class.md#append) ve [CArray::Copy](carray-class.md#copy).  
   
 ```   
@@ -108,14 +103,14 @@ void AFXAPI CopyElements(
  Kopyalanacak öğe sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Basit atama işleci varsayılan uygulama kullanır (  **=**  ) kopyalama işlemi gerçekleştirmek için. Kopyalanan türü aşırı yüklenmiş bir işleç yoksa varsayılan uygulama Bitsel kopyasını gerçekleştirir sonra =.  
+ Basit atama işleci varsayılan uygulama kullanır ( **=** ) kopyalama işlemi gerçekleştirmek için. Kopyalanan türü aşırı yüklenmiş bir işleç yoksa varsayılan uygulama Bitsel kopyasını gerçekleştirir sonra =.  
   
  Makaleyi bu ve diğer yardımcı işlevleri uygulama hakkında daha fazla bilgi için bkz [koleksiyonları: tür kullanımı uyumlu koleksiyon yapma](../how-to-make-a-type-safe-collection.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxtempl.h  
   
-##  <a name="dumpelements"></a>DumpElements  
+##  <a name="dumpelements"></a>  DumpElements  
  Akış odaklı tanılama çıktıları metin biçiminde için geçersiz kılındığında, koleksiyonunuzu öğeleri sağlar.  
   
 ```   
@@ -148,7 +143,7 @@ void  AFXAPI DumpElements(
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxtempl.h  
   
-##  <a name="hashkey"></a>HashKey  
+##  <a name="hashkey"></a>  HashKey  
  Belirtilen anahtar için bir karma değer hesaplar.  
   
 ```  
@@ -167,7 +162,7 @@ AFX_INLINE UINT AFXAPI HashKey(ARG_KEY  key);
  Anahtarın karma değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev doğrudan göre adlandırılır [CMap::RemoveKey](cmap-class.md#removekey) ve dolaylı olarak [CMap::Lookup](cmap-class.md#lookup) ve [CMap::Operator &#91; &#93;](cmap-class.md#operator_at).
+ Bu işlev doğrudan göre adlandırılır [CMap::RemoveKey](cmap-class.md#removekey) ve dolaylı olarak [CMap::Lookup](cmap-class.md#lookup) ve [CMap::Operator &#91; &#93; ](cmap-class.md#operator_at).
   
  Varsayılan uygulama değiştirerek bir karma değer oluşturan `key` dört konumlar sağ tarafından. Bu işlev, böylece karma değerleri, uygulamanız için uygun döndürür geçersiz kılar.  
   
@@ -184,7 +179,7 @@ template <> UINT AFXAPI HashKey(unsigned __int64 key)
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxtempl.h 
   
-##  <a name="serializeelements"></a>SerializeElements  
+##  <a name="serializeelements"></a>  SerializeElements  
  [CArray](carray-class.md), [CList](clist-class.md), ve [CMap](cmap-class.md) öğeleri seri hale getirmek için bu işlevini çağırın.  
   
 ```   

@@ -1,13 +1,10 @@
 ---
-title: "ODBC: ODBC imleç kitaplığı | Microsoft Docs"
-ms.custom: 
+title: 'ODBC: ODBC imleç kitaplığı | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-data
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -25,18 +22,16 @@ helpviewer_keywords:
 - ODBC, timestamp
 - positioning cursors
 ms.assetid: 6608db92-82b1-4164-bb08-78153c227be3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3d849580ce3e9b264c854633c6bb9f274874c21d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e57251263738d534b7e7e22ff287607fbc5159a5
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="odbc-the-odbc-cursor-library"></a>ODBC: ODBC İmleç Kitaplığı
 Bu konuda ODBC imleç kitaplığı açıklar ve nasıl kullanılacağını açıklar. Daha fazla bilgi için bkz.:  
@@ -49,7 +44,7 @@ Bu konuda ODBC imleç kitaplığı açıklar ve nasıl kullanılacağını açı
   
  ODBC imleç kitaplığı ODBC Sürücü Yöneticisi ve sürücü arasında bulunan bir dinamik bağlantı kitaplığı (DLL) ' dir. ODBC bağlamında, bir sürücü kayıt kümesi içindeki konumunu izlemek için bir işaretçi tutar. İmleç konumu için zaten kaydırılan kümesinde işaretler — geçerli kayıt.  
   
-##  <a name="_core_the_cursor_library_and_level_1_odbc_drivers"></a>İmleç Kitaplığı ve düzey 1 ODBC sürücüleri  
+##  <a name="_core_the_cursor_library_and_level_1_odbc_drivers"></a> İmleç Kitaplığı ve düzey 1 ODBC sürücüleri  
  ODBC imleç kitaplığı düzey 1 sürücüleri aşağıdaki yeni özellikleri sağlar:  
   
 -   İleri ve geri kaydırma. Zaten kaydırılabilir olduklarından Düzey 2 sürücüleri imleç kitaplığı gerekmez.  
@@ -58,7 +53,7 @@ Bu konuda ODBC imleç kitaplığı açıklar ve nasıl kullanılacağını açı
   
  Normalde, sürücüsü tarafından desteklenmez olsa bile imleç kitaplığı, anlık görüntüler (statik imleçler) sağlar. Sürücünüzün statik imleçleri destekliyorsa, anlık görüntü desteği almak için imleç kitaplığını yükleme gerekmez. İmleç kitaplığı kullanıyorsanız, yalnızca anlık görüntüler ve salt iletme kayıt kümeleri kullanabilirsiniz. Dinamik kümeler (KEYSET_DRIVEN imleçler) sürücünüzü destekliyorsa ve bunları kullanmak istediğiniz, imleç kitaplığı kullanmaması gerekir. Anlık görüntüler ve dinamik kümeler kullanmak istiyorsanız, bunları iki farklı temel gerekir `CDatabase` sürücünüzü her ikisini desteklemedikçe nesnelerini (iki farklı bağlantı).  
   
-##  <a name="_core_positioned_updates_and_timestamp_columns"></a>Konumlandırılmış güncelleştirmeler ve zaman damgası sütunları  
+##  <a name="_core_positioned_updates_and_timestamp_columns"></a> Konumlandırılmış güncelleştirmeler ve zaman damgası sütunları  
   
 > [!NOTE]
 >  ODBC veri kaynakları, MFC veri erişim nesnesi (DAO) sınıfları veya bu konu başlığı altında açıklandığı gibi MFC ODBC sınıfları üzerinden erişilebilir.  
@@ -75,7 +70,7 @@ Bu konuda ODBC imleç kitaplığı açıklar ve nasıl kullanılacağını açı
  İkinci sorun sınıfının sınırlamaları işlemiyle ilgili [CTime](../../atl-mfc-shared/reference/ctime-class.md) ile kullanıldığında `RFX_Date` veya bir tablodan saat ve tarih bilgi aktarmak için işlevi. İşleme `CTime` nesne bazı ek veri aktarımı sırasında fazladan orta düzeyde işleme biçiminde uygular. Tarih aralığını `CTime` nesneleri ayrıca çok sınırlama bazı uygulamalar için. Yeni bir sürümü `RFX_Date` işlev alır ODBC **TIMESTAMP_STRUCT** parametresi yerine bir `CTime` nesnesi. Daha fazla bilgi için bkz: `RFX_Date` içinde [makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md) içinde *MFC başvurusu*.  
 
   
-##  <a name="_core_using_the_cursor_library"></a>İmleç kitaplığını kullanma  
+##  <a name="_core_using_the_cursor_library"></a> İmleç kitaplığını kullanma  
  Bir veri kaynağına bağlandığınızda — çağırarak [CDatabase::OpenEx](../../mfc/reference/cdatabase-class.md#openex) veya [CDatabase::Open](../../mfc/reference/cdatabase-class.md#open) — imleç kitaplığı veri kaynağı için kullanılıp kullanılmayacağını belirtebilirsiniz. Bu veri kaynağında anlık görüntüleri oluşturacaksanız belirtin **CDatabase::useCursorLib** seçeneğini `dwOptions` parametresi `OpenEx` veya belirtmek **TRUE** için  **bUseCursorLib** parametresi **açık** (varsayılan değer **TRUE**). Dinamik kümeler ODBC sürücüsü destekliyorsa ve veri kaynağı üzerinde dinamik kümeler açmak istediğiniz, imleç kitaplığı (dinamik kümeler için gereken bazı sürücü işlevleri maskeleri) kullanmayın. Bu durumda, belirtmeyin **CDatabase::useCursorLib** içinde `OpenEx` veya belirtmek **FALSE** için **bUseCursorLib** parametresinde **açın**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

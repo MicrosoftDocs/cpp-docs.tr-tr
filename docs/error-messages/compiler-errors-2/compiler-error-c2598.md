@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2598 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2598 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2598
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2598
 ms.assetid: 40777c62-39ba-441e-b081-f49f94b43547
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d0d5a5e48ada3ac504fb12c5239d061761ce016
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2fb41e0072f319c701f5f0cf13670a5f8f7051a0
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2598"></a>Derleyici Hatası C2598
 bağlantı belirtimi genel kapsamda olmalıdır  

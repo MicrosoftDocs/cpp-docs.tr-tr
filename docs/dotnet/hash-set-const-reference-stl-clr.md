@@ -1,12 +1,9 @@
 ---
 title: hash_set::const_reference (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_set::const_reference
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - const_reference member [STL/CLR]
 ms.assetid: 12e79114-91b6-4df8-9b5d-a92731d93f6a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: c89d4e5017537253f808af0fbb587fff03348242
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ee3e658afb93361ac8ac50c8c883fb6b99231353
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="hashsetconstreference-stlclr"></a>hash_set::const_reference (STL/CLR)
 Bir öğe için sabit bir başvuru türü.  

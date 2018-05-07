@@ -1,12 +1,9 @@
 ---
-title: "Komut satırı uyarısı D9041 | Microsoft Docs"
-ms.custom: 
+title: Komut satırı uyarısı D9041 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - D9041
@@ -15,22 +12,20 @@ dev_langs:
 helpviewer_keywords:
 - D9041
 ms.assetid: ada8815f-4246-4e25-b57d-a7f16fa107cc
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 307d290bb525ee879f29853c6823d5b9565aba4b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c22573d26e09e14789f4cbd64d68f4082125c2b3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="command-line-warning-d9041"></a>Komut Satırı Uyarısı D9041
 Geçersiz bir değer 'value' için '/ seçeneği'; ' değeri '; Ekle ' / analyze' Bu uyarı belirtirken komut satırı seçenekleri  
   
- Kod çözümleme uyarı numarası eklendi **/wd**, **/we**, **/wo**, veya **/wl** debelirtmedenkomutsatırıseçeneği**/ analyze** komut satırı seçeneği. Bu hatayı düzeltmek için ekleyip ya da **/ analyze** komut satırı seçeneği ya da geçersiz uyarı numarasını uygun Kaldır **/w** komut satırı seçeneği.  
+ Kod çözümleme uyarı numarası eklendi **/wd**, **/we**, **/wo**, veya **/wl** debelirtmedenkomutsatırıseçeneği **/ analyze** komut satırı seçeneği. Bu hatayı düzeltmek için ekleyip ya da **/ analyze** komut satırı seçeneği ya da geçersiz uyarı numarasını uygun Kaldır **/w** komut satırı seçeneği.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek komut satırı uyarısı D9041 oluşturur:  

@@ -1,12 +1,9 @@
 ---
 title: CRowsetImpl::m_strCommandText | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-data
 ms.topic: reference
 f1_keywords:
 - CRowsetImpl::m_strCommandText
@@ -16,18 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - m_strCommandText
 ms.assetid: 968dda63-1724-4084-991b-c079d7b3e378
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ab527f3473e0df5a3294eb16f77c784f6d1244d6
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 5fc06cf33b15f4dcd498d4ae0e836114fe57ffdb
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="crowsetimplmstrcommandtext"></a>CRowsetImpl::m_strCommandText
 Satır kümesinin ilk komut içerir.  
@@ -44,8 +39,8 @@ CComBSTR CRowsetBaseImpl::m_strCommandText;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CRowsetImpl sınıfı](../../data/oledb/crowsetimpl-class.md)   
- [CRowsetImpl::m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)   
+ [CRowsetImpl::m_strındextext](../../data/oledb/crowsetimpl-m-strindextext.md)   
  [CRowsetImpl::m_rgRowData](../../data/oledb/crowsetimpl-m-rgrowdata.md)   
- [CRowsetImpl::GetCommandFromID](../../data/oledb/crowsetimpl-getcommandfromid.md)   
+ [CRowsetImpl::getcommandfromıd](../../data/oledb/crowsetimpl-getcommandfromid.md)   
  [CRowsetImpl::setCommandText](../../data/oledb/crowsetimpl-setcommandtext.md)   
  [CRowsetImpl::ValidateCommandID](../../data/oledb/crowsetimpl-validatecommandid.md)

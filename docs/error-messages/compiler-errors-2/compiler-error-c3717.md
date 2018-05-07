@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3717 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3717 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3717
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3717
 ms.assetid: ae4fceb1-2583-4577-b2f1-40971a017055
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d3172709982106f34a7fec1830594d653b2c0e8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: efe6cdb53b3ee78016c25b273eb4682ec380d12f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3717"></a>Derleyici Hatası C3717
 'yöntemi': olay tetikler bir yöntem tanımlanamıyor  

@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C2011 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2011 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C2011
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C2011
 ms.assetid: 992c9d51-e850-4d53-b86b-02e73b38249c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c599d6add1fa51c6aae7f04019eacdc94f11bb15
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 898a724f022a81f590ec1f8165de9752de6c1d0b
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c2011"></a>Derleyici Hatası C2011
 'tanımlayıcısı': 'type' yazın yeniden tanımlama  

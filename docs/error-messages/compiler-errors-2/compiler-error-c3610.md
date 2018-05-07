@@ -1,12 +1,9 @@
 ---
-title: "Derleyici Hatası C3610 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3610 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C3610
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - C3610
 ms.assetid: 9349a348-9d37-4a00-9eab-481039268d31
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33fba9e64a6d314d503a42d0cf5512a2edb9c3a6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f58d66e9d3dacfa2c0b38eb84fe51e0813a892d3
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-error-c3610"></a>Derleyici Hatası C3610
 'valuetype': değer türü gerekir 'Kutulu' yöntemi 'yöntemi' çağrılmadan önce  
