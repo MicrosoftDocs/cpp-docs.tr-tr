@@ -2,11 +2,8 @@
 title: allocator_newdel sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - allocators/stdext::allocators::allocator_newdel
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - stdext::allocators [C++], allocator_newdel
 - stdext::allocator_newdel
 ms.assetid: 62666cd2-3afe-49f7-9dd1-9bbbb154da98
-caps.latest.revision: 18
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e82c53449e2951c6006591bbf1f76b97bf533ced
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 9eea1a8fe89e9cabcfbe1bf9aa69f1c3fda775c0
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="allocatornewdel-class"></a>allocator_newdel Sınıfı
 

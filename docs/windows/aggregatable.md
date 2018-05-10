@@ -1,13 +1,10 @@
 ---
 title: toplanabilir | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.aggregatable
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - aggregatable attribute
 ms.assetid: 9253a46a-cd76-41f2-b3b6-86f709bb069c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ec044e18fdd8bcd21fbad8d2e46c847c876cc00d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1d80b2fb707145f698e8d9bb883059478c3da10b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="aggregatable"></a>toplanabilir
 Sınıf toplama desteklediğini belirtir.  
@@ -87,7 +82,7 @@ class CMyClass {};
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**,`struct`|  
+|**Uygulandığı öğe:**|**sınıf**, `struct`|  
 |**Yinelenebilir**|Hayır|  
 |**Gerekli öznitelikler**|Bir veya daha fazlasını: **coclass**, **ProgID**, veya **vi_progid**.|  
 |**Geçersiz öznitelikler**|Yok.|  

@@ -1,13 +1,10 @@
 ---
 title: helpstringcontext | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.helpstringcontext
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - helpstringcontext attribute [C++]
 ms.assetid: d4cd135e-d91c-4aa3-9353-8aeb096f52cf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3c5492d18085d78e20d6654898a6c66647e3bbe0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 97b4b43f8cbd8f08cca4f6cf2f21294a625f289c
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
 Yardım konusunun Kimliğini bir .hlp veya .chm dosyasında belirtir.  

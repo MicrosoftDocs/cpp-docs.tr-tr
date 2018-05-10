@@ -1,13 +1,10 @@
 ---
-title: "TypeDef, Enum, Union ve Struct öznitelikleri | Microsoft Docs"
-ms.custom: 
+title: TypeDef, Enum, Union ve Struct öznitelikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - typedef attributes
 - enum attributes
 ms.assetid: f8a4fe94-dc02-4aed-bc31-3e500d42f4c7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2087d4ff4e4905324f9bbdfaa954287f033feafe
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c14881afd000dc5fb4223a2ecfa9dcdc67e7b541
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="typedef-enum-union-and-struct-attributes"></a>Typedef, Enum, Union ve Struct Öznitelikleri
 Aşağıdaki öznitelikler uygulamak [typedef](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1), [yapısı](../cpp/struct-cpp.md), ve [enum](../cpp/enumerations-cpp.md) C++ anahtar sözcükleri.  
@@ -37,7 +32,7 @@ Aşağıdaki öznitelikler uygulamak [typedef](http://msdn.microsoft.com/en-us/c
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|[durumu](../windows/case-cpp.md)|İle kullanılan [switch_type](../windows/switch-type.md) özniteliğini bir **UNION**.|  
+|[Durumu](../windows/case-cpp.md)|İle kullanılan [switch_type](../windows/switch-type.md) özniteliğini bir **UNION**.|  
 |[Özel](../windows/custom-cpp.md)|Kendi özniteliğinizi tanımlamanıza olanak sağlar.|  
 |[export](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.|  
 |[first_is](../windows/first-is.md)|Aktarılacak ilk dizi öğenin dizinini belirtir.|  
@@ -50,7 +45,7 @@ Aşağıdaki öznitelikler uygulamak [typedef](http://msdn.microsoft.com/en-us/c
 |[ref](../windows/ref-cpp.md)|Bir başvuru işaretçi tanımlar.|  
 |[switch_is](../windows/switch-is.md)|İfade veya bileşim üyesi seçer birleşim discriminant işlev gören tanımlayıcısını belirtir.|  
 |[switch_type](../windows/switch-type.md)|Birleşim discriminant kullanılan değişken türünü tanımlar.|  
-|[benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
+|[Benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
 |[wire_marshal](../windows/wire-marshal.md)|Bir uygulamaya özgü veri türü yerine iletim için kullanılacak bir veri türünü belirtir.|  
   
 ### <a name="enum"></a>enum  
@@ -59,7 +54,7 @@ Aşağıdaki öznitelikler uygulamak [typedef](http://msdn.microsoft.com/en-us/c
 |---------------|-----------------|  
 |[Özel](../windows/custom-cpp.md)|Kendi özniteliğinizi tanımlamanıza olanak sağlar.|  
 |[export](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.|  
-|[UUID](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
+|[uuid](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
 |[v1_enum](../windows/v1-enum.md)|Belirtilen enum türü 16 bit varsayılan yerine bir 32 bit varlık olarak iletilmesi yönlendirir.|  
   
 ### <a name="union"></a>birleşim  
@@ -73,8 +68,8 @@ Aşağıdaki öznitelikler uygulamak [typedef](http://msdn.microsoft.com/en-us/c
 |[length_is](../windows/length-is.md)|Aktarılacak dizi öğelerinin sayısını belirtir.|  
 |[max_is](../windows/max-is.md)|Geçerli dizi dizini için maksimum değeri belirler.|  
 |[size_is](../windows/size-is.md)|Bellek boyutu boyutlu işaretçileri ayrılmış, boyutlu işaretçiler ve tek veya çok boyutlu diziler işaretçileri boyutta belirtir.|  
-|[benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
-|[UUID](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
+|[Benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
+|[uuid](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
   
 ### <a name="nonencapsulated-union"></a>Nonencapsulated birleşimi  
   
@@ -113,9 +108,9 @@ Aşağıdaki öznitelikler uygulamak [typedef](http://msdn.microsoft.com/en-us/c
 |[requires_category](../windows/requires-category.md)|Hedef sınıf gerekli bir bileşen kategorilerini belirtir.|  
 |[size_is](../windows/size-is.md)|Bellek boyutu boyutlu işaretçileri ayrılmış, boyutlu işaretçiler ve tek veya çok boyutlu diziler işaretçileri boyutta belirtir.|  
 |[Kaynak](../windows/source-cpp.md)|Bir sınıf üzerinde bağlantı noktaları için COM nesnesinin kaynak arabirimleri belirtir. Özellik veya yöntem üye nesne veya olay kaynağı değişken döndürdüğünü gösterir.|  
-|[iş parçacığı oluşturma](../windows/threading-cpp.md)|Bir COM nesnesi için iş parçacığı modelini belirtir.|  
-|[benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
-|[UUID](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
+|[İş parçacığı oluşturma](../windows/threading-cpp.md)|Bir COM nesnesi için iş parçacığı modelini belirtir.|  
+|[Benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
+|[uuid](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
 |[Sürüm](../windows/version-cpp.md)|Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımlar.|  
 |[vi_progid](../windows/vi-progid.md)|Sürüm bağımsız form ProgID belirtir.|  
   

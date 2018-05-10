@@ -2,11 +2,8 @@
 title: recursive_mutex sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - mutex/std::recursive_mutex
@@ -17,10 +14,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: eb5ffd1b-7e78-4559-8391-bb220ead42fc
-caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::recursive_mutex [C++]
 - std::recursive_mutex [C++], recursive_mutex
@@ -29,11 +24,11 @@ helpviewer_keywords:
 - std::recursive_mutex [C++], unlock
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 277577fc8a126a23d9531de2a7c87cdb4b0bc673
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 89c39f006cee8c62c22f3caf7e2c10ee9a0c1d03
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="recursivemutex-class"></a>recursive_mutex Sınıfı
 

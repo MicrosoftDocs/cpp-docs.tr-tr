@@ -2,11 +2,8 @@
 title: aligned_union sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - type_traits/std::aligned_union
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - aligned_union
 ms.assetid: 9931a44d-3a67-4f29-a0f6-d47a7cf560ac
-caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1f6672733773e79a7f0b74b0fb6d7fdf80926f2
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: a149269117f83b18838d54c728d6d8da580882b0
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="alignedunion-class"></a>aligned_union Sınıfı
 

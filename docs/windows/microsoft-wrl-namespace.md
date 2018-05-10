@@ -1,12 +1,9 @@
 ---
 title: Microsoft::WRL Namespace | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL
@@ -22,18 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - WRL namespace
 ms.assetid: 01118a8f-f564-4859-b87e-9444848585a1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 64c8b82320e0b402c06432438cd49a23be5d1f2f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 37d4d5391da4dfb6e25754eb1350224acb97e972
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="microsoftwrl-namespace"></a>Microsoft::WRL Ad Alanı
 Windows çalışma zamanı C++ Şablon kitaplığı yapmak temel türlerini tanımlar.  
@@ -61,7 +56,7 @@ namespace Microsoft::WRL;
 |[ClassFactory Sınıfı](../windows/classfactory-class.md)|Temel işlevselliğini uygulayan `IClassFactory` arabirimi.|  
 |[ComPtr Sınıfı](../windows/comptr-class.md)|Oluşturur bir *akıllı işaretçi* şablon parametresi tarafından belirtilen arabirimi temsil eden tür. ComPtr otomatik olarak bir başvuru sayısı için temel arabirim işaretçisi tutar ve başvuru sayısı sıfır olarak gittiğinde arabirimi serbest bırakır.|  
 |[DeferrableEventArgs Sınıfı](../windows/deferrableeventargs-class.md)|Deferrals için olay bağımsız değişken türleri için kullanılan bir şablon sınıfı.|  
-|[EventSource Sınıfı](../windows/eventsource-class.md)|Bir olayı temsil eder. `EventSource`üye işlevleri eklemek, kaldırmak ve olay işleyicilerini çağırma.|  
+|[EventSource Sınıfı](../windows/eventsource-class.md)|Bir olayı temsil eder. `EventSource` üye işlevleri eklemek, kaldırmak ve olay işleyicilerini çağırma.|  
 |[FtmBase Sınıfı](../windows/ftmbase-class.md)|Ücretsiz iş parçacıklı Sıralayıcı nesneyi temsil eder.|  
 |[Modül Sınıfı](../windows/module-class.md)|İlgili nesneler koleksiyonunu temsil eder.|  
 |[RuntimeClass Sınıfı](../windows/runtimeclass-class.md)|Belirtilen sayıda arabirimleri devralır ve belirtilen Windows çalışma zamanı, klasik COM ve zayıf başvuru desteği sağlar başlatılan bir sınıfı temsil eder.|  

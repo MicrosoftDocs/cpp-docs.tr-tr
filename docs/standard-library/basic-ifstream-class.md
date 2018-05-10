@@ -2,11 +2,8 @@
 title: basic_ifstream sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - fstream/std::basic_ifstream
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - std::basic_ifstream [C++], rdbuf
 - std::basic_ifstream [C++], swap
 ms.assetid: 366cd9a7-efc4-4b7f-ba10-c8271e47ffcf
-caps.latest.revision: 23
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09b4542dd7b2228211f81f96a75d94fae14ab92f
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 7b72b49f545b4ba04c92840cb4d15f2258f08680
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="basicifstream-class"></a>basic_ifstream Sınıfı
 

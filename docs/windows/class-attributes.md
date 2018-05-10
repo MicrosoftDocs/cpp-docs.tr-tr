@@ -1,31 +1,26 @@
 ---
-title: "Sınıf öznitelikleri | Microsoft Docs"
-ms.custom: 
+title: Sınıf öznitelikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - attributes [C++], class attributes
 - class attributes
 ms.assetid: fad04ea1-d8ff-46d4-bb42-2b4500a6ab60
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: afc3f277170dbbdf92f280d341bffb042ab70af2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8a932fdb1ef1d9e2af2acace901feaa95b6216d1
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="class-attributes"></a>Sınıf Öznitelikleri
 Aşağıdaki öznitelikler uygulamak [sınıfı](../cpp/class-cpp.md) C++ anahtar sözcüğü.  
@@ -35,7 +30,7 @@ Aşağıdaki öznitelikler uygulamak [sınıfı](../cpp/class-cpp.md) C++ anahta
 |[toplanabilir](../windows/aggregatable.md)|Sınıf toplama desteklediğini belirtir.|  
 |[toplamlar](../windows/aggregates.md)|Bir denetim hedef sınıf toplayan gösterir.|  
 |[appobject](../windows/appobject.md)|Bir tam .exe uygulamayla ilişkili olan ve bu tür kitaplığında coclass'ı özellikleri ve işlevleri genel olarak kullanılabilir olduğunu gösterir bir uygulama nesnesi olarak coclass'ı tanımlar.|  
-|[durumu](../windows/case-cpp.md)|İle kullanılan [switch_type](../windows/switch-type.md) UNION özniteliği.|  
+|[Durumu](../windows/case-cpp.md)|İle kullanılan [switch_type](../windows/switch-type.md) UNION özniteliği.|  
 |[coclass](../windows/coclass.md)|ActiveX denetimi oluşturur.|  
 |[com_interface_entry](../windows/com-interface-entry-cpp.md)|Bir arabirim giriş COM Haritası ekler.|  
 |[control](../windows/control.md)|Kullanıcı tanımlı tür denetim olduğunu belirtir.|  
@@ -53,7 +48,7 @@ Aşağıdaki öznitelikler uygulamak [sınıfı](../cpp/class-cpp.md) C++ anahta
 |[helpstringcontext](../windows/helpstringcontext.md)|Yardım konusunun Kimliğini bir .hlp veya .chm dosyasında belirtir.|  
 |[helpstring](../windows/helpstring.md)|Uygulandığı öğe tanımlamak için kullanılan bir karakter dizesini belirtir.|  
 |[hidden](../windows/hidden.md)|Öğe var, ancak kullanıcı odaklı bir tarayıcıda görüntülenmemelidir olduğunu gösterir.|  
-|[uygular](../windows/implements-cpp.md)|IDL coclass'ı üyeleri olmaya zorlanıp gönderme arabirimleri belirtir.|  
+|[Uygular](../windows/implements-cpp.md)|IDL coclass'ı üyeleri olmaya zorlanıp gönderme arabirimleri belirtir.|  
 |[implements_category](../windows/implements-category.md)|Sınıfı için uygulanan bileşen kategorileri belirtir.|  
 |[Modülü](../windows/module-cpp.md)|Kitaplık blok .idl dosyasında tanımlar.|  
 |[noncreatable](../windows/noncreatable.md)|Tek başına başlatılamaz bir nesneyi tanımlar.|  
@@ -62,8 +57,8 @@ Aşağıdaki öznitelikler uygulamak [sınıfı](../cpp/class-cpp.md) C++ anahta
 |[requestedit](../windows/requestedit.md)|Özellik desteklediğini gösterir **OnRequestEdit** bildirim.|  
 |[Kaynak](../windows/source-cpp.md)|Denetimin kaynak arabirimleri bağlantı noktaları için bir sınıf üzerinde belirtir. Bir özellik veya yöntem **kaynak** öznitelik gösterir üye bir nesneye veya kaynaklı olayların bir Değişken döndürür.|  
 |[support_error_info](../windows/support-error-info.md)|Hata raporlama için hedef nesne destekler.|  
-|[iş parçacığı oluşturma](../windows/threading-cpp.md)|Bir denetim için iş parçacığı modelini belirtir.|  
-|[UUID](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
+|[İş parçacığı oluşturma](../windows/threading-cpp.md)|Bir denetim için iş parçacığı modelini belirtir.|  
+|[uuid](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
 |[Sürüm](../windows/version-cpp.md)|Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımlar.|  
 |[vi_progid](../windows/vi-progid.md)|Sürüm bağımsız form ProgID belirtir.|  
   

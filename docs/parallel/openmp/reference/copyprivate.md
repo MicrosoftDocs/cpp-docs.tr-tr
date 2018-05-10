@@ -1,12 +1,9 @@
 ---
 title: copyprivate | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - copyprivate
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - copyprivate OpenMP clause
 ms.assetid: 02c0209d-abe8-4797-8365-a82b53c3f15d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ed78f73edce6b84f53b8fe61199d4b75a40ee57
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 96b1516970afb8729dc4e35c2226eb6ff00f5c2e
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="copyprivate"></a>copyprivate
 Bir veya daha fazla değişken tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.  

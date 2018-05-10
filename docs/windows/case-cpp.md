@@ -1,13 +1,10 @@
 ---
 title: Durum (C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.case
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - case attribute
 ms.assetid: 6fb883c3-0526-4932-a901-b4564dcaeb7d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: adacffa4dbce4cc908c393cb5019375234e9ff85
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 30d665861688054a4f6b7491f449014afe646c71
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="case-c"></a>durum (C++)
 İle kullanılan [switch_type](../windows/switch-type.md) özniteliğini bir **UNION**.  
@@ -83,7 +78,7 @@ struct SizedValue2 {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Üye bir **sınıfı** veya`struct`|  
+|**Uygulandığı öğe:**|Üye bir **sınıfı** veya `struct`|  
 |**Yinelenebilir**|Hayır|  
 |**Gerekli öznitelikler**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  

@@ -2,28 +2,23 @@
 title: task_options sınıfı (eşzamanlılık çalışma zamanı) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - ppltasks/concurrency::task_options
 dev_langs:
 - C++
 ms.assetid: f93d146b-70f7-46ec-8c2f-c33b8bb0af69
-caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ad83e9e0a871ddc2d8f2c767cb0690da1e6f349
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: b01d9d5308590bead126cd623b7da0468f0df60f
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="taskoptions-class-concurrency-runtime"></a>task_options Sınıfı (Eşzamanlılık Çalışma Zamanı)
 Bir görev oluşturmak için izin verilen seçeneklerini temsil eder  
@@ -46,13 +41,13 @@ class task_options;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[task_options::get_cancellation_token Method (Concurrency Runtime)](#get_cancellation_token)|İptal belirtecini döndürür|  
-|[task_options::get_continuation_context Method (Concurrency Runtime)](#get_continuation_context)|Devamlılık bağlamını döndürür|  
+|[task_options::get_cancellation_token metodu (eşzamanlılık çalışma zamanı)](#get_cancellation_token)|İptal belirtecini döndürür|  
+|[task_options::get_continuation_context metodu (eşzamanlılık çalışma zamanı)](#get_continuation_context)|Devamlılık bağlamını döndürür|  
 |[task_options::get_scheduler metodu (eşzamanlılık çalışma zamanı)](#get_scheduler)|Zamanlayıcı döndürür|  
 |[task_options::has_cancellation_token yöntemi (eşzamanlılık çalışma zamanı)](#has_cancellation_token)|Bir iptal belirteci kullanıcı tarafından belirtilen olup olmadığını gösterir|  
 |[task_options::has_scheduler yöntemi (eşzamanlılık çalışma zamanı)](#has_scheduler)|Bir zamanlayıcı n kullanıcı tarafından belirtilen olup olmadığını gösterir|  
-|[task_options::set_cancellation_token Method (Concurrency Runtime)](#set_cancellation_token)|Verilen belirteç seçeneklerinde ayarlar|  
-|[task_options::set_continuation_context Method (Concurrency Runtime)](#set_continuation_context)|Verilen devamlılık bağlamı seçeneklerinde ayarlar|  
+|[task_options::set_cancellation_token yöntemi (eşzamanlılık çalışma zamanı)](#set_cancellation_token)|Verilen belirteç seçeneklerinde ayarlar|  
+|[task_options::set_continuation_context yöntemi (eşzamanlılık çalışma zamanı)](#set_continuation_context)|Verilen devamlılık bağlamı seçeneklerinde ayarlar|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `task_options`  

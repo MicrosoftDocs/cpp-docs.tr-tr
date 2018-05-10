@@ -1,28 +1,23 @@
 ---
-title: "C + da özgü uzantılar +/ CLI | Microsoft Docs"
-ms.custom: 
+title: C + da özgü uzantılar +/ CLI | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 81e3fd32-6c8f-490b-9190-a6dc291545c8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 620be2dbb0dcd5d5c1febc5e0b2137756e0ea4f0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 52878c4b76f4aa6e11745bdaa4b994d93c842166
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="extensions-that-are-specific-to-ccli"></a>C++/CLI'ya Özgü Uzantılar
 Bu belgelere bölümünde açıklanmıştır, aşağıdaki dil özellikleri yalnızca C + uygulamak +/ CLI.  

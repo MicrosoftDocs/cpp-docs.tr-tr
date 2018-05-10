@@ -1,13 +1,10 @@
 ---
-title: "Sınıflar ve yapılar (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: Sınıflar ve yapılar (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - value struct keyword [C++]
 - ref struct keyword [C++]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8d75bc7f0935ef7444d37f3708379598a549417e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9863786e5e017b69217f984e3aa6d1db597e74d3
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="classes-and-structs--c-component-extensions"></a>Sınıflar ve Yapılar (C++ Bileşen Uzantıları)
 Sınıfta veya yapı bildirir, *nesne ömrü* otomatik olarak yönetilir. Nesne artık erişilebilir değil veya kapsam dışında olduğunda Visual C++ nesnesine ayrılan bellek otomatik olarak atar.  
@@ -52,7 +47,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
  *class_access* (isteğe bağlı)  
  Sınıf veya yapı derleme dışına erişilebilirliğini. Olası değerler şunlardır: **ortak** ve `private` (`private` varsayılandır). İç içe geçmiş sınıflar ya da yapının olamaz bir *class_access* tanımlayıcısı.  
   
- *adı*  
+ *Adı*  
  Sınıf veya yapı adı.  
   
  *Değiştirici* (isteğe bağlı)  

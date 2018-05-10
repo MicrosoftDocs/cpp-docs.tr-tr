@@ -1,12 +1,9 @@
 ---
-title: "CurrentScheduler sınıfı | Microsoft Docs"
-ms.custom: 
+title: CurrentScheduler sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - CurrentScheduler
@@ -26,17 +23,15 @@ dev_langs:
 helpviewer_keywords:
 - CurrentScheduler class
 ms.assetid: 31c20e0e-4cdf-49b4-8220-d726130aad2b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d973b9ad7c5c7f81b5db85b3f8c5ccc49b5049b0
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 71ca69f645e548b1913904f692eb1c5fae167a9a
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="currentscheduler-class"></a>CurrentScheduler Sınıfı
 Bir Özet arama bağlamla ilişkili geçerli Zamanlayıcı temsil eder.  
@@ -56,11 +51,11 @@ class CurrentScheduler;
 |[Oluşturma](#create)|Tarafından davranışı açıklanan yeni bir zamanlayıcı oluşturur `_Policy` parametre ve arama bağlamına ekler. Yeni oluşturulan Zamanlayıcı arama bağlamı için geçerli Zamanlayıcı olur.|  
 |[CreateScheduleGroup](#createschedulegroup)|Fazla Yüklendi. Arama bağlamla ilişkili Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. Parametresi alan sürüm `_Placement` görevleri bu parametresi tarafından belirtilen konumda yürütme doğrultusunda ağırlıklı için yeni oluşturulan zamanlama grubundaki neden olur.|  
 |[Detach](#detach)|Arama bağlamından geçerli Zamanlayıcı ayırır ve varsa, daha önce eklenen Zamanlayıcısı geçerli Zamanlayıcı olarak geri yükler. Bu yöntem döndükten sonra çağıran bağlamını sonra kullanarak içeriği önceden iliştirilmiş zamanlayıcısı tarafından yönetilen `CurrentScheduler::Create` veya `Scheduler::Attach` yöntemi.|  
-|[Get](#get)|Bir işaretçi geçerli Zamanlayıcı da adlandırılan çağıran bağlamını ilişkili Zamanlayıcı döndürür.|  
+|[Al](#get)|Bir işaretçi geçerli Zamanlayıcı da adlandırılan çağıran bağlamını ilişkili Zamanlayıcı döndürür.|  
 |[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Arama bağlamla ilişkili Zamanlayıcı için geçerli sanal işlemci sayısını döndürür.|  
 |[GetPolicy](#getpolicy)|Geçerli Zamanlayıcı ile oluşturulduğundan İlkesi kopyasını döndürür.|  
-|[Id](#id)|Geçerli Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|  
-|[IsAvailableLocation](#isavailablelocation)|Belirtilen konum geçerli Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.|  
+|[Kimliği](#id)|Geçerli Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|  
+|[Isavailablelocation](#isavailablelocation)|Belirtilen konum geçerli Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.|  
 |[RegisterShutdownEvent](#registershutdownevent)|Windows olay işleyici geçirilen nedenler `_ShutdownEvent` geçerli bağlamla ilişkili Zamanlayıcı kapanır ve kendisini bozar bildirilmesini parametresi. Olay işaret zamanında Zamanlayıcı için zamanlanan tüm iş tamamlanır. Birden fazla kapatma olayları bu yöntemle kaydedilebilir.|  
 |[ScheduleTask](#scheduletask)|Fazla Yüklendi. Arama bağlamla ilişkili Zamanlayıcı içinde hafif görev zamanlar. Hafif görev çalışma zamanı tarafından belirlenen bir zamanlama grubunda yer alır. Parametresi alan sürüm `_Placement` görev belirtilen konumda yürütme doğrultusunda ağırlıklı neden olur.|  
   
@@ -75,7 +70,7 @@ class CurrentScheduler;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="create">Oluşturma</a> 
+##  <a name="create"></a> Oluşturma 
 
  Tarafından davranışı açıklanan yeni bir zamanlayıcı oluşturur `_Policy` parametre ve arama bağlamına ekler. Yeni oluşturulan Zamanlayıcı arama bağlamı için geçerli Zamanlayıcı olur.  
   

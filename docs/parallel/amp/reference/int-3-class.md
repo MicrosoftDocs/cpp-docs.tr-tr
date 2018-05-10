@@ -1,12 +1,9 @@
 ---
-title: "int_3 sınıfı | Microsoft Docs"
-ms.custom: 
+title: int_3 sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_3::get_x
@@ -81,17 +78,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: d4af182f-30f1-455c-b16d-aa99cd314038
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d66a71701fb0806dbd93490587a9e0d8b3af46fe
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 26add4a57fac2cb2dfed2a5bd32f2fe0a477e938
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="int3-class"></a>int_3 Sınıfı
 Kısa bir vektör üç tamsayıların temsil eder.  
@@ -164,18 +159,18 @@ class int_3;
 |int_3::operator-||  
 |int_3::operator--||  
 |int_3::operator%=||  
-|int_3::operator&=||  
-|int_3::operator*=||  
-|int_3::operator/=||  
+|int_3::operator & =||  
+|int_3::operator * =||  
+|int_3::operator ve =||  
 |int_3::operator^=||  
 |int_3::operator&#124;=||  
-|int_3::operator~||  
-|int_3::operator++||  
-|int_3::operator+=||  
+|int_3::operator ~||  
+|int_3::operator ++||  
+|int_3::operator +=||  
 |int_3::operator <\<=||  
 |int_3::operator=||  
 |int_3::operator-=||  
-|int_3::operator>>=||  
+|int_3::operator >> =||  
   
 ### <a name="public-constants"></a>Genel sabitler  
   
@@ -195,7 +190,7 @@ class int_3;
 |int_3::g||  
 |int_3::gb||  
 |int_3::gbr||  
-|int_3::gr||  
+|int_3::Gr||  
 |int_3::grb||  
 |int_3::r||  
 |int_3::rb||  

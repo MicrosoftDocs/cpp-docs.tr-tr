@@ -1,13 +1,10 @@
 ---
-title: "Yeni bir iletişim kutusu oluşturma | Microsoft Docs"
-ms.custom: 
+title: Yeni bir iletişim kutusu oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.dialog
 dev_langs:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - dialog boxes, creating
 - Dialog editor, creating dialog boxes
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1c23021e6e91d7097b1989c486d053bed3a8421b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 49e0fe5ddf8b54078e8578396d2ed41ebd15da66
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="creating-a-new-dialog-box"></a>Yeni İletişim Kutusu Oluşturma
 ### <a name="to-create-a-new-dialog-box"></a>Yeni bir iletişim kutusu oluşturmak için  

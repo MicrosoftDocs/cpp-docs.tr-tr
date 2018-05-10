@@ -2,11 +2,8 @@
 title: _ITERATOR_DEBUG_LEVEL | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - _ITERATOR_DEBUG_LEVEL
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - _ITERATOR_DEBUG_LEVEL
 ms.assetid: 718549cd-a9a9-4ab3-867b-aac00b321e67
-caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b317358a00879d4430b94ea29ab547761044e56
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 7219ed039e77d0857151c54e73a03a0d1f6a3f5e
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="iteratordebuglevel"></a>_ITERATOR_DEBUG_LEVEL
 

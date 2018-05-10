@@ -1,13 +1,10 @@
 ---
-title: "Nasıl yapılır: kaynak şablonlarını kullanma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: kaynak şablonlarını kullanma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,18 +16,16 @@ helpviewer_keywords:
 - resources [Visual Studio], templates
 - .rct files
 ms.assetid: bdfe7060-f98e-4859-8285-9c8570360e9d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9bace4f6d8835d9aece7679fa1bb89af3d7a20ed
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 534a86d10a4bcbc34e6cef29fbb77d7caa2c64b9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="how-to-use-resource-templates"></a>Nasıl Yapılır: Kaynak Şablonlarını Kullanma
 Kaynak şablon bir .rct dosyası olarak kaydettiğiniz özelleştirilmiş bir kaynaktır. Bir kaynak şablonu diğer kaynakları oluşturmak için bir başlangıç noktası olarak hizmet verebilir. Kaynak şablonları, ek kaynaklar veya standart denetimler gibi özellikleri ve diğer yinelenen öğeleri paylaşan kaynak grupları geliştirmede zaman kazandırır. Örneğin, bir Yardım düğmesi ve bir şirket logosu, bir simge birkaç iletişim kutularında eklemek isteyebilirsiniz. Böylece hızlı bir şekilde yapmak için yeni bir iletişim kutusu şablonu oluşturun ve logo ve Yardım düğmesini özelleştirme.  
@@ -61,7 +56,7 @@ Kaynak şablon bir .rct dosyası olarak kaydettiğiniz özelleştirilmiş bir ka
   
 1.  [Tek başına bir dosya olarak .rc dosyasını açın](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).  
   
-2.  Üzerinde **dosya** menüsünde tıklatın  **kaydetmek \<* , filename*> olarak **.  
+2.  Üzerinde **dosya** menüsünde tıklatın **kaydetmek \< *, filename*> olarak**.  
   
 3.  Bir konum belirtin ve tıklatın **Tamam**.  
   

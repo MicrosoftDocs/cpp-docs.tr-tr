@@ -1,6 +1,6 @@
 ---
 title: fenv_access | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/12/2018
 ms.technology:
 - cpp-tools
@@ -16,14 +16,13 @@ helpviewer_keywords:
 ms.assetid: 2ccea292-0ae4-42ce-9c67-cc189299857b
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e19b4b3f1fd71d61609648f587dee9aac31e6f6
-ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
+ms.openlocfilehash: f74f20b1dcb20c1449d21e91181f8bfb17075b7e
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="fenvaccess"></a>fenv_access
 

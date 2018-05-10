@@ -2,11 +2,8 @@
 title: '&lt;oranı&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - ratio/std::mega
@@ -40,17 +37,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 8543e912-2d84-45ea-b3c0-bd7bfacee405
-caps.latest.revision: 14
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f91c3914a935c1882500ba8462b16dd6b08f5f13
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 1a5ffa7666f9b976312bf1c3115d93204bdd8f8a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltratiogt"></a>&lt;Oranı&gt;
 

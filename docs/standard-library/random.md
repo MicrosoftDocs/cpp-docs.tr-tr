@@ -2,11 +2,8 @@
 title: '&lt;rastgele&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 08/24/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - <random>
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - random header
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
-caps.latest.revision: 58
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aadd1e3a17b4035336cee2da39bccae1e79f2b36
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: bdfae58c03d18638ad44f844909d585b41d710cd
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltrandomgt"></a>&lt;Rastgele&gt;
 

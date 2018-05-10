@@ -1,12 +1,9 @@
 ---
 title: zamanlama | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - schedule
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - schedule OpenMP clause
 ms.assetid: 286f1fc3-6598-4837-b4c8-8b1fa3193965
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc2a91a87504b72ddbd296e31516608451286b04
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: d00db7daf5c2c9882c1d54ac054ee285de1fdac4
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="schedule"></a>zamanlama
 Uygulandığı öğe [için](../../../parallel/openmp/reference/for-openmp.md) yönergesi.  

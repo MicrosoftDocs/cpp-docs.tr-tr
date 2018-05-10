@@ -1,12 +1,9 @@
 ---
-title: "join sınıfı | Microsoft Docs"
-ms.custom: 
+title: join sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - join
@@ -25,17 +22,15 @@ dev_langs:
 helpviewer_keywords:
 - join class
 ms.assetid: d2217119-70a1-40b6-809f-c1c13a571c3f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ee69daa9ec5570d89d407c980e4ff20deca6360
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: a37b6d3dce5d41578999aa54c8dff2dd2271fe9e
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="join-class"></a>join Sınıfı
 A `join` ileti bloğu bir tek-hedef, çok kaynaklı, sıralı `propagator_block` bir araya getiren birlikte türden iletileri `T` her kaynaklarının.  
@@ -62,7 +57,7 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[join](#ctor)|Fazla Yüklendi. Oluşturan bir `join` ileti bloğu.|  
+|[Birleştirme](#ctor)|Fazla Yüklendi. Oluşturan bir `join` ileti bloğu.|  
 |[~join Destructor](#dtor)|Bozar `join` bloğu.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
@@ -74,9 +69,9 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 |[link_target_notification](#link_target_notification)|Yeni bir hedef için bağlayana olduğunu bildiren bir geri çağırma `join` ileti bloğu.|  
 |[propagate_message](#propagate_message)|Zaman uyumsuz olarak bir iletiden geçirmeden bir `ISource` bu bloğuna `join` ileti bloğu. Tarafından çağrılan `propagate` kaynak bloğu tarafından çağrıldığında yöntemi.|  
 |[propagate_to_any_targets](#propagate_to_any_targets)|Tüm bir ileti yayılan her kaynaktan gelen bir giriş iletisi içeren bir çıktı iletisi oluşturur. Her hedeflerine gönderir Bu çıktı iletisi.|  
-|[release_message](#release_message)|Bir önceki iletiyi ayırma serbest bırakır. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
-|[reserve_message](#reserve_message)|Daha önce bu tarafından sunulan bir ileti ayırır `join` ileti bloğu. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
-|[resume_propagation](#resume_propagation)|Bir ayırma serbest bırakıldıktan sonra yayma sürdürür. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
+|[release_message](#release_message)|Bir önceki iletiyi ayırma serbest bırakır. (Geçersiz kılmaları [source_block::release_message](source-block-class.md#release_message).)|  
+|[reserve_message](#reserve_message)|Daha önce bu tarafından sunulan bir ileti ayırır `join` ileti bloğu. (Geçersiz kılmaları [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[resume_propagation](#resume_propagation)|Bir ayırma serbest bırakıldıktan sonra yayma sürdürür. (Geçersiz kılmaları [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).  
@@ -179,7 +174,7 @@ join(
   
  Türü `filter_method` functor imzaya sahip olduğu `bool (T const &)` hangi çağrılır bu tarafından `join` sunulan iletisine kabul etmelidir olup olmadığını belirlemek için ileti bloğu.  
   
-##  <a name="dtor"></a> ~join 
+##  <a name="dtor"></a> ~ Birleştirme 
 
  Bozar `join` bloğu.  
   

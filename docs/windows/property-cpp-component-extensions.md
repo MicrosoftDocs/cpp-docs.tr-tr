@@ -1,13 +1,10 @@
 ---
-title: "özellik (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: özellik (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - property_cpp
 - property
@@ -16,18 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - property keyword [C++]
 ms.assetid: cc79d2b2-f013-4d81-8252-eece97a18704
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b9d310043a2693eaef254256385becc0bcc7d501
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b763131fe91e2df2385f2c06bcba8bc759d695a1
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="property--c-component-extensions"></a>özellik (C++ Bileşen Uzantıları)
 Bildiren bir *özelliği*, davranır ve bir veri üyesi veya bir dizi öğesine gibi erişilen üye işlevi değil.  
@@ -124,7 +119,7 @@ modifier property type default[index];
  *Değiştirici*  
  Özellik bildirimi ya da bir get/set erişimcisi yöntemi kullanılabilir değiştiricisi. Olası değerler şunlardır: `static` ve `virtual`.  
   
- *türü*  
+ *Türü*  
  Özelliği tarafından temsil edilen değerin türü.  
   
  *property_name*  
@@ -169,7 +164,7 @@ modifier property type default[index];
   
  Farklı erişilebilirlik özelliği bloğundaki erişimci yöntemleri için izin verilir.  Diğer bir deyişle, ayarlama yöntemi ortak olabilir ve get yöntemini özel olabilir.  Ancak, bir hata bildiriminde özellik nedir daha az kısıtlayıcı bir erişilebilirlik sağlamak bir erişimci yöntemi için gerekir.  
   
- `property`bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
+ `property` bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
   
   
 ### <a name="requirements"></a>Gereksinimler  

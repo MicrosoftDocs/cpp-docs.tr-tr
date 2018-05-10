@@ -1,13 +1,10 @@
 ---
-title: "Windows Masaüstü uygulamaları (C++) | Microsoft Docs"
-ms.custom: 
+title: Windows Masaüstü uygulamaları (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vcplatformsdk
 dev_langs:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - Visual C++, Windows applications
 - Windows applications [C++], about creating Windows applications
 ms.assetid: be15855a-fa3f-41e9-89cd-41b9484ebfdb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 142019b10f7108934e5cd7d6de9e987eaab5a5dc
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: f9e24921a2a33ab31a9a5e6b7c3a33dbfec6c47e
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="windows-desktop-applications-c"></a>Windows Masaüstü uygulamaları (C++)
 Bu bölümde bir penceresinde çalıştırın C++ masaüstü uygulamalarının nasıl oluşturulacağını açıklar.  
@@ -50,5 +45,5 @@ Bu bölümde bir penceresinde çalıştırın C++ masaüstü uygulamalarının n
 -   [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++ in Visual Studio](../visual-cpp-in-visual-studio.md)
+ [Visual Studio'da Visual C++](../visual-cpp-in-visual-studio.md)
 

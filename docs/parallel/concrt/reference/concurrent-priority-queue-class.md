@@ -1,12 +1,9 @@
 ---
-title: "concurrent_priority_queue sınıfı | Microsoft Docs"
-ms.custom: 
+title: concurrent_priority_queue sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - concurrent_priority_queue
@@ -24,17 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - concurrent_priority_queue class
 ms.assetid: 3e740381-0f4e-41fc-8b66-ad0bb55f17a3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16a9114278cd9559a0a21191faeb87ee34b5a5df
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: ed193eea8209611640b6d125d79ffec1748a7f7f
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="concurrentpriorityqueue-class"></a>concurrent_priority_queue Sınıfı
 `concurrent_priority_queue` Sınıfı eş zamanlı gönderme ve pop öğeleri için birden çok iş parçacığı sağlayan bir kapsayıcıdır. Öğeleri, öncelik şablon bağımsız değişken sağlanan bir functor tarafından belirlendiği öncelik sırasına Sil'i.  
@@ -82,7 +77,7 @@ template <typename T,
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Temizle](#clear)|Tüm öğeleri eşzamanlı öncelik siler. Bu yöntem eşzamanlılık uyumlu değil.|  
-|[empty](#empty)|Eş zamanlı öncelik sırası aynı anda boşsa, testleri, bu yöntem çağrılır. Bu yöntem eşzamanlılık güvenlidir.|  
+|[boş](#empty)|Eş zamanlı öncelik sırası aynı anda boşsa, testleri, bu yöntem çağrılır. Bu yöntem eşzamanlılık güvenlidir.|  
 |[get_allocator](#get_allocator)|Eş zamanlı öncelik sırası oluşturmak için kullanılan ayırıcısı kopyasını döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
 |[push](#push)|Fazla Yüklendi. Bir öğenin eşzamanlı öncelik sırasına ekler. Bu yöntem eşzamanlılık güvenlidir.|  
 |[Boyutu](#size)|Eşzamanlı öncelik sırasındaki öğe sayısını döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
@@ -106,7 +101,7 @@ template <typename T,
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="clear">Temizle</a> 
+##  <a name="clear"></a> Temizle 
 
  Tüm öğeleri eşzamanlı öncelik siler. Bu yöntem eşzamanlılık uyumlu değil.  
   
@@ -234,7 +229,7 @@ void push(value_type&& _Elem);
  `_Elem`  
  Eş zamanlı öncelik sırasına eklenecek öğe.  
   
-##  <a name="size">Boyutu</a> 
+##  <a name="size"></a> Boyutu 
 
  Eşzamanlı öncelik sırasındaki öğe sayısını döndürür. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -248,7 +243,7 @@ size_type size() const;
 ### <a name="remarks"></a>Açıklamalar  
  İşlev çağrıları tarafından eklenen tüm öğeleri dahil etmek için döndürülen boyutu garanti `push`. Ancak, sonuçlarını eşzamanlı işlem bekleyen yansıtmayabilir.  
   
-##  <a name="swap">Değiştirme</a> 
+##  <a name="swap"></a> Değiştirme 
 
  İki eşzamanlı öncelik sırası içeriğini değiştirir. Bu yöntem eşzamanlılık uyumlu değil.  
   

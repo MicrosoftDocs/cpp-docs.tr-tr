@@ -1,12 +1,9 @@
 ---
-title: "bölge, endregion | Microsoft Docs"
-ms.custom: 
+title: bölge, endregion | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vc-pragma.endregion
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - endregion pragma
 - region pragma
 ms.assetid: c697f807-622f-4796-851b-68a42bbecd84
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1fda2aba5fdb0aa83066c1762822bfce5fc5f6b4
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 5590d2b251d86a9d20b62bfdb3d5bf929e3d92d4
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="region-endregion"></a>region, endregion
 **#pragma bölge** Genişlet veya daralt kullanırken kod bloğu belirtmenizi sağlar [özelliği anahat oluşturma](/visualstudio/ide/outlining) Visual Studio Kod Düzenleyicisi'nin.  

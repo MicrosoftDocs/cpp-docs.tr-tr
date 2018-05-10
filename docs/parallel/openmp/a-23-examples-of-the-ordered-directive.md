@@ -1,27 +1,22 @@
 ---
-title: "Sıralı yönergesi A.23 örnekleri | Microsoft Docs"
-ms.custom: 
+title: Sıralı yönergesi A.23 örnekleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: f8fa761b-7fc5-4447-95f9-8571e9ca31bf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83d77bb4f064a7ee69b013b36de919b57486b3e8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 37cc4ea9db8cbd1a7bf095e2bde0ae482053a584
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="a23---examples-of-the-ordered-directive"></a>A.23   ordered Yönergesi Örnekleri
 Birden çok sıralı bölümlerle olması mümkündür bir `for` ile belirtilen `ordered` yan tümcesi. İlk örnek uyumsuz olduğundan API aşağıdaki belirtir:  

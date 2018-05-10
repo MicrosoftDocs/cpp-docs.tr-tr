@@ -1,27 +1,22 @@
 ---
-title: "Hızlandırıcı ve accelerator_view nesnelerini kullanma | Microsoft Docs"
-ms.custom: 
+title: Hızlandırıcı ve accelerator_view nesnelerini kullanma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-amp
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 18f0dc66-8236-4420-9f46-1a14f2c3fba1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8cc676407a88979679a362b3d36f361614524432
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 9e0f86467de8256eaecbfbf42765de551a1e2f6e
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="using-accelerator-and-acceleratorview-objects"></a>Hızlandırıcı ve accelerator_view Nesnelerini Kullanma
 Kullanabileceğiniz [hızlandırıcı](../../parallel/amp/reference/accelerator-class.md) ve [accelerator_view](../../parallel/amp/reference/accelerator-view-class.md) sınıfları cihaz veya öykünücü C++ AMP kodunuzu çalıştırmak için belirtin. Bir sistem birkaç aygıtları veya bellek, paylaşılan bellek desteğini, hata ayıklama desteği veya çift duyarlıklı destek miktarına göre farklılık Öykünücüler olabilir. C++ hızlandırılmış yoğun paralellik (C++ AMP) kullanılabilir Hızlandırıcıları inceleyin, varsayılan olarak ayarlayın, birden çok çağrılar parallel_for_each için birden çok accelerator_views belirtin ve özel hata ayıklama görevleri gerçekleştirmek için kullanabileceğiniz API'ler sağlar.  

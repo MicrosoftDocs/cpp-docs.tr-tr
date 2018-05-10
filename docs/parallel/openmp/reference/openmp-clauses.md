@@ -1,27 +1,22 @@
 ---
-title: "OpenMP yan tümceleri | Microsoft Docs"
-ms.custom: 
+title: OpenMP yan tümceleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 806e7d8f-b204-4e4c-a12c-273ab540a7ca
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a63dacb8da2b7c4b1c7264cfccc6d2839db1b8b1
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 7abe5a637a2a32c696f19f5ab9988f1be361f647
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="openmp-clauses"></a>OpenMP Yan Tümceleri
 OpenMP API çağrısında kullanılan yan tümceleri bağlantılar sağlar.  
@@ -34,7 +29,7 @@ OpenMP API çağrısında kullanılan yan tümceleri bağlantılar sağlar.
 |[copyprivate](../../../parallel/openmp/reference/copyprivate.md)|Bir veya daha fazla değişken tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.|  
 |[default](../../../parallel/openmp/reference/default-openmp.md)|Paralel bir bölgede dizininden kapsam dışı değişkenleri davranışını belirtir.|  
 |[firstprivate](../../../parallel/openmp/reference/firstprivate.md)|Paralel yapı önce mevcut olduğundan her iş parçacığı bir değişken örneğini olmalıdır ve değişkeni değişken değeri ile başlatılmış olduğunu belirtir.|  
-|[if](../../../parallel/openmp/reference/if-openmp.md)|Döngü paralel veya seri gerçekleştirilip gerçekleştirilmeyeceğini belirtir.|  
+|[Eğer](../../../parallel/openmp/reference/if-openmp.md)|Döngü paralel veya seri gerçekleştirilip gerçekleştirilmeyeceğini belirtir.|  
 |[lastprivate](../../../parallel/openmp/reference/lastprivate.md)|Değişkeni kapsayan bağlamın sürümünü son yineleme (döngü için yapı) ya da son Kısım (#pragma bölümleri) hangi iş parçacığı yürütür özel sürümü için eşit olarak ayarlanır belirtir.|  
 |[nowait](../../../parallel/openmp/reference/nowait.md)|Bir yönerge örtük engel geçersiz kılar.|  
 |[num_threads](../../../parallel/openmp/reference/num-threads.md)|İş parçacığı sayısı, iş parçacığı ekip olarak ayarlar.|  

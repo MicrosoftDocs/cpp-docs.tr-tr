@@ -2,11 +2,8 @@
 title: SimpleActivationFactory sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::SimpleActivationFactory
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - SimpleActivationFactory class
 ms.assetid: aff768e0-0038-4fd7-95d2-ad7d308da41c
-caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0f6aabaae1e19fef3631e372391c81108f212c90
-ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
+ms.openlocfilehash: 2d10544a08fa6faebb1434cd00ca80ac30d4570a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="simpleactivationfactory-class"></a>SimpleActivationFactory Sınıfı
 Windows çalışma zamanı veya klasik COM temel sınıf oluşturmak için temel bir mekanizma sağlar.  

@@ -1,12 +1,9 @@
 ---
-title: "Iexecutionresource yapısı | Microsoft Docs"
-ms.custom: 
+title: Iexecutionresource yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - IExecutionResource
@@ -20,17 +17,15 @@ dev_langs:
 helpviewer_keywords:
 - IExecutionResource structure
 ms.assetid: 6b27042b-b98c-4f7f-b831-566950af84cd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb4ad0b6f9038d78ae94b5ab1dcb148ebd628edc
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: dc69c30f30d25179427ee8e59c536bb7cb5b483d
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="iexecutionresource-structure"></a>IExecutionResource Yapısı
 Bir donanım iş parçacığı için bir Özet.  
@@ -47,10 +42,10 @@ struct IExecutionResource;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[IExecutionResource::CurrentSubscriptionLevel](#currentsubscriptionlevel)|Etkinleştirilen sanal işlemci sayısı kökleri ve şu anda bu yürütme kaynak temsil eden temel alınan donanım iş parçacığı ile ilişkili dış iş parçacıkları abone döndürür.|  
+|[Iexecutionresource::currentsubscriptionlevel](#currentsubscriptionlevel)|Etkinleştirilen sanal işlemci sayısı kökleri ve şu anda bu yürütme kaynak temsil eden temel alınan donanım iş parçacığı ile ilişkili dış iş parçacıkları abone döndürür.|  
 |[IExecutionResource::GetExecutionResourceId](#getexecutionresourceid)|Bu yürütme kaynak temsil eden donanım iş parçacığı için benzersiz bir tanımlayıcı döndürür.|  
 |[IExecutionResource::GetNodeId](#getnodeid)|Bu yürütme kaynağa ait işlemci düğümü için benzersiz bir tanımlayıcı döndürür.|  
-|[IExecutionResource::Remove](#remove)|Bu yürütme kaynak Resource Manager döndürür.|  
+|[Iexecutionresource::Remove](#remove)|Bu yürütme kaynak Resource Manager döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Yürütme kaynaklar sanal işlemci kökleri ile ilişkili veya tek başına olabilir. Bir iş parçacığı, uygulamanızdaki bir iş parçacığı abonelik oluşturduğunda, bir tek başına yürütme kaynak oluşturulur. Yöntemleri [ISchedulerProxy::SubscribeThread](ischedulerproxy-structure.md#subscribecurrentthread) ve [Ischedulerproxy::requestınitialvirtualprocessors](ischedulerproxy-structure.md#requestinitialvirtualprocessors) iş parçacığı abonelikleri oluşturma ve geri dönüp bir `IExecutionResource` arabirimi temsil eden aboneliği. Bir iş parçacığı abonelik oluşturmak için Zamanlayıcı'yı Kaynak Yöneticisi'ni atar sanal işlemci kökleri birlikte bir zamanlayıcı için belirli bir iş parçacığı iş katılacak olan Kaynak Yöneticisi'ni bildirmek için bir yol sıraya olur. Resource Manager bunu yapabileceğiniz donanım iş parçacığı oversubscribing önlemek için bilgileri kullanır.  
@@ -63,7 +58,7 @@ struct IExecutionResource;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="currentsubscriptionlevel"></a>  IExecutionResource::CurrentSubscriptionLevel Method  
+##  <a name="currentsubscriptionlevel"></a>  Iexecutionresource::currentsubscriptionlevel yöntemi  
  Etkinleştirilen sanal işlemci sayısı kökleri ve şu anda bu yürütme kaynak temsil eden temel alınan donanım iş parçacığı ile ilişkili dış iş parçacıkları abone döndürür.  
   
 ```
@@ -82,7 +77,7 @@ virtual unsigned int CurrentSubscriptionLevel() const = 0;
   
  Resource Manager kaynakları zamanlayıcılar arasında taşımak ne zaman belirlemek üzere yollarından biri olarak abonelik düzeyi bilgileri kullanır.  
   
-##  <a name="getexecutionresourceid"></a>  IExecutionResource::GetExecutionResourceId Method  
+##  <a name="getexecutionresourceid"></a>  Iexecutionresource::getexecutionresourceıd yöntemi  
  Bu yürütme kaynak temsil eden donanım iş parçacığı için benzersiz bir tanımlayıcı döndürür.  
   
 ```

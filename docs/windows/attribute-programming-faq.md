@@ -1,13 +1,10 @@
 ---
-title: "Öznitelik programlama SSS | Microsoft Docs"
-ms.custom: 
+title: Öznitelik programlama SSS | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - attributes [C++], frequently asked questions
 - FAQs (frequently asked questions), attributed programming [C++]
 ms.assetid: a1b8349f-7f51-43c4-95ea-4edb6e5f243f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 76b7ad2c7acb9d232602c620a70cefabbecee531
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 35b57c8813778cf0bbf8efbfcbee8466074b87f0
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="attribute-programming-faq"></a>Öznitelik Programlama SSS
 Bu konuda aşağıdaki sık sorulan sorular yanıtlanmaktadır:  
@@ -49,7 +44,7 @@ Bu konuda aşağıdaki sık sorulan sorular yanıtlanmaktadır:
   
 -   [Ayrıca öznitelikler kullanan bir sınıfından türetilen bir sınıf öznitelikleri kullanabilir miyim?](#vcconcaniuseattributesonclassderivedfromclassthatalsousesattributesanchor)  
   
-##  <a name="vcconattributeprogrammmingfaqanchor1"></a>HRESULT nedir?  
+##  <a name="vcconattributeprogrammmingfaqanchor1"></a> HRESULT nedir?  
  Bir `HRESULT` genellikle dönüş değeri olarak öznitelikleri ve ATL tarafından genel olarak kullanılan bir basit veri türü. Aşağıdaki tabloda, çeşitli değerleri açıklanmaktadır. Daha fazla değer üstbilgi dosyası Winerror.h'de içinde yer alır.  
   
 |Ad|Açıklama|Değer|  
@@ -66,7 +61,7 @@ Bu konuda aşağıdaki sık sorulan sorular yanıtlanmaktadır:
 |E_FAIL|Belirtilmeyen hata|0x80004005|  
 |E_ACCESSDENIED|Genel erişim reddedildi hatası|0x80070005|  
   
-##  <a name="vcconattributeprogrammmingfaqanchor2"></a>Bir öznitelik için parametre adı belirtmek ne zaman var mı?  
+##  <a name="vcconattributeprogrammmingfaqanchor2"></a> Bir öznitelik için parametre adı belirtmek ne zaman var mı?  
  Çoğu durumda, tek bir parametre özniteliğine sahipse, bu parametrenin adı verilir. Bu ad, öznitelik kodunuzda eklerken gerekli değildir. Örneğin, aşağıdaki kullanımı [toplanabilir](../windows/aggregatable.md) özniteliği:  
   
 ```  
@@ -91,19 +86,19 @@ class CMyClass
   
 ||||  
 |-|-|-|  
-|[call_as](../windows/call-as.md)|[durumu](../windows/case-cpp.md)|[cpp_quote](../windows/cpp-quote.md)|  
+|[call_as](../windows/call-as.md)|[Durumu](../windows/case-cpp.md)|[cpp_quote](../windows/cpp-quote.md)|  
 |[default](../windows/default-cpp.md)|[defaultvalue](../windows/defaultvalue.md)|[defaultvtable](../windows/defaultvtable.md)|  
 |[emitidl](../windows/emitidl.md)|[entry](../windows/entry.md)|[first_is](../windows/first-is.md)|  
 |[helpcontext](../windows/helpcontext.md)|[helpfile](../windows/helpfile.md)|[helpstring](../windows/helpstring.md)|  
 |[helpstringcontext](../windows/helpstringcontext.md)|[helpstringdll](../windows/helpstringdll.md)|[id](../windows/id.md)|  
 |[iid_is](../windows/iid-is.md)|[import](../windows/import.md)|[importlib](../windows/importlib.md)|  
-|[içerir](../windows/include-cpp.md)|[includelib](../windows/includelib-cpp.md)|[last_is](../windows/last-is.md)|  
+|[İçerir](../windows/include-cpp.md)|[includelib](../windows/includelib-cpp.md)|[last_is](../windows/last-is.md)|  
 |[length_is](../windows/length-is.md)|[max_is](../windows/max-is.md)|[no_injected_text](../windows/no-injected-text.md)|  
 |[pointer_default](../windows/pointer-default.md)|[pragma](../windows/pragma.md)|[restricted](../windows/restricted.md)|  
 |[size_is](../windows/size-is.md)|[Kaynak](../windows/source-cpp.md)|[switch_is](../windows/switch-is.md)|  
 |[switch_type](../windows/switch-type.md)|[transmit_as](../windows/transmit-as.md)|[wire_marshal](../windows/wire-marshal.md)|  
   
-##  <a name="vcconattributeprogrammmingfaqanchor3"></a>Öznitelik bloğunda açıklamaları kullanabilir miyim?  
+##  <a name="vcconattributeprogrammmingfaqanchor3"></a> Öznitelik bloğunda açıklamaları kullanabilir miyim?  
  Bir öznitelik bloğu içinde tek satırlı ve birden çok satırlı açıklamaları kullanabilirsiniz. Ancak, açıklama parametreleri için bir öznitelik bulunduran parantez içinde ya da bir tarzını kullanamazsınız.  
   
  Aşağıdaki izin verilir:  
@@ -125,16 +120,16 @@ class CMyClass
 ]  
 ```  
   
-##  <a name="vcconattributeprogrammmingfaqanchor4"></a>Öznitelikleri devralma ile nasıl etkileşim?  
+##  <a name="vcconattributeprogrammmingfaqanchor4"></a> Öznitelikleri devralma ile nasıl etkileşim?  
  Öznitelikli ve unattributed sınıfları kendilerini veya öznitelikli diğer sınıflardan devralabilirsiniz. Öznitelikli sınıfından türetilen aynı öznitelik sağlayıcı kendi kod dönüştürdü sonra bu sınıftan türetilen sonucudur. Öznitelikler için türetilen sınıflar C++ devralma üzerinden iletilmez. Bir öznitelik sağlayıcısı yalnızca kod özniteliklerini kapsamına dönüştürür.  
   
-##  <a name="vcconattributeprogrammmingfaqanchor5"></a>Öznitelikleri nonattributed ATL projede nasıl kullanabilirim?  
+##  <a name="vcconattributeprogrammmingfaqanchor5"></a> Öznitelikleri nonattributed ATL projede nasıl kullanabilirim?  
  Bir .idl dosyası olan nonattributed bir ATL Proje olabilir ve öznitelikli nesneleri eklemek isteyebilirsiniz. Bu durumda, kod sağlamak için sınıf Ekleme Sihirbazı'nı kullanın.  
   
-##  <a name="vcconattributeprogrammmingfaqanchor6"></a>Öznitelikli projesinde .idl dosyasında nasıl kullanabilir miyim?  
+##  <a name="vcconattributeprogrammmingfaqanchor6"></a> Öznitelikli projesinde .idl dosyasında nasıl kullanabilir miyim?  
  Öznitelikli ATL projenizde kullanmak istediğiniz bir .idl dosyanız olabilir. Bu durumda, kullanacağınız [importidl](../windows/importidl.md) öznitelik, bir .h dosyasına .idl dosyasını derleyin (bkz [MIDL özellik sayfaları](../ide/midl-property-pages.md) projenin özellik sayfaları iletişim kutusunda) ve ardından .h dosyası projenize ekleme .  
   
-##  <a name="vcconattributeprogrammmingfaqanchor7"></a>Bir öznitelik tarafından eklenen kod değiştirebilir mi?  
+##  <a name="vcconattributeprogrammmingfaqanchor7"></a> Bir öznitelik tarafından eklenen kod değiştirebilir mi?  
  Bazı öznitelikler kod projenize ekleme. Eklenen kodu kullanarak gördüğünüz [/Fx](../build/reference/fx-merge-injected-code.md) derleyici seçeneği. Eklenen dosyanın kodu kopyalayın ve kaynak kodunuzu yapıştırmak mümkündür. Bu öznitelik davranışını değiştirmenize olanak sağlar. Ancak, diğer bölümleri kodunuzu de değiştirmeniz gerekebilir.  
   
  Aşağıdaki örnek, bir kaynak kodu dosyasına eklenen kodu kopyalama sonucu olan:  
@@ -257,10 +252,10 @@ public:
 int main() {}  
 ```  
   
-##  <a name="vcconattributeprogrammmingfaqhowcaniforwarddeclareanattributedinterface"></a>Nasıl öznitelikli arabirim İleri bildirimini yapabilir?  
+##  <a name="vcconattributeprogrammmingfaqhowcaniforwarddeclareanattributedinterface"></a> Nasıl öznitelikli arabirim İleri bildirimini yapabilir?  
  Öznitelikli arabirim ileriye dönük bildirimi yapmak için kullanacaksanız, gerçek arabirimi bildirimine uygulayın iletme bildirimine aynı öznitelikleri uygulamanız gerekir. Ayrıca uygulamalısınız [verme](../windows/export.md) özniteliği, ileriye dönük bildirimi.  
   
-##  <a name="vcconcaniuseattributesonclassderivedfromclassthatalsousesattributesanchor"></a>Ayrıca öznitelikler kullanan bir sınıfından türetilen bir sınıf öznitelikleri kullanabilir miyim?  
+##  <a name="vcconcaniuseattributesonclassderivedfromclassthatalsousesattributesanchor"></a> Ayrıca öznitelikler kullanan bir sınıfından türetilen bir sınıf öznitelikleri kullanabilir miyim?  
  Hayır, öznitelikler de kullanan bir sınıfından türetilmiş bir sınıf öznitelikleri kullanma desteklenmiyor.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

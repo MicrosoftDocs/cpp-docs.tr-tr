@@ -1,12 +1,9 @@
 ---
-title: "overwrite_buffer sınıfı | Microsoft Docs"
-ms.custom: 
+title: overwrite_buffer sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - overwrite_buffer
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - overwrite_buffer class
 ms.assetid: 5cc428fe-3697-419c-9fb2-78f6181c9293
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59eeadecdcf5d1a6333f08b68f98976ce9e6ea78
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: dccde651898bf5ff0986dc2e577a1d2ee5765e3f
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="overwritebuffer-class"></a>overwrite_buffer Sınıfı
 Bir `overwrite_buffer` ileti bloğu birden çok hedef birden çok kaynak, sıralı `propagator_block` aynı anda tek bir ileti depolama yeteneği. Yeni iletiler önceden tutulan olanları üzerine yazın.  
@@ -80,9 +75,9 @@ class overwrite_buffer : public propagator_block<multi_link_registry<ITarget<T>>
 |[link_target_notification](#link_target_notification)|Yeni bir hedef için bağlayana olduğunu bildiren bir geri çağırma `overwrite_buffer` ileti bloğu.|  
 |[propagate_message](#propagate_message)|Zaman uyumsuz olarak bir iletiden geçirmeden bir `ISource` bu bloğuna `overwrite_buffer` ileti bloğu. Tarafından çağrılan `propagate` kaynak bloğu tarafından çağrıldığında yöntemi.|  
 |[propagate_to_any_targets](#propagate_to_any_targets)|Basamak `message _PMessage` bu `overwrite_buffer` blok Mesajlaşma ve tüm bağlı hedefleri sunar.|  
-|[release_message](#release_message)|Bir önceki iletiyi ayırma serbest bırakır. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
-|[reserve_message](#reserve_message)|Daha önce bu tarafından sunulan bir ileti ayırır `overwrite_buffer` ileti bloğu. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
-|[resume_propagation](#resume_propagation)|Bir ayırma serbest bırakıldıktan sonra yayma sürdürür. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
+|[release_message](#release_message)|Bir önceki iletiyi ayırma serbest bırakır. (Geçersiz kılmaları [source_block::release_message](source-block-class.md#release_message).)|  
+|[reserve_message](#reserve_message)|Daha önce bu tarafından sunulan bir ileti ayırır `overwrite_buffer` ileti bloğu. (Geçersiz kılmaları [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[resume_propagation](#resume_propagation)|Bir ayırma serbest bırakıldıktan sonra yayma sürdürür. (Geçersiz kılmaları [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
 |[send_message](#send_message)|İletiyi zaman uyumlu olarak geçirir bir `ISource` bu bloğuna `overwrite_buffer` ileti bloğu. Tarafından çağrılan `send` kaynak bloğu tarafından çağrıldığında yöntemi.|  
 |[supports_anonymous_source](#supports_anonymous_source)|Geçersiz kılmaları `supports_anonymous_source` bu bloğu için bağlantılı olmayan bir kaynak tarafından sunulan iletileri kabul ettiğinizi belirtmek için yöntem. (Geçersiz kılmaları [Itarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
   
@@ -269,7 +264,7 @@ virtual message_status send_message(
 ### <a name="return-value"></a>Dönüş Değeri  
  A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
   
-##  <a name="supports_anonymous_source">supports_anonymous_source</a> 
+##  <a name="supports_anonymous_source"></a> supports_anonymous_source 
 
  Geçersiz kılmaları `supports_anonymous_source` bu bloğu için bağlantılı olmayan bir kaynak tarafından sunulan iletileri kabul ettiğinizi belirtmek için yöntem.  
   

@@ -1,12 +1,9 @@
 ---
-title: "Varsayılan (OpenMP) | Microsoft Docs"
-ms.custom: 
+title: Varsayılan (OpenMP) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - default
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - default OpenMP clause
 - defaults, OpenMP clause
 ms.assetid: 96055106-a8f0-40b3-8319-e412b6e07bf8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca0a9cd39e6c9b2896a0435e1a9b0d503d59f9dd
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 9fc39951270138e9bd243172b289e7bd96190f14
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="default-openmp"></a>default (OpenMP)
 Paralel bir bölgede dizininden kapsam dışı değişkenleri davranışını belirtir.  

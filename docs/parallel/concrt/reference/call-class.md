@@ -1,12 +1,9 @@
 ---
-title: "Çağrı sınıfı | Microsoft Docs"
-ms.custom: 
+title: Çağrı sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - call
@@ -22,17 +19,15 @@ dev_langs:
 helpviewer_keywords:
 - call class
 ms.assetid: 1521970a-1e9c-4b0c-a681-d18e40976f49
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a63873b7666e4f75ddd39fbf684ebb80c1f85e8
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 47f72948621e9311f05af74f75d80cd35c1deddc
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="call-class"></a>çağrı Sınıfı
 A `call` ileti bloğu, birden çok kaynak sıralı `target_block` , çağırır belirtilen işlevi bir ileti alırken.  
@@ -58,7 +53,7 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Arama](#ctor)|Fazla Yüklendi. Oluşturan bir `call` ileti bloğu.|  
-|[~call Destructor](#dtor)|Bozar `call` ileti bloğu.|  
+|[~ call yok Edicisi](#dtor)|Bozar `call` ileti bloğu.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
@@ -85,7 +80,7 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="ctor">Arama</a> 
+##  <a name="ctor"></a> Arama 
 
  Oluşturan bir `call` ileti bloğu.  
   
@@ -144,7 +139,7 @@ call(
 ~call();
 ```  
   
-##  <a name="process_input_messages">process_input_messages</a> 
+##  <a name="process_input_messages"></a> process_input_messages 
 
  Çağrı işlevi, giriş iletilerde yürütür.  
   
@@ -207,7 +202,7 @@ virtual message_status send_message(
 ### <a name="return-value"></a>Dönüş Değeri  
  A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
   
-##  <a name="supports_anonymous_source">supports_anonymous_source</a> 
+##  <a name="supports_anonymous_source"></a> supports_anonymous_source 
 
  Geçersiz kılmaları `supports_anonymous_source` bu bloğu için bağlantılı olmayan bir kaynak tarafından sunulan iletileri kabul ettiğinizi belirtmek için yöntem.  
   

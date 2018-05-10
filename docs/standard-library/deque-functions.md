@@ -2,24 +2,19 @@
 title: '&lt;deque&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - deque/std::swap
 ms.assetid: 1d14be53-b0b7-4f66-90cc-65bdeac563fd
-caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8404616ede4c32f5df17aedac60369c88c80297e
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 8acde4167d9115180282b26f93cc2629c9f72638
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltdequegt-functions"></a>&lt;deque&gt; işlevleri
 

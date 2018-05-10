@@ -1,32 +1,27 @@
 ---
-title: "Döşemeleri kullanma | Microsoft Docs"
-ms.custom: 
+title: Döşemeleri kullanma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-amp
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: acb86a86-2b7f-43f1-8fcf-bcc79b21d9a8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aed7ed0ed32f73927f3755c0ba3733aaef084818
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4e3d1e37562e9e14bbbeda5a01198358b4615d3c
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="using-tiles"></a>Döşemeleri Kullanma
 Döşeme uygulamanızı ivmesini en üst düzeye çıkarmak için kullanabilirsiniz. Döşeme böler iş parçacığı eşit dikdörtgen alt kümeler veya *kutucukları*. Uygun döşeme boyutunu ve döşeli algoritması kullanırsanız, C++ AMP kodunuzdan daha da fazla hızlandırma alabilirsiniz. Döşeme temel bileşeni vardır:  
   
-- `tile_static`değişkenleri. Döşeme birincil avantajı gelen performans kazancı var mı `tile_static` erişim. Veri erişimi `tile_static` bellek genel alan veri erişimi önemli ölçüde daha hızlı olabilir (`array` veya `array_view` nesneleri). Örneği bir `tile_static` değişken her bölme için oluşturulur ve tüm iş parçacıklarının döşemesinin değişkeni erişimi. Veri kopyalanır tipik döşeli algoritmada `tile_static` genel bellek kez bellekten ve birçok kez sonra erişilen `tile_static` bellek.  
+- `tile_static` değişkenleri. Döşeme birincil avantajı gelen performans kazancı var mı `tile_static` erişim. Veri erişimi `tile_static` bellek genel alan veri erişimi önemli ölçüde daha hızlı olabilir (`array` veya `array_view` nesneleri). Örneği bir `tile_static` değişken her bölme için oluşturulur ve tüm iş parçacıklarının döşemesinin değişkeni erişimi. Veri kopyalanır tipik döşeli algoritmada `tile_static` genel bellek kez bellekten ve birçok kez sonra erişilen `tile_static` bellek.  
   
 - [tile_barrier::wait yöntemi](reference/tile-barrier-class.md#wait). Çağrı `tile_barrier::wait` tüm iş parçacıklarının aynı döşemesinin çağrısı ulaşana kadar geçerli iş parçacığının durduran `tile_barrier::wait`. İş parçacığı çalıştıracak, yalnızca o iş parçacığı döşemesinin çağrısı geçmiş yürütecek sırayı garanti edemez `tile_barrier::wait` kadar tüm iş parçacıklarının çağrı üst sınırına ulaştınız. Kullanarak buna `tile_barrier::wait` yöntemi, bir iş parçacığı tarafından iş parçacığı başına yerine döşemesi tarafından döşeme temel görevleri gerçekleştirebilir. Başlatmak için kod tipik döşeme algoritmasına sahip `tile_static` bir çağrı tarafından izlenen tüm döşeme için bellek `tile_barrer::wait`. Aşağıdaki kod `tile_barrier::wait` erişmesi gereken tüm hesaplamalar içeriyor `tile_static` değerleri.  
 
@@ -40,7 +35,7 @@ Döşeme uygulamanızı ivmesini en üst düzeye çıkarmak için kullanabilirsi
 ## <a name="example-of-global-tile-and-local-indices"></a>Örnek genel olarak, bölme ve yerel dizinlerini  
  Aşağıdaki diyagramda bir 8 x 9 matris 2 x 3 döşemeleri düzenlenmiş verilerin temsil eder.  
   
- ![8 &#45; tarafından &#45; 9 matris bölünmüş 2 &#45;içine; &#45; 3 döşeme](../../parallel/amp/media/usingtilesmatrix.png "usingtilesmatrix")  
+ ![8&#45;tarafından&#45;9 matris bölünmüş 2&#45;tarafından&#45;3 döşeme](../../parallel/amp/media/usingtilesmatrix.png "usingtilesmatrix")  
   
  Aşağıdaki örnek genel kutucuğu görüntüler ve bu yerel dizinlerini matris döşenir. Bir `array_view` nesne türündeki öğeler kullanarak oluşturulur `Description`. `Description` Tutan genel kutucuğu ve yerel dizinlerini Matristeki öğesinin. Kod çağrısında `parallel_for_each` Global değerleri, döşeme ve her öğenin yerel dizinlerini ayarlar. Çıktıyı değerleri görüntüler `Description` yapıları.  
   

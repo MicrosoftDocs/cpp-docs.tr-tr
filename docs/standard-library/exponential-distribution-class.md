@@ -2,11 +2,8 @@
 title: exponential_distribution sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - random/std::exponential_distribution
@@ -32,17 +29,15 @@ helpviewer_keywords:
 - std::exponential_distribution [C++], param_type
 - std::exponential_distribution [C++], param_type
 ms.assetid: d54f3126-a09b-45f9-a30b-0d94d03bcdc9
-caps.latest.revision: 18
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56440fa0948b89e3467edbffb2cfc670830f1168
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 8f324eaea0f84767d174bb109a8c1cfff7abfb50
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="exponentialdistribution-class"></a>exponential_distribution Sınıfı
 

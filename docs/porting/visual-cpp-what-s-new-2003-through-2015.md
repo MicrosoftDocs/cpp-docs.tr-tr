@@ -1,30 +1,25 @@
 ---
-title: "Visual C++ &#39; teki 2015 aracılığıyla yeni 2003 | Microsoft Docs"
-ms.custom: 
+title: Visual C++ ne&#39;s 2015 aracılığıyla yeni 2003 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0e5090bc914648e527f335b261ad7838ad3d0bc
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 4ae41c373257202cb08b7f8760acac4ad14dff19
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ &#39; teki 2015 aracılığıyla yeni 2003
+# <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ ne&#39;s 2015 aracılığıyla yeni 2003
 
 Bu sayfayı tüm "Yenilikler" sayfalar için Visual C++'in tüm sürümleri, Visual Studio 2015'ten 2003'e toplar. Visual C++ önceki sürümlerinden yükseltme yaparken yararlı olabilir durumunda bu bilgiler kolaylık sağlanır.
 
@@ -46,7 +41,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
 
 - [Visual Studio 2015 güncelleştirme 3 uygunluk yenilikleri](#VS_Update3)
 
-### <a name="VS_RTM">Visual Studio 2015'te uygunluk geliştirmeleri</a>
+### <a name="VS_RTM"></a> Visual Studio 2015'te uygunluk geliştirmeleri
 
 - **/ZC:forScope-seçeneği** derleyici seçeneği **/Zc:forScope-** kullanım dışıdır ve gelecek sürümde kaldırılacak.
 
@@ -503,7 +498,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
 
 - **Kopyalama oluşturucular** hem de [!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)] ve Visual Studio 2015 derleyici oluşturan bir sınıf için bir kopya Oluşturucu bu sınıfın bir kullanıcı tarafından tanımlanan taşıma oluşturucusuna ancak hiçbir kullanıcı tarafından tanımlanan kopya Oluşturucu varsa. Dev14 içinde bu örtük olarak oluşturulmuş kopya Oluşturucu de işaretlenmiş "delete =".
 
-### <a name="VS_Update1">Visual Studio 2015 güncelleştirme 1 uygunluk yenilikleri</a>
+### <a name="VS_Update1"></a> Visual Studio 2015 güncelleştirme 1 uygunluk yenilikleri
 
 - **Özel sanal taban sınıflar ve dolaylı devralma** Derleyici önceki sürümlerinden izin üye işlevlerini çağırın türetilmiş bir sınıf kendi *dolaylı olarak türetilmiş* `private virtual` temel sınıflar. Bu eski davranış yanlış ve C++ Standart uygun değil. Derleyici artık bu şekilde yazılan kod kabul eder ve derleyici hatası C2280 sonuç olarak verir.
 
@@ -543,7 +538,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
     }
    ```
 
-  veya
+  -veya-
 
    ```cpp
     class base;  // as above
@@ -996,7 +991,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
     }
    ```
 
-### <a name="VS_Update2">Visual Studio 2015 güncelleştirme 2 uygunluk yenilikleri</a>
+### <a name="VS_Update2"></a> Visual Studio 2015 güncelleştirme 2 uygunluk yenilikleri
 
 - **Ek uyarıları ve hataları verilen kısmi ifade SFINAE desteği sonucunda** Derleyici önceki sürümlerinden ifadelerinin içinde belirli bir türde değil ayrıştırma `decltype` tanımlayıcıları ifade için destek eksikliği nedeniyle SFINAE. Bu eski davranış yanlış ve C++ Standart uygun değil. Derleyici şimdi bu deyimler ayrıştırır ve kısmi ifade SFINAE devam eden uygunluk geliştirmeleri nedeniyle desteği sahiptir. Sonuç olarak, derleyici uyarıları şimdi sorunları ve derleyici önceki sürümleri olmayan incelenemedi ifadelerinde hatalar bulundu.
 
@@ -1251,7 +1246,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
 
    Bu şekilde yazılan kod çözme işleç tanımları üstbilgi dosyası dışında ve karşılık gelen bir kaynak dosyasına taşınmasına gerektirebilir.
 
-### <a name="VS_Update3">Visual Studio 2015 güncelleştirme 3 uygunluk yenilikleri</a>
+### <a name="VS_Update3"></a> Visual Studio 2015 güncelleştirme 3 uygunluk yenilikleri
 
 - **Std::is_convertable otomatik atanmasını artık algılar** (standart kitaplığı) önceki sürümlerini `std::is_convertable` türü ayırdedici nitelik kopya kurucusu silindiğinde bir sınıf türünün otomatik atanmasını veya özel doğru algılamadı. Şimdi, `std::is_convertable<>::value` doğru bir şekilde ayarlamak `false` bir sınıf türü silindiğinde veya özel kopya Oluşturucu ile uygulandığında.
 
@@ -1553,7 +1548,7 @@ Böylece C ++ 11'e uyan ve Visual Studio 2013'te Visual C++'ta doğru derler Bu 
 - **Daha zengin özel durum bilgileri.** C + +/ CX yakalanmasını ve zengin özel durum bilgilerini yayılmasını uygulama ikili arabirimi (ABI); sağlayan yeni Windows hata modelini destekler Bu çağrı yığınları ve özel ileti dizeleri içerir.
 - **Nesne:: ToString() sanal sunulmuştur.** Kullanıcı tanımlı Windows çalışma zamanı ref türlerinde ToString artık geçersiz kılabilirsiniz.
 - **Kullanım dışı API'leri için destek.** Genel Windows çalışma zamanı API'leri artık kullanım dışı ve yapı uyarı olarak görünen özel bir ileti verilen işaretlenebilir ve Geçiş Kılavuzu sağlayabilir.
-- Hata ayıklayıcı geliştirmeleri. Yerel/JavaScript birlikte çalışma hata ayıklama, Windows çalışma zamanı özel durumu tanı ve zaman uyumsuz kod (Windows çalışma zamanı ve PPL) hata ayıklama desteği.
+- **Hata ayıklayıcı geliştirmeleri.** Yerel/JavaScript birlikte çalışma hata ayıklama, Windows çalışma zamanı özel durumu tanı ve zaman uyumsuz kod (Windows çalışma zamanı ve PPL) hata ayıklama desteği.
   - Not: C++ özgü özellikler ve bu bölümde açıklanan geliştirmelerin yanı sıra diğer geliştirmeler Visual Studio'da de daha iyi Windows çalışma zamanı uygulamaları yazmanıza yardımcı olabilir.
 
 ### <a name="diagnostics-enhancements"></a>Tanılama geliştirmeleri
@@ -1730,21 +1725,21 @@ Kod kapsamı, çalışma zamanında dinamik olarak gereç ikili için güncelle�
 
 ### <a name="c-compiler-and-linker"></a>C++ derleyicisi ve bağlayıcı
 
-**auto Keyword.** Auto anahtar sözcüğü yeni bir amacı vardır. Auto anahtar sözcüğü varsayılan anlamını türü değişken bildirimi başlatma ifadesinden anlaşılabilen bir değişken bildirmek için kullanın. Yeni veya auto anahtar sözcüğü önceki anlamını /Zc:auto derleyici seçeneği çağırır.
+**Auto anahtar sözcüğü.** Auto anahtar sözcüğü yeni bir amacı vardır. Auto anahtar sözcüğü varsayılan anlamını türü değişken bildirimi başlatma ifadesinden anlaşılabilen bir değişken bildirmek için kullanın. Yeni veya auto anahtar sözcüğü önceki anlamını /Zc:auto derleyici seçeneği çağırır.
 
 **decltype tür belirteci.** Decltype tür belirteci belirtilen ifade türü döndürür. Decltype tür belirteci karmaşık ya da yalnızca derleyici için bilinen bir türe bildirmek için auto anahtar sözcüğü ile birlikte kullanın. Örneğin, bir şablon işlevi, dönüş türü, şablon bağımsız değişken türlerine bağlıdır bildirmek için birlikte kullanın. Ya da başka bir işlevi çağırır ve sonra çağrılan işlev dönüş türü döndüren bir şablon işlevi bildirin.
 
-**Lambda Expressions.** Lambda işlevleri işlev gövdesi ancak ad var. Lambda işlevleri işlev işaretçileri ve işlev nesneleri en iyi özelliklerini birleştirin.
+**Lambda ifadeleri.** Lambda işlevleri işlev gövdesi ancak ad var. Lambda işlevleri işlev işaretçileri ve işlev nesneleri en iyi özelliklerini birleştirin.
 Bir şablon işlevi parametresi bir işlev nesnesi yerine ya da bir değişken, türü bildirmek için auto anahtar sözcüğü ile birlikte bir lambda olduğu gibi tek başına bir lambda işlevini kullanın.
 
 **Rvalue başvuru.** Rvalue başvuru bildirimcisi (& &) bir rvalue başvuru bildirir. Kullandığınız bir rvalue başvuru sağlar, semantik ve daha verimli Oluşturucular, İşlevler ve şablonları yazmak için kusursuz iletme taşıyın.
 
-**static_assert Declaration.** Bir static_assert bildirimi derleme zamanında çalışma zamanında test diğer onaylama mekanizmaları aksine yazılım onaylama sınar. Onaylama başarısız olursa, derleme başarısız oluyor ve belirtilen hata iletisi görüntülenir.
+**static_assert bildirimi.** Bir static_assert bildirimi derleme zamanında çalışma zamanında test diğer onaylama mekanizmaları aksine yazılım onaylama sınar. Onaylama başarısız olursa, derleme başarısız oluyor ve belirtilen hata iletisi görüntülenir.
 
 **nullptr ve __nullptr anahtar sözcükler.** Visual C++ derleyicisi nullptr anahtar sözcüğü yönetilen kod veya yerel kod ile kullanmanıza olanak sağlar. Nullptr anahtar sözcüğü bir nesneye bir nesne tanıtıcısı, iç işaretçi veya yerel işaretçi türü göstermiyor gösterir. / CLR seçeneği kullanmadığınızda/CLR derleyici seçeneği kullandığınızda, yönetilen kod ve yerel kodu olacak şekilde nullptr derleyici yorumlar.
 Microsoft'a özgü __nullptr anahtar sözcüğü nullptr ile aynı anlamı taşır, ancak yalnızca yerel koda uygular. / CLR derleyici seçeneği kullanarak yerel C/C++ kod derleme yaparsanız derleyici nullptr anahtar sözcüğü bir yerel veya yönetilen bir terim olup olmadığını belirleyemiyor. Derleyicinin temizleyin, amacınız yapmak için nullptr anahtar sözcüğü Yönetilen terim ve yerel terim belirtmek için __nullptr belirtmek için kullanın.
 
-**/Zc:trigraphs Compiler Option.** Varsayılan olarak, desteği trigrafları devre dışı. / ZC: trigraphs derleyici seçeneği trigrafları desteğini etkinleştirmek için kullanın.
+**/ ZC: trigraphs derleyici seçeneği.** Varsayılan olarak, desteği trigrafları devre dışı. / ZC: trigraphs derleyici seçeneği trigrafları desteğini etkinleştirmek için kullanın.
 İki ardışık soru benzersiz üçüncü bir karakterin ardından işareti (?), bir trigrafı oluşur. Derleyici bir trigrafı karşılık gelen bir noktalama karakteri ile değiştirir. Örneğin, derleyici değiştirir?? # (sayı işareti) karakteri ile trigrafı =. Trigrafları belirli noktalama karakterleri içermeyen bir karakter kümesi kullanan C kaynak dosyalarında kullanın.
 
 **Yeni profil temelli iyileştirme seçeneği.** PogoSafeMode uygulamanızı en iyi duruma getirdiğinizde güvenli mod veya hızlı mod kullanılıp kullanılmayacağını belirlemenize olanak sağlayan yeni bir profil temelli iyileştirme seçenektir. İş parçacığı güvenli mod, ancak hızlı mod yavaştır. Hızlı mod varsayılan davranıştır.
@@ -2176,12 +2171,12 @@ Derleyici önemli değişiklikler bu sürümde sahiptir.
 
 Aşağıdaki bağlayıcı anahtarlarını eklenmiştir:
 
-- /ASSEMBLYDEBUG
-- /ASSEMBLYLINKRESOURCE
+- / ASSEMBLYDEBUG
+- / ASSEMBLYLINKRESOURCE
 - DELAYSIGN
 - / KEYFILE
 - / KEYCONTAINER
-- /SAFESEH
+- / SAFESEH
 
 ### <a name="masm"></a>MASM
 

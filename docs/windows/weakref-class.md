@@ -1,12 +1,9 @@
 ---
-title: "WeakRef sınıfı | Microsoft Docs"
-ms.custom: 
+title: WeakRef sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::WeakRef
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - WeakRef class
 ms.assetid: 572be703-c641-496c-8af5-ad6164670ba1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a8263595bdd564c313a8783a3a9baf0c6d562494
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ba7efc595be55b807cd3f044269db0debcb72407
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="weakref-class"></a>WeakRef Sınıfı
 Temsil eden bir *zayıf başvuru* yalnızca Windows çalışma zamanı tarafından değil klasik COM kullanılabilir Zayıf başvuru olabilir ya da erişilebilir olmayabilir bir nesneyi temsil eder.  

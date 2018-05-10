@@ -1,13 +1,10 @@
 ---
-title: "Tchar.h'de genel metin eşlemeleri | Microsoft Docs"
-ms.custom: 
+title: Tchar.h'de genel metin eşlemeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - tchar.h
 dev_langs:
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 405e95e9eb8fb760e2688e164178cf9270f31877
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c7ed29b03a37c9b911a954192152115b1458fd94
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="generic-text-mappings-in-tcharh"></a>Tchar.h'de Genel Metin Eşlemeleri
 Uluslararası kullanımda kodun taşınmasını kolaylaştırmak için [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)] çalışma zamanı kitaplığı sağlayan [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)]-birçok veri türleri, yordamlar ve diğer nesneleri için belirli genel metin eşlemeleri. Bu eşlemeler Tchar.h'de tek bayt, birden çok baytlı, derlenmiş genel kodlar yazmak için tanımlanan kullanabilirsiniz veya [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] karakter kümesi kullanarak tanımladığınız bir bildirim sabit bağlı olarak bir `#define` deyimi. Genel metin eşlemeleri [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)] olmayan uzantıları [!INCLUDE[vcpransi](../atl-mfc-shared/reference/includes/vcpransi_md.md)] uyumlu.  
@@ -52,22 +47,22 @@ Uluslararası kullanımda kodun taşınmasını kolaylaştırmak için [!INCLUDE
   
 |# tanımlayın|Derlenmiş sürüm|Örnek|  
 |---------------|----------------------|-------------|  
-|`_UNICODE`|[!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)](geniş karakter)|`_tcsrev`eşler`_wcsrev`|  
-|`_MBCS`|Çok baytlı karakter|`_tcsrev`eşler`_mbsrev`|  
-|Hiçbiri (varsayılan hiçbirine sahip `_UNICODE` ya da `_MBCS` tanımlanan)|SBCS ([!INCLUDE[TLA#tla_ascii](../text/includes/tlasharptla_ascii_md.md)])|`_tcsrev`eşler`strrev`|  
+|`_UNICODE`|[!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] (geniş karakter)|`_tcsrev` Eşler `_wcsrev`|  
+|`_MBCS`|Çok baytlı karakter|`_tcsrev` Eşler `_mbsrev`|  
+|Hiçbiri (varsayılan hiçbirine sahip `_UNICODE` ya da `_MBCS` tanımlanan)|SBCS ([!INCLUDE[TLA#tla_ascii](../text/includes/tlasharptla_ascii_md.md)])|`_tcsrev` Eşler `strrev`|  
   
  Örneğin, genel metin işlevi `_tcsrev`, Tchar.h içinde tanımlandığı eşlendiğini `_mbsrev` tanımladıysanız `_MBCS` programınızdaki veya çok `_wcsrev` tanımladıysanız `_UNICODE`. Aksi takdirde, `_tcsrev` eşlendiği `strrev`. Diğer veri türü eşlemeleri programlama kolaylığı için Tchar.h içinde sağlanır, ancak `_TCHAR` en yararlı olur.  
   
 ### <a name="generic-text-data-type-mappings"></a>Genel metin veri türü eşlemeleri  
   
-|Genel metin<br /><br /> Veri türü adı|_UNICODE &<br /><br /> _MBCS tanımlanmamış|_MBCS<br /><br /> Tanımlı|_UNICODE<br /><br /> Tanımlı|  
+|Genel metin<br /><br /> Veri türü adı|_UNICODE &AMP;<br /><br /> _MBCS tanımlanmamış|_MBCS<br /><br /> Tanımlı|_UNICODE<br /><br /> Tanımlı|  
 |--------------------------------------|----------------------------------------|------------------------|---------------------------|  
 |`_TCHAR`|`char`|`char`|`wchar_t`|  
 |`_TINT`|`int`|`unsigned int`|`wint_t`|  
 |`_TSCHAR`|`signed char`|`signed char`|`wchar_t`|  
 |`_TUCHAR`|`unsigned char`|`unsigned char`|`wchar_t`|  
 |`_TXCHAR`|`char`|`unsigned char`|`wchar_t`|  
-|`_T`veya`_TEXT`|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|`L`(aşağıdaki karakter veya dizeye dönüştürür kendi [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] karşılık gelen)|  
+|`_T` Veya `_TEXT`|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|`L` (aşağıdaki karakter veya dizeye dönüştürür kendi [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] karşılık gelen)|  
   
  Genel metin eşlemeleri yordamları, değişkenlerin ve diğer nesnelerin bir listesi için bkz: [genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md) çalışma zamanı kitaplığı başvurusu.  
   

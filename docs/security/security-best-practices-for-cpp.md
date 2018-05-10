@@ -1,13 +1,10 @@
 ---
-title: "C++ için en iyi yöntemler | Microsoft Docs"
-ms.custom: 
+title: C++ için en iyi yöntemler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - securitybestpracticesVC
 dev_langs:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - security [C++]
 - security [C++], best practices
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f1474f44b81a95c119a405dda8a91db62a08417
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
-ms.translationtype: MT
+ms.openlocfilehash: 5c7f0860daea5b2e90368c7068c6b13371af3fd8
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="security-best-practices-for-c"></a>C++ İçin En İyi Güvenlik Uygulamaları
 Bu makale, güvenlik araçları ve yöntemleri hakkında bilgi içerir. Bunları kullanarak uygulamaları saldırılarından yapmaz ancak saldırıların olasılığını azaltır.  
@@ -35,22 +30,22 @@ Bu makale, güvenlik araçları ve yöntemleri hakkında bilgi içerir. Bunları
 ## <a name="visual-c-security-features"></a>Visual C++ güvenlik özellikleri  
  Bu güvenlik özellikleri, Visual C++ derleyicisi ve bağlayıcısına oluşturulur:  
   
- [/Guard (etkinleştirmek denetim akışı koruma)](../build/reference/guard-enable-control-flow-guard.md)  
+ [/guard (Denetim Akışı Korumasını Etkinleştirme)](../build/reference/guard-enable-control-flow-guard.md)  
  İçin denetim akışı dolaylı çağrı hedefler için derleme zamanında çözümlemek derleyici neden olur ve ardından çalışma zamanında hedefleri doğrulamak için kodu ekleyin.  
   
- [/GS (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md)  
+ [/GS (Arabellek Güvenlik Denetimi)](../build/reference/gs-buffer-security-check.md)  
  Taşma algılama kodunu yararlanılmasını, risk altındadır işlevler eklemek için derleyiciye. Bir taşma algılandığında, yürütme durduruldu. Varsayılan olarak, bu seçenek açıktır.  
   
- [/ SAFESEH (görüntüde güvenli özel durum işleyicileri vardır)](../build/reference/safeseh-image-has-safe-exception-handlers.md)  
+ [/SAFESEH (Görüntüde Güvenli Özel Durum İşleyicileri Var)](../build/reference/safeseh-image-has-safe-exception-handlers.md)  
  Her özel durum işleyici adresini içeren bir tablo çıktı yansımasına eklenecek bağlayıcı bildirir. Çalışma zamanında, işletim sisteminin yalnızca yasal özel durum işleyicilerinin yürütüldüğünden emin olmak için bu tabloyu kullanır. Bu, çalışma zamanında kötü amaçlı saldırı tarafından tanıtılan özel durum işleyicileri yürütülmesini önlemeye yardımcı olur. Varsayılan olarak, bu değer kapalıdır.  
   
  [/ NXCOMPAT](../build/reference/nxcompat.md), [/NXCOMPAT (Veri Yürütme Engellemesi uyumlu)](../build/reference/nxcompat-compatible-with-data-execution-prevention.md)  
  Bu derleyici ve bağlayıcı seçenekleri Veri Yürütme Engellemesi (DEP) uyumluluk etkinleştirin. DEP CPU kod olmayan sayfa yürütülmesi karşı korur.  
   
- [/ analyze (kod çözümleme)](../build/reference/analyze-code-analysis.md)  
+ [/analyze (Kod Çözümleme)](../build/reference/analyze-code-analysis.md)  
  Bu derleyici seçeneği arabellek taşması, başlatılmamış bellek, null işaretçi başvurusunun kaldırılmasının ve bellek sızıntıları gibi olası güvenlik sorunlarını raporları kod analizini etkinleştirir. Varsayılan olarak, bu değer kapalıdır. Daha fazla bilgi için bkz: [C/C++ genel bakış için Kod Analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).  
   
- [/ DYNAMICBASE (adres boşluğu düzeni rastgele'seçimini kullan)](../build/reference/dynamicbase-use-address-space-layout-randomization.md)  
+ [/DYNAMICBASE (Adres boşluğu düzeni rastgele seçimini kullan)](../build/reference/dynamicbase-use-address-space-layout-randomization.md)  
  Bu bağlayıcı seçeneği farklı konumlarda yürütme başlangıcında belleğe yüklenmiş bir yürütülebilir görüntü oluşturulmasını sağlar. Bu seçenek ayrıca yığın konumunu bellekte daha az tahmin edilebilir hale getirir.  
   
 ## <a name="security-enhanced-crt"></a>Gelişmiş Güvenlik CRT  
@@ -66,7 +61,7 @@ Bu makale, güvenlik araçları ve yöntemleri hakkında bilgi içerir. Bunları
 ## <a name="checked-iterators"></a>Denetlenmiş Yineleyiciler  
  Denetlenen yineleyici kapsayıcı sınırları zorlar. Varsayılan olarak, denetlenen bir yineleyici sınırların dışında olduğunda, bir özel durum oluşturur ve program yürütme sona erer. Önişlemci için atanan değerlerin bağlı diğer yanıt düzeylerini tanımlar gibi denetlenen yineleyici sağlar  **\_güvenli\_SCL\_OLUŞTURUR** ve  **\_YİNELEYİCİ\_hata ayıklama\_düzeyi**. Örneğin,  **\_YİNELEYİCİ\_hata ayıklama\_düzeyi = 2**, kapsamlı bir doğruluk denetimi hata ayıklama modunda hangi kullanarak kullanılabilir hale getirilir denetlenen yineleyici sağlar onaylar. Daha fazla bilgi için bkz: [işaretli yineleyiciler](../standard-library/checked-iterators.md) ve [ \_YİNELEYİCİ\_hata ayıklama\_düzeyi](../standard-library/iterator-debug-level.md).  
   
-## <a name="code-analysis-for-managed-code"></a>Yönetilen kod için Kod Analizi  
+## <a name="code-analysis-for-managed-code"></a>Yönetilen Kod için Kod Analizi  
  Olarak da bilinen FxCop, yönetilen kod için Kod Analizi ile uyum.NET Framework tasarım yönergeleri için derlemeleri denetler. FxCop kodu ve aşağıdaki alanlarda hatalarını denetlemek için her derlemenin meta verilerini analiz eder:  
   
 -   Kitaplık tasarımı  

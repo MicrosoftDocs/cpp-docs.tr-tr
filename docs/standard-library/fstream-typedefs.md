@@ -2,9 +2,6 @@
 title: '&lt;fstream&gt; tür tanımları | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - fstream/std::filebuf
@@ -16,13 +13,11 @@ f1_keywords:
 - fstream/std::wifstream
 - fstream/std::wofstream
 ms.assetid: 8dddef2d-7f17-42a6-ba08-6f6f20597d23
-caps.latest.revision: 11
-manager: ghogen
-ms.openlocfilehash: 3fb38bcee6d23968e51e86fbde0b824cb7316ed4
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: fc87e3182e0ee1c8cb4079dd411f54dff0b4c993
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltfstreamgt-typedefs"></a>&lt;fstream&gt; tür tanımları
 

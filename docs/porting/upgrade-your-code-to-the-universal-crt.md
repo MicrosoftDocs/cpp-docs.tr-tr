@@ -1,23 +1,18 @@
 ---
-title: "Evrensel CRT kodunuzu yükseltme | Microsoft Docs"
-ms.custom: 
+title: Evrensel CRT kodunuzu yükseltme | Microsoft Docs
+ms.custom: ''
 ms.date: 03/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e63945dc51fe55d81963790e7373a3d4dc9b0efe
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: c2057f3dc8abc3f661010300671b67ad5c37a87d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="upgrade-your-code-to-the-universal-crt"></a>Evrensel CRT kodunuzu yükseltme
 

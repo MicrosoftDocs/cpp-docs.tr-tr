@@ -1,12 +1,9 @@
 ---
 title: no_auto_exclude | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - no_auto_exclude
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - no_auto_exclude attribute
 ms.assetid: 3241ef9c-758a-4e86-bdc5-37da6072430f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 492e906b542ee8f378a350b04abfb1ec2e738801
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 4b0c8d28e1e9c7306c1a74db90177caf76ca95b0
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="noautoexclude"></a>no_auto_exclude
 **C++ özel**  
@@ -45,4 +40,4 @@ no_auto_exclude
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+ [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

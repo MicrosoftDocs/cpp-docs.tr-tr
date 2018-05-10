@@ -1,13 +1,10 @@
 ---
-title: "İletişim kutusu Düzenleyicisi sorunlarını giderme | Microsoft Docs"
-ms.custom: 
+title: İletişim kutusu Düzenleyicisi sorunlarını giderme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - troubleshooting Dialog editor
 - dialog boxes, troubleshooting
 ms.assetid: 21882868-5ac4-4a41-a4a6-eaaa059402ea
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a544bbc7d9decde558cc4574252bc04a1def767e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 11de4ccdcc903d71a101ed93f995e9dea62de4f8
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="troubleshooting-the-dialog-editor"></a>İletişim Kutusu Düzenleyicisinde Sorun Giderme
 Aşağıda, iletişim kutusu Düzenleyicisi'nde çalışırken bilmeniz gereken birkaç sorunlardır.  

@@ -2,11 +2,8 @@
 title: '&lt;sınırları&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - limits/std::<limits>
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - limits header
 ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
-caps.latest.revision: 18
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84437f53d8685c842e102fac3da7b062058bb20e
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 1a3250d9a090dcbd5eaa9a3cc0d51df84600ed3e
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltlimitsgt"></a>&lt;Sınırları&gt;
 

@@ -1,12 +1,9 @@
 ---
 title: omp_nest_lock_t | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - omp_nest_lock_t
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - omp_nest_lock_t OpenMP data type
 ms.assetid: fceac9fb-96d2-42b0-af19-c9b078380618
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e28750ae3944a0018d245c6cf100fcbe86f03b4e
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 3c47581e2587ea7c82ff3b84ad41d0c83d1659b7
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ompnestlockt"></a>omp_nest_lock_t
 Şu kilit hakkında bilgileri tutan bir türü: kilit kullanılabilir ve iş parçacığı kimliği, sahibi kilit ve iç içe geçmiş sayı olup olmadığını.  

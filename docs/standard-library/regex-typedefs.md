@@ -2,9 +2,6 @@
 title: '&lt;Regex&gt; tür tanımları | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - regex/std::cmatch
@@ -28,17 +25,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: e6a69067-106c-4a24-9e08-7c867a3a2260
-caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3977b0f53d64f5e89765ad186db0e3d5a3d5653
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: fe7108c2eb370739494a2c6b8bc95fbdc1001840
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltregexgt-typedefs"></a>&lt;Regex&gt; tür tanımları
 

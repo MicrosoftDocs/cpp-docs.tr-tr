@@ -1,12 +1,9 @@
 ---
 title: OMP_DYNAMIC | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - OMP_DYNAMIC
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - OMP_DYNAMIC OpenMP environment variable
 ms.assetid: e306049d-b644-4b73-8b63-46c835bff98b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fcff25541921ccac9dc2e205480dc6277f620b1
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: de4a81d861bf72943a67356577da37c36df63f69
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ompdynamic"></a>OMP_DYNAMIC
 Çalışma zamanı OpenMP paralel bir bölgede iş parçacığı sayısını ayarlayabilirsiniz olup olmadığını belirtir.  

@@ -1,12 +1,9 @@
 ---
-title: "Önişlemci yönergeleri | Microsoft Docs"
-ms.custom: 
+title: Önişlemci yönergeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 dev_langs:
 - C++
@@ -14,17 +11,15 @@ helpviewer_keywords:
 - directives, preprocessor
 - preprocessor, directives
 ms.assetid: e0fc4564-b6cf-4a36-bf51-6ccd7abd0a94
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2763107b8ca787c6711f1f7d4966c7c530f147af
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: b73f6ce579f94d38621820a63888dc0aa5a75863
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="preprocessor-directives"></a>Ön işlemci Yönergeleri
 Önişlemci yönergeleri gibi `#define` ve **#ifdef**, genellikle kaynak programlar değiştirmek kolay ve farklı bir yürütme ortamlarda derlemek kolay hale getirmek için kullanılır. Kaynak dosyasında yönergeleri belirli eylemleri gerçekleştirmek için önişlemci söyleyin. Örneğin, önişlemci metin belirteçleri değiştirin, diğer dosyaların içeriğini kaynak dosyaya ekleyin veya metin bölümlerini kaldırarak dosya derlenmesini bastır. Önişlemci satırları tanınan ve makrosu genişletme önce gerçekleştirilen. Bu nedenle, bir makro önişlemci komutu gibi görünen bir şey halinde genişler varsa, bu komut önişlemci tarafından tanınmıyor.  

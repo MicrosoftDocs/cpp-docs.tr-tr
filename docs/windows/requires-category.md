@@ -1,13 +1,10 @@
 ---
 title: requires_category | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.requires_category
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - requires_category attribute
 ms.assetid: a645fdc6-1ef5-414d-8c56-5fe2686d4687
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 677e3c94a5db69dafb66a5cd33749c129cb35afb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3a6822773292fd651eaae3be5c00fb2b693a80a9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="requirescategory"></a>requires_category
 Hedef sınıf gerekli bir bileşen kategorilerini belirtir.  
@@ -72,7 +67,7 @@ class CMyClass {};
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**,`struct`|  
+|**Uygulandığı öğe:**|**sınıf**, `struct`|  
 |**Yinelenebilir**|Hayır|  
 |**Gerekli öznitelikler**|Bir veya daha fazlasını: **coclass**, **ProgID**, veya **vi_progid**.|  
 |**Geçersiz öznitelikler**|Yok.|  

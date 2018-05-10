@@ -2,20 +2,15 @@
 title: '&lt;sstream&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - sstream/std::swap
 ms.assetid: bc9607e8-7c6b-44ef-949b-19e917b450ad
-caps.latest.revision: 10
-manager: ghogen
-ms.openlocfilehash: 7f8edd2b2558100a5850def3b0fcb2b2f72b14d9
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: f98e5fc9521165d5599f904975e348276f346ea4
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltsstreamgt-functions"></a>&lt;sstream&gt; işlevleri
 

@@ -2,9 +2,6 @@
 title: '&lt;type_traits&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - type_traits/std::is_assignable
@@ -18,8 +15,6 @@ f1_keywords:
 - type_traits/std::is_trivially_move_assignable
 - type_traits/std::is_trivially_move_constructible
 ms.assetid: dce4492f-f3e4-4d5e-bdb4-5875321254ec
-caps.latest.revision: 13
-manager: ghogen
 helpviewer_keywords:
 - std::is_assignable
 - std::is_copy_assignable
@@ -31,11 +26,11 @@ helpviewer_keywords:
 - std::is_trivially_copy_assignable
 - std::is_trivially_move_assignable
 - std::is_trivially_move_constructible
-ms.openlocfilehash: 1d2db7b749bfc4266a613b872e32965ff16a4c4c
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: ff6d6066d90fe5049b89586ce657e62860c12f9f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="lttypetraitsgt-functions"></a>&lt;type_traits&gt; işlevleri
 

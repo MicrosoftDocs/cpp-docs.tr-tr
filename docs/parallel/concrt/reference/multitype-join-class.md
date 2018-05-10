@@ -1,12 +1,9 @@
 ---
-title: "multitype_join sınıfı | Microsoft Docs"
-ms.custom: 
+title: multitype_join sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - multitype_join
@@ -26,17 +23,15 @@ dev_langs:
 helpviewer_keywords:
 - multitype_join class
 ms.assetid: 236e87a0-4867-49fd-869a-bef4010e49a7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62d91f878a8330b6e4fe60f7e24ad25c779b868d
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: e91080621fbaec089079cad6e2a3c8d32e6cfacb
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="multitypejoin-class"></a>multitype_join Sınıfı
 A `multitype_join` ileti bloğu her kaynaklarının farklı türlerde iletiler birlikte birleştiren ve hedeflerine birleşik iletileri dizisi sunar çok kaynak, tek hedef ileti bloğu.  
@@ -77,13 +72,13 @@ class multitype_join: public ISource<typename _Unwrap<T>::type>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[accept](#accept)|Bu tarafından sunulan bir iletiyi kabul `multitype_join` çağırana sahipliğini aktarma bloğu.|  
+|[Kabul et](#accept)|Bu tarafından sunulan bir iletiyi kabul `multitype_join` çağırana sahipliğini aktarma bloğu.|  
 |[acquire_ref](#acquire_ref)|Bu başvuru sayısı edinir `multitype_join` silinmesini önlemek için ileti bloğu.|  
 |[Kullanma](#consume)|Daha önce tarafından sunulan bir ileti tüketir `multitype_join` blok Mesajlaşma ve başarıyla çağırana sahipliğini aktarma hedef tarafından ayrılmış.|  
 |[link_target](#link_target)|Hedef blok için bağlantılar `multitype_join` ileti bloğu.|  
-|[release](#release)|Bir önceki başarılı ileti ayırma serbest bırakır.|  
+|[Sürüm](#release)|Bir önceki başarılı ileti ayırma serbest bırakır.|  
 |[release_ref](#release_ref)|Serbest başvuru sayısı bu `multiple_join` ileti bloğu.|  
-|[reserve](#reserve)|Daha önce bu tarafından sunulan bir ileti ayırır `multitype_join` ileti bloğu.|  
+|[ayırma](#reserve)|Daha önce bu tarafından sunulan bir ileti ayırır `multitype_join` ileti bloğu.|  
 |[unlink_target](#unlink_target)|Hedef blok bu bağlantıyı keser `multitype_join` ileti bloğu.|  
 |[unlink_targets](#unlink_targets)|Tüm hedefleri bu bağlantıyı keser `multitype_join` ileti bloğu. (Geçersiz kılmaları [Isource::unlink_targets](isource-class.md#unlink_targets).)|  
   
@@ -135,7 +130,7 @@ virtual void acquire_ref(_Inout_ ITarget<_Destination_type>* _PTarget);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem tarafından çağrılır bir `ITarget` sırasında bu kaynak için bağlantılı nesne `link_target` yöntemi.  
   
-##  <a name="consume">Kullanma</a> 
+##  <a name="consume"></a> Kullanma 
 
  Daha önce tarafından sunulan bir ileti tüketir `multitype_join` blok Mesajlaşma ve başarıyla çağırana sahipliğini aktarma hedef tarafından ayrılmış.  
   

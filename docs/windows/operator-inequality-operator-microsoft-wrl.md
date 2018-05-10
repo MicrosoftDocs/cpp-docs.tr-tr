@@ -1,30 +1,25 @@
 ---
-title: "operator! = işleci (Microsoft::WRL) | Microsoft Docs"
-ms.custom: 
+title: operator! = işleci (Microsoft::WRL) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::operator!=
 dev_langs:
 - C++
 ms.assetid: 785435da-87a6-4454-9bce-9d288a96dc26
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5a379d367729a738f2a0a8b099a29eb6b274bacb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c972687973cbaa66d4b79a883e8b008cd588e237
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="operator-operator-microsoftwrl"></a>operator!= İşleç (Microsoft::WRL)
 Eşitsizlik işleci için [ComPtr](../windows/comptr-class.md) ve [ComPtrRef](../windows/comptrref-class.md) nesneleri.  
@@ -74,7 +69,7 @@ WRL_NOTHROW bool operator!=(
  Doğru nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true`nesneleri eşit değilse; Aksi takdirde `false`.  
+ `true` nesneleri eşit değilse; Aksi takdirde `false`.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

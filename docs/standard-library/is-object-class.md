@@ -2,11 +2,8 @@
 title: is_object sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - type_traits/std::is_object
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - is_object class
 - is_object
 ms.assetid: b452ceea-5676-488f-925b-ab881126c387
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80995ae8f812d69958fedd0d499ed0527639b318
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 3eaae998f1ca975e8eb4d102c8f7793ac8ab3b34
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="isobject-class"></a>is_object Sınıfı
 

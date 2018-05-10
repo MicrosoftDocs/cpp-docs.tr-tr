@@ -1,13 +1,10 @@
 ---
-title: "(Simgeler için görüntü Düzenleyicisi) piksel kılavuzunu görüntüleme veya gizleme | Microsoft Docs"
-ms.custom: 
+title: (Simgeler için görüntü Düzenleyicisi) piksel kılavuzunu görüntüleme veya gizleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - Image editor [C++], grid settings
 - grid settings, Image editor
 ms.assetid: 571afcd7-94fb-433e-a652-c087d5665db1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7767136d99027584cc2ab27c0fc0bf44cf4fd6dc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: adc8738f35e3018513355275b2dda43b745b011f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="displaying-or-hiding-the-pixel-grid-image-editor-for-icons"></a>Piksel Kılavuzunu Görüntüleme veya Gizleme (Simgeler İçin Görüntü Düzenleyicisi)
 Büyütme katsayısını 4 veya daha büyük olan tüm görüntü Düzenleyicisi bölmeleri için tek tek piksel cinsinden görüntü sınırlandıran bir kılavuz görüntüleyebilirsiniz.  

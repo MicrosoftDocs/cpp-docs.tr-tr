@@ -1,13 +1,10 @@
 ---
-title: "Çoklu iş parçacığı kullanımı: Eşitleme sınıflarını kullanma zamanı | Microsoft Docs"
-ms.custom: 
+title: 'Çoklu iş parçacığı kullanımı: Eşitleme sınıflarını kullanma zamanı | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,17 +17,15 @@ helpviewer_keywords:
 - threading [C++], synchronization
 - multithreading [C++], synchronization classes
 ms.assetid: 4914f54e-68ac-438f-93c9-c013455a657e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38437983552dfdf2cf6708ec5fd067e06387ea5c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b05922b826de81b5192b183e1c0afdfcda189f03
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="multithreading-when-to-use-the-synchronization-classes"></a>Çoklu İş Parçacığı Kullanımı: Eşitleme Sınıfları Ne Zaman Kullanılır?
 MFC ile sağlanan birden çok iş parçacıklı sınıfları iki kategoriye ayrılır: eşitleme nesneleri ([CSyncObject](../mfc/reference/csyncobject-class.md), [CSemaphore](../mfc/reference/csemaphore-class.md), [CMutex](../mfc/reference/cmutex-class.md), [ CCriticalSection](../mfc/reference/ccriticalsection-class.md), ve [CEvent](../mfc/reference/cevent-class.md)) ve eşitleme erişim nesneler ([CMultiLock](../mfc/reference/cmultilock-class.md) ve [CSingleLock](../mfc/reference/csinglelock-class.md)).  

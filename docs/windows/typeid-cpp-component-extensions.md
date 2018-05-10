@@ -1,30 +1,25 @@
 ---
-title: "TypeId (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: TypeId (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - typeid keyword [C++]
 ms.assetid: e9706cae-e7c4-4d6d-b474-646d73df3e70
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 20a3b1153bbb8a8502a54aa74998817abf191860
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: db1efac0a38aaa11238452e418277f78dbcd6d9d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="typeid--c-component-extensions"></a>typeid (C++ Bileşen Uzantıları)
 Bir nesne türünü belirten bir değer alır.  
@@ -72,20 +67,20 @@ type::typeid
   
  **Parametreler**  
   
- *türü*  
+ *Türü*  
  System::Type nesne istediğiniz bir türü (soyut bildirimcisi) adı.  
   
  **Açıklamalar**  
   
- `typeid`almak için kullanılan <xref:System.Type> derleme zamanında bir tür için.  
+ `typeid` almak için kullanılan <xref:System.Type> derleme zamanında bir tür için.  
   
- `typeid`çalışma zamanı kullanarak bir tür için System::Type alma için benzer <xref:System.Type.GetType%2A> veya <xref:System.Object.GetType%2A>. Ancak, TypeID yalnızca bir tür adı bir parametre olarak kabul eder.  GetType System::Type adını almak için bir türünün bir örneği kullanmak istiyorsanız kullanın.  
+ `typeid` çalışma zamanı kullanarak bir tür için System::Type alma için benzer <xref:System.Type.GetType%2A> veya <xref:System.Object.GetType%2A>. Ancak, TypeID yalnızca bir tür adı bir parametre olarak kabul eder.  GetType System::Type adını almak için bir türünün bir örneği kullanmak istiyorsanız kullanın.  
   
- `typeid`GetType çalışma zamanında döndürülecek tür değerlendirir ancak derleme zamanında tür adı (tür) değerlendirebilir olmalıdır.  
+ `typeid` GetType çalışma zamanında döndürülecek tür değerlendirir ancak derleme zamanında tür adı (tür) değerlendirebilir olmalıdır.  
   
- `typeid`yerel tür adı veya yerel tür adı için ortak dil çalışma zamanı diğer adı alabilir; bkz: [C++ yerel türlerinin .NET Framework eşdeğerleri (C + +/ CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md) daha fazla bilgi için.  
+ `typeid` yerel tür adı veya yerel tür adı için ortak dil çalışma zamanı diğer adı alabilir; bkz: [C++ yerel türlerinin .NET Framework eşdeğerleri (C + +/ CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md) daha fazla bilgi için.  
   
- `typeid`Ayrıca bir System::Type hala döndürülecek rağmen yerel türleri ile çalışır.  Type_info yapısı almak için [typeid işleci](../cpp/typeid-operator.md).  
+ `typeid` Ayrıca bir System::Type hala döndürülecek rağmen yerel türleri ile çalışır.  Type_info yapısı almak için [typeid işleci](../cpp/typeid-operator.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
  Derleyici seçeneği:   **/CLR**  

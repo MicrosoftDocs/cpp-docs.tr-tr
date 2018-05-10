@@ -1,29 +1,24 @@
 ---
-title: "Zamanlayıcı ilkeleri | Microsoft Docs"
-ms.custom: 
+title: Zamanlayıcı ilkeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - scheduler policies
 ms.assetid: 58fb68bd-4a57-40a8-807b-6edb6f083cd9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c2e669a429bebbfde19f54200610819d0849d8f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7d9c855260df34290d01f1eeeee89e8bfe8988de
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="scheduler-policies"></a>Scheduler İlkeleri
 Bu belge eşzamanlılık çalışma zamanı Zamanlayıcı ilkeleri rolü açıklanmaktadır. A *Zamanlayıcı İlkesi* Zamanlayıcısı görevleri yönettiğinde kullanan stratejisi denetler. Örneğin, en yürütmek için bazı görevler gerektiren bir uygulama göz önünde bulundurun `THREAD_PRIORITY_NORMAL` ve diğer görevleri, yürütülecek `THREAD_PRIORITY_HIGHEST`.  İki Zamanlayıcı örnekleri oluşturabilirsiniz: belirten bir `ContextPriority` ilkenin `THREAD_PRIORITY_NORMAL` ve aynı ilkenin belirten başka `THREAD_PRIORITY_HIGHEST`.  
@@ -43,12 +38,12 @@ Bu belge eşzamanlılık çalışma zamanı Zamanlayıcı ilkeleri rolü açıkl
   
 |İlke anahtarı|Açıklama|Varsayılan Değer|  
 |----------------|-----------------|-------------------|  
-|`SchedulerKind`|A [concurrency::SchedulerType](reference/concurrency-namespace-enums.md#schedulertype) görevleri zamanlamak için kullanılacak iş parçacıklarının türünü belirten değer.|`ThreadScheduler`(normal iş parçacığı kullanın). Bu anahtar için tek geçerli değer budur.|  
+|`SchedulerKind`|A [concurrency::SchedulerType](reference/concurrency-namespace-enums.md#schedulertype) görevleri zamanlamak için kullanılacak iş parçacıklarının türünü belirten değer.|`ThreadScheduler` (normal iş parçacığı kullanın). Bu anahtar için tek geçerli değer budur.|  
 |`MaxConcurrency`|Bir `unsigned int` Zamanlayıcı kullandığı eşzamanlılık kaynaklarının sayısını belirten değer.|[CONCURRENCY::MaxExecutionResources](reference/concurrency-namespace-constants1.md#maxexecutionresources)|  
 |`MinConcurrency`|Bir `unsigned int` Zamanlayıcı kullandığı eşzamanlılık kaynaklarının en az sayıda belirten değer.|`1`|  
 |`TargetOversubscriptionFactor`|Bir `unsigned int` her işleme kaynak ayırmak için kaç tane iş parçacıkları belirten değer.|`1`|  
 |`LocalContextCacheSize`|Bir `unsigned int` her sanal işlemci yerel sırada önbelleğe alınabilir bağlamları en fazla sayısını belirten değer.|`8`|  
-|`ContextStackSize`|Bir `unsigned int` yığın boyutu kilobayt her bağlam için ayrılacak belirten değer.|`0`(varsayılan yığın boyutunu kullanın)|  
+|`ContextStackSize`|Bir `unsigned int` yığın boyutu kilobayt her bağlam için ayrılacak belirten değer.|`0` (varsayılan yığın boyutunu kullanın)|  
 |`ContextPriority`|Bir `int` her bağlam iş parçacığı önceliğini belirten değer. Bu, geçirebilirsiniz herhangi bir değer olabilir [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) veya `INHERIT_THREAD_PRIORITY`.|`THREAD_PRIORITY_NORMAL`|  
 
 |`SchedulingProtocol`| A [concurrency::SchedulingProtocolType](reference/concurrency-namespace-enums.md#schedulingprotocoltype) kullanılacak zamanlama algoritmayı belirten değer. |`EnhanceScheduleGroupLocality`|  

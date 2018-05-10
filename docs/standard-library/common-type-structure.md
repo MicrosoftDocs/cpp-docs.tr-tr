@@ -2,28 +2,23 @@
 title: common_type yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - chrono/std::common_type
 dev_langs:
 - C++
 ms.assetid: 2b42722c-c3dc-4d62-8613-0271e52b6f00
-caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a16f8cdbce8a9dd754913c148923b686b83760f
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 0abe4480c95e598706365060db500661a2b48b24
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="commontype-structure"></a>common_type Yapısı
 

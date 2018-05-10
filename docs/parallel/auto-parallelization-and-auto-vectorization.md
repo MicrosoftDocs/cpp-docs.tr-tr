@@ -1,27 +1,22 @@
 ---
-title: "Otomatik Paralelleştirme ve otomatik Vektörleştirme | Microsoft Docs"
-ms.custom: 
+title: Otomatik Paralelleştirme ve otomatik Vektörleştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: ec71583a-287b-4599-8767-1d255e080fe3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b458dbe06bd69817c659c3bfec1d1ab7a216d1f
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 0b1ec19065647f78b4d9b2665003c0aa3a2795ba
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="auto-parallelization-and-auto-vectorization"></a>Otomatik Paralelleştirme ve Otomatik Vektörleştirme
 Otomatik paralel hale getirici ve otomatik vektör hale getirici otomatik performans artışı kodunuzda döngüler sağlamak için tasarlanmıştır.  
@@ -120,7 +115,7 @@ for (int i = 0; i < 1000; ++i)
  Vektör yapıcı uygulamada nasıl çalıştığını gösteren bir örnek için bkz: [proje Ankara'da Kısım 2 / 6: sayfa Curling](http://blogs.msdn.com/b/vcblog/archive/2012/09/27/10348494.aspx)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [döngü](../preprocessor/loop.md)   
+ [Döngü](../preprocessor/loop.md)   
  [Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=263662)   
  [/ Qpar (otomatik paralel hale getirici)](../build/reference/qpar-auto-parallelizer.md)   
  [/ Qpar (otomatik paralel hale getirici düzeyi raporlama) raporu](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)   

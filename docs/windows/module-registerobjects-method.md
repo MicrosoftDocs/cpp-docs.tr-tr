@@ -1,12 +1,9 @@
 ---
-title: "Module::RegisterObjects yöntemi | Microsoft Docs"
-ms.custom: 
+title: Module::RegisterObjects yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::Module::RegisterObjects
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - RegisterObjects method
 ms.assetid: db4077b7-068d-4534-aaa5-41b5444ccb49
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5e73a59ff18c16a898ca1a9d7919615a2dec18bc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 986dcfff49529eedd8d495f4c37e19fa2b6cb8bc
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="moduleregisterobjects-method"></a>Module::RegisterObjects Yöntemi
 Diğer uygulamalar için bağlanabilmesi için COM veya Windows çalışma zamanı nesneleri kaydeder.  

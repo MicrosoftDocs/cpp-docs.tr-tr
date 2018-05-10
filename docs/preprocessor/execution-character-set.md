@@ -1,13 +1,10 @@
 ---
 title: execution_character_set | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - execution_character_set
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - pragma execution_character_set
 ms.assetid: 32248cbc-7c92-4dca-8442-230c052b53ad
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eda04de6975708b2460e53681e50f8ea4f9dbcd3
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 2b6cb84ae6ffebda3dd335bc001463e2d8579f99
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="executioncharacterset"></a>execution_character_set
 Dize ve karakter değişmez değerleri için kullanılan yürütme karakter kümesini belirtir. Bu yönerge u8 öneki ile işaretlenmiş değişmez değerleri için gerekli değildir.  

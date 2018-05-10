@@ -2,11 +2,8 @@
 title: numpunct sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xlocnum/std::numpunct
@@ -39,17 +36,15 @@ helpviewer_keywords:
 - std::numpunct [C++], thousands_sep
 - std::numpunct [C++], truename
 ms.assetid: 73fb93cc-ac11-4c98-987c-bfa6267df596
-caps.latest.revision: 22
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7e3c2dd6707e0a6e2d308e80b60dff2b6debae2
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: fa161e1eec0e02097f22bb15f825542a6928111b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="numpunct-class"></a>numpunct Sınıfı
 

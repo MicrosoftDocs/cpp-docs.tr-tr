@@ -1,12 +1,9 @@
 ---
-title: "Extent sınıfı (C++ AMP) | Microsoft Docs"
-ms.custom: 
+title: Extent sınıfı (C++ AMP) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - extent
@@ -21,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - extent structure
 ms.assetid: edb5de3d-3935-4dbb-8365-4cc6c4fb0269
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a8606b01ac5d3676b06c93c373677f2eb85d954
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 901ba590d208db7c9cf3803e77e8481a2b896ea2
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="extent-class-c-amp"></a>extent Sınıfı (C++ AMP)
 Bir vektör temsil eden *N* sınırlarına belirten Tamsayı değerleri bir *N*-0 olan bir kaynağı sahip boyutlu alanı. Vektör değerleri en önemli için en az önemli sıralanır.  
@@ -73,16 +68,16 @@ class extent;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[operator-](#operator_min)|Yeni bir döndürür `extent` çıkarılmasıyla oluşturulan nesne `index` karşılık gelen gelen öğeleri `extent` öğeleri.|  
-|[operator--](#operator_min_min)|Azaltır her öğeye `extent` nesnesi.|  
+|[--işleci](#operator_min_min)|Azaltır her öğeye `extent` nesnesi.|  
 |[operator%=](#operator_mod_eq)|Her bir öğe mod (Kalan) hesaplar `extent` nesne bu öğe bir sayıyla ayrıldığında.|  
 |[operator*=](#operator_star_eq)|Her öğeye çarpar `extent` bir sayıyla nesnesi.|  
-|[operator/=](#operator_min_eq)|Her öğeye böler `extent` bir sayıyla nesnesi.|  
-|[extent::operator\[\]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|  
-|[operator+](#operator_add)|Yeni bir döndürür `extent` karşılık gelen ekleyerek oluşturulan nesne `index` ve `extent` öğeleri.|  
-|[operator++](#operator_add_add)|Her öğeye artırır `extent` nesnesi.|  
+|[/ = işleci](#operator_min_eq)|Her öğeye böler `extent` bir sayıyla nesnesi.|  
+|[Extent::operator\[\]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|  
+|[operator +](#operator_add)|Yeni bir döndürür `extent` karşılık gelen ekleyerek oluşturulan nesne `index` ve `extent` öğeleri.|  
+|[operator ++](#operator_add_add)|Her öğeye artırır `extent` nesnesi.|  
 |[operator+=](#operator_add_eq)|Her öğe, belirtilen sayı ekler `extent` nesnesi.|  
 |[operator=](#operator_eq)|Başka bir içeriğini kopyalar `extent` bunu nesnesine.|  
-|[operator-=](#operator_min_eq)|Her öğe, belirtilen sayıdan çıkarır `extent` nesnesi.|  
+|[-= işleci](#operator_min_eq)|Her öğe, belirtilen sayıdan çıkarır `extent` nesnesi.|  
 
   
 ### <a name="public-constants"></a>Genel sabitler  
@@ -95,7 +90,7 @@ class extent;
  `extent`  
 
 
-## <a name="contains">içerir</a> 
+## <a name="contains"></a> içerir 
 
 Gösterir olup belirtilen [dizin](index-class.md) değeri 'kapsam' nesnesi içinde bulunan.  
   
@@ -151,7 +146,7 @@ explicit extent(const int _Array[_Rank])restrict(amp,cpu);
   
  Bir dizi oluşturmak için kullanılan bir `extent` nesnesi, dizi uzunluğu, derecesini eşleşmelidir `extent` nesnesi.  
   
-##  <a name="operator_mod_eq"></a> operator%= 
+##  <a name="operator_mod_eq"></a> operator % = 
 
 Bu öğe bir sayıyla ayrıldığında her bir öğesinde 'kapsam' mod (Kalan) hesaplar.  
   
@@ -346,7 +341,7 @@ Rank 'kapsam' nesnesinin depolar.
 static const int rank = _Rank;  
 ```  
   
-##  <a name="size">Boyutu</a> 
+##  <a name="size"></a> Boyutu 
 
 Toplam doğrusal boyutu döndüren `extent` nesnesinde (öğeleri birimleri).  
   
@@ -356,7 +351,7 @@ Toplam doğrusal boyutu döndüren `extent` nesnesinde (öğeleri birimleri).
 unsigned int size() const restrict(amp,cpu);  
 ```  
   
-## <a name="tile">Döşeme</a> 
+## <a name="tile"></a> Döşeme 
 
 Belirtilen döşeme boyutlarla tiled_extent nesnesi oluşturur.
 

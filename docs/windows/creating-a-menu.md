@@ -1,13 +1,10 @@
 ---
-title: "Menü oluşturma | Microsoft Docs"
-ms.custom: 
+title: Menü oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.menu
 dev_langs:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - menus, associating commands with mnemonic keys
 - menus, creating
 ms.assetid: 66f94448-9b97-4b73-bf97-10d4bf87cc65
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7d5d600a168c93b663ebe446ddd912d98fee1b19
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 95d9051e44216de9a64b68fc112fe8f17de112e3
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="creating-a-menu"></a>Menü Oluşturma
 > [!NOTE]

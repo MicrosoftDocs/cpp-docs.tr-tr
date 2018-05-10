@@ -1,13 +1,10 @@
 ---
-title: "Paralel kapsayıcılar ve nesneler | Microsoft Docs"
-ms.custom: 
+title: Paralel kapsayıcılar ve nesneler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - parallel containers
 - concurrent containers
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9159b9c8170ee73afd8bee5305506a842368a231
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 168705c5d7497a0bcbede505760d49cdb63a3762
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="parallel-containers-and-objects"></a>Paralel Kapsayıcılar ve Nesneler
 Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğelerini iş parçacığı açısından güvenli erişim sağlayan nesneleri içerir.  
@@ -34,7 +29,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
  A *eşzamanlı nesne* eşzamanlı olarak bileşenler arasında paylaşılır. Paralel eşzamanlı bir nesnenin durumu hesaplar bir işlem aynı duruma seri olarak hesaplar başka bir işlem olarak aynı sonucu verir. [Concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) sınıfı eşzamanlı nesne türünün bir örnektir. `combinable` Sınıfı, paralel olarak hesaplamalar ve ardından bu hesaplamaların nihai sonucu içine birleştirme olanak sağlar. Aksi takdirde eşitleme mekanizması, örneğin, bir mutex paylaşılan değişken ya da kaynağa erişimi eşitlemek için kullanacağınız eşzamanlı nesneleri kullanın.  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Bu konu aşağıdaki paralel kapsayıcılar ve nesneler ayrıntılı açıklar.  
   
  Eş zamanlı kapsayıcılar:  
@@ -75,10 +70,10 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
     -   [Örnekler](#combinable-examples)  
   
-##  <a name="vector"></a>concurrent_vector sınıfı  
+##  <a name="vector"></a> concurrent_vector sınıfı  
  [Concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) sınıftır olduğu gibi bir dizi kapsayıcı [std::vector](../../standard-library/vector-class.md) sınıfı, rastgele öğeleri erişmenize olanak tanır. `concurrent_vector` Eşzamanlılık güvenli Ekle sınıfını etkinleştirir ve öğesi erişim işlemleri. Ekleme işlemleri mevcut işaretçileri veya yineleyiciler geçersiz değil. Yineleyici erişim ve çapraz geçiş işlemlerini de eşzamanlılık güvenlidir.  
   
-###  <a name="vector-differences"></a>Concurrent_vector arasındaki farklar ve vektör  
+###  <a name="vector-differences"></a> Concurrent_vector arasındaki farklar ve vektör  
  `concurrent_vector` Sınıfı çok benzeyen `vector` sınıfı. Ekle, öğe erişim ve yineleyici erişim işlemlerine karmaşıklığını bir `concurrent_vector` nesnesi aynı olan bir `vector` nesnesi. Aşağıdaki noktaları nerede göstermeye `concurrent_vector` farklıdır `vector`:  
   
 -   Ekleme, öğesi erişim, yineleyici erişim ve yineleyici geçişi işlemler üzerinde bir `concurrent_vector` nesne eşzamanlılık güvenli.  
@@ -98,7 +93,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
 -   Çalışma zamanı özelleştirilmiş bir sürümünü tanımlamaz `concurrent_vector` türü için `bool`.  
   
-###  <a name="vector-safety"></a>Eşzamanlılık uyumlu işlemler  
+###  <a name="vector-safety"></a> Eşzamanlılık uyumlu işlemler  
  Eklemek veya boyutunu artırın tüm yöntemleri bir `concurrent_vector` nesnesi veya bir öğedeki erişim bir `concurrent_vector` nesne, eşzamanlılık güvenlidir. Bu kural için özel durum `resize` yöntemi.  
   
  Aşağıdaki tabloda ortak gösterilmektedir `concurrent_vector` yöntemleri ve eşzamanlılık güvenli işleçler.  
@@ -106,7 +101,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
 ||||  
 |-|-|-|  
 
-|[konumundaki](reference/concurrent-vector-class.md#at)|[son](reference/concurrent-vector-class.md#end)|[işleci &#91; &#93;](reference/concurrent-vector-class.md#operator_at)|  
+|[konumundaki](reference/concurrent-vector-class.md#at)|[son](reference/concurrent-vector-class.md#end)|[işleci&#91;&#93;](reference/concurrent-vector-class.md#operator_at)|  
 |[Begin](reference/concurrent-vector-class.md#begin)|[ön](reference/concurrent-vector-class.md#front)|[push_back](reference/concurrent-vector-class.md#push_back)|  
 |[Geri](reference/concurrent-vector-class.md#back)|[grow_by](reference/concurrent-vector-class.md#grow_by)|[rbegin](reference/concurrent-vector-class.md#rbegin)|  
 |[Kapasite](reference/concurrent-vector-class.md#capacity)|[grow_to_at_least](reference/concurrent-vector-class.md#grow_to_at_least)|[rend](reference/concurrent-vector-class.md#rend)|  
@@ -131,7 +126,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
 
  Ancak `end` yöntemdir eşzamanlılık uyumlu eşzamanlı çağrı [push_back](reference/concurrent-vector-class.md#push_back) yöntemi tarafından döndürülen değer neden `end` değiştirmek için. Yineleyici geçeceğini öğeler belirsiz sayısıdır. Bu nedenle, bu program, onu çalıştıran her zaman farklı bir sonuç üretebilir.  
   
-###  <a name="vector-exceptions"></a>Özel durum güvenliği  
+###  <a name="vector-exceptions"></a> Özel durum güvenliği  
  Büyüme veya atama işlemi, durumu aykırı varsa `concurrent_vector` nesnesi geçersiz olur. Davranışını bir `concurrent_vector` geçersiz bir durumda olan nesne, aksi belirtilmediği sürece tanımlanmadı. Ancak, nesne geçersiz bir durumda olsa bile yıkıcı her zaman nesne ayırır, bellek boşaltır.  
   
  Vektör öğelerin veri türü `T`, aşağıdaki gereksinimleri karşılaması gerekir. Aksi takdirde davranışını `concurrent_vector` sınıfı tanımlanmadı.  
@@ -142,10 +137,10 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
  [[Üst](#top)]  
   
-##  <a name="queue"></a>concurrent_queue sınıfı  
+##  <a name="queue"></a> concurrent_queue sınıfı  
  [Concurrency::concurrent_queue](../../parallel/concrt/reference/concurrent-queue-class.md) sınıfı, tıpkı [std::queue](../../standard-library/queue-class.md) sınıfı, kendi ön erişim ve yedekleme öğeleri sağlar. `concurrent_queue` Sınıfını etkinleştirir eşzamanlılık güvenli enqueue ve işlemleri dequeue. `concurrent_queue` Sınıfı eşzamanlılık güvenli değil yineleyici desteği sağlar.  
   
-###  <a name="queue-differences"></a>Concurrent_queue arasındaki farklar ve sıra  
+###  <a name="queue-differences"></a> Concurrent_queue arasındaki farklar ve sıra  
  `concurrent_queue` Sınıfı çok benzeyen `queue` sınıfı. Aşağıdaki noktaları nerede göstermeye `concurrent_queue` farklıdır `queue`:  
   
 -   Sıraya alma ve üzerinde işlem dequeue bir `concurrent_queue` nesne eşzamanlılık güvenli.  
@@ -160,7 +155,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
 -   `concurrent_queue` SAX [unsafe_size](reference/concurrent-queue-class.md#unsafe_size) yöntemi yerine `size` yöntemi. `unsafe_size` Yöntemi eşzamanlılık uyumlu değil.  
 
   
-###  <a name="queue-safety"></a>Eşzamanlılık uyumlu işlemler  
+###  <a name="queue-safety"></a> Eşzamanlılık uyumlu işlemler  
  Tüm yöntemleri için bu kuyruğa veya gelen dequeue bir `concurrent_queue` nesne eşzamanlılık güvenli.  
   
  Aşağıdaki tabloda ortak gösterilmektedir `concurrent_queue` yöntemleri ve eşzamanlılık güvenli işleçler.  
@@ -183,7 +178,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
 
 
   
-###  <a name="queue-iterators"></a>Yineleyici desteği  
+###  <a name="queue-iterators"></a> Yineleyici desteği  
  `concurrent_queue` Eşzamanlılık güvenli olmayan yineleyiciler sağlar. Yalnızca hata ayıklama için bu yineleyiciler kullanmanızı öneririz.  
   
  A `concurrent_queue` yineleyici yalnızca ileri yönde öğeleri erişir. Aşağıdaki tabloda, her yineleyici desteklediğini işleçleri gösterir.  
@@ -196,7 +191,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
  [[Üst](#top)]  
   
-##  <a name="unordered_map"></a>concurrent_unordered_map sınıfı  
+##  <a name="unordered_map"></a> concurrent_unordered_map sınıfı  
  [HYPERLINK "file:///C:\\\Users\\\thompet\\\AppData\\\Local\\\Temp\\\DxEditor\\\DduePreview\\\Default \\\798d7037-df37-4310-858b-6f590bbf6ebf\\\HTM\\\html\\\a217b4ac-af2b-4d41-94eb-09a75ee28622 "concurrency::concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) sınıfı bir olduğu gibi ilişkilendirilebilir kapsayıcı sınıfı [std::unordered_map](../../standard-library/unordered-map-class.md) sınıfı, öğe türü değişen uzunluk dizisi denetimleri [std::pair\<const anahtar, Ty >](../../standard-library/pair-structure.md). Bir anahtar ve değer çifti eklemek veya bir değeri anahtarının aramak bir sözlük olarak sırasız bir haritasını düşünün. Bu sınıf, birden çok iş parçacığı veya aynı anda paylaşılan bir kapsayıcı erişim, içine eklemek veya güncelleştirmek için olan görevler varsa yararlıdır.  
   
  Aşağıdaki örnek kullanmak için temel yapı gösterir `concurrent_unordered_map`. Bu örnek karakter tuşları ['bir', ' i'] aralığında ekler. İşlem sırası saptanmamış olduğundan her anahtar için son değer de belirlenmemiş. Ancak, paralel olarak eklemeleri gerçekleştirmek güvenli değildir.  
@@ -205,27 +200,27 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
  Kullanan bir örnek `concurrent_unordered_map` bir eşleme gerçekleştirme ve paralel işlem azaltmak için bkz: [nasıl yapılır: eşleme gerçekleştirme ve işlemleri paralel azaltmak](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md).  
   
-###  <a name="map-differences"></a>Concurrent_unordered_map arasındaki farklar ve unordered_map  
+###  <a name="map-differences"></a> Concurrent_unordered_map arasındaki farklar ve unordered_map  
  `concurrent_unordered_map` Sınıfı çok benzeyen `unordered_map` sınıfı. Aşağıdaki noktaları nerede göstermeye `concurrent_unordered_map` farklıdır `unordered_map`:  
   
 -   `erase`, `bucket`, `bucket_count`, Ve `bucket_size` yöntemleri adlı `unsafe_erase`, `unsafe_bucket`, `unsafe_bucket_count`, ve `unsafe_bucket_size`sırasıyla. `unsafe_` Adlandırma kuralını gösterir bu yöntemleri eşzamanlılık güvenli değildir. Eşzamanlılık güvenliği hakkında daha fazla bilgi için bkz: [eşzamanlılık güvenli işlemler](#map-safety).  
   
 -   INSERT işlemlerine varolan işaretçileri veya yineleyiciler geçersiz değil veya zaten eşlemesinde mevcut öğelerin sırasını değiştirmez. INSERT ve çapraz geçiş işlemleri aynı anda oluşabilir.  
   
--   `concurrent_unordered_map`destekler yalnızca yineleme iletin.  
+-   `concurrent_unordered_map` destekler yalnızca yineleme iletin.  
   
 -   Ekleme geçersiz ya da tarafından döndürülen yineleyiciler güncelleştirme `equal_range`. Ekleme eşit olmayan öğeler aralığın sonuna ekleyebilirsiniz. Begin yineleyici eşit bir öğeye işaret eder.  
   
  Kilitlenme, hiçbir yöntemi önlemeye yardımcı olmak için `concurrent_unordered_map` bellek ayırıcısı, karma işlevler veya başka bir kullanıcı tarafından tanımlanan kod çağırdığında bir kilit tutar. Ayrıca, karma işlevi her zaman aynı değere eşit anahtarları değerlendirir emin olmalısınız. En iyi karma işlevlerini anahtarları hep karma kodu alanında dağıtın.  
   
-###  <a name="map-safety"></a>Eşzamanlılık uyumlu işlemler  
+###  <a name="map-safety"></a> Eşzamanlılık uyumlu işlemler  
  `concurrent_unordered_map` Sınıfı eşzamanlılık güvenli Ekle ve öğesi erişim işlemleri sağlar. Ekleme işlemleri, var olan işaretçileri veya yineleyiciler geçersiz. Yineleyici erişim ve çapraz geçiş işlemlerini de eşzamanlılık güvenlidir. Aşağıdaki tabloda, yaygın olarak kullanılan gösterilmektedir `concurrent_unordered_map` yöntemleri ve eşzamanlılık güvenli işleçler.  
   
 |||||  
 |-|-|-|-|  
 |[konumundaki](reference/concurrent-unordered-map-class.md#at)|`count`|`find`|[key_eq](reference/concurrent-unordered-map-class.md#key_eq)|  
 |`begin`|`empty`|`get_allocator`|`max_size`|  
-|`cbegin`|`end`|`hash_function`|[operator &#91; &#93;](reference/concurrent-unordered-map-class.md#operator_at)|  
+|`cbegin`|`end`|`hash_function`|[işleci&#91;&#93;](reference/concurrent-unordered-map-class.md#operator_at)|  
 |`cend`|`equal_range`|[Ekle](reference/concurrent-unordered-map-class.md#insert)|`size`|  
   
  Rağmen `count` yöntemi çağrılabilir güvenli iş parçacığı eşzamanlı olarak çalışan, farklı iş parçacıkları, farklı sonuçlar alabilir, yeni değer aynı anda kapsayıcıya eklediyseniz.  
@@ -235,7 +230,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
 ||||  
 |-|-|-|  
 |`clear`|`max_load_factor`|`rehash`|  
-|`load_factor`|[işleç =](reference/concurrent-unordered-map-class.md#operator_eq) 
+|`load_factor`|[operator=](reference/concurrent-unordered-map-class.md#operator_eq) 
 
 
   
@@ -243,7 +238,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
  [[Üst](#top)]  
   
-##  <a name="unordered_multimap"></a>concurrent_unordered_multimap sınıfı  
+##  <a name="unordered_multimap"></a> concurrent_unordered_multimap sınıfı  
  [Concurrency::concurrent_unordered_multimap](../../parallel/concrt/reference/concurrent-unordered-multimap-class.md) sınıfı çok benzeyen `concurrent_unordered_map` aynı anahtara eşlemek birden çok değeri sağlar ancak bu sınıf. Bu aynı zamanda farklı `concurrent_unordered_map` aşağıdaki yollarla:  
   
 -   [Concurrent_unordered_multimap::insert](reference/concurrent-unordered-multimap-class.md#insert) yöntemi döndürür yineleyici yerine `std::pair<iterator, bool>`.  
@@ -251,13 +246,13 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
 -   `concurrent_unordered_multimap` Sınıfı sağlamaz `operator[]` veya `at` yöntemi.  
   
- Aşağıdaki örnek kullanmak için temel yapı gösterir `concurrent_unordered_multimap`. Bu örnek karakter tuşları ['bir', ' i'] aralığında ekler. `concurrent_unordered_multimap`birden çok değer bir anahtar sağlar.  
+ Aşağıdaki örnek kullanmak için temel yapı gösterir `concurrent_unordered_multimap`. Bu örnek karakter tuşları ['bir', ' i'] aralığında ekler. `concurrent_unordered_multimap` birden çok değer bir anahtar sağlar.  
   
  [!code-cpp[concrt-unordered-multimap-structure#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_3.cpp)]  
   
  [[Üst](#top)]  
   
-##  <a name="unordered_set"></a>concurrent_unordered_set sınıfı  
+##  <a name="unordered_set"></a> concurrent_unordered_set sınıfı  
  [Concurrency::concurrent_unordered_set](../../parallel/concrt/reference/concurrent-unordered-set-class.md) sınıfı çok benzeyen `concurrent_unordered_map` anahtar ve değer çiftleri yerine değerlerini yönetir ancak bu sınıf. `concurrent_unordered_set` Sınıfı sağlamaz `operator[]` veya `at` yöntemi.  
   
  Aşağıdaki örnek kullanmak için temel yapı gösterir `concurrent_unordered_set`. Bu örnek karakter değerleri aralığı ['bir', ' i'] ekler. Paralel olarak eklemeleri gerçekleştirmek güvenlidir.  
@@ -266,7 +261,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
  [[Üst](#top)]  
   
-##  <a name="unordered_multiset"></a>concurrent_unordered_multiset sınıfı  
+##  <a name="unordered_multiset"></a> concurrent_unordered_multiset sınıfı  
  [Concurrency::concurrent_unordered_multiset](../../parallel/concrt/reference/concurrent-unordered-multiset-class.md) sınıfı çok benzeyen `concurrent_unordered_set` için yinelenen değerler sağlar ancak bu sınıf. Bu aynı zamanda farklı `concurrent_unordered_set` aşağıdaki yollarla:  
   
 
@@ -275,18 +270,18 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
 -   `concurrent_unordered_multiset` Sınıfı sağlamaz `operator[]` veya `at` yöntemi.  
   
- Aşağıdaki örnek kullanmak için temel yapı gösterir `concurrent_unordered_multiset`. Bu örnek karakter değerleri aralığı ['bir', ' i'] ekler. `concurrent_unordered_multiset`birden çok kez gerçekleşmesi bir değer sağlar.  
+ Aşağıdaki örnek kullanmak için temel yapı gösterir `concurrent_unordered_multiset`. Bu örnek karakter değerleri aralığı ['bir', ' i'] ekler. `concurrent_unordered_multiset` birden çok kez gerçekleşmesi bir değer sağlar.  
   
  [!code-cpp[concrt-unordered-multiset#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_5.cpp)]  
   
  [[Üst](#top)]  
   
-##  <a name="combinable"></a>combinable sınıfı  
+##  <a name="combinable"></a> combinable sınıfı  
  [Concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) sınıfı hassas hesaplamalar ve ardından bu hesaplamaların nihai sonucu birleştirme sağlayan yeniden kullanılabilir, iş parçacığı yerel depolama sağlar. Düşünebilirsiniz bir `combinable` nesnesi azaltma değişkeni olarak.  
   
  `combinable` Sınıfı, çeşitli iş parçacığı veya görevler arasında paylaşılan bir kaynak olduğunda yararlıdır. `combinable` Sınıfı, bir kilidi serbest şekilde paylaşılan kaynaklara erişim sağlayarak paylaşılan durum ortadan kaldırmanıza yardımcı olur. Bu nedenle, bu sınıfın birden çok iş parçacığı tarafından paylaşılan verilere erişimi eşitlemek için eşitleme mekanizması, örneğin, bir mutex kullanmaya alternatif sağlar.  
   
-###  <a name="combinable-features"></a>Yöntemleri ve özellikleri  
+###  <a name="combinable-features"></a> Yöntemleri ve özellikleri  
  Aşağıdaki tabloda bazı önemli yöntemlerinden birini gösterilmektedir `combinable` sınıfı. Tüm hakkında daha fazla bilgi için `combinable` sınıfı yöntemlerinin, bkz: [combinable sınıfı](../../parallel/concrt/reference/combinable-class.md).  
   
 |Yöntem|Açıklama|  
@@ -299,7 +294,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
  Ek veri deposundaki bir `combinable` , çağrısından sonra nesne [birleştirmek](reference/combinable-class.md#combine) veya [combine_each](reference/combinable-class.md#combine_each) yöntemleri. Ayrıca, çağırabilirsiniz `combine` ve `combine_each` yöntemleri birden çok kez. Yerel hiçbir değer varsa bir `combinable` nesnesi değişiklikleri `combine` ve `combine_each` yöntemleri adı verilir her zaman aynı sonucu üretir.  
   
-###  <a name="combinable-examples"></a>Örnekler  
+###  <a name="combinable-examples"></a> Örnekler  
  Kullanımıyla ilgili örnekler için `combinable` sınıfında, aşağıdaki konulara bakın:  
   
 -   [Nasıl yapılır: Performansı arttırmak için combinable Kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)  

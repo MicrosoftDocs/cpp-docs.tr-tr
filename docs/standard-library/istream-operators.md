@@ -2,26 +2,21 @@
 title: '&lt;istream&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - istream/std::operator&gt;&gt;
 dev_langs:
 - C++
 ms.assetid: 7174da41-f301-4a34-b631-0ab918b188d2
-caps.latest.revision: 11
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0b1508ff4bd27470fdcb14945bc9ad3317a30b8
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 5068c0bd540b1c44d2cdc484c2e511276bd12666
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltistreamgt-operators"></a>&lt;istream&gt; işleçleri
 

@@ -2,11 +2,8 @@
 title: remove_pointer sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - type_traits/std::remove_pointer
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - remove_pointer class
 - remove_pointer
 ms.assetid: 2cd4e417-32fb-4f53-bd16-4e8a98240832
-caps.latest.revision: 20
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e1a3e1aacbb35984525ebf6d8dbd055a5cbf7b2
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 745711e1dd5abde022d0a21d5cb1ea6c013931a8
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="removepointer-class"></a>remove_pointer Sınıfı
 

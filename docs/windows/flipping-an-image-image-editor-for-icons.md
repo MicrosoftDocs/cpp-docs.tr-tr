@@ -1,13 +1,10 @@
 ---
-title: "Görüntüyü çevirme (simgeler için görüntü Düzenleyicisi) | Microsoft Docs"
-ms.custom: 
+title: Görüntüyü çevirme (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - images [C++], flipping
 - images [C++], rotating
 ms.assetid: a63d251c-7343-4ad6-9442-1faa04a9a2a1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 394b92ce5103a0aa40cf170ede96624104c868cf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4332e1de44682dbd37b67c71bdcc4c107c98a3da
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="flipping-an-image-image-editor-for-icons"></a>Görüntüyü Çevirme (Simgeler İçin Görüntü Düzenleyicisi)
 Çevirebilir veya görüntüye döndürebilirsiniz:  

@@ -2,11 +2,8 @@
 title: '&lt;Sayısal&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - <numeric>
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - <numeric> header
 ms.assetid: 6d6ccb94-48cc-479b-b4a9-bd9c78d4896a
-caps.latest.revision: 23
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a4b65358610b633f296b1fb92065e5f76e84e5b
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: c5705414bdc6915e758d66576855a45db5fcad23
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltnumericgt"></a>&lt;sayısal&gt;
 

@@ -1,12 +1,9 @@
 ---
 title: Azaltma | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - reduction
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - reduction OpenMP clause
 ms.assetid: a2b051af-5a1b-4c00-9cc7-692bb43653fb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f43ae9afac7bdbabe12b7532e2bbc7005fe59a0
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: e20ae1ad9c549aed176d26667d9bdc62a32b8dc7
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="reduction"></a>reduction
 Her iş parçacığı için özel bir veya daha fazla değişken azaltma işlemi paralel bölge sonundaki konu olduğunu belirtir.  

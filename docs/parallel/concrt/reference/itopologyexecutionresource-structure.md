@@ -1,12 +1,9 @@
 ---
-title: "Itopologyexecutionresource yapısı | Microsoft Docs"
-ms.custom: 
+title: Itopologyexecutionresource yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - ITopologyExecutionResource
@@ -18,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - ITopologyExecutionResource structure
 ms.assetid: e36756f7-4cd9-4fa6-ba60-23fea58ef2bf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9b044575fdaccead8c30bd8dca955923a8c5f9e
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: adb456315b2c6d15b7a3696df9a6845a2bd2b899
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="itopologyexecutionresource-structure"></a>ITopologyExecutionResource Yapısı
 Kaynak Yöneticisi tarafından tanımlanan bir yürütme kaynak bir arabirim.  
@@ -45,8 +40,8 @@ struct ITopologyExecutionResource;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ITopologyExecutionResource::GetId](#getid)|Bu yürütme kaynak için Resource Manager'ın benzersiz tanımlayıcısını döndürür.|  
-|[ITopologyExecutionResource::GetNext](#getnext)|Numaralandırma sırasında sonraki yürütme kaynak için bir arabirim döndürür.|  
+|[Itopologyexecutionresource::GetID](#getid)|Bu yürütme kaynak için Resource Manager'ın benzersiz tanımlayıcısını döndürür.|  
+|[Itopologyexecutionresource::GetNext](#getnext)|Numaralandırma sırasında sonraki yürütme kaynak için bir arabirim döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu arabirim, genellikle kaynak yöneticisi tarafından gözlemlenen sistemin topolojisi yürütmek için kullanılır.  

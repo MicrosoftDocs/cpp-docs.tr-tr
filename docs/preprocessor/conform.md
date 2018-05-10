@@ -1,12 +1,9 @@
 ---
 title: uygun | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - conform_CPP
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - forScope conform pragma
 - pragmas, conform
 ms.assetid: 71b3e174-c53c-4bfc-adf3-af39b1554191
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 476228dc1331d005e4886c905256fad23353874c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: b145225cfed3131b406d15827b589aed718d16bb
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="conform"></a>conform
 **C++ özel**  

@@ -1,31 +1,26 @@
 ---
-title: "Birden çok hızlandırma tuşunun özelliklerini değiştirme | Microsoft Docs"
-ms.custom: 
+title: Birden çok hızlandırma tuşunun özelliklerini değiştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - keyboard shortcuts [C++], property changing
 - accelerator tables [C++], changing properties
 ms.assetid: b55c9bd6-b430-48bb-b942-0e6f21d7abf9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8fbe5ab2202da457c8970d84d304ec97fdedd4a1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 11705fcbcdb3dc73fe5c3a87844b2bc5d90cd135
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="changing-the-properties-of-multiple-accelerator-keys"></a>Birden Çok Hızlandırma Tuşunun Özelliklerini Değiştirme
 ### <a name="to-change-the-properties-of-multiple-accelerator-keys"></a>Birden çok hızlandırma tuşunun özelliklerini değiştirmek için  

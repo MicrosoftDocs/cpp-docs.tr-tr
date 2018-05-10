@@ -1,30 +1,25 @@
 ---
-title: "Nasıl yapılır: belirli Zamanlayıcı ilkeleri belirtme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: belirli Zamanlayıcı ilkeleri belirtme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - specifying scheduler policies [Concurrency Runtime]
 - scheduler policies, specifying [Concurrency Runtime]
 ms.assetid: 9c5149f9-ac34-4ff3-9e79-0bad103e4e6b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af30b38a89eb7e4b50c7d31be2d3ba6572843b1e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 988540c19ab94e841e274637b581f0ce8031df13
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-specify-specific-scheduler-policies"></a>Nasıl yapılır: Belirli Zamanlayıcı İlkeleri Belirtme
 Zamanlayıcı ilkeleri Zamanlayıcısı görevleri yönettiğinde kullanan stratejisi denetlemenize olanak verir. Bu konu bir zamanlayıcı İlkesi bir İlerleme göstergesi konsola yazdırır bir görev iş parçacığı önceliğini artırmak için nasıl kullanılacağını gösterir.  

@@ -1,13 +1,10 @@
 ---
-title: "C++ AMP'ye genel bakış | Microsoft Docs"
-ms.custom: 
+title: C++ AMP'ye genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-amp
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0ee5b9c04794c531e2fa16cee72d6eee607dfbd
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: f8de31ab9009a84c04e594837a0c4fbf30758fea
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 C++ hızlandırılmış yoğun paralellik (C++ AMP), bir grafik işlemci birimi (GPU) gibi veri paralel donanım üzerinde ayrı ekran kartı yararlanarak C++ kod yürütmeyi hızlandırır. C++ AMP kullanarak, böylece heterojen donanımda paralellik kullanarak yürütme hızlandırılabilir çok boyutlu veri algoritmaları kodlayabilirsiniz. Çok boyutlu diziler, dizin oluşturma, bellek aktarımı, döşeme ve matematiksel işlev kitaplığının C++ AMP programlama modeli içerir. C++ AMP dil uzantıları, böylece performansı artırabilir nasıl veriler CPU'su tarafından GPU ve geri taşınır denetlemek için kullanabilirsiniz.  

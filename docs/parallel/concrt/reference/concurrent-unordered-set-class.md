@@ -1,12 +1,9 @@
 ---
-title: "concurrent_unordered_set sınıfı | Microsoft Docs"
-ms.custom: 
+title: concurrent_unordered_set sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - concurrent_unordered_set
@@ -22,17 +19,15 @@ dev_langs:
 helpviewer_keywords:
 - concurrent_unordered_set class
 ms.assetid: c61f9a9a-4fd9-491a-9251-e300737ecf4b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 223a34c3cbc651f933b4ee7421030077ba8f878c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: fd73b16725cfe4b30734673bb926d104af0d3264
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="concurrentunorderedset-class"></a>concurrent_unordered_set Sınıfı
 `concurrent_unordered_set` Sınıfı K. türündeki öğeler değişen uzunluk dizisi denetleyen bir eşzamanlılık güvenli kapsayıcı. Sıra sağlayan eşzamanlılık güvenli bir şekilde temsil edilen ekleme, öğe erişim, yineleyici erişim ve yineleyici geçişi işlemleri.  
@@ -100,7 +95,7 @@ template <typename K,
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[hash_function](#hash_function)|Depolanan karma işlev nesnesi döndürür.|  
-|[insert](#insert)|Fazla Yüklendi. Öğelerine ekler `concurrent_unordered_set` nesnesi.|  
+|[Ekle](#insert)|Fazla Yüklendi. Öğelerine ekler `concurrent_unordered_set` nesnesi.|  
 |[key_eq](#key_eq)|Saklı eşitlik karşılaştırması işlev nesnesi döndürür.|  
 |[Değiştirme](#swap)|İki içeriğini değiştirir `concurrent_unordered_set` nesneleri. Bu yöntem eşzamanlılık uyumlu değil.|  
 |[unsafe_erase](#unsafe_erase)|Fazla Yüklendi. Öğelerden kaldırır `concurrent_unordered_set` belirtilen konumlarda. Bu yöntem eşzamanlılık uyumlu değil.|  
@@ -330,7 +325,7 @@ allocator_type get_allocator() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Eşzamanlı bu kapsayıcı için saklı ayırıcısı nesnesi.  
   
-##  <a name="hash_function">hash_function</a> 
+##  <a name="hash_function"></a> hash_function 
 
  Depolanan karma işlev nesnesi döndürür.  
   
@@ -505,7 +500,7 @@ size_type size() const;
 ### <a name="remarks"></a>Açıklamalar  
  Eşzamanlı eklemeleri varlığında dönüş değeri bile okumadan önce hemen bu işlev çağrıldıktan sonra eş zamanlı kapsayıcı öğe sayısı değişebilir.  
   
-##  <a name="swap">Değiştirme</a> 
+##  <a name="swap"></a> Değiştirme 
 
  İki içeriğini değiştirir `concurrent_unordered_set` nesneleri. Bu yöntem eşzamanlılık uyumlu değil.  
   

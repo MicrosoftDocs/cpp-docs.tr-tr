@@ -2,11 +2,8 @@
 title: linear_congruential_engine sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - random/std::linear_congruential_engine
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - linear_congruential_engine class
 ms.assetid: 30e00ca6-1933-4701-9561-54f3e810a5a1
-caps.latest.revision: 21
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85af6002d769f7d817c05bbe8433bb4cb8381828
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 6f902e7a1a3ae4bcb35a4822228425747476d5bc
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="linearcongruentialengine-class"></a>linear_congruential_engine Sınıfı
 

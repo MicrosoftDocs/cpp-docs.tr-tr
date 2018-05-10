@@ -2,11 +2,8 @@
 title: 'vektör&lt;bool&gt;:: reference::flip | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - vector/std::vector<bool>::reference::flip
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - reference::flip method
 ms.assetid: ef940365-cbe4-4a87-a3e2-1f3cfa357e29
-caps.latest.revision: 21
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f100117cf67f049d31d226a4a42c37bd6812773e
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 97695b31d79814ec8cf08396295b02b1b7bbd1d2
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="vectorltboolgtreferenceflip"></a>vektör&lt;bool&gt;:: reference::flip
 

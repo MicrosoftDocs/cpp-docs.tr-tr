@@ -1,12 +1,9 @@
 ---
 title: flush (OpenMP) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - Flush
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - flush OpenMP directive
 ms.assetid: 150ca46e-d4f7-4423-b0a4-838df40aeb67
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 531cd43ad5783ca399617f0a9a2d9967f5175e4d
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: e6933c5d74e1277b209d15aefb93a159d55f93dd
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="flush-openmp"></a>flush (OpenMP)
 Tüm iş parçacıklarının tüm paylaşılan nesneler için bellek aynı görünümünü olduğunu belirtir.  

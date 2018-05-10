@@ -1,12 +1,9 @@
 ---
-title: "invalid_compute_domain sınıfı | Microsoft Docs"
-ms.custom: 
+title: invalid_compute_domain sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - invalid_compute_domain
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - invalid_compute_domain class
 ms.assetid: ac7a7166-8bdb-4db1-8caf-ea129ab5117e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf8393e3af29c09376d4213bcdcec7642a593081
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 588f12e04f3a2833da6d67c07ab41929d916a4b5
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="invalidcomputedomain-class"></a>invalid_compute_domain Sınıfı
 Çalışma zamanı sırasında belirtilen işlem etki alanı kullanarak bir çekirdek başlatılamıyor olmadığında oluşan özel durum [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each) çağrısı site.  
@@ -45,7 +40,7 @@ class invalid_compute_domain : public runtime_exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[invalid_compute_domain Constructor](#ctor)|Yeni bir örneğini başlatır `invalid_compute_domain` sınıfı.|  
+|[invalid_compute_domain Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `invalid_compute_domain` sınıfı.|  
 
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  

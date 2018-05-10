@@ -2,13 +2,10 @@
 title: underlying_type sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: ''
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - type_traits/std::underlying_type
 dev_langs:
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - underlying_type
 ms.assetid: 691ddce3-2677-4480-bd35-d933fab85d3e
-caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52bf41cdcb40c88f32adc6d0384bea60f5997286
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 4f45af807b37294b87920b6fabac18647f170025
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="underlyingtype-class"></a>underlying_type sınıfı
 

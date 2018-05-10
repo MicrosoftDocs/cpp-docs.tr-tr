@@ -2,9 +2,6 @@
 title: '&lt;Regex&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - regex/std::operator!=
@@ -17,13 +14,11 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
-caps.latest.revision: 12
-manager: ghogen
-ms.openlocfilehash: ecf9b0b246a4e80dbaf57cd4a1c4c0075640daa2
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 73469182938a51d89a9ca9777f5481824e54dbeb
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltregexgt-operators"></a>&lt;Regex&gt; işleçleri
 

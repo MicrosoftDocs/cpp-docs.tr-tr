@@ -1,30 +1,25 @@
 ---
-title: "UWP uygulamaları için C++ içinde zaman uyumsuz işlemler oluşturma | Microsoft Docs"
-ms.custom: 
+title: UWP uygulamaları için C++ içinde zaman uyumsuz işlemler oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Windows 8.x apps, creating C++ async operations
 - Creating C++ async operations
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99251cbf6627d07075dad3d7dfa3fd4d9651fea8
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 24ea9cc47ea9fa78c5efaf6c922f9f01dd3ff963
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>UWP uygulamaları için C++ içinde zaman uyumsuz işlemler oluşturma
 Bu belge Windows iş parçacığı havuzu tabanlı zaman uyumsuz işlemlerin bir evrensel Windows çalışma zamanı (UWP) uygulaması oluşturmak için görev sınıfı kullanırken dikkate alınması gereken önemli noktaları bazıları açıklanmaktadır.  
@@ -58,7 +53,7 @@ Bu belge Windows iş parçacığı havuzu tabanlı zaman uyumsuz işlemlerin bir
   
 -   [Örnek: Bir Windows çalışma zamanı uygulamayla C++ ve XAML yürütme denetleme](#example-app)  
   
-##  <a name="create-async">Zaman uyumsuz işlemler oluşturma</a>  
+##  <a name="create-async"></a> Zaman uyumsuz işlemler oluşturma  
  Arka plan görevleri olarak önceki görev tamamlandığında, çalışan ek görevleri tanımlamak için görev ve devamlılık modeli paralel Desen kitaplığı (PPL) kullanabilirsiniz. Bu işlev tarafından sağlanan [concurrency::task](../../parallel/concrt/reference/task-class.md) sınıfı. Bu model hakkında daha fazla bilgi ve `task` sınıfı için bkz: [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
  Windows çalışma zamanı yalnızca özel işletim sistemi ortamlarında çalışan UWP uygulamaları oluşturmak için kullanabileceğiniz bir programlama arabirimidir. Bu tür uygulamalar yetkili İşlevler, veri türleri ve cihazlar kullanır ve Microsoft Store dağıtılır. Windows çalışma zamanı tarafından temsil edilen *uygulama ikili arabirimi* (ABI). ABI Windows çalışma zamanı API'lerini Visual C++ gibi programlama dilleri tarafından kullanılabilmesini bir temel ikili sözleşmedir.  
@@ -142,7 +137,7 @@ Bu belge Windows iş parçacığı havuzu tabanlı zaman uyumsuz işlemlerin bir
   
  Kullanma örnekleri için `create_async` diğer diller tarafından kullanılabilecek zaman uyumsuz görevler oluşturmak için bkz: [Bing Haritalar seyahat iyileştirici örneğinde C++ kullanarak](http://msdn.microsoft.com/library/windows/apps/hh699891\(v=vs.110\).aspx) ve [PPLileC++'taWindows8zamanuyumsuzişlemleri](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).  
   
-##  <a name="exethread">Yürütme iş parçacığı denetleme</a>  
+##  <a name="exethread"></a> Yürütme iş parçacığı denetleme  
  Windows çalışma zamanı iş parçacığı modeli COM kullanır. Bu modelde, bunlar kendi eşitleme nasıl işleneceğini bağlı olarak farklı grupların nesneleri barındırılır. İş parçacığı nesneleri birden çok iş parçacıklı grupta (MTA) barındırılır. Tek bir iş parçacığı tarafından erişilen nesneler bir tek iş parçacıklı grupta (STA) barındırılır.  
   
  Bir kullanıcı Arabirimi bir uygulama, ASTA (uygulama STA) iş parçacığı pencere iletileri Pompalama sorumludur ve yalnızca iş parçacığı STA barındırılan UI denetimleri güncelleştirebilirsiniz işleminde değil. Bu iki sonuçları vardır. İlk olarak, yanıt verebilir durumda kalmasını sağlamak amacıyla, tüm CPU-yoğun ve g/ç işlemleri ASTA iş parçacığı üzerinde çalıştırılmamalıdır. İkinci olarak, arka plan iş parçacıklarından gelen sonuçları UI güncelleştirmek için geri ASTA için sıralanmış gerekir. C++ UWP uygulamasında `MainPage` ve tüm diğer XAML sayfaları ATSA üzerinde çalıştırın. Bu nedenle, devamlılık gövde doğrudan denetimlerinde güncelleştirebileceğiniz ASTA üzerinde bildirilen görev devamlılıklar var. varsayılan olarak çalıştırılır. Ancak, başka bir görev bir görevde iç içe varsa, iç içe geçmiş görevde herhangi devamlılıklar MTA'dan çalıştırın. Bu nedenle, bu devamlılıklar hangi bağlamda çalıştırmak açıkça belirtmek kullanılıp dikkate almanız gerekir.  
@@ -168,7 +163,7 @@ Bu belge Windows iş parçacığı havuzu tabanlı zaman uyumsuz işlemlerin bir
 
 >  Çağırmayın [concurrency::task::wait](reference/task-class.md#wait) STA üzerinde çalışan bir devamlılık gövdesinde Aksi halde, çalışma zamanı oluşturur [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) çünkü bu yöntem geçerli iş parçacığının engeller ve uygulama yanıt veremez duruma neden olabilir. Ancak, çağırabilirsiniz [CONCURRENCY::Task](reference/task-class.md#get) bir görev tabanlı devamlılığı öncül görev sonucu almak için yöntem.  
   
-##  <a name="example-app">Örnek: Bir Windows çalışma zamanı uygulamayla C++ ve XAML yürütme denetleme</a>  
+##  <a name="example-app"></a> Örnek: Bir Windows çalışma zamanı uygulamayla C++ ve XAML yürütme denetleme  
  Bir dosya diskten okur, bu dosyada en yaygın sözcükleri bulur ve ardından kullanıcı Arabiriminde sonuçları gösterir bir C++ XAML uygulaması göz önünde bulundurun. Bu uygulama oluşturmak için Visual Studio'da oluşturarak başlayın bir **boş uygulama (Evrensel Windows)** proje ve adlandırma `CommonWords`. Uygulama bildiriminizi belirtin **belge kitaplığı** Belgeler klasörünü erişim sağlamak için özelliği. Ayrıca metin (.txt) dosya türü uygulama bildirimi bildirimleri bölümüne ekleyin. Uygulama özellikleri ve bildirimleri hakkında daha fazla bilgi için bkz: [uygulama paketleri ve dağıtım](http://msdn.microsoft.com/library/windows/apps/hh464929.aspx).  
   
  Güncelleştirme `Grid` içerecek şekilde MainPage.xaml öğesinde bir `ProgressRing` öğesi ve bir `TextBlock` öğesi. `ProgressRing` İşlemi devam ediyor gösterir ve `TextBlock` hesaplama sonuçlarını gösterir.  

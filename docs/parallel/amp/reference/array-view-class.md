@@ -1,12 +1,9 @@
 ---
-title: "array_view sınıfı | Microsoft Docs"
-ms.custom: 
+title: array_view sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - array_view
@@ -35,17 +32,15 @@ dev_langs:
 helpviewer_keywords:
 - array_view class
 ms.assetid: 7e7ec9bc-05a2-4372-b05d-752b50006c5a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54202618f578b9a5e6fd602924a37d7ea0825353
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 2e53b4927b102fc64a32f73ca5be78e71954b45f
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="arrayview-class"></a>array_view Sınıfı
 Başka bir kapsayıcıda tutulan verileri üzerinden N boyutlu bir görünümü gösterir.  
@@ -79,8 +74,8 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[array_view Constructor](#ctor)|Yeni bir örneğini başlatır `array_view` sınıfı. İçin varsayılan oluşturucu yok yok `array<T,N>`. Tüm oluşturucular yalnızca CPU üzerinde çalıştırmak için kısıtlı ve Direct3D hedefte yürütülemez.|  
-|[~array_view Destructor](#ctor)|Bozar `array_view` nesnesi.|  
+|[array_view Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `array_view` sınıfı. İçin varsayılan oluşturucu yok yok `array<T,N>`. Tüm oluşturucular yalnızca CPU üzerinde çalıştırmak için kısıtlı ve Direct3D hedefte yürütülemez.|  
+|[~ array_view yok Edicisi](#ctor)|Bozar `array_view` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -92,7 +87,7 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 |[get_extent](#get_extent)|Array_view nesnesinin ölçüde döndürür.|  
 |[get_ref](#get_ref)|Dizinli öğesine bir başvuru döndürür.|  
 |[get_source_accelerator_view](#get_source_accelerator_view)|Döndürür [accelerator_view](accelerator-view-class.md) burada veri kaynağı `array_view` bulunur.|  
-|[refresh](#refresh)|Bildirir `array_view` bağlı bellek dışında değiştirildi nesne `array_view` arabirimi. Bu yöntem çağrısı önbelleğe alınan tüm bilgileri eski işler.|  
+|[Yenileme](#refresh)|Bildirir `array_view` bağlı bellek dışında değiştirildi nesne `array_view` arabirimi. Bu yöntem çağrısı önbelleğe alınan tüm bilgileri eski işler.|  
 |[reinterpret_as](#reinterpret_as)|Tüm öğeleri içeren tek boyutlu bir dizi döndürür `array_view` nesnesi.|  
 |[section](#section)|Alt döndürür `array_view` belirtilen kaynağa ve bu, isteğe bağlı olarak, nesne belirtilen uzantı sahiptir.|  
 |[synchronize](#synchronize)|İçin yapılan tüm değişiklikler eşitler `array_view` nesne kaynak verileri dön.|  
@@ -106,7 +101,7 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[operator()](#operator_call)|Parametresi veya parametreler tarafından belirtilen öğenin değerini döndürür.|  
-|[operator[]](#operator_at)|Parametrelerle belirtilen öğeyi döndürür.|  
+|[[] işleci](#operator_at)|Parametrelerle belirtilen öğeyi döndürür.|  
 |[operator=](#operator_eq)|Belirtilen içeriğini kopyalar `array_view` bunu nesnesine.|  
   
 ### <a name="public-constants"></a>Genel sabitler  
@@ -119,7 +114,7 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[extent](#extent)|Alır `extent` şeklini tanımlayan nesne `array_view` nesne.|  
+|[Kapsam](#extent)|Alır `extent` şeklini tanımlayan nesne `array_view` nesne.|  
 |[source_accelerator_view](#source_accelerator_view)|Alır [accelerator_view](accelerator-view-class.md) burada veri kaynağı `array_view` bulunur|  
 |[value_type](#value_type)|Değer türü `array_view` ve ilişkili dizi.|  
   
@@ -410,7 +405,7 @@ void copy_to(
  `_Dest`  
  Kopyalamak için nesne.  
   
-##  <a name="data">Veri</a> 
+##  <a name="data"></a> Veri 
 
  İşaretçi için ham verileri döndüren `array_view`.  
   

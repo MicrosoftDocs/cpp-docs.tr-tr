@@ -1,13 +1,10 @@
 ---
-title: "Araç çubuğu (simgeler için görüntü Düzenleyicisi) | Microsoft Docs"
-ms.custom: 
+title: Araç çubuğu (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.bitmap
 - vc.editors.icon
@@ -20,18 +17,16 @@ helpviewer_keywords:
 - Properties window
 - Option selector, Image editor
 ms.assetid: a0af4209-6273-4106-a7c1-0edecc9b5755
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 800fb1007076902703abd3d3185c398dbf40fdb3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3dd53a92168724748940ca2def17a359f1f23e80
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="toolbar-image-editor-for-icons"></a>Araç Çubuğu (Simgeler İçin Görüntü Düzenleyicisi)
 **Görüntü Düzenleyicisi** araç çubuğu çizim, boyama, metin girerek, silme ve görünümler düzenleme araçları içerir. Ayrıca, her aracı kullanma seçeneklerini seçim yapabileceğiniz bir seçenek belirleyici içerir. Örneğin, çeşitli fırça genişlikleri, büyütme Etkenler ve çizgi stillerini seçebilirsiniz.  
@@ -49,7 +44,7 @@ Görüntü Düzenleyicisi araç çubuğu
   
  İle **seçeneği** seçici bir satır, fırça vb. genişliğini belirtebilirsiniz. Simgesine **seçeneği** Seçici düğmesini değişiklikleri seçtiğiniz bağlı olarak hangi aracı.  
   
- ![Çizim &#45; görüntü Düzenleyicisi araç çubuğunda şekli Seçici](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector")  
+ ![Çizim&#45;görüntü Düzenleyicisi araç çubuğunda şekli Seçici](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector")  
 Görüntü Düzenleyicisi araç çubuğunda seçenek belirleyici  
   
  Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  

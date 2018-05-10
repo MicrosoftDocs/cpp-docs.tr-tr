@@ -1,13 +1,10 @@
 ---
-title: "İletişim kutusu denetimleri için üye değişkenleri tanımlama | Microsoft Docs"
-ms.custom: 
+title: İletişim kutusu denetimleri için üye değişkenleri tanımlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - controls [C++], member variables
 - Dialog editor, defining member variables for controls
 ms.assetid: 84347c63-c33c-4b04-91f5-6d008c45ba58
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: eb966459695eb048943a12e33c8e909f99fdc92b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8ba8fc95290ecb90557203be2b6ab4cce18b91e3
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="defining-member-variables-for-dialog-controls"></a>İletişim Kutusu Denetimleri İçin Üye Değişkenleri Tanımlama
 Düğmeler dışındaki herhangi bir iletişim kutusu denetimi için bir üye değişkeni tanımlamak için aşağıdaki yöntemi kullanabilirsiniz.  

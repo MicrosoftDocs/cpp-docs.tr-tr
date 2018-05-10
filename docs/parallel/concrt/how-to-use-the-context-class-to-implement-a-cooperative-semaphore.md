@@ -1,30 +1,25 @@
 ---
-title: "Nasıl yapılır: bağlam sınıfını işbirlikçi semafor uygulamak için kullanın | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: bağlam sınıfını işbirlikçi semafor uygulamak için kullanın | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - cooperative semaphore implementing
 - context class
 ms.assetid: 22f4b9c0-ca22-4a68-90ba-39e99ea76696
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03884d69877053976fdaf04e507c4c1c4214026e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 481c5f092becee7f455294437bdc695a6e1e4057
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-use-the-context-class-to-implement-a-cooperative-semaphore"></a>Nasıl yapılır: Bağlam Sınıfını İşbirlikçi Semafor Uygulamak için Kullanma
 Bu konu concurrency::Context sınıfını işbirlikçi semafor sınıfı uygulamak için nasıl kullanılacağını gösterir.  

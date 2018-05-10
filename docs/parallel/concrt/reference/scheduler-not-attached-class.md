@@ -1,12 +1,9 @@
 ---
-title: "scheduler_not_attached sınıfı | Microsoft Docs"
-ms.custom: 
+title: scheduler_not_attached sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - scheduler_not_attached
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - scheduler_not_attached class
 ms.assetid: 26001970-b400-463b-be3d-8623359c399a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2671479d51c703dc4c0d0ab01b8036a130497ac6
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: ea0bf7f9e9467b35391034dafcbd48044b6229d7
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="schedulernotattached-class"></a>scheduler_not_attached Sınıfı
 Bu sınıf geçerli bağlamla eklenmesi için bir zamanlayıcı gerektiren bir işlem gerçekleştirdiğinizde ve bulunmaması oluşturulan bir özel açıklar.  

@@ -1,13 +1,10 @@
 ---
-title: "Veri üyesi öznitelikleri | Microsoft Docs"
-ms.custom: 
+title: Veri üyesi öznitelikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - data members [C++], attributes
 - data members [C++]
 ms.assetid: 95b2397d-1daf-4ae4-8cd0-06956d005b13
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 954a0448f160ba6d19eb4f48d44b0b7e0a718f17
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 490f8f20a6e1fcee476a6bbeb18ec6f6164389fc
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="data-member-attributes"></a>Veri Üyesi Öznitelikleri
 Aşağıdaki öznitelikler sınıfı, coclass'ı veya arabirim veri üyeleri için geçerlidir.  

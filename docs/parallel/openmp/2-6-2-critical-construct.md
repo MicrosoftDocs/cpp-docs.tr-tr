@@ -1,27 +1,22 @@
 ---
-title: "2.6.2 critical yapı | Microsoft Docs"
-ms.custom: 
+title: 2.6.2 critical yapı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: c46ecd00-b4a2-4a5e-ba92-288c329e773a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c658b32536404dde1a693582e78bfbedc2823b8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ae7070fcc590307e71b0c34259bcbe1c12200550
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="262-critical-construct"></a>2.6.2 critical Yapı
 **Kritik** yönergesi ilişkili yapılandırılmış blok yürütülmesi için tek bir iş parçacığı aynı anda kısıtlayan bir yapı tanımlar. Söz dizimi **kritik** yönergesi aşağıdaki gibidir:  

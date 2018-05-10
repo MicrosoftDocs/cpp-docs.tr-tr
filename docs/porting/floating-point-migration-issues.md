@@ -1,27 +1,22 @@
 ---
-title: "Kayan nokta geçiş sorunları | Microsoft Docs"
-ms.custom: 
+title: Kayan nokta geçiş sorunları | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 36a1b552-2f2b-4919-bc9d-c17f42434954
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59898a5ad6af6728b16163c766f6295c850dc577
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0e6578486ada758482b270cd5505338e2acf3eb9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="floating-point-migration-issues"></a>Kayan nokta geçiş sorunları  
   

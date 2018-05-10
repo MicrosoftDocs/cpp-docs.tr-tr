@@ -1,13 +1,10 @@
 ---
-title: "Küçültme veya uzatma (simgeler için görüntü Düzenleyicisi) görüntünün tümünü | Microsoft Docs"
-ms.custom: 
+title: Küçültme veya uzatma (simgeler için görüntü Düzenleyicisi) görüntünün tümünü | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - images [C++], stretching
 - images [C++], shrinking
 ms.assetid: accdef79-c77e-493f-b8e8-a5ef033a4e9e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c4ba83b24305a3b826ea412e58766502db410f97
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 41019945e6ad585b20cba81ea611d575b11e02a4
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="shrinking-or-stretching-an-entire-image-image-editor-for-icons"></a>Görüntünün Tümünü Küçültme veya Uzatma (Simgeler İçin Görüntü Düzenleyicisi)
 ### <a name="to-shrink-or-stretch-an-entire-image"></a>Daraltma veya görüntünün Tümünü Genişlet  

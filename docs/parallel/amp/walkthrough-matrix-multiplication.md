@@ -1,27 +1,22 @@
 ---
-title: "İzlenecek yol: Matris çarpım | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Matris çarpım | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-amp
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f91bed0b33ae29d7928ec7df3420eb4878b51eef
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d0c61bff6251d5ae833611161ef7b1bb06e6f39a
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="walkthrough-matrix-multiplication"></a>İzlenecek yol: Matris Çarpım
 Bu adım adım C++ AMP matris çarpım yürütülmesi hızlandırmak için nasıl kullanılacağını gösterir. İki algoritmaları sunulur, döşeme olmadan diğeri döşeme ile.  
@@ -52,13 +47,13 @@ Bu adım adım C++ AMP matris çarpım yürütülmesi hızlandırmak için nası
 ## <a name="multiplication-without-tiling"></a>Çarpma döşeme olmadan  
  Bu bölümde, iki matrisi, şu şekilde tanımlanır A ve B çarpma göz önünde bulundurun:  
   
- ![3 &#45; tarafından &#45; 2 matris](../../parallel/amp/media/campmatrixanontiled.png "campmatrixanontiled")  
+ ![3&#45;tarafından&#45;2 matris](../../parallel/amp/media/campmatrixanontiled.png "campmatrixanontiled")  
   
- ![2 &#45; tarafından &#45; 3 matris](../../parallel/amp/media/campmatrixbnontiled.png "campmatrixbnontiled")  
+ ![2&#45;tarafından&#45;3 matris](../../parallel/amp/media/campmatrixbnontiled.png "campmatrixbnontiled")  
   
  A 2 tarafından 3 matris ve B 2 ile 3 matris. Aşağıdaki 3 x 3 matris B tarafından çarpılması bir üründür. Ürün bir satır B öğe sütunlara göre çarpılmasıyla hesaplanır.  
   
- ![3 &#45; tarafından &#45; 3 matris](../../parallel/amp/media/campmatrixproductnontiled.png "campmatrixproductnontiled")  
+ ![3&#45;tarafından&#45;3 matris](../../parallel/amp/media/campmatrixproductnontiled.png "campmatrixproductnontiled")  
   
 ### <a name="to-multiply-without-using-c-amp"></a>C++ AMP kullanmadan çarpılacağı  
   
@@ -172,21 +167,21 @@ void main() {
   
  Matris çarpım döşeme yararlanmak için algoritma gerekir matris döşemesine bölüm ve kutucuğu verilerini kopyalamak `tile_static` daha hızlı erişim için değişkenleri. Bu örnekte, matris eşit boyutu submatrices bölümlenmiş. Ürün submatrices çarparak bulunur. İki matrisi ve bu örnekte, ürünlerinin şunlardır:  
   
- ![4 &#45; tarafından &#45; 4 matris](../../parallel/amp/media/campmatrixatiled.png "campmatrixatiled")  
+ ![4&#45;tarafından&#45;4 matris](../../parallel/amp/media/campmatrixatiled.png "campmatrixatiled")  
   
- ![4 &#45; tarafından &#45; 4 matris](../../parallel/amp/media/campmatrixbtiled.png "campmatrixbtiled")  
+ ![4&#45;tarafından&#45;4 matris](../../parallel/amp/media/campmatrixbtiled.png "campmatrixbtiled")  
   
- ![4 &#45; tarafından &#45; 4 matris](../../parallel/amp/media/campmatrixproducttiled.png "campmatrixproducttiled")  
+ ![4&#45;tarafından&#45;4 matris](../../parallel/amp/media/campmatrixproducttiled.png "campmatrixproducttiled")  
   
  Matrisleri şu şekilde tanımlanır dört 2 x 2 matrisleri bölümlenir:  
   
- ![4 &#45; tarafından &#45; 4 matris bölümlenmiş 2 &#45;içine; &#45;2 alt &#45; matrisleri](../../parallel/amp/media/campmatrixapartitioned.png "campmatrixapartitioned")  
+ ![4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;matrisleri](../../parallel/amp/media/campmatrixapartitioned.png "campmatrixapartitioned")  
   
- ![4 &#45; tarafından &#45; 4 matris bölümlenmiş 2 &#45;içine; &#45;2 alt &#45; matrisleri](../../parallel/amp/media/campmatrixbpartitioned.png "campmatrixbpartitioned")  
+ ![4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;matrisleri](../../parallel/amp/media/campmatrixbpartitioned.png "campmatrixbpartitioned")  
   
  Ürün a ve B artık yazılmış ve aşağıdaki gibi hesaplanır:  
   
- ![4 &#45; tarafından &#45; 4 matris bölümlenmiş 2 &#45;içine; &#45;2 alt &#45; matrisleri](../../parallel/amp/media/campmatrixproductpartitioned.png "campmatrixproductpartitioned")  
+ ![4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;matrisleri](../../parallel/amp/media/campmatrixproductpartitioned.png "campmatrixproductpartitioned")  
   
  Çünkü matrisleri `a` aracılığıyla `h` 2 x 2 matrislerini, tüm ürünleri ve bunların toplamı ayrıca 2 x 2 matrisleri. Bu da A * B 4 x 4 bir matris olduğunu beklendiği gibi izler. Hızlı bir şekilde algoritma denetlemek için ilk satırın öğesinde, üründeki ilk sütun değerini hesaplayın. Örnekte, olacaktır öğenin değerini ilk satır ve ilk sütunu `ae + bg`. Yalnızca ilk sütun, ilk satırında hesaplanacak olan `ae` ve `bg` her terim için. Bu değer için `ae` olan `1*1 + 2*5 = 11`. Değeri `bg` olan `3*1 + 4*5 = 23`. Son değer `11 + 23 = 34`, doğru olduğu.  
   

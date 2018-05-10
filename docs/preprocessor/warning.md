@@ -1,12 +1,9 @@
 ---
-title: "Uyarı | Microsoft Docs"
-ms.custom: 
+title: Uyarı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - warning_CPP
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - pop warning pragma
 - warning pragma
 ms.assetid: 8e9a0dec-e223-4657-b21d-5417ebe29cc8
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b295eb94732a50db977d240dbcd9b4d80e105b3c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 4b739a3f72416b6ab58cbdba45a496e10fef4424
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="warning-pragma"></a>warning Pragması
 Derleyici Uyarısı iletilerinin davranışını seçmeli değiştirilmesini sağlar.  

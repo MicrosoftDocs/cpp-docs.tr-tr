@@ -1,12 +1,9 @@
 ---
-title: "invalid_link_target sınıfı | Microsoft Docs"
-ms.custom: 
+title: invalid_link_target sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - invalid_link_target
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - invalid_link_target class
 ms.assetid: 33b64885-34d8-4d4e-a893-02e9f19c958e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3a4ac6888f22fcedb494865a219fc0dd8e8a98c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 2e718bd1a15df98487d0e9437c217c1750bfa5f5
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="invalidlinktarget-class"></a>invalid_link_target Sınıfı
 Bu sınıf ne zaman oluşturulan bir özel tanımlar `link_target` ileti bloğunun yöntemi çağrılır ve ileti bloğu hedef bağlanamıyor. Bu ileti bloğu izin verilen bağlantı sayısını aşan veya belirli bir hedefe iki kere aynı kaynağına bağlanma girişiminde sonucu olabilir.  

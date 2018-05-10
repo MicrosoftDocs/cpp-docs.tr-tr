@@ -1,12 +1,9 @@
 ---
-title: "texture_view sınıfı | Microsoft Docs"
-ms.custom: 
+title: texture_view sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - texture_view
@@ -23,17 +20,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 6ec2e289-1626-4727-9592-07981cf1d27d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72f88cc10da623cbda4f3426596fe07650bf4b46
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 3db02d9cafb87c0f173546687ad01390e09b9f68
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="textureview-class"></a>texture_view Sınıfı
 Okuma erişimi ve bir doku yazma erişimi sağlar. `texture_view` değer türü olan dokular okumak için yalnızca kullanılabilir `int`, `unsigned int`, veya `float` varsayılan 32-bit bpse sahip. Diğer doku biçimleri okumak için kullandığınız `texture_view<const value_type, _Rank>`.  
@@ -74,8 +69,8 @@ class texture_view<const value_type, _Rank>
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[texture_view Constructor](#ctor)|Fazla Yüklendi. Oluşturan bir `texture_view` örneği.|  
-|[~texture_view Destructor](#ctor)|Bozar `texture_view` örneği.|  
+|[texture_view Oluşturucusu](#ctor)|Fazla Yüklendi. Oluşturan bir `texture_view` örneği.|  
+|[~ texture_view yok Edicisi](#ctor)|Bozar `texture_view` örneği.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -94,7 +89,7 @@ class texture_view<const value_type, _Rank>
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[operator()](#operator_call)|Fazla Yüklendi. Dizine göre öğe değerini alır.|  
-|[operator[]](#operator_at)|Fazla Yüklendi. Dizine göre öğe değerini alır.|  
+|[[] işleci](#operator_at)|Fazla Yüklendi. Dizine göre öğe değerini alır.|  
 |[operator=](#operator_eq)|Fazla Yüklendi. Atama işleci.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
@@ -161,17 +156,17 @@ texture_view(// [7] copy constructor
   
 ### <a name="parameters"></a>Parametreler  
  `_Src`  
- [1, 2] Constructor  
+ [1, 2] Oluşturucusu  
  `texture` Üzerine yazılabilir `texture_view` oluşturulur.  
   
- [3, 4] Constructor  
+ [3, 4] Oluşturucusu  
  `texture` Üretileceği Paylaşımsız `texture_view` oluşturulur.  
   
  `_Other`  
  [5] kopya Oluşturucu  
  Yazılabilir kaynak `texture_view`.  
   
- [6, 7] Copy Constructor  
+ [6, 7] Kopya Oluşturucu  
  Yazılabilir olmayan kaynak `texture_view`.  
   
  `_Mipmap_level`  
@@ -346,7 +341,7 @@ texture_view<const value_type, _Rank>& operator= (// [3] copy constructor
   
 ### <a name="parameters"></a>Parametreler  
  `_Other`  
- [1, 2] Copy Constructor  
+ [1, 2] Kopya Oluşturucu  
  Bir yazılabilir `texture_view` nesnesi.  
   
  [3] kopya Oluşturucu  
@@ -440,7 +435,7 @@ value_type operator() (
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğesi değeri dizine göre `_Index`.  
   
-##  <a name="sample">Örnek</a> 
+##  <a name="sample"></a> Örnek 
 
  Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatları ve ayrıntı düzeyi doku örnekleri.  
   
@@ -479,7 +474,7 @@ value_type sample(
 ### <a name="return-value"></a>Dönüş Değeri  
  Ara değerli örnek değer.  
   
-##  <a name="set"></a> set 
+##  <a name="set"></a> ayarlama 
 
  Belirtilen değer için belirtilen dizindeki öğeyi değerini ayarlar.  
   

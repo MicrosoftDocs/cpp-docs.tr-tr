@@ -2,11 +2,8 @@
 title: logical_or yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xfunctional/std::logical_or
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - logical_or class
 - logical_or struct
 ms.assetid: ec8143f8-5755-4e7b-8025-507fb6bf6911
-caps.latest.revision: 22
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 835b36308625a8d8e9f5bd435bbf10bd71d7e1d4
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 9591e11774550f198de601f36fce0350f76cf6bd
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="logicalor-struct"></a>logical_or Yapısı
 

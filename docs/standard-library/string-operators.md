@@ -2,9 +2,6 @@
 title: '&lt;dize&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - string/std::operator!=
@@ -19,8 +16,6 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 33ce8f05-06c7-45d3-a0cb-bcd27cf93910
-caps.latest.revision: 11
-manager: ghogen
 helpviewer_keywords:
 - std::operator!= (string)
 - std::operator&gt; (string)
@@ -29,11 +24,11 @@ helpviewer_keywords:
 - std::operator&lt; (string)
 - std::operator&lt;&lt; (string)
 - std::operator&lt;= (string), std::operator== (string)
-ms.openlocfilehash: 6002a78357f52b27df41692bb4735f0fe0686d10
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: b0ca7da732786c2f0ff6087052b5867150702a5e
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltstringgt-operators"></a>&lt;dize&gt; işleçleri
 

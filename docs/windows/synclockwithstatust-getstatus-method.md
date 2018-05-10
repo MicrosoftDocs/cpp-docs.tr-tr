@@ -1,12 +1,9 @@
 ---
-title: "SyncLockWithStatusT::GetStatus yöntemi | Microsoft Docs"
-ms.custom: 
+title: SyncLockWithStatusT::GetStatus yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::GetStatus
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - GetStatus method
 ms.assetid: d448b51d-a63d-40d9-a9ee-4aad3204118d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 181735766e62aa1bf8c306bd425c6e6b03b2066d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 03addd8d89c54eddb5deb721ab47d46e8b945edd
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="synclockwithstatustgetstatus-method"></a>SyncLockWithStatusT::GetStatus Metodu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  

@@ -1,12 +1,9 @@
 ---
-title: "combinable sınıfı | Microsoft Docs"
-ms.custom: 
+title: combinable sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - combinable
@@ -21,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - combinable class
 ms.assetid: fe0bfbf6-6250-47da-b8d0-f75369f0b5be
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9bec5ce0e6679af71d8d3372fb939223691152a
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 695081e6513965a89222d1108c632e2f22580184
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="combinable-class"></a>combinable Sınıfı
 `combinable<T>` Nesne kilidi serbest iş parçacığı yerel alt sırasında paralel algoritmalar hesaplamalar veri, iş parçacığı özel kopyasının sağlamak için tasarlanmıştır. Paralel işlemin sonunda, iş parçacığı özel alt hesaplamalar sonra nihai sonucu birleştirilebilir. Bu sınıf, paylaşılan bir değişken yerine kullanılabilir ve aksi durumda olurdu, çok sayıda paylaşılan değişken üzerinde Çekişme bir performans geliştirmesinden ortaya çıkabilir.  
@@ -61,7 +56,7 @@ class combinable;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Temizle](#clear)|Herhangi bir önceki kullanımı hesaplama sonuçlarından Ara temizler.|  
-|[combine](#combine)|Sağlanan birleştirme functor çağırarak iş parçacığı yerel alt hesaplamalar kümesinden son değeri hesaplar.|  
+|[Birleştirme](#combine)|Sağlanan birleştirme functor çağırarak iş parçacığı yerel alt hesaplamalar kümesinden son değeri hesaplar.|  
 |[combine_each](#combine_each)|İş parçacığı yerel alt hesaplamalar kümesinden son bir değer, her iş parçacığı yerel alt hesaplama için bir kez sağlanan birleştirme functor çağırarak hesaplar. Nihai sonucu işlevi nesne tarafından toplanır.|  
 |[Yerel](#local)|Fazla Yüklendi. İş parçacığı özel alt hesaplama bir başvuru döndürür.|  
   
@@ -82,7 +77,7 @@ class combinable;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="clear">Temizle</a> 
+##  <a name="clear"></a> Temizle 
 
  Herhangi bir önceki kullanımı hesaplama sonuçlarından Ara temizler.  
   
@@ -163,7 +158,7 @@ void combine_each(_Function _FnCombine) const;
  `_FnCombine`  
  Bir alt hesaplama birleştirmek için kullanılan functor. Kendi imzası `void (T)` veya `void (const T&)`ve ilişkilendirilebilir ve yer değiştirebilme olması gerekir.  
   
-##  <a name="local">Yerel</a> 
+##  <a name="local"></a> Yerel 
 
  İş parçacığı özel alt hesaplama bir başvuru döndürür.  
   

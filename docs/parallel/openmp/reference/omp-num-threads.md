@@ -1,12 +1,9 @@
 ---
 title: OMP_NUM_THREADS | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - OMP_NUM_THREADS
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - OMP_NUM_THREADS OpenMP environment variable
 ms.assetid: 4b558124-1387-4c30-a6a5-ff5345a9ced6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 077a709d70e19e62133e5b48e42f2e53ac7c835f
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: e25369f18f542198638e324110ba14d10b8ddc69
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ompnumthreads"></a>OMP_NUM_THREADS
 İş parçacığı sayısı tarafından geçersiz kılınmadığı sürece paralel bölgede ayarlar [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) veya [num_threads](../../../parallel/openmp/reference/num-threads.md).  

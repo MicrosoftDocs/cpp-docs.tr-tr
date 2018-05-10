@@ -1,30 +1,25 @@
 ---
-title: "Zaman uyumsuz aracılar kitaplığı | Microsoft Docs"
-ms.custom: 
+title: Zaman uyumsuz aracılar kitaplığı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Agents Library
 - Asynchronous Agents Library
 ms.assetid: d2a72a31-8ba6-4220-ad7a-e403a6acaa42
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be12f47a6fb33350137a8f9b1c78ff75519c8af7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a8bb1ce7a0c449d5c09e49ad16435e7732ddfcc1
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="asynchronous-agents-library"></a>Zaman Uyumsuz Aracılar Kitaplığı
 Zaman uyumsuz aracılar kitaplığı (veya yalnızca *Aracılar Kitaplığı*) eşzamanlılık etkin uygulama geliştirme'ların sağlamlığını artırmak olanak sağlayan bir programlama modelidir. Aktör tabanlı programlama modeli ve görevleri ardışık düzen ve parçalı veri akışı için geçirme işlemi iletisi yükseltir C++ Şablon kitaplığı aracıları kitaplığıdır. Aracılar Kitaplığı zamanlama ve kaynak yönetimi bileşenlerine eşzamanlılık çalışma zamanı oluşturur.  
@@ -36,7 +31,7 @@ Zaman uyumsuz aracılar kitaplığı (veya yalnızca *Aracılar Kitaplığı*) e
   
  Aracılar Kitaplığı üç bileşenlerden oluşur: *zaman uyumsuz aracılar*, *zaman uyumsuz ileti blokları*, ve *ileti geçirme işlevleri*. Aracıları durumunu korumak ve birbiriyle ve dış bileşenler ile iletişim kurmak için ileti blokları ve ileti geçirme işlevleri kullanın. İleti geçirme işlevleri ve dış bileşenlere gelen ileti gönderme ve alma için aracıları etkinleştirin. Zaman uyumsuz ileti blokları iletileri tutun ve eşitlenmiş bir şekilde iletişim kurmak aracıları etkinleştirin.  
   
- Aşağıdaki çizimde, kullanım ileti blokları ve iletişim kurmak için ileti geçirme işlevleri nasıl iki aracı gösterir. Bu çizimde, `agent1` bir ileti gönderir `agent2` kullanarak [concurrency::send](reference/concurrency-namespace-functions.md#send) işlevi ve [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) nesnesi. `agent2`kullanan [concurrency::receive](reference/concurrency-namespace-functions.md#receive) ileti okumak için işlev. `agent2`bir ileti göndermek için aynı yöntemi kullanan `agent1`. Kesikli oklar aracılar arasındaki veri akışını temsil eder. Düz oklar, yazma veya okuma ileti blokları aracıları bağlayın.  
+ Aşağıdaki çizimde, kullanım ileti blokları ve iletişim kurmak için ileti geçirme işlevleri nasıl iki aracı gösterir. Bu çizimde, `agent1` bir ileti gönderir `agent2` kullanarak [concurrency::send](reference/concurrency-namespace-functions.md#send) işlevi ve [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) nesnesi. `agent2` kullanan [concurrency::receive](reference/concurrency-namespace-functions.md#receive) ileti okumak için işlev. `agent2` bir ileti göndermek için aynı yöntemi kullanan `agent1`. Kesikli oklar aracılar arasındaki veri akışını temsil eder. Düz oklar, yazma veya okuma ileti blokları aracıları bağlayın.  
   
  ![Aracılar Kitaplığı bileşenlerinin](../../parallel/concrt/media/agent_librarycomp.png "agent_librarycomp")  
   

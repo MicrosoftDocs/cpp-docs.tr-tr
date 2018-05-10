@@ -1,12 +1,9 @@
 ---
 title: 'RuntimeClass:: ~ RuntimeClass yok Edicisi | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::RuntimeClass::~RuntimeClass
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - ~RuntimeClass, destructor
 ms.assetid: 561c9427-7877-47cb-bf0e-a5cf425bb657
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8e492099b2f82273bbe111d1d7e4dfea942bc551
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4b48ead21adc8b641840727af236c3c6e58efee9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="runtimeclassruntimeclass-destructor"></a>RuntimeClass::~RuntimeClass Yok Edicisi
 RuntimeClass sınıfı, geçerli örneğini deinitializes.  

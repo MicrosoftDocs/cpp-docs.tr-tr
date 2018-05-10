@@ -1,13 +1,10 @@
 ---
-title: "Zaman uyumsuz ileti blokları | Microsoft Docs"
-ms.custom: 
+title: Zaman uyumsuz ileti blokları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,23 +12,21 @@ helpviewer_keywords:
 - asynchronous message blocks
 - greedy join [Concurrency Runtime]
 ms.assetid: 79c456c0-1692-480c-bb67-98f2434c1252
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97669589af295c681fa21d6faeb31ec01be37e51
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5de4a9ed20e20c03f44f8b8d421a628f220099f7
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="asynchronous-message-blocks"></a>Zaman Uyumsuz İleti Blokları
 
 Aracılar Kitaplığı iletileri uygulama bileşenleri arasında bir iş parçacığı açısından güvenli şekilde yayılmasına olanak tanıyan çeşitli ileti bloğu türler sağlar. Bu ileti bloğu türleri genellikle çeşitli ileti geçirme yordamları ile aşağıdaki gibi kullanılır [concurrency::send](reference/concurrency-namespace-functions.md#send), [concurrency::asend](reference/concurrency-namespace-functions.md#asend), [concurrency::receive](reference/concurrency-namespace-functions.md#receive), ve [concurrency::try_receive](reference/concurrency-namespace-functions.md#try_receive). İleti Aracılar Kitaplığı tarafından tanımlanan yordamları geçirme hakkında daha fazla bilgi için bkz: [ileti geçirme işlevleri](../../parallel/concrt/message-passing-functions.md).  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Bu konu aşağıdaki bölümleri içermektedir:  
   
 - [Kaynakları ve hedefleri](#sources_and_targets)  
@@ -60,14 +55,14 @@ Aracılar Kitaplığı iletileri uygulama bileşenleri arasında bir iş parçac
   
 - [İleti ayırma](#reservation)  
   
-##  <a name="sources_and_targets"></a>Kaynakları ve hedefleri  
+##  <a name="sources_and_targets"></a> Kaynakları ve hedefleri  
  Kaynakları ve hedefleri ileti geçirme iki önemli katılımcıları var. A *kaynak* iletileri gönderir iletişim için bir uç nokta başvuruyor. A *hedef* iletileri alan iletişim için bir uç nokta başvuruyor. Okuma, bir uç nokta olarak bir kaynak ve hedef için yazma bir uç nokta olarak düşünebilirsiniz. Uygulamalar, form için kaynakları ve hedefleri birlikte bağlanmak *ağlar Mesajlaşma*.  
   
  Aracılar Kitaplığı kaynakları ve hedefleri temsil etmek için iki soyut sınıflar kullanır: [concurrency::ISource](../../parallel/concrt/reference/isource-class.md) ve [concurrency::ITarget](../../parallel/concrt/reference/itarget-class.md). İleti bloğu türleri bu act kaynakları türetin gibi `ISource`; ileti bloğu türleri bu act hedefleri türetin gibi `ITarget`. İleti bloğu kaynakları olarak bu eylemi türleri ve hedefleri türetilen hem de `ISource` ve `ITarget`.  
   
  [[Üst](#top)]  
   
-##  <a name="propagation"></a>İleti yayma  
+##  <a name="propagation"></a> İleti yayma  
  *İleti yayma* bir bileşenden ileti gönderme, işlemidir. İleti bloğu bir ileti sunulduğunda bunu kabul, reddetme veya ileti erteleyin. Her ileti blok türü depolar ve iletileri farklı şekilde iletir. Örneğin, `unbounded_buffer` sınıfı depolar iletileri, sınırsız sayıda `overwrite_buffer` sınıfı, bir kerede tek bir ileti depolar ve her iletinin değiştirilmiş bir sürümünü transformer sınıfını depolar. Bu ileti bloğu türleri, bu belgenin ilerleyen bölümlerinde daha ayrıntılı açıklanmıştır.  
   
  İleti bloğu bir ileti kabul ettiğinde, bunu isteğe bağlı olarak çalışmayı gerçekleştirmek ve, ileti bloğu, kaynak ise elde edilen iletisi ağ başka bir üyesi geçirin. İleti bloğu almaya istemediği iletileri reddetmek için bir filtre işlevini kullanabilirsiniz. Filtreler bölümündeki bu konunun ilerleyen bölümlerinde daha ayrıntılı açıklanmıştır [ileti filtreleme](#filtering). Bir ileti erteler bir ileti bloğu ileti ayırabilir ve daha sonra kullanabilir. İleti ayırma bölümünde bu konunun ilerleyen bölümlerinde daha ayrıntılı anlatılan [ileti ayırma](#reservation).  
@@ -79,7 +74,7 @@ Aracılar Kitaplığı iletileri uygulama bileşenleri arasında bir iş parçac
   
  [[Üst](#top)]  
   
-##  <a name="overview"></a>İleti bloğu türlerine genel bakış  
+##  <a name="overview"></a> İleti bloğu türlerine genel bakış  
  Aşağıdaki tabloda, önemli ileti bloğu türlerinin rolü kısaca açıklanmaktadır.  
   
  [unbounded_buffer](#unbounded_buffer)  
@@ -134,7 +129,7 @@ Aracılar Kitaplığı iletileri uygulama bileşenleri arasında bir iş parçac
   
  [[Üst](#top)]  
   
-##  <a name="unbounded_buffer"></a>unbounded_buffer sınıfı  
+##  <a name="unbounded_buffer"></a> unbounded_buffer sınıfı  
  [Concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) sınıfı, genel amaçlı bir zaman uyumsuz Mesajlaşma yapısını temsil eder. Bu sınıf, iletilerin birden çok kaynak tarafından yazılabilen veya birden çok hedef tarafından okunabilen bir ilk giren ilk çıkar (FIFO) sırasını tutar. Ne zaman bir hedef alan bir iletiden bir `unbounded_buffer` nesnesi, bu iletiyi, ileti kuyruğundan kaldırılır. Bu nedenle, ancak bir `unbounded_buffer` nesne birden çok hedef sahip olabilir, yalnızca bir hedef, her bir ileti alırsınız. `unbounded_buffer` sınıfı, başka bir bileşene birden çok ileti geçirmek istediğinizde ve bu bileşenin her iletiyi alması gerektiğinde kullanışlıdır.  
   
 ### <a name="example"></a>Örnek  
@@ -152,7 +147,7 @@ Aracılar Kitaplığı iletileri uygulama bileşenleri arasında bir iş parçac
   
  [[Üst](#top)]  
   
-##  <a name="overwrite_buffer"></a>overwrite_buffer sınıfı  
+##  <a name="overwrite_buffer"></a> overwrite_buffer sınıfı  
  [Concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) sınıfı benzer `unbounded_buffer` ; tek fark sınıfı bir `overwrite_buffer` nesnesi yalnızca bir ileti saklar. Buna ek olarak, ne zaman bir hedef alan bir iletiden bir `overwrite_buffer` nesnesi, bu iletiyi arabelleğinden kaldırılmaz. Bu nedenle, birden çok hedef iletinin bir kopyasını alır.  
   
  `overwrite_buffer` Sınıfı, birden fazla ileti başka bir bileşenine geçmek istiyor ancak yalnızca en son değer belirli bir bileşeni gerektiren durumlarda yararlıdır. Bu sınıf, bir iletiyi birden çok bileşene yayınlamak istediğinizde de kullanışlıdır.  
@@ -172,7 +167,7 @@ Aracılar Kitaplığı iletileri uygulama bileşenleri arasında bir iş parçac
   
  [[Üst](#top)]  
   
-##  <a name="single_assignment"></a>single_assignment sınıfı  
+##  <a name="single_assignment"></a> single_assignment sınıfı  
  [Concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) sınıfı benzer `overwrite_buffer` ; tek fark sınıfı bir `single_assignment` nesne yalnızca bir kez yazılabilir. `overwrite_buffer` sınıfı gibi, hedef de bir `single_assignment` nesnesinden ileti aldığında, o ileti nesneden kaldırılmaz. Bu nedenle, birden çok hedef iletinin bir kopyasını alır. `single_assignment` Sınıfı, birden çok bileşeni tek bir ileti yayın istediğinizde yararlıdır.  
   
 ### <a name="example"></a>Örnek  
@@ -190,7 +185,7 @@ Aracılar Kitaplığı iletileri uygulama bileşenleri arasında bir iş parçac
   
  [[Üst](#top)]  
   
-##  <a name="call"></a>Çağrı sınıfı  
+##  <a name="call"></a> Çağrı sınıfı  
  [Concurrency::call](../../parallel/concrt/reference/call-class.md) veri aldığında, bir iş işlevi gerçekleştiren bir ileti alıcısı sınıf görevi görür. Bu çalışma işlevi bir lambda ifadesi, bir işlev nesnesi veya bir işlev işaretçisi olabilir. A `call` nesne davranır sıradan işlev çağrısı'den farklı bileşenlerle iletileri göndermek için paralel davrandığından. Varsa bir `call` nesnesi bir ileti aldığında çalışma gerçekleştirme, bu iletiyi kuyruğa ekler. Her `call` nesne işlemleri sıraya alınan iletileri bunlar alınan sırayla.  
   
 ### <a name="example"></a>Örnek  
@@ -208,7 +203,7 @@ Aracılar Kitaplığı iletileri uygulama bileşenleri arasında bir iş parçac
   
  [[Üst](#top)]  
   
-##  <a name="transformer"></a>Transformer sınıfı  
+##  <a name="transformer"></a> Transformer sınıfı  
  [Concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) sınıfı bir ileti gönderen ve her iki ileti alıcı olarak davranır. `transformer` Sınıfı benzer `call` veri aldığında, kullanıcı tanımlı bir iş işlev gerçekleştirdiğinden sınıfı. Ancak, `transformer` sınıfı ayrıca iş işlevin sonucu alıcı nesnelere gönderir. Gibi bir `call` nesne, bir `transformer` nesne davranır paralel iletileri gönder diğer bileşenleri. Varsa bir `transformer` nesnesi bir ileti aldığında çalışma gerçekleştirme, bu iletiyi kuyruğa ekler. Her `transformer` nesnesini, sıraya alınan iletileri bunlar alınan sırayla işler.  
   
  `transformer` Sınıfı için bir hedef kendi iletisi gönderir. Ayarlarsanız `_PTarget` oluşturucuya parametresinde `NULL`, daha sonra hedef çağırarak belirleyebileceğiniz [concurrency::link_target](reference/source-block-class.md#link_target) yöntemi.  
@@ -230,7 +225,7 @@ Aracılar Kitaplığı iletileri uygulama bileşenleri arasında bir iş parçac
   
  [[Üst](#top)]  
   
-##  <a name="choice"></a>seçenek sınıfı  
+##  <a name="choice"></a> seçenek sınıfı  
  [Concurrency::choice](../../parallel/concrt/reference/choice-class.md) sınıfı kaynakları kümesinden ilk kullanılabilir ileti seçer. `choice` Sınıfı, bir veri akışı mekanizması yerine akış denetimi mekanizmasını temsil eder (konu [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) veri akışı ve akış denetimi arasındaki farklar açıklanmaktadır).  
   
  Bir seçim nesnesinden okuma benzer Windows API işlevi çağırma `WaitForMultipleObjects` sahip olduğunda `bWaitAll` parametre kümesine `FALSE`. Ancak, `choice` sınıfı, bir dış eşitleme nesnesi için olay kendisi yerine veri bağlar.  
@@ -263,7 +258,7 @@ fib35 received its value first. Result = 9227465
   
  [[Üst](#top)]  
   
-##  <a name="join"></a>katılma ve multitype_join sınıfları  
+##  <a name="join"></a> katılma ve multitype_join sınıfları  
  [Concurrency::join](../../parallel/concrt/reference/join-class.md) ve [concurrency::multitype_join](../../parallel/concrt/reference/multitype-join-class.md) bir ileti almak bir kaynak kümesi her üyesi için bekleyin sınıfları sağlar. `join` Ortak bir ileti türüne sahip kaynak nesneler üzerinde sınıf davranır. `multitype_join` Sınıfı davranır Kaynak nesnelerde farklı ileti türü olabilir.  
   
  Okuma bir `join` veya `multitype_join` nesne benzer Windows API işlevi çağırma `WaitForMultipleObjects` sahip olduğunda `bWaitAll` parametre kümesine `TRUE`. Ancak, olduğu gibi bir `choice` nesnesi `join` ve `multitype_join` nesneleri olayın kendisi yerine bir dış eşitleme nesnesi için veri bağlar bir olay mekanizması kullanır.  
@@ -293,7 +288,7 @@ fib35 = 9227465fib37 = 24157817half_of_fib42 = 1.33957e+008
   
  [[Üst](#top)]  
   
-##  <a name="timer"></a>Timer sınıfı  
+##  <a name="timer"></a> Timer sınıfı  
  Eşzamanlılık::[timer sınıfı](../../parallel/concrt/reference/timer-class.md) bir ileti kaynağı olarak görev yapar. A `timer` nesne belirtilen bir süre dolduktan sonra bu ileti bir hedefe gönderir. `timer` Sınıfı, bir ileti gönderirken gecikme gerekir veya düzenli aralıklarla ileti gönderme istediğinizde yararlıdır.  
   
 
@@ -319,7 +314,7 @@ Computing fib(42)..................................................result is 267
   
  [[Üst](#top)]  
   
-##  <a name="filtering"></a>İleti filtreleme  
+##  <a name="filtering"></a> İleti filtreleme  
  İleti bloğu nesne oluşturduğunuzda, sağlayabilir bir *filtre işlevi* ileti bloğu kabul ediyor veya bir ileti reddeder olup olmadığını belirler. Filter işlevi bir ileti bloğu yalnızca belirli değerlerin aldığını güvence altına almak için kullanışlı bir yoludur.  
   
  Aşağıdaki örnekte nasıl oluşturulacağını gösterir bir `unbounded_buffer` yalnızca çift sayıları kabul etmek için bir filtre işlevi kullandığı nesne. `unbounded_buffer` Nesnesi tek sayıları reddeder ve bu nedenle, hedef bloklarına tek sayıları dağıtılmaz.  
@@ -345,7 +340,7 @@ bool (T const &)
   
  [[Üst](#top)]  
   
-##  <a name="reservation"></a>İleti ayırma  
+##  <a name="reservation"></a> İleti ayırma  
  *İleti ayırma* daha sonra kullanmak için bir ileti ayırmak bir ileti bloğu sağlar. Genellikle, ileti ayırma doğrudan kullanılmaz. Ancak, anlama ileti ayırma daha iyi yardımcı olabilecek bazı önceden tanımlanmış ileti bloğu türleri davranışını anlayın.  
   
  Doyumsuz olmayan ve doyumsuz birleştirme göz önünde bulundurun. Bunların her ikisi de iletileri sonraki kullanımlar için ayrılacak ileti ayırma kullanın. Bir açıklanan daha önce doyumsuz olmayan birleştirme iletilerini iki aşamada alır. Bir doyumsuz olmayan ilk aşamasında `join` nesne her bir ileti almak için kaynakları için bekler. Doyumsuz olmayan birleştirme sonra her bu iletiler bir yedek dener. Her ileti ayırabilirsiniz, tüm iletileri kullanır ve hedefte yayar. Aksi takdirde, serbest bırakır, ya da iptal eder, ileti ayırmaları ve yeniden bir ileti almak her kaynak için bekler.  

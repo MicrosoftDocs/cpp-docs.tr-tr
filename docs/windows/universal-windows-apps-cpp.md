@@ -4,21 +4,20 @@ ms.custom: ''
 ms.date: 03/30/2018
 ms.technology:
 - cpp-windows
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 357121cc-d390-4bae-b34a-39614861a9f4
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 142a9c8e7c25dc9eee559f973f4cbd61337581c0
-ms.sourcegitcommit: 78e5e5cdbafd29e2a6ccf68d4cce215136952907
+ms.openlocfilehash: 9914e9ac83efcc43ef120259254b65ef4f1e0ee9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="universal-windows-apps-c"></a>Evrensel Windows Uygulamaları (C++)
 

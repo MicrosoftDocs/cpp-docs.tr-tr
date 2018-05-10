@@ -2,11 +2,8 @@
 title: SimpleClassFactory sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::SimpleClassFactory
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - SimpleClassFactory class
 ms.assetid: 6edda1b2-4e44-4e14-9364-72f519249962
-caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b6cdca5ecf84a9c0c21d37fcaef281df7665cacc
-ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
+ms.openlocfilehash: debb78ba4be2731b8cffce1133518b0b4a04f63d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="simpleclassfactory-class"></a>SimpleClassFactory Sınıfı
 Bir taban sınıf oluşturmak için temel bir mekanizma sağlar.  

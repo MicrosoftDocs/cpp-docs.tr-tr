@@ -1,13 +1,10 @@
 ---
-title: "(Simgeler için görüntü Düzenleyicisi) cihaz görüntüsünü silme | Microsoft Docs"
-ms.custom: 
+title: (Simgeler için görüntü Düzenleyicisi) cihaz görüntüsünü silme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - cursors, undoing changes
 - icons, undoing changes
 ms.assetid: aab1031c-da95-49cf-aabc-46e127b11399
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d37f8ada38b29253fdb06a428286023a450bd70a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2922526827a4a812f31ebde209f118bd726f5b73
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="deleting-a-device-image-image-editor-for-icons"></a>Cihaz Görüntüsünü Silme (Simgeler İçin Görüntü Düzenleyicisi)
 ### <a name="to-delete-a-device-image"></a>Cihaz görüntüsü silmek için  

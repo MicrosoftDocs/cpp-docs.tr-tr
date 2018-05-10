@@ -1,29 +1,24 @@
 ---
-title: "Zamanlayıcı örnekleri | Microsoft Docs"
-ms.custom: 
+title: Zamanlayıcı örnekleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - scheduler instances
 ms.assetid: 4819365f-ef99-49cc-963e-50a2a35a8d6b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1688a2b689b3fc3391e617f3d65d3c681f05a84f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4f09a5708fd9140619eea60fb8e483c2e26165d1
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="scheduler-instances"></a>Zamanlayıcı Örnekleri
 Zamanlayıcı örnekleri eşzamanlılık çalışma zamanı ve nasıl kullanılacağını rolü bu belgeyi açıklanmaktadır [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) ve [concurrency::CurrentScheduler](../../parallel/concrt/reference/currentscheduler-class.md) oluşturmak ve yönetmek için sınıflar Zamanlayıcı örnekleri. Zamanlayıcı örnekleri, belirli türde iş yükleri açık zamanlama ilkeleri ilişkilendirmek istediğinizde faydalıdır. Örneğin, yükseltilmiş iş parçacığı öncelikli olarak bazı görevleri çalıştırmak ve normal iş parçacığı öncelikli diğer görevleri çalıştırmak için varsayılan Zamanlayıcısı'nı kullanmak için bir zamanlayıcı örneğini oluşturabilirsiniz.  
@@ -31,7 +26,7 @@ Zamanlayıcı örnekleri eşzamanlılık çalışma zamanı ve nasıl kullanıla
 > [!TIP]
 >  Eşzamanlılık Çalışma zamanı varsayılan Zamanlayıcı sağlar ve bu nedenle, uygulamanızda oluşturmak için gerekli değildir. Görev Zamanlayıcısı'nı, uygulamalarınızın performansını ince ayar yardımcı olduğundan, ile başlamanızı öneririz [paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) veya [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) kullanıyorsanız Eşzamanlılık Çalışma zamanı için yeni.  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
   
 -   [Zamanlayıcı ve CurrentScheduler sınıfları](#classes)  
   
@@ -43,7 +38,7 @@ Zamanlayıcı örnekleri eşzamanlılık çalışma zamanı ve nasıl kullanıla
   
 -   [Örnek](#example)  
   
-##  <a name="classes"></a>Zamanlayıcı ve CurrentScheduler sınıfları  
+##  <a name="classes"></a> Zamanlayıcı ve CurrentScheduler sınıfları  
  Görev Zamanlayıcısı'nı uygulamaların bir veya daha fazla kullanmasını sağlar *Zamanlayıcı örnekleri* çalışması zamanlamak için. [Concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) sınıf Zamanlayıcı örneğini temsil eder ve görev zamanlama için ilgili işlevselliği kapsar.  
   
  Bir zamanlayıcı bağlı bir iş parçacığı olarak bilinen bir *yürütme bağlamı*, veya yalnızca *bağlamı*. Bir zamanlayıcı herhangi bir zamanda geçerli bağlama göre etkin olabilir. Etkin Zamanlayıcı da denir *geçerli Zamanlayıcı*. Eşzamanlılık Çalışma zamanı kullanan [concurrency::CurrentScheduler](../../parallel/concrt/reference/currentscheduler-class.md) geçerli Zamanlayıcı erişim sağlamak için sınıf. Tek bağlam için geçerli Zamanlayıcı başka bir bağlam için geçerli Zamanlayıcı farklı olabilir. Çalışma zamanı geçerli Zamanlayıcı işlem düzeyinde gösterimini sağlamaz.  
@@ -54,7 +49,7 @@ Zamanlayıcı örnekleri eşzamanlılık çalışma zamanı ve nasıl kullanıla
   
  [[Üst](#top)]  
   
-##  <a name="creating"></a>Zamanlayıcı örneğini oluşturma  
+##  <a name="creating"></a> Zamanlayıcı örneğini oluşturma  
  Oluşturmak için bu üç yolu bir `Scheduler` nesnesi:  
   
 -   Hiçbir Zamanlayıcı varsa, çalışma zamanı işlerini yapmak için çalışma zamanı işlevselliği, örneğin, bir paralel algoritması kullandığınızda varsayılan Zamanlayıcı sizin için oluşturur. Varsayılan Zamanlayıcı paralel iş başlatır bağlamı için geçerli Zamanlayıcı olur.  
@@ -69,7 +64,7 @@ Zamanlayıcı örnekleri eşzamanlılık çalışma zamanı ve nasıl kullanıla
   
  [[Üst](#top)]  
   
-##  <a name="managing"></a>Zamanlayıcı örneğini kullanım süresini yönetme  
+##  <a name="managing"></a> Zamanlayıcı örneğini kullanım süresini yönetme  
  Çalışma zamanı ömrü denetlemek için bir başvuru sayımı mekanizması kullanır `Scheduler` nesneleri.  
   
 
@@ -98,7 +93,7 @@ Zamanlayıcı örnekleri eşzamanlılık çalışma zamanı ve nasıl kullanıla
   
  [[Üst](#top)]  
   
-##  <a name="features"></a>Yöntemleri ve özellikleri  
+##  <a name="features"></a> Yöntemleri ve özellikleri  
  Bu bölümde önemli yöntemlerini özetler `CurrentScheduler` ve `Scheduler` sınıfları.  
   
  Düşünün `CurrentScheduler` olarak kullanmak için bir zamanlayıcı geçerli bağlama göre oluşturmak için bir yardımcı sınıfı. `Scheduler` Sınıfı, başka bir bağlamına ait bir zamanlayıcı denetlemenize olanak sağlar.  
@@ -133,7 +128,7 @@ Zamanlayıcı örnekleri eşzamanlılık çalışma zamanı ve nasıl kullanıla
   
  [[Üst](#top)]  
   
-##  <a name="example"></a>Örnek  
+##  <a name="example"></a> Örnek  
  Oluşturma ve Zamanlayıcı örneğini yönetme temel örnekleri için bkz: [nasıl yapılır: Zamanlayıcı örneğini yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

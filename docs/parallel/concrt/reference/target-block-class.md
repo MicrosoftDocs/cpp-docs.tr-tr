@@ -1,12 +1,9 @@
 ---
-title: "target_block sınıfı | Microsoft Docs"
-ms.custom: 
+title: target_block sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - target_block
@@ -34,17 +31,15 @@ dev_langs:
 helpviewer_keywords:
 - target_block class
 ms.assetid: 3ce181b4-b94a-4894-bf7b-64fc09821f9f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2827e7bbb9a2c23804d90ccb729e990b84f3a442
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 754bc6add99974ff204c977e47f35486cc830d95
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="targetblock-class"></a>target_block Sınıfı
 `target_block` Sınıfı, temel bağlantı yönetim işlevleri sağlayan Özet temel sınıf ve hedef için hata denetimi yalnızca engeller.  
@@ -76,7 +71,7 @@ class target_block : public ITarget<typename _SourceLinkRegistry::type::source_t
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[target_block](#ctor)|Oluşturan bir `target_block` nesnesi.|  
-|[~target_block Destructor](#dtor)|Bozar `target_block` nesnesi.|  
+|[~ target_block yok Edicisi](#dtor)|Bozar `target_block` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -102,7 +97,7 @@ class target_block : public ITarget<typename _SourceLinkRegistry::type::source_t
 |[send_message](#send_message)|Türetilen bir sınıfta geçersiz kılındığında, bu yöntem gelen iletiyi zaman uyumlu olarak geçirir. bir `ISource` bu bloğuna `target_block` nesnesi. Tarafından çağrılan `send` kaynak bloğu tarafından çağrıldığında yöntemi.|  
 |[sync_send](#sync_send)|Eşzamanlı olarak işlemek için bir ileti gönderin.|  
 |[unlink_source](#unlink_source)|Belirtilen kaynak blok bu bağlantıyı keser `target_block` nesnesi.|  
-|[unlink_sources](#unlink_sources)|Tüm kaynak blokları bu bağlantıyı keser `target_block` nesnesi. (Overrides [ITarget::unlink_sources](itarget-class.md#unlink_sources).)|  
+|[unlink_sources](#unlink_sources)|Tüm kaynak blokları bu bağlantıyı keser `target_block` nesnesi. (Geçersiz kılmaları [Itarget::unlink_sources](itarget-class.md#unlink_sources).)|  
 |[wait_for_async_sends](#wait_for_async_sends)|Tamamlamak tüm zaman uyumsuz yayma bekler.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
@@ -127,7 +122,7 @@ void async_send(_Inout_opt_ message<_Source_type>* _PMessage);
  `_PMessage`  
  Gönderilen ileti için bir işaretçi.  
   
-##  <a name="decline_incoming_messages">decline_incoming_messages</a> 
+##  <a name="decline_incoming_messages"></a> decline_incoming_messages 
 
  Blok için yeni ileti reddedildi olduğunu gösterir.  
   
@@ -138,7 +133,7 @@ void decline_incoming_messages();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi yok etme işlemi devam ederken yeni iletiler reddetti emin olmak için yıkıcı tarafından çağrılır.  
   
-##  <a name="enable_batched_processing">enable_batched_processing</a> 
+##  <a name="enable_batched_processing"></a> enable_batched_processing 
 
  Bu bloğu için işleme toplu hale olanak tanır.  
   
@@ -178,7 +173,7 @@ virtual void link_source(_Inout_ ISource<_Source_type>* _PSource);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev doğrudan çağrılmamalıdır bir `target_block` nesnesi. Blokları birlikte kullanarak bağlanması `link_target` yöntemi `ISource` çağıracağı blokları `link_source` karşılık gelen hedef yöntemi.  
   
-##  <a name="process_input_messages">process_input_messages</a> 
+##  <a name="process_input_messages"></a> process_input_messages 
 
  Girdi olarak alınan iletileri işler.  
   
@@ -197,7 +192,7 @@ virtual void process_input_messages(_Inout_ message<_Source_type>* _PMessage);
 virtual void process_message(message<_Source_type> *);
 ```  
   
-##  <a name="propagate">Yayma</a> 
+##  <a name="propagate"></a> Yayma 
 
  Zaman uyumsuz olarak bir ileti bu hedef blok kaynak bloğundan geçirir.  
   
@@ -263,7 +258,7 @@ void remove_sources();
 ### <a name="remarks"></a>Açıklamalar  
  Tüm hedef blokları kendi yıkıcı kaynakları kaldırmak için bu yordamı çağırmanız gerekir.  
   
-##  <a name="send">Gönder</a> 
+##  <a name="send"></a> Gönder 
 
  Zaman uyumlu olarak bir ileti bu hedef blok kaynak bloğundan geçirir.  
   
@@ -326,7 +321,7 @@ void sync_send(_Inout_opt_ message<_Source_type>* _PMessage);
 target_block();
 ```  
   
-##  <a name="dtor"></a> ~target_block 
+##  <a name="dtor"></a> ~ target_block 
 
  Bozar `target_block` nesnesi.  
   

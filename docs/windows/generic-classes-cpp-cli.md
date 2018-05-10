@@ -1,13 +1,10 @@
 ---
-title: "Genel sınıflar (C + +/ CLI) | Microsoft Docs"
-ms.custom: 
+title: Genel sınıflar (C + +/ CLI) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - generic classes
 - generics [C++], declaring generic classes
 ms.assetid: 0beb99e1-1ec4-4fee-9836-ce9657d67a3a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 22f2d00c4f8e07ea9d04e03c2e95190be056cbd9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 07a5cb6abaca56901af26895b1304a9b7079ced9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="generic-classes-ccli"></a>Genel Sınıflar (C++/CLI)
 Genel bir sınıf, aşağıdaki biçimi kullanarak bildirilmiş:  
@@ -49,11 +44,11 @@ class-body
 ## <a name="remarks"></a>Açıklamalar  
  Yukarıdaki söz dizimi aşağıdaki terimler kullanılır:  
   
- `attributes`(isteğe bağlı)  
+ `attributes` (isteğe bağlı)  
  Ek tanımlayıcı bilgiler. Öznitelikleri özniteliklerinin ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.  
   
  *sınıf anahtarı*  
- Ya da `class` veya`typename`  
+ Ya da `class` veya `typename`  
   
  *tür-parametre-tanımlayıcıları*,  
  Tür parametreleri adlarını belirtme tanımlayıcıları virgülle ayrılmış listesi.  
@@ -69,7 +64,7 @@ class-body
  *erişilebilirlik değiştiricileri*  
  Genel sınıfı için erişilebilirlik değiştiricileri. Windows çalışma zamanı için yalnızca izin verilen değiştiricisi olduğu `private`. Ortak dil çalışma zamanı için izin verilen değiştiricileri olan `private` ve `public`.  
   
- *tanımlayıcı*  
+ *Tanımlayıcı*  
  Genel bir sınıf, herhangi bir geçerli C++ tanımlayıcı adı.  
   
  *değiştiriciler* (isteğe bağlı)  
@@ -84,7 +79,7 @@ class-body
  *Bildirimciler*  
  Bu tür hiçbir değişken bildirimleri. Örneğin: `^` *tanımlayıcısı*[`,` ...]  
   
- Bunlar gibi genel sınıfları bildirme (unutmayın anahtar sözcüğü **sınıfı** yerine kullanılabilir **typename**). Bu örnekte, `ItemType`, `KeyType` ve `ValueType` noktada belirtilen bilinmeyen türleri burada türü. `HashTable<int, int>`genel tür yapılandırılmış bir tür `HashTable<KeyType, ValueType>`. Tek bir genel türünden farklı oluşturulan türler sayısı oluşturulabilir. Oluşturulan türler genel sınıflardan oluşturulan gibi başka bir başvuru sınıf türü kabul edilir.  
+ Bunlar gibi genel sınıfları bildirme (unutmayın anahtar sözcüğü **sınıfı** yerine kullanılabilir **typename**). Bu örnekte, `ItemType`, `KeyType` ve `ValueType` noktada belirtilen bilinmeyen türleri burada türü. `HashTable<int, int>` genel tür yapılandırılmış bir tür `HashTable<KeyType, ValueType>`. Tek bir genel türünden farklı oluşturulan türler sayısı oluşturulabilir. Oluşturulan türler genel sınıflardan oluşturulan gibi başka bir başvuru sınıf türü kabul edilir.  
   
 ```  
 // generic_classes_1.cpp  

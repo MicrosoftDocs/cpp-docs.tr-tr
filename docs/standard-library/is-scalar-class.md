@@ -2,11 +2,8 @@
 title: is_scalar sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - type_traits/std::is_scalar
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - is_scalar class
 - is_scalar
 ms.assetid: a0cdfc9a-f27e-4808-890f-6ed7942db60c
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8241bee469135444a64e585d905b8f2836800611
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 84cc8ade8d844b591d6cb848ebee0fb3b05fb932
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="isscalar-class"></a>is_scalar Sınıfı
 

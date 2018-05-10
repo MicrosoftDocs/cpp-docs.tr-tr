@@ -1,27 +1,22 @@
 ---
-title: "Örnek çoklu iş parçacığı kullanan C programı | Microsoft Docs"
-ms.custom: 
+title: Örnek çoklu iş parçacığı kullanan C programı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 4706f6cd-ff9c-4dbf-99a2-1c999b568f17
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 234a24152b0f5ce02caf3948baf7ee3b183622ed
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1584d52f9ea543c95363a0f7f03cdad80442ee1c
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="sample-multithread-c-program"></a>Örnek Çoklu İş Parçacığı Kullanan C Programı
 Bounce.c olan yeni bir örnek çoklu iş parçacığı programı harfi her iş parçacığı **bir** veya **A** yazılır. Her iş parçacığı Mutlu Yüz ekran çevresinde farklı bir renk, geri dönmeler. En fazla 32 iş parçacığı oluşturulamıyor. Programın normal sonlandırma gerçekleşir zaman `q` veya **Q** yazılır. Derleme ve Bounce.c bağlama hakkında daha fazla bilgi için bkz: [derleme ve bağlama çoklu iş parçacığı kullanan programları](../parallel/compiling-and-linking-multithread-programs.md).  

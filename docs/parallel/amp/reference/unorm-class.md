@@ -1,12 +1,9 @@
 ---
-title: "unorm sınıfı | Microsoft Docs"
-ms.custom: 
+title: unorm sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - unorm
@@ -15,17 +12,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: bc30bd20-6452-4d5f-9158-3b11c4c16ed2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfd4ed2b4aad398e1206d0e3b786742841aa189b
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: e235930b73c4e9c2bc110d142ad734669f9c6ccc
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="unorm-class"></a>unorm Sınıfı
 Unorm numarasını temsil eder. Her bir kayan bir öğedir [0.0f, 1.0f] aralığında nokta sayısı.  
@@ -50,10 +45,10 @@ class unorm;
 |----------|-----------------|  
 |unorm::operator--||  
 |unorm::operator float|Dönüşüm işleci. Kayan unorm sayıya dönüştürme noktası değeri.|  
-|unorm::operator*=||  
-|unorm::operator/=||  
-|unorm::operator++||  
-|unorm::operator+=||  
+|unorm::operator * =||  
+|unorm::operator ve =||  
+|unorm::operator ++||  
+|unorm::operator +=||  
 |unorm::operator=||  
 |unorm::operator-=||  
   

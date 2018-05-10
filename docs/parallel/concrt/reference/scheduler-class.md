@@ -1,12 +1,9 @@
 ---
-title: "Zamanlayıcı sınıfı | Microsoft Docs"
-ms.custom: 
+title: Zamanlayıcı sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - Scheduler
@@ -30,17 +27,15 @@ dev_langs:
 helpviewer_keywords:
 - Scheduler class
 ms.assetid: 34cf7961-048d-4852-8a5c-a32f823e3506
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7431776a27668fc1f1c465377f1e947eb36ab99
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 97abec33d5fa4b372bc26874fd37397a2b78bb29
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="scheduler-class"></a>Zamanlayıcı Sınıfı
 Bir Özet bir eşzamanlılık çalışma zamanı Zamanlayıcısı temsil eder.  
@@ -69,8 +64,8 @@ class Scheduler;
 |[CreateScheduleGroup](#createschedulegroup)|Fazla Yüklendi. Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. Parametresi alan sürüm `_Placement` görevleri bu parametresi tarafından belirtilen konumda yürütme doğrultusunda ağırlıklı için yeni oluşturulan zamanlama grubundaki neden olur.|  
 |[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Sanal işlemcilerin sayısı için Zamanlayıcı'yı döndürür.|  
 |[GetPolicy](#getpolicy)|Zamanlayıcı ile oluşturulduğundan İlkesi kopyasını döndürür.|  
-|[Id](#id)|Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|  
-|[IsAvailableLocation](#isavailablelocation)|Verilen bir konuma Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.|  
+|[Kimliği](#id)|Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|  
+|[Isavailablelocation](#isavailablelocation)|Verilen bir konuma Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.|  
 |[Başvuru](#reference)|Zamanlayıcı başvurusu sayısını artırır.|  
 |[RegisterShutdownEvent](#registershutdownevent)|Windows olay işleyici geçirilen nedenler `_Event` Zamanlayıcı kapanır ve kendisini bozar bildirilmesini parametresi. Olay işaret zamanında Zamanlayıcı için zamanlanan tüm iş tamamlanır. Birden fazla kapatma olayları bu yöntemle kaydedilebilir.|  
 |[Sürüm](#release)|Azaltır Zamanlayıcı başvuru sayısı.|  

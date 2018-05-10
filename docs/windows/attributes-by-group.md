@@ -1,30 +1,25 @@
 ---
-title: "Gruplara göre öznitelikler | Microsoft Docs"
-ms.custom: 
+title: Gruplara göre öznitelikler | Microsoft Docs
+ms.custom: index-page
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: 'index-page '
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - attributes [C++]
 ms.assetid: 9f4dd43f-9909-43d6-91d2-05734643876e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 32de68754f5d305f15894e5144a1c56ae4e1c981
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b9f883bbedff75446659e53da98751f77401a38f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="attributes-by-group"></a>Gruplara Göre Öznitelikler
 C++ öznitelikleri aşağıdaki işlevsel gruplar halinde düzenlenir.  

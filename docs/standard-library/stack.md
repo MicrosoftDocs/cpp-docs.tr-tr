@@ -2,11 +2,8 @@
 title: '&lt;yığın&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - <stack>
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - stack, stack header
 - stack header
 ms.assetid: 89d8999e-c773-46f2-86c1-4b3b5aedb1c1
-caps.latest.revision: 20
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4db3881ff6babad8686c1d004c0c8a47a78f214b
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 68f16523b1fda7b8b3d6b8dca5b4d1960c5c815f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltstackgt"></a>&lt;Yığını&gt;
 

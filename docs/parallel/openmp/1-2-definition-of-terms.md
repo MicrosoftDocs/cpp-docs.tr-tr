@@ -1,27 +1,22 @@
 ---
-title: "1.2 terimlerin tanımı | Microsoft Docs"
-ms.custom: 
+title: 1.2 terimlerin tanımı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: fcaa8eb8-bbbf-4a24-ad0e-e299c442db79
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab188c32c633092efc562d0432ebb7c5662b5ff8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8563bb757ad8d30f1639f017769bfd6c4084efa0
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="12-definition-of-terms"></a>1.2 Terimlerin Tanımı
 Bu belgede aşağıdaki terimler kullanılır:  

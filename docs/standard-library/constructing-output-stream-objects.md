@@ -2,28 +2,23 @@
 title: Çıkış akış nesnelerini oluşturma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - output stream objects
 ms.assetid: 93c8eab6-610c-4f48-b76d-1d960cac7641
-caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: debc39987efffe149b8b7834ba5416027acadf4e
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: ff3c924327c11d00dd9137a91ebd19ef7bdc9eaa
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="constructing-output-stream-objects"></a>Çıkış Akış Nesnelerini Oluşturma
 

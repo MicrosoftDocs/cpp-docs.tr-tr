@@ -1,12 +1,9 @@
 ---
 title: omp_get_dynamic | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - omp_get_dynamic
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - omp_get_dynamic OpenMP function
 ms.assetid: efa843c5-7266-4a75-8db3-22992663d9db
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 865104055fc98946c09152f328f4812af0120e64
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: d97cae8091f88c283412b36ef757b03c72f7580d
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ompgetdynamic"></a>omp_get_dynamic
 Çalışma zamanı tarafından ayarlanabilir sonraki paralel bölgede kullanılabilir iş parçacığı sayısını belirten bir değer döndürür.  

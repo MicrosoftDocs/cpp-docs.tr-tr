@@ -1,30 +1,25 @@
 ---
-title: "Nil yapısı | Microsoft Docs"
-ms.custom: 
+title: Nil yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::Nil
 dev_langs:
 - C++
 ms.assetid: ea6dddc1-2bd0-44eb-804e-477572215712
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fcdd3b28469ae5702411d28a43adb28847bc395a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cb260114a8010d441f0556cf2a21734c0ac23cca
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="nil-structure"></a>Nil Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  

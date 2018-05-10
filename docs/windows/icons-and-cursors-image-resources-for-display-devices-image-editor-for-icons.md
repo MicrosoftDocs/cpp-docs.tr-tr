@@ -1,13 +1,10 @@
 ---
-title: "Simgeler ve İmleçler: görüntüleme cihazları (simgeler için görüntü Düzenleyicisi) için görüntü kaynakları | Microsoft Docs"
-ms.custom: 
+title: 'Simgeler ve İmleçler: görüntüleme cihazları (simgeler için görüntü Düzenleyicisi) için görüntü kaynakları | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.icon
 dev_langs:
@@ -24,18 +21,16 @@ helpviewer_keywords:
 - cursors [C++], hot spots
 - icons [C++], types
 ms.assetid: 8f0809a8-0cf0-4da9-b23d-51f28bf15f5b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 99ed2e99c3a08b473dcc786ed47bc088b8fd8a4f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a977629cbae140afa1463a7765f193a7519e1f68
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons"></a>Simgeler ve İmleçler: Görüntüleme Cihazları için Görüntü Kaynakları (Simgeler İçin Görüntü Düzenleyicisi)
 Simgeler ve İmleçler farklı boyutlarda birden fazla görüntü içeren ve renk düzenleri farklı türlerdeki görüntüleme cihazları için grafik kaynaklardır. Ayrıca, bir imleç "etkin nokta," Windows konumunu izlemek için kullandığı konumun sahiptir. Simgeler ve İmleçler oluşturulur ve görüntü Düzenleyicisi'ni kullanarak, bit eşlemler ve diğer görüntüleri gibi düzenlenebilir.  

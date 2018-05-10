@@ -1,12 +1,9 @@
 ---
 title: 'SyncLockT:: ~ SyncLockT yok Edicisi | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::~SyncLockT
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - ~SyncLockT, destructor
 ms.assetid: 9e14870d-017d-45fe-a3dc-cd86b6fa1c3a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5e5fa42339ea5490ff9c97938cfe55d6256bc123
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c91c677a18c66c875107f48c2e04ba45be88fb48
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="synclocktsynclockt-destructor"></a>SyncLockT::~SyncLockT Yok Edicisi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  

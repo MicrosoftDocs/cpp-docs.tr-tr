@@ -1,13 +1,10 @@
 ---
 title: PPL'de iptal | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - parallel work trees [Concurrency Runtime]
 - canceling parallel tasks [Concurrency Runtime]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 340942905ce252f7e4a40d8ae5366d5d154755d1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5a0c74ad5877a5b490414d96bf0f13b32309a21a
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL'de İptal
 Bu belge iptali paralel Desen kitaplığı (PPL), paralel iş iptal etme ve paralel iş zaman iptal belirleme rolünü açıklamaktadır.  
@@ -53,7 +48,7 @@ Bu belge iptali paralel Desen kitaplığı (PPL), paralel iş iptal etme ve para
 
 
   
-##  <a name="top"></a>Bu belgede  
+##  <a name="top"></a> Bu belgede  
   
 - [Paralel iş ağaçları](#trees)  
   
@@ -69,7 +64,7 @@ Bu belge iptali paralel Desen kitaplığı (PPL), paralel iş iptal etme ve para
   
 - [İptal kullanmamayı ne zaman](#when)  
   
-##  <a name="trees"></a>Paralel iş ağaçları  
+##  <a name="trees"></a> Paralel iş ağaçları  
  PPL'de, hassas görevleri ve hesaplamalar yönetmek için görevler ve görev grupları kullanır. Görev grupları forma geçirebilmenize *ağaçları* paralel iş. Aşağıdaki çizimde bir paralel iş ağacı gösterir. Bu çizimde, `tg1` ve `tg2` görev grupları; temsil eder `t1`, `t2`, `t3`, `t4`, ve `t5` görev grupları gerçekleştirmek iş temsil eder.  
   
  ![Paralel çalışma ağacı](../../parallel/concrt/media/parallelwork_trees.png "parallelwork_trees")  
@@ -82,20 +77,20 @@ Bu belge iptali paralel Desen kitaplığı (PPL), paralel iş iptal etme ve para
   
  [[Üst](#top)]  
   
-##  <a name="tasks"></a>Paralel görevleri iptal etme  
+##  <a name="tasks"></a> Paralel görevleri iptal etme  
 
  Paralel iş iptal etmek için birden çok yolu vardır. Tercih edilen yol bir iptal belirteci kullanmaktır. Görev grupları da destek [concurrency::task_group::cancel](reference/task-group-class.md#cancel) yöntemi ve [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) yöntemi. Son bir görev iş işlev gövdesine bir özel durum yoludur. Seçtiğiniz yöntem olsun, iptal hemen gerçekleşmez anlayın. Bir görevi veya görev grubu iptal edilirse yeni iş başlamadı rağmen etkin çalışma denetleyin ve iptal için yanıt gerekir.  
 
   
  Paralel görevleri iptal etme daha fazla örnek için bkz: [izlenecek yol: bağlanma kullanarak görevleri ve XML HTTP isteklerini](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md), [nasıl yapılır: paralel bir döngüden gelen sonu için kullanım iptal](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md), ve [nasıl yapılır: kullanın Özel durum paralel bir döngüden kurtulmak için işleme](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).  
   
-###  <a name="tokens"></a>Paralel iş iptal etmek için bir iptal belirteci kullanma  
+###  <a name="tokens"></a> Paralel iş iptal etmek için bir iptal belirteci kullanma  
  `task`, `task_group`, Ve `structured_task_group` sınıfları iptal belirteçlerini kullanımı ile iptal destekler. PPL'de tanımlar [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md) ve [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) bu amaç için sınıflar. İş iptal etmek için bir iptal belirteci kullandığınızda, çalışma zamanı bu belirtece abone yeni iş başlatılmaz. Zaten etkin olan iş kullanabileceğiniz [is_canceled](../../parallel/concrt/reference/cancellation-token-class.md#is_canceled) iptal belirteci izlemek ve mümkün olduğunda durdurmak için üye işlevi.  
   
 
  İptal başlatmak için çağrı [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) yöntemi. Aşağıdaki şekillerde iptal için yanıtlayın:  
   
--   İçin `task` nesneleri, kullanın [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) işlevi. `cancel_current_task`Geçerli görev ve onun değerine bağlı devamlılıklar hiçbirini iptal eder. (İptal iptal etmez *belirteci* görev veya kendi devamlılıklar ile ilişkili.)  
+-   İçin `task` nesneleri, kullanın [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) işlevi. `cancel_current_task` Geçerli görev ve onun değerine bağlı devamlılıklar hiçbirini iptal eder. (İptal iptal etmez *belirteci* görev veya kendi devamlılıklar ile ilişkili.)  
   
 -   Görev grupları ve paralel algoritmalar için kullanmak [concurrency::is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) iptal algılamak ve bu işlevi döndüğünde görev gövdesinden mümkün olan en kısa sürede dönmek için işlevi `true`. (Çağırmayın `cancel_current_task` bir görev grubundan.)  
 
@@ -154,7 +149,7 @@ Bu belge iptali paralel Desen kitaplığı (PPL), paralel iş iptal etme ve para
   
 #### <a name="cancellation-tokens-and-task-composition"></a>İptal Belirteçleri ve Görev Oluşturma  
 
- [Eşzamanlılık:: HYPERLINK "http://msdn.microsoft.com/library/system.threading.tasks.task.whenall (v=VS.110).aspx" when_all](reference/concurrency-namespace-functions.md#when_all) ve [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) işlevleri, oluşturmanıza yardımcı olabilir Ortak desenler uygulamak için birden çok görev. Bu bölümde, bu işlevler iptal belirteçleri ile nasıl çalıştığı açıklanmaktadır.  
+ [Eşzamanlılık:: HYPERLINK "http://msdn.microsoft.com/library/system.threading.tasks.task.whenall(v=VS.110).aspx" when_all](reference/concurrency-namespace-functions.md#when_all) ve [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) işlevleri, ortak desenler uygulamak için birden çok görev oluşturan yardımcı olabilir. Bu bölümde, bu işlevler iptal belirteçleri ile nasıl çalıştığı açıklanmaktadır.  
   
  Ya da bir iptal belirteci sağladığınız zaman `when_all` ve `when_any` işlev işlevi yalnızca bu iptal belirteci iptal edildiğinde veya bir katılımcının görevleri iptal edilmiş durumda sona erer veya bir özel durum oluşturur, iptal.  
   
@@ -164,7 +159,7 @@ Bu belge iptali paralel Desen kitaplığı (PPL), paralel iş iptal etme ve para
   
  [[Üst](#top)]  
   
-###  <a name="cancel"></a>Paralel iş iptal yönteme iptal kullanma  
+###  <a name="cancel"></a> Paralel iş iptal yönteme iptal kullanma  
 
  [Concurrency::task_group::cancel](reference/task-group-class.md#cancel) ve [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) yöntemlerini görev grubu iptal edilmiş durumuna ayarlayın. Çağırdıktan sonra `cancel`, görev grubu gelecekteki görevlerin başlatılmaz. `cancel` Yöntemleri birden çok alt görevler tarafından çağrılabilir. İptal edilen bir görev neden [concurrency::task_group::wait](reference/task-group-class.md#wait) ve [concurrency::structured_task_group::wait](reference/structured-task-group-class.md#wait) dönmek için yöntemleri [concurrency::canceled](reference/concurrency-namespace-enums.md#task_group_status).  
 
@@ -200,7 +195,7 @@ Bu belge iptali paralel Desen kitaplığı (PPL), paralel iş iptal etme ve para
   
  [[Üst](#top)]  
   
-###  <a name="exceptions"></a>Paralel iş iptal etmek için özel durumlar kullanma  
+###  <a name="exceptions"></a> Paralel iş iptal etmek için özel durumlar kullanma  
  İptal belirteçleri kullanımını ve `cancel` yöntemi özel durum işleme paralel çalışma ağacı iptal etme sırasında daha verimlidir. İptal belirteçleri ve `cancel` cancel yöntemi bir görevi ve tüm alt görevler yukarıdan aşağıya doğru bir biçimde. Buna karşılık, özel durum işleme aşağıdan yukarıya biçimde çalışır ve özel durum yukarı yayar gibi her alt görev grubu bağımsız olarak iptal etmeniz gerekir. Konu [özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md) özel durumlar eşzamanlılık çalışma zamanı hataları iletişim kurmak için nasıl kullandığını açıklar. Ancak, tüm özel durumlar bir hata gösterir. Örneğin, sonuç bulduğunda arama algoritması ilişkili görevi iptal etme. Ancak, daha önce belirtildiği gibi özel durum işleme kullanmaktan daha az verimlidir `cancel` paralel iş iptal etmek için yöntem.  
   
 > [!CAUTION]
@@ -220,7 +215,7 @@ Bu belge iptali paralel Desen kitaplığı (PPL), paralel iş iptal etme ve para
   
  [[Üst](#top)]  
   
-##  <a name="algorithms"></a>Paralel algoritmaları iptal etme  
+##  <a name="algorithms"></a> Paralel algoritmaları iptal etme  
  Paralel algoritmalar ppl'de, örneğin, `parallel_for`, görev grupları oluşturun. Bu nedenle, bir paralel algoritması iptal etmek için birçok aynı teknikleri kullanabilirsiniz.  
   
  Aşağıdaki örnekler bir paralel algoritması iptal etmek için çeşitli yollarını gösterir.  
@@ -258,7 +253,7 @@ Caught 50
   
  [[Üst](#top)]  
   
-##  <a name="when"></a>İptal kullanmamayı ne zaman  
+##  <a name="when"></a> İptal kullanmamayı ne zaman  
  İptal kullanımını uygun olduğunda her ilgili görevlerin bir grubun üyesi zamanında çıkabilirsiniz. Ancak, burada iptal uygulamanız için uygun olmayabilir bazı senaryolar vardır. Görev iptali işbirlikçi olduğundan, herhangi bir görev engellendi, örneğin, genel dizi görevi iptal eder değil. Görev grubu iptal edilirse Örneğin, bir görev henüz başlamamış, ancak başka bir etkin görev engelini kaldırır, onu başlatılmaz. Bu kilitlenme uygulamanızda oluşmasına neden olabilir. Burada iptal kullanımını uygun olmayabilir, ikinci bir örnek, bir görevi iptal edilir, ancak kaynak boşaltma gibi önemli bir işlem, kendi alt görevi gerçekleştirir verilmiştir. Üst görev iptal ettiğinizde genel dizi görevi iptal olduğundan bu işlem çalıştırmaz. Bu noktayı gösterir bir örnek için bkz: [anlayın nasıl iptali ve özel durum işleme etkileyen nesne yok etme](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) paralel Desen kitaplığı konusunda en iyi yöntemler bölümündeki.  
   
  [[Üst](#top)]  

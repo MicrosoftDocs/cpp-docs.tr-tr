@@ -2,11 +2,8 @@
 title: Aşırı yükleme &lt; &lt; kendi sınıflarınız için işleci | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - C++
@@ -14,17 +11,15 @@ helpviewer_keywords:
 - operator<<, overloading for your own classes
 - operator <<, overloading for your own classes
 ms.assetid: ad1d2c49-d84e-48a8-9c09-121f28b10bf0
-caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ef542a20284d0b69d44f1092a1f311a16b999a4
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: b5f5129be6ebf7cac336373f00c7f9e989c23489
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="overloading-the-ltlt-operator-for-your-own-classes"></a>Aşırı yükleme &lt; &lt; kendi sınıflarınız için işleci
 

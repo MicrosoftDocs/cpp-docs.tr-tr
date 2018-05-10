@@ -2,11 +2,8 @@
 title: WeakRef::CopyTo yöntemi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::WeakRef::CopyTo
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - CopyTo method
 ms.assetid: f83de6da-b3d4-41a6-9845-cd725ecf3b75
-caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d83ff273d3f6e9748be722b47d08c459564aa911
-ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
+ms.openlocfilehash: 817d984e995e7ac33ba80f978a282a8c0bac3e4f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="weakrefcopyto-method"></a>WeakRef::CopyTo Yöntemi
 Bir işaretçi bir arabirim için mevcut ise, belirtilen işaretçi değişkenine atar.  

@@ -2,11 +2,8 @@
 title: Bağlam sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - Context
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - Context class
 ms.assetid: c0d553f3-961d-4ecd-9a29-4fa4351673b8
-caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9195ec68a47e2ed528a42bb018cfba6316101a0c
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: 4bf574fc679b879e2fa9084ed6fbd4ed82e66f70
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="context-class"></a>Bağlam Sınıfı
 Yürütme bağlamı için bir Özet temsil eder.  
@@ -56,7 +51,7 @@ class Context;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[~Context Destructor](#dtor)||  
+|[~ Context yok Edicisi](#dtor)||  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -67,8 +62,8 @@ class Context;
 |[GetId](#getid)|Bağlam ait olduğu Zamanlayıcı içinde benzersizdir bağlamı için bir tanımlayıcı döndürür.|  
 |[GetScheduleGroupId](#getschedulegroupid)|Bağlam üzerinde çalışmakta zamanlama grubu için bir tanımlayıcı döndürür.|  
 |[GetVirtualProcessorId](#getvirtualprocessorid)|Bağlam üzerinde yürütme sanal işlemci için bir tanımlayıcı döndürür.|  
-|[Id](#id)|Geçerli bağlam ait olduğu Zamanlayıcı içinde benzersiz olduğundan geçerli bağlam için bir tanımlayıcı döndürür.|  
-|[IsCurrentTaskCollectionCanceling](#iscurrenttaskcollectioncanceling)|Olup olmadığının göstergesi bir döndürür, satır içi geçerli bağlama göre şu anda yürütülmekte görev koleksiyonu etkin bir iptal ortasında (veya kısa bir süre içinde olacaktır).|  
+|[Kimliği](#id)|Geçerli bağlam ait olduğu Zamanlayıcı içinde benzersiz olduğundan geçerli bağlam için bir tanımlayıcı döndürür.|  
+|[Iscurrenttaskcollectioncanceling](#iscurrenttaskcollectioncanceling)|Olup olmadığının göstergesi bir döndürür, satır içi geçerli bağlama göre şu anda yürütülmekte görev koleksiyonu etkin bir iptal ortasında (veya kısa bir süre içinde olacaktır).|  
 |[Issynchronouslyblocked](#issynchronouslyblocked)|Bağlam zaman uyumlu olarak engellenmiş olup olmadığını belirler. Bir bağlam açıkça engellemek üzere sonuçlanan bir eylem gerçekleştirirse zaman uyumlu olarak engellenmesi olarak kabul edilir.|  
 |[Oversubscribe](#oversubscribe)|Bir ek sanal işlemci bu Zamanlayıcı sanal işlemciler birinde yürütme bağlamı üzerinde çağrıldığında kod bloğu boyunca bir zamanlayıcı yerleştirir.|  
 |[ScheduleGroupId](#schedulegroupid)|Geçerli bağlam üzerinde çalıştığı zamanlama grubu için bir tanımlayıcı döndürür.|  
@@ -108,7 +103,7 @@ static void __cdecl Block();
   
  Bu yöntemi özel durumlar dahil olmak üzere, çeşitli atabilirsiniz [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md).  
   
-##  <a name="dtor"></a> ~Context 
+##  <a name="dtor"></a> ~ Bağlamı 
 
 ```
 virtual ~Context();
@@ -255,7 +250,7 @@ virtual void Unblock() = 0;
   
  Olduğunu bir kritik süre kodunuzu arayabilmesi için başka bir iş parçacığının kendi bağlamının yayımladığı noktası arasında unutmayın `Unblock` yöntemi ve burada gerçek yöntemi çağırmak için noktası `Block` yapılır. Bu süre boyunca, hangi sırayla engelleyebilir ve kendi nedeniyle (örneğin, bir kilit alınırken) engellemesini herhangi bir yöntemi çağırmanız gerekir değil. Çağrılar `Block` ve `Unblock` yöntemi engelleme ve engellemelerini kaldırma nedeni izleme. Yalnızca bir nesne sahipliğini olmalıdır bir `Block` ve `Unblock` çifti.  
   
-##  <a name="virtualprocessorid"></a> VirtualProcessorId 
+##  <a name="virtualprocessorid"></a> Virtualprocessorıd 
 
  Geçerli bağlam yürütülmekte olduğu sanal işlemci için bir tanımlayıcı döndürür.  
   

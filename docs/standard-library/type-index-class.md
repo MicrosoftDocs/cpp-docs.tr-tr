@@ -2,11 +2,8 @@
 title: type_index sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - typeindex/std::type_index
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - type_index class
 ms.assetid: db366119-74cb-43e8-aacf-9679e561fa2f
-caps.latest.revision: 14
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86058cd8deb0ddd9458c8882bb31029d365cb110
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: e301b8d47c1a054a5b80bff105950d876d90b047
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="typeindex-class"></a>type_index Sınıfı
 

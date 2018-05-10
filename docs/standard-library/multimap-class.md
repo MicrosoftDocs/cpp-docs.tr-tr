@@ -2,11 +2,8 @@
 title: multimap sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - map/std::multimap
@@ -95,17 +92,15 @@ helpviewer_keywords:
 - std::multimap [C++], upper_bound
 - std::multimap [C++], value_comp
 ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
-caps.latest.revision: 23
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b7a4f41a4667dc3a8c14a3c1a1765f9a6b5ad68
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 863d0c84d772de389affc8167e3a0f69b0e0fabe
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="multimap-class"></a>multimap Sınıfı
 

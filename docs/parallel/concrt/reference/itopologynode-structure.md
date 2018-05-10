@@ -1,12 +1,9 @@
 ---
-title: "Itopologynode yapısı | Microsoft Docs"
-ms.custom: 
+title: Itopologynode yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - ITopologyNode
@@ -21,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - ITopologyNode structure
 ms.assetid: 92e7e032-04f6-4c7c-be36-8f9a35fc4734
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fcab5f66af46989e0487657e018531423fd5f48
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 1c4168fbfbd2bf17ad8b8b752d2843c8f57b0f3f
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="itopologynode-structure"></a>ITopologyNode Yapısı
 Kaynak Yöneticisi tarafından tanımlanan bir topoloji düğüme bir arabirim. Bir düğüm bir veya daha fazla yürütme kaynakları içerir.  
@@ -48,10 +43,10 @@ struct ITopologyNode;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ITopologyNode::GetExecutionResourceCount](#getexecutionresourcecount)|Bu düğüm altında gruplanmış yürütme kaynakların sayısını döndürür.|  
+|[Itopologynode::getexecutionresourcecount](#getexecutionresourcecount)|Bu düğüm altında gruplanmış yürütme kaynakların sayısını döndürür.|  
 |[Itopologynode::getfirstexecutionresource](#getfirstexecutionresource)|Numaralandırma sırasında bu düğüm altında gruplanmış ilk yürütme kaynak döndürür.|  
-|[ITopologyNode::GetId](#getid)|Bu düğüm için Resource Manager'ın benzersiz tanımlayıcısını döndürür.|  
-|[ITopologyNode::GetNext](#getnext)|Sonraki topoloji düğümü numaralandırma sırasında bir arabirim döndürür.|  
+|[Itopologynode::GetID](#getid)|Bu düğüm için Resource Manager'ın benzersiz tanımlayıcısını döndürür.|  
+|[Itopologynode::GetNext](#getnext)|Sonraki topoloji düğümü numaralandırma sırasında bir arabirim döndürür.|  
 |[Itopologynode::getnumanode](#getnumanode)|Bu kaynak Maanger düğüm ait olduğu NUMA düğüm numarasını döndürür Windows atanır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -65,7 +60,7 @@ struct ITopologyNode;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="getexecutionresourcecount"></a>  ITopologyNode::GetExecutionResourceCount Method  
+##  <a name="getexecutionresourcecount"></a>  Itopologynode::getexecutionresourcecount yöntemi  
  Bu düğüm altında gruplanmış yürütme kaynakların sayısını döndürür.  
   
 ```

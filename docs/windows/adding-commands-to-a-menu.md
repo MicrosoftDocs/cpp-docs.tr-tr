@@ -1,13 +1,10 @@
 ---
-title: "Menüye komut ekleme | Microsoft Docs"
-ms.custom: 
+title: Menüye komut ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.menu
 dev_langs:
@@ -19,18 +16,16 @@ helpviewer_keywords:
 - commands
 - menu items
 ms.assetid: 1523a755-0ab5-42f8-9e98-bb9881564431
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d53f868fd76877152bb3ec81fdba85c1d97b3aac
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e3564a808d39aa81ed3b45a1bc5812b285199e04
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="adding-commands-to-a-menu"></a>Menüye Komut Ekleme
 ### <a name="to-add-commands-to-a-menu"></a>Menüye komut eklemek için  

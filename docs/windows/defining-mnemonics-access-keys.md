@@ -1,13 +1,10 @@
 ---
-title: "Anımsatıcıları (erişim tuşları) tanımlama | Microsoft Docs"
-ms.custom: 
+title: Anımsatıcıları (erişim tuşları) tanımlama | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -23,18 +20,16 @@ helpviewer_keywords:
 - controls [C++], access keys
 - access keys [C++]
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 167947e51ed773f765432148cbe879c926c57d5f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a60cf597a88fcf7038848be6c9e2d31269f6a906
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="defining-mnemonics-access-keys"></a>Anımsatıcıları Tanımlama (Erişim Tuşları)
 Normalde, klavye kullanıcıların giriş odağını bir denetimden başka bir iletişim kutusu ile sekme veya ok tuşları taşıyın. Ancak, tek bir tuşuna basarak bir denetim seçmek kullanıcılara bir erişim anahtarı (anımsatıcı veya unutmayın kolay adı) tanımlayabilirsiniz.  

@@ -2,11 +2,8 @@
 title: '&lt;Yineleyici&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - <iterator>
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - iterator header
 ms.assetid: c61a3962-f3ed-411a-b5a3-e8b3c2b500bd
-caps.latest.revision: 27
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5aedf88afc4349b3a5dcee0d0c9ef5ccc6bc3cbf
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 5066e793c58dca9ccc12ccc159a010654df3efbc
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltiteratorgt"></a>&lt;Yineleyici&gt;
 

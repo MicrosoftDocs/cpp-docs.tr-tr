@@ -1,12 +1,9 @@
 ---
-title: "tiled_index sınıfı | Microsoft Docs"
-ms.custom: 
+title: tiled_index sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - tiled_index
@@ -28,17 +25,15 @@ dev_langs:
 helpviewer_keywords:
 - tiled_index class
 ms.assetid: 0ce2ae26-f1bb-4436-b473-a9e1b619bb38
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1ecd2e852dd36e51b158db9a5c6cd13be5c8d5c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: fd28ab01d0d4180cc518cff230eb7df8261f4940
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="tiledindex-class"></a>tiled_index Sınıfı
 Bir dizine sağlayan bir [tiled_extent](tiled-extent-class.md) nesnesi. Bu sınıf öğeleri yerel bölmesi kaynağa göreli ve genel kaynağa göreli erişmek için özellikler vardır. Döşeli alanları hakkında daha fazla bilgi için bkz: [kullanarak döşeme](../../../parallel/amp/using-tiles.md).  
@@ -81,7 +76,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[tiled_index Constructor](#ctor)|Yeni bir örneğini başlatır `tile_index` sınıfı.|  
+|[tiled_index Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `tile_index` sınıfı.|  
 
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
@@ -102,9 +97,9 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 |[Yerel sabiti](#tiled_index__local)|Depoları bir `index` geçerli parçasına göreli temsil eden derece 1, 2 veya 3 dizinde nesnesinin bir [tiled_extent](tiled-extent-class.md) nesnesi.|  
 |[sıra sabiti](#tiled_index__rank)|Derecesini depolar `tiled_index` nesnesi.|  
 |[tile sabiti](#tiled_index__tile)|Depoları bir `index` derece 1, 2 veya geçerli parçasına koordinatlarını temsil eden 3 nesnesinin bir `tiled_extent` nesnesi.|  
-|[tile_dim0 Constant](#tiled_index__tile_dim0)|En önemli boyutun uzunluğu depolar.|  
-|[tile_dim1 Constant](#tiled_index__tile_dim1)|Sonraki en önemli boyutun uzunluğu depolar.|  
-|[tile_dim2 Constant](#tiled_index__tile_dim2)|En az önemli boyutun uzunluğu depolar.|  
+|[tile_dim0 sabiti](#tiled_index__tile_dim0)|En önemli boyutun uzunluğu depolar.|  
+|[tile_dim1 sabiti](#tiled_index__tile_dim1)|Sonraki en önemli boyutun uzunluğu depolar.|  
+|[tile_dim2 sabiti](#tiled_index__tile_dim2)|En az önemli boyutun uzunluğu depolar.|  
 |[tile_origin sabiti](#tiled_index__tile_origin)|Depoları bir `index` geçerli parçasında kökeni genel temsil eden derece 1, 2 veya 3 koordinatları nesnesinin bir `tiled_extent` nesnesi.|  
 
   

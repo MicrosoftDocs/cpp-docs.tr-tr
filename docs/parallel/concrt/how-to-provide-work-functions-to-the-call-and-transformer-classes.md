@@ -1,13 +1,10 @@
 ---
-title: "Nasıl yapılır: call ve transformer sınıflarına iş işlevleri sağlama | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: call ve transformer sınıflarına iş işlevleri sağlama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - using the transformer class [Concurrency Runtime]
 - using the call class [Concurrency Runtime]
 ms.assetid: df715ce4-8507-41ca-b204-636d11707a73
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52ab28a015fa0312a5d064401451640c2747e9db
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ca7948a1258ac1b5193d379dd37f426360edc42e
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-provide-work-functions-to-the-call-and-transformer-classes"></a>Nasıl yapılır: call ve transformer Sınıflarına İş İşlevleri Sağlama
 Bu konuda iş işlevleri sağlamak için çeşitli yollar gösterilmektedir [concurrency::call](../../parallel/concrt/reference/call-class.md) ve [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) sınıfları.  

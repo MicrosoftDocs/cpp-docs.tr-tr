@@ -2,11 +2,8 @@
 title: multiplies yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xfunctional/std::multiplies
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - multiplies class
 - multiplies struct
 ms.assetid: ec85e8af-70ad-44ad-90f0-d961a5847864
-caps.latest.revision: 21
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36ab8010811d7101beb88204a50e60a8089840e7
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: bf42d118118a849a841967404bc626ed3b9205ab
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="multiplies-struct"></a>multiplies Yapısı
 

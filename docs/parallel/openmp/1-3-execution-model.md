@@ -1,27 +1,22 @@
 ---
-title: "1.3 yürütme modeli | Microsoft Docs"
-ms.custom: 
+title: 1.3 yürütme modeli | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 85ae8bc4-5bf0-45e0-a45f-02de9adaf716
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce9c2398b38effebbca428c811d86481ca94e7cd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0acdd7a5d9f2dcb58850254281b5c18fd0d1123c
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="13-execution-model"></a>1.3 Yürütme Modeli
 OpenMP Paralel yürütme çatalı birleştirme modelini kullanır. Bu çatalı birleştirme model çeşitli sorunlarını çözmek için yararlı olsa da, bunu biraz büyük dizi tabanlı uygulamalar için özel olarak oluşturulmuştur. OpenMP paralel (birden çok iş parçacığı yürütme ve tam OpenMP destek kitaplık) programları gibi her ikisi de düzgün yürütecek destek programları ve sıralı programlar (göz ardı yönergeleri ve basit bir OpenMP saplamalar kitaplık) olarak tasarlanmıştır. Ancak, mümkündür ve doğru sırayla çalıştırıldığında davranıyor olmayan bir programı geliştirmek için izin verilir. Ayrıca, farklı paralellik derecesi sayısal işlemlerinin association'daki değişiklikler nedeniyle farklı sayısal sonuçlar neden olabilir. Örneğin, bir seri toplama azaltma toplama İlişkilendirmelerin paralel azaltma daha farklı bir desen olabilir. Bu farklı ilişkilendirmeleri kayan nokta toplama sonuçlarını değişebilir.  

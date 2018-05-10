@@ -1,13 +1,10 @@
 ---
-title: "Baskın denetimi belirtme | Microsoft Docs"
-ms.custom: 
+title: Baskın denetimi belirtme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - Dialog editor, dominant control
 - controls [C++], dominant
 ms.assetid: 42b523a7-192a-417b-9512-d4af795e002f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f4902e3849f72ed2d6799e07f7cd9e8412d891a6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 07bf73fdcd69866a811cd37af6ef59aef062c01c
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="specifying-the-dominant-control"></a>Baskın Denetimi Belirtme
 Seçilen ilk baskın denetimi denetimdir.  

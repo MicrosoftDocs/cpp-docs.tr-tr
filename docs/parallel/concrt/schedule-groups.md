@@ -1,29 +1,24 @@
 ---
-title: "Zamanlama grupları | Microsoft Docs"
-ms.custom: 
+title: Zamanlama grupları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - schedule groups
 ms.assetid: 03523572-5891-4d17-89ce-fa795605f28b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a61566878adc539af21e1645844eff27c5a8aec0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c1395fbc58d8a4d1d06cd93eea21c0f3d2dec8c6
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="schedule-groups"></a>Zamanlama Grupları
 Bu belge eşzamanlılık çalışma zamanı, zamanlama grupları rolü açıklanmaktadır. A *zamanlama grup* affinitizes ya da grupları, ilgili görevleri birlikte. Her Zamanlayıcı, bir veya daha fazla zamanlama grupları vardır. İlgili görevleri grubunu zaman yere göre görevleri arasında yüksek derecede Örneğin, gerekirse, kullanım zamanlama grupları aynı işlemci düğümde yürütülen yararlanır. Buna karşılık, bir dizi görevi için ayrılan işlem kaynaklarının miktarını sınırlamak istediğinizde, uygulamanızın belirli kalitesi gereksinimleri, örneğin, sahip olduğunda Zamanlayıcı örnekleri kullanın. Zamanlayıcı örnekleri hakkında daha fazla bilgi için bkz: [Zamanlayıcı örnekleri](../../parallel/concrt/scheduler-instances.md).  

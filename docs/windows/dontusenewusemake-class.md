@@ -1,12 +1,9 @@
 ---
-title: "DontUseNewUseMake sınıfı | Microsoft Docs"
-ms.custom: 
+title: DontUseNewUseMake sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::DontUseNewUseMake
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - DontUseNewUseMake class
 ms.assetid: 8b38d07b-fc14-4cea-afb9-4c1a7dde0093
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c09276fb761dcd1f2f5be78afa40606e262aa3e1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f343d0b47d50cd375d186c29ff55b91898aa9c61
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="dontusenewusemake-class"></a>DontUseNewUseMake Sınıfı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  

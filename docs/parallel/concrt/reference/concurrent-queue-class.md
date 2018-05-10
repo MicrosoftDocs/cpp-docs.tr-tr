@@ -1,12 +1,9 @@
 ---
-title: "concurrent_queue sınıfı | Microsoft Docs"
-ms.custom: 
+title: concurrent_queue sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - concurrent_queue
@@ -25,17 +22,15 @@ dev_langs:
 helpviewer_keywords:
 - concurrent_queue class
 ms.assetid: c2218996-d0ea-40e9-b002-e9a15b085f51
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b577b0f652070fa2a80d06e2f44ccad0a421af5
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: a9a3ee82b8b81532b4e63f080ad321a93725ce41
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="concurrentqueue-class"></a>concurrent_queue Sınıfı
 `concurrent_queue` Sınıftır ilk sağlayan dizisi kapsayıcı sınıfı, öğeleri ilk erişim. Eşzamanlılık güvenli işlemler, sınırlı sayıda gibi etkinleştirir `push` ve `try_pop`.  
@@ -73,7 +68,7 @@ class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[concurrent_queue](#ctor)|Fazla Yüklendi. Constructs a concurrent queue.|  
+|[concurrent_queue](#ctor)|Fazla Yüklendi. Eş zamanlı bir kuyruk oluşturur.|  
 |[~concurrent_queue Destructor](#dtor)|Eşzamanlı sıranın bozar.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
@@ -81,7 +76,7 @@ class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Temizle](#clear)|Herhangi bir yok etme sıranın eşzamanlı temizler şu anda sıradaki öğeleri. Bu yöntem eşzamanlılık uyumlu değil.|  
-|[empty](#empty)|Şu anda eş zamanlı sıranın boşsa, testleri, bu yöntem çağrılır. Bu yöntem eşzamanlılık güvenlidir.|  
+|[boş](#empty)|Şu anda eş zamanlı sıranın boşsa, testleri, bu yöntem çağrılır. Bu yöntem eşzamanlılık güvenlidir.|  
 |[get_allocator](#get_allocator)|Eşzamanlı kuyruk oluşturmak için kullanılan ayırıcısı kopyasını döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
 |[push](#push)|Fazla Yüklendi. Enqueues eşzamanlı sıranın tail sonunda bir öğe. Bu yöntem eşzamanlılık güvenlidir.|  
 |[try_pop](#try_pop)|Varsa bir öğe sırasından dequeues. Bu yöntem eşzamanlılık güvenlidir.|  
@@ -100,7 +95,7 @@ class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="clear">Temizle</a> 
+##  <a name="clear"></a> Temizle 
 
  Herhangi bir yok etme sıranın eşzamanlı temizler şu anda sıradaki öğeleri. Bu yöntem eşzamanlılık uyumlu değil.  
   
@@ -110,7 +105,7 @@ void clear();
   
 ##  <a name="ctor"></a> concurrent_queue 
 
- Constructs a concurrent queue.  
+ Eş zamanlı bir kuyruk oluşturur.  
   
 ```
 explicit concurrent_queue(
@@ -156,7 +151,7 @@ concurrent_queue(_InputIterator _Begin,
   
  Yineleyici aralık tarafından sağlanan değerleri dördüncü Oluşturucusu belirtir [ `_Begin`, `_End`).  
   
-##  <a name="dtor"></a> ~concurrent_queue 
+##  <a name="dtor"></a> ~ concurrent_queue 
 
  Eşzamanlı sıranın bozar.  
   

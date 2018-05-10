@@ -2,11 +2,8 @@
 title: strstreambuf sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - strstream/std::strstreambuf::freeze
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - std::strstreambuf [C++], str
 - std::strstreambuf [C++], underflow
 ms.assetid: b040b8ea-0669-4eba-8908-6a9cc159c54b
-caps.latest.revision: 25
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32f5cbc162fbcb6b82676ec782099df80af03eb4
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: b0512e2794e5ac493a997b5d4d885931d9a9fc14
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="strstreambuf-class"></a>strstreambuf Sınıfı
 

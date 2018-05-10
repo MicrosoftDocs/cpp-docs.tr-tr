@@ -1,13 +1,10 @@
 ---
-title: "Bir dizenin özelliklerini değiştirme | Microsoft Docs"
-ms.custom: 
+title: Bir dizenin özelliklerini değiştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - string tables, changing strings
 - strings [C++], properties
 ms.assetid: 0a220434-f444-4405-9a64-d28d6b965687
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: feb61c6a3a865439fe31f93540cbac934ef5eb1d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c4de63d1275a5e90b6b20ea46d1774bae3c2861b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="changing-the-properties-of-a-string"></a>Dizenin Özelliklerini Değiştirme
 ### <a name="to-change-a-string-or-its-identifier"></a>Bir dize veya tanıtıcısını değiştirmek için  

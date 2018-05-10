@@ -1,27 +1,22 @@
 ---
-title: "3.1.1 omp_set_num_threads işlevi | Microsoft Docs"
-ms.custom: 
+title: 3.1.1 omp_set_num_threads işlevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: b94cf2b5-8011-4a3b-ba56-676982642857
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2510c2ed49f7b46f2ca3d853c9b78ff3c09cb62a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 99c82ff324cbf21612d2459511877d152e2757f5
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="311-ompsetnumthreads-function"></a>3.1.1 omp_set_num_threads İşlevi
 `omp_set_num_threads` İşlevi belirtmeyin sonraki paralel bölgeler için kullanılacak iş parçacıklarının varsayılan sayısını ayarlar bir `num_threads` yan tümcesi. Biçimi aşağıdaki gibidir:  
@@ -39,10 +34,10 @@ void omp_set_num_threads(int num_threads);
   
 ## <a name="cross-references"></a>Çapraz referanslar:  
   
--   `omp_set_dynamic`işlev, bkz: [bölüm 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) sayfasında 39.  
+-   `omp_set_dynamic` işlev, bkz: [bölüm 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) sayfasında 39.  
   
--   `omp_get_dynamic`işlev, bkz: [bölüm 3.1.8](../../parallel/openmp/3-1-8-omp-get-dynamic-function.md) sayfasında 40.  
+-   `omp_get_dynamic` işlev, bkz: [bölüm 3.1.8](../../parallel/openmp/3-1-8-omp-get-dynamic-function.md) sayfasında 40.  
   
--   `OMP_NUM_THREADS`ortam değişkeni, bkz: [bölüm 4.2](../../parallel/openmp/4-2-omp-num-threads.md) sayfa 48 ve bölüm 2.3 sayfasında 8.  
+-   `OMP_NUM_THREADS` ortam değişkeni, bkz: [bölüm 4.2](../../parallel/openmp/4-2-omp-num-threads.md) sayfa 48 ve bölüm 2.3 sayfasında 8.  
   
--   `num_threads`yan tümcesi, bkz: [bölüm 2.3](../../parallel/openmp/2-3-parallel-construct.md) sayfasında 8
+-   `num_threads` yan tümcesi, bkz: [bölüm 2.3](../../parallel/openmp/2-3-parallel-construct.md) sayfasında 8

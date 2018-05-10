@@ -1,12 +1,9 @@
 ---
-title: "CAsyncMonikerFile sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAsyncMonikerFile sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-mfc
 ms.topic: reference
 f1_keywords:
 - CAsyncMonikerFile
@@ -41,17 +38,15 @@ helpviewer_keywords:
 - CAsyncMonikerFile [MFC], OnStartBinding
 - CAsyncMonikerFile [MFC], OnStopBinding
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 546e251f3387175812e6ba7f8cfed5d8a878d658
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 16d4b5169ffa93892b8a3076cbfa24227ccf569f
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="casyncmonikerfile-class"></a>CAsyncMonikerFile sınıfı
 ActiveX denetimlerinde zaman uyumsuz adlar kullanmak için işlevsellik sağlar (önceki adıyla OLE denetimleri).  
@@ -117,7 +112,7 @@ class CAsyncMonikerFile : public CMonikerFile
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxole.h  
   
-##  <a name="casyncmonikerfile"></a>CAsyncMonikerFile::CAsyncMonikerFile  
+##  <a name="casyncmonikerfile"></a>  CAsyncMonikerFile::CAsyncMonikerFile  
  Oluşturan bir `CAsyncMonikerFile` nesnesi.  
   
 ```  
@@ -125,11 +120,11 @@ CAsyncMonikerFile();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturma `IBindHost` arabirimi. `IBindHost`içinde yalnızca sağlarsanız, kullanılan **açık** üye işlevi.  
+ Oluşturma `IBindHost` arabirimi. `IBindHost` içinde yalnızca sağlarsanız, kullanılan **açık** üye işlevi.  
   
  Bir açıklaması için `IBindHost` arabirimi, Windows SDK konusuna bakın.  
   
-##  <a name="close"></a>CAsyncMonikerFile::Close  
+##  <a name="close"></a>  CAsyncMonikerFile::Close  
  Kapatmak ve tüm kaynakları serbest bırakmak için bu işlevini çağırın.  
   
 ```  
@@ -139,7 +134,7 @@ virtual void Close();
 ### <a name="remarks"></a>Açıklamalar  
  Açılmamış ya da zaten kapalı dosyalar üzerinde çağrılabilir.  
   
-##  <a name="createbindstatuscallback"></a>CAsyncMonikerFile::CreateBindStatusCallback  
+##  <a name="createbindstatuscallback"></a>  CAsyncMonikerFile::CreateBindStatusCallback  
  Arabirimini uygulayan bir COM nesnesi oluşturur `IBindStatusCallback`.  
   
 ```  
@@ -154,7 +149,7 @@ virtual IUnknown* CreateBindStatusCallback(IUnknown* pUnkControlling);
  Varsa `pUnkControlling` değil **NULL**, işlevi için iç işaretçi döndüren **IUnknown** yeni bir COM nesnesi destekleme üzerinde `IBindStatusCallback`. Varsa `pUnkControlling` olan **NULL**, işlevi için bir işaretçi döndürür bir **IUnknown** yeni bir COM nesnesi destekleme üzerinde `IBindStatusCallback`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CAsyncMonikerFile`arabirimini uygulayan bir COM nesnesi gerektirir `IBindStatusCallback`. Böyle bir nesnenin MFC uygular ve toplanabilir. Geçersiz kılabilirsiniz `CreateBindStatusCallback` kendi COM nesnesi dönün. COM nesnesi çağırarak MFC'nin uygulama toplayabilirsiniz `CreateBindStatusCallback` denetleme bilinmeyen COM nesnesi ile. COM nesneleri kullanılarak uygulanan `CCmdTarget` COM desteği denetleme bilinmeyen kullanarak alabilir **CCmdTarget::GetControllingUnknown**.  
+ `CAsyncMonikerFile` arabirimini uygulayan bir COM nesnesi gerektirir `IBindStatusCallback`. Böyle bir nesnenin MFC uygular ve toplanabilir. Geçersiz kılabilirsiniz `CreateBindStatusCallback` kendi COM nesnesi dönün. COM nesnesi çağırarak MFC'nin uygulama toplayabilirsiniz `CreateBindStatusCallback` denetleme bilinmeyen COM nesnesi ile. COM nesneleri kullanılarak uygulanan `CCmdTarget` COM desteği denetleme bilinmeyen kullanarak alabilir **CCmdTarget::GetControllingUnknown**.  
   
  Alternatif olarak, COM nesnesi MFC'nin uygulamasına çağırarak temsilci seçebilirsiniz **CreateBindStatusCallback (boş)**.  
   
@@ -162,7 +157,7 @@ virtual IUnknown* CreateBindStatusCallback(IUnknown* pUnkControlling);
   
  Zaman uyumsuz adlar ve zaman uyumsuz bağlama hakkında daha fazla bilgi için bkz: [IBindStatusCallback](http://msdn.microsoft.com/library/ie/ms775060) arabirimi ve [ne zaman uyumsuz bağlama ve depolama iş](http://msdn.microsoft.com/library/windows/desktop/aa379152). Bir toplama tartışma için bkz: [toplama](http://msdn.microsoft.com/library/windows/desktop/ms686558). Tüm üç Windows SDK'ın konulardır.  
   
-##  <a name="getbindinfo"></a>CAsyncMonikerFile::GetBindInfo  
+##  <a name="getbindinfo"></a>  CAsyncMonikerFile::GetBindInfo  
  Zaman uyumsuz ad nasıl bağlanacağını istediği bildirmek için istemciden zaman uyumsuz bir bilinen ad olarak çağrılır.  
   
 ```  
@@ -177,7 +172,7 @@ virtual DWORD GetBindInfo() const;
   
  Bunu yapmak için bir sebep veri çekme modeli yerine veri gönderme modeli kullanarak bağlamak için olacaktır. Bir veri çekme modeli bağlama işlemi istemci sürücüleri ve onu okunduğunda ad veri istemciye yalnızca sağlar. Bir veri gönderimi modeldeki ad zaman uyumsuz bağlama işlemi sürücüler ve yeni veriler kullanılabilir olduğunda istemci sürekli olarak bildirir.  
   
-##  <a name="getbinding"></a>CAsyncMonikerFile::GetBinding  
+##  <a name="getbinding"></a>  CAsyncMonikerFile::GetBinding  
  Zaman uyumsuz aktarım bağlama için bir işaretçi almak için bu işlevini çağırın.  
   
 ```  
@@ -192,7 +187,7 @@ IBinding* GetBinding() const;
   
  Bir açıklaması için `IBinding` arabirimi, Windows SDK konusuna bakın.  
   
-##  <a name="getformatetc"></a>CAsyncMonikerFile::GetFormatEtc  
+##  <a name="getformatetc"></a>  CAsyncMonikerFile::GetFormatEtc  
  Akıştaki verilerin biçimi almak için bu işlevini çağırın.  
   
 ```  
@@ -202,7 +197,7 @@ FORMATETC* GetFormatEtc() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Windows yapısına yönelik işaretçinin [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) açılmış akış için. Döndürür **NULL** zaman uyumsuz değilse, ad, bağlı değil veya zaman uyumsuz işlemi başlatılmamıştır.  
   
-##  <a name="getpriority"></a>CAsyncMonikerFile::GetPriority  
+##  <a name="getpriority"></a>  CAsyncMonikerFile::GetPriority  
  Zaman uyumsuz bir bilinen ad istemcisinden çağrılan iş parçacığına bağlama işlemi için verilen önceliği almak bağlama işlemi başlatılırken.  
   
 ```  
@@ -213,9 +208,9 @@ virtual LONG GetPriority() const;
  Zaman uyumsuz aktarım yer alacak önceliği. Standart iş parçacığı önceliği bayrakları birini: **THREAD_PRIORITY_ABOVE_NORMAL**, **THREAD_PRIORITY_BELOW_NORMAL**, **THREAD_PRIORITY_HIGHEST**,  **THREAD_PRIORITY_IDLE**, **THREAD_PRIORITY_LOWEST**, **THREAD_PRIORITY_NORMAL**, ve **THREAD_PRIORITY_TIME_CRITICAL**. Windows işlevi görmek [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) bu değerleri açıklaması.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `GetPriority`doğrudan çağrılmamalıdır. **THREAD_PRIORITY_NORMAL** varsayılan uygulama tarafından döndürülür.  
+ `GetPriority` doğrudan çağrılmamalıdır. **THREAD_PRIORITY_NORMAL** varsayılan uygulama tarafından döndürülür.  
   
-##  <a name="ondataavailable"></a>CAsyncMonikerFile::OnDataAvailable  
+##  <a name="ondataavailable"></a>  CAsyncMonikerFile::OnDataAvailable  
  Zaman uyumsuz bir bilinen ad çağırır `OnDataAvailable` kullanılabilir hale geldiğinde istemciye veri sağlamak için sırasında zaman uyumsuz işlemleri bağlayın.  
   
 ```  
@@ -241,7 +236,7 @@ virtual void OnDataAvailable(DWORD dwSize, DWORD bscfFlag);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWinInet#5](../../mfc/codesnippet/cpp/casyncmonikerfile-class_1.cpp)]  
   
-##  <a name="onlowresource"></a>CAsyncMonikerFile::OnLowResource  
+##  <a name="onlowresource"></a>  CAsyncMonikerFile::OnLowResource  
  Kaynakları düşük olduğunda ad tarafından çağrılır.  
   
 ```  
@@ -251,7 +246,7 @@ virtual void OnLowResource();
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan Uygulama çağrıları `GetBinding( )-> Abort( )`.  
   
-##  <a name="onprogress"></a>CAsyncMonikerFile::OnProgress  
+##  <a name="onprogress"></a>  CAsyncMonikerFile::OnProgress  
  Art arda genellikle aralıklarla makul uzun bir işlem sırasında bu bağlama işleminin geçerli ilerlemeyi göstermek için ad tarafından çağrılır.  
   
 ```  
@@ -305,7 +300,7 @@ virtual void OnProgress(
  **BINDSTATUS_CLASSIDAVAILABLE**  
  Bağlanan nesne neredeyse oluşturulacak örneğidir. `szStatusText` Bağlama işlemini iptal etmek bir fırsat isterseniz izin vermeden CLSID yeni nesnenin dize biçimindeki sağlar.  
   
-##  <a name="onstartbinding"></a>CAsyncMonikerFile::OnStartBinding  
+##  <a name="onstartbinding"></a>  CAsyncMonikerFile::OnStartBinding  
  Bu işlev bağlama başlatma sırasında eylemleri gerçekleştirmek için türetilmiş sınıflarda geçersiz kılar.  
   
 ```  
@@ -315,7 +310,7 @@ virtual void OnStartBinding();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev geri ad tarafından çağrılır. Varsayılan uygulama hiçbir şey yapmaz.  
   
-##  <a name="onstopbinding"></a>CAsyncMonikerFile::OnStopBinding  
+##  <a name="onstopbinding"></a>  CAsyncMonikerFile::OnStopBinding  
  Bağlama işlemi sonunda ad tarafından çağrılır.  
   
 ```  
@@ -334,7 +329,7 @@ virtual void OnStopBinding(HRESULT hresult, LPCTSTR szError);
   
  Bir açıklaması için `IBinding` arabirimi, Windows SDK konusuna bakın.  
   
-##  <a name="open"></a>CAsyncMonikerFile::Open  
+##  <a name="open"></a>  CAsyncMonikerFile::Open  
  Zaman uyumsuz olarak bir dosyayı açmak için bu üye işlevini çağırın.  
   
 ```  
@@ -385,7 +380,7 @@ virtual BOOL Open(
  Dosya özel durumları için bir işaretçi. Bir hata durumunda neden ayarlanır.  
   
  `pMoniker`  
- Zaman uyumsuz ad arayüzü için bir işaretçi `IMoniker`, ile alabilir belgenin kendi ad birleşimidir kesin bir bilinen ad **IOleClientSite::GetMoniker (** *OLEWHICHMK_ KAPSAYICI* **)**ve yol adından oluşturulan bir ad. Denetim bağlamak için bu ad kullanabilirsiniz, ancak bu denetim kaydetmelisiniz ad değil.  
+ Zaman uyumsuz ad arayüzü için bir işaretçi `IMoniker`, ile alabilir belgenin kendi ad birleşimidir kesin bir bilinen ad **IOleClientSite::GetMoniker (** *OLEWHICHMK_ KAPSAYICI* **)** ve yol adından oluşturulan bir ad. Denetim bağlamak için bu ad kullanabilirsiniz, ancak bu denetim kaydetmelisiniz ad değil.  
   
  *pBindHost*  
  Bir işaretçi `IBindHost` ad olası göreli bir yol adı oluşturmak için kullanılan arabirim. Bağ konak geçersiz veya bir bilinen ad sağlamaz, arama varsayılan olarak **açık (** `lpszFileName` **,**`pError`**)**. Bir açıklaması için `IBindHost` arabirimi, Windows SDK konusuna bakın.  

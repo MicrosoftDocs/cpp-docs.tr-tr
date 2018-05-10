@@ -1,12 +1,9 @@
 ---
-title: "default_scheduler_exists sınıfı | Microsoft Docs"
-ms.custom: 
+title: default_scheduler_exists sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - default_scheduler_exists
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - default_scheduler_exists class
 ms.assetid: f6e575e2-4e0f-455a-9e06-54f462ce0c1c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cc9c1f79d44ac1d852543deefd0fe8caaa2b2cf
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 15c18bf2a747cdedda2c9ce2ea6162e5a92e3b36
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="defaultschedulerexists-class"></a>default_scheduler_exists Sınıfı
 Bu sınıf ne zaman oluşturulan bir özel tanımlar `Scheduler::SetDefaultSchedulerPolicy` yöntemi, bir varsayılan Zamanlayıcı işlemi içinde zaten mevcut olduğunda çağrılır.  

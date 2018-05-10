@@ -1,13 +1,10 @@
 ---
-title: "Pencere bölmeleri (simgeler için görüntü Düzenleyicisi) | Microsoft Docs"
-ms.custom: 
+title: Pencere bölmeleri (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.bitmap
 - vc.editors.icon
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - graphics editor [C++]
 - Image editor [C++], panes
 ms.assetid: d66ea5b3-e2e2-4fc4-aa99-f50022cc690e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c4b28d49d698f5bc39d8a3915c635c28ecca4193
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e899729e70db089c1c55f00aa9c4196a22c67060
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="window-panes-image-editor-for-icons"></a>Pencere Bölmeleri (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi penceresinde bir ayırıcı çubukla ayrılan iki bölme görüntü genellikle görüntüler. Bir görünümdür gerçek boyut ve diğer genişletilir (varsayılan büyütme faktörü 6'dır). Bu iki bölme görünümlerinde otomatik olarak güncelleştirilir: bir bölmesinde yaptığınız değişiklikler hemen gösterilen diğer. İki bölmeleri, tek tek piksel ayırt etmek ve kullanabilirsiniz, görüntü boyutu gerçek görünümünü iş etkisi aynı anda gözlemlemek görüntünüzün büyütülmüş bir görünüm üzerinde çalışmak kolaylaştırır.  

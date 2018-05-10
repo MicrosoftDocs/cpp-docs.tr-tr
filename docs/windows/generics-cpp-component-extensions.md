@@ -1,13 +1,10 @@
 ---
-title: "Genel türler (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: Genel türler (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - generic_cpp
 - generic
@@ -16,18 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - generics [C++]
 ms.assetid: c7ccc316-a411-4c00-b2e2-f0c0eadc6cfd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 415da036c9ac2f285b97096368754f176d655eff
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 968ccdc38906f2b9c279821cb34d166d03211562
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="generics--c-component-extensions"></a>Genel Türler (C++ Bileşen Uzantıları)
 Genel türler parametreli türler ve yöntemleri durumdadır. Bu bölümde, genel özellikleri Windows çalışma zamanı ve ortak dil çalışma zamanı tarafından desteklenir ve yalnızca ortak dil çalışma zamanı tarafından desteklenen öğrenin. Ayrıca, kendi genel yöntemler ve Visual C++ türlerinde yazmak nasıl ve genel türler Visual C++'ta .NET Framework dilinde yazılan kullanmayı öğrenin. Son olarak, bu bölümde, genel türler ve C++ şablonları karşılaştırması sağlar.  

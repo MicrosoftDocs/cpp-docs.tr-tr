@@ -1,12 +1,9 @@
 ---
-title: "Bölüm | Microsoft Docs"
-ms.custom: 
+title: Bölüm | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - section_CPP
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - pragmas, section
 - section pragma
 ms.assetid: c67215e9-2c4a-4b0f-b691-2414d2e2d96f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10f5783c6712852bfb53f457cea174f699c01ea0
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: a8d113c10ea8370a46560ba8668546c74b19c6f8
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="section"></a>section
 Bir bölümün bir .obj dosyasında oluşturur.  
@@ -54,7 +49,7 @@ Bir bölümün bir .obj dosyasında oluşturur.
  **write**  
  Veri yazma işlemlerine izin verir.  
   
- **execute**  
+ **Yürütme**  
  Yürütülen kod sağlar.  
   
  **Paylaşılan**  
@@ -63,7 +58,7 @@ Bir bölümün bir .obj dosyasında oluşturur.
  **nopage**  
  Bölüm disk belleğine alınabilir değil olarak işaretler; Win32 aygıt sürücüleri için kullanışlıdır.  
   
- **nocache**  
+ **NoCache**  
  Bölüm değil alınabilir olarak işaretler; Win32 aygıt sürücüleri için kullanışlıdır.  
   
  **atma**  

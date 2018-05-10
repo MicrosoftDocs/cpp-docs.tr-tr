@@ -2,9 +2,6 @@
 title: '&lt;Regex&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - regex/std::regex_match
@@ -14,19 +11,17 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 91a8314b-6f7c-4e33-b7d6-d8583dd75585
-caps.latest.revision: 12
-manager: ghogen
 helpviewer_keywords:
 - std::regex_match [C++]
 - std::regex_replace [C++]
 - std::regex_search [C++]
 - std::swap [C++]
 - std::swap [C++]
-ms.openlocfilehash: 67c374b310c089a185486402992cae6155b365b5
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 7c89f5509ec37e1ef91e92acb6732d1b4819f930
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltregexgt-functions"></a>&lt;Regex&gt; işlevleri
 

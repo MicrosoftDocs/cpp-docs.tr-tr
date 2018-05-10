@@ -1,13 +1,10 @@
 ---
-title: "Tür özellikleri (C++ bileşen uzantıları) için derleyici desteği | Microsoft Docs"
-ms.custom: 
+title: Tür özellikleri (C++ bileşen uzantıları) için derleyici desteği | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - __is_simple_value_class
 - __has_trivial_destructor
@@ -69,18 +66,16 @@ helpviewer_keywords:
 - __is_simple_value_class keyword [C++]
 - __has_trivial_constructor keyword [C++]
 ms.assetid: cd440630-0394-48c0-a16b-1580b6ef5844
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c069645e91d9d895309f00c5f39ddda950084e07
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c68e354e70f3976bffba12020ff1175142715fbc
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="compiler-support-for-type-traits-c-component-extensions"></a>Tür Özellikleri için Derleyici Desteği (C++ Bileşen Uzantıları)
 Derleyici destekler *yazın nitelikler*, derleme zamanında bir türde çeşitli özellikleri gösterir.  
@@ -287,7 +282,7 @@ Derleyici destekler *yazın nitelikler*, derleme zamanında bir türde çeşitli
   
      Türü sanal yıkıcı varsa true değerini döndürür.  
   
-     `__has_virtual_destructor`Ayrıca platform türlerini ve herhangi bir platform türü kullanıcı tanımlı yıkıcı üzerinde çalışır sanal yıkıcı olur.  
+     `__has_virtual_destructor` Ayrıca platform türlerini ve herhangi bir platform türü kullanıcı tanımlı yıkıcı üzerinde çalışır sanal yıkıcı olur.  
   
     ```  
   
@@ -308,7 +303,7 @@ Derleyici destekler *yazın nitelikler*, derleme zamanında bir türde çeşitli
   
      Tür soyut bir tür ise true döndürür. Yerel soyut türler üzerinde daha fazla bilgi için bkz: [soyut](../windows/abstract-cpp-component-extensions.md).  
   
-     `__is_abstract`Ayrıca platform türleri için geçerlidir. Bir başvuru türü soyut en az bir üyesiyle olarak en az bir üyesiyle soyut bir tür arabirimdir. Soyut platform türleri hakkında daha fazla bilgi için bkz: [soyut sınıflar](../cpp/abstract-classes-cpp.md)  
+     `__is_abstract` Ayrıca platform türleri için geçerlidir. Bir başvuru türü soyut en az bir üyesiyle olarak en az bir üyesiyle soyut bir tür arabirimdir. Soyut platform türleri hakkında daha fazla bilgi için bkz: [soyut sınıflar](../cpp/abstract-classes-cpp.md)  
   
     ```  
   
@@ -329,7 +324,7 @@ Derleyici destekler *yazın nitelikler*, derleme zamanında bir türde çeşitli
   
      Her iki tür aynıysa ilk türü bir taban sınıf ikinci türü ise true döndürür.  
   
-     `__is_base_of`platform türlerinde de çalışır. Örneğin, ilk türü ise true döndürür bir [arabirimi sınıfı](../windows/interface-class-cpp-component-extensions.md) ve ikinci türü arabirimini uygular.  
+     `__is_base_of` platform türlerinde de çalışır. Örneğin, ilk türü ise true döndürür bir [arabirimi sınıfı](../windows/interface-class-cpp-component-extensions.md) ve ikinci türü arabirimini uygular.  
   
     ```  
   
@@ -459,7 +454,7 @@ Derleyici destekler *yazın nitelikler*, derleme zamanında bir türde çeşitli
   
      Bir sınıf veya oluşturucu yok veya özel veya korumalı statik olmayan üye, hiçbir temel sınıflar ve hiçbir sanal işlev birleşim türü ise true döndürür. Pod'ları üzerinde C++ standart, bölümler 8.5.1/1, 9/4 ve 3.9/10 daha fazla bilgi için bkz.  
   
-     `__is_pod`temel türlerinde false döndürür.  
+     `__is_pod` temel türlerinde false döndürür.  
   
     ```  
   

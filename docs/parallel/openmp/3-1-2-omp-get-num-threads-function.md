@@ -1,27 +1,22 @@
 ---
-title: "3.1.2 omp_get_num_threads işlevi | Microsoft Docs"
-ms.custom: 
+title: 3.1.2 omp_get_num_threads işlevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: bcdd76e2-d96b-4884-ac8f-e55fc0c42801
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d595fd47b87bbc3fd7701fc847821c73169a23e2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: df01d571b67ff6d252d85128fcc8c1d26a6e94a9
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="312-ompgetnumthreads-function"></a>3.1.2 omp_get_num_threads İşlevi
 **Omp_get_num_threads** işlevi döndürür iş parçacığı sayısı şu anda içinden çağırıldığında paralel bölge yürütme takım. Biçimi aşağıdaki gibidir:  

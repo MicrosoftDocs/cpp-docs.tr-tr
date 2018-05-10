@@ -1,12 +1,9 @@
 ---
-title: "Ivirtualprocessorroot yapısı | Microsoft Docs"
-ms.custom: 
+title: Ivirtualprocessorroot yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - IVirtualProcessorRoot
@@ -20,17 +17,15 @@ dev_langs:
 helpviewer_keywords:
 - IVirtualProcessorRoot structure
 ms.assetid: 5ef371b8-9e4f-4fef-bb0d-49099693dd2b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a385bc12d3add9dd445243794135083c7cc1b3c1
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 9620ee391b525356bfdb50b00d7e76c03b480815
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ivirtualprocessorroot-structure"></a>IVirtualProcessorRoot Yapısı
 Bir iş parçacığı proxy yürütmek bir donanım iş parçacığı için bir Özet.  
@@ -47,10 +42,10 @@ struct IVirtualProcessorRoot : public IExecutionResource;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[IVirtualProcessorRoot::Activate](#activate)|Yürütme bağlamı arabirimiyle ilişkilendirilmiş iş parçacığı proxy neden `pContext` bu sanal işlemci kökünde çalıştırmaya başlamak için.|  
-|[IVirtualProcessorRoot::Deactivate](#deactivate)|Yürütme bağlamı göndermeyi durdurmak için bu sanal işlemci kökünde şu anda yürütülmekte olan iş parçacığı proxy neden olur. İş parçacığı proxy yapılan çağrı sırasında yürütme devam edecek `Activate` yöntemi.|  
+|[Ivirtualprocessorroot::Activate](#activate)|Yürütme bağlamı arabirimiyle ilişkilendirilmiş iş parçacığı proxy neden `pContext` bu sanal işlemci kökünde çalıştırmaya başlamak için.|  
+|[Ivirtualprocessorroot::Deactivate](#deactivate)|Yürütme bağlamı göndermeyi durdurmak için bu sanal işlemci kökünde şu anda yürütülmekte olan iş parçacığı proxy neden olur. İş parçacığı proxy yapılan çağrı sırasında yürütme devam edecek `Activate` yöntemi.|  
 |[Ivirtualprocessorroot::ensurealltasksvisible](#ensurealltasksvisible)|Sistemdeki tüm işlemciler için görünür olmasını işlemcilerin tek tek bellek hiyerarşisi içinde depolanan verileri neden olur. Bu yöntem döndürmeden önce tam bellek sınırı tüm işlemcilerin yürütüldüğü sağlar.|  
-|[IVirtualProcessorRoot::GetId](#getid)|Sanal işlemci kök için benzersiz bir tanımlayıcı döndürür.|  
+|[Ivirtualprocessorroot::GetID](#getid)|Sanal işlemci kök için benzersiz bir tanımlayıcı döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Her sanal işlemci kök ilişkili yürütme kaynak vardır. `IVirtualProcessorRoot` Arabirimi devraldığı [Iexecutionresource](iexecutionresource-structure.md) arabirimi. Birden fazla sanal işlemci kökleri aynı temel alınan donanım iş parçacığına karşılık gelebilir.  
@@ -58,7 +53,7 @@ struct IVirtualProcessorRoot : public IExecutionResource;
  Kaynak Yöneticisi Sanal işlemci kökleri için zamanlayıcılar kaynaklarına yönelik isteklere yanıt verir. Bir zamanlayıcı iş yürütme bağlamı ile etkinleştirerek gerçekleştirmek için bir sanal işlemcinin kök kullanabilirsiniz.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [IExecutionResource](iexecutionresource-structure.md)  
+ [Iexecutionresource](iexecutionresource-structure.md)  
   
  `IVirtualProcessorRoot`  
   

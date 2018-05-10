@@ -2,9 +2,6 @@
 title: CONCURRENCY::fast_math ad alanı işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - amp_math/Concurrency::fast_math::acos
@@ -53,17 +50,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: f5763d62-795b-4de6-a7a5-c7115f158708
-caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 537e257ade021f8662d75b9316d60a16a4133831
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: 9bd20e2e1d88564c7e688e1e0c9c2392f1f4f2ac
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="concurrencyfastmath-namespace-functions"></a>CONCURRENCY::fast_math ad alanı işlevleri
 ||||  
@@ -72,7 +67,7 @@ ms.lasthandoff: 04/10/2018
 |[asinf](#asinf)|[atan](#atan)|[atan2](#atan2)|  
 |[atan2f](#atan2f)|[atanf](#atanf)|[ceil](#ceil)|  
 |[ceilf](#ceilf)|[cos](#cos)|[cosf](#cosf)|  
-|[cosh](#cosh)|[coshf](#coshf)|[exp](#exp)|  
+|[COSH](#cosh)|[coshf](#coshf)|[exp](#exp)|  
 |[exp2](#exp2)|[exp2f](#exp2f)|[expf](#expf)|  
 |[fabs](#fabs)|[fabsf](#fabsf)|[Kat](#floor)|  
 |[floorf](#floorf)|[fmax](#fmax)|[fmaxf](#fmaxf)|  
@@ -86,9 +81,9 @@ ms.lasthandoff: 04/10/2018
 |[yuvarlamak](#round)|[roundf](#roundf)|[rsqrt](#rsqrt)|  
 |[rsqrtf](#rsqrtf)|[signbit](#signbit)|[signbitf](#signbitf)|  
 |[sin](#sin)|[sincos](#sincos)|[sincosf](#sincosf)|  
-|[sinf](#sinf)|[sinh](#sinh)|[sinhf](#sinhf)|  
+|[sinf](#sinf)|[SİNH](#sinh)|[sinhf](#sinhf)|  
 |[sqrt](#sqrt)|[sqrtf](#sqrtf)|[tan](#tan)|  
-|[tanf](#tanf)|[tanh](#tanh)|[tanhf](#tanhf)|  
+|[tanf](#tanf)|[TANH](#tanh)|[tanhf](#tanhf)|  
 |[trunc](#trunc)|[truncf](#truncf)|  
   
 ##  <a name="acos"></a>  ACOS  
@@ -641,7 +636,7 @@ inline float ldexpf(
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür _X * 2 ^ _Exp  
   
-##  <a name="log"></a>  log  
+##  <a name="log"></a>  Günlük  
  Bağımsız değişken e tabanında logaritmasını hesaplar  
   
 ```  

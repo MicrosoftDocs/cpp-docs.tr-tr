@@ -1,13 +1,10 @@
 ---
-title: "safe_cast (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: safe_cast (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - safe_cast
 - safe_cast_cpp
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - safe_cast keyword [C++]
 ms.assetid: 4fa688bf-a8ec-49bc-a4c5-f48134efa4f7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 14bcf198d527fae51a579a2aa6e072a4c57424f1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c889d39df4d900beba5c9b41015e62293fdbbcde
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="safecast-c-component-extensions"></a>safe_cast (C++ Bileşen Uzantıları)
 `safe_cast` İşlemi başarılı olursa belirtilen ifade belirtilen tür olarak döndürür; Aksi takdirde oluşturur `InvalidCastException`.  
@@ -52,7 +47,7 @@ expression
 ### <a name="remarks"></a>Açıklamalar  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- `safe_cast`Belirtilen ifade türü değiştirmenize izin verir. Burada tam olarak bir değişken veya belirli türüne dönüştürülebilir olmalıdır parametresi beklediğiniz durumlarda, geliştirme sırasında programlama hatalarını algılamak için bir try-catch bloğu olmadan safe_cast kullanabilirsiniz. Daha fazla bilgi için bkz: [atama (C + +/ CX)](http://msdn.microsoft.com/library/windows/apps/hh755802.aspx).  
+ `safe_cast` Belirtilen ifade türü değiştirmenize izin verir. Burada tam olarak bir değişken veya belirli türüne dönüştürülebilir olmalıdır parametresi beklediğiniz durumlarda, geliştirme sırasında programlama hatalarını algılamak için bir try-catch bloğu olmadan safe_cast kullanabilirsiniz. Daha fazla bilgi için bkz: [atama (C + +/ CX)](http://msdn.microsoft.com/library/windows/apps/hh755802.aspx).  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -73,7 +68,7 @@ expression
  Bir başvuru veya değer türü, bir değer türü veya bir başvuru veya değer türü izleme başvurusu için bir tanıtıcı değerlendiren bir ifade.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `safe_cast`oluşturur `InvalidCastException` onu dönüştüremiyorsa *ifade* tarafından belirtilen türe *türü kimliği*. Yakalamak için `InvalidCastException`, belirtin [/EH (özel durum işleme modeli)](../build/reference/eh-exception-handling-model.md) derleyici seçeneği ve bir try/catch deyimi kullanır.  
+ `safe_cast` oluşturur `InvalidCastException` onu dönüştüremiyorsa *ifade* tarafından belirtilen türe *türü kimliği*. Yakalamak için `InvalidCastException`, belirtin [/EH (özel durum işleme modeli)](../build/reference/eh-exception-handling-model.md) derleyici seçeneği ve bir try/catch deyimi kullanır.  
   
 ### <a name="requirements"></a>Gereksinimler  
  Derleyici seçeneği: **/ZW**  
@@ -116,7 +111,7 @@ Caught expected exception: InvalidCastException
 ```  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
- `safe_cast`ifade türü değiştirip doğrulanabilen MSIL kodu oluşturmak sağlar.  
+ `safe_cast` ifade türü değiştirip doğrulanabilen MSIL kodu oluşturmak sağlar.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -145,9 +140,9 @@ expression
   
  Atamaları hakkında daha fazla bilgi için bkz: [atama işleçleri](../cpp/casting-operators.md).  
   
- `safe_cast`Geçerli bir **const_cast** (hemen cast **const**).  
+ `safe_cast` Geçerli bir **const_cast** (hemen cast **const**).  
   
- `safe_cast`CLI ad alanıdır.  Bkz: [Platform, varsayılan ve cli ad alanları](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) daha fazla bilgi için.  
+ `safe_cast` CLI ad alanıdır.  Bkz: [Platform, varsayılan ve cli ad alanları](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) daha fazla bilgi için.  
   
  Daha fazla bilgi için **safe_cas**t, bkz:  
   

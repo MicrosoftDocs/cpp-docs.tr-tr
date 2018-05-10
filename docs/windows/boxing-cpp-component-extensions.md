@@ -1,30 +1,25 @@
 ---
-title: "Kutulama (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: Kutulama (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - boxing, Visual C++
 ms.assetid: b5fd2c98-c578-4f83-8257-6dd663478665
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 15fa5471280935c54cdb936af378634e2b60cacd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1f689255af653e5dfdf69250e4988aa809393461
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="boxing--c-component-extensions"></a>Kutulama (C++ Bileşen Uzantıları)
 Visual C++ derleyicisi değer türleri adlı bir işlem nesneleri dönüştürebilir *kutulama*ve Dönüştür nesneleri değer türleri olarak adlandırılan bir işlemde *kutudan çıkarma*.  

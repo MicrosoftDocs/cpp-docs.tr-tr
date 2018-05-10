@@ -2,13 +2,10 @@
 title: is_destructible sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: ''
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - type_traits/std::is_destructible
 dev_langs:
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - is_destructible
 ms.assetid: 3bb9b718-1ad5-49ae-93cc-92b93b546b4d
-caps.latest.revision: 16
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 887946156084d962debf569fc4f23f45dea18293
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 41a5da108c082dc4199a216d36f51d41e1748ada
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="isdestructible-class"></a>is_destructible sınıfı
 

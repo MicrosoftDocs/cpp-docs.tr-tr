@@ -1,13 +1,10 @@
 ---
 title: defaultvtable | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.defaultvtable
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - defaultvtable attribute
 ms.assetid: 5b3ed483-f69e-44dd-80fc-952028eb9d73
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 90c3fb3d72d71f4d61aebcef657b71bfaff87efd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cb853e10b1745151c12f1855f841a21c2a7e126b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="defaultvtable"></a>defaultvtable
 Bir COM nesnesi için varsayılan vtable arabirimi olarak bir arabirim tanımlar.  
@@ -82,7 +77,7 @@ class CMyC3 : public IMyI3 {};
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**,`struct`|  
+|**Uygulandığı öğe:**|**sınıf**, `struct`|  
 |**Yinelenebilir**|Hayır|  
 |**Gerekli öznitelikler**|**coclass**|  
 |**Geçersiz öznitelikler**|Yok.|  

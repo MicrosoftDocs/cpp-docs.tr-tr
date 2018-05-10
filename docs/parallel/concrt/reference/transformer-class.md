@@ -1,12 +1,9 @@
 ---
-title: "Transformer sınıfı | Microsoft Docs"
-ms.custom: 
+title: Transformer sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - transformer
@@ -27,17 +24,15 @@ dev_langs:
 helpviewer_keywords:
 - transformer class
 ms.assetid: eea71925-7043-4a92-bfd4-dbc0ece5d081
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d53ec38ee10ca4d7997095fe8acddd957564c822
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: ac9ea43e1d3f6f369b93e92e91fa3606cf7d6af5
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="transformer-class"></a>transformer Sınıfı
 A `transformer` ileti bloğu bir tek-hedef, çok kaynaklı, sıralı `propagator_block` bir türden iletileri kabul edebilir ve farklı türde bir ileti sınırsız bir sayısı depolayabilen yeteneğine sahiptir.  
@@ -63,8 +58,8 @@ class transformer : public propagator_block<single_link_registry<ITarget<_Output
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[transformer](#ctor)|Fazla Yüklendi. Oluşturan bir `transformer` ileti bloğu.|  
-|[~transformer Destructor](#dtor)|Bozar `transformer` ileti bloğu.|  
+|[Transformer](#ctor)|Fazla Yüklendi. Oluşturan bir `transformer` ileti bloğu.|  
+|[~ transformer yok Edicisi](#dtor)|Bozar `transformer` ileti bloğu.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
@@ -75,9 +70,9 @@ class transformer : public propagator_block<single_link_registry<ITarget<_Output
 |[link_target_notification](#link_target_notification)|Yeni bir hedef için bağlayana olduğunu bildiren bir geri çağırma `transformer` ileti bloğu.|  
 |[propagate_message](#propagate_message)|Zaman uyumsuz olarak bir iletiden geçirmeden bir `ISource` bu bloğuna `transformer` ileti bloğu. Tarafından çağrılan `propagate` kaynak bloğu tarafından çağrıldığında yöntemi.|  
 |[propagate_to_any_targets](#propagate_to_any_targets)|Transformer işlevi, giriş iletilerde yürütür.|  
-|[release_message](#release_message)|Bir önceki iletiyi ayırma serbest bırakır. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
-|[reserve_message](#reserve_message)|Daha önce bu tarafından sunulan bir ileti ayırır `transformer` ileti bloğu. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
-|[resume_propagation](#resume_propagation)|Bir ayırma serbest bırakıldıktan sonra yayma sürdürür. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
+|[release_message](#release_message)|Bir önceki iletiyi ayırma serbest bırakır. (Geçersiz kılmaları [source_block::release_message](source-block-class.md#release_message).)|  
+|[reserve_message](#reserve_message)|Daha önce bu tarafından sunulan bir ileti ayırır `transformer` ileti bloğu. (Geçersiz kılmaları [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[resume_propagation](#resume_propagation)|Bir ayırma serbest bırakıldıktan sonra yayma sürdürür. (Geçersiz kılmaları [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
 |[send_message](#send_message)|İletiyi zaman uyumlu olarak geçirir bir `ISource` bu bloğuna `transformer` ileti bloğu. Tarafından çağrılan `send` kaynak bloğu tarafından çağrıldığında yöntemi.|  
 |[supports_anonymous_source](#supports_anonymous_source)|Geçersiz kılmaları `supports_anonymous_source` bu bloğu için bağlantılı olmayan bir kaynak tarafından sunulan iletileri kabul ettiğinizi belirtmek için yöntem. (Geçersiz kılmaları [Itarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
   
@@ -227,7 +222,7 @@ virtual message_status send_message(
 ### <a name="return-value"></a>Dönüş Değeri  
  A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
   
-##  <a name="supports_anonymous_source">supports_anonymous_source</a> 
+##  <a name="supports_anonymous_source"></a> supports_anonymous_source 
 
  Geçersiz kılmaları `supports_anonymous_source` bu bloğu için bağlantılı olmayan bir kaynak tarafından sunulan iletileri kabul ettiğinizi belirtmek için yöntem.  
   
@@ -298,7 +293,7 @@ transformer(
   
  Türü `filter_method` functor imzaya sahip olduğu `bool (_Input const &)` hangi çağrılır bu tarafından `transformer` sunulan iletisine kabul etmelidir olup olmadığını belirlemek için ileti bloğu.  
   
-##  <a name="dtor"></a> ~transformer 
+##  <a name="dtor"></a> ~ transformer 
 
  Bozar `transformer` ileti bloğu.  
   

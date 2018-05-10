@@ -1,30 +1,25 @@
 ---
-title: "OpenMP öğesinden eşzamanlılık çalışma zamanına geçiş | Microsoft Docs"
-ms.custom: 
+title: OpenMP öğesinden eşzamanlılık çalışma zamanına geçiş | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Concurrency Runtime, migrating from OpenMP
 - OpenMP, migrating to the Concurrency Runtime
 ms.assetid: 9bab7bb1-e45d-44b2-8509-3b226be2c93b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65359e76e036a0d8d33de2de9f6c96c6425d2152
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 16e10287526e6b815ba56183a8e3d590102507aa
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="migrating-from-openmp-to-the-concurrency-runtime"></a>OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş
 Eşzamanlılık Çalışma zamanı çeşitli programlama modeli sağlar. Bu modeller çakışıyor olabilir veya diğer kitaplıkları modellerinin tamamlar. Bu belgeler bölümü karşılaştırma [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp) eşzamanlılık çalışma zamanı ve Eşzamanlılık Çalışma zamanı kullanmak için mevcut OpenMP kod geçirme hakkında örnekler sağlar.  

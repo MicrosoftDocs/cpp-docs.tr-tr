@@ -2,9 +2,6 @@
 title: '&lt;özel durum&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - exception/std::current_exception
@@ -18,8 +15,6 @@ f1_keywords:
 - exception/std::uncaught_exception
 - exception/std::unexpected
 ms.assetid: c09ac569-5e35-4fe8-872d-ca5810274dd7
-caps.latest.revision: 12
-manager: ghogen
 helpviewer_keywords:
 - std::current_exception [C++]
 - std::get_terminate [C++]
@@ -31,11 +26,11 @@ helpviewer_keywords:
 - std::terminate [C++]
 - std::uncaught_exception [C++]
 - std::unexpected [C++]
-ms.openlocfilehash: 465c5b523855ea9a0cb89a3e27ed5e99d3f3f1da
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 4aab46fa771b88d1baad311aa631a57afce4911e
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltexceptiongt-functions"></a>&lt;özel durum&gt; işlevleri
 

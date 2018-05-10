@@ -1,13 +1,10 @@
 ---
-title: "Özel durum eşzamanlılık çalışma zamanı'nda işleme | Microsoft Docs"
-ms.custom: 
+title: Özel durum eşzamanlılık çalışma zamanı'nda işleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - agents, exception handling [Concurrency Runtime]
 - task groups, exception handling [Concurrency Runtime]
 ms.assetid: 4d1494fb-3089-4f4b-8cfb-712aa67d7a7a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72cde17c0bcb6a3582305167e6358f761c16f248
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5f30c98a8800c3aeaaf5ff1dab5bee9bdba971a6
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="exception-handling-in-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanında Özel Durum İşleme
 Eşzamanlılık Çalışma zamanı C++ özel durum işleme hataları birçok türde iletişim kurmak için kullanır. Bu hataların çalışma zamanı, çalışma zamanı hataları gibi bir kaynak edinmeye hatası ve oluşan hataları kullanımı geçersiz iş görevleri ve görev grupları sağlayan işlevler dahil edin. Bir görevi veya görev grubu bir özel durum oluşturduğunda, çalışma zamanı bu özel durum tutar ve görev veya sonlandırmak için görev grubu için bekler bağlamını sıralar. Basit görevler ve aracılar gibi bileşenleri için çalışma zamanı özel durumları, yönetmez. Bu durumda, kendi özel durum işleme mekanizması uygulamalıdır. Bu konuda, çalışma zamanı görevler, görev grupları, Basit görevler ve zaman uyumsuz aracılar tarafından oluşturulan özel durumları nasıl işler ve nasıl özel durumlar uygulamalarınızda yanıt açıklanmaktadır.  
@@ -47,7 +42,7 @@ Eşzamanlılık Çalışma zamanı C++ özel durum işleme hataları birçok tü
   
 -   Çalışma zamanı özel durumları Basit görevler ve aracıları için yönetmez.  
   
-##  <a name="top"></a>Bu belgede  
+##  <a name="top"></a> Bu belgede  
   
 - [Görevler ve devamlılıklar](#tasks)  
   
@@ -63,7 +58,7 @@ Eşzamanlılık Çalışma zamanı C++ özel durum işleme hataları birçok tü
   
 - [Zaman Uyumsuz Aracılar](#agents)  
   
-##  <a name="tasks"></a>Görevler ve devamlılıklar  
+##  <a name="tasks"></a> Görevler ve devamlılıklar  
  Bu bölümde nasıl Çalışma Zamanı Modülü tarafından oluşturulan özel durumları işler açıklanmaktadır [concurrency::task](../../parallel/concrt/reference/task-class.md) nesneler ve onların devamlılıklar. Görev ve devamlılık modeli hakkında daha fazla bilgi için bkz: [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
  Throw ne zaman bir özel durum geçişi için bir iş işlev gövdesine bir `task` nesne, çalışma zamanı bu özel durum depolar ve çağıran bağlamına sıralar [CONCURRENCY::Task](reference/task-class.md#get) veya [eşzamanlılık:: Task::wait](reference/task-class.md#wait). Belge [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md) açıklar görev tabanlı özetlemek üzere ancak değer tabanlı devamlılıklar karşı değeri tabanlı devamlılık türünde bir parametre alan `T` ve görev tabanlı bir devamlılık türünde bir parametre alır `task<T>`. Bir veya daha fazla değer tabanlı devamlılıklar oluşturur bir görev varsa, bu devamlılıklar çalışmak üzere zamanlanmış değil. Aşağıdaki örnekte, bu davranış gösterilmektedir:  
@@ -97,7 +92,7 @@ Eşzamanlılık Çalışma zamanı C++ özel durum işleme hataları birçok tü
   
  [[Üst](#top)]  
   
-##  <a name="task_groups"></a>Görev grupları ve paralel algoritmalar  
+##  <a name="task_groups"></a> Görev grupları ve paralel algoritmalar  
 
  Bu bölümde, nasıl çalışma zamanı görev grupları tarafından oluşturulan özel durumları işler açıklanmaktadır. Bu bölüm ayrıca paralel algoritmalar gibi geçerlidir [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for), bu algoritmalar görev grupları oluşturun.  
   
@@ -123,7 +118,7 @@ X = 15, Y = 30Caught exception: point is NULL.
   
  [[Üst](#top)]  
   
-##  <a name="runtime"></a>Çalışma zamanı tarafından oluşturulan özel durumları  
+##  <a name="runtime"></a> Çalışma zamanı tarafından oluşturulan özel durumları  
  Bir özel durum çalışma zamanı çağrısından neden olabilir. Çoğu özel durum türleri dışında [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) ve [concurrency::operation_timed_out](../../parallel/concrt/reference/operation-timed-out-class.md), bir programlama hatası gösterir. Bu hatalar genellikle kurtarılamaz ve bu nedenle yakalanan veya gerekir uygulama kodu tarafından işlenir. Yalnızca catch veya programlama hataları tanılamak gerektiğinde kurtarılamayan hatalar uygulama kodunuzda işlemek öneririz. Ancak, çalışma zamanı tarafından tanımlanan özel durum türlerini anlama programlama hataları tanılamanıza yardımcı olabilir.  
   
  Özel durum mekanizması işleme iş işlevleri tarafından oluşturulan özel durumlar olarak çalışma zamanı tarafından oluşturulan özel durumlar için aynıdır. Örneğin, [concurrency::receive](reference/concurrency-namespace-functions.md#receive) işlev atar `operation_timed_out` zaman onu almaz bir ileti belirtilen süre içinde. Varsa `receive` iş işlevinde aykırı bir görev grubuna geçişi, çalışma zamanı bu özel durum depolar ve çağıran bağlamına sıralar `task_group::wait`, `structured_task_group::wait`, `task_group::run_and_wait`, veya `structured_task_group::run_and_wait`.  
@@ -142,7 +137,7 @@ The operation timed out.
   
  [[Üst](#top)]  
   
-##  <a name="multiple"></a>Birden çok özel durumlar  
+##  <a name="multiple"></a> Birden çok özel durumlar  
  Bir görev veya paralel algoritması birden fazla özel alırsa, çalışma zamanı bu özel durumlar çağıran bağlamını yalnızca biri sıralar. Çalışma zamanı bu sıralar hangi özel durum garanti etmez.  
   
  Aşağıdaki örnek kullanır `parallel_for` konsol sayılara yazdırmak için algoritması. Giriş değeri bazı en düşük değerden küçük veya bazı en büyük değerden daha büyük olması durumunda bir özel durum oluşturur. Bu örnekte, birden çok iş işlevleri bir özel durum.  
@@ -157,17 +152,17 @@ The operation timed out.
   
  [[Üst](#top)]  
   
-##  <a name="cancellation"></a>İptal etme  
+##  <a name="cancellation"></a> İptal etme  
  Tüm özel durumlar bir hata gösterir. Örneğin, arama algoritması, özel durum işleme sonucu bulduğunda, ilişkili görevini durdurmak için kullanabilirsiniz. Kodunuzda iptal mekanizmaları kullanma hakkında daha fazla bilgi için bkz: [PPL'de iptal](../../parallel/concrt/cancellation-in-the-ppl.md).  
   
  [[Üst](#top)]  
   
-##  <a name="lwts"></a>Basit görevler  
+##  <a name="lwts"></a> Basit görevler  
  Basit bir görev doğrudan zamanlama bir görevdir bir [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) nesnesi. Basit görevler daha az yüke sıradan görevler gerçekleştirirsiniz. Ancak, çalışma zamanı Basit görevler tarafından oluşturulan özel durumları yakalamaz. Bunun yerine, özel durum, varsayılan işlemi sonlandırır işlenmeyen bir özel durum işleyici tarafından yakalanır. Bu nedenle, uygun bir hata işleme mekanizması uygulamanızda kullanın. Basit görevler hakkında daha fazla bilgi için bkz: [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
   
  [[Üst](#top)]  
   
-##  <a name="agents"></a>Zaman uyumsuz aracılar  
+##  <a name="agents"></a> Zaman uyumsuz aracılar  
  Basit görevler gibi zaman uyumsuz aracılar tarafından oluşturulan özel durumları çalışma zamanı yönetmez.  
   
  Türetilen bir sınıfta özel durumları işleme yollarından biri aşağıdaki örnekte [concurrency::agent](../../parallel/concrt/reference/agent-class.md). Bu örnek tanımlar `points_agent` sınıfı. `points_agent::run` Yöntemi okuma `point` nesneleri ileti arabelleğinden ve bunları konsola yazdırır. `run` Yöntemi aykırı aldığı varsa bir `NULL` işaretçi.  
@@ -193,7 +188,7 @@ the status of the agent is: done
   
  [[Üst](#top)]  
   
-##  <a name="summary"></a>Özet  
+##  <a name="summary"></a> Özet  
  [[Üst](#top)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

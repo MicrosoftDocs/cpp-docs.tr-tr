@@ -1,13 +1,10 @@
 ---
-title: "Dizeye biçimlendirme veya özel karakterler ekleme | Microsoft Docs"
-ms.custom: 
+title: Dizeye biçimlendirme veya özel karakterler ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - strings [C++], formatting
 - strings [C++], special characters
 ms.assetid: c40f394a-8b2c-4896-ab30-6922863ddbb5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ca91ef9742f2dfb10a0af12c74ca58f80035d131
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 429ba8d836579bd3bc1d1dd8844494bf9cd17a7a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="adding-formatting-or-special-characters-to-a-string"></a>Dizeye Biçimlendirme veya Özel Karakterler Ekleme
 ### <a name="to-add-formatting-or-special-characters-to-a-string"></a>Dizeye biçimlendirme veya özel karakterler eklemek için  

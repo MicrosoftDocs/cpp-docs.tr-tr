@@ -2,11 +2,8 @@
 title: '&lt;cstdlib&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - <cstdlib>
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - cstdlib header
 ms.assetid: 0a6aaebf-84e9-4b60-ae90-17e11981cf54
-caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b691a9cda6818bfbe275108797f421baf87d7278
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: b526c9e65fc0c5a6b2645a068c5e616462fbcae0
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltcstdlibgt"></a>&lt;cstdlib&gt;
 

@@ -1,13 +1,10 @@
 ---
-title: "Boş Windows masaüstü uygulaması oluşturma | Microsoft Docs"
-ms.custom: 
+title: Boş Windows masaüstü uygulaması oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - empty projects
 - empty projects, creating
 ms.assetid: e0f0e628-041d-4c50-b221-5807b9184000
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 93d07566dae5621e24fe96b6b281f7c01222b406
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3a86aead2c3c84cf6d28dd3807d9dec224770785
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="creating-an-empty-windows-desktop-application"></a>Boş Windows masaüstü uygulaması oluşturma
 ### <a name="to-create-an-empty-windows-desktop-application"></a>Boş bir Windows masaüstü uygulaması oluşturmak için  

@@ -2,11 +2,8 @@
 title: priority_queue sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - queue/std::priority_queue::container_type
@@ -29,17 +26,15 @@ helpviewer_keywords:
 - std::priority_queue [C++], size
 - std::priority_queue [C++], top
 ms.assetid: 69fca9cc-a449-4be4-97b7-02ca5db9cbb2
-caps.latest.revision: 25
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8aa255b4d30702ca1c66d3e702d82d31d2184a35
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 149d255dd82d0dff2d2ddb1101b38bf05c69673a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="priorityqueue-class"></a>priority_queue Sınıfı
 

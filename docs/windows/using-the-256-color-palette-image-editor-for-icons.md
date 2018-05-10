@@ -1,13 +1,10 @@
 ---
-title: "256-renk paletini (simgeler için görüntü Düzenleyicisi) kullanarak | Microsoft Docs"
-ms.custom: 
+title: 256-renk paletini (simgeler için görüntü Düzenleyicisi) kullanarak | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - palettes, 256-color
 - icons, color
 ms.assetid: 1506ed00-669b-4a21-b1a4-39b6a84a78bb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6ed1aaf782bb5261fae28e0cf8f8e9a5cbe839c8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5dc78dfa5d549b37b99125cfcef5c25ae6c76b9e
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="using-the-256-color-palette-image-editor-for-icons"></a>256-Renk Paletini Kullanma (Simgeler İçin Görüntü Düzenleyicisi)
 256-renk paletinden bir seçimi çizmek için renk paletindeki renkleri seçin gereksinim [renkler penceresi](../windows/colors-window-image-editor-for-icons.md).  

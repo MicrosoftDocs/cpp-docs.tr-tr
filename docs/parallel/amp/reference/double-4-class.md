@@ -1,12 +1,9 @@
 ---
-title: "double_4 sınıfı | Microsoft Docs"
-ms.custom: 
+title: double_4 sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_4::get_xw
@@ -277,17 +274,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: a81c1595-24c6-4b3f-9574-d5942275e5e8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1762d985bacb5dc35f7b8e61633bd53c6e08c03a
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 4d5c776784f78f79fb6d90bde96b199631d08d22
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="double4-class"></a>double_4 Sınıfı
 Dört çiftleri kısa bir vektör temsil eder.  
@@ -459,11 +454,11 @@ class double_4;
 |----------|-----------------|  
 |double_4::operator-||  
 |double_4::operator--||  
-|double_4::operator*=||  
-|double_4::operator/=||  
-|double_4::operator++||  
-|double_4::operator+=||  
-|double_4::operator=||  
+|double_4::operator * =||  
+|double_4::operator ve =||  
+|double_4::operator ++||  
+|double_4::operator +=||  
+|double_4::operator =||  
 |double_4::operator-=||  
   
 ### <a name="public-constants"></a>Genel sabitler  
@@ -477,10 +472,10 @@ class double_4;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |double_4::a||  
-|double_4::ab||  
+|double_4::AB||  
 |double_4::abg||  
 |double_4::abgr||  
-|double_4::abr||  
+|double_4::ABR||  
 |double_4::abrg||  
 |double_4::AG||  
 |double_4::agb||  
@@ -491,15 +486,15 @@ class double_4;
 |double_4::arb||  
 |double_4::arbg||  
 |double_4::arg||  
-|double_4::argb||  
+|double_4::ARGB||  
 |double_4::b||  
-|double_4::ba||  
+|double_4::BA||  
 |double_4::BAG||  
 |double_4::bagr||  
 |double_4::bar||  
 |double_4::barg||  
 |double_4::BG||  
-|double_4::bga||  
+|double_4::BGA||  
 |double_4::bgar||  
 |double_4::BGR||  
 |double_4::bgra||  
@@ -517,7 +512,7 @@ class double_4;
 |double_4::GB||  
 |double_4::Gba||  
 |double_4::gbar||  
-|double_4::gbr||  
+|double_4::GBR||  
 |double_4::gbra||  
 |double_4::Gr||  
 |double_4::Gra||  
@@ -530,7 +525,7 @@ class double_4;
 |double_4::rabg||  
 |double_4::rag||  
 |double_4::ragb||  
-|double_4::rb||  
+|double_4::RB||  
 |double_4::rba||  
 |double_4::rbag||  
 |double_4::rbg||  
@@ -538,7 +533,7 @@ class double_4;
 |double_4::rg||  
 |double_4::rga||  
 |double_4::rgab||  
-|double_4::rgb||  
+|double_4::RGB||  
 |double_4::rgba||  
 |double_4::w||  
 |double_4::wx||  
@@ -549,7 +544,7 @@ class double_4;
 |double_4::wy||  
 |double_4::wyx||  
 |double_4::wyxz||  
-|double_4::wyz||  
+|double_4::WYZ||  
 |double_4::wyzx||  
 |double_4::wZ||  
 |double_4::wzx||  
@@ -583,23 +578,23 @@ class double_4;
 |double_4::yxwz||  
 |double_4::yxz||  
 |double_4::yxzw||  
-|double_4::yz||  
+|double_4::YZ||  
 |double_4::yzw||  
 |double_4::yzwx||  
 |double_4::yzx||  
 |double_4::yzxw||  
 |double_4::z||  
-|double_4::zw||  
+|double_4::ZW||  
 |double_4::zwx||  
 |double_4::zwxy||  
 |double_4::zwy||  
 |double_4::zwyx||  
-|double_4::zx||  
+|double_4::ZX||  
 |double_4::zxw||  
 |double_4::zxwy||  
 |double_4::zxy||  
 |double_4::zxyw||  
-|double_4::zy||  
+|double_4::ZY||  
 |double_4::zyw||  
 |double_4::zywx||  
 |double_4::zyx||  

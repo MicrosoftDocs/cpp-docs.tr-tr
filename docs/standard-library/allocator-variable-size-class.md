@@ -2,11 +2,8 @@
 title: allocator_variable_size sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - allocators/stdext::allocator_variable_size
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - stdext::allocator_variable_size
 - stdext::allocators [C++], allocator_variable_size
 ms.assetid: c3aa4105-ae45-4385-bbbe-9f23060478cb
-caps.latest.revision: 16
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26441d9f749aab26ce45d6d88e15a4699ad79754
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 690be271cd7e9ad3eaf019f1feb67202c14a9e5c
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="allocatorvariablesize-class"></a>allocator_variable_size Sınıfı
 

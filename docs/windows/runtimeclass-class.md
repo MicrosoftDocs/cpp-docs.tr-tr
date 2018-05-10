@@ -1,12 +1,9 @@
 ---
-title: "RuntimeClass sınıfı | Microsoft Docs"
-ms.custom: 
+title: RuntimeClass sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::RuntimeClass
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - RuntimeClass class
 ms.assetid: d52f9d1a-98e5-41f2-a143-8fb629dd0727
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d5c75492b55cd1c238798d3500e2157738c3c58f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 26c3542f5bea21d1b705cd3253e6828ff73677df
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="runtimeclass-class"></a>RuntimeClass Sınıfı
 Belirtilen arabirimlerden devralır ve belirtilen Windows çalışma zamanı, klasik COM ve zayıf başvuru desteği sağlayan bir WinRT veya COM sınıfı temsil eder.  
@@ -48,7 +43,7 @@ template <unsigned int classFlags, typename ...TInterfaces> class RuntimeClass;
 IUnknown, Iınspectable veya denetlediği diğer arabirimleri ötesinde nesne arabirimleri listesine uygulayan [RuntimeClassType](../windows/runtimeclasstype-enumeration.md). Ayrıca, özellikle Microsoft::WRL::FtmBase, nesne Çevik yapıp IMarshal uygulamak neden türetilmesi için diğer sınıflar de listeleyebilir.
   
 ## <a name="members"></a>Üyeler  
-`RuntimeClassInitialize`Makeandınitialize şablon işlevi nesneyi oluşturmak için kullanılan nesneyi başlatır bir işlev. Başlatma başarısız olursa nesne başarıyla başlatılmış varsa S_OK veya bir COM hata kodunu döndürür. COM hata kodu Makeandınitialize dönüş değeri olarak yayılır. Yapma şablon işlevi nesnesi oluşturmak için kullanılıyorsa, RuntimeClassInitialize yöntemi çağrılmaz unutmayın.
+`RuntimeClassInitialize` Makeandınitialize şablon işlevi nesneyi oluşturmak için kullanılan nesneyi başlatır bir işlev. Başlatma başarısız olursa nesne başarıyla başlatılmış varsa S_OK veya bir COM hata kodunu döndürür. COM hata kodu Makeandınitialize dönüş değeri olarak yayılır. Yapma şablon işlevi nesnesi oluşturmak için kullanılıyorsa, RuntimeClassInitialize yöntemi çağrılmaz unutmayın.
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   

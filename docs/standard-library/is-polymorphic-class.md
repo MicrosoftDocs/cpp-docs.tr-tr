@@ -2,11 +2,8 @@
 title: is_polymorphic sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - type_traits/std::is_polymorphic
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - is_polymorphic class
 - is_polymorphic
 ms.assetid: 4e1704db-d6f9-4154-a100-0ba02a373f20
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c53f4545721c9eed9ec42776c646561635e48016
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 6de11114eafe423e80c885f3b1a5d00a70b449e0
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ispolymorphic-class"></a>is_polymorphic Sınıfı
 

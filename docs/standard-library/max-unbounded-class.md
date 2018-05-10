@@ -2,11 +2,8 @@
 title: max_unbounded sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - allocators/stdext::max_unbounded
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - stdext::max_unbounded [C++], released
 - stdext::max_unbounded [C++], saved
 ms.assetid: e34627a9-c231-4031-a483-cbb0514fff46
-caps.latest.revision: 18
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 21a6673626e44e3c74a32eab1b545a16e4577b1b
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 679db380dabf15786776a6896c931f584ef46fce
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="maxunbounded-class"></a>max_unbounded Sınıfı
 

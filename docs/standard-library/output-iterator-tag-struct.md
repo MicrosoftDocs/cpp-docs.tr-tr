@@ -2,11 +2,8 @@
 title: output_iterator_tag yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xutility/std::output_iterator_tag
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - output_iterator_tag class
 - output_iterator_tag struct
 ms.assetid: c23a4331-b069-4fa0-9c3a-1c9be7095553
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0b7bc36f8c50016159b03d9a08e56f7feead964
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: c8d340f79e5442f22b09f801fd3040c09ce00a45
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="outputiteratortag-struct"></a>output_iterator_tag Yapısı
 

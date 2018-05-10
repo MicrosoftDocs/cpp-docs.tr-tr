@@ -1,28 +1,23 @@
 ---
-title: "HString::CopyTo yöntemi | Microsoft Docs"
-ms.custom: 
+title: HString::CopyTo yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: a1fd2ef0-e175-4c18-927b-550e02a89e43
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8dd0cab708832a9872c55c53ad058fe0cd78e6bb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b44974faf5fc1f068d28d7febe3ed2a266f4869e
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="hstringcopyto-method"></a>HString::CopyTo Yöntemi
 Kopya geçerli HString HSTRING nesneye nesne.  

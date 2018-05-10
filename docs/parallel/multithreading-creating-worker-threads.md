@@ -1,13 +1,10 @@
 ---
-title: "Çoklu iş parçacığı kullanımı: Çalışan iş parçacıkları oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'Çoklu iş parçacığı kullanımı: Çalışan iş parçacıkları oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - threading [MFC], worker threads
 - threading [C++], user input not required
 ms.assetid: 670adbfe-041c-4450-a3ed-be14aab15234
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94a047de82bebb03f681e1bfdf6f68d56554fe8a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 175fc018ddba436f9a331f861a492dcd43e1ec1e
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="multithreading-creating-worker-threads"></a>Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma
 Bir çalışan iş parçacığı yaygın kullanıcı uygulamanızı kullanmaya devam etmek için beklemek için olmamalıdır arka plan görevlerini işlemek için kullanılır. Yeniden hesaplama ve arka plan yazdırma gibi görevleri çalışan iş parçacığı iyi örnekleridir. Bu konuda, bir çalışan iş parçacığı oluşturmak için gerekli adımları ayrıntıları verilmektedir. Konular şunlardır:  
@@ -42,7 +37,7 @@ Bir çalışan iş parçacığı yaygın kullanıcı uygulamanızı kullanmaya d
   
  Bir çalışan iş parçacığı oluşturma oldukça basit bir görevdir. Yalnızca iki adım çalıştıran, iş parçacığı almak için gereklidir: denetleme işlevini uygulamak ve iş parçacığı başlatılıyor. Öğesinden bir sınıf türetin gerekli değildir [CWinThread](../mfc/reference/cwinthread-class.md). Özel bir sürümü gerekiyorsa bir sınıf türetin `CWinThread`, ancak çoğu basit çalışan iş parçacığı için gerekli değildir. Kullanabileceğiniz `CWinThread` değişiklik yapmadan.  
   
-##  <a name="_core_starting_the_thread"></a>İş parçacığı başlatılıyor  
+##  <a name="_core_starting_the_thread"></a> İş parçacığı başlatılıyor  
  Aşırı yüklenmiş iki sürümü vardır `AfxBeginThread`: yalnızca çalışan iş parçacığı oluşturabilir ve kullanıcı arabirimi iş parçacıkları ve iş parçacıklarını oluşturabilirsiniz. Çalışan iş parçacığı ilk aşırı yüklemeleri kullanarak yürütülmesi başlamak için arama [AfxBeginThread](../mfc/reference/application-information-and-management.md#afxbeginthread), aşağıdaki bilgileri sağlar:  
   
 -   Denetleyen işlev adresi.  
@@ -57,9 +52,9 @@ Bir çalışan iş parçacığı yaygın kullanıcı uygulamanızı kullanmaya d
   
 -   (İsteğe bağlı) İstenen güvenlik öznitelikleri. Üst iş parçacığı aynı erişim varsayılandır. Bu güvenlik bilgileri biçimi hakkında daha fazla bilgi için bkz: [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) içinde [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
   
- `AfxBeginThread`oluşturur ve başlatır bir `CWinThread` nesnesi, başlar ve böylece için daha sonra başvurabilirsiniz adresini döndürür. Denetimleri prosedür boyunca tüm nesneleri düzgün herhangi bir kısmını oluşturma başarısız olması kaldırıldığından emin olmak için yapılır.  
+ `AfxBeginThread` oluşturur ve başlatır bir `CWinThread` nesnesi, başlar ve böylece için daha sonra başvurabilirsiniz adresini döndürür. Denetimleri prosedür boyunca tüm nesneleri düzgün herhangi bir kısmını oluşturma başarısız olması kaldırıldığından emin olmak için yapılır.  
   
-##  <a name="_core_implementing_the_controlling_function"></a>Denetim işlevini uygulama  
+##  <a name="_core_implementing_the_controlling_function"></a> Denetim işlevini uygulama  
  İş parçacığı denetim işlevini tanımlar. Bu işlev girildiğinde, iş parçacığı başlar ve çıktığında, iş parçacığı sonlanır. Bu işlevi aşağıdaki prototipi içermelidir:  
   
 ```  
@@ -72,7 +67,7 @@ UINT MyControllingFunction( LPVOID pParam );
   
  MFC kitaplığı ile yazılmış birden çok iş parçacıklı bir program yapabilecekleriniz bazı kısıtlamalar vardır. Bu kısıtlamalar ve iş parçacığı kullanma hakkında diğer ipuçları açıklamaları için bkz: [çoklu iş parçacığı kullanımı: programlama ipuçları](../parallel/multithreading-programming-tips.md).  
   
-##  <a name="_core_controlling_function_example"></a>Denetleme işlevi örneği  
+##  <a name="_core_controlling_function_example"></a> Denetleme işlevi örneği  
  Aşağıdaki örnek, denetleyen işlev tanımlama ve başka bir program bölümünden kullanma gösterilmektedir.  
   
 ```  

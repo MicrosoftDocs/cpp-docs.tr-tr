@@ -1,12 +1,9 @@
 ---
 title: raw_method_prefix | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - raw_method_prefix
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - raw_method_prefix attribute
 ms.assetid: 71490313-af78-4bb2-b28a-eee67950d30b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc80d1468d3ac33bf7506aab98945b9c2e610e51
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 236c9042393e4ff3de57bea83ad566c8b74d5d3b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="rawmethodprefix"></a>raw_method_prefix
 **C++ özel**  
@@ -48,8 +43,8 @@ raw_method_prefix("Prefix")
 > [!NOTE]
 >  Etkilerini `raw_method_prefix` özniteliği varlığını tarafından değiştirilmeyecek [raw_interfaces_only](#_predir_raw_interfaces_only) özniteliği. `raw_method_prefix` Her zaman önceliklidir `raw_interfaces_only` içinde bir önek belirtme. Her iki öznitelik aynı kullanılıyorsa `#import` deyimi sonra tarafından belirtilen önek `raw_method_prefix` özniteliği kullanılır.  
   
- Son C++ özel  
+ **Son C++ özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+ [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

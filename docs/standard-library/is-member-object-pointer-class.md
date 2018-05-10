@@ -2,11 +2,8 @@
 title: is_member_object_pointer sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - type_traits/std::is_member_object_pointer
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - is_member_object_pointer class
 - is_member_object_pointer
 ms.assetid: 64f9cdf3-4621-4310-a076-a7bc986926b9
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f419fa4fd40f4fa02e463dd2108505a3c15950cf
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 89dd2c01b4eea80fcd284a6eed44383c3eec9c5b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ismemberobjectpointer-class"></a>is_member_object_pointer Sınıfı
 

@@ -2,9 +2,6 @@
 title: '&lt;valarray&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - valarray/std::operator!=
@@ -28,8 +25,6 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 8a53562c-90ab-4eb3-85d3-ada5259d90b0
-caps.latest.revision: 8
-manager: ghogen
 helpviewer_keywords:
 - std::operator!= (valarray), std::operator&amp; (valarray)
 - std::operator&amp;&amp; (valarray)
@@ -39,11 +34,11 @@ helpviewer_keywords:
 - std::operator&lt; (valarray)
 - std::operator&lt;&lt; (valarray)
 - std::operator&lt;= (valarray), std::operator== (valarray)
-ms.openlocfilehash: b22e60aa2794c98c298648fa5906004ec18f259a
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: e65d11ef95b5305988fe77ab258bb39c2b80de57
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltvalarraygt-operators"></a>&lt;valarray&gt; işleçleri
 

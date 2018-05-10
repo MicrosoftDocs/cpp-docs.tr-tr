@@ -1,13 +1,10 @@
 ---
 title: dize (C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.string
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - string attribute
 ms.assetid: ddde900a-2e99-4fcd-86e8-57e1bdba7c93
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7579dc9d3f7aec17982a0f60e20719c0b52eda42
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6bdcdc6557253f8be9c6ecb20300f2338ab35d07
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="string-c"></a>string (C++)
 Belirten tek boyutlu `char`, `wchar_t`, **bayt** (veya eşdeğer) dizi ya da böyle bir dizi işaretçisine gerekir kabul olarak bir dize.  

@@ -1,13 +1,10 @@
 ---
-title: "ıncludelıb (C++) | Microsoft Docs"
-ms.custom: 
+title: ıncludelıb (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.includelib
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - includelib attribute
 ms.assetid: cd90ea6e-5ae8-4f11-b8d1-662db95412b2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: df6c38889db24cc1b4f28ce0bfe4cf96eb6b03a2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 252a5d953dd05edc494daf8c4a45322d5511f979
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="includelib-c"></a>includelib (C++)
 Oluşturulan .idl dosyasında dahil edilecek bir .idl veya .h dosyası neden olur.  
@@ -73,7 +68,7 @@ Oluşturulan .idl dosyasında dahil edilecek bir .idl veya .h dosyası neden olu
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [Tek başına öznitelikler](../windows/stand-alone-attributes.md)   
- [içeri aktarma](../windows/import.md)   
+ [İçeri aktarma](../windows/import.md)   
  [importidl](../windows/importidl.md)   
- [içerir](../windows/include-cpp.md)   
+ [İçerir](../windows/include-cpp.md)   
  [importlib](../windows/importlib.md)   

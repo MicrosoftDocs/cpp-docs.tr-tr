@@ -2,11 +2,8 @@
 title: timed_mutex sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - mutex/std::timed_mutex
@@ -19,10 +16,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: cd198081-6f38-447a-9dba-e06dfbfafe59
-caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::timed_mutex [C++]
 - std::timed_mutex [C++], timed_mutex
@@ -33,11 +28,11 @@ helpviewer_keywords:
 - std::timed_mutex [C++], unlock
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4246a9f6413d016dabbde53e5a41067cc6839233
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: a4dc22ed8676c720dd8bde5c8f424915dfa8fe40
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="timedmutex-class"></a>timed_mutex Sınıfı
 

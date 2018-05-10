@@ -1,13 +1,10 @@
 ---
-title: "Çalışma zamanı platformları için bileşen uzantıları | Microsoft Docs"
-ms.custom: 
+title: Çalışma zamanı platformları için bileşen uzantıları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - keywords [C++]
 - Managed Extensions for C++, replacement syntax
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e32057e17614da98c78d877fe95180dd02500909
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e60a1285f54de6b1cbfe311d4d9cbbc547785176
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="component-extensions-for-runtime-platforms"></a>Çalışma Zamanı Platformları için Bileşen Uzantıları
 Visual C++, programın çalışma zamanı platformları karşı yardımcı olmak için dil uzantıları sağlar. Kullanarak C + +/ CX, program Evrensel Windows platformu uygulamaları ve yerel kodu derleme bileşenleri. C + kullanarak doğrudan Windows çalışma zamanı COM arabirimleri karşı programlama tarafından Evrensel Windows platformu uygulamaları oluşturabilirsiniz ancak +/ CX, Oluşturucular, özel durumlar ve diğer modern C++ deyimleri programlama ile çalışabilir. C++ programlama .NET platformu yönetilen yürütme ortamında etkinleştirmek için C + kullanabileceğiniz +/ CLI.  
@@ -86,7 +81,7 @@ Visual C++, programın çalışma zamanı platformları karşı yardımcı olmak
 |`gcnew`|Hayır|Çöp toplanan yığın türlerinde ayırır. Yerine kullanmak `new` ve `delete`.|[Yeni başvuru, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md)|  
 |`ref new`|Evet|Windows çalışma zamanı türü ayırır. Yerine kullanmak `new` ve `delete`.|[Yeni başvuru, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md)|  
 |`initonly`|Evet|Üye yalnızca bildirim veya statik Oluşturucu başlatılabilir olduğunu gösterir.|[initonly (C++/CLI)](../dotnet/initonly-cpp-cli.md)|  
-|`literal`|Evet|Değişmez değer bir değişken oluşturur.|[değişmez değer](../windows/literal-cpp-component-extensions.md)|  
+|`literal`|Evet|Değişmez değer bir değişken oluşturur.|[Değişmez değer](../windows/literal-cpp-component-extensions.md)|  
 |`nullptr`|Hayır|Bir tanıtıcı veya işaretçi bir nesnede göstermiyor gösterir.|[nullptr](../windows/nullptr-cpp-component-extensions.md)|  
   
 ## <a name="template-constructs"></a>Şablon yapıları  
@@ -116,18 +111,18 @@ Visual C++, programın çalışma zamanı platformları karşı yardımcı olmak
 |[__tanımlayıcı (C++/CLI)](../windows/identifier-cpp-cli.md)|(Windows çalışma zamanı ve CLR) Anahtar sözcükler kullanımını tanımlayıcıları etkinleştirir.|  
 |[Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)|(Windows çalışma zamanı ve CLR) Değişken sayıda bağımsız değişken yapılacak bir işlev sağlar.|  
 |[C++ Yerel Türlerinin .NET Framework Eşdeğerleri (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md)|C++ tam sayı türleri yerine kullanılan CLR türlerini listeler.|  
-|[AppDomain](../cpp/appdomain.md) `__declspec` değiştiricisi|`__declspec`Statik ve genel değişkenler appdomain mevcut olması zorunlu tutulmuştur değiştiricisi.|  
+|[AppDomain](../cpp/appdomain.md) `__declspec` değiştiricisi|`__declspec` Statik ve genel değişkenler appdomain mevcut olması zorunlu tutulmuştur değiştiricisi.|  
 |[/ CLR ile C türü atamalar (C + +/ CLI)](../windows/c-style-casts-with-clr-cpp-cli.md)|C türü atamalar nasıl yorumlanması gerektiğini açıklar.|  
 |[__clrcall](../cpp/clrcall.md) çağırma|CLR uyumlu çağırma gösterir.|  
 |`__cplusplus_cli`|[Önceden Tanımlanmış Makrolar](../preprocessor/predefined-macros.md)|  
 |[Özel öznitelikler](../windows/custom-attributes-cpp.md)|Kendi CLR öznitelikleri tanımlamak açıklar.|  
 |[Özel Durum İşleme](../windows/exception-handling-cpp-component-extensions.md)|Özel durum işleme genel bir bakış sağlar.|  
-|[Açık geçersiz kılmalar](../windows/explicit-overrides-cpp-component-extensions.md)|Üye işlevleri rasgele üyeleri nasıl kılabilirsiniz gösterir.|  
+|[Açık Geçersiz Kılmalar](../windows/explicit-overrides-cpp-component-extensions.md)|Üye işlevleri rasgele üyeleri nasıl kılabilirsiniz gösterir.|  
 |[Arkadaş Derlemeler (C++)](../dotnet/friend-assemblies-cpp.md)|Bir istemci derleme bir derleme bileşeninin içindeki tüm türler nasıl erişebileceğiniz açıklanır.|  
 |[Kutulama](../windows/boxing-cpp-component-extensions.md)|Hangi değerlerin türleri Kutulu koşulları gösterir.|  
 |[Tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md)|Derleme zamanında türleri özelliklerini algılamak nasıl açıklanır.|  
 |[yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) pragmaları|Yönetilen ve yönetilmeyen işlevleri gösterir aynı modülünde birlikte bulunabilir.|  
-|[işlem](../cpp/process.md) `__declspec` değiştiricisi|`__declspec`Statik ve genel değişkenler her işlem mevcut olması zorunlu tutulmuştur değiştiricisi.|  
+|[işlem](../cpp/process.md) `__declspec` değiştiricisi|`__declspec` Statik ve genel değişkenler her işlem mevcut olması zorunlu tutulmuştur değiştiricisi.|  
 |[Yansıma (C++/CLI)](../dotnet/reflection-cpp-cli.md)|Çalışma zamanı türü bilgileri CLR sürümü gösterir.|  
 |[Dize](../windows/string-cpp-component-extensions.md)|Dize değişmez değerleri derleyici dönüştürülmesi açıklanmaktadır <xref:System.String>.|  
 |[Tür İletme (C++/CLI)](../windows/type-forwarding-cpp-cli.md)|Böylece istemci kodunun derlenmesi yok türü başka bir derleme sevkiyat derlemede hareketini sağlar.|  

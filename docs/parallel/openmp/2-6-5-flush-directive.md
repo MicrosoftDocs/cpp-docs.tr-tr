@@ -1,27 +1,22 @@
 ---
-title: "2.6.5 flush yönergesi | Microsoft Docs"
-ms.custom: 
+title: 2.6.5 flush yönergesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: a2ec5f74-9c37-424a-8376-47ab4a5829a2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7607070692941606b863be9248b2d69f093f3a13
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ad3b34195015f57955c5be685807ec43f0a8f8c6
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="265-flush-directive"></a>2.6.5 flush Yönergesi
 **Flush** yönergesi, açık veya zımni, olup olmadığını belirtir uygulama bir takım tüm iş parçacıkları (aşağıda belirtilen) belirli nesnelerin tutarlı bir görünümünü sağlamak için gereken bir "iş parçacıkları arası" dizi noktası bellek. Bu nesnelere başvuran bir ifade önceki değerlendirmeleri tamamlandığından ve sonraki değerlendirmeleri değil henüz başlamıştır anlamına gelir. Örneğin, derleyicileri nesneleri değerlerini kayıtları belleği geri yüklemeniz gerekir ve donanım yazma arabellekleri için bellek temizleme ve nesneleri bellekten değerlerini yeniden gerekebilir.  
@@ -40,7 +35,7 @@ ms.lasthandoff: 12/21/2017
   
 -   İçin giriş ve çıkış ' **kritik**  
   
--   İçin giriş ve çıkış '`ordered`  
+-   İçin giriş ve çıkış ' `ordered`  
   
 -   İçin giriş ve çıkış ' **paralel**  
   

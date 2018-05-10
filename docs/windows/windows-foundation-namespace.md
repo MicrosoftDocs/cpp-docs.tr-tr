@@ -1,12 +1,9 @@
 ---
 title: Windows::Foundation Namespace | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - client/ABI::Windows::Foundation
@@ -16,18 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - Foundation namespace
 ms.assetid: 96a6b5e0-ddee-4b21-ae4e-da5feeb945c3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 234ed31e2cdfc86988c3c28fdb899d2e9eae41be
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 439746381b0b5d4932edd5c8717b2d3555005416
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="windowsfoundation-namespace"></a>Windows::Foundation Ad Alanı
 Nesne ve Fabrika oluşturma gibi temel Windows çalışma zamanı işlevleri sağlar.  

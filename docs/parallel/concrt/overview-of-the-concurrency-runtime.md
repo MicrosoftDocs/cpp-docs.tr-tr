@@ -1,13 +1,10 @@
 ---
-title: "Eşzamanlılık Çalışma zamanı genel bakış | Microsoft Docs"
-ms.custom: 
+title: Eşzamanlılık Çalışma zamanı genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - Concurrency Runtime, overview
 - Concurrency Runtime, lambda expressions
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c604ebc03204ca0dff24e2ceccdf6bb6dd543df
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 67f0497f600cf5d528b2c41601b7a02c08771861
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="overview-of-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanına Genel Bakış
 Bu belge eşzamanlılık çalışma zamanı genel bir bakış sağlar. Eşzamanlılık Çalışma zamanı yararlarını açıklar ne zaman kullanılmalı ve bileşenlerinin birbirleriyle ve işletim sistemi ve uygulamalar ile nasıl etkileşime.  

@@ -1,13 +1,10 @@
 ---
-title: "Olay (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: Olay (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - event
 - event_cpp
@@ -16,18 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - event keyword [C++]
 ms.assetid: c4998e42-883c-4419-bbf4-36cdc979dd27
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bdaef6a98e080da2e1290f1191590b7509c2eccd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7859b8b58bbd8765c38daea46efea5859ba61d67
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="event--c-component-extensions"></a>olay (C++ Bileşen Uzantıları)
 `event` Anahtar sözcüğü bildiren bir *olay*, kayıtlı abonelere bildirim olduğu (*olay işleyicileri*) çeken bir şey gerçekleşen.  
@@ -65,7 +60,7 @@ modifiereventdelegate^ event_name
  *return_value*  
  Olay erişimci yönteminin dönüş değeri.  Doğrulanabilir için dönüş türü olmalıdır `void`.  
   
- *parametreleri*  
+ *Parametreleri*  
  (isteğe bağlı) Parametrelerini `raise` imzası eşleşen yöntemi *temsilci* parametresi.  
   
  **Açıklamalar**  
@@ -82,7 +77,7 @@ modifiereventdelegate^ event_name
   
  Kullanabileceğiniz `operators+=` ve `operator-=` eklemek ve bir olayı kaldırmak için işleyici veya çağrı `add()` ve `remove()` yöntemleri açıkça.  
   
- `event`bağlama duyarlı bir anahtar sözcüktür; bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md) daha fazla bilgi için.  
+ `event` bağlama duyarlı bir anahtar sözcüktür; bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md) daha fazla bilgi için.  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
   
@@ -127,7 +122,7 @@ modifiereventdelegate^ event_name
  *return_value*  
  Olay erişimci yönteminin dönüş değeri.  Doğrulanabilir için dönüş türü olmalıdır `void`.  
   
- *parametreleri*  
+ *Parametreleri*  
  (isteğe bağlı) Parametrelerini `raise` imzası eşleşen yöntemi *temsilci* parametresi.  
   
  **Açıklamalar**  

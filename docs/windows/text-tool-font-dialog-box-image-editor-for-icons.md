@@ -1,13 +1,10 @@
 ---
-title: "Metin aracı yazı tipi iletişim kutusu (simgeler için görüntü Düzenleyicisi) | Microsoft Docs"
-ms.custom: 
+title: Metin aracı yazı tipi iletişim kutusu (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - fonts, changing on an image
 - text, on images
 ms.assetid: c398e2e7-0263-43c1-9ab4-768a280c2407
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2f5df3215f2d3487b919c2c89215dab17d288d4a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: aa7f1a88627cc3547e6d6f4028de4abef73bf181
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="text-tool-font-dialog-box-image-editor-for-icons"></a>Metin Aracı Yazı Tipi İletişim Kutusu (Simgeler İçin Görüntü Düzenleyicisi)
 Kullandığınızda yazı tipi ayarlarını belirtir [metin aracı iletişim kutusu](../windows/text-tool-dialog-box-image-editor-for-icons.md) , [görüntü Düzenleyicisi](../windows/image-editor-for-icons.md).  

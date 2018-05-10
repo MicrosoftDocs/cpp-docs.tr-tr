@@ -1,13 +1,10 @@
 ---
 title: DefaultValue | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.defaultvalue
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - defaultvalue attribute
 ms.assetid: efa5d050-b2cc-4d9e-9b8e-79954f218d3a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: eb269a4c7e85269096e5df8a56e16bf898348118
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c838f057d9c5e59193d0578fe8aa871b1b75ee9d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="defaultvalue"></a>defaultvalue
 Yazılı isteğe bağlı bir parametre için varsayılan bir değer belirtimi sağlar.  
@@ -86,8 +81,8 @@ __interface IFireTabCtrl : IDispatch {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [Parametre öznitelikleri](../windows/parameter-attributes.md)   
- [çıkışı](../windows/out-cpp.md)   
+ [Çıkışı](../windows/out-cpp.md)   
  [retval](../windows/retval.md)   
- [içinde](../windows/in-cpp.md)   
+ [İçinde](../windows/in-cpp.md)   
  [pointer_default](../windows/pointer-default.md)   
- [benzersiz](../windows/unique-cpp.md)   
+ [Benzersiz](../windows/unique-cpp.md)   

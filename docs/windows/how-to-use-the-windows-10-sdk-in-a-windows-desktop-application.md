@@ -1,28 +1,23 @@
 ---
 title: "Nasıl yapılır: Windows 10 kullanan Windows masaüstü uygulaması SDK'da | Microsoft Docs"
-ms.custom: ''
+ms.custom: get-started-article
 ms.date: 04/19/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: eed6421e-9355-44a6-9582-3f1d453a6d44
-caps.latest.revision: 4
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6cd358be2e9c28dae5c495d2a18cbbb7a0976ea7
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 2dae6f31082176c94cdf12cf0cdb42ba13aa93fe
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="how-to-use-the-windows-10-sdk-in-a-windows-desktop-application"></a>Nasıl yapılır: Windows 10 kullanan Windows masaüstü uygulaması SDK'sına
 Visual Studio 2017 içinde Klasik Windows Masaüstü projesi oluşturduğunuzda, onu varsayılan olarak C++ Masaüstü iş yükü yüklendiğinde veya son güncelleştirme yüklediğiniz Windows 10 SDK sürümünü oluşturmak için ayarlanır. Bu Windows SDK'ın tüm son Windows sürümleriyle uyumlu sürümüdür. SDK'ın önceki bir sürümünü hedeflemek istiyorsanız, proje açabilirsiniz | Özellikleri ve Windows SDK sürümü açılır menüde kullanılabilir diğer bir SDK sürümlerini seçin.  

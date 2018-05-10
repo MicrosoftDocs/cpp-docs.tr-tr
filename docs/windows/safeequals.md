@@ -1,13 +1,10 @@
 ---
 title: SafeEquals | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SafeEquals
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - SafeEquals function
 ms.assetid: 6019627d-f170-413b-9abd-2b5b34396a72
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c6a608a80ea299f951e5f58e59ad57dad5876c1b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cfde61e9bcc32e3924e923dd55c8e6ca51cda0eb
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="safeequals"></a>SafeEquals
 Eşit olup olmadıklarını belirlemek için iki sayının karşılaştırır.  
@@ -42,14 +37,14 @@ inline bool SafeEquals (
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`t`  
+ [in] `t`  
  Karşılaştırma yapılacak ilk sayı. Bu t türünde olmalıdır  
   
- [in]`u`  
+ [in] `u`  
  Karşılaştırılacak ikinci sayı. Bu türü u olmalıdır  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true`varsa `t` ve `u` eşit; tersi durumda `false`.  
+ `true` varsa `t` ve `u` eşit; tersi durumda `false`.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Yöntem geliştirir `==` çünkü `SafeEquals` numaraları iki farklı türde karşılaştırmanıza olanak sağlar.  

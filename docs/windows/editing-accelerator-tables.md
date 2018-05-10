@@ -1,13 +1,10 @@
 ---
-title: "Hızlandırıcı tablolarını düzenleme | Microsoft Docs"
-ms.custom: 
+title: Hızlandırıcı tablolarını düzenleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.accelerator
 dev_langs:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - accelerator tables [C++], editing
 - keyboard shortcuts [C++], editing in an accelerator table
 ms.assetid: 56e24efb-d06b-4ed9-8915-1f99f725e247
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ebcc6be49392f0c83b5c298f3208e74c63d6c95c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7e1f20e6e50fad1f77e495fb47c62b162524cc72
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="editing-accelerator-tables"></a>Hızlandırıcı Tablolarını Düzenleme
 Visual C++'da, yerinde'nın Hızlandırıcı Düzenleyicisi'nde doğrudan düzenleyerek Hızlandırıcı tablosunu düzenleyebilirsiniz.  

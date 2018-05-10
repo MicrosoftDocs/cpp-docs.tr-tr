@@ -1,12 +1,9 @@
 ---
-title: "Iresourcemanager yapısı | Microsoft Docs"
-ms.custom: 
+title: Iresourcemanager yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - IResourceManager
@@ -23,17 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - IResourceManager structure
 ms.assetid: 3dd5ec2c-fe53-4121-ae77-1bc1d1167ff4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d309e057a8f829b11cc97ad60f3f5d56ff7ecaff
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: afd87a71c8f5d41e38f6a1b18be96a7bab8f3bb8
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="iresourcemanager-structure"></a>IResourceManager Yapısı
 Eşzamanlılık Çalışma zamanı kaynak yöneticisi için bir arabirim. Bu, zamanlayıcılar Resource Manager ile iletişim kurmak arabirimidir.  
@@ -57,10 +52,10 @@ struct IResourceManager;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Iresourcemanager::createnodetopology](#createnodetopology)|Yalnızca hata ayıklama içinde mevcut çalışma zamanı derlemeleri, bu yöntem kaynak yapılandırma eşleşen gerçek donanım gerektirmeden donanım topolojileri değişen üzerinde Yöneticisi sınama kolaylaştırmak için tasarlanmış bir test kancası. İle perakende yapıları çalışma zamanının bu yöntem herhangi bir eylem gerçekleştirmeden döndürür.|  
-|[IResourceManager::GetAvailableNodeCount](#getavailablenodecount)|Resource Manager kullanılabilir düğüm sayısını döndürür.|  
-|[IResourceManager::GetFirstNode](#getfirstnode)|İlk düğüm, kaynak yöneticisi tarafından tanımlanan numaralandırma sırada döndürür.|  
+|[Iresourcemanager::getavailablenodecount](#getavailablenodecount)|Resource Manager kullanılabilir düğüm sayısını döndürür.|  
+|[Iresourcemanager::getfirstnode](#getfirstnode)|İlk düğüm, kaynak yöneticisi tarafından tanımlanan numaralandırma sırada döndürür.|  
 |[Iresourcemanager::Reference](#reference)|Resource Manager örneğinde başvurusu sayısını artırır.|  
-|[IResourceManager::RegisterScheduler](#registerscheduler)|Bir zamanlayıcı Resource Manager ile kaydeder. Zamanlayıcı kaydedildikten sonra Kaynak Yöneticisi'ni kullanarak ile iletişim kurmanız gerekir `ISchedulerProxy` döndürüldü arabirim.|  
+|[Iresourcemanager::registerscheduler](#registerscheduler)|Bir zamanlayıcı Resource Manager ile kaydeder. Zamanlayıcı kaydedildikten sonra Kaynak Yöneticisi'ni kullanarak ile iletişim kurmanız gerekir `ISchedulerProxy` döndürüldü arabirim.|  
 |[Iresourcemanager::Release](#release)|Başvuru sayım Resource Manager örneğinde azaltır. Kaynak Yöneticisi, başvuru sayımı moduna alındığında yok `0`.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -103,7 +98,7 @@ virtual void CreateNodeTopology(
   
  [invalid_operation](invalid-operation-class.md) diğer zamanlayıcılar işleminde varken bu yöntemi çağrıldıysa atılır.  
   
-##  <a name="getavailablenodecount"></a>  IResourceManager::GetAvailableNodeCount Method  
+##  <a name="getavailablenodecount"></a>  Iresourcemanager::getavailablenodecount yöntemi  
  Resource Manager kullanılabilir düğüm sayısını döndürür.  
   
 ```

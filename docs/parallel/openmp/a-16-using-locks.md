@@ -1,27 +1,22 @@
 ---
 title: Kilitleri kullanarak A.16 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 873bf32b-6cfe-4ce1-b994-bef80b50f399
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 612abe97de27b179f710b2b09811535829885c5f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: db55a8e562e0b1ae72038128a035d2cdabcd3e86
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="a16---using-locks"></a>A.16   Kilitleri Kullanma
 Aşağıdaki örnekte, (için [bölüm 3.2](../../parallel/openmp/3-2-lock-functions.md) sayfasında 41) kilit işlevleri için bağımsız değişken türü olmalıdır Not `omp_lock_t`, ve bunu temizlemek için gerek yoktur.  Kilit işlevleri ilk kritik bölüm girişe beklenirken boşta ancak ikinci giriş için beklenirken diğer iş yapmak için iş parçacığı neden.  `omp_set_lock` İşlevi blokları, ancak `omp_test_lock` işlevi desteklemez, iş yapılması skip() içinde izin verme.  

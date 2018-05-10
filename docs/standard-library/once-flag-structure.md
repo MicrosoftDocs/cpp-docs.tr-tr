@@ -2,28 +2,23 @@
 title: once_flag yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - mutex/std::once_flag
 dev_langs:
 - C++
 ms.assetid: 71bfb88d-ca8c-4082-a6e1-ff52151e8629
-caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 249207d8723318c1a11760c512f3b88f13c97266
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: f8a8d28f19e32988bfa179642a87e880413bb0ff
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="onceflag-structure"></a>once_flag Yapısı
 

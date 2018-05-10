@@ -1,12 +1,9 @@
 ---
-title: "float_4 sınıfı | Microsoft Docs"
-ms.custom: 
+title: float_4 sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::float_4::get_wyxz
@@ -277,17 +274,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 10f92170-e58c-4afc-8198-fc5778d56038
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f4e168215270cca2112efa43b7faa225b972c34
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: f5420cbaf6710f12852575926fc6280e1a33ce66
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="float4-class"></a>float_4 Sınıfı
 Dört float kısa bir vektör temsil eder.  
@@ -310,7 +305,7 @@ class float_4;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[float_4 Constructor](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
+|[float_4 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -460,7 +455,7 @@ class float_4;
 |float_4::operator-||  
 |float_4::operator--||  
 |float_4::operator*=||  
-|float_4::operator/=||  
+|float_4::operator ve =||  
 |float_4::operator++||  
 |float_4::operator+=||  
 |float_4::operator=||  
@@ -501,10 +496,10 @@ class float_4;
 |float_4::bg||  
 |float_4::bga||  
 |float_4::bgar||  
-|float_4::bgr||  
+|float_4::BGR||  
 |float_4::bgra||  
 |float_4::br||  
-|float_4::bra||  
+|float_4::BRA||  
 |float_4::brag||  
 |float_4::brg||  
 |float_4::brga||  
@@ -519,9 +514,9 @@ class float_4;
 |float_4::gbar||  
 |float_4::gbr||  
 |float_4::gbra||  
-|float_4::gr||  
-|float_4::gra||  
-|float_4::grab||  
+|float_4::Gr||  
+|float_4::Gra||  
+|float_4::Grab||  
 |float_4::grb||  
 |float_4::grba||  
 |float_4::r||  
@@ -542,7 +537,7 @@ class float_4;
 |float_4::rgba||  
 |float_4::w||  
 |float_4::wx||  
-|float_4::wxy||  
+|float_4::WXY||  
 |float_4::wxyz||  
 |float_4::wxz||  
 |float_4::wxzy||  

@@ -1,12 +1,9 @@
 ---
-title: "array sınıfı | Microsoft Docs"
-ms.custom: 
+title: array sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - array
@@ -31,17 +28,15 @@ dev_langs:
 helpviewer_keywords:
 - array class
 ms.assetid: 0832b6c1-40f0-421d-9104-6b1baa0c63a7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a8b7fa960fab118f527d12553725af794db3f0d
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: d0a7d063d5e57d77735a33eac8ec944d41032fea
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="array-class"></a>array Sınıfı
 Hızlandırıcı için veri taşımak için kullanılan bir veri kapsayıcısını temsil eder.  
@@ -67,7 +62,7 @@ friend class array;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Array Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `array` sınıfı.|  
-|[~array Destructor](#dtor)|Bozar `array` nesnesi.|  
+|[~ array yok Edicisi](#dtor)|Bozar `array` nesnesi.|  
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
@@ -88,7 +83,7 @@ friend class array;
 |----------|-----------------|  
 |[işleç std::vector&lt;value_type&gt;](#operator_vec)|Kullanan `copy(*this, vector)` örtük olarak bir std dönüştürme için::[vektör](../../../standard-library/vector-class.md) nesnesi.|  
 |[operator()](#operator_call)|Parametrelerle belirtilen öğenin değerini döndürür.|  
-|[operator[]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|  
+|[[] işleci](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|  
 |[operator=](#operator_eq)|Belirtilen içeriğini kopyalar `array` bunu nesnesine.|  
   
 ### <a name="public-constants"></a>Genel sabitler  
@@ -104,7 +99,7 @@ friend class array;
 |[accelerator_view](#accelerator_view)|Alır [accelerator_view](accelerator-view-class.md) dizi burada ayrılır konumu temsil eden nesne. Bu özellik yalnızca CPU üzerinde erişilebilir.|  
 |[associated_accelerator_view](#associated_accelerator_view)|İkinci alır [accelerator_view](accelerator-view-class.md) örneği oluşturmak için bir hazırlama Oluşturucu çağrıldığında bir parametre olarak geçirilen nesne `array` nesne.|  
 |[cpu_access_type](#cpu_access_type)|Alır [access_type](concurrency-namespace-enums-amp.md#access_type) CPU depolama dizisinin nasıl erişebileceğinizi temsil eder.|  
-|[extent](#extent)|Dizi şeklini tanımlar ölçüde alır.|  
+|[Kapsam](#extent)|Dizi şeklini tanımlar ölçüde alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Türü `array<T,N>` yoğun ve normal temsil eder (Basit değil) *N*-Hızlandırıcı veya CPU gibi belirli bir konumda bulunan boyutlu bir dizi. Dizideki öğeler veri türünde `T`, hedef Hızlandırıcı ile uyumlu bir türde olması gerekir. Rağmen derece `N`, (, dizi türü bir parçasıdır ve statik olarak belirlenir, dizi kapsamını çalışma zamanı tarafından belirlenir ve sınıfı kullanılarak ifade `extent<N>`.  

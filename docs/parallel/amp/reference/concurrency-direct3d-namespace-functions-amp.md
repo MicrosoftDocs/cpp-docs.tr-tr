@@ -2,9 +2,6 @@
 title: CONCURRENCY::Direct3D ad alanı işlevleri (AMP) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - amp/Concurrency::direct3d::abs
@@ -27,30 +24,28 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 28943b62-52c9-42dc-baf1-ca7b095c1a19
-caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b200ce8329c10fe2257ca3ce9ca8cb61125390fc
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: 57015cc84053216e76f3459170c3dde9a26bb43c
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="concurrencydirect3d-namespace-functions-amp"></a>CONCURRENCY::Direct3D ad alanı işlevleri (AMP)
 ||||  
 |-|-|-|  
-|[Abs](#abs)|[clamp](#clamp)|[countbits](#countbits)|
+|[Abs](#abs)|[CLAMP](#clamp)|[countbits](#countbits)|
 |[create_accelerator_view](#create_accelerator_view)|||
 |[d3d_access_lock](#d3d_access_lock)|[d3d_access_try_lock](#d3d_access_try_lock)|[d3d_access_unlock](#d3d_access_unlock)|  
 |[firstbithigh](#firstbithigh)|[firstbitlow](#firstbitlow)|[get_buffer](#get_buffer)|  
 |[imax](#imax)|[imin](#imin)|[is_timeout_disabled](#is_timeout_disabled)|  
-|[mad](#mad)|[make_array](#make_array)|[noise](#noise)|  
+|[mad](#mad)|[make_array](#make_array)|[gürültü](#noise)|  
 |[radyan cinsinden](#radians)|[rcp](#rcp)|[reversebits](#reversebits)|  
 |[saturate](#saturate)|[sign](#sign)|[smoothstep](#smoothstep)|  
-|[step](#step)|[umax](#umax)|[umin](#umin)|  
+|[Adım](#step)|[umax](#umax)|[umin](#umin)|  
 
 ## <a name="requirements"></a>Gereksinimler
 **Başlık:** amp.h **Namespace:** eşzamanlılık
@@ -293,7 +288,7 @@ bool __cdecl is_timeout_disabled(const accelerator_view& _Accelerator_view);
 ### <a name="return-value"></a>Dönüş Değeri  
  Zaman aşımı için belirtilen accelerator_view devre dışı olup olmadığını belirten bir boolean bayrak.  
   
-##  <a name="mad"></a>  mad  
+##  <a name="mad"></a>  MAD  
  Birinci ve ikinci belirtilen bağımsız değişken çarpımını hesaplar, sonra üçüncü belirtilen bağımsız değişken ekler.  
   
 ```  

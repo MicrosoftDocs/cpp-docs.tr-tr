@@ -1,13 +1,10 @@
 ---
-title: "Görüntüleme veya gizleme (simgeler için görüntü Düzenleyicisi) araç | Microsoft Docs"
-ms.custom: 
+title: Görüntüleme veya gizleme (simgeler için görüntü Düzenleyicisi) araç | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - toolbars [C++], showing
 - toolbars [C++], hiding
 ms.assetid: 78d25184-a8f4-457f-aa6f-069a5a27bcf8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 85927d747735bcf66251a5112775cc5a67214cfb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d00610d4366f76e07b6f62b5a65416bf37182e2a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="displaying-or-hiding-the-toolbar-image-editor-for-icons"></a>Araç Çubuğunu Görüntüleme veya Gizleme (Simgeler İçin Görüntü Düzenleyicisi)
 Çizim Araçları çoğunu kullanılabilir olduğundan [klavye](../windows/accelerator-keys-image-editor-for-icons.md), görüntü Düzenleyicisi araç çubuğunu gizlemek bazen yararlıdır.  

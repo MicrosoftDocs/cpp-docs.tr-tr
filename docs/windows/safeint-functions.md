@@ -1,30 +1,25 @@
 ---
-title: "SafeInt işlevleri | Microsoft Docs"
-ms.custom: 
+title: SafeInt işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - functions, SafeInt
 ms.assetid: fdc208e5-5d8a-41a9-8271-567fd438958d
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6ae482b7f58d64a46b82b32c6c6d62d7f69f0dce
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 97edd25abca3c9e80a35745165eedc93cc13a9b9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="safeint-functions"></a>SafeInt İşlevleri
 SafeInt Kitaplığı örneğini oluşturmadan kullanabileceğiniz birçok işlevleri sağlar [SafeInt sınıfı](../windows/safeint-class.md). Tek bir matematik işlemi tamsayı Taşma alanındaki korumak istiyorsanız, bu işlevler kullanabilirsiniz. Birden çok matematik işlemleri korumak istiyorsanız, oluşturmalısınız `SafeInt` nesneleri. Oluşturmak için daha verimlidir `SafeInt` birden çok kez bu işlevler kullanımı çok nesneleri.  
@@ -40,7 +35,7 @@ SafeInt Kitaplığı örneğini oluşturmadan kullanabileceğiniz birçok işlev
 |[SafeAdd](../windows/safeadd.md)|İki sayı ekleyen ve taşma karşı korur.|  
 |[SafeCast](../windows/safecast.md)|Başka bir tür parametresi bir tür çevirir.|  
 |[SafeDivide](../windows/safedivide.md)|İki sayıyı böler ve sıfıra bölme karşı korur.|  
-|[SafeEquals](../windows/safeequals.md), [SafeGreaterThan](../windows/safegreaterthan.md), [SafeGreaterThanEquals](../windows/safegreaterthanequals.md), [SafeLessThan](../windows/safelessthan.md), [SafeLessThanEquals](../windows/safelessthanequals.md), [SafeNotEquals](../windows/safenotequals.md)|İki sayı karşılaştırır. Bu işlevler türlerini değiştirmeden numaraları iki farklı türde karşılaştırmanıza olanak sağlar.|  
+|[SafeEquals](../windows/safeequals.md), [SafeGreaterThan](../windows/safegreaterthan.md), [SafeGreaterThanEquals](../windows/safegreaterthanequals.md), [SafeLessThan](../windows/safelessthan.md), [SafeLessThanEquals](../windows/safelessthanequals.md), [ SafeNotEquals](../windows/safenotequals.md)|İki sayı karşılaştırır. Bu işlevler türlerini değiştirmeden numaraları iki farklı türde karşılaştırmanıza olanak sağlar.|  
 |[SafeModulus](../windows/safemodulus.md)|İki sayı üzerinde modulus işlemi gerçekleştirir.|  
 |[SafeMultiply](../windows/safemultiply.md)|İki sayı birlikte çarpar ve taşma karşı korur.|  
 |[SafeSubtract](../windows/safesubtract.md)|İki sayı çıkarır ve taşma karşı korur.|  

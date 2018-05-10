@@ -1,12 +1,9 @@
 ---
-title: "source_block sınıfı | Microsoft Docs"
-ms.custom: 
+title: source_block sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - source_block
@@ -42,17 +39,15 @@ dev_langs:
 helpviewer_keywords:
 - source_block class
 ms.assetid: fbdd4146-e8d0-42e8-b714-fe633f69ffbf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61b79d716aa836c14e18d9c0ac20210526b7fd52
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 64b9873ef6da00b4ef0fb03e43f61fa704484389
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="sourceblock-class"></a>source_block Sınıfı
 `source_block` Sınıfı, yalnızca kaynak blokları için Özet temel sınıf. Sınıf iyi olarak ortak hata denetimleri temel bağlantı yönetimi işlevselliği sağlar.  
@@ -90,13 +85,13 @@ class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[accept](#accept)|Bu tarafından sunulan bir iletiyi kabul `source_block` çağırana sahipliğini aktarma nesnesi.|  
+|[Kabul et](#accept)|Bu tarafından sunulan bir iletiyi kabul `source_block` çağırana sahipliğini aktarma nesnesi.|  
 |[acquire_ref](#acquire_ref)|Bu başvuru sayısı edinir `source_block` silinmesini önlemek için nesne.|  
 |[Kullanma](#consume)|Daha önce bu tarafından sunulan bir ileti tüketir `source_block` nesne ve başarıyla çağırana sahipliğini aktarma hedef tarafından ayrılmış.|  
 |[link_target](#link_target)|Hedef blok için bağlantılar `source_block` nesnesi.|  
-|[release](#release)|Bir önceki başarılı ileti ayırma serbest bırakır.|  
+|[Sürüm](#release)|Bir önceki başarılı ileti ayırma serbest bırakır.|  
 |[release_ref](#release_ref)|Serbest başvuru sayısı bu `source_block` nesnesi.|  
-|[reserve](#reserve)|Daha önce bu tarafından sunulan bir ileti ayırır `source_block` nesnesi.|  
+|[ayırma](#reserve)|Daha önce bu tarafından sunulan bir ileti ayırır `source_block` nesnesi.|  
 |[unlink_target](#unlink_target)|Hedef blok bu bağlantıyı keser `source_block` nesnesi.|  
 |[unlink_targets](#unlink_targets)|Tüm hedef blokları bu bağlantıyı keser `source_block` nesnesi. (Geçersiz kılmaları [Isource::unlink_targets](isource-class.md#unlink_targets).)|  
   
@@ -200,7 +195,7 @@ virtual void async_send(_Inout_opt_ message<_Target_type>* _Msg);
  `_Msg`  
  Bir işaretçi bir `message` zaman uyumsuz olarak göndermek için nesne.  
   
-##  <a name="consume">Kullanma</a> 
+##  <a name="consume"></a> Kullanma 
 
  Daha önce bu tarafından sunulan bir ileti tüketir `source_block` nesne ve başarıyla çağırana sahipliğini aktarma hedef tarafından ayrılmış.  
   
@@ -245,7 +240,7 @@ virtual message<_Target_type>* consume_message(runtime_object_identity _MsgId) =
 ### <a name="remarks"></a>Açıklamalar  
  Benzer şekilde `accept`, her zaman için yapılan bir çağrı tarafından öncesinde ancak `reserve`.  
   
-##  <a name="enable_batched_processing">enable_batched_processing</a> 
+##  <a name="enable_batched_processing"></a> enable_batched_processing 
 
  Bu bloğu için işleme toplu hale olanak tanır.  
   
@@ -293,7 +288,7 @@ virtual void link_target(_Inout_ ITarget<_Target_type>* _PTarget);
 virtual void link_target_notification(_Inout_ ITarget<_Target_type> *);
 ```  
   
-##  <a name="process_input_messages">process_input_messages</a> 
+##  <a name="process_input_messages"></a> process_input_messages 
 
  İşlem iletileri girin. Bu yalnızca source_block türetilen yayılması blokları kullanışlıdır  
   
@@ -432,7 +427,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId) = 0;
 virtual void resume_propagation() = 0;
 ```  
   
-##  <a name="ctor">source_block</a> 
+##  <a name="ctor"></a> source_block 
 
  Oluşturan bir `source_block` nesnesi.  
   
@@ -495,7 +490,7 @@ virtual void unlink_target_notification(_Inout_ ITarget<_Target_type>* _PTarget)
 virtual void unlink_targets();
 ```  
   
-##  <a name="wait_for_outstanding_async_sends">wait_for_outstanding_async_sends</a> 
+##  <a name="wait_for_outstanding_async_sends"></a> wait_for_outstanding_async_sends 
 
  Tamamlamak tüm zaman uyumsuz yayma bekler. Bu yayılması özgü döndürme bekleme ileti blokları yıkıcılarda tüm zaman uyumsuz yayma bloğu yok etme önce bitirmek için zamana sahip olduğunuzdan emin olmak için kullanılır.  
   

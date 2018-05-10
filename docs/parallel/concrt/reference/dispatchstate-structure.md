@@ -1,12 +1,9 @@
 ---
-title: "DispatchState yapısı | Microsoft Docs"
-ms.custom: 
+title: DispatchState yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - DispatchState
@@ -20,17 +17,15 @@ dev_langs:
 helpviewer_keywords:
 - DispatchState structure
 ms.assetid: 8c52546e-1650-48a0-985f-7e4a0fc26a90
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76deac0daa3a8bce2880b2cc9afda0faae263558
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 89d3b62248d305e6acebdc8a03b7ef48c2910b28
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="dispatchstate-structure"></a>DispatchState Yapısı
 `DispatchState` Yapısı durumuna aktarmak için kullanılır `IExecutionContext::Dispatch` yöntemi. Hangi koşullarda açıklar `Dispatch` yöntemi çağrıldığında bir `IExecutionContext` arabirimi.  

@@ -2,11 +2,8 @@
 title: '&lt;hash_map&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - <hash_map>
@@ -17,14 +14,13 @@ helpviewer_keywords:
 - hash_map header
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 177afaca1ddad1145c9465dc6b71863c846b6b5c
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: e0e3948e8697825af6cdd785117647943b33bac0
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="lthashmapgt"></a>&lt;hash_map&gt;
 

@@ -2,11 +2,8 @@
 title: front_insert_iterator sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - iterator/std::front_insert_iterator
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - std::front_insert_iterator [C++], container_type
 - std::front_insert_iterator [C++], reference
 ms.assetid: a9a9c075-136a-4419-928b-c4871afa033c
-caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b26f70694e2e0e98ca7b575d83596b6c0d17c658
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: aacb6fda870f698bef23184912fc3becfd6c7e2d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="frontinsertiterator-class"></a>front_insert_iterator Sınıfı
 

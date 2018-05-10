@@ -1,12 +1,9 @@
 ---
-title: "concurrent_unordered_map sınıfı | Microsoft Docs"
-ms.custom: 
+title: concurrent_unordered_map sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - concurrent_unordered_map
@@ -23,17 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - concurrent_unordered_map class
 ms.assetid: b2d879dd-87ef-4af9-a266-a5443fd538b8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d37feb147cc0604081479bfae0afca933c251bc8
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 932cfe232b07a9020af450ad33bb34101827ac79
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="concurrentunorderedmap-class"></a>concurrent_unordered_map Sınıfı
 `concurrent_unordered_map` Sınıftır türündeki öğeler değişen uzunluk dizisi denetleyen bir eşzamanlılık güvenli kapsayıcı `std::pair<const K, _Element_type>`. Sıra sağlayan eşzamanlılık güvenli bir şekilde temsil edilen ekleme, öğe erişim, yineleyici erişim ve yineleyici geçişi işlemleri.  
@@ -110,7 +105,7 @@ template <typename K,
 |----------|-----------------|  
 |[konumundaki](#at)|Fazla Yüklendi. Bir öğedeki bulur bir `concurrent_unordered_map` belirtilen anahtar değerine sahip... Bu yöntem eşzamanlılık güvenlidir.|  
 |[hash_function](#hash_function)|Depolanan karma işlevi nesnesini alır.|  
-|[insert](#insert)|Fazla Yüklendi. Öğelerine ekler `concurrent_unordered_map` nesnesi.|  
+|[Ekle](#insert)|Fazla Yüklendi. Öğelerine ekler `concurrent_unordered_map` nesnesi.|  
 |[key_eq](#key_eq)|Saklı eşitlik karşılaştırması işlev nesnesi alır.|  
 |[Değiştirme](#swap)|İki içeriğini değiştirir `concurrent_unordered_map` nesneleri. Bu yöntem eşzamanlılık uyumlu değil.|  
 |[unsafe_erase](#unsafe_erase)|Fazla Yüklendi. Öğelerden kaldırır `concurrent_unordered_map` belirtilen konumlarda. Bu yöntem eşzamanlılık uyumlu değil.|  
@@ -119,7 +114,7 @@ template <typename K,
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[operator[]](#operator_at)|Fazla Yüklendi. Belirtilen anahtarı içeren bir öğe bulur veya ekler. Bu yöntem eşzamanlılık güvenlidir.|  
+|[[] işleci](#operator_at)|Fazla Yüklendi. Belirtilen anahtarı içeren bir öğe bulur veya ekler. Bu yöntem eşzamanlılık güvenlidir.|  
 |[operator=](#operator_eq)|Fazla Yüklendi. İçeriği başka bir atar `concurrent_unordered_map` bu bir nesne. Bu yöntem eşzamanlılık uyumlu değil.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -137,7 +132,7 @@ template <typename K,
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="at">konumundaki</a> 
+##  <a name="at"></a> konumundaki 
 
  Bir öğedeki bulur bir `concurrent_unordered_map` belirtilen anahtar değerine sahip... Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -365,7 +360,7 @@ allocator_type get_allocator() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Eşzamanlı bu kapsayıcı için saklı ayırıcısı nesnesi.  
   
-##  <a name="hash_function">hash_function</a> 
+##  <a name="hash_function"></a> hash_function 
 
  Depolanan karma işlevi nesnesini alır.  
   
@@ -566,7 +561,7 @@ size_type size() const;
 ### <a name="remarks"></a>Açıklamalar  
  Eşzamanlı eklemeleri varlığında dönüş değeri bile okumadan önce hemen bu işlev çağrıldıktan sonra eş zamanlı kapsayıcı öğe sayısı değişebilir.  
   
-##  <a name="swap">Değiştirme</a> 
+##  <a name="swap"></a> Değiştirme 
 
  İki içeriğini değiştirir `concurrent_unordered_map` nesneleri. Bu yöntem eşzamanlılık uyumlu değil.  
   

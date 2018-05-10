@@ -1,12 +1,9 @@
 ---
-title: "Kuralları | Microsoft Docs"
-ms.custom: 
+title: Kuralları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 dev_langs:
 - C++
@@ -14,17 +11,15 @@ helpviewer_keywords:
 - preprocessor
 - preprocessor, conventions
 ms.assetid: 469ce448-dc6c-4d0e-ba2b-e2e7a10155e1
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b41a6791f36ee6e323ee77c738b2f79884f911d0
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: ae91b383159a6de7e28507f9e272e5ea60093e0e
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="conventions"></a>Kurallar
 Kurallar, sözdiziminin farklı bileşenleri için farklı yazı tipi öznitelikleri kullanır. Simgeler ve yazı tipleri aşağıdaki gibidir:  

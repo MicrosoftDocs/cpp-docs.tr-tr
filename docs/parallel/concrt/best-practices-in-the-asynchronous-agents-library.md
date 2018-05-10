@@ -1,13 +1,10 @@
 ---
-title: "En iyi uygulamalar zaman uyumsuz aracılar Kitaplığı'nda | Microsoft Docs"
-ms.custom: 
+title: En iyi uygulamalar zaman uyumsuz aracılar Kitaplığı'nda | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,24 +13,22 @@ helpviewer_keywords:
 - Asynchronous Agents Library, practices to avoid
 - practices to avoid, Asynchronous Agents Library
 ms.assetid: 85f52354-41eb-4b0d-98c5-f7344ee8a8cf
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8d4b52839675334ab343adf48790bdce390dd5e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8f1b20342ad6bb64c653a211f9af2fb9e9130286
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="best-practices-in-the-asynchronous-agents-library"></a>Zaman Uyumsuz Aracılar Kitaplığı'ndaki En İyi Yöntemler
 Bu belge, zaman uyumsuz aracılar kitaplığı etkili kullanımını sağlamak açıklar. Aracılar Kitaplığı aktör tabanlı programlama modeli ve görevleri ardışık düzen ve parçalı veri akışı için geçirme işlemi iletisi yükseltir.  
   
  Aracılar Kitaplığı hakkında daha fazla bilgi için bkz: [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md).  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Bu belgede aşağıdaki bölümler yer alır:  
   
 - [Ayırma durumu için aracıları kullanma](#isolation)  
@@ -46,7 +41,7 @@ Bu belge, zaman uyumsuz aracılar kitaplığı etkili kullanımını sağlamak a
   
 - [Shared_ptr bir veri ağ zaman sahipliği olduğu tanımsız içinde kullanma](#ownership)  
   
-##  <a name="isolation"></a>Ayırma durumu için aracıları kullanma  
+##  <a name="isolation"></a> Ayırma durumu için aracıları kullanma  
  Aracılar Kitaplığı, zaman uyumsuz bir ileti geçirme mekanizma aracılığıyla yalıtılmış bileşenleri bağlanmanıza izin vererek paylaşılan durum alternatifleri sağlar. İç durumlarına diğer bileşenler'den ayrı tuttuğunuzda zaman uyumsuz aracılar en etkili. Durum yalıtarak birden çok bileşen genellikle paylaşılan veri üzerinde herhangi bir işlem yapmayacak. Durum yalıtım paylaşılan bellek üzerinde Çekişme azalttığı ölçeklendirmek uygulamanızı etkinleştirebilirsiniz. Bileşenleri Paylaşılan verilere erişimi eşitlemeye sahip olmadığınızdan durum yalıtım ayrıca kilitlenme ve yarış koşullar olasılığını azaltır.  
   
  Genellikle veri üyeleri tutarak bir aracı durumda yalıtmak `private` veya `protected` Aracısı sınıfının ve durum değişikliklerini iletişim kurmak için ileti arabelleklerinin kullanarak bölümler. Aşağıdaki örnekte gösterildiği `basic_agent` türeyen sınıf [concurrency::agent](../../parallel/concrt/reference/agent-class.md). `basic_agent` Sınıfı dış bileşenleriyle iletişim kurmak için iki ileti arabelleklerinin kullanır. Bir ileti arabelleği gelen iletileri tutan; bir ileti arabelleği giden iletiler tutar.  
@@ -57,7 +52,7 @@ Bu belge, zaman uyumsuz aracılar kitaplığı etkili kullanımını sağlamak a
   
  [[Üst](#top)]  
   
-##  <a name="throttling"></a>Veri ardışık düzeninde ileti sayısını sınırlamak için azaltma mekanizmasını kullanın  
+##  <a name="throttling"></a> Veri ardışık düzeninde ileti sayısını sınırlamak için azaltma mekanizmasını kullanın  
  Birçok ileti arabelleği türleri gibi [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md), iletileri sınırsız sayıda tutabilir. İleti üreticisi iletileri için veri ardışık tüketici bu iletiler işleyebileceğinden daha hızlı gönderdiğinde, uygulama düşük bellek veya bellek yetersiz durumunu girebilirsiniz. Örneğin, bir semafor azaltma bir mekanizma veri ardışık düzeninde aynı anda etkin olan iletilerin sayısını sınırlamak için kullanabilirsiniz.  
   
  Aşağıdaki temel örnek semafor veri ardışık düzeninde ileti sayısını sınırlamak için nasıl kullanılacağını gösterir. Veri kanalı kullanır [concurrency::wait](reference/concurrency-namespace-functions.md#wait) en az 100 milisaniyede alan bir işlem benzetimini yapmak için işlevi. Gönderenin iletileri tüketici bu iletileri işleyebileceğinden daha hızlı oluşturduğundan, bu örnek tanımlar `semaphore` etkin ileti sayısını sınırlamak uygulama etkinleştirmek için sınıf.  
@@ -72,14 +67,14 @@ Bu belge, zaman uyumsuz aracılar kitaplığı etkili kullanımını sağlamak a
   
  [[Üst](#top)]  
   
-##  <a name="fine-grained"></a>Hassas iş veri ardışık düzeninde gerçekleştirme  
+##  <a name="fine-grained"></a> Hassas iş veri ardışık düzeninde gerçekleştirme  
  Veri ardışık düzen tarafından gerçekleştirilen işi oldukça parçalı Aracılar Kitaplığı en yararlı olur. Örneğin, bir uygulama bileşeni bir dosya veya bir ağ bağlantısı veri okumak ve bazen bu verileri başka bir bileşen Gönder. Aracılar Kitaplığı iletilerini dağıtmak için kullandığı protokolü tarafından sağlanan görev paralel yapıları'den daha çok yüke sahip ileti geçirme mekanizması neden [paralel Desen kitaplığı](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL). Bu nedenle, bir veri ardışık düzen tarafından gerçekleştirilen iş bu yükünü dengelemek yeterince uzun olduğundan emin olun.  
   
  Görevleri parçalı olduğunda bir veri ardışık en etkili olsa da, her veri ardışık düzen aşaması PPL yapıları görev grupları ve paralel algoritmalar gibi daha hassas iş gerçekleştirmek için kullanabilirsiniz. Her işleme aşamada hassas paralellik kullanan parçalı verileri ağ bir örnek için bkz: [izlenecek yol: görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).  
   
  [[Üst](#top)]  
   
-##  <a name="large-payloads"></a>Büyük ileti yükü değer geçmeyin  
+##  <a name="large-payloads"></a> Büyük ileti yükü değer geçmeyin  
 
  Bazı durumlarda, çalışma zamanı başka bir ileti arabelleğe bir ileti arabelleğinden geçirmeden her iletinin bir kopyasını oluşturur. Örneğin, [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) sınıfı her hedeflerine aldığı her iletinin bir kopyasını sunar. İleti geçirme işlevleri gibi kullandığınızda çalışma zamanı ileti verilerin bir kopyasını da oluşturur. [concurrency::send](reference/concurrency-namespace-functions.md#send) ve [concurrency::receive](reference/concurrency-namespace-functions.md#receive) iletileri yazmak ve bir iletiden iletileri okumak için arabellek. Bu mekanizma eşzamanlı olarak paylaşılan veri yazma riski ortadan kaldırmanıza yardımcı olmakla birlikte, ileti yükü nispeten daha büyük olduğunda zayıf bellek performansı yol açabilir.  
   
@@ -100,7 +95,7 @@ took 47ms.
   
  [[Üst](#top)]  
   
-##  <a name="ownership"></a>Shared_ptr bir veri ağ zaman sahipliği olduğu tanımsız içinde kullanma  
+##  <a name="ownership"></a> Shared_ptr bir veri ağ zaman sahipliği olduğu tanımsız içinde kullanma  
  Bir ileti geçirme ardışık düzen veya ağ üzerinden işaretçisi ileti gönderirken genellikle ağ ön her ileti için bellek tahsis ve ağ ucunda belleğin boş. Bu mekanizma sık iyi çalışmasına rağmen zor veya kullanmak mümkün olduğu durumlar vardır. Örneğin, veri ağı birden çok uç düğümleri içeren bir durum düşünün. Bu durumda, iletiler için belleği boşaltmak için açık konum yok.  
   
  Bu sorunu çözmek için bir mekanizma, örneğin, kullanabilirsiniz [std::shared_ptr](../../standard-library/shared-ptr-class.md), birden çok bileşenleri tarafından sahibi bir işaretçi sağlar. Zaman en son `shared_ptr` bir kaynağın sahibi nesne yok, kaynak de serbest bırakılır.  

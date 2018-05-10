@@ -1,13 +1,10 @@
 ---
-title: "(Simgeler için görüntü Düzenleyicisi) seçimdeki renkleri ters çevirme | Microsoft Docs"
-ms.custom: 
+title: (Simgeler için görüntü Düzenleyicisi) seçimdeki renkleri ters çevirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.image.color
 dev_langs:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - images [C++], colors
 - colors [C++], inverting
 ms.assetid: ec8c724c-6595-4ae8-8893-56e40c14033e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 835c6e8824c29b46fa32bf219518c6d1dc64fa39
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9f29c9698a14d5cd8773d12a1719614e19ca67c0
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="inverting-the-colors-in-a-selection-image-editor-for-icons"></a>Seçimdeki Renkleri Ters Çevirme (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi görüntüyü ters renklerle nasıl görüneceği anlayabilirsiniz şekilde görüntünün seçili bölümündeki renkleri ters çevirme için kullanışlı bir yol sağlar.  

@@ -1,12 +1,9 @@
 ---
-title: "ComPtrRefBase::operator IUnknown ** işleci | Microsoft Docs"
-ms.custom: 
+title: ComPtrRefBase::operator IUnknown ** işleci | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::Details::ComPtrRefBase::operator IUnknown**
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - operator IUnknown** operator
 ms.assetid: c2950abf-a7aa-480a-ba41-615703e7f931
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 04eaa2992c74b4cb46954ac73aa7b5a8ae735f82
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 816c71d2c14b373e63de2b2c8725eb87b40d91e7
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="comptrrefbaseoperator-iunknown-operator"></a>ComPtrRefBase::operator IUnknown** İşleci
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  

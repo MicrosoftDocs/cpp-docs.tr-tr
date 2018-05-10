@@ -1,30 +1,25 @@
 ---
-title: "Nasıl yapılır: eşzamanlılık çalışma zamanı kullanmak için özel durum işleme kullanan bir OpenMP döngüsünü dönüştürme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: eşzamanlılık çalışma zamanı kullanmak için özel durum işleme kullanan bir OpenMP döngüsünü dönüştürme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - exception handling, converting from OpenMP to the Concurrency Runtime
 - converting from OpenMP to the Concurrency Runtime, exception handling
 ms.assetid: 03c28196-21ba-439e-8641-afab1c283e1a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2964c629ce8a3a83799278ac822b589992b4995
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b96273589fb4e7d7e73e7bc72da03a92d5587de8
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-convert-an-openmp-loop-that-uses-exception-handling-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için Özel Durum İşleme Kullanan bir OpenMP Döngüsünü Dönüştürme
 Bu örnek bir OpenMP dönüştürülmesi gösterilmektedir [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) döngü eşzamanlılık çalışma zamanı özel durum mekanizması işleme kullanmak için özel durum işleme gerçekleştirir.  

@@ -1,30 +1,25 @@
 ---
-title: "Öznitelik hedefleri (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: Öznitelik hedefleri (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - custom attributes, targets
 ms.assetid: b4e6e224-da77-4520-b6e6-b96846e0ebc1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bdf54706673a3679582b93448f420d4a63680dee
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0de383c6d97f12a1caecbc8fbc7063513a898f50
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="attribute-targets-c-component-extensions"></a>Öznitelik Hedefleri (C++ Bileşen Uzantıları)
 Öznitelik kullanım tanımlayıcıları öznitelik hedefleri belirtmenizi sağlar.  Her öznitelik belirli dil öğelerine uygulamak için tanımlanır. Örneğin, bir öznitelik yalnızca sınıflar ve yapılar uygulamak için tanımlanabilir.  Aşağıdaki liste, özel bir öznitelik kullanılabilmesi için olası söz dizimi öğeleri gösterir. Bu değerleri birleşimlerini (mantıksal kullanarak veya) kullanılabilir.  
@@ -33,7 +28,7 @@ ms.lasthandoff: 12/21/2017
   
  Geçerli öznitelik hedefleri listesi aşağıdadır:  
   
--   `All`(tüm yapıları için geçerlidir)  
+-   `All` (tüm yapıları için geçerlidir)  
   
     ```  
   
@@ -45,7 +40,7 @@ ms.lasthandoff: 12/21/2017
   
     ```  
   
--   `Assembly`(derleme bir bütün olarak uygulanır)  
+-   `Assembly` (derleme bir bütün olarak uygulanır)  
   
     ```  
   
@@ -57,7 +52,7 @@ ms.lasthandoff: 12/21/2017
   
     ```  
   
--   `Module`(bir modül için bir bütün olarak uygulanır)  
+-   `Module` (bir modül için bir bütün olarak uygulanır)  
   
     ```  
   

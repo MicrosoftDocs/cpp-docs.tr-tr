@@ -1,13 +1,10 @@
 ---
-title: "Diziler (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: Diziler (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - cli::array
 - details::array
@@ -21,18 +18,16 @@ helpviewer_keywords:
 - multidimensional arrays
 - arrays [C++]
 ms.assetid: 49445812-d775-4db1-a231-869598dbb955
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 343f2369260531e828ea8db27cee5e52ea18fd31
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a17649402fa6ebe9c98d768badcf36e5700f5b75
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="arrays-c-component-extensions"></a>Dizeler (C++ Bileşen Uzantıları)
 `Platform::Array<T>` Türü C + +/ CX, veya `array` anahtar sözcüğü C + +/ CLI, belirtilen tür ve ilk değer bir dizi bildirir.  
@@ -70,7 +65,7 @@ ms.lasthandoff: 12/21/2017
  `array-type`  
  Dizi değişkeni türü. Geçerli türleridir Windows çalışma zamanı sınıfları ve temel türleri, ref sınıflar ve yapılar, değer sınıfları ve yapıları ve yerel işaretçileri (`type*`).  
   
- `rank`[isteğe bağlı]  
+ `rank` [isteğe bağlı]  
  Dizi boyutları sayısı. 1 olmalıdır.  
   
  `identifier`  
@@ -79,7 +74,7 @@ ms.lasthandoff: 12/21/2017
  `initialization-type`  
  Dizi başlatma değerlerin türü. Genellikle, `array-type` ve `initialization-type` aynı türde olan. Türleri dönüştürme ise farklı olabilir ancak `initialization-type` için `array-type`— Örneğin, varsa `initialization-type` türetildiği `array-type`.  
   
- `initialization-list`[isteğe bağlı]  
+ `initialization-list` [isteğe bağlı]  
  Dizideki öğeler başlatma süslü ayraç değerleri virgülle ayrılmış listesi. Örneğin, varsa `rank-size-list` olan `(3)`, tek boyutlu dizi 3 öğelerinin bildirir `initialization list` olabilir `{1,2,3}`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -124,7 +119,7 @@ int main() {
  `array-type`  
  Dizi değişkeni türü. Geçerli türleridir Windows çalışma zamanı sınıfları ve temel türleri, ref sınıflar ve yapılar, değer sınıflar ve yapılar, yerel işaretçileri (`type*`) ve yerel POD (düz eski verileri) türleri.  
   
- `rank`[isteğe bağlı]  
+ `rank` [isteğe bağlı]  
  Dizi boyutları sayısı. Varsayılan değer 1'dir; en fazla 32'dir. Dizinin her boyut kendisini bir dizidir.  
   
  `identifier`  
@@ -136,14 +131,14 @@ int main() {
  `rank-size-list`  
  Dizideki her boyut boyutunu virgülle ayrılmış listesi. Alternatif olarak, varsa `initialization-list` parametresi belirtilirse, derleyicinin her boyut boyutunu türetme ve `rank-size-list` atlanabilir. 
   
- `initialization-list`[isteğe bağlı]  
+ `initialization-list` [isteğe bağlı]  
  Dizideki öğeler başlatma süslü ayraç değerleri virgülle ayrılmış listesi. Veya virgülle ayrılmış bir listesini iç içe geçmiş *başlatma listesi* çok boyutlu bir dizi öğeleri başlatma öğeleri.  
   
  Örneğin, varsa `rank-size-list` olan `(3)`, tek boyutlu dizi 3 öğelerinin bildirir `initialization list` olabilir `{1,2,3}`. Eğer `rank-size-list` olan `(3,2,4)`, ilk boyutu, 2 öğeleri ikinci ve üçüncü 4 öğelerinde 3 öğe üç boyutlu bir dizi bildirir `initialization-list` olabilir `{{1,2,3},{0,0},{-5,10,-21,99}}`.)  
   
 ### <a name="remarks"></a>Açıklamalar  
   
- `array`içinde [Platform, varsayılan ve cli ad alanları](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) ad alanı.  
+ `array` içinde [Platform, varsayılan ve cli ad alanları](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) ad alanı.  
   
  Standart C++ gibi bir dizi dizinlerini sıfır tabanlı ve bir dizi köşeli ayraç ([]) kullanarak alt indisli bir dizi. Standart C++, çok boyutlu bir dizi dizinlerini köşeli ayraç ([]) işleçleri her boyut için bir dizi yerine her boyut için dizinler listesinde belirtilir. Örneğin, *tanımlayıcısı*[*dizin1*, *dizin2*] yerine *tanımlayıcısı*[*dizin1*] [ *dizin2*].  
   

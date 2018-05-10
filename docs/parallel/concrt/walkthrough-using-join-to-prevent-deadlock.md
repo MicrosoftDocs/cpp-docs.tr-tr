@@ -1,13 +1,10 @@
 ---
-title: "İzlenecek yol: kilitlenmeyi önlemek için birleştirme birleştirme kullanma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: kilitlenmeyi önlemek için birleştirme birleştirme kullanma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - non-greedy joins, example
 - join class, example
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 894ff7da95f09b1aedaa8fd9d1d9b44f77017a8f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5deb501cc05c2a771b6e14d5091b1baa95f2f622
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="walkthrough-using-join-to-prevent-deadlock"></a>İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma
 Bu konuda yemek Yiyen Filozoflar sorunu nasıl kullanılacağını göstermek için kullanır. [concurrency::join](../../parallel/concrt/reference/join-class.md) uygulamanızda kilitlenmeyi önlemek için sınıf. Bir yazılım uygulamasında *kilitlenme* iki veya daha çok işlemler her bir kaynak basılı tutun ve karşılıklı olarak başka bir kaynağın serbest bırakmak başka bir işlemin tamamlanmasını beklemek oluşur.  
@@ -46,7 +41,7 @@ Bu konuda yemek Yiyen Filozoflar sorunu nasıl kullanılacağını göstermek i�
   
 - [Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Bu kılavuz aşağıdaki bölümleri içerir:  
   
 - [Yemek Yiyen Filozoflar sorunu](#problem)  
@@ -55,7 +50,7 @@ Bu konuda yemek Yiyen Filozoflar sorunu nasıl kullanılacağını göstermek i�
   
 - [Birleşim kilitlenmeyi önlemek için birleştirme kullanma](#solution)  
   
-##  <a name="problem"></a>Yemek Yiyen Filozoflar sorunu  
+##  <a name="problem"></a> Yemek Yiyen Filozoflar sorunu  
  Yemek Yiyen Filozoflar sorunu kilitlenme bir uygulamada nasıl gerçekleştiğini gösterir. Bu sorun, beş Yiyen Filozoflar bir gidiş tablosunda sit. Her filozof beslenme ve düşünüyorum arasında geçiş yapar. Her filozof ile komşu sola ve başka bir chopstick paylaşmalıdır chopstick sağındaki komşu ile. Aşağıdaki çizimde, bu düzeni gösterilir.  
   
  ![Yemek Yiyen Filozoflar sorunu](../../parallel/concrt/media/dining_philosophersproblem.png "dining_philosophersproblem")  
@@ -64,7 +59,7 @@ Bu konuda yemek Yiyen Filozoflar sorunu nasıl kullanılacağını göstermek i�
   
  [[Üst](#top)]  
   
-##  <a name="deadlock"></a>Naïve uygulama  
+##  <a name="deadlock"></a> Naïve uygulama  
  Aşağıdaki örnek yemek Yiyen Filozoflar sorunu naïve uyarlamasını gösterir. `philosopher` Türeyen sınıf [concurrency::agent](../../parallel/concrt/reference/agent-class.md), bağımsız olarak davranacak şekilde her filozof sağlar. Paylaşılan bir dizi örnek kullanır [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) her vermek için nesneleri `philosopher` nesne chopsticks çiftinin özel erişim.  
   
  Çizim, kullanımla ilgili `philosopher` sınıfı, bir filozof temsil eder. Bir `int` değişken her chopstick temsil eder. `critical_section` Nesneleri üzerinde chopsticks rest sahipleri hizmet eder. `run` Yöntemi filozof ömrünü benzetimini yapar. `think` Yöntemi düşünmeye act taklit eder ve `eat` yöntemi beslenme eylemi benzetimini yapar.  
@@ -87,7 +82,7 @@ Bu konuda yemek Yiyen Filozoflar sorunu nasıl kullanılacağını göstermek i�
   
  [[Üst](#top)]  
   
-##  <a name="solution"></a>Birleşim kilitlenmeyi önlemek için birleştirme kullanma  
+##  <a name="solution"></a> Birleşim kilitlenmeyi önlemek için birleştirme kullanma  
  Bu bölümde, ileti arabelleklerinin ve ileti geçirme işlevleri kilitlenme olasılığını ortadan kaldırmak için nasıl kullanılacağını gösterir.  
   
  Bu örnek önceki bir ilişkilendirmek için `philosopher` sınıfı değiştirir her `critical_section` kullanarak nesne bir [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) nesne ve `join` nesne. `join` Filozof chopsticks sağlayan bir arbiter nesne görür.  

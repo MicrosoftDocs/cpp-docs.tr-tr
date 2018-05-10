@@ -2,11 +2,8 @@
 title: _1 nesnesi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - _1
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - _1 object
 ms.assetid: 30c3c480-ff31-4708-94be-7d0d65f243c9
-caps.latest.revision: 24
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 340744b785ee1af14c2258ffd954d4ba6c92d217
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: afb57f408c52f6884c68e93af88671d49815ef69
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="1-object"></a>_1 Nesnesi
 

@@ -2,11 +2,8 @@
 title: ComPtr sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::ComPtr
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - ComPtr class
 ms.assetid: a6551902-6819-478a-8df7-b6f312ab1fb0
-caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 36ecb5fdf292873c18df8f6b2f032865f44bafd2
-ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
+ms.openlocfilehash: 94146661b9a00b17732ce75f75bcc0194dcbddd4
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="comptr-class"></a>ComPtr Sınıfı
 Oluşturur bir *akıllı işaretçi* şablon parametresi tarafından belirtilen arabirimi temsil eden tür. ComPtr otomatik olarak bir başvuru sayısı için temel arabirim işaretçisi tutar ve başvuru sayısı sıfır olarak gittiğinde arabirimi serbest bırakır.  

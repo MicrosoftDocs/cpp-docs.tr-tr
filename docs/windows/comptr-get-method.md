@@ -1,12 +1,9 @@
 ---
-title: "ComPtr::Get yöntemi | Microsoft Docs"
-ms.custom: 
+title: ComPtr::Get yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::ComPtr::Get
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - Get method
 ms.assetid: 078eee51-7bca-4924-a74b-cd4f6a05de31
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dc2146115da2b97228474e33234dc0ffe6124084
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: da8c4446d10f87514ec49feef95d05df2de721f7
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="comptrget-method"></a>ComPtr::Get Metodu
 Bu ComPtr ile ilişkili arayüzü için bir işaretçi alır.  

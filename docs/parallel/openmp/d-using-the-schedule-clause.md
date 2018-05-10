@@ -1,27 +1,22 @@
 ---
-title: "D. Zamanlamayı yan tümcesini kullanarak | Microsoft Docs"
-ms.custom: 
+title: D. Zamanlamayı yan tümcesini kullanarak | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: bf3d8f51-ea05-4803-bf55-657c12e91efe
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b51eeb36a4cffafde0e90586fec08d28b9672e5d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8987c4505adfde8534d57346cd6725231efa022f
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="d-using-the-schedule-clause"></a>D. Zamanlama yan tümcesini kullanma
 Paralel bir bölge, sonunda en az bir engel olan ve başka engelleri içindeki sahip olabilir. Her engel bir takım üyeleri gelmesi son iş parçacığı için beklemeniz gerekir. Böylece engel yaklaşık aynı zamanda, tüm iş parçacıklarının gelmesini bu bekleme süresini en aza indirmek için paylaşılan iş dağıtılmalıdır. Paylaşılan bazıları iş yer **için** oluşturur, `schedule` yan tümcesi bu amaç için kullanılabilir.  
@@ -84,7 +79,7 @@ for(i=0; i<n; i++) {
 }  
 ```  
   
- Gibi **dinamik**, **destekli** zamanlama hiçbir iş parçacığı engel son yineleme yürütmek için başka bir iş parçacığı sürdüğünü daha uzun veya son bekler garanti *k* Yineleme öbek boyutu, *k* belirtilir. Bu tür zamanlamalar arasından **destekli** zamanlaması işlemleri özelliği tarafından en az eşitlemeler gerektirir. Öbek boyutu için *k*, tipik bir uygulama atayacaktır *q ceiling(n/p) =* ilk kullanılabilir iş parçacığı yinelemelere ayarlamak  *n*  büyük için ,*n-q* ve *p\*k*ve tüm yinelemeleri atanan kadar yineleyin.  
+ Gibi **dinamik**, **destekli** zamanlama hiçbir iş parçacığı engel son yineleme yürütmek için başka bir iş parçacığı sürdüğünü daha uzun veya son bekler garanti *k* Yineleme öbek boyutu, *k* belirtilir. Bu tür zamanlamalar arasından **destekli** zamanlaması işlemleri özelliği tarafından en az eşitlemeler gerektirir. Öbek boyutu için *k*, tipik bir uygulama atayacaktır *q ceiling(n/p) =* ilk kullanılabilir iş parçacığı yinelemelere ayarlamak *n* büyük için *n-q* ve *p\*k*ve tüm yinelemeleri atanan kadar yineleyin.  
   
  En iyi zamanlama seçimi Bu örnekler için olduğu gibi Temizle olmadığında **çalışma zamanı** zamanlaması farklı zamanlamalar ve Öbek boyutları ile değiştirin ve programı yeniden derleyin gerek kalmadan denemek için uygun değildir. En iyi zamanlama (bazı öngörülebilir bir yolla) programı uygulandığı giriş verilere bağlıdır da yararlı olabilir.  
   

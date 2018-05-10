@@ -1,12 +1,9 @@
 ---
-title: "uint_4 sınıfı | Microsoft Docs"
-ms.custom: 
+title: uint_4 sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_4::ywx
@@ -277,17 +274,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 1cda9e2c-5970-4ced-ae54-d7ff3c6746f4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d70672b5d862164607afefde3de758fdd269d60
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 490242014a907455a9511cd54f5e46a809318691
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="uint4-class"></a>uint_4 Sınıfı
 Kısa bir vektör dört işaretsiz tamsayı değerini temsil eder.  
@@ -310,7 +305,7 @@ class uint_4;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[uint_4 Constructor](#uint_4__ctor) |Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
+|[uint_4 Oluşturucusu](#uint_4__ctor) |Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
 
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
@@ -460,10 +455,10 @@ class uint_4;
 |----------|-----------------|  
 |uint_4::operator-||  
 |uint_4::operator--||  
-|uint_4::operator*=||  
-|uint_4::operator/=||  
-|uint_4::operator++||  
-|uint_4::operator+=||  
+|uint_4::operator * =||  
+|uint_4::operator ve =||  
+|uint_4::operator ++||  
+|uint_4::operator +=||  
 |uint_4::operator=||  
 |uint_4::operator-=||  
   
@@ -479,12 +474,12 @@ class uint_4;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |uint_4::a||  
-|uint_4::ab||  
+|uint_4::AB||  
 |uint_4::abg||  
 |uint_4::abgr||  
-|uint_4::abr||  
+|uint_4::ABR||  
 |uint_4::abrg||  
-|uint_4::ag||  
+|uint_4::AG||  
 |uint_4::agb||  
 |uint_4::agbr||  
 |uint_4::agr||  
@@ -493,38 +488,38 @@ class uint_4;
 |uint_4::arb||  
 |uint_4::arbg||  
 |uint_4::arg||  
-|uint_4::argb||  
+|uint_4::ARGB||  
 |uint_4::b||  
 |uint_4::ba||  
-|uint_4::bag||  
+|uint_4::BAG||  
 |uint_4::bagr||  
 |uint_4::bar||  
 |uint_4::barg||  
 |uint_4::bg||  
-|uint_4::bga||  
+|uint_4::BGA||  
 |uint_4::bgar||  
-|uint_4::bgr||  
+|uint_4::BGR||  
 |uint_4::bgra||  
 |uint_4::br||  
-|uint_4::bra||  
+|uint_4::BRA||  
 |uint_4::brag||  
 |uint_4::brg||  
 |uint_4::brga||  
 |uint_4::g||  
-|uint_4::ga||  
+|uint_4::GA||  
 |uint_4::gab||  
 |uint_4::gabr||  
 |uint_4::gar||  
 |uint_4::garb||  
-|uint_4::gb||  
-|uint_4::gba||  
+|uint_4::GB||  
+|uint_4::Gba||  
 |uint_4::gbar||  
 |uint_4::gbr||  
 |uint_4::gbra||  
-|uint_4::gr||  
-|uint_4::gra||  
-|uint_4::grab||  
-|uint_4::grb||  
+|uint_4::Gr||  
+|uint_4::Gra||  
+|uint_4::Grab||  
+|uint_4::Grb||  
 |uint_4::grba||  
 |uint_4::r||  
 |uint_4::ra||  
@@ -532,7 +527,7 @@ class uint_4;
 |uint_4::rabg||  
 |uint_4::rag||  
 |uint_4::ragb||  
-|uint_4::rb||  
+|uint_4::RB||  
 |uint_4::rba||  
 |uint_4::rbag||  
 |uint_4::rbg||  
@@ -544,7 +539,7 @@ class uint_4;
 |uint_4::rgba||  
 |uint_4::w||  
 |uint_4::wx||  
-|uint_4::wxy||  
+|uint_4::WXY||  
 |uint_4::wxyz||  
 |uint_4::wxz||  
 |uint_4::wxzy||  
@@ -553,7 +548,7 @@ class uint_4;
 |uint_4::wyxz||  
 |uint_4::wyz||  
 |uint_4::wyzx||  
-|uint_4::wz||  
+|uint_4::wZ||  
 |uint_4::wzx||  
 |uint_4::wzxy||  
 |uint_4::wzy||  
@@ -585,7 +580,7 @@ class uint_4;
 |uint_4::yxwz||  
 |uint_4::yxz||  
 |uint_4::yxzw||  
-|uint_4::yz||  
+|uint_4::YZ||  
 |uint_4::yzw||  
 |uint_4::yzwx||  
 |uint_4::yzx||  

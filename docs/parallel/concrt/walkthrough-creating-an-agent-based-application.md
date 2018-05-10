@@ -1,30 +1,25 @@
 ---
-title: "İzlenecek yol: aracı temelli uygulama oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: aracı temelli uygulama oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - asynchronous agents, creating
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a49c8deb9185b024dfcca977ab229bf594e05101
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 78826bb9f00e77a80fb65dd3a3ceda7eedb38796
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>İzlenecek Yol: Aracı Temelli Uygulama Oluşturma
 Bu konuda, temel bir aracı temelli uygulama oluşturma açıklanmaktadır. Bu kılavuzda, zaman uyumsuz olarak bir metin dosyasından veri okuyan bir aracı oluşturabilirsiniz. Uygulama, dosyanın içeriğini sağlama hesaplamak için Adler-32 sağlama toplamı algoritmayı kullanır.  
@@ -40,7 +35,7 @@ Bu konuda, temel bir aracı temelli uygulama oluşturma açıklanmaktadır. Bu k
   
 - [Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Bu kılavuz aşağıdaki görevlerin nasıl gerçekleştirileceğini gösterir:  
   
 - [Konsol uygulaması oluşturma](#createapplication)  
@@ -49,7 +44,7 @@ Bu konuda, temel bir aracı temelli uygulama oluşturma açıklanmaktadır. Bu k
   
 - [Sınıf file_reader uygulamasında kullanma](#useagentclass)  
   
-##  <a name="createapplication"></a>Konsol uygulaması oluşturma  
+##  <a name="createapplication"></a> Konsol uygulaması oluşturma  
  Bu bölümde programın kullanacağı üstbilgi dosyaları başvuruda bulunan bir Visual C++ konsol uygulamasının nasıl oluşturulacağını gösterir.  
   
 #### <a name="to-create-a-visual-c-application-by-using-the-win32-console-application-wizard"></a>Win32 Konsol Uygulama Sihirbazı'nı kullanarak bir Visual C++ uygulaması oluşturmak için  
@@ -70,7 +65,7 @@ Bu konuda, temel bir aracı temelli uygulama oluşturma açıklanmaktadır. Bu k
   
  [[Üst](#top)]  
   
-##  <a name="createagentclass"></a>File_reader sınıfı oluşturma  
+##  <a name="createagentclass"></a> File_reader sınıfı oluşturma  
  Bu bölümde nasıl oluşturulacağını gösterir `file_reader` sınıfı. Çalışma Zamanı İş kendi bağlamda gerçekleştirmek için her bir aracının zamanlar. Bu nedenle, iş zaman uyumlu olarak gerçekleştirir, ancak diğer bileşenlerle etkileşimi zaman uyumsuz olarak bir aracı oluşturabilirsiniz. `file_reader` Sınıfı belirli bir giriş dosyasından veri okur ve verileri bu dosyadan verilen hedef bileşenine gönderir.  
   
 #### <a name="to-create-the-filereader-class"></a>File_reader sınıfını oluşturmak için  
@@ -120,7 +115,7 @@ Bu konuda, temel bir aracı temelli uygulama oluşturma açıklanmaktadır. Bu k
   
  [[Üst](#top)]  
   
-##  <a name="useagentclass"></a>Sınıf file_reader uygulamasında kullanma  
+##  <a name="useagentclass"></a> Sınıf file_reader uygulamasında kullanma  
  Bu bölümde nasıl kullanılacağını gösterir `file_reader` bir metin dosyasının içeriğini okumak için sınıf. Ayrıca nasıl oluşturulacağını gösterir bir [concurrency::call](../../parallel/concrt/reference/call-class.md) bu dosya verileri alır ve kendi Adler-32 sağlama toplamı hesaplar nesnesi.  
   
 #### <a name="to-use-the-filereader-class-in-your-application"></a>File_reader sınıfını Uygulamanızda kullanmak için  

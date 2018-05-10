@@ -1,6 +1,6 @@
 ---
 title: fp_contract | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/12/2018
 ms.technology:
 - cpp-tools
@@ -16,14 +16,13 @@ helpviewer_keywords:
 ms.assetid: 15b97338-6680-4287-ba2a-2dccc5b2ccf5
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28c9b6287b71e077a7d91c60d2062b9f7243d103
-ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
+ms.openlocfilehash: 514b4708129d625ea7880e4c61be22c4b1ac2db5
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="fpcontract"></a>fp_contract
 

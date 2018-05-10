@@ -1,13 +1,10 @@
 ---
-title: "En iyi uygulamalar paralel desen Kitaplığı'ndaki | Microsoft Docs"
-ms.custom: 
+title: En iyi uygulamalar paralel desen Kitaplığı'ndaki | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,24 +13,22 @@ helpviewer_keywords:
 - best practices, Parallel Patterns Library
 - Parallel Patterns Library, best practices
 ms.assetid: e43e0304-4d54-4bd8-a3b3-b8673559a9d7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40629b25ebcc954ac19389fbc0abb3aef6e9374a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6ce3a4745b52c518484d14eafd483625eed2a0da
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="best-practices-in-the-parallel-patterns-library"></a>Paralel Desen Kitaplığı'ndaki En İyi Yöntemler
 Bu belgede etkili kullanımı paralel Desen kitaplığı (PPL) biri için en iyi şekilde nasıl açıklanmaktadır. PPL'de hassas paralellik gerçekleştirmek için genel amaçlı kapsayıcıları ve nesneleri algoritmaları sağlar.  
   
  PPL'de hakkında daha fazla bilgi için bkz: [paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md).  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Bu belgede aşağıdaki bölümler yer alır:  
   
 - [Küçük döngü gövdelerini paralel hale değil](#small-loops)  
@@ -56,7 +51,7 @@ Bu belgede etkili kullanımı paralel Desen kitaplığı (PPL) biri için en iyi
   
 - [Değişkenleri görev ömrü geçerli olduğundan emin olun](#lifetime)  
   
-##  <a name="small-loops"></a>Küçük döngü gövdelerini paralel hale değil  
+##  <a name="small-loops"></a> Küçük döngü gövdelerini paralel hale değil  
  Görece küçük döngü gövdelerini paralelleştirme ilişkili ek yükü paralel işleme ağır basıyor planlama neden olabilir. İki dizide öğelerinin her çifti ekler aşağıdaki örnekte, göz önünde bulundurun.  
   
  [!code-cpp[concrt-small-loops#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_1.cpp)]  
@@ -65,7 +60,7 @@ Bu belgede etkili kullanımı paralel Desen kitaplığı (PPL) biri için en iyi
   
  [[Üst](#top)]  
   
-##  <a name="highest"></a>Olası en yüksek düzeyde paralellik express  
+##  <a name="highest"></a> Olası en yüksek düzeyde paralellik express  
  Yalnızca en düşük düzeyde kod paralel hale, işlemciler artar sayı olarak ölçeklenmez çatalı Birleştirme yapı ortaya çıkarabilir. A *çatalı birleştirme* yapıdır bir yapı burada bir görevi daha küçük paralel alt görevleri çalışmasını böler ve bu görevleri tamamlamak bekler. Her alt yinelemeli olarak bölme kendisini ek görevleri halinde kullanabilirsiniz.  
   
  Çatalı birleştirme modeli çeşitli sorunlarını çözmek için yararlı olsa da, eşitleme yükünü ölçeklenebilirlik burada düşürebilir durumlar vardır. Örneğin, görüntü verilerini işler aşağıdaki seri kodu göz önünde bulundurun.  
@@ -92,7 +87,7 @@ Bu belgede etkili kullanımı paralel Desen kitaplığı (PPL) biri için en iyi
   
  [[Üst](#top)]  
   
-##  <a name="divide-and-conquer"></a>Bölme-ve-Yönet sorunları çözme için parallel_invoke kullanma  
+##  <a name="divide-and-conquer"></a> Bölme-ve-Yönet sorunları çözme için parallel_invoke kullanma  
 
  A *bölme-ve-Yönet* form özyineleme bir görevi alt görevlere ayırmak için kullanır çatalı birleştirme yapının bir sorundur. Ek olarak [concurrency::task_group](reference/task-group-class.md) ve [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) sınıfları ayrıca kullanabileceğiniz [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algoritmasına bölme-ve-Yönet sorunları çözün. `parallel_invoke` Algoritması görev Grup nesneleri değerinden daha kısa sözdizimine sahip ve Paralel Görevler sabit sayıda olduğunda faydalıdır.  
   
@@ -106,7 +101,7 @@ Bu belgede etkili kullanımı paralel Desen kitaplığı (PPL) biri için en iyi
   
  [[Üst](#top)]  
   
-##  <a name="breaking-loops"></a>İptal ya da özel durum paralel bir döngüden kurtulmak için işleme kullanın  
+##  <a name="breaking-loops"></a> İptal ya da özel durum paralel bir döngüden kurtulmak için işleme kullanın  
  PPL'de bir görev grubu veya paralel algoritması tarafından gerçekleştirilen paralel iş iptal etmek için iki yöntem sağlar. Tek yönlü tarafından sağlanan iptal mekanizması kullanmaktır [concurrency::task_group](reference/task-group-class.md) ve [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) sınıfları. Başka bir görev iş işlev gövdesine bir özel durum yoludur. Özel durum işleme paralel iş ağacının iptal etme sırasında daha etkili iptal mekanizmadır. A *paralel iş ağaç* bazı görev grupları diğer görev grupları içeren ilgili görev grupları oluşan bir gruptur. İptal mekanizması görev grubunu ve onun alt görev grupları yukarıdan aşağıya doğru bir biçimde iptal eder. Buna karşılık, özel durum işleme aşağıdan yukarıya biçimde çalışır ve özel durum yukarı yayar gibi her alt görev grubu bağımsız olarak iptal etmeniz gerekir.  
   
 
@@ -132,7 +127,7 @@ Bu belgede etkili kullanımı paralel Desen kitaplığı (PPL) biri için en iyi
   
  [[Üst](#top)]  
   
-##  <a name="object-destruction"></a>Anlamak iptali ve özel durum işleme etkilemesi nesne yok etme  
+##  <a name="object-destruction"></a> Anlamak iptali ve özel durum işleme etkilemesi nesne yok etme  
  Paralel iş ağacında iptal bir görev alt görevler çalışmasını engeller. Alt görevler birini uygulamanıza bir kaynak boşaltma gibi önemli bir işlem gerçekleştirdiğinde bu sorunlara neden olabilir. Buna ek olarak, görev iptali bir nesne yıkıcı yaymak ve uygulamanızda tanımsız davranışlara neden için bir özel duruma neden olabilir.  
   
  Aşağıdaki örnekte, `Resource` sınıfı bir kaynak açıklar ve `Container` sınıf kaynakları tutan bir kapsayıcı tanımlar. Kendi yıkıcı içinde `Container` sınıfı çağrıları `cleanup` üzerinde ikisinden yöntemi kendi `Resource` üyeleri paralel ve çağrıları `cleanup` yöntemi, üçüncü `Resource` üyesi.  
@@ -162,7 +157,7 @@ Container 1: Freeing resources...Exiting program...
   
  [[Üst](#top)]  
   
-##  <a name="repeated-blocking"></a>Art arda paralel bir döngüden engellemez  
+##  <a name="repeated-blocking"></a> Art arda paralel bir döngüden engellemez  
 
  Gibi paralel bir döngüden [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) veya [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) engelleyerek hâkim işlemleri çalışma zamanının kısa bir süre içinde birçok iş parçacığı oluşturma neden olabilir.  
 
@@ -179,7 +174,7 @@ Container 1: Freeing resources...Exiting program...
   
  [[Üst](#top)]  
   
-##  <a name="blocking"></a>Paralel iş iptal ettiğinizde işlemleri engelleyen gerçekleştirme  
+##  <a name="blocking"></a> Paralel iş iptal ettiğinizde işlemleri engelleyen gerçekleştirme  
 
  Çağırmadan önce mümkün olduğunda engelleme işlemleri gerçekleştirmeyin [concurrency::task_group::cancel](reference/task-group-class.md#cancel) veya [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) paralel iş iptal etmek için yöntem.  
 
@@ -203,7 +198,7 @@ Container 1: Freeing resources...Exiting program...
   
  [[Üst](#top)]  
   
-##  <a name="shared-writes"></a>Paralel bir döngüden paylaşılan veri yazma  
+##  <a name="shared-writes"></a> Paralel bir döngüden paylaşılan veri yazma  
  Eşzamanlılık Çalışma zamanı birkaç veri yapılarını, örneğin sağlar [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md), paylaşılan veri eş zamanlı erişim eşitleyin. Birden çok görev seyrek paylaşılan bir kaynağa erişim gerektirdiğinde çoğu durumda, örneğin, bu veri yapıları faydalıdır.  
   
  Kullanan aşağıdaki örneği göz önünde bulundurun [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritması ve `critical_section` asal sayılar sayısı işlem için nesne bir [std::array](../../standard-library/array-class-stl.md) nesnesi. Her iş parçacığı paylaşılan değişken erişmek için beklemeniz gerekir çünkü bu örnek ölçeklenmez `prime_sum`.  
@@ -224,7 +219,7 @@ Container 1: Freeing resources...Exiting program...
   
  [[Üst](#top)]  
   
-##  <a name="false-sharing"></a>Mümkün olduğunda, yanlış paylaşımı kaçının  
+##  <a name="false-sharing"></a> Mümkün olduğunda, yanlış paylaşımı kaçının  
  *False paylaşımı* ayrı işlemcilerde çalıştıran birden çok eş zamanlı görevleri bulunan değişkenlere aynı önbellek satırında yazma oluşur. Bir görev değişkenlerinden biri yazdığında, her iki değişken için önbellek satırı geçersiz kılınır. Her işlemci önbellek satırı önbellek satırı geçersiz kılınan her zaman yeniden yüklemeniz gerekir. Bu nedenle, yanlış paylaşımı performansın uygulamanızda neden olabilir.  
   
  Her bir paylaşılan sayaç değişkeni Artır aşağıdaki temel örnek iki eş zamanlı görevleri gösterir.  
@@ -245,7 +240,7 @@ Container 1: Freeing resources...Exiting program...
   
  [[Üst](#top)]  
   
-##  <a name="lifetime"></a>Değişkenleri görev ömrü geçerli olduğundan emin olun  
+##  <a name="lifetime"></a> Değişkenleri görev ömrü geçerli olduğundan emin olun  
  Lambda ifadesi bir görev grubu veya paralel algoritması sağladığınızda, yakalama yan tümcesi lambda ifadesi gövdesi çevreleyen kapsamdaki değişkenler değere veya başvuruya göre erişen olup olmadığını belirler. Başvuruya göre bir lambda ifadesi değişkenleri geçirdiğinizde, görevi tamamlanana kadar bu değişken ömrü devam güvence altına almalıdır.  
   
  Tanımlar aşağıdaki örneği göz önünde bulundurun `object` sınıfı ve `perform_action` işlevi. `perform_action` İşlev oluşturur bir `object` değişken ve bu değişken üzerindeki zaman uyumsuz olarak bazı eylemleri gerçekleştirir. Görev önce tamamlamak için kesin değildir çünkü `perform_action` işlevi döndürür, program kilitleniyor veya belirtilmeyen varsa davranışlar `object` görev çalıştığında değişkeni yok.  

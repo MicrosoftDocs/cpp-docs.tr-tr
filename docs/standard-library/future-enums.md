@@ -2,22 +2,17 @@
 title: '&lt;Gelecekteki&gt; numaralandırmaları | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - future/std::future_errc
 - future/std::future_status
 - future/std::launch
 ms.assetid: 8c675645-db47-4cab-bc0e-7b87f8a302df
-caps.latest.revision: 11
-manager: ghogen
-ms.openlocfilehash: a32f777842b3c14a5c6f15d9c1c3b534bc4ffad8
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 6e228eb538a0d281dff8066390b0c6dd2e7ea4d8
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltfuturegt-enums"></a>&lt;Gelecekteki&gt; numaralandırmaları
 

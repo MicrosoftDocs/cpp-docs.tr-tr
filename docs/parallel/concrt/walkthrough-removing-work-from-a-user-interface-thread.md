@@ -1,30 +1,25 @@
 ---
-title: "İzlenecek yol: Bir kullanıcı arabirimi iş parçacığından işi kaldırma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Bir kullanıcı arabirimi iş parçacığından işi kaldırma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - user-interface threads, removing work from [Concurrency Runtime]
 - removing work from user-interface threads [Concurrency Runtime]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c32613aa6938b873a820fbb491fa2c507605a6d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0502ce728c35b08d927cea48ee5b82756980aec5
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>İzlenecek yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma
 Bu belge eşzamanlılık çalışma zamanı bir çalışan iş parçacığı için Microsoft Foundation sınıfları (MFC) uygulamasında kullanıcı arabirimi (UI) iş parçacığı tarafından gerçekleştirilen iş taşımak için nasıl kullanılacağını gösterir. Bu belge, ayrıca uzun bir çizim işlem performansını artırmak nasıl gösterir.  
@@ -46,7 +41,7 @@ Bu belge eşzamanlılık çalışma zamanı bir çalışan iş parçacığı iç
   
  Ayrıca, MFC Uygulama geliştirme temelleri anlamanız öneririz ve [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] bu kılavuza başlamadan önce. MFC hakkında daha fazla bilgi için bkz: [MFC Masaüstü uygulamaları](../../mfc/mfc-desktop-applications.md). Hakkında daha fazla bilgi için [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)], bkz: [GDI +](https://msdn.microsoft.com/en-us/library/windows/desktop/ms533798).  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Bu kılavuz aşağıdaki bölümleri içerir:  
   
 -   [MFC uygulaması oluşturma](#application)  
@@ -59,14 +54,14 @@ Bu belge eşzamanlılık çalışma zamanı bir çalışan iş parçacığı iç
   
 -   [İptal etme desteği ekleme](#cancellation)  
   
-##  <a name="application"></a>MFC uygulaması oluşturma  
+##  <a name="application"></a> MFC uygulaması oluşturma  
  Bu bölümde temel MFC uygulamasının nasıl oluşturulacağını açıklar.  
   
 ### <a name="to-create-a-visual-c-mfc-application"></a>Visual C++ MFC uygulaması oluşturmak için  
   
 1.  Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusunda **yüklü şablonlar** bölmesinde, **Visual C++**ve ardından **şablonları** bölmesinde, **MFC uygulaması**. Proje için bir ad yazın, örneğin, `Mandelbrot`ve ardından **Tamam** görüntülemek için **MFC Uygulama Sihirbazı'nı**.  
+2.  İçinde **yeni proje** iletişim kutusunda **yüklü şablonlar** bölmesinde, **Visual C++** ve ardından **şablonları** bölmesinde, **MFC uygulaması**. Proje için bir ad yazın, örneğin, `Mandelbrot`ve ardından **Tamam** görüntülemek için **MFC Uygulama Sihirbazı'nı**.  
   
 3.  İçinde **uygulama türü** bölmesinde, **tek bir belge**. Emin **belge/görünüm mimarisi desteği** onay kutusu işaretli.  
   
@@ -74,7 +69,7 @@ Bu belge eşzamanlılık çalışma zamanı bir çalışan iş parçacığı iç
   
      Derleme ve çalışan uygulamanın başarıyla oluşturulduğunu doğrulayın. Uygulama üzerinde oluşturmak için **yapı** menüsünde tıklatın **yapı çözümü**. Uygulama başarıyla oluşturursa tıklayarak uygulamayı çalıştırın **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menüsü.  
   
-##  <a name="serial"></a>Seri sürümü Mandelbrot uygulamasının uygulama  
+##  <a name="serial"></a> Seri sürümü Mandelbrot uygulamasının uygulama  
  Bu bölümde, Mandelbrot düzgünleştiren parçalı çizmek açıklar. Bu sürüm için Mandelbrot düzgünleştiren parçalı çizer bir [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] [bit eşlem](https://msdn.microsoft.com/library/ms534420.aspx) nesne ve ardından bu bit eşlem içeriğini istemci penceresine kopyalar.  
   
 #### <a name="to-implement-the-serial-version-of-the-mandelbrot-application"></a>Seri sürümü Mandelbrot uygulamasının uygulamak için  
@@ -123,7 +118,7 @@ Bu belge eşzamanlılık çalışma zamanı bir çalışan iş parçacığı iç
   
  [[Üst](#top)]  
   
-##  <a name="removing-work"></a>Kullanıcı Arabirimi iş parçacığından işi kaldırma  
+##  <a name="removing-work"></a> Kullanıcı Arabirimi iş parçacığından işi kaldırma  
  Bu bölüm, kullanıcı Arabirimi iş parçacığı Mandelbrot uygulamada çizim iş kaldırmak gösterilmiştir. Bir çalışan iş parçacığı için kullanıcı Arabirimi iş parçacığından çizim iş taşıyarak, çalışan iş parçacığı arka planda görüntüyü oluştururken kullanıcı Arabirimi iş parçacığı iletileri işleyebilir.  
   
  Eşzamanlılık Çalışma zamanı görevleri çalıştırmak için üç yol sunar: [görev grupları](../../parallel/concrt/task-parallelism-concurrency-runtime.md), [zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md), ve [Basit görevler](../../parallel/concrt/task-scheduler-concurrency-runtime.md). Kullanıcı Arabirimi iş parçacığından iş kaldırmak için Bu mekanizmaların birini kullanabilirsiniz ancak bu örnek kullanan bir [concurrency::task_group](reference/task-group-class.md) görev grupları iptal desteklemediğinden nesne. Bu kılavuzda daha sonra istemci penceresi yeniden boyutlandırıldığında, gerçekleştirilen iş miktarını azaltın ve pencere bozulduğunda temizlenmesini iptal kullanılır.  
@@ -162,7 +157,7 @@ Bu belge eşzamanlılık çalışma zamanı bir çalışan iş parçacığı iç
   
  [[Üst](#top)]  
   
-##  <a name="performance"></a>Çizim performansı artırma  
+##  <a name="performance"></a> Çizim performansı artırma  
 
  Her piksel hesaplama diğer tüm hesaplamaları bağımsız olduğundan Mandelbrot düzgünleştiren parçalı nesil paralelleştirme için iyi bir adaydır. Paralel hale çizim yordamı için dış Dönüştür `for` içinde döngü `CChildView::DrawMandelbrot` yöntemine yapılan bir çağrı [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) şekilde algoritması.  
 
@@ -173,7 +168,7 @@ Bu belge eşzamanlılık çalışma zamanı bir çalışan iş parçacığı iç
   
  [[Üst](#top)]  
   
-##  <a name="cancellation"></a>İptal etme desteği ekleme  
+##  <a name="cancellation"></a> İptal etme desteği ekleme  
  Bu bölümde, pencere yeniden boyutlandırma nasıl ele alınacağını ve pencere bozulduğunda herhangi etkin çizim görevleri iptal etme açıklanmaktadır.  
   
  Belge [PPL'de iptal](cancellation-in-the-ppl.md) İptallerin çalışma zamanı'nda açıklanır. İptal işbirlikçi; Bu nedenle, hemen gerçekleşmez. İptal edilen bir görevi durdurmak için çalışma zamanı bir iç özel durum görevi sonraki çağrı sırasında çalışma zamanı içine oluşturur. Önceki bölümde nasıl kullanılacağını gösterir `parallel_for` çizim görev performansını artırmak için algoritması. Çağrı `parallel_for` görevi durdurmak çalışma zamanı sağlar ve bu nedenle çalışmaya iptal sağlar.  

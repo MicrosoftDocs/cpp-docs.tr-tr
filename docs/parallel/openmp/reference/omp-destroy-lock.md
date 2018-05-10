@@ -1,12 +1,9 @@
 ---
 title: omp_destroy_lock | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - omp_destroy_lock
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - omp_destroy_lock OpenMP function
 ms.assetid: b73ab036-b76f-4e42-82ff-c89db2edf7c0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be14c2adaf371bc1da3cffee9766b90a2c7af216
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 05612664b50c6a51008ab1d78ac1d40145fb593e
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ompdestroylock"></a>omp_destroy_lock
 Kilit uninitializes.  

@@ -1,12 +1,9 @@
 ---
-title: "Implements::casttounknown yöntemi | Microsoft Docs"
-ms.custom: 
+title: Implements::casttounknown yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Implements::CastToUnknown
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - CastToUnknown method
 ms.assetid: ca3324f7-4136-406b-8698-7389f4f3d3c7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ced646ecfe5989dd59b99ef3eb6dff48e4ddb74c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 857d13736a92bbbc2c6f1228b3444081ffc18de5
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="implementscasttounknown-method"></a>Implements::CastToUnknown Yöntemi
 İşaretçi arka plandaki IUnknown arabirimini alır.  

@@ -1,12 +1,9 @@
 ---
-title: "Ithreadproxy yapısı | Microsoft Docs"
-ms.custom: 
+title: Ithreadproxy yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - IThreadProxy
@@ -20,17 +17,15 @@ dev_langs:
 helpviewer_keywords:
 - IThreadProxy structure
 ms.assetid: feb89241-a555-4e61-ad48-40add54daeca
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e96f02677e3a79d1a6e15b9b22b777ca794b516d
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: fbf59302a73374f08f1c226c1e7e56202654dcfb
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ithreadproxy-structure"></a>IThreadProxy Yapısı
 Bir iş parçacığı için bir Özet yürütme. Bağlı olarak `SchedulerType` oluşturduğunuz Zamanlayıcı İlkesi anahtarı Resource Manager vermek, normal bir Win32 iş parçacığı veya kullanıcı modu zamanlanabilir (UMS) iş parçacığı tarafından yedeklenen bir iş parçacığı proxy. UMS iş parçacığı desteklenen 64-bit işletim sistemi sürümü Windows 7 ve üzeri.  
@@ -47,7 +42,7 @@ struct IThreadProxy;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[IThreadProxy::GetId](#getid)|İş parçacığı proxy için benzersiz bir tanımlayıcı döndürür.|  
+|[Ithreadproxy::GetID](#getid)|İş parçacığı proxy için benzersiz bir tanımlayıcı döndürür.|  
 |[Ithreadproxy::switchout](#switchout)|Temel alınan sanal işlemci kök bağlamından keser.|  
 |[Ithreadproxy::switchto](#switchto)|İşbirlikçi bağlam anahtarı şu anda yürütülen bağlamdan farklı bir gerçekleştirir.|  
 |[Ithreadproxy::yieldtosystem](#yieldtosystem)|Geçerli İşlemci çalıştırılmaya hazır başka bir iş parçacığı için yürütme elde etmek üzere çağıran iş parçacığı neden olur. İşletim sistemi, yürütülecek sonraki iş parçacığı seçer.|  

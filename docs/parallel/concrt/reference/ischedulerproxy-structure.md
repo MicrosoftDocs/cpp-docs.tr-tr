@@ -1,12 +1,9 @@
 ---
-title: "Ischedulerproxy yapısı | Microsoft Docs"
-ms.custom: 
+title: Ischedulerproxy yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - ISchedulerProxy
@@ -22,17 +19,15 @@ dev_langs:
 helpviewer_keywords:
 - ISchedulerProxy structure
 ms.assetid: af416973-7a1c-4c30-aa3b-4161c2aaea54
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fa2a67b432fac1dc7ec685e6563acb87fd69087
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 65198998666391763ef32a55cd12e86529e619ed
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ischedulerproxy-structure"></a>ISchedulerProxy Yapısı
 Tarafından zamanlayıcılar kaynak ayırma anlaşmak üzere eşzamanlılık çalışma zamanı Resource Manager ile iletişim kurmak arabirimi.  
@@ -49,12 +44,12 @@ struct ISchedulerProxy;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ISchedulerProxy::BindContext](#bindcontext)|Zaten bir ile ilişkili değilse yürütme bağlamı bir iş parçacığı proxy ile ilişkilendirir.|  
-|[ISchedulerProxy::CreateOversubscriber](#createoversubscriber)|Varolan bir yürütme kaynakla ilişkili donanım iş parçacığı üzerinde yeni bir sanal işlemcinin kökü oluşturur.|  
+|[Ischedulerproxy::bindcontext](#bindcontext)|Zaten bir ile ilişkili değilse yürütme bağlamı bir iş parçacığı proxy ile ilişkilendirir.|  
+|[Ischedulerproxy::createoversubscriber](#createoversubscriber)|Varolan bir yürütme kaynakla ilişkili donanım iş parçacığı üzerinde yeni bir sanal işlemcinin kökü oluşturur.|  
 |[Ischedulerproxy::requestınitialvirtualprocessors](#requestinitialvirtualprocessors)|Sanal işlemci kökleri ilk ayırma ister. Her sanal işlemci kök için Zamanlayıcı İş gerçekleştiren bir iş parçacığını yürütmek için özelliğini temsil eder.|  
-|[ISchedulerProxy::Shutdown](#shutdown)|Resource Manager Zamanlayıcısı kapatılıyor bildirir. Bu zamanlayıcı için verilen tüm kaynaklar hemen geri kazanmak için Kaynak Yöneticisi'ni neden olur.|  
-|[ISchedulerProxy::SubscribeCurrentThread](#subscribecurrentthread)|Geçerli iş parçacığının kaynak bu Zamanlayıcı ile ilişkilendirme Yöneticisi ile kaydeder.|  
-|[ISchedulerProxy::UnbindContext](#unbindcontext)|Bir iş parçacığı Proxy'den tarafından belirtilen Yürütme bağlamını keser `pContext` parametre ve iş parçacığı proxy fabrikasının boş havuza geri döner. Bu yöntem yalnızca aracılığıyla bağlı bir yürütme bağlamı üzerinde çağrılabilir [Ischedulerproxy::bindcontext](#bindcontext) yöntemi ve henüz olan aracılığıyla başlatılmadı `pContext` parametresinin bir [Ithreadproxy::switchto ](ithreadproxy-structure.md#switchto) yöntem çağrısı.|  
+|[Ischedulerproxy::Shutdown](#shutdown)|Resource Manager Zamanlayıcısı kapatılıyor bildirir. Bu zamanlayıcı için verilen tüm kaynaklar hemen geri kazanmak için Kaynak Yöneticisi'ni neden olur.|  
+|[Ischedulerproxy::subscribecurrentthread](#subscribecurrentthread)|Geçerli iş parçacığının kaynak bu Zamanlayıcı ile ilişkilendirme Yöneticisi ile kaydeder.|  
+|[Ischedulerproxy::unbindcontext](#unbindcontext)|Bir iş parçacığı Proxy'den tarafından belirtilen Yürütme bağlamını keser `pContext` parametre ve iş parçacığı proxy fabrikasının boş havuza geri döner. Bu yöntem yalnızca aracılığıyla bağlı bir yürütme bağlamı üzerinde çağrılabilir [Ischedulerproxy::bindcontext](#bindcontext) yöntemi ve henüz olan aracılığıyla başlatılmadı `pContext` parametresinin bir [Ithreadproxy::switchto ](ithreadproxy-structure.md#switchto) yöntem çağrısı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Resource Manager aktarır bir `ISchedulerProxy` arabirimi kullanarak kendisiyle kaydeder her Zamanlayıcısına [Iresourcemanager::registerscheduler](iresourcemanager-structure.md#registerscheduler) yöntemi.  

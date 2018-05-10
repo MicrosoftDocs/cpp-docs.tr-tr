@@ -1,30 +1,25 @@
 ---
-title: "Eşzamanlılık Çalışma zamanı izlenecek yollar | Microsoft Docs"
-ms.custom: 
+title: Eşzamanlılık Çalışma zamanı izlenecek yollar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - walkthroughs [Concurrency Runtime]
 - Concurrency Runtime, walkthroughs
 ms.assetid: 7374c5e9-54eb-44bf-9ed9-5e190cfd290b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c5716bcfa997a45ab44fcb1026d7e082026a7a8
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 05e50530bf1c7aa401a7422a0119f004e30234a9
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="concurrency-runtime-walkthroughs"></a>Eşzamanlılık Çalışma Zamanı İzlenecek Yollar
 Bu bölümde senaryo tabanlı konular eşzamanlılık çalışma zamanı özelliklerinin çoğunu kullanmayı gösterir.  

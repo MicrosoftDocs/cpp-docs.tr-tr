@@ -2,11 +2,8 @@
 title: regex_traits sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - regex/std::regex_traits
@@ -47,17 +44,15 @@ helpviewer_keywords:
 - std::regex_traits [C++], imbue
 - std::regex_traits [C++], getloc
 ms.assetid: bc5a5eed-32fc-4eb7-913d-71c42e729e81
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b38fc49d91521d66b480842d09117fb5550cc17
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 74cf86b332db36248e7a40bf93f2a7e72ecf429d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="regextraits-class"></a>regex_traits Sınıfı
 

@@ -2,11 +2,8 @@
 title: Duration sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - chrono/std::chrono::duration
@@ -18,19 +15,17 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
-caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::chrono [C++], duration
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f7e1b7bcf1cfa91a3b1a5d528ee77552e56dad5
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: fe02890ce8d8dcde099f4b91b23c770b2e36c96d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="duration-class"></a>duration Sınıfı
 

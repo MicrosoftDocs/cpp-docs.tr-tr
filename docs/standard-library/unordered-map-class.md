@@ -2,11 +2,8 @@
 title: unordered_map sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - unordered_map/std::unordered_map
@@ -147,17 +144,15 @@ helpviewer_keywords:
 - std::unordered_map::size
 - std::unordered_map::swap
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
-caps.latest.revision: 20
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f93e0db2515f7d0ce6d15536aae898cbebf27167
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 7f8f74a2aa1eb47d9de4705941bd7367e313e7bd
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="unorderedmap-class"></a>unordered_map Sınıfı
 

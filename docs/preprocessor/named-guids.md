@@ -1,12 +1,9 @@
 ---
 title: named_guids | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - named_guids
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - named_guids attribute
 ms.assetid: b905e5e5-07fe-4874-8993-e05b9d639045
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9eef68b9cf9711eb03f1d167102a9bec79818eb
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 2022f979205fed461f02e5886698d9455021a855
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="namedguids"></a>named_guids
 **C++ özel**  
@@ -43,4 +38,4 @@ named_guids
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+ [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

@@ -2,11 +2,8 @@
 title: money_put sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xlocmon/std::money_put
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - std::money_put [C++], do_put
 - std::money_put [C++], put
 ms.assetid: f439fd56-c9b1-414c-95e1-66c918c6eee6
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b14c338c7cf1c5cd4562b410568e1f1ed191407
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: df8b872d9aeb718c1e86d460d8ef60beac8f3632
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="moneyput-class"></a>money_put Sınıfı
 

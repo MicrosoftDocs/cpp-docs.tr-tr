@@ -1,28 +1,23 @@
 ---
-title: "Anahtar WRL API'leri kategoriye göre | Microsoft Docs"
-ms.custom: 
+title: Anahtar WRL API'leri kategoriye göre | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 7367bacf-6b7c-4ecd-a0ce-a662db46fc66
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7ad38d1b24ca40b6209295f873bd44c54c3f6148
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9936c85443f893111b3c2b9de17ca80e6fb382b2
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="key-wrl-apis-by-category"></a>Kategoriye Göre Başlıca WRL API'leri
 Birincil Windows çalışma zamanı C++ Şablon kitaplığı sınıflar, yapılar, İşlevler ve makrolar aşağıdaki tablolarda listelenmektedir. Yardımcı ad alanları ve sınıfları yapılardan göz ardı edilir. Bu listeler ad alanlarına göre düzenlenen API belgelerine kullanmasıdır.  
@@ -36,7 +31,7 @@ Birincil Windows çalışma zamanı C++ Şablon kitaplığı sınıflar, yapıla
 |[ClassFactory Sınıfı](../windows/classfactory-class.md)|Temel işlevselliğini uygulayan `IClassFactory` arabirimi.|  
 |[ComPtr Sınıfı](../windows/comptr-class.md)|Oluşturur bir *akıllı işaretçi* şablon parametresi tarafından belirtilen arabirimi temsil eden tür. ComPtr otomatik olarak bir başvuru sayısı için temel arabirim işaretçisi tutar ve başvuru sayısı sıfır olarak gittiğinde arabirimi serbest bırakır.|  
 |[Olay Sınıfı (Windows Çalışma Zamanı C++ Şablon Kitaplığı)](../windows/event-class-windows-runtime-cpp-template-library.md)|Bir olayı temsil eder.|  
-|[EventSource Sınıfı](../windows/eventsource-class.md)|Bir olayı temsil eder. `EventSource`üye işlevleri eklemek, kaldırmak ve olay işleyicilerini çağırma.|  
+|[EventSource Sınıfı](../windows/eventsource-class.md)|Bir olayı temsil eder. `EventSource` üye işlevleri eklemek, kaldırmak ve olay işleyicilerini çağırma.|  
 |[FtmBase Sınıfı](../windows/ftmbase-class.md)|Ücretsiz iş parçacıklı Sıralayıcı nesneyi temsil eder.|  
 |[HandleT Sınıfı](../windows/handlet-class.md)|Bir tanıtıcı nesneyi temsil eder.|  
 |[HString Sınıfı](../windows/hstring-class.md)|HSTRING tanıtıcıları yönlendirmek için destek sağlar.|  

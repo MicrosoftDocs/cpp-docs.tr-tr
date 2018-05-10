@@ -2,11 +2,8 @@
 title: wstring_convert sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - wstring/stdext::cvt::wstring_convert
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - std::wstring_convert [C++], converted
 - std::wstring_convert [C++], state
 ms.assetid: e34f5b65-d572-4bdc-ac69-20778712e376
-caps.latest.revision: 25
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c6cddc3925e3558c14ca18ee2a06de33b41efd9
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 77e158605deeae859132243ab624d4a1638973b8
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="wstringconvert-class"></a>wstring_convert Sınıfı
 

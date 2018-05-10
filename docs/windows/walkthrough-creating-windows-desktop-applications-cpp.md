@@ -1,12 +1,10 @@
 ---
-title: "İzlenecek yol: Geleneksel Windows Masaüstü uygulama (C++) oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Geleneksel Windows Masaüstü uygulama (C++) oluşturma | Microsoft Docs'
+ms.custom: get-started-article
 ms.date: 1/11/2018
-ms.reviewer: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,15 +13,14 @@ helpviewer_keywords:
 - Windows API [C++]
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ce3c18abbace2181b2d31e0621b6e376021be68a
-ms.sourcegitcommit: c2e990450ccd528d85b2783fbc63042612987cfd
+ms.openlocfilehash: e5581292ec163a2e745802c66a87c14a8457f141
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: Geleneksel Windows Masaüstü uygulama (C++) oluşturma
 
@@ -54,7 +51,7 @@ Windows API (olarak da bilinen Win32 API, Windows Masaüstü API ve Windows Klas
 
 1. Üzerinde **dosya** menüsünde seçin **yeni** ve ardından **proje**.
 
-1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **yüklü**, **Visual C++**seçeneğini belirleyip **Windows Masaüstü**. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**.
+1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **yüklü**, **Visual C++** seçeneğini belirleyip **Windows Masaüstü**. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**.
 
    İçinde **adı** kutusunda, proje için bir ad yazın, örneğin, *DesktopApp*. Seçin **Tamam**.
 
@@ -74,11 +71,11 @@ Windows API (olarak da bilinen Win32 API, Windows Masaüstü API ve Windows Klas
 
 Projeniz şimdi oluşturulur ve kaynak dosyanızı Düzenleyicisi'nde açılır. Devam etmek için İleri atlayabilirsiniz [kod oluşturma](#create-the-code).
 
-### <a id="create-in-vs2017-rtm"></a>Visual Studio 2017 RTM ile bir Windows Masaüstü projesi oluşturmak için
+### <a id="create-in-vs2017-rtm"></a> Visual Studio 2017 RTM ile bir Windows Masaüstü projesi oluşturmak için
 
 1. Üzerinde **dosya** menüsünde seçin **yeni** ve ardından **proje**.
 
-1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **yüklü**, **şablonları**, **Visual C++**ve ardından **Win32**. Orta bölmede seçin **Win32 Proje**.
+1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, genişletin **yüklü**, **şablonları**, **Visual C++** ve ardından **Win32**. Orta bölmede seçin **Win32 Proje**.
 
    İçinde **adı** kutusunda, proje için bir ad yazın, örneğin, *DesktopApp*. Seçin **Tamam**.
 
@@ -108,7 +105,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
 
 ### <a name="to-start-a-windows-desktop-application"></a>Bir Windows masaüstü uygulaması başlatmak için
 
-1. Yalnızca her C uygulama ve C++ uygulaması olmalıdır bir `main` işlev başlangıç noktası olarak her Windows masaüstü uygulaması olmalıdır bir `WinMain` işlevi. `WinMain`sözdizimi aşağıdaki gibidir.
+1. Yalnızca her C uygulama ve C++ uygulaması olmalıdır bir `main` işlev başlangıç noktası olarak her Windows masaüstü uygulaması olmalıdır bir `WinMain` işlevi. `WinMain` sözdizimi aşağıdaki gibidir.
 
    ```cpp
    int CALLBACK WinMain(
@@ -131,7 +128,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    #include <tchar.h>
    ```
 
-1. Ek olarak `WinMain` işlevi, her Windows masaüstü uygulaması penceresini yordamı işlevi olması gerekir. Bu işlev genellikle adlı `WndProc` ancak istediğiniz gibi adlandırabilirsiniz. `WndProc`sözdizimi aşağıdaki gibidir.
+1. Ek olarak `WinMain` işlevi, her Windows masaüstü uygulaması penceresini yordamı işlevi olması gerekir. Bu işlev genellikle adlı `WndProc` ancak istediğiniz gibi adlandırabilirsiniz. `WndProc` sözdizimi aşağıdaki gibidir.
 
    ```cpp
    LRESULT CALLBACK WndProc(
@@ -369,7 +366,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    }
    ```
 
-   `HDC`Bu kodda grafik alt sistemi ile iletişim kurmak uygulamanızı etkinleştirmek için Windows kullanan bir veri yapısıdır bir cihaz bağlamı için bir tanıtıcı değil. `BeginPaint` Ve `EndPaint` İşlevler, uygulamanızın iyi vatandaşı gibi davranır ve cihaz bağlamı için gerekenden daha uzun süre kullanmayan emin olun. Bu grafik alt sistemi diğer uygulamalar tarafından kullanılabilir olduğundan emin olun yardımcı olur.
+   `HDC` Bu kodda grafik alt sistemi ile iletişim kurmak uygulamanızı etkinleştirmek için Windows kullanan bir veri yapısıdır bir cihaz bağlamı için bir tanıtıcı değil. `BeginPaint` Ve `EndPaint` İşlevler, uygulamanızın iyi vatandaşı gibi davranır ve cihaz bağlamı için gerekenden daha uzun süre kullanmayan emin olun. Bu grafik alt sistemi diğer uygulamalar tarafından kullanılabilir olduğundan emin olun yardımcı olur.
 
 1. Örneğin, genellikle işleme diğer birçok iletileri bir uygulama [WM_CREATE](https://msdn.microsoft.com/library/windows/desktop/ms632619) bir pencere ilk oluşturulduğunda ve [WM_DESTROY](https://msdn.microsoft.com/library/windows/desktop/ms632620) zaman penceresi kapatıldığında. Aşağıdaki kod temel gösterir ancak tamamlamak `WndProc` işlevi.
 

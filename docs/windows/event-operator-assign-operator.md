@@ -1,12 +1,9 @@
 ---
-title: "Event::operator = işleci | Microsoft Docs"
-ms.custom: 
+title: Event::operator = işleci | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Event::operator=
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - operator= operator
 ms.assetid: d8fe9820-8856-4899-9553-56226bdc4945
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: de46ba0d6749120fc391b4a55527904ed1321ad9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d3da41ff7fd145889ec799bb2f8ebe99aed36934
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="eventoperator-operator"></a>Event::operator= İşleci
 Geçerli olay örneği belirtilen olay referansı atar.  

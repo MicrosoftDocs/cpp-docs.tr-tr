@@ -1,27 +1,22 @@
 ---
-title: "2.9 yönerge iç içe geçme | Microsoft Docs"
-ms.custom: 
+title: 2.9 yönerge iç içe geçme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 6565a43c-fd2d-4366-8322-8d75e1b06600
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd3c4f790681b1b044f435c03d185585b565eb62
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 28e690ba531b4b37973bc2555d904317181ff918
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="29-directive-nesting"></a>2.9 Yönerge İç İçe Koyma
 Dinamik iç içe geçmiş yönergeleri aşağıdaki kurallara uymalıdır:  

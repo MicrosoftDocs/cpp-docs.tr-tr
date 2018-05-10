@@ -1,12 +1,9 @@
 ---
-title: "döngü | Microsoft Docs"
-ms.custom: 
+title: döngü | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - loop_CPP
@@ -14,17 +11,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 6d5bb428-cead-47e7-941d-7513bbb162c7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3e076c48b512c6059a2f574a07f6e77acfaca22
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 9af0e01cd29d6fe89e0cd0d6c5ff4a7030909799
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="loop"></a>loop
 Döngü kodunun otomatik paralel hale getirici tarafından nasıl kullanılacağını denetler ve/veya bir döngünün otomatik vektör hale getirici tarafından dikkate alınmamasını sağlar.  

@@ -1,12 +1,9 @@
 ---
-title: "task_handle sınıfı | Microsoft Docs"
-ms.custom: 
+title: task_handle sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - task_handle
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - task_handle class
 ms.assetid: 74a34b15-708b-4231-a509-947874292b13
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42fcc201007a26a111f50036b273cab2850b28a3
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 3fa72ed19a691015214fe263033e07f8d6a74c34
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="taskhandle-class"></a>task_handle Sınıfı
 `task_handle` Sınıfı, bir tek tek paralel iş öğesini temsil eder. Yönergeler ve bir parça işin yürütmek için gerekli verileri saklar.  
@@ -52,7 +47,7 @@ class task_handle : public ::Concurrency::details::_UnrealizedChore;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[task_handle](#ctor)|Yeni bir oluşturur `task_handle` nesnesi. Görev iş Oluşturucusu parametre olarak belirtilen işlevini çağırarak gerçekleştirilir.|  
-|[~task_handle Destructor](#dtor)|Bozar `task_handle` nesnesi.|  
+|[~ task_handle yok Edicisi](#dtor)|Bozar `task_handle` nesnesi.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   

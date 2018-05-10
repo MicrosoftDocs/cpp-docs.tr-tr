@@ -2,11 +2,8 @@
 title: '&lt;dize&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - string/std::<string>
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - string header
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
-caps.latest.revision: 23
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f915ab0378784b9a8979a422b061c4ef7c155ee6
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: d335c684ab46846e9d3c49ef45522cf7288d916a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltstringgt"></a>&lt;string&gt;
 

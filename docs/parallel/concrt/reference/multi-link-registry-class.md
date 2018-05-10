@@ -1,12 +1,9 @@
 ---
-title: "multi_link_registry sınıfı | Microsoft Docs"
-ms.custom: 
+title: multi_link_registry sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - multi_link_registry
@@ -23,17 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - multi_link_registry class
 ms.assetid: b2aa73a8-e8a6-4255-b117-d07530c328b2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f87da4852fff0256b5ca55cfd47d839531b8a03
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 5fbe52298f267fabb2ba326e3e1c7b66f4ad49ef
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="multilinkregistry-class"></a>multi_link_registry Sınıfı
 `multi_link_registry` Nesne bir `network_link_registry` birden çok kaynak blokları veya birden çok hedef blokları yönetir.  
@@ -56,17 +51,17 @@ class multi_link_registry : public network_link_registry<_Block>;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[multi_link_registry](#ctor)|Oluşturan bir `multi_link_registry` nesnesi.|  
-|[~multi_link_registry Destructor](#dtor)|Bozar `multi_link_registry` nesnesi.|  
+|[~ multi_link_registry yok Edicisi](#dtor)|Bozar `multi_link_registry` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[add](#add)|Bir bağlantı ekler `multi_link_registry` nesnesi. (Overrides [network_link_registry::add](network-link-registry-class.md#add).)|  
+|[add](#add)|Bir bağlantı ekler `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::add](network-link-registry-class.md#add).)|  
 |[Başlangıç](#begin)|Yineleyici ilk öğe döndürür `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::begin](network-link-registry-class.md#begin).)|  
-|[içerir](#contains)|Aramaları `multi_link_registry` belirtilen bloğu için nesnesi. (Overrides [network_link_registry::contains](network-link-registry-class.md#contains).)|  
-|[Sayısı](#count)|Öğeleri sayar `multi_link_registry` nesnesi. (Overrides [network_link_registry::count](network-link-registry-class.md#count).)|  
-|[remove](#remove)|Bir bağlantıdan kaldırır `multi_link_registry` nesnesi. (Overrides [network_link_registry::remove](network-link-registry-class.md#remove).)|  
+|[içerir](#contains)|Aramaları `multi_link_registry` belirtilen bloğu için nesnesi. (Geçersiz kılmaları [network_link_registry::contains](network-link-registry-class.md#contains).)|  
+|[Sayısı](#count)|Öğeleri sayar `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::count](network-link-registry-class.md#count).)|  
+|[remove](#remove)|Bir bağlantıdan kaldırır `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::remove](network-link-registry-class.md#remove).)|  
 |[set_bound](#set_bound)|Bağlantı sayısı üst sınırı ayarlayan `multi_link_registry` hold nesnesi.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
@@ -94,7 +89,7 @@ virtual void add(_EType _Link);
 ### <a name="remarks"></a>Açıklamalar  
  Yöntem oluşturulur bir [invalid_link_target](invalid-link-target-class.md) özel durum bağlantıyı kayıt defterinde zaten varsa veya bir bağlama zaten ayarlanmış ile `set_bound` işlevi ve bağlantı kaldırılmışsa.  
   
-##  <a name="begin">Başlangıç</a> 
+##  <a name="begin"></a> Başlangıç 
 
  Yineleyici ilk öğe döndürür `multi_link_registry` nesnesi.  
   
@@ -108,7 +103,7 @@ virtual iterator begin();
 ### <a name="remarks"></a>Açıklamalar  
  Son durum belirtilir bir `NULL` bağlantı.  
   
-##  <a name="contains">içerir</a> 
+##  <a name="contains"></a> içerir 
 
  Aramaları `multi_link_registry` belirtilen bloğu için nesnesi.  
   
@@ -123,7 +118,7 @@ virtual bool contains(_EType _Link);
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Belirtilen blok bulunduysa `false` Aksi takdirde.  
   
-##  <a name="count">Sayısı</a> 
+##  <a name="count"></a> Sayısı 
 
  Öğeleri sayar `multi_link_registry` nesnesi.  
   
@@ -142,7 +137,7 @@ virtual size_t count();
 multi_link_registry();
 ```  
   
-##  <a name="dtor"></a> ~multi_link_registry 
+##  <a name="dtor"></a> ~ multi_link_registry 
 
  Bozar `multi_link_registry` nesnesi.  
   

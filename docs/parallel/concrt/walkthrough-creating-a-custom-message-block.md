@@ -1,30 +1,25 @@
 ---
-title: "İzlenecek yol: özel bir ileti bloğu oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: özel bir ileti bloğu oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - creating custom message blocks Concurrency Runtime]
 - custom message blocks, creating [Concurrency Runtime]
 ms.assetid: 4c6477ad-613c-4cac-8e94-2c9e63cd43a1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ff7dd60dbb91d88377f481510ea0e213f18098a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fa70cf40851815ff92f01405d47015afd2e3e444
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="walkthrough-creating-a-custom-message-block"></a>İzlenecek Yol: Özel bir İleti Bloğu Oluşturma
 Bu belge, gelen iletileri önceliğe göre sıralar özel ileti blok türü oluşturmayı açıklar.  
@@ -38,7 +33,7 @@ Bu belge, gelen iletileri önceliğe göre sıralar özel ileti blok türü olu�
   
 - [İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Bu kılavuz aşağıdaki bölümleri içerir:  
   
 - [Özel bir ileti bloğu tasarlama](#design)  
@@ -47,7 +42,7 @@ Bu belge, gelen iletileri önceliğe göre sıralar özel ileti blok türü olu�
   
 - [Tam bir örnek](#complete)  
   
-##  <a name="design"></a>Özel bir ileti bloğu tasarlama  
+##  <a name="design"></a> Özel bir ileti bloğu tasarlama  
  İleti blokları ileti gönderme ve alma işlemi içinde katılın. İletiler gönderen bir ileti bloğu olarak bilinen bir *kaynak blok*. İletileri alan bir ileti bloğu olarak bilinen bir *hedef blok*. Hem ileti alıp gönderen bir ileti bloğu olarak bilinen bir *yayılması blok*. Aracılar Kitaplığı soyut sınıf kullanan [concurrency::ISource](../../parallel/concrt/reference/isource-class.md) kaynak blokları ve soyut sınıf temsil etmek için [concurrency::ITarget](../../parallel/concrt/reference/itarget-class.md) hedef blokları temsil etmek için. İleti bloğu türleri bu act kaynakları türetin gibi `ISource`; ileti bloğu türleri bu act hedefleri türetin gibi `ITarget`.  
   
  İleti bloğu türünüzü doğrudan türetilemeyeceğini rağmen `ISource` ve `ITarget`, aracılar kitaplığı hataları işleme Örneğin, tüm ileti bloğu türleri için ortak olan işlevlerinin çoğunu gerçekleştirmek üç temel sınıf tanımlar ve ileti blokları, bir eşzamanlılık güvenli şekilde birbirine bağlama. [Concurrency::source_block](../../parallel/concrt/reference/source-block-class.md) sınıfı türer `ISource` ve diğer bloklarına iletileri gönderir. [Concurrency::target_block](../../parallel/concrt/reference/target-block-class.md) sınıfı türer `ITarget` ve diğer bloklarından iletilerini alır. [Concurrency::propagator_block](../../parallel/concrt/reference/propagator-block-class.md) sınıfı türer `ISource` ve `ITarget` ve gönderdiği iletileri diğer blokları ve diğer bloklarından iletileri alır. İleti bloğu davranışını odaklanabilmeniz altyapı ayrıntıları işlemek için bu üç temel sınıfları kullanmanızı öneririz.  
@@ -73,10 +68,10 @@ Bu belge, gelen iletileri önceliğe göre sıralar özel ileti blok türü olu�
   
  [[Üst](#top)]  
   
-##  <a name="class"></a>Sınıf priority_buffer tanımlama  
+##  <a name="class"></a> Sınıf priority_buffer tanımlama  
  `priority_buffer` Sınıftır gelen iletileri önceliğine göre ve iletileri alınan sıraya göre ilk siparişleri özel ileti blok türü. `priority_buffer` Sınıfı benzer [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) iletileri kuyruğunu tutan çünkü sınıf ve ayrıca hem kaynak hem de hedef ileti bloğu olarak davranır ve birden çok kaynağı ve birden çok olabilir çünkü hedefler. Ancak, `unbounded_buffer` tabanları yayma yalnızca içinde aldığı iletileri kendi kaynaklardan sipariş iletisi.  
   
- `priority_buffer` Sınıf türü iletileri alır std::[tanımlama grubu](../../standard-library/tuple-class.md) içeren `PriorityType` ve `Type` öğeleri. `PriorityType`her iletinin önceliğini tutan bir türe başvurur; `Type` iletisinin veri bölümünü başvuruyor. `priority_buffer` Sınıfı türden iletileri gönderir `Type`. `priority_buffer` Sınıfı da iki ileti kuyrukları yönetir: bir [std::priority_queue](../../standard-library/priority-queue-class.md) gelen iletiler için nesne ve bir std::[sıra](../../standard-library/queue-class.md) giden iletiler için nesne. İletileri öncelik sırasına göre sıralama yararlı bir `priority_buffer` nesne birden çok iletileri aynı anda alır veya ne zaman aldığı birden fazla ileti herhangi bir ileti tüketiciler tarafından okumadan önce.  
+ `priority_buffer` Sınıf türü iletileri alır std::[tanımlama grubu](../../standard-library/tuple-class.md) içeren `PriorityType` ve `Type` öğeleri. `PriorityType` her iletinin önceliğini tutan bir türe başvurur; `Type` iletisinin veri bölümünü başvuruyor. `priority_buffer` Sınıfı türden iletileri gönderir `Type`. `priority_buffer` Sınıfı da iki ileti kuyrukları yönetir: bir [std::priority_queue](../../standard-library/priority-queue-class.md) gelen iletiler için nesne ve bir std::[sıra](../../standard-library/queue-class.md) giden iletiler için nesne. İletileri öncelik sırasına göre sıralama yararlı bir `priority_buffer` nesne birden çok iletileri aynı anda alır veya ne zaman aldığı birden fazla ileti herhangi bir ileti tüketiciler tarafından okumadan önce.  
   
  Yedi yöntemleri yanı sıra bir sınıf, türeyen olduğunu `propagator_block` uygulamalıdır, `priority_buffer` sınıfı ayrıca geçersiz kılmaları `link_target_notification` ve `send_message` yöntemleri. `priority_buffer` Sınıfı ayrıca tanımlayan iki ortak yardımcı yöntemler `enqueue` ve `dequeue`ve bir özel yardımcı yöntemi `propagate_priority_order`.  
   
@@ -193,7 +188,7 @@ Bu belge, gelen iletileri önceliğe göre sıralar özel ileti blok türü olu�
   
  [[Üst](#top)]  
   
-##  <a name="complete"></a>Tam bir örnek  
+##  <a name="complete"></a> Tam bir örnek  
  Aşağıdaki örnek eksiksiz tanımını gösterir `priority_buffer` sınıfı.  
   
  [!code-cpp[concrt-priority-buffer#18](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_19.h)]  

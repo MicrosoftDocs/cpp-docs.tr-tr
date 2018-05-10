@@ -1,13 +1,10 @@
 ---
-title: "Uygulama ayarları, Win 32 Proje Sihirbazı | Microsoft Docs"
-ms.custom: 
+title: Uygulama ayarları, Win 32 Proje Sihirbazı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.appwiz.win32.appset
 dev_langs:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - application settings [C++]
 - Win32 Project Wizard, application settings
 ms.assetid: d6b818f0-9b23-4793-a6c5-df1c8c594bad
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7f93e81d5d030112f436ad93a53c2a65854b38f7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 55ae50d849a67da69cde6a9c4b1529c34ee4b428
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="application-settings-win-32-project-wizard"></a>Uygulama Ayarları, Win 32 Proje Sihirbazı
 Win32 Proje seçeneklerini ayarlamak için sihirbazın bu sayfayı kullanın.  

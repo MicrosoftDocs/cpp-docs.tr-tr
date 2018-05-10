@@ -1,27 +1,22 @@
 ---
-title: "3.1.8 omp_get_dynamic işlevi | Microsoft Docs"
-ms.custom: 
+title: 3.1.8 omp_get_dynamic işlevi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: c03e2daf-29c9-49e3-9b67-b980ad1ab195
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd4ec73b82848efcdface781738639b05a256958
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: af7755173ab884a40a5f8a41f432f265cc1e6c32
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="318-ompgetdynamic-function"></a>3.1.8 omp_get_dynamic İşlevi
 **Omp_get_dynamic** işlevi, iş parçacıklarının dinamik ayarlama etkinleştirilmişse ve 0 döndürür sıfır olmayan bir değer döndürür. Biçimi aşağıdaki gibidir:  

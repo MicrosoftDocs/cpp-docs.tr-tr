@@ -2,26 +2,21 @@
 title: Grafikler (C++ AMP) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+- cpp-amp
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c187ebc4eeb3917ce01e63c6c0769ffa0a570368
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
-ms.translationtype: HT
+ms.openlocfilehash: daff070700c37734e6239514d196f02ee1351c00
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="graphics-c-amp"></a>Grafikler (C++ AMP)
 C++ AMP içeren birkaç API'leri [Concurrency::graphics](../../parallel/amp/reference/concurrency-graphics-namespace.md) GPU doku desteğini erişmek için kullanabileceği bir ad alanı. Bazı genel senaryolar şunlardır:  
@@ -148,7 +143,7 @@ void createTextureWithBPC() { // Create the source data.
 |-------------|---------------------|  
 |Doku\<T, 1 >|16384|  
 |Doku\<T, 2 >|16384|  
-|Doku\<T, 2 >|2048|  
+|Doku\<T, 3 >|2048|  
   
 ### <a name="reading-from-texture-objects"></a>Doku nesnelerinden okuma  
  Bilgi edinebilirsiniz bir `texture` kullanarak nesne [texture::operator\[\]](reference/texture-class.md#operator_at), [texture:: operator() işleci](reference/texture-class.md#operator_call), veya [texture::getyöntemi](reference/texture-class.md#get). İki işleç bir değer, bir başvuru döndürür. Bu nedenle, yazamaz bir `texture` kullanarak nesne `texture::operator\[\]`.  

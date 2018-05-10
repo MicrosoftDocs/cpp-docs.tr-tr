@@ -1,12 +1,9 @@
 ---
-title: "writeonly_texture_view sınıfı | Microsoft Docs"
-ms.custom: 
+title: writeonly_texture_view sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - writeonly_texture_view
@@ -17,17 +14,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 8d117ad3-0a1c-41ae-b29c-7c95fdd4d04d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3ab115301a6d7063ba443cf528b382ae955360f
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: a6b1bc5c90fd837f56dbd98eddb37f624e78080b
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="writeonlytextureview-class"></a>writeonly_texture_view Sınıfı
 Bir doku WriteOnly erişim sağlar.  
@@ -68,8 +63,8 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[writeonly_texture_view Constructor](#ctor)|Yeni bir örneğini başlatır `writeonly_texture_view` sınıfı.|  
-|[~writeonly_texture_view Destructor](#ctor)|Bozar `writeonly_texture_view` nesnesi.|  
+|[writeonly_texture_view Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `writeonly_texture_view` sınıfı.|  
+|[~ writeonly_texture_view yok Edicisi](#ctor)|Bozar `writeonly_texture_view` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -99,7 +94,7 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="dtor"></a> ~writeonly_texture_view 
+##  <a name="dtor"></a> ~ writeonly_texture_view 
 
  Bozar `writeonly_texture_view` nesnesi.  
   
@@ -131,7 +126,7 @@ writeonly_texture_view<value_type, _Rank>& operator= (
 static const int rank = _Rank;  
 ```  
   
-##  <a name="set"></a> set 
+##  <a name="set"></a> ayarlama 
 
  Öğesinin değeri belirtilen dizindeki ayarlar.  
   

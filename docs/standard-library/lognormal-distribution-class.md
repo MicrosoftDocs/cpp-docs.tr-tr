@@ -2,11 +2,8 @@
 title: lognormal_distribution sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - random/std::lognormal_distribution
@@ -35,17 +32,15 @@ helpviewer_keywords:
 - std::lognormal_distribution [C++], param_type
 - std::lognormal_distribution [C++], param_type
 ms.assetid: f2d6a431-6c3a-4370-b12e-4adb4ddf6cc4
-caps.latest.revision: 15
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e7b112808c09bfc376dff7489f85994f268c24d
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 72b42546f140dfd150676c8bc21b4b651815281f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="lognormaldistribution-class"></a>lognormal_distribution Sınıfı
 

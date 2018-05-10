@@ -1,12 +1,9 @@
 ---
 title: omp_get_num_threads | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - omp_get_num_threads
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - omp_get_num_threads OpenMP function
 ms.assetid: e7c3cea1-44ac-435d-866e-2b7bc477e807
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e89c922d0382a3f795f061f61cd6bbee0fc35f53
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: d1bae5ecb95445d9a3cf161b2eafa407c5dca112
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ompgetnumthreads"></a>omp_get_num_threads
 İş parçacığı sayısını paralel bölgede döndürür.  

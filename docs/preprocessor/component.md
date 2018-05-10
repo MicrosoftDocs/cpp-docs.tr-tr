@@ -1,12 +1,9 @@
 ---
-title: "Bileşen | Microsoft Docs"
-ms.custom: 
+title: Bileşen | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vc-pragma.component
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - component pragma
 - pragmas, component
 ms.assetid: 7b66355e-3201-4c14-8190-f4a2a81a604a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3edb2f68b479eeadca777e0707dd96e148d13fe8
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 5bb453e8fe9d21c25292c4e5f94de90dcc67676a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="component"></a>bileşenleri
 Gözatma bilgilerinin ya da kaynak dosyalarından bağımlılık bilgilerinin toplanmasını denetler.  

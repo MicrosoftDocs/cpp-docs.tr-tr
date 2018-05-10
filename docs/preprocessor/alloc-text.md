@@ -1,12 +1,9 @@
 ---
 title: alloc_text | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vc-pragma.alloc_text
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - alloc_text pragma
 - pragmas, alloc_text
 ms.assetid: 1fd7be18-e4f7-4f70-b079-6326f72b871a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b93885663a3d8e037ded97fb7fd16eb5fed9bff8
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: a1e07b630254d7691321443a74973e06ed50ae2d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="alloctext"></a>alloc_text
 Belirtilen işlev tanımlarının bulunduğu kod bölümünü adlandırır. Pragma, işlev bildirimcisi ve adlandırılan işlevlerin işlev tanımı arasında gerçekleşmelidir.  

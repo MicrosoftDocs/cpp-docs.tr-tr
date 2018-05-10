@@ -2,11 +2,8 @@
 title: modulus yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xfunctional/std::modulus
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - modulus class
 - modulus struct
 ms.assetid: 86d342f7-b7b1-46a4-b0bb-6b7ae827369b
-caps.latest.revision: 20
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3628e50821bdf44722c46fd31bfd05e133e975d4
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 226e9895d7ddc199e2f15c3721228f59c0e5a0ac
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="modulus-struct"></a>modulus Yapısı
 

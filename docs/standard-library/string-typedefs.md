@@ -2,9 +2,6 @@
 title: '&lt;dize&gt; tür tanımları | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - string/std::string
@@ -12,13 +9,11 @@ f1_keywords:
 - string/std::u32string
 - string/std::wstring
 ms.assetid: fdca01e9-f2f1-4b59-abda-0093d760b3cc
-caps.latest.revision: 12
-manager: ghogen
-ms.openlocfilehash: c485457b5fefb1b95e5fe0304ec897aef16d9fbe
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 2d3f63ab29049e5f5a928186ba033bfe041bcfc1
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltstringgt-typedefs"></a>&lt;dize&gt; tür tanımları
 

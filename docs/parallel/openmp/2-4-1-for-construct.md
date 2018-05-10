@@ -1,27 +1,22 @@
 ---
-title: "2.4.1 yapı için | Microsoft Docs"
-ms.custom: 
+title: 2.4.1 yapı için | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 27d2cbce-786b-4819-91d3-d55b2cc57a5e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd861da77b549a73edf9aeface714b0066d88344
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d5165c21f0bf6f2b9757550208d5e8e26a2bd3b1
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="241-for-construct"></a>2.4.1 Yapı için
 **İçin** yönergesi ilişkili döngü yinelemelerini paralel olarak yürütülecek belirten bir yinelemeli iş paylaşım yapısıyla tanımlar. Yinelemelerini **için** döngü bağlar, paralel yapı yürütme grupta zaten iş parçacıkları arasında dağıtılır. Söz dizimi **için** yapı aşağıdaki gibidir:  
@@ -38,7 +33,7 @@ ms.lasthandoff: 12/21/2017
   
  **lastprivate (** *değişken listesi* **)**  
   
- **azaltma (** *işleci* **:** *değişken listesi***)**  
+ **azaltma (** *işleci* **:** *değişken-liste ***)**  
   
  **sıralı**  
   
@@ -48,7 +43,7 @@ ms.lasthandoff: 12/21/2017
   
  **İçin** yönergesi yerleştirir kısıtlamaları ilgili yapısına **için** döngü. Özellikle, karşılık gelen **için** döngü kurallı şekli olması gerekir:  
   
- **için (** *init expr* **;** *var op mantıksal b*; *incr expr***)**  
+ **için (** *init expr* **;** *var op mantıksal b*; *incr-expr ***)**  
   
  *Init ifade*  
  Aşağıdakilerden biri:  
@@ -103,9 +98,9 @@ ms.lasthandoff: 12/21/2017
   
 |||  
 |-|-|  
-|static|Zaman **zamanlama (statik,** *chunk_size***)** belirtilirse, yineleme tarafından belirlenen bir boyutta parçalara bölünür *chunk_size*. Öbek hepsini şekilde iş parçacığı sayısı sırasına göre takım iş parçacıklarında statik olarak atanmış. Durumlarda *chunk_size* belirtilirse, yineleme alanı, her iş parçacığı için atanan bir Öbek ile boyutu, yaklaşık olarak eşit olan parçalara bölünür.|  
-|dinamik|Zaman **zamanlama (dinamik** *chunk_size***)** belirtilirse, yinelemeleri öbekleri, her içeren bir dizi bölünen *chunk_size* yineleme. Her öbek atama için bekleyen bir iş parçacığı atanır. İş parçacığı yineleme öbek yürütür ve atanacak hiçbir öbekleri kalana kadar sonraki ataması için bekler. Atanacak son öbek yineleme daha az sayıda gerekebileceğini unutmayın. Durumlarda *chunk_size* belirtilmemişse, varsayılan olarak, 1.|  
-|Destekli|Zaman **zamanlama (Destekli,** *chunk_size***)** belirtilirse, yinelemeleri öbek boyutları azalan ile iş parçacıklarında atanır. Bir iş parçacığı, atanan öbek tekrar sona erdiğinde, hiçbiri kalana kadar dinamik olarak başka bir öbek atanır. İçin bir *chunk_size* 1, her öbek boyutu yaklaşık atanmamış yineleme iş parçacıklarını numarasına göre bölünmüş sayısıdır. Bu boyutları yaklaşık 1 katlanarak azaltın. İçin bir *chunk_size* değerle *k* 1 ' den büyük boyutları yaklaşık katlanarak çok azaltmak *k*, son öbek daha az olabilir ancak bu  *k* yineleme. Durumlarda *chunk_size* belirtilmemişse, varsayılan olarak, 1.|  
+|static|Zaman **zamanlama (statik,** *chunk_size ***)** belirtilirse, yineleme tarafından belirlenen bir boyutta parçalara bölünür *chunk_size*. Öbek hepsini şekilde iş parçacığı sayısı sırasına göre takım iş parçacıklarında statik olarak atanmış. Durumlarda *chunk_size* belirtilirse, yineleme alanı, her iş parçacığı için atanan bir Öbek ile boyutu, yaklaşık olarak eşit olan parçalara bölünür.|  
+|dinamik|Zaman **zamanlama (dinamik** *chunk_size ***)** belirtilirse, yinelemeleri öbekleri, her içeren bir dizi bölünen *chunk_size* yineleme. Her öbek atama için bekleyen bir iş parçacığı atanır. İş parçacığı yineleme öbek yürütür ve atanacak hiçbir öbekleri kalana kadar sonraki ataması için bekler. Atanacak son öbek yineleme daha az sayıda gerekebileceğini unutmayın. Durumlarda *chunk_size* belirtilmemişse, varsayılan olarak, 1.|  
+|Destekli|Zaman **zamanlama (Destekli,** *chunk_size ***)** belirtilirse, yinelemeleri öbek boyutları azalan ile iş parçacıklarında atanır. Bir iş parçacığı, atanan öbek tekrar sona erdiğinde, hiçbiri kalana kadar dinamik olarak başka bir öbek atanır. İçin bir *chunk_size* 1, her öbek boyutu yaklaşık atanmamış yineleme iş parçacıklarını numarasına göre bölünmüş sayısıdır. Bu boyutları yaklaşık 1 katlanarak azaltın. İçin bir *chunk_size* değerle *k* 1 ' den büyük boyutları yaklaşık katlanarak çok azaltmak *k*, son öbek daha az olabilir ancak bu  *k* yineleme. Durumlarda *chunk_size* belirtilmemişse, varsayılan olarak, 1.|  
 |çalışma zamanı|Zaman **schedule(runtime)** belirtilirse, ilgili planlama çalışma zamanına kadar ertelenmiş karar. Zamanlama *türü* ve öbek boyutunu seçilebilir çalışma zamanında ortam değişkenini ayarlayarak **OMP_SCHEDULE**. Bu ortam değişkeni ayarlanmamış ise, sonuçta elde edilen zamanlaması uygulama tanımlı değildir. Zaman **schedule(runtime)** belirtilirse, *chunk_size* belirtilmemelidir.|  
   
  İçinde açıkça tanımlanmış yokluğu **zamanlama** yan tümcesi, varsayılan **zamanlama** uygulama tanımlı değil.  

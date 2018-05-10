@@ -1,28 +1,23 @@
 ---
-title: "Nasıl yapılır: WRL kullanarak olayları işleme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: WRL kullanarak olayları işleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 1c77543f-7b0c-4a94-93bf-e3225885ed76
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f79d35267750c42466a0b2448f9b10c37fe81f05
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: a3c1666d1c79414beddc5b5e3ccc03953c92e902
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="how-to-handle-events-using-wrl"></a>Nasıl Yapılır: WRL Kullanarak Olayları İşleme
 Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) abone olma ve Windows çalışma zamanı nesne olayları işlemek için nasıl kullanılacağını gösterir.  
@@ -96,7 +91,7 @@ Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) abone olma ve
 ## <a name="compiling-the-code"></a>Kod Derleniyor  
  Kodu derlemek için kopyalayın ve ardından bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-events.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
   
- **cl.exe wrl-consume-events.cpp runtimeobject.lib**  
+ **cl.exe wrl tüketen events.cpp runtimeobject.lib**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

@@ -1,30 +1,25 @@
 ---
-title: "Nasıl yapılır: eşzamanlılık çalışma zamanı kullanmak için azaltma değişkeni kullanan bir OpenMP döngüsünü dönüştürme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: eşzamanlılık çalışma zamanı kullanmak için azaltma değişkeni kullanan bir OpenMP döngüsünü dönüştürme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - converting from OpenMP to the Concurrency Runtime, reduction variables
 - reduction variables, converting from OpenMP to the Concurrency Runtime
 ms.assetid: 96623f36-5e57-4d3f-8c13-669e6cd535b1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f218bbc47fa33e6cc9546d032311417d9e10d554
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0191f88eea47d21c730172ddb3594db7655006ca
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-convert-an-openmp-loop-that-uses-a-reduction-variable-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için Azaltma Değişkeni Kullanan bir OpenMP Döngüsünü Dönüştürme
 Bu örnek bir OpenMP dönüştürülmesi gösterilmektedir [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) kullanan döngüsünü [azaltma](../../parallel/openmp/reference/reduction.md) eşzamanlılık çalışma zamanı kullanmak için yan tümcesi.  

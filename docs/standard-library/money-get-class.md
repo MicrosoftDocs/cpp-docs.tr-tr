@@ -2,11 +2,8 @@
 title: money_get sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xlocmon/std::money_get
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - std::money_get [C++], do_get
 - std::money_get [C++], get
 ms.assetid: 692d3374-3fe7-4b46-8aeb-f8d91ed66b2e
-caps.latest.revision: 18
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf15eb9f6c03b54d31f72326179d676883575048
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 1e3059a4291d21e11304fdf571d2e12828df26fb
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="moneyget-class"></a>money_get Sınıfı
 

@@ -1,12 +1,9 @@
 ---
-title: "norm_4 sınıfı | Microsoft Docs"
-ms.custom: 
+title: norm_4 sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_4::grab
@@ -277,17 +274,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: d628b2bf-2cdb-4dbb-95c6-cd778f5e991f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e15af7601483fd1d69462291c9c45dc62b5aded4
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 3df6a0cb46985b90b6b8098d7355c33439143949
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="norm4-class"></a>norm_4 Sınıfı
 Kısa bir vektör dört normal sayıların temsil eder.  
@@ -459,11 +454,11 @@ class norm_4;
 |----------|-----------------|  
 |norm_4::operator-||  
 |norm_4::operator--||  
-|norm_4::operator*=||  
-|norm_4::operator/=||  
-|norm_4::operator++||  
-|norm_4::operator+=||  
-|norm_4::operator=||  
+|norm_4::operator * =||  
+|norm_4::operator ve =||  
+|norm_4::operator ++||  
+|norm_4::operator +=||  
+|norm_4::operator =||  
 |norm_4::operator-=||  
   
 ### <a name="public-constants"></a>Genel sabitler  
@@ -477,12 +472,12 @@ class norm_4;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |norm_4::a||  
-|norm_4::ab||  
+|norm_4::AB||  
 |norm_4::abg||  
 |norm_4::abgr||  
-|norm_4::abr||  
+|norm_4::ABR||  
 |norm_4::abrg||  
-|norm_4::ag||  
+|norm_4::AG||  
 |norm_4::agb||  
 |norm_4::agbr||  
 |norm_4::agr||  
@@ -491,20 +486,20 @@ class norm_4;
 |norm_4::arb||  
 |norm_4::arbg||  
 |norm_4::arg||  
-|norm_4::argb||  
+|norm_4::ARGB||  
 |norm_4::b||  
 |norm_4::ba||  
-|norm_4::bag||  
+|norm_4::BAG||  
 |norm_4::bagr||  
 |norm_4::bar||  
 |norm_4::barg||  
 |norm_4::bg||  
-|norm_4::bga||  
+|norm_4::BGA||  
 |norm_4::bgar||  
-|norm_4::bgr||  
+|norm_4::BGR||  
 |norm_4::bgra||  
 |norm_4::br||  
-|norm_4::bra||  
+|norm_4::BRA||  
 |norm_4::brag||  
 |norm_4::brg||  
 |norm_4::brga||  
@@ -514,15 +509,15 @@ class norm_4;
 |norm_4::gabr||  
 |norm_4::gar||  
 |norm_4::garb||  
-|norm_4::gb||  
-|norm_4::gba||  
+|norm_4::GB||  
+|norm_4::Gba||  
 |norm_4::gbar||  
-|norm_4::gbr||  
+|norm_4::GBR||  
 |norm_4::gbra||  
-|norm_4::gr||  
-|norm_4::gra||  
-|norm_4::grab||  
-|norm_4::grb||  
+|norm_4::Gr||  
+|norm_4::Gra||  
+|norm_4::Grab||  
+|norm_4::Grb||  
 |norm_4::grba||  
 |norm_4::r||  
 |norm_4::ra||  
@@ -530,7 +525,7 @@ class norm_4;
 |norm_4::rabg||  
 |norm_4::rag||  
 |norm_4::ragb||  
-|norm_4::rb||  
+|norm_4::RB||  
 |norm_4::rba||  
 |norm_4::rbag||  
 |norm_4::rbg||  
@@ -542,16 +537,16 @@ class norm_4;
 |norm_4::rgba||  
 |norm_4::w||  
 |norm_4::wx||  
-|norm_4::wxy||  
+|norm_4::WXY||  
 |norm_4::wxyz||  
 |norm_4::wxz||  
 |norm_4::wxzy||  
 |norm_4::wy||  
 |norm_4::wyx||  
 |norm_4::wyxz||  
-|norm_4::wyz||  
+|norm_4::WYZ||  
 |norm_4::wyzx||  
-|norm_4::wz||  
+|norm_4::wZ||  
 |norm_4::wzx||  
 |norm_4::wzxy||  
 |norm_4::wzy||  
@@ -583,7 +578,7 @@ class norm_4;
 |norm_4::yxwz||  
 |norm_4::yxz||  
 |norm_4::yxzw||  
-|norm_4::yz||  
+|norm_4::YZ||  
 |norm_4::yzw||  
 |norm_4::yzwx||  
 |norm_4::yzx||  

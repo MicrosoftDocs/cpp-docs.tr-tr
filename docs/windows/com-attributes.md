@@ -1,13 +1,10 @@
 ---
-title: "COM öznitelikleri | Microsoft Docs"
-ms.custom: 
+title: COM öznitelikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - attributes [COM]
 - COM, attributes
 ms.assetid: 52a5dd70-e8be-4bba-afd6-daf90fe689a0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 63e23f6a6520085ff5a5a072cb349d079615b6f0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9d37ba5c690b61840ad261e6ab966d0cc74c07c1
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="com-attributes"></a>COM Öznitelikleri
 COM öznitelikleri COM Geliştirme ve .NET Framework ortak dil çalışma zamanı geliştirme çeşitli alanlar desteklemek için kod yerleştirir. Stok özellikleri, yöntemleri ve olayları desteklemek için bu alanları aralığından özel arabirim uygulamasına ve var olan arabirimler desteği. Ayrıca, destek bileşik ve ActiveX denetimi uyarlamasını bulunabilir.  
@@ -44,7 +39,7 @@ COM öznitelikleri COM Geliştirme ve .NET Framework ortak dil çalışma zaman�
 |[requires_category](../windows/requires-category.md)|Sınıfı için gerekli bir bileşen kategorilerini belirtir.|  
 |[support_error_info](../windows/support-error-info.md)|Hata raporlama için hedef nesne destekler.|  
 |[synchronize](../windows/synchronize.md)|Bir yöntem erişimi eşitler.|  
-|[iş parçacığı oluşturma](../windows/threading-cpp.md)|Bir COM nesnesi için iş parçacığı modelini belirtir.|  
+|[İş parçacığı oluşturma](../windows/threading-cpp.md)|Bir COM nesnesi için iş parçacığı modelini belirtir.|  
 |[vi_progid](../windows/vi-progid.md)|Bir denetim için sürüm bağımsız bir ProgID tanımlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

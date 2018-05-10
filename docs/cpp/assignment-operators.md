@@ -43,11 +43,11 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d89363e49b2f8a1691ee897c6acae6b4f67f5b9a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4318d7913b180c3fbadcf9d655e402c9b0ad7ccc
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="assignment-operators"></a>Atama İşleçleri
 ## <a name="syntax"></a>Sözdizimi  
@@ -73,15 +73,15 @@ Aşağıdaki tabloda tüm atama işleçleri hariç = ve & & = işleçler şunlar
 |--------------|-------------|  
 |**=**|Birinci işlenen (basit atama) tarafından belirtilen nesnede ikinci işlenenin değerini depolar.|  
 |**\*=**|Birinci işlenenin değeriyle ikinci işlenenin değerini çarpar; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
-|`/=`|Birinci işlenenin değerini ikinci işlenenin değerine böler; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
-|`%=`|İkinci işlenenin değeri tarafından belirtilen birinci işlenenin modüllerini alır; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
-|`+=`|İkinci işlenenin değerine birinci işlenenin değerini ekler; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
+|**/=**|Birinci işlenenin değerini ikinci işlenenin değerine böler; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
+|**%=**|İkinci işlenenin değeri tarafından belirtilen birinci işlenenin modüllerini alır; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
+|**+=**|İkinci işlenenin değerine birinci işlenenin değerini ekler; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
 |**-=**|İkinci işlenenin değerinden ilk işlenenin değerini çıkarır; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
 |**<\<=**|Birinci işlenenin değerini ikinci işlenenin değeri tarafından belirtilen bit sayısının soluna kaydırır; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
 |**>>=**|Birinci işlenenin değerini ikinci işlenenin değeri tarafından belirtilen bit sayısının sağına kaydırır; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
 |**&=**|Birinci ve ikinci işlenenden bit seviyesinde VE elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
-|`^=`|Birinci ve ikinci işlenenden bit seviyesinde dışlamalı VEYA elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
-|`&#124;=`|Birinci ve ikinci işlenenden bit seviyesinde kapsamalı VEYA elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|
+|**^=**|Birinci ve ikinci işlenenden bit seviyesinde dışlamalı VEYA elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
+|**\|=**|Birinci ve ikinci işlenenden bit seviyesinde kapsamalı VEYA elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|
 |**&&=**| Atama işleci (için yalnızca sınıf türleri) taşıyın. İkinci işlenen bir rvalue ise, kaynaklarını (kopyalayarak olmadan) ilk işlenen taşıyın. Bkz: [taşıma oluşturucuları ve taşıma atama işleçleri](move-constructors-and-move-assignment-operators-cpp.md) daha fazla bilgi için.|
   
  **İşleç Anahtar Sözcükleri**  
@@ -91,8 +91,8 @@ Aşağıdaki tabloda tüm atama işleçleri hariç = ve & & = işleçler şunlar
 |İşleç|Eşdeğer|  
 |--------------|----------------|  
 |**&=**|`and_eq`|  
-|`&#124;=`|`or_eq`|  
-|`^=`|`xor_eq`|  
+|**\|=**|`or_eq`|  
+|**^=**|`xor_eq`|  
   
  Bu işleç anahtar sözcükleri programlarınızı içinde erişmek için iki yolu vardır: üst bilgi dosyasını dahil `iso646.h`, veya ile derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneği.  
   

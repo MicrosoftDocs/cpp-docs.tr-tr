@@ -1,34 +1,29 @@
 ---
-title: "Eşzamanlılık Çalışma zamanındaki genel en iyi yöntemler | Microsoft Docs"
-ms.custom: 
+title: Eşzamanlılık Çalışma zamanındaki genel en iyi yöntemler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Concurrency Runtime, general best practices
 ms.assetid: ce5c784c-051e-44a6-be84-8b3e1139c18b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d5c2c626ceb0243e91e56d70f0d8ae71208b157f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a2cd9cffa76ce179f478422af9c8efce380a2465
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="general-best-practices-in-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanındaki Genel En İyi Yöntemler
 Bu belge eşzamanlılık çalışma zamanı birden çok alanlarına uygulanan en iyi uygulamaları açıklar.  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Bu belgede aşağıdaki bölümler yer alır:  
   
 - [İşbirlikçi eşitleme yapıları mümkün olduğunda kullanın](#synchronization)  
@@ -45,12 +40,12 @@ Bu belge eşzamanlılık çalışma zamanı birden çok alanlarına uygulanan en
   
 - [Eşzamanlılık nesneleri paylaşılan veri Segmentlerinde kullanmayın](#shared-data)  
   
-##  <a name="synchronization"></a>İşbirlikçi eşitleme yapıları mümkün olduğunda kullanın  
+##  <a name="synchronization"></a> İşbirlikçi eşitleme yapıları mümkün olduğunda kullanın  
  Eşzamanlılık Çalışma zamanı dış eşitleme nesneyi gerektirmeyen birçok eşzamanlılık güvenli yapıları sağlar. Örneğin, [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) SAX eşzamanlılık güvenli ekleme ve işlemleri erişim öğesi. Ancak, bir kaynağa özel erişim gerektiren olduğu durumlarda, çalışma zamanı sağlar [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md), [concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md), ve [eşzamanlılık :: olay](../../parallel/concrt/reference/event-class.md) sınıfları. Bu tür işlevinizde davranır; Bu nedenle, veriler için ilk görev bekler gibi Görev Zamanlayıcısı'nı başka bir bağlam için işlem kaynakları yeniden tahsis edebilirsiniz. Mümkün olduğunda, bu eşitleme türleri hangi işlevinizde davranır olmayan diğer eşitleme mekanizmaları yerine, Windows API'si tarafından sağlanan gibi kullanın. Bu eşitleme türleri ve bir kod örneği hakkında daha fazla bilgi için bkz: [eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md) ve [eşitleme veri yapılarını Windows API karşılaştırma](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md).  
   
  [[Üst](#top)]  
   
-##  <a name="yield"></a>Değil verim uzun görevlerden kaçının  
+##  <a name="yield"></a> Değil verim uzun görevlerden kaçının  
  Görev Zamanlayıcısı'nı işlevinizde davrandığı için görevler arasında eşitliği sağlamaz. Bu nedenle, bir görev, diğer görevleri başlamasını engelleyebilir. Bu bazı durumlarda kabul edilebilir olmasına karşın, diğer durumlarda bu kilitlenme ya da yetersizliğini neden olabilir.  
   
  Aşağıdaki örnek, ayrılmış işleme kaynakları sayısından daha fazla görevleri gerçekleştirir. İlk görev için Görev Zamanlayıcısı'nı vermez ve ilk görevi tamamlanana kadar ikinci görevi bu nedenle başlatmaz.  
@@ -86,7 +81,7 @@ Bu belge eşzamanlılık çalışma zamanı birden çok alanlarına uygulanan en
   
  [[Üst](#top)]  
   
-##  <a name="oversubscription"></a>Aşırı abonelik engelleyen veya yüksek gecikme süresine sahiptir uzaklık işlemleri için kullanın  
+##  <a name="oversubscription"></a> Aşırı abonelik engelleyen veya yüksek gecikme süresine sahiptir uzaklık işlemleri için kullanın  
  Eşzamanlılık Çalışma Zamanı Eşitleme temelleri gibi sağlar [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md), işbirliği ile engellemek ve birbirlerine elde etmek için görevleri etkinleştirin. Bir görev işlevinizde engeller veya verir, Görev Zamanlayıcı'yı bir veri için ilk görev bekler gibi başka bir bağlam için işlem kaynakları yeniden tahsis edebilirsiniz.  
   
  Eşzamanlılık Çalışma zamanı tarafından sağlanan işbirlikçi engelleme mekanizması kullanamazsınız durumlar vardır. Örneğin, kullandığınız harici bir kitaplığı farklı eşitleme mekanizması kullanıyor olabilir. Windows API kullandığınızda, örneğin, gecikme, yüksek miktarda olabilir bir işlem gerçekleştirdiğinizde başka bir örnektir `ReadFile` bir ağ bağlantısından veri okumak için işlev. Bu durumlarda, aşırı abonelik diğer görevlerini başka bir görev boştayken çalışacak şekilde etkinleştirebilirsiniz. Aşırı abonelik donanım iş parçacıkları kullanılabilir sayısından daha fazla iş parçacığı oluşturmanıza olanak sağlar.  
@@ -99,7 +94,7 @@ Bu belge eşzamanlılık çalışma zamanı birden çok alanlarına uygulanan en
   
  [[Üst](#top)]  
   
-##  <a name="memory"></a>Eşzamanlı bellek yönetimi işlevleri mümkün olduğunda kullanın  
+##  <a name="memory"></a> Eşzamanlı bellek yönetimi işlevleri mümkün olduğunda kullanın  
 
  Bellek Yönetimi işlevleri kullanmak [concurrency::Alloc](reference/concurrency-namespace-functions.md#alloc) ve [concurrency::Free](reference/concurrency-namespace-functions.md#free)sık görece kısa ömürlü küçük nesneler tahsis hassas görevler varsa,. Eşzamanlılık Çalışma zamanı her çalışan iş parçacığı için ayrı bir önbellek tutar. `Alloc` Ve `Free` işlevleri ayırma ve serbest kilitleri ya da bellek engelleri kullanmanıza gerek kalmadan bu önbellekler bellekten.  
   
@@ -107,7 +102,7 @@ Bu belge eşzamanlılık çalışma zamanı birden çok alanlarına uygulanan en
   
  [[Üst](#top)]  
   
-##  <a name="raii"></a>RAII eşzamanlılık nesnelerin ömrü yönetmek için kullanın  
+##  <a name="raii"></a> RAII eşzamanlılık nesnelerin ömrü yönetmek için kullanın  
  Eşzamanlılık Çalışma zamanı özel durum işleme iptal gibi özellikleri uygulamak için kullanır. Bu nedenle, çalışma zamanına çağırmak ya da çalışma zamanına çağıran başka bir kitaplıkla çağrı özel durum güvenli kod yazın.  
   
  *Kaynak edinme olan başlatma* (RAII) düzeni verilen kapsam altında bir eşzamanlılık nesnesinin ömrü güvenli bir şekilde yönetmek için bir yol olduğu. RAII deseni altında bir veri yapısı yığında ayrılmış. Bu veri yapısını başlatır veya bir kaynak oluşturulur ve bozar veya veri yapısı kaldırıldığı zaman, kaynak serbest zaman alır. RAII deseni çevreleyen kapsamdaki çıkar önce yıkıcı adlandırılır güvence altına alır. Bir işlev birden çok içerdiğinde bu deseni yararlıdır `return` deyimleri. Bu deseni Ayrıca, özel durum güvenli kod yazmanıza yardımcı olur. Zaman bir `throw` deyimi neden bırakma için yıkıcı RAII nesnesi adında için yığın; bu nedenle, kaynağın her zaman doğru yayımlanan veya silinmiş.  
@@ -138,7 +133,7 @@ Error details:
   
  [[Üst](#top)]  
   
-##  <a name="global-scope"></a>Genel kapsamda eşzamanlılık nesneleri oluşturma  
+##  <a name="global-scope"></a> Genel kapsamda eşzamanlılık nesneleri oluşturma  
  Genel kapsamda bir eşzamanlılık nesne oluşturduğunuzda, uygulamanızda gerçekleşmesi erişim ihlalleri kilitlenme veya bellek gibi sorunlara neden olabilir.  
   
  Örneğin, bir eşzamanlılık çalışma zamanı nesne oluşturduğunuzda, bir henüz oluşturulmadı, çalışma zamanı varsayılan Zamanlayıcı sizin için oluşturur. Genel nesne oluşturma sırasında oluşturulan bir çalışma zamanı nesne buna göre bu varsayılan Zamanlayıcı oluşturmak çalışma zamanı neden olur. Ancak, bu işlem eşzamanlılık çalışma zamanı altyapısını destekleyen diğer nesnelerin başlatılması ile etkileyebilir bir iç kilit alır. Bu dahili kilit henüz başlatılmamış ve böylece gerçekleşmesi kilitlenme uygulamanızda neden olabilir, başka bir altyapı nesne tarafından gerekli olabilir.  
@@ -151,7 +146,7 @@ Error details:
   
  [[Üst](#top)]  
   
-##  <a name="shared-data"></a>Eşzamanlılık nesneleri paylaşılan veri Segmentlerinde kullanmayın  
+##  <a name="shared-data"></a> Eşzamanlılık nesneleri paylaşılan veri Segmentlerinde kullanmayın  
  Eşzamanlılık Çalışma zamanı, paylaşılan veri bölümünde, örneğin, tarafından oluşturulan bir veri bölümü eşzamanlılık nesnelerinin kullanımını desteklemez [data_seg](../../preprocessor/data-seg.md) `#pragma` yönergesi. İşlem sınırları genelinde paylaşılan bir eşzamanlılık nesnesi tutarsız veya geçersiz bir durumda çalışma zamanı koyabilirsiniz.  
   
  [[Üst](#top)]  

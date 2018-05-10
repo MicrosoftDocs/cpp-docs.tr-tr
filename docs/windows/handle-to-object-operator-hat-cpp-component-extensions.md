@@ -1,30 +1,25 @@
 ---
-title: "Tanıtıcı nesne işleci (^) (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: Tanıtıcı nesne işleci (^) (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - ^ handle to object [C++]
 ms.assetid: 70c411e6-be57-4468-a944-6ea7be89f392
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3e760181f48e4bfd197514b152701e94ac6e94a2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: eb322f83163a9faf3314990baabbd0a34f1a67ae
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="handle-to-object-operator---c-component-extensions"></a>İşlenecek Nesne İşleci (^) (C++ Bileşen Uzantıları)
 *Bildirimcisi işlemek* (`^`, "hat" denilir), türü değiştirir [belirticisi](../cpp/overview-of-declarators.md) sistemi nesnenin olduğunu belirlediğinde, bildirilen nesnesi'nin otomatik olarak silinmesini anlamına gelir artık erişilebilir.  

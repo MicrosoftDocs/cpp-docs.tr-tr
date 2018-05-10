@@ -1,27 +1,22 @@
 ---
-title: "Kritik yönergesi kullanarak A.5 | Microsoft Docs"
-ms.custom: 
+title: Kritik yönergesi kullanarak A.5 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 14423018-25b9-4f98-92f2-34c9b0ac0ce0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7cf4170fae6792906db29c90f61f067886b00f1d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c1a41e9664faaca24b6708c737a044828eb460bd
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="a5---using-the-critical-directive"></a>A.5   critical Yönergesini Kullanma
 Aşağıdaki örnek, birkaç içerir `critical` yönergeleri ([bölüm 2.6.2](../../parallel/openmp/2-6-2-critical-construct.md) sayfasında 18). Örnek bir görev kuyruktan çıkarıldı ve üzerinde çalışılan queuing bir modeli gösterilmektedir. Aynı görevi kuyruktan alma birden çok iş parçacığı karşı koruma sağlamak için dequeuing işlemi olmalıdır bir `critical` bölümü. Bu örnekte iki sıraları bağımsız olduğundan, bunlar tarafından korunur `critical` farklı adlara sahip yönergeleri *xaxis* ve *yaxis*.  

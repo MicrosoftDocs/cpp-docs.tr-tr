@@ -1,13 +1,10 @@
 ---
-title: "Win32 Uygulama Sihirbazı'nı | Microsoft Docs"
-ms.custom: 
+title: Win32 Uygulama Sihirbazı'nı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.appwiz.win32.overview
 dev_langs:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - Win32 Application Wizard
 - Win32 Project Wizard
 ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c97caee74e1ae918924632802c155b23fffe0527
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 18885e36b5f598a8b1dd6128c29a9e520128dcb2
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="win32-application-wizard"></a>Win32 Uygulama Sihirbazı
 Visual C++ Win32 Uygulama Sihirbazı'nı (başlık aşağıdaki tabloda listelenen) projeleri dört türlerinden herhangi birini oluşturmanıza olanak sağlar. Her durumda, açtığınız proje türü için uygun olan diğer seçenekler belirtebilirsiniz. Aşağıdaki tabloda, hangi seçeneklerin her uygulama türü için kullanılabilir olduğunu gösterir.  

@@ -2,11 +2,8 @@
 title: Normal ifadeler (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - C++
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - regular expressions, Visual C++
 - regular expressions
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c
-caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 143ffe47181d438d278de7fa9027f4016dfa74cd
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 1491d99c21628207e19f34676e16863cc24e07d3
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="regular-expressions-c"></a>Normal İfadeler (C++)
 

@@ -2,11 +2,8 @@
 title: Giriş akışı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - C++
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - input streams
 - input stream objects
 ms.assetid: f14d8954-8f8c-4c3c-8b99-14ddb3683f94
-caps.latest.revision: 11
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 595a855e7ab5ef74c577dc4d80d6332783635d82
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: d3dff2e0bb0ee070b8b90ca3896d7bf8114ca918
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="input-streams"></a>Giriş Akışları
 

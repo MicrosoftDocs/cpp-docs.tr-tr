@@ -2,11 +2,8 @@
 title: unique_ptr sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - memory/std::unique_ptr
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - std::unique_ptr [C++], reset
 - std::unique_ptr [C++], swap
 ms.assetid: acdf046b-831e-4a4a-83aa-6d4ee467db9a
-caps.latest.revision: 22
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6271e028123d3eaba905323cbf220fbd9a6aab85
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 08e2505a77643053c60c4ce1a164dc89cc1e0952
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="uniqueptr-class"></a>unique_ptr Sınıfı
 

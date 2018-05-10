@@ -1,10 +1,7 @@
 ---
-title: "CONCURRENCY::Graphics ad alanı numaralandırmaları | Microsoft Docs"
-ms.custom: 
+title: CONCURRENCY::Graphics ad alanı numaralandırmaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - amp_graphics/concurrency::graphics::address_mode
@@ -12,22 +9,20 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 1d2e1859-a3d7-4d3d-8e03-1a877a86b3e0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7eef1db51fca369cb105fb1b5309c3d07afdac57
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: bbb02becbcfebf935107acb85ae3991476b67796
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="concurrencygraphics-namespace-enums"></a>CONCURRENCY::Graphics ad alanı numaralandırmaları
 |||  
 |-|-|  
-|[_mode numaralandırması](#address_mode)|[filter_mode Enumeration](#filter_mode)|  
+|[_mode numaralandırması](#address_mode)|[filter_mode numaralandırması](#filter_mode)|  
   
 ##  <a name="address_mode"></a>  address_mode numaralandırması  
  Numaralandırma türü için doku örnekleme desteklenen adresi modu belirtmek için kullanın.  

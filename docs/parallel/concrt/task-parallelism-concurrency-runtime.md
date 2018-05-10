@@ -1,13 +1,10 @@
 ---
-title: "Görev Parallelliği (eşzamanlılık çalışma zamanı) | Microsoft Docs"
-ms.custom: 
+title: Görev Parallelliği (eşzamanlılık çalışma zamanı) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - task parallelism
 - tasks [Concurrency Runtime]
 ms.assetid: 42f05ac3-2098-494a-ba84-737fcdcad077
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e4b96228ac867781b00be7ca92a9debcad3f9eb
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: d4f2a1f1a5bd0b4a8ca68f3aa47f6890a11efa11
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="task-parallelism-concurrency-runtime"></a>Görev Parallelliği (Eşzamanlılık Çalışma Zamanı)
 Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleştirir ve genellikle diğer görevlerle Paralel çalışan iş birimidir. Bir görev halinde düzenlenmiştir ek, daha ayrıntılı görevleri ayrılmış bir *görev grubu*.  

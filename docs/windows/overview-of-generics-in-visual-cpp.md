@@ -1,13 +1,10 @@
 ---
-title: "Visual C++'de genel türlere genel bakış | Microsoft Docs"
-ms.custom: 
+title: Visual C++'de genel türlere genel bakış | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,18 +17,16 @@ helpviewer_keywords:
 - open constructed types [C++]
 - constructed types, closed [C++]
 ms.assetid: 21f10637-0fce-4916-b925-6c86a126d3aa
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5082f603c64e796ef369044e3586ae5bfe85605a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 19200e3c3c4ed67960905b697187dbb6b37a65e9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="overview-of-generics-in-visual-c"></a>Visual C++'de Genel Türlere Genel Bakış
 Genel türler, ortak dil çalışma zamanı tarafından desteklenen parametreli türleridir. Genel kullanıldığında, belirttiğiniz bir bilinmeyen tür parametresi ile tanımlanan bir türü bir parametreli türüdür.  
@@ -77,7 +72,7 @@ Genel türler, ortak dil çalışma zamanı tarafından desteklenen parametreli 
  Bir kısıtlaması, bir tür parametresi kullanılabilir türleri üzerinde bir kısıtlamadır. Örneğin, verilen genel bir sınıf yalnızca belirtilen sınıftan sınıfları kabul edin veya belirtilen arabirimi uygulamalıdır. Daha fazla bilgi için bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md).  
   
 ## <a name="reference-types-and-value-types"></a>Başvuru türleri ve değer türleri  
- Tür bağımsız değişkenleri tanıtıcıları türleri ve değer türleri kullanılabilir. İçinde her iki türü kullanılabilir, genel tanımında sözdizimi referans tür olmasıdır. Örneğin,  **->**  işleci sonunda kullanılan türü bir başvuru türü ya da bir değer türü olup olmadığını tür parametresi türü üyelerine erişmek için kullanılır. Tür bağımsız değişkeni olarak bir değer türü kullanıldığında, çalışma zamanı doğrudan değer türleri kutulama olmadan değer türleri kullanan kodu oluşturur.  
+ Tür bağımsız değişkenleri tanıtıcıları türleri ve değer türleri kullanılabilir. İçinde her iki türü kullanılabilir, genel tanımında sözdizimi referans tür olmasıdır. Örneğin, **->** işleci sonunda kullanılan türü bir başvuru türü ya da bir değer türü olup olmadığını tür parametresi türü üyelerine erişmek için kullanılır. Tür bağımsız değişkeni olarak bir değer türü kullanıldığında, çalışma zamanı doğrudan değer türleri kutulama olmadan değer türleri kullanan kodu oluşturur.  
   
  Genel tür bağımsız değişkeni olarak bir başvuru türü kullanırken, tanıtıcı sözdizimini kullanın. Genel tür bağımsız değişkeni olarak bir değer türü kullanırken, doğrudan türünün adını kullanın.  
   

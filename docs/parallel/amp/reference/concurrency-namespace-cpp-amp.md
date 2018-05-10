@@ -1,12 +1,9 @@
 ---
-title: "Eşzamanlılık Namespace (C++ AMP) | Microsoft Docs"
-ms.custom: 
+title: Eşzamanlılık Namespace (C++ AMP) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - AMP/Concurrency
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - Concurrency namespace
 ms.assetid: b5aab265-3bac-42c5-8ead-f92ce05ef267
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a9f82baade21cdbde41fc49fd0bfe6163c0f6af
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 127c1b63693b128e9cdf23813bbfe8e0ec251f9d
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="concurrency-namespace-c-amp"></a>Eşzamanlılık Ad Alanı (C++ AMP)
 Sınıfları ve verileri paralel donanımda C++ kod yürütmeyi hızlandırmak işlevleri sağlar. Daha fazla bilgi için bkz: [C++ AMP'ye genel bakış](../cpp-amp-overview.md)  
@@ -73,19 +68,19 @@ namespace Concurrency;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[access_type numaralandırması](concurrency-namespace-enums-amp.md#access_type)|Veri erişim türünü belirtir.|  
-|[queuing_mode Enumeration](concurrency-namespace-enums-amp.md#queuing_mode)|Hızlandırıcı üzerinde desteklenen sıralama modları belirtir.|  
+|[queuing_mode numaralandırması](concurrency-namespace-enums-amp.md#queuing_mode)|Hızlandırıcı üzerinde desteklenen sıralama modları belirtir.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[operator== Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator_eq_eq)|Belirtilen veri yapılarını eşit olup olmadığını belirler.|  
-|[operator!= Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator_neq)|Belirtilen veri yapılarını eşit olup olmadığını belirler.|  
-|[operator+ Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator_add)|Belirtilen bağımsız değişkenler component-wise toplamını hesaplar.|  
+|[operator == işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator_eq_eq)|Belirtilen veri yapılarını eşit olup olmadığını belirler.|  
+|[operator! = işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator_neq)|Belirtilen veri yapılarını eşit olup olmadığını belirler.|  
+|[operator + işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator_add)|Belirtilen bağımsız değişkenler component-wise toplamını hesaplar.|  
 |[operator-işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator-)|Belirtilen bağımsız değişkenler arasındaki component-wise farkı hesaplar.|  
 |[operator * işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator_star)|Belirtilen bağımsız değişkenler component-wise çarpımını hesaplar.|  
 |[operator / işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator_div)|Belirtilen bağımsız değişkenler component-wise sayının hesaplar.|  
-|[operator% Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator_mod)|Modulus ilk belirtilen bağımsız değişkenin ikinci belirtilen bağımsız değişken olarak hesaplar.|  
+|[operator % işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator_mod)|Modulus ilk belirtilen bağımsız değişkenin ikinci belirtilen bağımsız değişken olarak hesaplar.|  
   
 ### <a name="functions"></a>İşlevler  
   

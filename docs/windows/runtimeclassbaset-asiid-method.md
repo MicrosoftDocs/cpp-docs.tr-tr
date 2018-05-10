@@ -2,11 +2,8 @@
 title: Runtimeclassbaset::asııd yöntemi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::RuntimeClassBaseT::AsIID
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - AsIID method
 ms.assetid: 90d7df8a-cf9e-4eef-8837-bc1a25f3fa1a
-caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 17d67ee58e9ecc3b0ef463d6af132fec3a1c0a2f
-ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
+ms.openlocfilehash: 35d218666f785685e95d737574ff44e276ce84b3
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="runtimeclassbasetasiid-method"></a>RuntimeClassBaseT::AsIID Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  

@@ -1,13 +1,10 @@
 ---
-title: "(Simgeler için görüntü Düzenleyicisi) görüntünün parçalarını düzenleme | Microsoft Docs"
-ms.custom: 
+title: (Simgeler için görüntü Düzenleyicisi) görüntünün parçalarını düzenleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -21,18 +18,16 @@ helpviewer_keywords:
 - images [C++], pasting into
 - graphics [C++], editing
 ms.assetid: ff4f5fef-71a4-4fd8-825e-049399fed391
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: acd4859bf7c80cf2bbe6cd2d86c39d0fc596351d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b33a591a2f38062b5eaf81b0f56ab73a36f4c90c
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="editing-parts-of-an-image-image-editor-for-icons"></a>Görüntünün Parçalarını Düzenleme (Simgeler İçin Görüntü Düzenleyicisi)
 Standart düzenleme işlemleri gerçekleştirebilir — kesme, kopyalama, silme ve taşıma — üzerinde bir [seçimi](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), görüntünün tamamını veya yalnızca bir kısmını seçim olup olmadığını. Görüntü Düzenleyicisi Windows panosuna kullandığı için görüntü Düzenleyicisi'ni ve Windows için diğer uygulamalar arasında görüntüleri aktarabilirsiniz.  

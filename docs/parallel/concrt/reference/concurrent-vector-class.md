@@ -1,12 +1,9 @@
 ---
-title: "concurrent_vector sınıfı | Microsoft Docs"
-ms.custom: 
+title: concurrent_vector sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - concurrent_vector
@@ -42,17 +39,15 @@ dev_langs:
 helpviewer_keywords:
 - concurrent_vector class
 ms.assetid: a217b4ac-af2b-4d41-94eb-09a75ee28622
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1f196a4eaf8685a33b1ef4847e44f62015ed1ed
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: e120e072fb3f56788cbf39fbbc3887f5c816f4ef
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="concurrentvector-class"></a>concurrent_vector Sınıfı
 `concurrent_vector` Sınıftır herhangi bir öğeye rasgele erişim sağlayan bir dizi kapsayıcı. Eşzamanlılık güvenli etkinleştirir ekleme, öğe erişim, yineleyici erişim ve yineleyici geçişi işlemleri.  
@@ -97,7 +92,7 @@ class concurrent_vector: protected details::_Allocator_base<T,
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[concurrent_vector](#ctor)|Fazla Yüklendi. Eşzamanlı vektörü oluşturur.|  
-|[~concurrent_vector Destructor](#dtor)|Tüm öğeleri siler ve bu eşzamanlı vektör yok eder.|  
+|[~ concurrent_vector yok Edicisi](#dtor)|Tüm öğeleri siler ve bu eşzamanlı vektör yok eder.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -107,13 +102,13 @@ class concurrent_vector: protected details::_Allocator_base<T,
 |[konumundaki](#at)|Fazla Yüklendi. Eşzamanlı vektör içinde belirtilen dizinindeki öğeyi erişim sağlar. Bu yöntem eşzamanlılık-güvenlidir okuma işlemleri için ve ayrıca, değer sağladıktan sürece vektör büyüyen sırasında `_Index` eşzamanlı vektör boyutu küçüktür.|  
 |[Geri](#back)|Fazla Yüklendi. Bir başvuru döndürür `const` son eşzamanlı vektör öğesinde başvuru. Dönüş değerini eşzamanlı vektör boşsa, tanımlanmamıştır. Bu yöntem eşzamanlılık güvenlidir.|  
 |[Başlangıç](#begin)|Fazla Yüklendi. Yineleyici türü döndürür `iterator` veya `const_iterator` eşzamanlı vektör başlangıcına. Bu yöntem eşzamanlılık güvenlidir.|  
-|[capacity](#capacity)|Daha fazla bellek ayırmak zorunda kalmadan eşzamanlı vektör büyüyebileceği maksimum boyutu döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
+|[Kapasite](#capacity)|Daha fazla bellek ayırmak zorunda kalmadan eşzamanlı vektör büyüyebileceği maksimum boyutu döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
 |[cbegin](#cbegin)|Yineleyici türü döndürür `const_iterator` eşzamanlı vektör başlangıcına. Bu yöntem eşzamanlılık güvenlidir.|  
 |[cend](#cend)|Yineleyici türü döndürür `const_iterator` eşzamanlı vektör sonuna. Bu yöntem eşzamanlılık güvenlidir.|  
 |[Temizle](#clear)|Eşzamanlı vektör tüm öğeler siler. Bu yöntem eşzamanlılık uyumlu değil.|  
 |[crbegin](#crbegin)|Yineleyici türü döndürür `const_reverse_iterator` eşzamanlı vektör başlangıcına. Bu yöntem eşzamanlılık güvenlidir.|  
 |[crend](#crend)|Yineleyici türü döndürür `const_reverse_iterator` eşzamanlı vektör sonuna. Bu yöntem eşzamanlılık güvenlidir.|  
-|[empty](#empty)|Aynı anda eş zamanlı vektör boşsa, testleri, bu yöntem çağrılır. Bu yöntem eşzamanlılık güvenlidir.|  
+|[boş](#empty)|Aynı anda eş zamanlı vektör boşsa, testleri, bu yöntem çağrılır. Bu yöntem eşzamanlılık güvenlidir.|  
 |[Bitiş](#end)|Fazla Yüklendi. Yineleyici türü döndürür `iterator` veya `const_iterator` eşzamanlı vektör sonuna. Bu yöntem eşzamanlılık güvenlidir.|  
 |[Ön](#front)|Fazla Yüklendi. Bir başvuru döndürür `const` eşzamanlı vektör ilk öğe referansı. Dönüş değerini eşzamanlı vektör boşsa, tanımlanmamıştır. Bu yöntem eşzamanlılık güvenlidir.|  
 |[get_allocator](#get_allocator)|Eşzamanlı vektör oluşturmak için kullanılan ayırıcısı kopyasını döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
@@ -123,8 +118,8 @@ class concurrent_vector: protected details::_Allocator_base<T,
 |[push_back](#push_back)|Fazla Yüklendi. Verilen öğe eşzamanlı vektör sonuna ekler. Bu yöntem eşzamanlılık güvenlidir.|  
 |[rbegin](#rbegin)|Fazla Yüklendi. Yineleyici türü döndürür `reverse_iterator` veya `const_reverse_iterator` eşzamanlı vektör başlangıcına. Bu yöntem eşzamanlılık güvenlidir.|  
 |[rend](#rend)|Fazla Yüklendi. Yineleyici türü döndürür `reverse_iterator` veya `const_reverse_iterator` eşzamanlı vektör sonuna. Bu yöntem eşzamanlılık güvenlidir.|  
-|[reserve](#reserve)|Eşzamanlı vektör boyutu büyümeye yeterli alan ayırır `_N` daha sonra daha fazla bellek ayırmak zorunda kalmadan. Bu yöntem eşzamanlılık uyumlu değil.|  
-|[resize](#resize)|Fazla Yüklendi. İstenen boyuta silme veya gerektiği gibi öğeleri ekleme, eş zamanlı vektör boyutu değişir. Bu yöntem eşzamanlılık uyumlu değil.|  
+|[ayırma](#reserve)|Eşzamanlı vektör boyutu büyümeye yeterli alan ayırır `_N` daha sonra daha fazla bellek ayırmak zorunda kalmadan. Bu yöntem eşzamanlılık uyumlu değil.|  
+|[Yeniden boyutlandırma](#resize)|Fazla Yüklendi. İstenen boyuta silme veya gerektiği gibi öğeleri ekleme, eş zamanlı vektör boyutu değişir. Bu yöntem eşzamanlılık uyumlu değil.|  
 |[shrink_to_fit](#shrink_to_fit)|Parçalanma ve bellek kullanımını en iyi duruma getirmek için eş zamanlı vektör iç gösterimini sıkıştırır. Bu yöntem eşzamanlılık uyumlu değil.|  
 |[Boyutu](#size)|Eşzamanlı vektörü öğe sayısını döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
 |[Değiştirme](#swap)|İki eşzamanlı vektör içeriğini değiştirir. Bu yöntem eşzamanlılık uyumlu değil.|  
@@ -133,7 +128,7 @@ class concurrent_vector: protected details::_Allocator_base<T,
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[operator[]](#operator_at)|Fazla Yüklendi. Eşzamanlı vektör içinde belirtilen dizinindeki öğeyi erişim sağlar. Bu yöntem eşzamanlılık-güvenlidir okuma işlemleri için ve ayrıca, güvence altına sürece, değer vektör büyüyen sırasında `_Index` eşzamanlı vektör boyutu küçüktür.|  
+|[[] işleci](#operator_at)|Fazla Yüklendi. Eşzamanlı vektör içinde belirtilen dizinindeki öğeyi erişim sağlar. Bu yöntem eşzamanlılık-güvenlidir okuma işlemleri için ve ayrıca, güvence altına sürece, değer vektör büyüyen sırasında `_Index` eşzamanlı vektör boyutu küçüktür.|  
 |[operator=](#operator_eq)|Fazla Yüklendi. İçeriği başka bir atar `concurrent_vector` bu bir nesne. Bu yöntem eşzamanlılık uyumlu değil.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -151,7 +146,7 @@ class concurrent_vector: protected details::_Allocator_base<T,
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="assign">Ata</a> 
+##  <a name="assign"></a> Ata 
 
  Eşzamanlı vektör öğelerini siler ve ya da atar `_N` birini kopyalar `_Item`, veya yineleyici aralık tarafından belirlenen değerler [ `_Begin`, `_End`). Bu yöntem eşzamanlılık uyumlu değil.  
   
@@ -184,7 +179,7 @@ void assign(_InputIterator _Begin,
 ### <a name="remarks"></a>Açıklamalar  
  `assign` Eşzamanlılık uyumlu değil. Bu yöntemi çağırdığınızda başka bir iş parçacığı eşzamanlı vektör yöntemleri çağırma emin olmalısınız.  
   
-##  <a name="at">konumundaki</a> 
+##  <a name="at"></a> konumundaki 
 
  Eşzamanlı vektör içinde belirtilen dizinindeki öğeyi erişim sağlar. Bu yöntem eşzamanlılık-güvenlidir okuma işlemleri için ve ayrıca, değer sağladıktan sürece vektör büyüyen sırasında `_Index` eşzamanlı vektör boyutu küçüktür.  
   
@@ -206,7 +201,7 @@ const_reference at(size_type _Index) const;
   
  Yöntem oluşturulur `out_of_range` varsa `_Index` büyük veya eşit eşzamanlı vektör boyutu ve `range_error` dizini vektör kopuk bir kısmı için ise. Nasıl bir vektör bozuk hale gelebilir hakkında daha fazla bilgi için bkz [paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md).  
   
-##  <a name="back">Geri</a> 
+##  <a name="back"></a> Geri 
 
  Bir başvuru döndürür `const` son eşzamanlı vektör öğesinde başvuru. Dönüş değerini eşzamanlı vektör boşsa, tanımlanmamıştır. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -219,7 +214,7 @@ const_reference back() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Başvuru veya bir `const` son eşzamanlı vektör öğesinde başvuru.  
   
-##  <a name="begin">Başlangıç</a> 
+##  <a name="begin"></a> Başlangıç 
 
  Yineleyici türü döndürür `iterator` veya `const_iterator` eşzamanlı vektör başlangıcına. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -246,7 +241,7 @@ size_type capacity() const;
 ### <a name="remarks"></a>Açıklamalar  
  C++ Standart Kitaplığı aksine `vector`, `concurrent_vector` nesnesi değil taşırsanız varolan öğeleri daha fazla bellek ayırır.  
   
-##  <a name="cbegin">cbegin</a> 
+##  <a name="cbegin"></a> cbegin 
 
  Yineleyici türü döndürür `const_iterator` eşzamanlı vektör başlangıcına. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -257,7 +252,7 @@ const_iterator cbegin() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Yineleyici türü `const_iterator` eşzamanlı vektör başlangıcına.  
   
-##  <a name="cend">cend</a> 
+##  <a name="cend"></a> cend 
 
  Yineleyici türü döndürür `const_iterator` eşzamanlı vektör sonuna. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -268,7 +263,7 @@ const_iterator cend() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Yineleyici türü `const_iterator` eşzamanlı vektör sonuna.  
   
-##  <a name="clear">Temizle</a> 
+##  <a name="clear"></a> Temizle 
 
  Eşzamanlı vektör tüm öğeler siler. Bu yöntem eşzamanlılık uyumlu değil.  
   
@@ -353,7 +348,7 @@ concurrent_vector(_InputIterator _Begin,
   
  Yineleyici aralık tarafından sağlanan değerleri son Oluşturucusu belirtir [ `_Begin`, `_End`).  
   
-##  <a name="dtor"></a> ~concurrent_vector 
+##  <a name="dtor"></a> ~ concurrent_vector 
 
  Tüm öğeleri siler ve bu eşzamanlı vektör yok eder.  
   
@@ -361,7 +356,7 @@ concurrent_vector(_InputIterator _Begin,
 ~concurrent_vector();
 ```  
   
-##  <a name="crbegin">crbegin</a> 
+##  <a name="crbegin"></a> crbegin 
 
  Yineleyici türü döndürür `const_reverse_iterator` eşzamanlı vektör başlangıcına. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -394,7 +389,7 @@ bool empty() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` vektör boşsa, işlev çağrıldı, şu anda `false` Aksi takdirde.  
   
-##  <a name="end">Bitiş</a> 
+##  <a name="end"></a> Bitiş 
 
  Yineleyici türü döndürür `iterator` veya `const_iterator` eşzamanlı vektör sonuna. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -407,7 +402,7 @@ const_iterator end() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Yineleyici türü `iterator` veya `const_iterator` eşzamanlı vektör sonuna.  
   
-##  <a name="front">Ön</a> 
+##  <a name="front"></a> Ön 
 
  Bir başvuru döndürür `const` eşzamanlı vektör ilk öğe referansı. Dönüş değerini eşzamanlı vektör boşsa, tanımlanmamıştır. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -548,7 +543,7 @@ iterator push_back(T&& _Item);
 ### <a name="return-value"></a>Dönüş Değeri  
  Yineleyici öğesine eklenir.  
   
-##  <a name="rbegin">rbegin</a> 
+##  <a name="rbegin"></a> rbegin 
 
  Yineleyici türü döndürür `reverse_iterator` veya `const_reverse_iterator` eşzamanlı vektör başlangıcına. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -625,7 +620,7 @@ void shrink_to_fit();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem dahili olarak, geçici bellek taşıma öğeleri tüm yineleyiciler geçersiz kılmalarını yeniden ayırır. `shrink_to_fit` Eşzamanlılık uyumlu değil. Bu işlev çağırdığınızda başka bir iş parçacığı eşzamanlı vektör yöntemleri çağırma emin olmalısınız.  
   
-##  <a name="size">Boyutu</a> 
+##  <a name="size"></a> Boyutu 
 
  Eşzamanlı vektörü öğe sayısını döndürür. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -639,7 +634,7 @@ size_type size() const;
 ### <a name="remarks"></a>Açıklamalar  
  İşlev çağrıları tarafından eklenen tüm öğeleri dahil etmek için döndürülen boyutu garanti `push_back`, ya da bu yöntemi çağırmadan önce tamamlanan işlemlerinin büyütün. Ancak, bu da ayrılan öğeleri içerebilir ancak hala büyüme yöntemlerden herhangi birini eşzamanlı çağrı tarafından aşamasında.  
   
-##  <a name="swap">Değiştirme</a> 
+##  <a name="swap"></a> Değiştirme 
 
  İki eşzamanlı vektör içeriğini değiştirir. Bu yöntem eşzamanlılık uyumlu değil.  
   

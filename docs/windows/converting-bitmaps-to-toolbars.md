@@ -1,13 +1,10 @@
 ---
-title: "Bit eşlemleri araç çubuklarına dönüştürme | Microsoft Docs"
-ms.custom: 
+title: Bit eşlemleri araç çubuklarına dönüştürme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - Toolbar editor, converting bitmaps
 - toolbars [C++], converting bitmaps
 ms.assetid: 971c181b-40f5-44be-843d-677a7c235667
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d189395bbedff4d73cc690d454ddd07af4d109e6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e80bee7ef9bfe52abf63ac959475c5d8dbcf0ece
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="converting-bitmaps-to-toolbars"></a>Bit Eşlemleri Araç Çubuklarına Dönüştürme
 Bir bit eşlem dönüştürerek yeni bir araç çubuğu oluşturabilirsiniz. Bit eşlem grafikten bir araç çubuğu düğmesi görüntülerde dönüştürür. Genellikle bit eşlem her düğme için bir görüntü ile tek bir bit eşlem üzerindeki birkaç düğmesi görüntülerini içerir. Görüntüleri herhangi bir boyutta olabilir; 16 piksel genişliğinde ve resmin yüksekliğini varsayılandır. Düğme resimlerini boyutunu belirtebilirsiniz [yeni araç çubuğu kaynağı iletişim kutusu](../windows/new-toolbar-resource-dialog-box.md) araç çubuğu Düzenleyicisi'nden seçtiğinizde **görüntü** sırada görüntü düzenleyicisinde menüsü.  

@@ -1,12 +1,9 @@
 ---
 title: omp_set_lock | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - omp_set_lock
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - omp_set_lock OpenMP function
 ms.assetid: ded839cb-ca19-403f-8622-eb52ce512d31
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40d56dd19764ac1c252e7c483d7ef6758e2bcb04
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 2d905da37b6e3203fcf37611d7404fa2e4f9ea96
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ompsetlock"></a>omp_set_lock
 Kilit kullanılabilir oluncaya kadar blokları yürütme iş parçacığı.  

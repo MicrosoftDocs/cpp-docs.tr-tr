@@ -2,9 +2,6 @@
 title: '&lt;Yineleyici&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xutility/std::advance
@@ -22,8 +19,6 @@ f1_keywords:
 - xutility/std::next
 - xutility/std::prev
 ms.assetid: 4a57c9a3-7e36-411f-8655-e0be2eec88e7
-caps.latest.revision: 16
-manager: ghogen
 helpviewer_keywords:
 - std::advance [C++]
 - std::back_inserter [C++]
@@ -39,11 +34,11 @@ helpviewer_keywords:
 - std::make_unchecked_array_iterator [C++]
 - std::next [C++]
 - std::prev [C++]
-ms.openlocfilehash: a57f1c03bc03c72238306e43056240e6d8571a73
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 965ff7aadb4add306061599bbe55466bbfb87f94
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltiteratorgt-functions"></a>&lt;Yineleyici&gt; işlevleri
 

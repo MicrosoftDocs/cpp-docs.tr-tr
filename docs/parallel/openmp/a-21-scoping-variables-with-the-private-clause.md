@@ -1,27 +1,22 @@
 ---
-title: "A.21 kapsamı değişkenleri özel yan tümcesiyle | Microsoft Docs"
-ms.custom: 
+title: A.21 kapsamı değişkenleri özel yan tümcesiyle | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 7cdb4a7f-af24-44ac-9d33-e43840bc8f3d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d05a124e0b872210d28ed35fcd90872e0c051eb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9ad2258da592bb68c5eae9e52e85e63a161a24b5
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="a21---scoping-variables-with-the-private-clause"></a>A.21   private Yan Tümceli Kapsama Değişkenleri
 Değerlerini `i` ve `j` paralel bölgesinden Çıkışta aşağıdaki örnekte tanımlanmamış:  

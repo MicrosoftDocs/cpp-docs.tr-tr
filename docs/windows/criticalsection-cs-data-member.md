@@ -1,12 +1,9 @@
 ---
-title: "CriticalSection::cs_ veri üyesi | Microsoft Docs"
-ms.custom: 
+title: CriticalSection::cs_ veri üyesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::CriticalSection::cs_
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - cs_ data member
 ms.assetid: d00ff777-9491-47b4-bdf8-e7615ffcd789
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8a135edefcfa0e62f1e5619a954eca5c3ed02463
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5da07f5328f6ff75f778e44ffafd3722e0cdfca9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="criticalsectioncs-data-member"></a>CriticalSection::cs_ Veri Üyesi
 Bir kritik bölüm veri üyesi bildirir.  

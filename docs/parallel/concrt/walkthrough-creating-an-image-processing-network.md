@@ -1,30 +1,25 @@
 ---
-title: "İzlenecek yol: bir görüntü işleme ağı oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: bir görüntü işleme ağı oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - image-processing networks, creating [Concurrency Runtime]
 - creating image-processing networks [Concurrency Runtime]
 ms.assetid: 78ccadc9-5ce2-46cc-bd62-ce0f99d356b8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b709179cb5bc0fefa3f342374c792656fa1e934
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e66de10879596b0e0877eb70f5ac95e082b8ae31
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="walkthrough-creating-an-image-processing-network"></a>İzlenecek yol: Görüntü İşleme Ağı Oluşturma
 Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti blokları bir ağ oluşturmak gösterilmiştir.  
@@ -44,7 +39,7 @@ Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti bloklar�
   
  Ayrıca, temel bilgileri anladığınızdan öneririz [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] bu kılavuza başlamadan önce.  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Bu kılavuz aşağıdaki bölümleri içerir:  
   
 -   [Görüntü işleme işlevleri tanımlama](#functionality)  
@@ -53,7 +48,7 @@ Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti bloklar�
   
 -   [Tam bir örnek](#complete)  
   
-##  <a name="functionality"></a>Görüntü işleme işlevleri tanımlama  
+##  <a name="functionality"></a> Görüntü işleme işlevleri tanımlama  
  Bu bölümde diskten okunan görüntüleri ile çalışmak için görüntü işleme ağı kullanır destek işlevlerini gösterir.  
   
  Aşağıdaki işlevleri `GetRGB` ve `MakeColor`, ayıklar ve belirli bir renk tek tek bileşenlerini sırasıyla birleştirir.  
@@ -80,7 +75,7 @@ Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti bloklar�
   
  [[Üst](#top)]  
   
-##  <a name="network"></a>Görüntü işleme ağı oluşturma  
+##  <a name="network"></a> Görüntü işleme ağı oluşturma  
  Bu bölümde bir ağ üzerinde görüntü işleme gerçekleştirmek zaman uyumsuz ileti blokları oluşturma açıklar her [!INCLUDE[TLA#tla_jpeg](../../parallel/concrt/includes/tlasharptla_jpeg_md.md)] belirli bir dizinde (.jpg) görüntüsü. Ağ aşağıdaki görüntü işleme işlemleri gerçekleştirir:  
   
 1.  Zel tarafından yazılan herhangi bir görüntü için gri tonlamalı dönüştürün.  
@@ -135,7 +130,7 @@ Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti bloklar�
 |`colormask`|A `transformer` baskın rengi kırmızı sahip görüntüleri yeşil ve mavi renk bileşenlerini kaldırır nesnesi.|  
 |`darken`|A `transformer` baskın rengi kırmızı sahip görüntüleri koyulaştırır nesnesi.|  
 |`sepiatone`|A `transformer` sepya tonlama zel tarafından yazılmaz ve daha kırmızı olmayan görüntüler için uygulanan nesnesi.|  
-|`save_bitmap`|A `transformer` işlenen kaydeder nesne `image` bir bit eşlem olarak diske. `save_bitmap`Özgün dosya adını alır `map` nesne ve .bmp için dosya adı uzantısını değiştirir.|  
+|`save_bitmap`|A `transformer` işlenen kaydeder nesne `image` bir bit eşlem olarak diske. `save_bitmap` Özgün dosya adını alır `map` nesne ve .bmp için dosya adı uzantısını değiştirir.|  
 |`delete_bitmap`|A `transformer` görüntüleri için bellek boşaltır nesnesi.|  
 |`decrement`|A [concurrency::call](../../parallel/concrt/reference/call-class.md) ağ terminal düğüm olarak davranan nesnesi. Bunu azaltır `countdown_event` görüntüyü işlenmiş olan ana uygulama sinyal nesnesi.|  
   
@@ -155,7 +150,7 @@ Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti bloklar�
   
  [[Üst](#top)]  
   
-##  <a name="complete"></a>Tam bir örnek  
+##  <a name="complete"></a> Tam bir örnek  
  Aşağıdaki kod, tam bir örnek gösterilir. `wmain` İşlevi yönetir [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] kitaplığı ve çağrıları `ProcessImages` işlev işleme [!INCLUDE[TLA#tla_jpeg](../../parallel/concrt/includes/tlasharptla_jpeg_md.md)] dosyalar `Sample Pictures` dizin.  
   
  [!code-cpp[concrt-image-processing-filter#15](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_14.cpp)]  
@@ -164,7 +159,7 @@ Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti bloklar�
   
  ![Örnek çıktı örneğin](../../parallel/concrt/media/concrt_imageout.png "concrt_imageout")  
   
- `Lighthouse`zel Alphin tarafından yazılan ve bu nedenle gri tonlamalı dönüştürülür. `Chrysanthemum`, `Desert`, `Koala`, ve `Tulips` baskın rengi kırmızı varsa ve bu nedenle sahip kaldırılan mavi ve yeşil renk bileşenlerini ve koyu. `Hydrangeas`, `Jellyfish`, ve `Penguins` varsayılan ölçütlere uyan ve bu nedenle toned sepya.  
+ `Lighthouse` zel Alphin tarafından yazılan ve bu nedenle gri tonlamalı dönüştürülür. `Chrysanthemum`, `Desert`, `Koala`, ve `Tulips` baskın rengi kırmızı varsa ve bu nedenle sahip kaldırılan mavi ve yeşil renk bileşenlerini ve koyu. `Hydrangeas`, `Jellyfish`, ve `Penguins` varsayılan ölçütlere uyan ve bu nedenle toned sepya.  
   
  [[Üst](#top)]  
   

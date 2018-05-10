@@ -2,22 +2,17 @@
 title: '&lt;atomik&gt; numaralandırmaları | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - atomic/std::memory_order
 ms.assetid: cd3a81c5-a19e-448f-952a-c34c717f21a9
-caps.latest.revision: 11
 helpviewer_keywords:
 - std::memory_order
-manager: ghogen
-ms.openlocfilehash: 59cd642bf1a74c2a3c07cb72b4ee072e3e4514eb
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: c30e7ca78533b0b4c2a4eb49bd99bd13483d2b8d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltatomicgt-enums"></a>&lt;atomik&gt; numaralandırmaları
 

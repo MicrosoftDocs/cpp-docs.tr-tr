@@ -1,12 +1,9 @@
 ---
 title: omp_set_dynamic | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - omp_set_dynamic
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - omp_set_dynamic OpenMP function
 ms.assetid: 3845faf2-a0ca-45a5-ae70-2a7a6164f1e8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00ee1ad4c42e0d2f1303854cbd050e5601d0c3cd
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 18521113125eb49fa413568b6a62472bb50a7924
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ompsetdynamic"></a>omp_set_dynamic
 Çalışma zamanı tarafından düzenlenip düzenlenmediğini sonraki paralel bölgede kullanılabilir iş parçacığı sayısını gösterir.  

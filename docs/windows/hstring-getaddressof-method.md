@@ -1,30 +1,25 @@
 ---
-title: "HString::GetAddressOf yöntemi | Microsoft Docs"
-ms.custom: 
+title: HString::GetAddressOf yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HString::GetAddressOf
 dev_langs:
 - C++
 ms.assetid: 6050decf-5f99-49f0-9497-1c8192c485ae
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cc4c15570b65b62b22f0dd9a7f66f8c244e2bf22
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7d4804373045d12c2e251e2de61b7aefd52ec916
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="hstringgetaddressof-method"></a>HString::GetAddressOf Metodu
 Temel alınan HSTRING işlemek için bir işaretçi alır.  

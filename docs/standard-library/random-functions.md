@@ -2,22 +2,17 @@
 title: '&lt;rastgele&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - random/std::generate_canonical
 ms.assetid: 2ac9ec59-619b-4b85-a425-f729277c1bc8
 helpviewer_keywords:
 - std::generate_canonical
-caps.latest.revision: 10
-manager: ghogen
-ms.openlocfilehash: e3c5dba462b45589005a996e6226330882b29b15
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: c8ee20759e66c7beb295de96b8311df46555ac6b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltrandomgt-functions"></a>&lt;rastgele&gt; işlevleri
 

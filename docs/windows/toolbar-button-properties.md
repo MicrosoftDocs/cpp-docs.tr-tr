@@ -1,13 +1,10 @@
 ---
-title: "Araç çubuğu düğmesi özellikleri | Microsoft Docs"
-ms.custom: 
+title: Araç çubuğu düğmesi özellikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,28 +15,26 @@ helpviewer_keywords:
 - command IDs, toolbar buttons
 - width, toolbar buttons
 ms.assetid: b2705814-7c5d-4f24-8f77-07559b0cdda2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5e179cd400b0b8bcc621a7c69a4814eab098fbaa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3e61ba7e8720c755ce26408826c56a5c1fc9d51e
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="toolbar-button-properties"></a>Araç Çubuğu Düğmesi Özellikleri
 Araç çubuğu düğmesi özellikleri şunlardır:  
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
-|**KİMLİĞİ**|Düğme için kimliği tanımlar. Aşağı açılan liste ortak sağlar **kimliği** adları.|  
+|**ID**|Düğme için kimliği tanımlar. Aşağı açılan liste ortak sağlar **kimliği** adları.|  
 |**Genişlik**|Düğme genişliğini ayarlar. 16 piksel önerilir.|  
 |**Yükseklik**|Düğme yüksekliğini ayarlar. Bir düğme yüksekliğini araç çubuğundaki tüm düğmeleri yüksekliğini değiştiğine dikkat edin. 15 piksel önerilir.|  
-|**Sor**|Durum çubuğunda görüntülenen ileti tanımlar. \N ve bir ad ekleme Bu araç çubuğu düğmesi için araç ipucu ekler. Daha fazla bilgi için bkz: [araç ipucu oluşturma](../windows/creating-a-tool-tip-for-a-toolbar-button.md).|  
+|**istemi**|Durum çubuğunda görüntülenen ileti tanımlar. \N ve bir ad ekleme Bu araç çubuğu düğmesi için araç ipucu ekler. Daha fazla bilgi için bkz: [araç ipucu oluşturma](../windows/creating-a-tool-tip-for-a-toolbar-button.md).|  
   
  **Genişlik** ve **yükseklik** tüm düğmelere uygulayın. Araç çubuğu oluşturmak için kullanılan bir bit eşlem 2048 en büyük genişliği vardır. Bu nedenle düğmesi genişlik 512'e ayarlayın, yalnızca dört düğme olabilir ve 513 için genişliği ayarlarsanız, yalnızca üç düğme olabilir.  
   

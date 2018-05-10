@@ -1,27 +1,22 @@
 ---
-title: "3.2 kilit işlevleri | Microsoft Docs"
-ms.custom: 
+title: 3.2 kilit işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 0ec855c6-55a9-49d7-bee4-5edae6e86a1b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 151c809a7bd28a2e4384371f5cec3bd192eed9d1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cd788b0ef1c72b1f38a44ee608ce0c7760e24adc
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="32-lock-functions"></a>3.2 Kilit İşlevleri
 Bu bölümde açıklanan işlevleri eşitleme için kullanılan kilitleri yönetme.  

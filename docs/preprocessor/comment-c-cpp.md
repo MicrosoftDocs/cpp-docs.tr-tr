@@ -1,12 +1,9 @@
 ---
 title: Yorum (C/C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vc-pragma.comment
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - pragmas, comment
 - comment pragma
 ms.assetid: 20f099ff-6303-49b3-9c03-a94b6aa69b85
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1062923f50470a2238af21676c4137fac241905
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 30683bb76ce674becb81321607bc95fefdb78ac1
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="comment-cc"></a>comment (C/C++)
 Bir yorum kaydı bir nesne dosyası veya yürütülebilir dosyanın yerleştirir.  
@@ -44,7 +39,7 @@ Bir yorum kaydı bir nesne dosyası veya yürütülebilir dosyanın yerleştirir
 ## <a name="remarks"></a>Açıklamalar  
  *Yorum türü* biri aşağıda açıklanan önceden tanımlanmış tanımlayıcılardır, yorum kaydı türünü belirtir. İsteğe bağlı `commentstring` bazı yorum türleri için ek bilgileri sağlayan bir dize değil. Çünkü `commentstring` bir değişmez dize değişmez değerleri kaçış karakterleri, katıştırılmış tırnak işaretleri göre için tüm kuralları obeys dizesidir (**"**) ve birleştirme.  
   
- **compiler**  
+ **Derleyici**  
  Derleyici adını ve sürüm numarasını nesne dosyasına yerleştirir. Bu açıklama kaydı bağlayıcı tarafından göz ardı edilir. Sağladığınız varsa bir `commentstring` parametresi derleyici bu kayıt türü için bir uyarı oluşturur.  
   
  **exestr**  
@@ -52,12 +47,12 @@ Bir yorum kaydı bir nesne dosyası veya yürütülebilir dosyanın yerleştirir
   
  `exestr` kullanım dışıdır ve gelecekteki bir sürümde; kaldırılacak Bağlayıcı yorum kaydı işlemez.  
   
- **lib**  
+ **LIB**  
  Bir kitaplık arama kaydı nesnesi dosyasına yerleştirir. Bu açıklama türü tarafından eklenmelidir bir `commentstring` adı (ve muhtemelen yolu) aramak için bağlayıcı istediğiniz kitaplığın içeren parametre. Kitaplık adı nesne dosyasındaki varsayılan kitaplık arama kayıtlar izler; Bağlayıcı için bu kitaplığı koşuluyla kitaplığı ile belirtilen değil yalnızca bu komut satırında adlı olarak arar [/nodefaultlib](../build/reference/nodefaultlib-ignore-libraries.md). Aynı kaynak dosyasına birden çok kitaplık arama kaydı yerleştirebilirsiniz; Bu kaynak dosyasına karşılaşılana aynı sırada nesne dosyasındaki her kayıt görüntülenir.  
   
  Varsayılan kitaplık ve ek kitaplık sırasını önemliyse ile derleme [/Zl](../build/reference/zl-omit-default-library-name.md) anahtar, varsayılan kitaplık adını nesne modülünde yerleştirilen engeller. İkinci bir açıklama pragması sonra sonra eklenen kitaplığı varsayılan kitaplık adını eklemek için kullanılabilir. Bu pragmaları ile listelenen kitaplıkları kaynak kodunda bulunan aynı sırada nesne modülü görünür.  
   
- **linker**  
+ **Bağlayıcı**  
  Basamak bir [bağlayıcı seçeneği](../build/reference/linker-options.md) nesne dosyasına. Bu açıklama türü için komut satırına geçirme veya geliştirme ortamında belirtme yerine bir bağlayıcı seçeneği belirtmek için kullanabilirsiniz. Örneğin, belirtebilirsiniz / eklenmesi bir simge, zorlama seçeneği içerir:  
   
 ```  
@@ -68,13 +63,13 @@ Bir yorum kaydı bir nesne dosyası veya yürütülebilir dosyanın yerleştirir
   
 -   [/ DEFAULTLIB](../build/reference/defaultlib-specify-default-library.md)  
   
--   [/EXPORT](../build/reference/export-exports-a-function.md)  
+-   [/ DIŞARI AKTARMA](../build/reference/export-exports-a-function.md)  
   
 -   [/ INCLUDE](../build/reference/include-force-symbol-references.md)  
   
 -   [/ MANIFESTDEPENDENCY](../build/reference/manifestdependency-specify-manifest-dependencies.md)  
   
--   [/MERGE](../build/reference/merge-combine-sections.md)  
+-   [/ MERGE](../build/reference/merge-combine-sections.md)  
   
 -   [/ SECTION](../build/reference/section-specify-section-attributes.md)  
   

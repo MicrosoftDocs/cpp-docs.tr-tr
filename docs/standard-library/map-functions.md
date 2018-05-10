@@ -2,21 +2,16 @@
 title: '&lt;Harita&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - map/std::swap (map)
 - map/std::swap (multimap)
 ms.assetid: 7cb3d1a5-7add-4726-a73f-61927eafd466
-caps.latest.revision: 6
-manager: ghogen
-ms.openlocfilehash: 6a83feab5c477f222dc192c1c916e5cbb93e637d
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: d6f62868d17cec9215b18451527c3a2e4e22b7f2
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltmapgt-functions"></a>&lt;Harita&gt; işlevleri
 

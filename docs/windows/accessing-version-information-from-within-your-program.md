@@ -1,13 +1,10 @@
 ---
-title: "Programınızdan sürüm bilgilerine erişme | Microsoft Docs"
-ms.custom: 
+title: Programınızdan sürüm bilgilerine erişme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.version
 dev_langs:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - GetFileVersionInfo
 - version information
 ms.assetid: 18622333-d9e8-4309-9465-677cd10c79b1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e9d47a4df27333afc5d267e791e20d1ed4fe8430
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e8913e0dc33da1de2f240305ff19f5250e38b180
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="accessing-version-information-from-within-your-program"></a>Programınızdan Sürüm Bilgilerine Erişme
 ### <a name="to-access-version-information-from-within-your-program"></a>Programınızdan sürüm bilgilerine erişmek için  

@@ -2,11 +2,8 @@
 title: Eşzamanlılık Namespace | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - concurrent_priority_queue/concurrency
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - Concurrency namespace
 ms.assetid: f1d33ca2-679b-4442-b140-22a9d9df61d1
-caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79a6334dae9835901198387d58316ef34e81ce50
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: d5659c48b73eb8dfde4ffc7683de3c2cf721564d
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="concurrency-namespace"></a>concurrency Ad Alanı
 `Concurrency` Ad alanı sınıflar sağlar ve size işlevleri erişim eşzamanlılık çalışma zamanı C++ için eşzamanlı bir programlama çerçevesi. Daha fazla bilgi için bkz: [eşzamanlılık çalışma zamanı](../../../parallel/concrt/concurrency-runtime.md).  
@@ -196,20 +191,20 @@ namespace concurrency;
 |----------|-----------------|  
 |[Alloc işlevi](concurrency-namespace-functions.md#alloc)|Bir eşzamanlılık çalışma zamanı önbelleğe alma Suballocator ' belirtilen boyut, bellek bloğu ayırır.|  
 |[asend işlevi](concurrency-namespace-functions.md#asend)|Fazla Yüklendi. Zaman uyumsuz bir hedef blok verileri yaymak için bir görev zamanlar işlemi gönderin.|  
-|[cancel_current_task Function](concurrency-namespace-functions.md#cancel_current_task)|Şu anda yürütülen görev iptal eder. Bu işlev Görev Yürütme iptal etmek ve girmek neden görevi gövdesi içinde çağrılabilir `canceled` durumu.<br /><br /> Gövdesi içinde değilse bu işlevi çağırmak için desteklenen bir senaryo değildir bir `task`. Bunun yapılması bir kilitlenme veya yanıt vermemesine uygulamanızda gibi tanımsız davranış neden olur.|  
+|[cancel_current_task işlevi](concurrency-namespace-functions.md#cancel_current_task)|Şu anda yürütülen görev iptal eder. Bu işlev Görev Yürütme iptal etmek ve girmek neden görevi gövdesi içinde çağrılabilir `canceled` durumu.<br /><br /> Gövdesi içinde değilse bu işlevi çağırmak için desteklenen bir senaryo değildir bir `task`. Bunun yapılması bir kilitlenme veya yanıt vermemesine uygulamanızda gibi tanımsız davranış neden olur.|  
 |[create_async işlevi](concurrency-namespace-functions.md#create_async)|Bir kullanıcı tarafından sağlanan lambda veya işlev nesnesine bağlı bir Windows çalışma zamanı zaman uyumsuz yapısı oluşturur. Dönüş türü `create_async` aşağıdakilerden biri `IAsyncAction^`, `IAsyncActionWithProgress<TProgress>^`, `IAsyncOperation<TResult>^`, veya `IAsyncOperationWithProgress<TResult, TProgress>^` yönteme geçirilen lambda imza göre.|  
 |[create_task işlevi](concurrency-namespace-functions.md#create_task)|Fazla Yüklendi. Bir PPL oluşturur [görev](http://msdn.microsoft.com/en-us/5389e8a5-5038-40b6-844a-55e9b58ad35f) nesnesi. `create_task` kullanılabilir herhangi bir yere görev Oluşturucusu kullanıldığını. Kullanılmasına izin verdiği için çoğunlukla kolaylık sağlamak için sağlanmıştır `auto` görevleri oluşturulurken anahtar sözcüğü.|  
-|[CreateResourceManager Function](concurrency-namespace-functions.md#createresourcemanager)|Eşzamanlılık Çalışma zamanı Kaynak Yöneticisi'nin singleton örneği temsil eden bir arabirim döndürür. Resource Manager kaynakları birbirleri ile işbirliği yapmak istediğiniz zamanlayıcılar atamak için sorumludur.|  
+|[CreateResourceManager işlevi](concurrency-namespace-functions.md#createresourcemanager)|Eşzamanlılık Çalışma zamanı Kaynak Yöneticisi'nin singleton örneği temsil eden bir arabirim döndürür. Resource Manager kaynakları birbirleri ile işbirliği yapmak istediğiniz zamanlayıcılar atamak için sorumludur.|  
 |[DisableTracing işlevi](concurrency-namespace-functions.md#disabletracing)|Eşzamanlılık Çalışma Zamanı'nda izleme devre dışı bırakır. ETW İzleme varsayılan olarak kaydı olmadığından bu işlev kullanım dışıdır.|  
 |[EnableTracing işlevi](concurrency-namespace-functions.md#enabletracing)|Eşzamanlılık Çalışma Zamanı'nda izlemeyi etkinleştirir. ETW İzleme artık varsayılan olarak açık olduğundan bu işlev kullanım dışıdır.|  
 |[Free işlevi](concurrency-namespace-functions.md#free)|Tarafından önceden ayrılmış bellek bloğu serbest `Alloc` eşzamanlılık çalışma zamanı Suballocator önbelleğe alma yöntemi.|  
-|[get_ambient_scheduler Function (Concurrency Runtime)](concurrency-namespace-functions.md#get_ambient_scheduler)||  
+|[get_ambient_scheduler işlevi (eşzamanlılık çalışma zamanı)](concurrency-namespace-functions.md#get_ambient_scheduler)||  
 |[GetExecutionContextId Function](concurrency-namespace-functions.md#getexecutioncontextid)|Arabirimini uygulayan bir yürütme bağlamı atanmış benzersiz bir tanımlayıcı döndürür `IExecutionContext` arabirimi.|  
 |[GetOSVersion işlevi](concurrency-namespace-functions.md#getosversion)|İşletim sistemi sürümünü döndürür.|  
 |[GetProcessorCount işlevi](concurrency-namespace-functions.md#getprocessorcount)|Temel alınan sistemdeki donanım iş parçacığı sayısını döndürür.|  
 |[GetProcessorNodeCount Function](concurrency-namespace-functions.md#getprocessornodecount)|Temel alınan sistemdeki NUMA düğümlerinin veya işlemci paketleri sayısını döndürür.|  
 |[GetSchedulerId Function](concurrency-namespace-functions.md#getschedulerid)|Arabirimini uygulayan bir zamanlayıcı atanmış benzersiz bir tanımlayıcı döndürür `IScheduler` arabirimi.|  
-|[interruption_point Function](concurrency-namespace-functions.md#interruption_point)|İptal için bir kesinti noktası oluşturur. Burada bu işlev çağrılır bağlamda iptal ediyor, bu şu anda yürütülen paralel iş yürütme durdurur dahili bir özel durum atar. İptal ediyor değilse işlev hiçbir şey yapmaz.|  
+|[interruption_point işlevi](concurrency-namespace-functions.md#interruption_point)|İptal için bir kesinti noktası oluşturur. Burada bu işlev çağrılır bağlamda iptal ediyor, bu şu anda yürütülen paralel iş yürütme durdurur dahili bir özel durum atar. İptal ediyor değilse işlev hiçbir şey yapmaz.|  
 |[is_current_task_group_canceling Function](concurrency-namespace-functions.md#is_current_task_group_canceling)|Görev olup olmadığını grubu, şu anda geçerli bağlamda satır içi yürütüyor, ilişkin bir gösterge ortasında etkin bir iptal (ya da kısa süre içinde olacaktır) döndürür. Satır içi geçerli bağlama göre şu anda yürütülmekte olan hiçbir görev grubu ise unutmayın `false` döndürülür.|  
 |[make_choice işlevi](concurrency-namespace-functions.md#make_choice)|Fazla Yüklendi. Oluşturan bir `choice` isteğe bağlı bir Mesajlaşma bloğundan `Scheduler` veya `ScheduleGroup` ve iki veya daha fazla giriş kaynağı.|  
 |[make_greedy_join Function](concurrency-namespace-functions.md#make_greedy_join)|Fazla Yüklendi. Oluşturan bir `greedy multitype_join` isteğe bağlı bir Mesajlaşma bloğundan `Scheduler` veya `ScheduleGroup` ve iki veya daha fazla giriş kaynağı.|  
@@ -226,7 +221,7 @@ namespace concurrency;
 |[receive işlevi](concurrency-namespace-functions.md#receive)|Fazla Yüklendi. Bir genel uygulama, tam olarak bir kaynaktan veri bekleyin ve kabul edilen değerlerin filtrelemek bir bağlam izin vererek alırsınız.|  
 |[run_with_cancellation_token Function](concurrency-namespace-functions.md#run_with_cancellation_token)|İşlev nesnesi, verilen iptal belirteci bağlamında hemen ve eşzamanlı olarak yürütür.|  
 |[send işlevi](concurrency-namespace-functions.md#send)|Fazla Yüklendi. Zaman uyumlu bir hedef kabul eder ya da ileti reddettiğinde kadar bekler işlemi gönderin.|  
-|[set_ambient_scheduler Function (Concurrency Runtime)](concurrency-namespace-functions.md#set_ambient_scheduler)||  
+|[set_ambient_scheduler işlevi (eşzamanlılık çalışma zamanı)](concurrency-namespace-functions.md#set_ambient_scheduler)||  
 |[set_task_execution_resources Function](concurrency-namespace-functions.md#set_task_execution_resources)|Fazla Yüklendi. Belirtilen benzeşim için eşzamanlılık çalışma zamanı iç çalışan iş parçacıkları tarafından kullanılan yürütme kaynakları kısıtlar.<br /><br /> Bu yöntemi yalnızca Resource Manager oluşturulmadan önce arasında veya iki Resource Manager yaşam süreleri çağırmak için geçerlidir. Kaynak Yöneticisi'ni çağırma aynı anda yok sürece birden çok kez çağrılabilir. Bir benzeşim sınırı ayarladıktan sonra onu sonraki geçerli çağrısı kadar sürdürür `set_task_execution_resources` yöntemi.<br /><br /> Sağlanan benzeşim maskesi bir alt işlem benzeşim maskesi olması gerekmez. İşlem benzeşimi gerekiyorsa güncelleştirilir.|  
 |[swap işlevi](concurrency-namespace-functions.md#swap)|İki öğelerini alış verişleri `concurrent_vector` nesneleri.|  
 |[task_from_exception işlevi (eşzamanlılık çalışma zamanı)](concurrency-namespace-functions.md#task_from_exception)||  
@@ -245,7 +240,7 @@ namespace concurrency;
 |[operator & &](concurrency-namespace-operators.md#operator_amp_amp)|Fazla Yüklendi. Bağımsız değişkenler olarak verilen görevleri her ikisi de başarıyla tamamlandığında, başarılı bir şekilde tamamlanır bir görev oluşturur.|  
 |[operator&#124;&#124;](concurrency-namespace-operators.md#operator_lor)|Fazla Yüklendi. Bağımsız değişkenler tamamladıkça başarıyla görevlerin birini ne zaman sağlanan başarıyla tamamlanır bir görev oluşturur.|  
 |[operator <](concurrency-namespace-operators.md#operator_lt)|Varsa testleri `concurrent_vector` nesne işlecinin sol tarafındaki küçük `concurrent_vector` sağ tarafında nesne.|  
-|[operator<=](concurrency-namespace-operators.md#operator_lt_eq)|Varsa testleri `concurrent_vector` işlecinin sol tarafındaki nesnesidir küçük veya eşit `concurrent_vector` sağ tarafında nesne.|  
+|[operator < =](concurrency-namespace-operators.md#operator_lt_eq)|Varsa testleri `concurrent_vector` işlecinin sol tarafındaki nesnesidir küçük veya eşit `concurrent_vector` sağ tarafında nesne.|  
 |[operator==](concurrency-namespace-operators.md#operator_eq_eq)|Varsa testleri `concurrent_vector` nesne işlecinin sol tarafındaki eşittir `concurrent_vector` sağ tarafında nesne.|  
 |[operator >](concurrency-namespace-operators.md#operator_gt)|Varsa testleri `concurrent_vector` işlecinin sol tarafındaki nesnesidir büyük `concurrent_vector` sağ tarafında nesne.|  
 |[operator>=](concurrency-namespace-operators.md#operator_lt_eq)|Varsa testleri `concurrent_vector` işlecinin sol tarafındaki nesnesidir değerinden büyük veya eşit `concurrent_vector` sağ tarafında nesne.|  

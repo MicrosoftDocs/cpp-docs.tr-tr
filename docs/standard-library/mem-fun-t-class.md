@@ -2,11 +2,8 @@
 title: mem_fun_t sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xfunctional/std::mem_fun_t
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - mem_fun_t class
 ms.assetid: 242566d4-750c-4c87-9d63-2e2c9d19ca2a
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d49fbbcb921633df5231903085f094f8b9ec37e4
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 32aceae204f50d98e84f1286042854e725917623
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="memfunt-class"></a>mem_fun_t Sınıfı
 

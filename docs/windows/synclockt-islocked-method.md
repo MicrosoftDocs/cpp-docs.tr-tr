@@ -1,12 +1,9 @@
 ---
-title: "Synclockt::IsLocked yöntemi | Microsoft Docs"
-ms.custom: 
+title: Synclockt::IsLocked yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::IsLocked
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - IsLocked method
 ms.assetid: a81fea43-f99a-4708-812a-7fd6af500d3d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 47dc99415fd995f144deddb6ca3bc7a4bb419ca5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 067b3763e10b2bbb310b213f7d748e953ba2a902
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="synclocktislocked-method"></a>SyncLockT::IsLocked Metodu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  

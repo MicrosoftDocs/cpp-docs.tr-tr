@@ -2,9 +2,6 @@
 title: Eşzamanlılık ad alanı işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - concrt/concurrency::Alloc
@@ -40,17 +37,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 520a6dff-9324-4df2-990d-302e3050af6a
-caps.latest.revision: 6
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66cf776e02d286b04c4fe9338d74d6a9db196a68
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: 9e1eed6fdbf5f676e5a7177affb7c38cd016fa4c
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="concurrency-namespace-functions"></a>Eşzamanlılık ad alanı işlevleri
 ||||  
@@ -65,10 +60,10 @@ ms.lasthandoff: 04/10/2018
 |[make_greedy_join](#make_greedy_join)|[make_join](#make_join)|[make_task](#make_task)|  
 |[parallel_buffered_sort](#parallel_buffered_sort)|[parallel_for](#parallel_for)|[parallel_for_each](#parallel_for_each)|  
 |[parallel_invoke](#parallel_invoke)|[parallel_radixsort](#parallel_radixsort)|[parallel_reduce](#parallel_reduce)|  
-|[parallel_sort](#parallel_sort)|[parallel_transform](#parallel_transform)|[receive](#receive)|  
-|[run_with_cancellation_token](#run_with_cancellation_token)|[send](#send)|[set_ambient_scheduler](#set_ambient_scheduler)|  
-|[set_task_execution_resources](#set_task_execution_resources)|[swap](#swap)|[task_from_exception](#task_from_exception)|  
-|[task_from_result](#task_from_result)|[try_receive](#try_receive)|[wait](#wait)|  
+|[parallel_sort](#parallel_sort)|[parallel_transform](#parallel_transform)|[Alma](#receive)|  
+|[run_with_cancellation_token](#run_with_cancellation_token)|[Gönder](#send)|[set_ambient_scheduler](#set_ambient_scheduler)|  
+|[set_task_execution_resources](#set_task_execution_resources)|[Değiştirme](#swap)|[task_from_exception](#task_from_exception)|  
+|[task_from_result](#task_from_result)|[try_receive](#try_receive)|[bekleme](#wait)|  
 |[when_all](#when_all)|[when_any](#when_any)|  
   
 ##  <a name="alloc"></a>  Ayırma  
@@ -1423,7 +1418,7 @@ inline void swap(
  Öğeleri takas için sağlama eşzamanlı vektör veya öğeleri olan eşzamanlı vektör olanlar değiştirilebilmesi için vektör `_A`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir algoritma özelleştirilmiş kapsayıcı sınıfını şablon işlevi olan `concurrent_vector` üye işlevini yürütmek için `_A`. [concurrent_vector::swap](concurrent-vector-class.md#swap)( `_B`). İşlev şablonlarının kısmi derleyici tarafından sıralaması örneğine bunlar. Şablon işlevleri işlev çağrısı şablonla eşleşmesi benzersiz değil şekilde aşırı zaman derleyici şablon işlevi en özelleştirilmiş sürümünü seçin. Genel bir şablon işlevi sürümü `template <class T> void swap(T&, T&)`, algoritma sınıfı tarafından atama çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özel sürüm kapsayıcı sınıfı iç gösterimi ile çalışabilirsiniz gibi daha hızlıdır.  
+ Bir algoritma özelleştirilmiş kapsayıcı sınıfını şablon işlevi olan `concurrent_vector` üye işlevini yürütmek için `_A`. [concurrent_vector::Swap](concurrent-vector-class.md#swap)( `_B`). İşlev şablonlarının kısmi derleyici tarafından sıralaması örneğine bunlar. Şablon işlevleri işlev çağrısı şablonla eşleşmesi benzersiz değil şekilde aşırı zaman derleyici şablon işlevi en özelleştirilmiş sürümünü seçin. Genel bir şablon işlevi sürümü `template <class T> void swap(T&, T&)`, algoritma sınıfı tarafından atama çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özel sürüm kapsayıcı sınıfı iç gösterimi ile çalışabilirsiniz gibi daha hızlıdır.  
   
  Bu yöntem eşzamanlılık uyumlu değil. Bu yöntemi çağırdığınızda başka bir iş parçacığı eşzamanlı vektörlerinin birini işlemleri gerçekleştirme emin olmalısınız.  
   

@@ -2,11 +2,8 @@
 title: task sınıfı (eşzamanlılık çalışma zamanı) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: ''
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - task
@@ -23,17 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - task class
 ms.assetid: cdc3a8c0-5cbe-45a0-b5d5-e9f81d94df1a
-caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80f56f02c8a26e87da3f402ecebf738304408eac
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: 5887350d9ccdf6fc4a41d72ae8a70fa38d939390
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="task-class-concurrency-runtime"></a>task Sınıfı (Eşzamanlılık Çalışma Zamanı)
 Paralel Desen kitaplığı (PPL) `task` sınıfı. A `task` nesnesi paralel eşzamanlılık çalışma zamanı'nda paralel algoritmaları tarafından üretilen iş ve zaman uyumsuz olarak ve diğer görevleri ile aynı anda yürütülebilecek iş temsil eder. Bir sonuç türü üretir `_ResultType` başarıyla tamamlandığında. Tür görevleri `task<void>` hiçbir sonucu. Bir görev sırasında beklenen ve diğer görevler bağımsız olarak iptal. Ayrıca devamlılıklar kullanarak diğer görevleri ile birleştirilebilen ( `then`) ve birleştirme ( `when_all`) ve seçim ( `when_any`) desenleri.  
@@ -69,7 +64,7 @@ class task;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[task](#ctor)|Fazla Yüklendi. Oluşturan bir `task` nesnesi.|  
+|[Görev](#ctor)|Fazla Yüklendi. Oluşturan bir `task` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -80,7 +75,7 @@ class task;
 |[is_done](#is_done)|Görev tamamlandı, belirler.|  
 |[scheduler](#scheduler)|Bu Görev Zamanlayıcı'yı döndürür|  
 |[ardından](#then)|Fazla Yüklendi. Devamlılık görevi için bu görev ekler.|  
-|[wait](#wait)|Bu görev terminal durumuna ulaşmak bekler. Mümkündür `wait` tüm görevleri bağımlılıklarını karşılanır ve onu zaten yürütme için bir arka plan çalışanı tarafından çekilen değil görev satır içi yürütülecek.|  
+|[bekleme](#wait)|Bu görev terminal durumuna ulaşmak bekler. Mümkündür `wait` tüm görevleri bağımlılıklarını karşılanır ve onu zaten yürütme için bir arka plan çalışanı tarafından çekilen değil görev satır içi yürütülecek.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -101,7 +96,7 @@ class task;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="get"></a> get 
+##  <a name="get"></a> Al 
 
  Bu görev üretilen sonuç döndürür. Görev bir terminal değilse durumunda, bir çağrı `get` görevin tamamlanmasını bekler. Bu yöntem bir görevde çağrıldığında bir değer döndürmeyen bir `result_type` , `void`.  
   

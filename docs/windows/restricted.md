@@ -1,13 +1,10 @@
 ---
-title: "kısıtlı | Microsoft Docs"
-ms.custom: 
+title: kısıtlı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.restricted
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - restricted attribute
 ms.assetid: 504a96be-b904-4269-8be1-920feba201b4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 569d57da691f40857f54dcae1c383ff7758564f4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e1d688d4ebca5d2cc01901f5fe1afaa4536b71bb
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="restricted"></a>kısıtlı
 Bir modül, arabirim veya görüntüleme arabirimi üyesi rasgele çağrılamaz belirtir.  
@@ -79,7 +74,7 @@ class c : public a, public b
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Yöntemi, arabirim `interface`, **sınıfı**,`struct`|  
+|**Uygulandığı öğe:**|Yöntemi, arabirim `interface`, **sınıfı**, `struct`|  
 |**Yinelenebilir**|Hayır|  
 |**Gerekli öznitelikler**|**coclass'ı** (uygulandığında **sınıfı** veya `struct`)|  
 |**Geçersiz öznitelikler**|Yok.|  

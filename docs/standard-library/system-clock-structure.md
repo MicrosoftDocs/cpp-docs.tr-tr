@@ -2,11 +2,8 @@
 title: system_clock yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - chrono/std::chrono::system_clock
@@ -18,17 +15,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: a97bd46e-267a-4836-9f7d-af1f664e99ae
-caps.latest.revision: 14
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 432109ae0c05cb864fe92da405bbaa1e0a9c225f
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 11ea0dd92eda9aad0cb85bbd1385cdec5af349df
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="systemclock-structure"></a>system_clock Yapısı
 

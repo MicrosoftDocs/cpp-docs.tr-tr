@@ -2,21 +2,16 @@
 title: '&lt;hash_set&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - hash_set/std::swap
 - hash_set/std::swap (hash_multiset)
 ms.assetid: 557a0162-3728-4537-97dc-f9f6cc7ece94
-caps.latest.revision: 7
-manager: ghogen
-ms.openlocfilehash: d9dc03b6ea4e6ed90a6eda433faf6710b6982bb3
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 083d928198d8d83d8a56d8a74a6204e94c86aa67
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="lthashsetgt-functions"></a>&lt;hash_set&gt; işlevleri
 

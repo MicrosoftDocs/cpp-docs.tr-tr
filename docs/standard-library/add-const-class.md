@@ -2,11 +2,8 @@
 title: add_const sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - type_traits/std::add_const
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - add_const class
 - add_const
 ms.assetid: 1262a1eb-8c9c-4dd6-9f43-88ba280182f1
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 949b6fae3148aa12bee001a57fb92189f9ade0ed
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: e79c06c49c8245da4911e8b72020537aa2e7bb45
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="addconst-class"></a>add_const Sınıfı
 

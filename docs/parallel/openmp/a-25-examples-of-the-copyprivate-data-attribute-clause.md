@@ -1,27 +1,22 @@
 ---
-title: "Veri özniteliği yan tümcesi copyprivate A.25 örnekleri | Microsoft Docs"
-ms.custom: 
+title: Veri özniteliği yan tümcesi copyprivate A.25 örnekleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 7b1cb6a5-5691-4b95-b3ac-d7543ede6405
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7cdf7598e00bab72966fe79454567b0a59dcbaae
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c92d9ce6f22c2d53a2e65d7b67c22e4f080f162c
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="a25---examples-of-the-copyprivate-data-attribute-clause"></a>A.25   copyprivate Veri Özniteliği Yan Tümcesi Örnekleri
 **Örnek 1:** `copyprivate` yan tümcesi ([bölüm 2.7.2.8](../../parallel/openmp/2-7-2-8-copyprivate.md) sayfasında 32) diğer iş parçacıklarında özel değişkenleri tüm örnekleri için doğrudan tek bir iş parçacığı tarafından alınan değerleri yayınlamak için kullanılır.  

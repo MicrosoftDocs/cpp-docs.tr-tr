@@ -2,11 +2,8 @@
 title: weak_ptr sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - memory/std::weak_ptr
@@ -37,17 +34,15 @@ helpviewer_keywords:
 - std::weak_ptr [C++], swap
 - std::weak_ptr [C++], use_count
 ms.assetid: 2db4afb2-c7be-46fc-9c20-34ec2f8cc7c2
-caps.latest.revision: 22
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8169d8958d99de545ed03c50393bc22478b425f
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 03cd10d3efac16521cf826f3d9081ec533b9abec
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="weakptr-class"></a>weak_ptr Sınıfı
 

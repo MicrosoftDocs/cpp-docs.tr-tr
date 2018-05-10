@@ -2,11 +2,8 @@
 title: char_traits&lt;char&gt; yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - iosfwd/std::char_traits<char>
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - char_traits<char> class
 ms.assetid: abd9373a-77db-4031-bf4b-f8ac15087581
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c74e00d9a1f8678539c4f722d48c409d1505b39
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 6a20e9c1df241feb8dd7f16891f1e2a67068f772
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="chartraitsltchargt-struct"></a>char_traits&lt;char&gt; yapısı
 

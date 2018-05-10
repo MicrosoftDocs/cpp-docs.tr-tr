@@ -2,11 +2,8 @@
 title: match_results sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - regex/std::match_results
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - match_results class
 ms.assetid: b504fdca-e5dd-429d-9960-6e27c9167fa6
-caps.latest.revision: 16
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48c257630c892c69b400d7d003ce36f9ce9c0397
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 407da94d8d813e4951f12ad9951dc64ac298f61d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="matchresults-class"></a>match_results Sınıfı
 

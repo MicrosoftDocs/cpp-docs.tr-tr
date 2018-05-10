@@ -1,12 +1,9 @@
 ---
-title: "#undef yönergesi (C/C++) | Microsoft Docs"
-ms.custom: 
+title: '#undef yönergesi (C/C++) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - '#undef'
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - undef directive (#undef)
 - preprocessor, directives
 ms.assetid: 88900e0e-2c19-4a63-b681-f3d3133c24ca
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 428831b2718009fc0b471d238cff965f74528a2f
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 16b8c937ad62ddc6738c626543dab2d4e5453bc5
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="undef-directive-cc"></a>#undef Yönergesi (C/C++)
 Daha önce `#define` ile oluşturulmuş bir adı kaldırır (tanımsız hale getirir).  
@@ -60,7 +55,7 @@ identifier
 #undef ADD  
 ```  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Makroların tanımlarını kaldırmak için komut satırında /U seçeneğini kullanın ve ardından tanımı kaldırılacak makro adlarını belirtin. Bu komutu gönderdikten etkisini için bir dizi eşdeğerdir `#undef` *makro adını* dosyasının başında deyimleri.  
   

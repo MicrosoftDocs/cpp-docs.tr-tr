@@ -1,12 +1,9 @@
 ---
-title: "norm_3 sınıfı | Microsoft Docs"
-ms.custom: 
+title: norm_3 sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_3::get_z
@@ -81,17 +78,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 17081060-14ce-477e-a71a-9801b0f1d9e4
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b697dec751cade2accb262c59b23983ac75d4205
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 822ef062dbde18dcdb285d2358d10f4a6ae2b566
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="norm3-class"></a>norm_3 Sınıfı
 Kısa bir vektör üç normal sayıların temsil eder.  
@@ -163,10 +158,10 @@ class norm_3;
 |----------|-----------------|  
 |norm_3::operator-||  
 |norm_3::operator--||  
-|norm_3::operator*=||  
-|norm_3::operator/=||  
+|norm_3::operator * =||  
+|norm_3::operator ve =||  
 |norm_3::operator++||  
-|norm_3::operator+=||  
+|norm_3::operator +=||  
 |norm_3::operator=||  
 |norm_3::operator-=||  
   
@@ -186,12 +181,12 @@ class norm_3;
 |norm_3::br||  
 |norm_3::brg||  
 |norm_3::g||  
-|norm_3::gb||  
-|norm_3::gbr||  
-|norm_3::gr||  
-|norm_3::grb||  
+|norm_3::GB||  
+|norm_3::GBR||  
+|norm_3::Gr||  
+|norm_3::Grb||  
 |norm_3::r||  
-|norm_3::rb||  
+|norm_3::RB||  
 |norm_3::rbg||  
 |norm_3::rg||  
 |norm_3::rgb||  
@@ -219,7 +214,7 @@ class norm_3;
   
  **Namespace:** Concurrency::graphics  
 
-## <a name="ctor">norm_3 Oluşturucusu</a>
+## <a name="ctor"></a> norm_3 Oluşturucusu
 Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -283,7 +278,7 @@ explicit inline norm_3(
  `_Other`  
  Başlatmak için kullanılan nesne.  
   
-## <a name="a-namesize-size-constant"></a><a name="size">boyutu sabiti
+## <a name="a-namesize-size-constant"></a><a name="size"> boyutu sabiti
 ### <a name="syntax"></a>Sözdizimi  
   
 ```  

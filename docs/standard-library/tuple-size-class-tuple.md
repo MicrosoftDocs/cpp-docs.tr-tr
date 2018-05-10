@@ -2,11 +2,8 @@
 title: tuple_size sınıfı; | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - tuple_size
@@ -17,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - std::tuple_size
 ms.assetid: 73852fc5-eb68-41f1-8379-465cedc2314a
-caps.latest.revision: 23
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 647fa1af327055f487d2522d57ee70119f04e627
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 7249aad5e130e805aae73bdbfba7f9c4f78ad4fe
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="tuplesize-class"></a>tuple_size sınıfı;
 

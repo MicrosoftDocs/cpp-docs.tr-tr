@@ -1,13 +1,10 @@
 ---
-title: "Nasıl yapılır: paralel sıralama rutini yazmak için parallel_invoke kullanma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: paralel sıralama rutini yazmak için parallel_invoke kullanma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - structured_task_group class, example
 - improving parallel performance with task groups [Concurrency Runtime]
 ms.assetid: 53979a2a-525d-4437-8952-f1ff85b37673
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff14294236efc26b83d31ad185dc1cfd6329dbe9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 53b9699c7ee5d2bd4775f2d6b97dc4d1c5155ce0
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-use-parallelinvoke-to-write-a-parallel-sort-routine"></a>Nasıl yapılır: Paralel Sıralama Rutini Yazmak için parallel_invoke Kullanma
 Bu belge nasıl kullanılacağını açıklar [parallel_invoke](../../parallel/concrt/parallel-algorithms.md#parallel_invoke) bitonic Sıralama algoritması performansını artırmak için algoritması. Bitonic Sıralama algoritması yinelemeli giriş sırası daha küçük sıralanmış bölümlere ayırır. Her bölüm işlemi tüm diğer işlemleri bağımsız olduğundan bitonic Sıralama algoritması paralel olarak çalıştırılabilir.  
@@ -37,21 +32,21 @@ Bu belge nasıl kullanılacağını açıklar [parallel_invoke](../../parallel/c
 > [!NOTE]
 >  Bu örnek bir paralel sıralama yordam çizim için kullanır. PPL'de sağlayan yerleşik sıralama algoritmaları de kullanabilirsiniz: [concurrency::parallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [concurrency::parallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort), ve [concurrency::parallel_ radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). Daha fazla bilgi için bkz: [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Bu belgede aşağıdaki görevleri açıklanmaktadır:  
   
 - [Bitonic sıralama seri olarak gerçekleştirme](#serial)  
   
 - [Paralel olarak Bitonic sıralama gerçekleştirmek için parallel_invoke kullanma](#parallel)  
   
-##  <a name="serial"></a>Bitonic sıralama seri olarak gerçekleştirme  
+##  <a name="serial"></a> Bitonic sıralama seri olarak gerçekleştirme  
  Aşağıdaki örnek bitonic Sıralama algoritması seri sürümünü gösterir. `bitonic_sort` İşlevi dizisi iki bölümlere ayırır, o bölümler ters yönde sıralar ve sonuçları birleştirir. Bu işlev kendisini her bölüm sıralamak için iki kez yinelemeli olarak çağırır.  
   
  [!code-cpp[concrt-parallel-bitonic-sort#1](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_1.cpp)]  
   
  [[Üst](#top)]  
   
-##  <a name="parallel"></a>Paralel olarak Bitonic sıralama gerçekleştirmek için parallel_invoke kullanma  
+##  <a name="parallel"></a> Paralel olarak Bitonic sıralama gerçekleştirmek için parallel_invoke kullanma  
  Bu bölümde nasıl kullanılacağını açıklar `parallel_invoke` bitonic Sıralama algoritması paralel olarak gerçekleştirmek için algoritması.  
   
 ### <a name="procedures"></a>Yordamlar  

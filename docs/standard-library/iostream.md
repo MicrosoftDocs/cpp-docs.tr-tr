@@ -2,11 +2,8 @@
 title: '&lt;iostream&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 09/20/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - <iostream>
@@ -23,17 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - iostream header
 ms.assetid: de5d39e1-7e77-4b55-bcd1-7c77b41515c8
-caps.latest.revision: 23
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40b74dea33bbd4ed8436e8e90c35fb054974d0c7
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: ed484dcfdb94b60545a84563c77a3f242cc6c316
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltiostreamgt"></a>&lt;iostream&gt;
 

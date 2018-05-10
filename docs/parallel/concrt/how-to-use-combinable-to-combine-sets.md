@@ -1,30 +1,25 @@
 ---
-title: "Nasıl yapılır: kümeleri birleştirmek için combinable kullanma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: kümeleri birleştirmek için combinable kullanma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - combinable class, example
 - combining sets with combinable [Concurrency Runtime]
 ms.assetid: 66ffe8e3-6bbb-4e9f-b790-b612922a68a7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bbd36e9536707bc639e8f80cc019b7fda18f793
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 689dacb98bc9f8053686a02414151b4982edca67
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-use-combinable-to-combine-sets"></a>Nasıl yapılır: Kümeleri Birleştirmek için combinable Kullanma
 Bu konuda nasıl kullanılacağını gösterir [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) asal sayılar kümesi işlem sınıfı.  

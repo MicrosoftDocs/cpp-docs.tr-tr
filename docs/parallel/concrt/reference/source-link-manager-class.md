@@ -1,12 +1,9 @@
 ---
-title: "source_link_manager sınıfı | Microsoft Docs"
-ms.custom: 
+title: source_link_manager sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - source_link_manager
@@ -26,17 +23,15 @@ dev_langs:
 helpviewer_keywords:
 - source_link_manager class
 ms.assetid: 287487cf-e0fe-4c35-aa3c-24f081d1ddae
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6368511a7e824e6e1bb69542815fce1e864a964
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: f8e17626fc870242c97a9ad66a77e5e3b77b1ed1
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="sourcelinkmanager-class"></a>source_link_manager Sınıfı
 `source_link_manager` Nesnesi ileti bloğu ağ bağlantıları yönetir `ISource` engeller.  
@@ -68,7 +63,7 @@ class source_link_manager;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[source_link_manager](#ctor)|Oluşturan bir `source_link_manager` nesnesi.|  
-|[~source_link_manager Destructor](#dtor)|Bozar `source_link_manager` nesnesi.|  
+|[~ source_link_manager yok Edicisi](#dtor)|Bozar `source_link_manager` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -78,9 +73,9 @@ class source_link_manager;
 |[Başlangıç](#begin)|Yineleyici ilk öğe döndürür `source_link_manager` nesnesi.|  
 |[içerir](#contains)|Aramaları `network_link_registry` bu içinde `source_link_manager` belirtilen bloğu için nesnesi.|  
 |[Sayısı](#count)|Bağlantılı bloklarında sayar `source_link_manager` nesnesi.|  
-|[reference](#reference)|Üzerinde bir başvuru edinir `source_link_manager` nesnesi.|  
+|[Başvuru](#reference)|Üzerinde bir başvuru edinir `source_link_manager` nesnesi.|  
 |[register_target_block](#register_target_block)|Bu tutan hedef blok kaydeder `source_link_manager` nesnesi.|  
-|[release](#release)|Üzerinde başvuru serbest `source_link_manager` nesnesi.|  
+|[Sürüm](#release)|Üzerinde başvuru serbest `source_link_manager` nesnesi.|  
 |[remove](#remove)|Bir bağlantıdan kaldırır `source_link_manager` nesnesi.|  
 |[set_bound](#set_bound)|Bu eklenebilir kaynak bağlantı sayısının üst sınırını ayarlar `source_link_manager` nesnesi.|  
   
@@ -107,7 +102,7 @@ void add(_EType _Link);
  `_Link`  
  Eklenecek bir bloğu için bir işaretçi.  
   
-##  <a name="begin">Başlangıç</a> 
+##  <a name="begin"></a> Başlangıç 
 
  Yineleyici ilk öğe döndürür `source_link_manager` nesnesi.  
   
@@ -121,7 +116,7 @@ iterator begin();
 ### <a name="remarks"></a>Açıklamalar  
  Yineleyici son durumu tarafından belirtilen bir `NULL` bağlantı.  
   
-##  <a name="contains">içerir</a> 
+##  <a name="contains"></a> içerir 
 
  Aramaları `network_link_registry` bu içinde `source_link_manager` belirtilen bloğu için nesnesi.  
   
@@ -136,7 +131,7 @@ bool contains(_EType _Link);
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Belirtilen blok bulunduysa `false` Aksi takdirde.  
   
-##  <a name="count">Sayısı</a> 
+##  <a name="count"></a> Sayısı 
 
  Bağlantılı bloklarında sayar `source_link_manager` nesnesi.  
   
@@ -210,7 +205,7 @@ void set_bound(size_t _MaxLinks);
 source_link_manager();
 ```  
   
-##  <a name="dtor"></a> ~source_link_manager 
+##  <a name="dtor"></a> ~ source_link_manager 
 
  Bozar `source_link_manager` nesnesi.  
   

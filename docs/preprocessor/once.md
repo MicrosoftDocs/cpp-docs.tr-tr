@@ -1,12 +1,9 @@
 ---
 title: sonra | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vc-pragma.once
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - once pragma
 - pragmas, once
 ms.assetid: c7517556-6403-4b16-8898-f2aa0a6f685f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f0aea1700feaad1c286386f17a5008514282d52
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 9b0e0b2b3667d4a33709caa643e4d26ed70b2990
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="once"></a>once
 Bir kaynak kodu dosyasını derlerken dosyanın (açık) yalnızca bir kez derleyici tarafından dahil olacağını belirtir.  

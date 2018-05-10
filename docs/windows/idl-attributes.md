@@ -1,13 +1,10 @@
 ---
-title: "IDL öznitelikleri | Microsoft Docs"
-ms.custom: 
+title: IDL öznitelikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - IDL files, attributes
 - .idl files
 ms.assetid: 04c596f4-c97b-4952-8053-316678b1d0b6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 447c4369d7a80348dfb6c5eee54c49d76c1e8a4c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5c522c039a0471240ba319561485e8cc7f348aaa
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="idl-attributes"></a>IDL Öznitelikleri
 Geleneksel olarak, bir .idl dosya bakımı için zorunlu kılıyordu:  
@@ -50,7 +45,7 @@ Geleneksel olarak, bir .idl dosya bakımı için zorunlu kılıyordu:
 |[async_uuid](../windows/async-uuid.md)|COM arabirimi zaman uyumlu ve zaman uyumsuz sürümlerini tanımlamak için MIDL derleyici yönlendirir UUID belirtir.|  
 |[bindable](../windows/bindable.md)|Özellik veri bağlama desteklediğini belirtir.|  
 |[call_as](../windows/call-as.md)|Uzak bir işleve eşlenmesi nonremotable işlevi sağlar.|  
-|[durumu](../windows/case-cpp.md)|İle kullanılan [switch_type](../windows/switch-type.md) UNION özniteliği.|  
+|[Durumu](../windows/case-cpp.md)|İle kullanılan [switch_type](../windows/switch-type.md) UNION özniteliği.|  
 |[coclass](../windows/coclass.md)|Yerler .idl dosyasına tanımı coclass'ı olarak sınıfı.|  
 |[control](../windows/control.md)|Kullanıcı tanımlı tür denetim olduğunu belirtir.|  
 |[cpp_quote](../windows/cpp-quote.md)|Belirtilen dize tırnak karakteri olmadan oluşturulan üstbilgi dosyası yayar.|  
@@ -77,7 +72,7 @@ Geleneksel olarak, bir .idl dosya bakımı için zorunlu kılıyordu:
 |[immediatebind](../windows/immediatebind.md)|Veritabanı veri bağlama nesnenin bir özelliğini yapılan tüm değişiklikler, hemen bildirilecek gösterir.|  
 |[importlib](../windows/importlib.md)|Zaten başka bir tür kitaplığı oluşturulan tür kitaplığı kullanılabilir içine derlenmiştir türleri sağlar.|  
 |[import](../windows/import.md)|Ana .idl dosyanızdan başvuru yapmak istediğinizi tanımlarını içeren başka bir .idl, .odl veya üst bilgi dosyasını belirtir.|  
-|[içerir](../windows/include-cpp.md)|Oluşturulan .idl dosyasında dahil edilecek bir veya daha fazla üst bilgi dosyaları belirtir.|  
+|[İçerir](../windows/include-cpp.md)|Oluşturulan .idl dosyasında dahil edilecek bir veya daha fazla üst bilgi dosyaları belirtir.|  
 |[includelib](../windows/includelib-cpp.md)|Oluşturulan .idl dosyasında dahil edilecek bir .idl veya .h dosyası neden olur.|  
 |[in](../windows/in-cpp.md)|Bir parametre çağrılan yordamı çağırma yordamdan geçirilecek olduğunu gösterir.|  
 |[last_is](../windows/last-is.md)|Aktarılacak son dizi öğesinden dizinini belirtir.|  
@@ -118,9 +113,9 @@ Geleneksel olarak, bir .idl dosya bakımı için zorunlu kılıyordu:
 |[switch_type](../windows/switch-type.md)|Birleşim discriminant kullanılan değişken türünü tanımlar.|  
 |[transmit_as](../windows/transmit-as.md)|Hangi istemci ve sunucu uygulamaları işlemek, sunulan türü, bir iletilen türüyle ilişkilendirmek için derleyicisi bildirir.|  
 |[uidefault](../windows/uidefault.md)|Tür bilgileri üye kullanıcı arabiriminde görünen varsayılan üye olduğunu gösterir.|  
-|[benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
+|[Benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
 |[usesgetlasterror](../windows/usesgetlasterror.md)|Bu işlev çağrılırken bir hata varsa çağıran sonra çağırabilirsiniz çağıran söyler `GetLastError` hata kodu alınamadı.|  
-|[UUID](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
+|[uuid](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
 |[v1_enum](../windows/v1-enum.md)|Belirtilen enum türü 16 bit varsayılan yerine bir 32 bit varlık olarak iletilmesi yönlendirir.|  
 |[vararg](../windows/vararg.md)|İşlev değişken sayıda bağımsız değişken sürmesi belirtir.|  
 |[vi_progid](../windows/vi-progid.md)|Sürüm bağımsız form ProgID belirtir.|  

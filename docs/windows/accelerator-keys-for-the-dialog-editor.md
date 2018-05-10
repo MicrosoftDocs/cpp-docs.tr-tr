@@ -1,13 +1,10 @@
 ---
-title: "Hızlandırıcı tuşları için iletişim kutusu Düzenleyicisi | Microsoft Docs"
-ms.custom: 
+title: Hızlandırıcı tuşları için iletişim kutusu Düzenleyicisi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.dialog
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - Dialog editor, shortcut keys
 ms.assetid: 940270e9-a974-425b-a681-dfeaba0adf66
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 75e9e6cac169bfe5e5867d0c1f3c14f70d19f916
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a526cb1312a1e97eca4ad716576c009a6ae05e4f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="accelerator-keys-for-the-dialog-editor"></a>İletişim Kutusu Düzenleyicisi için Hızlandırma Tuşları
 Aşağıda varsayılan iletişim Düzenleyici komutlarını Hızlandırıcı tuşları verilmektedir. Kısayol tuşları değiştirmek için tıklatın. **seçenekleri** üzerinde **Araçları** menüsünde, ardından **klavye** altında **ortam** klasör. Daha fazla bilgi için bkz: [tanımlama ve özelleştirme klavye kısayolları](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).  

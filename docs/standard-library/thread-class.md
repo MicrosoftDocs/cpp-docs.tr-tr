@@ -2,11 +2,8 @@
 title: thread sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - thread/std::thread
@@ -22,10 +19,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: df249bc7-ff81-4ff9-a6d6-5e3d9a8f56a1
-caps.latest.revision: 16
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::thread [C++]
 - std::thread [C++], thread
@@ -38,11 +33,11 @@ helpviewer_keywords:
 - std::thread [C++], swap
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a11cfa4600bd363712f42d4db17d5a9bbfc92a6
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: bfcb554b374d035e85d53d769d04317e52e4193b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="thread-class"></a>thread Sınıfı
 

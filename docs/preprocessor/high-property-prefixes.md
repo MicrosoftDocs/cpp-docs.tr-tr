@@ -1,12 +1,9 @@
 ---
 title: high_property_prefixes | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - high_property_prefixes
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - high_property_prefixes attribute
 ms.assetid: 91c6cc2b-19b6-4aba-8831-d9e5cccb58b5
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7df4ef6cded98c19ead86160aa772e349ebfd37
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 7269301fed3892fbf4b7cf6427bacb82d9712ef7
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="highpropertyprefixes"></a>high_property_prefixes
 **C++ özel**  
@@ -51,8 +46,8 @@ high_property_prefixes("GetPrefix","PutPrefix","PutRefPrefix")
 ## <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, üst düzey hata işleme **propget**, **propput**, ve **propputref** yöntemleri öneklerle adlı üye işlevleri tarafından açığa **Al** , `Put`, ve **PutRef**sırasıyla.  
   
- Son C++ özel  
+ **Son C++ özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+ [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

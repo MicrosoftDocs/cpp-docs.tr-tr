@@ -1,30 +1,25 @@
 ---
-title: "WINVER ve _WIN32_WINNT değiştirme | Microsoft Docs"
-ms.custom: 
+title: WINVER ve _WIN32_WINNT değiştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 09/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - WINVER in an upgraded Visual C++ project
 - _WIN32_WINNT in an upgraded Visual C++ project
 ms.assetid: 6a1f1d66-ae0e-48a7-81c3-524d8e8f3447
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 298fc14c57ad006228da39d1eb7d664debebd904
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4007f8b07b78618f4fdd8031d0f6dab5f1c12916
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="modifying-winver-and-win32winnt"></a>WINVER ve _WIN32_WINNT'de Değişiklik Yapma
 

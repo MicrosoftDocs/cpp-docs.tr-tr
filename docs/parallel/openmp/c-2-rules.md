@@ -1,36 +1,31 @@
 ---
 title: C.2 kurallar | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 4d52fef7-3eb7-4480-a335-8ed48681092b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5efa8d0e7cf4118362b7695bafcd4710b4021f6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a3bdf26435fdfeea2196b9ef281d656805f51bf2
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="c2-rules"></a>C.2 Kurallar
 Gösterimi standart C 6.1 bölümünde açıklanmıştır. Bu dilbilgisi ek OpenMP C ve C++ yönergeleri için temel dil dilbilgisi uzantıları gösterir.  
   
- **/\*C++ (ISO/IEC 14882:1998)\*/**  
+ **/\* C++ (ISO/IEC 14882:1998) \*/**  
   
  *deyimi seq*:  
   
- *deyimi*  
+ *Deyimi*  
   
  *OpenMP yönergesi*  
   
@@ -38,11 +33,11 @@ Gösterimi standart C 6.1 bölümünde açıklanmıştır. Bu dilbilgisi ek Open
   
  *deyimi seq openmp yönergesi*  
   
- **/\*C90 içinde (ISO/IEC 9899:1990)\*/**  
+ **/\* C90 içinde (ISO/IEC 9899:1990) \*/**  
   
  *Ekstre listesini*:  
   
- *deyimi*  
+ *Deyimi*  
   
  *OpenMP yönergesi*  
   
@@ -50,19 +45,19 @@ Gösterimi standart C 6.1 bölümünde açıklanmıştır. Bu dilbilgisi ek Open
   
  *Ekstre listesini openmp yönergesi*  
   
- **/\*C99 içinde (ISO/IEC 9899:1999)\*/**  
+ **/\* C99 içinde (ISO/IEC 9899:1999) \*/**  
   
  *Blok öğesi*:  
   
  *bildirimi*  
   
- *deyimi*  
+ *Deyimi*  
   
  *OpenMP yönergesi*  
   
  *deyimi*:  
   
- **/\*Standart deyimleri\*/**  
+ **/\* Standart deyimleri \*/**  
   
  *OpenMP yapısı*  
   
@@ -96,7 +91,7 @@ Gösterimi standart C 6.1 bölümünde açıklanmıştır. Bu dilbilgisi ek Open
   
  *yapılandırılmış blok*:  
   
- *deyimi*  
+ *Deyimi*  
   
  *Paralel yapı*:  
   
@@ -150,7 +145,7 @@ Gösterimi standart C 6.1 bölümünde açıklanmıştır. Bu dilbilgisi ek Open
   
  **Destekli**  
   
- **çalışma zamanı**  
+ **Çalışma zamanı**  
   
  *bölümler yapı*:  
   
@@ -272,9 +267,9 @@ Gösterimi standart C 6.1 bölümünde açıklanmıştır. Bu dilbilgisi ek Open
   
  **# pragma omp sıralı** *yeni satır*  
   
- *bildirim*:  
+ *Bildirim*:  
   
- **/\*Standart bildirimleri\*/**  
+ **/\* Standart bildirimleri \*/**  
   
  *threadprivate yönergesi*  
   
@@ -304,17 +299,17 @@ Gösterimi standart C 6.1 bölümünde açıklanmıştır. Bu dilbilgisi ek Open
   
  *Azaltma işleci*:  
   
- *Aşağıdakilerden birini*:  **+  \* -& ^ &#124; & & &#124; &#124;**  
+ *Aşağıdakilerden birini*:  **+  \* -& ^ &#124; & &&#124;&#124;**  
   
- **/\*C\*/**  
+ **/\* C \*/**  
   
  *değişken listesi*:  
   
- *tanımlayıcı*  
+ *Tanımlayıcı*  
   
  *değişken listesi* **,** *tanımlayıcısı*  
   
- **/\*C++'da\*/**  
+ **/\* C++'da \*/**  
   
  *değişken listesi*:  
   

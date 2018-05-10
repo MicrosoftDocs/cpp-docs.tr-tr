@@ -1,27 +1,22 @@
 ---
-title: "1.6 kuruluş | Microsoft Docs"
-ms.custom: 
+title: 1.6 kuruluş | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 80c6c3a4-3b08-4b0b-a25d-7ca9b1afcaa7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4fbe9cb104d8318f603994b3b2582ed28ac85db
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 32ce5ecdcac09164c83d7124a1b1984a142e8e6c
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="16-organization"></a>1.6 Organizasyon
 -   Çalışma Zamanı Kitaplığı işlevleri ([bkz: Bölüm 3](../../parallel/openmp/3-run-time-library-functions.md)).  

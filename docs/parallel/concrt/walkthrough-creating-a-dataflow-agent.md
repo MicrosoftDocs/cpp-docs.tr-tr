@@ -1,30 +1,25 @@
 ---
-title: "İzlenecek yol: bir veri akışı Aracısı oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: bir veri akışı Aracısı oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - creating dataflow agents [Concurrency Runtime]
 - dataflow agents, creating [Concurrency Runtime]
 ms.assetid: 9db5ce3f-c51b-4de1-b79b-9ac2a0cbd130
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f92dc200f29f5fd20c8dd1cc27508b9c7cdf4ce
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 33f7c7cf5e64d2ddf751bb97ee1b617d09df6af3
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="walkthrough-creating-a-dataflow-agent"></a>İzlenecek Yol: Veri Akışı Aracısı Oluşturma
 Bu belgede denetim akışı yerine veri akışı dayalı tabanlı aracı uygulamalarının nasıl oluşturulacağını gösterir.  
@@ -42,7 +37,7 @@ Bu belgede denetim akışı yerine veri akışı dayalı tabanlı aracı uygulam
   
 - [Nasıl yapılır: İleti Bloğu Filtresini Kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md)  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Bu kılavuz aşağıdaki bölümleri içerir:  
   
 - [Temel denetim akışı Aracısı oluşturma](#control-flow)  
@@ -51,7 +46,7 @@ Bu belgede denetim akışı yerine veri akışı dayalı tabanlı aracı uygulam
   
 - [İleti günlüğe kaydetme aracı oluşturma](#logging)  
   
-##  <a name="control-flow"></a>Temel denetim akışı Aracısı oluşturma  
+##  <a name="control-flow"></a> Temel denetim akışı Aracısı oluşturma  
  Tanımlar aşağıdaki örneği göz önünde bulundurun `control_flow_agent` sınıfı. `control_flow_agent` Üç ileti arabellek sınıfı davranır: bir giriş arabelleği ve iki arabellekleri çıktı. `run` Yöntemi döngü kaynak ileti arabelleği okur ve program yürütme akışını yönlendirmek için bir koşullu ifade kullanır. Aracı sıfır, negatif değerleri için bir sayaç artırılır ve sıfır olmayan pozitif değerler için başka bir sayaç artırılır. Aracı sentinel değerin sıfır aldıktan sonra çıktı ileti arabelleklerinin sayaçların değerleri gönderir. `negatives` Ve `positives` yöntemleri pozitif ve negatif değerleri sayar Aracıdan okumak uygulama etkinleştir.  
   
  [!code-cpp[concrt-dataflow-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_1.cpp)]  
@@ -60,7 +55,7 @@ Bu belgede denetim akışı yerine veri akışı dayalı tabanlı aracı uygulam
   
  [[Üst](#top)]  
   
-##  <a name="dataflow"></a>Temel veri akışı Aracısı oluşturma  
+##  <a name="dataflow"></a> Temel veri akışı Aracısı oluşturma  
  Bu bölümde nasıl dönüştürüleceğini gösterir `control_flow_agent` aynı görevi gerçekleştirmek için veri akışı modelini kullanmak için sınıf.  
   
  Veri akışı Aracısı her biri belirli bir amaca hizmet eder ağ ileti arabelleklerinin oluşturarak çalışır. Belirli ileti blokları kabul edin veya reddedin yük temel alınarak bir ileti için bir filtre işlevini kullanın. Filter işlevi bir ileti bloğu yalnızca belirli değerlerin almasını sağlar.  
@@ -130,7 +125,7 @@ There are 499477 positive numbers.
   
  [[Üst](#top)]  
   
-##  <a name="logging"></a>İleti günlüğe kaydetme aracı oluşturma  
+##  <a name="logging"></a> İleti günlüğe kaydetme aracı oluşturma  
  Aşağıdaki örnekte gösterildiği `log_agent` benzer sınıfı `dataflow_agent` sınıfı. `log_agent` Sınıfı zaman uyumsuz günlük aracıyı yazma iletiler bir dosyaya ve konsola oturum uygular. `log_agent` Sınıfı olarak bilgi, uyarı veya hata kategorilere ayırmak uygulama sağlar. Ayrıca, her günlük kategori bir dosya, konsol veya her ikisini de mi yazılacağını belirtmek uygulama sağlar. Bu örnekte tüm günlük iletileri bir dosyaya ve yalnızca hata iletilerini konsola yazar.  
   
  [!code-cpp[concrt-log-filter#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_8.cpp)]  

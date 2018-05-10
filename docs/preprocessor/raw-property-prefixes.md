@@ -1,12 +1,9 @@
 ---
 title: raw_property_prefixes | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - raw_property_prefixes
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - raw_property_prefixes attribute
 ms.assetid: 03a0f48c-c460-4175-a762-9f7f8d84b12f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c38541d720a9b2bc857a4121c2d0e33ec4fc5b9
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: c1f548c9513a086dd4741a9c61c51acebebb25db
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="rawpropertyprefixes"></a>raw_property_prefixes
 **C++ özel**  
@@ -55,4 +50,4 @@ raw_property_prefixes("GetPrefix","PutPrefix","PutRefPrefix")
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+ [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

@@ -2,11 +2,8 @@
 title: binary_negate sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xfunctional/std::binary_negate
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - binary_negate class
 ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65
-caps.latest.revision: 20
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f574e0a7ab33efa2f91399b9c65bb4277837efd
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: b3db081a3baa3b8e5d974080275fc75b372009b6
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="binarynegate-class"></a>binary_negate Sınıfı
 

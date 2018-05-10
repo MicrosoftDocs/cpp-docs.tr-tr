@@ -2,11 +2,8 @@
 title: packaged_task sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - future/std::packaged_task
@@ -21,10 +18,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 0a72cbe3-f22a-4bfe-8e50-dcb268c98780
-caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::packaged_task [C++]
 - std::packaged_task [C++], packaged_task
@@ -35,11 +30,11 @@ helpviewer_keywords:
 - std::packaged_task [C++], valid
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b52c46ec2a4a2c648817494afa74c77b7578fc85
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: b37d6fc7b01c179f017e04f8064a789b8f4ad2b9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="packagedtask-class"></a>packaged_task Sınıfı
 

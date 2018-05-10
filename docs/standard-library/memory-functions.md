@@ -2,9 +2,6 @@
 title: '&lt;bellek&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - memory/std::addressof
@@ -35,10 +32,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 3e1898c2-44b7-4626-87ce-84962e4c6f1a
-caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::addressof [C++]
 - std::align [C++]
@@ -87,11 +82,11 @@ helpviewer_keywords:
 - std::uninitialized_fill_n [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c25ed138bd869e805c1c1c1a10cc57f8626acab
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 676f6522a5625103a00310c6ce5353ce40da9359
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltmemorygt-functions"></a>&lt;bellek&gt; işlevleri
 

@@ -1,10 +1,7 @@
 ---
-title: "CONCURRENCY::precise_math ad alanı işlevleri | Microsoft Docs"
-ms.custom: 
+title: CONCURRENCY::precise_math ad alanı işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - amp_math/Concurrency::precise_math::acos
@@ -97,26 +94,24 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: fae53ab4-d1c5-45bb-a6a0-a74258e9aea3
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1d329e13d686e7f378646105b4bcaed2dbb3a3a
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 31648a07ff09ba5babebda06407ccade6a5d8fad
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="concurrencyprecisemath-namespace-functions"></a>CONCURRENCY::precise_math ad alanı işlevleri
 ||||  
 |-|-|-|  
 |[acos](#acos)|[acosf](#acosf)|[ACOSH](#acosh)|  
 |[acoshf](#acoshf)|[asin](#asin)|[asinf](#asinf)|  
-|[asinh](#asinh)|[asinhf](#asinhf)|[atan](#atan)|  
+|[ASİNH](#asinh)|[asinhf](#asinhf)|[atan](#atan)|  
 |[atan2](#atan2)|[atan2f](#atan2f)|[atanf](#atanf)|  
-|[atanh](#atanh)|[atanhf](#atanhf)|[cbrt](#cbrt)|  
+|[ATANH](#atanh)|[atanhf](#atanhf)|[cbrt](#cbrt)|  
 |[cbrtf](#cbrtf)|[ceil](#ceil)|[ceilf](#ceilf)|  
 |[copysign](#copysign)|[copysignf](#copysignf)|[cos](#cos)|  
 |[cosf](#cosf)|[COSH](#cosh)|[coshf](#coshf)|  
@@ -128,7 +123,7 @@ ms.lasthandoff: 02/23/2018
 |[expf](#expf)|[expm1](#expm1)|[expm1f](#expm1f)|  
 |[fabs](#fabs)|[fabsf](#fabsf)|[Kat](#floor)| 
 |[fdim](#fdim)|[fdimf](#fdimf)|| 
-|[floorf](#floorf)|[fma](#fma)|[fmaf](#fmaf)|
+|[floorf](#floorf)|[FMA](#fma)|[fmaf](#fmaf)|
 [fmax](#fmax)|[fmaxf](#fmaxf)|| 
 |[fmin](#fmin)|[fminf](#fminf)|[fmod](#fmod)|  
 |[fmodf](#fmodf)|[fpclassify](#fpclassify)|[frexp](#frexp)|  
@@ -136,22 +131,22 @@ ms.lasthandoff: 02/23/2018
 |[ilogb](#ilogb)|[ilogbf](#ilogbf)|[isfinite](#isfinite)|  
 |[isinf](#isinf)|[isnan](#isnan)|[isnormal](#isnormal)|  
 |[ldexp](#ldexp)|[ldexpf](#ldexpf)|[lgamma](#lgamma)|  
-|[lgammaf](#lgammaf)|[Günlük](#log)|[log10](#log10)|  
+|[lgammaf](#lgammaf)|[log](#log)|[log10](#log10)|  
 |[log10f](#log10f)|[log1p](#log1p)|[log1pf](#log1pf)|  
 |[log2](#log2)|[log2f](#log2f)|[logb](#logb)|  
 |[logbf](#logbf)|[logf](#logf)|[modf](#modf)|  
-|[modff](#modff)|[nan](#nan)|[nanf](#nanf)|  
+|[modff](#modff)|[NaN](#nan)|[nanf](#nanf)|  
 |[nearbyint](#nearbyint)|[nearbyintf](#nearbyintf)|[nextafter](#nextafter)|  
-|[nextafterf](#nextafterf)|[phi](#phi)|[phif](#phif)|  
+|[nextafterf](#nextafterf)|[Phi](#phi)|[phif](#phif)|  
 |[POW](#pow)|[powf](#powf)|[probit](#probit)|  
 |[probitf](#probitf)|[rcbrt](#rcbrt)|[rcbrtf](#rcbrtf)|  
-|[remainder](#remainder)|[remainderf](#remainderf)|[remquo](#remquo)|  
+|[Kalan](#remainder)|[remainderf](#remainderf)|[remquo](#remquo)|  
 |[remquof](#remquof)|[yuvarlamak](#round)|[roundf](#roundf)|  
 |[rsqrt](#rsqrt)|[rsqrtf](#rsqrtf)|[scalb](#scalb)|  
 |[scalbf](#scalbf)|[scalbn](#scalbn)|[scalbnf](#scalbnf)|  
 |[signbit](#signbit)|[signbitf](#signbitf)|[sin](#sin)|  
 |[sincos](#sincos)|[sincosf](#sincosf)|[sinf](#sinf)|  
-|[sinh](#sinh)|[sinhf](#sinhf)|[sinpi](#sinpi)|  
+|[SİNH](#sinh)|[sinhf](#sinhf)|[sinpi](#sinpi)|  
 |[sinpif](#sinpif)|[sqrt](#sqrt)|[sqrtf](#sqrtf)|  
 |[tan](#tan)|[tanf](#tanf)|[TANH](#tanh)|  
 |[tanhf](#tanhf)|[tanpi](#tanpi)|[tanpif](#tanpif)|  
@@ -752,7 +747,7 @@ inline double expm1(double exponent) restrict(amp);
   
 ### <a name="parameters"></a>Parametreler  
  `exponent`  
- Üstel terim  *n*  matematik ifadesindeki `e` <sup> n </sup>, burada `e` ve Doğal logaritmanın tabanıdır.  
+ Üstel terim *n* matematik ifadesindeki `e` <sup>n</sup>, burada `e` ve Doğal logaritmanın tabanıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenin e tabanında üssü eksi 1 döndürür.  
@@ -766,7 +761,7 @@ inline float expm1f(float exponent) restrict(amp);
   
 ### <a name="parameters"></a>Parametreler  
  `exponent`  
- Üstel terim  *n*  matematik ifadesindeki `e` <sup> n </sup>, burada `e` ve Doğal logaritmanın tabanıdır.  
+ Üstel terim *n* matematik ifadesindeki `e` <sup>n</sup>, burada `e` ve Doğal logaritmanın tabanıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenin e tabanında üssü eksi 1 döndürür.  
@@ -1076,7 +1071,7 @@ inline double fmod(
  İkinci kayan nokta bağımsız değişkeni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geri kalan `_X` bölü `_Y`; diğer bir deyişle, değeri `_X`  -  `_Y`  *n* , burada  *n*  olan bir tamsayı şekilde büyüklüğünü `_X`  -  `_Y`  *n*  büyüklüğünü'dan küçük `_Y`.  
+ Kalanı `_X` bölü `_Y`; diğer bir deyişle, değeri `_X`  -  `_Y` *n*, burada *n* bir tamsayı olduğu şekilde büyüklüğünü `_X`  -  `_Y` *n* büyüklüğünü'dan küçük `_Y`.  
   
 ##  <a name="fmodf"></a>  fmodf  
  Belirtilen ikinci bağımsız değişkeni tarafından bölünmüş ilk belirtilen bağımsız değişken kalanı hesaplar.  
@@ -1095,7 +1090,7 @@ inline float fmodf(
  İkinci kayan nokta bağımsız değişkeni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geri kalan `_X` bölü `_Y`; diğer bir deyişle, değeri `_X`  -  `_Y`  *n* , burada  *n*  olan bir tamsayı şekilde büyüklüğünü `_X`  -  `_Y`  *n*  büyüklüğünü'dan küçük `_Y`.  
+ Kalanı `_X` bölü `_Y`; diğer bir deyişle, değeri `_X`  -  `_Y` *n*, burada *n* bir tamsayı olduğu şekilde büyüklüğünü `_X`  -  `_Y` *n* büyüklüğünü'dan küçük `_Y`.  
   
 ##  <a name="fpclassify"></a>  fpclassify  
  Bağımsız değişken değeri NaN, sonsuz, normal, subnormal, sıfır olarak sınıflandırır  
@@ -1321,7 +1316,7 @@ inline double ldexp(
  Tamsayı değeri, üs  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Returns _X * 2^_Exp  
+ Döndürür _X * 2 ^ _Exp  
   
 ##  <a name="ldexpf"></a>  ldexpf  
  Belirtilen Mantis ve üs arasında bir gerçek sayı hesaplar.  
@@ -1340,7 +1335,7 @@ inline float ldexpf(
  Tamsayı değeri, üs  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Returns _X * 2^_Exp  
+ Döndürür _X * 2 ^ _Exp  
   
 ##  <a name="lgamma"></a>  lgamma  
  Bağımsız değişkenin gama mutlak değerini doğal logaritmasını hesaplar  

@@ -3,21 +3,19 @@ title: Visual C++ dili uygunluk | Microsoft Docs
 ms.date: 11/15/2017
 ms.technology:
 - cpp-language
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49aabbcc746470815db40f15fa00774d5e05bfe5
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: 722b1dadbdd5e1855ea8d8cc163de705f3e2cbcd
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="visual-c-language-conformance"></a>Visual C++ dili uyumluluğu
 
@@ -57,31 +55,31 @@ Uygunluk geliştirmeleri ve Visual Studio 2017 diğer değişiklikler hakkında 
 |&nbsp;&nbsp;[N4051 typename şablon şablon parametrelerinde](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4051.html)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[Ad alanları ve numaralandırmalar N4266 öznitelikleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4266.html)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[N4267 u8 karakter değişmez değerleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)|VS 2015 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[Ad alanı tanımları N4230 iç içe geçmiş](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4230.html)|VS 2015.3 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[Ad alanı tanımları N4230 iç içe geçmiş](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4230.html)|VS 2015.3 <sup> [17](#note_17)</sup>|
 |&nbsp;&nbsp;[N3928 Terse static_assert](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3928.pdf)|VS 2017 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0184R0 genelleştirilmiş aralık tabanlı için-döngüler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html)|VS 2017 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0188R1 [[fallthrough]] özniteliği](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0188r1.pdf)|VS 2017 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0001R1 kaldırma register anahtar sözcüğü](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0001r1.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0002R1 kaldırma operator ++ bool için](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0002r1.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0018R3 yakalama * bu değere göre](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0018r3.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[Yineleme olmadan özniteliği ad alanları P0028R4 kullanma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0028r4.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0061R1 __has_include](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0061r1.html)|VS 2017 15.3 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0138R2 doğrudan-listesi-init tamsayılar gelen sabit Numaralandırmaların](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0170R1 constexpr lambdas](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0170r1.pdf)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0189R1 [[nodiscard]] özniteliği](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0189r1.pdf)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0212R1 [[maybe_unused]] özniteliği](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0212r1.pdf)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0217R3 yapılandırılmış bağlamaları](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0217r3.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0292R2 constexpr IF-deyimleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0292r2.html)|VS 2017 15.3 <sup>[G](#note_G)</sup>|
-|&nbsp;&nbsp;[Başlatıcılar ile P0305R1 seçim deyimleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0305r1.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0245R1 Hexfloat değişmez değerleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0245r1.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[N4268 izin vererek daha fazla tür olmayan şablon bağımsız değişken](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4268.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[N4295 Katlama ifadeleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4295.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[Dinamik-özel durum-belirtimleri P0003R5 kaldırma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[Tür sistemi için noexcept P0012R1 ekleme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0012r1.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0035R4 aşırı hizalanmış dinamik bellek ayırma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0035r4.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0386R2 satır içi değişkenleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0386r2.pdf)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0522R0 eşleşen şablonu şablon-parametreleri uyumlu bağımsız değişkenler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0522r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0036R0 kaldırma bazı boş birli Katlama](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0036r0.pdf)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0001R1 kaldırma register anahtar sözcüğü](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0001r1.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0002R1 kaldırma operator ++ bool için](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0002r1.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0018R3 yakalama * bu değere göre](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0018r3.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[Yineleme olmadan özniteliği ad alanları P0028R4 kullanma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0028r4.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0061R1 __has_include](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0061r1.html)|VS 2017 15.3 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[P0138R2 doğrudan-listesi-init tamsayılar gelen sabit Numaralandırmaların](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0170R1 constexpr lambdas](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0170r1.pdf)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0189R1 [[nodiscard]] özniteliği](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0189r1.pdf)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0212R1 [[maybe_unused]] özniteliği](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0212r1.pdf)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0217R3 yapılandırılmış bağlamaları](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0217r3.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0292R2 constexpr IF-deyimleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0292r2.html)|VS 2017 15.3 <sup> [G](#note_G)</sup>|
+|&nbsp;&nbsp;[Başlatıcılar ile P0305R1 seçim deyimleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0305r1.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0245R1 Hexfloat değişmez değerleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0245r1.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[N4268 izin vererek daha fazla tür olmayan şablon bağımsız değişken](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4268.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[N4295 Katlama ifadeleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4295.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[Dinamik-özel durum-belirtimleri P0003R5 kaldırma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[Tür sistemi için noexcept P0012R1 ekleme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0012r1.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0035R4 aşırı hizalanmış dinamik bellek ayırma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0035r4.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0386R2 satır içi değişkenleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0386r2.pdf)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0522R0 eşleşen şablonu şablon-parametreleri uyumlu bağımsız değişkenler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0522r0.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0036R0 kaldırma bazı boş birli Katlama](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0036r0.pdf)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
 |&nbsp;&nbsp;[N4261 düzelttikten niteliğe dönüşümleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4261.html)|Hayır|
 |&nbsp;&nbsp;[P0017R1 genişletilmiş toplu başlatma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0017r1.html)|Hayır|
 |&nbsp;&nbsp;[Sınıf şablonları P0091R3 şablon bağımsız değişken kesintisi](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0091r3.html)<br />&nbsp;&nbsp;[P0512R0 sınıfı şablon bağımsız değişken kesintisi sorunları](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0512r0.pdf)|Hayır|
@@ -93,7 +91,7 @@ Uygunluk geliştirmeleri ve Visual Studio 2017 diğer değişiklikler hakkında 
 |&nbsp;&nbsp;[Tanınmayan P0283R2 yoksayılıyor öznitelikleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0283r2.html)|Hayır|
 |&nbsp;&nbsp;[Başlatıcı listesi oluşturucuları için sınıf şablon bağımsız değişken kesintisi P0702R1 düzeltme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0702r1.html)|Hayır|
 |__C ++ 20 çekirdek dil özellikleri__|__Desteklenen__|
-|&nbsp;&nbsp;[P0306R4 ekleme #95; &#95; VA_OPT &#95; &#95; virgül atlandığını ve virgül silme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0306r4.pdf)|Hayır|
+|&nbsp;&nbsp;[P0306R4 ekleme &#95; &#95;VA_OPT&#95; &#95; virgülle atlandığını ve virgül silme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0306r4.pdf)|Hayır|
 |&nbsp;&nbsp;[P0329R4 belirlenmiş başlatma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf)|Hayır|
 |&nbsp;&nbsp;[P0409R2 izin vererek lambda [=, bu] yakalama](http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0409r2.html)|Hayır|
 |&nbsp;&nbsp;[Genel Lambda'lar için P0428R2 tanıdık şablon söz dizimi](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0428r2.pdf)|Hayır|
@@ -112,42 +110,42 @@ Uygunluk geliştirmeleri ve Visual Studio 2017 diğer değişiklikler hakkında 
 |__C ++ 17 standart kitaplığı özellikleri__|__Desteklenen__|
 |&nbsp;&nbsp;[P0433R2 tümleştirme şablon kesintisi sınıf şablonları standart kitaplığına](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0433r2.html)<br />&nbsp;&nbsp;[Standart kitaplığına sınıfı şablon bağımsız değişken kesintisi tümleştirmesi P0739R0 artırma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html)|Hayır|
 |&nbsp;&nbsp;[Char_traits P0426R1 constexpr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html)|Hayır|
-|&nbsp;&nbsp;[P0030R1 hypot(x, y, z)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0030r1.pdf)|Hayır|
+|&nbsp;&nbsp;[P0030R1 hypot (x, y, z)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0030r1.pdf)|Hayır|
 |&nbsp;&nbsp;[P0220R1 kitaplığı temelleri V1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html)|Kısmi <sup> [J](#note_J)</sup>|
 |&nbsp;&nbsp;[P0067R5 başlangıç dize dönüşümleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html)|Hayır|
 |&nbsp;&nbsp;[N4562 Kitaplığı temelleri: \<memory_resource >](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4562.html#memory.resource.synop)<br />&nbsp;&nbsp;[P0337R0 silme polymorphic_allocator atama](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0337r0.html)|Hayır|
 |&nbsp;&nbsp;[P0024R2 paralel algoritmalar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0024r2.html)<br />&nbsp;&nbsp;[P0336R1 Paralel yürütme ilkelerini yeniden adlandırma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0336r1.pdf)<br />&nbsp;&nbsp;[P0394R4 paralel algoritmalar terminate() için özel durumlar gerekir.](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0394r4.html)<br />&nbsp;&nbsp;[P0452R1 birleştirin \<sayısal > paralel algoritmalar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0452r1.html)|Hayır|
 |&nbsp;&nbsp;[P0226R1 matematiksel özel işlevler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0226r1.pdf)|Hayır|
-|&nbsp;&nbsp;[P0218R1 \<filesystem>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html)<br />&nbsp;&nbsp;[Dosya sistemi için P0219R1 göreli yollar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0219r1.html)<br />&nbsp;&nbsp;[Dosya sistemi için önbelleğe alma P0317R1 dizin girişi](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p03179r1.html)<br />&nbsp;&nbsp;[P0392R0 destekleyen string_view içinde dosya sistemi yolları](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0392r0.pdf)<br />&nbsp;&nbsp;[P0430R2 destekleyen POSIX olmayan bağlanan dosya sistemlerinin](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0430r2.pdf)<br />&nbsp;&nbsp;[Dosya sistemi için P0492R2 NB açıklamaları çözme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0492r2.html)|Hayır <sup> [K](#note_K)</sup>|
-|&nbsp;&nbsp;[P0003R5 kaldırma dinamik özel durum belirtimleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0005R4 not_fn()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0005r4.html)<br />&nbsp;&nbsp;[Not_fn() P0358R1 düzeltmeler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0358r1.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[Enable_shared_from_this P0033R1 uygun sözcükler kullanmak](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0083R3 boşluklarına ayıran eşler ve ayarlar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0083r3.pdf)<br />&nbsp;&nbsp;[P0508R0 açıklığa kavuşturan insert_return_type](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0508r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0174R2 onaysız kılınmadan Vestigial kitaplığı bölümleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0174r2.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0302R1 kaldırma ayırıcısı destek içinde std::function](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0302r1.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0414R2 shared_ptr\<T [] >, shared_ptr\<T [N] >](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0414r2.html)<br />&nbsp;&nbsp;[Shared_ptr P0497R0 düzeltmek için diziler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0497r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0521R0 onaysız kılınmadan shared_ptr::unique()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0521r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[Standart Kitaplığı P0607R0 satır içi değişkenleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0607r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0618R0 onaysız kılınmadan \<codecvt >](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0618r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[N4562 Kitaplığı temelleri: Boyer Moore search()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4562.html#func.searchers.boyer_moore)<br/>&nbsp;&nbsp;[P0253R1 düzelttikten noktasıdır dönüş türleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0253r1.pdf)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0031R0 constexpr \<dizi > (yeniden) ve \<yineleyici >](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0031r0.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0040R3 genişletme bellek yönetimi araçları](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0040r3.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0084R2 Emplace dönüş türü](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0084r2.pdf)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0152R1 atomic::is_always_lock_free](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0152r1.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0154R1 hardware_destructive_interference_size, etc.](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0154r1.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0156R2 yeniden adlandırma Variadic kilit\_için kapsamlı koruma\_Kilitle](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0156r2.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0258R2 has_unique_object_representations](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0258r2.html)|VS 2017 15.3 <sup>[L](#note_L)</sup>|
-|&nbsp;&nbsp;[P0295R0 gcd(), lcm()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0295r0.pdf)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0218R1 \<filesystem >](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html)<br />&nbsp;&nbsp;[Dosya sistemi için P0219R1 göreli yollar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0219r1.html)<br />&nbsp;&nbsp;[Dosya sistemi için önbelleğe alma P0317R1 dizin girişi](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p03179r1.html)<br />&nbsp;&nbsp;[P0392R0 destekleyen string_view içinde dosya sistemi yolları](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0392r0.pdf)<br />&nbsp;&nbsp;[P0430R2 destekleyen POSIX olmayan bağlanan dosya sistemlerinin](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0430r2.pdf)<br />&nbsp;&nbsp;[Dosya sistemi için P0492R2 NB açıklamaları çözme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0492r2.html)|Hayır <sup> [K](#note_K)</sup>|
+|&nbsp;&nbsp;[P0003R5 kaldırma dinamik özel durum belirtimleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0005R4 not_fn()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0005r4.html)<br />&nbsp;&nbsp;[Not_fn() P0358R1 düzeltmeler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0358r1.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[Enable_shared_from_this P0033R1 uygun sözcükler kullanmak](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0083R3 boşluklarına ayıran eşler ve ayarlar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0083r3.pdf)<br />&nbsp;&nbsp;[P0508R0 açıklığa kavuşturan insert_return_type](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0508r0.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0174R2 onaysız kılınmadan Vestigial kitaplığı bölümleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0174r2.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0302R1 kaldırma ayırıcısı destek içinde std::function](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0302r1.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0414R2 shared_ptr\<T [] >, shared_ptr\<T [N] >](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0414r2.html)<br />&nbsp;&nbsp;[Shared_ptr P0497R0 düzeltmek için diziler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0497r0.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0521R0 onaysız kılınmadan shared_ptr::unique()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0521r0.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[Standart Kitaplığı P0607R0 satır içi değişkenleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0607r0.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0618R0 onaysız kılınmadan \<codecvt >](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0618r0.html)|VS 2017 15,5 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[N4562 Kitaplığı temelleri: Boyer Moore search()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4562.html#func.searchers.boyer_moore)<br/>&nbsp;&nbsp;[P0253R1 düzelttikten noktasıdır dönüş türleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0253r1.pdf)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0031R0 constexpr \<dizi > (yeniden) ve \<yineleyici >](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0031r0.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0040R3 genişletme bellek yönetimi araçları](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0040r3.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0084R2 Emplace dönüş türü](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0084r2.pdf)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0152R1 atomic::is_always_lock_free](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0152r1.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0154R1 hardware_destructive_interference_size, vb.](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0154r1.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0156R2 yeniden adlandırma Variadic kilit\_için kapsamlı koruma\_Kilitle](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0156r2.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0258R2 has_unique_object_representations](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0258r2.html)|VS 2017 15.3 <sup> [M](#note_L)</sup>|
+|&nbsp;&nbsp;[P0295R0 gcd(), lcm()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0295r0.pdf)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0298R3 std::byte](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0298r3.pdf)|VS 2017 15.3 <sup> [17](#note_17), [bayt](#note_byte)</sup>|
-|&nbsp;&nbsp;[P0403R1 UDLs için \<string_view > ("meow" sv, vs.)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0403r1.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0418R2 atomik compare_exchange memory_order gereksinimleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0418r2.html)|VS 2017 15.3 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[Common_type P0435R1 elden](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0435r1.pdf)<br />&nbsp;&nbsp;[Ortak P0548R1 Uyguladıkça\_türü ve süresi](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0548r1.pdf)|VS 2017 15.3 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0505R0 constexpr \<chrono > (yeniden)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0505r0.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0513R0 zehirleme karma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0513r0.pdf)<br />&nbsp;&nbsp;[P0599R1 noexcept karma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0599r1.pdf)|VS 2017 15.3 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[Kopyalama olarak shared_future noexcept P0516R0 işaretleme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0516r0.html)|VS 2017 15.3 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[Future_errc gelen future_error P0517R0 oluşturma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0517r0.html)|VS 2017 15.3 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0558R1 çözme atomik<T> adlı temel sınıfı tutarsızlıklar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0558r1.pdf)|VS 2017 15.3 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0604R0 değiştirmek,\_aranabilir/sonuç\_, çağrılacak\_neden, olan\_invocable, olan\_nothrow\_invocable](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0604r0.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0403R1 UDLs için \<string_view > ("meow" sv, vs.)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0403r1.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0418R2 atomik compare_exchange memory_order gereksinimleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0418r2.html)|VS 2017 15.3 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[Common_type P0435R1 elden](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0435r1.pdf)<br />&nbsp;&nbsp;[Ortak P0548R1 Uyguladıkça\_türü ve süresi](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0548r1.pdf)|VS 2017 15.3 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[P0505R0 constexpr \<chrono > (yeniden)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0505r0.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0513R0 zehirleme karma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0513r0.pdf)<br />&nbsp;&nbsp;[P0599R1 noexcept karma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0599r1.pdf)|VS 2017 15.3 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[Kopyalama olarak shared_future noexcept P0516R0 işaretleme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0516r0.html)|VS 2017 15.3 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[Future_errc gelen future_error P0517R0 oluşturma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0517r0.html)|VS 2017 15.3 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[P0558R1 çözme atomik<T> adlı temel sınıfı tutarsızlıklar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0558r1.pdf)|VS 2017 15.3 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[P0604R0 değiştirmek,\_aranabilir/sonuç\_, çağrılacak\_neden, olan\_invocable, olan\_nothrow\_invocable](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0604r0.html)|VS 2017 15.3 <sup> [17](#note_17)</sup>|
 |&nbsp;&nbsp;[N4562 Kitaplığı temelleri: \<algoritması > sample()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4562.html#alg.random.sample)|VS 2017|
 |&nbsp;&nbsp;[N4562 Kitaplığı temelleri: \<herhangi >](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4562.html#any)|VS 2017|
 |&nbsp;&nbsp;[N4562 Kitaplığı temelleri: \<isteğe bağlı >](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4562.html#optional)|VS 2017|
@@ -166,19 +164,19 @@ Uygunluk geliştirmeleri ve Visual Studio 2017 diğer değişiklikler hakkında 
 |&nbsp;&nbsp;[P0025R1 clamp()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0025r1.html)|VS 2015.3|
 |&nbsp;&nbsp;[P0185R1 is_swappable, is_nothrow_swappable](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0185r1.html)|VS 2015.3|
 |&nbsp;&nbsp;[P0272R1 Non-const basic_string::data()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0272r1.html)|VS 2015.3|
-|&nbsp;&nbsp;[Çifti N4387 artırma ve tanımlama grubu](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4387.html)|VS 2015.2 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[N4508 shared_mutex (Untimed)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4508.html)|VS 2015.2 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[Kullanım dışı Iostreams Aliases P0004R1 kaldırma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0004r1.html)|VS 2015.2 <sup>[rem](#note_rem)</sup>|
-|&nbsp;&nbsp;[P0006R0 değişken şablonlar için tür özellikleri (is_same_v, vb.)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0006r0.html)|VS 2015.2 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0007R1 as_const()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0007r1.html)|VS 2015.2 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0013R1 mantıksal işleç tür özellikleri (birlikte, vb.)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0013r1.html)|VS 2015.2 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0074R0 owner_less\<>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0074r0.html)|VS 2015.2 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0092R1 \<chrono > floor(), ceil(), round(), abs()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0092r1.html)|VS 2015.2 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0156R0 Variadic lock_guard](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0156r0.html)|VS 2015.2 <sup>[14](#note_14)</sup>|
+|&nbsp;&nbsp;[Çifti N4387 artırma ve tanımlama grubu](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4387.html)|VS 2015.2 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[N4508 shared_mutex (Untimed)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4508.html)|VS 2015.2 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[Kullanım dışı Iostreams Aliases P0004R1 kaldırma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0004r1.html)|VS 2015.2 <sup> [rem](#note_rem)</sup>|
+|&nbsp;&nbsp;[P0006R0 değişken şablonlar için tür özellikleri (is_same_v, vb.)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0006r0.html)|VS 2015.2 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[P0007R1 as_const()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0007r1.html)|VS 2015.2 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[P0013R1 mantıksal işleç tür özellikleri (birlikte, vb.)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0013r1.html)|VS 2015.2 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[P0074R0 owner_less\<>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0074r0.html)|VS 2015.2 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[P0092R1 \<chrono > floor(), ceil(), round(), abs()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0092r1.html)|VS 2015.2 <sup> [14](#note_14)</sup>|
+|&nbsp;&nbsp;[P0156R0 Variadic lock_guard](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0156r0.html)|VS 2015.2 <sup> [14](#note_14)</sup>|
 |&nbsp;&nbsp;[N3911 void_t](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3911.pdf)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[Unique_ptr N4089 güvenli dönüşümleri içinde\<T [] >](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4089.pdf)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[N4169 olması](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4169.html)|VS 2015 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[N4190 kaldırma auto_ptr, random_shuffle() And Old \<işlevsel > Hizmetler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4190.htm)|VS 2015 <sup>[rem](#note_rem)</sup>|
+|&nbsp;&nbsp;[N4190 kaldırma auto_ptr, random_shuffle() And Old \<işlevsel > Hizmetler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4190.htm)|VS 2015 <sup> [rem](#note_rem)</sup>|
 |&nbsp;&nbsp;[N4258 noexcept Temizlemeler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4258.pdf)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[N4259 uncaught_exceptions()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4259.pdf)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[N4277 Trivially Copyable reference_wrapper](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4277.html)|VS 2015 <sup>[14](#note_14)</sup>|
@@ -246,7 +244,7 @@ __VS 2017 15,5__ Visual Studio 2017 sürüm 15,5 desteklenen özellikleri göste
 <a name="note_L"></a>__M__ iç derleyici tarafından desteklenir. Bu iç henüz Clang içinde kullanılamaz. , Kullanılabilir, ancak henüz etkin değil olarak IntelliSense özelliğidir.   
 <a name="note_14"></a>__14__ bu C ++ 17 özellikler her zaman etkindir, bile [/Std: c ++ 14](./build/reference/std-specify-language-standard-version.md) (varsayılan) belirtilir. Özellik giriş önce uygulanan ya da olmasıdır **/std** seçenekleri veya koşullu uygulama açabileceğinin karmaşıktı.  
 <a name="note_17"></a>__17__ bu özellikler tarafından etkinleştirilen [/Std: c ++ 17](./build/reference/std-specify-language-standard-version.md) (veya [/Std: c ++ Son](./build/reference/std-specify-language-standard-version.md)) derleyici seçeneği.  
-<a name="note_byte"></a>__bayt__ `std::byte` tarafından etkin [/Std: c ++ 17](./build/reference/std-specify-language-standard-version.md) (veya [/Std: c ++ Son](./build/reference/std-specify-language-standard-version.md)), ancak bazı durumlarda Windows SDK'sı üst bilgileri ile çakışabileceği için bir hassas çevirin Makro. Bunu tanımlayarak devre dışı bırakılabilir `_HAS_STD_BYTE` olarak `0`.  
+<a name="note_byte"></a>__bayt__ `std::byte` tarafından etkin [/Std: c ++ 17](./build/reference/std-specify-language-standard-version.md) (veya [/Std: c ++ Son](./build/reference/std-specify-language-standard-version.md)), ancak bazı durumlarda Windows SDK'sı üst bilgileri ile çakışabileceği için hassas çevirin makrosu sahiptir. Bunu tanımlayarak devre dışı bırakılabilir `_HAS_STD_BYTE` olarak `0`.  
 <a name="note_C11"></a>__C11__ Evrensel CRT uygulanan C99 dışında C ++ 17, gerekli olan C11 standart kitaplığı bölümlerini `strftime()` E/O alternatif dönüştürme tanımlayıcıları C11 `fopen()` özel kullanım modu ve C11 `aligned_alloc()`. C11 belirtilen ikinci uygulanması olası olduğundan `aligned_alloc()` Microsoft uygulaması ile uyumsuz şekilde `free()`, ayrıca, `free()` yüksek oranda hizalanmış ayırmaları olması gerekir.  
 <a name="note_rem"></a>__REM__ kaldırılan Özellikler [/Std: c ++ 17](./build/reference/std-specify-language-standard-version.md) (veya [/Std: c ++ Son](./build/reference/std-specify-language-standard-version.md)) derleyici seçeneği belirtildi. Bu özellikler çevirin makrolar sahip: `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS`, ve `_HAS_UNEXPECTED`.
   

@@ -9,17 +9,16 @@ ms.technology:
 - cpp-ide
 ms.tgt_pltfrm: windows
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54d1f0cf2a6971435858a1a64bf3e163631822b5
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: c67b7fce0567c2c6daf18b625a2b759c31d0b040
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="vcpkg-c-package-manager-for-windows"></a>vcpkg: Windows için C++ Paket Yöneticisi
 
@@ -31,7 +30,7 @@ Tek bir komutla kaynakları indirmek ve kitaplık oluştur. vcpkg kendisi bir a�
 
 ## <a name="sources-not-binaries"></a>Kaynakları değil ikili dosyalar
 
-Genel katalogdaki kitaplıkları için ikili dosyaları [1] yerine kaynakları vcpkg indirir. 2017 yüklü değilse, Visual Studio 2017 ya da Visual Studio 2015 kullanarak bu kaynakları derler. Uygulama kodu gibi bu bağlantılarını C++'da, kullandığınız kitaplıkları aynı derleyici ve derleyici sürümü ile derlendiğini çok önemlidir. Vcpkg'ı kullanarak kaldırın veya eşleşmeyen ikili dosyaları ve sorunlara neden olabilir olası en büyük ölçüde azaltabilir. Visual C++ derleyicisi belirli bir sürümünü standartlaştırılmış takımların bir ekip üyesine vcpkg kaynakları indirmek ve ikili dosyaları kümesini derlemek ve diğer takım üyeleri için ikili dosyaları ve üstbilgileri ZIP Dışa Aktar komutunu kullanmak için kullanabilirsiniz. Daha fazla bilgi için ikili dosyaları ve üstbilgileri aşağıdaki verme derlenmiş bakın. 
+Genel katalogdaki kitaplıkları için ikili dosyaları [1] yerine kaynakları vcpkg indirir. 2017 yüklü değilse, Visual Studio 2017 ya da Visual Studio 2015 kullanarak bu kaynakları derler. Uygulama kodu gibi bu bağlantılarını C++'da, kullandığınız kitaplıkları aynı derleyici ve derleyici sürümü ile derlendiğini çok önemlidir. Vcpkg'ı kullanarak kaldırın veya eşleşmeyen ikili dosyaları ve sorunlara neden olabilir olası en büyük ölçüde azaltabilir. Visual C++ derleyicisi belirli bir sürümünü standartlaştırılmış takımların bir ekip üyesine vcpkg kaynakları indirmek ve ikili dosyaları kümesini derlemek ve diğer takım üyeleri için ikili dosyaları ve üstbilgileri ZIP Dışa Aktar komutunu kullanmak için kullanabilirsiniz. Daha fazla bilgi için ikili dosyaları ve üstbilgileri aşağıdaki verme derlenmiş bakın.
 
 Bağlantı noktaları koleksiyonundaki özel kitaplıklarla vcpkg kopya oluşturursanız, önceden oluşturulmuş ikili dosyaları ve üst bilgileri indirmeleri bir bağlantı noktası eklemek ve yalnızca değişen dosyaları istenilen konuma kopyalayan bir portfile.cmake dosyası yazma.
 
@@ -86,6 +85,7 @@ Additional packages (*) will be installed to complete this operation.
 ```
 
 ## <a name="list-the-libraries-already-installed"></a>Zaten yüklü kitaplıkları Listele
+
 Bazı kitaplıklar yükledikten sonra kullanabileceğiniz **vcpkg listesi** ne olduğunu görmek için:
 
 ```cmd
@@ -101,7 +101,7 @@ zlib:x86-windows        1.2.11   A compression library
 
 ## <a name="integrate-with-visual-studio"></a>Visual Studio ile tümleştirme
 
-### <a name="per-user"></a>Per-user
+### <a name="per-user"></a>Kullanıcı başına
 
 Çalıştırma **vcpkg tümleştirmek yükleme** VC ++ dizinleri yollarını el ile düzenleme için gerek kalmadan kullanıcı başına temelinde tüm vcpkg üstbilgi dosyaları ve ikili dosyaları bulmak için Visual Studio yapılandırmak için. Birden çok klonlar varsa, bu komutu çalıştırmak kopya yeni varsayılan konum haline gelir.
 
@@ -113,61 +113,63 @@ Artık # klasör/üstbilgi yazarak üst bilgiler include ve otomatik tamamlama, 
 
 Etkin vcpkg Örneğinizde sürümünden farklı bir kitaplık belirli bir sürümünü kullanmanız gerekiyorsa, şu adımları izleyin:
 
-1. Vcpkg yeni bir kopya yapmak 
+1. Vcpkg yeni bir kopya yapmak
 1. İhtiyacınız olan sürümü edinmek için kitaplık portfile değiştirme
 1. Çalıştırma **vcpkg yükleme \<kitaplığı >**.
 1. Kullanım **vcpkg tümleştirmek proje** bu kitaplığı proje başına temelinde başvuruda bulunan bir NuGet paketi oluşturmak için.
 
 ## <a name="export-compiled-binaries-and-headers"></a>Derlenmiş ikili dosyaları ve üstbilgileri dışarı aktarma
 
-Karşıdan yükle ve kitaplıkları oluşturmak için bir takımındaki gerektiren verimsiz olabilir. Tek bir takım üyesine o iş yapın ve ardından **vcpkg verme** ikili dosyaları ve diğer ekip üyeleriyle kolaylıkla paylaşılabilir üstbilgileri bir zip dosyası oluşturmak için. 
+Karşıdan yükle ve kitaplıkları oluşturmak için bir takımındaki gerektiren verimsiz olabilir. Tek bir takım üyesine o iş yapın ve ardından **vcpkg verme** ikili dosyaları ve diğer ekip üyeleriyle kolaylıkla paylaşılabilir üstbilgileri bir zip dosyası oluşturmak için.
 
 ## <a name="updateupgrade-installed-libraries"></a>Güncelleştirme/yükseltme yüklü kitaplıkları
 
 Genel katalog kitaplıkları en son sürümleri ile güncel tutulur. Yerel Kitaplıklarınızı hangisinin güncel olduğunu belirlemek için kullanın **vcpkg güncelleştirme**. Bağlantı noktaları koleksiyonunuzu genel katalog en son sürüme güncelleştirmek hazır olduğunuzda, çalıştırmak **vcpkg yükseltme** otomatik olarak karşıdan yükle ve güncel Kitaplıklarınızı yüklü bir bölümünü veya tamamını yeniden komutu.
 
-Varsayılan olarak, **yükseltme** komutu yalnızca eski kitaplıkları listeler; bunları yükseltme değil. Yükseltmeyi gerçekleştirmek için kullanın **--çalıştırıp Hayır** seçeneği. 
+Varsayılan olarak, **yükseltme** komutu yalnızca eski kitaplıkları listeler; bunları yükseltme değil. Yükseltmeyi gerçekleştirmek için kullanın **--çalıştırıp Hayır** seçeneği.
 
 ```cmd
-  vcpkg upgrade --no-dry-run 
+  vcpkg upgrade --no-dry-run
 ```
 
 ### <a name="upgrade-options"></a>Yükseltme seçenekleri
 
-- **--çalıştırıp Hayır** yükseltmek; belirtilmediğinde komutu yalnızca güncel paketleri listeler. 
-- **--Canlı devam eden** başarısız olsa bile paketleri yüklemeye devam et. 
-- **--Üçlü \<t >** nitelenmemiş paketler için varsayılan Üçlü ayarlayın. 
-- **--vcpkg kök \<yolu >** geçerli dizini veya aracı dizin yerine kullanılacak vcpkg dizini belirtin. 
+- **--çalıştırıp Hayır** yükseltmek; belirtilmediğinde komutu yalnızca güncel paketleri listeler.
+- **--Canlı devam eden** başarısız olsa bile paketleri yüklemeye devam et.
+- **--Üçlü \<t >** nitelenmemiş paketler için varsayılan Üçlü ayarlayın.
+- **--vcpkg kök \<yolu >** geçerli dizini veya aracı dizin yerine kullanılacak vcpkg dizini belirtin.
 
 ### <a name="upgrade-example"></a>Yükseltme örneği
 
 ### <a name="per-project"></a>Proje
+
 Etkin vcpkg Örneğinizde sürümünden farklı bir kitaplık belirli bir sürümünü kullanmanız gerekiyorsa, şu adımları izleyin:
 
-1. Vcpkg yeni bir kopya yapmak 
+1. Vcpkg yeni bir kopya yapmak
 1. İhtiyacınız olan sürümü edinmek için kitaplık portfile değiştirme
 1. Çalıştırma **vcpkg yükleme \<kitaplığı >**.
 1. Kullanım **vcpkg tümleştirmek proje** bu kitaplığı proje başına temelinde başvuruda bulunan bir NuGet paketi oluşturmak için.
 
-
 ## <a name="export-compiled-binaries-and-headers"></a>Derlenmiş ikili dosyaları ve üstbilgileri dışarı aktarma
-Karşıdan yükle ve kitaplıkları oluşturmak için bir takımındaki gerektiren verimsiz olabilir. Tek bir takım üyesine o iş yapın ve ardından **vcpkg verme** ikili dosyaları ve diğer ekip üyeleriyle kolaylıkla paylaşılabilir üstbilgileri bir zip dosyası oluşturmak için. 
+
+Karşıdan yükle ve kitaplıkları oluşturmak için bir takımındaki gerektiren verimsiz olabilir. Tek bir takım üyesine o iş yapın ve ardından **vcpkg verme** ikili dosyaları ve diğer ekip üyeleriyle kolaylıkla paylaşılabilir üstbilgileri bir zip dosyası oluşturmak için.
 
 ## <a name="updateupgrade-installed-libraries"></a>Güncelleştirme/yükseltme yüklü kitaplıkları
+
 Genel katalog kitaplıkları en son sürümleri ile güncel tutulur. Yerel Kitaplıklarınızı hangisinin güncel olduğunu belirlemek için kullanın **vcpkg güncelleştirme**. Bağlantı noktaları koleksiyonunuzu genel katalog en son sürüme güncelleştirmek hazır olduğunuzda, çalıştırmak **vcpkg yükseltme** otomatik olarak karşıdan yükle ve güncel Kitaplıklarınızı yüklü bir bölümünü veya tamamını yeniden komutu.
 
-Varsayılan olarak, **yükseltme** komutu yalnızca eski kitaplıkları listeler; bunları yükseltme değil. Yükseltmeyi gerçekleştirmek için kullanın **--çalıştırıp Hayır** seçeneği. 
+Varsayılan olarak, **yükseltme** komutu yalnızca eski kitaplıkları listeler; bunları yükseltme değil. Yükseltmeyi gerçekleştirmek için kullanın **--çalıştırıp Hayır** seçeneği.
 
 ```cmd
-  vcpkg upgrade --no-dry-run 
+  vcpkg upgrade --no-dry-run
 ```
 
 ### <a name="upgrade-options"></a>Yükseltme seçenekleri
 
-- **--çalıştırıp Hayır** yükseltmek; belirtilmediğinde komutu yalnızca güncel paketleri listeler. 
-- **--Canlı devam eden** başarısız olsa bile paketleri yüklemeye devam et. 
-- **--Üçlü \<t >** nitelenmemiş paketler için varsayılan Üçlü ayarlayın. 
-- **--vcpkg kök \<yolu >** geçerli dizini veya aracı dizin yerine kullanılacak vcpkg dizini belirtin. 
+- **--çalıştırıp Hayır** yükseltmek; belirtilmediğinde komutu yalnızca güncel paketleri listeler.
+- **--Canlı devam eden** başarısız olsa bile paketleri yüklemeye devam et.
+- **--Üçlü \<t >** nitelenmemiş paketler için varsayılan Üçlü ayarlayın.
+- **--vcpkg kök \<yolu >** geçerli dizini veya aracı dizin yerine kullanılacak vcpkg dizini belirtin.
 
 ### <a name="upgrade-example"></a>Yükseltme örneği
 
@@ -187,24 +189,30 @@ If you are sure you want to rebuild the above packages, run this command with th
 ```
 
 ## <a name="contribute-new-libraries"></a>Yeni kitaplıkları katkıda bulunan
+
 Özel bağlantı noktaları koleksiyonunuzda gibi kitaplıkları içerebilir. Genel Katalog için yeni bir kitaplık önermek için bir sorun açmak [GitHub vcpkg sorunu sayfası](https://github.com/Microsoft/vcpkg/issues).
 
 ## <a name="remove-a-library"></a>Bir kitaplık Kaldır
+
 Tür **vcpkg kaldırmak** yüklü bir kitaplığını kaldırmak için. Diğer kitaplıkları bağımlı, komutu yeniden istenir **--recurse**, kaldırılacak tüm aşağı akış kitaplıkları neden olur.
 
 ## <a name="customize-vcpkg"></a>Vcpkg özelleştirme
-İstediğiniz herhangi bir şekilde vcpkg kopyasını değiştirebilirsiniz. Birden çok vcpkg klonlar oluşturabilir ve portfiles kitaplıkları belirli sürümlerini edinmek veya komut satırı parametrelerini belirtmek için her biri olarak değiştirebilirsiniz. Örneğin, kuruluş, geliştiricilerin bir grup bir dizi bağımlılıkları olan yazılımı çalışıyor olabilirsiniz ve başka bir grubu farklı bir kümesi olabilir. İki vcpkg klonlar ayarlamak ve kitaplıklar ve derleme anahtarlar vb., sürümleri karşıdan yüklemek için her biri gereksinimlerinize göre değiştirin. 
+
+İstediğiniz herhangi bir şekilde vcpkg kopyasını değiştirebilirsiniz. Birden çok vcpkg klonlar oluşturabilir ve portfiles kitaplıkları belirli sürümlerini edinmek veya komut satırı parametrelerini belirtmek için her biri olarak değiştirebilirsiniz. Örneğin, kuruluş, geliştiricilerin bir grup bir dizi bağımlılıkları olan yazılımı çalışıyor olabilirsiniz ve başka bir grubu farklı bir kümesi olabilir. İki vcpkg klonlar ayarlamak ve kitaplıklar ve derleme anahtarlar vb., sürümleri karşıdan yüklemek için her biri gereksinimlerinize göre değiştirin.
 
 ## <a name="uninstall-vcpkg"></a>Vcpkg kaldırma
-Yalnızca dizini silin. 
+
+Yalnızca dizini silin.
 
 ## <a name="send-feedback-about-vcpkg"></a>Vcpkg hakkında geri bildirim gönder
+
 Kullanım **--anket** hata raporları ve özellikleri için öneri dahil olmak üzere vcpkg hakkında Microsoft'a geri bildirim göndermek için komutu.
 
 ## <a name="the-vcpkg-folder-hierarchy"></a>Vcpkg klasör hiyerarşisi
-Tüm vcpkg işlevselliği ve verileri bir "örnek" olarak adlandırılan tek bir dizin hiyerarşisinde müstakil. Kayıt defteri ayarları veya ortam değişkenleri yok. Bir makinede herhangi bir sayıda vcpkg örneklerini sahip olabilir ve birbirleri ile karışmaması. 
 
-Bir vcpkg örneği içeriğini şunlardır: 
+Tüm vcpkg işlevselliği ve verileri bir "örnek" olarak adlandırılan tek bir dizin hiyerarşisinde müstakil. Kayıt defteri ayarları veya ortam değişkenleri yok. Bir makinede herhangi bir sayıda vcpkg örneklerini sahip olabilir ve birbirleri ile karışmaması.
+
+Bir vcpkg örneği içeriğini şunlardır:
 
 - buildtrees--içeren alt her kitaplık yerleşik olan kaynakları
 - belgeleri--belgeler ve örnekler
@@ -224,8 +232,8 @@ Bir vcpkg örneği içeriğini şunlardır:
 |**vcpkg yükleme \<pkg >...**|Paket yükleme|
 |**vcpkg kaldırmak \<pkg >...**|Bir paketi kaldırma|
 |**eski vcpkg Kaldır--**|Tüm güncel paketlerini kaldırma|
-|**vcpkg list**|Yüklü listesinde paketleri|
-|**vcpkg update**|Güncelleştirme paketleri listesini görüntüle|
+|**vcpkg listesi**|Yüklü listesinde paketleri|
+|**vcpkg güncelleştirme**|Güncelleştirme paketleri listesini görüntüle|
 |**vcpkg yükseltme**|Tüm güncel olmayan paketler yeniden oluşturma|
 |**vcpkg karma \<dosyası > [algoritma]**|Belirli algoritması tarafından bir dosya karma, SHA512 varsayılan|
 |**vcpkg tümleştirmek yükleme**|Yüklü yapma kullanıcı genelinde kullanılabilir paketler. İlk kullanımda yönetici ayrıcalıkları gerektirmez|
@@ -236,11 +244,12 @@ Bir vcpkg örneği içeriğini şunlardır:
 |**vcpkg alma \<pkg >**|Önceden derlenmiş kitaplığı içeri aktarma|
 |**vcpkg oluşturma \<pkg > \<URL'si > [archivename]**|Yeni bir paket oluşturun|
 |**vcpkg sahibi \<pat >**|Yüklü paketler dosyalarında arayın|
-|**vcpkg cache**|Paket listesi önbelleğe alınan derlenmiş|
+|**vcpkg önbelleği**|Paket listesi önbelleğe alınan derlenmiş|
 |**vcpkg sürüm**|Sürüm bilgilerini görüntüle|
-|**vcpkg contact**|Geri bildirim göndermek için kişi bilgilerini görüntüleme|
+|**vcpkg başvurun**|Geri bildirim göndermek için kişi bilgilerini görüntüleme|
 
-### <a name="options"></a>Seçenekler:
+### <a name="options"></a>Seçenekler
+
 |Seçenek|Açıklama|
 |---------|---------|
 |**--Üçlü \<t >**|Hedef mimari Üçlü belirtin. (varsayılan: `%VCPKG_DEFAULT_TRIPLET%`, ayrıca bkz. **vcpkg Yardım Üçlü**)|

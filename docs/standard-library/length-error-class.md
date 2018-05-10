@@ -2,11 +2,8 @@
 title: length_error sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - stdexcept/std::length_error
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - length_error class
 ms.assetid: d53c46c5-4626-400d-bd76-bf3e1e0f64ae
-caps.latest.revision: 21
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91d31ef46754a986415b78887e9f42418a566db1
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 4ed0976a8323eaaef0ba289c020cf5d0a0c5837e
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="lengtherror-class"></a>length_error Sınıfı
 

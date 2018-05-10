@@ -1,12 +1,9 @@
 ---
 title: strict_gs_check | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - strict_gs_check
@@ -16,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - strict_gs_check pragma
 ms.assetid: decfec81-c916-42e0-a07f-8cc26df6a7ce
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76b06f33626dfa237c81e6a23f343bb25ffb7c78
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 6b58b02781f266b24fa321b3849f42b2e090b860
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="strictgscheck"></a>strict_gs_check
 Bu pragma artırılmış güvenlik denetimi sağlar.  

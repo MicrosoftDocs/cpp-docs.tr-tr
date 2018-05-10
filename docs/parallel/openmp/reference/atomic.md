@@ -1,12 +1,9 @@
 ---
 title: Atomik | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - atomic
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - atomic OpenMP directive
 ms.assetid: 275e0338-cf2f-4525-97b5-696250000df7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8cd00244d4668821942e7d6a9f6873652002bddb
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: bf6287ff3c44d508a3e4293340e652edb201282f
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="atomic"></a>atomic
 Belirleyen bir bellek konumundan otomatik olarak güncelleştirilir.  

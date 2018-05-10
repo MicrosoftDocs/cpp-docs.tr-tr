@@ -2,11 +2,8 @@
 title: not_equal_to yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xfunctional/std::not_equal_to
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - not_equal_to function
 - not_equal_to struct
 ms.assetid: 333fce09-4f51-44e0-ba26-533bccffd485
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d84ac39c8c26513c285a0ed114e83f29a9f50c2
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 8e50e613885215cf13504f8c9b72e0e48d5a6447
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="notequalto-struct"></a>not_equal_to Yapısı
 

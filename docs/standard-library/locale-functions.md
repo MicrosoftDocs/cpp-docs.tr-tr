@@ -2,9 +2,6 @@
 title: '&lt;yerel ayar&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - locale/std::has_facet
@@ -23,8 +20,6 @@ f1_keywords:
 - locale/std::toupper
 - locale/std::use_facet
 ms.assetid: b06c1ceb-33a7-48d3-8d4b-2714bbb27f14
-caps.latest.revision: 15
-manager: ghogen
 helpviewer_keywords:
 - std::has_facet [C++]
 - std::isalnum [C++]
@@ -41,11 +36,11 @@ helpviewer_keywords:
 - std::tolower [C++]
 - std::toupper [C++]
 - std::use_facet [C++]
-ms.openlocfilehash: 4a5c994b3b8ab63f1b02280ba2ea5f273db1bcb6
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: fbe74dbd1218aec211bb600f1db6a1c2300f18e2
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltlocalegt-functions"></a>&lt;yerel ayar&gt; işlevleri
 

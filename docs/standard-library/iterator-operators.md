@@ -2,9 +2,6 @@
 title: '&lt;Yineleyici&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xutility/std::operator!=
@@ -18,19 +15,17 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: b7c664f0-49d4-4993-b5d1-9ac4859fdddc
-caps.latest.revision: 10
-manager: ghogen
 helpviewer_keywords:
 - std::operator!= (iterator)
 - std::operator&gt; (iterator)
 - std::operator&gt;= (iterator)
 - std::operator&lt; (iterator)
 - std::operator&lt;= (iterator), std::operator== (iterator)
-ms.openlocfilehash: 6af8735ae9c8c1722a29364a0d0090a066eb4659
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 411fcf8969ba13c4f50360c3db151f0801fd5a28
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltiteratorgt-operators"></a>&lt;Yineleyici&gt; işleçleri
 

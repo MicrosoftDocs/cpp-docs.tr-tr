@@ -1,13 +1,10 @@
 ---
 title: SafeModulus | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SafeModulus
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - SafeModulus function
 ms.assetid: ae5c81eb-5dcf-45a5-aa76-465fdfe68654
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 383382de2720ac7a72403bd3578e235af7bdbe05
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 653293ac04be1e3a04e90412a9d9d8b988773329
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="safemodulus"></a>SafeModulus
 İki sayı üzerinde modulus işlemi gerçekleştirir.  
@@ -43,17 +38,17 @@ inline bool SafeModulus (
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`t`  
+ [in] `t`  
  Bölen. Bu t türünde olmalıdır  
   
- [in]`u`  
+ [in] `u`  
  Kar payı. Bu türü u olmalıdır  
   
- [out]`result`  
+ [out] `result`  
  Parametre nerede `SafeModulus` sonucu depolar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true`herhangi bir hata oluşursa; `false` bir hata oluşursa.  
+ `true` herhangi bir hata oluşursa; `false` bir hata oluşursa.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu yöntem parçası olan [SafeInt Kitaplığı](../windows/safeint-library.md) ve bir örneğini oluşturmak zorunda kalmadan tek mod işlemi için tasarlanmış [SafeInt sınıfı](../windows/safeint-class.md).  

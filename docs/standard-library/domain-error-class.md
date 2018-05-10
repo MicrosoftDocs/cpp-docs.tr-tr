@@ -2,11 +2,8 @@
 title: domain_error sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - stdexcept/std::domain_error
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - domain_error class
 ms.assetid: a1d8245d-61c2-4d1e-973f-073bd5dd5fa3
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1d16701dd8390f2a3cde5423889072b8eef7a4e
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 82fa31d81b55df624c0eab4cdd68cf18c9c7f19b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="domainerror-class"></a>domain_error Sınıfı
 

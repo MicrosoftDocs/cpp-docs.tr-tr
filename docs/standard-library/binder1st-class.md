@@ -2,11 +2,8 @@
 title: binder1st sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xfunctional/std::binder1st
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - binder1st class
 ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
-caps.latest.revision: 22
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a302c7097393e056fb4a8dab4109873825effeeb
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 55f000ea8458925f8ea3faa4896943e045de127d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="binder1st-class"></a>binder1st Sınıfı
 

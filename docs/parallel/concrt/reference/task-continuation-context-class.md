@@ -1,12 +1,9 @@
 ---
-title: "task_continuation_context sınıfı | Microsoft Docs"
-ms.custom: 
+title: task_continuation_context sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - task_continuation_context
@@ -21,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - task_continuation_context class
 ms.assetid: 1fb5a76a-3682-45c2-a615-8b6b527741f0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41cd6fa1dd219eb7179209839f0176deff43345c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 37b218a6db251123513ca155fd491fee7ebabd13
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="taskcontinuationcontext-class"></a>task_continuation_context Sınıfı
 `task_continuation_context` Sınıfı yürütülecek bir devamlılık oluşturulacağı yeri belirtmenize olanak verir. Yalnızca, bu sınıftan bir Windows çalışma zamanı uygulamasını kullanmak kullanışlıdır. Olmayan - Windows çalışma zamanı uygulamaları için görev devamlılığı 's yürütme bağlamı çalışma zamanı tarafından belirlenen ve yapılandırılamaz.  
@@ -84,7 +79,7 @@ static task_continuation_context get_current_winrt_context();
  Bu yöntem benzer `use_current` yöntemi, ancak kullanılabilir ayrıca yerel C++ kodu olmadan C + +/ CX uzantısı desteği. Yazma C + deneyimli kullanıcılar tarafından kullanım için tasarlanmıştır +/ CX belirsiz kitaplık kodu hem yerel hem de Windows çalışma zamanı arayanlar. Bu işlev gerekmedikçe öneririz `use_current` yalnızca C + kullanılabilir yöntemi +/ CX istemciler.  
   
   
-##  <a name="use_arbitrary">use_arbitrary</a> 
+##  <a name="use_arbitrary"></a> use_arbitrary 
 
  Bir devamlılık yürütme bağlamı seçmek çalışma zamanı veren bir görev devamlılığı bağlamı oluşturur.  
   

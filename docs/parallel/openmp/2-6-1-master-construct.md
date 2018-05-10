@@ -1,27 +1,22 @@
 ---
-title: "2.6.1 master yapı | Microsoft Docs"
-ms.custom: 
+title: 2.6.1 master yapı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: c092064b-ea57-4d4e-9c99-a004d65656fe
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2517e19b49f1314e7432bb265756193ea3bb8f91
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a60a8df380fdcc0052d8fe2d070c8d926bcb28f8
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="261-master-construct"></a>2.6.1 master Yapı
 **Ana** yönergesi takım ana iş parçacığı tarafından yürütülen yapılandırılmış bir blok belirten bir yapı tanımlar. Söz dizimi **ana** yönergesi aşağıdaki gibidir:  

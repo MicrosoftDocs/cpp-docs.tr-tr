@@ -1,13 +1,10 @@
 ---
-title: "Renk paletleri (simgeler için görüntü Düzenleyicisi) kaydetme ve farklı yükleme | Microsoft Docs"
-ms.custom: 
+title: Renk paletleri (simgeler için görüntü Düzenleyicisi) kaydetme ve farklı yükleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.image.color
 dev_langs:
@@ -19,18 +16,16 @@ helpviewer_keywords:
 - colors [C++], Image editor
 - Image editor [C++], palettes
 ms.assetid: 694b6346-e606-4f19-aa01-9b4ceb47f423
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d7ef7200300eb4809496bfa342e9bab645f4c40e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8b96411341baeb6abb75c44063072b94fae3ac6a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="saving-and-loading-different-color-palettes-image-editor-for-icons"></a>Farklı Renk Paletlerini Kaydetme ve Yükleme (Simgeler İçin Görüntü Düzenleyicisi)
 Kaydetme ve içeren bir renk paleti yükleme [renkleri özelleştirilmiş](../windows/customizing-or-changing-colors-image-editor-for-icons.md). (Visual Studio başlattığınızda varsayılan olarak, en son kullanılan renk paleti otomatik olarak yüklenir.)  

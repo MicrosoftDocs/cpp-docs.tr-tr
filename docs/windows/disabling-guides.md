@@ -1,13 +1,10 @@
 ---
-title: "Kılavuzları devre dışı bırakma | Microsoft Docs"
-ms.custom: 
+title: Kılavuzları devre dışı bırakma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - snap to guides (Dialog editor)
 - controls [C++], snap to guides/grid
 ms.assetid: 51efa07b-8684-474e-a0b4-191ec5d91d1a
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d4fa9ca3f1dd5b73b07f705c453c29ba150e4754
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d7f828fee32e8794589d5f79e0b31ede74f6dfcd
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="disabling-guides"></a>Kılavuzları Devre Dışı Bırakma
 Özel anahtarları kılavuzları tutturma etkisini devre dışı bırakmak için fare ile birlikte kullanabilirsiniz. ALT tuşunu kullanarak seçili kılavuzu tutturma etkilerini devre dışı bırakır. Taşıma Kılavuzu SHIFT tuşunu ile açıldı denetimleri kılavuzla geçmesini önler.  
@@ -49,7 +44,7 @@ ms.lasthandoff: 12/21/2017
     > [!NOTE]
     >  Ayrıca erişmek için cetvel çubuğu çift **Kılavuzu ayarları** iletişim kutusu.  
   
- \-veya -  
+ \- veya -  
   
 -   Üzerinde **biçimi** menüsünde tıklatın **geçiş kılavuzları**.  
   

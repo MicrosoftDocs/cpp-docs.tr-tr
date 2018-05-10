@@ -1,13 +1,10 @@
 ---
-title: "Denetim özelliklerini düzenleme | Microsoft Docs"
-ms.custom: 
+title: Denetim özelliklerini düzenleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - controls [C++], editing properties
 - dialog box controls, editing properties
 ms.assetid: 9bdae21d-6dec-4344-a197-2ca4fc46d040
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f2baed8431501bfa5bf68313403c87a1fb9bccb2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f7976f74e9454b023c4da51168fa780ccaea2342
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="editing-control-properties"></a>Denetim Özelliklerini Düzenleme
 ### <a name="to-edit-the-properties-of-a-control-or-controls"></a>Bir denetim veya denetimlerin özelliklerini düzenlemek için  

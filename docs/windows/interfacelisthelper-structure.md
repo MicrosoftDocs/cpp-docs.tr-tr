@@ -1,12 +1,9 @@
 ---
-title: "Interfacelisthelper yapısı | Microsoft Docs"
-ms.custom: 
+title: Interfacelisthelper yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::InterfaceListHelper
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - InterfaceListHelper structure
 ms.assetid: 4297e419-c96b-45df-8a00-7568062125ba
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 241613f94431903c7d9e3957cece46844dc67ad9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8ad091114d6be6f35f1a0341961dc5122840ace8
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="interfacelisthelper-structure"></a>InterfaceListHelper Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  

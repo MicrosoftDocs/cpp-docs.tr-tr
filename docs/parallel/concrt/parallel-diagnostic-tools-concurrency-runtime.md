@@ -1,32 +1,27 @@
 ---
-title: "Paralel Tanılama Araçları (eşzamanlılık çalışma zamanı) | Microsoft Docs"
-ms.custom: 
+title: Paralel Tanılama Araçları (eşzamanlılık çalışma zamanı) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Parallel Diagnostic Tools [Concurrency Runtime]
 ms.assetid: b1a3f1d2-f5df-4f29-852e-906b3d8341fc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a7c6aa769faaacd128bb51a422227230fa4a851
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 1cd3ce4c86332719e299c11fee3ffbee8b41c14f
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="parallel-diagnostic-tools-concurrency-runtime"></a>Paralel Tanılama Araçları (Eşzamanlılık Çalışma Zamanı)
-[!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)]hata ayıklama ve profil çok iş parçacıklı uygulamalar için kapsamlı destek sağlar.  
+[!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] hata ayıklama ve profil çok iş parçacıklı uygulamalar için kapsamlı destek sağlar.  
   
 ## <a name="debugging"></a>Hata Ayıklama  
  Visual Studio hata ayıklayıcısı içeren **Paralel Yığınlar** penceresinde **Paralel Görevler** penceresinde ve **paralel Gözcü** penceresi. Daha fazla bilgi için bkz: [izlenecek yol: paralel uygulamada hata ayıklama](/visualstudio/debugger/walkthrough-debugging-a-parallel-application) ve [nasıl yapılır: paralel İzleme penceresini kullanma](/visualstudio/debugger/how-to-use-the-parallel-watch-window).  

@@ -2,11 +2,8 @@
 title: is_const sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - type_traits/std::is_const
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - is_const class
 - is_const
 ms.assetid: 55b8e887-9c3f-4a1d-823a-4a257337b205
-caps.latest.revision: 20
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e7cb63583f8c3dda0515e198d31086432785df3
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: e5fbb8ee6852e21912050ae7af9ed291f8ecb104
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="isconst-class"></a>is_const Sınıfı
 

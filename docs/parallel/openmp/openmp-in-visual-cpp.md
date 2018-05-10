@@ -1,13 +1,10 @@
 ---
 title: Visual C++'da OpenMP | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - explicit parallelization
 - explicit parallelization, OpenMP in Visual C++
 ms.assetid: 54d8d0da-1f47-4312-9f25-5875c7dc08ed
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 734b118cfdd1523379e9fb1e5e157bf9da9824af
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8bfcf0d83aeffbb4f40e5786b867afcf87aa84cb
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="openmp-in-visual-c"></a>Visual C++'da OpenMP
 OpenMP C ve C++ uygulaması program arabirimi etkili bir şekilde birden çok işlemci kullanacak uygulamaları yazmanızı sağlar. Visual C++ OpenMP 2.0 standart destekler.  
@@ -44,7 +39,7 @@ OpenMP C ve C++ uygulaması program arabirimi etkili bir şekilde birden çok i�
  OpenMP C ve C++ API OpenMP mimarisi gözden geçirme Kurulunun sürüm 2.0 belirtiminden açıklandığı gibi açıklanır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [/ OpenMP (OpenMP 2.0 desteğini etkinleştir)](../../build/reference/openmp-enable-openmp-2-0-support.md)  
+ [/openmp (OpenMP 2.0 Desteğini Etkinleştir)](../../build/reference/openmp-enable-openmp-2-0-support.md)  
  İşlenecek derleyici neden `#pragma omp`.  
   
  [Önceden Tanımlanmış Makrolar](../../preprocessor/predefined-macros.md)  
