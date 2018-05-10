@@ -2,11 +2,8 @@
 title: ComPtr::CopyTo yöntemi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::ComPtr::CopyTo
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - CopyTo method
 ms.assetid: 8801bc49-6db4-4393-a55f-a701ae3b8718
-caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: baa8c64187be3d1ddf52bf7056a00b7c13abeceb
-ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
+ms.openlocfilehash: 680c1278ca2b17c7ea35e72946fb5d5030c5e7c0
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="comptrcopyto-method"></a>ComPtr::CopyTo Yöntemi
 Kopya geçerli ya da belirtilen arabirimi belirtilen işaretçisine bu ComPtr ile ilişkili.  

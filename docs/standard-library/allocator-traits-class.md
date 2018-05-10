@@ -2,11 +2,8 @@
 title: allocator_traits sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - memory/std::allocator_traits
@@ -30,10 +27,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 612974b8-b5d4-4668-82fb-824bff6821d6
-caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::allocator_traits [C++]
 - std::allocator_traits [C++], propagate_on_container_move_assignment
@@ -55,11 +50,11 @@ helpviewer_keywords:
 - std::allocator_traits [C++], select_on_container_copy_construction
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e95f203cfc59d21056119701f56eb4a0084bcce
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: be3b8fc232c6d692dd6e4f80018ab571e4e0cb34
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="allocatortraits-class"></a>allocator_traits Sınıfı
 

@@ -2,9 +2,6 @@
 title: '&lt;forward_list&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - forward_list/std::operator!=
@@ -16,8 +13,6 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 57492e09-3836-4dbc-9ae5-78ecf506c190
-caps.latest.revision: 11
-manager: ghogen
 helpviewer_keywords:
 - std::operator!= (forward_list)
 - std::operator== (forward_list)
@@ -25,11 +20,11 @@ helpviewer_keywords:
 - std::operatoroperator&gt=; (forward_list)
 - std::operatoroperator&lt; (forward_list)
 - std::operatoroperator&lt;= (forward_list)
-ms.openlocfilehash: 2e0955b6f2063c8a5dbfa3f27c4e5ca18763d129
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 7966d428dd200f0cbb280c679c4072e1ad75757a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltforwardlistgt-operators"></a>&lt;forward_list&gt; işleçleri
 

@@ -2,11 +2,8 @@
 title: max_none sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - allocators/stdext::max_none
@@ -25,17 +22,15 @@ helpviewer_keywords:
 - stdext::max_none [C++], released
 - stdext::max_none [C++], saved
 ms.assetid: 12ab5376-412e-479c-86dc-2c3d6a3559b6
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a730bbd3a51e444e2b30a6604ac195fab242cdf
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 97cb713eda7a11874893bc9fc8a13b3b0784f29a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="maxnone-class"></a>max_none Sınıfı
 

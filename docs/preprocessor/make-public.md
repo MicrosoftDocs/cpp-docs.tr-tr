@@ -1,12 +1,9 @@
 ---
 title: make_public | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vc-pragma.make_public
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - pragmas, make_public
 - make_public pragma
 ms.assetid: c3665f4d-268a-4932-9661-c37c8ae6a341
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 484462d5a705297f65e82f70fccc23a81eeb719e
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 27db5ac934973178e2485327090ed70f994becec
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="makepublic"></a>make_public
 Yerel tür genel birleştirme erişilebilirlik olması gerektiğini gösterir.  

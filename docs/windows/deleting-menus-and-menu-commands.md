@@ -1,13 +1,10 @@
 ---
-title: "Menüleri ve menü komutlarını silme | Microsoft Docs"
-ms.custom: 
+title: Menüleri ve menü komutlarını silme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - commands, deleting from menus
 - menus, deleting
 ms.assetid: bdfd5b6e-3275-4597-a8bb-cd19bea9f9ad
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 36cd49a08e095a9a0c48e99819b92eb7047f3157
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 62074a586c336bf78280548eb12699b06abdd6f6
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="deleting-menus-and-menu-commands"></a>Menüleri ve Menü Komutlarını Silme
 ### <a name="to-delete-a-menu-or-menu-command"></a>Menü veya menü komutu silmek için  

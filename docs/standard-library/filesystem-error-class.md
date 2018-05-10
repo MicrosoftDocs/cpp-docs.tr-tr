@@ -2,28 +2,23 @@
 title: filesystem_error sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - filesystem/std::experimental::filesystem::filesystem_error
 dev_langs:
 - C++
 ms.assetid: c53aac27-c1fa-43e4-8967-48ea8ba1f172
-caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdc2ba52de6195e737ef6288bac06ac384a8d3e8
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: e1acf34f8478bc075b53780f1e48df125c22608b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="filesystemerror-class"></a>filesystem_error Sınıfı
 

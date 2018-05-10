@@ -1,12 +1,9 @@
 ---
-title: "DerefHelper yapısı | Microsoft Docs"
-ms.custom: 
+title: DerefHelper yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - async/Microsoft::WRL::Details::DerefHelper
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - DerefHelper structure
 ms.assetid: 86ded58b-c3ee-4a4f-bb86-4f67b895d427
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f71a49f6fb240aa6ed305e966ecac0740ffec665
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ad7af9f507a29531b14ff75aa97e0aee327db380
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="derefhelper-structure"></a>DerefHelper Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  

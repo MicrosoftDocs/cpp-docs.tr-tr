@@ -2,11 +2,8 @@
 title: '&lt;Tuple&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - <tuple>
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - tuple header
 ms.assetid: e4ef5c2d-318b-44f6-8bce-fce4ecd796a3
-caps.latest.revision: 20
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f21988d65374149b771f32c553157b37a0578851
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 3ba25328b86a51e34cba60bd55b63ce2eab696d6
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="lttuplegt"></a>&lt;Tanımlama grubu&gt;
 

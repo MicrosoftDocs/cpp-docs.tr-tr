@@ -2,11 +2,8 @@
 title: '&lt;CString&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - <cstring>
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - <cstring> header
 - cstring header
 ms.assetid: d665429f-5d39-4712-9c0a-68c8abcc3536
-caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 775f4fa82bbe72e5974a62909d674a3c57d4c091
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 9ef5ddad29126ac8725159061d5ee5cb4f3699e9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltcstringgt"></a>&lt;CString&gt;
 

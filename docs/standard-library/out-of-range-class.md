@@ -2,11 +2,8 @@
 title: out_of_range sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - stdexcept/std::out_of_range
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - out_of_range class
 ms.assetid: d0e14dc0-065e-4666-9ac9-51e52223c503
-caps.latest.revision: 25
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61cf313506154fee32b5d576b1582dd8a18bc927
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: aeb29538dc73ddbefe2ee443cf7f8bfa660eb528
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="outofrange-class"></a>out_of_range Sınıfı
 
