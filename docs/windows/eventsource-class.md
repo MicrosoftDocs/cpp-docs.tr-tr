@@ -2,11 +2,8 @@
 title: EventSource sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::EventSource
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - EventSource class
 ms.assetid: 91f1c072-6af4-44e6-b6d8-ac6d0c688dde
-caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 531c4ec218f7e3b694a41cd465090a5b1787c41a
-ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
+ms.openlocfilehash: b2d466b317927cd8de259637450b68b6aaf13bd5
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="eventsource-class"></a>EventSource Sınıfı
 Çevik olmayan bir olayı temsil eder. EventSource üye işlevleri eklemek, kaldırmak ve olay işleyicilerini çağırma. Çevik olaylar için kullanın [AgileEventSource](agileeventsource-class.md). 

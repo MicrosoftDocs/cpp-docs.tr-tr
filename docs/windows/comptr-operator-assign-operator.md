@@ -1,12 +1,9 @@
 ---
-title: ComPtr::operator= Operator | Microsoft Docs
+title: ComPtr::operator = işleci | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::ComPtr::operator=
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - operator= operator
 ms.assetid: 1a0c2752-f7d8-4819-9443-07b88b69ef02
-caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6b221ff75e250830feefbbd2d3db0d8697095c96
-ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
+ms.openlocfilehash: f4066db37de8a993802970784f09141352fef028
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="comptroperator-operator"></a>ComPtr::operator= İşleci
 Bir değer için geçerli ComPtr atar.  

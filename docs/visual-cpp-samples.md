@@ -1,27 +1,22 @@
 ---
-title: "Visual C++ örnekleri | Microsoft Docs"
-ms.custom: 
+title: Visual C++ örnekleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 76798022-5886-48e7-a7f2-f99352b15cbf
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc392e88d76eed71764e5490bbcf005bc42dca89
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 80ebe431e6fa8cfa69bffcf4709b42c22e0bec9d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="visual-c-samples"></a>Visual C++ Örnekleri
 

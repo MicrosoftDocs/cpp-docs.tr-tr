@@ -1,13 +1,10 @@
 ---
-title: "Genel işlevler (C + +/ CLI) | Microsoft Docs"
-ms.custom: 
+title: Genel işlevler (C + +/ CLI) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - methods [C++], generic
 - generic functions
 ms.assetid: 8e409364-58f9-4360-b486-e7d555e0c218
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9ebafa409680609d6e097b803be2b539ccdc7601
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 66eb27b28a1b18942c0a8a9a77a877a2f0b2ef8c
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="generic-functions-ccli"></a>Genel İşlevler (C++/CLI)
 Tür parametreleri ile bildirilmiş bir işlev buna genel bir işlevdir. Çağrıldığında, gerçek türleri tür parametreleri yerine kullanılır.  
@@ -66,12 +61,12 @@ return-type identifier<type-parameter identifier(s)>
  Ek tanımlayıcı bilgiler. Öznitelikleri özniteliklerinin ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.  
   
  *değiştiriciler* (isteğe bağlı)  
- Statik gibi işlev için değiştiricisi.  `virtual`sanal yöntemler genel olmayabilir olduğundan izin verilmiyor.  
+ Statik gibi işlev için değiştiricisi.  `virtual` sanal yöntemler genel olmayabilir olduğundan izin verilmiyor.  
   
  *dönüş türü*  
  Yöntem tarafından döndürülen tür. Dönüş türü void ise, hiçbir değer döndürmeyen gereklidir.  
   
- *tanımlayıcı*  
+ *Tanımlayıcı*  
  İşlev adı.  
   
  *tür parametresi tanımlayıcıları*  
@@ -153,7 +148,7 @@ ref struct MyClass {
   
  **Örnek**  
   
- Aşağıdaki örnek genel işlevi bir dizi ilk öğe bulmak için kullanır. Bunu bildirir `MyClass`, temel sınıfından devralan `MyBaseClass`. `MyClass`Genel bir işlev içeriyor `MyFunction`, başka bir genel işlevi, çağıran `MyBaseClassFunction`, taban sınıf içinde. İçinde **ana**, genel işlevi `MyFunction`, farklı tür bağımsız değişkenleri kullanılarak çağrılır.  
+ Aşağıdaki örnek genel işlevi bir dizi ilk öğe bulmak için kullanır. Bunu bildirir `MyClass`, temel sınıfından devralan `MyBaseClass`. `MyClass` Genel bir işlev içeriyor `MyFunction`, başka bir genel işlevi, çağıran `MyBaseClassFunction`, taban sınıf içinde. İçinde **ana**, genel işlevi `MyFunction`, farklı tür bağımsız değişkenleri kullanılarak çağrılır.  
   
 ```  
 // generics_generic_function_3.cpp  

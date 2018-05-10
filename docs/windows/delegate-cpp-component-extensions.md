@@ -1,13 +1,10 @@
 ---
-title: "Temsilci (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: Temsilci (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - delegate_cpp
 - delegate
@@ -16,18 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - delegate keyword [C++]
 ms.assetid: 03caf23d-7873-4a23-9b34-becf42aaf429
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 30fd64fd37fb30c34b5d4f5901f16143fb1cd701
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 73d40bb33509f89273b37f7704cd1922a8d5adc2
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="delegate--c-component-extensions"></a>temsilci (C++ Bileşen Uzantıları)
 Bir işlev işaretçisi temsil eden bir tür bildirir.  
@@ -36,7 +31,7 @@ Bir işlev işaretçisi temsil eden bir tür bildirir.
  Windows çalışma zamanı ve ortak dil çalışma zamanı temsilciler destekler.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `delegate`bağlama duyarlı bir anahtar sözcüktür. Daha fazla bilgi için bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
+ `delegate` bağlama duyarlı bir anahtar sözcüktür. Daha fazla bilgi için bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
   
  Bir tür bir delegate ise derleme zamanında algılamak için kullanmak `__is_delegate()` türü ayırdedici nitelik. Daha fazla bilgi için bkz: [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
@@ -57,7 +52,7 @@ delegate-type-identifier
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *erişim*  
+ *Erişim*  
  (isteğe bağlı) Olabilir temsilci erişilebilirliğini `public` (varsayılan) veya `private`. İşlev prototipi ayrıca ile nitelendirilmesi `const` veya `volatile` anahtar sözcükler.  
   
  *dönüş türü*  
@@ -66,7 +61,7 @@ delegate-type-identifier
  *temsilci türü tanımlayıcısı*  
  Bildirilen temsilci türünün adı.  
   
- *parametreleri*  
+ *Parametreleri*  
  (İsteğe bağlı) Türleri ve işlev prototipi öğesinin tanımlayıcıları.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -88,7 +83,7 @@ function_declaration
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *erişim*  
+ *Erişim*  
  (isteğe bağlı) Derleme dışında temsilci erişilebilirliğini genel veya özel olabilir.  Varsayılan özeldir.  Bir sınıf içinde bir temsilci herhangi erişilebilirlik olabilir.  
   
  *function_declaration*  

@@ -1,13 +1,10 @@
 ---
-title: "Kaynak Görünümü penceresi | Microsoft Docs"
-ms.custom: 
+title: Kaynak Görünümü penceresi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.resourceview.F1
 dev_langs:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - resources [Visual Studio], viewing
 - Resource View window
 ms.assetid: 10be7ff6-195f-4783-9ec5-87e5e06a7369
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f026999042690abb76d762bdda80fd02de58a1c2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b207bfa9236b4e0de1f01f98cc7e83124048a3a8
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="resource-view-window"></a>Kaynak Görünümü Penceresi
 > [!NOTE]
@@ -45,7 +40,7 @@ ms.lasthandoff: 12/21/2017
   
 1.  Tıklatın **kaynak görünümü** üzerinde **Görünüm** menüsü.  
   
-     \-veya -  
+     \- veya -  
   
 2.  Tuşuna **CTRL + SHIFT + E**.  
   

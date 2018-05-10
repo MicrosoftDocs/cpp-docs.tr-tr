@@ -1,13 +1,10 @@
 ---
-title: "Düzen kılavuzunu değiştirme | Microsoft Docs"
-ms.custom: 
+title: Düzen kılavuzunu değiştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - layout grid in Dialog Editor
 - grids, changing size
 ms.assetid: ec31f595-7542-485b-806f-efbaeccc1b3d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 21cfecebe141ea99ff7d0160e74446475efe4df5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5f73b1b2e2982d02fae1de67d4e5e2947f728f02
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="modifying-the-layout-grid"></a>Düzen Kılavuzunu Değiştirme
 Yerleştirme veya bir iletişim kutusu denetimleri düzenleme, Düzen kılavuzuna daha kesin konumlandırma için kullanabilirsiniz. Kılavuz açıldığında denetimleri "için ızgaranın noktalı çizgiler manyetik hale getirme gibi ek" görünür. Bu "ek kılavuza" özelliği üzerinde ve devre dışı bırakma ve Düzen kılavuz hücreleri boyutunu değiştirin.  

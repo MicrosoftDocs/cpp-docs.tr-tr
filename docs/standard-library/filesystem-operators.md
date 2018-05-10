@@ -2,11 +2,8 @@
 title: '&lt;dosya sistemi&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - FILESYSTEM/std::experimental::filesystem::operator==
@@ -21,17 +18,15 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 102c4833-aa3b-41a8-8998-f5003c546bfd
-caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 237287af88a7bf726948e0b17e5d1f3980ab459f
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 546e601afeb05e0347dba8bf792611f20068c69b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltfilesystemgt-operators"></a>&lt;dosya sistemi&gt; işleçleri
 

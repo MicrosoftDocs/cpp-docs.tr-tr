@@ -1,12 +1,9 @@
 ---
-title: "RuntimeClassFlags yapısı | Microsoft Docs"
-ms.custom: 
+title: RuntimeClassFlags yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::RuntimeClassFlags
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - RuntimeClassFlags structure
 ms.assetid: 7098d605-bd14-4d51-82f4-3def8296a938
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 85eb42c537845d86ce8cf3b1f20db7e9eeffe76f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 05166be14680b14d704095f5f1c9375bd97da7d5
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="runtimeclassflags-structure"></a>RuntimeClassFlags Yapısı
 Öğesinin bir örneği için türünü içeren bir [RuntimeClass](../windows/runtimeclass-class.md).  

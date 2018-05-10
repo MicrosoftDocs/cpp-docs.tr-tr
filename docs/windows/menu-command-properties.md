@@ -1,30 +1,25 @@
 ---
-title: "Menü komut özellikleri | Microsoft Docs"
-ms.custom: 
+title: Menü komut özellikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - menu items, properties
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 186790db57c20abf9f67f693ff60029257ebd4f0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 343c1ce255a26753c2b125d2a0a53e04808a0233
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="menu-command-properties"></a>Menü Komut Özellikleri
 Aşağıdaki bilgiler görüntülenir Menüsü Özellikleri göre düzenlenmiş [Özellikler penceresini](/visualstudio/ide/reference/properties-window) seçtiğinizde menü komutu. Özellikler penceresini ayrıca, bu özellikleri görüntülemenize olanak sağlar, ancak bu kategoriye göre alfabetik olarak listelenir.  
@@ -37,9 +32,9 @@ Aşağıdaki bilgiler görüntülenir Menüsü Özellikleri göre düzenlenmiş 
 |**Etkin**|Varsa **yanlış**, menü öğesini devre dışı bırakılır.|  
 |**Gri**|TRUE ise, başlangıçta gri ve etkin olmayan menü komutu. Tür: Bool. Varsayılan: False.|  
 |**Yardım**|Menü öğesi sağa hizalar. Örneğin, **yardımcı** menü komutu olduğu her zaman açık tüm Windows uygulamalarını sağdaki. Bu özellik menü öğesini ayarlarsanız, bu öğeyi sağ uçta çok ile menüsünün en sonunda görüntülenir. Üst düzey öğelerine uygulanır. Varsayılan: **False**.|  
-|**KİMLİĞİ**|Üstbilgi dosyasında tanımlanan bir simge. Tür: Simge, tamsayı veya tırnak içine alınmış dize. Bile genellikle, düzenleyiciler hiçbirinde kullanılabilir herhangi bir simge kullanabilir [Özellikler penceresini](/visualstudio/ide/reference/properties-window) , seçmek aşağı açılan liste sağlamaz.|  
+|**ID**|Üstbilgi dosyasında tanımlanan bir simge. Tür: Simge, tamsayı veya tırnak içine alınmış dize. Bile genellikle, düzenleyiciler hiçbirinde kullanılabilir herhangi bir simge kullanabilir [Özellikler penceresini](/visualstudio/ide/reference/properties-window) , seçmek aşağı açılan liste sağlamaz.|  
 |**Açılan Pencere**|TRUE ise, menüsü açılır menü komuttur. Tür: Bool. Varsayılan: menü çubuğundaki en üst düzey menü True; Aksi takdirde False.|  
-|**Sor**|Bu komutu vurgulanmış durum çubuğunda görüntülenecek metni içerir. Metin dizesi tablosuna menü komutu ile aynı tanımlayıcıyla yerleştirilir. Bu özellik, herhangi bir proje türü için kullanılabilir, ancak çalışma zamanında MFC belirli bir işlevdir.|  
+|**istemi**|Bu komutu vurgulanmış durum çubuğunda görüntülenecek metni içerir. Metin dizesi tablosuna menü komutu ile aynı tanımlayıcıyla yerleştirilir. Bu özellik, herhangi bir proje türü için kullanılabilir, ancak çalışma zamanında MFC belirli bir işlevdir.|  
 |**Sağdan Sola Hizala**|Sağa hizalar çalışma zamanında menü çubuğundaki menü komutu. Tür: Bool. Varsayılan: False.|  
 |**Sağ sol sırası**|Arabirimi sağ İbranice veya Arapça gibi sola, okuyan herhangi bir dil için yerelleştirilmiş sağdan sola görüntülemek menü komutlarını sağlar.|  
 |**Ayıraç**|TRUE ise, komutu bir ayırıcı ' dir. Tür: Bool. Varsayılan: False.|  

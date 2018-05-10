@@ -1,12 +1,9 @@
 ---
-title: "#Eğer, #elif, #else ve #endif yönergeleri (C/C++) | Microsoft Docs"
-ms.custom: 
+title: '#Eğer, #elif, #else ve #endif yönergeleri (C/C++) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - '#else'
@@ -30,17 +27,15 @@ helpviewer_keywords:
 - elif directive (#elif)
 - defined directive
 ms.assetid: c77a175f-6ca8-47d4-8df9-7bac5943d01b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13a684412b0b0b24cbb9067ef6ea4cf78810c37f
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: a9d4f941298159b8a3ea1aa3fe37efd1e6dc68ab
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="if-elif-else-and-endif-directives-cc"></a>#if, #elif, #else ve #endif Yönergeleri (C/C++)
 `#if` İle yönerge `#elif`, `#else`, ve `#endif` yönergeleri, denetimleri derleme kaynak dosyası kısımlarının. İfade yazma (sonra `#if`) hemen ardından satır grubu sıfır olmayan bir değere sahip `#if` yönergesi çevirisi biriminde tutulur.  
@@ -55,9 +50,9 @@ ms.lasthandoff: 02/23/2018
  *IF-line* :  
  **#if**  *constant-expression*  
   
- **#ifdef**  *identifier*  
+ **#ifdef***tanımlayıcısı*   
   
- **#ifndef**  *identifier*  
+ **#ifndef***tanımlayıcısı*   
   
  *elif bölümleri* :  
  *elif satırlı metin*  
@@ -67,7 +62,7 @@ ms.lasthandoff: 02/23/2018
  *elif satır* :  
  **#elif**  *constant-expression*  
   
- *else-part* :  
+ *else bölümünü* :  
  *satırı başka metin*  
   
  *satırı başka* :  
@@ -88,7 +83,7 @@ ms.lasthandoff: 02/23/2018
   
  Önişlemci seçili işler *metin* ve derleyiciye geçirir. Varsa *metin* önişlemci yönergeleri, bu yönergeleri önişlemci tıklatıldığındaki içerir. Önişlemci tarafından seçilen metin blokları derlenir.  
   
- Tek bir ön işlemci seçer *metin* her aşağıdaki sabit ifade değerlendirme tarafından öğesi `#if` veya `#elif` true (sıfır) sabit bir ifade bulana kadar yönergesi. Tüm metni seçer (itibaren diğer önişlemci yönergeleri de dahil olmak üzere  **#** ), ilişkili kadar `#elif`, `#else`, veya `#endif`.  
+ Tek bir ön işlemci seçer *metin* her aşağıdaki sabit ifade değerlendirme tarafından öğesi `#if` veya `#elif` true (sıfır) sabit bir ifade bulana kadar yönergesi. Tüm metni seçer (itibaren diğer önişlemci yönergeleri de dahil olmak üzere **#**), ilişkili kadar `#elif`, `#else`, veya `#endif`.  
   
  Varsa tüm oluşumlarını *sabit ifadesi* yanlışsa, veya yoksa `#elif` yönergeleri görüntülenir, sonra metin bloğu önişlemci seçer `#else` yan tümcesi. Varsa `#else` yan tümcesi atlanırsa ve tüm örneklerini *sabit ifadesi* içinde `#if` blok false, herhangi bir metin engelleme seçilir.  
   

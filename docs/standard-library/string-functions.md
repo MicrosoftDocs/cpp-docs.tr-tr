@@ -2,9 +2,6 @@
 title: '&lt;dize&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - string/std::getline
@@ -20,10 +17,8 @@ f1_keywords:
 - string/std::to_string
 - string/std::to_wstring
 ms.assetid: 1a4ffd11-dce5-4cc6-a043-b95de034c7c4
-caps.latest.revision: 15
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::getline [C++]
 - std::stod [C++]
@@ -39,11 +34,11 @@ helpviewer_keywords:
 - std::to_wstring [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26fe9fab46beb2333df3fae351f99bb661f6d3e1
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 0089a7259601b766bff3b470c5ba23c1b9952fb6
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltstringgt-functions"></a>&lt;dize&gt; işlevleri
 

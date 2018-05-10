@@ -1,13 +1,10 @@
 ---
 title: emitidl | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.emitidl
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - emitidl attribute
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 55fc74eef3d2ead7312f7dca46f20c3a1ed7ba91
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e4c66ba8c49a405f9fdd93b1652626ab47488a53
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="emitidl"></a>emitidl
 Tüm sonraki IDL öznitelikleri işlenir ve oluşturulan .idl dosyasında yerleştirilmiş olup olmadığını belirtir.  
@@ -38,7 +33,7 @@ Tüm sonraki IDL öznitelikleri işlenir ve oluşturulan .idl dosyasında yerle�
 ```  
   
 ### <a name="parameters"></a>Parametreler  
-*durumu*  
+*Durumu*  
 Bu değerlerden birini: **true**, **false**, **zorunlu**, **kısıtlı**, **itme**, veya **pop**.  
   
 -   Varsa **doğru**, bir kaynak kodu dosyasına karşılaştı IDL kategori öznitelikleri oluşturulan .idl dosyasında yerleştirilir. İçin varsayılan ayar budur **emitidl**.  

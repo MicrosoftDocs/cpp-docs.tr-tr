@@ -1,13 +1,10 @@
 ---
-title: "Unicode desteği | Microsoft Docs"
-ms.custom: 
+title: Unicode desteği | Microsoft Docs
+ms.custom: ''
 ms.date: 1/09/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,14 +17,13 @@ helpviewer_keywords:
 - Unicode [C++], installing support
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fde7674d30d84385eb1f94f42056a82bfaac99fe
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: b9d5a435339e366d70749d64e5aae9264fe12b1f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="support-for-unicode"></a>Unicode Desteği
 
@@ -46,8 +42,8 @@ MFC çerçevesi Unicode boyunca etkindir ve MFC Unicode taşınabilir makroları
 |Olmayan taşınabilir veri türü|Bu makro tarafından değiştirildi|
 |-----------------------------|----------------------------|
 |`char`, `wchar_t`|`_TCHAR`|
-|`char*`, `LPSTR` (Win32 veri türü)`LPWSTR`|`LPTSTR`|
-|`const char*`, `LPCSTR` (Win32 veri türü)`LPCWSTR`|`LPCTSTR`|
+|`char*`, `LPSTR` (Win32 veri türü) `LPWSTR`|`LPTSTR`|
+|`const char*`, `LPCSTR` (Win32 veri türü) `LPCWSTR`|`LPCTSTR`|
 
 Sınıf `CString` kullanan `_TCHAR` tabanı olarak ve kolay dönüştürmelerde oluşturucular ve işleçler sağlar. Temel işlem birimi bir 8 bit bayt yerine bir 16 bit karakter olması dışında Windows ANSI karakter kümesini işlemek için kullanılan aynı mantığı kullanarak dize işlemlerinin çoğu Unicode için yazılabilir. Birden çok baytlı karakter kümeleri ile çalışma, aksine, gerekmez (ve gerekmemelidir) iki ayrı bayt değilmiş gibi bir Unicode karakter kabul eder. Ancak, geniş karakterler yedek çifti tarafından temsil edilen tek bir karakter olasılığını uğraşmanız zorunda. Genel olarak, dar ya da geniş, onu içeren bir dize uzunluğu karakter sayısı ile aynı olduğunu varsayar kod yazma.
 

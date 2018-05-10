@@ -1,13 +1,10 @@
 ---
-title: "Saydam veya donuk arka plan (simgeler için görüntü Düzenleyicisi) seçme | Microsoft Docs"
-ms.custom: 
+title: Saydam veya donuk arka plan (simgeler için görüntü Düzenleyicisi) seçme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -22,25 +19,23 @@ helpviewer_keywords:
 - transparency, background
 - transparent backgrounds, images
 ms.assetid: 61b743d9-c86b-405d-9a81-0806431b4363
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4e73ac7122b31ab6880d7d27387937113dee70f9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 244e6a63bc16b5e83bb8419dbe1b53741d566e56
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="choosing-a-transparent-or-opaque-background-image-editor-for-icons"></a>Saydam veya Donuk Arka Plan Seçme (Simgeler İçin Görüntü Düzenleyicisi)
 Taşıdığınızda veya bir görüntüden Seçimi kopyalama geçerli arka plan rengi eşleşen tüm seçimi, varsayılan olarak, saydam pikseldir; Hedef konumda piksel soyutlamaması değil.  
   
  Saydam arka plan (varsayılan) donuk arka plana geçin ve yeniden. Bir seçim aracını kullandığınızda **saydam arka plan** ve **donuk arka plan** seçenekleri görünmez seçeneği seçicide **görüntü Düzenleyicisi** (aşağıda görüldüğü gibi) araç.  
   
- ![Arka plan Seçenekleri &#45; saydam veya donuk](../windows/media/vcimageeditoropaqtranspback.gif "vcImageEditorOpaqTranspBack")  
+ ![Arka plan seçenekleri &#45; donuk veya saydam](../windows/media/vcimageeditoropaqtranspback.gif "vcImageEditorOpaqTranspBack")  
 Görüntü Düzenleyicisi araç çubuğundaki saydam ve donuk seçenekleri  
   
 ### <a name="to-switch-between-a-transparent-and-opaque-background"></a>Saydam ve donuk arka plan arasında geçiş yapmak için  
@@ -51,7 +46,7 @@ Görüntü Düzenleyicisi araç çubuğundaki saydam ve donuk seçenekleri
   
     -   **Saydam arka plan (T)**: Mevcut görüntü geçerli arka plan rengini eşleştirme seçimi bölümlerini gösterir.  
   
- \-veya -  
+ \- veya -  
   
 -   Üzerinde **görüntü** menüsünde seçin veya temizleyin **Donuk Çiz**.  
   

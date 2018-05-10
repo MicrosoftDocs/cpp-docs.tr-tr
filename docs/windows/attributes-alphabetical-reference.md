@@ -1,13 +1,10 @@
 ---
-title: "Öznitelikler alfabetik başvurusu | Microsoft Docs"
-ms.custom: 
+title: Öznitelikler alfabetik başvurusu | Microsoft Docs
+ms.custom: index-page
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: 'index-page '
+ms.topic: conceptual
 f1_keywords:
 - vc.attributes
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - attributes [C++]
 ms.assetid: fb2216ef-9fbd-44f4-afed-732aa99450e2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2420ba0d023272a1e6a66687f567bf881b8af35f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5b8e0f40e0633d0ebabbbe2f5f226e0311b1c977
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="attributes-alphabetical-reference"></a>Öznitelikler Alfabetik Başvurusu
 Aşağıdaki öznitelikler Visual C++'da kullanılabilir.  
@@ -40,7 +35,7 @@ Aşağıdaki öznitelikler Visual C++'da kullanılabilir.
 |[attribute](../windows/attribute.md)|Özel bir öznitelik oluşturmanıza olanak sağlar.|  
 |[bindable](../windows/bindable.md)|Özellik veri bağlama desteklediğini belirtir.|  
 |[call_as](../windows/call-as.md)|Uzak bir işleve eşlenmesi nonremotable işlevi sağlar.|  
-|[durumu](../windows/case-cpp.md)|İle kullanılan [switch_type](../windows/switch-type.md) UNION özniteliği.|  
+|[Durumu](../windows/case-cpp.md)|İle kullanılan [switch_type](../windows/switch-type.md) UNION özniteliği.|  
 |[coclass](../windows/coclass.md)|COM arabirimi uygulayan bir COM nesnesi oluşturur.|  
 |[com_interface_entry](../windows/com-interface-entry-cpp.md)|Bir arabirim giriş COM Haritası ekler.|  
 |[control](../windows/control.md)|Kullanıcı tanımlı tür denetim olduğunu belirtir.|  
@@ -76,13 +71,13 @@ Aşağıdaki öznitelikler Visual C++'da kullanılabilir.
 |[idl_quote](../windows/idl-quote.md)|Öznitelikleri kullanmanıza olanak sağlar veya Visual C++ geçerli sürümünde desteklenmeyen IDL oluşturur.|  
 |[iid_is](../windows/iid-is.md)|Arabirim işaretçisi tarafından işaret COM arabirimi IID belirtir.|  
 |[immediatebind](../windows/immediatebind.md)|Veritabanı veri bağlama nesnenin bir özelliğini yapılan tüm değişiklikler, hemen bildirilecek gösterir.|  
-|[uygular](../windows/implements-cpp.md)|IDL coclass'ı üyeleri olmaya zorlanıp gönderme arabirimleri belirtir.|  
+|[Uygular](../windows/implements-cpp.md)|IDL coclass'ı üyeleri olmaya zorlanıp gönderme arabirimleri belirtir.|  
 |[implements_category](../windows/implements-category.md)|Sınıfı için uygulanan bileşen kategorileri belirtir.|  
 |[import](../windows/import.md)|Ana .idl dosyanızdan başvuru yapmak istediğinizi tanımlarını içeren başka bir .idl, .odl veya üst bilgi dosyasını belirtir.|  
 |[importidl](../windows/importidl.md)|Belirtilen .idl dosya oluşturulan .idl dosyasına ekler.|  
 |[importlib](../windows/importlib.md)|Zaten başka bir tür kitaplığı oluşturulan tür kitaplığı kullanılabilir içine derlenmiştir türleri sağlar.|  
 |[in](../windows/in-cpp.md)|Bir parametre çağrılan yordamı çağırma yordamdan geçirilecek olduğunu gösterir.|  
-|[içerir](../windows/include-cpp.md)|Oluşturulan .idl dosyasında dahil edilecek bir veya daha fazla üst bilgi dosyaları belirtir.|  
+|[İçerir](../windows/include-cpp.md)|Oluşturulan .idl dosyasında dahil edilecek bir veya daha fazla üst bilgi dosyaları belirtir.|  
 |[includelib](../windows/includelib-cpp.md)|Oluşturulan .idl dosyasında dahil edilecek bir .idl veya .h dosyası neden olur.|  
 |[last_is](../windows/last-is.md)|Aktarılacak son dizi öğesinden dizinini belirtir.|  
 |[lcid](../windows/lcid.md)|Yerel ayar tanımlayıcısı bir işleve geçirmenize olanak sağlar.|  
@@ -127,12 +122,12 @@ Aşağıdaki öznitelikler Visual C++'da kullanılabilir.
 |[switch_is](../windows/switch-is.md)|İfade veya bileşim üyesi seçer birleşim discriminant işlev gören tanımlayıcısını belirtir.|  
 |[switch_type](../windows/switch-type.md)|Birleşim discriminant kullanılan değişken türünü tanımlar.|  
 |[synchronize](../windows/synchronize.md)|Bir yöntem erişimi eşitler.|  
-|[iş parçacığı oluşturma](../windows/threading-cpp.md)|Bir COM nesnesi için iş parçacığı modelini belirtir.|  
+|[İş parçacığı oluşturma](../windows/threading-cpp.md)|Bir COM nesnesi için iş parçacığı modelini belirtir.|  
 |[transmit_as](../windows/transmit-as.md)|Hangi istemci ve sunucu uygulamaları işlemek, sunulan türü, bir iletilen türüyle ilişkilendirmek için derleyicisi bildirir.|  
 |[uidefault](../windows/uidefault.md)|Tür bilgileri üye kullanıcı arabiriminde görünen varsayılan üye olduğunu gösterir.|  
-|[benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
+|[Benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
 |[usesgetlasterror](../windows/usesgetlasterror.md)|Bu işlev çağrılırken bir hata varsa çağıran sonra çağırabilirsiniz çağıran söyler `GetLastError` hata kodu alınamadı.|  
-|[UUID](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
+|[uuid](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
 |[v1_enum](../windows/v1-enum.md)|Belirtilen enum türü 16 bit varsayılan yerine bir 32 bit varlık olarak iletilmesi yönlendirir.|  
 |[vararg](../windows/vararg.md)|İşlev değişken sayıda bağımsız değişken sürmesi belirtir.|  
 |[Sürüm](../windows/version-cpp.md)|Belirli bir sürüm arasında bir arabirim ya da sınıf birden fazla sürümünü tanımlar.|  

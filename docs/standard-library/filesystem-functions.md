@@ -2,11 +2,8 @@
 title: '&lt;dosya sistemi&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - FILESYSTEM/std::experimental::filesystem::absolute
@@ -52,10 +49,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: be3cb821-4728-4d47-ab78-858fa8aa5045
-caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::experimental::filesystem::absolute
 - std::experimental::filesystem::canonical
@@ -99,11 +94,11 @@ helpviewer_keywords:
 - std::experimental::filesystem::u8path
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93304322359b7f0d5e16c2a5452eefc5a839c2b4
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: bfe07904a8eec87fb18441b92096d8ba6b72e4e3
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltfilesystemgt-functions"></a>&lt;dosya sistemi&gt; işlevleri
 

@@ -1,30 +1,25 @@
 ---
-title: "Hızlandırıcı tuşu özelliği | Microsoft Docs"
-ms.custom: 
+title: Hızlandırıcı tuşu özelliği | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Key property
 ms.assetid: d1570cd9-b414-4cd6-96bd-47c38281eaca
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 365960717f5fe4cedf79615fd3087bc89d6b531c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e4fc56384d666026f4cc7e21f9d8af9347046fd1
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="accelerator-key-property"></a>Hızlandırıcı Tuşu Özelliği
 Hızlandırıcı tablosunda anahtar özelliği için yasal girişleri şunlardır:  

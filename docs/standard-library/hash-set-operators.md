@@ -2,9 +2,6 @@
 title: '&lt;hash_set&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - hash_set/std::operator!=
@@ -12,13 +9,11 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
-caps.latest.revision: 13
-manager: ghogen
-ms.openlocfilehash: 9db5096e93a5778682eb9e926ac2b44c334b6349
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 4f8347ad891508e7cdf06db5a42ec7953fb7746a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="lthashsetgt-operators"></a>&lt;hash_set&gt; işleçleri
 

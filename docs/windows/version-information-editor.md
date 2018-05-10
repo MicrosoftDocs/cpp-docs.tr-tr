@@ -1,13 +1,10 @@
 ---
-title: "Sürüm bilgileri Düzenleyicisi | Microsoft Docs"
-ms.custom: 
+title: Sürüm bilgileri Düzenleyicisi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.version.F1
 dev_langs:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - editors, Version Information
 - resource editors, Version Information editor
 ms.assetid: 772e6f19-f765-4cec-9521-0ad3eeb99f9b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7c221120bf7170025506fe49fe2ab6419ce66044
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 76a76dbb3d8b41c2366f354f9c3c8d66ccc3743f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="version-information-editor"></a>Sürüm Bilgileri Düzenleyicisi
 Sürüm bilgileri, şirket ve ürün kimliği, bir ürün sürüm numarasını ve telif hakkı ve marka bildirim oluşur. Sürüm bilgileri Düzenleyicisi ile oluşturun ve sürüm bilgileri kaynağında depolanan bu verileri güncelleştirin. Sürüm bilgileri kaynağında bir uygulama tarafından gerekli değildir, ancak uygulama tanımlayan bilgileri toplamak için yararlı bir yerdir. Sürüm bilgileri de API'leri kurulum tarafından kullanılır.  

@@ -1,12 +1,9 @@
 ---
-title: "Ftmbase::unmarshalınterface metodu | Microsoft Docs"
-ms.custom: 
+title: Ftmbase::unmarshalınterface metodu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - ftm/Microsoft::WRL::FtmBase::UnmarshalInterface
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - UnmarshalInterface method
 ms.assetid: 6850a621-e9a6-4001-bc1e-bd5d1b121adc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ce3710e84a9f7680b56f461029f279a659a5c14a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 964ce5cc33b51c54446874522317814279cdd960
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ftmbaseunmarshalinterface-method"></a>FtmBase::UnmarshalInterface Metodu
 Yeni oluşturulan bir proxy başlatır ve proxy için bir arabirim işaretçisi döndürür.  

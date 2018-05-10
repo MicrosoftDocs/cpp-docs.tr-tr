@@ -1,30 +1,25 @@
 ---
-title: "Öznitelik parametre türleri (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: Öznitelik parametre türleri (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - custom attributes, parameter types
 ms.assetid: d9f127a3-7f08-456f-acc6-256805632712
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 95e7ec4d1a4a6b473419c23b3565fcce9d5afed6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 64da24a9811046672c317c24bba5332bf09303f9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="attribute-parameter-types--c-component-extensions"></a>Öznitelik Parametre Türleri (C++ Bileşen Uzantıları)
 Öznitelikleri geçirilen değerlerinin derleyiciye derleme zamanında bilinmesi gerekir.  Öznitelik parametreleri aşağıdaki türde olabilir:  
@@ -45,7 +40,7 @@ ms.lasthandoff: 12/21/2017
   
 -   `wchar_t`  
   
--   `char*`veya `wchar_t*` veya`System::String*`  
+-   `char*` veya `wchar_t*` veya `System::String*`  
   
 -   `System::Type ^`  
   

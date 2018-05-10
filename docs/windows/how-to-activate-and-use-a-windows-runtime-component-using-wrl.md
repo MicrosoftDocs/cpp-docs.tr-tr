@@ -2,27 +2,22 @@
 title: 'Nasıl yapılır: WRL kullanarak Windows çalışma zamanı bileşenini etkinleştirme ve kullanma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 54828f02-6af3-45d1-b965-d0104442f8d5
-caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5c430ca0dd63c4cbe46986147617ccbd752597ab
-ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
+ms.openlocfilehash: 50c37438bf3a840f57119245b845d0b94f1873db
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="how-to-activate-and-use-a-windows-runtime-component-using-wrl"></a>Nasıl yapılır: WRL Kullanarak Windows Çalışma Zamanı Bileşenini Etkinleştirme ve Kullanma
 Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) Windows çalışma zamanı başlatmak için nasıl kullanılacağı ve bir Windows çalışma zamanı bileşenini etkinleştirme ve kullanma nasıl gösterir.  
@@ -87,7 +82,7 @@ Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) Windows çal
 ## <a name="compiling-the-code"></a>Kod Derleniyor  
  Kodu derlemek için kopyalayın ve ardından bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-component.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
   
- **cl.exe wrl-consume-component.cpp runtimeobject.lib**  
+ **cl.exe wrl tüketen component.cpp runtimeobject.lib**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

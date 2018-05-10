@@ -1,27 +1,22 @@
 ---
-title: "A.18 yönergeleri için iç içe geçmiş | Microsoft Docs"
-ms.custom: 
+title: A.18 yönergeleri için iç içe geçmiş | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: ae2b2e0b-ec94-43f8-928c-6d621b51f0df
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9784afedd20d8e3492b056179b9c60601a065a11
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c0f52baeaa4b6c37f0da1b818a5ae2b8471dabc9
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="a18---nested-for-directives"></a>A.18   Yönergeler için İç İçe Konulan
 Aşağıdaki örneği `for` yönerge iç içe geçme ([bölüm 2.9](../../parallel/openmp/2-9-directive-nesting.md) sayfasında 33) uyumlu olmadığından iç ve dış `for` yönergeleri bağlamak için farklı paralel bölgeler:  

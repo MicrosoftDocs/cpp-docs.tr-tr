@@ -2,9 +2,6 @@
 title: '&lt;iş parçacığı&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - thread/std::operator!=
@@ -17,8 +14,6 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: e6bb6c0f-64f9-4cb2-9ff2-05b88a6ba7ac
-caps.latest.revision: 11
-manager: ghogen
 helpviewer_keywords:
 - std::operator!= (thread)
 - std::operator&gt; (thread)
@@ -27,11 +22,11 @@ helpviewer_keywords:
 - std::operator&lt;&lt; (thread)
 - std::operator&lt;= (thread)
 - std::operator== (thread)
-ms.openlocfilehash: 58c690b51d51a75b644430aaf4e5b3eeb672ae5a
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 1f5f523b19581fe11f01266c90e6b8612da125fc
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltthreadgt-operators"></a>&lt;iş parçacığı&gt; işleçleri
 

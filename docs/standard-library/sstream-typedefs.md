@@ -2,9 +2,6 @@
 title: '&lt;sstream&gt; tür tanımları | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - iosfwd/std::istringstream
@@ -16,13 +13,11 @@ f1_keywords:
 - iosfwd/std::wstringbuf
 - iosfwd/std::wstringstream
 ms.assetid: d102edd2-ecea-4a35-a398-cf96e58dd422
-caps.latest.revision: 9
-manager: ghogen
-ms.openlocfilehash: 21cb06a9c09f53b1dfae4d60b490a81b8d7ed60b
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 23a93f90488e56436a8f185d7b4f12218a93a321
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltsstreamgt-typedefs"></a>&lt;sstream&gt; tür tanımları
 

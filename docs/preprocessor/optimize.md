@@ -1,12 +1,9 @@
 ---
 title: en iyi duruma getirme | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vc-pragma.optimize
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - pragmas, optimize
 - optimize pragma
 ms.assetid: cb13c1cc-186a-45bc-bee7-95a8de7381cc
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae1988292b1f6dfa35f4cb77d145641528ed827f
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: bff0e4cc40bfa0e355f348c02f01cb0c7445b596
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="optimize"></a>optimize
 Bir işlev tarafından işlevi temelinde gerçekleştirilecek iyileştirmelerini belirtir.  
@@ -50,7 +45,7 @@ Bir işlev tarafından işlevi temelinde gerçekleştirilecek iyileştirmelerini
 |--------------------|--------------------------|  
 |**g**|Global iyileştirmeler sağlar.|  
 |**s** veya **t**|Makine kodu kısa veya hızlı dizisi belirtin.|  
-|**y**|Çerçeve işaretçisi program yığında oluşturur.|  
+|**Y**|Çerçeve işaretçisi program yığında oluşturur.|  
   
  İle kullanılan aynı harf bunlar [/O](../build/reference/o-options-optimize-code.md) derleyici seçenekleri. Örneğin, aşağıdaki pragma eşdeğerdir **/Os** derleyici seçeneği:  
   

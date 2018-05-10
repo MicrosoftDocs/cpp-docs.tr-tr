@@ -1,13 +1,10 @@
 ---
-title: "Dahil olmak üzere paylaşılan (salt okunur) veya hesaplanan sembolleri ekleme | Microsoft Docs"
-ms.custom: 
+title: Dahil olmak üzere paylaşılan (salt okunur) veya hesaplanan sembolleri ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.symbol.shared.calculated
 dev_langs:
@@ -21,18 +18,16 @@ helpviewer_keywords:
 - calculated symbols
 - shared symbols
 ms.assetid: 32b77faf-a066-4371-a072-9a5b84c0766d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bf0beeb90e2d4c4d22f45322f881bb7a247acf12
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c56e8af65d27bda8ef04655f40bdd2e335067d3c
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="including-shared-read-only-or-calculated-symbols"></a>Paylaşılan (Salt Okunur) veya Hesaplanan Sembolleri Ekleme
 Geliştirme ortamı başka bir uygulama tarafından oluşturulan bir kaynak dosyasını okur ilk kez tüm eklenen üst bilgi dosyaları salt okunur olarak işaretler. Sonuç olarak, kullanabileceğiniz [kaynağını içeren iletişim kutusu](../windows/resource-includes-dialog-box.md) ek salt okunur sembol üstbilgi dosyaları eklemek için.  

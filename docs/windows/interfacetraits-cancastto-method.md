@@ -1,12 +1,9 @@
 ---
-title: "Interfacetraits::cancastto yöntemi | Microsoft Docs"
-ms.custom: 
+title: Interfacetraits::cancastto yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::InterfaceTraits::CanCastTo
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - CanCastTo method
 ms.assetid: 275847cb-69ea-42bf-910f-05ba6ef8b48d
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3d8dfe6c1873d9cf897494eb6157c2be3baeb435
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e2a0a37f4ef9fa8f2aa92405b4b2c01d99386555
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="interfacetraitscancastto-method"></a>InterfaceTraits::CanCastTo Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -55,7 +50,7 @@ static __forceinline bool CanCastTo(
  Bu işlem başarılı olursa `ppv` tarafından belirtilen arabirimi işaret `Base`. Aksi takdirde, `ppv` ayarlanır `nullptr`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true`Bu işlem başarılı olursa ve `ptr` gösteren bir işaretçi cast `Base`; Aksi halde, `false` .  
+ `true` Bu işlem başarılı olursa ve `ptr` gösteren bir işaretçi cast `Base`; Aksi halde, `false` .  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bir işaretçi için belirtilen işaretçi içerip içermeyeceğini gösterir `Base`.  

@@ -2,21 +2,16 @@
 title: '&lt;unordered_set&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - unordered_set/std::swap (set)
 - unordered_set/std::swap (unordered_multiset)
 ms.assetid: 66b35671-4023-4411-ad50-83786580d8ee
-caps.latest.revision: 10
-manager: ghogen
-ms.openlocfilehash: d4aa4d81233cd7a12028320cf8541cdb3616a653
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 515d16cf8b9f11f5e9eb0b9699a0f72a19a64053
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltunorderedsetgt-functions"></a>&lt;unordered_set&gt; işlevleri
 

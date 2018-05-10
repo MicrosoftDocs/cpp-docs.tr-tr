@@ -2,21 +2,16 @@
 title: '&lt;system_error&gt; numaralandırmaları | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - system_error/std::errc
 - system_error/std::io_errc
 ms.assetid: b21321b7-404a-40de-8777-a85b77c6fa58
-caps.latest.revision: 12
-manager: ghogen
-ms.openlocfilehash: 607207176f4714747b4f3fe98073dc7fd49a8739
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 4b288d163f5388d2f021b85f29854924a3ed3424
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltsystemerrorgt-enums"></a>&lt;system_error&gt; numaralandırmaları
 

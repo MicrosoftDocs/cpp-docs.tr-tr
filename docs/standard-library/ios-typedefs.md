@@ -2,9 +2,6 @@
 title: '&lt;iOS&gt; tür tanımları | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - iosfwd/std::ios
@@ -14,13 +11,11 @@ f1_keywords:
 - iosfwd/std::wios
 - iosfwd/std::wstreampos
 ms.assetid: 0b962632-3439-44de-bf26-20c67a7f0ff3
-caps.latest.revision: 13
-manager: ghogen
-ms.openlocfilehash: 94b86b583e00507b89a1b087f3bb8817cf10de29
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 7ee458d0d84b63de52a2840a7a86903afed1704d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltiosgt-typedefs"></a>&lt;iOS&gt; tür tanımları
 

@@ -1,13 +1,10 @@
 ---
-title: "Kullanıcı Hesabı Denetimi (UAC) uygulamanızı nasıl etkiler | Microsoft Docs"
-ms.custom: 
+title: Kullanıcı Hesabı Denetimi (UAC) uygulamanızı nasıl etkiler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - user accounts [C++]
 - User Account Control [C++]
 ms.assetid: 0d001870-253e-4989-b689-f78035953799
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e609c16d63974506a06d6ec553cf4be09509acb9
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 020a7a16e38ee40c99a7a5b77c88002e3135bfa1
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-user-account-control-uac-affects-your-application"></a>Kullanıcı Hesabı Denetimi (UAC) Uygulamanızı Nasıl Etkiler
 Kullanıcı Hesabı Denetimi (UAC), Windows Vista'nın kullanıcı hesapları sınırlı ayrıcalıklarına sahip bir özelliktir. Aşağıdaki sitelerde UAC hakkında ayrıntılı bilgi bulabilirsiniz:  

@@ -2,9 +2,6 @@
 title: '&lt;hash_map&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - hash_map/std::operator!=
@@ -12,13 +9,11 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
-caps.latest.revision: 13
-manager: ghogen
-ms.openlocfilehash: 0b4b2a2c98e47752dbfb30afb2a0de522bcbb9f7
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: aa5c2a662fb5e827978a7c00aa3035dcc6cc97f2
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="lthashmapgt-operators"></a>&lt;hash_map&gt; işleçleri
 

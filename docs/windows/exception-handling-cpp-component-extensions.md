@@ -1,13 +1,10 @@
 ---
-title: "Özel durum işleme (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: Özel durum işleme (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,18 +16,16 @@ helpviewer_keywords:
 - managed exceptions
 - System::Exception class in managed applications
 ms.assetid: ccb11fe8-6938-41ac-b477-a183e85865b9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d6f43bd1953cc13189f53d97090d3913a49072ac
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6b6dcf8e844fbb2e8e133dc5dc6f0b98a3166ac6
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="exception-handling--c-component-extensions"></a>Özel Durum İşleme (C++ Bileşen Uzantıları)
 Uygulamaları derlenmiş ile **/ZW** derleyici seçeneği veya **/CLR** her ikisini de kullanmanız derleyici seçeneği *özel durumları* program yürütme sırasında beklenmeyen hataları işlemek için. Aşağıdaki konular ele özel durum işleme ya da C + +/ CX veya C + +/ CLI uygulamalar.  

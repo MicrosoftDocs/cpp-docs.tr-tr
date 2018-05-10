@@ -1,12 +1,9 @@
 ---
-title: "HandleT::operator = işleci | Microsoft Docs"
-ms.custom: 
+title: HandleT::operator = işleci | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HandleT::operator=
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - operator= operator
 ms.assetid: 9e42dcca-30fa-4e8b-8954-802fd64a5595
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 68afd6b2a0a1c17cd032d6cea84aefde8c368204
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6a13e8eb7e74625e185b59816b5794b0390e95e3
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="handletoperator-operator"></a>HandleT::operator= İşleci
 Belirtilen HandleT nesnenin değerini geçerli HandleT nesneye taşır.  

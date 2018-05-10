@@ -1,31 +1,26 @@
 ---
-title: "Tek başına öznitelikler | Microsoft Docs"
-ms.custom: 
+title: Tek başına öznitelikler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - standalone attributes
 - attributes [C++], standalone
 ms.assetid: 0d72e84e-236c-43b3-ac9a-d9b91fcd6794
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a3098fec700a498f73a86f8e1fd40609628a77d0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 59846b1ca031cc02c85cb6ace23f96e8c5cc9f37
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="stand-alone-attributes"></a>Tek Başına Öznitelikler
 Tek başına bir öznitelik C++ anahtar sözcüğü çalışmaz ancak bir kod satırı gibi daha fazla. Tek başına özniteliği deyimleri noktalı satırın sonundaki gerektirir.  
@@ -41,7 +36,7 @@ Tek başına bir öznitelik C++ anahtar sözcüğü çalışmaz ancak bir kod sa
 |[import](../windows/import.md)|Ana .idl dosyanızdan başvuru yapmak istediğinizi tanımlarını içeren başka bir .idl, .odl veya .h dosyasını belirtir.|  
 |[importidl](../windows/importidl.md)|Belirtilen .idl dosya oluşturulan .idl dosyasına ekler|  
 |[importlib](../windows/importlib.md)|Zaten başka bir tür kitaplığı oluşturulan tür kitaplığı kullanılabilir içine derlenmiştir türleri sağlar.|  
-|[içerir](../windows/include-cpp.md)|Oluşturulan .idl dosyasında dahil edilecek bir veya daha fazla üst bilgi dosyaları belirtir.|  
+|[İçerir](../windows/include-cpp.md)|Oluşturulan .idl dosyasında dahil edilecek bir veya daha fazla üst bilgi dosyaları belirtir.|  
 |[includelib](../windows/includelib-cpp.md)|Oluşturulan .idl dosyasında dahil edilecek bir .idl veya .h dosyası neden olur.|  
 |[library_block](../windows/library-block.md)|.İdl dosyanın kitaplığı bloktaki bir yapı yerleştirir.|  
 |[Modülü](../windows/module-cpp.md)|Kitaplık blok .idl dosyasında tanımlar.|  

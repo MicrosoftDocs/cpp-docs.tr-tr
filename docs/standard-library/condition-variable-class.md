@@ -2,11 +2,8 @@
 title: condition_variable sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - condition_variable/std::condition
@@ -20,10 +17,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 80b1295c-b73d-4d46-b664-6e183f2eec1b
-caps.latest.revision: 16
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::condition
 - std::condition_variable::condition_variable
@@ -35,11 +30,11 @@ helpviewer_keywords:
 - std::condition_variable::wait_until
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 316c3d68506a206ebcf91d63fcad0c359019300c
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 55598e4d4aad92e9f4557886bbcb3bd442917624
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="conditionvariable-class"></a>condition_variable Sınıfı
 

@@ -1,34 +1,29 @@
 ---
-title: "Lambda ifadeleri örnekleri | Microsoft Docs"
-ms.custom: 
+title: Lambda ifadeleri örnekleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - lambda expressions [C++], examples
 ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3177896b8cfdff78b0af2aeb40873f31099ce7d4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c83802dcc7382040d3b9f40bd0bbc2fe13d076f1
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="examples-of-lambda-expressions"></a>Lambda İfadeleri Örnekleri
 Bu makalede, lambda ifadelerinin programlarınızda nasıl kullanılacağı gösterilmektedir. Lambda ifadeleri genel bakış için bkz: [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md). Lambda ifadesi yapısı hakkında daha fazla bilgi için bkz: [Lambda ifadesi sözdizimi](../cpp/lambda-expression-syntax.md).  
   
-##  <a name="declaringLambdaExpressions"></a>Lambda ifadeleri bildirme  
+##  <a name="declaringLambdaExpressions"></a> Lambda ifadeleri bildirme  
   
 ### <a name="example-1"></a>Örnek 1  
  Lambda ifadesi yazıldığı için kendisine atayabilirsiniz bir `auto` değişkeni veya bir [işlevi](../standard-library/function-class.md) , aşağıda gösterildiği gibi nesnesi:  
@@ -109,7 +104,7 @@ int main()
   
  [[Bu makalede](#top)]  
   
-##  <a name="callingLambdaExpressions"></a>Lambda ifadeleri çağırma  
+##  <a name="callingLambdaExpressions"></a> Lambda ifadeleri çağırma  
  Bir lambda ifadeyi sonraki kod parçacığında gösterildiği gibi anında çağırabilirsiniz. C++ Standart Kitaplığı algoritmalar için bağımsız değişken olarak bir lambda gibi geçirmek nasıl ikinci parçacığı gösterir `find_if`.  
   
 ### <a name="example-1"></a>Örnek 1  
@@ -185,7 +180,7 @@ The first even number in the list is 42.
   
  [[Bu makalede](#top)]  
   
-##  <a name="nestingLambdaExpressions"></a>Lambda ifadeleri iç içe geçme  
+##  <a name="nestingLambdaExpressions"></a> Lambda ifadeleri iç içe geçme  
   
 ### <a name="example"></a>Örnek  
  Bu örnekte gösterildiği gibi, bir lambda ifadeyi başka bir tanesinin içine yerleştirebilirsiniz. İç lambda ifadesi bağımsız değişkenini 2 ile çarpar ve sonucu döndürür. Dış lambda ifadesi bağımsız değişkeni ile iç lambda ifadesini çağırır ve sonuca 3 ekler.  
@@ -222,7 +217,7 @@ int main()
   
  [[Bu makalede](#top)]  
   
-##  <a name="higherOrderLambdaExpressions"></a>Daha yüksek sıralı Lambda işlevleri  
+##  <a name="higherOrderLambdaExpressions"></a> Daha yüksek sıralı Lambda işlevleri  
   
 ### <a name="example"></a>Örnek  
  Kavramı, pek çok programlama dillerini destekleyen bir *daha yüksek sıralı işlevi.* Yüksek sıralı işlev, başka bir lambda ifadesini kendi bağımsız değişkeni olarak alan veya döndüren bir lambda ifadesidir. Kullanabileceğiniz [işlevi](../standard-library/function-class.md) davranmasına C++ lambda ifadesi etkinleştirmek için sınıf gibi daha yüksek sıralı işlevi. Aşağıdaki örnek döndüren bir lambda ifadesi gösterir bir `function` nesne ve geçen lambda ifadesi bir `function` nesnesi bağımsız değişkeni olarak.  
@@ -271,7 +266,7 @@ int main()
   
  [[Bu makalede](#top)]  
   
-##  <a name="methodLambdaExpressions"></a>Lambda ifadesi bir işlevde kullanma  
+##  <a name="methodLambdaExpressions"></a> Lambda ifadesi bir işlevde kullanma  
   
 ### <a name="example"></a>Örnek  
  Lambda ifadeleri bir işlev gövdesine kullanabilirsiniz. Lambda ifadesi kapsayan işlevi erişebilmeniz için herhangi bir işlev veya veri üyesi erişebilir. Açık veya örtülü olarak yakalamak için `this` işlevler ve veri kapsayan sınıf üyelerine erişimi sağlamak için işaretçi.  
@@ -366,7 +361,7 @@ int main()
   
  [[Bu makalede](#top)]  
   
-##  <a name="templateLambdaExpressions"></a>Lambda ifadeleri şablonlarıyla kullanma  
+##  <a name="templateLambdaExpressions"></a> Lambda ifadeleri şablonlarıyla kullanma  
   
 ### <a name="example"></a>Örnek  
  Lambda ifadeleri yazıldığından, bunları C++ şablonlarıyla birlikte kullanabilirsiniz. Aşağıdaki örnekte gösterildiği `negate_all` ve `print_all` işlevleri. `negate_all` İşlevi uygular birli `operator-` her bir öğe için `vector` nesnesi. `print_all` İşlevi yazdırır her bir öğe `vector` konsoluna nesnesi.  
@@ -430,7 +425,7 @@ After negate_all():
   
  [[Bu makalede](#top)]  
   
-##  <a name="ehLambdaExpressions"></a>Özel durumları işleme  
+##  <a name="ehLambdaExpressions"></a> Özel durumları işleme  
   
 ### <a name="example"></a>Örnek  
  Bir lambda ifadesinin gövdesi, hem yapısal özel durum işleme (SEH) hem de C++ özel durum işleme kurallarına uyar. Harekete geçirilmiş bir özel bir durumu, lambda ifadesinin gövdesi içinde işleyebilir veya özel durum işlemesini kapsayan kapsama erteleyebilirsiniz. Aşağıdaki örnek kullanır `for_each` işlevi ve doldurmak için bir lambda ifadesi bir `vector` başka bir değerleri içeren nesne. Kullandığı bir `try` / `catch` ilk vektör geçersiz erişim işlemek için blok.  
@@ -484,7 +479,7 @@ Caught 'invalid vector<T> subscript'.
   
  [[Bu makalede](#top)]  
   
-##  <a name="managedLambdaExpressions"></a>Yönetilen türler ile lambda ifadeleri kullanma (C + +/ CLI)  
+##  <a name="managedLambdaExpressions"></a> Yönetilen türler ile lambda ifadeleri kullanma (C + +/ CLI)  
   
 ### <a name="example"></a>Örnek  
  Bir lambda ifadesinin yakalama yan tümcesi yönetilen bir türe sahip bir değişken içeremez. Ancak, lambda ifadesi parametre listesine, yönetilen bir türe sahip bir bağımsız değişken geçirebilirsiniz. Aşağıdaki örnek, yerel yönetilmeyen değişken yakalayan bir lambda ifadesi içerir `ch` değeri ve gerçekleştirilen işlemlerin bir <xref:System.String?displayProperty=fullName> , parametre olarak nesne.  

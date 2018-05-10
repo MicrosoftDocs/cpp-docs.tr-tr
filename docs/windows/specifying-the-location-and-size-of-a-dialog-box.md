@@ -1,31 +1,26 @@
 ---
-title: "İletişim kutusunun boyutunu ve konumunu belirtme | Microsoft Docs"
-ms.custom: 
+title: İletişim kutusunun boyutunu ve konumunu belirtme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - dialog boxes, size
 - dialog boxes, positioning
 ms.assetid: 2b7c495e-6595-4cfb-9664-80b2826d0851
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 03c4c6d6afb13a0e4ed8801838356ff0d1e851f1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cc4c6867f5ed3791414619257fec33db4c632553
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="specifying-the-location-and-size-of-a-dialog-box"></a>İletişim Kutusunun Boyutunu ve Konumunu Belirtme
 Bir iletişim kutusu yanı sıra konumu boyutunu ve bunun içinde denetimleri boyutunu ve konumunu iletişim birimler cinsinden ölçülür. Visual Studio durum seçtiğiniz zaman çubuğunda sağ alt köşesindeki değerlerini ayrı ayrı denetimler ve iletişim kutusu görünür.  

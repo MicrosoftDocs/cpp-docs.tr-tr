@@ -2,20 +2,15 @@
 title: '&lt;condition_variable&gt; numaralandırmaları | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - condition_variable/std::cv_status
 ms.assetid: f261ad79-e25b-4afa-9f8a-909ce697e0d8
-caps.latest.revision: 11
-manager: ghogen
-ms.openlocfilehash: f2b49d54c3ecc2d0ee07ab942f8377703b8b56b5
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 72522903c837b33481c1614c8ecbce67821cb3f3
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltconditionvariablegt-enums"></a>&lt;condition_variable&gt; numaralandırmaları
 

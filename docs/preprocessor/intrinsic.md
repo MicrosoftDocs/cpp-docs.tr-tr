@@ -16,14 +16,13 @@ helpviewer_keywords:
 ms.assetid: 25c86ac7-ef40-47b7-a2c0-fada9c5dc3c5
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c26d6eece62a0ae827fc661b92a3adc02d0a6d5
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: e908a07253e924fa3cfc0a11cdef57a9253eee00
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="intrinsic"></a>içi
 

@@ -2,9 +2,6 @@
 title: '&lt;atomik&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - atomic/std::atomic_compare_exchange_strong
@@ -37,10 +34,8 @@ f1_keywords:
 - atomic/std::atomic_thread_fence
 - atomic/std::kill_dependency
 ms.assetid: 5c53b4f8-6ff5-47d7-beb2-2d6ee3c6ea89
-caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 helpviewer_keywords:
 - std::atomic_compare_exchange_strong [C++]
 - std::atomic_compare_exchange_strong_explicit [C++]
@@ -73,11 +68,11 @@ helpviewer_keywords:
 - std::kill_dependency [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5239cd975ef5a62fb63406865f457d6d1b1a86f2
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 50e70230dd5b8d9aa61f4df8c1288569192048b0
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltatomicgt-functions"></a>&lt;atomik&gt; işlevleri
 

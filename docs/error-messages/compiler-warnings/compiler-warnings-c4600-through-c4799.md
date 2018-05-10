@@ -1,8 +1,8 @@
 ---
-title: "Derleyici uyarıları C4600 C4799 aracılığıyla | Microsoft Docs"
+title: Derleyici uyarıları C4600 C4799 aracılığıyla | Microsoft Docs
 ms.date: 11/17/2017
 ms.technology:
-- cpp-tools
+- cpp-diagnostics
 ms.topic: error-reference
 f1_keywords:
 - C4602
@@ -68,14 +68,13 @@ dev_langs:
 ms.assetid: 22bd4392-f3be-445c-9f23-6126aebac901
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f5d7121e01b651e87630fe18bec21e3d999ed0e7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5ad29989e89bfe60f2180ee48c411ebd4d3098ce
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warnings-c4600-through-c4799"></a>Derleyici uyarıları C4600 C4799 aracılığıyla
 
@@ -204,7 +203,7 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı ilet
 |[Derleyici Uyarısı (Düzey 1) C4742](../../error-messages/compiler-warnings/compiler-warning-level-1-c4742.md)|'var' olan 'dosya1' ve 'dosya2' farklı hizalama: ve numarası|
 |[Derleyici Uyarısı (Düzey 1) C4743](../../error-messages/compiler-warnings/compiler-warning-level-1-c4743.md)|'type', 'dosya1' ve 'dosya2' farklı boyutuna sahip: numarası ve bayt sayısı|
 |[Derleyici Uyarısı (Düzey 1) C4744](../../error-messages/compiler-warnings/compiler-warning-level-1-c4744.md)|'var' 'dosya1' ve 'dosya2' farklı türe sahip: 'type1' ve 'type2'|
-|[Derleyici Uyarısı C4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md)|volatile erişimini '*ifade*' / volatile tabi olan:\<ISO &#124; ms > ayarlama; __iso_volatile_load/deposu iç işlevler kullanmayı düşünün|
+|[Derleyici Uyarısı C4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md)|volatile erişimini '*ifade*' / volatile tabi olan:\<ISO&#124;ms > ayarlama; __iso_volatile_load/deposu iç işlevler kullanmayı düşünün|
 |[Derleyici Uyarısı (düzey 1) C4747](../../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md)|Yönetilen 'entrypoint' çağrılırken: yönetilen kod çalıştıramıyor DLL entrypoint ve DLL entrypoint ulaşıldı çağrıları dahil olmak üzere, yükleyici kilidi altında|
 |Derleyici Uyarısı (düzey 4) C4749|Koşullu desteklenen: non standard düzeni türüne uygulanacağını offsetof '*türü*'|
 |Derleyici Uyarısı (düzey 1) C4750|'tanımlayıcısı': _alloca() bir döngüye içermesinden ile işlevi|

@@ -2,21 +2,16 @@
 title: '&lt;ayarlama&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - set/std::swap (map)
 - set/std::swap (multiset)
 ms.assetid: d1277d14-8502-46c0-b820-bcda820f9406
-caps.latest.revision: 7
-manager: ghogen
-ms.openlocfilehash: 29579adf6b9556635862985b324e27ebea416bc0
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: aac2aaa09f609cd88c2bfab0e3fb66f4edade293
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltsetgt-functions"></a>&lt;ayarlama&gt; işlevleri
 

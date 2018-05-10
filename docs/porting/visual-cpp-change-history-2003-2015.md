@@ -1,29 +1,24 @@
 ---
-title: "Visual C++ değişiklik geçmişini 2003 2015 | Microsoft Docs"
-ms.custom: 
+title: Visual C++ değişiklik geçmişini 2003 2015 | Microsoft Docs
+ms.custom: ''
 ms.date: 08/30/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1541029a8164e1c70e5599f20512dbecde543dc
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 1447bcd0cb0a9bfff1d527f6a53eccf25e008f90
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişini 2003 2015
 
@@ -129,9 +124,9 @@ Visual Studio'nun yeni bir sürüme yükselttiğinizde, derleme ve/veya önceden
   
 -   **Sonsuzluk ve NaN biçimlendirme** önceki sürümlerde, sonsuz ve NaN MSVC özgü sentinel dizeler kümesi kullanılarak biçimlendirilmiş.  
   
-    -   Infinity: 1.#INF  
+    -   Sonsuz: 1. #INF  
   
-    -   Quiet NaN: 1.#QNAN  
+    -   Sessiz NaN: 1. #QNAN  
   
     -   Sinyal NaN: 1. #SNAN  
   
@@ -265,7 +260,7 @@ Visual Studio'nun yeni bir sürüme yükselttiğinizde, derleme ve/veya önceden
   
 -   **const öğeleri** C++ Standart const öğelerin kapsayıcıları her zaman Yasak (vektör gibi\<const T > veya\<const T >). Visual Studio 2013 ve önceki gibi kapsayıcıları kabul edildi. Geçerli sürümde, bu tür kapsayıcıları derlemek başarısız.  
   
--   **std::allocator::deallocate** In Visual Studio 2013 and earlier, std::allocator::deallocate(p, n) ignored the argument passed in for n.  C++ Standart n çağrılmasını ilk bağımsız değişken tahsis gibi p döndürülen geçirilen değerine eşit her zaman gereklidir. Ancak, geçerli sürümde değerindeki bir n sahip olduğunu denetlenir. Hangi standart gerektirir farklı bağımsız değişkenleri n geçirir kodu çalışma zamanında kilitlenmesine neden olabilir.  
+-   **Std::Allocator:: ayırması** Visual Studio 2013 ve önceki n geçirilen bağımsız değişken std::allocator::deallocate(p, n) yoksayıldı.  C++ Standart n çağrılmasını ilk bağımsız değişken tahsis gibi p döndürülen geçirilen değerine eşit her zaman gereklidir. Ancak, geçerli sürümde değerindeki bir n sahip olduğunu denetlenir. Hangi standart gerektirir farklı bağımsız değişkenleri n geçirir kodu çalışma zamanında kilitlenmesine neden olabilir.  
   
 -   **hash_map ve hash_set** hash_set ve standart üstbilgi dosyaları hash_map Visual Studio 2015'te kullanım dışı bırakılmış ve bir sonraki sürümde kaldırılacak. Unordered_map ve unordered_set kullanın.  
   
@@ -305,7 +300,7 @@ Visual Studio'nun yeni bir sürüme yükselttiğinizde, derleme ve/veya önceden
     |has_trivial_move_assign|is_trivially_move_assignable|  
     |has_trivial_destructor|is_trivially_destructible|  
   
--   **Launch::ANY ve launch::sync ilkeleri** standart olmayan launch::any ve launch::sync ilkeleri kaldırıldı. Bunun yerine, launch::any için başlatma: zaman uyumsuz &#124; kullanın başlatma: ertelenmiş. Launch::Sync için launch::deferred kullanın. Bkz: [launch numaralandırması](../standard-library/future-enums.md#launch).  
+-   **Launch::ANY ve launch::sync ilkeleri** standart olmayan launch::any ve launch::sync ilkeleri kaldırıldı. Bunun yerine, launch::any için başlatma: zaman uyumsuz kullanın &#124; başlatın: ertelenmiş. Launch::Sync için launch::deferred kullanın. Bkz: [launch numaralandırması](../standard-library/future-enums.md#launch).  
   
 ####  <a name="BK_MFC"></a> MFC ve ATL  
   
@@ -338,9 +333,9 @@ Visual Studio'nun yeni bir sürüme yükselttiğinizde, derleme ve/veya önceden
   
 -   [Güncelleştirme 3 uygunluk yenilikleri](#VS_Update3)  
   
-###  <a name="VS_RTM">Visual Studio 2015'te uygunluk geliştirmeleri</a>  
+###  <a name="VS_RTM"></a> Visual Studio 2015'te uygunluk geliştirmeleri  
   
--   /Zc:forScope- option  
+-   /ZC:forScope-seçeneği  
   
      Derleyici seçeneği **/Zc:forScope-** kullanım dışıdır ve gelecek sürümde kaldırılacak.  
   
@@ -2854,7 +2849,7 @@ C c;
   
      Visual Studio 2012'de E1::b ifadesinde E1 çözümlendi:: genel kapsamda E1. Visual Studio 2013, E1::b ifadesinde E1 main() E2 tanımında typedef çözümler ve türüne sahip:: E2.  
   
--   Nesne düzenini değişti. x64 üzerinde, bir sınıfın nesne düzeni önceki sürümlere göre değişebilmektedir. Bir sanal işlevi varsa, ancak sanal işleve sahip bir taban sınıfı yoksa, derleyicinin nesne modeli veri üyesi düzeninden sonra sanal işlev tablosuna bir işaretçi ekler. Başka bir deyişle, ilgili düzen her durumda en uygun düzen olmayabilir. Önceki sürümlerde bir iyileştirme x64 için Düzen artırmak yüklemeye, ancak karmaşık kodlar durumlarda düzgün çalışması başarısız olduğundan, Visual Studio 2013'te kaldırıldı. Örneğin, aşağıdaki kodu düşünün:  
+-   {1&gt;Nesne düzeni değişti.&lt;1} x64 üzerinde, bir sınıfın nesne düzeni önceki sürümlere göre değişebilmektedir. Bir sanal işlevi varsa, ancak sanal işleve sahip bir taban sınıfı yoksa, derleyicinin nesne modeli veri üyesi düzeninden sonra sanal işlev tablosuna bir işaretçi ekler. Başka bir deyişle, ilgili düzen her durumda en uygun düzen olmayabilir. Önceki sürümlerde bir iyileştirme x64 için Düzen artırmak yüklemeye, ancak karmaşık kodlar durumlarda düzgün çalışması başarısız olduğundan, Visual Studio 2013'te kaldırıldı. Örneğin, aşağıdaki kodu düşünün:  
   
     ```cpp  
     __declspec(align(16)) struct S1 {  
@@ -2973,7 +2968,7 @@ C c;
   
 -   CDatabase::GetConnect yöntemi kaldırılır. Güvenlik artırmak için bağlantı dizesi artık depolanan şifrelenmiş ve gerektiğinde; yalnızca şifresi düz metin olarak döndürülemiyor.  Dize CDatabase::Dump yöntemi kullanılarak elde edilebilir.  
   
--   CWnd::OnPowerBroadcast imzası değiştirilir. Bu ileti işleyicisinin imzası ikinci parametre olarak bir LPARAM alacak şekilde değiştirilir.  
+-   {1&gt;CWnd::OnPowerBroadcast imzası değişti.&lt;1} Bu ileti işleyicisinin imzası ikinci parametre olarak bir LPARAM alacak şekilde değiştirilir.  
   
 -   İmzaları ileti işleyicileri uyacak şekilde değiştirilir. Aşağıdaki işlevlerin parametre listeleri yeni eklenen ON_WM_* ileti işleyicilerini kullanacak şekilde değiştirilmiştir:  
   
@@ -3202,13 +3197,13 @@ C c;
   
     -   GetWriteFactory  
   
-    -   GetWICFactory  
+    -   Getwıcfactory  
   
-    -   InitD2D  
+    -   Initd2d  
   
     -   ReleaseD2DRefs  
   
-    -   IsD2DInitialized  
+    -   Isd2dınitialized  
   
     -   D2D1MakeRotateMatrix  
   
@@ -3324,7 +3319,7 @@ C c;
   
     -   perf_object  
   
-    -   perfmon  
+    -   Perfmon  
   
     -   request_handler  
   

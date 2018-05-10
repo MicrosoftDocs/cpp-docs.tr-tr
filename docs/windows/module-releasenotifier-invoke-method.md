@@ -1,12 +1,9 @@
 ---
-title: "Module::ReleaseNotifier:: Invoke yöntemi | Microsoft Docs"
-ms.custom: 
+title: 'Module::ReleaseNotifier:: Invoke yöntemi | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::Module::ReleaseNotifier::Invoke
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - Invoke method
 ms.assetid: f62686fe-74bf-482b-a46b-6a3c09b80e7e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e2eff342264bf7866a4eb95147bca7ce41acb997
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6eb51d59d2f7f1adc934332cbfa5fead56bbef0a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="modulereleasenotifierinvoke-method"></a>Module::ReleaseNotifier::Invoke Yöntemi
 Bir modül son nesnesinde serbest bırakıldığında uygulandığında, olay işleyici çağırır.  

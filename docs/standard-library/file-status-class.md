@@ -2,11 +2,8 @@
 title: file_status sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - filesystem/std::experimental::filesystem::file_status
@@ -16,10 +13,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 9781840e-ad22-44dd-ad79-0fabaa94bac4
-caps.latest.revision: 15
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::experimental::filesystem::file_status
 - std::experimental::filesystem::file_status::operator=
@@ -27,11 +22,11 @@ helpviewer_keywords:
 - std::experimental::filesystem::file_status::permissions
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 841fa34eba4878669b624620bb4f3205e9ff08e4
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: be8f85041099d76a4bbb492aa55c5fb73d870589
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="filestatus-class"></a>file_status Sınıfı
 

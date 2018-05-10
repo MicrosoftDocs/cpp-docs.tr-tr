@@ -1,12 +1,9 @@
 ---
-title: "RuntimeClass::AddRef yöntemi | Microsoft Docs"
-ms.custom: 
+title: RuntimeClass::AddRef yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::RuntimeClass::AddRef
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - AddRef method
 ms.assetid: 9c705749-680b-4308-bbec-5b601e8e7dbd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 73f5a9a458e74d782491d3896f431f765bde87fd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9c570209ff612fb4fcedd77dbae92f72b2744a52
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="runtimeclassaddref-method"></a>RuntimeClass::AddRef Yöntemi
 Geçerli RuntimeClass nesne başvurusu sayısını artırır.  

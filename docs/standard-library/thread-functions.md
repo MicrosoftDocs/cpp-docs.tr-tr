@@ -2,9 +2,6 @@
 title: '&lt;iş parçacığı&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - thread/std::get_id
@@ -13,19 +10,17 @@ f1_keywords:
 - thread/std::swap
 - thread/std::yield
 ms.assetid: bb1aa1ef-fe3f-4e2c-8b6e-e22dbf2f5a19
-caps.latest.revision: 12
-manager: ghogen
 helpviewer_keywords:
 - std::get_id [C++]
 - std::sleep_for [C++]
 - std::sleep_until [C++]
 - std::swap [C++]
 - std::yield [C++]
-ms.openlocfilehash: 09c75832b9dd4c757cf6ba4efe5d203e98f916ec
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: f151bbaf692d914fa1072021e2f14262b2c72ce4
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltthreadgt-functions"></a>&lt;iş parçacığı&gt; işlevleri
 

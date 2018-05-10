@@ -1,12 +1,9 @@
 ---
-title: "choice sınıfı | Microsoft Docs"
-ms.custom: 
+title: choice sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - choice
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - choice class
 ms.assetid: 4157a539-d5c2-4161-b1ab-536ce2888397
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77a02043a3a301760130b568380a0ca5d57994cc
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 56b936e1ecb3864b7a7bb95f3e552c16d2ce81d0
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="choice-class"></a>seçenek Sınıfı
 A `choice` ileti bloğu olan bir kaynak kümesi akış denetimi etkileşim temsil eden birden çok kaynak, tek hedef blok. Seçim bloğu bir iletisi oluşturmak üzere birden çok kaynaktan herhangi biri için bekler ve ileti üretilen kaynak dizini yayılır.  
@@ -70,21 +65,21 @@ class choice: public ISource<size_t>;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Seçim](#ctor)|Fazla Yüklendi. Oluşturan bir `choice` ileti bloğu.|  
-|[~choice Destructor](#dtor)|Bozar `choice` ileti bloğu.|  
+|[~ choice yok Edicisi](#dtor)|Bozar `choice` ileti bloğu.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[accept](#accept)|Bu tarafından sunulan bir iletiyi kabul `choice` çağırana sahipliğini aktarma bloğu.|  
+|[Kabul et](#accept)|Bu tarafından sunulan bir iletiyi kabul `choice` çağırana sahipliğini aktarma bloğu.|  
 |[acquire_ref](#acquire_ref)|Bu başvuru sayısı edinir `choice` silinmesini önlemek için ileti bloğu.|  
 |[Kullanma](#consume)|Daha önce bu tarafından sunulan bir ileti tüketir `choice` blok Mesajlaşma ve başarıyla çağırana sahipliğini aktarma hedef tarafından ayrılmış.|  
 |[has_value](#has_value)|Denetler olup olmadığını bu `choice` ileti bloğu başlatıldıysa bir değerle henüz.|  
-|[index](#index)|Bir dizine döndürür `tuple` tarafından seçilen öğeyi temsil eden `choice` ileti bloğu.|  
+|[Dizin](#index)|Bir dizine döndürür `tuple` tarafından seçilen öğeyi temsil eden `choice` ileti bloğu.|  
 |[link_target](#link_target)|Hedef blok için bağlantılar `choice` ileti bloğu.|  
-|[release](#release)|Bir önceki başarılı ileti ayırma serbest bırakır.|  
+|[Sürüm](#release)|Bir önceki başarılı ileti ayırma serbest bırakır.|  
 |[release_ref](#release_ref)|Serbest başvuru sayısı bu `choice` ileti bloğu.|  
-|[reserve](#reserve)|Daha önce bu tarafından sunulan bir ileti ayırır `choice` ileti bloğu.|  
+|[ayırma](#reserve)|Daha önce bu tarafından sunulan bir ileti ayırır `choice` ileti bloğu.|  
 |[unlink_target](#unlink_target)|Hedef blok bu bağlantıyı keser `choice` ileti bloğu.|  
 |[unlink_targets](#unlink_targets)|Tüm hedefleri bu bağlantıyı keser `choice` ileti bloğu. (Geçersiz kılmaları [Isource::unlink_targets](isource-class.md#unlink_targets).)|  
 |[value](#value)|Dizinini tarafından seçildiğinde iletisini alır `choice` ileti bloğu.|  
@@ -139,7 +134,7 @@ virtual void acquire_ref(_Inout_ ITarget<size_t>* _PTarget);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem tarafından çağrılır bir `ITarget` sırasında bu kaynak için bağlantılı nesne `link_target` yöntemi.  
   
-##  <a name="ctor">Seçim</a> 
+##  <a name="ctor"></a> Seçim 
 
  Oluşturan bir `choice` ileti bloğu.  
   
@@ -188,7 +183,7 @@ choice(
 ~choice();
 ```  
   
-##  <a name="consume">Kullanma</a> 
+##  <a name="consume"></a> Kullanma 
 
  Daha önce bu tarafından sunulan bir ileti tüketir `choice` blok Mesajlaşma ve başarıyla çağırana sahipliğini aktarma hedef tarafından ayrılmış.  
   

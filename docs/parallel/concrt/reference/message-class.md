@@ -1,12 +1,9 @@
 ---
-title: "message sınıfı | Microsoft Docs"
-ms.custom: 
+title: message sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-concrt
 ms.topic: reference
 f1_keywords:
 - message
@@ -21,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - message class
 ms.assetid: 3e1f3505-6c0c-486c-8191-666d0880ec62
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 030b3d376b26afb077edd765d338b4c5d1b0841f
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 14fe0fa284a56c45404d8b568acf3b0d360fa27a
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="message-class"></a>message Sınıfı
 İleti blokları geçirilen veri yükü içeren temel ileti Zarf.  
@@ -60,7 +55,7 @@ class message : public ::Concurrency::details::_Runtime_object;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[message](#ctor)|Fazla Yüklendi. Oluşturan bir `message` nesnesi.|  
-|[~message Destructor](#dtor)|Bozar `message` nesnesi.|  
+|[~ message yok Edicisi](#dtor)|Bozar `message` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   

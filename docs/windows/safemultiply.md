@@ -1,13 +1,10 @@
 ---
 title: SafeMultiply | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SafeMultiply
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - SafeMultiply function
 ms.assetid: 81d988a5-fac7-4930-8c37-c24fa8e2c853
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 37ea091136521fc83fc63a8fb752e0f4f72cb49f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 89581544e203249a548b49f0695b28662407229b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="safemultiply"></a>SafeMultiply
 İki sayı birlikte taşma karşı koruyan bir şekilde çarpar.  
@@ -43,17 +38,17 @@ inline bool SafeMultiply (
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`t`  
+ [in] `t`  
  Çarpılacağı ilk sayı. Bu t türünde olmalıdır  
   
- [in]`u`  
+ [in] `u`  
  Çarpılacağı ikinci sayı. Bu türü u olmalıdır  
   
- [out]`result`  
+ [out] `result`  
  Parametre nerede `SafeMultiply` sonucu depolar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true`herhangi bir hata oluşursa; `false` bir hata oluşursa.  
+ `true` herhangi bir hata oluşursa; `false` bir hata oluşursa.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu yöntem parçası olan [SafeInt Kitaplığı](../windows/safeint-library.md) ve bir örneğini oluşturmak zorunda kalmadan tek çarpma işlemi için tasarlanmış [SafeInt sınıfı](../windows/safeint-class.md).  

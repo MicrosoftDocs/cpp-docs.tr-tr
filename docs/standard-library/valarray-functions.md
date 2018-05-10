@@ -2,9 +2,6 @@
 title: '&lt;valarray&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - valarray/std::abs
@@ -25,8 +22,6 @@ f1_keywords:
 - valarray/std::tan
 - valarray/std::tanh
 ms.assetid: 109778fc-440e-4239-b23e-bafda2b165c2
-caps.latest.revision: 12
-manager: ghogen
 helpviewer_keywords:
 - std::abs [C++]
 - std::acos [C++]
@@ -45,11 +40,11 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::tan [C++]
 - std::tanh [C++]
-ms.openlocfilehash: b217837c71b7d4fbd1353cb06173478887db3e76
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 53a7c666684783a85b2aeb0318cfedd738cc4b60
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltvalarraygt-functions"></a>&lt;valarray&gt; işlevleri
 

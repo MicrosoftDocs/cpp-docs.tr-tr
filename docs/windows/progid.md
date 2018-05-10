@@ -1,13 +1,10 @@
 ---
 title: ProgID | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.progid
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - progid attribute
 ms.assetid: afcf559c-e432-481f-aa9a-bd3bb72c02a8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 862629af7e279cf1f03a5e9adc9424b330ee1d90
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f2b2d2168b568c74c5404cc83bab1e5f77570773
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="progid"></a>progid
 Bir COM nesnesi ProgID belirtir.  
@@ -41,7 +36,7 @@ Bir COM nesnesi ProgID belirtir.
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *adı*  
+ *Adı*  
  Nesnesini temsil eden ProgID.  
   
  ProgID COM/ActiveX nesneleri tanımlamak için kullanılan sınıf tanımlayıcısı (CLSID) okunabilir bir sürümü var.  
@@ -66,7 +61,7 @@ Bir COM nesnesi ProgID belirtir.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**,`struct`|  
+|**Uygulandığı öğe:**|**sınıf**, `struct`|  
 |**Yinelenebilir**|Hayır|  
 |**Gerekli öznitelikler**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  

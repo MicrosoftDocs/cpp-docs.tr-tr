@@ -1,12 +1,9 @@
 ---
-title: "Module::UnregisterObjects yöntemi | Microsoft Docs"
-ms.custom: 
+title: Module::UnregisterObjects yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::Module::UnregisterObjects
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - UnregisterObjects method
 ms.assetid: 3d8119a7-991d-45e9-b8c5-ed36c0be0332
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d7e55afb96805fba6558cb900d2421a86379791c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7b711338c436eda3e64d9b51ef0d3137975d834a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="moduleunregisterobjects-method"></a>Module::UnregisterObjects Yöntemi
 Böylece diğer uygulamalar için bağlanamıyor Belirtilen modül nesneleri kaydını siler.  

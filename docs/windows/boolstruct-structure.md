@@ -1,12 +1,9 @@
 ---
-title: "BoolStruct yapısı | Microsoft Docs"
-ms.custom: 
+title: BoolStruct yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - internal/Microsoft::WRL::Details::BoolStruct
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - BoolStruct structure
 ms.assetid: 666eae78-e81d-4fb7-a9e4-1ba617d6d4cd
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7daa7527c8eea2cfca3b8933b9c3e1f042883e2d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: af2827d85a1df647dca2c02c5c6ee5a12a416d51
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="boolstruct-structure"></a>BoolStruct Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  

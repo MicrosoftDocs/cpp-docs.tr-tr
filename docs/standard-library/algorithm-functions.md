@@ -2,9 +2,6 @@
 title: '&lt;algoritma&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - algorithm/std::adjacent_find
@@ -108,10 +105,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: c10b0c65-410c-4c83-abf8-8b7f61bba8d0
-caps.latest.revision: 20
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::adjacent_find [C++]
 - std::all_of [C++]
@@ -213,11 +208,11 @@ helpviewer_keywords:
 - std::swap [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d14daa7eca862fc5252fa96155fe7f0b3fac8c2e
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 8224ca927829dc9663e36028bc7184372205ee5f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritma&gt; işlevleri
 

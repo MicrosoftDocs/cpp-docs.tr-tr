@@ -1,28 +1,23 @@
 ---
-title: "Nasıl yapılır: winmdidl.exe ve midlrt.exe windows meta verilerinden .h dosyaları oluşturmak için kullanın | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: winmdidl.exe ve midlrt.exe windows meta verilerinden .h dosyaları oluşturmak için kullanın | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 4be8ba11-c223-44ad-9256-7e1edae9a7bc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3cb17a3c60f7b3f9271ed5ff569d9cd139ce80fd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 06fef7449a540fbd3cddc2d38c9ce7483a7b5d55
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="how-to-use-winmdidlexe-and-midlrtexe-to-create-h-files-from-windows-metadata"></a>Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe programını kullanma
 Winmdidl.exe ve midlrt.exe COM düzeyinde etkileşim yerel C++ kod ve Windows çalışma zamanı bileşenleri arasındaki etkinleştirin. Giriş Windows çalışma zamanı bileşeni için meta veriler içeriyor ve bir IDL dosyası çıkaran bir .winmd dosyası olarak Winmdidl.exe alır. Midlrt.exe IDL dosyayı C++ kodu tüketebileceği üstbilgi dosyaları dönüştürür. Her iki Araçları komut satırı üzerinde çalıştırın.  
@@ -54,7 +49,7 @@ Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:fil
  Toplam yürütme süresi konsol çıktısı görüntüler.  
   
  OutDir:\<dir >  
- Bir çıkış dizini belirtir. Yol boşluk içeriyorsa, tırnak işaretleri kullanın. Varsayılan çıkış dizini  *\<sürücü >*: \Users\\*\<kullanıcı adı >*\AppData\Local\VirtualStore\Program dosyaları (x86) \Microsoft Visual Studio 12.0\\.  
+ Bir çıkış dizini belirtir. Yol boşluk içeriyorsa, tırnak işaretleri kullanın. Varsayılan çıkış dizini  *\<sürücü >*: \Users\\*\<kullanıcı adı >* \AppData\Local\VirtualStore\Program dosyaları (x86) \Microsoft Visual Studio 12.0\\.  
   
  `/banner:<file>`  
  Varsayılan telif hakkı iletisi ve dosyanın üst kısmındaki oluşturulan .idl winmdidl sürüm numarası önüne eklediğinizden özel metin içeren bir dosyayı belirtir. Yol boşluk içeriyorsa, tırnak işaretleri kullanın.  

@@ -1,22 +1,20 @@
 ---
-title: "Visual C++ araç ile ilgili bir sorun bildirme | Microsoft Docs"
+title: Visual C++ araç ile ilgili bir sorun bildirme | Microsoft Docs
 ms.date: 1/11/2018
 ms.technology:
-- cpp
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-ide
+ms.topic: conceptual
 dev_langs:
 - C++
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd7ba80e60251c56fd28a1c380d395e686fc27a4
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: e8be0a5e42caf12c4e1415cf88143b84a9971cd2
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset"></a>Visual C++ araç ile ilgili bir sorun bildirme
 
@@ -108,7 +106,7 @@ Bir yeniden oluşturma tekrarlanarak karşılaşılan sorunla gösteren tam ve m
 
 İyi bir yeniden oluşturma aşağıdaki gibidir:
 
-- **En az.** Repros, olabildiğince küçük henüz hala tam olarak karşılaştığınız sorunu gösterir. Repros karmaşık veya gerçekçi olması gerekmez; yalnızca standart veya belgelenmiş derleyici uygulaması ya da tanılama eksik olması durumunda uyumlu kodu, uyumluluğunu değil kodu göstermek ihtiyaç duyar. Sorun göstermek için yeterli kodu içeren basit,-noktaya repros en iyisidir. Lütfen ortadan kaldırmak veya kod basitleştirebilir ve uyumluluğunu kalır ve ayrıca değişmeden sorunu bırakın, bunu yapın. Karşı çalışan kod örnekleri arasında gerekmez. 
+- **En az.** Repros, olabildiğince küçük henüz hala tam olarak karşılaştığınız sorunu gösterir. Repros karmaşık veya gerçekçi olması gerekmez; yalnızca standart veya belgelenmiş derleyici uygulaması ya da tanılama eksik olması durumunda uyumlu kodu, uyumluluğunu değil kodu göstermek ihtiyaç duyar. Sorun göstermek için yeterli kodu içeren basit,-noktaya repros en iyisidir. Lütfen ortadan kaldırmak veya kod basitleştirebilir ve uyumluluğunu kalır ve ayrıca değişmeden sorunu bırakın, bunu yapın. Karşı çalışan kod örnekleri arasında gerekmez.
 
 - **Kendi içinde yer alan.** Repros gereksiz bağımlılıkları kaçınmalısınız. Lütfen, üçüncü taraf kitaplıklar olmadan sorunu yeniden oluşturup, bunu yapar. Basit çıktı deyimleri yanı sıra tüm kitaplık kodu olmadan sorunu yeniden varsa (örneğin, `puts("this shouldn't compile");`, `std::cout << value;`, ve `printf("%d\n", value);` teşkil), lütfen bunu yapın. Tüm kullanıcı üstbilgileri başvuru olmadan bir tek kaynak kodu dosyasına örnek sıkıştırılmış durumunda idealdir. Biz sorun olası Katılımcısı olarak göz önünde bulundurmanız gereken kod miktarını azaltmak için bize enormously yardımcı olur.
 
@@ -116,13 +114,13 @@ Bir yeniden oluşturma tekrarlanarak karşılaşılan sorunla gösteren tam ve m
 
 - **Diğer derleyiciler karşı kullanıma** varsa. Taşınabilir C++ kodu ile ilgili repros davranışı diğer derleyiciler karşı mümkünse doğrulamanız gerekir. Standart program doğruluk, sonuçta belirler ve hiçbir derleyici mükemmeldir ancak Clang ve GCC kodunuzu bir tanılama olmadan kabul edin ve MSVC desteklemez, bizim derleyici hatada görüntülemekte olduğunuz olasıdır. (Diğer olasılıklar UNIX ve Windows davranışı ya da C++ standartlar uygulamasını farklı düzeylerde farklılıkları içerir ve benzeri.) Tüm derleyicileri kodunuzu reddederseniz, öte yandan, daha sonra kodunuzu hatalı olduğunu olasıdır. Farklı hata iletilerini görme sorunu kendi başınıza tanılamaya yardımcı olabilir.
 
-   Kodunuzu karşı test etmek için çevrimiçi derleyicileri listesini bulabilirsiniz [çevrimiçi C++ Derleyicileri](https://isocpp.org/blog/2013/01/online-c-compilers) ISO C++ Web sitesi ya da bu seçkin [çevrimiçi C++ Derleyicileri listesi](https://arnemertz.github.io/online-compilers/) github'da. Belirli bazı örnekler [Wandbox](https://wandbox.org/), [derleyici Explorer](https://godbolt.org/), ve [Coliru](http://coliru.stacked-crooked.com/). 
+   Kodunuzu karşı test etmek için çevrimiçi derleyicileri listesini bulabilirsiniz [çevrimiçi C++ Derleyicileri](https://isocpp.org/blog/2013/01/online-c-compilers) ISO C++ Web sitesi ya da bu seçkin [çevrimiçi C++ Derleyicileri listesi](https://arnemertz.github.io/online-compilers/) github'da. Belirli bazı örnekler [Wandbox](https://wandbox.org/), [derleyici Explorer](https://godbolt.org/), ve [Coliru](http://coliru.stacked-crooked.com/).
 
    > [!NOTE]
    > Microsoft ile çevrimiçi derleyici Web siteleri bağlı değildir. Birçok çevrimiçi derleyici Web sitesi kişisel projeler olarak çalıştırılır ve sitelerin bazıları bu okuyun, ancak bir arama başkalarının kullanabileceğiniz bulmalıdır kullanılamayabilir.
 
 Derleyici sorunlarını bağlayıcı ve kitaplıklarında kendilerini özellikle yolları göster eğilimindedir. Tür karşılaştığınız sorunlar ne tür bir yeniden oluşturma, raporunuza dahil belirler. Uygun bir yeniden oluşturma araştırmak için hiçbir şey sunuyoruz. Burada, karşılaşabileceğiniz sorunları ve her tür sorunları bildirmek için kullanması gereken repros türleri oluşturmak için yönergeler türleri bazılarını bulunmaktadır.
- 
+
 #### <a name="frontend-parser-crash"></a>Ön uç (ayrıştırıcı) kilitlenme
 
 Ön uç çökme (Crash) derleyici ayrıştırma işlemi sırasında oluşur. Genellikle, derleyici yayma [önemli hata C1001](error-messages/compiler-errors-1/fatal-error-c1001.md) ve hangi hata oluştu; genellikle bir dosya msc1.cpp Bahsediyor, ancak bu ayrıntı yoksayabilirsiniz kaynak kodu dosya ve satır numarası başvuru.

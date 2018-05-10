@@ -2,9 +2,6 @@
 title: '&lt;scoped_allocator&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - scoped_allocator/std::operator!=
@@ -12,13 +9,11 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 4dfe0805-cc6e-479f-887f-a1c164f73837
-caps.latest.revision: 10
-manager: ghogen
-ms.openlocfilehash: 5cb569c5f27ab297fa4844d1d5b412a5f614c1f1
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 66cf60dd3d70719fe42645215b1190c9fb752ff3
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltscopedallocatorgt-operators"></a>&lt;scoped_allocator&gt; işleçleri
 

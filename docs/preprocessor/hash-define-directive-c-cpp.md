@@ -1,12 +1,9 @@
 ---
-title: "#define yönergesi (C/C++) | Microsoft Docs"
-ms.custom: 
+title: '#define yönergesi (C/C++) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - '#define'
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - '#define directive, syntax'
 - '#define directive'
 ms.assetid: 33cf25c6-b24e-40bf-ab30-9008f0391710
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d06a24d969f0ae7545f1b9ec0401e098a2bcf54
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 8875c2b2c744a16f936fd2220826f23413a0e6c9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="define-directive-cc"></a>#define Yönergesi (C/C++)
 `#define` Oluşturur bir *makrosu*, bir belirteç dizesi ilişkide bir tanımlayıcı veya parametreli tanımlayıcısı olduğu. Makro tanımlandıktan sonra kaynak dosya tanımlayıcıda her örneği için belirteç dizesini derleyici yerine kullanabilirsiniz.  
@@ -73,7 +68,7 @@ ms.lasthandoff: 02/23/2018
   
  İkinci bir `#define` ikinci belirteci sırası ilk aynı olmadığı sürece aynı ada sahip bir makro bir uyarı üretir.  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Microsoft C/C++ yeni tanımı orijinal tanımına sözdizimsel olarak aynı ise makro yeniden tanımlamanız olanak sağlar. Diğer bir deyişle, iki tanımları farklı parametre adları olabilir. Bu davranış farklı [!INCLUDE[vcpransi](../atl-mfc-shared/reference/includes/vcpransi_md.md)] C iki tanımları sözcüksel olarak aynı olmasını gerektirir.  
   
@@ -120,7 +115,7 @@ var = 80 + 10 * 20;
   
  hangi 280 için değerlendirir.  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Makrolar ve sabitler ile tanımlama [/D](../build/reference/d-preprocessor-definitions.md) derleyici seçeneği kullanarak aynı etkiye sahip bir `#define` dosyanızı başlangıcında önişlem yönergesi. En fazla 30 makroları /D seçeneği kullanılarak tanımlanabilir.  
   

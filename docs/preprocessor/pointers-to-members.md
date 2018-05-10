@@ -1,12 +1,9 @@
 ---
 title: pointers_to_members | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - pointers_to_members_CPP
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - members, pointers to
 - pointers_to_members pragma
 ms.assetid: 8325428c-c90a-4aed-9e82-cb1dda23f4ca
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4313aaa38d410b8e6f46594cd9ce11269b523073
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 499649e94dbe549deb091291b197c80ff404bc33
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="pointerstomembers"></a>pointers_to_members
 **C++ özel**  
@@ -58,7 +53,7 @@ ms.lasthandoff: 03/16/2018
 |Bağımsız Değişken|Açıklamalar|  
 |--------------|--------------|  
 |**single_inheritance**|En genel gösterim, bir üye işlevi işaretçisi olan single-inheritance'tır. Kendisi için bir üye işaretçisinin bildirildiği bir sınıf tanımının devralma modeli birden çok veya sanal ise hataya neden olur.|  
-|**multiple_inheritance**|En genel gösterim, bir üye işlev işaretçisi olan multiple-inheritance'tır. Kendisi için bir üye işaretçisinin bildirildiği bir sınıf tanımının devralma modeli sanal ise hataya neden olur.|  
+|**birden çok devralma**|En genel gösterim, bir üye işlev işaretçisi olan multiple-inheritance'tır. Kendisi için bir üye işaretçisinin bildirildiği bir sınıf tanımının devralma modeli sanal ise hataya neden olur.|  
 |**virtual_inheritance**|En genel devralma, bir üye işlev işaretçisi olan virtual-inheritance'tır. Hiçbir zaman hataya neden olmaz. Bu varsayılan bağımsız değişken değer olduğunda **#pragma pointers_to_members(full_generality)** kullanılır.|  
   
 > [!CAUTION]

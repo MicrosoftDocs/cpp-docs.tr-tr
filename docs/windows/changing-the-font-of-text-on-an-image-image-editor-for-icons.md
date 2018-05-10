@@ -1,30 +1,25 @@
 ---
-title: "Görüntüdeki (simgeler için görüntü Düzenleyicisi) metnin yazı tipini değiştirme | Microsoft Docs"
-ms.custom: 
+title: Görüntüdeki (simgeler için görüntü Düzenleyicisi) metnin yazı tipini değiştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - fonts, changing on an image
 ms.assetid: b8849d40-d401-4e06-808f-e615cb2bee3b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 07dc7d7fd74ad9d4b0229ffef7cf4e96a4ea44b4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b3ddef7e52866d5e25c3b9f5e5c580062f73e1b3
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="changing-the-font-of-text-on-an-image-image-editor-for-icons"></a>Görüntüdeki Metnin Yazı Tipini Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
 Aşağıdaki yordam, nasıl örneğidir:  
@@ -59,5 +54,5 @@ Aşağıdaki yordam, nasıl örneğidir:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)   
- [Araç çubuğu](../windows/toolbar-image-editor-for-icons.md)
+ [Araç Çubuğu](../windows/toolbar-image-editor-for-icons.md)
 

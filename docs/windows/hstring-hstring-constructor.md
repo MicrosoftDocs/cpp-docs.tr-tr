@@ -1,30 +1,25 @@
 ---
-title: "HString::HString Oluşturucusu | Microsoft Docs"
-ms.custom: 
+title: HString::HString Oluşturucusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HString::HString
 dev_langs:
 - C++
 ms.assetid: 6da12785-ed01-4720-a004-667db60298f1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d13f532484cc071744b9b823546052d92c6f6b78
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a3188e137d3a39fb26ca4151f72073306038e46f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="hstringhstring-constructor"></a>HString::HString Oluşturucusu
 HString sınıfının yeni bir örneğini başlatır.  

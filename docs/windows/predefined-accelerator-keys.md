@@ -1,13 +1,10 @@
 ---
-title: "Önceden tanımlanmış Hızlandırıcı tuşları | Microsoft Docs"
-ms.custom: 
+title: Önceden tanımlanmış Hızlandırıcı tuşları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.accelerator
 dev_langs:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - keyboard shortcuts
 - keyboard shortcuts, predefined
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b04ab7fafba9f17aeba4f15f937972389467593c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fa5b42fc846f3b4f21dc8045e67d8ebc347601ea
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="predefined-accelerator-keys"></a>Önceden Tanımlanmış Hızlandırıcı Tuşları
 Windows uygulaması projesi parçası olabilir önceden tanımlanmış Hızlandırıcı tuşları mevcuttur. Bu sanal anahtarlar Windows ortamını bazılarıdır. Diğer destek tarayıcılar ve Unicode uygulamaları. Bu anahtarları herhangi Hızlandırıcı kullanabilirsiniz.  
@@ -69,7 +64,7 @@ Windows uygulaması projesi parçası olabilir önceden tanımlanmış Hızland�
 |VK_OEM_2|Windows: için ABD Standart klavye, '/?' anahtar|  
 |VK_OEM_3|Windows: için ABD Standart klavye '' ~' anahtarı|  
 |VK_OEM_4|Windows: ABD Standart klavye için ' [{' anahtarı|  
-|VK_OEM_5|Windows: için ABD Standart klavye '\\&#124;' anahtar|  
+|VK_OEM_5|Windows: için ABD Standart klavye '\\&#124;' anahtarı|  
 |VK_OEM_6|Windows: ABD Standart klavye için ']}' anahtar|  
 |VK_OEM_7|Windows: ABD Standart klavyeyi için 'tek-teklif/çift-quote' anahtarı|  
 |VK_OEM_COMMA|Windows: tüm ülke/bölge için ',' anahtarı|  

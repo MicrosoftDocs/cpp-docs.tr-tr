@@ -2,9 +2,6 @@
 title: '&lt;allocators&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - allocators/std::operator!=
@@ -12,13 +9,11 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: b55d67cb-3c69-46bf-ad40-e845fb096c4e
-caps.latest.revision: 11
-manager: ghogen
-ms.openlocfilehash: d6d69d07c8b16d2749c7ac62eb290f180b1e1b09
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 25e40157c1872df3e970bb234accab5c487c6287
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltallocatorsgt-operators"></a>&lt;allocators&gt; işleçleri
 

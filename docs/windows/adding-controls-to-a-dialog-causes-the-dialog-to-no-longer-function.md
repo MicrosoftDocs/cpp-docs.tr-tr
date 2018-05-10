@@ -1,13 +1,10 @@
 ---
-title: "Bir iletişim kutusu denetimleri ekleme neden olan iletişim kutusunun çalışmamasına neden | Microsoft Docs"
-ms.custom: 
+title: Bir iletişim kutusu denetimleri ekleme neden olan iletişim kutusunun çalışmamasına neden | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - dialog box controls, troubleshooting
 - InitCommonControls
 ms.assetid: b2dd4574-ea59-4343-8d65-b387cead5da6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d0ec4825419c7a9d3c9bc35151b84c327a03325b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b10c24955e74d08ab570b5b694628f42bb394268
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function"></a>İletişim Kutusuna Denetimler Ekleme, İletişim Kutusunun Çalışmamasına Neden Oluyor
 Bir iletişim kutusu için bir ortak denetimi veya zengin düzenleme denetimine ekledikten sonra bu iletişim kutusunu test ya da iletişim görüntülenmez görünmez.  

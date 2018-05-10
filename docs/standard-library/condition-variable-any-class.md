@@ -2,11 +2,8 @@
 title: condition_variable_any sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - condition_variable/std::condition_variable_any
@@ -19,10 +16,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: d8afe5db-1561-4ec2-8e85-21ea03ee4321
-caps.latest.revision: 15
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::condition_variable_any
 - std::condition_variable_any::condition_variable_any
@@ -33,11 +28,11 @@ helpviewer_keywords:
 - std::condition_variable_any::wait_until
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a6a9f42830a0b4f25014759cfc916bd0759c2a9
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: f0fe38031dc215f537d82fe6e06f68acf6db8e0f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="conditionvariableany-class"></a>condition_variable_any Sınıfı
 

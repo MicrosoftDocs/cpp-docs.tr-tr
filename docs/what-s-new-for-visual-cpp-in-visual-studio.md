@@ -2,21 +2,20 @@
 title: Visual Studio'da Visual C++ yenilikler | Microsoft Docs
 ms.date: 11/15/2017
 ms.technology:
-- vs-ide-general
-ms.topic: article
+- cpp-ide
+ms.topic: conceptual
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 328862bdb85059735ef069df1c7a9be8c6651f77
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: 4996ce3e1943c2c76e959f54730042029e0ce518
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/08/2018
 ---
-# <a name="whats-new-for-visual-c-in-includevsdev15mdmiscincludesvsdev15mdmd"></a>Visual c++'ta için yenilikler nelerdir?[!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-for-visual-c-in-includevsdev15mdmiscincludesvsdev15mdmd"></a>Visual c++'ta için yenilikler nelerdir? [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]
 
 [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] çok sayıda güncelleştirme getirir ve Visual C++ ortamına giderir. 250'den fazla düzeltilen artık ve derleyici ve araçlarını sorunlar bildirildiğinde, müşteriler tarafından birçok gönderilen [bir sorun bildirmek](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) ve [bir öneride bulunmak](https://visualstudio.uservoice.com/) altında seçenekleri **geri bildirim gönder** . Hataları bildirdiğiniz için teşekkür ederiz! Tüm Visual Studio yenilikler hakkında daha fazla bilgi için lütfen ziyaret [yenilikler [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] ](https://go.microsoft.com/fwlink/p/?linkid=834481).
 
@@ -82,17 +81,17 @@ Visual C++ Intel'in AVX-512 yeni işlevler AVX-512 128 ve 256 bit geniş yazmaç
 - Performans geliştirmesi: `basic_string::operator==` şimdi dizeleri içeriği karşılaştırılmadan önce dizenin boyutunu denetler.
 - Performans geliştirmesi: içinde Kuplaj denetim kaldırılan `basic_string`, analiz etmek için derleyici iyileştirici zor olduğu. Çağrılırken, kısa tüm dizeleri unutmayın `reserve` yapmamak için sıfır olmayan bir maliyet hala vardır.
 - Eklediğimiz \<herhangi\>, \<string_view\>, `apply()`, `make_from_tuple()`.
-- `std::vector`doğruluk ve performans için overhauled: ekleme ve emplacement sırasında yumuşatma artık doğru şekilde ele alınır olarak standardına göre gerekli, güçlü özel durum garantisi şimdi standart tarafından istendiğinde sağlanan `move_if_noexcept()` ve diğer mantığı ve ekleme/emplacement daha az öğe işlemleri gerçekleştirin.
+- `std::vector` doğruluk ve performans için overhauled: ekleme ve emplacement sırasında yumuşatma artık doğru şekilde ele alınır olarak standardına göre gerekli, güçlü özel durum garantisi şimdi standart tarafından istendiğinde sağlanan `move_if_noexcept()` ve diğer mantığı ve ekleme/emplacement daha az öğe işlemleri gerçekleştirin.
 - C++ Standart Kitaplığı, şimdi null süslü işaretçileri başvurusunun kaldırılmasının önler.
 - Eklenen \<isteğe bağlı\>, \<değişken\>, `shared_ptr::weak_type`, ve \<cstdalign\>.
 - C ++ 14 etkin `constexpr` içinde `min(initializer_list)`, `max(initializer_list)`, ve `minmax(initializer_list)`, ve `min_element()`, `max_element()`, ve `minmax_element()`.
 - Geliştirilmiş `weak_ptr::lock()` performans.
 - Sabit `std::promise` devamlı engellemek kod daha önce neden olabilecek taşıma atama işleci.
 - Derleyici hatalarıyla sabit `atomic<T*>` örtük dönüştürmeye `T*`.
-- `pointer_traits<Ptr>`artık doğru şekilde algılar `Ptr::rebind<U>`.
+- `pointer_traits<Ptr>` artık doğru şekilde algılar `Ptr::rebind<U>`.
 - Eksik sabit `const` niteleyicisinde `move_iterator` çıkarma işleci.
 - Sessiz hatalı codegen isteyen durum bilgisi olan kullanıcı tanımlı allocators için sabit `propagate_on_container_copy_assignment` ve `propagate_on_container_move_assignment`.
-- `atomic<T>`Şimdi göstereceği aşırı `operator&()`.
+- `atomic<T>` Şimdi göstereceği aşırı `operator&()`.
 - Derleyici verimliliğini artırmak için gereksiz derleyici iç bilgileri için bildirimleri de dahil olmak üzere standart C++ Kitaplığı üstbilgilerini şimdi kaçının.
 - Biraz, derleyici tanılama için geliştirilmiş yanlış `bind()` çağrıları.
 - Performansını geliştirilmiş `std::string` ve `std::wstring` oluşturucular tarafından birden fazla üç kez taşıyın.
@@ -116,11 +115,11 @@ Birkaç ek C ++ 17 özellikleri uygulanmıştır. Daha fazla bilgi için bkz: [V
 - Standart Kitaplığı kapsayıcıları şimdi clamp kendi `max_size()` için `numeric_limits<difference_type>::max()` yerine `max()` , `size_type`. Bu sonucu sağlar `distance()` bu kapsayıcısından yineleyiciler içinde dönüş türü gösterilebilir açıktır `distance()`.
 - Eksik uzmanlık sabit `auto_ptr<void>`.
 - `for_each_n()`, `generate_n()`, Ve `search_n()` algoritmaları daha önce başarısız length bağımsız bir tam sayı türde değildi derlemeniz; bunlar artık integral olmayan uzunlukları yineleyiciler için dönüştürmeyi denemeden `difference_type`.
-- `normal_distribution<float>`artık float uyarıları standart çift daraltma hakkında kitaplığı içinde yayar.
+- `normal_distribution<float>` artık float uyarıları standart çift daraltma hakkında kitaplığı içinde yayar.
 - Bazı sabit `basic_string` ile karşılaştırma işlemleri `npos` yerine `max_size()` için en büyük boyutu taşma denetlerken.
-- `condition_variable::wait_for(lock, relative_time, predicate)`alacaklardır Uyandırma durumunda tüm göreli zaman beklemeniz. Şimdi, yalnızca bir tek göreli zaman aralığı için bekler.
-- `future::get()`artık geçersiz kılar `future`, standart gerektirir.
-- `iterator_traits<void *>`Forma çalıştığı için sabit bir hata olması için kullanılan `void&`; bu artık düzgün bir şekilde kullanılmasına izin vermek için boş bir yapı duruma `iterator_traits` "yineleyici olduğunu" SFINAE koşulları.
+- `condition_variable::wait_for(lock, relative_time, predicate)` alacaklardır Uyandırma durumunda tüm göreli zaman beklemeniz. Şimdi, yalnızca bir tek göreli zaman aralığı için bekler.
+- `future::get()` artık geçersiz kılar `future`, standart gerektirir.
+- `iterator_traits<void *>` Forma çalıştığı için sabit bir hata olması için kullanılan `void&`; bu artık düzgün bir şekilde kullanılmasına izin vermek için boş bir yapı duruma `iterator_traits` "yineleyici olduğunu" SFINAE koşulları.
 - Bazı uyarılar bildirdi tarafından Clang **- Wsystem-headers** düzeltilmiştir.
 - Ayrıca "özel durum belirtimi bildiriminde önceki bildirimi Clang tarafından bildirilen eşleşmiyor" sabit **- Wmicrosoft özel durum belirtimi**.
 - Clang C1XX tarafından bildirilen ve ayrıca sabit mem başlatıcı listesi sıralama uyarılar.
@@ -129,8 +128,8 @@ Birkaç ek C ++ 17 özellikleri uygulanmıştır. Daha fazla bilgi için bkz: [V
 - Birçok `vector<bool>` operations şimdi işaretlenmiş `noexcept`.
 - Standart Kitaplığı şimdi eşleşen ayırıcısı zorunlu kılacak `value_type` (modunda C ++ 17) vazgeçme kaçış tarama ile.
 - Bazı koşullar kendi range Ekle burada içine sabit `basic_string` dizeleri içeriği karıştırmak. (Not: self-range-insert into'nun vektörlerinin standardına göre hala Yasak.)
-- `basic_string::shrink_to_fit()`ayırıcı tarafından 's artık etkilenen `propagate_on_container_swap`.
-- `std::decay`Şimdi abominable işlev türleri (MS-tam ve/veya ref tam yani işlevi türleri) işler.
+- `basic_string::shrink_to_fit()` ayırıcı tarafından 's artık etkilenen `propagate_on_container_swap`.
+- `std::decay` Şimdi abominable işlev türleri (MS-tam ve/veya ref tam yani işlevi türleri) işler.
 - Değiştirilen uygun büyük küçük harfe duyarlılığın ve taşınabilirlik geliştirme eğik kullanmak için yönergeleri içerir.
 - Uyarı C4061 sabit "Numaralandırıcı '*Numaralandırıcı*'ın enum anahtar'*numaralandırma*' açıkça bir servis talebi etiketle işlenmemiş". Bu uyarı-varsayılan olarak kapalı ve bir özel durum uyarılarını standart kitaplığın Genel ilke olarak düzeltildi. (Standart Kitaplığı **/W4** temiz ancak olmasını denemez **/duvar** temiz. Birçok-varsayılan olarak kapalı uyarılar son derece gürültülü ve düzenli aralıklarla kullanılmaya yönelik değildir.)
 - Geliştirilmiş `std::list` debug denetler. Liste yineleyiciler şimdi onay `operator->()`, ve `list::unique()` şimdi yineleyiciler geçersiz kılınan olarak işaretler.
@@ -143,9 +142,9 @@ Birkaç ek C ++ 17 özellikleri uygulanmıştır. Daha fazla bilgi için bkz: [V
 - Değiştirilen `std::try_lock()` paketi genişletme özyineleme yerine kullanılacak.
 - Geliştirilmiş `std::lock()` kullanabilmek için kilitlenme kaçınma algoritmasını `lock()` operations dönen üzerinde yerine `try_lock()` üzerindeki tüm kilitler.
 - Adlandırılmış dönüş değeri iyileştirme etkin `system_category::message()`.
-- `conjunction`ve `disjunction` şimdi örneği N + 2N + 2 türleri yerine 1 türleri.
-- `std::function`artık her tür silinmesi aranabilir, iyileştirme performans ve geçirmek için birçok farklı Lambda'lar programları azalan .obj boyutunda ayırıcısı destek makineler başlatır `std::function`.
-- `allocator_traits<std::allocator>`el ile içermesinden içeren `std::allocator` işlemleri ile etkileşime giren kodu kodu boyutunun azaltılması, `std::allocator` aracılığıyla `allocator_traits` yalnızca (diğer bir deyişle, içinde çoğu kodu).
+- `conjunction` ve `disjunction` şimdi örneği N + 2N + 2 türleri yerine 1 türleri.
+- `std::function` artık her tür silinmesi aranabilir, iyileştirme performans ve geçirmek için birçok farklı Lambda'lar programları azalan .obj boyutunda ayırıcısı destek makineler başlatır `std::function`.
+- `allocator_traits<std::allocator>` el ile içermesinden içeren `std::allocator` işlemleri ile etkileşime giren kodu kodu boyutunun azaltılması, `std::allocator` aracılığıyla `allocator_traits` yalnızca (diğer bir deyişle, içinde çoğu kodu).
 - C ++ 11 en az ayırıcısı arabirimi şimdi standart kitaplığı tarafından işlenen çağırma `allocator_traits` bir iç sınıf ayırıcı sarmalama yerine doğrudan `_Wrap_alloc`. Bu ayırıcısı desteği oluşturulan kod boyutunu azaltır, bazı durumlarda standart kitaplığı kapsayıcıları hakkında neden iyileştirici'nin yeteneği artırır ve hata ayıklama daha iyi bir deneyim sağlar (ayırıcısı türünüz şimdi gördüğünüz gibi yerine `_Wrap_alloc<your_allocator_type>` içinde hata ayıklayıcı).
 - Özelleştirilmiş meta kaldırılan `allocator::reference`, hangi allocators gerçekte izin verilmiyor özelleştirmek için. (Allocators süslü işaretçileri ancak değil süslü başvuruları kullanamazsınız kapsayıcıları yapabilirsiniz.)
 - Ön uç derleyici hata ayıklama yapıları performansını iyileştirme hata ayıklama yineleyiciler aralık tabanlı için-döngüler içinde açılacak öğrettin.
@@ -158,7 +157,7 @@ Birkaç ek C ++ 17 özellikleri uygulanmıştır. Daha fazla bilgi için bkz: [V
 - İşlev tabanlı ifade SFINAE değiştirme tamamlandı `struct` ve `void_t`-tabanlı.
 - Standart Kitaplığı algoritmaları şimdi yineleyiciler postincrementing kaçının.
 - 32-bit allocators 64 bitlik sistemlerde kullanırken sabit kesilmesi uyarılar.
-- `std::vector`taşıma atama şimdi arabellek mümkün olduğunca yeniden kullanarak POCMA olmayan eşittir ayırıcısı durumda daha verimli olur.
+- `std::vector` taşıma atama şimdi arabellek mümkün olduğunca yeniden kullanarak POCMA olmayan eşittir ayırıcısı durumda daha verimli olur.
 
 #### <a name="readability-and-other-improvements"></a>Okunabilirlik ve diğer geliştirmeler
 
@@ -201,25 +200,25 @@ Birkaç standart kitaplığı özellikleri eklenmiş, kullanım dışı veya C +
 
 #### <a name="performance-fixes-and-improvements"></a>Performans düzeltmeleri ve geliştirmeleri
 
-- `basic_string<char16_t>`Şimdi aynı prosese `memcmp`, `memcpy`ve benzer en iyi duruma getirme, `basic_string<wchar_t>` ilgilenir.
+- `basic_string<char16_t>` Şimdi aynı prosese `memcmp`, `memcpy`ve benzer en iyi duruma getirme, `basic_string<wchar_t>` ilgilenir.
 - Bizim "işlevleri kopyalama kaçının tarafından" sunulan engeller önlenmiş işlev işaretçileri içermesinden Visual Studio 2015 güncelleştirme 3'te çalışan bir iyileştirici sınırlaması geçici performansını geri çalışmıştır `lower_bound(iter, iter, function pointer)`.
 - Hata ayıklama yineleyici yükü sipariş doğrulama girdi için kullanıcının `includes`, `set_difference`, `set_symmetric_difference`, ve `set_union` tarafından açma yineleyiciler sipariş denetlemeden önce azaltılmıştır.
-- `std::inplace_merge`Şimdi, zaten konumda öğelerini üzerinden atlar.
+- `std::inplace_merge` Şimdi, zaten konumda öğelerini üzerinden atlar.
 - Oluşturma `std::random_device` artık oluşturur ve ardından bozar bir `std::string`.
-- `std::equal`ve `std::partition` yineleyici karşılaştırma kaydedileceği bir atlama iş parçacığı oluşturma en iyi duruma getirme geçişi vardı.
+- `std::equal` ve `std::partition` yineleyici karşılaştırma kaydedileceği bir atlama iş parçacığı oluşturma en iyi duruma getirme geçişi vardı.
 - Zaman `std::reverse` işaretçileri trivially copyable geçirilen `T`, elle yazılmış bir vectorized uygulama artık dağıtacağı.
 - `std::fill`, `std::equal`, ve `std::lexicographical_compare` için gönderme nasıl öğrettin `memset` ve `memcmp` için `std::byte` ve `gsl::byte` (ve diğer char benzeri numaralandırmaları ve enum sınıfları). Unutmayın `std::copy` kullanarak gönderir `is_trivially_copyable` ve bu nedenle herhangi bir değişiklik ihtiyacım kalmadı.
 - Standart Kitaplığı artık türleri olmayan-trivially-destructible yapmak için yalnızca davranış olduğu boş küme ayraçları Yıkıcılar içerir.
 
 #### <a name="correctness-fixes-in-visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15,5 doğruluk giderir
 
-- `std::partition`Şimdi çağrıları koşulu N kez N yerine + 1 kez standart olarak gerektirir.
+- `std::partition` Şimdi çağrıları koşulu N kez N yerine + 1 kez standart olarak gerektirir.
 - Sürümünde 15.3 Sihirli istatistikleri önlemek için deneme sürümü 15,5 onarıldı.
-- `std::atomic<T>`artık gerektirmez `T` oluşturulabilir varsayılan olarak kullanılacak.
+- `std::atomic<T>` artık gerektirmez `T` oluşturulabilir varsayılan olarak kullanılacak.
 - Logaritmik artık zaman yığın algoritmaları hata ayıklama yineleyici etkinleştirildiğinde giriş aslında bir yığın olduğunu doğrusal zaman onaylama işlemi yapın.
-- `__declspec(allocator)`Şimdi bu declspec anlamıyor Clang gelen uyarıları önlemek yalnızca C1XX için korunur.
-- `basic_string::npos`derleme zamanı sabit değer olarak kullanıma sunulmuştur.
-- `std::allocator`diğer bir deyişle, hizalamasını düzgün aşırı hizalanmış türlerinin tanıtıcıları ayırma türleri artık C ++ 17 modunda değerinden daha büyük `max_align_t`tarafından devre dışı sürece **/Zc:alignedNew-**.  Örneğin, 16 veya 32 baytlık hizalama nesneleriyle vektörlerinin şimdi düzgün SSE ve AVX yönergeleri için hizalanır.
+- `__declspec(allocator)` Şimdi bu declspec anlamıyor Clang gelen uyarıları önlemek yalnızca C1XX için korunur.
+- `basic_string::npos` derleme zamanı sabit değer olarak kullanıma sunulmuştur.
+- `std::allocator` diğer bir deyişle, hizalamasını düzgün aşırı hizalanmış türlerinin tanıtıcıları ayırma türleri artık C ++ 17 modunda değerinden daha büyük `max_align_t`tarafından devre dışı sürece **/Zc:alignedNew-**.  Örneğin, 16 veya 32 baytlık hizalama nesneleriyle vektörlerinin şimdi düzgün SSE ve AVX yönergeleri için hizalanır.
 
 ## <a name="other-libraries"></a>Diğer kitaplıkları
 

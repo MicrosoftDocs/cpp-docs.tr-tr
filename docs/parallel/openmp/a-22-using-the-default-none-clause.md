@@ -1,27 +1,22 @@
 ---
-title: "Default(none) yan tümcesini kullanarak A.22 | Microsoft Docs"
-ms.custom: 
+title: Default(none) yan tümcesini kullanarak A.22 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-parallel
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: a3fa4e62-1e92-4896-ae3f-be268067d917
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a889866d214e6139cdb2b615e60002706c4e4972
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2a820bed14e5c529a1ccd6956aa7db98ca6469b5
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="a22---using-the-defaultnone-clause"></a>A.22   default(none) Yan Tümcesini Kullanma
 Aşağıdaki örnek etkilenir değişkenleri ayırt `default(none)` , from yan tümcesi:  

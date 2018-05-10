@@ -2,11 +2,8 @@
 title: directory_entry sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - filesystem/std::experimental::filesystem::directory_entry
@@ -27,10 +24,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 1827c67b-4137-4548-adb0-f955f7acaf08
-caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::experimental::filesystem::directory_entry
 - std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &
@@ -49,11 +44,11 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_entry::operator&gt;=
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba3dc5588cb035cb754ba43a6eeccb37b7ec0b79
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 9a55109683a18415638cacd9cd15dbcaa3164fc8
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="directoryentry-class"></a>directory_entry Sınıfı
 

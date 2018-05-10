@@ -2,9 +2,6 @@
 title: '&lt;allocators&gt; makroları | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - allocators/std::ALLOCATOR_DECL
@@ -13,19 +10,17 @@ f1_keywords:
 - allocators/std::CACHE_SUBALLOC
 - allocators/std::SYNC_DEFAULT
 ms.assetid: 9cb5ee07-1ff9-4594-ae32-3c8c6efb511a
-caps.latest.revision: 12
-manager: ghogen
 helpviewer_keywords:
 - std::ALLOCATOR_DECL [C++]
 - std::CACHE_CHUNKLIST [C++]
 - std::CACHE_FREELIST [C++]
 - std::CACHE_SUBALLOC [C++]
 - std::SYNC_DEFAULT [C++]
-ms.openlocfilehash: b06ede32746c13244db622788e7e9c6f7cbe4cc9
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: a24b854ac37dc0dfed44aec33fc1fb7e0bedcfc5
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltallocatorsgt-macros"></a>&lt;allocators&gt; makroları
 

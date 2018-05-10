@@ -1,13 +1,10 @@
 ---
 title: SafeSubtract | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SafeSubtract
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - SafeSubtract function
 ms.assetid: c2712ddc-173f-46a1-b09c-e7ebbd9e68b2
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5b94d84e6a348b68258fc1b57c2e0ad9ad30e36d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 300959fe64d280ff3e2c19fd579e8f447a2402eb
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="safesubtract"></a>SafeSubtract
 Taşma karşı koruyan bir şekilde iki sayının çıkarır.  
@@ -43,17 +38,17 @@ inline bool SafeSubtract (
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`t`  
+ [in] `t`  
  Çıkarma ilk sayısı. Bu t türünde olmalıdır  
   
- [in]`u`  
+ [in] `u`  
  Den çıkartılacak sayı `t`. Bu türü u olmalıdır  
   
- [out]`result`  
+ [out] `result`  
  Parametre nerede `SafeSubtract` sonucu depolar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true`herhangi bir hata oluşursa; `false` bir hata oluşursa.  
+ `true` herhangi bir hata oluşursa; `false` bir hata oluşursa.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu yöntem parçası olan [SafeInt Kitaplığı](../windows/safeint-library.md) ve bir örneğini oluşturmak zorunda kalmadan tek çıkarma işlemi için tasarlanmış [SafeInt sınıfı](../windows/safeint-class.md).  

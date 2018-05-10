@@ -1,12 +1,9 @@
 ---
-title: "AsyncBase::FireCompletion yöntemi | Microsoft Docs"
-ms.custom: 
+title: AsyncBase::FireCompletion yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - async/Microsoft::WRL::AsyncBase::FireCompletion
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - FireCompletion method
 ms.assetid: b5e29d6d-52e7-4148-a7f3-a313b1359819
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 49716e31148c119d5a8c9eca05b449cea75b405a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0cd18d340a11575ed9f6f52d92a5910dcee1faec
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="asyncbasefirecompletion-method"></a>AsyncBase::FireCompletion Yöntemi
 Tamamlama olay işleyiciyi çağırır veya iç ilerleme temsilci sıfırlar.  

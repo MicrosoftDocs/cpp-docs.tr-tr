@@ -1,31 +1,26 @@
 ---
-title: "geçersiz kılma (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: geçersiz kılma (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - overriding, override keyword [C++]
 - override keyword [C++]
 ms.assetid: 34d19257-1686-4fcd-96f5-af07c70ba914
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 88138001a9767bbe9752c1de0577910fca8bc914
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6818256aafc64702e5423a5560c251e6d46750fa
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="override--c-component-extensions"></a>geçersiz kılma (C++ Bileşen Uzantıları)
 `override` Bağlama duyarlı anahtar sözcüğü bir türünün bir üyesi bir taban sınıf veya temel arabirim üye kıldığını gösterir.  

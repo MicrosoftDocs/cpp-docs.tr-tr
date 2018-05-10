@@ -2,9 +2,6 @@
 title: '&lt;Mutex&gt; işlevleri ve değişkenler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - mutex/std::adopt_lock
@@ -13,19 +10,17 @@ f1_keywords:
 - mutex/std::lock
 - mutex/std::try_to_lock
 ms.assetid: 78ab3c8b-c7db-4226-ac93-e2e78ff8b964
-caps.latest.revision: 11
-manager: ghogen
 helpviewer_keywords:
 - std::adopt_lock [C++]
 - std::call_once [C++]
 - std::defer_lock [C++]
 - std::lock [C++]
 - std::try_to_lock [C++]
-ms.openlocfilehash: f6cf80686c3f0b225f7611ef5dbab69511a69c85
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 85ed95250b5563cd8a7c1ef9cfc0ee048cb3bc60
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltmutexgt-functions-and-variables"></a>&lt;Mutex&gt; işlevleri ve değişkenler
 

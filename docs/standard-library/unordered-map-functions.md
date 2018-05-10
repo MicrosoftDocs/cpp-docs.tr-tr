@@ -2,9 +2,6 @@
 title: '&lt;unordered_map&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - unordered_map/std::swap
@@ -13,19 +10,17 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: cf2e4115-f205-4a0e-90be-a143ffcc1f44
-caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::swap (unordered_map/multimap)
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d13ec616d7df9552492ad473f37825b2305bc853
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 665bdfd08fffdfcb662c175b9af44b8e9ed42a1a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltunorderedmapgt-functions"></a>&lt;unordered_map&gt; işlevleri
 

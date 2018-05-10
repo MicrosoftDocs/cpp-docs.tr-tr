@@ -1,12 +1,9 @@
 ---
-title: "Pragma yönergeleri ve __Pragma anahtar sözcüğü | Microsoft Docs"
-ms.custom: 
+title: Pragma yönergeleri ve __Pragma anahtar sözcüğü | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - '#pragma'
@@ -22,17 +19,15 @@ helpviewer_keywords:
 - preprocessor, pragmas
 - pragma directives (#pragma)
 ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ccc6ab8fe90b8b97dee213d65e19eb903249da6
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: b20a476e1701f58782b97f986ee6c3d4b310b566
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="pragma-directives-and-the-pragma-keyword"></a>Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü
 Pragma yönergeleri makine veya işletim özgü derleyicisi özelliklerini belirtin. `__pragma` Microsoft derleyici özel anahtar sözcüğü makrosu tanımları içindeki kod pragma yönergeleri için sağlar.  
@@ -60,7 +55,7 @@ __pragma(token-string)
 |-|-|-|  
 |[alloc_text](../preprocessor/alloc-text.md)|[auto_inline](../preprocessor/auto-inline.md)|[bss_seg](../preprocessor/bss-seg.md)|  
 |[check_stack](../preprocessor/check-stack.md)|[code_seg](../preprocessor/code-seg.md)|[Açıklama](../preprocessor/comment-c-cpp.md)|  
-|[component](../preprocessor/component.md)|[conform](../preprocessor/conform.md) <sup>1</sup>|[const_seg](../preprocessor/const-seg.md)|  
+|[component](../preprocessor/component.md)|[uygun](../preprocessor/conform.md) <sup>1</sup>|[const_seg](../preprocessor/const-seg.md)|  
 |[data_seg](../preprocessor/data-seg.md)|[deprecated](../preprocessor/deprecated-c-cpp.md)|[detect_mismatch](../preprocessor/detect-mismatch.md)|  
 |[fenv_access](../preprocessor/fenv-access.md)|[float_control](../preprocessor/float-control.md)|[fp_contract](../preprocessor/fp-contract.md)|  
 |[İşlevi](../preprocessor/function-c-cpp.md)|[hdrstop](../preprocessor/hdrstop.md)|[include_alias](../preprocessor/include-alias.md)|  
@@ -91,7 +86,7 @@ cl /Zp8 ...
 ```  
   
 ## <a name="the-pragma-keyword"></a>__Pragma() anahtar sözcüğü  
- **Microsoft specific**  
+ **Belirli Microsoft**  
   
  Ayrıca, derleyicinin destekler `__pragma` aynı işlevselliğe sahip anahtar sözcüğü olarak `#pragma` yönergesi, ancak kullanılan satır bir makro tanımı içinde olabilir. `#pragma` Yönergesi çünkü derleyici numara işareti karakteri ('#') olmasını yönergesinde yorumlar makrosu tanımında kullanılamaz [dizeleyen işleç (#)](../preprocessor/stringizing-operator-hash.md).  
   

@@ -1,29 +1,24 @@
 ---
-title: "Önişlemci | Microsoft Docs"
-ms.custom: 
+title: Önişlemci | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - preprocessor
 ms.assetid: e120eda3-b413-49f1-a07c-e9fb128cf500
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75caab67343e7806e1dd97fb673114949c68a94c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 3bb5a9740bab3f69ff66a51cd58e6e1378e178f0
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="preprocessor"></a>Ön işlemci
 Ön İşlemci kaynak dosyası metnin ilk çeviri aşaması bir parçası olarak işleyen bir metin işlemcisi ' dir. Önişlemci kaynak metni ayrıştırma değil, ancak bunu onu makrosu çağrıları bulma amacıyla belirteçler içine bölün. Derleyici normalde ilk seferde önişlemci çağırır rağmen önişlemci ayrıca ayrı ayrı derleme olmadan metin işlemek için çağrılabilir.  
@@ -38,7 +33,7 @@ ms.lasthandoff: 02/23/2018
   
 -   [Pragmalar](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Kullanarak ön işleme sonra kaynak kodunuzu listesini elde edebilirsiniz [/E](../build/reference/e-preprocess-to-stdout.md) veya [/EP](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) derleyici seçeneği. Her iki seçenek önişlemci çağırma ve sonuçta elde edilen metin olan, çoğu durumda, konsol standart çıktı aygıtına çıktı. /E içerdiğini farktır iki seçenekten `#line` yönergeleri ve /EP bu yönergeleri çıkışı kaldırır.  
   

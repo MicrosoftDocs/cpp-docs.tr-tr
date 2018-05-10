@@ -1,30 +1,25 @@
 ---
-title: "Roınitializewrapper sınıfı | Microsoft Docs"
-ms.custom: 
+title: Roınitializewrapper sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper
 dev_langs:
 - C++
 ms.assetid: 4055fbe0-63a7-4c06-b5a0-414fda5640e5
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5f6330c78a6bbac5f14e94c253f05515e3d29575
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4a4479686d3ca591a9fdd1c0659549a2e0db6e1c
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="roinitializewrapper-class"></a>RoInitializeWrapper Sınıfı
 Windows çalışma zamanı başlatır.  

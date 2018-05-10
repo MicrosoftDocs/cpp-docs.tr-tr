@@ -1,12 +1,9 @@
 ---
-title: "accelerator_view sınıfı | Microsoft Docs"
-ms.custom: 
+title: accelerator_view sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-amp
 ms.topic: reference
 f1_keywords:
 - accelerator_view
@@ -30,17 +27,15 @@ dev_langs:
 helpviewer_keywords:
 - accelerator_view class
 ms.assetid: 9f298c21-bf62-46e0-88b8-01c5c78ef144
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5160e0fa37ed8c1c40a3cdfd6ca63d3b76e2d980
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 1aa0e365ac531a5e1bb7b87a38fc86fb20032d20
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="acceleratorview-class"></a>accelerator_view Sınıfı
 C++ AMP verileri paralel Hızlandırıcı üzerinde bir sanal cihaz soyutlama temsil eder.  
@@ -57,8 +52,8 @@ class accelerator_view;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[accelerator_view Constructor](#ctor)|Yeni bir örneğini başlatır `accelerator_view` sınıfı.|  
-|[~accelerator_view Destructor](#dtor)|Bozar `accelerator_view` nesnesi.|  
+|[accelerator_view Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `accelerator_view` sınıfı.|  
+|[~ accelerator_view yok Edicisi](#dtor)|Bozar `accelerator_view` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -85,11 +80,11 @@ class accelerator_view;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[accelerator](#accelerator)|Alır `accelerator` için nesne `accelerator_view` nesne.|  
+|[Hızlandırıcı](#accelerator)|Alır `accelerator` için nesne `accelerator_view` nesne.|  
 |[is_auto_selection](#is_auto_selection)|Çalışma zamanı uygun Hızlandırıcı otomatik olarak seçer olup olmadığını gösteren bir Boole değeri alır, `accelerator_view` nesne geçirilen bir [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).|  
 |[is_debug](#is_debug)|Gösteren bir Boole değeri alır olup olmadığını `accelerator_view` nesnenin kapsamlı hata bildirimi için etkin hata ayıklama katman vardır.|  
 |[queuing_mode](#queuing_mode)|Sıraya alma modunu alır `accelerator_view` nesnesi.|  
-|[version](#version)|Hızlandırıcı sürümünü alır.|  
+|[Sürüm](#version)|Hızlandırıcı sürümünü alır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `accelerator_view`  
@@ -143,7 +138,7 @@ concurrency::completion_future create_marker();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tamamlandığında şu ana kadar bu için gönderilen tüm komutlar, izlemek için gelecek `accelerator_view` nesnesi.  
   
-## <a name="flush">Temizleme</a> 
+## <a name="flush"></a> Temizleme 
 
 Tüm bekleyen komutları yürütme için Hızlandırıcı accelerator_view nesnesine kuyruğa alınan gönderir.  
   
@@ -309,7 +304,7 @@ Accelerator_view sürümünü alır.
 __declspec(property(get= get_version)) unsigned int version;  
 ```  
   
-## <a name="accelerator_view__wait">bekleme</a> 
+## <a name="accelerator_view__wait"></a> bekleme 
 
 Tamamlanması accelerator_view nesnesine gönderilen tüm komutlar için bekler.  
   

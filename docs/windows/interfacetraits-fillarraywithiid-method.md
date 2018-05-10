@@ -1,12 +1,9 @@
 ---
-title: "Interfacetraits::fillarraywithıid yöntemi | Microsoft Docs"
-ms.custom: 
+title: Interfacetraits::fillarraywithıid yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::InterfaceTraits::FillArrayWithIid
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - FillArrayWithIid method
 ms.assetid: 73583177-adc9-4fcb-917d-fa7e6d07c990
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c626955e957bd3db4b4d34255a38751f3339dcf9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e6e32b2e40ba9dc2b8085f8edc99beb899e90ace
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="interfacetraitsfillarraywithiid-method"></a>InterfaceTraits::FillArrayWithIid Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  

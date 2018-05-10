@@ -1,30 +1,25 @@
 ---
-title: "Unicode Programlama Özeti | Microsoft Docs"
-ms.custom: 
+title: Unicode Programlama Özeti | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Unicode [C++], programming with
 - Unicode [C++], MFC and C run-time functions
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03ee8a4032b054eb670de160aea9ec54dcf80f4d
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: 2a378d46c517dfc0fbb5857ad54bc31f4c34287b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="unicode-programming-summary"></a>Unicode Programlama Özeti
 MFC ve C çalışma zamanı Unicode desteği yararlanmak için aktarmanız gerekir:  
@@ -90,13 +85,13 @@ MFC ve C çalışma zamanı Unicode desteği yararlanmak için aktarmanız gerek
     pDC->TextOut( str, str.GetLength( ) );  
     ```  
   
-     `CDC::TextOut`karakter, sayı olmayan bayt sayısını alır.  
+     `CDC::TextOut` karakter, sayı olmayan bayt sayısını alır.  
   
 -   Kullanım [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md) Unicode dosyalarını açmak için.  
   
  Özetlemek için Unicode programlama için aşağıdaki Destek MFC ve çalışma zamanı kitaplığı sağlar:  
   
--   Unicode etkin dahil olmak üzere, veritabanı sınıf üyesi işlevleri dışında tüm MFC işlevleri `CString`. `CString`Ayrıca Unicode/ANSI dönüştürme işlevleri sağlar.  
+-   Unicode etkin dahil olmak üzere, veritabanı sınıf üyesi işlevleri dışında tüm MFC işlevleri `CString`. `CString` Ayrıca Unicode/ANSI dönüştürme işlevleri sağlar.  
   
 -   Çalışma Zamanı Kitaplığı Unicode sürümleri tüm dize işleme işlevleri sağlar. (Çalışma zamanı kitaplığı da uygun taşınabilir sürümler Unicode veya MBCS sağlar. Bunlar **_tcs** makroları.)  
   

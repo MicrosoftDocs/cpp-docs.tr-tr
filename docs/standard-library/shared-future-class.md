@@ -2,11 +2,8 @@
 title: shared_future sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - future/std::shared_future
@@ -19,10 +16,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 454ebedd-f42b-405f-99a5-a25cc9ad7c90
-caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::shared_future [C++]
 - std::shared_future [C++], shared_future
@@ -33,11 +28,11 @@ helpviewer_keywords:
 - std::shared_future [C++], wait_until
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f022d48dcd5cbc8afa1b9d3100cd27c2ad12175
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 2ac125b068de5111a2b98800956c12a0c979737f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="sharedfuture-class"></a>shared_future Sınıfı
 

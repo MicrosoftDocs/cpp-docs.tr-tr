@@ -2,11 +2,8 @@
 title: recursive_timed_mutex sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - mutex/std::recursive_timed_mutex
@@ -19,10 +16,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 59cc2d5c-ed80-45f3-a0a8-05652a8ead7e
-caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::recursive_timed_mutex [C++]
 - std::recursive_timed_mutex [C++], recursive_timed_mutex
@@ -33,11 +28,11 @@ helpviewer_keywords:
 - std::recursive_timed_mutex [C++], unlock
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a658ad664c61e8751e5122d98e28b4ca9085ae20
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 9b4a87cadedb11368d7803231b96d0f7a5acfb99
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="recursivetimedmutex-class"></a>recursive_timed_mutex Sınıfı
 

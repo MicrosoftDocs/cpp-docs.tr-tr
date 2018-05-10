@@ -1,13 +1,10 @@
 ---
-title: "Birden çok dizenin resim yazısı özelliğini değiştirme | Microsoft Docs"
-ms.custom: 
+title: Birden çok dizenin resim yazısı özelliğini değiştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - string editing, string tables
 - string tables, changing caption of multiple strings
 ms.assetid: 82ac4389-fd9c-4794-a18f-c6bf5b253bd7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 09793ca8cf953742d280dd87f2d391dc3419a101
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2d97cc278841f8b25636622bcb5fdc9a03a42751
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="changing-the-caption-property-of-multiple-strings"></a>Birden Çok Dizenin Resim Yazısı Özelliğini Değiştirme
 Aşağıdaki yordamı birden çok dizenin resim yazısı özelliğinin nasıl değiştirileceğini gösterir.  

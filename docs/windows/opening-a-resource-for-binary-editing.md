@@ -1,13 +1,10 @@
 ---
-title: "Bir kaynağı ikili düzenleme için açma | Microsoft Docs"
-ms.custom: 
+title: Bir kaynağı ikili düzenleme için açma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.binary
 dev_langs:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - binary data, editing
 - resources [Visual Studio], opening for binary editing
 ms.assetid: d3cdb0e4-da66-410d-8e49-b29073ff2929
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 92a0c0459626f139b7a8d7ae2313439c66d2a11c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c09cd825a5974422eaf757419f4ce890f5123100
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="opening-a-resource-for-binary-editing"></a>Kaynağı İkili Düzenleme İçin Açma
 ### <a name="to-open-a-windows-desktop-resource-for-binary-editing"></a>İkili düzenleme için bir Windows Masaüstü kaynak açmak için  

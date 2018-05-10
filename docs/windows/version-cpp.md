@@ -1,13 +1,10 @@
 ---
-title: "Sürüm (C++) | Microsoft Docs"
-ms.custom: 
+title: Sürüm (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.version
 dev_langs:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - version attribute
 - version information, version attribute
 ms.assetid: db6ce5d8-82c2-4329-b1a8-8ca2f67342cb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: db6c31df932890799f68e2ae466b0a927f0f999f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 43da63d75d3541915eba3e561ee08fe1048fa579
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="version-c"></a>sürüm (C++)
 Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımlar.  
@@ -57,7 +52,7 @@ Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımla
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**,`struct`|  
+|**Uygulandığı öğe:**|**sınıf**, `struct`|  
 |**Yinelenebilir**|Hayır|  
 |**Gerekli öznitelikler**|**coclass**|  
 |**Geçersiz öznitelikler**|Yok.|  

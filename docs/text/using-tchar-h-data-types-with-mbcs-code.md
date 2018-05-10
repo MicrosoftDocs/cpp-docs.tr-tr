@@ -1,13 +1,10 @@
 ---
-title: "TCHAR kullanma. _MBCS Kodu ile H veri türleri | Microsoft Docs"
-ms.custom: 
+title: TCHAR kullanma. _MBCS Kodu ile H veri türleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - tchar.h
 - TCHAR
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28255b2e47c48b89b0bd6aea044fe0c15c1f2a08
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: e80ecd123e3fc47705563156e33f46ecd99a0321
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="using-tcharh-data-types-with-mbcs-code"></a>_MBCS Kodu ile TCHAR.H Veri Türlerini Kullanma
 Zaman Bildirim sabiti **_MBCS** olan tanımlı, belirli bir genel metin yordamı yordamları şu tür birine eşler:  
@@ -48,7 +43,7 @@ Zaman Bildirim sabiti **_MBCS** olan tanımlı, belirli bir genel metin yordamı
     char * _tcsrev(char *);  
     ```  
   
-     Varsayılan durumda, prototipi `_tcsrev` eşlendiği `_mbsrev` aracılığıyla Libc.lib içinde bir dönüştürücü. Bu tür değiştirir `_mbsrev` gelen parametrelerini ve giden dönüş değerini **_TCHAR \***  (diğer bir deyişle, `char`  **\*** ) için `unsigned` `char` **\***. Bu yöntemi kullanırken eşleşen tür sağlar **_TCHAR**, ancak işlev çağırma yükünden nedeniyle nispeten daha yavaştır.  
+     Varsayılan durumda, prototipi `_tcsrev` eşlendiği `_mbsrev` aracılığıyla Libc.lib içinde bir dönüştürücü. Bu tür değiştirir `_mbsrev` gelen parametrelerini ve giden dönüş değerini **_TCHAR \***  (diğer bir deyişle, `char` **\***) için `unsigned` `char` **\***. Bu yöntemi kullanırken eşleşen tür sağlar **_TCHAR**, ancak işlev çağırma yükünden nedeniyle nispeten daha yavaştır.  
   
 -   İşlev satır içi kullanım kodunuzda aşağıdaki önişlemci deyimi kullanın.  
   

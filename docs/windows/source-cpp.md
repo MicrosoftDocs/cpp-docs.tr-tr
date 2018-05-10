@@ -1,13 +1,10 @@
 ---
 title: Kaynak (C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.source
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - source attribute
 ms.assetid: 1878d05d-7709-4e97-b114-c62f38f5140e
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f4bfc79a76ece278c62b4895cdeb2e10d6df42aa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 11ee58fb2d500a7194fb08ee18b1af5cc7897830
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="source-c"></a>kaynak (C++)
 Bir sınıf üzerinde bağlantı noktaları için COM nesnesinin kaynak arabirimleri belirtir. Özellik veya yöntem üye nesne veya olay kaynağı değişken döndürdüğünü gösterir.  
@@ -89,7 +84,7 @@ class NN : public b
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`,`interface`|  
+|**Uygulandığı öğe:**|**sınıf**, `struct`, `interface`|  
 |**Yinelenebilir**|Hayır|  
 |**Gerekli öznitelikler**|**coclass'ı** (sınıfta veya yapı uygulandığında)|  
 |**Geçersiz öznitelikler**|Yok.|  

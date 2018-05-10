@@ -2,11 +2,8 @@
 title: initializer_list sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - initializer_list/std::initializer_list::initializer_list
@@ -16,10 +13,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 1f2c0ff4-5636-4f79-b008-e75426e3d2ab
-caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::initializer_list::initializer_list
 - std::initializer_list::begin
@@ -27,11 +22,11 @@ helpviewer_keywords:
 - std::initializer_list::size
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ec1af899892b52e09b7436339a5a4acd09cab01
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: a3941464c80d254b6675e1982dac952c3f29a0f9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="initializerlist-class"></a>initializer_list sınıfı
 

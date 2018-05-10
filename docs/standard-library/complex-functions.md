@@ -2,9 +2,6 @@
 title: '&lt;karmaşık&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - xcomplex/std::abs
@@ -28,8 +25,6 @@ f1_keywords:
 - xcomplex/std::tan
 - xcomplex/std::tanh
 ms.assetid: 58b14e94-0e0c-493e-8237-8b4d685904a2
-caps.latest.revision: 14
-manager: ghogen
 helpviewer_keywords:
 - std::abs [C++]
 - std::arg [C++]
@@ -49,11 +44,11 @@ helpviewer_keywords:
 - std::sqrt [C++]
 - std::tan [C++]
 - std::tanh [C++]
-ms.openlocfilehash: 5e511028547e12aed8f1b3877dc943e671c3fc68
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 040104eeb43ccfe6225821b7318346bc1fe60f92
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltcomplexgt-functions"></a>&lt;karmaşık&gt; işlevleri
 

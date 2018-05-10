@@ -1,31 +1,26 @@
 ---
-title: "İzlenecek yol: Oluşturma ve bir statik kitaplık (C++) kullanılarak | Microsoft Docs"
-ms.custom: 
+title: 'İzlenecek yol: Oluşturma ve bir statik kitaplık (C++) kullanılarak | Microsoft Docs'
+ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - libraries [C++], static
 - static libraries [C++]
 ms.assetid: 3cc36411-7d66-4240-851e-dacb9a8fd6ac
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3af6bc41d353f82bb1f95c73f079e530da19dba0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d136dae553f623cbd607a69ab710fa9c6fe6c91b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="walkthrough-creating-and-using-a-static-library-c"></a>İzlenecek yol: Statik Kitaplık Oluşturma ve Kullanma (C++)
 Bu adım adım, C++ uygulamaları ile kullanmak için bir statik kitaplık (.lib dosyası) oluşturulacağını gösterir. Statik bir kitaplık kullanılarak kodunu yeniden için harika bir yoludur. Aynı yordamlar işlevselliği gerektiren her uygulama, yeniden uygulamak, yerine bunları bir kez statik kitaplığa yazar ve uygulamalardan başvuru. Statik bir kitaplıktan bağlı kodunu uygulamanızı bir parçası olur — kodu kullanmak için başka bir dosyaya yüklemeniz gerekmez.  
@@ -45,13 +40,13 @@ Bu adım adım, C++ uygulamaları ile kullanmak için bir statik kitaplık (.lib
 ## <a name="prerequisites"></a>Önkoşullar  
  C++ dil temelleri anlayış.  
   
-##  <a name="BKMK_CreateLibProject"></a>Bir statik kitaplık projesi oluşturma  
+##  <a name="BKMK_CreateLibProject"></a> Bir statik kitaplık projesi oluşturma  
   
 #### <a name="to-create-a-static-library-project"></a>Bir statik kitaplık projesi oluşturmak için  
   
 1.  Menü çubuğunda seçin **dosya**, **yeni**, **proje**.  
   
-2.  Sol bölmesinde **yeni proje** iletişim kutusunda, genişletin **yüklü**, **şablonları**, **Visual C++**ve ardından  **Win32**.  
+2.  Sol bölmesinde **yeni proje** iletişim kutusunda, genişletin **yüklü**, **şablonları**, **Visual C++** ve ardından  **Win32**.  
   
 3.  Orta bölmede seçin **Win32 konsol uygulaması**.  
   
@@ -65,17 +60,17 @@ Bu adım adım, C++ uygulamaları ile kullanmak için bir statik kitaplık (.lib
   
 8.  Seçin **son** projesi oluşturmak için düğmesi.  
   
-##  <a name="BKMK_AddClassToLib"></a>Statik kitaplığa sınıf ekleme  
+##  <a name="BKMK_AddClassToLib"></a> Statik kitaplığa sınıf ekleme  
   
 #### <a name="to-add-a-class-to-the-static-library"></a>Bir sınıf statik kitaplığa eklemek için  
   
-1.  Yeni bir sınıf için bir üstbilgi dosyası oluşturmak için kısayol menüsünü açın **MathFuncsLib** proje **Çözüm Gezgini**ve ardından **Ekle**, **yeni öğe** . İçinde **Yeni Öğe Ekle** iletişim kutusunda, sol bölmede altında **Visual C++**seçin **kod**. Orta bölmede seçin **üstbilgi dosyası (.h)**. Üstbilgi dosyası için bir ad belirtin — örneğin, **MathFuncsLib.h**— ve ardından **Ekle** düğmesi. Boş üstbilgi dosyası görüntülenir.  
+1.  Yeni bir sınıf için bir üstbilgi dosyası oluşturmak için kısayol menüsünü açın **MathFuncsLib** proje **Çözüm Gezgini**ve ardından **Ekle**, **yeni öğe** . İçinde **Yeni Öğe Ekle** iletişim kutusunda, sol bölmede altında **Visual C++** seçin **kod**. Orta bölmede seçin **üstbilgi dosyası (.h)**. Üstbilgi dosyası için bir ad belirtin — örneğin, **MathFuncsLib.h**— ve ardından **Ekle** düğmesi. Boş üstbilgi dosyası görüntülenir.  
   
 2.  Adlı bir sınıf ekleyin **MyMathFuncs** toplama ve çıkarma, çarpma ve bölme gibi ortak matematiksel işlemleri yapmak için. Kod şuna benzemelidir:  
   
      [!code-cpp[NVC_Walkthrough_Create_Static_Lib#100](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_1.h)]  
   
-3.  Yeni sınıf için bir kaynak dosyası oluşturmak için kısayol menüsünü açın **MathFuncsLib** proje **Çözüm Gezgini**ve ardından **Ekle**, **yeni öğe** . İçinde **Yeni Öğe Ekle** iletişim kutusunda, sol bölmede altında **Visual C++**seçin **kod**. Orta bölmede seçin **C++ dosyasına (.cpp)**. Kaynak dosya için bir ad belirtin — örneğin, **MathFuncsLib.cpp**— ve ardından **Ekle** düğmesi. Boş kaynak dosyası görüntülenir.  
+3.  Yeni sınıf için bir kaynak dosyası oluşturmak için kısayol menüsünü açın **MathFuncsLib** proje **Çözüm Gezgini**ve ardından **Ekle**, **yeni öğe** . İçinde **Yeni Öğe Ekle** iletişim kutusunda, sol bölmede altında **Visual C++** seçin **kod**. Orta bölmede seçin **C++ dosyasına (.cpp)**. Kaynak dosya için bir ad belirtin — örneğin, **MathFuncsLib.cpp**— ve ardından **Ekle** düğmesi. Boş kaynak dosyası görüntülenir.  
   
 4.  İşlemin işlevselliği uygulamak için bu kaynak dosyasını kullanın **MyMathFuncs**. Kod şuna benzemelidir:  
   
@@ -86,13 +81,13 @@ Bu adım adım, C++ uygulamaları ile kullanmak için bir statik kitaplık (.lib
     > [!NOTE]
     >  Visual Studio komut satırında yapılandırdığınızda, programın iki adımda yapılandırmanız gerekir. Öncelikle çalıştırın **cl /c /EHsc MathFuncsLib.cpp** Kodu derlemek ve adlı bir nesne dosyası oluşturmak için **MathFuncsLib.obj**. ( **Cl** komutu çalıştırır Cl.exe, derleyici ve **/c** seçeneği bağlantılandırmadan derleme belirtir. Daha fazla bilgi için bkz: [/c (derleme olmadan bağlama)](../build/reference/c-compile-without-linking.md).) İkinci olarak, çalıştırmak **MathFuncsLib.obj lib** kodu bağlayın ve statik kitaplık oluşturma için **MathFuncsLib.lib**. ( **Lib** komutu Kitaplığı Yöneticisi ' ni Lib.exe çağırır. Daha fazla bilgi için bkz: [LIB başvurusu](../build/reference/lib-reference.md).)  
   
-##  <a name="BKMK_CreateAppToRefTheLib"></a>Statik kitaplık başvuran bir C++ konsol uygulaması oluşturma  
+##  <a name="BKMK_CreateAppToRefTheLib"></a> Statik kitaplık başvuran bir C++ konsol uygulaması oluşturma  
   
 #### <a name="to-create-a-c-console-app-that-references-the-static-library"></a>Statik kitaplık başvuruda bulunan bir C++ konsol uygulaması oluşturmak için  
   
 1.  Menü çubuğunda seçin **dosya**, **yeni**, **proje**.  
   
-2.  Sol bölmede altında **Visual C++**seçin **Win32**.  
+2.  Sol bölmede altında **Visual C++** seçin **Win32**.  
   
 3.  Orta bölmede seçin **Win32 konsol uygulaması**.  
   
@@ -106,7 +101,7 @@ Bu adım adım, C++ uygulamaları ile kullanmak için bir statik kitaplık (.lib
   
 8.  Seçin **son** projesi oluşturmak için düğmesi.  
   
-##  <a name="BKMK_UseLibInApp"></a>Uygulamasında statik kitaplığından işlevlerini kullanma  
+##  <a name="BKMK_UseLibInApp"></a> Uygulamasında statik kitaplığından işlevlerini kullanma  
   
 #### <a name="to-use-the-functionality-from-the-static-library-in-the-app"></a>Uygulamanın statik kitaplığa işlevselliği kullanmak için  
   
@@ -126,7 +121,7 @@ Bu adım adım, C++ uygulamaları ile kullanmak için bir statik kitaplık (.lib
   
 6.  Yürütülebilir dosya seçerek yapı **yapı**, **yapı çözümü** menü çubuğunda.  
   
-##  <a name="BKMK_RunApp"></a>Uygulamayı çalıştırma  
+##  <a name="BKMK_RunApp"></a> Uygulamayı çalıştırma  
   
 #### <a name="to-run-the-app"></a>Uygulamayı çalıştırmak için  
   

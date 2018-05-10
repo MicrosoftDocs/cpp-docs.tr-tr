@@ -1,13 +1,10 @@
 ---
-title: "Belge görünüm mimarisinin bir özeti | Microsoft Docs"
-ms.custom: 
+title: Belge görünüm mimarisinin bir özeti | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-mfc
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -23,17 +20,15 @@ helpviewer_keywords:
 - document/view architecture [MFC], about document/view architecture
 - views [MFC], accessing document data from
 ms.assetid: 4e7f65dc-b166-45d8-bcd5-9bb0d399b946
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ceadc55945a31e4787287beb6943897784aeaad
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d366cf7c9aee6988d715edbe30e3938c30557e2a
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="a-portrait-of-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Bir Özeti
 Belgeler ve görünümler tipik bir MFC uygulamasında eşleştirilmelidir. Veri belgesinde depolanır, ancak görünümü ayrıcalıklı veri erişimi. Belge ayrımı görünümünden depolama ve veri Bakımı kendi görüntüden ayırır.  

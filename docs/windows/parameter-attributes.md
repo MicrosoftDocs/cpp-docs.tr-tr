@@ -1,31 +1,26 @@
 ---
-title: "Parametre öznitelikleri | Microsoft Docs"
-ms.custom: 
+title: Parametre öznitelikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - attributes [C++], parameter attributes
 - parameter attributes
 ms.assetid: 024c2dd5-49d7-4ced-a17a-c56c1bc485b6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e9856cec61b48c8cdfaf6b4e9acfe8137d8edae0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d2bd1f0d395375b09a192a68c8a60ea3a367115c
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="parameter-attributes"></a>Parametre Öznitelikleri
 Bir sınıf veya arabirim yönteminin parametreleri aşağıdaki özniteliklere uygulanır.  
@@ -49,7 +44,7 @@ Bir sınıf veya arabirim yönteminin parametreleri aşağıdaki özniteliklere 
 |[retval](../windows/retval.md)|Üye dönüş değerini parametre belirler.|  
 |[satype](../windows/satype.md)|Veri türünü belirtir **SAFEARRAY** yapısı.|  
 |[size_is](../windows/size-is.md)|Bellek boyutu boyutlu işaretçileri ayrılmış, boyutlu işaretçiler ve tek veya çok boyutlu diziler işaretçileri boyutta belirtir.|  
-|[benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
+|[Benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)

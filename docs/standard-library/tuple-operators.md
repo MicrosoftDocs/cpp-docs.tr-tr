@@ -2,9 +2,6 @@
 title: '&lt;Tuple&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - tuple/std::operator!=
@@ -16,13 +13,11 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
-caps.latest.revision: 13
-manager: ghogen
-ms.openlocfilehash: 9d91a6ed627eb7aa9f0cc26d05cfc62b660a8fe2
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: c3e5c1e82e98379ff2cefae48f8af89f8fc0b698
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="lttuplegt-operators"></a>&lt;Tuple&gt; işleçleri
 

@@ -1,27 +1,22 @@
 ---
-title: "Visual C++ taşıma ve yükseltme Kılavuzu | Microsoft Docs"
-ms.custom: 
+title: Visual C++ taşıma ve yükseltme Kılavuzu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d5751899dc064da4b17e240411878187a80acbdc
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: 084c689ad7720e36670130d552522aa2f593218e
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ taşıma ve yükseltme Kılavuzu
 Bu konu, Visual C++ kodu yükseltmek için bir kılavuz sağlar. Bu yeni dil ve Visual Studio özellikleri yararlanarak yanı sıra derlemek ve üzerinde daha yeni bir sürüm Araçları'nın düzgün çalışması için kodu alma içerir. Bu konu ayrıca daha modern platformlara geçirme eski uygulamalar hakkında bilgiler içerir.  

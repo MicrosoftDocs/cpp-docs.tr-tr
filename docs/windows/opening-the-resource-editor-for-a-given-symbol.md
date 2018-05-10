@@ -1,13 +1,10 @@
 ---
-title: "Belirli bir sembol için kaynak Düzenleyicisini açma | Microsoft Docs"
-ms.custom: 
+title: Belirli bir sembol için kaynak Düzenleyicisini açma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.symbol.resource
 dev_langs:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - View Use button
 - resource editors, resource symbols
 ms.assetid: f715807b-5af2-4627-be25-be63b23fd097
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6b2d8da5a03289d65dd00d280d6fc3ef3f13b038
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2fc4b0940e1932d1ae55280ce59f8219fd6017a7
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="opening-the-resource-editor-for-a-given-symbol"></a>Belirli Bir Sembol İçin Kaynak Düzenleyicisini Açma
 Ne zaman gözatarken sembolleri [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md), belirli bir sembolle nasıl kullanıldığı hakkında daha fazla bilgi isteyebilirsiniz. **Görünüm kullanım** düğmesi, bu bilgileri almak için hızlı bir yol sağlar.  

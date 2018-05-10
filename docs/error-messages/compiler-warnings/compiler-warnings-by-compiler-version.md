@@ -1,13 +1,10 @@
 ---
-title: "Derleyici Uyarısı derleyici sürümüne göre | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı derleyici sürümüne göre | Microsoft Docs
+ms.custom: ''
 ms.date: 01/31/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-cpp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: error-reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,14 +12,13 @@ helpviewer_keywords:
 - cl.exe compiler, setting warning options
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f6ee65b1001f0cf651fcbbd68170484cd134aa4
-ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.openlocfilehash: 789121e3adb42cb74087339bb33bb82cb7604a10
+ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları
 
@@ -234,7 +230,7 @@ Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kul
 |||
 |-|-|
 C4330|öznitelik '*özniteliği*'için bölüm'*bölüm*' yoksayıldı
-C4415|duplicate __declspec(code_seg('*name*'))
+C4415|Yinelenen __declspec (code_seg ('*adı*'))
 C4416|__declspec(code_seg(...)) boş dize içeriyor: yoksayıldı
 C4417|bir açık şablonu örneklemesi __declspec(code_seg(...)) olamaz: yoksayıldı
 C4418|bir enum göz ardı __declspec(code_seg(...))
@@ -258,7 +254,7 @@ C4492|'*türü*': eşleşmeleri temel ref sınıf yöntemi '*türü*', 'override
 C4493|DELETE ifadesi hiçbir etkisi yıkıcısı '*türü*' 'genel' erişilebilirlik yok
 C4585|'*türü*': A 'ortak ref class' ya da korumalı olmalıdır veya mevcut bir türetilen WinRT korumasız sınıfı
 C4586|'*türü*': 'Windows' adlı üst düzey bir ad alanında bir ortak türü bildirilemez
-C4695|#pragma execution_character_set: '*argument*' is not a supported argument: currently only 'UTF-8' is supported
+C4695|#pragma execution_character_set: '*bağımsız değişkeni*' desteklenen bir bağımsız değişken değil: şu anda yalnızca 'UTF-8' desteklenir
 C4703|Potansiyel olarak başlatılmamış yerel işaretçi değişkeninin '*adı*' kullanılan
 C4728|/ Yl-PCH başvurusu gerekli olduğundan yoksayıldı seçeneği
 C4745|volatile erişimini '*adı*' boyutuna nedeniyle kabul edilemez

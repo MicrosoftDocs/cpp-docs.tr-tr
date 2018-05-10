@@ -2,9 +2,6 @@
 title: '&lt;dizi&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - array/std::array::get
@@ -13,21 +10,19 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: e0700a33-a833-4655-8735-16e71175efc8
-caps.latest.revision: 11
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::array [C++], get
 - std::get [C++]
 - std::swap [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd5f0a501017e980210dee8466f38e909776fb60
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 355b9945e8783879c9d35aab9893dffa32596d00
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ltarraygt-functions"></a>&lt;dizi&gt; işlevleri
 

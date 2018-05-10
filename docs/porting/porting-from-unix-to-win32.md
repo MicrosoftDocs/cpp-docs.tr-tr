@@ -1,13 +1,10 @@
 ---
-title: "UNIX'ten Win32'ye taşıma | Microsoft Docs"
-ms.custom: 
+title: UNIX'ten Win32'ye taşıma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,17 +16,15 @@ helpviewer_keywords:
 - porting to Win32 [C++]
 - Win32 applications [C++], migrating from UNIX
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b10ee9e9b5a53d6f9f936c4bc158db8ebfb6be13
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 628d032ff00205b3f511a613a866f025d62dc50a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="porting-from-unix-to-win32"></a>UNIX'ten Win32'ye Bağlantı Noktası Oluşturma
 Uygulamaları Windows UNIX içinden geçiş için birkaç seçeneğiniz vardır:  
@@ -65,9 +60,9 @@ Uygulamaları Windows UNIX içinden geçiş için birkaç seçeneğiniz vardır:
  Taşıma UNIX'ten Win32 Destekli yazılım sağlayan bir şirket için site bir üçüncü taraf.  
   
 ### <a name="c-boost-web-site"></a>C++ Destek Web sitesi  
- [http://boost.sourceforge.NET/Regression-Logs/](http://boost.sourceforge.net/regression-logs/)  
+ [http://boost.sourceforge.net/regression-logs/](http://boost.sourceforge.net/regression-logs/)  
   
- [http://boost.sourceforge.NET/boost-build2/](http://boost.sourceforge.net/boost-build2/)  
+ [http://boost.sourceforge.net/boost-build2/](http://boost.sourceforge.net/boost-build2/)  
   
 ## <a name="porting-unix-applications-directly-to-win32"></a>UNIX uygulamalarını doğrudan Win32 bağlantı noktası oluşturma  
  Başka bir seçenek, UNIX uygulamalarını doğrudan Win32'ye taşıma. ANSI C/C++ kitaplıkları ve ticari C derleyicisi kitaplıkları kullanarak, birçok UNIX uygulamalarla üzerinde çağrıları iletilen geleneksel sistem Win32 uygulamalarda kullanılabilir.  

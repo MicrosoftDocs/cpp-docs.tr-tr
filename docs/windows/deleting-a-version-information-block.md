@@ -1,13 +1,10 @@
 ---
-title: "Sürüm bilgileri bloğunu silme | Microsoft Docs"
-ms.custom: 
+title: Sürüm bilgileri bloğunu silme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.version
 dev_langs:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - version information, deleting blocks
 - resources [Visual Studio], deleting version information
 ms.assetid: 4e1641eb-d5b2-4183-b273-bc5b51af1537
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3c45a6306cd30aa11d2a9eefe151d5626cebd152
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a374382e47e9623e041dd500730244b7fe205aa7
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="deleting-a-version-information-block"></a>Sürüm Bilgileri Bloğunu Silme
 ### <a name="to-delete-a-version-information-block"></a>Sürüm bilgileri bloğunu silmek için  

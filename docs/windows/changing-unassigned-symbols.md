@@ -1,13 +1,10 @@
 ---
-title: "Atanmamış sembolleri değiştirme | Microsoft Docs"
-ms.custom: 
+title: Atanmamış sembolleri değiştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.symbol.changing.unassigned
 dev_langs:
@@ -17,18 +14,16 @@ helpviewer_keywords:
 - Change Symbol dialog box
 - unassigned symbols
 ms.assetid: b6abee4a-3c24-4697-a166-fe6a86cad35f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 443b77c35496c5870c19975ede165fbf59e17f2c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7510d8bb9f356620e77d862edab71d852fdec65b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="changing-unassigned-symbols"></a>Atanmamış Sembolleri Değiştirme
 İçinde iken [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md), düzenlemek veya bir kaynak veya nesne zaten atanmamış varolan sembolleri silin.  

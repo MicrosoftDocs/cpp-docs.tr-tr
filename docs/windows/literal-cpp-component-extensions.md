@@ -1,13 +1,10 @@
 ---
-title: "değişmez değer (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: değişmez değer (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - literal
 - literal_cpp
@@ -16,18 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - literal keyword [C++]
 ms.assetid: 6b1a1f36-2e1d-4a23-8eb6-172f4f3c477f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f858e94bf916c2d441cee607739bb9e08da09b85
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6871f02a1c37def05b6450e7ffad18f6fa45b461
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="literal-c-component-extensions"></a>değişmez değer (C++ Bileşen Uzantıları)
 Bir değişken (veri üyesi) olarak işaretlenmiş `literal` içinde bir **/CLR** derleme aynıdır yerel bir `static const` değişkeni.  
@@ -56,7 +51,7 @@ Bir değişken (veri üyesi) olarak işaretlenmiş `literal` içinde bir **/CLR*
   
  Daha fazla bilgi için bkz: [statik](../cpp/storage-classes-cpp.md) ve [const](../cpp/const-cpp.md).  
   
- `literal`bağlama duyarlı bir anahtar sözcüktür. Bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md) daha fazla bilgi için.  
+ `literal` bağlama duyarlı bir anahtar sözcüktür. Bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md) daha fazla bilgi için.  
   
 ## <a name="example"></a>Örnek  
  Bu örnek gösteren bir `literal` değişkeni gelir `static`.  

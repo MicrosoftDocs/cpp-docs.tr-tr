@@ -1,31 +1,26 @@
 ---
-title: "Birden çok denetim ekleme | Microsoft Docs"
-ms.custom: 
+title: Birden çok denetim ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - controls [Visual Studio], adding multiple
 - dialog box controls, adding to dialog boxes
 ms.assetid: cc100201-0669-4e74-bb08-f7134ddd03aa
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6fe2040594db17e84aaf1c3d0985ed07f355f187
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8e685925ac1df1b773911744040709bcb2eb7651
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="adding-multiple-controls"></a>Birden Çok Denetim Ekleme
 ### <a name="to-add-multiple-controls"></a>Birden çok denetim eklemek için  

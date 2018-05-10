@@ -1,13 +1,10 @@
 ---
-title: "Nasıl yapılır: belirtin kaynaklar için dizin eklemeyi | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: belirtin kaynaklar için dizin eklemeyi | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,18 +12,16 @@ helpviewer_keywords:
 - include files, specifying for resources
 - resources [Visual Studio], including in projects
 ms.assetid: d6a7c0f6-4810-4bb0-b4b7-7d2476a20ca2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ddaa4bf15894b1afe4edec952b5c707a1dcfac0b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9778f774464e8da003a535e3c4dba0aef6ed24cb
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="how-to-specify-include-directories-for-resources"></a>Nasıl Yapılır: Kaynaklar İçin Dizin Eklemeyi Belirtme
 ### <a name="to-specify-include-directories-for-a-specific-rc-file"></a>Belirli bir .rc dosyası için ekleme kodu dizinlerini belirtme  

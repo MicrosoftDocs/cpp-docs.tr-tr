@@ -1,13 +1,10 @@
 ---
-title: "Sınırlı bir alanını renkle (simgeler için görüntü Düzenleyicisi) görüntünün doldurma | Microsoft Docs"
-ms.custom: 
+title: Sınırlı bir alanını renkle (simgeler için görüntü Düzenleyicisi) görüntünün doldurma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,18 +13,16 @@ helpviewer_keywords:
 - Image editor [C++], colors
 - Fill tool
 ms.assetid: e647ef83-421b-4818-855d-249b4c4cb5f2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dd951e22286b255ea504ba5764f76ba8b4020924
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f70decbfd0de1a31024482806594ca3c2b12aa8a
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="filling-a-bounded-area-of-an-image-with-a-color-image-editor-for-icons"></a>Görüntünün Sınırlı Bir Alanını Renkle Doldurma (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi sağlar **doldurun** herhangi doldurma aracı içine görüntü alanını geçerli çizim renkle veya geçerli arka plan rengi.  

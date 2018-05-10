@@ -1,31 +1,26 @@
 ---
-title: "Arabirim öznitelikleri | Microsoft Docs"
-ms.custom: 
+title: Arabirim öznitelikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - attributes [C++], reference topics
 - interface attributes
 ms.assetid: 27fcdfee-abce-4585-8b53-ee31635356e8
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5ff84939b3211633e199066e1a38da2e91efb1c8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6f57cdce20a54b8bc56b804e12f59f92855c7f69
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="interface-attributes"></a>Arabirim Öznitelikleri
 Aşağıdaki öznitelikler uygulamak [arabirimi (veya __interface)](../cpp/interface.md) C++ anahtar sözcüğü.  
@@ -52,7 +47,7 @@ Aşağıdaki öznitelikler uygulamak [arabirimi (veya __interface)](../cpp/inter
 |[pointer_default](../windows/pointer-default.md)|Varsayılan işaretçi özniteliği için tüm işaretçiler görünür üst düzey işaretçileri dışında parametre listelerinde belirtir.|  
 |[ptr](../windows/ptr.md)|Bir işaretçi tam bir işaretçi olarak belirler.|  
 |[restricted](../windows/restricted.md)|Hangi kitaplık üyeleri rasgele çağrılamaz belirler.|  
-|[UUID](../windows/uuid-cpp-attributes.md)|Kitaplık için benzersiz kimlik sağlar|  
+|[uuid](../windows/uuid-cpp-attributes.md)|Kitaplık için benzersiz kimlik sağlar|  
   
  Bir arabirim tanımlamak için bu kurallara uymanız gerekir:  
   

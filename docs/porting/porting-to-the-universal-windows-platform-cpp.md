@@ -1,27 +1,22 @@
 ---
-title: "Evrensel Windows Platformu (C++) için bağlantı noktası oluşturma | Microsoft Docs"
-ms.custom: 
+title: Evrensel Windows Platformu (C++) için bağlantı noktası oluşturma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: f662d2e4-8940-418d-8109-cb76cb8f8569
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ece050614481bdc0adbe417448711376666b2b9
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: f2f94e54a8525d8d633374b3a23bafdfd93fee56
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="porting-to-the-universal-windows-platform-c"></a>Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
 Bu konuda, mevcut C++ kodunu Evrensel Windows platformu Windows 10 uygulaması platformunuz için bağlantı noktası hakkında bilgi bulabilirsiniz. Terim tarafından anlamına gelir *Evrensel* kodunuzu herhangi bir Windows 10 Masaüstü, telefon, Tablet ve Windows 10 çalıştıran gelecekteki cihazlar dahil olmak üzere, çalıştıran aygıtlar üzerinde çalıştırılabilir. Tek bir proje ve Windows 10 çalıştıran iyi herhangi bir cihazda çalışan tek bir XAML tabanlı kullanıcı arabirimi oluşturun. Farklı ekran boyutlarına uyarlamak uygulamanın UI izin vermek için XAML içinde dinamik düzen özelliklerini kullanabilirsiniz.  
@@ -36,7 +31,7 @@ Bu konuda, mevcut C++ kodunu Evrensel Windows platformu Windows 10 uygulaması p
   
  Klasik Masaüstü Win32 DLL varsa ve bir UWP uygulamasından aramak istediğiniz, bu da yapabilirsiniz. Bu yordamları kullanarak, varolan Klasik Windows Masaüstü C++ uygulaması için bir UWP kullanıcı arabirimi katman ya da platformlar arası standart C++ kodunuzu oluşturabilirsiniz. Bkz: [nasıl yapılır: mevcut C++ kodunu Evrensel Windows platformu uygulamasında kullanma](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md).  
   
-##  <a name="BK_81StoreApp">Bir Windows 8.1 mağazası uygulaması UWP için bağlantı noktası oluşturma</a>  
+##  <a name="BK_81StoreApp"></a> Bir Windows 8.1 mağazası uygulaması UWP için bağlantı noktası oluşturma  
  Windows 8.1 mağazası uygulaması varsa, bunu UWP ve Windows 10 çalıştıran herhangi bir aygıt üzerinde çalıştırmak için bu yordamı kullanabilirsiniz.  İlk derleyici ve kitaplıkları yapılan değişiklikleri ortaya çıkabilecek sorunları ortadan kaldırmak için bir Windows 8.1 proje ilk yapı Visual Studio 2017 projeyle için iyi bir fikir gibidir. Bunu yaptıktan sonra bu bir Windows 10 UWP projesi dönüştürmek için iki yolu vardır. (Aşağıdaki yordamda açıklandığı gibi) en kolay yolu, bir evrensel Windows projesi oluşturun ve mevcut kodunuzu buraya kopyalayın olmaktır. Windows 8.1 Masaüstü ve Windows 8.1 Phone için evrensel projesi kullanıyorsanız, projeniz için görüntü boyutu ayarlar tek bir dinamik düzen XAML ancak son iki farklı düzenlerle ile başlar.  
   
 #### <a name="to-port-a-windows-81-store-app-to-the-uwp"></a>Bir Windows 8.1 mağazası uygulaması UWP için bağlantı noktası  
@@ -80,7 +75,7 @@ Bu konuda, mevcut C++ kodunu Evrensel Windows platformu Windows 10 uygulaması p
   
 11. Bir öykünücü veya uygulamanızın destekleyen aygıt her tür için fiziksel cihaz üzerindeki uygulama hata ayıklama ve çalıştırın. Bir öykünücü çalıştırmak için Visual Studio fiziksel bir bilgisayarda, sanal makine çalıştırmanız gerekir.  
   
-##  <a name="BK_81Component">Bir Windows 8.1 çalışma zamanı bileşeni UWP için bağlantı noktası oluşturma</a>  
+##  <a name="BK_81Component"></a> Bir Windows 8.1 çalışma zamanı bileşeni UWP için bağlantı noktası oluşturma  
  DLL ya da Windows 8.1 mağazası uygulamaları ile zaten çalışan bir Windows çalışma zamanı bileşeni varsa, bileşen veya UWP ve Windows 10 Çalışma DLL almak için bu yordamı kullanabilirsiniz. Temel yordam, yeni bir proje oluşturun ve kodunuzu içine kopyalamak için kullanılır.  
   
 #### <a name="to-port-a-windows-81-runtime-component-to-the-uwp"></a>Bir Windows 8.1 çalışma zamanı bileşeni UWP için bağlantı noktası  

@@ -2,9 +2,6 @@
 title: '&lt;unordered_map&gt; işleçleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - unordered_map/std::operator!=
@@ -12,13 +9,11 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 9d5add0b-84bd-4a79-bd82-3f58b55145ed
-caps.latest.revision: 7
-manager: ghogen
-ms.openlocfilehash: a38b08f2311ef4f4f9e863d6739937c47129ac06
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: 69a53ae6b54248f5b9938e2c9137a24f441c061d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="ltunorderedmapgt-operators"></a>&lt;unordered_map&gt; işleçleri
 

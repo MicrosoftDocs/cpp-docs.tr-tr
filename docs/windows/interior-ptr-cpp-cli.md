@@ -1,13 +1,10 @@
 ---
 title: interior_ptr (C + +/ CLI) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - stdcli::language::interior_ptr
 - interior_ptr_cpp
@@ -17,18 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - interior_ptr keyword [C++]
 ms.assetid: 25160f74-569e-492d-9e3c-67ece7486baa
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cd3e79306cb97413a833e039b0b333cb85b8e56d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a83182151ccb85b920a37713b70df53b383b8919
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="interiorptr-ccli"></a>interior_ptr (C++/CLI)
 Bir *iç işaretçi* bir işaretçi bir başvuru türü içinde ancak nesne bildirir. Bir başvuru tanıtıcısı, değer türü, paketlenmiş türü tanıtıcısı, yönetilen tür üyesi veya yönetilen bir dizi bir öğe için bir iç işaretçi işaret edebilir.  
@@ -55,7 +50,7 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
  *cv_qualifier*  
  **const** veya `volatile` niteleyicileri.  
   
- *türü*  
+ *Türü*  
  Türü *Başlatıcı*.  
   
  *var*  
@@ -73,11 +68,11 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
   
  İç işaretçiler yalnızca yığında olduğundan, bir iç işaretçi adresini bir yönetilmeyen işaretçi verir.  
   
- `interior_ptr`örtük bir dönüştürme sahip `bool`, böylece kullanımını koşullu deyimler için.  
+ `interior_ptr` örtük bir dönüştürme sahip `bool`, böylece kullanımını koşullu deyimler için.  
   
  Çöp toplanan yığında taşınamaz bir nesneye işaret eden iç işaretçi bildirme hakkında daha fazla bilgi için bkz: [pin_ptr](../windows/pin-ptr-cpp-cli.md).  
   
- `interior_ptr`CLI ad alanıdır.  Bkz: [Platform, varsayılan ve cli ad alanları](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) daha fazla bilgi için.  
+ `interior_ptr` CLI ad alanıdır.  Bkz: [Platform, varsayılan ve cli ad alanları](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) daha fazla bilgi için.  
   
  İç işaretçiler hakkında daha fazla bilgi için bkz:  
   

@@ -1,12 +1,9 @@
 ---
 title: Makrolar (C/C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 dev_langs:
 - C++
@@ -15,20 +12,18 @@ helpviewer_keywords:
 - preprocessor, macros
 - Visual C++, preprocessor macros
 ms.assetid: a7bfc5d4-2537-4fe0-bef0-70cec0b43388
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a230abc768b23afd74d1af8a9c178d39d453536a
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 6794cb56566e552a47f19d53f4092c1a9749969c
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="macros-cc"></a>Makrolar (C/C++)
-Ön işleme genişletir önişlemci yönergeleri değil tüm satırlarda makroları (olmayan satırlar bir  **#**  ilk boşluk olmayan karakter olarak) ve bir parçası olarak atlandı olmayan bazı yönergeleri bölümlerinde bir Koşullu derleme. "Koşullu derleme" yönergeleri, sabit bir ifade test ederek, bir kaynak dosyanın parçalarını derlenmesini gizlemek izin vermek veya hangi metin blokları belirlemek için tanımlayıcı geçirilir derleyici ve hangi metin blokları sırasında kaynak dosyadan kaldırılır ön işleme.  
+Ön işleme genişletir önişlemci yönergeleri değil tüm satırlarda makroları (olmayan satırlar bir **#** ilk boşluk olmayan karakter olarak) ve bir parçası olarak atlandı olmayan bazı yönergeleri bölümlerinde bir Koşullu derleme. "Koşullu derleme" yönergeleri, sabit bir ifade test ederek, bir kaynak dosyanın parçalarını derlenmesini gizlemek izin vermek veya hangi metin blokları belirlemek için tanımlayıcı geçirilir derleyici ve hangi metin blokları sırasında kaynak dosyadan kaldırılır ön işleme.  
   
  `#define` Yönergesi genellikle anlamlı tanımlayıcıları sabitleri, anahtar sözcükler ve sık kullanılan deyimler veya ifadeler ile ilişkilendirmek için kullanılır. Sabitler temsil tanımlayıcıları bazen "sembolik sabitler" veya "sabitleri bildirim" adı verilir Deyimleri ya da ifadeleri temsil tanımlayıcıları "makroları." olarak adlandırılır Önişlemci bu belgede, yalnızca "makrosu" terimi kullanılır.  
   

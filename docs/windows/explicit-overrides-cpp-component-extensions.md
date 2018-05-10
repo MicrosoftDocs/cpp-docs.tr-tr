@@ -1,30 +1,25 @@
 ---
-title: "Açık geçersiz kılmalar (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: Açık geçersiz kılmalar (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - overriding, override [C++]
 ms.assetid: 4ec3eaf5-163b-4df8-8f16-7a2ec04c3d0f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 346dd73952934d514b2741c41d5a27816b7152ac
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4eb418a6ded829e4eeeef3bf108894f9faf3d77e
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="explicit-overrides--c-component-extensions"></a>Açık Geçersiz Kılmalar (C++ Bileşen Uzantıları)
 Bu konuda açıkça temel sınıfta veya arabirimde üye geçersiz kılmak nasıl ele alınmıştır. Adlandırılmış (açık) geçersiz kılma, farklı bir ada sahip bir türetilmiş yöntemiyle bir yöntemini geçersiz kılmak için yalnızca kullanılmalıdır.  
@@ -43,10 +38,10 @@ overriding-function-declarator = function { overriding-function-definition }
  *geçersiz kılma-işlevi-bildirimcisi*  
  Geçersiz kılma işlevi dönüş türü, adı ve bağımsız değişken listesi.  Geçersiz kılma işlevi kılınmasını işlevi ile aynı ada sahip olmadığını unutmayın.  
   
- *türü*  
+ *Türü*  
  Geçersiz kılınacak işlevi içeriyor temel türü.  
   
- *işlevi*  
+ *İşlevi*  
  Geçersiz kılmak için bir veya daha fazla işlevi adlarının virgülle ayrılmış listesi.  
   
  *geçersiz kılma-işlevi-tanımı*  

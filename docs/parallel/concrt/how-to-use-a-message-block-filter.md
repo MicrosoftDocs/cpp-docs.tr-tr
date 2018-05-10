@@ -1,30 +1,25 @@
 ---
-title: "Nasıl yapılır: ileti bloğu filtresini kullanma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: ileti bloğu filtresini kullanma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-concrt
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - message-block filters, using [Concurrency Runtime]
 - using message-block filters [Concurrency Runtime]
 ms.assetid: db6b99fb-288d-4477-96dc-b9751772ebb2
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adcb300daa81c1325b216128b1971408a5931553
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 92de322142e56eb9907da2e19d350c3af9c8a7d9
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-use-a-message-block-filter"></a>Nasıl yapılır: İleti Bloğu Filtresini Kullanma
 Bu belge, kabul etme veya reddetme ileti yükünü temel alınarak bir ileti için bir zaman uyumsuz ileti bloğu etkinleştirmek için bir filtre işlevi kullanmak gösterilmiştir.  

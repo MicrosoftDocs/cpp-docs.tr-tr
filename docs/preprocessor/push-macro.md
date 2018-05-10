@@ -1,12 +1,9 @@
 ---
 title: push_macro | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vc-pragma.push_macro
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - pragmas, push_macro
 - push_macro pragma
 ms.assetid: ac89efc9-afd1-4dfe-bfd1-497229b3e81d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eee7f793e408445c797c0ca59cdbc98be1f9ea2
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 81e41ef7bf7b93e4b2a533dddcb82fee904cb428
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="pushmacro"></a>push_macro
 Değerini kaydeder *macro_name* yığının bu makrosu için makro.  

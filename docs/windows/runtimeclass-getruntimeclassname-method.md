@@ -1,12 +1,9 @@
 ---
-title: "RuntimeClass::GetRuntimeClassName yöntemi | Microsoft Docs"
-ms.custom: 
+title: RuntimeClass::GetRuntimeClassName yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::RuntimeClass::GetRuntimeClassName
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - GetRuntimeClassName method
 ms.assetid: f6388163-fe65-4948-a4bc-ae6826f480e7
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9987c539bb67e3989af851c3e4088e25b67f9136
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3cfe3cc4a8a304bbd04fde9e6c38e2b9170e2e73
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="runtimeclassgetruntimeclassname-method"></a>RuntimeClass::GetRuntimeClassName Metodu
 
@@ -51,7 +46,7 @@ Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Assert verilmiş IF &#95; &#95;hatadır; WRL_STRICT &#95; &#95; ya &#95; &#95; WRL_FORCE_INSPECTABLE_CLASS_MACRO &#95; &#95; tanımlı değil.
+Assert hata durumunda yayılan &#95; &#95;WRL_STRICT&#95; &#95; veya &#95; &#95;WRL_FORCE_INSPECTABLE_CLASS_MACRO&#95; &#95; tanımlı değil.
 
 ## <a name="requirements"></a>Gereksinimler
 

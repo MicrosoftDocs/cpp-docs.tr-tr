@@ -1,13 +1,10 @@
 ---
-title: "İkili Düzenleyicisi | Microsoft Docs"
-ms.custom: 
+title: İkili Düzenleyicisi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.binary.F1
 dev_langs:
@@ -18,18 +15,16 @@ helpviewer_keywords:
 - resource editors, Binary editor
 - Binary editor
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4dade674fb32615e23904e6dbaf03d6c6ee0a371
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6d5deb511069830de5ea7aa542bb010f57be5af9
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="binary-editor"></a>İkili Düzenleyici
 > [!WARNING]
@@ -37,7 +32,7 @@ ms.lasthandoff: 12/21/2017
   
  İkili Düzenleyicisi on altılı veya ASCII biçiminde ikili düzeyde herhangi bir kaynağa düzenlemenize olanak sağlar. Aynı zamanda [Bul komutu](/visualstudio/ide/reference/find-command) ASCII dizeleri veya onaltılık baytlar için aranacak. Yalnızca görüntülemek veya özel kaynaklar veya Visual Studio ortamı tarafından desteklenmeyen kaynak türleri küçük değişiklikler yapmak gereksinim duyduğunuzda, İkili Düzenleyicisi'ni kullanmanız gerekir.  
   
- İkili Düzenleyicisi'ni açmak için öncelikle seçin **dosyası &#124; Yeni &#124; Dosya** ana menüden düzenleyin, sonra yanındaki açılan oka tıklayın istediğiniz dosyayı seçin **açık** düğmesine tıklayın ve seçin **birlikte Aç &#124; İkili Düzenleyicisi**.  
+ İkili Düzenleyicisi'ni açmak için öncelikle seçin **dosya &#124; yeni &#124; dosya** ana menüden düzenleyin, sonra yanındaki açılan oka tıklayın istediğiniz dosyayı seçin **açmak** düğmesine tıklayın ve seçin**Birlikte Aç &#124; İkili Düzenleyicisi**.  
   
 > [!CAUTION]
 >  İletişim kutuları, görüntü veya İkili Düzenleyicisi menülerde gibi kaynakları düzenleme tehlikeli. Yanlış düzenleme kendi yerel düzenleyicisinde okunamaz hale getirme kaynak bozuk olabilir.  

@@ -2,11 +2,8 @@
 title: directory_iterator sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - filesystem/std::experimental::filesystem::directory_iterator
@@ -22,10 +19,8 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: dca2ecf8-3e69-4644-a83d-705061e10cc8
-caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
-manager: ghogen
 helpviewer_keywords:
 - std::experimental::filesystem::directory_iterator
 - std::experimental::filesystem::_Directory_iterator::_Directory_iterator
@@ -40,11 +35,11 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_iterator::operator++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5866f5f7dda4460f1ae9d9af073a2d3eb303dd9f
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: b46e4d8fc7b59f8b4919a7e36a85f29f626aa80b
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="directoryiterator-class"></a>directory_iterator Sınıfı
 

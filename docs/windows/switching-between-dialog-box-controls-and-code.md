@@ -1,13 +1,10 @@
 ---
-title: "İletişim kutusu denetimleri ile kod arasında geçiş yapma | Microsoft Docs"
-ms.custom: 
+title: İletişim kutusu denetimleri ile kod arasında geçiş yapma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,18 +16,16 @@ helpviewer_keywords:
 - controls [C++], jumping to code
 - Dialog editor, switching between controls and code
 ms.assetid: 7da73815-b853-4203-ba45-bbe570695122
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 81f8ea53cf6c4428913ce7ebfa4183c135208024
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6ffcb4621bf0005e6b22991da7a2dde9372afa6c
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="switching-between-dialog-box-controls-and-code"></a>İletişim Kutusu Denetimleri ile Kod Arasında Geçiş Yapma
 MFC uygulamalarında üzerine iletişim kutusu denetimleri saplama işleyici işlevleri hızlı bir şekilde oluşturmak için veya kendi işleyici kodu atlamak için çift tıklayın.  

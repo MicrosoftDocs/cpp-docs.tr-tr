@@ -1,28 +1,23 @@
 ---
-title: "Enum sınıfı (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: Enum sınıfı (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 8010fa8c-bad6-45b4-8214-b4db64d7ffe1
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 876cab344f1177000f63740ca6c33bc1db1afefe
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e17c5e2055ef478dc7cafd5a7b2677f47bb9e074
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="enum-class--c-component-extensions"></a>enum sınıfı (C++ Bileşen Uzantıları)
 Numaralandırmalar adlı adlandırılmış sabitler kümesinden oluşan bir kullanıcı tanımlı tür ad alanı kapsamında bir numaralandırma bildirir.  
@@ -46,7 +41,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
   
  **Parametreler**  
   
- *erişim*  
+ *Erişim*  
  Olabilir numaralandırması erişilebilirliğini `public` veya `private`.  
   
  *numaralandırma tanıtıcısı*  
@@ -102,10 +97,10 @@ accessenum structname [:type] { enumerator-list } var;
  `name`  
  Numaralandırma adı.  Anonim yönetilen numaralandırmalar izin verilmiyor.  
   
- `type`(isteğe bağlı)  
- Temel alınan türü *tanımlayıcıları*.  Bu, int, kısa veya uzun işaretli veya işaretsiz sürümleri gibi herhangi bir skaler türü olabilir.  `bool`veya `char` de izin verilir.  
+ `type` (isteğe bağlı)  
+ Temel alınan türü *tanımlayıcıları*.  Bu, int, kısa veya uzun işaretli veya işaretsiz sürümleri gibi herhangi bir skaler türü olabilir.  `bool` veya `char` de izin verilir.  
   
- `var`(isteğe bağlı)  
+ `var` (isteğe bağlı)  
  Bir değişken numaralandırma türünün adı.  
   
  **Açıklamalar**  

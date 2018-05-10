@@ -1,13 +1,10 @@
 ---
-title: "Yeni araç çubuğu kaynağı iletişim kutusu | Microsoft Docs"
-ms.custom: 
+title: Yeni araç çubuğu kaynağı iletişim kutusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.editors.newtoolbarresource
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - New Toolbar Resource dialog box
 ms.assetid: 52dd01ad-e748-4ab2-b3eb-59f5df990ca6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c30301b8887013d72e7ae2ab2d70650de7d7f0e1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6662fcfab3c9bb1d805e39147bd2838e6bbce5b2
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="new-toolbar-resource-dialog-box"></a>Yeni Araç Çubuğu Kaynağı İletişim Kutusu
 Yeni araç çubuğu kaynağı iletişim kutusu, genişlik ve yükseklik araç kaynağa eklediğiniz düğmelerinin belirtmenizi sağlar. Varsayılan değer 16 × 15 pikseldir.  

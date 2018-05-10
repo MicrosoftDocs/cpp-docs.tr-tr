@@ -2,11 +2,8 @@
 title: Interfacetraits::casttobase yöntemi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::InterfaceTraits::CastToBase
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - CastToBase method
 ms.assetid: 0591a017-0adf-4358-b946-eb0a307ce7f2
-caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6817f83d40943b871327c56fac692d9a60163de2
-ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
+ms.openlocfilehash: 8cd8fa2106ac3792c0352aa40ea34b049c1e5ce4
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="interfacetraitscasttobase-method"></a>InterfaceTraits::CastToBase Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  

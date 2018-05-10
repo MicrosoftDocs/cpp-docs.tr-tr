@@ -1,13 +1,10 @@
 ---
-title: "MBCS programlama ipuçları | Microsoft Docs"
-ms.custom: 
+title: MBCS programlama ipuçları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - _mbcs
 dev_langs:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - MBCS [C++], programming
 - multibyte characters [C++]
 ms.assetid: d8ad36b8-917f-474e-8adb-69462adecd17
-caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1dc9c5dfd0dafe96e2d37b789b64c8215aa454e3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7eb6e298961580c959235a97f37793df41d1124f
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="mbcs-programming-tips"></a>MBCS Programlama İpuçları
 Yeni geliştirme Unicode büyük olasılıkla son kullanıcılarının görebileceği tüm dizeler için karakter kodlamasını kullanmanız gerekir. MBCS tarafından Unicode kılınan eski bir teknolojidir. Bu bölümde, MBCS kullanan ve burada Unicode'a dönüştürmek mümkün değildir varolan programlar korumalıdır geliştiriciler için ipuçları sağlar. MFC uygulamaları ve MFC olmadan yazılan uygulamalar önerileri geçerlidir. Konular şunlardır:  

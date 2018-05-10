@@ -1,13 +1,10 @@
 ---
 title: db_table | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - vc-attr.db_table
 dev_langs:
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - db_table attribute
 ms.assetid: ff9eb957-4e6d-4175-afcc-fd8ea916cec0
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 37dd6fd80a0d18f1b9d93f5299fca797238a509f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f482e93f124d73d48d1de66f3feb1779146025d0
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="dbtable"></a>db_table
 OLE DB tablo açar.  
@@ -53,7 +48,7 @@ OLE DB tablo açar.
  *source_name* (isteğe bağlı)  
  `CSession` Değişkeni veya olan bir sınıfı örneği `db_source` özniteliği uygulanmış üzerinde komutu yürütür. Bkz: [db_source](../windows/db-source.md).  
   
- `hresult`(isteğe bağlı)  
+ `hresult` (isteğe bağlı)  
  Alacak değişkeni tanımlayan `HRESULT` bu veritabanı komutu. Değişkeni yoksa özniteliği tarafından otomatik olarak eklenecek.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -85,7 +80,7 @@ class CProducts {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**,`struct`|  
+|**Uygulandığı öğe:**|**sınıf**, `struct`|  
 |**Yinelenebilir**|Hayır|  
 |**Gerekli öznitelikler**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  

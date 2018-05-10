@@ -1,12 +1,9 @@
 ---
-title: "Implementshelper yapısı | Microsoft Docs"
-ms.custom: 
+title: Implementshelper yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::ImplementsHelper
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - ImplementsHelper structure
 ms.assetid: b857ba80-81bd-4e53-92b6-210991954243
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1a51de59278e476be1e99b60ef1b0ab8a6e3f3cd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 58f27e418946987633f771bc8d2c3224bc2cd7fd
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="implementshelper-structure"></a>ImplementsHelper Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  

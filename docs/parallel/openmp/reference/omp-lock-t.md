@@ -1,12 +1,9 @@
 ---
 title: omp_lock_t | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-windows
-ms.tgt_pltfrm: 
+- cpp-parallel
 ms.topic: reference
 f1_keywords:
 - omp_lock_t
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - omp_lock_t OpenMP data type
 ms.assetid: 51b80629-4ffc-4b8a-95c7-1af048f1f286
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ae6720a0b30c4991f32776e1c7327b2746edcac
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 5f07ff7c9a0590bee90783c2f06dcb6ffdbcb42e
+ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="omplockt"></a>omp_lock_t
 Kilit, kilit olup veya bir iş parçacığı bir kilit sahibi, durumunu tutan türü.  

@@ -1,12 +1,9 @@
 ---
-title: "Mutex::mutex Oluşturucusu | Microsoft Docs"
-ms.custom: 
+title: Mutex::mutex Oluşturucusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Mutex::Mutex
@@ -15,18 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - Mutex, constructor
 ms.assetid: 504afcdc-775a-4c98-a06f-4fb4663eba3f
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a07aeac0f8d139f71bdbe2473dc8eabf7e14ec2f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bb7782e44fc8598ca3b806ef922f8d0840765e28
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="mutexmutex-constructor"></a>Mutex::Mutex Oluşturucusu
 Mutex sınıfı yeni bir örneğini başlatır.  

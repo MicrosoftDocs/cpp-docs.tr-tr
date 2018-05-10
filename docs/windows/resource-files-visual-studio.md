@@ -2,12 +2,9 @@
 title: Kaynak dosyalar (Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -25,18 +22,16 @@ helpviewer_keywords:
 - .rct files
 - resource script files, unsupported types
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
-caps.latest.revision: 18
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 117472c764dd6f13858881275b067600579a0fc8
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: 5b4b56d1f329aee29c37b15590729074d305f04d
+ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="resource-files-visual-studio"></a>Kaynak Dosyalar (Visual Studio)
 > [!NOTE]
