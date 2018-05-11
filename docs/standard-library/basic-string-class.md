@@ -126,11 +126,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 202dd5334e2eb0f133b40198840287af83acee8a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 32cd9dc76954b7b4dc5d38081ed39bc42511ab0e
+ms.sourcegitcommit: 2998488d63f2dd9cbfa1f5cb9a403883b2246949
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="basicstring-class"></a>basic_string Sınıfı
 
@@ -469,7 +469,7 @@ basic_string<CharType, Traits, Allocator>& assign(
 
 `ptr` Hedef dizeye atamayı C dize karakterlerini gösteren bir işaretçi.
 
-`count` En fazla kaynak dizesi eklenecek karakter sayısı.
+`count` Kaynak dizesi atanmasını karakter sayısı.
 
 `str` Hedef dizeye atamayı karakterine olan kaynak dizesi.
 

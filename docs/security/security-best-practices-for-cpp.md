@@ -1,7 +1,7 @@
 ---
 title: C++ için en iyi yöntemler | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 05/08/2018
 ms.technology:
 - cpp-windows
 ms.topic: conceptual
@@ -14,20 +14,22 @@ helpviewer_keywords:
 - security [C++]
 - security [C++], best practices
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mikeblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c7f0860daea5b2e90368c7068c6b13371af3fd8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
-ms.translationtype: HT
+ms.openlocfilehash: 35114d2fff4975cfca1681a7f5861c81bd979ef5
+ms.sourcegitcommit: 96cdc2da0d8c3783cc2ce03bd280a5430e1ac01d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="security-best-practices-for-c"></a>C++ İçin En İyi Güvenlik Uygulamaları
+
 Bu makale, güvenlik araçları ve yöntemleri hakkında bilgi içerir. Bunları kullanarak uygulamaları saldırılarından yapmaz ancak saldırıların olasılığını azaltır.  
   
-## <a name="visual-c-security-features"></a>Visual C++ güvenlik özellikleri  
+## <a name="visual-c-security-features"></a>Visual C++ güvenlik özellikleri
+
  Bu güvenlik özellikleri, Visual C++ derleyicisi ve bağlayıcısına oluşturulur:  
   
  [/guard (Denetim Akışı Korumasını Etkinleştirme)](../build/reference/guard-enable-control-flow-guard.md)  
@@ -84,14 +86,19 @@ Bu makale, güvenlik araçları ve yöntemleri hakkında bilgi içerir. Bunları
 -   Genel programlama hatalarına neden olası uygulama uyumluluğu hataları için test edin.  
   
 -   Bir uygulama bellek ile ilgili sorunlar için inceleyin.  
-  s
+
 -   Bir uygulamada olası güvenlik sorunlarını tanımlayın.  
   
  Kullanılabilir uygulama uyumluluğu araç AppVerifier yer [uygulama uyumluluğu](http://go.microsoft.com/fwlink/p/?linkid=91277) TechNet web sitesinde.  
   
 
 ## <a name="windows-user-accounts"></a>Windows kullanıcı hesapları  
- Yöneticiler grup ortaya koyar geliştiricilere ve--uzantı yoluyla--ait Windows kullanıcı hesapları müşteriler güvenlik risklerine kullanma. Daha fazla bilgi için bkz: [kullanıcılar grubunun bir üyesi olarak çalıştırma](running-as-a-member-of-the-users-group.md) ve [nasıl kullanıcı hesabı denetimi (UAC) etkiler uygulamanız](how-user-account-control-uac-affects-your-application.md).  
+ Yöneticiler grup ortaya koyar geliştiricilere ve--uzantı yoluyla--ait Windows kullanıcı hesapları müşteriler güvenlik risklerine kullanma. Daha fazla bilgi için bkz: [kullanıcılar grubunun bir üyesi olarak çalıştırma](running-as-a-member-of-the-users-group.md) ve [nasıl kullanıcı hesabı denetimi (UAC) etkiler uygulamanız](how-user-account-control-uac-affects-your-application.md).
+
+## <a name="guidance-for-speculative-execution-side-channels"></a>Kurgusal yürütme yan kanalları Kılavuzu
+
+Tanımayı ve C++ yazılım kurgusal yürütme yan kanal donanım güvenlik açıklarına karşı azaltmak hakkında daha fazla bilgi için bkz: [C++ Geliştirici Kılavuzu Speculative yürütme yan kanalları](developer-guidance-speculative-execution.md).
+
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Security>   

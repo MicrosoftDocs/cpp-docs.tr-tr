@@ -2,28 +2,23 @@
 title: recursive_directory_iterator sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - filesystem/std::tr2::sys::recursive_directory_iterator
 dev_langs:
 - C++
 ms.assetid: 79a061bd-5b64-404c-97e8-749c888c2ced
-caps.latest.revision: 15
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3e1ef6dab66e0414ecace7b6e51b31eef632d06
-ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
+ms.openlocfilehash: cd876ec21379d59445b88bdc08a1c7b831cb94fa
+ms.sourcegitcommit: 96cdc2da0d8c3783cc2ce03bd280a5430e1ac01d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="recursivedirectoryiterator-class"></a>recursive_directory_iterator Sınıfı
 
