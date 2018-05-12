@@ -1,6 +1,6 @@
 ---
-title: Visual C++ araç ile ilgili bir sorun bildirme | Microsoft Docs
-ms.date: 1/11/2018
+title: Visual C++ araç takımını ile ilgili bir sorun bildirme | Microsoft Docs
+ms.date: 5/11/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -10,27 +10,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8be0a5e42caf12c4e1415cf88143b84a9971cd2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 72721e6a1ee75f7e786bd059c02ede5d275b0f4e
+ms.sourcegitcommit: e1e0104486250e12259c71185b0d1c21ddd16bb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
-# <a name="how-to-report-a-problem-with-the-visual-c-toolset"></a>Visual C++ araç ile ilgili bir sorun bildirme
+# <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ araç takımını veya belgelerinde bir sorun bildirme
 
-Microsoft Visual C++ Derleyici, bağlayıcı, veya diğer araçlar ve kitaplıkları sorunlarla karşılaşırsanız, bunları hakkında bilmek isteriz.
+Microsoft Visual C++ Derleyici, bağlayıcı, veya diğer araçlar ve kitaplıkları sorunlarla karşılaşırsanız, bunları hakkında bilmek isteriz. Sorun Belgelerimizdeki ise, hakkında çok bilmek isteriz.
+
+## <a name="how-to-report-a-c-documentation-issue"></a>C++ belgeleri sorun bildirme
+
+GitHub sorunları Belgelerimizdeki bildirilen sorunlarını izlemek için kullanırız. Yazarlar ve ürün ekipleriyle çok daha zengin bir yol sağlayan bir içerik sayfasını doğrudan sorunlarını etkileşimli GitHub artık oluşturabilirsiniz. Bir belge, hatalı kod örneği, karmaşık bir açıklama, kritik atlandığını veya bile yalnızca bir yazım hatası ile ilgili bir sorun görürseniz, kolayca bize bildirin. Kaydırma seçin ve sayfanın altına **belgelerine geribildirim vermek oturum**. GitHub hesabı zaten yoksa, ancak bunu yaptığınızda, tüm bizim belgelerine sorunları, bunların durumunu görmek ve, bildirilen sorunu için yapılan bir değişiklik olduğunda bildirim almak oluşturmanız gerekir. Daha fazla bilgi için bkz: [A yeni geri bildirim sistemi yakında docs.microsoft.com için](/teamblog/a-new-feedback-system-is-coming-to-docs).
+
+Belge geri bildirim düğmesini kullanarak Github'da belgelerine konu oluşturduğunuzda, sorunun nerede olduğunu biliyoruz şekilde sorunu, sorunu oluşturulan sayfa hakkında bazı bilgiler ile otomatik olarak doldurulur. Lütfen bu bilgileri düzenleyin yok. Yalnızca yanlış ve, isterseniz, önerilen bir düzeltmeyi yenilikler hakkında ayrıntılı bilgi ekleyin. [Belgelerimizi açık bir kaynaktır](https://github.com/MicrosoftDocs/cpp-docs/), aslında bir düzeltme yapıp kendiniz önermek istiyorsanız, bunu yapabilirsiniz. Bizim belgelerine nasıl katkıda hakkında daha fazla bilgi için bkz: bizim [Contributing Kılavuzu](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) github'da.
+
+## <a name="how-to-report-a-c-product-issue"></a>C++ ürün sorun bildirme
 
 Bir sorun hakkında bilmeniz bize en iyi yolu bize programınızı oluşturmakta olduğunuz nasıl ve bir hakkında hatayla karşılaşıldı, Ayrıntılar sorun açıklamasını içeren bir rapor göndermektir *yeniden oluşturma*, yeniden oluşturmak için kullanabileceğiniz eksiksiz bir test çalışması sorunu kendi makinelerde. Bu bilgiler sorunu bizim kodda var ve ortamınız için derleyici'nin diğer sürümlerini etkiler olup olmadığını belirlemek ve nedenini tanılamak için yerel değil hızla doğrulamamıza olanak sağlar.
 
-Bu belgede, okumanız
-
-- [Raporunuzu hazırlamak nasıl](#how-to-prepare-your-report), ve ne iyi bir rapor sağlar.
-
-- [Bir yeniden oluşturma oluşturmak nasıl](#how-to-generate-a-repro)ve repros farklı türde.
-
-- [Raporunuzu gönderme yolları](#ways-to-send-your-report), ve bunları farklı kılan.
-
-Raporlarınızı bize ve sizin gibi diğer geliştiriciler için önemlidir. Visual C++ geliştirmemize yardımcı olduğunuz için teşekkür ederiz!
+Yakalamasını içinde aşağıdaki bölümler, iyi bir rapor kılan, yeniden oluşturma, buldunuz sorunu tür oluşturmak nasıl ve ürün ekibine raporunuzu göndermek nasıl okumanız. Raporlarınızı bize ve sizin gibi diğer geliştiriciler için önemlidir. Visual C++ geliştirmemize yardımcı olduğunuz için teşekkür ederiz!
 
 ## <a name="how-to-prepare-your-report"></a>Raporunuzu hazırlama
 
@@ -291,7 +291,7 @@ Yeniden oluşturma en az bir IDE projesi olarak oluşturun, sonra bir .zip dosya
 
 ## <a name="ways-to-send-your-report"></a>Raporunuzu gönderme yolları
 
-Raporunuzu bize almak için birkaç yolu vardır. Visual Studio'nun yerleşik kullanabilirsiniz [bir sorun aracı rapor](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), veya [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sayfaları. Raporunuzu içeren bir e-posta göndermek mümkündür, ancak ilk iki yöntem tercih edilir. Seçimi nasıl raporunuzu araştırmak mühendisleri ile etkileşim kurmak istediğinizi ve olup, ilerleme durumunu izlemek veya raporunuzu toplulukla paylaştığı istediğiniz bağlıdır.
+Raporunuzu bize almak için birkaç yolu vardır. Visual Studio'nun yerleşik kullanabilirsiniz [bir sorun aracı rapor](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), veya [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sayfaları. Seçerek doğrudan sunduğumuz Geliştirici topluluğu sayfalara alabilirsiniz **ürün geri bildirim** bu sayfanın sonundaki düğmesi. Raporunuzu içeren bir e-posta göndermek mümkündür, ancak ilk iki yöntem tercih edilir. Seçimi nasıl raporunuzu araştırmak mühendisleri ile etkileşim kurmak istediğinizi ve olup, ilerleme durumunu izlemek veya raporunuzu toplulukla paylaştığı istediğiniz bağlıdır.
 
 > [!NOTE]
 > Raporunuzu nasıl gönderme bağımsız olarak, Microsoft, gizliliğinize saygı duyar. Biz bize gönderin verileri nasıl işler hakkında daha fazla bilgi için bkz: [Microsoft Visual Studio ürün ailesi gizlilik bildirimi](https://www.visualstudio.com/dn948229).
@@ -334,4 +334,4 @@ Source code and repro steps:
 ```
 
 > [!TIP]
-> Araç takımı için (örneğin, kullanıcı Arabirimi sorunları, bozuk bir IDE işlevsellik veya genel kilitlenme) ilgili olmayan Visual Studio'da karşılaşabileceğiniz sorunlar diğer tür için bir sorun aracı rapor ekran yeteneklerini nedeniyle özellikle iyi bir seçimdir olabilir ve sorunu neden kayıt UI eylemlerini kendi yeteneği karşılaştı. Hiçbir zaman bu diğer tür hatalara e-posta göndererek bildirmelisiniz compilercrash@microsoft.com.
+> Visual Studio'da, araç takımı için (örneğin, kullanıcı Arabirimi sorunları, bozuk bir IDE işlevsellik veya genel çökme (Crash)), ilişkili olmayan karşılaşabileceğiniz sorunları diğer türleri için **bir sorun aracı rapor** özellikle iyi bir seçim son olabilir kendi ekran yetenekleri ve soruna yol kayıt UI eylemlerini kendi yeteneği karşılaştı. Bu tür hatalara da üzerinde bildirilebilir [Geliştirici topluluğu](https://developercommunity.visualstudio.com/) site. Hiçbir zaman bu diğer tür hatalara e-posta göndererek bildirmelisiniz compilercrash@microsoft.com.
