@@ -26,6 +26,7 @@
 # [C++ için En İyi Güvenlik Uygulamaları](security/security-best-practices-for-cpp.md)
 ## [Kullanıcı Grubu Üyesi Olarak Çalıştırma](security/running-as-a-member-of-the-users-group.md)
 ## [Kullanıcı Hesabı Denetimi (UAC) Uygulamanızı Nasıl Etkiler](security/how-user-account-control-uac-affects-your-application.md)
+## [Kurgusal Yürütme Yan Kanalları için C++ Geliştirici Kılavuzu](security/developer-guidance-speculative-execution.md)
 # [Visual C++ Örnekleri](visual-cpp-samples.md)
 # [Visual C++ Yardım ve Topluluk](visual-cpp-help-and-community.md)
 # [Visual C++ Araç Takımıyla İlgili Bir Sorunu Bildirme](how-to-report-a-problem-with-the-visual-cpp-toolset.md)
