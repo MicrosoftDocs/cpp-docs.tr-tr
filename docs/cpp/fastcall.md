@@ -16,11 +16,11 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d69c97294795ed2f3f0b2d82ec8caa4734fa1f7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 03f286f21f213f5b2a193ccb824ba22b7c7c1f00
+ms.sourcegitcommit: 39585672df8874fb5df4e70de97cd7f328fe9880
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="fastcall"></a>__fastcall
 **Microsoft özel**  
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/03/2018
 |-------------|--------------------|  
 |Bağımsız değişken geçirme sırası|İlk iki DWORD veya bağımsız değişken listesinde soldan sağa bulunan küçük bağımsız değişkenleri ECX ve EDX yazmaçlar geçirilir; diğer tüm bağımsız değişkenler sağdan sola yığında geçirilir.|  
 |Yığın bakımı sorumluluğu|İşlev POP yığından bağımsız değişkenleri olarak bilinir.|  
-|Ad düzenleme kuralı|At işareti (@) adlarını; öneki bir at işareti parametresinde (ondalık) bayt sayısı ve ardından listesi adlarına sonekine.|  
+|Ad düzenleme kuralı|At işareti (\@) adlarını; önekli bir at işareti parametresinde (ondalık) bayt sayısı ve ardından listesi adlarına sonekine.|  
 |Durum çevirisi kuralları|Durum çevirisi yapılmaz.|  
   
 > [!NOTE]
