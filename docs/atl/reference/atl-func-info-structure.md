@@ -19,11 +19,11 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d5f3b759591333a41c3bc9da083e8e724249d13d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fa81e83d353c542ea5b2b6e8e5e8fe32f7c57606
+ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="atlfuncinfo-structure"></a>_ATL_FUNC_INFO yapısı
 Bir yöntemi veya özelliği üzerinde görüntüleme arabirimi tanımlamak için kullanılan tür bilgileri içerir.  
@@ -68,7 +68,7 @@ struct _ATL_FUNC_INFO {
  **Başlık:** atlcom.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapıları](../../atl/reference/atl-structures.md)   
+  [Sınıflar ve yapılar](../../atl/reference/atl-classes.md)  
  [IDispEventSimpleImpl sınıfı](../../atl/reference/idispeventsimpleimpl-class.md)   
  [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)
 

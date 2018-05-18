@@ -15,11 +15,11 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d460733eff0f5ef78ae92a98347f2eec5f84dc0c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9fc2777e32fb6ad95248b266b1ff62b1983c83c2
+ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="atl-macros"></a>ATL makroları
 ATL makrosu kategoriye göre bulmak için aşağıdaki konulara bakın.  
@@ -86,6 +86,6 @@ ATL makrosu kategoriye göre bulmak için aşağıdaki konulara bakın.
  [ATL COM Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md)   
  [İşlevler](../../atl/reference/atl-functions.md)   
  [Genel değişkenler](../../atl/reference/atl-global-variables.md)   
- [Yapıları](../../atl/reference/atl-structures.md)   
+ [Sınıflar ve yapılar](../../atl/reference/atl-classes.md)  
  [Tür tanımları](../../atl/reference/atl-typedefs.md)   
- [Sınıflar](../../atl/reference/atl-classes.md)
+

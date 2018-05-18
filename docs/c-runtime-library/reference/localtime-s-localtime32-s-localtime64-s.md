@@ -42,11 +42,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1125f9a66a471b664e42ddbd5164611a4cb2ae69
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 513bfe5baa16c9cae5052da084c65f580aad7f2e
+ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="localtimes-localtime32s-localtime64s"></a>localtime_s, _localtime32_s, _localtime64_s
 
@@ -56,16 +56,16 @@ Dönüştüren bir **time_t** saat değeri için bir **tm** yapısı ve yerel sa
 
 ```C
 errno_t localtime_s(
-   struct tm* tmDest,
-   const time_t *sourceTime
+   struct tm* const tmDest,
+   time_t const* const sourceTime
 );
 errno_t _localtime32_s(
    struct tm* tmDest,
-   const time32_t *sourceTime
+   __time32_t const* sourceTime
 );
 errno_t _localtime64_s(
    struct tm* tmDest,
-   const _time64_t *sourceTime
+   __time64_t const* sourceTime
 );
 ```
 

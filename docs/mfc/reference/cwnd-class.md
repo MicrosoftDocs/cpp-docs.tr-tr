@@ -828,11 +828,11 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b6dadffe56350904fe4c115550590b21d009868
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8424d4be8ca2de5b1b40a7ed5d0142691b4d776f
+ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 Microsoft Foundation Class Kitaplığı'ndaki tüm pencere sınıfları temel işlevselliğini sağlar.  
@@ -1113,7 +1113,7 @@ class CWnd : public CCmdTarget
 |[CWnd::OnChangeCbChain](#onchangecbchain)|Belirli bir pencere zincirinden kaldırılmakta bildirir.|  
 |[CWnd::OnChangeUIState](#onchangeuistate)|Kullanıcı Arabirimi (UI) durumu değiştirilmelidir çağrılır.|  
 |[CWnd::OnChar](#onchar)|Bir tuş vuruşu bir sistem dışı karakter dönüştürdüğünde çağrılır.|  
-|[CWnd::OnCharToItem](#onchartoitem)|Bir alt liste kutusu tarafından çağrılan [lbs_wantkeyboardınput](list-box-styles.md) stili yanıt olarak bir [WM_CHAR](#onchar) ileti.|  
+|[CWnd::OnCharToItem](#onchartoitem)|Bir alt liste kutusu tarafından çağrılan [lbs_wantkeyboardınput](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stili yanıt olarak bir [WM_CHAR](#onchar) ileti.|  
 |[CWnd::OnChildActivate](#onchildactivate)|İçin birden çok belge arabirimi (MDI) alt pencere olarak adlandırılan her boyutunu veya konumunu `CWnd` değişiklikleri veya `CWnd` etkinleştirilir.|  
 |[CWnd::OnChildNotify](#onchildnotify)|Bir denetim bildirime yanıt vermek için bir fırsat bildirimde bulunan bir denetim sağlamak için bir üst pencere tarafından çağrılır.|  
 |[CWnd::OnClipboardUpdate](#onclipboardupdate)|Panonun içeriğini değiştirildiğinde çağrılır.|  

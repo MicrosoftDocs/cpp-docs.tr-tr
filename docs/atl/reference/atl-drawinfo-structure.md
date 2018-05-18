@@ -18,11 +18,11 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e04f5efae261a151489309e876298b56ec696db
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6c8ba7be259a10ee1bf47bbdc401a2389adac2be
+ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="atldrawinfo-structure"></a>ATL_DRAWINFO yapısı
 Yazıcı, meta dosyası veya ActiveX denetimi gibi çeşitli hedeflere işleme için kullanılan bilgileri içerir.  
@@ -96,8 +96,7 @@ struct ATL_DRAWINFO {
  **Başlık:** atlctl.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapıları](../../atl/reference/atl-structures.md)   
- [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655)   
+  [Sınıflar ve yapılar](../../atl/reference/atl-classes.md) [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655)   
  [CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ondrawadvanced)
 
 
