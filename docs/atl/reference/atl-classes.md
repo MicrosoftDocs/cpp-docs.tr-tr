@@ -1,7 +1,7 @@
 ---
-title: ATL sınıfları | Microsoft Docs
+title: ATL sınıfları ve yapıları | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 05/03/2018
 ms.technology:
 - cpp-atl
 ms.topic: reference
@@ -15,17 +15,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7483df52f614c26efd5216137ef3144ab04780e9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e887f0adb7812664047fd30c3d9bb48368b9b564
+ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="atl-classes"></a>ATL sınıfları
-Etkin Şablon kitaplığı (ATL) aşağıdaki sınıflar içerir. Belirli bir sınıfın kategoriye göre bulmak için bkz: [ATL sınıfına genel bakış](../../atl/atl-class-overview.md).  
+# <a name="atl-classes-and-structs"></a>ATL sınıfları ve yapıları
+Etkin Şablon kitaplığı (ATL) aşağıdaki sınıflar ve yapılar içerir. Belirli bir sınıfın kategoriye göre bulmak için bkz: [ATL sınıfına genel bakış](../../atl/atl-class-overview.md).  
   
-|örneği|Açıklama|Üstbilgi dosyası|  
+|Sınıf / yapısı|Açıklama|Üstbilgi dosyası|  
 |-----------|-----------------|-----------------|  
+|[ATL_DRAWINFO](../../atl/reference/atl-drawinfo-structure.md)|Yazıcı, meta dosyası veya ActiveX denetimi gibi çeşitli hedeflere işleme için kullanılan bilgileri içerir.|atlctl.h|
+|[_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md)|ATL Pencereleme kodda sınıfı örnek verilerini içeren|atlbase.h|
+|[_ATL_BASE_MODULE70](../../atl/reference/atl-base-module70-structure.md)|ATL kullanan tüm projesi tarafından kullanılan|atlbase.h|  
+|[_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md)|ATL COM ilgili kodda tarafından kullanılan| atlbase.h|  
+|[_ATL_FUNC_INFO](../../atl/reference/atl-func-info-structure.md)|Bir yöntemi veya özelliği üzerinde görüntüleme arabirimi tanımlamak için kullanılan tür bilgileri içerir.|atlcom.h|  
+|[_ATL_MODULE70](../../atl/reference/atl-module70-structure.md)|Her ATL modülü tarafından kullanılan verileri içerir.|atlbase.h|  
+|[_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md)|ATL Pencereleme kodda tarafından kullanılan|atlbase.h|  
 |[CA2AEX](../../atl/reference/ca2aex-class.md)|Bu sınıf dize dönüştürme makroları tarafından kullanılan `CA2TEX` ve `CT2AEX`ve typedef **CA2A**.|atlconv.h|  
 |[CA2CAEX](../../atl/reference/ca2caex-class.md)|Bu sınıf dize dönüşüm makroları tarafından kullanılan `CA2CTEX` ve `CT2CAEX`ve typedef **CA2CA**.|atlconv.h|  
 |[CA2WEX](../../atl/reference/ca2wex-class.md)|Bu sınıf dize dönüştürme makroları tarafından kullanılan `CA2TEX`, `CA2CTEX`, `CT2WEX`, ve `CT2CWEX`ve typedef **CA2W**.|atlconv.h|  
@@ -224,7 +231,6 @@ Etkin Şablon kitaplığı (ATL) aşağıdaki sınıflar içerir. Belirli bir s�
  [ATL COM Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md)   
  [İşlevler](../../atl/reference/atl-functions.md)   
  [Genel değişkenler](../../atl/reference/atl-global-variables.md)   
- [Yapıları](../../atl/reference/atl-structures.md)   
  [Tür tanımları](../../atl/reference/atl-typedefs.md)   
  [Sınıfa genel bakış](../../atl/atl-class-overview.md)
 

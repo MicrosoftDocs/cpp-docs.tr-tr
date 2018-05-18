@@ -19,11 +19,11 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72f621af04dc420587c2660313aecf70adfaa1ec
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 587b115c428b0d82183abbec9f712ff06ea448f4
+ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="atlwinmodule70-structure"></a>_ATL_WIN_MODULE70 yapısı
 ATL Pencereleme kodda tarafından kullanılan  
@@ -59,7 +59,7 @@ struct _ATL_WIN_MODULE70 {
  **Başlık:** atlbase.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar](../../atl/reference/atl-structures.md)
+ [Sınıflar ve yapılar](../../atl/reference/atl-classes.md)
 
 
 

@@ -15,11 +15,11 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d4a74b551ecc249db88293bfce091f3df14165d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3c5e63e884a44b310330c05fc4a77e3e7f37bec5
+ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="atl-functions"></a>ATL işlevleri
 
@@ -73,6 +73,5 @@ ATL işlevi kategoriye göre bulmak için aşağıdaki konulara bakın.
  [ATL COM Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md)   
  [Makroları](../../atl/reference/atl-macros.md)   
  [Genel değişkenler](../../atl/reference/atl-global-variables.md)   
- [Yapıları](../../atl/reference/atl-structures.md)   
  [Tür tanımları](../../atl/reference/atl-typedefs.md)   
- [Sınıflar](../../atl/reference/atl-classes.md)
+ [Sınıflar ve yapılar](../../atl/reference/atl-classes.md)
