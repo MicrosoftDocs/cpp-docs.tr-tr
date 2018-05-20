@@ -136,7 +136,6 @@
 ### [Internet'te Etkin Teknoloji](active-technology-on-the-internet.md)
 ### [WinInet Temelleri](wininet-basics.md)
 ### [HTML Temelleri](html-basics.md)
-### [HTTP Temelleri](http-basics.md)
 ## [MFC Internet Programlama Görevleri](mfc-internet-programming-tasks.md)
 ### [Uygulama Tasarımı Seçimleri](application-design-choices.md)
 ### [MFC Uygulamaları Yazma](writing-mfc-applications.md)

@@ -419,6 +419,7 @@
 ## [CSpinButtonCtrl Sınıfı](cspinbuttonctrl-class.md)
 ## [CSplitButton Sınıfı](csplitbutton-class.md)
 ## [CSplitterWnd Sınıfı](csplitterwnd-class.md)
+## [CSplitterWndEx Sınıfı](csplitterwndex-class.md)
 ## [CStatic Sınıfı](cstatic-class.md)
 ## [CStatusBar Sınıfı](cstatusbar-class.md)
 ## [CStatusBarCtrl Sınıfı](cstatusbarctrl-class.md)

@@ -1,7 +1,7 @@
 ---
 title: MFC tarafından kullanılan stiller | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 05/03/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -206,19 +206,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1e891c8b24e52b56bd6bed8fb7f931fdd8fb863
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6643a1c70b6a22126222d523de4426e1aebcf85b
+ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="styles-used-by-mfc"></a>MFC Tarafından Kullanılan Stiller  
   
 Karşılık gelen MFC nesne oluşturduğunuzda penceresi veya denetim görünümünü ve davranışını belirtmek için aşağıdaki stil bayrakları kullanın. Çoğu durumda, bu stilleri ayarlama `dwStyle` sınıfının parametresi `Create` işlevi.  
   
-<a name="button-styles"></a>  
-  
-## <a name="button-styles"></a>Düğme stilleri  
+## <a name="button-styles"></a> Düğme stilleri  
   
 Düğme stilleri uygulamak için [CButton sınıfı](../../mfc/reference/cbutton-class.md) radyo düğmeleri gibi nesneler onay kutuları ve pushbuttons. Stilleri bileşimini belirtin `dwStyle` parametresinin [CButton::Create](../../mfc/reference/cbutton-class.md#create). Düğme stilleri Windows hakkında daha fazla bilgi için bkz: [düğme stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775951).  
   
@@ -287,9 +285,7 @@ Herhangi bir düğme türü ile kullanabileceğiniz ek seçenekleri aşağıdaki
 |`BS_MULTILINE`|Metin dizesini düğmesi dikdörtgenin içindeki tek bir satırda uymak için çok büyük ise, çok satırlı düğmesi metni sarmalar.|  
 |`BS_NOTIFY`|Gönderilecek bir düğmesini etkinleştirir `BN_DBLCLK`, `BN_KILLFOCUS`, ve `BN_SETFOCUS` kendi üst penceresi bildirim iletileri. Gönderme düğmeleri Not `BN_CLICKED` bu stili belirtilip bağımsız olarak bildirim.|  
   
-<a name="combo-box-styles"></a>  
-  
-## <a name="combo-box-styles"></a>Birleşik giriş kutusu stilleri  
+## <a name="combo-box-styles"></a>  Birleşik giriş kutusu stilleri  
   
 Aşağıdaki birleşik giriş kutusu stilleri MFC'de kullanılabilir. Birleşik giriş kutusu stilleri Windows hakkında daha fazla bilgi için bkz: [birleşik giriş kutusu stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775796).  
   
@@ -309,9 +305,7 @@ Aşağıdaki birleşik giriş kutusu stilleri MFC'de kullanılabilir. Birleşik 
 |`CBS_SORT`|Otomatik olarak liste kutusuna girilen dizeleri sıralar.|  
 |`CBS_UPPERCASE`|Seçimi alanını ve listenin tüm metni büyük harfe dönüştürür.|  
   
-<a name="edit-styles"></a>  
-  
-## <a name="edit-styles"></a>Düzenleme stilleri  
+## <a name="edit-styles"></a>  Düzenleme stilleri  
   
 Düzenleme stilleri uygulamak için [CEdit sınıfı](../../mfc/reference/cedit-class.md) nesneleri. Stilleri bileşimini belirtin `dwStyle` parametresinin [CEdit::Create](../../mfc/reference/cedit-class.md#create). Düzenle denetim stilleri Windows hakkında daha fazla bilgi için bkz: [Düzenle denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb775464).  
   
@@ -332,9 +326,7 @@ Düzenleme stilleri uygulamak için [CEdit sınıfı](../../mfc/reference/cedit-
 |`ES_UPPERCASE`|Tüm karakterleri düzenleme denetimine yazılan gibi büyük harfe dönüştürür.|  
 |`ES_WANTRETURN`|Kullanıcı bir iletişim kutusunda birden çok satırlı düzenleme denetimine metin yazarken ENTER tuşuna bastığında bir satır başı karakteri eklenmesini belirtir. Bu stili ENTER tuşuna basarak iletişim kutuları varsayılan basma düğmesi tuşuna basarak aynı etkiye sahiptir. Bu stili düzenleme denetimi tek satırlı üzerinde hiçbir etkisi yoktur.|  
   
-<a name="frame-window-styles-mfc"></a>  
-  
-## <a name="frame-window-styles"></a>Çerçeve pencere stilleri  
+## <a name="frame-window-styles-mfc"></a> Çerçeve pencere stilleri  
   
 Çerçeve pencere stilleri uygulamak için [CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md) nesneleri. Stilleri bileşimini belirtin `dwStyle` parametresinin [CFrameWnd::Create](../../mfc/reference/cframewnd-class.md#create).  
   
@@ -342,11 +334,9 @@ Düzenleme stilleri uygulamak için [CEdit sınıfı](../../mfc/reference/cedit-
 |-----------|-----------------|  
 |`FWS_ADDTOTITLE`|Çerçeve penceresi başlığı sonuna bilgileri belirtir. Örneğin, "Microsoft çizin – çizim içinde Document1". Belge şablonu dizeleri sekmesi Uygulama Sihirbazı'nda görüntülenen dizeleri belirtebilirsiniz. Bu seçenek devre dışı bırakmak gerekiyorsa, geçersiz kılma `CWnd::PreCreateWindow` üye işlevi.|  
 |`FWS_PREFIXTITLE`|Uygulama adı önce belge adı bir çerçeve pencere başlığında görüntülenir. Örneğin, "Belge – WordPad". Belge şablonu dizeleri sekmesi Uygulama Sihirbazı'nda görüntülenen dizeleri belirtebilirsiniz. Bu seçenek devre dışı bırakmak gerekiyorsa, geçersiz kılma `CWnd::PreCreateWindow` üye işlevi.|  
-|`FWS_SNAPTOBARS`|Denetimleri boyutlandırma zaman, kayan bir pencere yerine bir çerçeve penceresinde yerleşik çubuğu denetim barındırır çerçeve penceresi. Bu stili denetim çubuğu uyacak şekilde pencere boyutları.|  
+|`FWS_SNAPTOBARS`|Denetimleri boyutlandırma zaman, kayan bir pencere yerine bir çerçeve penceresinde yerleşik çubuğu denetim barındırır çerçeve penceresi. Bu stili denetim çubuğu uyacak şekilde pencere boyutları.|
   
-<a name="list-box-styles"></a>  
-  
-## <a name="list-box-styles"></a>Liste kutusu stilleri  
+## <a name="list-box-styles"></a> Liste kutusu stilleri  
   
 Liste kutusu stilleri uygulamak için [CListBox sınıfı](../../mfc/reference/clistbox-class.md) nesneleri. Stilleri bileşimini belirtin `dwStyle` parametresinin [CListBox::Create](../../mfc/reference/clistbox-class.md#create). Liste kutusu stilleri Windows hakkında daha fazla bilgi için bkz: [liste kutusu stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775149).  
   
@@ -369,9 +359,7 @@ Liste kutusu stilleri uygulamak için [CListBox sınıfı](../../mfc/reference/c
 |`LBS_USETABSTOPS`|Algılar ve kendi dizeleri çizerken sekme karakterleri genişletmek bir liste kutusu sağlar. Varsayılan sekme konumlar 32 iletişim birimleridir. (Bir iletişim yatay ve dikey uzaklık birimdir. Bir yatay iletişim biriminin geçerli iletişim temel genişliği biriminin bir-dördüncü için eşittir. İletişim kutusu temel birimleri geçerli sistem yazı tipi genişliği ve yüksekliği göre hesaplanır. `GetDialogBaseUnits` Windows işlevi temel birimleri geçerli iletişim piksel cinsinden döndürür.) Bu stili ile kullanılmamalıdır `LBS_OWNERDRAWFIXED`.|  
 |`LBS_WANTKEYBOARDINPUT`|Liste kutusu sahibi alır `WM_VKEYTOITEM` veya `WM_CHARTOITEM` her liste kutusu odak giriş sırada kullanıcının bir anahtar bastığında iletileri. Bu klavye girdisi özel işlem gerçekleştirmek bir uygulama sağlar.|  
   
-<a name="message-box-styles"></a>  
-  
-## <a name="message-box-styles"></a>İleti kutusu stilleri  
+##<a name="message-box-styles"></a>  İleti kutusu stilleri  
   
 İleti kutusu stilleri uygulamak için [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) öğeleri. Stilleri bileşimini belirtin `nType` parametresinin `AfxMessageBox`. Windows ileti kutusu stilleri hakkında daha fazla bilgi için bkz: [MessageBox işlevi (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms645505).  
   
@@ -412,9 +400,7 @@ Aşağıdaki ileti kutusu stilleri kullanılabilir.
 |`MB_DEFBUTTON2`|İkinci düğme varsayılandır.|  
 |`MB_DEFBUTTON3`|Üçüncü düğme varsayılandır.|  
   
-<a name="scroll-bar-styles"></a>  
-  
-## <a name="scroll-bar-styles"></a>Kaydırma çubuğu stilleri  
+## <a name="scroll-bar-styles"></a> Kaydırma çubuğu stilleri  
   
 Kaydırma çubuğu stilleri uygulamak için [CScrollBar sınıfı](../../mfc/reference/cscrollbar-class.md) nesneleri. Stilleri bileşimini belirtin `dwStyle` parametresinin [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create). Kaydırma çubuğu denetim stilleri Windows hakkında daha fazla bilgi için bkz: [kaydırma çubuğu denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb787533).  
   
@@ -431,9 +417,7 @@ Kaydırma çubuğu stilleri uygulamak için [CScrollBar sınıfı](../../mfc/ref
 |`SBS_TOPALIGN`|İle kullanılan `SBS_HORZ` stili. Kaydırma çubuğunun üst kenarı belirtilen dikdörtgenin üst ucuyla hizalanır `Create` üye işlevi. Kaydırma çubuğu sistem kaydırma çubukları için varsayılan yükseklik sahiptir.|  
 |`SBS_VERT`|Dikey kaydırma çubuğu belirler. Ne `SBS_RIGHTALIGN` ya da `SBS_LEFTALIGN` stili belirtilmediyse, kaydırma çubuğunun yüksekliği, genişlik ve verilen konumu sahip `Create` üye işlevi.|  
   
-<a name="static-styles"></a>  
-  
-## <a name="static-styles"></a>Statik stiller  
+## <a name="static-styles"></a> Statik stiller  
   
 Statik stiller uygulamak için [CStatic sınıfı](../../mfc/reference/cstatic-class.md) nesneleri. Stilleri bileşimini belirtin `dwStyle` parametresinin [CStatic::Create](../../mfc/reference/cstatic-class.md#create). Statik denetim stilleri Windows hakkında daha fazla bilgi için bkz: [statik denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb760773).  
   
@@ -467,9 +451,7 @@ Statik stiller uygulamak için [CStatic sınıfı](../../mfc/reference/cstatic-c
 |`SS_WHITERECT`|Pencere arka doldurmak için kullanılan renkle dolu bir dikdörtgen belirtir. Beyaz varsayılandır.|  
 |`SS_WORDELLIPSIS`|Uymayan ve üç nokta eklediği metni keser.|  
   
-<a name="window-styles"></a>  
-  
-## <a name="window-styles"></a>Pencere stilleri  
+## <a name="window-styles"></a> Pencere stilleri  
   
 Pencere stilleri uygulamak için [CWnd sınıfı](../../mfc/reference/cwnd-class.md) nesneleri. Stilleri bileşimini belirtin `dwStyle` parametresinin [CWnd::Create](../../mfc/reference/cwnd-class.md#create) veya [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). Pencere stilleri Windows hakkında daha fazla bilgi için bkz: [pencere stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600).  
   
@@ -503,9 +485,7 @@ Pencere stilleri uygulamak için [CWnd sınıfı](../../mfc/reference/cwnd-class
 |`WS_VISIBLE`|Başlangıçta görünür bir pencere oluşturur.|  
 |`WS_VSCROLL`|Dikey kaydırma çubuğu sahip bir pencere oluşturur.|  
   
-<a name="extended-window-styles"></a>  
-  
-## <a name="extended-window-styles"></a>Genişletilmiş pencere stilleri  
+## <a name="extended-window-styles"></a> Genişletilmiş pencere stilleri  
   
 Genişletilmiş pencere stilleri uygulamak için [CWnd sınıfı](../../mfc/reference/cwnd-class.md) nesneleri. Stilleri bileşimini belirtin `dwExStyle` parametresinin [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). Genişletilmiş pencere stilleri Windows hakkında daha fazla bilgi için bkz: [genişletilmiş pencere stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff700543).  
   

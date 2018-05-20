@@ -1,3 +1,4 @@
+
 # [ATL Sınıfları ve Yapıları](atl-classes.md)
 ## [_ATL_BASE_MODULE70 Yapısı](atl-base-module70-structure.md)
 ## [_ATL_COM_MODULE70 Yapısı](atl-com-module70-structure.md)
@@ -204,6 +205,7 @@
 ## [IWorkerThreadClient Sınıfı](iworkerthreadclient-interface.md)
 ## [Win32ThreadTraits Sınıfı](win32threadtraits-class.md)
 ## [Çalışan Modeli](worker-archetype.md)
+# [ATL_URL_SCHEME](atl-url-scheme-enum.md)
 # [ATL İşlevleri](atl-functions.md)
 ## [ATL HTTP Yardımcı İşlevleri](atl-http-utility-functions.md)
 ## [ATL Metin Kodlama İşlevleri](atl-text-encoding-functions.md)
@@ -242,7 +244,9 @@
 ## [Dize Dönüşüm Makroları](string-conversion-macros.md)
 ## [Pencere Sınıfı Makroları](window-class-macros.md)
 ## [Windows İletisi Makroları](windows-messages-macros.md)
+# [ATL İşleçleri](atl-operators.md)
 # [ATL Genel Değişkenler](atl-global-variables.md)
+# [ATL Tür tanımları](atl-typedefs.md)
 # [ATL Sihirbazları ve İletişim Kutuları](atl-wizards-and-dialog-boxes.md)
 ## [Uygulama Ayarları, ATL Proje Sihirbazı](application-settings-atl-project-wizard.md)
 ## [ATL Active Server Page Bileşeni Sihirbazı, ASP](asp-atl-active-server-page-component-wizard.md)
