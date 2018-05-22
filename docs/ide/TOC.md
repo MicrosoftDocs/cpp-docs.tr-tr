@@ -71,6 +71,7 @@
 ## [Visual C++ Uygulaması Bağımlılıklarını Anlama](understanding-the-dependencies-of-a-visual-cpp-application.md)
 ## [Hangi DLL'lerin Yeniden Dağıtılacağını Belirleme](determining-which-dlls-to-redistribute.md)
 ## [Dağıtım Yöntemi Seçme](choosing-a-deployment-method.md)
+## [Evrensel CRT dağıtımı](universal-crt-deployment.md)
 ## [Visual C++ Dosyalarını Yeniden Dağıtma](redistributing-visual-cpp-files.md)
 ### [Birleştirme Modüllerini Kullanarak Bileşenleri Yeniden Dağıtma](redistributing-components-by-using-merge-modules.md)
 ### [Visual C++ ActiveX Denetimlerini Yeniden Dağıtma](redistributing-visual-cpp-activex-controls.md)

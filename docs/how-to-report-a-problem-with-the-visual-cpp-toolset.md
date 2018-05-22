@@ -10,27 +10,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72721e6a1ee75f7e786bd059c02ede5d275b0f4e
-ms.sourcegitcommit: e1e0104486250e12259c71185b0d1c21ddd16bb1
+ms.openlocfilehash: f0044a0da7b1ac4ad052eb120ccfb1f7425d2c0e
+ms.sourcegitcommit: 06b1f7bde6b3f8bed0f3db91d14e2d974444c1e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/20/2018
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ araç takımını veya belgelerinde bir sorun bildirme
 
 Microsoft Visual C++ Derleyici, bağlayıcı, veya diğer araçlar ve kitaplıkları sorunlarla karşılaşırsanız, bunları hakkında bilmek isteriz. Sorun Belgelerimizdeki ise, hakkında çok bilmek isteriz.
 
-## <a name="how-to-report-a-c-documentation-issue"></a>C++ belgeleri sorun bildirme
-
-GitHub sorunları Belgelerimizdeki bildirilen sorunlarını izlemek için kullanırız. Yazarlar ve ürün ekipleriyle çok daha zengin bir yol sağlayan bir içerik sayfasını doğrudan sorunlarını etkileşimli GitHub artık oluşturabilirsiniz. Bir belge, hatalı kod örneği, karmaşık bir açıklama, kritik atlandığını veya bile yalnızca bir yazım hatası ile ilgili bir sorun görürseniz, kolayca bize bildirin. Kaydırma seçin ve sayfanın altına **belgelerine geribildirim vermek oturum**. GitHub hesabı zaten yoksa, ancak bunu yaptığınızda, tüm bizim belgelerine sorunları, bunların durumunu görmek ve, bildirilen sorunu için yapılan bir değişiklik olduğunda bildirim almak oluşturmanız gerekir. Daha fazla bilgi için bkz: [A yeni geri bildirim sistemi yakında docs.microsoft.com için](/teamblog/a-new-feedback-system-is-coming-to-docs).
-
-Belge geri bildirim düğmesini kullanarak Github'da belgelerine konu oluşturduğunuzda, sorunun nerede olduğunu biliyoruz şekilde sorunu, sorunu oluşturulan sayfa hakkında bazı bilgiler ile otomatik olarak doldurulur. Lütfen bu bilgileri düzenleyin yok. Yalnızca yanlış ve, isterseniz, önerilen bir düzeltmeyi yenilikler hakkında ayrıntılı bilgi ekleyin. [Belgelerimizi açık bir kaynaktır](https://github.com/MicrosoftDocs/cpp-docs/), aslında bir düzeltme yapıp kendiniz önermek istiyorsanız, bunu yapabilirsiniz. Bizim belgelerine nasıl katkıda hakkında daha fazla bilgi için bkz: bizim [Contributing Kılavuzu](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) github'da.
-
-## <a name="how-to-report-a-c-product-issue"></a>C++ ürün sorun bildirme
+## <a name="how-to-report-a-c-toolset-issue"></a>C++ araç takımını sorun bildirme
 
 Bir sorun hakkında bilmeniz bize en iyi yolu bize programınızı oluşturmakta olduğunuz nasıl ve bir hakkında hatayla karşılaşıldı, Ayrıntılar sorun açıklamasını içeren bir rapor göndermektir *yeniden oluşturma*, yeniden oluşturmak için kullanabileceğiniz eksiksiz bir test çalışması sorunu kendi makinelerde. Bu bilgiler sorunu bizim kodda var ve ortamınız için derleyici'nin diğer sürümlerini etkiler olup olmadığını belirlemek ve nedenini tanılamak için yerel değil hızla doğrulamamıza olanak sağlar.
 
-Yakalamasını içinde aşağıdaki bölümler, iyi bir rapor kılan, yeniden oluşturma, buldunuz sorunu tür oluşturmak nasıl ve ürün ekibine raporunuzu göndermek nasıl okumanız. Raporlarınızı bize ve sizin gibi diğer geliştiriciler için önemlidir. Visual C++ geliştirmemize yardımcı olduğunuz için teşekkür ederiz!
+Aşağıdaki bölümlerde, iyi bir rapor kılan, yeniden oluşturma, buldunuz sorunu tür oluşturmak nasıl ve ürün ekibine raporunuzu göndermek nasıl okumanız. Raporlarınızı bize ve sizin gibi diğer geliştiriciler için önemlidir. Visual C++ geliştirmemize yardımcı olduğunuz için teşekkür ederiz!
 
 ## <a name="how-to-prepare-your-report"></a>Raporunuzu hazırlama
 
@@ -56,16 +50,25 @@ Tam sürüm bilgileri ve sorunu neden olur ve böylece, yeniden oluşturma aynı
 
 1. Açık **Geliştirici komut istemi** projenizi oluşturmak için kullanılan Visual Studio sürümü ve yapılandırma mimarisi ile eşleşir. Örneğin, Visual Studio 2017 üzerinde x64 için x64 kullanarak yapılandırdıysanız hedefleri seçin **x64 VS 2017 için yerel Araçları Komut İstemi**. Daha fazla bilgi için bkz: [Geliştirici komut istemi kısayolları](build/building-on-the-command-line.md#developer-command-prompt-shortcuts).
 
-1. Geliştirici komut istemi konsol penceresinde aşağıdaki komutu girin **cl**.
+1. Geliştirici komut istemi konsol penceresinde aşağıdaki komutu girin **cl /Bv**.
 
 Çıktı aşağıdakine benzer görünmelidir:
 
 ```Output
-C:\Users\username\Source>cl
-Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x64
+C:\Users\username\Source>cl /Bv
+Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26428.1 for x86
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
-usage: cl [ option... ] filename... [ /link linkoption... ]
+Compiler Passes:
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\cl.exe:        Version 19.14.26428.1
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\c1.dll:        Version 19.14.26428.1
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\c1xx.dll:      Version 19.14.26428.1
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\c2.dll:        Version 19.14.26428.1
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\link.exe:      Version 14.14.26428.1
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\mspdb140.dll:  Version 14.14.26428.1
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\1033\clui.dll: Version 19.14.26428.1
+
+cl : Command line error D8003 : missing source filename
 ```
 
 Kopyalayabilir ve tüm çıktı raporunuzu yapıştırabilirsiniz.
@@ -90,11 +93,11 @@ Kopyalayın ve tüm komut satırı, rapora yapıştırın.
 
 Biz biz bizim makineler aynı etkisini görmek doğrulayabilir karşılaşılan sorunla ayrıntılı bir açıklaması ihtiyacımız; kendi da bazen yararlı bize gerçekleştirmek çalıştığınız ve olmasını beklediğinizi bilmeleri için.
 
-Lütfen gördüğünüz verilen araç takımı veya tam çalışma zamanı davranışı tam hata iletileri sağlayın. Biz düzgün sorunu çoğaltılamaz olduğunu doğrulamak için bu bilgilere ihtiyacımız var. Lütfen tüm Derleyici çıktısı, yalnızca son hata iletisi içerir. Bildirdiğiniz sorunun açan her şeyi görmek gerekir. Komut satırı derleyicisini kullanarak sorunu çoğaltabilirsiniz olduğunda, o Derleyici çıktısı tercih edilir; IDE ve diğer yapı sistemleri hata iletileri görmek veya yalnızca bir hata iletisi, ilk satırının yakalama filtre uygulayabilir.
+Lütfen **tam hata iletileri** verilen araç takımı veya gördüğünüz tam çalışma zamanı davranışı. Biz düzgün sorunu çoğaltılamaz olduğunu doğrulamak için bu bilgilere ihtiyacımız var. Lütfen dahil **tüm** çıkışı, derleyici yalnızca son hata iletisi. Bildirdiğiniz sorunun açan her şeyi görmek gerekir. Komut satırı derleyicisini kullanarak sorunu çoğaltabilirsiniz olduğunda, o Derleyici çıktısı tercih edilir; IDE ve diğer yapı sistemleri hata iletileri görmek veya yalnızca bir hata iletisi, ilk satırının yakalama filtre uygulayabilir.
 
 Lütfen sorunu derleyici geçersiz kodu kabul eder ve bir tanılama oluşturmaz ise, bu rapor unutmayın.
 
-Bir çalışma zamanı davranışı sorunu bildirmek için program yazdırır ve görmeyi beklediğiniz tam bir kopyasını içerir. İdeal olarak, bu çıkış deyiminde kendisi, örneğin, gömülü olduğu `printf("This should be 5: %d\n", actual_result);`. Programınızı kilitleniyor veya askıda kalır, bu da söz.
+Bir çalışma zamanı davranışı sorunu bildirmek için içeren bir **tam kopyalama** program yazdırır ve görmeyi beklediğiniz. İdeal olarak, bu çıkış deyiminde kendisi, örneğin, gömülü olduğu `printf("This should be 5: %d\n", actual_result);`. Programınızı kilitleniyor veya askıda kalır, bu da söz.
 
 Bize yardımcı olabilecek herhangi bir ayrıntıyı, tüm iş bulduğunuz ya gibi karşılaştığınız sorunu tanılamak ekleyin. Başka bir yerde raporunuzda bulunan bilgileri yinelenen kaçının.
 
@@ -247,15 +250,75 @@ A *yeniden oluşturma ön işlemesi yapılan* C önişlemci çıktısını kulla
 
 1. Geliştirici komut istemi konsol penceresinde aşağıdaki komutu girin **cl /P** *bağımsız değişkenleri* *filename.cpp*, burada *bağımsız değişkenleri* olduğu Yukarıdaki yakalanan bağımsız değişkenlerinin listesi ve *filename.cpp* , yeniden oluşturma kaynak dosyasının adıdır. Bu komutu yeniden oluşturma için kullanılan komut satırı yinelenir ancak önişlemci geçişi sonrasında derleme durdurur ve önceden işlenmiş kaynak koduna çıkarır *filename*. ediyorum.
 
+C + işleniyorsa +/ CX kaynak kodu dosyasının veya C++ modülleri özelliğini kullanıyor, bazı ek adımlar gereklidir. Daha fazla bilgi için aşağıdaki bölümlere bakın.
+
 Önceden işlenmiş dosyasını oluşturduktan sonra onu emin olmak için iyi bir fikirdir önceden işlenmiş dosyasını kullanarak sorunu hala repros.
 
 #### <a name="to-confirm-that-the-error-still-repros-with-the-preprocessed-file"></a>Onaylamak için hata önceden işlenmiş dosyasıyla repros hala
 
-1. Geliştirici komut istemi konsol penceresinde aşağıdaki komutu girin **cl** *bağımsız değişkenleri* **/TP** *filename *** .i** cl.exe için bildirmek için C++ kaynak dosyası olarak önceden işlenmiş dosyasını derleyin nerede *bağımsız değişkenleri* yukarıda ancak herhangi biriyle yakalanan bağımsız değişkenleri listesi **/D** ve **/I** bağımsız değişkenleri (Bunlar zaten önceden işlenmiş dosyasında dahil edilmiş olduğundan) kaldırılır; ve nerede *filename *** .i** önceden işlenmiş dosyanızı adıdır.
+1. Geliştirici komut istemi konsol penceresinde aşağıdaki komutu girin **cl** *bağımsız değişkenleri* **/TP** *filename*.i derlemek için cl.exe bildirmek için C++ kaynak dosyası olarak önceden işlenmiş dosya burada *bağımsız değişkenleri* yukarıda ancak herhangi biriyle yakalanan bağımsız değişkenleri listesi **/D** ve **/I** bağımsız değişkenler (çünkü kaldırıldı Bunlar zaten önceden işlenmiş dosyasında dahil edilmiş); ve nerede *filename*.i önceden işlenmiş dosyanızı adıdır.
 
 1. Sorunu yeniden olduğunu onaylayın.
 
 Son olarak, önceden işlenmiş yeniden oluşturma attach *filename*raporunuza .i.
+
+### <a name="preprocessed-ccx-winrtuwp-code-repros"></a>C + ön işlemesi yapılan +/ CX WinRT/UWP kod repros
+
+C + kullanıyorsanız, +/ CX yürütülebilir dosyanın, yapı oluşturmak ve önceden işlenmiş yeniden oluşturma doğrulamak için gereken bazı ek adımlar vardır.
+
+#### <a name="to-preprocess-ccx-source-code"></a>İçin önişle C + +/ CX kaynak kodu
+
+1. Bölümünde açıklandığı gibi önceden işlenmiş kaynak dosyası oluşturma [kaynak kodu dosyasının önişle için](#to-preprocess-a-source-code-file).
+
+1. Oluşturulan arama _filename_.i dosyası için **#using** yönergeleri.
+
+1. Başvurulan tüm dosyaların listesini hazırlayın. Tüm Windows bırakın\*.winmd dosyaları, platform.winmd dosyaları ve mscorlib.dll.
+
+Önceden işlenmiş dosya hala sorun oluşmazsa doğrulamak hazırlamak için
+
+1. Önceden işlenmiş dosya için yeni bir dizin oluşturun ve yeni dizine kopyalayın.
+
+1. .Winmd dosyalarından kopyalamak, **#using** dosyasını yeni dizine listesi.
+
+1. Yeni bir dizinde bir boş vccorlib.h dosyası oluşturun.
+
+1. Kaldırmak için önceden işlenmiş dosyasını düzenleyin **#using** mscorlib.dll yönergeleri.
+
+1. Mutlak yollar yalnızca tam dosya adları kopyalanan .winmd dosyaları değiştirmek için önceden işlenmiş dosyasını düzenleyin.
+
+Önceden işlenmiş dosya hala yukarıdaki sorun oluşmazsa onaylayın.
+
+### <a name="preprocessed-c-modules-repros"></a>Önceden işlenmiş C++ modülleri repros
+
+C++ derleyicisi modülleri özelliğini kullanıyorsanız, oluşturabilir ve önceden işlenmiş yeniden oluşturma doğrulamak için gereken bazı farklı adımlar vardır.
+
+#### <a name="to-preprocess-a-source-code-file-that-uses-a-module"></a>Bir modül kullanan bir kaynak kodu dosyasının önişle
+
+1. Bölümünde açıklandığı gibi yeniden oluşturma oluşturmak için kullanılan komut satırı bağımsız değişkenleri yakalama [komut satırının içeriğini bildirmek için](#to-report-the-contents-of-the-command-line).
+
+1. Açık **Geliştirici komut istemi** projenizi oluşturmak için kullanılan Visual Studio sürümü ve yapılandırma mimarisi ile eşleşir.
+
+1. Yeniden oluşturma projenizi içeren dizine geçin.
+
+1. Geliştirici komut istemi konsol penceresinde aşağıdaki komutu girin **cl /P** *bağımsız değişkenleri* *filename.cpp*, burada *bağımsız değişkenleri* olduğu Yukarıdaki yakalanan bağımsız değişkenlerinin listesi ve *filename.cpp* modülünü kullanan kaynak dosyasının adıdır.
+
+1. Modül arabirimi (.ifc çıktı) yerleşik yeniden oluşturma projeyi içeren dizine geçin.
+
+1. Modül arabirimi oluşturmak için kullanılan komut satırı bağımsız değişkenleri yakalayın.
+
+1. Geliştirici komut istemi konsol penceresinde aşağıdaki komutu girin **cl /P** *bağımsız değişkenleri* *modulename.ixx*, burada *bağımsız değişkenleri* olduğu Yukarıdaki yakalanan bağımsız değişkenlerinin listesi ve *modulename.ixx* modülü arabirimi oluşturur dosyasının adıdır.
+
+Önceden işlenmiş dosyaları oluşturduktan sonra önceden işlenmiş dosyasını kullanarak sorunu hala repros emin olmak için iyi bir fikirdir.
+
+#### <a name="to-confirm-that-the-error-still-repros-with-the-preprocessed-file"></a>Onaylamak için hata önceden işlenmiş dosyasıyla repros hala
+
+1. Geliştirici konsol penceresinde geri yeniden oluşturma projenizi içeren dizine geçin.
+
+1. Aşağıdaki komutu girin **cl** *bağımsız değişkenleri* **/TP** *filename*.i yukarıdakiyle bir C++ kaynak dosyası değilmiş gibi önceden işlenmiş dosya derlemek için.
+
+1. Sorun hala önceden işlenmiş dosyasıyla yeniden onaylayın.
+
+Son olarak, önceden işlenmiş yeniden oluşturma dosyaları Ekle (*filename*.i ve *modulename*.i) raporunuzu .ifc çıkışı yanı sıra.
 
 ### <a name="link-repros"></a>Bağlantı repros
 
@@ -291,10 +354,10 @@ Yeniden oluşturma en az bir IDE projesi olarak oluşturun, sonra bir .zip dosya
 
 ## <a name="ways-to-send-your-report"></a>Raporunuzu gönderme yolları
 
-Raporunuzu bize almak için birkaç yolu vardır. Visual Studio'nun yerleşik kullanabilirsiniz [bir sorun aracı rapor](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), veya [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sayfaları. Seçerek doğrudan sunduğumuz Geliştirici topluluğu sayfalara alabilirsiniz **ürün geri bildirim** bu sayfanın sonundaki düğmesi. Raporunuzu içeren bir e-posta göndermek mümkündür, ancak ilk iki yöntem tercih edilir. Seçimi nasıl raporunuzu araştırmak mühendisleri ile etkileşim kurmak istediğinizi ve olup, ilerleme durumunu izlemek veya raporunuzu toplulukla paylaştığı istediğiniz bağlıdır.
+Çeşitli raporunuzu bize almak için iyi şekillerde vardır. Visual Studio'nun yerleşik kullanabilirsiniz [bir sorun aracı rapor](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), veya [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sayfaları. Seçerek doğrudan sunduğumuz Geliştirici topluluğu sayfalara alabilirsiniz **ürün geri bildirim** bu sayfanın sonundaki düğmesi. Seçimi ekran görüntüleri yakalama ve geliştirici topluluğu sayfalarında nakil raporunuzun düzenleme için IDE içinde yerleşik araçları kullanmak mı istediğinizi ya da doğrudan Web sitesi kullanmayı tercih ederseniz bağlıdır.
 
 > [!NOTE]
-> Raporunuzu nasıl gönderme bağımsız olarak, Microsoft, gizliliğinize saygı duyar. Biz bize gönderin verileri nasıl işler hakkında daha fazla bilgi için bkz: [Microsoft Visual Studio ürün ailesi gizlilik bildirimi](https://www.visualstudio.com/dn948229).
+> Raporunuzu nasıl gönderme bağımsız olarak, Microsoft, gizliliğinize saygı duyar. Microsoft, tüm veri gizlilik yasalarına ve düzenlemelerine ile uyumluluk için taahhüt eder. Biz bize gönderin verileri nasıl işler hakkında daha fazla bilgi için bkz: [Microsoft Visual Studio ürün ailesi gizlilik bildirimi](https://www.visualstudio.com/dn948229).
 
 ### <a name="use-the-report-a-problem-tool"></a>Rapor bir sorun aracını kullanın
 
@@ -312,26 +375,34 @@ Yazılım geliştirme topluluğuna başlığı, her sayfanın üstüne yakın g�
 
 Sorununuzu önce bildirilmedi kaldığınızda **bir sorun bildirmek** Geliştirici topluluğu sayfasında arama kutusunun yanında düğmesi. Visual Studio hesabınızda oturum açın ve profilinize Geliştirici topluluğu uygulama erişimi vermek kabul etmeniz istenebilir. Oturum açtığında, sorunun nerede rapor doğrudan sayfasına gidin. Yeniden oluşturma kodunuzu ve komut satırı, ekran görüntüleri, ilgili tartışmalar bağlantılar ve ilgili ve yararlı olduğunu düşündüğünüz diğer bilgiler içerebilir.
 
-### <a name="send-an-email"></a>Bir e-posta Gönder
-
-E-posta raporunuzu Visual C++ Takımı'na doğrudan göndermek için başka bir yoldur. Bizimle ulaşabilir [ compilercrash@microsoft.com ](mailto:compilercrash@microsoft.com). E-posta kullanarak Geliştirici topluluğuna bildirilen sorunları olabildiğince yakın izlenmez beri yalnızca diğer iki kullanılamıyor, bu yöntemi kullanırsanız **bir sorun bildirmek** aracı veya web sayfalarını ve açıklamaları ve çözümleri diğer Visual Studio kullanıcılara görünür.
-
-E-posta ile raporu göndermeyi seçerseniz, aşağıdaki şablonu, e-posta iletisinin gövdesi olarak kullanabilirsiniz. Bu bilgileri e-posta gövdesindeki dahil değil, kaynak kodu veya diğer dosyaları eklemek unutmayın.
-
-```Example
-To: compilercrash@microsoft.com
-Subject: Visual C++ Error Report
------
-
-Compiler version:
-
-CL.EXE command line:
-
-Problem description:
-
-Source code and repro steps:
-
-```
-
 > [!TIP]
-> Visual Studio'da, araç takımı için (örneğin, kullanıcı Arabirimi sorunları, bozuk bir IDE işlevsellik veya genel çökme (Crash)), ilişkili olmayan karşılaşabileceğiniz sorunları diğer türleri için **bir sorun aracı rapor** özellikle iyi bir seçim son olabilir kendi ekran yetenekleri ve soruna yol kayıt UI eylemlerini kendi yeteneği karşılaştı. Bu tür hatalara da üzerinde bildirilebilir [Geliştirici topluluğu](https://developercommunity.visualstudio.com/) site. Hiçbir zaman bu diğer tür hatalara e-posta göndererek bildirmelisiniz compilercrash@microsoft.com.
+> Visual Studio'da, araç takımı için (örneğin, kullanıcı Arabirimi sorunları, bozuk bir IDE işlevsellik veya genel çökme (Crash)), ilişkili olmayan karşılaşabileceğiniz sorunları diğer türleri için **bir sorun aracı rapor** özellikle iyi bir seçim son olabilir kendi ekran yetenekleri ve soruna yol kayıt UI eylemlerini kendi yeteneği karşılaştı. Bu tür hatalara da üzerinde bildirilebilir [Geliştirici topluluğu](https://developercommunity.visualstudio.com/) site.
+
+### <a name="reports-and-privacy"></a>Raporlar ve gizlilik
+
+Varsayılan olarak, **raporlar ve açıklamaları ve yanıtları tüm bilgileri herkese görünür**. Sorunları, çözümleri ve diğer kullanıcıların bulduğunuz geçici çözümleri görmek tamamını topluluk izin verdiği için normalde, bir avantajı budur. Ancak, verileri veya kimlik gizlilik veya fikri mülkiyet nedenleri için ortak sağlama konusunda endişe, seçeneğiniz vardır.
+
+Kimliğinizi ortaya hakkında endişeleriniz varsa [yeni bir Microsoft hesabı oluşturmak](https://signup.live.com/) ilgili herhangi bir ayrıntıyı açıklamaz. Raporunuzu oluşturmak için bu hesabı kullanın. 
+
+**Özel başlık veya ortak ilk rapor içeriği tutmak istediğiniz herhangi bir şey koymayın.** Bunun yerine, ayrıntıları özel olarak ayrı bir açıklama için gönderir unutmayın. Raporunuzu doğru kişilere yönlendirilir emin olmak için eklemeniz **cppcompiler** sorun raporu Konu listesinde. Sorun raporu oluşturulduktan sonra artık kimlerin yanıtlar ve ekleri görebileceğini belirtmek mümkündür.
+
+#### <a name="to-create-a-problem-report-for-private-information"></a>Özel bilgi sorun raporu oluşturmak için
+
+1. Oluşturulan rapora seçin **açıklama eklemek** özel, sorunun açıklamasını oluşturmak için.
+
+1. Aşağıdaki açılan denetimi yanıt Düzenleyicisi'nde kullanma **gönderme** ve **iptal** yanıtınızı kitlesi belirtmek için düğmeler. Yalnızca belirttiğiniz kişilerin, bu özel yanıtları ve tüm görüntüleri, bağlantılar veya kod içine dahil görebilirsiniz. Seçin **Viewable araburucu ve özgün posteri** görünürlük Microsoft çalışanlarına ve kendiniz için sınırlamak için.
+
+1. Açıklama ve herhangi diğer bilgileri, görüntüler ve dosya ekleri, yeniden oluşturma için gerekli ekleyin. Seçin **gönderme** özel olarak bu bilgileri göndermek için düğme.
+
+   Ekli dosyalar ve en fazla 10 dosya 2 GB sınırını olduğuna dikkat edin. Tüm büyük yüklemeler için lütfen özel yorumunuzu karşıya yükleme URL'de isteyin.
+
+Bu açıklama altında yanıtları belirttiğiniz aynı kısıtlı görünürlük vardır. Yanıtları açılır denetimin kısıtlı görünürlük durumu doğru göstermez olsa bile bu geçerlidir.
+
+Gizliliğinizi korumak ve hassas bilgilerinizi genel görünümü dışında tutmak için lütfen Microsoft ile tüm etkileşim yanıtları bu kısıtlı açıklama altında tutmak için dikkatli olun. Diğer açıklamaları yanıtlar hassas bilgilerin yanlışlıkla açığa neden olabilir.
+
+## <a name="how-to-report-a-c-documentation-issue"></a>C++ belgeleri sorun bildirme
+
+GitHub sorunları Belgelerimizdeki bildirilen sorunlarını izlemek için kullanırız. Yazarlar ve ürün ekipleriyle çok daha zengin bir yol sağlayan bir içerik sayfasını doğrudan sorunlarını etkileşimli GitHub artık oluşturabilirsiniz. Bir belge, hatalı kod örneği, karmaşık bir açıklama, kritik atlandığını veya bile yalnızca bir yazım hatası ile ilgili bir sorun görürseniz, kolayca bize bildirin. Kaydırma seçin ve sayfanın altına **belgelerine geribildirim vermek oturum**. GitHub hesabı zaten yoksa, ancak bunu yaptığınızda, tüm bizim belgelerine sorunları, bunların durumunu görmek ve, bildirilen sorunu için yapılan bir değişiklik olduğunda bildirim almak oluşturmanız gerekir. Daha fazla bilgi için bkz: [A yeni geri bildirim sistemi yakında docs.microsoft.com için](/teamblog/a-new-feedback-system-is-coming-to-docs).
+
+Belge geri bildirim düğmesini kullanarak Github'da belgelerine konu oluşturduğunuzda, sorunun nerede olduğunu biliyoruz şekilde sorunu, sorunu oluşturulan sayfa hakkında bazı bilgiler ile otomatik olarak doldurulur. Lütfen bu bilgileri düzenleyin yok. Yalnızca yanlış ve, isterseniz, önerilen bir düzeltmeyi yenilikler hakkında ayrıntılı bilgi ekleyin. [Belgelerimizi açık bir kaynaktır](https://github.com/MicrosoftDocs/cpp-docs/), aslında bir düzeltme yapıp kendiniz önermek istiyorsanız, bunu yapabilirsiniz. Bizim belgelerine nasıl katkıda hakkında daha fazla bilgi için bkz: bizim [Contributing Kılavuzu](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) github'da.
+

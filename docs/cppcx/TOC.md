@@ -75,6 +75,7 @@
 #### [Platform::String Sınıfı](platform-string-class.md)
 #### [Platform::StringReference Sınıfı](platform-stringreference-class.md)
 #### [Platform::Type Sınıfı](platform-type-class.md)
+#### [Platform::Type^ İşleci](operator-type-hat.md)
 #### [Platform::TypeCode Numaralandırması](platform-typecode-enumeration.md)
 #### [Platform::UIntPtr değer Sınıfı](platform-uintptr-value-class.md)
 #### [Platform::ValueType Sınıfı](platform-valuetype-class.md)
@@ -113,4 +114,5 @@
 #### [begin İşlevi](begin-function.md)
 #### [end İşlevi](end-function.md)
 #### [to_vector İşlevi](to-vector-function.md)
+### [Windows::UI::Xaml::Interop::TypeName İşleci](operator-windows-ui-xaml-interop-typename.md)
 ## [Evrensel Windows Platformu uygulamalarında desteklenmeyen CRT işlevleri](crt-functions-not-supported-in-universal-windows-platform-apps.md)

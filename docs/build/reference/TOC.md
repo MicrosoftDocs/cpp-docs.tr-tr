@@ -53,6 +53,7 @@
 #### [/favor (Mimari Özellikleri için İyileştirme)](favor-optimize-for-architecture-specifics.md)
 #### [/FC (Kaynak Kodu Dosyasının Tanılamadaki Tam Yolu)](fc-full-path-of-source-code-file-in-diagnostics.md)
 #### [/fp (Kayan Nokta Davranışını Belirt)](fp-specify-floating-point-behavior.md)
+##### [Microsoft Visual C++ Floating Point İyileştirme](floating-point-optimization.md)
 #### [/FS (Zaman Uyumlu PDB Yazmalarını Zorla)](fs-force-synchronous-pdb-writes.md)
 #### [/GA (Windows Uygulaması için İyileştir)](ga-optimize-for-windows-application.md)
 #### [/Gd, /Gr, /Gv, /Gz (Çağırma Kuralı)](gd-gr-gv-gz-calling-convention.md)

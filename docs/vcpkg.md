@@ -14,11 +14,11 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca2bfee3ac9e244402b8a987e30988384b96fcd2
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: ca4c672000278fcfc00ba8c08a7a160faff151aa
+ms.sourcegitcommit: 5e932a0e110e80bc241e5f69e3a1a7504bfab1f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/21/2018
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux ve MacOS için bir C++ Paket Yöneticisi
 
@@ -30,7 +30,7 @@ Tek bir komutla kaynakları indirmek ve kitaplık oluştur. vcpkg kendisi bir a�
 
 ## <a name="sources-not-binaries"></a>Kaynakları değil ikili dosyalar
 
-Windows kataloğunda kitaplıkları için ikili dosyaları [1] yerine kaynakları vcpkg indirir. 2017 yüklü değilse, Visual Studio 2017 ya da Visual Studio 2015 kullanarak bu kaynakları derler. Uygulama kodu gibi bu bağlantılarını C++'da, kullandığınız kitaplıkları aynı derleyici ve derleyici sürümü ile derlendiğini çok önemlidir. Vcpkg'ı kullanarak kaldırın veya eşleşmeyen ikili dosyaları ve sorunlara neden olabilir olası en büyük ölçüde azaltabilir. Visual C++ derleyicisi belirli bir sürümünü standartlaştırılmış takımların bir ekip üyesine vcpkg kaynakları indirmek ve ikili dosyaları kümesini derlemek ve diğer takım üyeleri için ikili dosyaları ve üstbilgileri ZIP Dışa Aktar komutunu kullanmak için kullanabilirsiniz. Daha fazla bilgi için bkz: [verme derlenmiş ikili dosyaları ve üstbilgileri](#export_binaries_per_project) aşağıda.
+Windows kataloğunda kitaplıkları için ikili dosyaları [1] yerine kaynakları vcpkg indirir. 2017 yüklü değilse, Visual Studio 2017 ya da Visual Studio 2015 kullanarak bu kaynakları derler. Uygulama kodu gibi bu bağlantılarını C++'da, kullandığınız kitaplıkları aynı derleyici ve derleyici sürümü ile derlendiğini çok önemlidir. Vcpkg'ı kullanarak kaldırın veya eşleşmeyen ikili dosyaları ve sorunlara neden olabilir olası en büyük ölçüde azaltabilir. Derleyici belirli bir sürümünü standartlaştırılmış takımların bir ekip üyesine vcpkg kaynakları indirmek ve ikili dosyaları kümesini derlemek ve diğer takım üyeleri için ikili dosyaları ve üstbilgileri ZIP Dışa Aktar komutunu kullanmak için kullanabilirsiniz. Daha fazla bilgi için bkz: [verme derlenmiş ikili dosyaları ve üstbilgileri](#export_binaries_per_project) aşağıda.
 
 Bağlantı noktaları koleksiyonundaki özel kitaplıklarla vcpkg kopya oluşturursanız, önceden oluşturulmuş ikili dosyaları ve üst bilgileri indirmeleri bir bağlantı noktası eklemek ve yalnızca değişen dosyaları istenilen konuma kopyalayan bir portfile.cmake dosyası yazma.
 
@@ -41,10 +41,9 @@ Bağlantı noktaları koleksiyonundaki özel kitaplıklarla vcpkg kopya oluştur
 Github'dan vcpkg depoyu kopyalama: https://github.com/Microsoft/vcpkg. Tercih ettiğiniz herhangi bir klasör konumuna indirebilirsiniz.
 
 Önyükleyici kök klasöründe çalıştırın: 
-- **önyükleme vcpkg.bat** (Windows)
-- ./Bootstrap-vcpkg.sh (Linux, MacOS)
 
-## <a name="basic-tasks"></a>Basit görevler
+- **önyükleme vcpkg.bat** (Windows)
+- **./Bootstrap-vcpkg.sh** (Linux, MacOS)
 
 ## <a name="search-the-list-of-available-libraries"></a>Kullanılabilir kitaplık listesini arama
 
@@ -132,6 +131,10 @@ Etkin vcpkg Örneğinizde sürümünden farklı bir kitaplık belirli bir sürü
 1. Çalıştırma **vcpkg yükleme \<kitaplığı >**.
 1. Kullanım **vcpkg tümleştirmek proje** bu kitaplığı proje başına temelinde başvuruda bulunan bir NuGet paketi oluşturmak için.
 
+## <a name="integrate-with-visual-studio-code-linuxmacos"></a>Visual Studio Code (Linux/MacOS) ile tümleştirme 
+
+Çalıştırma **vcpkg tümleştirmek yükleme** Visual Studio Code Linux/MacOS üzerinde vcpkg enlistement konumu ile yapılandırın ve kaynak dosyalarda IntelliSense'i etkinleştirme.
+
 ## <a name="target-linux-from-windows-via-wsl"></a>Hedef Linux WSL aracılığıyla Windows
 
 Linux (WSL) Windows alt kullanarak Linux ikili dosyaları bir Windows makineden üretebilir. Yönergelerini izleyin [WSL Windows 10 ayarlama](https://docs.microsoft.com/en-us/windows/wsl/install-win10)ve onunla yapılandırma [Linux için Visual Studio Uzantısı](https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/). Tüm yerleşik kitaplıkları Windows ve Linux için aynı klasöre yerleştirin ve hem Windows hem de WSL erişebilirsiniz.
@@ -139,39 +142,7 @@ Linux (WSL) Windows alt kullanarak Linux ikili dosyaları bir Windows makineden 
 
 ## <a name="export_binaries_per_project"></a> Derlenmiş ikili dosyaları ve üstbilgileri dışarı aktarma
 
-Karşıdan yükle ve kitaplıkları oluşturmak için bir takımındaki gerektiren verimsiz olabilir. Tek bir takım üyesine o iş yapın ve ardından **vcpkg verme** ikili dosyaları ve diğer ekip üyeleriyle kolaylıkla paylaşılabilir üstbilgileri bir zip dosyası oluşturmak için.
-
-## <a name="updateupgrade-installed-libraries"></a>Güncelleştirme/yükseltme yüklü kitaplıkları
-
-Genel katalog kitaplıkları en son sürümleri ile güncel tutulur. Yerel Kitaplıklarınızı hangisinin güncel olduğunu belirlemek için kullanın **vcpkg güncelleştirme**. Bağlantı noktaları koleksiyonunuzu genel katalog en son sürüme güncelleştirmek hazır olduğunuzda, çalıştırmak **vcpkg yükseltme** otomatik olarak karşıdan yükle ve güncel Kitaplıklarınızı yüklü bir bölümünü veya tamamını yeniden komutu.
-
-Varsayılan olarak, **yükseltme** komutu yalnızca eski kitaplıkları listeler; bunları yükseltme değil. Yükseltmeyi gerçekleştirmek için kullanın **--çalıştırıp Hayır** seçeneği.
-
-```cmd
-  vcpkg upgrade --no-dry-run
-```
-
-### <a name="upgrade-options"></a>Yükseltme seçenekleri
-
-- **--çalıştırıp Hayır** yükseltmek; belirtilmediğinde komutu yalnızca güncel paketleri listeler.
-- **--Canlı devam eden** başarısız olsa bile paketleri yüklemeye devam et.
-- **--Üçlü \<t >** nitelenmemiş paketler için varsayılan Üçlü ayarlayın.
-- **--vcpkg kök \<yolu >** geçerli dizini veya aracı dizin yerine kullanılacak vcpkg dizini belirtin.
-
-### <a name="upgrade-example"></a>Yükseltme örneği
-
-### <a name="per-project"></a>Proje
-
-Etkin vcpkg Örneğinizde sürümünden farklı bir kitaplık belirli bir sürümünü kullanmanız gerekiyorsa, şu adımları izleyin:
-
-1. Vcpkg yeni bir kopya yapmak
-1. İhtiyacınız olan sürümü edinmek için kitaplık portfile değiştirme
-1. Çalıştırma **vcpkg yükleme \<kitaplığı >**.
-1. Kullanım **vcpkg tümleştirmek proje** bu kitaplığı proje başına temelinde başvuruda bulunan bir NuGet paketi oluşturmak için.
-
-## <a name="export-compiled-binaries-and-headers"></a>Derlenmiş ikili dosyaları ve üstbilgileri dışarı aktarma
-
-Karşıdan yükle ve kitaplıkları oluşturmak için bir takımındaki gerektiren verimsiz olabilir. Tek bir takım üyesine o iş yapın ve ardından **vcpkg verme** ikili dosyaları ve diğer ekip üyeleriyle kolaylıkla paylaşılabilir üstbilgileri bir zip dosyası oluşturmak için.
+Karşıdan yükle ve kitaplıkları oluşturmak için bir takımındaki gerektiren verimsiz olabilir. Tek bir takım üyesine o iş yapın ve ardından **vcpkg verme** diğer ekip üyeleriyle kolaylıkla paylaşılabilir bir zip dosyası ikili dosyaları ve üstbilgileri ya da (çeşitli biçimlendirme kullanılabilir) bir NuGet paketi oluşturmak için.
 
 ## <a name="updateupgrade-installed-libraries"></a>Güncelleştirme/yükseltme yüklü kitaplıkları
 
@@ -225,7 +196,7 @@ Yalnızca dizini silin.
 
 ## <a name="send-feedback-about-vcpkg"></a>Vcpkg hakkında geri bildirim gönder
 
-Kullanım **--anket** hata raporları ve özellikleri için öneri dahil olmak üzere vcpkg hakkında Microsoft'a geri bildirim göndermek için komutu.
+Kullanım **vcpkg kişi--anket** hata raporları ve özellikleri için öneri dahil olmak üzere vcpkg hakkında Microsoft'a geri bildirim göndermek için komutu.
 
 ## <a name="the-vcpkg-folder-hierarchy"></a>Vcpkg klasör hiyerarşisi
 
@@ -261,10 +232,9 @@ Bir vcpkg örneği içeriğini şunlardır:
 |**vcpkg verme \<pkg >... [opt]...**|Bir paket verebilirsiniz|
 |**vcpkg düzenleme \<pkg >**|(Kullanır Düzenleyicisi %, varsayılan 'code') düzenlemek için bir bağlantı noktasını açın|
 |**vcpkg oluşturma \<pkg > \<URL'si > [archivename]**|Yeni bir paket oluşturun|
-|**vcpkg sahibi \<pat >**|Yüklü paketler dosyalarında arayın|
 |**vcpkg önbelleği**|Paket listesi önbelleğe alınan derlenmiş|
 |**vcpkg sürüm**|Sürüm bilgilerini görüntüle|
-|**vcpkg başvurun**|Geri bildirim göndermek için kişi bilgilerini görüntüleme|
+|**vcpkg kişi--anket**|Geri bildirim göndermek için kişi bilgilerini görüntüleme.|
 
 ### <a name="options"></a>Seçenekler
 
@@ -272,3 +242,4 @@ Bir vcpkg örneği içeriğini şunlardır:
 |---------|---------|
 |**--Üçlü \<t >**|Hedef mimari Üçlü belirtin. (varsayılan: `%VCPKG_DEFAULT_TRIPLET%`, ayrıca bkz. **vcpkg Yardım Üçlü**)|
 |**--vcpkg kök \<yolu >**|Vcpkg kök dizini belirtin (varsayılan: `%VCPKG_ROOT%`)|
+

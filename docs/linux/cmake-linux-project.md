@@ -1,7 +1,9 @@
 ---
 title: Visual Studio'da bir Linux CMake proje yapılandırma | Microsoft Docs
 ms.custom: ''
-ms.date: 10/25/2107
+ms.date: 04/28/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-linux
 ms.tgt_pltfrm: Linux
@@ -12,11 +14,11 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 43d29513b41cc89f7d4b6ba4e33365dfa60a761a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a49d9364b7b39dfddd982519416c9a12b7adf9e6
+ms.sourcegitcommit: 5e932a0e110e80bc241e5f69e3a1a7504bfab1f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/21/2018
 ---
 # <a name="configure-a-linux-cmake-project"></a>Bir Linux CMake proje yapılandırma
   
@@ -44,7 +46,8 @@ int main(int argc, char* argv[])
 }
 ```
 
-CMakeLists.txt: 
+CMakeLists.txt:
+
 ```cmd
 project (hello-cmake)
 add_executable(hello-cmake hello.cpp)
@@ -58,6 +61,8 @@ Varsayılan olarak, Visual Studio ilk uzak sistem listede seçer (altında **Ara
 Bir Linux hedef belirttikten sonra kaynak Linux makinenize kopyalanır. Ardından, projeniz için CMake önbellek oluşturmak için Linux makinesinde CMake çalıştırın.  
 
 ![Linux üzerinde CMake önbellek oluşturmak](media/cmake-linux-1.png "Linux CMake önbellekte oluştur")  
+
+**Visual Studio 2017 15.7 ve sonraki sürümleri:** uzak üstbilgileri için IntelliSense desteği sağlamak için Visual Studio otomatik olarak onları yerel Windows makinenizde bir dizine kopyalar. Daha fazla bilgi için bkz: [uzak üstbilgileri için IntelliSense](configure-a-linux-project.md#remote_intellisense).
 
 ## <a name="debug-the-project"></a>Projeyi hata ayıklama  
 Uzak sistem üzerindeki kodunuzun hatalarını ayıklamak için CMake hedefleyen bir kesme noktası, select proje ayarın yanındaki araç menüde başlangıç öğesi olarak ayarlayın ve çalıştırın (veya F5 tuşuna basın).
@@ -84,6 +89,7 @@ Varsayılan CMake ayarlarını değiştirmek için tercih **CMake | CMake ayarla
       "inheritEnvironments": [ "linux-x64" ]
 }
 ```
+
 `name` Değeri ne olursa olsun, ister olabilir. `remoteMachineName` Değeri birden fazla olması durumunda hedef, hangi uzak bir sisteme belirtir. IntelliSense doğru sistemi seçmenize yardımcı olması Bu alan için etkinleştirilir. Alan `remoteCMakeListsRoot` proje kaynaklarınız için Uzak sistemde kopyalanacağı belirtir. Alan `remoteBuildRoot` yapı çıktı uzak sisteminizde burada oluşturulmuş. Çıktı da yerel olarak tarafından belirtilen konuma kopyalandığını `buildRoot`.
 
 ## <a name="building-a-supported-cmake-release-from-source"></a>Kaynak desteklenen CMake sürüm oluşturma
