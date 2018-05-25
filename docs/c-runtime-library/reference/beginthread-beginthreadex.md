@@ -39,11 +39,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f04d6bc5ab0864a1dfc27a1de8b09f1740f845d9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f8e12e25f64972335cb1a1199ae519de71d43067
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="beginthread-beginthreadex"></a>_beginthread, _beginthreadex
 
@@ -89,22 +89,22 @@ Yeni bir iş parçacığı yürütülmeye yordamının adresi başlatın. İçin
 Yeni bir iş parçacığı veya 0 yığın boyutu.
 
 *arglist*<br/>
-Yeni bir iş parçacığı veya NULL iletilecek bağımsız değişken listesi.
+Yeni bir iş parçacığı iletilecek bağımsız değişken listesi veya **NULL**.
 
 *Güvenlik*<br/>
-İşaretçi bir [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) yapısı alt işlemleri tarafından döndürülen tanıtıcı devralınan olup olmadığını belirler. Varsa *güvenlik* null, tanıtıcı devralındı. NULL için Windows 95 uygulamaları olması gerekir.
+İşaretçi bir [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) yapısı alt işlemleri tarafından döndürülen tanıtıcı devralınan olup olmadığını belirler. Varsa *güvenlik* olan **NULL**, tanıtıcı devralındı. Olmalıdır **NULL** Windows 95 uygulamalar için.
 
 *initflag*<br/>
 Yeni bir iş parçacığı ilk durumunu denetlemek bayraklar. Ayarlama *initflag* hemen çalıştırmak için 0 veya için **AfxBeginThread'e** askıya alınmış durumda; iş parçacığı oluşturmak için kullanmak [ResumeThread'i](http://msdn.microsoft.com/library/windows/desktop/ms685086.aspx) iş parçacığını yürütmek için. Ayarlama *initflag* için **STACK_SIZE_PARAM_IS_A_RESERVATION** kullanmak için bayrağı *stack_size* gibi ilkyedekbaytyığınboyutu;Bubayrakolupolmadığınıbelirtilmedi*stack_size* tamamlama boyutunu belirtir.
 
 *thrdaddr*<br/>
-Noktaları 32-bit değişkene bir iş parçacığı tanımlayıcısını alır. NULL ise, kullanılmaz.
+Noktaları 32-bit değişkene bir iş parçacığı tanımlayıcısını alır. Eğer öyleyse **NULL**, değil kullanılır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Başarılı olursa, bu işlevlerin her biri için yeni oluşturulan iş parçacığı bir işleyici döner; Ancak, yeni oluşturulan iş parçacığı çok hızlı bir şekilde bulunup bulunmadığını **_beginthread** geçerli bir tanıtıcı döndürmeyebilir. (Tartışma Açıklamalar bölümüne bakın.) Bir hata **_beginthread** -1 M döndürür ve **errno** ayarlanır **EAGAIN** varsa çok fazla iş parçacığı için **EINVAL** bağımsız değişken ise geçersiz veya yığın boyutu yanlış veya **EACCES** (örneğin bellek) yetersiz kaynak. Bir hata **_beginthreadex** 0 döndürür ve **errno** ve **_doserrno** ayarlanır.
 
-Varsa *start_address* null, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve -1 döndürür.
+Varsa *start_address* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve -1 döndürür.
 
 Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -137,7 +137,7 @@ Kullanmak daha güvenlidir **_beginthreadex** daha **_beginthread**. Varsa taraf
 
 Yığın ayırma işletim sistemi işleme olduğunda ya da **_beginthread** veya **_beginthreadex** olarak adlandırılır; iş parçacığı yığınının adresini ya da bu işlevlerin geçirmek zorunda değilsiniz. Ayrıca, *stack_size* bağımsız değişkeni, 0, içinde durum işletim sistemi kullanan aynı değeri belirtilen yığın ana iş parçacığı olabilir.
 
-*arglist* yeni oluşturulan iş parçacığına iletilecek parametre. Genellikle, bu karakter dizesi gibi bir veri öğesi adresidir. *arglist* gerekmiyorsa, boş olabilir ancak **_beginthread** ve **_beginthreadex** için yeni bir iş parçacığı geçirmek için bir değer verilmesi gerekir. Tüm iş parçacıklarının tüm çağrıları uzatırsanız sonlandırılır [abort](abort.md), **çıkmak**, **_exit**, veya **ExitProcess**.
+*arglist* yeni oluşturulan iş parçacığına iletilecek parametre. Genellikle, bu karakter dizesi gibi bir veri öğesi adresidir. *arglist* olabilir **NULL** gerekmiyorsa, ancak **_beginthread** ve **_beginthreadex** için yeni bir iş parçacığı geçirmek için bir değer verilmesi gerekir. Tüm iş parçacıklarının tüm çağrıları uzatırsanız sonlandırılır [abort](abort.md), **çıkmak**, **_exit**, veya **ExitProcess**.
 
 İşlem başına genel geçerli yerel ayar bilgileri kullanarak yeni bir iş parçacığı yerel başlatılır. İş parçacığı başına yerel ayar için bir çağrı tarafından etkin olup olmadığını [_configthreadlocale](configthreadlocale.md) (genel olarak veya yeni iş parçacıklarının yalnızca), iş parçacığının kendi yerel bağımsız olarak diğer iş parçacıklarından çağırarak değiştirebilirsiniz **setlocale** veya **_wsetlocale**. İş parçacığı başına yerel ayar bayrağı ayarlanmış sahip olmayan iş parçacıklarının tüm yeni oluşturulan iş parçacıklarını yanı sıra iş parçacığı başına yerel ayar bayrağı ayarlanmış de sahip olmayan tüm diğer iş parçacığı yerel ayar bilgileri etkileyebilir. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
 

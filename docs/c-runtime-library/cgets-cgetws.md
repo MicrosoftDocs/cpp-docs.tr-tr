@@ -35,11 +35,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c915001716745422299241d3dad469707bf03dc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 144e08278fb37e08d741ac8cb5a441c8df788b5b
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="cgets-cgetws"></a>_cgets, _cgetws
 Bir karakter dizesi konsoldan alır. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md).  
@@ -74,7 +74,7 @@ wchar_t *_cgetws(
  Verileri için depolama konumu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_cgets` ve `_cgetws` dize başlangıç için bir işaretçi dönüş `buffer[2]`. Varsa `buffer` olan `NULL`, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../c-runtime-library/parameter-validation.md). Döndürmeleri yürütme devam etmek için izin verilip verilmediğini, `NULL` ve `errno` için `EINVAL`.  
+ `_cgets` ve `_cgetws` dize başlangıç için bir işaretçi dönüş `buffer[2]`. Varsa `buffer` olan **NULL**, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../c-runtime-library/parameter-validation.md). Döndürmeleri yürütme devam etmek için izin verilip verilmediğini, **NULL** ve `errno` için `EINVAL`.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevlerin bir karakter dizesi konsoldan okunan ve dize ve uzunluğu gösterdiği konumda depolamak `buffer`. `buffer` Parametresi, bir karakter dizisi için bir işaretçi olmalıdır. Dizinin ilk öğesi `buffer[0]`, okumak için dize maksimum uzunluğu (karakter cinsinden) içermelidir. Dizi dizesi, bir sonlandırma null karakteri ('\0') ve 2 ek bayt tutmak için yeterli sayıda öğe içermesi gerekir. İşlev karakter (CR-LF) birleşimi bir satır başı satır besleme veya belirtilen sayıda karakteri okuma kadar okur. Dize başlayarak depolanan `buffer[2]`. İşlev CR LF yazıyorsa, null karakteri ('\0') depolar. İşlev, dize gerçek uzunluğu sonra ikinci dizi öğesinde depolar. `buffer[1]`.  

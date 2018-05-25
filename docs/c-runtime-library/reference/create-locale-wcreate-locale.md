@@ -38,11 +38,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db4a762689907330b671e2720cf743ee957526a4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9be41a2d156a522c74349c3457295502ae6d4f43
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="createlocale-wcreatelocale"></a>_create_locale, _wcreate_locale
 
@@ -94,7 +94,7 @@ Bu işlev doğrular *kategori* ve *yerel* parametreleri. Kategori parametre önc
 
 *Yerel* bağımsız değişkeni bir işaretçidir yerel belirten bir dize. Biçimi hakkında bilgi için *yerel ayar* bağımsız değişkeni, bkz: [yerel ayar adları, diller ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md).
 
-*Yerel* bağımsız değişkeni bir yerel ayar adı, bir dil dizesi, bir dil dize ve ülke/bölge kodu, bir kod sayfası veya bir dil dize, ülke/bölge kodu ve kod sayfası alabilir. Karakter başına iki bayttan fazla gerektiren kod sayfaları dışında Windows NLS API tarafından desteklenen tüm kullanılabilir yerel ayar adları, diller, ülke/bölge kodları ve kod sayfaları kümesini içerir — örneğin, UTF-7 ve UTF-8. UTF-7 veya UTF-8 ' gibi bir kod sayfası sağlarsanız, **_create_locale** başarısız olacak ve NULL döndürür. Yerel ayar adları tarafından desteklenen kümesi **_create_locale** açıklanan [yerel ayar adları, diller ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). Tarafından desteklenen dil ve ülke/bölge dizeleri kümesi **_create_locale** listelenen [dil dizeleri](../../c-runtime-library/language-strings.md) ve [ülke/bölge dizeleri](../../c-runtime-library/country-region-strings.md).
+*Yerel* bağımsız değişkeni bir yerel ayar adı, bir dil dizesi, bir dil dize ve ülke/bölge kodu, bir kod sayfası veya bir dil dize, ülke/bölge kodu ve kod sayfası alabilir. Karakter başına iki bayttan fazla gerektiren kod sayfaları dışında Windows NLS API tarafından desteklenen tüm kullanılabilir yerel ayar adları, diller, ülke/bölge kodları ve kod sayfaları kümesini içerir — örneğin, UTF-7 ve UTF-8. UTF-7 veya UTF-8 ' gibi bir kod sayfası sağlarsanız, **_create_locale** başarısız ve dönüş **NULL**. Yerel ayar adları tarafından desteklenen kümesi **_create_locale** açıklanan [yerel ayar adları, diller ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). Tarafından desteklenen dil ve ülke/bölge dizeleri kümesi **_create_locale** listelenen [dil dizeleri](../../c-runtime-library/language-strings.md) ve [ülke/bölge dizeleri](../../c-runtime-library/country-region-strings.md).
 
 Yerel ayarlar hakkında daha fazla bilgi için bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md).
 

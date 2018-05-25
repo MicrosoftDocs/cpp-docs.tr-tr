@@ -40,11 +40,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e538ff94a6cd49e4d766dfbca2798aa0daf0e462
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b472987b0cac41c57e5fd22b2eedecef522613b4
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="fullpath-wfullpath"></a>_fullpath, _wfullpath
 
@@ -68,7 +68,7 @@ wchar_t *_wfullpath(
 ### <a name="parameters"></a>Parametreler
 
 *absPath*<br/>
-Mutlak ya da tam yolunu içeren bir arabellek işaretçisine adı ya da NULL.
+Mutlak veya tam yol adını içeren bir arabellek işaretçi veya **NULL**.
 
 *relPath*<br/>
 Göreli yol adı.
@@ -82,7 +82,7 @@ Bu işlevlerin her biri bir işaretçi mutlak yol adı içeren bir arabellek dö
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Fullpath** işlevi genişletir göreli yol adındaki *relPath* tam olarak nitelenmiş veya mutlak bir yol ve bu ad depoları *absPath*. Varsa *absPath* null, **malloc** yol adını tutmak için yeterli uzunlukta bir arabellek ayırmak için kullanılır. Çağıranın bu arabelleği serbest sorumluluğundadır. Bir göreli yol adı bir yol başka bir konuma geçerli konumu belirtir (geçerli çalışma dizini gibi: "."). Genişleme dosya sisteminin kök istenen konumu erişmek için gerekli yolun tamamını bildiren bir göreli yol adının bir mutlak yol adıdır. Farklı **_makepath**, **_fullpath** göreli yollar için mutlak bir yol adı almak için kullanılabilir (*relPath*) içeren ". /"veya".. / "adlarında.
+**_Fullpath** işlevi genişletir göreli yol adındaki *relPath* tam olarak nitelenmiş veya mutlak bir yol ve bu ad depoları *absPath*. Varsa *absPath* olan **NULL**, **malloc** yol adını tutmak için yeterli uzunlukta bir arabellek ayırmak için kullanılır. Çağıranın bu arabelleği serbest sorumluluğundadır. Bir göreli yol adı bir yol başka bir konuma geçerli konumu belirtir (geçerli çalışma dizini gibi: "."). Genişleme dosya sisteminin kök istenen konumu erişmek için gerekli yolun tamamını bildiren bir göreli yol adının bir mutlak yol adıdır. Farklı **_makepath**, **_fullpath** göreli yollar için mutlak bir yol adı almak için kullanılabilir (*relPath*) içeren ". /"veya".. / "adlarında.
 
 Örneğin, C çalışma zamanı yordamları kullanmak için uygulama yordamları için bildirimleri içeren üstbilgi dosyaları içermelidir. Her üstbilgi dosyası göreli bir şekilde (dizininden uygulamanın çalışma) dosyasının konumunu deyimi başvurular içerir:
 

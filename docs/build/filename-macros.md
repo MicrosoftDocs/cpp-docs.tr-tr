@@ -16,11 +16,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e49c65a642dcee3e0f04fb5000a390fccae98ad
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e28ba5923d8b62973860c0ba503d13682b3c5e79
+ms.sourcegitcommit: 3bb7c1c0ceeb8012418e2fff9ae5a7db0fff3877
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="filename-macros"></a>Dosya Adı Makroları
 Dosya adı makroları (disk üzerinde değil tam dosya adı belirtimleri) bağımlılık belirtilen dosya adları olarak önceden tanımlanmıştır. Bu makroları çağrıldığında parantez içine alınmış gerekmez; yalnızca bir $ gösterildiği gibi belirtin.  
@@ -29,8 +29,8 @@ Dosya adı makroları (disk üzerinde değil tam dosya adı belirtimleri) bağı
 |-----------|-------------|  
 |**$@**|Şu anda belirtilen geçerli hedefin tam adı (yol, bir taban adına, uzantısı).|  
 |**$$@**|Şu anda belirtilen geçerli hedefin tam adı (yol, bir taban adına, uzantısı). Yalnızca bir bağımlılık olarak bağlı olarak geçerli.|  
-|**$\***|Geçerli hedefin yol ve temel adı eksi dosya uzantısı.|  
-|**$\*\***|Tüm bağımlılıklar geçerli hedef.|  
+|**$&#42;**|Geçerli hedefin yol ve temel adı eksi dosya uzantısı.|  
+|**$&#42;&#42;**|Tüm bağımlılıklar geçerli hedef.|  
 |**$?**|Tüm bağımlıları olan geçerli hedefi daha sonraki bir zaman damgasına sahip.|  
 |**$<**|Bağımlı dosya olan geçerli hedefi daha sonraki bir zaman damgasına sahip. Yalnızca çıkarım kuralları komutlarda geçerli.|  
   

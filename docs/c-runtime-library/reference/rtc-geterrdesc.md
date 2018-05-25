@@ -33,11 +33,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a176aa258f805a516bf36c982ba63e531a74478
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7154f6de192ee6b681ed0419126f3d4b682abb8c
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="rtcgeterrdesc"></a>_RTC_GetErrDesc
 
@@ -58,7 +58,7 @@ Sıfır ve bir tarafından döndürülen değeri,'den arasında bir sayı **_RTC
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Çalışma zamanı hata denetimi sistem tarafından algılanan hata türlerinden birini kısa bir açıklamasını içeren bir karakter dizesi. Hata sıfır veya daha büyük veya eşittir tarafından döndürülen değer düşükse [_RTC_NumErrors](rtc-numerrors.md), **_RTC_GetErrDesc** NULL döndürür.
+Çalışma zamanı hata denetimi sistem tarafından algılanan hata türlerinden birini kısa bir açıklamasını içeren bir karakter dizesi. Hata sıfır veya daha büyük veya eşittir tarafından döndürülen değer düşükse [_RTC_NumErrors](rtc-numerrors.md), **_RTC_GetErrDesc** döndürür **NULL**.
 
 ## <a name="requirements"></a>Gereksinimler
 

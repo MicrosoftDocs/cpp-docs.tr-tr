@@ -32,11 +32,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 894d227d329a426a2008044d47d126d063db4a15
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 622f48138404425723c226dde52c8621580d0131
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="alignedmallocdbg"></a>_aligned_malloc_dbg
 
@@ -62,10 +62,10 @@ void * _aligned_malloc_dbg(
 Hizalama değeri bir tamsayı güç 2 olmalıdır.
 
 *Dosya adı*<br/>
-İşaretçi ayırma işlemi ya da NULL istenen kaynak dosyanın adı.
+İstenen ayırma işlemi kaynak dosyasının adını işaretçi veya **NULL**.
 
 *LineNumber*<br/>
-Satır numarası burada ayırma işlemi istendi, ancak kaynak dosyasında veya NULL.
+Satır numarası ayırma işlemi istenen burada kaynak dosyasında veya **NULL**.
 
 ## <a name="return-value"></a>Dönüş Değeri
 

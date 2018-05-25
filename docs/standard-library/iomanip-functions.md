@@ -28,11 +28,11 @@ helpviewer_keywords:
 - std::setiosflags [C++]
 - std::setprecision [C++]
 - std::setw [C++]
-ms.openlocfilehash: 5e491b9dc5035435fce16b704d28a71a1b0644de
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 12840a7b48be897573e2041aa06fc7fdc8d15297
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="ltiomanipgt-functions"></a>&lt;iomanip&gt; işlevleri
 
@@ -125,7 +125,7 @@ T10 put_time(struct tm* _Tptr, const Elem* _Fmt);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Manipulator nesneyi akışa eklendiğinde döner `str`, olarak davranan bir `formatted output function`. Çıktı işlevi üye işlevini çağırır `put` yerel ayar modelinin `time_put` ile ilişkili `str`. Çıktı işlevini kullanıyor `_Tptr` zaman yapısı göstermek için ve `_Fmt` NUL sonlandırılmış biçim dizesi başlangıcını belirtmek için. Başarılı olursa, arama metin zaman yapısı dönüştürülmüş değerleri ve biçim dizesi ekler. Manipulator sonra döndürür `str`.
+Manipulator nesneyi akışa eklendiğinde döner `str`, olarak davranan bir `formatted output function`. Çıktı işlevi üye işlevini çağırır `put` yerel ayar modelinin `time_put` ile ilişkili `str`. Çıktı işlevini kullanıyor `_Tptr` zaman yapısı göstermek için ve `_Fmt` null ile sonlandırılmış biçim dizesi başlangıcını belirtmek için. Başarılı olursa, arama metin zaman yapısı dönüştürülmüş değerleri ve biçim dizesi ekler. Manipulator sonra döndürür `str`.
 
 ## <a name="quoted"></a>  tırnak içine alınmış
 

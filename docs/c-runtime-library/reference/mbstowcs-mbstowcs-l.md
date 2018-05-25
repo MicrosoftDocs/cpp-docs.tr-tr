@@ -34,11 +34,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adc91c7b17c8f95434a6dfc63e816df6df32c186
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c14beb076a83952529155fa0a4b1da780efae3c7
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="mbstowcs-mbstowcsl"></a>mbstowcs, _mbstowcs_l
 
@@ -177,7 +177,7 @@ int main( void )
      Get the required size in characters, and allocate enough space. */
 
     requiredSize = mbstowcs(NULL, pmbhello, 0); // C4996
-    /* Add one to leave room for the NULL terminator */
+    /* Add one to leave room for the null terminator */
     pwc = (wchar_t *)malloc( (requiredSize + 1) * sizeof( wchar_t ));
     if (! pwc)
     {

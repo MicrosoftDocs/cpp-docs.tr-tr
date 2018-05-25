@@ -48,11 +48,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74cf86b332db36248e7a40bf93f2a7e72ecf429d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3d6eb69787d20343e8ed289311dba02a55e85592
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="regextraits-class"></a>regex_traits Sınıfı
 
@@ -532,7 +532,7 @@ hex C == 12
 
 ## <a name="length"></a>  regex_traits::length
 
-Nul sonlandırılmış sırası uzunluğunu döndürür.
+Bir null ile sonlandırılmış sırası uzunluğunu döndürür.
 
 ```cpp
 static size_type length(const char_type *str);
@@ -540,7 +540,9 @@ static size_type length(const char_type *str);
 
 ### <a name="parameters"></a>Parametreler
 
-`str` Nul sonlandırılmış dizisi.
+`str`
+
+Sonlandırılmış dizisi.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -40,11 +40,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a18b9ffe4fac351d73e0a78a6e25a71625a47b9e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e7f9814bb783c763eef6d94e9d1372316a2393a6
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="strtimes-wstrtimes"></a>_strtime_s, _wstrtime_s
 
@@ -96,7 +96,7 @@ Bir hata koşulu ortaya çıkarsa, geçersiz parametre işleyicisi, açıklandı
 
 ## <a name="security-issues"></a>Güvenlik sorunları
 
-Arabellek bir erişim ihlali neden olur için geçersiz bir NULL olmayan değer geçirme *numberOfElements* parametredir 9 büyük.
+Geçersiz bir olmayan geçirme**NULL** arabellek bir erişim ihlali neden olur için bir değer *numberOfElements* parametredir 9 büyük.
 
 Bir değer geçirmek için *numberOfElements* arabellek gerçek boyutuna arabellek taşması sonuçlanır daha büyük.
 

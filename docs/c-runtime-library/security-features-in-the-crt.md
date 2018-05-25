@@ -34,11 +34,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ce188ea5d28fa99d6133129edbace8e2886f0f5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8195e9a7e37ac9fa9186118889d7717698d2b784
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="security-features-in-the-crt"></a>CRT'deki Güvenlik Özellikleri
 Birçok eski CRT işlevleri daha güvenli, daha yeni sürümlerde. Güvenli işlevi varsa, daha eski, daha az güvenli sürüm kullanım dışı olarak işaretlenmiş ve yeni sürüme sahip `_s` ("güvenli") soneki.  
@@ -70,7 +70,7 @@ strcpy(szBuf, "test"); // warning: deprecated
   
 -   `Parameter Validation`. Her iki güvenli işlevleri ve işlevleri birçok önceden var olan sürümü CRT işlevleri için geçirilen parametre doğrulanır. Bu doğrulama şunları içerir:  
   
-    -   Denetleme `NULL` değerleri işlevlere geçirilen.  
+    -   Denetleme **NULL** değerleri işlevlere geçirilen.  
   
     -   Numaralandırılmış değerler geçerliliğini denetleniyor.  
   
@@ -82,7 +82,7 @@ strcpy(szBuf, "test"); // warning: deprecated
   
 -   `Sized Buffers`. Güvenli işlevleri arabellek boyutu bir arabelleğe Yazar herhangi bir işlev geçirilmesi gerekir. Güvenli sürümleri, kötü amaçlı kod yürütmek izin verebilir tehlikeli arabellek taşması hatalarını önlemek için yardımcı yazmadan önce arabellek yeterince büyük olduğunu doğrulayın. Genellikle bu işlevlerin dönüş bir `errno` hata kodunu yazın ve arabellek boyutu çok küçükse geçersiz parametre işleyicisi çağırma. Giriş önbelleklerden okuma işlevleri `gets`, boyut sınırı belirtmek ihtiyaç duyduğunuz güvenli sürümlere sahip.  
   
--   `Null termination`. Sol olası olmayan sonlandırılmış dizeler, dizeleri olduğundan emin olun güvenli sürümlerde bazı işlevler null düzgün bir şekilde sonlandırıldı.  
+-   `Null termination`. Olası olmayan sonlandırılmış dizeler sol bazı işlevler, düzgün null ile sonlandırılmış dizeler olduğundan emin olun güvenli sürümlere sahip.  
   
 -   `Enhanced error reporting`. Güvenli işlevleri ile önceden var olan işlevler kullanılabilir olandan daha fazla hata bilgileriyle hata kodlarını döndürür. Güvenli işlevleri ve önceden var olan işlevlerin çoğunu şimdi kurun `errno` ve genellikle bir `errno` türü de daha iyi hata raporlama sağlamak için kod.  
   

@@ -62,11 +62,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4e394984d742ee565296a452cf553e09f37b0aa
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 738a69ad0acd1af3b400b56f0f759414b9e28578
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsnprintf-vsnprintf-vsnprintfl-vsnwprintf-vsnwprintfl"></a>vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 
@@ -173,7 +173,7 @@ Her ikisi de **_vsnprintf** ve **_vsnwprintf** işlevler yazmak için karakter s
 
 Bir veya yazılır olup olmadığını bu işlevler tarafından döndürülen değer sonlandırma null içermez. Zaman *sayısı* sıfırsa, değeri olan işlevler yazamaz, karakterlerin sayısı dahil olmak üzere tüm sonlandırma null döndürdü. Dize ve onun sonlandırma null için yeterli arabellek alanı ayırmak için bu sonucu kullanın ve yeniden arabellek doldurmak için işlevini çağırın.
 
-Varsa *biçimi* olan **NULL**, veya *arabellek* null ve *sayısı* değil sıfıra eşit, bu işlevler geçersiz parametre işleyicisi çağırma bölümünde açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+Varsa *biçimi* olan **NULL**, veya *arabellek* olan **NULL** ve *sayısı* sıfır olarak, bu işlevler eşit değil Geçersiz parametre işleyicisi açıklandığı gibi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
 
 ## <a name="remarks"></a>Açıklamalar
 

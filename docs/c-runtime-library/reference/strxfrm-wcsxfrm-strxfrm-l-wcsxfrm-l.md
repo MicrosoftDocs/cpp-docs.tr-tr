@@ -45,11 +45,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4be0a1179f5b3195d5fafbaf679311c0dcf9edd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4bc9746d2c98f1799cbdd244e7fc4d465fd705fa
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="strxfrm-wcsxfrm-strxfrml-wcsxfrml"></a>strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l
 
@@ -108,7 +108,7 @@ Dönüştürme için bir çağrı sonra **strcmp** iki dönüştürülmüş dize
 
 **wcsxfrm** bir joker karakter sürümü **strxfrm**; dize bağımsız değişkenleri **wcsxfrm** joker karakter işaretçiler. İçin **wcsxfrm**, sonra dize dönüştürme, bir çağrı **wcscmp** iki dönüştürülmüş dizeyi ile yapılan bir çağrı içeriğiyle aynı sonuçları verir **wcscoll** uygulanır özgün iki dize. **wcsxfrm** ve **strxfrm** Aksi takdirde aynı şekilde davranır. **wcsxfrm** yerel ayara bağımlı davranışı için; geçerli yerel ayarı kullanır **_wcsxfrm_l** geçerli yerel yerine geçilen yerel ayar kullanır.
 
-Bu işlevler kendi parametreleri doğrulayın. Varsa *strSource* null işaretçinin veya *strDest* (sayısı sıfır değilse), bir NULL işaretçinin olduğundan, veya *sayısı* değerinden daha büyük **INT_MAX**, Geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve geri dönüp **INT_MAX**.
+Bu işlevler kendi parametreleri doğrulayın. Varsa *strSource* null işaretçinin veya *strDest* olan bir **NULL** işaretçisi (sayısı sıfır değilse), veya *sayısı* büyük**INT_MAX**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve geri dönüp **INT_MAX**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 

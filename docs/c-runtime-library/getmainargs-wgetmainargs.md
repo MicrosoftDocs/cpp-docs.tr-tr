@@ -30,11 +30,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e162c6b16e9ce9d0ea6763f5fb4c75d7975dc7bf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 13707791b78de2c000535d60ed3f298046e4576c
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="getmainargs-wgetmainargs"></a>__getmainargs, __wgetmainargs
 Komut satırı ayrıştırma çağırır ve bağımsız değişkenleri kopyalar `main()` geçirilen işaretçileri geriye doğru.  
@@ -63,10 +63,10 @@ _startupinfo * _StartInfo);
  Takip edin bağımsız değişken sayısı içeren bir tamsayı `argv`. `argc` parametresi her zaman 1'e eşit veya daha büyüktür.  
   
  `_Argv`  
- Programın kullanıcısı tarafından girilen komut satırı bağımsız değişkenlerini temsil eden boş sonlandırılmış bir dize dizisi. Kural tarafından `argv[0]` ile program çağrılan komut, argv [1] ilk komut satırı bağımsız değişkeni ve vb. [argc] argv kadar her zaman NULL. Her zaman ilk komut satırı bağımsız değişkeni olan `argv[1]` ve son `argv[argc - 1]`.  
+ Programın kullanıcısı tarafından girilen komut satırı bağımsız değişkenlerini temsil eden boş sonlandırılmış bir dize dizisi. Kural tarafından `argv[0]` ile program çağrılan komut, argv [1] ilk komut satırı bağımsız değişkeni ve benzeri argv [argc] kadar her zaman **NULL**. Her zaman ilk komut satırı bağımsız değişkeni olan `argv[1]` ve son `argv[argc - 1]`.  
   
  `_Env`  
- Kullanıcının ortama değişkenlerini temsil eden bir dizeler dizisi. Bu dizi NULL giriş tarafından sonlandırıldı.  
+ Kullanıcının ortama değişkenlerini temsil eden bir dizeler dizisi. Bu dizi tarafından sonlandırılır bir **NULL** girişi.  
   
  `_DoWildCard`  
  Tamsayı, komut satırı bağımsız değişkenleri joker karakter 1 olarak ayarlanırsa genişletir veya 0 olarak ayarlanırsa hiçbir şey yapmaz.  

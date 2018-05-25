@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60fd19a46cff5607a768309585ab876f4a894db6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4fcd1c874c1701f471026deec73ab596971d3ad4
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="unicode-the-wide-character-set"></a>Unicode: Joker Karakter Kümesi
 
 Geniş karakter 2-bayt çok dilli karakter kodudur. Modern dünya çapında teknik simgeleri ve özel yayımlama karakterleri dahil olmak üzere bilgi işlem kullanımda herhangi bir karakter geniş karakter olarak Unicode belirtimine göre temsil edilebilir. Microsoft içeren büyük bir Konsorsiyumu tarafından geliştirilen ve korunan, standart Unicode artık yaygın olarak kabul edilir.
 
-Geniş karakter türünde **wchar_t**. Bir joker karakter dizesi olarak temsil edilen bir **wchar_t** dizi ve işaret ediyor bir `wchar_t*` işaretçi. Herhangi bir ASCII karakter harf ekleyerek geniş karakter olarak temsil edebilir **L** karakter. Örneğin, geniş sonlandırma L '\0' dir (16-bit) **NULL** karakter. Benzer şekilde, L Harfi ASCII değişmez değeri (L "Hello") ekleyerek bir joker karakter dize sabit değeri değişmez değer herhangi bir ASCII dize temsil edebilir.
+Geniş karakter türünde **wchar_t**. Bir joker karakter dizesi olarak temsil edilen bir **wchar_t** dizi ve işaret ediyor bir `wchar_t*` işaretçi. Herhangi bir ASCII karakter harf ekleyerek geniş karakter olarak temsil edebilir **L** karakter. Örneğin, L '\0' sonlandırma wide (16-bit) null karakterdir. Benzer şekilde, L Harfi ASCII değişmez değeri (L "Hello") ekleyerek bir joker karakter dize sabit değeri değişmez değer herhangi bir ASCII dize temsil edebilir.
 
 Genellikle, geniş karakterler birden çok baytlı karakterler bellekte daha fazla alan kaplamaları ancak işlem daha hızlıdır. Ayrıca, yalnızca bir yerel ayar aynı anda birden çok baytlı kodlamada temsil, dünyanın tüm karakter kümeleri ise aynı anda Unicode gösterimi tarafından temsil edilir.
 

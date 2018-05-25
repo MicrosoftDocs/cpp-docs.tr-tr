@@ -63,11 +63,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ef98749c094165cb7cdff9f20370a55dfdaaa3a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 728c4878736d2e0cafc94660db3d9a709f87715f
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="exec-wexec-functions"></a>_exec, _wexec İşlevleri
 Bu ailedeki her işlevi yükler ve yeni bir işlem çalıştırır:  
@@ -120,9 +120,9 @@ Bu ailedeki her işlevi yükler ve yeni bir işlem çalıştırır:
   
  `_execl`, `_execle`, `_execlp`, Ve `_execlpe` çağrıları parametrelerin sayısı önceden bilindiğinde genellikle kullanılır. Parametre `arg0` genellikle gösteren bir işaretçidir `cmdname`. Parametreleri `arg1` aracılığıyla `argn` noktası yeni parametre listesi oluşturuluyor karakter dizeleri. Null işaretçinin izlemelisiniz `argn` parametre listesinin sonuna işaretlenecek.  
   
- `_execv`, `_execve`, `_execvp`, Ve `_execvpe` çağrıları kullanışlı ne zaman yeni işlem için parametre sayısı değişkendir. Parametreleri işaretçiler bir dizisi olarak geçirilir `argv`. Parametre `argv`[0] genellikle gösteren bir işaretçidir `cmdname`. Parametreleri `argv`[1] aracılığıyla `argv`[`n`] noktası yeni parametre listesi oluşturuluyor karakter dizeleri. Parametre `argv`[`n`+ 1] olmalıdır bir `NULL` parametre listesinin sonuna işaretlemek için işaretçi.  
+ `_execv`, `_execve`, `_execvp`, Ve `_execvpe` çağrıları kullanışlı ne zaman yeni işlem için parametre sayısı değişkendir. Parametreleri işaretçiler bir dizisi olarak geçirilir `argv`. Parametre `argv`[0] genellikle gösteren bir işaretçidir `cmdname`. Parametreleri `argv`[1] aracılığıyla `argv`[`n`] noktası yeni parametre listesi oluşturuluyor karakter dizeleri. Parametre `argv`[`n`+ 1] olmalıdır bir **NULL** parametre listesinin sonuna işaretlemek için işaretçi.  
   
- Açık olan dosyalar bir `_exec` çağrısı yapılan yeni işlemde açık kalır. İçinde `_execl`, `_execlp`, `_execv`, ve `_execvp` çağrıları, yeni işlem çağırma işleminin ortamı devralır. `_execle`, `_execlpe`, `_execve`, ve `_execvpe` çağrıları alter ortam yeni işlem için ortam Ayarları'nda listesini geçirerek `envp` parametresi. `envp` karakter işaretçileri (dışında son öğesi) her öğesinin null ile sonlandırılmış bir dizeye işaret dizisi bir ortam değişkeni tanımlama. Bu tür bir dize genellikle form sahip `NAME` = `value` nerede `NAME` bir ortam değişkeni adı ve `value` değişken ayarlanmış dize değeridir. (Unutmayın `value` çift tırnak işaretleri içine alınmamış.) Son öğenin `envp` dizi olmalıdır `NULL`. Zaman `envp` kendisi `NULL`, yeni işlem çağırma işleminin ortam ayarlarını devralır.  
+ Açık olan dosyalar bir `_exec` çağrısı yapılan yeni işlemde açık kalır. İçinde `_execl`, `_execlp`, `_execv`, ve `_execvp` çağrıları, yeni işlem çağırma işleminin ortamı devralır. `_execle`, `_execlpe`, `_execve`, ve `_execvpe` çağrıları alter ortam yeni işlem için ortam Ayarları'nda listesini geçirerek `envp` parametresi. `envp` karakter işaretçileri (dışında son öğesi) her öğesinin null ile sonlandırılmış bir dizeye işaret dizisi bir ortam değişkeni tanımlama. Bu tür bir dize genellikle form sahip `NAME` = `value` nerede `NAME` bir ortam değişkeni adı ve `value` değişken ayarlanmış dize değeridir. (Unutmayın `value` çift tırnak işaretleri içine alınmamış.) Son öğenin `envp` dizi olmalıdır **NULL**. Zaman `envp` kendisi **NULL**, yeni işlem çağırma işleminin ortam ayarlarını devralır.  
   
  Biri ile yürütülebilir bir program `_exec` programın .exe dosya üstbilgisi maksimum ayırma alanında 0xFFFFH varsayılan değerine ayarlandıysa gibi işlevler belleğe her zaman yüklenir.  
   

@@ -37,11 +37,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f60ea8dd05f9dffd6778c001e3f150f95744ae2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0c3bfc7b6abe5f0d5902a02c88e7d5ba16cb24ab
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="lfind"></a>_lfind
 
@@ -84,7 +84,7 @@ Anahtar bulunursa, **_lfind** dizisi öğesine bir işaretçi döndüren *temel*
 
 **_Lfind** işlevi gerçekleştiren değeri için doğrusal arama *anahtar* dizisindeki *numarası* öğeleri, her biri *genişliği* bayt. Farklı **bsearch**, **_lfind** sıralanacak dizi gerektirmez. *Temel* bağımsız değişkeni bir işaretçidir aranacağı dizinin tabanı. *Karşılaştırmak* bağımsız değişkeni bir işaretçidir iki dizi öğeleri karşılaştırır ve ilişkilerini belirten bir değer döndüren bir kullanıcı tarafından sağlanan yordam. **_lfind** çağrıları *karşılaştırmak* işaretçileri iki dizi öğelerinin her çağrıda geçirme, arama sırasında rutin bir veya birden çok kez. *Karşılaştırmak* yordamı öğeleri karşılaştırır ve (öğeleri farklı olduğu anlamına gelir) sıfır olmayan bir değer döndürür veya 0 (öğeleri aynı olduğu anlamına gelir).
 
-Bu işlev parametrelerini doğrular. Varsa *karşılaştırmak*, *anahtar* veya *numarası* olan **NULL**, veya *temel* null ve **numarası*  sıfır olmayan, olduğundan veya *genişliği* küçük sıfırdan, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **NULL**.
+Bu işlev parametrelerini doğrular. Varsa *karşılaştırmak*, *anahtar* veya *numarası* olan **NULL**, veya *temel* olan **NULL**ve *numarası* sıfır olmayan, olduğundan veya *genişliği* küçük sıfırdan, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **NULL**.
 
 ## <a name="requirements"></a>Gereksinimler
 

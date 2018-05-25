@@ -50,11 +50,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5cd956601ee337b5bc0e92d0b31856242cd1adf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 08cdc1b3fe2d190bdc4a6cbb3d505378e6dcf6ae
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="sscanfs-sscanfsl-swscanfs-swscanfsl"></a>sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l
 
@@ -180,7 +180,7 @@ int main( void )
    float fp;
 
    // Input various data from tokenstring:
-   // max 80 character string plus NULL terminator
+   // max 80 character string plus null terminator
    sscanf_s( tokenstring, "%s", s, (unsigned)_countof(s) );
    sscanf_s( tokenstring, "%c", &c, (unsigned)sizeof(char) );
    sscanf_s( tokenstring, "%d", &i );

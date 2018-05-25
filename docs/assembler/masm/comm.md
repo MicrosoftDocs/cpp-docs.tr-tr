@@ -1,7 +1,7 @@
 ---
 title: COMM | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 05/22/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,28 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 111dac47089fea13febe787e5b73557b287beea8
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 1df6c729ab130a7ff38d7f7cf83224e7425e7dba
+ms.sourcegitcommit: da7b7533d1a4dc141cc0f09149e4e4196f2fe329
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="comm"></a>COMM
-Belirtilen özniteliklerle müşterek bir değişken oluşturur `definition`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-COMM definition [[, definition]] ...  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Her `definition` aşağıdaki biçime sahiptir:  
-  
- [[*langtype*]] [[**NEAR** &#124; **uzak**]] *etiket ***:**`type`[[**:*** Count*]]  
-  
- *Etiket* değişkenin adıdır. `type` Hiçbir tür belirteci olabilir ([bayt](../../assembler/masm/byte-masm.md), [WORD](../../assembler/masm/word.md), vb.) veya bayt sayısını belirten bir tamsayı. *Sayısı* veri nesneleri (varsayılan biridir) sayısını belirtir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Belirtilen özniteliklerle müşterek bir değişken oluşturur *tanımı*.
+
+## <a name="syntax"></a>Sözdizimi
+
+> **COMM** *tanımı* [, *tanımı*]...
+
+## <a name="remarks"></a>Açıklamalar
+
+Müşterek değişkenleri bağlayıcı tarafından ayrılmış ve başlatılamaz. Başka bir deyişle, konumu ya da böyle değişkenlerin sırası bağımlı olamaz.
+
+Her *tanımı* aşağıdaki biçime sahiptir:
+
+[*langtype*] [**NEAR** &#124; **uzak**] _etiket_**:**_türü_[**:**_sayısı_]
+
+İsteğe bağlı *langtype* izleyen ad için adlandırma kurallarını ayarlar. Tarafından belirtilen herhangi bir dil geçersiz kılmaları **. MODEL** yönergesi. İsteğe bağlı **NEAR** veya **uzak** geçerli bellek modeli geçersiz. *Etiket* değişkenin adıdır. *Türü* hiçbir tür belirteci olabilir ([bayt](../../assembler/masm/byte-masm.md), [WORD](../../assembler/masm/word.md), vb.) veya bayt sayısını belirten bir tamsayı. İsteğe bağlı *sayısı* bildirilen veri nesnesinde; öğelerin sayısını belirler varsayılan biridir.
+
+## <a name="example"></a>Örnek
+
+Bu örnek, 512 BAYTLIK öğeleri dizisi oluşturur:
+
+```masm
+COMM FAR ByteArray:BYTE:512
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

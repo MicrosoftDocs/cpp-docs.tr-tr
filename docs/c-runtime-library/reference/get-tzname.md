@@ -34,11 +34,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 182bad39b461efc18b120875432d6ce07be2a884
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a4b49aa404dda6234382ae461459dece64e5996d
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="gettzname"></a>_get_tzname
 
@@ -58,7 +58,7 @@ errno_t _get_tzname(
 ### <a name="parameters"></a>Parametreler
 
 *pReturnValue*<br/>
-Dize uzunluğu *saatdilimi adı* NULL Sonlandırıcı dahil olmak üzere.
+Dize uzunluğu *saatdilimi adı* null Sonlandırıcı dahil olmak üzere.
 
 *saatdilimi adı*<br/>
 Bağlı olarak, saat dilimi adı veya gün ışığından yararlanma standart saat dilimi adının (DST) gösterimi için bir karakter dizesi adresini *dizin*.

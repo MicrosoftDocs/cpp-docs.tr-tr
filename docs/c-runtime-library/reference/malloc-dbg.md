@@ -33,11 +33,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1522b292f04f1148722ddb0c85473c560372e88
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ebc1ff83840631074f04704e6df2a88437b8cc71
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="mallocdbg"></a>_malloc_dbg
 
@@ -63,16 +63,16 @@ void *_malloc_dbg(
 İstenen bellek bloğu türü: **_clıent_block** veya **_NORMAL_BLOCK**.
 
 *Dosya adı*<br/>
-İşaretçi ayırma işlemi ya da NULL istenen kaynak dosyanın adı.
+İstenen ayırma işlemi kaynak dosyasının adını işaretçi veya **NULL**.
 
 *LineNumber*<br/>
-Satır numarası burada ayırma işlemi istendi, ancak kaynak dosyasında veya NULL.
+Satır numarası ayırma işlemi istenen burada kaynak dosyasında veya **NULL**.
 
 *Filename* ve *linenumber* parametreleri yalnızca kullanılabilir olduğunda **_malloc_dbg** açıkça çağrılan veya [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md)önişlemci sabiti tanımlandı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlev bir işaretçi ayrılmış bellek bloğu kullanıcı bölümünü döndürür başarıyla tamamlandığında, yeni işleyici işlev çağrıları veya NULL döndürür. Dönüş davranışı tam bir açıklaması için aşağıdaki Açıklamalar bölümüne bakın. Yeni işleyici işlevi nasıl kullanıldığı hakkında daha fazla bilgi için bkz: [malloc](malloc.md) işlevi.
+Başarıyla tamamlandığında, bu işlev bir işaretçi ayrılmış bellek bloğu kullanıcı bölümünü döndürür, yeni işleyici işlevini çağırır veya verir **NULL**. Dönüş davranışı tam bir açıklaması için aşağıdaki Açıklamalar bölümüne bakın. Yeni işleyici işlevi nasıl kullanıldığı hakkında daha fazla bilgi için bkz: [malloc](malloc.md) işlevi.
 
 ## <a name="remarks"></a>Açıklamalar
 

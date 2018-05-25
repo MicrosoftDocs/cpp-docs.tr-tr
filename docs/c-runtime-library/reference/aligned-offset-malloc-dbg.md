@@ -32,11 +32,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e0b0838f75e8fa95d19ed3abfe13b014157a217
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fd938b935ff5e69adf4d4e56cd70693cfd1a872d
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="alignedoffsetmallocdbg"></a>_aligned_offset_malloc_dbg
 
@@ -66,10 +66,10 @@ Hizalama değeri bir tamsayı güç 2 olmalıdır.
 Hizalama zorlamak için bellek ayırma içine uzaklığı.
 
 *Dosya adı*<br/>
-İşaretçi ayırma işlemi ya da NULL istenen kaynak dosyanın adı.
+İstenen ayırma işlemi kaynak dosyasının adını işaretçi veya **NULL**.
 
 *LineNumber*<br/>
-Satır numarası burada ayırma işlemi istendi, ancak kaynak dosyasında veya NULL.
+Satır numarası ayırma işlemi istenen burada kaynak dosyasında veya **NULL**.
 
 ## <a name="return-value"></a>Dönüş Değeri
 

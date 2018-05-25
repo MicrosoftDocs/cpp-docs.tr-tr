@@ -62,4 +62,4 @@ Visual C++ kitaplıkları yüklenme sırasını sistem bağımlıdır. Yükleyic
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)
-- [Evrensel CRT dağıtım](universal-crt-deployment.md)
+- [Evrensel CRT dağıtımı](universal-crt-deployment.md)

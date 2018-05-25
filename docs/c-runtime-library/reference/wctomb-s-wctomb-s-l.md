@@ -39,11 +39,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb0a44414b01d0105f911732bc3dd2662a278158
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bdb9a1f13fcb387aeddf18cc0f734101463bd3eb
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="wctombs-wctombsl"></a>wctomb_s, _wctomb_s_l
 
@@ -102,7 +102,7 @@ Yukarıdaki hata koşullardan herhangi biri meydana gelirse, geçersiz parametre
 
 **Wctomb_s** işlev dönüştürür kendi *wchar* karşılık gelen birden çok baytlı karakter bağımsız değişkeni ve sonucunda depolar *mbchar*. Herhangi bir noktadan herhangi bir programda işlevini çağırın.
 
-Varsa **wctomb_s** geniş karakter dönüştürür isteğe bağlı olarak birden çok baytlı karakter bayt sayısı koyar (hangi asla büyük **MB_CUR_MAX**) tarafından işaretdeğeritamsayıyagenişkarakter*pRetValue*. Varsa *wchar* joker karakter null karakteri (M '\0'), **wctomb_s** doldurur *pRetValue* 1. Varsa hedef işaretçi *mbchar* null, **wctomb_s** 0 koyar *pRetValue*. Dönüştürme geçerli yerel ayarda mümkün değilse, **wctomb_s** -1 koyar *pRetValue*.
+Varsa **wctomb_s** geniş karakter dönüştürür isteğe bağlı olarak birden çok baytlı karakter bayt sayısı koyar (hangi asla büyük **MB_CUR_MAX**) tarafından işaretdeğeritamsayıyagenişkarakter*pRetValue*. Varsa *wchar* joker karakter null karakteri (M '\0'), **wctomb_s** doldurur *pRetValue* 1. Varsa hedef işaretçi *mbchar* olan **NULL**, **wctomb_s** 0 koyar *pRetValue*. Dönüştürme geçerli yerel ayarda mümkün değilse, **wctomb_s** -1 koyar *pRetValue*.
 
 **wctomb_s** geçerli yerel ayar için yerel ayara bağımlı bilgileri; kullanır **_wctomb_s_l** yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
 

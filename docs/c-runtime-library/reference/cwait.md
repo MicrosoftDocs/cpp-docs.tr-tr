@@ -32,11 +32,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a765a6a51a050b96dfd110c21810248b3bb58e16
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 878c1c08dabe52a31a2bdf377c3e0bb167a9ae5d
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="cwait"></a>_cwait
 
@@ -58,7 +58,7 @@ intptr_t _cwait(
 ### <a name="parameters"></a>Parametreler
 
 *termstat*<br/>
-Belirtilen işlem Sonuç kodu depolanacağı bir arabellek işaretçisine ya da NULL.
+Belirtilen işlem Sonuç kodu depolanacağı, arabellek için işaretçi veya **NULL**.
 
 *procHandle*<br/>
 İşlemin beklemesi tanıtıcısını (diğer bir deyişle, önce sonlandırmak için olan işlem **_cwait** dönebilirsiniz).
@@ -81,7 +81,7 @@ Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno,
 
 **_Cwait** işlevi bekler tarafından sağlanan işlem kimliği belirtilen işlemin sonlandırılması için *procHandle*. Değeri *procHandle* için geçirilen **_cwait** çağrısı tarafından döndürülen değer olmalıdır [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) belirtilen işlem oluşturulan işlevi. İşlem kimliği önce ererse **_cwait** olarak adlandırılır, **_cwait** hemen döndürür. **_cwait** kendisi için diğer bilinen işlemin tamamlanmasını beklemek için herhangi bir işlem tarafından kullanılan geçerli bir tanıtıcı (*procHandle*) bulunmaktadır.
 
-*termstat* belirtilen işlemin dönüş kodu depolanacağı bir arabellek işaret eder. Değeri *termstat* belirtilen işlem normalde Windows çağırarak sonlandırıldı olup olmadığını gösteren [ExitProcess](http://msdn.microsoft.com/library/windows/desktop/ms682658.aspx) API. **ExitProcess** belirtilen işlem çağırırsa dahili olarak çağrılır **çıkmak** veya **_exit**, döndürür **ana**, veya sonuna ulaştığında **ana** . Geri geçirilir değeri hakkında daha fazla bilgi için *termstat*, bkz: [GetExitCodeProcess](http://msdn.microsoft.com/library/windows/desktop/ms683189.aspx). Varsa **_cwait** için bir NULL değer kullanılarak çağrılan *termstat*, belirtilen işlemin dönüş kodu saklanmaz.
+*termstat* belirtilen işlemin dönüş kodu depolanacağı bir arabellek işaret eder. Değeri *termstat* belirtilen işlem normalde Windows çağırarak sonlandırıldı olup olmadığını gösteren [ExitProcess](http://msdn.microsoft.com/library/windows/desktop/ms682658.aspx) API. **ExitProcess** belirtilen işlem çağırırsa dahili olarak çağrılır **çıkmak** veya **_exit**, döndürür **ana**, veya sonuna ulaştığında **ana** . Geri geçirilir değeri hakkında daha fazla bilgi için *termstat*, bkz: [GetExitCodeProcess](http://msdn.microsoft.com/library/windows/desktop/ms683189.aspx). Varsa **_cwait** kullanarak adında bir **NULL** değerini *termstat*, belirtilen işlemin dönüş kodu saklanmaz.
 
 *Eylem* parametresi, Windows işletim sistemi tarafından yoksayıldığından, çünkü üst-alt ilişkisi bu ortamlarda uygulanmaz.
 

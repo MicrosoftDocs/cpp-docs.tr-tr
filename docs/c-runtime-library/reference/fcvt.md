@@ -35,11 +35,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fefe9bbfc1904847af5594a4d663b1eb8299fc9b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 272b8e4ba5e57d71b4b785bceef7e5ea2f0ac7c2
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="fcvt"></a>_fcvt
 
@@ -72,7 +72,7 @@ Depolanan oturum göstergesi işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_fcvt** bir işaretçi bir rakam dizesiyle, hata NULL döndürür.
+**_fcvt** basamak, dize için bir işaretçi döndürür **NULL** hata.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -86,7 +86,7 @@ Arasındaki farkı **_ecvt** ve **_fcvt** yorumu içinde olduğu *sayısı* para
 
 **_ecvt** ve **_fcvt** dönüştürme için tek bir statik olarak ayrılan arabellek kullanın. Bu yordamlar her çağrısına önceki çağrısının sonuçlarını bozar.
 
-Bu işlev parametrelerini doğrular. Varsa *Ara* veya *oturum* null, veya *sayısı* 0'dır, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve NULL döndürülür.
+Bu işlev parametrelerini doğrular. Varsa *Ara* veya *oturum* olan **NULL**, veya *sayısı* 0'dır, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametresi Doğrulama](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve **NULL** döndürülür.
 
 ## <a name="requirements"></a>Gereksinimler
 

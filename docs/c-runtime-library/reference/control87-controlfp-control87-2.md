@@ -48,11 +48,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 098e5760718e4e2d2a9063700b09d0381e76df1f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 48d0c3107bf2edc09017ea138e4c8024ce328dd8
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="control87-controlfp-control872"></a>_control87, _controlfp, __control87_2
 
@@ -128,7 +128,7 @@ _controlfp(_DN_FLUSH, _MCW_DN);
 // and x64 processors with SSE2 support. Ignored on other x86 platforms.
 ```
 
-ARM platformlarda **_control87** ve **_controlfp** işlevleri FPSCR kasa uygulamak. X64 üzerinde mimariler, depolanan SSE2 denetim sözcüğü MXCSR kayıt etkilenir. X86 üzerinde platformları, **_control87** ve **_controlfp** varsa x87 ve SSE2 denetim sözcükleri etkiler. İşlev **__control87_2** x87 ve SSE2 kayan nokta birimleri birlikte veya ayrı olarak denetlenmesini sağlar. Her iki birimleri etkileyen istiyorsanız, iki tamsayılara adreslerini geçirin **x86_cw** ve **sse2_cw**. Yalnızca tek bir birim etkileyen istiyorsanız, bu parametre için bir adres geçirmek ancak diğer için 0 (boş) geçirin. 0 Bu parametrelerden birini geçirilirse işlevi kayan nokta o birimi üzerinde etkisi yoktur. Bu işlev SSE2 kayan nokta birim kod kullanır x87 kayan nokta birimi bir parçası ve başka bir kod parçası, burada kullanır durumlarda yararlı olabilir. Kullanırsanız **__control87_2** bir programı'nın bir parçası olarak ayarlamak için kayan nokta denetim sözcükleri farklı değerler ve ardından **_control87** veya **_controlfp** daha da fazla Denetim sözcüğünü ardından işlemek **_control87** ve **_controlfp** hem kayan nokta birimleri durumunu göstermek için bir tek denetim sözcüğü döndüremedi olabilir. Böyle bir durumda, bu işlevler kümesi **EM_AMBIGUOUS** iki denetim sözcükler arasında bir tutarsızlık olduğunu belirtmek için döndürülen tamsayı değeri bayrağı. Bu, döndürülen denetim sözcüğü hem kayan nokta denetim sözcükler durumunu doğru şekilde temsil edemeyebilir değil, bir uyarıdır.
+ARM platformlarda **_control87** ve **_controlfp** işlevleri FPSCR kasa uygulamak. X64 üzerinde mimariler, depolanan SSE2 denetim sözcüğü MXCSR kayıt etkilenir. X86 üzerinde platformları, **_control87** ve **_controlfp** varsa x87 ve SSE2 denetim sözcükleri etkiler. İşlev **__control87_2** x87 ve SSE2 kayan nokta birimleri birlikte veya ayrı olarak denetlenmesini sağlar. Her iki birimleri etkileyen istiyorsanız, iki tamsayılara adreslerini geçirin **x86_cw** ve **sse2_cw**. Yalnızca tek bir birim etkileyen istiyorsanız, bu parametre için bir adres geçirmek ancak 0 olarak geçirin (**NULL**) diğer. 0 Bu parametrelerden birini geçirilirse işlevi kayan nokta o birimi üzerinde etkisi yoktur. Bu işlev SSE2 kayan nokta birim kod kullanır x87 kayan nokta birimi bir parçası ve başka bir kod parçası, burada kullanır durumlarda yararlı olabilir. Kullanırsanız **__control87_2** bir programı'nın bir parçası olarak ayarlamak için kayan nokta denetim sözcükleri farklı değerler ve ardından **_control87** veya **_controlfp** daha da fazla Denetim sözcüğünü ardından işlemek **_control87** ve **_controlfp** hem kayan nokta birimleri durumunu göstermek için bir tek denetim sözcüğü döndüremedi olabilir. Böyle bir durumda, bu işlevler kümesi **EM_AMBIGUOUS** iki denetim sözcükler arasında bir tutarsızlık olduğunu belirtmek için döndürülen tamsayı değeri bayrağı. Bu, döndürülen denetim sözcüğü hem kayan nokta denetim sözcükler durumunu doğru şekilde temsil edemeyebilir değil, bir uyarıdır.
 
 ARM ve x64 sonsuz modu veya kayan nokta duyarlık değiştirme mimarileri desteklenmiyor. Duyarlık denetimi maske üzerinde x64 kullanılıp kullanılmadığını platform, işlevi bir onaylama işlemi başlatır ve açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).
 

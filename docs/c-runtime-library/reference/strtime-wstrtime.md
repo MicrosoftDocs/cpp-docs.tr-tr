@@ -43,11 +43,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2881cc0b026225674096127eba165b622483de3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3b0ca776394b47f5209fbf034cbb10461c220634
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="strtime-wstrtime"></a>_strtime, _wstrtime
 
@@ -85,7 +85,7 @@ Bir işaretçi sonuç karakter dizesi döndürür *timestr*.
 
 **_Strtime** işlevi geçerli yerel saat gösterdiği arabellek kopyalar *timestr*. Saat olarak biçimlendirilmiş **ss: dd:** nerede **hh** olan 24 saatlik gösteriminde saati temsil eden iki basamak **mm** olan saat ve geçetemsiledenikibasamak**ss** saniye temsil eden iki basamak değil. Örneğin, dize **18:23:44** 23 dakika ve 44 aşan saniye 6'da temsil eder Arabellek en az 9 bayt uzun olmalıdır.
 
-**_wstrtime** bir joker karakter sürümü **_strtime**; bağımsız değişkeni ve dönüş değeri **_wstrtime** joker karakter dizelerdir. Bu işlevler aynı şekilde aksi davranır. Varsa *timestr* olan **NULL** işaretçi veya *timestr* geçersiz yanlış biçimlendirilmiş parametre işleyicisi çağrılır, açıklandığı gibi [parametresi Doğrulama](../../c-runtime-library/parameter-validation.md). Özel durum, devam etmek için bu işlevler dönüş NULL ve kümesi izin verilip verilmediğini **errno** için **EINVAL** varsa *timestr* bir NULL değil veya ayarlayın **errno**için **ERANGE** varsa *timestr* yanlış biçimlendirilmiş.
+**_wstrtime** bir joker karakter sürümü **_strtime**; bağımsız değişkeni ve dönüş değeri **_wstrtime** joker karakter dizelerdir. Bu işlevler aynı şekilde aksi davranır. Varsa *timestr* olan bir **NULL** işaretçi veya *timestr* geçersiz yanlış biçimlendirilmiş parametre işleyicisi çağrılır, açıklandığı gibi [parametresi Doğrulama](../../c-runtime-library/parameter-validation.md). Özel devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş bir **NULL** ve **errno** için **EINVAL** varsa *timestr* bir edildi**NULL** veya **errno** için **ERANGE** varsa *timestr* yanlış biçimlendirilmiş.
 
 C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon aşırı yüklemeleri bu işlevler vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
 

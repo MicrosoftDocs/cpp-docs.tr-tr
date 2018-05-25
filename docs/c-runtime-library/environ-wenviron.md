@@ -23,11 +23,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98106cbcfb08f15b00ceed8b8b5f0db87da7303f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5f66e0aa847c0835290895aa7412410b2350d617
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="environ-wenviron"></a>_environ, _wenviron
 `_environ` İşlem ortamını oluşturan çok baytlı karakter dizeleri işaretçiler dizisi için bir işaretçi bir değişkendir. Bu genel değişkeni daha güvenli işlevsel sürümleri için kullanım dışı [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md) ve [_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md), hangi kullanılmalıdır yerine genel değişkeni. `_environ` içinde Stdlib.h bildirildi.  
@@ -56,9 +56,9 @@ extern wchar_t **_wenviron;
   
  bir joker karakter sürümü `_environ`. Kullanan bir programda `wmain` işlevi, `_wenviron` işletim sistemi ortamdan alınan ayarlara göre program başlangıçta başlatıldı.  
   
- Kullanan bir programda `main`, `_wenviron` başlangıçta `NULL` çok baytlı karakter dizeleri oluşturulan ortam olduğundan. İlk çağrıda `_wgetenv` veya `_wputenv`, karşılık gelen bir joker karakter dizesi ortamı oluşturulur ve işaret ediyor `_wenviron`.  
+ Kullanan bir programda `main`, `_wenviron` başlangıçta **NULL** çok baytlı karakter dizeleri oluşturulan ortam olduğundan. İlk çağrıda `_wgetenv` veya `_wputenv`, karşılık gelen bir joker karakter dizesi ortamı oluşturulur ve işaret ediyor `_wenviron`.  
   
- Benzer şekilde, kullanan bir programda `wmain`, `_environ` başlangıçta `NULL` joker karakter dizelerini oluşturulan ortam olduğundan. İlk çağrıda `_getenv` veya `_putenv`, karşılık gelen bir çok baytlı karakter dizesi ortamı oluşturulur ve işaret ediyor `_environ`.  
+ Benzer şekilde, kullanan bir programda `wmain`, `_environ` başlangıçta **NULL** joker karakter dizelerini oluşturulan ortam olduğundan. İlk çağrıda `_getenv` veya `_putenv`, karşılık gelen bir çok baytlı karakter dizesi ortamı oluşturulur ve işaret ediyor `_environ`.  
   
  Ortam (MBCS ve Unicode) iki kopyasını aynı anda bir program varsa, çalışma zamanı sistem kaynaklanan yavaş yürütme süresi içinde her iki kopya bulundurmanız gerekir. Örneğin, her çağırmanız `_putenv`, çağrı `_wputenv` böylece iki ortam dizeleri karşılık da otomatik olarak yürütülür.  
   

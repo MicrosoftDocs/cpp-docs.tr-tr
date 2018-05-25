@@ -53,11 +53,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36e7a2c6025ebf5576bc38117575ebe453adb419
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d7ea6a480ad5600a69cae31033c4abc28ed78e5e
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="strcoll-wcscoll-mbscoll-strcolll-wcscolll-mbscolll"></a>strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l
 
@@ -116,7 +116,7 @@ Bu işlevlerin her biri arasındaki ilişkiyi gösteren bir değer döndürür *
 |0|*Dize1* aynı *dize2*|
 |> 0|*Dize1* büyük *dize2*|
 
-Bunların her biri döndürür işlevleri **_NLSCMPERROR** bir hata. Kullanılacak **_NLSCMPERROR**, her iki dize içerir. H veya MBSTRING. H. **wcscoll** ya da başarısız *Dize1* veya *dize2* null ya da etki alanının harmanlama sırası dışında joker karakter kodları içerir. Hata oluştuğunda **wcscoll** ayarlayabilir **errno** için **EINVAL**. Çağrı sırasında bir hata olup olmadığını denetlemek için **wcscoll**ayarlayın **errno** 0 ve denetleyin **errno** çağırdıktan sonra **wcscoll**.
+Bunların her biri döndürür işlevleri **_NLSCMPERROR** bir hata. Kullanılacak **_NLSCMPERROR**, her iki dize içerir. H veya MBSTRING. H. **wcscoll** ya da başarısız *Dize1* veya *dize2* olan **NULL** veya etki alanının harmanlama sırası dışında joker karakter kodları içerir. Hata oluştuğunda **wcscoll** ayarlayabilir **errno** için **EINVAL**. Çağrı sırasında bir hata olup olmadığını denetlemek için **wcscoll**ayarlayın **errno** 0 ve denetleyin **errno** çağırdıktan sonra **wcscoll**.
 
 ## <a name="remarks"></a>Açıklamalar
 

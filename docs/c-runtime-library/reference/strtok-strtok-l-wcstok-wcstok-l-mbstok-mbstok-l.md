@@ -55,11 +55,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 387d8165ad157f5d4b8936b79590d8e3ebbc2810
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 45e2155f830a302f316aa96ce41b65a71709bc0d
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="strtok-strtokl-wcstok-wcstokl-mbstok-mbstokl"></a>strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 
@@ -103,7 +103,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi bulunan sonraki belirteç döndüren *strToken*. Döndürmeleri **NULL** başka belirteç bulunduğunda. Her çağrı değiştirir *strToken* değiştirerek tarafından bir **NULL** sonra döndürülen belirteç oluşur ve ilk sınırlayıcı karakter.
+İşaretçi bulunan sonraki belirteç döndüren *strToken*. Döndürmeleri **NULL** başka belirteç bulunduğunda. Her çağrı değiştirir *strToken* tarafından döndürülen belirteç sonra oluşan ilk sınırlayıcısı için bir null karakter değiştirerek.
 
 ## <a name="remarks"></a>Açıklamalar
 

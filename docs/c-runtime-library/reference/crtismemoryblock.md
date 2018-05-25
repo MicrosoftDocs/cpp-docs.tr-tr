@@ -32,11 +32,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dee3e30e5bde5a3bed67d975c96b00568306f926
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 45331186cca5aab3c7971ba404d7b6da98139130
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="crtismemoryblock"></a>_CrtIsMemoryBlock
 
@@ -77,7 +77,7 @@ Kaynak dosyasında satır numarası işaretçi veya **NULL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Crtısmemoryblock** işlevi, belirtilen bellek bloğu uygulamanın yerel yığın içinde bulunur ve geçerli blok türü tanımlayıcısı sahip olduğunu doğrular. Bu işlev, burada bellek bloğu ayırma başlangıçta istenen nesne ayırma sipariş numarası ve kaynak dosya adı/satır numarasını almak için de kullanılabilir. NULL olmayan değerler geçirmesi *requestNumber*, *filename*, veya *linenumber* parametreleri nedenler **_crtısmemoryblock** ayarlamak için yerel yığın blok bulursa, bu parametreler bellek bloğun değerler başlığı, hata ayıklama. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_crtısmemoryblock** ön işleme sırasında kaldırılır.
+**_Crtısmemoryblock** işlevi, belirtilen bellek bloğu uygulamanın yerel yığın içinde bulunur ve geçerli blok türü tanımlayıcısı sahip olduğunu doğrular. Bu işlev, burada bellek bloğu ayırma başlangıçta istenen nesne ayırma sipariş numarası ve kaynak dosya adı/satır numarasını almak için de kullanılabilir. Geçirme olmayan**NULL** değerleri *requestNumber*, *filename*, veya *linenumber* parametreleri nedenler **_ Crtısmemoryblock** blok yerel yığınında bulursa Bellek Blok hata ayıklama üstbilgisi, değerler bu parametreleri ayarlamak için. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_crtısmemoryblock** ön işleme sırasında kaldırılır.
 
 Varsa **_crtısmemoryblock** başarısız, döndürdüğü **FALSE** ve çıkış parametreleri varsayılan değerlere başlatılır: *requestNumber* ve **lineNumber**  0 olarak ayarlayın ve *filename* ayarlanır **NULL**.
 

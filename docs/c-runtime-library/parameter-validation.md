@@ -14,14 +14,14 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a89ec2cd0b360f498e52af7e49bd5c6571521e2c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d39011149de0b2fb81b70d58d768a06dc8a95355
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="parameter-validation"></a>Parametre Doğrulama
-Gelişmiş Güvenlik CRT işlevlerinin çoğunu ve önceden var olan işlevlerin çoğunu kendi parametreleri doğrulayın. Bu NULL işaretçiler denetimi, tamsayılar geçerli bir aralık kalan denetleme veya numaralandırma değerlerinin geçerli olduğundan emin denetimi içerebilir. Geçersiz bir parametre bulunduğunda, geçersiz parametre işleyicisi yürütülür.  
+Gelişmiş Güvenlik CRT işlevlerinin çoğunu ve önceden var olan işlevlerin çoğunu kendi parametreleri doğrulayın. Bu işaretçileri denetimi içerebilir **NULL**tamsayılar geçerli bir aralık kalan denetimi veya numaralandırma değerlerinin geçerli olduğundan emin denetleniyor. Geçersiz bir parametre bulunduğunda, geçersiz parametre işleyicisi yürütülür.  
   
 ## <a name="invalid-parameter-handler-routine"></a>Geçersiz parametre işleyicisi yordamı  
  C çalışma zamanı kitaplığı işlevi geçersiz bir parametre algıladığında, bu hata hakkındaki bazı bilgileri yakalar ve ardından bir geçersiz parametre işleyicisi gönderme işlevi, aşağıdakilerden birini sarmalar makrosu çağırır [_invalid_parameter](../c-runtime-library/reference/invalid-parameter-functions.md), [_invalid_parameter_noinfo](../c-runtime-library/reference/invalid-parameter-functions.md), veya [_invalid_parameter_noinfo_noreturn](../c-runtime-library/reference/invalid-parameter-functions.md). Adlı gönderme işlevi bağlıdır kodunuzu, sırasıyla olup, bir hata ayıklama derlemesi, perakende derleme üzerinde veya hata kurtarılabilir dikkate alınmaz. 

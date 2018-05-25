@@ -42,11 +42,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92becad93e1d0375f3ecf1ec587daa877a4c8485
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b81ace9c9fe5cf21d93f7e7dd4a8b5f2f2c5d726
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="chdir-wchdir"></a>_chdir, _wchdir
 
@@ -70,7 +70,7 @@ Yeni çalışma dizini yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevler, başarılı olursa 0 değerini döndürür. Dönüş değeri-1 hata gösterir. Belirtilen yol bulunamadı, **errno** ayarlanır **ENOENT**. Varsa *DizinAdı* null, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlev -1 döndürür.
+Bu işlevler, başarılı olursa 0 değerini döndürür. Dönüş değeri-1 hata gösterir. Belirtilen yol bulunamadı, **errno** ayarlanır **ENOENT**. Varsa *DizinAdı* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlev -1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 

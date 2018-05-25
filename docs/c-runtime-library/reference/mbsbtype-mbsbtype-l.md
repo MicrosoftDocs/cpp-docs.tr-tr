@@ -38,11 +38,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54b82eae4826bd6a359f2cf0d4e74bccd32f81b0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: be098cb1fe53e1345f0c4f40212657f4bfd97f4f
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="mbsbtype-mbsbtypel"></a>_mbsbtype, _mbsbtype_l
 
@@ -85,7 +85,7 @@ Kullanılacak yerel ayar.
 |**_MBC_SINGLE** (0)|Tek baytlı karakter. Örneğin, kod sayfası 932, içinde **_mbsbtype** belirtilen bayt 0xDF 0x20-0x7E veya 0xA1 - aralığında ise 0 döndürür.|
 |**_MBC_LEAD** (1)|Birden çok baytlı karakter baytını yol açar. Örneğin, kod sayfası 932, içinde **_mbsbtype** belirtilen bayt 0xFC 0x81-0x9F veya 0xE0 - aralığında ise 1 döndürür.|
 |**_MBC_TRAIL** (2)|Birden çok baytlı karakter izleyen baytı. Örneğin, kod sayfası 932, içinde **_mbsbtype** belirtilen bayt 0xFC 0x40-0x7E veya 0x80 - aralığında varsa 2 değerini döndürür.|
-|**_MBC_ILLEGAL** (-1)|**NULL** dize, geçersiz bir karakter veya **NULL** bayt uzaklığındaki önce bulunan bayt *sayısı* içinde *mbstr*.|
+|**_MBC_ILLEGAL** (-1)|**NULL** dize, geçersiz bir karakter ya da null bayt uzaklığındaki bayt önce bulunan *sayısı* içinde *mbstr*.|
 
 ## <a name="remarks"></a>Açıklamalar
 

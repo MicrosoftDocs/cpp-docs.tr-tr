@@ -32,11 +32,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 546ad1b4bb745274894754a185c57bacb82b0061
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1fd5854bc18cecda1fd3ffee4f28ec2fa5d2a68a
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="alignedreallocdbg"></a>_aligned_realloc_dbg
 
@@ -66,10 +66,10 @@ Geçerli bellek bloğu işaretçisi.
 Hizalama değeri bir tamsayı güç 2 olmalıdır.
 
 *Dosya adı*<br/>
-İstenen kaynak dosyasının adını işaretçi **realloc** işlemi ya da NULL.
+İstenen kaynak dosyasının adını işaretçi **realloc** işlemi veya **NULL**.
 
 *LineNumber*<br/>
-Satır numarası kaynak dosyasında nerede **realloc** işlemi istenen veya NULL.
+Satır numarası kaynak dosyasında nerede **realloc** işlemi istendi veya **NULL**.
 
 ## <a name="return-value"></a>Dönüş Değeri
 

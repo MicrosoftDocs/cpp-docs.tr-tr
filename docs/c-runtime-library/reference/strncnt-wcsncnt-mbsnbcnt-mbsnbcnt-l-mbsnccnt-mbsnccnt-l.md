@@ -60,11 +60,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf9bebda262bde4dd3bb2484a95b7b57a6960d99
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 066431205ecd7aa2b193350ccda4a83decac0458
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="strncnt-wcsncnt-mbsnbcnt-mbsnbcntl-mbsnccnt-mbsnccntl"></a>_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
 
@@ -118,7 +118,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbsnbcnt** ve **_mbsnbcnt_l** bulunan bayt sayısını döndürmek ilk *sayısı* birden çok baytlı karakter sayısını *str*. **_mbsnccnt** ve **_mbsnccnt_l** bulunan karakter sayısını Döndür ilk *sayısı* bayt sayısı *str*. Bir NULL karakter incelenmesi önce karşılaştı, *str* sahip tamamlandı, bunlar bayt veya önce NULL karakter bulundu karakter sayısını döndürür. Varsa *str* daha az oluşan *sayısı* karakter veya bayt döndürmeleri karakter veya bayt sayısını dizesi içinde. Varsa *sayısı* küçük sıfırdan, bunlar 0 döndürür. Önceki sürümlerde, bu işlevler bir dönüş değeri olan **int** yerine **size_t**.
+**_mbsnbcnt** ve **_mbsnbcnt_l** bulunan bayt sayısını döndürmek ilk *sayısı* birden çok baytlı karakter sayısını *str*. **_mbsnccnt** ve **_mbsnccnt_l** bulunan karakter sayısını Döndür ilk *sayısı* bayt sayısı *str*. Bir null karakter incelenmesi önce karşılaştı, *str* sahip tamamlandı, bunlar bayt veya önce null karakter bulundu karakter sayısını döndürür. Varsa *str* daha az oluşan *sayısı* karakter veya bayt döndürmeleri karakter veya bayt sayısını dizesi içinde. Varsa *sayısı* küçük sıfırdan, bunlar 0 döndürür. Önceki sürümlerde, bu işlevler bir dönüş değeri olan **int** yerine **size_t**.
 
 **_strncnt** ilk karakter sayısını verir *sayısı* bayt tek baytlı dizesinin *str*. **_wcsncnt** ilk karakter sayısını verir *sayısı* geniş karakter dizesi geniş karakterler *str*.
 
@@ -126,9 +126,9 @@ Kullanılacak yerel ayar.
 
 **_mbsnbcnt** ve **_mbsnbcnt_l** bulunan bayt sayısı ilk *sayısı* birden çok baytlı karakter sayısını *str*. **_mbsnbcnt** ve **_mbsnbcnt_l** Değiştir **mtob** ve yerine kullanılmalıdır **mtob**.
 
-**_mbsnccnt** ve **_mbsnccnt_l** bulunan karakterleri sayma ilk *sayısı* bayt sayısı *str*. Varsa **_mbsnccnt** ve **_mbsnccnt_l** bir boş değer bir çift bayt karakter ikinci baytı karşılaşırsanız, ilk bayta kalan de NULL olarak kabul edilir ve döndürülen sayı değeri dahil edilmez. **_mbsnccnt** ve **_mbsnccnt_l** Değiştir **btom** ve yerine kullanılmalıdır **btom**.
+**_mbsnccnt** ve **_mbsnccnt_l** bulunan karakterleri sayma ilk *sayısı* bayt sayısı *str*. Varsa **_mbsnccnt** ve **_mbsnccnt_l** çift bayt karakter ikinci baytı bir null karakter karşılaşırsanız, ilk bayt de null olarak kabul edilir ve döndürülen sayı değeri dahil edilmez. **_mbsnccnt** ve **_mbsnccnt_l** Değiştir **btom** ve yerine kullanılmalıdır **btom**.
 
-Varsa *str* null işaretçinin veya *sayısı* 0'dır, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md), **errno** ayarlanır **EINVAL**, ve işlevi 0 değerini döndürür.
+Varsa *str* olan bir **NULL** işaretçi veya *sayısı* 0'dır, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md), **errno** ayarlanır **EINVAL**, ve işlevi 0 değerini döndürür.
 
 Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, yerel ayar parametresi kullanmasını dışında aynıdır Bunun yerine geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
 

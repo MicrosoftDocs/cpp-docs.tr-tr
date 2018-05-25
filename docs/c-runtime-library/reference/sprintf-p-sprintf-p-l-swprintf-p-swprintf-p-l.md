@@ -52,11 +52,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9a97dc0d1e52cb23e26eeb46e86c684b6bee9d0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 02c28da8c066f51bb4366c7ed20e04266d37b074
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="sprintfp-sprintfpl-swprintfp-swprintfpl"></a>_sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
 
@@ -118,11 +118,11 @@ Yazılan karakter sayısını veya bir hata oluştuysa -1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Sprintf_p** işlevi biçimlendirir ve bir dizi karakter ve değerleri depolar *arabellek*. Her bağımsız değişkeninde *argument_list* (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre *biçimi*. *Biçimi* bağımsız değişkeni kullanır [biçim belirtim Sözdizimi printf ve wprintf işlevleri için](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). A **NULL** karakter yazılmış son karakter sonra eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır. Arasındaki farkı **_sprintf_p** ve **sprintf_s** olan **_sprintf_p** bağımsız değişkenleri olan düzeni belirtilmesine izin verir destekler konumsal Parametreler Biçim dizesi kullanılır. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
+**_Sprintf_p** işlevi biçimlendirir ve bir dizi karakter ve değerleri depolar *arabellek*. Her bağımsız değişkeninde *argument_list* (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre *biçimi*. *Biçimi* bağımsız değişkeni kullanır [biçim belirtim Sözdizimi printf ve wprintf işlevleri için](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Bir null karakter yazılmış son karakter sonra eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır. Arasındaki farkı **_sprintf_p** ve **sprintf_s** olan **_sprintf_p** bağımsız değişkenleri olan düzeni belirtilmesine izin verir destekler konumsal Parametreler Biçim dizesi kullanılır. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
 
 **_swprintf_p** bir joker karakter sürümü **_sprintf_p**; işaretçi bağımsız değişkenleri **_swprintf_p** joker karakter dizelerdir. Kodlama hataları algılama **_swprintf_p** , farklı olabilir **_sprintf_p**. **_swprintf_p** ve **fwprintf_p** durumlar dışında aynı şekilde davranır **_swprintf_p** bir dize yerine bir hedef türü çıktısı Yazar **dosya**, ve **_swprintf_p** gerektirir *sayısı* parametresi yazılacak karakter sayısını belirtin. Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
 
-**_sprintf_p** depolanan bayt sayısını verir *arabellek*, sonlandırma saymaz **NULL** karakter. **_swprintf_p** depolanan geniş karakter sayısını verir *arabellek*, sonlandırma saymaz **NULL** geniş karakter. Varsa *arabellek* veya *biçimi* null işaretçi veya biçim dizesi geçersiz biçimlendirme karakterlerini içeriyorsa, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulama ](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+**_sprintf_p** depolanan bayt sayısını verir *arabellek*, sonlandırma null karakteri sayım değil. **_swprintf_p** depolanan geniş karakter sayısını verir *arabellek*, sonlandırma null geniş karakter sayım değil. Varsa *arabellek* veya *biçimi* null işaretçi veya biçim dizesi geçersiz biçimlendirme karakterlerini içeriyorsa, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulama ](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 

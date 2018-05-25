@@ -55,11 +55,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 298e2a1abddc477e406bca17bce04999c6e09415
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0abf64c95e4293710226b2f4f38bc1fcf481b287
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="spawn-wspawn-functions"></a>_spawn, _wspawn İşlevleri
 Her biri `_spawn` işlevleri oluşturur ve yeni bir işlem çalıştırır:  
@@ -137,12 +137,12 @@ Her biri `_spawn` işlevleri oluşturur ve yeni bir işlem çalıştırır:
   
  Bağımsız değişken işaretçileri olarak ayrı bağımsız değişkenler geçirebilirsiniz (içinde `_spawnl`, `_spawnle`, `_spawnlp`, ve `_spawnlpe`) veya bir dizi işaretçileri olarak (içinde `_spawnv`, `_spawnve`, `_spawnvp`, ve `_spawnvpe`). En az bir değişken geçmelidir `arg0` veya `argv`[0], oluşturulan işlemi için. Komut satırında yazarsınız kurala göre bu bağımsız değişken programın adını aynıdır. Farklı bir değer hata üretmez.  
   
- `_spawnl`, `_spawnle`, `_spawnlp`, Ve `_spawnlpe` çağrıları genellikle burada bağımsız değişken sayısı bilinen önceden durumlarda kullanılır. `arg0` Bağımsız değişkeni genellikle bir işaretçidir `cmdname`. Bağımsız değişkenler `arg1` aracılığıyla `argn` yeni bağımsız değişken listesi oluşturuluyor karakter dizelerini işaretçileridir. Aşağıdaki `argn`, olmalıdır bir `NULL` bağımsız değişken listesinin sonuna işaretlemek için işaretçi.  
+ `_spawnl`, `_spawnle`, `_spawnlp`, Ve `_spawnlpe` çağrıları genellikle burada bağımsız değişken sayısı bilinen önceden durumlarda kullanılır. `arg0` Bağımsız değişkeni genellikle bir işaretçidir `cmdname`. Bağımsız değişkenler `arg1` aracılığıyla `argn` yeni bağımsız değişken listesi oluşturuluyor karakter dizelerini işaretçileridir. Aşağıdaki `argn`, olmalıdır bir **NULL** bağımsız değişken listesinin sonuna işaretlemek için işaretçi.  
   
- `_spawnv`, `_spawnve`, `_spawnvp`, Ve `_spawnvpe` çağrıları, değişken sayıda bağımsız değişken için yeni işlem olduğunda faydalıdır. Bağımsız değişkenler işaretçiler bir dizisi olarak geçirilir `argv` *.* Bağımsız değişken `argv`[0] genellikle bir yol için bir işaretçi gerçek modda program adı için korumalı modda mı ve `argv`[1] aracılığıyla `argv`[`n`] için ilgili yeni bağımsız değişken listesi oluşturuluyor karakter dizeleri. Bağımsız değişken `argv`[`n` + 1] olmalıdır bir `NULL` bağımsız değişken listesinin sonuna işaretlemek için işaretçi.  
+ `_spawnv`, `_spawnve`, `_spawnvp`, Ve `_spawnvpe` çağrıları, değişken sayıda bağımsız değişken için yeni işlem olduğunda faydalıdır. Bağımsız değişkenler işaretçiler bir dizisi olarak geçirilir `argv` *.* Bağımsız değişken `argv`[0] genellikle bir yol için bir işaretçi gerçek modda program adı için korumalı modda mı ve `argv`[1] aracılığıyla `argv`[`n`] için ilgili yeni bağımsız değişken listesi oluşturuluyor karakter dizeleri. Bağımsız değişken `argv`[`n` + 1] olmalıdır bir **NULL** bağımsız değişken listesinin sonuna işaretlemek için işaretçi.  
   
 ## <a name="environment-of-the-spawned-process"></a>Oluşturulan işlemi ortamı  
- Açık olan dosyalar bir `_spawn` çağrısı yapılan yeni işlemde açık kalır. İçinde `_spawnl`, `_spawnlp`, `_spawnv`, ve `_spawnvp` çağrıları, yeni işlem çağırma işleminin ortamı devralır. Kullanabileceğiniz `_spawnle`, `_spawnlpe`, `_spawnve`, ve `_spawnvpe` ortam yeni işlem için ortam Ayarları'nda listesini geçirerek alter çağrıları `envp` bağımsız değişkeni. Bağımsız değişken `envp` her öğesinin (dışında son öğesi) gösteren bir ortam değişkeni tanımlama null ile sonlandırılmış bir dizeye karakter işaretçileri dizisidir. Bu tür bir dize genellikle form sahip `NAME` = `value` nerede `NAME` bir ortam değişkeni adı ve `value` değişken ayarlanmış dize değeridir. (Unutmayın `value` çift tırnak işaretleri içine alınmamış.) Son öğenin `envp` dizi olmalıdır `NULL`. Zaman `envp` kendisi `NULL`, oluşturulan işlemi üst işleminin ortam ayarlarını devralır.  
+ Açık olan dosyalar bir `_spawn` çağrısı yapılan yeni işlemde açık kalır. İçinde `_spawnl`, `_spawnlp`, `_spawnv`, ve `_spawnvp` çağrıları, yeni işlem çağırma işleminin ortamı devralır. Kullanabileceğiniz `_spawnle`, `_spawnlpe`, `_spawnve`, ve `_spawnvpe` ortam yeni işlem için ortam Ayarları'nda listesini geçirerek alter çağrıları `envp` bağımsız değişkeni. Bağımsız değişken `envp` her öğesinin (dışında son öğesi) gösteren bir ortam değişkeni tanımlama null ile sonlandırılmış bir dizeye karakter işaretçileri dizisidir. Bu tür bir dize genellikle form sahip `NAME` = `value` nerede `NAME` bir ortam değişkeni adı ve `value` değişken ayarlanmış dize değeridir. (Unutmayın `value` çift tırnak işaretleri içine alınmamış.) Son öğenin `envp` dizi olmalıdır **NULL**. Zaman `envp` kendisi **NULL**, oluşturulan işlemi üst işleminin ortam ayarlarını devralır.  
   
  `_spawn` İşlevleri yeni işleme çeviri modu dahil olmak üzere açık dosyalar hakkındaki tüm bilgileri iletebilir. Bu bilgi, gerçek modu üzerinden geçirilen `C_FILE_INFO` ortamında girişi. Başlangıç kodu normalde bu girişi işler ve ortamından siler. Ancak, bir `_spawn` işlevi olarak çoğaltılır C olmayan işlemi, bu girdi ortamda kalır. Ortam bilgileri gerçek modda ikili biçimde geçtiğinden ortamı yazdırma bu girişi tanımı dizesinde grafik karakterlerini gösterir. Normal işlemler üzerinde herhangi bir etkisi olmamalıdır. Korumalı modda ortamı bilgileri metin biçiminde geçirilir ve bu nedenle hiçbir grafik karakter içerir.  
   

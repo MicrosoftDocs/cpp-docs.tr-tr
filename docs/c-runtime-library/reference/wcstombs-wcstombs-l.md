@@ -39,11 +39,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: facc4855d1e36965eff7af70c5cb48f8fb77d419
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 604ca2d2172e340459d7d5cbf406f01c484750ff
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="wcstombs-wcstombsl"></a>wcstombs, _wcstombs_l
 
@@ -94,11 +94,11 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa **wcstombs** başarıyla baytlı dizeye dönüştürür sonlandırma hariç olmak üzere birden çok baytlı çıkış dizeye yazılan bayt sayısını döndürür **NULL** (varsa). Varsa *mbstr* bağımsız değişkeni **NULL**, **wcstombs** gereken boyut hedef dizesi bayt cinsinden döndürür. Varsa **wcstombs** birden çok baytlı karakter dönüştüremiyor geniş karakter karşılaştığında yazmak için cast -1 döndürür **size_t** ve ayarlar **errno** için **EILSEQ** .
+Varsa **wcstombs** başarıyla baytlı dizeye dönüştürür sonlandırma null (varsa) hariç olmak üzere birden çok baytlı çıkış dizeye yazılan bayt sayısını döndürür. Varsa *mbstr* bağımsız değişkeni **NULL**, **wcstombs** gereken boyut hedef dizesi bayt cinsinden döndürür. Varsa **wcstombs** birden çok baytlı karakter dönüştüremiyor geniş karakter karşılaştığında yazmak için cast -1 döndürür **size_t** ve ayarlar **errno** için **EILSEQ** .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wcstombs** işlevi dönüştürür gösterdiği geniş karakter dizesi *wcstr* için karşılık gelen çok baytlı karakter ve sonuçları depolar *mbstr* dizi. *Sayısı* parametresi birden çok baytlı çıkış dizesi içinde depolanan bayt sayısını belirtir (diğer bir deyişle, boyutu *mbstr*). Genel olarak, bir joker karakter dizesi dönüştürülürken kaç bayt gerekli olacak bilinmiyor. Bazı uluslararası karakterler yalnızca tek baytlık çıkış dizesinde gerektirir; diğer iki gerektirir. Giriş dizisinde her geniş karakter birden çok baytlı çıkış dizesinde iki bayt varsa (geniş karakter dahil olmak üzere **NULL**), sonuç uyacak şekilde sağlanır.
+**Wcstombs** işlevi dönüştürür gösterdiği geniş karakter dizesi *wcstr* için karşılık gelen çok baytlı karakter ve sonuçları depolar *mbstr* dizi. *Sayısı* parametresi birden çok baytlı çıkış dizesi içinde depolanan bayt sayısını belirtir (diğer bir deyişle, boyutu *mbstr*). Genel olarak, bir joker karakter dizesi dönüştürülürken kaç bayt gerekli olacak bilinmiyor. Bazı uluslararası karakterler yalnızca tek baytlık çıkış dizesinde gerektirir; diğer iki gerektirir. Giriş dizisinde (geniş karakter null dahil) her geniş karakter birden çok baytlı çıkış dizesinde iki bayt varsa, sonuç uyacak şekilde sağlanır.
 
 Varsa **wcstombs** joker karakter null karakteri (M '\0') önce veya ne zaman karşılaşırsa *sayısı* oluşur, dönüştürür, 8 bit 0 ve durdurur. Bu nedenle, birden çok baytlı karakter dizesi adresindeki *mbstr* null-yalnızca sonlandırılır **wcstombs** bir joker karakter null karakter dönüştürme sırasında karşılaşır. Dizileri gösterdiği varsa *wcstr* ve *mbstr* üst üste, davranışını **wcstombs** tanımlanmadı.
 

@@ -37,11 +37,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3309aee316c3b067c9bd0ade4e1064289cb4ddaf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a597ad1a72f903d08e848727045e05bf014879b1
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="gets-getws"></a>gets, _getws
 Bir satırından alır `stdin` akış. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).  
@@ -76,7 +76,7 @@ wchar_t *_getws(
  Giriş dizesi için depolama konumu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, bağımsız değişkeni döndürür. A `NULL` işaretçi bir hata veya dosya sonu durumu gösterir. Kullanım [ferror](../c-runtime-library/reference/ferror.md) veya [feof](../c-runtime-library/reference/feof.md) hangisinin oluştu belirlemek için. Varsa `buffer` olan `NULL`, bu işlevler açıklandığı gibi bir geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş `NULL` ve kümesine errno `EINVAL`.  
+ Başarılı olursa, bağımsız değişkeni döndürür. A **NULL** işaretçi bir hata veya dosya sonu durumu gösterir. Kullanım [ferror](../c-runtime-library/reference/ferror.md) veya [feof](../c-runtime-library/reference/feof.md) hangisinin oluştu belirlemek için. Varsa `buffer` olan **NULL**, bu işlevler açıklandığı gibi bir geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **NULL** ve kümesine errno `EINVAL`.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `gets` İşlevi bir satır standart giriş akışından okuma `stdin` ve depolar `buffer`. Satır kadar ve ilk yeni satır karakteri ('\n') dahil olmak üzere tüm karakterleri oluşur. `gets` ardından yeni satır karakteri satır döndürmeden önce bir null karakter ('\0') yerini alır. Buna karşılık, `fgets` işlevi yeni satır karakteri korur. `_getws` bir joker karakter sürümü `gets`; kendi bağımsız ve dönüş değeri joker karakter dizelerdir.  

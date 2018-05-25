@@ -14,11 +14,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 298fe2751cf25355e2075a2870c34bf17cedc222
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7308c127bebd2185429509315ebafb3d83a7efea
+ms.sourcegitcommit: b0d5557dbb57128da560a0a4634312ec4a050a90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="atomic-structure"></a>atomic Yapısı
 
@@ -63,7 +63,7 @@ struct atomic;
 
 Türü *Ty* olmalıdır *trivially copyable*. Diğer bir deyişle, kullanarak [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) kendi bayt kopyalamak için geçerli bir üretmek gerekir *Ty* özgün nesne eşit karşılaştırır nesnesi. [Compare_exchange_weak](#compare_exchange_weak) ve [compare_exchange_strong](#compare_exchange_strong) üye işlevlerini kullanmak [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md) iki olup olmadığını belirlemek için *Ty* değerleri eşit olduğu. Bu işlevler kullanmaz bir *Ty*-tanımlı **işleç ==**. Üye işlevlerini **atomik** kullanmak **memcpy** türü değerleri kopyalamak için *Ty*.
 
-Kısmi uzmanlığı ** atomik\<Ty * > **, tüm işaretçi türleri için bulunmaktadır. Yönetilen işaretçi değeri bir uzaklık eklenmesi veya bir uzaklığı çıkarma uzmanlık etkinleştirir. Aritmetik işlemler türünde bir bağımsız değişken Al **ptrdiff_t** ve boyutuna göre bu bağımsız değişken Ayarla *Ty* aritmetik sıradan adresi ile tutarlı olacak şekilde.
+Kısmi uzmanlığı **atomik\<Ty \* >** , tüm işaretçi türleri için bulunmaktadır. Yönetilen işaretçi değeri bir uzaklık eklenmesi veya bir uzaklığı çıkarma uzmanlık etkinleştirir. Aritmetik işlemler türünde bir bağımsız değişken Al **ptrdiff_t** ve boyutuna göre bu bağımsız değişken Ayarla *Ty* aritmetik sıradan adresi ile tutarlı olacak şekilde.
 
 Dışında tam sayı her türü için bir uzmanlık var. **bool**. Her uzmanlık zengin bir atomik aritmetik ve mantıksal işlemleri için yöntemleri sağlar.
 

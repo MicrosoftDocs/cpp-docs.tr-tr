@@ -35,11 +35,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91d04e78c6f3521c56cd74968a761a2d436e36bf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3c4bb3eab58807805ec3c4fbc35611d268bbeee9
+ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="reallocdbg"></a>_realloc_dbg
 
@@ -69,16 +69,16 @@ Boyutu (bayt) reallocated bloğunun istedi.
 İstenen reallocated bloğunun türü: **_clıent_block** veya **_NORMAL_BLOCK**.
 
 *Dosya adı*<br/>
-İstenen kaynak dosyasının adını işaretçi **realloc** işlemi ya da NULL.
+İstenen kaynak dosyasının adını işaretçi **realloc** işlemi veya **NULL**.
 
 *LineNumber*<br/>
-Satır numarası kaynak dosyasında nerede **realloc** işlemi istenen veya NULL.
+Satır numarası kaynak dosyasında nerede **realloc** işlemi istendi veya **NULL**.
 
 *Filename* ve *linenumber* parametreleri yalnızca kullanılabilir olduğunda **_realloc_dbg** açıkça çağrılan veya [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) önişlemci sabiti tanımlandı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarıyla tamamlandığında, bu işlev bir işaretçi ayrılabilecek bellek bloğu kullanıcı bölümünü döndürür, yeni işleyici işlevini çağırır ya da NULL döndürür. Dönüş davranışı tam bir açıklaması için aşağıdaki Açıklamalar bölümüne bakın. Yeni işleyici işlevi nasıl kullanıldığı hakkında daha fazla bilgi için bkz: [realloc](realloc.md) işlevi.
+Başarıyla tamamlandığında, bu işlev bir işaretçi ayrılabilecek bellek bloğu kullanıcı bölümünü döndürür, yeni işleyici işlevini çağırır ya da döndürür **NULL**. Dönüş davranışı tam bir açıklaması için aşağıdaki Açıklamalar bölümüne bakın. Yeni işleyici işlevi nasıl kullanıldığı hakkında daha fazla bilgi için bkz: [realloc](realloc.md) işlevi.
 
 ## <a name="remarks"></a>Açıklamalar
 
