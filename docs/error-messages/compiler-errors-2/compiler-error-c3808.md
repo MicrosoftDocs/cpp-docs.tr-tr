@@ -16,33 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d645760a15a82f502c82f4c0d0310f7826e70e45
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 40668b8b2cc1a1f85b0ad4a7ef63d89956e922b3
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705211"
 ---
 # <a name="compiler-error-c3808"></a>Derleyici Hatası C3808
-'type': ComImport özniteliğine sahip bir sınıf üyesi 'member', yalnızca soyut tanımlanamıyor veya dllimport işlevleri izin verilir  
-  
- Türetilen bir tür <xref:System.Runtime.InteropServices.ComImportAttribute> tanımlayamazsınız `member`.  
-  
- **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3808 oluşturur.  
-  
-```  
-// C3808.cpp  
-// compile with: /c /clr:pure user32.lib  
-using namespace System::Runtime::InteropServices;  
-  
-[System::Runtime::InteropServices::ComImportAttribute()]  
-ref struct S1 {  
-   int f() {}   // C3808  
-   virtual int g() abstract;   // OK  
-  
-   [DllImport("msvcrt.dll")]  
-   int printf(System::String ^, int i);   // OK  
-};  
+
+> '*türü*': ComImport özniteliğine sahip bir sınıf üyesi tanımlanamıyor '*üye*', yalnızca soyut veya dllimport işlevleri izin verilir
+
+## <a name="remarks"></a>Açıklamalar
+
+Türetilen bir tür <xref:System.Runtime.InteropServices.ComImportAttribute> tanımlayamazsınız *üye*.
+
+**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C3808 oluşturur.
+
+```cpp
+// C3808.cpp
+// compile with: /c /clr:pure user32.lib
+using namespace System::Runtime::InteropServices;
+
+[System::Runtime::InteropServices::ComImportAttribute()]
+ref struct S1 {
+   int f() {}   // C3808
+   virtual int g() abstract;   // OK
+
+   [DllImport("msvcrt.dll")]
+   int printf(System::String ^, int i);   // OK
+};
 ```

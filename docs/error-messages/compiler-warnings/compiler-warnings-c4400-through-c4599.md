@@ -1,6 +1,6 @@
 ---
 title: Derleyici uyarıları C4400 C4599 aracılığıyla | Microsoft Docs
-ms.date: 11/17/2017
+ms.date: 05/30/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -149,11 +149,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa15d1e23178350dc8b19859db77f272492c2758
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 71dbf1817c43c5511f8ee711abf3ff3566f314c9
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34704691"
 ---
 # <a name="compiler-warnings-c4400-through-c4599"></a>Derleyici uyarıları C4400 C4599 aracılığıyla
 
@@ -319,7 +320,8 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı ilet
 |Derleyici Uyarısı (düzey 4) C4574|'*Tanımlayıcısı*'0 ' olarak tanımlanan': '#if tanımlayıcısı' kullanmak mu demek istediniz?|
 |Derleyici Uyarısı (düzey 1) C4575|'__vectorcall' ile uyumsuz ' / clr' seçeneği: '__stdcall' dönüştürme|
 |Derleyici Uyarısı (düzey 1, hata) C4576|Başlatıcı listesi tarafından izlenen bir parantez içine alınmış bir standart açık tür dönüştürme sözdizimi türüdür|
-|Derleyici Uyarısı (düzey 1, hata) C4578|'abs': dönüştürme '*type1*'to'*type2*', olası veri kaybını (çağırmak mu demek istediniz '*işlevi*' veya #include <cmath>?)|
+|Derleyici Uyarısı (düzey kapalı, 1) C4577|hiçbir özel durum işleme belirtilen modu ile kullanılan noexcept'; özel durum sonlandırıldığında garanti edilmez. /EHsc belirtin|
+|Derleyici Uyarısı (düzey 1, hata) C4578|'abs': dönüştürme '*type1*'to'*type2*', olası veri kaybını (çağırmak mu demek istediniz '*işlevi*' veya #include \<cmath >?)|
 |[Derleyici Uyarısı (düzey 3) C4580](../../error-messages/compiler-warnings/compiler-warning-level-3-c4580.md)|[öznitelik] kullanım dışıdır; Bunun yerine bir temel sınıf olarak System::Attribute veya Platform::Metadata belirtin|
 |[Derleyici Uyarısı (düzey 1) C4581](../../error-messages/compiler-warnings/compiler-warning-level-1-c4581.md)|davranış Kullanım: ' "*dize*"' yerine '*dize*' işlem özniteliği|
 |Derleyici Uyarısı (düzey 4) C4582|'*türü*': Oluşturucu örtük olarak çağrılmaz|

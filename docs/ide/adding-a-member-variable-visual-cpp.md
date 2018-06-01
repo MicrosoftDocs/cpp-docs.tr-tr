@@ -18,10 +18,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: fa2a8ef8f7bcdc2d90893acdad98705c9588a5d5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33325737"
 ---
 # <a name="adding-a-member-variable--visual-c"></a>Üye Değişkeni Ekleme (Visual C++)
 Sınıf görünümü kullanarak bir sınıf bir üye değişkenine ekleyebilirsiniz. Üye değişkenleri için ya da olabilir [veri değişimi ve veri doğrulama](../mfc/dialog-data-exchange-and-validation.md), veya genel olabilir. Veri üye değişkeni Sihirbazı'nı ilgili bilgileri geçirmek ve uygun konumlara kaynak dosyalarınızda öğe eklemek için kullanmak üzere özel olarak tasarlanmıştır. Üye değişkeninden ekleyebilirsiniz [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md) içinde [kaynak görünümü](../windows/resource-view-window.md), veya [sınıf görünümü](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925).  

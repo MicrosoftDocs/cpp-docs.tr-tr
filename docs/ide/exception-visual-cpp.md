@@ -19,10 +19,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8d3d5b7a89a3725ae9dee2065bcd21d8f114ca00
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33323946"
 ---
 # <a name="ltexceptiongt-visual-c"></a>&lt;özel durum&gt; (Visual C++)
 \<Özel durum > etiketi hangi özel durum belirtmenize olanak sağlar. Bu etiket için bir yöntem tanımını uygulanır.  

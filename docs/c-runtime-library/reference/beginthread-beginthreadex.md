@@ -39,11 +39,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8e12e25f64972335cb1a1199ae519de71d43067
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: d56bcc5ec779b077305d9d80e4a4e6b5e511df5e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34704665"
 ---
 # <a name="beginthread-beginthreadex"></a>_beginthread, _beginthreadex
 
@@ -141,7 +142,7 @@ Yığın ayırma işletim sistemi işleme olduğunda ya da **_beginthread** veya
 
 İşlem başına genel geçerli yerel ayar bilgileri kullanarak yeni bir iş parçacığı yerel başlatılır. İş parçacığı başına yerel ayar için bir çağrı tarafından etkin olup olmadığını [_configthreadlocale](configthreadlocale.md) (genel olarak veya yeni iş parçacıklarının yalnızca), iş parçacığının kendi yerel bağımsız olarak diğer iş parçacıklarından çağırarak değiştirebilirsiniz **setlocale** veya **_wsetlocale**. İş parçacığı başına yerel ayar bayrağı ayarlanmış sahip olmayan iş parçacıklarının tüm yeni oluşturulan iş parçacıklarını yanı sıra iş parçacığı başına yerel ayar bayrağı ayarlanmış de sahip olmayan tüm diğer iş parçacığı yerel ayar bilgileri etkileyebilir. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
 
-Karışık ve saf kod için **_beginthread** ve **_beginthreadex** her iki aşırı sahip. Bir yerel arama kuralı işlev işaretçisi alır ve diğer sürer bir **__clrcall** işlev işaretçisi. İlk aşırı uygulama etki alanı için güvenli ve hiçbir zaman değil olabilir. Karma veya saf kod yazıyorsanız, yönetilen kaynaklara erişim izni vermeden önce yeni bir iş parçacığı doğru uygulama etki alanı girdiğinden emin olmanız gerekir. Örneğin, kullanarak bunu [call_in_appdomain işlevi](../../dotnet/call-in-appdomain-function.md). İkinci aşırı yüklemesi uygulama etki alanı için güvenli, Yeni oluşturulan iş parçacığı çağıran uygulama etki alanı her zaman ulaşır **_beginthread** veya **_beginthreadex**.
+İçin **/CLR** kodu **_beginthread** ve **_beginthreadex** her iki aşırı sahip. Bir yerel arama kuralı işlev işaretçisi alır ve diğer sürer bir **__clrcall** işlev işaretçisi. İlk aşırı uygulama etki alanı için güvenli ve hiçbir zaman değil olabilir. Yazıyorsanız **/CLR** yönetilen kaynaklara eriştiği önce yeni bir iş parçacığı doğru uygulama etki alanı girer sağlamanız kodu. Örneğin, kullanarak bunu [call_in_appdomain işlevi](../../dotnet/call-in-appdomain-function.md). İkinci aşırı yüklemesi uygulama etki alanı için güvenli, Yeni oluşturulan iş parçacığı çağıran uygulama etki alanı her zaman ulaşır **_beginthread** veya **_beginthreadex**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -330,8 +331,8 @@ Counter should be 1000000; it is-> 1000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_endthread, _endthreadex](endthread-endthreadex.md)<br/>
-[abort](abort.md)<br/>
-[exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190)<br/>
+- [Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)
+- [_endthread, _endthreadex](endthread-endthreadex.md)
+- [abort](abort.md)
+- [exit, _Exit, _exit](exit-exit-exit.md)
+- [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190)

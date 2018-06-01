@@ -28,22 +28,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: c4f4b9bd590ad873d0b241d2c095be53ad1dacb4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 453bb40e94c1d345adbe22f8792b59d1e584499a
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34704834"
 ---
-# <a name="pure-and-verifiable-code-ccli"></a>Saf ve Doğrulanabilen Kod (C++/CLI)
-.NET programlama için Visual Studio 2017'de Visual C++ oluşturulmasını karışık derlemeler kullanarak destekleyen [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği. **/CLR: pure** ve **CLR: safe** seçenekleri Visual Studio 2015'ten itibaren kullanım dışıdır ve derleyici gelecek bir sürümünde kaldırılacak. Ardından kodunuzu doğrulanabilen olması gerekiyorsa, bu C# bağlantı noktasının öneririz.
-  
-## <a name="mixed-clr"></a>Karma (/ clr)  
- Karışık derlemeler (ile derlenmiş **/CLR**), hem de yönetilmeyen içerir ve yönetilen bölümleri, bunlar için .NET özellikleri kullanmak olası hale getirerek, ancak yine yerel kod içerir. Bu, tüm proje yazılması gerekmeden .NET özellikleri kullanmak uygulamaları ve bileşenleri güncelleştirilmesini sağlar. Visual C++ yönetilen ve yerel kodu bu şekilde karıştırmak kullanmayı C++ birlikte çalışabilirliği adı verilir. Daha fazla bilgi için bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md) ve [yerel ve .NET birlikte çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md).  
-  
-  
-Yönetilen derlemelerden Yerel DLL'leri P/Invoke aracılığıyla yapılan çağrılar derlenir ancak güvenlik ayarlarına bağlı olarak çalışma zamanında başarısız olabilir.  
-  
-Derleyiciyi geçecek ancak doğrulanamayan bir derlemede sonuçlanacak bir kodlama senaryo vardır: kapsam çözümü işleci kullanarak bir nesne örneği aracılığıyla sanal bir işlevi çağırmak.  Örneğin: `MyObj -> A::VirtualFunction();`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+# <a name="pure-and-verifiable-code-ccli"></a>Saf ve doğrulanabilen kod (C + +/ CLI)
+
+.NET programlama için Visual Studio 2017'de Visual C++ oluşturulmasını karışık derlemeler kullanarak destekleyen [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği. **/CLR: pure** ve **CLR: safe** seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor. Ardından kodunuzu güvenli veya doğrulanabilen olması gerekiyorsa, bu C# bağlantı noktasının öneririz.
+
+## <a name="mixed-clr"></a>Karma (/ clr)
+
+Karışık derlemeler (ile derlenmiş **/CLR**), hem de yönetilmeyen içerir ve yönetilen bölümleri, bunlar için .NET özellikleri kullanmak olası hale getirerek, ancak yine yerel kod içerir. Bu, tüm proje yazılması gerekmeden .NET özellikleri kullanmak uygulamaları ve bileşenleri güncelleştirilmesini sağlar. Visual C++ yönetilen ve yerel kodu bu şekilde karıştırmak kullanmayı C++ birlikte çalışabilirliği adı verilir. Daha fazla bilgi için bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md) ve [yerel ve .NET birlikte çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md).
+
+Yönetilen derlemelerden Yerel DLL'leri P/Invoke aracılığıyla yapılan çağrılar derlenir ancak güvenlik ayarlarına bağlı olarak çalışma zamanında başarısız olabilir.
+
+Derleyiciyi geçecek ancak doğrulanamayan bir derlemede sonuçlanacak bir kodlama senaryo vardır: kapsam çözümü işleci kullanarak bir nesne örneği aracılığıyla sanal bir işlevi çağırmak.  Örneğin: `MyObj -> A::VirtualFunction();`.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+

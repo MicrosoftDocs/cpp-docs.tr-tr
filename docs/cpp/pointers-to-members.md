@@ -18,11 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6312186ec47014ff11e18450543d8f98178a776b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0354d0a910db0f4237a56607a7322acb7a1b57a0
+ms.sourcegitcommit: 3c1930dc1e7e69fdbb431029cd3e9b9b00a140cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34686857"
 ---
 # <a name="pointers-to-members"></a>Üye İşaretçileri
 Üye işaretçileri bildirimlerini işaretçi bildirimleri özel örnekleridir.  Aşağıdaki dizi kullanılarak bildirilirler:  
@@ -90,7 +91,7 @@ int main()
 }  
 ```  
   
- Önceki örnekte `pwCaption` gösteren bir işaretçidir sınıfı herhangi bir üyenin `Window` türü olan **char\***. Türü `pwCaption` olan `char * Window::*`. Sonraki kod parçası işaretçileri bildirir `SetCaption` ve `GetCaption` üye işlevleri.  
+ Önceki örnekte `pwCaption` gösteren bir işaretçidir sınıfı herhangi bir üyenin `Window` türü olan **char\***. Türü `pwCaption` olan `char * Window::* `. Sonraki kod parçası işaretçileri bildirir `SetCaption` ve `GetCaption` üye işlevleri.  
   
 ```  
 const char * (Window::*pfnwGC)() = &Window::GetCaption;  

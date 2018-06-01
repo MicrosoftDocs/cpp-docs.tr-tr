@@ -16,10 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 58dca91d5ab3bf0cf28d30a04d33ae8bf5819401
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33321200"
 ---
 # <a name="hlsl-property-pages-advanced"></a>HLSL Özellik Sayfaları: Gelişmiş
 HLSL derleyici (fxc.exe) aşağıdaki özellikleri yapılandırmak için kullanın, **Gelişmiş** özellik sayfası. Nasıl erişileceği hakkında bilgi için **Gelişmiş** özellik sayfası HLSL klasöründeki bkz [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).  

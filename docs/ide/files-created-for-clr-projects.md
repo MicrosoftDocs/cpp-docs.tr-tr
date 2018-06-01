@@ -16,10 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: b9d66c3f55164a743bc395dc5e9b48f8bcd57654
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33334671"
 ---
 # <a name="files-created-for-clr-projects"></a>CLR Projeleri için Oluşturulan Dosyalar
 Projelerinizi oluşturmak için Visual C++ şablonları kullandığınızda, hangi şablonuna bağlı olarak kullandığınız birkaç dosyaları oluşturulur. Aşağıdaki tabloda, .NET Framework projeleri için proje şablonları tarafından oluşturulan tüm dosyaları listelenmektedir.  

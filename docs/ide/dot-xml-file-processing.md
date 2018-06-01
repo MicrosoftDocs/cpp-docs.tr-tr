@@ -15,10 +15,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1cf6f5660e1aaeaeff4050bb80009eda7d14c3ba
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33340521"
 ---
 # <a name="xml-file-processing"></a>.Xml Dosyası İşleme
 Derleyici kodunuzda belgeleri oluşturmak için etiketli her yapı için bir kimlik dizesi oluşturur. Daha fazla bilgi için bkz: [önerilen etiketler belge açıklamaları](../ide/recommended-tags-for-documentation-comments-visual-cpp.md). Kimlik dizesi, yapı benzersiz olarak tanımlar. .Xml dosyası işleme programları kimlik dizesi belgelere uygulandığı karşılık gelen .NET Framework meta verileri veya yansıma öğesi tanımlamak için kullanabilirsiniz.  

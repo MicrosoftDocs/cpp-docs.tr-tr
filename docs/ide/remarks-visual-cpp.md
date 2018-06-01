@@ -19,10 +19,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 380a2c27a761154e59826259d3e1e682ae7fbd87
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33334473"
 ---
 # <a name="ltremarksgt-visual-c"></a>&lt;Açıklamalar&gt; (Visual C++)
 \<Açıklamalar > etiketi bir türü hakkında bilgi eklemek için kullanılır, bilgileri ekleme ile belirtilen [ \<Özet >](../ide/summary-visual-cpp.md). Bu bilgiler görüntülenir [Nesne Tarayıcısı](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470) ve kod açıklama Web raporu.  

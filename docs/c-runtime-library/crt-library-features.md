@@ -28,11 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b20fa6862a835ca913a2865a651112584966af3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2b0ccedc3a1794b34fce3ad773e44155f7602d3b
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34704730"
 ---
 # <a name="crt-library-features"></a>CRT Kitaplık Özellikleri
 
@@ -85,7 +86,7 @@ Statik olarak bağlantılı CRT kullanarak C çalışma zamanı kitaplığı tar
 
 CRT durumu için statik bir CRT bağlayarak yerleşik bir DLL olacağı için statik olarak bu sonuçlarını özellikle istenen ve anladım sürece DLL'de CRT bağlamak için önerilmez. Örneğin, çağırırsanız [_set_se_translator](../c-runtime-library/reference/set-se-translator.md) kendi statik CRT bağlı DLL yükleyen bir yürütülebilir dosya içinde DLL kod tarafından oluşturulan tüm donanım özel durumları Çeviricisi, ancak donanım özel durumları tarafından Yakalanacak değil ana kod tarafından oluşturulan yürütülebilir yakalanma yeri.
 
-Kullanıyorsanız **/CLR** derleyici geçiş kodunuzu bağlantılı olması ile bir statik kitaplık, msvcmrt.lib. Statik kitaplık, yönetilen kod ve yerel CRT arasındaki proxy sağlar. Statik olarak bağlantılı CRT kullanamazsınız ( **/MT** veya **/MTd** seçenekleri) ile **/CLR**. Dinamik olarak bağlı kitaplıklarını kullanma (**/MD** veya **/MDd**) yerine.
+Kullanıyorsanız **/CLR** derleyici geçiş kodunuzu bağlantılı olması ile bir statik kitaplık, msvcmrt.lib. Statik kitaplık, yönetilen kod ve yerel CRT arasındaki proxy sağlar. Statik olarak bağlantılı CRT kullanamazsınız ( **/MT** veya **/MTd** seçenekleri) ile **/CLR**. Dinamik olarak bağlı kitaplıklarını kullanma (**/MD** veya **/MDd**) yerine. Saf yönetilen CRT kitaplıkları Visual Studio 2015'te kullanım ve Visual Studio 2017 içinde desteklenmiyor.
 
 CRT ile kullanma hakkında daha fazla bilgi için **/CLR**, bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md).
 
@@ -118,4 +119,4 @@ Programınızı CRT birden fazla sürümünü kullanıyorsanız, bazı dikkatli 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Çalışma Zamanı Kitaplığı Başvurusu](../c-runtime-library/c-run-time-library-reference.md)
+- [C Çalışma Zamanı Kitaplığı Başvurusu](../c-runtime-library/c-run-time-library-reference.md)

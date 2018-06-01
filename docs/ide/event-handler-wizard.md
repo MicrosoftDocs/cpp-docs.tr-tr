@@ -17,10 +17,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 544ce4cd0f4ed9a7f3592e5ec1691fb3734b8772
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33340014"
 ---
 # <a name="event-handler-wizard"></a>Olay İşleyici Sihirbazı
 Bu sihirbaz, tercih ettiğiniz sınıfı için bir iletişim kutusu denetimi için bir olay işleyicisi ekler. Bir olay işleyiciden eklerseniz [Özellikler penceresini](/visualstudio/ide/reference/properties-window), iletişim kutusu uygulayan sınıfına ekleyin. Bkz: [iletişim kutusu denetimleri için olay işleyicileri ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md) daha fazla bilgi için.  

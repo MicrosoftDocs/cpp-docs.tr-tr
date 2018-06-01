@@ -17,10 +17,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: f3ae6a3aef4bdf774b5630a9bb0b2a0b49f7f29b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33336332"
 ---
 # <a name="add-member-variable-wizard"></a>Üye Değişkeni Ekleme Sihirbazı
 Bu sihirbaz bir üye değişken bildirimi üstbilgi dosyası ekler ve belirlediğiniz seçeneklere bağlı olarak bu kodu .cpp dosyasına ekleyebilirsiniz. Sihirbazı'nı kullanarak üye değişkeni ekledikten sonra geliştirme ortamı kodda düzenleyebilirsiniz.  

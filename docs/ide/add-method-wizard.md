@@ -18,10 +18,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: cc2ebd18640f0ab778cb45252691e63206861d53
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33340352"
 ---
 # <a name="add-method-wizard"></a>Yöntem Ekleme Sihirbazı
 Bir yöntem için bir arabirim eklemek için bu sihirbazı kullanın. Proje türü veya yöntem ekleme arabirim türüne bağlı olarak sihirbazın farklı seçenekler görüntüler.  

@@ -17,10 +17,11 @@ ms.author: corob
 ms.workload:
 - cplusplus
 ms.openlocfilehash: e85ec0dfc011aab4d2b3ac835bbe71782b055000
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33332331"
 ---
 # <a name="clickonce-deployment-for-visual-c-applications"></a>Visual C++ Uygulamaları için ClickOnce Dağıtımı
 Visual Studio, Windows uygulamalarını dağıtmak için iki farklı teknolojiler sağlar: ClickOnce dağıtım veya [Windows Installer](http://msdn.microsoft.com/library/cc185688) dağıtım.  

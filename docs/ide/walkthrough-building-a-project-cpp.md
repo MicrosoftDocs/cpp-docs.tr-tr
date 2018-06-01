@@ -17,10 +17,11 @@ ms.author: corob
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0c8d04dc3692076b867302af0e793eaac7ed25cb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33332461"
 ---
 # <a name="walkthrough-building-a-project-c"></a>İzlenecek Yol: Proje Derleme (C++)
 Bu kılavuzda, kasıtlı olarak bir Visual C++ söz dizimi hatası derleme hatası nasıl göründüğünü ve nasıl düzeltileceği öğrenmek için kodunuzda tanıtır. Proje derleme yaparken bir hata iletisi sorunun ne olduğunu ve nerede oluştuğunu gösterir.  

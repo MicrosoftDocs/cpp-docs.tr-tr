@@ -17,10 +17,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 07459cd4971ea6aec95b632e5c03618248cca401
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33330745"
 ---
 # <a name="application-settings-makefile-project-wizard"></a>Uygulama Ayarları, Derleme Görevleri Dosyası Proje Sihirbazı
 Proje için bilgileri sağlayın. Belirttiğiniz seçenekleri projesinin yansıtılır [özellik sayfası](../ide/working-with-project-properties.md). Proje oluşturduktan sonra görüntüleyin ve aşağıdaki seçeneklerin her biri düzenleyin **Nmake** projenin özellik sayfasındaki sayfası.  

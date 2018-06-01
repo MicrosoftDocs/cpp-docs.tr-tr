@@ -19,10 +19,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e78c8ace8b482baa29fbabaf102a8a1bccadd06
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33325402"
 ---
 # <a name="ltvaluegt-visual-c"></a>&lt;değer&gt; (Visual C++)
 \<Değeri > etiketi bir özellik ve özellik erişimci yöntemleri açıklayan olanak sağlar. Visual Studio tümleşik geliştirme ortamında kod sihirbazla bir özellik eklediğinizde, ekleyeceksiniz Not bir [ \<Özet >](../ide/summary-visual-cpp.md) yeni özellik için etiketi. Daha sonra el ile eklemeniz bir \<değeri > özelliği temsil eden bir değeri açıklamak için etiket.  

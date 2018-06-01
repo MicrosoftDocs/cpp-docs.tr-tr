@@ -18,10 +18,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3c33a18ff0d492ef3a870a342c9d8ff292007748
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33339949"
 ---
 # <a name="working-with-project-properties"></a>Proje Özellikleriyle Çalışma
 IDE içinde bir proje oluşturmak için gereken tüm bilgileri olarak sunulan *özellikleri*. Bu bilgiler, uygulama adı, (örneğin, DLL, LIB, EXE) uzantısı, derleyici seçenekleri, bağlayıcı seçenekleri, hata ayıklayıcı ayarları, özel derleme adımları ve diğer pek çok şeyi içerir. Genellikle, kullandığınız *özellik sayfaları* ( **proje &#124; özellikleri**) görüntülemek ve bu özellikleri değiştirmek için. 

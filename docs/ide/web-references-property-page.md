@@ -20,10 +20,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 94f9dfa441fd98a91b15478eadc10eaa39a08687
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33328857"
 ---
 # <a name="web-references-property-page"></a>Web Başvuruları Özellik Sayfası
 **Web başvuruları** özellik sayfası belirtir XML Web hizmeti proxy sınıfı nasıl oluşturulur. Projeniz için web başvurusu eklerseniz, bir XML Web hizmeti proxy sınıfı oluşturulur. Bkz: [Web Başvuru Ekle](http://msdn.microsoft.com/en-us/bdf05776-c591-40af-bfd7-e1e2aa1e87b5) daha fazla bilgi için.  

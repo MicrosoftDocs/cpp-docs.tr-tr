@@ -19,13 +19,14 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee55abe1107e578729fe8d5a301a067afdb6c551
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f39fe3743c023bb0c4cb3130400e9bcb7b97db1b
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34704853"
 ---
-# <a name="error-handling-crt"></a>Hata İşleme (CRT)
+# <a name="error-handling-crt"></a>Hata işleme (CRT)
 
 Program hataları işlemek için bu yordamları kullanın.
 
@@ -43,6 +44,6 @@ Program hataları işlemek için bu yordamları kullanın.
 |[_set_error_mode](../c-runtime-library/reference/set-error-mode.md)|Değiştirir **__error_mode** C çalışma zamanı hata iletisi büyük olasılıkla program sona erer bir hata için nereye yazdığını varsayılan olmayan bir konum belirlemek için.|
 |[_set_purecall_handler](../c-runtime-library/reference/get-purecall-handler-set-purecall-handler.md)|Saf sanal işlev çağrısı için işleyici ayarlar.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+- [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)

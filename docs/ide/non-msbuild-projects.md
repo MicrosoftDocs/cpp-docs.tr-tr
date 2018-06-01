@@ -15,10 +15,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0fe4eba09f06b987ab11f35429e13796fe6baafb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33337291"
 ---
 # <a name="open-folder-projects-in-visual-c"></a>Visual C++'ta açık klasörü projeler
 Visual Studio 2017, kaynak dosyaları klasörünü açın ve hemen kodlama gözatma, yeniden düzenleme, hata ayıklama, IntelliSense desteği ile başlayın ve benzeri olanak tanıyan "Klasörünü aç" özelliği sunmaktadır. Hiçbir .sln veya .vcxproj dosyalar yüklenir; Gerekirse, özel görevler oluşturun ve parametreleri basit .json dosyalar ile başlatma olarak belirtebilirsiniz. Klasör Aç gücü, yalnızca dosyaların kaybolmasını koleksiyonları, ancak de ayrıca neredeyse tüm yapı sistem, CMake Ninja, QMake (Qt projelerde), gyp, SCons, Gradle, Buck, marka ve çok çeşitli şimdi Visual C++ destekleyebilir. 

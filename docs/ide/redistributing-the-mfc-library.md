@@ -16,10 +16,11 @@ ms.author: corob
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 19a49bf18721f605abe0c6e496d3532012c9c92c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33340404"
 ---
 # <a name="redistributing-the-mfc-library"></a>MFC Kitaplığını Yeniden Dağıtma
 MFC kitaplığını uygulamanıza dinamik olarak bağlantı varsa, eşleşen MFC DLL yeniden dağıtmanız gerekir. MFC uygulamanızı Visual Studio 2015 ile birlikte gelen MFC sürümünü kullanarak oluşturulursa, örneğin, size mfc140.dll veya uygulamanızın dar karakter veya Unicode desteği için derlenmiş olan bağlı olarak mfc140u.dll yeniden dağıtmanız gerekir.  

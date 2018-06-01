@@ -19,10 +19,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7b9956299370b4a41ce725cf903ff2aefe55bf53
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33336742"
 ---
 # <a name="ltreturnsgt-visual-c"></a>&lt;verir&gt; (Visual C++)
 \<Döndürür > etiketi açıklamasında bir yöntem bildirimi için dönüş değerini açıklamak için kullanılmalıdır.  

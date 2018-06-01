@@ -19,11 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8b87774b9c011d6ea5ab92d3c1b44e4af2b6091
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b89744235a5a2302a6550b2ffa7100511ad2e59c
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34704899"
 ---
 # <a name="zc-conformance"></a>/Zc (Uyumluluk)
 
@@ -43,6 +44,7 @@ Bunlar `/Zc` derleyici seçenekleri:
 |---|---|
 |[alignedNew\[-\]](zc-alignednew.md)|C ++ 17 aşırı hizalanmış dinamik ayırma etkinleştir (C ++ 17 varsayılan değer olarak).|
 |[Otomatik\[-\]](zc-auto-deduce-variable-type.md)|Yeni standart C++ anlamı için zorunlu `auto` (üzerinde varsayılan olarak).|
+|[__cplusplus\[-\]](zc-cplusplus.md)|Etkinleştirme **__cplusplus** desteklenen standart rapor makrosu (varsayılan olarak kapalıdır).|
 |[externConstexpr\[-\]](zc-externconstexpr.md)|Dış bağlantı için etkinleştirme `constexpr` değişkenleri (varsayılan olarak kapalıdır).|
 |[forScope\[-\]](zc-forscope-force-conformance-in-for-loop-scope.md)|Standart C++ zorunlu `for` kuralları kapsamı (üzerinde varsayılan olarak).|
 |[implicitNoexcept\[-\]](zc-implicitnoexcept-implicit-exception-specifiers.md)|Örtük etkinleştir `noexcept` gerekli işlevlerde (üzerinde varsayılan olarak).|

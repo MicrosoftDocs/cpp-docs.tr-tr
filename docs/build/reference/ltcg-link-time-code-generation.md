@@ -23,11 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d45f5b56dfb84d56bcba8ad0652ed86a8fb5223
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dc4266e8b01201226c53584bed9f90ed9dcabef7
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34703739"
 ---
 # <a name="ltcg-link-time-code-generation"></a>/LTCG (Bağlama Zamanı Kodu Oluşturma)
 
@@ -141,7 +142,7 @@ Bir işlev işaretçisi bir işlevi çağrıldıysa ya da bir işlevi kullanarak
 
 Kullanarak derlenmiş modüller [/GL](../../build/reference/gl-whole-program-optimization.md) ve [/CLR](../../build/reference/clr-common-language-runtime-compilation.md) bağlayıcı girişi olarak kullanılabilir olduğunda **/LTCG** belirtilir.
 
-- **/ LTCG** yerel nesne dosyaları kabul edebilir ve karışık yerel/Yönetilen Nesne dosyaları (kullanarak derlenmiş **/CLR**). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.
+- **/ LTCG** yerel nesne dosyaları kabul edebilir ve karışık yerel/Yönetilen Nesne dosyaları (kullanarak derlenmiş **/CLR**). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
 
 - **/LTCG:PGI** kullanarak derlenmiş yerel modülleri kabul etmiyorum **/GL** ve   **/CLR**
 
@@ -161,5 +162,5 @@ Ayrıca uygulayabilirsiniz **/LTCG** seçerek belirli derlemeleri için **yapı*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)<br/>
+- [Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)
+- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
