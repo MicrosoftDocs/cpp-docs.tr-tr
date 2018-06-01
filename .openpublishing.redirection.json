@@ -41,6 +41,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/atl/reference/patlmodule.md",
+            "redirect_url": "/cpp/atl/reference/atl-global-variables",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/atl-mfc-shared/index.md",
             "redirect_url": "/cpp/atl-mfc-shared/atl-mfc-shared-classes",
             "redirect_document_id": false
@@ -103,6 +108,11 @@
         {
             "source_path": "docs/build/naming-conventions-for-mfc-dlls.md",
             "redirect_url": "/cpp/mfc/mfc-library-versions#mfc-static-library-naming-conventions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/search-path-used-by-windows-to-locate-a-dll.md",
+            "redirect_url": "/cpp/build/dlls-in-visual-cpp",
             "redirect_document_id": false
         },
         {
