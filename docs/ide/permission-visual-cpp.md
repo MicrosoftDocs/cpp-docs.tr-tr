@@ -19,10 +19,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: e13824780a5c73d4423bd544a97108b45d1b770a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33324089"
 ---
 # <a name="ltpermissiongt-visual-c"></a>&lt;izin&gt; (Visual C++)
 \<İzni > etiketi üyesi erişim belge olanak sağlar. <xref:System.Security.PermissionSet> üye erişimi belirtmenize olanak sağlar.  

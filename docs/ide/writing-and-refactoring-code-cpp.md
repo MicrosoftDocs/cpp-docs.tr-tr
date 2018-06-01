@@ -14,11 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 000428ce3975dab108387ddb598bddf4a89fcfdd
-ms.sourcegitcommit: da7b7533d1a4dc141cc0f09149e4e4196f2fe329
+ms.openlocfilehash: 977fc221a5a940e2446dbf0ede8445680218dc73
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705624"
 ---
 # <a name="writing-and-refactoring-code-c"></a>Yazma ve yeniden düzenleme kod (C++)
 

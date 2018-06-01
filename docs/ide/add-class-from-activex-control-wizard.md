@@ -18,10 +18,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7ab96943e47287c9b54753c8d3a1edb868804274
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33336823"
 ---
 # <a name="add-class-from-activex-control-wizard"></a>ActiveX Denetimi Sihirbazından Sınıf Ekleme
 Kullanılabilir ActiveX denetiminden bir MFC sınıfı eklemek için bu sihirbazı kullanın. Sihirbaz seçili ActiveX denetiminden eklediğiniz her bir arabirim için bir sınıf oluşturur.  

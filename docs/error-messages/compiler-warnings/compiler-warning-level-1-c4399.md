@@ -16,24 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b39f4919dd736e4bf2e6230fe68ea69c2b14766e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aedad6aed07a6056f74ad338037a7268c722627f
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34703726"
 ---
 # <a name="compiler-warning-level-1-c4399"></a>Derleyici Uyarısı (düzey 1) C4399
-'simgesi': işlem içi simgesi işaretlenmemiş/CLR ile derlendiğinde __declspec(dllimport) ile: Saf  
-  
- **/CLR: pure** derleyici seçeneği Visual Studio 2015'te kullanım dışıdır.  
-  
- Yerel görüntü veya yerel ve CLR yapılarına görüntüyle verileri saf görüntüsüne alınamıyor. İle bu uyarıyı çözmek için derleme **/CLR** (değil **/CLR: pure**) veya silme `__declspec(dllimport)`.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4399 oluşturur.  
-  
-```  
-// C4399.cpp  
-// compile with: /clr:pure /doc /W1 /c  
-__declspec(dllimport) __declspec(process) extern const int i;   // C4399  
+
+> '*sembol*': işlem içi simgesi işaretlenmemiş/CLR ile derlendiğinde __declspec(dllimport) ile: Saf
+
+## <a name="remarks"></a>Açıklamalar
+
+**/CLR: pure** derleyici seçeneği Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+
+Yerel görüntü veya yerel ve CLR yapılarına görüntüyle verileri saf görüntüsüne alınamıyor. İle bu uyarıyı çözmek için derleme **/CLR** (değil **/CLR: pure**) veya silme `__declspec(dllimport)`.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C4399 oluşturur.
+
+```cpp
+// C4399.cpp
+// compile with: /clr:pure /doc /W1 /c
+__declspec(dllimport) __declspec(process) extern const int i;   // C4399
 ```

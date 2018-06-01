@@ -22,10 +22,11 @@ ms.author: corob
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4f8e76930eb9191d27085d92a9d3a678812715fc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33323621"
 ---
 # <a name="running-a-c-clr-application-on-a-previous-runtime-version"></a>Önceki Çalışma Zamanı Sürümünde C++ /clr Uygulaması Çalıştırma
 Aksi belirtilmediği sürece, C++ .NET Framework uygulama derleyici uygulamayı oluşturmak için kullandığı ortak dil çalışma zamanı (CLR) sürümünde çalıştırmak için oluşturulmuştur. Ancak, gerekli işlevselliği sağlayan başka bir sürüm üzerinde çalıştırmak için çalışma zamanı'nın bir sürümü için derlenmiş bir .exe uygulama mümkündür.  

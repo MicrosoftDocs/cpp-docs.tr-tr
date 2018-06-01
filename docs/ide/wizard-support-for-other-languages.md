@@ -19,10 +19,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 75aafd7177c3799c17b75419fd5ab9f54af91d35
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33332448"
 ---
 # <a name="wizard-support-for-other-languages"></a>Diğer Diller için Sihirbaz Desteği
 Visual Studio yüklediğinizde, kurulum uygulaması sisteminizde listelenen yerel algılar ve uygun dil şablon ya da yerel şablonlarını yükler. Örneğin, Batı Avrupa yerel ayarlar için İngilizce, Fransızca, İtalyanca, İspanyolca ve Almanca Kurulum yükler. Bu diller görünür **kaynak dili** listesini [uygulama türü](../mfc/reference/application-type-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası.  

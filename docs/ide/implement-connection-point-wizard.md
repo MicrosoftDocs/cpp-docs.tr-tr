@@ -17,10 +17,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ef2f7efa92de3714170e403ea50b5f486c8367d6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33323764"
 ---
 # <a name="implement-connection-point-wizard"></a>Bağlantı Noktası Uygulama Sihirbazı
 Bu sihirbaz bir COM nesnesi için bir bağlantı noktası uygular. Bağlanılabilirlik nesne (diğer bir deyişle, bir kaynak) bir bağlantı noktası veya herhangi bir giden arabirimi kendi arabirimleri için getirebilir. Visual C++ hem de Windows giden arabirimine sahip türü kitaplıkları sağlar. Her giden arabirimi, bir nesne (diğer bir deyişle, bir havuz) istemci tarafından uygulanabilir.  

@@ -27,42 +27,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abe67e1804d436dbd44257f6d7670a71b7f74889
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 132bd8e5ba66cbf9486a6da4747994c667e2f6e7
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705666"
 ---
-# <a name="reserved-words"></a>Ayrılmış Sözcükler
-Aşağıdaki sözcükler bağlayıcı tarafından ayrılmış. Bu adları bağımsız değişken olarak kullanılan [modül tanımlama deyimleri](../../build/reference/module-definition-dot-def-files.md) yalnızca ad çift tırnak işaretleri içine alınırsa ("").  
-  
-||||  
-|-|-|-|  
-|**APPLOADER**1|**INİTINSTANCE**2|**ÖNYÜKLEME**|  
-|**TEMEL**|**IOPL**|**ÖZEL**|  
-|**KOD**|**KİTAPLIK**1|**PROTMODE**2|  
-|**UYUMSUZ**|**LOADONCALL**1|**SAF**1|  
-|**VERİ**|**LONGNAMES**2|**SALT OKUNUR**|  
-|**AÇIKLAMA**|**TAŞINABİLİR**1|**READWRITE**|  
-|**DEV386**|**TAŞINABİLİR**1|**REALMODE**1|  
-|**DISCARDABLE**|**BİRDEN ÇOK**|**YERLEŞİK**|  
-|**DİNAMİK**|**ADI**|**RESIDENTNAME**1|  
-|**YALNIZCA YÜRÜTME**|**NEWFILES**2|**BÖLÜMLER**|  
-|**EXECUTEONLY**|**NODATA**1|**PARÇALARI**|  
-|**EXECUTEREAD**|**NOIOPL**1|**PAYLAŞILAN**|  
-|**EXETYPE**|**NONAME**|**TEK**|  
-|**EXPORTS**|**UYUMSUZ**1|**STACKSIZE**|  
-|**SABİT**1|**NONDISCARDABLE**|**STUB**|  
-|**İŞLEVLER**2|**YOK**|**SÜRÜM**|  
-|**HEAPSIZE**|**PAYLAŞILMAYAN**|**WINDOWAPI**|  
-|**İÇERİ AKTARMALAR**|**NOTWINDOWCOMPAT**1|**WINDOWCOMPAT**|  
-|**HANUKA**1|**NESNELERİ**|**WINDOWS**|  
-|**DAHİL**2|**ESKİ**1||  
-  
- 1 Bu terim karşılaştığında bağlayıcı ("göz ardı") bir uyarı gösterir. Ancak, yine ayrılmış bir sözcüktür.  
-  
- 2 bağlayıcı bu sözcüğü yoksayar ancak hiçbir uyarı yayar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+# <a name="reserved-words"></a>Ayrılmış sözcükler
+
+Aşağıdaki sözcükler bağlayıcı tarafından ayrılmış. Bu adları bağımsız değişken olarak kullanılan [modül tanımlama deyimleri](../../build/reference/module-definition-dot-def-files.md) yalnızca ad çift tırnak işaretleri içine alınırsa ("").
+
+||||
+|-|-|-|
+|**APPLOADER**<sup>1</sup>|**INİTINSTANCE**<sup>2</sup>|**ÖNYÜKLEME**|
+|**TEMEL**|**IOPL**|**ÖZEL**|
+|**KOD**|**KİTAPLIK**<sup>1</sup>|**PROTMODE**<sup>2</sup>|
+|**UYUMSUZ**|**LOADONCALL**<sup>1</sup>|**SAF**<sup>1</sup>|
+|**VERİ**|**LONGNAMES**<sup>2</sup>|**SALT OKUNUR**|
+|**AÇIKLAMA**|**TAŞINABİLİR**<sup>1</sup>|**READWRITE**|
+|**DEV386**|**TAŞINABİLİR**<sup>1</sup>|**REALMODE**<sup>1</sup>|
+|**DISCARDABLE**|**BİRDEN ÇOK**|**YERLEŞİK**|
+|**DİNAMİK**|**ADI**|**RESIDENTNAME**<sup>1</sup>|
+|**YALNIZCA YÜRÜTME**|**NEWFILES**<sup>2</sup>|**BÖLÜMLER**|
+|**EXECUTEONLY**|**NODATA**<sup>1</sup>|**PARÇALARI**|
+|**EXECUTEREAD**|**NOIOPL**<sup>1</sup>|**PAYLAŞILAN**|
+|**EXETYPE**|**NONAME**|**TEK**|
+|**EXPORTS**|**UYUMSUZ**<sup>1</sup>|**STACKSIZE**|
+|**SABİT**<sup>1</sup>|**NONDISCARDABLE**|**STUB**|
+|**İŞLEVLER**<sup>2</sup>|**YOK**|**SÜRÜM**|
+|**HEAPSIZE**|**PAYLAŞILMAYAN**|**WINDOWAPI**|
+|**İÇERİ AKTARMALAR**|**NOTWINDOWCOMPAT**<sup>1</sup>|**WINDOWCOMPAT**|
+|**HANUKA**<sup>1</sup>|**NESNELERİ**|**WINDOWS**|
+|**DAHİL**<sup>2</sup>|**ESKİ**<sup>1</sup>||
+
+<sup>1</sup> bu terim karşılaştığında bağlayıcı ("göz ardı") bir uyarı gösterir. Ancak, yine ayrılmış bir sözcüktür.
+
+<sup>2</sup> bağlayıcı bu sözcüğü yoksayar ancak hiçbir uyarı yayar.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)
+- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

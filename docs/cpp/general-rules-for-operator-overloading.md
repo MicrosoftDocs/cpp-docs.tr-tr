@@ -14,22 +14,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0abd32f2c46f7d7b26ea617e2cf43f1dc3c124bf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7e9cd1a0ba57b5a2f0d5afb2d02ff9c21b7e0b2c
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705432"
 ---
 # <a name="general-rules-for-operator-overloading"></a>İşleç Aşırı Yüklemesi Genel Kuralları
 Aşağıdaki kuralları nasıl aşırı yüklenmiş işleçler sınırlamak uygulanır. Bununla birlikte, bunlar için uygulanmaz [yeni](../cpp/new-operator-cpp.md) ve [silmek](../cpp/delete-operator-cpp.md) ayrı olarak ele alınmıştır işleçler.  
   
--   Yeni işleçleri gibi tanımlayamazsınız **.  
+-   Yeni işleçleri gibi tanımlayamazsınız **.**.  
   
 -   Yerleşik veri türlerine uygulandığında işleçleri anlamını tanımlanamaz.  
   
 -   Aşırı yüklenmiş işleçler ya da statik olmayan sınıf üye işlevi veya genel bir işlev olmalıdır. Özel veya korumalı sınıf üyelerine erişimi gerektiren bir genel işlevi, o sınıfın arkadaş bildirilmesi gerekir. Genel işlevi, sınıf veya numaralandırılmış türde olan veya bir sınıf için bir başvuru veya numaralandırılmış türü en az bir değişken almanız gerekir. Örneğin:  
   
-    ```  
+    ```cpp  
     // rules_for_operator_overloading.cpp  
     class Point  
     {  
@@ -74,7 +75,7 @@ var++;
  Bu kimlik bağlı işleçleri aşırı sınıf türleri için dayanıyordu olamaz. Ayrıca, bazı temel türleri için bu işleci kullanın örtük gereksinimleri için aşırı yüklenmiş işleçler rahat. Örneğin, toplama/ataması işleci `+=`, sol işleneni bir l-temel türleri için; uygulandığında değer olmasını gerektirir işleci aşırı zaman böyle bir gereklilik değildir.  
   
 > [!NOTE]
->  Tutarlılık için tanımlama işleçleri aşırı zaman yerleşik türleri modelini izlemek idealdir. Aşırı yüklenmiş bir işleç semantiği anlamlarını diğer bağlamlarda önemli ölçüde farklıdır, daha kullanışlı daha kafa karıştırıcı olabilir.  
+> Tutarlılık için tanımlama işleçleri aşırı zaman yerleşik türleri modelini izlemek idealdir. Aşırı yüklenmiş bir işleç semantiği anlamlarını diğer bağlamlarda önemli ölçüde farklıdır, daha kullanışlı daha kafa karıştırıcı olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşleç Aşırı Yüklemesi](../cpp/operator-overloading.md)

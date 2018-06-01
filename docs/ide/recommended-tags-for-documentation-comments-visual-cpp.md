@@ -13,10 +13,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1b25ad029a59c4b23bcab093b3742f16f7ca9175
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33328626"
 ---
 # <a name="recommended-tags-for-documentation-comments-visual-c"></a>Belge Açıklamaları için Önerilen Etiketler (Visual C++)
 Visual C++ Derleyici, kodundaki belge açıklamaları işler ve her derlenecek dosya için bir .xdc dosyası oluşturur ve xdcmake.exe bir .xml dosyasına .xdc dosyaları işler. Belgeleri oluşturmak için .xml dosyası işleme sitenizde uygulanması gereken bir ayrıntı yoktur.  

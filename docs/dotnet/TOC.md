@@ -104,7 +104,6 @@
 #### [Başlatıcı Listeleri](initializer-lists.md)
 #### [Dönüştürme Gösterimi ve safe_cast<> Konusuna Giriş](cast-notation-and-introduction-of-safe-cast-angles.md)
 ## [Saf ve Doğrulanabilen Kod (C++/CLI)](pure-and-verifiable-code-cpp-cli.md)
-### [Karışık, Saf ve Doğrulanabilen Özellik Karşılaştırması (C++/CLI)](mixed-pure-and-verifiable-feature-comparison-cpp-cli.md)
 ### [Nasıl yapılır: Doğrulanabilir C++ Projeleri Oluşturma (C++/CLI)](how-to-create-verifiable-cpp-projects-cpp-cli.md)
 ### [Nasıl yapılır: -clr:safe'e Geçiş (C++/CLI)](how-to-migrate-to-clr-safe-cpp-cli.md)
 ### [SQL Server ile Doğrulanabilen Derlemeler Kullanma (C++/CLI)](using-verifiable-assemblies-with-sql-server-cpp-cli.md)

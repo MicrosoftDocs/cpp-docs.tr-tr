@@ -20,10 +20,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: f156d69467f00c4c4a62ec84d3b870e2999d7115
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33327466"
 ---
 # <a name="nmake-property-page"></a>NMake Özellik Sayfaları
 **NMake** özellik sayfası NMake projeleri için yapılandırma ayarlarını belirtmenize olanak sağlar.  

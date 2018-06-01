@@ -19,10 +19,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 184161b22358f77845b5f7c4b6da0bb42f3ea15f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33324921"
 ---
 # <a name="adding-an-event-handler-visual-c"></a>Olay İşleyici Ekleme (Visual C++)
 Kaynak Düzenleyicisi'nden yeni bir olay işleyicisi ekleyebilir, veya bir iletişim kutusu denetimi kullanmak için mevcut olay işleyicisi, düzenleme [olay işleyici Sihirbazı](../ide/event-handler-wizard.md).  

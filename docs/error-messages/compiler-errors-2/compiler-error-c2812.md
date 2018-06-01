@@ -16,24 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28d46b0f9744f192d677d7b2df27b67e734de1b8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0c5469e4f7be3c164cc63fa30f5069009846be48
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705029"
 ---
 # <a name="compiler-error-c2812"></a>Derleyici Hatası C2812
-\#Alma/CLR ile desteklenmiyor: saf ve/CLR: safe  
-  
- **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
-  
- [#import yönergesi](../../preprocessor/hash-import-directive-cpp.md) desteklenmeyen **/CLR: pure** ve **/CLR: safe** çünkü `#import` yerel derleyici desteği kitaplıkları kullanılmasını gerektirir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2812 oluşturur.  
-  
-```  
-// C2812.cpp  
-// compile with: /clr:pure /c  
-#import "importlib.tlb"   // C2812  
+
+> \#Alma/CLR ile desteklenmiyor: saf ve/CLR: safe
+
+## <a name="remarks"></a>Açıklamalar
+
+**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+
+[#import yönergesi](../../preprocessor/hash-import-directive-cpp.md) desteklenmeyen **/CLR: pure** ve **/CLR: safe** çünkü `#import` yerel derleyici desteği kitaplıkları kullanılmasını gerektirir.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C2812 oluşturur.
+
+```cpp
+// C2812.cpp
+// compile with: /clr:pure /c
+#import "importlib.tlb"   // C2812
 ```

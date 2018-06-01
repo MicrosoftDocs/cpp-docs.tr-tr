@@ -15,11 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0d1e7f8ea67db0e87199e0c12128555fa039112
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5058493e93a89e64c87ef52b73ff8fe3272f8f99
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705351"
 ---
 # <a name="how-to-organize-project-output-files-for-builds"></a>Nasıl Yapılır: Derlemeler için Proje Çıktı Dosyalarını Düzenleme
 Bu konu, proje çıktı dosyalarını düzenleme için en iyi uygulamaları açıklar. Yapı proje çıktı dosyalarını yanlış olarak ayarladığınızda hatalar oluşabilir. Bu konu ayrıca olumlu ve olumsuz yönlerini proje çıktı dosyalarını düzenleme için her alternatif özetler.  

@@ -1,6 +1,6 @@
 ---
 title: Varsayılan olarak kapalı olan derleyici uyarıları | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 05/30/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -14,31 +14,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109f2ef4b494a2af5d52fcc9767b4e3db3833e9f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d311c730781aee70d4b77723ddec98a79407e42a
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705572"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan derleyici uyarıları
 
-Çoğu geliştirici bunları görmek istemediğiniz çünkü derleyici varsayılan olarak kapalı uyarıları içerir. Bazı durumlarda, bunlar bir stil seçim temsil eden ortak deyimleri eski koduna sahip olan veya dil için bir Microsoft uzantısı yararlanmak. Diğer durumlarda, bunlar burada programcıları beklenmeyen veya tanımsız davranışa neden olabilir yanlış varsayımlar genellikle olun bir alanı gösterir. Bu uyarıların bir kısmı, kitaplık üstbilgileri çok gürültülü olabilir.
+Çoğu geliştirici bunları görmek istemediğiniz çünkü derleyici varsayılan olarak kapalı uyarıları içerir. Bazı durumlarda, bunlar bir stil seçim temsil eden ortak deyimleri eski koduna sahip olan veya dil için bir Microsoft uzantısı yararlanmak. Diğer durumlarda, bunlar burada programcıları beklenmeyen veya tanımsız davranışa neden olabilir yanlış varsayımlar genellikle olun bir alanı gösterir. Bu uyarıların bir kısmı, kitaplık üstbilgileri çok gürültülü olabilir. C çalışma zamanı kitaplıkları ve C++ Standart Kitaplığı yalnızca uyarı düzeyinde uyarı yaymak üzere tasarlanmıştır [/W4](../build/reference/compiler-option-warning-level.md).
 
-Aşağıdaki seçeneklerden birini kullanarak bu uyarılar etkinleştirebilirsiniz:
+## <a name="enable-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan uyarılar etkinleştir
 
-- **#pragma Uyarısı (varsayılan:** *warning_number* **)**  
+Normalde kapalı varsayılan olarak aşağıdaki seçeneklerden birini kullanarak olan uyarıları etkinleştirebilirsiniz:
+
+- **#pragma Uyarısı (varsayılan:** *warning_number* **)**
+
    Belirtilen uyarı (*warning_number*), varsayılan düzeyinde etkinleştirilir. Uyarılara yönelik belgeler varsayılan uyarı düzeyini içerir.
 
-- **#pragma Uyarısı (** *warning_level* **:** *warning_number* **)**  
+- **#pragma Uyarısı (** *warning_level* **:** *warning_number* **)**
+
    Belirtilen uyarı (*warning_number*) belirtilen düzeyinde etkinleştirilir (*warning_level*).
 
-- [/ Wall](../build/reference/compiler-option-warning-level.md)  
+- [/ Wall](../build/reference/compiler-option-warning-level.md)
+
    **/ Duvar** varsayılan olarak kapalı olan tüm uyarıları sağlar. Bu seçeneği kullanırsanız, kullanarak tek tek ayarları kapatabilirsiniz [/wd](../build/reference/compiler-option-warning-level.md) seçeneği.
 
-- [/w*lnnnn*](../build/reference/compiler-option-warning-level.md)  
-   Bu uyarı sağlar *nnnn* düzeyinde *l*.
+- [/w*Lnnnn*](../build/reference/compiler-option-warning-level.md)
 
-Aşağıdaki uyarılar varsayılan olarak kapalıdır.
+   Bu uyarı sağlar *nnnn* düzeyinde *L*.
+
+## <a name="warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan uyarılar
+
+Aşağıdaki uyarılarla Visual Studio 2015 ve sonraki sürümlerinde varsayılan olarak kapalıdır:
 
 |||
 |-|-|
@@ -64,11 +73,12 @@ Aşağıdaki uyarılar varsayılan olarak kapalıdır.
 |[C4371](../error-messages/compiler-warnings/c4371.md) (Düzey 3)|'*classname*': sınıf yerleşimini üyesinin daha iyi paketleme nedeniyle Derleyici önceki bir sürümünden değişmiş olabilir '*üye*'|
 |C4388 (düzey 4)|İmzalı/imzasız uyuşmazlığı|
 |[C4412'yi](../error-messages/compiler-warnings/compiler-warning-level-2-c4412.md) (Düzey 2)|'*işlevi*': işlev imzası içeren türü '*türü*'; Saf kod arasında geçirmek için güvenli ve karma veya yerel C++ nesneleri|
-|C4426 (düzey 1)|en iyi duruma getirme bayrakları üstbilgisi de dahil olmak sonra değiştirilen #pragma optimize() nedeniyle olabilir|
+|C4426 (düzey 1)|en iyi duruma getirme bayrakları üstbilgisi de dahil olmak sonra değiştirilen #pragma optimize() nedeniyle olabilir <sup>14.1</sup>|
 |[C4435](../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md) (düzey 4)|'*class1*': nesne düzeni /vd2 altında nedeniyle sanal taban değiştirir '*Ders2*'|
 |[C4437](../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md) (düzey 4)|Sanal Taban gelen dynamic_cast '*class1*'to'*Ders2*' bazı bağlamlarda başarısız olabilir|
 |C4444 (Düzey 3)|en üst düzey '__unaligned' bu bağlamda uygulanmadı|
 |[C4464](../error-messages/compiler-warnings/c4464.md) (düzey 4)|göreli yol dahil içeren '..'|
+|[C4471](../error-messages/compiler-warnings/compiler-warning-level-4-c4471.md) (düzey 4)|bir temel alınan türü (int olduğu varsayılır) dizininden kapsam dışı numaralandırma ileriye dönük bildirimi olmalıdır <sup>işle</sup>|
 |C4472 (düzey 1)|'*tanımlayıcısı*' yerel Enum: yönetilen bir enum bildirmek için bir erişim belirteci (özel/ortak) Ekle|
 |[C4514](../error-messages/compiler-warnings/compiler-warning-level-4-c4514.md) (düzey 4)|'*işlevi*': başvurulmayan satır içi işlev kaldırıldı|
 |[C4536](../error-messages/compiler-warnings/compiler-warning-level-4-c4536.md) (düzey 4)|'tür adı': tür adı meta veri sınırını aşan '*sınırı*' karakter|
@@ -81,13 +91,16 @@ Aşağıdaki uyarılar varsayılan olarak kapalıdır.
 |[C4557](../error-messages/compiler-warnings/compiler-warning-level-3-c4557.md) (Düzey 3)|'__assume' içeren etkisi '*etkisi*'|
 |[C4571](../error-messages/compiler-warnings/compiler-warning-level-4-c4571.md) (düzey 4)|Bilgi amaçlı: Visual C++ 7.1 beri değiştirilen catch(...) semantiği; yapılandırılmış özel durum (SEH) artık yakalandı|
 |C4574 (düzey 4)|'*tanımlayıcısı*'0 ' olarak tanımlanan': kullanılacak mu demek istediniz ' #if *tanımlayıcısı*'?|
+|C4577 (düzey 1)|hiçbir özel durum işleme belirtilen modu ile kullanılan noexcept'; özel durum sonlandırıldığında garanti edilmez. /EHsc belirtin|
 |C4582 (düzey 4)|'*türü*': Oluşturucu örtük olarak çağrılmaz|
 |C4583 (düzey 4)|'*türü*': yıkıcı örtük olarak çağrılmaz|
 |C4587 (düzey 1)|'*anonymous_structure*': davranış değişikliği: Oluşturucusu artık dolaylı olarak çağrılır|
 |C4588 (düzey 1)|'*anonymous_structure*': davranış değişikliği: yıkıcı artık dolaylı olarak çağrılır|
-|C4598 (düzey 1 ve Düzey 3)|' #include "*üstbilgi*"': üstbilgi numarası *numarası* önceden derlenmiş üst bilgi, bu konumda geçerli derleme eşleşmiyor.|
-|C4599 (Düzey 3)|'*seçeneği* *yolu*': komut satırı bağımsız değişken numarası *numarası* önceden derlenmiş üstbilgi eşleşmiyor.|
+|C4596 (düzey 4)|'*tanımlayıcısı*': üye bildiriminde geçersiz tam ad <sup>14.3</sup> <sup>işle</sup>|
+|C4598 (düzey 1 ve Düzey 3)|' #include "*üstbilgi*"': üstbilgi numarası *numarası* önceden derlenmiş üst bilgi bu konumda geçerli derleme eşleşmiyor <sup>14.3</sup>|
+|C4599 (Düzey 3)|'*seçeneği* *yolu*': komut satırı bağımsız değişken numarası *numarası* önceden derlenmiş üstbilgi eşleşmiyor <sup>14.3</sup>|
 |C4605 (düzey 1)|' /D*makrosu*' geçerli bir komut satırında belirtilen, ancak ne zaman önceden derlenmiş üst bilgi oluşturulmuş belirtilmedi|
+|[C4608](../error-messages/compiler-warnings/compiler-warning-level-3-c4608.md) (Düzey 3)|'*union_member*'zaten başka bir bileşim üyesi başlatıcısı listesinde tarafından başlatıldı'*union_member*' <sup>işle</sup>|
 |[C4619](../error-messages/compiler-warnings/compiler-warning-level-3-c4619.md) (Düzey 3)|#pragma uyarısı: uyarı numarası yok '*numarası*'|
 |[C4623](../error-messages/compiler-warnings/compiler-warning-level-4-c4623.md) (düzey 4)|'derived class': bir taban sınıf varsayılan oluşturucusuna erişilemediğinden varsayılan oluşturucu üretilemedi|
 |[C4625](../error-messages/compiler-warnings/compiler-warning-level-4-c4625.md) (düzey 4)|'derived class': bir taban sınıf kopya oluşturucusuna erişilemediğinden kopya oluşturucu üretilemedi|
@@ -95,7 +108,7 @@ Aşağıdaki uyarılar varsayılan olarak kapalıdır.
 |[C4628](../error-messages/compiler-warnings/compiler-warning-level-1-c4628.md) (düzey 1)|-Ze ile digraf kullanılması desteklenmez. Karakter dizisi '*digraph*'alternatif belirteci için yorumlanan değil'*char*'|
 |[C4640](../error-messages/compiler-warnings/compiler-warning-level-3-c4640.md) (Düzey 3)|'*örneği*': yerel statik nesne yapımı iş parçacığı açısından güvenli değil|
 |C4647 (Düzey 3)|davranış değişikliği: __is_pod (*türü*) önceki sürümlerde farklı bir değere sahip|
-|C4654 (düzey 4)|Kod önce yerleştirilmiş dahil önceden derlenmiş başlık satırı yok sayılacak. Kodu önceden derlenmiş üstbilgi ekleyin.|
+|C4654 (düzey 4)|Kod önce yerleştirilmiş dahil önceden derlenmiş başlık satırı yok sayılacak. Kodu önceden derlenmiş üstbilgi ekleyin. <sup>14.1</sup>|
 |[C4668](../error-messages/compiler-warnings/compiler-warning-level-4-c4668.md) (düzey 4)|'*simgesi*'için '0' ile değiştirerek bir önişlemci makrosu olarak tanımlanmadığından'*yönergeleri*'|
 |[C4682](../error-messages/compiler-warnings/compiler-warning-level-4-c4682.md) (düzey 4)|'*sembol*': [in] varsayarak belirtilen yönlü parametre özniteliği yok|
 |[C4686](../error-messages/compiler-warnings/compiler-warning-level-3-c4686.md) (Düzey 3)|'*kullanıcı tanımlı tür*': olası değişiklik davranış UDT değişikliği iade çağırma|
@@ -107,6 +120,7 @@ Aşağıdaki uyarılar varsayılan olarak kapalıdır.
 |C4767 (düzey 4)|Bölüm adı '*sembol*' 8 karakterden uzun ve bağlayıcı tarafından kesilecek|
 |C4768 (level 3)|bağlantı belirtimi önce __declspec öznitelikleri göz ardı edilir|
 |C4774 (düzey 4)|'*dize*': biçim dizesi bağımsız değişkeni beklenen *numarası* bir dize sabit değeri değil|
+|C4777 (düzey 4)|'*işlevi*': biçim dizesi '*dize*'türünde bir bağımsız değişken gerektirir'*type1*', ancak variadic bağımsız değişkeni *numarası* türüne sahip '*type2*'|
 |C4786 (Düzey 3)|'*simgesi*': nesne adı için kesildi '*numarası*' hata ayıklama bilgileri karakter|
 |[C4820](../error-messages/compiler-warnings/compiler-warning-level-4-c4820.md) (düzey 4)|'*bayt*'Doldurma bayt eklenen sonra yapı'*member_name*'|
 |C4826 (Düzey 2)|Dönüştürme '*type1*'to'*type2*' oturum genişletilmiş olduğu. Bu, çalışma zamanı beklenmeyen davranışlara neden olabilir.|
@@ -131,18 +145,22 @@ Aşağıdaki uyarılar varsayılan olarak kapalıdır.
 |C5026 (düzey 1 ve düzey 4)|'*türü*': Oluşturucusu silindi olarak örtük olarak tanımlanmıştı taşıma|
 |C5027 (düzey 1 ve düzey 4)|'*türü*': atama işleci silindi olarak örtük olarak tanımlanmıştı taşıma|
 |C5029 (düzey 4)|kullanılan standart olmayan uzantısı: C++ hizalama öznitelikleri değişkenleri, veri üyeleri ve yalnızca etiket türleri için geçerlidir|
-|C5031 (düzey 4)|#pragma warning(pop): farklı bir dosya gönderilen uyarı durumuna pencerelerinin büyük olasılıkla uyuşmazlığı|
-|C5032 (düzey 4)|#pragma warning(push) karşılık gelen hiçbir #pragma warning(pop) ile algılandı|
-|C5035|özelliğini kullanın '*özelliği*' neden işlevi *işlevi* Konuk kodu olarak derlenecek|
-|C5036 (düzey 1)|VarArgs işlev işaretçisi dönüştürme /hybrid:x86arm64 ile derleme yapılırken '*type1*'to'*type2*'|
-|[C5038](../error-messages/compiler-warnings/c5038.md)|veri üyesi '*Üye1*'veri üyesi sonra başlatılacak'*üye2*'|
+|C5031 (düzey 4)|#pragma warning(pop): büyük olasılıkla uyuşmazlığı, farklı bir dosya gönderilen uyarı durumuna pencerelerinin <sup>14.1</sup>|
+|C5032 (düzey 4)|#pragma warning(push) karşılık gelen hiçbir #pragma warning(pop) ile algılanan <sup>14.1</sup>|
+|C5034|biri iç kullanmak '*iç*' neden işlevi *işlevi* Konuk kodu olarak derlenecek <sup>15.3</sup>|
+|C5035|özelliğini kullanın '*özelliği*' neden işlevi *işlevi* Konuk kodu olarak derlenecek <sup>15.3</sup>|
+|C5036 (düzey 1)|VarArgs işlev işaretçisi dönüştürme /hybrid:x86arm64 ile derleme yapılırken '*type1*'to'*type2*' <sup>15.3</sup>|
+|[C5038](../error-messages/compiler-warnings/c5038.md) (düzey 4)|veri üyesi '*Üye1*'veri üyesi sonra başlatılacak'*üye2*' <sup>15.3</sup>|
+|C5039 (düzey 4)|'*işlevi*': - EHc altında extern C işlev işaretçisi veya potansiyel olarak işlevi atma başvuru geçirilen. Bu işlev bir özel durum oluşturursa tanımsız davranış ortaya çıkabilir. <sup>15,5</sup>|
+|C5042 (Düzey 3)|'*işlevi*': blok kapsamında işlev bildirimleri standart C++'da belirtilen 'satır içi' olamaz; 'inline' tanımlayıcısı kaldırın <sup>15,5</sup>|
 
-Bu uyarılar sürece kapalıdır [/ izin veren-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği ayarlanır:
+<sup>14.1</sup> bu uyarı Visual Studio 2015 güncelleştirme 1'den itibaren kullanılabilmektedir.<br>
+<sup>14.3</sup> bu uyarı, Visual Studio 2015 güncelleştirme 3'te itibaren kullanılabilir.<br>
+<sup>15.3</sup> bu uyarı, Visual Studio 2017 sürüm 15.3 itibaren kullanılabilir.<br>
+<sup>15,5</sup> bu uyarı, Visual Studio 2017 sürüm 15,5 itibaren kullanılabilir.<br>
+<sup>/P</sup> bu uyarıyı devre dışı olduğu sürece [/ izin veren-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği ayarlanmış.
 
-|||
-|-|-|
-|[C4471 (düzey 4)](../error-messages/compiler-warnings/compiler-warning-level-4-c4471.md)|kapsamsız bir numaralandırmanın ileri dönük bildiriminin bir temel türü olmalıdır (int varsayıldı)|
-|[C4608 (Düzey 3)](../error-messages/compiler-warnings/compiler-warning-level-3-c4608.md)|'*union_member*'zaten başka bir bileşim üyesi başlatıcısı listesinde tarafından başlatıldı'*union_member*'|
+## <a name="warnings-off-by-default-in-earlier-versions"></a>Önceki sürümlerde varsayılan olarak kapalı uyarıları
 
 Bu uyarılar derleyici Visual Studio 2015 tarihinden önceki sürümlerinde varsayılan olarak kapalı olan:
 
@@ -153,7 +171,7 @@ Bu uyarılar derleyici Visual Studio 2015 tarihinden önceki sürümlerinde vars
 |[C4312](../error-messages/compiler-warnings/compiler-warning-level-1-c4312.md) (düzey 1)|'*işlemi*': dönüştürme '*type1*'to'*type2*' büyük boyutu|
 |[C4319](../error-messages/compiler-warnings/compiler-warning-level-1-c4319.md) (düzey 1)|'*işleci*': sıfır genişletme '*type1*'to'*type2*' büyük boyutu|
 
-Bu uyarılar Visual Studio 2012 önce derleyici sürümlerinde varsayılan olarak kapalı olan:
+Visual Studio 2012 önce derleyici sürümlerinde varsayılan olarak devre dışı bu uyarı oluştu:
 
 |||
 |-|-|

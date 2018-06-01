@@ -13,11 +13,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ae41c373257202cb08b7f8760acac4ad14dff19
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b9778a9d456ebd0fed6bc36c2c631849bcbfe11d
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705611"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ ne&#39;s 2015 aracılığıyla yeni 2003
 
@@ -538,7 +539,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
     }
    ```
 
-  -veya-
+  veya
 
    ```cpp
     class base;  // as above
@@ -1936,7 +1937,7 @@ Derleyici önemli değişiklikler bu sürümde sahiptir.
 - ' 64-bit yerel ve çapraz derleyicileri.
 - / analyze (Kurumsal kod çözümleme) derleyici seçeneği eklenmiştir.
 - / bigobj derleyici seçeneği eklenmiştir.
-- /clr:pure, /clr:safe, and /clr:oldSyntax have been added. (Daha sonra Visual Studio 2015'te kullanım dışı.)
+- /clr:pure, /clr:safe, and /clr:oldSyntax have been added. (Daha sonra Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 kaldırıldı.)
 - Derleyici seçenekleri kullanım: Bu sürümde; birçok derleyici seçenekleri kullanım dışı bırakıldı kullanım dışı derleyici seçenekleri daha fazla bilgi için bkz.
 - / CLR kodda çift dönüştürme azalır; Çift dönüştürme (C++) daha fazla bilgi için bkz.
 - /EH (özel durum işleme modeli) veya /EHs artık bir throw dışında bir şey ile gerçekleştirilen bir özel durum yakalamak için kullanılabilir; /EHa kullanın.

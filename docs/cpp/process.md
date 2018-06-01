@@ -17,24 +17,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8aa1ba2676ebbd04d1fc1a59d210d69efeab6658
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b36ec42447aa076d0623707951f82b7b9c95d563
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34704912"
 ---
 # <a name="process"></a>process
-Yönetilen uygulama işleminizde, belirli genel değişkenin, statik üye değişkeninin veya işlemde tüm uygulama etki alanlarında paylaşılan statik yerel değişkenin tek bir kopyasının olması gerektiğini belirtir. Bu öncelikle ile derleme yapılırken kullanılmak üzere tasarlanmıştır **/CLR: pure**, artık kullanım dışıdır ve derleyici gelecek bir sürümünde kaldırılacak. İle derleme yapılırken **/CLR**, genel ve statik değişkenlerdir varsayılan işlem başına (kullanmasına gerek kalmamasını `__declspec(process)`.  
-  
- Yalnızca bir genel değişken, bir statik üye değişkeni veya özgün türün statik bir yerel değişkeni `__declspec(process)` ile işaretlenebilir.  
-  
-  
- `process` ile derleme yapılırken yalnızca geçerlidir [/CLR](../build/reference/clr-common-language-runtime-compilation.md).  
-  
- Her uygulama etki genel değişkeni kendi kopyasına sahip olmasını istiyorsanız, kullanmak [appdomain](../cpp/appdomain.md).  
-  
- Bkz: [uygulama etki alanları ve Visual C++](../dotnet/application-domains-and-visual-cpp.md) daha fazla bilgi için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__declspec](../cpp/declspec.md)   
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+
+Yönetilen uygulama işleminizde, belirli genel değişkenin, statik üye değişkeninin veya işlemde tüm uygulama etki alanlarında paylaşılan statik yerel değişkenin tek bir kopyasının olması gerektiğini belirtir. Bu öncelikle ile derleme yapılırken kullanılmak üzere tasarlanmıştır **/CLR: pure**, Visual Studio 2017 içinde kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor. İle derleme yapılırken **/CLR**, genel ve statik değişkenler işlemi başına varsayılan olarak ve kullanmasına gerek kalmamasını `__declspec(process)`.
+
+Yalnızca bir genel değişken, bir statik üye değişkeni veya özgün türün statik bir yerel değişkeni `__declspec(process)` ile işaretlenebilir.
+
+`process` ile derleme yapılırken yalnızca geçerlidir [/CLR](../build/reference/clr-common-language-runtime-compilation.md).
+
+Her uygulama etki genel değişkeni kendi kopyasına sahip olmasını istiyorsanız, kullanmak [appdomain](../cpp/appdomain.md).
+
+Bkz: [uygulama etki alanları ve Visual C++](../dotnet/application-domains-and-visual-cpp.md) daha fazla bilgi için.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [__declspec](../cpp/declspec.md)
+- [Anahtar Sözcükler](../cpp/keywords-cpp.md)

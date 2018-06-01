@@ -17,11 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9de79d56c6e8b6e496c0e7988ada07ed7595ea70
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b9b11f04f1fe8d201d6d07ca5ed83f9ca7d991b
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705468"
 ---
 # <a name="how-to-enable-intellisense-for-makefile-projects"></a>Nasıl Yapılır: Derleme Görevleri Dosyası Projeleri için IntelliSense'i Etkinleştirme
 Visual C++ derleme görevleri dosyası projeleri için IDE'de belirli ayarları veya derleyici seçenekleri, projenizin çalışması için IntelliSense başarısız yanlış ayarlanır. Derleme görevleri dosyası projeleri Visual Studio geliştirme ortamında açık olduğunda IntelliSense çalışmasını Visual C++ derleme görevleri dosyası projeleri yapılandırmak için bu yordamı kullanın.  

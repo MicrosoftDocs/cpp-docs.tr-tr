@@ -17,10 +17,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: a5eace3ef3cfd07847c995151554ba70ca23f820
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33337255"
 ---
 # <a name="visual-c-tools-and-features-in-visual-studio-editions"></a>Visual C++ Araçları ve Visual Studio sürümlerinde özellikleri
 
@@ -133,8 +134,8 @@ Aşağıdaki tablolarda, Visual Studio'da kullanılabilen Visual C++ özellikler
 |Veri Tasarımcısı|||X|X|
 |Yerel Kaynak Düzenleyici (.rc dosyaları)|||X|X|
 |Kaynak Düzenleyicileri|X|X|X|X|
-|Model Düzenleyicisi|X||X|X|
-|Gölgelendirici Tasarımcısı|X||X|X|
+|Model düzenleyicisi|X||X|X|
+|Gölgelendirici tasarımcısı|X||X|X|
 
 ## <a name="data-features"></a>Veri özellikleri
 

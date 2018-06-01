@@ -15,10 +15,11 @@ ms.author: corob
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 20006118d4bf27c379b78b84dc8807a4fd6c5e6c
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34256326"
 ---
 # <a name="universal-crt-deployment"></a>Evrensel CRT dağıtım
 

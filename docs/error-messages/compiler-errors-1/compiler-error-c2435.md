@@ -16,29 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 44c4dec71cdf077dc8fbd1ba81b555090b524007
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8ddf078420da8aba170bbd21a0db775f9246cea4
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34703648"
 ---
 # <a name="compiler-error-c2435"></a>Derleyici Hatası C2435
-'var': / clr: safe ile derlenemiyor, yönetilen CRT gerektirdiğinde dinamik başlatma  
-  
- **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
-  
- Genel uygulama başına etki alanı değişkenini, başlatma gerektiriyorsa ile derlenmiş CRT `/clr:pure`, hangi değil üretmek doğrulanabilen bir görüntüsü.  
-  
- Daha fazla bilgi için bkz: [appdomain](../../cpp/appdomain.md) ve [işlem](../../cpp/process.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2435 oluşturur:  
-  
-```  
-// C2435.cpp  
-// compile with: /clr:safe /c  
-int globalvar = 0;   // C2435  
-  
-__declspec(process)  
-int globalvar2 = 0;  
+
+> '*var*': / clr: safe ile derlenemiyor, yönetilen CRT gerektirdiğinde dinamik başlatma
+
+## <a name="remarks"></a>Açıklamalar
+
+**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+
+Genel uygulama başına etki alanı değişkenini, başlatma gerektiriyorsa ile derlenmiş CRT `/clr:pure`, hangi değil üretmek doğrulanabilen bir görüntüsü.
+
+Daha fazla bilgi için bkz: [appdomain](../../cpp/appdomain.md) ve [işlem](../../cpp/process.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C2435 oluşturur:
+
+```cpp
+// C2435.cpp
+// compile with: /clr:safe /c
+int globalvar = 0;   // C2435
+
+__declspec(process)
+int globalvar2 = 0;
 ```

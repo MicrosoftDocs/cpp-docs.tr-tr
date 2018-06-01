@@ -11,10 +11,11 @@ ms.author: corob
 ms.workload:
 - cplusplus
 ms.openlocfilehash: f0044a0da7b1ac4ad052eb120ccfb1f7425d2c0e
-ms.sourcegitcommit: 06b1f7bde6b3f8bed0f3db91d14e2d974444c1e3
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34336337"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ araç takımını veya belgelerinde bir sorun bildirme
 

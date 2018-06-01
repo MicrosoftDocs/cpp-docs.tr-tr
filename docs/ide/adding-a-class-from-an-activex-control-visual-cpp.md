@@ -16,10 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 793adf38da33808371a0df71f671c3e29da75326
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33322412"
 ---
 # <a name="adding-a-class-from-an-activex-control-visual-c"></a>ActiveX Denetiminden Sınıf Ekleme (Visual C++)
 Bir MFC sınıfı kullanılabilir ActiveX denetimindeki bir arabirim oluşturmak için bu sihirbazı kullanın. Bir MFC sınıfı ekleme bir [MFC uygulaması](../mfc/reference/creating-an-mfc-application.md), bir [MFC DLL](../mfc/reference/creating-an-mfc-dll-project.md), veya bir [MFC ActiveX denetimini](../mfc/reference/creating-an-mfc-activex-control.md).  

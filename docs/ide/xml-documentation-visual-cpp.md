@@ -17,11 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ee19c51c04fa32ab3c2f1810bb963b22ec7e890
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9d763a62edc2f21d8a7669e409c164906c440f1d
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705640"
 ---
 # <a name="xml-documentation-visual-c"></a>XML Belgeleri (Visual C++)
 Visual C++'da, bir .xml dosyasına nasıl işleneceğini kaynak kodunuzu yorumlar ekleyebilirsiniz. Bu dosya daha sonra kodunuzda sınıfları için belgeleri oluşturan bir işlem girdisi olabilir.  

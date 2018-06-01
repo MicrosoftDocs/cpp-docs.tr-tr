@@ -16,10 +16,11 @@ ms.author: corob
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6d95b6d2a69b4b40c4464136dd33a8c5231185f5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33329120"
 ---
 # <a name="redistributing-components-by-using-merge-modules"></a>Birleştirme Modüllerini Kullanarak Bileşenleri Yeniden Dağıtma
 Visual Studio içerir [birleştirme modülleri](http://msdn.microsoft.com/library/aa367434) uygulamayla yeniden dağıtılabilir için lisanslı her Visual C++ bileşeni için. Windows Installer kurulum dosyası içinde bir birleştirme modülü derlendiğinde, belirli DLL'lerin belirli bir platforma sahip bilgisayarlara dağıtımını sağlar. Kurulum dosyanızda, birleştirme modüllerinin uygulamanız için önkoşul olduğunu belirtin. Visual Studio yüklendiğinde, birleştirme modülleri \Program Files\Merge Modules yüklenen\\. (Yalnızca debug olmayan sürümleri Visual C++ DLL'leri yeniden dağıtılabilir.) Daha fazla bilgi ve dağıtım lisanslı birleştirme modülleri listesine bir bağlantı için bkz: [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).  

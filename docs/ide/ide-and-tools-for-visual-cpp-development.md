@@ -14,11 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02215cd585bf1644b5b01f779dd8ff46322c9181
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3668fb438c2a0aa7fa14cff97f498a9becc67b36
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705406"
 ---
 # <a name="ide-and-tools-for-visual-c-development"></a>IDE ve Visual C++ geliştirme araçları
 

@@ -19,10 +19,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 772e9dc6a296873ef27171676ebca0c185c1771c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33339082"
 ---
 # <a name="xml-document-generator-tool-property-pages"></a>XML Belgesi Oluşturma Aracı Özellik Sayfaları
 XML belgesi oluşturma aracı özellik sayfası xdcmake.exe işlevselliğini kullanıma sunar. xdcmake.exe kaynak kodunuzu belge açıklamaları içerdiğinde bu .xdc dosyaları bir .xml dosyasına birleştirir ve [/doc (işlem belgesi açıklamaları) (C/C++)](../build/reference/doc-process-documentation-comments-c-cpp.md) belirtilirse,. Bkz: [belge açıklamaları için önerilen etiketler](../ide/recommended-tags-for-documentation-comments-visual-cpp.md) kaynak koduna belge açıklamaları ekleme hakkında bilgi için.  

@@ -27,10 +27,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5f87518c23848cea91a3e3c48361aa0a63fa88a2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33330810"
 ---
 # <a name="midl-property-pages-advanced"></a>MIDL Özellik Sayfaları: Gelişmiş
 **Gelişmiş** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçenekleri belirtir:  

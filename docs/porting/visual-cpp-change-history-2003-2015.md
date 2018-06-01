@@ -14,11 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1447bcd0cb0a9bfff1d527f6a53eccf25e008f90
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0d4c4aeeaf79172950aae6d06c5e8a1246064246
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705692"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişini 2003 2015
 
@@ -92,7 +93,7 @@ Visual Studio'nun yeni bir sürüme yükselttiğinizde, derleme ve/veya önceden
   
 -   **Yeni ve silme** kitaplığı önceki sürümlerinde, uygulama tanımlı new işleci ve silme işlevleri Çalışma Zamanı Kitaplığı'ndan DLL (örneğin, msvcr120.dll) verildi. Bu işleç işlevler şimdi her zaman statik olarak ikili dosyalar içinde çalışma zamanı kitaplığı DLL'leri kullanırken bile bağlanır.  
   
-     Bu yerel ya da karma kodu için önemli bir değişiklik değil (/ clr), ancak olarak derlenmiş kod [/CLR: pure](../build/reference/clr-common-language-runtime-compilation.md), bu kodunuzu derlemek başarısız olmasına neden olabilir. / CLR olarak kod derleme yaparsanız: Saf, size eklemeniz gerekebilir #include \<yeni > veya #include \<new.h > derleme hataları bu değişikliği nedeniyle geçici olarak çözmek için. Unutmayın, / CLR: pure olan Visual Studio 2015'te kullanım dışıdır ve gelecek sürümlerde kaldırılabilir. "Saf" olması gereken kod C# için bağlantı noktası kurulmuş.  
+     Bu yerel ya da karma kodu için önemli bir değişiklik değil (/ clr), ancak olarak derlenmiş kod [/CLR: pure](../build/reference/clr-common-language-runtime-compilation.md), bu kodunuzu derlemek başarısız olmasına neden olabilir. / CLR olarak kod derleme yaparsanız: Saf, size eklemeniz gerekebilir #include \<yeni > veya #include \<new.h > derleme hataları bu değişikliği nedeniyle geçici olarak çözmek için. Unutmayın, / CLR: pure Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor. "Saf" olması gereken kod C# için bağlantı noktası kurulmuş.  
   
 #### <a name="processh"></a>\<Process.h >  
   

@@ -19,10 +19,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: cefd38a18447d0e8c9121d61c0ba963e9da39187
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33321437"
 ---
 # <a name="ltexamplegt-visual-c"></a>&lt;örnek&gt; (Visual C++)
 \<Örnek > etiketini bir yöntemi veya diğer kitaplık üyesini nasıl kullanılacağını örneği belirtmenize olanak sağlar. Genellikle, bu da kullanımını içerir [ \<kodu >](../ide/code-visual-cpp.md) etiketi.  

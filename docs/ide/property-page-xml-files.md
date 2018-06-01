@@ -15,10 +15,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: fcee2c416fba6a959785826781aefd96b0d06d75
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33339650"
 ---
 # <a name="property-page-xml-rule-files"></a>Özellik sayfası XML kural dosyaları
 IDE içinde proje özellik sayfalarını VCTargets klasördeki XML dosyalarını tarafından yapılandırılır. Visual Studio'nun hangi edition(s) yüklenir ve ürün dili tam yolunu bağlıdır. Visual Studio 2017 Enterprise Edition için İngilizce, yolun olduğundan `%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\1033`. XML dosyaları, kurallar, kategoriler ve özellikler, kendi veri türü, varsayılan değerleri adlarını ve nasıl görüntülenecek oldukları açıklanmaktadır. IDE içinde bir özellik ayarladığınızda, yeni değer proje dosyasında depolanır.

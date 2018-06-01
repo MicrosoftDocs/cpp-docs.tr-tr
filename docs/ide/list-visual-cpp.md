@@ -19,10 +19,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: bff8e3588e31414f50cb6d150c0e8c9f2603586b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33323985"
 ---
 # <a name="ltlistgt-visual-c"></a>&lt;Liste&gt; (Visual C++)
 \<Listheader > bloğu bir tablo veya tanım listesi başlık satırının tanımlamak için kullanılır. Bir tablo tanımlarken, yalnızca bir giriş başlığı'nda terim için sağlamanız gerekir.  
