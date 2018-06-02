@@ -16,26 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 543884392698a7a713dbc4c0bfd10dd19fcb0b1c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 45f9ccdef84713883c53dab0e7caf3b1519628de
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34704233"
 ---
 # <a name="compiler-error-c2434"></a>Derleyici Hatası C2434
-'simgesi': / CLR ile __declspec(process) bildirilen bir simge dinamik olarak başlatılamaz: Saf modu  
-  
- **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
-  
- Dinamik olarak bir işlem içi değişken altında başlatmak mümkün değil **/CLR: pure**. Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ve [işlem](../../cpp/process.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2434 oluşturur.  
-  
-```  
-// C2434.cpp  
-// compile with: /clr:pure /c  
-int f() { return 0; }  
-__declspec(process) int i = f();   // C2434  
-__declspec(process) int i2 = 0;   // OK  
+
+> '*sembol*': / CLR ile __declspec(process) bildirilen bir simge dinamik olarak başlatılamaz: Saf modu
+
+## <a name="remarks"></a>Açıklamalar
+
+**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+
+Dinamik olarak bir işlem içi değişken altında başlatmak mümkün değil **/CLR: pure**. Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ve [işlem](../../cpp/process.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C2434 oluşturur. Bu sorunu gidermek için başlatmak için sabitleri kullanın `process` değişkenleri.
+
+```cpp
+// C2434.cpp
+// compile with: /clr:pure /c
+int f() { return 0; }
+__declspec(process) int i = f();   // C2434
+__declspec(process) int i2 = 0;   // OK
 ```

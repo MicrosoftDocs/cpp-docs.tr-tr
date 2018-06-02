@@ -16,27 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25b0a344eaafedc2f7c0eb60141e3a07fd86c6af
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5b21e457feb6d090e4abaf531293987eb3504457
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34704977"
 ---
 # <a name="compiler-error-c3862"></a>Derleyici Hatası C3862
-'function': / CLR ile yönetilmeyen işlev derlenemiyor: Saf veya/CLR: safe  
-  
- **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
-  
- Derleme ile **/CLR: pure** veya **/CLR: safe** görüntüyü yerel (yönetilmeyen) kod olmadan bir MSIL yalnızca görüntü oluşturur.  Bu nedenle, kullanamazsınız `unmanaged` pragma içinde bir **/CLR: pure** veya **/CLR: safe** derleme.  
-  
- Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ve [yönetilen, yönetilmeyen](../../preprocessor/managed-unmanaged.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3862 oluşturur:  
-  
-```  
-// C3862.cpp  
-// compile with: /clr:pure /c  
-#pragma unmanaged  
-void f() {}   // C3862  
+
+> '*işlevi*': / CLR ile yönetilmeyen işlev derlenemiyor: Saf veya/CLR: safe
+
+## <a name="remarks"></a>Açıklamalar
+
+**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+
+Derleme ile **/CLR: pure** veya **/CLR: safe** görüntüyü yerel (yönetilmeyen) kod olmadan bir MSIL yalnızca görüntü oluşturur.  Bu nedenle, kullanamazsınız `unmanaged` pragma içinde bir **/CLR: pure** veya **/CLR: safe** derleme.
+
+Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ve [yönetilen, yönetilmeyen](../../preprocessor/managed-unmanaged.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C3862 oluşturur:
+
+```cpp
+// C3862.cpp
+// compile with: /clr:pure /c
+#pragma unmanaged
+void f() {}   // C3862
 ```

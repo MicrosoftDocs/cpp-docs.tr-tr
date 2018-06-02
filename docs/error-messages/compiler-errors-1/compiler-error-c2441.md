@@ -16,29 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6557e913f2bd34fda9d435d44020697a925af4e4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6d4224d9090f3ace43f61a10c599fafa78d21600
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705286"
 ---
 # <a name="compiler-error-c2441"></a>Derleyici Hatası C2441
-'değişkeni': __declspec(process) ile bildirilen bir simge const/CLR: pure modu  
-  
- **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
-  
- Varsayılan olarak, her uygulama etki alanı altında değişkenlerdir **/CLR: pure**. Bir değişken olarak işaretlenmiş `__declspec(process)` altında **/CLR: pure** değiştiren bir uygulama etki alanı ve başka bir programda okuma hataları yatkındır.  
-  
- Bu nedenle, her işlem değişkenlerin olması derleyici zorlar `const` altında **/CLR: pure**, yalnızca tüm uygulama etki alanlarında yapma bunları okuyun.  
-  
- Daha fazla bilgi için bkz: [işlem](../../cpp/process.md) ve [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2441 oluşturur.  
-  
-```  
-// C2441.cpp  
-// compile with: /clr:pure /c  
-__declspec(process) int i;   // C2441  
-__declspec(process) const int j = 0;   // OK  
+
+> '*değişkeni*': __declspec(process) ile bildirilen bir simge/CLR const: Saf modu
+
+## <a name="remarks"></a>Açıklamalar
+
+**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+
+Varsayılan olarak, her uygulama etki alanı altında değişkenlerdir **/CLR: pure**. Bir değişken olarak işaretlenmiş `__declspec(process)` altında **/CLR: pure** değiştiren bir uygulama etki alanı ve başka bir programda okuma hataları yatkındır.
+
+Bu nedenle, her işlem değişkenlerin olması derleyici zorlar `const` altında **/CLR: pure**, yalnızca tüm uygulama etki alanlarında yapma bunları okuyun.
+
+Daha fazla bilgi için bkz: [işlem](../../cpp/process.md) ve [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C2441 oluşturur.
+
+```cpp
+// C2441.cpp
+// compile with: /clr:pure /c
+__declspec(process) int i;   // C2441
+__declspec(process) const int j = 0;   // OK
 ```

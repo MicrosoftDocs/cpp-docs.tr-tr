@@ -16,40 +16,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 613c2069443e580fb581798d9e1cc6d5781d7c91
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d6a896c8ba012c69755c5292475b2d155ad92066
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705094"
 ---
 # <a name="linker-tools-error-lnk1313"></a>Bağlayıcı Araçları Hatası LNK1313
-IJW/yerel modül; algılandı saf modüllerle bağlanamıyor  
-  
- Visual C++ geçerli sürümü ile derlenmiş .obj dosyaları ile yerel ya da karma yönetilen/yerel .obj dosyaları bağlantılandırma desteklemiyor **/CLR: pure**.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// LNK1313.cpp  
-// compile with: /c /clr:pure  
-// a pure module  
-int main() {}  
-```  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// LNK1313_b.cpp  
-// compile with: /c /clr  
-// an IJW module  
-void test(){}  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek LNK1313 oluşturur.  
-  
-```  
-// LNK1313_c.cpp  
-// compile with: /link LNK1313.obj LNK1313_b.obj  
-// LNK1313 warning expected  
+
+> IJW/yerel modül; algılandı saf modüllerle bağlanamıyor
+
+## <a name="remarks"></a>Açıklamalar
+
+Visual C++ geçerli sürümü ile derlenmiş .obj dosyaları ile yerel ya da karma yönetilen/yerel .obj dosyaları bağlantılandırma desteklemiyor **/CLR: pure**.
+
+**/CLR: pure** derleyici seçeneği Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+
+## <a name="example"></a>Örnek
+
+```cpp
+// LNK1313.cpp
+// compile with: /c /clr:pure
+// a pure module
+int main() {}
+```
+
+## <a name="example"></a>Örnek
+
+```cpp
+// LNK1313_b.cpp
+// compile with: /c /clr
+// an IJW module
+void test(){}
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek LNK1313 oluşturur.
+
+```cpp
+// LNK1313_c.cpp
+// compile with: /link LNK1313.obj LNK1313_b.obj
+// LNK1313 warning expected
 ```

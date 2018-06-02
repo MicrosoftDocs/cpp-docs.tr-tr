@@ -16,42 +16,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b7f05916be060b9712f6ba1b1955b37da538afe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b993aaaee0e50eacf47ce594b4c5efa47f83dd18
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34705081"
 ---
 # <a name="compiler-error-c3278"></a>Derleyici Hatası C3278
-doğrudan çağrı arabirimi veya saf yöntemi 'yöntemi' çalışma zamanında başarısız olur  
-  
- Bir arabirim yöntemini veya izin saf bir yöntemle bir çağrı yapıldı.  
-  
- Aşağıdaki örnek C3278 oluşturur:  
-  
-```  
-// C3278_2.cpp  
-// compile with: /clr  
-using namespace System;  
-interface class I  
-{  
-   void vmf();  
-};  
-  
-public ref class C: public I  
-{  
-public:  
-   void vmf()  
-   {  
-      Console::WriteLine( "In C::vmf()" );  
-      I::vmf(); // C3278  
-   }  
-  
-};  
-  
-int main()  
-{  
-   C^ pC = gcnew C;  
-   pC->vmf();  
-}  
+
+> doğrudan arabirimi veya saf yöntem çağrısı '*yöntemi*' çalışma zamanında başarısız olur
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir arabirim yöntemini veya izin saf bir yöntemle bir çağrı yapıldı.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C3278 oluşturur:
+
+```cpp
+// C3278_2.cpp
+// compile with: /clr
+using namespace System;
+interface class I
+{
+   void vmf();
+};
+
+public ref class C: public I
+{
+public:
+   void vmf()
+   {
+      Console::WriteLine( "In C::vmf()" );
+      I::vmf(); // C3278
+   }
+
+};
+
+int main()
+{
+   C^ pC = gcnew C;
+   pC->vmf();
+}
 ```
