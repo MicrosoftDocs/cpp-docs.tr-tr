@@ -17,10 +17,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: bf2ddf83b7a03f8d4e01b61f82e46e0d26a5547b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33340547"
 ---
 # <a name="implement-interface-wizard"></a>Arabirim Uygulama Sihirbazı
 Bu sihirbaz bir COM nesnesi için bir arabirimi uygular. Birçok arabirimleri uygulamalarını Visual Studio ve Windows ile kullanılabilir COM kitaplıkları dahil edilmiştir. Söz konusu nesne örneği oluşturulduğunda ve nesne sunar hizmetleri sağlayan bir arabirim uygulamasına sahip bir nesne ilişkilidir.  

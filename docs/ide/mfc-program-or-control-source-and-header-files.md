@@ -15,10 +15,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5ab1ed04b9890fbed8de8b59354ab36d7be063e7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33340235"
 ---
 # <a name="mfc-program-or-control-source-and-header-files"></a>MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları
 Oluşturduğunuz proje için belirttiğiniz seçeneklere bağlı olarak Visual Studio'da bir MFC projesi oluşturduğunuzda, aşağıdaki dosyaları oluşturulur. Örneğin, projenizi içeren *Projname*dlg.cpp ve *Projname*dlg.h dosyaları yalnızca proje iletişim tabanlı ya da sınıf oluşturursanız.  
