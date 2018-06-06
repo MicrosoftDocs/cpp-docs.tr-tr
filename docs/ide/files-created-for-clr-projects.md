@@ -19,7 +19,7 @@ ms.openlocfilehash: b9d66c3f55164a743bc395dc5e9b48f8bcd57654
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33334671"
 ---
 # <a name="files-created-for-clr-projects"></a>CLR Projeleri için Oluşturulan Dosyalar

@@ -20,7 +20,7 @@ ms.openlocfilehash: 0c5469e4f7be3c164cc63fa30f5069009846be48
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34705029"
 ---
 # <a name="compiler-error-c2812"></a>Derleyici Hatası C2812

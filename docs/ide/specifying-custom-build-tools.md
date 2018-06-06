@@ -1,7 +1,7 @@
 ---
 title: Derleme araçlarını özel belirtme | Microsoft Docs
 ms.custom: ''
-ms.date: 12/28/2017
+ms.date: 06/05/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -25,12 +25,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b8fc10d2a94ab4b26a47991d3dc8923afb28ca3
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: a880d8cac05ea662feafa4c309f70bb91179fb2c
+ms.sourcegitcommit: 6784c1d5081dbe4d8119379647a34666328e1fdf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "33335568"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34798937"
 ---
 # <a name="specify-custom-build-tools"></a>Özel derleme araçlarını belirtme
 
@@ -68,7 +68,7 @@ A *özel derleme aracı* yapılandırma sistemi belirli giriş dosyaları oluşt
 
    - İçinde **çıkışları**, çıktı dosyası adını belirtin. Bu gerekli bir giriştir; Bu özellik için bir değer özel derleme araç çalışmaz. Özel derleme aracı birden çok çıktı varsa, dosya adları noktalı virgülle ayırın.
 
-      İçinde belirtilen çıkış dosyasının adı aynı olmalıdır **komut satırı** özelliği. Proje derleme sistem dosyasını arayın ve kendi tarihini denetleyin. Çıktı dosyası giriş dosyadan daha yeni veya çıktı dosyası bulunmazsa, özel derleme Aracı'nı çalıştırın. Tüm, **ek bağımlılıklar** giriş dosyasından daha eski olan dosyalar ve giriş dosyası belirtilen dosyadan daha eski **çıkışları** özelliği, özel derleme aracın çalıştığı değil.
+      İçinde belirtilen çıkış dosyasının adı aynı olmalıdır **komut satırı** özelliği. Proje derleme sistem dosyasını arayın ve kendi tarihini denetleyin. Çıktı dosyası giriş dosyasından daha eski veya çıktı dosyası bulunmazsa, özel derleme Aracı'nı çalıştırın. Tüm, **ek bağımlılıklar** giriş dosyasından daha eski olan dosyalar ve giriş dosyası belirtilen dosyadan daha eski **çıkışları** özelliği, özel derleme aracın çalıştığı değil.
 
 Özel derleme aracı tarafından oluşturulan bir çıktı dosyası üzerinde çalışılacak yapı sistem istiyorsanız, el ile projeye eklemelisiniz. Özel derleme aracı dosyasını sırasında derleme güncelleştirir.
 

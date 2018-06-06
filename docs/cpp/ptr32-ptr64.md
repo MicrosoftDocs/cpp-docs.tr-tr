@@ -26,7 +26,7 @@ ms.openlocfilehash: 5746c8f54a51e24bad23dcb66f6648266e2e4b56
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34704821"
 ---
 # <a name="ptr32-ptr64"></a>__ptr32, __ptr64

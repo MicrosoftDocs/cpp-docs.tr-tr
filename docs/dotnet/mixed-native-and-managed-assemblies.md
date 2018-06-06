@@ -27,7 +27,7 @@ ms.openlocfilehash: 469e0429408e1b8afed65889539202650cd28413
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34704795"
 ---
 # <a name="mixed-native-and-managed-assemblies"></a>Karışık (yerel ve yönetilen) derlemeler

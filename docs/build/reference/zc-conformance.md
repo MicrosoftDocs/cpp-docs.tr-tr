@@ -23,7 +23,7 @@ ms.openlocfilehash: b89744235a5a2302a6550b2ffa7100511ad2e59c
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34704899"
 ---
 # <a name="zc-conformance"></a>/Zc (Uyumluluk)

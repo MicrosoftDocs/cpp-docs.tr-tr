@@ -20,7 +20,7 @@ ms.openlocfilehash: 4012eac44f376ccdeeb57227e562c672f6ba7ffe
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34704587"
 ---
 # <a name="clrcall"></a>__clrcall

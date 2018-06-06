@@ -19,10 +19,10 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0354d0a910db0f4237a56607a7322acb7a1b57a0
-ms.sourcegitcommit: 3c1930dc1e7e69fdbb431029cd3e9b9b00a140cc
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34686857"
 ---
 # <a name="pointers-to-members"></a>Üye İşaretçileri

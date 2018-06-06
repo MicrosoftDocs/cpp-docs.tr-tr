@@ -17,11 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d4f09ebe0cfaca9bb742baa902a256ac0f92996
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b43f9ac9edb0d19af4002bb839f857ae71ad4a11
+ms.sourcegitcommit: 0bc67d40aa283be42f3e1c7190d6a5d9250ecb9b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34762081"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio'da Visual C++
 
@@ -143,7 +144,7 @@ Bulma ve yükleme 600'den fazla C++ açık kaynak kitaplıkları'nın büyük ö
 [Standart C++](http://isocpp.org/)<br/>
 C++ hakkında bilgi edinin, Modern C++ hakkında genel bilgileri alın ve kitaplar, makaleler, konuşmalar ve olaylar için bağlantılara ulaşın
 
-[Visual C++ öğrenin](http://msdn.microsoft.com/vstudio/hh386302.aspx)<br/>
+[Visual C++ öğrenin](build/vscpp-step-1-create.md)<br/>
 C++ öğrenmeye başlayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.

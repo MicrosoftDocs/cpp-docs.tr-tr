@@ -21,7 +21,7 @@ ms.openlocfilehash: f17d56601f49056144433155e0d898f56c42bdab
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33329264"
 ---
 # <a name="ltcgt-visual-c"></a>&lt;c&gt; (Visual C++)

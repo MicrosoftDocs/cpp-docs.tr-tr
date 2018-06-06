@@ -27,7 +27,7 @@ ms.openlocfilehash: dc4266e8b01201226c53584bed9f90ed9dcabef7
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34703739"
 ---
 # <a name="ltcg-link-time-code-generation"></a>/LTCG (Bağlama Zamanı Kodu Oluşturma)

@@ -20,7 +20,7 @@ ms.openlocfilehash: d2844e9051c5e6adf14085bcd7bfcd8096c6f8f7
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33332588"
 ---
 # <a name="creating-a-com-interface-visual-c"></a>COM Arabirimi Oluşturma (Visual C++)

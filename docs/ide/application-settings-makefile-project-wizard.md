@@ -20,7 +20,7 @@ ms.openlocfilehash: 07459cd4971ea6aec95b632e5c03618248cca401
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33330745"
 ---
 # <a name="application-settings-makefile-project-wizard"></a>Uygulama Ayarları, Derleme Görevleri Dosyası Proje Sihirbazı

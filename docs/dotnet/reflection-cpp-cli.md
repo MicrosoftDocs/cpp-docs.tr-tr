@@ -25,7 +25,7 @@ ms.openlocfilehash: d41d7f627a50dd1a09f4256fbd8448d82c6d5f27
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34705250"
 ---
 # <a name="reflection-ccli"></a>Yansıma (C++/CLI)

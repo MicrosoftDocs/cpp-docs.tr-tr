@@ -18,7 +18,7 @@ ms.openlocfilehash: fe466ff9250543a61fde8da41900b152a9874e09
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33337356"
 ---
 # <a name="vcxproj-and-props-file-structure"></a>.vcxproj ve .props dosya yapısı

@@ -16,7 +16,7 @@ ms.openlocfilehash: 4ad9fb198dd5c0f816d05e4b9a87cff969331d8c
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34705653"
 ---
 # <a name="vc-directories-linux-c"></a>VC ++ dizinleri (Linux C++)

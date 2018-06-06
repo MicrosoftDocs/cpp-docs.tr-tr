@@ -20,7 +20,7 @@ ms.openlocfilehash: e9c8eaa03927f51acd3c3d84731e9ef2b282b7c6
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34704160"
 ---
 # <a name="linker-tools-error-lnk2028"></a>Bağlayıcı Araçları Hatası LNK2028

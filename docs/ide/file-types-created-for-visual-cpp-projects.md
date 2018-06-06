@@ -28,7 +28,7 @@ ms.openlocfilehash: a7158e729d80d8b0456862ee6418f039b7f948fe
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33336023"
 ---
 # <a name="file-types-created-for-visual-c-projects"></a>Visual C++ Projeleri için Oluşturulan Dosya Türleri

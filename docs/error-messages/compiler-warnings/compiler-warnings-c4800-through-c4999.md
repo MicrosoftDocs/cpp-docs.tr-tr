@@ -110,7 +110,7 @@ ms.openlocfilehash: 06c4d65fe7b6ab2b0238c3a4e4cd081e2dc011b5
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34704756"
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>Derleyici uyarıları C4800 C5999 aracılığıyla

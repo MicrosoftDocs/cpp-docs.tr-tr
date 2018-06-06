@@ -21,7 +21,7 @@ ms.openlocfilehash: c79f6eaebae0065a631b8ac31a7254cdc96080e9
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33324193"
 ---
 # <a name="adding-a-member-function-visual-c"></a>Üye İşlevi Ekleme (Visual C++)

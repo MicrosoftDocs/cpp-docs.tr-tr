@@ -21,7 +21,7 @@ ms.openlocfilehash: bda420768b1ff0819ba666f71d62bfffa86e2105
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33336114"
 ---
 # <a name="adding-references-in-visual-c-projects"></a>Visual C++ projelerine başvuru ekleme

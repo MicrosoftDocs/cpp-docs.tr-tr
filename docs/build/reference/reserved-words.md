@@ -31,7 +31,7 @@ ms.openlocfilehash: 132bd8e5ba66cbf9486a6da4747994c667e2f6e7
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34705666"
 ---
 # <a name="reserved-words"></a>Ayrılmış sözcükler

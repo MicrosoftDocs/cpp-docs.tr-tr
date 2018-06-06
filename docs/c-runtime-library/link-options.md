@@ -43,7 +43,7 @@ ms.openlocfilehash: 98965b94c83b69e15c38319d7bc5a6e4151b323e
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34704892"
 ---
 # <a name="link-options"></a>Bağlantı Seçenekleri

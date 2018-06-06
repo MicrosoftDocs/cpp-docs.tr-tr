@@ -19,7 +19,7 @@ ms.openlocfilehash: cac71857e6b472f11d1c9eaba48d181ea78fb456
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34705598"
 ---
 # <a name="roinitializewrapper-class"></a>RoInitializeWrapper Sınıfı

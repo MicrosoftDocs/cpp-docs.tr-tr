@@ -21,7 +21,7 @@ ms.openlocfilehash: 4912628529ae0b47a5a5b938ab8e6d25a9099510
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34704409"
 ---
 # <a name="thiscall"></a>__thiscall

@@ -22,7 +22,7 @@ ms.openlocfilehash: a03dd56320b948d47c765f253bf3e6b706ed2b56
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33335510"
 ---
 # <a name="ltseegt-visual-c"></a>&lt;bkz:&gt; (Visual C++)

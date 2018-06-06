@@ -25,7 +25,7 @@ ms.openlocfilehash: 687e5cba94693a752f934d7816e6a7c36e318354
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33336703"
 ---
 # <a name="hint-files"></a>İpucu Dosyaları

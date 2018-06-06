@@ -14,7 +14,7 @@ ms.openlocfilehash: afce516f2718a76658846ed4f992aeabff75330b
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33328032"
 ---
 # <a name="implement-pure-virtuals"></a>Saf sanalların uygulama

@@ -18,7 +18,7 @@ ms.openlocfilehash: 20006118d4bf27c379b78b84dc8807a4fd6c5e6c
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34256326"
 ---
 # <a name="universal-crt-deployment"></a>Evrensel CRT dağıtım

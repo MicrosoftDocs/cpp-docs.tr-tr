@@ -20,7 +20,7 @@ ms.openlocfilehash: 657053f33a83d67e79bea13ab87da21156bde94c
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33327495"
 ---
 # <a name="adding-an-event-visual-c"></a>Olay Ekleme (Visual C++)

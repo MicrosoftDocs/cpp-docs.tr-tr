@@ -204,7 +204,7 @@
 ### [/DELAY (Gecikme Yükü İçe Aktarma Ayarları)](delay-delay-load-import-settings.md)
 ### [/DELAYLOAD (Yükü İçe Aktarmayı Geciktir)](delayload-delay-load-import.md)
 ### [/DELAYSIGN (Derlemeyi Kısmen İmzala)](delaysign-partially-sign-an-assembly.md)
-### [/ DEPENDENTLOADFLAGS (kümesi varsayılan bağımlı yük flags)](dependentloadflags.md)
+### [/ DEPENDENTLOADFLAG (kümesi varsayılan bağımlı yük flags)](dependentloadflag.md)
 ### [/DLL (DLL Derleme)](dll-build-a-dll.md)
 ### [/DRIVER (Windows NT Çekirdek Modu Sürücüsü)](driver-windows-nt-kernel-mode-driver.md)
 ### [/DYNAMICBASE (Adres boşluğu düzeni rastgele seçimini kullan)](dynamicbase-use-address-space-layout-randomization.md)

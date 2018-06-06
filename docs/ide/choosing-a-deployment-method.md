@@ -26,7 +26,7 @@ ms.openlocfilehash: bdf024f75f03b55465ccd15670c47d3c761e56e8
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33338672"
 ---
 # <a name="choosing-a-deployment-method"></a>Dağıtım Yöntemi Seçme

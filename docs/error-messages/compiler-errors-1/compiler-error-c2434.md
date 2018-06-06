@@ -20,7 +20,7 @@ ms.openlocfilehash: 45f9ccdef84713883c53dab0e7caf3b1519628de
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34704233"
 ---
 # <a name="compiler-error-c2434"></a>Derleyici Hatası C2434

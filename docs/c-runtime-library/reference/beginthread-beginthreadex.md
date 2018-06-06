@@ -43,7 +43,7 @@ ms.openlocfilehash: d56bcc5ec779b077305d9d80e4a4e6b5e511df5e
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34704665"
 ---
 # <a name="beginthread-beginthreadex"></a>_beginthread, _beginthreadex

@@ -21,7 +21,7 @@ ms.openlocfilehash: c6612d215902657aed9869e66be93b8b2ea2da25
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33330239"
 ---
 # <a name="navigating-the-class-structure-visual-c"></a>Sınıf Yapısında Gezinme (Visual C++)

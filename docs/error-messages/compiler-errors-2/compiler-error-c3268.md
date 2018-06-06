@@ -20,7 +20,7 @@ ms.openlocfilehash: eac0c4e7c25df466ecf1e7e28bccf9ee2a2e2953
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34705263"
 ---
 # <a name="compiler-error-c3268"></a>Derleyici Hatası C3268
