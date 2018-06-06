@@ -17,11 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7bcc003811a747569f22f6b2603faf72096dd049
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 38f30c497fc8640b1f88f4ffb3fc6f14bed55a3e
+ms.sourcegitcommit: e3b4ef19b534a2ed48bb9091e5197a6e536f16c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814358"
 ---
 # <a name="ftmbase-class"></a>FtmBase Sınıfı
 Ücretsiz iş parçacıklı Sıralayıcı nesneyi temsil eder.  
@@ -36,7 +37,7 @@ class FtmBase : public Microsoft::WRL::Implements<
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için MSDN Kitaplığı'nda "COM başvurusu" konusunun "COM arabirimleri" konu "IMarshal" konusuna bakın.  
+ Daha fazla bilgi için bkz: [RuntimeClass sınıfı](runtimeclass-class.md).  
   
 ## <a name="members"></a>Üyeler  
   

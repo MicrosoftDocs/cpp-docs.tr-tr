@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e9cd1a0ba57b5a2f0d5afb2d02ff9c21b7e0b2c
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: d6912d410018966432ef66331354213bd70dfa8b
+ms.sourcegitcommit: e3b4ef19b534a2ed48bb9091e5197a6e536f16c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705432"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814345"
 ---
 # <a name="general-rules-for-operator-overloading"></a>İşleç Aşırı Yüklemesi Genel Kuralları
 Aşağıdaki kuralları nasıl aşırı yüklenmiş işleçler sınırlamak uygulanır. Bununla birlikte, bunlar için uygulanmaz [yeni](../cpp/new-operator-cpp.md) ve [silmek](../cpp/delete-operator-cpp.md) ayrı olarak ele alınmıştır işleçler.  
@@ -55,7 +55,7 @@ Aşağıdaki kuralları nasıl aşırı yüklenmiş işleçler sınırlamak uygu
   
 -   İkili işleçler üye işlevleri bildirilen bir bağımsız değişken alın; genel işlevler bildirilen, bunlar iki bağımsız değişkenleri alır.  
   
--   Bir operatör bir birli ya da bir ikili işleç olarak kullanılıp kullanılamayacağını (**&**, **\***, **+**, ve **-**), her kullanım ayrı ayrı aşırı yüklenebilir.  
+-   Bir operatör bir birli ya da bir ikili işleç olarak kullanılıp kullanılamayacağını (__&__, __*__, __+__, ve __-__), her kullanım ayrı ayrı aşırı yüklenebilir.  
   
 -   Aşırı yüklenmiş işleçler varsayılan bağımsız değişkenler sahip olamaz.  
   

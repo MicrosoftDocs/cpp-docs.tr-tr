@@ -19,11 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f563e318f2defcbf36139f1f6d49e3986db5f946
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ac1fac3c7f96c9f8d718efa54810f4155b1ddac5
+ms.sourcegitcommit: c0ffdff538eb961f786809eb547b35846190ee48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34800092"
 ---
 # <a name="walkthrough-creating-a-standard-c-program-c"></a>İzlenecek yol: bir standart C++ programı (C++) oluşturma
 Visual C++, Visual Studio tümleşik geliştirme ortamı (IDE) standart C++ programları oluşturmak için kullanabilirsiniz. Bu izlenecek adımları izleyerek, bir proje oluşturun, projeye yeni bir dosya ekleyin, C++ kodu ekleyin ve ardından derlemek ve program kullanarak çalıştırmak için dosyasını değiştirmek [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
@@ -42,7 +43,7 @@ Visual C++, Visual Studio tümleşik geliştirme ortamı (IDE) standart C++ prog
   
 1.  Proje göstererek oluşturma **yeni** üzerinde **dosya** menüsüne ve ardından **proje**.  
   
-2.  İçinde **Visual C++** Proje Türleri bölmesinde, tıklatın **Win32**ve ardından **Win32 konsol uygulaması**.  
+2.  İçinde **Visual C++** Proje Türleri bölmesinde, tıklatın **Windows Masaüstü**ve ardından **Windows konsol uygulaması**.  
   
 3.  Proje için bir ad yazın.  
   
@@ -50,11 +51,9 @@ Visual C++, Visual Studio tümleşik geliştirme ortamı (IDE) standart C++ prog
   
      Tıklatın **Tamam** projesi oluşturmak için.  
   
-4.  İçinde **Win32 Uygulama Sihirbazı'nı**, tıklatın **sonraki**seçin **boş proje**ve ardından **son**.  
+4.  Varsa **Çözüm Gezgini** üzerinde görüntülenmiyorsa **Görünüm** menüsünde tıklatın **Çözüm Gezgini**.  
   
-5.  Varsa **Çözüm Gezgini** üzerinde görüntülenmiyorsa **Görünüm** menüsünde tıklatın **Çözüm Gezgini**.  
-  
-6.  Yeni bir kaynak dosyası projeye aşağıdaki şekilde ekleyin.  
+5.  Yeni bir kaynak dosyası projeye aşağıdaki şekilde ekleyin.  
   
     1.  İçinde **Çözüm Gezgini**, sağ **kaynak dosyaları** klasörünü **Ekle**ve ardından **yeni öğe**.  
   
@@ -62,15 +61,15 @@ Visual C++, Visual Studio tümleşik geliştirme ortamı (IDE) standart C++ prog
   
      Kaynak dosyaları klasöründe .cpp dosya görünür **Çözüm Gezgini**, ve dosya Visual Studio düzenleyicisinde açılır.  
   
-7.  Dosyayı düzenleyicide C++ Standart Kitaplığı kullanan geçerli bir C++ programı yazın veya örnek programlar birini kopyalayın ve dosyaya yapıştırın.  
+6.  Dosyayı düzenleyicide C++ Standart Kitaplığı kullanan geçerli bir C++ programı yazın veya örnek programlar birini kopyalayın ve dosyaya yapıştırın.  
   
-8.  Dosyayı kaydedin.  
+7.  Dosyayı kaydedin.  
   
-9. Üzerinde **yapı** menüsünde tıklatın **yapı çözümü**.  
+8. Üzerinde **yapı** menüsünde tıklatın **yapı çözümü**.  
   
      **Çıkış** penceresi derleme ilerleme durumu, örneğin, derleme günlüğünde ve yapı durumu bildiren bir ileti konumu ile ilgili bilgileri görüntüler.  
   
-10. Üzerinde **hata ayıklama** menüsünde tıklatın **Başlat hata ayıklama olmadan**.  
+9. Üzerinde **hata ayıklama** menüsünde tıklatın **Başlat hata ayıklama olmadan**.  
   
      Örnek program kullandıysanız, bir komut penceresi görüntülenir ve belirli tamsayılar kümesinde bulunan olup olmadığını gösterir.  
   

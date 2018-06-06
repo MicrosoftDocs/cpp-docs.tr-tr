@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b0ccedc3a1794b34fce3ad773e44155f7602d3b
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: f8ba56f0b4fa6d7d6ac56f3f118edeaad03643b5
+ms.sourcegitcommit: 0ce270566769cba76d763dd69b304a55eb375d01
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34704730"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799200"
 ---
 # <a name="crt-library-features"></a>CRT Kitaplık Özellikleri
 
@@ -113,9 +113,14 @@ Projenizi sürümü oluşturma sırasında temel C çalışma zamanı kitaplıkl
 
 ## <a name="what-problems-exist-if-an-application-uses-more-than-one-crt-version"></a>Bir uygulama birden fazla CRT sürümü kullanıyorsa, hangi sorunları var?
 
-Birden fazla DLL veya EXE varsa, Visual C++'ün farklı sürümlerini kullanan olup olmadığına bakılmaksızın birden fazla CRT olabilir. Örneğin, statik olarak CRT birden çok DLL'lere bağlantılandırma aynı sorun yaratabilir. Bu sorun statik büyüklükteki CRT'lerden karşılaşmadan geliştiriciler belirtildiği ile derlemek için **/MD** CRT DLL kullanılacak. DLL'leri DLL sınırından CRT kaynakları geçirirseniz, eşleşmeyen büyüklükteki CRT'lerden sorunlarla karşılaşırsanız ve Visual C++ ile projenizi yeniden derleyin gerekir.
+Her yürütülebilir görüntü (EXE ya da DLL) kendi statik olarak bağlantılı CRT olabilir veya bir CRT dinamik olarak bağlayabilirsiniz. CRT dahil statik veya dinamik olarak belirli bir görüntü tarafından yüklenen sürümü ile oluşturulmuş kitaplıklar ve Araçlar sürümü bağlıdır. Tek bir işlem, her biri kendi CRT ile birden çok EXE ve DLL görüntüleri yükleyebilir. Her Bu büyüklükteki CRT'lerden farklı ayırıcısı kullanabilir, farklı iç yapısı düzenleri olabilir ve farklı depolama düzenlemeleri kullanabilir. Bellek, CRT kaynaklar veya DLL sınırından geçirilen sınıfları ayrılan Bunun anlamı, bellek yönetimi, dahili statik kullanım veya düzeni yorumlama sorunlara neden olabilir. Örneğin, bir sınıf bir DLL'de ayrılan ancak geçirilen ve bir başkası tarafından silinen hangi CRT deallocator kullanılır? Neden olduğu hata Zarif hemen önemli aralığı ve bu nedenle bu tür kaynakları aktarımını kesinlikle önerilmez yönlendirin.
 
-Programınızı CRT birden fazla sürümünü kullanıyorsanız, bazı dikkatli DLL sınırlarından belirli CRT nesnelerini (örneğin, dosya tanıtıcısı, yerel ve ortam değişkenleri) geçirilirken gereklidir. İlgili sorunlar hakkında daha fazla bilgi ve bunların nasıl çözüleceği için bkz: [olası hataları geçirme CRT nesnelerini DLL sınırlar boyunca](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).
+Bu sorunların çoğunu kararlı ve oluşturulabileceğidir olacak şekilde tasarlandığı gibi uygulama ikili arabirimi (ABI) teknolojilerini bunun yerine, kullanarak önleyebilirsiniz. Değere göre bilgi geçirmek ya da çağıran tarafından geçirilen yerine yerel olarak ayrılan ve çağırana döndürülen bellek üzerinde çalışmak için DLL dışarı aktarma arabirimlerinizi tasarlayın. Yürütülebilir görüntüler arasında yapılandırılmış veri kopyalamak için düzenleme tekniklerini kullanın. Yerel kaynakları ve yalnızca tanıtıcıları veya istemcilere göstermek işlevler aracılığıyla işleme izin verilir.
+
+Tüm görüntüleri işleminizin CRT aynı dinamik olarak yüklenen sürümünü kullanıyorsanız bu sorunlardan bazıları önlemek mümkündür. Tüm bileşenleri aynı CRT DLL sürümünü kullandığınızdan emin olmak için bunları kullanarak yapı **/MD** seçeneği ve aynı derleyici araç takımını ve özellik ayarları kullanın.
+
+Programınız belirli CRT kaynaklar (örneğin, dosya tanıtıcısı, yerel ve ortam değişkenleri) DLL sınırlarından CRT aynı sürümünü kullanırken bile geçerse bazı dikkatli gereklidir. İlgili sorunlar hakkında daha fazla bilgi ve bunların nasıl çözüleceği için bkz: [olası hataları geçirme CRT nesnelerini DLL sınırlar boyunca](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).
+
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
