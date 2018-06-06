@@ -16,11 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d25914a6b391f54be5b4b60dbbf716436dc4d2d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2b014ccc46434fd0c3f13689e579ed4798ebcdb2
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34569816"
 ---
 # <a name="fatal-error-c1083"></a>Önemli hata C1083
 
@@ -106,6 +107,8 @@ Bir proje, önceden derlenmiş üstbilgileri kullanmak üzere yapılandırıldı
 
 - Farklı bir kullanarak derlenmiş dosyası **/ analyze** üstbilgileri derleneceği halinden derleyici seçeneği ayarı. Bir proje için üstbilgileri önceden derlenmiş, tümü aynı kullanmalıdır **/ analyze** ayarlar. Daha fazla bilgi için bkz: [/ analyze (kod çözümleme)](../../build/reference/analyze-code-analysis.md).
 
+- Dosya veya dizin Linux için Windows alt sistemi tarafından oluşturulmuş, dizin başına büyük küçük harfe duyarlılığın etkin ve belirtilen durumunun bir yol veya dosya yolu veya dosya diskte durumunun eşleşmiyor.
+
 - Dosya, dizin veya disk salt okunur durumdadır.
 
 - Visual Studio ya da komut satırı araçlarını dosya veya dizin okumak için yeterli izinlere sahip değil. Proje dosyalarını Visual Studio veya komut satırı araçlarını çalışan işlem'den farklı sahipliğine Bu, örneğin, ortaya çıkar. Bazen Geliştirici komut istemi veya Visual Studio'yu yönetici olarak çalıştırarak bu sorun çözülebilir.
@@ -127,4 +130,4 @@ IDE veya komut satırında C/C++ projeleri oluşturma hakkında bilgi ve ortam d
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSBuild Özellikleri](/visualstudio/msbuild/msbuild-properties)
+- [MSBuild Özellikleri](/visualstudio/msbuild/msbuild-properties)

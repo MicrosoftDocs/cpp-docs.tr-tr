@@ -9,11 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f280ed28a65db4aa71ee6dea36521b1b8606b190
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: 9fc79d438b61fce90faf1f8548671ec882c5099a
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34569949"
 ---
 # <a name="whats-new-for-visual-c-in-includevsdev15mdmiscincludesvsdev15mdmd"></a>Visual c++'ta için yenilikler nelerdir? [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]
 
@@ -394,12 +395,10 @@ Artık Visual Studio kullanarak Android ve iOS platformlarını hedefleyebilen m
 C++, Evrensel Windows Uygulaması iş yükü için isteğe bağlı bir bileşen olarak sağlanır.  C++ projelerinin şu anda el ile yükseltilmesi gerekiyor. Visual Studio 2017’de v140 hedefli bir UWP projesi açtığınızda, sisteminizde Visual Studio 2015 yüklü değilse proje özelliği sayfalarından v141 platformu araç kümesini seçmeniz gerekiyor.
 
 ## <a name="new-options-for-c-on-universal-windows-platform-uwp"></a>C++ için yeni seçenekler Evrensel Windows Platformu (UWP) üzerinde
+Artık yazma ve C++ Evrensel Windows platformu ve Windows mağazası uygulamalarını paketleme için yeni seçenekler vardır: Varolan masaüstü uygulaması veya COM nesnesi ile Windows dağıtımı için paketi için Masaüstü köprüsü altyapısını kullanabilir Mağaza ya da dışarıdan yükleme aracılığıyla, mevcut Kanallar üzerinden. Windows 10'daki yeni özellikler, çeşitli yollarla Masaüstü uygulamanıza UWP işlevselliği eklemenize olanak tanır. Daha fazla bilgi için bkz: [Masaüstü köprüsü](/windows/uwp/porting/desktop-to-uwp-root).
 
-Şimdi, yazma ve C++ uygulamaları Evrensel Windows platformu ve Microsoft Store için paketleme yeni seçeneğiniz de vardır. Masaüstü uygulaması dönüştürücü varolan Masaüstü uygulamanızı Microsoft Store aracılığıyla dağıtım paketi için kullanabilirsiniz. Daha fazla bilgi için bkz: [kullanarak Visual C++ çalışma zamanı Centennial projesinde](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project/) ve [Masaüstü uygulamanız için evrensel Windows Platformu (UWP) Masaüstü Köprüsü ile Getir](/windows/uwp/porting/desktop-to-uwp-root).
-
-**Visual Studio 2017 sürüm 15,5**:
-
-A **Windows Uygulama paketleme projesi** proje şablonu, Masaüstü uygulamaları, Masaüstü köprüsü kullanarak paketleme destekleyen eklenir. Altında kullanılabilir **Dosya > Yeni > Proje** altında **yüklü > Visual C++ > Evrensel Windows platformu** Evrensel Windows uygulaması iş yükü yüklü olduğunda.
+**Visual Studio 2017 sürüm 15.5**  
+A **Windows Uygulama paketleme projesi** proje şablonu, Masaüstü köprüsü kullanarak masaüstü uygulamalarında paketleme iş büyük ölçüde basitleştirir eklenir. Altında kullanılabilir **dosya | Yeni | Proje | Yüklü | Visual C++ | Evrensel Windows platformu**. Daha fazla bilgi için bkz: [Visual Studio (Masaüstü köprüsü) kullanarak bir uygulama paketini](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
 Yeni kod yazarken, artık C + kullanabilirsiniz +/ WinRT, standart bir C++ dili projeksiyonu yalnızca üstbilgi dosyalarında uygulanan Windows çalışma zamanı için. Her iki Yazar sağlar ve Windows çalışma zamanı standartlarıyla uyumlu tüm C++ derleyicisi kullanarak API'larını kullanabilir. C + +/ WinRT C++ geliştiricilerin modern Windows API için birinci sınıf erişimi sağlamak için tasarlanmıştır. Daha fazla bilgi için bkz: [C + +/ WinRT Github'da](https://moderncpp.com/).
 

@@ -1,7 +1,7 @@
 ---
-title: Derleme komutları ve özellikler için ortak makrolar | Microsoft Docs
+title: Derleme komutları ve özellikler için ortak makroları
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 05/29/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -102,62 +102,76 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b94347e48a7b8b134915456c92aea3397f97a1b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 278cb34a49650d88b9e7de9efd8456ff430aca63
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34569933"
 ---
 # <a name="common-macros-for-build-commands-and-properties"></a>Derleme komutları ve özellikler için ortak makroları
-Yükleme seçenekleri bağlı olarak, Visual Studio Makroları yüzlerce size sunabilirsiniz. Bunlar varsayılan olarak, veya .props veya .targets dosyaları veya proje ayarlarınızı ayarlanır MSBuild özellikleri karşılık gelir. Bu makroları bir projesinin yerde kullanabilir **özellik sayfaları** iletişim kutusu burada dizeleri kabul edilir. Bu makrolar büyük küçük harfe duyarlı değildir.  
-  
- Bir özellik adı sağına sütun şu anda kullanılabilir makroları görüntülemek için açılan oku tıklatın. Varsa **Düzenle** kullanılabilir tıklatın ve ardından Düzenle iletişim kutusunda **makroları**. Daha fazla bilgi için bkz: **Specifying User-Defined değerleri** bölümünü [özellik sayfaları](../ide/property-pages-visual-cpp.md).  
-  
- "Kullanım dışı" olarak işaretlenmiş makroları artık kullanılmamaktadır veya eşdeğer bir tarafından değiştirilen [öğe meta veri makrosu](/visualstudio/msbuild/itemmetadata-element-msbuild) (**%(***adı***)**). "Kullanım dışı; olarak işaretlenmiş makroları geçirilen"de kullanım dışı bırakılmıştır. Ve makrosu içeren projesini Visual Studio 2008'den geçirdiyseniz, Visual Studio eşdeğer geçerli makrosu için makro ek olarak, dönüştürür.  
-  
- Aşağıdaki tabloda kullanılabilir makroları yaygın olarak kullanılan bir kısmı açıklanmaktadır. Bu liste geniş kapsamlı değildir. MSBuild özelliği tanımları nasıl oluşturulduğunu ve .props .targets dosyaları ve .vcxproj makroları olarak kullanılan ile ilgili ayrıntılar için bkz: [MSBuild özellikleri](/visualstudio/msbuild/msbuild-properties).  
-  
-|Makrosu|Açıklama|  
-|-----------|-----------------|  
-|**$(RemoteMachine)**|Değerine ayarlanmış **uzak makine** hata ayıklama özellik sayfası özelliği. Bkz: [bir C/C++ hata ayıklama yapılandırması proje ayarları değiştirme](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration) daha fazla bilgi için.|  
-|**$(Configuration)**|Geçerli proje yapılandırması, örneğin, "Hata ayıklama" adı.|  
-|**$(Platform)**|Örneğin, "Win32" bir geçerli proje platform adı.|  
-|**$(ParentName)**|(Kullanım dışı). Bu proje öğesi içeren öğenin adı. Bu üst klasör adı ya da proje adı olacaktır.|  
-|**$(RootNameSpace)**|Ad alanı, varsa, uygulamayı içeren.|  
-|**$(Intdir)**|Ara dosyaları için belirtilen dizin yolu. Bu göreli bir yol ise, Ara dosyaları proje dizinine eklenmiş bu yoluna gidin. Bu yolu bir eğik çizgiyle içermelidir. Bu değeri çözümler **Ara dizin** özelliği. Kullanmayın **$(OutDir)** bu özellik tanımlamak için.|  
-|**$(OutDir)**|Çıkış dosyası dizin yolu. Bu göreli bir yol ise, çıktı dosyalarını proje dizinine eklenmiş bu yoluna gidin. Bu yolu bir eğik çizgiyle içermelidir. Bu değeri çözümler **çıktı dizini** özelliği. Kullanmayın **$(ıntdir)** bu özellik tanımlamak için.|  
-|**$(DevEnvDir)**|Yükleme dizini, Visual Studio'nun (sürücü + yolu tanımlanan); eğik içeren '\\'.|  
-|**$(Inputdir)**|(Kullanım dışı; geçirilen.) (Sürücü + yolu tanımlanan); giriş dosyası dizini eğik içeren '\\'. Giriş projedir sonra bu makrosu eşdeğerdir **$(ProjectDir)**.|  
-|**$(Inputpath)**|(Kullanım dışı; geçirilen.) Giriş dosyası (sürücü + yolu + temel ad + dosya uzantısı tanımlı) mutlak bir yol adı. Giriş projedir sonra bu makrosu eşdeğerdir **$(ProjectPath)**.|  
-|**$(Inputname)**|(Kullanım dışı; geçirilen.) Giriş dosyası temel adı. Giriş projedir sonra bu makrosu eşdeğerdir **$(ProjectName)**.|  
-|**$(Inputfilename)**|(Kullanım dışı; geçirilen.) (Temel adı + dosya uzantısı olarak tanımlanan) giriş dosyasının dosya adı. Giriş projedir sonra bu makrosu eşdeğerdir **$(ProjectFileName)**.|  
-|**$(Inputext)**|(Kullanım dışı; geçirilen.) Giriş dosyasının dosya uzantısı. İçerdiği '.' önce dosya uzantısı. Giriş projedir sonra bu makrosu eşdeğerdir **$(ProjectExt)**.|  
-|**$(ProjectDir)**|(Sürücü + yolu tanımlanan); projenin dizini eğik içeren '\\'.|  
-|**$(ProjectPath)**|(Sürücü + yolu + temel ad + dosya uzantısı tanımlanan) projenin mutlak bir yol adı.|  
-|**$(ProjectName)**|Projenin temel adı.|  
-|**$(ProjectFileName)**|(Temel adı + dosya uzantısı olarak tanımlanan) proje dosya adı.|  
-|**$(ProjectExt)**|Projenin dosya uzantısı. İçerdiği '.' önce dosya uzantısı.|  
-|**$(SolutionDir)**|(Sürücü + yolu tanımlanan); çözüm dizini eğik içeren '\\'. Yalnızca IDE'de bir çözüm oluşturulurken tanımlanır.|  
-|**$(SolutionPath)**|(Sürücü + yolu + temel ad + dosya uzantısı tanımlanan) çözümü mutlak bir yol adı. Yalnızca IDE'de bir çözüm oluşturulurken tanımlanır.|  
-|**$(SolutionName)**|Çözümün temel adı. Yalnızca IDE'de bir çözüm oluşturulurken tanımlanır.|  
-|**$(SolutionFileName)**|(Temel adı + dosya uzantısı olarak tanımlanan) çözüm dosya adı. Yalnızca IDE'de bir çözüm oluşturulurken tanımlanır.|  
-|**$(SolutionExt)**|Çözüm dosya uzantısı. İçerdiği '.' önce dosya uzantısı. Yalnızca IDE'de bir çözüm oluşturulurken tanımlanır.|  
-|**$(TargetDir)**|(Sürücü + yolu tanımlanan); derleme için birincil çıkış dosyasının dizin eğik içeren '\\'.|  
-|**$(TargetPath)**|(Sürücü + yolu + temel ad + dosya uzantısı tanımlanan) derleme için birincil çıkış dosyasının mutlak bir yol adı.|  
-|**$(TargetName)**|Derleme için birincil çıkış dosyasının temel adı.|  
-|**$(TargetFileName)**|(Temel adı + dosya uzantısı olarak tanımlanan) derleme için birincil çıkış dosyasının dosya adı.|  
-|**$(TargetExt)**|Derleme için birincil çıkış dosyasının dosya uzantısı. İçerdiği '.' önce dosya uzantısı.|  
-|**$(Vsınstalldir)**|Visual Studio yüklü dizin.<br /><br /> Bu özellik hedeflenen Visual Studio'nun sürümü, hangi farklı olabilir, içerir, Visual Studio ana bilgisayar. Örneğin, ile oluştururken `$(PlatformToolset) = v110`, **$(vsınstalldir)** Visual Studio 2012 yükleme yolunu içerir.|  
-|**$(Vcınstalldir)**|Visual C++ yüklü dizin.<br /><br /> Bu özellik hedeflenen Visual C++ sürümlerinden biri, farklı olabilir, içerir, Visual Studio ana bilgisayar. Örneğin, ile oluştururken `$(PlatformToolset) = v140`, **$(vcınstalldir)** Visual C++ 2015 yükleme yolunu içerir.|  
-|**$(FrameworkDir)**|.NET Framework yüklendiği dizin.|  
-|**$(FrameworkVersion)**|Visual Studio tarafından kullanılan .NET Framework sürümü. Birlikte **$(FrameworkDir)**, Visual Studio .NET Framework kullanarak sürümü tam yolu.|  
-|**$(FrameworkSDKDir)**|.NET Framework yüklü dizin. .NET Framework Visual Studio veya ayrı ayrı bir parçası yüklenmiş.|  
-|**$(WebDeployPath)**|Burada proje çıkarır göreli yolu web dağıtımı kök ait. Aynı değeri döndürür <xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath%2A>.|  
-|**$(WebDeployRoot)**|Konumu mutlak yolu  **\<localhost >**. Örneğin, c:\inetpub\wwwroot.|  
-|**$(SafeParentName)**|(Kullanım dışı). Geçerli ad biçimi hemen üst adı. Örneğin, bir üst .resx dosyası biçimidir.|  
-|**$(SafeInputName)**|(Kullanım dışı). Geçerli bir sınıf adı, dosya uzantısı eksi olarak dosyasının adı.|  
-|**$(SafeRootNamespace)**|(Kullanım dışı). Ad alanı adı proje sihirbazları kod ekleyeceksiniz. Bu ad alanı adı yalnızca geçerli bir C++ tanımlayıcı izin karakter içerir.|  
-|**$(FxCopDir)**|Fxcop.cmd dosyasının yolu. Fxcop.cmd dosya ile tüm Visual C++ sürümleri yüklü değil.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da C++ Projeleri Derleme](../ide/building-cpp-projects-in-visual-studio.md)
+
+Yükleme seçenekleri bağlı olarak, Visual Studio Makroları yüzlerce size sunabilirsiniz. Bunlar varsayılan olarak, veya .props veya .targets dosyaları veya proje ayarlarınızı ayarlanır MSBuild özellikleri karşılık gelir. Bu makroları bir projesinin yerde kullanabilir **özellik sayfaları** iletişim kutusu burada dizeleri kabul edilir. Bu makrolar büyük küçük harfe duyarlı değildir.
+
+## <a name="view-the-current-properties-and-macros"></a>Makrolar ve geçerli özelliklerini görüntüleyin
+
+Şu anda kullanılabilir makroları hiçbir özellik sayfasını görüntülemek için **özellik sayfaları** iletişim kutusunda, bir özellik satırın sonunda aşağı açılan okunu seçin. Varsa **Düzenle** kullanılabilir, onu seçin ve ardından Düzenle iletişim kutusunda **makroları** düğmesi. Özellikleri ve makrolar Visual Studio'ya görünür geçerli kümesini her biri için geçerli değeri ile birlikte listelenir. Daha fazla bilgi için bkz: **Specifying User-Defined değerleri** bölümünü [özellik sayfaları](../ide/property-pages-visual-cpp.md).
+
+## <a name="list-of-common-macros"></a>Ortak makroları listesi
+
+Bu tabloda kullanılabilir makroları yaygın olarak kullanılan bir kısmı açıklanmıştır. Bu liste geniş kapsamlı gölgeden uzak olan. MSBuild özelliği tanımları nasıl oluşturulduğunu ve .props .targets dosyaları ve .vcxproj makroları olarak kullanılan ile ilgili ayrıntılar için bkz: [MSBuild özellikleri](/visualstudio/msbuild/msbuild-properties).
+
+|Makrosu|Açıklama|
+|-----------|-----------------|
+|**$(Configuration)**|Geçerli proje yapılandırması, örneğin, "Hata ayıklama" adı.|
+|**$(DevEnvDir)**|Yükleme dizini, Visual Studio'nun (sürücü + yolu tanımlanan); eğik içeren '\\'.|
+|**$(FrameworkDir)**|.NET Framework yüklendiği dizin.|
+|**$(FrameworkSDKDir)**|.NET Framework yüklü dizin. .NET Framework Visual Studio veya ayrı ayrı bir parçası yüklenmiş.|
+|**$(FrameworkVersion)**|Visual Studio tarafından kullanılan .NET Framework sürümü. Birlikte **$(FrameworkDir)**, Visual Studio .NET Framework kullanarak sürümü tam yolu.|
+|**$(FxCopDir)**|Fxcop.cmd dosyasının yolu. Fxcop.cmd dosya ile tüm Visual C++ sürümleri yüklü değil.|
+|**$(Intdir)**|Ara dosyaları için belirtilen dizin yolu. Bu göreli bir yol ise, Ara dosyaları proje dizinine eklenmiş bu yoluna gidin. Bu yolu bir eğik çizgiyle içermelidir. Bu değeri çözümler **Ara dizin** özelliği. Kullanmayın **$(OutDir)** bu özellik tanımlamak için.|
+|**$(OutDir)**|Çıkış dosyası dizin yolu. Bu göreli bir yol ise, çıktı dosyalarını proje dizinine eklenmiş bu yoluna gidin. Bu yolu bir eğik çizgiyle içermelidir. Bu değeri çözümler **çıktı dizini** özelliği. Kullanmayın **$(ıntdir)** bu özellik tanımlamak için.|
+|**$(Platform)**|Örneğin, "Win32" bir geçerli proje platform adı.|
+|**$(ProjectDir)**|(Sürücü + yolu tanımlanan); projenin dizini eğik içeren '\\'.|
+|**$(ProjectExt)**|Projenin dosya uzantısı. İçerdiği '.' önce dosya uzantısı.|
+|**$(ProjectFileName)**|(Temel adı + dosya uzantısı olarak tanımlanan) proje dosya adı.|
+|**$(ProjectName)**|Projenin temel adı.|
+|**$(ProjectPath)**|(Sürücü + yolu + temel ad + dosya uzantısı tanımlanan) projenin mutlak bir yol adı.|
+|**$(RemoteMachine)**|Değerine ayarlanmış **uzak makine** hata ayıklama özellik sayfası özelliği. Bkz: [bir C/C++ hata ayıklama yapılandırması proje ayarları değiştirme](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration) daha fazla bilgi için.|
+|**$(RootNameSpace)**|Ad alanı, varsa, uygulamayı içeren.|
+|**$(SolutionDir)**|(Sürücü + yolu tanımlanan); çözüm dizini eğik içeren '\\'. Yalnızca IDE'de bir çözüm oluşturulurken tanımlanır.|
+|**$(SolutionExt)**|Çözüm dosya uzantısı. İçerdiği '.' önce dosya uzantısı. Yalnızca IDE'de bir çözüm oluşturulurken tanımlanır.|
+|**$(SolutionFileName)**|(Temel adı + dosya uzantısı olarak tanımlanan) çözüm dosya adı. Yalnızca IDE'de bir çözüm oluşturulurken tanımlanır.|
+|**$(SolutionName)**|Çözümün temel adı. Yalnızca IDE'de bir çözüm oluşturulurken tanımlanır.|
+|**$(SolutionPath)**|(Sürücü + yolu + temel ad + dosya uzantısı tanımlanan) çözümü mutlak bir yol adı. Yalnızca IDE'de bir çözüm oluşturulurken tanımlanır.|
+|**$(TargetDir)**|(Sürücü + yolu tanımlanan); derleme için birincil çıkış dosyasının dizin eğik içeren '\\'.|
+|**$(TargetExt)**|Derleme için birincil çıkış dosyasının dosya uzantısı. İçerdiği '.' önce dosya uzantısı.|
+|**$(TargetFileName)**|(Temel adı + dosya uzantısı olarak tanımlanan) derleme için birincil çıkış dosyasının dosya adı.|
+|**$(TargetName)**|Derleme için birincil çıkış dosyasının temel adı.|
+|**$(TargetPath)**|(Sürücü + yolu + temel ad + dosya uzantısı tanımlanan) derleme için birincil çıkış dosyasının mutlak bir yol adı.|
+|**$(Vcınstalldir)**|Visual Studio yüklemenizin C++ içeriğin bulunduğu dizin. Bu özellik, farklı olabilir hedeflenen Visual C++ araç takımını sürümünü içerir, Visual Studio ana bilgisayar. Örneğin, ile oluştururken `$(PlatformToolset) = v140`, **$(vcınstalldir)** Visual C++ 2015 yükleme yolunu içerir.|
+|**$(Vsınstalldir)**|Visual Studio yüklü dizin. Bu özellik, farklı olabilir hedeflenen Visual Studio araç takımı sürümünü içerir, Visual Studio ana bilgisayar. Örneğin, ile oluştururken `$(PlatformToolset) = v110`, **$(vsınstalldir)** Visual Studio 2012 yükleme yolunu içerir.|
+|**$(WebDeployPath)**|Burada proje çıkarır göreli yolu web dağıtımı kök ait. Aynı değeri döndürür <xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath%2A>.|
+|**$(WebDeployRoot)**|Konumu mutlak yolu  **\<localhost >**. Örneğin, c:\inetpub\wwwroot.|
+
+## <a name="obsolete-macros"></a>Artık kullanılmayan makroları
+
+Derleme Sistemi C++ için Visual Studio 2010 ve Visual Studio 2008 arasında önemli ölçüde değiştirildi. Önceki proje türlerinde kullanılan birçok makroları yenilerini için değiştirilmiştir. Bu makrolar artık kullanılmayan veya bir veya daha fazla eşdeğer özellikleri tarafından değiştirilmiş veya [öğe meta veri makrosu](/visualstudio/msbuild/itemmetadata-element-msbuild) (**%(**_adı_**)**) değerler. "Geçirilen" olarak işaretlenmiş makroları proje geçiş aracı tarafından güncelleştirilebilir. Makro içeren projesini Visual Studio 2008 veya daha önceki Visual Studio 2010 geçirilirse, Visual Studio makrosu eşdeğer geçerli makrosu dönüştürür. Visual Studio sonraki sürümlerini projeleri, Visual Studio 2008 ve daha önce yeni proje türüne dönüştürülemiyor. Bu iki adımı projelerde dönüştürmeniz gerekir; bunları Visual Studio 2010 dönüştürmeniz ve ardından sonucu, Visual Studio'nun daha yeni sürüme dönüştürebilirsiniz. Daha fazla bilgi için bkz: [olası yükseltme sorunlarını genel bakış](../porting/overview-of-potential-upgrade-issues-visual-cpp.md).
+
+|Makrosu|Açıklama|
+|-----------|-----------------|
+|**$(Inputdir)**|(Geçirildi.) (Sürücü + yolu tanımlanan); giriş dosyası dizini eğik içeren '\\'. Giriş projedir sonra bu makrosu eşdeğerdir **$(ProjectDir)**.|
+|**$(Inputext)**|(Geçirildi.) Giriş dosyasının dosya uzantısı. İçerdiği '.' önce dosya uzantısı. Giriş projedir sonra bu makrosu eşdeğerdir **$(ProjectExt)**. Kaynak dosyaları için budur **%(Extension)**.|
+|**$(Inputfilename)**|(Geçirildi.) (Temel adı + dosya uzantısı olarak tanımlanan) giriş dosyasının dosya adı. Giriş projedir sonra bu makrosu eşdeğerdir **$(ProjectFileName)**. Kaynak dosyaları için budur **%(Identity)**.|
+|**$(Inputname)**|(Geçirildi.) Giriş dosyası temel adı. Giriş projedir sonra bu makrosu eşdeğerdir **$(ProjectName)**. Kaynak dosyaları için budur **%(Filename)**.|
+|**$(Inputpath)**|(Geçirildi.) Giriş dosyası (sürücü + yolu + temel ad + dosya uzantısı tanımlı) mutlak bir yol adı. Giriş projedir sonra bu makrosu eşdeğerdir **$(ProjectPath)**. Kaynak dosyaları için budur **%(FullPath)**.|
+|**$(ParentName)**|Bu proje öğesi içeren öğenin adı. Bu üst klasör adı ya da proje adı olacaktır.|
+|**$(SafeInputName)**|Geçerli bir sınıf adı, dosya uzantısı eksi olarak dosyasının adı. Bu özellik, tam bir eşdeğeri yok.|
+|**$(SafeParentName)**|Geçerli ad biçimi hemen üst adı. Örneğin, bir üst .resx dosyası biçimidir. Bu özellik, tam bir eşdeğeri yok.|
+|**$(SafeRootNamespace)**|Ad alanı adı proje sihirbazları kod ekleyeceksiniz. Bu ad alanı adı yalnızca geçerli bir C++ tanımlayıcı izin karakter içerir. Bu özellik, tam bir eşdeğeri yok.|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Visual Studio'da C++ Projeleri Derleme](../ide/building-cpp-projects-in-visual-studio.md)
+- [Visual C++ taşıma ve yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)
+- [Olası yükseltme sorunlarını genel bakış](../porting/overview-of-potential-upgrade-issues-visual-cpp.md)

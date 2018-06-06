@@ -1,7 +1,7 @@
 ---
 title: steady_clock yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 05/22/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -14,15 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1dbfac1eb8c67c5306bded6e6fd9ee8dacf54b0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5445379597c4fefcd657303a05c33b6509d54d2e
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34569904"
 ---
 # <a name="steadyclock-struct"></a>steady_clock yapısı
 
-Temsil eden bir `steady` saat.
+Temsil eden bir *sürekli* saat.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,25 +33,32 @@ struct steady_clock;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Windows üzerinde steady_clock QueryPerformanceCounter işlevi sarmalar.
+Windows, `steady_clock` sarmalar `QueryPerformanceCounter` işlevi.
 
-Bir saattir *monoton* durumunda ilk çağrı tarafından döndürülen değer `now()` her zaman bir sonraki çağrı tarafından döndürülen değer küçük veya buna eşit olan `now()`.
+Bir saattir *monoton* durumunda ilk çağrı tarafından döndürülen değer `now` her zaman bir sonraki çağrı tarafından döndürülen değer küçük veya buna eşit olan `now`. Bir saattir *sürekli* , *monoton* ve saat saat dilimleri arasında sabit ise.
 
-Bir saattir *sürekli* , *monoton* ve saat saat dilimleri arasında sabit ise.
+`high_resolution_clock` typedef için olan `steady_clock`.
 
-High_resolution_clock typdef steady_clock için ' dir.
+### <a name="public-typedefs"></a>Genel tür tanımları
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`steady_clock::duration`|Eşanlamlısı `nanoseconds`, içinde tanımlı \<chrono >.|
+|`steady_clock::period`|Eşanlamlısı `nano`, içinde tanımlı \<oranı >.|
+|`steady_clock::rep`|Eşanlamlısı **uzun** **uzun**, kaç saat tık kapsanan örneği oluşturulmasını içinde temsil etmek için kullanılan türü `duration`.|
+|`steady_clock::time_point`|Eşanlamlısı `chrono::time_point<steady_clock>`.|
 
 ## <a name="public-functions"></a>Genel işlevler
 
 |İşlev|Açıklama|
 |--------------|-----------------|
-|Şimdi|Time_point değeri olarak geçerli saati döndürür.|
+|`now`|Geçerli saat olarak döndürür bir `time_point` değeri.|
 
 ## <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`system_clock::is_steady`|Tutan `true`. A `steady_clock` olan *sürekli*.|
+|`steady_clock::is_steady`|Tutan `true`. A `steady_clock` olan *sürekli*.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -60,6 +68,6 @@ High_resolution_clock typdef steady_clock için ' dir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono >](../standard-library/chrono.md)<br/>
-[system_clock Yapısı](../standard-library/system-clock-structure.md)<br/>
+- [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)
+- [\<chrono >](../standard-library/chrono.md)
+- [system_clock Yapısı](../standard-library/system-clock-structure.md)

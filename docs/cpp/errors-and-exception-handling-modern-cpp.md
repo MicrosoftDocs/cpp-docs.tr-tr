@@ -12,11 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5eab4199415974c995aa9b71ad53db41b7695827
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 94a9e75770e822c89ea65a745a2fca491f175d95
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34569868"
 ---
 # <a name="errors-and-exception-handling-modern-c"></a>Hatalar ve Özel Durum İşleme (Modern C++)
 Çoğu senaryoda, modern c++ rapor ve mantık hataları ve çalışma zamanı hataları işlemek için tercih edilen yöntem özel durumlar kullanmaktır. Yığın hatası algılarsa işlevi ve onu nasıl ele alınacağını bilmeniz bağlamı olan işlevi arasında birden fazla işlev çağrılarını içerebilir durumlarda özellikle geçerlidir. Özel durum çağrı yığını bilgileri geçirmek için hatalarını algılar kodu için resmi ve iyi tanımlanmış bir yol sağlar.  
@@ -46,7 +47,7 @@ class MyClass
 public:  
    void MyFunc(char c)  
    {  
-      if(c < numeric_limits<char>::max())  
+      if(c > numeric_limits<char>::max())  
          throw invalid_argument("MyFunc argument too large.");  
       //...  
    }  

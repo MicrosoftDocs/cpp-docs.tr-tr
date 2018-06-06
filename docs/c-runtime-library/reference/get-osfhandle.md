@@ -1,7 +1,7 @@
 ---
 title: _get_osfhandle | Microsoft Docs
 ms.custom: ''
-ms.date: 12/12/2017
+ms.date: 05/29/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -35,11 +35,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b58bbeb7c0b52950509dc8005551ad706577fcf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 15bddcf3d94935f56fa2e23b6ebd0398ed379c54
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34569855"
 ---
 # <a name="getosfhandle"></a>_get_osfhandle
 
@@ -60,7 +61,7 @@ Varolan bir dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir işletim sistemi dosya işleci döndürür *fd* geçerlidir. Aksi takdirde, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev, yürütme devam etmek için izin verilip verilmediğini, döndürür **INVALID_HANDLE_VALUE** (-1) ve ayarlar **errno** için **EBADF**, geçersiz bir dosya tanıtıcısı belirten.
+Bir işletim sistemi dosya işleci döndürür *fd* geçerlidir. Aksi takdirde, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev, yürütme devam etmek için izin verilip verilmediğini, döndürür **INVALID_HANDLE_VALUE** (-1) ve ayarlar **errno** için **EBADF**, geçersiz bir dosya tanıtıcısı belirten. Derleyici uyarısı sonucu bir Win32 dosya işleci beklediğiniz çalışmalarında kullanıldığında önlemek için hangisine bir **İŞLEMEK** türü.
 
 ## <a name="remarks"></a>Açıklamalar
 

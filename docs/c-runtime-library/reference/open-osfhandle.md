@@ -1,7 +1,7 @@
 ---
 title: _open_osfhandle | Microsoft Docs
 ms.custom: ''
-ms.date: 12/12/2017
+ms.date: 05/29/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -34,11 +34,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: beb8c074beeb47274fbae21ea293d0ea55f28d36
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: af3783420389dc008e39c818c39406f0b2af8af5
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34569842"
 ---
 # <a name="openosfhandle"></a>_open_osfhandle
 
@@ -67,19 +68,18 @@ Başarılı olursa, **_open_osfhandle** C çalışma zamanı dosya tanımlayıc�
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Open_osfhandle** işlevi C çalışma zamanı dosya tanımlayıcısı ayırır ve tarafından belirtilen işletim sistemi dosya işleci ile ilişkilendirir *osfhandle*. *Bayrakları* bağımsız değişkeni olan bir veya daha fazla Fcntl.h içinde tanımlanan bildirim sabitleri biçimlendirilmiş bir tamsayı ifade. İki veya daha fazla bildirim sabitleri forma kullanılan zaman *bayrakları* bağımsız değişkeni, sabitleri bit düzeyinde OR işleci ile birleştirilir ( **&#124;** ).
+**_Open_osfhandle** işlevi C çalışma zamanı dosya tanımlayıcısı ayırır ve tarafından belirtilen işletim sistemi dosya işleci ile ilişkilendirir *osfhandle*. Derleyici Uyarısı önlemek için cast *osfhandle* bağımsız değişkenden **İŞLEMEK** için **intptr_t**. *Bayrakları* değişkeni birinden biçimlendirilmiş bir tamsayı ifade veya daha fazla bildirim sabitleri tanımlanan \<fcntl.h >. İki veya daha fazla bildirim sabitleri forma kullanılan zaman *bayrakları* bağımsız değişkeni, sabitleri bit düzeyinde OR işleci ile birleştirilir ( **&#124;** ).
 
-Fcntl.h aşağıdaki bildirim sabitleri tanımlar:
+Bu bildirim sabitleri tanımlanan \<fcntl.h >:
 
-**\_O\_APPEND** dosya işaretçisini her yazma işleminden önce dosyanın sonuna yerleştirir.
+|||
+|-|-|
+**\_O\_EKLEME**|Dosya işaretçisini her yazma işleminden önce dosyanın sonuna yerleştirir.
+**\_O\_RDONLY**|Yalnızca okuma dosyasını açar.
+**\_O\_METİN**|Dosya (çevrilmiş) metin modunda açılır.
+**\_O\_WTEXT**|Dosya Unicode (çevrilmiş UTF-16) modunda açılır.
 
-**\_O\_RDONLY** yalnızca okumak için dosyayı açar.
-
-**\_O\_metin** dosya (çevrilmiş) metin modunda açılır.
-
-**\_O\_WTEXT** dosya Unicode (çevrilmiş UTF-16) modunda açılır.
-
-İle açılmış bir dosyada kapatmak için **_open_osfhandle**, çağrı [ \_kapatmak](close.md). Temel işletim sistemi dosya işleci ayrıca bir çağrı tarafından kapatılan **_close**, Win32 işlevi çağırmak gerekli değildir **CloseHandle** özgün tutamacı. Dosya tanımlayıcısı aitse bir **dosya &#42;**  stream, ardından çağırma [fclose](fclose-fcloseall.md) üzerindeki **dosya &#42;**  akış de her iki dosya tanımlayıcısı kapatır ve temel alınan işleci. Bu durumda, çağırmayın **_close** üzerinde dosya tanımlayıcısı.
+**_Open_osfhandle** çağrısı dosya tanımlayıcısı için Win32 dosya işleci sahipliğini aktarır. İle açılmış bir dosyada kapatmak için **_open_osfhandle**, çağrı [ \_kapatmak](close.md). Temel işletim sistemi dosya işleci ayrıca bir çağrı tarafından kapatılan **_close**, Win32 işlevi çağırmak gerekli değildir **CloseHandle** özgün tutamacı. Dosya tanımlayıcısı aitse bir **dosya &#42;**  stream, ardından çağırma [fclose](fclose-fcloseall.md) üzerindeki **dosya &#42;**  akış de her iki dosya tanımlayıcısı kapatır ve temel alınan işleci. Bu durumda, çağırmayın **_close** üzerinde dosya tanımlayıcısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
