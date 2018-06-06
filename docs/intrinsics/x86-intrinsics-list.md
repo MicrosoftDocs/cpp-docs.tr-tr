@@ -1,7 +1,7 @@
 ---
 title: x86 iç bilgi listesi | Microsoft Docs
 ms.custom: ''
-ms.date: 1/02/2018
+ms.date: 06/01/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -14,11 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 458cd924e071c92ea4f02ee486b43300c3675b95
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ad931eb1c62c4ee9ed8213704cc4be8d1f2aeecd
+ms.sourcegitcommit: d1f576a0f59678edc3d93508cf46485138332178
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34753675"
 ---
 # <a name="x86-intrinsics-list"></a>x86 İç Bilgi Listesi
 
@@ -30,13 +31,13 @@ Tek tek yapı içleri hakkında daha fazla bilgi için, hedeflediğiniz işlemci
 
 - [Intel iç bilgileri Kılavuzu](https://software.intel.com/sites/landingpage/IntrinsicsGuide/). Belirli iç bilgileri bulmak için arama kutusunu kullanın.
 
-- [Intel 64 ve IA-32 mimarileri yazılım geliştirici kılavuzları](https://software.intel.com/articles/intel-sdm)
+- [Intel 64 ve IA-32 mimarileri yazılım geliştirici kılavuzları](https://go.microsoft.com/fwlink/p/?LinkID=510021)
 
-- [Intel mimarisi yönerge kümesi uzantıları programlama başvurusu](https://software.intel.com/en-us/isa-extensions)
+- [Intel mimarisi yönerge kümesi uzantıları programlama başvurusu](https://go.microsoft.com/fwlink/p/?linkid=874960)
 
-- [Intel AVX](https://www.intel.com/content/www/us/en/architecture-and-technology/avx-512-overview.html)
+- [Vektör uzantıları Gelişmiş Intel giriş](https://go.microsoft.com/fwlink/p/?linkid=874961)
 
-- [AMD Geliştirici kılavuzlar, kılavuzları ve ISA belgeleri](https://developer.amd.com/resources/developer-guides-manuals/)
+- [AMD Geliştirici kılavuzlar, kılavuzları ve ISA belgeleri](https://go.microsoft.com/fwlink/p/?linkid=874958)
 
 Aşağıdaki tabloda x86 üzerinde kullanılabilir iç bilgileri listeler işlemci. Teknoloji sütun gerekli yönerge kümesi desteği listelenmektedir. Kullanım [__cpuid](../intrinsics/cpuid-cpuidex.md) iç yönerge kümesi desteği çalışma zamanında belirlemek için. İki Giriş bir satır varsa, bunlar farklı giriş noktaları için aynı iç temsil eder. [1] iç yalnızca AMD işlemcileri üzerinde kullanılabilir olduğunu gösterir. [2], iç yalnızca Intel işlemcilerde kullanılabilir olduğunu gösterir. [3] prototip makro gösterir. İşlev prototipi gerekli üstbilgi Üstbilgi sütununda listelenir. İntrin.h üstbilgisi immintrin.h ve basitleştirmek için ammintrin.h içerir.
 

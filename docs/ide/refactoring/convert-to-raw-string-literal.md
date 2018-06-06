@@ -14,7 +14,7 @@ ms.openlocfilehash: b98825719e7b3c0d8eb760a2ec50644b5eddd54e
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33328415"
 ---
 # <a name="convert-to-raw-string-literal"></a>Sabit değer ham dizesi Dönüştür

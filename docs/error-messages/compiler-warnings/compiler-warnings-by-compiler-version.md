@@ -1,7 +1,7 @@
 ---
 title: Derleyici Uyarısı derleyici sürümüne göre | Microsoft Docs
 ms.custom: ''
-ms.date: 01/31/2018
+ms.date: 05/30/2018
 ms.technology:
 - devlang-cpp
 ms.topic: error-reference
@@ -14,15 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 789121e3adb42cb74087339bb33bb82cb7604a10
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e40de8aa08ae12bb0389a113be4d6cbd51196f12
+ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34704743"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları
 
-Derleyici kullanarak belirttiğiniz bir sürüm sonra sunulan uyarıları gizleyebilirsiniz [/Wv](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği. Bu, yeni bir araç takımının sürüm tanıtır ve geçici olarak yeni uyarıları bastırma istediğinizde yapı işleminizin yönetmek için kullanışlıdır. Bu seçenek, yeni hata iletileri bastırmak değil. Tüm yeni uyarıları bastırma önermiyoruz kalıcı olarak! En yüksek normal uyarı düzeyinde, her zaman derleme öneririz __/W4__, kaldırıp __/Wv__ yapınızın mümkün olan en kısa sürede seçeneği. 
+Derleyici kullanarak belirttiğiniz bir sürüm sonra sunulan uyarıları gizleyebilirsiniz [/Wv](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği. Bu, yeni bir araç takımının sürüm tanıtır ve geçici olarak yeni uyarıları bastırma istediğinizde yapı işleminizin yönetmek için kullanışlıdır. Bu seçenek, yeni hata iletileri bastırmak değil. Tüm yeni uyarıları bastırma önermiyoruz kalıcı olarak! En yüksek normal uyarı düzeyinde, her zaman derleme öneririz __/W4__, kaldırıp __/Wv__ yapınızın mümkün olan en kısa sürede seçeneği.
 
 Yeni uyarılar derleyici bu sürümlerinde sunulur:
 
@@ -39,26 +40,36 @@ Yeni uyarılar derleyici bu sürümlerinde sunulur:
 | Visual C++ 2015 güncelleştirme 1 | 19.00.23506.0 |
 | Visual C++ 2015 güncelleştirme 2 | 19.00.23918.0 |
 | Visual C++ 2015 güncelleştirme 3 | 19.00.24215.1 |
-| Visual C++ 2017 RTM | 19.10.24903.0 |
-| Visual C++ 2017 sürüm 15.1 | 19.10.25017.0 |
+| Visual C++ 2017 RTM | 19.10.25017.0 |
 | Visual C++ 2017 sürüm 15.3 | 19.11.25506.0 |
-| Visual C++ 2017 sürüm 15,5 | 19.12.25827.0 |
+| Visual C++ 2017 sürüm 15,5 | 19.12.25830.0 |
+| Visual C++ 2017 sürüm 15,6 | 19.13.26128.0 |
+| Visual C++ 2017 sürüm 15.7 | 19.14.26428.0 |
 
 Yalnızca birincil numarasını, birincil ve ikincil sayılar veya ana, ikincil, belirtin ve yapı numaralarını için __/Wv__ seçeneği. Derleyici belirtilen rakamla başlayamaz sürümleri eşleşen tüm uyarıları raporlar ve belirtilen sayıdan büyük sürümleri için tüm uyarıları bastırır. Örneğin, __/Wv:17__ içinde ya da Visual Studio 2012'in herhangi bir sürümü önce sunulan tüm uyarıları raporlar ve Visual Studio 2013 (sürüm 18) veya daha sonra tüm derleyici tarafından sunulan tüm uyarıları bastırır. Gizlemek için Visual Studio 2015'te tanıtılan uyarıları güncelleştirme 2 ve daha sonra kullanabileceğiniz __/Wv:19.00.23506__. Kullanım __/Wv:19.11__ tüm uyarıları herhangi bir Visual Studio 2017 sürüm 15,5 önce Visual Studio sürümünde sunulan ancak Visual Studio 2017 15,5 ve sonraki sürümleri sunulan uyarıları bastırır bildirilecek.
 
 Aşağıdaki bölümlerde her kullanarak gizleyebilirsiniz Visual C++ sürümü tarafından sunulan Uyarılar listesinde __/Wv__ derleyici seçeneği. __/Wv__ seçeneği derleyici belirtilen sürümleri geçerler listelenmeyen, uyarıları bastırma olamaz.
 
-## <a name="warnings-introduced-in-visual-c-2017-version-155-compiler-version-1912258270"></a>Visual C++ 2017 sürüm 15,5 (derleyici sürüm 19.12.25827.0) sunulan uyarıları
+## <a name="warnings-introduced-in-visual-c-2017-version-157-compiler-version-1914264280"></a>Visual C++ 2017 sürüm 15.7 (derleyici sürüm 19.14.26428.0) sunulan uyarıları
 
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.11__.
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.13__.
+
+|||
+|-|-|
+C4642|'*sorunu*': Genel parametresini kısıtlamalarını içe aktarılamıyor '*parametresi*'
+C5045|Bellek Yükü /Qspectre geçiş yaparsanız belirtilen için derleyici Spectre azaltma ekler
+
+## <a name="warnings-introduced-in-visual-c-2017-version-156-compiler-version-1913261280"></a>Visual C++ 2017 sürüm 15,6 (derleyici sürüm 19.13.26128.0) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.12__.
 
 |||
 |-|-|
 C5044|Komut satırı seçeneğiyle bir bağımsız değişken *seçeneği* bir yola işaret eden '*yolu*' varolmayan
 
-## <a name="warnings-introduced-in-visual-c-2017-version-153-compiler-version-1911255060"></a>Visual C++ 2017 sürüm 15.3 (derleyici sürüm 19.11.25506.0) sunulan uyarıları
+## <a name="warnings-introduced-in-visual-c-2017-version-155-compiler-version-1912258300"></a>Visual C++ 2017 sürüm 15,5 (derleyici sürüm 19.12.25830.0) sunulan uyarıları
 
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.10__.
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.11__.
 
 |||
 |-|-|
@@ -70,9 +81,9 @@ C5041|'*tanımı*': satır dışı tanım constexpr statik veri üyesi için ger
 C5042|'*bildirimi*': blok kapsamında işlev bildirimleri standart C++'da belirtilen 'satır içi' olamaz; 'inline' tanımlayıcısı kaldırın
 C5043|'*belirtimi*': özel durum belirtimi önceki bildirimi eşleşmiyor
 
-## <a name="warnings-introduced-in-visual-c-2017-version-151-compiler-version-1910250170"></a>Visual C++ 2017 sürüm 15.1 (derleyici sürüm 19.10.25017.0) sunulan uyarıları
+## <a name="warnings-introduced-in-visual-c-2017-version-153-compiler-version-1911255060"></a>Visual C++ 2017 sürüm 15.3 (derleyici sürüm 19.11.25506.0) sunulan uyarıları
 
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.10.24903__.
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.10__.
 
 |||
 |-|-|
@@ -91,7 +102,7 @@ C5036|VarArgs işlev işaretçisi dönüştürme /hybrid:x86arm64 ile derleme ya
 C5037|'*üye işlevi*': sınıf şablonu üyesi satır dışı tanımını varsayılan bağımsız değişkenler sahip olamaz
 C5038|veri üyesi '*Üye1*'veri üyesi sonra başlatılacak'*üye2*'
 
-## <a name="warnings-introduced-in-visual-c-2017-rtm-compiler-version-191024903"></a>Visual C++ 2017 RTM'de (derleyici sürüm 19.10.24903) sunulan uyarıları
+## <a name="warnings-introduced-in-visual-c-2017-rtm-compiler-version-1910250170"></a>Visual C++ 2017 RTM'de (derleyici sürüm 19.10.25017.0) sunulan uyarıları
 
 Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.00__.
 
@@ -164,15 +175,15 @@ C4498|kullanılan standart olmayan uzantısı: '*uzantısı*'
 C4499|'*uzmanlık*': açık uzmanlık (göz ardı) depolama sınıfı olamaz
 C4576|Başlatıcı listesi tarafından izlenen bir parantez içine alınmış bir standart açık tür dönüştürme sözdizimi türüdür
 C4577|hiçbir özel durum işleme belirtilen modu ile kullanılan noexcept'; özel durum sonlandırıldığında garanti edilmez. /EHsc belirtin
-C4578|'abs': dönüştürme '*türü*'to'*türü*', olası veri kaybını (çağırmak mu demek istediniz '*adı*' veya #include <cmath>?)
+C4578|'abs': dönüştürme '*türü*'to'*türü*', olası veri kaybını (çağırmak mu demek istediniz '*adı*' veya #include \<cmath >?)
 C4582|'*türü*': Oluşturucu örtük olarak çağrılmaz
 C4583|'*türü*': yıkıcı örtük olarak çağrılmaz
 C4587|'*türü*': davranış değişikliği: Oluşturucusu artık dolaylı olarak çağrılır
 C4588|'*türü*': davranış değişikliği: yıkıcı artık dolaylı olarak çağrılır
 C4589|Soyut sınıf*türü*'Başlatıcısı sanal taban sınıfı için yoksayar'*türü*'
-C4591|'constexpr' arama derinliği sınırını *numarası* aşıldı (/ constexpr:depth<NUMBER>)
+C4591|'constexpr' arama derinliği sınırını *numarası* aşıldı (/ constexpr:depth\<numarası >)
 C4592|'*türü*': sembol dinamik olarak olacaktır (uygulama sınırlama) başlatıldı
-C4593|'*türü*': 'constexpr' çağrısı değerlendirme adım sınırının *değeri* aşıldı; /constexpr:steps kullanın<NUMBER> sınırını artırmak için
+C4593|'*türü*': 'constexpr' çağrısı değerlendirme adım sınırının *değeri* aşıldı; /constexpr:steps kullanın\<numarası > sınırını artırmak için
 C4647|davranış değişikliği: __is_pod (*türü*) önceki sürümlerde farklı bir değere sahip
 C4648|Standart özniteliği 'carries_dependency' göz ardı edilir
 C4649|Bu bağlamda öznitelikleri göz ardı edilir
@@ -377,10 +388,10 @@ C4633|XML belge açıklaması*açıklama*: hata: *açıklaması*
 C4634|XML belge açıklaması*açıklama*: uygulanamaz: *açıklaması*
 C4635|XML belge açıklaması*açıklama*: hatalı biçimlendirilmiş XML: *açıklaması*
 C4636|XML belge açıklaması*açıklama*: etiketi boş gerekli '*açıklama*' özniteliği.
-C4637|XML belge açıklaması*açıklama*: <include> atılan etiketi. *Açıklama*
+C4637|XML belge açıklaması*açıklama*: \<dahil > etiketi atılır. *Açıklama*
 C4638|XML belge açıklaması*açıklama*: Bilinmeyen simgesi referansı '*açıklama*'.
 C4639|MSXML hatası, XML belge açıklamaları işlenmeyecek. *Açıklama*
-C4641|XML belge açıklamasında belirsiz bir çapraz başvuru var: 
+C4641|XML belge açıklamasında belirsiz bir çapraz başvuru var:
 C4678|temel sınıfı*bildirimi*'den az erişilebilir olduğundan'*adı*'
 C4679|'*açıklama*': üye içe aktarılamıyor
 C4687|'*türü*': korumalı bir Özet sınıf bir arabirim uygulayamaz '*türü*'
@@ -625,7 +636,8 @@ C4996|'*sorunu*': *açıklaması*
 C4997|'*türü*': COM arabirimi veya Sahte Arabirimi coclass'ı uygulamıyor
 C4998|BEKLENTİ başarısız oldu: *açıklama*(*numarası*)
 
-## <a name="see-also"></a>Ayrıca Bkz.
-[/Wv derleyici seçeneği](../../build/reference/compiler-option-warning-level.md)
-[varsayılan olarak kapalı olan derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md)
-[uyarı](../../preprocessor/warning.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [/Wv derleyici seçeneği](../../build/reference/compiler-option-warning-level.md)
+- [Varsayılan olarak kapalı olan derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md)
+- [warning](../../preprocessor/warning.md)

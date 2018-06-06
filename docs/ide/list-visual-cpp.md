@@ -22,7 +22,7 @@ ms.openlocfilehash: bff8e3588e31414f50cb6d150c0e8c9f2603586b
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33323985"
 ---
 # <a name="ltlistgt-visual-c"></a>&lt;Liste&gt; (Visual C++)

@@ -18,7 +18,7 @@ ms.openlocfilehash: 1cf6f5660e1aaeaeff4050bb80009eda7d14c3ba
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33340521"
 ---
 # <a name="xml-file-processing"></a>.Xml Dosyası İşleme

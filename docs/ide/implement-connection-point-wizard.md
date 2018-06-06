@@ -20,7 +20,7 @@ ms.openlocfilehash: ef2f7efa92de3714170e403ea50b5f486c8367d6
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33323764"
 ---
 # <a name="implement-connection-point-wizard"></a>Bağlantı Noktası Uygulama Sihirbazı

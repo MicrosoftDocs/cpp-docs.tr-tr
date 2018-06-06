@@ -19,7 +19,7 @@ ms.openlocfilehash: 19a49bf18721f605abe0c6e496d3532012c9c92c
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33340404"
 ---
 # <a name="redistributing-the-mfc-library"></a>MFC Kitaplığını Yeniden Dağıtma

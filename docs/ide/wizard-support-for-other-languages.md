@@ -22,7 +22,7 @@ ms.openlocfilehash: 75aafd7177c3799c17b75419fd5ab9f54af91d35
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33332448"
 ---
 # <a name="wizard-support-for-other-languages"></a>Diğer Diller için Sihirbaz Desteği

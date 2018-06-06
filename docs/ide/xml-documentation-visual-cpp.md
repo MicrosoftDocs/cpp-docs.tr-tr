@@ -21,7 +21,7 @@ ms.openlocfilehash: 9d763a62edc2f21d8a7669e409c164906c440f1d
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34705640"
 ---
 # <a name="xml-documentation-visual-c"></a>XML Belgeleri (Visual C++)

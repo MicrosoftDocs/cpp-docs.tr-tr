@@ -14,7 +14,7 @@ ms.openlocfilehash: 4f913f0b3065b136f626ef15cc2a77dce8d0254f
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33335097"
 ---
 # <a name="change-signature"></a>Değişiklik imza

@@ -21,7 +21,7 @@ ms.openlocfilehash: 3c33a18ff0d492ef3a870a342c9d8ff292007748
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33339949"
 ---
 # <a name="working-with-project-properties"></a>Proje Özellikleriyle Çalışma

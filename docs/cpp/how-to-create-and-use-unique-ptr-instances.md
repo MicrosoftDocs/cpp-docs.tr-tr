@@ -12,11 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82cf4fb475f9c89a4a088cac9d5ee0e1231d436e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4562fcb738cc7f692c1bffe1b4b06e413392dd60
+ms.sourcegitcommit: ee9fb774e82dfbda1dfaeb197aed36b97e408978
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34755777"
 ---
 # <a name="how-to-create-and-use-uniqueptr-instances"></a>Nasıl yapılır: unique_ptr Örnekleri Oluşturma ve Kullanma
 A [unique_ptr](../standard-library/unique-ptr-class.md) işaretçisini paylaşmaz. Bunu başka bir kopyalanamaz `unique_ptr`değere göre bir işleve veya oluşturulabilecek kopyalarının gerektiren tüm C++ Standart Kitaplığı algoritması kullanılır. A `unique_ptr` yalnızca taşınabilir. Bu bellek kaynağı sahipliğini başka aktarılır anlamına gelir `unique_ptr` ve özgün `unique_ptr` artık sahibi. Birden fazla sahiplik program mantığına karmaşıklık kattığından nesneyi tek sahiple kısıtlamanızı öneririz. Bu nedenle, akıllı bir işaretçi bir düz C++ nesne için ihtiyacınız olduğunda kullanın `unique_ptr`, ve oluşturduğunuzda bir `unique_ptr`, kullanın [make_unique](../standard-library/memory-functions.md#make_unique) yardımcı işlevi.  
@@ -25,7 +26,7 @@ A [unique_ptr](../standard-library/unique-ptr-class.md) işaretçisini paylaşma
   
  ![Benzersiz bir sahipliğini taşıma&#95;ptr](../cpp/media/unique_ptr.png "unique_ptr")  
   
- `unique_ptr` tanımlanan `<memory>` C++ Standart Kitaplığı'nda başlığı. Tam olduğundan ham işaretçi olarak verimlidir ve C++ Standart Kitaplığı kapsayıcıları kullanılabilir. Eklenmesi `unique_ptr` C++ Standart Kitaplığı kapsayıcıları örneklerine verimli olduğundan taşıma oluşturucusunun `unique_ptr` bir kopyalama işlemi gereksinimini ortadan kaldırır.  
+ `unique_ptr` tanımlanan `<memory>` C++ Standart Kitaplığı'nda başlığı. Ham işaretçi olarak tam olarak verimlidir ve C++ Standart Kitaplığı kapsayıcıları kullanılabilir. Eklenmesi `unique_ptr` C++ Standart Kitaplığı kapsayıcıları örneklerine verimli olduğundan taşıma oluşturucusunun `unique_ptr` bir kopyalama işlemi gereksinimini ortadan kaldırır.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte nasıl oluşturulacağını gösterir `unique_ptr` örnekleri ve işlevleri arasında geçirin.  

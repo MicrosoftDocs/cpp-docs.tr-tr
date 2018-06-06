@@ -25,7 +25,7 @@ ms.openlocfilehash: 08cf1386ef177823c37bc285392309ec47f3c464
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33340703"
 ---
 # <a name="project-and-solution-files"></a>Proje ve Çözüm Dosyaları

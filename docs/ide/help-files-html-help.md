@@ -18,7 +18,7 @@ ms.openlocfilehash: d180fe4f9cf1baf26b27423ffda975bfe0fe85ba
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "33325081"
 ---
 # <a name="help-files-html-help"></a>Yardım Dosyaları (HTML Yardım)

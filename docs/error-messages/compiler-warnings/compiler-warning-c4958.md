@@ -20,7 +20,7 @@ ms.openlocfilehash: 6e32acc4ec45275976e7fb56f993b10ba8a2a855
 ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34704879"
 ---
 # <a name="compiler-warning-c4958"></a>Derleyici Uyarısı C4958
