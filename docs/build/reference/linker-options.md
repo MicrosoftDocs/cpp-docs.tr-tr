@@ -19,11 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 835d7b1b74c8d465b44ec6274926f0b06d4f1296
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c7a7fe51c6f49af4fdd232b860b1f9243c1ea462
+ms.sourcegitcommit: d1f576a0f59678edc3d93508cf46485138332178
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34753636"
 ---
 # <a name="linker-options"></a>Bağlayıcı Seçenekleri
 
@@ -67,6 +68,7 @@ Kullanabileceğiniz [açıklama](../../preprocessor/comment-c-cpp.md) pragma baz
 |[/ DELAY](../../build/reference/delay-delay-load-import-settings.md)|DLL'leri Gecikmeli yüklenmesini denetler.|
 |[/ DELAYLOAD](../../build/reference/delayload-delay-load-import.md)|Belirtilen DLL Gecikmeli yüklenmesini neden olur.|
 |[/ DELAYSIGN](../../build/reference/delaysign-partially-sign-an-assembly.md)|Bir derlemeyi kısmen imzalar.|
+|[/ DEPENDENTLOADFLAG](dependentloadflag.md)|Varsayılan bayrakları bağımlı DLL yükleri ayarlar.|
 |[/ DLL](../../build/reference/dll-build-a-dll.md)|DLL oluşturur.|
 |[/ DRIVER](../../build/reference/driver-windows-nt-kernel-mode-driver.md)|Çekirdek modu sürücüsü oluşturur.|
 |[/DYNAMICBASE](../../build/reference/dynamicbase-use-address-space-layout-randomization.md)|Rastgele yükleme zamanında adres alanı düzeni rastgele seçimini (ASLR) özelliğini kullanarak rebased yürütülebilir bir görüntü oluşturulup oluşturulmayacağını belirtir.|
@@ -128,7 +130,7 @@ Kullanabileceğiniz [açıklama](../../preprocessor/comment-c-cpp.md) pragma baz
 |[/ TLBID](../../build/reference/tlbid-specify-resource-id-for-typelib.md)|Bağlayıcı tarafından oluşturulan tür kitaplığı kaynak Kimliğini belirtir.|
 |[/ TLBOUT](../../build/reference/tlbout-name-dot-tlb-file.md)|.Tlb dosyası ve diğer MIDL çıktı dosyalarını adını belirtir.|
 |[/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md)|Özellikle Terminal sunucusu altında çalışması için tasarlanmış bir uygulama oluşturur.|
-|[/ USEPROFILE](../../build/reference/useprofile.md)|En iyi duruma getirilmiş bir görüntü oluşturmak için en iyi duruma getirme eğitim verileri profil temelli kullanır.|
+|[/USEPROFILE](../../build/reference/useprofile.md)|En iyi duruma getirilmiş bir görüntü oluşturmak için en iyi duruma getirme eğitim verileri profil temelli kullanır.|
 |[/ VERBOSE](../../build/reference/verbose-print-progress-messages.md)|Bağlayıcı ilerleme iletilerini yazdırır.|
 |[/VERSION](../../build/reference/version-version-information.md)|Sürüm numarası atar.|
 |[/ WHOLEARCHIVE](../../build/reference/wholearchive-include-all-library-object-files.md)|Belirtilen statik kitaplıklarından her nesne dosyası içerir.|
