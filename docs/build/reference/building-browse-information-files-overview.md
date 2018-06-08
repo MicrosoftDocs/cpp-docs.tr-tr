@@ -17,11 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a2306c69c219320e11259ba6303b76588db8f7b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 463bf72c07c775ef0d4965a2023e5699cf7ec715
+ms.sourcegitcommit: b04de4e90def1d0f4aa265e96d6b73779d010e1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843081"
 ---
 # <a name="building-browse-information-files-overview"></a>Gözatma Bilgileri Dosyası Derleme: Genel Bakış
 Simgenin tarama için gözatma bilgilerini oluşturmak için derleyici projenizde sonra BSCMAKE her kaynak dosya için .sbr dosyası oluşturur. EXE .sbr dosyaları bir .bsc dosyasına art arda ekler.  
@@ -49,7 +50,7 @@ Simgenin tarama için gözatma bilgilerini oluşturmak için derleyici projenizd
   
 1.  Yoktur proje düzeyinde .bsc dosyası derleme veya /n anahtarı kesilmiş gelen .sbr dosyaları engellemek için kullanabilirsiniz.  
   
-2.  Tüm projeleri yerleşik sonra BSCMAKE tüm .sbr dosyaları ile giriş olarak çalıştırın. Joker karakterler kabul edilir. Örneğin, bunları ve tüm bir .bsc dosyada birleştirmek istediğinizi .sbr dosyaları ile proje dizinleri C:\X, C:\Y ve C:\Z olsaydı, ardından BSCMAKE C:\X kullanın\\*.sbr C:\Y\\\*.sbr C:\Z\\\*. Birleşik .bsc dosyasını oluşturmak için /o c:\whatever_directory\combined.bsc sbr.  
+2.  Tüm projeleri yerleşik sonra BSCMAKE tüm .sbr dosyaları ile giriş olarak çalıştırın. Joker karakterler kabul edilir. Örneğin, bunları ve tüm bir .bsc dosyada birleştirmek istediğinizi .sbr dosyaları ile proje dizinleri C:\X, C:\Y ve C:\Z olsaydı, ardından BSCMAKE C:\X kullanın\\\*.sbr C:\Y\\\*.sbr C:\Z\\ \*.sbr /o c:\whatever_directory\combined.bsc birleştirilmiş .bsc dosyasını oluşturmak için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ derleme araçları](../../build/reference/c-cpp-build-tools.md)   
