@@ -48,11 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19b9c25659938e049807eb4e4b41dafd51ebe8e9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 89e508242e7318e5419656720b6dee20bed55716
+ms.sourcegitcommit: 59afc95d0e494af658cf464503f7f89bd1a8d2ce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35239430"
 ---
 # <a name="cmap-class"></a>CMap sınıfı
 Benzersiz anahtar değerlerine eşlemeleri sözlüğü collection sınıfı.  
@@ -67,13 +68,13 @@ template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : pub
  `KEY`  
  Eşleme için anahtar olarak kullanılan nesne sınıfı.  
   
- `ARG` *_* `KEY`  
+ `ARG_KEY`  
  Veri türü için kullanılan `KEY` bağımsız değişkenleri; genellikle başvuru `KEY`.  
   
  `VALUE`  
  Eşlemesinde depolanan nesne sınıfı.  
   
- `ARG` *_* `VALUE`  
+ `ARG_VALUE`  
  Veri türü için kullanılan `VALUE` bağımsız değişkenleri; genellikle başvuru `VALUE`.  
   
 ## <a name="members"></a>Üyeler  

@@ -43,11 +43,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0792ddf067f6289d612a9adb0c8ffeaf8e554ed6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b246e9ed09cce2fdecf8a8d6327a912061247cad
+ms.sourcegitcommit: 59afc95d0e494af658cf464503f7f89bd1a8d2ce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35239443"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC'de Özel Durum İşleme
 Bu makalede MFC'de özel durum işleme mekanizmalarını açıklanmaktadır. İki mekanizma vardır:  
@@ -63,7 +64,7 @@ Bu makalede MFC'de özel durum işleme mekanizmalarını açıklanmaktadır. İk
  MFC özel durum makroları kullanarak bir uygulama zaten geliştirdiyseniz, yeni kodunuzda C++ özel durumlarını kullanırken mevcut kodunuzu bu makroları devam edebilirsiniz. Makaleyi [özel durumlar: sürüm 3.0 özel durum makrolarındaki değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md) Bunu yapmak için yönergeleri sağlar.  
   
 > [!NOTE]
->  C++ özel durum kodunuzda işleme etkinleştirmek için projenin C/C++ klasöründeki kod oluşturma sayfasında C++ özel durumlarını etkinleştirmek seçin [özellik sayfaları](../ide/property-pages-visual-cpp.md) iletişim kutusu veya /GX derleyici seçeneği kullanın. Özel durum işleme devre dışı bırakır /GX-varsayılandır.  
+>  C++ özel durum kodunuzda işleme etkinleştirmek için projenin C/C++ klasöründeki kod oluşturma sayfasında C++ özel durumlarını etkinleştirmek seçin [özellik sayfaları](../ide/property-pages-visual-cpp.md) iletişim kutusu veya kullanım [/EHsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneği.  
   
  Bu makalede aşağıdaki konuları içerir:  
   
