@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: komut satırında yerel C++ programı derleme | Microsoft Docs'
 ms.custom: conceptual
-ms.date: 11/04/2016
+ms.date: 06/08/2018
 ms.technology:
 - cpp-tools
 ms.topic: conceptual
@@ -17,11 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2ba3d1da27b3300f6299e902c35157cfe421f5c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3fd65dff0a354ebbed4435b8867271091211279d
+ms.sourcegitcommit: 1c2e035f98fb55d9b3c08ec3bb562179a368d0d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35253837"
 ---
 # <a name="walkthrough-compiling-a-native-c-program-on-the-command-line"></a>İzlenecek Yol: Komut Satırında Yerel C++ Programı Derleme
 Visual C++ her şeyi temel konsol uygulamaları Evrensel Windows platformu uygulamaları, Masaüstü uygulamaları, aygıt sürücülerini ve .NET bileşenlerini oluşturmak için kullanabileceğiniz bir komut satırı C++ Derleyici içerir.  
@@ -31,13 +32,13 @@ Visual C++ her şeyi temel konsol uygulamaları Evrensel Windows platformu uygul
  Bu kılavuzda gösterilen bir yazmak yerine, kendi Visual C++ programı kullanabilirsiniz veya başka bir Yardım makalesinin Visual C++ kodu örnekten kullanabilirsiniz.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
- Bu izlenecek yolu tamamlamak için Visual Studio ve isteğe bağlı Visual C++ bileşenler veya Microsoft Visual C++ derleme araçları yüklü gerekir.  
+ Bu izlenecek yolu tamamlamak için Visual Studio ve C++ iş yükü ile isteğe bağlı masaüstü geliştirme ya da komut satırı derleme araçları Visual Studio için yüklemiş olmalısınız.  
   
- Visual Studio birçok diller ve platformlar için tam özellikli bir düzenleyici, kaynak yöneticileri, hata ayıklayıcıları ve derleyicileri destekleyen bir güçlü tümleşik geliştirme ortamıdır. Bu özellikler ve nasıl karşıdan yüklenir ve ücretsiz Visual Studio Community sürümü de dahil olmak üzere Visual Studio yükleme hakkında bilgi için bkz: [VisualStudio.com](https://www.visualstudio.com/).  
+ Visual Studio destekleyen tam özellikli bir düzenleyici, kaynak yöneticileri, hata ayıklayıcıları ve derleyicileri birçok diller ve platformlar için güçlü bir tümleşik geliştirme ortamı (IDE) ' dir. Ücretsiz Visual Studio Community sürümü de dahil olmak üzere Visual Studio karşıdan yükleyip ve C/C++ geliştirme desteği dahil etmek hakkında daha fazla bilgi için bkz: [Visual Studio yükleme C++ Destek](../build/vscpp-step-0-installation.md).  
   
- Yapı Visual Studio Araçları, yalnızca komut satırı derleyicileri, Araçlar ve C ve C++ programları oluşturmak için gereken kitaplıklar yükler. Yapı Laboratuvarları için mükemmeldir veya sınıf kullanır ve oldukça hızlı bir şekilde yükler. Yalnızca komut satırı araçlarını yüklemek için indirme [Visual Studio derleme Araçları](https://go.microsoft.com/fwlink/p/?linkid=840931) ve yükleyiciyi çalıştırın. Daha fazla bilgi için bkz: [Visual C++ derleme Araçları](http://landinghub.visualstudio.com/visual-cpp-build-tools).  
+ Derleme araçları Visual Studio için yalnızca komut satırı derleyicileri, Araçlar ve C ve C++ programları oluşturmak için gereken kitaplıklar yükler. Yapı Laboratuvarları için mükemmeldir veya sınıf kullanır ve oldukça hızlı bir şekilde yükler. Yalnızca komut satırı araçlarını yüklemek için indirme [derleme araçları Visual Studio 2017 için](https://go.microsoft.com/fwlink/p/?linkid=840931).  
   
- Komut satırında C veya C++ programı oluşturmadan önce Araçları yüklenir ve bunları komut satırından erişebildiğinizi doğrulamanız gerekir. Visual C++ Araçları, üst bilgilerinin ve kitaplıklarının kullandığı bulmak için komut satırı ortamı için karmaşık gereksinimleri vardır. **Visual C++ düz komut istemi penceresinde kullanamazsınız**. Neyse ki, Visual C++, komut satırı derlemeleri için ayarlanan ortam sahip bir geliştirici komut istemi başlatmak kısayol yükler. Ne yazık ki, geliştirici komut istemi kısayolları ve nerede olurlarsa olsunlar adları neredeyse her sürümü Visual C++ ve farklı Windows sürümleri üzerinde farklı. İlk kılavuz göreviniz kullanmak için doğru olanı bulma.  
+ Komut satırında C veya C++ programı oluşturmadan önce Araçları yüklenir ve bunları komut satırından erişebildiğinizi doğrulamanız gerekir. Visual C++ Araçları, üst bilgilerinin ve kitaplıklarının kullandığı bulmak için komut satırı ortamı için karmaşık gereksinimleri vardır. **Visual C++ düz komut istemi penceresinde kullanamazsınız** bazı hazırlık yaparken olmadan. Neyse ki, Visual C++, komut satırı derlemeleri için ayarlanan ortam sahip bir geliştirici komut istemi başlatmak kısayol yükler. Ne yazık ki, geliştirici komut istemi kısayolları ve nerede olurlarsa olsunlar adları neredeyse her sürümü Visual C++ ve farklı Windows sürümleri üzerinde farklı. İlk kılavuz göreviniz kullanmak için doğru olanı bulma.  
   
 > [!NOTE]
 >  Bir geliştirici komut istemi kısayoluna doğru yol ve tüm gerekli üst bilgilerinin ve kitaplıklarının derleyici ve araçları için otomatik olarak ayarlar. Normal bir komut istemi penceresi kullanıyorsanız bu ortam değerleri kendiniz ayarlamalısınız. Daha fazla bilgi için bkz: [komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama](../build/setting-the-path-and-environment-variables-for-command-line-builds.md). Kendi planınızı yerine bir geliştirici komut istemi kısayoluna kullanmanızı öneririz.  

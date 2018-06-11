@@ -1,6 +1,6 @@
 ---
 title: C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak | Microsoft Docs
-ms.date: 11/27/2017
+ms.date: 06/08/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29810e928ee910efe0eb9a4bdbcda8576bcb7a9e
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 4b71f09914d509aa4202bfc856d52f6cea26cea3
+ms.sourcegitcommit: 1c2e035f98fb55d9b3c08ec3bb562179a368d0d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33328886"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35253821"
 ---
 # <a name="using-the-visual-studio-ide-for-c-desktop-development"></a>C++ Masaüstü Geliştirmesi için Visual Studio IDE Kullanma
 
@@ -27,7 +27,7 @@ Visual Studio tümleşik geliştirme ortamı (IDE) yardımcı özellikler kümes
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Visual Studio henüz yüklemediyseniz şimdi saattir. Visual Studio almak için buradan indirebilirsiniz [Visual Studio indirmeleri](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Visual Studio yüklediğinizde varsayılan olarak yüklü değil çünkü Visual C++ geliştirme araçları eklediğinizden emin olun. Visual Studio yükleme hakkında daha fazla bilgi için bkz: [Visual Studio yükleme](/visualstudio/install/install-visual-studio).
+Visual Studio henüz yüklemediyseniz şimdi saattir. Yükleme bağlantıları ve hızlı bir kılavuz için bkz: [Visual Studio yükleme C++ Destek](../build/vscpp-step-0-installation.md). Visual Studio genel olarak yüklemek ve bir sorun, yaşanırsa sorun giderme ipuçları görmek hakkında daha fazla bilgi için [Visual Studio yükleme](/visualstudio/install/install-visual-studio). Seçtiğinizden emin olun **C++ ile masaüstü geliştirme** Visual Studio yüklediğinizde varsayılan olarak yüklü değil çünkü C++ Derleyicileri, Araçlar ve kitaplıkları içerecek şekilde iş yükü.
 
 Bu izlenecek yollar, Visual Studio Visual C++ dili ve Windows Masaüstü geliştirme için gerekli bileşenlerin yüklü olduğunu varsayalım. C++ dili ile ilgili temel bilgileri anladığınızdan varsayıyoruz. C++ öğrenmek gerekiyorsa, birçok books ve web kaynakları kullanılabilir yok. Başlamak için bir yerdir [Get Started](https://isocpp.org/get-started) standart C++ Foundation Web sitesi sayfası.
 

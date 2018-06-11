@@ -2,7 +2,7 @@
 title: Visual Studio'da C++ desteği yükleme | Microsoft Docs
 description: Visual C++ için Visual Studio desteğini yükleme
 ms.custom: mvc
-ms.date: 12/12/2017
+ms.date: 06/08/2018
 ms.topic: tutorial
 ms.technology:
 - devlang-C++
@@ -14,11 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69092cdd6d79197fb7a2cbdc60b783174b70950b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4fd04450b75083152d058aef4a85d83f5635c8d9
+ms.sourcegitcommit: 1c2e035f98fb55d9b3c08ec3bb562179a368d0d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35253762"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio'da C++ desteğini yükleme
 
@@ -32,17 +33,17 @@ ms.lasthandoff: 05/03/2018
 
 - Yeterli boş disk alanı. Visual Studio en az 7 GB disk alanı gerektirir ve birçok yaygın seçenekler yüklediyseniz 50 GB veya daha fazla sürebilir. C: sürücünüzde yüklemeniz önerilir.
 
-Disk alanı ve işletim sistemi gereksinimleri hakkında daha fazla bilgi için bkz: [Visual Studio 2017 sistem gereksinimleri](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs). Yükleyici seçenekleri için ne kadar disk alanı gereklidir bildirir.
+Disk alanı ve işletim sistemi gereksinimleri hakkında daha fazla bilgi için bkz: [Visual Studio ürün ailesi sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs). Yükleyici seçenekleri için ne kadar disk alanı gereklidir bildirir.
 
 ## <a name="installation"></a>Yükleme
 
 1. Windows için en son Visual Studio 2017 yükleyicisi indirin.
 
    > [!div class="nextstepaction"]
-   > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&utm_source=docs&utm_medium=clickbutton">Visual Studio 2017 Community yükle</a>
+   > <a target="frameTarget" href="https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017">Visual Studio 2017 Community yükle</a>
 
    >[!Tip]
-   > Community edition her bir geliştirici, sınıf öğrenme, akademik araştırma ve açık kaynak geliştirme içindir. Diğer kullanımlar için yükleme <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&utm_source=docs&utm_medium=clickbutton">Visual Studio 2017 Professional</a> veya <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&utm_source=docs&utm_medium=clickbutton">Visual Studio 2017 Enterprise</a>.
+   > Community edition her bir geliştirici, sınıf öğrenme, akademik araştırma ve açık kaynak geliştirme içindir. Diğer kullanımlar için yükleme <a target="frameTarget" href="https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017">Visual Studio 2017 Professional</a> veya <a target="frameTarget" href="https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017">Visual Studio 2017 Enterprise</a>.
 
 1. Karşıdan yükleyip çalıştırın yükleyici dosyasını bulun. Tarayıcınızda görüntülenebilir veya yüklemeleri klasörünüzdeki bulabilirsiniz. Yükleyiciyi çalıştırmak için yönetici ayrıcalıkları gerekiyor. Görebileceğiniz bir **kullanıcı hesabı denetimi** sisteminize değişiklik; seçin yükleyici izin izni vermek isteyen iletişim **Evet**. Sorun yaşıyorsanız, indirilen dosyayı dosya Gezgini'nde bulmak, yükleyici simgesine sağ tıklayın ve seçin **yönetici olarak çalıştır** ve bağlam menüsünden.
 

@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: komut satırında C programı derleme | Microsoft Docs'
 ms.custom: conceptual
-ms.date: 11/04/2016
+ms.date: 06/08/2018
 ms.technology:
 - cpp-tools
 ms.topic: conceptual
@@ -15,28 +15,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 033c29ff9871a427222b59fbf5c8350794a9bbe2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 27e303a9e1618c73d173e9d23c614cfc506ec68a
+ms.sourcegitcommit: 1c2e035f98fb55d9b3c08ec3bb562179a368d0d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35253795"
 ---
 # <a name="walkthrough-compile-a-c-program-on-the-command-line"></a>İzlenecek yol: komut satırında C programı derleme
 Visual C++ her şeyin tam Windows Masaüstü uygulamaları, mobil uygulamaları ve daha fazla bilgi için temel konsol programlardan oluşturmak için kullanabileceğiniz bir C Derleyici içerir.  
   
  Bu kılavuzda "Hello, World" basic oluşturulacağını gösterir-C programı bir metin kullanarak Düzenleyicisi stil ve komut satırında derleme. C++'ta komut satırında işe, bkz: [izlenecek yol: komut satırında yerel C++ programı derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md). İsterseniz bkz komut satırını kullanarak yerine Visual Studio IDE deneyin [izlenecek yol: projeler ve çözümler (C++) ile çalışma](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) veya [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
   
-## <a name="prerequisites"></a>Önkoşullar  
- Bu izlenecek yolu tamamlamak için Visual Studio ve isteğe bağlı Visual C++ bileşenler veya Microsoft Visual C++ derleme araçları yüklü gerekir.  
+## <a name="prerequisites"></a>Önkoşullar
+
+Bu izlenecek yolu tamamlamak için Visual Studio ve isteğe bağlı Visual C++ bileşenleri ya da derleme araçları Visual Studio için yüklemiş olmalısınız.  
   
- Visual Studio birçok diller ve platformlar için tam özellikli bir düzenleyici, kaynak yöneticileri, hata ayıklayıcıları ve derleyicileri destekleyen bir güçlü tümleşik geliştirme ortamıdır. Bu özellikler ve nasıl karşıdan yüklenir ve ücretsiz Visual Studio Community sürümü de dahil olmak üzere Visual Studio yükleme hakkında bilgi için bkz: [VisualStudio.com](https://www.visualstudio.com/).  
+Visual Studio birçok diller ve platformlar için tam özellikli bir düzenleyici, kaynak yöneticileri, hata ayıklayıcıları ve derleyicileri destekleyen bir güçlü tümleşik geliştirme ortamıdır. Bu özellikler ve nasıl karşıdan yüklenir ve ücretsiz Visual Studio Community sürümü de dahil olmak üzere Visual Studio yükleme hakkında bilgi için bkz: [Visual Studio yükleme](/visualstudio/install/install-visual-studio).  
   
- Yapı Visual Studio Araçları, yalnızca komut satırı derleyicileri, Araçlar ve C ve C++ programları oluşturmak için gereken kitaplıklar yükler. Yapı Laboratuvarları için mükemmeldir veya sınıf kullanır ve oldukça hızlı bir şekilde yükler. Yalnızca komut satırı araçlarını yüklemek için indirme [Visual Studio derleme Araçları](https://go.microsoft.com/fwlink/p/?linkid=840931) ve yükleyiciyi çalıştırın. Daha fazla bilgi için bkz: [Visual C++ derleme Araçları](http://landinghub.visualstudio.com/visual-cpp-build-tools).  
+Visual Studio sürümü için Visual Studio derleme araçları yalnızca komut satırı araç takımı, derleyicileri, Araçlar ve C ve C++ programları oluşturmak için gereken kitaplıklar yükler. Yapı Laboratuvarları için mükemmeldir veya sınıf kullanır ve oldukça hızlı bir şekilde yükler. Yalnızca komut satırı araç takımı yüklemek için Yükle [derleme araçları Visual Studio için](https://go.microsoft.com/fwlink/p/?linkid=840931) ve yükleyiciyi çalıştırın.  
   
- Komut satırında C veya C++ programı oluşturmadan önce Araçları yüklenir ve bunları komut satırından erişebildiğinizi doğrulamanız gerekir. Visual C++ Araçları, üst bilgilerinin ve kitaplıklarının kullandığı bulmak için komut satırı ortamı için karmaşık gereksinimleri vardır. **Visual C++ düz komut istemi penceresinde kullanamazsınız**. Gereksinim duyduğunuz bir *Geliştirici komut istemi* tüm gerekli ortam değişkenleri kümesini sahip bir normal bir komut istemi penceresi penceresi. Neyse ki, Visual C++, komut satırı derlemeleri için ayarlanan ortam sahip bir geliştirici komut istemlerini başlatmak kısayol yükler. Ne yazık ki, geliştirici komut istemi kısayolları ve nerede olurlarsa olsunlar adları neredeyse her sürümü Visual C++ ve farklı Windows sürümleri üzerinde farklı. İlk kılavuz göreviniz kullanmak için doğru kısayol bulmaktır.  
+Komut satırında C veya C++ programı oluşturmadan önce Araçları yüklenir ve bunları komut satırından erişebildiğinizi doğrulamanız gerekir. Visual C++ Araçları, üst bilgilerinin ve kitaplıklarının kullandığı bulmak için komut satırı ortamı için karmaşık gereksinimleri vardır. **Visual C++ düz komut istemi penceresinde kullanamazsınız**. Gereksinim duyduğunuz bir *Geliştirici komut istemi* tüm gerekli ortam değişkenleri kümesini sahip bir normal bir komut istemi penceresi penceresi. Neyse ki, Visual C++, komut satırı derlemeleri için ayarlanan ortam sahip bir geliştirici komut istemlerini başlatmak kısayol yükler. Ne yazık ki, geliştirici komut istemi kısayolları ve nerede olurlarsa olsunlar adları neredeyse her sürümü Visual C++ ve farklı Windows sürümleri üzerinde farklı. İlk kılavuz göreviniz kullanmak için doğru kısayol bulmaktır.  
   
 > [!NOTE]
->  Bir geliştirici komut istemi kısayoluna doğru yol ve tüm gerekli üst bilgilerinin ve kitaplıklarının derleyici ve araçları için otomatik olarak ayarlar. Bu değerlerden bazıları her yapı yapılandırması için farklı olur. Kısayollar birini kullanmıyorsanız, bu ortam değerleri kendiniz ayarlamanız gerekir. Daha fazla bilgi için bkz: [komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama](../build/setting-the-path-and-environment-variables-for-command-line-builds.md). Yapı ortamı karmaşık olduğu için kendi oluşturmak yerine bir geliştirici komut istemi kısayoluna kullanmanız önerilir.  
+> Bir geliştirici komut istemi kısayoluna doğru yol ve tüm gerekli üst bilgilerinin ve kitaplıklarının derleyici ve araçları için otomatik olarak ayarlar. Bu değerlerden bazıları her yapı yapılandırması için farklı olur. Kısayollar birini kullanmıyorsanız, bu ortam değerleri kendiniz ayarlamanız gerekir. Daha fazla bilgi için bkz: [komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama](../build/setting-the-path-and-environment-variables-for-command-line-builds.md). Yapı ortamı karmaşık olduğu için kendi oluşturmak yerine bir geliştirici komut istemi kısayoluna kullanmanız önerilir.  
   
 ## <a name="open-a-developer-command-prompt"></a>Bir geliştirici komut istemi açın  
   
@@ -63,7 +65,7 @@ Visual C++ her şeyin tam Windows Masaüstü uygulamaları, mobil uygulamaları 
     > [!NOTE]
     >  "'Cl' iç ya da dış komut, çalıştırılabilir program ya da toplu iş dosyası tanınmıyor"gibi bir hata alırsanız hatası C1034 ya da hatası çalıştırdığınızda LNK1104 **cl** ya da bir geliştirici komut istemi kullanmıyorsanız, komut veya Visual C++ yüklemenizle yanlış bir şeydir. Devam etmeden önce bu sorunu düzeltmeniz gerekir.  
   
-     Geliştirici komut istemi kısayoluna bulamazsa ya da bunu girdiğinizde bir hata iletisi alırsanız `cl`, sonra da Visual C++ yüklemenizin bir sorun olabilir. Visual Studio Visual C++ bileşeni yeniden yüklemeyi deneyin veya Visual Studio Araçları yapı yeniden yükleyin. Bu çalışır kadar sonraki bölüme gidin yok. Yükleme ve Visual C++ sorunlarını giderme hakkında daha fazla bilgi için bkz: [Visual Studio yükleme](/visualstudio/install/install-visual-studio).  
+     Geliştirici komut istemi kısayoluna bulamazsa ya da bunu girdiğinizde bir hata iletisi alırsanız `cl`, sonra da Visual C++ yüklemenizin bir sorun olabilir. Visual Studio Visual C++ bileşeni yeniden yüklemeyi deneyin veya derleme araçları Visual Studio için yeniden yükleyin. Bu çalışır kadar sonraki bölüme gidin yok. Yükleme ve Visual Studio sorunlarını giderme hakkında daha fazla bilgi için bkz: [Visual Studio yükleme](/visualstudio/install/install-visual-studio).  
   
     > [!NOTE]
     >  Windows sürümü bağlı olarak bilgisayarda ve sistem güvenlik yapılandırması, geliştirici komut istemi kısayoluna için kısayol menüsünü açın ve ardından sağ gerekebilir **yönetici olarak çalıştır** için başarılı bir şekilde oluşturmak ve bu kılavuzu izleyerek oluşturun programını çalıştırın.  

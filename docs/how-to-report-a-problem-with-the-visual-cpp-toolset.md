@@ -1,6 +1,6 @@
 ---
 title: Visual C++ araç takımını ile ilgili bir sorun bildirme | Microsoft Docs
-ms.date: 5/11/2018
+ms.date: 06/08/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -10,12 +10,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0044a0da7b1ac4ad052eb120ccfb1f7425d2c0e
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: dec9cfac5273469eb37418929d83e273f6ab8612
+ms.sourcegitcommit: 1c2e035f98fb55d9b3c08ec3bb562179a368d0d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34336337"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35253886"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ araç takımını veya belgelerinde bir sorun bildirme
 
@@ -358,7 +358,7 @@ Yeniden oluşturma en az bir IDE projesi olarak oluşturun, sonra bir .zip dosya
 Çeşitli raporunuzu bize almak için iyi şekillerde vardır. Visual Studio'nun yerleşik kullanabilirsiniz [bir sorun aracı rapor](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), veya [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sayfaları. Seçerek doğrudan sunduğumuz Geliştirici topluluğu sayfalara alabilirsiniz **ürün geri bildirim** bu sayfanın sonundaki düğmesi. Seçimi ekran görüntüleri yakalama ve geliştirici topluluğu sayfalarında nakil raporunuzun düzenleme için IDE içinde yerleşik araçları kullanmak mı istediğinizi ya da doğrudan Web sitesi kullanmayı tercih ederseniz bağlıdır.
 
 > [!NOTE]
-> Raporunuzu nasıl gönderme bağımsız olarak, Microsoft, gizliliğinize saygı duyar. Microsoft, tüm veri gizlilik yasalarına ve düzenlemelerine ile uyumluluk için taahhüt eder. Biz bize gönderin verileri nasıl işler hakkında daha fazla bilgi için bkz: [Microsoft Visual Studio ürün ailesi gizlilik bildirimi](https://www.visualstudio.com/dn948229).
+> Raporunuzu nasıl gönderme bağımsız olarak, Microsoft, gizliliğinize saygı duyar. Microsoft, tüm veri gizlilik yasalarına ve düzenlemelerine ile uyumluluk için taahhüt eder. Biz bize gönderin verileri nasıl işler hakkında daha fazla bilgi için bkz: [Microsoft gizlilik bildirimi](https://www.visualstudio.com/dn948229).
 
 ### <a name="use-the-report-a-problem-tool"></a>Rapor bir sorun aracını kullanın
 

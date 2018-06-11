@@ -1,7 +1,7 @@
 ---
 title: Hangi DLL'lerin yeniden dağıtılacağını belirleme | Microsoft Docs
 ms.custom: ''
-ms.date: 03/13/2018
+ms.date: 06/08/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -18,20 +18,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3ca079fc69fe10f15a55812eaa55d4ba2d2ab04
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 2a7b52e2c4d45d92f10b535b9d2d23b5a1e1a043
+ms.sourcegitcommit: 1c2e035f98fb55d9b3c08ec3bb562179a368d0d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33337606"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35253873"
 ---
 # <a name="determining-which-dlls-to-redistribute"></a>Hangi DLL'lerin Yeniden Dağıtılacağını Belirleme
 
 Visual Studio tarafından sağlanan kitaplığı DLL'ler kullanan bir uygulama oluşturduğunuzda, uygulamanızın kullanıcıların bilgisayarlarında uygulamayı çalıştırmak için de bu DLL'ler olması gerekir. Kullanıcıların çoğunun büyük olasılıkla Visual Studio'nun yüklü olmadığı için bu DLL'ler için bunları sağlamanız gerekir. Visual Studio kullanılabilir hale getirir bu dll olarak *yeniden dağıtılabilir dosyaları* , uygulama Yükleyicinizle içerebilir.
 
-Yeniden dağıtılabilir DLL'leri, yükleyici ile dahil kolaylaştırmak için bağımsız olarak kullanılabilir olmaları *yeniden dağıtılabilir paketleri*. Bu, bir kullanıcının bilgisayarda yeniden dağıtılabilir dosyalarını yüklemek için merkezi dağıtım kullanın mimarisi özgü yürütülebilir dosyalar. Örneğin, vcredist\_x86.exe yükler x86 için 32-bit kitaplıkları bilgisayarlar, vcredist\_x64.exe x64 için 32-bit ve 64-bit kitaplıkları yükler bilgisayarlar ve vcredist\_ARM.exe kitaplıkları için ARM yükler bilgisayarlar. Microsoft bu kitaplıklar bağımsız olarak güncelleştirmek için Windows Update hizmeti kullanabileceğinizden merkezi dağıtım öneririz. Visual Studio yüklemenizin kopyada ek olarak, geçerli yeniden dağıtılabilir paketlerini indirmek için kullanılabilir olan [VisualStudio.com/Downloads](https://www.visualstudio.com/downloads/) diğer araçlar ve çerçeveleri bölümünde.
+Yeniden dağıtılabilir DLL'leri, yükleyici ile dahil kolaylaştırmak için bağımsız olarak kullanılabilir olmaları *yeniden dağıtılabilir paketleri*. Bu, bir kullanıcının bilgisayarda yeniden dağıtılabilir dosyalarını yüklemek için merkezi dağıtım kullanın mimarisi özgü yürütülebilir dosyalar. Örneğin, vcredist\_x86.exe yükler x86 için 32-bit kitaplıkları bilgisayarlar, vcredist\_x64.exe x64 için 32-bit ve 64-bit kitaplıkları yükler bilgisayarlar ve vcredist\_ARM.exe kitaplıkları için ARM yükler bilgisayarlar. Microsoft bu kitaplıklar bağımsız olarak güncelleştirmek için Windows Update hizmeti kullanabileceğinizden merkezi dağıtım öneririz. Visual Studio yüklemenizin kopyada ek olarak, geçerli yeniden dağıtılabilir paketleri indirme için kullanılabilir. En son desteklenen yeniden dağıtılabilir paketler için geçerli ve eski toolsets bağlantıları için bkz: [en son Visual C++ yüklemeleri desteklenen](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads). Yeniden dağıtılabilir paketleri belirli önceki sürümlerini arayarak bulunabilir [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=158431) "Visual C++ yeniden dağıtılabilir paketler" için.
 
-Dağıttığınız yeniden dağıtılabilir paketinin ana sürüm numarası, uygulamanızı oluşturmak için kullanılan Visual Studio araç takımı sürümü aynı olmalıdır. Visual Studio 2017 ve Visual Studio 2015, Visual Studio 2015 araç setini kullanarak oluşturulan uygulamaları tarafından yeniden dağıtılabilir dosyaları kullanılabilir 2017 anlamına gelir uyumlu araç takımı sürüm numarasına sahip. Uyumlu olabilir, ancak 2017 araç takımı kullanılarak oluşturulan uygulamaları 2015 redistributable dosyalarında kullanılmasını desteklemez. Aynı veya araç takımı sürümden daha yeni bir yeniden dağıtılabilir paketi kullanarak yalnızca destekler. En son desteklenen yeniden dağıtılabilir paketler için eski toolsets bağlantıları için bkz: [en son Visual C++ yüklemeleri desteklenen](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads). Yeniden dağıtılabilir paketleri belirli önceki sürümlerini arayarak bulunabilir [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=158431) "Visual C++ yeniden dağıtılabilir paketler" için.
+Uygulamanızı oluşturmak için kullanılan Visual Studio araç takımı sürümü dağıttığınız yeniden dağıtılabilir paketinin ana sürüm numarası aynı olmalıdır ve alt sürümü aynı olmalıdır ya da daha yüksek. Visual Studio 2017 ve Visual Studio 2015, Visual Studio 2015 araç setini kullanarak oluşturulan uygulamaları tarafından yeniden dağıtılabilir dosyaları kullanılabilir 2017 anlamına gelir uyumlu araç takımı sürüm numarasına sahip. Uyumlu olabilir, ancak 2017 araç takımı kullanılarak oluşturulan uygulamaları 2015 redistributable dosyalarında kullanılmasını desteklemez. Aynı veya araç takımı sürümden daha yeni bir yeniden dağıtılabilir paketi kullanarak yalnızca destekler.
 
 Yeniden dağıtılabilir DLL'leri, yükleyici ile eklemek için başka bir yolu kullanmaktır *birleştirme modülleri*. Bu Microsoft Installer modüller dahil ve uygulama yükleyicisi tarafından yüklenen. Birleştirme modülleri yeniden dağıtılabilir DLL'ler için Visual Studio yükleme dizini altında bulunur \\VC\\Redist\MSVC\\*sürüm*\\MergeModules\\ . Bu dosyaları bulunan Visual Studio'nun önceki sürümleri, \\Program Files veya \\Program Files (x86) Common Files dizininde\\birleştirme modülleri alt. Bu dosyalar kullanımı hakkında daha fazla bilgi için bkz: [birleştirme modüllerini kullanarak bileşenleri yeniden dağıtma](../ide/redistributing-components-by-using-merge-modules.md).
 
@@ -41,7 +41,7 @@ Tek tek yeniden dağıtılabilir DLL'leri de Visual Studio yüklemenizin dahil e
 
 Bağımlılıklar listesine sahip olduğunuzda Microsoft Visual Studio yükleme dizininde bulunan Redist.txt dosyasındaki bağlı listesi ya da ""Dağıtılabilir kod dosyaları"bölümünde başvurulan REDIST" yeniden dağıtılabilir DLL'lerin listesini bu karşılaştırın Microsoft Yazılımı Lisans koşulları Visual Studio kopyası için. Visual Studio 2017 için bkz: [Microsoft Visual Studio 2017 (yardımcı programları içerir, genişletilebilirlik ve BuildServer Dosyaları) için dağıtılabilir kod](http://go.microsoft.com/fwlink/p/?linkid=823098). Visual Studio 2015 için bkz: [Microsoft Visual Studio 2015 ve Microsoft Visual Studio 2015 SDK (içerir yardımcı programları ve BuildServer Dosyaları) için dağıtılabilir kod](http://go.microsoft.com/fwlink/p/?linkid=799794). Visual Studio 2013 için listenin çevrimiçi kullanılabilir [Microsoft Visual Studio 2013 ve Microsoft Visual Studio 2013 SDK için dağıtılabilir kod](http://go.microsoft.com/fwlink/p/?LinkId=313603).
 
-C çalışma zamanı kitaplığı (CRT) Visual Studio 2015 önce Visual Studio sürümlerinde, bir yeniden dağıtılabilir DLL'de msvc olarak dahil*sürüm*.dll. Visual Studio 2015'ten başlayarak, CRT işlevlerde vcruntime ve UCRT halinde bulunanad. UCRT Windows 10, Windows Update tarafından yönetilen bir sistem bileşeni sunulmuştur. Tüm Windows 10 işletim sistemlerinde kullanılabilir. Uygulamanızı daha eski işletim sistemlerini dağıtmak için UCRT de yeniden dağıtmanız gerekebilir. UCRT herhangi bir sürümü zaten yüklüyse, yalnızca işletim sistemlerinde Windows 10'dan önceki yüklenir, Visual Studio yeniden dağıtılabilir dosyaları dahil ve yalnızca UCRT eski bir sürümü. Alt düzey sistemler için UCRT Microsoft Sistem güncelleştirmesi paketi olarak yüklenebilen bir sürümü için bkz: [Windows 10 Universal C çalışma zamanı](https://www.microsoft.com/en-us/download/details.aspx?id=48234) Microsoft Download Center'da.
+C çalışma zamanı kitaplığı (CRT) Visual Studio 2015 önce Visual Studio sürümlerinde, bir yeniden dağıtılabilir DLL'de msvc olarak dahil*sürüm*.dll. Visual Studio 2015'ten başlayarak, CRT işlevlerde vcruntime ve UCRT halinde bulunanad. UCRT Windows 10, Windows Update tarafından yönetilen bir sistem bileşeni sunulmuştur. Tüm Windows 10 işletim sistemlerinde kullanılabilir. Uygulamanızı daha eski işletim sistemlerini dağıtmak için UCRT de yeniden dağıtmanız gerekebilir. UCRT herhangi bir sürümü zaten yüklüyse, yalnızca işletim sistemlerinde Windows 10'dan önceki yüklenir, Visual Studio yeniden dağıtılabilir dosyaları dahil ve yalnızca UCRT eski bir sürümü. Alt düzey sistemler için UCRT Microsoft Sistem güncelleştirmesi paketi olarak yüklenebilen bir sürümü için bkz: [Windows 10 Universal C çalışma zamanı](https://www.microsoft.com/download/details.aspx?id=48234) Microsoft Download Center'da.
 
 Visual Studio'da bulunan dosyaların tamamını dağıtamazsınız; Redist.txt'e veya çevrimiçi "listesidir." Belirtilen dosyaları yeniden dağıtmak için yalnızca izin verilen Uygulamaların hata ayıklama sürümleri ve çeşitli Visual C++ hata ayıklama DLL'leri dağıtılamaz. Daha fazla bilgi için bkz: [dağıtım yöntemi seçme](../ide/choosing-a-deployment-method.md).
 
