@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33377894"
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 Bir denetim (Denetim geliştirici tarafından belirlenir) bazı eylemler (örneğin, bir tuş vuruşu, fare tıklatma veya denetimin durumunu değişiklik) gerçekleştirilmedi kapsayıcısı bildir istediği her bir olay tetikleme işlevi çağırır. Bu işlev, bazı önemli eylem ilgili olay tetikleme tarafından oluştu denetimi kapsayıcısı bildirir.  

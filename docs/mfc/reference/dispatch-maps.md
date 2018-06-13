@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33377102"
 ---
 # <a name="dispatch-maps"></a>Eşlemeleri Dağıtma
 OLE Otomasyon yöntemlerini çağırmaya ve uygulamalar arasında özelliklere erişmek için yöntemler sağlar. Bu istekleri gönderme için Microsoft Foundation Class Kitaplığı tarafından sağlanan "nesne işlevler ve Özellikler yanı sıra, Özellikler'in ve veri türleri iç ve dış adlarını atar gönderme harita" mekanizmadır işlev bağımsız değişkenleri.  

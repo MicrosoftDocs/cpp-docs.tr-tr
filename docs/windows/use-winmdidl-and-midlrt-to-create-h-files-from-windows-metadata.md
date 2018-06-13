@@ -18,6 +18,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891730"
 ---
 # <a name="how-to-use-winmdidlexe-and-midlrtexe-to-create-h-files-from-windows-metadata"></a>Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe programını kullanma
 Winmdidl.exe ve midlrt.exe COM düzeyinde etkileşim yerel C++ kod ve Windows çalışma zamanı bileşenleri arasındaki etkinleştirin. Giriş Windows çalışma zamanı bileşeni için meta veriler içeriyor ve bir IDL dosyası çıkaran bir .winmd dosyası olarak Winmdidl.exe alır. Midlrt.exe IDL dosyayı C++ kodu tüketebileceği üstbilgi dosyaları dönüştürür. Her iki Araçları komut satırı üzerinde çalıştırın.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33094377"
 ---
 # <a name="type-system-ccx"></a>Sistem türü (C + +/ CX)
 Windows çalışma zamanı mimarisi kullanarak, C + kullanabileceğiniz +/ CX, Visual Basic, Visual C# ve JavaScript uygulamaları ve doğrudan Windows API'sine erişim ve diğer Windows çalışma zamanı uygulamaları ve bileşenleri ile birlikte çalışmak bileşenler yazmak için. C++ ile yazılmış Evrensel Windows platformu uygulamaları CPU doğrudan yürütür yerel koda derleyin. C# veya Visual Basic ile yazılmış Evrensel Windows platformu uygulamaları Microsoft Ara dili (MSIL) derleyip ortak dil çalışma zamanında (CLR) çalıştırın. JavaScript'te yazılmış Evrensel Windows platformu uygulamaları bir çalışma zamanı ortamında yürütün. Windows çalışma zamanı işletim sistemi bileşenleri kendilerini C++ ile yazılmış ve yerel kodu olarak çalıştırın. Tüm bu bileşenleri ve evrensel Windows platformu uygulamaları doğrudan Windows çalışma zamanı uygulama ikili arabirimi aracılığıyla (ABI) iletişim kurar.  

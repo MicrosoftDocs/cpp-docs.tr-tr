@@ -41,6 +41,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33372625"
 ---
 # <a name="chttpfile-class"></a>CHttpFile sınıfı
 İstek ve bir HTTP sunucusunda dosyaları okumak için işlevsellik sağlar.  
