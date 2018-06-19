@@ -45,6 +45,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33374759"
 ---
 # <a name="cusertool-class"></a>CUserTool sınıfı
 Bir dış uygulama çalıştıran bir menü öğesi bir kullanıcı aracıdır. **Araçları** sekmesinde **Özelleştir** iletişim kutusu ( [CMFCToolBarsCustomizeDialog sınıfı](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)) kullanıcının kullanıcı araçları ekleme ve adı, komutu, bağımsız değişken belirtmenizi sağlar ve Her kullanıcı aracı için başlangıç dizini.  

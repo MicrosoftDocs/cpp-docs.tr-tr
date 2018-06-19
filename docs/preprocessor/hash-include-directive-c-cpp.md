@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33843554"
 ---
 # <a name="include-directive-cc"></a>#include Yönergesi (C/C++)
 Kaynak programda yönergesi göründüğü noktada göründükleri gibi belirtilen bir dosyanın içeriğini işlemek için önişlemci söyler.  

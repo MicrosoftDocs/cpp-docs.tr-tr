@@ -31,6 +31,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33350659"
 ---
 # <a name="menus-and-resources-container-additions"></a>Menüler ve Kaynaklar: Kapsayıcı Ekleme
 Bu makalede menüleri ve diğer kaynaklara bir görsel düzenleme kapsayıcı uygulamasında yapılması gereken değişiklikleri açıklar.  

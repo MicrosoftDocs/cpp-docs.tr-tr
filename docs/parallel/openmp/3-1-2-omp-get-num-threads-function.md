@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687445"
 ---
 # <a name="312-ompgetnumthreads-function"></a>3.1.2 omp_get_num_threads İşlevi
 **Omp_get_num_threads** işlevi döndürür iş parçacığı sayısı şu anda içinden çağırıldığında paralel bölge yürütme takım. Biçimi aşağıdaki gibidir:  

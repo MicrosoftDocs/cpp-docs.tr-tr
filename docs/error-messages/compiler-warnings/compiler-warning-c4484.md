@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33274761"
 ---
 # <a name="compiler-warning-c4484"></a>Derleyici Uyarısı C4484
 'override_function': temel ref sınıf yöntemi 'base_class_function' ile eşleşir, ancak 'sanal', 'new' veya 'override'; işaretlenmedi 'Yeni' (ve 'sanal') kabul edilir  

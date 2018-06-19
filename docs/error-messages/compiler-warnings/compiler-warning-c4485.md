@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33270444"
 ---
 # <a name="compiler-warning-c4485"></a>Derleyici Uyarısı C4485
 'override_function': temel ref sınıf yöntemi 'base_class_function' ile eşleşir, ancak işaretlenen 'Yeni' veya 'override'; 'Yeni' (ve 'sanal') kabul edilir  

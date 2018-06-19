@@ -47,6 +47,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33372962"
 ---
 # <a name="cmfctooltipctrl-class"></a>CMFCToolTipCtrl sınıfı
 Genişletilmiş araç ipucu uygulaması temel alarak [CToolTipCtrl sınıfı](../../mfc/reference/ctooltipctrl-class.md). Bir araç ipucu temel alarak `CMFCToolTipCtrl` sınıfı bir simge, bir etiket ve açıklama görüntüleyebilirsiniz. Gradyan Dolgu, özel metin ve renkler, kalın metin, yuvarlatılmış köşeleri veya balon stil kullanarak görünümünü özelleştirebilirsiniz.  

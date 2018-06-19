@@ -23,6 +23,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687432"
 ---
 # <a name="unsupportedos-class"></a>unsupported_os Sınıfı
 Bu sınıf, desteklenmeyen bir işletim sistemi kullanıldığında, bir özel durum açıklar.  

@@ -60,6 +60,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33378975"
 ---
 # <a name="record-field-exchange-functions"></a>Kayıt Alanı Değişim İşlevleri
 Bu konu kayıt alanı değişimi (RFX, toplu RFX ve DFX) listeler bir kayıt kümesi nesnesi ve veri kaynağı arasındaki veri aktarımını otomatikleştirmek ve veriler üzerinde başka işlemler gerçekleştirmek için kullanılan işlevleri.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381530"
 ---
 # <a name="toolbar-sample-list"></a>Araç Çubuğu Örnek Listesi
 MFC'nin araç çubuklarını kullanma gösteren aşağıdaki örnek programlar bakın:  

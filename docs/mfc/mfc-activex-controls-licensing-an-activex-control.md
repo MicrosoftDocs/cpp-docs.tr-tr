@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33353941"
 ---
 # <a name="mfc-activex-controls-licensing-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Lisanslama
 Destek lisanslama, ActiveX denetimlerinin, isteğe bağlı bir özellik sağlar. kullanabilir veya denetim dağıtmak kimin. (Lisans sorunları lisans sorunları, ek açıklama için bkz [varolan bir ActiveX denetimini güncelleştirme](../mfc/upgrading-an-existing-activex-control.md).)  

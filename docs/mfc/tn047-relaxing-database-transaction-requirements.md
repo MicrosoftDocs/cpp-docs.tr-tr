@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380940"
 ---
 # <a name="tn047-relaxing-database-transaction-requirements"></a>TN047: Veritabanı İşlem Gereksinimlerini Gevşetme
 MFC ODBC veritabanı sınıfları hareket gereksinimlerini ele alınan, bu Teknik Not artık kullanılmıyor. MFC 4.2 önce veritabanı sınıfları imleçler kayıt kümeleri sonra korunması gereken bir **CommitTrans** veya **geri alma** işlemi. ODBC sürücüsü ve DBMS bu düzeyde bir imleç korunması desteklememektedir, veritabanı sınıfları işlemleri etkinleştirmediniz.  

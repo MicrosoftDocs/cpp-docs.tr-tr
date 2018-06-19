@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33353504"
 ---
 # <a name="mfc-activex-controls-serializing"></a>MFC ActiveX Denetimleri: Seri Hale Getirme
 Bu makalede bir ActiveX denetimini serileştirmek nasıl anlatılmaktadır. Seri hale getirme okuma veya bir disk dosyası gibi bir kalıcı depolama ortamına yazma işlemidir. Microsoft Foundation Class (MFC) kitaplığı, sınıfında serileştirilmesi için yerleşik destek sağlar. `CObject`. `COleControl` Bu destek ActiveX denetimlerine özelliği değişimi mekanizması kullanımı ile uzatır.  

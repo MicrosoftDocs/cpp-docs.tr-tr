@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348995"
 ---
 # <a name="property-sheets-and-property-pages-mfc"></a>Özellik Bölümleri ve Özellik Sayfaları (MFC)
 Bir MFC [iletişim kutusu](../mfc/dialog-boxes.md) "iletişim sekmesinde" bir görünüm üzerinde özellik bölümleri ve özellik sayfaları ekleme alabilir. "Özellik sayfası" adı verilen MFC'de dosya klasörleri yedeklemek için ön veya bir grup art arda windows görülen yığınını benzediğini sekmeli sayfaları yığınını içerecek şekilde bu tür bir Microsoft Word, Excel ve Visual C++, birçok iletişim kutularında benzer iletişim kutusu görüntülenir. Ön sekmesindeki denetimleri görünür; Yalnızca etiketli sekme arka sekmelerde görülebilir. Özellik sayfaları çok sayıda özellikleri veya oldukça düzgün çeşitli gruplar halinde kalan ayarlarını yönetmek için özellikle yararlıdır. Genellikle, bir özellik sayfasını, birçok ayrı iletişim kutuları değiştirerek bir kullanıcı arabirimi basitleştirebilir.  

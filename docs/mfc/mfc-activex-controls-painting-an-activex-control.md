@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33354095"
 ---
 # <a name="mfc-activex-controls-painting-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Boyama
 Bu makalede, ActiveX denetimini boyama işleminin ve boyama kod işlemi iyileştirmek için nasıl alter açıklanır. (Bkz [denetim çizim en iyi duruma getirme](../mfc/optimizing-control-drawing.md) teknikleri denetimleri tek tek zorunluluğunu ortadan kaldırarak çizim iyileştirmek nasıl daha önce seçilen GDI nesneleri geri yüklemek için. Tüm denetimler çizilmiş sonra kapsayıcı otomatik olarak özgün nesneleri geri yükleyebilirsiniz.)  

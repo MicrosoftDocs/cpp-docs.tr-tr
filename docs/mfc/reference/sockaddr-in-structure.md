@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33373644"
 ---
 # <a name="sockaddrin-structure"></a>SOCKADDR_IN Yapısı
 Internet adresi ailesindeki `SOCKADDR_IN` yapısı yuva bağlantı kurmak için bir yerel veya uzak uç noktası adresi belirtmek için Windows Sockets tarafından kullanılır.  

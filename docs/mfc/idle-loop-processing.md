@@ -31,6 +31,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33354907"
 ---
 # <a name="idle-loop-processing"></a>Boşta Çevrim İşleme
 Birçok uygulama "arka planda." uzun yönlendirilmeden Bazen performans değerlendirmeleri gibi iş için çoklu iş parçacığı kullanımı kullanarak dikte. İş parçacığı içeren ek geliştirme yükünü MFC yapar boşta kalma süresi iş gibi basit görevleri için önerilmez şekilde [ONIDLE](../mfc/reference/cwinthread-class.md#onidle) işlevi. Bu makalede üzerindeki boşta işleme odaklanır. Çoklu iş parçacığı kullanımı, bkz: hakkında daha fazla bilgi için [çoklu iş parçacığı kullanımı konuları](../parallel/multithreading-support-for-older-code-visual-cpp.md).  

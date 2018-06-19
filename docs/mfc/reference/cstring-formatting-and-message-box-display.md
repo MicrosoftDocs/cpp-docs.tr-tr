@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33375047"
 ---
 # <a name="cstring-formatting-and-message-box-display"></a>CString Biçimlendirmesi ve İleti Kutusu Görüntüleme
 Biçimlendirmek ve ayrıştırmak için bir dizi işlev sağlanan `CString` nesneleri. İşlemek sahip olduğunda bu işlevler kullanabilirsiniz `CString` nesneleri, ancak ileti kutusu metin olarak görünür dizeleri biçimlendirme için yararlıdır.  

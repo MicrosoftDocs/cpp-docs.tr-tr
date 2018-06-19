@@ -17,6 +17,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33845914"
 ---
 # <a name="porting-guide-mfc-scribble"></a>Taşıma Kılavuzu: MFC Scribble
 Visual Studio için Visual Studio 2017 eski sürümlerinde oluşturulan Visual C++ projeleri için yükseltme yordamını dağıtır çeşitli konular ilk konudur. Bu konularda yükseltme işlemi oldukça basit bir proje ile başlayan ve biraz daha karmaşık olanları taşıma örneği tarafından tanıtır. Bu konuda, belirli bir projenin, MFC karalama yükseltme sürecinde size çalışır. C++ projeleri için uygun yükseltme işlemi için temel bir giriş olarak.  

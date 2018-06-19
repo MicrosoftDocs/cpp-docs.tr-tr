@@ -35,6 +35,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33369674"
 ---
 # <a name="cfont-class"></a>CFont sınıfı
 Bir Windows grafik cihaz arabirimi (GDI) yazı tipi yalıtır ve yazı tipi yönlendirmek için üye işlevleri sağlar.  

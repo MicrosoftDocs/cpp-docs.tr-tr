@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33372398"
 ---
 # <a name="systemtime-structure1"></a>SYSTEMTIME Structure1
 `SYSTEMTIME` Bir tarih ve saat ay, gün, yıl, hafta içi günü, saat, dakika, saniye ve milisaniye için tek tek üyeleri kullanarak yapısını temsil eder.  

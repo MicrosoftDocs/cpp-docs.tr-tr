@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349857"
 ---
 # <a name="rebar-controls-and-bands"></a>Rebar Denetimleri ve Bantları
 Alt pencereler, ortak iletişim kutusu denetimleri, menüler, araç çubukları ve benzeri için kapsayıcı olarak hareket edecek bir rebar denetimi ana amacı budur. Bu kapsama bir "bant." kavramı tarafından desteklenir Her rebar bant Mandal çubuğu, bir bit eşlem, bir metin etiketi ve alt pencere herhangi bir birleşimini içerebilir.  

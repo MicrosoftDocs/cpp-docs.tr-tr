@@ -43,6 +43,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33374516"
 ---
 # <a name="coledataobject-class"></a>COleDataObject sınıfı
 Veri aktarımları ile sürükle ve bırak, Pano veya katıştırılmış OLE öğeyi çeşitli biçimlerde verileri almak için kullanılır.  

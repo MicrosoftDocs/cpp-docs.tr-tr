@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349435"
 ---
 # <a name="interpreting-user-input-through-a-view"></a>Bir Görünümü Kullanarak Kullanıcı Girişini Yorumlama
 Diğer üye işlevleri görünümün işlemek ve tüm kullanıcı girişi yorumlayabilir. Genellikle, işlenecek görünümü sınıfınızda ileti işleyicisi üye işlevleri tanımlayacaksınız:  

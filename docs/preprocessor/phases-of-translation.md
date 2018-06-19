@@ -24,6 +24,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33842774"
 ---
 # <a name="phases-of-translation"></a>Çeviri Aşamaları
 C ve C++ programlarında her biri bazı program metin içeren bir veya daha fazla kaynak dosyaları oluşur. INCLUDE dosyalarından birlikte bir kaynak dosyası (kullanarak dahil olan dosyaları `#include` önişlemci yönergesi), ancak koşullu derleme yönergeleri tarafından gibi kaldırılan kodun bölümlerini dahil değil `#if`, "çeviri birim." olarak adlandırılır  

@@ -59,6 +59,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33376203"
 ---
 # <a name="cusertoolsmanager-class"></a>CUserToolsManager sınıfı
 Koleksiyonunu tutan [CUserTool sınıfı](../../mfc/reference/cusertool-class.md) bir uygulamadaki nesneler. Bir dış uygulama çalıştıran bir menü öğesi bir kullanıcı aracıdır. `CUserToolsManager` Kullanıcı ya da yeni kullanıcı araçları uygulama eklemek için geliştirici nesnesi sağlar. Kullanıcı araçları ile ilişkili komutlarının yürütülmesini destekler ve ayrıca Windows kayıt defterinde kullanıcı araçları hakkında bilgi kaydeder.  

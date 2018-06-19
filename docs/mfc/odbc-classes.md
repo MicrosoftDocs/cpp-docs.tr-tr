@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348146"
 ---
 # <a name="odbc-classes"></a>ODBC Sınıfları
 Bu sınıfları, çok çeşitli açık veritabanı bağlantısı (ODBC) sürücüler kullanılabilir veritabanları için kolay erişim sağlamak için diğer uygulama framework sınıfları birlikte çalışın.  

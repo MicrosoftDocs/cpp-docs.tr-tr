@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33373217"
 ---
 # <a name="type-library-access"></a>Tür Kitaplığı Erişimi
 Tür kitaplıkları OLE kullanan diğer uygulamalar için bir OLE denetiminin arabirimleri kullanıma sunar. Açığa çıkarılması bir veya daha fazla arabirimin olması durumunda her OLE denetim bir tür kitaplığı olması gerekir.  

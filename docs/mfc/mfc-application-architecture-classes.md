@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33351436"
 ---
 # <a name="mfc-application-architecture-classes"></a>MFC Uygulama Mimarisi Sınıfları
 Bu kategorideki sınıfları framework uygulaması mimarisini katkıda. Bunların çoğu uygulamaları için ortak işlevselliği sağlar. Uygulamaya özel işlevsellik eklemek için Framework'te doldurun. Genellikle, yeni sınıflar mimarisi sınıflarından türetme ve yeni üye ekleme veya var olan üye işlevlerini geçersiz kılma bunu.  

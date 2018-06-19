@@ -61,6 +61,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33355639"
 ---
 # <a name="canimationgroup-class"></a>CAnimationGroup sınıfı
 Bir animasyon film şeridi, animasyon nesneler ve bir animasyon tanımlamak için geçişler birleştiren bir animasyon grubu uygular.  

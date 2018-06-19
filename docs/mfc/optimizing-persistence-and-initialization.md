@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33355669"
 ---
 # <a name="optimizing-persistence-and-initialization"></a>Kalıcılığı ve Başlatmayı İyileştirme
 Varsayılan olarak, kalıcılığı ve başlatmayı denetiminde tarafından işlenen `DoPropExchange` üye işlevi. Tipik bir denetiminde birkaç çağrıları bu işlevi içeren **PX_** işlevleri (`PX_Color`, `PX_Font`, vb.), her bir özellik için bir tane.  

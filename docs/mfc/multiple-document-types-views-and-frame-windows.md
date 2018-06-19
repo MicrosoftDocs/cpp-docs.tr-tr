@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33352164"
 ---
 # <a name="multiple-document-types-views-and-frame-windows"></a>Birden Fazla Belge Türü, Görünüm ve Çerçeve Penceresi
 Bir belge, kendi Görünüm ve çerçeve penceresi standart ilişkiyi açıklanan [belge/görünüm oluşturma](../mfc/document-view-creation.md). Birçok uygulama destekleyen tek bir belge türü (ancak büyük olasılıkla bu türdeki birden çok açık belgeler) tek bir görünümde belge ve belge başına yalnızca bir çerçeve penceresi. Ancak, bazı uygulamaları bir veya daha fazla bu Varsayılanları değiştirmeniz gerekebilir.  

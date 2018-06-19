@@ -17,6 +17,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33846109"
 ---
 # <a name="porting-to-the-universal-windows-platform-c"></a>Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
 Bu konuda, mevcut C++ kodunu Evrensel Windows platformu Windows 10 uygulaması platformunuz için bağlantı noktası hakkında bilgi bulabilirsiniz. Terim tarafından anlamına gelir *Evrensel* kodunuzu herhangi bir Windows 10 Masaüstü, telefon, Tablet ve Windows 10 çalıştıran gelecekteki cihazlar dahil olmak üzere, çalıştıran aygıtlar üzerinde çalıştırılabilir. Tek bir proje ve Windows 10 çalıştıran iyi herhangi bir cihazda çalışan tek bir XAML tabanlı kullanıcı arabirimi oluşturun. Farklı ekran boyutlarına uyarlamak uygulamanın UI izin vermek için XAML içinde dinamik düzen özelliklerini kullanabilirsiniz.  

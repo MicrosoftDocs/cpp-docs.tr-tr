@@ -25,6 +25,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33846161"
 ---
 # <a name="define-directive-cc"></a>#define Yönergesi (C/C++)
 `#define` Oluşturur bir *makrosu*, bir belirteç dizesi ilişkide bir tanımlayıcı veya parametreli tanımlayıcısı olduğu. Makro tanımlandıktan sonra kaynak dosya tanımlayıcıda her örneği için belirteç dizesini derleyici yerine kullanabilirsiniz.  

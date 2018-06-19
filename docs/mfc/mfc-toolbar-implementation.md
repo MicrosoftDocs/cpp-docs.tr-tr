@@ -32,6 +32,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33360972"
 ---
 # <a name="mfc-toolbar-implementation"></a>MFC Araç Çubuğu Uygulaması
 Bir araç çubuğu bir [denetim çubuğu](../mfc/control-bars.md) denetimleri bit eşlem görüntülerini içerir. Bu görüntüleri pushbuttons, onay kutusu veya radyo düğmeleri gibi davranabilir. MFC sınıf sağlayan [CToolbar](../mfc/reference/ctoolbar-class.md) araç çubukları yönetmek için.  

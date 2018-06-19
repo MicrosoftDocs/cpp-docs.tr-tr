@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33374730"
 ---
 # <a name="ole-initialization"></a>OLE Başlatma
 Bir uygulama OLE Sistem Hizmetleri kullanabilmeniz için OLE sistem DLL'leri başlatma ve DLL'ler sürümünün doğru olduğundan emin olun gerekir. **Afxoleınit** işlevi OLE sistem DLL'leri başlatır.  

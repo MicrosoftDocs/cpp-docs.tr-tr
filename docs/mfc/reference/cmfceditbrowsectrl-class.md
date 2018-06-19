@@ -41,6 +41,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33369329"
 ---
 # <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl sınıfı
 `CMFCEditBrowseCtrl` Sınıfı, isteğe bağlı olarak bir Gözat düğmesi içeren bir düzenlenebilir metin kutusu düzenleme Gözat denetimi destekler. Kullanıcı Gözat düğmesine tıkladığında, Denetim özel bir eylem gerçekleştiren veya bir dosya tarayıcısı veya bir klasörü tarayıcı içeren bir standart iletişim kutusu görüntüler.  

@@ -35,6 +35,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33373083"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl sınıfı
 `CNetAddressCtrl` Sınıfı, giriş ve IPv4, IPv6 ve adlandırılmış DNS adreslerini biçimi doğrulamak için kullanabileceğiniz ağ adresi denetimi temsil eder.  

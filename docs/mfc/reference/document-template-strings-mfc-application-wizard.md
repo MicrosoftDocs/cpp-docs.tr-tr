@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33373546"
 ---
 # <a name="document-template-strings-mfc-application-wizard"></a>Belge Şablonu Dizeleri, MFC Uygulama Sihirbazı
 MFC Uygulama Sihirbazı'nın bu sayfasında, sağlayın veya belge yönetimi ve yerelleştirme yardımcı olması için aşağıdaki seçeneklerden daraltın. Belge şablonu dizeleri içeren uygulamalar için kullanılabilir **belge/görünüm mimarisi desteği** içinde [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md). İletişim kutuları için kullanılamaz. Çoğu belge şablonu dizeleri görünür ve uygulamanın kullanıcılar tarafından kullanılan olduğundan, bunlar içine yerelleştirilmiştir **kaynak dili** belirtilen **uygulama türü** Sihirbazı sayfası.  

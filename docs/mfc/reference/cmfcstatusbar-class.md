@@ -87,6 +87,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33376167"
 ---
 # <a name="cmfcstatusbar-class"></a>CMFCStatusBar sınıfı
 `CMFCStatusBar` Sınıfı uygulayan benzer bir durum çubuğu `CStatusBar` sınıfı. Ancak, `CMFCStatusBar` sınıfı tarafından sunulmuyor özelliklere sahiptir `CStatusBar` görüntüleri, animasyonları ve ilerleme çubukları; görüntüleme olanağı ve fare çift tıklamalar yanıt verme yeteneği gibi sınıfı. 

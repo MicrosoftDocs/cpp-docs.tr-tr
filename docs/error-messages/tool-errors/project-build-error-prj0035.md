@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33321866"
 ---
 # <a name="project-build-error-prj0035"></a>Proje Derleme Hatası PRJ0035
 XML dosyası 'dosya' kullanıcının ANSI kod sayfasına çevrilemedi Unicode içeriği içerir.  

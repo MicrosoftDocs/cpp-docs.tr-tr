@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33842237"
 ---
 # <a name="token-pasting-operator-"></a>Belirteç Yapıştıran İşleç (##)
 Çift sayı işareti ya da "belirteç yapıştıran" işleci (**##**), bazen "birleştirme" işleci çağırıldığı nesnenin benzeri hem işlevi benzeri makrolarındaki kullanılır. Ayrı belirteçlerin tek bir belirteç olarak birleştirilmesini sağlar ve bu nedenle makro tanımında ilk veya son belirteç olamaz.  

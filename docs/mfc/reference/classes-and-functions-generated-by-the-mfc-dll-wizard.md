@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33366131"
 ---
 # <a name="classes-and-functions-generated-by-the-mfc-dll-wizard"></a>MFC DLL Sihirbazı Tarafından Üretilen Sınıfları ve İşlevler
 MFC DLL Sihirbazı'nın oluşturduğu Kodu Oluşturmakta olduğunuz DLL ve seçtiğiniz seçenekleri türüne bağlıdır. MFC DLL Sihirbazı'nın hem Normal MFC DLL'leri formlar için aynı kodu oluşturur.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33242744"
 ---
 # <a name="compiler-error-c2943"></a>Derleyici Hatası C2943
 'class': türü sınıfı kimliği bir şablon bir tür bağımsız değişkeni olarak yeniden tanımlandı  

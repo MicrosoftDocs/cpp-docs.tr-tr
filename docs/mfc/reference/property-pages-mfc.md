@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33376564"
 ---
 # <a name="property-pages-mfc"></a>Özellik Sayfaları (MFC)
 Özellik sayfaları görüntüleme ve düzenleme iletişim kutusu veri değişimi (DDX) dayalı bir veri eşleme mekanizması destekleyerek için özelleştirilebilir, grafik bir arabirim belirli OLE denetim özellikleri geçerli değerlerini görüntüler.  

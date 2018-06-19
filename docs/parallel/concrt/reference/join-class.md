@@ -31,6 +31,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33692645"
 ---
 # <a name="join-class"></a>join Sınıfı
 A `join` ileti bloğu bir tek-hedef, çok kaynaklı, sıralı `propagator_block` bir araya getiren birlikte türden iletileri `T` her kaynaklarının.  

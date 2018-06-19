@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33355541"
 ---
 # <a name="help-menu-merging"></a>Yardım Menüsü Birleştirme
 Bir nesne bir kapsayıcıda etkin olduğunda, OLE belgelerin Protokolü birleştirme menüsü nesne tam denetim verir **yardımcı** menüsü. Sonuç olarak, kullanıcı nesnesi devre dışı bırakır sürece kapsayıcının Yardım konuları kullanılabilir değildir. Etkin belge kapsama mimarisi kapsayıcı ve menü paylaşmak için etkin bir etkin belgeyi izin vermek için birleştirme yerinde menüsü kurallarında genişletir. Yeni kurallar, hangi bileşen menü hangi kısmının sahip olan ve paylaşılan menü nasıl oluşturulur hakkında yalnızca ek kurallardır.  

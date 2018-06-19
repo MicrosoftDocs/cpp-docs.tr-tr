@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33351608"
 ---
 # <a name="application-settings-mfc-activex-control-wizard"></a>Uygulama Ayarları, MFC ActiveX Denetim Sihirbazı
 Tasarım ve yeni bir MFC ActiveX projesine temel özellikleri eklemek için MFC ActiveX Denetim Sihirbazı'nın bu sayfayı kullanın. Bu ayarlar uygulamanın kendisinin ve belirli veritabanında bir veya daha fazla denetim öğesinin geçerlidir.  

@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33350061"
 ---
 # <a name="documentview-architecture"></a>Belge/Görünüm Mimarisi
 Varsayılan olarak, MFC Uygulama Sihirbazı'nı bir belge ve görünüm sınıfı ile uygulamanın çatıyı oluşturur. MFC bu iki sınıf veri yönetime ayırır. Belge verileri depolar ve verileri yazdırma yönetir ve verilerin birden çok görünüm güncelleştiriliyor düzenler. Görünüm verileri görüntüler ve onunla, düzenleme ve seçim dahil olmak üzere kullanıcı etkileşimi yönetir.  
