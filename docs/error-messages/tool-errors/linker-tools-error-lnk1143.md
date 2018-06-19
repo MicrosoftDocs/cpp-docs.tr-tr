@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33294709"
 ---
 # <a name="linker-tools-error-lnk1143"></a>Bağlayıcı Araçları Hatası LNK1143
 geçersiz veya bozuk dosya: comdat'ı bölüm numarası yok simgesi  

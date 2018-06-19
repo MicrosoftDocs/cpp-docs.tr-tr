@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347087"
 ---
 # <a name="files-in-mfc"></a>MFC'deki Dosyalar
 Microsoft Foundation Class Kitaplığı (MFC içinde), sınıf [CFile](../mfc/reference/cfile-class.md) normal dosya g/ç işlemleri gerçekleştirir. Bu makaleler ailesi, açın ve dosyaları kapatın yanı sıra okuma ve bu dosyaların veri yazma açıklanmaktadır. Ayrıca, dosya durum işlemleri anlatılmaktadır. MFC nesne tabanlı serileştirme özelliklerini okuma ve veri dosyaları yazılıyor alternatif bir yolu olarak kullanmak üzere nasıl açıklaması için bkz [seri hale getirme](../mfc/serialization-in-mfc.md).  

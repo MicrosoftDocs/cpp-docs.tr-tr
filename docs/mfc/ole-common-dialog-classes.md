@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348110"
 ---
 # <a name="ole-common-dialog-classes"></a>OLE Ortak İletişim Kutusu Sınıfları
 Bu sınıfları, bir dizi standart OLE iletişim kutuları uygulayarak ortak OLE görevler işleyin. Bunlar ayrıca OLE işlevselliği için tutarlı bir kullanıcı arabirimi sağlar.  

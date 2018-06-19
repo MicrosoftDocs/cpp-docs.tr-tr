@@ -326,6 +326,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33378897"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar sınıfı
 `CMFCToolBar` Sınıfı benzer [CToolBar sınıfı](../../mfc/reference/ctoolbar-class.md), ancak kullanıcı arabirimi özellikleri için ek destek sağlar. Bu düz araç çubukları, araç çubukları etkin görüntüler büyük simgeler, çağrı cihazı düğmeleri, kilitli araç çubukları, rebar denetimleri, görüntü, arka plan görüntüleri altındaki metin ile içerir ve araç çubuklarını sekmeli. `CMFCToolBar` Sınıfı da kullanıcı özelleştirmesi araç çubukları için yerleşik destek içerir ve menüler, sürükle ve bırak araç çubukları ve menü, birleşik giriş kutusu düğmeler arasına kutusunu düğmeler, renk seçiciler ve dökümü düğmeleri düzenleyin.

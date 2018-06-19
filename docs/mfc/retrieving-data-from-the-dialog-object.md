@@ -36,6 +36,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380214"
 ---
 # <a name="retrieving-data-from-the-dialog-object"></a>İletişim Nesnesinden Veriyi Geri Alma
 Framework'te iletişim kutusu denetimleri değerlerini başlatılamadı ve denetimlerden değerleri almak için kolay bir yol sağlar. Daha fazla zahmetli el ile işlevleri gibi çağırmak için yaklaşımdır `SetDlgItemText` ve `GetDlgItemText` sınıfının üye işlevleri `CWnd`, Denetim windows için geçerlidir. Bu işlevler ile tek tek ayarlamak veya kendi değerini almak için her denetim işlevleri gibi çağırma erişim `SetWindowText` ve `GetWindowText`. Framework'ün yaklaşım, başlatma ve alma otomatikleştirir.  

@@ -34,6 +34,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347197"
 ---
 # <a name="memory-management-examples"></a>Bellek Yönetimi: Örnekler
 Bu makalede nasıl MFC çerçeve ayırma ve yığın ayırmaları her bellek ayırmaları tipik üç tür için gerçekleştirdiği açıklanmıştır:  

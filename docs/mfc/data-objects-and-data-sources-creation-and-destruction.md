@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347954"
 ---
 # <a name="data-objects-and-data-sources-creation-and-destruction"></a>Veri Nesneleri ve Veri Kaynakları: Oluşturma ve Yok Etme
 Makalesinde açıklandığı gibi [veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md), veri nesneleri ve veri kaynaklarını her iki tarafında bir veri aktarımı temsil eder. Bu makalede oluşturmak ve bu nesneleri ve veri aktarımları düzgün şekilde gerçekleştirmek için kaynakları yok etmek ne zaman dahil olmak üzere açıklanmaktadır:  

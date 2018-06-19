@@ -17,6 +17,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33293942"
 ---
 # <a name="compiler-warning-level-4-c4435"></a>Derleyici Uyarısı (düzey 4) C4435
 'class1' : /vd2 altındaki nesne düzeni 'class2' sanal tabanı nedeniyle değişecek  

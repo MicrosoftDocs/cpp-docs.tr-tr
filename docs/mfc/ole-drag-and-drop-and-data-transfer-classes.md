@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347048"
 ---
 # <a name="ole-drag-and-drop-and-data-transfer-classes"></a>OLE Sürükle/Bırak ve Veri Aktarımı Sınıfları
 Bu sınıfların OLE veri aktarımları kullanılır. Bunlar, uygulamalar Pano kullanarak ya da sürükle ve bırak arasında aktarılacak veri izin verin.  

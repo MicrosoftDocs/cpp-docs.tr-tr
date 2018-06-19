@@ -115,6 +115,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33378962"
 ---
 # <a name="cricheditview-class"></a>CRichEditView sınıfı
 İle [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md) ve [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md), zengin düzenleme denetimine MFC'nin belge görünüm mimarisi bağlamında işlevselliğini sağlar.  

@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347905"
 ---
 # <a name="control-bars"></a>Denetim Çubukları
 "Denetim çubuğu" araç çubukları, durum çubukları ve iletişim kutusu çubukları genel adıdır. MFC sınıfları `CToolBar`, `CStatusBar`, `CDialogBar`, `COleResizeBar`, ve **CReBar** sınıfından türetilen [CControlBar](../mfc/reference/ccontrolbar-class.md), ortak işlevleri uygular.  

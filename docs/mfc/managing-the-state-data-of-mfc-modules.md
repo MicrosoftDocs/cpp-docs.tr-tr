@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347701"
 ---
 # <a name="managing-the-state-data-of-mfc-modules"></a>MFC Modüllerinin Durum Verisini Yönetme
 Bu makalede durumu verilerini MFC modülleri ve bu durum (yolu kod aracılığıyla bir uygulama yürütülürken alır) akışını girer ve bir modül çıktığında nasıl güncelleştirileceğini açıklar. Modül durumları ile geçiş `AFX_MANAGE_STATE` ve `METHOD_PROLOGUE` makroları da ele alınmıştır.  
