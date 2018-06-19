@@ -18,6 +18,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33109144"
 ---
 # <a name="general-language-changes-ccli"></a>Genel Dil Değişiklikleri (C++/CLI)
 Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirilen CLR dil özellikleri sayısı.  

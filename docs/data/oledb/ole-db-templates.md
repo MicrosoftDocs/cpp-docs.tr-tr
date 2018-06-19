@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33109579"
 ---
 # <a name="ole-db-templates"></a>OLE DB Şablonları
 OLE DB Şablonları OLE DB veri erişimi kolaylaştırır. Visual C++ birçok yaygın olarak kullanılan OLE DB arabirimlerini uygulayan şablon sınıfları sağlar. OLE DB istemci (tüketici) uygulama yazmak için Visual C++ Tüketici Şablonları ve bir sunucu (sağlayıcı) uygulama yazmak için sağlayıcı şablonları kullanabilirsiniz.  

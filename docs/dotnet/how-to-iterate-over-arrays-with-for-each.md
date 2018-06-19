@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130509"
 ---
 # <a name="how-to-iterate-over-arrays-with-for-each"></a>Nasıl yapılır: foreach ile Diziler Üzerinden Yineleme Yapma
 Bu konuda nasıl kullanılacağını gösterir [her biri için de](../dotnet/for-each-in.md) farklı dizi türlerini on anahtar sözcüğü.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33128699"
 ---
 # <a name="how-to-wrap-native-class-for-use-by-c"></a>Nasıl yapılır: C# Tarafından Kullanılması için Yerel Sınıfı Sarmalama
 Bu örnek, C# veya diğer .NET dilinde yazılan kod tarafından kullanılabilecek şekilde yerel C++ sınıfı sarmalama gösterilmektedir.  

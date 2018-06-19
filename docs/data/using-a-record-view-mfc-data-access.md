@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33104649"
 ---
 # <a name="using-a-record-view--mfc-data-access"></a>Kayıt görünümü (MFC veri erişimi) kullanma
 Bu konu, sihirbaz sizin için yazar kayıt görünümleri için varsayılan kod yaygın olarak nasıl özelleştirebileceğinizi açıklar. Kayıt seçimi kısıtlamak istediğiniz genellikle, bir [filtre](../data/odbc/recordset-filtering-records-odbc.md) veya [parametreleri](../data/odbc/recordset-parameterizing-a-recordset-odbc.md), belki de [sıralama](../data/odbc/recordset-sorting-records-odbc.md) kayıtları SQL deyimini özelleştirme.  

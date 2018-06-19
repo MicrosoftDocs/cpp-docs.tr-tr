@@ -31,6 +31,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33109813"
 ---
 # <a name="user-records"></a>Kullanıcı Kayıtları
 Statik erişimci kullanmak için (öğesinden türetilen bir erişimci **CAccessor)**, bir kullanıcı kaydı, tüketici olmalıdır. Kullanıcı kaydını tanıtıcı giriş veya çıkış veri öğeleri içeren bir C++ sınıfıdır. ATL OLE DB Tüketici Sihirbazı tüketici için bir kullanıcı kaydı oluşturur. Komutları işleme gibi isteğe bağlı görevleri için kullanıcı kayıt yöntemleri ekleyebilirsiniz.  

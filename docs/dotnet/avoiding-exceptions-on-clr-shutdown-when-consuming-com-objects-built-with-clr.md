@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33103518"
 ---
 # <a name="avoiding-exceptions-on-clr-shutdown-when-consuming-com-objects-built-with-clr"></a>CLR Kapatmasında /clr ile Oluşturulan COM Nesnelerini Tüketirken Özel Durumları Önleme
 Ortak dil çalışma zamanı (CLR) kapatma moduna girdikten sonra yerel işlevler CLR hizmetlerine erişiminiz sınırlanır. Yayın çağırmak girişimi sırasında bir COM nesnesi ile derlenmiş **/CLR**, CLR geçişler için yerel kod ve geçişleri geri (yönetilen kodda tanımlanır) IUnknown::Release çağrısını hizmet vermek için yönetilen koda. CLR kapatma modunda olduğundan geri yönetilen koda çağrı engeller.  

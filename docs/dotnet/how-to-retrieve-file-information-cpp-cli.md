@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33127857"
 ---
 # <a name="how-to-retrieve-file-information-ccli"></a>Nasıl yapılır: Dosya Bilgisi Alma (C++/CLI)
 Aşağıdaki kod örneğinde gösterilmektedir <xref:System.IO.FileInfo> sınıfı. Bir dosya adı varsa, bu sınıfı oluşturma ve son değiştirilme dosya için dosya boyutu, dizin, tam adı ve tarih ve saat gibi ilgili bilgileri almak için kullanabilirsiniz.  

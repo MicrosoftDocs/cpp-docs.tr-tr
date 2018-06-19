@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33164576"
 ---
 # <a name="serialization-ccli"></a>Seri Hale Getirme (C++/CLI)
 Seri hale getirme (durumunu nesne veya üye kalıcı bir ortamda depolama işlemi) Yönetilen sınıfları (bireysel alanlar ve özellikler dahil) tarafından desteklenen <xref:System.SerializableAttribute> ve <xref:System.NonSerializedAttribute> sınıfları.  

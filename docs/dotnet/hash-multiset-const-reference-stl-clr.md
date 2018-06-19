@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33129479"
 ---
 # <a name="hashmultisetconstreference-stlclr"></a>hash_multiset::const_reference (STL/CLR)
 Bir öğe için sabit bir başvuru türü.  

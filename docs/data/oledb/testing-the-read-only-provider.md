@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33112686"
 ---
 # <a name="testing-the-read-only-provider"></a>Salt Okunur Sağlayıcıyı Test Etme
 Bir sağlayıcı test etmek için bir tüketici gerekir. Tüketici sağlayıcı ile eşleşebilmesi durumunda yardımcı olur. OLE DB Tüketici Şablonları OLE DB çevresinde ince bir sarmalayıcı olan ve Sağlayıcısı COM nesneleriyle eşleşir. Kaynak tüketici şablonlarıyla geldiği için bir sağlayıcıyla hata ayıklama kolaydır. Tüketici Şablonları ayrıca tüketici uygulamaları geliştirmek için çok küçük ve hızlı bir yolu değildir.  

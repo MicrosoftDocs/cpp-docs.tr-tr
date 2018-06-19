@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33270891"
 ---
 # <a name="compiler-warning-c4867"></a>Derleyici Uyarısı C4867
 'function': bağımsız değişken listesi; eksik işlev çağrısı 'çağrı' üyesi için bir işaretçi oluşturmak için kullanın  

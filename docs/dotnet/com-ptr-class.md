@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33108303"
 ---
 # <a name="comptr-class"></a>com::ptr Sınıfı
 Bir CLR sınıf üyesi olarak kullanılabilir bir COM nesnesi için sarmalayıcı.  Sarmalayıcı Ayrıca kendi yıkıcı çağrıldığında nesne üzerinde sahip olunan tüm başvurularını serbest COM nesnesinin ömür yönetimini otomatikleştirir. Benzer [CComPtr sınıfı](../atl/reference/ccomptr-class.md).  

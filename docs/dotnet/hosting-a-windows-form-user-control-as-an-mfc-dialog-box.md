@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33138684"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>MFC İletişim Kutusu Olarak Windows Formu Kullanıcı Denetimi Barındırma
 MFC sağlar Şablon sınıfı [CWinFormsDialog](../mfc/reference/cwinformsdialog-class.md) böylece bir Windows Forms kullanıcı denetimi barındırabilir (<xref:System.Windows.Forms.UserControl>) kalıcı veya geçici bir MFC iletişim kutusunda. `CWinFormsDialog` MFC sınıfından türetilen [CDialog](../mfc/reference/cdialog-class.md), iletişim kutusu kalıcı veya geçici başlatılabilir.  

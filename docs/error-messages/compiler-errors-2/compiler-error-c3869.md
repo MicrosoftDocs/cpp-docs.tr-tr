@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33267518"
 ---
 # <a name="compiler-error-c3869"></a>Derleyici Hatası C3869
 gcnew kısıtlaması boş parametre listesi '()' eksik  

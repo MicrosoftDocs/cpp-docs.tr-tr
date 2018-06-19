@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33270375"
 ---
 # <a name="compiler-warning-level-1-c4168"></a>Derleyici Uyarısı (düzey 1) C4168
 Derleyici sınırı: hata ayıklayıcı türleri dışında 'veritabanı' program veritabanını silin ve yeniden derleyin  

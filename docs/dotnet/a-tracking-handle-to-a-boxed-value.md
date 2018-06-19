@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33108302"
 ---
 # <a name="a-tracking-handle-to-a-boxed-value"></a>Paketlenmiş Değere İzleme İşleyicisi
 Değer türüne başvuru izleme işleyicisi kullanım için Visual C++ C++ için Yönetilen Uzantılar'dan değiştirdi.  

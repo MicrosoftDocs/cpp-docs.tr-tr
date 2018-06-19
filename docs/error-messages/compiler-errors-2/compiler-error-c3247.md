@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33249261"
 ---
 # <a name="compiler-error-c3247"></a>Derleyici Hatası C3247
 'class1': bir coclass'ı başka bir coclass 'class2' devralır olamaz  

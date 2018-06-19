@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33129817"
 ---
 # <a name="lowerbound-stlclr"></a>lower_bound (STL/CLR)
 İlk öğe konumunu bir değere sahip sıralı bir aralık değerinden küçük veya eşdeğer bir ikili önerme tarafından sıralama ölçütü burada belirtilebilir, belirli bir değere bulur.  

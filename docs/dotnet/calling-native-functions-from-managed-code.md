@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33112049"
 ---
 # <a name="calling-native-functions-from-managed-code"></a>Yönetilen Koddan Yerel İşlevleri Çağırma
 Ortak dil çalışma zamanı Platform Başlatma Hizmetleri ya da yerel dinamik bağlantı kitaplıkları (dll) C stili işlevleri çağırmak için kodu yönetilen tanır PInvoke sağlar. Aynı veri hazırlama "Sadece çalışır" ya da IJW, mekanizması için çalışma zamanı ile COM birlikte çalışabilirliği için kullanılır.  

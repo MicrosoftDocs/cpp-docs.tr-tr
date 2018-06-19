@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33104795"
 ---
 # <a name="testing-your-provider"></a>Sağlayıcınızı Test Etme
 Sağlayıcı yayınlamadan önce gösterilen sırada aşağıdaki testleri gerçekleştirmeniz gerekir. Bu testler olası kullanıcılar için düzgün sağlayıcısı çalıştığından emin olun.  

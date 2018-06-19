@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33257853"
 ---
 # <a name="compiler-error-c3364"></a>Derleyici Hatası C3364
 'temsilci': temsilci Oluşturucu: yönetilen sınıfının üye işlevini veya genel işlev işaretçisi bağımsız değişkeni olmalıdır.  

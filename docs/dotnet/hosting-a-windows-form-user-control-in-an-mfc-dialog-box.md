@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33129443"
 ---
 # <a name="hosting-a-windows-form-user-control-in-an-mfc-dialog-box"></a>MFC İletişim Kutusunda Windows Form Kullanıcı Denetimi Barındırma
 MFC ActiveX denetimi özel bir tür olarak bir Windows Forms denetimi barındırır ve denetimle ActiveX arabirimleri ve özelliklerini ve yöntemlerini kullanarak iletişim kurar <xref:System.Windows.Forms.Control> sınıfı. Denetim üzerinde çalışması için .NET Framework özellikleri ve yöntemleri kullanmanızı öneririz.  

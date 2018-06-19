@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33105770"
 ---
 # <a name="binarydelegate-stlclr"></a>binary_delegate (STL/CLR)
 Genereic sınıfı iki bağımsız değişken temsilci açıklar. Kullandığınız bir temsilci yazmaç türlerinden bakımından belirtin.  

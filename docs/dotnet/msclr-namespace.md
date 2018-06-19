@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33132914"
 ---
 # <a name="msclr-namespace"></a>msclr ad alanı
 `msclr` Ad alanı C++ destek kitaplığı tüm sınıflar içerir. Bu sınıfları hakkında daha fazla bilgi için bkz: [C++ destek kitaplığı](../dotnet/cpp-support-library.md).  

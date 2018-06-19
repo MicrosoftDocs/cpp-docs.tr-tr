@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33138525"
 ---
 # <a name="how-to-store-text-in-the-clipboard-ccli"></a>Nasıl yapılır: Panoya Metin Depolama (C++/CLI)
 Aşağıdaki kod örneğinde <xref:System.Windows.Forms.Clipboard> tanımlanan nesne <xref:System.Windows.Forms> bir dize depolamak için ad alanı. Bu nesne iki üye işlevleri sağlar: <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> ve <xref:System.Windows.Forms.Clipboard.GetDataObject%2A>. Veri depolanan Pano'da türetilmiş herhangi bir nesne göndererek <xref:System.Object> için <xref:System.Windows.Forms.Clipboard.SetDataObject%2A>.  

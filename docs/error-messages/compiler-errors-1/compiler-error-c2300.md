@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33168574"
 ---
 # <a name="compiler-error-c2300"></a>Derleyici Hatası C2300
 'tanımlayıcısı': sınıf adı verilen bir yıkıcı yok ' ~ tanımlayıcısı '  

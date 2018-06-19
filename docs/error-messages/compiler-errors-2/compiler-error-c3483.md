@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33258743"
 ---
 # <a name="compiler-error-c3483"></a>Derleyici Hatası C3483
 'var' zaten lambda yakalama listenin bir parçasıdır  
