@@ -36,6 +36,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345735"
 ---
 # <a name="changing-the-styles-of-a-window-created-by-mfc"></a>MFC Tarafından Oluşturulan Pencerenin Stillerini Değiştirme
 Kendi sürümünde `WinMain` işlevi, MFC sizin için birkaç standart pencere sınıfları kaydeder. MFC'nin normalde Düzenle yoktur çünkü `WinMain`, işlev, MFC varsayılan pencere stilleri değiştirme fırsatı verir. Bu makalede, bu tür bir preregistered pencere sınıfı var olan bir uygulamada stillerini nasıl değiştirebileceğiniz açıklanır.  

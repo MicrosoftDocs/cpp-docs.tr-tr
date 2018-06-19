@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343011"
 ---
 # <a name="cwinapp-the-application-class"></a>CWinApp: Uygulama Sınıfı
 MFC ana uygulama sınıfında başlatma, çalışan ve Windows işletim sistemi için uygulama sonlandırılması yalıtır. Bir çerçevede bir uygulama olmalıdır ve yalnızca bir nesne sınıfının türetilen [CWinApp](../mfc/reference/cwinapp-class.md). Bu nesne Windows oluşturulmadan önce oluşturulur.  

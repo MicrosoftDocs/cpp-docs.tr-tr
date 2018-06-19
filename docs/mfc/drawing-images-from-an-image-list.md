@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345215"
 ---
 # <a name="drawing-images-from-an-image-list"></a>Görüntü Listesinden Görüntü Çizme
 Resim çizmek için kullanmak [CImageList::Draw](../mfc/reference/cimagelist-class.md#draw) üye işlevi. Bir cihaz bağlamı nesnesi, çizmek için resim çizmek cihaz bağlamı konumda görüntünün dizinini ve çizim stilini belirtmek için bayrakları kümesi için bir işaretçi belirtirsiniz.  

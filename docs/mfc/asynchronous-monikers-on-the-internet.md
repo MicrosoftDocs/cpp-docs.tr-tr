@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343369"
 ---
 # <a name="asynchronous-monikers-on-the-internet"></a>Internet'teki Zaman Uyumsuz Adlar
 Internet uygulama tasarımı için yeni yaklaşımlar nedeniyle, yavaş ağ erişimi gerektirir. Uygulamalar, zaman uyumsuz olarak kullanıcı arabirimi durduruyor önlemek için ağ erişimi gerçekleştirmeniz gerekir. MFC sınıf [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md) dosyaları indirmek için zaman uyumsuz destek sağlar.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344139"
 ---
 # <a name="inserting-a-form-into-a-project"></a>Bir Projeye Form Ekleme
 Formları denetimleri için uygun bir kapsayıcı sağlar. MFC kitaplıkları uygulamasının desteklediği sürece, MFC tabanlı bir form uygulamanıza kolayca ekleyebilirsiniz.  

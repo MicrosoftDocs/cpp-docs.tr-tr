@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344941"
 ---
 # <a name="managing-mdi-child-windows"></a>MDI Alt Öğe Pencerelerini Yönetme
 MDI ana çerçeve pencereleri (uygulama başına bir tane) olarak adlandırılan özel alt pencere içeren **MDICLIENT** penceresi. **MDICLIENT** penceresi ana çerçeve penceresi istemci alanını yönetir ve kendi alt öğe pencerelerini var.: türetilmiş belge pencereleri `CMDIChildWnd`. Belge pencereleri çerçeve pencereleri kendilerini (MDI alt pencereleri) olduğundan, ayrıca kendi alt öğelerini olabilir. Bu durumların tümünde, ana pencereyi alt windows yönetir ve bunlara bazı komutlar iletir.  

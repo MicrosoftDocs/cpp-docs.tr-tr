@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341404"
 ---
 # <a name="classes-related-to-rich-edit-controls"></a>Zengin Düzenleme Denetimleriyle İlgili Sınıflar
 [CRichEditView](../mfc/reference/cricheditview-class.md), [CRichEditDoc](../mfc/reference/cricheditdoc-class.md), ve [CRichEditCntrItem](../mfc/reference/cricheditcntritem-class.md) sınıfları zengin düzenleme denetimine işlevselliğini sağlar ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) MFC'nin belge/görünüm mimarisinin bağlamında. `CRichEditView` metin ve biçimlendirme karakteristiğini metin, tutar. `CRichEditDoc` görünümde OLE istemci öğeleri listesini tutar. `CRichEditCntrItem` OLE istemci öğesi kapsayıcı tarafı erişim sağlar. İçeriğini değiştirmek için bir `CRichEditView`, kullanın [CRichEditView::GetRichEditCtrl](../mfc/reference/cricheditview-class.md#getricheditctrl) zengin düzenleme denetiminden arka plandaki erişmek için.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344848"
 ---
 # <a name="changing-list-control-styles"></a>Liste Denetim Stillerini Değiştirme
 Liste denetimi penceresi stilini değiştirebilirsiniz ([CListCtrl](../mfc/reference/clistctrl-class.md)) oluşturduktan sonra dilediğiniz zaman. Pencere stili değiştirerek ekleyeceğini görünüm türünü değiştirin. Örneğin, Explorer benzetmek için menü öğeleri veya denetimleri farklı görünümleri arasında geçiş için araç çubuğu düğmeleri sağlayabilir: simge görünümü, liste görünümü ve benzeri.  

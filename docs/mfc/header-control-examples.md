@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342767"
 ---
 # <a name="header-control-examples"></a>Üstbilgi Denetimine Örnekler
 Üstbilgi denetimleri örnekleri için bkz: [üstbilgi denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775238) Windows SDK.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33848784"
 ---
 # <a name="porting-guide-spy"></a>Taşıma Kılavuzu: Spy++
 Bu taşıma örnek olay incelemesi hangi tipik bir taşıma projede benzer bir fikir vermek üzere tasarlanmış, karşılaşabileceğiniz sorunları türlerini ve bazı genel ipuçları ve püf noktaları bağlantı noktası oluşturma sorunları ele almak için. Bu proje taşıma deneyimi kodu ayrıntılarını çok bağlı olduğundan bağlantı noktası oluşturma için eksiksiz bir kılavuz olma amacını değil.  

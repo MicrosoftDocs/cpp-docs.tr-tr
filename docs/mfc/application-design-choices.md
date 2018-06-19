@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347766"
 ---
 # <a name="application-design-choices"></a>Uygulama Tasarımı Seçimleri
 Bu makalede Internet için programlama yaparken dikkate alınması gereken tasarım sorunlardan bazıları açıklanmaktadır.  

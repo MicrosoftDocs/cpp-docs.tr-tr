@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347252"
 ---
 # <a name="mfc-internet-programming-tasks"></a>MFC Internet Programlama Görevleri
 Bu bölüm, uygulamalarınızı Internet desteği eklemek için ayrıntılı adımlar içerir. Mevcut uygulamalarınızı Internet etkinleştir MFC sınıfları kullanma ve etkin belge desteği, varolan bir COM bileşeni eklemek nasıl konuları içerir. En güncel stok teklifler, Pittsburgh'ın futbol puanları, bir belge oluşturmak istiyor musunuz ve en son sıcaklık Antarktika Microsoft teknolojileri Internet üzerinden yapmanıza yardımcı olmak için çeşitli sağlar.  

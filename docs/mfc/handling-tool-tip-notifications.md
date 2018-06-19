@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346382"
 ---
 # <a name="handling-tool-tip-notifications"></a>Araç İpucu Bildirimlerini İşleme
 Belirttiğinizde `TBSTYLE_TOOLTIPS` stili, araç oluşturur ve bir araç ipucunu denetimini yönetir. Araç İpucu araç çubuğu düğmesi açıklayan metin satırının içeren küçük bir açılır penceredir. Yalnızca kullanıcı imleci bir araç çubuğu düğmesini koyar ve onu var. yaklaşık yarısı için ikinci bırakır görünen araç ipucu gizlenir. Araç İpucu imlecin yanında görüntülenir.  

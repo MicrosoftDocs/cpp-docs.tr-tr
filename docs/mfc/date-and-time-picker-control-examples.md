@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341981"
 ---
 # <a name="date-and-time-picker-control-examples"></a>Tarih ve Saat Seçici Denetimine Örnekler
 [CMNCTRL1](../visual-cpp-samples.md) örnek gösterilmektedir çeşitli özniteliklerini `CDateTimeCtrl` sınıfı. Ayrı bir sayfa kullanıcı çeşitli özniteliklerini değiştirme ve denetiminin temel işlevselliğini test etme işleyebileceğiniz bir tarih ve Saat Seçici denetimini içerir.  

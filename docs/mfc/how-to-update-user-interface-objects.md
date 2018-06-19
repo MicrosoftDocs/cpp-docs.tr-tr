@@ -28,6 +28,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346213"
 ---
 # <a name="how-to-update-user-interface-objects"></a>Nasıl yapılır: Kullanıcı Arabirimi Nesnelerini Güncelleştirme
 Genellikle, menü öğeleri ve araç çubuğu düğmeleri birden fazla durum vardır. Örneğin, mevcut bağlamda kullanılamaz durumdaysa menü öğesi (soluk) renkte görüntülenir. Menü öğeleri de işaretli veya işaretsiz olabilir. Araç çubuğu düğmesi de mümkün değilse devre dışı bırakılabilir ya da kontrol.  

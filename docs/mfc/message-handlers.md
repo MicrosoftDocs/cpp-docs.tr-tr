@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347636"
 ---
 # <a name="message-handlers"></a>İleti İşleyicileri
 MFC'de, ayrılmış bir *işleyici* işlevi ayrı her ileti işler. İleti işleyici işlevleri, bir sınıfın üye işlevlerdir. Bu belge koşullarını kullanır *ileti işleyicisi üye işlevi*, *ileti işleyicisi işlevi*, *ileti işleyicisi*, ve *işleyicisi*birbirinin yerine. İleti işleyicileri bazı tür "komut işleyicileri." olarak da bilinir  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342949"
 ---
 # <a name="creating-document-frame-windows"></a>Belge Çerçeve Pencereleri Oluşturma
 [Belge/görünüm oluşturma](../mfc/document-view-creation.md) gösterir nasıl [CDocTemplate](../mfc/reference/cdoctemplate-class.md) nesne düzenler Çerçeve penceresi, belge ve görünüm oluşturma ve tüm birbirine bağlama. Üç [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) bağımsız değişkenleri `CDocTemplate` Oluşturucusu belirtin çerçeve penceresi, belge ve belge şablonu yanıt olarak yeni bir komut dosyasındaki gibi kullanıcı komutları dinamik olarak oluşturur. görünüm sınıfları menü veya bir MDI Pencere menüsünden Yeni Pencere komutu. Bir görünüm ve belge için bir çerçeve penceresi oluşturduğunda, belge şablonu daha sonra kullanmak için bu bilgileri depolar.  

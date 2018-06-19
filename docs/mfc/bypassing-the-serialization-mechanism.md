@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343651"
 ---
 # <a name="bypassing-the-serialization-mechanism"></a>Seri Hale Getirme Mekanizmasını Atlama
 Görülen çerçevesini okuyup için ve dosyalarından veri yazmak için varsayılan bir yol sağlar. Arşiv nesnesi seri hale getirme harika bir birçok uygulama gereksinimlerine uygun. Bu tür bir uygulama bir dosya tamamen belleğe okur, dosyayı güncelleştirmek kullanıcının izin verir ve ardından yeniden diske güncelleştirilmiş sürüm yazar.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33338981"
 ---
 # <a name="activex-control-containers"></a>ActiveX Denetim Kapsayıcıları
 ActiveX denetimi kapsayıcısı tam olarak ActiveX denetimlerini destekleyen bir kapsayıcı ve bunları kendi windows ya da iletişim kutuları dahil edebilirsiniz. ActiveX denetimi birçok geliştirme projelerinde kullanabileceğiniz bir yeniden kullanılabilir yazılım öğedir. Denetimler veritabanlarına erişim, veri izlemek ve uygulamalarınızı içindeki çeşitli seçimleri yapmak, uygulamanızın kullanıcı izin verir. ActiveX denetimleri hakkında daha fazla bilgi için bkz: [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md).  

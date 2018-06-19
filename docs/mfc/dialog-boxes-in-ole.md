@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347847"
 ---
 # <a name="dialog-boxes-in-ole"></a>OLE'deki İletişim Kutuları
 Bir kullanıcı OLE etkinleştirilmiş bir uygulama çalışırken, uygulama kullanıcıdan bilgi alma işlemi gerçekleştirmek için gerektiği zaman zamanlar vardır. MFC OLE sınıfları gerekli bilgileri toplamak için iletişim kutularında çok sayıda sağlar. Bu konu, OLE iletişim kutuları tarafından işlenen görevleri ve bu iletişim kutusu görüntülemek için gereken sınıfları listeler. OLE iletişim kutuları ve bunların davranışını özelleştirmek için kullanılan yapılar hakkında daha fazla bilgi için bkz: [MFC başvurusu](../mfc/mfc-desktop-applications.md).  

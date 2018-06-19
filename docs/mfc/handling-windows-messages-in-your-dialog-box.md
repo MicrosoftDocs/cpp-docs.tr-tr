@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343814"
 ---
 # <a name="handling-windows-messages-in-your-dialog-box"></a>İletişim Kutunuzda Windows İletilerini İşleme
 Uygun işleyici işlevleri sağlarsanız Windows iletileri işleyebilmesi için windows, iletişim kutusu vardır. İletişim sınıfınızı sınıf Ekleme Sihirbazı'nı oluşturduğunuzda, sihirbaz sınıfına bir boş ileti eşlemesi ekler. Herhangi bir Windows iletilerini veya işlemek için sınıfınız istediğiniz komutlarını eşlemek için Özellikler penceresini kullanın.  

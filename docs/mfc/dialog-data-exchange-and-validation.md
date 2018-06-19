@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343781"
 ---
 # <a name="dialog-data-exchange-and-validation"></a>İletişim Kutusu Veri Değişimi ve Doğrulaması
 İletişim kutusu veri değişimi (DDX) bir iletişim kutusu denetimleri başlatmak ve kullanıcı tarafından veri girişi toplamak için kolay yoludur. İletişim verisi doğrulama (DDV), bir iletişim kutusu veri girişi doğrulamak için kolay bir yoludur. DDX ve DDV iletişim kutularında yararlanmak için kullanmak [üye değişkeni ekleme](../ide/add-member-variable-wizard.md) veri üyeleri oluşturmak ve kendi veri türleri ayarlama ve doğrulama kurallarını belirtmek için.  

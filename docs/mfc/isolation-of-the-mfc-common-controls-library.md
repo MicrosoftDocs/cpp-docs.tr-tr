@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346821"
 ---
 # <a name="isolation-of-the-mfc-common-controls-library"></a>MFC Ortak Denetimler Kitaplığını Yalıtma
 Ortak Denetimler kitaplığı şimdi farklı modülleri (örneğin, kullanıcı DLL'ler) izin vererek MFC içinde için yalıtılmış olduğundan kendi bildirimleri sürümü belirterek ortak denetimler kitaplığı farklı sürümlerini kullanın.  

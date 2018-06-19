@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341968"
 ---
 # <a name="command-routing-classes"></a>Komut Yönlendirme Sınıfları
 Menüleri veya denetim çubuğu düğmelerini fareyle seçerek kullanıcı uygulama ile etkileşim gibi uygulamanın uygun komut hedefi nesneye etkilenen kullanıcı arabirimi nesnesinden iletileri gönderir. Komut hedefi sınıfları türetilen `CCmdTarget` dahil [CWinApp](../mfc/reference/cwinapp-class.md), [CWnd](../mfc/reference/cwnd-class.md), [CDocTemplate](../mfc/reference/cdoctemplate-class.md), [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), ve bunlardan türetilmiş sınıfları. Böylece komutları uygulama şu anda etkin en uygun nesnesi tarafından işlenip otomatik komut yönlendirme framework destekler.  

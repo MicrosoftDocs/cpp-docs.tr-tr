@@ -17,6 +17,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33339235"
 ---
 # <a name="create-a-new-linux-project"></a>Yeni Linux projesi oluşturma
 Linux için kodlama yaparken, Visual Studio projesi veya CMake projesi oluşturma seçeneğiniz vardır. Bu konuda bir Visual Studio projesi oluşturmayı açıklar. CMake projeler hakkında daha fazla bilgi için bkz: [bir Linux CMake proje yapılandırma ](cmake-linux-project.md).

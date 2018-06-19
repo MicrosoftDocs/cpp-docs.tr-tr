@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346321"
 ---
 # <a name="html-help-context-sensitive-help-for-your-programs"></a>HTML Yardımı: Programlarınız için Bağlama Duyarlı Yardım
 > [!IMPORTANT]

@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343482"
 ---
 # <a name="destroying-frame-windows"></a>Çerçeve Pencerelerini Yok Etme
 MFC çerçevesi pencere yok etme ve bunun yanı sıra oluşturma framework belgeler ve görünümler ile ilişkili bu Windows yönetir. Ek windows oluşturursanız, yok etme için sorumludur.  

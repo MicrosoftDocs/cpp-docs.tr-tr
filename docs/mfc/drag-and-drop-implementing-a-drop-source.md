@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345618"
 ---
 # <a name="drag-and-drop-implementing-a-drop-source"></a>Sürükle ve Bırak: Bir Bırakma Kaynağı Uygulama
 Bu makalede bir Sürükle ve bırak işlemi veri sağlamak için uygulamanızın nasıl elde edileceğini açıklar.  

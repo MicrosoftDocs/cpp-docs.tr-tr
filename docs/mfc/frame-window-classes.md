@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347892"
 ---
 # <a name="frame-window-classes"></a>Çerçeve Penceresi Sınıfları
 Her uygulama bir "ana çerçeve penceresi", genellikle kendi başlıkta uygulama adına sahip bir masaüstü penceresi sahiptir. Her bir belgenin genellikle bir "belge çerçeve penceresi." sahip Belge çerçeve penceresi belgenin verileri sunan en az bir görünümü içerir.  

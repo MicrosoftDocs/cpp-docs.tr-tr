@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341716"
 ---
 # <a name="declaring-message-handler-functions"></a>İleti İşleyici İşlevlerini Bildirme
 Belirli kurallar ve kuralları, ileti işleyicisi işlevlerin adları yönetir. Aşağıdaki konularda açıklandığı gibi bu ileti kategorisine göre değişir:  

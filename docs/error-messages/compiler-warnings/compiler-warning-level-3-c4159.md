@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33291677"
 ---
 # <a name="compiler-warning-level-3-c4159"></a>Derleyici Uyarısı (Düzey 3) C4159
 \#pragma pragma(pop,...): daha önce basılmış tanımlayıcısı 'tanımlayıcısı' Sil'i  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347239"
 ---
 # <a name="handlers-for-commands-and-control-notifications"></a>Komutlar ve Denetim Bildirimleri için İşleyiciler
 Komutları veya denetim bildirimi iletileri için hiçbir varsayılan işleyiciler vardır. Bu nedenle, bu kategorilerdeki iletileri için işleyicileri adlandırma, yalnızca kural tarafından bağlıdır. Bir işleyiciye komut veya denetim bildirim eşlediğinizde özellikleri windows komut kimliği veya denetim bildirimi koduna göre bir ad önerir. Önerilen adı kabul edin veya değiştirmek.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341254"
 ---
 # <a name="commonly-added-member-functions"></a>Yaygın Olarak Eklenen Üye İşlevleri
 İletişim kutusunda Tamam'ı veya iptal dışında pushbuttons içeriyorsa, ileti işleyicisi iletişim sınıfınızda oluşturdukları denetim bildirimi iletileri yanıtlayın üye işlevleri yazmanız gerekir. Bir örnek için bkz: [karalama](../visual-cpp-samples.md) örnek program. Denetim bildirimi iletileri diğer denetimlerden iletişim kutusunda da işleyebilir.  

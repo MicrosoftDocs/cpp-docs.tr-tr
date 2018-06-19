@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344262"
 ---
 # <a name="how-wininet-makes-it-easier-to-create-internet-client-applications"></a>WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması
 Win32 Internet Uzantıları veya WinINet, gopher, FTP ve HTTP gibi ortak Internet protokolleri erişim sağlar. WinINet kullanarak Internet istemci uygulamaları programlama, daha yüksek düzeyde WinSock, TCP/IP'yi veya belirli Internet protokolleri ayrıntılarını ile mücadele etmek zorunda kalmadan yazabilirsiniz. WinINet tanıdık Win32 API arabirimi ile tüm üç iletişim kuralları için tutarlı bir işlevler kümesi sağlar. Bu tutarlılık temel Protokolü (örneğin, gelen HTTP FTP) değişirse yapmanız gereken kod değişikliklerini en aza indirir.  

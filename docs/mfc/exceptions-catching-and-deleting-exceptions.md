@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345192"
 ---
 # <a name="exceptions-catching-and-deleting-exceptions"></a>Özel Durumlar: Özel Durumları Yakalama ve Silme
 Aşağıdaki yönergeler ve örnekler catch ve özel durumları silme gösterir. Daha fazla bilgi için **deneyin**, **catch**, ve `throw` anahtar sözcükler, bkz: [C++ özel durum işleme](../cpp/cpp-exception-handling.md).  

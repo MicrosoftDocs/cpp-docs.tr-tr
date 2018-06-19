@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347366"
 ---
 # <a name="implementing-working-areas-in-list-controls"></a>Liste Denetimlerinde Çalışma Alanlarını Uygulama
 Varsayılan olarak, bir liste denetimini tüm öğeleri bir standart kılavuz şekilde düzenler. Ancak, çalışma liste öğeleri dikdörtgen gruplar halinde düzenler alanlarını, başka bir yöntem desteklenir. Çalışma alanları uygulayan bir liste denetimi görüntüsü için liste görünümü denetimlerinde kullanarak Windows SDK'sı bakın.  

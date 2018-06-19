@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341560"
 ---
 # <a name="building-on-the-framework"></a>Framework'te Derleme
 MFC çerçevesi ile bir uygulama yapılandırmada, uygulamaya özgü kaynak kodunu sağlayın ve bileşenlerini hangi iletiler ve komutlar yanıt bunlar tanımlayarak bağlanmak için rolüdür. Bu sınıf kitaplığı tarafından sağlanan kendi uygulamaya özgü sınıflar türetmek ve geçersiz kılma ve temel sınıfın davranışı büyütmek için C++ dili ve standart C++ tekniklerini kullanın.  

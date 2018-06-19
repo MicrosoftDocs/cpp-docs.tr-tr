@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343288"
 ---
 # <a name="destroying-the-list-control"></a>Listesi Denetimini Yok Etme
 Katıştırılmış içerirse, [CListCtrl](../mfc/reference/clistctrl-class.md) nesne bir görünüm veya iletişim sınıfı veri üyesi olarak sahibi bozulduğunda yok. Kullanırsanız, bir [CListView](../mfc/reference/clistview-class.md), görünüm bozar zaman framework denetimi yok eder.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344210"
 ---
 # <a name="alternatives-to-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Alternatifleri
 MFC uygulamaları, belge/görünüm mimarisinin normalde bilgiler, dosya biçimlerini ve görsel veri kullanıcılarına yönetmek için kullanın. Masaüstü uygulamaları çoğunluğu için belge/görünüm mimarisinin bir uygun ve etkili uygulama mimarisidir. Bu mimari veri görüntüleme ve, çoğu durumda ayıran, uygulamanızı kolaylaştırır ve gereksiz kod azaltır.  

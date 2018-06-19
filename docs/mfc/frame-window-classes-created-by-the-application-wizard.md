@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345058"
 ---
 # <a name="frame-window-classes-created-by-the-application-wizard"></a>Uygulama Sihirbazı Tarafından Oluşturulan Çerçeve Pencere Sınıfları
 Kullandığınızda [Uygulama Sihirbazı](../ide/creating-desktop-projects-by-using-application-wizards.md) uygulama, belge ve görünüm sınıfları, ek bir iskelet uygulama oluşturmak için Uygulama Sihirbazı'nı, uygulamanızın ana çerçeve penceresi için bir türetilmiş çerçeve pencere sınıfı oluşturur. Sınıf adı verilen `CMainFrame` varsayılan ve onu içeren dosyaları tarafından MAINFRM olarak adlandırılır. H ve MAINFRM. CPP.  

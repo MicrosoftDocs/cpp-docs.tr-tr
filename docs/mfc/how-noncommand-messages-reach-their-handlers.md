@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343888"
 ---
 # <a name="how-noncommand-messages-reach-their-handlers"></a>Komut Dışı İletilerin İşleyicilerine Erişmesi
 Komutları, aksine standart Windows iletileri komuta zincirini hedefleri yönlendirilmedi ancak genellikle, Windows ileti gönderdiği pencere tarafından işlenir. Pencerenin ana çerçeve penceresi, bir MDI alt pencere, standart bir denetimde, bir iletişim kutusu, bir görünüm veya başka türde bir alt pencere olabilir.  

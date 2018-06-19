@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341195"
 ---
 # <a name="containers-user-interface-issues"></a>Kapsayıcılar: Kullanıcı Arabirimi Sorunları
 Yeterli bağlantılı ve katıştırılmış öğelerini yönetmek için bir kapsayıcı uygulamanın kullanıcı arabirimine bir dizi özellik eklemeniz gerekir. Bu özellikler menüsü yapısına yönelik işaretçinin ve uygulama işleme olayları değişiklikleri içerir. Bunları hakkında ayrıntılı bilgi için aşağıdaki makalelere bakın:  

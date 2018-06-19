@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341767"
 ---
 # <a name="debugging-and-exception-classes"></a>Hata Ayıklama ve Özel Durum Sınıfları
 Bu sınıfların dinamik bellek ayırma hata ayıklama ve burada işlev için burada Yakalanan özel durum özel durum bilgilerini işlevinden geçirme için destek sağlar.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346051"
 ---
 # <a name="how-to-display-command-information-in-the-status-bar"></a>Nasıl Yapılır: Durum Çubuğunda Komut Bilgilerini Görüntüleme
 Uygulamanızın çatıyı oluşturmak için Uygulama Sihirbazı'nı çalıştırdığınızda, araç çubuğu ve durum çubuğu destekler. Uygulama Sihirbazı'nda tek bir seçeneği her ikisi de destekler. Durum çubuğu bulunduğunda, kullanıcı işaretçiyi menülerde öğeler üzerinde hareket ederken uygulama otomatik olarak yararlı geri bildirim sağlar. Menü öğesi vurgulanmış, uygulama bir istem dizesi durum çubuğunda otomatik olarak görüntüler. Örneğin, ne zaman kullanıcı işaretçiyi üzerine taşıdığında **Kes** komutunu **Düzenle** menüsünde durum çubuğu durum çubuğu ileti alanına "Seçimi kesip Pano'ya yerleştirir" görüntülenebilir. İstemi menü öğesi amacını anlamasına yardımcı olur. Kullanıcı bir araç çubuğu düğmesini tıklattığında de çalışır.  

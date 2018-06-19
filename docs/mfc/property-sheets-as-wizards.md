@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347337"
 ---
 # <a name="property-sheets-as-wizards"></a>Sihirbaz Olarak Özellik Sayfaları
 Bir anahtar Sihirbazı özellik sayfası sekmeleri yerine İleri veya Son'u, geri ve İptal düğmeleri ile gezinti sağlanır özelliğidir. Çağırmanız gerekir [CPropertySheet::SetWizardMode](../mfc/reference/cpropertysheet-class.md#setwizardmode) çağırmadan önce [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#domodal) bu özelliğin avantajlarından yararlanmak için özellik sayfası nesne üzerinde.  

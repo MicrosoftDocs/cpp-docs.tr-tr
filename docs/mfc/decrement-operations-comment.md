@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342277"
 ---
 # <a name="-operations-comment"></a>// İşlem Açıklaması
 `// Operations` Bir MFC sınıf bildirimi bölümü şeyler veya (işlemleri gerçekleştirme) işlemleri yapmak için bir nesne üzerinde çağırabilirsiniz üye işlevlerini içerir. Bu işlevler genellikle olmayan**const** genellikle yan etkileri olduğundan. Bunlar, sanal veya sanal olmayan sınıf gereksinimlerine bağlı olarak olabilir. Genellikle, bu ortak üyeleridir.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344954"
 ---
 # <a name="file-and-database-classes"></a>Dosya ve Veritabanı Sınıfları
 Bu sınıf, bir veritabanı veya bir disk dosyası bilgilerini depolamak izin verir. Veritabanı sınıfları üç kümesi vardır: OLE DB, ODBC ve DAO — benzer bir işlevsellik sağlar. OLE DB Grup OLE DB kullanılarak uygulanır ve OLE DB tüketici şablonlarıyla çalışır, DAO grubu veri erişim nesnesi kullanılarak uygulanır ve ODBC Grup açık veritabanı bağlantısı kullanılarak uygulanır. Vardır ayrıca standart dosyaları, etkin akışını ve HTML akışlarını düzenleme için sınıfları kümesi.  

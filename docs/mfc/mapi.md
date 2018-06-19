@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347539"
 ---
 # <a name="mapi"></a>MAPI
 Bu makalede, istemci ileti uygulama geliştiricileri için Microsoft ileti uygulama programlama arabirimi (MAPI) açıklanmaktadır. MFC sağlayan bir MAPI alt sınıfında desteği **CDocument** tüm API'larını değil ancak. Daha fazla bilgi için bkz: [MFC içinde MAPI desteği](../mfc/mapi-support-in-mfc.md).  

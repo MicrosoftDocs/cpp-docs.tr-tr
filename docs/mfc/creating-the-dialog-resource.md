@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342091"
 ---
 # <a name="creating-the-dialog-resource"></a>İletişim Kaynağını Oluşturma
 Tasarım [iletişim kutusu](../mfc/dialog-boxes.md) ve iletişim kaynağını oluşturma, kullandığınız [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md). İletişim kutusu Düzenleyicisi'nde, şunları yapabilirsiniz:  

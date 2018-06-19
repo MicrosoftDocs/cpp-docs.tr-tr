@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346652"
 ---
 # <a name="dynamic-object-creation"></a>Dinamik Nesne Oluşturma
 Bu makalede, bir nesne çalışma zamanında dinamik olarak oluşturmak açıklanmaktadır. Yordam çalışma zamanı sınıf bilgileri makalesinde açıklandığı gibi kullanır [çalışma zamanı sınıf bilgilerine erişme](../mfc/accessing-run-time-class-information.md).  

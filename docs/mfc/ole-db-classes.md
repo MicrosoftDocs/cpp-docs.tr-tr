@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345110"
 ---
 # <a name="ole-db-classes"></a>OLE DB Sınıfları
 MFC'de OLE DB desteği şu anda sınıfının oluşur [COLEDBRecordView](../mfc/reference/coledbrecordview-class.md). `COleDBRecordView` doğrudan bağlı bir form görünümü aracılığıyla denetimlerindeki veritabanı kayıtlarını görüntüler bir [CRowset](../data/oledb/crowset-class.md) nesnesi. OLE DB Tüketici Şablonları hakkında daha fazla bilgi için bkz: [listesi, OLE DB Tüketici Şablonları](../data/oledb/ole-db-consumer-templates-reference.md).  

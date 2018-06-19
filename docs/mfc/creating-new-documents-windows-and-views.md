@@ -39,6 +39,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343421"
 ---
 # <a name="creating-new-documents-windows-and-views"></a>Yeni Belgeler, Pencereler ve Görünümler Oluşturma
 Aşağıdaki şekil, belgeler, görünümler ve çerçeve pencereleri oluşturma işlemine genel bakış verin. Katılımcı nesnelerde odaklanmak diğer makaleler ek ayrıntılar sağlanmaktadır.  

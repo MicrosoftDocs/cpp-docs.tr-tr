@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341806"
 ---
 # <a name="automation-servers-object-lifetime-issues"></a>Otomasyon Sunucuları: Nesne Ömrü Sorunları
 Bir otomasyon istemci oluşturur veya OLE öğeyi etkinleştirir, sunucu bu nesne için bir işaretçi istemci geçirir. OLE işlevi çağrısı aracılığıyla nesneye başvuru istemci oluşturur [IUnknown::AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379). Bu başvuru istemci çağrılarını kadar etkili olduğu [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317). (Microsoft Foundation Class Kitaplığı'nın OLE sınıfları ile yazılmış istemci uygulamaların bu çağrıları yapmamanız; framework bunu yapar.) OLE sistemi ve sunucu nesne başvuruları oluşturabilir. Bir sunucu, bir nesne yok nesne dış başvuruları etkin kaldığı sürece.  

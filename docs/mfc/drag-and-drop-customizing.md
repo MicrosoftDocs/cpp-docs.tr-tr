@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344249"
 ---
 # <a name="drag-and-drop-customizing"></a>Sürükle ve Bırak: Özelleştirme
 Sürükle ve bırak özelliğinin varsayılan uygulama, çoğu uygulama için yeterlidir. Ancak, bazı uygulamalarda bu standart davranış değiştirilmesi gerekebilir. Bu makalede bu varsayılanları değiştirmek için gerekli adımları açıklanmaktadır. Ayrıca, bileşik belgeler açılan kaynakları olarak desteklemeyen uygulamalar oluşturmak için bu tekniği kullanabilirsiniz.  
