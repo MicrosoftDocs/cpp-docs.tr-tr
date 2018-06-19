@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33090201"
 ---
 # <a name="odbc-administrator"></a>ODBC Yöneticisi
 ODBC Yöneticisi kaydeder ve yapılandırır [veri kaynaklarını](../../data/odbc/data-source-odbc.md) , kullanılabilir yerel olarak ya da bir ağ üzerinden. Sihirbazlar uygulamalarınızda kullanıcılarınızın veri kaynaklarına bağlayan kod oluşturmak için ODBC Yöneticisi tarafından sağlanan bilgileri kullanın.  

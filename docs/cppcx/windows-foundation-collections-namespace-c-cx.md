@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33090828"
 ---
 # <a name="windowsfoundationcollections-namespace-ccx"></a>Windows::Foundation::Collections Namespace (C + +/ CX)
 C + +/ CX Windows::Foundation::Collections ad alanı vektör, VectorView, eşleme ve MapView koleksiyon sınıfları kullanarak basitleştirmek işlevlerle tamamlar.  

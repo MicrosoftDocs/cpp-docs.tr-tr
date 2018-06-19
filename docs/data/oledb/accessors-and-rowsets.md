@@ -33,6 +33,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33094501"
 ---
 # <a name="accessors-and-rowsets"></a>Erişimciler ve Satır Kümeleri
 Ve veri almak için OLE DB Şablonları erişimci ve satır aracılığıyla kullanın [CAccessorRowset](../../data/oledb/caccessorrowset-class.md) sınıfı. Bu sınıf, farklı türlerde çoklu erişimci işleyebilir.  

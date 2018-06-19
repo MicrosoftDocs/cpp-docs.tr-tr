@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33092890"
 ---
 # <a name="use-the-odbc-cursor-library"></a>ODBC İmleç Kitaplığını Kullanma
 ODBC imleç kitaplığı ile kayıt kümeleri arasında kaydırma yönetir. Bu konular, imleç kitaplığı ile çalışmak açıklanmaktadır.  

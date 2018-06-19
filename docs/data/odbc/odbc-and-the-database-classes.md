@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33088473"
 ---
 # <a name="odbc-and-the-database-classes"></a>ODBC ve Veritabanı Sınıfları
 MFC ODBC veritabanı sınıfları normalde yaptığınız kendiniz üye işlevlerini ODBC API işlev çağrılarını kapsüller [CDatabase](../../mfc/reference/cdatabase-class.md) ve [CRecordset](../../mfc/reference/crecordset-class.md) sınıfları. Örneğin, karmaşık ODBC çağrı sıraları, depolama konumları, hata koşullarını işleme ve diğer işlemler için döndürülen kayıtların bağlama sizin için veritabanı sınıfları tarafından yönetilir. Sonuç olarak, bir kayıt kümesi nesnesi kayıtlarda işlemek için önemli ölçüde daha basit bir sınıf arabirimi kullanın.  

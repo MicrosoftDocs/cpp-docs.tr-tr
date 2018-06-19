@@ -28,6 +28,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33089724"
 ---
 # <a name="odbc-calling-odbc-api-functions-directly"></a>ODBC: ODBC API İşlevlerini Doğrudan Çağırma
 Veritabanı sınıfları için basit bir arabirim sağlayan bir [veri kaynağı](../../data/odbc/data-source-odbc.md) ODBC daha. Sonuç olarak, sınıflar tüm ODBC API'larını değil. Sınıfların yeteneklerini dışında kalan herhangi bir işlevsellik için ODBC API işlevlerini doğrudan çağırmanız gerekir. Örneğin, ODBC katalog işlevlerini çağırmanız gerekir (**:: sütunu**, **:: SQLProcedures**, **:: SQLTables**ve diğerleri) doğrudan.  

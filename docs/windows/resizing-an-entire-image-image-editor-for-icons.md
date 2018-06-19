@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33882660"
 ---
 # <a name="resizing-an-entire-image-image-editor-for-icons"></a>Görüntünün Tümünü Yeniden Boyutlandırma (Simgeler İçin Görüntü Düzenleyicisi)
 ### <a name="to-resize-an-entire-image-using-the-properties-window"></a>Özellikler penceresini kullanarak görüntünün tümünü yeniden boyutlandırmak için  

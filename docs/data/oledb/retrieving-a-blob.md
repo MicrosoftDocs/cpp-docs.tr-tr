@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33105211"
 ---
 # <a name="retrieving-a-blob"></a>BLOB Alma
 Çeşitli şekillerde ikili büyük nesne (BLOB) alabilir. Kullanabileceğiniz **DBTYPE_BYTES** bayt dizisi olarak BLOB almak veya gibi bir arabirim kullanmak için `ISequentialStream`. Daha fazla bilgi için bkz: [BLOBLARI ve OLE nesneleri](https://msdn.microsoft.com/en-us/library/ms711511.aspx) içinde *OLE DB Programcının Başvurusu*.  

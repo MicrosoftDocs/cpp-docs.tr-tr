@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33091991"
 ---
 # <a name="consumer-wizard-generated-classes"></a>Tüketici Sihirbazı Tarafından Oluşturulan Sınıflar
 Tüketici oluşturmak için ATL OLE DB Tüketici Sihirbazı'nı kullandığınızda, OLE DB Şablonları veya OLE DB öznitelikleri kullanma seçeneğiniz vardır. Her iki durumda da sihirbaz komut sınıfı ve kullanıcı kayıt sınıfı oluşturur. Komut sınıfı Sihirbazı'nda belirtilen satır kümesi ve veri kaynağı açmak için kullanılan kodu içerir. Kullanıcı kayıt sınıfı seçtiğiniz veritabanı tablosu için sütun eşlemesi içerir. Bununla birlikte, her durumda oluşturulan kod farklıdır:  

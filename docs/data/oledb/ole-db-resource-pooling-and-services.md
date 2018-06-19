@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33111191"
 ---
 # <a name="ole-db-resource-pooling-and-services"></a>OLE DB Kaynak Havuzu ve Hizmetleri
 OLE DB havuzu ile iyi veya herhangi bir OLE DB hizmeti ile çalışmak için sağlayıcınız toplama tüm nesnelerin desteklemesi gerekir. Bu, herhangi bir OLE DB 1.5 veya daha sonraki sağlayıcısı gerekli değildir. Hizmetleri yararlanmak için kritik öneme sahiptir. Toplama desteklemeyen sağlayıcılar havuza alınamaz ve herhangi bir ek hizmet sağlanır.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33096944"
 ---
 # <a name="creating-a-simple-read-only-provider"></a>Basit bir Salt Okunur Sağlayıcı Oluşturma
 ATL Proje Sihirbazı ve ATL OLE DB Sağlayıcı Sihirbazı'nı kullanarak bir OLE DB sağlayıcısı oluşturduğunuzda, desteklemek istediğiniz diğer işlevleri ekleyebilirsiniz. Ne tür veriler, tüketiciye ve hangi koşullarda göndereceği inceleyerek sağlayıcınızı tasarlamaya başlayın. Komutları, işlemleri ve diğer isteğe bağlı nesneleri destek gerekip gerekmediğini belirlemek özellikle önemlidir. Önden iyi bir tasarım, uygulama ve sınamayı hızlandırır.  

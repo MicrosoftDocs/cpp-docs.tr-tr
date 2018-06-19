@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33091978"
 ---
 # <a name="data-source-programmatically-configuring-an-odbc-data-source"></a>Veri Kaynağı: Program Aracılığıyla ODBC Veri Kaynağını Yapılandırma
 Bu konuda, açık veritabanı bağlantısı (ODBC) veri kaynağı adları programlı olarak nasıl yapılandırabileceğiniz açıklanmaktadır. Bu size esneklik verilere erişmek için açıkça veri kaynakları adlarını belirtmek için ODBC Yöneticisi veya diğer programları kullanmak üzere kullanıcı zorlamadan sağlar.  

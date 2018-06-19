@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33102686"
 ---
 # <a name="autogcroot"></a>auto_gcroot
 Tanımlar `auto_gcroot` sınıfı ve `swap` işlevi.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33104581"
 ---
 # <a name="issuing-a-parameterized-query"></a>Parametreleştirilmiş Sorgu Verme
 Aşağıdaki örnek, bir Microsoft Access veritabanı tablosunda (30'dan büyük olan) bir geçerlilik süresi alan kayıtlarıyla alır basit bir Parametreli sorgu verir. Parametre desteklemek için kullanıcı kaydının ek bir eşlemesinin olması gerekir. Aşağıdaki kod bir ATL projesinde kullanır `CCommand` sınıfına `CTable` önceki örnekte kullanılan sınıf [basit bir satır kümesinde geçiş yapma](../../data/oledb/traversing-a-simple-rowset.md).  

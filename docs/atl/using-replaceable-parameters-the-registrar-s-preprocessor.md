@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32362290"
 ---
 # <a name="using-replaceable-parameters-the-registrar39s-preprocessor"></a>Değiştirilebilir parametreler kullanılarak (kayıt şirketi&#39;s önişlemci)
 Değiştirilebilir parametreler çalışma zamanı verileri belirtmek bir kayıt şirketinizin istemci izin verin. Bunu yapmak için kayıt şirketi içine komut değiştirilebilir parametreler ile ilişkili değerleri girer değiştirme harita tutar. Kayıt şirketi bu girişler çalışma zamanında yapar.  

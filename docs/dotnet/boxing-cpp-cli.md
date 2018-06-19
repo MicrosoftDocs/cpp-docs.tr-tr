@@ -18,6 +18,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33105897"
 ---
 # <a name="boxing-ccli"></a>Kutulama (C++/CLI)
 Kutulama olan bir değer türü türe dönüştürme işlemi `object` veya değer türü tarafından uygulanan herhangi bir arabirim türü. Ortak dil çalışma zamanı (CLR) bir değer türü kutular, değeri sarar bir `System.Object` ve yönetilen yığında depolar. Kutudan çıkarma değer türü nesneden ayıklar. Örtük kutulama; kutudan çıkarma açık değil.  

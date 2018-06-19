@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33098647"
 ---
 # <a name="creating-an-updatable-provider"></a>Güncelleştirilebilir Sağlayıcı Oluşturma
 Visual C++ güncelleştirilebilir sağlayıcılar veya güncelleştirebilirsiniz sağlayıcılarını destekler (yazma) veri deposu. Bu konuda, OLE DB Şablonları kullanarak güncelleştirilebilir sağlayıcı oluşturma açıklanmaktadır.  

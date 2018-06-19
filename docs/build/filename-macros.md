@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3bb7c1c0ceeb8012418e2fff9ae5a7db0fff3877
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34458868"
 ---
 # <a name="filename-macros"></a>Dosya Adı Makroları
 Dosya adı makroları (disk üzerinde değil tam dosya adı belirtimleri) bağımlılık belirtilen dosya adları olarak önceden tanımlanmıştır. Bu makroları çağrıldığında parantez içine alınmış gerekmez; yalnızca bir $ gösterildiği gibi belirtin.  

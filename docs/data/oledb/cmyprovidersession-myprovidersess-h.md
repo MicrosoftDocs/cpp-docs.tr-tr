@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33096541"
 ---
 # <a name="cmyprovidersession-myprovidersessh"></a>CMyProviderSession (MyProviderSess.H)
 MyProviderSess.H bildirim ve OLE DB oturum nesnesi uygulamasını içerir. Veri kaynağı nesnesi oturum nesnesi oluşturur ve bir tüketici ve sağlayıcı arasında görüşmeyi temsil eder. Bir veri kaynağı için birden fazla eşzamanlı oturum açılabilir. Devralma listesini `CMyProviderSession` izler:  

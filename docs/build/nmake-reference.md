@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32372685"
 ---
 # <a name="nmake-reference"></a>NMAKE Başvurusu
 Microsoft Program Bakımı yardımcı programı'nı (NMAKE. EXE) ile birlikte gelen bir komut satırı aracıdır [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] bir açıklama dosyasında yer alan komutları göre projeleri oluşturur.  

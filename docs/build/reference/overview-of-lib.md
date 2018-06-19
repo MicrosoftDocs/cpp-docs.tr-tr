@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32379204"
 ---
 # <a name="overview-of-lib"></a>LIB'e Genel Bakış
 LIB standart kitaplıkları oluşturur, kitaplıkları içeri aktarma ve dışarı aktarma dosyaları ile birlikte kullanabileceğiniz [bağlantı](../../build/reference/linker-options.md) bir programı oluştururken. LIB bir komut satırından çalıştırır.  

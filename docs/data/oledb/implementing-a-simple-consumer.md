@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33112569"
 ---
 # <a name="implementing-a-simple-consumer"></a>Basit Tüketici Uygulama
 Aşağıdaki konular, basit bir tüketici oluşturmak için MFC Uygulama Sihirbazı'nı ve ATL OLE DB Tüketici Sihirbazı tarafından oluşturulan dosyaların nasıl düzenleneceğini gösterir. Bu örnekte, aşağıdaki bölümleri içerir:  

@@ -68,6 +68,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33097555"
 ---
 # <a name="cprocedureparameters-cprocedureparaminfo"></a>CProcedureParameters CProcedureParamInfo
 Çağrı typedef sınıfı **CProcedureParameters** parametre sınıfı uygulamak için **Cprocedureparamınfo**.  

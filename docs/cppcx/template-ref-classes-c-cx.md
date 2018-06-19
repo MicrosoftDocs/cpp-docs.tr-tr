@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33088056"
 ---
 # <a name="template-ref-classes-ccx"></a>Şablon ref sınıfları (C + +/ CX)
 C++ şablonları meta verileri yayımlanmayan ve bu nedenle ortak veya korumalı erişilebilirlik programınıza sahip olamaz. Doğal olarak, standart C++ şablonları dahili programınıza kullanabilirsiniz. Ayrıca, bir şablon olarak özel ref sınıfı tanımlayabilirsiniz ve ortak ref sınıfı özel üye olarak açıkça özelleşmiş şablon ref sınıfı bildirebilirsiniz.  

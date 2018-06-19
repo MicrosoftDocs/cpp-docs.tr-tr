@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33089171"
 ---
 # <a name="platformmtathreadattribute-class"></a>Platform::MTAThreadAttribute sınıfı
 İş parçacığı modeli bir uygulama için birden çok iş parçacıklı (MTA) olduğunu gösterir.  

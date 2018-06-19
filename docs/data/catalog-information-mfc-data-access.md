@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33090059"
 ---
 # <a name="catalog-information--mfc-data-access"></a>Katalog bilgileri (MFC veri erişimi)
 Bir veri kaynağındaki tablolar hakkında bilgi, tablolar ve bunları, tablo ayrıcalıklarını, birincil ve yabancı anahtarlar, önceden tanımlanmış sorgular veya saklı yordamlar, tablolar, dizinler hakkında bilgileri hakkında bilgi adlarını sütun adları içerebilir ve tablolar hakkındaki istatistiklerdir.  

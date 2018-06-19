@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33110175"
 ---
 # <a name="reading-strings-into-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısına Okuma
 `RMyProviderRowset::Execute` İşlevi bir dosyayı açar ve dizeleri okur. Tüketici çağırarak dosya adını sağlayıcıya geçirir [ICommandText::SetCommandText](https://msdn.microsoft.com/en-us/library/ms709757.aspx). Sağlayıcı dosya adını alır ve üye değişkeninde depolar `m_szCommandText`. `Execute` dosya adını okur `m_szCommandText`. Dosya adı geçersiz veya dosya kullanılamıyor `Execute` bir hata döndürür. Aksi takdirde, dosya ve çağrıları açılır `fgets` dizeleri alınamadı. Her dizeleri okuma ayarlayın `Execute` kullanıcı kaydı bir örneğini oluşturur (`CAgentMan`) ve bir dizi içine yerleştirir.  

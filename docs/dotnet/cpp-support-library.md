@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33104275"
 ---
 # <a name="c-support-library"></a>C++ Destek Kitaplığı
 C++ destek kitaplığı c++'ta yönetilen programlama destekleyen sınıflar sağlar.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33090109"
 ---
 # <a name="static-libraries-ccx"></a>Statik kitaplıklar (C + +/ CX)
 Bir evrensel Windows Platformu (UWP) uygulamasında kullanılan bir statik kitaplık STL türleri ve Windows çalışma zamanı uygulama platformundan dışarıda Win32 API çağrıları dahil olmak üzere, ISO-standart C++ kodu içerebilir. Bir statik kitaplık Windows çalışma zamanı bileşenleri kullanır ve Windows çalışma zamanı bileşenleri bazı sınırlamalarla birlikte oluşturabilir.  

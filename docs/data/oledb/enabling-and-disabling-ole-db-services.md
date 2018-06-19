@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33099478"
 ---
 # <a name="enabling-and-disabling-ole-db-services"></a>OLE DB Hizmetlerini Etkinleştirme ve Devre Dışı Bırakma
 OLE DB hizmet bileşeni Yöneticisi bu bireysel hizmet bileşenlerinin tüketici tarafından istenen genişletilmiş işlevselliği karşılamak için çağrılıp çağrılmadığını belirlemek için sağlayıcı tarafından desteklenen tüketici tarafından belirtilen özellikleri karşılaştırılmaktadır. Örneğin, bir uygulama kaydırılabilir imleç isterse ve sağlayıcı yalnızca salt iletme imleç destekliyorsa, hizmet bileşeni Yöneticisi kaydırılabilir işlevselliği sağlamak için İstemci İmleç Altyapısı hizmeti bileşeni çağırır. Uygulama, varsayılan sağlayıcının satır kümesi olarak desteklenen genişletilmiş işlevsellik güvenmek ve uygulama açıkça işlevselliği işlevselliği istemci tarafından döndürülen satır kümesi görünmeyebilir, istek için özellikleri ayarlanmadı İmleç Altyapısı. Kullanılabilmelidir, uygulamaları her zaman açık genişletilmiş işlevsellik isteyecek şekilde ayarlaması gereken gerektiğinde.  

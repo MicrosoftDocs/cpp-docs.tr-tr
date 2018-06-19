@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33090671"
 ---
 # <a name="filling-a-list-box-from-a-second-recordset--mfc-data-access"></a>(MFC veri erişimi) ikinci kayıt kümesinden liste kutusunu doldurma
 Varsayılan olarak, kayıt görünümü alanları kayıt görünümünün denetimleriyle eşleştirilen bir tek kayıt kümesi nesnesi ile ilişkilidir. Bazen bir liste kutusu koymak isteyebilirsiniz veya birleşik giriş kutusunu kayıt görünümünüzde denetlemek ve ikinci bir kayıt kümesi nesnesi değerlerle doldurun. Kullanıcı, kayıt görünümünde görüntülenecek bilgileri yeni bir kategori seçmek için liste kutusunu kullanabilirsiniz. Bu konuda nasıl ve ne zaman açıklanmaktadır Bunu yapmak için.  

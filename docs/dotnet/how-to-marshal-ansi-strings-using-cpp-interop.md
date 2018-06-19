@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33129401"
 ---
 # <a name="how-to-marshal-ansi-strings-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Sıralama
 Bu konuda nasıl ANSI dizelerini gösterilmektedir geçirilen C++ birlikte çalışması, ancak .NET Framework kullanılarak <xref:System.String> ANSI dönüştürme ek bir adımdır şekilde dizgileri Unicode biçiminde temsil eder. Diğer dizgi türleriyle birlikte çalışmak için aşağıdaki konulara bakın:  

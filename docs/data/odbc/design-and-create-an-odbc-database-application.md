@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33088605"
 ---
 # <a name="design-and-create-an-odbc-database-application"></a>Bir ODBC Veritabanı Uygulaması Tasarlama ve Oluşturma
 Bu konularda tasarım ve ODBC veritabanı uygulamanızı ayarlama yardımcı olur.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33093408"
 ---
 # <a name="accessing-xml-data"></a>XML Verilerine Erişme
 XML verilerini bir veri kaynağından veri almak için iki ayrı yöntem vardır: biri kullanır [CStreamRowset](../../data/oledb/cstreamrowset-class.md) ve diğer kullanımlar [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md).  

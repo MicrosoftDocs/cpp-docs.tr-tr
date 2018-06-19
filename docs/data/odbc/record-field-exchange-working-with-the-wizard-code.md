@@ -31,6 +31,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33092515"
 ---
 # <a name="record-field-exchange-working-with-the-wizard-code"></a>Kayıt Alanı Değişimi: Sihirbaz Kodu ile Çalışma
 Bu konuda kod açıklanmaktadır, MFC Uygulama Sihirbazı'nı ve **sınıfı Ekle** (açıklandığı gibi [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) RFX ve nasıl bu kodu değiştirmek isteyebilirsiniz desteklemek yazma.  

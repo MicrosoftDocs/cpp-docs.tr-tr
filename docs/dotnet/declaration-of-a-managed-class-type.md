@@ -28,6 +28,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33112647"
 ---
 # <a name="declaration-of-a-managed-class-type"></a>Yönetilen Sınıf Türü Bildirimi
 Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirilen başvuru sınıf türü bildirme yolu.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33111838"
 ---
 # <a name="differences-in-exception-handling-behavior-under-clr"></a>/CLR Altında Özel Durum İşleme Farkları
 [Yönetilen özel durumlar kullanarak temel kavramlarını](../dotnet/basic-concepts-in-using-managed-exceptions.md) özel durum işleme yönetilen uygulamalarda açıklanır. Bu konuda, özel durum işleme ve bazı kısıtlamalar standart davranışını arasındaki farklar ayrıntılı olarak ele alınmıştır. Daha fazla bilgi için bkz: [_set_se_translator işlevi](../c-runtime-library/reference/set-se-translator.md).  

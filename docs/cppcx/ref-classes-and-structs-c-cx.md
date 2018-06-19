@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33092450"
 ---
 # <a name="ref-classes-and-structs-ccx"></a>Ref sınıflar ve yapılar (C + +/ CX)
 C + +/ CX destekler kullanıcı tanımlı *ref sınıfları* ve *ref yapılar*ve kullanıcı tanımlı *değer sınıfları* ve *değer yapılar*. Bu veri yapıları tarafından hangi C + birincil kapsayıcılardır +/ CX Windows çalışma zamanı tür sistemi destekler. İçerikleri belirli belirli kurallarına göre meta verilerine yayılan ve bu bunları Windows çalışma zamanı bileşenleri ve C++ veya diğer dillerde yazılmış Evrensel Windows platformu uygulamaları arasındaki geçirilmesini sağlar.  

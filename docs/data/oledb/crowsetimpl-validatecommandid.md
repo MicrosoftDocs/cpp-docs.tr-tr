@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33098504"
 ---
 # <a name="crowsetimplvalidatecommandid"></a>CRowsetImpl::ValidateCommandID
 Her iki bakın veya her ikisini de denetler **DBID**s dize değerleri içeren ve varsa, bunları kendi veri üyelerine kopyalar [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) ve [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).  

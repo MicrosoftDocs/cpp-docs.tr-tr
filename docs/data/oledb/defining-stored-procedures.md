@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33101308"
 ---
 # <a name="defining-stored-procedures"></a>Saklı Yordamları Tanımlama
 Saklı yordam çağırmadan önce önce kullanarak tanımlamalısınız [DEFINE_COMMAND](../../data/oledb/define-command.md) makrosu. Komutu tanımladığınızda, soru işareti (?) parametrelerle parametre işaretçisi olarak gösterin:  

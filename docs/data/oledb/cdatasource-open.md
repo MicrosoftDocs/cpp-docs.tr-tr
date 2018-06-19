@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33097074"
 ---
 # <a name="cdatasourceopen"></a>CDataSource::Open
 Kullanarak bir veri kaynağı için bir bağlantı açar bir **CLSID**, **ProgID**, veya `CEnumerator` ad veya bir Bulucu iletişim kutusu ile kullanıcıya sorar.  

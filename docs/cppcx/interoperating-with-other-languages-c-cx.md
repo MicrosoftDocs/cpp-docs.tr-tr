@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33087848"
 ---
 # <a name="interoperating-with-other-languages-ccx"></a>Diğer dilleri ile birlikte (C + +/ CX)
 Bu belge parçası C + kullanmayı açıklar +/ CX diğer programlama dilleri ve kitaplıkları tarafından tüketilen Windows çalışma zamanı bileşenleri yazar. Tüm diller tarafından kullanılan bileşenleri de yazabilirsiniz. Bu bölümde dikkate almanız gereken farklı yönleri açıklanmaktadır, C + +/ CX uygulama JavaScript, bir .NET çerçevesi ile yönetilen dil ya da Windows çalışma zamanı C++ Şablon kitaplığı kullanılarak yazılan bileşenleri ile birlikte çalışır.  

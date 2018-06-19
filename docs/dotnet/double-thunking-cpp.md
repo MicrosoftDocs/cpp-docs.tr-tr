@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33111214"
 ---
 # <a name="double-thunking-c"></a>Çift Dönüştürme (C++)
 Çift dönüştürme, bir Visual C++ yönetilen işlevi ve program yürütmenin yönetilen bağlam çağrıları işlev çağrısında yönetilen işlevi çağırmak için işlevin yerel giriş noktası çağırdığında karşılaşabileceğiniz performans kaybı anlamına gelir. Bu konuda, çift dönüştürme nerede oluştuğunu ve performansı artırmak için kaçının nasıl anlatılmaktadır.  

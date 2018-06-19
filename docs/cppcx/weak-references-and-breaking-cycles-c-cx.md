@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33089084"
 ---
 # <a name="weak-references-and-breaking-cycles-ccx"></a>Zayıf başvurular ve kesme döngüleri (C + +/ CX)
 Başvuru sayım dayalı herhangi türü sistemde, tür başvuruları kurabilir *döngüleri*— diğer bir deyişle, bir nesne ikinci bir nesneye başvuruyor, bazı son nesnenin geri başvurduğu kadar üçüncü, vb. nesne ikinci nesneden başvuruyor ilk nesne. Bir nesnenin başvuru sayısı sıfır olduğunda bir döngüsünde doğru nesneleri silinemiyor. Bu sorun, C + gidermenize yardımcı olacak +/ CX sağlar [Platform::WeakReference sınıfı](../cppcx/platform-weakreference-class.md) sınıfı. A `WeakReference` nesnesi [gidermek](../cppcx/platform-weakreference-class.md#resolve) nesne artık var veya oluşturur, null döndüren yöntemi bir [Platform::InvalidCastException](../cppcx/platform-invalidcastexception-class.md) nesne Canlı ancak türündedeğil`T`.  

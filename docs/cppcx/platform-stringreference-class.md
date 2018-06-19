@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33097516"
 ---
 # <a name="platformstringreference-class"></a>Platform::StringReference sınıfı
 Dize verilerini geçirmek için kullanabileceğiniz bir en iyi duruma getirme türü `Platform::String^` giriş parametreleri kopyalama işlemleri en az diğer yöntemleri.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33108318"
 ---
 # <a name="file-handling-and-io-ccli"></a>Dosya İşleme ve G/Ç (C++/CLI)
 .NET Framework kullanılarak çeşitli dosya işlemlerini gösterir.  

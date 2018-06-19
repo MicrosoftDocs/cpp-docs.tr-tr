@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368967"
 ---
 # <a name="recursion-macros"></a>Özyineleme Makroları
 Özyineleme makroları NMAKE özyinelemeli olarak aramak için kullanın. Özyinelemeli oturumları komut satırı ve ortam değişkeni makroları ve Tools.ini bilgi devralır. Derleme görevleri dosyası tarafından tanımlanan çıkarım kuralları devralmaz veya **. SONEKLERİ** ve **. DEĞERLİ** belirtimleri. Bir özyinelemeli NMAKE oturuma makroları geçirmek için bir ortam değişkeni özyinelemeli çağrısından önce kümesi ile özyinelemeli çağrısı komutta makro tanımlayın veya makro içinde Tools.ini tanımlamak.  

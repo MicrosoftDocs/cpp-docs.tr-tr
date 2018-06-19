@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33092952"
 ---
 # <a name="working-with-documents-and-views"></a>Belgeler ve Görünümler ile Çalışma
 Microsoft Foundation sınıfları (MFC) kitaplığı belge/görünüm mimarisi özelliklerinden birçoğu için kullanır. Genellikle, bir belge verilerinizi saklar ve bir görünüm çerçeve penceresi istemci alanını içinde görüntüler ve kullanıcı etkileşimi verilerle yönetir. Görünüm elde edilir ve verileri güncelleştirmek için belge ile iletişim kurar. Veritabanı sınıfları framework ile veya olmadan kullanabilirsiniz.  

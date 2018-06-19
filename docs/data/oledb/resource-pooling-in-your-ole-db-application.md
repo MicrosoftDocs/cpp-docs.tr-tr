@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33107493"
 ---
 # <a name="resource-pooling-in-your-ole-db-application"></a>OLE DB Uygulamanızda Kaynak Havuzu
 Uygulamanızda havuzu kullanabilmeniz için OLE DB hizmetleri, veri kaynağınızı elde ederek çağrılır emin olmalısınız **IDataInitialize** veya **IDBPromptInitialize**. Doğrudan kullanırsanız `CoCreateInstance` sağlayıcının CLSID üzerinde dayanarak sağlayıcı çağırmak için OLE DB hizmetleri çağrılır.  

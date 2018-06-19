@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33110878"
 ---
 # <a name="changes-to-conversion-operators"></a>Dönüştürme İşleçlere Değiştirme
 Dönüştürme işleçleri sözdizimi C++ için Visual C++ için Yönetilen Uzantılar'dan değiştirdi.  

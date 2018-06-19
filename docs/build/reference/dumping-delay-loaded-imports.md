@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32372873"
 ---
 # <a name="dumping-delay-loaded-imports"></a>Gecikmeli Yükleme İçe Aktarmalarını Dökme
 Gecikmeli yüklenen içeri aktarmalar yazılan kullanarak [DUMPBIN/imports](../../build/reference/imports-dumpbin.md) ve biraz farklı bilgilerle standart alır daha görünür. Bunlar, kendi dökme/imports bölüme yinelenmeli ve açıkça Gecikmeli yüklenen içeri aktarmalar etiketlenir. Varsa bilgi görüntüde mevcut kaldırma, Not edilir. Bağlama bilgileri mevcut ise, saat ve tarih damgası hedef DLL içeri aktarmalar ilişkili adresleriyle birlikte not edilir.  

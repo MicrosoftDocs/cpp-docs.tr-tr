@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32364004"
 ---
 # <a name="cw2aex-class"></a>CW2AEX sınıfı
 Bu sınıf dize dönüştürme makroları tarafından kullanılan `CT2AEX`, `CW2TEX`, `CW2CTEX`, ve `CT2CAEX`ve typedef **CW2A**.  

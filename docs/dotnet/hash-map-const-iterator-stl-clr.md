@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33109228"
 ---
 # <a name="hashmapconstiterator-stlclr"></a>hash_map::const_iterator (STL/CLR)
 Denetlenen dizi için bir sabit yineleyici türü.  

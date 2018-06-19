@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33107945"
 ---
 # <a name="dynamically-determining-columns-returned-to-the-consumer"></a>Tüketiciye Döndürülecek Olan Sütunları Dinamik Olarak Belirleme
 PROVIDER_COLUMN_ENTRY normalde işlemek **IColumnsInfo::GetColumnsInfo** çağırın. Ancak, bir tüketici yer işaretleri kullanmayı tercih edebilirsiniz çünkü sağlayıcı için bir yer işareti ister bağlı olarak Tüketiciye döndürülecek olan sütunları değiştirmek mümkün olması gerekir.  

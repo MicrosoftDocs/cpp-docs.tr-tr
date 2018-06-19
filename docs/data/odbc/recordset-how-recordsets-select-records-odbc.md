@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33093236"
 ---
 # <a name="recordset-how-recordsets-select-records-odbc"></a>Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  

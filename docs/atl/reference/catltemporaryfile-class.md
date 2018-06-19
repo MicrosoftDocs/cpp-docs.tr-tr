@@ -37,6 +37,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366071"
 ---
 # <a name="catltemporaryfile-class"></a>CAtlTemporaryFile sınıfı
 Bu sınıf, oluşturma ve geçici bir dosya kullanımı için yöntemleri sağlar.  

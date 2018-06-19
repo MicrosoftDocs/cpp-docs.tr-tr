@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33089421"
 ---
 # <a name="data-exchange-for-record-views---mfc-data-access"></a>Kayıt görünümleri (MFC veri erişimi) için veri değişimi
 Kullandığınızda [sınıfı Ekle](../mfc/reference/adding-an-mfc-odbc-consumer.md) kayıt görünümünün iletişim şablon kaynağı denetimlerinde kayıt alanlarına eşlemek için her iki yönde veri değişimi framework yönetir — denetimlerine kayıt kümesi ve kayıt kümesine denetimleri. DDX mekanizmasını kullanarak kendiniz geri ve İleri veri aktarmak için kod yazmanız gerekmez anlamına gelir.  

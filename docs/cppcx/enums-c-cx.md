@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33087387"
 ---
 # <a name="enums-ccx"></a>Numaralandırmalar (C + +/ CX)
 C + +/ CX destekleyen `public enum class` standart C++ işlevdedir olan anahtar sözcük `scoped  enum`. Kullanarak bildirilmiş bir numaralandırıcı kullandığınızda `public enum class` anahtar sözcüğü, her bir numaralandırıcı değeri kapsam için numaralandırma tanıtıcısı kullanmalısınız.  

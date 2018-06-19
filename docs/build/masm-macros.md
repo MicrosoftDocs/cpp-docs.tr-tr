@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368700"
 ---
 # <a name="masm-macros"></a>MASM Makroları
 Kullanımını kolaylaştırmak için [ham sözde işlemler](../build/raw-pseudo-operations.md), normal yordama öğesinin ve sonuçları oluşturmak için kullanılan ksamd64.inc içinde tanımlı makrolar kümesi vardır.  

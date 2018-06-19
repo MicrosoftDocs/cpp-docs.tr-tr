@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368765"
 ---
 # <a name="determining-which-exporting-method-to-use"></a>Hangi Dışarı Aktarma Metodunu Kullanacağınızı Belirleme
 İki yoldan biriyle işlevlerde verebilirsiniz — .def dosyası veya `__declspec(dllexport)` anahtar sözcüğü. Hangi DLL için daha iyi bir yoludur karar vermenize yardımcı olması için aşağıdaki soruları göz önünde bulundurun:  

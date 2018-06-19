@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5e932a0e110e80bc241e5f69e3a1a7504bfab1f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/21/2018
+ms.locfileid: "34422686"
 ---
 # <a name="configure-a-linux-project"></a>Bir Linux proje yapılandırma
 Bu konuda, bir Visual Studio Linux proje yapılandırma açıklar. CMake Linux projeler hakkında daha fazla bilgi için bkz: [bir Linux CMake proje yapılandırma ](cmake-linux-project.md).

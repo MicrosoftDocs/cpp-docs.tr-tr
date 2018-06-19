@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368427"
 ---
 # <a name="inference-rules"></a>Çıkarsama Kuralları
 Çıkarım kuralları komutları hedefleri güncelleştirmek ve hedefler için bağımlılıklar anlamak için sağlayın. Aynı taban adına sahip bağımlı ve tek bir hedefi bir çıkarım kuralı uzantılarında eşleşmiyor. Çıkarım kuralları, kullanıcı tanımlı veya önceden tanımlanmış; önceden tanımlanmış kurallar tanımlanabilir.  

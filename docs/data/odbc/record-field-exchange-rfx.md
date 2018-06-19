@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33091660"
 ---
 # <a name="record-field-exchange-rfx"></a>Kayıt Alanı Değişimi (RFX)
 MFC ODBC veritabanı sınıfları veri kaynağı arasında veri taşımayı otomatikleştirmek ve [kayıt kümesi](../../data/odbc/recordset-odbc.md) nesnesi. Öğesinden bir sınıf türetin zaman [CRecordset](../../mfc/reference/crecordset-class.md) ve toplu satır getirme kullanmayın, kayıt alanı değişimi (RFX) mekanizması tarafından aktarılan veriler.  

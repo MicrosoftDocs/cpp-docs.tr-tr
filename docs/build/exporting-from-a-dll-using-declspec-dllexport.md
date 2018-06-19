@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368554"
 ---
 # <a name="exporting-from-a-dll-using-declspecdllexport"></a>__declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
 Sunulan Microsoft **__declspec(dllexport)** dışarı aktarma adlarını otomatik olarak oluşturmak ve bunları bir .lib dosyasında yerleştirmek derleyici izin vermek için Visual C++ 16 bit derleyici sürümünde. Bu .lib dosya daha sonra yalnızca statik .lib gibi DLL ile bağlamak için kullanılabilir.  

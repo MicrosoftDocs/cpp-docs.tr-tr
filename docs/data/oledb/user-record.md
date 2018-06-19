@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33111061"
 ---
 # <a name="user-record"></a>Kullanıcı Kaydı
 Kullanıcı kaydı satır için sütun verisini temsil eden kod ve veri yapısı sağlar. Bir kullanıcı kaydı derleme zamanında veya çalışma zamanında oluşturulabilir. ATL OLE DB Sağlayıcı Sihirbazı'nı kullanarak bir sağlayıcı oluşturduğunuzda, Sihirbazı'nı ("MyProvider" sağlayıcı adını [kısa ad] belirttiğiniz varsayılarak) şöyle bir varsayılan kullanıcı kaydı oluşturur:  

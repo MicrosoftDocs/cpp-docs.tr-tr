@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33098530"
 ---
 # <a name="creating-a-simple-consumer"></a>Basit Tüketici Oluşturma
 ATL Proje Sihirbazı'nı ve ATL OLE DB Tüketici Sihirbazı bir OLE DB Şablonları tüketicisi oluşturmak için kullanın.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33090874"
 ---
 # <a name="crt-functions-not-supported-in-universal-windows-platform-apps"></a>Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri
 Evrensel Windows Platformu (UWP) uygulamaları oluştururken birçok C çalışma zamanı (CRT) işlevleri kullanılamaz. Bazı durumlarda, geçici çözümler kullanılabilir —-örneğin, Windows çalışma zamanı veya Win32 API'larını kullanabilirsiniz. Bunları veya destekleyen API'leri karşılık özellikleri UWP uygulamaları için geçerli olmadığından Bununla birlikte, diğer durumlarda, CRT işlevleri yasaklanan. Windows çalışma zamanı için desteklenen alternatif bir yöntem aramak için bkz: [UWP uygulamaları Windows API'leri alternatifleri](/uwp/win32-and-com/alternatives-to-windows-apis-uwp).  

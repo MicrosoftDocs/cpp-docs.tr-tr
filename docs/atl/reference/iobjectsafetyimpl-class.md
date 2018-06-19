@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32364043"
 ---
 # <a name="iobjectsafetyimpl-class"></a>IObjectSafetyImpl sınıfı
 Bu sınıf, bir varsayılan uygulamasını sağlar `IObjectSafety` almak ve bir nesnenin güvenlik düzeylerini ayarlamak bir istemci izin vermek için arabirim.  

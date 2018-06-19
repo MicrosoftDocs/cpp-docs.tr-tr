@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33890144"
 ---
 # <a name="sizing-individual-controls"></a>Tek Denetimleri Boyutlandırma
 Boyutlandırma denetimi yeniden boyutlandırma için kullanın. İşaretçinin boyutlandırma tutamacı getirildiğinde denetimi boyutlandırılabilir yönergeleri göstermek için şekil değiştirir. Etkin boyutlandırma düz; boyutlandırma tutamacını boş ise, bu eksen boyunca denetimi boyutlandırılamaz.  

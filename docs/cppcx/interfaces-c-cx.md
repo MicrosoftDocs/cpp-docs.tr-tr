@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33090663"
 ---
 # <a name="interfaces-ccx"></a>Arabirimler (C + +/ CX)
 Ref sınıfı en çok bir somut temel sınıfı devralabilirsiniz karşın, herhangi bir sayıda arabirimi sınıflarını uygulayabilirsiniz. Arabirim sınıfı (veya arabirim yapı) kendisi devralır (gerektiren birden çok veya) arabirim sınıfları, kendi üye işlevleri aşırı yüklenebilir ve türü parametrelerine sahip olabilirsiniz.  

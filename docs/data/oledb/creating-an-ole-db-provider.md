@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33097113"
 ---
 # <a name="creating-an-ole-db-provider"></a>OLE DB Sağlayıcısı Oluşturma
 OLE DB sağlayıcısı oluşturmak için önerilen yöntem ATL COM projesini ve sağlayıcı oluşturmak ve OLE DB Şablonları kullanarak dosyaları değiştirmek için sihirbazlar kullanmaktır. Sağlayıcınız özelleştirme gibi istenmeyen özellikleri açıklaması ve isteğe bağlı arabirimler ekleyin.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366802"
 ---
 # <a name="callercallee-saved-registers"></a>Çağıran ve Çağrılan Kaydedilmiş Yazmaçlar
 İşlev çağrıları RAX, RCX, RDX, R8, R9, R10, R11 geçici olarak kabul edilir ve dikkate alınmalıdır kayıtları yok (sürece aksi tarafından güvenliği kanıtlanabilme analiz bütün program iyileştirmesi gibi).  

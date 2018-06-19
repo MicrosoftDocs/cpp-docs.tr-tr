@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33098153"
 ---
 # <a name="cmyprovidercommand-myproviderrsh"></a>CMyProviderCommand (MyProviderRS.H)
 `CMyProviderCommand` Sınıfı sağlayıcı komut nesnesinin uygulamasıdır. Uygulamasını sağlar `IAccessor`, `ICommandText`, ve **ICommandProperties** arabirimleri. `IAccessor` Arabirimidir satır kümesindeki bir ile aynı. Komut nesnesi erişimcisi parametreleri için bağlamaları belirlemek için kullanır. Satır kümesi nesnesi bunları çıktı sütun için bağlamaları belirlemek için kullanır. `ICommandText` Bir komut belirtmede yararlı bir şekilde bir arabirimdir. Bu örnekte `ICommandText` özel kod eklediğinde daha sonra arabirim; ayrıca geçersiz kılar `ICommand::Execute` yöntemi. **ICommandProperties** arabirimi tüm özellikler komutu ve satır kümesi nesneleri için işler.  

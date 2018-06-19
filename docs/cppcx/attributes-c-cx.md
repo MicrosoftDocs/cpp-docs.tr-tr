@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33086850"
 ---
 # <a name="attributes-ccx"></a>Öznitelikler (C + +/ CX)
 Windows çalışma zamanı türleri ve yöntemleri meta veri oluşturma, belirli davranışlarını belirtmek için köşeli ayraçlar içinde $a ref sınıfı özel bir tür özniteliğidir. Önceden tanımlanmış birkaç öznitelikleri — Örneğin, [Windows::Foundation::Metadata::WebHostHidden](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.webhosthiddenattribute.aspx)— C + yaygın olarak kullanılan +/ CX kodu. Bu örnek, bir sınıfa öznitelik nasıl uygulandığını gösterir:  

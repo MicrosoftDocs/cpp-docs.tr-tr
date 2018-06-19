@@ -35,6 +35,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32365008"
 ---
 # <a name="ioleinplaceobjectwindowlessimpl-class"></a>IOleInPlaceObjectWindowlessImpl sınıfı
 Bu sınıf uygulayan **IUnknown** ve pencere iletileri almak ve sürükle ve bırak işlemlerinde katılmak için penceresiz bir denetim sağlayan yöntemler sağlar.  

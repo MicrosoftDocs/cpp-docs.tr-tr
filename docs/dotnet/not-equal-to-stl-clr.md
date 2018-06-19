@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33136450"
 ---
 # <a name="notequalto-stlclr"></a>not_equal_to (STL/CLR)
 Şablon sınıfı bir functor açıklar yalnızca ilk bağımsız değişken ikinci eşit değilse çağrıldığında, true değerini döndürür. Kullandığınız kendi bağımsız değişken türü bakımından işlevi nesnesi belirtin.  

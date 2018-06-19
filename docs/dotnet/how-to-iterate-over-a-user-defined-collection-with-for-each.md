@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33128660"
 ---
 # <a name="how-to-iterate-over-a-user-defined-collection-with-for-each"></a>Nasıl yapılır: foreach ile Kullanıcı Tanımlı Bir Koleksiyon Üzerinden Yineleme Yapma
 Yönetilen koleksiyonu için bir sınıf için bir numaralandırıcı sınıf veya arabirim için bir işleyici döner özel olmayan GetEnumerator işlevi gerekir.  Bir numaralandırıcı sınıfı statik olmayan MoveNext işlevi ve geçerli özellik bildirimi içermesi gerekir.  

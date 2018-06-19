@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32373042"
 ---
 # <a name="nmake-options"></a>NMAKE Seçenekleri
 NMAKE seçenekleri aşağıdaki tabloda açıklanmıştır. Seçenekler, eğik çizgi (/) veya tire (-) tarafından öncesinde ve büyük küçük harfe duyarlı değildir. Kullanım [! CMDSWITCHES](../build/makefile-preprocessing-directives.md) derleme görevleri dosyası veya Tools.ini seçenek ayarlarını değiştirmek için.  

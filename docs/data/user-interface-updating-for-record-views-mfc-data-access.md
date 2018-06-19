@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33105822"
 ---
 # <a name="user-interface-updating-for-record-views--mfc-data-access"></a>Kayıt görünümleri (MFC veri erişimi) için kullanıcı arabirimi güncelleştiriliyor
 `CRecordView` Varsayılan Gezinti komutları için kullanıcı arabirimi güncelleştirme işleyicileri sağlar. Bu işleyiciler etkinleştirme ve kullanıcı arabirimi nesneleri devre dışı bırakma otomatikleştirmek — menü öğeleri ve araç çubuğu düğmeleri. Uygulama Sihirbazı'nı Standart menüler sağlar ve seçerseniz **Dockable Araç çubuğu** seçeneği, bir dizi araç çubuğu düğmesi komutlar için. Kayıt görünümü sınıfını kullanarak oluşturursanız `CRecordView`, uygulamanız için kullanıcı arabirimi nesneleri eklemek isteyebilirsiniz.  

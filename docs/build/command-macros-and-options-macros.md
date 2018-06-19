@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367365"
 ---
 # <a name="command-macros-and-options-macros"></a>Komut Makroları ve Seçenek Makroları
 Komut makroları Microsoft ürünleri için önceden tanımlanmıştır. Seçenekler makroları bu ürünler için seçenekleri temsil eder ve varsayılan olarak tanımlanmamış. Her ikisi de önceden tanımlanmış çıkarım kurallarındaki kullanılır ve açıklama blokları veya kullanıcı tanımlı çıkarım kuralları kullanılabilir. Komut makroları kısmını veya tamamını seçenekleri de dahil olmak üzere bir komut satırı temsil etmek için tanımlanabilir. Seçenekler makroları sol tanımsız ise boş bir dize oluşturur.  

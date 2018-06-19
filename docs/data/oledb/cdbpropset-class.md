@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33096333"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet Sınıfı
 Öğesinden devralınan **DBPROPSET** yapısı ve anahtar alanları başlatır bir oluşturucu ekler yanı sıra `AddProperty` erişim yöntemi.  

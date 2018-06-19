@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33094149"
 ---
 # <a name="work-with-odbc-database-connections"></a>ODBC Veritabanı Bağlantılarıyla Çalışma
 Aşağıdaki konular, ODBC veri kaynaklarına bağlanmak açıklanmaktadır.  

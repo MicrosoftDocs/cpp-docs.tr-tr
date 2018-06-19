@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5e932a0e110e80bc241e5f69e3a1a7504bfab1f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/21/2018
+ms.locfileid: "34422749"
 ---
 # <a name="microsoft-visual-c-floating-point-optimization"></a>Microsoft Visual C++ kayan nokta en iyi duruma getirme
 

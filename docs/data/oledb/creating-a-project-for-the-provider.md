@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33098361"
 ---
 # <a name="creating-a-project-for-the-provider"></a>Sağlayıcı için Proje Oluşturma
 #### <a name="to-create-a-project-in-which-the-ole-db-provider-will-reside"></a>OLE DB sağlayıcısı yer alacağı bir proje oluşturmak için  

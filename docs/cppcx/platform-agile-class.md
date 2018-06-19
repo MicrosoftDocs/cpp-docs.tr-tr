@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33092437"
 ---
 # <a name="platformagile-class"></a>Platform::Agile sınıfı
 Bir MashalingBehavior olan bir nesneyi temsil eden standart çalışma zamanı özel durumları iş parçacığı oluşturma olasılığını önemli ölçüde azaltır Çevik bir nesne olarak =. `Agile<T>` Çağrısı veya aynı veya farklı bir iş parçacığı, çağrılması için Çevik olmayan nesnesi sağlar. Daha fazla bilgi için bkz: [iş parçacığı oluşturma ve hazırlama](../cppcx/threading-and-marshaling-c-cx.md).  

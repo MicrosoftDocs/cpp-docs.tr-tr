@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33106316"
 ---
 # <a name="using-multiple-result-sets-from-one-stored-procedure"></a>Depolanmış Bir Yordamdan Birden Çok Sonuç Kümesi Kullanma
 Çoğu depolanmış yordam birden çok sonuç kümesi döndürür. Bir veya daha çok select deyimi bu tür bir saklı yordam genellikle bir içerir. Tüketici tüm sonuç kümelerini işlemek için bunu göz önüne almanız gerekir.  

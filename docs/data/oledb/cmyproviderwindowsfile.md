@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33097932"
 ---
 # <a name="cmyproviderwindowsfile"></a>CMyProviderWindowsFile
 Sihirbaz, bir satır veri içeren sınıf oluşturur; Bu durumda, adlı `CMyProviderWindowsFile`. Aşağıdaki kod `CMyProviderWindowsFile` oluşturulan Sihirbazı'nı ve bir dizindeki tüm dosyaları kullanarak listeleri **WIN32_FIND_DATA** yapısı. `CMyProviderWindowsFile` öğesinden devralınan **WIN32_FIND_DATA** yapısı:  

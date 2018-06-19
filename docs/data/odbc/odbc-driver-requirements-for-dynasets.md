@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33089239"
 ---
 # <a name="odbc-driver-requirements-for-dynasets"></a>Dynaset'ler için ODBC Sürücü Gereksinimleri
 MFC ODBC veritabanı sınıfları dinamik kümeler kayıt kümeleri dinamik özelliklere sahip olan; Bunlar belirli şekillerde veri kaynağı ile eşitlenmiş olarak kalır. Düzey 2 API uygunluğu ile bir ODBC sürücüsü MFC dinamik kümeler (ancak değil salt iletme kayıt kümeleri) gerektirir. Varsa sürücüsü, [veri kaynağı](../../data/odbc/data-source-odbc.md) düzey 1 API için uyumlu ayarlanırsa, hem güncelleştirilebilir ve salt okunur anlık görüntüler ve salt iletme kayıt kümeleri, ancak dinamik kümeleri kullanmaya devam edebilirsiniz. Ancak, genişletilmiş getirme ve anahtar kümesi temelli imleçler destekliyorsa, düzey 1 sürücüsü dinamik kümeleri destekleyebilir.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366789"
 ---
 # <a name="comments-in-a-makefile"></a>Derleme Görevleri Dosyası Açıklamaları
 Bir yorum sayı işareti koyun (#). NMAKE sonraki yeni satır karakteri sayı işareti metnin yoksayar. Örnekler:  

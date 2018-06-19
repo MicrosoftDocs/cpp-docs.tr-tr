@@ -29,6 +29,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32364199"
 ---
 # <a name="ccommultithreadmodelnocs-class"></a>CComMultiThreadModelNoCS sınıfı
 `CComMultiThreadModelNoCS` iş parçacığı yöntemleri artırma ve azaltma için önemli bir bölümü kilitleme veya kilidini açma işlevselliği bir değişkenin değerini sağlar.  

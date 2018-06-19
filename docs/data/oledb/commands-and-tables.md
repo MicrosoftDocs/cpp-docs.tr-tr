@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33098686"
 ---
 # <a name="commands-and-tables"></a>Komutlar ve Tablolar
 Komutlar ve tablolar, satır kümeleri erişmesine izin ver; diğer bir deyişle, satır kümeleri'ni açın, komutları yürütün ve sütunları bağlayın. [CCommand](../../data/oledb/ccommand-class.md) ve [CTable](../../data/oledb/ctable-class.md) sınıfları komut ve tablo nesneleri sırasıyla örneği. Bu sınıf türetin [CAccessorRowset](../../data/oledb/caccessorrowset-class.md) aşağıdaki resimde gösterildiği gibi.  

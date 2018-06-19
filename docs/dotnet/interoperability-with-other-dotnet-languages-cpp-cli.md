@@ -18,6 +18,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33129105"
 ---
 # <a name="interoperability-with-other-net-languages-ccli"></a>Diğer .NET Dilleri ile Birlikte Çalışabilirlik (C++/CLI)
 Bu bölümdeki konular, gelen kullanan veya C# veya Visual Basic ile yazılmış derlemeleri işlevselliği sağlamak Visual C++'ta derlemeler oluşturmayı gösterir.  

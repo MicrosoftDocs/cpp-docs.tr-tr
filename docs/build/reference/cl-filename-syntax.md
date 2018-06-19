@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32370468"
 ---
 # <a name="cl-filename-syntax"></a>CL Dosya Adı Sözdizimi
 CL FAT, HPFS veya NTFS adlandırma kurallarına uygun adlara sahip dosyaları kabul eder. Tüm dosya adı bir tam veya kısmi yol içerebilir. Bir tam yol, bir sürücü adı ve bir veya daha fazla dizin adlarını içerir. CL kabul dosya adları ayrılmış ya da ters eğik çizgi (\\) veya eğik (/). Boşluk içeren dosya adları çift tırnak karakteri ile alınmalıdır. Kısmi bir yolun geçerli sürücü olmasını CL varsayar sürücü adı atlar. Bir yol belirtmezseniz, CL dosya geçerli dizinde olduğunu varsayar.  

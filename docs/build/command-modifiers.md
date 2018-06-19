@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367179"
 ---
 # <a name="command-modifiers"></a>Komut Değiştiriciler
 İsteğe bağlı alanları veya sekmelerle ayrılmış bir komutu, önceki bir veya daha fazla komut değiştiriciler belirtebilirsiniz. Komutlarla olduğu gibi değiştiricileri girintili gerekir.  

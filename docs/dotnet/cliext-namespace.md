@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33104158"
 ---
 # <a name="cliext-namespace"></a>cliext Ad Alanı
 `cliext` Ad alanı, STL/CLR kitaplığı tüm türleri içerir. Tüm bu türleri ve STL/CLR türleri hakkında daha fazla bilgi için bağlantılar listesi için bkz: [STL/CLR kitaplık başvurusu](../dotnet/stl-clr-library-reference.md).  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33092040"
 ---
 # <a name="record-field-exchange-using-the-rfx-functions"></a>Kayıt Alanı Değişimi: RFX İşlevlerini Kullanma
 Bu konu gövdesini oluşturan RFX işlevi çağrılarının nasıl kullanılacağını açıklar, `DoFieldExchange` geçersiz kılar.  

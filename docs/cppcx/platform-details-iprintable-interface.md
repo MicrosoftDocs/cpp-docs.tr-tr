@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33088196"
 ---
 # <a name="platformdetailsiprintable-interface"></a>Platform::details::IPrintable arabirimi
 Bu arabirim, yalnızca dahili kullanım içindir ve geliştirme için kullanılmak üzere tasarlanmamıştır.  

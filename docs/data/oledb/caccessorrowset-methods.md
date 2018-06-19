@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33092017"
 ---
 # <a name="caccessorrowset-methods"></a>CAccessorRowset Yöntemleri
 Yöntemleri hakkında bilgi için `CAccessorRowset`, bkz: [CAccessorRowset üyeleri](../../data/oledb/caccessorrowset-members.md).

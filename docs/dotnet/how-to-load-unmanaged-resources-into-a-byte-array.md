@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130155"
 ---
 # <a name="how-to-load-unmanaged-resources-into-a-byte-array"></a>Nasıl yapılır: Yönetilmeyen Kaynakları Bayt Dizisine Yükleme
 Bu konuda ele alınmıştır yönetilmeyen kaynakları yüklemek için birkaç yol bir <xref:System.Byte> dizi.  

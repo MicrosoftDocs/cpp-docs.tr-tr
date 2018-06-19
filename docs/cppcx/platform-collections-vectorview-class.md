@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33092916"
 ---
 # <a name="platformcollectionsvectorview-class"></a>Platform::Collections::VectorView sınıfı
 Sıralı bir koleksiyonu dizini tarafından erişilebilecek nesnelerin salt okunur bir görünümünü temsil eder. Koleksiyondaki her nesne türü şablon parametresi tarafından belirtilir.  

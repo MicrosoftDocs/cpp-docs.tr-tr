@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33127974"
 ---
 # <a name="how-to-obtain-a-pointer-to-byte-array"></a>Nasıl yapılır: Bayt Dizisine Bir İşaretçi Alma
 Dizi bloğuna bir işaretçi edinebilirsiniz bir <xref:System.Byte> ilk öğe adresini ve bir işaretçi atayarak dizi.  

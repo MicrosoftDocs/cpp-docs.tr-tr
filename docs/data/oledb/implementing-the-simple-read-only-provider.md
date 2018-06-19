@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33100622"
 ---
 # <a name="implementing-the-simple-read-only-provider"></a>Basit Salt Okunur Sağlayıcıyı Uygulama
 Bu konudaki genişletilmiş örnek bir metin dosyasından iki dize kümesi okuyan basit bir salt okunur sağlayıcıyı oluşturmak için sihirbaz tarafından oluşturulan dosyaların nasıl düzenleneceğini gösterir. Sihirbaz dosyalarından bu sağlayıcısı oluşturmak için aşağıdaki görevleri tamamlamak için kodu ekleyin:  

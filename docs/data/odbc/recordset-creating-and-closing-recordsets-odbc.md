@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33092108"
 ---
 # <a name="recordset-creating-and-closing-recordsets-odbc"></a>Kayıt Kümesi: Kayıt Kümeleri Oluşturma ve Kapatma (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  

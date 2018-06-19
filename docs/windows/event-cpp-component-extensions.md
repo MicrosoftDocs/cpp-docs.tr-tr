@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33881217"
 ---
 # <a name="event--c-component-extensions"></a>olay (C++ Bileşen Uzantıları)
 `event` Anahtar sözcüğü bildiren bir *olay*, kayıtlı abonelere bildirim olduğu (*olay işleyicileri*) çeken bir şey gerçekleşen.  

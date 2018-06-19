@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33102390"
 ---
 # <a name="supporting-navigation-in-a-record-view--mfc-data-access"></a>(MFC veri erişimi) kayıt görünümünde gezintiyi destekleme
 Bu konu, taşıma kayıt kaydı da desteklemek üzere açıklanmaktadır, [CRecordView](../mfc/reference/crecordview-class.md) hakkında bilgiler dahil olmak üzere sınıfı:  

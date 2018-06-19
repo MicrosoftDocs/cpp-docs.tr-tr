@@ -18,6 +18,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33880783"
 ---
 # <a name="how-to-activate-and-use-a-windows-runtime-component-using-wrl"></a>Nasıl yapılır: WRL Kullanarak Windows Çalışma Zamanı Bileşenini Etkinleştirme ve Kullanma
 Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) Windows çalışma zamanı başlatmak için nasıl kullanılacağı ve bir Windows çalışma zamanı bileşenini etkinleştirme ve kullanma nasıl gösterir.  

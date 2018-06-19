@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33089918"
 ---
 # <a name="designing-and-creating-a-record-view--mfc-data-access"></a>Tasarlama ve oluşturma (MFC veri erişimi) kayıt görünümü
 Kayıt görünümü sınıfıyla oluşturabilirsiniz [MFC Uygulama Sihirbazı'nı](../mfc/reference/database-support-mfc-application-wizard.md). Bir uygulama Sihirbazı'nı kullanırsanız kayıt görünümü sınıfı ve bir iletişim şablonunu kaynak için (denetimleri olmadan) oluşturur. Denetimleri için iletişim şablon kaynağı eklemek için Visual C++ iletişim kutusu Düzenleyicisi'ni kullanmanız gerekir. Kullanırsanız, diğer yandan, **sınıfı Ekle**, ilk iletişim şablon kaynağı Düzenleyicisi iletişim kutusunda oluşturun ve kayıt görünümü sınıfı oluşturmanız gerekir.  

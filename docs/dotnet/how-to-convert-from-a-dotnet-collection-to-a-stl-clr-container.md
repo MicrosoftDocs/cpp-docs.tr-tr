@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33132807"
 ---
 # <a name="how-to-convert-from-a-net-collection-to-a-stlclr-container"></a>Nasıl yapılır: Bir .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme
 Bu konu, kendi eşdeğer STL/CLR kapsayıcıları .NET koleksiyonları dönüştürmek gösterilmiştir. Örnek olarak bir .NET dönüştürme gösteriyoruz <xref:System.Collections.Generic.List%601> STL/CLR için [vektör](../dotnet/vector-stl-clr.md) ve bir .NET dönüştürmek nasıl <xref:System.Collections.Generic.Dictionary%602> STL/CLR için [harita](../dotnet/map-stl-clr.md), ancak tüm koleksiyonlar ve kapsayıcıları için benzer bir yordamdır .  

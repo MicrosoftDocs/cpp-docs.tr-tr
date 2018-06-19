@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32369870"
 ---
 # <a name="arch-arm"></a>/arch (ARM)
 ARM üzerinde kod oluşturma için Mimari belirtir. Ayrıca bkz. [/(x86) arch](../../build/reference/arch-x86.md) ve [/(x64) arch](../../build/reference/arch-x64.md).  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33102957"
 ---
 # <a name="traversing-a-simple-rowset"></a>Basit Bir Satır Kümesinde Geçiş Yapma
 Aşağıdaki örnek komut içermeyen bir hızlı ve kolay veritabanı erişimi gösterir. ATL projesinde aşağıdaki tüketici kodu kaydı olarak adlandırılan bir tablodan alır *Sanatçılar* bir Microsoft Access veritabanı ODBC için Microsoft OLE DB sağlayıcısı kullanarak. Kod oluşturur bir [CTable](../../data/oledb/ctable-class.md) erişimci Tablo nesnesiyle tabanlı kullanıcı kayıt sınıfı `CArtists`. Bir bağlantı açar, bağlantıda bir oturum açar ve tablo oturum açar.  

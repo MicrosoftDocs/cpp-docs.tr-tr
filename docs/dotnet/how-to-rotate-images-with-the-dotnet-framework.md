@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33129040"
 ---
 # <a name="how-to-rotate-images-with-the-net-framework"></a>Nasıl yapılır: .NET Framework ile Görüntüleri Döndürme
 Aşağıdaki kod örneğinde kullanımını gösteren <xref:System.Drawing.Image?displayProperty=fullName> diskten bir görüntü yüklemek, 90 derece döndürün ve yeni bir .jpg dosyası kaydetmek için sınıf.  

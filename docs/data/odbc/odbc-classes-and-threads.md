@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33090594"
 ---
 # <a name="odbc-classes-and-threads"></a>ODBC Sınıfları ve İş Parçacıkları
 MFC 4.2 ile başlayarak, MFC ODBC sınıfları için çoklu iş parçacığı desteği yoktur. Ancak, MFC DAO sınıflarını çoklu iş parçacığı destek sağlamaz unutmayın.  

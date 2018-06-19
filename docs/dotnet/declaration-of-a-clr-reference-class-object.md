@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33112021"
 ---
 # <a name="declaration-of-a-clr-reference-class-object"></a>CLR Başvuru Sınıf Nesnesi Bildirimi
 Bildirme ve başvuru sınıfı türünde bir nesne örneği sözdizimi için Visual C++ C++ için Yönetilen Uzantılar'dan değiştirdi.  

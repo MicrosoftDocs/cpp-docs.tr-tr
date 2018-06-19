@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33097191"
 ---
 # <a name="creating-the-provider"></a>Sağlayıcı Oluşturma
 #### <a name="to-create-an-ole-db-provider-with-the-atl-ole-db-provider-wizard"></a>ATL OLE DB Sağlayıcı Sihirbazı ile bir OLE DB sağlayıcısı oluşturmak için  

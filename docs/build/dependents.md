@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366942"
 ---
 # <a name="dependents"></a>Bağımlılıklar
 Geçerli bir dosya kullanarak sıfır veya daha fazla bağımlıları iki nokta üst üste (:) veya çift iki nokta (:) sonra bir bağımlılık satırda belirtin veya [pseudotarget](../build/pseudotargets.md). Birden çok bağımlıları bir veya daha fazla boşluk ya da sekme ile ayırın. Bağımlılıklar büyük küçük harfe duyarlı değildir. Yollar ile dosya adlarını izin verilir.  

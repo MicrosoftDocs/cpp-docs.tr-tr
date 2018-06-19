@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33111529"
 ---
 # <a name="divides-stlclr"></a>böler (STL/CLR)
 Şablon sınıfı bir functor açıklar, çağrıldığında, ikinciye bölünmüş ilk bağımsız değişkeni döndürür. Kullandığınız kendi bağımsız değişken türü bakımından işlevi nesnesi belirtin.  

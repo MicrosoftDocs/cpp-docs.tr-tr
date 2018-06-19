@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33087822"
 ---
 # <a name="access-to-odbc-and-sql"></a>ODBC'ye ve SQL'e Erişim
 Microsoft Foundation Class Kitaplığı birçok Windows API çağrıları yalıtır ve hala doğrudan herhangi bir Windows API işlev çağrısı olanak tanır. Veritabanı sınıfları ODBC API ile aynı esneklik sağlar. Veritabanı sınıfları ODBC karmaşıklığını çoğunu sizden korurken, ODBC API işlevlerini doğrudan yerden çağırabilirsiniz programınızdaki.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33097006"
 ---
 # <a name="creating-an-ole-db-consumer-using-a-wizard"></a>Sihirbaz Kullanarak bir OLE DB Tüketicisi Oluşturma
 Bu yordam bir OLE DB Şablonları tüketicisi oluşturmak ve almak ve bir veritabanı tablosundaki verileri görüntülemek için konsol uygulaması ana kodunu değiştirmek için ATL Proje Sihirbazı'nı ve ATL OLE DB Tüketici Sihirbazı'nı nasıl kullanabileceğinizi gösterir.  

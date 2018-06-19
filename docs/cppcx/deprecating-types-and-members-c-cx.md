@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33086801"
 ---
 # <a name="deprecating-types-and-members-ccx"></a>Türleri ve üyeleri onaysız kılınmadan (C + +/ CX)
 C + +/ CX, üreticileri ve tüketicileri kullanarak Windows çalışma zamanı tür ve üyelerinin kullanımdan [kullanım dışı](http://msdn.microsoft.com/en-us/8b02ad36-3b5f-4361-888b-e6a99040e57c) özniteliği desteklenir. Bu öznitelik uygulanmış bir API kullanmak, API kullanım dışıdır ve ayrıca kullanmak için alternatif bir API önerir belirten bir derleme zamanı uyarı iletisi alırsınız. Kendi ortak türleri ve yöntemleri bu özniteliğini uygulayın ve kendi özel ileti sağlayın.  

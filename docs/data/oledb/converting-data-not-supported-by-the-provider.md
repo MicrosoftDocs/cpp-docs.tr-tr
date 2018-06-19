@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33095472"
 ---
 # <a name="converting-data-not-supported-by-the-provider"></a>Sağlayıcı Tarafından Desteklenmeyen Veriyi Dönüştürme
 Tüketici sağlayıcı tarafından desteklenmeyen bir veri türü istediğinde, OLE DB sağlayıcı şablonu için kodunu `IRowsetImpl::GetData` veri türüne dönüştürmek için Msdadc.dll çağırır.  

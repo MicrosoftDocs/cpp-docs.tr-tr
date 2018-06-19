@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33113765"
 ---
 # <a name="friend-assemblies-c"></a>Arkadaş Derlemeler (C++)
 Geçerli çalışma zamanları için *arkadaş derlemeleri* dil özelliği ad alanı kapsamı veya bir veya daha fazla istemci derlemelerine ya da .netmodules için erişilebilir bir derleme bileşeninin genel kapsamda altındadır türleri sağlar.  

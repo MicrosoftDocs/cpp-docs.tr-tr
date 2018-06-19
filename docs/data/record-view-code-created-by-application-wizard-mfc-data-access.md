@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33107109"
 ---
 # <a name="record-view-code-created-by-application-wizard--mfc-data-access"></a>Uygulama Sihirbazı (MFC veri erişimi)'ın oluşturduğu kayıt görünümü kodu
 [MFC Uygulama Sihirbazı'nı](../mfc/reference/database-support-mfc-application-wizard.md) görünümün geçersiz kılmaları `OnInitialUpdate` ve `OnGetRecordset` üye işlevleri. Çerçeve penceresi, belge ve görünüm framework oluşturduktan sonra çağırır `OnInitialUpdate` görünümü başlatılamadı. `OnInitialUpdate` bir işaretçi kayıt kümesine belgeden alır. Taban sınıfı için bir çağrı [CView::OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) işlevi kayıt kümesi açar. Bu işlem için aşağıdaki kodu gösterir bir `CRecordView`:  

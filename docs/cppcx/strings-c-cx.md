@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33092476"
 ---
 # <a name="strings-ccx"></a>Dizeler (C + +/ CX)
 Windows çalışma zamanı metinde temsil edilir C + +/ CX tarafından [Platform::String sınıfı](../cppcx/platform-string-class.md). Kullanım `Platform::String Class` dizeleri geri ve İleri Windows çalışma zamanı sınıflarının yöntemleri için geçirdiğiniz veya uygulama ikili arabirimi (ABI) sınırından diğer Windows çalışma zamanı bileşenleri ile etkileşim kurarken. `Platform::String Class` Tam özellikli string sınıfı olacak şekilde tasarlanmamış birkaç ortak dize işlemleri, ancak onun için yöntemleri sağlar. C++ modülünüzün standart C++ dize türleri gibi kullandığınız [wstring](../standard-library/basic-string-class.md) tüm önemli metin işleme ve son sonucu için sonra dönüştürme için [Platform::String ^](../cppcx/platform-string-class.md) ortak bir bilgisayardan veya geçirmeden önce arabirim. Kolay ve verimli arasında dönüştürme yapma `wstring` veya `wchar_t*` ve `Platform::String`.  

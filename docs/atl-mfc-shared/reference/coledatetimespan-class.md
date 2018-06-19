@@ -41,6 +41,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366399"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan sınıfı
 Göreli zaman, bir zaman aralığı temsil eder.  

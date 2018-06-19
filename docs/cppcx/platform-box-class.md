@@ -18,6 +18,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33091686"
 ---
 # <a name="platformbox-class"></a>Platform::Box sınıfı
 Değer türü gibi etkinleştirir `Windows::Foundation::DateTime` veya skaler bir tür gibi `int` depolanması için bir `Platform::Object` türü. Genellikle kullanmak için gerekli değildir `Box` açıkça kutulama örtük olarak bir değer türüne dönüştürme ne zaman olacağını çünkü `Object^`.  

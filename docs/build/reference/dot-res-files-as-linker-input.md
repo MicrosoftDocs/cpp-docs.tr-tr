@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32370673"
 ---
 # <a name="res-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Res Dosyaları
 Bir program bağlarken .res dosyasını belirtebilirsiniz. Kaynak derleyicisi (RC) .res dosyası oluşturulur. BAĞLANTI, otomatik olarak .res dosyaları COFF'ye dönüştürür. CVTRES.exe aracı LINK.exe ile aynı dizinde veya PATH ortam değişkeninde belirtilen bir dizinde olması gerekir.  

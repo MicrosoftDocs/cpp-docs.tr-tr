@@ -52,6 +52,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366136"
 ---
 # <a name="message-map-macros-atl"></a>İleti eşleme makroları (ATL)
 İleti eşlemeleri ve girişleri bu makroları tanımlayın.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33095722"
 ---
 # <a name="cdatasourceopenwithservicecomponents"></a>CDataSource::OpenWithServiceComponents
 Hizmet bileşenleri oledb32.dll kullanarak bir veri kaynağı nesnesi açar.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33107824"
 ---
 # <a name="transactions--mfc-data-access"></a>İşlemler (MFC veri erişimi)
 Bir işlemin kavramı, veritabanı sonuç durumuna işlemleri, bir dizi toplam başarı bağlıdır durumları işlemek için geliştirilmiştir. Art arda işlemleri önceki işlemlerinin sonuçlarını değiştirme çünkü bu gelebilir. Herhangi bir işlem başarısız olursa, bu gibi durumlarda, sonuçta elde edilen durumu belirsiz olabilir.  

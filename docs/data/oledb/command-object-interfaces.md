@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33096125"
 ---
 # <a name="command-object-interfaces"></a>Komut Nesnesi Arabirimleri
 Komut nesnesi kullanır `IAccessor` parametre bağlamaları belirtmek için arabirim. Tüketici çağrıları `IAccessor::CreateAccessor`, bir dizi geçirme `DBBINDING` yapıları. `DBBINDING` Sütun bağlamaları (örneğin, türü ve uzunluğu) hakkında bilgi içerir. Sağlayıcı yapıları alır ve verileri nasıl aktarılması gerektiğini ve dönüştürmenin gerekli olup belirler.  

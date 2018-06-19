@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33096697"
 ---
 # <a name="creating-an-ole-db-consumer"></a>OLE DB Tüketicisi Oluşturma
 Sihirbazı'nı kullanarak önerilen yöntem olsa da olmasa ATL OLE DB Tüketici Sihirbazı, bir OLE DB Şablonları tüketicisi oluşturabilirsiniz. Bir tüketici ATL destekleyen herhangi bir uygulamada çalışabilir  

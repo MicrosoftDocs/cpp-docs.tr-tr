@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33094933"
 ---
 # <a name="cbulkrowsetreleaserows"></a>CBulkRowset::ReleaseRows
 Çağrıları [IRowset::ReleaseRows](https://msdn.microsoft.com/en-us/library/ms719771.aspx) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısı düşürmek için.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33136008"
 ---
 # <a name="how-to-define-and-use-delegates-ccli"></a>Nasıl yapılır: Temsilcileri Tanımlama ve Kullanma (C++/CLI)
 Bu makalede tanımlama ve temsilciler C + kullanma gösterilmektedir +/ CLI.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33133655"
 ---
 # <a name="how-to-add-command-routing-to-the-windows-forms-control"></a>Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme
 [CWinFormsView](../mfc/reference/cwinformsview-class.md) MFC komutlarını (örneğin, çerçeve menü öğeleri ve araç çubuğu düğmeleri) işlemeye izin vermek için kullanıcı denetimi komutlar ve güncelleştirme komut UI iletilerini yönlendirir.  

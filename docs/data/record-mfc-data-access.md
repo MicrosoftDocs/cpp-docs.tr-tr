@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33103456"
 ---
 # <a name="record-mfc-data-access"></a>Kayıt (MFC veri erişimi)
 Bir kaydı, bir hesap veya tabloda (tablodaki satır) depolanan bir müşteri gibi tek bir varlık hakkında veriler koleksiyonudur. Bir kayıt, çeşitli türlerde veriler içeren bitişik sütunları (alanları olarak da adlandırılır) bir grup oluşur. Bir veri kaynağından seçilen kayıt kümesi — bir sonuç kümesi veritabanı bağlamında adlandırılırlar — bir kayıt kümesi MFC'de denir. Daha fazla bilgi için bkz: [kayıt kümesi (ODBC)](../data/odbc/recordset-odbc.md).  

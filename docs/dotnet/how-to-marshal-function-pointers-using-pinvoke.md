@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33132183"
 ---
 # <a name="how-to-marshal-function-pointers-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak İşlev İşaretçilerini Sıralama
 Bu konuda nasıl yönetilen temsilciler açıklanmaktadır P/Invoke .NET Framework özelliklerini kullanarak işlevleri ile birlikte yönetilmeyen işlev işaretçileri yerine kullanılabilir. Ancak, P/Invoke çok az derleme zamanı hata raporlama, tür kullanımı uyumlu değildir ve uygulaması can sıkıcı olabilir sağladığından Visual C++ programcıları (uygunsa) C++ birlikte çalışabilirlik özellikleri kullanmaları önerilir. Yönetilmeyen API DLL olarak paketlenir ve kaynak kodu kullanılabilir değilse, P/Invoke tek seçenektir. Aksi takdirde, aşağıdaki konulara bakın:  

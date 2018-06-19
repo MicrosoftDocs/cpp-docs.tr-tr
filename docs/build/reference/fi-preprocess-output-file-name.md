@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371518"
 ---
 # <a name="fi-preprocess-output-file-name"></a>/Fi (Çıktı Dosyası Adını Önişle)
 Çıktı dosyasına adını belirtir [/P (dosyaya Önişle)](../../build/reference/p-preprocess-to-a-file.md) derleyici seçeneği önceden işlenmiş çıktısı yazar.  

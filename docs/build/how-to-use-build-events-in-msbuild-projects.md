@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32369779"
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma
 Bir komut bir yapı olayıdır, [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] derleme sürecindeki belirli bir aşamada gerçekleştirir. *Oluşturma öncesi* olayı, yapı başlamadan önce oluşur; *bağlama öncesi* olayı bağlantı adım başlamadan önce; oluşur ve *oluşturma sonrası* olay oluştuktan sonra derleme başarılı bir şekilde sona erer. Yalnızca ilişkili derleme adımı oluşursa bir yapı olayı oluşur. Örneğin, bağlantı adım çalışmazsa bağlama öncesi olay gerçekleşmez.  
