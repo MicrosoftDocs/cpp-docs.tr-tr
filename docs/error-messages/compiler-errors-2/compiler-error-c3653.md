@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33266467"
 ---
 # <a name="compiler-error-c3653"></a>Derleyici Hatası C3653
 'function': adlandırılmış bir geçersiz kılma kullanılamaz: bulundu; kılınmasını değil işlevi işlev açıkça kullanarak ad mi unuttunuz bir:: işleci?  

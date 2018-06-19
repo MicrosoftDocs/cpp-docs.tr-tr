@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33351656"
 ---
 # <a name="how-to-convert-an-existing-mfc-ribbon-to-a-ribbon-resource"></a>Nasıl yapılır: Varolan Bir MFC Şeridini Şerit Kaynağına Dönüştürme
 Şerit kaynakları görselleştirme, değiştirmek ve bakımını el ile kodlanmış Şerit kolaydır. Bu konuda, bir MFC projesine el ile kodlanmış bir Şerit Şerit kaynağına dönüştürme açıklar.  

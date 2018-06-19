@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33352320"
 ---
 # <a name="activex-controls-on-the-internet"></a>Internet'te ActiveX Denetimleri
 ActiveX denetimleri OLE denetim belirtimi güncelleştirilmiş sürümü bulunur. Farklı kapsayıcılar, Internet üzerindeki COM kullanan Web tarayıcıları dahil olmak üzere çeşitli kullanılan programlanabilir yazılım bileşenleri geliştirmek için birincil bir mimari denetimleridir. Herhangi bir ActiveX denetimi bir Internet Denetim olması ve işlevselliği için etkin bir belge ekleyebilir veya bir Web sayfası bir parçası olarak. Bir Web sayfasındaki denetimleri birbirleri ile komut dosyası kullanarak iletişim kurabilir.  

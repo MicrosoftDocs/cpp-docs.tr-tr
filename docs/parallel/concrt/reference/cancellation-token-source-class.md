@@ -26,6 +26,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689681"
 ---
 # <a name="cancellationtokensource-class"></a>cancellation_token_source Sınıfı
 `cancellation_token_source` Sınıfı, bazı İptal işlemi iptal etme yeteneğini temsil eder.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382021"
 ---
 # <a name="tn037-multithreaded-mfc-21-applications"></a>TN037: Çoklu İş Parçacığı Kullanan MFC 2.1 Uygulamaları
 Bu teknik Not başlangıçta çoklu iş parçacığı kullanan MFC 2.1, ilk olarak Windows NT için Visual C++ 1.0 ile sağlanan programlarla sınırlamaları açıklanmaktadır. MFC 3.0 destekleyen çoklu iş parçacığı kullanımı doğrudan ve belgelenmiştir. Daha fazla bilgi için bkz.  

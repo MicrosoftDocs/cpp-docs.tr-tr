@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348521"
 ---
 # <a name="ole-related-classes"></a>OLE İle İlgili Sınıflar
 Bu sınıfların farklı hizmetler, girdi ve çıktı dosyası için özel durumlar arasında değişen bir dizi sağlar.  

@@ -148,6 +148,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33695385"
 ---
 # <a name="concurrencyprecisemath-namespace"></a>Concurrency::precise_math Ad Alanı
 İşlevlerini `precise_math` ad alanı olan C99 uyumlu. Her ikisi de duyarlık tek ve çift duyarlık sürümleri her işlevi bulunmaktadır. Örneğin, `acos` çift duyarlıklı sürümüdür ve `acosf` tek duyarlıklı sürümüdür. Tek duyarlıklı işlevleri dahil olmak üzere, bu işlevler Hızlandırıcı genişletilmiş çift duyarlıklı desteğini gerektirir. Kullanabileceğiniz [accelerator::supports_double_precision](accelerator-class.md#supports_double_precision) bu işlevler üzerinde belirli bir kısayol çalıştırıp çalıştıramayacağını belirlemek için. 

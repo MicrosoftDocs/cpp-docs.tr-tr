@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349928"
 ---
 # <a name="document-and-view-classes-created-by-the-mfc-application-wizard"></a>MFC Uygulama Sihirbazından Oluşturulan Belge ve Görünüm Sınıfları
 MFC Uygulama Sihirbazı'nı iskelet belge ve görünüm sınıfları sizin için oluşturarak program geliştirme hakkında bir başlangıç sağlar. Daha sonra [eşleme komutlarını ve iletileri bu sınıfların](../mfc/reference/mapping-messages-to-functions.md) ve bunların üye işlevlerini yazmak için Visual C++ kaynak kodu Düzenleyicisi'ni kullanın.  

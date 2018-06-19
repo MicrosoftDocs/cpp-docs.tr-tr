@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33685846"
 ---
 # <a name="1-introduction"></a>1. Giriş
 Bu belge derleyici yönergeleri, kitaplık işlevleri ve paylaşılan bellek paralellik C ve C++ programlarında belirtmek için kullanılan ortam değişkenlerinin koleksiyonunu belirtir. Bu belgede açıklanan işlevselliği topluca olarak bilinen *OpenMP C/C++ uygulama programı arabirimi (API)*. Bu belirtimi paralel, programlama modeli sağlamak için paylaşılan bellek mimarileri farklı satıcılardan arasında taşınabilmesini programın veren hedefidir. OpenMP C/C++ API çok sayıda satıcılardan derleyicileri tarafından desteklenmez. OpenMP hakkında daha fazla bilgi dahil olmak üzere *OpenMP Fortran uygulama programı arabirimi*, aşağıdaki web sitesinde bulunabilir:  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348885"
 ---
 # <a name="messages-and-commands-in-the-framework"></a>Framework'teki İletiler ve Komutlar
 Microsoft Windows "ileti güdümlü." için yazılmış uygulamalar Fare tıklamaları, tuş vuruşları, pencere hareketleri vb. gibi olaylara yanıt olarak, Windows uygun pencere iletileri gönderir. Framework uygulamalarını Windows için başka bir uygulama gibi Windows iletilerini işleme. Ancak framework de daha kolay, daha rahat ve daha iyi iletilerini işleme kapsüllenmiş olun bazı geliştirmeler içerir.  

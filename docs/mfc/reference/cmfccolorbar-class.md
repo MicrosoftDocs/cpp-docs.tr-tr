@@ -89,6 +89,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33376144"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar sınıfı
 `CMFCColorBar` Sınıfı, bir belgenin veya uygulamanın renkleri seçebilirsiniz yerleşik bir denetim çubuğu temsil eder.  

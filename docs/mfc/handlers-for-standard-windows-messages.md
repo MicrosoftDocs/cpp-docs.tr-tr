@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348228"
 ---
 # <a name="handlers-for-standard-windows-messages"></a>Standart Windows İletileri İşleyicileri
 Varsayılan standart Windows iletileri işleyicileri (**WM_**) sınıfında önceden `CWnd`. Sınıf kitaplığı ileti adına adları bu işleyiciler için temel alır. Örneğin, işleyici için `WM_PAINT` ileti içinde bildirilen `CWnd` olarak:  

@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33356192"
 ---
 # <a name="file-io-classes"></a>Dosya G/Ç Sınıfları
 Bu sınıfların geleneksel disk dosyaları, bellek içi dosyaları, etkin akışları ve Windows yuvaları için bir arabirim sağlar. Türetilen tüm sınıfları `CFile` ile kullanılan bir `CArchive` serileştirme gerçekleştirmek için nesne.  

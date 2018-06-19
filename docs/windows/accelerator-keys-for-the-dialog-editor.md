@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33863412"
 ---
 # <a name="accelerator-keys-for-the-dialog-editor"></a>İletişim Kutusu Düzenleyicisi için Hızlandırma Tuşları
 Aşağıda varsayılan iletişim Düzenleyici komutlarını Hızlandırıcı tuşları verilmektedir. Kısayol tuşları değiştirmek için tıklatın. **seçenekleri** üzerinde **Araçları** menüsünde, ardından **klavye** altında **ortam** klasör. Daha fazla bilgi için bkz: [tanımlama ve özelleştirme klavye kısayolları](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).  

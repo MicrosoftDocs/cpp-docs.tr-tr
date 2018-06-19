@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349180"
 ---
 # <a name="processing-notification-messages-in-date-and-time-picker-controls"></a>Tarih ve Saat Seçici Denetimlerinde Bildirim İletilerini İşleme
 Kullanıcıların etkileşimli olarak tarih ve saat seçici denetimi, denetim (`CDateTimeCtrl`) üst pencereye, bildirim iletileri gönderir genellikle bir görünüm veya iletişim nesnesi. Yanıtta bir şey yapmak istiyorsanız bu iletileri işleyin. Örneğin, kullanıcı açtığında katıştırılmış aylık takvim denetiminin görüntülemek için tarih ve Saat Seçici **DTN_DROPDOWN** bildirim gönderilir.  

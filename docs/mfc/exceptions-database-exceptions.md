@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33354308"
 ---
 # <a name="exceptions-database-exceptions"></a>Özel durumlar: Veritabanı Özel Durumları
 Bu makalede, veritabanı özel durumları işleme açıklanmaktadır. Bu makaledeki malzemesini çoğunu ile MFC sınıfları açık veritabanı bağlantısı (ODBC) veya MFC sınıfları için veri erişim nesneleri (DAO) çalıştığınız olup olmadığını geçerlidir. Malzeme birini veya diğer model belirli açık olarak işaretlenir. Konular şunlardır:  

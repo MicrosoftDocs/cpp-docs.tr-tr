@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349915"
 ---
 # <a name="data-objects-and-data-sources-manipulation"></a>Veri Nesneleri ve Veri Kaynakları: Düzenleme
 Bir veri nesnesi veya veri kaynağı oluşturulduktan sonra birkaç ortak işlem verileri ekleme ve kaldırma verileri, verilerin bulunduğu biçimleri numaralandırma gibi ve daha fazlasını gerçekleştirebilirsiniz. Bu makale, en yaygın işlemleri tamamlamak gerekli teknikleri açıklar. Konular şunlardır:  

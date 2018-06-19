@@ -36,6 +36,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33352795"
 ---
 # <a name="docking-and-floating-toolbars"></a>Yerleşen ve Kayan Araç Çubukları
 Microsoft Foundation Class Kitaplığı dockable araç çubukları destekler. Dockable araç çubuğu bağlı veya, kendi üst penceresi herhangi bir kenarında yerleşik veya ayrılmış veya yükleyebilir, kendi kısa çerçeve penceresinde kaydırılmış. Bu makalede, uygulamalarınızda dockable araç çubukları kullanımı açıklanmaktadır.  

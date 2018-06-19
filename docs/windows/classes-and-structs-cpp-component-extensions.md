@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33864921"
 ---
 # <a name="classes-and-structs--c-component-extensions"></a>Sınıflar ve Yapılar (C++ Bileşen Uzantıları)
 Sınıfta veya yapı bildirir, *nesne ömrü* otomatik olarak yönetilir. Nesne artık erişilebilir değil veya kapsam dışında olduğunda Visual C++ nesnesine ayrılan bellek otomatik olarak atar.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33374529"
 ---
 # <a name="creating-a-web-browser-style-mfc-application"></a>Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma
 Bir Web tarayıcısı stilinde uygulama bilgileri (örneğin, HTML veya etkin belgeler) Internet veya intranet yanı sıra klasörler yerel dosya sistemi ve ağ üzerinde erişebilir. Uygulamanın görünümü sınıfından türetilen tarafından [CHtmlView](../../mfc/reference/chtmlview-class.md), etkili bir şekilde WebBrowser denetimi ile görünümü sağlayarak uygulama bir Web tarayıcısı olun.  

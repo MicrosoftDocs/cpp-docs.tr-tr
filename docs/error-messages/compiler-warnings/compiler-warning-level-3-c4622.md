@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33291547"
 ---
 # <a name="compiler-warning-level-3-c4622"></a>Derleyici Uyarısı (Düzey 3) C4622
 Hata ayıklama bilgileri üzerine biçimlendirilmiş nesne dosyası önceden derlenmiş üst bilgi oluşturulması sırasında: 'dosya'  

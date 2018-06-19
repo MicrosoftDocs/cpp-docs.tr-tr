@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348612"
 ---
 # <a name="property-sheets-and-property-pages-in-mfc"></a>MFC'de Özellik Bölümleri ve Özellik Sayfaları
 Özellik sayfasını, olarak da bilinen bir sekme iletişim kutusu, özellik sayfaları içeren bir iletişim kutusudur. Her özellik sayfası, bir iletişim şablon kaynağını temel ve denetimleri içerir. Bu sayfada üst sekmesinde ile içine alınır. Sekme adları sayfası ve amacını gösterir. Kullanıcı denetimleri kümesini seçmek için özellik sayfasında bir sekmesini tıklatın.  

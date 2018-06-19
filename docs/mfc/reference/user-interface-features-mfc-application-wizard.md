@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33373804"
 ---
 # <a name="user-interface-features-mfc-application-wizard"></a>Kullanıcı Arabirimi Özellikleri, MFC Uygulama Sihirbazı
 Bu konu, uygulamanızı görünümünü belirtmek için kullanabileceğiniz seçenekleri açıklar. Projeniz için kullanılabilir kullanıcı arabirimi özellikleri, belirttiğiniz uygulama türüne bağlıdır [uygulama türü, MFC Uygulama Sihirbazı'nı](../../mfc/reference/application-type-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası. Örneğin, bir tek belge arabirimi uygulama oluşturursanız, alt çerçeve stiller ekleyemezsiniz.  

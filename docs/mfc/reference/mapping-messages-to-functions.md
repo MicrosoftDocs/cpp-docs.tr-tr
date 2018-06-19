@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33371640"
 ---
 # <a name="mapping-messages-to-functions"></a>İletileri İşlevlere Eşleme
 Özellikler penceresini, ileti işleyicileri (MFC kullanıcı arabirimi sınıfları üye işlevlerini) bağlamak, uygulamanızın kaynaklar tarafından üretilen iletileri sağlar. Kullandıkları [MFC ileti eşlemeleri](../../mfc/messages-and-commands-in-the-framework.md) bağlama oluşturmak için.  

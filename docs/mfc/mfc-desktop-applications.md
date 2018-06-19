@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33350241"
 ---
 # <a name="mfc-desktop-applications"></a>MFC Masaüstü Uygulamaları
 Microsoft Foundation Class (MFC) kitaplığı, nesne yönelimli bir sarmalayıcı çoğunu Win32 ve COM API'leri sağlar. Çok basit Masaüstü uygulamaları oluşturmak için kullanılır ancak, birden çok denetimleri ile daha karmaşık kullanıcı arabirimleri geliştirmek gerektiğinde en yararlı olur. MFC uygulamaları Office stili kullanıcı arabirimleri ile oluşturmak için kullanabilirsiniz.  

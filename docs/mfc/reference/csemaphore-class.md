@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33369183"
 ---
 # <a name="csemaphore-class"></a>CSemaphore sınıfı
 Sınıfın bir nesnesi `CSemaphore` "semafor" temsil eder — bir tutar erişmek için bir veya daha fazla işlemde şu anda belirtilen kaynağa erişme iş parçacıklarının sayısını sınırlı sayıda iş parçacığına veren bir eşitleme nesnesi.  

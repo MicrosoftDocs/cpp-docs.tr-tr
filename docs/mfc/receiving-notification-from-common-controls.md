@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349719"
 ---
 # <a name="receiving-notification-from-common-controls"></a>Ortak Denetimlerden Bildirim Alma
 Ortak Denetimler, denetimi, kullanıcı girişi gibi olaylar meydana geldiğinde, ana pencereyi bildirim iletilerini göndermek alt öğe pencerelerini ' dir.  

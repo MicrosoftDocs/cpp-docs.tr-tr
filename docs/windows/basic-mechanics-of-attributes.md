@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33864947"
 ---
 # <a name="basic-mechanics-of-attributes"></a>Özniteliklerin Temel Mekanikleri
 Öznitelikleri projenize eklemek için üç yolu vardır. İlk olarak, bunları el ile kaynak kodunuza ekleyebilirsiniz. İkinci olarak, bir nesnenin özellik Kılavuzu projenizde kullanarak bunları ekleyebilirsiniz. Son olarak, çeşitli sihirbazları kullanarak bunları ekleyebilirsiniz. Özellikler penceresini ve çeşitli sihirbazları kullanarak daha fazla bilgi için bkz: [oluşturma ve yönetme Visual C++ projeleri](../ide/creating-and-managing-visual-cpp-projects.md).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33351300"
 ---
 # <a name="optimizing-control-drawing"></a>Denetim Çizimini İyileştirme
 Kendisini bir kapsayıcı tarafından sağlanan cihaz bağlamına çizmek için bir denetim istendiğinde, genellikle GDI Nesneleri (örneğin, kalemler, Fırçalar ve yazı tipleri) cihaz bağlamına seçer, çizim işlemlerini gerçekleştirir ve önceki GDI nesneleri geri yükler. Daha önce seçilen nesneleri denetimleri tek tek geri yüklemezseniz kapsayıcı aynı cihaz bağlamına çizilecek birden çok denetimleri varsa ve her denetim gerektirdiği GDI nesneleri seçer, zaman kaydedilebilir. Tüm denetimler çizilmiş sonra kapsayıcı özgün nesneleri otomatik olarak geri yükleyebilirsiniz.  

@@ -47,6 +47,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348576"
 ---
 # <a name="device-contexts"></a>Cihaz Bağlamları
 Bir cihaz bağlamı bir görünüm veya yazıcı gibi bir aygıtı çizim öznitelikleri hakkında bilgi içeren bir Windows veri yapısıdır. Tüm çizim çağrılar çizim satırları, Şekil ve metinler için Windows API'larını yalıtan bir aygıt-context nesnesi aracılığıyla yapılır. Cihaz bağlamları CİHAZDAN bağımsız çizim Windows izin verir. Cihaz bağlamları ekran, yazıcı veya bir meta dosyası çizmek için kullanılabilir.  

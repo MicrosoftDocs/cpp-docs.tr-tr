@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349119"
 ---
 # <a name="list-items-and-image-lists"></a>Liste Öğeleri ve Görüntü Listeleri
 Liste denetiminde bir "öğesi" ([CListCtrl](../mfc/reference/clistctrl-class.md)) bir simge, bir etiket ve büyük olasılıkla diğer bilgileri ("alt öğeler") oluşur.  

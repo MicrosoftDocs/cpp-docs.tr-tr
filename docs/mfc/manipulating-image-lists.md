@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349164"
 ---
 # <a name="manipulating-image-lists"></a>Görüntü Listelerini Düzenleme
 [Değiştir](../mfc/reference/cimagelist-class.md#replace) üye işlevi bir resim listesi görüntüdeki değiştirir ([Cımagelist](../mfc/reference/cimagelist-class.md)) yeni bir görüntü ile. Bu işlev, ayrıca dinamik olarak bir resim listesi nesnesi görüntülerinde sayısını artırmak gerektiğinde kullanışlı olur. [SetImageCount](../mfc/reference/cimagelist-class.md#setimagecount) işlevi görüntü listesinde depolanan görüntü sayısını dinamik olarak değişir. Resim listesi boyutunu artırmak için arama **Değiştir** yeni görüntü yuvalarına görüntüleri eklemek için. Görüntü listesi boyutu azaltırsanız, yeni boyutunu aşan görüntüleri kurtulurlar.  

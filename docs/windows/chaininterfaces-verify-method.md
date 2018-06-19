@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33860700"
 ---
 # <a name="chaininterfacesverify-method"></a>ChainInterfaces::Verify Yöntemi
 Her bir arabirime şablon parametreleri tarafından tanımlanan doğrular `I0` aracılığıyla `I9` IUnknown ve/veya Iınspectable ve, devralan `I0` devraldığı `I1` aracılığıyla `I9`.  

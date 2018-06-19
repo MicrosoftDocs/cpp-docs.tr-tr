@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33351669"
 ---
 # <a name="keyboard-and-mouse-customization"></a>Klavye ve Fare Özelleştirmesi
 MFC klavye ve fare girişi işleme biçimini özelleştirmek için uygulamanızın verir. Kullanıcı, komutları için klavye kısayolları atayarak klavye girişi özelleştirebilirsiniz. Kullanıcı, kullanıcı uygulamayı belirli windows içinde tıklattığında yürütülmesi gereken komutu seçerek fare girdisi de özelleştirebilirsiniz. Bu konu, uygulamanız için giriş özelleştirmeyi açıklar.  

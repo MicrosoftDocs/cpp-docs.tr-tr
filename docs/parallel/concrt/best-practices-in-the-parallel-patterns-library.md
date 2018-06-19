@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33694569"
 ---
 # <a name="best-practices-in-the-parallel-patterns-library"></a>Paralel Desen Kitaplığı'ndaki En İyi Yöntemler
 Bu belgede etkili kullanımı paralel Desen kitaplığı (PPL) biri için en iyi şekilde nasıl açıklanmaktadır. PPL'de hassas paralellik gerçekleştirmek için genel amaçlı kapsayıcıları ve nesneleri algoritmaları sağlar.  

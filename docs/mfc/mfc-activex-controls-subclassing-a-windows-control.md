@@ -31,6 +31,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33355443"
 ---
 # <a name="mfc-activex-controls-subclassing-a-windows-control"></a>MFC ActiveX Denetimleri: Bir Windows Denetimini Alt Sınıf Yapma
 Bu makalede bir ActiveX denetimi oluşturmak için ortak bir Windows denetimini alt sınıf yapma işlemi açıklanmaktadır. Mevcut bir Windows sınıflara denetim bir ActiveX denetimini geliştirmek için bir hızlı yoludur. Yeni Denetim boyama ve fare tıklamalarına yanıt gibi altsınıflanmış Windows denetimi yeteneklerini sahip olur. MFC ActiveX denetimleri örnek [düğmesini](../visual-cpp-samples.md) bir Windows denetimini alt sınıf yapma, bir örnek verilmiştir.  

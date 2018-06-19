@@ -23,6 +23,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33695330"
 ---
 # <a name="task-parallelism-concurrency-runtime"></a>Görev Parallelliği (Eşzamanlılık Çalışma Zamanı)
 Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleştirir ve genellikle diğer görevlerle Paralel çalışan iş birimidir. Bir görev halinde düzenlenmiştir ek, daha ayrıntılı görevleri ayrılmış bir *görev grubu*.  

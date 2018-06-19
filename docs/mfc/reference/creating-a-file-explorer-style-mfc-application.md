@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33370161"
 ---
 # <a name="creating-a-file-explorer-style-mfc-application"></a>Dosya Gezgini Stilinde MFC Uygulaması Oluşturma
 Birçok Windows sistem uygulama kullanıcı arabirimi (UI) için dosya Gezgini'ni kullanın. Örneğin, dosya Explorer'ı başlattığınızda, uygulama istemci alanını bölme çubuğu Dikey bölme ile bakın. İstemci alanını sol tarafındaki gezinti ve göz atma özellikleri sağlar ve istemci alanını sağ tarafındaki ayrıntıları seçime uygun sol bölmede gösterir. Bir kullanıcı sol bölmesindeki bir öğeyi tıklattığında, uygulamayı sağ bölmede yeniden doldurur. MDI uygulamada üzerinde komutlarını kullanabilirsiniz **Görünüm** sağ bölmede gösterilen ayrıntı miktarını değiştirmek için menüsü. (Bir SDI veya birden çok üst düzey belge uygulama, yalnızca araç çubuğu düğmelerini kullanarak ayrıntı değiştirebilirsiniz.)  

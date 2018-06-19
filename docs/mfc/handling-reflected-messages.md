@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348984"
 ---
 # <a name="handling-reflected-messages"></a>Yansımış İletileri İşleme
 Yansıma bir denetimin iletileri gibi işlemenize olanak tanır ileti `WM_CTLCOLOR`, **WM_COMMAND**, ve **wm_notıfy**, denetimin kendi içinde. Daha fazla kendine içinde ve taşınabilir denetimi yapar. Windows ortak denetimleri ile ve aynı zamanda (eski adıyla OLE denetimleri) ActiveX denetimleriyle mekanizması çalışır.  

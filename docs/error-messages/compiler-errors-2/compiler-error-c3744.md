@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33265889"
 ---
 # <a name="compiler-error-c3744"></a>Derleyici Hatası C3744
 __unhook yönetilen olayları için en az 3 tane bağımsız değişkene sahip olmalıdır  

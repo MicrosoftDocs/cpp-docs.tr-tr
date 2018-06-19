@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33354786"
 ---
 # <a name="how-to-create-a-message-map-for-a-template-class"></a>Nasıl yapılır: Bir Şablon Sınıfı için İleti Eşlemesi Oluşturma
 İleti eşleme MFC'de uygun C++ nesne örneği Windows iletilerini yönlendirmek için etkili bir yol sağlar. MFC ileti eşlemesi hedefleri örnekleri uygulama sınıfları, belge ve görünüm sınıfları, Denetim sınıfları vb. içerir.  

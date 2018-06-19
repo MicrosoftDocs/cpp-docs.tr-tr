@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33372488"
 ---
 # <a name="creating-an-mfc-activex-control-container"></a>MFC ActiveX Denetimi Kapsayıcısı Oluşturma
 ActiveX denetimi kapsayıcısı çalıştırmak (önceki adıyla OLE) ActiveX denetimi için ortam sağlayan bir üst programdır. Bir uygulama ile veya olmadan MFC ActiveX denetimleri içeren yeteneğine oluşturabilirsiniz, ancak MFC ile yapmak daha kolaydır.  

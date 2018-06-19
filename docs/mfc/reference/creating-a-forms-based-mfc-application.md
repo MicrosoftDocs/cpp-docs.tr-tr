@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33372453"
 ---
 # <a name="creating-a-forms-based-mfc-application"></a>Form Tabanlı MFC Uygulaması Oluşturma
 Form, bir kullanıcının erişmek ve veri değişikliği olabilir izin denetimleri ile bir iletişim kutusudur. Kullanıcı form seçimden seçer uygulama geliştirme isteyebilirsiniz. Yaygın olarak, forms tabanlı bir uygulama tarafından tıklatın kullanıcı erişimi formları sağlar **yeni** gelen **dosya** menüsü. Hangi kullanıcılara erişim sağlamaz iletişim tabanlı bir uygulama, bir **yeni** seçeneğini **dosya** menüsünde da form tabanlı bir uygulama dikkate alınır.  

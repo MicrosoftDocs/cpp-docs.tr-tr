@@ -39,6 +39,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33370851"
 ---
 # <a name="cmfctaskspanetaskgroup-class"></a>CMFCTasksPaneTaskGroup sınıfı
 `CMFCTasksPaneTaskGroup` Bir yardımcı sınıfı tarafından kullanılan bir sınıftır [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) denetim. Nesne türü `CMFCTasksPaneTaskGroup` temsil eden bir *görev grubu*. Framework Daralt düğmesi ayrı bir kutuya görüntüler öğeleri listesi görev grubudur. Kutunun isteğe bağlı bir başlıkla (grup adı) olabilir. Bir grup daraltılmışsa, görevlerin listesi görünür değil.  

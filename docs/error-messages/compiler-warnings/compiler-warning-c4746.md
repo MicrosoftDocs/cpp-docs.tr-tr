@@ -17,6 +17,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33270904"
 ---
 # <a name="compiler-warning-c4746"></a>Derleyici Uyarısı C4746
 volatile erişimini '\<ifade >' / volatile tabi olan: [ISO&#124;ms] ayarlama; __iso_volatile_load/deposu iç işlevler kullanmayı düşünün.  

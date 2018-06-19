@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33355398"
 ---
 # <a name="adding-an-mfc-class"></a>MFC Sınıfı Ekleme
 Projeniz için Microsoft Foundation Class (MFC) kitaplığı sınıflarından türetilmiş sınıfları eklemek için kullanın **sınıfı Ekle** komutu kullanılabilir [sınıf görünümü](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925). Yeni sınıf adını belirtin, temel sınıfı seçin ve (varsa) ilişkili olduğu iletişim kutusunun kimliği seçin. Kod Sihirbazı'nı bir üstbilgi dosyası ve bir uygulama dosyası oluşturur ve bunları projenize ekler.  

@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348553"
 ---
 # <a name="ole-background-containers-and-servers"></a>OLE Arka Planı: Kapsayıcılar ve Sunucular
 Bir kapsayıcı uygulama kendi belgelerine katıştırılmış veya bağlı öğeleri içeren bir uygulamadır. Bir kapsayıcı uygulama tarafından yönetilen belgeleri depolamak ve OLE belge bileşenlerini ve bunun yanı sıra uygulama tarafından oluşturulan veri görüntüler kurabilmesi gerekir. Bir kapsayıcı uygulama aynı zamanda yeni öğeler eklemek veya var olan öğeleri sunucu uygulamaları gerektiğinde etkinleştirerek düzenlemek kullanıcılara izin vermesi gerekir. Bir kapsayıcı uygulama kullanıcı arabirimi gereksinimlerini makalesinde listelenen [kapsayıcılar: kullanıcı arabirimi sorunları](../mfc/containers-user-interface-issues.md).  

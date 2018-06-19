@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33352583"
 ---
 # <a name="interface-elements"></a>Arabirim Öğeleri
 Bu belgede de tanıtılan arabirimi öğeleri açıklanır [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)] SP1 ve ayrıca kitaplığı önceki sürümünün farklar açıklanmaktadır.  

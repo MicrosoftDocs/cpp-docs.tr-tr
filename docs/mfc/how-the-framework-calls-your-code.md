@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348185"
 ---
 # <a name="how-the-framework-calls-your-code"></a>Framework'ün Kodunuzu Çağırması
 Kaynak kodunuz ve MFC çerçevesi kodda arasındaki ilişkiyi anlamak önemlidir. Uygulamanızı çalıştığında, denetim akışını çoğunu framework'ün kodda yer alıyor. Framework'te kullanıcı komutları seçer ve bir görünümündeki verileri düzenler gibi Windows iletilerini alır ileti döngüsü yönetir. Framework tek başına işleyebilir olayları kodunuz üzerinde hiç kullanmayın. Örneğin, çerçeve pencereleri kapatın ve kullanıcı komutlarına yanıt olarak uygulamadan çıkmak bilir. Bu görevleri işleme gibi framework fırsatlar bu olaylarına yanıt vermek için ileti işleyicileri ve C++ sanal işlevleri kullanır. Kodunuz denetiminde değildir, ancak:; çerçevedir.  

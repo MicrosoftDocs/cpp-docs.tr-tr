@@ -45,6 +45,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33369021"
 ---
 # <a name="cgdiobject-class"></a>CGdiObject sınıfı
 Bir temel sınıf çeşitli Windows grafik için bit eşlemler, bölgeler, Fırçalar, kalemler, paletleri ve yazı tipleri gibi cihaz arabirimi (GDI) nesneleri sağlar.  

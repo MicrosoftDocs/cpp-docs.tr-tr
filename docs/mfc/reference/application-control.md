@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33355918"
 ---
 # <a name="application-control"></a>Uygulama Denetimi
 OLE uygulamaları ve bunların nesneler üzerinde önemli denetim gerektirir. OLE sistem DLL'leri başlatma ve uygulamaları otomatik olarak bırakın, kendi üretim ve nesneleri değiştirilmesini koordine ve benzeri kurabilmesi gerekir. Bu konudaki işlevleri bu gereksinimleri karşılar. OLE sistem DLL'leri tarafından çağrılan ek olarak, bu işlevler, bazen de uygulamalar tarafından çağrılmalıdır. 

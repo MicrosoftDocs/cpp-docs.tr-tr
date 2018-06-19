@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33692343"
 ---
 # <a name="265-flush-directive"></a>2.6.5 flush Yönergesi
 **Flush** yönergesi, açık veya zımni, olup olmadığını belirtir uygulama bir takım tüm iş parçacıkları (aşağıda belirtilen) belirli nesnelerin tutarlı bir görünümünü sağlamak için gereken bir "iş parçacıkları arası" dizi noktası bellek. Bu nesnelere başvuran bir ifade önceki değerlendirmeleri tamamlandığından ve sonraki değerlendirmeleri değil henüz başlamıştır anlamına gelir. Örneğin, derleyicileri nesneleri değerlerini kayıtları belleği geri yüklemeniz gerekir ve donanım yazma arabellekleri için bellek temizleme ve nesneleri bellekten değerlerini yeniden gerekebilir.  

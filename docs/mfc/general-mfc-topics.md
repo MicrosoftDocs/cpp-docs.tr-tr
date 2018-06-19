@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349623"
 ---
 # <a name="general-mfc-topics"></a>Genel MFC Konuları
 Bu makaleler ailesi Microsoft Foundation Class (MFC) Kitaplığı hakkında teknik ayrıntılar içerir ve MFC çerçevesi ve anahtar bileşenleri ve alt sistemleri genel bir bakış sağlar.  

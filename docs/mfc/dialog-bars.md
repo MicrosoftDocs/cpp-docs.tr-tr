@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348813"
 ---
 # <a name="dialog-bars"></a>İletişim Kutusu Çubukları
 Bir iletişim çubuğu araç, bir tür olduğundan, [denetim çubuğu](../mfc/control-bars.md) herhangi bir tür denetimi içerebilir. Kalıcı olmayan iletişim kutusunun özelliklere sahip olduğu bir [CDialogBar](../mfc/reference/cdialogbar-class.md) nesnesi, daha güçlü bir araç sağlar.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33350039"
 ---
 # <a name="mfc-activex-controls-adding-custom-methods"></a>MFC ActiveX Denetimleri: Özel Yöntemler Ekleme
 Bunlar zaten tarafından uygulanmaz, özel yöntemler farklı stok yöntemleri `COleControl`. Denetiminize eklediğiniz her özel yöntem uygulamasını sağlamanız gerekir.  

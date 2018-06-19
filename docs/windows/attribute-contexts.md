@@ -20,6 +20,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33860339"
 ---
 # <a name="attribute-contexts"></a>Öznitelik Bağlamları
 C++ öznitelikleri dört temel alan kullanarak tanımlanabilen: Bunlar uygulanabilir hedef (**uygulandığı**), veya repeatable olmaları durumunda (**Repeatable**), diğer öznitelikleri (varlığınıgerekli **Gerekli öznitelikler**) ve diğer öznitelikleri uyumsuzluklar (**geçersiz öznitelikler**). Bu alanların her özniteliğin başvuru konusu eşlik eden bir tabloda listelenmiştir. Bu alanların her biri aşağıda açıklanmıştır.  

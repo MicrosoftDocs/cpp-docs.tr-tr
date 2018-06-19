@@ -32,6 +32,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33351360"
 ---
 # <a name="menus-and-resources-server-additions"></a>Menüler ve Kaynaklar: Sunucu Ekleme
 Bu makalede menüleri ve diğer kaynakların bir görsel düzenleme sunucu (Bileşen) uygulaması için yapılması gereken değişiklikleri açıklar. Bu üç modlarından birini başlatılabilir çünkü sunucu uygulaması menü yapısı ve diğer kaynakları birçok eklemeleri gerektirir: tek başına, katıştırılmış, veya yerinde bildirimde. Bölümünde açıklandığı gibi [menüleri ve kaynakları (OLE)](../mfc/menus-and-resources-ole.md) makale, en fazla dört menüleri kümesi vardır. Yalnızca üç miniserver için kullanılırken dört bir MDI tam sunucu uygulaması için kullanılır. Uygulama Sihirbazı'nı menüsü düzeni istediğiniz sunucu türü için gerekli oluşturur. Bazı özelleştirme gerekli olabilir.  

@@ -41,6 +41,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33374594"
 ---
 # <a name="ctypedptrlist-class"></a>CTypedPtrList sınıfı
 Tür kullanımı uyumlu "sarmalayıcı" sınıfının nesneleri için sağlar `CPtrList`.  

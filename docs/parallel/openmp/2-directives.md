@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33695895"
 ---
 # <a name="2-directives"></a>2. Yönergeler
 Yönergeleri temel **#pragma** yönergeleri C ve C++ standartlarında tanımlanmış.  OpenMP C ve C++ API desteği derleyicileri etkinleştirir ve tüm OpenMP derleyici yönergeleri yorumu sağlayan bir komut satırı seçeneğini dahil edilir.

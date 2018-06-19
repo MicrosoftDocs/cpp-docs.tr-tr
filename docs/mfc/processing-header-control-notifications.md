@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348897"
 ---
 # <a name="processing-header-control-notifications"></a>Üstbilgi Denetimi Bildirimlerini İşleme
 Görünüm veya iletişim kutusu sınıfında oluşturmak için Özellikler penceresini kullanın. bir [OnChildNotify](../mfc/reference/cwnd-class.md#onchildnotify) herhangi üstbilgi denetimi için bir anahtar ifadesiyle işleyici işlevi ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) istediğiniz bildirim iletileri işleme (bkz [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md)). Kullanıcı tıklattığında ya da bir üstbilgi öğesi, bir ayırıcı drags öğeleri vb. arasında çift tıklamalar bildirimleri üst penceresine gönderilir.  

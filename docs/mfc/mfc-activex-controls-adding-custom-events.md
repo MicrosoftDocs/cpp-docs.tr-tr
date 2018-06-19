@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33352537"
 ---
 # <a name="mfc-activex-controls-adding-custom-events"></a>MFC ActiveX Denetimleri: Özel Olaylar Ekleme
 Özel olaylar, bunlar otomatik olarak bir sınıf tarafından tetiklenen değil, stok olayları farklı `COleControl`. Özel bir olay bir olay olarak denetim geliştirici tarafından belirlenen belirli bir eylemi, tanır. Özel olaylar için olay eşleme girdilerini tarafından temsil edilen `EVENT_CUSTOM` makrosu. Aşağıdaki bölümde ActiveX Denetim Sihirbazı kullanılarak oluşturulmuş bir ActiveX denetimi projesi için özel bir olay uygular.  

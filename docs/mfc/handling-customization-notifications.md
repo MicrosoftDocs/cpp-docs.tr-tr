@@ -62,6 +62,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33353708"
 ---
 # <a name="handling-customization-notifications"></a>Özelleştirme Bildirimlerini İşleme
 Windows araç yaygın bir denetim eklemek, silmek veya araç çubuğu düğmeleri yeniden düzenlemek kullanıcı izin veren bir sistem tanımlı özelleştirme iletişim kutusu dahil olmak üzere yerleşik özelleştirme özelliklere sahiptir. Uygulama, özelleştirme özellikleri kullanılabilir olduğunu ve kullanıcının araç çubuğunu özelleştirebilirsiniz uzantı denetimlerini belirler.  

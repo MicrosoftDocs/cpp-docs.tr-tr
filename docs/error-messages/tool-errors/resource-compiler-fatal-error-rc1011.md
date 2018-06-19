@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33316507"
 ---
 # <a name="resource-compiler-fatal-error-rc1011"></a>Kaynak Derleyicisi Önemli Hatası RC1011
 Derleyici sınırı: 'tanımlayıcısı': çok büyük bir makro tanımı  

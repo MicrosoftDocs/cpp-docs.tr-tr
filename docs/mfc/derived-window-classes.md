@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33351502"
 ---
 # <a name="derived-window-classes"></a>Türetilen Pencere Sınıfları
 Doğrudan windows oluşturabilirsiniz [CWnd](../mfc/reference/cwnd-class.md), ya da yeni pencere sınıflarından `CWnd`. Özel windows genellikle oluşturma budur. Bununla birlikte, çoğu windows framework programda kullanılan yerine birinden oluşturulan `CWnd`-çerçeve penceresi sınıfları MFC tarafından sağlanan türetilmiş.  

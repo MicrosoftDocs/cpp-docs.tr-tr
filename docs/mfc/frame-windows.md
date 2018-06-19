@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33352069"
 ---
 # <a name="frame-windows"></a>Çerçeve Pencereleri
 Bir uygulamayı Windows altında çalıştığında, kullanıcı çerçeve pencerelerinde görüntülenen belgeleri ile etkileşim kurar. Belge çerçeve penceresi iki önemli bileşeni vardır: çerçeve ve onu çerçeve içeriği. Belge çerçeve penceresi olabilir bir [tek belge arabirimi](../mfc/sdi-and-mdi.md) (SDI) çerçeve penceresi veya [birden çok belge arabirimi](../mfc/sdi-and-mdi.md) (MDI) alt pencere. Windows kullanıcı etkileşimi çerçeve penceresi ile çoğunu yönetir: taşıma pencerede yeniden boyutlandırma, kapatma ve en aza ve onu en üst düzeye çıkarma. Çerçeve içine içeriği yönetin.  

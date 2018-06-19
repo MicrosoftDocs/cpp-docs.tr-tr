@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348667"
 ---
 # <a name="mfc-classes-for-creating-internet-client-applications"></a>Internet İstemci Uygulamaları Oluşturmak için MFC Sınıfları
 MFC Internet istemci uygulamaları yazmak için aşağıdaki sınıflar ve genel işlevler sağlar. Girinti üstündeki girintisiz sınıfından türetilen bir sınıfı gösterir. `CGopherFile` ve `CHttpFile` öğesinden türetilen `CInternetFile`, örneğin. Bu sınıf ve genel işlevler AFXINET bildirilir. H dışında `CFileFind`, AFX bildirilmedi. H.  

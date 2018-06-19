@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349742"
 ---
 # <a name="how-to-implement-tracking-in-your-code"></a>Nasıl yapılır: Kodunuzda İzleme Uygulama
 OLE öğe izlemek için öğeyi tıklatarak veya belgenin görünümünü güncelleştirme gibi öğesine ilgili belirli olayları işlemesi gerekir. Her durumda, geçici bir bildirmek yeterli [CRectTracker](../mfc/reference/crecttracker-class.md) bu nesnesi yoluyla öğesi nesne ve.  

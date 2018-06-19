@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33372009"
 ---
 # <a name="mfc-application-wizard"></a>MFC Uygulama Sihirbazı
 MFC Uygulama Sihirbazı bir uygulama oluşturur, derlendiğinde bir Windows yürütülebilir dosyanın (.exe) uygulaması, temel özellikleri uygular. MFC başlangıç uygulaması C++ kaynak (.cpp) dosyaları, kaynak (.rc) dosyaları, üstbilgi (.h) dosyaları ve bir proje (.vcxproj) dosyası içerir. Bu Başlatıcı dosyalarda oluşturulan kod MFC temel alır.  

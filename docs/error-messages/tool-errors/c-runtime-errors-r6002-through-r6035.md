@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33300026"
 ---
 # <a name="c-runtime-errors-r6002-through-r6035"></a>C çalışma zamanı hataları R6002-R6035
 

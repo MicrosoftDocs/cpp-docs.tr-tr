@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33350360"
 ---
 # <a name="mdi-tabbed-groups"></a>MDI Sekmeli Grupları
 Bir veya daha fazla sekmeli windows görüntülemek birden çok belge arabirimi (MDI) uygulamaları birden çok belge arabirimi (MDI) sekmeli gruplar özelliği sağlar (ya da kullanıcı grupları olarak bilinen sekmeli windows *sekmeli grupları*) MDI istemci alanında. Sekmeli windows dikey veya yatay olarak hizalanabilir. Bir uygulama birden fazla MDI sekmeli Grup barındırıyorsa, grupları ayırıcılar tarafından ayrılır.  

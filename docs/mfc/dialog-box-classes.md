@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33351696"
 ---
 # <a name="dialog-box-classes"></a>İletişim Kutusu Sınıfları
 Sınıf `CDialog` ve türetilmiş sınıflarının iletişim kutusu işlevleri kapsülleyen. Bir iletişim kutusu penceresinin özel bir tür olduğundan `CDialog` türetildiği `CWnd`. İletişim sınıflarından `CDialog` kullanın açma veya dosya, yazdırma, yazı tipi veya renk seçme kaydetme gibi standart iletişim kutuları için ortak iletişim kutusu sınıfları, bir arama ve değiştirme işlemi başlatılıyor veya çeşitli gerçekleştirme veya OLE ile ilgili işlemler.  

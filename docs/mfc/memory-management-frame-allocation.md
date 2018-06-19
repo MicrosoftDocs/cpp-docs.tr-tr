@@ -33,6 +33,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349317"
 ---
 # <a name="memory-management-frame-allocation"></a>Bellek Yönetimi: Çerçeve Ayırma
 Çerçevesinde ayırma "olarak ayarlanmış yığın çerçevesi" adı geçen her bir işlev çağrılır. Yığın çerçevesi tutan geçici olarak bağımsız değişkenler tanımlanan değişkenler yanı sıra işlevi işlevi için yerel bellek alanıdır. Derleyici otomatik olarak alanı kendileri için ayırdığından çerçeve değişkenleri genellikle "Otomatik" değişkenleri denir.  

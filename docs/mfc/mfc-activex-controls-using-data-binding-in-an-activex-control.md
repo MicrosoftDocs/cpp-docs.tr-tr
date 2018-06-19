@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33353279"
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma
 ActiveX denetimleri daha güçlü kullanımlarını bir veritabanında belirli bir alanla bağlamak için denetimin özelliğini sağlayan veri bağlama biridir. Bir kullanıcı bu bağlı özellik verilerde değişiklik yaptığında denetim veritabanı ve kayıt alanını güncelleştirilmesi istekleri bildirir. Veritabanı ardından Denetim başarı veya hata isteğin bildirir.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33691007"
 ---
 # <a name="4-environment-variables"></a>4. Ortam Değişkenleri
 Bu bölümde, OpenMP C ve C++ API ortam değişkenlerini (veya eşdeğer platforma özgü mekanizmaları) açıklanmaktadır paralel kod yürütmeyi denetlemek.  Ortam değişkenlerinin adları büyük olmalıdır. Atanmış değerler büyük küçük harfe duyarlı ve baştaki ve sondaki boşluk olabilir.  Değerlerin program başlatıldıktan sonra yapılan değişiklikler göz ardı edilir.  

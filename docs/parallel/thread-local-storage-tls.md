@@ -24,6 +24,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33694556"
 ---
 # <a name="thread-local-storage-tls"></a>İş Parçacığında Yerel Depolama (TLS)
 İş parçacığı yerel depolaması (TLS) verilen birden çok iş parçacıklı işlemdeki her bir iş parçacığı iş parçacığına özgü veri depolanacağı konumları ayırabilirsiniz yöntemidir. Dinamik olarak bağlama (çalışma zamanı) iş parçacığına özgü veri TLS API yoluyla desteklenir ([TlsAlloc](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686801), [TlsGetValue](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686812), [TlsSetValue](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686818), ve [TlsFree](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686804)). İş parçacığı yerel depolama Windows nasıl uygulandığı hakkında daha fazla bilgi için bkz: [iş parçacığı yerel depolaması (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686749\(v=vs.85\).aspx).  Win32 ve Visual C++ Derleyici artık varolan API uygulamasına ek olarak statik olarak bağlı (yük-time) iş parçacığı başına veri destekler.  

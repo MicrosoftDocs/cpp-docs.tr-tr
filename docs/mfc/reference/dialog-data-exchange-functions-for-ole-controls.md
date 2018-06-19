@@ -33,6 +33,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33375979"
 ---
 # <a name="dialog-data-exchange-functions-for-ole-controls"></a>OLE Denetimleri için İletişim Kutusu Veri Değişimi İşlevleri
 Bu konu, bir iletişim kutusu, form görünümü veya denetim görünüm nesnesi OLE denetimi özelliği veri üyesi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi arasında veri değişimi için kullanılan DDX_OC işlevleri listeler.  

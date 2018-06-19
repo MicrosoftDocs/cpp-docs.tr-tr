@@ -26,6 +26,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33688875"
 ---
 # <a name="multithreading-creating-user-interface-threads"></a>Çoklu İş Parçacığı Kullanımı: Kullanıcı Arabirimi İş Parçacıkları Oluşturma
 Bir kullanıcı arabirimi iş parçacığı kullanıcı girişini işlemek ve diğer uygulama bölümlerini çalışan iş parçacıklarının bağımsız olarak kullanıcı olaylarına tepki vermek için yaygın olarak kullanılır. Ana uygulama iş parçacığı (sağlanan, `CWinApp`-türetilmiş sınıf) daha önce oluşturduğunuz ve sizin için başlatıldı. Bu konu, ek kullanıcı arabirimi iş parçacıkları oluşturmak için gereken adımları açıklar.  

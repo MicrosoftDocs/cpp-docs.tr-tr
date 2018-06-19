@@ -39,6 +39,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33371803"
 ---
 # <a name="cmfcmaskededit-class"></a>CMFCMaskedEdit sınıfı
 `CMFCMaskedEdit` Sınıfı, kullanıcı giriş maskesi karşı doğrular ve bir şablon göre doğrulanmış sonuçları görüntüler maskeli düzenleme denetimi destekler.  

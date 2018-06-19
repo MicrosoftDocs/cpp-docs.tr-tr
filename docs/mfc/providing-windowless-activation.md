@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33351816"
 ---
 # <a name="providing-windowless-activation"></a>Penceresiz Etkinleştirme Sağlama
 Pencere oluşturma kod (diğer bir deyişle, gerçekleşen her şeyi çağırdığınızda **CreateWindow'u**) yürütmek maliyetli olabilir. Tutan bir denetim bir pencere iletileri yönetmek penceresinin ekran vardır. Penceresiz denetimleri, bu nedenle windows denetimleriyle daha hızlı bir şekilde bağlıdır.  

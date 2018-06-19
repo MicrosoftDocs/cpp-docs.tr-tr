@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689642"
 ---
 # <a name="24-work-sharing-constructs"></a>2.4 İş Paylaşım Yapıları
 Bir iş paylaşım yapısı karşılaştığınızda takım üyeleri arasında ilişkili deyimin yürütülmesi dağıtır. İş paylaşım yönergeleri yeni iş parçacıkları başlatılmaz ve bir iş paylaşım yapısı girişinde zımni hiçbir engel yok.  

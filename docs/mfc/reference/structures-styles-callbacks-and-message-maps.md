@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33371106"
 ---
 # <a name="structures-styles-callbacks-and-message-maps"></a>Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri
 Bu bölümde yapılar, Stiller ve Microsoft Foundation Class Kitaplığı tarafından kullanılan geri çağırma işlevleri belgeler ve MFC ileti eşlemeleri.  

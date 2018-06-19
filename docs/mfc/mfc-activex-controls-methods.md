@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348315"
 ---
 # <a name="mfc-activex-controls-methods"></a>MFC ActiveX Denetimleri: Yöntemler
 ActiveX denetimi kendisi ve kendi denetimi kapsayıcısı arasında iletişim kurmak için olay tetikler. Bir kapsayıcı ayrıca yöntemleri ve özellikleri yoluyla denetimi ile iletişim kurabilir. Yöntemleri işlevleri de denir.  

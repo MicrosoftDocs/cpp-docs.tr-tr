@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33691422"
 ---
 # <a name="a20---binding-of-barrier-directives"></a>A.20   barrier Yönergelerini Bağlama
 Yönerge bağlama kuralları çağrısı için bir **engel** en yakın kapsayan bağlamak için yönergesi `parallel` yönergesi. Yönerge bağlama hakkında daha fazla bilgi için bkz: [bölüm 2.8](../../parallel/openmp/2-8-directive-binding.md) sayfasında 32.  

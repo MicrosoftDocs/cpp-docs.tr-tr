@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33351121"
 ---
 # <a name="property-sheets-mfc"></a>Özellik Sayfaları (MFC)
 Bu makaleler ailesi özellik sayfaları için destek MFC uygulamalarında uygulamak açıklanmaktadır. Özellik sayfasını, olarak da bilinen bir sekme iletişim kutusu, bir iletişim kutusu denetimleri çok sayıda yönetmek için bir yol sağlar. Özellik sayfasını özellik sayfaları varsa, her bir ayrı iletişim şablon kaynağını temel. İletişim kutusunun denetimleri mantıksal gruplara ayırmak ve her grup kendi özellik sayfasında yerleştirin.  

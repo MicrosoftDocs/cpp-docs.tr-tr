@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33685791"
 ---
 # <a name="how-to-specify-specific-scheduler-policies"></a>Nasıl yapılır: Belirli Zamanlayıcı İlkeleri Belirtme
 Zamanlayıcı ilkeleri Zamanlayıcısı görevleri yönettiğinde kullanan stratejisi denetlemenize olanak verir. Bu konu bir zamanlayıcı İlkesi bir İlerleme göstergesi konsola yazdırır bir görev iş parçacığı önceliğini artırmak için nasıl kullanılacağını gösterir.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33374844"
 ---
 # <a name="collection-class-helpers"></a>Koleksiyon Sınıfı Yardımcıları
 Koleksiyon sınıfları `CMap`, `CList`, ve `CArray` karşılaştırma, kopyalama ve öğelerini serileştirme gibi amaçlarla şablonlu genel yardımcı işlevleri kullanın. Temel sınıflarının, uygulamanızı bir parçası olarak `CMap`, `CList`, ve `CArray`, eşlemesi, liste veya dizi depolanan verilerin türünü uyarlanmış sürümleriyle gerektikçe bu işlevleri geçersiz kılmalıdır. Yardımcı işlevleri gibi geçersiz kılma hakkında bilgi için `SerializeElements`, makaleye bakın [koleksiyonları: tür kullanımı uyumlu koleksiyon yapma](../../mfc/how-to-make-a-type-safe-collection.md). Unutmayın **ConstructElements** ve **DestructElements** kullanım dışı bırakıldı.  

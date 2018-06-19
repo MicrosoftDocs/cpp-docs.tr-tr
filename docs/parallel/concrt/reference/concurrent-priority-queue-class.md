@@ -30,6 +30,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33693672"
 ---
 # <a name="concurrentpriorityqueue-class"></a>concurrent_priority_queue Sınıfı
 `concurrent_priority_queue` Sınıfı eş zamanlı gönderme ve pop öğeleri için birden çok iş parçacığı sağlayan bir kapsayıcıdır. Öğeleri, öncelik şablon bağımsız değişken sağlanan bir functor tarafından belirlendiği öncelik sırasına Sil'i.  

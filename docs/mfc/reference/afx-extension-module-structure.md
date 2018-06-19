@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349267"
 ---
 # <a name="afxextensionmodule-structure"></a>AFX_EXTENSION_MODULE Yapısı
 `AFX_EXTENSION_MODULE` MFC uzantı DLL'leri başlatma sırasında MFC uzantı DLL modülü durumunu tutmak için kullanılır.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33352841"
 ---
 # <a name="programmatic-printing"></a>Program Aracılığıyla Yazdırma
 OLE sağlanan kalıcı belgeleri benzersiz şekilde tanımlamak için anlamına gelir (**GetClassFile**) ve bunların ilişkili koda yükleyin (`CoCreateInstance`, **QueryInterface(IID_IPersistFile)**, **QueryInterface(IID_IPersistStorage)**, **IPersistFile::Load**, ve **IPersistStorage::Load**). Etkin belge kapsaması (OLE 2.0 ilk olarak gönderilmeyen varolan bir OLE tasarımı kullanarak) daha fazla yazdırma belgeleri etkinleştirmek için bir temel standart yazdırma arabirimi tanıtır `IPrint`, yükleyebilir herhangi bir nesne aracılığıyla genel olarak kullanılabilir kalıcı durum belge türü. Etkin belge her görünümünü isteğe bağlı olarak destekleyebilir **IPrint** bu yetenekleri sağlamak için arabirim.  

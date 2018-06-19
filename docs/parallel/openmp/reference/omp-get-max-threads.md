@@ -21,6 +21,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33695843"
 ---
 # <a name="ompgetmaxthreads"></a>omp_get_max_threads
 Eşit veya bundan büyük bir paralel bölge olmadan, kullanılabilir olacak iş parçacığı sayısı bir tamsayı döndürür [num_threads](../../../parallel/openmp/reference/num-threads.md) bu noktada kodda tanımlanmadı.  

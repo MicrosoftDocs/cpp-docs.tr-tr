@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349681"
 ---
 # <a name="providing-mouse-interaction-while-inactive"></a>Devre Dışı İken Fare Etkileşimi Sağlama
 Denetim hemen etkinleştirilmemişse hala işlemek istediğiniz `WM_SETCURSOR` ve `WM_MOUSEMOVE` kendi pencere denetim olmasına rağmen iletileri. Bu etkinleştirerek gerçekleştirilebilir `COleControl`'s uyarlamasını `IPointerInactive` varsayılan olarak devre dışıdır arabirimi. (Bkz *ActiveX SDK* bu arabirim açıklaması.) Etkinleştirmek için dahil `pointerInactive` tarafından döndürülen bayraklar kümesi bayrağı [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags):  
