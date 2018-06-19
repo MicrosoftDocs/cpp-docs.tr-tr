@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33134251"
 ---
 # <a name="logicalnot-stlclr"></a>logical_not (STL/CLR)
 Şablon sınıfı bir functor açıklar çağrıldığında, yalnızca, sahipse true değerini döndürür, bağımsız değişkeni false olarak sınar. Kullandığınız kendi bağımsız değişken türü bakımından işlevi nesnesi belirtin.  

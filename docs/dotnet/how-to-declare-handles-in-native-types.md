@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130977"
 ---
 # <a name="how-to-declare-handles-in-native-types"></a>Nasıl yapılır: Yerel Türlerde İşleyicileri Bildirme
 Yerel tür içinde tanıtıcı türü bildiremezsiniz. Vcclr.h sağlar tür kullanımı uyumlu sarmalayıcı şablonunu `gcroot` C++ yığınından CLR nesnesine başvurmak için. Bu şablon, sanal bir işleyiciyi yerel tür katıştırmak ve temel alınan tür değilmiş gibi davran sağlar. Çoğu durumda, kullandığınız `gcroot` nesnesi herhangi bir atama olmadan katıştırılmış tür olarak. Bununla birlikte, [her biri için de](../dotnet/for-each-in.md), kullanmak zorunda `static_cast` temeldeki yönetilen başvuruyu almak için.  

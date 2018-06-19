@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371105"
 ---
 # <a name="exp-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Exp Dosyaları
 Dışarı aktarma (.exp) dosyaları, dışarı aktarılan işlevler ve veri öğeleri hakkında bilgi içerir. LIB içeri aktarma kitaplığı oluşturduğunda, ayrıca bir .exp dosyası oluşturur. Hem verir ve başka bir programda doğrudan veya dolaylı olarak içe aktaran bir program bağladığınızda .exp dosyası kullanın. Bir .exp dosyası ile bağlantı varsa, bağlantı LIB zaten bir oluşturduğunuzu varsayar çünkü bir içeri aktarma kitaplığı üretmez. .Exp dosyaları ve içeri aktarma kitaplıkları hakkında daha fazla ayrıntı için bkz: [içeri aktarma kitaplıkları ve dışarı aktarma dosyalarıyla çalışma](../../build/reference/working-with-import-libraries-and-export-files.md).  

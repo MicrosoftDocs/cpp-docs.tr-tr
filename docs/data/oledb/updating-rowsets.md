@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33112388"
 ---
 # <a name="updating-rowsets"></a>Satır Kümelerini Güncelleştirme
 Bir çok basit bir veritabanı güncelleştirmek veya veri deposuna veri yazmak için bir işlemdir. OLE DB'de güncelleme mekanizması basittir: tüketici uygulamanız bağlı veri üyelerinin değerlerini ayarlar ve ardından bu değerleri satır kümesine yazar; Tüketici sonra sağlayıcının veri deposunu güncelleştirmek ister.  

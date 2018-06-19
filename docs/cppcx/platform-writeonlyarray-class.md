@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33091493"
 ---
 # <a name="platformwriteonlyarray-class"></a>Platform::WriteOnlyArray sınıfı
 Arayan doldurmak yöntemi için bir dizi geçtiğinde giriş parametresi olarak kullanılan bir tek boyutlu dizi temsil eder.  

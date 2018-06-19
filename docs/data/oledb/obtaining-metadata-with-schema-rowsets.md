@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33114740"
 ---
 # <a name="obtaining-metadata-with-schema-rowsets"></a>Şema Satır Kümeleri ile Meta Verileri Alma
 Bazen satır açmadan sağlayıcı, satır, tablo, sütun veya diğer veritabanı bilgileri hakkında bilgi edinmeniz gerekir. Veri veritabanı yapısı hakkındaki meta veriler denir ve çeşitli farklı yöntemler tarafından alınabilir. Şema satır kümeleri kullanan bir yöntemdir.  

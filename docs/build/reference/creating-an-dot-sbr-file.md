@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371089"
 ---
 # <a name="creating-an-sbr-file"></a>.Sbr Dosyası Oluşturma
 BSCMAKE için girdi dosyaları .sbr dosyalarıdır. Derleyici derlendiğinden her nesne dosyası (.obj) için bir .sbr dosyası oluşturur. Gözatma bilgileri dosyası derleme veya güncelleştirdiğinizde, tüm .sbr dosyaları projeniz için disk üzerinde kullanılabilir olması gerekir.  
