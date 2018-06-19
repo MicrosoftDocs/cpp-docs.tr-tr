@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32359836"
 ---
 # <a name="atl-collection-classes"></a>ATL Koleksiyon Sınıfları
 ATL depolamak ve verilere erişmek için birçok sınıflar sağlar. Kullanmaya karar hangi sınıfı gibi birkaç etkene bağlıdır:  

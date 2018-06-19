@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355406"
 ---
 # <a name="date-and-time-systemtime-support"></a>Tarih ve saat: SYSTEMTIME desteği
 [CTime](../atl-mfc-shared/reference/ctime-class.md) sınıfı Win32 sistem ve dosya sürelerinden kabul oluşturucular sahiptir. Kullanırsanız `CTime` nesneleri bu amaçlar için kendi başlatma bu makalede anlatıldığı gibi uygun şekilde değiştirmeniz gerekir.  

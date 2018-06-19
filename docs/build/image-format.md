@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367946"
 ---
 # <a name="image-format"></a>Görüntü Biçimi
 Yürütülebilir görüntü biçimi PE32 +'dır. Statik görüntü verilerini adreslemek için göreli bir 32 bit öteleme ile adresleme kullanılabilmesi için yürütülebilir görüntü (DLL'ler ve exe) sınırını 2 gigabayt kısıtlanır. Bu veriler, içeri aktarma adres tablosunu, dize sabitleri, statik genel verileri vb. içerir.  

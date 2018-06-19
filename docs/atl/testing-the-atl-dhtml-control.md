@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361872"
 ---
 # <a name="testing-the-atl-dhtml-control"></a>ATL DHTML denetimi test etme
 Projenizi oluşturduktan sonra derleme ve örnek denetimi test. Bunu önce sınıf görünümü ve Çözüm Gezgini proje incelemek için kullanın. Projenizin öğeleri daha ayrıntılı olarak açıklanmıştır [DHTML denetimi proje öğelerini tanımlama](../atl/identifying-the-elements-of-the-dhtml-control-project.md).  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32360994"
 ---
 # <a name="cfirepropnotifyevent-class"></a>CFirePropNotifyEvent sınıfı
 Bu sınıf kapsayıcının havuz denetim özelliği değişiklikleri ile ilgili bilgilendirmek için yöntemleri sağlar.  

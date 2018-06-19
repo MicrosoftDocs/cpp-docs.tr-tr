@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368414"
 ---
 # <a name="pseudotargets"></a>Sözde Hedefler
 Bir pseudotarget bir bağımlılık satırda bir dosya adı yerine kullanılan bir etiketi belirtin. Yok ve bu nedenle güncel olan bir dosya olarak yorumlanır. NMAKE pseudotarget ait zaman damgası tüm bağımlıları en son olduğunu varsayar. Hiçbir bağımlıları varsa, geçerli saati varsayılır. Bir pseudotarget hedef olarak kullanılıyorsa, kendi komutları her zaman yürütülür. Bağımlı kullanılan bir pseudotarget de başka bir bağımlılık olarak hedefi olarak yer almalıdır. Ancak, bu bağımlılık komutları blok olması gerekmez.  

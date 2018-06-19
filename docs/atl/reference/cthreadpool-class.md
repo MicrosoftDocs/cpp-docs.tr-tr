@@ -35,6 +35,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32365695"
 ---
 # <a name="cthreadpool-class"></a>CThreadPool sınıfı
 Bu sınıf, iş öğelerinin sırasını işlemek çalışan iş parçacığı havuzu sağlar.  

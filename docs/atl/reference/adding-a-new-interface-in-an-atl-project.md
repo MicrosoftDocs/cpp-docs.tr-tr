@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356751"
 ---
 # <a name="adding-a-new-interface-in-an-atl-project"></a>ATL projesinde yeni bir arabirim ekleme
 Nesne veya denetim için bir arabirim eklediğinizde, bu arabiriminde her yöntemi için tamamlanmamış işlevleri oluşturun. Nesne veya denetim içinde yalnızca şu anda var olan bir tür kitaplığı'nda bulunan arabirimleri ekleyebilirsiniz. Ayrıca, sınıf arabirimi Ekle uygulamalıdır [BEGIN_COM_MAP](com-map-macros.md#begin_com_map) makrosu veya proje bağlanıyorsa olmalıdır `coclass` özniteliği.  

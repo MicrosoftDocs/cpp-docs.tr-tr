@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33104528"
 ---
 # <a name="adapter-stlclr"></a>bağdaştırıcı (STL/CLR)
 STL/CLR üstbilgi `<cliext/adapter>` iki şablon sınıfları belirtir (`collection_adapter` ve `range_adapter`) ve şablon işlevi `make_collection`.  

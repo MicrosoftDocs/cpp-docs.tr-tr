@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32360119"
 ---
 # <a name="active-technology-and-dlls"></a>Etkin Teknoloji ve DLL'ler
 Etkin teknoloji nesne sunucularının DLL içinde tamamen uygulanmasına izin verir. Bu tür sunucuya işlemdeki sunucu adı verilir. Çoğunlukla etkin teknoloji kapsayıcının ana ileti döngüye kanca için bir sunucu için bir yol sağlamadığından MFC tamamen işlemdeki sunucuları görsel düzenleme, tüm özellikler için desteklemez. MFC Hızlandırıcı tuşları ve boşta kalma süresi işleme işlemek için kapsayıcı uygulamanın ileti döngüsü erişim gerektirir.  

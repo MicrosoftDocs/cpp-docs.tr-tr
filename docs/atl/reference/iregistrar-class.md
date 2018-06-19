@@ -30,6 +30,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32363759"
 ---
 # <a name="iregistrar-interface"></a>IRegistrar arabirimi
 Bu arabirim atliface.h içinde tanımlanır ve CAtlModule üye işlevleri tarafından gibi dahili olarak kullanılır [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced).   

@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358254"
 ---
 # <a name="reference-counting"></a>Başvuru sayımı
 COM kendisi, nesne artık kullanılmayan düşündüğünde nesneyi bellekten kaldırmak otomatik olarak denemez. Bunun yerine, nesne Programcı kullanılmayan nesne kaldırmanız gerekir. Programcı nesneyi dayalı olarak bir başvuru sayısı kaldırılmış olup olmadığını belirler.  

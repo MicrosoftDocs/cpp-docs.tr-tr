@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361963"
 ---
 # <a name="which-atl-classes-facilitate-activex-control-containment"></a>Hangi ATL sınıfları ActiveX denetimi kapsamasını kolaylaştırmak?
 ATL'ın denetimi barındırma kodu herhangi ATL sınıfları kullanmanızı gerektirmez; yalnızca oluşturabileceğiniz bir **"AtlAxWin80"** penceresi ve gerekirse denetimi barındırma API kullanın (daha fazla bilgi için bkz: **ATL denetimi barındırma API nedir**. Ancak, aşağıdaki sınıflar kapsama özellikleri kullanmak kolaylaştırır.  

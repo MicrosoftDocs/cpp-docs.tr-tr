@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32362797"
 ---
 # <a name="connection-point-global-functions"></a>Bağlantı noktası genel işlevler
 Bu işlevler bağlantı noktaları için destek sağlar ve haritalar havuzu.  

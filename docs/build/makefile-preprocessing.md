@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368232"
 ---
 # <a name="makefile-preprocessing"></a>Derleme Görevleri Dosyası Önişlemesi
 NMAKE oturum önişlem yönergeleri ve ifadeler kullanarak denetleyebilirsiniz. Ön işleme yönergeleri derleme görevleri dosyası veya Tools.ini yerleştirilebilir. Yönergeleri kullanarak, koşullu, derleme görevleri dosyası işleme, hata iletilerinin görüntülenip, diğer derleme görevleri dosyaları dahil, bir makrosu tanımsız ve belirli seçenekleri Aç veya kapat.  

@@ -30,6 +30,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32418386"
 ---
 # <a name="vprintf-functions"></a>vprintf İşlevleri
 Her biri `vprintf` işlevleri bir bağımsız değişken listesi için bir işaretçi alır sonra biçimlendirir ve belirli bir hedefe verilen veri yazar. Parametre doğrulaması, olup işlevleri geniş olması veya tek baytlı karakter dizeleri, Çıkış hedefini ve parametreleri kullanılan sırası biçim dizesini belirtmek için destek işlevler farklı.  

@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32364914"
 ---
 # <a name="iperpropertybrowsingimpl-class"></a>IPerPropertyBrowsingImpl sınıfı
 Bu sınıf uygulayan **IUnknown** ve bir istemcinin bir nesnenin özellik sayfaları bilgilerinde erişmesine olanak tanır.  

@@ -79,6 +79,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366581"
 ---
 # <a name="cstockpropimpl-class"></a>CStockPropImpl sınıfı
 Bu sınıf stok özellik değerlerini desteklemek için yöntemleri sağlar.  

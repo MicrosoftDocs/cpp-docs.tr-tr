@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33092564"
 ---
 # <a name="quick-reference-ccx"></a>Hızlı Başvuru (C + +/ CX)
 Windows çalışma zamanı yalnızca güvenilir işletim sistemi ortamında yürütmek, yetkili İşlevler, veri türleri ve cihazlar kullanır ve Microsoft Store dağıtılan Evrensel Windows Platformu (UWP) uygulamaları destekler. C + +/ CX uygulamaları yazma Windows çalışma zamanı için basitleştirin. Bu makalede Hızlı Başvuru değildir; daha eksiksiz belgeler için bkz: [tür sistemi](../cppcx/type-system-c-cx.md) ve [çalışma zamanı platformları için bileşen uzantıları](http://go.microsoft.com/fwlink/p/?linkid=228720).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366880"
 ---
 # <a name="commands-in-a-makefile"></a>Derleme Görevleri Dosyası Komutları
 Açıklama bloğu veya çıkarım kuralı bağımlılık güncel ise, çalıştırılacak komut bloğu belirtir. NMAKE görüntüler her komut, çalıştırmadan önce sürece /S, **. Sessiz**, **! CMDSWITCHES**, veya @ kullanılır. NMAKE açıklama blok komutları bloğu tarafından izlenmeyen bir eşleşen çıkarım kuralı için durur.  

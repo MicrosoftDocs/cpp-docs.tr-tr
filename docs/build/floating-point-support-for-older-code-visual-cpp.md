@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367166"
 ---
 # <a name="floating-point-support-for-older-code-visual-c"></a>Eski Kod için Kayan Nokta Desteği (Visual C++)
 MMX ve kayan nokta yığın kayıtları (MM0-MM7/ST0-ST7) içerik geçişleri boyunca korunur.  Bu kayıtları için açık bir çağrı kuralı yok.  Bu yazmaçların kullanımı çekirdek modu kodunda kesinlikle yasaktır.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891772"
 ---
 # <a name="user-defined-attributes--c-component-extensions"></a>Kullanıcı Tanımlı Öznitelikler (C++ Bileşen Uzantıları)
 Özel öznitelikler bir arabirimi, sınıf veya yapı, yöntemi, parametresi veya numaralandırması meta genişletmenizi sağlar.  

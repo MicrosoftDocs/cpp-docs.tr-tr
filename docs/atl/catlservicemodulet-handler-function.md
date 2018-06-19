@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355000"
 ---
 # <a name="catlservicemodulethandler-function"></a>CAtlServiceModuleT::Handler işlevi
 `CAtlServiceModuleT::Handler` hizmetinin durumunu almak ve (örneğin, durdurma veya duraklatma) çeşitli yönergeler vermek için Hizmet Denetimi Yöneticisi (SCM) çağırır yordamdır. Bir işlem kodu SCM geçirir `Handler` hizmet ne yapması gerektiğini belirtmek için. ATL oluşturulan varsayılan hizmet durdurma yönerge yalnızca işler. SCM Dur yönerge geçerse, hizmet SCM program durmak olduğunu söyler. Hizmeti daha sonra çağırır `PostThreadMessage` kendisine çıkma iletisi göndermek için. Bu ileti döngüsü sona erer ve hizmet sonuçta kapatılacak.  

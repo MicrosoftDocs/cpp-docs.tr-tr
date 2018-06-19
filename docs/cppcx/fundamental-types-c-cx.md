@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33098543"
 ---
 # <a name="fundamental-types-ccx"></a>Temel türler (C + +/ CX)
 Ek olarak standart C++ yerleşik türleri, C + +/ CX destekleyen standart C++ türleri eşlenen temel Windows çalışma zamanı türleri için tür tanımları sağlayarak Windows çalışma zamanı mimarisi tarafından tanımlanan tür sistemi... C + +/ CX Boolean, karakter ve sayısal temel türleri uygular. Bu tür tanımları tanımlanan `default` ad alanı hiçbir zaman açıkça belirtilmesi gerekiyor. Ayrıca, C + +/ CX, sarmalayıcıları ve somut uygulamaları belirli Windows çalışma zamanı türleri ve arabirimleri sağlar.  

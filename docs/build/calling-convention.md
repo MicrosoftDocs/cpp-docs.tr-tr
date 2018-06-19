@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366867"
 ---
 # <a name="calling-convention"></a>Çağırma Kuralı
 Bu bölümde bir işlevi (arayan) kılan işlemi açıklanmaktadır (aranan) başka bir işleve çağrısı.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33089398"
 ---
 # <a name="array-and-writeonlyarray-ccx"></a>Dizi ve WriteOnlyArray (C + +/ CX)
 Normal C tarzı diziler serbestçe kullanabilirsiniz veya [std::array](../standard-library/array-class-stl.md) C + +/ CX programı (rağmen [std::vector](../standard-library/vector-class.md) genellikle daha iyi bir seçimdir), ancak meta verilerinde yayımlanır herhangi bir API'yi içinde bir C tarzı dizi dönüştürmeniz gerekir veya için vektör bir [Platform::Array](../cppcx/platform-array-class.md) veya [Platform::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) nasıl kullanıldığını bağlı olarak türü. [Platform::Array](../cppcx/platform-array-class.md) türüdür ne kadar etkili ne kadar güçlü [std::vector](../standard-library/vector-class.md), genel bir kılavuz olarak dizi işlemlerinin çok gerçekleştirir iç kod kullanımını kaçınmalısınız. öğeleri.  

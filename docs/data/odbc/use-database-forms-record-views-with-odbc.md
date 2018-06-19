@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33089823"
 ---
 # <a name="use-database-forms-record-views-with-odbc"></a>ODBC ile Veritabanı Formları (Kayıt Görünümleri) Kullanma
 Veri girişi veya veri görüntüleme gibi bazı uygulamalar, bir görünüm stili iletişim kutusu denetimleri ile bir form gerektirir.  

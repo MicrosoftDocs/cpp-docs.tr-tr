@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366958"
 ---
 # <a name="chained-unwind-info-structures"></a>Zincirleme Bırakma Bilgi Yapıları
 UNW_FLAG_CHAININFO bayrağı ayarlarsanız, ardından bir bırakma bilgisi ikincil bir yapıdır ve paylaşılan özel durum işleyici/zincirleme-bilgisi adres alanı birincil bırakma bilgi içerir. Aşağıdaki kod alır birincil bırakma bilgi olduğunu varsayarak, `unwindInfo` kümesine sahip yapısı bayrağı ayarlanmış olduğu.  

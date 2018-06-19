@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368541"
 ---
 # <a name="importing-function-calls-using-declspecdllimport"></a>__declspec(dllimport) Kullanarak İşlev Çağrılarını İçeri Aktarma
 Aşağıdaki kod örneğinde nasıl kullanılacağını gösterir **_declspec(dllimport)** işlev çağrıları, bir uygulamaya DLL'den dışarı aktarmak için. Varsayımında `func1` içeren .exe dosyasından ayrı bir DLL bulunan bir işlevi olduğunu **ana** işlevi.  

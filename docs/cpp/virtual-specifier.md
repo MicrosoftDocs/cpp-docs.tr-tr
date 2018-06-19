@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32421266"
 ---
 # <a name="virtual-specifier"></a>virtual Tanımlayıcısı
 [Sanal](../cpp/virtual-cpp.md) anahtar sözcüğü yalnızca statik olmayan sınıf üyesi işlevleri için uygulanabilir. Çağrıların işleve bağlanmasının, çalışma zamanına kadar ertelendiğini belirtir. Daha fazla bilgi için bkz: [sanal işlevler](../cpp/virtual-functions.md).  

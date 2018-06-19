@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32360764"
 ---
 # <a name="caxwindow2t-class"></a>CAxWindow2T sınıfı
 Bu sınıf bir ActiveX denetimini barındırır ve ayrıca Lisanslı ActiveX denetimlerini barındırma desteği olan bir pencere düzenleme için yöntemleri sağlar.  

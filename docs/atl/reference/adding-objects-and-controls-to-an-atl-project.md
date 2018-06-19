@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357779"
 ---
 # <a name="adding-objects-and-controls-to-an-atl-project"></a>Nesneleri ve denetimleri için ATL projesinde ekleme
 ATL veya MFC tabanlı projelerinizi bir nesneyi veya bir denetim eklemek için ATL kodu sihirbazlardan birini kullanabilirsiniz. Her COM nesnesi veya denetim için eklediğiniz, sihirbaz .cpp ve .h dosyaları yanı sıra, kayıt defteri betik tabanlı desteği için bir .rgs dosyası oluşturur. Aşağıdaki ATL kodu sihirbazlar Visual Studio'da kullanılabilir:  

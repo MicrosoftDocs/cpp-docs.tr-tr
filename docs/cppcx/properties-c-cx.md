@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33089565"
 ---
 # <a name="properties-ccx"></a>Özellikler (C + +/ CX)
 Windows çalışma zamanı türleri ortak veri özellikleri olarak kullanıma sunar. İstemci kodu ortak datamember gibi özelliği erişir. Dahili olarak, özellik bir get erişimcisine yöntemi, bir set erişimcisi yöntemi ya da her ikisini de içeren bir blok olarak uygulanır. Erişimci yöntemlerini kullanarak önce ek eylemler gerçekleştirebilirsiniz veya değer aldıktan sonra Örneğin, bir olay tetikleyin veya doğrulama denetimlerini gerçekleştiren.  

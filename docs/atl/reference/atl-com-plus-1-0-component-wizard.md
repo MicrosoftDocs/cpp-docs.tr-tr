@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361309"
 ---
 # <a name="atl-com-10-component-wizard"></a>ATL COM + 1.0 Bileşen Sihirbazı
 Projenize işlemleri dahil olmak üzere, COM + 1.0 hizmetlerini destekleyen bir nesne eklemek için bu sihirbazı kullanın.  

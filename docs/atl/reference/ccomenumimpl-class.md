@@ -33,6 +33,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32365034"
 ---
 # <a name="ccomenumimpl-class"></a>CComEnumImpl sınıfı
 Bu sınıf numaralandırılan öğeleri bir dizide depolandığı COM Numaralandırıcı arabirimi uygulamasını sağlar.  

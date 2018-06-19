@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32420210"
 ---
 # <a name="restrictions-on-exception-handlers"></a>Özel Durum İşleyicileri Kısıtlamaları
 Kodda özel durum işleyicileri kullanmaya ilişkin birincil sınırlama, `goto` deyim bloğuna atlamak için `__try` deyimi kullanamamanızdır. Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. `__try` deyim bloğundan dışarı atlayabilir ve seçtiğiniz özel durum işleyicilerini iç içe yerleştirebilirsiniz.  

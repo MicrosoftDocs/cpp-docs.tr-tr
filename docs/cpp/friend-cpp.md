@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32418269"
 ---
 # <a name="friend-c"></a>friend (C++)
 Bazı durumlarda, bir sınıf üyesi olmayan işlevlere veya ayrı bir sınıf tüm üyeleri için üye düzeyinde erişim vermek daha uygundur. Yalnızca sınıfı uygulayan kendi arkadaş olan bildirebilirsiniz. Bir işlev veya sınıf kendisini herhangi bir sınıf bir arkadaş bildiremezsiniz. Bir sınıf tanımı içinde `friend` anahtar sözcüğü ve üye olmayan işlevi veya sınıfınızın özel ve korumalı üyeleri erişim vermek için başka bir sınıf adı.         Bir şablon açıklamasında bir tür parametresi bir arkadaş olarak bildirilebilir.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32360168"
 ---
 # <a name="when-do-i-need-to-call-atlaxwinterm"></a>AtlAxWinTerm çağırmak ne zaman gerekiyor mu?
 [AtlAxWinTerm](reference/composite-control-global-functions.md#atlaxwinterm) kaydını siler **"AtlAxWin80"** pencere sınıfı. (Artık ana bilgisayar windows oluşturmak ihtiyacınız olursa) var olan tüm ana bilgisayar windows yok sonra bu işlev çağırmalıdır. Bu işlev çağrısı yok, işlem sonlandırıldığında pencere sınıfı otomatik olarak kaydı kaldırılacak.  

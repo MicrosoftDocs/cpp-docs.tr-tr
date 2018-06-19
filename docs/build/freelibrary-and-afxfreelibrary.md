@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367517"
 ---
 # <a name="freelibrary-and-afxfreelibrary"></a>FreeLibrary ve AfxFreeLibrary
 Açıkça DLL çağrı bağlantı işlemleri [FreeLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259188) işlev DLL modülü artık gerekli olmadığında. Bu modülün başvuru sayısını azaltır işlev ve başvuru sayısı sıfır olursa, işlemin adres alanından eşlemesini.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357075"
 ---
 # <a name="adding-an-atl-property-page"></a>ATL özellik sayfası ekleme
 Etkin Şablon kitaplığı (ATL) özellik sayfası projenize eklemek için projenize ATL uygulamasını veya ATL desteği içeren bir MFC uygulaması olarak oluşturulmuş olması gerekir. Kullanabileceğiniz [ATL Proje Sihirbazı](../../atl/reference/atl-project-wizard.md) ATL uygulamasını oluşturmak için veya [ATL nesne MFC uygulamanıza eklemek](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) MFC uygulaması için ATL desteği uygulamak için.  

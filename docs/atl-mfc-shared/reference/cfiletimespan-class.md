@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32362744"
 ---
 # <a name="cfiletimespan-class"></a>CFileTimeSpan sınıfı
 Bu sınıf, göreli bir tarih ve saat değerleri bir dosyayla ilişkili yönetme için yöntemleri sağlar.  

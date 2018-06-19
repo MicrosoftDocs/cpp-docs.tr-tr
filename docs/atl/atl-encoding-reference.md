@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358634"
 ---
 # <a name="atl-encoding-reference"></a>ATL Kodlama Başvurusu
 Ortak Internet standartları uuencode, onaltılık gibi bir dizi ve UTF8 Kodlaması atlenc.h içinde bulunan kodu tarafından desteklenir.  

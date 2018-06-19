@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356501"
 ---
 # <a name="modifying-the-atl-dhtml-control"></a>ATL DHTML denetimi değiştirme
 ATL Denetim Sihirbazı'nı Başlatıcı Kodu derlemek ve denetim çalıştırmak için ve yöntemleri proje dosyalarında nasıl yazılır ve nasıl DHTML gönderme yöntemlerini kullanarak denetimin C++ kodu çağırır görebilmeleri sağlar. Herhangi bir gönderme yöntemini arabirimine ekleyebilirsiniz. Ardından, HTML kaynak yöntemleri çağırabilirsiniz.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33089372"
 ---
 # <a name="displaying-and-manipulating-data-in-a-form"></a>Formdaki Verileri Görüntüleme ve Düzenleme
 Birçok veri erişimi uygulamaları verileri seçin ve bir form alanlarında görüntüleyin. Veritabanı sınıfı [CRecordView](../../mfc/reference/crecordview-class.md) size verir bir [Cformview'yu](../../mfc/reference/cformview-class.md) doğrudan bağlı bir kayıt kümesi nesnesi nesne. Kayıt görünümü kullanır [iletişim kutusu veri değişimi (DDX)](../../mfc/dialog-data-exchange-and-validation.md) geçerli kayıt alanların değerlerini form üzerinde denetimleri kayıt kümesinden taşımayı ve güncelleştirilmiş bilgileri kayıt kümesine geri taşımak için. Kayıt kümesi kayıt alanı değişimi (RFX) veri kaynağı üzerinde alan veri üyeleri ve karşılık gelen bir tablo sütunları arasında verileri taşımak için de kullanır.  

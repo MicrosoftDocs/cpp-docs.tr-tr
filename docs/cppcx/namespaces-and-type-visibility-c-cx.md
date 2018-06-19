@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33089838"
 ---
 # <a name="namespaces-and-type-visibility-ccx-"></a>Ad alanları ve tür görünürlüğü (C + +/ CX)
 Bir ad alanı bir standart C++ ilgili işlevleri türlerini gruplama için ve ad çakışmaları kitaplıklarında engellemek için yapıdır. Windows çalışma zamanı tür sistemi kendi kodunuzu de dahil, tüm genel Windows çalışma zamanı tür ad alanı kapsamında bir ad alanındaki bildirilmelidir gerektirir. Genel kapsamda bildirilen veya başka bir sınıf içinde iç içe geçmiş genel türler, derleme zamanı hataya neden olur.  

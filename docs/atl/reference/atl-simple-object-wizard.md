@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32363975"
 ---
 # <a name="atl-simple-object-wizard"></a>ATL Basit Nesne Sihirbazı
 Bu sihirbaz projeye en az bir COM nesnesi ekler. Sihirbazın bu sayfası nesneniz ve COM işlevselliği için dosyaları ve C++ sınıfı tanımlamak adlarını belirtmek için kullanın.  

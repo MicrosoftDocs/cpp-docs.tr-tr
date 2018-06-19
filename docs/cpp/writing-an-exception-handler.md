@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32421828"
 ---
 # <a name="writing-an-exception-handler"></a>Özel Durum İşleyicisi Yazma
 Özel durum işleyicileri genellikle belirli hatalar için yanıt vermede kullanılır. Ne yapılacağını bildiğiniz durumlar dışında, tüm özel durumları filtrelemek için exception-handling sözdizimini kullanabilirsiniz. Diğer özel durumlar, söz konusu özel durumları aramak yazılmış diğer işleyicilere (büyük olasılıkla çalışma zamanı kitaplığı veya işletim sistemindeki) aktarılmalıdır.  

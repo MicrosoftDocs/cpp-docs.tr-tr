@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32422182"
 ---
 # <a name="timing-of-exception-handling-a-summary"></a>Özel Durum İşleme Zamanlaması: Özet
 Sonlandırma işleyicisi, `__try` deyim bloğu nasıl sonlandırılırsa sonlandırılsın yürütülür. Bunun nedenleri, `__try` bloğundan dışarı atlama, denetimi bloğun dışına aktaran bir `longjmp` deyimi ve özel durum işleme nedeniyle yığının geriye doğru izlenmesidir.  

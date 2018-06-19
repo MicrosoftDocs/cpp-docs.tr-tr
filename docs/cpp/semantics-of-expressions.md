@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32424139"
 ---
 # <a name="semantics-of-expressions"></a>İfade Semantikleri
 İfadeler, işleçlerinin önceliğine ve gruplandırılmasına göre değerlendirilir. ([İşleç önceliği ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md) içinde [sözcük kuralları](../cpp/lexical-conventions.md), işleçler zorunlu tuttukları ifadeleri C++ ilişkileri gösterir.)  

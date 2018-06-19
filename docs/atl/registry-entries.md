@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32359735"
 ---
 # <a name="registry-entries"></a>Kayıt defteri girdileri
 DCOM kavramı, uygulama, kayıt defteri merkezi bir konumda içine bir veya daha fazla DCOM nesneleri için yapılandırma seçenekleri grup kimlikleri (uygulama) kullanıma sunmuştur. Adlı değer nesnesinin CLSID altında AppID değeriyle belirterek bir AppID belirtin.  

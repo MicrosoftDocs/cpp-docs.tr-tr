@@ -36,6 +36,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357206"
 ---
 # <a name="atlmfc-shared-classes"></a>ATL/MFC Paylaşılan Sınıfları
 Bu yardımcı program sınıfları herhangi bir MFC DLL gerek kalmadan tüm yerel C++ projesinde kullanılabilir.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32363288"
 ---
 # <a name="cw2cwex-class"></a>CW2CWEX sınıfı
 Bu sınıf dize dönüştürme makroları tarafından kullanılan `CW2CTEX` ve `CT2CWEX`ve typedef `CW2W`.  

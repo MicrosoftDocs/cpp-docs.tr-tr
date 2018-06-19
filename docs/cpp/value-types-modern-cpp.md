@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32423424"
 ---
 # <a name="value-types-modern-c"></a>Değer Türleri (Modern C++)
 C++ sınıfları, varsayılan değer türleri şunlardır. Bu konu, değer türleri ve bunların kullanılması ile ilgili sorunları tanıtıcı genel bakış sağlar.  

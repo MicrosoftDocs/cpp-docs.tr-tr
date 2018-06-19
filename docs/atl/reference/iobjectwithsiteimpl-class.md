@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32362045"
 ---
 # <a name="iobjectwithsiteimpl-class"></a>IObjectWithSiteImpl sınıfı
 Bu sınıf, siteyle iletişim için bir nesne sağlayan yöntemlerini sağlar.  

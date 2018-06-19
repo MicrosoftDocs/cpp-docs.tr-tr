@@ -33,6 +33,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366607"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik Denetim genel işlevler
 Bu işlevler ve oluşturma, barındırma ve ActiveX denetimlerini lisanslama iletişim kutuları oluşturma için destek sağlar.  

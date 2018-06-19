@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356836"
 ---
 # <a name="cstring-argument-passing"></a>CString bağımsız değişken geçirme
 Bu makalede nasıl geçirileceğini açıklayan [CString](../atl-mfc-shared/reference/cstringt-class.md) nesneleri işlevleri ve nasıl döndürüleceğini `CString` işlevleri nesneleri.  

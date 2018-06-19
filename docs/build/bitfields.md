@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32360786"
 ---
 # <a name="bitfields"></a>Bit Alanları
 Yapı bit alanları 64 bit ile sınırlıdır ve türünde olabilir imzalı int, imzasız int, Int64 veya işaretsiz int64. Tür sınırını aşan bit alanları sonraki tür hizalaması bit alanını hizalamak için BITS atlar. Örneğin, tamsayı bit alanları 32-bit sınırını geçebilir.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361707"
 ---
 # <a name="using-cstring"></a>CString kullanma
 Bu bölümdeki konular, ile programlamayı açıklamaktadır `CString`. Hakkında başvuru belgeleri için `CString` sınıfı, belgelerine bakın [CStringT](../atl-mfc-shared/reference/cstringt-class.md).  

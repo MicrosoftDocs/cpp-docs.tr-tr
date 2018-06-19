@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32414682"
 ---
 # <a name="expressions-with-binary-operators"></a>İkili İşleçli İfadeler
 İkili işleçler bir ifadedeki iki işlenen üzerinde işlem yapar. İkili işleçler şunlardır:  

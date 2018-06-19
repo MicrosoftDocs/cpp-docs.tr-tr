@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32364587"
 ---
 # <a name="isupporterrorinfoimpl-class"></a>ISupportErrorInfoImpl sınıfı
 Bu sınıf, bir varsayılan uygulamasını sağlar [ISupportErrorInfo arabirimi](http://msdn.microsoft.com/en-us/42d33066-36b4-4a5b-aa5d-46682e560f32) ve tek bir arabirim bir nesne üzerinde hataları oluşturduğunda kullanılabilir.  

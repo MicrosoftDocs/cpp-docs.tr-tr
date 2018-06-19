@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32419649"
 ---
 # <a name="nullptr"></a>nullptr
 Türünde bir null işaretçinin sabit atar `std::nullptr_t`, olduğu herhangi bir ham işaretçi türüne dönüştürülebilir.  Anahtar sözcüğünü kullanabilirsiniz ancak `nullptr` türü kodunuzu kullanıyorsa, tüm üstbilgileri dahil olmak üzere olmadan `std::nullptr_t`, üstbilgi dahil ederek tanımlamanız gerekir sonra `<cstddef>`.  

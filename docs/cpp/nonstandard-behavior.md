@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32420301"
 ---
 # <a name="nonstandard-behavior"></a>Standart Dışı Davranış
 Aşağıdaki bölümlerde, C++'nın Visual C++ uygulamasının C++ standartıyla uyumlu olmadığı yerlerin bazıları listelenmiştir. Aşağıda verilen bölüm numaraları C++ 11 standartındaki (ISO/IEC 14882:2011(E)) bölüm numaralarına başvurur.  

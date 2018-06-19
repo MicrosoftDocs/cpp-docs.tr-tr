@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355797"
 ---
 # <a name="adding-an-atl-com-10-component"></a>ATL COM + 1.0 bileşeni ekleme
 Bu sihirbaz projenize işlemleri dahil olmak üzere, COM + 1.0 hizmetlerini destekleyen bir nesne ekler.  

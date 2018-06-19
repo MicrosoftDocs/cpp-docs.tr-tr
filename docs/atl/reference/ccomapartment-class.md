@@ -31,6 +31,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32362167"
 ---
 # <a name="ccomapartment-class"></a>CComApartment sınıfı
 Bu sınıf, bir iş parçacığı havuza EXE modülünde bir daire yönetmek için destek sağlar.  

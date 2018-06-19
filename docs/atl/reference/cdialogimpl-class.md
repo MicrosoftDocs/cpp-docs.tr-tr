@@ -32,6 +32,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32365145"
 ---
 # <a name="cdialogimpl-class"></a>Cdialogımpl sınıfı
 Bu sınıf kalıcı veya geçici bir iletişim kutusu oluşturmak için yöntemler sağlar.  
