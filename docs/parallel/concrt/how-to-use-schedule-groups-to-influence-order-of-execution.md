@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33691202"
 ---
 # <a name="how-to-use-schedule-groups-to-influence-order-of-execution"></a>Nasıl yapılır: Yürütme Sırasını Etkilemek için Zamanlama Grupları Kullanma
 Eşzamanlılık Çalışma Zamanı'nda görevler zamanlanmış sipariş belirleyici değildir. Ancak, görevleri çalıştırdığınız sırasını etkilemek için zamanlama ilkelerini kullanabilirsiniz. Bu konuda zamanlama grupları ile birlikte kullanmayı gösterir [concurrency::SchedulingProtocol](reference/concurrency-namespace-enums.md#policyelementkey) görevlerin çalıştığı sırasını etkilemek için Zamanlayıcı ilkesi.  

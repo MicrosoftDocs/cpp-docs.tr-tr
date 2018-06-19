@@ -28,6 +28,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689031"
 ---
 # <a name="multithreading-how-to-use-the-synchronization-classes"></a>Çoklu İş Parçacığı Kullanımı: Eşitleme Sınıflarını Kullanma
 İş parçacıkları arasında kaynak erişim eşitleme bir ortak birden çok iş parçacıklı uygulamalar yazılırken sorunudur. İki veya daha fazla sahip aynı anda aynı veri istenmeyen ve beklenmeyen sonuçlara yol açabilir erişim iş parçacıkları. Örneğin, başka bir iş parçacığı aynı yapısını içeriğini okuma sırasında bir iş parçacığı yapının içeriklerini güncelleştirme. Hangi veriyi okuma iş parçacığının alacağı bilinmiyor: eski verileri, yeni yazılmış verileri veya muhtemelen her ikisinin bir karışımıyla. MFC bir dizi eşitleme ve bu sorunun çözümüne yardımcı olmak için eşitleme erişim sınıfları sağlar. Bu konu, mevcut sınıfları ve bunları tipik birden çok iş parçacıklı uygulamada iş parçacığı açısından güvenli sınıflar oluşturmak için nasıl kullanılacağını açıklar.  

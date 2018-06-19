@@ -19,6 +19,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33688797"
 ---
 # <a name="schedule-groups"></a>Zamanlama Grupları
 Bu belge eşzamanlılık çalışma zamanı, zamanlama grupları rolü açıklanmaktadır. A *zamanlama grup* affinitizes ya da grupları, ilgili görevleri birlikte. Her Zamanlayıcı, bir veya daha fazla zamanlama grupları vardır. İlgili görevleri grubunu zaman yere göre görevleri arasında yüksek derecede Örneğin, gerekirse, kullanım zamanlama grupları aynı işlemci düğümde yürütülen yararlanır. Buna karşılık, bir dizi görevi için ayrılan işlem kaynaklarının miktarını sınırlamak istediğinizde, uygulamanızın belirli kalitesi gereksinimleri, örneğin, sahip olduğunda Zamanlayıcı örnekleri kullanın. Zamanlayıcı örnekleri hakkında daha fazla bilgi için bkz: [Zamanlayıcı örnekleri](../../parallel/concrt/scheduler-instances.md).  

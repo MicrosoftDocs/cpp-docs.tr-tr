@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346681"
 ---
 # <a name="dialog-boxes"></a>İletişim Kutuları
 Windows uygulamaları, sık sık iletişim kutuları aracılığıyla kullanıcı ile iletişim kurar. Sınıf [CDialog](../mfc/reference/cdialog-class.md) iletişim kutuları yönetme, Visual C++ iletişim kutusu Düzenleyicisi iletişim kutuları tasarlamak ve iletişim şablonu kaynaklarını oluşturmak kolaylaştırır ve kod sihirbazları başlatma işlemini basitleştirmek için bir arabirim sağlar ve bir iletişim kutusu ve kullanıcı tarafından girilen değerleri toplama denetimlerini doğrulanıyor.  

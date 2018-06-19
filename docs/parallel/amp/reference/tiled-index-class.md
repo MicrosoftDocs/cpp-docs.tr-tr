@@ -34,6 +34,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33692151"
 ---
 # <a name="tiledindex-class"></a>tiled_index Sınıfı
 Bir dizine sağlayan bir [tiled_extent](tiled-extent-class.md) nesnesi. Bu sınıf öğeleri yerel bölmesi kaynağa göreli ve genel kaynağa göreli erişmek için özellikler vardır. Döşeli alanları hakkında daha fazla bilgi için bkz: [kullanarak döşeme](../../../parallel/amp/using-tiles.md).  

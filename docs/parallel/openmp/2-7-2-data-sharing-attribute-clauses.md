@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33691914"
 ---
 # <a name="272-data-sharing-attribute-clauses"></a>2.7.2 Veri Paylaşım Öznitelik Yan Tümceleri
 Birkaç yönergeleri, bir kullanıcının değişkenleri paylaşım özniteliklerini bölge süresince denetlemesine izin ver yan tümceleri kabul edin. Paylaşım öznitelik yan tümceleri yalnızca sözcük tümcesi göründüğü yönergesi kapsamını değişkenleri uygulanır. Aşağıdaki yan tümceleri tüm tüm yönergelerinde izin verilir. Belirli bir yönergeyi üzerinde geçerli yan tümceleri listesi yönergesiyle açıklanmıştır.  

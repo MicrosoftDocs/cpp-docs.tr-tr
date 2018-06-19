@@ -21,6 +21,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33685807"
 ---
 # <a name="include-files-for-multithreading"></a>Çoklu İş Parçacığı Kullanımı için Dosyaları Ekleme
 Standart içerme dosyaları kitaplıklarda uygulanan gibi C çalışma zamanı kitaplığı işlevlerini bildirme. Kullanırsanız [tam iyileştirme](../build/reference/ox-full-optimization.md) (/ Ox) veya [fastcall arama kuralı](../build/reference/gd-gr-gv-gz-calling-convention.md) (/ Gr) derleyici seçeneği varsayar tüm işlevleri çağırma kayıt kullanılarak çağrılmalıdır. Çalışma Zamanı Kitaplığı işlevleri C çağırma kuralı kullanılarak derlendi ve bu işlevlerin doğru dış başvurular oluşturmak için derleyici dosyaları içeren standart bildirimler söyleyin.  

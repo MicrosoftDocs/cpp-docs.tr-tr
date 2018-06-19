@@ -32,6 +32,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33692788"
 ---
 # <a name="texture-class"></a>texture Sınıfı
 Veri toplama üzerinde bir doku olan bir `accelerator_view` ölçüde etki alanındaki. Değişkenleri, bir uzantı etki alanındaki her öğe için bir tane koleksiyonudur. Her bir değişken C++ ilkel türüne karşılık gelen bir değer tutar ( `unsigned int`, `int`, `float`, `double`), skaler bir tür ( `norm`, veya `unorm`), ya da kısa vektör türü.  

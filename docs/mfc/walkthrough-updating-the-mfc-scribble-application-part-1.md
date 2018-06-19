@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385115"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştirme
 Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygulamasına değiştirme gösterilir. Visual Studio Office 2007 Şerit ve Windows 7 manzara Şerit destekler. Şerit kullanıcı arabirimi hakkında daha fazla bilgi için bkz: [Şerit](http://go.microsoft.com/fwlink/p/?linkid=129233) MSDN Web sitesinde.  

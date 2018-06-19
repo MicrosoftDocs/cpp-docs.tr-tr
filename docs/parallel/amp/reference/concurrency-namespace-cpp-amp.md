@@ -21,6 +21,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33693383"
 ---
 # <a name="concurrency-namespace-c-amp"></a>Eşzamanlılık Ad Alanı (C++ AMP)
 Sınıfları ve verileri paralel donanımda C++ kod yürütmeyi hızlandırmak işlevleri sağlar. Daha fazla bilgi için bkz: [C++ AMP'ye genel bakış](../cpp-amp-overview.md)  

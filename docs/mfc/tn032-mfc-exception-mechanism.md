@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380847"
 ---
 # <a name="tn032-mfc-exception-mechanism"></a>TN032: MFC Özel Durum Mekanizması
 Visual C++ önceki sürümlerini desteklemediği standart C++ özel durum mekanizması ve MFC makroları sağlanan **TRY/CATCH/THROW** , bunun yerine kullanıldığını. Bu sürümü Visual C++, C++ özel durumlarını tam olarak destekler. Bu Not önceki makroları Gelişmiş uygulama ayrıntılarını bazıları ele nasıl otomatik olarak temizleme yığını temel nesnelere dahil. C++ özel durum yığını varsayılan olarak geriye doğru izleme desteklemediğinden, bu Teknik Not artık gerekli değildir.  

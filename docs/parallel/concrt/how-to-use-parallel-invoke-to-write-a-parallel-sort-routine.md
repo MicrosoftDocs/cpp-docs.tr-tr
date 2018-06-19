@@ -23,6 +23,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689174"
 ---
 # <a name="how-to-use-parallelinvoke-to-write-a-parallel-sort-routine"></a>Nasıl yapılır: Paralel Sıralama Rutini Yazmak için parallel_invoke Kullanma
 Bu belge nasıl kullanılacağını açıklar [parallel_invoke](../../parallel/concrt/parallel-algorithms.md#parallel_invoke) bitonic Sıralama algoritması performansını artırmak için algoritması. Bitonic Sıralama algoritması yinelemeli giriş sırası daha küçük sıralanmış bölümlere ayırır. Her bölüm işlemi tüm diğer işlemleri bağımsız olduğundan bitonic Sıralama algoritması paralel olarak çalıştırılabilir.  

@@ -34,6 +34,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345146"
 ---
 # <a name="dialog-data-exchange"></a>İletişim Kutusu Veri Değişimi
 DDX mekanizması kullanırsanız, iletişim kutusunun Başlangıç değerlerini nesnenin üye değişkenleri, genellikle ayarlamak, `OnInitDialog` işleyicisi veya iletişim Oluşturucusu. İletişim kutusu görüntülenmeden önce framework'ün DDX mekanizması nerede göründüklerinden iletişim kutusu denetimleri için üye değişkenlerin değerleri aktarır hemen iletişim kutusu görüntülendiğinde yanıt olarak `DoModal` veya **oluştur** . Varsayılan uygulaması `OnInitDialog` içinde `CDialog` çağrıları `UpdateData` sınıfının üye işlevini `CWnd` iletişim kutusu denetimleri başlatılamadı.  

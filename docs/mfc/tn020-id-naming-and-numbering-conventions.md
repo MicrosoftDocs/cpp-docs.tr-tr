@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33384117"
 ---
 # <a name="tn020-id-naming-and-numbering-conventions"></a>TN020: Kimlik Adlandırma ve Numaralandırma Kuralları
 Bu Not kimlik adlandırma ve kaynakları, komutları, dizeleri, denetimleri ve alt windows için MFC 2.0 kullanan numaralandırma kuralları açıklar.  

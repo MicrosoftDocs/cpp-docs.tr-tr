@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689002"
 ---
 # <a name="asynchronous-agents-library"></a>Zaman Uyumsuz Aracılar Kitaplığı
 Zaman uyumsuz aracılar kitaplığı (veya yalnızca *Aracılar Kitaplığı*) eşzamanlılık etkin uygulama geliştirme'ların sağlamlığını artırmak olanak sağlayan bir programlama modelidir. Aktör tabanlı programlama modeli ve görevleri ardışık düzen ve parçalı veri akışı için geçirme işlemi iletisi yükseltir C++ Şablon kitaplığı aracıları kitaplığıdır. Aracılar Kitaplığı zamanlama ve kaynak yönetimi bileşenlerine eşzamanlılık çalışma zamanı oluşturur.  

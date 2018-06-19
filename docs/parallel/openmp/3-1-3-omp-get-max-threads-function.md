@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687517"
 ---
 # <a name="313-ompgetmaxthreads-function"></a>3.1.3 omp_get_max_threads İşlevi
 **Omp_get_max_threads** işlevi, en az, paralel bir bölge olmadan, ekip oluşturmak için kullanılacak iş parçacığı sayısı kadar büyük olması garanti bir tamsayı döndürür bir **num_threads** yan tümcesi Bu noktada kodda karşılaştı için yoktu. Biçimi aşağıdaki gibidir:  

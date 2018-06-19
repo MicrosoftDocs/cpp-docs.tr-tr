@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382278"
 ---
 # <a name="tn051-using-ctl3d-now-and-in-the-future"></a>TN051: Şimdi ve Gelecekte CTL3D Kullanımı
 Daha önce ele alınan CTL3D ve MFC, bu Teknik Not artık kullanılmıyor. 3B efekti denetimleri için MFC tarafından otomatik olarak uygulanır.  

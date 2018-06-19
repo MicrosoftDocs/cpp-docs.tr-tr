@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342192"
 ---
 # <a name="containers"></a>Kapsayıcılar
 Bir kapsayıcı uygulama kendi belgelerine katıştırılmış veya bağlı öğeleri içeren bir uygulamadır. Bir kapsayıcı uygulama tarafından yönetilen belgeleri depolamak ve OLE bileşik belge bileşenlerini ve bunun yanı sıra uygulama tarafından oluşturulan veri görüntüler kurabilmesi gerekir. Bir kapsayıcı uygulama aynı zamanda yeni öğeler eklemek veya var olan öğeleri düzenlemek kullanıcılara izin vermesi gerekir.  

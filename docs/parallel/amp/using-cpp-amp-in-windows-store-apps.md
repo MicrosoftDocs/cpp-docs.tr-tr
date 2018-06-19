@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33696161"
 ---
 # <a name="using-c-amp-in-uwp-apps"></a>UWP uygulamalarında C++ AMP kullanma
 GPU (grafik işlem birimi) veya diğer hesaplama Hızlandırıcıları hesaplamalar için evrensel Windows Platformu (UWP) uygulamanızda C++ AMP (C++ hızlandırılmış yoğun paralellik) kullanabilirsiniz. Ancak, C++ AMP API'lerini doğrudan Windows çalışma zamanı türleri ile çalışmak için sağlamaz ve Windows çalışma zamanı C++ AMP için sarmalayıcı sağlamaz. Windows çalışma zamanı türleri kodunuzda kullandığınızda — oluşturduğunuz kendiniz de dahil olmak üzere — bunları C++ AMP ile uyumlu türlerine dönüştürmeniz gerekir.  

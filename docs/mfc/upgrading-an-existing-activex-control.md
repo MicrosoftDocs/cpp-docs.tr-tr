@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385313"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>Varolan Bir ActiveX Denetimini Güncelleştirme
 Varolan ActiveX denetimleri (önceki adıyla OLE denetimleri) değişiklik yapmadan Internet üzerinde kullanılabilir. Ancak, kendi performansını artırmak için denetimleri değiştirmek isteyebilirsiniz. Bir Web sayfası denetiminizde kullanırken dikkat edilecek diğer noktalar vardır. .Ocx dosyasını ve tüm destekleyici dosyaları hedef makinede olmalıdır veya Internet üzerinden indirilmesi. Bu kod boyutu ve önemli bir konu zaman yükleme sağlar. İndirmeler imzalı .cab dosyasında paketlenebilir. Denetim kodlama için güvenli olarak ve başlatma için güvenli olarak işaretleyebilirsiniz.  

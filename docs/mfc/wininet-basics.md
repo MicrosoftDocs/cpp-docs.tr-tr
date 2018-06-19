@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385930"
 ---
 # <a name="wininet-basics"></a>WinInet Temelleri
 WinINet indirip dosyalarından, uygulamanızda karşıya yüklemek için FTP desteği eklemek için kullanabilirsiniz. Geçersiz kılabilirsiniz [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) ve `dwContext` aramak ve dosyaları karşıdan kullanıcılara ilerleme durumu bilgileri sağlamak için parametre.  

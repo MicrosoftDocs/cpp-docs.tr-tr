@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33695908"
 ---
 # <a name="a16---using-locks"></a>A.16   Kilitleri Kullanma
 Aşağıdaki örnekte, (için [bölüm 3.2](../../parallel/openmp/3-2-lock-functions.md) sayfasında 41) kilit işlevleri için bağımsız değişken türü olmalıdır Not `omp_lock_t`, ve bunu temizlemek için gerek yoktur.  Kilit işlevleri ilk kritik bölüm girişe beklenirken boşta ancak ikinci giriş için beklenirken diğer iş yapmak için iş parçacığı neden.  `omp_set_lock` İşlevi blokları, ancak `omp_test_lock` işlevi desteklemez, iş yapılması skip() içinde izin verme.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33277874"
 ---
 # <a name="compiler-warning-level-1-c4391"></a>Derleyici Uyarısı (düzey 1) C4391
 'imzası': iç işlevi için dönüş türü yanlış beklenen 'type'  

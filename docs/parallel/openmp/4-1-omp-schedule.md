@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33691056"
 ---
 # <a name="41-ompschedule"></a>4.1 OMP_SCHEDULE
 **OMP_SCHEDULE** yalnızca geçerli **için** ve **için paralel** zamanlama türü olan yönergeleri **çalışma zamanı**. Tanınan zamanlama türlerinden herhangi birini ve isteğe bağlı bir için bu ortam değişkenini ayarlayarak çalışma zamanında tür döngüler zamanlama türü ve Öbek boyutu ayarlanabilir *chunk_size*.  

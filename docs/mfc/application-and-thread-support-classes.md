@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341316"
 ---
 # <a name="application-and-thread-support-classes"></a>Uygulama ve İş Parçacığı Destek Sınıfları
 Her uygulama tek bir uygulama nesnesi; yine de sahip istiyor musunuz? Bu nesne çalışan program diğer nesneleri düzenler ve türetilmiş `CWinApp`.  

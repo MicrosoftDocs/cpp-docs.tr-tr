@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687237"
 ---
 # <a name="14-compliance"></a>1.4 Uyumluluk
 OpenMP C/C++ API uygulamasıdır *OpenMP uyumlu* tanır ve bu belirtimi tüm öğeleri semantiği bölüm 1, 2, 3, 4, düzenlendiği şekilde korur ve ek c ekler A, B, D, E ve F içindir bilgiler yalnızca amacıyla ve belirtiminin bir parçası değildir. Yalnızca bir alt API dahil uygulamaları OpenMP uyumlu değildir.  

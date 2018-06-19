@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33694335"
 ---
 # <a name="a14---using-the-flush-directive-without-a-list"></a>A.14   flush Yönergesini Liste Olmadan Kullanma
 Aşağıdaki örnekte (için [bölüm 2.6.5](../../parallel/openmp/2-6-5-flush-directive.md) sayfasında 20) etkilenen paylaşılan nesneler ayıran bir `flush` etkilenmez paylaşılan nesnelerinden hiçbir listesiyle yönerge:  

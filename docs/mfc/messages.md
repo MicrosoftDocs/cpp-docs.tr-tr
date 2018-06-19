@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344110"
 ---
 # <a name="messages"></a>İletiler
 İleti döngüde **çalıştırmak** sınıfının üye işlevini `CWinApp` çeşitli olayları tarafından üretilen iletileri kuyruğa alır. Kullanıcı fare tıkladığında, örneğin, Windows fare ilgili birkaç iletileri gibi gönderir `WM_LBUTTONDOWN` sol fare düğmesini basılı ne zaman ve `WM_LBUTTONUP` sol fare düğmesini serbest bırakıldığında. Framework'ün uygulamasını Uygulama ileti döngüsü uygun pencere iletisi gönderir.  

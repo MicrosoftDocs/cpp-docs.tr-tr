@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381029"
 ---
 # <a name="serialization-in-mfc"></a>MFC'de Seri Hale Getirme
 Bu makalede, Microsoft Foundation Class Kitaplığı (arasında kalıcı nesnelere izin vermek için MFC) sağlanan seri hale getirme mekanizmasını, programı çalıştıran açıklanmaktadır.  

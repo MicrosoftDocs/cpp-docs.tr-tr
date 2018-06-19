@@ -135,6 +135,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33378174"
 ---
 # <a name="cpanecontainer-class"></a>CPaneContainer sınıfı
 `CPaneContainer` Sınıftır MFC tarafından uygulanan takma modeline temel bir bileşenidir. Bu sınıfın bir nesnesi işaretçileri iki yerleşik bölmeler veya iki örneğini depolar `CPaneContainer.` bölmeleri (veya kapsayıcıları) ayıran ayırıcı gösteren bir işaretçi de depolar. Kapsayıcılar içinde iç içe geçmiş kapsayıcılar tarafından framework karmaşık takma düzenleri temsil eden bir ikili ağacı oluşturabilirsiniz. İkili ağacının kök dizininde depolanmış bir [CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md) nesnesi.  

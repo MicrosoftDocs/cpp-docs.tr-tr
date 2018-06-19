@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33691609"
 ---
 # <a name="2728-copyprivate"></a>2.7.2.8 copyprivate
 **Copyprivate** yan tümcesi bir değer diğer üyeleri için bir ekibin üyesi yayınlamak için özel bir değişken kullanmak için bir mekanizma sağlar. Paylaşılan bir değişken sağlayan (örneğin, her düzeyde farklı değişken gerektiren özyineleme) zor olacaktır, paylaşılan bir değişken değeri bir alternatifidir. **Copyprivate** yan tümcesi üzerinde yalnızca görünebilir **tek** yönergesi.  

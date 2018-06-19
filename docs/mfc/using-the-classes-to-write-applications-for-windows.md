@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33386151"
 ---
 # <a name="using-the-classes-to-write-applications-for-windows"></a>Windows Uygulamaları Yazmak için Sınıfları Kullanma
 Birlikte ele alındığında, "Windows işletim sistemi için uygulama derleme bir uygulama çerçevesi," Microsoft Foundation Class (MFC) Kitaplığı'nda sınıfları oluşturur. Bir çok genel düzeyde framework uygulamanın çatıyı tanımlar ve çatıyı yerleştirilebilir standart kullanıcı arabirimi uygulamalarını sağlar. İşinizi Programcı olarak çatıyı geri kalanı uygulamanıza özgü olan şeyi olduğu doldurmaktır. Bir başlangıç dosyalarını çok kapsamlı başlangıç uygulaması oluşturmak için MFC Uygulama Sihirbazı'nı kullanarak alabilirsiniz. Microsoft Visual C++ kaynak düzenleyicileri sınıfı görünüm komutları kod ve sınıf kitaplığı konusu öğelerin bağlanmak için kullanıcı arabirimi öğeleri görsel olarak tasarlamak için uygulamaya özgü mantığını uygulamak için kullanın.  

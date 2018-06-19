@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381852"
 ---
 # <a name="window-dialog-and-control-classes"></a>Pencere, İletişim Kutusu ve Denetim Sınıfları
 Sınıf `CWnd` ve türetilmiş sınıflarının kapsülleyen bir `HWND`, bir Windows penceresi için bir tanıtıcı. `CWnd` tek başına ya da bir taban olarak yeni sınıflardan türetme için kullanılabilir. Sınıf kitaplığı tarafından sağlanan türetilen sınıflar, çeşitli windows temsil eder.  

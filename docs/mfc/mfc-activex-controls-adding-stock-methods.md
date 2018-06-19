@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349274"
 ---
 # <a name="mfc-activex-controls-adding-stock-methods"></a>MFC ActiveX Denetimleri: Stok Yöntemler Ekleme
 Stok yöntemi bir özel yönteminden farklıdır sınıfı tarafından zaten uygulanmış [COleControl](../mfc/reference/colecontrol-class.md). Örneğin, `COleControl` denetiminiz için yenileme yöntemi destekleyen önceden tanımlanmış üye işlevi içeriyor. Stok bu yöntem için gönderme harita giriş **DISP_STOCKFUNC_REFRESH**.  

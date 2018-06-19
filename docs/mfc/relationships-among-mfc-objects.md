@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379525"
 ---
 # <a name="relationships-among-mfc-objects"></a>MFC Nesneleri Arasındaki İlişki
 Belge/görünüm oluşturma işlemi perspektife put yardımcı olmak için çalışan bir program göz önünde bulundurun: belge, görünüm kapsamak için kullanılmış çerçeve penceresi ve belgeyle ilişkilendirilen görünüm.  

@@ -50,6 +50,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380640"
 ---
 # <a name="wm-message-handlers-a---c"></a>WM_ İleti İşleyicileri: A - C
 Aşağıdaki harita girişler soldaki sağdaki işlev prototipleri karşılık gelir:  

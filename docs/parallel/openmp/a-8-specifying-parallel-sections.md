@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33694062"
 ---
 # <a name="a8---specifying-parallel-sections"></a>A.8   Paralel Bölümleri Belirtme
 Aşağıdaki örnekte, (için [bölüm 2.4.2](../../parallel/openmp/2-4-2-sections-construct.md) sayfasında 14) işlevleri *xaxis*, *yaxis*, ve *zaxis* aynı anda çalıştırılabilecek. İlk `section` yönergesi isteğe bağlıdır.  Unutmayın tüm `section` yönergeleri gereksinim içinde sözcük kapsamını görünmesi `parallel sections` oluşturun.  

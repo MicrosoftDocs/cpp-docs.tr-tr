@@ -25,6 +25,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687731"
 ---
 # <a name="multithreading-support-for-older-code-visual-c"></a>Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)
 Visual C++ yürütme eşzamanlı çalışan birden çok eşzamanlı iş parçacığına sahip olmanızı sağlar. İle çoklu iş parçacığı kullanımı, arkaplan görevleri, eşzamanlı girdi akışları ile yönetme, bir kullanıcı arabirimi ve daha fazlasını yapabilirsiniz.  

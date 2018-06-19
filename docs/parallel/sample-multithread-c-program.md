@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687998"
 ---
 # <a name="sample-multithread-c-program"></a>Örnek Çoklu İş Parçacığı Kullanan C Programı
 Bounce.c olan yeni bir örnek çoklu iş parçacığı programı harfi her iş parçacığı **bir** veya **A** yazılır. Her iş parçacığı Mutlu Yüz ekran çevresinde farklı bir renk, geri dönmeler. En fazla 32 iş parçacığı oluşturulamıyor. Programın normal sonlandırma gerçekleşir zaman `q` veya **Q** yazılır. Derleme ve Bounce.c bağlama hakkında daha fazla bilgi için bkz: [derleme ve bağlama çoklu iş parçacığı kullanan programları](../parallel/compiling-and-linking-multithread-programs.md).  

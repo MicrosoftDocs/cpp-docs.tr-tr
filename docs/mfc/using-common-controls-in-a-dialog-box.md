@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382697"
 ---
 # <a name="using-common-controls-in-a-dialog-box"></a>İletişim Kutusunda Ortak Denetimleri Kullanma
 Windows ortak denetimleri kullanılabilir [iletişim kutuları](../mfc/dialog-boxes.md), form görünümleri, kayıt görünümleri ve bir iletişim şablonunu temel alan başka bir pencere. Aşağıdaki yordam, bazı küçük değişikliklerle de formlar için çalışır.  

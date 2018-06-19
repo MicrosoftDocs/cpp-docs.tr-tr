@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380472"
 ---
 # <a name="tn063-debugging-internet-mfc-extension-dlls"></a>TN063: Internet MFC uzantı DLL'leri hata ayıklama
 Bu bilgiler kullanımdan kalkmıştır ve kaldırıldı.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385878"
 ---
 # <a name="tab-controls-and-property-sheets"></a>Sekme Denetimleri ve Özellik Sayfaları
 Özellik sayfaları, birden çok sayfa iletişim kutuları veya "kullanıcı 24 iletişim şablonu kaynaklarına kadar görüntüleyebilen sekme iletişim kutuları" şeklindedir. Özellik sayfaları örnekler için Windows görüntü özellikleri iletişim kutusu veya aşağıdaki MFC örnek uygulama bakın:  

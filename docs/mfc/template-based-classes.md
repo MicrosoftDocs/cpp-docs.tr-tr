@@ -37,6 +37,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385485"
 ---
 # <a name="template-based-classes"></a>Şablona Dayalı Sınıflar
 Bu makalede sürüm 3.0 ve sonraki MFC'de tür kullanımı uyumlu şablona dayalı koleksiyon sınıfları açıklanmaktadır. Tür kullanımı uyumlu koleksiyonlar oluşturmak için bu şablonları kullanarak daha kolaydır ve tür güvenliği şablonlar temelinde değil koleksiyon sınıfları kullanmaktan daha verimli bir şekilde sağlanır.  

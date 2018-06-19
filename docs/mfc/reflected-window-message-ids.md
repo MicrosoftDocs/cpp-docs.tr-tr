@@ -61,6 +61,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380002"
 ---
 # <a name="reflected-window-message-ids"></a>Yansımış Pencere İletisi Kimlikleri
 ActiveX denetimi veya diğer özel denetimi oluşturmak için hızlı bir şekilde bir alt kümesi için bir penceredir. Daha fazla bilgi için bkz: [MFC ActiveX denetimleri: bir Windows denetimini alt sınıf yapma](../mfc/mfc-activex-controls-subclassing-a-windows-control.md).  

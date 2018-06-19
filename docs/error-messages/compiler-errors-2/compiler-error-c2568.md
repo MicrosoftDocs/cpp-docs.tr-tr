@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33228744"
 ---
 # <a name="compiler-error-c2568"></a>Derleyici Hatası C2568
 'identifier1': aşırı yüklenmiş işlevle çözümlenemiyor  

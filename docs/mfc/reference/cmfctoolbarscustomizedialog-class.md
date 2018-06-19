@@ -39,6 +39,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33378187"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog sınıfı
 Kalıcı olmayan sekme iletişim kutusu ( [CPropertySheet sınıfı](../../mfc/reference/cpropertysheet-class.md)) araç çubukları, menüler, klavye kısayolları, kullanıcı tanımlı Araçlar ve uygulamada görsel stil özelleştirmek için kullanıcı sağlar. Genellikle, bu iletişim kutusunu erişen seçerek kullanıcı **Özelleştir** gelen **Araçları** menüsü.  

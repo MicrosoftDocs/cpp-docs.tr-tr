@@ -23,6 +23,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33688537"
 ---
 # <a name="iumsscheduler-structure"></a>IUMSScheduler Yapısı
 Kullanıcı modu zamanlanabilir (UMS) iş parçacıklarının el için Kaynak Yöneticisi'ni eşzamanlılık çalışma zamanı istediği bir iş Zamanlayıcı bir soyutlamasını bir arabirim. Kaynak Yöneticisi bu arabirimi UMS iş parçacığı zamanlayıcılar ile iletişim kurmak için kullanır. `IUMSScheduler` Arabirimi devraldığı `IScheduler` arabirimi.  

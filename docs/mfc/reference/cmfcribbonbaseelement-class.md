@@ -247,6 +247,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33378687"
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement sınıfı
 `CMFCRibbonBaseElement` Sınıftır ekleyebileceğiniz tüm öğeleri için temel sınıfı bir [Şerit çubuğu](../../mfc/reference/cmfcribbonbar-class.md). Şerit öğeleri örnekler Şerit düğmeleri, Şerit onay kutularını ve Şerit birleşik giriş kutuları.  

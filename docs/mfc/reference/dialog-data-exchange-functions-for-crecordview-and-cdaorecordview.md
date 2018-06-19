@@ -35,6 +35,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33377523"
 ---
 # <a name="dialog-data-exchange-functions-for-crecordview-and-cdaorecordview"></a>CRecordView ve CDaoRecordView için İletişim Kutusu Veri Değişimi İşlevleri
 Bu konu arasında veri değişimi için kullanılan DDX_Field işlevleri listeler bir [CRecordset](../../mfc/reference/crecordset-class.md) ve [CRecordView](../../mfc/reference/crecordview-class.md) form veya bir [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ve [ CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) formu.  

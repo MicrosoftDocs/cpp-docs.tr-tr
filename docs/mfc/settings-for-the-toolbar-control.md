@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379713"
 ---
 # <a name="settings-for-the-toolbar-control"></a>Araç Çubuğu Denetimi için Ayarlar
 Araç çubuğundaki düğmeler bir bit eşlem, bir dize ya da her ikisini de görüntüleyebilirsiniz. Varsayılan olarak, görüntü boyutu 16 tarafından 15 piksel boyutları için ayarlanır. Tüm düğmeleri varsayılan 24 x 22 piksel aynı genişliğe değildir. Bir araç çubuğunun yüksekliği düğmeleri yüksekliğini tarafından belirlenir ve bir araç çubuğunun genişliği de varsayılan olarak üst pencerenin istemci alanını genişliğini ile aynıdır.  

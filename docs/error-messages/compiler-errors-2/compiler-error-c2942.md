@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33245054"
 ---
 # <a name="compiler-error-c2942"></a>Derleyici Hatası C2942
 'class': türü sınıfı kimliği bir resmi bir işlev bağımsız değişkeni yeniden tanımlandı  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33384377"
 ---
 # <a name="windows-sockets-example-of-sockets-using-archives"></a>Windows Yuvaları: Arşivlerle Kullanılan Yuvalara Örnek
 Bu makalede sınıfını kullanarak bir örnek sunar [CSocket](../mfc/reference/csocket-class.md). Örnek kullanan `CArchive` yuva verilerine serileştirmek için nesneleri. Bu belge serileştirmesi için veya bir dosyadan olmadığını unutmayın.  

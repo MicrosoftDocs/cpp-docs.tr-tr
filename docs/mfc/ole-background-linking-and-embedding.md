@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347285"
 ---
 # <a name="ole-background-linking-and-embedding"></a>OLE Arka Planı: Bağlama ve Katıştırma
 Bir kapsayıcı uygulamasında Yapıştır komutunu kullanarak bir katıştırılmış bileşeni veya katıştırılmış öğesi oluşturabilirsiniz. Katıştırılmış bir öğe için kaynak verilerini içerdiği OLE belge bir parçası olarak depolanır. Bu şekilde bir belge dosyasını bir sözcük işlemci belge için metin içerebilir ve bit eşlemler, grafikler, formüller veya herhangi bir veri türünü de içerebilir.  

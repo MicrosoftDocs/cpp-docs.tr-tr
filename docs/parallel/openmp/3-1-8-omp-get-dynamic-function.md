@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33686197"
 ---
 # <a name="318-ompgetdynamic-function"></a>3.1.8 omp_get_dynamic İşlevi
 **Omp_get_dynamic** işlevi, iş parçacıklarının dinamik ayarlama etkinleştirilmişse ve 0 döndürür sıfır olmayan bir değer döndürür. Biçimi aşağıdaki gibidir:  

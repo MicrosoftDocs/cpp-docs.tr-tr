@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380168"
 ---
 # <a name="settings-for-the-cstatusbarctrl"></a>CStatusBarCtrl Ayarları
 Varsayılan konumu bir [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md) durum penceredir pencerenin üst ancak belirtebilirsiniz `CCS_TOP` üst pencerenin istemci alanının üstünde görünür için stili.  

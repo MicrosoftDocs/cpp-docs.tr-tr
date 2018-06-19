@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382134"
 ---
 # <a name="windows-sockets-classes"></a>Windows Yuvaları: Sınıflar
 Windows Yuvaları iki bilgisayar arasında iletişim kurmak için bir ağ protokolü bağımsız bir yol sağlar. Bu yuva zaman uyumlu olabilir (programınızı iletişimi yapılana kadar bekler) veya zaman uyumsuz (programınızı iletişimi sürerken çalışmaya devam eder).  

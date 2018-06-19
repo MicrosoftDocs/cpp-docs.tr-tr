@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379690"
 ---
 # <a name="selecting-a-graphic-object-into-a-device-context"></a>Bir Cihaz Bağlamına Grafik Nesnesi Seçme
 Bu konu, grafik nesneleri pencerenin cihaz bağlamı kullanma için geçerlidir. Çalıştırdıktan sonra [bir çizim nesnesi oluşturmak](../mfc/one-stage-and-two-stage-construction-of-objects.md), depolanan varsayılan nesne yerine cihaz bağlamı içine seçmelisiniz:  

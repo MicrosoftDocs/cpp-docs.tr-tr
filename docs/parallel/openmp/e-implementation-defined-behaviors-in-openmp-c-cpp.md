@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33688706"
 ---
 # <a name="e-implementation-defined-behaviors-in-openmp-cc"></a>E. Uygulama tanımlı davranış OpenMP C/C++
 Bu ek olarak "uygulama tanımlı" Bu API içinde açıklanan davranışları özetler.  Her ana belirtiminde açıklamasını dön Çapraz referanslı davranıştır.  

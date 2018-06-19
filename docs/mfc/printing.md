@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348243"
 ---
 # <a name="printing"></a>Yazdırma
 Microsoft Windows aygıt bağımsız görüntü uygular. MFC içinde aynı çizim çağrıları içinde buna `OnDraw` üye işlevi görünüm sınıfınızın çizim görüntüleme ve yazıcılar gibi diğer cihazları sorumlu. Baskı Önizleme için görüntülenecek benzetimli yazıcı çıktısından hedef aygıttır.  

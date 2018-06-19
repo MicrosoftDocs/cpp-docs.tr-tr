@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689499"
 ---
 # <a name="331-ompgetwtime-function"></a>3.3.1 omp_get_wtime İşlevi
 `omp_get_wtime` İşlevi döndürür çift duyarlıklı kayan noktalı değeri geçen duvar saati süresi eşit bazı "saat" geçmişte bu yana saniye cinsinden.  Gerçek "süresi geçmiş" isteğe bağlıdır, ancak uygulama programı yürütme sırasında değiştirilmemesi sağlanır. Biçimi aşağıdaki gibidir:  

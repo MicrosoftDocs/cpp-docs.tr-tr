@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344236"
 ---
 # <a name="global-hot-keys"></a>Genel Sık Kullanılan Tuşlar
 Genel sık kullanılan tuş belirli nonchild penceresiyle ile ilişkilidir. Sistem herhangi bir kısmını penceresinden etkinleştirmek kullanıcının sağlar. Uygulamanın belirli bir pencere için genel bir kısayol tuşu göndererek ayarlar [WM_SETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646284) Bu pencere iletisi. Örneği için `m_HotKeyCtrl` olan [CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md) nesne ve `pMainWnd` gösteren bir işaretçidir pencereyi sık kullanılan tuş basıldığında etkinleştirilmesi için sık kullanılan tuş denetimi ile belirtilen ilişkilendirmek için aşağıdaki kodu kullanabilirsiniz tarafından için pencereyi işaret `pMainWnd`.  

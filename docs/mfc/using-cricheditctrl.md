@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382173"
 ---
 # <a name="using-cricheditctrl"></a>CRichEditCtrl Kullanma
 Zengin düzenleme denetimine kullanıcı girin ve metin düzenleme bir penceredir. Metin karakter ve paragraf biçimlendirmesini atanabilir ve katıştırılmış OLE nesnelerine içerebilir. Zengin düzenleme denetimine MFC tarafından temsil edilen [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) sınıfı.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33688147"
 ---
 # <a name="scopedd3daccesslock-class"></a>scoped_d3d_access_lock Sınıfı
 Accelerator_view nesnedeki D3D erişim kilit RAII sarmalayıcı.  

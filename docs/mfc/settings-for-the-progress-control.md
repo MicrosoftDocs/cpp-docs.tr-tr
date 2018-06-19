@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380015"
 ---
 # <a name="settings-for-the-progress-control"></a>İlerleme Denetimi Ayarları
 İlerleme denetimi için temel ayarları ([CProgressCtrl](../mfc/reference/cprogressctrl-class.md)) aralık ve geçerli konumu. Aralığın işlem süresini temsil eder. Geçerli konumu, uygulamanızın işleminin tamamlanmasına yönelik yaptı ilerlemesini gösterir. Aralık veya konumu değişiklikleri kendisini yeniden çizmek ilerleme durumu denetimini neden.  

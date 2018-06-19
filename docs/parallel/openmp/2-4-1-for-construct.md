@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33693555"
 ---
 # <a name="241-for-construct"></a>2.4.1 Yapı için
 **İçin** yönergesi ilişkili döngü yinelemelerini paralel olarak yürütülecek belirten bir yinelemeli iş paylaşım yapısıyla tanımlar. Yinelemelerini **için** döngü bağlar, paralel yapı yürütme grupta zaten iş parçacıkları arasında dağıtılır. Söz dizimi **için** yapı aşağıdaki gibidir:  

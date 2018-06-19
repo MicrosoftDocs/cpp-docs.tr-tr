@@ -19,6 +19,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33693812"
 ---
 # <a name="synchronization-data-structures"></a>Eşitleme Veri Yapıları
 Eşzamanlılık Çalışma zamanı birden çok iş parçacığı tarafından paylaşılan verilere erişim eşitlemenize olanak birkaç veri yapılarını sağlar. Bu veri yapıları seyrek değiştirmek veri paylaşılan olduğunda yararlıdır. Eşitleme nesnesi, örneğin, önemli bir bölümü, paylaşılan kaynağı kullanılabilir hale gelene kadar beklenecek başka bir iş parçacığı neden olur. Bu nedenle, sık kullanılan veri erişimi eşitlemek için böyle bir nesnenin kullanırsanız, uygulamanızda ölçeklenebilirlik kaybedebilir. [Paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) sağlar [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) çeşitli iş parçacıkları ve eşitleme gerek kalmadan görevler arasında kaynak paylaşımı sağlayan sınıf. Hakkında daha fazla bilgi için `combinable` sınıfı için bkz: [paralel kapsayıcılar ve nesneler](../../parallel/concrt/parallel-containers-and-objects.md).  

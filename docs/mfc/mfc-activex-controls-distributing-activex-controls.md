@@ -40,6 +40,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33358813"
 ---
 # <a name="mfc-activex-controls-distributing-activex-controls"></a>MFC ActiveX Denetimleri: ActiveX Denetimlerini Dağıtma
 Bu makalede ActiveX denetimlerini yeniden dağıtma için ilgili çeşitli sorunlar ele alınmıştır:  

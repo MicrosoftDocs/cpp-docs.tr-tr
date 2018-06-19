@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687874"
 ---
 # <a name="317-ompsetdynamic-function"></a>3.1.7 omp_set_dynamic İşlevi
 **Omp_set_dynamic** işlevini etkinleştirir veya paralel bölgeler yürütme için kullanılabilir iş parçacığı sayısını dinamik olarak ayarlamayı devre dışı bırakır. Biçimi aşağıdaki gibidir:  

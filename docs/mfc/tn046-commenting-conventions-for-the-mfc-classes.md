@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380831"
 ---
 # <a name="tn046-commenting-conventions-for-the-mfc-classes"></a>TN046: MFC Sınıfları için Yorum Oluşturma Kuralları
 Bu teknik Not başlangıçta MFC sınıfları açıklama eklemek için kullanılan kuralları açıklanmaktadır. Bu bilgiler artık içinde ele [MFC: MFC kaynak dosyaları kullanarak](../mfc/using-the-mfc-source-files.md).  

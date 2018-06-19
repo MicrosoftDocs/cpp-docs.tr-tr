@@ -28,6 +28,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33695947"
 ---
 # <a name="cancellationtoken-class"></a>cancellation_token Sınıfı
 `cancellation_token` Sınıfı, başka bir işlem iptal istendi olup olmadığını belirleme özelliğini temsil eder. Verilen bir belirteç ile ilişkili bir `task_group`, `structured_task_group`, veya `task` örtük iptal sağlamak için. Bu ayrıca iptalleri sorgulanmak veya bir geri çağırma için varsa ve kayıtlı sahip ilişkili `cancellation_token_source` iptal edilir.  

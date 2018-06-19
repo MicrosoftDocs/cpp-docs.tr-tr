@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33197461"
 ---
 # <a name="compiler-error-c2396"></a>Derleyici Hatası C2396
 ' your_type::operator'type'': CLR veya WinRT kullanıcı tanımlı dönüştürme functionnot geçerli. Dönüştür veya Dönüştür: 'T ^', 'T ^ %', 'T ^ &', burada T 'your_type' =  

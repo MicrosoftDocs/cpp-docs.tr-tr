@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33378340"
 ---
 # <a name="persistence-of-ole-controls"></a>OLE Denetimlerinin Kalıcılığı
 OLE denetimlerinin bir yetenek olduğu özelliği kalıcılığı (veya seri hale getirme) okumak veya özellik değerleri için ve bir dosya veya akış yazmak OLE denetimi sağlar. Bir kapsayıcı uygulama serileştirme bile uygulama denetimi yok sonra bir denetimin özellik değerlerini depolamak için kullanabilirsiniz. OLE denetim özellik değerlerinin sonra dosyasından okunabilir veya akış denetiminin yeni örneği olduğunda daha sonraki bir zamanda oluşturulur.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33198631"
 ---
 # <a name="fatal-error-c1047"></a>Önemli hata C1047
 Nesne veya kitaplık dosyası 'dosyası' diğer nesneleri daha eski bir derleyicisi ile oluşturulmuş; eski nesneler ve kitaplıkları yeniden derleme  

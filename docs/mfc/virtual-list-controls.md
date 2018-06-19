@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33384198"
 ---
 # <a name="virtual-list-controls"></a>Sanal Liste Denetimleri
 Sanal liste denetimi sahip bir liste görünümü denetimi olan **LVS_OWNERDATA** stili. Bu stili bir öğe sayısı kadar desteklemek denetim sağlayan bir `DWORD` (varsayılan öğe sayısı için yalnızca genişleten bir `int`). Ancak, bu stili tarafından sağlanan en büyük avantajı veri öğelerin alt kümesine herhangi bir zamanda bellekte yeterlidir yeteneğidir. Bu bilgi, büyük veritabanları ile kullanmak için kendisini ödünç vermek sanal liste görünümü denetimi verilerine erişme belirli yöntemleri zaten yerinde nerede sağlar.  

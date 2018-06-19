@@ -87,6 +87,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33377616"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl sınıfı
 "Araç ipucu denetimi," tek satırlık bir uygulamada bir aracı amacını açıklayan metin görüntüler küçük bir açılır pencere işlevselliği kapsar.  

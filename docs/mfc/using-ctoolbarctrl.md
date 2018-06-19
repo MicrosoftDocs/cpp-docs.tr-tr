@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385917"
 ---
 # <a name="using-ctoolbarctrl"></a>CToolBarCtrl Kullanma
 Araç çubuğu denetimi kullanabilirsiniz ([CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)) düğmeleri ve isteğe bağlı alanları içeren bir denetim penceresi oluşturulamadı. Kullanıcının seçtiği gibi her düğme araç çubuğu denetimi penceresinde üst penceresine bir komut iletisi gönderir. Genellikle, bir araç çubuğu düğmeleri kullanıcının uygulamanın komutlara erişmek ek ve daha doğrudan bir yol sağlayarak uygulamanın menüde öğelere karşılık gelir.  

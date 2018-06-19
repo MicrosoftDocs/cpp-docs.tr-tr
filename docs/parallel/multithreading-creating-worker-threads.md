@@ -25,6 +25,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689278"
 ---
 # <a name="multithreading-creating-worker-threads"></a>Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma
 Bir çalışan iş parçacığı yaygın kullanıcı uygulamanızı kullanmaya devam etmek için beklemek için olmamalıdır arka plan görevlerini işlemek için kullanılır. Yeniden hesaplama ve arka plan yazdırma gibi görevleri çalışan iş parçacığı iyi örnekleridir. Bu konuda, bir çalışan iş parçacığı oluşturmak için gerekli adımları ayrıntıları verilmektedir. Konular şunlardır:  

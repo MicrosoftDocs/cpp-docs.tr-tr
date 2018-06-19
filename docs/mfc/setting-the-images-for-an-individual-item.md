@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380607"
 ---
 # <a name="setting-the-images-for-an-individual-item"></a>Ayrı Bir Öğe için Görüntüleri Ayarlama
 Genişletilmiş Birleşik giriş kutusu öğesi tarafından kullanılan görüntüleri farklı türde değerler tarafından belirlenir `iImage`, **iSelectedImage**, ve **IOverlay** üyeleri [COMBOBOXEXITEM ](http://msdn.microsoft.com/library/windows/desktop/bb775746) yapısı. Her değer denetim ilişkili görüntü listesinden görüntü dizinidir. Varsayılan olarak, bu üyeler öğesi için resim görüntülemek üzere denetimi neden 0 olarak ayarlanır. Belirli bir öğe için görüntüleri kullanmak istiyorsanız, yapısı buna birleşik giriş kutusu öğesi eklerken ya da var olan bir birleşik giriş kutusu öğesini değiştirerek değiştirebilirsiniz.  

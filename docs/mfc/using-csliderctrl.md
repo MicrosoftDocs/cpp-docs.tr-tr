@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385823"
 ---
 # <a name="using-csliderctrl"></a>CSliderCtrl Kullanma
 [CSliderCtrl](../mfc/reference/csliderctrl-class.md) sınıfı, bir trackbar olarak da bilinir kaydırıcı denetimi temsil eder. "Kaydırıcı denetimi" kaydırıcı ve isteğe bağlı değer içeren bir penceredir işaretler. Kullanıcı, fare veya ok tuşlarını kullanarak, kaydırıcıyı geçtiğinde, kaydırıcı denetimi değişikliği göstermek için bildirim iletileri gönderir.  

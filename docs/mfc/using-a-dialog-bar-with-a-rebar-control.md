@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382912"
 ---
 # <a name="using-a-dialog-bar-with-a-rebar-control"></a>Rebar Denetimiyle Birlikte Bir İletişim Çubuğu Kullanma
 Bölümünde belirtildiği gibi [Rebar denetimleri ve bantları](../mfc/rebar-controls-and-bands.md), her bant yalnızca bir alt pencere (veya Denetim) içerebilir. Bant başına birden fazla alt pencere sahip olmak istiyorsanız bu bir sınırlama olabilir. Bir iletişim çubuğu kaynak sahip birden çok denetim oluşturma ve rebar denetimi (iletişim kutusu çubuğunu içeren) bir rebar bant eklemek için kullanışlı bir geçici bir çözüm değildir.  

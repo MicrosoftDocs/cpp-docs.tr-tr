@@ -30,6 +30,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33692275"
 ---
 # <a name="readerwriterlock-class"></a>reader_writer_lock Sınıfı
 Yalnızca dönmesini yerel yazıcı tercih Okuyucu-Yazıcı sırası tabanlı kilidi. Kilidi okuyucular yazıcılarının sürekli yükü altında starves ve daha önce yazıcılarının - ilk (FIFO) erişimi verir.  

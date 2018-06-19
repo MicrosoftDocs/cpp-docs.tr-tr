@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33693269"
 ---
 # <a name="how-to-convert-an-openmp-loop-that-uses-cancellation-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için İptali Kullanan bir OpenMP Döngüsünü Dönüştürme
 Bazı paralel döngüler tüm yinelemeleri yürütülmesi gerektirmez. Örneğin, değer bulunduktan sonra için bir değer arayan bir algoritma sonlandırabilir. OpenMP dışında paralel bir döngüden ayırmak için bir mekanizma sağlamaz. Ancak, bir döngü çözüm bulunmuştur belirtmek üzere etkinleştirmek için bir Boole değeri veya bayrağını kullanabilirsiniz. Eşzamanlılık Çalışma zamanı henüz başlatılmamış diğer görevleri iptal etmek bir görev sağlayan işlevselliği sağlar.  
