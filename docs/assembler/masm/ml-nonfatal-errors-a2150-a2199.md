@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32054227"
 ---
 # <a name="ml-nonfatal-errors-a2150-a2199"></a>ML Önemli Olmayan Hataları A2150-A2199
 ML önemli olmayan hatalar hakkında daha fazla bilgi için bkz: [ML hata iletileri](../../assembler/masm/ml-error-messages.md).  

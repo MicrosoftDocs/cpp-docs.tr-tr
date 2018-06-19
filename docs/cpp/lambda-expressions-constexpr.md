@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32418906"
 ---
 # <a name="constexpr-lambda-expressions-in-c"></a>constexpr C++'deki Lambda ifadeleri
 **Visual Studio 2017 15.3 ve sonraki sürümleri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): lambda ifadesi olarak bildirilmelidir `constexpr` veya contant ifadede kullanılan zaman başlatma her veri üyesi olan yakalar veya tanıtır içinde bir sabit ifadesine izin verilir.  

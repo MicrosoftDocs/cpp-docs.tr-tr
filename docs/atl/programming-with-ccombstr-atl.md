@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357863"
 ---
 # <a name="programming-with-ccombstr-atl"></a>CComBSTR (ATL) ile programlama
 ATL sınıfı [CComBSTR](../atl/reference/ccombstr-class.md) çevresinde bir sarmalayıcı sağlar `BSTR` veri türü. Sırada `CComBSTR` yararlı bir araç olan dikkat gerektiren bazı durumlar vardır.  

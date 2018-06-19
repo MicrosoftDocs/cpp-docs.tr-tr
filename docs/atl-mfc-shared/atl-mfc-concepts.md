@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32354547"
 ---
 # <a name="atlmfc-concepts"></a>ATL/MFC kavramları
 Bu bölümde yardımcı olmak üzere kavramsal ve görev tabanlı konuları Etkin Şablon kitaplığı (ATL) ve Microsoft Foundation Class (MFC) kitaplığı arasında paylaşılan sınıflarını kullanarak programı.  

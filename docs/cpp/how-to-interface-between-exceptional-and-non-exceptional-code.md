@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32417281"
 ---
 # <a name="how-to-interface-between-exceptional-and-non-exceptional-code"></a>Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasındaki Arabirim
 Bu makalede nasıl tutarlı özel durum işlemeyi C++ modülünde uygulanacağını ve bu özel durumlar için ve özel durum sınırlarında hata kodlarından Çevir nasıl açıklanmaktadır.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32415458"
 ---
 # <a name="how-to-create-and-use-ccomptr-and-ccomqiptr-instances"></a>Nasıl yapılır: CComPtr ve CComQIPtr Örnekleri Oluşturma ve Kullanma
 Klasik Windows programlama kitaplıkları genellikle olarak COM nesneleri (veya daha hassas bir şekilde COM sunucuları) uygulanır. Çoğu Windows işletim sistemi bileşenleri COM sunucuları olarak uygulanır ve bu formda kitaplıkları pek çok katkıda bulunanlar sağlar. COM temel kavramları hakkında daha fazla bilgi için bkz [Bileşen Nesne Modeli (COM)](http://msdn.microsoft.com/en-us/3578ca42-a4b6-44b3-ad5b-aeb5fa61f3f4).  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32421957"
 ---
 # <a name="using-structured-exception-handling-with-c"></a>Yapılandırılmış Özel Durum İşlemeyi C++ ile Kullanma
 Yapılandırılmış özel durum işleme C ve C++ kaynak dosyalarını içeren works bu makalelerde açıklanan. Ancak, özellikle C++ için tasarlanmamıştır ve önerilmez. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum mekanizması işleme daha esnek ve herhangi bir tür özel durumlar işleyebilir olmamasıdır.  

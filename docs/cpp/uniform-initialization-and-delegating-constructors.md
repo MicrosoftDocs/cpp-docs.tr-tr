@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32423528"
 ---
 # <a name="uniform-initialization-and-delegating-constructors"></a>Tek Düzen Başlatma ve Oluşturucuları Temsilci Olarak Görevlendirme
 Modern C++'da, kullandığınız *başlatma ayracı* eşittir işareti olmadan herhangi bir türü için. Ayrıca, benzer iş gerçekleştirmek birden çok oluşturucuları varsa, kodunuzu basitleştirmek için temsilci seçme oluşturucular kullanabilirsiniz.  

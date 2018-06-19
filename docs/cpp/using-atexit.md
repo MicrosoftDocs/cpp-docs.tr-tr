@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32420973"
 ---
 # <a name="using-atexit"></a>atexit Kullanma
 İle [atexit](../c-runtime-library/reference/atexit.md) işlevi, program sonlandırma önce yürüten bir çıkış işleme işlevi belirtebilirsiniz. `atexit`'e çağrıdan önce başlatılan hiçbir genel statik nesne çıkış işleme işlevinin yürütülmesinden önce yok edilmez.  

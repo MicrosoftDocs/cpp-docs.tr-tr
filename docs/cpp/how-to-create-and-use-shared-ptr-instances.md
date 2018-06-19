@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32418373"
 ---
 # <a name="how-to-create-and-use-sharedptr-instances"></a>Nasıl yapılır: shared_ptr Örnekleri Oluşturma ve Kullanma
 `shared_ptr` Türü bir işaretçidir akıllı C++ Standart kitaplığında senaryoları, birden fazla sahibi gerekebilir bellekte nesnesi ömrünü yönetmek için tasarlanmıştır. Başlatır sonra bir `shared_ptr` kopyalayın, işlev bağımsız değişkenleri değere göre geçirmek ve diğer atamak `shared_ptr` örnekleri. Tüm örnekleri aynı nesneye'nın üzerine gelin, yeni bir başvuru sayısı paylaşım erişimi azaltır ve bir "artırır denetim bloğu" `shared_ptr` eklenir, kapsam dışı geçip geçmeyeceğini veya sıfırlanır. Başvuru sayısı sıfır ulaştığında, denetim bloğu bellek kaynağı ve kendisini siler.  

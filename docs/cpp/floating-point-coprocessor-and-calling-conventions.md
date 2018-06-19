@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32410807"
 ---
 # <a name="floating-point-coprocessor-and-calling-conventions"></a>Kayan Nokta Eşişlemcisi ve Çağırma Kuralları
 Derleme yordamları için kayan noktalı işlemci yazıyorsanız kayan korumalıdır denetim sözcüğü'nın üzerine gelin ve iade ettiğiniz sürece eşişlemcisi yığın temiz bir **float** veya **çift** (işlevinizi içinde ST(0)) döndürmelidir. değer  

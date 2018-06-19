@@ -21,6 +21,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32055306"
 ---
 # <a name="popcontext"></a>POPCONTEXT
 Bir kısmı veya tümü geçerli yükler `context` (kaydeden [PUSHCONTEXT](../../assembler/masm/pushcontext.md) yönergesi). `context` Olabilir **ASSUMES**, `RADIX`, **LİSTELEME**, **CPU**, veya **tüm**.  

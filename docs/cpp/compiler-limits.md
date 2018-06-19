@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32412143"
 ---
 # <a name="compiler-limits"></a>Derleyici Sınırları
 C++ Standart çeşitli dil yapıları için sınırlar önerir. Burada Visual C++ derleyicisi önerilen sınırları uygulamıyor örneklerinin bir listesi verilmiştir. İlk sayı ISO C++ 11'de standart (INCITS/ISO/IEC 14882-2011 [2012] eki B) belirlenen sınırı ve ikinci sayı Visual C++ tarafından uygulanan sınır:  

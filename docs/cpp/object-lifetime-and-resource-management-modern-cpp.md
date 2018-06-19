@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32423502"
 ---
 # <a name="object-lifetime-and-resource-management-modern-c"></a>Nesne Yaşam Süresi ve Kaynak Yönetimi (Modern C++)
 Yönetilen dilleri, C++ programı çalışırken, otomatik olarak no-uzun-kullanılan bellek kaynakları serbest bırakır, atık toplama (GC) sahip değil. C++'da, kaynak yönetimi için nesne ömrü doğrudan ilişkilidir. Bu belgede C++ nesne yaşam süresi ve yönetmek nasıl etkileyen faktörler açıklanmaktadır.  

@@ -53,6 +53,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32412562"
 ---
 # <a name="status87-statusfp-statusfp2"></a>_status87, _statusfp, _statusfp2
 

@@ -21,6 +21,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32052966"
 ---
 # <a name="textequ"></a>TEXTEQU
 Atar *textitem* için *adı*. *Textitem* öncesinde bir sabit hazır bir dize olabilir bir `%`, veya bir makro işlev tarafından döndürülen dize.  

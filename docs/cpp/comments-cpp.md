@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32411760"
 ---
 # <a name="comments-c"></a>Açıklamaları (C++)
 Açıklama, derleyicinin yoksaydığı ancak programcılar için yararlı bir metindir. Açıklamalar normalde daha sonra başvurmak üzere koda açıklama eklemek için kullanılır. Derleyici bunları boşluk olarak işler. Belirli kod satırlarını devre dışı yapma için sınama sırasında açıklamaları kullanabilirsiniz; Ancak, `#if` / `#endif` önişlemci yönergeleri çalışmak daha iyi bu açıklamaları içeren kodu çevreleyen ancak açıklamaları iç içe yerleştirilemez.  

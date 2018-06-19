@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32409728"
 ---
 # <a name="additional-startup-considerations"></a>Ek Başlatma Konuları
 C++'da, nesne oluşturma ve yıkma işlemleri için kullanıcı kodunun yürütülmesi gerekebilir. Bu nedenle, hangi başlatmaları girişine önce gerçekleşir anlamak önemlidir **ana** ve hangi Yıkıcılar çıkın sonra çağrılan **ana**. (Yapım ve nesneleri yok etme hakkında ayrıntılı bilgi için bkz: [oluşturucular](../cpp/constructors-cpp.md) ve [Yıkıcılar](../cpp/destructors-cpp.md).)  

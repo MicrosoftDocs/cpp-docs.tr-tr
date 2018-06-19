@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356738"
 ---
 # <a name="implementing-a-dual-interface"></a>Çift arabirim uygulama
 Çift arabirimini kullanarak uygulayabileceğiniz [IDispatchImpl](../atl/reference/idispatchimpl-class.md) bir varsayılan uygulamayı sağlar sınıfı `IDispatch` çift arabirim yöntemleri. Daha fazla bilgi için bkz: [IDispatch arabirimi uygulama](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945).  

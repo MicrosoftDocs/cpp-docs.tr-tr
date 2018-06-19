@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32421854"
 ---
 # <a name="using-abort"></a>abort Kullanma
 Çağırma [abort](../c-runtime-library/reference/abort.md) işlevi hemen sonlandırma neden olur. Başlatılan genel statik nesneler için normal yıkım işlemini atlar. `atexit` işlevi kullanarak belirtilen herhangi bir özel işlemi de atlar.  

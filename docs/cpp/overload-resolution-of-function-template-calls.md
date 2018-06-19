@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32420034"
 ---
 # <a name="overload-resolution-of-function-template-calls"></a>İşlev Şablonu Çağrılarının Aşırı Yük Çözümü
 İşlev şablonu aynı ada sahip şablon Olmayandan işlevleri aşırı yüklenebilir. Bu senaryoda, ilk işlev çağrılarını çözümlenir benzersiz uzmanlık işlevi şablonla örneği oluşturmak için şablon bağımsız değişken kesintisi kullanma. Şablon bağımsız değişken kesintisi başarısız olursa, diğer bir işlev aşırı yüklemelerinin çağrı çözümlemek için olarak kabul edilir. Aday kümesi olarak da bilinen bu diğer aşırı yüklemeler, şablon Olmayandan işlevler ve diğer başlatılan işlev şablonları içerir. Şablon bağımsız değişken kesintisi başarılı olursa, oluşturulan işlev kuralları aşırı yükleme çözümü için aşağıdaki en iyi eşleşmeyi belirlemek için diğer işlevleri ile karşılaştırılır. Daha fazla bilgi için bkz: [işlev aşırı yüklemesi](function-overloading.md).  

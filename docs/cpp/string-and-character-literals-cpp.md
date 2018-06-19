@@ -31,6 +31,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32424608"
 ---
 # <a name="string-and-character-literals--c"></a>Dize ve karakter değişmez değerleri (C++)
 C++ çeşitli dize ve karakter türleri destekler ve bu türlerin her biri değişmez değerler express için yöntemler sağlar. Kaynak kodunuz bir karakter kümesini kullanarak, karakter ve dize değişmez değerleri içeriğini express. Evrensel karakter adları ve kaçış karakterleri yalnızca temel kaynak karakter kümesi kullanılarak herhangi bir dize express olanak sağlar. Ham dize sabit değeri kaçış karakterleri kullanmaktan kaçının olanak tanır ve dize değişmez değerleri tüm türleri ifade etmek için kullanılabilir. Ek yapım veya dönüştürme adımları gerçekleştirmek zorunda kalmadan std::string değişmez değerleri de oluşturabilirsiniz.  

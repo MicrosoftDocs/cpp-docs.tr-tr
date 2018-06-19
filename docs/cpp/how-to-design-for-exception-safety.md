@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32417974"
 ---
 # <a name="how-to-design-for-exception-safety"></a>Nasıl yapılır: Özel Durum Güvenliği Tasarımı
 Özel durum mekanizması avantajlarından biri özel durumla ilgili verileri birlikte bu yürütme, catch, işleme deyimi doğrudan ilk özel durum oluşturur deyimden atlar. İşleyici düzeyleri herhangi bir sayıda çağrı yığınında yukarı olabilir. Try deyimi ve throw deyimine arasında adlı işlevleri oluşturulan özel durumla ilgili herhangi bir şey bilmeniz gerekli değildir.  Ancak, böylece kapsam "beklenmedik bir şekilde dışında" gidebilirsiniz tasarlanmalıdır burada bir özel durum yukarı öğesinden aşağıda yayılması ve böylece kısmen oluşturulmuş nesnelerin arkasında ayrılmadan sızmasını bellek herhangi bir noktasını veya kullanılamaz durumda veri yapılarını sahip oldukları.  

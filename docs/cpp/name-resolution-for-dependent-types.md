@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32419917"
 ---
 # <a name="name-resolution-for-dependent-types"></a>Bağımlı Türleri Ad Çözme
 Kullanım **typename** verilen tam adı bir türü tanımlar derleyici bildirmek için şablon tanımlarında nitelenmiş adlar için. Daha fazla bilgi için bkz: [typename](../cpp/typename.md).  

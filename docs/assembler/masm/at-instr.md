@@ -21,6 +21,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32049287"
 ---
 # <a name="instr"></a>@InStr
 İlk örneğini bulur makrosu işlevi *dize2* içinde *Dize1*, başlangıç sırasında *konumu* içinde *Dize1*. Varsa *konumu* görünmez, arama listesinin başında başlar *Dize1*. Bir konumu tamsayı veya 0 ise döndürür *dize2* bulunamadı.  

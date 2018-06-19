@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32416664"
 ---
 # <a name="ellipses-and-variadic-templates"></a>Üç Nokta ve Variadic Şablonları
 Bu makalede üç nokta kullanmayı gösterir (`...`) ile C++ variadic şablonları. Üç nokta C ve C++ birçok kullanımı oluşturdu. Bu işlevler için değişken bağımsız değişken listeleri içerir. `printf()` C çalışma zamanı kitaplığı işlevinden en iyi bilinen örnekler biridir.  

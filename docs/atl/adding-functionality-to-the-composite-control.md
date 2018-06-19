@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32354188"
 ---
 # <a name="adding-functionality-to-the-composite-control"></a>Bileşik Denetim işlevsellik ekleme
 Tüm gerekli denetimleri bileşik denetime ekledikten sonra sonraki adım, yeni işlevsellik ekleme içerir. Bu yeni işlevsellik genellikle iki kategoride toplanabilir:  

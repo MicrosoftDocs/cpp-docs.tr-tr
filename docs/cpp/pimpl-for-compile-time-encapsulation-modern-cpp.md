@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32420161"
 ---
 # <a name="pimpl-for-compile-time-encapsulation-modern-c"></a>Derleme Zamanı Kapsüllemesi için Pimpl (Modern C++)
 *Derleme pimpl deyim* uygulaması, bağlantı en aza indirmek ve arabirimleri ayırmak için gizlemek için bir modern C++ tekniğidir. Derleme Pimpl kısaltması "uygulamasına." işaretçidir Zaten kavramına aşina ancak Cheshire kat veya derleyici güvenlik duvarı deyim gibi diğer adları tarafından biliyor.  

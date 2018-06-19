@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356611"
 ---
 # <a name="atl-module-classes"></a>ATL Modül Sınıfları
 Bu konuda ATL 7. 0 ' Yeni modül sınıfları anlatılmaktadır.  

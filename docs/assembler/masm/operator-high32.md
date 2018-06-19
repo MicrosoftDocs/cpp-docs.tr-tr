@@ -23,6 +23,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32056840"
 ---
 # <a name="operator-high32"></a>işleç HIGH32
 Yüksek 32 bitlik döndürür *ifade*. MASM ifadeleri 64-bit değerlerdir.  

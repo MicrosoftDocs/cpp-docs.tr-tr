@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356360"
 ---
 # <a name="adding-an-atl-ole-db-consumer"></a>ATL OLE DB Tüketicisi Ekleme
 ATL OLE DB tüketici bir projeye eklemek için bu sihirbazı kullanın. ATL OLE DB tüketici bir OLE DB erişimcisi sınıf ve veri bağlamalarını bir veri kaynağına erişmek için gerekli oluşur. Proje ATL COM uygulama olarak ya da (ATL OLE DB Tüketici Sihirbazı otomatik olarak ekler) ATL desteği içeren bir MFC ya da Win32 uygulama olarak oluşturulmuş olması gerekir.  

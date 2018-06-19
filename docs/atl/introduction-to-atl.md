@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355810"
 ---
 # <a name="introduction-to-atl"></a>ATL giriş
 ATL Etkin Şablon Kütüphanesi, hangi kolayca oluşturabilirsiniz ile bir dizi şablona dayalı C++ sınıfları küçük, hızlı Bileşen Nesne Modeli (COM) nesneleri. Özel desteği dahil olmak üzere anahtar COM özellikleri vardır: hisse senedi uygulamaları [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509), [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364), [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720), ve `IDispatch`; çift arabirimleri; standart COM Numaralandırıcı arabirimleri; bağlantı noktaları; etiketleri arabirimleri; ve ActiveX denetimleri.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32414789"
 ---
 # <a name="character-sets"></a>Karakter Kümeleri
 C++ programı metnin belirli karakter kodlamasını kullanacak kaynak dosyalarında depolanır. C++ standart, kaynak dosyaları için bir temel kaynak karakter kümesi ve derlenmiş dosyalar için bir temel yürütme karakter kümesi belirtir. Visual C++ derlenmiş dosyalar ve ek bir kaynak dosyalarında kullanılacak yerel ayarlara özgü karakter kümesi sağlar.  

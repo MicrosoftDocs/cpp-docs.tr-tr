@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32421753"
 ---
 # <a name="overview-of-c-statements"></a>C++ Deyimlerine Genel Bakış
 C++ deyimlerine ne zaman bir ifade deyimi, bir seçim deyimi, bir yineleme deyimi veya atlama deyimi özellikle bu dizisi değiştirir dışında ardışık olarak yürütülür.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32408152"
 ---
 # <a name="additional-termination-considerations"></a>Ek Sonlandırma Konuları
 Kullanarak bir C++ programı sonlandırabilir **çıkmak**, `return`, veya **abort**. Çıkış işlemini `atexit` işlevini kullanarak ekleyebilirsiniz. Bunlar aşağıdaki bölümlerde ele alınmıştır.  

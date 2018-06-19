@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32411711"
 ---
 # <a name="assertion-and-user-supplied-messages-c"></a>Onaylama ve Kullanıcının Sağladığı İletiler (C++)
 Yardımcı C++ dili destekler üç hata işleme mekanizmaları uygulamanızda hata ayıklama: [#error yönergesi](../preprocessor/hash-error-directive-c-cpp.md), [static_assert](../cpp/static-assert.md) anahtar sözcüğü ve [assert makrosu, _assert, _ wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu. Hata iletileri üç mekanizma vermek ve ayrıca test iki yazılım onaylar. Bir yazılım onaylama programınızdaki belirli bir noktada doğru olması için beklediğiniz bir koşulu belirtir. Derleme zamanı onaylama başarısız olursa, derleyici bir tanılama iletisi ve derleme hatası verir. Çalışma zamanı onaylama başarısız olursa, işletim sisteminin bir tanılama iletisi yayınlar ve uygulamanızı kapatır.  

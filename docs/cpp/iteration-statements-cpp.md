@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32418919"
 ---
 # <a name="iteration-statements-c"></a>Yineleme Deyimleri (C++)
 Yineleme deyimleri bazı döngü sonlandırma ölçütleri tabi sıfır veya daha fazla kez yürütülecek deyimleri (veya bileşik deyimler) neden. Bu deyimler bileşik deyimler olduğunda ne zaman dışında sırada yürütülür ya da [sonu](../cpp/break-statement-cpp.md) deyimi veya [devam](../cpp/continue-statement-cpp.md) deyimi karşılaştı.  

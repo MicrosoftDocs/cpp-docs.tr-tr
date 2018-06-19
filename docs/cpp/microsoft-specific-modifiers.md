@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32420229"
 ---
 # <a name="microsoft-specific-modifiers"></a>Microsoft'a Özgü Değiştiriciler
 Bu bölümde aşağıdaki alanlarda C++ için Microsoft özgü uzantılar açıklanmaktadır:  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32407994"
 ---
 # <a name="alignof-and-alignas-c"></a>alignof ve alignas (C++)
 `alignas` Tür belirteci değişkenler ve kullanıcı tanımlı türler özel hizalamasını belirtmek için bir yoldur taşınabilir, C++ standart. `alignof` İşlecidir benzer şekilde belirtilen türe veya değişken hizalamasını elde etmek için standart ve taşınabilir bir yol.  

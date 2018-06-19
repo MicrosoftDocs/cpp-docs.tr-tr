@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32412471"
 ---
 # <a name="secure-template-overloads"></a>Güvenli Şablon Aşırı Yüklemeleri
 Microsoft Gelişmiş Güvenlik sürümleri lehinde birçok C çalışma zamanı kitaplığı (CRT) işlevler kullanım dışı. Örneğin, `strcpy_s` daha güvenli yerini alır `strcpy`. Kullanım dışı bırakılan işlevler güvenlik hataların genel kaynakları olduklarından belleğin üzerine operations engellemez. Varsayılan olarak, bu işlevler birini kullandığınızda derleyici kullanımdan kaldırma uyarısı oluşturur. CRT C++ şablon aşırı yüklemeleri kolaylığı yardımcı olması bu işlevler için daha güvenli çeşitleri geçiş sağlar.  

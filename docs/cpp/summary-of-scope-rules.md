@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32423876"
 ---
 # <a name="summary-of-scope-rules"></a>Kapsam Kuralları Özeti
 Bir ad kullanımı (aşırı yükün belirlendiği noktaya kadar) kendi kapsamı içinde benzersiz olmalıdır. Bir işlev adı gösterir işlevi sayısı ve türü parametrelerinin göre benzersiz olması gerekir. Ad anlaşılır, kalırsa [üye erişimi](../cpp/member-access-control-cpp.md) kuralları uygulanır.  

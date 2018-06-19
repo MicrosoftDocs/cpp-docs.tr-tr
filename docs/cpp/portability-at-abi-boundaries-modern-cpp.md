@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32419674"
 ---
 # <a name="portability-at-abi-boundaries-modern-c"></a>ABI Sınırlarında Taşınabilirlik (Modern C++)
 İkili arabirimi sınırlarında yeterince Taşınabilir türler ve kuralları kullanın. Bir "taşınabilir" C yerleşik bir tür ya da yalnızca C yerleşik türler içeren yapı türüdür. Sınıf türleri yalnızca arama kuralı, vb. düzenini, çağıran ve çağrılan kabul ettiğinde kullanılabilir. Bu yalnızca her ikisi de aynı derleyici ve derleyici ayarları derlendiğinde mümkündür.  

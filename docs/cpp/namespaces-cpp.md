@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32423682"
 ---
 # <a name="namespaces-c"></a>Ad Alanları (C++)
 Bir ad alanı içindeki tanımlayıcıları (adları türleri, İşlevler, değişkenler vb.) için bir kapsam sağlayan bir bildirim temelli bölgedir. Ad alanları kod mantıksal gruplar halinde düzenlemek için ve özellikle kod temeliniz birden çok kitaplıklarını içerir yüklendiğinde oluşabilecek ad çakışmaları önlemek için kullanılır. Ad alanı kapsamındaki tüm tanımlayıcılar nitelemesiz birbirine görünür. Örneğin her tanımlayıcısı için tam adı kullanarak ad alanı dışında tanımlayıcıları üyeleri erişebilir `std::vector<std::string> vec;`, göre veya başka bir [bildirimi kullanarak](../cpp/using-declaration.md) tek bir tanımlayıcı için (`using std::string`), ya da bir [yönergesi kullanarak](../cpp/namespaces-cpp.md#using_directives) ad alanındaki tüm tanımlayıcılar için (`using namespace std;`). Üstbilgi dosyaları kodunda her zaman tam ad alanı adı kullanmanız gerekir.  

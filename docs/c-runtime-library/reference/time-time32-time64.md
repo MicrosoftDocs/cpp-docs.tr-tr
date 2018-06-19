@@ -48,6 +48,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32410573"
 ---
 # <a name="time-time32-time64"></a>time, _time32, _time64
 

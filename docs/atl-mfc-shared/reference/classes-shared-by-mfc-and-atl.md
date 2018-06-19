@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356980"
 ---
 # <a name="classes-shared-by-mfc-and-atl"></a>MFC ve ATL tarafından paylaşılan sınıfları
 MFC ve ATL arasında paylaşılan sınıfları aşağıdaki tabloda listelenmektedir  

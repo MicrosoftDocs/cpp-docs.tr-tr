@@ -62,6 +62,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32409390"
 ---
 # <a name="sal-annotations"></a>SAL Ek Açıklamaları
 Örneğin, kitaplık üstbilgi dosyaları incelerseniz, olağan dışı bazı ek açıklamaları karşılaşabilirsiniz `_In_z` ve `_Out_z_cap_(_Size)`. Bunlar, nasıl bir işlev parametreleri, örneğin, kullandığını tanımlamak için bunları ve bitirme üzerinde kolaylaştırır garanti hakkında kolaylaştırır varsayımlar ek açıklamaları sağlayan Microsoft kaynak kodu ek açıklama dili (SAL) örneğidir. Üst bilgi dosyasını \<sal.h > ek açıklamalar tanımlar.  

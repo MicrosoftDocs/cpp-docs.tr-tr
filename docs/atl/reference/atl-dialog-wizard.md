@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358012"
 ---
 # <a name="atl-dialog-wizard"></a>ATL iletişim Sihirbazı
 Bu sihirbaz, türetilmiş bir ATL iletişim kutusu nesnesinin projeye ekler [CAxDialogImpl](../../atl/reference/caxdialogimpl-class.md). Bir iletişim kutusu türetilmiş `CAxDialogImpl` ActiveX denetimlerini barındırabilir.  

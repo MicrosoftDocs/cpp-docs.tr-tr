@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32412130"
 ---
 # <a name="function-template-instantiation"></a>İşlev Şablonu Örneklemesi
 İşlev şablonu ilk her tür için çağrıldığında derleyici örnekleme oluşturur. Her bir sürümü şablonlu oluşturulmadan işlevi türü için özelleştirilmiş. İşlev türü için kullanılan her zaman bu örneklemesi çağrılır. Birkaç aynı örneklemesi, hatta farklı modüllerde varsa, örneklemesi yalnızca bir kopyasını yürütülebilir dosyayı son bulur.  

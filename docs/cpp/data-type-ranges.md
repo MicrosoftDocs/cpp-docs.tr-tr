@@ -50,6 +50,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32418399"
 ---
 # <a name="data-type-ranges"></a>Veri Türü Aralıkları
 Visual C++ 32 bit ve 64-bit derleyicileri bu makalenin sonraki bölümlerinde tablosunda türlerini kabul eder.  

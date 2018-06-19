@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358696"
 ---
 # <a name="inserting-a-composite-control"></a>Bileşik denetim ekleme
 **Sınıfı Ekle** iletişim kutusu ATL nesneyi bir projeye eklemenize olanak sağlar. Çözüm işaret Gezgini'nde proje adına sağ tıklayarak bu iletişim kutusunu erişim **Ekle**ve ardından **sınıfı Ekle**.  

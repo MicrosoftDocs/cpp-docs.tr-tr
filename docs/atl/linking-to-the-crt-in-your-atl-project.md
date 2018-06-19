@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356389"
 ---
 # <a name="linking-to-the-crt-in-your-atl-project"></a>ATL projenizdeki CRT bağlantılandırma
 [C çalışma zamanı kitaplıkları](../c-runtime-library/crt-library-features.md) (CRT) programlama çok ATL geliştirme sırasında kolaylaştırabilir pek çok yararlı işlevleri sağlar. CRT kitaplık tüm ATL projeleri bağlantısı. Olumlu ve olumsuz yönlerini yönteminde bağlama görebilirsiniz [avantajları ve bileşim CRT bağlamak için kullanılan yöntem](../atl/benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt.md).  

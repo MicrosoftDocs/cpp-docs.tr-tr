@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32424358"
 ---
 # <a name="smart-pointers-modern-c"></a>Akıllı İşaretçiler (Modern C++)
 Modern C++ programlama standart kitaplığı içerir *akıllı işaretçiler*, hangi programları sağlamaya yardımcı olmak için kullanılan bellek ücretsiz ve kaynak sızdırıyor ve özel durum güvenlidir.  

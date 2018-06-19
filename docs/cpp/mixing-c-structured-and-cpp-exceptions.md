@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32420113"
 ---
 # <a name="mixing-c-structured-and-c-exceptions"></a>C (Yapılandırılmış) ile C++ Özel Durumlarını Karıştırma
 Daha fazla taşınabilir kod yazmak istiyorsanız, yapılandırılmış özel durum işlemeyi C++ programında kullanmanız önerilmez. Ancak, bazen ile derleme isteyebilirsiniz **/EHa** yapılandırılmış özel durumlar ve C++ kaynak kodu karıştırmak ve her iki tür özel durumları işlemek için bazı tesis gerekir. Yapılandırılmış özel durum işleyici nesneleri veya yazılan özel durumları kavramına sahip olduğundan, C++ kodu tarafından oluşturulan özel durumları işleyemiyor; Ancak, C++ **catch** yapılandırılmış özel durum işleyicileri işleyebilir. Bu tür, C++ özel durum işleme sözdizimi olarak (**deneyin**, `throw`, **catch**) C derleyici ancak yapılandırılmış özel durum işleme sözdizimi tarafından kabul edilmedi (`__try`, `__except`, `__finally`) C++ derleyicisi tarafından desteklenir.  

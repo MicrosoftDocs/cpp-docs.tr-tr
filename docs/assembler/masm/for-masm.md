@@ -21,6 +21,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32051949"
 ---
 # <a name="for-masm"></a>FOR (MASM)
 Her biri için bir kez yineleneceğini bir blok işaretler `argument`, geçerli ile `argument` değiştirme `parameter` her tekrar üzerinde.  

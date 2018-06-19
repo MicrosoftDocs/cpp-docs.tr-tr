@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357251"
 ---
 # <a name="dcomcnfg"></a>DCOMCNFG
 **DCOMCNFG** kayıt defterinde çeşitli DCOM özel ayarları yapılandırmanıza olanak sağlayan bir Windows NT 4.0 yardımcı programıdır. **DCOMCNFG** penceresinin üç sayfa vardır: varsayılan güvenlik, varsayılan özellikler ve uygulamalar. Windows 2000 altında dördüncü sayfasında, varsayılan protokolleri mevcuttur.  

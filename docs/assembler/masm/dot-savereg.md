@@ -21,6 +21,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32055212"
 ---
 # <a name="savereg"></a>.SAVEREG
 Ya da oluşturur bir `UWOP_SAVE_NONVOL` veya `UWOP_SAVE_NONVOL_FAR` belirtilen yazmaç için kod girdisi bırakma (`reg`) ve uzaklık (`offset`) geçerli başlangıç sapmasını kullanarak. MASM en verimli kodlamayı seçecektir.  

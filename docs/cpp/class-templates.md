@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32415692"
 ---
 # <a name="class-templates"></a>Sınıf Şablonları
 Bu konuda C++ sınıf şablonları için özel kurallar açıklanmaktadır.  

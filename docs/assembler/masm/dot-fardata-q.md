@@ -21,6 +21,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32051670"
 ---
 # <a name="fardata"></a>.FARDATA?
 İle kullanıldığında [. MODEL](../../assembler/masm/dot-model.md), başlatılmamış veriler için bir uzak veri kesimi başlatır (kesim adı FAR_BSS veya *adı*).  
