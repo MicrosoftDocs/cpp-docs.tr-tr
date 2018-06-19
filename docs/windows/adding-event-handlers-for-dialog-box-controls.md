@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33863705"
 ---
 # <a name="adding-event-handlers-for-dialog-box-controls"></a>İletişim Kutusu Denetimleri için Olay İşleyicileri Ekleme
 Olay işleyicileri oluştururken, sınıf ile ilişkili olan proje iletişim kutuları için bazı kısayollarından sürebilir. Varsayılan Denetim bildirim olayı veya herhangi bir geçerli Windows iletisi için bir işleyici kolayca oluşturabilirsiniz.  

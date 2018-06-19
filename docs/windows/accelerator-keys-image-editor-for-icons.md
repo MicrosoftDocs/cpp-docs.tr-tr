@@ -24,6 +24,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33861538"
 ---
 # <a name="accelerator-keys-image-editor-for-icons"></a>Hızlandırma Tuşları (Simgeler İçin Görüntü Düzenleyicisi)
 Anahtarlar için varsayılan olarak bağlı görüntü düzenleyici komutlarını Hızlandırıcı tuşları altındadır. Hızlandırıcı tuşları değiştirmek için tıklatın. **seçenekleri** üzerinde **Araçları** menüsünde ve ardından **klavye** altında **ortam** klasör. Daha fazla bilgi için bkz: [tanımlama ve özelleştirme klavye kısayolları](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349473"
 ---
 # <a name="message-handling-and-command-targets"></a>İleti İşleme ve Komut Hedefleri
 Komut gönderme arabirimi `IOleCommandTarget` sorgulamak ve komutları yürütmek için basit ve Genişletilebilir bir mekanizma tanımlar. Bu mekanizma Otomasyonu'nun basittir `IDispatch` tamamen komutları; standart kümesinde kullandığından komutları nadiren sahip bağımsız değişkenler ve hiçbir tür bilgileri söz konusu (de komut bağımsız değişkenleri için tür güvenliği yayınladıklarını).  

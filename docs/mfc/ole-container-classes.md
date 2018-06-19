@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349060"
 ---
 # <a name="ole-container-classes"></a>OLE Kapsayıcı Sınıfları
 Bu sınıfların kapsayıcı uygulamalar tarafından kullanılır. Her ikisi de `COleLinkingDoc` ve `COleDocument` koleksiyonlarını `COleClientItem` nesneleri. Belge sınıfından türetilen yerine **CDocument**, bu sınıftan türetilen `COleLinkingDoc` veya `COleDocument`bağlantıları belgenizi katıştırılmış nesneler için destek istemenize bağlı olarak.  

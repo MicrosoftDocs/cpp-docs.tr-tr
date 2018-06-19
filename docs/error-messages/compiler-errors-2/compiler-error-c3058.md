@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33246681"
 ---
 # <a name="compiler-error-c3058"></a>Derleyici Hatası C3058
 'simgesi': 'copyin' yan tümcesinde kullanılmadan önce 'threadprivate' bildirilmemiş simgesi  

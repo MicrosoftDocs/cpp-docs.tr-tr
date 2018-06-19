@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33861233"
 ---
 # <a name="how-to-convert-between-various-string-types"></a>Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme Yapma
 Bu konu, çeşitli Visual C++ dize türlerinin diğer dizelere dönüştürme gösterilmiştir. Kapsanan dize türleri `char *`, `wchar_t*`, [_bstr_t](../cpp/bstr-t-class.md), [CComBSTR](../atl/reference/ccombstr-class.md), [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), ve <xref:System.String?displayProperty=fullName>. Her durumda, bir dize yeni türe dönüştürüldüğünde kopyası oluşturulur. Yeni dizeye yapılan değişiklikler özgün dizeyi etkilemez ve tersi.  

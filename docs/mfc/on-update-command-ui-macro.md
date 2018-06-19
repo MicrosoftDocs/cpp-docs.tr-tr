@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348492"
 ---
 # <a name="onupdatecommandui-macro"></a>ON_UPDATE_COMMAND_UI Makrosu
 Kullanım **özellikleri** komutu-hedef nesne komutu güncelleştirme işleyici için bir kullanıcı arabirimi nesnesi bağlanmak için penceresi. Kullanıcı arabirimi nesnesinin kimliği için otomatik olarak bağlanacak `ON_UPDATE_COMMAND_UI` makrosu ve güncelleştirme işleyecek nesnesinde bir işleyici oluşturun. Bkz: [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md) daha fazla bilgi için.  

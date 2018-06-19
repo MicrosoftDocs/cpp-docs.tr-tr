@@ -25,6 +25,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33861551"
 ---
 # <a name="changing-the-tab-order-of-controls"></a>Denetimlerin Sekme Sırasını Değiştirme
 Sekme sırası içinde SEKME tuşuna giriş odağını bir denetimden bir iletişim kutusu içinde sonraki taşır sırasıdır. Genellikle sekme sırasını soldan sağa ve yukarıdan bir iletişim kutusunda devam eder. Her denetim sahip bir **Tabstop** denetim giriş odağını alıp almayacağını belirler özelliği.  

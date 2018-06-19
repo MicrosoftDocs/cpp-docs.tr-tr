@@ -28,6 +28,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349363"
 ---
 # <a name="deriving-a-class-from-cobject"></a>CObject'ten Sınıf Türetme
 Bu makalede öğesinden bir sınıf türetin için gereken en düşük adımları [CObject](../mfc/reference/cobject-class.md). Diğer `CObject` sınıfı makalelerde, özel yararlanmak için gereken adımlar açıklanmaktadır `CObject` seri hale getirme ve tanılama hata ayıklama desteği gibi özellikleri.  

@@ -28,6 +28,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348857"
 ---
 # <a name="internet-security-c"></a>Internet Güvenliği (C++)
 Kod güvenliği bir Internet uygulamaları kullanıcılarının ve geliştiriciler için başlıca sorunudur. Riskleri vardır: kötü amaçlı kod, üzerinde oynanmış kodu ve bilinmeyen siteleri veya yazarları koddan.  

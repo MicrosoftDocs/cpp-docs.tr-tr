@@ -24,6 +24,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33860391"
 ---
 # <a name="changing-a-symbol39s-numeric-value"></a>Bir sembol değiştirme&#39;s sayısal değer
 Tek bir kaynakla ilişkili simgelerini kullandığınız [Özellikler penceresini](/visualstudio/ide/reference/properties-window) simge değerini değiştirmek için. Kullanabileceğiniz [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md) bir kaynağa atanmış simge değerini değiştirmek için. Daha fazla bilgi için bkz: [atanmamış sembolleri değiştirme](../windows/changing-unassigned-symbols.md).  

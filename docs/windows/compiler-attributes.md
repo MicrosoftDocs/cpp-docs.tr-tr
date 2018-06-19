@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33860664"
 ---
 # <a name="compiler-attributes"></a>Derleyici Öznitelikleri
 Derleyici öznitelikleri işlevleri, çeşitli sağlar.  

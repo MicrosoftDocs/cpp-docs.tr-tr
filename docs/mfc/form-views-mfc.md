@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349059"
 ---
 # <a name="form-views-mfc"></a>Form Görünümleri (MFC)
 Formlar dahil olmak üzere MFC kitaplıkları destekleyen Visual C++ uygulamasını ekleyebilirsiniz bir [forms tabanlı uygulama](../mfc/reference/creating-a-forms-based-mfc-application.md) (biri olan Görünüm sınıfı türetilir `CFormView`). Forms desteklemek için uygulamanızın başlangıçta oluşturmadıysanız, Visual C++ yeni bir form eklediğinizde, bu desteği ekler. SDI veya MDI bir uygulamada varsayılan uygulayan [belge/görünüm mimarisi](../mfc/document-view-architecture.md), kullanıcı seçtiğinde `New` komutu (varsayılan olarak, üzerinde **dosya** menüsü), Visual C++ kullanıcıya sorar kullanılabilir formlardan seçin.  

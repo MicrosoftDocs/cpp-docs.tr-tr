@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349597"
 ---
 # <a name="managing-the-current-view"></a>Geçerli Görünümü Yönetme
 Çerçeve pencereleri varsayılan uygulaması bir parçası olarak, bir çerçeve penceresinde şu anda etkin bir görünüm izler. Çerçeve penceresi Bölümlendirici pencere örnekte olduğu gibi birden çok görünüm içeriyorsa geçerli görünümü kullanımda en son görünümüdür. Etkin görünüm, etkin pencereyi Windows ya da geçerli giriş odağını bağımsızdır.  
