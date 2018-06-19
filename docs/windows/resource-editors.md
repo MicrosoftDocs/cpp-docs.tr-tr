@@ -27,6 +27,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33879600"
 ---
 # <a name="resource-editors"></a>Kaynak Düzenleyicileri
 Bir kaynak düzenleyici oluşturmak veya Visual Studio projesinde bulunan kaynaklar için özel bir ortamdır. Visual Studio kaynak düzenleyicileri teknikleri ve uygulama kaynaklarını hızlı ve kolay bir şekilde değiştirin ve oluşturmanıza yardımcı arabirimleri paylaşır. Kaynak düzenleyicileri etkinleştirmek için [görüntüleyin ve kaynaklarına uygun düzenleyicisinde düzenleyin](../windows/viewing-and-editing-resources-in-a-resource-editor.md) ve [Önizleme kaynakları](../windows/previewing-resources.md).  

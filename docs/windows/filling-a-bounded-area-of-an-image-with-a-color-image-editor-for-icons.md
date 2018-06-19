@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33880575"
 ---
 # <a name="filling-a-bounded-area-of-an-image-with-a-color-image-editor-for-icons"></a>Görüntünün Sınırlı Bir Alanını Renkle Doldurma (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi sağlar **doldurun** herhangi doldurma aracı içine görüntü alanını geçerli çizim renkle veya geçerli arka plan rengi.  

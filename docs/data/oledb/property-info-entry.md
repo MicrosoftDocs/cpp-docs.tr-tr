@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33105198"
 ---
 # <a name="propertyinfoentry"></a>PROPERTY_INFO_ENTRY
 Bir özellik kümesi içinde belirli bir özelliği temsil eder.  

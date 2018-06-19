@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33128286"
 ---
 # <a name="how-to-use-regular-expressions-for-simple-matching-ccli"></a>Nasıl yapılır: Basit Eşleştirme için Normal İfadeler Kullanma (C++/CLI)
 Aşağıdaki kod örneği için tam altdizgi eşleşme aramak için normal ifadeler kullanır. Arama statik tarafından gerçekleştirilen <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> yöntemi iki dizeyi giriş olarak alır. Aranacak düzeni saniyedir ve ilk aranacak dizedir.  

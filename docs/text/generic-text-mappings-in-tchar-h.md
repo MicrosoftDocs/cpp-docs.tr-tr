@@ -27,6 +27,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33867109"
 ---
 # <a name="generic-text-mappings-in-tcharh"></a>Tchar.h'de Genel Metin Eşlemeleri
 Uluslararası kullanımda kodun taşınmasını kolaylaştırmak için [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)] çalışma zamanı kitaplığı sağlayan [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)]-birçok veri türleri, yordamlar ve diğer nesneleri için belirli genel metin eşlemeleri. Bu eşlemeler Tchar.h'de tek bayt, birden çok baytlı, derlenmiş genel kodlar yazmak için tanımlanan kullanabilirsiniz veya [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] karakter kümesi kullanarak tanımladığınız bir bildirim sabit bağlı olarak bir `#define` deyimi. Genel metin eşlemeleri [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)] olmayan uzantıları [!INCLUDE[vcpransi](../atl-mfc-shared/reference/includes/vcpransi_md.md)] uyumlu.  

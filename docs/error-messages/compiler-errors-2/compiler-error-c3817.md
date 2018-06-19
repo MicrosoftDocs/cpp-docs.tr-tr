@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33268238"
 ---
 # <a name="compiler-error-c3817"></a>Derleyici Hatası C3817
 'bildirimi': özellik yalnızca bir işleve uygulanabilir  

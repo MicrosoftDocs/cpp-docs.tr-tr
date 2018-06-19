@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33111451"
 ---
 # <a name="schema-rowset-classes-and-typedef-classes"></a>Şema Satır Kümesi Sınıfları ve Typedef Sınıfları
 Bir şema, sahip olduğu veya belirli bir kullanıcı tarafından oluşturulan veritabanı nesneleri koleksiyonudur. Bir katalog bir veya daha fazla şemaları içerebilir, ancak her zaman görünümler ve etki alanı bilgileri şemasının içeren INFORMATION_SCHEMA adlı bir şema içermelidir. OLE DB'de şema bilgileri önceden tanımlanmış şema satır kümeleri kullanılarak alınır ve türleri, tablolar, sütunlar, dizinler, görünümler, onaylar ve kısıtlamaları, istatistikleri, karakter kümesi, harmanlamaları ve etki alanlarını içerir.  

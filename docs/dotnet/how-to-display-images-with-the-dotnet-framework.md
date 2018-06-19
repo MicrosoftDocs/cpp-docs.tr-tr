@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33128585"
 ---
 # <a name="how-to-display-images-with-the-net-framework"></a>Nasıl yapılır: .NET Framework ile Görüntüleri Görüntüleme
 Aşağıdaki kod örneğinde bir işaretçi almak için OnPaint olay işleyicisini değiştirmektedir <xref:System.Drawing.Graphics> ana form için nesne. <xref:System.Windows.Forms.Form.OnPaint%2A> İşlevi, büyük olasılıkla bir Visual Studio uygulama sihirbazıyla oluşturulmuş bir Windows Forms uygulaması için tasarlanmıştır.  

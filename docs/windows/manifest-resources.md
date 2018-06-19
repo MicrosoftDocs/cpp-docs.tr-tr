@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33882920"
 ---
 # <a name="manifest-resources"></a>Bildirim Kaynakları
 Bildirim kaynakları uygulama kullanan bağımlılıkları açıklayan XML dosyalarıdır. Örneğin, Visual Studio'da MFC sihirbaz tarafından oluşturulan bildirim dosyası Windows ortak denetimi uygulama kullanması gereken DLL'leri, sürüm 5.0 veya 6.0 hangisinin tanımlar:  

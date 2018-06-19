@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33878703"
 ---
 # <a name="generic-interfaces-visual-c"></a>Genel Arabirimler (Visual C++)
 Tür parametreleri sınıflarında uygulamak kısıtlamaları arabirimlerde tür parametreleri için geçerli aynıdır (bkz [Genel sınıflar (C + +/ CLI)](../windows/generic-classes-cpp-cli.md)).  

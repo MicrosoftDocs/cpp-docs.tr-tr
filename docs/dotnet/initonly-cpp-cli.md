@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130561"
 ---
 # <a name="initonly-ccli"></a>initonly (C++/CLI)
 **initonly** olduğundan bu değişken atamayı gösteren bir bağlama duyarlı anahtar sözcüğü yalnızca parçası olarak bildirimi veya aynı sınıftaki statik oluşturucuda meydana gelebilir.  

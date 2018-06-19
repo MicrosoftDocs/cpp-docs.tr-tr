@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33098387"
 ---
 # <a name="crowsetcrowset"></a>CRowset::CRowset
 Yeni bir `CRowset` nesne ve (isteğe bağlı olarak) ile ilişkilendirir bir [IRowset](https://msdn.microsoft.com/en-us/library/ms720986.aspx) parametre olarak sağlanan arabirim.  

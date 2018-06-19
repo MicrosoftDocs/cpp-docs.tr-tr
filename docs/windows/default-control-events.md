@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33874102"
 ---
 # <a name="default-control-events"></a>Varsayılan Denetim Olayları
 Aşağıdaki denetim adlarının eşlik eden varsayılan olayları vardır:  

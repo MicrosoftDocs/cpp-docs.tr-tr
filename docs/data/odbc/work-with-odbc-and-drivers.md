@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33095121"
 ---
 # <a name="work-with-odbc-and-drivers"></a>ODBC ve Sürücülerle Çalışma
 ODBC yalnızca bir veritabanı yönetim sistemine (DBMS) bağımlı olmayan uygulamalar yazmanızı sağlar. Kullanıcılarınızın doğru DBMS özgü ODBC sürücüsü olan birden çok DBMS üzerinde çalışabilir bir uygulama yazabilirsiniz.  

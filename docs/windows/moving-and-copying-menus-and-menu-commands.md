@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33878443"
 ---
 # <a name="moving-and-copying-menus-and-menu-commands"></a>Menüleri ve Menü Komutlarını Taşıma ve Kopyalama
 Taşıma veya kopyalama menüleri ve menü komutlarını sürükle ve bırak yöntemiyle veya kısayol menüsünden (sağ tıklatma menüsünden) komutlarını kullanarak.  

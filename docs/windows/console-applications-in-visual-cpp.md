@@ -18,6 +18,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33870308"
 ---
 # <a name="console-applications-in-visual-c"></a>Visual C++'ta konsol uygulamaları
 Bir konsol uygulaması giriş kabul eder ve çıktı olarak da bilinen komut istemi olan konsola gönderir. Konsol uygulamaları temel iş yapmak için veya çok karmaşık görevleri gerçekleştirmek için oluşturabilirsiniz. Bir konsol uygulaması, daha sonra bir Windows masaüstü uygulaması veya evrensel Windows Platform uygulaması içine eklemek istediğiniz işlevselliği kavram kanıtı Tanıtımı olarak da kullanabilirsiniz. Konsol uygulamaları kanallar veya diğer RPC mekanizmaları yoluyla diğer Masaüstü uygulamaları ile iletişim kurabilir.  

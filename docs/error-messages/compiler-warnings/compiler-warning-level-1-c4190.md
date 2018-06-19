@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33277900"
 ---
 # <a name="compiler-warning-level-1-c4190"></a>Derleyici Uyarısı (düzey 1) C4190
 'identifier1' C bağlantı belirtilen sahip, ancak UDT 'C ile uyumsuz olan identifier2' döndürür  

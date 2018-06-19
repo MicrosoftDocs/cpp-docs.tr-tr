@@ -27,6 +27,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33882504"
 ---
 # <a name="editing-graphical-resources-image-editor-for-icons"></a>Grafik Kaynakları Düzenleme (Simgeler İçin Görüntü Düzenleyicisi)
 Uygulamanız için tanımladığınız görüntüleri grafik kaynaklardır. Freehand çizin veya şekilleri kullanarak çizin. Düzenleme, çevirme veya yeniden boyutlandırma için görüntünün parçalarını seçin veya seçilen görüntü bölümünden özel Fırça oluşturma ve bu fırça ile çizin. Görüntü özelliklerini tanımlamak, görüntüleri farklı biçimlerde kaydetme ve görüntüleri bir biçimden diğerine dönüştürme.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33873215"
 ---
 # <a name="finding-an-entry-in-an-accelerator-table"></a>Hızlandırıcı Tablosunda Giriş Bulma
 ### <a name="to-find-an-entry-in-an-open-accelerator-table"></a>Açık Hızlandırıcı tablosunda bir giriş bulmak için  

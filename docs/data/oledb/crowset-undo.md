@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33096346"
 ---
 # <a name="crowsetundo"></a>CRowset::Undo
 Bir satır için son fetch itibaren yapılan tüm değişiklikler geri alır veya [güncelleştirme](../../data/oledb/crowset-update.md).  

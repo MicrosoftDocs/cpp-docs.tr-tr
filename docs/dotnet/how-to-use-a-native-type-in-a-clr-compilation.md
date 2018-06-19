@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33128413"
 ---
 # <a name="how-to-use-a-native-type-in-a-clr-compilation"></a>Nasıl yapılır: /clr Derlemesinde Yerel Tür Kullanma
 Yerel tür tanımlayabilirsiniz bir **/CLR** derleme ve bu yerel türün derlemedeki bütün kullanımları geçerlidir. Ancak, yerel türler başvurulan meta veriler için kullanılabilir olmayacaktır.  

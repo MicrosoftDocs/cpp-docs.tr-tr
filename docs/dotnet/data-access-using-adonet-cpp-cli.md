@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33108306"
 ---
 # <a name="data-access-using-adonet-ccli"></a>ADO.NET Kullanarak Veri Erişimi (C++/CLI)
 ADO.NET veri erişimi için .NET Framework API'sidir ve güç ve önceki veri erişim çözümleri tarafından eşleşmeyen kullanım kolaylığı sağlar. Bu bölümde Visual C++ kullanıcılara, yerel türlerini hazırlama gibi benzersiz ADO.NET ile ilgili sorunlardan bazıları açıklanmaktadır.  

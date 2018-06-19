@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33249235"
 ---
 # <a name="compiler-error-c3280"></a>Derleyici Hatası C3280
 'class': üye işlevi bir yönetilen türü yönetilmeyen işlev derlenemez  
