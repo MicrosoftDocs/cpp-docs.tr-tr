@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368180"
 ---
 # <a name="concepts-of-isolated-applications-and-side-by-side-assemblies"></a>Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları
 Bir uygulama olarak kabul edilir bir [yalıtılmış uygulama](http://msdn.microsoft.com/library/aa375190) tüm bileşenleri varsa [yan yana derlemeler](http://msdn.microsoft.com/library/ff951640). Yan yana derleme, birlikte dağıtılan ve bir uygulama tarafından çalışma zamanında kullanılabilir hale getirilen kaynaklar topluluğudur (bir grup DLL dosyası, windows sınıfları, COM sunucuları, tür kitaplıkları veya arabirimler). Genellikle, yan yana derleme, bir ila birden fazla DLL dosyasından oluşur.  

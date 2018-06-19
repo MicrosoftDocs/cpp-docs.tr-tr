@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32373988"
 ---
 # <a name="using-function-name-without--produces-no-code"></a>() Olmadan İşlev Adının Kullanılması Kod Üretmez
 Programınıza bildirilen bir işlev adı parantez olmadan kullanıldığında, derleyici kod üretmez. Bu işlev adresi derleyici hesaplar çünkü olsun veya olmasın işlev parametreleri alır bağımsız olarak gerçekleşir; İşlev çağırma işleci (")" mevcut olmadığından, ancak hiçbir çağrı yapılır. Bu sonuç aşağıdakine benzer:  

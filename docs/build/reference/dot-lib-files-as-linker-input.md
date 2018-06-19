@@ -29,6 +29,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32374550"
 ---
 # <a name="lib-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Lib Dosyaları
 BAĞLANTI kabul COFF standart kitaplıkları ve COFF içeri aktarma kitaplıkları, her ikisi de genellikle sahip uzantısı. lib. Standart kitaplıkları nesneleri içerir ve LIB aracı tarafından oluşturulur. İçeri aktarma kitaplıkları ya da bağlantı dışarı aktarmaları içeren bir program oluşturduğunda veya LIB aracı tarafından oluşturulan ve diğer programlarda dışarı ilgili bilgiler içerir. Standart oluşturmak veya kitaplıkları içeri aktarma için LIB kullanma hakkında daha fazla bilgi için bkz: [LIB başvurusu](../../build/reference/lib-reference.md). İçeri aktarma kitaplığı oluşturmak için bağlantı kullanma hakkında daha fazla bilgi için bkz [/dll](../../build/reference/dll-build-a-dll.md) seçeneği.  

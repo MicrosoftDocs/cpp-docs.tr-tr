@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32374914"
 ---
 # <a name="overview-of-x64-calling-conventions"></a>x64 Çağırma Kurallarına Genel Bakış
 X86 iki önemli farklılıkları ve [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] 64-bit adresleme yeteneği olan ve düz 16 64-bit birtakım genel kullanım için kaydeder. Genişletilmiş kayıt kümesi [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] kullanan [__fastcall](../cpp/fastcall.md) çağırma kuralı ve bir RISC tabanlı özel durum işleme modeli. `__fastcall` Kuralı kayıtları ilk dört bağımsız değişkenler ve yığın çerçevesi için ek bağımsız değişkenler geçirmek için kullanılır.  

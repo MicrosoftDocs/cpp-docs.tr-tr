@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32410521"
 ---
 # <a name="required-and-optional-header-files"></a>Gerekli ve İsteğe Bağlı Başlık Dosyaları
 Gerekli ve isteğe bağlı bir listesini her çalıştırma yordamı açıklamasını içerir içeren veya üstbilgisi (. H), bu yordamı için dosyaları. Yordamın veya dahili olarak adlı başka bir yordamı tarafından kullanılan bir tanımını işlevi bildirimi almak için eklenmesi gereken üstbilgi dosyaları gerekir. İsteğe bağlı başlık dosyaları önceden tanımlanmış sabitler, tür tanımları veya satır içi makrolar yararlanmak için genellikle eklenmiştir. Aşağıdaki tabloda isteğe bağlı üstbilgi dosya içeriğinin bazı örnekler listelenmiştir:  

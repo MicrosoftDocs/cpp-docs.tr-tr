@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375220"
 ---
 # <a name="unloading-a-delay-loaded-dll"></a>Gecikmeli Yüklenen DLL'i Kaldırma
 Varsayılan sağlanan Gecikmeli Yükleme Yardımcısı gecikme yükü tanımlayıcıları bir işaretçi ve özgün içeri aktarma adres tablosunu (IAT) bir kopyasını pUnloadIAT alanına sahip olup olmadığını denetler. Bu durumda, onu bir işaretçi alma gecikme tanımlayıcısı listesinde kaydeder. Bu DLL'i açıkça kaldırma desteği adıyla DLL bulmak yardımcı işlevini etkinleştirir.  

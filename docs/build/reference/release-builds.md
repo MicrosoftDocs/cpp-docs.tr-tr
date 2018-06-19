@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32376656"
 ---
 # <a name="release-builds"></a>Yayın Derlemeleri
 Yayın derlemesi iyileştirmeler kullanır. Yayın derlemesi oluşturma için en iyi duruma getirme kullandığınızda derleyici simgesel hata ayıklama bilgilerini üretmez. Kod izleme ve ASSERT oluşturulmaz olgu birlikte simgesel hata ayıklama bilgilerini yokluğu çağrıları, yürütülebilir dosyasının boyutunu daha azdır ve bu nedenle daha hızlı olacaktır anlamına gelir.  

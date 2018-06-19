@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375490"
 ---
 # <a name="cc-building-reference"></a>C/C++ Oluşturma Başvurusu
 Visual C++ C/C++ programı oluşturmanın iki yolu sağlar. En kolay (ve en yaygın) yolu [Visual C++ geliştirme ortamında yapı](../../ide/building-cpp-projects-in-visual-studio.md). Diğer yolu [komut satırı araçlarını kullanarak bir komut isteminden yapı](../../build/building-on-the-command-line.md). Her iki durumda da, Kaynak dosyalarınız Visual C++ kaynak Düzenleyicisi veya bir üçüncü taraf düzenleyiciyi kullanarak oluşturabilirsiniz.  

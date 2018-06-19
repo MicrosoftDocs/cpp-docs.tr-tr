@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32374927"
 ---
 # <a name="setting-linker-options"></a>Bağlayıcı Seçeneklerini Ayarlama
 Bağlayıcı seçenekleri içinde veya geliştirme ortamı dışındaki ayarlayabilirsiniz. Her bağlayıcı seçeneği konuda geliştirme ortamında nasıl ayarlanabilir anlatılmaktadır. Bkz: [bağlayıcı seçenekleri](../../build/reference/linker-options.md) tam listesi için.  

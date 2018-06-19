@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32413251"
 ---
 # <a name="classes-and-structs-c"></a>Sınıflar ve Yapılar (C++)
 Bu bölüm, C++ sınıfları ve yapıları tanıtır. Sınıflarda varsayılan özel iken yapılar için varsayılan erişilebilirlik ortak olması dışında iki yapıları C++ ile aynıdır.  

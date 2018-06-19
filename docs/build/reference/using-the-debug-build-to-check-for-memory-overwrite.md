@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32376699"
 ---
 # <a name="using-the-debug-build-to-check-for-memory-overwrite"></a>Belleğin Üzerine Yazma Denetimi için Hata Ayıklama Derlemesini Kullanma
 Belleğin üzerine yazma için denetlemek için hata ayıklama derlemesi kullanmak için ilk projeniz hata ayıklama için yeniden oluşturmanız gerekir. Ardından, uygulamanızın çok başlangıcına Git `InitInstance` işlev ve aşağıdaki satırı ekleyin:  

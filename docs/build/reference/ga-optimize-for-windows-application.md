@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32374264"
 ---
 # <a name="ga-optimize-for-windows-application"></a>/GA (Windows Uygulaması için İyileştir)
 İş parçacığı yerel depolaması (TLS) değişkenleri erişmek için bir .exe dosyası için daha verimli kodu sonuçlanır.  

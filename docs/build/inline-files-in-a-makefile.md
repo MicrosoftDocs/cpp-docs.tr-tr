@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368128"
 ---
 # <a name="inline-files-in-a-makefile"></a>Derleme Görevleri Dosyasındaki Satır İçi Dosyalar
 Satır içi dosya metni makefile belirttiğiniz içerir. İşletim sistemine komutları geçirebilir veya adını (örneğin, bir bağlantı komut dosyası) giriş olarak komutlarda kullanılabilir. Dosyayı oluşturan bir komut çalıştırdığınızda dosyanın disk üzerinde oluşturulur.  

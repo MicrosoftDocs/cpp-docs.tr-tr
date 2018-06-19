@@ -29,6 +29,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32374833"
 ---
 # <a name="link-input-files"></a>LINK Giriş Dosyaları
 Bağlayıcı nesneleri, içeri aktarma ve standart kitaplıkları, kaynaklar, modül tanımları ve giriş komut içeren dosyaları belirtin. BAĞLANTI dosyasının içeriği hakkında varsayımlarda için dosya uzantılarını kullanmaz. Bunun yerine, bağlantı olmasından dosya türlerini belirlemek için her giriş dosyası inceler.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32376445"
 ---
 # <a name="gw-optimize-global-data"></a>/Gw (Genel Verileri En İyileştir)
 En iyi duruma getirme için comdat'ı bölümleri genel veri paketi.  

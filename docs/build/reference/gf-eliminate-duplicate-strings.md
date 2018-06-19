@@ -29,6 +29,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375899"
 ---
 # <a name="gf-eliminate-duplicate-strings"></a>/GF (Yinelenen Dizeleri Ele)
 Yürütme sırasında program görüntü ve bellek aynı dize tek bir kopyasını oluşturmak derleyici sağlar. Adlı bir iyileştirme budur *dize havuzu* küçük programlar oluşturabilir.  

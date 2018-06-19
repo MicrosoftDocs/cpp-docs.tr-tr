@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32373146"
 ---
 # <a name="f-set-stack-size"></a>/F (Yığın Boyutunu Ayarla)
 Program yığın boyutunu bayt cinsinden ayarlar.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32378603"
 ---
 # <a name="using-an-import-library-and-export-file"></a>İçeri Aktarma Kitaplığını ve Dışarı Aktarma Dosyasını Kullanma
 Bir program, ayrıca alır başka bir programa (yürütülebilir bir dosyanın veya bir DLL) verir veya ikiden fazla programlar hem vermek ve birbirlerinden alırsanız, bu programlar bağlamak için komutları dairesel dışarı aktarmalar uyum gerekir.  

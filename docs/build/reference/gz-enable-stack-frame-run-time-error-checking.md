@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32373559"
 ---
 # <a name="gz-enable-stack-frame-run-time-error-checking"></a>/GZ (Yığın Çerçevesi Çalışma Zamanı Hata Denetimini Etkinleştir)
 Aynı işlemleri gerçekleştirir [eş yordamlarla/RTC (çalışma zamanı hata denetler)](../../build/reference/rtc-run-time-error-checks.md) seçeneği. Kullanım dışı.  

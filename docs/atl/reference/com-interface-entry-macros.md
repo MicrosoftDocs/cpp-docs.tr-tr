@@ -33,6 +33,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366594"
 ---
 # <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY makroları  
  Tarafından erişilebilecek şekilde bu makroları nesnenin arabirimleri, COM eşlemeye girin `QueryInterface`. Bir eşleştirme için sipariş arabirimleri denetlenecektir COM eşlemesi girişlerinde sırasıdır **IID** sırasında `QueryInterface`.  

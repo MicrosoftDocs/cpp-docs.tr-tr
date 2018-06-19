@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32373848"
 ---
 # <a name="nologo-suppress-startup-banner-cc"></a>/nologo (Başlangıç Başlığını Gösterme) (C/C++)
 Telif hakkı başlığını derleyici başladığında görünümünü ve bilgilendirici iletileri görüntülemeyi derleme sırasında gizler.  

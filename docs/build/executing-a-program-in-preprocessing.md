@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367205"
 ---
 # <a name="executing-a-program-in-preprocessing"></a>Programı Önişlemde Yürütme
 Ön işleme sırasında bir komutunun çıkış kodu kullanmak için köşeli parantez ([]) içindeki tüm bağımsız değişkenler ile komutu belirtin. Komut yürütülmeden önce makroların genişletilir. NMAKE komutu belirtimi ön işleme denetlemek için bir ifadede kullanılan komutunun çıkış kodu ile yerini alır.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375668"
 ---
 # <a name="specifying-the-pathname"></a>Yol Adını Belirtme
 Çıktı dosyası seçeneğin kabul eden bir *pathname* bir konum ve çıktı dosyası için bir ad belirtebilirsiniz bağımsız değişkeni. Bağımsız değişkeni bir sürücü adı, dizin ve dosya adı içerebilir. Seçenek ve bağımsız değişken arasında boşluk bulunmamalıdır.  

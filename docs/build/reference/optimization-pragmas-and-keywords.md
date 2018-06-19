@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32374758"
 ---
 # <a name="optimization-pragmas-and-keywords"></a>Pragmaları ve Anahtar Sözcükleri İyileştirme
 Birkaç anahtar sözcükleri ve C veya C++ kodunuzda kullanabilirsiniz pragmaları iyileştirme etkiler:  

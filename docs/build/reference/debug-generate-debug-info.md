@@ -31,6 +31,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375733"
 ---
 # <a name="debug-generate-debug-info"></a>/DEBUG (Hata Ayıklama Bilgileri Üret)
 ```  

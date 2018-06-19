@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357222"
 ---
 # <a name="iunknown-implementation-classes"></a>IUnknown uygulaması sınıfları
 Aşağıdaki sınıflar uygulama **IUnknown** ve ilgili yöntemler:  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375083"
 ---
 # <a name="y--ignore-precompiled-header-options"></a>/Y (Önceden Derlenmiş Üst Bilgi Seçeneklerini Yoksay)
 Neden tüm diğer `/Y` derleyici yok sayılacak seçenekleri (ve kendisini kılınamaz).  

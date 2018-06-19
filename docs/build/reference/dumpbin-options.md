@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32374901"
 ---
 # <a name="dumpbin-options"></a>DUMPBIN Seçenekleri
 İsteğe bağlı bir tire (-) ya da seçenek adında eğik çizgi (/), bir seçenek belirticisi oluşur. Seçenek adları kısaltılmış olamaz. Bazı seçenekler iki nokta (:) sonra belirtilen bir bağımsız değişken, alın. Hiçbir boşluk ya da sekme bir seçenek belirtimi içinde izin verilir. Komut satırı seçeneği belirtimlere ayırmak için bir veya daha fazla boşluk ya da sekme kullanın. Seçenek adlarının ve kendi anahtar sözcüğü veya dosya adı bağımsız değişkeni büyük küçük harfe duyarlı değildir. Çoğu seçenekler tüm ikili dosyaları için geçerlidir; birkaç yalnızca çok belirli dosya türlerini uygulayın. Varsayılan olarak, DUMPBIN standart çıktıya bilgileri gönderir. Kullanım [/OUT](../../build/reference/out-dumpbin.md) çıktıyı bir dosyaya göndermek için seçeneği.  

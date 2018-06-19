@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32376143"
 ---
 # <a name="why-floating-point-numbers-may-lose-precision"></a>Kayan Noktalı Sayıların Neden Duyarlık Kaybedebileceği
 Kayan noktalı ondalık değer tam bir ikili temsili genellikle gerekmez. Bir yan etkisi, CPU kayan nokta verisi nasıl temsil ettiğini budur. Bu nedenle, bazı duyarlık kaybına karşılaşabilirsiniz ve bazı kayan nokta işlemleri beklenmeyen sonuçlara neden olabilir.  

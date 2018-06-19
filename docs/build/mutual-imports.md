@@ -29,6 +29,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32377763"
 ---
 # <a name="mutual-imports"></a>Karşılıklı İçeri Aktarmalar
 Aktarımlar karşılıklı (veya döngüsel) olduğunda veya başka bir yürütülebilir dosyaya verme zorluklar gösterir. Örneğin, iki DLL simgeleri birbirinden, karşılıklı özyinelemeli işlevler için benzer içeri aktarın.  

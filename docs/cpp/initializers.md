@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32424312"
 ---
 # <a name="initializers"></a>Başlatıcılar
 Bir başlatıcı bir değişkenin başlangıç değerini belirtir. Değişkenleri şu bağlamlarda başlatabilirsiniz:  

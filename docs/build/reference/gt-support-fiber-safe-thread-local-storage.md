@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32373835"
 ---
 # <a name="gt-support-fiber-safe-thread-local-storage"></a>/GT (Fiber-Güvenli İş Parçacığı-Yerel Depolamayı Destekle)
 Statik iş parçacığı yerel depolama, diğer bir deyişle, ile ayrılmış veri kullanılarak ayrılmış veriler için Fiber güvenliği destekleyen `__declspec(thread)`.  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32376565"
 ---
 # <a name="using-verify-instead-of-assert"></a>ASSERT Yerine VERIFY Kullanma
 Hata ayıklama sürümü, MFC Uygulama çalıştırdığınızda, olduğunu herhangi bir sorun varsayalım. Ancak, aynı uygulama sürümünü kilitlenmeler, hatalı sonuçlar döndürür ve/veya başka bir anormal davranışı sergiler.  

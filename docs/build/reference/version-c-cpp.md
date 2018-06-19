@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375028"
 ---
 # <a name="version-cc"></a>VERSION (C/C++)
 DLL veya bir sayı .exe dosyası başlığına yerleştirin Bağla söyler.  

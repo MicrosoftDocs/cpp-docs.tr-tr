@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32376832"
 ---
 # <a name="exports"></a>EXPORTS
 Dışarı aktarılan adlarını belirtin bir veya daha fazla verme tanımları bir bölümünü veya sıra numaraları işlevleri ya da veri sunar. Her tanım ayrı bir satırda olmalıdır.  

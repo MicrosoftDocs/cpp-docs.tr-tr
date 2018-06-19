@@ -29,6 +29,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375629"
 ---
 # <a name="fd-program-database-file-name"></a>/Fd (Program Veritabanı Dosya Adı)
 Tarafından oluşturulan program veritabanı (PDB) dosyası için bir dosya adı belirtir [/Z7, / zi, /zı (hata ayıklama bilgileri biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md).  

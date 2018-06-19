@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32373822"
 ---
 # <a name="value-edit-control"></a>Değer Düzenleme Denetimi
 Denetimi kullanmak için bir değer girin, panodan yapıştırın veya sürükleyip bu düzenleme denetimi ayıklayıcıya gelen bırakın. Onaltılık veya ondalık biçiminde değeri girin ve ardından **Ara**. Onaltılık değerler 0 x gelmelidir; Geçerli karakterlerdir 0-9, A-F ve a-f. Ondalık değer eksi işareti (-); öncesinde Geçerli karakterler 0-9 olur.  

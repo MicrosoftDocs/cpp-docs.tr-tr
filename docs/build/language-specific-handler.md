@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368804"
 ---
 # <a name="language-specific-handler"></a>Dile Özel İşleyici
 UNW_FLAG_EHANDLER veya UNW_FLAG_UHANDLER bayrakları ayarlamak her dile özel işleyici göreli adresini UNWIND_INFO öğesinde mevcuttur. Önceki bölümde açıklandığı gibi dile özel işleyici araması bir özel durum işleyici için bir parçası olarak veya bırakmayla bir parçası olarak adlandırılır. Aşağıdaki prototipe sahiptir:  

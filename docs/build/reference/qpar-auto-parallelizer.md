@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375694"
 ---
 # <a name="qpar-auto-parallelizer"></a>/Qpar (Otomatik Paralel Hale Getirici)
 Etkinleştirir [otomatik paralel hale getirici](../../parallel/auto-parallelization-and-auto-vectorization.md) otomatik olarak kodunuzda döngüler paralel hale derleyici özelliğidir.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32374180"
 ---
 # <a name="explicitly-unloading-a-delay-loaded-dll"></a>Gecikmeli Yüklenen DLL'i Açıkça Kaldırma
 [/Delay](../../build/reference/delay-delay-load-import-settings.md): unload bağlayıcı seçeneği gecikme yüklü olduğu bir DLL dosyası olanak tanır. Varsayılan olarak, kodunuzu DLL bellekten kaldırıldığında, (/ DELAY: Unload kullanarak ve **__FUnloadDelayLoadedDLL2**), alma adresi tablosunda (IAT) Gecikmeli yüklenen içeri aktarmalar kalır. Ancak, / DELAY: Unload bağlayıcı komut satırında kullanırsanız, yardımcı işlevini IAT özgün formuna sıfırlama DLL açık kaldırılması destekler; Şimdi geçersiz işaretçileri üzerine yazılır. Bir alandır IAT [ImgDelayDescr](../../build/reference/calling-conventions-parameters-and-return-type.md) içeren bir kopyasını özgün IAT adresini (varsa).  

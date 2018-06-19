@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32376227"
 ---
 # <a name="favor-optimize-for-architecture-specifics"></a>/favor (Mimari Özellikleri için İyileştirme)
 **/ favor:** `option` belirli bir mimari için veya AMD ve Intel mimarileri mikro mimari özellikleri için iyileştirilmiş kod oluşturur.  

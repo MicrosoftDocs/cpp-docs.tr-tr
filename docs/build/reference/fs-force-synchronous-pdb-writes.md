@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32374797"
 ---
 # <a name="fs-force-synchronous-pdb-writes"></a>/FS (Zaman Uyumlu PDB Yazmalarını Zorla)
 Zorlar program veritabanı (PDB) dosyasına yazar — tarafından oluşturulan [/zı](../../build/reference/z7-zi-zi-debug-information-format.md) veya [/zı](../../build/reference/z7-zi-zi-debug-information-format.md)— MSPDBSRV serileştirilmesi için. EXE.  

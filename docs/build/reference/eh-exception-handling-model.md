@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32379113"
 ---
 # <a name="eh-exception-handling-model"></a>/EH (Özel Durum İşleme Modeli)
 Özel durum işleme koyma özel durumu iyileştirmek için denetlediğinde derleyici ve mi kapsamının dışında bir özel durum nedeniyle Git C++ nesneleri yok etme tarafından kullanılan türünü belirtir. Varsa **/EH** belirtilmezse, derleyici, yapılandırılmış zaman uyumsuz özel durumları ve C++ özel durumlarını yakalar ancak kapsamının dışında bir zaman uyumsuz özel durum nedeniyle Git C++ nesneleri silmiyor.  

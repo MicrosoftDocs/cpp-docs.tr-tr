@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375603"
 ---
 # <a name="winmdfile-specify-winmd-file"></a>/WINMDFILE (winmd Dosyası Belirtin)
 Tarafından oluşturulan Windows çalışma zamanı meta verileri (.winmd) çıktı dosyası için dosya adını belirten [/WINMD](../../build/reference/winmd-generate-windows-metadata.md) bağlayıcı seçeneği.  

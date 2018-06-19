@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32377938"
 ---
 # <a name="working-with-import-libraries-and-export-files"></a>İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma
 / DEF seçeneği ile LIB içeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturmak için kullanabilirsiniz. Dışarı aktarma dosyasını içeren bir program oluşturmak için bağlantı kullanır (genellikle bir dinamik bağlantı kitaplığı (DLL)) dışa aktarır ve diğer programlarla bu dışarı başvuruları çözümlemek için içeri aktarma kitaplığını kullanır.  

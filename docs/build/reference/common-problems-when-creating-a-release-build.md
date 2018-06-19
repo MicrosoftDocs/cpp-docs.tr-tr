@@ -33,6 +33,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32373172"
 ---
 # <a name="common-problems-when-creating-a-release-build"></a>Yayın Derlemesi Oluşturmadaki Genel Sorunlar
 Geliştirme sırasında genellikle derleme ve projenizin hata ayıklama derlemesi ile test. Ardından, uygulamanız yayın derlemesi için yapılandırdıysanız, bir erişim ihlali alabilirsiniz.  

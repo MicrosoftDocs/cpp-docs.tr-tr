@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32374732"
 ---
 # <a name="module-definition-def-files"></a>Modül-Tanımlama (.Def) Dosyaları
 Modül-tanımlama (.def) dosyaları bağlayıcı dışarı aktarma, öznitelikler ve diğer bilgileri bağlanması programı hakkında bilgiler sağlar. .Def dosyası DLL oluştururken kullanışlıdır. Olduğundan [bağlayıcı seçenekleri](../../build/reference/linker-options.md) kullanılabilecek modül tanımlama deyimleri yerine .def dosyaları genellikle gerekli değildir. Aynı zamanda [__declspec(dllexport)](../../build/exporting-from-a-dll-using-declspec-dllexport.md) belirtmek için bir yol işlevleri verdi.  

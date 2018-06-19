@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367530"
 ---
 # <a name="dependency-side-effects"></a>Bağımlılık Yan Etkileri
 Bir hedef farklı konumlarda iki bağımlılık satırlardaki iki nokta (:) ile belirtilirse ve komut satırları yalnızca biri sonra görünüyorsa NMAKE bağımlılıkları bitişik veya birleştirilmiş gibi yorumlar. Çıkarım kuralı, hiçbir komut var, ancak bunun yerine bağımlılıklar için bir açıklama blok ait ve bir bağımlılık içeren belirtilen komutları yürütür varsayar bağımlılığı çağrılmaz. Örneğin, bu kuralları ayarlayın:  

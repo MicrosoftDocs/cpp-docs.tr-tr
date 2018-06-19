@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32374576"
 ---
 # <a name="gm-enable-minimal-rebuild"></a>/Gm (En Az Yeniden Derlemeyi Etkinleştir)
 Değiştirilen C++ sınıf tanımları (Üstbilgi (.h) dosyalarında depolanır) dahil C++ kaynak dosyaları derlenmesi gerekip gerekmediğini belirler en az yeniden derleme sağlar.  

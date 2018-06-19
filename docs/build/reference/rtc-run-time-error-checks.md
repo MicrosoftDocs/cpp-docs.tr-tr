@@ -40,6 +40,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32378463"
 ---
 # <a name="rtc-run-time-error-checks"></a>/RTC (Çalışma Zamanı Hata Denetimleri)
 Etkinleştirmek ve çalışma zamanı hata denetimleri özelliği ile birlikte devre dışı bırakmak için kullanılan [runtime_checks](../../preprocessor/runtime-checks.md) pragması.  

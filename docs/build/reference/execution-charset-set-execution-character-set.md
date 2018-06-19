@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375958"
 ---
 # <a name="execution-charset-set-execution-character-set"></a>/Execution-Charset (ayarlamak yürütme karakter kümesi)
 Yürütme karakter kümesi için yürütülebilir belirtmenize olanak sağlar.  

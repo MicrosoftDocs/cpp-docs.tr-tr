@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32377189"
 ---
 # <a name="vmb-vmg-representation-method"></a>/vmb, /vmg (Temsil Yöntemi)
 Derleyici sınıfı üyeleri işaretçileri göstermek için kullandığı yöntemi seçin.  

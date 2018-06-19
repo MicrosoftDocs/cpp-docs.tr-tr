@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32374014"
 ---
 # <a name="fo-object-file-name"></a>/Fo (Nesne Dosya Adı)
 Bir nesne (.obj) dosya adı veya varsayılan yerine kullanılacak dizini belirtir.  

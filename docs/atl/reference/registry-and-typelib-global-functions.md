@@ -32,6 +32,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32365513"
 ---
 # <a name="registry-and-typelib-global-functions"></a>Kayıt defteri ve TypeLib genel işlevler
 Bu işlevler yükleme ve bir tür kitaplığı kaydı için destek sağlar.  

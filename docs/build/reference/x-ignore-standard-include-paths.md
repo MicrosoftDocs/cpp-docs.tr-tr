@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32376474"
 ---
 # <a name="x-ignore-standard-include-paths"></a>/X (Standart Yol Eklemeyi Yoksay)
 Belirtilen yol ve INCLUDE ortam değişkenleri dizinlerdeki içerme dosyaları için arama derleyici engeller.  

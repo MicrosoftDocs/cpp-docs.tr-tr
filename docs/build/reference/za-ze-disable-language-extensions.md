@@ -33,6 +33,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32378151"
 ---
 # <a name="za-ze-disable-language-extensions"></a>/Za, /Ze (Dil Uzantılarını Devre Dışı Bırak)
 **/Za** derleyici seçeneği ANSI C89 veya ISO C ++ 11 ile uyumlu olmayan dil yapıları için bir hata gösterir. **/Ze** varsayılan olarak etkindir, derleyici seçeneği Microsoft uzantıları sağlar.  

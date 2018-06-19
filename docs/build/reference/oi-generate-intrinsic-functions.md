@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375847"
 ---
 # <a name="oi-generate-intrinsic-functions"></a>/Oi (İç İşlevler Üret)
 Uygulamanızı yardımcı iç veya aksi halde özel formlarla işlevinin bazı işlevi çağırır değiştirir daha hızlı çalışır.  

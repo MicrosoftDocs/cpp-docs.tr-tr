@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391671"
 ---
 # <a name="interpreting-more-complex-declarators"></a>Daha Karmaşık Bildirimcileri Yorumlama
 Tüm bildirimcisi bir "karmaşık bildirimcisi." belirli yorumu belirtmek için parantez içine alın Karmaşık bildirimcisi birden fazla dizi, işaretçi veya işlevi belirleyici tam bir tanımlayıcıdır. Dizi, işaretçi ve işlev değiştiricileri çeşitli tek bir tanımlayıcı uygulayabilirsiniz. Genellikle `typedef` bildirimleri basitleştirmek için kullanılabilir. Bkz: [Typedef bildirimleri](../c-language/typedef-declarations.md).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375590"
 ---
 # <a name="linker-support-for-delay-loaded-dlls"></a>Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği
 Visual C++ bağlayıcı artık DLL'leri Gecikmeli yüklenmesini destekler. Bu gereksinim Windows SDK işlevleri kullanmak için hafifletir **LoadLibrary** ve **GetProcAddress** Gecikmeli yüklemesi DLL uygulamak için.  

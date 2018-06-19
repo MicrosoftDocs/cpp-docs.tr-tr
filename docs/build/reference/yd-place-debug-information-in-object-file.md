@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32378239"
 ---
 # <a name="yd-place-debug-information-in-object-file"></a>/Yd (Hata Ayıklama Bilgilerini Nesne Dosyasına Yerleştir)
 Hata ayıklama bilgisi tüm nesne dosyalarında tam meleri boşluk oluşturulan kullanıldığında önceden derlenmiş üst bilgi (.pch) dosyasından [/Yc](../../build/reference/yc-create-precompiled-header-file.md) ve [/Z7](../../build/reference/z7-zi-zi-debug-information-format.md) seçenekleri. Kullanım dışı.  

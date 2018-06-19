@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32378723"
 ---
 # <a name="yu-use-precompiled-header-file"></a>/Yu (Önceden Derlenmiş Üst Bilgi Dosyasını Kullanma)
 Geçerli derlemedeki varolan önceden derlenmiş üst bilgi (.pch) dosyasını kullanmak için derleyicisi bildirir.  
