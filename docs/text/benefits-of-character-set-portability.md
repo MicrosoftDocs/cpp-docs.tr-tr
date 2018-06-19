@@ -20,6 +20,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33853823"
 ---
 # <a name="benefits-of-character-set-portability"></a>Karakter Kümesi Taşınabilirliğinin Yararları
 Şu anda uygulamanızı amaçlamasanız istemediğiniz olsa bile MFC ve C çalışma zamanı taşınabilirlik özellikleri kullanarak yararlı olabilir:  

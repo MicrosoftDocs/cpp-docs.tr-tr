@@ -36,6 +36,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33846655"
 ---
 # <a name="if-elif-else-and-endif-directives-cc"></a>#if, #elif, #else ve #endif Yönergeleri (C/C++)
 `#if` İle yönerge `#elif`, `#else`, ve `#endif` yönergeleri, denetimleri derleme kaynak dosyası kısımlarının. İfade yazma (sonra `#if`) hemen ardından satır grubu sıfır olmayan bir değere sahip `#if` yönergesi çevirisi biriminde tutulur.  

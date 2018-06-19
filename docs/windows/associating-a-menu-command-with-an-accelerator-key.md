@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33858094"
 ---
 # <a name="associating-a-menu-command-with-an-accelerator-key"></a>Menü Komutunu Hızlandırıcı Tuşuyla İlişkilendirme
 Çoğunlukla menü komutu ve tuş bileşimini aynı program komutu vermek istediğiniz saatleri vardır. Bunun için aynı kaynak tanımlayıcısı menü komutu ve uygulamanızın Hızlandırıcı tablosunda bir giriş atamak için menü Düzenleyicisi'ni kullanarak. Daha sonra Düzenle [resim yazısı](../windows/menu-command-properties.md) Hızlandırıcı anahtarın adını göstermek için menü komutu.  
