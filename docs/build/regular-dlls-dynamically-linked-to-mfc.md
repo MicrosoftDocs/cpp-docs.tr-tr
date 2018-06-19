@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383740"
 ---
 # <a name="regular-mfc-dlls-dynamically-linked-to-mfc"></a>Dinamik olarak MFC'ye bağlı normal MFC DLL'leri
 MFC DLL dinamik olarak MFC'ye bağlı normal MFC'yi dahili olarak kullanan DLL'dir ve MFC veya MFC dışı çalıştırılabilirler tarafından DLL dışarı aktarılan işlevler çağrılabilir. Adı açıklandığı gibi bu tür DLL MFC (olarak da bilinen MFC paylaşılan sürüm) dinamik bağlantı kitaplığı sürümü kullanılarak oluşturulmuştur. İşlevler, genellikle bir normal standart C arabirimi kullanan MFC DLL dışarı aktarılır.  

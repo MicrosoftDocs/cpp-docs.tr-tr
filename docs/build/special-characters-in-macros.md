@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380179"
 ---
 # <a name="special-characters-in-macros"></a>Makrolardaki Özel Karakterler
 Bir sayı (#) oturum sonra bir tanımı bir açıklama belirtir. Değişmez değer bir sayı işareti makro belirtmek için de bir şapka (^) kullanın ^ #.  

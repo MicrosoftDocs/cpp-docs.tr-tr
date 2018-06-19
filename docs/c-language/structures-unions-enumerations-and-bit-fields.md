@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32384724"
 ---
 # <a name="structures-unions-enumerations-and-bit-fields"></a>Yapılar, Birleşimler, Numaralandırmalar ve Bit Alanları
 -   [Birleşime Düzgün Olmayan Erişim](../c-language/improper-access-to-a-union.md)  

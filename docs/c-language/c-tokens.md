@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381713"
 ---
 # <a name="c-tokens"></a>C Belirteçleri
 C kaynak programında, derleyici tarafından tanınan temel öğe "belirteçtir". Belirteç, derleyicinin bileşen öğelerine ayırmadığı bir kaynak programı metnidir.  

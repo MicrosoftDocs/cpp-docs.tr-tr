@@ -29,6 +29,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32354713"
 ---
 # <a name="memory-management-with-cstringt"></a>CStringT ile bellek yönetimi
 Sınıf [CStringT](../atl-mfc-shared/reference/cstringt-class.md) değişken uzunlukta karakter dizeleri işlemek için kullanılan bir şablon sınıftır. Bu dizeler tutmak için bellek tahsis ve her örneği ile ilişkili bir dize Yöneticisi nesnesi aracılığıyla serbest `CStringT`. MFC ve ATL sağlamak varsayılan işlemlerinden `CStringT`adlı `CString`, `CStringA`, ve `CStringW`, farklı karakter türleri dizeleri işlemek. Bu karakter türlerini türlerinin **TCHAR**, `char`, ve `wchar_t`sırasıyla. Bu varsayılan dize türleri işlem yığınında (ATL) veya CRT yığınında (MFC) bellek ayırır bir dize Yöneticisi'ni kullanın. Tipik uygulamalar için bu bellek ayırma şeması yeterli olur. Ancak, yoğun yapmadan kodunu dizeleri (veya birden çok iş parçacıklı kodu) varsayılan bellek yöneticilerini en iyi şekilde çalışmayabilir kullanın. Bu konu, varsayılan bellek yönetimi davranışını geçersiz kılmak açıklar `CStringT`, elinizdeki için iyileştirilmiş allocators özellikle oluşturma.  

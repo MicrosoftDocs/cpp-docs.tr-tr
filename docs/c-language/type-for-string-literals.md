@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386777"
 ---
 # <a name="type-for-string-literals"></a>Dize Sabit Değerleri Türü
 Dize değişmez değerleri sahip türü dizisi `char` (diğer bir deyişle, **char []**). (Geniş karakter dizeleri olan türü dizisi `wchar_t` (diğer bir deyişle, **wchar_t []**).) Bu bir dize dizisi türündeki öğeler ile anlamına gelir `char`. Dizideki öğeler yanı sıra bir sonlandırma null karakter dizesi eşit karakter sayısını sayısıdır.  

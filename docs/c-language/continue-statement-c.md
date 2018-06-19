@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383556"
 ---
 # <a name="continue-statement-c"></a>continue Deyimi (C)
 `continue` Deyimi en yakın kapsayan, sonraki yinelemeye denetim geçirir `do`, `for`, veya `while` göründüğü, kalan tüm deyimlerinde atlayarak deyimi `do`, `for`, veya `while` deyimi gövdesi.  

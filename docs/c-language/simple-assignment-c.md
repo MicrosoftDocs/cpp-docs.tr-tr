@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385175"
 ---
 # <a name="simple-assignment-c"></a>Basit Atama (C)
 Basit atama işlecinin sağ işleneni, sol işleneni atar. Sağ işleneni değerini atama ifadesi türüne dönüştürüldü ve sol işleneni tarafından belirlenen nesnesinde depolanan değerle değiştirir. Atama dönüştürme kurallarını uygulayın (bkz [atama dönüşümleri](../c-language/assignment-conversions.md)).  

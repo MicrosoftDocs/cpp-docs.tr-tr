@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32379724"
 ---
 # <a name="zl-omit-default-library-name"></a>/Zl (Varsayılan Kitaplık Adını Atla)
 Varsayılan C çalışma zamanı kitaplığı adı .obj dosyasından atlar. Varsayılan olarak, derleyici kitaplığının adı doğru kitaplık bağlayıcıya yönlendirmek için .obj dosyasına yerleştirir.  

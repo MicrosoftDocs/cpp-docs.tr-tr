@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383949"
 ---
 # <a name="registers-availability-of-registers"></a>Yazmaçlar: Yazmaçların Kullanılabilirliği
 **ANSI 3.5.1** olduğu nesneleri gerçekten yerleştirilebilen yazmaçları tarafından register depolama sınıfı tanımlayıcısı kullanımını kapsamı  

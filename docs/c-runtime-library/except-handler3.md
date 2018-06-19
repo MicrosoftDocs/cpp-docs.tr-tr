@@ -34,6 +34,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32389413"
 ---
 # <a name="excepthandler3"></a>_except_handler3
 İç CRT işlevi. Geçerli özel durumu işlemek için uygun özel durum işleyicisi bulmak için bir framework tarafından kullanıldı.  

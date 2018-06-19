@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32379386"
 ---
 # <a name="decorated-names"></a>Düzenlenmiş Adlar
 İşlevler, veri ve nesneleri C ve C++ programlarında dahili olarak düzenlenmiş adlarıyla temsil edilir. A *adı donatılmış* derleyici tarafından oluşturulan bir nesne, veri veya işlev tanımı derleme sırasında kodlanmış bir dize. Çağırma kuralları, türleri, işlev parametrelerini ve diğer bilgi adı ile birlikte kaydeder. Olarak da bilinen bu ad düzenlemesi *ad bozma*nesnelerde yürütülebilir bir dosya bağlarken ve doğru işlevlerin bulunacağı bağlayıcı yardımcı olur.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380556"
 ---
 # <a name="toolsini-and-nmake"></a>Tools.ini ve NMAKE
 Derleme görevleri dosyaları, okumadan önce /R kullanılmadığı sürece NMAKE Tools.ini okur. Tools.ini için önce geçerli dizin ve ardından INIT ortam değişkeni tarafından belirtilen dizin görünüyor. NMAKE ayarları başlatma dosyasındaki bölüm ile başlayan `[NMAKE]` ve herhangi bir derleme görevleri dosyası bilgi içerebilir. Sayı işareti ile ayrı satırda başlayan bir açıklama belirtin (#).  

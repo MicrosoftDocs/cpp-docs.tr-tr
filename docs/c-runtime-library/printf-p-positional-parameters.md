@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391320"
 ---
 # <a name="printfp-positional-parameters"></a>printf_p Konumsal Parametreler
 Konumsal parametreler olan bağımsız değişkenlerin bir biçim dizesi alanına atanması numarasına göre belirtme olanağı sağlar. Aşağıdaki konumsal parametresini `printf` işlevleri kullanılabilir:  

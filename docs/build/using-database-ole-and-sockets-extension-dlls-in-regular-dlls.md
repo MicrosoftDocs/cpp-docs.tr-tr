@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391411"
 ---
 # <a name="using-database-ole-and-sockets-mfc-extension-dlls-in-regular-mfc-dlls"></a>Normal MFC DLL'lerde veritabanı, OLE ve yuva MFC uzantı DLL'leri kullanma
 MFC uzantı DLL içine bağlı değilse, MFC uzantı DLL normal bir MFC DLL dosyasından kullanırken **CDynLinkLibrary** nesne zinciri Normal MFC DLL bir veya daha fazla ilgili sorunların bir dizi çalışabilir. MFC veritabanı, OLE ve yuva hata ayıklama sürümleri desteklemediğinden DLL'leri MFC uzantı DLL'leri uygulanan, açıkça kendi MFC uzantı DLL'leri hiçbirini kullanmadığınız olsa bile bu MFC kullanıyorsanız benzer sorunlar özelliklerini görebilirsiniz. Bazı Belirtiler şunlardır:  

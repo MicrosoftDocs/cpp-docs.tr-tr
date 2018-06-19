@@ -41,6 +41,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391541"
 ---
 # <a name="obsolete-functions"></a>Artık kullanılmayan işlevleri
 Belirli kitaplık işlevleri geçersizdir ve daha yeni eşdeğerleri. Bu güncelleştirilmiş sürümleri için değiştirme öneririz. Artık kullanılmayan diğer işlevleri CRT kaldırıldı. Bu konu, kullanılmayan olarak kullanım dışı işlevler ve belirli bir Visual Studio sürümünde kaldırılmıştır işlevleri listeler.  

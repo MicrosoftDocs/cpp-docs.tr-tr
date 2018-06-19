@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380021"
 ---
 # <a name="special-nmake-macros"></a>Özel NMAKE Makroları
 NMAKE çeşitli dosya adları ve komutları temsil etmek için çeşitli özel makrolar sağlar. Bir bu makroları bazıları için önceden tanımlanmış çıkarım kurallarındaki kullanılır. Tüm makrolar gibi NMAKE tarafından sağlanan makroları büyük/küçük harfe duyarlıdır.  

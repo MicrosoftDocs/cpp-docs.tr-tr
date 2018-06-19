@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386530"
 ---
 # <a name="renaming-with-a-name-that-exists"></a>Varolan Adla Yeniden Adlandırma
 **ANSI 4.9.4.2** Yeni adla bir dosya için bir çağrı önce varsa etkisi **yeniden adlandırma** işlevi  

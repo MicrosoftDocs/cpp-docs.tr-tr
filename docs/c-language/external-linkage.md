@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383208"
 ---
 # <a name="external-linkage"></a>Dış Bağlantı
 İlk bildirim dosyası kapsam düzeyinde bir tanımlayıcı için kullanmıyorsa **statik** depolama sınıfı tanımlayıcısı, nesne dış bağlantı vardır.  

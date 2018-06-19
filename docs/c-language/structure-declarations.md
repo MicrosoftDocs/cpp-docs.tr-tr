@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391906"
 ---
 # <a name="structure-declarations"></a>Yapı Bildirimleri
 Bir "yapı bildirimi" bir tür adları ve bir dizi farklı olabilir ("üye" veya "alanlar" yapısı denir) değişken değerleri belirtir. Bir "etiketi," isteğe bağlı bir tanımlayıcısından yapısı türünün adı sağlar ve bir yapı türüne sonraki başvurular kullanılabilir. Bu yapı türünde bir değişken, türü tarafından tanımlanan tüm dizisi içerir. C yapılarda diğer dillerde "kayıtlar" olarak bilinen türleri benzerdir.  

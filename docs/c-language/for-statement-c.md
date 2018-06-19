@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32389287"
 ---
 # <a name="for-statement-c"></a>for Deyimi (C)
 **İçin** deyimi bir deyim yineleyin veya belirtilen sayıda bileşik deyim olanak sağlar. Gövdesi bir **için** deyimi, isteğe bağlı bir koşul yanlış olana kadar sıfır veya daha fazla kez yürütüldüğünde. İsteğe bağlı ifade içinde kullanabilir **için** başlatmak ve sırasında değerlerini değiştirmek için deyimi **için** deyiminin yürütme.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32379542"
 ---
 # <a name="sdl-enable-additional-security-checks"></a>/sdl (Ek Güvenlik Denetimlerini Etkinleştir)
 Önerilen güvenlik geliştirme yaşam döngüsü (SDL) denetimler de ekler. Bu denetimler, ek güvenlik ilgili uyarıları hatalar ve ek güvenli kod oluşturma özellikleri olarak içerir.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381193"
 ---
 # <a name="c-language-reference"></a>C Dili Başvurusu
 *C dil başvurusu* C programlama dili Microsoft C. içinde uygulandığı şekilde açıklar Kitaptaki kuruluş standart ANSI C için Microsoft uzantıları ek ortama ile ANSI (bazen C89 adlandırılır) C Standart dayanır.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387040"
 ---
 # <a name="storage-of-string-literals"></a>Dize Değişmez Değerlerini Depolama
 Sabit değerli bir dize karakterlerini sırada bitişik bellek konumlara depolanır. Kaçış dizisi (gibi **\\ \\** veya  **\\"**) dize sabit değeri içinde tek bir karakter olarak sayılır. Bir null karakter (tarafından temsil edilen **\0** kaçış dizisi) otomatik olarak eklenir ve sonuna her dize değişmez değer işaretler. (Bu sistemdeki [çeviri aşaması](../preprocessor/phases-of-translation.md) 7.) Derleyici iki farklı adreslerde iki özdeş dizeleri depolayabilir değil olduğunu unutmayın. [/GF](../build/reference/gf-eliminate-duplicate-strings.md) aynı dize tek bir kopyasını yürütülebilir dosyaya yerleştirmek için derleyici zorlar.  

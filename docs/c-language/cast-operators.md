@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381778"
 ---
 # <a name="cast-operators"></a>Atama İşleçleri
 Bir tür ataması, belirli bir durumda bir nesne türünün açık dönüştürmesine ilişkin bir yöntem sağlar.  

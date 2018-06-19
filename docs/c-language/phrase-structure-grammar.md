@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383712"
 ---
 # <a name="phrase-structure-grammar"></a>Tümcecik Yapısı Dil Bilgisi
 -   [İfadeler](../c-language/summary-of-expressions.md)  

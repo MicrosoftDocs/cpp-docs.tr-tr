@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391213"
 ---
 # <a name="return-statement-c"></a>return Deyimi (C)
 `return` Deyimi bir işlev yürütülmesi sonlandırır ve denetim çağıran işleve geri döndürür. Çağrının hemen ardından noktada arama işlevinde yürütme sürdürür. A `return` deyimi bir değer de çağıran işleve geri dönebilirsiniz. Bkz: [dönüş türü](../c-language/return-type.md) daha fazla bilgi için.  

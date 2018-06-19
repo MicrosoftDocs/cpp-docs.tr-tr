@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391265"
 ---
 # <a name="potential-errors-passing-crt-objects-across-dll-boundaries"></a>CRT Nesnelerini DLL Sınırlarından Geçirirken Olası Hatalar
 C geçirdiğinizde çalışma zamanı (CRT) dosya tanıtıcısı, yerel ve ortam değişkenleri gibi giriş / çıkış (işlev çağrıları DLL sınır arasında), DLL beklenmeyen davranışları DLL'e çağırma dosyaların yanı sıra, DLL farklı kopyalarını kullanırsanız oluşabilir nesneleri CRT kitaplık.  

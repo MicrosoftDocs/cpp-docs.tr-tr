@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383910"
 ---
 # <a name="punctuation-and-special-characters"></a>Noktalama İşaretleri ve Özel Karakterler
 Noktalama işaretleri ve özel karakterler C karakter kümesinde derleyici veya derlenmiş program gerçekleştirdiği görevleri tanımlamak için program metin düzenleme gelen çeşitli kullanımlar vardır. Bir işlemin gerçekleştirilmesi için belirtmeyin. Bazı noktalama ayrıca işleçleri simgelerdir (bkz [işleçleri](../c-language/c-operators.md)). Derleyici kullanımlarını bağlamından belirler.  

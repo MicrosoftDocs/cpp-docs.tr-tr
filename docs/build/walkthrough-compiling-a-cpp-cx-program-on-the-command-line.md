@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32384811"
 ---
 # <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>İzlenecek Yol: Komut Satırında C++/CX Programı Derleme
 Windows çalışma zamanı hedef ve komut satırında derleme Visual C++ programları oluşturabilirsiniz. Visual C++, Visual C++ bileşen uzantıları destekler (C + +/ CX), Windows çalışma zamanı programlama modeli hedeflemek için ek türleri ve işleçler sahiptir. Kullanabileceğiniz C + +/ CX Evrensel Windows Platformu (UWP), Windows Phone 8.1 ve Windows Masaüstü için uygulamalar oluşturmak için. Daha fazla bilgi için bkz: [A Tur, c + +/ CX](http://msdn.microsoft.com/magazine/dn166929.aspx) ve [çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md).  

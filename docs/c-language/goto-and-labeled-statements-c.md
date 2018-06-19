@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386420"
 ---
 # <a name="goto-and-labeled-statements-c"></a>goto ve Etiketli Deyimleri (C)
 `goto` Deyimi bir etiket denetimi aktarır. Belirtilen etiket aynı işlevde bulunmalıdır ve aynı işlevde yalnızca bir deyim önce görünebilir.  

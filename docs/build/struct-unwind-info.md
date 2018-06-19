@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383247"
 ---
 # <a name="struct-unwindinfo"></a>struct UNWIND_INFO
 Bırakma veri bilgisi yapısı yığın işaretçisi ve kalıcı Yazmaçları yığında kaydedildiği bir işleve sahiptir etkileri kaydetmek için kullanılır:  

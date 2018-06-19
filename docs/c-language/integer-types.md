@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386809"
 ---
 # <a name="integer-types"></a>Tam Sayı Türleri
 Her tam sayı sabit değeri ve ifade edilir şekilde dayalı bir tür verilir. Türü için hiçbir tamsayı sabiti zorlayabilirsiniz **uzun** harf ekleyerek **l** veya **L** türü olmasını zorla; sabiti sonuna `unsigned` ekleyerek **u** veya **U** değerine. Küçük harf **l** 1 basamaklı kafası olabilir ve kaçınılmalıdır. Bazı formları **uzun** tamsayı sabitleri izleyin:  

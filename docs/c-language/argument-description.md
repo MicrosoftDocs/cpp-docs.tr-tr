@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385090"
 ---
 # <a name="argument-description"></a>Bağımsız Değişken Tanımı
 `argc` Parametresinde **ana** ve **wmain** işlevleri kaç tane bağımsız değişkenleri komut satırından programa geçirilen belirten bir tamsayı değil. Program adı değerini bağımsız değişken olarak kabul edilir beri `argc` en az biri.  

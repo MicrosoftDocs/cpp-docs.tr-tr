@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387505"
 ---
 # <a name="main-function-and-program-execution"></a>main İşlevi ve Program Yürütme
 Her C programı adlandırılmalıdır birincil bir (ana) işlevi olan **ana**. Unicode programlama modeli kodunuzu aynılarını, joker karakter sürümünü kullanabilirsiniz **ana**, **wmain**. **Ana** programın yürütülmesi için başlangıç noktası işlevi görür. Genellikle çağrıları programdaki diğer işlevlere yönlendirerek program yürütmesini denetler. Bir program genellikle sonunda yürütülmesi durdurulur **ana**, çeşitli nedenlerle için programında diğer noktalarda sonlandırabilir rağmen. Bazen belirli bir hata algılandığında, programı sonlandırılmaya zorlamak isteyebilirsiniz. Bunu yapmak için kullanın **çıkmak** işlevi. Bkz: *çalışma zamanı kitaplığı başvurusu* hakkında bilgi ve bir örnek kullanmak için [çıkmak](../c-runtime-library/reference/exit-exit-exit.md) işlevi.  

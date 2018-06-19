@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381515"
 ---
 # <a name="file-access-limits"></a>Dosya Erişim Sınırları
 **ANSI 4.9.3** aynı dosyayı birden çok kez olup açık olabilir  

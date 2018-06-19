@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32388912"
 ---
 # <a name="one-dimensional-arrays"></a>Bir Boyutlu Diziler
 Köşeli ayraçlar içinde bir ifade arkasından bir sonek ifadesi (**[]**) bir dizi nesnesi bir öğenin alt gösterimidir. Alt simge ifadesi adresini değerinde temsil eden *ifade* ötesinde konumlandırır *sonek ifade* olarak ifade edilen zaman  

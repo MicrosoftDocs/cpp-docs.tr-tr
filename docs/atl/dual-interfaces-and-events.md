@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32354073"
 ---
 # <a name="dual-interfaces-and-events"></a>Çift arabirimler ve olaylar
 Bir olay arabirimi bir çift olarak tasarlamanız mümkün olsa da, pek çok Bunu yapmak için iyi tasarım vardır. Temel nedeni olay kaynağı olay vtable aracılığıyla veya aracılığıyla yalnızca ateşlenir `Invoke`, ikisi birden değil. Olay kaynağı olarak doğrudan vtable yöntem çağrısı, olay gönderir, `IDispatch` yöntemleri hiçbir zaman kullanılacak ve arabirim saf vtable arabirimi olması gereken işaretlenmemiştir. Olay kaynağı için bir çağrı olarak olay gönderir, `Invoke`vtable yöntemleri hiç kullanılmadı ve bu Temizle arabirimi bir görüntüleme arabirimi verilmiş olması. Olay arabirimlerinizi duals tanımlarsanız, hiçbir zaman kullanılacak bir arabirim parçası uygulamak istemcileri gerektiren.  

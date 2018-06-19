@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32388821"
 ---
 # <a name="controlling-streams"></a>Akışları Denetleme
 [fopen](../c-runtime-library/reference/fopen-wfopen.md) türünde bir nesne adresini döndürür `FILE`. Bu adresi olarak kullanın `stream` açık bir dosyayı çeşitli işlemleri gerçekleştirmek için çeşitli kitaplığı işlevlerinin bağımsız değişkeni. Her karakteri çağırarak salt okunur ise gibi bir bayt akış için tüm giriş gerçekleşir [fgetc](../c-runtime-library/reference/fgetc-fgetwc.md), ve her bir karakteri çağırarak gibi yazılmışsa tüm çıktı gerçekleşir [fputc](../c-runtime-library/reference/fputc-fputwc.md). Her karakteri çağırarak salt okunur ise gibi geniş bir akış için tüm giriş gerçekleşir [fgetwc](../c-runtime-library/reference/fgetc-fgetwc.md), ve her bir karakteri çağırarak gibi yazılmışsa tüm çıktı gerçekleşir [fputwc](../c-runtime-library/reference/fputc-fputwc.md).  

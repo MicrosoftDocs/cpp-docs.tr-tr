@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380439"
 ---
 # <a name="unwind-data-for-exception-handling-debugger-support"></a>Özel Durum İşleme için Veri Bırakma, Hata Ayıklayıcı Desteği
 Bu bölümde, özel durum işleme ve hata ayıklama desteği için gerekli veri yapıları anlatılmaktadır.  

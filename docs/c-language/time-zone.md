@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385546"
 ---
 # <a name="time-zone"></a>Saat Dilimi
 **ANSI 4.12.1** gün ışığından yararlanma saati ve yerel saat dilimi  

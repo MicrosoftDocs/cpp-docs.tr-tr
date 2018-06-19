@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391476"
 ---
 # <a name="global-constants"></a>Global Sabitler
 Microsoft çalışma zamanı kitaplığı, kitaplık yordamları tarafından kullanılan genel sabitler için tanımları içerir. Bu sabitleri kullanmak için uygun üstbilgi dosyaları her sabiti açıklamasında gösterildiği gibi ekleyin. Genel sabitler aşağıdaki tabloda listelenmiştir.  

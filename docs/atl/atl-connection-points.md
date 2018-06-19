@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32354674"
 ---
 # <a name="atl-connection-points"></a>ATL Bağlantı Noktaları
 Bir bağlanılabilirlik giden arabirimleri destekleyen bir nesnedir. İstemcisi ile iletişim kurmak için nesne giden bir arabirim sağlar. Giden her arabirim için bir bağlantı noktası bağlanılabilirlik nesne kullanıma sunar. Her giden arabirimi bir havuz adlı bir nesne üzerinde bir istemci tarafından uygulanır.  

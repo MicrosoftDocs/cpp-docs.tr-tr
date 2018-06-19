@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381232"
 ---
 # <a name="atexit-function-c"></a>atexit İşlevi (C)
 **ANSI 4.10.4.3** tarafından döndürülen durum `atexit` bağımsız değişkeninin değeri sıfır, exıt_success veya exıt_faılure dışında ise işlevi  

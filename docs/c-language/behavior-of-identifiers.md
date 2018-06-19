@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380807"
 ---
 # <a name="behavior-of-identifiers"></a>Tanımlayıcıların Davranışı
 -   [Dış Bağlantısız Önemli Karakterler](../c-language/significant-characters-without-external-linkage.md)  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380946"
 ---
 # <a name="blocks"></a>Bloklar
 Dizi bildirimleri, tanımları ve süslü ayraçlar içinde deyimleri (**{}**) bir "bloğu." olarak adlandırılır C. bloklarında iki tür vardır "Bileşik deyimi," bir deyimi bir veya daha fazla bilgilerinin oluşur (bkz [bileşik deyim](../c-language/compound-statement-c.md)), bir blok türü. Yanı sıra işlevi "üstbilgisi" (işlev adı, dönüş türü ve biçimsel parametresi) ilişkili diğer "işlev tanımı," bileşik bildirimi (işlevinin gövdesini) oluşur. Diğer blokları blokta "iç içe olamaz." kabul edilir  

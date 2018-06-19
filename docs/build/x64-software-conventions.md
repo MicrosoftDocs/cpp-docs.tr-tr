@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380894"
 ---
 # <a name="x64-software-conventions"></a>x64 Yazılım Kuralları
 Bu bölümde Visual C++ kuralı yöntemi çağırma açıklanmaktadır [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)], x86 64-bit uzantısı mimarisi.  

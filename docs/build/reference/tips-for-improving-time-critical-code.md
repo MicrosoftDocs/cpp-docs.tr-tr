@@ -45,6 +45,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32379516"
 ---
 # <a name="tips-for-improving-time-critical-code"></a>Zamana Bağlı Kodu Geliştirme İpuçları
 Hızlı kod yazma uygulamanız ve sistemi ile nasıl etkileşim kurduğu tüm yönlerini anlaşılması gerekir. Bu konu, kodunuzu zaman açısından kritik bölümlerini başarılı şekilde gerçekleştirdiğinizden emin olun yardımcı olmak için daha belirgin kodlama teknikleri, bazı önerileri sunar.  

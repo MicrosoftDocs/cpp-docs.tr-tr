@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380465"
 ---
 # <a name="special-characters-in-a-makefile"></a>Derleme Görevleri Dosyasındaki Özel Karakterler
 NMAKE özel karakter harf karakter olarak kullanmak için önündeki şapka (^) yerleştirin. NMAKE diğer karakterlerden önce belirliyorsanız düzeltme işaretleri yoksayar. Özel karakterler şunlardır:  

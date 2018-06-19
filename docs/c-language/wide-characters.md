@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386646"
 ---
 # <a name="wide-characters"></a>Geniş Karakterler
 **ANSI 3.1.3.4** birden fazla karakter içeren bir tamsayı karakter sabiti ya da birden çok baytlı karakter içeren bir geniş karakter sabit değeri  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391821"
 ---
 # <a name="locale-names-languages-and-countryregion-strings"></a>Yerel Ayar Adları, Diller ve Ülke/Bölge Dizeleri
 *Yerel ayar* bağımsız değişkeni `setlocale` ve `_create_locale` işlevleri, yerel ayar adları, diller, ülke/bölge kodları ve Windows NLS API'si tarafından desteklenen kod sayfaları kullanılarak ayarlanabilir. *Yerel* bağımsız değişkeni aşağıdaki formu alır:  

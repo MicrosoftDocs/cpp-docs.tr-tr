@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32379841"
 ---
 # <a name="setjmplongjump"></a>setjmp/longjump
 Setjmpex.h ya da setjmp.h'ı eklediğinizde, tüm çağrılar [setjmp](../c-runtime-library/reference/setjmp.md) veya [longjmp](../c-runtime-library/reference/longjmp.md) yıkıcıları ve son çağrıları bırakmayla neden olur.  Bu x86 setjmp.h'ı son yan tümceleri de dahil olmak üzere burada ve değil çağrılan Yıkıcılar farklıdır.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385422"
 ---
 # <a name="functions-c"></a>İşlevler (C)
 C. temel modüler biriminde işlevidir Bir işlev genellikle belirli bir görevi gerçekleştirmek için tasarlanmıştır ve adını genellikle görev yansıtır. İşlev bildirimleri ve deyimleri içerir. Bu bölümde, bildirme, tanımlayın ve C işlevlerini çağırma açıklar. Ele alınan diğer konular şunlardır:  

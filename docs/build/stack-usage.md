@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32379864"
 ---
 # <a name="stack-usage"></a>Yığın Kullanımı
 Geçerli RSP adresinin ötesindeki tüm bellek geçici olarak kabul edilir: işletim sistemi veya bir hata ayıklayıcısı bu bellek bir kullanıcı hata ayıklama oturumu veya kesinti işleyicisinin sırasında üzerine yazabilir. Bu nedenle, RSP her zaman bir yığın çerçevesine değerleri okunamıyor veya yazılamıyor denemeden önce ayarlanmalıdır.  

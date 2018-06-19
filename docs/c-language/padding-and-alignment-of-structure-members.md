@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385383"
 ---
 # <a name="padding-and-alignment-of-structure-members"></a>Yapı Üyelerini Doldurma Hizalama
 **ANSI 3.5.2.1** yapılar ve bit alan bir depolama birimi sınır olup yayınımda üyeleri hizalamasını ve doldurma  

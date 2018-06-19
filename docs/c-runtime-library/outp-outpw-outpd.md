@@ -48,6 +48,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391515"
 ---
 # <a name="outp-outpw-outpd"></a>_outp, _outpw, _outpd
 Bir bağlantı noktası, bir bayt çıkışları (`_outp`), bir sözcük (`_outpw`), veya bir çift sözcük (`_outpd`).  

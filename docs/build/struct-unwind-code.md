@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32390105"
 ---
 # <a name="struct-unwindcode"></a>struct UNWIND_CODE
 Geriye doğru izleme kod dizisi RSP ve kalıcı Yazmaçları etkileyen giriş bölümünde işlemleri dizisini kaydetmek için kullanılır. Her kod öğesi aşağıdaki biçime sahiptir:  

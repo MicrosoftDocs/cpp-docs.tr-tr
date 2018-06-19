@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383962"
 ---
 # <a name="integers"></a>Tam Sayılar
 -   [Tamsayı Değerleri Aralığı](../c-language/range-of-integer-values.md)  

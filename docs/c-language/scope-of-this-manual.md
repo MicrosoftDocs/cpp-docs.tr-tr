@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387518"
 ---
 # <a name="scope-of-this-manual"></a>Bu Kılavuzun Kapsamı
 C, birçok programlama kararını size bırakan esnek bir dildir. Bu felsefe kapsamında C, tür dönüştürme gibi konularda birkaç kısıtlama uygular. Dilin bu özelliği programlama işlerinizi daha kolay hale getirse de, programların nasıl davranacağını anlamak için dili bilmeniz gerekir. Bu kılavuz, C dilinin bileşenleri ve Microsoft uygulamasının özellikleri hakkında bilgi sağlar. C dili sözdizimi ANSI X3.159-1989, olan *Amerikan Ulusal standardı bilgi Systems - programlama dili - C* (Bundan sonra ANSI C standart olarak da adlandırılır) ANSI C standart bir parçası olmasa da. [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md) sözdizimi ve sözdizimi tanımları okuyun ve nasıl kullanılacağını açıklamasını sağlar.  

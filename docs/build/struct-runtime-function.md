@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32379932"
 ---
 # <a name="struct-runtimefunction"></a>struct RUNTIME_FUNCTION
 Tablo tabanlı özel durum işleme yığın alanı ayırmak veya başka bir işlevi (örneğin, yaprak olmayan işlevler) tüm işlevler için bir tablo girişi gerektirir. İşlev tablosu girdileri biçime sahiptir:  

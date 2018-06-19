@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383455"
 ---
 # <a name="operands-and-expressions"></a>İşlenenler ve İfadeler
 "İşlenen", bir işlecin üzerinde işlem yaptığı varlıktır. "İfade", şu işlemlerin bir bileşimini yapan işleçler ve işlenenler dizisidir:  

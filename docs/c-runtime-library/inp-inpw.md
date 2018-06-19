@@ -35,6 +35,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32388928"
 ---
 # <a name="inp-inpw"></a>inp, inpw
 Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumluluğunu kullanmak [_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md) yerine.  

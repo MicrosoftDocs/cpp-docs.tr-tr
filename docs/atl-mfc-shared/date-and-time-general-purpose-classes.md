@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32354393"
 ---
 # <a name="date-and-time-general-purpose-classes"></a>Tarih ve saat: genel amaçlı sınıfları
 

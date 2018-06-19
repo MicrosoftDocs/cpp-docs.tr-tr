@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32384001"
 ---
 # <a name="internal-linkage"></a>İç Bağlantı
 Bir nesne veya işlevi için bir dosya kapsamı tanımlayıcı bildirimi içeriyorsa *depolama sınıfı tanımlayıcısı* **statik**, iç bağlantı tanımlayıcısı vardır. Aksi takdirde, tanımlayıcının dış bağlantısı vardır. Bkz: [depolama sınıfları](../c-language/c-storage-classes.md) bir irdelemesi *depolama sınıfı tanımlayıcısı* nonterminal.  

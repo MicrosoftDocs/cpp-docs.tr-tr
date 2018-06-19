@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32389000"
 ---
 # <a name="global-variables-and-standard-types"></a>Global Değişkenler ve Standart Türler
 Microsoft çalışma zamanı kitaplığı için tanımları içeren [genel değişkenler](../c-runtime-library/global-variables.md), [denetim bayrakları](../c-runtime-library/control-flags.md), ve [standart türler](../c-runtime-library/standard-types.md) kitaplık yordamları tarafından kullanılır. Bu değişkenler, bayrakları ve türler programınıza bildirme ya da uygun üstbilgi dosyaları dahil erişin.  

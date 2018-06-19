@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32390128"
 ---
 # <a name="fmode"></a>_fmode
 `_fmode` Değişkenini ayarlar metin veya ikili çeviri için varsayılan dosya çevirisi modu. Bu genel değişkeni daha güvenli işlevsel sürümleri için kullanım dışı [_get_fmode](../c-runtime-library/reference/get-fmode.md) ve [_set_fmode](../c-runtime-library/reference/set-fmode.md), hangi kullanılmalıdır yerine genel değişkeni. İçinde Stdlib.h gibi bildirilir.  

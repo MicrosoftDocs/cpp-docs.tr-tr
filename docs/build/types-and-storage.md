@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380621"
 ---
 # <a name="types-and-storage"></a>Türler ve Depolama
 Bu bölümde numaralandırması ve depolama için veri türlerinin açıklanmaktadır [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] mimarisi.  

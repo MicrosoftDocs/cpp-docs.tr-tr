@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386858"
 ---
 # <a name="storage-of-arrays"></a>Dizileri Depolama
 Bir dizi türü ile ilişkilendirilmiş olan depolama, tüm alt öğeleri için gerekli olan depolamadır. Bir dizinin öğeleri, ilk öğeden son öğeye kadar bitişik ve artan bellek konumlarında depolanır.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32382854"
 ---
 # <a name="initialization"></a>Başlatma
 Bir "başlatıcı" bir değer veya bildirilen değişkenine atanan değerleri dizisi değil. Değişken bildiriminde bildirimcisi bir başlatıcı uygulayarak bir değişken için bir başlangıç değeri ayarlayabilirsiniz. Değer veya değerlerini Başlatıcı değişkene atanır.  

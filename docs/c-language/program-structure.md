@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385962"
 ---
 # <a name="program-structure"></a>Program Yapısı
 Bu bölümde C programları ve program yürütme genel bakış sağlar. Hüküm ve C programları ve bileşenleri anlamak için önemli özellikleri ayrıca sunulmuştur. Ele alınan konular şunlardır:  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385617"
 ---
 # <a name="preprocessing-directives"></a>Ön işleme Yönergeleri
 -   [Karakter Sabitleri ve Koşullu Dahil Etme](../c-language/character-constants-and-conditional-inclusion.md)  

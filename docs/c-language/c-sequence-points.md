@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32384313"
 ---
 # <a name="c-sequence-points"></a>C Sıralama Noktaları
 Ardışık arasında "bir nesnenin değeri değiştirilebilir yalnızca bir kez bir ifade sıralama noktaları". C dili aşağıdaki sıralama noktaları tanımlar:  

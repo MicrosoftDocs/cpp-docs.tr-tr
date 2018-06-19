@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32354285"
 ---
 # <a name="displaying-assertions"></a>Onaylar görüntüleme
 Hizmetinize bağlanan istemci yanıt vermemesine görünürse, hizmet uygulanan ve görmeye olmayan bir ileti kutusu görüntülenir. Bu, kodunuzun hatalarını ayıklamak için Visual C++'ın hata ayıklayıcı kullanarak onaylayın (bkz [Görev Yöneticisi'ni kullanarak](../atl/using-task-manager.md) Bu bölümde daha önce).  

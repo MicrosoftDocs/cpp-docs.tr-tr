@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383699"
 ---
 # <a name="character-types"></a>Karakter Türleri
 Harfinin öncesinde olmayan bir tamsayı karakter sabiti **L** türüne sahip `int`. Tek bir karakter içeren bir tamsayı karakter sabiti sayısal değer bir tamsayı olarak yorumlanan karakter değeridir. Örneğin, sayısal değer karakterinin `a` 97 ondalık ve onaltılık 61.  

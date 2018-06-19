@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386244"
 ---
 # <a name="backward-compatibility"></a>Geriye Dönük Uyumluluk
 Ürün sürümleri, OLDNAMES kitaplığı arasındaki uyumluluk için. LIB yeni adlarına eski adlarını eşler. Örneğin, `open` eşlendiği `_open`. Açıkça OLDNAMES ile bağlamanız gerekir. Yalnızca komut satırı seçenekleri aşağıdaki birleşimlerine derlediğinizde LIB:  

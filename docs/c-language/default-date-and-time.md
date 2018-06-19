@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32382747"
 ---
 # <a name="default-date-and-time"></a>Varsayılan Tarih ve Saat
 **ANSI 3.8.8** _DATE tanımlarında\_ ve _tıme\_ zaman, sırasıyla tarihi ve saati çevirisi kullanılabilir değil  

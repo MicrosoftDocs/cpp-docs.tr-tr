@@ -101,6 +101,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32392152"
 ---
 # <a name="data-type-constants"></a>Veri Türü Sabitleri
 Veri türü sabitleri, tam sayı veri türleri için izin verilen değerlerin uygulama bağımlı aralıktır. Aşağıda listelenen sabitler aralıklara tam sayı veri türleri için vermek ve SINIRLARI tanımlanır. H.  

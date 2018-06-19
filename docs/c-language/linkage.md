@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383530"
 ---
 # <a name="linkage"></a>Bağlantı
 Tanımlayıcı adları farklı kapsamlardaki farklı tanımlayıcılara başvurabilir. Farklı kapsamlarda veya aynı kapsamda birden çok kez bildirilen bir tanımlayıcı "bağlantı" olarak adlandırılan bir işlem ile aynı tanımlayıcıya veya işleve başvurabilir. Bağlantı bir tanımlayıcının başvurulabildiği ("görünürlüğünü") programın bölümlerini belirler. Üç tür bağlantı vardır: [iç](../c-language/internal-linkage.md), [dış](../c-language/external-linkage.md), ve [bağlantı yok](../c-language/no-linkage.md).  

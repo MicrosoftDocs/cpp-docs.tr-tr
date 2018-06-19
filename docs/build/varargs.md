@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380514"
 ---
 # <a name="varargs"></a>Varargs
 Parametreler (örneğin, üç nokta değişkenler) varargs aktarılırsa temelde geçirme normal parametre beşinci ve izleyen bağımsız değişkenlere dahil olmak üzere uygulanır. Bunu yeniden çağıranın adresleri alınmış döküm bağımsız değişkenler için sorumluluğundadır. Aranan değeri tamsayı kasalar bekliyor durumda yalnızca kayan nokta değerleri için float değeri tamsayı ve kayan nokta kaydı içerir.  

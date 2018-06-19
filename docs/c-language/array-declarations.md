@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386910"
 ---
 # <a name="array-declarations"></a>Dizi Bildirimleri
 Bir "dizisi bildirimi" dizi adları ve öğeleri türünü belirtir. Dizide öğe sayısını da tanımlayabilirsiniz. Dizi türüne sahip bir değişken dizisini öğelerin türü için bir işaretçi olarak kabul edilir.  

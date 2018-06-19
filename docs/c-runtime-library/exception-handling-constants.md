@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32388233"
 ---
 # <a name="exception-handling-constants"></a>Özel Durum İşleme Sabitleri
 Sabit `EXCEPTION_CONTINUE_SEARCH`, `EXCEPTION_CONTINUE_EXECUTION`, veya `EXCEPTION_EXECUTE_HANDLER` korunmuş bölümünü yürütülmesi sırasında bir özel durum oluştuğunda döndürülen bir **deneyin-dışında** deyimi. Dönüş değeri, özel durumun nasıl işleneceğini belirler. Daha fazla bilgi için bkz: [deneyin-except deyimi](../cpp/try-except-statement.md) içinde *C++ dil başvurusu*.  

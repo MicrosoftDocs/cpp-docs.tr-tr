@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33135033"
 ---
 # <a name="locklock"></a>lock::lock
 Oluşturan bir `lock` nesnesi, isteğe bağlı olarak her zaman, belirtilen bir miktar süre ya da hiç için kilit bekleniyor.  

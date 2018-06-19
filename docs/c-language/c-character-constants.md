@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32382292"
 ---
 # <a name="c-character-constants"></a>C Karakter Sabitleri
 "Karakter sabiti" gösterilebilir karakter tek tırnak içine kümesindeki tek bir karakter kapsayan tarafından oluşturulmuş (**' '**). Karakter sabitleri karakter belirtmek için kullanılan [yürütme karakter kümesi](../c-language/execution-character-set.md).  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386270"
 ---
 # <a name="l-value-and-r-value-expressions"></a>L-Değeri ve R-Değeri İfadeleri
 Bellek konumları ifadeleri "l-değeri" ifadeleri denir. L-değeri eşittir işaretinden sol tarafta görünebilir olduğunu belirtmek "sol" bir değer veya bir depolama bölgenin "Bulucusu" değerini temsil eder (**=**). L değerleri genellikle tanımlayıcılardır.  

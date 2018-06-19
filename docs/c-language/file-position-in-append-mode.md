@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381674"
 ---
 # <a name="file-position-in-append-mode"></a>Ekleme Modunda Dosya Konumu
 **ANSI 4.9.3** olup bir ekleme modu akışın dosya konumu göstergesi başlangıçta dosya başında veya sonunda konumlandırılır  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391632"
 ---
 # <a name="conversions-from-signed-integral-types"></a>İmzalı Tam Sayı Türlerinden Dönüştürmeler
 İmzalı bir tamsayı işaretsiz tamsayıya eşit veya daha büyük boyutta dönüştürülür ve imzalı tamsayı değeri negatif olmadığında değiştirilmemiş bir değerdir. Dönüştürme oturum imzalı tamsayı genişletme tarafından yapılır. İmzalı bir tamsayı, yüksek sıralı BITS kesilip daha kısa bir imzalı tamsayıya dönüştürülür. Bu örnekte gösterildiği gibi sonucu imzasız bir değer olarak yorumlanır.  

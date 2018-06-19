@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32382659"
 ---
 # <a name="file-buffering"></a>Dosyayı Ara Belleğe Alma
 **ANSI 4.9.3** dosyayı arabelleğe alma özellikleri  

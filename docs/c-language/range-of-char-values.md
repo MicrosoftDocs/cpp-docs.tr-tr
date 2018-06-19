@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383871"
 ---
 # <a name="range-of-char-values"></a>char Değerleri Aralığı
 **ANSI 3.2.1.1** "düz olup" **char** değerleri aynı aralığı sahip bir **char imzalı** veya bir `unsigned char`  

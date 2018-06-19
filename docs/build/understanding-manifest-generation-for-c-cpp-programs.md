@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381642"
 ---
 # <a name="understanding-manifest-generation-for-cc-programs"></a>C/C++ Programları Bildirim Üretimini Anlama
 A [bildirim](http://msdn.microsoft.com/library/aa375365) harici bir XML dosyası veya bir kaynak olabilir bir XML belgesi bir uygulama veya bir derleme katıştırılır. Bildirimi bir [yalıtılmış uygulama](http://msdn.microsoft.com/library/aa375190) adları ve paylaşılan yan yana derlemeler için uygulaması bağlamak çalışma zamanında sürümlerini yönetmek için kullanılır. Yan yana derleme bildirimi bağımlılıklarını adları, sürüm, kaynakları ve diğer derlemelerden belirtir.  

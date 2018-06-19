@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391698"
 ---
 # <a name="parameters"></a>Parametreler
 Bağımsız değişkenler, bir işlev çağrısı tarafından bir işlevine geçirilen değerlerin adlardır. Parametreler işlev almak için bekliyor değerlerdir. Bir işlev prototipi işlevi adından parantez işlev parametrelerini ve türlerinin tam listesi içerir. Parametre bildirimleri türleri, boyutlar ve parametrelerinde depolanan değerlerin tanımlayıcıları belirtin.  

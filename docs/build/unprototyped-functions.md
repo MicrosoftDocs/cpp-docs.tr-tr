@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380478"
 ---
 # <a name="unprototyped-functions"></a>Prototipi Oluşturulmamış İşlevler
 Tam örneklenmemiş işlevler için çağıran tamsayı değerleri tamsayı ve kayan nokta değerlerini çift duyarlıklı olarak geçer. Aranan değeri tamsayı kasalar bekliyor durumda yalnızca kayan nokta değerleri için float değeri tamsayı kaydını ve kayan nokta kaydı içerir.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32390567"
 ---
 # <a name="function-prototypes"></a>İşlev Prototipleri
 Bir işlev bildirimi işlev tanımı önündeki ve adı, dönüş türü, depolama sınıfı ve diğer bir işlev özniteliklerini belirtir. Bir prototip olması için işlev bildirimi de türleri ve işlev bağımsız değişkenleri için tanımlayıcıları oluşturmanız gerekir.  

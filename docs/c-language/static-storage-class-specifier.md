@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386322"
 ---
 # <a name="static-storage-class-specifier"></a>static Depolama Sınıfı Tanımlayıcısı
 Bir değişken bildirilen iç düzeyindeki **statik** depolama sınıfı tanımlayıcısı genel ömrü ancak yalnızca blokta görünür, bildirildiği içinde. Kullanarak sabit dizeleri için **statik** yararlıdır çünkü genellikle adlı işlevlerinde sık başlatma ek yükünü azaltır.  

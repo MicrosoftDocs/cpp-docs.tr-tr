@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32389747"
 ---
 # <a name="c-enumeration-declarations"></a>C Numaralandırma Bildirimleri
 Numaralandırma adlandırılmış tamsayı sabitleri kümesinden oluşur. Bir numaralandırma türü bildirimi (isteğe bağlı) numaralandırması etiketin adını verir ve adlandırılmış tamsayı tanımlayıcıları kümesini tanımlar ("numaralandırma,"Numaralandırıcı sabitleri,"Ayarla" adlı "numaralandırıcılar" veya "üye"). Numaralandırma türü sahip bir değişken, türü tarafından tanımlanan numaralandırma kümesinin değerlerden biri depolar.  

@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32392367"
 ---
 # <a name="initializing-scalar-types"></a>Ölçekli Türleri Başlatma
 Ne zaman başlatılırken skaler türleri, değeri *atama ifadesi* değişkene atanır. Atama dönüştürme kurallarını uygulayın. (Bkz [tür dönüşümleri](../c-language/type-conversions-c.md) dönüştürme kuralları hakkında bilgi için.)  

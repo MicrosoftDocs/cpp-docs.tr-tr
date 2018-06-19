@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385770"
 ---
 # <a name="storage-class-specifiers-for-internal-level-declarations"></a>İç Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları
 Dört birini kullanabilirsiniz *depolama sınıfı tanımlayıcısı* Terminal iç düzeyinde değişken bildirimleri. Ne zaman kullanmayabilir *depolama sınıfı tanımlayıcısı* böyle bildiriminden varsayılan depolama sınıftır **otomatik**. Bu nedenle, anahtar sözcüğü **otomatik** bir C programı ender görülür.  

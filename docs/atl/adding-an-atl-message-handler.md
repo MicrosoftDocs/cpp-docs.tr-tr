@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32354162"
 ---
 # <a name="adding-an-atl-message-handler"></a>ATL ileti işleyicisi ekleme
 İleti işleyicisi (Windows iletilerini işleme bir üye fonksiyonu) için bir denetim eklemek için öncelikle Sınıf Görünümü'nde denetimi seçin. Ardından açın **özellikleri** penceresinde, seçin **iletileri** simgesi ve aşağı açılan kontrol gerekli ileti ters kutusunda tıklatın. İleti işleyicisi için bir bildirim bu denetimin üstbilgi dosyası ve denetimin .cpp dosyasındaki işleyicisinin iskelet bir uygulama ekler. Ayrıca ileti eşlemesi eklemek ve işleyici için bir giriş ekleyin.  

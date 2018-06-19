@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385812"
 ---
 # <a name="overview-of-functions"></a>İşlevlere Genel Bakış
 İşlevler bir tanım olmalıdır ve işlevi çağrılmadan önce bildirimi görünürse bir tanımı bildirimi olarak hizmet verebilir rağmen bir bildirimi sahip olmalıdır. İşlev gövdesi işlev tanımı içerir — işlevi çağrıldığında yürütülen kodu.  

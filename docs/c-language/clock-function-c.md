@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381687"
 ---
 # <a name="clock-function-c"></a>clock İşlevi (C)
 **ANSI 4.12.2.1** dönem için `clock` işlevi  

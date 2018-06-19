@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386076"
 ---
 # <a name="c-storage-classes"></a>C Depolama Sınıfları
 Bir değişkenin "depolama sınıfı" öğesi "Genel" veya "yerel" ömrü olup olmadığını belirler. C "statik" ve "Otomatik" Bu iki yaşam süresi'ı çağırır Genel bir ömre sahip bir öğe var ve programın yürütülmesi boyunca bir değere sahip. Tüm işlevleri genel ömürleri vardır.  

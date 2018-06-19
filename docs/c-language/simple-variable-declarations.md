@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32389773"
 ---
 # <a name="simple-variable-declarations"></a>Basit Değişken Bildirimler
 Doğrudan bildirimcisi en basit biçimi basit bir değişken bildirimi, değişkenin adını ve türünü belirtir. Ayrıca değişkenin depolama sınıfı ve veri türünü belirtir.  

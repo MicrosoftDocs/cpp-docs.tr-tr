@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380051"
 ---
 # <a name="zs-syntax-check-only"></a>/Zs (Yalnızca Sözdizimi Denetimi)
 Yalnızca kaynak dosyaları komut satırında sözdizimini denetleyin bildirir.  

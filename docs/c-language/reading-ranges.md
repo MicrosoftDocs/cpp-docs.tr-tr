@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383650"
 ---
 # <a name="reading-ranges"></a>Okuma Aralıkları
 **ANSI 4.9.6.2** ne ilk bir tire (-) karakterinden ya da % scanlist son karakter yorumu [dönüştürme `fscanf` işlevi  

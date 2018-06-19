@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32384765"
 ---
 # <a name="identifiers-in-primary-expressions"></a>Birincil İfadelerdeki Tanımlayıcılar
 Tanımlayıcıları integral olabilir **float**, `enum`, `struct`, **UNION**, dizi, işaretçi veya işlev türü. (Bu durumda bu, l-değeri'dir) bir nesne belirleme veya bir işlev (Bu durumda bu, bir işlev Belirleyicisi'dir) olarak bildirilmiş bir birincil ifadesi sağlanan bir tanımlayıcıdır. Bkz: [L-değeri ve r değeri ifadeleri](../c-language/l-value-and-r-value-expressions.md) l-değeri tanımının için.  

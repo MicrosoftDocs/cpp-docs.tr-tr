@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381935"
 ---
 # <a name="c-language-syntax-summary"></a>C Dili Sözdizimi Özeti
 Bu bölüm C dili ve Microsoft'a özgü C dili özelliklerinin tam açıklamasını sağlar. Bu bölümde sözdizimi gösterimini herhangi bir dil bileşeni için tam sözdizimi belirlemek amacıyla kullanabilirsiniz. Bir konunun ele alındığı bu kılavuzun kısmında sözdizimi için açıklaması görünür.  

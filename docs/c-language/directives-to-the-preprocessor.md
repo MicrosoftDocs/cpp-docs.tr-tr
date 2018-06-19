@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32382909"
 ---
 # <a name="directives-to-the-preprocessor"></a>Ön işlemci Yönergeleri
 "Yönergesi" programı derleme önce metni belirli bir eylemi gerçekleştirmek için önişlemci C bildirir. [Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md) tam olarak açıklanan *önişlemci başvurusu*. Bu örnek önişlemci yönergesi kullanır `#define`:  

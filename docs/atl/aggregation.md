@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32353969"
 ---
 # <a name="aggregation"></a>Toplama
 Ne zaman nesnenin uygulayıcıya başka önceden oluşturulmuş nesnesi tarafından sunulan hizmetler yararlanmak istersiniz zamanlar vardır. Ayrıca, bu ikinci nesnenin ilk doğal bir parçası olarak görünmesini ister. COM başarır hem de bu hedeflerinden kapsama ve toplama.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32057675"
 ---
 # <a name="union"></a>UNION
 Bir veya daha fazla veri türlerinin UNION bildirir. *Fielddeclarations* geçerli veri tanımlarını olması gerekir. Atlayın [sona ERER](../../assembler/masm/ends-masm.md) *adı* etikette iç içe geçmiş **UNION** tanımlar.  

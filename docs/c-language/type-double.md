@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387349"
 ---
 # <a name="type-double"></a>Tür double
 Double türündeki çift duyarlıklı değerler 8 bayta sahiptir. Biçim, 11 bit fazladan 1023 üssü, 52 bit mantisi ve 1 bit üst sırası olması dışında kayan biçime benzerdir. Bu biçim yaklaşık 1.7E aralığı sunar-308 1.7E + 308 double türü için.  

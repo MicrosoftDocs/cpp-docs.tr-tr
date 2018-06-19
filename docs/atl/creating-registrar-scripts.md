@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32354439"
 ---
 # <a name="creating-registrar-scripts"></a>Kaydedici betikleri oluşturma
 Kaydedici betik sistem kayıt defteri API temelli yerine verilere erişim sağlar. Yalnızca bir veya iki satır bir anahtarı kayıt defterine eklemek için komut sürdüğünü beri verilere erişim genellikle daha verimli olur.  

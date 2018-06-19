@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32382152"
 ---
 # <a name="declarators-maximum-number"></a>Bildiriciler: En Fazla number
 **ANSI 3.5.4** bir aritmetik, yapı ve birleşim türü değiştirebilirsiniz Bildirimciler sayısı  

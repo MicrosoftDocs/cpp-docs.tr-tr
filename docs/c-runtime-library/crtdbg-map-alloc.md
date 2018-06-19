@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386485"
 ---
 # <a name="crtdbgmapalloc"></a>_CRTDBG_MAP_ALLOC
 Zaman **_CRTDBG_MAP_ALLOC** bayrağı, bir uygulamanın hata ayıklama sürümü tanımlanır, heap işlevleri temel sürümü, hata ayıklama sürümlerine doğrudan eşlendi. Bayrak Crtdbg.h içinde eşleme yapmak için kullanılır. Bu bayrak yalnızca kullanılabilir [_DEBUG](../c-runtime-library/debug.md) bayrağı uygulamada tanımlandı.  

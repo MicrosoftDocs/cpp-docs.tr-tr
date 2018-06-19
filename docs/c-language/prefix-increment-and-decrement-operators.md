@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32384535"
 ---
 # <a name="prefix-increment-and-decrement-operators"></a>Önek Arttırma ve Azaltma İşleçleri
 Birli işleçleri (`++` ve **--**) "öneki" artışı adlı veya artırma veya azaltma işleçleri önce işlenen görüntülendiğinde işleçleri azaltma. Sonek arttırma ve azaltma önek artırma ve azaltma daha yüksek önceliğe sahiptir. İşlenen integral, kayan veya işaretçi türü olması gerekir ve değiştirilebilir l-değeri ifadesi olmalıdır (olmayan bir ifade **const** özniteliği). L-değeri sonucudur.  

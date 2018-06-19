@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387589"
 ---
 # <a name="c-relational-and-equality-operators"></a>C İlişkisel ve Eşitlik İşleçleri
 Belirtilen ilişki geçerliliğini sınamak için ikinci işlenen kendi ilk işlenen ikili ilişkisel ve eşitlik işleçleri karşılaştırın. Sınanan ilişki true ve 0 ise false ise ilişkisel bir ifadenin sonucu 1'dir. Sonuç türü olan `int`.  

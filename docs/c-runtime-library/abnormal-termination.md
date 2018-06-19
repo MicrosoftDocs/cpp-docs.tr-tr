@@ -32,6 +32,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385559"
 ---
 # <a name="abnormaltermination"></a>_abnormal_termination
 Gösterir olup olmadığını `__finally` , engelleme bir [try-finally deyimi](../cpp/try-finally-statement.md) sistem sonlandırma işleyicileri iç listesine yürütülürken girilir.  

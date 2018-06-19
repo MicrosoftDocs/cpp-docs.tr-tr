@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385533"
 ---
 # <a name="significant-characters-with-external-linkage"></a>Dış Bağlantılı Önemli Karakterler
 **ANSI 3.1.2** dış bağlantılı önemli karakterler sayısı  

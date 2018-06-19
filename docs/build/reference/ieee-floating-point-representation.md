@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32379438"
 ---
 # <a name="ieee-floating-point-representation"></a>IEEE Kayan Noktası Temsili
 Microsoft Visual C++ IEEE sayısal standartları ile uyumludur. Gerçek sayılar üç iç çeşitleri vardır. Gerçek\*4 ve gerçek\*8'de Visual C++ kullanılır. Gerçek\*4 word kullanılarak bildirilen **float**. Gerçek\*8 word kullanılarak bildirilen **çift**. Windows 32-bit programlama içinde `long double` veri türü eşlemeleri için **çift**. Yoktur, ancak gerçek kullanarak hesaplamalar için derleme dili desteği * 10 veri türü.  

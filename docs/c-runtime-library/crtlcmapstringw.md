@@ -32,6 +32,7 @@ ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34451959"
 ---
 # <a name="crtlcmapstringw"></a>__crtLCMapStringW
 Bir karakter dizesi başka belirtilen yerel ayara bağımlı dönüştürme gerçekleştirme eşler. Bu işlev, giriş dizesi için bir sıralama anahtarı oluşturmak için de kullanılabilir.  

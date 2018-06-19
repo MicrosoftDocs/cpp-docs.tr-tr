@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32353896"
 ---
 # <a name="date-and-time-database-support"></a>Tarih ve saat: veritabanı desteği
 Sürüm 4. 0'dan sonra MFC veritabanı programlama kullanır [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) ve [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md) tarih ve saat verilerini temsil eden sınıf. Ayrıca, Otomasyon kullanılan bu sınıfların sınıfından türetilen [COleVariant](../mfc/reference/colevariant-class.md). Tarih ve saat verilerini göründüklerinden yönetmek için daha iyi destek tedarik [CTime](../atl-mfc-shared/reference/ctime-class.md) ve [CTimeSpan](../atl-mfc-shared/reference/ctimespan-class.md).  

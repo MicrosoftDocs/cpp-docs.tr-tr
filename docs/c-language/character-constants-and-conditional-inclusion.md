@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381814"
 ---
 # <a name="character-constants-and-conditional-inclusion"></a>Karakter Sabitleri ve Koşullu Dahil Etme
 **ANSI 3.8.1** olup koşullu dahil etme denetimleri sabit bir ifade tek karakterli karakter sabitinde değerini yürütme karakter kümesi içinde aynı karakter sabit değeri eşleşir. Böyle bir karakter sabitinin negatif değere sahip olup olamayacağı  

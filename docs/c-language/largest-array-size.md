@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32384486"
 ---
 # <a name="largest-array-size"></a>En Büyük Dizi Boyutu
 **ANSI 3.3.3.4, 4.1.1** bir dizi en büyük boyutunu tutmak için gereken tamsayı türü — diğer bir deyişle, boyutu **size_t**  

@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387905"
 ---
 # <a name="ansi-c-compliance"></a>ANSI C Uyumluluğu
 Tüm Microsoft özgü tanımlayıcıları çalışma zamanı sisteminde (örneğin, İşlevler, makroları, sabitleri, değişkenler ve tür tanımları) için adlandırma kuralı ANSI uyumludur. Bu belgede, ANSI/ISO C standartlarını takip eden herhangi bir çalışma zamanı işlevini ANSI uyumlu olacak şekilde belirtilir. ANSI uyumlu uygulamalar, yalnızca bu ANSI uyumlu işlevleri kullanmanız gerekir.  

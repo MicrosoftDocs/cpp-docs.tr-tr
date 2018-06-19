@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32382029"
 ---
 # <a name="unwind-procedure"></a>Bırakma Yordamı
 Geriye doğru izleme kod dizisi azalan düzende sıralanır. Özel durum oluştuğunda tam bağlamı bir bağlam kaydında işletim sistemi tarafından depolanır. Özel durum dağıtma mantığı sonra çağrılan bir özel durum işleyicisi bulmak için aşağıdaki adımları, sürekli olarak yürütür.  

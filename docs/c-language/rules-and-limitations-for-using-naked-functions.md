@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385884"
 ---
 # <a name="rules-and-limitations-for-using-naked-functions"></a>Naked İşlevlerini Kullanmak için Kurallar ve Sınırlamalar
 Naked işlevlerini kullanmak için kurallar ve sınırlamalar hakkında daha fazla bilgi için karşılık gelen C++ Dil Başvurusu konusuna bakın: [Naked işlevleri için kurallar ve sınırlamalar](../cpp/rules-and-limitations-for-naked-functions.md).  

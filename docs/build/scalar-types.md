@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381177"
 ---
 # <a name="scalar-types"></a>Ölçekli Türler
 Veri erişimi herhangi hizalamasını kaynaklanabilir rağmen veri performans kaybı (veya bunların bir birden çok) önlemek için kendi doğal sınırında hizalanacak önerilir. Numaralandırmalar sabit tamsayı olan ve 32 bit tamsayı olarak kabul edilir. Aşağıdaki hizalama değerlerini kullanarak hizalama ilgili olarak aşağıdaki tabloda önerilen depolama alanını ve tür tanımı için açıklanmaktadır:  

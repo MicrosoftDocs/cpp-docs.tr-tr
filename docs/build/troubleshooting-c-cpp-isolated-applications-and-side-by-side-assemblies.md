@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32390697"
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme
 C/C++ uygulama yükleme başarısız olabilir bağımlı kitaplıkları bulunamazsa. Bu makalede bir C/C++ uygulaması neden başarısız yüklemek için bazı genel nedenleri ve sorunlarını gidermeye yönelik adımlar önerir.  

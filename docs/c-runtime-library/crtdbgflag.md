@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387268"
 ---
 # <a name="crtdbgflag"></a>_crtDbgFlag
 **_CrtDbgFlag** bayrağı nasıl bellek ayırmaları öbek hata ayıklama sürümünde izlenen, doğrulandı, bildirilen yazılan ve denetleyen beş bit alanları oluşur. Bit alanları bayrağı kullanılarak ayarlanan [_CrtSetDbgFlag](../c-runtime-library/reference/crtsetdbgflag.md) işlevi. Bu bayrak ve bit alanları Crtdbg.h bildirilir. Bu bayrak yalnızca kullanılabilir [_DEBUG](../c-runtime-library/debug.md) bayrağı uygulamada tanımlandı.  

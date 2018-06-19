@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32389786"
 ---
 # <a name="summary-of-lifetime-and-visibility"></a>Ömür ve Görünürlük Özeti
 Aşağıdaki tabloda, çoğu tanımlayıcıları ömür ve görünürlük özelliklerini özetidir. İlk üç sütun ömür ve görünürlük tanımlayan öznitelikleri verin. İlk üç sütun tarafından verilen özniteliklere sahip bir tanımlayıcı ömür ve görünürlük dördüncü ve beşinci sütunlarında gösterilen sahiptir. Ancak, tablonun tüm olası durumların kapsamaz. Başvurmak [depolama sınıfları](../c-language/c-storage-classes.md) daha fazla bilgi için.  

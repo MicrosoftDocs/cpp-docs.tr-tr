@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381379"
 ---
 # <a name="auto-storage-class-specifier"></a>auto Depolama Sınıfı Tanımlayıcısı
 **Otomatik** depolama sınıfı tanımlayıcısı otomatik bir değişkeni, yerel bir ömre sahip bir değişken bildirir. Bir **otomatik** değişkenidir yalnızca bloğunda görünür, bildirildiği içinde. Bildirimlerini **otomatik** değişkenleri, başlatıcılar, içerebilir, anlatıldığı gibi [başlatma](../c-language/initialization.md). Değişkenlerle itibaren **otomatik** depolama sınıfı başlatılmadı otomatik olarak, bunları bildirme ya da deyimleri bloğu içinde ilk değerleri atamak, ya da açıkça bunları başlatması gerekir. Başlatılmamış değerlerini **otomatik** değişkenlerdir tanımlanmamış. (Bir yerel değişken **otomatik** veya **kaydetmek** depolama sınıfı, her seferinde onu gelirse kapsamında bir başlatıcı verilen başlatılır.)  

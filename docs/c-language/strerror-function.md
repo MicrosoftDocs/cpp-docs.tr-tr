@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386364"
 ---
 # <a name="strerror-function"></a>strerror İşlevi
 **ANSI 4.11.6.2** hata içeriğini iletisi tarafından döndürülen dize `strerror` işlevi  

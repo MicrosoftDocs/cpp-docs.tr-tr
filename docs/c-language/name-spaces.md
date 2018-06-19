@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32390066"
 ---
 # <a name="name-spaces"></a>Ad Alanları
 "Ad alanları" derleyici ayarlar farklı türde öğe için kullanılan tanımlayıcıları ayırt etmek için. Her ad alanı içinde adları çakışmayı önlemek için benzersiz olmalıdır, ancak aynı adı birden fazla ad alanı görünebilir. Farklı ad alanlarında öğeleri olması koşuluyla iki veya daha fazla farklı öğeler için aynı tanımlayıcısı kullanabileceğiniz anlamına gelir. Derleyici program tanımlayıcıda söz dizimi bağlamında göre başvuruları çözebilirsiniz.  

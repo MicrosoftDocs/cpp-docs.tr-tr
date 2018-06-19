@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385682"
 ---
 # <a name="c-bit-fields"></a>C Bit Alanları
 Bir yapı veya birleşim üyeleri için Bildirimciler yanı sıra yapısı bildirimcisi de bir belirtilen bit sayısı kadar bir "bit alanı." olarak adlandırılan, olabilir Uzunluğu alan adı bildirimcisi gelen iki nokta ile ayarlanır devre dışı. Bir bit alanı bir tamsayı türü olarak yorumlanır.  

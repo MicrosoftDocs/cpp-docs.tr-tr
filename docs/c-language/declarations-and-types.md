@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32384548"
 ---
 # <a name="declarations-and-types"></a>Bildirimler ve Türler
 Bu bölümde, değişkenlerin, işlevlerin ve türlerin bildirimi ve başlatılması açıklanmaktadır. C dili, standart bir temel veri türleri kümesi içerir. Daha önce tanımlanan türleri temel alan yeni türler bildirerek "türetilmiş türler" adlı kendi veri türlerinizi de ekleyebilirsiniz. Aşağıdaki konular açıklanmaktadır:  

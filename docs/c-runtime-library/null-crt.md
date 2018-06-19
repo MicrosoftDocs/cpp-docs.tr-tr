@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387615"
 ---
 # <a name="null-crt"></a>NULL (CRT)
 **NULL** boş işaretçi değeri birçok işaretçi işlemleri ve işlevleri ile kullanılır. 0 olarak eşdeğerdir. **NULL** aşağıdaki üstbilgi dosyaları tanımlanır: CRTDBG. H, YEREL AYAR. H, STDDEF. H, STDIO. H, STDLIB. H, DİZE. H, TCHAR. H, SAAT. H ve WCHAR. H.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32379906"
 ---
 # <a name="reusing-inline-files"></a>Satır İçi Dosyaları Yeniden Kullanma
 Satır içi dosya yeniden kullanmak için belirtin <<*filename* dosya tanımlı ve ilk kullanılabilir olduğunda, daha sonra yeniden *filename* olmadan << aynı veya başka bir sonraki komutu. Satır içi dosya oluşturmak için komut dosyasını kullanan tüm komutları önce çalıştırmanız gerekir.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385051"
 ---
 # <a name="storage-of-bit-fields"></a>Bit Alanları Deposu
 **ANSI 3.5.2.1** int içinde bit alanları ayırma sırasını  

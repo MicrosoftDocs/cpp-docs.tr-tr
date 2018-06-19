@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380371"
 ---
 # <a name="abort-function-c"></a>abort İşlevi (C)
 **ANSI 4.10.4.1** davranışını **abort** açık ve geçici dosyalar açısından işlevi  

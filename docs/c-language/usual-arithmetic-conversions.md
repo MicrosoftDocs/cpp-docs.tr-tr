@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32388863"
 ---
 # <a name="usual-arithmetic-conversions"></a>Olağan Aritmetik Dönüştürmeler
 Çoğu C işleçleri tür dönüştürmeleri için ortak bir türü bir ifadenin işlenenleri getirmek veya makine işlemlerinde kullanılan tamsayı boyutuna kısa değerler genişletmek için gerçekleştirin. C işleçleri tarafından gerçekleştirilen dönüşümleri belirli işleci ve işlenen veya işlenen türü bağlıdır. Ancak, birçok işleçleri kayan ve tam sayı türleri işlenen üzerinde benzer dönüşümleri gerçekleştirir. Bu dönüştürme "aritmetik dönüşümler." bilinen Uyumlu bir türde bir işlenen değer dönüştürülmesi değerine değişikliğe neden olmaz.  

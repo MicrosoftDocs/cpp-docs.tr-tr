@@ -32,6 +32,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32390225"
 ---
 # <a name="argc-argv-wargv"></a>__argc, __argv, __wargv
 `__argc` Genel değişkeni, programa geçirilen komut satırı bağımsız değişkenleri sayısını. `__argv` bir program değişkenleri içeren tek bayt karakter ya da çok byte karakterlik bir dize dizisi işaretçidir ve `__wargv` gösteren bir işaretçidir program değişkenleri içeren bir joker karakter dizeler dizisi. Bu genel değişkenler bağımsız değişkenleri sağlayın `main` veya `wmain`.  

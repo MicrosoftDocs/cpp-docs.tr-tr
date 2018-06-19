@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381726"
 ---
 # <a name="demotion-of-integers"></a>Tam Sayıların İndirgenmesi
 **ANSI 3.2.1.2** daha kısa bir imzalı tamsayıya tamsayı dönüştürmenin sonucunu ya da değeri gösterilemezse işaretsiz tamsayıya eşit uzunlukta imzalı bir tamsayı olarak dönüştürmenin sonucunu  

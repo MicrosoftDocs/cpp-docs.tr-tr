@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33137425"
 ---
 # <a name="how-to-marshal-a-safearray-for-adonet-ccli"></a>Nasıl yapılır: ADO.NET için bir SAFEARRAY'i Sıralama (C++/CLI)
 Yerel ekleneceği gösterilmektedir `SAFEARRAY` bir veritabanı ve veritabanından yönetilen bir dizi yerel bir sıralama nasıl `SAFEARRAY`.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381752"
 ---
 # <a name="characters"></a>Karakterler
 -   [ASCII karakter kümesi](../c-language/ascii-character-set.md)  

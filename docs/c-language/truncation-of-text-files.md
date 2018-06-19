@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385582"
 ---
 # <a name="truncation-of-text-files"></a>Metin Dosyalarının Kesilmesi
 **ANSI 4.9.3** olup bir metin akış üzerinde yazma bu noktanın ötesine kesilecek ilişkili dosya neden olur.  

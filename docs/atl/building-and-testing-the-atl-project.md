@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32354736"
 ---
 # <a name="building-and-testing-the-atl-project"></a>Derleme ve ATL projeyi test etme
 Bölümünde belirtildiği gibi [bileşik denetim ekleme](../atl/inserting-a-composite-control.md), yeni bileşik denetim barındıran bir varsayılan HTML sayfasını projesinin ilk bileşenleri biridir. Bileşik Denetim değiştirme işlemini tamamladıktan sonra tıklatın **yapı çözümü** veya **çözümü yeniden derle** gelen **yapı** menüsü. Proje başarıyla oluşturulur sonra Internet Explorer veya başka bir tarayıcı bileşik denetim projenizin kök dizininde bulunan HTML sayfası yük ve denetim işlevselliğini test etmek.  

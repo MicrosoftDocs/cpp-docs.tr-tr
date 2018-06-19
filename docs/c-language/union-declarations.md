@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391184"
 ---
 # <a name="union-declarations"></a>Birleşim Bildirimleri
 "Birleşim bildirim" bir dizi değişken değerleri ve isteğe bağlı olarak, UNION adlandırma etiket belirtir. Değişken değerleri UNION "üye" olarak adlandırılır ve farklı olabilir. Birleşimler, diğer dillerde "değişken kayıtlar" benzerdir.  

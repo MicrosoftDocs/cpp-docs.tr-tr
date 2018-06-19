@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32388045"
 ---
 # <a name="operator-new-crt"></a>new işleci (CRT)
 Visual Studio 2013'te başlayarak, Evrensel C çalışma zamanı'nı (UCRT) artık yeni C++ özgü işleci destekler ve işlevleri delete işleci. Bu, artık C++ Standart Kitaplığı bir parçasıdır. Daha fazla bilgi için bkz: [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md) ve [new işleci](../cpp/new-operator-cpp.md) C++ dil başvurusu. 

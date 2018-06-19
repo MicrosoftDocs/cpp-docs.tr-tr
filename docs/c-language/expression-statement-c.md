@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385903"
 ---
 # <a name="expression-statement-c"></a>İfade Deyimi (C)
 İfade deyimi yürütüldüğünde, ifade özetlenen kurallarına göre değerlendirilir [ifadeler ve atamalar](../c-language/expressions-and-assignments.md).  

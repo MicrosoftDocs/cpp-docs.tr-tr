@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32382721"
 ---
 # <a name="expressions-and-assignments"></a>İfadeler ve Atamalar
 Bu bölüm ifadeleri oluşturmak için ve C dilinde değerleri atamak için açıklar. Sabitler, tanımlayıcıları, dizeleri ve işlev çağrıları ifadelerinde yönlendirildiği tüm işlenenleri gösterilmektedir. C dili tüm olağan dil işleçleri sahiptir. Bu bölüm, C ya da Microsoft C. benzersiz işleçleri yanı sıra bu işleçleri kapsar Konular şunlardır:  

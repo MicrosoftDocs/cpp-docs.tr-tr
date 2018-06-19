@@ -36,6 +36,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391954"
 ---
 # <a name="format-specification-fields-scanf-and-wscanf-functions"></a>Biçim Belirtimi Alanları: scanf ve wscanf İşlevleri
 Burada yer alan bilgiler tüm geçerli `scanf` güvenli sürümleri de dahil olmak üzere işlevlerin ailesi ve bildirmek için kullanılan simgeler açıklar `scanf` Giriş akışı gibi giriş akışı ayrıştırmayı işlevleri `stdin` için`scanf`, program değişkenleri eklenen değerlerinden.  

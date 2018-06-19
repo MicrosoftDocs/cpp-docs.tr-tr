@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33132560"
 ---
 # <a name="how-to-read-data-from-the-windows-registry-ccli"></a>Nasıl yapılır: Windows Kayıt Defterinden Veri Okuma (C++/CLI)
 Aşağıdaki kod örneğinde <xref:Microsoft.Win32.Registry.CurrentUser> Windows kayıt defterinden veri okuma anahtarı. İlk olarak, alt anahtarlar kullanılarak numaralandırılır <xref:Microsoft.Win32.RegistryKey.GetSubKeyNames%2A> yöntemi ve ardından kimlikleri alt anahtarı kullanılarak açılır <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> yöntemi. Kök anahtarları gibi her alt tarafından temsil edilen <xref:Microsoft.Win32.RegistryKey> sınıfı. Son olarak, yeni <xref:Microsoft.Win32.RegistryKey> nesnesi anahtar/değer çiftlerini numaralandırmak için kullanılır.  

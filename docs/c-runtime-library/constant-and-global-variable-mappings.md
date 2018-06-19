@@ -29,6 +29,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387531"
 ---
 # <a name="constant-and-global-variable-mappings"></a>Sabit ve Global Değişken Eşlemeleri
 Bu genel metin sabiti, genel değişkeni ve standart türü eşlemeleri TCHAR içinde tanımlanır. H ve olup olmadığına göre değişir sabiti `_UNICODE` veya `_MBCS` programınıza tanımlandı.  

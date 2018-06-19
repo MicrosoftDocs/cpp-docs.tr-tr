@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380327"
 ---
 # <a name="return-values-c"></a>Dönüş Değerleri (C++)
 64 bit sığması skaler bir dönüş değeri RAX üzerinden döndürülür — bu __m64 türleri içerir. Float, double ve vektör türleri gibi dahil olmayan skaler türleri [__m128](../cpp/m128.md), [__m128i](../cpp/m128i.md), [__m128d](../cpp/m128d.md) XMM0'döndürdü. Kullanılmayan BITS RAX veya XMM0 döndürülen değeri durumunu tanımlanmamıştır.  

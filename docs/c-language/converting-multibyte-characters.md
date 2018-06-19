@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381791"
 ---
 # <a name="converting-multibyte-characters"></a>Birden Çok Baytlı Karakterleri Dönüştürme
 **ANSI 3.1.3.4** karşılık gelen geniş karakterler (kodları) geniş karakter sabiti için birden çok baytlı karakterler dönüştürmek için kullanılan geçerli yerel ayar  

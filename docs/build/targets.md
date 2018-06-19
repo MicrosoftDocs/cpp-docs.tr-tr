@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380268"
 ---
 # <a name="targets"></a>Hedefler
 Bir bağımlılık satırda herhangi bir geçerli dosya adı, dizin adı'nı kullanarak bir veya daha fazla hedeflerini belirtin veya [pseudotarget](../build/pseudotargets.md). Birden çok hedefi bir veya daha fazla boşluk ya da sekme ile ayırın. Hedefleri büyük küçük harfe duyarlı değildir. Yollar ile dosya adlarını izin verilir. Bir hedef 256 karakterden uzun olamaz. İki nokta üst üste önceki hedef tek bir karakter ise ayıran boşluk kullanın; Aksi takdirde, NMAKE harf iki nokta üst üste birleşim sürücü tanımlayıcısı olarak yorumlar.  

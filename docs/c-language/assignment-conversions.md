@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381840"
 ---
 # <a name="assignment-conversions"></a>Atama Dönüştürmeleri
 Atama işlemlerinde, atanan değerin türü atamayı alan değişkenin türüne dönüştürülür. C, bu bilgi dönüştürme sırasında kaybolsa bile integral ve kayan türler arasında atama ile yapılan dönüştürmelere izin verir. Kullanılan dönüştürme yöntem atamasını ilgili türleri açıklandığı gibi bağlıdır [olağan aritmetik dönüştürmeler](../c-language/usual-arithmetic-conversions.md) ve aşağıdaki bölümlerdeki:  

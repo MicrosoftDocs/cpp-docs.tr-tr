@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32384378"
 ---
 # <a name="incomplete-types"></a>Eksik Türler
 Eksik bir tür, bir tanımlayıcıyı açıklayan, ancak tanımlayıcının boyutunu belirlemek için gereken bilgileri eksik olan bir türdür. Bir "eksik tür" aşağıdakilerden biri olabilir:  

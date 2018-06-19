@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387638"
 ---
 # <a name="example-program"></a>Örnek Program
 Aşağıdaki C kaynak program iki kaynak dosyaları içerir. Bazı çeşitli bildirimler ve tanımlar C programı'olası bir bakış sağlar. Bu kitap sonraki bölümlerde bu bildirimler, tanımları ve başlatmaları yazma ve C anahtar sözcükleri gibi kullanmayı açıklar **statik** ve `extern`. `printf` İşlevi C üstbilgi dosyasında STDIO bildirildi. H.  
