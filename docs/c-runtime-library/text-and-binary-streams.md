@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32410937"
 ---
 # <a name="text-and-binary-streams"></a>Metin ve İkili Akışlar
 Bir metin akış metin odaklı bir görüntüye yazılabilir ve böylece okunabilir hale metnin bir veya daha fazla satırlardan oluşur. Bir metin akışından okuma bulunduğunda program okur bir `NL` (yeni satır) her satırın sonundaki. Bir metin akış yazarken, program Yazar bir `NL` bir satırın sonuna sinyal. Metin dosyalarını olarak temsil etmek için hedef ortamlar arasında farklı kuralları eşleştirmek için kitaplık işlevleri sayısı ve program ve bir metin akış arasında aktarılan karakterlerinin gösterimlerini değiştirebilirsiniz.  

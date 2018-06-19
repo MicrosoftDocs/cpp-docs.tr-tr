@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32417210"
 ---
 # <a name="c-language-reference"></a>C++ Dil Başvurusu
 Bu başvuru, C++ programlama dilini Microsoft Visual C++ içinde uygulandığı şekliyle açıklar. Kuruluş dayanır *C++ başvuru elle açıklama* Mine Ellis ve çalışan Bjarne Stroustrup tarafından ve ANSI/ISO C++ uluslararası standart (ISO/IEC FDIS 14882). Microsoft'a özgü C++ dili uygulama özellikleri dahildir.  

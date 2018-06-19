@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358331"
 ---
 # <a name="allocating-and-releasing-memory-for-a-bstr"></a>Ayırma ve için BSTR belleği serbest bırakma
 Oluşturduğunuzda `BSTR`s ve bunları COM nesneleri arasında geçişi, kullandıkları bellek sızıntıları önlemek için bellek değerlendirmesini ilgilenebilmek gerekir. Zaman bir `BSTR` bir arabirim içinde kalır, siz gerekir serbest kendi bellek ile bittiğinde. Ancak, bir `BSTR` geçişleri arabirim dışında alıcı nesnesini alır kendi bellek yönetimi sorumluluğunu.  

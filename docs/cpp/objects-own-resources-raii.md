@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32419941"
 ---
 # <a name="objects-own-resources-raii"></a>Nesnelerin Kaynakları (RAII)
 Kendi kaynaklarını nesneler emin olun. Bu ilke olarak da bilinen "kaynak edinme başlatma" değil veya "RAII."  

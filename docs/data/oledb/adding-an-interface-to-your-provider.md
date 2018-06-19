@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33093552"
 ---
 # <a name="adding-an-interface-to-your-provider"></a>Sağlayıcınıza Arabirim Ekleme
 Arabirim (OLE DB Sağlayıcı Sihirbazı tarafından oluşturulan genellikle veri kaynağı, satır kümesi, komut veya oturum nesneleri) için eklemek istediğiniz nesne belirler. Arabirimi eklemek için gereksinim duyduğunuz nesnenin sağlayıcınız şu anda desteklemediği olduğunu mümkündür. Bu durumda, ATL OLE DB sağlayıcısı nesneyi oluşturmak için sihirbazı çalıştırın. Sınıf Görünümü'nde projeye sağ tıklayın, **sınıfı Ekle** gelen **Ekle** menüsüne ve ardından **ATL OLE DB sağlayıcısı**. Arabirim kodunu ayrı bir klasöre yerleştirin ve ardından dosyaları sağlayıcı projenize kopyalamak isteyebilirsiniz.  

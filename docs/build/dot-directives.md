@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367670"
 ---
 # <a name="dot-directives"></a>Nokta Yönergeleri
 Nokta yönergeleri bir satır başına bir açıklama bloğundaki dışında belirtin. Nokta yönergeleri noktayla başlayan (. ) ve sonra iki nokta (:) gelmelidir. Alanları ve sekmeler izin verilir. Nokta yönerge adları büyük/küçük harfe duyarlıdır ve büyük harfle yazılır.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33087584"
 ---
 # <a name="platformmetadataflagsattribute-attribute"></a>Platform::metadata::FlagsAttribute özniteliği
 Numaralandırma bit alan olarak kabul olduğunu gösterir; diğer bir deyişle, bayrakları kümesi.  

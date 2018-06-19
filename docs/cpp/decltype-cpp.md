@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32418045"
 ---
 # <a name="decltype--c"></a>decltype (C++)
 `decltype` tür belirticisi belirtilen ifade türünü ortaya çıkarır. `decltype` İle birlikte tür tanımlayıcısı, [anahtar sözcüğü otomatik](../cpp/auto-cpp.md), öncelikle Şablon Kütüphanesi yazma geliştiriciler için yararlıdır. Kullanım `auto` ve `decltype` şablon işlevi, return bildirmek için şablon değişkenlerinin türlerinde türüne bağlıdır. Veya başka bir işleve yapılan bir çağrıyı saran ve ardından sarılı işlevin dönüş türünü döndüren bir şablon işlevi bildirmek için `auto` ve `decltype` kullanın.  

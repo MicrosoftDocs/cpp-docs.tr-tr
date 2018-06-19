@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32422169"
 ---
 # <a name="tilestatic-keyword"></a>tile_static Anahtar Sözcüğü
 `tile_static` Anahtar sözcüğü bir kutucuk iş parçacıklarının tüm iş parçacıkları tarafından erişilebilecek bir değişken bildirmek için kullanılır. Yürütme bildirim noktası ulaştığında ve çekirdek işlevi döndüğünde bitip değişken ömrü başlatır. Döşemeleri kullanma hakkında daha fazla bilgi için bkz: [kullanarak döşeme](../parallel/amp/using-tiles.md).  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361942"
 ---
 # <a name="ccomqiptrelementtraits-class"></a>CComQIPtrElementTraits sınıfı
 Bu sınıf, COM arabirim işaretçileri koleksiyonları oluştururken yöntemleri, statik işlevler ve tür tanımları yararlı sağlar.  

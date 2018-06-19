@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32359668"
 ---
 # <a name="ustringorid-class"></a>_U_STRINGorID sınıfı
 Bu bağımsız değişken bağdaştırıcı sınıfı ya da kaynak adları verir ( `LPCTSTR`s) veya kaynak kimlikleri ( **UINT**s) kullanarak bir dize kimliği dönüştürmek arayan gerek kalmadan bir işleve iletilecek **MAKEINTRESOURCE** makrosu.  

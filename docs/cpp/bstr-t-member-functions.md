@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32408198"
 ---
 # <a name="bstrt-member-functions"></a>_bstr_t Üye İşlevleri
 Hakkında bilgi için `_bstr_t` üye işlevleri bkz [_bstr_t sınıfı](../cpp/bstr-t-class.md).  

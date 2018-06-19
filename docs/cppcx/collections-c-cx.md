@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33094263"
 ---
 # <a name="collections-ccx"></a>Koleksiyonlar (C + +/ CX)
 C + +/ CX programı standart Şablon kitaplığı (STL) kapsayıcıları veya herhangi bir kullanıcı tanımlı koleksiyon türü boş kullanımını yapabilir. Ancak, geçirdiğiniz zaman koleksiyonları ve geriye Windows çalışma zamanı uygulama ikili arabirimi (ABI) — Örneğin, bir XAML denetimi veya bir JavaScript istemci — Windows çalışma zamanı koleksiyon türleri kullanmanız gerekir.  

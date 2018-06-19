@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32424476"
 ---
 # <a name="using-declaration"></a>using Bildirimi
 Using bildirimi tanıtır bir ad bildirim temelli bölgede içine using bildirimi görüntülenir.  

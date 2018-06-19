@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367478"
 ---
 # <a name="dynamic-parameter-stack-area-construction"></a>Dinamik Parametre Yığın Alanı Yapımı
 Çerçeve işaretçisi kullanılırsa, dinamik parametre yığın alanı oluşturmak için seçeneği bulunmaktadır. Bu şu anda yapılmaz [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] derleyici.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356967"
 ---
 # <a name="queryinterface"></a>QueryInterface
 Tarafından bir nesne express statik olarak (Bu örneği oluşturulmadan önce) sağladığı işlevselliğe mekanizmaları olsa da, temel COM mekanizması kullanmaktır **IUnknown** adlı bir yöntem [QueryInterface ](http://msdn.microsoft.com/library/windows/desktop/ms682521).  

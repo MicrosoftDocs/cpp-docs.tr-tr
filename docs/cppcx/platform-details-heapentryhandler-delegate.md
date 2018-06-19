@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33087071"
 ---
 # <a name="platformdetailsheapentryhandler-delegate"></a>Platform::details::HeapEntryHandler temsilci
 Bu temsilci yalnızca dahili kullanım içindir ve geliştirme için kullanılmak üzere tasarlanmamıştır.  

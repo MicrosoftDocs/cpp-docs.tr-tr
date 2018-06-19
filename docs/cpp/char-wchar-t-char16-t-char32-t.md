@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32413901"
 ---
 # <a name="char-wchart-char16t-char32t"></a>char, wchar_t, char16_t, char32_t
 Türleri **char**, **wchar_t**, **char16_t** ve **char32_t** alfasayısal karakterler temsil eden yerleşik türleri olarak alfasayısal olmayan karakterlerin ve yazdırılamayan karakterler.

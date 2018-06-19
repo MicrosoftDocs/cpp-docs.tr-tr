@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32362590"
 ---
 # <a name="putting-the-control-on-a-web-page-atl-tutorial-part-7"></a>Denetimi Web Sayfasına Koyma (ATL Eğitmeni, Bölüm 7)
 Denetim şimdi tamamlandı. Gerçek dünya durumda işe denetiminizi görmek için bir Web sayfasında yerleştirin. Denetim tanımlandığında denetimi içeren bir HTML dosyası oluşturuldu. PolyCtl.htm dosyadan Aç **Çözüm Gezgini**, bir Web sayfası denetiminizde görebilirsiniz.  

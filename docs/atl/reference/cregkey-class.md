@@ -57,6 +57,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366646"
 ---
 # <a name="cregkey-class"></a>CRegKey sınıfı
 Bu sınıf, sistem kayıt defteri girdileri düzenleme için yöntemleri sağlar.  

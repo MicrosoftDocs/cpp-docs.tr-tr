@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355393"
 ---
 # <a name="benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt"></a>Avantajları ve bileşim CRT bağlamak için kullanılan yöntemi
 Projenizi ile CRT dinamik veya statik olarak bağlayabilirsiniz. Aşağıdaki tabloda, avantajları ve hangi yöntemin kullanılacağını seçerken söz konusu bileşim özetlenmektedir.  

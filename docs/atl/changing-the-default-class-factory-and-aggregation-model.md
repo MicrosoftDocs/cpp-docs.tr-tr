@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355245"
 ---
 # <a name="changing-the-default-class-factory-and-aggregation-model"></a>Varsayılan üreteci ve toplama modelini değiştirme
 ATL kullanan [CComCoClass](../atl/reference/ccomcoclass-class.md) , nesne için varsayılan sınıf Fabrika ve toplama modeli tanımlamak için. `CComCoClass` Aşağıdaki iki makroları belirtir:  

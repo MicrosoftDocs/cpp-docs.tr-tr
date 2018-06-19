@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358400"
 ---
 # <a name="using-a-window"></a>Bir penceresini kullanma
 Sınıf [CWindow](../atl/reference/cwindow-class.md) bir pencere kullanmanıza olanak sağlar. Bir pencere ekleme sonra bir `CWindow` nesnesi, ardından çağırabilir `CWindow` pencereyi denetlemek için yöntemler. `CWindow` Ayrıca içeren bir `HWND` dönüştürmek için işleci bir `CWindow` nesnesine bir `HWND`. Bu nedenle geçirebilirsiniz bir `CWindow` nesnesine bir pencere için bir tanıtıcı gerektiren herhangi bir işlev. Kolayca karıştırabilirsiniz `CWindow` yöntem çağrılarını ve geçici nesneleri oluşturmadan Win32 işlev çağrıları.  

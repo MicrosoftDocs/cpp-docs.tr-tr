@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356784"
 ---
 # <a name="atl-collections-and-enumerators"></a>ATL Koleksiyonları ve Numaralandırmalar
 A `collection` veri öğelerinin (Ham verileri veya diğer nesnelerin) grubuna erişim sağlayan bir arabirim sağlayan bir COM nesnesidir. Bir grup erişimi sağlama olarak bilinen için standartlarını takip eden bir arabirim bir *koleksiyonu arabirimi*.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32421279"
 ---
 # <a name="selection-statements-c"></a>Seçim Deyimleri (C++)
 C++ seçim deyimleri [varsa](../cpp/if-else-statement-cpp.md) ve [geçiş](../cpp/switch-statement-cpp.md), koşullu kodun bölümlerini yürütmek için bir yol sağlar.  

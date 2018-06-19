@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32424276"
 ---
 # <a name="structured-exception-handling-cc"></a>Yapılandırılmış Özel Durum İşleme (C/C++)
 Yapılandırılmış özel durum işleme (SEH) Windows ve Visual C++ desteklemesine rağmen çünkü daha taşınabilir ve esnek kodu sağlar ISO standart C++ özel durum işleme kullanmanızı öneririz. Bununla birlikte, var olan kodda ya da programlar belirli türleri için hala SEH kullanmanız gerekebilir.  

@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32418978"
 ---
 # <a name="linkage-in-names-with-class-scope"></a>Sınıf Kapsamlı Adlardaki Bağlantı
 Aşağıdaki bağlantı kuralları, sınıf kapsamına sahip adlar için geçerlidir:  

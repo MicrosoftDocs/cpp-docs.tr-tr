@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32410739"
 ---
 # <a name="explicit-specialization-of-function-templates"></a>İşlev Şablonlarının Açık Alt Uzmanlaşması
 İşlev şablonu ile bu tür için bir açık alt uzmanlaşması (geçersiz kılma) işlevi şablonu sağlayarak belirli bir tür için özel bir davranış tanımlayabilirsiniz. Örneğin:  

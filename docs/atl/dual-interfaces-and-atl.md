@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355052"
 ---
 # <a name="dual-interfaces-and-atl"></a>Çift arabirimler ve ATL
 Çift arabirim yöntemlerinden görüntüleme arabirimi yöntemleri veya vtable yöntemleri olarak erişilmesini sağlar. Bu bölüm bir ATL açısından çift arabirimler özelliklerden bazıları kapsar.  

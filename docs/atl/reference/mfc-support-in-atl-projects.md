@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32360647"
 ---
 # <a name="mfc-support-in-atl-projects"></a>ATL projeleri MFC desteği
 Seçerseniz **destek MFC** uygulaması MFC Uygulama nesnesi (sınıfı) olarak projenize ATL Proje Sihirbazı'nda bildirir. Proje MFC kitaplığını başlatır ve bir sınıf oluşturur (sınıfı *ProjName*) öğesinden türetilen [CWinApp](../../mfc/reference/cwinapp-class.md).  

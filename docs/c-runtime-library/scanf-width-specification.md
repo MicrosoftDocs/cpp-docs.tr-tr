@@ -29,6 +29,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32418204"
 ---
 # <a name="scanf-width-specification"></a>sacnf Genişlik Belirtimi
 Biçim dizeleri yorumu bu bilgileri uygulandığı `scanf` gibi güvenli sürümleri dahil olmak üzere işlevlerin ailesi `scanf_s`. Bu İşlevler normalde giriş akışı belirteçleri dizisi ayrılmıştır varsayalım. Belirteçleri boşluk (boşluk, sekme ya da yeni satır) tarafından veya bir sayısal veri türü sayısal metne dönüştürülemez ilk karakter belirtildiği gibi doğal sonuna sayısal türler söz konusu olduğunda ayrılır. Ancak, bir belirteç doğal bitişinden önce durdurmak için giriş ayrıştırma neden genişlik belirtimi kullanılabilir.  

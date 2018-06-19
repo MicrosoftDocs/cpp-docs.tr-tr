@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33098413"
 ---
 # <a name="crowsetgetoriginaldata"></a>CRowset::GetOriginalData
 Çağrıları **IRowsetUpdate::GetOriginalData** en son öğesinden alınan veya veri kaynağına aktarılan verileri almak üzere.  

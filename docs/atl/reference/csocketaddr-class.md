@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32363402"
 ---
 # <a name="csocketaddr-class"></a>CSocketAddr sınıfı
 Bu sınıf ana bilgisayar adları hem IPv4 hem de IPv6 biçimlerini destekleyen konak adreslere dönüştürme yöntemleri sağlar.  

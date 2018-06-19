@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356402"
 ---
 # <a name="exporting-string-classes-using-cstringt"></a>CStringT kullanarak dize sınıfları dışarı aktarma
 Geçmişte, MFC geliştiriciler türetilmiş `CString` kendi dize sınıfları özelleştirmek üzere. Microsoft Visual C++ .NET (MFC 8.0) içinde [CString](../atl-mfc-shared/using-cstring.md) sınıfı olarak adlandırılan bir şablon sınıfı tarafından değiştirilen [CStringT](../atl-mfc-shared/reference/cstringt-class.md). Bu, birkaç avantaj sağlanan:  

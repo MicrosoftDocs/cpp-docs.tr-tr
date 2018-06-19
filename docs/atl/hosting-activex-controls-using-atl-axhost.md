@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356259"
 ---
 # <a name="hosting-activex-controls-using-atl-axhost"></a>ATL AXHost kullanarak ActiveX denetimlerini barındırma
 Bu konudaki örnek AXHost oluşturma ve çeşitli ATL işlevleri kullanarak bir ActiveX denetimini barındırmak nasıl göstermektedir. Ayrıca denetim ve havuz olayları erişmek nasıl gösterir (kullanarak [IDispEventImpl](../atl/reference/idispeventimpl-class.md)) barındırılan denetiminden. Örnek ana penceresinde veya alt pencere Takvim denetimi barındırır.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358297"
 ---
 # <a name="fundamentals-of-atl-com-objects"></a>ATL COM nesneleri temelleri
 Aşağıdaki çizim sınıfları ve ATL COM nesneyi tanımlamak için kullanılan arabirimleri arasındaki ilişkiyi gösterir.  

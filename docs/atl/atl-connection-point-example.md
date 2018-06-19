@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355187"
 ---
 # <a name="atl-connection-point-example"></a>ATL bağlantı noktası örneği
 Bu örnek destekleyen bir nesne gösterir [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) giden arabirim olarak:  

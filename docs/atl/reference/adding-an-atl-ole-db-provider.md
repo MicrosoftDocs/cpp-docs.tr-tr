@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357564"
 ---
 # <a name="adding-an-atl-ole-db-provider"></a>ATL OLE DB sağlayıcısı ekleme
 ATL OLE DB sağlayıcısı için bir proje eklemek için bu sihirbazı kullanın. ATL OLE DB sağlayıcısı, bir veri kaynağı, oturum, komut ve satır kümesi sınıfları oluşur. Proje ATL COM uygulaması olarak oluşturulmuş olması gerekir.  

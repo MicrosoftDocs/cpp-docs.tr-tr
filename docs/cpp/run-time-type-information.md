@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32419998"
 ---
 # <a name="run-time-type-information"></a>Çalışma Zamanı Türü Bilgileri
 Çalışma zamanı türü bilgileri (RTTI) program yürütülmesi sırasında belirlenmesi için bir nesne türü izin veren bir mekanizmadır. Sınıf kitaplıkları birçok satıcıları bu işlevselliği kendilerini uygulama çünkü RTTI C++ dili eklendi. Bu kitaplıklar arasındaki uyumsuzluklar neden oldu. Bu nedenle, belirgin hale çalışma zamanı türü bilgileri dil düzeyinde gerektiği için destek.  

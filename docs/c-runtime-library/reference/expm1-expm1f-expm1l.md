@@ -42,6 +42,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32398412"
 ---
 # <a name="expm1-expm1f-expm1l"></a>expm1, expm1f, expm1l
 

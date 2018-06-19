@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32422442"
 ---
 # <a name="typeinfo-class"></a>type_info Sınıfı
 **Type_info** sınıfı programında derleyici tarafından üretilen türü bilgileri açıklar. Bu sınıfın nesneleri, tür için bir ada etkili şekilde bir işaretçi depolar. **Type_info** sınıfı, iki tür eşitlik için karşılaştırılması veya harmanlama sırası için uygun kodlanmış bir değer de depolar. Türler için kodlama kurallarını ve harmanlama sırası belirsizdir ve programdan programa farklılık gösterebilir.  

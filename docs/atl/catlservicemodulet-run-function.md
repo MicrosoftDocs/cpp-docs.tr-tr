@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355131"
 ---
 # <a name="catlservicemoduletrun-function"></a>CAtlServiceModuleT::Run işlevi
 **Çalıştırma** çağrıları içeren `PreMessageLoop`, `RunMessageLoop`, ve `PostMessageLoop`. Çağrılan sonra `PreMessageLoop` ilk hizmetin iş parçacığı kimliği depolar Hizmetin kendisi göndererek kapatmak için bu kimliği kullanacağı bir **WM_QUIT** Win32 API işlevini kullanarak ileti [PostThreadMessage](http://msdn.microsoft.com/library/windows/desktop/ms644946).  

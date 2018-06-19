@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357411"
 ---
 # <a name="application-settings-atl-project-wizard"></a>Uygulama ayarları, ATL Proje Sihirbazı
 Kullanım **uygulama ayarları** tasarlamak ve yeni bir ATL projesine temel özellikleri eklemek için ATL Proje Sihirbazı sayfasında.  

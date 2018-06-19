@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32363265"
 ---
 # <a name="aggregates-and-unions"></a>Toplamlar ve Birleşimler
 Diziler, yapılar ve birleşimleri, gibi diğer türleri tutarlı toplama ve birleşim depolama ve veri alma olun daha sıkı hizalama gereksinimleri vardır. Dizi, yapı ve birleşim tanımlarında şunlardır:  

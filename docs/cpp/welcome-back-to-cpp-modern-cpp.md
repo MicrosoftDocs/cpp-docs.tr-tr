@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32424873"
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++'a (Modern C++) Tekrar Hoş Geldiniz
 C++ dünyanın en yaygın olarak kullanılan programlama dillerinde biridir. İyi yazılmış C++ programları hızlı ve verimlidir. Diğer diller çok çeşitli uygulamaları oluşturmak için kullandığı için dil daha esnektir — eğlenceli ve aygıt sürücüleri, katıştırılmış programları ve Windows istemci uygulamaları için yüksek performanslı bilimsel yazılım heyecan verici oyunlar. 20 yıldan fazla, C++, bunlar ve diğer birçok gibi sorunları çözmek için kullanılmış. Ne değil bilirsiniz C++ programcıları artan sayıda dün dowdy C stili programlama yukarı Katlanmış ve modern C++ yerine donned olmasıdır.  

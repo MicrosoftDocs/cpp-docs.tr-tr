@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361036"
 ---
 # <a name="using-task-manager"></a>Görev Yöneticisi'ni kullanma
 En basit yolu bir hizmette hata ayıklamak için Görev Yöneticisi'ni kullanarak biridir. Hizmet çalışırken, Görev Yöneticisi'ni başlatın ve tıklatın **işlemleri** sekmesi. EXE adına sağ tıklayın ve ardından **hata ayıklama**. Bu, çalışan işlem için bağlı Visual C++ çalıştırır. Şimdi, **bölün** üzerinde **hata ayıklama** menü kodunuzda kesme noktaları ayarlamanıza olanak sağlar. Tıklatın **çalıştırmak** seçili noktalarınıza çalıştırmak için.  

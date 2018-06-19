@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358905"
 ---
 # <a name="stock-properties-atl-control-wizard"></a>Stok özellikleri, ATL Denetim Sihirbazı
 Sihirbazın bu sayfası denetimi için desteklenen stok özellikleri tanımlar. Varsayılan olarak, hiçbir özellik tanımlanır.  

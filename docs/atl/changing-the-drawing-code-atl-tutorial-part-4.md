@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358918"
 ---
 # <a name="changing-the-drawing-code-atl-tutorial-part-4"></a>Çizim Kodunu değiştirme (ATL Eğitmeni, Bölüm 4)
 Varsayılan olarak, bir kare ve metin denetimin çizim kodunu görüntüler **PolyCtl**. Bu adımda, daha ilginç bir şey görüntülemek için kodunu değiştirir. Aşağıdaki görevleri oynayan:  

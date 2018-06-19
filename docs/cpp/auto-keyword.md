@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32410005"
 ---
 # <a name="auto-keyword"></a>auto Anahtar Sözcüğü
 `auto` anahtar sözcüğü bir bildirim belirticisidir. Ancak, C++ standardı bu anahtar sözcük için özgün ve düzeltilmiş bir anlamı tanımlar. Visual C++ 2010 önce `auto` anahtar sözcüğü bir değişkende bildirir *otomatik* depolama sınıfı; yani, yerel bir ömre sahip bir değişken. Visual C++ 2010 ile başlayan `auto` anahtar sözcüğü bildiriminden başlatma ifadesinden türü anlaşılan bir değişken bildirir. [/Zc:auto&#91;-&#93; ](../build/reference/zc-auto-deduce-variable-type.md) derleyici seçeneği denetimleri anlamını `auto` anahtar sözcüğü.  

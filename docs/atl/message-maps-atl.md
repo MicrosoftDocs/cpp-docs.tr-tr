@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357264"
 ---
 # <a name="message-maps-atl"></a>İleti eşlemeleri (ATL)
 İleti eşlemesi işleyici işlevi belirli ileti, komut veya bildirim ile ilişkilendirir. ATL'ın kullanarak [ileti eşleme makroları](../atl/reference/message-map-macros-atl.md), bir pencere için ileti eşlemesi belirtebilirsiniz. Pencere yordamları `CWindowImpl`, `CDialogImpl`, ve `CContainedWindowT` kendi ileti eşlemesi pencerenin iletileri doğrudan.  

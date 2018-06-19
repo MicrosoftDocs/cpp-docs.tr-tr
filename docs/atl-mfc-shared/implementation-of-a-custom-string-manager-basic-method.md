@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355731"
 ---
 # <a name="implementation-of-a-custom-string-manager-basic-method"></a>Uygulama bir özel dize Yöneticisi'nin (temel yöntemi)
 Dize verilerini ATL tarafından sağlanan kullanmak için bellek ayırma şeması özelleştirmek için en kolay yolu **CAtlStringMgr** sınıf ancak kendi bellek ayırma yordamlar sağlar. Oluşturucusu **CAtlStringMgr** tek bir parametre alır: gösteren bir işaretçi bir `IAtlMemMgr` nesnesi. `IAtlMemMgr` yığın için genel bir arabirim sağlayan bir Özet temel sınıftır. Kullanarak `IAtlMemMgr` arabirimi, **CAtlStringMgr** ayırır, yeniden ayırır ve dize verilerini depolamak için kullanılan belleği serbest bırakır. Her iki uygulama için `IAtlMemMgr` kendiniz arabirim veya beş sağlanan ATL bellek yöneticisi sınıflarından birini kullanın. ATL tarafından sağlanan bellek yöneticilerini yalnızca mevcut bellek ayırma tesis kaydır:  

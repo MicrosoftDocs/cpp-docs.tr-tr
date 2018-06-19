@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32363829"
 ---
 # <a name="atl-utilities-reference"></a>ATL Yardımcı Programları Başvurusu
 ATL yolları ve URL'ler biçiminde işlemek için kod sağlar [CPathT](../atl/reference/cpatht-class.md) ve [CUrl](../atl/reference/curl-class.md). İş parçacığı havuzu [CThreadPool](../atl/reference/cthreadpool-class.md), uygulamalarınızda kullanılabilir. Bu kod, atlpath.h ve atlutil.h bulunabilir.  

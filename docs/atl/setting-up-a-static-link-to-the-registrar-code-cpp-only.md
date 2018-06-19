@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32360194"
 ---
 # <a name="setting-up-a-static-link-to-the-registrar-code-c-only"></a>Kaydedici kod (C++ yalnızca) statik bağlantı kurma
 C++ istemcileri kayıt şirketinin kod statik bağlantı oluşturabilirsiniz. Statik kayıt şirketinin ayrıştırıcı bağlama yayın derlemesi için yaklaşık 5 K ekler.  

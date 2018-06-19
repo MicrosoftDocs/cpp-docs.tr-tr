@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358775"
 ---
 # <a name="options-atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı Seçenekleri
 Özellik sayfası oluşturmakta olduğunuz iş parçacığı modeli ve toplama düzeyini tanımlamak için sihirbazın bu sayfayı kullanın.  

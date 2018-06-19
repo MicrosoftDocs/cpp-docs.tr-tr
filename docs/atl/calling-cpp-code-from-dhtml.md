@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355467"
 ---
 # <a name="calling-c-code-from-dhtml"></a>DHTML C++ kodu çağırma
 DHTML denetimi Test kapsayıcısı veya Internet Explorer gibi bir kapsayıcıda barındırılabilir. Bkz: [test özellikleri ve olayları Test kapsayıcısı ile](../mfc/testing-properties-and-events-with-test-container.md) Test kapsayıcısı erişim hakkında bilgi için.  

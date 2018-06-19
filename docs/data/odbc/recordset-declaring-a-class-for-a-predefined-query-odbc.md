@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33092381"
 ---
 # <a name="recordset-declaring-a-class-for-a-predefined-query-odbc"></a>Kayıt Kümesi: Önceden Tanımlanmış Sorgu için Bir Sınıf Bildirme (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  

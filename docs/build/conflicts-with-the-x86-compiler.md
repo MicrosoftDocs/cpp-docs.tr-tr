@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366919"
 ---
 # <a name="conflicts-with-the-x86-compiler"></a>x86 Derleyicisi ile Çakışma
 X86 kullandığınızda 4 bayt yığında otomatik olarak hizalanmaz büyük veri türleri bir uygulama derlemek için derleyicisi. Çünkü derleyici olan bir 4 bayt hizalı yığını, 4 bayttan 64-bit tamsayı, büyük bir şey yapamazsınız otomatik olarak hizalı bir 8 bayt adresine x86 mimarisi.  

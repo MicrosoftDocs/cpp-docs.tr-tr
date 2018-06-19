@@ -32,6 +32,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33092600"
 ---
 # <a name="odbc-the-odbc-cursor-library"></a>ODBC: ODBC İmleç Kitaplığı
 Bu konuda ODBC imleç kitaplığı açıklar ve nasıl kullanılacağını açıklar. Daha fazla bilgi için bkz.:  

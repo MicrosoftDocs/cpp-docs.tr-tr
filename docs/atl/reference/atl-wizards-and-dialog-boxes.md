@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356679"
 ---
 # <a name="atl-wizards-and-dialog-boxes"></a>ATL sihirbazları ve iletişim kutuları
 Etkin Şablon kitaplığı (ATL) sihirbazları çeşitli COM nesneleri için Demirbaş kod oluşturur. Bir proje için kısayol menüsünü açarak sihirbazları çalıştırabilirsiniz **Çözüm Gezgini** ve seçme **Ekle**, **sınıfı**.  

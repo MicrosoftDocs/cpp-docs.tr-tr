@@ -14,6 +14,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33086505"
 ---
 # <a name="boxing-ccx"></a>Kutulama (C + +/ CX)
 *Kutulama* bir değer türü değişkeni gibi kaydırma [Windows::Foundation::DateTime](http://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx)— veya gibi temel skaler bir tür `int`— değişkeni götüren bir yönteme geçirildiğinde ref sınıfında [ Platform::Object ^](../cppcx/platform-object-class.md) girdi türü olarak.  

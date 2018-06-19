@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356181"
 ---
 # <a name="introduction-to-com"></a>COM giriş
 COM, hangi ActiveX denetimlerinin ve OLE üzerine kuruludur "nesne modeli" temel alanıdır. COM diğer bileşenler ve konak uygulamaların işlevselliğini kullanıma sunmak bir nesne sağlar. Hem nesnenin kendisini nasıl kullanıma sunar ve bu Etkilenme ağlar ve işlemler arasında nasıl çalıştığını tanımlar. COM nesnesinin yaşam döngüsü da tanımlar.  

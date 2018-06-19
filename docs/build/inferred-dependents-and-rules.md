@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368050"
 ---
 # <a name="inferred-dependents-and-rules"></a>Çıkarsanan Bağımlılıklar ve Kurallar
 Geçerli çıkarım kuralı varsa NMAKE bir oluşturulursa bağımlı bir hedef için varsayar. Bir kural geçerlidir:  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361271"
 ---
 # <a name="adding-an-event-atl-tutorial-part-5"></a>Olay Ekleme (ATL Eğitmeni, Bölüm 5)
 Bu adımda, ekleyeceksiniz bir `ClickIn` ve `ClickOut` ATL Denetim Olayı. Ateşlenir `ClickIn` kullanıcı Çokgen ve yangın içinde tıklarsa olay `ClickOut` kullanıcı dışında tıklarsa. Bir olay eklemek için görevleri aşağıdaki gibidir:  

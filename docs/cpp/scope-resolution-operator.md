@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32420947"
 ---
 # <a name="scope-resolution-operator-"></a>Kapsam Çözümü İşleci: ::
 Kapsam çözümü işleci `::` tanımlamak ve farklı kapsamlarda kullanılan tanımlayıcıları belirsizliğini ortadan kaldırmak için kullanılır. Kapsam hakkında daha fazla bilgi için bkz: [kapsam](../cpp/scope-visual-cpp.md).  

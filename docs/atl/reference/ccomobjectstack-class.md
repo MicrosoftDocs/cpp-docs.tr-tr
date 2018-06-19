@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32360749"
 ---
 # <a name="ccomobjectstack-class"></a>CComObjectStack sınıfı
 Bu sınıf geçici bir COM nesnesi oluşturur ve bir iskelet uygulamasıyla sağlar **IUnknown**.  

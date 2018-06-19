@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32422332"
 ---
 # <a name="specifiers"></a>Tanımlayıcılar
 Bu konuda açıklanmaktadır *decl tanımlayıcıları* (bildirim tanımlayıcıları) bileşeninin bir [bildirimi](declarations-and-definitions-cpp.md).  

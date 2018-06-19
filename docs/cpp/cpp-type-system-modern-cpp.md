@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32418516"
 ---
 # <a name="c-type-system-modern-c"></a>C++ Tür Sistemi (Modern C++)
 Kavramı *türü* c++'ta çok önemlidir. Her değişken, işlev bağımsız değişkeni ve işlev dönüş değeri; derlenebilmeleri için bir türe sahip olmalıdır. Ayrıca, her ifadeye (değişmez değerler dahil), değerlendirilmeden önce derleyicisi tarafından dolaylı olarak bir tür tanımlanır. Bazı örnekler türlerinin `int` tam sayı değerlerini depolamak için `double` kayan nokta değerlerini depolamak için (olarak da bilinen *skaler* veri türleri), veya standart kitaplığı sınıfı [std::basic_string](../standard-library/basic-string-class.md) metin depolamak için. Kendi türü tanımlayarak oluşturabileceğiniz bir `class` veya `struct`. Tür, değişken (veya ifade sonucu) için atanacak bellek miktarını, bu değişkende depolanabilecek değer türlerini, bu değerlerin (bit modelleri olarak) nasıl yorumlanacağını ve gerçekleştirilebilecek işlemleri belirtir. Bu makale, C++ tür sistemiyle ilgili önemli özellikleri basit bir şekilde inceler.  

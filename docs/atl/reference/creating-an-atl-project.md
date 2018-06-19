@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32359009"
 ---
 # <a name="creating-an-atl-project"></a>ATL projesi oluşturma
 ATL projesi oluşturmak için en kolay yolu Win32 Proje klasöründe yer alan ATL Proje Sihirbazı kullanmaktır **yeni proje iletişim kutusu**.  

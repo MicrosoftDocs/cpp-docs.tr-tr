@@ -33,6 +33,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366162"
 ---
 # <a name="cwindowimpl-class"></a>CWindowImpl sınıfı
 Oluşturmak veya bir pencereyi alt sınıf yapma için yöntemleri sağlar.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358931"
 ---
 # <a name="specifying-property-pages"></a>Özellik sayfaları belirtme
 ActiveX denetimi oluşturduğunuzda, genellikle denetim özelliklerini ayarlamak için kullanılan özellik sayfaları ile ilişkilendirmek isteyeceksiniz. Denetim kapsayıcıları kullanma **ISpecifyPropertyPages** hangi özellik sayfaları denetiminizin özelliklerini ayarlamak için kullanılabilir çıkışı bulmak için arabirim. Denetiminizde bu arabirimini uygulaması gerekir.  

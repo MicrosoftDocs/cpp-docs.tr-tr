@@ -21,6 +21,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32058013"
 ---
 # <a name="page"></a>PAGE
 İlk yönergesi satır ayarlar *uzunluğu* ve karakter *genişliği* program liste. Bağımsız değişkenler verilirse, sayfa sonu oluşturur. İkinci yönergesi bölüm numarası artırır ve sayfa sayısı 1 olarak sıfırlar.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32413966"
 ---
 # <a name="hardware-exceptions"></a>Donanım Özel Durumları
 İşletim sistemi tarafından kabul edilen standart özel durumların çoğu, donanım tarafından tanımlanmış özel durumlardır. Windows, birkaç alt düzey yazılım özel durumunu tanır, ancak bunlar genellikle en iyi işletim sistemi tarafından ele alınır.  

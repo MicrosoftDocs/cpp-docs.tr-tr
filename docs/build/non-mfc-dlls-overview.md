@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368648"
 ---
 # <a name="non-mfc-dlls-overview"></a>MFC Dışı DLL'ler: Genel Bakış
 MFC dışı DLL MFC dahili olarak kullanmayan DLL'dir ve MFC veya MFC dışı çalıştırılabilir dosyalar tarafından DLL dışarı aktarılan işlevler çağrılabilir. İşlevler, genellikle standart C arabirimi kullanan MFC dışı DLL'den dışarı aktarılır.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356472"
 ---
 # <a name="adding-an-atl-active-server-page-component"></a>ATL Active Server sayfası bileşeni ekleme
 Etkin Şablon kitaplığı (ATL) nesne projenize eklemek için projenize ATL COM uygulamanın veya ATL desteği içeren bir MFC uygulaması olarak oluşturulmuş olması gerekir. Kullanabilirsiniz [ATL Proje Sihirbazı](../../atl/reference/atl-project-wizard.md) ATL uygulamasını oluşturmak için seçebileceğiniz **MFC ATL desteği ekleme** gelen [Ekle iletişim kutusu sınıfı](../../ide/add-class-dialog-box.md) iletişim kutusu veya yapabilirsiniz [ATL nesne MFC uygulamanıza eklemek](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) MFC uygulaması için ATL desteği uygulamak için.  

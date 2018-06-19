@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368518"
 ---
 # <a name="importing-data-using-declspecdllimport"></a>__declspec(dllimport) Kullanarak Veriyi İçeri Aktarma
 Kullanarak verileri, söz konusu olduğunda **__declspec(dllimport)** yöneltme bir katmanı kaldırır kolaylık öğedir. DLL'den dışarı veri aktardığınızda, içeri aktarma adres tablosunu Git çözümlenmedi. Önce **__declspec(dllimport)**, bu verilere erişme DLL'den dışarı aktardığınızda yöneltme için fazladan bir düzey yapmayı unutmayın gerekiyordu anlamına gelir:  

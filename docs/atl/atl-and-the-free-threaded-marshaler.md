@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355832"
 ---
 # <a name="atl-and-the-free-threaded-marshaler"></a>ATL ve Ücretsiz İş Parçacıklı Sıralayıcı
 ATL Basit Nesne sihirbazın öznitelikleri sayfasında sınıfınızı ücretsiz iş parçacıklı sıralayıcı (FTM) toplamak izin veren bir seçenek sağlar.  

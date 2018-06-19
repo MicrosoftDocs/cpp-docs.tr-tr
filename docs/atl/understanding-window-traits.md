@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32362374"
 ---
 # <a name="understanding-window-traits"></a>Pencere özellikleri anlama
 Pencere özellikler sınıfları ATL pencere nesnesi oluşturmak için kullanılan stiller Standartlaştırma için basit bir yöntem sağlar. Pencere özellikleri şablonu parametreleri olarak kabul edilir [CWindowImpl](../atl/reference/cwindowimpl-class.md) ve diğer ATL pencere sınıfları sınıf düzeyinde pencere stilleri varsayılan sağlamanın bir yolu olarak.  

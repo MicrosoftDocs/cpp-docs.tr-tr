@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33094227"
 ---
 # <a name="cdataconnectionopen"></a>CDataConnection::Open
 Başlatma dizesi kullanarak bir veri kaynağı için bir bağlantı açar.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358533"
 ---
 # <a name="atl-copy-policy-classes"></a>ATL kopyalama İlkesi sınıfları
 Kopya İlkesi sınıflardır [yardımcı sınıflar](../atl/utility-classes.md) başlatmak için kullanılan, kopyalamak ve verileri silme. Kopya İlkesi sınıflar, herhangi bir veri türü için Kopyalama Semantiğini tanımlayın ve farklı veri türleri arasında dönüştürmeler tanımlamak için izin verir.  

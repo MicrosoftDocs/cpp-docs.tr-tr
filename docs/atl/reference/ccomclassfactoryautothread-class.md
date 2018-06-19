@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32363129"
 ---
 # <a name="ccomclassfactoryautothread-class"></a>CComClassFactoryAutoThread sınıfı
 Bu sınıf uygulayan [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirim ve nesnelerin içinde birden çok grupların oluşturulmasına izin verir.  

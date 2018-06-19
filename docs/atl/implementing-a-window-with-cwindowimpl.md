@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356553"
 ---
 # <a name="implementing-a-window-with-cwindowimpl"></a>Bir pencere CWindowImpl ile uygulama
 Bir pencere uygulamak için öğesinden bir sınıf türetin `CWindowImpl`. Türetilen sınıfta ileti eşlemesi ve ileti işleyici işlevlerini bildirme. Artık üç farklı yolla sınıfınız kullanabilirsiniz:  

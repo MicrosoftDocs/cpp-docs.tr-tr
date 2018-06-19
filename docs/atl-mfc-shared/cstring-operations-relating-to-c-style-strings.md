@@ -30,6 +30,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361820"
 ---
 # <a name="cstring-operations-relating-to-c-style-strings"></a>C türü dizelere ilgili CString işlemleri
 A [CString](../atl-mfc-shared/using-cstring.md) nesnesi karakter dizesi verileri içerir. `CString` kümesini devralır [yöntemleri ve işleçleri](../atl-mfc-shared/reference/cstringt-class.md) Sınıf şablonunda tanımlanan [CStringT](../atl-mfc-shared/reference/cstringt-class.md) dize verilerle çalışmak için. (`CString` olan bir `typedef` , uzmanlaşmış `CStringT` karakter veri türü ile çalışmak için `CString` destekler.)  

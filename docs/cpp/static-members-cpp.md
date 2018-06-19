@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32421077"
 ---
 # <a name="static-members-c"></a>Statik Üyeler [C++]
 Sınıfları, statik üye verilerini ve üye işlevleri içerebilir. Ne zaman veri üyesi bildirilen olarak **statik**, verilerin yalnızca bir kopyasını sınıfın tüm nesneleri için saklanır.

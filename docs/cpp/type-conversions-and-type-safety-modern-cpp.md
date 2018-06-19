@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32424782"
 ---
 # <a name="type-conversions-and-type-safety-modern-c"></a>Tür Dönüştürmeleri ve Tür Güvenliği (Modern C++)
 Bu belge türü dönüştürme karşılaşılan tanımlar ve nasıl bunları C++ kodunuzda önleyebilirsiniz açıklar.  

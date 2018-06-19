@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32414600"
 ---
 # <a name="expressions-c"></a>İfadeler (C++)
 Bu bölümde, C++ ifadeleri açıklanmaktadır. İfadeler sıraları işleçler ve bir veya daha fazla amaçlar için kullanılan işlenenler şunlardır:  

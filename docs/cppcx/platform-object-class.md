@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33091887"
 ---
 # <a name="platformobject-class"></a>Platform::Object sınıfı
 Ref sınıfları ve ref yapılar Windows çalışma zamanı uygulamaları için ortak davranış sağlar. Tüm ref sınıfı ve ref yapısı örnekleri için Platform::Object örtük olarak dönüştürülebilir ^ ve kendi sanal ToString yöntemini geçersiz kılabilirsiniz.  

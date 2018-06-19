@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355639"
 ---
 # <a name="nonextensible-attribute"></a>nonextensible özniteliği
 Çift arabirim çalışma zamanında uzatılır değil, (diğer bir deyişle, yöntemleri veya özellikleri aracılığıyla sağlamayacak **IDispatch::Invoke** vtable kullanılabilir olmayan), uygulamanız gerekir **nonextensible** Arabirim tanımınızı öznitelik. Bu öznitelik derleme zamanında tam kod doğrulamayı etkinleştirmek için kullanılan istemci dillerini (Visual Basic gibi) bilgileri sağlar. Bu öznitelik sağlanmazsa, hataların çalışma zamanına kadar istemci kodu gizli kalabilir.  

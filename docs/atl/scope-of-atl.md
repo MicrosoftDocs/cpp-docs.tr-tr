@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32360037"
 ---
 # <a name="scope-of-atl"></a>ATL kapsamı
 ATL COM nesneleri, otomasyon sunucuları ve ActiveX denetimlerini kolayca oluşturmanıza olanak sağlar. ATL birçok temel COM arabirimleri için yerleşik destek sağlar.  

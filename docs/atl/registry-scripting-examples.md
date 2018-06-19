@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361895"
 ---
 # <a name="registry-scripting-examples"></a>Kayıt defteri komut dosyası yazma örnekleri
 Bu konudaki komut dosyası örnekleri bir anahtar sistem kayıt defterine ekleyin, kayıt COM sunucuyu kaydetmek ve birden çok ayrıştırma ağacı belirtmek nasıl ekleyebileceğiniz gösterilmektedir.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357063"
 ---
 # <a name="adding-an-atl-simple-object"></a>ATL basit bir nesne ekleme
 Projenize ATL (Etkin Şablon Kütüphanesi) nesne eklemek için projenize ATL uygulamasını veya ATL desteği içeren bir MFC uygulaması olarak oluşturulmuş olması gerekir. Kullanabileceğiniz [ATL Proje Sihirbazı](../../atl/reference/atl-project-wizard.md) bir ATL uygulama oluşturmak için veya [ATL nesne MFC uygulamanıza eklemek](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) MFC uygulaması için ATL desteği uygulamak için.  

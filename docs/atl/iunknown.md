@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355845"
 ---
 # <a name="iunknown"></a>IUnknown
 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) her bir COM arabirimi temel arabirimdir.  Bu arabirim üç yöntem tanımlar: [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521), [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), ve [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317). [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) işaretçisi arabirimlerinde başka bir nesne sormak bir arabirim kullanıcının verir. [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317) başvuru arabirimde sayım uygulayın.  

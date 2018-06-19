@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357688"
 ---
 # <a name="identifying-the-elements-of-the-dhtml-control-project"></a>DHTML denetimi proje öğelerini tanımlama
 Çoğu DHTML denetim kodu tam olarak gibi diğer herhangi bir ATL denetimi için oluşturulur. Aracılığıyla genel kod temel anlamak için iş [ATL öğretici](../atl/active-template-library-atl-tutorial.md), ve bölümleri okuyun [bir ATL projesi oluşturma](../atl/reference/creating-an-atl-project.md) ve [ATL COM nesneleri Temelleri](../atl/fundamentals-of-atl-com-objects.md).  

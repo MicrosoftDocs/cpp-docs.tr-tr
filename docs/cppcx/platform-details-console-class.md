@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33088322"
 ---
 # <a name="platformdetailsconsole-class"></a>Platform::details::Console sınıfı
 Bu sınıf, yalnızca dahili kullanım içindir ve geliştirme için kullanılmak üzere tasarlanmamıştır.  

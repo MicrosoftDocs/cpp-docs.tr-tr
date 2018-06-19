@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32415500"
 ---
 # <a name="routine-mappings"></a>Rutin Eşlemeler
 Genel metin rutin eşlemeler TCHAR içinde tanımlanmıştır. H. `_tccpy` ve `_tclen` MBCS modeli işlevlerde eşlemeniz; makroları veya satır içi işlevler eksiksiz olması için SBCS ve Unicode modellerindeki eşlenmiş. Genel metin yordamı hakkında daha fazla bilgi için karşılık gelen hakkında Yardım konusuna bakın `SBCS`-, `_MBCS`-, veya `_UNICODE`-ilgili yordamı.  

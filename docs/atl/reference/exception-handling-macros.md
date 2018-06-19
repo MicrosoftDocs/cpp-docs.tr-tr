@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358983"
 ---
 # <a name="exception-handling-macros"></a>Özel durum işleme makroları
 Bu makroları özel durum işleme için destek sağlar.  

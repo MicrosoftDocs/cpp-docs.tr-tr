@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32409582"
 ---
 # <a name="basic-concepts--c"></a>Temel kavramlar (C++)
 Bu bölümde anlama C++ için önemli kavramlar açıklanmaktadır. C programcıları çoğu bu kavramlar tanıdık gelecektir ancak beklenmeyen program sonuçlara neden olabilir bazı farklar vardır. Aşağıdaki konular bulunur:  

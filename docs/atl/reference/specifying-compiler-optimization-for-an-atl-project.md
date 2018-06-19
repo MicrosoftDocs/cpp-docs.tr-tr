@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361976"
 ---
 # <a name="specifying-compiler-optimization-for-an-atl-project"></a>ATL projeleri için derleyici iyileştirmesi belirtme
 Varsayılan olarak, [ATL Denetim Sihirbazı](../../atl/reference/atl-control-wizard.md) ATL_NO_VTABLE makrosu ile yeni sınıflar gibi oluşturur:  

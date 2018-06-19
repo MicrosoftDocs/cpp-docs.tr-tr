@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361596"
 ---
 # <a name="adding-a-property-page-atl-tutorial-part-6"></a>Özellik Sayfası Ekleme (ATL Eğitmeni, Bölüm 6)
 Özellik sayfaları izin vermeniz gerekirse paylaşılan ayrı COM nesneleri uygulanır. Bu adımda, bir özellik sayfası denetimine eklemek için aşağıdaki görevleri yapar:  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367904"
 ---
 # <a name="inferred-dependents"></a>Çıkarsanan Bağımlılıklar
 Çıkarsanan bağımlı bir çıkarım kuralından türetilmiş ve açık bağımlıları önce değerlendirilir. NMAKE oluşturulursa bağımlı hedefine göre güncel ise, bağımlılık komutları bloğunu çağırır. Çıkarsanan bağımlı yok veya kendi bağımlıları göre güncel değilse NMAKE oluşturulursa bağımlı ilk güncelleştirir. Çıkarsanan bağımlılıklar hakkında daha fazla bilgi için bkz: [çıkarım kuralları](../build/inference-rules.md).  

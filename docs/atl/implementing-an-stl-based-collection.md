@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32359681"
 ---
 # <a name="implementing-a-c-standard-library-based-collection"></a>C++ Standart Kitaplığı tabanlı bir koleksiyon uygulama
 ATL sağlar `ICollectionOnSTLImpl` C++ Standart Kitaplığı tabanlı koleksiyon arabirimleri nesneleriniz hızlıca uygulamak etkinleştirmek için arabirim. Bu sınıf nasıl çalıştığını anlamak için Otomasyon istemcilerinde amaçlayan bir salt okunur koleksiyonun uygulamak için bu sınıf kullanan basit bir örnek (aşağıda) üzerinden çalışır.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357724"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 Bu öğreticide Çokgen görüntüleyen bir ActiveX nesnesi oluşturan bir nonattributed ATL project aracılığıyla adım adım açıklanmaktadır. Nesne görünümü yenilemek için Çokgen ve kod hale kenarların sayısını değiştirmek için kullanıcı izin vermek için seçenekleri içerir.  

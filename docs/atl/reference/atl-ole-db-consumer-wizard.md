@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32364956"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketici Sihirbazı
 Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamalarla belirtilen OLE DB sağlayıcısı ile belirtilen veri kaynağına erişmek için gerekli ayarlar.  

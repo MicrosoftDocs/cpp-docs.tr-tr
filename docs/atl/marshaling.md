@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32360106"
 ---
 # <a name="marshaling"></a>Hazırlama
 Hazırlama COM tekniği nesneyi başka bir işlemde kullanılacak bir işlem tarafından sunulan arabirimleri sağlar. Sıralama, COM kodu sağlar (veya arabirim uygulayıcıya tarafından sağlanan kod kullanır) işlemleri arasında (yanı sıra, diğer makinelerde çalışan işlemler için kablo üzerinden) taşınabilir bir biçime bir yöntemin parametre paketi ve bu parametrelerin açmak için sonunda. Benzer şekilde, COM çağrısından döndürülen aynı adımları gerçekleştirmeniz gerekir.  

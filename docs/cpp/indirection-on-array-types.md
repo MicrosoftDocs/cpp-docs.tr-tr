@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32418845"
 ---
 # <a name="indirection-on-array-types"></a>Dizi Türleri Yöneltmesi
 İndirection işleci kullanımı (**\***) üzerinde bir *n*-boyutlu bir dizi türü üretir bir *n*-1 boyutlu dizi. Varsa *n* 1, bir skaler (ya da dizi öğesini) belirlenmiştir.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32057623"
 ---
 # <a name="ml-nonfatal-error-a2039"></a>ML Önemli Olmayan Hatası A2039
 **Satır çok uzun**  

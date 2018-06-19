@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32420843"
 ---
 # <a name="startup-and-termination-c"></a>Başlatma ve Sonlandırma (C++)
 Program başlatma ve sonlandırma sayesinde kolaylaşır iki işlevlerini kullanarak: [ana](../cpp/main-program-startup.md) ve [çıkmak](../cpp/program-termination.md). Diğer başlangıç ve sonlandırma kodu çalıştırılabilir.  

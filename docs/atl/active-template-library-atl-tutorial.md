@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32354874"
 ---
 # <a name="active-template-library-atl-tutorial"></a>Etkin Şablon Kitaplığı (ATL) Eğitmen
 ATL verimli, esnek ve basit denetimler oluşturma işlemini basitleştirmek için tasarlanmıştır. Bu öğretici, birçok ATL ve COM temelleri gösteren bir ActiveX denetimini oluşturulmasını size yol gösterir.  

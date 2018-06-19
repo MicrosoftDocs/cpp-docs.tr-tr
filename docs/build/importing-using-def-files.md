@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368863"
 ---
 # <a name="importing-using-def-files"></a>DEF Dosyalarını Kullanarak İçeri Aktarma
 Kullanmayı seçerseniz **__declspec(dllimport)** .def dosyası ile birlikte, hatalı kodlamanın bir soruna neden olasılığını azaltmak için veri SABİTİ yerine kullanılacak .def dosyası değiştirmeniz gerekir:  

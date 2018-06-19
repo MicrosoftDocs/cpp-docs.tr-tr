@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32356598"
 ---
 # <a name="adding-connection-points-to-an-object"></a>Bağlantı noktaları için bir nesne ekleme
 [ATL öğretici](../atl/active-template-library-atl-tutorial.md) bir denetimin bağlantı noktaları için destek ile nasıl oluşturulacağını, olaylar ekleme ve sonra bağlantı noktası uygulamak nasıl gösterilir. ATL bağlantı noktaları ile uygulayan [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) sınıfı.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355026"
 ---
 # <a name="creating-an-aggregated-object"></a>Toplanan nesne oluşturma
 Toplama Temsilciler **IUnknown** çağrıları, dış nesnenin gösteren bir işaretçi sağlama **IUnknown** iç nesne.  

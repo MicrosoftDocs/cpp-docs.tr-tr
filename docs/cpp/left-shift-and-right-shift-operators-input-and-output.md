@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32422403"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>Sol kaydırma ve sağ kaydırma işleçleri (&gt; &gt; ve &lt; &lt;)
 Bit kaydırma işleçleri olan sağa kaydırma işleci (>>), bitleri taşıyan *shift ifade* sağa ve sola kaydırma işleci (<<), bitleri taşıyan *shift-ifade* sol. <sup>1</sup>  

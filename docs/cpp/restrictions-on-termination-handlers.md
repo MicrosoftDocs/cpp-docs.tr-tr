@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32420588"
 ---
 # <a name="restrictions-on-termination-handlers"></a>Sonlandırma İşleyicileri Kısıtlamaları
 Kullanamazsınız bir `goto` içine atlamak için deyimi bir `__try` deyimi blok veya `__finally` deyimi bloğu. Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. (Dışı ancak atlamak bir `__try` deyimi blok.) Ayrıca, bir özel durum işleyici veya sonlandırma işleyicisi içinde iç içe yerleştirilemez bir `__finally` bloğu.  

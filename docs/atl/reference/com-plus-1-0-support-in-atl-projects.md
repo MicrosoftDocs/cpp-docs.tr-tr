@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32359363"
 ---
 # <a name="com-10-support-in-atl-projects"></a>COM + 1.0 destek ATL projeleri
 Kullanabileceğiniz [ATL Proje Sihirbazı](../../atl/reference/creating-an-atl-project.md) COM + 1.0 bileşenleri için temel desteği olan bir proje oluşturmak için.  

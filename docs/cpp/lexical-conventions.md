@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32419135"
 ---
 # <a name="lexical-conventions"></a>Sözcük Kuralları
 Bu bölüm bir C++ programının temel öğelerini tanıtır. Eksiksiz programlar oluşturmak için kullanılan deyimleri, tanımları, bildirimleri ve diğer öğeleri oluşturmak için "sözcük temelli öğeler" veya "belirteçler" olarak adlandırılan bu öğeleri kullanırsınız. Bu bölümde aşağıdaki sözcük temelli öğeler ele alınmıştır:

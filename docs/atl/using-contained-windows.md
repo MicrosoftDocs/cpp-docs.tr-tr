@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357927"
 ---
 # <a name="using-contained-windows"></a>Kapsanan Windows kullanma
 ATL uygulayan kapsanan windows ile [CContainedWindowT](../atl/reference/ccontainedwindowt-class.md). Kapsanan bir pencere iletileri kendi sınıfında işleme yerine bir kapsayıcı nesne için temsilci bir pencereyi temsil eder.  
