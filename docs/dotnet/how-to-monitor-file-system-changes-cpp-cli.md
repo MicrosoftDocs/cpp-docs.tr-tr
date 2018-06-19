@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130711"
 ---
 # <a name="how-to-monitor-file-system-changes-ccli"></a>Nasıl yapılır: Dosya Sistemi Değişikliklerini İzleme (C++/CLI)
 Aşağıdaki kod örneğinde <xref:System.IO.FileSystemWatcher> oluşturulan, değiştirilen, silinmiş veya yeniden adlandırılmış dosyalarına karşılık gelen olayları kaydetmek için. Kullanabileceğiniz düzenli aralıklarla yoklama dosyalardaki değişiklikler için bir dizin yerine <xref:System.IO.FileSystemWatcher> bir değişiklik algılandığında olayları tetiklenecek sınıfı.  

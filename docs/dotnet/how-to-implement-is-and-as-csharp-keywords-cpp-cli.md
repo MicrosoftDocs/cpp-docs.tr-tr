@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33128624"
 ---
 # <a name="how-to-implement-is-and-as-c-keywords-ccli"></a>Nasıl yapılır: is ve as C# Anahtar Sözcüklerini Uygulama (C++/CLI)
 Bu konuda işlevselliğini uygulamak nasıl gösterilmektedir `is` ve `as` Visual c++ C# anahtar sözcükleri.  

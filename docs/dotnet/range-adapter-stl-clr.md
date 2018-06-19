@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33162331"
 ---
 # <a name="rangeadapter-stlclr"></a>range_adapter (STL/CLR)
 Birkaç temel sınıf kitaplığı (BCL) arabirimi uygulamak için kullanılan yineleyiciler çifti saran bir şablon sınıfı. Range_adapter BCL koleksiyonu değilmiş gibi bir STL/CLR aralığını değiştirmek için kullanın.  

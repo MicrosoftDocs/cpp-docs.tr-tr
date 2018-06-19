@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33251042"
 ---
 # <a name="compiler-error-c3392"></a>Derleyici Hatası C3392
 'type_arg': 'param' genel 'generic_type' ın genel parametresi için geçersiz tür bağımsız değişkeni genel bir parametresiz oluşturucuya sahip olmalıdır  

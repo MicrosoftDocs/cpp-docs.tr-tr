@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33127828"
 ---
 # <a name="how-to-retrieve-the-current-username-ccli"></a>Nasıl yapılır: Geçerli Kullanıcı Adını Alma (C++/CLI)
 Aşağıdaki kod örneğinde geçerli kullanıcı adını (Windows'ta oturum açmış kullanıcı adı) alınmasını gösterilmektedir. Adı depolanan <xref:System.Environment.UserName%2A> tanımlanan dize <xref:System.Environment> ad alanı.  

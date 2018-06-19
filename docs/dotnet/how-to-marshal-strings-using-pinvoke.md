@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33133213"
 ---
 # <a name="how-to-marshal-strings-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Dizeleri Sıralama
 Bu konuda, C stilinde dizeleri CLR dizesi kullanılarak çağrılabilir kabul nasıl yerel işlevler açıklanmaktadır .NET Framework Platform çağırma desteğini kullanan System::String yazın. P/Invoke çok az derleme zamanı hata raporlama, tür kullanımı uyumlu değildir ve uygulaması can sıkıcı olabilir sağladığından visual C++ programcıları (uygunsa) C++ birlikte çalışabilirlik özellikleri kullanmaları önerilir. Yönetilmeyen API DLL olarak paketlenir ve kaynak kod kullanılabilir değilse, P/Invoke tek seçenektir ancak Aksi takdirde bkz [C++ Çalışabilirliği kullanarak (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  

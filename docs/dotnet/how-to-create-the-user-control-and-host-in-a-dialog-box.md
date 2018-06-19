@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33136359"
 ---
 # <a name="how-to-create-the-user-control-and-host-in-a-dialog-box"></a>Nasıl yapılır: İletişim Kutusunda Kullanıcı Denetimi Ve Konak Oluşturma
 Bu makaledeki adımları iletişim tabanlı oluşturduğunuzu varsayar ([CDialog sınıfı](../mfc/reference/cdialog-class.md)) Microsoft Foundation sınıfları (MFC) projesi, ancak aynı zamanda desteği ekleyebilirsiniz bir Windows Forms denetimi için varolan bir MFC iletişim kutusu.  

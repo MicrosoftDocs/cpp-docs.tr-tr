@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130133"
 ---
 # <a name="how-to-write-a-binary-file-ccli"></a>Nasıl yapılır: İkili Dosyaları Yazma (C++/CLI)
 Aşağıdaki kod örneğinde, ikili verileri bir dosyaya yazma gösterilmektedir. İki sınıf <xref:System.IO> ad alanı kullanılır: <xref:System.IO.FileStream> ve <xref:System.IO.BinaryWriter>. <xref:System.IO.FileStream> gerçek dosyayı temsil ederken <xref:System.IO.BinaryWriter> ikili erişimine izin veren akış için bir arabirim sağlar.  

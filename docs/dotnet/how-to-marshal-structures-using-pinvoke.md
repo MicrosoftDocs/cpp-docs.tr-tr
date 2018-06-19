@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33136619"
 ---
 # <a name="how-to-marshal-structures-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Yapıları Sıralama
 Bu belgede C tarzı yapılar tarafından yönetilen işlevlerden P/Invoke kullanılarak çağrılabilir kabul nasıl yerel işlevleri açıklanmaktadır. C++ birlikte çalışabilirlik özellikleri yerine kullanmanızı öneririz rağmen P/Invoke P/Invoke çok az derleme zamanı hata raporlama, sağladığından tür kullanımı uyumlu değil ve yönetilmeyen API DLL olarak paketlenir ve kaynak kodu değilse uygulaması can sıkıcı olabilir P/Invoke tek seçenek kullanılabilir. Aksi takdirde, aşağıdaki belgelere bakın:  

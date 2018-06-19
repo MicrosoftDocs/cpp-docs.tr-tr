@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33129622"
 ---
 # <a name="how-to-use-regular-expressions-to-validate-data-formatting-ccli"></a>Nasıl yapılır: Veri Biçimlendirmesini Doğrulamak için Normal İfadeleri Kullanma (C++/CLI)
 Aşağıdaki kod örneğinde biçimlendirme dizesi doğrulamak için normal ifadeler kullanımını göstermektedir. Aşağıdaki kod örneğinde, geçerli bir telefon numarası dize içermelidir. Aşağıdaki kod örneğinde bir dizeyi kullanan "\d{3}-\d{3}-\d{4}" her bir alan geçerli bir telefon numarası temsil ettiğini göstermek için. Bir basamak dizesindeki "d" gösterir ve sonra her "d" bağımsız değişkeni bulunmalıdır basamak sayısını belirtir. Bu durumda, numara çizgilerle ayrılmış olması zorunlu değildir.  

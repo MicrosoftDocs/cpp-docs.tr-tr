@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33135124"
 ---
 # <a name="member-declarations-within-a-class-or-interface-ccli"></a>Sınıfta veya Arabirimde Üye Bildirimleri (C++/CLI)
 Özellikler ve işleçlerin bildirimi yaygın Yönetilen Uzantılar'dan C++ için Yönetilen Uzantılar tasarımında gösterilen temeldeki uygulama ayrıntılarını gizleme Visual C++ için oluşturulmuştur. Olay bildirimleri de değiştirildi.  

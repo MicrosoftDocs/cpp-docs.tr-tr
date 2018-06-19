@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130120"
 ---
 # <a name="how-to-read-windows-performance-counters-ccli"></a>Nasıl yapılır: Windows Performans Sayaçlarını Okuma (C++/CLI)
 Bazı uygulamalar ve Windows alt sistemleri Windows Performans sistem performans verilerine kullanıma sunar. Bu sayaçlar kullanılarak erişilebilir <xref:System.Diagnostics.PerformanceCounterCategory> ve <xref:System.Diagnostics.PerformanceCounter> bulunan sınıflar <xref:System.Diagnostics?displayProperty=fullName> ad alanı.  

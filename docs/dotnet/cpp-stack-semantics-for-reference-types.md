@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33111360"
 ---
 # <a name="c-stack-semantics-for-reference-types"></a>Referans Türleri için C++ Yığın Anlamları
 Visual C++ 2005 önce başvuru türünde bir örneği yalnızca kullanarak oluşturulabilir `new` Atık nesne oluşturulan işleci toplanan yığın. Bununla birlikte, artık yığında yerel türünün bir örneği oluşturmak için kullanacağınız aynı sözdizimini kullanarak bir başvuru türünde bir örnek oluşturabilirsiniz. Bu nedenle, kullanmak gerekmez [yeni başvuru, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md) başvuru türünde bir nesne oluşturmak için. Ve nesne kapsam dışına çıktığında derleyici nesnenin yıkıcı çağırır.  

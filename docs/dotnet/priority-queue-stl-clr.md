@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33172546"
 ---
 # <a name="priorityqueue-stlclr"></a>priority_queue (STL/CLR)
 Şablon sınıfı bir değişen Sınırlı erişime öğe dizisi sıralı uzunlukta denetleyen bir nesne tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `priority_queue` temel alınan bir kapsayıcı bir öncelik sırası olarak yönetmek için.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33136213"
 ---
 # <a name="marshalcontextmarshalas"></a>marshal_context::marshal_as
 Yönetilen ve yerel veri türü arasında dönüştürme için belirli bir veri nesnesi üzerinde sıralama gerçekleştirir.  

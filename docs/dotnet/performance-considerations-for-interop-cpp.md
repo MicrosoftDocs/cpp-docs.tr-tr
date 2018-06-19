@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33164056"
 ---
 # <a name="performance-considerations-for-interop-c"></a>Birlikte Çalışabilirlik için Başarım Düşünceleri (C++)
 Bu konu, yönetilen ve yönetilmeyen birlikte çalışma geçişleri çalışma zamanı performans üzerindeki etkisini azaltmak için yönergeler sağlar.  

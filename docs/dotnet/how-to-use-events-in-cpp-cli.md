@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33138045"
 ---
 # <a name="how-to-use-events-in-ccli"></a>Nasıl yapılır: C++/CLI Üzerinde Olayları Kullanma
 Bu makalede, bir olay ve bu olay çağırmak için bir işlev bildiren bir arabirim ve arabirimini uygulayan sınıf ve olay işleyicisi nasıl kullanılacağı gösterilmektedir.  

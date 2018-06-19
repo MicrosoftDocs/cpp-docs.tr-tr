@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33243786"
 ---
 # <a name="compiler-error-c3096"></a>Derleyici Hatası C3096
 'öznitelik': yalnızca öznitelik sınıfları veri üyeleri özniteliği izin verilir  

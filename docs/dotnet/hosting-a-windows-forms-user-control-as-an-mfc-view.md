@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33137633"
 ---
 # <a name="hosting-a-windows-forms-user-control-as-an-mfc-view"></a>MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma
 MFC MFC görünümü olarak Windows Forms kullanıcı denetimi barındırma CWinFormsView sınıfını kullanır. MFC Windows Forms ActiveX denetimlerini görünümlerdir. Kullanıcı denetimi doğal görünümün alt sitesi olarak barındırılan ve yerel görünümün tüm istemci alanı kaplar.  

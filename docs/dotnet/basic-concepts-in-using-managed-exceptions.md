@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33114490"
 ---
 # <a name="basic-concepts-in-using-managed-exceptions"></a>Yönetilen Özel Durumları Kullanmaya İlişkin Temel Kavramlar
 Bu konuda, özel durum işleme yönetilen uygulamalarda anlatılmaktadır. Diğer bir deyişle, ile derlenen bir uygulama **/CLR** derleyici seçeneği.  

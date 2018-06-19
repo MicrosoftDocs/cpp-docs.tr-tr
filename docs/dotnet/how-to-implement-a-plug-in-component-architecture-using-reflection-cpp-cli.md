@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33135219"
 ---
 # <a name="how-to-implement-a-plug-in-component-architecture-using-reflection-ccli"></a>Nasıl yapılır: Yansıma Kullanarak Eklenti Bileşeni Mimarisi Uygulama (C++/CLI)
 Aşağıdaki kod örnekleri, basit bir "eklenti" mimarisi uygulamada yansıma kullanımını gösterir. İlk liste uygulamadır ve ikincisi ise eklentidir. Uygulama kendisini komut satırı bağımsız değişkeni olarak sağlanan eklentisi DLL'sini bulunan herhangi bir form tabanlı sınıflarını kullanarak dolduran bir birden çok belge biçimidir.  

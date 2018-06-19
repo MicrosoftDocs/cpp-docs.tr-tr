@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33132420"
 ---
 # <a name="how-to-use-regular-expressions-to-search-and-replace-ccli"></a>Nasıl yapılır: Arama ve Değiştirme için Normal İfadeleri Kullanma (C++/CLI)
 Aşağıdaki kod örneğinde gösterilmektedir nasıl normal ifade sınıfının <xref:System.Text.RegularExpressions.Regex> arama ve değiştirme yapmak için kullanılabilir. Bu gerçekleştirilir <xref:System.Text.RegularExpressions.Regex.Replace%2A> yöntemi. Kullanılan sürüm iki dizeyi giriş olarak alır: değiştirilecek dize ve (varsa) yerine bölümleri eklenecek dize verilen desenle eşleşen <xref:System.Text.RegularExpressions.Regex> nesnesi.  

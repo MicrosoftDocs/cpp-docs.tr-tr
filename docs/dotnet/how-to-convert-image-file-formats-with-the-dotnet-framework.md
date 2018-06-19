@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130064"
 ---
 # <a name="how-to-convert-image-file-formats-with-the-net-framework"></a>Nasıl yapılır: .NET Framework ile Görüntü Dosyası Biçimlerini Dönüştürme
 Aşağıdaki kod örneğinde gösterilmektedir <xref:System.Drawing.Image?displayProperty=fullName> sınıfı ve <xref:System.Drawing.Imaging.ImageFormat?displayProperty=fullName> resim dosyalarını dönüştürmek ve kaydetmek için kullanılan numaralandırması. Aşağıdaki kod bir .jpg dosyasından görüntüyü yükler ve .gif ve .bmp dosya biçimlerinde kaydeder.  

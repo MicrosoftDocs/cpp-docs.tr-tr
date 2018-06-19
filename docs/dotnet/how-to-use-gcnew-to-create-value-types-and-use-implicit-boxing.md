@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33128803"
 ---
 # <a name="how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing"></a>Nasıl yapılır: Değer Türleri Oluşturmak için gcnew Kullanma ve Örtük Kutulamayı Kullanma
 Kullanarak [gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md) bir değerini daha sonra managed, atık toplanan yığında yerleştirilebilir paketlenmiş değer türü, türü oluşturur.  

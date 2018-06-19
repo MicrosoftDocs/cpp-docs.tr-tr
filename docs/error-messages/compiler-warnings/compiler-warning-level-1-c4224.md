@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33276717"
 ---
 # <a name="compiler-warning-level-1-c4224"></a>Derleyici Uyarısı (düzey 1) C4224
 kullanılan standart olmayan uzantısı: biçimsel parametresi 'tanımlayıcısı' daha önce bir tür olarak tanımlanmıştı  

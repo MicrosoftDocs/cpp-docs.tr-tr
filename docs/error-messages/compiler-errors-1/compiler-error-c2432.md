@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33196941"
 ---
 # <a name="compiler-error-c2432"></a>Derleyici Hatası C2432
 16 bit veri 'tanımlayıcısı' ın geçersiz başvuru  

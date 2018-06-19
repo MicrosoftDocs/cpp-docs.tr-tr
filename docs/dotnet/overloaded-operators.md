@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33139466"
 ---
 # <a name="overloaded-operators"></a>Aşırı Yüklenmiş İşleçler
 İşleç aşırı yüklemesi önemli ölçüde Yönetilen Uzantılar'dan C++ için Visual C++'a değişmiştir.  

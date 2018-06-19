@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33110347"
 ---
 # <a name="supporting-transactions-in-ole-db"></a>OLE DB'de İşlemleri Destekleme
 A [işlem](../../data/transactions-mfc-data-access.md) grubu ya da toplu iş, bir veri kaynağı güncelleştirmelerini bir dizi böylece tüm başarılı ve aynı anda kaydedilmeden ya da (herhangi biri başarısız olursa) hiçbirinin tamamlanmadığı için bir yoldur ve tüm işlem geri alındı. Bu işlem veri kaynağında sonucun bütünlüğünü sağlar.  

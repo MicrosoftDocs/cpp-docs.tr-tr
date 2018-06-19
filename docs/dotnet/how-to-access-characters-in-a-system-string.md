@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33129755"
 ---
 # <a name="how-to-access-characters-in-a-systemstring"></a>Nasıl yapılır: Bir System::String'deki Karakterlere Erişme
 Karakter erişmek için bir <xref:System.String> nesne yüksek performanslı çağrılar için yönetilmeyen işlevlere `wchar_t*` dizeleri. İlk karakteri iç işaretçi yöntemi verir <xref:System.String> nesnesi. Bu işaretçinin kullanılabilir doğrudan değiştirilebilir veya sabitlenmiş ve sıradan bekleyen bir işleve geçirilen `wchar_t` dize.  

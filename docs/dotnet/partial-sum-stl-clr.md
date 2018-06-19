@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33159164"
 ---
 # <a name="partialsum-stlclr"></a>partial_sum (STL/CLR)
 SUM'ları ilk öğe ile bir giriş aralığında bir dizi hesaplar `i`th öğesi ve her tür toplamda sonucunu depolar `i`th öğesi bir hedef aralığının veya genel bir yordam sonucunu hesaplar burada toplam işlem Belirtilen başka bir ikili işlem tarafından değiştirilir.  

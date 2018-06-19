@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130781"
 ---
 # <a name="how-to-detect-clr-compilation"></a>Nasıl yapılır: /clr Derlemesini Algılama
 Kullanım `_MANAGED` veya `_M_CEE` ile bir modül derlenmiş olmadığını görmek için makrosu **/CLR**. Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).  

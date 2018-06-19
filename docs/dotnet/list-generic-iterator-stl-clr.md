@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130964"
 ---
 # <a name="listgenericiterator-stlclr"></a>list::generic_iterator (STL/CLR)
 Yineleyici kullanmak için genel arabirimi kapsayıcının türü.  

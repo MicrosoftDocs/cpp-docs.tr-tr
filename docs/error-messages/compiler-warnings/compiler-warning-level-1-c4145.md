@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33277410"
 ---
 # <a name="compiler-warning-level-1-c4145"></a>Derleyici Uyarısı (düzey 1) C4145
 'İfade1': anahtar ifade; olarak ilişkisel ifade olası Karışıklığı önlemek için 'İfade2' ile  

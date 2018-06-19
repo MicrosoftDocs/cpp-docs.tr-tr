@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33199937"
 ---
 # <a name="fatal-error-c1107"></a>Önemli hata C1107
 derleme 'dosya' bulunamadı: Lütfen /AI kullanarak derleme arama yolu belirtin veya LIBPATH ortam değişkeni ayarlayarak  

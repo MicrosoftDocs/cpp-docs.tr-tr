@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33277913"
 ---
 # <a name="compiler-error-c3719"></a>Derleyici Hatası C3719
 'arabirimi': bir arabirim tabanlı olay kaynağı yalnızca COM olayları için kullanılabilir  

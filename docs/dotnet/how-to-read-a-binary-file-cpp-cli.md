@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33129375"
 ---
 # <a name="how-to-read-a-binary-file-ccli"></a>Nasıl yapılır: İkili Dosyaları Okuma (C++/CLI)
 Aşağıdaki kod örneği, iki sınıflardan kullanarak bir dosyadan ikili veri okumaya gösterilmiştir <xref:System.IO?displayProperty=fullName> ad alanı: <xref:System.IO.FileStream> ve <xref:System.IO.BinaryReader>. <xref:System.IO.FileStream> gerçek dosyayı temsil eder. <xref:System.IO.BinaryReader> ikili erişimi sağlayan akışa bir arabirim sağlar.  

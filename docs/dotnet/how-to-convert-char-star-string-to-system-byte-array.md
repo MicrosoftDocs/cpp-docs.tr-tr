@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33129495"
 ---
 # <a name="how-to-convert-char--string-to-systembyte-array"></a>Nasıl yapılır: char * Dizesini System::Byte Dizisine Dönüştürme
 Dönüştürülecek en verimli şekilde bir `char *` dizesinden bir <xref:System.Byte> dizi kullanmaktır <xref:System.Runtime.InteropServices.Marshal> sınıfı.  

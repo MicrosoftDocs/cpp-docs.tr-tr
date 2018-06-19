@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33136655"
 ---
 # <a name="how-to-marshal-bstr-strings-for-adonet-ccli"></a>Nasıl Yapılır: ADO.NET İçin BSTR Dizelerini Sıralama (C++/CLI)
 Bir COM dizesi eklemek nasıl gösterir (`BSTR`) bir veritabanı ve nasıl hazırlanacağını bir <xref:System.String?displayProperty=fullName> bir veritabanından bir `BSTR`.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33111477"
 ---
 # <a name="finally"></a>finally
 Ek olarak `try` ve `catch` yan tümceleri, CLR özel durum destekler işleme bir `finally` yan tümcesi. Semantiğini özdeş `__finally` (SEH) işleme yapılandırılmış özel durum engelleyin. A `__finally` blok izleyin bir `try` veya `catch` bloğu.  

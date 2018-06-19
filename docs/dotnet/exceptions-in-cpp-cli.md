@@ -18,6 +18,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33113193"
 ---
 # <a name="exceptions-in-ccli"></a>C++/CLI Özel Durumları
 Bu bölümdeki makaleleri belgelerin açıklayan özel durum işleme C + +/ CLI ve nasıl gelen standart özel durum işleme farklılık gösterir.  

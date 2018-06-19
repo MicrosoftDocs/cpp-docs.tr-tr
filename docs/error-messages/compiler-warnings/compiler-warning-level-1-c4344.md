@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33271376"
 ---
 # <a name="compiler-warning-level-1-c4344"></a>Derleyici Uyarısı (düzey 1) C4344
 davranış değişikliği: açık şablon bağımsız değişken sonuçları 'Function 'işlevine yapılan çağrıda kullanımı  

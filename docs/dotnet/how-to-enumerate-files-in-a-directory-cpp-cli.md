@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33127896"
 ---
 # <a name="how-to-enumerate-files-in-a-directory-ccli"></a>Nasıl yapılır: Bir Dizindeki Dosyaları Numaralandırma (C++/CLI)
 Aşağıdaki kod örneği, bir dizindeki dosyaların bir listesini almak gösterilmiştir. Ayrıca, alt dizinler numaralandırılır. Aşağıdaki kod örneğinde <xref:System.IO.Directory.GetFiles%2A> <xref:System.IO.Directory.GetFiles%2A> ve <xref:System.IO.Directory.GetDirectories%2A> C:\Windows dizinin içeriğini görüntülemek için yöntem.  

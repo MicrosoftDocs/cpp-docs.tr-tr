@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33232932"
 ---
 # <a name="compiler-error-c2771"></a>Derleyici Hatası C2771
 \#içeri aktarma yalnızca izin verilen genel veya ad alanı kapsamı  

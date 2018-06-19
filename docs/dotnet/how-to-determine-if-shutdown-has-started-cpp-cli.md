@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33137708"
 ---
 # <a name="how-to-determine-if-shutdown-has-started-ccli"></a>Nasıl yapılır: Kapatmanın Başlayıp Başlamadığını Belirleme (C++/CLI)
 Aşağıdaki kod örneği, uygulama veya .NET Framework şu anda sonlandırıyor olup olmadığını belirlemek gösterilmiştir. Bu, kapatma sırasında bu yapıları sistem tarafından sonlandırılır ve güvenilir bir şekilde kullanılamaz olduğundan, .NET Framework'teki statik öğeler erişmek için kullanışlıdır. Denetleyerek <xref:System.Environment.HasShutdownStarted%2A> özelliği ilk olarak, bu öğeleri erişilmemesi olası hatalarını önlemek.  

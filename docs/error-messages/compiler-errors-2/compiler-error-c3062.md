@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33250572"
 ---
 # <a name="compiler-error-c3062"></a>Derleyici Hatası C3062
 'enum': temel alınan türü 'type' olduğundan değer Numaralandırıcı gerektirir  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33197916"
 ---
 # <a name="compiler-error-c2392"></a>Derleyici Hatası C2392
 'method1': türleri desteklenmiyor eşdeğişken döndürür yönetilen veya WinRTtypes, aksi takdirde 'method2' geçersiz  

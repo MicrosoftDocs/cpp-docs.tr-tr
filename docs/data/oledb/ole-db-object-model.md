@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33111087"
 ---
 # <a name="ole-db-object-model"></a>OLE DB Nesne Modeli
 OLE DB Nesne modeli aşağıdaki nesnelerden veya bileşenlerden oluşur. İlk dört nesne veya listelenen bileşenleri (veri kaynakları, oturumlar, komutları ve satır kümeleri) bir veri kaynağına bağlanmak ve onu görüntülemenizi sağlar. Erişimciler ile başlayarak, kalan ilişkilendirmek görüntülendiğinde verilerle çalışmak için.  

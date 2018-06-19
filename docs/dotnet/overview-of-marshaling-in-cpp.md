@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33137140"
 ---
 # <a name="overview-of-marshaling-in-c"></a>C++'da Hazırlamaya Genel Bakış
 Karma modda bazen yerel ve yönetilen türler arasında verilerinizi sıralamanız gerekir. [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)] yardımcı olmak için hazırlama kitaplığını sunulan sıralama ve basit bir şekilde veri dönüştürün.  

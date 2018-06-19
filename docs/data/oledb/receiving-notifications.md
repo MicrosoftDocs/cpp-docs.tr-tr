@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33112322"
 ---
 # <a name="receiving-notifications"></a>Bildirimleri Alma
 OLE DB olaylar meydana geldiğinde bildirim almak için arabirim sağlar. Bunlar [OLE DB Nesne bildirimleri](https://msdn.microsoft.com/en-us/library/ms725406.aspx) içinde *OLE DB Programcının Başvurusu*. Bu olayların Kurulumu standart COM bağlantı noktası mekanizması kullanır. Örneğin, aracılığıyla olaylarını almak istediği bir ATL nesnesi `IRowsetNotify` uygulayan `IRowsetNotify` ekleyerek arabirimi `IRowsetNotify` türetilmiş sınıf listesi ve üzerinden gösterme bir **COM_INTERFACE_ENTRY** makrosu.  
