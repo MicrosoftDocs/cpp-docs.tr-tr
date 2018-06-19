@@ -22,6 +22,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32052833"
 ---
 # <a name="microsoft-macro-assembler-reference"></a>Microsoft Macro Assembler Başvurusu
 Microsoft makro derleyici (MASM), satır içi derleme birkaç avantaj sağlar. MASM döngü, aritmetik ve metin dizesi işleme gibi özellikleri olan bir makro dili içerir. 386, 486 ve Pentium işlemcilerini yönerge kümesi desteklediğinden MASM, ayrıca donanım üzerinde daha fazla denetim sağlar. MASM kullanarak, aynı zamanda süresi ve bellek ek yükü azaltabilir.  

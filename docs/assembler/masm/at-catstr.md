@@ -21,6 +21,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32050980"
 ---
 # <a name="catstr"></a>@CatStr
 Bir veya daha fazla art arda ekler makrosu işlevi. Bir dize döndürür.  

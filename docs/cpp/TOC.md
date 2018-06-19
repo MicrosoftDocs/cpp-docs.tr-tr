@@ -372,7 +372,7 @@
 ###### [_bstr_t::operator +=, +](bstr-t-operator-add-equal-plus.md)
 ###### [_bstr_t::operator !](bstr-t-operator-logical-not.md)
 ###### [_bstr_t İlişkisel İşleçleri](bstr-t-relational-operators.md)
-###### [_bstr_t::wchar_t*, _bstr_t::char*](bstr-t-wchar-t-star-bstr-t-char-star.md)
+###### [_bstr_t::wchar_t *, _bstr_t::char*](bstr-t-wchar-t-star-bstr-t-char-star.md)
 #### [_com_error Sınıfı](com-error-class.md)
 ##### [_com_error Üye İşlevleri](com-error-member-functions.md)
 ###### [_com_error::_com_error](com-error-com-error.md)

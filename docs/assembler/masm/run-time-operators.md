@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32056054"
 ---
 # <a name="run-time-operators"></a>Çalışma Zamanı İşleçleri
 Microsoft makro derleyici dil çalışma zamanı işleçleri hakkında daha fazla bilgi için bkz: [işleçler başvurusu](../../assembler/masm/operators-reference.md).  

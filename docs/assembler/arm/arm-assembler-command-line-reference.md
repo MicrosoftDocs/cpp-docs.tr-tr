@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32054617"
 ---
 # <a name="arm-assembler-command-line-reference"></a>ARM Assembler Komut Satırı Başvurusu
 Bu makalede Microsoft ARM assembler komut satırı bilgilerini sağlar *armasm*, ortak nesne dosyası biçimi (COFF), Microsoft uygulamasına ARMv7 Flash assembly dili derler. Bağlayıcı COFF kodu ARM assembler veya kitaplığı tarafından oluşturulan nesne kitaplıkları ile birlikte C Derleyici tarafından üretilen nesne kodu ile bağlayabilirsiniz.  
