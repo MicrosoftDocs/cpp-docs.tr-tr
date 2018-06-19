@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33333836"
 ---
 # <a name="activex-control-containers-handling-events-from-an-activex-control"></a>ActiveX Denetimi Kapsayıcıları: ActiveX Denetimindeki Etkinlikleri İşleme
 Bu makalede, bir ActiveX denetimi kapsayıcısı ActiveX denetimleri için olay işleyicileri yüklemek için Özellikler penceresini kullanarak anlatılmaktadır. Olay işleyicileri belirli olaylar (denetiminden ek olarak) bildirimlerini almak ve yanıt olarak bazı eylemleri gerçekleştirmek için kullanılır. Bu bildirim, "olay tetikleme" adı verilir.  

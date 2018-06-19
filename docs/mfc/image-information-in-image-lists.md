@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343719"
 ---
 # <a name="image-information-in-image-lists"></a>Görüntü Listelerindeki Görüntü Bilgileri
 [Cımagelist](../mfc/reference/cimagelist-class.md) görüntü listesinden görüntü bilgilerini almak işlevler içerir. [GetImageInfo](../mfc/reference/cimagelist-class.md#getimageinfo) üye işlevi doldurur bir `IMAGEINFO` görüntü ve maskesi bit eşlemler, Renk düzlemi ve bit / piksel sayısını ve sınırlayıcı dikdörtgenini tanıtıcıları dahil olmak üzere tek bir görüntü hakkındaki bilgilerle yapısı Görüntü bit eşlem içinde görüntüsü. Bit eşlemler görüntüsü için doğrudan yönetmek için bu bilgileri kullanın.  

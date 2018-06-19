@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344506"
 ---
 # <a name="deriving-controls-from-a-standard-control"></a>Standart Bir Denetimden Denetim Türetme
 Herhangi bir olduğu gibi [CWnd](../mfc/reference/cwnd-class.md)-türetilmiş sınıf, var olan bir denetim sınıfından yeni bir sınıf türetme tarafından bir denetimin davranışı değiştirebilirsiniz.  

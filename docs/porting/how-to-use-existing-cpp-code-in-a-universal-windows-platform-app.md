@@ -17,6 +17,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33847978"
 ---
 # <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>Nasıl yapılır: Mevcut C++ Kodunu Evrensel Windows Platformu Uygulamasında Kullanma
 Belki de UWP ortamında çalışan masaüstü programınızı almak için en kolay yolu Masaüstü köprüsü teknolojileri kullanmaktır. Varolan uygulamanızı içermeyen bir UWP uygulaması olarak paketini masaüstü uygulaması dönüştürücü bunlar kodu gerekli değişiklikleri. Daha fazla bilgi için bkz: [Masaüstü uygulamanız için evrensel Windows Platformu (UWP) Masaüstü Köprüsü ile Getir](https://msdn.microsoft.com/windows/uwp/porting/desktop-to-uwp-root).

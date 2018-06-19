@@ -20,6 +20,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33849580"
 ---
 # <a name="cc-preprocessor-reference"></a>C/C++ Ön işlemci Başvurusu
 *C/C++ ön işlemci başvurusu* Microsoft C/C++ içinde uygulandığı şekilde önişlemci açıklar. Derleyiciye geçirilmeden önce önişlemci C ve C++ dosyalarda ön işlemleri gerçekleştirir. Önişlemci koşullu Kodu derlemek, dosyaları eklemek, derleme zamanı hata iletileri belirtin ve kod bölümleri için makine özgü kurallar geçerlidir için kullanabilirsiniz.  

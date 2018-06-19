@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33327772"
 ---
 # <a name="project-build-error-prj0005"></a>Proje Derleme Hatası PRJ0005
 'Dizin' dizininde geçici dosya oluşturulamadı.  

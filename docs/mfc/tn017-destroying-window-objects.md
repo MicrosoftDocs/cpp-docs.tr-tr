@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33384309"
 ---
 # <a name="tn017-destroying-window-objects"></a>TN017: Pencere Nesnelerini Yok Etme
 Bu Not kullanımını açıklar [CWnd::PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy) yöntemi. Özelleştirilmiş ayrılması yapmak istiyorsanız bu yöntemi kullanın `CWnd`-türetilmiş nesneleri. Bu Not ayrıca neden kullanmanız açıklar [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow) yerine C++ Windows nesnesi yok etmek için `delete` işleci.  

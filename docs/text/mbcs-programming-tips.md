@@ -24,6 +24,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33855285"
 ---
 # <a name="mbcs-programming-tips"></a>MBCS Programlama İpuçları
 Yeni geliştirme Unicode büyük olasılıkla son kullanıcılarının görebileceği tüm dizeler için karakter kodlamasını kullanmanız gerekir. MBCS tarafından Unicode kılınan eski bir teknolojidir. Bu bölümde, MBCS kullanan ve burada Unicode'a dönüştürmek mümkün değildir varolan programlar korumalıdır geliştiriciler için ipuçları sağlar. MFC uygulamaları ve MFC olmadan yazılan uygulamalar önerileri geçerlidir. Konular şunlardır:  

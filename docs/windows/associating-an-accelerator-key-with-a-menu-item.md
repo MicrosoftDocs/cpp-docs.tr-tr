@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33854817"
 ---
 # <a name="associating-an-accelerator-key-with-a-menu-item"></a>Hızlandırıcı Tuşunu Menü Öğesiyle İlişkilendirme
 Çoğu zaman, menü öğesi ile aynı program komutu vermek için bir tuş birleşimine istiyor. Menü öğesi ve uygulamanızın Hızlandırıcı tablosunda bir giriş için aynı kaynak tanımlayıcısını (ID) atayarak bunu yapabilirsiniz. Hızlandırıcı adını göstermek için menü öğesinin resim yazısı Düzenle. Menü öğeleri ve Hızlandırıcı tuşları hakkında daha fazla bilgi için bkz: [menü öğesi Hızlandırıcı tuşuyla ilişkilendirme](../windows/associating-a-menu-command-with-an-accelerator-key.md).  

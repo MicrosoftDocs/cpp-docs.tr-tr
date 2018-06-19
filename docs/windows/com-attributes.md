@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33861392"
 ---
 # <a name="com-attributes"></a>COM Öznitelikleri
 COM öznitelikleri COM Geliştirme ve .NET Framework ortak dil çalışma zamanı geliştirme çeşitli alanlar desteklemek için kod yerleştirir. Stok özellikleri, yöntemleri ve olayları desteklemek için bu alanları aralığından özel arabirim uygulamasına ve var olan arabirimler desteği. Ayrıca, destek bileşik ve ActiveX denetimi uyarlamasını bulunabilir.  

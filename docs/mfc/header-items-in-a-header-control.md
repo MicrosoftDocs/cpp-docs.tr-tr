@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344928"
 ---
 # <a name="header-items-in-a-header-control"></a>Üstbilgi Denetimindeki Üstbilgi Öğeleri
 Üstbilgi denetimi oluşturan üstbilgi öğeleri davranışını ve görünümü önemli denetime sahip olursunuz ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)). Her üstbilgi öğesi, bir dize, eşlemli resmi, ilişkili resim listesi veya ilişkili bir uygulama tanımlı 32-bit değeri görüntüden olabilir. Dize, bit eşlem veya görüntü üstbilgi öğesi içinde görüntülenir.  

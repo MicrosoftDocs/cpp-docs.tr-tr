@@ -24,6 +24,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33862646"
 ---
 # <a name="component-extensions-for-runtime-platforms"></a>Çalışma Zamanı Platformları için Bileşen Uzantıları
 Visual C++, programın çalışma zamanı platformları karşı yardımcı olmak için dil uzantıları sağlar. Kullanarak C + +/ CX, program Evrensel Windows platformu uygulamaları ve yerel kodu derleme bileşenleri. C + kullanarak doğrudan Windows çalışma zamanı COM arabirimleri karşı programlama tarafından Evrensel Windows platformu uygulamaları oluşturabilirsiniz ancak +/ CX, Oluşturucular, özel durumlar ve diğer modern C++ deyimleri programlama ile çalışabilir. C++ programlama .NET platformu yönetilen yürütme ortamında etkinleştirmek için C + kullanabileceğiniz +/ CLI.  

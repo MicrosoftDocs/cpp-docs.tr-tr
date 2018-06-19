@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385371"
 ---
 # <a name="tree-control-item-information"></a>Ağaç Denetim Öğesi Bilgileri
 Ağaç denetimleri ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) denetimindeki öğeleri hakkında bilgi almak üye işlevleri vardır. [GetItem](../mfc/reference/ctreectrl-class.md#getitem) üye işlevi bazılarını veya tümünü bir öğesiyle ilişkili verileri alır. Bu veriler, öğenin metni, durumu, görüntüler, alt öğelerin sayısını ve bir uygulama tanımlı 32-bit veri değeri dahil olabilir. Ayrıca bir [SetItem](../mfc/reference/ctreectrl-class.md#setitem) bazılarını veya tümünü bir öğesiyle ilişkili verileri ayarlayabilirsiniz işlevi.  

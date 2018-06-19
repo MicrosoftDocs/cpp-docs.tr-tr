@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689603"
 ---
 # <a name="262-critical-construct"></a>2.6.2 critical Yapı
 **Kritik** yönergesi ilişkili yapılandırılmış blok yürütülmesi için tek bir iş parçacığı aynı anda kısıtlayan bir yapı tanımlar. Söz dizimi **kritik** yönergesi aşağıdaki gibidir:  

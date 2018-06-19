@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343505"
 ---
 # <a name="exitinstance-member-function"></a>ExitInstance Üye İşlevi
 [ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance) sınıfının üye işlevini [CWinApp](../mfc/reference/cwinapp-class.md) uygulamanız bir kopyasını sonlandırır, genellikle uygulama çıkma kullanıcı sonucunda her zaman çağrılır.  

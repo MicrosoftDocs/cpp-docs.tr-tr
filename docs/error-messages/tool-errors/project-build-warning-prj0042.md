@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33316835"
 ---
 # <a name="project-build-warning-prj0042"></a>Proje Derleme Uyarısı PRJ0042
 **'Outputs özelliği' dosyası için özel derleme adımı için**   

@@ -17,6 +17,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33850150"
 ---
 # <a name="porting-and-upgrading-examples-and-case-studies"></a>Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri
 Tür süresi karşılaşabileceğiniz sorunları hakkında bir fikir edinmek başarılı geçişler hikayeleri inceleyerek geçerli bir Visual C++'ın önceki bir sürümünden geçiş.  

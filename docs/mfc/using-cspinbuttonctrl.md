@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33384406"
 ---
 # <a name="using-cspinbuttonctrl"></a>CSpinButtonCtrl Kullanma
 *Değer değiştirme düğmesi* denetimi (olarak da bilinen bir *yukarı-aşağı* denetimi) bir kullanıcının bir değer ayarlamak için tıklatabileceği okları çifti sağlar. Bu değer olarak bilinen *geçerli konumu*. Konumu değer değiştirme düğmesi aralık içinde kalır. Kullanıcı yukarı ok tıkladığında, en doğru konuma taşır; ve kullanıcı aşağı oka tıkladığında, en düşük doğru konuma taşır.  

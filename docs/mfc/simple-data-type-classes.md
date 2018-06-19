@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382482"
 ---
 # <a name="simple-data-type-classes"></a>Basit Veri Türü Sınıfları
 Aşağıdaki sınıflar çizim koordinatları, karakter dizelerini ve saat şifreleyebilir ve uygun tarih bilgilerini C++ söz dizimini kullanın. Bu nesneler, Sınıf Kitaplığı'nda Windows sınıfların üye işlevleri için parametre olarak yaygın olarak kullanılır. Çünkü `CPoint`, `CSize`, ve `CRect` karşılık **noktası**, **BOYUTU**, ve `RECT` yapıları, sırasıyla, Windows SDK'ın bu nesnelerin kullanabilirsiniz Bu C dil yapıları kullanabilirsiniz her yerde C++ sınıfları. Üye işlevlerini yararlı arabirimlerde sınıflar sağlar. `CStringT` çok esnek dinamik karakter dizelerini sağlar. `CTime`, `COleDateTime`, `CTimeSpan`, ve **COleTimeSpan** saat ve tarih değerleri temsil eder. Makaleyi bu sınıfları hakkında daha fazla bilgi için bkz: [tarih ve saat](../atl-mfc-shared/date-and-time.md).  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342221"
 ---
 # <a name="common-dialog-classes"></a>Ortak İletişim Kutusu Sınıfları
 Sınıf yanı sıra [CDialog](../mfc/reference/cdialog-class.md), MFC kaynakları türetilen birden fazla sınıf `CDialog` aşağıdaki tabloda gösterildiği gibi yaygın olarak kullanılan iletişim kutularını kapsayan. Kapsüllenmiş iletişim kutularında "ortak iletişim kutuları" olarak adlandırılır ve Windows ortak iletişim kitaplığı (COMMDLG. parçası DLL). İletişim şablonu kaynakları ve bu sınıflar için kod Windows'da Windows 3.1 ve sonraki sürümleri parçası olan ortak iletişim kutuları sağlanır.  

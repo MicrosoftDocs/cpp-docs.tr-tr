@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33705373"
 ---
 # <a name="c-amp-c-accelerated-massive-parallelism"></a>C++ AMP (C++ Accelerated Massive Parallelism)
 C++ AMP (C++ hızlandırılmış yoğun paralellik) ayrı grafik kart üzerinde bir grafik işlemci birimi (GPU) yaygın olarak mevcut verileri paralel donanım yararlanarak, C++ kod yürütmeyi hızlandırır. C++ AMP programlama modeli, bellek aktarımı, dizin oluşturma ve döşeme çok boyutlu diziler için destek içerir. Ayrıca, bir matematik işlevi kitaplık içerir. Veri GPU İşlemcisinden nasıl taşınır denetlemek için C++ AMP dil uzantılarını kullanıyorsanız ve yedekleyin.  

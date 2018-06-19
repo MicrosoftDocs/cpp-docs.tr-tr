@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346187"
 ---
 # <a name="life-cycle-of-a-dialog-box"></a>Bir İletişim Kutusunun Yaşam Döngüsü
 Bir iletişim kutusunun yaşam döngüsü sırasında kullanıcı iletişim kutusunu çağırır, genellikle oluşturan ve iletişim nesnesini başlatır bir komut işleyici içinde kullanıcı iletişim kutusu ile etkileşim kurar ve iletişim kutusunu kapatır.  

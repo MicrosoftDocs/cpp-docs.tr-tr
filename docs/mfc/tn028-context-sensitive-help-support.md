@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385150"
 ---
 # <a name="tn028-context-sensitive-help-support"></a>TN028: Bağlama Duyarlı Yardım Desteği
 Bu Not Yardım bağlamları kimlikleri ve diğer Yardım konuları MFC'de atamak için kurallar açıklanmaktadır. Bağlama duyarlı Yardım desteği Visual C++'da kullanılabilir Yardım Derleyici gerektirir.  

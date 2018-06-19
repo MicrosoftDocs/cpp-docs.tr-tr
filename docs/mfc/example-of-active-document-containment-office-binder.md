@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345967"
 ---
 # <a name="example-of-active-document-containment-office-binder"></a>Etkin Belge Kapsama Örneği: Office Binder
 Microsoft Office Binder bir etkin belge kapsayıcısı örneğidir. Kapsayıcıları zamanki gibi Office Binder birincil iki bölme içerir. Sol bölmede cilt içindeki etkin belgeler karşılık simgeleri içerir. Her bir belgenin adlı bir *bölüm* bağlayıcı içinde. Örneğin, bir bağlayıcı Word belgelerini, PowerPoint dosyaları, Excel elektronik tablolar vb. içerebilir.  

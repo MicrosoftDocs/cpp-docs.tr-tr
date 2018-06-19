@@ -20,6 +20,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33849151"
 ---
 # <a name="grammar-summary-cc"></a>Dilbilgisi Özeti (C/C++)
 Bu bölümde önişlemcinin resmi dilbilgisi açıklanmaktadır. Ön işleme yönergeleri sözdizimi kapsayan ve işleçler ele alınan [önişlemci](../preprocessor/preprocessor.md) ve [Pragma yönergeleri](../preprocessor/pragma-directives-and-the-pragma-keyword.md).  

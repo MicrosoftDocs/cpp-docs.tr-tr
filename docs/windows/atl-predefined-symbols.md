@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33863744"
 ---
 # <a name="atl-predefined-symbols"></a>ATL Önceden Tanımlanmış Semboller
 Bu simgeleri ATL üstbilgi dosyalarında tanımlanır, ancak standart Windows uygulama işlevleri ve eylemleri destekler. Bu simgeleri çoğunlukla iletişim kutuları ile kullanılır. Çalışırken iletişim kutuları ve denetimleri ile içinde [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md), bu simgeleri ortak denetimleriyle ilişkili özellikleri penceresinde görünür. İletişim kutusunda İptal düğmesi varsa, örneğin, bu komut IDCANCEL simgesiyle ilişkilendirilecek içinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window).  

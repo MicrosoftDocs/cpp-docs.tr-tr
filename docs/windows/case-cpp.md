@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33860963"
 ---
 # <a name="case-c"></a>durum (C++)
 İle kullanılan [switch_type](../windows/switch-type.md) özniteliğini bir **UNION**.  

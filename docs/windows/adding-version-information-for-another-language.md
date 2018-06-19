@@ -26,6 +26,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33857577"
 ---
 # <a name="adding-version-information-for-another-language"></a>Başka Dil İçin Sürüm Bilgileri Ekleme
 ### <a name="to-add-version-information-for-another-language-new-info-block"></a>Başka bir dilde (yeni bilgi bloğu) için sürüm bilgileri eklemek için  

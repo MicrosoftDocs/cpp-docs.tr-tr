@@ -17,6 +17,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33845615"
 ---
 # <a name="porting-guide-com-spy"></a>Taşıma Kılavuzu: COM Spy
 Bu konu, daha eski Visual C++ projeleri Visual Studio en son sürüme yükseltme işlemi gösteren bir dizi makaleleri saniyedir. Bu konudaki örnek kod, en son Visual Studio 2005 ile derlendi.  

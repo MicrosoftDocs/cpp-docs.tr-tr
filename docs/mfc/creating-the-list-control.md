@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342052"
 ---
 # <a name="creating-the-list-control"></a>Liste Denetimi Oluşturma
 Listenin nasıl kontrol ([CListCtrl](../mfc/reference/clistctrl-class.md)) oluşturulan denetimi kullanarak doğrudan mı sınıfını kullanarak üzerinde bağlıdır [CListView](../mfc/reference/clistview-class.md) yerine. Kullanırsanız `CListView`, çerçeve, belge/görünüm oluşturma dizisi bir parçası olarak görünümü oluşturur. Liste görünümü oluşturma (ikisi de aynı olan) liste denetimi de oluşturur. Denetim görünümün içinde oluşturulan [OnCreate](../mfc/reference/cwnd-class.md#oncreate) işleyici işlevi. Bu durumda, Denetim çağrısıyla öğeler eklemek hazır [GetListCtrl](../mfc/reference/clistview-class.md#getlistctrl).  

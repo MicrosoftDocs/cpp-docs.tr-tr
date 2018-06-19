@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33860008"
 ---
 # <a name="chaininterfacesiidcount-constant"></a>ChainInterfaces::IidCount Sabiti
 Arabirim şablon parametresi tarafından belirtilen arabirimler içinde yer alan kimlikleri toplam sayısı `I0` aracılığıyla `I9`.  

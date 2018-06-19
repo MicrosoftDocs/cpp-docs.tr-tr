@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33692096"
 ---
 # <a name="how-to-use-combinable-to-improve-performance"></a>Nasıl yapılır: Performansı arttırmak için combinable Kullanma
 Bu örnek nasıl kullanılacağını gösterir [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) sayıların toplamını hesaplamak için sınıf bir [std::array](../../standard-library/array-class-stl.md) asal olan nesne. `combinable` Sınıfı, paylaşılan durum ortadan kaldırarak performansını artırır.  

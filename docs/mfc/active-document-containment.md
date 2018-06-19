@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33332679"
 ---
 # <a name="active-document-containment"></a>Etkin Belge Kapsaması
 Etkin belge kapsaması belgelerle oluşturmak ve her belge türü için birden çok uygulama çerçeveleri kullanmak için zorlama yerine çalışmak üzere tek bir çerçeve sağlayan bir teknolojidir. OLE katıştırılmış nesneler yalnızca tek bir içerik etkinleştirilebilir bileşik belge içinde çalışır, temel OLE teknolojisini farklıdır. Etkin belge kapsaması ile tek bir çerçevesi bağlamında tüm belgeyi (ilişkili menüleri, araç çubukları ve benzeri dahil olmak üzere diğer bir deyişle, tüm uygulamanın) etkinleştirin.  

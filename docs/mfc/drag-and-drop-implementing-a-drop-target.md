@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344275"
 ---
 # <a name="drag-and-drop-implementing-a-drop-target"></a>Sürükle ve Bırak: Bir Bırakma Hedefi Uygulama
 Bu makalede bir bırakma hedefi uygulamanızı nasıl özetlenmektedir. Bırakma hedefi uygulama bir bırakma kaynağı uygulama değerinden biraz daha fazla iş alır ancak hala oldukça basit bir işlemdir. Bu teknikler OLE olmayan uygulamalar için de geçerlidir.  

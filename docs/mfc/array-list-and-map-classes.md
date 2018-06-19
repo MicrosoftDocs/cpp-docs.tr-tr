@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345299"
 ---
 # <a name="array-list-and-map-classes"></a>Dizi, Liste ve Eşleme Sınıfları
 Toplamalar veri işleme için bir grup koleksiyon sınıflarının sınıf kitaplığı sağlar — diziler, listeler ve eşler — çeşitli nesne ve önceden tanımlanmış türleri tutun. Koleksiyonları dinamik olarak boyutlandırılır. Bu sınıfların herhangi bir programda veya Windows için yazılmış olup olmadığını kullanılabilir. Ancak, bunlar uygulama çerçevesi, belge sınıflarının tanımlanması veri yapılarını uygulamak için en kullanışlıdır. Kullanıma özel koleksiyon sınıfları bunlardan türetilemeyeceğini veya bunları şablonu sınıflara göre oluşturabilirsiniz. Makaleyi Bu yaklaşımlar hakkında daha fazla bilgi için bkz: [koleksiyonları](../mfc/collections.md). Makale şablonu koleksiyon sınıfları listesi için bkz [diziler, listeler ve eşlemeler için şablon sınıfları](../mfc/template-classes-for-arrays-lists-and-maps.md).  

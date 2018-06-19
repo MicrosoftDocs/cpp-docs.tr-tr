@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33325922"
 ---
 # <a name="active-document-classes"></a>Etkin Belge Sınıfları
 Etkin belgeler, Internet Explorer 5.5 gibi bir Web tarayıcısı, tüm istemci penceresinde veya etkin belgeler destekleyen Microsoft Office Binder gibi etkin bir kapsayıcı görüntülenebilir.  

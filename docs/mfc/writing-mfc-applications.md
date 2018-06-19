@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385995"
 ---
 # <a name="writing-mfc-applications"></a>MFC Uygulamaları Yazma
 Bu makalede, uygulamanız geliştirmek için ilk adımlar açıklanmaktadır. İlk olarak, ne tür bir uygulama yazmakta olduğunuz karar vermeniz gerekir. Birkaç seçenek ele alınan [uygulama tasarımı seçimleri](../mfc/application-design-choices.md). Uygulamanızı olacaktır:  

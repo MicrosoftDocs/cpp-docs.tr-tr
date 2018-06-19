@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344402"
 ---
 # <a name="framework-mfc"></a>Framework (MFC)
 Çalışmanızı Microsoft Foundation Class (MFC) kitaplığı framework ile büyük ölçüde birkaç önemli sınıfları ve birkaç Visual C++ Araçları dayanır. Bazı sınıfları Win32 uygulama programlama arabirimi (API) büyük bir kısmı kapsüller. Diğer sınıfları belgeler, görünümler ve uygulama gibi uygulama kavramlarını kapsüller. Hala başkalarının OLE özellikleri ve ODBC ve DAO veri erişimi işlevselliği kapsüller.  

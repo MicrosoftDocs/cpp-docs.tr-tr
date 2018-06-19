@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385423"
 ---
 # <a name="tn002-persistent-object-data-format"></a>TN002: Kalıcı Nesne Veri Biçimi
 Bu Not bir dosyada depolandığında destekleyen kalıcı C++ nesneleri ve nesne veri biçimi MFC yordamları açıklar. Bu, yalnızca sınıflarıyla uygulanır [declare_serıal](../mfc/reference/run-time-object-model-services.md#declare_serial) ve [ımplement_serıal](../mfc/reference/run-time-object-model-services.md#implement_serial) makroları.  

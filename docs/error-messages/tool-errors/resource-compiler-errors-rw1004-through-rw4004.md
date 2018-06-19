@@ -17,6 +17,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33320111"
 ---
 # <a name="resource-compiler-errors-rw1004-through-rw4004"></a>RW1004 ile RW4004 arasındaki Kaynak Derleyicisi Hataları
 Bu bölüm, yapı araçları tarafından oluşturulan hatalara bir başvurudur. Belirli bir hata iletisi hakkında Yardım almak için fare çıktı penceresinde bir hata numarası tıklatıldığında ve F1'e basın ya da hata numarası yazın **Ara** dizinde kutusu.

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342153"
 ---
 # <a name="clipboard-adding-other-formats"></a>Pano: Diğer Biçimleri Ekleme
 Bu konuda, özellikle OLE desteği için desteklenen biçimler listesini genişletmek açıklanmaktadır. Konu [Pano: veri kopyalama ve yapıştırmayı](../mfc/clipboard-copying-and-pasting-data.md) kopyalama ve yapıştırma panodan desteklemek için gereken en düşük uygulamayı açıklar. Bu tüm uygulamanız ise, Pano'ya yerleştirilen yalnızca biçimler: `CF_METAFILEPICT`, **CF_EMBEDSOURCE**, **CF_OBJECTDESCRIPTOR**ve büyük olasılıkla `CF_LINKSOURCE`. Uygulamaların çoğu bu üç Pano üzerinde daha fazla biçiminden gerekir.  

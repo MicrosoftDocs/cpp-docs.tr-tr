@@ -20,6 +20,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33862029"
 ---
 # <a name="attribute-targets-c-component-extensions"></a>Öznitelik Hedefleri (C++ Bileşen Uzantıları)
 Öznitelik kullanım tanımlayıcıları öznitelik hedefleri belirtmenizi sağlar.  Her öznitelik belirli dil öğelerine uygulamak için tanımlanır. Örneğin, bir öznitelik yalnızca sınıflar ve yapılar uygulamak için tanımlanabilir.  Aşağıdaki liste, özel bir öznitelik kullanılabilmesi için olası söz dizimi öğeleri gösterir. Bu değerleri birleşimlerini (mantıksal kullanarak veya) kullanılabilir.  

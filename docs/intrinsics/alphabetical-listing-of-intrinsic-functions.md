@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33336511"
 ---
 # <a name="alphabetical-listing-of-intrinsic-functions"></a>İç işlevler alfabetik listesi
 Microsoft'a özgü iç işlevler kullanılabilir bazıları veya tümü mimarileri hakkında aşağıdaki bölümlerde açıklanmaktadır. Üstbilgi dosyaları veya kendi Web sitelerinde işlemci üreticileri tarafından desteklenen diğer iç bilgileri belgelenmiştir. Bkz: [ARM iç bilgileri](../intrinsics/arm-intrinsics.md), [x86 iç bilgileri](../intrinsics/x86-intrinsics-list.md), ve [x64 iç bilgileri](../intrinsics/x64-amd64-intrinsics-list.md) bölümleri üretici belgelere bağlantıları için. Bunlar için uygulanan iç bilgileri sahip C çalışma zamanı kitaplığı (CRT) işlevlerini burada belgelenmemiş; Bu işlevler belgelenmiştir [C çalışma zamanı kitaplığı başvurusu](../c-runtime-library/c-run-time-library-reference.md).  

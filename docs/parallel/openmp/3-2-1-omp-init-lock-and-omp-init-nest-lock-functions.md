@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33695804"
 ---
 # <a name="321-ompinitlock-and-ompinitnestlock-functions"></a>3.2.1 omp_init_lock ve omp_init_nest_lock İşlevleri
 Bu işlevlerin bir kilit başlatma tek yöntemdir. Her işlevi parametresi ile ilişkili kilit başlatır *kilit* sonraki çağrılar kullanmak için. Biçimi aşağıdaki gibidir:  

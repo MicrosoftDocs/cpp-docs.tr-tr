@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33860196"
 ---
 # <a name="attributed-programming-concepts"></a>Öznitelikli Programlama Kavramları
 Visual C++ öznitelikleri programlarınıza kullanmanıza yardımcı olacak malzemeler çeşitli içerir. Öznitelikler, Visual C++ ' ta yeni bir özellik COM programlama ve .NET Framework ortak dil çalışma zamanı geliştirme kolaylaştırmak için tasarlanmıştır. Kaynak dosyalarınız öznitelikleri eklediğinizde derleyici sağlayıcısı dinamik bağlantı kitaplığı (DLL) kod ekleme veya oluşturulan nesne dosyaları kodda değiştirmek için birlikte çalışır. .İdl dosyaları, arabirimler, tür kitaplıklarını ve diğer COM öğelerin oluşturulmasında yardımcı özniteliği vardır. Tümleşik geliştirme ortamı (IDE), öznitelikleri ve Özellikler penceresini sihirbazları tarafından desteklenir.  

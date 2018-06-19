@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33856494"
 ---
 # <a name="support-for-using-wmain"></a>wmain Kullanma Desteği
 Visual C++ destekler tanımlayan bir **wmain** işlevi ve Unicode uygulamanıza joker karakter bağımsız değişkenleri geçirme. Biçimsel parametresi bildirme **wmain**, benzer bir biçimde kullanarak **ana**. Ardından, joker karakter bağımsız değişkenlerini ve isteğe bağlı olarak bir joker karakter ortamı işaretçisi program geçirebilirsiniz. `argv` Ve `envp` parametreleri **wmain** türü `wchar_t*`. Örneğin:  

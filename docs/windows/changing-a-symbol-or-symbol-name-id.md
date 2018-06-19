@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33857720"
 ---
 # <a name="changing-a-symbol-or-symbol-name-id"></a>Sembolü veya Sembol Adını (ID) Değiştirme
 Yeni bir kaynak veya kaynak nesne oluşturduğunuzda, geliştirme ortamı gibi IDD_DIALOG1 varsayılan bir simge adı atar. Kullanabileceğiniz [Özellikler penceresini](/visualstudio/ide/reference/properties-window) varsayılan sembol adını değiştirmek veya zaten bir kaynakla ilişkili herhangi bir sembol adını değiştirmek için.  

@@ -30,6 +30,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33858152"
 ---
 # <a name="locales-and-code-pages"></a>Yerel Ayarlar ve Kod Sayfaları
 Yerel ayar kimliği, belirli bir coğrafi bölge için dili ve yerel kuralları yansıtır. Belirli bir dile birden fazla ülke/bölge içinde konuşulan; Örneğin, Portekizce de olduğu gibi Portekiz Brezilya konuşulmaz. Buna karşılık, bir ülke veya bölgeye birden fazla resmi dili olabilir. Örneğin, iki dil Kanada vardır: İngilizce ve Fransızca. Bu nedenle, Kanada iki ayrı yerel ayarı vardır: Kanada İngilizce ve Fransızca Kanada. Bazı yerel ayara bağımlı kategoriler tarih biçimlendirmesini ve parasal değerlerin görüntülenme biçimini içerir.  

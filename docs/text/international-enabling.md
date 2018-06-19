@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33858708"
 ---
 # <a name="international-enabling"></a>Uluslararası Etkinleştirme
 Çoğu geleneksel C ve C++ kodu uluslararası uygulamalarda düzgün çalışmayan varsayımlarda karakter ve dize hakkında bulunur. MFC ve çalışma zamanı kitaplığı Unicode ya da MBCS desteklerken, da hala yapmanız gereken iş yok. Size yol göstermesi için bu bölümde Visual c++'ta "uluslararası etkinleştirme" anlamı açıklanmaktadır:  
