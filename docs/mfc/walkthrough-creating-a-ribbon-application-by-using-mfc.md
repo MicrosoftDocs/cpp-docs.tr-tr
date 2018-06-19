@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385235"
 ---
 # <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>İzlenecek yol: MFC Kullanarak Şerit Uygulaması Oluşturma
 Bu kılavuzda nasıl kullanılacağını gösterir **MFC Uygulama Sihirbazı'nı** Şerit varsayılan olan bir uygulama oluşturmak için. Sonra ekleyerek Şerit genişletebilirsiniz bir **özel** sahip Şerit kategori bir **Sık Kullanılanlar** Şerit paneli ve bazı sık kullanılan komutlar paneline ekleme.  

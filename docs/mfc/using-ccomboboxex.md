@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381767"
 ---
 # <a name="using-ccomboboxex"></a>CComboBoxEx Kullanma
 Genişletilmiş Birleşik giriş kutusu denetimi öğesi görüntüler için yerel destek sağlar standart birleşik giriş kutusu denetimi, bir uzantısıdır. Bu görüntüler şu anda seçili ve seçili öğeleri gibi birleşik giriş kutusu öğeleri ayrı ayrı durumunu göstermek için kullanılabilir. Öğe görüntüleri kolay erişilebilir olması için resim listesi desteği denetimi sağlar.  

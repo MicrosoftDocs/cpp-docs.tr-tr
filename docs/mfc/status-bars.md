@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379638"
 ---
 # <a name="status-bars"></a>Durum Çubukları
 Durum çubukları, uygulama kullanıcının iş kesintiye uğratmadan kullanıcıya iletileri ve yararlı bilgileri görüntülemek için bir yer sağlar. Genellikle bir penceresinin alt kısmında görüntülenen, durum çubukları "" göstergeleri"ve"iletisi satır."içeren bölmeleri," sahip Makro kaydı açık olup olmadığını üzerinde vb. gibi şeyler kaydırma kilidi durumunu göstergeleri verin. Durum çubuğunda ileti satırı kullanıcının fareyle işaret ettiğinden bir araç çubuğu düğmesi veya menü öğesi veya program durumu hakkındaki bilgileri görüntüleyebilirsiniz.  

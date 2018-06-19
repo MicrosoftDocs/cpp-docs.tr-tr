@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33686727"
 ---
 # <a name="3110-ompgetnested-function"></a>3.1.10 omp_get_nested İşlevi
 `omp_get_nested` İşlevi, iç içe geçmiş paralellik etkinse, sıfır olmayan bir değer ve 0, devre dışı bırakılırsa döndürür. İç içe geçmiş paralellik hakkında daha fazla bilgi için sayfa 40 3.1.9 bölümüne bakın. Biçimi aşağıdaki gibidir:  

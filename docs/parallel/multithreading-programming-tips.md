@@ -31,6 +31,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689993"
 ---
 # <a name="multithreading-programming-tips"></a>Çoklu İş Parçacığı Kullanımı: Programlama İpuçları
 Birden çok iş parçacıklı uygulamalar verilere erişirken tek iş parçacıklı uygulamalar daha büyük dikkat gerektirir. Olduğundan birden çok, yürütme bağımsız yollar aynı anda birden çok iş parçacıklı uygulamalarda algoritmalar, verilerini ya da her ikisini de bilmeniz gerekir bu verileri kullanmak aynı anda birden çok iş parçacığı tarafından kullanılabilir. Bu konu Microsoft Foundation Class (MFC) kitaplığı ile birden çok iş parçacıklı uygulamalar programlamada olası sorunları önleme teknikleri açıklar.  

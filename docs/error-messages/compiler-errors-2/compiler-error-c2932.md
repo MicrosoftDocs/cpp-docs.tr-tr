@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33241601"
 ---
 # <a name="compiler-error-c2932"></a>Derleyici Hatası C2932
 'class': türü sınıfı kimliği veri üyesi 'tanımlayıcısı' olarak yeniden tanımlandı  

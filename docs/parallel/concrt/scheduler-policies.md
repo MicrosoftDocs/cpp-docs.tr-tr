@@ -19,6 +19,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33690413"
 ---
 # <a name="scheduler-policies"></a>Scheduler İlkeleri
 Bu belge eşzamanlılık çalışma zamanı Zamanlayıcı ilkeleri rolü açıklanmaktadır. A *Zamanlayıcı İlkesi* Zamanlayıcısı görevleri yönettiğinde kullanan stratejisi denetler. Örneğin, en yürütmek için bazı görevler gerektiren bir uygulama göz önünde bulundurun `THREAD_PRIORITY_NORMAL` ve diğer görevleri, yürütülecek `THREAD_PRIORITY_HIGHEST`.  İki Zamanlayıcı örnekleri oluşturabilirsiniz: belirten bir `ContextPriority` ilkenin `THREAD_PRIORITY_NORMAL` ve aynı ilkenin belirten başka `THREAD_PRIORITY_HIGHEST`.  

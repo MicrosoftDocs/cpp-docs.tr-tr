@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382105"
 ---
 # <a name="ribbon-designer-mfc"></a>Şerit Tasarımcısı (MFC)
 Şerit Tasarımcısı oluşturmanızı ve MFC uygulamalarında Şerit özelleştirme sağlar. Şerit komutları mantıksal gruplar halinde düzenler bir kullanıcı arabirimi (UI) öğesidir. Bu gruplar bir Şerit ayrı sekmeleri pencerenin üst kısmında görüntülenir. Şerit menü çubuğu ve araç çubuklarını yerini alır. Şerit uygulaması kullanılabilirliğini önemli ölçüde artırabilir. Daha fazla bilgi için bkz: [Şerit](http://go.microsoft.com/fwlink/p/?linkid=129233). Aşağıdaki çizimde bir Şerit gösterir.  

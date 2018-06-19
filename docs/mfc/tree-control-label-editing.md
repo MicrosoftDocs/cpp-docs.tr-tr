@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381718"
 ---
 # <a name="tree-control-label-editing"></a>Ağaç Denetimi Etiketini Düzenleme
 Kullanıcı ağaç denetimindeki öğeleri etiketleri doğrudan düzenleyebilirsiniz ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) olan **TVS_EDITLABELS** stili. Kullanıcı odaklı öğenin etiketini tıklatarak düzenleme başlar. Bir uygulama kullanarak düzenleme başlar [EditLabel](../mfc/reference/ctreectrl-class.md#editlabel) üye işlevi. Ağaç denetimi bildirim düzenlerken başlar ve ne zaman, iptal tamamlandı veya gönderir. Düzenleme tamamlandığında, uygunsa, öğenin etiketi güncelleştirmek için sorumludur.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33383724"
 ---
 # <a name="technical-notes-by-number"></a>Sayıya Göre Teknik Notlar
 Aşağıdaki teknik notlar sayısal, önce en kısa süre önce yazılmış Teknik Not ile listelenir. Kategoriye göre bir listesi için bkz: [kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md).  

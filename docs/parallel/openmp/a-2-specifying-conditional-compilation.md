@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33690601"
 ---
 # <a name="a2---specifying-conditional-compilation"></a>A.2   Koşullu Derlemeyi Belirtme
 Aşağıdaki örnekler OpenMP makrosu kullanarak koşullu derleme kullanımını göstermek `_OPENMP` ([bölüm 2.2](../../parallel/openmp/2-2-conditional-compilation.md) sayfasında 8). OpenMP derleme ile `_OPENMP` hale makrosu tanımlı.  

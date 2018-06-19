@@ -24,6 +24,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33880325"
 ---
 # <a name="modifying-the-layout-grid"></a>Düzen Kılavuzunu Değiştirme
 Yerleştirme veya bir iletişim kutusu denetimleri düzenleme, Düzen kılavuzuna daha kesin konumlandırma için kullanabilirsiniz. Kılavuz açıldığında denetimleri "için ızgaranın noktalı çizgiler manyetik hale getirme gibi ek" görünür. Bu "ek kılavuza" özelliği üzerinde ve devre dışı bırakma ve Düzen kılavuz hücreleri boyutunu değiştirin.  

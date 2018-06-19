@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33690536"
 ---
 # <a name="a26---using-the-threadprivate-directive"></a>A.26   threadprivate Yönergesini Kullanma
 Aşağıdaki örnekler nasıl kullanılacağını göstermektedir `threadprivate` yönergesi ([bölüm 2.7.1](../../parallel/openmp/2-7-1-threadprivate-directive.md) sayfasında 23) ayrı bir sayaç her iş parçacığı vermek için.  

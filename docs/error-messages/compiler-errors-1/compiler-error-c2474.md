@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33198618"
 ---
 # <a name="compiler-error-c2474"></a>Derleyici Hatası C2474
 'anahtar sözcüğü': bitişik bir noktalı virgül eksik olabilir anahtar sözcüğü veya tanımlayıcısı.  

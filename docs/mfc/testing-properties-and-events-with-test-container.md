@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381042"
 ---
 # <a name="testing-properties-and-events-with-test-container"></a>Test Kapsayıcısı ile Özellikleri ve Olayları Test Etme
 Visual C++'da, gönderilen Test kapsayıcısı, test ve ActiveX denetimlerinde hata ayıklama için bir ActiveX denetimi kapsayıcısı uygulamasıdır. Test kapsayıcısı özelliklerini değiştirme yöntemlerini çağırma ve olaylarını tetikleme denetimin işlevselliğini sınamak denetim Geliştirici sağlar. Test kapsayıcısı veri bağlama bildirimleri günlüklerini görüntüleyebilir ve ayrıca bir ActiveX denetiminin Kalıcılık işlevselliğini test etme için olanakları sağlar: akış veya substorage özelliklerini kaydetmek, bunları yeniden ve saklı akış verilerini inceleyin. Bu bölümde, Test kapsayıcısı temel özelliklerini kullanmayı açıklar. Ek bilgi için seçin **yardımcı** Test kapsayıcısı çalıştırılırken menüsü.  

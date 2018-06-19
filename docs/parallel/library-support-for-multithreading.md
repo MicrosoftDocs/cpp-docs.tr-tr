@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33685681"
 ---
 # <a name="library-support-for-multithreading"></a>Çoklu İş Parçacığı Kullanımı için Kitaplık Desteği
 CRT'in tüm sürümleri artık bazı işlevler kilitleme olmayan sürümleri hariç olmak üzere çoklu iş parçacığı oluşturma destekler. Bkz: [birden çok iş parçacıklı kitaplık performansı](../c-runtime-library/multithreaded-libraries-performance.md) daha fazla bilgi için.  

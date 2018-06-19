@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381985"
 ---
 # <a name="slider-notification-messages"></a>Kaydırıcı Bildirim İletileri
 Kaydırıcı denetimi kendi üst penceresi kullanıcı eylemlerinin üst göndererek bildirir `WM_HSCROLL` veya `WM_VSCROLL` kaydırıcı denetimi yönünü bağlı olarak iletileri. Bu iletileri işlemek için işleyicileri eklemek `WM_HSCROLL` ve `WM_VSCROLL` üst pencere iletileri. [OnHScroll](../mfc/reference/cwnd-class.md#onhscroll) ve [OnVScroll](../mfc/reference/cwnd-class.md#onvscroll) üye işlevleri, bir bildirim kodu, kaydırıcıyı ve bir işaretçi konumunu geçirilecektir [CSliderCtrl](../mfc/reference/csliderctrl-class.md) nesnesi. İşaretçi türü olduğuna dikkat edin **CScrollBar \***  işaret olsa bile bir `CSliderCtrl` nesnesi. Kaydırıcı denetimi işlemek gerekiyorsa bu işaretçinin typecast gerekebilir.  

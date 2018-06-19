@@ -19,6 +19,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33693867"
 ---
 # <a name="scheduler-instances"></a>Zamanlayıcı Örnekleri
 Zamanlayıcı örnekleri eşzamanlılık çalışma zamanı ve nasıl kullanılacağını rolü bu belgeyi açıklanmaktadır [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) ve [concurrency::CurrentScheduler](../../parallel/concrt/reference/currentscheduler-class.md) oluşturmak ve yönetmek için sınıflar Zamanlayıcı örnekleri. Zamanlayıcı örnekleri, belirli türde iş yükleri açık zamanlama ilkeleri ilişkilendirmek istediğinizde faydalıdır. Örneğin, yükseltilmiş iş parçacığı öncelikli olarak bazı görevleri çalıştırmak ve normal iş parçacığı öncelikli diğer görevleri çalıştırmak için varsayılan Zamanlayıcısı'nı kullanmak için bir zamanlayıcı örneğini oluşturabilirsiniz.  

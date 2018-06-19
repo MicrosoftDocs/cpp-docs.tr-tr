@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33688908"
 ---
 # <a name="shortvectortraits-structure"></a>short_vector_traits Yapısı
 temel alınan vektör uzunluğu ve kısa vektör türü skaler tür veya skaler bir tür alımı short_vector_traits sağlar  

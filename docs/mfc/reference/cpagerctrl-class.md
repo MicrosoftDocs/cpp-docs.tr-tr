@@ -63,6 +63,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33377177"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl sınıfı
 `CPagerCtrl` Sınıfı görünüme içeren pencere sığmayan kapsanan bir pencere kaydırabilirsiniz Windows çağrı cihazı denetimi sarmalar.  

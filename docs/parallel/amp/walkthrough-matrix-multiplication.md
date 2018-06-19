@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33693201"
 ---
 # <a name="walkthrough-matrix-multiplication"></a>İzlenecek yol: Matris Çarpım
 Bu adım adım C++ AMP matris çarpım yürütülmesi hızlandırmak için nasıl kullanılacağını gösterir. İki algoritmaları sunulur, döşeme olmadan diğeri döşeme ile.  

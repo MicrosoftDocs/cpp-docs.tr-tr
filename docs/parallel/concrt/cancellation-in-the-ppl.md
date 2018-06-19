@@ -24,6 +24,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33694842"
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL'de İptal
 Bu belge iptali paralel Desen kitaplığı (PPL), paralel iş iptal etme ve paralel iş zaman iptal belirleme rolünü açıklamaktadır.  

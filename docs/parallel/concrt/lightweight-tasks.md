@@ -19,6 +19,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687419"
 ---
 # <a name="lightweight-tasks"></a>Basit Görevler
 Bu belge rolü eşzamanlılık çalışma zamanındaki Basit görevler açıklanmaktadır. A *basit görev* doğrudan zamanlama bir görevdir bir `concurrency::Scheduler` veya `concurrency::ScheduleGroup` nesnesi. Windows API için sağladığınız işlevi basit bir görev benzer [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) işlevi. Bu nedenle, Basit görevler eşzamanlılık çalışma zamanı zamanlama işlevselliğini kullanmak için var olan kodu uyum olduğunda yararlıdır. Eşzamanlılık Çalışma Basit görevler zaman uyumsuz aracılar zamanlamak ve zaman uyumsuz ileti blokları arasındaki iletileri göndermek için kullanır.  

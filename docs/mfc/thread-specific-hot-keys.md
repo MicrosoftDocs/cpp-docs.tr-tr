@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380425"
 ---
 # <a name="thread-specific-hot-keys"></a>İş Parçacığına Özgü Sık Kullanılan Tuşlar
 Bir uygulama bir iş parçacığına özgü sık kullanılan tuş ayarlar ([CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)) kullanarak Windows **RegisterHotKey** işlevi. Kullanıcı bir iş parçacığına özgü sık kullanılan tuş bastığında Windows yazılarını bir [WM_HOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646279) bir belirli iş parçacığının ileti sırası başlangıcına ileti. **WM_HOTKEY** ileti sanal anahtar kodu, shift durumu ve basıldı belirli sık kullanılan tuş kullanıcı tanımlı Kimliğini içerir. Standart sanal anahtar kodları listesi için Winuser.h bakın. Bu yöntem hakkında daha fazla bilgi için bkz: [RegisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646309).  

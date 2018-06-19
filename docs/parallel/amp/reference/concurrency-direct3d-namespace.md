@@ -25,6 +25,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687393"
 ---
 # <a name="concurrencydirect3d-namespace"></a>Concurrency::direct3d Ad Alanı
 `direct3d` Ad alanı, D3D birlikte çalışabilirlik desteği işlevleri sağlar. Bu işlem AMP kodda D3D kaynaklarının sorunsuz kullanımını sağlar yanı sıra Ara yedek kopya oluşturmak zorunda kalmadan D3D kodda AMP içinde oluşturulan kaynakları kullanılmasına izin verin. Artımlı olarak C++ AMP kullanarak DirectX uygulamalarınızı işlem yoğunluklu bölümlerini hızlandırmak ve AMP hesaplamalar üretilen veriler üzerinde D3D API kullanın.  

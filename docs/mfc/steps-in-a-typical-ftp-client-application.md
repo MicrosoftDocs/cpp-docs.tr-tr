@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381130"
 ---
 # <a name="steps-in-a-typical-ftp-client-application"></a>Tipik Bir FTP İstemci Uygulamasındaki Adımlar
 Tipik bir FTP istemci uygulaması oluşturur bir [CInternetSession](../mfc/reference/cinternetsession-class.md) ve [CFtpConnection](../mfc/reference/cftpconnection-class.md) nesnesi. Bu MFC WinINet sınıfları gerçekte proxy türü ayarlarını kontrol etmez olduğunu unutmayın; IIS yapar.  

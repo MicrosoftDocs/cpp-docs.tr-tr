@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385397"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>İzlenecek yol: MFC Karalama Uygulamasını Güncelleştirme (2. Bölüm)
 [Bölüm 1](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md) klasik bir Office Fluent Şerit ekleme gösterdi bu kılavuzun uygulama karalama. Bu bölümü Şerit paneller ve kullanıcıların menüleri ve komutları yerine kullanabileceğiniz denetimleri nasıl ekleneceğini gösterir.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380909"
 ---
 # <a name="tn050-mfcole-common-dialogs-mfcuix32"></a>TN050: MFC/OLE Ortak İletişim Kutuları (MFCUIx32)
 Bu Not başlangıçta bazı sorunlar ve sağlanan ve MFC tarafından kullanılan OLE ortak iletişim kutuları geleceği ele. OLE ortak iletişim kutuları şimdi (OLEDLG. sisteme yerleşik bir bileşen olarak sağlanır DLL) ve ürün belgelerinde tam olarak açıklanmaktadır.  

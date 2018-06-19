@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33688277"
 ---
 # <a name="how-to-use-a-message-block-filter"></a>Nasıl yapılır: İleti Bloğu Filtresini Kullanma
 Bu belge, kabul etme veya reddetme ileti yükünü temel alınarak bir ileti için bir zaman uyumsuz ileti bloğu etkinleştirmek için bir filtre işlevi kullanmak gösterilmiştir.  

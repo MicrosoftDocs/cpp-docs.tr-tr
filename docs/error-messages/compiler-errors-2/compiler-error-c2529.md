@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33199761"
 ---
 # <a name="compiler-error-c2529"></a>Derleyici Hatası C2529
 'name': başvuru için geçersiz  

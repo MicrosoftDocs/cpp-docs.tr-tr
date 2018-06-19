@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382079"
 ---
 # <a name="window-procedure-entry-points"></a>Pencere Yordamı Giriş Noktaları
 MFC pencere yordamları, özel pencere yordamı uygulama modülü statik bağlantılarıyla korumak için. MFC ile modülü bağlandığında bağlantı otomatik olarak gerçekleşir. Bu pencere yordamı kullanır `AFX_MANAGE_STATE` çağırır sonra etkin Modül durumu düzgün bir şekilde ayarlamak için makrosu **AfxWndProc**, hangi sırayla temsilci için `WindowProc` üye işlevini uygun `CWnd`-türetilen nesne.  

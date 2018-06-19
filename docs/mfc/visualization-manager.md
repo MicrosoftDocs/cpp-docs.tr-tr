@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33384221"
 ---
 # <a name="visualization-manager"></a>Seri Hale Getirme Yöneticisi
 Görsel Yöneticisi tüm uygulama görünümünü denetleyen bir nesnedir. Tek bir sınıf olarak burada, uygulamanız için tüm çizim kodu koyabilirsiniz yapar. MFC kitaplığını birkaç visual yöneticileri içerir. Uygulamanız için özel görünüm oluşturmak istiyorsanız visual yöneticiniz de oluşturabilirsiniz. Farklı görsel yöneticileri etkinleştirildiğinde aşağıdaki görüntüleri aynı uygulama göster:  

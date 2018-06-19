@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33686678"
 ---
 # <a name="43-ompdynamic"></a>4.3 OMP_DYNAMIC
 **Omp_dynamıc** ortam değişkeni etkinleştirir veya dinamik ayarlama açıkça etkin veya devre dışı çağıraraksüreceparalelbölgeleryürütmeiçinkullanılabilirişparçacığısayısınıdinamikolarakayarlamayıdevredışıbırakır**omp_set_dynamic** kitaplığı yordamı. Değeri olmalıdır **TRUE** veya **FALSE**.  

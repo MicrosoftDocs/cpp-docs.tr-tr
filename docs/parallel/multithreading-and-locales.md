@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33692860"
 ---
 # <a name="multithreading-and-locales"></a>Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar
 C çalışma zamanı kitaplığı ve C++ Standart Kitaplığı programınızın yerel ayarları değiştirmek için destek sağlar. Bu konu, her iki kitaplıkları birden çok iş parçacıklı uygulamada yerel ayar işlevselliğini kullanırken ortaya çıkan sorunları açıklar.  

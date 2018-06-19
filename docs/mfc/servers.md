@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381788"
 ---
 # <a name="servers"></a>Sunucular
 Bir sunucu uygulaması (veya bileşen uygulama) OLE öğeleri (veya bileşenleri) kullanmak için kapsayıcı uygulamaları tarafından oluşturur. Görsel düzenleme sunucu uygulaması, görsel düzenleme veya yerinde etkinleştirme de destekler. OLE sunucu başka bir biçimidir bir [Otomasyon sunucusu](../mfc/automation-servers.md). Bazı sunucu uygulamaları yalnızca katıştırılmış öğeleri oluşturulmasını destekler; Başkalarının katıştırılmış ve bağlantılı öğeler oluşturulmasını destekler. Bu nadir olmasına rağmen bazı yalnızca bağlama destekler. Kullanıcı bir öğeyi düzenlemek istediğinde tüm sunucu uygulamaları tarafından kapsayıcı uygulamaları etkinleştirme desteklemesi gerekir. Bir uygulama, bir kapsayıcı ve bir sunucu olabilir. Diğer bir deyişle, onu hem de kendi belgelerine verileri birleştirmek ve diğer uygulamaların belgelerine öğeleri olarak birleştirilebilir veri oluşturun.  

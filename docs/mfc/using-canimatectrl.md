@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381624"
 ---
 # <a name="using-canimatectrl"></a>CAnimateCtrl Kullanma
 Sınıfı tarafından temsil edilen bir animasyon denetimi [CAnimateCtrl](../mfc/reference/canimatectrl-class.md), bir küçük Ses Video araya eklemeli (AVI) biçiminde görüntüler penceredir — standart Windows video/ses biçimi. Bir AVI klip, film gibi bit eşlem çerçeveler dizisidir.  

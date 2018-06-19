@@ -24,6 +24,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33888852"
 ---
 # <a name="setting-accelerator-properties"></a>Hızlandırıcı Özelliklerini Ayarlama
 Hızlandırıcı özellikleri ayarlayabilirsiniz [Özellikler penceresini](/visualstudio/ide/reference/properties-window) dilediğiniz zaman. Hızlandırıcı tablosunda Hızlandırıcı özelliklerini değiştirmek için Hızlandırıcı Düzenleyicisi'ni de kullanabilirsiniz. Özellikler penceresini veya Hızlandırıcı Düzenleyicisi kullanılarak yapılan değişiklikleri sahip aynı sonucu: düzenlemeleri Hızlandırıcı tablosunda hemen yansıtılır.  

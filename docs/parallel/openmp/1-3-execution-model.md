@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687900"
 ---
 # <a name="13-execution-model"></a>1.3 Yürütme Modeli
 OpenMP Paralel yürütme çatalı birleştirme modelini kullanır. Bu çatalı birleştirme model çeşitli sorunlarını çözmek için yararlı olsa da, bunu biraz büyük dizi tabanlı uygulamalar için özel olarak oluşturulmuştur. OpenMP paralel (birden çok iş parçacığı yürütme ve tam OpenMP destek kitaplık) programları gibi her ikisi de düzgün yürütecek destek programları ve sıralı programlar (göz ardı yönergeleri ve basit bir OpenMP saplamalar kitaplık) olarak tasarlanmıştır. Ancak, mümkündür ve doğru sırayla çalıştırıldığında davranıyor olmayan bir programı geliştirmek için izin verilir. Ayrıca, farklı paralellik derecesi sayısal işlemlerinin association'daki değişiklikler nedeniyle farklı sayısal sonuçlar neden olabilir. Örneğin, bir seri toplama azaltma toplama İlişkilendirmelerin paralel azaltma daha farklı bir desen olabilir. Bu farklı ilişkilendirmeleri kayan nokta toplama sonuçlarını değişebilir.  

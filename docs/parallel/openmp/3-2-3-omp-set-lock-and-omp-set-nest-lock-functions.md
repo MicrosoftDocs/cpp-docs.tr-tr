@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689720"
 ---
 # <a name="323-ompsetlock-and-ompsetnestlock-functions"></a>3.2.3 omp_set_lock ve omp_set_nest_lock İşlevleri
 Bu işlevlerin her biri belirtilen kilit kullanılabilir ve kilidi ayarlar kadar işlevi yürütme iş parçacığı engeller. Basit bir kilit kilidi olduğunda kullanılabilir. Kilitli olması veya işlev yürütme iş parçacığı tarafından zaten sahip olduğu nestable kilit kullanılabilir. Biçimi aşağıdaki gibidir:  

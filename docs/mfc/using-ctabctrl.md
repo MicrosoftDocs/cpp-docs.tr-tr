@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33383688"
 ---
 # <a name="using-ctabctrl"></a>CTabCtrl Kullanma
 "Sekme denetimi" Bölücü bir dizüstü bilgisayarın veya bir dosya dolabı etiketli klasörlerde benzerdir. Sınıfı tarafından temsil edilen sekme denetimi kullanmak [CTabCtrl](../mfc/reference/ctabctrl-class.md), bir kullanıcıya bir eş veya her bir sayfa arasındaki mantıksal ilişki öneren bir biçimde bir defada birden çok sayfa bilgiler veya denetimler göstermek için.  

@@ -31,6 +31,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33890196"
 ---
 # <a name="saving-bitmaps-as-gifs-or-jpegs-image-editor-for-icons"></a>Bit Eşlemleri GIF veya JPEG Olarak Kaydetme (Simgeler İçin Görüntü Düzenleyicisi)
 Bir bit eşlem oluşturduğunuzda, görüntü bit eşlem biçiminde (.bmp) oluşturulur. Ancak, görüntünün bir GIF veya JPEG olarak veya diğer grafik biçimlerini kaydedebileceğiniz.  

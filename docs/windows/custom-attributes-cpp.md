@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33887032"
 ---
 # <a name="custom-attributes-c"></a>Özel Öznitelikler (C++)
 Özel bir öznitelik meta verileri genişletmek kullanıcının sağlayan kesin türü belirtilmiş bir tekniktir. Bu konuda öznitelikleri kullanma ile ilgilidir: parametreleri ve hedefleri belirtme.  

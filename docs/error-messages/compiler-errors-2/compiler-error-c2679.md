@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33231819"
 ---
 # <a name="compiler-error-c2679"></a>Derleyici Hatası C2679
 İkili 'işleci': işleç bulundu 'type' türündeki sağ işleneni aldığı (veya kabul edilebilir bir dönüştürme yok)  

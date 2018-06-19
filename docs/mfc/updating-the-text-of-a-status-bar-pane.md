@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33384484"
 ---
 # <a name="updating-the-text-of-a-status-bar-pane"></a>Durum Çubuğu Bölmesinin Metnini Güncelleştirme
 Bu makalede, bir MFC durum çubuğu bölmesinde görüntülenen metni değiştirme açıklanmaktadır. Durum çubuğu — bir pencere nesnesi sınıfının [CStatusBar](../mfc/reference/cstatusbar-class.md) — içeren birkaç "bölmeleri." Her bölme bilgilerini görüntülemek için kullanabileceğiniz durum çubuğu dikdörtgen bir alandır. Örneğin, birçok uygulama en sağdaki bölmelerinde CAPS LOCK, NUM LOCK ve diğer anahtarlar durumunu görüntüleyin. Uygulamalar ayrıca sıklıkla bilgilendirici metinde soldaki bölmesi (0), "iletisi bölme." olarak da adlandırılır görüntüleme Örneğin, varsayılan MFC durum çubuğu ileti bölmesinde seçili menü öğesi veya araç çubuğu düğmesi açıklayan bir dize göstermek için kullanır. Şekil [durum çubukları](../mfc/status-bar-implementation-in-mfc.md) MFC Uygulama Sihirbazı tarafından oluşturulan uygulamadan durum çubuğunu gösterir.  

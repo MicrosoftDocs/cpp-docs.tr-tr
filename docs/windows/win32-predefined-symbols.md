@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891743"
 ---
 # <a name="win32-predefined-symbols"></a>Win32 Önceden Tanımlanmış Semboller
 Bu simgeleri Win32 üstbilgi dosyalarını tanımlanır ve standart Windows uygulama işlevleri ve eylemlerini destekler. Bu simgeleri çoğunlukla ortak kullanıcı Arabirimi öğeleri ile kullanılır. Kaynak düzenleyicileri denetimlerinde ile çalışırken, bu simgeleri görünür [Özellikler penceresini](/visualstudio/ide/reference/properties-window) ortak denetimleriyle ilişkili. Örneği için araç uygulamayı görüntülenmelidir, simgeyi özelliği penceresinde IDI_SMALL simgesiyle ilişkili olacaktır.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385544"
 ---
 # <a name="windows-sockets-using-sockets-with-archives"></a>Windows Yuvaları: Yuvaları Arşivlerle Kullanma
 Bu makalede [CSocket programlama modeli](#_core_the_csocket_programming_model). Sınıf [CSocket](../mfc/reference/csocket-class.md) sınıfı daha soyutlama daha yüksek düzeyde yuva desteği sağlayan [CAsyncSocket](../mfc/reference/casyncsocket-class.md). `CSocket` bir yuva nesnesi bir MFC üzerinden veri iletmek için MFC serileştirme protokolü bir sürümünü kullanan [CArchive](../mfc/reference/carchive-class.md) nesnesi. `CSocket` (Windows iletilerinin arka plan işleme yönetirken) engelleme sağlar ve için erişmenizi `CArchive`, pek çok görünüşünün ham API veya sınıfı kullanarak kendiniz yapmak zorunda iletişimi yöneten `CAsyncSocket`.  

@@ -34,6 +34,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33384703"
 ---
 # <a name="tn006-message-maps"></a>TN006: İleti Eşlemeleri
 Bu Not MFC ileti eşlemesi tesis açıklar.  

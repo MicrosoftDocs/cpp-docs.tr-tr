@@ -50,6 +50,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379866"
 ---
 # <a name="variant-parameter-type-constants"></a>Değişken Parametre Türü Sabitleri
 Bu konu Microsoft Foundation Class Kitaplığı OLE denetim sınıfları ile kullanılmak üzere tasarlanmış değişken parametre türü belirtmek yeni sabitleri listeler.  

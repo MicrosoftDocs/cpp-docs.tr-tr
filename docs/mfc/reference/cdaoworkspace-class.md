@@ -77,6 +77,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33377220"
 ---
 # <a name="cdaoworkspace-class"></a>CDaoWorkspace sınıfı
 Bir adlandırılmış, parola korumalı veritabanı oturum kapatmaya, tek bir kullanıcı oturumu açma yönetir.  

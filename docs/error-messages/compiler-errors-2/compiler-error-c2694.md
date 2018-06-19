@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33234129"
 ---
 # <a name="compiler-error-c2694"></a>Derleyici Hatası C2694
 'override': sanal üye fonksiyonu 'base' sahip temel sınıf daha az kısıtlayıcı özel durum belirtimi sanal işlevi geçersiz kılma  

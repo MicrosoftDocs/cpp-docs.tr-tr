@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33889413"
 ---
 # <a name="setting-a-cursor39s-hot-spot-image-editor-for-icons"></a>Bir imleç ayarı&#39;s etkin nokta (simgeler için görüntü Düzenleyicisi)
 Etkin nokta, bir [imleç](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md) noktasıdır imlecin konumu izlemek için Windows başvurduğu için. Varsayılan olarak etkin nokta imleci (koordinatları 0,0) sol üst köşe olarak ayarlanır. Etkin nokta özelliğinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window) etkin nokta koordinatları gösterir.  

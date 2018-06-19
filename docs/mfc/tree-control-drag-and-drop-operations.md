@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382772"
 ---
 # <a name="tree-control-drag-and-drop-operations"></a>Ağaç Denetimi Sürükle ve Bırak İşlemleri
 Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) kullanıcı bir öğeyi sürüklemek başlatıldığında bir bildirim gönderir. Denetim gönderir bir [TVN_BEGINDRAG](http://msdn.microsoft.com/library/windows/desktop/bb773504) kullanıcı sol fare düğmesini bir öğesiyle sürükleyerek başladığında bildirim iletisi ve [TVN_BEGINRDRAG](http://msdn.microsoft.com/library/windows/desktop/bb773509) kullanıcı sürükleme başladığında bildirim iletisi Sağdaki düğme. Ağaç denetimi vererek bu bildirimleri gönderme ağaç denetimi engelleyebilirsiniz **TVS_DISABLEDRAGDROP** stili.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33241823"
 ---
 # <a name="compiler-error-c3016"></a>Derleyici Hatası C3016
 'var': 'için' deyimi OpenMP dizin değişken tamsayı türü imzalı  

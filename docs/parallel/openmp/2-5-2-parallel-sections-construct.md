@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689486"
 ---
 # <a name="252-parallel-sections-construct"></a>2.5.2 parallel sections Yapısı
 **Paralel bölümleri** yönergesi belirtmek için bir kısayol form sağlayan bir **paralel** içeren tek bir bölge **bölümleri** yönergesi. Semantiğini açıkça belirtilmesi için özdeş bir **paralel** hemen sonrasında yönergesi bir **bölümleri** yönergesi. Söz dizimi **paralel bölümleri** yönergesi aşağıdaki gibidir:  

@@ -28,6 +28,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33688576"
 ---
 # <a name="multithreading-with-c-and-mfc"></a>C++ ve MCF ile Çoklu İş Parçacığı Kullanımı
 Microsoft Foundation Class (MFC) kitaplığı, birden çok iş parçacıklı uygulamalar için destek sağlar. Bu konu işlemleri ve iş parçacığı ve MFC yaklaşımını açıklar için çoklu iş parçacığı kullanımı.  

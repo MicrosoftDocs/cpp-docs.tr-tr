@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380438"
 ---
 # <a name="serializing-data-to-and-from-files"></a>Dosyalarda Verileri Seri Hale Getirme
 Kalıcılık temel fikri bir nesneyi kalıcı depolama birimine kendi üye değişkenlerine tarafından gösterilen geçerli durumuna yazabilmesi olacağını değildir. Daha sonra nesneyi okuma ya da "seri durumdan çıkarılırken," nesnenin durumu kalıcı depolama biriminden yeniden oluşturulabilir. Bir anahtar burada nesnenin okuma ve yazma kendi durumuna sorumlu olduğunu noktasıdır. Bu nedenle, kalıcı olması için bir sınıf için temel seri hale getirme işlemlerinin uygulamalıdır.  

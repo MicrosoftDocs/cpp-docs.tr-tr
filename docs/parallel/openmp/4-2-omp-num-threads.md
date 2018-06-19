@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687653"
 ---
 # <a name="42-ompnumthreads"></a>4.2 OMP_NUM_THREADS
 **OMP_NUM_THREADS** ortam değişkeni, bu sayı, açıkça çağırarak değiştirilmediği sürece yürütme sırasında kullanılacak iş parçacıklarının varsayılan sayısını ayarlar **omp_set_num_threads** kitaplığı yordamı veya açık bir tarafından **num_threads** yan tümcesi bir **paralel** yönergesi.  

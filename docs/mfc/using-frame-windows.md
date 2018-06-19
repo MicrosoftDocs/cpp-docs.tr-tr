@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381923"
 ---
 # <a name="using-frame-windows"></a>Çerçeve Pencerelerini Kullanma
 MFC çerçevesi belge çerçeve pencereleri oluşturur — ve görünümler ve belgeleri — uygulaması Dosya menüsünden Aç komutlarını ve yeni bir parçası olarak. Framework çerçeve penceresi işlerin çoğunu sizin yerinize yaptığından, oluşturma, kullanma ve bu pencereleri yok etme yalnızca küçük bir rol oynar. Ancak açıkça kendi çerçeve pencereleri ve alt öğe pencerelerini özel amaçlar için oluşturabilirsiniz.  

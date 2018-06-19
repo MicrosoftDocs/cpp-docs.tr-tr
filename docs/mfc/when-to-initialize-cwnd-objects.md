@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382879"
 ---
 # <a name="when-to-initialize-cwnd-objects"></a>CWnd Nesneleri Ne Zaman Başlatılır?
 Windows, kendi alt oluşturamaz veya herhangi bir Windows API işlevleri oluşturucuda çağrısı bir `CWnd`-türetilmiş bir nesne içermelidir. Bunun nedeni, `HWND` için `CWnd` nesne henüz oluşturulmadı. Alt öğe pencerelerini ekleme gibi en Windows'a özgü başlatma Bitti, bir [OnCreate](../mfc/reference/cwnd-class.md#oncreate) ileti işleyicisi.  

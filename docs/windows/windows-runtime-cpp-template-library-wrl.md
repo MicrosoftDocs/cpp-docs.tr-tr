@@ -18,6 +18,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891629"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 Windows çalışma zamanı C++ Şablon kitaplığı (WRL) yazar ve Windows çalışma zamanı bileşenleri kullanmak için alt düzey bir yol sağlayan bir şablon kitaplıktır.

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381958"
 ---
 # <a name="using-the-dialog-editor-to-add-controls"></a>Denetim Eklemek için İletişim Kutusu Düzenleyicisini Kullanma
 İletişim-şablon kaynağıyla oluşturduğunuzda [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md), denetimleri paletinden denetimleri sürükleyin ve iletişim kutusuna bırakın. Bu denetim türü için belirtimleri iletişim şablonu kaynağı ekler. Ne zaman, oluşturmak iletişim nesnesi ve çağrı kendi **oluşturma** veya `DoModal` üye işlevi framework Windows denetimi oluşturur ve ekranda iletişim penceresinde yerleştirir.  

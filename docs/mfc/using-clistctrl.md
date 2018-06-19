@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382992"
 ---
 # <a name="using-clistctrl"></a>CListCtrl Kullanma
 Tüm simgeleri düzenleme dosya Gezgini veya sütun listesi ile veya olmadan simgeleri metin olduğu gibi etiketlerle görüntülemek için bir liste denetimini kullanın. Dört olası "Görünüm" (MFC görünümlerle kafası olarak değil) bir açıklaması için bir liste denetiminde olabilir — simge görünümü, küçük simge görünümü, liste görünümü ve rapor görünümü — görünümlerde bkz [CListCtrl](../mfc/reference/clistctrl-class.md) sınıfına genel bakış.  

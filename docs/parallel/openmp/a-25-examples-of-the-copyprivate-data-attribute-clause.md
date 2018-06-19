@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33691696"
 ---
 # <a name="a25---examples-of-the-copyprivate-data-attribute-clause"></a>A.25   copyprivate Veri Özniteliği Yan Tümcesi Örnekleri
 **Örnek 1:** `copyprivate` yan tümcesi ([bölüm 2.7.2.8](../../parallel/openmp/2-7-2-8-copyprivate.md) sayfasında 32) diğer iş parçacıklarında özel değişkenleri tüm örnekleri için doğrudan tek bir iş parçacığı tarafından alınan değerleri yayınlamak için kullanılır.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381556"
 ---
 # <a name="trackers-implementing-trackers-in-your-ole-application"></a>İzleyiciler: OLE Uygulamanızda İzleyicileri Uygulama
 İzleyicileri OLE istemci öğeleri ile etkileşim kullanıcılar etkinleştirmek için bir grafik arabirim sağlar. Farklı İzleyici stilleri kullanarak OLE öğeleri taranmış Kenarlıklar ile görüntülenebilir istemci yeniden boyutlandırın tanıtıcıları veya diğer görsel efektler çeşitli. Bu makalede açıklanır:  

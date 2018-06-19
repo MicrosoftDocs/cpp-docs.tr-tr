@@ -31,6 +31,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33384140"
 ---
 # <a name="when-update-handlers-are-called"></a>Güncelleştirme İşleyicilerini Çağırma Zamanı
 Kullanıcının oluşturduğu Dosya menüsünde fare tıklamaları varsayalım bir `WM_INITMENUPOPUP` ileti. Kullanıcı görebilmesi menüyü aşağı bırakır önce framework'ün güncelleştirme mekanizması topluca Dosya menüsünden tüm öğeleri güncelleştirir.  

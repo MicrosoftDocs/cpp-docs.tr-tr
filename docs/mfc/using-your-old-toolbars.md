@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385128"
 ---
 # <a name="using-your-old-toolbars"></a>Eski Araç Çubuklarınızı Kullanma
 Özelleştirilmiş araç çubukları, sınıfın yeni uygulama oluşturmak için Visual C++ önceki sürümlerini kullandıysanız [CToolBar](../mfc/reference/ctoolbar-class.md) sorunlara neden olabilir. Yeni işlevselliği kullanmak için eski araç çubuklarınızı verilecek yok böylece eski uygulama hala desteklenmektedir.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379274"
 ---
 # <a name="scrolling-and-scaling-views"></a>Görünümleri Kaydırma ve Ölçeklendirme
 MFC kaydırın ve görünümler otomatik olarak bunları görüntüler çerçeve penceresi boyutunu ölçeklenir görünümleri destekler. Sınıf `CScrollView` görünümler her iki tür destekler.  

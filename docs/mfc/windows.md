@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33384471"
 ---
 # <a name="windows"></a>Windows
 Bu makaleler ailesi MFC çerçevesi pencere nesneleri kapsar. Tüm MFC windows sınıfından türetilen [CWnd](../mfc/reference/cwnd-class.md)çerçeve pencereleri, görünümler, iletişim kutuları ve denetimleri dahil olmak üzere.  

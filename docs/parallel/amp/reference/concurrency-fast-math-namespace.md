@@ -19,6 +19,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33692164"
 ---
 # <a name="concurrencyfastmath-namespace"></a>Concurrency::fast_math Ad Alanı
 İşlevlerini `fast_math` ad alanına sahip alt doğruluğu, tek tek duyarlıklı desteği (`float`) ve DirectX iç bilgileri çağırın. İki sürümü vardır her işlev örneğin `cos` ve `cosf`. Her iki sürümünü alın ve dönüş bir `float`, ancak her aynı DirectX iç çağırır.  

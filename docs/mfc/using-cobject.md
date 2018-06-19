@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382304"
 ---
 # <a name="using-cobject"></a>CObject Kullanma
 [CObject](../mfc/reference/cobject-class.md) çoğu Microsoft Foundation Class Kitaplığı (MFC) için kök taban sınıfı değil. `CObject` Sınıfı, serileştirme desteği, çalışma zamanı sınıf bilgileri ve nesne tanılama çıktıları dahil olmak üzere kendi program nesneleri içerecek şekilde isteyebileceğiniz birçok yararlı özellik içerir. Sınıfından türetirseniz `CObject`, sınıfınız bu yararlanabilir `CObject` özellikleri.  

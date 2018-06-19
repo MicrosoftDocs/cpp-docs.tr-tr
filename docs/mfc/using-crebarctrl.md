@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33383315"
 ---
 # <a name="using-crebarctrl"></a>CReBarCtrl Kullanma
 Rebar denetimiyle alt windows için kapsayıcı görevi görür. Bu alt windows, genellikle diğer denetimlerin bir rebar denetimi bant atanır. Rebar denetimiyle Mandal çubuğu, bir bit eşlem, bir metin etiketi ve alt pencere herhangi bir bileşimini sahip her bant ile bir veya daha fazla bantları içerebilir. Ancak, bantlar birden fazla alt pencere içeremez.  

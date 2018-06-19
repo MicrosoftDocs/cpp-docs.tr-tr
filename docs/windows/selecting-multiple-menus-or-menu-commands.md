@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891915"
 ---
 # <a name="selecting-multiple-menus-or-menu-commands"></a>Birden Çok Menü veya Menü Komutu Seçme
 Birden çok menü adları veya menü komutlarını silme veya özelliklerini değiştirme gibi toplu işlemler gerçekleştirmek için seçebilirsiniz.  

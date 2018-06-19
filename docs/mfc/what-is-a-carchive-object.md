@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33383840"
 ---
 # <a name="what-is-a-carchive-object"></a>CArchive Nesnesi Nedir?
 A `CArchive` nesnesi, gelen veya giden serileştirilebilir nesneler okuma veya yazma için bir tür kullanımı uyumlu arabelleğe alma mekanizması sağlar bir `CFile` nesnesi. Genellikle `CFile` nesnesini temsil eden bir disk dosyası; ancak, bu da bellek dosyasını olabilir (`CSharedFile` nesnesi), belki de Pano temsil eden.  

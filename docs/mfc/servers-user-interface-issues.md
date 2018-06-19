@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379677"
 ---
 # <a name="servers-user-interface-issues"></a>Sunucular: Kullanıcı Arabirimi Sorunları
 Bir sunucu uygulaması çok sayıda OLE kapsayıcı uygulamaları öğelerine sağlamak için kullanıcı arabirimi eklenmeli özelliği vardır. Menüleri ve bir sunucu uygulaması eklenmesi gereken ek kaynakları hakkında daha fazla bilgi için bkz: [menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md).  

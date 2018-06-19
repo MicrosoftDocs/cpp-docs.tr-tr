@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382573"
 ---
 # <a name="what-frame-windows-do"></a>Çerçeve Pencerelerinin Görevi
 Yalnızca bir görünüm çerçeveleme yanı sıra, çerçeve pencereleri çok sayıda görevleri çerçevenin kendi Görünüm ve uygulama ile iletişime katılan sorumludur. [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) ve [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md) devralınmalıdır [CFrameWnd](../mfc/reference/cframewnd-class.md), sahip oldukları için `CFrameWnd` ekledikleri yeni özellikler yanı sıra özellikleri. Alt pencereler örnekleri görünümleri, düğmeler ve liste kutuları ve araç çubukları, durum çubukları ve iletişim kutusu çubukları gibi denetim çubukları gibi denetimleri içerir.  

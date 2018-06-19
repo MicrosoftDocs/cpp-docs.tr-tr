@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689915"
 ---
 # <a name="a17---using-nestable-locks"></a>A.17   İç İçe Konulabilir Kilitleri Kullanma
 Aşağıdaki örnekte (için [bölüm 3.2](../../parallel/openmp/3-2-lock-functions.md) sayfasında 41) nestable kilit hem tüm yapısı ve kendi üyelerinden biri için güncelleştirmeleri eşitlemek için nasıl kullanılabileceğini gösterir.  

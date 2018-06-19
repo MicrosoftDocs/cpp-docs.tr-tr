@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33685911"
 ---
 # <a name="22-conditional-compilation"></a>2.2 Koşullu Derleme
 _**OPENMP** makrosu adı OpenMP uyumlu uygulamaları tarafından ondalık sabit olarak tanımlanmış *yyyymm*, yıl ve ay onaylanan belirtimi olacak. Bu makrosu konusunun olmamalıdır bir **#define** veya **#undef** önişlem yönergesi.  

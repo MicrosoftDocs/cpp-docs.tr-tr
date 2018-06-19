@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33384442"
 ---
 # <a name="writing-an-internet-client-application-using-mfc-wininet-classes"></a>MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma
 Her Internet istemci uygulaması Internet oturumu temelidir. MFC Internet oturumları sınıfındaki nesneler olarak uygulayan [CInternetSession](../mfc/reference/cinternetsession-class.md). Bu sınıf kullanarak, bir Internet oturum ya da birkaç eşzamanlı oturumlar oluşturabilirsiniz.  

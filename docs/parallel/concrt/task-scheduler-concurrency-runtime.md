@@ -31,6 +31,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689327"
 ---
 # <a name="task-scheduler-concurrency-runtime"></a>Görev Zamanlayıcı (Eşzamanlılık Çalışma Zamanı)
 Belgelerin Bu kısımdaki konular eşzamanlılık çalışma zamanı Görev Zamanlayıcısı'nın önemli özelliklerini açıklar. Görev Zamanlayıcısı'nı eşzamanlılık çalışma zamanı kullanan mevcut kodunuzu performansını ince ayarını yapmak istediğinizde kullanışlıdır.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382508"
 ---
 # <a name="servers-server-items"></a>Sunucular: Sunucu Öğeleri
 Bir kullanıcı bir katıştırılmış veya bağlantılı OLE öğesi düzenleyebileceğiniz şekilde, bir kapsayıcı bir sunucu başlattığında, sunucu uygulaması bir "sunucu öğesi." oluşturur Türetilen bir sınıfın bir nesnesi sunucusu öğesini `COleServerItem`, sunucu belge kapsayıcı uygulaması arasında bir arabirim sağlar.  

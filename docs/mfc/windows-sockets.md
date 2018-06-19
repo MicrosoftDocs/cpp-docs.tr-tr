@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382547"
 ---
 # <a name="windows-sockets"></a>Windows Yuvaları
 Bu makaleler ailesi Windows Sockets MFC uygulaması kapsar. MFC Windows Sockets API ile programlama ağ uygulamaları desteklemek için iki sınıflar sağlar. Sınıf [CAsyncSocket](../mfc/reference/casyncsocket-class.md) Windows Sockets API aşağıdakilerden biri için Gelişmiş Ağ programcıları en gücü ve esnekliği vermiş yalıtır. Sınıf [CSocket](../mfc/reference/csocket-class.md) ve ondan veri serileştirmek için basitleştirilmiş bir arabirim sağlayan bir [CArchive](../mfc/reference/carchive-class.md) nesnesi.  

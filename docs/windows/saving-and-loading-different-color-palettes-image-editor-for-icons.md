@@ -26,6 +26,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33892325"
 ---
 # <a name="saving-and-loading-different-color-palettes-image-editor-for-icons"></a>Farklı Renk Paletlerini Kaydetme ve Yükleme (Simgeler İçin Görüntü Düzenleyicisi)
 Kaydetme ve içeren bir renk paleti yükleme [renkleri özelleştirilmiş](../windows/customizing-or-changing-colors-image-editor-for-icons.md). (Visual Studio başlattığınızda varsayılan olarak, en son kullanılan renk paleti otomatik olarak yüklenir.)  

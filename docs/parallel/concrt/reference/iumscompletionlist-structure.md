@@ -23,6 +23,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687081"
 ---
 # <a name="iumscompletionlist-structure"></a>IUMSCompletionList Yapısı
 UMS tamamlanma listesini temsil eder. Zamanlama scheduler'ın UMS iş parçacığı blokları belirlenmiş olduğunda içeriği ne özgün iş parçacığı engellendi karşın temel alınan sanal işlemci kök'zamanlamak bir karar vermek için gönderilir. Özgün iş parçacığı engelini kaldırır, işletim sistemi, bu arabirimi üzerinden erişilebilir olan tamamlanma listesini sıralar. Zamanlayıcı atanmış zamanlama bağlamı veya iş için arar başka bir yerde tamamlanma listesi sorgulayabilirsiniz.  

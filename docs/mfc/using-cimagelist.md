@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385797"
 ---
 # <a name="using-cimagelist"></a>CImageList Kullanma
 Sınıfı tarafından temsil edilen bir resim listesi [Cımagelist](../mfc/reference/cimagelist-class.md), her biri başvurulabilir için kendi dizini tarafından aynı boyuta sahip görüntüleri koleksiyonudur. Görüntü listeleri simgeler veya bit eşlemler büyük kümelerini verimli bir şekilde yönetmek için kullanılır. Görüntü listeleri windows; olmadığından değil kendilerini denetimleri bulunur. Ancak, liste denetimleri gibi denetimlerin birkaç farklı türleri ile birlikte kullanılan ([CListCtrl](../mfc/reference/clistctrl-class.md)), ağaç denetimlerini ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) ve sekme denetimleri ([CTabCtrl](../mfc/reference/ctabctrl-class.md)).  

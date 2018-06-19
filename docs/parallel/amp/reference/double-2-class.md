@@ -43,6 +43,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33685651"
 ---
 # <a name="double2-class"></a>double_2 Sınıfı
 Kısa bir vektör 2 çift 's değerini temsil eder.  

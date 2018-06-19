@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33686288"
 ---
 # <a name="316-ompinparallel-function"></a>3.1.6 omp_in_parallel İşlevi
 **Omp_in_parallel** işlevi paralel bölge yürütmenin paralel olarak dinamik kapsam içinde çağrıldıysa sıfır olmayan bir değer döndürür; Aksi halde 0 döndürür. Biçimi aşağıdaki gibidir:  

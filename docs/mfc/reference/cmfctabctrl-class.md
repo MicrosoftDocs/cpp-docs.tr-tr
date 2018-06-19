@@ -119,6 +119,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33377777"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl sınıfı
 `CMFCTabCtrl` Sınıfı bir sekme denetimi için işlevsellik sağlar. Sekme denetimi kendi üstüne veya altına yuvalanabilir pencere düz ya da üç boyutlu sekmelerle görüntüler. Sekmeleri metin ve resim görüntüleyebilir ve renk etkin olduğunda değiştirebilirsiniz.  

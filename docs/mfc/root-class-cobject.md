@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385076"
 ---
 # <a name="root-class-cobject"></a>Kök Sınıf: CObject
 Microsoft Foundation Class (MFC) Kitaplığı'nda sınıfların çoğu bir tek temel sınıfından sınıf hiyerarşisinin kökü türetilir. `CObject` bir dizi yararlı kapasiteye çok düşük yükü ile bu sınıftan türetilen tüm sınıflar sağlar. Hakkında daha fazla bilgi için `CObject` ve onun özelliklerini görmek [kullanarak CObject](../mfc/using-cobject.md).  

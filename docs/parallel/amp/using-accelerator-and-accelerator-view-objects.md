@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33690617"
 ---
 # <a name="using-accelerator-and-acceleratorview-objects"></a>Hızlandırıcı ve accelerator_view Nesnelerini Kullanma
 Kullanabileceğiniz [hızlandırıcı](../../parallel/amp/reference/accelerator-class.md) ve [accelerator_view](../../parallel/amp/reference/accelerator-view-class.md) sınıfları cihaz veya öykünücü C++ AMP kodunuzu çalıştırmak için belirtin. Bir sistem birkaç aygıtları veya bellek, paylaşılan bellek desteğini, hata ayıklama desteği veya çift duyarlıklı destek miktarına göre farklılık Öykünücüler olabilir. C++ hızlandırılmış yoğun paralellik (C++ AMP) kullanılabilir Hızlandırıcıları inceleyin, varsayılan olarak ayarlayın, birden çok çağrılar parallel_for_each için birden çok accelerator_views belirtin ve özel hata ayıklama görevleri gerçekleştirmek için kullanabileceğiniz API'ler sağlar.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33695575"
 ---
 # <a name="exception-handling-in-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanında Özel Durum İşleme
 Eşzamanlılık Çalışma zamanı C++ özel durum işleme hataları birçok türde iletişim kurmak için kullanır. Bu hataların çalışma zamanı, çalışma zamanı hataları gibi bir kaynak edinmeye hatası ve oluşan hataları kullanımı geçersiz iş görevleri ve görev grupları sağlayan işlevler dahil edin. Bir görevi veya görev grubu bir özel durum oluşturduğunda, çalışma zamanı bu özel durum tutar ve görev veya sonlandırmak için görev grubu için bekler bağlamını sıralar. Basit görevler ve aracılar gibi bileşenleri için çalışma zamanı özel durumları, yönetmez. Bu durumda, kendi özel durum işleme mekanizması uygulamalıdır. Bu konuda, çalışma zamanı görevler, görev grupları, Basit görevler ve zaman uyumsuz aracılar tarafından oluşturulan özel durumları nasıl işler ve nasıl özel durumlar uygulamalarınızda yanıt açıklanmaktadır.  
