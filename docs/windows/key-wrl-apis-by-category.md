@@ -18,6 +18,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33881464"
 ---
 # <a name="key-wrl-apis-by-category"></a>Kategoriye Göre Başlıca WRL API'leri
 Birincil Windows çalışma zamanı C++ Şablon kitaplığı sınıflar, yapılar, İşlevler ve makrolar aşağıdaki tablolarda listelenmektedir. Yardımcı ad alanları ve sınıfları yapılardan göz ardı edilir. Bu listeler ad alanlarına göre düzenlenen API belgelerine kullanmasıdır.  

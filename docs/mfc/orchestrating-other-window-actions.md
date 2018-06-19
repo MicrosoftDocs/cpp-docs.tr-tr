@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345647"
 ---
 # <a name="orchestrating-other-window-actions"></a>Diğer Pencere İşlemlerini Yönetme
 Çerçeve penceresi bağlama duyarlı Yardım gibi yarı kalıcı durumlar düzenler ve Baskı Önizleme. Çerçeve pencere rol baskı önizlemede açıklaması için bkz: [yazdırma ve Baskı Önizleme](../mfc/printing-and-print-preview.md).  

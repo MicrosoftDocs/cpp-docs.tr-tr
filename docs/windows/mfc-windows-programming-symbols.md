@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33882699"
 ---
 # <a name="mfc-windows-programming-symbols"></a>MFC Windows Programlama Sembolleri
 Bu simgeleri de MFC destek dosyalarını parçası olan, ancak standart Windows uygulama işlevleri ve eylemlerini destekler. Bu simgeleri çoğunlukla menülerle kullanılır. Menü Düzenleyicisi'nde menülerle çalışırken, bu simgeleri ortak menü komutları ile ilişkili özellik penceresi görünür. Dosya menüsü çıkış komutu ile uygulamanız varsa, örneği için bu komutu ıd_app_exıt simgesiyle ilişkilendirilecek içinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window).  

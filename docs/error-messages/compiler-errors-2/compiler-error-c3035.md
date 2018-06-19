@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33244992"
 ---
 # <a name="compiler-error-c3035"></a>Derleyici Hatası C3035
 OpenMP 'sıralı' yönergesi gerekir bağlamak doğrudan 'İçin' veya 'için parallel' 'sıralı' yan tümcesi ile yönergesi  

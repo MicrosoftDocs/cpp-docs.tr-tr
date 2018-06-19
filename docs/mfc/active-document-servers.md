@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33340170"
 ---
 # <a name="active-document-servers"></a>Etkin Belge Sunucuları
 Etkin belge sunucuları gibi diğer uygulama türleriyle Word, Excel veya PowerPoint konak belgelerin etkin belgeler çağrılır. (Yalnızca başka bir belge sayfasında görüntülenir) nesneleri OLE katıştırılmış etkin belgeler tam arabirimi ve kendilerini oluşturan sunucu uygulamasının tam yerel işlevselliği sağlar. Kullanıcılar, belgeleri oluşturabilir (etkin belgeyi etkin olup olmadığını), sık kullanılan uygulamalar gücünü kullanarak henüz kabul elde edilen proje tek bir varlık olarak.  

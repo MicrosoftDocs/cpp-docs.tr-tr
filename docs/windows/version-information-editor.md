@@ -24,6 +24,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33890596"
 ---
 # <a name="version-information-editor"></a>Sürüm Bilgileri Düzenleyicisi
 Sürüm bilgileri, şirket ve ürün kimliği, bir ürün sürüm numarasını ve telif hakkı ve marka bildirim oluşur. Sürüm bilgileri Düzenleyicisi ile oluşturun ve sürüm bilgileri kaynağında depolanan bu verileri güncelleştirin. Sürüm bilgileri kaynağında bir uygulama tarafından gerekli değildir, ancak uygulama tanımlayan bilgileri toplamak için yararlı bir yerdir. Sürüm bilgileri de API'leri kurulum tarafından kullanılır.  

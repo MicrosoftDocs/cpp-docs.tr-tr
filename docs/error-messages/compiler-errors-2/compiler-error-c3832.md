@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33266561"
 ---
 # <a name="compiler-error-c3832"></a>Derleyici Hatası C3832
 'tür kitaplığı': tür kitaplığı 32-bit işaretçileri; oluşturulmuşsa gibi görünüyor Lütfen 'ptrsize' niteleyicisi değiştirin  

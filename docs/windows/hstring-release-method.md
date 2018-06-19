@@ -20,6 +20,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33875298"
 ---
 # <a name="hstringrelease-method"></a>HString::Release Yöntemi
 Temel dize değeri siler ve boş bir değer için geçerli HString nesne intializes.  

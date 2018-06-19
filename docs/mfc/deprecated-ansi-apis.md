@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342065"
 ---
 # <a name="deprecated-ansi-apis"></a>Kullanım Dışı ANSI API'ları
 Microsoft Foundation Class (MFC) kitaplığı, sınıflar ve Unicode karakter kümesine bağlı yöntemler doğru geçiriyor. Sonuç olarak, çeşitli MFC yöntemler ANSI sürümlerini kullanım dışı bırakılmıştır. Bu yöntemler Unicode sürümleri gelecekteki uygulamalarınızda kullanır.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33270286"
 ---
 # <a name="compiler-error-c3920"></a>Derleyici Hatası C3920
 ' işleci '': bir sonek artırma/azaltma WinRT veya CLR işleci sonek arama tanımlayamazsınız WinRT veya CLR işleci karşılık gelen önek çağıracaktır WinRT veya CLR işleci (op_Increment/op_Decrement), ancak sonek semantiği ile  

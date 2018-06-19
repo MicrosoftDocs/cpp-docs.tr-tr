@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341751"
 ---
 # <a name="closing-the-dialog-box"></a>İletişim Kutusunu Kapatma
 Kullanıcı düğmeleri, genellikle Tamam düğmesine veya iptal düğmesi seçtiğinde modal bir iletişim kutusu kapanır. Neden olan Windows iletişim nesnesi göndermek Tamam'ı veya İptal düğmesini seçerek bir **BN_CLICKED** düğme denetim bildirimi iletisiyle kullanıcının kimliği, ya da **IDOK** veya **IDCANCEL**. `CDialog` Varsayılan bu iletiler için işleyici işlevleri sağlar: `OnOK` ve `OnCancel`. Varsayılan işleyicileri çağrısı `EndDialog` üye işlevi iletişim penceresini kapatın. Ayrıca, çağırabilirsiniz `EndDialog` kendi kodundan. Daha fazla bilgi için bkz: [EndDialog](../mfc/reference/cdialog-class.md#enddialog) sınıfının üye işlevini `CDialog` içinde *MFC başvurusu*.  

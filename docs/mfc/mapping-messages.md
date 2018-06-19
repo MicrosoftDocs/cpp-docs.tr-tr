@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345992"
 ---
 # <a name="mapping-messages"></a>Eşleme İletileri
 Kendi "ileti eşlemesi." iletileri veya komutları alabilir her framework sınıf sahiptir Çerçeve ileti eşlemeleri iletiler ve komutlar kendi işleyici işlevlerine bağlanma kullanır. Herhangi bir sınıf sınıfından türetilen `CCmdTarget` ileti eşlemesi olabilir. Diğer makaleler ayrıntılı ileti eşlemeleri açıklar ve bunların nasıl kullanılacağını açıklar.  

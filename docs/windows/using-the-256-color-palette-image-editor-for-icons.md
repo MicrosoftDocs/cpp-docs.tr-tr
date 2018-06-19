@@ -25,6 +25,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33890911"
 ---
 # <a name="using-the-256-color-palette-image-editor-for-icons"></a>256-Renk Paletini Kullanma (Simgeler İçin Görüntü Düzenleyicisi)
 256-renk paletinden bir seçimi çizmek için renk paletindeki renkleri seçin gereksinim [renkler penceresi](../windows/colors-window-image-editor-for-icons.md).  

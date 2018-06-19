@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342637"
 ---
 # <a name="exceptions-exceptions-in-constructors"></a>Özel Durumlar: Yapıcılardaki Özel Durumlar
 Oluşturucu içinde bir özel durum atma, hangi nesnelerin ve bellek ayırma özel durum atma önce açıklandığı gibi yaptığınız temiz [özel durumlar: özel durumları atma bilgisayarınızı kendi işlevlerden](../mfc/exceptions-throwing-exceptions-from-your-own-functions.md).  

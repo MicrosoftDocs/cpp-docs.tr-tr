@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33270768"
 ---
 # <a name="compiler-error-c3842"></a>Derleyici Hatası C3842
 'function': 'const' ve 'geçici' niteleyicileri üye işlevleri WinRT ya da yönetilen türler üzerinde desteklenmiyor  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341417"
 ---
 # <a name="com-interface-entry-points"></a>COM Arabirimi Giriş Noktaları
 COM arabirimi üye işlevleri için kullanmak [METHOD_PROLOGUE](com-interface-entry-points.md#method_prologue) dışarı aktarılan bir arabirim yöntemleri çağrılırken uygun genel durumunu korumak üzere makrosu.  

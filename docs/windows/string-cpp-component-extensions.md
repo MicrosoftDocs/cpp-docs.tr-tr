@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33889255"
 ---
 # <a name="string--c-component-extensions"></a>Dize (C++ Bileşen Uzantıları)
 Visual C++ Derleyici destekler *dizeleri*, metin bir karakter dizisi temsil eden nesneler olduğu. Visual C++ dize değişkenleri, değeri olan örtük ve açık bir tırnak içine alınmış dize değeri olan değişmez değerleri, destekler.  

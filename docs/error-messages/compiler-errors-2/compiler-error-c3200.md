@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33251313"
 ---
 # <a name="compiler-error-c3200"></a>Derleyici Hatası C3200
 'şablon': 'parametresi' şablon parametresi için geçersiz şablon bağımsız değişken beklenen bir sınıf şablonu  

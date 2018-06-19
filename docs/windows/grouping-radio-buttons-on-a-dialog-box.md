@@ -26,6 +26,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33879334"
 ---
 # <a name="grouping-radio-buttons-on-a-dialog-box"></a>İletişim Kutusundaki Radyo Düğmelerini Gruplama
 Bir iletişim kutusu radyo düğmeleri eklediğinizde, bunları bir grup olarak Özellikleri penceresinde gruptaki ilk düğmesi için bir grup özelliği ayarlanarak kabul eder. Bu radyo düğmesi için bir denetim kimliği sonra görünür [üye değişkeni Ekleme Sihirbazı'nı](../ide/add-member-variable-wizard.md), radyo düğmesi grubunun üye değişkeni ekleme olanak sağlar.  

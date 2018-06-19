@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344902"
 ---
 # <a name="exception-classes"></a>Özel Durum Sınıfları
 Sınıf kitaplığı sınıfına dayalı bir özel durum işleme mekanizması sağlar `CException`. Uygulama Çerçevesi kendi kodunda özel durumları kullanır; Ayrıca bunları sizin kullanabilirsiniz. Daha fazla bilgi için bkz: [özel durumları](../mfc/exception-handling-in-mfc.md). Kendi özel durum türlerini türetmek `CException`.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346106"
 ---
 # <a name="header-control-and-list-control"></a>Üstbilgi Denetimi ve Liste Denetimi
 Çoğu durumda, katıştırılmış üstbilgi denetimi kullanacağı bir [CListCtrl](../mfc/reference/clistctrl-class.md) veya [CListView](../mfc/reference/clistview-class.md) nesnesi. Ancak, ayrı bir üstbilgi denetim nesnesi olduğu arzu sütunlara veya satırlara, düzenlenmiş veri düzenleme gibi durumlarda vardır bir [CView](../mfc/reference/cview-class.md)-türetilmiş bir nesne içermelidir. Bu durumlarda, katıştırılmış üstbilgi denetimi varsayılan davranışı ve görünümü üzerinde daha fazla denetim gerekir.  

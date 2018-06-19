@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344425"
 ---
 # <a name="how-to-add-ribbon-controls-and-event-handlers"></a>Nasıl yapılır: Şerit Denetimleri ve Olay İşleyicileri Ekleme
 Şerit denetimleri, düğmeler ve bölmeleri eklediğiniz birleşik giriş kutuları gibi öğelerdir. Paneller ilgili denetimleri bir grup görüntüleyen Şerit çubuğunun alanlarıdır.  

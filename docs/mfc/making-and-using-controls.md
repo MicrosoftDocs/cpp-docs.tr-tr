@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347013"
 ---
 # <a name="making-and-using-controls"></a>Denetimleri Yapma ve Kullanma
 Visual c++'ta çoğu denetimleri iletişim kutuları için yaptığınız [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md). Ancak herhangi bir iletişim kutusu veya pencere denetimleri de oluşturabilirsiniz.  

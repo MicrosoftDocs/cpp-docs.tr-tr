@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33285648"
 ---
 # <a name="compiler-warning-level-1-c4652"></a>Derleyici Uyarısı (düzey 1) C4652
 'option' önceden derlenmiş üst bilgi ile; tutarsız derleyici seçeneği Geçerli komut satırı seçeneği önceden derlenmiş üst bilgi tanımlanan geçersiz kılar  

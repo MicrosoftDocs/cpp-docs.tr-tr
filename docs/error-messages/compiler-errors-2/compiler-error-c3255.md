@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33251601"
 ---
 # <a name="compiler-error-c3255"></a>Derleyici Hatası C3255
 'değer türü': dinamik olarak bu değer türü nesnesi yerel yığında tahsis edilemiyor  

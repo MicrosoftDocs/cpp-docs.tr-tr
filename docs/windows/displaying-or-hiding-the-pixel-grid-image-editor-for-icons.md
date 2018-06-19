@@ -24,6 +24,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33882933"
 ---
 # <a name="displaying-or-hiding-the-pixel-grid-image-editor-for-icons"></a>Piksel Kılavuzunu Görüntüleme veya Gizleme (Simgeler İçin Görüntü Düzenleyicisi)
 Büyütme katsayısını 4 veya daha büyük olan tüm görüntü Düzenleyicisi bölmeleri için tek tek piksel cinsinden görüntü sınırlandıran bir kılavuz görüntüleyebilirsiniz.  

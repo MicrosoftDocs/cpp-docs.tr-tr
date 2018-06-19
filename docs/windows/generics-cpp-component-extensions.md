@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33878118"
 ---
 # <a name="generics--c-component-extensions"></a>Genel Türler (C++ Bileşen Uzantıları)
 Genel türler parametreli türler ve yöntemleri durumdadır. Bu bölümde, genel özellikleri Windows çalışma zamanı ve ortak dil çalışma zamanı tarafından desteklenir ve yalnızca ortak dil çalışma zamanı tarafından desteklenen öğrenin. Ayrıca, kendi genel yöntemler ve Visual C++ türlerinde yazmak nasıl ve genel türler Visual C++'ta .NET Framework dilinde yazılan kullanmayı öğrenin. Son olarak, bu bölümde, genel türler ve C++ şablonları karşılaştırması sağlar.  

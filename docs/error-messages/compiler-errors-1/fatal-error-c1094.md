@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33227523"
 ---
 # <a name="fatal-error-c1094"></a>Önemli hata C1094
 '-Zmval1': önceden derlenmiş üst bilgi oluşturmak için kullanılan değeri ile komut satırı seçeneği tutarsız ('-Zmval2')  

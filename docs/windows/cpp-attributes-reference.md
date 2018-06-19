@@ -20,6 +20,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33870851"
 ---
 # <a name="c-attributes-reference"></a>C++ Öznitelikleri Başvurusu
 Microsoft COM programlama ve .NET Framework ortak dil çalışma zamanı geliştirme basitleştirmek öznitelikleri kümesini tanımlar. Kaynak dosyalarınız öznitelikleri eklediğinizde derleyici sağlayıcısını dll kod ekleme veya oluşturulan nesne dosyaları kodda değiştirmek için birlikte çalışır.  

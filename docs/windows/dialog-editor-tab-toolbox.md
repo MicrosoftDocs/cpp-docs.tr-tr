@@ -26,6 +26,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33882582"
 ---
 # <a name="dialog-editor-tab-toolbox"></a>İletişim Kutusu Düzenleyicisi Sekmesi, Araç Kutusu
 İletişim kutusu Düzenleyicisi sekmesi görünür [araç penceresi](/visualstudio/ide/reference/toolbox) iletişim kutusu Düzenleyicisi'nde çalışırken. Denetimleri, yeni bir iletişim kutusu denetimleri eklemek için iletişim kutusuna oluşturmakta Araç Kutusu'ndan sürükleyin (daha fazla bilgi için bkz: [iletişim kutusuna denetim ekleme](adding-a-control-to-a-dialog-box.md)). Ardından, denetimleri hareket ettirin veya kendi boyutu ve şekli değiştirin.  

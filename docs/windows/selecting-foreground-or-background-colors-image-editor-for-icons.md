@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33888652"
 ---
 # <a name="selecting-foreground-or-background-colors-image-editor-for-icons"></a>Ön Plan veya Arka Plan Renklerini Seçme (Simgeler İçin Görüntü Düzenleyicisi)
 Dışında **silme**, Araçlar **görüntü Düzenleyicisi** araç çubuğu çizim sola veya sağa fare düğmesini sırasıyla bastığınızda geçerli ön plan veya arka plan rengi.  

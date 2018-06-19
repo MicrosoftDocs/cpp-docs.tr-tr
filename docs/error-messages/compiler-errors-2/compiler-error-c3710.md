@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33266493"
 ---
 # <a name="compiler-error-c3710"></a>Derleyici Hatası C3710
 'function': olay işleyicisi __hook içinde belirtmek için sözdizimi hatalı /\__unhook  

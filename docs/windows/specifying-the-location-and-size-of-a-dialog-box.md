@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33890583"
 ---
 # <a name="specifying-the-location-and-size-of-a-dialog-box"></a>İletişim Kutusunun Boyutunu ve Konumunu Belirtme
 Bir iletişim kutusu yanı sıra konumu boyutunu ve bunun içinde denetimleri boyutunu ve konumunu iletişim birimler cinsinden ölçülür. Visual Studio durum seçtiğiniz zaman çubuğunda sağ alt köşesindeki değerlerini ayrı ayrı denetimler ve iletişim kutusu görünür.  

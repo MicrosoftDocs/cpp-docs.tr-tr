@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33254114"
 ---
 # <a name="compiler-error-c3244"></a>Derleyici Hatası C3244
 'yöntemi': 'arabirimi' göre değil 'arabirimi' tarafından sunulan bu yöntemi  

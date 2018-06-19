@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33247585"
 ---
 # <a name="compiler-error-c3076"></a>Derleyici Hatası C3076
 'Instance': yerel tür içinde bir başvuru türü 'type' örneği eklenemiyor  

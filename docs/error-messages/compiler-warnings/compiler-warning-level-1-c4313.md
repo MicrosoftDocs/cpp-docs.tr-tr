@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33283945"
 ---
 # <a name="compiler-warning-level-1-c4313"></a>Derleyici Uyarısı (düzey 1) C4313
 'function': 'tanımlayıcısı biçiminde Biçimlendir', 'type' tür bağımsız değişkeni sayısı ile çakışıyor dize  

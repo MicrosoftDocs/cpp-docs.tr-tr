@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341904"
 ---
 # <a name="creating-windows"></a>Pencereler Oluşturma
 Framework ihtiyacınız windows çoğunu framework programında otomatik olarak oluşturur. [Belge/görünüm oluşturma](../mfc/document-view-creation.md) framework belgeler ve görünümler ile ilişkili çerçeve pencereleri nasıl oluşturduğunu gösterir. Ancak, kendi windows oluşturabileceğiniz özel amacıyla — kendi alt pencereleri çerçeve pencereleri veya görünümler dahil olmak üzere — çerçevesi tarafından sağlanan windows yanı sıra.  

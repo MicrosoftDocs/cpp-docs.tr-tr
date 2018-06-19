@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33291222"
 ---
 # <a name="compiler-warning-level-3-c4646"></a>Derleyici Uyarısı (Düzey 3) C4646
 işlevi ile __declspec(noreturn) bildirilen void olmayan dönüş türüne sahip  

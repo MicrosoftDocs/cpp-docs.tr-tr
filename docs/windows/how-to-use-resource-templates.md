@@ -26,6 +26,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33882738"
 ---
 # <a name="how-to-use-resource-templates"></a>Nasıl Yapılır: Kaynak Şablonlarını Kullanma
 Kaynak şablon bir .rct dosyası olarak kaydettiğiniz özelleştirilmiş bir kaynaktır. Bir kaynak şablonu diğer kaynakları oluşturmak için bir başlangıç noktası olarak hizmet verebilir. Kaynak şablonları, ek kaynaklar veya standart denetimler gibi özellikleri ve diğer yinelenen öğeleri paylaşan kaynak grupları geliştirmede zaman kazandırır. Örneğin, bir Yardım düğmesi ve bir şirket logosu, bir simge birkaç iletişim kutularında eklemek isteyebilirsiniz. Böylece hızlı bir şekilde yapmak için yeni bir iletişim kutusu şablonu oluşturun ve logo ve Yardım düğmesini özelleştirme.  
