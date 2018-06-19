@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33297342"
 ---
 # <a name="global-constants-in-c"></a>C++'da Global Sabitler
 C++'da global sabitler statik bağlantı vardır. Bu C. farklı. Bir genel kullanmaya çalışırsa, birden çok dosyalarında c++ sabit bir çözümlenmemiş dış hata alıyorsunuz. Derleyici global sabitler çıkışı, değişken için ayrılmış alan kalmıyor iyileştirir.  

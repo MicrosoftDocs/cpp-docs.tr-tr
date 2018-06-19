@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33358488"
 ---
 # <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
 Bir uygulama yazdığınızda, tek bir oluşturma [CWinApp](../../mfc/reference/cwinapp-class.md)-türetilmiş bir nesne içermelidir. Bazen bu nesneden dışında hakkında bilgi edinmek isteyebilirsiniz `CWinApp`-türetilmiş bir nesne içermelidir. Veya diğer genel "mananger'a" nesnelere erişimi gerekebilir.

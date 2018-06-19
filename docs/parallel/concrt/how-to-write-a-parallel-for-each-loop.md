@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33686015"
 ---
 # <a name="how-to-write-a-parallelforeach-loop"></a>Nasıl yapılır: parallel_for_each Döngüsü Yazma
 Bu örnek nasıl kullanılacağını gösterir [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) asal sayılar sayısı işlem için algoritma bir [std::array](../../standard-library/array-class-stl.md) paralel nesne.  

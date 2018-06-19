@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33172414"
 ---
 # <a name="string-literal"></a>Değişmez Dize Değeri
 Dize değişmez değerleri işlenmesi için Visual C++ C++ için Yönetilen Uzantılar'dan değiştirdi.  

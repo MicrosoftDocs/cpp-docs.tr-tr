@@ -51,6 +51,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33375943"
 ---
 # <a name="coleobjectfactory-class"></a>COleObjectFactory sınıfı
 Implements OLE sunucuları, Otomasyon nesneleri ve belgeler gibi OLE nesneleri oluşturur fabrika sınıfı.  

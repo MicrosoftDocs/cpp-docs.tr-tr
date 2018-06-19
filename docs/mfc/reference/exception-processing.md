@@ -28,6 +28,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33376994"
 ---
 # <a name="exception-processing"></a>Özel Durum İşleme
 Bir program yürütüldüğünde, bir dizi anormal koşullar ve "özel durumlar" adlı hataları oluşabilir. Bunlar, bellek, kaynak ayırma hatalarını ve dosyaları bulmak için hata tükenmesinden olabilir.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33298983"
 ---
 # <a name="compiler-warning-level-4-c4324"></a>Derleyici Uyarısı (düzey 4) C4324
 'struct_name': yapısı nedeniyle __declspec(align()) doldurulan  

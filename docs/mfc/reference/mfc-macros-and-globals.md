@@ -28,6 +28,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33375692"
 ---
 # <a name="mfc-macros-and-globals"></a>MFC Makroları ve Genel Öğeleri
 Microsoft Foundation Class Kitaplığı iki ana bölüme ayrılabilir: (1 MFC sınıfları ve (2) makroları ve genel öğeleri. Bir işlev veya değişken bir sınıf üyesi değilse, genel işlev veya değişken olur.  

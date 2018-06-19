@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33383168"
 ---
 # <a name="working-with-a-tab-control"></a>Sekme Denetimiyle Çalışma
 Sekme denetimi kullanmak için en kolay yolu ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) ile iletişim kutusu Düzenleyicisi iletişim şablonu kaynak ekleyerek değil. Ayrıca tek başına bir sekme denetimi kullanabilirsiniz. MFC çağrıları **InitCommonControls** sizin için. En önemli görevler şunlardır:  

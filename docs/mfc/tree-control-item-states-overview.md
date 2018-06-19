@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33383155"
 ---
 # <a name="tree-control-item-states-overview"></a>Ağaç Denetim Öğesi Durumlarına Genel Bakış
 Ağaç denetimi her öğe ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) geçerli durumuna sahiptir. Örneğin, bir öğe, devre dışı, genişletilmiş ve vb. seçilebilir. Çoğunlukla, ağaç denetimi otomatik olarak bir öğenin seçimini gibi kullanıcı eylemlerini yansıtacak şekilde öğenin durumunu ayarlar. Ancak, ayrıca bir öğenin durumu kullanarak ayarlayabilirsiniz [SetItemState](../mfc/reference/ctreectrl-class.md#setitemstate) üye işlevini ve alma kullanarak bir öğe geçerli durumunu [GetItemState](../mfc/reference/ctreectrl-class.md#getitemstate) üye işlevi. Öğesi durumları tam bir listesi için bkz: [ağaç görünümü denetim sabitleri](http://msdn.microsoft.com/library/windows/desktop/bb759985) Windows SDK'sındaki.  

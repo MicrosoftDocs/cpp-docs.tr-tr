@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33383259"
 ---
 # <a name="using-drop-down-buttons-in-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminde Açılır Düğmeler Kullanma
 Standart düğmeler yanı sıra bir araç çubuğu açılır düğmeler da sağlayabilirsiniz. Açılan düğmesine bir ekli aşağı ok varlığını tarafından genellikle gösterilir.  

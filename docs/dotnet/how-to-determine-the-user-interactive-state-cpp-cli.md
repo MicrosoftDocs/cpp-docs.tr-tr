@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33127311"
 ---
 # <a name="how-to-determine-the-user-interactive-state-ccli"></a>Nasıl yapılır: Kullanıcı Etkileşimli Durumunu Belirleme (C++/CLI)
 Aşağıdaki kod örneğinde, kodu bir etkileşimli kullanıcı bağlamında çalışacak olup olmadığını belirlemek gösterilmiştir. Varsa <xref:System.Environment.UserInteractive%2A> kod hizmet işlemi olarak çalışıyordur veya gelen bir Web uygulamasının içinde bu durumda, kullanıcıyla etkileşim çalışmamalıdır sonra yanlış.  

@@ -129,6 +129,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33378049"
 ---
 # <a name="cmfcribbonpanel-class"></a>CMFCRibbonPanel sınıfı
 Şerit öğeleri kümesini içeren bir panel uygular. Bölmenin çizildiğinde panel boyutunu verilen mümkün olduğu kadar öğelerini görüntüler.  

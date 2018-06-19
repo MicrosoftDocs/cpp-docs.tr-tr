@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380090"
 ---
 # <a name="wsadata-structure"></a>WSADATA Yapısı
 `WSADATA` Yapısı için bir çağrı tarafından döndürülen Windows Sockets başlatma bilgileri depolamak için kullanılan `AfxSocketInit` genel işlevi.  

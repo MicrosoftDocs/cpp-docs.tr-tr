@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33233977"
 ---
 # <a name="compiler-error-c2758"></a>Derleyici Hatası C2758
 'member': başvuru türü üyesi başlatılması gerekir  

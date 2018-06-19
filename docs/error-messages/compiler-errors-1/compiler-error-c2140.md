@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33169692"
 ---
 # <a name="compiler-error-c2140"></a>Derleyici Hatası C2140
 'type': bir genel tür parametresi bağımlı olan bir türü derleyici geçerli bir tür ayırdedici nitelik 'ayırdedici nitelik' bağımsız değişkeni olarak izin verilmiyor  

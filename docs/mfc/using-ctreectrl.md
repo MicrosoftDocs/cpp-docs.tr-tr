@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382225"
 ---
 # <a name="using-ctreectrl"></a>CTreeCtrl Kullanma
 Sınıfı tarafından temsil edilen bir ağaç denetimi [CTreeCtrl](../mfc/reference/ctreectrl-class.md), bir disk üzerinde bir dizin veya dosya ve dizinleri girdileri olan bir belgeyi başlıklarında gibi öğelerini hiyerarşik bir listesini görüntüleyen bir penceredir. Her öğe bir etiket ve isteğe bağlı eşlemli görüntüyü oluşur ve her bir öğeyi kendisiyle ilişkili alt öğeler listesi olabilir. Kullanıcı, bir öğeyi tıklatarak genişletme ve daraltma ilişkili alt öğeler listesi. Dizin ağacında dosya Gezgini sol bölmesinde, ağaç denetimi örneğidir.  

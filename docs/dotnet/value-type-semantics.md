@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33171860"
 ---
 # <a name="value-type-semantics"></a>Değer Türü Anlamları
 Değer türü anlamları, Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirilmiştir.  

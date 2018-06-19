@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130204"
 ---
 # <a name="how-to-read-a-text-file-ccli"></a>Nasıl yapılır: Metin Dosyası Okuma (C++/CLI)
 Aşağıdaki kod örneği açın ve metin dosyası tek bir çizgi kullanarak aynı anda okuma gösterilmiştir <xref:System.IO.StreamReader> tanımlanan sınıfı <xref:System.IO?displayProperty=fullName> ad alanı. Bu sınıf örneği bir metin dosyasını açmak için kullanılır ve ardından <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=fullName> yöntemi her satırı almak için kullanılır.  

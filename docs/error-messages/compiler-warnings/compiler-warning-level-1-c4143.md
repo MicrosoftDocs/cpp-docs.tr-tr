@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33275947"
 ---
 # <a name="compiler-warning-level-1-c4143"></a>Derleyici Uyarısı (düzey 1) C4143
 pragma 'same_seg desteklenmiyor;' Kullanım __based ayırma  

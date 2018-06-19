@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33107184"
 ---
 # <a name="ole-db-programming"></a>OLE DB Programlama
 Microsoft OLE DB eski bir teknolojidir; Yeni uygulama için bağlı SQL sunucuları için gerekli veri erişim API'dir. Diğer tüm yeni uygulamalar ODBC kullanmanız gerekir. SQL Server için geçerli OLE DB sağlayıcısı SQLNCLI11 ' dir. DLL. Sağlayıcı, SQL Server 2016 hala aktarma. Bu belge, OLE DB kullanmakta olan mevcut uygulamaları sürdürmek geliştiriciler için tasarlanmıştır.

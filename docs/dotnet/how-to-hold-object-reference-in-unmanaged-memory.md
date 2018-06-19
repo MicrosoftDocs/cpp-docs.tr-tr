@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33128738"
 ---
 # <a name="how-to-hold-object-reference-in-unmanaged-memory"></a>Nasıl yapılır: Yönetilmeyen Bellekte Nesne Başvurusunu Tutma
 Saran gcroot.h kullanabilirsiniz <xref:System.Runtime.InteropServices.GCHandle>, yönetilmeyen bellekte bir CLR nesnesi başvurusu tutmak için. Alternatif olarak, kullanabileceğiniz `GCHandle` doğrudan.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33356560"
 ---
 # <a name="providing-flicker-free-activation"></a>Titreşimsiz Etkinleştirme Sağlama
 Denetiminiz kendisini aynı etkin ve etkin durumda çizer (ve penceresiz etkinleştirme kullanmaz varsa), çizim işlemleri ve etkin olmayan arasında geçiş yaparken, normal olarak ortaya eşlik eden visual titreşimi çıkarabilirsiniz ve etkin durumları. Bunu yapmak için dahil **noFlickerActivate** tarafından döndürülen bayraklar kümesi bayrağı [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags). Örneğin:  

@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33098608"
 ---
 # <a name="consumer-wizard-generated-methods"></a>Tüketici Sihirbazı Tarafından Oluşturulan Yöntemler
 ATL OLE DB Tüketici Sihirbazı ve MFC Uygulama Sihirbazı'nı hangisinin bilmeniz gereken bazı işlevler üret. Not birkaç uyarılar olduklarından bazı yöntemler farklı öznitelikli projelerinde uygulanır; her durumda, aşağıda ele alınmıştır. Eklenen kodu görüntüleme hakkında daha fazla bilgi için bkz: [eklenen kod hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code).  

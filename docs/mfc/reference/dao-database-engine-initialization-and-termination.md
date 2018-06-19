@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33369908"
 ---
 # <a name="dao-database-engine-initialization-and-termination"></a>DAO Veritabanı Motoru Başlatma ve Sonlandırma
 MFC DAO nesneleri kullanılırken DAO veritabanı motoru ilk olmalıdır başlatılmadı ve sonra sonlandırılan uygulamanızı veya DLL sonlandırılmadan önce. İki işlevleri `AfxDaoInit` ve `AfxDaoTerm`, bu görevleri gerçekleştirin.  

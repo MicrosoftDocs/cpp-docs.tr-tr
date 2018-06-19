@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33370102"
 ---
 # <a name="how-to-use-the-message-map-cross-reference"></a>Nasıl yapılır: İleti Eşleme Çapraz Başvurusunu Kullanma
 Etiketli girdileri \<memberFxn >, kendi üye işlevi türetilmiş için yazma [CWnd](../../mfc/reference/cwnd-class.md) sınıfı. İşlevinizi istediğiniz herhangi bir ad verin. Gibi diğer işlevleri `OnActivate`, sınıfının üye işlevleri `CWnd`. Çağırdıysanız, iletiyi geçirirler `DefWindowProc` Windows işlevi. Windows bildirim iletilerini işlemek için karşılık gelen geçersiz kılma `CWnd` türetilmiş sınıfınızda işlevi. İşlevinizi temel sınıfı izin vermek için taban sınıf içinde geçersiz kılınan işlevi çağırmalıdır ve Windows iletisine yanıt.  

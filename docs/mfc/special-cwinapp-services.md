@@ -45,6 +45,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382937"
 ---
 # <a name="special-cwinapp-services"></a>Özel CWinApp Hizmetleri
 İleti döngüsü çalıştıran ve uygulamayı başlatın ve sonra temizleme fırsatı veren yanı sıra [CWinApp](../mfc/reference/cwinapp-class.md) birkaç diğer hizmetler sağlar.  

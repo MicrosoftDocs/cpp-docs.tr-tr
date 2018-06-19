@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385188"
 ---
 # <a name="windows-sockets-using-class-casyncsocket"></a>Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma
 Bu makalede sınıfının nasıl kullanılacağını açıklanmaktadır [CAsyncSocket](../mfc/reference/casyncsocket-class.md). Bu sınıf Windows Sockets API çok düşük düzeyde yalıtır unutmayın. `CAsyncSocket` ayrıntılı ağ iletişimleri bilmeniz ancak ağ olayları bildirim için geri çağırmaları kolaylık istediğiniz programcıları tarafından kullanılır. Bu makalede, bu duymadığını, yalnızca temel yönergeler sağlar. Büyük olasılıkla kullanmayı düşünmelisiniz `CAsyncSocket` bir MFC uygulamasında birden çok ağ protokolleri postalarla Windows Sockets kolaylığı istiyor, ancak esneklik yöneticilerin taviz istiyor musunuz. Daha fazla iletişim kendiniz daha kullanarak doğrudan daha genel alternatif modeli sınıfının programlama tarafından daha iyi verimlilik elde edebilirsiniz ayrıca eşitleyerek `CSocket`.  

@@ -31,6 +31,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33369853"
 ---
 # <a name="colelinkingdoc-class"></a>COleLinkingDoc sınıfı
 Katıştırılmış öğelerine bağlama desteği OLE kapsayıcı belgeler için temel sınıfı içerir.  

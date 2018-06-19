@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33104288"
 ---
 # <a name="schema-rowsets"></a>Şema Satır Kümeleri
 Şema (veya meta veriler) veritabanının yapısı veya kuruluşunuz hakkında sağlayıcı, satır, tablo, sütun bilgileri gibi herhangi bir bilgi veya diğer bilgileri asıl veritabanını içerik yanı sıra değil. OLE DB şema satır kümeleri kullanarak satır açmadan gibi bilgileri almanızı sağlar.  

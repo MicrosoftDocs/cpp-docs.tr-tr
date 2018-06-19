@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33371656"
 ---
 # <a name="standard-command-and-window-ids"></a>Standart Komut ve Pencere Kimlikleri
 Microsoft Foundation Class Kitaplığı Afxres.h içinde bir dizi standart komut ve pencere kimlikleri tanımlar. Bu kimlikleri, ileti işleyicisi işlevlerinizi eşlemesi için kaynak düzenleyicileri ve Özellikler penceresini içinde en yaygın olarak kullanılır. Tüm standart komutları sahip bir **ID_** öneki. Menü Düzenleyicisi'ni kullandığınızda, örneğin, normal olarak Dosya Aç menü öğesi standart bağladığınız `ID_FILE_OPEN` komut kimliği.  

@@ -57,6 +57,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33359344"
 ---
 # <a name="mfc-activex-controls-adding-stock-events-to-an-activex-control"></a>MFC ActiveX Denetimleri: Bir ActiveX Denetimine Stok Olaylar Ekleme
 Stok olayları otomatik olarak bir sınıf tarafından tetiklenen, özel olaylardan farklı [COleControl](../mfc/reference/colecontrol-class.md). `COleControl` Ortak eylemlerden kaynaklanan olaylarını harekete önceden tanımlanmış üye işlevlerini içerir. Bazı ortak eylemler tarafından uygulanan `COleControl` tek - ve çift - clicks denetim, klavye olayları ve değişiklik fare düğmeleri durumda içerir. Stok olayları için olay eşleme girdilerini tarafından başına her zaman **EVENT_STOCK** öneki.  

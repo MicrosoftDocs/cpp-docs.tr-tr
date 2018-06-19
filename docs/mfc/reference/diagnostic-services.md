@@ -35,6 +35,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33377327"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 Microsoft Foundation Class Kitaplığı programlarınızı daha kolay hata ayıklama birçok tanılama hizmetler sağlar. Bu tanılama hizmetler makrolar ve ayırma, çalışma zamanı sırasında nesnelerin içeriğini dökümü ve çalışma zamanında hata ayıklama iletilerini yazdırma programınızın bellek izlemenize olanak sağlayan genel işlevler içerir. Makrolar ve genel işlevler tanı Hizmetleri için aşağıdaki kategorilerde gruplanır:  

@@ -155,6 +155,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33378375"
 ---
 # <a name="cmfcvisualmanagerwindows-class"></a>CMFCVisualManagerWindows sınıfı
 `CMFCVisualManagerWindows` Kullanıcı bir Windows XP veya Vista tema seçtiğinde Microsoft Windows XP veya Microsoft Vista görünümünü taklit eder.  

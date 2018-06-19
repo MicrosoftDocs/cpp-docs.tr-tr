@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33129703"
 ---
 # <a name="lock-class"></a>lock Sınıfı
 Bu sınıf, birden çok iş parçacığı bir nesneye erişimi eşitlemek için bir kilit almayı otomatikleştirir.  Oluşturulan, kilit alır ve sürümler yok kilidi.  

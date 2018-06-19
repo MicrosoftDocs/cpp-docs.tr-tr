@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385637"
 ---
 # <a name="using-ctooltipctrl"></a>CToolTipCtrl Kullanma
 [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) sınıfı bir araç ipucunu denetimini tek satırlık bir uygulamada bir aracı amacını açıklayan metin görüntüler küçük bir açılır pencere işlevselliğini yalıtır. Araç İpucu çoğu yalnızca kullanıcı aracını kullanarak imleci koyar ve onu var. yaklaşık yarısı için ikinci bırakır görünmesini zaman gizlenir. Araç İpucu imlecin yanında görünür ve kullanıcı fare düğmesini tıklattığında ya da imleci aracı dışına taşır kaybolur.  

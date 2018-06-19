@@ -31,6 +31,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33367444"
 ---
 # <a name="cdockstate-class"></a>CDockState sınıfı
 Seri hale getirilmiş bir `CObject` yükler, kaldırır ya da bir veya daha fazla yerleştirme denetim durumunu temizler sınıfı çubuklarını kalıcı bellek (dosya).  

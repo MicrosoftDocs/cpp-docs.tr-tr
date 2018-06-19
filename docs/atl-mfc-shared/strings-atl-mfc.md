@@ -36,6 +36,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32355486"
 ---
 # <a name="strings-atlmfc"></a>Dizeler (ATL/MFC)
 Neredeyse tüm programlar dize verilerle çalışır. Visual C++ Bu dize verilerini yönetmek için birkaç yöntem sağlar.  

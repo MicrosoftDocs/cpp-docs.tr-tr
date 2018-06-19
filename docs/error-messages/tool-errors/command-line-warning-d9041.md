@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33298645"
 ---
 # <a name="command-line-warning-d9041"></a>Komut Satırı Uyarısı D9041
 Geçersiz bir değer 'value' için '/ seçeneği'; ' değeri '; Ekle ' / analyze' Bu uyarı belirtirken komut satırı seçenekleri  

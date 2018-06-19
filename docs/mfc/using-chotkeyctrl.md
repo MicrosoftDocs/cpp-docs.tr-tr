@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381810"
 ---
 # <a name="using-chotkeyctrl"></a>CHotKeyCtrl Kullanma
 Sınıfı tarafından temsil edilen bir sık kullanılan tuş denetimi [CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md), kullanıcı türleri, CTRL + SHIFT + Q gibi tuş bileşimini metin gösterimini görüntüler bir penceredir. Ayrıca, bir iç temsili bu anahtarın bir sanal anahtar kod biçimidir ve shift durumu temsil eden bayrakları kümesi tutar. Sık kullanılan tuş denetimi sık kullanılan tuş gerçekten ayarlamaz —, bunu olduğu programınızı kadar. (Winuser.h standart sanal anahtar kodları listesi için bkz.)  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33368819"
 ---
 # <a name="creating-an-mfc-application"></a>MFC Uygulaması Oluşturma
 MFC uygulaması için Microsoft Foundation Class (MFC) kitaplık tabanlı Windows yürütülebilir bir uygulamadır. MFC Uygulama oluşturmak için en kolay yolu, MFC Uygulama Sihirbazı'nı kullanmaktır.  

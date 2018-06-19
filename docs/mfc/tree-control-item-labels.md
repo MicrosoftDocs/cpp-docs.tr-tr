@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381517"
 ---
 # <a name="tree-control-item-labels"></a>Ağaç Denetim Öğesi Etiketleri
 Genellikle bir öğenin etiket metnini ağaç denetim öğesi eklerken, belirttiğiniz ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)). `InsertItem` Üye işlevi iletebilir bir [TVITEM](http://msdn.microsoft.com/library/windows/desktop/bb773456) etiket metnini içeren bir dize gibi öğenin özelliklerini tanımlayan yapısı. `InsertItem` parametre çeşitli birleşimleri çağrılabilir birçok aşırı yüklemeye sahip.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382456"
 ---
 # <a name="using-cheaderctrl"></a>CHeaderCtrl Kullanma
 Sınıfı tarafından temsil edilen bir üstbilgi denetimi kullanmak [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md), sütun listesi için sütun üst bilgileri görüntülemek için. Örneğin, bir üstbilgi denetimi elektronik tabloda sütun denetimler uygulamak için yararlı olacaktır.  

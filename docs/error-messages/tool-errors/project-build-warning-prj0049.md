@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33319816"
 ---
 # <a name="project-build-warning-prj0049"></a>Proje Derleme Uyarısı PRJ0049
 Başvurulan hedef '\<başvuru >'.NET Framework gerektirir \<MinFrameworkVersion > ve bu projenin hedef çerçevesi üzerinde çalıştırmak başarısız olur  

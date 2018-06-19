@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33222260"
 ---
 # <a name="compiler-error-c2324"></a>Derleyici Hatası C2324
 'tanımlayıcısı': 'name' nın sağındaki beklenmeyen  

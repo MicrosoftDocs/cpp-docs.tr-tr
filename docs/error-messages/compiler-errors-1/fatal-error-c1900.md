@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33228993"
 ---
 # <a name="fatal-error-c1900"></a>Önemli hata C1900
 'Tool1' Sürüm 'Sayı1' ve 'tool2' Sürüm 'sayı2' arasında IL uyuşmazlığı  

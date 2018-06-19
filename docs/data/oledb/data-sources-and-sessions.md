@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33100011"
 ---
 # <a name="data-sources-and-sessions"></a>Veri Kaynakları ve Oturumlar
 Aşağıdaki şekilde bağlanmak ve veri kaynağına erişme destekleyen sınıfları gösterir. Her sınıf standart bir OLE DB bileşen uygulamasına dayalıdır.  

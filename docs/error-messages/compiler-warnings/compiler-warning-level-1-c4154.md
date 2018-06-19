@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33277241"
 ---
 # <a name="compiler-warning-level-1-c4154"></a>Derleyici Uyarısı (düzey 1) C4154
 bir dizi ifadesi silinmesini; sağlanan işaretçi dönüştürme  

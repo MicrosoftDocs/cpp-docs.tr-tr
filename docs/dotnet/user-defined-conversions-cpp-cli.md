@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33170654"
 ---
 # <a name="user-defined-conversions-ccli"></a>Kullanıcı Tanımlı Dönüşümler (C++/CLI)
 Bu bölümde, dönüştürme türlerinde biri bir başvuru ya da bir değer veya başvuru türü örneği olduğunda kullanıcı tanımlı Dönüşümler (UDC) açıklanmaktadır.  

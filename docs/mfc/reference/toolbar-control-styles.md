@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33373201"
 ---
 # <a name="toolbar-control-styles"></a>ToolBar Denetim Stilleri
 [CMFCToolBarButton sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md) görünümünü belirleyen stili bayrakları kümesi ve düğme davranışını sahiptir. Bu bayrak birleşimi çağırarak ayarlayabileceğiniz [CMFCToolBarButton::SetStyle](../../mfc/reference/cmfctoolbarbutton-class.md#setstyle). Bu konu, stil bayrak değerleri ve anlamlarını listeler.  

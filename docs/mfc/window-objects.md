@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385277"
 ---
 # <a name="window-objects"></a>Pencere Nesneleri
 MFC sınıf sağlayan [CWnd](../mfc/reference/cwnd-class.md) yalıtılacak `HWND` bir pencere tanıtıcısı. `CWnd` Nesnesidir ayrı bir C++ pencere nesnesi, `HWND` temsil eden bir Windows penceresi ancak onu içeren. Kullanmak `CWnd` kendi alt pencere türetilen sınıflar ya da birçok MFC sınıfları birini kullanın türetilen `CWnd`. Sınıf `CWnd` çerçeve pencereleri, iletişim kutuları, alt öğe pencerelerini, denetimleri ve denetim çubukları araç çubukları gibi dahil olmak üzere tüm windows için temel sınıftır. İyi anlamış [bir C++ pencere nesnesi ile bir HWND arasındaki ilişkiyi](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md) etkili programlama MFC için önemlidir.  

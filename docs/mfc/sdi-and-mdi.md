@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385810"
 ---
 # <a name="sdi-and-mdi"></a>SDI ve MDI
 MFC tek belge arabirimi (SDI) ve birden çok belge arabirimi (MDI) uygulamaları ile çalışmak kolaylaştırır.  

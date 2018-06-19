@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33107850"
 ---
 # <a name="binder2nd-stlclr"></a>binder2nd (STL/CLR)
 Şablon sınıfı tek bağımsız değişkenli functor açıklar, çağrıldığında, sağlanan ilk bağımsız değişken ve saklı ikinci bağımsız değişken adında kendi saklı iki bağımsız değişken functor döndürür. Kullandığınız depolanan functor bakımından işlevi nesnesi belirtin.  

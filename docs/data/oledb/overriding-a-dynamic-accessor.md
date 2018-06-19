@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33107863"
 ---
 # <a name="overriding-a-dynamic-accessor"></a>Dinamik Erişimciyi Geçersiz Kılma
 Kullandığınızda, dinamik erişimciyi gibi `CDynamicAccessor`, komut **açık** yöntemi, otomatik olarak açılan satır kümesinin sütun bilgileri temel alarak için bir erişimci oluşturur. Tam olarak nasıl sütunları bağlı denetlemek için dinamik erişimciyi geçersiz kılabilirsiniz.  

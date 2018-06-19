@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379583"
 ---
 # <a name="serialization-serialization-vs-database-inputoutput"></a>Seri hale getirme: Seri hale getirme vs. Veritabanı giriş/çıkış
 Bu makalede ve ne zaman belge nesneleri seri hale getirme ve diğer g/ç teknikleri uygun ne zaman dosya tabanlı giriş/çıkış (g/ç) için kullanılacağını açıklanmaktadır; çünkü uygulamanın okur ve veritabanı uygulamaları olduğu gibi bir işlem başına temelinde verileri yazar. Serileştirme kullanmıyorsanız, ayrıca olmaz Kaydet, Dosya Aç, gereksinim ve komutlar olarak kaydetme. Kapsanan konular şunlardır:  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379664"
 ---
 # <a name="serialization-serializing-an-object"></a>Seri hale getirme: Bir Nesneyi Seri Hale Getirme
 Makaleyi [seri hale getirme: seri hale getirilebilir bir sınıf yapma](../mfc/serialization-making-a-serializable-class.md) seri hale getirilebilir bir sınıf yapma gösterilmektedir. Seri hale getirilebilir bir sınıf olduktan sonra bir dosya gelen ve bu sınıfın nesnelerini seri hale getirebilir bir [CArchive](../mfc/reference/carchive-class.md) nesnesi. Bu makalede açıklanmaktadır:  

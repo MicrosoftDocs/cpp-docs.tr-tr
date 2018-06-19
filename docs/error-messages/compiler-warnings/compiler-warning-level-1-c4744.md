@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33282834"
 ---
 # <a name="compiler-warning-level-1-c4744"></a>Derleyici Uyarısı (düzey 1) C4744
 'var' 'dosya1' ve 'dosya2' farklı türe sahip: 'type1' ve 'type2'  

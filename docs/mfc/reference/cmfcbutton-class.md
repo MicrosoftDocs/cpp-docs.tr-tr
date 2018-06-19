@@ -95,6 +95,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33378832"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton sınıfı
 `CMFCButton` Sınıfı için işlevsellik ekler [CButton](../../mfc/reference/cbutton-class.md) düğme metni hizalama, düğme metin ve görüntü birleştirme, bir imleç seçerek ve araç ipucu belirterek gibi sınıfı.  

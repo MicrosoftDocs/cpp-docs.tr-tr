@@ -41,6 +41,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33358348"
 ---
 # <a name="cd2dsolidcolorbrush-class"></a>CD2DSolidColorBrush sınıfı
 ID2D1SolidColorBrush için sarmalayıcı.  

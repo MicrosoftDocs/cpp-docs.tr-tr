@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33131247"
 ---
 # <a name="how-to-write-a-text-file-ccli"></a>Nasıl yapılır: Metin Dosyaları Yazma (C++/CLI)
 Aşağıdaki kod örneği, bir metin dosyası oluşturun ve onu kullanarak metin yazmak gösterilmiştir <xref:System.IO.StreamWriter> tanımlanan sınıfı <xref:System.IO> ad alanı. <xref:System.IO.StreamWriter> Oluşturucusu oluşturulacak dosyanın adını alır. Dosya varsa üzerine yazılır (saniye doğru geçirmezseniz <xref:System.IO.StringWriter> oluşturucu bağımsız değişkeni).  

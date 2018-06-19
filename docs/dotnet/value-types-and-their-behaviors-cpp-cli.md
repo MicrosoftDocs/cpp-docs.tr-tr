@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33169549"
 ---
 # <a name="value-types-and-their-behaviors-ccli"></a>Değer Türleri ve Davranışları (C++/CLI)
 Değer türleri çeşitli yollarla Yönetilen Uzantılar'dan C++ için Visual C++ için değiştirilmiştir. Bu bölümde, CLR numaralandırma türü ve değeri sınıf türü, iç ve sabitleme işaretçileri göz yanı sıra kutulama ve CLR yığınındaki Kutulu örneğine erişim göz birlikte ele. Bu alanda kapsamlı dil değişiklikleri olmuştur.  

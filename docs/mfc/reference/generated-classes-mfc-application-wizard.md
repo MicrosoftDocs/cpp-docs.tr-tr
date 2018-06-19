@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33370838"
 ---
 # <a name="generated-classes-mfc-application-wizard"></a>Oluşturulan Sınıflar, MFC Uygulama Sihirbazı
 Bu konu temel sınıflar ve projenizi oluşturan dosyaların adlarını listeler. Varsayılan olarak, belirtilen proje adı adları dayalı **yeni proje iletişim kutusu**. Bu adları çoğunu burada açıklandığı gibi değiştirebilirsiniz:  

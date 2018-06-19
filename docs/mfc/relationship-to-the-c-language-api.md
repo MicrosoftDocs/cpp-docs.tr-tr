@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379235"
 ---
 # <a name="relationship-to-the-c-language-api"></a>C Dili API'sına yönelik ilişki
 Diğer sınıf kitaplıkları dışında Windows için Microsoft Foundation Class (MFC) kitaplığı ayarlayan tek karakteristiğini, C dilinde yazılmış Windows API çok yakın eşlemedir. Ayrıca, genellikle sınıf kitaplığı çağrıları serbestçe doğrudan Windows API çağrıları ile karıştırabilirsiniz. Bu doğrudan erişim ancak sınıflar bu API için tam yenileme olduğunu göstermez. Geliştiriciler hala bazen olmalısınız bazı Windows işlevleri için doğrudan çağrılar gibi [SetCursor](http://msdn.microsoft.com/library/windows/desktop/ms648393) ve [GetSystemMetrics](http://msdn.microsoft.com/library/windows/desktop/ms724385), örneğin. Yalnızca bunu yapmak için açık bir avantajı olduğunda bir Windows işlevi bir sınıf üye işlevi tarafından paketlenir.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382785"
 ---
 # <a name="using-image-lists-with-header-controls"></a>Üstbilgi Denetimleriyle Birlikte Görüntü Listeleri Kullanma
 Üstbilgi öğeleri bir görüntüyü üstbilgi öğesi içinde seçeneğine sahipsiniz. Bir ilişkili görüntü listesinde depolanan bu görüntüsü 16 x 16 piksel ve liste görünümü denetimi içinde kullanılan simge görüntüleri aynı özelliklere sahip. Bu davranış başarıyla uygulamak için ilk oluşturun ve resim listesi başlatma listesi üstbilgi denetimiyle ilişkilendirmek ve görüntünün görüntüler üstbilgi öğesi özniteliklerini değiştirme gerekir.  

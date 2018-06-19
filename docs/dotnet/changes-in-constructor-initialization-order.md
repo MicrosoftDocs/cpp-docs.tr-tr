@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33110360"
 ---
 # <a name="changes-in-constructor-initialization-order"></a>Yapıcı Başlangıç Düzeninde Değişiklikler
 Sınıf oluşturucuları için başlatma sırasını Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirdi.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33108520"
 ---
 # <a name="supporting-free-threading-in-your-provider"></a>Sağlayıcınızda Serbest İş Parçacığı Oluşturmayı Destekleme
 İş parçacığı tüm OLE DB sağlayıcısı sınıfları ve kayıt defteri girdileri buna göre ayarlanır. Çok kullanıcılı durumlarda performansı yüksek düzeyde sağlanmasına yardımcı olmak amacıyla boş iş parçacığı desteklemek için iyi bir fikirdir. Sağlayıcınız iş parçacığı açısından güvenli tutmaya yardımcı olmak için kodunuzu düzgün bir şekilde engellendiğini doğrulamanız gerekir. Her yazma veya verileri depolamak kritik bölümler ile erişimini engellemelidir.  

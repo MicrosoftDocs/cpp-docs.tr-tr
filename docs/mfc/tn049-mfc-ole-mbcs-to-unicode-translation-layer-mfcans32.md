@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380747"
 ---
 # <a name="tn049-mfcole-mbcs-to-unicode-translation-layer-mfcans32"></a>TN049: MFC/OLE MBCS'den Unicode Çeviri Katmanına (MFCANS32)
 İlk olarak nasıl açıklanan bu not MFCANS32. DLL sağlar ANSI arabirimlerde öncelikle 32-bit OLE Unicode dünyanın. Bu DLL artık MFC tarafından kullanılır.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381244"
 ---
 # <a name="using-a-dialog-template-in-memory"></a>Bellekteki Bir İletişim Şablonunu Kullanma
 Verilen yöntemleri kullanmak yerine [iletişim oluşturma tablo](../mfc/creating-a-dialog-class-with-code-wizards.md), iletişim kutusu iki tür dolaylı olarak bellekteki bir iletişim kutusu şablondan oluşturabilirsiniz. Daha fazla bilgi için bkz [CDialog](../mfc/reference/cdialog-class.md) içinde *MFC başvurusu*.  

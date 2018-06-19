@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33169705"
 ---
 # <a name="utility-stlclr"></a>yardımcı program (STL/CLR)
 STL/CLR üstbilgisini `<cliext/utility>` Şablon sınıfı tanımlamak için `pair` ve çeşitli destekleyici şablon işlevleri.  

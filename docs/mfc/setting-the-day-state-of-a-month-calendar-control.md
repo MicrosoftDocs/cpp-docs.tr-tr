@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380805"
 ---
 # <a name="setting-the-day-state-of-a-month-calendar-control"></a>Aylık Takvim Denetiminin Gün Durumunu Ayarlama
 Aylık takvim denetiminin özniteliklerini de denetiminin gün durumunu her ayın için başvuru bilgileri depolamak yeteneğidir. Bu bilgiler, şu anda görüntülenen ayı için belirli tarihleri vurgulamak için kullanılır.  

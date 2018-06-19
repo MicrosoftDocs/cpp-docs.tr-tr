@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33234534"
 ---
 # <a name="compiler-error-c2773"></a>Derleyici Hatası C2773
 \#içeri aktarma ve # yalnızca C++ derleyicisi kullanılabilir using  

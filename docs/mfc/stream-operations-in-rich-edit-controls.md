@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379931"
 ---
 # <a name="stream-operations-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Akış İşlemleri
 İçine veya dışına bir zengin düzenleme denetimine veri aktarmak için akışlarını kullanabilirsiniz ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)). Bir akış tarafından tanımlanan bir [EDITSTREAM](http://msdn.microsoft.com/library/windows/desktop/bb787891) yapısı, arabellek ve bir uygulama tanımlı geri çağırma işlevi belirtir.  

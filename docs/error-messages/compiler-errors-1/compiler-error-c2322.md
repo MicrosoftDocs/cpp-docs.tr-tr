@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33195665"
 ---
 # <a name="compiler-error-c2322"></a>Derleyici Hatası C2322
 'tanımlayıcısı': dllimport 'dllimport' adresi statik değil  

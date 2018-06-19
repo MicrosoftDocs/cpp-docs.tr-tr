@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33383967"
 ---
 # <a name="win32-internet-extensions-wininet"></a>Win32 Internet Uzantıları (WinInet)
 Internet istemci uygulaması gopher, FTP veya HTTP gibi Internet protokolleri kullanarak bir ağ veri kaynağından (sunucu) bilgi erişen bir programdır. Internet istemci uygulaması, örneğin hava durumu eşlemeleri, hisse senedi fiyatları veya gazete başlıkları gibi veri almak için bir sunucu erişebilir. Internet istemcisi sunucunun bir dış ağa (Internet) veya (bazen intranet denir) bir iç ağ erişebilirsiniz.  

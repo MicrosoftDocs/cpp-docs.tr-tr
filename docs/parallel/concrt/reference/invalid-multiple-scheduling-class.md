@@ -23,6 +23,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33686168"
 ---
 # <a name="invalidmultiplescheduling-class"></a>invalid_multiple_scheduling Sınıfı
 Bu sınıf ne zaman oluşturulan bir özel tanımlar bir `task_handle` nesnesidir zamanlanmış birden çok kez kullanarak `run` yöntemi bir `task_group` veya `structured_task_group` nesne ya da müdahalede bulunan bir çağrı olmadan `wait` veya `run_and_wait` yöntemleri.  

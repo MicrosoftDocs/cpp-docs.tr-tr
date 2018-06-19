@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33372163"
 ---
 # <a name="mfc-dll-wizard"></a>MFC DLL Sihirbazı
 MFC DLL projesi oluşturmak için MFC DLL Sihirbazı'nı kullandığınızda, çalışan bir başlatıcı uygulama yerleşik işlevselliği ile aldığınız derlenmiş, temel özelliklerini uygulayacak bir [DLL](../../build/dlls-in-visual-cpp.md). MFC starter program C++ kaynak (.cpp) dosyaları, kaynak (.rc) dosyaları ve bir proje (.vcxproj) dosyası içerir. Bu Başlatıcı dosyalarda oluşturulan kodu MFC temel alır. Projeniz Visual Studio'da için oluşturulan Readme.txt dosya ayrıntılar daha ayrıntılı bilgi için bkz ve [sınıfları ve İşlevler MFC DLL Sihirbazı tarafından oluşturulan](../../mfc/reference/classes-and-functions-generated-by-the-mfc-dll-wizard.md)  

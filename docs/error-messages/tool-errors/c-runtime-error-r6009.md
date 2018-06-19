@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33296854"
 ---
 # <a name="c-runtime-error-r6009"></a>C çalışma zamanı hatası R6009
 ortam için yeterli alan yok  

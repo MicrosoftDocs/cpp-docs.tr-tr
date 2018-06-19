@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379209"
 ---
 # <a name="responding-to-dynamic-data-exchange-dde"></a>Dinamik Veri Değişimine Yanıt Verme (DDE)
 Çerçeve penceresi (dosya uzantısı kayıtlı ya da uygulama ile ilişkili ise) Dosya Yöneticisi'nden dosyalarını açmak için dinamik veri değişimi (DDE) isteklerine yanıt verebilir. Bkz: [Kabuk kaydı](../mfc/special-cwinapp-services.md).  

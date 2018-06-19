@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33361341"
 ---
 # <a name="mfc-activex-controls"></a>MFC ActiveX Denetimleri
 ActiveX denetimi, Bileşen Nesne Modeli (çok çeşitli OLE işlevselliğini destekleyen ve çok sayıda yazılım gereksinimlerine uyacak şekilde özelleştirilmiş COM) dayalı bir yeniden kullanılabilir yazılım bileşenidir. ActiveX denetimleri, hem sıradan ActiveX denetimi kapsayıcıları ve World Wide Web sayfalarında Internet üzerindeki kullanımı için tasarlanmıştır. Burada veya ile açıklanan MFC ActiveX denetimleri oluşturabilirsiniz [Etkin Şablon kitaplığı (ATL)](../atl/active-template-library-atl-concepts.md).  

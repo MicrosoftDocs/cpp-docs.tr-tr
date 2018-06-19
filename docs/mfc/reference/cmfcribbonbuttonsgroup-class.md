@@ -45,6 +45,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33368865"
 ---
 # <a name="cmfcribbonbuttonsgroup-class"></a>CMFCRibbonButtonsGroup sınıfı
 `CMFCRibbonButtonsGroup` Sınıfı, bir grup olarak bir dizi Şerit düğmesi düzenlemenizi sağlar. Gruptaki tüm düğmeleri yatay olarak birbirleriyle doğrudan bitişik ve bir kenarlığı içine alınmalıdır.  

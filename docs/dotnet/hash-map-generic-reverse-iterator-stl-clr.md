@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33110984"
 ---
 # <a name="hashmapgenericreverseiterator-stlclr"></a>hash_map::generic_reverse_iterator (STL/CLR)
 Kullanmak için ters yineleyici kapsayıcısı için genel arabirimi türü.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33104704"
 ---
 # <a name="schema--mfc-data-access"></a>Şema (MFC veri erişimi)
 Bir veritabanı şeması tabloları ve veritabanı görünümleri veritabanında geçerli yapısını tanımlar. Genel olarak, sihirbaz tarafından oluşturulan kod şema, tablo veya bir kayıt kümesi tarafından erişilen tablolarda değişmez, ancak veritabanı sınıfları ekleme, yeniden sıralama veya ilişkisiz sütunları silme gibi bazı şema değişikliklerle ilgilenir varsayar. Bir tablo değişirse gerekir el ile tablosu için kayıt kümesi güncelleştirin ve ardından uygulamanızı yeniden derleyin.  

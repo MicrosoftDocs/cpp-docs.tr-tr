@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33299373"
 ---
 # <a name="expression-evaluator-error-cxx0021"></a>İfade Değerlendirici Hatası CXX0021
 struct veya union skaler olarak kullanılmış  

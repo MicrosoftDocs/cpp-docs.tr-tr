@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33374156"
 ---
 # <a name="logpen-structure"></a>LOGPEN Yapısı
 `LOGPEN` Yapısı stili, genişlik ve bir kalemin rengini tanımlar, satırları ve Kenarlıkları çizmek için kullanılan bir çizim nesnesi. [CPen::CreatePenIndirect](../../mfc/reference/cpen-class.md#createpenindirect) işlev kullandığı `LOGPEN` yapısı.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33275155"
 ---
 # <a name="compiler-error-c3923"></a>Derleyici Hatası C3923
 'member': yerel sınıf, yapı veya birleşim tanımları WinRT ya da yönetilen sınıf üye işlevi içinde izin verilmez  

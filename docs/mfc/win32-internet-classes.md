@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33383230"
 ---
 # <a name="win32-internet-classes"></a>Win32 Internet Sınıfları
 MFC Internet programlama kolaylaştırmak için Win32 Internet (WinINet) ve ActiveX teknolojisini sarmalar.  

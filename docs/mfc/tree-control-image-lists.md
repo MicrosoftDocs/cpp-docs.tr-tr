@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382199"
 ---
 # <a name="tree-control-image-lists"></a>Ağaç Denetim Görüntü Listeleri
 Ağaç denetimi her öğe ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) ilişkili eşlemli görüntüleri çifti olabilir. Görüntüleri öğenin etiketi sol tarafında görünür. Bir görüntü öğesi seçilir ve öğe seçilmediğinde diğer görüntülendiğinde görüntülenir. Örneğin, değil seçildiğinde bir öğe seçildiğinde açık bir klasörde ve kapalı klasörü görüntülenebilir.  

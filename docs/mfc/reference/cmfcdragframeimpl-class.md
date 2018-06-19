@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33373836"
 ---
 # <a name="cmfcdragframeimpl-class"></a>CMFCDragFrameImpl sınıfı
 `CMFCDragFrameImpl` Sınıfı kullanıcı bir bölme standart yerleştirme modunda sürüklendiğinde görüntülenen Sürükle dikdörtgen çizer.  

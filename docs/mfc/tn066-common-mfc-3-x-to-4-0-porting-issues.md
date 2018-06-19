@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381796"
 ---
 # <a name="tn066-common-mfc-3x-to-40-porting-issues"></a>TN066: Genel MFC 3.x - 4.0 Bağlantı Noktası Oluşturma Sorunları
 MFC ile yazılmış bir uygulama bağlantı noktası çalışırken oluşabilecek en sık karşılaşılan bu Teknik Not açıklandığı 3.x (Visual C++ ile dahil MFC 2.x) MFC 4.0.  

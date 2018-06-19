@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385199"
 ---
 # <a name="type-safe-access-to-controls-with-code-wizards"></a>Kod Sihirbazları Kullanarak Denetimlere Tür Kullanımı Uyumlu Erişim
 DDX özelliklerle hakkında bilginiz varsa Denetim özelliğinde kullanabilirsiniz [üye değişkeni ekleme](../ide/add-member-variable-wizard.md) tür kullanımı uyumlu erişim oluşturmak için. Bu yaklaşım, kod sihirbazları olmadan denetimler oluşturmaktan daha kolaydır.  

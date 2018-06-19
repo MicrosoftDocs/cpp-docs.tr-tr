@@ -31,6 +31,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33375751"
 ---
 # <a name="cmfcfontcombobox-class"></a>CMFCFontComboBox sınıfı
 `CMFCFontComboBox` Sınıfı yazı tipleri listesini içeren bir birleşik giriş kutusu denetimi oluşturur.  

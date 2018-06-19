@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342166"
 ---
 # <a name="build-requirements-for-windows-vista-common-controls"></a>Windows Vista Ortak Denetimleri için Derleme Gereksinimleri
 Microsoft Foundation Class (MFC) kitaplığı Windows ortak denetimleri sürüm 6.1 destekler. Ortak Denetimler içinde yer alan [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] ve kitaplık dahil [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)]. Kitaplığı, mevcut sınıfları ve yeni sınıflar geliştiren yeni ve destekleyen yöntemleri sağlar [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] ortak denetimler. Uygulamanızı oluşturma sırasında aşağıdaki bölümlerde açıklanan derleme ve Geçiş gereksinimleri karşılamalıdır.  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381543"
 ---
 # <a name="trackers"></a>İzleyiciler
 [CRectTracker](../mfc/reference/crecttracker-class.md) sınıfı uygulamanız ve görüntü stilleri çeşitli sağlayarak kullanıcı dikdörtgen öğeleri arasında bir kullanıcı arabirimi sağlar. Bu stiller düz, taranmış veya kesikli Kenarlıklar içerir; öğeyi kapsayan taranmış bir desen; ve dış veya bir sınır içinde bulunabilir boyutlandırma. OLE öğeleri ile birlikte genellikle izleyicileri kullanılır, öğesinden türetilmiş nesneleri `COleClientItem`. İzleyici dikdörtgenler görsel ipuçları öğesi geçerli durumu verin.  

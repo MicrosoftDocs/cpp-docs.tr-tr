@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385264"
 ---
 # <a name="windows-sockets-sequence-of-operations"></a>Windows Yuvaları: İşlem Dizisi
 Bu makalede yan yana server yuva ve bir istemci yuva için işlem dizisi gösterilmektedir. Yuva kullandığından `CArchive` nesneleri, mutlaka oldukları [akış yuvaları](../mfc/windows-sockets-stream-sockets.md).  

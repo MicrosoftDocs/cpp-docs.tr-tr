@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33370727"
 ---
 # <a name="cmfcdynamiclayout-class"></a>CMFCDynamicLayout sınıfı
 Bir pencere denetimlerinde nasıl taşınır ve kullanıcı yeniden boyutlandırır gibi yeniden boyutlandırılan belirtir.  

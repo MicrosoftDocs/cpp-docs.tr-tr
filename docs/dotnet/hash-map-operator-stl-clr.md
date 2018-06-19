@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33109703"
 ---
 # <a name="hashmapoperatorstlclr"></a>hash_map::operator(stl/CLR)
 Bir anahtar ilişkili eşlenen değerine eşler.  

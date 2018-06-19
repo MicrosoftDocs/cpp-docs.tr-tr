@@ -109,6 +109,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33377577"
 ---
 # <a name="coleipframewndex-class"></a>COleIPFrameWndEx sınıfı
 `COleIPFrameWndEx` Sınıf MFC destekleyen bir OLE kapsayıcı uygular. Uygulamanız için yerinde çerçeve pencere sınıfı türetilmelidir `COleIPFrameWndEx` bundan türetilen yerine sınıfı [COleIPFrameWnd](../../mfc/reference/coleipframewnd-class.md)sınıfı. 

@@ -37,6 +37,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33369368"
 ---
 # <a name="cmfctoolbarinfo-class"></a>CMFCToolBarInfo sınıfı
 Kaynak kimlikleri araç görüntülerinin çeşitli durumlarını içerir. `CMFCToolBarInfo` bir parametresi olarak kullanılan bir yardımcı sınıf olan [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) yöntemi.  

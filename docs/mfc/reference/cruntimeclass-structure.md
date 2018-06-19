@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33376297"
 ---
 # <a name="cruntimeclass-structure"></a>CRuntimeClass yapısı
 Her sınıf türetilmiş `CObject` ile ilişkili bir `CRuntimeClass` çalışma zamanında bir nesne veya onun temel sınıfı hakkında bilgi edinmek için kullanabileceğiniz yapısı.  

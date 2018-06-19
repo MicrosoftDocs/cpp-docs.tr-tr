@@ -35,6 +35,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33367217"
 ---
 # <a name="cdraglistbox-class"></a>CDragListBox sınıfı
 Bir Windows liste kutusu işlevselliğini sağlayan yanı sıra `CDragListBox` sınıfı içinde liste kutusu gibi dosya adları, liste kutusu öğeleri taşımak kullanıcı verir.  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33098958"
 ---
 # <a name="csimplerowaddrefrow"></a>CSimpleRow::AddRefRow
 Bir başvuru sayısı bir iş parçacığı açısından güvenli şekilde var olan bir satır tanıtıcı ekler.  

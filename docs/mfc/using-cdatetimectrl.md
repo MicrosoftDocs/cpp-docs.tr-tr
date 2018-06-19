@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33381588"
 ---
 # <a name="using-cdatetimectrl"></a>CDateTimeCtrl Kullanma
 Tarih ve Saat Seçici denetimini ([CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)) girerek veya belirli bir tarih seçme sezgisel ve tanınabilir bir yöntem uygular. Bir birleşik giriş kutusu işlevindeki denetiminin ana arabirimi benzer. Aylık takvim denetiminin (varsayılan), görünen kullanıcı denetimi genişletir, ancak kullanıcının belirli bir tarih belirtmek izin verme. Aylık takvim denetiminin bir tarih seçildiğinde otomatik olarak kaybolur.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33371718"
 ---
 # <a name="message-maps-mfc"></a>İleti Eşlemeleri (MFC)
 Bu başvuru bölümü tüm listeler [ileti eşleme makroları](../../mfc/reference/message-map-macros-mfc.md) ve tüm [CWnd](../../mfc/reference/cwnd-class.md) karşılık gelen üye yanı sıra ileti eşleme girişleri işlev prototipleri:  

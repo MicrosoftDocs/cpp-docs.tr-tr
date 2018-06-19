@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33358921"
 ---
 # <a name="how-default-printing-is-done"></a>Varsayılan Yazdırmayı Yapma
 Bu makalede Windows varsayılan yazdırma işlemi MFC çerçevesi bakımından açıklanmaktadır.  
