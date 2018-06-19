@@ -81,6 +81,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33375839"
 ---
 # <a name="cmfccaptionbar-class"></a>CMFCCaptionBar sınıfı
 A `CMFCCaptionBar` nesnesidir üç öğe görüntüleyen bir denetim çubuğu: düğme, bir metin etiketi ve bir bit eşlem. Bu gibi durumlarda, her tür bir öğe yalnızca aynı anda görüntüleyebilirsiniz. Her öğe denetiminin sol veya sağ kenarları veya merkezi hale getirebilirsiniz. Düz veya 3B stili başlık çubuğunun üst ve alt kenarlık için de uygulayabilirsiniz.  

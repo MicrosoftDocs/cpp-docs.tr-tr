@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33693100"
 ---
 # <a name="walkthrough-creating-a-dataflow-agent"></a>İzlenecek Yol: Veri Akışı Aracısı Oluşturma
 Bu belgede denetim akışı yerine veri akışı dayalı tabanlı aracı uygulamalarının nasıl oluşturulacağını gösterir.  

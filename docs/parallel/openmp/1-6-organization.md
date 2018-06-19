@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33686119"
 ---
 # <a name="16-organization"></a>1.6 Organizasyon
 -   Çalışma Zamanı Kitaplığı işlevleri ([bkz: Bölüm 3](../../parallel/openmp/3-run-time-library-functions.md)).  

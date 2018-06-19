@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345761"
 ---
 # <a name="file-menu-in-an-mfc-database-application"></a>MFC Veritabanı Uygulamasında Dosya Menüsü
 MFC veritabanı uygulama oluşturma ve seri hale getirme kullanmayın, Dosya menüsünden nasıl, açık, Kapat yorumlama, kaydetme ve Farklı Kaydet komutları bu soruyu hiçbir Stil Kılavuzu olsa da, bazı öneriler şunlardır:  

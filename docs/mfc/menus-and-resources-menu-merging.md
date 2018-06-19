@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33351972"
 ---
 # <a name="menus-and-resources-menu-merging"></a>Menüler ve Kaynaklar: Menü Birleştirme
 Bu makalede görsel düzenleme işlemek ve düzgün şekilde yerinde etkinleştirme OLE belge uygulamaları için gerekli adımları ayrıntılarını verir. Yerinde etkinleştirme (Bileşen) uygulamaları kapsayıcı ve sunucu için bir zorluk oluşturur. Kullanıcı (kapsayıcı belge bağlamında) aynı çerçeve penceresindeki kalır, ancak gerçekte başka bir uygulama (sunucu) çalışıyor. Bu kapsayıcı ve sunucu uygulamaları kaynaklarına arasında düzenlemesi gerektirir.  

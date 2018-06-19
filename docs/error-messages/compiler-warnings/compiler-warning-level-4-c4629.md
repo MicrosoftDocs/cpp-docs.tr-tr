@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33315470"
 ---
 # <a name="compiler-warning-level-4-c4629"></a>Derleyici Uyarısı (düzey 4) C4629
 Digraph kullanıldığında, bir karakter dizisi '' belirteci char (Bu değil ne amaçladığınız ise iki karakter arasında bir boşluk ekle)' olarak yorumlanan digraph'  

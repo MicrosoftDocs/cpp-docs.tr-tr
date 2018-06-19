@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687985"
 ---
 # <a name="asynchronous-agents"></a>Zaman Uyumsuz Aracılar
 Bir *zaman uyumsuz Aracısı* (veya yalnızca *Aracısı*) zaman uyumsuz olarak daha büyük hesaplama görevlerini çözümlemek için diğer aracıları ile çalışan bir uygulama bileşenidir. Bir aracı olarak ayarlanmış bir yaşam döngüsü sahip bir görev olarak düşünün. Örneğin, bir aracı kullanılabilir olduğunda (örneğin, klavye, disk üzerindeki bir dosya veya bir ağ bağlantısı) bir giriş/çıkış aygıtı ve başka bir aracı veri eylem bu veriler üzerinde gerçekleştirebileceğiniz okuyabilir. İlk aracı ileti geçirme ikinci Aracısı daha fazla veri kullanılabilir olduğunu bildirmek üzere kullanır. Eşzamanlılık Çalışma zamanı Görev Zamanlayıcısı'nı engellemek ve işbirliği ile elde etmek aracıları etkinleştirmek için etkili bir mekanizma sağlar daha az verimli önalım gerektirmeden.  

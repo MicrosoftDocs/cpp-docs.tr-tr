@@ -24,6 +24,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33688160"
 ---
 # <a name="acceleratorviewremoved-class"></a>accelerator_view_removed Sınıfı
 Windows zaman aşımı algılama ve kurtarma mekanizması nedeniyle bir temel alınan DirectX araması başarısız olmadığında oluşan özel durum.  

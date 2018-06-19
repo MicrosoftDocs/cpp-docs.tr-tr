@@ -27,6 +27,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33840742"
 ---
 # <a name="using-directive-cclr"></a>#using yönergesi (C + +/ CLR)
 Meta verileri ile derlenen bir program aktarır [/CLR](../build/reference/clr-common-language-runtime-compilation.md).  

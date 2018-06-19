@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33336605"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>Vektör Yapıcı ve Paralel Hale Getirici İletileri
 Visual C++ derleyici seçenekleri kullanabileceğiniz [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) ve [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) ayarlamak için [otomatik Paralelleştirme ve otomatik Vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) çıkış neden kodları için ve bilgilendirme iletileri kendi etkinliği hakkında. Bu makalede, neden kodları ve iletiler açıklanmaktadır.  

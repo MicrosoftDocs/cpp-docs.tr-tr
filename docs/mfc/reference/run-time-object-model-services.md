@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33378301"
 ---
 # <a name="run-time-object-model-services"></a>Çalışma Süresi Nesne Modeli Hizmetleri
 Sınıfları [CObject](../../mfc/reference/cobject-class.md) ve [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) erişim çalışma zamanı sınıf bilgileri, seri hale getirme ve dinamik Nesne oluşturma dahil olmak üzere birçok nesne Hizmetleri kapsüller. Türetilmiş tüm sınıflar `CObject` bu işlevselliği devralır.  

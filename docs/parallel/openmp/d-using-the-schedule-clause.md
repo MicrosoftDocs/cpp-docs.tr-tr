@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33694946"
 ---
 # <a name="d-using-the-schedule-clause"></a>D. Zamanlama yan tümcesini kullanma
 Paralel bir bölge, sonunda en az bir engel olan ve başka engelleri içindeki sahip olabilir. Her engel bir takım üyeleri gelmesi son iş parçacığı için beklemeniz gerekir. Böylece engel yaklaşık aynı zamanda, tüm iş parçacıklarının gelmesini bu bekleme süresini en aza indirmek için paylaşılan iş dağıtılmalıdır. Paylaşılan bazıları iş yer **için** oluşturur, `schedule` yan tümcesi bu amaç için kullanılabilir.  

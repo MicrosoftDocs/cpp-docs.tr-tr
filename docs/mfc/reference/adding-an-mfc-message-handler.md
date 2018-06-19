@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33353735"
 ---
 # <a name="adding-an-mfc-message-handler"></a>MFC İleti İşleyicisi Ekleme
 Yapabilecekleriniz [bir ileti işleyicisini eklemek için Özellikler penceresini kullanın](../../mfc/reference/mapping-messages-to-functions.md) (Windows iletilerini işleme bir üye fonksiyonu) ileti işleyicisi bir sınıf ve harita Windows iletileri. Ayrıca ekleyebileceğiniz [herhangi bir iletişim kutusu denetimi için bir olay işleyicisi](../../windows/adding-event-handlers-for-dialog-box-controls.md).  

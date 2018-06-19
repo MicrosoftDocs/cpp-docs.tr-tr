@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33693149"
 ---
 # <a name="f-new-features-and-clarifications-in-version-20"></a>F Yeni özellikler ve açıklamalar sürüm 2.0
 Bu ekte sürüm 2.0 sürüm 1.0 taşımada OpenMP C/C++ belirtimi anahtar değişiklikler özetlenmektedir. Aşağıdaki öğeler belirtimine eklenen yeni özellikler şunlardır:  

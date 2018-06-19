@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33691394"
 ---
 # <a name="a24---example-of-the-private-clause"></a>A.24   private Yan Tümcesi Örneği
 `private` Yan tümcesi ([bölüm 2.7.2.1](../../parallel/openmp/2-7-2-1-private.md) sayfasında 25) paralel bölgesi yalnızca etkisi bölgenin dinamik kapsam için değil, bölge sözcük kapsamını için kullanılıyor.  Bu nedenle, değişkenin herhangi kullandığı aşağıdaki örnekte *bir* içinde `for` yordamı döngüde *f* özel bir kopyası anlamına gelir *bir*, çalışırken bir kullanımı yordamı *g* genel başvuruyor *bir*.  

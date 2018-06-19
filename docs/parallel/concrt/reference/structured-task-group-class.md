@@ -28,6 +28,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33694150"
 ---
 # <a name="structuredtaskgroup-class"></a>structured_task_group Sınıfı
 `structured_task_group` Sınıfı paralel iş yüksek oranda yapılandırılmış koleksiyonunu temsil eder. Tek tek Paralel Görevler sıraya bir `structured_task_group` kullanarak `task_handle` nesnelerini ve tamamlanmalarını bekleyin veya yürütme başlamıştır olmayan herhangi bir görevi iptal edilecek yürütme tamamlandı önce görev grubu iptal.  

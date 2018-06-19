@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33369729"
 ---
 # <a name="nccalcsizeparams-structure"></a>NCCALCSIZE_PARAMS Yapısı
 `NCCALCSIZE_PARAMS` Yapısı işlenirken bir uygulama kullanan bilgiler içermektedir `WM_NCCALCSIZE` ileti boyutu, konumu ve geçerli bir pencere istemci alanını içeriğini hesaplamak için.  

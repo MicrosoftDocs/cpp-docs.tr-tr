@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33374350"
 ---
 # <a name="linger-structure"></a>LINGER Yapısı
 `LINGER` Yapısını işlemek için kullanılan **SO_LINGER** ve **SO_DONTLINGER** seçeneklerini `CAsyncSocket::GetSockOpt`.  

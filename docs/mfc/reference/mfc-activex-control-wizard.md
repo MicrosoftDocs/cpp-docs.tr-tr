@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33375069"
 ---
 # <a name="mfc-activex-control-wizard"></a>MFC ActiveX Denetim Sihirbazı
 ActiveX denetimi belirli bir türde değil [Otomasyon sunucusu](../../mfc/automation-servers.md); yeniden kullanılabilir bir bileşendir. ActiveX denetimi barındırma uygulama [otomasyon istemci](../../mfc/automation-clients.md) bu denetimin. Amacınız yeniden kullanılabilir bir bileşen oluşturmak için ise, bu Sihirbazı, bir denetim oluşturmak için kullanın. Bkz: [MFC ActiveX denetimleri](../../mfc/mfc-activex-controls.md) daha fazla bilgi için.  

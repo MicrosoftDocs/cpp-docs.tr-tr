@@ -21,6 +21,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33691150"
 ---
 # <a name="openmp-in-visual-c"></a>Visual C++'da OpenMP
 OpenMP C ve C++ uygulaması program arabirimi etkili bir şekilde birden çok işlemci kullanacak uygulamaları yazmanızı sağlar. Visual C++ OpenMP 2.0 standart destekler.  

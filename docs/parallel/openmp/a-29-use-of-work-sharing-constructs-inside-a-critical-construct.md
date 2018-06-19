@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33691358"
 ---
 # <a name="a29---use-of-work-sharing-constructs-inside-a-critical-construct"></a>A.29   İş Paylaşım Yapılarının critical Yapı İçinde Kullanımı
 Aşağıdaki örnek, bir iş paylaşım yapısı içinde kullanarak gösterir bir `critical` oluşturun. İş paylaşım oluşturmak için bu örnek uyumludur ve `critical` yapı aynı paralel bölgeye bağlama.  

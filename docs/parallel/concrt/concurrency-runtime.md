@@ -21,6 +21,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33693529"
 ---
 # <a name="concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanı
 Eşzamanlılık Çalışma zamanı c++ yazma güçlü, ölçeklenebilir ve esnek paralel uygulamalar yardımcı olur. Böylece eşzamanlılık için ilgili altyapı ayrıntıları yönetmek zorunda değilsiniz soyutlama düzeyinde başlatır. Hizmet taleplerini uygulamalarınızın kalitesini karşılayan zamanlama ilkeleri belirtmek için de kullanabilirsiniz. Eşzamanlılık Çalışma zamanı ile çalışmaya başlamanıza yardımcı olması için bu kaynakları kullanın.  

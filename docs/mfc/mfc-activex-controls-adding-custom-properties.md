@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33352431"
 ---
 # <a name="mfc-activex-controls-adding-custom-properties"></a>MFC ActiveX Denetimleri: Özel Özellikler Ekleme
 Özel özellikler farklı stok özelliklerinden özel özellikler tarafından zaten uygulanmaz, `COleControl` sınıfı. Özel bir özellik, belirli bir durumu veya bir ActiveX denetimine denetimi kullanarak Programcı görünümünü göstermek için kullanılır.  

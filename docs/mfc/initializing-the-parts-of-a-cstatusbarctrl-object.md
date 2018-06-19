@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344350"
 ---
 # <a name="initializing-the-parts-of-a-cstatusbarctrl-object"></a>Bir CStatusBarCtrl Nesnesinin Bölümlerini Başlatma
 Varsayılan olarak, bir durum çubuğu ayrı bölmeleri kullanarak durum bilgilerini görüntüler. Bunlardan (parçaları olarak da bilinir) bir metin dizesi, bir simge ya da her ikisini de içerebilir.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345547"
 ---
 # <a name="exceptions-ole-exceptions"></a>Özel durumlar: OLE Özel Durumları
 OLE özel durumları işlemek için tesis ve teknikleri diğer özel durumları işlemek için aynıdır. Özel durum işleme hakkında daha fazla bilgi için bkz: [C++ özel durum işleme](../cpp/cpp-exception-handling.md).  

@@ -31,6 +31,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33354043"
 ---
 # <a name="prerequisites-for-internet-client-classes"></a>Internet İstemci Sınıfları için Önkoşullar
 (Örneğin bir dosya okuma) bir Internet istemcisi tarafından yapılan bazı eylemler önkoşul eylemleri (bir Internet bağlantısı kurmadan bu durumda,) sahip. Aşağıdaki tablolar, bazı istemci eylemleri için önkoşulları listeler.  

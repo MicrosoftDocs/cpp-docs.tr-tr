@@ -71,6 +71,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33376577"
 ---
 # <a name="cfilefind-class"></a>CFileFind sınıfı
 Yerel dosya aramaları gerçekleştirir ve temel sınıfı olan [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md) ve [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md), Internet dosya aramaları gerçekleştirin.  

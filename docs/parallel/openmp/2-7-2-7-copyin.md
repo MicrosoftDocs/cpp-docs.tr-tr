@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689382"
 ---
 # <a name="2727-copyin"></a>2.7.2.7 copyin
 **Copyin** yan tümcesi için aynı değer atamak için bir mekanizma sağlar **threadprivate** paralel bölge yürütme Ekipteki her bir iş parçacığı için değişkenleri. Belirtilen her bir değişken için bir **copyin** yan tümcesi, takım ana iş parçacığı değişkeninin değerini kopyalanır, atama gibi paralel bölge başına iş parçacığı özel kopya tarafından. Söz dizimi **copyin** yan tümcesi aşağıdaki gibidir:  

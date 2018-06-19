@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33295382"
 ---
 # <a name="automatic-function-scope-variables"></a>Otomatik (İşlev Kapsamı) Değişkenleri
 Bir işlev içinde bildirilen bir değişken, yalnızca o işlevi kapsamında kullanılabilir.  

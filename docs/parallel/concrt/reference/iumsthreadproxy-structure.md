@@ -27,6 +27,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33688615"
 ---
 # <a name="iumsthreadproxy-structure"></a>IUMSThreadProxy Yapısı
 Bir iş parçacığı için bir Özet yürütme. Kullanıcı modu zamanlanabilir (UMS) iş parçacıklarının verilebilmesi için Zamanlayıcı istiyorsanız, Zamanlayıcı İlkesi öğesinin değeri ayarlayın `SchedulerKind` için `UmsThreadDefault`ve uygulamanıza `IUMSScheduler` arabirimi. UMS iş parçacıkları yalnızca desteklenen 64-bit işletim sistemi sürümü Windows 7 ve üzeri.  

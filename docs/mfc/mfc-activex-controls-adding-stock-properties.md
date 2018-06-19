@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33357565"
 ---
 # <a name="mfc-activex-controls-adding-stock-properties"></a>MFC ActiveX Denetimleri: Stok Özellikler Ekleme
 Stok özellikleri içeren zaten bir sınıf tarafından uygulanan özel özelliklerinden farklı `COleControl`. `COleControl` Ortak Özellikler Denetim için destek önceden tanımlanmış üye işlevlerini içerir. Denetimin başlığı ve ön ve arka plan renkleri bazı ortak özellikleri içerir. Diğer stok özellikleri hakkında daha fazla bilgi için bkz: [hisse senedi özellikleri Özellik Ekleme Sihirbazı'nı tarafından desteklenen](#_core_stock_properties_supported_by_classwizard) bu makalenin ilerisinde yer. Stok özellikleri için gönderme eşleme girdilerini her zaman tarafından önek **DISP_STOCKPROP**.  

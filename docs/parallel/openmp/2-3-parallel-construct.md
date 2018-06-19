@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33692756"
 ---
 # <a name="23-parallel-construct"></a>2.3 parallel Yapı
 Aşağıdaki komut paralel birden çok iş parçacığı tarafından yürütülür program bölgedir paralel bir bölge tanımlar. Bu paralel yürütme başlayan temel bir yapıdır.  

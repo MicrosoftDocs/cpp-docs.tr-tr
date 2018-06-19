@@ -17,6 +17,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33281648"
 ---
 # <a name="compiler-warning-level-1-c4436"></a>Derleyici Uyarısı (düzey 1) C4436
 Sanal Taban 'class1' den dynamic_cast Oluşturucusu veya yıkıcı 'class2' için veya kısmen oluşturulmuş nesnesiyle derleme /vd2 başarısız #pragma vtordisp(2) ile ' class2' yürürlükte tanımlayın  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33324908"
 ---
 # <a name="activex-control-containers-using-controls-in-a-non-dialog-container"></a>ActiveX Denetim Kapsayıcıları: İletişim Kutusu Dışındaki Kapsayıcılarda Denetimleri Kullanma
 Bazı bir SDI gibi uygulamaları veya MDI uygulama uygulama penceresinde bir denetim eklemek istersiniz. **Oluşturma** Visual C++ tarafından eklenen sarmalayıcı sınıfının üye işlevini oluşturabilirsiniz denetim örneği dinamik olarak bir iletişim kutusu gerek kalmadan.  

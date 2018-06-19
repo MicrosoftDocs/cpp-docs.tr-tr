@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33354445"
 ---
 # <a name="how-to-make-a-type-safe-collection"></a>Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma
 Bu makalede, kendi veri türleri için tür kullanımı uyumlu koleksiyonlar nasıl oluşturulacağı açıklanmaktadır. Konular şunlardır:  

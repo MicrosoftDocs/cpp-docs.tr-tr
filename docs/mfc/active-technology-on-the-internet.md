@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33338594"
 ---
 # <a name="active-technology-on-the-internet"></a>Internet'te Etkin Teknoloji
 Etkin teknoloji heyecan verici, dinamik içerik ve uygulamaları genel Internet veya intranet bilinen bir şirketin iç ağ oluşturma geliştiricilerinin açık bir platformdur. Internet programlama için Microsoft tarafından sağlanan ana teknolojileri aşağıda açıklanmıştır.  

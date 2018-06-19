@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342985"
 ---
 # <a name="data-objects-and-data-sources-ole"></a>Veri Nesneleri ve Veri Kaynakları (OLE)
 Veri aktarımı, Pano veya sürükle ve bırak, kullanarak ya da gerçekleştirdiğinizde verileri bir kaynak ve hedef sahiptir. Başka bir uygulamaya yapıştırma için kabul ettiği ve kopyalamak için verileri bir uygulama sağlar. Aynı veri aktarımı başarılı olması için farklı işlemler gerçekleştirmek her iki tarafı aktarım gerekir. Microsoft Foundation Class (MFC) kitaplığı, bu Aktarım her iki tarafındaki temsil eden iki sınıflar sağlar:  

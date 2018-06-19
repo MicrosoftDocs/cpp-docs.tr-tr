@@ -34,6 +34,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33355145"
 ---
 # <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma
 ActiveX denetimi metin görüntülüyorsa, yazı tipi özelliğini değiştirerek metin görünümünü değiştirmek denetim kullanıcı izin verebilirsiniz. Yazı tipi özelliklerini yazı tipi nesneleri olarak uygulanır ve iki türden biri olabilir: stok veya özel. Stok yazı tipi özellikleri Özellik Ekleme Sihirbazı'nı kullanarak ekleyebilirsiniz preimplemented yazı tipi özelliklerdir. Özel yazı tipi özelliklerini değil preimplemented ve denetim Geliştirici özelliğin davranışı ve kullanım belirler.  

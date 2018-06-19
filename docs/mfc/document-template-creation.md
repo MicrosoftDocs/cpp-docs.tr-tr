@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345800"
 ---
 # <a name="document-template-creation"></a>Belge Şablonu Oluşturma
 Yanıt olarak yeni bir belge oluştururken, bir `New` veya **açık** komutunu **dosya** menüsünde Belge şablonu da belgeyi görüntülemek üzere aracılığıyla yeni bir çerçeve penceresi oluşturur.  

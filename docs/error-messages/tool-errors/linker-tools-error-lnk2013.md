@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33299857"
 ---
 # <a name="linker-tools-error-lnk2013"></a>Bağlayıcı Araçları Hatası LNK2013
 düzeltmesi türü düzeltmesi taşması. Hedef 'sembol adını' aralık dışında kalıyor  

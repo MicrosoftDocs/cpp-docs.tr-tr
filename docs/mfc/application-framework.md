@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341677"
 ---
 # <a name="application-framework"></a>Uygulama Framework'ü
 Çekirdeği Microsoft Foundation Class (MFC) kitaplığı, bir kapsüllemeyi C++ formunda Windows API büyük bir kısmının olur. Windows, iletişim kutuları, cihaz bağlamları Fırçalar ve kalemler, denetimleri ve diğer standart Windows öğeleri gibi sık kullanılan GDI nesnelerinin kitaplığı sınıfları temsil eder. Bu sınıfların kullanışlı sağlamak yapılarını bunlar kapsülleyen Windows için C++ üye işlevi arabirimi. Bu sınıfları kullanma hakkında daha fazla bilgi için bkz: [pencere nesnesi konuları](../mfc/window-objects.md).  

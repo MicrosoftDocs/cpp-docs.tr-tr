@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33371868"
 ---
 # <a name="control-settings-mfc-activex-control-wizard"></a>Denetim Ayarları, MFC ActiveX Denetim Sihirbazı
 Sihirbazın bu sayfası nasıl hareket etmesi için denetimi istediğinizi belirtmek için kullanın. Örneğin, standart Windows Denetim türleri denetiminde temel kendi davranış ve görünümünü en iyi duruma getirme veya denetimi diğer denetimler için bir kapsayıcı olarak davranamaz gösterir.  

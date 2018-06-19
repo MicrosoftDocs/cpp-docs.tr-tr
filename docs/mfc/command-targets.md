@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341303"
 ---
 # <a name="command-targets"></a>Komut Hedefleri
 Şekil [Framework komutlarda](../mfc/user-interface-objects-and-command-ids.md) menü öğesi ve framework çağrılarını nesne tıklatıldığında elde edilen komutu yürütmek için işleyici işlevi gibi bir kullanıcı arabirimi nesnesi arasındaki bağlantıyı gösterir.  

@@ -55,6 +55,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33694764"
 ---
 # <a name="accelerator-class"></a>accelerator Sınıfı
 Hızlandırıcı veri paralel bilgisayarlar için optimize edilmiştir bir donanım özelliğidir. Hızlandırıcı PCIe veri yoluna (örneğin, bir GPU) bağlı bir cihaz olabilir veya genişletilmiş bir yönerge ana CPU üzerinde ayarlanmış olması olabilir.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33692658"
 ---
 # <a name="271-threadprivate-directive"></a>2.7.1 threadprivate Yönergesi
 `threadprivate` Yönergesi yapar adlandırılmış dosya kapsamı, ad alanı kapsamı veya statik blok kapsamı değişkenleri belirtilen *değişken listesi* özel bir iş parçacığı için. *değişken listesi* tamamlanmamış bir türleri olmadığı değişkenleri virgülle ayrılmış listesi. Söz dizimi `threadprivate` yönergesi aşağıdaki gibidir:  

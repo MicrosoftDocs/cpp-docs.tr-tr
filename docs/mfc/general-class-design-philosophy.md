@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344369"
 ---
 # <a name="general-class-design-philosophy"></a>Genel Sınıf Tasarımı Felsefesi
 C++ dili uzun popüler hale geldi önce Microsoft Windows tasarlanmıştır. Uygulamaları binlerce C dili Windows uygulama programlama arabirimi (API) kullandığından, bu arabirim için yakın gelecekte korunur. Herhangi bir C++ Windows arabirimi, bu nedenle yordam C dili API üstünde yerleştirilmiş olabilir. Bu C++ uygulamaları C uygulamaları ile bir arada mümkün olacağını garanti eder.  

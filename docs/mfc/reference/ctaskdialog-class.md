@@ -131,6 +131,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379014"
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog sınıfı
 İşlevleri bir açılır iletişim kutusu bir ileti kutusu gibi ancak kullanıcıya ek bilgileri görüntüleyebilirsiniz. `CTaskDialog` Kullanıcıdan bilgi toplama işlevleri de içerir.  

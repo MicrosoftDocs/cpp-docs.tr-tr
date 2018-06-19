@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344519"
 ---
 # <a name="creating-the-header-control"></a>Üstbilgi Denetimi Oluşturma
 Üstbilgi denetimi (üstbilgi denetimi içeren bir liste denetimini ekleyebilseniz) doğrudan iletişim kutusu Düzenleyicisi'nde kullanılabilir değil.  

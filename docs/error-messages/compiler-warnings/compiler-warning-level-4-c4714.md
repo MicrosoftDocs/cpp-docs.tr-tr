@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33295424"
 ---
 # <a name="compiler-warning-level-4-c4714"></a>Derleyici Uyarısı (düzey 4) C4714
 İşlev 'function' __forceinline içermesinden işaretlenmemiş  

@@ -131,6 +131,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33377013"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog sınıfı
 HTML kullanmak iletişim kutuları oluşturmak için kullanılan kendi kullanıcı arabirimlerini uygulamak için iletişim kutusu kaynakları yerine.  

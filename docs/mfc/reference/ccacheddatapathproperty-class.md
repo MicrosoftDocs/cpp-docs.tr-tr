@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33355466"
 ---
 # <a name="ccacheddatapathproperty-class"></a>CCachedDataPathProperty sınıfı
 Implements bir OLE zaman uyumsuz olarak aktarılır ve bellek dosyasında önbelleğe özelliğini denetler.  

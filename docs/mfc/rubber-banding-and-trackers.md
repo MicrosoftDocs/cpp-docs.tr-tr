@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379248"
 ---
 # <a name="rubber-banding-and-trackers"></a>Rubber-Banding ve İzleyiciler
 Başka bir özellik izleyicileri ile sağlanan seçilecek öğeleri etrafında boyutlandırma dikdörtgen sürükleyerek birden çok OLE öğeleri seçmek bir kullanıcının "bant dışı pencere" seçim değildir. Kullanıcı sol fare düğmesini bıraktığında, kullanıcı tarafından seçilen bölge içindeki öğeler seçilir ve kullanıcı tarafından yönetilebilir. Örneğin, kullanıcı seçimi sürükleyin ve bu da başka bir kapsayıcı uygulamasına.  

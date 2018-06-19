@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344786"
 ---
 # <a name="drawing-and-printing-classes"></a>Sınıf Çizme ve Boyama
 Windows, tüm grafik çıktısı cihaz bağlamı (DC) adlı bir sanal çizim alanı çizilir. MFC için bit eşlemler, Fırçalar, paletleri ve kalemler gibi Windows çizim araçları encapsulations yanı sıra DC'leri çeşitli türlerde kapsüllemek için sınıflar sağlar.  

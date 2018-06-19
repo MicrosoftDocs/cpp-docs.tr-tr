@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33348913"
 ---
 # <a name="cclientdc-class"></a>CClientDC sınıfı
 Windows işlevlerini çağırma mvc'deki [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) oluşturma zamanında ve [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920) yok etme zaman.  

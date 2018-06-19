@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33339027"
 ---
 # <a name="compiler-intrinsics"></a>Derleyici İç Bilgileri
 Çoğu işlevleri kitaplıklarında yer alır, ancak bazı işlevler yerleşiktir (diğer bir deyişle, iç) derleyici. Bunlar, iç işlevler veya iç bilgileri olarak adlandırılır.  

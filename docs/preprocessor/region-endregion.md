@@ -27,6 +27,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33839453"
 ---
 # <a name="region-endregion"></a>region, endregion
 **#pragma bölge** Genişlet veya daralt kullanırken kod bloğu belirtmenizi sağlar [özelliği anahat oluşturma](/visualstudio/ide/outlining) Visual Studio Kod Düzenleyicisi'nin.  

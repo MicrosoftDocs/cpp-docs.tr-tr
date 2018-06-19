@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346509"
 ---
 # <a name="making-owner-drawn-tabs"></a>Sahip Tarafından Çizilmiş Sekmeler Yapma
 Sekme denetimi tek tek öğelerin tanımlayabilirsiniz ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) sahip tarafından çizilmiş öğeleri olmalıdır. Daha fazla bilgi için bkz: [Owner-Drawn sekmeleri](http://msdn.microsoft.com/library/windows/desktop/bb760550) Windows SDK'sındaki.  

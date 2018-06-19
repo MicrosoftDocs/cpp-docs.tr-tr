@@ -47,6 +47,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33368442"
 ---
 # <a name="cmfcribbonlinkctrl-class"></a>CMFCRibbonLinkCtrl sınıfı
 Konumlandırılmış bir köprü Şerit'te uygular. Tıklattığınızda köprü bir Web sayfası açılır.  

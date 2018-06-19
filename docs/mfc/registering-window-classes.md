@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379754"
 ---
 # <a name="registering-window-classes"></a>Pencere Sınıflarını Kaydetme
 Pencere "sınıfları" Windows için geleneksel programlamada windows herhangi bir sayıda oluşturulabileceği gelen bir "sınıf" (C++ sınıfı değil) özelliklerini tanımlayın. Bu sınıf bir şablonu veya windows oluşturmak için model türüdür.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33690276"
 ---
 # <a name="44-ompnested"></a>4.4 OMP_NESTED
 `OMP_NESTED` Ortam değişkeni etkinleştirir veya iç içe geçmiş paralellik etkin veya çağırarak devre dışı sürece iç içe geçmiş paralellik devre dışı bırakır `o` **mp_set_nested** kitaplığı yordamı. Varsa kümesine **TRUE**, iç içe geçmiş paralellik etkindir; bu ayarlanmışsa **yanlış**, iç içe geçmiş paralellik devre dışıdır. Varsayılan değer **FALSE**.  

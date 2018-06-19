@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345051"
 ---
 # <a name="handling-the-apply-button"></a>Uygula Düğmesini İşleme
 Özellik sayfaları standart iletişim kutuları bulunmayan bir özelliği vardır: yapmış özellik sayfasını kapatmadan önce değişiklikleri uygulamak kullanıcı sağlarlar. Bu yapılır Uygula düğmesini kullanarak. Bu makalede, bu özelliği düzgün bir şekilde uygulamak için kullanabileceğiniz yöntemler açıklanmaktadır.  

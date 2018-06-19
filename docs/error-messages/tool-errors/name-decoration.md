@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33323306"
 ---
 # <a name="name-decoration"></a>Düzenlemeyi Adlandır
 Ad düzenlemesi genellikle C++ adlandırma kurallarına başvuruyor, ancak C durumlarda bir dizi için geçerli olabilir. Varsayılan olarak, C++ işlevi için bir bağlayıcı adı oluşturmak için bu işlev adı, parametreler ve dönüş türü kullanır. Aşağıdaki işlevi göz önünde bulundurun:  

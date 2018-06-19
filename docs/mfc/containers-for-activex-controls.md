@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341452"
 ---
 # <a name="containers-for-activex-controls"></a>ActiveX Denetimleri için Kapsayıcılar
 ActiveX denetimi kapsamasını destekledikleri sürece diğer uygulamalarda Visual C++'da geliştirilmiş ActiveX denetimleri kullanabilirsiniz. Microsoft uygulamaları listelenen sürümler ile başlayarak, bir dizi ActiveX denetimi kapsamasını destekler.  

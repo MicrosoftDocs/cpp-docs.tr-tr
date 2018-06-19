@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33297108"
 ---
 # <a name="expression-evaluator-error-cxx0038"></a>İfade Değerlendirici Hatası CXX0038
 işlev bağımsız değişken sayısı ve/veya tür uyuşmazlığı  

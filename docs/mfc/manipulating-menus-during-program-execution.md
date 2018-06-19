@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344288"
 ---
 # <a name="manipulating-menus-during-program-execution"></a>Program Yürütülmesi Sırasında Menüleri Düzenleme
 Bir sınıf kullanma `CMenu` menüler ve menü öğeleri kolay bir şekilde yönlendirebilir. `CMenu` bir Windows yalıtır `HMENU` işlemek ve menülerle çalışma için üye işlevleri sağlar.  

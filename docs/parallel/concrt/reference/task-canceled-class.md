@@ -23,6 +23,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33690253"
 ---
 # <a name="taskcanceled-class"></a>task_canceled Sınıfı
 Bu sınıf, iptal etmek için geçerli görev zorlamak için PPL görevleri katmanı tarafından oluşturulan bir özel açıklar. Tarafından da oluşturulan `get()` yöntemi [görev](/visualstudio/extensibility/debugger/task-class-internal-members), iptal edilen bir görev için.  

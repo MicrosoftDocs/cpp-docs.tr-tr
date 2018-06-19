@@ -127,6 +127,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33377629"
 ---
 # <a name="cmdichildwndex-class"></a>CMDIChildWndEx sınıfı
 `CMDIChildWndEx` Sınıfı, birden çok belge arabirimi (MDI) alt pencere Windows işlevselliğini sağlar. İşlevselliğini genişleten [Cmdıchildwnd sınıfı](../../mfc/reference/cmdichildwnd-class.md). MDI uygulamanın belirli MFC sınıfları kullandığında framework Bu sınıf gerektirir.  

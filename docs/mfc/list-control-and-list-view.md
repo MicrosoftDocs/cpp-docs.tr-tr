@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346005"
 ---
 # <a name="list-control-and-list-view"></a>Liste Denetimi ve Liste Görünümü
 Kolaylık olması için iki yolla liste denetimi MFC yalıtır. Liste denetimleri kullanabilirsiniz:  

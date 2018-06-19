@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342913"
 ---
 # <a name="month-calendar-control-examples"></a>Aylık Takvim Denetimine Örnekler
 [CMNCTRL1](../visual-cpp-samples.md) örnek uygulaması gösterir çeşitli özniteliklerini `CMonthCalCtrl` sınıfı. Örnekte, ayrı bir sekmesinde bulunan denetim, temel işlevini gösterir ve belirli öznitelikleri dinamik olarak değiştirmek kullanıcının sağlar.  

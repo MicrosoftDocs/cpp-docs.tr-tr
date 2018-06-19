@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33369170"
 ---
 # <a name="cmfcribbonapplicationbutton-class"></a>CMFCRibbonApplicationButton sınıfı
 Implements özel düğmesini uygulama penceresinin sol üst köşesinde yer. Düğme tıklatıldığında, genellikle ortak içeren menü açar **dosya** gibi komutlar **açık**, **kaydetmek**, ve **çıkış**.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33380259"
 ---
 # <a name="template-classes-for-arrays-lists-and-maps"></a>Diziler, Listeler ve Eşlemeler için Şablon Sınıfları
 Bu koleksiyon sınıfları parametreleri Toplamaların depolanan nesne türlerini belirleme şablonlarıdır. `CArray`, `CMap`, Ve `CList` sınıflar genellikle özelleştirilmelidir genel yardımcı işlevleri kullanın. Bu yardımcı işlevleri hakkında daha fazla bilgi için bkz: [koleksiyon sınıfı Yardımcıları](../mfc/reference/collection-class-helpers.md). Sınıf Kitaplığı'nda diğer sınıflar için sarmalayıcıları yazılan işaretçi sınıflarıdır. Bu sarmalayıcıları kullanarak, derleyicinin tür hataları önlemenize yardımcı olmak için denetim listesine. Bu sınıfları kullanma hakkında daha fazla bilgi için bkz: [koleksiyonları](../mfc/collections.md).  

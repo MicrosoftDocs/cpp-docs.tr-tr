@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33839887"
 ---
 # <a name="porting-data-applications"></a>Veri uygulamaları bağlantı noktası oluşturma
 Yıllar içinde Visual C++ veritabanları ile çalışmak için çeşitli yollar sağlamıştır. 2011 ', SQL Server ürün yerel koddan erişmek için tercih edilen teknoloji olarak ODBC hizalama Microsoft duyurdu. ODBC sektör standardı olan ve bu aracı kullanarak, kodunuzun maksimum taşınabilirlik birden çok platformları ve veri kaynaklarını elde. Çoğu SQL veritabanı ürünleri ve birçok NoSQL ürünleri ODBC desteği. MFC ODBC sarmalayıcı sınıflar ya da üçüncü taraf C++ sarmalayıcı kitaplık kullanabilirsiniz veya alt düzey ODBC API'lerini doğrudan çağırmak ODBC kullanabilirsiniz. 

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379989"
 ---
 # <a name="setting-the-dialog-boxs-background-color"></a>İletişim Kutusunun Arka Plan Rengini Ayarlama
 İletişim kutuları arka plan rengini işleyerek ayarlayabilirsiniz `WM_CTLCOLOR` iletişim kutusu pencere iletileri. Ayarladığınız rengi yalnızca belirtilen iletişim kutusu için kullanılır.  

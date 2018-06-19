@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33353634"
 ---
 # <a name="ole-in-mfc"></a>MFC'de OLE
 Bu makaleler MFC kullanma OLE Programlama temelleri açıklanır. MFC OLE kullanan programlar yazmak için en kolay yolu sağlar:  

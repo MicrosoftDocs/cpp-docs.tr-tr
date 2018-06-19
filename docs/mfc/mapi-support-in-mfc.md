@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33349669"
 ---
 # <a name="mapi-support-in-mfc"></a>MFC'de MAPI Desteği
 MFC sağlayan bir alt kümesini, Microsoft ileti uygulama programı arabirimi (MAPI) sınıfında desteği **CDocument**. Özellikle, **CDocument** posta desteği son kullanıcının makinede mevcut olup olmadığını üye işlevleri vardır ve bu durumda, standart komut Kimliğine sahip bir posta Gönder komutu etkinleştirmek **ID_FILE_SEND_MAIL**. Bu komut için MFC işleyici işlevi bir belgeyi elektronik posta ile göndermek kullanıcının sağlar.  

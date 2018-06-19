@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346200"
 ---
 # <a name="exceptions-throwing-exceptions-from-your-own-functions"></a>Özel Durumlar: Kendi İşlevlerinizden Özel Durum Atma
 MFC özel durum işleme standardı yalnızca MFC ya da diğer kitaplıkları işlevlerde tarafından oluşturulan özel durumları yakalamak için kullanmak mümkündür. Özel durumları karşılaşabilirsiniz işlevleri yazıyorsanız kitaplık kodu tarafından oluşturulan özel durumları yakalama ek olarak, özel durumlar kendi kodunuzdan atabilirsiniz.  

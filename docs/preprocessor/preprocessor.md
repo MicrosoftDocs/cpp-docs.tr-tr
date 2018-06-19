@@ -19,6 +19,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33848456"
 ---
 # <a name="preprocessor"></a>Ön işlemci
 Ön İşlemci kaynak dosyası metnin ilk çeviri aşaması bir parçası olarak işleyen bir metin işlemcisi ' dir. Önişlemci kaynak metni ayrıştırma değil, ancak bunu onu makrosu çağrıları bulma amacıyla belirteçler içine bölün. Derleyici normalde ilk seferde önişlemci çağırır rağmen önişlemci ayrıca ayrı ayrı derleme olmadan metin işlemek için çağrılabilir.  
