@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343520"
 ---
 # <a name="ole-classes"></a>OLE Sınıfları
 OLE sınıfları programlarınızı kullanıcılarınıza ActiveX gücünü sağlamak için kolay bir yol vermiş ActiveX API kolay erişim sağlamak için diğer uygulama framework sınıfları çalışırlar. ActiveX kullanarak şunları yapabilirsiniz:  

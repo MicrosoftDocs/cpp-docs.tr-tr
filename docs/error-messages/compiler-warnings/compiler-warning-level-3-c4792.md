@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33292106"
 ---
 # <a name="compiler-warning-level-3-c4792"></a>Derleyici Uyarısı (Düzey 3) C4792
 İşlev 'function' SysImport kullanılarak bildirilen ve yerel koddan başvurulan; içeri aktarma kitaplığını bağlamak için gerekli  

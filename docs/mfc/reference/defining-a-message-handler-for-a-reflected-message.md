@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33373175"
 ---
 # <a name="defining-a-message-handler-for-a-reflected-message"></a>Yansımış Bir İleti İçin İleti İşleyicisi Tanımlama
 Yeni bir MFC denetim sınıf oluşturduktan sonra ileti işleyicileri için tanımlayabilirsiniz. Yansıtılan ileti işleyicileri ileti üst tarafından alınmadan önce kendi iletileri işlemek denetim sınıfınıza izin verir. MFC kullanabilirsiniz [CWnd::SendMessage](../../mfc/reference/cwnd-class.md#sendmessage) üst penceresine, denetimden iletileri göndermeye işlevi.  

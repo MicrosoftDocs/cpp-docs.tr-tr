@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33858493"
 ---
 # <a name="arrangement-of-controls-on-dialog-boxes"></a>İletişim Kutularındaki Denetimlerin Düzenlenmesi
 İletişim kutusu Düzenleyicisi hizalama ve denetimleri otomatik olarak boyut düzeni araçlar sağlar. Çoğu görevler için kullanabileceğiniz [iletişim kutusu Düzenleyicisi araç](../windows/showing-or-hiding-the-dialog-editor-toolbar.md). Tüm iletişim kutusu Düzenleyicisi araç komutları Biçim menüsünde de mevcuttur ve çoğu [kısayol tuşları](../windows/accelerator-keys-for-the-dialog-editor.md).  

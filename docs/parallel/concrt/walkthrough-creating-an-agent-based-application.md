@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33692632"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>İzlenecek Yol: Aracı Temelli Uygulama Oluşturma
 Bu konuda, temel bir aracı temelli uygulama oluşturma açıklanmaktadır. Bu kılavuzda, zaman uyumsuz olarak bir metin dosyasından veri okuyan bir aracı oluşturabilirsiniz. Uygulama, dosyanın içeriğini sağlama hesaplamak için Adler-32 sağlama toplamı algoritmayı kullanır.  

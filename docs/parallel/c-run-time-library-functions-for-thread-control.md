@@ -24,6 +24,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33685768"
 ---
 # <a name="c-run-time-library-functions-for-thread-control"></a>İş Parçacığı Denetimi için C Çalışma Süresi Kitaplık İşlevleri
 Tüm Win32 programlar en az bir iş parçacığı vardır. Hiçbir iş parçacığı ek iş parçacığı oluşturabilirsiniz. Bir iş parçacığı çalışmasını hızlı bir şekilde tamamlayın ve ardından sonlandırmak ya da program yaşam süreleri boyunca etkin kalabilir.  

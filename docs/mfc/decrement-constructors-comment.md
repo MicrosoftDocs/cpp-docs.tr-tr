@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33344171"
 ---
 # <a name="-constructors-comment"></a>// Oluşturucu Açıklaması
 `// Constructors` Bölümü bir MFC sınıf bildiriminin bildirir gerçekten nesne kullanmak için gereken tüm başlatma işlevler yanı sıra kurucularda (C++ algılama). Örneğin, `CWnd::Create` önce kullandığınız oluşturucular bölümünde çünkü `CWnd` nesnesi, onu gerekir "tam olarak oluşturulmasını" C++ Oluşturucusu çağrılmadan ve ardından çağırma **oluşturma** işlevi. Genellikle, bu ortak üyeleridir.  

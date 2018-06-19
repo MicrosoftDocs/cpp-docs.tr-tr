@@ -32,6 +32,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33694163"
 ---
 # <a name="agent-class"></a>agent Sınıfı
 Tüm bağımsız aracılar için temel sınıf olarak kullanılmak üzere bir sınıf. Diğer aracıları durumundan gizleme ve ileti geçirme kullanarak etkileşim kurmak için kullanılır.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343767"
 ---
 # <a name="frame-window-styles-c"></a>Çerçeve Pencere Stilleri (C++)
 Çerçevesiyle alma çerçeve pencereleri çoğu program için uygun olan, ancak Gelişmiş işlevlerini kullanarak ek esneklik kazanmadan [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) ve MFC genel işlevi [AfxRegisterWndClass ](../mfc/reference/application-information-and-management.md#afxregisterwndclass). `PreCreateWindow` bir üye işlevidir `CWnd`.  

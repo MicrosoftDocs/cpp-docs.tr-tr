@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342205"
 ---
 # <a name="creating-a-dialog-class-with-code-wizards"></a>Kod Sihirbazları ile İletişim Kutusu Sınıfı Oluşturma
 Aşağıdaki tabloda, kod sihirbazları yardımcı olacak iletişim ile ilgili görevleri listeler.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33383556"
 ---
 # <a name="using-cstatusbarctrl"></a>CStatusBarCtrl Kullanma
 Durum çubuğu denetimi kullanabilirsiniz ([CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)) çeşitli uygulama hakkındaki durum bilgilerini yansıtan bir denetimi penceresi oluşturulamadı. Durum penceresi birden fazla tür bilgilerini görüntüleme parçalara ayrılabilir.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382521"
 ---
 # <a name="tree-control-parent-and-child-items"></a>Ağaç Denetimi Üst ve Alt Öğeleri
 Ağaç denetimi herhangi bir öğeye ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) kendisiyle ilişkili alt öğeleri adlı alt öğeler listesini sağlayabilirsiniz. Bir veya daha fazla alt öğelerine sahip bir öğe üst öğe adı verilir. Bir alt öğesi kendi üst öğesi altında görüntülenir ve üst bağımlı olan belirtmek için girintili. Üst öğeye sahip bir öğe hiyerarşisinin en üstünde olduğu ve bir kök öğe adı verilir.  

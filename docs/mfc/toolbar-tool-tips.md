@@ -28,6 +28,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33383503"
 ---
 # <a name="toolbar-tool-tips"></a>Araç Çubuğu Araç İpuçları
 Araç ipuçları fare bir süre için düğme üzerine getirdiğinizde, araç düğmenin amacı kısa açıklamaları sunan küçük açılır pencereleri ' dir. Uygulama Sihirbazı ile bir araç olan bir uygulama oluşturduğunuzda, sizin için araç ipucu desteği sağlanır. Bu makalede, Uygulama Sihirbazı'nı ve uygulamanız için araç ipucu desteği ekleme tarafından oluşturulan her iki araç ipucu desteği açıklanmaktadır.  

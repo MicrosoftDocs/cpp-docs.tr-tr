@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33316731"
 ---
 # <a name="missing-function-body-or-variable"></a>Eksik İşlev Gövdesi veya Değişken
 Yalnızca bir işlev prototipi derleyici hatasız devam edebilirsiniz, ancak işlev kodu veya ayrılmış değişken alanı olmadığından bağlayıcı bir adresi çağrısı çözümlenemiyor. Bağlayıcı çözülmelidir işlevi çağrısı oluşturana kadar bu hata görmezsiniz.  

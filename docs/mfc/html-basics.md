@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347223"
 ---
 # <a name="html-basics"></a>HTML Temelleri
 Çoğu tarayıcı göz sayfaların HTML kaynağını inceleniyor özelliği var. HTML (Köprü Metni Biçimlendirme Dili) etiket sayısı görürsünüz kaynak görüntülediğinizde metinle interspersed açılı ayraçları (<>) tarafından çevrelenen.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346262"
 ---
 # <a name="printing-and-print-preview"></a>Yazdırma ve Baskı Önizleme
 MFC sınıf aracılığıyla programınızın belgeler için yazdırma ve baskı önizlemeyi destekleyen [CView](../mfc/reference/cview-class.md). Temel yazdırma ve Baskı Önizleme için Görünüm sınıfınızın yalnızca geçersiz kılma [OnDraw](../mfc/reference/cview-class.md#ondraw) yine de yapmalısınız üye işlevi. Ekranda, gerçek bir yazıcı için bir yazıcı aygıt içeriği görüntülemek için bu işlevi çizebilirsiniz veya bir cihaz bağlamına, yazıcınızın ekranında benzetimini yapar.  

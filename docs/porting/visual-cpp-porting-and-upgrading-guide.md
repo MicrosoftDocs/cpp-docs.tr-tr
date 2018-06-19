@@ -17,6 +17,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33846603"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ taşıma ve yükseltme Kılavuzu
 Bu konu, Visual C++ kodu yükseltmek için bir kılavuz sağlar. Bu yeni dil ve Visual Studio özellikleri yararlanarak yanı sıra derlemek ve üzerinde daha yeni bir sürüm Araçları'nın düzgün çalışması için kodu alma içerir. Bu konu ayrıca daha modern platformlara geçirme eski uygulamalar hakkında bilgiler içerir.  

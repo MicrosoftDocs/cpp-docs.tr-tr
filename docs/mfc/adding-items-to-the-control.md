@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341371"
 ---
 # <a name="adding-items-to-the-control"></a>Denetime Öğe Ekleme
 Liste denetimi öğeler eklemek için ([CListCtrl](../mfc/reference/clistctrl-class.md)), birkaç sürümlerinden birini çağrısı [InsertItem](../mfc/reference/clistctrl-class.md#insertitem) , hangi bilgilere bağlı olarak üye işlevi. Bir sürüm alır bir [LV_ITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) hazırlamanız yapısı. Çünkü `LV_ITEM` yapısı çok sayıda üye içeren, liste denetim öğesi özniteliklerini daha fazla denetime sahip olursunuz.  

@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33334853"
 ---
 # <a name="accessing-all-members-of-a-collection"></a>Bir Koleksiyonun Tüm Üyelerine Erişme
 MFC dizi koleksiyon sınıfları — hem şablona dayalı ve — dizinleri öğelerini erişmek için kullanın. MFC liste ve eşleme koleksiyon sınıfları — hem şablona dayalı ve — türünün bir göstergesi kullanın **konumu** koleksiyonundaki belirli bir konuma açıklamak için. Bu koleksiyonun bir veya daha fazla üyelerini erişmek için ilk konumu göstergesi başlatmak sürekli olarak o konumdan koleksiyonuna geçirmek ve sonraki öğeye dönmek için isteyin. Koleksiyon yinelemeyi ilerleme durumu ile ilgili durum bilgilerini korumak için sorumlu değildir. Bu bilgiler konumu göstergesi tutulur. Ancak, belirli bir konuma göz önüne alındığında, koleksiyon sonraki öğeye döndürmek için sorumludur.  

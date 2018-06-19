@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382008"
 ---
 # <a name="using-custom-format-strings-in-a-date-and-time-picker-control"></a>Tarih ve Saat Seçici Denetiminde Özel Biçim Dizeleri Kullanma
 Varsayılan olarak, geçerli tarih ve saati görüntülemek için üç türleri (için benzersiz bir stil karşılık gelen her biçim) biçiminde tarih ve Saat Seçici denetimleri sağlar:  

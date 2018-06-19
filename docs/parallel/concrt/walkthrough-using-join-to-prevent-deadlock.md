@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33693355"
 ---
 # <a name="walkthrough-using-join-to-prevent-deadlock"></a>İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma
 Bu konuda yemek Yiyen Filozoflar sorunu nasıl kullanılacağını göstermek için kullanır. [concurrency::join](../../parallel/concrt/reference/join-class.md) uygulamanızda kilitlenmeyi önlemek için sınıf. Bir yazılım uygulamasında *kilitlenme* iki veya daha çok işlemler her bir kaynak basılı tutun ve karşılıklı olarak başka bir kaynağın serbest bırakmak başka bir işlemin tamamlanmasını beklemek oluşur.  

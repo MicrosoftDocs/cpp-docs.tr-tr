@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33373417"
 ---
 # <a name="mfc-add-class-wizard"></a>MFC Sınıf Ekleme Sihirbazı
 Varolan bir MFC projesine bir sınıf ekleyin ya da bir sınıf MFC destekleyen bir ATL projesine eklemek için bu kodu Sihirbazı'nı kullanın. MFC desteği için Win32 projeleri MFC sınıfları de ekleyebilirsiniz. Projenizi oluşturduğunuzda, belirttiğiniz özellikler bu iletişim kutusunda seçeneklerini belirleyin.  

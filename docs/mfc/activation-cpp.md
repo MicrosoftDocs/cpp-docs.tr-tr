@@ -33,6 +33,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33334489"
 ---
 # <a name="activation-c"></a>Etkinleştirme (C++)
 Bu makalede visual OLE öğelerini düzenleme etkinleştirme rol açıklanmaktadır. Bir kullanıcı bir OLE öğesi bir kapsayıcı belgede katıştırılmış içeren sonra kullanılacak gerekebilir. Bunu yapmak için bu öğeyi etkinleştirir öğesi kullanıcı çift tıklamalar. Etkinleştirme için en sık rastlanan etkinlik düzenliyor. Düzenleme için etkinleştirildiğinde birçok geçerli OLE öğeleri, menüleri ve araç çubuklarını öğesini oluşturan sunucu uygulamaya ait olanlar yansıtacak şekilde değiştirmek için geçerli çerçeve penceresi neden. Olarak yerinde etkinleştirme, bilinen bu davranış, kapsayıcı belgenin penceresi ayrılmadan bir bileşik belge katıştırılmış herhangi bir öğeye düzenlemesine olanak tanır.  

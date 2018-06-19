@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345071"
 ---
 # <a name="frame-window-classes-windows"></a>Çerçeve Penceresi Sınıfları (Windows)
 Çerçeve pencereleri uygulama veya bir uygulamanın parçası çerçeve windows ' dir. Çerçeve pencereleri genellikle görünümleri, araç çubukları ve durum çubukları gibi diğer windows içerir. Durumunda `CMDIFrameWnd`, bunlar içerebilir `CMDIChildWnd` dolaylı olarak nesneleri.  

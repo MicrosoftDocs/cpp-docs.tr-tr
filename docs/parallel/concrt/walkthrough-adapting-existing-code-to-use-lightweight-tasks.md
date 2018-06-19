@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33688550"
 ---
 # <a name="walkthrough-adapting-existing-code-to-use-lightweight-tasks"></a>İzlenecek yol: Mevcut Kodu Hafif Görevleri Kullanmaya Uyarlama
 Bu konu, Windows API'si oluşturmak ve basit bir görev kullanmak için bir iş parçacığını yürütmek için kullanılan var olan kodu uyum gösterilmektedir.  

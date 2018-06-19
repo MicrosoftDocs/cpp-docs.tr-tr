@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346275"
 ---
 # <a name="mapping-windows-messages-to-your-class"></a>Windows İletilerini Sınıfınıza Eşleme
 Windows iletilerini işlemek için iletişim kutusunu gerekiyorsa, uygun işleyici işlevleri geçersiz kılar. Bunu yapmak için Özellikler penceresini kullanın [ileti eşlemesi](../mfc/reference/mapping-messages-to-functions.md) iletişim kutusu sınıflarına. Bu, her ileti için ileti eşleme girişi yazar ve sınıfı için ileti işleyicisi üye işlevleri ekler. İleti işleyicileri kod yazmak için Visual C++ kaynak kodu Düzenleyicisi'ni kullanın.  

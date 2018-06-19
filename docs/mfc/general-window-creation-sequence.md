@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346522"
 ---
 # <a name="general-window-creation-sequence"></a>Genel Pencere Oluşturma Dizisi
 Kendi alt gibi penceresinin bir pencere oluşturduğunuzda framework kadar aynı işlem içinde açıklanan olarak kullanır. [belge/görünüm oluşturma](../mfc/document-view-creation.md).  

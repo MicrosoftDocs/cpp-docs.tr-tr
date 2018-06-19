@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33318067"
 ---
 # <a name="project-build-warning-prj0041"></a>Proje Derleme Uyarısı PRJ0041
 Eksik bulunamıyor bağımlılık 'dosya' dosya ' bağımlılığı'. Projenizi hala yapı, ancak bu dosya bulunana kadar güncel görüntülenmeye devam edebilir.  

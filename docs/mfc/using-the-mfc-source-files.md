@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33384341"
 ---
 # <a name="using-the-mfc-source-files"></a>MFC Kaynak Dosyalarını Kullanma
 Microsoft Foundation Class (MFC) kitaplığı tam kaynak kodu sağlar. Üstbilgi dosyaları (.h) \atlmfc\include dizinde bulunan; Uygulama dosyaları (.cpp) kaynağı \atlmfc\src\mfc dizinindedir.  

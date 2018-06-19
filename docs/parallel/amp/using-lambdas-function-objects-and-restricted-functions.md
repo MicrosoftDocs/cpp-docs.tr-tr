@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687458"
 ---
 # <a name="using-lambdas-function-objects-and-restricted-functions"></a>Lambda'lar, İşlev Nesneleri ve Kısıtlanmış İşlevler Kullanma
 Hızlandırıcı üzerinde çalıştırmak istediğiniz C++ AMP kodu bir bağımsız değişken için bir çağrı olarak belirtilen [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) yöntemi. Bu bağımsız değişken olarak bir lambda ifadesi veya bir işlev nesnesi (functor) sağlayabilir. Ayrıca, lambda ifadesi veya işlev nesnesi C++ AMP kısıtlanmış işlevi çağırabilirsiniz. Bu konu, Lambda'lar, işlev nesneleri ve kısıtlanmış işlevler göstermek için bir dizi ek algoritma kullanır. Aşağıdaki örnek, C++ AMP kodu olmadan algoritmasını gösterir. İki 1 boyutlu diziler eşit uzunlukta oluşturulur. Karşılık gelen tamsayı öğeleri eklendi ve üçüncü 1 boyutlu bir dizi içinde depolanır. C++ AMP kullanılmaz.  

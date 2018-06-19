@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33383351"
 ---
 # <a name="using-image-lists-in-an-extended-combo-box-control"></a>Genişletilmiş Birleşik Giriş Kutusu Denetiminde Görüntü Listeleri Kullanma
 Ana Genişletilmiş Birleşik giriş kutusu denetimleri birleşik giriş kutusu denetimi öğeleri ayrı ayrı bir görüntü listesi görüntülerden ilişkilendirmek olanağı özelliğidir. Her üç farklı görüntüleri görüntüleyemeyecek öğesidir: Seçili durumunda, biri kendi nonselected durumu ve üçüncü bir katmana görüntüsü için için bir tane.  

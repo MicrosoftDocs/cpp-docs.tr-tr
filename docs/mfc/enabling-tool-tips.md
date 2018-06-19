@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346142"
 ---
 # <a name="enabling-tool-tips"></a>Araç İpuçlarını Etkinleştirme
 (Örneğin, bir form görünümü veya iletişim kutusu denetimleri) penceresinin alt denetimler için araç ipucu destek etkinleştirebilirsiniz.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342313"
 ---
 # <a name="creating-a-rebar-control"></a>Rebar Denetimi Oluşturma
 [CReBarCtrl](../mfc/reference/crebarctrl-class.md) nesneleri üst nesne görünür hale gelmeden önce oluşturulmalıdır. Bu olanaklar boyama sorunları en aza indirir.  

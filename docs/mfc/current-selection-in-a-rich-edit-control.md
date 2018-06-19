@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345016"
 ---
 # <a name="current-selection-in-a-rich-edit-control"></a>Bir Zengin Düzenleme Denetimindeki Geçerli Bölüm
 Kullanıcı bir zengin düzenleme denetimine metin seçebilirsiniz ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) fare veya klavyeyi kullanarak. Geçerli seçim seçili karakter aralığı veya ekleme noktasını hiçbir karakter varsa konumunu seçilir. Uygulamanın geçerli seçim hakkında bilgi almak, geçerli seçim ayarlayın, geçerli seçim değişiklikleri ve Göster veya gizle seçim zaman vurgulayın belirleyin.  

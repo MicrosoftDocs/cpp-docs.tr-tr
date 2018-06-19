@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33299753"
 ---
 # <a name="c-runtime-error-r6035"></a>C çalışma zamanı hatası R6035
 Bu güvenlik tanımlama bilgisinde bağlı olan bir işlev etkinken Microsoft Visual C++ çalışma zamanı kitaplığı, hata R6035 - bu uygulamanın modülünde modülünün genel güvenlik tanımlama bilgisi başlatılıyor.  __Security_init_cookie önceki çağırın.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33320593"
 ---
 # <a name="nmake-warning-u4007"></a>NMAKE Uyarısı U4007
 Dosya adı 'filename' çok uzun; 8.3 kesiliyor  

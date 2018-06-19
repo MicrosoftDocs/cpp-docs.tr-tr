@@ -39,6 +39,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33856039"
 ---
 # <a name="text-and-strings-in-visual-c"></a>Visual C++'da Metin ve Dizeler
 Uluslararası pazarda uygulama geliştirmenin önemli bir yönü, yerel karakter kümeleri yeterli gösterimidir. ASCII karakter kümesi 0x00-0x7F aralıktaki karakterleri tanımlar. ASCII karakter kümesi için 0x00-0x7F aralıktaki karakterleri aynı tanımlayan ve ayrıca genişletilmiş bir karakter 0x80 0xFF değerine kümesini tanımlamak öncelikle Avrupa, diğer karakter kümesi vardır. Bu nedenle, bir 8 bit, tek bayt karakter kümesi (SBCS) ASCII karakter kümesi gibi birçok Avrupa dilleri için karakter kümesi temsil etmek yeterli olur. Ancak, Japonca Kanji gibi bazı Avrupa dışı karakter kümesi tek baytlı kodlama düzeni temsil eder ve bu nedenle çok baytlı karakter kümesi (MBCS) kodlaması gerektiren daha çok daha fazla karakter içerir.  

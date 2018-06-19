@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33346906"
 ---
 # <a name="class-library-overview"></a>Sınıf Kitaplığına Genel Bakış
 Bu genel bakışta, kategorilere ayırır ve sınıflar, 9.0 sürümünden Microsoft Foundation Class Kitaplığı (MFC) açıklar. Uygulama Çerçevesi birlikte gerçekleştirilecek MFC sınıfları oluşturur — Windows API için yazılmış bir uygulama Framework'ü. Programlama göreviniz, uygulamaya özgü kod doldurmaktır.  

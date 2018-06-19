@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33341097"
 ---
 # <a name="adding-controls-to-a-property-sheet"></a>Özellik Sayfasına Denetim Ekleme
 Varsayılan olarak, bir özellik sayfası özellik sayfaları, sekme dizini ve Uygula Tamam ve İptal düğmeleri penceresi alan ayırır. (Kalıcı olmayan özellik sayfası iptal edin ve düğmeleri uygulamak Tamam yok.) Özellik sayfasını, diğer denetimler ekleyebilirsiniz. Örneğin, kullanıcının geçerli ayarlarının dış nesneye uygulanan gibi görünür göstermek için özellik sayfası alanı sağındaki bir önizleme penceresi ekleyebilirsiniz.  

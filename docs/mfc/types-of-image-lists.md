@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33385891"
 ---
 # <a name="types-of-image-lists"></a>Görüntü Listesi Türleri
 Görüntü listeleri iki tür vardır ([Cımagelist](../mfc/reference/cimagelist-class.md)): nonmasked ve maskelenmiş. "Nonmasked resim listesi" bir veya daha fazla görüntü içeren bir renk bit eşlem oluşur. "Maskelenmiş resim listesi" eşit boyutu iki bit eşlemler oluşur. Görüntüleri içeren bir renk bit eşlem ilk ve ikinci bir dizi maskelerini içeren tek renkli bir bit eşlem ise — her görüntüde ilk bit eşlem için bir tane.  

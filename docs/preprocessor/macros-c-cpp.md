@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33850189"
 ---
 # <a name="macros-cc"></a>Makrolar (C/C++)
 Ön işleme genişletir önişlemci yönergeleri değil tüm satırlarda makroları (olmayan satırlar bir **#** ilk boşluk olmayan karakter olarak) ve bir parçası olarak atlandı olmayan bazı yönergeleri bölümlerinde bir Koşullu derleme. "Koşullu derleme" yönergeleri, sabit bir ifade test ederek, bir kaynak dosyanın parçalarını derlenmesini gizlemek izin vermek veya hangi metin blokları belirlemek için tanımlayıcı geçirilir derleyici ve hangi metin blokları sırasında kaynak dosyadan kaldırılır ön işleme.  

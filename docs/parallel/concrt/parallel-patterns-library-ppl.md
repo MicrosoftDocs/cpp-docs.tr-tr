@@ -19,6 +19,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33691547"
 ---
 # <a name="parallel-patterns-library-ppl"></a>Paralel Desen Kitaplığı (PPL)
 Paralel Desen kitaplığı (PPL), ölçeklenebilirlik ve kolaylığı eşzamanlı uygulamaları geliştirmek için kullanım yükseltir kesinlik temelli bir programlama modeli sağlar. PPL'de zamanlama ve kaynak yönetimi bileşenlerine eşzamanlılık çalışma zamanı oluşturur. Uygulama kodunuz ve temel iş parçacığı mekanizması arasında Özet düzeyine genel, tür kullanımı uyumlu algoritmaları ve hareket kapsayıcıları verileri paralel sağlayarak başlatır. PPL'de ayrıca paylaşılan durum alternatifleri sağlayarak ölçeklendirme uygulamaları geliştirmenize olanak tanır.  

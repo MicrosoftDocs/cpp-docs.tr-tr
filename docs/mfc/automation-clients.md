@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342497"
 ---
 # <a name="automation-clients"></a>Otomasyon İstemcileri
 Otomasyon nesneleri başka bir uygulamaya uygulanan işlemek için ya da bunlar işlenebilir nesnelerini ortaya çıkarmak için uygulamanız için mümkün kılar. Bir otomasyon istemci, başka bir uygulamaya ait gösterilen nesneleri işleyebileceğiniz bir uygulamadır. Nesneleri gösteren uygulama Otomasyon sunucusu adı verilir. İstemci, bu nesnelerin özelliklerini ve işlevlerini erişerek sunucu uygulamasının nesneleri yönetir.  

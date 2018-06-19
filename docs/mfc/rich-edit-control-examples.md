@@ -17,6 +17,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33379287"
 ---
 # <a name="rich-edit-control-examples"></a>Zengin Düzenleme Denetimine Örnekler
 MFC OLE örnek [WORDPAD](../visual-cpp-samples.md) kullanan `CRichEditView`, `CRichEditDoc`, ve `CRichEditCntrItem` sınıfları. Uzantıya göre kullandığı [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md). Bu üç sınıfları hızlı bir açıklaması için bkz [zengin düzenleme denetimleri ilgili sınıflar](../mfc/classes-related-to-rich-edit-controls.md).  

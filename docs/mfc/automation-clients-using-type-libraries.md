@@ -29,6 +29,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342595"
 ---
 # <a name="automation-clients-using-type-libraries"></a>Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma
 Otomasyon istemcileri istemcileridir sunucuları nesneleri yönetmek için sunucu nesneleri özellikleri ve yöntemleri hakkında bilgi olması gerekir. Özellikler veri türlerine sahip; yöntemleri genellikle dönüş değerleri ve parametreleri kabul eder. İstemci, sunucu nesnesi türü için statik olarak bağlamak için tüm bunların veri türleri hakkında bilgi gerektirir.  

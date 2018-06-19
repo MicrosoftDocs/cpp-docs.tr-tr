@@ -19,6 +19,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33384354"
 ---
 # <a name="user-defined-tools"></a>Kullanıcı Tanımlı Araçlar
 MFC kullanıcı tanımlı Araçlar destekler. Kullanıcı tanımlı bir aracı bir dış, kullanıcı tarafından belirtilen programı yürüten özel bir komuttur. Özelleştirme işlemi, kullanıcı tanımlı Araçlar yönetmek için kullanabilirsiniz. Ancak, uygulama nesnesi türetilmedi varsa, bu işlem kullanamazsınız [CWinAppEx sınıfı](../mfc/reference/cwinappex-class.md). Özelleştirme hakkında daha fazla bilgi için bkz: [MFC için özelleştirme](../mfc/customization-for-mfc.md).  

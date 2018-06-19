@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33301014"
 ---
 # <a name="linker-tools-warning-lnk4221"></a>Bağlayıcı Araçları Uyarısı LNK4221
 Bu kitaplığı kullanan herhangi bir bağlantı işlem tarafından kullanılmayacak şekilde bu nesne dosyasını önceden tanımlı hiçbir ortak simgeleri tanımlamıyor  

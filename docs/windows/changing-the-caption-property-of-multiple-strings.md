@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33860287"
 ---
 # <a name="changing-the-caption-property-of-multiple-strings"></a>Birden Çok Dizenin Resim Yazısı Özelliğini Değiştirme
 Aşağıdaki yordamı birden çok dizenin resim yazısı özelliğinin nasıl değiştirileceğini gösterir.  

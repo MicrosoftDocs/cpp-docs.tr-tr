@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33347113"
 ---
 # <a name="mfc-activex-controls-properties"></a>MFC ActiveX Denetimleri: Özellikler
 ActiveX denetimi denetim kapsayıcısı ile iletişim kurmak için olay tetikler. Kapsayıcı, buna karşılık, yöntemleri ve özellikleri denetimi ile iletişim kurmak için kullanır. Yöntemleri ve özellikleri sırasıyla üye işlevleri ve C++ sınıfının üye değişkenleri için kullanım ve amacı, benzerdir. Herhangi bir kapsayıcıya sunulan veri üyeleri ActiveX denetiminin özelliklerdir. Özellikler, Otomasyon istemcileri ve ActiveX denetimi kapsayıcıları gibi ActiveX denetimlerini içeren uygulamalar için arabirim sağlar.  

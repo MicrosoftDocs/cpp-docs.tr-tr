@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687588"
 ---
 # <a name="b-stubs-for-run-time-library-functions"></a>B. Çalışma Zamanı Kitaplığı işlevleri için yer tutucular
 Bu bölümde yer tutucular OpenMP C ve C++ API tanımlanan çalışma zamanı kitaplığı işlevleri sağlar. Saplamalar taşınabilirlik OpenMP C ve C++ API desteği olmayan platformlara etkinleştirmek için sağlanmıştır. Bu platformlarda OpenMP programlar bu saplama işlevleri içeren bir kitaplıkla bağlanması gerekir. Saplama işlevleri OpenMP programında yönergeleri göz ardı edilir varsayalım. Bu nedenle, seri semantiği taklit.  

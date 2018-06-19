@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33345719"
 ---
 # <a name="creating-stack-and-queue-collections"></a>Yığın ve Kuyruk Koleksiyonları Oluşturma
 Bu makalede gibi diğer veri yapıları oluşturma açıklanmaktadır [yığınları](#_core_stacks) ve [sıraları](#_core_queues), MFC'den sınıfları listele. Türetilmiş sınıfları örneklerde `CList`, ancak kullanabilirsiniz `CList` doğrudan sürece işlevsellik eklemeniz gerekir.  

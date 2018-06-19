@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33687666"
 ---
 # <a name="how-to-manage-a-scheduler-instance"></a>Nasıl yapılır: Zamanlayıcı Örneğini Yönetme
 Zamanlayıcı örnekleri özel zamanlama ilkeleri çeşitli iş yükleri ile ilişkilendirmenizi sağlar. Bu konu, oluşturma ve Zamanlayıcı örneğini yönetme gösteren iki temel örnekleri içerir.  

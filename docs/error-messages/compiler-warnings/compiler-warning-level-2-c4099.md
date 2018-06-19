@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33309474"
 ---
 # <a name="compiler-warning-level-2-c4099"></a>Derleyici Uyarısı (düzey 2) C4099
 'tanımlayıcısı': 'şimdi 'objecttype2' kullanarak görülen objecttype1' kullanarak ilk kez görülen türü adı  

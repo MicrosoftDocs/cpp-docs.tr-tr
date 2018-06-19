@@ -17,6 +17,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33298333"
 ---
 # <a name="compiler-warning-level-4-c4437"></a>Derleyici Uyarısı (düzey 4) C4437
 Sanal Taban 'class1' den dynamic_cast 'class2' için /vd2 ile bazı bağlamlarda derleme başarısız veya #pragma vtordisp(2) ile ' class2' yürürlükte tanımlayın  

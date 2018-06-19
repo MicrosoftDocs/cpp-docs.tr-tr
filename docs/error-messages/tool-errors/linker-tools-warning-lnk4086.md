@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33301167"
 ---
 # <a name="linker-tools-warning-lnk4086"></a>Bağlayıcı Araçları Uyarısı LNK4086
 EntryPoint 'Function 'işlevine bağımsız değişken 'numara' bayt ile __stdcall değil; Görüntü çalışmayabilir  

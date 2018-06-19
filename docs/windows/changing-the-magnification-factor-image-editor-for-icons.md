@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33857005"
 ---
 # <a name="changing-the-magnification-factor-image-editor-for-icons"></a>Büyütme Katsayısını Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi, varsayılan olarak, gerçek boyut ve görünüm 6 kereye gerçek boyutta sağ bölmede, soldaki bölmede görünüm görüntüler. (Çalışma alanının alttaki durum çubuğunda görülen) büyütme katsayısını görüntünün gerçek boyutunu görüntülenen boyut arasındaki orandır. Varsayılan faktörü 6 ve aralık 1'den 10'a.  

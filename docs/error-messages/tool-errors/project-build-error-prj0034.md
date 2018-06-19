@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33319084"
 ---
 # <a name="project-build-error-prj0034"></a>Proje Derleme Hatası PRJ0034
 Proje düzeyi özel 'Ek bağımlılıklar' özelliği, 'out 'macro_expansion' sonucunu veren yer alan adım makrosu' oluşturun.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382966"
 ---
 # <a name="word-breaks-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Sözcük Sonları
 Bir zengin düzenleme denetiminden ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) "word sonu yordamı" adlı bir işlev çağrılarını sözcükler arasındaki kesmeler bulmak ve burada satırları bölünebilir belirlemek için. Denetimi, sözcük kaydırma işlemleri yaparken ve CTRL + sol ve CTRL + sağ tuş bileşimlerini işlerken bu bilgileri kullanır. Bir uygulama, sözcük ayırma bilgilerini almak ve hangi belirli bir karakter satır belirlemek için varsayılan sözcük ayırma yordamı değiştirmek için bir zengin düzenleme denetimine iletileri döner gönderebilirsiniz.  

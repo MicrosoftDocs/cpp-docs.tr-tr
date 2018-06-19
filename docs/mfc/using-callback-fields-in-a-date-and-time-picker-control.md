@@ -28,6 +28,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33383792"
 ---
 # <a name="using-callback-fields-in-a-date-and-time-picker-control"></a>Bir Tarih ve Saat Seçici Denetiminde Geri Çağrı Alanlarını Kullanma
 Tarih ve Saat Seçici alanlarını tanımlayan standart biçimi karakterler ek olarak, özel bir biçim dizesi belirli bölümlerini geri arama alanları belirterek, çıktı özelleştirebilirsiniz. Bir geri çağırma alanı bildirmek için bir veya daha fazla "X" karakter (ASCII kodu 88) herhangi bir yere biçim dizesi gövdesinde içerir. Örneğin, aşağıdaki dizeyi "' Bugün: 'yy' / 'MM' / 'dd' (gün 'X')'" ay, tarih ve yılın günü tarafından son ardından yıl geçerli değerini görüntülemek tarih ve Saat Seçici denetimini neden olur.  

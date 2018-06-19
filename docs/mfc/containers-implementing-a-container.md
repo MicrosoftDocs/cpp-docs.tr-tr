@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33342836"
 ---
 # <a name="containers-implementing-a-container"></a>Kapsayıcılar: Bir Kapsayıcı Uygulama
 Bu makalede, bir kapsayıcı uygulama yordamı özetler ve açıklamalarının kapsayıcıları uygulama hakkında ayrıntılı sağlayan diğer makalelere işaret eder. Ayrıca, uygulamak istediğiniz isteğe bağlı bazı OLE özellikleri ve bu özellikler açıklayan makaleleri listeler.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689265"
 ---
 # <a name="how-to-use-oversubscription-to-offset-latency"></a>Nasıl yapılır: Gecikmeyi Dengelemek için Aşırı Aboneliği Kullanma
 Aşırı abonelik gecikme yüksek miktarda olan görevler içeren bazı uygulamaları genel verimliliğini artırabilir. Bu konuda, bir ağ bağlantısından veri okuyarak neden gecikmeyi dengelemek için aşırı abonelik kullanma gösterilmektedir.  

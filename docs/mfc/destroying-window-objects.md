@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33343382"
 ---
 # <a name="destroying-window-objects"></a>Pencere Nesnelerini Yok Etme
 Bakım penceresiyle kullanıcı tamamlandığında C++ pencere nesnesi yok etmek için kendi alt windows ile alınması gerekir. Bu nesneler yok edilmez, uygulamanız kendi bellek kurtarma değil. Neyse ki, çerçeve pencere yok etme ve bunun yanı sıra oluşturma çerçeve pencereleri, görünümleri ve iletişim kutuları için yönetir. Ek windows oluşturursanız, yok etme için sorumludur.  

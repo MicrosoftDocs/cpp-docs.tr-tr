@@ -33,6 +33,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33693786"
 ---
 # <a name="transformer-class"></a>transformer Sınıfı
 A `transformer` ileti bloğu bir tek-hedef, çok kaynaklı, sıralı `propagator_block` bir türden iletileri kabul edebilir ve farklı türde bir ileti sınırsız bir sayısı depolayabilen yeteneğine sahiptir.  

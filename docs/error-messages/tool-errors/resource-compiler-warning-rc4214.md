@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33319045"
 ---
 # <a name="resource-compiler-warning-rc4214"></a>Kaynak Derleyicisi Uyarısı RC4214
 Kod sayfası geçerli değil: yoksayıldı  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33334892"
 ---
 # <a name="active-documents-on-the-internet"></a>Internet'te Etkin Belgeler
 Etkin belgeler geleneksel katıştırılmış nesneler için uzantı sağlar. Etkin belgeler sayfalı olabilir ve tüm istemci alanında görüntülenir. Bunlar geleneksel menü anlaşma yapın ve yerinde yanı sıra sunucu uygulaması açık bir pencerede düzenlenebilir. Taranmış bir kenarlığı küçük bir dikdörtgen olarak görüntülemek yerine, etkin tam çerçeve ve her zaman yerinde etkin belgelerdir.  

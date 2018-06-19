@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33333137"
 ---
 # <a name="activex-control-containers-connecting-an-activex-control-to-a-member-variable"></a>ActiveX Denetim Kapsayıcıları: Bir Üye Değişkenine ActiveX Denetimi Bağlama
 Kendi denetim kapsayıcısı uygulamasına içinde bir ActiveX denetimi erişmek için kolay denetimi içerecek iletişim kutusu sınıfı ile bir üye değişkenine ActiveX denetimi ilişkilendirilecek yoludur.  

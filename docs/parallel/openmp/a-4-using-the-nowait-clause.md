@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33689811"
 ---
 # <a name="a4---using-the-nowait-clause"></a>A.4   nowait Yan Tümcesini Kullanma
 Paralel bir bölge içinde birden çok bağımsız döngüler varsa, kullanabileceğiniz `nowait` yan tümcesi ([bölüm 2.4.1](../../parallel/openmp/2-4-1-for-construct.md) sayfasında 11) sonunda zımni engel önlemek için `for` şekilde yönergesi:  

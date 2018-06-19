@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33690549"
 ---
 # <a name="a6---using-the-lastprivate-clause"></a>A.6   lastprivate Yan Tümcesini Kullanma
 Bazen doğru yürütme son yineleme döngüsü bir değişkene atar değere bağlıdır. Programlara tür değişkenlerinin bağımsız değişken olarak listelenmelidir bir `lastprivate` yan tümcesi ([bölüm 2.7.2.3](../../parallel/openmp/2-7-2-3-lastprivate.md) sayfasında 27) böylece değişkenlerin değerleri zaman döngü sırayla yürütülen ile aynı olur.  

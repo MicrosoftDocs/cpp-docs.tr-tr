@@ -27,6 +27,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33856423"
 ---
 # <a name="accelerator-editor"></a>Hızlandırıcı Düzenleyicisi
 Hızlandırıcı tablosunu hızlandırma tuşları (kısayol tuşları olarak da bilinir) listesini içeren bir Windows kaynağı ve bunlarla ilişkili komut tanımlayıcıları ' dir. Bir programın birden fazla Hızlandırıcı tablosu sağlayabilirsiniz.  

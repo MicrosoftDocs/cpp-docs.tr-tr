@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33300000"
 ---
 # <a name="c-runtime-error-r6033"></a>C çalışma zamanı hatası R6033 görülmesine neden olur
 Yerel kod başlatma sırasında bu derlemeye MSIL koddan kullanma girişimi. Bu, uygulamanızın bir hata gösterir. Büyük olasılıkla bir MSIL derlenmiş çağırma sonucu olan (/ clr) yerel bir oluşturucu veya DllMain işlevi.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33858763"
 ---
 # <a name="adding-or-deleting-a-string"></a>Dize Ekleme veya Silme
 Dize Düzenleyicisi'ni kullanarak dize tablosuna yeni giriş kolayca ekleyebilirsiniz. Yeni dizeler tablonun sonuna yerleştirilir ve bir sonraki kullanılabilir tanımlayıcıyı verilir. Sonra kimlik, değer veya resim yazısı özelliklerinde düzenleyebilirsiniz [Özellikler penceresini](/visualstudio/ide/reference/properties-window) gerektiğinde.  

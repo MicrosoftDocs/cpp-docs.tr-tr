@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33318282"
 ---
 # <a name="project-build-error-prj0002"></a>Proje Derleme Hatası PRJ0002
 hata sonuç 'komut satırından' döndürdü.  
