@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32372815"
 ---
 # <a name="order-of-cl-options"></a>CL Seçenekleri Sırası
 Seçenekler CL komut satırında son gerçekleşmelidir/Link seçeneği dışında herhangi bir yerde görünür. Belirtilen seçeneklerle derleyici başlar [CL ortam değişkeni](../../build/reference/cl-environment-variables.md) ve ardından komut satırını soldan sağa okur — bunları bulduğu sırayla komut dosyaları işleme. Her seçenek komut satırında tüm dosyalar için geçerlidir. CL çakışan seçenekleri karşılaşırsa en sağdaki seçeneğini kullanır.  

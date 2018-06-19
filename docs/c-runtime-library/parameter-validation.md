@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34450257"
 ---
 # <a name="parameter-validation"></a>Parametre Doğrulama
 Gelişmiş Güvenlik CRT işlevlerinin çoğunu ve önceden var olan işlevlerin çoğunu kendi parametreleri doğrulayın. Bu işaretçileri denetimi içerebilir **NULL**tamsayılar geçerli bir aralık kalan denetimi veya numaralandırma değerlerinin geçerli olduğundan emin denetleniyor. Geçersiz bir parametre bulunduğunda, geçersiz parametre işleyicisi yürütülür.  

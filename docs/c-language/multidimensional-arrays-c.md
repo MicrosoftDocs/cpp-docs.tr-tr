@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387970"
 ---
 # <a name="multidimensional-arrays-c"></a>Çok Boyutlu Diziler (C)
 Bir alt simge ifadesinde de aşağıdaki gibi birden fazla alt simge olabilir:  

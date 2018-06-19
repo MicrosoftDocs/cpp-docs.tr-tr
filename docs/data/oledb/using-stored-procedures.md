@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33112244"
 ---
 # <a name="using-stored-procedures"></a>Saklı Yordamları Kullanma
 Saklı yordam, veritabanında depolanan yürütülebilir bir nesnedir. Saklı yordam çağırma SQL komutunu çağırmaya benzerdir. (Yerine, çalıştırmak veya istemci uygulaması deyiminde hazırlama) veri kaynağında depolanan yordamları kullanarak, daha yüksek performans, azaltılmış ağ yükünü ve geliştirilmiş tutarlılık ve doğruluk dahil olmak üzere çeşitli avantajları sağlayabilir.  

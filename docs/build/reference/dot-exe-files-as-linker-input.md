@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32372409"
 ---
 # <a name="exe-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Exe Dosyaları
 [MS-DOS saplama dosyası adı](../../build/reference/stub-ms-dos-stub-file-name.md) (/ SAPLAMA) seçeneği MS-DOS ile çalışan bir .exe dosyası adını belirtir. BAĞLANTI geçerli bir MS-DOS program olduğundan emin olmak için belirtilen dosya inceler.  

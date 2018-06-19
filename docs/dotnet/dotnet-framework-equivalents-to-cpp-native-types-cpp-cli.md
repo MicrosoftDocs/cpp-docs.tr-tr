@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33110944"
 ---
 # <a name="net-framework-equivalents-to-c-native-types-ccli"></a>C++ Yerel Türlerinin .NET Framework Eşdeğerleri (C++/CLI)
 Aşağıdaki tabloda, diğer adlar önceden tanımlanmış türlerin yerleşik Visual C++ türleri için anahtar sözcükleri gösterilmektedir, **sistem** ad alanı.  

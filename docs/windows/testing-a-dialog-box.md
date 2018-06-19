@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33889552"
 ---
 # <a name="testing-a-dialog-box"></a>İletişim Kutusunu Test Etme
 Bir iletişim kutusu tasarlarken benzetimini gerçekleştirmek ve programınızı derleme olmadan çalışma zamanı davranışını sınama. Bu modda, şunları yapabilirsiniz:  

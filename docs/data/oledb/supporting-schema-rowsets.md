@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33111763"
 ---
 # <a name="supporting-schema-rowsets"></a>Şema Satır Kümelerini Destekleme
 Şema satır kümeleri kendi yapılarını veya şema bilmeden bir veri deposu hakkında bilgi edinmek tüketicilere izin verir. Örneğin, bir veri deposu olurdu şekilde okuma tarafından şemanın bilgi sağlamak için hiçbir şekilde bir kullanıcı tarafından tanımlanan hiyerarşide düzenlenmiş tablolar olabilir. (Başka bir örnek olarak, Visual C++ sihirbazları tüketici erişimcileri oluşturmak için şema satır kümeleri kullandığını unutmayın.) Bunu yapmak izin vermek üzere üzerinde yöntemlerini sağlayıcının oturum nesnesi gösterir [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) arabirimi. Visual C++ uygulamalarında kullandığınız [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) uygulamak için sınıf **IDBSchemaRowset**.  

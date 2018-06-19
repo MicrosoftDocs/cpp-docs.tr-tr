@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33131361"
 ---
 # <a name="how-to-call-properties-and-methods-of-the-windows-forms-control"></a>Nasıl yapılır: Windows Forms Denetiminin Çağrı Özellikleri ve Yöntemleri
 Çünkü [CWinFormsView::GetControl](../mfc/reference/cwinformsview-class.md#getcontrol) gösteren bir işaretçi döndürür <xref:System.Windows.Forms.Control?displayProperty=fullName>ve işaretçisi değil `WindowsControlLibrary1::UserControl1`, kullanıcı denetimi türü üyesi eklemek ve bunu başlatmak için önerilir [IView::OnInitialUpdate ](../mfc/reference/iview-interface.md#oninitialupdate). Kullanarak yöntemleri ve özellikleri çağırabilirsiniz artık `m_ViewControl`.  

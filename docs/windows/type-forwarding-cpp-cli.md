@@ -20,6 +20,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891100"
 ---
 # <a name="type-forwarding-ccli"></a>Tür İletme (C++/CLI)
 *Tür iletme* derleme A. kullanan istemcilerin yeniden derleyin gerekli değildir sağlayacak şekilde, bir tür bir derlemeye (a derlemesi) başka bir derlemeye (derleme B) taşımanızı sağlar  

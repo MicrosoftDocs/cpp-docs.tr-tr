@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32369363"
 ---
 # <a name="parameter-passing"></a>Parametre Geçirme
 Yazmaçları ilk dört tamsayı bağımsız değişken geçirildi. Tamsayı değerleri (sırayla soldan sağa) RCX, RDX, R8 ve R9 geçirilir. Bağımsız değişkenler beş ve daha yüksek yığında geçirilir. Yazmaçları sağa hizalı tüm bağımsız değişkenler. Aranan kaydının üst BITS yoksayabilirsiniz şekilde yapılır olması ve yalnızca gerekli kayıt bölümü erişebilirsiniz.  

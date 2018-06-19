@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130041"
 ---
 # <a name="how-to-draw-shapes-with-the-net-framework"></a>Nasıl yapılır: .NET Framework ile Şekil Çizme
 Aşağıdaki kod örneğinde <xref:System.Drawing.Graphics> değiştirmek için sınıf <xref:System.Windows.Forms.Form.OnPaint%2A> gösteren bir işaretçi almak için olay işleyicisini <xref:System.Drawing.Graphics> ana form için nesne. Bu işaretçinin ardından form arka plan rengini ayarlama ve bir satır kullanarak ve bir yay çizmek için kullanılan <xref:System.Drawing.Graphics.DrawLine%2A?displayProperty=fullName> ve <xref:System.Drawing.Graphics.DrawArc%2A> yöntemleri.  

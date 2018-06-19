@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130870"
 ---
 # <a name="how-to-use-regular-expressions-to-rearrange-data-ccli"></a>Nasıl yapılır: Veriyi Yeniden Düzenlemek İçin Normal İfadeleri Kullanma (C++/CLI)
 Aşağıdaki kod örneği, .NET Framework normal ifade destek yeniden düzenleyin veya verileri yeniden biçimlendirmek için nasıl kullanılabileceğini gösterir. Aşağıdaki kod örneğinde <xref:System.Text.RegularExpressions.Regex> ve <xref:System.Text.RegularExpressions.Match> adları ve soyadları çıkartmak ve bu adı öğeleri ters sırada görüntülemek için sınıflar.  

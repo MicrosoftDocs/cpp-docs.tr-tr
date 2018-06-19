@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32377501"
 ---
 # <a name="utf-8-set-source-and-executable-character-sets-to-utf-8"></a>/UTF-8 (kaynağı Ayarla ve yürütülebilir karakter kümelerini UTF-8)
 Kaynak karakter kümesi hem UTF-8 olarak yürütme karakter kümesi belirtir.  

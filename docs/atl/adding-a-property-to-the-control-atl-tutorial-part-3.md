@@ -17,6 +17,7 @@ ms.sourcegitcommit: 9b442b44ee912822d06cabec826aac4a8d82ec75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34472092"
 ---
 # <a name="adding-a-property-to-the-control-atl-tutorial-part-3"></a>Denetime Özellik Ekleme (ATL Eğitmeni, Bölüm 3)
 `IPolyCtl` Denetimin özel yöntemleri ve özellikleri içeren arabirimi, ve bir özellik ekleyeceksiniz.  

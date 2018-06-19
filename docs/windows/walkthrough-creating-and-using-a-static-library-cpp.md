@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891587"
 ---
 # <a name="walkthrough-creating-and-using-a-static-library-c"></a>İzlenecek yol: Statik Kitaplık Oluşturma ve Kullanma (C++)
 Bu adım adım, C++ uygulamaları ile kullanmak için bir statik kitaplık (.lib dosyası) oluşturulacağını gösterir. Statik bir kitaplık kullanılarak kodunu yeniden için harika bir yoludur. Aynı yordamlar işlevselliği gerektiren her uygulama, yeniden uygulamak, yerine bunları bir kez statik kitaplığa yazar ve uygulamalardan başvuru. Statik bir kitaplıktan bağlı kodunu uygulamanızı bir parçası olur — kodu kullanmak için başka bir dosyaya yüklemeniz gerekmez.  

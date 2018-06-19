@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371947"
 ---
 # <a name="lib-reference"></a>LIB Başvurusu
 Microsoft Kitaplığı Yöneticisi'ni (LIB.exe) oluşturur ve ortak nesne dosyası biçimi (COFF) nesne dosyaları içeren bir kitaplık yönetir. LIB dışarı aktarma dosyaları oluşturmak ve referans verilen tanımlarını kitaplıkları içeri aktarma için de kullanılabilir.  

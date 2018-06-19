@@ -2,12 +2,13 @@
 layout: HubPage
 ms.topic: hub-page
 title: Visual C++ belgeleri | Microsoft Docs
-description: "C++ uygulamaları, hizmetleri ve platformlar ve aygıtlar için Araçlar geliştirmek için nasıl kullanılacağını öğrenin."
+description: C++ uygulamaları, hizmetleri ve platformlar ve aygıtlar için Araçlar geliştirmek için nasıl kullanılacağını öğrenin.
 ms.openlocfilehash: 7a0b3bb00f43157b6f1d3a7a64999beb59f9a06f
 ms.sourcegitcommit: c770a343def04ae77522708387c3f7c470e49969
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29794202"
 ---
 <div id="main" class="v2">
     <div class="container">

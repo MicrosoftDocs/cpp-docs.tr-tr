@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32359788"
 ---
 # <a name="atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı
 Bu sihirbaz [özellik sayfası ATL projeye ekler](../../atl/reference/adding-an-atl-property-page.md) veya MFC projesinde ATL desteği. ATL özellik sayfası özelliklerini ayarlamak için bir kullanıcı arabirimi sağlar (veya yöntemleri çağırma) bir veya daha fazla COM Nesne.  

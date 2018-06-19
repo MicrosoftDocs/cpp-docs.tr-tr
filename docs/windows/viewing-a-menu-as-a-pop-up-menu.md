@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891039"
 ---
 # <a name="viewing-a-menu-as-a-pop-up-menu"></a>Menüyü Açılır Menü Olarak Görüntüleme
 Normalde, Menü Düzenleyici'de çalışırken menü kaynağı bir menü çubuğu görüntülenir. Ancak, program çalışırken, uygulamanın menü çubuğu'na eklenmesini menü kaynaklarınız olabilir.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33127909"
 ---
 # <a name="how-to-retrieve-text-from-the-clipboard-ccli"></a>Nasıl yapılır: Panodan Metin Alma (C++/CLI)
 Aşağıdaki kod örneğinde <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> bir işaretçi döndürmek için üye işlevini <xref:System.Windows.Forms.IDataObject> arabirimi. Bu arabirim için veri biçimi sorgulanan ve gerçek verileri almak için kullanılır.  

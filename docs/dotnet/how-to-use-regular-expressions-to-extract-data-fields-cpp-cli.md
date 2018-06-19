@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33129674"
 ---
 # <a name="how-to-use-regular-expressions-to-extract-data-fields-ccli"></a>Nasıl yapılır: Veri Alanlarını Ayıklamak için Normal İfadeleri Kullanma (C++/CLI)
 Aşağıdaki kod örneğinde biçimlendirilmiş bir dizeden veri ayıklamak için normal ifadeler kullanımını göstermektedir. Aşağıdaki kod örneğinde <xref:System.Text.RegularExpressions.Regex> sınıfı bir e-posta adresine karşılık gelen bir desen belirtin. Bu desen kullanıcı ve her bir e-posta adresinin ana bilgisayar adı bölümünü almak için kullanılan alan tanımlayıcıları içerir. <xref:System.Text.RegularExpressions.Match> Sınıfı gerçek desen eşleştirme işlemi yapmak için kullanılır. Belirtilen e-posta adresi geçerli ise, kullanıcı adı ve ana bilgisayar adları ayıklanır ve görüntülenir.  

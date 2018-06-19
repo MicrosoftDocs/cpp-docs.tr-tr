@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367998"
 ---
 # <a name="how-to-add-a-custom-build-step-to-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme
 Özel derleme adımı bir yapı içinde kullanıcı tanımlı bir adımdır. Özel derleme adımı diğer gibi davranır *komut aracını* gibi standart derleme veya bağlantı aracı adım adım.  

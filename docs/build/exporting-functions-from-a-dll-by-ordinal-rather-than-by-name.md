@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367699"
 ---
 # <a name="exporting-functions-from-a-dll-by-ordinal-rather-than-by-name"></a>DLL'den İşlevleri Ad Yerine Sıraya Göre Dışarı Aktarma
 Ada göre verilecek en basit yolu, DLL'den dışarı aktarma işlevleri var. Bu kullandığınızda neler olduğunu **__declspec(dllexport)**, örneğin. Ancak, bunun yerine işlevleri sıralı olarak dışa aktarabilirsiniz. Bu teknikle .def dosyası yerine kullanmalısınız **__declspec(dllexport)**. Bir işlevin sıra sayısı değerini belirtmek için kendi sıra .def dosyası işlev adı ekleyin. Sıra numaraları belirtme hakkında daha fazla bilgi için bkz: [.def dosyaları kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-def-files.md).  

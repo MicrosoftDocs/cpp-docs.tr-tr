@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32373530"
 ---
 # <a name="tls"></a>/TLS
 Yürütülebilir bir dosya IMAGE_TLS_DIRECTORY yapısından görüntüler.  

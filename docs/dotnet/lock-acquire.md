@@ -26,6 +26,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33138975"
 ---
 # <a name="lockacquire"></a>lock::acquire
 İsteğe bağlı olarak sonsuza kadar belirtilen bir miktar süre ya da hiç için kilidi için bekleyen bir nesne üzerinde bir kilit alır.  

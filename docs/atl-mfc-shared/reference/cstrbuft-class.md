@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361364"
 ---
 # <a name="cstrbuft-class"></a>CStrBufT sınıfı
 Bu sınıf için otomatik kaynak temizleme sağlar `GetBuffer` ve `ReleaseBuffer` çağırır var olan `CStringT` nesnesi.  

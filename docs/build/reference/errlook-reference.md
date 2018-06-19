@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371362"
 ---
 # <a name="errlook-reference"></a>ERRLOOK Başvurusu
 ERRLOOK yardımcı programı, Araçlar menüsünden kullanılabilir **hata arama**, bir sistem hatası veya modülü hata iletisini temel girilen değer alır. Sürükleme ve Visual Studio hata ayıklayıcısında araya gelen bir onaltılık veya ondalık değer bırakma durumunda ERRLOOK hata iletisi metni otomatik olarak alır. **değeri** düzenleme denetimi. Ayrıca bir değer içine yazarak ya da girebilirsiniz **değeri** düzen denetimi veya göre panodan yapıştırarak ve tıklatarak **Ara**.  

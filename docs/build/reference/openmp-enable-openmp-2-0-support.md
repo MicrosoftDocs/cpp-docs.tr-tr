@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32378736"
 ---
 # <a name="openmp-enable-openmp-20-support"></a>/openmp (OpenMP 2.0 Desteğini Etkinleştir)
 İşlenecek derleyici neden `#pragma` [omp](../../preprocessor/omp.md).  

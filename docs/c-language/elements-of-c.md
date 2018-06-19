@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383088"
 ---
 # <a name="elements-of-c"></a>C Öğeleri
 Bu bölümde, C programını oluşturmak için kullanılan adlar, sayılar ve karakterler dahil olmak üzere C programlama dilinin öğeleri açıklanmaktadır. ANSI C sözdizimi, bu bileşen belirteçlerini etiketler.  

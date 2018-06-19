@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32373494"
 ---
 # <a name="how-bscmake-builds-a-bsc-file"></a>BSCMAKE .Bsc Dosyasını Nasıl Derler
 BSCMAKE oluşturur veya bunu en verimli şekilde .bsc dosyası oluşturur. Olası sorunları önlemek için yapılandırma işlemi anlamak önemlidir.  

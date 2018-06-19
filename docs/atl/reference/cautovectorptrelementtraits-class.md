@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357889"
 ---
 # <a name="cautovectorptrelementtraits-class"></a>CAutoVectorPtrElementTraits sınıfı
 Bu sınıf, yöntemleri, statik işlevler ve tür tanımları vektör yeni kullanarak akıllı işaretçiler koleksiyonları oluşturma ve delete işleçleri olduğu durumlarda faydalıdır sağlar.  

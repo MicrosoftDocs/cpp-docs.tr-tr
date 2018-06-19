@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32364027"
 ---
 # <a name="building-cc-side-by-side-assemblies"></a>C/C++ Yan Yana Derlemeleri Oluşturma
 A [yan yana derleme](http://msdn.microsoft.com/library/windows/desktop/ff951640) kaynakları koleksiyonudur — DLL'leri, windows sınıfı, COM sunucuları, tür kitaplıklarının veya arabirimleri grubu — çalışma zamanında kullanılacak bir uygulama için kullanılabilir. DLL'leri derlemelerde yeniden paketleme birincil avantajı, aynı anda birden fazla sürümünü derlemeleri uygulamalar tarafından kullanılabilir ve yüklü hizmet derlemeleri güncelleştirme sürüm durumunda mümkündür olmasıdır.  

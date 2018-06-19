@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33128299"
 ---
 # <a name="how-to-specify-an-out-parameter"></a>Nasıl yapılır: Bir out Parametresini Belirleme
 Bu örnek, bir işlev parametresi, out parametresi olduğunu belirtmek nasıl ve C# programından bu işlevi çağırmak nasıl gösterir.  

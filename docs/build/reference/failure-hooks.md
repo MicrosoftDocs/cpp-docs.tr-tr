@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371791"
 ---
 # <a name="failure-hooks"></a>Hata Kancaları
 Aynı şekilde hatası kanca etkin [bildirim kanca](../../build/reference/notification-hooks.md). Böylece işleme uygun değeri döndürmek için kanca rutin gereksinimlerini (bir HINSTANCE veya FARPROC) devam edebilir veya bir özel durum olduğunu göstermek için 0.  

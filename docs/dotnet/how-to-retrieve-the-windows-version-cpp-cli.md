@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33128273"
 ---
 # <a name="how-to-retrieve-the-windows-version-ccli"></a>Nasıl yapılır: Windows Sürümünü Alma (C++/CLI)
 Aşağıdaki kod örneği, geçerli işletim sistemi platformu ve sürüm bilgileri almak gösterilmiştir. Bu bilgiler depolanır <xref:System.Environment.OSVersion%2A?displayProperty=fullName> özelliği ve Windows sürümünü ayrıntılı koşullarla tanımlayan bir numaralandırma oluşur ve bir <xref:System.Environment.Version%2A> işletim sisteminin tam yapı içeren nesne.  

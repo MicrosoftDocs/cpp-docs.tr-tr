@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387856"
 ---
 # <a name="direction-flag"></a>Yön Bayrağı
 Yön bayrağı Intel 80 x 86 işlemciler için belirli bir CPU bayrak ' dir. MOVS, MOVSD, MOVSW ve diğerleri gibi REP (Yineleme) önekini tüm derleme yönergeleri için geçerlidir. Yön bayrağı temizlenirse ilgili yönergeler için sağlanan adresleri artırılır.  

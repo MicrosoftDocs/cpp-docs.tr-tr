@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371427"
 ---
 # <a name="cgthreads-compiler-threads"></a>/CGTHREADS (Derleyici İş Parçacıkları)
 Bağlama zamanı kodu oluşturma belirtildiğinde en iyi duruma getirme ve kod oluşturma için kullanılacak cl.exe iş parçacığı sayısını ayarlar.  

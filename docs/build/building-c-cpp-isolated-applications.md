@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32360155"
 ---
 # <a name="building-cc-isolated-applications"></a>C/C++ Yalıtılmış Uygulamaları Derleme
 Yalıtılmış bir uygulama, yalnızca yan yana derlemelerini bağlıdır ve bir bildirim kullanarak bağımlılıklarını bağlar. Windows üzerinde düzgün çalışması için tam yalıtılmış olması, uygulamanız için gerekli değildir; Uygulamanızı gelecekte hizmet gerekiyorsa, ancak, tam olarak yalıtılmış uygulamanızı yaparken yatırım tarafından zamandan tasarruf. Tamamen yalıtılmış uygulamanızı yapmadan avantajları hakkında daha fazla bilgi için bkz: [yalıtılmış uygulamalar](http://msdn.microsoft.com/library/aa375190).  

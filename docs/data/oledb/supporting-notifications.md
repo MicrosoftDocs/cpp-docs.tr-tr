@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33112101"
 ---
 # <a name="supporting-notifications"></a>Bildirimleri Destekleme
 ## <a name="implementing-connection-point-interfaces-on-the-provider-and-consumer"></a>Sağlayıcı ve tüketici bağlantı noktası arabirimler uygulama  

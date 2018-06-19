@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33111279"
 ---
 # <a name="using-ole-db-record-views"></a>OLE DB Kayıt Görünümlerini Kullanma
 Bir MFC uygulamasında OLE DB satır kümesi veri görüntülemek istiyorsanız, MFC sınıfını kullanmalısınız [COleDBRecordView](../../mfc/reference/coledbrecordview-class.md). Kayıt görünümü nesne oluşturulduğu `COleDBRecordView` MFC denetimleri veritabanı kayıtlarını görüntülemenizi sağlar. Kayıt görünümü oluşturulan bir OLE DB satır kümesi nesnesi doğrudan bağlı bir iletişim formu görünümdür `CRowset` Şablon sınıfı. Satır kümesi nesnesi için bir tanıtıcı edinmek basittir:  

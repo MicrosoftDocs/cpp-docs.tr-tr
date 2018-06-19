@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387394"
 ---
 # <a name="octal-and-hexadecimal-character-specifications"></a>Sekizlik ve Onaltılık Karakter Belirtimleri
 Sıra **\\*** ooo* ASCII herhangi bir karakter belirtebilirsiniz anlamına gelir karakter kümesi olarak üç basamaklı sekizli karakter kodu. Sekizli tamsayının sayısal değeri, istediğiniz karakter veya geniş karakter değerini belirtir.  

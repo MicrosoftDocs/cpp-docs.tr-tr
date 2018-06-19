@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32369376"
 ---
 # <a name="module-states-of-a-regular-mfc-dll-dynamically-linked-to-mfc"></a>Normal MFC DLL'nin Modül durumları dinamik olarak MFC'ye bağlı
 MFC DLL normal MFC DLL dinamik olarak bağlama yeteneği oldukça karmaşık bazı yapılandırmalara izin verir. Örneğin, normal bir MFC DLL ve kullandığı yürütülebilir hem de dinamik olarak MFC DLL ve tüm MFC uzantı DLL'leri bağlayabilirsiniz.  

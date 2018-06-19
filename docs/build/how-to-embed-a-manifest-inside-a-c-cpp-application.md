@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32369058"
 ---
 # <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>Nasıl Yapılır: C/C++ Uygulamasına Bildirim Katıştırma
 C/C++ uygulamasına (veya kitaplığa) bu çoğu senaryoda doğru çalışma zamanı davranışı güvence altına alır çünkü içinde son ikili katıştırılmış kendi bildirimi olması önerilir. Varsayılan olarak, [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] kaynak dosyalarından proje oluşturduğunda bildirimi katıştırmak çalışır; bkz [Visual Studio'da bildirim oluşturma](../build/manifest-generation-in-visual-studio.md) daha fazla bilgi için. Ancak uygulama nmake kullanarak oluşturulursa, bazı değişiklikler mevcut derleme görevleri dosyası gereklidir. Bu bölümde, otomatik olarak son ikili içinde bildirimi katıştırmak için varolan derleme görevleri dosyaları değiştirmek gösterilmiştir.  

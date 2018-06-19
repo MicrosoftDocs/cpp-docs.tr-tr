@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368934"
 ---
 # <a name="binding-imports"></a>İçeri Aktarılanları Bağlama
 Varsayılan bağlayıcı Gecikmeli yüklenen DLL için bağlanabilirse içeri aktarma adres tablosunu oluşturmak için davranıştır. DLL bağlıysa yardımcı işlevini ilişkili bilgi arama yerine kullanmayı dener **GetProcAddress** her başvurulan alır. Zaman damgası veya tercih edilen adres olanlar yüklenen DLL'nin eşleşmiyorsa, yardımcı işlevini ilişkili içeri aktarma adres tablosunu güncel değil ve onu mevcut değilse gibi devam edecek varsayar.  

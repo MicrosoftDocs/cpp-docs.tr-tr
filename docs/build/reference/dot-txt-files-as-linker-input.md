@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32369909"
 ---
 # <a name="txt-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Txt Dosyaları
 BAĞLANTI çeşitli metin dosyalarını ek giriş bekliyor. [Komut dosyası](../../build/reference/link-command-files.md) tanımlayıcısı (@) ve [taban adresi](../../build/reference/base-base-address.md) (/ Temel), [/def](../../build/reference/def-specify-module-definition-file.md), ve [/sipariş](../../build/reference/order-put-functions-in-order.md) seçeneklerini tüm metin dosyaları belirtin. Bu dosyalar, herhangi bir uzantı, yalnızca değil .txt olabilir.  

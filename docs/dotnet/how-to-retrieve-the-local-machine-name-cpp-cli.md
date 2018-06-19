@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33128647"
 ---
 # <a name="how-to-retrieve-the-local-machine-name-ccli"></a>Nasıl yapılır: Yerel Makine Adını Alma (C++/CLI)
 Aşağıdaki kod örneğinde yerel makine adını alma gösterir (gibi bilgisayar adını, bir ağ üzerinde görünür). Bunu alarak gerçekleştirmek <xref:System.Environment.MachineName%2A> tanımlanan dize <xref:System.Environment> ad alanı.  

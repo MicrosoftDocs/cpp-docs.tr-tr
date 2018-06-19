@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33128358"
 ---
 # <a name="how-to-modify-reference-class-in-a-native-function"></a>Nasıl yapılır: Yerel İşlevde Başvuru Sınıfını Değiştirme
 CLR dizisi olan bir başvuru sınıfını yerel bir işleve geçirebilir ve sınıfı PInvoke hizmetlerini kullanarak değiştirin.  

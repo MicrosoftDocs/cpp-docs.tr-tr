@@ -29,6 +29,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891824"
 ---
 # <a name="viewing-and-editing-resources-in-a-resource-editor"></a>Kaynakları, Kaynak Düzenleyicisinde Görüntüleme ve Düzenleme
 Her kaynak türü bu kaynak türü için belirli bir kaynak düzenleyicisine sahiptir. Yeniden, yeniden boyutlandırma, denetimleri ve özellik ekleme veya aksi halde ilişkili Düzenleyicisi'ni kullanarak bir kaynak yönlerini değiştirin. Bir kaynak olarak da düzenleyebilirsiniz [metin biçimi](../windows/how-to-open-a-resource-script-file-in-text-format.md) ve [ikili biçimi](../windows/opening-a-resource-for-binary-editing.md).  

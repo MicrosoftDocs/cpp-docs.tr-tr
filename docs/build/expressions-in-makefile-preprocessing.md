@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367274"
 ---
 # <a name="expressions-in-makefile-preprocessing"></a>Derleme Görevleri Dosyası Önişlemlerindeki İfadeler
 **! Eğer** veya **! ELSE IF** `constantexpression` tamsayı Sabitleri (içinde ondalık veya dil C gösterimi), dize sabitleri veya komutları oluşur. Grup ifadeleri için ayraç kullanın. C türü imzalı uzun tamsayı aritmetik ifadeler kullanın; sayı 32-bit ikiye aralığında - 2147483648 ile 2147483647 arasındaki şeklindedir.  

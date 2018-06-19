@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371908"
 ---
 # <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>Nasıl Yapılır: Hedef Framework ve Platform Araç Kümesini Değiştirme
 Visual C++ proje ayarları .NET Framework'ün farklı sürümlerini hedefleyen ve farklı platform toolsets kullanacak şekilde değiştirebilirsiniz. Varsayılan olarak, .NET Framework sürümünü ve projeyi oluşturmak için kullandığınız Visual Studio sürümüne karşılık gelen araç takımının sürüm proje sistemi kullanır. Hedef platform araç takımı, proje özelliklerini değiştirerek değiştirebilirsiniz. Hedef Framework projesi (.vcxproj) dosyasını değiştirerek değiştirebilirsiniz. Ayrı bir kod her derleme hedefi için temel sağlamak zorunda değildir.  

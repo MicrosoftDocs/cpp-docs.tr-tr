@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32372727"
 ---
 # <a name="choosing-the-format-of-netmodule-input-files"></a>.netmodule Giriş Dosyaları Biçimini Seçme
 MSIL .obj dosya (ile derlenmiş [/CLR](../../build/reference/clr-common-language-runtime-compilation.md)) .netmodule dosyası olarak da kullanılabilir.  .obj dosyaları meta verileri ve yerel simgeler içermelidir.  .netmodules yalnızca meta verileri içerir.  

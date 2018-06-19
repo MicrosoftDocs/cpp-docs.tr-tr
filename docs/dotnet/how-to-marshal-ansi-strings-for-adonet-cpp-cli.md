@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33137477"
 ---
 # <a name="how-to-marshal-ansi-strings-for-adonet-ccli"></a>Nasıl Yapılır: ADO.NET İçin ANSI Dizelerini Sıralama (C++/CLI)
 Yerel bir dize ekleneceği gösterilmektedir (`char *`) bir veritabanı ve nasıl hazırlanacağını bir <xref:System.String?displayProperty=fullName> bir veritabanından yerel bir dize.  

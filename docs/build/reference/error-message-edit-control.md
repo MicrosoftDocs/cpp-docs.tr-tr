@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32369620"
 ---
 # <a name="error-message-edit-control"></a>Hata İletisi Düzenleme Denetimi
 **Hata iletisi** kutusu sistem hata iletisi veya girilen değere göre modülü hata iletisi metni içerir.  

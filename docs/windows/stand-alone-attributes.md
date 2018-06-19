@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33890443"
 ---
 # <a name="stand-alone-attributes"></a>Tek Başına Öznitelikler
 Tek başına bir öznitelik C++ anahtar sözcüğü çalışmaz ancak bir kod satırı gibi daha fazla. Tek başına özniteliği deyimleri noktalı satırın sonundaki gerektirir.  

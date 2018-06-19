@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32362277"
 ---
 # <a name="invoking-scripts"></a>Komut dosyaları çağırma
 [Değiştirilebilir parametreler (kayıt şirketinizin önişlemci) kullanarak](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) değiştirme eşlemeleri açıklanır ve kayıt yöntemi değinmektedir **AddReplacement**. Sekiz diğer yöntemleri komut belirli kayıt şirketi var ve tüm aşağıdaki tabloda açıklanmıştır.  

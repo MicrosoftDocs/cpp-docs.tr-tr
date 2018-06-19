@@ -24,6 +24,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33892845"
 ---
 # <a name="window-panes-image-editor-for-icons"></a>Pencere Bölmeleri (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi penceresinde bir ayırıcı çubukla ayrılan iki bölme görüntü genellikle görüntüler. Bir görünümdür gerçek boyut ve diğer genişletilir (varsayılan büyütme faktörü 6'dır). Bu iki bölme görünümlerinde otomatik olarak güncelleştirilir: bir bölmesinde yaptığınız değişiklikler hemen gösterilen diğer. İki bölmeleri, tek tek piksel ayırt etmek ve kullanabilirsiniz, görüntü boyutu gerçek görünümünü iş etkisi aynı anda gözlemlemek görüntünüzün büyütülmüş bir görünüm üzerinde çalışmak kolaylaştırır.  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358133"
 ---
 # <a name="date-type"></a>Tarih türü
 **Tarih** türü, 8-bayt kayan noktalı sayı kullanılarak gerçekleştirilir. Gün, 30 Aralık 1899, gece saat sıfır olarak başlayarak tamsayı artışlarla temsil edilir. Saat değerleri sayının kesirli kısmını mutlak değeri olarak ifade edilir. Aşağıdaki tabloda çeşitli tarihleri ile birlikte gösterilmektedir kendi **tarih** türü sayısal eşdeğer:  

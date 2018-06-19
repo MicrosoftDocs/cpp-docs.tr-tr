@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33132027"
 ---
 # <a name="how-to-parse-strings-using-the-split-method-ccli"></a>Nasıl yapılır: Split Yöntemini Kullanarak Dizeleri Ayrıştırma (C++/CLI)
 Aşağıdaki kod örneğinde kullanımı gösterilir <xref:System.String.Split%2A?displayProperty=fullName> her sözcüğün çıkartmak yöntemi. Birden çok sözcük ayırıcı türü içeren bir dize oluşturulur ve çağrılarak ayrıştırılır <xref:System.String.Split%2A> ayırıcıların listesiyle. Ardından, her sözcüğün tümcedeki ayrı olarak görüntülenir.  

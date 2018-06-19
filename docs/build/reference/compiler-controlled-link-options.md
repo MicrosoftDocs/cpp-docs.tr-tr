@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32372002"
 ---
 # <a name="compiler-controlled-link-options"></a>Derleyici Denetimindeki LINK Seçenekleri
 /C seçeneği belirtmediğiniz sürece CL derleyici bağlantı otomatik olarak çağırır. CL komut satırı seçenekleri ve bağımsız değişkenleri ile bağlayıcı üzerinde bazı denetim sağlar. CL içinde bağlantılandırmayı etkileyen özellikler aşağıdaki tabloda özetlenmiştir.  

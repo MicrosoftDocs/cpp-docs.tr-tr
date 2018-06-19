@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387869"
 ---
 # <a name="function-calls"></a>işlev Çağrıları
 A *işlev çağrısı* denetim ve bağımsız değişkenler (varsa) bir işleve aktardığı ifade olan ve biçime sahiptir:  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368193"
 ---
 # <a name="multiple-targets"></a>Birden Çok Hedef
 NMAKE içindeki tek bir bağımlılığı birden çok hedef her ayrı açıklama bloğunda belirtildi olarak değerlendirir.  

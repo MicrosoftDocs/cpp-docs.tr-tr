@@ -25,6 +25,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891317"
 ---
 # <a name="toolbar-editor"></a>Araç Çubuğu Düzenleyicisi
 Araç çubuğu Düzenleyicisi araç çubuğu kaynak oluşturmak ve bit eşlemleri araç kaynakları Dönüştür sağlar. Araç çubuğu Düzenleyicisi araç çubuğu ve tamamlanmış bir uygulamada nasıl görüneceğine yakın benzer düğmeleri göstermek için bir grafik görüntüsünü kullanır.  

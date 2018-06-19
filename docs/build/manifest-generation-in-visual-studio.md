@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32370455"
 ---
 # <a name="manifest-generation-in-visual-studio"></a>Visual Studio'da Bildirim Oluşturma
 Bildirim dosyası oluşturma belirli bir projenin projede denetlenebilir **özellik sayfaları** iletişim. Üzerinde **yapılandırma özellikleri** sekmesini tıklatın, **bağlayıcı**, ardından **bildirim dosyası**, ardından **oluşturmak bildirim**. Varsayılan olarak, bir bildirim dosyası oluşturmak için yeni projeler proje özelliklerini ayarlanır. Bununla birlikte kullanarak bir proje için bildirim oluşturulmasını devre dışı bırakmak mümkündür **oluşturmak bildirim** projesinin özelliği. Bu özellik ayarlandığında **Evet**, bu proje için bildirim oluşturulur. Aksi takdirde bağlayıcı uygulama kodunun bağımlılıkları çözümlenirken derleme bilgilerini yoksayar ve bildirim oluşturmaz.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425705"
 ---
 # <a name="unions"></a>Birleşimler
 A `union` tüm üyeleri aynı bellek konumuna paylaşmak bir kullanıcı tanımlı tür. Başka bir deyişle, belirli bir zamanda birden fazla nesne üyeleri listesinden UNION içerebilir. Ayrıca, UNION sahip kaç üye olsun, her zaman yalnızca yeterli bellek büyük üye depolamak için kullandığını anlamına gelir.  

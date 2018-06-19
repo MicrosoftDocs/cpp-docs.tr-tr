@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367439"
 ---
 # <a name="environment-variable-macros"></a>Ortam Değişkeni Makroları
 NMAKE makrosu tanımları oturum başlamadan önce mevcut ortam değişkenleri için devralır. Bir değişken işletim sistemi ortamında ayarlarsanız, NMAKE makrosu kullanılabilir. Devralınan adları büyük harfe dönüştürülür. Devralma ön işleme önce gerçekleşir. Derleme görevleri dosyası aynı adla makroların geçersiz kılmak için ortam değişkenleri devralınan makroları neden /E seçeneğini kullanın.  

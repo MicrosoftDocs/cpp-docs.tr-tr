@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358091"
 ---
 # <a name="avoidance-of-heap-contention"></a>Yığın Çekişme kaçınma
 MFC ve ATL tarafından sağlanan varsayılan dize yöneticileri, genel bir öbek üzerinde basit sarmalayıcıları kullanıcılardır. Bu genel yığın tam olarak birden çok iş parçacığı ayırın ve aynı anda öbek bozulmasını olmadan bellekten bunu serbest anlamına iş parçacığı, ' dir. İş parçacığı güvenliğini sağlamaya yardımcı olmak için kendisine erişim serileştirmek yığın sahiptir. Bu genellikle bir kritik bölüm veya benzer kilitleme mekanizması olarak gerçekleştirilir. İki iş parçacığı öbek aynı anda erişmeye her bir iş parçacığı diğer iş parçacığı isteği tamamlanana kadar engellendi. Birçok uygulama için öbek 's kilitleme mekanizması performans etkisini önemsizdir ve bu durum nadiren oluşur. Ancak, birden çok iş parçacığından öbek sık sık eriştiği uygulamalar için öbek 's kilit çakışması ve uygulamanın tek iş parçacıklı (makinelerde bile birden çok CPU ile), daha yavaş çalışmasına neden olabilir.  

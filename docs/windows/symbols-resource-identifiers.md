@@ -26,6 +26,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891850"
 ---
 # <a name="symbols-resource-identifiers"></a>Semboller: Kaynak Tanımlayıcılar
 Bir simge olan iki bölümden oluşan bir kaynak tanımlayıcısı (ID): bir tamsayı değeri (sembol değeri) eşlenen bir metin dizesi (sembol adı). Örneğin:  

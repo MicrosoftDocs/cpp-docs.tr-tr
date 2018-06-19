@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32363719"
 ---
 # <a name="example-implementing-a-property-page"></a>Örnek: bir özellik sayfası uygulama
 Bu örnek özelliklerini görüntüler (ve değiştirmenize izin verir) özellik sayfası oluşturma gösterir [belge sınıfları](../mfc/document-classes.md) arabirimi.  

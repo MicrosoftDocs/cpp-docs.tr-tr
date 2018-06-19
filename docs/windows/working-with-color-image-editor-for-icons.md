@@ -28,6 +28,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891665"
 ---
 # <a name="working-with-color-image-editor-for-icons"></a>Renklerle Çalışma (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi özellikle işleyen ve renkleri özelleştirmek birçok özellik içerir. Ön plan veya arka plan rengini ayarlamak, sınırlanmış alanları renkle doldurma veya geçerli ön plan veya arka plan rengi olarak kullanılacak bir görüntü üzerinde bir renk seçin. Araçlarını kullanabileceğiniz [görüntü Düzenleyicisi araç](../windows/toolbar-image-editor-for-icons.md) renk paleti birlikte [renkler penceresi](../windows/colors-window-image-editor-for-icons.md) görüntüleri oluşturmak için.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33890876"
 ---
 # <a name="tracking-reference-operator-c-component-extensions"></a>İzleme Başvurusu İşleci (C++ Bileşen Uzantıları)
 A *izleme başvurusu* (`%`) normal bir C++ başvurusu gibi davranır (`&`) dışında bir nesne için izleme başvurusu atandığında, nesnenin başvuru sayısı artırılır.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33110470"
 ---
 # <a name="passing-ole-db-conformance-tests"></a>OLE DB Uygunluk Testlerini Geçme
 Sağlayıcıları daha tutarlı hale getirmek için OLE DB uygunluk testlerini bir dizi Veri Erişim SDK'sı sağlar. Testleri sağlayıcınız tüm yönlerini kontrol edin ve sağlayıcı beklendiği gibi ilişkin makul güvence verir. OLE DB uygunluk testlerini Microsoft Data Access SDK üzerinde bulabilirsiniz. Bu bölümde uygunluk testlerini geçmesi için yapmanız gereken şeylere odaklanmıştır. OLE DB uygunluk testlerini çalıştırma hakkında daha fazla bilgi için bkz.  

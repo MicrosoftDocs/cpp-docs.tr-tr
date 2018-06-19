@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367985"
 ---
 # <a name="intrinsics-and-inline-assembly"></a>Yapı İçi Değerler ve Satır İçi Derleme
 Kısıtlamalarını birini [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] derleyici hiçbir satır içi derleyici desteğine sahip etmektir. İşlevler, bunun anlamı C veya C++ ya da alt yordamlar veya iç işlevler derleyici tarafından desteklenen olarak yazılması gerekir yazılamaz. Diğerleri değildir bazı önemli performans işlevlerdir. Başarım duyarlı işlevler iç işlev olarak uygulanmalıdır.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357740"
 ---
 # <a name="what-is-a-host-object"></a>Bir konak nesnesi nedir?
 Bir ana bilgisayar nesnesi için belirli bir pencere ATL tarafından sağlanan ActiveX denetimi kapsayıcısı temsil eden bir COM nesnesidir. Böylece denetim iletileri yansıtabilirsiniz, denetim tarafından kullanılmak üzere gerekli kapsayıcısı arabirimleri sağlar ve bunu gösterir alt sınıfların konak kapsayıcı pencere nesnesi [IAxWinHostWindow](../atl/reference/iaxwinhostwindow-interface.md) ve [ IAxWinAmbientDispatch](../atl/reference/iaxwinambientdispatch-interface.md) arabirimleri denetimi ortamını yapılandırmanıza olanak tanır.  

@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32369123"
 ---
 # <a name="localized-resources-in-mfc-applications-satellite-dlls"></a>MFC Uygulamalarında Yerelleştirilmiş Kaynaklar: Uydu DLL'leri
 MFC sürüm 7.0 ve üzeri, Uydu DLL'leri, birden çok dil için yerelleştirilmiş uygulamaları oluşturmaya yardımcı olan bir özellik için gelişmiş destek sağlar. DLL uydu bir [yalnızca kaynak DLL](../build/creating-a-resource-only-dll.md) belirli bir dil için yerelleştirilmiş bir uygulamanın kaynaklar içeriyor. Uygulama çalışmaya başladığında, MFC yerelleştirilmiş kaynak ortamınız için en uygun otomatik olarak yükler. Örneğin, İngilizce dil kaynaklarla iki Uydu DLL'leri, biri, kaynaklarınızı ve diğer Almanca çevirisini içeren Fransızca çeviri içeren bir uygulama olabilir. Uygulamayı bir İngilizce dil sistemde çalıştırdığınızda İngilizce kaynaklarını kullanır. Fransızca sistemde, Fransızca kaynakları kullanır; Almanca sistemde, Almanca kaynakları kullanır.  

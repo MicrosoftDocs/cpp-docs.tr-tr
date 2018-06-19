@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32369311"
 ---
 # <a name="msbuild-visual-c"></a>MSBuild (Visual C++)
 Kullanabileceğiniz **MSBuild** aracı komut isteminden bir Visual C++ uygulaması oluşturma. Derleme işlemi oluşturma ve düzenleme bir proje dosyası (.vcxproj) bilgileri tarafından denetlenir. Proje dosyası derleme aşamaları, koşulları ve olayları temel yapı seçenekleri belirtir.  

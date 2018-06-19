@@ -44,6 +44,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32377861"
 ---
 # <a name="bscmake-options"></a>BSCMAKE Seçenekleri
 Bu bölümde BSCMAKE denetlemek için kullanılabilen seçenekler açıklanmaktadır. Çeşitli seçenekler gözatma bilgileri dosyası içeriğini hariç veya belirli bilgiler dahil olmak üzere denetler. Dışlama seçenekleri BSCMAKE daha hızlı çalışmasına izin verebilir ve daha küçük bir .bsc dosyasında neden olabilir. Seçenek adları büyük küçük harfe duyarlı (dışında **/Yardım** ve **/nologo**).  

@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32362225"
 ---
 # <a name="supporting-idispeventimpl"></a>IDispEventImpl destekleme
 Şablon sınıfı [IDispEventImpl](../atl/reference/idispeventimpl-class.md) bağlantı noktası havuzlarını ATL sınıfınızda desteği sağlamak için kullanılabilir. Bir bağlantı noktası havuzu dış COM nesneleri tetiklenen olayları işlemek, sınıf sağlar. Bu bağlantı noktası havuzlarını sınıfı tarafından sağlanan bir olay havuz eşlemesi ile eşlenir.  

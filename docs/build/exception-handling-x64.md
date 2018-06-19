@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367192"
 ---
 # <a name="exception-handling-x64"></a>Özel Durum İşleme (x64)
 Bu bölümde, yapılandırılmış özel durum işleme ve C++ özel durum üzerinde işleme anlatılmaktadır [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)].  

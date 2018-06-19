@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32373107"
 ---
 # <a name="structure-of-a-library"></a>Kitaplık Yapısı
 Bir kitaplık COFF nesnelerini içerir. Bir kitaplık nesneleri işlevler ve diğer nesneleri bir program tarafından harici olarak başvurulabilir verileri içerir. Bir Kitaplığı'nda bir nesne, bazen kitaplığı üye olarak da adlandırılır.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387550"
 ---
 # <a name="debug"></a>_DEBUG
 Derleyici tanımlar `_DEBUG` /MTd veya /MDd seçeneğini belirlediğinizde. Bu seçenekler, hata ayıklama sürümleri C çalışma zamanı kitaplığı belirtin.  

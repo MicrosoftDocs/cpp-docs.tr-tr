@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33132836"
 ---
 # <a name="how-to-retrieve-time-elapsed-since-startup-ccli"></a>Nasıl yapılır: Başlangıçtan İtibaren Geçen Zamanı Alma (C++/CLI)
 Aşağıdaki kod örneğinde değer çizgisi sayısının nasıl belirleneceğini göstermektedir veya başlatılmasından itibaren Windows geçen milisaniye sayısı. Bu değer depolanan <xref:System.Environment.TickCount%2A?displayProperty=fullName> üye ve 32-bit değeri olduğu için yaklaşık her 24.9 günde sıfırlar.  

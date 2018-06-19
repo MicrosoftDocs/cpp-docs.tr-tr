@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33890870"
 ---
 # <a name="sealed--c-component-extensions"></a>mühürlü (C++ Bileşen Uzantıları)
 `sealed` Sanal üyesi geçersiz kılınamaz ya da bir tür bir taban türü kullanılamaz gösteren bir bağlama duyarlı anahtar sözcüğü ref sınıfları için adıdır.  

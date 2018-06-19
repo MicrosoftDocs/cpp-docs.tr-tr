@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368011"
 ---
 # <a name="macros-and-nmake"></a>Makrolar ve NMAKE
 Makrolar derleme görevleri dosyası içinde belirli bir dizenin başka bir dizesi ile değiştirin. Makroları kullanarak şunları yapabilirsiniz:  

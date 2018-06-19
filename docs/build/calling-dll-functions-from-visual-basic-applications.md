@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32367088"
 ---
 # <a name="calling-dll-functions-from-visual-basic-applications"></a>Visual Basic Uygulamasından DLL İşlevi Çağırma
 Visual Basic uygulamalarını (veya Pascal ya da Fortran gibi diğer dillerde uygulamalar için) bir C/C++ DLL işlevleri çağırmak, İşlevler derleyici tarafından yapılan herhangi bir ad düzenleme olmadan doğru çağırma kullanarak dışarı aktarılmalıdır.  

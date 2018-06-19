@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33892663"
 ---
 # <a name="srwlocktrylockexclusive-method"></a>SRWLock::TryLockExclusive Yöntemi
 Geçerli veya belirtilen SRWLock nesnesi özel kullanım modu SRWLock nesnesinde almaya çalışır. Çağrı başarılı olursa, çağıran iş parçacığı kilit aittir.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32363252"
 ---
 # <a name="what-is-the-atl-control-hosting-api"></a>ATL nedir denetimi barındırma API?
 ATL denetimi barındırma bir ActiveX denetimi kapsayıcısı görev yapması herhangi bir penceresi sağlayan işlevler kümesi bir API'dir. Bu işlevler statik olarak olabilir veya dinamik kaynak kodu olarak kullanılabilir olduğu projenize bağlı ve ATL90.dll tarafından kullanıma sunulan. Denetimi barındırma işlevleri, aşağıdaki tabloda listelenmiştir.  

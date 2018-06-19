@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32390488"
 ---
 # <a name="compatibility"></a>Uyumluluk
 Evrensel C çalışma zamanı kitaplığı (UCRT) C++ uyum için gereken C Standart Kitaplığı çoğunu destekler. C99 (ISO/IEC 9899:1999) kitaplıkla tanımlanan türü genel makroları özel durumları uygulayan \<tgmath.h > ve katı türü uyumluluğu \<complex.h >. UCRT de büyük bir alt kümesini POSIX.1 uygular (ISO/IEC 9945-1:1996, POSIX sistem uygulama programı arabirimi) C Kitaplığı, ancak değil tam olarak belirli bir POSIX standart uyumluluğunu.  Ayrıca, çeşitli Microsoft özgü işlevler ve standart bir parçası olmayan makroları UCRT uygular.  

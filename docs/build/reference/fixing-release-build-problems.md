@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32372158"
 ---
 # <a name="fixing-release-build-problems"></a>Yayın Derlemesi Sorunlarını Giderme
 Yayın derlemesine hata ayıklama yapıdan değiştirdikten sonra kodunuzu derleme hataları oluşturursa, denetlemeniz gereken bazı alanlar vardır.  

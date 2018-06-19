@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32389991"
 ---
 # <a name="type-qualifiers"></a>Tür Niteleyicileri
 Tür niteleyicileri iki özelliklerden biri için tanımlayıcısını belirtin. **Const** tür niteleyicisi değiştirilemez olması için bir nesne bildirir. `volatile` Tür niteleyicisi değeri yasal olarak değiştirilebilir göründüğü, eş zamanlı yürütme iş parçacığı gibi program denetimi dışında bir şey olarak öğe bildirir.  

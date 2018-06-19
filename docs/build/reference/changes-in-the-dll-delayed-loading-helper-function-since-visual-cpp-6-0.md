@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371859"
 ---
 # <a name="changes-in-the-dll-delayed-loading-helper-function-since-visual-c-60"></a>Visual C++ 6.0 Sonrasındaki Gecikmeli Yükleme Yardımcısı İşlevi DLL Değişiklikleri
 Bilgisayarınızda Visual C++ birden fazla sürümü varsa veya kendi yardımcı işlevinizi tanımlanmışsa tarafından etkilenebilir DLL'e yapılan değişiklikler Gecikmeli yardımcı işlevini yüklemesi. Örneğin:  

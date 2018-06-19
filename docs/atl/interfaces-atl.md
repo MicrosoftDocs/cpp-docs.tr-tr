@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32359320"
 ---
 # <a name="interfaces-atl"></a>Arabirimler (ATL)
 Arabirim bir nesne dış dünyaya işlevselliği kullanıma sunan yoludur. COM'da, bir nesne tarafından uygulanan işlev işaretçileri (C++ vtable gibi) bir tablonun arabirimdir. Tablo arabirimi temsil eder ve işaret ettiği işlevleri arabirimi yöntemleridir. Bir nesne seçtiği gibi sayıda arabirimleri getirebilir.  

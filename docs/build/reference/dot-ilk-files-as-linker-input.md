@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371690"
 ---
 # <a name="ilk-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Ilk Dosyaları
 Artımlı olarak bağlanırken bağlantı ilk artımlı bağlantı sırasında oluşturulan .ilk durum dosyası güncelleştirir. Bu dosyanın .exe veya .dll dosyası aynı temel adı ve uzantısı .ilk varsa. Sonraki artımlı bağlantılar sırasında bağlantı .ilk dosyasını güncelleştirir. .İlk dosyası eksikse, bağlantı tam bağlantısı gerçekleştirir ve yeni bir .ilk dosyası oluşturur. .İlk dosya kullanılamaz ise, bağlantı nonincremental bağlantı gerçekleştirir. Artımlı bağlantılandırma hakkında daha fazla bilgi için bkz [artımlı bağlantı (/ ARTIMLI)](../../build/reference/incremental-link-incrementally.md) seçeneği.  

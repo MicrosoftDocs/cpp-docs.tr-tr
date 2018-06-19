@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32372314"
 ---
 # <a name="editbin-reference"></a>EDITBIN Başvurusu
 Microsoft COFF ikili dosya Düzenleyicisi'ni (EDITBIN. EXE) ortak nesne dosyası biçimi (COFF) ikili dosyalarını değiştirir. Nesne dosyaları, yürütülebilir dosyaları ve dinamik bağlantı kitaplığı (DLL) değiştirmek için EDITBIN kullanabilirsiniz.  

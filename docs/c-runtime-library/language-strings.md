@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391369"
 ---
 # <a name="language-strings"></a>Dil Dizeleri
 `setlocale` Ve `_create_locale` işlevleri Unicode kod sayfası kullanmayın işletim sistemlerinde Windows NLS API desteklenen dilleri kullanabilirsiniz. İşletim sistemi sürümü tarafından desteklenen dillerin bir listesi için bkz: [Ulusal dil desteği (NLS) API Başvurusu](https://www.microsoft.com/resources/msdn/goglobal/default.mspx). Dil dize değerleri olabilir **dil** ve **dil kısaltması** desteklenen dillerin listesi sütunlarının. İşletim sistemi sürümüne göre dil desteği hakkında ek bilgi için bkz: [ek A: Ürün davranışı](http://msdn.microsoft.com/goglobal/bb896001.aspx) [MS-LCID] içindeki: Windows dil kodu tanımlayıcısı (LCID) başvurusu.   

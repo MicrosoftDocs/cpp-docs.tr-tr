@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32370182"
 ---
 # <a name="pdb-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Pdb Dosyaları
 (.Obj) dosyaları / zi seçeneğini kullanarak derlenmiş program veritabanı (PDB) adını içeren nesne. Bağlayıcı için nesnenin PDB dosya adı belirtmeyin; BAĞLANTI katıştırılmış adı gerekirse PDB bulmak için kullanır. Bu kitaplıkta bulunan debuggable nesneler için de geçerlidir; PDB debuggable kitaplık için kitaplık birlikte bağlayıcı için kullanılabilir olmalıdır.  

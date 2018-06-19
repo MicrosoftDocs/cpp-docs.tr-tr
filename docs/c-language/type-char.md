@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386835"
 ---
 # <a name="type-char"></a>Tür char
 `char` Türü gösterilebilir karakter kümesinin bir üyesi tamsayı değerini depolamak için kullanılır. Bu tamsayı değeri, belirtilen karakterine karşılık gelen ASCII kodudur.  

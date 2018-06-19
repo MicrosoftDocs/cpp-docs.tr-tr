@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33114451"
 ---
 # <a name="collectionadapter-stlclr"></a>collection_adapter (STL/CLR)
 STL/CLR kapsayıcı olarak kullanmak için bir .NET koleksiyonu sarmalar. A `collection_adapter` basit bir STL/CLR kapsayıcı nesne açıklayan bir şablon sınıfıdır. Bir temel sınıf kitaplığı (BCL) arabirimi sarmalar ve denetlenen dizisi yönetmek için kullandığınız bir yineleyici çifti döndürür.  

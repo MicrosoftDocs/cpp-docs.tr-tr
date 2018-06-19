@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371287"
 ---
 # <a name="doc-process-documentation-comments-cc"></a>/doc (İşlem Belgeleri Açıklamaları) (C/C++)
 Kaynak kodu dosyaları ve belge açıklamaları olan her kaynak kodu dosyasının bir .xdc dosyası oluşturmak için işlem belgesi açıklamaları derleyiciye neden olur.  

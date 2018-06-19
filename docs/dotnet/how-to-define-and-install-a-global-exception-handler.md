@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33129690"
 ---
 # <a name="how-to-define-and-install-a-global-exception-handler"></a>Nasıl yapılır: Genel Bir Özel Durum İşleyicisi Tanımlama ve Yükleme
 Aşağıdaki kod örneğinde nasıl işlenmeyen özel durumlar gösterilmektedir yakalanabilir. Bir düğme örnek formu içeren, basıldığında bir özel durum oluşturulmasına neden olan bir null başvuru gerçekleştirir. Bu işlev bir tipik kod hatası temsil eder. Main işlevi tarafından yüklenen uygulama çapında özel durum işleyici tarafından oluşturulan özel durum yakalandı.  

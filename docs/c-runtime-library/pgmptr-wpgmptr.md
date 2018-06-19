@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32390004"
 ---
 # <a name="pgmptr-wpgmptr"></a>_pgmptr, _wpgmptr
 Yürütülebilir dosya yolu. Kullanım dışı; kullanmak [_get_pgmptr](../c-runtime-library/reference/get-pgmptr.md) ve [_get_wpgmptr](../c-runtime-library/reference/get-wpgmptr.md).  

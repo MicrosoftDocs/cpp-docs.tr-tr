@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32362206"
 ---
 # <a name="string-and-text-classes"></a>Dize ve metin sınıfları
 Bu sınıfların dizeler ve metin dize dönüştürmeleri için destek sağlar.  

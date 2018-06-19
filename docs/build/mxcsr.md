@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368632"
 ---
 # <a name="mxcsr"></a>MxCsr
 Kayıt durumu MxCsr de içerir. Çağırma kuralı bu kayıt geçici ve kalıcı bir bölümü olarak böler. Volatile bölümü 6 durumu bayrakları, MXCSR oluşur [0:5], MXCSR [6:15] kaydı geri kalanı kalıcı olarak değerlendirilir.  

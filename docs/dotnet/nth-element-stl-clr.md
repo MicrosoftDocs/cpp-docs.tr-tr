@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33132901"
 ---
 # <a name="nthelement-stlclr"></a>nth_element (STL/CLR)
 Öğeleri doğru bulma, çeşitli bölümlerini `n`aralığında sırasının th öğesi küçük veya ona eşit ve sırayla izlenmesi tüm öğelerin önünde tüm öğeleri; böylece büyüktür veya ona eşittir.  

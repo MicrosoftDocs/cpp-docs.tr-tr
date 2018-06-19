@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32388675"
 ---
 # <a name="c-identifiers"></a>C Tanımlayıcıları
 "Tanımlayıcıları" veya "simgelerini" sağladığınız değişkenleri, türleri, İşlevler ve etiketleri programınızdaki adlardır. Yazım denetimi ve herhangi bir anahtar sözcük durumundan tanımlayıcı adları farklı olmalıdır. Anahtar sözcükler (C ya da Microsoft) tanımlayıcı olarak kullanamazsınız; Bunlar, özel kullanım için ayrılmıştır. Tanımlayıcı değişkeni, tür veya işlev bildiriminde belirterek oluşturun. Bu örnekte, `result` bir tamsayı değişken için bir tanımlayıcıdır ve `main` ve `printf` işlevleri için tanımlayıcı adları.  

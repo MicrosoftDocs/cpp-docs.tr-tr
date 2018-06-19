@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375291"
 ---
 # <a name="link-command-files"></a>LINK Komut Dosyaları
 Komut satırı bağımsız değişkenleri, bir komut dosyası biçiminde bağlantısına geçirebilirsiniz. Bağlayıcı için bir komut dosyası belirtmek için aşağıdaki sözdizimini kullanın:  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32379100"
 ---
 # <a name="overview-of-arm-abi-conventions"></a>ARM ABI kuralları genel bakış
 Windows için ARM işlemci derlenmiş kod için uygulama ikili arabirimi (ABI) üzerinde standart ARM EABI temel alır. Bu makale, ARM Windows standart arasındaki temel farklılıklar vurgular. Standart ARM EABI hakkında daha fazla bilgi için bkz: [uygulama ikili arabirimi (ABI) ARM mimarisi için](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.subset.swdev.abi/index.html).  

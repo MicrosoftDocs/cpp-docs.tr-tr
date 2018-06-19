@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32373029"
 ---
 # <a name="output-file-f-options"></a>Çıktı Dosyası (/F) Seçenekleri
 Çıktı dosyası seçenekleri oluşturun veya çıktı dosyalarını yeniden adlandırın. Söz konusu tüm C veya C++ kaynak dosyalarıyla ilgili komut satırı veya komut dosyası CL ortam değişkeninde belirtilen etkilemez.  

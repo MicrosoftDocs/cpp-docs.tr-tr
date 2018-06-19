@@ -31,6 +31,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32365060"
 ---
 # <a name="security-global-functions"></a>Güvenlik genel işlevler
 Bu işlevler, SID ve ACL nesneleri değiştirmek için destek sağlar.  

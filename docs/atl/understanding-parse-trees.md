@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358840"
 ---
 # <a name="understanding-parse-trees"></a>Anlama ayrıştırma ağacı
 Her ayrıştırma ağacı aşağıdaki biçime sahip olduğu kayıt komut dosyanıza, bir veya daha fazla ayrıştırma ağacı tanımlayabilirsiniz:  

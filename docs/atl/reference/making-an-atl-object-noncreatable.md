@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358267"
 ---
 # <a name="making-an-atl-object-noncreatable"></a>ATL nesne Noncreatable yapma
 Bir istemci doğrudan nesneyi oluşturamıyor ATL tabanlı COM nesnesinin özniteliklerini değiştirebilirsiniz. Bu durumda, nesne başka bir nesne üzerinde bir yöntem çağrısı ile döndürülen yerine doğrudan oluşturulur.  

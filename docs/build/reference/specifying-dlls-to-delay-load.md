@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32373728"
 ---
 # <a name="specifying-dlls-to-delay-load"></a>Gecikme Yükü DLL'lerini Belirtme
 Gecikme DLL'leri ile yük belirtebilirsiniz [/delayload](../../build/reference/delayload-delay-load-import.md):`dllname` bağlayıcı seçeneği. Kendi yardımcı bir işlev sürümünü kullanmayı planlıyorsanız değil, delayimp.lib (için Masaüstü uygulamaları) veya (mağaza uygulamaları için) dloadhelper.lib programınızla bağlamanız gerekir.  

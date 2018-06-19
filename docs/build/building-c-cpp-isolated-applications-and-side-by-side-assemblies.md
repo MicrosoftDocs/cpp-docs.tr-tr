@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361290"
 ---
 # <a name="building-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma
 Visual C++ üzerinde fikrini tabanlı Windows istemci uygulamaları için bir dağıtım modeli destekler [yalıtılmış uygulamalar](http://msdn.microsoft.com/library/aa375190) ve [yan yana derlemeler](http://msdn.microsoft.com/library/ff951640). Varsayılan olarak, Visual C++ tüm yerel C/C++ uygulamaları kullanan olarak yalıtılmış uygulamalar derlemeler [bildirimleri](http://msdn.microsoft.com/library/aa375365) bağımlılıklarını Visual C++ kitaplıkları üzerinde açıklamak için.  

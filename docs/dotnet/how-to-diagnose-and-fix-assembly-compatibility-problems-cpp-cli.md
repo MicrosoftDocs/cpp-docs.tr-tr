@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33133439"
 ---
 # <a name="how-to-diagnose-and-fix-assembly-compatibility-problems-ccli"></a>Nasıl yapılır: Derleme Uyumluluk Sorunlarını Tanılama ve Düzeltme (C++/CLI)
 Bu konuda, çalışma zamanında başvurulan derleme sürümü derleme zamanında başvurulan bir derleme sürümü eşleşmediğinde neler olabileceğini açıklanmıştır ve sorunu önlemenin.  

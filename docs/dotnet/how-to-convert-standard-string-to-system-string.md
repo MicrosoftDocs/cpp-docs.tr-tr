@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33127841"
 ---
 # <a name="how-to-convert-standard-string-to-systemstring"></a>Nasıl yapılır: Standart Dizeyi System::String Olarak Dönüştürme
 Bu konuda nasıl dönüştürüleceğini C++ Standart Kitaplığı dizesi gösterir ([\<dize >](../standard-library/string.md)) için bir <xref:System.String>.  

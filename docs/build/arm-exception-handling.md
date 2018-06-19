@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32366269"
 ---
 # <a name="arm-exception-handling"></a>ARM özel durum işleme
 Windows ARM üzerinde mekanizması zaman uyumsuz donanım ürettiği özel durumlar ve zaman uyumlu yazılım tarafından oluşturulan özel durumlar için aynı yapılandırılmış özel durum işleme kullanır. Dile özgü özel durum işleyicileri dil yardımcı işlevleri kullanarak Windows yapılandırılmış özel durum işleme üzerinde oluşturulmuştur. Bu belgede, özel durum Windows ARM ve MASM ve Visual C++ derleyicisi tarafından oluşturulan kodu tarafından kullanılan dil Yardımcıları işleme açıklanmaktadır.  

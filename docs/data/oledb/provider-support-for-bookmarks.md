@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33112514"
 ---
 # <a name="provider-support-for-bookmarks"></a>Yer İşaretleri Sağlayıcı Desteği
 Bu konudaki örnek ekler `IRowsetLocate` arabirimini `CMyProviderRowset` sınıfı. Neredeyse her durumda, var olan bir COM nesnesine bir arabirim ekleyerek başlatın. Ardından, tüketici şablonlarından çağrılar ekleyerek test edebilirsiniz. Örnek gösterir nasıl yapılır:  

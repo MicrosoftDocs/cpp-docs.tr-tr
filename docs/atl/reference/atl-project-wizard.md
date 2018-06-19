@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357911"
 ---
 # <a name="atl-project-wizard"></a>ATL Proje Sihirbazı
 Etkin Şablon kitaplığı (ATL), küçük ve hızlı COM nesneleri yazma basitleştirmek şablona dayalı C++ sınıflar kümesidir. ATL Proje Sihirbazı COM nesneleri içerecek şekilde yapıları ile birlikte bir proje oluşturur.  

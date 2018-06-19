@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32384430"
 ---
 # <a name="lifetime-scope-visibility-and-linkage"></a>Ömür, Kapsam, Görünürlük ve Bağlantı
 Bir C programının nasıl çalıştığını anlamak için, değişkenlerin ve işlevlerin programda nasıl kullanılabileceğini belirleyen kuralları anlamanız gerekir. Birkaç kavram bu kuralları anlamak için önemlidir:  

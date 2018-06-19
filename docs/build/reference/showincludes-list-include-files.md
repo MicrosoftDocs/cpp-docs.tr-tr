@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32378346"
 ---
 # <a name="showincludes-list-include-files"></a>/showIncludes (Liste Dosyaları İçerir)
 Dosyaları Ekle listesini çıkarmak derleyici neden olur. İç içe geçmiş içeren dosyalardır de (eklediğiniz dosyalarından dahil edilen görüntülenen dosyalar).  

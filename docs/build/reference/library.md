@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371170"
 ---
 # <a name="library"></a>LIBRARY
 DLL oluşturmak için bağlantı söyler. Bir .exp dosyası derleme kullanılmadığı sürece aynı anda bir içeri aktarma kitaplığını bağlantı oluşturur.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368841"
 ---
 # <a name="importing-into-an-application-using-declspecdllimport"></a>__declspec(dllimport) Kullanarak Bir Uygulamaya Aktarma
 DLL tarafından tanımlanan ortak sembolleri kullanan bir program içeri aktarılacak. Oluşturduğunuzda üstbilgi dosyaları, oluşturmak için DLL'leri kullanan uygulamaları kullanmak için **__declspec(dllimport)** genel semboller bildirimlerinde. Anahtar sözcüğü **__declspec(dllimport)** veya .def dosyaları ile dışarı aktarma olup olmadığını çalışır **__declspec(dllexport)** anahtar sözcüğü.  

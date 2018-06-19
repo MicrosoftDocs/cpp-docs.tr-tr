@@ -34,6 +34,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391385"
 ---
 # <a name="localunwind2"></a>_local_unwind2
 İç CRT işlevi. Belirtilen kapsam tabloda listelenen tüm sonlandırma işleyicileri çalışır.  

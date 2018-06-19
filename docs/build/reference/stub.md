@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32375207"
 ---
 # <a name="stub"></a>STUB
 Bir modül tanım dosyasında sanal aygıt sürücüsü (VxD) derlemeler kullanıldığında (WINNT içinde tanımlanmıştır. IMAGE_DOS_HEADER yapısı içeren bir dosya adı belirtmenize olanak tanır Y) yerine varsayılan başlık sanal aygıt sürücüsü (VxD), kullanılacak.  

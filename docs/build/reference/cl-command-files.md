@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32369883"
 ---
 # <a name="cl-command-files"></a>CL Komut Dosyaları
 Bir komut dosyası seçenekleri ve aksi durumda yazarsınız üzerinde dosya adlarını içeren bir metin dosyasıdır [komut satırı](../../build/reference/compiler-command-line-syntax.md) veya kullanarak belirtin [CL ortam değişkeni](../../build/reference/cl-environment-variables.md). CL derleyici komut dosyasını CL ortam değişkeni veya komut satırı bağımsız değişken olarak kabul eder. Komut satırında veya CL ortam değişkeninde olanın aksine, komut dosyası birden fazla satırı seçeneği ve dosya adı kullanmanıza izin verir.  

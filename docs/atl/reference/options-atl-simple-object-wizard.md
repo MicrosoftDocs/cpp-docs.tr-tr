@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32364147"
 ---
 # <a name="options-atl-simple-object-wizard"></a>ATL Basit Nesne Sihirbazı Seçenekleri
 Daha fazla verimlilik ve nesne için hata desteği için tasarlamak için ATL Basit Nesne Sihirbazı'nın bu sayfayı kullanın.  

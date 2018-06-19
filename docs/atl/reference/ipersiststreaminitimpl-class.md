@@ -30,6 +30,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32360462"
 ---
 # <a name="ipersiststreaminitimpl-class"></a>IPersistStreamInitImpl sınıfı
 Bu sınıf uygulayan **IUnknown** ve bir varsayılan uygulamayı sağlar [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) arabirimi.  
