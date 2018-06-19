@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33877572"
 ---
 # <a name="how-to-improve-performance-with-generics-visual-c"></a>Nasıl yapılır: Genel Türlerle Performansı Artırma (Visual C++)
 Genel türler ile bir tür parametresi temelinde yeniden kullanılabilir kod oluşturabilirsiniz. Tür parametresi gerçek türü, istemci kodu tarafından adlı kadar ertelenir. Genel türler hakkında daha fazla bilgi için bkz: [genel türler](../windows/generics-cpp-component-extensions.md).  

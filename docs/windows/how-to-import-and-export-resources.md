@@ -32,6 +32,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33879184"
 ---
 # <a name="how-to-import-and-export-resources"></a>Nasıl Yapılır: Kaynakları İçeri ve Dışarı Aktarma
 Grafik kaynakları (bit eşlemler, simgeler, imleçler ve araç çubuklarını), HTML dosyaları ve özel kaynakların Visual C++'ta kullanmak için içeri aktarabilirsiniz. Geliştirme ortamı dışında kullanılan dosyaları ayırmak için bir Visual C++ projeden dosyaları aynı türde dışarı aktarabilirsiniz.  

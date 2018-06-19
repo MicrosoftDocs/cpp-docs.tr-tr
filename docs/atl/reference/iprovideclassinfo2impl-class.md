@@ -28,6 +28,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361351"
 ---
 # <a name="iprovideclassinfo2impl-class"></a>IProvideClassInfo2Impl sınıfı
 Bu sınıf, bir varsayılan uygulamasını sağlar [IProvideClassInfo'yu](http://msdn.microsoft.com/library/windows/desktop/ms687303) ve [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) yöntemleri.  

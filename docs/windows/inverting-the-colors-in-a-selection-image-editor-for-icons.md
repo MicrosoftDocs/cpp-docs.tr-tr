@@ -25,6 +25,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33874086"
 ---
 # <a name="inverting-the-colors-in-a-selection-image-editor-for-icons"></a>Seçimdeki Renkleri Ters Çevirme (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi görüntüyü ters renklerle nasıl görüneceği anlayabilirsiniz şekilde görüntünün seçili bölümündeki renkleri ters çevirme için kullanışlı bir yol sağlar.  

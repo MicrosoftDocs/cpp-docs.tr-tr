@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33227088"
 ---
 # <a name="fatal-error-c1309"></a>Önemli hata C1309
 C2 eşleşmeyen sürümleri. DLL ve PGODB\<sürüm >. DLL  

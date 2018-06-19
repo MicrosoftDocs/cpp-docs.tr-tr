@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33225816"
 ---
 # <a name="fatal-error-c1089"></a>Önemli hata C1089
 Dosya türü dosyasını kesemez: 'dosya': ileti  

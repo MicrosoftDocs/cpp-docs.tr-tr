@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33883348"
 ---
 # <a name="constraints-on-generic-type-parameters-ccli"></a>Genel Tür Parametrelerindeki Kısıtlamalar (C++/CLI)
 Genel tür veya yöntem bildirimleri, tür parametresi kısıtlamaları olan uygun bulabilirsiniz. Bir kısıtlama tür bağımsız değişkenleri kullanılan türleri getirmelidir bir gereksinimdir. Örneğin, bir kısıtlama tür bağımsız değişkeni bir belirli arabirimini uygulaması gerekir veya belirli bir sınıftan olabilir.  

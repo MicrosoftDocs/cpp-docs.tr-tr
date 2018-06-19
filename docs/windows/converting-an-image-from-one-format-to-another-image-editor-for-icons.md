@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33871046"
 ---
 # <a name="converting-an-image-from-one-format-to-another-image-editor-for-icons"></a>Görüntüyü Bir Biçimden Diğerine Dönüştürme (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi'nde GIF veya JPEG görüntüleri açın ve bit eşlemleri kaydetme. Ayrıca, bir bit eşlem dosyasını açın ve bir GIF veya JPEG olarak kaydedin. Görüntüler ile çalışırsınız olması gerekmez, geliştirme ortamında düzenlemek için projesinin bir parçası (bkz [tek başına görüntüyü düzenleme](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md)).  

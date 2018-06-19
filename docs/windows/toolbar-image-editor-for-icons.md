@@ -27,6 +27,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33890560"
 ---
 # <a name="toolbar-image-editor-for-icons"></a>Araç Çubuğu (Simgeler İçin Görüntü Düzenleyicisi)
 **Görüntü Düzenleyicisi** araç çubuğu çizim, boyama, metin girerek, silme ve görünümler düzenleme araçları içerir. Ayrıca, her aracı kullanma seçeneklerini seçim yapabileceğiniz bir seçenek belirleyici içerir. Örneğin, çeşitli fırça genişlikleri, büyütme Etkenler ve çizgi stillerini seçebilirsiniz.  

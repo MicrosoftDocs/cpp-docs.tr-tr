@@ -24,6 +24,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891678"
 ---
 # <a name="using-a-drawing-tool-image-editor-for-icons"></a>Çizim Aracı Kullanma (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi çizim ve tüm çalışacak şekilde araçları silme serbest: Aracı'nı seçin ve gerekirse, [ön ve arka plan renklerini seçin](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) , boyutu ve şekli seçenekleri. Ardından işaretçiyi görüntüye taşıyın ve tıklatın veya çizme ve silmek için sürükleyin.  

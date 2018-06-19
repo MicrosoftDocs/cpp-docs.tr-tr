@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357808"
 ---
 # <a name="ca2caex-class"></a>CA2CAEX sınıfı
 Bu sınıf dize dönüşüm makroları tarafından kullanılan `CA2CTEX` ve `CT2CAEX`ve typedef **CA2CA**.  

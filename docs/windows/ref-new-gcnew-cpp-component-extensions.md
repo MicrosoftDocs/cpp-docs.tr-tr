@@ -25,6 +25,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33879067"
 ---
 # <a name="ref-new-gcnew--c-component-extensions"></a>yeni başvuru, gcnew (C++ Bileşen Uzantıları)
 `ref new` Birleşik anahtar sözcüğü ayırır nesne erişilemez duruma ve bir işleyici döner toplanacak olan bir türü örneği ([^](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)) ayrılmış nesnesine.  

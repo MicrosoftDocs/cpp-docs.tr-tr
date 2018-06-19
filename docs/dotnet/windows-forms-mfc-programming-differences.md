@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33172677"
 ---
 # <a name="windows-formsmfc-programming-differences"></a>Windows Forms/MFC Programlama Farkları
 Konular, [MFC içinde Windows formu kullanıcı denetimi kullanarak](../dotnet/using-a-windows-form-user-control-in-mfc.md) Windows Forms için MFC desteği açıklanmaktadır. .NET Framework veya programlama MFC bilmiyorsanız, bu konuda iki programlama farkları hakkında arka plan bilgileri sağlar.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33162344"
 ---
 # <a name="private-virtual-functions"></a>Özel Sanal İşlevler
 Türetilmiş sınıflarda özel sanal işlevler işlenme Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirdi.  

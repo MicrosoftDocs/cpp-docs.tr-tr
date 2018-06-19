@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371453"
 ---
 # <a name="look-up-button"></a>Ara Düğmesi
 Tıklatın **Ara** girilen sistem veya modül değerine karşılık gelen hata iletisi. Değer (ondalık negatif değerler dahil olmak üzere) onaltılık veya ondalık biçiminde girilebilir. Listelenen modülleri **hata aramak için ek modüller** iletişim de aranır.  

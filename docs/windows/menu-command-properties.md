@@ -20,6 +20,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33878869"
 ---
 # <a name="menu-command-properties"></a>Menü Komut Özellikleri
 Aşağıdaki bilgiler görüntülenir Menüsü Özellikleri göre düzenlenmiş [Özellikler penceresini](/visualstudio/ide/reference/properties-window) seçtiğinizde menü komutu. Özellikler penceresini ayrıca, bu özellikleri görüntülemenize olanak sağlar, ancak bu kategoriye göre alfabetik olarak listelenir.  

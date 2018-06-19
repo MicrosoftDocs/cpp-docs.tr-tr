@@ -20,6 +20,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33874213"
 ---
 # <a name="getmodulebase-function"></a>GetModuleBase İşlevi
 Alır bir [ModuleBase](../windows/modulebase-class.md) artırma ve azaltma için başvuru sayısı izin veren bir işaretçi bir [RuntimeClass](../windows/runtimeclass-class.md) nesnesi.  

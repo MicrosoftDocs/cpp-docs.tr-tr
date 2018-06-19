@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33873595"
 ---
 # <a name="how-to-pin-pointers-and-arrays"></a>Nasıl yapılır: İşaretçiler ve Dizileri Sabitleme
 Yönetilen bir nesne tanımlanan bir alt nesne sabitleme nesnenin tamamı sabitleme etkisi vardır.  Bir dizinin herhangi bir öğe sabitlenmiş, örneğin, ardından tüm dizi ayrıca sabitlenir. Sabitlenmiş bir dizi bildirme dil için hiçbir uzantı vardır. Bir dizi sabitlemek için öğe türü ve PIN öğelerinden biri sabitleme işaretçisi bildirin.  

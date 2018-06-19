@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32372249"
 ---
 # <a name="modules-button"></a>Modüller Düğmesi
 Tıklatın **modülleri** ortaya çıkarmak için düğmesi **hata aramak için ek modüller** iletişim. İstenen EXE ya da DLL adını düzenleme kutusuna girin ve tıklatın **Ekle** hata iletisi aramanızda modülleri eklenecek. Bir modül vurgulayarak ve tıklayarak listeden kaldırmak **kaldırmak** düğmesi.  

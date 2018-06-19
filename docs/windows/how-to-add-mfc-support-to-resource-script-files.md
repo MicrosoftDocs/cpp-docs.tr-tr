@@ -25,6 +25,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33879802"
 ---
 # <a name="how-to-add-mfc-support-to-resource-script-files"></a>Nasıl Yapılır: Kaynak Betik Dosyalarına MFC Desteği Ekleme
 Normalde, Windows kullanarak bir MFC uygulaması oluşturduğunuzda [MFC Uygulama Sihirbazı'nı](../mfc/reference/mfc-application-wizard.md), Microsoft Foundation çekirdek özelliklerini içeren temel bir kümesi (bir kaynak (.rc) komut dosyası dahil olmak üzere) dosyaları sihirbaz oluşturur sınıfları (MFC). MFC dayalı olmayan bir Windows uygulaması için bir .rc dosyası düzenliyorsanız, ancak, MFC çerçevesi belirli aşağıdaki özellikler kullanılabilir değil:  

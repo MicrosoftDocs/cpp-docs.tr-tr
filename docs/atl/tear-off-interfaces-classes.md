@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32361068"
 ---
 # <a name="tear-off-interfaces-classes"></a>Etiketleri sınıfları arabirimleri
 Aşağıdaki sınıflar etiketleri arabirimler için destek sağlar:  

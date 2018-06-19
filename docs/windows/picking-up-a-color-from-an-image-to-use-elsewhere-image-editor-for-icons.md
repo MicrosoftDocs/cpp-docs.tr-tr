@@ -26,6 +26,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33877416"
 ---
 # <a name="picking-up-a-color-from-an-image-to-use-elsewhere-image-editor-for-icons"></a>Başka Yerde Kullanmak Üzere Görüntüden Renk Alma (Simgeler İçin Görüntü Düzenleyicisi)
 **Seçin renk**, ya da geçerli ön plan rengini veya sol veya sağ fare düğmesine basın olup bağlı olarak arka plan rengi, aracı renk-alma, resimdeki herhangi bir renk yapar. İptal etmek için **seçin renk** aracı, başka bir aracı seçin.  

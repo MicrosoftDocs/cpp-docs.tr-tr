@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32360001"
 ---
 # <a name="what-is-atlaxwin100"></a>AtlAxWin100 nedir?
 `AtlAxWin100` ATL'ın denetimi barındırma işlevselliği sağlamaya yardımcı olacak bir pencere sınıfı adıdır. Bu sınıf örneği oluşturduğunuzda, pencere yordamı denetimi barındırma API penceresiyle ilişkili bir ana bilgisayar nesnesi oluşturmak ve penceresi başlığı olarak belirttiğiniz denetimi ile yüklemek için otomatik olarak kullanır.  

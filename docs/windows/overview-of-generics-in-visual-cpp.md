@@ -27,6 +27,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33881009"
 ---
 # <a name="overview-of-generics-in-visual-c"></a>Visual C++'de Genel Türlere Genel Bakış
 Genel türler, ortak dil çalışma zamanı tarafından desteklenen parametreli türleridir. Genel kullanıldığında, belirttiğiniz bir bilinmeyen tür parametresi ile tanımlanan bir türü bir parametreli türüdür.  

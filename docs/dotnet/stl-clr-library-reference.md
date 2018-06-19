@@ -22,6 +22,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33171828"
 ---
 # <a name="stlclr-library-reference"></a>STL/CLR Kitaplık Başvurusu
 STL/CLR kitaplığı C++ ve .NET Framework ortak dil çalışma zamanı (CLR) ile kullanmak için C++ Standart Kitaplığı kümesini paketlenmesi ' dir. STL/CLR ile tüm kapsayıcıları, Yineleyiciler ve yönetilen bir ortamda standart kitaplığı algoritmaları kullanabilirsiniz.  

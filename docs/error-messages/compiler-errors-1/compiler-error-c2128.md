@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33168158"
 ---
 # <a name="compiler-error-c2128"></a>Derleyici Hatası C2128
 'function': alloc_text/same_seg yalnızca C bağlantı işlevleriyle uygulanabilir  

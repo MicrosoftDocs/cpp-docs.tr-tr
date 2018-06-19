@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33195821"
 ---
 # <a name="compiler-error-c2405"></a>Derleyici Hatası C2405
 Geçersiz kısa ileri başvuru uzaklıkları  

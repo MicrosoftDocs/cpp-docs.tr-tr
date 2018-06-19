@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368476"
 ---
 # <a name="null-and-undefined-macros"></a>Boş ve Tanımlanmamış Makrolar
 Null dizeler boş ve tanımlanmamış makrolar genişletin, ancak boş bir dize tanımlanan bir makro ifadeleri önişlemde tanımlı olarak kabul edilir. Makro boş bir dize tanımlamak için hiçbir karakter boşluk ya da sekme sonra hariç eşittir (=) komut satırı veya komut dosyası ve boş bir dize veya tanımı çift tırnak işaretleri içine alın belirtin (""). Makro tanımsız için kullanmak **! UNDEF.** Daha fazla bilgi için bkz: [derleme görevleri dosyası önişleme yönergeleri](../build/makefile-preprocessing-directives.md).  

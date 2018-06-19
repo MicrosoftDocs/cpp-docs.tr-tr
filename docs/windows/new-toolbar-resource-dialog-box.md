@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33877546"
 ---
 # <a name="new-toolbar-resource-dialog-box"></a>Yeni Araç Çubuğu Kaynağı İletişim Kutusu
 Yeni araç çubuğu kaynağı iletişim kutusu, genişlik ve yükseklik araç kaynağa eklediğiniz düğmelerinin belirtmenizi sağlar. Varsayılan değer 16 × 15 pikseldir.  

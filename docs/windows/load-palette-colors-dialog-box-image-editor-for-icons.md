@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33878180"
 ---
 # <a name="load-palette-colors-dialog-box-image-editor-for-icons"></a>Palet Renkleri Yükle İletişim Kutusu (Simgeler İçin Görüntü Düzenleyicisi)
 Projenizde kullanmak için özel renk paletlerini yüklemek için bu iletişim kutusunu kullanın. Daha fazla bilgi için bkz: [kaydetme ve yükleme farklı renk paletlerini](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).  

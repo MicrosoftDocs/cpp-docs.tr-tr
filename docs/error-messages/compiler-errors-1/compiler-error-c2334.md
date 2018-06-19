@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33222221"
 ---
 # <a name="compiler-error-c2334"></a>Derleyici Hatası C2334
 Önceki beklenmeyen belirteçleri ': veya {'; görünen işlev gövdesi atlanıyor  

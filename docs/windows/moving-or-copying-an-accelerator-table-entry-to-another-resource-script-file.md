@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33877910"
 ---
 # <a name="moving-or-copying-an-accelerator-table-entry-to-another-resource-script-file"></a>Hızlandırıcı Tablosu Girişini Başka Bir Kaynak Betik Dosyasına Taşıma veya Kopyalama
 ### <a name="to-move-or-copy-an-accelerator-table-entry-to-another-resource-script-file"></a>Taşımak veya Hızlandırıcı tablosu girişini başka bir kaynak betik dosyasına kopyalamak için  

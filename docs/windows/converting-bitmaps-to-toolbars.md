@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33872633"
 ---
 # <a name="converting-bitmaps-to-toolbars"></a>Bit Eşlemleri Araç Çubuklarına Dönüştürme
 Bir bit eşlem dönüştürerek yeni bir araç çubuğu oluşturabilirsiniz. Bit eşlem grafikten bir araç çubuğu düğmesi görüntülerde dönüştürür. Genellikle bit eşlem her düğme için bir görüntü ile tek bir bit eşlem üzerindeki birkaç düğmesi görüntülerini içerir. Görüntüleri herhangi bir boyutta olabilir; 16 piksel genişliğinde ve resmin yüksekliğini varsayılandır. Düğme resimlerini boyutunu belirtebilirsiniz [yeni araç çubuğu kaynağı iletişim kutusu](../windows/new-toolbar-resource-dialog-box.md) araç çubuğu Düzenleyicisi'nden seçtiğinizde **görüntü** sırada görüntü düzenleyicisinde menüsü.  

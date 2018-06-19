@@ -58,6 +58,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32417334"
 ---
 # <a name="fundamental-types--c"></a>Temel Türler (C++)
 C++'ta temel türleri üç kategoride bölünen: tamsayı, kayan nokta ve void. Tam sayı türleri tam sayılar işleyebilir. Kayan nokta türleri kesirli bölümleri olabilir değerleri belirtme özelliğine sahiptir.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33875103"
 ---
 # <a name="opening-the-resource-editor-for-a-given-symbol"></a>Belirli Bir Sembol İçin Kaynak Düzenleyicisini Açma
 Ne zaman gözatarken sembolleri [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md), belirli bir sembolle nasıl kullanıldığı hakkında daha fazla bilgi isteyebilirsiniz. **Görünüm kullanım** düğmesi, bu bilgileri almak için hızlı bir yol sağlar.  

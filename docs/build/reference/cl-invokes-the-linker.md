@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32371921"
 ---
 # <a name="cl-invokes-the-linker"></a>CL Bağlayıcı Çağırır
 CL bağlayıcı /c seçeneği kullanılmıyorsa derledikten sonra otomatik olarak çağırır. CL bağlayıcı için derleme sırasında oluşturulan .obj dosyaları adlarını ve komut satırında belirtilen dosyaların adlarını geçirir. Bağlayıcı bağlantı ortam değişkeninde listelenen seçenekleri kullanır. / Link seçeneği CL komut satırında bağlayıcı seçeneklerini belirtmek için kullanabilirsiniz. / Link seçeneği izleyin seçenekleri bağlantı ortam değişkeninde geçersiz kılar. Aşağıdaki tabloda seçeneklerinde bağlama engelleyin.  

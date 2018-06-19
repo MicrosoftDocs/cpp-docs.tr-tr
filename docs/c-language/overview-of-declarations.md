@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32392633"
 ---
 # <a name="overview-of-declarations"></a>Bildirimlere Genel Bakış
 "Bildirim" yorumunu ve tanımlayıcıları Kümesi özniteliklerini belirtir. Ayrıca nesne veya tanımlayıcısıyla adlı işlev için ayrılmış depolama neden olan bir bildirimi "tanımı." olarak adlandırılır Değişkenler, İşlevler ve türler için C bildirimleri bu sözdizimine sahip:  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33880263"
 ---
 # <a name="custom-color-selector-dialog-box-image-editor-for-icons"></a>Özel Renk Seçici İletişim Kutusu (Simgeler İçin Görüntü Düzenleyicisi)
 Bu iletişim kutusu görüntünüzü için kullandığınız renkleri özelleştirmenize olanak sağlar. Daha fazla bilgi için bkz: [özelleştirme veya değiştirme renkleri](../windows/customizing-or-changing-colors-image-editor-for-icons.md).  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33169874"
 ---
 # <a name="compiler-error-c2190"></a>Derleyici Hatası C2190
 İlk parametre listesi ikinci daha uzun  

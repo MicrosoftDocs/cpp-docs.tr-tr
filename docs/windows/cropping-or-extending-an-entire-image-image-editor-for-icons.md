@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33871620"
 ---
 # <a name="cropping-or-extending-an-entire-image-image-editor-for-icons"></a>Görüntünün Tümünü Kırpma veya Genişletme (Simgeler İçin Görüntü Düzenleyicisi)
 Aşağıdaki yordamlar, görüntünün tümünü kırpma veya nasıl gösterilir.  

@@ -27,6 +27,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33094770"
 ---
 # <a name="snapshot"></a>Anlık Görüntü
 Anlık görüntü oluşturulduğunda var gibi verileri statik görünümünü yansıtan bir kayıt kümesi bir anlık görüntüdür. Anlık görüntüyü açıp tüm kayıtlara taşıdığınızda, kayıt kümesi içerdiği ve çağırarak anlık görüntüyü yeniden yapılandırmadan değerleri değiştirmeyin **Requery**.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33873020"
 ---
 # <a name="editing-an-image-outside-of-a-project-image-editor-for-icons"></a>Proje Dışındaki Görüntüyü Düzenleme (Simgeler İçin Görüntü Düzenleyicisi)
 Açın ve herhangi bir grafik uygulamada gibi görüntülerini geliştirme ortamında düzenleyin. İle çalışma görüntüleri, tek başına düzenlemek için Visual Studio projesinin bir parçası olması gerekmez.  

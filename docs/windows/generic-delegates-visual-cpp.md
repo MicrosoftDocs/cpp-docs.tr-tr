@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33875604"
 ---
 # <a name="generic-delegates-visual-c"></a>Genel Temsilciler (Visual C++)
 Genel tür parametreleri ile temsilcileri kullanabilirsiniz. Temsilciler üzerinde daha fazla bilgi için bkz: [temsilci (C++ bileşen uzantıları)](../windows/delegate-cpp-component-extensions.md).  

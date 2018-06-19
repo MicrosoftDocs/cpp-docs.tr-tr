@@ -53,6 +53,7 @@ ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34451488"
 ---
 # <a name="control87-controlfp-control872"></a>_control87, _controlfp, __control87_2
 

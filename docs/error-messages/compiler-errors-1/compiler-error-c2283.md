@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33170862"
 ---
 # <a name="compiler-error-c2283"></a>Derleyici Hatası C2283
 'tanımlayıcısı': Saf belirleyici veya Özet geçersiz kılma tanımlayıcısı adlandırılmamış yapısı üzerinde izin verilmiyor  

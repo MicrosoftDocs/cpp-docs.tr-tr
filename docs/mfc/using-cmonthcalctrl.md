@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382385"
 ---
 # <a name="using-cmonthcalctrl"></a>CMonthCalCtrl Kullanma
 Aylık takvim denetiminin ([CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)) bir takvim benzeri kullanıcı arabirimini uygular. Bu kullanıcı girmek veya bir tarih seçme çok sezgisel ve tanınabilir yöntemini sağlar. Denetim Ayrıca uygulama ile elde ve var olan veri türleri kullanılarak denetiminde tarih bilgisini ayarlamak için araçlar sağlar. Varsayılan olarak, ay ve gün geçerli ay Takvim denetimi görüntüler. Ancak, kullanıcı önceki ve sonraki ay boyunca kaydırma yapın ve belirli ayı ve/veya yıl mümkün değil.  

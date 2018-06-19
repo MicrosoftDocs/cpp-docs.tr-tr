@@ -27,6 +27,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33873231"
 ---
 # <a name="creating-a-device-image-image-editor-for-icons"></a>Cihaz Görüntüsü Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 Düzenleyici yeni simgesi veya imleci kaynak, görüntü oluştururken ilk görüntü (32 × 32, simgeler için 16 renk ve 32 x 32, imleçler için tek renkli) belirli bir stil oluşturur. Ardından ilk simgesi veya imleci görüntüleri farklı boyut ve stil ekleyin ve her ek görüntü, farklı görüntüleme cihazları için gerektiği gibi düzenleyin. Varolan bir görüntü türü ya da bir grafik programında oluşturulan bir bit eşlem kesme ve yapıştırma işlemi gerçekleştirerek görüntüyü da düzenleyebilirsiniz.  

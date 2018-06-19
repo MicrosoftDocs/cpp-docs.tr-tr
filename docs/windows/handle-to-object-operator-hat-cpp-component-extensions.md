@@ -20,6 +20,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33881175"
 ---
 # <a name="handle-to-object-operator---c-component-extensions"></a>İşlenecek Nesne İşleci (^) (C++ Bileşen Uzantıları)
 *Bildirimcisi işlemek* (`^`, "hat" denilir), türü değiştirir [belirticisi](../cpp/overview-of-declarators.md) sistemi nesnenin olduğunu belirlediğinde, bildirilen nesnesi'nin otomatik olarak silinmesini anlamına gelir artık erişilebilir.  

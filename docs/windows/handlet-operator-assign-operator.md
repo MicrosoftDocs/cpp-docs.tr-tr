@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33873933"
 ---
 # <a name="handletoperator-operator"></a>HandleT::operator= İşleci
 Belirtilen HandleT nesnenin değerini geçerli HandleT nesneye taşır.  

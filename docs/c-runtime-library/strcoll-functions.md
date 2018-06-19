@@ -32,6 +32,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32418191"
 ---
 # <a name="strcoll-functions"></a>strcoll İşlevleri
 Her biri `strcoll` ve `wcscoll` işlevlerini karşılaştırılmaktadır göre iki dizeyi `LC_COLLATE` kategori ayarı yerel ayar kod sayfası şu anda kullanımda. Her biri `_mbscoll` işlevler şu anda kullanımda birden çok baytlı kod sayfasına göre iki dizeyi karşılaştırır. Kullanım `coll` işlevleri geçerli kod sayfası karakter kümesi sırasını ve lexicographic karakter sırası arasında bir fark yoktur ve bu fark karşılaştırma için ilgilendirir dize karşılaştırmaları için. Karşılık gelen kullanmak `cmp` dize eşitlik için yalnızca test etmek için işlevleri.  

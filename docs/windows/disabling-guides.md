@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33882095"
 ---
 # <a name="disabling-guides"></a>Kılavuzları Devre Dışı Bırakma
 Özel anahtarları kılavuzları tutturma etkisini devre dışı bırakmak için fare ile birlikte kullanabilirsiniz. ALT tuşunu kullanarak seçili kılavuzu tutturma etkilerini devre dışı bırakır. Taşıma Kılavuzu SHIFT tuşunu ile açıldı denetimleri kılavuzla geçmesini önler.  

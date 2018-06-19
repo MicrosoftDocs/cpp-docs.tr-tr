@@ -25,6 +25,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33879171"
 ---
 # <a name="how-to-open-a-resource-script-file-outside-of-a-project-standalone"></a>Nasıl Yapılır: Proje Dışındaki Kaynak Betik Dosyasını Açma (Tek Başına)
 Açık bir projeniz gerek kalmadan, kaynakları .rc dosyasında görüntüleyebilirsiniz. .Rc dosya açılırken içinde aksine belge penceresinde açılır [kaynak görünümü](../windows/resource-view-window.md) penceresi (dosya projesi içinde açık olduğunda bu yaptığı gibi).  

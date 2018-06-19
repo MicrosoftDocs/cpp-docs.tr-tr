@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33880536"
 ---
 # <a name="image-menu-image-editor-for-icons"></a>Görüntü Menüsü (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi etkin olduğunda görüntülenir, Görüntü menüsü görüntüleri düzenleme, renk paletlerini yönetme ve görüntü Düzenleyicisi penceresini seçeneklerini ayarlama komutlar vardır. Ayrıca, simgeler ve İmleçler ile çalışırken, cihaz görüntüleri kullanma komutlar kullanılabilir.  

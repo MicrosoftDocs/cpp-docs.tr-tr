@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33872994"
 ---
 # <a name="displaying-or-hiding-the-toolbar-image-editor-for-icons"></a>Araç Çubuğunu Görüntüleme veya Gizleme (Simgeler İçin Görüntü Düzenleyicisi)
 Çizim Araçları çoğunu kullanılabilir olduğundan [klavye](../windows/accelerator-keys-image-editor-for-icons.md), görüntü Düzenleyicisi araç çubuğunu gizlemek bazen yararlıdır.  

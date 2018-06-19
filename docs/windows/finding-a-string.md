@@ -23,6 +23,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33875740"
 ---
 # <a name="finding-a-string"></a>Dize Bulma
 Bir veya daha fazla dizelerini dize tablosunda arayın ve kullanmak [normal ifadeler](/visualstudio/ide/using-regular-expressions-in-visual-studio) ile **dosyalarda Bul** komutu (**Düzenle** menüsü) dizeleri tüm örneklerini bulmak için bir desenle eşleşir.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33686077"
 ---
 # <a name="314-ompgetthreadnum-function"></a>3.1.4 omp_get_thread_num İşlevi
 `omp_get_thread_num` İşlevi iş parçacığı sayısı, kendi takım içindeki işlevi yürütme iş parçacığı döndürür. 0 arasında iş parçacığı sayısı kalıyor ve **omp_get_num_threads()**-1, (dahil) arasındadır. Takım ana iş parçacığı 0 parçacığıdır.  

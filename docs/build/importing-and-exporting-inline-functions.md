@@ -27,6 +27,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32368583"
 ---
 # <a name="importing-and-exporting-inline-functions"></a>Satır İçi İşlevleri İçeri ve Dışarı Aktarma
 İçeri aktarılan işlevler satır içi olarak tanımlanabilir. Etkisi kabaca standart işlev satır içi tanımlama aynıdır; işlev çağrıları makro gibi satır içi koda genişletilir. C++ destekleyen bir şekilde DLL'de bazı üye işlevleri için verimliliğini sınıflarını gibi temelde faydalı olur.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34255589"
 ---
 # <a name="atl-macros"></a>ATL makroları
 ATL makrosu kategoriye göre bulmak için aşağıdaki konulara bakın.  

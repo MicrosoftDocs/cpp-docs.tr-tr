@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33880724"
 ---
 # <a name="nullptr--c-component-extensions"></a>nullptr (C++ Bileşen Uzantıları)
 `nullptr` Anahtar sözcüğü temsil eden bir *null işaretçi değeri*. Boş işaretçi değeri bir nesneye bir nesne tanıtıcısı, iç işaretçi veya yerel işaretçi türü göstermiyor belirtmek için kullanın.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33173144"
 ---
 # <a name="stlclr-containers"></a>STL/CLR Kapsayıcıları
 STL/CLR kitaplığı için C++ Standart Kitaplığı'nda bulunan aynı kapsayıcıları olsa da, .NET Framework yönetilen ortamında çalışır. C++ Standart kitaplığı ile bilginiz varsa, STL/CLR hedef ortak dil çalışma zamanı (CLR) kodunuzu yükseltirken zaten geliştirdik becerileri kullanmaya devam etmek için en iyi yoludur.  

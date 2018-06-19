@@ -28,6 +28,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33879854"
 ---
 # <a name="how-to-copy-resources"></a>Nasıl Yapılır: Kaynakları Kopyalama
 Kaynakları bir dosyasından diğerine bunları değiştirmeden kopyalayabilirsiniz veya yapabilecekleriniz [dilini veya koşulunu bir kaynağın kopyalama sırasında değiştirmek](../windows/how-to-change-the-language-or-condition-of-a-resource-while-copying.md).  

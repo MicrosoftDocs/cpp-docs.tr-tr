@@ -31,6 +31,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32392123"
 ---
 # <a name="storage-class-specifiers-for-external-level-declarations"></a>Dış Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları
 Dış değişkenler dosya kapsamında değişkenlerdir. Dışında herhangi bir işlev tanımlanır ve birçok işlevini potansiyel olarak kullanılabilir. İşlevler yalnızca dış düzeyinde tanımlanabilir ve bu nedenle, iç içe olamaz. Varsayılan olarak, dış değişkenleri ve işlevleri aynı ada sahip yapılan tüm başvuruları "dış bağlantı." sahip oldukları anlamına gelir aynı nesne başvuruları etkilenir. (Kullanabileceğiniz **statik** bu geçersiz kılma anahtar sözcüğü. Daha sonra daha fazla ayrıntı için bu bölümdeki bilgileri görebilirsiniz **statik**.)  

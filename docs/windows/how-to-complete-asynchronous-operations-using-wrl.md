@@ -18,6 +18,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33881531"
 ---
 # <a name="how-to-complete-asynchronous-operations-using-wrl"></a>Nasıl Yapılır: WRL Kullanarak Zaman Uyumsuz İşlemleri Tamamlama
 Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) zaman uyumsuz işlemleri başlatmak ve işlemlerini tamamladıktan sonra iş gerçekleştirmek için nasıl kullanılacağını gösterir.  

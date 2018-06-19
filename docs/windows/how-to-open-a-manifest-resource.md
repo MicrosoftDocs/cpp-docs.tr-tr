@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33881848"
 ---
 # <a name="how-to-open-a-manifest-resource"></a>Nasıl Yapılır: Bildirim Kaynağını Açma
 Bildirim kaynağı açarsanız [kaynak görünümü](../windows/resource-view-window.md), kaynak ikili biçimde açılır. Bildirim kaynağı içeriğini daha görüntülenebilir bir biçimde görüntülemek için kaynak Çözüm Gezgini'nden açmanız gerekir.  

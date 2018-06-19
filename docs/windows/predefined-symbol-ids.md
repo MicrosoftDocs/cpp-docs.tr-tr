@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33876429"
 ---
 # <a name="predefined-symbol-ids"></a>Önceden Tanımlanmış Sembol Kimlikleri
 Proje türüne bağlı olarak yeni bir proje başladığınızda, bazı sembol kimlikleri kullanımınız için önceden tanımlanmıştır. Bu simge kimlikleri çeşitli kitaplıkları ve MFC gibi proje türleri destekler. Bunlar genellikle herhangi bir uygulama veya donanım öğelerinin fare veya yazıcı gibi eylemleri içinde yer alan ortak görevleri temsil eder.  

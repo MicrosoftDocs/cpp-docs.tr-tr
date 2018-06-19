@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33225482"
 ---
 # <a name="compiler-error-c2400"></a>Derleyici Hatası C2400
 Satır içi derleyici sözdizimi hatası 'context'; 'belirteci' bulundu  

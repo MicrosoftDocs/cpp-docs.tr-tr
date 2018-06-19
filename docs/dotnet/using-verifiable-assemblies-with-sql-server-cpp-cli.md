@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33168652"
 ---
 # <a name="using-verifiable-assemblies-with-sql-server-ccli"></a>SQL Server ile Doğrulanabilen Derlemeler Kullanma (C++/CLI)
 Dinamik bağlantı kitaplıklarını (DLL'ler) paketlenmiş genişletilmiş saklı yordamlar Visual C++ ile geliştirilmiş işlevler aracılığıyla SQL Server işlevselliği genişletmek için bir yol sağlar. Genişletilmiş saklı yordamlar DLL'ler içinde işlevler olarak uygulanır. İşlevler ek olarak, genişletilmiş saklı yordamlar da tanımlayabilirsiniz [kullanıcı tanımlı türler](../cpp/classes-and-structs-cpp.md) ve [toplama işlevlerinin](http://msdn.microsoft.com/en-us/de255454-f45e-4281-81f9-bc61893ac5da) (örneğin, SUM veya AVG).  

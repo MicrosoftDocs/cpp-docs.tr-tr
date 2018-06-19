@@ -31,6 +31,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33881916"
 ---
 # <a name="icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons"></a>Simgeler ve İmleçler: Görüntüleme Cihazları için Görüntü Kaynakları (Simgeler İçin Görüntü Düzenleyicisi)
 Simgeler ve İmleçler farklı boyutlarda birden fazla görüntü içeren ve renk düzenleri farklı türlerdeki görüntüleme cihazları için grafik kaynaklardır. Ayrıca, bir imleç "etkin nokta," Windows konumunu izlemek için kullandığı konumun sahiptir. Simgeler ve İmleçler oluşturulur ve görüntü Düzenleyicisi'ni kullanarak, bit eşlemler ve diğer görüntüleri gibi düzenlenebilir.  

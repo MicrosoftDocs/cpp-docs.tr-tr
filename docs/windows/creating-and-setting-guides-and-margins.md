@@ -27,6 +27,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33873517"
 ---
 # <a name="creating-and-setting-guides-and-margins"></a>Kılavuzlar ve Kenar Boşlukları Oluşturma ve Ayarlama
 Denetimler ekleme denetimlerini taşıyor ya da geçerli bir düzen yeniden düzenleme, kılavuzları yardımcı olabilecek denetimleri doğru bir şekilde bir iletişim kutusu içinde hizalayın. Kılavuzlar, düzenleyici ve bunlara Cetveller (üst ve sol tarafında iletişim kutusu Düzenleyicisi) karşılık gelen okları görüntülenen bir iletişim kutusu üzerinden mavi noktalı çizgiler olarak görünür.  

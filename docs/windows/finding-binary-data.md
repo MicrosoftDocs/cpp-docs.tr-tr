@@ -26,6 +26,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33873569"
 ---
 # <a name="finding-binary-data"></a>İkili Verileri Bulma
 ASCII dizeleri veya onaltılık baytlar için arama yapabilirsiniz. Örneğin, "Hello" bulmak için için dize "Merhaba" veya arayabilirsiniz "48 65 6C 6 C 6F" (onaltılık eşdeğeri).  

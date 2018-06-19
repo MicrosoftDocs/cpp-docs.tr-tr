@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33230593"
 ---
 # <a name="compiler-error-c2555"></a>Derleyici Hatası C2555
 'class1::function1': sanal işlevi geçersiz kılma dönüş türü farklıdır ve 'class2::function2' eşdeğişken değil  

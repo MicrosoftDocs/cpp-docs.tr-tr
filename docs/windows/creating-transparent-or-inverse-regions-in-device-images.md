@@ -35,6 +35,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33882556"
 ---
 # <a name="creating-transparent-or-inverse-regions-in-device-images-image-editor-for-icons"></a>Cihaz Görüntülerinde Saydam veya Ters Bölgeler Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 İçinde [görüntü Düzenleyicisi](../windows/image-editor-for-icons.md), ilk simgesi veya imleci resmin saydam bir özniteliğine sahip. Simge ve imleci görüntüleri dikdörtgen olsa da, görüntünün parçalarını saydam olduğundan çoğu bunu görünmez; temel alınan görüntünün ekranında simgesi veya imleci gösterir. Simge sürüklediğinizde görüntünün parçalarını ters renkte görünebilir. Ekran renkleri ters renkte ayarlayarak bu efekti oluşturmak [renkler penceresi](../windows/colors-window-image-editor-for-icons.md).  

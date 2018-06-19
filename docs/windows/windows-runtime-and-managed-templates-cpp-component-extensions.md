@@ -20,6 +20,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33891369"
 ---
 # <a name="windows-runtime-and-managed-templates-c-component-extensions"></a>Windows Çalışma Zamanı ve Yönetilen Şablonlar (C++ Bileşen Uzantıları)
 Şablonları Windows çalışma zamanı veya ortak dil çalışma zamanı türü prototipi tanımlamanızı etkinleştirin ve ardından farklı bir şablon türü parametreleri kullanarak bu tür Çeşitlemeler örneği.  

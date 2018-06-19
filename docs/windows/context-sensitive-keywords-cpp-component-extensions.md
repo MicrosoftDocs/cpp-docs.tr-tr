@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33871529"
 ---
 # <a name="context-sensitive-keywords--c-component-extensions"></a>Bağlama Duyarlı Anahtar Sözcükler (C++ Bileşen Uzantıları)
 *Bağlama duyarlı anahtar sözcükler* yalnızca belirli bağlamlarda tanınır dil öğeleridir. Belirli bağlamı dışında kullanıcı tanımlı bir simge bağlama duyarlı anahtar sözcüğü olabilir.  

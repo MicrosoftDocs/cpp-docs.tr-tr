@@ -24,6 +24,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33871838"
 ---
 # <a name="creating-a-new-custom-or-data-resource"></a>Yeni Özel veya Veri Kaynağı Oluşturma
 Yeni bir özel veya veri kaynağı kaynak normal kaynak komut dosyası (.rc) dosya sözdizimi kullanılarak ayrı bir dosyada ve bu dosyayı dahil Çözüm Gezgini'nde projenize sağ tıklatıp koyarak oluşturabileceğiniz **kaynak içerir**  kısayol menüsünde.  

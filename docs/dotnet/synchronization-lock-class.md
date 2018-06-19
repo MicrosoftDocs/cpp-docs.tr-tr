@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33166692"
 ---
 # <a name="synchronization-lock-class"></a>Eşitleme (lock Sınıfı)
 Bir nesneye erişimi eşitleyen kilit almayı otomatikleştirmek için bir mekanizma sağlar.  

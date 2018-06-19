@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33169510"
 ---
 # <a name="using-explicit-pinvoke-in-c-dllimport-attribute"></a>C++'ta Açık PInvoke Kullanma (DllImport Özniteliği)
 .NET Framework ile açık Platform Çağırma (veya PInvoke) özellikleri sağlar `Dllimport` DLL'leri içinde paketlenmiş yönetilmeyen işlevleri çağırmak yönetilen uygulamalara izin vermek üzere özniteliği. Açık PInvoke olduğu yönetilmeyen API'ler DLL'ler olarak paketlenir ve kaynak kodu kullanılabilir olmadığı durumlarda gereklidir. Win32 işlevleri çağırma, örneğin, PInvoke gerektirir. Örtük P kullanmayacak {Invoke; bkz: [C++ Çalışabilirliği kullanarak (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md) daha fazla bilgi için.  

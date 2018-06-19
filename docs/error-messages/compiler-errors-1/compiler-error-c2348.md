@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33222247"
 ---
 # <a name="compiler-error-c2348"></a>Derleyici Hatası C2348
 'tür adı': C-style Toplama ifadesi değil, katıştırılmış-IDL dışarı aktarılamaz  

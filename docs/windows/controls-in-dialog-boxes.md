@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33873127"
 ---
 # <a name="controls-in-dialog-boxes"></a>İletişim Kutularındaki Denetimler
 Kullanarak bir iletişim kutusu denetimleri ekleyebilirsiniz [iletişim kutusu Düzenleyicisi sekmesi](../windows/dialog-editor-tab-toolbox.md) içinde [araç penceresi](/visualstudio/ide/reference/toolbox), istediğiniz ve iletişim kutusuna sürükleyin denetimi seçmenize olanak sağlar. Varsayılan olarak, araç penceresi otomatik gizle olarak ayarlanır. İletişim kutusu Düzenleyicisi açık olduğunda çözümünüzün sol kenar boşluğu sekmesinde olarak görünür. Konumda tıklayarak araç penceresi ancak sabitleyebilirsiniz **AutoHide** pencerenin sağ üst köşesindeki düğmesini. Bu pencere davranışını denetleme konusunda daha fazla bilgi için bkz: [pencere yönetimi](/visualstudio/ide/customizing-window-layouts-in-visual-studio).  

@@ -31,6 +31,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33871243"
 ---
 # <a name="customizing-or-changing-colors-image-editor-for-icons"></a>Renkleri Özelleştirme veya Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi'nin [renk paleti](../windows/colors-window-image-editor-for-icons.md) başlangıçta 16 standart renkleri görüntüler. Ek olarak görüntülenen renkler, kendi özel renkler oluşturabilirsiniz. Daha sonra [kaydetme ve özelleştirilmiş bir renk paleti yükleme](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).  

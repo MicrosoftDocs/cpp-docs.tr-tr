@@ -22,6 +22,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33877468"
 ---
 # <a name="pointerdefault"></a>pointer_default
 Parametre listelerinde görüntülenen en üst düzey işaretçileri dışındaki tüm işaretçiler varsayılan işaretçi özniteliğini belirtir.  

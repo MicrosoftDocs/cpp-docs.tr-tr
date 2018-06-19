@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32358120"
 ---
 # <a name="active-template-library-atl-concepts"></a>Etkin Şablon Kitaplığı (ATL) Kavramlar
 Etkin Şablon kitaplığı (ATL), küçük, hızlı Bileşen Nesne Modeli (COM) nesnelerini oluşturmanıza olanak tanıyan şablona dayalı C++ sınıflar kümesidir. Stok uygulamaları, çift arabirimler, standart COM Numaralandırıcı arabirimleri, bağlantı noktaları, etiketleri arabirimleri ve ActiveX denetimleri gibi anahtar COM özellik için özel desteğe sahiptir.  

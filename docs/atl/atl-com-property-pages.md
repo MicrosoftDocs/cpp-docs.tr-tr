@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32357538"
 ---
 # <a name="atl-com-property-pages"></a>ATL COM Özellik Sayfaları
 COM özellik sayfaları özelliklerini ayarlamak için bir kullanıcı arabirimi sağlar (veya yöntemleri çağırma) bir veya daha fazla COM Nesne. Özellik sayfaları, tasarım zamanında ayarlanacak denetim özellikleri sağlayan zengin bir kullanıcı arabirimleri sağlamak için ActiveX denetimleri tarafından yaygın olarak kullanılır.  

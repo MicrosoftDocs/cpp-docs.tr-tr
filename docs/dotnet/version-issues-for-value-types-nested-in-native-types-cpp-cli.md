@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33168847"
 ---
 # <a name="version-issues-for-value-types-nested-in-native-types-ccli"></a>Yerel Türlerin İçinde Bulunan Değer Türleri İçin Sürüm Sorunları (C++/CLI)
 Bir istemci derleme oluşturmak için kullanılan bir imzalı (tanımlayıcı ad) derleme bileşeninin göz önünde bulundurun. Bileşen istemci türü olarak yerel bir UNION, bir sınıf veya bir dizi üyesi için kullanılan bir değer türü içeriyor. Bileşen gelecek bir sürümünde boyutunu veya değer türü düzenini değiştirirse, istemcinin yeniden derlenmesi gerekiyor.  

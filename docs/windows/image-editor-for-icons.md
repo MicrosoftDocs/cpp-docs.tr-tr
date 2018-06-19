@@ -28,6 +28,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33879288"
 ---
 # <a name="image-editor-for-icons"></a>Simgeler İçin Görüntü Düzenleyicisi
 Resim düzenleyicisi, resim oluşturmak ve düzenlemek için kapsamlı bir araç kümesi ve ayrıca, araç çubuğu bit eşlemleri oluşturmanıza yardımcı olacak özellikler içerir. Bit eşlemler, simgeler ve İmleçler ek olarak, görüntüleri komutlarını kullanarak GIF veya JPEG biçiminde düzenleyebilirsiniz **görüntü** menü ve araçları **görüntü Düzenleyicisi** araç.  

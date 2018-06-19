@@ -24,6 +24,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33098010"
 ---
 # <a name="transaction-how-transactions-affect-updates-odbc"></a>İşlem: İşlemlerin Güncelleştirmeleri Etkilemesi (ODBC)
 Güncelleştirmeleri [veri kaynağı](../../data/odbc/data-source-odbc.md) düzenleme arabelleği (işlemleri dışında kullanılan aynı yöntemi) kullanımıyla işlemleri sırasında yönetilir. Kayıt alan veri üyeleri topluca geçici olarak sırasında kayıt yedekler geçerli kaydı içeren düzenleme arabelleği görevi gören bir `AddNew` veya **Düzenle**. Sırasında bir **silmek** işlemi, geçerli kayıt yedeklenmez bir işlem içinde. Düzenleme arabelleği ve nasıl geçerli kayıt güncelleştirmeleri depolamak hakkında daha fazla bilgi için bkz: [kayıt kümesi: nasıl kayıt kümelerini güncelleştirme kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).  

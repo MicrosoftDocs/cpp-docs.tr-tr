@@ -21,6 +21,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33885158"
 ---
 # <a name="editing-properties-for-an-activex-control"></a>ActiveX Denetimi Özelliklerini Düzenleme
 ActiveX denetimleri bağımsız satıcıları tarafından sağlanan kendi özellikleri ve özelliklere donanımlı gelebilir. ActiveX denetimleri için özellikleri Özellikler penceresinde görüntülenir. ActiveX denetimi yazarlar tarafından oluşturulan tüm özellik sayfalarını ek olarak, görüntülenen **özellikler sayfalarına** iletişim kutusu (belirli bir ActiveX denetimi özellik sayfasını görüntülemek için özellik sayfası düğmesini[Özellikler penceresini](/visualstudio/ide/reference/properties-window)).  

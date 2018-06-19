@@ -20,6 +20,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33881123"
 ---
 # <a name="id-property"></a>ID Özelliği
 ID özelliği her Hızlandırıcı tablosu girişini program kodundaki başvurur. Bu kullanıcı kısayol tuşu veya tuş bileşimine bastığında program alacak komutu değerdir. (Hızlandırıcı tablo kodu menüsü kaynak kimliği ile aynı olduğu sürece) bir kısayol menü öğesi ile aynı olmak için kimlikleri aynı olun.  

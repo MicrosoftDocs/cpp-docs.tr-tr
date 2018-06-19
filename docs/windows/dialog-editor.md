@@ -26,6 +26,7 @@ ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33875864"
 ---
 # <a name="dialog-editor"></a>İletişim Kutusu Düzenleyicisi
 İletişim kutusu Düzenleyicisi oluşturma veya düzenleme iletişim kutusu kaynakları sağlar. Kaynak Görünümü penceresi bir iletişim kutusu .rc dosyasına çift tıklayarak iletişim kutusu Düzenleyicisi'ni açın (**Görünüm &#124; kaynak görünümü**). Kaynak Görünümü Express sürümlerinde kullanılabilir olmadığını unutmayın.  

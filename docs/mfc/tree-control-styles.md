@@ -34,6 +34,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33382043"
 ---
 # <a name="tree-control-styles"></a>Ağaç Denetimi Stilleri
 Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) stilleri yöneten bir ağaç denetimin görünümünü yönlerini. Ağaç denetimi oluşturduğunuzda, ilk stilleri ayarlama. Alabilir ve kullanarak oluşturduktan sonra ağaç denetimi stilleri değiştirme [GetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633584) ve [SetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633591) belirterek Windows işlevleri **GWL_STYLE** için `nIndex` parametresi. Stilleri tam bir listesi için bkz: [ağaç görünümü denetimi pencere stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760013) Windows SDK.  
