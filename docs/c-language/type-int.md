@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32389182"
 ---
 # <a name="type-int"></a>Tür int
 İşaretli veya işaretsiz bir `int` öğesinin boyutu, belirli bir makinedeki bir tamsayının standart boyutudur. Örneğin, 16 bit işletim sistemlerinde `int` türü genellikle 16 bit veya 2 bayttır. 32 bit işletim sistemlerinde, `int` türü genellikle 32 bit veya 4 bayttır. Bu nedenle, `int` türüdür ya da eşdeğer `short int` veya **uzun tamsayı** türü ve `unsigned int` türüdür ya da eşdeğer **kısa imzasız** veya `unsigned long` bağlı olarak hedef ortam türü. `int` türlerinin hepsi aksi belirtilmediği sürece işaretli değerleri temsil eder.  

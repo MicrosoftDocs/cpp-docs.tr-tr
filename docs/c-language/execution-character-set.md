@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32382831"
 ---
 # <a name="execution-character-set"></a>Yürütme Karakter Kümesi
 Bu içerik çoğu zaman "yürütme karakter kümesi" anlamına gelir. Yürütme karakter kümesi, C programları yazmak için kullanılan kaynak karakter kümesi ile aynı olmayabilir. Yürütme karakter kümesi, kaynak karakter kümesindeki tüm karakterleri ve null karakterini, yeni satır karakterini, geri al karakterini, yatay sekmeyi, dikey sekmeyi, satır başını ve kaçış dizilerini içerir. Kaynak ve yürütme karakter kümeleri, diğer uygulamalarda farklı olabilir.  

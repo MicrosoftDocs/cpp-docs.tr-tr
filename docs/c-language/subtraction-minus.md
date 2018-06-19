@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32386952"
 ---
 # <a name="subtraction--"></a>Çıkarma (-)
 Çıkarma işleci (**-**) ilk ikinci işlenen çıkarır. Her iki işlenen, tamsayı veya kayan türleri veya bir işlenen bir işaretçi ve diğer bir tamsayı olabilir.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32389195"
 ---
 # <a name="scope-and-visibility"></a>Kapsam ve Görünürlük
 İçinde başvurulabilir program bölümlerini bir tanımlayıcının "görünürlük" belirler — "kapsamı." Bir görünür bir tanımlayıcıdır (yani, kullanılabilir), (, restrictiveness artan sırada), dosya, işlev, blok veya işlev prototipi göründüğü sınırlı bölümleri kendi "kapsam tarafından" çevrelenmiş bir programın içinde. Tanımlayıcı kapsamını adı kullanılabilir program parçasıdır. Buna bazen "sözcük kapsamı." adı verilir Kapsam dört tür vardır: işlev, dosya, blok ve işlev prototipi.  

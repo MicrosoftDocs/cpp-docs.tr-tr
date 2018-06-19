@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33135085"
 ---
 # <a name="how-to-enumerate-data-types-in-assemblies-using-reflection-ccli"></a>Nasıl yapılır: Yansıma Kullanarak Derlemelerde Veri Türlerini Numaralandırma (C++/CLI)
 Aşağıdaki kodu kullanarak genel tür ve üyelerin listesi gösterir <xref:System.Reflection>.  

@@ -53,6 +53,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32393608"
 ---
 # <a name="bessel-functions-j0-j1-jn-y0-y1-yn"></a>Bessel işlevleri: _j0, _j1, _jn, _y0, _y1, _yn
 

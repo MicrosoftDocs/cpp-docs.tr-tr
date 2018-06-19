@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32390419"
 ---
 # <a name="multithreaded-libraries-performance"></a>Çok İş Parçacıklı Kitaplık Performansı
 Tek iş parçacıklı CRT artık kullanılamıyor. Bu konuda en yüksek performans birden çok iş parçacıklı kitaplıklarından alma anlatılmaktadır.  

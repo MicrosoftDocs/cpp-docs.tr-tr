@@ -44,6 +44,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32389855"
 ---
 # <a name="inp-inpw-inpd"></a>_inp, _inpw, _inpd
 Bir bayt bir bağlantı noktasından girişleri (`_inp`), bir sözcük (`_inpw`), veya bir çift sözcük (`_inpd`).  

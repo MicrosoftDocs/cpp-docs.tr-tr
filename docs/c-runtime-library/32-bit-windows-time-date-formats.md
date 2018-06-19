@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387466"
 ---
 # <a name="32-bit-windows-timedate-formats"></a>32 Bit Windows Saat/Tarih Biçimleri
 Dosyanın dosya saati ve tarihi ayrı ayrı işaretsiz tamsayı bit alanları kullanılarak depolanır. Dosyanın dosya saati ve tarihi gibi paketlenmiş:  

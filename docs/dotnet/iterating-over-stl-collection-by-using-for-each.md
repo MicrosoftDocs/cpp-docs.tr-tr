@@ -20,6 +20,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33131348"
 ---
 # <a name="iterating-over-c-standard-library-collection-by-using-for-each"></a>Foreach kullanarak C++ Standart Kitaplığı koleksiyonu üzerinden yineleme yapma
 `for each` Anahtar sözcüğü, C++ Standart Kitaplığı koleksiyon üzerinde döngüyle gezinmek için kullanılabilir.  

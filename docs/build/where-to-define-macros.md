@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380920"
 ---
 # <a name="where-to-define-macros"></a>Makroları Nerede Tanımlamalı
 Makrolar, bir komut satırı, komut dosyası, derleme görevleri dosyası veya Tools.ini dosyasında tanımlayın.  

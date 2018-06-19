@@ -36,6 +36,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391463"
 ---
 # <a name="daylight-dstbias-timezone-and-tzname"></a>_daylight, _dstbias, _timezone ve _tzname
 `_daylight`, `_dstbias`, `_timezone`, ve `_tzname` bazı saat ve tarih yordamları yerel saat ayarlamaları yapmak için kullanılır. Genel değişkenler yerine kullanılmalıdır daha güvenli işlevsel sürümleri için bu genel değişkenler kullanım dışı bırakıldı.  

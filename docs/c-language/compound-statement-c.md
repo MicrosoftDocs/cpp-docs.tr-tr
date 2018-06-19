@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385731"
 ---
 # <a name="compound-statement-c"></a>Bileşik Deyim (C)
 Bileşik deyim (Ayrıca çağrılan bir "bloğu") genellikle başka bir ifade gövdesi olarak gibi görünen **varsa** deyimi. [Bildirimler ve türler](../c-language/declarations-and-types.md) bileşik deyim head görünebilir bildirimleri anlamını ve form açıklar.  

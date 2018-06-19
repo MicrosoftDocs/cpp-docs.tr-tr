@@ -30,6 +30,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33134097"
 ---
 # <a name="native-and-net-interoperability"></a>Yerel ve.NET Birlikte Çalışabilirliği
 Visual C++ birlikte var ve aynı bütünleştirilmiş kod içinde ve hatta aynı dosyada çalışmanız yönetilen ve yönetilmeyen yapılarına izin birlikte çalışabilirlik özelliklerini destekler. Bu işlevlerin P/Invoke gibi küçük bir alt diğer .NET dilleri tarafından da desteklenir, ancak çoğu Visual C++ tarafından sağlanan birlikte çalışabilirlik desteği, diğer dillerde kullanılabilir değil.  

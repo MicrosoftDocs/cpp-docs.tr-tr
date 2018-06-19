@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32380540"
 ---
 # <a name="zg-generate-function-prototypes"></a>/Zg (İşlev Prototipleri Üret)
 Kaldırıldı. Kaynak dosyasında tanımlanan her işlev için işlev prototipi oluşturur, ancak kaynak dosya derlenmiyor.  

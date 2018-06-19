@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32388296"
 ---
 # <a name="control-flags"></a>Denetim Bayrakları
 Microsoft C çalışma zamanı kitaplığı hata ayıklama sürümü aşağıdaki bayraklar denetim yığın ayırma ve raporlama işlemi kullanır. Daha fazla bilgi için bkz: [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381661"
 ---
 # <a name="c-constants"></a>C Sabitleri
 Bir "sabit" sayı, karakter ya da bir program değer olarak kullanılan karakter dizesi değil. Kayan nokta temsil etmek için sabitleri, tamsayı, numaralandırma veya değiştirilemez karakter değerleri kullanın.  

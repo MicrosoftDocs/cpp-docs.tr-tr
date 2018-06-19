@@ -32,6 +32,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32392503"
 ---
 # <a name="ismbb-routines"></a>_ismbb Rutinleri
 Verilen tamsayı değeri test `c` geçerli yerel ya da belirtilen LC_CTYPE dönüştürme durumu kategori kullanarak belirli bir koşul için.  

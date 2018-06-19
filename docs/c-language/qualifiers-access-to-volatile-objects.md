@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32384691"
 ---
 # <a name="qualifiers-access-to-volatile-objects"></a>Niteleyiciler: Geçici Nesnelere Erişim
 **ANSI 3.5.5.3** bir nesneye bir erişim, nelerin oluşturduğunu geçici tam türüne sahip  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33135865"
 ---
 # <a name="managed-types-ccl"></a>Yönetilen Türler (C++/CL)
 Yönetilen türlerin bildirimi oluşturma ve bu tür nesneler kullanımını söz diziminin önemli ölçüde Yönetilen Uzantılar'dan C++ için Visual C++ değiştirildi. Bu, ISO-C++ tür sistemi içinde kendi tümleştirme yükseltmek için yapılmıştır. Bu değişiklikler, aşağıdaki alt bölümlerde ayrıntılı olarak sunulur.  

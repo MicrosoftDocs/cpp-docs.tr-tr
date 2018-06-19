@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391658"
 ---
 # <a name="typedef-declarations"></a>Typedef Bildirimleri
 Typedef bildirimiyle depolama sınıfı olarak typedef bildirimidir. Yeni bir tür bildirimcisi olur. Typedef bildirimleri daha kısa ya da daha anlamlı adları zaten C tarafından tanımlanan türlerin veya bildirilen türleri oluşturmak için kullanabilirsiniz. TypeDef adları değişebilir uygulama ayrıntılarını kapsülleyen olanak sağlar.  

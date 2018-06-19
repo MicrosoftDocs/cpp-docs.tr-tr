@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32381245"
 ---
 # <a name="c-unary-operators"></a>C Birli İşleçler
 Birli işleçleri önce kendi işleneni görünür ve sağdan sola ilişkilendirebilirsiniz.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387784"
 ---
 # <a name="statements-c"></a>Deyimler (C)
 C programı deyimleri program yürütme akışını denetler. C, başka bir programlama dili olduğu gibi çeşitli türlerde deyimleri yürütülebilir ve denetim transfer etmek için diğer deyimler seçmek için döngüler gerçekleştirmek kullanılabilir. Kısa bir aşağıdaki [deyimi sözdizimi genel bakış](../c-language/overview-of-c-statements.md), bu bölümde alfabetik C deyimlerinde açıklanmaktadır:  

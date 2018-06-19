@@ -29,6 +29,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32390941"
 ---
 # <a name="type-float"></a>Tür float
 Kayan nokta sayıları IEEE (Institute of Electrical and Electronics Engineers) biçimini kullanın. Tek duyarlıklı kayan noktalı sayı türü değerlerle oturum bit, 8 bit aşırı 127 ikili üs ve 23 bit Mantis oluşan 4 bayt vardır. Mantis 1.0 ve 2.0 arasında bir sayı temsil eder. Mantis yüksek sıra biti 1 her zaman olduğundan sayısında depolanmaz. Bu gösterim yaklaşık 3.4E bir dizi sağlar-3.4E + 38 tür float için 38.  

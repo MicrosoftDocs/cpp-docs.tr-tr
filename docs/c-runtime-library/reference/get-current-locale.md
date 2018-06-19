@@ -41,6 +41,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32396946"
 ---
 # <a name="getcurrentlocale"></a>_get_current_locale
 

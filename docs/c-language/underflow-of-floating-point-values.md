@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387830"
 ---
 # <a name="underflow-of-floating-point-values"></a>Kayan Nokta Değerlerinin Yetersiz Kalması
 **ANSI 4.5.1** olup matematik işlevleri set tamsayı ifadesi `errno` makrosu değerine `ERANGE` underflow aralığı hatalar hakkında  

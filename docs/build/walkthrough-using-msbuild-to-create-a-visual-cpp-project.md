@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32392568"
 ---
 # <a name="walkthrough-using-msbuild-to-create-a-visual-c-project"></a>İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma
 Bu kılavuzda nasıl kullanılacağı ortaya [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] bir komut isteminde Visual C++ projesi oluşturmak için. C++ kaynak dosyaları ve bir Visual C++ konsol uygulaması için bir XML tabanlı proje dosyası nasıl oluşturulacağını öğreneceksiniz. Proje oluşturduktan sonra yapı işlemini nasıl özelleştireceğinizi öğreneceksiniz.  

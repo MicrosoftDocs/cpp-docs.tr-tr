@@ -25,6 +25,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33132784"
 ---
 # <a name="how-to-marshal-callbacks-and-delegates-by-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışmayı Kullanarak Geri Çağrıları ve Temsilcileri Sıralama
 Bu konu geri çağrılar sıralanabileceği gösterilmektedir ve (bir geri çağırma yönetilen sürümü) kullanarak Visual C++ yönetilen ve yönetilmeyen kodu arasında atar.  

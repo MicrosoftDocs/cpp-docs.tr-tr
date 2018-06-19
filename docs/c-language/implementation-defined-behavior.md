@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383446"
 ---
 # <a name="implementation-defined-behavior"></a>Uygulama Tanımlı Davranış
 ANSI X3.159-1989, *Amerikan Ulusal standardı bilgi Systems* - *programlama dili* - *C*, adlı bir bölüm içerir "Taşınabilirlik sorunlarını." ANSI bölüm ANSI her belirli bir uygulamaya açık bırakır C dil alanlarının listeler. Bu bölümde, Microsoft C bu uygulama tanımlı alanlar C dilinin nasıl işlediği açıklanmıştır.  

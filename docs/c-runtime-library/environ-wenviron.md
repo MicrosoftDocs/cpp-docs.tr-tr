@@ -28,6 +28,7 @@ ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34451405"
 ---
 # <a name="environ-wenviron"></a>_environ, _wenviron
 `_environ` İşlem ortamını oluşturan çok baytlı karakter dizeleri işaretçiler dizisi için bir işaretçi bir değişkendir. Bu genel değişkeni daha güvenli işlevsel sürümleri için kullanım dışı [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md) ve [_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md), hangi kullanılmalıdır yerine genel değişkeni. `_environ` içinde Stdlib.h bildirildi.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32383741"
 ---
 # <a name="pointer-subtraction"></a>İşaretçi Çıkarması
 **ANSI 3.3.6, 4.1.1** iki işaretçiler aynı dizideki öğeler arasındaki fark tutmak için gereken Tamsayı türünde **ptrdiff_t**  

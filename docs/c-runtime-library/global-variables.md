@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32392045"
 ---
 # <a name="global-variables"></a>Global Değişkenler
 Microsoft C çalışma zamanı kitaplığı aşağıdaki genel değişkenleri veya makroları sağlar. Bu genel değişkenler veya makroları çeşitli hangi yerine genel değişkenler kullanmanızı öneririz, daha güvenli işlevsel sürümleri lehinde kullanım dışı bırakıldı.  

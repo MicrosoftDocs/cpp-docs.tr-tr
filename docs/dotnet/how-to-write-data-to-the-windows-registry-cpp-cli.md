@@ -21,6 +21,7 @@ ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33130808"
 ---
 # <a name="how-to-write-data-to-the-windows-registry-ccli"></a>Nasıl yapılır: Windows Kayıt Defterine Veri Yazma (C++/CLI)
 Aşağıdaki kod örneğinde <xref:Microsoft.Win32.Registry.CurrentUser> yazılabilir bir örneğini oluşturmak için anahtar <xref:Microsoft.Win32.RegistryKey> sınıfı karşılık gelen **yazılım** anahtarı. <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A> Yöntemi yeni bir anahtar oluşturun ve anahtar/değer çiftleri eklemek için sonra kullanılır.  

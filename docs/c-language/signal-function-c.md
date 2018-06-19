@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385851"
 ---
 # <a name="signal-function-c"></a>signal İşlevi (C)
 **ANSI 4.7.1.1** sinyalleri için kümesi **sinyal** işlevi  

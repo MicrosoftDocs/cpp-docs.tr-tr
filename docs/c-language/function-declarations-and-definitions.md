@@ -26,6 +26,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32384999"
 ---
 # <a name="function-declarations-and-definitions"></a>İşlev Bildirimleri ve Tanımlar (C++)
 İşlev prototipleri; işlevin türünü, dönüş türünü ve biçimsel parametrelerinin türünü ve sayısını belirler. İşlev tanımı işlev gövdesini içerir.  

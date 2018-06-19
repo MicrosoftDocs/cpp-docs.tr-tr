@@ -20,6 +20,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32382896"
 ---
 # <a name="default-signals"></a>Varsayılan Sinyaller
 **ANSI 4.7.1.1** durumunda denk **sinyal (***SIG***, sıg_dfl)** engelleme gerçekleştirilir sinyal bir sinyal işleyici çağrıdan önce yürütülmedi  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32389669"
 ---
 # <a name="storage-class-specifiers-with-function-declarations"></a>İşlev Bildirimli Depolama Sınıfı Tanımlayıcıları
 Kullanabilirsiniz **statik** veya `extern` işlev bildirimleri depolama sınıfı tanımlayıcısı. İşlevlerin her zaman genel kullanım ömürleri vardır.  

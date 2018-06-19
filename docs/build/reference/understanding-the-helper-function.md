@@ -25,6 +25,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32379243"
 ---
 # <a name="understanding-the-helper-function"></a>Yardımcı İşlevini Anlama
 Bağlayıcı tarafından desteklenen Gecikmeli Yükleme Yardımcısı işlevi ne gerçekte DLL çalışma zamanında yükler ' dir. Kendi işlevi yazma ve Delayimp.lib içinde sağlanan yardımcı işlevini kullanmak yerine, programa bağlayarak davranışını özelleştirmek için yardımcı işlevini değiştirebilirsiniz. Bir yardımcı işlevini tüm Gecikmeli yüklenen DLL'ler işlevi görür.  

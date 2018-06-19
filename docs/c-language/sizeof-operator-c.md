@@ -21,6 +21,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32388331"
 ---
 # <a name="sizeof-operator-c"></a>sizeof İşleci (C)
 `sizeof` işleci, işlenen türünde bir nesneyi depolamak için gereken depolama miktarını bayt cinsinden verir. Bu işleç, makine bağımlı veri boyutları programlarınıza belirtmekten kaçının olanak sağlar.  

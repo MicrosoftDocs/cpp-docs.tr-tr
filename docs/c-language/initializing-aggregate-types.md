@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32391684"
 ---
 # <a name="initializing-aggregate-types"></a>Toplama Türlerini Başlatma
 Bir "aggregate" yapısı, UNION veya dizi türü türüdür. Bir toplama türü toplama türleri üyeleri içeriyorsa, başlatma kurallar yinelemeli olarak uygulanır.  

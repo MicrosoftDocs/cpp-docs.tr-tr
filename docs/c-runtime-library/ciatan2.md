@@ -34,6 +34,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32387151"
 ---
 # <a name="ciatan2"></a>_CIatan2
 Tanjantını hesaplar *x* / *y* nerede *x* ve *y* yığının üst kısmında değerlerdir.  

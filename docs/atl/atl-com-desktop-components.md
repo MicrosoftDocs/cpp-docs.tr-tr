@@ -20,6 +20,7 @@ ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34255999"
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM Masaüstü bileşenleri
 ATL başvurusu Etkin Şablon kitaplığı (ATL), Bileşen Nesne Modeli (COM) nesneleri programlama basitleştirmek şablona dayalı C++ sınıfları kümesi belgeler. ATL tam olarak yararlanmak için COM çalışma aşina kullanmamanız önerilir.  

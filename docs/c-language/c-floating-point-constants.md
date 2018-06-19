@@ -24,6 +24,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385103"
 ---
 # <a name="c-floating-point-constants"></a>C Kayan Nokta Sabitleri
 "Kayan nokta sabiti" temsil eden imzalı bir gerçek sayı ondalık bir sayıdır. İmzalı bir gerçek sayı gösterimini bir tamsayı bölümü, bir kesirli kısmını ve üs içerir. Kayan nokta sabitleri değiştirilemez kayan nokta değerlerini temsil edecek şekilde kullanın.  

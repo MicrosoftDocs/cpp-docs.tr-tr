@@ -17,6 +17,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385718"
 ---
 # <a name="unrepresented-character-constants"></a>Temsil Edilmeyen Karakter Sabitleri
 **ANSI 3.1.3.4** temel yürütme karakter kümesi veya genişletilmiş karakteri temsil edilmeyen karakter ya da kaçış sırası içeren bir tamsayı karakter sabit değeri ayarlamak için geniş karakter sabiti  

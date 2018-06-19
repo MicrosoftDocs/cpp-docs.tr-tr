@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32384352"
 ---
 # <a name="c-comments"></a>C Açıklamaları
 Bir iletme eğik çizgi/yıldız birleşimi ile başlayan bir karakter dizisi "comment" olan (<b>/\*</b>), tek bir boşluk karakteri olarak derleyici tarafından kabul edilir ve aksi halde yoksayılır. Bir yorum yeni satır karakterleri dahil olmak üzere, ancak "açıklama bitiş" sınırlayıcı hariç gösterilebilir karakter kümesinden karakter herhangi bir birleşimini içerebilir (<b>\*/</b>). Açıklamalar, birden fazla satır kaplayabilir, ancak iç içe geçemez.  

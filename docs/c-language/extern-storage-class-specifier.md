@@ -23,6 +23,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32388734"
 ---
 # <a name="extern-storage-class-specifier"></a>extern Depolama Sınıfı Tanımlayıcısı
 `extern` depolama sınıfı belirticisiyle bildirilen bir değişken, programın kaynak dosyalarından birinde dış düzeyde tanımlanmış aynı ada sahip bir değişkene yönelik başvurudur. İç `extern` bildirimi, dış düzey değişken tanımını blok içinde görünür hale getirmek için kullanılır. Dış düzeyinde aksi bildirilmediği sürece, `extern` anahtar sözcüğü ile bildirilen bir değişken yalnızca bildirildiği blok içinde görülebilir.  

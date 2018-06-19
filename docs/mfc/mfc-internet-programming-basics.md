@@ -31,6 +31,7 @@ ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34255615"
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC Internet Programlama Temelleri
 Microsoft, istemci ve sunucu uygulamaları programlama için birçok API'ler sağlar. Internet için birçok yeni uygulama yazılmış ve yeni uygulama türlerini teknolojileri, tarayıcı yetenekleri ve güvenlik seçeneklerini değiştir yazılır. Tarayıcılar World Wide Web erişimi sağlama ve metin, grafik, ActiveX denetimleri ve belgeleri içeren HTML sayfalarını görüntüleme istemci bilgisayarlarda çalıştırın. Sunucuları, FTP, HTTP ve gopher hizmetleri sağlamak ve sunucu uzantısı uygulamaları CGI kullanmanın çalıştırın. Özel uygulamanızı bilgilerini almak ve veri Internet'te sağlayın.  

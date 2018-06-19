@@ -19,6 +19,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32385796"
 ---
 # <a name="truncation-of-floating-point-values"></a>Kayan Nokta Değerlerinin Kesilmesi
 **ANSI 3.2.1.4** kesilmesi veya bir kayan noktalı sayıdan daha dar bir kayan noktalı sayı dönüştürüldüğünde yuvarlama yönünü  

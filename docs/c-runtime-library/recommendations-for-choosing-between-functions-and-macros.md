@@ -22,6 +22,7 @@ ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32389640"
 ---
 # <a name="recommendations-for-choosing-between-functions-and-macros"></a>İşlevlerle Makrolar Arasında Seçim Önerileri
 Çoğu Microsoft çalışma zamanı kitaplığı yordamları derlenen veya İşlevler birleştirilen, ancak bazı yordamları makroları olarak uygulanır. Bir işlev ve bir yordam makrosu sürümü üstbilgi dosyası bildirir, her zaman sonra işlevi bildirimi göründüğünden makro tanımı, önceliklidir. Bir işlev ve makro uygulanan bir yordam çağırdığınızda, iki yolla işlev sürümü kullanmak için derleyicisi uygulayabilirsiniz:  
