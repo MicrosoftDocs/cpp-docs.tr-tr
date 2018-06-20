@@ -1,7 +1,7 @@
 ---
 title: CString kullanarak | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 591a319671ea42236af5ae7e80ea1cb94c3c446c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5759c8a0aaa628d612010cb7d04690a3d3bfa54f
+ms.sourcegitcommit: d06966efce25c0e66286c8047726ffe743ea6be0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361707"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238727"
 ---
 # <a name="using-cstring"></a>CString kullanma
 Bu bölümdeki konular, ile programlamayı açıklamaktadır `CString`. Hakkında başvuru belgeleri için `CString` sınıfı, belgelerine bakın [CStringT](../atl-mfc-shared/reference/cstringt-class.md).  
@@ -32,7 +32,7 @@ Bu bölümdeki konular, ile programlamayı açıklamaktadır `CString`. Hakkınd
   
  A `CStringW` nesnesini içeren `wchar_t` yazın ve Unicode dizeleri destekler. A `CStringA` nesnesini içeren `char` türü ve destekleyen tek baytlı ve çok baytlı (MBCS) dizeleri. A `CString` nesnesi ya da destekler `char` türü veya `wchar_t` türüne mi bağlı `MBCS` simge veya `UNICODE` simgesi derleme zamanında tanımlanır.  
   
- A `CString` nesne karakter verileri tutar bir `CStringData` nesnesi. `CString` kabul `null`-sonlandırılan C tarzı dizeler, ancak değil korumak `null` saklı karakter verilerinde karakter. Bunun yerine, `CString` parçaları dize uzunluğu. `CString` bir C stili dize verdiğinde null Sonlandırıcı sağlar. Ekleyebileceğiniz bir `null` içinde bir `CString`, ancak beklenmeyen sonuçlara neden olabilir.  
+ A `CString` nesne karakter verileri tutar bir `CStringData` nesnesi. `CString` kabul `null`-C stilinde dizeleri sonlandırıldı. `CString` dize uzunluğu daha hızlı performans, ancak aynı zamanda korur parçaları `null` LPCWSTR dönüştürme desteklemek için depolanan karakter verilerinde karakter. `CString` bir C stili dize verdiğinde null Sonlandırıcı içerir. Ekleyebileceğiniz bir `null` başka konumlara bir `CString`, ancak beklenmeyen sonuçlara neden olabilir.  
   
  Aşağıdaki dize sınıfları kümesi ile veya CRT desteği olmadan bir MFC kitaplık bağlamadan kullanılabilir: `CAtlString`, `CAtlStringA`, ve `CAtlStringW`.  
   

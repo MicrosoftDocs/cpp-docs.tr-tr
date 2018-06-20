@@ -1,7 +1,7 @@
 ---
 title: Bağlayıcı araçları hatası LNK1000 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/18/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f67df9c53b79fabfc9559380b5b57a72e64cb8a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7a01db36200995813ec4b6862e9ddd04c6f069ba
+ms.sourcegitcommit: d06966efce25c0e66286c8047726ffe743ea6be0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298242"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238688"
 ---
 # <a name="linker-tools-error-lnk1000"></a>Bağlayıcı Araçları Hatası LNK1000
-Bilinmeyen hata; Teknik destek seçenekleri için belgelere bakın  
-  
- Hata durumlarda dikkat edin, yalıtmak ve tekrarlanabilir bir test çalışması oluşturma ardından başvurun `Microsoft Product Support Services`. Araştırmak ve bu hata raporu hakkında daha fazla bilgi için bkz: [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 134650](http://support.microsoft.com/default.aspx?scid=kb;en-us;134650).  
-  
- Standart üstbilgi dosyaları (örneğin, dos.h) ve kendi dosyaları karıştırmak istiyorsanız bu hatayı alabilirsiniz. `#include` Standart üstbilgileri ilk olarak, kendi üst bilgi dosyaları tarafından izlenen.
+
+> Bilinmeyen hata; Teknik destek seçenekleri için belgelere bakın
+
+Hata durumlarda dikkat edin, sonra yalıtmak ve tekrarlanabilir bir test çalışması oluşturma deneyin. Araştırmak ve bu hata raporu hakkında daha fazla bilgi için bkz: [Visual C++ araç takımını veya belgelerinde bir sorun bildirme](../../how-to-report-a-problem-with-the-visual-cpp-toolset.md).
+
+Standart üstbilgi dosyaları (örneğin, Windows.h) ve kendi dosyaları karıştırmak istiyorsanız bu hatayı alabilirsiniz. Herhangi bir, ilk sonra standart üst bilgiler, kendi üst bilgi dosyaları tarafından izlediyseniz önceden derlenmiş üst bilgi içerir.
