@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a7fbdb3baff7531aa4e391e5d7e936c39e38fc0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d920ca54c9e97273e4bda563921a144339eafd0f
+ms.sourcegitcommit: 05075fce8a0ed7fddb99f50f3931db966a91450d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372625"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36271353"
 ---
 # <a name="chttpfile-class"></a>CHttpFile sınıfı
 İstek ve bir HTTP sunucusunda dosyaları okumak için işlevsellik sağlar.  
@@ -115,7 +115,7 @@ BOOL AddRequestHeaders(
  `dwFlags`  
  Yeni üst bilgileri semantiğini değiştirir. Aşağıdakilerden biri olabilir:  
   
-- `HTTP_ADDREQ_FLAG_COALESCE` Sonraki üstbilgiye bulunan ilk üstbilgisi eklemek için bayrağını kullanarak aynı ada sahip üstbilgileri birleştirir. Örneğin, "kabul et: metin / *" ve ardından "kabul et: ses /\*" sonuçları tek üstbilgi oluşturulması "kabul et: metin /\*, ses /\*". Bağlı bir düzeni birleştirmesine veya ayrı başlığı ile gönderilen istekleri tarafından alınan veri göre emin olmak için çağrı yapan uygulamanın kadar olur.  
+- `HTTP_ADDREQ_FLAG_COALESCE` Sonraki üstbilgiye bulunan ilk üstbilgisi eklemek için bayrağını kullanarak aynı ada sahip üstbilgileri birleştirir. Örneğin, "kabul et: metin /\*" ve ardından "kabul et: ses /\*" sonuçları tek üstbilgi oluşturulması "kabul et: metin /\*, ses /\*". Bağlı bir düzeni birleştirmesine veya ayrı başlığı ile gönderilen istekleri tarafından alınan veri göre emin olmak için çağrı yapan uygulamanın kadar olur.  
   
 - `HTTP_ADDREQ_FLAG_REPLACE` Bir kaldırma gerçekleştirir ve geçerli üstbilgi değiştirmek için ekleyin. Üstbilgi adı geçerli üstbilgiyi kaldırmak için kullanılan ve yeni üstbilgi eklemek için tam değer kullanılır. Üstbilgi değeri boş ise ve üst bilgi bulunamadı, kaldırılır. Değilse boş üstbilgi değeri değiştirilir.  
   

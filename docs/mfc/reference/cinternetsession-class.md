@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 832ae20ef5bcd1df4741f7e33be2758ab424ea5f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c0f885ad5ef8202e7826a8f53dc5df832eecc372
+ms.sourcegitcommit: 05075fce8a0ed7fddb99f50f3931db966a91450d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374571"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36271340"
 ---
 # <a name="cinternetsession-class"></a>CInternetSession sınıfı
 Oluşturur ve tek bir veya birkaç eşzamanlı Internet oturum başlatır ve gerekiyorsa, proxy sunucusuna bağlantınız açıklar.  
@@ -498,10 +498,10 @@ CStdioFile* OpenURL(
   
 |URL türü|Döndürür|  
 |--------------|-------------|  
-|File://|**CStdioFile\***|  
-|http://|**CHttpFile\***|  
-|Gopher://|**CGopherFile\***|  
-|FTP: / /|**CInternetFile\***|  
+|File://|**CStdioFile\\\***|  
+|http://|**CHttpFile\\\***|  
+|Gopher://|**CGopherFile\\\***|  
+|FTP: / /|**CInternetFile\\\***|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Parametre `dwFlags` ya da içermelidir **INTERNET_FLAG_TRANSFER_ASCII** veya **INTERNET_FLAG_TRANSFER_BINARY**, ancak ikisini birden değil. Kalan bayrakları Bitsel ile birleştirilebilir `OR` işleci ( **&#124;**).  

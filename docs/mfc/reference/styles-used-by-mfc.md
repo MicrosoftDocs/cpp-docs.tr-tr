@@ -206,12 +206,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6643a1c70b6a22126222d523de4426e1aebcf85b
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: ebde910e5573545c6b9b904f6db55e27f10492a3
+ms.sourcegitcommit: 05075fce8a0ed7fddb99f50f3931db966a91450d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34283346"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36271376"
 ---
 # <a name="styles-used-by-mfc"></a>MFC Tarafından Kullanılan Stiller  
   
@@ -321,7 +321,7 @@ Düzenleme stilleri uygulamak için [CEdit sınıfı](../../mfc/reference/cedit-
 |`ES_NOHIDESEL`|Normalde, denetim giriş odağı kaybettiğinde ve denetim giriş odağını aldığında seçimi tersine çevirir olmadığında düzenleme denetimi seçimi gizler. Belirtme `ES_NOHIDESEL` bu varsayılan eylem siler.|  
 |`ES_NUMBER`|Düzenleme denetimine girilecek yalnızca rakamlar sağlar.|  
 |`ES_OEMCONVERT`|Düzenleme denetimine girilen metin ANSI karakter kümesinden OEM karakter kümesini ve ANSI sonra geri dönüştürülür. Uygulama çağırdığında bu uygun karakter dönüştürme sağlar `AnsiToOem` ANSI dize düzenleme denetimindeki OEM karakterlerine dönüştürmek için Windows işlevi. Bu stili dosya adlarını içeren düzenleme denetimleri için kullanışlıdır.|  
-|`ES_PASSWORD`|Tüm karakterleri görüntüler bir yıldız işareti (**\***) düzenleme denetimine yazılan gibi. Bir uygulamanın kullanabileceği `SetPasswordChar` görüntülenen karakterini değiştirmek için üye işlevi.|  
+|`ES_PASSWORD`|Tüm karakterleri görüntüler bir yıldız işareti (**\\\***) düzenleme denetimine yazılan gibi. Bir uygulamanın kullanabileceği `SetPasswordChar` görüntülenen karakterini değiştirmek için üye işlevi.|  
 |`ES_READONLY`|Kullanıcının girmek veya metin düzenleme denetimindeki düzenleme engeller.|  
 |`ES_RIGHT`|Tek satırlı veya çok satırlı metin sağa hizalar denetim düzenleyin.|  
 |`ES_UPPERCASE`|Tüm karakterleri düzenleme denetimine yazılan gibi büyük harfe dönüştürür.|  

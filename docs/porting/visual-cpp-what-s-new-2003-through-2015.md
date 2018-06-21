@@ -13,12 +13,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9778a9d456ebd0fed6bc36c2c631849bcbfe11d
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: ef91c42d0787dac371d324eece1527e5366c89c3
+ms.sourcegitcommit: 05075fce8a0ed7fddb99f50f3931db966a91450d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705611"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36271402"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ ne&#39;s 2015 aracılığıyla yeni 2003
 
@@ -539,7 +539,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
     }
    ```
 
-  veya
+  -veya-
 
    ```cpp
     class base;  // as above
@@ -1585,7 +1585,7 @@ Böylece C ++ 11'e uyan ve Visual Studio 2013'te Visual C++'ta doğru derler Bu 
 
 - Sınıf türleri için noktalı virgül ekler.
 - Ham dize değişmez değerleri için parantez tamamlar.
-- Çok satırlı yorumlar tamamlandıktan (/ * * /)
+- Çok satırlı yorumlar tamamlandıktan (/\* \*/)
 
 **Tüm başvuruları Bul** artık otomatik olarak çözer ve metinsel eşleşmeleri listesinde görüntüledikten sonra arka planda başvuruları filtreler.
 
