@@ -53,7 +53,7 @@ Derleyici kodunuzda belgeleri oluşturmak için etiketli her yapı için bir kim
   
     -   ELEMENT_TYPE_PTR olarak temsil edilir bir ' *' değiştirilmiş türü aşağıdaki.  
   
-    -   ELEMENT_TYPE_BYREF olarak temsil edilir bir ' @' değiştirilmiş türü aşağıdaki.  
+    -   ELEMENT_TYPE_BYREF olarak temsil edilir bir ' \@' değiştirilmiş türü aşağıdaki.  
   
     -   ELEMENT_TYPE_PINNED olarak temsil edilir bir ' ^' değiştirilmiş türü aşağıdaki. Visual C++ Derleyici hiçbir zaman bu oluşturur.  
   
