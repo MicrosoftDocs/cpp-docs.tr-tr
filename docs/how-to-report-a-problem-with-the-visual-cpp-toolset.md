@@ -10,12 +10,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dec9cfac5273469eb37418929d83e273f6ab8612
-ms.sourcegitcommit: 1c2e035f98fb55d9b3c08ec3bb562179a368d0d1
+ms.openlocfilehash: fec9e92e05bdf3c1e12a8c7cb2ee060175fa6bf7
+ms.sourcegitcommit: 99a61ad26868f814589bf122dc4ab99c83ea2d0a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35253886"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297527"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ araç takımını veya belgelerinde bir sorun bildirme
 

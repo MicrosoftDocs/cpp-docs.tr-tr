@@ -7,24 +7,78 @@ ms.technology:
 ms.topic: reference
 f1_keywords:
 - cliext::queue
+- cliext::operator!=
+- cliext::operator<
+- cliext::operator<=
+- cliext::operator==
+- cliext::operator>
+- cliext::operator>=
+- cliext::queue::assign
+- cliext::queue::back
+- cliext::queue::back_item
+- cliext::queue::const_reference
+- cliext::queue::container_type
+- cliext::queue::difference_type
+- cliext::queue::empty
+- cliext::queue::front
+- cliext::queue::front_item
+- cliext::queue::generic_container
+- cliext::queue::generic_value
+- cliext::queue::get_container
+- cliext::queue::operator=
+- cliext::queue::pop
+- cliext::queue::push
+- cliext::queue::queue
+- cliext::queue::reference
+- cliext::queue::size
+- cliext::queue::size_type
+- cliext::queue::to_array
+- cliext::queue::value_type
 dev_langs:
 - C++
 helpviewer_keywords:
 - <queue> header [STL/CLR]
 - queue class [STL/CLR]
 - <cliext/queue> header [STL/CLR]
+- operator!= member [STL/CLR]
+- operator< member [STL/CLR]
+- operator<= member [STL/CLR]
+- operator== member [STL/CLR]
+- operator> member [STL/CLR]
+- operator>= member [STL/CLR]
+- assign member [STL/CLR]
+- back member [STL/CLR]
+- back_item member [STL/CLR]
+- const_reference member [STL/CLR]
+- container_type member [STL/CLR]
+- difference_type member [STL/CLR]
+- empty member [STL/CLR]
+- front member [STL/CLR]
+- front_item member [STL/CLR]
+- generic_container member [STL/CLR]
+- generic_value member [STL/CLR]
+- get_container member [STL/CLR]
+- operator= member [STL/CLR]
+- pop member [STL/CLR]
+- push member [STL/CLR]
+- queue member [STL/CLR]
+- reference member [STL/CLR]
+- size member [STL/CLR]
+- size_type member [STL/CLR]
+- to_array member [STL/CLR]
+- value_type member [STL/CLR]
 ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 7e65d5a364f5886df2bad976e3c34dc57266b70f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b4d591d2abd7613777dec6ae668badd84fe31d0c
+ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33172750"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36305559"
 ---
 # <a name="queue-stlclr"></a>sıraya al (STL/CLR)
 Şablon sınıfı ilk giren ilk çıkar özelliğine sahip erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `queue` temel alınan bir kapsayıcı bir sıra olarak yönetmek için.  
@@ -50,46 +104,51 @@ template<typename Value,
  Kapsayıcı  
  Temel alınan kapsayıcı türü.  
   
-## <a name="members"></a>Üyeler  
+## <a name="requirements"></a>Gereksinimler  
+ **Başlık:** \<cliext/kuyruk >  
+  
+ **Namespace:** cliext  
+
+## <a name="declarations"></a>Bildirimler  
   
 |Tür Tanımlaması|Açıklama|  
 |---------------------|-----------------|  
-|[queue::const_reference (STL/CLR)](../dotnet/queue-const-reference-stl-clr.md)|Bir öğe için sabit bir başvuru türü.|  
-|[queue::container_type (STL/CLR)](../dotnet/queue-container-type-stl-clr.md)|Temel alınan kapsayıcı türü.|  
-|[queue::difference_type (STL/CLR)](../dotnet/queue-difference-type-stl-clr.md)|İki öğe arasındaki işaretli mesafenin türü.|  
-|[queue::generic_container (STL/CLR)](../dotnet/queue-generic-container-stl-clr.md)|Kapsayıcı bağdaştırıcısı için genel arabirim türü.|  
-|[queue::generic_value (STL/CLR)](../dotnet/queue-generic-value-stl-clr.md)|Kapsayıcı bağdaştırıcısı için genel arabirimini öğenin türü.|  
-|[queue::reference (STL/CLR)](../dotnet/queue-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
-|[queue::size_type (STL/CLR)](../dotnet/queue-size-type-stl-clr.md)|İki öğe arasındaki işaretli mesafenin türü.|  
-|[queue::value_type (STL/CLR)](../dotnet/queue-value-type-stl-clr.md)|Öğenin türü.|  
+|[queue::const_reference (STL/CLR)](#const_reference)|Bir öğe için sabit bir başvuru türü.|  
+|[queue::container_type (STL/CLR)](#container_type)|Temel alınan kapsayıcı türü.|  
+|[queue::difference_type (STL/CLR)](#difference_type)|İki öğe arasındaki işaretli mesafenin türü.|  
+|[queue::generic_container (STL/CLR)](#generic_container)|Kapsayıcı bağdaştırıcısı için genel arabirim türü.|  
+|[queue::generic_value (STL/CLR)](#generic_value)|Kapsayıcı bağdaştırıcısı için genel arabirimini öğenin türü.|  
+|[queue::reference (STL/CLR)](#reference)|Bir öğe için bir başvuru türü.|  
+|[queue::size_type (STL/CLR)](#size_type)|İki öğe arasındaki işaretli mesafenin türü.|  
+|[queue::value_type (STL/CLR)](#value_type)|Öğenin türü.|  
   
 |Üye İşlevi|Açıklama|  
 |---------------------|-----------------|  
-|[queue::assign (STL/CLR)](../dotnet/queue-assign-stl-clr.md)|Tüm öğeleri değiştirir.|  
-|[queue::back (STL/CLR)](../dotnet/queue-back-stl-clr.md)|Son öğe erişir.|  
-|[queue::empty (STL/CLR)](../dotnet/queue-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
-|[queue::front (STL/CLR)](../dotnet/queue-front-stl-clr.md)|İlk öğe erişir.|  
-|[queue::get_container (STL/CLR)](../dotnet/queue-get-container-stl-clr.md)|Temel alınan kapsayıcı erişir.|  
-|[queue::pop (STL/CLR)](../dotnet/queue-pop-stl-clr.md)|İlk öğeyi kaldırır.|  
-|[queue::push (STL/CLR)](../dotnet/queue-push-stl-clr.md)|Yeni bir son öğesi ekler.|  
-|[queue::queue (STL/CLR)](../dotnet/queue-queue-stl-clr.md)|Bir kapsayıcı nesnesi oluşturur.|  
-|[queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md)|Öğe sayısını sayar.|  
-|[queue::to_array (STL/CLR)](../dotnet/queue-to-array-stl-clr.md)|Denetimli sırası yeni bir diziye kopyalar.|  
+|[queue::assign (STL/CLR)](#assign)|Tüm öğeleri değiştirir.|  
+|[queue::back (STL/CLR)](#back)|Son öğe erişir.|  
+|[queue::empty (STL/CLR)](#empty)|Bir öğe olup olmadığını sınar.|  
+|[queue::front (STL/CLR)](#front)|İlk öğe erişir.|  
+|[queue::get_container (STL/CLR)](#get_container)|Temel alınan kapsayıcı erişir.|  
+|[queue::pop (STL/CLR)](#pop)|İlk öğeyi kaldırır.|  
+|[queue::push (STL/CLR)](#push)|Yeni bir son öğesi ekler.|  
+|[queue::queue (STL/CLR)](#queue)|Bir kapsayıcı nesnesi oluşturur.|  
+|[queue::size (STL/CLR)](#size)|Öğe sayısını sayar.|  
+|[queue::to_array (STL/CLR)](#to_array)|Denetimli sırası yeni bir diziye kopyalar.|  
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
-|[queue::back_item (STL/CLR)](../dotnet/queue-back-item-stl-clr.md)|Son öğe erişir.|  
-|[queue::front_item (STL/CLR)](../dotnet/queue-front-item-stl-clr.md)|İlk öğe erişir.|  
+|[queue::back_item (STL/CLR)](#back_item)|Son öğe erişir.|  
+|[queue::front_item (STL/CLR)](#front_item)|İlk öğe erişir.|  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[queue::operator= (STL/CLR)](../dotnet/queue-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
-|[operator!= (queue) (STL/CLR)](../dotnet/operator-inequality-queue-stl-clr.md)|Belirler bir `queue` nesne diğerine eşit değil `queue` nesnesi.|  
-|[operator< (queue) (STL/CLR)](../dotnet/operator-less-than-queue-stl-clr.md)|Belirler bir `queue` nesnesi, başka değerinden `queue` nesnesi.|  
-|[operator<= (queue) (STL/CLR)](../dotnet/operator-less-or-equal-queue-stl-clr.md)|Belirler bir `queue` nesnesidir değerinden küçük veya eşit başka `queue` nesnesi.|  
-|[operator== (queue) (STL/CLR)](../dotnet/operator-equality-queue-stl-clr.md)|Belirler bir `queue` nesnesidir diğerine eşit `queue` nesnesi.|  
-|[operator> (queue) (STL/CLR)](../dotnet/operator-greater-than-queue-stl-clr.md)|Belirler bir `queue` nesnesidir diğerinden daha büyük `queue` nesnesi.|  
-|[operator>= (queue) (STL/CLR)](../dotnet/operator-greater-or-equal-queue-stl-clr.md)|Belirler bir `queue` nesnesidir büyük veya ona eşit diğerine `queue` nesnesi.|  
+|[queue::operator= (STL/CLR)](#op_as)|Denetimli dizisi yerini alır.|  
+|[operator!= (queue) (STL/CLR)](#op_neq)|Belirler bir `queue` nesne diğerine eşit değil `queue` nesnesi.|  
+|[operator< (queue) (STL/CLR)](#op_lt)|Belirler bir `queue` nesnesi, başka değerinden `queue` nesnesi.|  
+|[operator<= (queue) (STL/CLR)](#op_lteq)|Belirler bir `queue` nesnesidir değerinden küçük veya eşit başka `queue` nesnesi.|  
+|[operator== (queue) (STL/CLR)](#op_eq)|Belirler bir `queue` nesnesidir diğerine eşit `queue` nesnesi.|  
+|[operator> (queue) (STL/CLR)](#op_gt)|Belirler bir `queue` nesnesidir diğerinden daha büyük `queue` nesnesi.|  
+|[operator>= (queue) (STL/CLR)](#op_gteq)|Belirler bir `queue` nesnesidir büyük veya ona eşit diğerine `queue` nesnesi.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   
@@ -98,18 +157,1502 @@ template<typename Value,
 |<xref:System.ICloneable>|Yinelenen bir nesne.|  
 |IQueue\<değeri, kapsayıcı >|Genel kapsayıcı bağdaştırıcısı korur.|  
   
-## <a name="remarks"></a>Açıklamalar  
+### <a name="remarks"></a>Açıklamalar  
  Nesne ayırır ve türündeki temel alınan bir kapsayıcı denetlediği dizisi için depolama boşaltır `Container`, depolar `Value` öğeleri ve isteğe bağlı olarak artar. Yalnızca ilk öğe gönderilmesi için nesne erişimi kısıtlayan ve son öğe pencerelerinin, ilk giren ilk çıkar uygulama sıraya (FIFO sıra veya yalnızca bir sıra olarak da bilinir).  
   
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** \<cliext/kuyruk >  
+## <a name="members"></a>Üyeler
+
+## <a name="assign"></a> Queue::Assign (STL/CLR)
+Tüm öğeleri değiştirir.  
   
- **Namespace:** cliext  
+### <a name="syntax"></a>Sözdizimi  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [deque (STL/CLR)](../dotnet/deque-stl-clr.md)   
- [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
- [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md)   
- [Yığın (STL/CLR)](../dotnet/stack-stl-clr.md)   
- [vektör (STL/CLR)](../dotnet/vector-stl-clr.md)   
- [STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)
+```  
+void assign(queue<Value, Container>% right);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ sağ  
+ Eklemek için kapsayıcı Bağdaştırıcısı'nı tıklatın.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Üye işlevini atar `right.get_container()` temel kapsayıcısı. Sıranın tüm içeriğini değiştirmek için kullanın.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_assign.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display initial contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// assign a repetition of values   
+    Myqueue c2;   
+    c2.assign(c1);   
+    for each (wchar_t elem in c2.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+a b c  
+a b c  
+```  
+
+## <a name="back"></a> Queue::Back (STL/CLR)
+Son öğe erişir.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+reference back();  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Üye işlevini son öğe boş olmalıdır denetimli dizisi için bir başvuru döndürür. Mevcut bildiğinizde son öğesine erişmek için kullanın.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_back.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display initial contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// inspect last item   
+    System::Console::WriteLine("back() = {0}", c1.back());   
+  
+// alter last item and reinspect   
+    c1.back() = L'x';   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+back() = c  
+ a b x  
+```  
+
+## <a name="back_item"></a> Queue::back_item (STL/CLR)
+Son öğe erişir.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+property value_type back_item;  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Özelliği, son öğe boş olmalıdır denetimli dizisi erişir. Okumak veya mevcut bildiğinizde son öğe yazmak için kullanın.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_back_item.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display initial contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// inspect last item   
+    System::Console::WriteLine("back_item = {0}", c1.back_item);   
+  
+// alter last item and reinspect   
+    c1.back_item = L'x';   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+back_item = c  
+ a b x  
+```  
+
+## <a name="const_reference"></a> Queue::const_reference (STL/CLR)
+Bir öğe için sabit bir başvuru türü.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+typedef value_type% const_reference;  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Bir öğe için sabit bir başvuru türü açıklanmaktadır.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_const_reference.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display contents " a b c"   
+    for (; !c1.empty(); c1.pop())   
+        {   // get a const reference to an element   
+        Myqueue::const_reference cref = c1.front();   
+        System::Console::Write(" {0}", cref);   
+        }   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+a b c  
+```  
+
+## <a name="container_type"></a> Queue::container_type (STL/CLR)
+Temel alınan kapsayıcı türü.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+typedef Container value_type;  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Şablon parametresi için bir eş anlamlı türüdür `Container`.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_container_type.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display contents " a b c" using container_type   
+    Myqueue::container_type wc1 = c1.get_container();   
+    for each (wchar_t elem in wc1)   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+a b c  
+```  
+
+## <a name="difference_type"></a> Queue::difference_type (STL/CLR)
+İki öğe arasındaki imzalı uzaklığı türü.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+typedef int difference_type;  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Türünü büyük olasılıkla negatif öğe sayısını tanımlar.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_difference_type.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display initial contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// compute negative difference   
+    Myqueue::difference_type diff = c1.size();   
+    c1.push(L'd');   
+    c1.push(L'e');   
+    diff -= c1.size();   
+    System::Console::WriteLine("pushing 2 = {0}", diff);   
+  
+// compute positive difference   
+    diff = c1.size();   
+    c1.pop();   
+    c1.pop();   
+    c1.pop();   
+    diff -= c1.size();   
+    System::Console::WriteLine("popping 3 = {0}", diff);   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+pushing 2 = -2  
+popping 3 = 3  
+```  
+
+## <a name="empty"></a> Queue::Empty (STL/CLR)
+Bir öğe olup olmadığını sınar.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+bool empty();  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Üye işlevi boş denetimli dizisi için true değerini döndürür. Eşdeğer olan [queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md)`() == 0`. Sıranın boş olup olmadığını sınamak için kullanın.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_empty.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display initial contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    System::Console::WriteLine("size() = {0}", c1.size());   
+    System::Console::WriteLine("empty() = {0}", c1.empty());   
+  
+// clear the container and reinspect   
+    c1.pop();   
+    c1.pop();   
+    c1.pop();   
+    System::Console::WriteLine("size() = {0}", c1.size());   
+    System::Console::WriteLine("empty() = {0}", c1.empty());   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+size() = 3  
+empty() = False  
+size() = 0  
+empty() = True  
+```  
+
+## <a name="front"></a> Queue::Front (STL/CLR)
+İlk öğe erişir.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+reference front();  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Üye işlevi boş olması gerekir denetlenen dizisinin ilk öğesi için bir başvuru döndürür. Mevcut bildiğinizde ilk öğe erişmek için kullanın.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_front.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display initial contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// inspect first item   
+    System::Console::WriteLine("front() = {0}", c1.front());   
+  
+// alter first item and reinspect   
+    c1.front() = L'x';   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+front() = a  
+ x b c  
+```  
+
+## <a name="front_item"></a> Queue::front_item (STL/CLR)
+İlk öğe erişir.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+property value_type front_item;  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Özelliği boş olması gerekir denetlenen dizisinin ilk öğesi erişir. Okumak veya mevcut bildiğinizde ilk öğe yazmak için kullanın.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_front_item.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display initial contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// inspect last item   
+    System::Console::WriteLine("front_item = {0}", c1.front_item);   
+  
+// alter last item and reinspect   
+    c1.front_item = L'x';   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+front_item = a  
+ x b c  
+```  
+
+## <a name="generic_container"></a> Queue::generic_container (STL/CLR)
+Kapsayıcı bağdaştırıcısı için genel arabirim türü.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+typedef Microsoft::VisualC::StlClr::IQueue<Value>  
+    generic_container;  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Bu şablon kapsayıcı bağdaştırıcı sınıfı için genel arabirimi türünü tanımlar.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_generic_container.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// construct a generic container   
+    Myqueue::generic_container^ gc1 = %c1;   
+    for each (wchar_t elem in gc1->get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// modify generic and display original   
+    gc1->push(L'd');   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// modify original and display generic   
+    c1.push(L'e');   
+    for each (wchar_t elem in gc1->get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+a b c  
+a b c  
+a b c d  
+a b c d e  
+```  
+
+## <a name="generic_value"></a> Queue::generic_value (STL/CLR)
+Kapsayıcı için genel arabirimi ile kullanmak için öğenin türü.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+typedef GValue generic_value;  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Türünde bir nesne türünü açıklayan `GValue` kullanmak için saklı öğesi değeri bu şablonu kapsayıcı sınıfı için genel arabirimi açıklar. (`GValue` ya `value_type` veya `value_type^` varsa `value_type` ref türü.)  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_generic_value.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// get interface to container   
+    Myqueue::generic_container^ gc1 = %c1;   
+    for each (wchar_t elem in gc1->get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// display in order using generic_value   
+    for (; !gc1->empty(); gc1->pop())   
+        {   
+        Myqueue::generic_value elem = gc1->front();   
+  
+        System::Console::Write(" {0}", elem);   
+        }   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+a b c  
+a b c  
+a b c  
+```  
+
+## <a name="get_container"></a> Queue::get_container (STL/CLR)
+Temel alınan kapsayıcı erişir.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+container_type^ get_container();  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Üye işlevi temel alınan kapsayıcı döndürür. Kapsayıcı sarmalayıcı tarafından uygulanan kısıtlamalar atlamak için kullanın.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_get_container.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display initial contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+a b c  
+```  
+
+## <a name="op_as"></a> Queue::operator (STL/CLR) =
+Denetimli dizisi yerini alır.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+queue <Value, Container>% operator=(queue <Value, Container>% right);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ sağ  
+ Kopyalamak için kapsayıcı Bağdaştırıcısı'nı tıklatın.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Üye işleci kopyaları `right` nesnesine sonra döndürür `*this`. Denetimli sırayla kopyası ile denetlenen sırasını değiştirmek için kullanın `right`.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_operator_as.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// assign to a new container   
+    Myqueue c2;   
+    c2 = c1;   
+    for each (wchar_t elem in c2.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+a b c  
+a b c  
+```  
+
+## <a name="pop"></a> Queue::POP (STL/CLR)
+Son öğeyi kaldırır.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+void pop();  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Üye işlevi boş olmalıdır denetimli dizisi son öğeyi kaldırır. Sıranın arkadaki bir öğe tarafından kısaltmak için kullanın.  
+  
+### <a name="example"></a>Örnek  
+  
+```  
+// cliext_queue_pop.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// pop an element and redisplay   
+    c1.pop();   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+a b c  
+b c  
+```  
+
+## <a name="push"></a> Queue::push (STL/CLR)
+Yeni bir son öğesi ekler.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+void push(value_type val);  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Üye işlevini değeri olan bir öğe ekler `val` sıranın sonunda. Kuyruğa bir öğe eklemek için kullanın.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_push.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+a b c  
+```  
+
+## <a name="queue"></a> Queue::Queue (STL/CLR)
+Bir kapsayıcı bağdaştırıcısı nesnesi oluşturur.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+queue();  
+queue(queue<Value, Container>% right);  
+queue(queue<Value, Container>^ right);  
+explicit queue(container_type% wrapped);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ sağ  
+ Kopyalamak için nesne.  
+  
+ Sarmalanan  
+ Kullanılacak Sarmalanan kapsayıcı.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Oluşturucusu:  
+  
+ `queue();`  
+  
+ boş bir Sarmalanan kapsayıcı oluşturur. Boş bir başlangıç denetimli dizisini belirtmek için kullanın.  
+  
+ Oluşturucusu:  
+  
+ `queue(queue<Value, Container>% right);`  
+  
+ bir kopyası Sarmalanan bir kapsayıcı oluşturur `right.get_container()`. Sıra nesnesi tarafından denetlenen sırasının bir kopyasını bir ilk denetlenen sırası belirtmek için kullandığınız `right`.  
+  
+ Oluşturucusu:  
+  
+ `queue(queue<Value, Container>^ right);`  
+  
+ bir kopyası Sarmalanan bir kapsayıcı oluşturur `right->get_container()`. Sıra nesnesi tarafından denetlenen sırasının bir kopyasını bir ilk denetlenen sırası belirtmek için kullandığınız `*right`.  
+  
+ Oluşturucusu:  
+  
+ `explicit queue(container_type wrapped);`  
+  
+ var olan bir kapsayıcı kullanan `wrapped` Sarmalanan kapsayıcı olarak. Var olan bir kapsayıcı kuyruktan oluşturmak için kullanın.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_construct.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+#include <cliext/list>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+typedef cliext::list<wchar_t> Mylist;   
+typedef cliext::queue<wchar_t, Mylist> Myqueue_list;   
+int main()   
+    {   
+// construct an empty container   
+    Myqueue c1;   
+    System::Console::WriteLine("size() = {0}", c1.size());   
+  
+// construct from an underlying container   
+    Mylist v2(5, L'x');   
+    Myqueue_list c2(v2);       
+    for each (wchar_t elem in c2.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// construct by copying another container   
+    Myqueue_list c3(c2);   
+    for each (wchar_t elem in c3.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// construct by copying another container through handle   
+    Myqueue_list c4(%c2);   
+    for each (wchar_t elem in c4.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+size() = 0  
+ x x x x x  
+ x x x x x  
+ x x x x x  
+```  
+
+## <a name="reference"></a> Queue::Reference (STL/CLR)
+Bir öğe için bir başvuru türü.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+typedef value_type% reference;  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Bir öğe için bir başvuru türü açıklanmaktadır.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_reference.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display initial contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// modify back of queue and redisplay   
+    Myqueue::reference ref = c1.back();   
+    ref = L'x';   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+a b c  
+a b x  
+```  
+
+## <a name="size"></a> Queue::size (STL/CLR)
+Öğe sayısını sayar.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+size_type size();  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Üye işlevini denetimli sırası uzunluğunu döndürür. Şu anda denetlenen sıradaki öğelerinin sayısını belirlemek için kullanın. Tüm önem verdiğiniz ise dizisi bkz sıfır olmayan boyutu olup [queue::empty (STL/CLR)](../dotnet/queue-empty-stl-clr.md)`()`.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_size.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display initial contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    System::Console::WriteLine("size() = {0} starting with 3", c1.size());   
+  
+// pop an item and reinspect   
+    c1.pop();   
+    System::Console::WriteLine("size() = {0} after popping", c1.size());   
+  
+// add two elements and reinspect   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    System::Console::WriteLine("size() = {0} after adding 2", c1.size());   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+size() = 3 starting with 3  
+size() = 2 after popping  
+size() = 4 after adding 2  
+```  
+
+## <a name="size_type"></a> Queue::size_type (STL/CLR)
+İki öğe arasındaki imzalı uzaklığı türü.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+typedef int size_type;  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Türünü negatif olmayan öğe sayısını tanımlar.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_size_type.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display initial contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// compute positive difference   
+    Myqueue::size_type diff = c1.size();   
+    c1.pop();   
+    c1.pop();   
+    diff -= c1.size();   
+    System::Console::WriteLine("size difference = {0}", diff);   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+size difference = 2  
+```  
+
+## <a name="to_array"></a> Queue::to_array (STL/CLR)
+Denetimli sırası yeni bir diziye kopyalar.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+cli::array<Value>^ to_array();  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Üye işlevi denetimli sırası içeren bir dizi döndürür. Dizi formunda denetimli sırasının bir kopyasını almak için kullanın.  
+  
+### <a name="example"></a>Örnek  
+  
+```  
+// cliext_queue_to_array.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// copy the container and modify it   
+    cli::array<wchar_t>^ a1 = c1.to_array();   
+  
+    c1.push(L'd');   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// display the earlier array copy   
+    for each (wchar_t elem in a1)   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+a b c d  
+a b c  
+```  
+
+## <a name="value_type"></a> Queue::value_type (STL/CLR)
+Öğenin türü.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+typedef Value value_type;  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Şablon parametresi için bir eş anlamlı türüdür `Value`.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_value_type.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display reversed contents " a b c" using value_type   
+    for (; !c1.empty(); c1.pop())   
+        {   // store element in value_type object   
+        Myqueue::value_type val = c1.front();   
+  
+        System::Console::Write(" {0}", val);   
+        }   
+    System::Console::WriteLine();   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+a b c  
+```  
+
+## <a name="op_neq"></a> operator! = (kuyruk) (STL/CLR)
+Eşit değildir karşılaştırma sırası.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+template<typename Value,  
+    typename Container>  
+    bool operator!=(queue<Value, Container>% left,  
+        queue<Value, Container>% right);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ left  
+ Karşılaştırılacak sol kapsayıcı.  
+  
+ sağ  
+ Karşılaştırılacak sağ kapsayıcı.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ İşleç işlevi döndürür `!(left == right)`. Test etmek için kullandığınız olup olmadığını `left` aynı sıralı değil `right` iki sıraları öğe tarafından karşılaştırılan öğe olduğunda.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_operator_ne.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// assign to a new container   
+    Myqueue c2;   
+    c2.push(L'a');   
+    c2.push(L'b');   
+    c2.push(L'd');   
+  
+// display contents " a b d"   
+    for each (wchar_t elem in c2.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+    System::Console::WriteLine("[a b c] != [a b c] is {0}",   
+        c1 != c1);   
+    System::Console::WriteLine("[a b c] != [a b d] is {0}",   
+        c1 != c2);   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+ a b d  
+[a b c] != [a b c] is False  
+[a b c] != [a b d] is True  
+```  
+
+## <a name="op_lt"></a> İşleç&lt; (kuyruk) (STL/CLR)
+Karşılaştırma sayısından az sırası.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+template<typename Value,  
+    typename Container>  
+    bool operator<(queue<Value, Container>% left,  
+        queue<Value, Container>% right);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ left  
+ Karşılaştırılacak sol kapsayıcı.  
+  
+ sağ  
+ Karşılaştırılacak sağ kapsayıcı.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ İşleci işlevi döndürür true ise, en düşük konumunun `i` kendisi için `!(right[i] < left[i])` Ayrıca, true olan `left[i] < right[i]`. Aksi takdirde, döndürür `left->` [queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md) `() <` `right->size()` sınamak için kullanın olup olmadığını `left` önce sıralı `right` öğe tarafından karşılaştırılan öğe olduğunda iki sıralar.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_operator_lt.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// assign to a new container   
+    Myqueue c2;   
+    c2.push(L'a');   
+    c2.push(L'b');   
+    c2.push(L'd');   
+  
+// display contents " a b d"   
+    for each (wchar_t elem in c2.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+    System::Console::WriteLine("[a b c] < [a b c] is {0}",   
+        c1 < c1);   
+    System::Console::WriteLine("[a b c] < [a b d] is {0}",   
+        c1 < c2);   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+ a b d  
+[a b c] < [a b c] is False  
+[a b c] < [a b d] is True  
+```  
+
+## <a name="op_lteq"></a> İşleç&lt;= (kuyruk) (STL/CLR)
+Küçük veya buna eşit sıraya karşılaştırma.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+template<typename Value,  
+    typename Container>  
+    bool operator<=(queue<Value, Container>% left,  
+        queue<Value, Container>% right);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ left  
+ Karşılaştırılacak sol kapsayıcı.  
+  
+ sağ  
+ Karşılaştırılacak sağ kapsayıcı.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ İşleç işlevi döndürür `!(right < left)`. Test etmek için kullandığınız olup olmadığını `left` sonra sıralı değil `right` iki sıraları öğe tarafından karşılaştırılan öğe olduğunda.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_operator_le.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// assign to a new container   
+    Myqueue c2;   
+    c2.push(L'a');   
+    c2.push(L'b');   
+    c2.push(L'd');   
+  
+// display contents " a b d"   
+    for each (wchar_t elem in c2.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+    System::Console::WriteLine("[a b c] <= [a b c] is {0}",   
+        c1 <= c1);   
+    System::Console::WriteLine("[a b d] <= [a b c] is {0}",   
+        c2 <= c1);   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+ a b d  
+[a b c] <= [a b c] is True  
+[a b d] <= [a b c] is False  
+```  
+
+## <a name="op_eq"></a> operator == (kuyruk) (STL/CLR)
+Sıra eşit karşılaştırması.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+template<typename Value,  
+    typename Container>  
+    bool operator==(queue<Value, Container>% left,  
+        queue<Value, Container>% right);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ left  
+ Karşılaştırılacak sol kapsayıcı.  
+  
+ sağ  
+ Karşılaştırılacak sağ kapsayıcı.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ İşleç işlevi sıraları denetlediği yalnızca, true değerini döndürür `left` ve `right` aynı uzunlukta olması ve her konum için `i`, `left[i] ==` `right[i]`. Test etmek için kullandığınız olup olmadığını `left` aynı sıralı `right` iki sıraları öğe tarafından karşılaştırılan öğe olduğunda.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_operator_eq.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// assign to a new container   
+    Myqueue c2;   
+    c2.push(L'a');   
+    c2.push(L'b');   
+    c2.push(L'd');   
+  
+// display contents " a b d"   
+    for each (wchar_t elem in c2.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+    System::Console::WriteLine("[a b c] == [a b c] is {0}",   
+        c1 == c1);   
+    System::Console::WriteLine("[a b c] == [a b d] is {0}",   
+        c1 == c2);   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+ a b d  
+[a b c] == [a b c] is True  
+[a b c] == [a b d] is False  
+```  
+
+## <a name="op_gt"></a> İşleç&gt; (kuyruk) (STL/CLR)
+Sıra karşılaştırma büyük.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+template<typename Value,  
+    typename Container>  
+    bool operator>(queue<Value, Container>% left,  
+        queue<Value, Container>% right);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ left  
+ Karşılaştırılacak sol kapsayıcı.  
+  
+ sağ  
+ Karşılaştırılacak sağ kapsayıcı.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ İşleç işlevi döndürür `right` `<` `left`. Test etmek için kullandığınız olup olmadığını `left` sonra sıralanmış `right` iki sıraları öğe tarafından karşılaştırılan öğe olduğunda.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_operator_gt.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// assign to a new container   
+    Myqueue c2;   
+    c2.push(L'a');   
+    c2.push(L'b');   
+    c2.push(L'd');   
+  
+// display contents " a b d"   
+    for each (wchar_t elem in c2.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+    System::Console::WriteLine("[a b c] > [a b c] is {0}",   
+        c1 > c1);   
+    System::Console::WriteLine("[a b d] > [a b c] is {0}",   
+        c2 > c1);   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+ a b d  
+[a b c] > [a b c] is False  
+[a b d] > [a b c] is True  
+```  
+
+## <a name="op_gteq"></a> İşleç&gt;= (kuyruk) (STL/CLR)
+Sıra büyük veya eşit karşılaştırma.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```  
+template<typename Value,  
+    typename Container>  
+    bool operator>=(queue<Value, Container>% left,  
+        queue<Value, Container>% right);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ left  
+ Karşılaştırılacak sol kapsayıcı.  
+  
+ sağ  
+ Karşılaştırılacak sağ kapsayıcı.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ İşleç işlevi döndürür `!(left < right)`. Test etmek için kullandığınız olup olmadığını `left` önce sıralı değil `right` iki sıraları öğe tarafından karşılaştırılan öğe olduğunda.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// cliext_queue_operator_ge.cpp   
+// compile with: /clr   
+#include <cliext/queue>   
+  
+typedef cliext::queue<wchar_t> Myqueue;   
+int main()   
+    {   
+    Myqueue c1;   
+    c1.push(L'a');   
+    c1.push(L'b');   
+    c1.push(L'c');   
+  
+// display contents " a b c"   
+    for each (wchar_t elem in c1.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+// assign to a new container   
+    Myqueue c2;   
+    c2.push(L'a');   
+    c2.push(L'b');   
+    c2.push(L'd');   
+  
+// display contents " a b d"   
+    for each (wchar_t elem in c2.get_container())   
+        System::Console::Write(" {0}", elem);   
+    System::Console::WriteLine();   
+  
+    System::Console::WriteLine("[a b c] >= [a b c] is {0}",   
+        c1 >= c1);   
+    System::Console::WriteLine("[a b c] >= [a b d] is {0}",   
+        c1 >= c2);   
+    return (0);   
+    }  
+  
+```  
+  
+```Output  
+ a b c  
+ a b d  
+[a b c] >= [a b c] is True  
+[a b c] >= [a b d] is False  
+```  
