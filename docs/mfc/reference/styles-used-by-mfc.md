@@ -1,7 +1,7 @@
 ---
 title: MFC tarafından kullanılan stiller | Microsoft Docs
 ms.custom: ''
-ms.date: 05/03/2018
+ms.date: 06/20/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -206,12 +206,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebde910e5573545c6b9b904f6db55e27f10492a3
-ms.sourcegitcommit: 05075fce8a0ed7fddb99f50f3931db966a91450d
+ms.openlocfilehash: 9af450071546691778dc607746870084a7b1f346
+ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36271376"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36322426"
 ---
 # <a name="styles-used-by-mfc"></a>MFC Tarafından Kullanılan Stiller  
   
@@ -321,7 +321,7 @@ Düzenleme stilleri uygulamak için [CEdit sınıfı](../../mfc/reference/cedit-
 |`ES_NOHIDESEL`|Normalde, denetim giriş odağı kaybettiğinde ve denetim giriş odağını aldığında seçimi tersine çevirir olmadığında düzenleme denetimi seçimi gizler. Belirtme `ES_NOHIDESEL` bu varsayılan eylem siler.|  
 |`ES_NUMBER`|Düzenleme denetimine girilecek yalnızca rakamlar sağlar.|  
 |`ES_OEMCONVERT`|Düzenleme denetimine girilen metin ANSI karakter kümesinden OEM karakter kümesini ve ANSI sonra geri dönüştürülür. Uygulama çağırdığında bu uygun karakter dönüştürme sağlar `AnsiToOem` ANSI dize düzenleme denetimindeki OEM karakterlerine dönüştürmek için Windows işlevi. Bu stili dosya adlarını içeren düzenleme denetimleri için kullanışlıdır.|  
-|`ES_PASSWORD`|Tüm karakterleri görüntüler bir yıldız işareti (**\\\***) düzenleme denetimine yazılan gibi. Bir uygulamanın kullanabileceği `SetPasswordChar` görüntülenen karakterini değiştirmek için üye işlevi.|  
+|`ES_PASSWORD`|Tüm karakterleri görüntüler bir yıldız işareti (__\*__) düzenleme denetimine yazılan gibi. Bir uygulamanın kullanabileceği `SetPasswordChar` görüntülenen karakterini değiştirmek için üye işlevi.|  
 |`ES_READONLY`|Kullanıcının girmek veya metin düzenleme denetimindeki düzenleme engeller.|  
 |`ES_RIGHT`|Tek satırlı veya çok satırlı metin sağa hizalar denetim düzenleyin.|  
 |`ES_UPPERCASE`|Tüm karakterleri düzenleme denetimine yazılan gibi büyük harfe dönüştürür.|  

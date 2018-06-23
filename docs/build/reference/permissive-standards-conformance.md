@@ -1,6 +1,6 @@
 ---
 title: -izin veren - (standartları uyumluluğu) | Microsoft Docs
-ms.date: 11/11/2016
+ms.date: 06/21/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90cfdcf20cf74244afe026a392759ac59616bbdf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3e1a9c407779b6bf441ea1375026af6ac04bb8c8
+ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379321"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36322270"
 ---
 # <a name="permissive--standards-conformance"></a>/ izin veren-(standartları uyumluluğu)
 
@@ -50,7 +50,7 @@ Ortama özgü Uzantılar ve standart kadar uygulama bırakır dil alanları etki
 
 **/ İzin veren-** seçeneği uyumsuz hangi dil yapıları belirlemek üzere geçerli derleyici sürümde uygunluk destek kullanır. Seçeneği, kodunuzu standart C++ belirli bir sürümünü uyup uymadığını belirlemez. En son taslak standart tüm uygulanan derleyici desteğini etkinleştirmek için kullanın [/std:latest](../../build/reference/std-specify-language-standard-version.md) seçeneği. Derleyici desteği şu anda uygulanan C ++ 17 için standart kısıtlamak için [/Std: c ++ 17](../../build/reference/std-specify-language-standard-version.md) seçeneği. C ++ 14 standart daha yakından eşleşecek şekilde derleyici desteği kısıtlamak için [/Std: c ++ 14](../../build/reference/std-specify-language-standard-version.md) varsayılan seçeneği.
 
-Değil tüm C ++ 11, C ++ 14 veya standartları uyumsuz C ++ 17 kod, Visual Studio 2017'de Visual C++ derleyicisi tarafından desteklenir. **/ İzin veren-** seçeneği bazı yönlerini iki aşamalı ad arama ile ilgili, geçici bir const olmayan başvuru bağlama, kopyalama init doğrudan init davranma, birden çok kullanıcı tanımlı dönüşümler izin vererek sorunları algılama başlatma veya alternatif belirteçler mantıksal işleçler ve diğer desteklenmeyen uygunluk alanları için. Visual c++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Değil tüm C ++ 11, C ++ 14 veya standartları uyumsuz C ++ 17 kod, Visual Studio 2017'de Visual C++ derleyicisi tarafından desteklenir. Visual Studio sürümüne bağlı olarak **/ izin veren-** seçeneği bazı yönlerini iki aşamalı ad arama ile ilgili, geçici bir const olmayan başvuru bağlama, kopyalama init doğrudan init davranma, izin sorunları algılama birden çok kullanıcı tanımlı dönüştürmeler başlatma veya alternatif belirteçler için mantıksal işleçler ve diğer desteklenmeyen uygunluk alanları. Visual c++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md). En dışı almak için **/ izin veren-**, Visual Studio en son sürüme güncelleştirin.
 
 ### <a name="how-to-fix-your-code"></a>Kodunuzu düzeltme yapma
 
@@ -202,11 +202,11 @@ class CFoo : public ICustom
 
 ```cpp
 // Fix for example 2
-// First, create the *.idl file. The vc140.idl generated file can be 
-// used to automatically obtain a *.idl file for the interfaces with 
-// annotation. Second, add a midl step to your build system to make 
-// sure that the C++ interface definitions are outputted. 
-// Last, adjust your existing code to use ATL directly as shown in 
+// First, create the *.idl file. The vc140.idl generated file can be
+// used to automatically obtain a *.idl file for the interfaces with
+// annotation. Second, add a midl step to your build system to make
+// sure that the C++ interface definitions are outputted.
+// Last, adjust your existing code to use ATL directly as shown in
 // the atl implementation section.
 
 -- IDL  FILE--
@@ -286,7 +286,7 @@ struct MyString
 
 extern bool cond;
 
-MyString s; 
+MyString s;
 // Using /std:c++14, /permissive- or /Zc:ternary behavior
 // is to prefer MyString("A") over (const char*)s
 // but under /std:c++17 this line causes error C2445:
@@ -309,23 +309,23 @@ void myassert(const char* text, const char* file, int line);
 Şablon meta, burada koşullu işleç sonucu türleri değişebilir altında hatalar da görebilirsiniz **/Zc:ternary** ve **/ izin veren-**. Bu sorunu kullanmaktır çözümlemek için tek yönlü [std::remove_reference](../../standard-library/remove-reference-class.md) elde edilen türü.
 
 ```cpp
-// Example 4: different result types 
+// Example 4: different result types
 extern bool cond;
 extern int count;
-char  a = 'A'; 
-const char  b = 'B'; 
-decltype(auto) x = cond ? a : b; // char without, const char& with /Zc:ternary 
-const char (&z)[2] = count > 3 ? "A" : "B"; // const char* without /Zc:ternary 
+char  a = 'A';
+const char  b = 'B';
+decltype(auto) x = cond ? a : b; // char without, const char& with /Zc:ternary
+const char (&z)[2] = count > 3 ? "A" : "B"; // const char* without /Zc:ternary
 ```
 
-#### <a name="two-phase-name-look-up-partial"></a>(Kısmi) iki aşamalı adı Ara
+#### <a name="two-phase-name-look-up"></a>İki aşamalı adı Ara
 
-Zaman **/ izin veren-** seçeneği, Visual Studio 2017 sürüm 15.3 ayarlanmışsa, bağımlı ve bağımlı olmayan adları şablonlarında gerektiği gibi iki aşamalı adı için kullanılan tanımlama işlevi ve sınıf şablonu tanımlarını derleyici ayrıştırır Arama. Bu sürümde, yalnızca ad Bağımlılık çözümlemesini gerçekleştirilir. Özellikle, şablon tanımının bağlamda bildirilmemiş bağlı olmayan adları bir tanılama iletisi ISO C++ standartları gerektirdiği neden. Ancak, bağımsız değişken bağımlı Ara tanımı bağlamda yapılmadı gerektiren bağlı olmayan adlarını bağlama.
+Zaman **/ izin veren-** seçeneği olarak ayarlanmışsa, bağımlı ve bağımlı olmayan adları şablonlarında gerektiği gibi iki aşamalı adı araması için kullanılan tanımlama işlevi ve sınıf şablonu tanımlarını derleyici ayrıştırır. Visual Studio 2017 içinde sürüm 15.3, ad Bağımlılık çözümlemesini gerçekleştirilir. Özellikle, şablon tanımının bağlamda bildirilmemiş bağlı olmayan adları bir tanılama iletisi ISO C++ standartları gerektirdiği neden. Visual Studio 2017 içinde sürüm 15.7, bağlama bağımsız değişkeni bağımlı Ara tanımı bağlamda gerektiren bağlı olmayan adlarını da yapılır.
 
 ```cpp
 // dependent base
 struct B {
-    void g();
+    void g() {}
 };
 
 template<typename T>
@@ -346,60 +346,106 @@ int main()
 }
 ```
 
+İki aşamalı arama için eski davranışı istiyor ancak Aksi halde istediğiniz varsa **/ izin veren-** davranışı eklemek **/Zc:twoPhase-** seçeneği.
+
 ### <a name="windows-header-issues"></a>Windows üstbilgi sorunları
 
 **/ İzin veren-** seçenektir Windows sonbaharda oluşturucuları güncelleştirmenin SDK'sı (10.0.16299.0) önce Windows Setleri sürümlerini ya da Windows Sürücü Seti (WDK) sürüm 1709 için çok sıkı. Kullanmak için en son sürümlerini Windows Setleri güncelleştirme öneririz **/ izin veren-** Windows veya aygıt sürücüsü kodunuzda.
 
-Windows sonbaharda oluşturucuları güncelleştirmenin SDK (10.0.16299.0) ya da Windows Sürücü Seti (WDK) 1709, belirli üstbilgi dosyaları kullanımı ile uyumsuz hale sorunları çözümlenmedi **/ izin veren-**. Bu sorunların olarak çözmek için bunları gerektiren ve kaldırma yalnızca bu kaynak kodu dosyaları için bu üstbilgileri kullanımını kısıtlamak öneririz **/ izin veren-** seçeneği bu belirli kaynak kodu dosyaları derlediğinizde. Aşağıdaki sorunlar Windows sonbaharda oluşturucuları güncelleştirmenin SDK (10.0.16299.0) için belirli şunlardır:
+Belirli üstbilgi dosyaları 2018 güncelleştirmenin SDK'sı (10.0.17134.0), Windows sonbaharda oluşturucuları güncelleştirmenin SDK (10.0.16299.0) veya Windows Sürücü Seti (WDK) 1709, Windows Nisan'ın kullanımı ile uyumsuz hale sorunları çözümlenmedi **/permissive-**. Bu sorunların olarak çözmek için bunları gerektiren ve kaldırma yalnızca bu kaynak kodu dosyaları için bu üstbilgileri kullanımını kısıtlamak öneririz **/ izin veren-** seçeneği bu belirli kaynak kodu dosyaları derlediğinizde.
 
-#### <a name="issue-in-umqueryh"></a>İçinde um\Query.h sorun
+Yayımlanan bu WinRT WRL üstbilgileri Windows Nisan 2018 güncelleştirmenin SDK'sı (10.0.17134.0) olmayan temiz ile **/ izin veren-**. Bu sorunların olarak çözmek için ya da kullanmayın **/ izin veren-**, veya **/ izin veren-** ile **/Zc:twoPhase-** bu üstbilgileri ile çalışırken:
 
-Kullanırken **/ izin veren-** derleyici anahtar `tagRESTRICTION` yapısı nedeniyle case(RTOr) üye derlenmez 'veya'.
+- Winrt/wrl/async.h sorunları
 
-```cpp
-struct tagRESTRICTION
-    {
-    ULONG rt;
-    ULONG weight;
-    /* [switch_is][switch_type] */ union _URes
-        {
-        /* [case()] */ NODERESTRICTION ar;
-        /* [case()] */ NODERESTRICTION or;  // error C2059: syntax error: '||'
-        /* [case()] */ NODERESTRICTION pxr;
-        /* [case()] */ VECTORRESTRICTION vr;
-        /* [case()] */ NOTRESTRICTION nr;
-        /* [case()] */ CONTENTRESTRICTION cr;
-        /* [case()] */ NATLANGUAGERESTRICTION nlr;
-        /* [case()] */ PROPERTYRESTRICTION pr;
-        /* [default] */  /* Empty union arm */
-        } res;
-    };
-```
+   ```Output
+   C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\winrt\wrl\async.h(483): error C3861: 'TraceDelegateAssigned': identifier not found
+   C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\winrt\wrl\async.h(491): error C3861: 'CheckValidStateForDelegateCall': identifier not found
+   C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\winrt\wrl\async.h(509): error C3861: 'TraceProgressNotificationStart': identifier not found
+   C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\winrt\wrl\async.h(513): error C3861: 'TraceProgressNotificationComplete': identifier not found
+   ```
 
-Bu sorunu gidermek için olmadan Query.h dahil dosyalarını derlemek **/ izin veren-** seçeneği.
+- İçinde winrt/wrl/implements.h sorun
 
-#### <a name="issue-in-umcellularapioemh"></a>İçinde um\cellularapi_oem.h sorun
+   ```Output
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt\wrl\implements.h(2086): error C2039: 'SetStrongReference': is not a member of 'Microsoft::WRL::Details::WeakReferenceImpl'
+   ```
 
-Kullanırken **/ izin veren-** derleyici anahtar, ileriye dönük bildirimi `enum UICCDATASTOREACCESSMODE` bir uyarı neden olur:
+Yayımlanan bu kullanıcı modu üstbilgileri Windows Nisan 2018 güncelleştirmenin SDK'sı (10.0.17134.0) olmayan temiz ile **/ izin veren-**. Bu sorunların olarak çözmek için kullanmayın **/ izin veren-** bu üstbilgileri ile çalışırken:
 
-```cpp
-typedef enum UICCDATASTOREACCESSMODE UICCDATASTOREACCESSMODE; // C4471
-```
+- Um/Tune.h sorunları
 
-Dizininden kapsam dışı enum iletme bildirimi bir Microsoft uzantısıdır. Bu sorunu gidermek için olmadan cellularapi_oem.h dahil dosyalarını derlemek **/ izin veren-** seçeneğini veya kullanmak [/wd](../../build/reference/compiler-option-warning-level.md) uyarı C4471 sessiz seçeneği.
+   ```Output
+   C:\ProgramFiles(x86)\Windows Kits\10\include\10.0.17134.0\um\tune.h(139): error C3861: 'Release': identifier not found
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\tune.h(559): error C3861: 'Release': identifier not found
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\tune.h(1240): error C3861: 'Release': identifier not found
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\tune.h(1240): note: 'Release': function declaration must be available as none of the arguments depend on a template parameter
+   ```
 
-#### <a name="issue-in-umomscripth"></a>İçinde um\omscript.h sorun
+- İçinde um/spddkhlp.h sorun
 
-C ++ 03, bir değişmez dize dönüştürme BSTR için de (bir typedef olduğu ' wchar_t *') kullanım dışı izin değil. C ++ 11'de, dönüştürme artık izin verilir.
+   ```Output
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\spddkhlp.h(759): error C3861: 'pNode': identifier not found
+   ```
 
-```cpp
-virtual /* [id] */ HRESULT STDMETHODCALLTYPE setExpression(
-    /* [in] */ __RPC__in BSTR propname,
-    /* [in] */ __RPC__in BSTR expression,
-    /* [in][defaultvalue] */ __RPC__in BSTR language = L"") = 0; // C2440
-```
+- Um/refptrco.h sorunları
 
-Bu sorunu gidermek için olmadan omscript.h dahil dosyalarını derlemek **/ izin veren-** seçeneğini veya kullanmak **/Zc:strictStrings-** yerine.
+   ```Output
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\refptrco.h(179): error C2760: syntax error: unexpected token 'identifier', expected 'type specifier'
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\refptrco.h(342): error C2760: syntax error: unexpected token 'identifier', expected 'type specifier'
+   C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\refptrco.h(395): error C2760: syntax error: unexpected token 'identifier', expected 'type specifier'
+   ```
+
+Bu sorunlar, Windows sonbaharda oluşturucuları güncelleştirmenin SDK (10.0.16299.0) kullanıcı modu üstbilgilerinde özeldir:
+
+- İçinde um/Query.h sorun
+
+   Kullanırken **/ izin veren-** derleyici anahtar `tagRESTRICTION` yapısı nedeniyle case(RTOr) üye derlenmez 'veya'.
+
+   ```cpp
+   struct tagRESTRICTION
+   {
+       ULONG rt;
+       ULONG weight;
+       /* [switch_is][switch_type] */ union _URes
+       {
+           /* [case()] */ NODERESTRICTION ar;
+           /* [case()] */ NODERESTRICTION or;  // error C2059: syntax error: '||'
+           /* [case()] */ NODERESTRICTION pxr;
+           /* [case()] */ VECTORRESTRICTION vr;
+           /* [case()] */ NOTRESTRICTION nr;
+           /* [case()] */ CONTENTRESTRICTION cr;
+           /* [case()] */ NATLANGUAGERESTRICTION nlr;
+           /* [case()] */ PROPERTYRESTRICTION pr;
+           /* [default] */  /* Empty union arm */
+       } res;
+   };
+   ```
+
+   Bu sorunu gidermek için olmadan Query.h dahil dosyalarını derlemek **/ izin veren-** seçeneği.
+
+- İçinde um/cellularapi_oem.h sorun
+
+   Kullanırken **/ izin veren-** derleyici anahtar, ileriye dönük bildirimi `enum UICCDATASTOREACCESSMODE` bir uyarı neden olur:
+
+   ```cpp
+   typedef enum UICCDATASTOREACCESSMODE UICCDATASTOREACCESSMODE; // C4471
+   ```
+
+   Dizininden kapsam dışı enum iletme bildirimi bir Microsoft uzantısıdır. Bu sorunu gidermek için olmadan cellularapi_oem.h dahil dosyalarını derlemek **/ izin veren-** seçeneğini veya kullanmak [/wd](../../build/reference/compiler-option-warning-level.md) uyarı C4471 sessiz seçeneği.
+
+- İçinde um/omscript.h sorun
+
+   C ++ 03, bir değişmez dize dönüştürme BSTR için de (bir typedef olduğu ' wchar_t *') kullanım dışı izin değil. C ++ 11'de, dönüştürme artık izin verilir.
+
+   ```cpp
+   virtual /* [id] */ HRESULT STDMETHODCALLTYPE setExpression(
+       /* [in] */ __RPC__in BSTR propname,
+       /* [in] */ __RPC__in BSTR expression,
+       /* [in][defaultvalue] */ __RPC__in BSTR language = L"") = 0; // C2440
+   ```
+
+   Bu sorunu gidermek için olmadan omscript.h dahil dosyalarını derlemek **/ izin veren-** seçeneğini veya kullanmak **/Zc:strictStrings-** yerine.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
@@ -407,7 +453,7 @@ Visual Studio 2017 sürüm 15,5 ve sonraki sürümleri, bu yordamı kullanın:
 
 1. Projenizin açmak **özellik sayfaları** iletişim kutusu.
 
-1. Altında **yapılandırma özellikleri**, genişletin **C/C++** klasör ve **dil** özellik sayfası.
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **dil** özellik sayfası.
 
 1. Değişiklik **uyumluluk modu** özellik değerine **Evet (/ izin veren-)**. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydetmek için.
 
@@ -425,5 +471,5 @@ Visual Studio 2017 sürüm 15,5 önce sürümlerinde, bu yordamı kullanın:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)
+- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

@@ -1,7 +1,7 @@
 ---
 title: MASM için x64 (ml64.exe) | Microsoft Docs
 ms.custom: ''
-ms.date: 06/08/2018
+ms.date: 06/21/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42edd255b3f8730263bba9ff683ce16da6fc59b5
-ms.sourcegitcommit: 1c2e035f98fb55d9b3c08ec3bb562179a368d0d1
+ms.openlocfilehash: bb4f4a0ba996be34749350c0d99c1915752fe99e
+ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35253808"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36322254"
 ---
 # <a name="masm-for-x64-ml64exe"></a>x64 (ml64.exe) için (MASM)
 
-Visual Studio 32-bit ve 64-bit barındırılan sürümleri Microsoft Assembler (MASM) hedef x64 kodu içerir. Ml64.exe adlı, x64 kabul assembler budur assembler dili. Visual Studio yükleme sırasında bir C++ iş yükü seçtiğinizde MASM komut satırı araçları yüklenir. MASM araçları ayrı bir yükleme olarak kullanılamaz. Visual Studio kopyası karşıdan yükleyip hakkında daha fazla yönerge için bkz: [Visual Studio yükleme](/visualstudio/install/install-visual-studio). Tam Visual Studio IDE yüklemek istediğiniz değil ancak yalnızca komut satırı araçlarını istiyorsanız karşıdan [derleme araçları Visual Studio 2017 için](https://go.microsoft.com/fwlink/p/?linkid=840931).
+Visual Studio 32-bit ve 64-bit barındırılan sürümleri Microsoft Assembler (MASM) hedef x64 kodu içerir. Ml64.exe adlı, x64 kabul assembler budur assembler dili. Visual Studio yükleme sırasında bir C++ iş yükü seçtiğinizde MASM komut satırı araçları yüklenir. MASM araçları ayrı bir yükleme olarak kullanılamaz. Visual Studio kopyası karşıdan yükleyip hakkında daha fazla yönerge için bkz: [Visual Studio yükleme](/visualstudio/install/install-visual-studio). Tam Visual Studio IDE yüklemek istediğiniz değil ancak yalnızca komut satırı araçlarını istiyorsanız karşıdan [derleme araçları Visual Studio 2017 için](https://go.microsoft.com/fwlink/p/?linkid=875721).
 
 MASM oluşturmak için kullanılacak x64 kodunu hedefler komut satırında, x64 için geliştirici komut istemi kullanın gerekli yolu ve diğer ortam değişkenlerini ayarlar hedefler. Bir geliştirici komut istemi başlatmak hakkında daha fazla bilgi için bkz: [komut satırında C/C++ derleme kodu](../../build/building-on-the-command-line.md).
 

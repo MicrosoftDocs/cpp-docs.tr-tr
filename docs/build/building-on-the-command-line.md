@@ -1,7 +1,7 @@
 ---
 title: Komut satırında C/C++ kod derleme | Microsoft Docs
 ms.custom: conceptual
-ms.date: 03/29/2018
+ms.date: 06/21/2018
 ms.technology:
 - cpp-tools
 ms.topic: conceptual
@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1e02ea59ffc5a4ece71d2790b2ebb6a953ed682
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 241a7ae0d7f6c1adf269370301b39a3267440995
+ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379282"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36322322"
 ---
 # <a name="build-cc-code-on-the-command-line"></a>Komut satırında C/C++ kodu derleme
 
@@ -51,7 +51,7 @@ Komut istemi kısayolları Başlat menüsü bir sürüme özgü Visual Studio kl
 
 Bir ayarlarsanız gerçek başlangıç menüsünde klasörü ve kısayol adları yüklediğiniz Visual Studio sürümü ve yükleme takma ad bağlı olarak farklılık gösterir. Visual Studio yüklü 2017 varsa örnek ve sizin için göre bir yükleme Takmaad *Önizleme*, geliştirici komut istemi kısayoluna adlı **VS 2017 (Önizleme)içingeliştiricikomutistemi**, adlı bir klasörde **Visual Studio 2017**.
 
-Uygulamasını yüklediyseniz [derleme araçları Visual Studio 2017 için](https://go.microsoft.com/fwlink/p/?linkid=840931) (Ayrıca içeren Visual Studio 2015 güncelleştirme 3'ü derleyici araç takımı), yalnızca mimariye özel yerel veya çapraz araçları Geliştirici komut istemi seçenekleri yüklenir ve genel **Geliştirici komut istemi** kısayol.
+Uygulamasını yüklediyseniz [derleme araçları Visual Studio 2017 için](https://go.microsoft.com/fwlink/p/?linkid=875721) (Ayrıca içeren Visual Studio 2015 güncelleştirme 3'ü derleyici araç takımı), yalnızca mimariye özel yerel veya çapraz araçları Geliştirici komut istemi seçenekleri yüklenir ve genel **Geliştirici komut istemi** kısayol.
 
 <a name="developer_command_prompt"></a>
 ### <a name="to-open-a-developer-command-prompt-window"></a>Bir geliştirici komut istemi penceresi açmak için
@@ -93,10 +93,10 @@ Varolan bir komut penceresinde belirli yapı mimarisi belirtmek için en basit y
 
 > **Vcvarsall.bat** [*mimarisi*] [*platform_type*] [*winsdk_version*] [**-vcvars_ver =** _vcversion_]
 
-*Mimarisi*<br/>
+*mimarisi*<br/>
 Bu isteğe bağlı bağımsız değişkeni kullanmak için ana bilgisayarı ve hedef mimarisi belirtir. Varsa *mimarisi* belirtilmezse, varsayılan derleme ortamı kullanılır. Bu bağımsız değişkenleri desteklenir:
 
-|*Mimarisi*|Derleyici|Ana bilgisayar mimarisi|Derleme çıktı (hedef) mimarisi|
+|*mimarisi*|Derleyici|Ana bilgisayar mimarisi|Derleme çıktı (hedef) mimarisi|
 |----------------------------|--------------|----------------------------------|-------------------------------|
 |**x86**|x86 32-bit yerel|x86, x64|x86|
 |**x86\_amd64** veya **x86\_x64**|x86 üzerinde x64 arası|x86, x64|X64|

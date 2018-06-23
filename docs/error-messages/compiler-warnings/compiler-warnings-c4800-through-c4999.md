@@ -106,12 +106,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06c4d65fe7b6ab2b0238c3a4e4cd081e2dc011b5
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: d5fb04d31451ac4c49a0a2c11a3699b8a670a6c4
+ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704756"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36322338"
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>Derleyici uyarıları C4800 C5999 aracılığıyla
 
@@ -250,3 +250,4 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı ilet
 |Derleyici Uyarısı (Düzey 3) C5042|'*bildirimi*': blok kapsamında işlev bildirimleri standart C++'da belirtilen 'satır içi' olamaz; 'inline' tanımlayıcısı kaldırın|
 |Derleyici Uyarısı (Düzey 2) C5043|'*belirtimi*': özel durum belirtimi önceki bildirimi eşleşmiyor|
 |Derleyici Uyarısı (düzey 4) C5044|Komut satırı seçeneğiyle bir bağımsız değişken *seçeneği* bir yola işaret eden '*yolu*' varolmayan|
+|[C5045 uyarı derleyici](c5045.md)|Bellek Yükü /Qspectre geçiş yaparsanız belirtilen için derleyici Spectre azaltma ekler|

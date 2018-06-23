@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d311c730781aee70d4b77723ddec98a79407e42a
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: c1187d0fcfec45a21a358c8d20c4f3684f17feb3
+ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705572"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36322400"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan derleyici uyarıları
 
@@ -89,7 +89,7 @@ Aşağıdaki uyarılarla Visual Studio 2015 ve sonraki sürümlerinde varsayıla
 |[C4549](../error-messages/compiler-warnings/compiler-warning-level-1-c4549.md) (düzey 1)|'*operator1*': işleci virgülle önce hiçbir etkisi; istiyordunuz '*operator2*'?|
 |[C4555](../error-messages/compiler-warnings/compiler-warning-level-1-c4555.md) (düzey 1)|ifadenin etkisi yok; yan etkisi olan ifade bekleniyordu|
 |[C4557](../error-messages/compiler-warnings/compiler-warning-level-3-c4557.md) (Düzey 3)|'__assume' içeren etkisi '*etkisi*'|
-|[C4571](../error-messages/compiler-warnings/compiler-warning-level-4-c4571.md) (düzey 4)|Bilgi amaçlı: Visual C++ 7.1 beri değiştirilen catch(...) semantiği; yapılandırılmış özel durum (SEH) artık yakalandı|
+|[C4571](../error-messages/compiler-warnings/compiler-warning-level-4-c4571.md) (düzey 4)|bilgilendirici: Visual C++ 7.1 itibaren; değiştirilen catch(...) semantiği yapılandırılmış özel durum (SEH) artık yakalandı|
 |C4574 (düzey 4)|'*tanımlayıcısı*'0 ' olarak tanımlanan': kullanılacak mu demek istediniz ' #if *tanımlayıcısı*'?|
 |C4577 (düzey 1)|hiçbir özel durum işleme belirtilen modu ile kullanılan noexcept'; özel durum sonlandırıldığında garanti edilmez. /EHsc belirtin|
 |C4582 (düzey 4)|'*türü*': Oluşturucu örtük olarak çağrılmaz|
@@ -153,12 +153,14 @@ Aşağıdaki uyarılarla Visual Studio 2015 ve sonraki sürümlerinde varsayıla
 |[C5038](../error-messages/compiler-warnings/c5038.md) (düzey 4)|veri üyesi '*Üye1*'veri üyesi sonra başlatılacak'*üye2*' <sup>15.3</sup>|
 |C5039 (düzey 4)|'*işlevi*': - EHc altında extern C işlev işaretçisi veya potansiyel olarak işlevi atma başvuru geçirilen. Bu işlev bir özel durum oluşturursa tanımsız davranış ortaya çıkabilir. <sup>15,5</sup>|
 |C5042 (Düzey 3)|'*işlevi*': blok kapsamında işlev bildirimleri standart C++'da belirtilen 'satır içi' olamaz; 'inline' tanımlayıcısı kaldırın <sup>15,5</sup>|
+|[C5045](../error-messages/compiler-warnings/c5045.md)|Derleyici /Qspectre anahtarı belirtilmişse Bellek Yükü Spectre azaltma ekler <sup>15.7</sup>|
 
-<sup>14.1</sup> bu uyarı Visual Studio 2015 güncelleştirme 1'den itibaren kullanılabilmektedir.<br>
-<sup>14.3</sup> bu uyarı, Visual Studio 2015 güncelleştirme 3'te itibaren kullanılabilir.<br>
-<sup>15.3</sup> bu uyarı, Visual Studio 2017 sürüm 15.3 itibaren kullanılabilir.<br>
-<sup>15,5</sup> bu uyarı, Visual Studio 2017 sürüm 15,5 itibaren kullanılabilir.<br>
-<sup>/P</sup> bu uyarıyı devre dışı olduğu sürece [/ izin veren-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği ayarlanmış.
+<sup>14.1</sup> bu uyarı Visual Studio 2015 güncelleştirme 1'den itibaren kullanılabilmektedir.  
+<sup>14.3</sup> bu uyarı, Visual Studio 2015 güncelleştirme 3'te itibaren kullanılabilir.  
+<sup>15.3</sup> bu uyarı, Visual Studio 2017 sürüm 15.3 itibaren kullanılabilir.  
+<sup>15,5</sup> bu uyarı, Visual Studio 2017 sürüm 15,5 itibaren kullanılabilir.  
+<sup>15.7</sup> bu uyarı, Visual Studio 2017 sürüm 15.7 itibaren kullanılabilir.  
+<sup>/P</sup> bu uyarıyı devre dışı olduğu sürece [/ izin veren-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği ayarlanmış.  
 
 ## <a name="warnings-off-by-default-in-earlier-versions"></a>Önceki sürümlerde varsayılan olarak kapalı uyarıları
 

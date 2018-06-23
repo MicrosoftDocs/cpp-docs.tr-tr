@@ -2,7 +2,7 @@
 title: Visual Studio'da C++ desteği yükleme | Microsoft Docs
 description: Visual C++ için Visual Studio desteğini yükleme
 ms.custom: mvc
-ms.date: 06/08/2018
+ms.date: 06/21/2018
 ms.topic: tutorial
 ms.technology:
 - devlang-C++
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4fd04450b75083152d058aef4a85d83f5635c8d9
-ms.sourcegitcommit: 1c2e035f98fb55d9b3c08ec3bb562179a368d0d1
+ms.openlocfilehash: 5807110caf730c72d93de7e1265199b63f1d6bff
+ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35253762"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36322491"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio'da C++ desteğini yükleme
 
@@ -40,10 +40,10 @@ Disk alanı ve işletim sistemi gereksinimleri hakkında daha fazla bilgi için 
 1. Windows için en son Visual Studio 2017 yükleyicisi indirin.
 
    > [!div class="nextstepaction"]
-   > <a target="frameTarget" href="https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017">Visual Studio 2017 Community yükle</a>
+   > <a target="frameTarget" href="https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017">Visual Studio 2017 Community yükle</a>
 
    >[!Tip]
-   > Community edition her bir geliştirici, sınıf öğrenme, akademik araştırma ve açık kaynak geliştirme içindir. Diğer kullanımlar için yükleme <a target="frameTarget" href="https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017">Visual Studio 2017 Professional</a> veya <a target="frameTarget" href="https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017">Visual Studio 2017 Enterprise</a>.
+   > Community edition her bir geliştirici, sınıf öğrenme, akademik araştırma ve açık kaynak geliştirme içindir. Diğer kullanımlar için yükleme <a target="frameTarget" href="https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017">Visual Studio 2017 Professional</a> veya <a target="frameTarget" href="https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017">Visual Studio 2017 Enterprise</a>.
 
 1. Karşıdan yükleyip çalıştırın yükleyici dosyasını bulun. Tarayıcınızda görüntülenebilir veya yüklemeleri klasörünüzdeki bulabilirsiniz. Yükleyiciyi çalıştırmak için yönetici ayrıcalıkları gerekiyor. Görebileceğiniz bir **kullanıcı hesabı denetimi** sisteminize değişiklik; seçin yükleyici izin izni vermek isteyen iletişim **Evet**. Sorun yaşıyorsanız, indirilen dosyayı dosya Gezgini'nde bulmak, yükleyici simgesine sağ tıklayın ve seçin **yönetici olarak çalıştır** ve bağlam menüsünden.
 

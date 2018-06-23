@@ -1,6 +1,6 @@
 ---
 title: Visual C++ araç takımını ile ilgili bir sorun bildirme | Microsoft Docs
-ms.date: 06/08/2018
+ms.date: 06/21/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -10,12 +10,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fec9e92e05bdf3c1e12a8c7cb2ee060175fa6bf7
-ms.sourcegitcommit: 99a61ad26868f814589bf122dc4ab99c83ea2d0a
+ms.openlocfilehash: f1735f890c0f106d82884a5ad7d63a5a3f0f8920
+ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297527"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36322374"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ araç takımını veya belgelerinde bir sorun bildirme
 
@@ -82,7 +82,7 @@ Bu bilgileri bulmak için en iyi derleme günlüğünde sorunlu hemen sonra yerd
 
 #### <a name="to-report-the-contents-of-the-command-line"></a>Komut satırının içeriğini bildirmek için
 
-1. Bulun **CL.command.1.tlog** dosya ve açın. Varsayılan olarak, bu dosya, Belgeler klasöründe bulunan \\Visual Studio *sürüm*\\projeleri\\*SolutionName* \\ *ProjectName*\\*yapılandırma*\\*ProjectName*.tlog\\CL.command.1.tlog, ya da kullanıcı klasörü altında \\Kaynak\\depoları\\*SolutionName*\\*ProjectName*\\*yapılandırma* \\ *ProjectName*.tlog\\CL.command.1.tlog. Başka bir yapı sistem kullanırsanız veya varsayılan konumu projeniz için değiştirdiyseniz, farklı bir konumda olabilir.
+1. Bulun **CL.command.1.tlog** dosya ve açın. By default, this file is located in your Documents folder in \\Visual Studio *version*\\Projects\\*SolutionName*\\*ProjectName*\\*Configuration*\\*ProjectName*.tlog\\CL.command.1.tlog, or in your User folder under \\Source\\Repos\\*SolutionName*\\*ProjectName*\\*Configuration*\\*ProjectName*.tlog\\CL.command.1.tlog. Başka bir yapı sistem kullanırsanız veya varsayılan konumu projeniz için değiştirdiyseniz, farklı bir konumda olabilir.
 
    Bu dosya içinde bunların her birini ayrı satırlara derlemek için kullanılan komut satırı bağımsız değişkenleri ve ardından kaynak kodu dosyaları adlarını bulabilirsiniz.
 
@@ -358,7 +358,7 @@ Yeniden oluşturma en az bir IDE projesi olarak oluşturun, sonra bir .zip dosya
 Çeşitli raporunuzu bize almak için iyi şekillerde vardır. Visual Studio'nun yerleşik kullanabilirsiniz [bir sorun aracı rapor](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), veya [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sayfaları. Seçerek doğrudan sunduğumuz Geliştirici topluluğu sayfalara alabilirsiniz **ürün geri bildirim** bu sayfanın sonundaki düğmesi. Seçimi ekran görüntüleri yakalama ve geliştirici topluluğu sayfalarında nakil raporunuzun düzenleme için IDE içinde yerleşik araçları kullanmak mı istediğinizi ya da doğrudan Web sitesi kullanmayı tercih ederseniz bağlıdır.
 
 > [!NOTE]
-> Raporunuzu nasıl gönderme bağımsız olarak, Microsoft, gizliliğinize saygı duyar. Microsoft, tüm veri gizlilik yasalarına ve düzenlemelerine ile uyumluluk için taahhüt eder. Biz bize gönderin verileri nasıl işler hakkında daha fazla bilgi için bkz: [Microsoft gizlilik bildirimi](https://www.visualstudio.com/dn948229).
+> Raporunuzu nasıl gönderme bağımsız olarak, Microsoft, gizliliğinize saygı duyar. Microsoft, tüm veri gizlilik yasalarına ve düzenlemelerine ile uyumluluk için taahhüt eder. Biz bize gönderin verileri nasıl işler hakkında daha fazla bilgi için bkz: [Microsoft gizlilik bildirimi](https://privacy.microsoft.com/privacystatement).
 
 ### <a name="use-the-report-a-problem-tool"></a>Rapor bir sorun aracını kullanın
 
