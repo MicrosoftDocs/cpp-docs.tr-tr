@@ -21,17 +21,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 323903d2e1285a4ee697bbd9d0c3a29c2e1248d4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 09d29f4bc0b62e5824209759d45e63c1d9e2daa6
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349597"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928746"
 ---
 # <a name="managing-the-current-view"></a>Geçerli Görünümü Yönetme
 Çerçeve pencereleri varsayılan uygulaması bir parçası olarak, bir çerçeve penceresinde şu anda etkin bir görünüm izler. Çerçeve penceresi Bölümlendirici pencere örnekte olduğu gibi birden çok görünüm içeriyorsa geçerli görünümü kullanımda en son görünümüdür. Etkin görünüm, etkin pencereyi Windows ya da geçerli giriş odağını bağımsızdır.  
   
- Etkin görünüm değiştiğinde çağırarak geçerli görünümü framework bildirir, [OnActivateView](../mfc/reference/cview-class.md#onactivateview) üye işlevi. Görünüm yüklenmekte olan olup olmadığını söyleyebilir etkin veya devre dışı inceleyerek `OnActivateView`'s `bActivate` parametresi. Varsayılan olarak, `OnActivateView` odağı etkinleştirme geçerli görünümde ayarlar. Geçersiz kılabilirsiniz `OnActivateView` görünümü devre dışı ya da yeniden hiçbir özel işlem gerçekleştirmek için. Örneğin, etkin görünümü diğer, etkin olmayan görünümleri ayırt etmek için özel görsel Yardım sağlamak isteyebilirsiniz.  
+ Etkin görünüm değiştiğinde çağırarak geçerli görünümü framework bildirir, [OnActivateView](../mfc/reference/cview-class.md#onactivateview) üye işlevi. Görünüm yüklenmekte olan olup olmadığını söyleyebilir etkin veya devre dışı inceleyerek `OnActivateView`'s *bActivate* parametresi. Varsayılan olarak, `OnActivateView` odağı etkinleştirme geçerli görünümde ayarlar. Geçersiz kılabilirsiniz `OnActivateView` görünümü devre dışı ya da yeniden hiçbir özel işlem gerçekleştirmek için. Örneğin, etkin görünümü diğer, etkin olmayan görünümleri ayırt etmek için özel görsel Yardım sağlamak isteyebilirsiniz.  
   
  Bölümünde açıklandığı gibi komutları, geçerli (etkin) görüntülemek için bir çerçeve penceresinde iletir [komut yönlendirme](../mfc/command-routing.md), standart komut yönlendirmeyi bir parçası olarak.  
   

@@ -15,15 +15,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abd49410f9982788e9403f0cb83ca8656473417d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5d7544d92d55ec4a1f6d15f3c1d4358970bf2deb
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344110"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928347"
 ---
 # <a name="messages"></a>İletiler
-İleti döngüde **çalıştırmak** sınıfının üye işlevini `CWinApp` çeşitli olayları tarafından üretilen iletileri kuyruğa alır. Kullanıcı fare tıkladığında, örneğin, Windows fare ilgili birkaç iletileri gibi gönderir `WM_LBUTTONDOWN` sol fare düğmesini basılı ne zaman ve `WM_LBUTTONUP` sol fare düğmesini serbest bırakıldığında. Framework'ün uygulamasını Uygulama ileti döngüsü uygun pencere iletisi gönderir.  
+İleti döngüde `Run` sınıfının üye işlevini `CWinApp` çeşitli olayları tarafından üretilen iletileri kuyruğa alır. Örneğin, kullanıcının fare tıkladığında, Windows sol fare düğmesine basıldığında WM_LBUTTONDOWN ve sol fare düğmesini serbest bırakıldığında WM_LBUTTONUP gibi birkaç fare ilgili iletiler gönderir. Framework'ün uygulamasını Uygulama ileti döngüsü uygun pencere iletisi gönderir.  
   
  İletileri önemli kategorilerini açıklanan [ileti kategorileri](../mfc/message-categories.md).  
   

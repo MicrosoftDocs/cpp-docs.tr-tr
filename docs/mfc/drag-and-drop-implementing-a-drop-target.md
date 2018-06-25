@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 414437f044869fef7ae48883a88688ad50c9ac5f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 33088477c579cbdfe48140b806c6376b520e470c
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344275"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928924"
 ---
 # <a name="drag-and-drop-implementing-a-drop-target"></a>Sürükle ve Bırak: Bir Bırakma Hedefi Uygulama
 Bu makalede bir bırakma hedefi uygulamanızı nasıl özetlenmektedir. Bırakma hedefi uygulama bir bırakma kaynağı uygulama değerinden biraz daha fazla iş alır ancak hala oldukça basit bir işlemdir. Bu teknikler OLE olmayan uygulamalar için de geçerlidir.  
@@ -30,7 +30,7 @@ Bu makalede bir bırakma hedefi uygulamanızı nasıl özetlenmektedir. Bırakma
   
 1.  Her bir görünümde bir bırakma hedefi olmasını istediğiniz uygulama için bir üye değişkeni ekleyin. Bu üye değişkeni türü olmalıdır `COleDropTarget` veya ondan türetilmiş bir sınıf.  
   
-2.  İşler görünümü sınıfınızın işlevden `WM_CREATE` ileti (genellikle `OnCreate`), yeni üye değişkenin çağrı `Register` üye işlevi. `Revoke` görünümünüzü kaldırıldığı zaman otomatik olarak sizin için çağrılır.  
+2.  İşler görünümü sınıfınızın işlevden **WM_CREATE** ileti (genellikle `OnCreate`), yeni üye değişkenin çağrı `Register` üye işlevi. `Revoke` görünümünüzü kaldırıldığı zaman otomatik olarak sizin için çağrılır.  
   
 3.  Aşağıdaki işlevleri geçersiz kılar. Uygulamanızın genelinde aynı davranışı istiyorsanız, bu view sınıfı işlevleri geçersiz kılar. Yalıtılmış durumlarda davranışını değiştirmek veya dışı bırakarak etkinleştirmek istediğiniz istiyorsanız`CView` windows, bu işlevleri geçersiz kılma, `COleDropTarget`-türetilmiş sınıf.  
   

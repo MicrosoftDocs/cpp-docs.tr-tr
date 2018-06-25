@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2073e432dd0d0792e358a3f159892aea405197c9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 33068a96d8d0ca0a228012385da6437c455468e5
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346623"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928547"
 ---
 # <a name="document-classes"></a>Belge Sınıfları
 Belge şablonu nesneler tarafından oluşturulan belge sınıfı nesneleri uygulamanın veri yönetin. Bir sınıf belgeleriniz için bu sınıfların birinden türetin.  
@@ -29,7 +29,7 @@ Belge şablonu nesneler tarafından oluşturulan belge sınıfı nesneleri uygul
  Belge sınıfı nesneleri görünüm nesnelerle etkileşim. Görünüm nesneleri penceresinin istemci alanını temsil eder, bir belgenin verileri görüntülemek ve kullanıcıların ile etkileşime girmesine izin. Belgeler ve görünümler bir belge şablonu nesnesi tarafından oluşturulur.  
   
  [CDocument](../mfc/reference/cdocument-class.md)  
- Uygulamaya özgü belgeleri için temel sınıf. Belge sınıfı veya sınıftan türetilen **CDocument**.  
+ Uygulamaya özgü belgeleri için temel sınıf. Belge sınıfı veya sınıftan türetilen `CDocument`.  
   
  [COleDocument](../mfc/reference/coledocument-class.md)  
  Bileşik belge uygulaması, yanı sıra temel kapsayıcı desteği kullanılır. Türetilmiş sınıflar için bir kapsayıcı olarak hizmet veren [CDocItem](../mfc/reference/cdocitem-class.md). Bu sınıf kapsayıcı belgeler ve taban sınıf için temel sınıf olarak kullanılabilir `COleServerDoc`.  

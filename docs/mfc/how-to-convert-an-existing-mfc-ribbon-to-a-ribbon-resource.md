@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8024acc4abbb02b14ed968df83779d34bd4a7271
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2551709652df0e0c65b1b0b6b5085550044e9966
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33351656"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929003"
 ---
 # <a name="how-to-convert-an-existing-mfc-ribbon-to-a-ribbon-resource"></a>Nasıl yapılır: Varolan Bir MFC Şeridini Şerit Kaynağına Dönüştürme
 Şerit kaynakları görselleştirme, değiştirmek ve bakımını el ile kodlanmış Şerit kolaydır. Bu konuda, bir MFC projesine el ile kodlanmış bir Şerit Şerit kaynağına dönüştürme açıklar.  
@@ -29,7 +29,7 @@ ms.locfileid: "33351656"
   
 ### <a name="to-convert-an-mfc-ribbon-to-a-ribbon-resource"></a>Bir MFC şeridini Şerit kaynağına dönüştürme  
   
-1.  Visual Studio'da, var olan bir MFC projesinde CMFCRibbonBar nesne burada başlatılmış kaynak dosyasını açın. Genellikle, mainfrm.cpp dosyasıdır. Şerit için başlatma koddan sonra aşağıdaki kodu ekleyin.  
+1.  Visual Studio'da, var olan bir MFC projesinde kaynak dosyasını açın. burada `CMFCRibbonBar` nesne başlatılır. Genellikle, mainfrm.cpp dosyasıdır. Şerit için başlatma koddan sonra aşağıdaki kodu ekleyin.  
   
  ```  
     m_wndRibbonBar.SaveToXMLFile("RibbonOutput.xml");

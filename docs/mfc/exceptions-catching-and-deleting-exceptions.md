@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3527dabab96fe8f2832430f928a922941178ea97
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 29dea08d778ba91c5b8ab3a10aaff998095e7123
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345192"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928775"
 ---
 # <a name="exceptions-catching-and-deleting-exceptions"></a>Özel Durumlar: Özel Durumları Yakalama ve Silme
-Aşağıdaki yönergeler ve örnekler catch ve özel durumları silme gösterir. Daha fazla bilgi için **deneyin**, **catch**, ve `throw` anahtar sözcükler, bkz: [C++ özel durum işleme](../cpp/cpp-exception-handling.md).  
+Aşağıdaki yönergeler ve örnekler catch ve özel durumları silme gösterir. Daha fazla bilgi için **deneyin**, **catch**, ve **throw** anahtar sözcükler, bkz: [C++ özel durum işleme](../cpp/cpp-exception-handling.md).  
   
  Bu kod bir özel durum yakalar her özel durum silme hatası bellek sızıntısı neden olduğundan, özel durum işleyicileri bunlar işlemek, özel durum nesneleri silmeniz gerekir.  
   
@@ -42,7 +42,7 @@ Aşağıdaki yönergeler ve örnekler catch ve özel durumları silme gösterir.
 -   Yürütme döndürür içinden **catch** bloğu.  
   
 > [!NOTE]
->  Silerken bir `CException`, kullanın **silmek** özel silmek için üye işlevi. Kullanmayın **silmek** anahtar sözcüğü, çünkü özel öbek üzerinde değilse, başarısız.  
+>  Silerken bir `CException`, kullanın `Delete` özel silmek için üye işlevi. Kullanmayın **silmek** anahtar sözcüğü, çünkü özel öbek üzerinde değilse, başarısız.  
   
 #### <a name="to-catch-and-delete-exceptions"></a>Catch ve özel durumları silme  
   

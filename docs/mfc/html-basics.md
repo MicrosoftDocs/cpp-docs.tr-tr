@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c59004f27e0f3a1c629daae621df831fe82cd7a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9c4ebbc8e792e36461f7c52c17fa23815239e323
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347223"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929096"
 ---
 # <a name="html-basics"></a>HTML Temelleri
 Çoğu tarayıcı göz sayfaların HTML kaynağını inceleniyor özelliği var. HTML (Köprü Metni Biçimlendirme Dili) etiket sayısı görürsünüz kaynak görüntülediğinizde metinle interspersed açılı ayraçları (<>) tarafından çevrelenen.  
@@ -30,7 +30,7 @@ ms.locfileid: "33347223"
   
 1.  Not Defteri'nde veya herhangi bir düz metin düzenleyicisini açın.  
   
-2.  Gelen **dosya** menüsünde seçin `New`.  
+2.  Gelen **dosya** menüsünde seçin **yeni**.  
   
 3.  Aşağıdaki satırları yazın:  
   
@@ -44,7 +44,7 @@ ms.locfileid: "33347223"
   
 4.  Gelen **dosya** menüsünde seçin **kaydetmek**ve dosyayı c:\webpages\First.htm kaydedin. Dosyayı düzenleyicide açık bırakın.  
   
-5.  Gelen ve tarayıcınız, anahtar **dosya** menüsünde seçin **açık**, veya türü `file://C:/webpages/first.htm` tarayıcının URL düzenleme kutusuna. Pencere resim yazısı "Üst HTML etiketleri." içeren boş bir sayfa görmeniz gerekir  
+5.  Gelen ve tarayıcınız, anahtar **dosya** menüsünde seçin **açık**, veya türü *file://C:/webpages/first.htm* tarayıcının URL düzenleme kutusuna. Pencere resim yazısı "Üst HTML etiketleri." içeren boş bir sayfa görmeniz gerekir  
   
      Etiketler eşleştirilmelidir ve açılı ayraç içerdiği dikkat edin. Etiketler büyük küçük harfe duyarlı değildir, ancak büyük/küçük harf genellikle göze etiketleri yapmak için kullanılır.  
   

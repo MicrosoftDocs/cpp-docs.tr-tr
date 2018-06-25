@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b71d61175e5446ac33dd0ff6a011d06f601b5a1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6a1b9b04647717fc5892421f2b45947ebd079a0c
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345394"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928733"
 ---
 # <a name="-overridables-comment"></a>// Geçersiz Kılınabilen Öğelerle İlgili Açıklama
 `// Overridables` Bir MFC sınıf bildirimi bölümü temel sınıf davranışını değiştirmek gerektiğinde, türetilen bir sınıfta geçersiz kılabilirsiniz sanal işlevler içerir. Kesinlikle gerekli olmasa da bunlar genellikle "ile", başlangıç olarak adlandırılır. Burada işlevleri geçersiz kılınması, genellikle uygulamak veya "geri çağırma" veya "bağlayın." çeşit sağlamak için tasarlanmıştır Genellikle, bu üyeler korunur.  
@@ -31,7 +31,7 @@ ms.locfileid: "33345394"
   
  `virtual void OnDraw( ) = 0;`  
   
- Sınıfından listeleme örnekteki `CStdioFile`, [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md), liste geçersiz kılınabilir bölüm içerir. Sınıf **CDocument**, diğer yandan, yaklaşık olarak 10 geçersiz kılınabilir üye işlevleri listeler.  
+ Sınıfından listeleme örnekteki `CStdioFile`, [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md), liste geçersiz kılınabilir bölüm içerir. Sınıf `CDocument`, diğer yandan, yaklaşık olarak 10 geçersiz kılınabilir üye işlevleri listeler.  
   
  Bazı sınıflarda açıklama da görebilirsiniz `// Advanced Overridables`. Yalnızca gelişmiş işlevler bunlar programcıları geçersiz kılmak denemesi. Büyük olasılıkla asla kılınacağını gerekecektir.  
   

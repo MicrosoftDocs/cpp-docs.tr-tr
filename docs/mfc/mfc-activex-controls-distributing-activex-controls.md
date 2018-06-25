@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c6658c972b9d9cdeececd43a89ac424964d2289
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d052b2d77df8b3209671b4330347ef642877e47a
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33358813"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928888"
 ---
 # <a name="mfc-activex-controls-distributing-activex-controls"></a>MFC ActiveX Denetimleri: ActiveX Denetimlerini Dağıtma
 Bu makalede ActiveX denetimlerini yeniden dağıtma için ilgili çeşitli sorunlar ele alınmıştır:  
@@ -60,7 +60,7 @@ Bu makalede ActiveX denetimlerini yeniden dağıtma için ilgili çeşitli sorun
  ActiveX denetimleri ile sağladığınız Kurulum programı Windows dizinin özel bir alt dizini oluşturmak ve denetimleri yükleyin. OCX dosyaları.  
   
 > [!NOTE]
->  Windows kullanan **GetWindowsDirectory** Windows dizinin adını almak için Kurulum programı API. Alt dizin adı, şirketinizi veya ürününüzü adından türetilen isteyebilirsiniz.  
+>  Windows kullanan `GetWindowsDirectory` Windows dizinin adını almak için Kurulum programı API. Alt dizin adı, şirketinizi veya ürününüzü adından türetilen isteyebilirsiniz.  
   
  Kurulum programı gerekli redistributable DLL dosyaları Windows sistem dizininde yüklemeniz gerekir. DLL zaten kullanıcının makinesinde varsa, Kurulum programı sürümlerine yüklemekte olduğunuz sürümleriyle karşılaştırmanız gerekir. Yalnızca sürüm numarası zaten yüklü dosyadan daha yüksek olduğunda bir dosyayı yeniden yükleyin.  
   
@@ -71,14 +71,14 @@ Bu makalede ActiveX denetimlerini yeniden dağıtma için ilgili çeşitli sorun
   
  İsterseniz, Denetim bunun yerine doğrudan kaydetmek için Kurulum programı yazabilirsiniz.  
   
- Kullanım **LoadLibrary** Windows API'ı denetimi DLL yüklenemiyor. Ardından, kullanın **GetProcAddress** "DllRegisterServer" işlevi adresini elde edin. Son olarak, arama `DllRegisterServer` işlevi. Aşağıdaki kod örneği, olası bir yöntemi gösterir nerede `hLib` denetim kitaplığı tanıtıcısı depolar ve `lpDllEntryPoint` "DllRegisterServer" işlevin adresini depolar.  
+ Kullanım `LoadLibrary` Windows API'ı denetimi DLL yüklenemiyor. Ardından, kullanın `GetProcAddress` "DllRegisterServer" işlevi adresini elde edin. Son olarak, arama `DllRegisterServer` işlevi. Aşağıdaki kod örneği, olası bir yöntemi gösterir nerede `hLib` denetim kitaplığı tanıtıcısı depolar ve `lpDllEntryPoint` "DllRegisterServer" işlevin adresini depolar.  
   
  [!code-cpp[NVC_MFC_AxCont#16](../mfc/codesnippet/cpp/mfc-activex-controls-distributing-activex-controls_1.cpp)]  
   
  Denetimi doğrudan kaydetme avantajı, çağırma ve ayrı bir işlemde (yani, REGSVR32) yüklemek yükleme süresini azaltma değil olmanızdır. Ayrıca, kayıt iç işlem olduğundan, Kurulum programı hataları işleyebilir ve öngörülemeyen durumlarda bir dış işlem iyi olabilir.  
   
 > [!NOTE]
->  ActiveX denetimi, Kurulum programı yüklemeden önce çağırmalıdır **OleInitialize**. Kurulum programı tamamlandığında, çağrı **OleUnitialize**. Bu ActiveX denetimini kaydettirmek için uygun durumda OLE sistem DLL'leri olan sağlar.  
+>  ActiveX denetimi, Kurulum programı yüklemeden önce çağırmalıdır `OleInitialize`. Kurulum programı tamamlandığında, çağrı `OleUnitialize`. Bu ActiveX denetimini kaydettirmek için uygun durumda OLE sistem DLL'leri olan sağlar.  
   
  MFCx0.DLL kaydetmeniz.  
   

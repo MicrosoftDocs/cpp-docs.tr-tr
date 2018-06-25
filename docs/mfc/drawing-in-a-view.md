@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc716800c35aa922f7912f586d6e5b8429593615
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 866f2e2a3de6708d1be78748ee889272a05352cd
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346171"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928505"
 ---
 # <a name="drawing-in-a-view"></a>Bir Görünümde Çizim Yapma
 Neredeyse tüm çizim uygulamanızda görünümün içinde gerçekleşir `OnDraw` görünümü sınıfında geçersiz kılmanız gerekir üye işlevi. (Çizim, ele fare istisnadır [yorumlama kullanıcı girişi aracılığıyla bir görünümü](../mfc/interpreting-user-input-through-a-view.md).) `OnDraw` Geçersiz kıl:  
@@ -37,9 +37,9 @@ Neredeyse tüm çizim uygulamanızda görünümün içinde gerçekleşir `OnDraw
   
  Belge verileri başka bir yolla değiştiğinde görünümü değişiklikleri yansıtacak şekilde yeniden gerekir. Genellikle, kullanıcı belgenin bir görünümü aracılığıyla bir değişiklik yaptığında bu gerçekleşir. Bu durumda, belgenin görünümü çağrıları [UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews) kendilerini güncelleştirmek için aynı belge tüm görünümleri bildirmek için üye işlevi. `UpdateAllViews` Her görünümün çağırır [in](../mfc/reference/cview-class.md#onupdate) üye işlevi. Varsayılan uygulaması `OnUpdate` görünümün tüm istemci alanını geçersiz kılar. Yalnızca istemci alanını belgenin değiştirilmiş bölümleri eşleme bölgelerinin geçersiz kılmak için geçersiz kılabilirsiniz.  
   
- `UpdateAllViews` Sınıfının üye işlevini **CDocument** ve `OnUpdate` sınıfının üye işlevini `CView` belge bölümlerini değiştirildi açıklayan bilgileri geçirdiğiniz izin verir. Bu "İpucu" mekanizması görünümü yeniden boyutlandırmaya gerekir alanı kısıtlamanıza olanak sağlar. `OnUpdate` iki "İpucu" bağımsız değişkeni alır. İlk `lHint`, türü **LPARAM**, istediğiniz, ikinci olmakla herhangi bir veri geçirdiğiniz sağlar `pHint`, türü `CObject`*, türetilmiş herhangi bir nesneye bir işaretçi geçirdiğiniz sağlar `CObject`.  
+ `UpdateAllViews` Sınıfının üye işlevini `CDocument` ve `OnUpdate` sınıfının üye işlevini `CView` belge bölümlerini değiştirildi açıklayan bilgileri geçirdiğiniz izin verir. Bu "İpucu" mekanizması görünümü yeniden boyutlandırmaya gerekir alanı kısıtlamanıza olanak sağlar. `OnUpdate` iki "İpucu" bağımsız değişkeni alır. İlk *lHint*, türü **LPARAM**, istediğiniz, ikinci olmakla herhangi bir veri geçirdiğiniz sağlar *pHint*, türü `CObject`*, türetilmiş herhangi bir nesne için bir işaretçi geçirmek sağlar gelen `CObject`.  
   
- Görünüm geçersiz hale geldiğinde, Windows, gönderdiği bir `WM_PAINT` ileti. Görünümün [OnPaint](../mfc/reference/cwnd-class.md#onpaint) işleyici işlevi sınıfın bir cihaz bağlamı nesnesi oluşturarak iletisine yanıt [CPaintDC](../mfc/reference/cpaintdc-class.md) ve, görünümün çağırır `OnDraw` üye işlevi. Normalde bir geçersiz kılma yazma gerekmez `OnPaint` işleyici işlevi.  
+ Görünüm geçersiz hale geldiğinde, Windows, gönderdiği bir **WM_PAINT** ileti. Görünümün [OnPaint](../mfc/reference/cwnd-class.md#onpaint) işleyici işlevi sınıfın bir cihaz bağlamı nesnesi oluşturarak iletisine yanıt [CPaintDC](../mfc/reference/cpaintdc-class.md) ve, görünümün çağırır `OnDraw` üye işlevi. Normalde bir geçersiz kılma yazma gerekmez `OnPaint` işleyici işlevi.  
   
  A [cihaz bağlamı](../mfc/device-contexts.md) bir görüntü veya yazıcı gibi bir aygıtı çizim öznitelikleri hakkında bilgi içeren bir Windows veri yapısıdır. Tüm çizim çağrılar bir aygıt-context nesnesi yapılır. Ekranda çizim `OnDraw` geçirilen bir `CPaintDC` nesnesi. Bir yazıcıda çizim için geçirilen bir [CDC](../mfc/reference/cdc-class.md) nesnesi için geçerli yazıcı ayarlayın.  
   
@@ -49,7 +49,7 @@ Neredeyse tüm çizim uygulamanızda görünümün içinde gerçekleşir `OnDraw
   
  Bu örnekte, tanımlayın `GetData` türetilmiş belge sınıfınızın bir üyesi olarak işlev.  
   
- Örnek görünümü içinde ortalanmış belgeden alır ne olursa olsun dize yazdırır. Varsa `OnDraw` çağrıdır ekran çizim için `CDC` nesnesi geçirildi `pDC` olan bir `CPaintDC` olan Oluşturucusu zaten adlı `BeginPaint`. İşlevler çizim çağrılar cihaz bağlamı işaretçiyi yapılır. Cihaz bağlamları ve çizim çağrıları hakkında daha fazla bilgi için bkz [CDC](../mfc/reference/cdc-class.md) içinde *MFC başvurusu* ve [pencere nesneleriyle çalışma](../mfc/working-with-window-objects.md).  
+ Örnek görünümü içinde ortalanmış belgeden alır ne olursa olsun dize yazdırır. Varsa `OnDraw` çağrıdır ekran çizim için `CDC` nesnesi geçirildi *pDC* olan bir `CPaintDC` olan Oluşturucusu zaten adlı `BeginPaint`. İşlevler çizim çağrılar cihaz bağlamı işaretçiyi yapılır. Cihaz bağlamları ve çizim çağrıları hakkında daha fazla bilgi için bkz [CDC](../mfc/reference/cdc-class.md) içinde *MFC başvurusu* ve [pencere nesneleriyle çalışma](../mfc/working-with-window-objects.md).  
   
  Daha fazla nasıl yazılacağını örnekleri için `OnDraw`, bkz: [MFC örnekleri](../visual-cpp-samples.md).  
   

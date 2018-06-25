@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfa84326286b03f3ed0154138ed7f847440df284
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aac3c9ba284abc634af2fbeb25633b812e07f926
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347158"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928576"
 ---
 # <a name="ordering-items-in-the-header-control"></a>Üstbilgi Denetimindeki Öğeleri Sıralama
 Seçtiğiniz sonra [bir üstbilgi denetimine öğe eklendiğinde](../mfc/adding-items-to-the-header-control.md), yönetmek veya sıralarına ile aşağıdaki işlevleri hakkında bilgi alın:  
@@ -40,7 +40,7 @@ Seçtiğiniz sonra [bir üstbilgi denetimine öğe eklendiğinde](../mfc/adding-
   
      Özel üstbilgi öğesi için dizin değerini alır.  
   
- Önceki üye işlevleri yanı sıra `HDS_DRAGDROP` stili üstbilgi öğeleri üstbilgi denetimi içinde sürükleyip kullanıcıya izin verir. Daha fazla bilgi için bkz: [üstbilgi öğeleri için sürükle ve bırak desteği sağlama](../mfc/providing-drag-and-drop-support-for-header-items.md).  
+ Önceki üye işlevleri yanı sıra HDS_DRAGDROP stili üstbilgi öğeleri üstbilgi denetimi içinde sürükleyip izin verir. Daha fazla bilgi için bkz: [üstbilgi öğeleri için sürükle ve bırak desteği sağlama](../mfc/providing-drag-and-drop-support-for-header-items.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CHeaderCtrl Kullanma](../mfc/using-cheaderctrl.md)

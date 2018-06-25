@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2255f28c1250096bfbeb1a9365c57f78e17e20d7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d76717e68e37769cf55dceb4492ed78031c49e10
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344630"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928230"
 ---
 # <a name="containers-client-item-notifications"></a>Kapsayıcılar: İstemci Öğesi Bildirimleri
 Bu makalede, sunucu uygulamaları istemci uygulamanızın belge öğelerini değiştirdiğinizde, MFC çerçevesi çağıran geçersiz kılınabilir işlevler açıklanmaktadır.  
@@ -32,11 +32,11 @@ Bu makalede, sunucu uygulamaları istemci uygulamanızın belge öğelerini değ
   
 |Bildirim|Açıklama|  
 |------------------|-------------|  
-|`OLE_CHANGED`|OLE öğesi'nin görünümü değiştirilmiştir.|  
-|`OLE_SAVED`|OLE öğesi kaydedildi.|  
-|`OLE_CLOSED`|OLE öğesi kapatıldı.|  
+|**OLE_CHANGED**|OLE öğesi'nin görünümü değiştirilmiştir.|  
+|**OLE_SAVED**|OLE öğesi kaydedildi.|  
+|**OLE_CLOSED**|OLE öğesi kapatıldı.|  
 |**OLE_RENAMED**|OLE öğesi içeren sunucu belgeyi yeniden adlandırıldı.|  
-|`OLE_CHANGED_STATE`|OLE öğesi bir durumdan diğerine değişti.|  
+|**OLE_CHANGED_STATE**|OLE öğesi bir durumdan diğerine değişti.|  
 |**OLE_CHANGED_ASPECT**|OLE öğesi'nin çizim en boy çerçevesi tarafından değiştirildi.|  
   
  Bu değerleri arasındadır **OLE_NOTIFICATION** AFXOLE içinde tanımlanan numaralandırması. H.  
@@ -45,9 +45,9 @@ Bu makalede, sunucu uygulamaları istemci uygulamanızın belge öğelerini değ
   
 |İlk bağımsız değişken olduğunda|İkinci bağımsız değişken|  
 |----------------------------|---------------------|  
-|`OLE_SAVED` Veya `OLE_CLOSED`|Kullanılmaz.|  
-|`OLE_CHANGED`|Değişti OLE öğesi yönünü belirtir.|  
-|`OLE_CHANGED_STATE`|Girilen durumu açıklar (`emptyState`, **loadedState**, `openState`, `activeState`, veya `activeUIState`).|  
+|**OLE_SAVED** veya **OLE_CLOSED**|Kullanılmaz.|  
+|**OLE_CHANGED**|Değişti OLE öğesi yönünü belirtir.|  
+|**OLE_CHANGED_STATE**|Girilen durumu açıklar (*emptyState*, *loadedState*, *openState*, *activeState*, veya  *activeUIState*).|  
   
  Bir istemci öğesi varsayabilirsiniz durumları hakkında daha fazla bilgi için bkz: [kapsayıcılar: istemci öğesi durumları](../mfc/containers-client-item-states.md).  
   

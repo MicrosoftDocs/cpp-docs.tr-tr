@@ -20,24 +20,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43bf6730cf1b914405f99af6572a0a53cd942ac6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bdcd18a80b430a0a8576effaaa46215dd5eb9600
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33354825"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36927925"
 ---
 # <a name="mfc-activex-controls-returning-error-codes-from-a-method"></a>MFC ActiveX Denetimleri: Bir Metottan Hata Kodları Döndürme
 Bu makalede, hata kodları bir ActiveX denetimi döndürme açıklar.  
   
- Yöntemi içinde bir hata oluştu belirtmek için kullanmanız gerekir [COleControl::ThrowError](../mfc/reference/colecontrol-class.md#throwerror) alan üye işlevi bir `SCODE` (durum kodu) bir parametre olarak. Kullanabileceğiniz önceden tanımlanmış bir `SCODE` veya kendi tanımlayın.  
+ Yöntemi içinde bir hata oluştu belirtmek için kullanmanız gerekir [COleControl::ThrowError](../mfc/reference/colecontrol-class.md#throwerror) bir ' % s'SCODE (durum kodu) bir parametre olarak alır üye işlevi. Önceden tanımlanmış SCODE kullanın veya kendi tanımlayın.  
   
 > [!NOTE]
 >  `ThrowError` bir özelliğin Get veya kümesi içinde bir hatadan döndüren yalnızca bir aracı olarak kullanılması amaçlanmıştır işlevi ya da bir Otomasyon yöntemi. Yalnızca bunlar uygun özel durum işleyici olacaktır kez yığında sunar.  
   
- Yardımcı işlevleri mevcut önceden tanımlanmış en sık karşılaşılan için `SCODE`s, gibi [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported), ve [COleControl:: SetNotPermitted](../mfc/reference/colecontrol-class.md#setnotpermitted).  
+ Yardımcı işlevleri mevcut SCODEs, en sık karşılaşılan gibi önceden tanımlanmış [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported), ve [COleControl::SetNotPermitted](../mfc/reference/colecontrol-class.md#setnotpermitted).  
   
- Bir listesi için önceden tanımlanmış `SCODE`s ve özel tanımlama yönergeleri `SCODE`s, bölümüne bakın [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) ActiveX denetimleri: Gelişmiş Konular.  
+ Bölümü önceden tanımlanmış SCODEs ve özel SCODEs tanımlama hakkında yönergeler listesi için bkz [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) ActiveX denetimleri: Gelişmiş Konular.  
   
  Diğer alanlarda kodunuzu özel durumları Raporlama ile ilgili daha fazla bilgi için bkz: [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) ve bölüm [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) ActiveX denetimleri: Gelişmiş Konular.  
   

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97b6bbcbcf226d343d8b3cb51f110442e133a379
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2eb3ba387d4b6fcca7b30cd360dff84b9da4302a
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33351845"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928370"
 ---
 # <a name="mfc-activex-controls-advanced-property-implementation"></a>MFC ActiveX Denetimleri: Gelişmiş Özellik Uygulama
 Bu makalede bir ActiveX denetimini özelliklerinde Gelişmiş uygulama için ilgili konular açıklanmaktadır:  
@@ -66,9 +66,9 @@ Bu makalede bir ActiveX denetimini özelliklerinde Gelişmiş uygulama için ilg
  Bu kod örneği çağırır `SetNotSupported` varsa `m_bReadOnlyMode` veri üyesi olduğu **doğru**. Varsa **yanlış**, özelliği yeni değere ayarlanır.  
   
 ##  <a name="_core_returning_error_codes_from_a_property"></a> Bir özellikten hata kodları döndürme  
- Get veya bir özellik Ayarla çalışılırken bir hata oluştu belirtmek için kullanın `COleControl::ThrowError` geçen işlevi bir `SCODE` (durum kodu) bir parametre olarak. Kullanabileceğiniz önceden tanımlanmış bir `SCODE` veya kendi tanımlayın. Bir listesi için önceden tanımlanmış `SCODE`s ve özel tanımlamaya yönelik yönergeler `SCODE`s, bkz: [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) makale ActiveX denetimleri: Gelişmiş Konular.  
+ Get veya bir özellik Ayarla çalışılırken bir hata oluştu belirtmek için kullanın `COleControl::ThrowError` işlevi bir ' % s'SCODE (durum kodu) bir parametre olarak alır. Önceden tanımlanmış SCODE kullanın veya kendi tanımlayın. Önceden tanımlanmış SCODEs ve özel SCODEs tanımlamaya yönelik yönergeler listesi için bkz: [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) makale ActiveX denetimleri: Gelişmiş Konular.  
   
- Yardımcı işlevleri mevcut önceden tanımlanmış en sık karşılaşılan için `SCODE`s, gibi [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported), ve [COleControl:: SetNotPermitted](../mfc/reference/colecontrol-class.md#setnotpermitted).  
+ Yardımcı işlevleri mevcut SCODEs, en sık karşılaşılan gibi önceden tanımlanmış [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported), ve [COleControl::SetNotPermitted](../mfc/reference/colecontrol-class.md#setnotpermitted).  
   
 > [!NOTE]
 >  `ThrowError` bir özelliğin Get veya kümesi içinde bir hatadan döndüren yalnızca bir aracı olarak kullanılması amaçlanmıştır işlevi ya da bir Otomasyon yöntemi. Yalnızca bunlar uygun özel durum işleyici olacaktır kez yığında sunar.  

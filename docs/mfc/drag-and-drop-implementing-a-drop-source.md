@@ -19,21 +19,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c057657605296b3ba65128f26b25aa526f45b211
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9e77119ac5b662165fd965047ae60fc2d5818cc1
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345618"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928986"
 ---
 # <a name="drag-and-drop-implementing-a-drop-source"></a>Sürükle ve Bırak: Bir Bırakma Kaynağı Uygulama
 Bu makalede bir Sürükle ve bırak işlemi veri sağlamak için uygulamanızın nasıl elde edileceğini açıklar.  
   
- Temel bir bırakma kaynağı görece basit uygulamasıdır. İlk adım, hangi olayların sürükleme işleminin başlayacağı belirlemektir. Kullanıcı arabirimi yönergelerine tanımlamak sürükleme işlemi başına veri seçimi olarak önerilen ve `WM_LBUTTONDOWN` noktasında seçilen verileri içinde gerçekleşen olay. MFC OLE örnekleri [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md) aşağıdaki yönergeleri izleyin.  
+ Temel bir bırakma kaynağı görece basit uygulamasıdır. İlk adım, hangi olayların sürükleme işleminin başlayacağı belirlemektir. Kullanıcı arabirimi yönergelerine tanımlamak sürükleme işlemi başına veri seçimi olarak önerilen ve **WM_LBUTTONDOWN** noktasında seçilen verileri içinde gerçekleşen olay. MFC OLE örnekleri [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md) aşağıdaki yönergeleri izleyin.  
   
  Uygulamanızı bir kapsayıcı ve seçili veri bağlantılı veya katıştırılmış nesne türü ise `COleClientItem`, çağrı kendi `DoDragDrop` üye işlevi. Aksi takdirde oluşturmak bir `COleDataSource` nesnesi, seçimle başlatmak ve veri kaynağı nesnesinin çağrısı `DoDragDrop` üye işlevi. Uygulamanızı bir sunucu ise kullanın `COleServerItem::DoDragDrop`. Standart sürükle ve bırak davranışını özelleştirme hakkında daha fazla bilgi için bkz: [sürükle ve bırak: özelleştirme](../mfc/drag-and-drop-customizing.md).  
   
- Varsa `DoDragDrop` döndürür `DROPEFFECT_MOVE`, veri kaynağını kaynak belgedeki hemen silin. Gelen dönüş diğer değeri `DoDragDrop` bir bırakma kaynağı üzerinde hiçbir etkisi olmaz.  
+ Varsa `DoDragDrop` döndürür **DROPEFFECT_MOVE**, veri kaynağını kaynak belgedeki hemen silin. Gelen dönüş diğer değeri `DoDragDrop` bir bırakma kaynağı üzerinde hiçbir etkisi olmaz.  
   
  Daha fazla bilgi için bkz.:  
   

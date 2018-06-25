@@ -25,15 +25,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b82232b8f2ad7a5e3bc1ff8fed0e8a38b1a7d66
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a2e6e5eeab0be13eb64052eb9e90a570dcc5124d
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33352537"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929058"
 ---
 # <a name="mfc-activex-controls-adding-custom-events"></a>MFC ActiveX Denetimleri: Özel Olaylar Ekleme
-Özel olaylar, bunlar otomatik olarak bir sınıf tarafından tetiklenen değil, stok olayları farklı `COleControl`. Özel bir olay bir olay olarak denetim geliştirici tarafından belirlenen belirli bir eylemi, tanır. Özel olaylar için olay eşleme girdilerini tarafından temsil edilen `EVENT_CUSTOM` makrosu. Aşağıdaki bölümde ActiveX Denetim Sihirbazı kullanılarak oluşturulmuş bir ActiveX denetimi projesi için özel bir olay uygular.  
+Özel olaylar, bunlar otomatik olarak bir sınıf tarafından tetiklenen değil, stok olayları farklı `COleControl`. Özel bir olay bir olay olarak denetim geliştirici tarafından belirlenen belirli bir eylemi, tanır. Özel olaylar için olay eşleme girdilerini tarafından EVENT_CUSTOM makrosu temsil edilir. Aşağıdaki bölümde ActiveX Denetim Sihirbazı kullanılarak oluşturulmuş bir ActiveX denetimi projesi için özel bir olay uygular.  
   
 ##  <a name="_core_adding_a_custom_event_with_classwizard"></a> Özel bir olay ile ekleyerek olay Ekleme Sihirbazı  
  Aşağıdaki yordam, belirli bir özel olay Clickın ekler. Diğer özel olaylar eklemek için bu yordamı kullanın. Özel olay adınızı ve parametreleri Clickın olayı adını ve parametreleri için yerleştirin.  
@@ -48,13 +48,13 @@ ms.locfileid: "33352537"
   
      Olay Ekleme Sihirbazı'nı açar.  
   
-4.  İçinde **olay adı** kutusunda, önce varolan herhangi bir olay seçin, ardından tıklayın **özel** radyo düğmesine tıklayın ve ardından yazın `ClickIn`.  
+4.  İçinde **olay adı** kutusunda, önce varolan herhangi bir olay seçin, ardından tıklayın **özel** radyo düğmesine tıklayın ve ardından yazın *Clickın*.  
   
 5.  İçinde **iç adı** olay tetikleme işlevin adını yazın. Bu örnekte, olay Ekleme Sihirbazı tarafından sağlanan varsayılan değeri kullanın (`FireClickIn`).  
   
-6.  Adlı bir parametre eklemek `xCoord` (tür `OLE_XPOS_PIXELS`) kullanarak **parametre adı** ve **parametre türü** kontrol eder.  
+6.  Adlı bir parametre eklemek *xCoord* (tür *OLE_XPOS_PIXELS*) kullanarak **parametre adı** ve **parametre türü** kontrol eder.  
   
-7.  Adlı ikinci bir parametre eklemek `yCoord` (tür `OLE_YPOS_PIXELS`).  
+7.  Adlı ikinci bir parametre eklemek *yCoord* (tür *OLE_YPOS_PIXELS*).  
   
 8.  Tıklatın **son** olay oluşturamadı.  
   
@@ -80,7 +80,7 @@ ms.locfileid: "33352537"
  Bu satırı Clickın olayı olay Ekleme Sihirbazı'nı olay listesinde olayın konumdan gerçekleştirilen belirli bir kimlik numarası atar. Olay listesi girişi olay düşündüğünüz için bir kapsayıcı sağlar. Örneğin, olay başlatıldığında çalıştırılacak işleyici kodu sağlayabilir.  
   
 ##  <a name="_core_calling_fireclickin"></a> Fireclickın çağırma  
- Olay Ekleme Sihirbazı'nı kullanarak Clickın özel olayı eklediyseniz, bu olay harekete olduğunda, karar vermeniz gerekir. Çağırarak bunu `FireClickIn` uygun eylemi oluştuğunda. Bu tartışma için denetim kullanır `InCircle` içinde işlev bir `WM_LBUTTONDOWN` bir kullanıcı bir dairesel veya Oval bölge içinde tıkladığında Clickın olayı tetiklenecek ileti işleyicisi. Aşağıdaki yordam ekler `WM_LBUTTONDOWN` işleyicisi.  
+ Olay Ekleme Sihirbazı'nı kullanarak Clickın özel olayı eklediyseniz, bu olay harekete olduğunda, karar vermeniz gerekir. Çağırarak bunu `FireClickIn` uygun eylemi oluştuğunda. Bu tartışma için denetim kullanır `InCircle` işlevinin içinde bir kullanıcı bir dairesel veya Oval bölge içinde tıkladığında Clickın olayı tetiklenecek WM_LBUTTONDOWN ileti işleyicisi. Aşağıdaki yordam WM_LBUTTONDOWN işleyicisini ekler.  
   
 #### <a name="to-add-a-message-handler-with-the-add-event-wizard"></a>Olay Ekleme Sihirbazı'nı bir ileti işleyicisini eklemek için  
   
@@ -92,13 +92,13 @@ ms.locfileid: "33352537"
   
      Özellikler penceresini ActiveX denetimi tarafından işlenen iletilerin listesini görüntüler. Zaten kalın olarak gösterilen herhangi bir iletisi, kendisine atanmış bir işleyici işlevi vardır.  
   
-4.  Özellikler penceresinden işlemek istediğiniz iletiyi seçin. Bu örnek için select `WM_LBUTTONDOWN`.  
+4.  Özellikler penceresinden işlemek istediğiniz iletiyi seçin. Bu örnekte, WM_LBUTTONDOWN seçin.  
   
 5.  Sağdaki aşağı açılan liste kutusundan seçin  **\<Ekle > OnLButtonDown**.  
   
 6.  İleti işleyici kodu uygulamasında atlamak için Sınıf Görünümü'nde yeni işleyici işlevi çift tıklatın (. ActiveX denetimi CPP) dosyası.  
   
- Aşağıdaki kod örnek çağrıları **Incircle** sol fare düğmesini denetim pencereye tıklandığında her zaman işlev. Bu örnek bulunabilir `WM_LBUTTONDOWN` işleyici işlevi `OnLButtonDown`, [Dai örnek](../visual-cpp-samples.md) Özet.  
+ Aşağıdaki kod örnek çağrıları `InCircle` sol fare düğmesini denetim pencereye tıklandığında her zaman işlev. Bu örnek WM_LBUTTONDOWN işleyici işlevi bulunabilir `OnLButtonDown`, [Dai örnek](../visual-cpp-samples.md) Özet.  
   
  [!code-cpp[NVC_MFC_AxUI#10](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_4.cpp)]  
   

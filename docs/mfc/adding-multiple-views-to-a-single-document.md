@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb40b356b5601e19c33083c7b731a1dc411de3c5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c48f4525c01149840ca74eee249263eac27c24cf
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344155"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928708"
 ---
 # <a name="adding-multiple-views-to-a-single-document"></a>Tek Bir Belgeye Birden Çok Görünüm Ekleme
 Microsoft Foundation Class (MFC) kitaplığı ile oluşturulan bir tek belge arabirimi (SDI) uygulamasında her belge türü tek bir görünüm türü ile ilişkilidir. Bazı durumlarda, yeni bir görünüm geçerli görünümüyle belgenin geçme özelliğine sahip önerilir.  
@@ -46,14 +46,14 @@ Microsoft Foundation Class (MFC) kitaplığı ile oluşturulan bir tek belge ara
   
  Bu konunun geri kalanında aşağıdakileri varsayar:  
   
--   Adını `CWinApp`-türetilen nesne `CMyWinApp`, ve `CMyWinApp` bildirilir ve MYWINAPP tanımlanmış. H ve MYWINAPP. CPP.  
+-   Adını `CWinApp`-türetilen nesne `CMyWinApp`, ve `CMyWinApp` bildirilir ve içinde tanımlanan *MYWINAPP. H* ve *MYWINAPP. CPP*.  
   
--   `CNewView` Yeni adı `CView`-nesne, türetilmiş ve `CNewView` bildirilir ve yeni görünüm tanımlanmış. H ve yeni görünüm. CPP.  
+-   `CNewView` Yeni adı `CView`-nesne, türetilmiş ve `CNewView` bildirilir ve içinde tanımlanan *yeni görünüm. H* ve *yeni görünüm. CPP*.  
   
 ##  <a name="vcconmodifyexistingapplicationa1"></a> Mevcut uygulama sınıfını değiştirme  
  Uygulamanın görünümleri arasında geçiş yapmak için görünümleri ve bunları geçiş yapmak için bir yöntem depolamak için üye değişkenleri ekleyerek uygulama sınıfı değiştirmeniz gerekir.  
   
- Bildirimi için aşağıdaki kodu ekleyin `CMyWinApp` MYWINAPP içinde. Y:  
+ Bildirimi için aşağıdaki kodu ekleyin `CMyWinApp` içinde *MYWINAPP. H*:  
   
  [!code-cpp[NVC_MFCDocViewSDI#1](../mfc/codesnippet/cpp/adding-multiple-views-to-a-single-document_1.h)]  
   
@@ -61,7 +61,7 @@ Microsoft Foundation Class (MFC) kitaplığı ile oluşturulan bir tek belge ara
   
  Windows ileti tanımlayan yeni bir üst bilgi dosyasını dahil olmak üzere uygulama sınıfı son değiştirilme gerektirir (**WM_INITIALUPDATE**) geçiş işlevinde kullanılır.  
   
- MYWINAPP INCLUDE bölümünde aşağıdaki satırı ekleyin. CPP:  
+ INCLUDE bölümünde aşağıdaki satırı ekleyin *MYWINAPP. CPP*:  
   
  [!code-cpp[NVC_MFCDocViewSDI#2](../mfc/codesnippet/cpp/adding-multiple-views-to-a-single-document_2.cpp)]  
   
@@ -72,7 +72,7 @@ Microsoft Foundation Class (MFC) kitaplığı ile oluşturulan bir tek belge ara
   
  Projeye sınıfı ekledikten sonra bazı görünüm sınıfı üyeleri erişilebilirliğini değiştirmek gerekir.  
   
- NEWVIEW değiştirin. Gelen erişim belirticisi değiştirerek H `protected` için **ortak** yıkıcı ve Oluşturucusu. Bu, oluşturulan ve dinamik olarak yok ve görünür hale gelmeden önce Görünüm görünümünü değiştirmek için sınıf sağlar.  
+ Değiştirme *yeni görünüm. H* gelen erişim belirticisi değiştirerek **korumalı** için **ortak** yıkıcı ve Oluşturucusu. Bu, oluşturulan ve dinamik olarak yok ve görünür hale gelmeden önce Görünüm görünümünü değiştirmek için sınıf sağlar.  
   
  Yaptığınız değişiklikleri kaydedin ve sonraki adıma devam edin.  
   
@@ -90,7 +90,7 @@ Microsoft Foundation Class (MFC) kitaplığı ile oluşturulan bir tek belge ara
 ##  <a name="vcconswitchingfunctiona4"></a> Geçiş işlevini uygulayın  
  Önceki adımda oluşturulan ve yeni bir görünüm nesnesi başlatılmadı kodu eklendi. Son ana anahtarlama yöntemi uygulamak için parçasıdır `SwitchView`.  
   
- Uygulamanız için uygulama dosya sonunda (MYWINAPP. sınıfı CPP), aşağıdaki yöntemi ekleyin:  
+ Uygulama sınıfı için uygulama dosya sonunda (*MYWINAPP. CPP*), aşağıdaki yöntemi ekleyin:  
   
  [!code-cpp[NVC_MFCDocViewSDI#4](../mfc/codesnippet/cpp/adding-multiple-views-to-a-single-document_4.cpp)]  
   

@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c20ff02b2d72f1dfa6afab5a0d547b46aa55b18c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7a1e848827b46d40c1ec39f2af4788e6957932c5
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343560"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929118"
 ---
 # <a name="handling-commands-in-the-document"></a>Belgedeki Komutları İşleme
-Belge sınıfı ayrıca menü öğeleri, araç çubuğu düğmeleri veya kısayol tuşları tarafından oluşturulan belirli komutları işleyebilir. Varsayılan olarak, **CDocument** Kaydet Dosya menüsünden komutları kullanarak seri hale getirme ve kaydetme işler. Veri etkileyen diğer komutlar da belgenizi üye işlevleri tarafından işlenebilir. Örneğin, karalama programında sınıf `CScribDoc` belgede şu anda depolanan verilerin tümünü siler Tümünü Temizle Düzenle komutu için bir işleyici sağlar. Belgeler, ileti eşlemeleri olamaz, ancak görünümleri farklı olarak, standart Windows iletileri belgeleri işleyemiyor — yalnızca **WM_COMMAND** iletileri ya da "komutları."  
+Belge sınıfı ayrıca menü öğeleri, araç çubuğu düğmeleri veya kısayol tuşları tarafından oluşturulan belirli komutları işleyebilir. Varsayılan olarak, `CDocument` Kaydet Dosya menüsünden komutları kullanarak seri hale getirme ve kaydetme işler. Veri etkileyen diğer komutlar da belgenizi üye işlevleri tarafından işlenebilir. Örneğin, karalama programında sınıf `CScribDoc` belgede şu anda depolanan verilerin tümünü siler Tümünü Temizle Düzenle komutu için bir işleyici sağlar. Belgeler, ileti eşlemeleri olamaz, ancak görünümleri farklı olarak, standart Windows iletileri belgeleri işleyemiyor — yalnızca **WM_COMMAND** iletileri ya da "komutları."  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Belgeleri Kullanma](../mfc/using-documents.md)
