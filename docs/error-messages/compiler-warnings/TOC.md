@@ -558,3 +558,4 @@
 ## [Derleyici Uyarısı (düzey 1) C4997](compiler-warning-level-1-c4997.md)
 ## [Derleyici Uyarısı (düzey 1) C4999](compiler-warning-level-1-c4999.md)
 ## [Derleyici Uyarısı C5038](c5038.md)
+## [Derleyici Uyarısı C5045](c5045.md)
