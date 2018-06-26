@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d366cf7c9aee6988d715edbe30e3938c30557e2a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d903d183675ae4b79d4610fe4413cfd8bf0e704c
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329822"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928950"
 ---
 # <a name="a-portrait-of-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Bir Özeti
 Belgeler ve görünümler tipik bir MFC uygulamasında eşleştirilmelidir. Veri belgesinde depolanır, ancak görünümü ayrıcalıklı veri erişimi. Belge ayrımı görünümünden depolama ve veri Bakımı kendi görüntüden ayırır.  
@@ -37,7 +37,7 @@ Belgeler ve görünümler tipik bir MFC uygulamasında eşleştirilmelidir. Veri
 ## <a name="gaining-access-to-document-data-from-the-view"></a>Veri görünümünden belge erişimini  
  Görünümü ile ya da kendi belgenin verilere erişen [GetDocument](../mfc/reference/cview-class.md#getdocument) işaretçi belgeye ya da C++ sınıf görünümü yaparak döndüren işlev `friend` belge sınıfının. Görünüm veri erişimini çizin veya aksi halde işlemek hazır olduğunda veri almak için sonra kullanır.  
   
- Örneğin, Görünüm'ün gelen [OnDraw](../mfc/reference/cview-class.md#ondraw) görünümü üye işlevini kullanır **GetDocument** bir belge işaretçi elde edilir. Bu işaretçi erişmek için kullandığı sonra bir `CString` belgedeki veri üyesi. Görünüm dizeye geçirir `TextOut` işlevi. Bu örnek kodu görmek için bkz: [bir görünümde çizim yapma](../mfc/drawing-in-a-view.md).  
+ Örneğin, Görünüm'ün gelen [OnDraw](../mfc/reference/cview-class.md#ondraw) görünümü üye işlevini kullanır `GetDocument` bir belge işaretçi elde edilir. Bu işaretçi erişmek için kullandığı sonra bir `CString` belgedeki veri üyesi. Görünüm dizeye geçirir `TextOut` işlevi. Bu örnek kodu görmek için bkz: [bir görünümde çizim yapma](../mfc/drawing-in-a-view.md).  
   
 ## <a name="user-input-to-the-view"></a>Kullanıcı girişi görüntülemek için  
  Görünümün seçim veya veri düzenleme olarak kendi içinde bir fare tıklatma de yorumlayabilir. Benzer şekilde, tuş vuruşlarınızı veri girişi veya düzenleme olarak yorumlayabilir. Kullanıcı türleri metin yöneten bir görünümde bir dize varsayalım. Görünüm belge için bir işaretçi alır ve bazı veri yapısında depolar belgeye yeni veri iletmek için işaretçiyi kullanır.  
