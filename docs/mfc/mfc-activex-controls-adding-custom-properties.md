@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc3aa3f7aa8b6f4abf28c12a11f75540f59238e4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7facc4c712d070cffe9be5f07a236b2b04b972e9
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33352431"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931921"
 ---
 # <a name="mfc-activex-controls-adding-custom-properties"></a>MFC ActiveX Denetimleri: Özel Özellikler Ekleme
 Özel özellikler farklı stok özelliklerinden özel özellikler tarafından zaten uygulanmaz, `COleControl` sınıfı. Özel bir özellik, belirli bir durumu veya bir ActiveX denetimine denetimi kullanarak Programcı görünümünü göstermek için kullanılır.  
@@ -47,7 +47,7 @@ ms.locfileid: "33352431"
   
 -   Parametreli uygulama  
   
-     Parametreli uygulama Özellik Ekleme Sihirbazı tarafından desteklenir. (Bazen özellik dizisi denir) parametreli özellik değerleri kümesi tek bir denetim özelliği üzerinden erişmek için kullanılabilir. Bu uygulama için gönderme eşleme girişi makro `DISP_PROPERTY_PARAM`. Böyle bir uygulama ile ilgili daha fazla bilgi için bkz: [parametreli özellik uygulama](../mfc/mfc-activex-controls-advanced-topics.md) makalede ActiveX denetimleri: Gelişmiş Konular.  
+     Parametreli uygulama Özellik Ekleme Sihirbazı tarafından desteklenir. (Bazen özellik dizisi denir) parametreli özellik değerleri kümesi tek bir denetim özelliği üzerinden erişmek için kullanılabilir. Bu uygulama için gönderme eşleme girişi makro dısp_property_param oluşur. Böyle bir uygulama ile ilgili daha fazla bilgi için bkz: [parametreli özellik uygulama](../mfc/mfc-activex-controls-advanced-topics.md) makalede ActiveX denetimleri: Gelişmiş Konular.  
   
 ##  <a name="_core_using_classwizard_to_add_a_custom_property"></a> Kullanarak bir özel özellik eklemek için özellik Sihirbazı Ekle  
  Aşağıdaki yordamda özel bir özellik Get/Set yöntemleri uygulama kullanan CircleOffset ekleme gösterilmektedir. CircleOffset özel özellik denetimin kullanıcının denetimin sınırlayıcı dikdörtgenini Merkezi'nden daire uzaklığı izin verir. Get/Set yöntemleri dışında uygulaması ile özel özellikler ekleme yordamı çok benzer.  
@@ -66,7 +66,7 @@ ms.locfileid: "33352431"
   
      Bu açılır [Özellik Ekleme Sihirbazı'nı](../ide/names-add-property-wizard.md).  
   
-5.  İçinde **özellik adı** kutusuna `CircleOffset`.  
+5.  İçinde **özellik adı** kutusuna *CircleOffset*.  
   
 6.  İçin **uygulama türü**, tıklatın **Get/Set yöntemleri**.  
   

@@ -22,17 +22,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edcdcbad2b7b3e70988579786c1c8cf28f734a48
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 58ddef11e56da760bbecaa47f03dfa6c57dfa3ed
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344941"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929487"
 ---
 # <a name="managing-mdi-child-windows"></a>MDI Alt Öğe Pencerelerini Yönetme
-MDI ana çerçeve pencereleri (uygulama başına bir tane) olarak adlandırılan özel alt pencere içeren **MDICLIENT** penceresi. **MDICLIENT** penceresi ana çerçeve penceresi istemci alanını yönetir ve kendi alt öğe pencerelerini var.: türetilmiş belge pencereleri `CMDIChildWnd`. Belge pencereleri çerçeve pencereleri kendilerini (MDI alt pencereleri) olduğundan, ayrıca kendi alt öğelerini olabilir. Bu durumların tümünde, ana pencereyi alt windows yönetir ve bunlara bazı komutlar iletir.  
+MDI ana çerçeve pencereleri (uygulama başına bir tane) MDICLIENT penceresi adlı özel alt pencere içerir. İstemci alanını ana çerçeve penceresi MDICLIENT penceresi yönetir ve kendi alt öğe pencerelerini var.: türetilmiş belge pencereleri `CMDIChildWnd`. Belge pencereleri çerçeve pencereleri kendilerini (MDI alt pencereleri) olduğundan, ayrıca kendi alt öğelerini olabilir. Bu durumların tümünde, ana pencereyi alt windows yönetir ve bunlara bazı komutlar iletir.  
   
- Çerçeve penceresi bir MDI çerçeve penceresinde yönetir **MDICLIENT** denetim çubukları ile birlikte yeniden konumlandırma penceresi. **MDICLIENT** penceresinde, buna karşılık, tüm MDI alt çerçeve pencereleri yönetir. Aşağıdaki şekilde bir MDI çerçeve penceresi ilişkiyi gösterir, **MDICLIENT** penceresi ve onun alt belge çerçeve pencereleri.  
+ MDI çerçevesi penceresinde, çerçeve penceresi denetim çubukları ile birlikte yeniden konumlandırma MDICLIENT penceresi yönetir. MDICLIENT penceresi sırayla tüm MDI alt çerçeve pencereleri yönetir. Aşağıdaki şekilde bir MDI çerçeve penceresi, kendi MDICLIENT penceresi ve onun alt belge çerçeve pencereleri arasındaki ilişkiyi gösterir.  
   
  ![Alt pencereler MDI çerçeve penceresinde](../mfc/media/vc37gb1.gif "vc37gb1")  
 MDI çerçeve pencereleri ve alt öğeleri  

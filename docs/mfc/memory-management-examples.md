@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84bc2ce7c084f2951d63eee546df3bf70a2ba1fe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 21efd095a1d8e89c140ef39072a753c300a3043b
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347197"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929313"
 ---
 # <a name="memory-management-examples"></a>Bellek Yönetimi: Örnekler
 Bu makalede nasıl MFC çerçeve ayırma ve yığın ayırmaları her bellek ayırmaları tipik üç tür için gerçekleştirdiği açıklanmıştır:  
@@ -99,7 +99,7 @@ Bu makalede nasıl MFC çerçeve ayırma ve yığın ayırmaları her bellek ay�
   
      [!code-cpp[NVC_MFC_Utilities#7](../mfc/codesnippet/cpp/memory-management-examples_7.cpp)]  
   
-     Varsa bağımsız değişkeni için `CPerson` Oluşturucusu bir işaretçidir `char`, çerçeve ayırma ifadesi:  
+     Varsa bağımsız değişkeni için `CPerson` Oluşturucusu bir işaretçidir **char**, çerçeve ayırma ifadesi:  
   
      [!code-cpp[NVC_MFC_Utilities#8](../mfc/codesnippet/cpp/memory-management-examples_8.cpp)]  
   

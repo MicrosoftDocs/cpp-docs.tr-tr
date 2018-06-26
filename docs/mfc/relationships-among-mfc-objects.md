@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a0cdc4ebeab81a0eb69b96b161350f75ebc8b14
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ef6a9e605948fac4f31338f87b4d00bbaa8712f4
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379525"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931658"
 ---
 # <a name="relationships-among-mfc-objects"></a>MFC Nesneleri Arasındaki İlişki
 Belge/görünüm oluşturma işlemi perspektife put yardımcı olmak için çalışan bir program göz önünde bulundurun: belge, görünüm kapsamak için kullanılmış çerçeve penceresi ve belgeyle ilişkilendirilen görünüm.  
@@ -53,7 +53,7 @@ Belge/görünüm oluşturma işlemi perspektife put yardımcı olmak için çal�
  Genellikle, bir çerçeve penceresinde bir görünüme sahiptir, ancak bazı durumlarda, bölümlendirici pencereler olduğu gibi aynı çerçeve penceresi birden çok görünüm içerir. Çerçeve penceresi şu anda etkin görünümün bir işaretçi tutar; İşaretçinin başka bir görünüm etkinleştirilmiş her zaman güncelleştirilir.  
   
 > [!NOTE]
->  Ana çerçeve penceresi için bir işaretçi depolanan [m_pMainWnd](../mfc/reference/cwinthread-class.md#m_pmainwnd) üye değişkeni uygulama nesnesi. Çağrı `OnFileNew` geçersiz kılma içinde `InitInstance` üye işlevini `CWinApp` ayarlar `m_pMainWnd` sizin için. Değil çağırırsanız `OnFileNew`, değişkenin değerini ayarlamanız gerekir `InitInstance` kendiniz. (/Embedding komut satırında ise SDI COM bileşeni (sunucu) uygulamaları değişkeni ayarlamaz.) Unutmayın `m_pMainWnd` şimdi sınıf üyesi olan `CWinThread` yerine `CWinApp`.  
+>  Ana çerçeve penceresi için bir işaretçi depolanan [m_pMainWnd](../mfc/reference/cwinthread-class.md#m_pmainwnd) üye değişkeni uygulama nesnesi. Çağrı `OnFileNew` geçersiz kılma içinde `InitInstance` üye işlevini `CWinApp` ayarlar *m_pMainWnd* sizin için. Değil çağırırsanız `OnFileNew`, değişkenin değerini ayarlamanız gerekir `InitInstance` kendiniz. (/Embedding komut satırında ise SDI COM bileşeni (sunucu) uygulamaları değişkeni ayarlamaz.) Unutmayın *m_pMainWnd* şimdi sınıf üyesi olan `CWinThread` yerine `CWinApp`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)   

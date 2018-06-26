@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb451abc3aabe52d9aeffbc92f80df38f02e0b99
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 99480a8d77aef1822034be100a03f73cfa9d1be0
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33354024"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930010"
 ---
 # <a name="mfc-activex-controls-advanced-topics"></a>MFC ActiveX Denetimleri: Gelişmiş Konular
 Bu makalede, ActiveX denetimleri geliştirme ile ilgili gelişmiş konular yer almaktadır. Bu güncelleştirmeler şunlardır:  
@@ -79,9 +79,9 @@ Bu makalede, ActiveX denetimleri geliştirme ile ilgili gelişmiş konular yer a
   
 8.  İçinde **Al işlevi** ve **ayarlamak işlevi** kutuları, alma ve ayarlama işlevleri için benzersiz adlar yazın veya varsayılan adı kabul edin.  
   
-9. Adlı bir parametre eklemek `row` (tür `short`) kullanarak **parametre adı** ve **parametre türü** kontrol eder.  
+9. Adlı bir parametre eklemek *satır* (tür *kısa*) kullanarak **parametre adı** ve **parametre türü** kontrol eder.  
   
-10. Adlı ikinci bir parametre eklemek `column` (tür `short`).  
+10. Adlı ikinci bir parametre eklemek *sütun* (tür *kısa*).  
   
 11. **Son**'a tıklayın.  
   
@@ -111,48 +111,48 @@ Bu makalede, ActiveX denetimleri geliştirme ile ilgili gelişmiş konular yer a
   
 |Hata|Açıklama|  
 |-----------|-----------------|  
-|**CTL_E_ILLEGALFUNCTIONCALL**|Geçersiz işlev çağrısı|  
-|**CTL_E_OVERFLOW**|Taşma|  
-|**CTL_E_OUTOFMEMORY**|Bellek yetersiz|  
-|**CTL_E_DIVISIONBYZERO**|Sıfıra bölme|  
-|**CTL_E_OUTOFSTRINGSPACE**|Dize alanı yetersiz|  
-|**CTL_E_OUTOFSTACKSPACE**|Yığın alanı kalmadı|  
-|**CTL_E_BADFILENAMEORNUMBER**|Hatalı dosya adı veya numarası|  
-|**CTL_E_FILENOTFOUND**|Dosyası bulunamadı|  
-|**CTL_E_BADFILEMODE**|Hatalı dosya modu|  
-|**CTL_E_FILEALREADYOPEN**|Dosya zaten açık|  
-|**CTL_E_DEVICEIOERROR**|Cihaz G/Ç hatası|  
-|**CTL_E_FILEALREADYEXISTS**|Dosya zaten var.|  
-|**CTL_E_BADRECORDLENGTH**|Hatalı kayıt uzunluğu|  
-|**CTL_E_DISKFULL**|Disk dolu|  
-|**CTL_E_BADRECORDNUMBER**|Hatalı kayıt numarası|  
-|**CTL_E_BADFILENAME**|Hatalı dosya adı|  
-|**CTL_E_TOOMANYFILES**|Çok fazla sayıda dosya|  
-|**CTL_E_DEVICEUNAVAILABLE**|Aygıt kullanılamıyor|  
-|**CTL_E_PERMISSIONDENIED**|İzin reddedildi|  
-|**CTL_E_DISKNOTREADY**|Disk hazır değil|  
-|**CTL_E_PATHFILEACCESSERROR**|Yol/dosya erişim hatası|  
-|**CTL_E_PATHNOTFOUND**|Yol bulunamadı|  
-|**CTL_E_INVALIDPATTERNSTRING**|Geçersiz örnek dize|  
-|**CTL_E_INVALIDUSEOFNULL**|NULL kullanımı geçersiz|  
-|**CTL_E_INVALIDFILEFORMAT**|Dosya biçimi geçersiz|  
-|**CTL_E_INVALIDPROPERTYVALUE**|Özellik değeri geçersiz|  
-|**CTL_E_INVALIDPROPERTYARRAYINDEX**|Geçersiz özellik dizisi dizini|  
-|**CTL_E_SETNOTSUPPORTEDATRUNTIME**|Çalışma zamanında desteklenmeyen ayarlayın|  
-|**CTL_E_SETNOTSUPPORTED**|Desteklenmeyen kümesi (salt okunur özelliği)|  
-|**CTL_E_NEEDPROPERTYARRAYINDEX**|Need özelliği dizi dizini|  
-|**CTL_E_SETNOTPERMITTED**|İzin ayarlama|  
-|**CTL_E_GETNOTSUPPORTEDATRUNTIME**|Çalışma zamanında desteklenmeyen|  
-|**CTL_E_GETNOTSUPPORTED**|Desteklenmiyor (salt yazılır özellik) Al|  
-|**CTL_E_PROPERTYNOTFOUND**|Özellik bulunamadı|  
-|**CTL_E_INVALIDCLIPBOARDFORMAT**|Geçersiz Pano biçimi|  
-|**CTL_E_INVALIDPICTURE**|Geçersiz resim|  
-|**CTL_E_PRINTERERROR**|Yazıcı hatası|  
-|**CTL_E_CANTSAVEFILETOTEMP**|Dosya TEMP kaydedilemiyor.|  
-|**CTL_E_SEARCHTEXTNOTFOUND**|Arama metni bulunamadı|  
-|**CTL_E_REPLACEMENTSTOOLONG**|Değiştirilenler çok uzun|  
+|CTL_E_ILLEGALFUNCTIONCALL|Geçersiz işlev çağrısı|  
+|CTL_E_OVERFLOW|Taşma|  
+|CTL_E_OUTOFMEMORY|Bellek yetersiz|  
+|CTL_E_DIVISIONBYZERO|Sıfıra bölme|  
+|CTL_E_OUTOFSTRINGSPACE|Dize alanı yetersiz|  
+|CTL_E_OUTOFSTACKSPACE|Yığın alanı kalmadı|  
+|CTL_E_BADFILENAMEORNUMBER|Hatalı dosya adı veya numarası|  
+|CTL_E_FILENOTFOUND|Dosyası bulunamadı|  
+|CTL_E_BADFILEMODE|Hatalı dosya modu|  
+|CTL_E_FILEALREADYOPEN|Dosya zaten açık|  
+|CTL_E_DEVICEIOERROR|Cihaz G/Ç hatası|  
+|CTL_E_FILEALREADYEXISTS|Dosya zaten var.|  
+|CTL_E_BADRECORDLENGTH|Hatalı kayıt uzunluğu|  
+|CTL_E_DISKFULL|Disk dolu|  
+|CTL_E_BADRECORDNUMBER|Hatalı kayıt numarası|  
+|CTL_E_BADFILENAME|Hatalı dosya adı|  
+|CTL_E_TOOMANYFILES|Çok fazla sayıda dosya|  
+|CTL_E_DEVICEUNAVAILABLE|Aygıt kullanılamıyor|  
+|CTL_E_PERMISSIONDENIED|İzin reddedildi|  
+|CTL_E_DISKNOTREADY|Disk hazır değil|  
+|CTL_E_PATHFILEACCESSERROR|Yol/dosya erişim hatası|  
+|CTL_E_PATHNOTFOUND|Yol bulunamadı|  
+|CTL_E_INVALIDPATTERNSTRING|Geçersiz örnek dize|  
+|CTL_E_INVALIDUSEOFNULL|NULL kullanımı geçersiz|  
+|CTL_E_INVALIDFILEFORMAT|Dosya biçimi geçersiz|  
+|CTL_E_INVALIDPROPERTYVALUE|Özellik değeri geçersiz|  
+|CTL_E_INVALIDPROPERTYARRAYINDEX|Geçersiz özellik dizisi dizini|  
+|CTL_E_SETNOTSUPPORTEDATRUNTIME|Çalışma zamanında desteklenmeyen ayarlayın|  
+|CTL_E_SETNOTSUPPORTED|Desteklenmeyen kümesi (salt okunur özelliği)|  
+|CTL_E_NEEDPROPERTYARRAYINDEX|Need özelliği dizi dizini|  
+|CTL_E_SETNOTPERMITTED|İzin ayarlama|  
+|CTL_E_GETNOTSUPPORTEDATRUNTIME|Çalışma zamanında desteklenmeyen|  
+|CTL_E_GETNOTSUPPORTED|Desteklenmiyor (salt yazılır özellik) Al|  
+|CTL_E_PROPERTYNOTFOUND|Özellik bulunamadı|  
+|CTL_E_INVALIDCLIPBOARDFORMAT|Geçersiz Pano biçimi|  
+|CTL_E_INVALIDPICTURE|Geçersiz resim|  
+|CTL_E_PRINTERERROR|Yazıcı hatası|  
+|CTL_E_CANTSAVEFILETOTEMP|Dosya TEMP kaydedilemiyor.|  
+|CTL_E_SEARCHTEXTNOTFOUND|Arama metni bulunamadı|  
+|CTL_E_REPLACEMENTSTOOLONG|Değiştirilenler çok uzun|  
   
- Gerekirse, kullanın **CUSTOM_CTL_SCODE** makrosu standart kodları biri tarafından kapsanmayan bir koşul için bir özel hata kodu tanımlayın. Parametresi bu makrosu için 1000 arasında bir tamsayı olmalıdır ve 32767 (dahil) arasındadır. Örneğin:  
+ Gerekirse, CUSTOM_CTL_SCODE makrosu standart kodları biri tarafından kapsanmayan bir koşul için bir özel hata kodu tanımlamak için kullanın. Parametresi bu makrosu için 1000 arasında bir tamsayı olmalıdır ve 32767 (dahil) arasındadır. Örneğin:  
   
  [!code-cpp[NVC_MFC_AxUI#37](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_4.cpp)]  
   
@@ -174,9 +174,9 @@ Bu makalede, ActiveX denetimleri geliştirme ile ilgili gelişmiş konular yer a
   
 -   Ekleme üye değişkeni Sihirbazı'nı kullanarak seçin **denetim değişken** ve denetimin kimliği seçin. Denetimin sarmalayıcı sınıfı olarak bir üye değişken adı girin ve **denetim türü**.  
   
-     -veya-  
+     veya  
   
--   Bir yerel değişken ve bir alt iletişim öğesi olarak bildirin. Aşağıdakine benzer bir kod ekleme (`CMyCtrl` sarmalayıcı sınıftır `IDC_MYCTRL1` denetimin kimliği):  
+-   Bir yerel değişken ve bir alt iletişim öğesi olarak bildirin. Aşağıdakine benzer bir kod ekleme (`CMyCtrl` sarmalayıcı sınıftır IDC_MYCTRL1 olan denetimin kimliği):  
   
      [!code-cpp[NVC_MFC_AxCont#19](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_6.cpp)]  
   

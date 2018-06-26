@@ -15,19 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14979f1c5f11e9a229c408e33e7c17d8776a54a5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2a7b498ed1ddc3a3d040abde6ebcb7e27615b801
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344223"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929349"
 ---
 # <a name="containers-client-items"></a>Kapsayıcılar: İstemci Öğeleri
 Bu makale, istemci öğeleri nelerdir açıklar ve ne sınıfları, uygulamanızın istemci öğelerinden türetilmelidir.  
   
  İstemci, içerdiği ya da bir OLE kapsayıcı uygulamanın belgenin başvurduğu başka bir uygulamaya ait veri öğeleri öğelerdir. İstemci öğeleri verisini belge içinde yer alan katıştırılmış; Bu veri kapsayıcısı belgenin başvurduğu başka bir konumda depolanan bağlanır.  
   
- OLE uygulama belge sınıfında sınıfından türetilen [COleDocument](../mfc/reference/coledocument-class.md) yerine **CDocument**. `COleDocument` Sınıfının devraldığı **CDocument** üzerinde hangi MFC uygulamalarını dayalı belge/görünüm mimarisinin kullanmak için gereken tüm işlevselliği. `COleDocument` Ayrıca bir belgeyi koleksiyonu olarak ele alan bir arabirim tanımlar `CDocItem` nesneleri. Birkaç `COleDocument` üye işlevleri ekleme, alma ve o koleksiyonun öğelerini silme için sağlanır.  
+ OLE uygulama belge sınıfında sınıfından türetilen [COleDocument](../mfc/reference/coledocument-class.md) yerine `CDocument`. `COleDocument` Sınıfının devraldığı `CDocument` üzerinde hangi MFC uygulamalarını dayalı belge/görünüm mimarisinin kullanmak için gereken tüm işlevselliği. `COleDocument` Ayrıca bir belgeyi koleksiyonu olarak ele alan bir arabirim tanımlar `CDocItem` nesneleri. Birkaç `COleDocument` üye işlevleri ekleme, alma ve o koleksiyonun öğelerini silme için sağlanır.  
   
  Her kapsayıcı uygulaması en az bir sınıftan türetilmelidir `COleClientItem`. Bu sınıfın nesneleri, OLE belgede bağlı veya katıştırılmış öğeleri temsil eder. Belgeden silinmeden bu nesneleri için bunları içeren belgesinin kullanım ömrü vardır.  
   

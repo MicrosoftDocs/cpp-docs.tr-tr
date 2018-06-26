@@ -16,29 +16,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b58af1efc0558fe9195f56c31df11827d57f731
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e09f8bc0b61e22435ee348968f117940b57132e3
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342900"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930881"
 ---
 # <a name="customizing-the-header-item39s-appearance"></a>Üstbilgi öğesi özelleştirme&#39;s görünümü
 Ayarlayarak *dwStyle* üstbilgi denetimi ilk oluşturduğunuzda parametre ([CHeaderCtrl::Create](../mfc/reference/cheaderctrl-class.md#create)), görünüm tanımlayabilirsiniz ve üstbilgi davranışını öğelerini ya da üstbilgisi denetimi.  
   
  Örnekleme ayarlayabileceğiniz stilleri ve bunların amaçla şöyledir:  
   
--   Basma düğmesi gibi ara üstbilgi öğesi yapma `HDS_BUTTONS` stili.  
+-   Basma düğmesi gibi ara üstbilgi öğesi yapma **HDS_BUTTONS** stili.  
   
      Fare tıklamaları verileri Microsoft Outlook içinde gerçekleştirilir gibi belirli bir sütuna göre sıralama gibi bir üstbilgi öğesinin yanıt eylemleri gerçekleştirmek istiyorsanız, bu stil kullanın.  
   
--   Fare imlecini üzerlerine başarılı olduğunda üstbilgi öğeleri "sıcak izleme" görünümünü sunmak için bunu kullanın `HDS_HOTTRACK` stili.  
+-   Fare imlecini üzerlerine başarılı olduğunda üstbilgi öğeleri "sıcak izleme" görünümünü sunmak için bunu kullanın **HDS_HOTTRACK** stili.  
   
      Etkin izleme görüntüler 3B anahat işaretçinin aksi düz bir öğeyi üzerinden geçerken çubuğu.  
   
--   Üstbilgi denetimi gizli olduğunu belirtmek için kullanın `HDS_HIDDEN` stili.  
+-   Üstbilgi denetimi gizli olduğunu belirtmek için kullanın **HDS_HIDDEN** stili.  
   
-     `HDS_HIDDEN` Stilini gösterir üstbilgi denetimine veri kapsayıcısını ve görsel bir denetim kullanılmak üzere tasarlanmıştır. Bu stili otomatik olarak denetim gizlemez ancak, bunun yerine, davranışını etkiler `CHeaderCtrl::Layout`. Döndürülen değerin **cy** üyesi `WINDOWPOS` yapısı sıfır olacak belirten denetimi kullanıcıya görünür olmamalıdır.  
+     **HDS_HIDDEN** stilini gösterir üstbilgi denetimine veri kapsayıcısını ve görsel bir denetim kullanılmak üzere tasarlanmıştır. Bu stili otomatik olarak denetim gizlemez ancak, bunun yerine, davranışını etkiler `CHeaderCtrl::Layout`. Döndürülen değerin *cy* üyesi `WINDOWPOS` yapısı sıfır olacak belirten denetimi kullanıcıya görünür olmamalıdır.  
   
  Bu özellikler hakkında daha fazla bilgi için bkz: [öğeleri](http://msdn.microsoft.com/library/windows/desktop/bb775238) Windows SDK. Üstbilgi denetimine öğe ekleme hakkında daha fazla bilgi için bkz: [üstbilgi denetimine öğe eklemeyi](../mfc/adding-items-to-the-header-control.md).  
   

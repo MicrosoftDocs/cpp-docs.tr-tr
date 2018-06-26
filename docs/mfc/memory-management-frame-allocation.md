@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f67149e5835ee6f2b8922b29ee92872b24d0ec4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 264a3b5618b1c153219d5dee838af38bd7f49f49
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349317"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931066"
 ---
 # <a name="memory-management-frame-allocation"></a>Bellek Yönetimi: Çerçeve Ayırma
 Çerçevesinde ayırma "olarak ayarlanmış yığın çerçevesi" adı geçen her bir işlev çağrılır. Yığın çerçevesi tutan geçici olarak bağımsız değişkenler tanımlanan değişkenler yanı sıra işlevi işlevi için yerel bellek alanıdır. Derleyici otomatik olarak alanı kendileri için ayırdığından çerçeve değişkenleri genellikle "Otomatik" değişkenleri denir.  
@@ -42,7 +42,7 @@ ms.locfileid: "33349317"
   
  [!code-cpp[NVC_MFC_Utilities#10](../mfc/codesnippet/cpp/memory-management-frame-allocation_1.cpp)]  
   
- İç içe ayraçlar kullanılıyorsa bir çerçeve değişkenin kapsamını ancak işlevi çıkar işlevi küçük olabilir yerel işlevi değişkenleri için bu kapsamı geçiş olur. Bu çerçeve değişkenleri otomatik olarak silinmesini çok önemlidir. Basit ilkel türler söz konusu olduğunda (gibi `int` veya **bayt**), dizi ya da veri yapılarını otomatik silme yalnızca değişkeni tarafından kullanılan bellek geri kazanır. Değişkeni fazlası kapsam dışında olduğundan, yine de erişilemiyor. C++ nesneleri söz konusu olduğunda, ancak otomatik silme işlemi biraz daha karmaşıktır.  
+ İç içe ayraçlar kullanılıyorsa bir çerçeve değişkenin kapsamını ancak işlevi çıkar işlevi küçük olabilir yerel işlevi değişkenleri için bu kapsamı geçiş olur. Bu çerçeve değişkenleri otomatik olarak silinmesini çok önemlidir. Basit ilkel türler söz konusu olduğunda (gibi **int** veya **bayt**), dizi ya da veri yapılarını otomatik silme yalnızca değişkeni tarafından kullanılan bellek geri kazanır. Değişkeni fazlası kapsam dışında olduğundan, yine de erişilemiyor. C++ nesneleri söz konusu olduğunda, ancak otomatik silme işlemi biraz daha karmaşıktır.  
   
  Bir nesne bir çerçeve değişken olarak tanımlandığında, kurucusu tanımı burada karşılaştı noktada otomatik olarak çağrılır. Nesne kapsam dışına çıktığında nesnesi için bellek alınmadan önce kendi yıkıcı otomatik olarak çağrılır. Bu otomatik oluşturma ve yok etme çok kullanışlı olabilir, ancak otomatik çağrıları, özellikle yıkıcı farkında olmanız gerekir.  
   

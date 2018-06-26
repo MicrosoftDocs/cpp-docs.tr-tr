@@ -21,15 +21,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfdff6023beeedfa14d37e5b404fa3c223691b85
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6f8214b2f40926cc4ab1471dce99ce5215362011
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349060"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930496"
 ---
 # <a name="ole-container-classes"></a>OLE Kapsayıcı Sınıfları
-Bu sınıfların kapsayıcı uygulamalar tarafından kullanılır. Her ikisi de `COleLinkingDoc` ve `COleDocument` koleksiyonlarını `COleClientItem` nesneleri. Belge sınıfından türetilen yerine **CDocument**, bu sınıftan türetilen `COleLinkingDoc` veya `COleDocument`bağlantıları belgenizi katıştırılmış nesneler için destek istemenize bağlı olarak.  
+Bu sınıfların kapsayıcı uygulamalar tarafından kullanılır. Her ikisi de `COleLinkingDoc` ve `COleDocument` koleksiyonlarını `COleClientItem` nesneleri. Belge sınıfından türetilen yerine `CDocument`, bu sınıftan türetilen `COleLinkingDoc` veya `COleDocument`bağlantıları belgenizi katıştırılmış nesneler için destek istemenize bağlı olarak.  
   
  Kullanım bir `COleClientItem` her OLE öğesi başka bir belgeden katıştırılmış veya başka bir belge için bir bağlantı belgeyi temsil eden nesne.  
   

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6781ca14b174608a815a0300750dd6a3d9aa96bb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f7867cc40ae837da5fad957b6a1d584fb7c2c4ce
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33354786"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929906"
 ---
 # <a name="how-to-create-a-message-map-for-a-template-class"></a>Nasıl yapılır: Bir Şablon Sınıfı için İleti Eşlemesi Oluşturma
 İleti eşleme MFC'de uygun C++ nesne örneği Windows iletilerini yönlendirmek için etkili bir yol sağlar. MFC ileti eşlemesi hedefleri örnekleri uygulama sınıfları, belge ve görünüm sınıfları, Denetim sınıfları vb. içerir.  
@@ -30,15 +30,15 @@ ms.locfileid: "33354786"
  Bir sınırlama ile [begın_message_map](reference/message-map-macros-mfc.md#begin_message_map) makrosu bağımsız şablon içeren bir sınıf ile birlikte kullanıldığında oluşur. Bir şablon sınıfı ile kullanıldığında, bu makrosu makrosu genişletme sırasında bir derleme zamanı hatası nedeniyle eksik şablon parametreleri neden olur. [BEGIN_TEMPLATE_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_template_message_map) makrosu kendi ileti bildirmek için tek şablon bağımsız değişken içeren sınıfları eşleştirir izin verecek şekilde tasarlanmıştır.  
   
 ## <a name="example"></a>Örnek  
- Bir örneği göz önünde bulundurun burada MFC [CListBox](../mfc/reference/clistbox-class.md) sınıfı, bir dış veri kaynağı ile eşitleme sağlamak için genişletilir. Kurgusal **CSyncListBox** sınıfı şu şekilde bildirilen:  
+ Bir örneği göz önünde bulundurun burada MFC [CListBox](../mfc/reference/clistbox-class.md) sınıfı, bir dış veri kaynağı ile eşitleme sağlamak için genişletilir. Kurgusal `CSyncListBox` sınıfı şu şekilde bildirilen:  
   
  [!code-cpp[NVC_MFC_CListBox#42](../mfc/codesnippet/cpp/how-to-create-a-message-map-for-a-template-class_1.h)]  
   
- **CSyncListBox** sınıfı ile eşitleyecek veri kaynağını tanımlayan tek bir türündeki şablonlu. Sınıfının ileti eşlemesi katılacak olan üç yöntem de bildirir: **OnPaint**, **OnDestroy**, ve **OnSynchronize**. **OnSynchronize** yöntemi şu şekilde gerçekleştirilir:  
+ `CSyncListBox` Sınıfı ile eşitleyecek veri kaynağını tanımlayan tek bir türündeki şablonlu. Sınıfının ileti eşlemesi katılacak olan üç yöntem de bildirir: `OnPaint`, `OnDestroy`, ve `OnSynchronize`. `OnSynchronize` Yöntemi şu şekilde gerçekleştirilir:  
   
  [!code-cpp[NVC_MFC_CListBox#43](../mfc/codesnippet/cpp/how-to-create-a-message-map-for-a-template-class_2.cpp)]  
   
- Yukarıdaki uygulama verir **CSyncListBox** uygulayan bir sınıf türü özelleştirilmesi sınıfı **GetCount** yöntemi gibi **CArray**, **CList**, ve **CMap**. **StringizeElement** işlevidir şunlarla örneklenmiş bir şablon işlevi:  
+ Yukarıdaki uygulama verir `CSyncListBox` uygulayan bir sınıf türü özelleştirilmesi sınıfı `GetCount` yöntemi gibi `CArray`, `CList`, ve `CMap`. `StringizeElement` İşlevidir şunlarla örneklenmiş bir şablon işlevi:  
   
  [!code-cpp[NVC_MFC_CListBox#44](../mfc/codesnippet/cpp/how-to-create-a-message-map-for-a-template-class_3.cpp)]  
   
@@ -58,15 +58,15 @@ ms.locfileid: "33354786"
   
  [!code-cpp[NVC_MFC_CListBox#45](../mfc/codesnippet/cpp/how-to-create-a-message-map-for-a-template-class_4.cpp)]  
   
- Yukarıdaki makrosu harita derlenmez, due için nedeni, şablon belirtimi için **CSyncListBox** sınıfı olacaktır eksik makrosu genişletme sırasında. **BEGIN_TEMPLATE_MESSAGE_MAP** makrosu çözdü bu genişletilmiş makrosu eşlemeye belirtilen şablon parametresi ekleyerek. Bu sınıf için ileti eşlemesi olur:  
+ Yukarıdaki makrosu harita derlenmez, due için nedeni, şablon belirtimi için `CSyncListBox` sınıfı olacaktır eksik makrosu genişletme sırasında. **BEGIN_TEMPLATE_MESSAGE_MAP** makrosu çözdü bu genişletilmiş makrosu eşlemeye belirtilen şablon parametresi ekleyerek. Bu sınıf için ileti eşlemesi olur:  
   
  [!code-cpp[NVC_MFC_CListBox#46](../mfc/codesnippet/cpp/how-to-create-a-message-map-for-a-template-class_5.cpp)]  
   
- Aşağıdaki örnek kullanımını gösteren **CSyncListBox** kullanarak sınıfı bir **CStringList** nesnesi:  
+ Aşağıdaki örnek kullanımını gösteren `CSyncListBox` kullanarak sınıfı bir `CStringList` nesnesi:  
   
  [!code-cpp[NVC_MFC_CListBox#47](../mfc/codesnippet/cpp/how-to-create-a-message-map-for-a-template-class_6.cpp)]  
   
- Sınama işlemini tamamlamak için **StringizeElement** işlevi özelleştirilmiş, çalışmak için **CStringList** sınıfı:  
+ Sınama işlemini tamamlamak için `StringizeElement` işlevi özelleştirilmiş, çalışmak için `CStringList` sınıfı:  
   
  [!code-cpp[NVC_MFC_CListBox#48](../mfc/codesnippet/cpp/how-to-create-a-message-map-for-a-template-class_7.cpp)]  
   

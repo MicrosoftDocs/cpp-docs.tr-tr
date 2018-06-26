@@ -16,19 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1be4c74a48f1367369582b433a2a833ceb8e1976
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a8e9ff08054fbef3f15283395d7eb150551926dc
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343859"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928631"
 ---
 # <a name="exported-dll-function-entry-points"></a>Dışa Aktarılan DLL İşlev Giriş Noktaları
 DLL'den dışarı aktarılan işlevleri için kullanmak [AFX_MANAGE_STATE](reference/extension-dll-macros.md#afx_manage_state) DLL modülünden çağıran uygulamanın DLL'e geçerken uygun genel durumunu korumak üzere makrosu.  
   
  Çağrıldığında, bu makrosu ayarlar `pModuleState`, bir işaretçi bir `AFX_MODULE_STATE` işlevi içeren kapsamını geri kalanı etkili Modül durumu olarak modül için genel verileri içeren yapısı. Makro içeren kapsam bırakarak bağlı önceki etkili Modül durumu otomatik olarak geri.  
   
- Bu geçiş örneğini oluşturarak elde edilir bir **AFX_MODULE_STATE** yığında sınıfı. Kendi oluşturucusuna bu sınıfın geçerli modül durumunu gösteren bir işaretçi alır ve bir üye değişkeninde depolar ve ardından ayarlar `pModuleState` yeni etkili Modül durumu olarak. Kendi yıkıcı Bu sınıf, üye değişkeni etkili Modül durumu olarak depolanan işaretçi geri yükler.  
+ Bu geçiş örneğini oluşturarak elde edilir bir `AFX_MODULE_STATE` yığında sınıfı. Kendi oluşturucusuna bu sınıfın geçerli modül durumunu gösteren bir işaretçi alır ve bir üye değişkeninde depolar ve ardından ayarlar `pModuleState` yeni etkili Modül durumu olarak. Kendi yıkıcı Bu sınıf, üye değişkeni etkili Modül durumu olarak depolanan işaretçi geri yükler.  
   
  Bir iletişim kutusu, DLL içinde başlatır gibi dışarı aktarılan bir işlevin varsa, aşağıdaki kodu işlevi başlangıcına eklemeniz gerekir:  
   

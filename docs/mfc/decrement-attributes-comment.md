@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74398d731c51223ea74fc6b827b0626af89286b5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 44b34c2e2d22d0a0a2feb15f6bf2793b68dc7042
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342926"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929575"
 ---
 # <a name="-attributes-comment"></a>// Özniteliklerle İlgili Açıklama
 `// Attributes` Ortak öznitelikleri (veya özellikleri) nesnesinin bir MFC sınıf bildirimi bölümü içerir. Genellikle üye değişkenleri veya Get/Set işlevler şunlardır. "Get" ve "Ayarla" işlevleri olabilir veya sanal olabilir. "Get" genellikle işlevlerdir **const**, çoğu durumda bunlar yan etkileri olmadığı için. Bu üyeleri normalde ortak; korumalı ve özel öznitelikleri genellikle uygulama bölümünde bulunur.  
   
- Sınıfından listeleme örnekteki `CStdioFile`altında [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md), listeden bir üye değişkeni içerir `m_pStream`. Sınıf `CDC` bu açıklama altında yaklaşık 20 üyeleri listeler.  
+ Sınıfından listeleme örnekteki `CStdioFile`altında [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md), listeden bir üye değişkeni içerir *m_pStream*. Sınıf `CDC` bu açıklama altında yaklaşık 20 üyeleri listeler.  
   
 > [!NOTE]
 >  Gibi büyük sınıfları `CDC` ve `CWnd`, yalnızca bir gruptaki tüm öznitelikler listesi çok daha anlaşılır olması için eklediğiniz değil çok fazla sayıda üyeleri olabilir. Böyle durumlarda, sınıf kitaplığı daha fazla üyeleri ayırmak için başlıklarında diğer yorumlar kullanır. Örneğin, `CDC` kullanan `// Device-Context Functions`, `// Drawing Tool Functions`, `// Drawing Attribute Functions`ve daha fazlası. Yukarıda açıklanan her zamanki sözdizimi özniteliklerini temsil eden gruplarını izler. Adlı bir uygulama bölüm birçok OLE sınıfları sahip `// Interface Maps`.  

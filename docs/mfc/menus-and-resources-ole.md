@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54cc874fd3c95123446ab81b920bfe0fce52df5e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cae180ca71b89732e073b9039483b8b46366a42a
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347100"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929640"
 ---
 # <a name="menus-and-resources-ole"></a>Menüler ve Kaynaklar (OLE)
 Bu grubun makalelerin menüleri ve kaynakları MFC OLE belge uygulamaları kullanımını açıklar.  
@@ -54,10 +54,10 @@ Bu grubun makalelerin menüleri ve kaynakları MFC OLE belge uygulamaları kulla
   
 |Kaynak adı|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|  
 |-------------------|---------|  
-|**IDR_MAINFRAME**|Hiçbir dosya açıksa MDI uygulama veya bir SDI uygulamada açık dosyalar bağımsız olarak kullanılır. OLE dışı uygulamalarda kullanılan standart menü budur.|  
-|**IDR_\<Proje > türü**|MDI uygulamada açık dosya varsa kullanılır. Bir uygulama bağımsız olarak çalışırken kullanılır. OLE dışı uygulamalarda kullanılan standart menü budur.|  
-|**IDR_\<Proje > TYPE_SRVR_IP**|Bir nesne yerinde açık olduğunda sunucu veya kapsayıcı tarafından kullanılır.|  
-|**IDR_\<Proje > TYPE_SRVR_EMB**|Yerinde etkinleştirme kullanmadan bir nesne açtıysanız bir sunucu uygulaması tarafından kullanılır.|  
+|IDR_MAINFRAME|Hiçbir dosya açıksa MDI uygulama veya bir SDI uygulamada açık dosyalar bağımsız olarak kullanılır. OLE dışı uygulamalarda kullanılan standart menü budur.|  
+|IDR_\<Proje > türü|MDI uygulamada açık dosya varsa kullanılır. Bir uygulama bağımsız olarak çalışırken kullanılır. OLE dışı uygulamalarda kullanılan standart menü budur.|  
+|IDR_\<Proje > TYPE_SRVR_IP|Bir nesne yerinde açık olduğunda sunucu veya kapsayıcı tarafından kullanılır.|  
+|IDR_\<Proje > TYPE_SRVR_EMB|Yerinde etkinleştirme kullanmadan bir nesne açtıysanız bir sunucu uygulaması tarafından kullanılır.|  
   
  Bu kaynak adlarının her biri bir menü ve genellikle Hızlandırıcı tablosunu temsil eder. Uygulama Sihirbazı'nı oluşturulmaz MFC uygulamalarında benzer bir düzeni kullanılmalıdır.  
   

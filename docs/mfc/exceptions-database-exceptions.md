@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2168bc530accfdde6fad4d41cd68e94d3088f153
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 83b3f4f54f467ca7f4fbd2a179fdbf01d54dfa89
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33354308"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930244"
 ---
 # <a name="exceptions-database-exceptions"></a>Özel durumlar: Veritabanı Özel Durumları
 Bu makalede, veritabanı özel durumları işleme açıklanmaktadır. Bu makaledeki malzemesini çoğunu ile MFC sınıfları açık veritabanı bağlantısı (ODBC) veya MFC sınıfları için veri erişim nesneleri (DAO) çalıştığınız olup olmadığını geçerlidir. Malzeme birini veya diğer model belirli açık olarak işaretlenir. Konular şunlardır:  
@@ -54,7 +54,7 @@ Bu makalede, veritabanı özel durumları işleme açıklanmaktadır. Bu makaled
   
 -   [m_nAfxDaoError](../mfc/reference/cdaoexception-class.md#m_nafxdaoerror) MFC DAO sınıflarını bir genişletilmiş hata kodunu içeriyor. Biçiminde adlara sahip bu hata kodları **AFX_DAO_ERROR_XXX**, veri üyesi altında belgelenen `CDaoException`.  
   
--   [m_scode](../mfc/reference/cdaoexception-class.md#m_scode) bir OLE içeren `SCODE` DAO, varsa. Ayrıca, ancak bu hata kodu ile çalışma nadiren gerekir. Genellikle daha fazla bilgi diğer iki veri üyeleri kullanılabilir. Veri üyesi daha fazla bilgi için bkz: `SCODE` değerleri.  
+-   [m_scode](../mfc/reference/cdaoexception-class.md#m_scode) bir OLE içeren **SCODE** DAO, varsa. Ayrıca, ancak bu hata kodu ile çalışma nadiren gerekir. Genellikle daha fazla bilgi diğer iki veri üyeleri kullanılabilir. Veri üyesi daha fazla bilgi için bkz: **SCODE** değerleri.  
   
  DAO hatalar, DAO hata nesne türü ve DAO hatalar koleksiyonuna hakkında ek bilgi sınıfı altında kullanılabilir [CDaoException](../mfc/reference/cdaoexception-class.md).  
   
@@ -62,7 +62,7 @@ Bu makalede, veritabanı özel durumları işleme açıklanmaktadır. Bu makaled
  Aşağıdaki örnek oluşturmak çalışır bir [CRecordset](../mfc/reference/crecordset-class.md)-yığınla nesnesinde türetilmiş **yeni** işleci ve kayıt kümesi (ODBC veri kaynağını) açın. DAO sınıfları için benzer bir örnek için "DAO özel durum" aşağıdaki örneğe bakın.  
   
 ### <a name="odbc-exception-example"></a>ODBC özel durumu örneği  
- [Açık](../mfc/reference/crecordset-class.md#open) üye işlevi bir özel durum özel durum (tür [CDBException](../mfc/reference/cdbexception-class.md) ODBC sınıfları için), bu nedenle bu kod köşeli **açık** çağıran bir **deneyin**  bloğu. Sonraki **catch** catch bloğu bir `CDBException`. Adlı özel durum nesnesi kendisini inceleyin `e`, ancak bu durumda bir kayıt kümesi oluşturma girişimi başarısız olduğunu bilmeniz yeterlidir. **Catch** bloğu bir ileti kutusu görüntüler ve kayıt kümesi nesnesi silerek temizler.  
+ [Açık](../mfc/reference/crecordset-class.md#open) üye işlevi bir özel durum özel durum (tür [CDBException](../mfc/reference/cdbexception-class.md) ODBC sınıfları için), bu nedenle bu kod köşeli `Open` çağıran bir **deneyin** bloğu. Sonraki **catch** catch bloğu bir `CDBException`. Adlı özel durum nesnesi kendisini inceleyin `e`, ancak bu durumda bir kayıt kümesi oluşturma girişimi başarısız olduğunu bilmeniz yeterlidir. **Catch** bloğu bir ileti kutusu görüntüler ve kayıt kümesi nesnesi silerek temizler.  
   
  [!code-cpp[NVC_MFCDatabase#36](../mfc/codesnippet/cpp/exceptions-database-exceptions_1.cpp)]  
   

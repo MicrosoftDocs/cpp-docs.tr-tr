@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab5195cc2381e515688182ad73452b07afd06b98
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 267d47b7e061e3bde39b199cd948ba9875dea16b
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33353279"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929737"
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma
 ActiveX denetimleri daha güçlü kullanımlarını bir veritabanında belirli bir alanla bağlamak için denetimin özelliğini sağlayan veri bağlama biridir. Bir kullanıcı bu bağlı özellik verilerde değişiklik yaptığında denetim veritabanı ve kayıt alanını güncelleştirilmesi istekleri bildirir. Veritabanı ardından Denetim başarı veya hata isteğin bildirir.  
@@ -51,7 +51,7 @@ Veri bağlama denetimi kavramsal diyagramı
  İsteyeceksiniz daha büyük bir olasılıkla olmasına rağmen bir veriye bağlı stok özellik oluşturmak mümkün bir [bağlanabilirse get/set yöntemi](#vchowcreatingbindablegetsetmethod).  
   
 > [!NOTE]
->  Stok özellikleri sahip **bağlanabilirse** ve **requestedit** varsayılan öznitelikleri.  
+>  Stok özellikleri sahip `bindable` ve `requestedit` varsayılan öznitelikleri.  
   
 #### <a name="to-add-a-bindable-stock-property-using-the-add-property-wizard"></a>Özellik Ekleme Sihirbazı'nı kullanarak bağlanabilir stok özellik eklemek için  
   

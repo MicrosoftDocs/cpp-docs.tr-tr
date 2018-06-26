@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ab5bd34098ee1126e015e2a8368ef5b3c48fdbd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6d51589d9261d497c4c1f9185bd90b889e46eb34
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381176"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930696"
 ---
 # <a name="registration"></a>Kayıt
 Bir kullanıcı bir uygulamaya bir OLE öğesi eklemek istediğinde OLE Seçilecek nesne türlerinin bir listesini gösterir. OLE bu listedeki tüm sunucu uygulamaları tarafından sağlanan bilgileri içeren sistem kayıt veritabanından alır. Bir sunucu için kendisini kaydettiğinde, sistem kayıt veritabanına (kayıt defteri) koyar girişler her onu sağlayan nesnesi türünü açıklar, dosya uzantıları ve yolunu kendisi, diğer bilgilerin yanı.  
@@ -59,7 +59,7 @@ Bir kullanıcı bir uygulamaya bir OLE öğesi eklemek istediğinde OLE Seçilec
   
  Sunucu uygulamanız başlatılırken örneği kayıt gerçekleştirebilirsiniz emin olmalısınız. Örnek kayıt OLE sistem DLL'leri sunucunun etkin ve kapsayıcılardan istekleri almaya hazır olduğunu bildirir. Bir giriş kayıt veritabanına eklemez. Örnek kayıt sunucusunun çağırarak gerçekleştirmek `ConnectTemplate` üye fonksiyonu tarafından tanımlanan `COleTemplateServer`. Bu bağlar `CDocTemplate` nesnesini `COleTemplateServer` nesne.  
   
- `ConnectTemplate` İşlev üç parametreleri alır: sunucunun **CLSID**, bir işaretçi `CDocTemplate` nesne ve sunucuyu birden çok örneği destekleyip desteklemediğini belirten bir bayrak. Bir miniserver birden çok örneği destekleyebilmesi gerekir, diğer bir deyişle, aynı anda, her kapsayıcı için bir tane çalıştırmak için sunucunun birden çok örneği için olası olmalıdır. Sonuç olarak, geçirmek **doğru** bir miniserver başlatılırken Bu bayrak için.  
+ `ConnectTemplate` İşlev üç parametreleri alır: sunucunun *CLSID*, bir işaretçi `CDocTemplate` nesne ve sunucuyu birden çok örneği destekleyip desteklemediğini belirten bir bayrak. Bir miniserver birden çok örneği destekleyebilmesi gerekir, diğer bir deyişle, aynı anda, her kapsayıcı için bir tane çalıştırmak için sunucunun birden çok örneği için olası olmalıdır. Sonuç olarak, geçirmek **doğru** bir miniserver başlatılırken Bu bayrak için.  
   
  Her zaman bir kapsayıcı tarafından başlatılan tanımı tarafından bir miniserver yazıyorsanız. Hala "/ katıştırma" seçeneğini denetlemek için komut satırında ayrıştırma. Bu seçenek komut satırında yokluğu kullanıcı bağımsız bir uygulama olarak miniserver başlatmaya çalıştı anlamına gelir. Bu durumda, sistem kayıt veritabanıyla sunucuyu kaydetmek ve kullanıcıya bir kapsayıcı uygulamasından miniserver başlatma bildiren bir ileti kutusu görüntüler.  
   

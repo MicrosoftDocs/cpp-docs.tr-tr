@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24ad3e99399e4d5db45606accfd58512f3950f26
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fb7362e7b9ccb15d338c09da337a6af5077a9789
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355278"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929880"
 ---
 # <a name="multipage-documents"></a>Birden Fazla Belge
 Bu makalede Windows Yazdırma Protokolü açıklar ve birden fazla sayfa içeren belgeleri yazdırma açıklanmaktadır. Makale aşağıdaki konuları içerir:  
@@ -99,7 +99,7 @@ Yazdırma döngüsü
   
  `DoPreparePrinting` Daha sonra yazdırma iletişim kutusu görüntüler. Döndüğünde, `CPrintInfo` yapısı kullanıcı tarafından belirtilen değerleri içerir. Kullanıcı yalnızca seçilen bir aralığı sayfaların yazdırma isterse çözemiyorsa başlangıç ve bitiş Yazdır iletişim kutusunda sayfa numaraları belirtebilirsiniz. Framework kullanarak bu değerleri alır `GetFromPage` ve `GetToPage` işlevlerini [Cprintınfo](../mfc/reference/cprintinfo-structure.md). Kullanıcı sayfa aralığını belirtmiyorsa, framework çağırması `GetMinPage` ve `GetMaxPage` ve tüm belgeyi yazdırmak için döndürülen değerlerini kullanır.  
   
- Yazdırılacak belgenin her sayfasına framework iki üye işlevleri görünüm sınıfınızda çağırması [OnPrepareDC](../mfc/reference/cview-class.md#onpreparedc) ve [OnPrint](../mfc/reference/cview-class.md#onprint), her işlev iki parametreleri ve geçirir: bir işaretçi bir [ CDC](../mfc/reference/cdc-class.md) nesne ve bir işaretçi bir `CPrintInfo` yapısı. Her zaman framework çağrıları `OnPrepareDC` ve `OnPrint`, farklı bir değer geçirir `m_nCurPage` üyesi `CPrintInfo` yapısı. Bu şekilde framework görünümü hangi sayfasının yazdırılması bildirir.  
+ Yazdırılacak belgenin her sayfasına framework iki üye işlevleri görünüm sınıfınızda çağırması [OnPrepareDC](../mfc/reference/cview-class.md#onpreparedc) ve [OnPrint](../mfc/reference/cview-class.md#onprint), her işlev iki parametreleri ve geçirir: bir işaretçi bir [ CDC](../mfc/reference/cdc-class.md) nesne ve bir işaretçi bir `CPrintInfo` yapısı. Her zaman framework çağrıları `OnPrepareDC` ve `OnPrint`, farklı bir değer geçirir *m_nCurPage* üyesi `CPrintInfo` yapısı. Bu şekilde framework görünümü hangi sayfasının yazdırılması bildirir.  
   
  [OnPrepareDC](../mfc/reference/cview-class.md#onpreparedc) üye işlevi ekran görüntüsü için de kullanılır. Çizim gerçekleşmeden önce cihaz bağlamı ayarlamalar kolaylaştırır. `OnPrepareDC` yazdırma, benzer bir rolü hizmet birkaç farklılıkla ancak: ilk olarak, `CDC` nesnesi ekran cihaz bağlamı ve ikincisi, yerine yazıcı cihaz bağlamı temsil eder bir `CPrintInfo` nesnesi, ikinci parametre olarak geçirilir. (Bu parametre **NULL** zaman `OnPrepareDC` ekran görüntüsü için olarak adlandırılır.) Geçersiz kılma `OnPrepareDC` hangi sayfa yazdırılacağı üzerinde tabanlı cihaz bağlamı ayarlamalar yapmak için. Örneğin, Görünüm penceresi kaynak ve belgenin uygun bölümünü yazdırılan sağlamak için kırpma bölgesinin taşıyabilirsiniz.  
   
@@ -110,16 +110,16 @@ Yazdırma döngüsü
 ##  <a name="_core_printer_pages_vs.._document_pages"></a> Yazıcı sayfaları vs. Belge sayfası  
  Sayfa numaralarına başvurduğunuzda, bazen bir sayfa yazıcının kavramı bir sayfa belgenin kavramı arasında ayrım yapmak gereklidir. Açısından bakıldığında yazıcının, bir yaprak kağıda sayfadır. Ancak, bir yaprak kağıda mutlaka belgenin bir sayfa eşit değil. Örneğin, bir yaprak kağıda sayfaları katlanmış için nerede, bülten, yazdırma yapıyorsanız yan yana belgenin ilk ve son sayfalarınızın içerebilir. Elektronik yazdırma yapıyorsanız, benzer şekilde, belge sayfalarının hiç öğesiyse değil. Bunun yerine, bir yaprak kağıda satırları 1 ila 20, 6-10 arası sütunları içerebilir.  
   
- Tüm sayfa numaraları [Cprintınfo](../mfc/reference/cprintinfo-structure.md) yapısı yazıcı sayfalarına bakın. Framework çağrıları `OnPrepareDC` ve `OnPrint` üzerinden yazıcıyı geçireceği her sayfa için bir kez. Kıldığınızda [OnPreparePrinting](../mfc/reference/cview-class.md#onprepareprinting) belgenin uzunluğunu belirtmek için işlev, yazıcı sayfaları kullanmanız gerekir. Bir bire ise (diğer bir deyişle, bir belge sayfası bir yazıcı sayfası eşittir), bu kolay olur. Diğer taraftan, belge sayfalarını ve yazıcı sayfaları doğrudan karşılık gelmeyen varsa, aralarında Çevir gerekir. Örneğin, elektronik tablo yazdırma göz önünde bulundurun. Geçersiz kılarken `OnPreparePrinting`, kaç tane kağıda tüm elektronik tabloyu yazdırma ve sonra bu değeri çağrılırken kullanmak için gerekli olacak hesaplamak gerekir `SetMaxPage` üye işlevini `CPrintInfo`. Benzer şekilde, geçersiz kılarken `OnPrepareDC`, çevir gerekir `m_nCurPage` belirli bu sayfada görüntülenir ve görünüm penceresinin başlangıç buna göre satır ve sütun aralığı içinde.  
+ Tüm sayfa numaraları [Cprintınfo](../mfc/reference/cprintinfo-structure.md) yapısı yazıcı sayfalarına bakın. Framework çağrıları `OnPrepareDC` ve `OnPrint` üzerinden yazıcıyı geçireceği her sayfa için bir kez. Kıldığınızda [OnPreparePrinting](../mfc/reference/cview-class.md#onprepareprinting) belgenin uzunluğunu belirtmek için işlev, yazıcı sayfaları kullanmanız gerekir. Bir bire ise (diğer bir deyişle, bir belge sayfası bir yazıcı sayfası eşittir), bu kolay olur. Diğer taraftan, belge sayfalarını ve yazıcı sayfaları doğrudan karşılık gelmeyen varsa, aralarında Çevir gerekir. Örneğin, elektronik tablo yazdırma göz önünde bulundurun. Geçersiz kılarken `OnPreparePrinting`, kaç tane kağıda tüm elektronik tabloyu yazdırma ve sonra bu değeri çağrılırken kullanmak için gerekli olacak hesaplamak gerekir `SetMaxPage` üye işlevini `CPrintInfo`. Benzer şekilde, geçersiz kılarken `OnPrepareDC`, çevir gerekir *m_nCurPage* belirli bu sayfada görüntülenir ve görünüm penceresinin başlangıç buna göre satır ve sütun aralığı içinde.  
   
 ##  <a name="_core_print.2d.time_pagination"></a> Yazdırma zamanı sayfa numaralandırma  
  Bazı durumlarda, görünüm sınıfınız önceden gerçekte bastırıldı kadar belgeyi ne kadar olacağını bilemeyebilirsiniz. Uygulamanızı WYSIWYG değil varsayalım Örneğin, bu nedenle belgenin uzunluğu ekranında yazdırıldığında uzunluğuna karşılık gelmiyor.  
   
  Geçersiz olduğunda bu soruna neden [OnPreparePrinting](../mfc/reference/cview-class.md#onprepareprinting) görünüm sınıfınız için: bir değere geçiremezsiniz `SetMaxPage` işlevi [Cprintınfo](../mfc/reference/cprintinfo-structure.md) yapısı uzunluğu tanımadığınız çünkü bir Belge. Yazdır iletişim kutusunu kullanarak durdurmak için bir sayfa numarası kullanıcı belirtmiyorsa, framework yazdırma döngü durdurmak ne zaman bilmiyor. Yazdırma döngü durdurmak ne zaman belirlemek için yalnızca belgeyi yazdırmak ve sona erdiğinde görmek için yoludur. Yazdırılacağı ve sonuna gelindiğinde framework bildirmek görünüm sınıfı belgenin sonuna için denetlemeniz gerekir.  
   
- Çerçeve görünüm sınıfınızın üzerinde dayanır [OnPrepareDC](../mfc/reference/cview-class.md#onpreparedc) bunu bildirmek için işlevi zaman durdurmak. Her çağrı sonra `OnPrepareDC`, üyesi framework denetler `CPrintInfo` adlı yapısı `m_bContinuePrinting`. Varsayılan değeri olduğu **TRUE.** Bunu kaldığı sürece framework yazdırma döngü devam eder. Bu ayarlanırsa **yanlış**, framework durdurur. Yazdırma zamanı sayfalandırma gerçekleştirmek için geçersiz kılma `OnPrepareDC` belgenin sonuna ulaşıldı ve ayarlandı olup olmadığını denetlemek için `m_bContinuePrinting` için **FALSE** sahip olduğunda.  
+ Çerçeve görünüm sınıfınızın üzerinde dayanır [OnPrepareDC](../mfc/reference/cview-class.md#onpreparedc) bunu bildirmek için işlevi zaman durdurmak. Her çağrı sonra `OnPrepareDC`, üyesi framework denetler `CPrintInfo` adlı yapısı *m_bContinuePrinting*. Varsayılan değeri olduğu **TRUE.** Bunu kaldığı sürece framework yazdırma döngü devam eder. Bu ayarlanırsa **yanlış**, framework durdurur. Yazdırma zamanı sayfalandırma gerçekleştirmek için geçersiz kılma `OnPrepareDC` belgenin sonuna ulaşıldı ve ayarlandı olup olmadığını denetlemek için *m_bContinuePrinting* için **FALSE** sahip olduğunda.  
   
- Varsayılan uygulaması `OnPrepareDC` ayarlar `m_bContinuePrinting` için **yanlış** geçerli sayfa 1'den büyük olduğunda. Bu belgenin uzunluğunu belirtilmezse framework belgeyi bir sayfa uzun olduğunu varsayar anlamına gelir. Bunun bir sonucu olduğundan temel sınıf sürümü çağırırsanız dikkatli olmalıdır `OnPrepareDC`. Varsayımında değil `m_bContinuePrinting` olacaktır **TRUE** temel sınıf sürüm çağrıldıktan sonra.  
+ Varsayılan uygulaması `OnPrepareDC` ayarlar *m_bContinuePrinting* için **yanlış** geçerli sayfa 1'den büyük olduğunda. Bu belgenin uzunluğunu belirtilmezse framework belgeyi bir sayfa uzun olduğunu varsayar anlamına gelir. Bunun bir sonucu olduğundan temel sınıf sürümü çağırırsanız dikkatli olmalıdır `OnPrepareDC`. Varsayımında değil *m_bContinuePrinting* olacaktır **TRUE** temel sınıf sürüm çağrıldıktan sonra.  
   
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   

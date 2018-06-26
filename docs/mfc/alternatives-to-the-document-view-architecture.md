@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 332f84346e6445fdf0550c3ddb142d9582722f0d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1b99d8fb82b014fc2221f1ec1c0e6ad08ee75b4c
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344210"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930293"
 ---
 # <a name="alternatives-to-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Alternatifleri
 MFC uygulamaları, belge/görünüm mimarisinin normalde bilgiler, dosya biçimlerini ve görsel veri kullanıcılarına yönetmek için kullanın. Masaüstü uygulamaları çoğunluğu için belge/görünüm mimarisinin bir uygun ve etkili uygulama mimarisidir. Bu mimari veri görüntüleme ve, çoğu durumda ayıran, uygulamanızı kolaylaştırır ve gereksiz kod azaltır.  
@@ -41,11 +41,11 @@ MFC uygulamaları, belge/görünüm mimarisinin normalde bilgiler, dosya biçiml
   
  Tıpkı başka sihirbaz tarafından oluşturulan bir uygulama ile olduğu gibi kaynak ve iletişim düzenleyicileri yanı sıra, Visual C++ sihirbazları oluşturulan uygulaması ile çalışırsınız. Uygulama araç çubukları, kaydırma çubukları ve durum çubuğu destekleyebilir ve sahip bir **hakkında** kutusu. Uygulamanız herhangi bir belge şablon kaydedilmiyor ve belge sınıfı içermez.  
   
- Oluşturulan uygulamanız bir görünüm sınıfı sahip olduğuna dikkat edin **CChildView**, türetilmiş `CWnd`. MFC oluşturur ve görünüm sınıfının bir örneği, uygulamanız tarafından oluşturulan çerçeve pencereleri içinde yerleştirir. Konumlandırma ve uygulama içeriğinin yönetme basitleştirir çünkü MFC hala bir Görünüm penceresi kullanarak zorlar. Boyama kod ekleyebilirsiniz `OnPaint` Bu sınıf üyesi. Kodunuzu scrollbars görünümü yerine çerçeve eklemeniz gerekir.  
+ Oluşturulan uygulamanız bir görünüm sınıfı sahip olduğuna dikkat edin `CChildView`, türetilmiş `CWnd`. MFC oluşturur ve görünüm sınıfının bir örneği, uygulamanız tarafından oluşturulan çerçeve pencereleri içinde yerleştirir. Konumlandırma ve uygulama içeriğinin yönetme basitleştirir çünkü MFC hala bir Görünüm penceresi kullanarak zorlar. Boyama kod ekleyebilirsiniz `OnPaint` Bu sınıf üyesi. Kodunuzu scrollbars görünümü yerine çerçeve eklemeniz gerekir.  
   
  MFC tarafından sağlanan belge/görünüm mimarisinin bir uygulamanın temel özelliklerin çoğunu gerçekleştirmek için sorumlu olduğu için uygulamanızın birçok önemli özellikleri uygulamak için sorumlu yokluğu projenizdeki anlamına gelir:  
   
--   MFC Uygulama Sihirbazı tarafından sağlanan gibi uygulamanız için menüyü yalnızca içeren `New` ve `Exit` komutlarını **dosya** menüsü. ( `New` Komut yalnızca MDI uygulamaları için desteklenir, belge/görünüm olmadan SDI uygulamaları destekler.) Oluşturulan menü kaynağı (en son kullanılan) MRU listesini desteklemez.  
+-   MFC Uygulama Sihirbazı tarafından sağlanan gibi uygulamanız için menüyü yalnızca içeren **yeni** ve **çıkış** komutlarını **dosya** menüsü. ( **Yeni** komut yalnızca MDI uygulamaları için desteklenir, belge/görünüm olmadan SDI uygulamaları destekler.) Oluşturulan menü kaynağı (en son kullanılan) MRU listesini desteklemez.  
   
 -   İşleyici işlevleri ve uygulamaları dahil olmak üzere, uygulamanızın destekleyecek herhangi bir komut için eklemelisiniz **açık** ve **kaydetmek** üzerinde **dosya** menüsü. MFC normalde bu özellikleri destekleyecek kodu destek sıkı bir şekilde belge/görünüm mimarisinin bağlı ancak sağlar.  
   
@@ -53,9 +53,9 @@ MFC uygulamaları, belge/görünüm mimarisinin normalde bilgiler, dosya biçiml
   
  Sihirbaz doğru bir MFC mimarisi güvence altına alır çünkü MFC Uygulama Sihirbazı'nı belge/görünüm mimarisinin olmadan uygulamaları oluşturmak için kullanmanız önerilir. Ancak, sihirbaz kullanmaktan kaçının gerekir, kodunuzda belge/görünüm mimarisinin atlayarak için çeşitli yaklaşımlar şunlardır:  
   
--   Belge kullanılmayan bir appendage kabul eder ve veri yönetimi kodunuzu view sınıfında, yukarıda önerilen olarak uygulayın. Belge için ek yükü oldukça düşüktür. Tek bir [CDocument](../mfc/reference/cdocument-class.md) nesne tek başına ek yükü artı küçük yükü az miktarda doğurur **CDocument**ait temel sınıflar, [CCmdTarget](../mfc/reference/ccmdtarget-class.md) ve [ CObject](../mfc/reference/cobject-class.md). İkinci sınıfların her ikisi de küçük.  
+-   Belge kullanılmayan bir appendage kabul eder ve veri yönetimi kodunuzu view sınıfında, yukarıda önerilen olarak uygulayın. Belge için ek yükü oldukça düşüktür. Tek bir [CDocument](../mfc/reference/cdocument-class.md) nesne tek başına ek yükü artı küçük yükü az miktarda doğurur `CDocument`ait temel sınıflar, [CCmdTarget](../mfc/reference/ccmdtarget-class.md) ve [CObject](../mfc/reference/cobject-class.md). İkinci sınıfların her ikisi de küçük.  
   
-     Bildirilen **CDocument**:  
+     Bildirilen `CDocument`:  
   
     -   İki `CString` nesneleri.  
   

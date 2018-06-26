@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52eaae8074b984da32e115e779724fa86602b8f5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a29b11028df84a7e5e67adb7588386f77adcff06
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342497"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929045"
 ---
 # <a name="automation-clients"></a>Otomasyon İstemcileri
 Otomasyon nesneleri başka bir uygulamaya uygulanan işlemek için ya da bunlar işlenebilir nesnelerini ortaya çıkarmak için uygulamanız için mümkün kılar. Bir otomasyon istemci, başka bir uygulamaya ait gösterilen nesneleri işleyebileceğiniz bir uygulamadır. Nesneleri gösteren uygulama Otomasyon sunucusu adı verilir. İstemci, bu nesnelerin özelliklerini ve işlevlerini erişerek sunucu uygulamasının nesneleri yönetir.  
@@ -38,7 +38,7 @@ Otomasyon nesneleri başka bir uygulamaya uygulanan işlemek için ya da bunlar 
   
  Statik bağımlı istemciler istemci uygulama ile statik olarak bağlantılı bir proxy sınıfını kullanın. Bu sınıf, bir tür kullanımı uyumlu C++ kapsülleme sunucu uygulamasının özelliklerini ve işlemlerin sağlar.  
   
- Sınıf `COleDispatchDriver` asıl otomasyon istemci tarafı desteği sağlar. Kullanarak `Add New Item` iletişim kutusunda, oluşturduğunuz türetilmiş bir sınıf `COleDispatchDriver`.  
+ Sınıf `COleDispatchDriver` asıl otomasyon istemci tarafı desteği sağlar. Kullanarak **Yeni Öğe Ekle** iletişim kutusunda, oluşturduğunuz türetilmiş bir sınıf `COleDispatchDriver`.  
   
  Ardından, özelliklerini ve işlevlerini sunucu uygulamasının nesnesinin açıklayan tür kitaplığı dosya de belirtin. Öğe Ekle iletişim kutusunda bu dosyasını okur ve oluşturur `COleDispatchDriver`-türetilmiş bir tür kullanımı uyumlu şekilde c++ sunucu uygulamasının nesnelere erişmek için uygulamanız çağırabilir üye işlevleri ile sınıf. Ek işlevsellik devralınan `COleDispatchDriver` uygun Otomasyon sunucusu çağırma işlemini basitleştirir.  
   

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 313cbe53189a4a6e9b87b1723a166de83f56df05
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 356d7acd67747f4310ed0e4f564df7d1533e88ed
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33354923"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930654"
 ---
 # <a name="mfc-activex-controls-using-pictures-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Resim Kullanma
 Bu makalede, ortak resim türünü ve ActiveX denetiminde uygulamak nasıl açıklanmaktadır. Konular şunlardır:  
@@ -71,11 +71,11 @@ Bu makalede, ortak resim türünü ve ActiveX denetiminde uygulamak nasıl açı
      Bu değişiklikler, ActiveX denetimi çizim için sorumlu olan çeşitli işlevleri için yapılır.  
   
 ##  <a name="_core_additions_to_your_control_project"></a> Denetim projenize ekleme  
- Standart resim özellik sayfası özellik sayfası kimliği eklemek için sonra aşağıdaki satırı ekleyin `BEGIN_PROPPAGEIDS` makrosu denetim uygulama dosyasında (. CPP):  
+ Standart resim özellik sayfası özellik sayfası kimliği eklemek için Denetim uygulama dosyasında begın_proppageıds makrosu sonra aşağıdaki satırı ekleyin (. CPP):  
   
  [!code-cpp[NVC_MFC_AxPic#1](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_1.cpp)]  
   
- Sayısı parametresinin artırmanız gerekir, `BEGIN_PROPPAGEIDS` makrosu tek. Aşağıdaki satırı bu gösterilmektedir:  
+ Ayrıca bir begın_proppageıds makrosu sayısı parametresinin artırmalısınız. Aşağıdaki satırı bu gösterilmektedir:  
   
  [!code-cpp[NVC_MFC_AxPic#2](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_2.cpp)]  
   
@@ -83,7 +83,7 @@ Bu makalede, ortak resim türünü ve ActiveX denetiminde uygulamak nasıl açı
   
  [!code-cpp[NVC_MFC_AxPic#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_3.h)]  
   
- Veri üye adı gerekli değildir `m_pic`; herhangi bir ad yeterli olacaktır.  
+ Veri üye adı gerekli değildir *m_pic*; herhangi bir ad yeterli olacaktır.  
   
  Ardından, bir resim türünü destekleyen bir özel özellik ekleyin:  
   
@@ -123,7 +123,7 @@ Bu makalede, ortak resim türünü ve ActiveX denetiminde uygulamak nasıl açı
 >  Denetim sınıfı ve işlev adları, yukarıdaki örnekten farklı olabilir.  
   
 ###  <a name="_core_modifications_to_your_control_project"></a> Denetim projenizi yapılan değişiklikler  
- Denetim projenize gerekli eklemeleri yaptıktan sonra ActiveX denetimi işlemeyi etkileyen çeşitli işlevleri değiştirmeniz gerekir. Bu işlevler `OnResetState`, `OnDraw`, ve özel bir resim özellik Get/Set işlevlerini denetim uygulama dosyasında bulunur. (Bu örnekte control sınıfı olarak adlandırılır Not `CSampleCtrl`, `CPictureHolder` veri üyesi çağrılır `m_pic`, ve özel resim özellik adı `ControlPicture`.)  
+ Denetim projenize gerekli eklemeleri yaptıktan sonra ActiveX denetimi işlemeyi etkileyen çeşitli işlevleri değiştirmeniz gerekir. Bu işlevler `OnResetState`, `OnDraw`, ve özel bir resim özellik Get/Set işlevlerini denetim uygulama dosyasında bulunur. (Bu örnekte control sınıfı olarak adlandırılır Not `CSampleCtrl`, `CPictureHolder` veri üyesi çağrılır *m_pic*, ve özel resim özellik adı `ControlPicture`.)  
   
  Denetimdeki `OnResetState` işlev, çağrısından sonra aşağıdaki isteğe bağlı satırı ekleyin `COleControl::OnResetState`:  
   

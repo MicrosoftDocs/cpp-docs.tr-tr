@@ -15,15 +15,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05b5f62169d2b65010ec75ab8c8b5c30959b77b2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9b317f4c1b55e04f61aa0639bbd6953e5f36187a
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348984"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931846"
 ---
 # <a name="handling-reflected-messages"></a>Yansımış İletileri İşleme
-Yansıma bir denetimin iletileri gibi işlemenize olanak tanır ileti `WM_CTLCOLOR`, **WM_COMMAND**, ve **wm_notıfy**, denetimin kendi içinde. Daha fazla kendine içinde ve taşınabilir denetimi yapar. Windows ortak denetimleri ile ve aynı zamanda (eski adıyla OLE denetimleri) ActiveX denetimleriyle mekanizması çalışır.  
+Yansıma bir denetimin iletileri gibi işlemenize olanak tanır ileti **WM_CTLCOLOR**, **WM_COMMAND**, ve **wm_notıfy**, denetimin kendi içinde. Daha fazla kendine içinde ve taşınabilir denetimi yapar. Windows ortak denetimleri ile ve aynı zamanda (eski adıyla OLE denetimleri) ActiveX denetimleriyle mekanizması çalışır.  
   
  İleti yansıma yeniden kullanmanıza olanak tanır, `CWnd`-türetilmiş sınıfları daha kolay. İleti yansıma works aracılığıyla [CWnd::OnChildNotify](../mfc/reference/cwnd-class.md#onchildnotify), özel kullanarak **ON_XXX_REFLECT** iletisi eşleme girdilerini: Örneğin, **ON_CTLCOLOR_REFLECT** ve **ON_CONTROL_REFLECT**. [Teknik Not 62](../mfc/tn062-message-reflection-for-windows-controls.md) ileti yansıması daha ayrıntılı açıklanır.  
   

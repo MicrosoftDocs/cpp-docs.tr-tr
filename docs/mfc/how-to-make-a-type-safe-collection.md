@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcd1fbce9e6dda649da8fe2e53fc7dc70db1da33
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1cbcdeec6e39e104625d1b5d47c494915a821d38
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33354445"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930039"
 ---
 # <a name="how-to-make-a-type-safe-collection"></a>Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma
 Bu makalede, kendi veri türleri için tür kullanımı uyumlu koleksiyonlar nasıl oluşturulacağı açıklanmaktadır. Konular şunlardır:  
@@ -52,7 +52,7 @@ Bu makalede, kendi veri türleri için tür kullanımı uyumlu koleksiyonlar nas
   
 3.  Gerekirse, uygulama [yardımcı işlevleri](../mfc/reference/collection-class-helpers.md) ve [SerializeElements](../mfc/reference/collection-class-helpers.md#serializeelements). Bu işlevler uygulama hakkında daha fazla bilgi için bkz: [uygulama yardımcı işlevleri](#_core_implementing_helper_functions).  
   
- Bu örnek, tamsayı listesi bildirimi gösterir. Adım 1'de ilk parametre listesi öğeleri olarak depolanan veriler türüdür. İkinci parametre nasıl verileri için geçirilen ve koleksiyon sınıfının üye işlevleri gibi döndürülen belirtir **Ekle** ve `GetAt`.  
+ Bu örnek, tamsayı listesi bildirimi gösterir. Adım 1'de ilk parametre listesi öğeleri olarak depolanan veriler türüdür. İkinci parametre nasıl verileri için geçirilen ve koleksiyon sınıfının üye işlevleri gibi döndürülen belirtir `Add` ve `GetAt`.  
   
 ##  <a name="_core_implementing_helper_functions"></a> Yardımcı işlevleri uygulama  
  Şablona dayalı koleksiyon sınıfları `CArray`, `CList`, ve `CMap` türetilen koleksiyonu sınıfınız için gerektiği gibi özelleştirebileceğiniz beş genel yardımcı işlevleri kullanın. Bu yardımcı işlevleri hakkında daha fazla bilgi için bkz: [koleksiyon sınıfı Yardımcıları](../mfc/reference/collection-class-helpers.md) içinde *MFC başvurusu*. Seri hale getirme fonksiyonunun uygulanması şablona dayalı koleksiyon sınıfları birçok kullanım için gereklidir.  
@@ -66,10 +66,10 @@ Bu makalede, kendi veri türleri için tür kullanımı uyumlu koleksiyonlar nas
   
  [!code-cpp[NVC_MFCCollections#9](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_3.cpp)]  
   
- Aşırı yüklenmiş ekleme işleçlerini `CArchive` çağrısı `CObject::Serialize` (veya bu işlevi bir geçersiz kılma) her **CPerson** nesnesi.  
+ Aşırı yüklenmiş ekleme işleçlerini `CArchive` çağrısı `CObject::Serialize` (veya bu işlevi bir geçersiz kılma) her `CPerson` nesnesi.  
   
 ##  <a name="_core_using_nontemplate_collection_classes"></a> Şablon Olmayandan koleksiyon sınıfları kullanma  
- MFC koleksiyon sınıfları MFC sürüm 1.0 ile sunulan de destekler. Bu sınıfların şablonlar temelinde değil. Desteklenen türlerden biri verileri içerecek şekilde kullanılabilmesi için `CObject*`, **UINT**, `DWORD`, ve `CString`. Bu önceden tanımlanmış koleksiyonları kullanabilirsiniz (gibi `CObList`) türetilen nesne koleksiyonları tutmak için `CObject`. MFC ayrıca ilkel türler gibi tutmak için önceden tanımlanmış diğer koleksiyonları sağlar **UINT** ve void işaretçileri (`void`*). Genel olarak, ancak genellikle daha belirli bir sınıf ve türevleri nesnelerin tutmak için kendi tür kullanımı uyumlu koleksiyonlar tanımlamak yararlıdır. Bunun yapılması koleksiyon sınıflarının değil şablonlar temelinde şablona dayalı sınıflar kullanmaktan daha fazla iş olduğuna dikkat edin.  
+ MFC koleksiyon sınıfları MFC sürüm 1.0 ile sunulan de destekler. Bu sınıfların şablonlar temelinde değil. Desteklenen türlerden biri verileri içerecek şekilde kullanılabilmesi için `CObject*`, `UINT`, `DWORD`, ve `CString`. Bu önceden tanımlanmış koleksiyonları kullanabilirsiniz (gibi `CObList`) türetilen nesne koleksiyonları tutmak için `CObject`. MFC ayrıca ilkel türler gibi tutmak için önceden tanımlanmış diğer koleksiyonları sağlar `UINT` ve void işaretçileri (`void`*). Genel olarak, ancak genellikle daha belirli bir sınıf ve türevleri nesnelerin tutmak için kendi tür kullanımı uyumlu koleksiyonlar tanımlamak yararlıdır. Bunun yapılması koleksiyon sınıflarının değil şablonlar temelinde şablona dayalı sınıflar kullanmaktan daha fazla iş olduğuna dikkat edin.  
   
  Şablon Olmayandan koleksiyonlarla tür kullanımı uyumlu koleksiyonlar oluşturmanın iki yolu vardır:  
   

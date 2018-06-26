@@ -16,22 +16,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f02712f3df56bf2fc04fba736f28931250f7bcb8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2005391c6d91ee09703194eb8b8062ecfe08ba77
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349274"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929805"
 ---
 # <a name="mfc-activex-controls-adding-stock-methods"></a>MFC ActiveX Denetimleri: Stok Yöntemler Ekleme
-Stok yöntemi bir özel yönteminden farklıdır sınıfı tarafından zaten uygulanmış [COleControl](../mfc/reference/colecontrol-class.md). Örneğin, `COleControl` denetiminiz için yenileme yöntemi destekleyen önceden tanımlanmış üye işlevi içeriyor. Stok bu yöntem için gönderme harita giriş **DISP_STOCKFUNC_REFRESH**.  
+Stok yöntemi bir özel yönteminden farklıdır sınıfı tarafından zaten uygulanmış [COleControl](../mfc/reference/colecontrol-class.md). Örneğin, `COleControl` denetiminiz için yenileme yöntemi destekleyen önceden tanımlanmış üye işlevi içeriyor. Stok bu yöntem için gönderme eşleme girişi DISP_STOCKFUNC_REFRESH ' dir.  
   
  `COleControl` Stok iki yöntemi destekler: DoClick ve yenileyin. Yenileme denetimin görünümünü hemen güncelleştirmek için denetimin kullanıcı tarafından çağrılır; Denetimin tıklatın tetiklenecek DoClick çağrılan olay.  
   
 |Yöntem|Gönderme eşleme girişi|Yorum|  
 |------------|------------------------|-------------|  
 |`DoClick`|**DISP_STOCKPROP_DOCLICK)**|Click olayını tetikler.|  
-|**Yenileme**|**DISP_STOCKPROP_REFRESH)**|Denetimin görünümünü hemen güncelleştirir.|  
+|`Refresh`|**DISP_STOCKPROP_REFRESH)**|Denetimin görünümünü hemen güncelleştirir.|  
   
 ##  <a name="_core_adding_a_stock_method_using_classwizard"></a> Stok yöntemi kullanarak ekleme yöntem Ekleme Sihirbazı  
  Stok yöntem ekleme basittir kullanarak [yöntem Ekleme Sihirbazı'nı](../ide/add-method-wizard.md). Aşağıdaki yordamda, MFC ActiveX Denetim Sihirbazı kullanılarak oluşturulan bir denetime Refresh yöntemi ekleme gösterilmektedir.  

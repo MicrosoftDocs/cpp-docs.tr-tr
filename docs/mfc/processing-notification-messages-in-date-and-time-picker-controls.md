@@ -24,33 +24,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53c45f664dec2a553210187514b28f1ba3c2ed9b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 630792eb4bdd89cbe8081894c4ee026437568f3b
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349180"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930770"
 ---
 # <a name="processing-notification-messages-in-date-and-time-picker-controls"></a>Tarih ve Saat Seçici Denetimlerinde Bildirim İletilerini İşleme
-Kullanıcıların etkileşimli olarak tarih ve saat seçici denetimi, denetim (`CDateTimeCtrl`) üst pencereye, bildirim iletileri gönderir genellikle bir görünüm veya iletişim nesnesi. Yanıtta bir şey yapmak istiyorsanız bu iletileri işleyin. Örneğin, kullanıcı açtığında katıştırılmış aylık takvim denetiminin görüntülemek için tarih ve Saat Seçici **DTN_DROPDOWN** bildirim gönderilir.  
+Kullanıcıların etkileşimli olarak tarih ve saat seçici denetimi, denetim (`CDateTimeCtrl`) üst pencereye, bildirim iletileri gönderir genellikle bir görünüm veya iletişim nesnesi. Yanıtta bir şey yapmak istiyorsanız bu iletileri işleyin. Örneğin, katıştırılmış aylık takvim denetiminin görüntülemek için tarih ve Saat Seçici kullanıcı oturum açtığında, DTN_DROPDOWN bildirimi gönderilir.  
   
  Üst sınıf uygulamak isterseniz bu iletiler için bildirim işleyicileri eklemek için Özellikler penceresini kullanın.  
   
  Aşağıdaki liste tarih ve Saat Seçici denetiminde gönderilen çeşitli bildirimler açıklar.  
   
--   **DTN_DROPDOWN** katıştırılmış aylık takvim denetimi hakkında görüntülenecek olan üst bildirir. Bu bildirim yalnızca zaman gönderilir **DTS_UPDOWN** stili ayarlanmamış. Bu bildirim hakkında daha fazla bilgi için bkz: [katıştırılmış aylık takvim denetiminin erişme](../mfc/accessing-the-embedded-month-calendar-control.md).  
+-   Katıştırılmış aylık takvim denetimi üst hakkında görüntülenecek olan DTN_DROPDOWN bildirir. Bu bildirim yalnızca DTS_UPDOWN stili ayarlanmamış gönderilir. Bu bildirim hakkında daha fazla bilgi için bkz: [katıştırılmış aylık takvim denetiminin erişme](../mfc/accessing-the-embedded-month-calendar-control.md).  
   
--   **DTN_CLOSEUP** üst Kapatılmak üzere katıştırılmış aylık takvim denetiminin olan bildirir. Bu bildirim yalnızca zaman gönderilir **DTS_UPDOWN** stili ayarlanmamış.  
+-   DTN_CLOSEUP katıştırılmış aylık takvim denetimi üst Kapatılmak üzere olduğunu bildirir. Bu bildirim yalnızca DTS_UPDOWN stili ayarlanmamış gönderilir.  
   
--   **Dtn_datetımechange** denetiminde gerçekleşen bir değişikliği üst bildirir.  
+-   Dtn_datetımechange Notifies denetiminde gerçekleşen bir değişikliği üst.  
   
--   **DTN_FORMAT** üst metin bir geri çağırma alanında görüntülenecek gerektiğini bildirir. Bu bildirim ve geri arama alanları hakkında daha fazla bilgi için bkz: [kullanarak geri arama alanları bir tarih ve Saat Seçici denetimini](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md).  
+-   DTN_FORMAT bir geri çağırma alanında görüntülenecek metni üst gerekli bildirir. Bu bildirim ve geri arama alanları hakkında daha fazla bilgi için bkz: [kullanarak geri arama alanları bir tarih ve Saat Seçici denetimini](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md).  
   
--   **DTN_FORMATQUERY** bir geri çağırma alanında görüntülenen dizesi izin verilen en büyük boyutunu sağlamak için üst ister. Bu bildirim işleme her zaman, denetimin görüntüleme içinde titreşimi azaltma düzgün görüntü çıkış denetimi sağlar. Bu bildirim hakkında daha fazla bilgi için bkz: [kullanarak geri arama alanları bir tarih ve Saat Seçici denetimini](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md).  
+-   DTN_FORMATQUERY bir geri çağırma alanında görüntülenen dizesi izin verilen en büyük boyutunu sağlamak için üst ister. Bu bildirim işleme her zaman, denetimin görüntüleme içinde titreşimi azaltma düzgün görüntü çıkış denetimi sağlar. Bu bildirim hakkında daha fazla bilgi için bkz: [kullanarak geri arama alanları bir tarih ve Saat Seçici denetimini](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md).  
   
--   **DTN_USERSTRING** üst kullanıcı tarih ve Saat Seçici denetimini içeriğini düzenleme tamamlandığını bildirir. Bu bildirim yalnızca zaman gönderilir **DTS_APPCANPARSE** stili ayarlayın.  
+-   DTN_USERSTRING bildirir kullanıcı tarih ve Saat Seçici içeriğini düzenleme tamamlandığını üst kontrol eder. Bu bildirim, yalnızca DTS_APPCANPARSE stili ayarladığınızda gönderilir.  
   
--   **DTN_WMKEYDOWN** kullanıcı, bir geri çağırma alana yazdığında üst bildirir. Desteklenen bir tarih ve Saat Seçici denetiminde geri çağırma olmayan alanlar için aynı klavye yanıt benzetmek için bu bildirimi işleyin. Bu bildirim hakkında daha fazla bilgi için bkz: [DTP denetiminde geri çağrı alanlarını destekleyen](http://msdn.microsoft.com/library/windows/desktop/bb761726) Windows SDK'sındaki.  
+-   Kullanıcı, bir geri çağırma alana yazdığında DTN_WMKEYDOWN üst bildirir. Desteklenen bir tarih ve Saat Seçici denetiminde geri çağırma olmayan alanlar için aynı klavye yanıt benzetmek için bu bildirimi işleyin. Bu bildirim hakkında daha fazla bilgi için bkz: [DTP denetiminde geri çağrı alanlarını destekleyen](http://msdn.microsoft.com/library/windows/desktop/bb761726) Windows SDK'sındaki.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CDateTimeCtrl kullanma](../mfc/using-cdatetimectrl.md)   

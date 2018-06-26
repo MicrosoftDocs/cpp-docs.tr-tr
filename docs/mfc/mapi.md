@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19615aabce489049d38539b48300311504fbbbfe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1df0d00aa6356fa1741e7f4fc34d8063782da859
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347539"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930680"
 ---
 # <a name="mapi"></a>MAPI
-Bu makalede, istemci ileti uygulama geliştiricileri için Microsoft ileti uygulama programlama arabirimi (MAPI) açıklanmaktadır. MFC sağlayan bir MAPI alt sınıfında desteği **CDocument** tüm API'larını değil ancak. Daha fazla bilgi için bkz: [MFC içinde MAPI desteği](../mfc/mapi-support-in-mfc.md).  
+Bu makalede, istemci ileti uygulama geliştiricileri için Microsoft ileti uygulama programlama arabirimi (MAPI) açıklanmaktadır. MFC sağlayan bir MAPI alt sınıfında desteği `CDocument` tüm API'larını değil ancak. Daha fazla bilgi için bkz: [MFC içinde MAPI desteği](../mfc/mapi-support-in-mfc.md).  
   
  MAPI, posta etkinleştirilmiş ve posta algılayan uygulamaları oluşturmak, yönetmek, aktarım ve posta iletileri depolamak için kullandığınız işlevleri kümesidir. Uygulama geliştiricilerinin amacı ve posta iletileri içeriğini tanımlamak için Araçlar verir ve bunları kendi saklı posta iletileri Yönetimi'nde esnekliği sağlar. MAPI uygulama geliştiricileri, posta etkinleştirilmiş oluşturmak için kullanabileceğiniz ortak bir arabirim ve posta kullanan uygulamalar temel alınan ileti sistemi bağımsız de sağlar.  
   

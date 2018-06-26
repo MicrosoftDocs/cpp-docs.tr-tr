@@ -17,35 +17,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a06df0bdfe8d1b81b4285fc86378f3da99882698
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9a1d42d129ab7b7d2e98ae1126b8f32f68b1f356
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348422"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931833"
 ---
 # <a name="processing-notification-messages-in-a-rebar-control"></a>Bir Rebar Denetiminde Bildirim İletilerini İşleme
 Rebar denetimiyle üst sınıf oluşturmak bir `OnChildNotify` herhangi bir rebar denetimi için bir anahtar ifadesiyle işleyici işlevi (`CReBarCtrl`) bildirim iletilerini işlemek istediğiniz. Kullanıcı siler rebar bantları düzenini rebar denetiminden ve benzeri bantları değişiklikleri rebar denetimi nesneleri sürüklendiğinde bildirimleri üst penceresine gönderilir.  
   
  Aşağıdaki bildirim iletileri rebar denetimi nesne tarafından gönderilebilir:  
   
--   **RBN_AUTOSIZE** rebar denetimi tarafından gönderilen (ile oluşturulan **RBS_AUTOSIZE** stili) ne zaman rebar otomatik olarak yeniden boyutlandırır kendisi.  
+-   Rebar denetimiyle (RBS_AUTOSIZE stiliyle oluşturulan) tarafından gönderilen RBN_AUTOSIZE zaman rebar otomatik olarak yeniden boyutlandırır kendisi.  
   
--   **RBN_BEGINDRAG** kullanıcı bir bant sürükleyerek başladığında rebar denetimi tarafından gönderilir.  
+-   Kullanıcı bir bant sürükleyerek başladığında rebar denetimi tarafından gönderilen RBN_BEGINDRAG.  
   
--   **RBN_CHILDSIZE** bir bant ait alt pencere yeniden boyutlandırıldığında rebar denetimi tarafından gönderilir.  
+-   Bir bant ait alt pencere yeniden boyutlandırıldığında rebar denetimi tarafından gönderilen RBN_CHILDSIZE.  
   
--   **RBN_DELETEDBAND** bir rebar denetiminde bir bant silindikten sonra gönderilir.  
+-   Bir bant silindikten sonra rebar denetimi tarafından gönderilen RBN_DELETEDBAND.  
   
--   **RBN_DELETINGBAND** bir rebar denetiminde bir bant silinmek üzere olduğunda gönderilir.  
+-   Bir bant silinmek üzere olduğunda rebar denetimi tarafından gönderilen RBN_DELETINGBAND.  
   
--   **RBN_ENDDRAG** kullanıcı bir bant sürükleyerek durduğunda rebar denetimi tarafından gönderilir.  
+-   Kullanıcı bir bant sürükleyerek durduğunda rebar denetimi tarafından gönderilen RBN_ENDDRAG.  
   
--   **RBN_GETOBJECT** rebar denetimi tarafından gönderilen (ile oluşturulan **RBS_REGISTERDROP** stili) bir nesne zaman sürüklenen denetiminde bir bant üzerinde.  
+-   Rebar denetimiyle (RBS_REGISTERDROP stiliyle oluşturulan) tarafından gönderilen RBN_GETOBJECT bir nesne zaman sürüklenen denetiminde bir bant üzerinde.  
   
--   **RBN_HEIGHTCHANGE** yüksekliği değiştiğinde rebar denetimi tarafından gönderilen.  
+-   RBN_HEIGHTCHANGE yüksekliği değiştiğinde rebar denetimi tarafından gönderilen.  
   
--   **RBN_LAYOUTCHANGED** kullanıcı denetimin bantları Düzen değiştirdiğinde rebar denetimi tarafından gönderilir.  
+-   RBN_LAYOUTCHANGED kullanıcı denetimin bantları Düzen değiştirdiğinde rebar denetimi tarafından gönderilen.  
   
  Bu bildirimleri hakkında daha fazla bilgi için bkz: [Rebar denetimi başvurusu](http://msdn.microsoft.com/library/windows/desktop/bb774375) Windows SDK'sındaki.  
   

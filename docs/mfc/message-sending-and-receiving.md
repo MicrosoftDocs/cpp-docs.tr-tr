@@ -19,19 +19,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b7ded8dd0c818b95d6f45a722bd7b8516d48ff1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 55f450085c446503ebf86960dbee1b0d930691c2
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347184"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36932010"
 ---
 # <a name="message-sending-and-receiving"></a>İleti Gönderme ve Alma
 İşlem ve framework nasıl yanıt vereceğini gönderen parçası göz önünde bulundurun.  
   
  İletilerin çoğu program ile kullanıcı etkileşimi kaynaklanır. Komutları, fare tıklamaları menü öğesi veya araç çubuğu düğmeleri veya kısayol tuş vuruşları tarafından üretilir. Kullanıcı aynı zamanda Windows iletileri, örneğin, taşıma veya bir pencere yeniden boyutlandırma oluşturur. Windows almak veya odak kaybeder vb. gibi program başlatma veya sonlandırma gibi olaylar meydana geldiğinde, diğer Windows iletileri gönderilir. Denetim bildirimi iletileri fare tıklamaları veya bir iletişim kutusunda düğme veya liste kutusu denetimi gibi bir denetim ile diğer kullanıcı etkileşimleri tarafından üretilir.  
   
- **Çalıştırmak** sınıfının üye işlevini `CWinApp` iletileri alır ve bunları uygun penceresine gönderir. Çoğu komut iletileri uygulamanın ana çerçeve penceresi gönderilir. `WindowProc` İletileri sınıf kitaplığı alır tarafından önceden tanımlanmış ve bunları farklı şekilde, alınan ileti kategoriye göre yönlendirir.  
+ `Run` Sınıfının üye işlevini `CWinApp` iletileri alır ve bunları uygun penceresine gönderir. Çoğu komut iletileri uygulamanın ana çerçeve penceresi gönderilir. `WindowProc` İletileri sınıf kitaplığı alır tarafından önceden tanımlanmış ve bunları farklı şekilde, alınan ileti kategoriye göre yönlendirir.  
   
  Şimdi alma işleminin parçası göz önünde bulundurun.  
   

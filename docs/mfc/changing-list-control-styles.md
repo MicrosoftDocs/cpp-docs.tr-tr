@@ -16,19 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9d93511ad4f4ca835e09b6eaa3f612f0888e844
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 18d54d22106742cab8d1cdfe9c32adc0a98fb41b
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344848"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929549"
 ---
 # <a name="changing-list-control-styles"></a>Liste Denetim Stillerini Değiştirme
 Liste denetimi penceresi stilini değiştirebilirsiniz ([CListCtrl](../mfc/reference/clistctrl-class.md)) oluşturduktan sonra dilediğiniz zaman. Pencere stili değiştirerek ekleyeceğini görünüm türünü değiştirin. Örneğin, Explorer benzetmek için menü öğeleri veya denetimleri farklı görünümleri arasında geçiş için araç çubuğu düğmeleri sağlayabilir: simge görünümü, liste görünümü ve benzeri.  
   
  Örneğin, bir çağrı yapmak kullanıcı menü öğesine seçtiğinde [GetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633584) denetimi geçerli stilini alır ve ardından çağırmak için [SetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633591) stili sıfırlanır. Daha fazla bilgi için bkz: [liste görünümü denetimleri kullanarak](http://msdn.microsoft.com/library/windows/desktop/bb774736) Windows SDK.  
   
- Kullanılabilir stiller içinde listelenen [oluşturma](../mfc/reference/clistctrl-class.md#create). Stilleri `LVS_ICON`, `LVS_SMALLICON`, `LVS_LIST`, ve `LVS_REPORT` dört liste denetim görünümleri belirleyin.  
+ Kullanılabilir stiller içinde listelenen [oluşturma](../mfc/reference/clistctrl-class.md#create). Stilleri **LVS_ICON**, **LVS_SMALLICON**, **LVS_LIST**, ve **LVS_REPORT** dört liste denetim görünümleri belirleyin.  
   
 ## <a name="extended-styles"></a>Genişletilmiş stilleri  
  Liste denetimi için standart stiller yanı sıra Genişletilmiş Stil olarak başvurulan başka bir grubu yok. İçinde açıklanan bu stiller [Genişletilmiş liste görünümü stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774732) Windows SDK'ın çeşitli liste denetiminiz davranışını özelleştiren kullanışlı özellikler sağlar. Belirli bir stil (örneğin, vurgulu seçimi) davranışını uygulamak için çağırmaya [CListCtrl::SetExtendedStyle](../mfc/reference/clistctrl-class.md#setextendedstyle), gerekli stili geçirme. Aşağıdaki örnek, işlev çağrısı gösterir:  

@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89d929f4d7419e027a1018c4b0b33a4e42416613
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3c0abc53e1a24d822605c9e5bfd7ab8276b32f82
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343421"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931212"
 ---
 # <a name="creating-new-documents-windows-and-views"></a>Yeni Belgeler, Pencereler ve Görünümler Oluşturma
 Aşağıdaki şekil, belgeler, görünümler ve çerçeve pencereleri oluşturma işlemine genel bakış verin. Katılımcı nesnelerde odaklanmak diğer makaleler ek ayrıntılar sağlanmaktadır.  
@@ -55,10 +55,10 @@ Bir çerçeve pencere oluşturma dizisi
  ![Bir görünüm oluşturmak için dizisi](../mfc/media/vc387l3.gif "vc387l3")  
 Bir görünüm oluşturma sırası  
   
- Sınıfları nasıl yeni bir belge, Görünüm ve çerçeve pencere nesneleri framework başlatır hakkında daha fazla bilgi için bkz [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md), [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), ve [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md) MFC Kitaplığı Başvurusu. Ayrıca bkz. [Teknik Not 22](../mfc/tn022-standard-commands-implementation.md), açıklayan oluşturma ve başlatma işlemleri daha fazla kendi tartışma için standart komutların framework'ün altında `New` ve **açık** üzerinde öğeleri **Dosya** menüsü.  
+ Sınıfları nasıl yeni bir belge, Görünüm ve çerçeve pencere nesneleri framework başlatır hakkında daha fazla bilgi için bkz [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md), [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), ve [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md) MFC Kitaplığı Başvurusu. Ayrıca bkz. [Teknik Not 22](../mfc/tn022-standard-commands-implementation.md), açıklayan oluşturma ve başlatma işlemleri daha fazla kendi tartışma için standart komutların framework'ün altında **yeni** ve **açın** üzerinde öğelerini **dosya** menüsü.  
   
 ##  <a name="_core_initializing_your_own_additions_to_these_classes"></a> Bu sınıfların kendi eklemeler başlatılıyor  
- Önceki rakamlarıyla Ayrıca, uygulamanızın nesneleri başlatmak için üye işlevlerini geçersiz kılabilirsiniz noktaları öneririz. Geçersiz kılma `OnInitialUpdate` görünümünüzde sınıfı görünümü başlatmak için en iyi yerdir. `OnInitialUpdate` Çağrısı hemen çerçeve penceresi oluşturulur ve çerçeve penceresi görünümde, belgeye iliştirilmiş sonra oluşur. Örneğin, görünümünüzde kaydırma görünüm ise (türetilmiş `CScrollView` yerine `CView`), belge boyutu göre görünüm boyutu ayarlamanız gerekir, `OnInitialUpdate` geçersiz kıl. (Bu işlem sınıfı açıklamasında açıklanan [CScrollView](../mfc/reference/cscrollview-class.md).) Geçersiz kılabilirsiniz **CDocument** üye işlevleri `OnNewDocument` ve `OnOpenDocument` uygulamaya özgü başlatma belgenin sağlamak için. Genellikle, bir belge iki şekilde oluşturulabilir bu yana her ikisi de geçersiz kılmalısınız.  
+ Önceki rakamlarıyla Ayrıca, uygulamanızın nesneleri başlatmak için üye işlevlerini geçersiz kılabilirsiniz noktaları öneririz. Geçersiz kılma `OnInitialUpdate` görünümünüzde sınıfı görünümü başlatmak için en iyi yerdir. `OnInitialUpdate` Çağrısı hemen çerçeve penceresi oluşturulur ve çerçeve penceresi görünümde, belgeye iliştirilmiş sonra oluşur. Örneğin, görünümünüzde kaydırma görünüm ise (türetilmiş `CScrollView` yerine `CView`), belge boyutu göre görünüm boyutu ayarlamanız gerekir, `OnInitialUpdate` geçersiz kıl. (Bu işlem sınıfı açıklamasında açıklanan [CScrollView](../mfc/reference/cscrollview-class.md).) Geçersiz kılabilirsiniz `CDocument` üye işlevleri `OnNewDocument` ve `OnOpenDocument` uygulamaya özgü başlatma belgenin sağlamak için. Genellikle, bir belge iki şekilde oluşturulabilir bu yana her ikisi de geçersiz kılmalısınız.  
   
  Çoğu durumda, temel sınıf sürümü geçersiz kılma çağırmalıdır. Adlandırılmış üye işlevleri sınıfların daha fazla bilgi için bkz [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md), ve [CWinApp](../mfc/reference/cwinapp-class.md) MFC'de Kitaplık Başvurusu.  
   

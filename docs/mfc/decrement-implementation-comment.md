@@ -17,19 +17,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1556c690478b242d929b8a5558264218ddf0b63e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 89f87c33abfec7b9d055b589726639fcd741e59d
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343040"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930280"
 ---
 # <a name="-implementation-comment"></a>// Uygulama Açıklaması
 `// Implementation` Bölüm herhangi MFC sınıf bildiriminin en önemli parçasıdır.  
   
  Bu bölümde, tüm uygulama ayrıntılarını barındırır. Üye değişkenleri ve üye işlevleri bu bölümde yer alabilir. MFC gelecekteki bir sürümde bu satırın altındaki her şeyi değiştirebilir. Bunu yoksayılamaz sürece, aşağıdaki Ayrıntılar güvenmemelisiniz `// Implementation` satır. Bazı uygulama teknik notları ele alınmıştır ancak ek olarak, uygulama satır olarak bildirilen üyeler, açıklanmamıştır. Taban sınıf içinde sanal işlevleri geçersiz kılma bir işlevi temel sınıf uygulamasını geçersiz kılmaları olgu bir uygulama ayrıntılarını olduğu kabul edildiği için bağımsız olarak hangi bölümde temel sınıf işlevi, tanımlanan bu bölümünde bulunur. Genellikle, bu üyeler korunur, ancak her zaman değil.  
   
- Gelen fark `CStdioFile` altında listeleme [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md) üyeleri aşağıda bildirilen `// Implementation` açıklama olarak bildirilebilir **ortak**, `protected`, veya `private`. Gelecekte değişebilir olduğundan dikkatli bir şekilde, bu üyeler yalnızca kullanmanız gerekir. Bir grup üyeleri bildirme **ortak** sınıfı kitaplık uygulaması düzgün çalışması gerekli olabilir. Ancak, bu nedenle bildirilen üyeleri güvenle kullanabilir anlamına gelmez.  
+ Gelen fark `CStdioFile` altında listeleme [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md) üyeleri aşağıda bildirilen `// Implementation` açıklama olarak bildirilebilir **ortak**, **korumalı**, veya **özel**. Gelecekte değişebilir olduğundan dikkatli bir şekilde, bu üyeler yalnızca kullanmanız gerekir. Bir grup üyeleri bildirme **ortak** sınıfı kitaplık uygulaması düzgün çalışması gerekli olabilir. Ancak, bu nedenle bildirilen üyeleri güvenle kullanabilir anlamına gelmez.  
   
 > [!NOTE]
 >  Üzerinde veya altında kalan türlerinin açıklamaları bulabilirsiniz `// Implementation` açıklama. Her iki durumda da, bunlar bunları bildirilen üyeleri türlerini açıklar. Aşağıda oluşursa `// Implementation` açıklama varsayalım üyeleri MFC sürümleri gelecekte değişebilir.  

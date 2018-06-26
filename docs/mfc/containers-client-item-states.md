@@ -17,31 +17,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5046ea7f3f3775cfe0009afe50f33a6ce6723cc0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c02fb9e695fe206912f360dd1ad9907c6714cf1b
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342179"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929724"
 ---
 # <a name="containers-client-item-states"></a>Kapsayıcılar: İstemci Öğesi Durumları
 Bu makalede, bir istemci öğesi ömrü geçtiği farklı durumlara açıklanmaktadır.  
   
- Oluşturulan, etkin, değişiklik, kaydedilmiş ve gibi bir istemci öğesi birkaç durumları arasında aktarır. Her öğenin durumunu, framework çağrıları değiştiğinde [COleClientItem::OnChange](../mfc/reference/coleclientitem-class.md#onchange) ile `OLE_CHANGED_STATE` bildirim. Bir değerdir ikinci parametre **COleClientItem::ItemState** numaralandırması. Aşağıdakilerden biri olabilir:  
+ Oluşturulan, etkin, değişiklik, kaydedilmiş ve gibi bir istemci öğesi birkaç durumları arasında aktarır. Her öğenin durumunu, framework çağrıları değiştiğinde [COleClientItem::OnChange](../mfc/reference/coleclientitem-class.md#onchange) ile **OLE_CHANGED_STATE** bildirim. Bir değerdir ikinci parametre `COleClientItem::ItemState` numaralandırması. Aşağıdakilerden biri olabilir:  
   
--   **COleClientItem::emptyState**  
+-   *COleClientItem::emptyState*  
   
--   **COleClientItem::loadedState**  
+-   *COleClientItem::loadedState*  
   
--   **COleClientItem::openState**  
+-   *COleClientItem::openState*  
   
--   **COleClientItem::activeState**  
+-   *COleClientItem::activeState*  
   
--   **COleClientItem::activeUIState**  
+-   *COleClientItem::activeUIState*  
   
  Boş durumunda bir istemci madde henüz tamamen bir öğe değil. Bellek için ayrıldı, ancak bunu henüz OLE öğesi'nin verilerle başlatılmadı. Bu istemci öğesi olduğundan, bir çağrıyla oluşturulduğunda durumdur **yeni** henüz tipik iki aşamalı oluşturma ikinci adım geçmemiştir ancak.  
   
- İkinci adımda çağrısıyla gerçekleştirilen `COleClientItem::CreateFromFile` veya başka bir **CreateFrom *** xxxx* işlevi, öğe tamamen oluşturuldu. OLE verilerden (bir dosyayı veya başka bir kaynaktan, Pano gibi) ile ilişkili `COleClientItem`-türetilmiş bir nesne içermelidir. Şimdi öğesi yüklü durumda.  
+ İkinci adımda çağrısıyla gerçekleştirilen `COleClientItem::CreateFromFile` veya başka bir `CreateFrom` *xxxx* işlevi, öğe tamamen oluşturuldu. OLE verilerden (bir dosyayı veya başka bir kaynaktan, Pano gibi) ile ilişkili `COleClientItem`-türetilmiş bir nesne içermelidir. Şimdi öğesi yüklü durumda.  
   
  Bir öğe sunucunun pencerede açıldı yerine, kapsayıcının belge yerinde açılan Aç (veya tam olarak açık) durumda değil. Bu durumda, geçici tarama genellikle öğesi başka bir yerde etkin olduğunu belirtmek için kapsayıcının pencere öğesinde gösterimini üzerinden çizilir.  
   

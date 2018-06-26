@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71a5f94964b9e28b851c34ac456f3cfe630c255c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 397b45d6304d80c90a05daf48067ca7fff03194a
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347970"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36932051"
 ---
 # <a name="ready-to-use-array-classes"></a>Kullanıma Hazır Dizi Sınıfları
 Kullanıma hazır dizi sınıfları sınıflarıdır.  
@@ -32,13 +32,13 @@ Kullanıma hazır dizi sınıfları sınıflarıdır.
  Depolar türündeki öğeler **bayt** dizi.  
   
  [CDWordArray](../mfc/reference/cdwordarray-class.md)  
- Depolar türündeki öğeler `DWORD` dizi.  
+ Depolar türündeki öğeler **DWORD** dizi.  
   
  [CObArray](../mfc/reference/cobarray-class.md)  
  Sınıf nesnelerine işaretçiler depolar `CObject` veya türetilen sınıfların nesnelerini `CObject` dizi.  
   
  [CPtrArray](../mfc/reference/cptrarray-class.md)  
- Depolar işaretçileri `void` (genel işaretçileri) dizi.  
+ Depolar işaretçileri **void** (genel işaretçileri) dizi.  
   
  [CUIntArray](../mfc/reference/cuintarray-class.md)  
  Depolar türündeki öğeler **UINT** dizi.  

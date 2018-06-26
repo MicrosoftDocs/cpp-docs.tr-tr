@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 124bec9bfdbdc4e39bab71a80f77d7a06d8444a9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d77d603c198adad2ca2c827c355ff8f6808bff66
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33350005"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930332"
 ---
 # <a name="ole-background-mfc-implementation"></a>OLE Arka Planı: MFC Uygulaması
 Boyutu ve karmaşıklığı ham OLE API nedeniyle, doğrudan OLE uygulamaları yazmak için çağırma çok zaman alabilir. OLE Microsoft Foundation Class Kitaplığı uyarlamasını tam özellikli, OLE özellikli uygulama yazmak için yapmanız gereken iş miktarını azaltmak için hedefidir.  
@@ -43,10 +43,10 @@ Boyutu ve karmaşıklığı ham OLE API nedeniyle, doğrudan OLE uygulamaları y
  `IMoniker` Arabirimi sınıf kitaplığı tarafından uygulanan (örneğin, `COleServerItem` sınıfı) daha önce Programcı gösterilmeyen ancak. Bu arabirimi hakkında daha fazla bilgi için OLE ad uygulamaları Windows SDK'ın OLE bölümünde bakın. Ancak, aynı zamanda bkz [CMonikerFile](../mfc/reference/cmonikerfile-class.md) ve [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md).  
   
  IUnknown ve IMarshal arabirimi  
- **IUnknown** arabirimi sınıf kitaplığı tarafından uygulanan ancak Programcı gösterilmez. **IMarshal** arabirimi sınıf kitaplığı tarafından uygulanmadı ancak dahili olarak kullanılır. Sınıf kitaplığı zaten kullanılarak oluşturulan otomasyon sunucuları yerleşik özellikleri hazırlama vardır.  
+ `IUnknown` Arabirimi sınıf kitaplığı tarafından uygulanan ancak Programcı gösterilmez. `IMarshal` Arabirimi sınıf kitaplığı tarafından uygulanmadı ancak dahili olarak kullanılır. Sınıf kitaplığı zaten kullanılarak oluşturulan otomasyon sunucuları yerleşik özellikleri hazırlama vardır.  
   
  Veri dosyalarını yazmak (bileşik dosyaları)  
- Bileşik dosyalar kısmen sınıf kitaplığı tarafından desteklenir. Bileşik dosyalar oluşturma ötesinde doğrudan yönlendirme işlevleri hiçbiri desteklenmiyor. MFC sınıf kullanan **COleFileStream** standart dosya işlevlerle akışları işlenmesini desteklemek için. Daha fazla bilgi için bkz: [kapsayıcılar: bileşik dosyalar](../mfc/containers-compound-files.md).  
+ Bileşik dosyalar kısmen sınıf kitaplığı tarafından desteklenir. Bileşik dosyalar oluşturma ötesinde doğrudan yönlendirme işlevleri hiçbiri desteklenmiyor. MFC sınıf kullanan `COleFileStream` standart dosya işlevlerle akışları işlenmesini desteklemek için. Daha fazla bilgi için bkz: [kapsayıcılar: bileşik dosyalar](../mfc/containers-compound-files.md).  
   
  İşlem içi sunucuları ve nesne işleyicileri  
  İşlem içi sunucuları ve nesne işleyicileri görsel düzenleme verilerini veya bir dinamik bağlantı kitaplığı (DLL) tam Bileşen Nesne Modeli (COM) nesnelerini uyarlamasını izin verir. Bunu yapmak için OLE API doğrudan çağırarak DLL uygulayabilirsiniz. Ancak, bir Otomasyon sunucusu yazıyorsanız ve kullanıcı arabirimi olmadan sunucunuz varsa, sunucunuz bir işlemdeki sunucu yapıp tamamen bir DLL içine koyabilirsiniz AppWizard kullanabilirsiniz. Bu konular hakkında daha fazla bilgi için bkz: [otomasyon sunucuları](../mfc/automation-servers.md).  

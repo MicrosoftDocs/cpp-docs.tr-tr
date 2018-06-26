@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08d86af5f54fb9dfe81327b4589d60e5290b2610
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f8f167ac560fd8e2109c149f30841ecbe3c44fc8
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342166"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930982"
 ---
 # <a name="build-requirements-for-windows-vista-common-controls"></a>Windows Vista Ortak Denetimleri için Derleme Gereksinimleri
 Microsoft Foundation Class (MFC) kitaplığı Windows ortak denetimleri sürüm 6.1 destekler. Ortak Denetimler içinde yer alan [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] ve kitaplık dahil [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)]. Kitaplığı, mevcut sınıfları ve yeni sınıflar geliştiren yeni ve destekleyen yöntemleri sağlar [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] ortak denetimler. Uygulamanızı oluşturma sırasında aşağıdaki bölümlerde açıklanan derleme ve Geçiş gereksinimleri karşılamalıdır.  
@@ -44,7 +44,7 @@ Microsoft Foundation Class (MFC) kitaplığı Windows ortak denetimleri sürüm 
  MFC için bazı yöntemler ANSI sürümü kullanımdan kaldırıldı Windows ortak denetimleri sürüm 6.1 başlatılıyor. Daha fazla bilgi için bkz: [kullanım dışı ANSI API'ları](../mfc/deprecated-ansi-apis.md).  
   
 ## <a name="migration-requirements"></a>Geçiş gereksinimleri  
- Windows ortak denetimleri sürüm 6.1 kullanan yeni bir MFC uygulaması oluşturmak için Visual Studio IDE kullanırsanız, IDE uygun bildiriminde otomatik olarak bildirir. Ancak, Visual Studio'nun önceki bir sürümünün varolan bir MFC uygulamasına geçirmek ve yeni ortak denetimleri kullanmak istiyorsanız, IDE otomatik olarak uygulamanızı yükseltmek için bildirim bilgi sağlamaz. Bunun yerine, stdafx.h dosyanıza el ile aşağıdaki kaynak kodu eklemeniz gerekir:  
+ Windows ortak denetimleri sürüm 6.1 kullanan yeni bir MFC uygulaması oluşturmak için Visual Studio IDE kullanırsanız, IDE uygun bildiriminde otomatik olarak bildirir. Ancak, Visual Studio'nun önceki bir sürümünün varolan bir MFC uygulamasına geçirmek ve yeni ortak denetimleri kullanmak istiyorsanız, IDE otomatik olarak uygulamanızı yükseltmek için bildirim bilgi sağlamaz. Bunun yerine, el ile aşağıdaki kaynak kodunda eklemeniz gerekir, **stdafx.h** dosyası:  
   
 ```  
 #ifdef UNICODE  

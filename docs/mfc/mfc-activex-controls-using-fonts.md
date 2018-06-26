@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b53ab98e44a8696795e810b8d6f643720d8f9655
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7f5d1475412de736970d0ae36a39540121bfbc01
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355145"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930721"
 ---
 # <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma
 ActiveX denetimi metin görüntülüyorsa, yazı tipi özelliğini değiştirerek metin görünümünü değiştirmek denetim kullanıcı izin verebilirsiniz. Yazı tipi özelliklerini yazı tipi nesneleri olarak uygulanır ve iki türden biri olabilir: stok veya özel. Stok yazı tipi özellikleri Özellik Ekleme Sihirbazı'nı kullanarak ekleyebilirsiniz preimplemented yazı tipi özelliklerdir. Özel yazı tipi özelliklerini değil preimplemented ve denetim Geliştirici özelliğin davranışı ve kullanım belirler.  
@@ -137,11 +137,11 @@ ActiveX denetimi metin görüntülüyorsa, yazı tipi özelliğini değiştirere
   
 8.  **Son**'a tıklayın.  
   
- Özellik Ekleme Sihirbazı'nı eklemek için kod oluşturur `HeadingFont` özel özelliğine `CSampleCtrl` sınıf ve örnek. IDL dosyası. Çünkü `HeadingFont` Get/Set özellik türü Özellik Ekleme Sihirbazı'nı değiştirir `CSampleCtrl` sınıfının gönderme harita dahil etmek için bir `DISP_PROPERTY_EX_ID` [dısp_property_ex](../mfc/reference/dispatch-maps.md#disp_property_ex) makrosu girişi:  
+ Özellik Ekleme Sihirbazı'nı eklemek için kod oluşturur `HeadingFont` özel özelliğine `CSampleCtrl` sınıf ve örnek. IDL dosyası. Çünkü `HeadingFont` Get/Set özellik türü Özellik Ekleme Sihirbazı'nı değiştirir `CSampleCtrl` bir DISP_PROPERTY_EX_ID içerecek şekilde sınıfının gönderme harita[dısp_property_ex](../mfc/reference/dispatch-maps.md#disp_property_ex) makrosu girişi:  
   
  [!code-cpp[NVC_MFC_AxFont#5](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_5.cpp)]  
   
- `DISP_PROPERTY_EX` Makrosu ilişkilendirir `HeadingFont` , karşılık gelen özellik adı `CSampleCtrl` sınıfı alma ve ayarlama yöntemleri `GetHeadingFont` ve `SetHeadingFont`. Özellik değeri türü de belirtilir; Bu durumda, **VT_FONT**.  
+ Dısp_property_ex makrosu ilişkilendirir `HeadingFont` , karşılık gelen özellik adı `CSampleCtrl` sınıfı alma ve ayarlama yöntemleri `GetHeadingFont` ve `SetHeadingFont`. Özellik değeri türü de belirtilir; Bu durumda, VT_FONT.  
   
  Özellik Ekleme Sihirbazı'nı bir bildirim denetimi üstbilgi dosyasında da ekler. (. H) için `GetHeadingFont` ve `SetHeadingFont` işlevleri ve bunların işlev şablonları denetim uygulama dosyasında ekler (. CPP):  
   
@@ -160,11 +160,11 @@ ActiveX denetimi metin görüntülüyorsa, yazı tipi özelliğini değiştirere
   
  Denetim uygulama dosyasında (. CPP), aşağıdakileri yapın:  
   
--   Initialize `m_fontHeading` denetim oluşturucuda.  
+-   Initialize *m_fontHeading* denetim oluşturucuda.  
   
      [!code-cpp[NVC_MFC_AxFont#9](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_9.cpp)]  
   
--   Statik bildirme **FONTDESC** varsayılan yazı tipi özniteliklerini içeren yapısı.  
+-   Varsayılan yazı tipi özniteliklerini içeren bir statik FONTDESC yapıyı bildirme.  
   
      [!code-cpp[NVC_MFC_AxFont#10](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_10.cpp)]  
   
@@ -192,27 +192,27 @@ ActiveX denetimi metin görüntülüyorsa, yazı tipi özelliğini değiştirere
   
      [!code-cpp[NVC_MFC_AxFont#16](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_16.cpp)]  
   
- Özel yazı tipi Özellik uygulanmadı sonra denetimin geçerli yazı tipini değiştirmek denetim kullanıcıların standart yazı tipi özellik sayfası uygulanmalıdır. Standart yazı tipi özellik sayfası özellik sayfası kimliği eklemek için sonra aşağıdaki satırı ekleyin `BEGIN_PROPPAGEIDS` makrosu:  
+ Özel yazı tipi Özellik uygulanmadı sonra denetimin geçerli yazı tipini değiştirmek denetim kullanıcıların standart yazı tipi özellik sayfası uygulanmalıdır. Standart yazı tipi özellik sayfası özellik sayfası kimliği eklemek için begın_proppageıds makrosu sonra aşağıdaki satırı ekleyin:  
   
  [!code-cpp[NVC_MFC_AxFont#17](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_17.cpp)]  
   
- Sayısı parametresinin artırmanız gerekir, `BEGIN_PROPPAGEIDS` makrosu tek. Aşağıdaki satırı bu gösterilmektedir:  
+ Ayrıca bir begın_proppageıds makrosu sayısı parametresinin artırmalısınız. Aşağıdaki satırı bu gösterilmektedir:  
   
  [!code-cpp[NVC_MFC_AxFont#18](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_18.cpp)]  
   
  Bu değişiklikleri yaptıktan sonra ek işlevsellik içerecek şekilde tüm projeyi yeniden oluşturun.  
   
 ###  <a name="_core_processing_font_notifications"></a> Yazı tipi bildirimleri işleme  
- Çoğu durumda denetimi yazı tipi nesnesinin özelliklerini değiştirildiğinde bilmesi gerekir. Her bir yazı tipi nesne bir üye işlevini çağırarak değiştiğinde bildirim sağlama yeteneğine **IFontNotification** tarafından uygulanan arabirimi `COleControl`.  
+ Çoğu durumda denetimi yazı tipi nesnesinin özelliklerini değiştirildiğinde bilmesi gerekir. Her bir yazı tipi nesne bir üye işlevini çağırarak değiştiğinde bildirim sağlama yeteneğine `IFontNotification` tarafından uygulanan arabirimi `COleControl`.  
   
- Denetim stok Font özelliği kullanıyorsa, kendi bildirimleri tarafından işlenen `OnFontChanged` üye işlevini `COleControl`. Özel yazı tipi özelliklerini eklediğinizde, bunları aynı uygulaması kullanmak olabilir. Önceki bölümdeki örnekte bu geçirerek gerçekleştirilmiştir &**m_xFontNotification** başlatırken **m_fontHeading** üye değişkeni.  
+ Denetim stok Font özelliği kullanıyorsa, kendi bildirimleri tarafından işlenen `OnFontChanged` üye işlevini `COleControl`. Özel yazı tipi özelliklerini eklediğinizde, bunları aynı uygulaması kullanmak olabilir. Önceki bölümdeki örnekte bu geçirerek gerçekleştirilmiştir &*m_xFontNotification* başlatırken *m_fontHeading* üye değişkeni.  
   
  ![Birden çok yazı tipi nesnesi arabirimleri uygulama](../mfc/media/vc373q1.gif "vc373q1")  
 Birden çok yazı tipi nesnesi arabirimleri uygulama  
   
- Yukarıdaki şekilde düz satırları hem yazı tipi nesnelerini aynı uygulanması kullanıyorsanız Göster **IFontNotification**. Yazı tipi değiştirilen ayırt etmek istiyorsanız bu sorunlara neden olabilir.  
+ Yukarıdaki şekilde düz satırları hem yazı tipi nesnelerini aynı uygulanması kullanıyorsanız Göster `IFontNotification`. Yazı tipi değiştirilen ayırt etmek istiyorsanız bu sorunlara neden olabilir.  
   
- Denetimin yazı tipi nesne bildirimler arasında ayrım yapmak için bir yoldur, ayrı bir uygulama oluşturmak için **IFontNotification** denetiminde yazı tipi nesneler için arabirim. Bu yöntem yalnızca dize veya yakın zamanda değiştirilmiş yazı tipi kullanan dizeleri, güncelleştirerek çizim kodunuzu en iyi duruma olanak tanır. Aşağıdaki bölümlerde, ikinci bir yazı tipi özellik için ayrı bildirim arabirimleri uygulamak için gerekli adımları gösterir. İkinci font özelliği olduğu varsayılır `HeadingFont` önceki bölümde eklenen özellik.  
+ Denetimin yazı tipi nesne bildirimler arasında ayrım yapmak için bir yoldur, ayrı bir uygulama oluşturmak için `IFontNotification` denetiminde yazı tipi nesneler için arabirim. Bu yöntem yalnızca dize veya yakın zamanda değiştirilmiş yazı tipi kullanan dizeleri, güncelleştirerek çizim kodunuzu en iyi duruma olanak tanır. Aşağıdaki bölümlerde, ikinci bir yazı tipi özellik için ayrı bildirim arabirimleri uygulamak için gerekli adımları gösterir. İkinci font özelliği olduğu varsayılır `HeadingFont` önceki bölümde eklenen özellik.  
   
 ###  <a name="_core_implementing_a_new_font_notification_interface"></a> Yeni bir yazı tipi bildirim arabirimi uygulama  
  İki veya daha fazla yazı tipleri bildirimler arasında ayrım yapmak için yeni bir bildirim arabirimi denetiminde kullanılan her yazı tipi için uygulanmalıdır. Aşağıdaki bölümlerde, Denetim üstbilgi ve uygulama dosyalarını değiştirerek yeni bir yazı tipi bildirim arabirimi uygulayan açıklar.  
@@ -225,11 +225,11 @@ Birden çok yazı tipi nesnesi arabirimleri uygulama
  Bu uygulaması oluşturur `IPropertyNotifySink` adlı arabirim `HeadingFontNotify`. Bu yeni arabirim olarak adlandırılan bir yöntem içerir `OnChanged`.  
   
 ### <a name="additions-to-the-implementation-file"></a>Uygulama dosyasını eklemeler  
- Başlığın yazı tipi (Denetim oluşturucuda) başlatır kodda değişiklik `&m_xFontNotification` için `&m_xHeadingFontNotify`. Daha sonra aşağıdaki kodu ekleyin:  
+ Başlığın yazı tipi (Denetim oluşturucuda) başlatır kodda değişiklik &*m_xFontNotification* için &*m_xHeadingFontNotify*. Daha sonra aşağıdaki kodu ekleyin:  
   
  [!code-cpp[NVC_MFC_AxFont#20](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_20.cpp)]  
   
- `AddRef` Ve `Release` yöntemleri `IPropertyNotifySink` arabirimi ActiveX denetim nesnesi için başvuru sayısı izlemek. Arabirim işaretçisi erişim denetimi aldığında, Denetim çağrıları `AddRef` başvuru sayısı artırılamıyor. Denetim işaretçisi ile sona erdiğinde çağırır `Release`, çok aynı şekilde bu **GlobalFree** genel bellek bloğu boşaltmak için çağrılabilir. Bu arabirim için başvuru sayısı sıfır olarak gittiğinde, arabirim uygulamasına serbest. Bu örnekte, `QueryInterface` işlevi döndürür gösteren bir işaretçi bir `IPropertyNotifySink` belirli bir nesne üzerinde arabirimi. Bu işlev, hangi arabirimlerin belirlemek için bir nesne sorgulamak bir ActiveX denetimi sağlar.  
+ `AddRef` Ve `Release` yöntemleri `IPropertyNotifySink` arabirimi ActiveX denetim nesnesi için başvuru sayısı izlemek. Arabirim işaretçisi erişim denetimi aldığında, Denetim çağrıları `AddRef` başvuru sayısı artırılamıyor. Denetim işaretçisi ile sona erdiğinde çağırır `Release`, çok aynı şekilde bu `GlobalFree` genel bellek bloğu boşaltmak için çağrılabilir. Bu arabirim için başvuru sayısı sıfır olarak gittiğinde, arabirim uygulamasına serbest. Bu örnekte, `QueryInterface` işlevi döndürür gösteren bir işaretçi bir `IPropertyNotifySink` belirli bir nesne üzerinde arabirimi. Bu işlev, hangi arabirimlerin belirlemek için bir nesne sorgulamak bir ActiveX denetimi sağlar.  
   
  Projenize bu değişiklikler yapıldıktan sonra projeyi oluşturmak ve Test kapsayıcısı arabirimi sınamak için kullanın. Bkz: [test özellikleri ve olayları Test kapsayıcısı ile](../mfc/testing-properties-and-events-with-test-container.md) test kapsayıcısı erişim hakkında bilgi için.  
   

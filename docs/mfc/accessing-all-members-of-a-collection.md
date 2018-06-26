@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec9757a463bce7ef873720f229b70da695deae8d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cf25b84c4ee9808210d2dbf2f5115319a517c71b
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334853"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931944"
 ---
 # <a name="accessing-all-members-of-a-collection"></a>Bir Koleksiyonun Tüm Üyelerine Erişme
 MFC dizi koleksiyon sınıfları — hem şablona dayalı ve — dizinleri öğelerini erişmek için kullanın. MFC liste ve eşleme koleksiyon sınıfları — hem şablona dayalı ve — türünün bir göstergesi kullanın **konumu** koleksiyonundaki belirli bir konuma açıklamak için. Bu koleksiyonun bir veya daha fazla üyelerini erişmek için ilk konumu göstergesi başlatmak sürekli olarak o konumdan koleksiyonuna geçirmek ve sonraki öğeye dönmek için isteyin. Koleksiyon yinelemeyi ilerleme durumu ile ilgili durum bilgilerini korumak için sorumlu değildir. Bu bilgiler konumu göstergesi tutulur. Ancak, belirli bir konuma göz önüne alındığında, koleksiyon sonraki öğeye döndürmek için sorumludur.  
@@ -51,7 +51,7 @@ MFC dizi koleksiyon sınıfları — hem şablona dayalı ve — dizinleri öğe
   
      Bu örnek işaretçileri içeren yazılan işaretçi bir dizi kullanır `CPerson` nesneleri. Dizi sınıfından türetilen `CObArray`, önceden tanımlı bir şablon Olmayandan sınıfları. `GetAt` bir işaretçi döndüren bir `CPerson` nesnesi. Yazılan işaretçi koleksiyon sınıfları için — diziler veya listeleri — ilk parametresi, temel sınıf; belirtir. İkinci parametre depolamak için türünü belirtir.  
   
-     `CTypedPtrArray` Sınıfı ayrıca aşırı **[]** işleci böylece her zamanki dizi erişim öğelerini dizi alt simge sözdizimine kullanabilirsiniz. Alternatif gövdesini deyiminde `for` yukarıdaki döngüsü  
+     `CTypedPtrArray` Sınıfı ayrıca aşırı **[]** işleci böylece her zamanki dizi erişim öğelerini dizi alt simge sözdizimine kullanabilirsiniz. Alternatif gövdesini deyiminde **için** yukarıdaki döngüsü  
   
      [!code-cpp[NVC_MFCCollections#13](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_2.cpp)]  
   

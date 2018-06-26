@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0fd3a41d7574d627ebd374af170ce47801cd351
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d21bfa1dcc39e00de852203d05a2eae743b8a2f6
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33360972"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929238"
 ---
 # <a name="mfc-toolbar-implementation"></a>MFC Araç Çubuğu Uygulaması
 Bir araç çubuğu bir [denetim çubuğu](../mfc/control-bars.md) denetimleri bit eşlem görüntülerini içerir. Bu görüntüleri pushbuttons, onay kutusu veya radyo düğmeleri gibi davranabilir. MFC sınıf sağlayan [CToolbar](../mfc/reference/ctoolbar-class.md) araç çubukları yönetmek için.  
@@ -44,7 +44,7 @@ Bir araç çubuğu bir [denetim çubuğu](../mfc/control-bars.md) denetimleri bi
 > [!NOTE]
 >  MFC sürüm 4. 0'dan sonra araç çubukları ve araç ipuçları için MFC belirli önceki uygulaması yerine Windows 95 ve sonraki işlevselliği kullanılarak uygulanır.  
   
- Geriye dönük uyumluluk için MFC sınıfı eski araç uygulamasında korur **COldToolBar**. MFC önceki sürümleri için belgelere açıklamak **COldToolBar** altında `CToolBar`.  
+ Geriye dönük uyumluluk için MFC sınıfı eski araç uygulamasında korur `COldToolBar`. MFC önceki sürümleri için belgelere açıklamak `COldToolBar` altında `CToolBar`.  
   
  İlk araç programınızın Uygulama Sihirbazı'nda araç seçeneğini belirterek oluşturun. Ek araç çubukları de oluşturabilirsiniz.  
   

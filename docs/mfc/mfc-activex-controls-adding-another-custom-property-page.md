@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a0e8713bc228e65cb06e58d7ccb5389f7366e76
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c9c3d9f4744ae01a7e251387bd342b77292d1c0d
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33350787"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931615"
 ---
 # <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme
 Bazen, bir ActiveX denetimini makul bir özellik sayfasında sığmayacak daha fazla özelliği vardır. Bu durumda, bu özellikleri görüntülemek için ActiveX denetiminin özellik sayfaları ekleyebilirsiniz.  
@@ -48,7 +48,7 @@ Bazen, bir ActiveX denetimini makul bir özellik sayfasında sığmayacak daha f
   
 3.  Genişletme **iletişim** düğümü ve select **IDD_OLE_PROPPAGE_SMALL**.  
   
-4.  Tıklatın `New` kaynak projenize eklemek için.  
+4.  Tıklatın **yeni** kaynak projenize eklemek için.  
   
 5.  Özellikler penceresini yenilemek için yeni özellik sayfası şablonu seçin.  
   
@@ -82,7 +82,7 @@ Bazen, bir ActiveX denetimini makul bir özellik sayfasında sığmayacak daha f
   
  [!code-cpp[NVC_MFC_AxUI#32](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_1.cpp)]  
   
- Öğesinin ikinci parametresi, artırmanız gerekir Not `BEGIN_PROPPAGEIDS` makrosu (özellik sayfası sayısı) 1'den 2.  
+ Begın_proppageıds makrosu (özellik sayfası sayısı) 1'den 2'öğesinin ikinci parametresi artırmanız gerekir unutmayın.  
   
  Denetim uygulama dosyasını değiştirmeniz gerekir (. Üstbilgi eklenecek CPP) dosyası (. H) yeni özellik sayfası sınıfı dosyası.  
   
@@ -110,7 +110,7 @@ Bazen, bir ActiveX denetimini makul bir özellik sayfasında sığmayacak daha f
   
      [!code-cpp[NVC_MFC_AxUI#33](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_2.cpp)]  
   
-7.  Oluşturucusunun değiştirme `CAddtlPropPage` böylece **IDS_SAMPLE_ADDPPG_CAPTION** geçirilir `COlePropertyPage` şekilde Oluşturucusu:  
+7.  Oluşturucusunun değiştirme `CAddtlPropPage` IDS_SAMPLE_ADDPPG_CAPTION geçirilir, böylece `COlePropertyPage` şekilde Oluşturucusu:  
   
      [!code-cpp[NVC_MFC_AxUI#34](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_3.cpp)]  
   

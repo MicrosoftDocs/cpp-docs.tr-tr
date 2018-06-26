@@ -15,31 +15,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1e71502f818321dc8893f89f21993c25b032602
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 576735841748d0b99053d038f8d5f674d5692f00
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346782"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930195"
 ---
 # <a name="processing-notification-messages-in-extended-combo-box-controls"></a>Genişletilmiş Birleşik Giriş Kutusu Denetimlerinde Bildirim İletilerini İşleme
-Genişletilmiş Birleşik giriş kutusu, denetimi kullanıcıların etkileşimli olarak (`CComboBoxEx`) üst pencereye, bildirim iletileri gönderir genellikle bir görünüm veya iletişim nesnesi. Yanıtta bir şey yapmak istiyorsanız bu iletileri işleyin. Örneğin, ne zaman kullanıcı aşağı açılan liste etkinleştirir veya denetimin tıklama düzenleme kutusuna, **CBEN_BEGINEDIT** bildirim gönderilir.  
+Genişletilmiş Birleşik giriş kutusu, denetimi kullanıcıların etkileşimli olarak (`CComboBoxEx`) üst pencereye, bildirim iletileri gönderir genellikle bir görünüm veya iletişim nesnesi. Yanıtta bir şey yapmak istiyorsanız bu iletileri işleyin. Örneğin, kullanıcının açılan listenin etkinleştirir ya da denetimin düzenleme kutusuna tıklar CBEN_BEGINEDIT bildirim gönderilir.  
   
  Üst sınıf uygulamak isterseniz bu iletiler için bildirim işleyicileri eklemek için Özellikler penceresini kullanın.  
   
  Genişletilmiş Birleşik giriş kutusu denetimi tarafından gönderilen çeşitli bildirimler aşağıdaki listede açıklanmaktadır.  
   
--   **CBEN_BEGINEDIT** kullanıcı aşağı açılan liste etkinleştirir veya denetimin tıklama düzenleme kutusuna gönderilir.  
+-   Kullanıcı aşağı açılan liste etkinleştirir veya denetimin düzenleme kutusuna tıklattığında CBEN_BEGINEDIT gönderdi.  
   
--   **CBEN_DELETEITEM** bir öğe silindiğinde gönderilir.  
+-   Bir öğe silindiğinde CBEN_DELETEITEM gönderdi.  
   
--   **CBEN_DRAGBEGIN** kullanıcı denetimi Düzenle kısmında görüntülenen öğesini görüntü sürükleme başladığında gönderilir.  
+-   Kullanıcı denetimi Düzenle kısmında görüntülenen öğesini görüntü sürükleme başladığında CBEN_DRAGBEGIN gönderdi.  
   
--   **CBEN_ENDEDIT** kullanıcı düzenleme kutusu içinde bir işlemi tamamlanmış ya da denetimin aşağı açılan listeden bir öğe seçti gönderilir.  
+-   Kullanıcı düzenleme kutusu içinde bir işlem sonuçları veya denetimin aşağı açılan listeden bir öğe seçti CBEN_ENDEDIT gönderilir.  
   
--   **CBEN_GETDISPINFO** bir geri çağırma öğesinin görüntü bilgilerini almak için gönderilir.  
+-   Bir geri çağırma öğesinin görüntü bilgilerini almak için gönderilen CBEN_GETDISPINFO.  
   
--   **CBEN_INSERTITEM** denetiminde yeni bir öğe eklendiğinde gönderilir.  
+-   CBEN_INSERTITEM denetiminde yeni bir öğe eklendiğinde gönderilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComboBoxEx kullanma](../mfc/using-ccomboboxex.md)   

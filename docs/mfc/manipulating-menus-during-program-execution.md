@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69302202059914217e066eb0389bb14e7c5190c5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4979b75a7644ab747d1a32c14826a25678e276b6
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344288"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929766"
 ---
 # <a name="manipulating-menus-during-program-execution"></a>Program Yürütülmesi Sırasında Menüleri Düzenleme
-Bir sınıf kullanma `CMenu` menüler ve menü öğeleri kolay bir şekilde yönlendirebilir. `CMenu` bir Windows yalıtır `HMENU` işlemek ve menülerle çalışma için üye işlevleri sağlar.  
+Bir sınıf kullanma `CMenu` menüler ve menü öğeleri kolay bir şekilde yönlendirebilir. `CMenu` bir Windows HMENU tanıtıcı yalıtır ve menülerle çalışma için üye işlevleri sağlar.  
   
  Sınıfı için genel bakış [CMenu](../mfc/reference/cmenu-class.md) Ayrıntılar için.  
   

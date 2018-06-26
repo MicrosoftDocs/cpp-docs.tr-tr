@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e3ade658046ad789a92bce044d12e5a6e76f7ce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f62d64ed9479f1d1003536f8c4944b53d04d696f
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349435"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931996"
 ---
 # <a name="interpreting-user-input-through-a-view"></a>Bir Görünümü Kullanarak Kullanıcı Girişini Yorumlama
 Diğer üye işlevleri görünümün işlemek ve tüm kullanıcı girişi yorumlayabilir. Genellikle, işlenecek görünümü sınıfınızda ileti işleyicisi üye işlevleri tanımlayacaksınız:  
@@ -44,7 +44,7 @@ Diğer üye işlevleri görünümün işlemek ve tüm kullanıcı girişi yoruml
   
  [İleti işleme ve eşleme konuları](../mfc/message-handling-and-mapping.md) menü öğeleri ve diğer kullanıcı arabirimi nesneleri komutları atama ve nasıl işleyici işlevlerine komutları bağlanacağını açıklar. [İleti işleme ve eşleme konuları](../mfc/message-handling-and-mapping.md) ayrıca nasıl MFC komutları yönlendirir açıklar ve standart Windows iletileri işleyicileri için bunları içeren nesneleri gönderir.  
   
- Örneğin, uygulamanızın görünümde çizim yapma doğrudan fare uygulamanız gerekebilir. Karalama örnek nasıl işleneceğini gösterir `WM_LBUTTONDOWN`, `WM_MOUSEMOVE`, ve `WM_LBUTTONUP` sırasıyla başlamak için iletileri devam ve bir çizgi kesimi çizim bitmelidir. Diğer taraftan, bazen bir fare tıklatma seçim olarak görünümünüzde yorumlama gerekebilir. Görünümün `OnLButtonDown` işleyici işlevi kullanıcı çizim veya seçerek olup olmadığını belirlemek. Seçilirken, işleyici tıklatın görünümünde bazı nesnesinin sınırları içinde olup olmadığını belirlemek ve varsa, nesneyi seçili olarak göstermek için ekranı alter.  
+ Örneğin, uygulamanızın görünümde çizim yapma doğrudan fare uygulamanız gerekebilir. Karalama örnek sırasıyla başlamak, devam etmek ve bir çizgi kesimi çizim sonlandırmak için WM_LBUTTONDOWN, WM_MOUSEMOVE ve WM_LBUTTONUP iletilerin nasıl işleneceğini gösterir. Diğer taraftan, bazen bir fare tıklatma seçim olarak görünümünüzde yorumlama gerekebilir. Görünümün `OnLButtonDown` işleyici işlevi kullanıcı çizim veya seçerek olup olmadığını belirlemek. Seçilirken, işleyici tıklatın görünümünde bazı nesnesinin sınırları içinde olup olmadığını belirlemek ve varsa, nesneyi seçili olarak göstermek için ekranı alter.  
   
  Görünümünüzü kesme, kopyalama, yapıştırma veya Pano kullanarak seçili veri silmek için Düzen menüsünden olanlar gibi bazı menü komutlarını da işleyebilirsiniz. Bu tür bir işleyici bazı Pano ilgili üye işlevleri sınıfının çağırırdı `CWnd` seçili veri öğesi için veya Pano'dan aktarmak için.  
   

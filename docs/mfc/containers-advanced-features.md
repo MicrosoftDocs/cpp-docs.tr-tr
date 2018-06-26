@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ff48585a7f3e19939e8d951c513a8d39c0de47e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d2999e82bd05d75cb8637ba7404c36cdc2be047a
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347928"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36932178"
 ---
 # <a name="containers-advanced-features"></a>Kapsayıcılar: Gelişmiş Özellikler
 Bu makalede, isteğe bağlı Gelişmiş Özellikler varolan kapsayıcı uygulamalarına kavramak gereken adımları açıklar. Bu özellikler şunlardır:  
@@ -70,13 +70,13 @@ Bu makalede, isteğe bağlı Gelişmiş Özellikler varolan kapsayıcı uygulama
   
     -   Bağlanma, `COleTemplateServer` nesnenin çağırarak belge şablonlarınızı nesnesine `ConnectTemplate` üye işlevi.  
   
-    -   Çağrı **COleTemplateServer::RegisterAll** tüm sınıf nesnelerine OLE sistemine kayıt için üye işlevi.  
+    -   Çağrı `COleTemplateServer::RegisterAll` tüm sınıf nesnelerine OLE sistemine kayıt için üye işlevi.  
   
-    -   Çağrı `COleTemplateServer::UpdateRegistry`. Tek parametre `UpdateRegistry` olmalıdır `OAT_CONTAINER` uygulama "/ katıştırılmış" anahtarıyla başlatılmadığı durumunda. Bu uygulama katıştırılmış nesnelere bağlantılarını desteklemek bir kapsayıcı olarak kaydeder.  
+    -   Çağrı `COleTemplateServer::UpdateRegistry`. Tek parametre `UpdateRegistry` olmalıdır *oat_contaıner* uygulama "/ katıştırılmış" anahtarıyla başlatılmadığı durumunda. Bu uygulama katıştırılmış nesnelere bağlantılarını desteklemek bir kapsayıcı olarak kaydeder.  
   
          Uygulama "/ katıştırılmış" anahtarıyla başlatılırsa, kendi ana penceresinde, bir sunucu uygulaması için benzer göstermelidir değil.  
   
- MFC OLE örnek [OCLIENT](../visual-cpp-samples.md) bu özellik uygular. Bunun nasıl yapılacağı ilişkin bir örnek için bkz: `InitInstance` OCLIENT işlevinde. Bu örnek uygulama CPP dosyası.  
+ MFC OLE örnek [OCLIENT](../visual-cpp-samples.md) bu özellik uygular. Bunun nasıl yapılacağı ilişkin bir örnek için bkz: `InitInstance` işlevi *OCLIENT. CPP* Bu örnek uygulama dosyası.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kapsayıcıları](../mfc/containers.md)   

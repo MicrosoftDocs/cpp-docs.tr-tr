@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: afe134b4acdcea3ec5f1a6ce381be0ca10c321d8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b9a6495c23695f8cdedf45fbdd7cbc915b96873e
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355701"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929614"
 ---
 # <a name="mfc-activex-controls-localizing-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Yerelleştirme
 Bu makalede ActiveX denetim arabirimleri yerelleştirme için yordamlar açıklanmaktadır.  
@@ -41,7 +41,7 @@ Bu makalede ActiveX denetim arabirimleri yerelleştirme için yordamlar açıkla
     > [!NOTE]
     >  Gelecekteki örnekleri farklı yerel ayarlara varsa bu bazı durumlarda, çalışmaz.  
   
--   Kullanım **OnAmbientChanged** kapsayıcının yerel ayar için doğru kaynakları dinamik olarak yüklemek için bildirim işlevi.  
+-   Kullanım `OnAmbientChanged` kapsayıcının yerel ayar için doğru kaynakları dinamik olarak yüklemek için bildirim işlevi.  
   
     > [!NOTE]
     >  Bu denetim için çalışır, ancak ortam LocaleID özelliği değiştiğinde çalışma zamanı DLL kendi kaynaklarını dinamik olarak güncelleştirilmez. Ayrıca, çalışma zamanı DLL'ler ActiveX denetimleri için iş parçacığı yerel ayar kaynaklarını yerel belirlemek için kullanın.  
@@ -98,7 +98,7 @@ Bu makalede ActiveX denetim arabirimleri yerelleştirme için yordamlar açıkla
   
  [!code-cpp[NVC_MFC_AxLoc#4](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_4.cpp)]  
   
- Üye işlevi geçersiz kılma gibi denetimin Yukarıdaki kod örneğini yerleştirin [COleControl::OnSetClientSite](../mfc/reference/colecontrol-class.md#onsetclientsite). Ayrıca, `m_hResDLL` control sınıfının üye değişkeni olmalıdır.  
+ Üye işlevi geçersiz kılma gibi denetimin Yukarıdaki kod örneğini yerleştirin [COleControl::OnSetClientSite](../mfc/reference/colecontrol-class.md#onsetclientsite). Ayrıca, *m_hResDLL* control sınıfının üye değişkeni olmalıdır.  
   
  Bir denetimin özellik sayfası yerelleştirme için benzer mantığı kullanabilirsiniz. Özellik sayfası yerelleştirme için aşağıdaki örneğe benzer bir kod özelliği sayfanızın uygulama dosyasına ekleyin (geçersiz kılma içinde [COlePropertyPage::OnSetPageSite](../mfc/reference/colepropertypage-class.md#onsetpagesite)):  
   

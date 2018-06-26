@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a47db4f9715c539ecf9bcbfb78e48b7e8edbc94b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3c912b6c703ef7e05825e070d09f0a1b3cd73003
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339033"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36932165"
 ---
 # <a name="active-document-containers"></a>Etkin Belge Kapsayıcıları
 Microsoft Office Binder veya Internet Explorer gibi bir etkin belge kapsayıcısı birkaç belge (yerine oluşturmak ve her biri için birden çok uygulama çerçeveleri kullanmak için zorlama tek çerçevesinde farklı uygulama türleri ile çalışmanıza olanak sağlar Belge türü).  
@@ -50,15 +50,15 @@ Microsoft Office Binder veya Internet Explorer gibi bir etkin belge kapsayıcıs
   
  Etkin belgeler tümleşen bir etkin belge kapsayıcısı gerekir:  
   
--   Nesne depolama aracılığıyla işleyebilen olması **IPersistStorage** arabirimi, diğer bir deyişle, onu sağlamalıdır bir `IStorage` her etkin belgeyi örneğine.  
+-   Nesne depolama aracılığıyla işleyebilen olması `IPersistStorage` arabirimi, diğer bir deyişle, onu sağlamalıdır bir `IStorage` her etkin belgeyi örneğine.  
   
--   OLE belgeleri, "site" nesneleri (bir belge veya katıştırma başına) araya temel katıştırma özelliklerini destekleyecek uygulayan **IOleClientSite** ve **IAdviseSink**.  
+-   OLE belgeleri, "site" nesneleri (bir belge veya katıştırma başına) araya temel katıştırma özelliklerini destekleyecek uygulayan `IOleClientSite` ve `IAdviseSink`.  
   
--   Yerinde etkinleştirme katıştırılmış nesneler ya da etkin belgeler destekler. Kapsayıcının site nesneleri uygulamalıdır `IOleInPlaceSite` ve kapsayıcının çerçeve nesnesi sağlamalısınız **IOleInPlaceFrame**.  
+-   Yerinde etkinleştirme katıştırılmış nesneler ya da etkin belgeler destekler. Kapsayıcının site nesneleri uygulamalıdır `IOleInPlaceSite` ve kapsayıcının çerçeve nesnesi sağlamalısınız `IOleInPlaceFrame`.  
   
 -   Etkin belgeler uzantıları uygulayarak desteği `IOleDocumentSite` belgeye konuşun kapsayıcıya mekanizması sağlamak için. İsteğe bağlı olarak, kapsayıcı etkin belgeyi arabirimleri uygulayabilir `IOleCommandTarget` ve `IContinueCallback` yazdırma veya kaydetme gibi basit komutları alması.  
   
- Çerçeve nesnesi, görünüm nesneleri ve kapsayıcı nesnesinin isteğe bağlı olarak uygulayabileceğiniz **IOleCommandTarget** anlatıldığı gibi bazı komutlar gönderme desteklemek için [komut hedefleri](../mfc/message-handling-and-command-targets.md). Görünüm ve kapsayıcı nesneleri ayrıca isteğe bağlı olarak uygulayabilirsiniz `IPrint` ve `IContinueCallback`anlatıldığı gibi program aracılığıyla yazdırma desteği için [programlı yazdırma](../mfc/programmatic-printing.md).  
+ Çerçeve nesnesi, görünüm nesneleri ve kapsayıcı nesnesinin isteğe bağlı olarak uygulayabileceğiniz `IOleCommandTarget` anlatıldığı gibi bazı komutlar gönderme desteklemek için [komut hedefleri](../mfc/message-handling-and-command-targets.md). Görünüm ve kapsayıcı nesneleri ayrıca isteğe bağlı olarak uygulayabilirsiniz `IPrint` ve `IContinueCallback`anlatıldığı gibi program aracılığıyla yazdırma desteği için [programlı yazdırma](../mfc/programmatic-printing.md).  
   
  Aşağıdaki şekilde bir kapsayıcı ve bileşenlerinin (soldaki) ve etkin belgeyi ve onun görünümlerinde (sağ) arasındaki kavramsal ilişkiyi gösterir. Etkin belge depolama ve veri yönetir ve görünümü görüntüler veya isteğe bağlı olarak bu verileri yazdırır. Kalın yazı tipiyle etkin belgeyi katılım için gerekli olanlar arabirimlerdir; Bu kalın ve italik isteğe bağlıdır. Diğer tüm arabirimler gereklidir.  
   
@@ -85,7 +85,7 @@ Microsoft Office Binder veya Internet Explorer gibi bir etkin belge kapsayıcıs
  Birden çok görünüm destekleyen bir kapsayıcı birden çok görünüm belge sitedeki site nesneleri oluşturmak mümkün olması gerekir. Bu her görünüm ayrı etkinleştirme ve devre dışı bırakma Hizmetleri ile sağlanan sağlar `IOleInPlaceSite`.  
   
 ##  <a name="frame_object"></a> Çerçeve nesnesi  
- Kapsayıcının çerçeve, çoğunlukla, nesnesidir yerinde etkinleştirme için OLE belgelerde diğer bir deyişle kullanılan aynı çerçeve, menü ve araç çubuğu anlaşma işler. Bir görünüm nesnesi çerçeve nesne üzerinden erişimi **IOleInPlaceSite::GetWindowContext**, (hangi bölmesinde düzeyi araç anlaşmasını işleyecek kapsayıcı belge temsil eden kapsayıcı nesnesinin erişim de sağlar ve içerilen nesne numaralandırma).  
+ Kapsayıcının çerçeve, çoğunlukla, nesnesidir yerinde etkinleştirme için OLE belgelerde diğer bir deyişle kullanılan aynı çerçeve, menü ve araç çubuğu anlaşma işler. Bir görünüm nesnesi çerçeve nesne üzerinden erişimi `IOleInPlaceSite::GetWindowContext`, (hangi bölmesinde düzeyi araç anlaşması ve içerilen nesne numaralandırma işleyebilir) kapsayıcı belge temsil eden kapsayıcı nesnesinin erişim de sağlar.  
   
  Etkin belge kapsayıcı çerçeve ekleyerek genişletebilirsiniz `IOleCommandTarget`. Bu aynı şekilde bu arabirimi aynı komutları göndermek bir kapsayıcı izin verebilir etkin belgenin kullanıcı arabiriminde kaynaklanan komutları almasına izin verir (gibi **dosya yeni**, **açık**,  **Farklı Kaydet**, **yazdırma**; **Düzenle kopyalama**, **Yapıştır**, **geri**ve diğerleri) etkin bir belge için. Daha fazla bilgi için bkz: [komut hedefleri](../mfc/message-handling-and-command-targets.md).  
   

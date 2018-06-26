@@ -24,29 +24,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30e89c8d25d78477ed98bae0fd06a704e32d3906
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 80fefde054ed411dcb30836b2b89cef89cc54e64
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349719"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36928800"
 ---
 # <a name="receiving-notification-from-common-controls"></a>Ortak Denetimlerden Bildirim Alma
 Ortak Denetimler, denetimi, kullanıcı girişi gibi olaylar meydana geldiğinde, ana pencereyi bildirim iletilerini göndermek alt öğe pencerelerini ' dir.  
   
- Uygulamayı hangi eylemini kullanıcının gerçekleştirecek şekilde istediği belirlemek için bu bildirim iletilerini kullanır. En yaygın denetimleri olarak bildirim iletilerini göndermek **wm_notıfy** iletileri. Windows denetimleri olarak birçok bildirim iletilerini göndermek **WM_COMMAND** iletileri. [CWnd::OnNotify](../mfc/reference/cwnd-class.md#onnotify) için işleyicisidir **wm_notıfy** ileti. İle `CWnd::OnCommand`, uygulanması `OnNotify` bildirim iletisi gönderir `OnCmdMsg` ileti eşlemeleri işleme. Bildirimleri işleme için ileti eşleme girişi `ON_NOTIFY`. Daha fazla bilgi için bkz: [Teknik Not 61: on_notıfy ve wm_notıfy iletileri](../mfc/tn061-on-notify-and-wm-notify-messages.md).  
+ Uygulamayı hangi eylemini kullanıcının gerçekleştirecek şekilde istediği belirlemek için bu bildirim iletilerini kullanır. En yaygın denetimleri wm_notıfy iletileri olarak bildirim iletilerini göndermek. Windows denetimleri WM_COMMAND iletileri olarak birçok bildirim iletilerini göndermek. [CWnd::OnNotify](../mfc/reference/cwnd-class.md#onnotify) wm_notıfy iletisi için işleyicisidir. İle `CWnd::OnCommand`, uygulanması `OnNotify` bildirim iletisi gönderir `OnCmdMsg` ileti eşlemeleri işleme. Bildirimleri işleme için ileti eşlemesi on_notıfy girişidir. Daha fazla bilgi için bkz: [Teknik Not 61: on_notıfy ve wm_notıfy iletileri](../mfc/tn061-on-notify-and-wm-notify-messages.md).  
   
  Alternatif olarak, türetilmiş bir sınıf "ileti yansıması" kullanarak kendi bildirim iletilerini işleyebilir Daha fazla bilgi için bkz: [Teknik Not 62: Windows denetimleri için ileti yansıması](../mfc/tn062-message-reflection-for-windows-controls.md).  
   
 ## <a name="retrieving-the-cursor-position-in-a-notification-message"></a>Bir bildirim iletisi imleç konumu alma  
- Bazen, belirli bildirim iletileri bir ortak denetimi tarafından alındığında imleci geçerli konumunu belirlemek kullanışlıdır. Örneğin, bir ortak denetimi aldığında, geçerli imleç konumu belirlemek yararlı olacaktır bir **nm_rclıck** bildirim iletisi.  
+ Bazen, belirli bildirim iletileri bir ortak denetimi tarafından alındığında imleci geçerli konumunu belirlemek kullanışlıdır. Örneğin, bir ortak denetimi nm_rclıck bildirimi iletisi aldığında geçerli imleç konumu belirlemek yararlı olacaktır.  
   
- Bunu çağırarak gerçekleştirmek için basit bir yolu yoktur `CWnd::GetCurrentMessage`. Ancak, bu yöntem yalnızca iletinin gönderildiği aynı anda imleç konumu alır. Çağırmanız gerekir ileti gönderildiğinde bu yana imleci taşınmış olabilir çünkü **CWnd::GetCursorPos** geçerli imleç konumu alınamıyor.  
+ Bunu çağırarak gerçekleştirmek için basit bir yolu yoktur `CWnd::GetCurrentMessage`. Ancak, bu yöntem yalnızca iletinin gönderildiği aynı anda imleç konumu alır. Çağırmanız gerekir ileti gönderildiğinde bu yana imleci taşınmış olabilir çünkü `CWnd::GetCursorPos` geçerli imleç konumu alınamıyor.  
   
 > [!NOTE]
 >  `CWnd::GetCurrentMessage` yalnızca içinde bir ileti işleyicisini çağrılmalıdır.  
   
- Bildirim ileti işleyicisi gövdesi için aşağıdaki kodu ekleyin (Bu örnekte, **nm_rclıck**):  
+ (Bu örnekte, nm_rclıck) bildirim ileti işleyicisi gövdesi için aşağıdaki kodu ekleyin:  
   
  [!code-cpp[NVC_MFCControlLadenDialog#4](../mfc/codesnippet/cpp/receiving-notification-from-common-controls_1.cpp)]  
   

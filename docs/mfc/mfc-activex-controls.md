@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7cf5553904c859e38f42423408c0b7bddd9237fc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1209353f10e52b13202a91ae120057ba85dfa805
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33361341"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930103"
 ---
 # <a name="mfc-activex-controls"></a>MFC ActiveX Denetimleri
 ActiveX denetimi, Bileşen Nesne Modeli (çok çeşitli OLE işlevselliğini destekleyen ve çok sayıda yazılım gereksinimlerine uyacak şekilde özelleştirilmiş COM) dayalı bir yeniden kullanılabilir yazılım bileşenidir. ActiveX denetimleri, hem sıradan ActiveX denetimi kapsayıcıları ve World Wide Web sayfalarında Internet üzerindeki kullanımı için tasarlanmıştır. Burada veya ile açıklanan MFC ActiveX denetimleri oluşturabilirsiniz [Etkin Şablon kitaplığı (ATL)](../atl/active-template-library-atl-concepts.md).  
@@ -77,7 +77,7 @@ ActiveX denetimi kapsayıcısı ve bir ActiveX denetimi arasındaki iletişim
   
  Önceki şekil, ayrıca diğer OLE arabirimleri (yanında, otomasyon ve olaylar) denetimleri tarafından nasıl işleneceğini gösterir.  
   
- Tüm kapsayıcısı ile bir denetimin iletişimin tarafından gerçekleştirilir `COleControl`. Bazı kapsayıcının isteklerini işlemek için **COleControl** üye denetim sınıfına uygulanan işlevleri çağırır. Tüm yöntemleri ve bazı özellikler bu şekilde ele alınır. Denetimin sınıf de kapsayıcı ile iletişim üye işlevlerini çağırarak başlatabilirsiniz `COleControl`. Bu şekilde olaylar.  
+ Tüm kapsayıcısı ile bir denetimin iletişimin tarafından gerçekleştirilir `COleControl`. Bazı kapsayıcının isteklerini işlemek için `COleControl` üye denetim sınıfına uygulanan işlevleri çağırır. Tüm yöntemleri ve bazı özellikler bu şekilde ele alınır. Denetimin sınıf de kapsayıcı ile iletişim üye işlevlerini çağırarak başlatabilirsiniz `COleControl`. Bu şekilde olaylar.  
   
 ##  <a name="_core_active_and_inactive_states_of_an_activex_control"></a> Etkin ve etkin olmayan bir ActiveX denetimini durumları  
  Bir denetim iki temel durumlara sahiptir: etkin ve etkin değil. Geleneksel olarak, bu durumu denetimi bir pencere kaldı tarafından ayırt. Etkin bir denetim bir pencere vardı; Etkin olmayan denetimi belirtmiyor. Penceresiz etkinleştirme giriş, bu ayrım artık Evrensel değil, ancak birçok denetimleri için hala geçerlidir.  

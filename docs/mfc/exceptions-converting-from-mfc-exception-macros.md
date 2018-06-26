@@ -24,17 +24,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8953cc28e35974f7a2a63754533ffd851ca62a3e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a386de558730e12bb8cf40da250c1d04dd4ff37a
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33350761"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931124"
 ---
 # <a name="exceptions-converting-from-mfc-exception-macros"></a>Özel Durumlar: MFC Özel Durum Makrolarından Dönüştürme
 Bu gelişmiş bir konudur.  
   
- Bu makalede, Microsoft Foundation Class makroları ile yazılan varolan kod dönüştürmek açıklanmaktadır — **deneyin**, **CATCH**, **THROW**ve benzeri — C++ özel durum işleme kullanmak için anahtar sözcükler **deneyin**, **catch**, ve `throw`. Konular şunlardır:  
+ Bu makalede, Microsoft Foundation Class makroları ile yazılan varolan kod dönüştürmek açıklanmaktadır — **deneyin**, **CATCH**, **THROW**ve benzeri — C++ özel durum işleme kullanmak için anahtar sözcükler **deneyin**, **catch**, ve **throw**. Konular şunlardır:  
   
 -   [Dönüştürme avantajları](#_core_advantages_of_converting)  
   
@@ -47,7 +47,7 @@ Bu gelişmiş bir konudur.
   
 -   C++ özel durum işleme anahtar sözcükleri kullanan kodu biraz daha küçük derler. EXE veya. DLL.  
   
--   C++ özel durum işleme anahtar sözcükleri daha kullanışlıdır: kopyalanabilmesi için herhangi bir veri türü özel durumları işleyebilir (`int`, **float**, `char`, vb.), ancak makrolar yalnızca sınıfının özeldurumlarıişleme`CException` ve ondan türetilmiş sınıfları.  
+-   C++ özel durum işleme anahtar sözcükleri daha kullanışlıdır: kopyalanabilmesi için herhangi bir veri türü özel durumları işleyebilir (**int**, **float**, **char**, vb.), ancak Makroları yalnızca sınıfının özel durumları işleme `CException` ve ondan türetilmiş sınıfları.  
   
  Makrolar ve anahtar sözcükler arasındaki en önemli fark, özel durum kapsam dışına çıktığında Yakalanan özel durum makroları "Otomatik" kullanarak kod siler ' dir. Anahtar sözcükler yok, yakalanan özel durum açıkça silmeniz gerekir böylece kullanan kod. Daha fazla bilgi için bkz: [özel durumlar: çalýþýrçalýþma yakalama ve silme özel durumları](../mfc/exceptions-catching-and-deleting-exceptions.md).  
   
@@ -69,19 +69,19 @@ Bu gelişmiş bir konudur.
   
 2.  Catch blokları ayırma:  
   
-     Makroları ile **CATCH** makrosu (bağımsız değişkenleri ile) başlayan ilk catch bloğu; `AND_CATCH` makrosu sonraki catch bloklarını başlar ve `END_CATCH` makrosu catch bloklarını dizisini sonlandırır.  
+     Makroları ile **CATCH** makrosu (bağımsız değişkenleri ile) başlayan ilk catch bloğu; **AND_CATCH** makrosu sonraki catch bloklarını başlar ve **END_CATCH** makrosu catch blokları dizisini sonlandırır.  
   
-     Anahtar sözcükler **catch** anahtar sözcüğü (ile özel durum bildiriminden) her catch bloğu başlar. Hiçbir karşılık gelen yoktur `END_CATCH` makrosu; kendi kapatılan parantez ile biter engelleme yakalama.  
+     Anahtar sözcükler **catch** anahtar sözcüğü (ile özel durum bildiriminden) her catch bloğu başlar. Hiçbir karşılık gelen yoktur **END_CATCH** makrosu; kendi kapatılan parantez ile biter engelleme yakalama.  
   
 3.  Throw deyimi:  
   
-     Makroları kullanma `THROW_LAST` geçerli özel durumun yeniden oluşturulacak. `throw` Hiçbir bağımsız değişkeniyle anahtar sözcüğü ile aynı etkiye sahiptir.  
+     Makroları kullanma **THROW_LAST** geçerli özel durumun yeniden oluşturulacak. **Throw** hiçbir bağımsız değişkeniyle anahtar sözcüğü ile aynı etkiye sahiptir.  
   
 ##  <a name="_core_doing_the_conversion"></a> Dönüştürme yapmak  
   
 #### <a name="to-convert-code-using-macros-to-use-the-c-exception-handling-keywords"></a>C++ özel durum işleme anahtar sözcükleri kullanmak için makroları kullanarak kod dönüştürmek için  
   
-1.  MFC makroları tüm örneklerini bulun **deneyin**, **CATCH**, `AND_CATCH`, `END_CATCH`, **THROW**, ve `THROW_LAST`.  
+1.  MFC makroları tüm örneklerini bulun **deneyin**, **CATCH**, **AND_CATCH**, **END_CATCH**, **THROW**, ve **THROW_LAST**.  
   
 2.  Değiştirin veya aşağıdaki makroları tüm oluşumlarını Sil:  
   
@@ -89,13 +89,13 @@ Bu gelişmiş bir konudur.
   
      **CATCH** (bunların yerine **catch**)  
   
-     `AND_CATCH` (Bunların yerine **catch**)  
+     **AND_CATCH** (bunların yerine **catch**)  
   
-     `END_CATCH` (Silme)  
+     **END_CATCH** (silme)  
   
-     **THROW** (bunların yerine `throw`)  
+     **THROW** (bunların yerine **throw**)  
   
-     `THROW_LAST` (Bunların yerine `throw`)  
+     **THROW_LAST** (bunların yerine **throw**)  
   
 3.  Geçerli özel durum bildirimleri form makrosu bağımsız değişkenleri değiştirin.  
   

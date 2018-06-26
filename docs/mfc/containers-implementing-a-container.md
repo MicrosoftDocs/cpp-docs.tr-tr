@@ -15,19 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3693cb7d52a048045f4745b69b45cacc4defc75
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 066c032a18b2fedc88884b7e6eee55f07fcf43ad
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342836"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930081"
 ---
 # <a name="containers-implementing-a-container"></a>Kapsayıcılar: Bir Kapsayıcı Uygulama
 Bu makalede, bir kapsayıcı uygulama yordamı özetler ve açıklamalarının kapsayıcıları uygulama hakkında ayrıntılı sağlayan diğer makalelere işaret eder. Ayrıca, uygulamak istediğiniz isteğe bağlı bazı OLE özellikleri ve bu özellikler açıklayan makaleleri listeler.  
   
 #### <a name="to-prepare-your-cwinapp-derived-class"></a>CWinApp türetilmiş sınıf hazırlamak için  
   
-1.  OLE kitaplıklarının çağırarak başlatma **Afxoleınit** içinde `InitInstance` üye işlevi.  
+1.  OLE kitaplıklarının çağırarak başlatma `AfxOleInit` içinde `InitInstance` üye işlevi.  
   
 2.  Çağrı `CDocTemplate::SetContainerInfo` içinde `InitInstance` menü ve Hızlandırıcı atamak için yerinde katıştırılmış öğeyi olduğunda kullanılan kaynaklar etkinleştirildi. Bu konu hakkında daha fazla bilgi için bkz: [etkinleştirme](../mfc/activation-cpp.md).  
   
@@ -39,7 +39,7 @@ Bu makalede, bir kapsayıcı uygulama yordamı özetler ve açıklamalarının k
   
 2.  Geçersiz kılma `IsSelected` kendisine geçirilen öğe şu anda seçili olup olmadığını denetlemek için.  
   
-3.  Uygulama bir **OnInsertObject** görüntülenecek ileti işleyicisi **Nesne Ekle** iletişim kutusu.  
+3.  Uygulama bir `OnInsertObject` görüntülenecek ileti işleyicisi **Nesne Ekle** iletişim kutusu.  
   
 4.  Uygulama bir `OnSetFocus` odak görünümünden bir yerinde etkin OLE aktarmak için işleyici katıştırılmış öğesi ileti.  
   
@@ -51,9 +51,9 @@ Bu makalede, bir kapsayıcı uygulama yordamı özetler ve açıklamalarının k
   
 1.  Öğesinden bir sınıf türetin [COleClientItem](../mfc/reference/coleclientitem-class.md). Bu sınıfın nesnelerini katıştırılmış veya OLE belgenize bağlantılı bir öğeyi temsil eder.  
   
-2.  Geçersiz kılma **değiştiğinde**, `OnChangeItemPosition`, ve `OnGetItemPosition`. Bu işlevler boyutlandırma, konumlandırma ve katıştırılmış ve bağlantılı öğeler değiştirme işleyin.  
+2.  Geçersiz kılma `OnChange`, `OnChangeItemPosition`, ve `OnGetItemPosition`. Bu işlevler boyutlandırma, konumlandırma ve katıştırılmış ve bağlantılı öğeler değiştirme işleyin.  
   
- Uygulama Sihirbazı'nı sizin için sınıf elde ancak büyük olasılıkla geçersiz kılma gerekecek **değiştiğinde** ve diğer işlevleri önceki yordamda 2. adımda ile listelenir. Bu işlevler farklı bir uygulamadan diğerine uygulanır için iskelet uygulamaları çoğu uygulama için özelleştirilmiş gerekiyor. Bu örnekler için MFC bkz [DRAWCLI](../visual-cpp-samples.md) ve [KAPSAYICI](../visual-cpp-samples.md).  
+ Uygulama Sihirbazı'nı sizin için sınıf elde ancak büyük olasılıkla geçersiz kılma gerekecek `OnChange` ve diğer işlevleri önceki yordamda 2. adımda ile listelenir. Bu işlevler farklı bir uygulamadan diğerine uygulanır için iskelet uygulamaları çoğu uygulama için özelleştirilmiş gerekiyor. Bu örnekler için MFC bkz [DRAWCLI](../visual-cpp-samples.md) ve [KAPSAYICI](../visual-cpp-samples.md).  
   
  OLE desteği için kapsayıcı uygulamanın menü yapısının bir öğe sayısı eklemeniz gerekir. Bunlar hakkında daha fazla bilgi için bkz: [menüler ve kaynaklar: kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md).  
   

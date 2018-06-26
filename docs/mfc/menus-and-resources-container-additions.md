@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c71e8a79652a86ba412ef829ac1151256d1bf65
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 437b80a0766a07b181a60743e79bdbaf32347de4
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33350659"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930553"
 ---
 # <a name="menus-and-resources-container-additions"></a>Menüler ve Kaynaklar: Kapsayıcı Ekleme
 Bu makalede menüleri ve diğer kaynaklara bir görsel düzenleme kapsayıcı uygulamasında yapılması gereken değişiklikleri açıklar.  
@@ -67,27 +67,27 @@ Bu makalede menüleri ve diğer kaynaklara bir görsel düzenleme kapsayıcı uy
   
 |Kimlik|Anahtar|Tür|  
 |--------|---------|----------|  
-|**ID_CANCEL_EDIT_CNTR**|VK_ESCAPE|**VIRTKEY**|  
+|ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY**|  
   
- İkinci yerinde etkinleştirme için oluşturulan yeni menü kaynağa karşılık gelen yeni bir Hızlandırıcı tablosu oluşturmak için farklıdır. Bu tablo için ek olarak dosya ve pencere menüleri girişlerine sahip **VK_ESCAPE** yukarıdaki girişi. Aşağıdaki örnek MFC örnek yerinde etkinleştirme için oluşturulan Hızlandırıcı tablodur [KAPSAYICI](../visual-cpp-samples.md):  
+ İkinci yerinde etkinleştirme için oluşturulan yeni menü kaynağa karşılık gelen yeni bir Hızlandırıcı tablosu oluşturmak için farklıdır. Bu tablo için yukarıdaki VK_ESCAPE giriş yanı sıra dosya ve pencere menüleri girişlerine sahip değil. Aşağıdaki örnek MFC örnek yerinde etkinleştirme için oluşturulan Hızlandırıcı tablodur [KAPSAYICI](../visual-cpp-samples.md):  
   
 |Kimlik|Anahtar|Tür|  
 |--------|---------|----------|  
-|`ID_FILE_NEW`|CTRL + N|**VIRTKEY**|  
-|`ID_FILE_OPEN`|CTRL+O|**VIRTKEY**|  
-|**ID_FILE_SAVE**|CTRL+S|**VIRTKEY**|  
-|**ID_FILE_PRINT**|CTRL + P|**VIRTKEY**|  
-|**ID_NEXT_PANE**|VK_F6|**VIRTKEY**|  
-|**ID_PREV_PANE**|SHIFT + VK_F6|**VIRTKEY**|  
-|**ID_CANCEL_EDIT_CNTR**|VK_ESCAPE|**VIRTKEY**|  
+|ID_FILE_NEW|CTRL + N|**VIRTKEY**|  
+|ID_FILE_OPEN|CTRL+O|**VIRTKEY**|  
+|ID_FILE_SAVE|CTRL+S|**VIRTKEY**|  
+|ID_FILE_PRINT|CTRL + P|**VIRTKEY**|  
+|ID_NEXT_PANE|VK_F6|**VIRTKEY**|  
+|ID_PREV_PANE|SHIFT + VK_F6|**VIRTKEY**|  
+|ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY**|  
   
 ##  <a name="_core_string_table_additions_for_container_applications"></a> Dize tablo eklemeleri için kapsayıcı uygulamaları  
  Dize tabloları kapsayıcı uygulamaları için yapılan değişiklikler çoğunu karşılık belirtilen ek menü öğelerini [kapsayıcı menü eklemeleri](#_core_container_menu_additions). Bunlar, her bir menü öğesi görüntülendiğinde durum çubuğunda görüntülenen metni sağlayın. Örnek olarak, Uygulama Sihirbazı'nın ürettiği dize tablosu girdileri şunlardır:  
   
 |Kimlik|Dize|  
 |--------|------------|  
-|**IDP_OLE_INIT_FAILED**|OLE başlatma başarısız oldu. OLE kitaplıklarının sürümünün doğru olduğundan emin olun.|  
-|**IDP_FAILED_TO_CREATE**|Nesne oluşturma başarısız oldu. Nesnenin sistem kayıt defterinde girildiğinden emin olun.|  
+|IDP_OLE_INIT_FAILED|OLE başlatma başarısız oldu. OLE kitaplıklarının sürümünün doğru olduğundan emin olun.|  
+|IDP_FAILED_TO_CREATE|Nesne oluşturma başarısız oldu. Nesnenin sistem kayıt defterinde girildiğinden emin olun.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Menüler ve kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)   

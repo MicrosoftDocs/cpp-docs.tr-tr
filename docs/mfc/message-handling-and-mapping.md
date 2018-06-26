@@ -16,19 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66171c5df636597a2ff6be0438b558dc418b72af
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 906d84d70b3bf2ae2a9da14ce9e5b06ed92d3730
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348534"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931040"
 ---
 # <a name="message-handling-and-mapping"></a>İleti İşleme ve Eşleme
 Bu makale ailesi iletiler ve komutlar MFC çerçevesi tarafından nasıl işleneceğini ve bağlamadan nasıl işleyici işlevlerini açıklar.  
   
  Windows için geleneksel programlarda Windows iletilerini pencere yordamı büyük SWITCH deyiminde işlenir. MFC yerine kullanır [ileti eşlemeleri](../mfc/message-categories.md) ayrı sınıf üyesi işlevleri için doğrudan ileti eşlemesi için. İleti eşlemeleri sanal işlevler daha verimli bu amaçla ve iletilerin en uygun C++ nesne tarafından işlenmesine izin ver-uygulama, belge, Görünüm ve benzeri. Kimlikleri denetlemek ya da tek bir ileti veya iletiler, komut kimlikleri aralığını eşleyin.  
   
- **WM_COMMAND** iletileri — genellikle menüler, araç çubuğu düğmeleri veya Hızlandırıcıları tarafından oluşturulan — de ileti eşleme mekanizması kullanır. MFC tanımlayan bir standart [yönlendirme](../mfc/command-routing.md) penceresi, Görünüm ve etkin belgeler programınızın uygulama arasında komut iletileri çerçeve. Gerekirse bu yönlendirme geçersiz kılabilirsiniz.  
+ WM_COMMAND iletileri — genellikle menüler, araç çubuğu düğmeleri veya Hızlandırıcıları tarafından oluşturulan — de ileti eşleme mekanizması kullanır. MFC tanımlayan bir standart [yönlendirme](../mfc/command-routing.md) penceresi, Görünüm ve etkin belgeler programınızın uygulama arasında komut iletileri çerçeve. Gerekirse bu yönlendirme geçersiz kılabilirsiniz.  
   
  İleti eşlemeleri (örneğin, menüleri ve araç çubuğu düğmeleri) kullanıcı arabirimi nesnelerini güncelleştirme için bir yol da sağlamanız etkinleştirerek veya geçerli bağlamı uyacak şekilde devre dışı.  
   

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96ec459e1c956c805991f2e37d22b8260f0ffdf2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 48825a264b7d82152f47e70c5911bea400c313db
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343700"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36932123"
 ---
 # <a name="customizing-the-appearance-of-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminin Görünümünü Özelleştirme
 Sınıf `CToolBarCtrl` görünümü (ve bazen davranışı) araç nesnesinin etkileyen birçok stil sağlar. Araç çubuğu nesnesi ayarlayarak değiştirme `dwCtrlStyle` parametresinin `CToolBarCtrl::Create` (veya `CToolBar::CreateEx`) araç çubuğu denetimi ilk oluşturduğunuzda üye işlevi.  
@@ -47,17 +47,17 @@ Sınıf `CToolBarCtrl` görünümü (ve bazen davranışı) araç nesnesinin etk
 -   **TBSTYLE_ALTDRAG** kullanıcıların ALT tuşunu basılı tutarak sürükleyerek araç düğmenin konumu değiştirmesine izin verir. Bu stili belirtilmezse, kullanıcı bir düğme sürükleme sırasında SHIFT tuşunu basılı gerekir.  
   
     > [!NOTE]
-    >  `CCS_ADJUSTABLE` Stili sürüklenen araç çubuğu düğmeleri etkinleştirmek için belirtilmesi gerekir.  
+    >  **CCS_ADJUSTABLE** stili sürüklenen araç çubuğu düğmeleri etkinleştirmek için belirtilmesi gerekir.  
   
 -   **TBSTYLE_REGISTERDROP** oluşturur **TBN_GETOBJECT** bildirim iletileri istemek için fare işaretçisini araç çubuğu düğmeleri geçerken hedef nesneler bırakın.  
   
  Kalan stilleri araç çubuğu nesnesi yönlerini görsel ve görsel olmayan etkiler:  
   
--   `TBSTYLE_WRAPABLE` Düğmeleri birden çok satırı olan bir araç çubuğu oluşturur. "Araç aynı satırdaki tüm düğmeleri dahil etmek için çok dar olduğunda araç çubuğu düğmeleri sonraki satıra kayabilir". Kaydırma ayırma ve nongroup sınırları oluşur.  
+-   **TBSTYLE_WRAPABLE** düğmelerinin birden çok satırı olan bir araç çubuğu oluşturur. "Araç aynı satırdaki tüm düğmeleri dahil etmek için çok dar olduğunda araç çubuğu düğmeleri sonraki satıra kayabilir". Kaydırma ayırma ve nongroup sınırları oluşur.  
   
--   **TBSTYLE_CUSTOMERASE** oluşturur **NM_CUSTOMDRAW** bildirim iletileri bu işlerken `WM_ERASEBKGND` iletileri.  
+-   **TBSTYLE_CUSTOMERASE** oluşturur **NM_CUSTOMDRAW** bildirim iletileri bu işlerken **WM_ERASEBKGND** iletileri.  
   
--   `TBSTYLE_TOOLTIPS` Bir uygulama düğmelerinin açıklayıcı metin araç çubuğunda görüntülemek için kullanabileceğiniz bir araç ipucunu denetimini oluşturur.  
+-   **TBSTYLE_TOOLTIPS** uygulama düğmelerinin açıklayıcı metin araç çubuğunda görüntülemek için kullanabileceğiniz bir araç ipucunu denetimini oluşturur.  
   
  Araç çubuğu stilleri ve genişletilmiş stilleri tam bir listesi için bkz: [araç çubuğu denetimi ve düğme stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760439) ve [araç genişletilmiş stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760430) Windows SDK.  
   

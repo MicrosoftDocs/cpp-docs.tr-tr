@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81d28a7c5fdb48201cc1f4f2998fd0904749445d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 23f8aaf1e485d7ba38a561639f81b36d494a98f2
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33351751"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930439"
 ---
 # <a name="mfc-activex-controls-property-pages"></a>MFC ActiveX Denetimleri: Özellik Sayfaları
 Özellik sayfaları ActiveX denetimi özelliklerini görüntülemek ve değiştirmek bir ActiveX denetimi verin. Bu özellikleri görüntülemek ve denetim özelliklerini düzenleme için özelleştirilmiş, grafik bir arabirim sağlayan bir veya daha fazla özellik sayfaları içeren bir denetim özellikleri iletişim kutusu çağırarak erişilir.  
@@ -80,13 +80,13 @@ ms.locfileid: "33351751"
   
 2.  Çift **iletişim** dizin simgesi.  
   
-3.  Açık **IDD_PROPPAGE_SAMPLE** iletişim kutusu.  
+3.  IDD_PROPPAGE_SAMPLE iletişim kutusunu açın.  
   
      ActiveX Denetim Sihirbazı'nı projesinin adı iletişim kimliği, bu durumda, örnek sonuna ekler.  
   
 4.  Sürükleyip Seçili denetimi iletişim kutusunu alanı Kutusu'ndan.  
   
-5.  Bu örnekte, bir metin etiket denetimini "Başlık:" ve düzenleme kutusu denetimine sahip bir **IDC_CAPTION** tanımlayıcısı yeterli.  
+5.  Bu örnekte, bir metin etiket denetimini "Başlık:" ve IDC_CAPTION tanıtıcıya sahip bir düzenleme kutusu denetimini yeterli.  
   
 6.  Tıklatın **kaydetmek** değişikliklerinizi kaydetmek için araç çubuğunda.  
   
@@ -99,9 +99,9 @@ ms.locfileid: "33351751"
   
  [!code-cpp[NVC_MFC_AxUI#31](../mfc/codesnippet/cpp/mfc-activex-controls-property-pages_1.cpp)]  
   
- Bu işlev özellik sayfanın ilişkilendirir `m_caption` yazılı üye değişkeni kullanarak `DDP_TEXT` işlevi.  
+ Bu işlev özellik sayfanın ilişkilendirir *m_caption* yazılı üye değişkeni kullanarak `DDP_TEXT` işlevi.  
   
- Eklenen özellik sayfası denetimi aldıktan sonra özellik sayfası denetimi arasında bağlantı kurmak gereken `IDC_CAPTION`, ve resim yazısı gerçek denetim özelliğini kullanarak **DDP_Text** yukarıda açıklandığı gibi işlev.  
+ Eklenen özellik sayfası denetimi aldıktan sonra özellik sayfası denetimi, IDC_CAPTION ve gerçek denetim özelliği arasında bir bağlantı oluşturmanız gerekir, kullanarak resim yazısı `DDP_Text` yukarıda açıklandığı gibi işlev.  
   
  [Özellik sayfaları](../mfc/reference/property-pages-mfc.md) onay kutularını, radyo düğmeleri gibi diğer iletişim denetim türleri kullanılabilir ve liste kutuları. Özellik sayfası kümesinin tamamını aşağıdaki tabloda listelenmiştir **DDP_** işlevleri ve bunların amaçları:  
   
@@ -117,7 +117,7 @@ ms.locfileid: "33351751"
 |`DDP_LBString`|Bir denetim özelliği ile bir liste kutusunda seçili dizesi. Seçili dizeyi özelliğin değerini aynı harflerle başlayabilir ancak onu tam olarak eşleşmiyor.|  
 |`DDP_LBStringExact`|Bir denetim özelliği ile bir liste kutusunda seçili dizesi. Seçili dizeyi ve özelliğin dize değeri tam olarak eşleşmelidir.|  
 |`DDP_Radio`|Radyo düğmesi denetimini özelliğe sahip.|  
-|**DDP_Text**|Metin denetim özelliğe sahip.|  
+|`DDP_Text`|Metin denetim özelliğe sahip.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   

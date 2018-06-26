@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e528ea7901518112c255eefbfb1e674fddee04e2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d03966cb61e1ccab3f8f3886638efdf95a534a73
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355669"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930319"
 ---
 # <a name="optimizing-persistence-and-initialization"></a>Kalıcılığı ve Başlatmayı İyileştirme
 Varsayılan olarak, kalıcılığı ve başlatmayı denetiminde tarafından işlenen `DoPropExchange` üye işlevi. Tipik bir denetiminde birkaç çağrıları bu işlevi içeren **PX_** işlevleri (`PX_Color`, `PX_Font`, vb.), her bir özellik için bir tane.  
@@ -45,7 +45,7 @@ Varsayılan olarak, kalıcılığı ve başlatmayı denetiminde tarafından işl
   
  [!code-cpp[NVC_MFC_AxOpt#3](../mfc/codesnippet/cpp/optimizing-persistence-and-initialization_3.cpp)]  
   
- Atama yerine yük durumda, geçici bir değişken kullanılır ve ardından değeri atanır unutmayın `m_boolProp` için bir **bayt** başvuru. Atama tekniği yalnızca tek baytlık içinde oluşturacağı `m_boolProp` değiştirilen, bırakarak başlatılmadı kalan bayt sayısı.  
+ Atama yerine yük durumda, geçici bir değişken kullanılır ve ardından değeri atanır unutmayın *m_boolProp* için bir **bayt** başvuru. Atama tekniği yalnızca tek baytlık içinde oluşturacağı *m_boolProp* değiştirilen, bırakarak başlatılmadı kalan bayt sayısı.  
   
  Aynı denetimi için geçersiz kılarak denetimin başlatma iyileştirebilirsiniz [COleControl::OnResetState](../mfc/reference/colecontrol-class.md#onresetstate) gibi:  
   

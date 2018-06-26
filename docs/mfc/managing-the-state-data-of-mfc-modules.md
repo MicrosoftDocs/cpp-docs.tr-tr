@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d87b2a601e6e25d61de6ca6ad639ac6a62861ac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e5c2bced4f7f04cf75c72e68db0f99e0f89d2566
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347701"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930522"
 ---
 # <a name="managing-the-state-data-of-mfc-modules"></a>MFC Modüllerinin Durum Verisini Yönetme
-Bu makalede durumu verilerini MFC modülleri ve bu durum (yolu kod aracılığıyla bir uygulama yürütülürken alır) akışını girer ve bir modül çıktığında nasıl güncelleştirileceğini açıklar. Modül durumları ile geçiş `AFX_MANAGE_STATE` ve `METHOD_PROLOGUE` makroları da ele alınmıştır.  
+Bu makalede durumu verilerini MFC modülleri ve bu durum (yolu kod aracılığıyla bir uygulama yürütülürken alır) akışını girer ve bir modül çıktığında nasıl güncelleştirileceğini açıklar. Modül durumları AFX_MANAGE_STATE ve METHOD_PROLOGUE makroları ile değiştirmeyi de açıklanmıştır.  
   
 > [!NOTE]
 >  Terim "modülünde" Buraya yürütülebilir bir program veya bir DLL (veya kümesi DLL'ler), uygulamanın geri kalanına bağımsız olarak çalışan başvuruyor, ancak MFC DLL paylaşılan bir kopyasını kullanır. ActiveX denetimi, bir modül tipik örneğidir.  

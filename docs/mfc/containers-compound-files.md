@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8983fd8cb51a9f305ef4b0fad4d546fc8091f5a5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a8bee847d1121a6d5da1679c29a9107c8a447ab1
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348351"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930231"
 ---
 # <a name="containers-compound-files"></a>Kapsayıcılar: Bileşik Dosyalar
 Bu makalede, bileşenleri ve uygulama bileşik dosyalar ve avantajlarını ve dezavantajlarını OLE uygulamalarınızda bileşik dosyalar açıklanmaktadır.  
@@ -46,7 +46,7 @@ Bu makalede, bileşenleri ve uygulama bileşik dosyalar ve avantajlarını ve de
   
 -   Depolama nesneleri dizinleri gibi diğer depolama ve akış nesnelerini içerebilir.  
   
--   **LockBytes** nesneleri depolama nesneleri ve fiziksel donanım arasındaki arabirimi temsil eder. Baytlarla ne olursa olsun depolama aygıtına nasıl yazılır belirlemek **LockBytes** nesne eriştiği, bir sabit sürücü veya genel bellek alanı gibi. Hakkında daha fazla bilgi için **LockBytes** nesneleri ve `ILockBytes` arabirim için bkz: *OLE Programcı Başvurusu*.  
+-   `LockBytes` nesneleri depolama nesneleri ve fiziksel donanım arasındaki arabirimi temsil eder. Baytlarla ne olursa olsun depolama aygıtına nasıl yazılır belirlemek `LockBytes` nesne eriştiği, bir sabit sürücü veya genel bellek alanı gibi. Hakkında daha fazla bilgi için `LockBytes` nesneleri ve `ILockBytes` arabirim için bkz: *OLE Programcı Başvurusu*.  
   
 ##  <a name="_core_advantages_and_disadvantages_of_compound_files"></a> Olumlu ve olumsuz yönlerini bileşik dosyalar  
  Bileşik dosyalar yararlar kullanılamaz dosya depolama alanının önceki yöntemleri sağlar. Bunlara aşağıdakiler dahildir:  

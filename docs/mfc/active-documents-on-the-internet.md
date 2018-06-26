@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43bb54f36f57702d43cf065604641124e38ed053
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a18b84b30445060631589e72f6c158ea9b3626f0
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334892"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930894"
 ---
 # <a name="active-documents-on-the-internet"></a>Internet'te Etkin Belgeler
 Etkin belgeler geleneksel katıştırılmış nesneler için uzantı sağlar. Etkin belgeler sayfalı olabilir ve tüm istemci alanında görüntülenir. Bunlar geleneksel menü anlaşma yapın ve yerinde yanı sıra sunucu uygulaması açık bir pencerede düzenlenebilir. Taranmış bir kenarlığı küçük bir dikdörtgen olarak görüntülemek yerine, etkin tam çerçeve ve her zaman yerinde etkin belgelerdir.  
@@ -55,7 +55,7 @@ Etkin belgeler geleneksel katıştırılmış nesneler için uzantı sağlar. Et
 |-------------------------|---------------------------------|  
 |Kullanım dosyalar kendi depolama mekanizması olarak bileşik.|`IPersistStorage`.|  
 |Etkin belgeler, Dosyadan Oluştur dahil olmak üzere temel katıştırma özelliklerini destekler.|`IPersistFile`, `IOleObject`, ve `IDataObject`.|  
-|Destekler yerinde etkinleştirme.|`IOleInPlaceObject` ve `IOleInPlaceActiveObject` (kapsayıcının kullanarak `IOleInPlaceSite` ve **IOleInPlaceFrame** arabirimleri).|  
+|Destekler yerinde etkinleştirme.|`IOleInPlaceObject` ve `IOleInPlaceActiveObject` (kapsayıcının kullanarak `IOleInPlaceSite` ve `IOleInPlaceFrame` arabirimleri).|  
 |Bu yeni arabirimleri içeren etkin belgeyi uzantıları destekler. Bazı arabirimler isteğe bağlıdır.|`IOleDocument`, `IOleDocumentView`, `IOleCommandTarget`, ve `IPrint`.|  
   
  MFC etkin belgeler için varolan katıştırılmış sunucu desteği genişletmek için destek sağlar.  
@@ -68,7 +68,7 @@ Etkin belgeler geleneksel katıştırılmış nesneler için uzantı sağlar. Et
   
 |Sınıf türü|Önceden türetilmiş|Öğesinden türetilen için Değiştir|  
 |----------------|---------------------------|---------------------------|  
-|Yerinde çerçeve|`COleIPFrameWnd`|**COleDocIPFrameWnd**|  
+|Yerinde çerçeve|`COleIPFrameWnd`|`COleDocIPFrameWnd`|  
 |Öğe|`COleServerItem`|`CDocObjectServerItem`|  
   
  Ayrıca bilgileri kayıt defterinde nasıl girildiğini değiştirin ve diğer birkaç değişiklik. Uygulamanız şu anda hiçbir COM bileşenleri desteği varsa, Uygulama Sihirbazı'nı çalıştırarak ve COM bileşeni özel kod mevcut uygulamanızla tümleştirmek sunucu desteği ekleyebilirsiniz.  

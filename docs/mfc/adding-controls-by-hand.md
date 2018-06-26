@@ -20,23 +20,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: efe510c4376255c24470a799b5dde17021894bf0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c39f2d7803630aaaef6e803e90bf332c74937a71
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342481"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930621"
 ---
 # <a name="adding-controls-by-hand"></a>El İle Denetim Ekleme
 Seçebilir ya da [ile iletişim kutusu Düzenleyicisi için bir iletişim kutusu denetimleri ekleme](../mfc/using-the-dialog-editor-to-add-controls.md) veya bunları kendiniz koduyla ekleyin.  
   
  Bir denetim nesnesi kendiniz oluşturmak için genellikle bir C++ iletişim C++ denetim nesnesi veya çerçeve pencere nesnesi katıştırır. Diğer birçok nesne gibi Framework'te, iki aşamalı yapımı denetimleri gerektirir. Denetimin çağırmalıdır **oluşturma** üst iletişim kutusu veya çerçeve penceresi oluşturma bir parçası olarak üye işlevi. İletişim kutuları için bu genellikle içinde yapılır [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)ve çerçeve pencereleri içinde [OnCreate](../mfc/reference/cwnd-class.md#oncreate).  
   
- Aşağıdaki örnek, nasıl bildirdiğiniz gösterir bir `CEdit` nesne türetilmiş iletişim kutusu sınıfı sınıfı bildiriminde ve ardından arama **oluşturma** üye işlevinde `OnInitDialog`. Çünkü `CEdit` nesne katıştırılmış nesne olarak bildirilen, iletişim nesnesi oluşturulur, ancak bunu hala kendi ile başlatılmalıdır otomatik olarak oluşturulur **oluşturma** üye işlevi.  
+ Aşağıdaki örnek, nasıl bildirdiğiniz gösterir bir `CEdit` nesne türetilmiş iletişim kutusu sınıfı sınıfı bildiriminde ve ardından arama `Create` üye işlevinde `OnInitDialog`. Çünkü `CEdit` nesne katıştırılmış nesne olarak bildirilen, iletişim nesnesi oluşturulur, ancak bunu hala kendi ile başlatılmalıdır otomatik olarak oluşturulur `Create` üye işlevi.  
   
  [!code-cpp[NVC_MFCControlLadenDialog#1](../mfc/codesnippet/cpp/adding-controls-by-hand_1.h)]  
   
- Aşağıdaki `OnInitDialog` işlevi bir dikdörtgen ayarlar daha sonra çağırır **oluşturma** Windows düzenleme denetimi oluşturmak ve başlatılmamış eklemek için `CEdit` nesnesi.  
+ Aşağıdaki `OnInitDialog` işlevi bir dikdörtgen ayarlar daha sonra çağırır `Create` Windows düzenleme denetimi oluşturmak ve başlatılmamış eklemek için `CEdit` nesnesi.  
   
  [!code-cpp[NVC_MFCControlLadenDialog#2](../mfc/codesnippet/cpp/adding-controls-by-hand_2.cpp)]  
   
@@ -44,6 +44,6 @@ Seçebilir ya da [ile iletişim kutusu Düzenleyicisi için bir iletişim kutusu
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Denetimleri yapma ve kullanma](../mfc/making-and-using-controls.md)   
- [denetimleri](../mfc/controls-mfc.md)   
+ [Denetimleri](../mfc/controls-mfc.md)   
  [CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)
 

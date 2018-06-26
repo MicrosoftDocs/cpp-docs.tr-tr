@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 523fc0f5c87712cd61ec0709d94edcb7bcbde72c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fd3376e19d7780922102240ae1bfaa1b4eb89b2b
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348240"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931729"
 ---
 # <a name="mfc-activex-controls-accessing-ambient-properties"></a>MFC ActiveX Denetimleri: Ortam Özelliklerine Erişme
 Bu makalede, bir ActiveX denetimini ortam özelliklerine denetim kapsayıcısının nasıl erişebileceğiniz açıklanır.  
@@ -44,7 +44,7 @@ Bu makalede, bir ActiveX denetimini ortam özelliklerine denetim kapsayıcısın
 -   [AmbientFont](../mfc/reference/colecontrol-class.md#ambientfont)  
   
     > [!NOTE]
-    >  Arayan çağırmalıdır **bırakın ()** döndürülen yazı tipi üzerinde.  
+    >  Arayan çağırmalıdır `Release( )` döndürülen yazı tipi üzerinde.  
   
 -   [AmbientForeColor](../mfc/reference/colecontrol-class.md#ambientforecolor)  
   
@@ -62,7 +62,7 @@ Bu makalede, bir ActiveX denetimini ortam özelliklerine denetim kapsayıcısın
   
 -   [AmbientShowGrabHandles](../mfc/reference/colecontrol-class.md#ambientshowgrabhandles)  
   
- Bir ortam özelliğinin değeri (bazı eylem kapsayıcısının), değişirse **OnAmbientPropertyChanged** denetiminin üye işlevi çağrılır. Böyle bir bildirim işlemek için bu üye işlev geçersiz kılar. Parametresi için **OnAmbientPropertyChanged** etkilenen ortam özelliği gönderme kimliğidir. Bu dağıtım ID değeri olabilir **DISPID_UNKNOWN**, bir veya daha fazla ortam özelliklerine değişti, ancak hangi özellikleri bundan bilgi kullanılamıyor gösterir.  
+ Bir ortam özelliğinin değeri (bazı eylem kapsayıcısının), değişirse `OnAmbientPropertyChanged` denetiminin üye işlevi çağrılır. Böyle bir bildirim işlemek için bu üye işlev geçersiz kılar. Parametresi için `OnAmbientPropertyChanged` etkilenen ortam özelliği gönderme kimliğidir. Bu dağıtım ID değeri bir veya daha fazla ortam özelliklerine olduğunu gösterir, DISPID_UNKNOWN olabilir ancak hakkında özellikleri etkilendi bilgileri kullanılamıyor.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)

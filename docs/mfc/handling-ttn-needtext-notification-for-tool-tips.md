@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce7a4d6dc6edf122b5d9b5301768dea8389e771e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5879082ddc23630e5ee497d8abf6b65873a2b6d4
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345923"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931970"
 ---
 # <a name="handling-ttnneedtext-notification-for-tool-tips"></a>Araç İpuçları için TTN_NEEDTEXT Bildirimini İşleme
 Bir parçası olarak [araç ipuçlarını etkinleştirme](../mfc/enabling-tool-tips.md), size işlemek **TTN_NEEDTEXT** sahibi pencerenin ileti eşlemesi için şu girdiyi ekleyerek ileti:  
@@ -48,7 +48,7 @@ Bir parçası olarak [araç ipuçlarını etkinleştirme](../mfc/enabling-tool-t
  Bir işaretçi [NMTTDISPINFO](http://msdn.microsoft.com/library/windows/desktop/bb760258) yapısı. Bu yapı da ele alınmıştır daha ayrıntılı olarak [TOOLTIPTEXT yapısı](../mfc/tooltiptext-structure.md).  
   
  `pResult`  
- Sonuç kodu için bir işaretçi dönmek önce ayarlayabilirsiniz. **TTN_NEEDTEXT** işleyicileri yoksayabilirsiniz `pResult` parametresi.  
+ Sonuç kodu için bir işaretçi dönmek önce ayarlayabilirsiniz. **TTN_NEEDTEXT** işleyicileri yoksayabilirsiniz *pResult* parametresi.  
   
  Form görünümünde bildirim işleyicisinin örnek olarak:  
   

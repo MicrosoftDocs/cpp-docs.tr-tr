@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f142fc49d2759c4edd7cdb8701b300d435e67f54
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3a3844788330cfe79366221ee215c437fc4aefc8
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333836"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930667"
 ---
 # <a name="activex-control-containers-handling-events-from-an-activex-control"></a>ActiveX Denetimi Kapsayıcıları: ActiveX Denetimindeki Etkinlikleri İşleme
 Bu makalede, bir ActiveX denetimi kapsayıcısı ActiveX denetimleri için olay işleyicileri yüklemek için Özellikler penceresini kullanarak anlatılmaktadır. Olay işleyicileri belirli olaylar (denetiminden ek olarak) bildirimlerini almak ve yanıt olarak bazı eylemleri gerçekleştirmek için kullanılır. Bu bildirim, "olay tetikleme" adı verilir.  
@@ -46,7 +46,7 @@ Bu makalede, bir ActiveX denetimi kapsayıcısı ActiveX denetimleri için olay 
   
  Olay eklemek için Özellikler penceresini kullanın gibi bir olay eşleme girişi (`ON_EVENT`) eklenir olay havuz eşlemesi ve bir olay işleyicisi işlevi kapsayıcının uygulamasına eklenir (. CPP) dosyası.  
   
- Aşağıdaki örnek adlı bir olay işleyicisi bildirir `OnClickInCircCtrl`, Dai denetimin için **Clickın** olay:  
+ Aşağıdaki örnek adlı bir olay işleyicisi bildirir `OnClickInCircCtrl`, Dai denetimin için `ClickIn` olay:  
   
  [!code-cpp[NVC_MFC_AxCont#10](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_3.cpp)]  
   

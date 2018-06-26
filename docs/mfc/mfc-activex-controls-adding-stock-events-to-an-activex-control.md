@@ -52,15 +52,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 210749906391ccdba2e488b75be98264bcba39cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 41445015f30eb953675f763652fb85ef3eeb857a
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33359344"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930793"
 ---
 # <a name="mfc-activex-controls-adding-stock-events-to-an-activex-control"></a>MFC ActiveX Denetimleri: Bir ActiveX Denetimine Stok Olaylar Ekleme
-Stok olayları otomatik olarak bir sınıf tarafından tetiklenen, özel olaylardan farklı [COleControl](../mfc/reference/colecontrol-class.md). `COleControl` Ortak eylemlerden kaynaklanan olaylarını harekete önceden tanımlanmış üye işlevlerini içerir. Bazı ortak eylemler tarafından uygulanan `COleControl` tek - ve çift - clicks denetim, klavye olayları ve değişiklik fare düğmeleri durumda içerir. Stok olayları için olay eşleme girdilerini tarafından başına her zaman **EVENT_STOCK** öneki.  
+Stok olayları otomatik olarak bir sınıf tarafından tetiklenen, özel olaylardan farklı [COleControl](../mfc/reference/colecontrol-class.md). `COleControl` Ortak eylemlerden kaynaklanan olaylarını harekete önceden tanımlanmış üye işlevlerini içerir. Bazı ortak eylemler tarafından uygulanan `COleControl` tek - ve çift - clicks denetim, klavye olayları ve değişiklik fare düğmeleri durumda içerir. Olay eşleme girişi olayları her zaman EVENT_STOCK öneki öncesinde hisse senedi için.  
   
 ##  <a name="_core_stock_events_supported_by_classwizard"></a> Stok olayları tarafından desteklenen olay Ekleme Sihirbazı  
  `COleControl` Sınıfı, aşağıdaki tabloda listelenen on stok olaylar sağlar. İstediğiniz kullanarak denetim olayları belirtebilirsiniz [olay Ekleme Sihirbazı'nı](../ide/add-event-wizard.md).  
@@ -76,7 +76,7 @@ Stok olayları otomatik olarak bir sınıf tarafından tetiklenen, özel olaylar
 |KeyPress|**void FireKeyPress (kısa\***`pnChar`**)** |Ne zaman harekete bir `WM_CHAR` iletisi alındığında.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYPRESS)**|  
 |KeyUp|**void FireKeyUp (kısa** `nChar` **, kısa**`nShiftState`**)** |Ne zaman harekete bir `WM_SYSKEYUP` veya `WM_KEYUP` iletisi alındığında.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYUP)**|  
 |MouseDown|**void FireMouseDown (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)** |Varsa harekete **BUTTONDOWN** (sol, Orta veya sağ) alındığında. Bu olay tetiklenir hemen önce fare yakalanır.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEDOWN)**|  
-|MouseMove|**void FireMouseMove (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)** |Ne zaman harekete bir `WM_MOUSEMOVE` iletisi alındığında.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEMOVE)**|  
+|MouseMove|**void FireMouseMove (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)** |WM_MOUSEMOVE iletisi alındığında gönderildi.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEMOVE)**|  
 |MouseUp|**void FireMouseUp (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)** |Varsa harekete **BUTTONUP** (sol, Orta veya sağ) alındığında. Bu olay tetiklenir önce fare yakalama yayımlanır.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEUP)**|  
 |ReadyStateChange|**void FireReadyStateChange)**|Sonraki hazır durumu nedeniyle alınan veri miktarı için bir denetim geçişleri olduğunda tetiklenir.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_READYSTATECHANGE)**|  
   
@@ -102,7 +102,7 @@ Stok olayları otomatik olarak bir sınıf tarafından tetiklenen, özel olaylar
   
  [!code-cpp[NVC_MFC_AxUI#5](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-events-to-an-activex-control_1.cpp)]  
   
- Bu kod ekleme, tuş basışı olayı harekete olduğunda bir `WM_CHAR` iletisi alındığında ve denetim etkindir. KeyPress olayı diğer saatlerde tetikleme işlevini çağırarak harekete (örneğin, `FireKeyPress`) gelen denetim kodu içinde.  
+ Bu kod ekleme WM_CHAR iletisi aldı ve denetim etkin olduğunda tuş basışı olayı ateşlenir. KeyPress olayı diğer saatlerde tetikleme işlevini çağırarak harekete (örneğin, `FireKeyPress`) gelen denetim kodu içinde.  
   
  Olay Ekleme Sihirbazı'nı aşağıdaki kod satırını denetimin ekler. IDL dosyası:  
   

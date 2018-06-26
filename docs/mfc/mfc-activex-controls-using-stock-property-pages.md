@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e8d54f87e4e018a004bbab503664fa1788f36c2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5eb8dc1bbdc496072df829531b0f10aaaca069a8
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347136"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36932201"
 ---
 # <a name="mfc-activex-controls-using-stock-property-pages"></a>MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma
 ActiveX denetimleri ve bunları nasıl kullanacağınızı için kullanılabilir stok özellik sayfalarını anlatılmaktadır.  
@@ -41,13 +41,13 @@ ActiveX denetimleri ve bunları nasıl kullanacağınızı için kullanılabilir
   
 -   [MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme](../mfc/mfc-activex-controls-adding-another-custom-property-page.md)  
   
- MFC ActiveX denetimleri ile kullanmak için üç stok özellik sayfalarını sağlar: **CLSID_CColorPropPage**, **CLSID_CFontPropPage**, ve **CLSID_CPicturePropPage**. Bu sayfaları sırasıyla stok renk, yazı tipi ve resim özellikleri için bir kullanıcı arabirimi görüntüler.  
+ MFC ActiveX denetimleri ile kullanmak için üç stok özellik sayfalarını sağlar: `CLSID_CColorPropPage`, `CLSID_CFontPropPage`, ve `CLSID_CPicturePropPage`. Bu sayfaları sırasıyla stok renk, yazı tipi ve resim özellikleri için bir kullanıcı arabirimi görüntüler.  
   
  Bu özellik sayfaları denetime içerecek şekilde kimlikleri özellik sayfası kimlikleri denetimin dizisi başlatan kodu ekleyin. Aşağıdaki örnekte, bu kod denetim uygulama dosyasında yer alan (. CPP), tüm üç stok özellik sayfalarını ve varsayılan özellik sayfası içerecek şekilde dizi başlatır (adlı `CMyPropPage` Bu örnekte):  
   
  [!code-cpp[NVC_MFC_AxOpt#21](../mfc/codesnippet/cpp/mfc-activex-controls-using-stock-property-pages_1.cpp)]  
   
- Özellik sayısı sayfaları, buna Not `BEGIN_PROPPAGEIDS` makro, 4. Bu özellik sayfaları ActiveX denetimi tarafından desteklenen sayısını temsil eder.  
+ Özellik sayfaları, begın_proppageıds makrosu sayısı 4 olduğuna dikkat edin. Bu özellik sayfaları ActiveX denetimi tarafından desteklenen sayısını temsil eder.  
   
  Bu değişiklikleri yaptıktan sonra projenizi yeniden derleyin. Denetim yazı tipi, resim ve renk özellikler için özellik sayfaları artık sahiptir.  
   

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3fdff45963419b3676ea8ca6b1bf0239348387dd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9fe7f9b4b97fd17e73c3dd9f113a87d8f087b93c
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347847"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929669"
 ---
 # <a name="dialog-boxes-in-ole"></a>OLE'deki İletişim Kutuları
 Bir kullanıcı OLE etkinleştirilmiş bir uygulama çalışırken, uygulama kullanıcıdan bilgi alma işlemi gerçekleştirmek için gerektiği zaman zamanlar vardır. MFC OLE sınıfları gerekli bilgileri toplamak için iletişim kutularında çok sayıda sağlar. Bu konu, OLE iletişim kutuları tarafından işlenen görevleri ve bu iletişim kutusu görüntülemek için gereken sınıfları listeler. OLE iletişim kutuları ve bunların davranışını özelleştirmek için kullanılan yapılar hakkında daha fazla bilgi için bkz: [MFC başvurusu](../mfc/mfc-desktop-applications.md).  
@@ -46,7 +46,7 @@ Bir kullanıcı OLE etkinleştirilmiş bir uygulama çalışırken, uygulama kul
  Bağlantılı nesne kaynağı ile ilgili bilgileri değiştirmek kullanıcı bağlantıları Düzenle iletişim kutusu sağlar. Güncelleştirme bağlantıları iletişim kutusu geçerli iletişim kutusundaki tüm bağlantılı öğeler kaynakları doğrular ve gerekirse Bağlantıları Düzenle iletişim kutusu görüntüler. Kullanıcı düzenleme menüsünden bağlantılar seçtiğinde Bağlantıları Düzenle iletişim kutusunu görüntüleyin. Bileşik belge ilk kez açıldığında bağlantıları güncelleştir iletişim kutusu genellikle görüntülenir. Kullanın ya da [COleLinksDialog](../mfc/reference/colelinksdialog-class.md) veya [COleUpdateDialog](../mfc/reference/coleupdatedialog-class.md) sınıfı, görüntülemek istediğiniz bağlı olarak hangi iletişim kutusu.  
   
  *Sunucu meşgul veya sunucu yanıt vermiyor*  
- Sunucu meşgul iletişim kutusu, kullanıcı bir öğeyi etkinleştirme girişiminde ve sunucusu isteği işlemek için genellikle sunucunun olduğundan başka bir kullanıcı tarafından kullanımda veya görev şu anda işleyemiyor görüntülenir. Sunucuyu etkinleştirme isteği için hiç yanıt vermiyorsa sunucusu yanıt vermiyor iletişim kutusu görüntülenir. Bu iletişim kutularından aracılığıyla görüntülenen `COleMessageFilter`bağlı OLE arabirimi uygulaması olarak **ı**, ve kullanıcı etkinleştirme isteği yeniden denemek karar verebilirsiniz. Kullanım [COleBusyDialog](../mfc/reference/colebusydialog-class.md) bu iletişim kutusunu görüntülemek için sınıf.  
+ Sunucu meşgul iletişim kutusu, kullanıcı bir öğeyi etkinleştirme girişiminde ve sunucusu isteği işlemek için genellikle sunucunun olduğundan başka bir kullanıcı tarafından kullanımda veya görev şu anda işleyemiyor görüntülenir. Sunucuyu etkinleştirme isteği için hiç yanıt vermiyorsa sunucusu yanıt vermiyor iletişim kutusu görüntülenir. Bu iletişim kutularından aracılığıyla görüntülenen `COleMessageFilter`, OLE arabirimi uygulaması göre `IMessageFilter`, ve kullanıcı etkinleştirme isteği yeniden denemek karar verebilirsiniz. Kullanım [COleBusyDialog](../mfc/reference/colebusydialog-class.md) bu iletişim kutusunu görüntülemek için sınıf.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutuları](../mfc/dialog-boxes.md)   

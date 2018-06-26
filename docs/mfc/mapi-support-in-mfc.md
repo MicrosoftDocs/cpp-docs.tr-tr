@@ -19,20 +19,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5d6498d1ecb20b47070cb26bf1a9d732340e266
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 301e15b11b05f9ccbeaee63aead486f1cc6c405c
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349669"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931908"
 ---
 # <a name="mapi-support-in-mfc"></a>MFC'de MAPI Desteği
-MFC sağlayan bir alt kümesini, Microsoft ileti uygulama programı arabirimi (MAPI) sınıfında desteği **CDocument**. Özellikle, **CDocument** posta desteği son kullanıcının makinede mevcut olup olmadığını üye işlevleri vardır ve bu durumda, standart komut Kimliğine sahip bir posta Gönder komutu etkinleştirmek **ID_FILE_SEND_MAIL**. Bu komut için MFC işleyici işlevi bir belgeyi elektronik posta ile göndermek kullanıcının sağlar.  
+MFC sağlayan bir alt kümesini, Microsoft ileti uygulama programı arabirimi (MAPI) sınıfında desteği `CDocument`. Özellikle, `CDocument` posta desteği son kullanıcının makinede mevcut olup olmadığını üye işlevleri vardır ve bu durumda, standart komut Kimliğine sahip ID_FILE_SEND_MAIL posta Gönder komutu etkinleştirin. Bu komut için MFC işleyici işlevi bir belgeyi elektronik posta ile göndermek kullanıcının sağlar.  
   
 > [!TIP]
 >  MFC MAPI işlevi tamamına kapsülleyen değil de, Win32 API işlevlerini doğrudan MFC programlardan çağırabilirsiniz gibi hala MAPI işlevleri doğrudan çağırabilirsiniz.  
   
- Posta Gönder sağlayan komut, uygulamanızda çok kolaydır. MFC belge paketlemek için uygulama sağlar (diğer bir deyişle, bir **CDocument**-nesne türetilmiş) ek olarak posta gönderin. Bu ek kaydeder dosyasını kaydedin bir komutu eşdeğerdir (serileştiren) posta iletisi belgenin içeriği. Bu uygulama, kullanıcının posta adresini ve posta iletisine konu ve ileti metnini eklemek için Fırsat vermek için posta istemci kullanıcının makinesinde bağlı çağırır. Kullanıcılar kendi tanıdık posta uygulamanın kullanıcı arabiriminde bakın. Bu işlev iki tarafından sağlanan **CDocument** üye işlevleri: `OnFileSendMail` ve `OnUpdateFileSendMail`.  
+ Posta Gönder sağlayan komut, uygulamanızda çok kolaydır. MFC belge paketlemek için uygulama sağlar (diğer bir deyişle, bir `CDocument`-nesne türetilmiş) ek olarak posta gönderin. Bu ek kaydeder dosyasını kaydedin bir komutu eşdeğerdir (serileştiren) posta iletisi belgenin içeriği. Bu uygulama, kullanıcının posta adresini ve posta iletisine konu ve ileti metnini eklemek için Fırsat vermek için posta istemci kullanıcının makinesinde bağlı çağırır. Kullanıcılar kendi tanıdık posta uygulamanın kullanıcı arabiriminde bakın. Bu işlev iki tarafından sağlanan `CDocument` üye işlevleri: `OnFileSendMail` ve `OnUpdateFileSendMail`.  
   
  MAPI eki gönderilecek dosyanın okuması gerekir. Uygulamanın kendi veri dosyası sırasında açık tutar, bir `OnFileSendMail` işlev çağrısı, dosyanın gerekiyor dosyaya erişmek birden çok işlem sağlayan bir paylaşım modu ile açılacak.  
   
@@ -41,7 +41,7 @@ MFC sağlayan bir alt kümesini, Microsoft ileti uygulama programı arabirimi (M
   
 #### <a name="to-implement-a-send-mail-command-with-mfc"></a>MFC posta Gönder komutuyla uygulamak için  
   
-1.  Komut Kimliğine sahip bir menü öğesi eklemek için Visual C++ Menü Düzenleyici kullanın **ID_FILE_SEND_MAIL**.  
+1.  Visual C++ Menü Düzenleyici ID_FILE_SEND_MAIL komutu Kimliğine sahip bir menü öğesi eklemek için kullanın.  
   
      Bu komut kimliği AFXRES framework tarafından sağlanır. H. Tüm menü komutu eklenebilir, ancak genellikle eklendiğinden **dosya** menüsü.  
   
@@ -50,7 +50,7 @@ MFC sağlayan bir alt kümesini, Microsoft ileti uygulama programı arabirimi (M
      [!code-cpp[NVC_MFCDocView#9](../mfc/codesnippet/cpp/mapi-support-in-mfc_1.cpp)]  
   
     > [!NOTE]
-    >  Bu ileti eşlemesi herhangi birinden türetilmiş bir belge için çalışır **CDocument** veya **COleDocument** — ileti eşlemesi türetilmiş belge sınıfınızda olsa bile, her iki durumda da doğru temel sınıfı alır.  
+    >  Bu ileti eşlemesi herhangi birinden türetilmiş bir belge için çalışır `CDocument` veya `COleDocument` — ileti eşlemesi türetilmiş belge sınıfınızda olsa bile, her iki durumda da doğru temel sınıfı alır.  
   
 3.  Uygulamanızı oluşturun.  
   
@@ -61,7 +61,7 @@ MFC sağlayan bir alt kümesini, Microsoft ileti uygulama programı arabirimi (M
   
  İlgili bilgi için bkz: [MAPI](../mfc/mapi.md) genel bakış.  
   
- Hakkında daha fazla bilgi için **CDocument** MAPI, etkinleştirme üye işlevleri bakın:  
+ Hakkında daha fazla bilgi için `CDocument` MAPI, etkinleştirme üye işlevleri bakın:  
   
 -   [CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#onfilesendmail)  
   

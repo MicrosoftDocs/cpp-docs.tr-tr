@@ -24,18 +24,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30d220c928f2ca3fe0594d03d558d2d6dcfce773
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 64a8df138ef0d581bcc93bf836ee0935a634983d
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347087"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930509"
 ---
 # <a name="files-in-mfc"></a>MFC'deki Dosyalar
 Microsoft Foundation Class Kitaplığı (MFC içinde), sınıf [CFile](../mfc/reference/cfile-class.md) normal dosya g/ç işlemleri gerçekleştirir. Bu makaleler ailesi, açın ve dosyaları kapatın yanı sıra okuma ve bu dosyaların veri yazma açıklanmaktadır. Ayrıca, dosya durum işlemleri anlatılmaktadır. MFC nesne tabanlı serileştirme özelliklerini okuma ve veri dosyaları yazılıyor alternatif bir yolu olarak kullanmak üzere nasıl açıklaması için bkz [seri hale getirme](../mfc/serialization-in-mfc.md).  
   
 > [!NOTE]
->  MFC kullandığınızda **CDocument** nesneleri framework mu seri hale getirme iş çoğunu sizin için. Özellikle, framework oluşturduğu ve kullandığı `CFile` nesne. Yalnızca geçersiz kılmada kod yazmak zorunda `Serialize` sınıfının üye işlevini **CDocument**.  
+>  MFC kullandığınızda `CDocument` nesneleri framework mu seri hale getirme iş çoğunu sizin için. Özellikle, framework oluşturduğu ve kullandığı `CFile` nesne. Yalnızca geçersiz kılmada kod yazmak zorunda `Serialize` sınıfının üye işlevini `CDocument`.  
   
  `CFile` Sınıfı, genel amaçlı ikili dosya işlemleri için bir arabirim sağlar. `CStdioFile` Ve `CMemFile` türetilmiş sınıfları `CFile` ve `CSharedFile` türetilmiş sınıf `CMemFile` daha özel dosya hizmetleri sağlayın.  
   

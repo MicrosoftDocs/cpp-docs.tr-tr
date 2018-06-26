@@ -22,22 +22,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1055fd9b1ef75b2090478d85e8251d1800b8b039
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1e19cda1869938a854ff03ea83cdda747e8120a0
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345748"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929536"
 ---
 # <a name="managing-menus-control-bars-and-accelerators"></a>Menüleri, Denetim Çubuklarını ve Hızlandırıcıları Yönetme
 Çerçeve penceresi menüleri, araç çubuğu düğmeleri, durum çubuğu ve Hızlandırıcıları dahil olmak üzere, kullanıcı arabirimi nesnelerini güncelleştirme yönetir. MDI uygulamaları menü çubuğunda paylaşımı yönetir.  
   
 ## <a name="managing-menus"></a>Menüleri yönetme  
- Çerçeve penceresi kullanarak kullanıcı arabirimi öğeleri güncelleştirilirken katılan `ON_UPDATE_COMMAND_UI` mekanizması açıklanan [güncelleştirme kullanıcı arabirimi nesnelerini nasıl](../mfc/how-to-update-user-interface-objects.md). Araç çubukları ve diğer denetim çubukları düğmeleri boşta döngü sırasında güncelleştirilir. Menü öğeleri menü çubuğundaki aşağı açılır menüler yalnızca menüyü aşağı bırakır önce güncelleştirilir.  
+ Çerçeve penceresi açıklanan on_update_command_uı mekanizmasını kullanarak kullanıcı arabirimi öğeleri güncelleştirilirken katılan [güncelleştirme kullanıcı arabirimi nesnelerini nasıl](../mfc/how-to-update-user-interface-objects.md). Araç çubukları ve diğer denetim çubukları düğmeleri boşta döngü sırasında güncelleştirilir. Menü öğeleri menü çubuğundaki aşağı açılır menüler yalnızca menüyü aşağı bırakır önce güncelleştirilir.  
   
  MDI uygulamaları için menü çubuğundaki ve resim yazısı MDI çerçeve penceresi yönetir. MDI çerçeve penceresi hiçbir etkin MDI alt pencereleri olduğunda, menü çubuğu olarak kullanılan bir varsayılan menüsünü sahip olur. Etkin alt olduğunda MDI çerçeve pencere menü çubuğu etkin MDI alt pencere menüsü tarafından ele alınır. Grafik ve çalışma belgeler gibi birden çok belge türü MDI uygulama destekliyorsa, her tür kendi menüleri menü çubuğuna koyar ve ana çerçeve penceresinin başlık değiştirir.  
   
- [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) MDI uygulamaları için Pencere menüsünden standart komutlar için varsayılan uygulamaları sağlar. Özellikle, yeni pencere komutu (**ıd_wındow_new**) yeni çerçeve penceresi ve geçerli belge görünümü oluşturmak için uygulanır. Yalnızca Gelişmiş özelleştirme gerekiyorsa bu uygulamaları geçersiz kılmanız gerekir.  
+ [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) MDI uygulamaları için Pencere menüsünden standart komutlar için varsayılan uygulamaları sağlar. Özellikle, yeni pencere komutu (ıd_wındow_new) yeni çerçeve penceresi ve geçerli belge görünümü oluşturmak için uygulanır. Yalnızca Gelişmiş özelleştirme gerekiyorsa bu uygulamaları geçersiz kılmanız gerekir.  
   
  Belge türü birden çok MDI alt pencereleri menü kaynakları paylaşır. Birkaç MDI alt pencereleri aynı belge şablonu tarafından oluşturduysanız, tüm Windows sistem kaynağı kaydetme aynı menü kaynağı kullanabilirsiniz.  
   

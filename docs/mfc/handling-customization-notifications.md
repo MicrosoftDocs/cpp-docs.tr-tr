@@ -57,17 +57,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3636d3db480563295213b76de06133e78e30cd0d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5b95af9c0562c4b3210cbcdd7b9ce6216a5d49fb
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33353708"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930023"
 ---
 # <a name="handling-customization-notifications"></a>Özelleştirme Bildirimlerini İşleme
 Windows araç yaygın bir denetim eklemek, silmek veya araç çubuğu düğmeleri yeniden düzenlemek kullanıcı izin veren bir sistem tanımlı özelleştirme iletişim kutusu dahil olmak üzere yerleşik özelleştirme özelliklere sahiptir. Uygulama, özelleştirme özellikleri kullanılabilir olduğunu ve kullanıcının araç çubuğunu özelleştirebilirsiniz uzantı denetimlerini belirler.  
   
- Bu özelleştirme özellikleri kullanılabilir kullanıcıya araç vererek yapabileceğiniz `CCS_ADJUSTABLE` stili. Özelleştirme özelliklerini bir düğme yeni bir konuma sürükleyin ya da bir düğmeyi araç çubuğundan sürükleyerek kaldırmak için verin. Ayrıca, kullanıcı görüntülemek için araç çift tıklayarak **özelleştirme araç** ekleme, silme ve araç çubuğu düğmeleri yeniden düzenlemesine olanak tanır. iletişim kutusu. Uygulamayı kullanarak iletişim kutusunu görüntüleyebilir [Özelleştir](../mfc/reference/ctoolbarctrl-class.md#customize) üye işlevi.  
+ Bu özelleştirme özellikleri kullanılabilir kullanıcıya araç vererek yapabileceğiniz **CCS_ADJUSTABLE** stili. Özelleştirme özelliklerini bir düğme yeni bir konuma sürükleyin ya da bir düğmeyi araç çubuğundan sürükleyerek kaldırmak için verin. Ayrıca, kullanıcı görüntülemek için araç çift tıklayarak **özelleştirme araç** ekleme, silme ve araç çubuğu düğmeleri yeniden düzenlemesine olanak tanır. iletişim kutusu. Uygulamayı kullanarak iletişim kutusunu görüntüleyebilir [Özelleştir](../mfc/reference/ctoolbarctrl-class.md#customize) üye işlevi.  
   
  Araç çubuğu denetimi bildirim iletilerini özelleştirme işlemi her adımda üst penceresine gönderir. Kullanıcı SHIFT tuşunu tutan ve bir düğme sürükleme başlar, araç sürükleme işlemi otomatik olarak yönetir. Araç gönderir **TBN_QUERYDELETE** düğmesi silinebilir olup olmadığını belirlemek için üst pencere bildirim iletisi. Sürükleme işlemi sonlandırır üst pencere döndürürse **FALSE**. Aksi takdirde, araç fare girdisi yakalar ve kullanıcının fare düğmesini serbest bırakmak bekler.  
   
@@ -165,7 +165,7 @@ Windows araç yaygın bir denetim eklemek, silmek veya araç çubuğu düğmeler
  Bildirim ile ilişkilendirilmiş düğmesi dizini.  
   
  **tbButton**  
- `TBBUTTON` bildirim ile ilişkilendirilmiş araç çubuğu düğmesi hakkında bilgi içeren yapısı.  
+ **TBBUTTON** araç çubuğu düğmesi hakkında bilgi içeren yapısı bildirim ile ilişkilendirilmiş.  
   
  **cchText**  
  Düğme metni karakter sayısı.  

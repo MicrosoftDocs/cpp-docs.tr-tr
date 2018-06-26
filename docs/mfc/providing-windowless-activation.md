@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dbe72fcaf26a245d40544acaf59def9e24e0fa6e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a42d952ade479c4eb117d21921c9b0feafb81cea
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33351816"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931957"
 ---
 # <a name="providing-windowless-activation"></a>Penceresiz Etkinleştirme Sağlama
-Pencere oluşturma kod (diğer bir deyişle, gerçekleşen her şeyi çağırdığınızda **CreateWindow'u**) yürütmek maliyetli olabilir. Tutan bir denetim bir pencere iletileri yönetmek penceresinin ekran vardır. Penceresiz denetimleri, bu nedenle windows denetimleriyle daha hızlı bir şekilde bağlıdır.  
+Pencere oluşturma kod (diğer bir deyişle, gerçekleşen her şeyi çağırdığınızda `CreateWindow`) yürütmek maliyetli olabilir. Tutan bir denetim bir pencere iletileri yönetmek penceresinin ekran vardır. Penceresiz denetimleri, bu nedenle windows denetimleriyle daha hızlı bir şekilde bağlıdır.  
   
  Başka bir avantaj penceresiz denetimlerinin pencereli denetimleri penceresiz denetimleri saydam boyama ve dikdörtgen olmayan ekran bölgeleri, desteklemesidir. Bir ortak saydam denetim saydam arka plan metin denetimiyle örnektir. Denetimleri boyar metin ancak değil arka planda ne olursa olsun altındaki metin aracılığıyla gösterecek şekilde. Yeni formlar genellikle okları gibi dikdörtgen olmayan denetimleri kullanın ve düğmeleri yuvarlamak yapın.  
   
@@ -41,7 +41,7 @@ Pencere oluşturma kod (diğer bir deyişle, gerçekleşen her şeyi çağırdı
   
  Seçerseniz bu bayrak eklemek için kodu otomatik olarak oluşturulan **penceresiz etkinleştirme** seçeneği [denetim ayarlarını](../mfc/reference/control-settings-mfc-activex-control-wizard.md) MFC ActiveX Denetim Sihirbazı sayfasında.  
   
- Penceresiz etkinleştirme etkinleştirildiğinde, kapsayıcı denetimin giriş iletilerini temsil edecek `IOleInPlaceObjectWindowless` arabirimi. `COleControl`kullanıcının bu arabirim uygulaması fare ayarlama uygun şekilde düzenler sonra denetiminizin ileti eşlemesi üzerinden ileti gönderir. İleti eşlemesi karşılık gelen girdilere ekleyerek sıradan pencere iletileri gibi iletileri işleyebilir. Bu iletiler, işleyicileri kullanmaktan kaçının `m_hWnd` üye değişkeni (veya bunu kullanan herhangi bir üye işlevini) denetlemeden ilk değeri olmayan **NULL**.  
+ Penceresiz etkinleştirme etkinleştirildiğinde, kapsayıcı denetimin giriş iletilerini temsil edecek `IOleInPlaceObjectWindowless` arabirimi. `COleControl`kullanıcının bu arabirim uygulaması fare ayarlama uygun şekilde düzenler sonra denetiminizin ileti eşlemesi üzerinden ileti gönderir. İleti eşlemesi karşılık gelen girdilere ekleyerek sıradan pencere iletileri gibi iletileri işleyebilir. Bu iletiler, işleyicileri kullanmaktan kaçının *m_hWnd* üye değişkeni (veya bunu kullanan herhangi bir üye işlevini) denetlemeden ilk değeri olmayan **NULL**.  
   
  `COleControl` Fare yakalama, klavye odağı, kaydırma ve de dahil olmak üzere diğer pencere Hizmetleri gibi uygun kapsayıcısından çağırma üye işlevleri sağlar:  
   

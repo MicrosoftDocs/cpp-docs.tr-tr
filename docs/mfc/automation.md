@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce325073d8a1585ffa9e520cebdfc372280306d2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fdd62c73c099cbae8a21c82cca55cb8430d7fd04
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345891"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930608"
 ---
 # <a name="automation"></a>Otomatikleştirme
 Otomasyon (önceki adıyla OLE Otomasyon bilinir), bir uygulama için başka bir uygulamaya uygulanan nesneleri değiştirmek için ya da bunlar işlenebilir nesnelerini ortaya çıkarmak için mümkün kılar.  
@@ -57,7 +57,7 @@ Otomasyon (önceki adıyla OLE Otomasyon bilinir), bir uygulama için başka bir
  Microsoft Excel ve Microsoft Visual C++ gibi birçok ticari uygulamaları, işlevlerinin çoğunu otomatikleştirmenizi sağlar. Örneğin, Visual C++'da otomatikleştirmek için VBScript makrolar oluşturur, düzenleme ya da görevleri hata ayıklama kodu yönlerini yazabilirsiniz.  
   
 ##  <a name="_core_passing_parameters_in_automation"></a> Otomasyon parametreleri geçirme  
- Otomasyon yöntemleri oluşturma bir zorluk otomasyon sunucuları ve istemciler arasında veri iletmek için bir Tekdüzen "safe" mekanizmaya yardımcı olur. Otomasyon kullanan **değişken** veri iletmek için türü. **Değişken** etiketli UNION türüdür. (Bu, anonim bir C++ birleşimi) değer için bir veri üyesi ve birleşim içinde depolanan bilgi türünü belirten bir veri üyesi vardır. **Değişken** türü bir dizi standart veri türlerini destekler: 2 ve 4 bayt tamsayı, 4 - ve 8-bayt kayan nokta sayıları, dizeleri ve Boole değerleri. Ayrıca, desteklediği `HRESULT` (OLE hata kodları) **para birimi** (sabit noktalı sayısal bir tür), ve **tarih** (mutlak tarih ve saat) türleri, işaretçileri yanı sıra **IUnknown**  ve `IDispatch` arabirimleri.  
+ Otomasyon yöntemleri oluşturma bir zorluk otomasyon sunucuları ve istemciler arasında veri iletmek için bir Tekdüzen "safe" mekanizmaya yardımcı olur. Otomasyon kullanan **değişken** veri iletmek için türü. **Değişken** etiketli UNION türüdür. (Bu, anonim bir C++ birleşimi) değer için bir veri üyesi ve birleşim içinde depolanan bilgi türünü belirten bir veri üyesi vardır. **Değişken** türü bir dizi standart veri türlerini destekler: 2 ve 4 bayt tamsayı, 4 - ve 8-bayt kayan nokta sayıları, dizeleri ve Boole değerleri. Ayrıca, desteklediği **HRESULT** (OLE hata kodları) **para birimi** (sabit noktalı sayısal bir tür), ve **tarih** (mutlak tarih ve saat) türleri, İşaretçileryanısıra`IUnknown` ve `IDispatch` arabirimleri.  
   
  **Değişken** türü kapsüllenmiş [COleVariant](../mfc/reference/colevariant-class.md) sınıfı. Destekleyici **para birimi** ve **tarih** sınıfları kapsüllenmiş içinde [COleCurrency](../mfc/reference/colecurrency-class.md) ve [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) sınıfları.  
   

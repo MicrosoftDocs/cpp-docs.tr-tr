@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dbde67e61a38190a2e26884659d273b55a63f89e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 07131c64097457bd6a8035b5fe100ba376d49fbd
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382105"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931163"
 ---
 # <a name="ribbon-designer-mfc"></a>Şerit Tasarımcısı (MFC)
 Şerit Tasarımcısı oluşturmanızı ve MFC uygulamalarında Şerit özelleştirme sağlar. Şerit komutları mantıksal gruplar halinde düzenler bir kullanıcı arabirimi (UI) öğesidir. Bu gruplar bir Şerit ayrı sekmeleri pencerenin üst kısmında görüntülenir. Şerit menü çubuğu ve araç çubuklarını yerini alır. Şerit uygulaması kullanılabilirliğini önemli ölçüde artırabilir. Daha fazla bilgi için bkz: [Şerit](http://go.microsoft.com/fwlink/p/?linkid=129233). Aşağıdaki çizimde bir Şerit gösterir.  
@@ -34,7 +34,7 @@ ms.locfileid: "33382105"
 ## <a name="understanding-the-ribbon-designer"></a>Şerit Tasarımcısı anlama  
  Şerit Tasarımcısı oluşturur ve Şerit bir kaynak olarak depolar. Şerit Tasarımcısı Şerit kaynağı oluşturduğunuzda, bu üç şey yapar:  
   
--   Proje kaynak tanımı komut dosyasında bir girdi ekler (* .rc). Aşağıdaki örnekte, `IDR_RIBBON` Şerit kaynağı tanımlayan benzersiz bir ad olduğundan `RT_RIBBON_XML` kaynak türü ve `ribbon.mfcribbon-ms` kaynak dosyasının adıdır.  
+-   Proje kaynak tanımı komut dosyasında bir girdi ekler (* .rc). Aşağıdaki örnekte, IDR_RIBBON Şerit kaynağı tanımlayan benzersiz adıdır, RT_RIBBON_XML kaynak türüdür ve ribbon.mfcribbon ms kaynak dosyasının adıdır.  
   
  ```  
     IDR_RIBBON RT_RIBBON_XML      "res\\ribbon.mfcribbon-ms"  

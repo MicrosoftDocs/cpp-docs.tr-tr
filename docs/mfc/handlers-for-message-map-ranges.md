@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be596ea38a8d0a3919ed43d9c5478bb0127032d9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 896977da8ca57cc17a9fa3b7864e1744ee07f35d
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33351728"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930829"
 ---
 # <a name="handlers-for-message-map-ranges"></a>İleti Eşleme Aralıkları için İşleyiciler
 Bu makalede, bir dizi iletileri (yerine tek bir ileti için yalnızca bir işlev eşleme) tek bir ileti işleyicisi işlevi eşlemek açıklanmaktadır.  
@@ -96,7 +96,7 @@ Bu makalede, bir dizi iletileri (yerine tek bir ileti için yalnızca bir işlev
   
  [!code-cpp[NVC_MFCMessageHandling#7](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_2.h)]  
   
- İşleyici işlevleri tek komutlar için normalde hiç parametre almaz. Güncelleştirme işleyici işlevleri dışında işleyici işlevleri ileti eşleme aralıkları için fazladan bir parametre gerektiren `nID`, türü **UINT**. Bu parametre ilk parametre olur. Ek parametre kullanıcının gerçekten seçtiği hangi komutu belirtmek için gereken ek komut kimliği düzenler.  
+ İşleyici işlevleri tek komutlar için normalde hiç parametre almaz. Güncelleştirme işleyici işlevleri dışında işleyici işlevleri ileti eşleme aralıkları için fazladan bir parametre gerektiren *nID*, türü **UINT**. Bu parametre ilk parametre olur. Ek parametre kullanıcının gerçekten seçtiği hangi komutu belirtmek için gereken ek komut kimliği düzenler.  
   
  İşleyici işlevleri güncelleştirmek için parametre gereksinimleri hakkında daha fazla bilgi için bkz: [örnek için bir aralığı, komut kimlikleri](#_core_example_for_a_range_of_command_ids).  
   
@@ -109,7 +109,7 @@ Bu makalede, bir dizi iletileri (yerine tek bir ileti için yalnızca bir işlev
   
 -   Başlangıç ve bitiş bir aralıktaki iki komut kimlikleri.  
   
-     Burada oldukları `ID_VIEW_ZOOM25` ve `ID_VIEW_ZOOM300`.  
+     Burada oldukları **ID_VIEW_ZOOM25** ve **ID_VIEW_ZOOM300**.  
   
 -   Komutlar için işleyici işlevi adı.  
   
@@ -119,9 +119,9 @@ Bu makalede, bir dizi iletileri (yerine tek bir ileti için yalnızca bir işlev
   
  [!code-cpp[NVC_MFCMessageHandling#9](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_4.h)]  
   
- Güncelleştirme işleyici işlevlerin benzer ve yaygın olarak daha kullanışlı olması olası bir durumdur. Yazma oldukça yaygındır `ON_UPDATE_COMMAND_UI` komutlarının sayısı için işleyiciler kendiniz yazmak veya kopyalama, aynı kodu tekrar tekrar bulun. Komut kimlikleri bir güncelleştirme işleyici işlevini kullanarak bir dizi eşlemek için çözümdür `ON_UPDATE_COMMAND_UI_RANGE` makrosu. Komut kimlikleri bir aralıktaki oluşturması gerekir. Bir örnek için bkz: **OnUpdateZoom** işleyici ve onun `ON_UPDATE_COMMAND_UI_RANGE` HIERSVR örnek ait görünüm sınıfı ileti eşleme girişi.  
+ Güncelleştirme işleyici işlevlerin benzer ve yaygın olarak daha kullanışlı olması olası bir durumdur. Yazma oldukça yaygındır `ON_UPDATE_COMMAND_UI` komutlarının sayısı için işleyiciler kendiniz yazmak veya kopyalama, aynı kodu tekrar tekrar bulun. Komut kimlikleri bir güncelleştirme işleyici işlevini kullanarak bir dizi eşlemek için çözümdür `ON_UPDATE_COMMAND_UI_RANGE` makrosu. Komut kimlikleri bir aralıktaki oluşturması gerekir. Bir örnek için bkz: `OnUpdateZoom` işleyici ve onun `ON_UPDATE_COMMAND_UI_RANGE` HIERSVR örnek ait görünüm sınıfı ileti eşleme girişi.  
   
- İşleyici işlevleri tek komutları normal olarak tek bir parametre alan için güncelleştirme `pCmdUI`, türü **Ccmduı\***. İşleyici işlevleri, güncelleştirme işleyici işlevleri ileti eşleme aralıkları için fazladan bir parametre gerektirmez `nID`, türü **UINT**. Kullanıcı gerçekte seçti komutu belirtmek için gereken komut kimliği bulunan `CCmdUI` nesnesi.  
+ İşleyici işlevleri tek komutları normal olarak tek bir parametre alan için güncelleştirme *pCmdUI*, türü `CCmdUI*`. İşleyici işlevleri, güncelleştirme işleyici işlevleri ileti eşleme aralıkları için fazladan bir parametre gerektirmez *nID*, türü **UINT**. Kullanıcı gerçekte seçti komutu belirtmek için gereken komut kimliği bulunan `CCmdUI` nesnesi.  
   
 ##  <a name="_core_example_for_a_range_of_control_ids"></a> Örneğin, bir denetim aralığı kimlikleri  
  Başka bir ilginç örneği Denetim kimliklerinin bir dizi denetim bildirimi iletileri tek bir işleyicisine eşlemek anlamına gelir. Kullanıcı'nın 10 düğmesinden herhangi birini tıklatın varsayalım. Tüm 10 düğmeleri bir işleyicisine eşlemek için ileti eşlemesi girişinizin şöyle olabilir:  
@@ -136,7 +136,7 @@ Bu makalede, bir dizi iletileri (yerine tek bir ileti için yalnızca bir işlev
   
 -   Denetim Kimliği denetimleri bitişik aralığı ile ilişkili değerler.  
   
-     Bunlar burada `IDC_BUTTON1` ve `IDC_BUTTON10`.  
+     Bunlar burada **IDC_BUTTON1** ve **IDC_BUTTON10**.  
   
 -   İleti işleyici işlevin adı.  
   

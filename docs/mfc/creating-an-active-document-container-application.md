@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 880c6953addd0ec7db3abf5864010bd472d2d5a3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8817133ba1004e746f568ad3e039de5130693174
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341355"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929451"
 ---
 # <a name="creating-an-active-document-container-application"></a>Etkin Belge Kapsayıcı Uygulaması Oluşturma
 Etkin belge kapsayıcı uygulaması oluşturmak için basit ve en önerilen yol, MFC Uygulama Sihirbazı'nı kullanarak bir MFC EXE kapsayıcı uygulama oluşturmak için ardından etkin belge kapsaması destekleyecek şekilde değiştirin.  
@@ -36,7 +36,7 @@ Etkin belge kapsayıcı uygulaması oluşturmak için basit ve en önerilen yol,
   
 3.  Seçin **MFC uygulaması** sağ bölmesinde.  
   
-4.  Proje adı `MyProj`, tıklatın **Tamam**.  
+4.  Proje adı *MyProj*, tıklatın **Tamam**.  
   
 5.  Seçin **bileşik belge desteği** sayfası.  
   
@@ -48,9 +48,9 @@ Etkin belge kapsayıcı uygulaması oluşturmak için basit ve en önerilen yol,
   
 9. MFC Uygulama Sihirbazı'nı uygulama ürettikten sonra Çözüm Gezgini kullanarak aşağıdaki dosyaları açın:  
   
-    -   MyProjview.cpp  
+    -   *MyProjview.cpp*  
   
-10. MyProjview.cpp içinde aşağıdaki değişiklikleri yapın:  
+10. İçinde *MyProjview.cpp*, aşağıdaki değişiklikleri yapın:  
   
     -   İçinde `CMyProjView::OnPreparePrinting`, işlevi içeriğini aşağıdaki kodla değiştirin:  
   

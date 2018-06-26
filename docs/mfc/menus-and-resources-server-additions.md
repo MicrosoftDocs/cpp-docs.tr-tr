@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86b941820b439afc8b914142b412995df30f109c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cbcedd8cf217c993511bdb84a89294d7e98d6bab
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33351360"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930208"
 ---
 # <a name="menus-and-resources-server-additions"></a>Menüler ve Kaynaklar: Sunucu Ekleme
 Bu makalede menüleri ve diğer kaynakların bir görsel düzenleme sunucu (Bileşen) uygulaması için yapılması gereken değişiklikleri açıklar. Bu üç modlarından birini başlatılabilir çünkü sunucu uygulaması menü yapısı ve diğer kaynakları birçok eklemeleri gerektirir: tek başına, katıştırılmış, veya yerinde bildirimde. Bölümünde açıklandığı gibi [menüleri ve kaynakları (OLE)](../mfc/menus-and-resources-ole.md) makale, en fazla dört menüleri kümesi vardır. Yalnızca üç miniserver için kullanılırken dört bir MDI tam sunucu uygulaması için kullanılır. Uygulama Sihirbazı'nı menüsü düzeni istediğiniz sunucu türü için gerekli oluşturur. Bazı özelleştirme gerekli olabilir.  
@@ -63,14 +63,14 @@ Bu makalede menüleri ve diğer kaynakların bir görsel düzenleme sunucu (Bile
   
  İkinci tablo görünümün Hızlandırıcı tablosu neredeyse tam bir kopyasını ' dir. Farkları paralel belirtilen tamamen açık menüde yapılan değişiklikleri [sunucu menü eklemeleri](#_core_server_menu_additions).  
   
- Örneği bu Hızlandırıcı tablosu değişiklikleri için karşılaştırma **IDR_HIERSVRTYPE_SRVR_IP** ve **IDR_HIERSVRTYPE_SRVR_EMB** Hızlandırıcı tabloları ile **IDR_MAINFRAME** HIERSVR. MFC OLE örnekte bulunan RC dosyası [HIERSVR](../visual-cpp-samples.md). Dosya ve pencere Hızlandırıcıları yerinde tablosundan eksik ve bunları tam kopyalarını katıştırılmış tabloda yer alan.  
+ Örneği bu Hızlandırıcı tablosu değişiklikleri için IDR_HIERSVRTYPE_SRVR_IP ve IDR_HIERSVRTYPE_SRVR_EMB Hızlandırıcı tablolarını HIERSVR IDR_MAINFRAME ile karşılaştırın. MFC OLE örnekte bulunan RC dosyası [HIERSVR](../visual-cpp-samples.md). Dosya ve pencere Hızlandırıcıları yerinde tablosundan eksik ve bunları tam kopyalarını katıştırılmış tabloda yer alan.  
   
 ##  <a name="_core_string_table_additions_for_server_applications"></a> Sunucu uygulamaları için dize tablo ekleme  
  Yalnızca bir dize tablo ek bir sunucu uygulaması gereklidir — OLE başlatma başarısız olduğunu belirtmek için bir dize. Örnek olarak, Uygulama Sihirbazı'nın ürettiği dize tablo girişi şöyledir:  
   
 |Kimlik|Dize|  
 |--------|------------|  
-|**IDP_OLE_INIT_FAILED**|OLE başlatma başarısız oldu. OLE kitaplıklarının sürümünün doğru olduğundan emin olun.|  
+|IDP_OLE_INIT_FAILED|OLE başlatma başarısız oldu. OLE kitaplıklarının sürümünün doğru olduğundan emin olun.|  
   
 ##  <a name="_core_mini.2d.server_additions"></a> Miniserver eklemeler  
  Yukarıda listelenenler olarak miniservers için aynı eklemeleri uygulamak tam sunucuları için. Tek başına modunda bir miniserver çalıştırılamadığı için ana menüsü çok daha küçüktür. Yalnızca bir dosya menüsü, yalnızca öğeleri çıkış içeren uygulama Sihirbazı tarafından oluşturulan ana menü sahiptir ve hakkında bilgi. Katıştırılmış ve yerinde menüleri ve Hızlandırıcıları miniservers için tam sunucuları için aynıdır.  

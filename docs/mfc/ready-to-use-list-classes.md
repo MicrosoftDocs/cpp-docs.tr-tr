@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 304b47918424a73e4feda9812c372cb28db0623e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 014c3aabb770dc35fdbf106f9a225e52285d201b
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345858"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929682"
 ---
 # <a name="ready-to-use-list-classes"></a>Kullanıma Hazır Liste Sınıfları
 Kullanıma hazır liste sınıfları sınıflarıdır.  
@@ -32,7 +32,7 @@ Kullanıma hazır liste sınıfları sınıflarıdır.
  Sınıf nesnelerine işaretçiler depolar `CObject` veya türetilen sınıfların nesnelerini `CObject` bağlantılı listesinde.  
   
  [CPtrList](../mfc/reference/cptrlist-class.md)  
- Depolar işaretçileri `void` (genel işaretçileri) bağlı bir listedeki.  
+ Depolar işaretçileri **void** (genel işaretçileri) bağlı bir listedeki.  
   
  [CStringList](../mfc/reference/cstringlist-class.md)  
  Depoları `CString` bağlantılı listesindeki nesnelere.  

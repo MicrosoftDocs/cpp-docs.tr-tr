@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c50e7358d29e04c81a5e443d5b1a03881fed7f6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 698d8a754716f6876f9a72a0d5043807a32d2089
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346067"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36932214"
 ---
 # <a name="exceptions-using-mfc-macros-and-c-exceptions"></a>Özel Durumlar: MFC Makroları ve C++ Özel Durumlarını Kullanma
 Bu makalede MFC özel durum işleme makroları ve C++ özel durum işleme anahtar sözcükleri kullanan kodu yazmada dikkat edilmesi gerekenler açıklanmaktadır.  
@@ -51,7 +51,7 @@ Bu makalede MFC özel durum işleme makroları ve C++ özel durum işleme anahta
   
  [!code-cpp[NVC_MFCExceptions#10](../mfc/codesnippet/cpp/exceptions-using-mfc-macros-and-cpp-exceptions_1.cpp)]  
   
- Sorun nedeniyle oluşur `e` yürütme "İç" dışında geçerken silinmiş **CATCH** bloğu. Kullanarak `THROW_LAST` makrosu yerine **THROW** deyimi neden olacak "dış" **CATCH** geçerli bir işaretçi almaya engelle:  
+ Sorun nedeniyle oluşur `e` yürütme "İç" dışında geçerken silinmiş **CATCH** bloğu. Kullanarak **THROW_LAST** makrosu yerine **THROW** deyimi neden olacak "dış" **CATCH** geçerli bir işaretçi almaya engelle:  
   
  [!code-cpp[NVC_MFCExceptions#11](../mfc/codesnippet/cpp/exceptions-using-mfc-macros-and-cpp-exceptions_2.cpp)]  
   

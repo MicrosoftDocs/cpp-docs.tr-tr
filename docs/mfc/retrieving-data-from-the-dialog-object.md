@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ac243333c8dc778486dd18323658f262c6d6610
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b221bd97d9ee943e19b043bcc9be6aba0fa1672
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33380214"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929601"
 ---
 # <a name="retrieving-data-from-the-dialog-object"></a>İletişim Nesnesinden Veriyi Geri Alma
 Framework'te iletişim kutusu denetimleri değerlerini başlatılamadı ve denetimlerden değerleri almak için kolay bir yol sağlar. Daha fazla zahmetli el ile işlevleri gibi çağırmak için yaklaşımdır `SetDlgItemText` ve `GetDlgItemText` sınıfının üye işlevleri `CWnd`, Denetim windows için geçerlidir. Bu işlevler ile tek tek ayarlamak veya kendi değerini almak için her denetim işlevleri gibi çağırma erişim `SetWindowText` ve `GetWindowText`. Framework'ün yaklaşım, başlatma ve alma otomatikleştirir.  
@@ -47,7 +47,7 @@ Framework'te iletişim kutusu denetimleri değerlerini başlatılamadı ve denet
   
  DDX ve DDV daha ayrıntılı olarak açıklanmıştır [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md).  
   
- Kalıcı iletişim kutusu için kullanıcı girilen herhangi bir veri alabilirsiniz `DoModal` döndürür **IDOK** ancak önce iletişim nesnesi yok. Kalıcı olmayan iletişim kutusu için veri iletişim nesnesinden herhangi bir zamanda çağırarak alabilirsiniz `UpdateData` bağımsız değişkeniyle **doğru** ve iletişim sınıf üye değişkenlerine erişme. Bu konu içinde daha ayrıntılı olarak ele alınmıştır [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md).  
+ Kalıcı iletişim kutusu için kullanıcı girilen herhangi bir veri alabilirsiniz `DoModal` IDOK verir, ancak önce iletişim nesnesi yok. Kalıcı olmayan iletişim kutusu için veri iletişim nesnesinden herhangi bir zamanda çağırarak alabilirsiniz `UpdateData` bağımsız değişkeniyle **doğru** ve iletişim sınıf üye değişkenlerine erişme. Bu konu içinde daha ayrıntılı olarak ele alınmıştır [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)

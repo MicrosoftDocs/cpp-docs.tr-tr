@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7518e2fdd07254b8b1991fae8a41f26058920858
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1e0fcfff6bcca8cb073c337043490d32f8724aad
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33350855"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930358"
 ---
 # <a name="dynamic-layout"></a>Dinamik Düzen
 MFC Visual Studio 2015'te kullanıcı genişletebilir iletişim kutuları oluşturma ve düzeni boyutundaki değişikliği ayarlar yolunu kontrol edebilirsiniz. Örneğin, her zaman en altında kalırlar şekilde alt kenarı bir iletişim kutusunun altındaki düğmeleri ekleyebilirsiniz. Ayrıca belirli denetimleri süzer, editboxes ve metin alanları gibi kullanıcı iletişim kutusu genişlediği sürece genişletmek için ayarlayabilirsiniz.  
@@ -31,7 +31,7 @@ MFC Visual Studio 2015'te kullanıcı genişletebilir iletişim kutuları oluşt
   
  ![Yeniden boyutlandırılan sonra iletişim. ] (../mfc/media/mfcdynamiclayout5.png "mfcdynamiclayout5")  
   
- Kaynak düzenleyicisinde IDE içinde her denetim için ayrıntıları belirterek dinamik düzen kontrol edebilirsiniz veya bunu programlı CMFCDynamicLayout nesne belirli bir denetim için erişim ve özellikleri ayarlayarak yapabilirsiniz.  
+ Dinamik düzen kaynak düzenleyicisinde IDE içinde her denetim için ayrıntıları belirterek kontrol edebilirsiniz ya da bunu programlı erişerek yapabilirsiniz `CMFCDynamicLayout` nesne belirli bir denetim için ve özelliklerini ayarlama.  
   
 ### <a name="setting-dynamic-layout-properties-in-the-resource-editor"></a>Kaynak Düzenleyicisi'nde dinamik düzen özelliklerini ayarlama  
  Kaynak Düzenleyicisi'ni kullanarak herhangi bir kod yazmak zorunda kalmadan bir iletişim kutusu için dinamik düzen davranışı ayarlayabilirsiniz.  
@@ -61,7 +61,7 @@ MFC Visual Studio 2015'te kullanıcı genişletebilir iletişim kutuları oluşt
   
 1.  Bulunamadı veya bir yere dinamik düzen iletişim kutusu için belirtmek istediğiniz iletişim sınıfınızın uygulama kodu oluşturun. Örneğin, bir yöntem eklemek isteyebilirsiniz `AdjustLayout` düzeni, iletişim ve buradan nereye yerleştirir çağrısı değiştirilmesi gerekir. Bu oluşturucu veya iletişim kutusuna değişiklik yaptıktan sonra ilk çağırabilirsiniz.  
   
-2.  Arama iletişim kutusu için [GetDynamicLayout](../mfc/reference/cwnd-class.md#getdynamiclayout), CWnd sınıfı yöntemi. GetDynamicLayout bir işaretçi bir CMFCDynamicLayout nesnesi döndürür.  
+2.  Arama iletişim kutusu için [GetDynamicLayout](../mfc/reference/cwnd-class.md#getdynamiclayout), yöntemi `CWnd` sınıfı. `GetDynamicLayout` bir işaretçi döndüren bir `CMFCDynamicLayout` nesnesi.  
   
  ```  
     CMFCDynamicLayout* dynamicLayout = pDialog->GetDynamicLayout();
@@ -106,7 +106,7 @@ MFC Visual Studio 2015'te kullanıcı genişletebilir iletişim kutuları oluşt
   
 9. Kullanıcı yeniden boyutlandırır iletişim sonraki açışınızda [CMFCDynamicLayout::Adjust](../mfc/reference/cmfcdynamiclayout-class.md#adjust) gerçekten ayarları uygulandığı yöntemi çağrılır.  
   
-10. Dinamik düzen devre dışı bırakmak istiyorsanız, çağrı [CWnd::EnableDynamicLayout](../mfc/reference/cwnd-class.md#enabledynamiclayout) ile `FALSE` olarak `bEnabled` parametresi.  
+10. Dinamik düzen devre dışı bırakmak istiyorsanız, çağrı [CWnd::EnableDynamicLayout](../mfc/reference/cwnd-class.md#enabledynamiclayout) ile **FALSE** olarak *bEtkin* parametresi.  
   
  ```  
     pDialog->EnableDynamicLayout(FALSE);
@@ -122,7 +122,7 @@ MFC Visual Studio 2015'te kullanıcı genişletebilir iletişim kutuları oluşt
 
  ```  
   
-     Adlandırılmış kaynağa kaynak dosyasında aşağıdaki örnekteki gibi AFX_DIALOG_LAYOUT girdinin formundaki düzeni bilgileri içeren bir iletişim kutusu başvurması gerekir:  
+     Adlandırılmış kaynak biçiminde düzen bilgilerini içeren bir iletişim kutusu başvurmalıdır bir **AFX_DIALOG_LAYOUT** kaynak dosyasında aşağıdaki örnekteki gibi girişi:  
   
  ''' * / / / * / / * / / AFX_DIALOG_LAYOUT * / /  
  

@@ -29,15 +29,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10d488ff21501eb83ef8f3115bdc2e4d899a68d5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2385efcef9949eab60b1542b2039e3ff2ac80e38
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345146"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930865"
 ---
 # <a name="dialog-data-exchange"></a>İletişim Kutusu Veri Değişimi
-DDX mekanizması kullanırsanız, iletişim kutusunun Başlangıç değerlerini nesnenin üye değişkenleri, genellikle ayarlamak, `OnInitDialog` işleyicisi veya iletişim Oluşturucusu. İletişim kutusu görüntülenmeden önce framework'ün DDX mekanizması nerede göründüklerinden iletişim kutusu denetimleri için üye değişkenlerin değerleri aktarır hemen iletişim kutusu görüntülendiğinde yanıt olarak `DoModal` veya **oluştur** . Varsayılan uygulaması `OnInitDialog` içinde `CDialog` çağrıları `UpdateData` sınıfının üye işlevini `CWnd` iletişim kutusu denetimleri başlatılamadı.  
+DDX mekanizması kullanırsanız, iletişim kutusunun Başlangıç değerlerini nesnenin üye değişkenleri, genellikle ayarlamak, `OnInitDialog` işleyicisi veya iletişim Oluşturucusu. İletişim kutusu görüntülenmeden önce framework'ün DDX mekanizması nerede göründüklerinden iletişim kutusu denetimleri için üye değişkenlerin değerleri aktarır hemen iletişim kutusu görüntülendiğinde yanıt olarak `DoModal` veya `Create`. Varsayılan uygulaması `OnInitDialog` içinde `CDialog` çağrıları `UpdateData` sınıfının üye işlevini `CWnd` iletişim kutusu denetimleri başlatılamadı.  
   
  Kullanıcı Tamam düğmesine tıkladığında aynı mekanizmayı değerleri denetimleri için üye değişkenleri aktarır (veya çağırmanız her `UpdateData` üye işlevi bağımsız değişkeniyle **TRUE**). İletişim kutusu veri doğrulama mekanizmasını doğrulama kuralları belirtilen tüm veri öğelerinin doğrular.  
   

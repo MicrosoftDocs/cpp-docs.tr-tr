@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bae926cfc7e83edeef9ee68c7ce7118c55009a08
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e1bd8a99faa4cf0444782f402e69da761a8c25e2
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355047"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929961"
 ---
 # <a name="activex-control-containers-programming-activex-controls-in-an-activex-control-container"></a>ActiveX Denetim Kapsayıcıları: Bir ActiveX Denetim Kapsayıcısındaki ActiveX Denetimlerini Programlama
 Bu makalede gösterilen erişmek için işlem [yöntemleri](../mfc/mfc-activex-controls-methods.md) ve [özellikleri](../mfc/mfc-activex-controls-properties.md) katıştırılmış ActiveX denetimlerinin. Temel olarak, şu adımları izler:  
@@ -76,7 +76,7 @@ Bu makalede gösterilen erişmek için işlem [yöntemleri](../mfc/mfc-activex-c
 ##  <a name="_core_member_variable_modifications_to_the_project"></a> Projenin üye değişken değişiklikler  
  ActiveX denetimi projeye eklenir ve bir iletişim kutusu kapsayıcısında katıştırılmış sonra projeyi diğer bölümleri tarafından erişilebilir. Erişim denetimi için en kolay yolu [üye değişkeni oluşturma](../mfc/activex-control-containers-connecting-an-activex-control-to-a-member-variable.md) iletişim sınıfının `CContainerDlg` (2, yani adım) tarafından Visual C++ projeye eklenen sarmalayıcı sınıf ile aynı türde. Üye değişkeni sonra herhangi bir zamanda katıştırılmış denetime erişmek için de kullanabilirsiniz.  
   
- Zaman **üye değişkeni ekleme** iletişim kutusu ekler `m_circctl` üye değişkeni projeye, ayrıca aşağıdaki satırları üstbilgi dosyası ekler (. H), `CContainerDlg` sınıfı:  
+ Zaman **üye değişkeni ekleme** iletişim kutusu ekler *m_circctl* üye değişkeni projeye, ayrıca aşağıdaki satırları üstbilgi dosyası ekler (. H), `CContainerDlg` sınıfı:  
   
  [!code-cpp[NVC_MFC_AxCont#4](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_4.h)]  
 [!code-cpp[NVC_MFC_AxCont#5](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_5.h)]  
@@ -92,7 +92,7 @@ Bu makalede gösterilen erişmek için işlem [yöntemleri](../mfc/mfc-activex-c
   
  Denetimin özelliklerini değiştirmek için ortak bir yerde bulunduğu `OnInitDialog` ana iletişim sınıfının üye işlevi. Bu işlev yalnızca iletişim kutusu belirir ve denetimlerinden birini de dahil olmak üzere içeriğinin başlatmak için kullanılan önce çağrılır.  
   
- Aşağıdaki kod örneğinde `m_circctl` üye değişkeni katıştırılmış Dai denetim başlık ve CircleShape özelliklerini değiştirmek için:  
+ Aşağıdaki kod örneğinde *m_circctl* üye değişkeni katıştırılmış Dai denetim başlık ve CircleShape özelliklerini değiştirmek için:  
   
  [!code-cpp[NVC_MFC_AxCont#7](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_7.cpp)]  
   

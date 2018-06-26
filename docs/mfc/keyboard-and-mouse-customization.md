@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45b073ff2a9565c9106111299ba5b1b9d5a47351
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8fda670198dd9bd03a6d944ce4db70542926bf41
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33351669"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931586"
 ---
 # <a name="keyboard-and-mouse-customization"></a>Klavye ve Fare Özelleştirmesi
 MFC klavye ve fare girişi işleme biçimini özelleştirmek için uygulamanızın verir. Kullanıcı, komutları için klavye kısayolları atayarak klavye girişi özelleştirebilirsiniz. Kullanıcı, kullanıcı uygulamayı belirli windows içinde tıklattığında yürütülmesi gereken komutu seçerek fare girdisi de özelleştirebilirsiniz. Bu konu, uygulamanız için giriş özelleştirmeyi açıklar.  
@@ -61,7 +61,7 @@ Fare özelleştirme sekmesi
   
  Uygulamanızı fare Yöneticisi'ni başlatır sonra framework ekler **fare** için sekme **Özelleştir** iletişim kutusu. Herhangi bir görünüm eklemezseniz sekmesini erişme işlenmeyen bir özel durum neden olur. Görünümler, listesini oluşturduktan sonra **fare** sekmesinde kullanıcı için kullanılabilir.  
   
- Yeni bir görünüm için fare Yöneticisi eklediğinizde, benzersiz bir kimliği vermiş Fare özelleştirmesi için bir pencere desteklemek istiyorsanız, işlemelidir `WM_LBUTTONDBLCLICK` ileti ve çağrı [CWinAppEx::OnViewDoubleClick](../mfc/reference/cwinappex-class.md#onviewdoubleclick) işlevi. Bu işlev çağırdığınızda, parametrelerden biri o penceresi kimliğidir. Kimlik numaraları ve bunlarla ilişkili nesneleri izlemek için programcı sorumluluğundadır.  
+ Yeni bir görünüm için fare Yöneticisi eklediğinizde, benzersiz bir kimliği vermiş Fare özelleştirmesi için bir pencere desteklemek istiyorsanız, arama ve WM_LBUTTONDBLCLICK ileti işlemelidir [CWinAppEx::OnViewDoubleClick](../mfc/reference/cwinappex-class.md#onviewdoubleclick) işlevi. Bu işlev çağırdığınızda, parametrelerden biri o penceresi kimliğidir. Kimlik numaraları ve bunlarla ilişkili nesneleri izlemek için programcı sorumluluğundadır.  
   
 ## <a name="security-concerns"></a>Güvenlik sorunları  
  Bölümünde açıklandığı gibi [kullanıcı tanımlı Araçlar](../mfc/user-defined-tools.md), kullanıcının bir kullanıcı tarafından tanımlanan aracı kimliği çift olay ile ilişkilendirebilirsiniz. Kullanıcı bir görünüm tıklattığında uygulama ilişkili kimliği eşleşen bir kullanıcı için aracı arar. Uygulama bir eşleşen aracı bulursa, aracı yürütür. Uygulama bir eşleşen aracı bulamazsanız, tıklatıldığında görünümüne Kimliğine sahip bir WM_COMMAND ileti gönderir.  

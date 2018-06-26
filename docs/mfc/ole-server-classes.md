@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fc737a3d11307dff917132bfd113896b4ad801f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e9d0c75325c62a92f65c56f2c76350bf752228fd
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33350435"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36932227"
 ---
 # <a name="ole-server-classes"></a>OLE Sunucu Sınıfları
-Bu sınıfların sunucu uygulamaları tarafından kullanılır. Sunucu belgeleri türetilir `COleServerDoc` yerine **CDocument**. Çünkü unutmayın `COleServerDoc` türetildiği `COleLinkingDoc`, sunucu belgeleri bağlama desteği kapsayıcıları de olabilir.  
+Bu sınıfların sunucu uygulamaları tarafından kullanılır. Sunucu belgeleri türetilir `COleServerDoc` yerine `CDocument`. Çünkü unutmayın `COleServerDoc` türetildiği `COleLinkingDoc`, sunucu belgeleri bağlama desteği kapsayıcıları de olabilir.  
   
  `COleServerItem` Bir belge veya başka bir belgede gömülü veya bağlı bir belge bölümü sınıfı temsil eder.  
   

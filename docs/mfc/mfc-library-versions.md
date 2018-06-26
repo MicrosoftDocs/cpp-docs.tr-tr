@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fb4f73d1a0360ddad3983179415d0f7fc2d3cda
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 92568f61bb1ea219ab3ddc96f4c4687dec157c9a
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33358070"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931771"
 ---
 # <a name="mfc-library-versions"></a>MFC Kitaplık Sürümleri
 
@@ -89,7 +89,7 @@ Hem tek baytlı karakter kümeleri ASCII gibi MFC ANSI/MBCS kitaplık sürümler
 
 Tek baytlı, birden çok baytlı ve geniş karakter Unicode dize ve karakter desteği IDE içinde kullanmak için proje yapılandırmanızı ayarlamak için kullanın **proje özelliklerini** iletişim. İçinde **yapılandırma özellikleri** > **genel** sayfasında **karakter kümesi** özelliğine **ayarlanmamış** kullanmak için bir tek baytlı karakter kümesi. Özellik kümesine **kullanmak çok baytlı karakter kümesi** birden çok baytlı karakter kümesi kullanmak için veya **Unicode karakter kümesini kullanmak** UTF-16 kodlanmış Unicode kullanılacak.
 
-MFC projeleri kullanmak önişlemci sembolü  **\_UNICODE** UTF-16 joker karakter Unicode desteği göstermek için ve  **\_MBCS** MBCS Desteği belirtmek için. Bu seçenekler bir proje ile karşılıklı olarak birbirini dışlar.
+MFC projeleri kullanmak önişlemci sembolü \_UTF-16 joker karakter Unicode desteği belirtmek için UNICODE ve \_MBCS belirtmek için MBCS desteği. Bu seçenekler bir proje ile karşılıklı olarak birbirini dışlar.
 
 ## <a name="mfc-static-library-naming-conventions"></a>MFC statik kitaplık adlandırma kuralları
 

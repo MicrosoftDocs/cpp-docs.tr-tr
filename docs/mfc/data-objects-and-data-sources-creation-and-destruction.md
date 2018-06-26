@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b226c115ce148fa29b5d93cb60af8498b63fdee9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 90143b919fde02a95df81d41845d8ecc671ced0d
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347954"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931882"
 ---
 # <a name="data-objects-and-data-sources-creation-and-destruction"></a>Veri Nesneleri ve Veri Kaynakları: Oluşturma ve Yok Etme
 Makalesinde açıklandığı gibi [veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md), veri nesneleri ve veri kaynaklarını her iki tarafında bir veri aktarımı temsil eder. Bu makalede oluşturmak ve bu nesneleri ve veri aktarımları düzgün şekilde gerçekleştirmek için kaynakları yok etmek ne zaman dahil olmak üzere açıklanmaktadır:  
@@ -72,14 +72,14 @@ Makalesinde açıklandığı gibi [veri nesneleri ve veri kaynakları (OLE)](../
   
 5.  Uygulama çağrıları `SetClipboard` üye işlevi (veya `DoDragDrop` sürükle ve bırak işlemi buysa üye işlevi) 3. adımda oluşturduğunuz nesneye ait.  
   
-6.  Bu ise bir **Kes** işlemi veya `DoDragDrop` döndürür `DROPEFFECT_MOVE`, belge 1. adımda seçilen verileri silinir.  
+6.  Bu ise bir **Kes** işlemi veya `DoDragDrop` döndürür **DROPEFFECT_MOVE**, belge 1. adımda seçilen verileri silinir.  
   
  Bu senaryo MFC OLE örnekleri tarafından uygulanan [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md). Her uygulama için kaynak bakabilir `CView`-sınıfı için türetilen dışındaki tüm `GetClipboardData` ve `OnGetClipboardData` işlevleri. Bu iki ya da işlevlerdir `COleClientItem` veya `COleServerItem`-sınıf uygulamaları türetilmiş. Bu örnek programlar nasıl Bu kavramlar uygulamak iyi bir örnek sağlar.  
   
  İstediğiniz oluşturmak bir durum bir `COleDataSource` Nesne Sürükle ve bırak işlemi varsayılan davranışını değiştiriyorsanız oluşur. Daha fazla bilgi için bkz: [sürükle ve bırak: özelleştirme](../mfc/drag-and-drop-customizing.md) makalesi.  
   
 ##  <a name="_core_destroying_data_sources"></a> Veri kaynakları yok etme  
- Veri kaynakları için şu anda sorumlu uygulama tarafından yok edilmesi gerekir. Burada, teslim veri kaynağı için OLE durumlarda gibi çağırma [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#dodragdrop), çağırmanız gerekir **pDataSrc -> Internalrelease**. Örneğin:  
+ Veri kaynakları için şu anda sorumlu uygulama tarafından yok edilmesi gerekir. Burada, teslim veri kaynağı için OLE durumlarda gibi çağırma [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#dodragdrop), çağırmanız gerekir `pDataSrc->InternalRelease`. Örneğin:  
   
  [!code-cpp[NVC_MFCListView#1](../atl/reference/codesnippet/cpp/data-objects-and-data-sources-creation-and-destruction_1.cpp)]  
   

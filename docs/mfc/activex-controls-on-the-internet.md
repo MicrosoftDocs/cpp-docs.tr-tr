@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a42a7bc042301cfbd7d62f82b7c676686146850
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 02a4c2e8d9da553ffe14c8d9d061d11d7357c19c
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33352320"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931983"
 ---
 # <a name="activex-controls-on-the-internet"></a>Internet'te ActiveX Denetimleri
 ActiveX denetimleri OLE denetim belirtimi güncelleştirilmiş sürümü bulunur. Farklı kapsayıcılar, Internet üzerindeki COM kullanan Web tarayıcıları dahil olmak üzere çeşitli kullanılan programlanabilir yazılım bileşenleri geliştirmek için birincil bir mimari denetimleridir. Herhangi bir ActiveX denetimi bir Internet Denetim olması ve işlevselliği için etkin bir belge ekleyebilir veya bir Web sayfası bir parçası olarak. Bir Web sayfasındaki denetimleri birbirleri ile komut dosyası kullanarak iletişim kurabilir.  
@@ -39,7 +39,7 @@ ActiveX denetimleri OLE denetim belirtimi güncelleştirilmiş sürümü bulunur
   
  **ActiveX denetimi olması için bir denetim gerekir:**  
   
--   Destek **IUnknown** arabirimi.  
+-   Destek `IUnknown` arabirimi.  
   
 -   Bir COM nesnesi olmalıdır.  
   
@@ -85,7 +85,7 @@ ActiveX denetimleri OLE denetim belirtimi güncelleştirilmiş sürümü bulunur
   
 #### <a name="to-create-your-project-using-the-mfc-activex-control-wizard"></a>MFC ActiveX Denetim Sihirbazı'nı kullanarak projenizi oluşturmak için  
   
-1.  Tıklatın `New` üzerinde **dosya** menüsü.  
+1.  Tıklatın **yeni** üzerinde **dosya** menüsü.  
   
 2.  Seçin **MFC ActiveX Denetim Sihirbazı** Visual C++ projeleri ve projenizi adlandırın.  
   
@@ -129,7 +129,7 @@ ActiveX denetimleri OLE denetim belirtimi güncelleştirilmiş sürümü bulunur
   
      [!code-cpp[NVC_MFCActiveXControl#3](../mfc/codesnippet/cpp/activex-controls-on-the-internet_3.h)]  
   
-5.  Uygulama **Get/Set** yöntemleri. İçin **almak**, dize döndürür. İçin `Set`, özellik ve çağrı yük `SetModifiedFlag`.  
+5.  Uygulama `Get/Set` yöntemleri. İçin `Get`, dize döndürür. İçin `Set`, özellik ve çağrı yük `SetModifiedFlag`.  
   
      [!code-cpp[NVC_MFCActiveXControl#4](../mfc/codesnippet/cpp/activex-controls-on-the-internet_4.cpp)]  
   

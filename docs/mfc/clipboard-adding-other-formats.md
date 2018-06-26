@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c28fd1d628d0aed79028e43d9cce383f3acbb4ae
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 67004ac43193d47720626da241a8030ba396abdf
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342153"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36932025"
 ---
 # <a name="clipboard-adding-other-formats"></a>Pano: Diğer Biçimleri Ekleme
-Bu konuda, özellikle OLE desteği için desteklenen biçimler listesini genişletmek açıklanmaktadır. Konu [Pano: veri kopyalama ve yapıştırmayı](../mfc/clipboard-copying-and-pasting-data.md) kopyalama ve yapıştırma panodan desteklemek için gereken en düşük uygulamayı açıklar. Bu tüm uygulamanız ise, Pano'ya yerleştirilen yalnızca biçimler: `CF_METAFILEPICT`, **CF_EMBEDSOURCE**, **CF_OBJECTDESCRIPTOR**ve büyük olasılıkla `CF_LINKSOURCE`. Uygulamaların çoğu bu üç Pano üzerinde daha fazla biçiminden gerekir.  
+Bu konuda, özellikle OLE desteği için desteklenen biçimler listesini genişletmek açıklanmaktadır. Konu [Pano: veri kopyalama ve yapıştırmayı](../mfc/clipboard-copying-and-pasting-data.md) kopyalama ve yapıştırma panodan desteklemek için gereken en düşük uygulamayı açıklar. Bu tüm uygulamanız ise, Pano'ya yerleştirilen yalnızca biçimler: **CF_METAFILEPICT**, **CF_EMBEDSOURCE**, **CF_OBJECTDESCRIPTOR**ve muhtemelen **CF_LINKSOURCE**. Uygulamaların çoğu bu üç Pano üzerinde daha fazla biçiminden gerekir.  
   
 ##  <a name="_core_registering_custom_formats"></a> Özel kaydetme biçimleri  
  Kendi özel biçimler oluşturmak için özel bir pano biçimi kaydederken kullandığınız aynı yordamı izleyin: biçimine adını geçirmek **RegisterClipboardFormat** işlev ve dönüş değerini biçim ID olarak kullan.  

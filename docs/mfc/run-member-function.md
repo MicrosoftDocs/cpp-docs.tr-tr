@@ -14,17 +14,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be1d7d90b4c13a23e2e3456e7371abbae61be4e9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a658af47723a9c19218b205a17cb46919d7abd59
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379902"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36932292"
 ---
 # <a name="run-member-function"></a>Üye İşlevini Çalıştırma
-Framework uygulamanın kendi zamanı çoğunu geçirdiği [çalıştırmak](../mfc/reference/cwinapp-class.md#run) sınıfının üye işlevini [CWinApp](../mfc/reference/cwinapp-class.md). Başlatma sonra `WinMain` çağrıları **çalıştırmak** ileti döngüsü işlenemiyor.  
+Framework uygulamanın kendi zamanı çoğunu geçirdiği [çalıştırmak](../mfc/reference/cwinapp-class.md#run) sınıfının üye işlevini [CWinApp](../mfc/reference/cwinapp-class.md). Başlatma sonra `WinMain` çağrıları `Run` ileti döngüsü işlenemiyor.  
   
- **Çalıştırma** kullanılabilir iletiler için ileti sırası denetimi bir ileti döngüsü arasında geçiş yapar. Bir ileti olup olmadığını **çalıştırmak** eylemi için gönderir. Hiçbir ileti varsa, hangi doğruysa genellikle **çalıştırmak** çağrıları `OnIdle` Bitti, veya framework gereken boşta kalma süresi işlem yapmadan yapmak için. Hiçbir iletiler ve boşta hiçbir işlem yapmak için varsa, uygulamanın bir şey kadar bekler. Uygulama sonlandırıldığında **çalıştırmak** çağrıları `ExitInstance`. Şekil [ONIDLE üye işlevi](../mfc/onidle-member-function.md) ileti döngüde eylemlerin sırasını gösterir.  
+ `Run` ileti sırası kullanılabilir iletiler için denetimi bir ileti döngüsü arasında geçiş yapar. Bir ileti olup olmadığını `Run` için eylem gönderir. Hiçbir ileti varsa, hangi doğruysa genellikle `Run` çağrıları `OnIdle` Bitti, veya framework gereken boşta kalma süresi işlem yapmadan yapmak için. Hiçbir iletiler ve boşta hiçbir işlem yapmak için varsa, uygulamanın bir şey kadar bekler. Uygulama sonlandırıldığında `Run` çağrıları `ExitInstance`. Şekil [ONIDLE üye işlevi](../mfc/onidle-member-function.md) ileti döngüde eylemlerin sırasını gösterir.  
   
  İleti gönderilirken ileti türüne bağlıdır. Daha fazla bilgi için bkz: [iletiler ve komutlar Framework'te](../mfc/messages-and-commands-in-the-framework.md).  
   

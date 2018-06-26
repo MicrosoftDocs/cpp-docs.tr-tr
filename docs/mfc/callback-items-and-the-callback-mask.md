@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95c896308970ffc6a2040657927dc127eee278ba
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4f3608fbc0c7e34de4ae67ae60a12af23e9ac885
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342780"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931694"
 ---
 # <a name="callback-items-and-the-callback-mask"></a>Geri Çağrı Öğeleri ve Geri Çağrı Maskesi
 Her öğelerinden biri için bir liste görünümü denetimi genellikle etiket metnini, öğenin simgelerin görüntü listesi dizini depolar ve bit kümesi için öğesi'nin durumu bayrakları. Uygulama zaten bir öğe için bilgilerin bazıları depoluyorsa yararlı geri çağrı öğeleri olarak ayrı öğeleri tanımlayabilirsiniz.  
@@ -29,13 +29,13 @@ Her öğelerinden biri için bir liste görünümü denetimi genellikle etiket m
   
  Geri çağrı öğeleri tanımlamanın yanı sıra, denetimin geri çağrı maskesi de değiştirebilirsiniz. Bir dizi denetim yerine uygulama geçerli verileri depoladığı öğesi durumları belirtin bit bayrakları maskesidir. Geri çağrı maskesi, belirli bir öğeye uygular geri çağırma öğesi ataması aksine denetimin öğelerin tümünü uygular. Geri çağrı maskesi denetimi tüm öğesi durumları izler anlamı varsayılan sıfırdır. Bu varsayılan davranışı değiştirmek için aşağıdaki değerlerden herhangi bir bileşimini maskeye başlatın:  
   
--   `LVIS_CUT` Öğe kesme ve yapıştırma işlemi için işaretlenir.  
+-   **LVIS_CUT** öğe kesme ve yapıştırma işlemi için işaretlenmiş.  
   
--   `LVIS_DROPHILITED` Öğe bir Sürükle ve bırak hedefi olarak vurgulanır.  
+-   **LVIS_DROPHILITED** öğesi bir Sürükle ve bırak hedefi olarak vurgulanır.  
   
--   `LVIS_FOCUSED` Öğenin odağa sahip.  
+-   **LVIS_FOCUSED** öğenin odağa sahip.  
   
--   `LVIS_SELECTED` Öğe seçilir.  
+-   **LVIS_SELECTED** öğe seçilir.  
   
 -   **LVIS_OVERLAYMASK** geçerli katmana görüntünün her öğe için resim listesi dizinini uygulamayı depolar.  
   

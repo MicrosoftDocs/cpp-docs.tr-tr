@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76976c0907d645ad945700c4d396217880712f11
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 91e2e247acb85188c1280713e9e5ad8ef8f19448
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346444"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929834"
 ---
 # <a name="manipulating-the-tool-tip-control"></a>Araç İpucunu Denetimini Düzenleme
 Sınıf `CToolTipCtrl` bir grup üyesi çeşitli özniteliklerini denetim işlevleri sağlayan `CToolTipCtrl` nesne ve araç ipucu penceresi.  
@@ -37,7 +37,7 @@ Sınıf `CToolTipCtrl` bir grup üyesi çeşitli özniteliklerini denetim işlev
   
 -   [GetTipTextColor](../mfc/reference/ctooltipctrl-class.md#gettiptextcolor) ve [SetTipTextColor](../mfc/reference/ctooltipctrl-class.md#settiptextcolor) aracının metin rengini alır ve ayarlar penceresi ipucu.  
   
- Önemli iletileri gibi bildirim almak araç ipucu denetimi için sırayla **WM_LBUTTONXXX** iletileri, araç ipucunu denetimini iletileri geçiş gerekir. Bu geçiş için en iyi yöntem çağırmaya olduğu [CToolTipCtrl::RelayEvent](../mfc/reference/ctooltipctrl-class.md#relayevent), `PreTranslateMessage` sahibi penceresinin işlevi. Aşağıdaki örnek, olası bir yöntemi gösterir (araç ipucunu denetimini varsayılarak çağrılır `m_ToolTip`):  
+ Sırayla WM_LBUTTONXXX iletileri gibi önemli iletilerinin bildirim almak araç ipucu denetimi için araç ipucunu denetimini iletileri düzenlemeniz gerekir. Bu geçiş için en iyi yöntem çağırmaya olduğu [CToolTipCtrl::RelayEvent](../mfc/reference/ctooltipctrl-class.md#relayevent), `PreTranslateMessage` sahibi penceresinin işlevi. Aşağıdaki örnek, olası bir yöntemi gösterir (araç ipucunu denetimini varsayılarak çağrılır `m_ToolTip`):  
   
  [!code-cpp[NVC_MFCControlLadenDialog#41](../mfc/codesnippet/cpp/manipulating-the-tool-tip-control_1.cpp)]  
   

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e08ea95c9cfe4bd67c0904cc22e6db19dcfb52e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9ee88b7784abb6ca622e72a9dfb31efc39fa7816
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355688"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930946"
 ---
 # <a name="recommendations-for-handling-inputoutput"></a>Giriş/Çıkış İşleme için Öneriler
 Veya dosya tabanlı g/ç kullanıp nasıl aşağıdaki karar ağacı sorulara yanıt üzerinde bağlıdır:  
@@ -34,9 +34,9 @@ Veya dosya tabanlı g/ç kullanıp nasıl aşağıdaki karar ağacı sorulara ya
   
      **Yapar uygulama Dosya Aç belleğe dosyanın tamamını okuyun ve geri dosyanın tamamını dosyasını kaydetmek için disk yazma**  
   
-    -   Evet: Varsayılan MFC belge böyledir. Kullanım **CDocument** seri hale getirme.  
+    -   Evet: Varsayılan MFC belge böyledir. Kullanım `CDocument` seri hale getirme.  
   
-    -   Hayır: Bu genellikle dosyanın güncelleştirme işlem tabanlı bir durumdur. İşlem başına temelinde dosyasını güncelleştirin ve gerekmeyen **CDocument** seri hale getirme.  
+    -   Hayır: Bu genellikle dosyanın güncelleştirme işlem tabanlı bir durumdur. İşlem başına temelinde dosyasını güncelleştirin ve gerekmeyen `CDocument` seri hale getirme.  
   
 -   Hayır, birincil veri disk dosyasında bulunan değil:  
   
@@ -50,7 +50,7 @@ Veya dosya tabanlı g/ç kullanıp nasıl aşağıdaki karar ağacı sorulara ya
   
          Bu durumda örnekleri: veri olmayan bir-ODBC DBMS; içinde bulunan OLE veya DDE gibi diğer bazı mekanizması aracılığıyla verilerini okur.  
   
-         Böyle durumlarda, serileştirme kullanmaz ve uygulamanızı olmaz ve açık menü öğeleri kaydedin. Hala kullanmak isteyebileceği bir **CDocument** giriş temel olarak, yalnızca bir MFC ODBC uygulama belge depolamak için kullandığı `CRecordset` nesneleri. Ancak framework'ün varsayılan dosya Aç/Kaydet Belge Serileştirme kullanmaz.  
+         Böyle durumlarda, serileştirme kullanmaz ve uygulamanızı olmaz ve açık menü öğeleri kaydedin. Hala kullanmak isteyebileceği bir `CDocument` giriş temel olarak, yalnızca bir MFC ODBC uygulama belge depolamak için kullandığı `CRecordset` nesneleri. Ancak framework'ün varsayılan dosya Aç/Kaydet Belge Serileştirme kullanmaz.  
   
  Dosya menüsünde komutlar olarak kaydetme ve kaydedin, açık desteklemek için Belge Serileştirme çerçevesi sağlar. Seri hale getirme okur ve nesneleri dahil olmak üzere sınıfından türetilen verileri Yazar `CObject`, çok kalıcı depolama, normal bir disk dosyası. Serileştirme kullanımı kolaydır ve gereksinimlerinizi çoğunu sunar, ancak birçok veri erişimi uygulamaları uygun olabilir. Veri erişimi uygulamaları genellikle veri işlem başına temelinde güncelleştirin. Bunlar işlem yerine okuma ve aynı anda tüm veri dosyası yazılırken tarafından etkilenen kayıtlarını güncelleştirin.  
   

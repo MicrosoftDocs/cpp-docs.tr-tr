@@ -51,12 +51,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52b8c6c5b6d27bdf4ce4c9ad46a75c21b9f47333
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2cf7e2c56094727c6956d0e2e21708dd81be4f10
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349788"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930852"
 ---
 # <a name="graphic-objects"></a>Grafik Nesneler
 Windows cihaz bağlamlarında kullanmak için Araçlar çizim çeşitli sağlar. Çizgiler, dolgu evin içindekiler ve metin çizmek için yazı tiplerini Fırçalar çizmek için Kalem sağlar. MFC Windows çizim araçları eşdeğer grafik nesne sınıfları sağlar. Aşağıdaki tabloda kullanılabilir sınıfların ve eşdeğer Windows grafik cihaz arabirimi (GDI) tanıtıcısı türleri gösterilmektedir.  
@@ -82,7 +82,7 @@ Windows cihaz bağlamlarında kullanmak için Araçlar çizim çeşitli sağlar.
   
  Sınıf Kitaplığı'nda her grafik nesne sınıfı, ardından uygun oluşturma işleviyle gibi başlatmalıdır o sınıfın grafik nesnelerini oluşturmanıza olanak tanır kurucusunun `CreatePen`.  
   
- Sınıf Kitaplığı'nda her grafik nesnesi sınıf MFC nesneye ilişkili Windows tanıtıcı cast atama işleci sahiptir. İlişkili nesne bu ayırır kadar sonuç tanıtıcı geçerli değil. Nesnenin kullanmak **ayırma** tanıtıcı ayırmak için üye işlevi.  
+ Sınıf Kitaplığı'nda her grafik nesnesi sınıf MFC nesneye ilişkili Windows tanıtıcı cast atama işleci sahiptir. İlişkili nesne bu ayırır kadar sonuç tanıtıcı geçerli değil. Nesnenin kullanmak `Detach` tanıtıcı ayırmak için üye işlevi.  
   
  Aşağıdaki kod atamaları bir `CPen` Windows işlenecek nesne:  
   

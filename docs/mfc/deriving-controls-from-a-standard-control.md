@@ -19,19 +19,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50db9d4c99e8ef538ffaa5352f9ec96e5b08217f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d4ae7fb09e1f453b6d7bc82a7fb038567809f872
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344506"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36932253"
 ---
 # <a name="deriving-controls-from-a-standard-control"></a>Standart Bir Denetimden Denetim Türetme
 Herhangi bir olduğu gibi [CWnd](../mfc/reference/cwnd-class.md)-türetilmiş sınıf, var olan bir denetim sınıfından yeni bir sınıf türetme tarafından bir denetimin davranışı değiştirebilirsiniz.  
   
 ### <a name="to-create-a-derived-control-class"></a>Bir türetilmiş denetim sınıfı oluşturmak için  
   
-1.  Sınıfınızda var olan bir denetim sınıfından türetilen ve isteğe bağlı olarak geçersiz kılma **oluşturma** üye gördüğünü gerekli bağımsız değişkenler için temel sınıf sağlar **oluşturma** işlevi.  
+1.  Sınıfınızda var olan bir denetim sınıfından türetilen ve isteğe bağlı olarak geçersiz kılma `Create` üye gördüğünü gerekli bağımsız değişkenler için temel sınıf sağlar `Create` işlevi.  
   
 2.  İleti işleyicisi üye işlevleri ve belirli Windows iletilere yanıt olarak denetimin davranışını değiştirmek için ileti eşlemesi girişleri sağlar. Bkz: [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md).  
   

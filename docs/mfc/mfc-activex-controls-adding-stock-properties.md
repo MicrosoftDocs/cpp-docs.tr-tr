@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c51a2efba3c89b4e216fec96459b14c3d0c637d8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 791694bfa1bcd7472be4691d9aef133b80ccace4
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357565"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36930136"
 ---
 # <a name="mfc-activex-controls-adding-stock-properties"></a>MFC ActiveX Denetimleri: Stok Özellikler Ekleme
-Stok özellikleri içeren zaten bir sınıf tarafından uygulanan özel özelliklerinden farklı `COleControl`. `COleControl` Ortak Özellikler Denetim için destek önceden tanımlanmış üye işlevlerini içerir. Denetimin başlığı ve ön ve arka plan renkleri bazı ortak özellikleri içerir. Diğer stok özellikleri hakkında daha fazla bilgi için bkz: [hisse senedi özellikleri Özellik Ekleme Sihirbazı'nı tarafından desteklenen](#_core_stock_properties_supported_by_classwizard) bu makalenin ilerisinde yer. Stok özellikleri için gönderme eşleme girdilerini her zaman tarafından önek **DISP_STOCKPROP**.  
+Stok özellikleri içeren zaten bir sınıf tarafından uygulanan özel özelliklerinden farklı `COleControl`. `COleControl` Ortak Özellikler Denetim için destek önceden tanımlanmış üye işlevlerini içerir. Denetimin başlığı ve ön ve arka plan renkleri bazı ortak özellikleri içerir. Diğer stok özellikleri hakkında daha fazla bilgi için bkz: [hisse senedi özellikleri Özellik Ekleme Sihirbazı'nı tarafından desteklenen](#_core_stock_properties_supported_by_classwizard) bu makalenin ilerisinde yer. Gönderme özellikleri her zaman DISP_STOCKPROP tarafından önekli hisse senedi girişlerinde eşleyin.  
   
  Bu makalede, Özellik Ekleme Sihirbazı'nı kullanarak bir ActiveX denetimine stok özellik (Bu durumda, resim yazısı) eklemeyi açıklar ve sonuçta elde edilen bir kod değişikliği açıklar. Konular şunlardır:  
   
@@ -81,16 +81,16 @@ Stok özellikleri içeren zaten bir sınıf tarafından uygulanan özel özellik
   
 |Özellik|Gönderme eşleme girişi|Değer erişme|  
 |--------------|------------------------|-------------------------|  
-|**Görünüm**|**DISP_STOCKPROP_APPEARANCE)**|Değer olarak erişilebilir **m_sAppearance**.|  
-|`BackColor`|**DISP_STOCKPROP_BACKCOLOR)**|Değer çağırarak erişilebilir `GetBackColor`.|  
-|`BorderStyle`|**DISP_STOCKPROP_BORDERSTYLE)**|Değer olarak erişilebilir **m_sBorderStyle**.|  
-|**Açıklamalı alt yazı**|**DISP_STOCKPROP_CAPTION)**|Değer çağırarak erişilebilir `InternalGetText`.|  
-|**Etkin**|**DISP_STOCKPROP_ENABLED)**|Değer olarak erişilebilir **m_bEnabled**.|  
-|**Yazı tipi**|**DISP_STOCKPROP_FONT)**|Makalesine bakın [MFC ActiveX denetimleri: yazı tiplerini kullanarak](../mfc/mfc-activex-controls-using-fonts.md) kullanım için.|  
-|`ForeColor`|**DISP_STOCKPROP_FORECOLOR)**|Değer çağırarak erişilebilir `GetForeColor`.|  
-|**hWnd**|**DISP_STOCKPROP_HWND)**|Değer olarak erişilebilir `m_hWnd`.|  
-|**Metin**|**DISP_STOCKPROP_TEXT)**|Değer çağırarak erişilebilir `InternalGetText`. Bu özellik aynıdır **resim yazısı**, özellik adı dışında.|  
-|**ReadyState**|**DISP_STOCKPROP_READYSTATE()**|Değer m_lReadyState erişilebilir veya `GetReadyState`|  
+|`Appearance`|DISP_STOCKPROP_APPEARANCE)|Değer olarak erişilebilir `m_sAppearance`.|  
+|`BackColor`|DISP_STOCKPROP_BACKCOLOR)|Değer çağırarak erişilebilir `GetBackColor`.|  
+|`BorderStyle`|DISP_STOCKPROP_BORDERSTYLE)|Değer olarak erişilebilir `m_sBorderStyle`.|  
+|`Caption`|DISP_STOCKPROP_CAPTION)|Değer çağırarak erişilebilir `InternalGetText`.|  
+|`Enabled`|DISP_STOCKPROP_ENABLED)|Değer olarak erişilebilir `m_bEnabled`.|  
+|`Font`|DISP_STOCKPROP_FONT)|Makalesine bakın [MFC ActiveX denetimleri: yazı tiplerini kullanarak](../mfc/mfc-activex-controls-using-fonts.md) kullanım için.|  
+|`ForeColor`|DISP_STOCKPROP_FORECOLOR)|Değer çağırarak erişilebilir `GetForeColor`.|  
+|`hWnd`|DISP_STOCKPROP_HWND)|Değer olarak erişilebilir `m_hWnd`.|  
+|`Text`|DISP_STOCKPROP_TEXT)|Değer çağırarak erişilebilir `InternalGetText`. Bu özellik aynıdır `Caption`, özellik adı dışında.|  
+|`ReadyState`|DISP_STOCKPROP_READYSTATE()|Değer olarak erişilebilir `m_lReadyState` veya `GetReadyState`|  
   
 ##  <a name="_core_stock_properties_and_notification"></a> Stok özellikleri ve bildirim  
  Geçersiz kılınabilir bildirim işlevleri çoğu stok özellikleri vardır. Örneğin, her `BackColor` özelliği değiştirildiğinde, `OnBackColorChanged` işlevi (Denetim sınıfının üye işlevini) çağrılır. Varsayılan uygulama (içinde `COleControl`) çağrıları `InvalidateControl`. Bu durum yanıta ek eylemleri uygulamak istiyorsanız, bu işlev geçersiz kılar.  

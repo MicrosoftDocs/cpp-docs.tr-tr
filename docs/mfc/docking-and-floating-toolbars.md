@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 430af2344888696e3cbf053677ef59c7249b50bd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 317527d87c12a0c140c4a618ec4500dbe12bb003
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33352795"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931895"
 ---
 # <a name="docking-and-floating-toolbars"></a>Yerleşen ve Kayan Araç Çubukları
 Microsoft Foundation Class Kitaplığı dockable araç çubukları destekler. Dockable araç çubuğu bağlı veya, kendi üst penceresi herhangi bir kenarında yerleşik veya ayrılmış veya yükleyebilir, kendi kısa çerçeve penceresinde kaydırılmış. Bu makalede, uygulamalarınızda dockable araç çubukları kullanımı açıklanmaktadır.  
@@ -62,7 +62,7 @@ Microsoft Foundation Class Kitaplığı dockable araç çubukları destekler. Do
  MFC genel örnek bkz [DOCKTOOL](../visual-cpp-samples.md) örnekleri için.  
   
 ##  <a name="_core_enabling_docking_in_a_frame_window"></a> Bir çerçeve penceresinde yerleştirme etkinleştirme  
- Araç çubukları için bir çerçeve pencere sabitlemek için çerçeve penceresi (veya hedef) yerleştirme izin vermek için etkinleştirilmesi gerekir. Bu yapılır kullanarak [CFrameWnd::EnableDocking](../mfc/reference/cframewnd-class.md#enabledocking) alır işlevi `DWORD` stil bir dizi parametre BITS yerleştirme çerçeve penceresi hangi tarafının kabul belirten. Bir araç hakkında yerleşik için ise ve için yerleşik birden fazla kenara vardır, yanları belirtilen geçirilen parametre `EnableDocking` aşağıdaki sırayla kullanılır: üst, alt, sol, sağ. Kullanabilmek isterseniz, Denetim sabitlemek için herhangi bir yere çubuklarını, geçirmek `CBRS_ALIGN_ANY` için `EnableDocking`.  
+ Araç çubukları için bir çerçeve pencere sabitlemek için çerçeve penceresi (veya hedef) yerleştirme izin vermek için etkinleştirilmesi gerekir. Bu yapılır kullanarak [CFrameWnd::EnableDocking](../mfc/reference/cframewnd-class.md#enabledocking) alır işlevi *DWORD* stil bir dizi parametre BITS yerleştirme çerçeve penceresi hangi tarafının kabul belirten. Bir araç hakkında yerleşik için ise ve için yerleşik birden fazla kenara vardır, yanları belirtilen geçirilen parametre `EnableDocking` aşağıdaki sırayla kullanılır: üst, alt, sol, sağ. Kullanabilmek isterseniz, Denetim sabitlemek için herhangi bir yere çubuklarını, geçirmek **cbrs_alıgn_any** için `EnableDocking`.  
   
 ##  <a name="_core_enabling_docking_for_a_toolbar"></a> İçin bir araç çubuğu yerleştirme etkinleştirme  
  Yerleştirme için hedef hazırladıktan sonra araç çubuğu (veya kaynak) benzer bir şekilde hazırlamanız gerekir. Çağrı [CControlBar::EnableDocking](../mfc/reference/ccontrolbar-class.md#enabledocking) sabitlemek istediğiniz her araç için hedef belirleme kenarlara araç çubuğu yerleştirme. Yapılan çağrıda belirtilen yanları hiçbiri `CControlBar::EnableDocking` çerçeve penceresinde yerleştirme için etkin yanları eşleşmiyor, araç sabitleyemezsiniz — float. Kaydırılmış olan sonra çerçeve penceresi yerleştirme kuramıyor kayan araç kalır.  

@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd25089594d31de21a3a315d997ee01111aff4fd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 179e959ce4d6a516f51576712e50408ef41d5c7e
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347905"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931797"
 ---
 # <a name="control-bars"></a>Denetim Çubukları
-"Denetim çubuğu" araç çubukları, durum çubukları ve iletişim kutusu çubukları genel adıdır. MFC sınıfları `CToolBar`, `CStatusBar`, `CDialogBar`, `COleResizeBar`, ve **CReBar** sınıfından türetilen [CControlBar](../mfc/reference/ccontrolbar-class.md), ortak işlevleri uygular.  
+"Denetim çubuğu" araç çubukları, durum çubukları ve iletişim kutusu çubukları genel adıdır. MFC sınıfları `CToolBar`, `CStatusBar`, `CDialogBar`, `COleResizeBar`, ve `CReBar` sınıfından türetilen [CControlBar](../mfc/reference/ccontrolbar-class.md), ortak işlevleri uygular.  
   
  Denetim çubukları ile kullanıcılar seçenekleri seçin, komutları yürütün veya program bilgilerini elde denetimlerinin satırları görüntülemek için windows ' dir. Denetim çubukları türleri araç çubukları, iletişim kutusu çubukları ve durum çubukları içerir.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "33347905"
 -   Sınıfında rebars [CReBar](../mfc/reference/crebar-class.md)  
   
 > [!IMPORTANT]
->  MFC sürüm 4. 0'dan sonra araç çubukları, durum çubukları ve araç ipuçları için MFC belirli önceki uygulaması yerine comctl32.dll uygulanan sistem işlevleri kullanılarak uygulanır. MFC sürüm 6.0, içinde **CReBar**, hangi ayrıca comctl32.dll işlevi sarmalar eklendi.  
+>  MFC sürüm 4.0, araç çubukları, durum çubukları ve aracı itibariyle ipuçları uygulanan sistem işlevselliğini kullanarak uygulanan *comctl32.dll* MFC'ye belirli önceki uygulaması yerine. MFC sürüm 6.0, içinde `CReBar`, hangi ayrıca comctl32.dll işlevi sarmalar eklendi.  
   
  Denetim çubuğu türlerine kısa tanıtımları izleyin. Daha fazla bilgi için aşağıdaki bağlantılara bakın.  
   

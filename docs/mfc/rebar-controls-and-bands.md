@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1fac5f83f19fab37604a14e239cf505891c737f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1ae83c3e41ebabf62ad98211f3943af2b535c806
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349857"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36929513"
 ---
 # <a name="rebar-controls-and-bands"></a>Rebar Denetimleri ve Bantları
 Alt pencereler, ortak iletişim kutusu denetimleri, menüler, araç çubukları ve benzeri için kapsayıcı olarak hareket edecek bir rebar denetimi ana amacı budur. Bu kapsama bir "bant." kavramı tarafından desteklenir Her rebar bant Mandal çubuğu, bir bit eşlem, bir metin etiketi ve alt pencere herhangi bir birleşimini içerebilir.  
@@ -43,7 +43,7 @@ Alt pencereler, ortak iletişim kutusu denetimleri, menüler, araç çubukları 
   
  [InsertBand](../mfc/reference/crebarctrl-class.md#insertband) ve [DeleteBand](../mfc/reference/crebarctrl-class.md#deleteband) ekleme ve rebar bantları kaldırma. [MinimizeBand](../mfc/reference/crebarctrl-class.md#minimizeband) ve [MaximizeBand](../mfc/reference/crebarctrl-class.md#maximizeband) belirli rebar bant boyutunu etkiler. [MoveBand](../mfc/reference/crebarctrl-class.md#moveband) belirli rebar bant dizinini değiştirir. [ShowBand](../mfc/reference/crebarctrl-class.md#showband) gösterir veya rebar bant kullanıcıdan gizler.  
   
- Aşağıdaki örnek, bir araç bant ekleme gösterir (`m_wndToolBar`) var olan bir rebar denetimi (`m_wndReBar`). Bant başlatarak açıklanan `rbi` yapısı ve ardından çağırma `InsertBand` üye fonksiyonu:  
+ Aşağıdaki örnek, bir araç bant ekleme gösterir (*m_wndToolBar*) var olan bir rebar denetimi (*m_wndReBar*). Bant başlatarak açıklanan `rbi` yapısı ve ardından çağırma `InsertBand` üye fonksiyonu:  
   
  [!code-cpp[NVC_MFCControlLadenDialog#27](../mfc/codesnippet/cpp/rebar-controls-and-bands_1.cpp)]  
   

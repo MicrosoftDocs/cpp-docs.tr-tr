@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92d1691f9a61a11dc4d9dfe7e869ccb7899746bc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1c4e6c7744c3d5328985eee24e67ee1eb359fb3c
+ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33350018"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36931024"
 ---
 # <a name="exceptions-changes-to-exception-macros-in-version-30"></a>Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler
 Bu gelişmiş bir konudur.  
@@ -46,13 +46,13 @@ Bu gelişmiş bir konudur.
   
  [!code-cpp[NVC_MFCExceptions#19](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_2.cpp)]  
   
- olarak oluşturulan bir **CException\*** rağmen olarak oluşturulan bir **CCustomException**. **CATCH** makrosu MFC sürüm 2.5 ve önceki kullanır `CObject::IsKindOf` çalışma zamanında tür test etmek için. Çünkü ifade  
+ olarak oluşturulan bir `CException*`rağmen olarak oluşturulan bir `CCustomException`. **CATCH** makrosu MFC sürüm 2.5 ve önceki kullanır `CObject::IsKindOf` çalışma zamanında tür test etmek için. Çünkü ifade  
   
  [!code-cpp[NVC_MFCExceptions#20](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_3.cpp)]  
   
  ilk yakalama bloğunun özel durumu yakalar, geçerlidir. Özel durum işleme makroları çoğunu uygulamak için C++ özel durumlarını kullanan sürüm 3. 0, İkinci catch bloğu atılmış eşleşen `CException`.  
   
- Bu gibi sık karşılaşılan bir durum kodudur. Bir özel durum nesnesi genel kabul eden başka bir işleve geçirildiğinde genellikle görünür **CException\***, "ön throw" işleme gerçekleştirir ve son olarak özel durum oluşturur.  
+ Bu gibi sık karşılaşılan bir durum kodudur. Bir özel durum nesnesi genel kabul eden başka bir işleve geçirildiğinde genellikle görünür `CException*`, "ön throw" işleme gerçekleştirir ve son olarak özel durum oluşturur.  
   
  Bu sorunu geçici olarak çözmek için throw deyimi işlevinden çağıran kodu taşımak ve özel durum oluşturdu aynı anda derleyiciye bilinen gerçek türünde bir özel durum atar.  
   
@@ -63,7 +63,7 @@ Bu gelişmiş bir konudur.
   
  [!code-cpp[NVC_MFCExceptions#2](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_4.cpp)]  
   
- Kullanarak **THROW** catch bloğu işaretçinin neden `e` silinmesi, böylece dış catch site geçersiz bir işaretçi alırsınız. Kullanım `THROW_LAST` yeniden vermesini `e`.  
+ Kullanarak **THROW** catch bloğu işaretçinin neden `e` silinmesi, böylece dış catch site geçersiz bir işaretçi alırsınız. Kullanım **THROW_LAST** yeniden vermesini `e`.  
   
  Daha fazla bilgi için bkz: [özel durumlar: çalýþýrçalýþma yakalama ve silme özel durumları](../mfc/exceptions-catching-and-deleting-exceptions.md).  
   
