@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1032ffac46af6370c45f4bcb2c251ddae73ce69
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 48c431ecbcc415776ff9accfb68004c7c8e46d34
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33356402"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952332"
 ---
 # <a name="canimatectrl-class"></a>CAnimateCtrl sınıfı
 Windows ortak animasyon denetimi işlevselliğini sağlar.  
@@ -146,23 +146,23 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwStyle`  
+ *dwStyle*  
  Animasyon denetimin stilini belirtir. Aşağıdaki Açıklamalar bölümüne ve animasyon denetim stilleri açıklanan stilleri açıklanan windows herhangi bir bileşimini uygulamak [animasyon denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb761886) Windows SDK.  
   
- `rect`  
+ *Rect*  
  Animasyon denetimin konumunu ve boyutunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.  
   
- `pParentWnd`  
- Animasyon denetimin ana penceresinde, genellikle belirten bir `CDialog`. Değil olmalıdır **NULL.**  
+ *pParentWnd*  
+ Animasyon denetimin ana penceresinde, genellikle belirten bir `CDialog`. Değil olmalıdır **NULL**.  
   
- `nID`  
+ *nID*  
  Animasyon denetimin kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturmak bir `CAnimateCtrl` iki adımda. İlk olarak, Oluşturucusu arayın ve sonra çağırın **oluşturma**, animasyon denetimi oluşturur ve ekler `CAnimateCtrl` nesnesi.  
+ Oluşturmak bir `CAnimateCtrl` iki adımda. İlk olarak, Oluşturucusu arayın ve sonra çağırın `Create`, animasyon denetimi oluşturur ve ekler `CAnimateCtrl` nesnesi.  
   
  Aşağıdaki uygulama [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) animasyon denetimi için.  
   
@@ -172,7 +172,7 @@ virtual BOOL Create(
   
 - **Ws_dısabled** nadiren  
   
- Animasyon denetimi ile genişletilmiş windows stilleri kullanmak istiyorsanız, çağrı [CreateEx](#createex) yerine **oluşturma**.  
+ Animasyon denetimi ile genişletilmiş windows stilleri kullanmak istiyorsanız, çağrı [CreateEx](#createex) yerine `Create`.  
   
  Yukarıda listelenen pencere stilleri ek olarak, bir veya daha fazla animasyon denetim stilleri bir animasyon denetimine uygulamak isteyebilirsiniz. Daha fazla bilgi için Windows SDK'sı bakın [animasyon denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb761886).  
   
@@ -192,19 +192,19 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwExStyle`  
- Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: `dwExStyle` parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
+ *dwExStyle*  
+ Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
   
- `dwStyle`  
+ *dwStyle*  
  Animasyon denetimin stilini belirtir. Pencerenin herhangi bir bileşimini uygulamak ve animasyon denetim stilleri açıklanan [animasyon denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb761886) Windows SDK.  
   
- `rect`  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı `pParentWnd`.  
+ *Rect*  
+ Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Denetimin üst penceresi için bir işaretçi.  
   
- `nID`  
+ *nID*  
  Denetimin alt pencere kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -235,10 +235,10 @@ BOOL Open(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszFileName`  
+ *lpszFileName*  
  A `CString` nesne veya AVI dosyasının adı ya da bir AVI kaynağın adını içeren null ile sonlandırılmış bir dize için bir işaretçi. Bu parametre ise **NULL**, sistem animasyon denetimi için daha önce açıldı AVI küçük varsa kapatır.  
   
- `nID`  
+ *nID*  
  AVI kaynak tanımlayıcısı. Bu parametre ise **NULL**, sistem animasyon denetimi için daha önce açıldı AVI küçük varsa kapatır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -269,10 +269,10 @@ BOOL Play(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nFrom`  
+ *nFrom*  
  Çerçevenin oynamaya başladığı sıfır tabanlı dizini. Değer 65.536'den küçük olmalıdır. 0 değeri, anlamına gelir ilk çerçeveyi AVI küçük başlayın.  
   
- `nTo`  
+ *Nhizmetin*  
  Çerçeve sıfır tabanlı dizini uçları'burada yürütülüyor. Değer 65.536'den küçük olmalıdır. Bir değeri - 1 ile son çerçeve AVI küçük resmi bitiş anlamına gelir.  
   
  *nRep*  
@@ -295,7 +295,7 @@ BOOL Seek(UINT nTo);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nTo`  
+ *Nhizmetin*  
  Görüntülenecek çerçeve sıfır tabanlı dizini. Değer 65.536'den küçük olmalıdır. 0 değeri sms_ınbox_manager ilk çerçevesi AVI küçük resmi. -1 değeri sms_ınbox_manager son çerçeve AVI küçük resmi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

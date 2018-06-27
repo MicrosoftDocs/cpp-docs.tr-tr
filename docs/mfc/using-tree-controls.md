@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5bd7210f2f63d55fc4244a6b88456ede1265c8e9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f9cb5c8892583adac01ca883034b8c0af18595c9
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384875"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954601"
 ---
 # <a name="using-tree-controls"></a>Ağaç Denetimlerini Kullanma
 Ağaç denetimi tipik kullanımını ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) deseni izler:  
@@ -31,7 +31,7 @@ Ağaç denetimi tipik kullanımını ([CTreeCtrl](../mfc/reference/ctreectrl-cla
   
 -   Verileri çağırarak denetime yerleştirme `CTreeCtrl`'s [InsertItem](../mfc/reference/ctreectrl-class.md#insertitem) işlevi için her bir veri öğesi için bir kez. `InsertItem` tanıtıcı döndürür, daha sonra zaman gibi başvurduğu için kullanabileceğiniz öğesine alt öğeleri ekleniyor. Verileri başlatma için iyi bir zamandır bulunduğu `OnInitDialog` (için iletişim kutularındaki denetimler) veya `OnInitialUpdate` (için görünümler).  
   
--   Kullanıcı denetimi ile etkileşim gibi çeşitli bildirim iletileri gönderir. Her ekleyerek işlemek istediğiniz iletileri işlemek için bir işlev belirtebilirsiniz bir **on_notıfy_reflect** makrosu denetim pencerenin ileti eşlemesi veya ekleyerek bir `ON_NOTIFY` makrosu üst pencerenin ileti eşlemesi için. Bkz: [ağaç denetimi bildirim iletileri](../mfc/tree-control-notification-messages.md) olası bildirimler listesi için bu konudaki sonraki.  
+-   Kullanıcı denetimi ile etkileşim gibi çeşitli bildirim iletileri gönderir. Her denetim pencerenin ileti eşlemesinde on_notıfy_reflect makrosu ekleyerek veya üst pencerenin ileti eşlemesi on_notıfy makrosu ekleyerek işlemek istediğiniz iletileri işlemek için bir işlev belirtebilirsiniz. Bkz: [ağaç denetimi bildirim iletileri](../mfc/tree-control-notification-messages.md) olası bildirimler listesi için bu konudaki sonraki.  
   
 -   Denetim değerlerini ayarlamak için çeşitli kümesi üye işlevleri çağırma. Yaptığınız değişiklikler girinti ayarlama ve metin, görüntü veya bir öğesiyle ilişkilendirilmiş verileri değiştirme içerir.  
   

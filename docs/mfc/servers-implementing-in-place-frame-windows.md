@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cc26e2874921d30ef233509ee46b776ec8e3e9b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f0f03d66fac6d58bdb48aa9b7a6d8aafe18a74ea
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33380870"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956440"
 ---
 # <a name="servers-implementing-in-place-frame-windows"></a>Sunucular: Yerinde Çerçeve Pencereleri Uygulama
 Bu makalede, sunucu uygulamanızı oluşturmak için Uygulama Sihirbazı'nı kullanmazsanız, görsel düzenleme server uygulamanızda yerinde çerçeve pencereleri uygulamak için yapmanız gerekir açıklanmaktadır. Bu makalede açıklanan yordamı izlemek yerine, varolan bir yerinde çerçeve pencere sınıfı Uygulama Sihirbazı tarafından oluşturulan bir uygulama veya Visual C++ ile sağlanan bir örnek kullanabilirsiniz.  
@@ -32,13 +32,13 @@ Bu makalede, sunucu uygulamanızı oluşturmak için Uygulama Sihirbazı'nı kul
   
 1.  Yerinde çerçeve penceresi sınıfından türetilen `COleIPFrameWnd`.  
   
-    -   Kullanım `DECLARE_DYNCREATE` makrosu sınıfı üstbilgi dosyası.  
+    -   DECLARE_DYNCREATE makrosu sınıfı üst bilgi dosyanızda kullanın.  
   
-    -   Kullanım `IMPLEMENT_DYNCREATE` makrosu sınıf uygulama (.cpp) dosyası. Bu çerçevesi tarafından oluşturulacak bu sınıfın nesnelerini sağlar.  
+    -   IMPLEMENT_DYNCREATE makrosu sınıf uygulama (.cpp) dosyanızda kullanın. Bu çerçevesi tarafından oluşturulacak bu sınıfın nesnelerini sağlar.  
   
 2.  Bildirme bir `COleResizeBar` çerçeve penceresi sınıfında üye. Sunucu uygulamalarında yerinde yeniden boyutlandırma desteklemek istiyorsanız bu gereklidir.  
   
-     Bildirme bir `OnCreate` ileti işleyicisi (kullanarak **özellikleri** penceresi) ve arama **oluşturma** için `COleResizeBar` varsa, tanımlanan üye,.  
+     Bildirme bir `OnCreate` ileti işleyicisi (kullanarak **özellikleri** penceresi) ve arama `Create` için `COleResizeBar` varsa, tanımlanan üye,.  
   
 3.  Araç çubuğu varsa, bildirme bir `CToolBar` çerçeve penceresi sınıfında üye.  
   

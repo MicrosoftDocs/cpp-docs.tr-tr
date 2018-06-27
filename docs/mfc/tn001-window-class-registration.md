@@ -18,18 +18,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 245ffcb66223813c7146c50c964cd97203ed8d53
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e0be2e87f77e047e1b29d99e562a67bb9f4f1ee9
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383860"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951984"
 ---
 # <a name="tn001-window-class-registration"></a>TN001: Pencere Sınıfı Kaydı
 Bu Not özel kaydetmek MFC yordamları açıklar [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576)es Microsoft Windows tarafından gerekli. Belirli `WNDCLASS` MFC ve Windows tarafından kullanılan öznitelikleri ele alınmıştır.  
   
 ## <a name="the-problem"></a>Sorun  
- Öznitelikleri bir [CWnd](../mfc/reference/cwnd-class.md) nesne gibi bir `HWND` Windows işlemek, iki yerde depolanır: pencere nesnesi ve `WNDCLASS`. Adını `WNDCLASS` genel pencere oluşturma işlevlere gibi geçirilen [CWnd::Create](../mfc/reference/cwnd-class.md#create) ve [CFrameWnd::Create](../mfc/reference/cframewnd-class.md#create) içinde `lpszClassName` parametresi.  
+ Öznitelikleri bir [CWnd](../mfc/reference/cwnd-class.md) nesne gibi bir `HWND` Windows işlemek, iki yerde depolanır: pencere nesnesi ve `WNDCLASS`. Adını `WNDCLASS` genel pencere oluşturma işlevlere gibi geçirilen [CWnd::Create](../mfc/reference/cwnd-class.md#create) ve [CFrameWnd::Create](../mfc/reference/cframewnd-class.md#create) içinde *lpszClassName* parametresi.  
   
  Bu `WNDCLASS` dört anlamına gelir biri aracılığıyla kayıtlı olması gerekir:  
   
@@ -46,15 +46,15 @@ Bu Not özel kaydetmek MFC yordamları açıklar [WNDCLASS](http://msdn.microsof
   
 |Alan|Açıklama|  
 |-----------|-----------------|  
-|`lpfnWndProc`|Pencere proc olmalıdır bir `AfxWndProc`|  
-|`cbClsExtra`|kullanılmayan (sıfır olmalıdır)|  
-|`cbWndExtra`|kullanılmayan (sıfır olmalıdır)|  
-|`hInstance`|otomatik olarak girilmiş [Afxgetınstancehandle](../mfc/reference/application-information-and-management.md#afxgetinstancehandle)|  
-|`hIcon`|Çerçeve pencereleri simge bkz aşağıda|  
-|`hCursor`|Fare pencere üzerinde olduğunda için imleç bkz aşağıda|  
-|`hbrBackground`|arka plan rengi, aşağıya bakın|  
-|`lpszMenuName`|kullanılmayan (NULL olmalıdır)|  
-|`lpszClassName`|sınıf adı, aşağıya bakın|  
+|*lpfnWndProc*|Pencere proc olmalıdır bir `AfxWndProc`|  
+|*cbClsExtra*|kullanılmayan (sıfır olmalıdır)|  
+|*cbWndExtra*|kullanılmayan (sıfır olmalıdır)|  
+|*HINSTANCE*|otomatik olarak girilmiş [Afxgetınstancehandle](../mfc/reference/application-information-and-management.md#afxgetinstancehandle)|  
+|*hIcon*|Çerçeve pencereleri simge bkz aşağıda|  
+|*hCursor*|Fare pencere üzerinde olduğunda için imleç bkz aşağıda|  
+|*hbrBackground*|arka plan rengi, aşağıya bakın|  
+|*lpszMenuName*|kullanılmayan (NULL olmalıdır)|  
+|*lpszClassName*|sınıf adı, aşağıya bakın|  
   
 ## <a name="provided-wndclasses"></a>WNDCLASSes sağlanan  
  MFC (MFC 4.0), uygulamadan önce önceki sürümlerinde sağlanan önceden tanımlanmış birkaç pencere sınıfları. Bu pencere sınıfları artık varsayılan olarak sağlanır. Uygulamaları kullanması gereken `AfxRegisterWndClass` uygun parametrelerle.  
@@ -105,7 +105,7 @@ pWnd->Create(strWndClass, ...);
  `AfxRegisterWndClass` özel durum oluşturacak bir [CResourceException](../mfc/reference/cresourceexception-class.md) pencere sınıfı (hatalı parametre nedeniyle ya da Windows bellek yetersiz) kaydetmek başarısız olduysa.  
   
 ## <a name="the-registerclass-and-afxregisterclass-functions"></a>RegisterClass ve AfxRegisterClass işlevleri  
- Yapmak istiyorsanız, her şeyi daha ne Gelişmiş bir `AfxRegisterWndClass` sağlar, Windows API'si çağırabilirsiniz `RegisterClass` veya MFC işlevi `AfxRegisterClass`. `CWnd`, [CFrameWnd](../mfc/reference/cframewnd-class.md) ve [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md) `Create` işlevleri ele bir `lpszClassName` ilk parametre olarak pencere sınıfı için dize adı. Kaydetmek için kullanılan yöntem bağımsız olarak tüm kayıtlı pencere sınıfı adı kullanabilirsiniz.  
+ Yapmak istiyorsanız, her şeyi daha ne Gelişmiş bir `AfxRegisterWndClass` sağlar, Windows API'si çağırabilirsiniz `RegisterClass` veya MFC işlevi `AfxRegisterClass`. `CWnd`, [CFrameWnd](../mfc/reference/cframewnd-class.md) ve [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md) `Create` işlevleri ele bir *lpszClassName* ilk parametre olarak pencere sınıfı için dize adı. Kaydetmek için kullanılan yöntem bağımsız olarak tüm kayıtlı pencere sınıfı adı kullanabilirsiniz.  
   
  Kullanmak önemlidir `AfxRegisterClass` (veya `AfxRegisterWndClass`) Win32 üzerinde DLL'de. Win32 DLL sonlandırıldığında sınıfları açıkça kayıttan çıkarmanız gerekir böylece bir DLL tarafından kayıtlı sınıflarını otomatik olarak kaydını değil. Kullanarak `AfxRegisterClass` yerine `RegisterClass` bu otomatik olarak sizin için işlenir. `AfxRegisterClass` benzersiz sınıflarının bir listesini, DLL tarafından kaydedilen ve DLL sonlandırıldığında otomatik olarak onları kaldırır korur. Kullandığınızda `RegisterClass` DLL'de, DLL sonlandırıldığında tüm sınıflar kaydı olmasına dikkat edin (içinde [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583) işlevi). Bunun Sağlanamaması neden olabilecek `RegisterClass` başka bir istemci uygulama, DLL kullanma girişiminde bulunduğunda beklenmedik şekilde başarısız.  
   

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3b755fc35c98652ab87231e9d8f58cde748bfc0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b78e9a4fefad884f4ac683cd0c7f18688a5bdfe
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384354"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36950820"
 ---
 # <a name="user-defined-tools"></a>Kullanıcı Tanımlı Araçlar
 MFC kullanıcı tanımlı Araçlar destekler. Kullanıcı tanımlı bir aracı bir dış, kullanıcı tarafından belirtilen programı yürüten özel bir komuttur. Özelleştirme işlemi, kullanıcı tanımlı Araçlar yönetmek için kullanabilirsiniz. Ancak, uygulama nesnesi türetilmedi varsa, bu işlem kullanamazsınız [CWinAppEx sınıfı](../mfc/reference/cwinappex-class.md). Özelleştirme hakkında daha fazla bilgi için bkz: [MFC için özelleştirme](../mfc/customization-for-mfc.md).  
@@ -32,11 +32,11 @@ MFC kullanıcı tanımlı Araçlar destekler. Kullanıcı tanımlı bir aracı b
 ## <a name="enabling-user-defined-tools-support"></a>Kullanıcı tanımlı etkinleştirme Destek Araçları  
  Kullanıcı tanımlı Araçlar uygulamada etkinleştirmek için arama [CWinAppEx::EnableUserTools](../mfc/reference/cwinappex-class.md#enableusertools). Ancak, bu çağrı için parametre olarak kullanmak için uygulamanızın kaynak dosyalarında ilk birkaç sabitleri tanımlamalısınız.  
   
- Kaynak Düzenleyicisi'nde uygun komut kimliği kullanan bir kukla komutu oluşturun Aşağıdaki örnekte, kullandığımız **ID_TOOLS_ENTRY** olarak komut kimliği. Bu komut kimliği framework kullanıcı tanımlı Araçlar burada ekleyecek bir konumda bir veya daha fazla menüleri işaretler.  
+ Kaynak Düzenleyicisi'nde uygun komut kimliği kullanan bir kukla komutu oluşturun Aşağıdaki örnekte, kullandığımız `ID_TOOLS_ENTRY` olarak komut kimliği. Bu komut kimliği framework kullanıcı tanımlı Araçlar burada ekleyecek bir konumda bir veya daha fazla menüleri işaretler.  
   
- Kullanıcı tanımlı Araçlar temsil eden dize tabloda art arda bazı kimlikler kenara ayarlamanız gerekir. Kullanıcılar tanımlayabilir kullanıcı araçlarını maksimum sayıya eşit, ayrılan dizeler, sayısıdır. Aşağıdaki örnekte, bunlar adlandırıldığı **ID_USER_TOOL1** aracılığıyla **ID_USER_TOOL10**.  
+ Kullanıcı tanımlı Araçlar temsil eden dize tabloda art arda bazı kimlikler kenara ayarlamanız gerekir. Kullanıcılar tanımlayabilir kullanıcı araçlarını maksimum sayıya eşit, ayrılan dizeler, sayısıdır. Aşağıdaki örnekte, bunlar adlandırıldığı `ID_USER_TOOL1` aracılığıyla `ID_USER_TOOL10`.  
   
- Dizinler ve çağrılacağı dış programları için bağımsız değişken araçları seçin yardımcı olmak için kullanıcılara öneriler sunar. Bunu yapmak için kaynak düzenleyicisinde iki açılır menüler oluşturun. Aşağıdaki örnekte bu adlandırıldığı **IDR_MENU_ARGS** ve **IDR_MENU_DIRS**. Bu menülerde her komut için bir dize uygulama dize tablonuzda tanımlayın. Kaynak kimliği dizesi Komut Kimliği eşit olmalıdır  
+ Dizinler ve çağrılacağı dış programları için bağımsız değişken araçları seçin yardımcı olmak için kullanıcılara öneriler sunar. Bunu yapmak için kaynak düzenleyicisinde iki açılır menüler oluşturun. Aşağıdaki örnekte bu adlandırıldığı `IDR_MENU_ARGS` ve `IDR_MENU_DIRS`. Bu menülerde her komut için bir dize uygulama dize tablonuzda tanımlayın. Kaynak kimliği dizesi Komut Kimliği eşit olmalıdır  
   
  Türetilen bir sınıftan oluşturabilirsiniz [CUserTool sınıfı](../mfc/reference/cusertool-class.md) varsayılan uygulama değiştirmek için. Bunu yapmak için RUNTIME_CLASS yerine CWinAppEx::EnableUserTools dördüncü parametresi olarak çalışma zamanı bilgileri, türetilmiş bir sınıf için geçirin ([CUserTool sınıfı](../mfc/reference/cusertool-class.md)).  
   
@@ -46,7 +46,7 @@ MFC kullanıcı tanımlı Araçlar destekler. Kullanıcı tanımlı bir aracı b
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#1](../mfc/codesnippet/cpp/user-defined-tools_1.cpp)]  
   
- Bu örnekte, Araçlar sekmesi üzerinde dahil edilecek **özelleştirme** iletişim kutusu. Framework komut kimliği eşleşen herhangi bir komuttan yerini alacak **ID_TOOLS_ENTRY** her bir kullanıcı o menüsü açtığında şu anda tanımlanmış kullanıcı araçları kümesiyle herhangi menüde. Komut kimlikleri **ID_USER_TOOL1** aracılığıyla **ID_USER_TOOL10** kullanıcı tanımlı araçlar için kullanılmak üzere ayrılmıştır. Sınıf [CUserTool sınıfı](../mfc/reference/cusertool-class.md) kullanıcı araçlarını çağrılarını işler. Aracı sekmesinde **özelleştirme** iletişim kutusu sağlar menüleri erişim hakkı bağımsız değişken ve dizin girişi alanlarının düğmelere **IDR_MENU_ARGS** ve **IDR_MENU_DIRS**. Bir kullanıcı bu menüler birinden bir komut seçtiğinde framework uygun metin kutusuna komut kimliği eşit kaynak kimliği olan dize ekler.  
+ Bu örnekte, Araçlar sekmesi üzerinde dahil edilecek **özelleştirme** iletişim kutusu. Framework komut kimliği eşleşen herhangi bir komuttan yerini alacak `ID_TOOLS_ENTRY` her bir kullanıcı o menüsü açtığında şu anda tanımlanmış kullanıcı araçları kümesiyle herhangi menüde. Komut kimlikleri `ID_USER_TOOL1` aracılığıyla `ID_USER_TOOL10` kullanıcı tanımlı araçlar için kullanılmak üzere ayrılmıştır. Sınıf [CUserTool sınıfı](../mfc/reference/cusertool-class.md) kullanıcı araçlarını çağrılarını işler. Aracı sekmesinde **özelleştirme** iletişim kutusu sağlar menüleri erişim hakkı bağımsız değişken ve dizin girişi alanlarının düğmelere **IDR_MENU_ARGS** ve **IDR_MENU_DIRS**. Bir kullanıcı bu menüler birinden bir komut seçtiğinde framework uygun metin kutusuna komut kimliği eşit kaynak kimliği olan dize ekler.  
   
 ### <a name="including-predefined-tools"></a>Önceden tanımlanmış araçları dahil olmak üzere  
  Uygulama başlangıç bazı araçlar önceden istiyorsanız, geçersiz kılmanız gerekir [CFrameWnd::LoadFrame](../mfc/reference/cframewnd-class.md#loadframe) , uygulamanızın ana penceresinin yöntemi. Bu yöntem, aşağıdaki adımları gerçekleştirmeniz gerekir.  

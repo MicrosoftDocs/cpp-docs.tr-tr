@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2d55768f423feef3b5093ec0af6365aecfaafee
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cfe91812d178618b1707f99aa10d6bd492109069
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385115"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956801"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştirme
 Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygulamasına değiştirme gösterilir. Visual Studio Office 2007 Şerit ve Windows 7 manzara Şerit destekler. Şerit kullanıcı arabirimi hakkında daha fazla bilgi için bkz: [Şerit](http://go.microsoft.com/fwlink/p/?linkid=129233) MSDN Web sitesinde.  
@@ -186,31 +186,31 @@ Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygul
   
 3.  Uygulama düğmesi özelliklerini değiştirerek özelleştirebilirsiniz. Bu kod içinde kullanılan iletisi kimlikleri önceden menüde karalama 1.0 için tanımlanmış.  
   
-4.  Tasarım görünümünde, özelliklerini görüntülemek için uygulama düğmesini tıklatın. Özellik değerleri aşağıdaki gibi değiştirin: **görüntü** için `IDB_RIBBON_MAIN`, **komut istemi** için `File`, **anahtarları** için `f`, **büyük görüntüleri** için `IDB_RIBBON_FILELARGE`, ve **küçük resimler** için `IDB_RIBBON_FILESMALL`.  
+4.  Tasarım görünümünde, özelliklerini görüntülemek için uygulama düğmesini tıklatın. Özellik değerleri aşağıdaki gibi değiştirin: **görüntü** için *IDB_RIBBON_MAIN*, **komut istemi** için *dosya*, **anahtarları** için *f*, **görüntülerin büyük** için *IDB_RIBBON_FILELARGE*, ve **küçük resimler** için *IDB_RIBBON_ FILESMALL*.  
   
 5.  Aşağıdaki değişiklikleri kullanıcı uygulama düğmesini tıklattığında görüntülenen menüde oluşturun. Üç nokta işaretine (**...** ) yanındaki **ana öğeleri** açmak için **öğeleri Düzenleyicisi**.  
   
-    1.  Tıklatın **Ekle** düğme eklemek için. Değişiklik **resim yazısı** için `&New`, **kimliği** için `ID_FILE_NEW`, **görüntü** için `0`, **büyük görüntü** için`0`.  
+    1.  Tıklatın **Ekle** düğme eklemek için. Değişiklik **resim yazısı** için *& Yeni*, **kimliği** için *ıd_fıle_new*, **görüntü** için *0*, **Büyük görüntü** için *0*.  
   
-    2.  Tıklatın **Ekle** ikinci düğme eklemek için. Değişiklik **resim yazısı** için `&Save`, **kimliği** için `ID_FILE_SAVE`, **görüntü** için `2`, ve **büyük görüntü** için`2`.  
+    2.  Tıklatın **Ekle** ikinci düğme eklemek için. Değişiklik **resim yazısı** için *& Kaydet*, **kimliği** için *ıd_fıle_save*, **görüntü** için *2* , ve **büyük görüntü** için *2*.  
   
-    3.  Tıklatın **Ekle** üçüncü bir düğme eklemek için. Değişiklik **resim yazısı** için `Save &As`, **kimliği** için `ID_FILE_SAVE_AS`, **görüntü** için `3`, ve **büyük görüntü** için`3`.  
+    3.  Tıklatın **Ekle** üçüncü bir düğme eklemek için. Değişiklik **resim yazısı** için *& Farklı Kaydet*, **kimliği** için *ıd_fıle_save_as*, **görüntü** için*3*, ve **büyük görüntü** için *3*.  
   
-    4.  Tıklatın **Ekle** dördüncü bir düğme eklemek için. Değişiklik **resim yazısı** için `&Print`, **kimliği** için `ID_FILE_PRINT`, **görüntü** için `4`, ve **büyük görüntü** için`4`.  
+    4.  Tıklatın **Ekle** dördüncü bir düğme eklemek için. Değişiklik **resim yazısı** için *& Yazdırma*, **kimliği** için *ıd_fıle_prınt*, **görüntü** için *4* , ve **büyük görüntü** için *4*.  
   
     5.  Değişiklik **öğesi** için yazın **ayırıcı** ve ardından **Ekle**.  
   
-    6.  Değişiklik **öğesi** için yazın **düğmesini**. Tıklatın **Ekle** beşinci düğme eklemek için. Değişiklik **resim yazısı** için `&Close`, **kimliği** için `ID_FILE_CLOSE`, **görüntü** için `5`, ve **büyük görüntü** için`5`.  
+    6.  Değişiklik **öğesi** için yazın **düğmesini**. Tıklatın **Ekle** beşinci düğme eklemek için. Değişiklik **resim yazısı** için *& Kapat*, **kimliği** için *ıd_fıle_close*, **görüntü** için *5* , ve **büyük görüntü** için *5*.  
   
 6.  Aşağıdaki değişiklikleri önceki adımda oluşturduğunuz Yazdır düğmesini altında bir alt oluşturun.  
   
-    1.  Tıklatın **yazdırma** düğmesini tıklatın, değiştirmek **öğesi** için yazın **etiket**ve ardından **Ekle**. Değişiklik **resim yazısı** için `Preview and print the document`.  
+    1.  Tıklatın **yazdırma** düğmesini tıklatın, değiştirmek **öğesi** için yazın **etiket**ve ardından **Ekle**. Değişiklik **resim yazısı** için *Önizleme ve yazdırma belge*.  
   
-    2.  Tıklatın **yazdırma** düğmesini tıklatın, değiştirmek **öğesi** için yazın **düğmesini**, tıklatıp **Ekle**. Değişiklik **resim yazısı** için `&Print`, **kimliği** için `ID_FILE_PRINT`, **görüntü** için `4`, ve **büyük görüntü** için`4`.  
+    2.  Tıklatın **yazdırma** düğmesini tıklatın, değiştirmek **öğesi** için yazın **düğmesini**, tıklatıp **Ekle**. Değişiklik **resim yazısı** için *& Yazdırma*, **kimliği** için *ıd_fıle_prınt*, **görüntü** için *4* , ve **büyük görüntü** için *4*.  
   
-    3.  Tıklatın **yazdırma** düğmesine tıklayın ve ardından **Ekle** düğme eklemek için. Değişiklik **resim yazısı** için `&Quick Print`, **kimliği** için `ID_FILE_PRINT_DIRECT`, **görüntü** için `7`, ve **büyük görüntü** için`7`.  
+    3.  Tıklatın **yazdırma** düğmesine tıklayın ve ardından **Ekle** düğme eklemek için. Değişiklik **resim yazısı** için *& Hızlı yazdırma*, **kimliği** için *ID_FILE_PRINT_DIRECT*, **görüntü** için*7*, ve **büyük görüntü** için *7*.  
   
-    4.  Tıklatın **yazdırma** düğmesine tıklayın ve ardından **Ekle** başka bir düğme eklemek için. Değişiklik **resim yazısı** için `Print Pre&view`, **kimliği** için `ID_FILE_PRINT_PREVIEW`, **görüntü** için `6`, ve **büyük görüntü** için`6`.  
+    4.  Tıklatın **yazdırma** düğmesine tıklayın ve ardından **Ekle** başka bir düğme eklemek için. Değişiklik **resim yazısı** için *yazdırma öncesi & görünümü*, **kimliği** için *ıd_fıle_prınt_prevıew*, **görüntü** için *6*, ve **büyük görüntü** için *6*.  
   
     5.  Artık değiştirilmiş **ana öğeleri**. Tıklatın **Kapat** çıkmak için **öğeleri Düzenleyicisi**.  
   
@@ -218,7 +218,7 @@ Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygul
   
     1.  İçinde **özellikleri** penceresinde, üç nokta işaretine (**...** ) yanındaki **düğmesini** açmak için **öğeleri Düzenleyicisi**.  
   
-    2.  Tıklatın **Ekle** düğme eklemek için. Değişiklik **resim yazısı** için `E&xit`, **kimliği** için `ID_APP_EXIT`, **görüntü** için `8`.  
+    2.  Tıklatın **Ekle** düğme eklemek için. Değişiklik **resim yazısı** için *Çı &*, **kimliği** için *ıd_app_exıt*, **görüntü** için *8* .  
   
  [[Bölümleri](#top)]  
   
@@ -233,7 +233,7 @@ Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygul
     CMFCRibbonBar m_wndRibbonBar;  
  ```  
   
-2.  In the mainfrm.cpp file, add the following code before the final `return` statement at the end of the `CMainFrame::OnCreate` function. This creates an instance of the ribbon bar.  
+2.  In the mainfrm.cpp file, add the following code before the final **return** statement at the end of the `CMainFrame::OnCreate` function. This creates an instance of the ribbon bar.  
   
  ``` *// Create the ribbon bar  
     if (!m_wndRibbonBar.Create(this))  
@@ -254,11 +254,11 @@ Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygul
   
 #### <a name="to-add-a-home-category-and-edit-panel"></a>Giriş Kategori ekleme ve paneli düzenlemek için  
   
-1.  Karalama programın yalnızca bir kategori gerektirir. Tasarım görünümü tıklatın **kategori** özelliklerini görüntülemek için. Özellik değerleri aşağıdaki gibi değiştirin: **resim yazısı** için `&Home`, **görüntülerin büyük** için `IDB_RIBBON_HOMELARGE`, **küçük resimler** için `IDB_RIBBON_HOMESMALL`.  
+1.  Karalama programın yalnızca bir kategori gerektirir. Tasarım görünümü tıklatın **kategori** özelliklerini görüntülemek için. Özellik değerleri aşağıdaki gibi değiştirin: **resim yazısı** için *& Giriş*, **görüntülerin büyük** için *IDB_RIBBON_HOMELARGE*,  **Küçük resimleri** için *IDB_RIBBON_HOMESMALL*.  
   
-2.  Her Şerit kategori adlandırılmış bölmelere düzenlenmiştir. Her paneli ilgili işlemleri denetimleri kümesini içerir. Bu kategori bir paneli sahiptir. Tıklatın **Masası**ve ardından değiştirmek **resim yazısı** için `Edit` ve **görüntü dizini** için `0`.  
+2.  Her Şerit kategori adlandırılmış bölmelere düzenlenmiştir. Her paneli ilgili işlemleri denetimleri kümesini içerir. Bu kategori bir paneli sahiptir. Tıklatın **Masası**ve ardından değiştirmek **resim yazısı** için *Düzenle* ve **görüntü dizini** için *0*.  
   
-3.  İçin **Düzenle** paneli, belgesinin içeriğini temizlemek için sorumlu olduğu bir düğme ekleyin. Bu düğme için ileti kimliği IDR_SCRIBBTYPE menüsü kaynak zaten tanımlanmış. Belirtin `Clear All` düğme metni ve düğmesi süsler bit eşlem dizini olarak. Açık **araç**ve ardından sürükleyin bir **düğmesini** için **Düzenle** paneli. Düğmesini tıklatın ve sonra değiştirmek **resim yazısı** için `Clear All`, **kimliği** için `ID_EDIT_CLEAR_ALL`, **görüntü dizini** için `0`, **büyük görüntü dizini**  için `0`.  
+3.  İçin **Düzenle** paneli, belgesinin içeriğini temizlemek için sorumlu olduğu bir düğme ekleyin. Bu düğme için ileti kimliği IDR_SCRIBBTYPE menüsü kaynak zaten tanımlanmış. Belirtin *Tümünü Temizle* düğme metni ve düğmesi süsler bit eşlem dizini olarak. Açık **araç**ve ardından sürükleyin bir **düğmesini** için **Düzenle** paneli. Düğmesini tıklatın ve sonra değiştirmek **resim yazısı** için *Tümünü Temizle*, **kimliği** için *ıd_edıt_clear_all*, **görüntü dizini** için *0*, **büyük görüntü dizini** için *0*.  
   
 4.  Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. Karalama uygulamasını görüntülenmesi gerekir ve bir menü çubuğu yerine penceresinin üst bir Şerit çubuğu olmalıdır. Şerit çubuğu bir kategori olmalıdır **giriş**, ve **giriş** bir paneli olmalıdır **Düzenle**. Eklediğiniz Şerit düğmeleri var olan olay işleyicileri ile ilişkili olmalıdır ve **açık**, **Kapat**, **kaydetmek**, **yazdırma**, ve **Tümünü Temizle** düğmeleri beklendiği gibi çalışmalıdır.  
   

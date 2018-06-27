@@ -26,17 +26,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13a85ba03089a9536c8c6512bccd09f1eb34c0a9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cadb06076ff7a3dd481a1bcedc9cd0afe4989f28
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381094"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36950454"
 ---
 # <a name="status-bar-implementation-in-mfc"></a>MFC'de Durum Çubuğu Uygulaması
 A [CStatusBar](../mfc/reference/cstatusbar-class.md) denetim çubuğu metni çıkış bölmeleri oluşan bir satır içeren bir nesnedir. Çıkış bölmeleri, ileti satırları ve durum göstergesi olarak yaygın olarak kullanılır. Örnekler seçili menü komutu kısaca açıklayan menü Yardım iletisi satırları ve Kaydırma kilidi, NUM LOCK ve diğer anahtarlar durumunu göster göstergelerini içerir.  
   
- MFC sürüm 4. 0'dan sonra durum çubukları sınıfı kullanılarak uygulanan [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md), bir durum çubuğu ortak denetimi yalıtır. Geriye dönük uyumluluk için MFC eski durum çubuğu uygulaması sınıfında korur **COldStatusBar**. MFC önceki sürümleri için belgelere açıklar **COldStatusBar** altında `CStatusBar`.  
+ MFC sürüm 4. 0'dan sonra durum çubukları sınıfı kullanılarak uygulanan [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md), bir durum çubuğu ortak denetimi yalıtır. Geriye dönük uyumluluk için MFC eski durum çubuğu uygulaması sınıfında korur `COldStatusBar`. MFC önceki sürümleri için belgelere açıklar `COldStatusBar` altında `CStatusBar`.  
   
  [CStatusBar::GetStatusBarCtrl](../mfc/reference/cstatusbar-class.md#getstatusbarctrl), üye işlevi yeni MFC 4.0 ile Windows ortak denetimin durum çubuğu özelleştirme ve ek işlevsellik için desteğinden olanak tanır. `CStatusBar` Windows ortak denetimleri işlevselliğini çoğunu size üye işlevleri; çağırdığınızda ancak `GetStatusBarCtrl`, durum çubukları durum çubuğu özelliklerini daha da verebilirsiniz. Çağırdığınızda `GetStatusBarCtrl`, bir başvuru döndürür bir `CStatusBarCtrl` nesnesi. Durum çubuğu denetimi işlemek için bu başvuruyu kullanabilirsiniz.  
   

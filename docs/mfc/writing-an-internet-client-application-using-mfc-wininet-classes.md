@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 822b75ec71d79b6e40ec6b61a77239707c32ce39
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 00ace36eef483d8385d718e14e1fc4c5f4e9ea1e
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384442"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956479"
 ---
 # <a name="writing-an-internet-client-application-using-mfc-wininet-classes"></a>MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma
 Her Internet istemci uygulaması Internet oturumu temelidir. MFC Internet oturumları sınıfındaki nesneler olarak uygulayan [CInternetSession](../mfc/reference/cinternetsession-class.md). Bu sınıf kullanarak, bir Internet oturum ya da birkaç eşzamanlı oturumlar oluşturabilirsiniz.  
@@ -43,9 +43,9 @@ Her Internet istemci uygulaması Internet oturumu temelidir. MFC Internet oturum
   
 -   Kullanırsanız `CInternetSession::OpenURL` çağrısı, sunucu bağlantısı kurmak için `OpenURL` döndüren bir `CStdioFile`.  
   
--   Varsa kullanmak **CInternetSession::GetFtpConnection**, `GetGopherConnection`, veya `GetHttpConnection` sunucu bağlantısı kurmak için çağırmalısınız `CFtpConnection::OpenFile`, `CGopherConnection::OpenFile`, veya **CHttpConnection::OpenRequest,**  sırasıyla döndürmek için bir `CInternetFile`, `CGopherFile`, veya `CHttpFile`sırasıyla.  
+-   Varsa kullanmak `CInternetSession::GetFtpConnection`, `GetGopherConnection`, veya `GetHttpConnection` sunucu bağlantısı kurmak için çağırmalısınız `CFtpConnection::OpenFile`, `CGopherConnection::OpenFile`, veya `CHttpConnection::OpenRequest`, sırasıyla döndürmek için bir `CInternetFile`, `CGopherFile`, veya `CHttpFile`, sırasıyla.  
   
- Internet istemci uygulaması uygulamaya ilişkin adımlar, temel genel bir Internet istemcisi oluşturduğunuz bağlı olarak farklılık **OpenURL** veya birini kullanarak bir protokole özgü istemci **GetConnection** İşlevler.  
+ Internet istemci uygulaması uygulamaya ilişkin adımlar, temel genel bir Internet istemcisi oluşturduğunuz bağlı olarak farklılık `OpenURL` veya birini kullanarak bir protokole özgü istemci `GetConnection` işlevleri.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   

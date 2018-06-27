@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42da6afd054f05bb37ac0b4ea8bf497a31e433b8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ff365134a9b952b92211418c03d147a65077c66e
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368052"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951858"
 ---
 # <a name="cdialogex-class"></a>CDialogEx sınıfı
 `CDialogEx` Sınıfı bir iletişim kutusunun arka plan resmi ve arka plan rengini belirtir.  
@@ -90,16 +90,16 @@ CDialogEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nIDTemplate`  
+ [in] *nIDTemplate*  
  Bir iletişim kutusu şablonu kaynak kimliği.  
   
- [in] `lpszTemplateName`  
+ [in] *lpszTemplateName*  
  Bir iletişim kutusu şablonu kaynak adı.  
   
- [in] `pParent`  
+ [in] *pParent*  
  Üst pencere için bir işaretçi. Varsayılan değer `NULL` şeklindedir.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Üst pencere için bir işaretçi. Varsayılan değer `NULL` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -116,10 +116,10 @@ void SetBackgroundColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `color`  
+ [in] *rengi*  
  RGB renk değeri.  
   
- [in] `bRepaint`  
+ [in] *bRepaint*  
  `TRUE` Ekran hemen güncelleştirmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -142,19 +142,19 @@ BOOL SetBackgroundImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hBitmap`  
+ [in] *Hbıtmap*  
  Arka plan görüntüsü için bir tanıtıcı.  
   
- [in] `uiBmpResId`  
+ [in] *uiBmpResId*  
  Arka plan görüntü kaynak kimliği.  
   
- [in] `location`  
+ [in] *konumu*  
  Aşağıdakilerden birini `CDialogEx::BackgroundLocation` görüntüsünün konumu belirten değerleri. Geçerli değerler BACKGR_TILE, BACKGR_TOPLEFT, BACKGR_TOPRIGHT, BACKGR_BOTTOMLEFT ve BACKGR_BOTTOMRIGHT içerir. BACKGR_TILE varsayılan değerdir.  
   
- [in] `bAutoDestroy`  
+ [in] *bAutoDestroy*  
  `TRUE` otomatik olarak arka plan görüntüsü yok etmek için; Aksi takdirde `FALSE`.  
   
- [in] `bRepaint`  
+ [in] *bRepaint*  
  `TRUE` anında iletişim kutusunu yeniden boyutlandırmaya; Aksi takdirde `FALSE`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

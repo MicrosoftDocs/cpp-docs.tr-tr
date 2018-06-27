@@ -26,15 +26,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d899d9952ae13b23121fb0b7a188f8136315c342
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c033d33dd6b1e6c0ccd5bbdb4b6af6939521f592
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384140"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956180"
 ---
 # <a name="when-update-handlers-are-called"></a>Güncelleştirme İşleyicilerini Çağırma Zamanı
-Kullanıcının oluşturduğu Dosya menüsünde fare tıklamaları varsayalım bir `WM_INITMENUPOPUP` ileti. Kullanıcı görebilmesi menüyü aşağı bırakır önce framework'ün güncelleştirme mekanizması topluca Dosya menüsünden tüm öğeleri güncelleştirir.  
+Kullanıcı bir WM_INITMENUPOPUP iletisi oluşturur Dosya menüsünde fare tıklamaları varsayalım. Kullanıcı görebilmesi menüyü aşağı bırakır önce framework'ün güncelleştirme mekanizması topluca Dosya menüsünden tüm öğeleri güncelleştirir.  
   
  Bunu yapmak için standart komut yönlendirmeyi boyunca açılır menüde tüm menü öğeleri için komutları framework yollar güncelleştirin. Yönlendirme komut hedefleri tüm menü öğelerini güncelleştirme komutu bir uygun ileti eşleme girişi ile eşleştirerek güncelleştirme fırsatına sahip (form `ON_UPDATE_COMMAND_UI`) ve bir "Güncelleştirme işleyici" işlevi çağırma. Bu nedenle, altı menü öğelerini içeren bir menü için altı güncelleştirme komutları gönderilir. Menü öğesi komut kimliği için bir güncelleştirme işleyici zaten varsa, güncelleştirme yapmak için çağrılır. Aksi durumda, framework bu komut kimliği için bir işleyici varlığını denetler ve etkinleştirir veya menü öğesi uygun olarak devre dışı bırakır.  
   
@@ -42,7 +42,7 @@ Kullanıcının oluşturduğu Dosya menüsünde fare tıklamaları varsayalım b
   
  Devre dışı bırakma varsayılan kullanıcı arabirimi nesnelerini devre dışı bırakmak mümkündür. Daha fazla bilgi için bkz: [m_bAutoMenuEnable](../mfc/reference/cframewnd-class.md#m_bautomenuenable) sınıf üyesi `CFrameWnd` içinde *MFC başvurusu*.  
   
- Menü başlatma uygulama aldığında gerçekleşen Framework'te otomatik bir `WM_INITMENUPOPUP` ileti. Boşta döngü sırasında menüleri için yaptığı gibi komut düğmesi güncelleştirme işleyicileri için benzer şekilde yönlendirme framework arar.  
+ Menü başlatma uygulama WM_INITMENUPOPUP iletisi aldığında gerçekleşen Framework'te otomatik olarak yapılır. Boşta döngü sırasında menüleri için yaptığı gibi komut düğmesi güncelleştirme işleyicileri için benzer şekilde yönlendirme framework arar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Kullanıcı Arabirimi Nesnelerini Güncelleştirme](../mfc/how-to-update-user-interface-objects.md)

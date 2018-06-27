@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1dac40e91dd7b0a91c5d76b0d665d075e562267
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4342ed03991317bd030d308dbac9945734dcbd9e
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357851"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954714"
 ---
 # <a name="cacceleratedeceleratetransition-class"></a>CAccelerateDecelerateTransition sınıfı
 Bir accelerate uygulayan-geçiş hızını düşürün.  
@@ -81,16 +81,16 @@ CAccelerateDecelerateTransition(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `duration`  
+ *Süre*  
  Geçiş süresi.  
   
- `finalValue`  
+ *finalValue*  
  Geçiş işleminin sonunda animasyon değişkeninin değeri.  
   
- `accelerationRatio`  
+ *accelerationRatio*  
  Süre hızlandırmaya harcanan süre oranı.  
   
- `decelerationRatio`  
+ *decelerationRatio*  
  Süre yavaşlatıcı harcanan süre oranı.  
   
 ##  <a name="create"></a>  CAccelerateDecelerateTransition::Create  
@@ -103,7 +103,7 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
-`pLibrary`  
+*pLibrary*  
  Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](https://msdn.microsoft.com/library/windows/desktop/dd371897), standart geçişleri kitaplığı tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

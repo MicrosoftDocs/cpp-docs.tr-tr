@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94609d9ee589d42c440324cb8782c35720b23214
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 61dc2134a2da6570c748cebbfc770b213863de04
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33353701"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957253"
 ---
 # <a name="cd2dlineargradientbrush-class"></a>CD2DLinearGradientBrush sınıfı
 ID2D1LinearGradientBrush için sarmalayıcı.  
@@ -121,7 +121,7 @@ void Attach(ID2D1LinearGradientBrush* pResource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pResource`  
+ *pResource*  
  Mevcut kaynak arabirimi. NULL olamaz  
   
 ##  <a name="cd2dlineargradientbrush"></a>  CD2DLinearGradientBrush::CD2DLinearGradientBrush  
@@ -140,28 +140,28 @@ CD2DLinearGradientBrush(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentTarget`  
+ *pParentTarget*  
  İşleme hedefi için bir işaretçi.  
   
- `gradientStops`  
+ *gradientStops*  
  Bir dizi D2D1_GRADIENT_STOP yapıları için bir işaretçi.  
   
- `gradientStopsCount`  
+ *gradientStopsCount*  
  Gradyan durakları sayısını gradientStops dizisinde belirtir 1'e eşit veya daha büyük değer.  
   
- `LinearGradientBrushProperties`  
+ *LinearGradientBrushProperties*  
  Başlangıç ve bitiş noktalarını geçişin.  
   
- `colorInterpolationGamma`  
+ *colorInterpolationGamma*  
  Hangi renkte gradyan durakları arasında ilişkilendirme gerçekleştirilir alanı.  
   
- `extendMode`  
+ *extendMode*  
  [0,1] normalleştirilmiş aralığın dışında geçişin davranışı.  
   
- `pBrushProperties`  
+ *pBrushProperties*  
  Opaklık ve fırça dönüşümü için bir işaretçi.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
   
 ##  <a name="create"></a>  CD2DLinearGradientBrush::Create  
@@ -172,7 +172,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pRenderTarget`  
+ *pRenderTarget*  
  İşleme hedefi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -257,7 +257,7 @@ void SetEndPoint(CD2DPointF point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `point`  
+ *Noktası*  
  Doğrusal geçişin fırça koordinat bitiş iki boyutlu koordinatları  
   
 ##  <a name="setstartpoint"></a>  CD2DLinearGradientBrush::SetStartPoint  
@@ -268,7 +268,7 @@ void SetStartPoint(CD2DPointF point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `point`  
+ *Noktası*  
  Doğrusal geçişin fırça koordinat başlangıç iki boyutlu koordinatları  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

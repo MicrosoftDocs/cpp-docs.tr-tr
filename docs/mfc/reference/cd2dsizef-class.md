@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0093c92604013e4c1aef4046f244d7bcd3f71958
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e939d189d991ef234e940b272291c2da6c931684
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33353331"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954484"
 ---
 # <a name="cd2dsizef-class"></a>CD2DSizeF sınıfı
 D2D1_SIZE_F için sarmalayıcı.  
@@ -48,7 +48,7 @@ class CD2DSizeF : public D2D1_SIZE_F;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CD2DSizeF::IsNull](#isnull)|Döndürür bir `boolean` bir ifade geçerli bir veri içerip içermediğini gösteren değeri ( `null`).|  
+|[CD2DSizeF::IsNull](#isnull)|Döndürür bir **boolean** bir ifade geçerli bir veri içerip içermediğini gösteren değeri ( **null**).|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -79,13 +79,13 @@ CD2DSizeF(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `size`  
+ *Boyutu*  
  Kaynak boyutu  
   
- `cx`  
+ *CX*  
  Kaynak genişliği  
   
- `cy`  
+ *CY*  
  Kaynak yüksekliği  
   
 ##  <a name="isnull"></a>  CD2DSizeF::IsNull  

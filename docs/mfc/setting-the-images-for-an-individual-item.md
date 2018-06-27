@@ -15,33 +15,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7f3dbdf4d386e40802d74459dd2854035b5b7c8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aec02a07de8fad2f9ad063295090be5ace4146e6
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33380607"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953808"
 ---
 # <a name="setting-the-images-for-an-individual-item"></a>Ayrı Bir Öğe için Görüntüleri Ayarlama
-Genişletilmiş Birleşik giriş kutusu öğesi tarafından kullanılan görüntüleri farklı türde değerler tarafından belirlenir `iImage`, **iSelectedImage**, ve **IOverlay** üyeleri [COMBOBOXEXITEM ](http://msdn.microsoft.com/library/windows/desktop/bb775746) yapısı. Her değer denetim ilişkili görüntü listesinden görüntü dizinidir. Varsayılan olarak, bu üyeler öğesi için resim görüntülemek üzere denetimi neden 0 olarak ayarlanır. Belirli bir öğe için görüntüleri kullanmak istiyorsanız, yapısı buna birleşik giriş kutusu öğesi eklerken ya da var olan bir birleşik giriş kutusu öğesini değiştirerek değiştirebilirsiniz.  
+Genişletilmiş Birleşik giriş kutusu öğesi tarafından kullanılan görüntüleri farklı türde değerler tarafından belirlenir *iImage*, *iSelectedImage*, ve *IOverlay* üyeleri[ COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746) yapısı. Her değer denetim ilişkili görüntü listesinden görüntü dizinidir. Varsayılan olarak, bu üyeler öğesi için resim görüntülemek üzere denetimi neden 0 olarak ayarlanır. Belirli bir öğe için görüntüleri kullanmak istiyorsanız, yapısı buna birleşik giriş kutusu öğesi eklerken ya da var olan bir birleşik giriş kutusu öğesini değiştirerek değiştirebilirsiniz.  
   
 ## <a name="setting-the-image-for-a-new-item"></a>Yeni bir öğe için resmin ayarlama  
- Yeni bir öğe ekliyorsanız, başlatma `iImage`, **iSelectedImage**, ve **IOverlay** yapısı uygun değerlerle üyeleri ve ardından bir çağrı ile öğe ekleme [ CComboBoxEx::InsertItem](../mfc/reference/ccomboboxex-class.md#insertitem).  
+ Yeni bir öğe ekliyorsanız, başlatma *iImage*, *iSelectedImage*, ve *IOverlay* yapısı uygun değerlerle üyeleri ve ardından bir çağrı ile öğe ekleme [CComboBoxEx::InsertItem](../mfc/reference/ccomboboxex-class.md#insertitem).  
   
  Aşağıdaki örnek yeni bir Genişletilmiş Birleşik giriş kutusu öğesi ekler (`cbi`) Genişletilmiş Birleşik giriş kutusu denetimine (`m_comboEx`), tüm üç durumları görüntü için dizinlerini sağladığını:  
   
  [!code-cpp[NVC_MFCControlLadenDialog#12](../mfc/codesnippet/cpp/setting-the-images-for-an-individual-item_1.cpp)]  
   
 ## <a name="setting-the-image-for-an-existing-item"></a>Var olan bir öğe için resmin ayarlama  
- Varolan öğeyi değiştiriyorsanız, çalışmanız için gereken **maskesi** üyesi bir **COMBOBOXEXITEM** yapısı.  
+ Varolan öğeyi değiştiriyorsanız, çalışmanız için gereken *maskesi* üyesi bir **COMBOBOXEXITEM** yapısı.  
   
 #### <a name="to-modify-an-existing-item-to-use-images"></a>Görüntüleri kullanmak için varolan öğeyi değiştirmek için  
   
-1.  Bildirme bir **COMBOBOXEXITEM** yapısı ve ayarlama **maskesi** değerlerine veri üyesi olduğunuz değiştirme ilgilenen.  
+1.  Bildirme bir **COMBOBOXEXITEM** yapısı ve ayarlama *maskesi* değerlerine veri üyesi olduğunuz değiştirme ilgilenen.  
   
 2.  Bu yapı kullanarak yaptığınız yapılan bir çağrı [CComboBoxEx::GetItem](../mfc/reference/ccomboboxex-class.md#getitem).  
   
-3.  Değiştirme **maskesi**, `iImage`, ve **iSelectedImage** yeni döndürülen yapısı, uygun değerleri kullanarak üyeleri.  
+3.  Değiştirme *maskesi*, *iImage*, ve *iSelectedImage* yeni döndürülen yapısı, uygun değerleri kullanarak üyeleri.  
   
 4.  Çağırmaya [CComboBoxEx::SetItem](../mfc/reference/ccomboboxex-class.md#setitem), değiştirilmiş yapısındaki geçen.  
   

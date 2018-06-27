@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a96ccdd4ce5c49f18c12aa85060954fc97a3408b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dc461a0a2325f768711f6d7529949ee24a1b4a25
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385188"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954890"
 ---
 # <a name="windows-sockets-using-class-casyncsocket"></a>Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma
 Bu makalede sınıfının nasıl kullanılacağını açıklanmaktadır [CAsyncSocket](../mfc/reference/casyncsocket-class.md). Bu sınıf Windows Sockets API çok düşük düzeyde yalıtır unutmayın. `CAsyncSocket` ayrıntılı ağ iletişimleri bilmeniz ancak ağ olayları bildirim için geri çağırmaları kolaylık istediğiniz programcıları tarafından kullanılır. Bu makalede, bu duymadığını, yalnızca temel yönergeler sağlar. Büyük olasılıkla kullanmayı düşünmelisiniz `CAsyncSocket` bir MFC uygulamasında birden çok ağ protokolleri postalarla Windows Sockets kolaylığı istiyor, ancak esneklik yöneticilerin taviz istiyor musunuz. Daha fazla iletişim kendiniz daha kullanarak doğrudan daha genel alternatif modeli sınıfının programlama tarafından daha iyi verimlilik elde edebilirsiniz ayrıca eşitleyerek `CSocket`.  
@@ -53,13 +53,13 @@ Bu makalede sınıfının nasıl kullanılacağını açıklanmaktadır [CAsyncS
   
      [!code-cpp[NVC_MFCSimpleSocket#3](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_1.cpp)]  
   
-     -veya-  
+     veya  
   
      [!code-cpp[NVC_MFCSimpleSocket#4](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_2.cpp)]  
   
-     Yukarıdaki ilk Oluşturucusu oluşturur bir `CAsyncSocket` yığında nesnesi. İkinci oluşturucu oluşturur bir `CAsyncSocket` yığında. İlk [oluşturma](../mfc/reference/casyncsocket-class.md#create) çağrısı yukarıdaki bir akışa yuva oluşturmak için varsayılan parametreleri kullanır. İkinci **oluşturma** çağrısı, belirtilen bağlantı noktası ve adresi ile bir veri birimi yuva oluşturur. (Kullanabilirsiniz **oluşturma** yapım yöntemlerden sürümüyle.)  
+     Yukarıdaki ilk Oluşturucusu oluşturur bir `CAsyncSocket` yığında nesnesi. İkinci oluşturucu oluşturur bir `CAsyncSocket` yığında. İlk [oluşturma](../mfc/reference/casyncsocket-class.md#create) çağrısı yukarıdaki bir akışa yuva oluşturmak için varsayılan parametreleri kullanır. İkinci `Create` çağrısı, belirtilen bağlantı noktası ve adresi ile bir veri birimi yuva oluşturur. (Kullanabilirsiniz `Create` yapım yöntemlerden sürümüyle.)  
   
-     Parametreleri **oluşturma** şunlardır:  
+     Parametreleri `Create` şunlardır:  
   
     -   "Bağlantı noktası": kısa bir tamsayıdır.  
   
@@ -75,14 +75,14 @@ Bu makalede sınıfının nasıl kullanılacağını açıklanmaktadır [CAsyncS
   
 2.  Yuva bir istemci ise, yuva nesnesi bir sunucuya yuva, kullanarak [CAsyncSocket::Connect](../mfc/reference/casyncsocket-class.md#connect).  
   
-     -veya-  
+     veya  
   
      Yuva bir sunucu ise dinleme yapmaya başlamasını yuva ayarlayın (ile [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#listen)) bir istemciden bağlanma girişimleri için. Bir bağlantı isteği alındıktan sonra kendisiyle kabul [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#accept).  
   
      Bir bağlantı kabul ettikten sonra parolalar doğrulama gibi görevleri gerçekleştirebilirsiniz.  
   
     > [!NOTE]
-    >  **Kabul** üye işlevi yeni, boş bir başvuru alır `CSocket` , parametre olarak nesne. Arama yapmadan önce bu nesneyi oluşturmalıdır **kabul**. Bu yuva nesne kapsam dışında kalırsa, bağlantıyı kapatır. Çağırmayın **oluşturma** bu yeni yuva nesnesi için. Bir örnek için bkz: [Windows Yuvaları: sırası, işlemleri](../mfc/windows-sockets-sequence-of-operations.md).  
+    >  `Accept` Üye işlevi yeni, boş bir başvuru alır `CSocket` , parametre olarak nesne. Arama yapmadan önce bu nesneyi oluşturmalıdır `Accept`. Bu yuva nesne kapsam dışında kalırsa, bağlantıyı kapatır. Çağırmayın `Create` bu yeni yuva nesnesi için. Bir örnek için bkz: [Windows Yuvaları: sırası, işlemleri](../mfc/windows-sockets-sequence-of-operations.md).  
   
 3.  Çağırarak diğer yuva iletişimleri gerçekleştiremeyen `CAsyncSocket` Windows Sockets API işlevleri kapsülleyen nesnenin üye işlevleri.  
   
@@ -107,7 +107,7 @@ Bu makalede sınıfının nasıl kullanılacağını açıklanmaktadır [CAsyncS
   
  Bu hüküm ve ek bilgiler tanımları için bkz: [Windows Yuvaları: engelleme](../mfc/windows-sockets-blocking.md), [Windows Yuvaları: bayt sıralama](../mfc/windows-sockets-byte-ordering.md), [Windows Yuvaları: dizeleri dönüştürme](../mfc/windows-sockets-converting-strings.md) .  
   
- Bu sorunların rağmen sınıf **CAsycnSocket** tüm alabilirsiniz denetim ve esneklik uygulamanızı gerektiriyorsa, doğru seçim sizin için olabilir. Sınıf kullanmayı düşünmeniz gerekir, varsa `CSocket` yerine. `CSocket` çok fazla ayrıntı sizden gizler: Windows iletilerini çağrıları engelleme sırasında ve verir Pompalar erişmek için BT `CArchive`, bayt sırası farklar ve sizin için dize dönüştürme yönetir.  
+ Bu sorunların rağmen sınıf `CAsycnSocket` tüm alabilirsiniz denetim ve esneklik uygulamanızı gerektiriyorsa, doğru seçim sizin için olabilir. Sınıf kullanmayı düşünmeniz gerekir, varsa `CSocket` yerine. `CSocket` çok fazla ayrıntı sizden gizler: Windows iletilerini çağrıları engelleme sırasında ve verir Pompalar erişmek için BT `CArchive`, bayt sırası farklar ve sizin için dize dönüştürme yönetir.  
   
  Daha fazla bilgi için bkz.:  
   

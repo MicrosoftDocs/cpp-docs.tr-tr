@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7be9a6a9db842f1e80be62f48a9990cff36168e5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 759f8e6f9349fdcac61f6aca81d311e3bbc39e1d
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367262"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957051"
 ---
 # <a name="cdaoindexfieldinfo-structure"></a>CDaoIndexFieldInfo Yapısı
 `CDaoIndexFieldInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan bir dizin alan nesne hakkında bilgiler içerir.  
@@ -38,7 +38,7 @@ struct CDaoIndexFieldInfo
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `m_strName`  
+ *m_strName*  
  Dizin alanı nesneyi benzersiz olarak adlandırır. Ayrıntılar için DAO Yardımı'ndaki "Name özelliği" konusuna bakın.  
   
  *m_bDescending*  

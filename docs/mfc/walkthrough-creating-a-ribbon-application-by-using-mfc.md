@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f715830c110f03811202d2e98dc097bfe712208
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3b1dada4601b7e20dd4e05af861d48099ce2391c
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385235"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36950986"
 ---
 # <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>İzlenecek yol: MFC Kullanarak Şerit Uygulaması Oluşturma
 Bu kılavuzda nasıl kullanılacağını gösterir **MFC Uygulama Sihirbazı'nı** Şerit varsayılan olan bir uygulama oluşturmak için. Sonra ekleyerek Şerit genişletebilirsiniz bir **özel** sahip Şerit kategori bir **Sık Kullanılanlar** Şerit paneli ve bazı sık kullanılan komutlar paneline ekleme.  
@@ -32,7 +32,7 @@ Bu kılavuzda nasıl kullanılacağını gösterir **MFC Uygulama Sihirbazı'nı
   
 1.  Kullanım **MFC Uygulama Sihirbazı'nı** Şerit sahip bir MFC uygulaması oluşturmak için. Sihirbazı'nı çalışma **dosya** menüsündeki **yeni**ve ardından **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusunda, genişletin **Visual C++** düğümü altında **yüklü şablonlar**seçin **MFC**ve ardından seçin **MFC Uygulama**. Proje için bir ad yazın, örneğin, `MFCRibbonApp`ve ardından **Tamam**.  
+2.  İçinde **yeni proje** iletişim kutusunda, genişletin **Visual C++** düğümü altında **yüklü şablonlar**seçin **MFC**ve ardından seçin **MFC Uygulama**. Proje için bir ad yazın, örneğin, *MFCRibbonApp*ve ardından **Tamam**.  
   
 3.  İlk sayfasında **MFC Uygulama Sihirbazı'nı**, tıklatın **sonraki**.  
   
@@ -40,7 +40,7 @@ Bu kılavuzda nasıl kullanılacağını gösterir **MFC Uygulama Sihirbazı'nı
   
 5.  Üzerinde **bileşik belge desteği** sayfasında, olduğundan emin olun **hiçbiri** seçilir ve ardından **sonraki**.  
   
-6.  Üzerinde **belge şablonu özellikleri** sayfasında **dosya uzantısı** kutusuna, bu uygulama oluşturur, örneğin, belgeler için bir dosya adı uzantısı yazın `mfcrbnapp`. **İleri**'ye tıklayın.  
+6.  Üzerinde **belge şablonu özellikleri** sayfasında **dosya uzantısı** kutusuna, bu uygulama oluşturur, örneğin, belgeler için bir dosya adı uzantısı yazın *mfcrbnapp*. **İleri**'ye tıklayın.  
   
 7.  Üzerinde **veritabanı desteği** sayfasında, olduğundan emin olun **hiçbiri** seçilir ve ardından **sonraki**.  
   
@@ -62,14 +62,14 @@ Bu kılavuzda nasıl kullanılacağını gösterir **MFC Uygulama Sihirbazı'nı
   
      Başlık bir kategori **Kategori1** oluşturulur. Varsayılan olarak, kategori tek bir panel içerir.  
   
-     Sağ **Kategori1** ve ardından **özellikleri**. İçinde **özellikleri** penceresinde, değişiklik **resim yazısı** için `Custom`.  
+     Sağ **Kategori1** ve ardından **özellikleri**. İçinde **özellikleri** penceresinde, değişiklik **resim yazısı** için *özel*.  
   
      **Görüntülerin büyük** ve **küçük resimler** özellikleri simgelerle bu kategorideki Şerit öğeleri için kullanılan bit eşlemler belirtin. Özel bit eşlemler oluşturma bu yönerge kapsamının dışında olduğundan, basitçe sihirbaz tarafından oluşturulan bit eşlemleri yeniden kullanın. Küçük bit eşlemler 16x16 pikseldir. Küçük resimler için IDB_FILESMALL kaynak kimliği ile erişilen bit eşlemler kullanın. Büyük bit eşlemler 32x32 pikseldir. Büyük resimler için IDB_FILELARGE kaynak kimliği ile erişilen bit eşlemler kullanın.  
   
     > [!NOTE]
     >  Yüksek nokta/inç (HDPI) ekranlarda otomatik olarak görüntülerin HDPI sürümleri kullanılır.  
   
-3.  Ardından, paneli özelleştirin. Paneller birbirlerine mantıksal olarak ilişkili öğeleri gruplandırmak için kullanılır. Örneğin, **giriş** sekme, bu uygulamanın **Kes**, **kopya**, ve **Yapıştır** komutları tüm bulunur  **Pano** paneli. Bölmenin özelleştirmek için sağ **Panel1** ve ardından **özellikleri**. İçinde **özellikleri** penceresinde, değişiklik **resim yazısı** için `Favorites`.  
+3.  Ardından, paneli özelleştirin. Paneller birbirlerine mantıksal olarak ilişkili öğeleri gruplandırmak için kullanılır. Örneğin, **giriş** sekme, bu uygulamanın **Kes**, **kopya**, ve **Yapıştır** komutları tüm bulunur  **Pano** paneli. Bölmenin özelleştirmek için sağ **Panel1** ve ardından **özellikleri**. İçinde **özellikleri** penceresinde, değişiklik **resim yazısı** için *Sık Kullanılanlar*.  
   
      Belirleyebileceğiniz **görüntü dizini** bölmesinin. Şerit paneli eklenirse, görüntülenen simge bu numarayı belirtir **hızlı erişim araç çubuğu**. Simgenin kendisi şerit panelinde görüntülenmez.  
   
@@ -83,9 +83,9 @@ Bu kılavuzda nasıl kullanılacağını gösterir **MFC Uygulama Sihirbazı'nı
   
      Oluşturmak için **yazdırma** düğmesini tıklatın, bir düğme aracını paneline sürükleyin.  
   
-     İçinde **özellikleri** penceresinde, değişiklik **kimliği** özelliğine **ıd_fıle_prınt**, hangi zaten tanımlanmalıdır. Değişiklik **resim yazısı** için `Print`. Değişiklik **görüntü dizini** için `4`.  
+     İçinde **özellikleri** penceresinde, değişiklik **kimliği** özelliğine **ıd_fıle_prınt**, hangi zaten tanımlanmalıdır. Değişiklik **resim yazısı** için *yazdırma*. Değişiklik **görüntü dizini** için *4*.  
   
-     Oluşturmak için **hızlı yazdırma** düğmesini tıklatın, özellik değeri sütununu tıklayın **menü öğeleri**ve ardından üç nokta (**...** ). İçinde **öğeleri Düzenleyicisi**, etiketlenmemiş tıklatın **Ekle** menü öğesi oluşturmak için düğmesini. İçinde **özellikleri** penceresinde, değişiklik **resim yazısı** için `Quick Print`, **kimliği** için `ID_FILE_PRINT_DIRECT`, ve **görüntü** için `5` . Resim özelliği IDB_FILESMALL bit eşlem kaynağındaki Hızlı Yazdır simgesini belirtir.  
+     Oluşturmak için **hızlı yazdırma** düğmesini tıklatın, özellik değeri sütununu tıklayın **menü öğeleri**ve ardından üç nokta (**...** ). İçinde **öğeleri Düzenleyicisi**, etiketlenmemiş tıklatın **Ekle** menü öğesi oluşturmak için düğmesini. İçinde **özellikleri** penceresinde, değişiklik **resim yazısı** için *hızlı yazdırma*, **kimliği** için *ID_FILE_PRINT_DIRECT*, ve **görüntü** için *5*. Resim özelliği IDB_FILESMALL bit eşlem kaynağındaki Hızlı Yazdır simgesini belirtir.  
   
 3.  Düğmelerin şerit paneline eklendiğini doğrulamak için uygulamayı derleyin ve çalıştırın. Uygulama üzerinde oluşturmak için **yapı** menüsünde tıklatın **yapı çözümü**. Uygulama başarıyla oluşturursa tıklayarak uygulamayı çalıştırın **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menüsü. **Yazdırma** düğmesi ve birleşik giriş kutusu üzerinde **Sık Kullanılanlar** üzerinde panel **özel** Şeritteki sekmenin görüntülenmesi.  
   

@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 197fc5ecb1b9676dd1ff11327c62950992f6f06d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d3a89cb258b7208346a76cd2a59eb8da40c38087
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33359235"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36950699"
 ---
 # <a name="cd2dlayer-class"></a>CD2DLayer sınıfı
 ID2D1Layer için sarmalayıcı.  
@@ -108,7 +108,7 @@ void Attach(ID2D1Layer* pResource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pResource`  
+ *pResource*  
  Mevcut kaynak arabirimi. NULL olamaz  
   
 ##  <a name="cd2dlayer"></a>  CD2DLayer::CD2DLayer  
@@ -121,10 +121,10 @@ CD2DLayer(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentTarget`  
+ *pParentTarget*  
  İşleme hedefi için bir işaretçi.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
   
 ##  <a name="create"></a>  CD2DLayer::Create  
@@ -135,7 +135,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pRenderTarget`  
+ *pRenderTarget*  
  İşleme hedefi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

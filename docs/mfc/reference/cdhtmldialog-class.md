@@ -126,12 +126,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6259ee783f6964f3a4f7bd6db31688fc77c2aa26
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6390c1dc25d1470cb6d0827b2b6d6e3521bee493
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377013"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957363"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog sınıfı
 HTML kullanmak iletişim kutuları oluşturmak için kullanılan kendi kullanıcı arabirimlerini uygulamak için iletişim kutusu kaynakları yerine.  
@@ -189,7 +189,7 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 |[CDHtmlDialog::OnDocumentComplete](#ondocumentcomplete)|Belgeye erişildiğinde bir uygulamayı bilgilendirecek çerçevesi tarafından çağrılır `READYSTATE_COMPLETE` durumu.|  
 |[CDHtmlDialog::OnDocWindowActivate](#ondocwindowactivate)|Belge penceresine etkinleştirilmiş veya devre dışı olduğunda çerçevesi tarafından çağrılır.|  
 |[CDHtmlDialog::OnFrameWindowActivate](#onframewindowactivate)|Çerçeve penceresi etkin veya devre dışı bırakıldığında çerçevesi tarafından çağrılır.|  
-|[CDHtmlDialog::OnInitDialog](#oninitdialog)|Yanıt olarak adlı **WM_INITDIALOG** ileti.|  
+|[CDHtmlDialog::OnInitDialog](#oninitdialog)|WM_INITDIALOG iletisine yanıt olarak çağrılır.|  
 |[CDHtmlDialog::OnNavigateComplete](#onnavigatecomplete)|Bir gezinme olayı tamamlandıktan sonra çerçevesi tarafından çağrılır.|  
 |[CDHtmlDialog::ResizeBorder](#resizeborder)|Kenarlık alanı yeniden boyutlandırmak için gereken nesne sizi uyarır.|  
 |[CDHtmlDialog::SetControlProperty](#setcontrolproperty)|ActiveX denetimi özelliği için yeni bir değer ayarlar.|  
@@ -216,7 +216,7 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 |[CDHtmlDialog::m_szHtmlResID](#m_szhtmlresid)|HTML kaynak kimliği dize sürümü|  
   
 ## <a name="remarks"></a>Açıklamalar  
- **CDHtmlDialog** ya da bir HTML kaynaktan görüntülenecek HTML veya bir URL yükleyebilirsiniz.  
+ `CDHtmlDialog` ya da bir HTML kaynaktan görüntülenecek HTML veya bir URL yükleyebilirsiniz.  
   
  `CDHtmlDialog` Ayrıca veri HTML denetimleriyle exchange ve düğmesine tıklar gibi HTML denetimlerinden olayları işlemek.  
   
@@ -288,19 +288,19 @@ CDHtmlDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Bir iletişim kutusu şablon kaynağı adı null ile sonlandırılmış bir dize.  
   
- `szHtmlResID`  
+ *szHtmlResID*  
  Bir HTML kaynak adı null ile sonlandırılmış bir dize.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Üst veya sahibi pencere nesnesi için bir işaretçi (tür [CWnd](../../mfc/reference/cwnd-class.md)) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim nesnenin üst pencere ana uygulama penceresine ayarlanır.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Bir iletişim kutusu şablon kaynağı kimliği numarasını içerir.  
   
- `nHtmlResID`  
+ *nHtmlResID*  
  Bir HTML kaynak kimliği sayısını içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -328,10 +328,10 @@ virtual BOOL CreateControlSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pContainer`  
+ *pContainer*  
  Bir işaretçi [COleControlContainer](../../mfc/reference/colecontrolcontainer-class.md) nesnesi  
   
- `ppSite`  
+ *ppSite*  
  Bir işaretçi bir işaretçi bir [COleControlSite](../../mfc/reference/colecontrolsite-class.md).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -359,19 +359,19 @@ void DDX_DHtml_AxControl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `szId`  
+ *szId*  
  ActiveX denetimi için HTML kaynağındaki nesne etiketinin kimliği parametresinin değeri.  
   
- `dispid`  
+ *DISPID*  
  Veri değişimi istediğiniz özellik gönderme kimliği.  
   
- `szPropName`  
+ *szPropName*  
  Özelliğin adı.  
   
- `var`  
+ *var*  
  Veri üyesi türü `VARIANT`, [COleVariant](../../mfc/reference/colevariant-class.md), veya [CComVariant](../../atl/reference/ccomvariant-class.md), ActiveX denetimi özelliği ile değiştirilen değeri tutar.  
   
 ### <a name="example"></a>Örnek  
@@ -388,10 +388,10 @@ void DDX_DHtml_CheckBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `szId`  
+ *szId*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
  *value*  
@@ -454,10 +454,10 @@ void DDX_DHtml_ElementText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `szId`  
+ *szId*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
  *DISPID*  
@@ -477,10 +477,10 @@ void DDX_DHtml_Radio(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `szId`  
+ *szId*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
  *value*  
@@ -497,10 +497,10 @@ void DDX_DHtml_SelectIndex(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `szId`  
+ *szId*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
  *value*  
@@ -517,10 +517,10 @@ void DDX_DHtml_SelectString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `szId`  
+ *szId*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
  *value*  
@@ -537,10 +537,10 @@ void DDX_DHtml_SelectValue(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `szId`  
+ *szId*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
  *value*  
@@ -564,8 +564,8 @@ STDMETHOD(EnableModeless)(BOOL fEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `fEnable`  
- Bkz: `fEnable` içinde [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) Windows SDK.  
+ *fEnable*  
+ Bkz: *fEnable* içinde [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **E_NOTIMPL**.  
@@ -583,11 +583,11 @@ STDMETHOD(FilterDataObject)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDO`  
- Bkz: `pDO` içinde [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) Windows SDK.  
+ *pDO*  
+ Bkz: *pDO* içinde [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) Windows SDK'sındaki.  
   
- `ppDORet`  
- Bkz: `ppDORet` içinde **IDocHostUIHandler::FilterDataObject** Windows SDK.  
+ *ppDORet*  
+ Bkz: *ppDORet* içinde **IDocHostUIHandler::FilterDataObject** Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **S_FALSE**.  
@@ -605,7 +605,7 @@ HRESULT GetControlDispatch(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  ActiveX denetimi HTML kimliği.  
   
  *ppdisp*  
@@ -634,16 +634,16 @@ VARIANT GetControlProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  ActiveX denetimi HTML kimliği.  
   
- `szPropName`  
+ *szPropName*  
  Geçerli kullanıcının varsayılan yerel bir özelliğin adı.  
   
- `pdispControl`  
+ *pdispControl*  
  `IDispatch` Bir ActiveX denetimini işaretçisi.  
   
- `dispid`  
+ *DISPID*  
  Bir özellik gönderme kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -660,7 +660,7 @@ void GetCurrentUrl(CString& szUrl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szUrl`  
+ *szUrl*  
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) almak için kullanılan URL içeren bir nesne.  
   
 ##  <a name="getdhtmldocument"></a>  CDHtmlDialog::GetDHtmlDocument  
@@ -687,11 +687,11 @@ STDMETHOD(GetDropTarget)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDropTarget`  
- Bkz: `pDropTarget` içinde [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) Windows SDK.  
+ *pDropTarget*  
+ Bkz: *pDropTarget* içinde [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) Windows SDK'sındaki.  
   
- `ppDropTarget`  
- Bkz: `ppDropTarget` içinde **IDocHostUIHandler::GetDropTarget** Windows SDK.  
+ *ppDropTarget*  
+ Bkz: *ppDropTarget* içinde **IDocHostUIHandler::GetDropTarget** Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **E_NOTIMPL**.  
@@ -700,7 +700,7 @@ STDMETHOD(GetDropTarget)(
  Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx), Windows SDK'ın açıklandığı gibi.  
   
 ##  <a name="getelement"></a>  CDHtmlDialog::GetElement  
- Belirtilen HTML öğesi bir arabirimini döndürür `szElementId`.  
+ Belirtilen HTML öğesi bir arabirimini döndürür *szElementId*.  
   
 ```  
 HRESULT GetElement(
@@ -715,7 +715,7 @@ HRESULT GetElement(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szElementId`  
+ *szElementId*  
  Bir HTML öğesi kimliği.  
   
  *ppdisp*  
@@ -743,14 +743,14 @@ BSTR GetElementHtml(LPCTSTR szElementId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szElementId`  
+ *szElementId*  
  Bir HTML öğesi kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- **InnerHtml** tarafından tanımlanan HTML öğesi özelliği `szElementId` veya **NULL** varsa öğe bulunamadı.  
+ **InnerHtml** tarafından tanımlanan HTML öğesi özelliği *szElementId* veya **NULL** varsa öğe bulunamadı.  
   
 ##  <a name="getelementinterface"></a>  CDHtmlDialog::GetElementInterface  
- İstenen arabirim işaretçisi ile tanımlanan HTML öğesi alır `szElementId`.  
+ İstenen arabirim işaretçisi ile tanımlanan HTML öğesi alır *szElementId*.  
   
 ```  
 template <class Q> HRESULT GetElementInterface(
@@ -765,13 +765,13 @@ HRESULT GetElementInterface(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szElementId`  
+ *szElementId*  
  Bir HTML öğesi kimliği.  
   
- `ppvObj`  
+ *ppvObj*  
  Adresi öğe bulunursa, istenen arabirim işaretçisi ile doldurulan bir işaretçi ve sorgu başarılı olur.  
   
- `riid`  
+ *nRIID*  
  Arabirim Kimliğini (IID) istenen arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -781,7 +781,7 @@ HRESULT GetElementInterface(
  [!code-cpp[NVC_MFCHtmlHttp#4](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_4.cpp)]  
   
 ##  <a name="getelementproperty"></a>  CDHtmlDialog::GetElementProperty  
- Tarafından tanımlanan özelliğinin değerini alır `dispid` tarafından tanımlanan HTML öğeden `szElementId`.  
+ Tarafından tanımlanan özelliğinin değerini alır *DISPID* tarafından tanımlanan HTML öğeden *szElementId*.  
   
 ```  
 VARIANT GetElementProperty(
@@ -790,28 +790,28 @@ VARIANT GetElementProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szElementId`  
+ *szElementId*  
  Bir HTML öğesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Bir özellik gönderme kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Özellik veya özellik veya öğe bulunamadı, boş bir değişken değeri.  
   
 ##  <a name="getelementtext"></a>  CDHtmlDialog::GetElementText  
- Alır **InnerText** tarafından tanımlanan HTML öğesi özelliği `szElementId`.  
+ Alır **InnerText** tarafından tanımlanan HTML öğesi özelliği *szElementId*.  
   
 ```  
 BSTR GetElementText(LPCTSTR szElementId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szElementId`  
+ *szElementId*  
  Bir HTML öğesi kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- **InnerText** tarafından tanımlanan HTML öğesi özelliği `szElementId` veya **NULL** varsa özelliği veya öğesi bulunamadı.  
+ **InnerText** tarafından tanımlanan HTML öğesi özelliği *szElementId* veya **NULL** varsa özelliği veya öğesi bulunamadı.  
   
 ##  <a name="getevent"></a>  CDHtmlDialog::GetEvent  
  Döndürür **IHTMLEventObj** geçerli olay nesnesine işaretçi.  
@@ -821,7 +821,7 @@ HRESULT GetEvent(IHTMLEventObj** ppEventObj);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ppEventObj`  
+ *ppEventObj*  
  İle doldurulan bir işaretçi adresini **IHTMLEventObj** arabirim işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -855,8 +855,8 @@ STDMETHOD(GetHostInfo)(DOCHOSTUIINFO* pInfo);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pInfo`  
- Bkz: `pInfo` içinde [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) Windows SDK.  
+ *pInfo*  
+ Bkz: *pInfo* içinde [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür `S_OK`.  
@@ -874,11 +874,11 @@ STDMETHOD(GetOptionKeyPath)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pchKey`  
- Bkz: `pchKey` içinde [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) Windows SDK.  
+ *pchKey*  
+ Bkz: *pchKey* içinde [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) Windows SDK'sındaki.  
   
- `dw`  
- Bkz: `dw` içinde **IDocHostUIHandler::GetOptionKeyPath** Windows SDK.  
+ *dw*  
+ Bkz: *dw* içinde **IDocHostUIHandler::GetOptionKeyPath** Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **E_NOTIMPL**.  
@@ -918,10 +918,10 @@ BOOL LoadFromResource(UINT nRes);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszResource`  
+ *lpszResource*  
  Yüklemek için kaynağın adını içeren bir dize için bir işaretçi.  
   
- `nRes`  
+ *nRes*  
  Yüklemek için kaynak kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -979,7 +979,7 @@ LPTSTR m_szHtmlResID;
  [!code-cpp[NVC_MFCHtmlHttp#6](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_6.cpp)]  
   
 ##  <a name="navigate"></a>  CDHtmlDialog::Navigate  
- Tarafından belirtilen URL tarafından tanımlanan kaynak gider `lpszURL`.  
+ Tarafından belirtilen URL tarafından tanımlanan kaynak gider *lpszURL*.  
   
 ```  
 void Navigate(
@@ -992,22 +992,22 @@ void Navigate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszURL`  
+ *lpszURL*  
  Hedeflenecek URL'sini içeren bir dize için bir işaretçi.  
   
- `dwFlags`  
+ *dwFlags*  
  Bayrakları bir değişkenin kaynak Geçmiş listesine eklenip eklenmeyeceğini, önbelleğe okumak veya önbellekten yazma ve yeni bir pencerede kaynak görüntülenip görüntülenmeyeceğini belirtir. Değişkeni tarafından tanımlanan değerlerden bir bileşimi olabilir [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) numaralandırması.  
   
- `lpszTargetFrameName`  
+ *lpszTargetFrameName*  
  Kaynak görüntülenecek çerçevede adını içeren bir dize için bir işaretçi.  
   
- `lpszHeaders`  
+ *lpszHeaders*  
  Sunucuya gönderilecek HTTP üstbilgileri belirten bir değer için bir işaretçi. Bu üstbilgileri varsayılan Internet Explorer üstbilgileri eklenir. Üstbilgiler, sunucu, sunucu ya da bir durum kodu için geçirilen veri türünü, gerekli eylem olarak gibi bilgileri belirtebilirsiniz. URL bir HTTP URL'sini değilse, bu parametre yoksayılır.  
   
- `lpvPostData`  
+ *lpvPostData*  
  HTTP POST işlemiyle gönderilecek veri için bir işaretçi. Örneğin, POST işlem, bir HTML formu tarafından toplanan veri göndermek için kullanılır. Bu parametre herhangi bir post veri belirlemezse **Bul** bir HTTP GET işlemi verir. URL bir HTTP URL'sini değilse, bu parametre yoksayılır.  
   
- `dwPostDataLen`  
+ *dwPostDataLen*  
  HTTP POST işlemiyle gönderilecek veri. Örneğin, POST işlem, bir HTML formu tarafından toplanan veri göndermek için kullanılır. Bu parametre herhangi bir post veri belirlemezse **Bul** bir HTTP GET işlemi verir. URL bir HTTP URL'sini değilse, bu parametre yoksayılır.  
   
 ##  <a name="onbeforenavigate"></a>  CDHtmlDialog::OnBeforeNavigate  
@@ -1020,10 +1020,10 @@ virtual void OnBeforeNavigate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDisp`  
+ *pDisp*  
  Bir işaretçi bir `IDispatch` nesnesi.  
   
- `szUrl`  
+ *szUrl*  
  Gitmek için URL'sini içeren bir dize için bir işaretçi.  
   
 ##  <a name="ondocumentcomplete"></a>  CDHtmlDialog::OnDocumentComplete  
@@ -1036,10 +1036,10 @@ virtual void OnDocumentComplete(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDisp`  
+ *pDisp*  
  Bir işaretçi bir `IDispatch` nesnesi.  
   
- `szUrl`  
+ *szUrl*  
  İçin gittiğinizde URL'sini içeren bir dize için bir işaretçi.  
   
 ##  <a name="ondocwindowactivate"></a>  CDHtmlDialog::OnDocWindowActivate  
@@ -1050,8 +1050,8 @@ STDMETHOD(OnDocWindowActivate)(BOOL fActivate);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `fActivate`  
- Bkz: `fActivate` içinde [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) Windows SDK.  
+ *fActivate*  
+ Bkz: *fActivate* içinde [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **E_NOTIMPL**.  
@@ -1067,8 +1067,8 @@ STDMETHOD(OnFrameWindowActivate)(BOOL fActivate);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `fActivate`  
- Bkz: `fActivate` içinde [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) Windows SDK.  
+ *fActivate*  
+ Bkz: *fActivate* içinde [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **E_NOTIMPL**.  
@@ -1087,7 +1087,7 @@ virtual BOOL OnInitDialog();
  Varsayılan uygulama döndürür **doğru**.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İletişim kutusu sırasında bu mesajı gönderilir **oluşturma**, `CreateIndirect`, veya `DoModal` hemen iletişim kutusu görüntülenmeden önce oluşan çağrılar.  
+ İletişim kutusu sırasında bu mesajı gönderilir `Create`, `CreateIndirect`, veya `DoModal` hemen iletişim kutusu görüntülenmeden önce oluşan çağrılar.  
   
  İletişim kutusu başlatıldığında özel işlem gerçekleştirmeniz gerekiyorsa, bu üye işlevi geçersiz kılar. Geçersiz kılınan sürümünde ilk çağrı temel sınıfı `OnInitDialog` ancak dönüş değerini göz ardı. Normalde döndürülecek **doğru** geçersiz kılınan üye işlevi.  
   
@@ -1103,10 +1103,10 @@ virtual void OnNavigateComplete(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDisp`  
+ *pDisp*  
  Bir işaretçi bir `IDispatch` nesnesi.  
   
- `szUrl`  
+ *szUrl*  
  İçin gittiğinizde URL'sini içeren bir dize için bir işaretçi.  
   
 ##  <a name="resizeborder"></a>  CDHtmlDialog::ResizeBorder  
@@ -1120,13 +1120,13 @@ STDMETHOD(ResizeBorder)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `prcBorder`  
- Bkz: `prcBorder` içinde [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) Windows SDK.  
+ *prcBorder*  
+ Bkz: *prcBorder* içinde [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) Windows SDK'sındaki.  
   
- `pUIWindow`  
- Bkz: `pUIWindow` içinde **IDocHostUIHandler::ResizeBorder** Windows SDK.  
+ *pUIWindow*  
+ Bkz: *pUIWindow* içinde **IDocHostUIHandler::ResizeBorder** Windows SDK'sındaki.  
   
- `fFrameWindow`  
+ *fFrameWindow*  
  Bkz: *fFrameWindow* içinde **IDocHostUIHandler::ResizeBorder** Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1155,19 +1155,19 @@ void SetControlProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szElementId`  
+ *szElementId*  
  ActiveX denetimi HTML kimliği.  
   
- `dispid`  
+ *DISPID*  
  Ayarlamak için özellik gönderme kimliği.  
   
  *pVar*  
  İşaretçi bir **değişken** yeni özellik değerini içeren.  
   
- `pdispControl`  
+ *pdispControl*  
  Bir ActiveX denetiminin işaretçi `IDispatch` arabirimi.  
   
- `szPropName`  
+ *szPropName*  
  Ayarlamak için özellik adını içeren dize.  
   
 ##  <a name="setelementhtml"></a>  CDHtmlDialog::SetElementHtml  
@@ -1185,13 +1185,13 @@ void SetElementHtml(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szElementId`  
+ *szElementId*  
  Bir HTML öğesi kimliği.  
   
- `bstrText`  
+ *bstrText*  
  Yeni değeri **InnerHtml** özelliği.  
   
- `punkElem`  
+ *punkElem*  
  **IUnknown** bir HTML öğesi işaretçisi.  
   
 ##  <a name="setelementproperty"></a>  CDHtmlDialog::SetElementProperty  
@@ -1205,10 +1205,10 @@ void SetElementProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szElementId`  
+ *szElementId*  
  Bir HTML öğesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Ayarlamak için özellik gönderme kimliği.  
   
  *pVar*  
@@ -1229,13 +1229,13 @@ void SetElementText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szElementId`  
+ *szElementId*  
  Bir HTML öğesi kimliği.  
   
- `bstrText`  
+ *bstrText*  
  Yeni değeri **InnerText** özelliği.  
   
- `punkElem`  
+ *punkElem*  
  **IUnknown** bir HTML öğesi işaretçisi.  
   
 ##  <a name="setexternaldispatch"></a>  CDHtmlDialog::SetExternalDispatch  
@@ -1257,7 +1257,7 @@ void SetHostFlags(DWORD dwFlags);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwFlags`  
+ *dwFlags*  
  Olası değerler için bkz: [DOCHOSTUIFLAG](https://msdn.microsoft.com/library/aa753277.aspx) Windows SDK'sındaki.  
   
 ##  <a name="showcontextmenu"></a>  CDHtmlDialog::ShowContextMenu  
@@ -1272,17 +1272,17 @@ STDMETHOD(ShowContextMenu)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwID`  
- Bkz: `dwID` içinde [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) Windows SDK.  
+ *dwID*  
+ Bkz: *dwID* içinde [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) Windows SDK'sındaki.  
   
- `ppt`  
- Bkz: `ppt` içinde **IDocHostUIHandler::ShowContextMenu** Windows SDK.  
+ *ppt*  
+ Bkz: *ppt* içinde **IDocHostUIHandler::ShowContextMenu** Windows SDK.  
   
- `pcmdtReserved`  
- Bkz: `pcmdtReserved` içinde **IDocHostUIHandler::ShowContextMenu** Windows SDK.  
+ *pcmdtReserved*  
+ Bkz: *pcmdtReserved* içinde **IDocHostUIHandler::ShowContextMenu** Windows SDK'sındaki.  
   
- `pdispReserved`  
- Bkz: `pdispReserved` içinde **IDocHostUIHandler::ShowContextMenu** Windows SDK.  
+ *pdispReserved*  
+ Bkz: *pdispReserved* içinde **IDocHostUIHandler::ShowContextMenu** Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **S_FALSE**.  
@@ -1303,20 +1303,20 @@ STDMETHOD(ShowUI)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwID`  
- Bkz: `dwID` içinde [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) Windows SDK.  
+ *dwID*  
+ Bkz: *dwID* içinde [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) Windows SDK'sındaki.  
   
- `pActiveObject`  
+ *pActiveObject*  
  Bkz: *d pActiveObject* içinde **IDocHostUIHandler::ShowUI** Windows SDK'sındaki.  
   
- `pCommandTarget`  
- Bkz: `pCommandTarget` içinde **IDocHostUIHandler::ShowUI** Windows SDK.  
+ *pCommandTarget*  
+ Bkz: *pCommandTarget* içinde **IDocHostUIHandler::ShowUI** Windows SDK'sındaki.  
   
- `pFrame`  
- Bkz: `pFrame` içinde **IDocHostUIHandler::ShowUI** Windows SDK.  
+ *pFrame*  
+ Bkz: *pFrame* içinde **IDocHostUIHandler::ShowUI** Windows SDK'sındaki.  
   
- `pDoc`  
- Bkz: `pDoc` içinde **IDocHostUIHandler::ShowUI** Windows SDK.  
+ *pDoc*  
+ Bkz: *pDoc* içinde **IDocHostUIHandler::ShowUI** Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **S_FALSE**.  
@@ -1335,14 +1335,14 @@ STDMETHOD(TranslateAccelerator)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpMsg`  
- Bkz: `lpMsg` içinde [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) Windows SDK.  
+ *lpMsg*  
+ Bkz: *lpMsg* içinde [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) Windows SDK'sındaki.  
   
- `pguidCmdGroup`  
- Bkz: `pguidCmdGroup` içinde **IDocHostUIHandler::TranslateAccelerator** Windows SDK.  
+ *pguidCmdGroup*  
+ Bkz: *pguidCmdGroup* içinde **IDocHostUIHandler::TranslateAccelerator** Windows SDK'sındaki.  
   
- `nCmdID`  
- Bkz: `nCmdID` içinde **IDocHostUIHandler::TranslateAccelerator** Windows SDK.  
+ *nCmdID*  
+ Bkz: *nCmdID* içinde **IDocHostUIHandler::TranslateAccelerator** Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **S_FALSE**.  
@@ -1361,14 +1361,14 @@ STDMETHOD(TranslateUrl)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwTranslate`  
- Bkz: `dwTranslate` içinde [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) Windows SDK.  
+ *dwTranslate*  
+ Bkz: *dwTranslate* içinde [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) Windows SDK'sındaki.  
   
- `pchURLIn`  
- Bkz: `pchURLIn` içinde **IDocHostUIHandler::TranslateUrl** Windows SDK.  
+ *pchURLIn*  
+ Bkz: *pchURLIn* içinde **IDocHostUIHandler::TranslateUrl** Windows SDK'sındaki.  
   
- `ppchURLOut`  
- Bkz: `ppchURLOut` içinde **IDocHostUIHandler::TranslateUrl** Windows SDK.  
+ *ppchURLOut*  
+ Bkz: *ppchURLOut* içinde **IDocHostUIHandler::TranslateUrl** Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **S_FALSE**.  

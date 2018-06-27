@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e40240367d3e8350cee030b2c08dc5a48325e05f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 145546a83bb91d09499049308b8d37e5adafeb92
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385313"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955680"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>Varolan Bir ActiveX Denetimini Güncelleştirme
 Varolan ActiveX denetimleri (önceki adıyla OLE denetimleri) değişiklik yapmadan Internet üzerinde kullanılabilir. Ancak, kendi performansını artırmak için denetimleri değiştirmek isteyebilirsiniz. Bir Web sayfası denetiminizde kullanırken dikkat edilecek diğer noktalar vardır. .Ocx dosyasını ve tüm destekleyici dosyaları hedef makinede olmalıdır veya Internet üzerinden indirilmesi. Bu kod boyutu ve önemli bir konu zaman yükleme sağlar. İndirmeler imzalı .cab dosyasında paketlenebilir. Denetim kodlama için güvenli olarak ve başlatma için güvenli olarak işaretleyebilirsiniz.  
@@ -136,9 +136,9 @@ C:\CabDevKit\cabarc.exe -s 6144 N spindial.cab spindial.ocx spindial.inf
  `-s 6144` Parametresi kod imzalama için dolap alan ayırır.  
   
 ### <a name="the-version-tag"></a>Sürüm etiketi  
- Burada unutmayın `#Version` tarafından belirtilen denetim uygulandığı bir CAB dosyası ile belirtilen bilgileri `CLASSID` parametresinin `<OBJECT>` etiketi.  
+ Burada unutmayın `#Version` tarafından belirtilen denetim uygulandığı bir CAB dosyası ile belirtilen bilgileri *ClassID* parametresinin `<OBJECT>` etiketi.  
   
- Belirtilen sürüm bağlı olarak, indirme denetiminizin zorlayabilirsiniz. Tam belirtimleri için `OBJECT` etiketi de dahil olmak üzere `CODEBASE` parametresi, bkz: W3C başvurusu.  
+ Belirtilen sürüm bağlı olarak, indirme denetiminizin zorlayabilirsiniz. Tam belirtimleri için `OBJECT` etiketi de dahil olmak üzere *CODEBASE* parametresi, bkz: W3C başvurusu.  
   
 ##  <a name="_core_marking_a_control_safe_for_scripting_and_initializing"></a> Komut dosyası oluşturma ve başlatma için bir denetim güvenli işaretleme  
  ActiveX denetimleri Web sayfalarında kullanılan kodlama için güvenli ve hatta güvenli olmaları durumunda başlatma için güvenli olarak işaretlenmesi gerekir. Güvenli bir denetim değil disk GÇ gerçekleştirin veya bellek veya bir makine kayıtları doğrudan erişir.  
@@ -236,7 +236,7 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
   
  OCX 96 yönergeleri altında bir denetim her zaman arka planda paletini fark gerekir.  
   
- Ortam palette özelliğinden kullanmayın eski kapsayıcıları gönderecek `WM_QUERYNEWPALETTE` ve `WM_PALETTECHANGED` iletileri. Bir denetim kılabilirsiniz `OnQueryNewPalette` ve `OnPaletteChanged` bu iletileri işlemek için.  
+ Ortam palette özelliğinden kullanmayın eski kapsayıcıları WM_QUERYNEWPALETTE ve WM_PALETTECHANGED iletileri gönderir. Bir denetim kılabilirsiniz `OnQueryNewPalette` ve `OnPaletteChanged` bu iletileri işlemek için.  
   
 ##  <a name="_core_internet_explorer_browser_safety_levels_and_control_behavior"></a> Internet Explorer tarayıcı güvenlik düzeyleri ve denetim davranışı  
  Bir tarayıcı için güvenlik düzeyi, kullanıcı tarafından yapılandırılabilir seçenekleri vardır. Web sayfaları bir kullanıcının bilgisayarına zarar etkin içerik içerdiğinden tarayıcılar için güvenlik düzeyi seçeneklerini seçmek verin. Bir tarayıcı güvenlik düzeyleri uygulayan şekilde, bağlı olarak bir denetim hiç yüklenmedi veya bir sertifika veya çalışma zamanında denetimini karşıdan gerekip gerekmediğini seçmesine izin vermek için bir uyarı iletisi görüntülenir. Internet Explorer ActiveX denetimlerinde yüksek, Orta ve düşük güvenilirlik düzeylerinin altındaki davranışını aşağıda listelenmiştir.  

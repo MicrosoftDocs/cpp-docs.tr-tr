@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0dcaa0aaf903787549cc91ffd19a34aa4aa066bd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0b558bb373416338f4136a6142ca6d491b28b510
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384716"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951464"
 ---
 # <a name="tn011-using-mfc-as-part-of-a-dll"></a>TN011: Bir DLL'in bir Parçası Olarak MFC Kullanma
 Bu Not MFC kitaplığını Windows dinamik bağlantı kitaplığı (DLL) bir parçası olarak kullanmanıza olanak sağlayan Normal MFC DLL'leri açıklar. Bu, Windows DLL'leri ve bunları oluşturma konusunda bilgi sahibi olduğunuzu varsayar. MFC uzantı DLL'leri hakkında daha fazla bilgi için hangi oluşturabileceğiniz ile MFC kitaplığına uzantılarını görmek [, DLL sürümü MFC](../mfc/tn033-dll-version-of-mfc.md).  
@@ -65,7 +65,7 @@ Bu Not MFC kitaplığını Windows dinamik bağlantı kitaplığı (DLL) bir par
   
  C ve C++ dosyaları tarafından eklenebilir ayrı bir üstbilgi Apı'lerinizi koyun. MFC Gelişmiş kavramları örnek ScreenCap.h üstbilgisinde bkz [ile ilgili](../visual-cpp-samples.md) bir örnek. İşlevlerinizi dışarı aktarmak için bunları girin `EXPORTS` bölümünde modül tanım dosyası (. DEF) veya dahil `__declspec(dllexport)` işlev tanımları üzerinde. Kullanım `__declspec(dllimport)` bu işlevler yürütülebilir istemcisine içeri aktarmak için.  
   
- Eklemelisiniz `AFX_MANAGE_STATE` makrosu dinamik olarak MFC'ye Normal MFC DLL'leri dışarı aktarılan işlevler başındaki. Bu makrosu DLL için geçerli modül durumunu ayarlar. Bu makrosu kullanmak için DLL'den dışarı aktarılan işlevlerin başına aşağıdaki kod satırını ekleyin:  
+ Dinamik olarak MFC'ye Normal MFC DLL'leri dışarı aktarılan işlevler başındaki AFX_MANAGE_STATE makrosu eklemeniz gerekir. Bu makrosu DLL için geçerli modül durumunu ayarlar. Bu makrosu kullanmak için DLL'den dışarı aktarılan işlevlerin başına aşağıdaki kod satırını ekleyin:  
   
  `AFX_MANAGE_STATE(AfxGetStaticModuleState( ))`  
   

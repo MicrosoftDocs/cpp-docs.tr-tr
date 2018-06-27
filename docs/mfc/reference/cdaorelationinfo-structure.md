@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 112af640d020dc579c1ec2b1b7eace509daa451e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a49bdfb00c3f2ceba424af7bfdfa652cacec929e
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366268"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951298"
 ---
 # <a name="cdaorelationinfo-structure"></a>CDaoRelationInfo Yapısı
 `CDaoRelationInfo` Yapısı alanları iki tablo arasında tanımlanmış bir ilişkisi hakkında bilgi içeren bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesi.  
@@ -44,7 +44,7 @@ struct CDaoRelationInfo
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `m_strName`  
+ *m_strName*  
  İlişki nesnesi adlandıran. Daha fazla bilgi için DAO Yardımı'ndaki "Name özelliği" konusuna bakın.  
   
  *m_strTable*  
@@ -53,7 +53,7 @@ struct CDaoRelationInfo
  *m_strForeignTable*  
  İlişki yabancı tablosunda adları. Bir yabancı tablo yabancı anahtarlar kapsamak için kullanılmış bir tablodur. Genellikle, yabancı tablo oluşturmak veya bilgi tutarlılığı zorlamak için kullanın. Yabancı tablo genellikle bir-çok ilişkisi birçok tarafında olur. American durumları veya Kanada il ya da müşteri siparişleri kodları içeren tablolar yabancı tablolar örneklerindendir.  
   
- `m_lAttributes`  
+ *m_lAttributes*  
  İlişki türü hakkında bilgi içerir. Bu üye değeri aşağıdakilerden biri olabilir:  
   
 - **dbRelationUnique** birebir ilişki.  
@@ -70,11 +70,11 @@ struct CDaoRelationInfo
   
 - **dbRelationDeleteCascade** silme işlemleri basamaklı.  
   
- `m_pFieldInfos`  
- Bir dizi için bir işaretçi [Cdaorelationfieldınfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) yapıları. Dizi ilişkisi içindeki her alan için bir nesne içeriyor. `m_nFields` Veri üyesi dizi öğelerinin sayısını verir.  
+ *m_pFieldInfos*  
+ Bir dizi için bir işaretçi [Cdaorelationfieldınfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) yapıları. Dizi ilişkisi içindeki her alan için bir nesne içeriyor. *M_nFields* veri üyesi dizi öğelerinin sayısını verir.  
   
- `m_nFields`  
- Sayısı `CDaoRelationFieldInfo` nesnelerini `m_pFieldInfos` veri üyesi.  
+ *M_nFields*  
+ Sayısı `CDaoRelationFieldInfo` nesnelerini *m_pFieldInfos* veri üyesi.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Birincil ve ikincil yukarıdaki başvuruları nasıl bilgileri tarafından döndürülen belirtmek [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) üye işlevi sınıfında `CDaoDatabase`.  

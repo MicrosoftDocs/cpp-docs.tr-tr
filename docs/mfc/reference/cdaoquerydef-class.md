@@ -76,12 +76,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81e7d3b093da8127887878b2ac5f2af652f549c3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b3af520de7e92a887f9a49fea7262d7f51b74082
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375800"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954640"
 ---
 # <a name="cdaoquerydef-class"></a>CDaoQueryDef sınıfı
 Sorgu tanımı ya da "querydef" genellikle bir veritabanında kaydedilmiş temsil eder.  
@@ -98,7 +98,7 @@ class CDaoQueryDef : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CDaoQueryDef::CDaoQueryDef](#cdaoquerydef)|Oluşturan bir **CDaoQueryDef** nesnesi. Sonraki çağrı **açık** veya **oluşturma**gereksinimlerinize bağlı olarak.|  
+|[CDaoQueryDef::CDaoQueryDef](#cdaoquerydef)|Oluşturan bir `CDaoQueryDef` nesnesi. Sonraki çağrı `Open` veya `Create`gereksinimlerinize bağlı olarak.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -107,7 +107,7 @@ class CDaoQueryDef : public CObject
 |[CDaoQueryDef::Append](#append)|Querydef veritabanının QueryDefs koleksiyonu kayıtlı bir sorguyu olarak ekler.|  
 |[CDaoQueryDef::CanUpdate](#canupdate)|Veritabanını güncelleştirme sorgusu, sıfır olmayan döndürür.|  
 |[CDaoQueryDef::Close](#close)|QueryDefs kapatır. Tamamladığınızda, kendisiyle C++ nesne yok.|  
-|[CDaoQueryDef::Create](#create)|DAO querydef nesnesini oluşturur. Bir geçici sorgu veya çağrı querydef kullanmak **Append** veritabanına kaydetmek için.|  
+|[CDaoQueryDef::Create](#create)|DAO querydef nesnesini oluşturur. Bir geçici sorgu veya çağrı querydef kullanmak `Append` veritabanına kaydetmek için.|  
 |[CDaoQueryDef::Execute](#execute)|Querydef nesnesi tarafından tanımlanan sorgusunu çalıştırır.|  
 |[CDaoQueryDef::GetConnect](#getconnect)|Querydef ile ilişkili bağlantı dizesi döndürür. Veri kaynağı bağlantı dizesini tanımlar. (SQL için doğrudan yalnızca; Aksi halde boş bir dize sorgular.)|  
 |[CDaoQueryDef::GetDateCreated](#getdatecreated)|Kaydedilmiş sorguyu oluşturulduğu tarihi döndürür.|  
@@ -154,9 +154,9 @@ class CDaoQueryDef : public CObject
   
     -   Varolan bir sorgu kaydedilen kullanmak için querydef nesnesinin çağrısı [açık](#open) üye işlevi, kayıtlı sorgunun adını belirtin.  
   
-    -   Yeni kaydedilen bir sorgu oluşturmak için querydef nesnesinin çağrısı [oluşturma](#create) üye işlevi, sorgunun adını belirtin. ' I çağırın [Append](#append) veritabanının QueryDefs koleksiyonu ekleyerek sorguyu kaydetmek için. **Create** querydef açık bir duruma koyar çağırdıktan sonra bunu **oluşturma** çağrılmayan **açmak**.  
+    -   Yeni kaydedilen bir sorgu oluşturmak için querydef nesnesinin çağrısı [oluşturma](#create) üye işlevi, sorgunun adını belirtin. ' I çağırın [Append](#append) veritabanının QueryDefs koleksiyonu ekleyerek sorguyu kaydetmek için. `Create` querydef açık bir duruma koyar çağırdıktan sonra bunu `Create` çağrılmayan `Open`.  
   
-    -   Geçici bir querydef oluşturmak için çağrı **oluşturma**. Sorgu adı boş bir dize geçirin. Çağırmayın **Append**.  
+    -   Geçici bir querydef oluşturmak için çağrı `Create`. Sorgu adı boş bir dize geçirin. Çağırmayın `Append`.  
   
  QueryDefs kullanmayı bitirdiğinizde, çağrı kendi [Kapat](#close) üye işlev; querydef nesnesi yok.  
   
@@ -168,14 +168,14 @@ class CDaoQueryDef : public CObject
   
 -   Oluşturmak için bir `CDaoRecordset` nesnesi  
   
--   Nesnenin çağırmak için **yürütme** doğrudan eylem sorgusu veya SQL doğrudan bir sorguyu yürütmek için üye işlevi  
+-   Nesnenin çağırmak için `Execute` doğrudan eylem sorgusu veya SQL doğrudan bir sorguyu yürütmek için üye işlevi  
   
- QueryDefs sorgu seçin, eylem, çapraz, silme, güncelleştirme dahil olmak üzere, her tür için kullanmak, ekleme, tablo oluşturma, veri tanımı, SQL doğrudan, UNION ve sorguları toplu. Sorgunun türü sağladığınız SQL deyimini içerik tarafından belirlenir. Sorgu türleri hakkında daha fazla bilgi için bkz: **yürütme** ve [GetType](#gettype) üye işlevleri. Kayıt kümeleri, satır döndürmek için yaygın olarak kullanılır, genellikle bu kullanarak sorgular **seçin... GELEN** anahtar sözcükler. **Yürütme** toplu işlemleri için en yaygın olarak kullanılır. Daha fazla bilgi için bkz: [yürütme](#execute) ve [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).  
+ QueryDefs sorgu seçin, eylem, çapraz, silme, güncelleştirme dahil olmak üzere, her tür için kullanmak, ekleme, tablo oluşturma, veri tanımı, SQL doğrudan, UNION ve sorguları toplu. Sorgunun türü sağladığınız SQL deyimini içerik tarafından belirlenir. Sorgu türleri hakkında daha fazla bilgi için bkz: `Execute` ve [GetType](#gettype) üye işlevleri. Kayıt kümeleri, satır döndürmek için yaygın olarak kullanılır, genellikle bu kullanarak sorgular **seçin... GELEN** anahtar sözcükler. `Execute` toplu işlemler için en yaygın olarak kullanılır. Daha fazla bilgi için bkz: [yürütme](#execute) ve [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).  
   
 ## <a name="querydefs-and-recordsets"></a>QueryDefs ve kayıt kümeleri  
  QueryDefs oluşturmak için kullanılacak bir `CDaoRecordset` nesne, genellikle oluşturun veya bir querydef yukarıda açıklandığı gibi açın. Çağırdığınızda, querydef nesnesine bir işaretçi geçirme bir kayıt kümesi nesnesi oluşturmak [CDaoRecordset::Open](../../mfc/reference/cdaorecordset-class.md#open). Geçirdiğiniz querydef açık durumda olması gerekir. Daha fazla bilgi için bkz [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).  
   
- Bir querydef açık durumda olmadığı sürece kayıt kümesi (en yaygın kullanımı bir querydef için) oluşturmak için kullanamazsınız. Querydef bir açık ya da çağırarak duruma **açmak** veya **oluşturma**.  
+ Bir querydef açık durumda olmadığı sürece kayıt kümesi (en yaygın kullanımı bir querydef için) oluşturmak için kullanamazsınız. Querydef bir açık ya da çağırarak duruma `Open` veya `Create`.  
   
 ## <a name="external-databases"></a>Dış veritabanlarını  
  QueryDef nesneleri bir dış veritabanı altyapısı'nın özgün SQL dialect kullanmak için tercih edilen yöntemdir. Örneğin, (Microsoft SQL Server üzerinde kullanılan gibi) bir Transact SQL sorgusu oluşturun ve bir querydef nesnesinde saklayabilirsiniz. Microsoft Jet veritabanı altyapısını temel olmayan bir SQL sorgusu kullanmanız gerektiğinde, dış veri kaynağı için bir bağlantı dizesi belirtmeniz gerekir. Geçerli bağlantı dizeleri sorgularıyla veritabanı altyapısı atlayabilir ve işleme için dış veritabanı sunucusu için doğrudan sorgu geçirin.  
@@ -201,7 +201,7 @@ virtual void Append();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Append** querydef veritabanının QueryDefs koleksiyonu nesne eklenerek veritabanına kaydeder. Sonuna ekleme olmadan querydef geçici bir nesne kullanabilirsiniz, ancak kalıcı hale getirmek istiyorsanız, çağırmalısınız **Append**.  
+ `Append` querydef veritabanının QueryDefs koleksiyonu nesne eklenerek veritabanına kaydeder. Sonuna ekleme olmadan querydef geçici bir nesne kullanabilirsiniz, ancak kalıcı hale getirmek istiyorsanız, çağırmalısınız `Append`.  
   
  Geçici QueryDefs append çalışırsanız, MFC türünde bir özel durum atar [CDaoException](../../mfc/reference/cdaoexception-class.md).  
   
@@ -225,14 +225,14 @@ BOOL CanUpdate();
      Bu güvenlik özellikleri olup uyguladık üzerinde bağlıdır. MFC desteği için güvenlik sağlamaz; kendiniz DAO'yu doğrudan çağırma veya Microsoft Access kullanarak uyguladıktan gerekir. DAO Yardımı'ndaki "izinleri özellik" konusuna bakın.  
   
 ##  <a name="cdaoquerydef"></a>  CDaoQueryDef::CDaoQueryDef  
- Oluşturan bir **CDaoQueryDef** nesnesi.  
+ Oluşturan bir `CDaoQueryDef` nesnesi.  
   
 ```  
 CDaoQueryDef(CDaoDatabase* pDatabase);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDatabase`  
+ *pDatabase*  
  Açık bir işaretçi [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -242,7 +242,7 @@ CDaoQueryDef(CDaoDatabase* pDatabase);
   
 -   Nesne kaydedilmesi için yeni bir querydef temsil ediyorsa, nesnenin çağrısı [oluşturma](#create) üye işlevi. Bu nesne veritabanının QueryDefs koleksiyonuna ekler. ' I çağırın `CDaoQueryDef` üye işlevleri nesnenin özniteliklerini ayarlayın. Son olarak, arama [Append](#append).  
   
--   Geçici bir querydef (veritabanında kaydedilecek değil) nesneyi temsil ediyorsa, çağrı **oluşturma**, sorgunun adı boş bir dize geçirme. Çağırdıktan sonra **oluşturma**, querydef doğrudan özniteliklerini başlatırsınız. Çağırmayın **Append**.  
+-   Geçici bir querydef (veritabanında kaydedilecek değil) nesneyi temsil ediyorsa, çağrı `Create`, sorgunun adı boş bir dize geçirme. Çağırdıktan sonra `Create`, querydef doğrudan özniteliklerini başlatırsınız. Çağırmayın `Append`.  
   
  Querydef özniteliklerini ayarlamak için kullanabileceğiniz [SetName](#setname), [SetSQL](#setsql), [SetConnect](#setconnect), [SetODBCTimeout](#setodbctimeout)ve [SetReturnsRecords](#setreturnsrecords) üye işlevleri.  
   
@@ -268,16 +268,16 @@ virtual void Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszName`  
+ *lpszName*  
  Veritabanında kayıtlı sorgunun benzersiz adı. Dize hakkında daha fazla ayrıntı için DAO Yardımı'ndaki "CreateQueryDef yöntemi" konusuna bakın. Varsayılan değer, boş bir dize kabul ederseniz, geçici bir querydef oluşturulur. Böyle bir sorguyu QueryDefs koleksiyonu kaydedilmez.  
   
- `lpszSQL`  
+ *lpszSQL*  
  Sorguyu tanımlayan SQL dizesi. Varsayılan değerini kabul ederseniz **NULL**, daha sonra çağırmalısınız [SetSQL](#setsql) dizesi ayarlanacak. O zamana kadar sorgu tanımlanmamıştır. Ancak, bir kayıt kümesi açmak için tanımsız sorgu kullanabilirsiniz; Açıklamalar için bkz. QueryDefs koleksiyonu querydef eklemeden önce SQL deyimini tanımlanması gerekir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir ad geçirirseniz `lpszName`, ardından çağırabilirsiniz [Append](#append) veritabanının QueryDefs koleksiyonu querydef kaydetmek için. Aksi takdirde nesnesi geçici bir querydef ve kaydedilmez. Her iki durumda da querydef açık durumda olan ve ya da onu oluşturmak için kullanabileceğiniz bir [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesne veya querydef's çağrısı [yürütme](#execute) üye işlevi.  
+ Bir ad geçirirseniz *lpszName*, ardından çağırabilirsiniz [Append](#append) veritabanının QueryDefs koleksiyonu querydef kaydetmek için. Aksi takdirde nesnesi geçici bir querydef ve kaydedilmez. Her iki durumda da querydef açık durumda olan ve ya da onu oluşturmak için kullanabileceğiniz bir [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesne veya querydef's çağrısı [yürütme](#execute) üye işlevi.  
   
- Bir SQL deyiminde belirtmezseniz `lpszSQL`, sorgu ile çalıştırılamıyor **yürütme** ancak bir kayıt kümesi oluşturmak için kullanın. Bu durumda, MFC kayıt kümesinin varsayılan SQL deyimini kullanır.  
+ Bir SQL deyiminde belirtmezseniz *lpszSQL*, sorgu ile çalıştıramazsınız `Execute` ancak bir kayıt kümesi oluşturmak için kullanın. Bu durumda, MFC kayıt kümesinin varsayılan SQL deyimini kullanır.  
   
 ##  <a name="execute"></a>  CDaoQueryDef::Execute  
  Querydef nesnesi tarafından tanımlanan sorguyu çalıştırmak için bu üye işlevini çağırın.  
@@ -287,7 +287,7 @@ virtual void Execute(int nOptions = dbFailOnError);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nOptions`  
+ *nOptions*  
  Sorgu özelliklerini belirleyen bir tamsayı. İlgili bilgi için DAO Yardımı'ndaki "yöntemi Çalıştır" konusuna bakın. Bit düzeyinde OR işleci kullanabilirsiniz ( **&#124;**) bu bağımsız değişken için aşağıdaki sabitleri birleştirmek için:  
   
 - **dbDenyWrite** diğer kullanıcılara reddetme yazma izni.  
@@ -312,16 +312,16 @@ virtual void Execute(int nOptions = dbFailOnError);
   
 -   SQL doğrudan sorguları  
   
- **Yürütme** select sorguları gibi kayıtları döndüren sorgular için çalışmaz. **Yürütme** toplu işlemi sorgularında gibi yaygın olarak kullanılan **güncelleştirme**, **Ekle**, veya **SELECT INTO**, ya da veri tanım dili (DDL) işlemleri için.  
+ `Execute` kayıtları seçme sorguları gibi döndüren sorgular için çalışmaz. `Execute` Toplu işlem sorgularında gibi yaygın olarak kullanılan **güncelleştirme**, **Ekle**, veya **SELECT INTO**, ya da veri tanım dili (DDL) işlemleri için.  
   
 > [!TIP]
 >  ODBC veri kaynakları ile çalışmak için tercih edilen yol için bir Microsoft Jet tabloları eklemektir (. MDB) veritabanı. Daha fazla bilgi için "Erişim dış veritabanları ile DAO'da" DAO Yardım konusuna bakın.  
   
- Çağrı [GetRecordsAffected](#getrecordsaffected) üye işlevi tarafından en son etkilenen kayıtların sayısı belirlemek için querydef nesnesinin **yürütme** çağırın. Örneğin, `GetRecordsAffected` silinmiş, güncelleştirilmiş veya eylem sorgusu yürütürken eklenen kayıt sayısı hakkında bilgi döndürür. Döndürülen sayı cascade güncelleştirir veya sildiğinde ilgili tablolarda değişiklikleri etkindir yansıtmaz.  
+ Çağrı [GetRecordsAffected](#getrecordsaffected) üye işlevi tarafından en son etkilenen kayıtların sayısı belirlemek için querydef nesnesinin `Execute` çağırın. Örneğin, `GetRecordsAffected` silinmiş, güncelleştirilmiş veya eylem sorgusu yürütürken eklenen kayıt sayısı hakkında bilgi döndürür. Döndürülen sayı cascade güncelleştirir veya sildiğinde ilgili tablolarda değişiklikleri etkindir yansıtmaz.  
   
  Her ikisi de dahil ederseniz **dbInconsistent** ve **dbConsistent** veya hiçbiri eklerseniz, sonuç varsayılan **dbInconsistent**.  
   
- **Yürütme** bir kayıt kümesi döndürmüyor. Kullanarak **yürütme** türünde bir özel durum throw MFC kayıtları seçen bir sorgu neden [CDaoException](../../mfc/reference/cdaoexception-class.md).  
+ `Execute` bir kayıt kümesi döndürmüyor. Kullanarak `Execute` türünde bir özel durum throw MFC kayıtları seçen bir sorgu neden [CDaoException](../../mfc/reference/cdaoexception-class.md).  
   
 ##  <a name="getconnect"></a>  CDaoQueryDef::GetConnect  
  Querydef ait veri kaynağı ile ilişkili bağlantı dizesini almak için bu üye işlevini çağırın.  
@@ -397,13 +397,13 @@ void GetFieldInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Dizine göre arama için querydef's alanlar koleksiyonu istenen alanında sıfır tabanlı dizini.  
   
- `fieldinfo`  
+ *FieldInfo*  
  Bir başvuru bir `CDaoFieldInfo` istenen bilgileri döndürür nesnesi.  
   
- `dwInfoOptions`  
+ *dwInfoOptions*  
  Hangi bilgilerin alınacağı alan hakkında belirtin seçenekleri. Kullanılabilir seçenekler, hangi kullanıcıların işlevi döndürecek şekilde neden birlikte aşağıda listelenmiştir:  
   
 - `AFX_DAO_PRIMARY_INFO` (Varsayılan) Ad, tür, boyut öznitelikleri  
@@ -412,11 +412,11 @@ void GetFieldInfo(
   
 - `AFX_DAO_ALL_INFO` Birincil ve ikincil bilgi artı: varsayılan değer, doğrulama metin doğrulama kuralı  
   
- `lpszName`  
+ *lpszName*  
  Ada göre arama istenen alanın adını içeren dize. Kullanabileceğiniz bir [CString](../../atl-mfc-shared/reference/cstringt-class.md).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Döndürülen bilgi açıklaması `fieldinfo`, bkz: [Cdaofieldınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısı. Bu yapı açıklayıcı bilgileri altında karşılık üyeler içeriyor `dwInfoOptions` üstünde. Bir düzey bilgilerin isterse bilgilerini de önceki tüm düzeylerini alın.  
+ Döndürülen bilgi açıklaması *FieldInfo*, bkz: [Cdaofieldınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısı. Bu yapı açıklayıcı bilgileri altında karşılık üyeler içeriyor *dwInfoOptions* üstünde. Bir düzey bilgilerin isterse bilgilerini de önceki tüm düzeylerini alın.  
   
 ##  <a name="getname"></a>  CDaoQueryDef::GetName  
  Querydef tarafından temsil edilen sorgunun adını almak için bu üye işlevini çağırın.  
@@ -479,22 +479,22 @@ void GetParameterInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Dizine göre arama için querydef ait parametreler koleksiyonu istenen parametresinde sıfır tabanlı dizini.  
   
- `paraminfo`  
+ *paramınfo*  
  Bir başvuru bir [Cdaoparameterınfo](../../mfc/reference/cdaoparameterinfo-structure.md) istenen bilgileri döndürür nesnesi.  
   
- `dwInfoOptions`  
+ *dwInfoOptions*  
  Hangi bilgilerini almak için parametre belirtin seçenekleri. Kullanılabilir bir seçenek ne işlevi döndürecek şekilde neden birlikte burada listelenir:  
   
 - `AFX_DAO_PRIMARY_INFO` (Varsayılan) Adı, türü  
   
- `lpszName`  
+ *lpszName*  
  Ada göre arama için istenen parametre adını içeren dize. Kullanabileceğiniz bir [CString](../../atl-mfc-shared/reference/cstringt-class.md).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Döndürülen bilgi açıklaması `paraminfo`, bkz: [Cdaoparameterınfo](../../mfc/reference/cdaoparameterinfo-structure.md) yapısı. Bu yapı açıklayıcı bilgileri altında karşılık üyeler içeriyor `dwInfoOptions` üstünde.  
+ Döndürülen bilgi açıklaması *paramınfo*, bkz: [Cdaoparameterınfo](../../mfc/reference/cdaoparameterinfo-structure.md) yapısı. Bu yapı açıklayıcı bilgileri altında karşılık üyeler içeriyor *dwInfoOptions* üstünde.  
   
  İlgili bilgiler için "PARAMETRELER bildirimi (SQL)" DAO Yardım konusuna bakın.  
   
@@ -507,10 +507,10 @@ virtual COleVariant GetParamValue(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszName`  
+ *lpszName*  
  Değer ada göre arama için istediğiniz parametresinin adı.  
   
- `nIndex`  
+ *nIndex*  
  Dizine göre arama için querydef ait parametre koleksiyonuna parametre sıfır tabanlı dizini. Bu değeri çağrıları ile elde edebilirsiniz [GetParameterCount](#getparametercount) ve [Getparameterınfo](#getparameterinfo).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -639,7 +639,7 @@ virtual void Open(LPCTSTR lpszName = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszName`  
+ *lpszName*  
  Açmak için kaydedilmiş querydef adını içeren dize. Kullanabileceğiniz bir [CString](../../atl-mfc-shared/reference/cstringt-class.md).  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -653,7 +653,7 @@ void SetConnect(LPCTSTR lpszConnect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszConnect`  
+ *lpszConnect*  
  İlişkili bir bağlantı dizesi içeren bir dize [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -674,7 +674,7 @@ void SetName(LPCTSTR lpszName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszName`  
+ *lpszName*  
  Kalıcı sorguda ilişkili yeni adını içeren bir dize [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -711,13 +711,13 @@ virtual void SetParamValue(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszName`  
+ *lpszName*  
  Değer ayarlamak istediğiniz parametresinin adı.  
   
- `varValue`  
+ *varValue*  
  Ayarlanacak değer; Açıklamalar bakın.  
   
- `nIndex`  
+ *nIndex*  
  Sıralı konumu parametresi querydef ait parametreler koleksiyonu. Bu değeri çağrıları ile elde edebilirsiniz [GetParameterCount](#getparametercount) ve [Getparameterınfo](#getparameterinfo).  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -747,7 +747,7 @@ void SetSQL(LPCTSTR lpszSQL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszSQL`  
+ *lpszSQL*  
  Yürütme için uygun, tam bir SQL deyimi içeren bir dize. Bu dizesinin söz dizimi üzerinde DBMS bağlıdır, sorgu hedefler. Microsoft Jet Veritabanı Altyapısı'nda kullanılan sözdizimi bir tartışma için "Yapı SQL deyimleri içinde kodu" DAO Yardım konusuna bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  

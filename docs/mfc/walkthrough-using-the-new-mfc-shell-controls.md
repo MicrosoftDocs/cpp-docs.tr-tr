@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f19939a50b5bdbf98d087450b6301a923651a433
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f349c955724b66ccc8cb1b19fc826ca0b8354258
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385102"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951955"
 ---
 # <a name="walkthrough-using-the-new-mfc-shell-controls"></a>İzlenecek yol: Yeni MFC Kabuk Denetimlerini Kullanma
 Bu kılavuzda, dosya Gezgini benzer bir uygulama oluşturacaksınız. İki bölme içerir bir pencere oluşturur. Sol bölmede içerecek bir [CMFCShellTreeCtrl](../mfc/reference/cmfcshelltreectrl-class.md) masaüstünüzü hiyerarşik bir görünümü görüntüler nesnesi. Sağ bölmede içerecek bir [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) , sol bölmede seçili klasördeki dosyaları gösterir.  
@@ -31,7 +31,7 @@ Bu kılavuzda, dosya Gezgini benzer bir uygulama oluşturacaksınız. İki bölm
   
 1.  Kullanım **MFC Uygulama Sihirbazı'nı** yeni bir MFC uygulaması oluşturmak için. Gelen Sihirbazı'nı çalıştırmak için **dosya** menüsünü seçin **yeni**ve ardından **proje**. **Yeni proje** iletişim kutusu görüntülenir.  
   
-2.  İçinde **yeni proje** iletişim kutusunda, genişletin **Visual C++** düğümünde **proje türleri** bölmesinde ve select **MFC**. Ardından **şablonları** bölmesinde, **MFC uygulaması**. Proje için bir ad yazın `MFCShellControls` tıklatıp **Tamam**. **MFC Uygulama Sihirbazı'nı** görüntülenir.  
+2.  İçinde **yeni proje** iletişim kutusunda, genişletin **Visual C++** düğümünde **proje türleri** bölmesinde ve select **MFC**. Ardından **şablonları** bölmesinde, **MFC uygulaması**. Proje için bir ad yazın *MFCShellControls* tıklatıp **Tamam**. **MFC Uygulama Sihirbazı'nı** görüntülenir.  
   
 3.  İçinde **MFC Uygulama Sihirbazı'nı** iletişim kutusu, tıklatın **sonraki**. **Uygulama türü** bölmesinde görüntülenir.  
   
@@ -65,18 +65,21 @@ Bu kılavuzda, dosya Gezgini benzer bir uygulama oluşturacaksınız. İki bölm
   
      Şimdi türündeki üye değişkeni ekleme `CMFCShellListCtrl`. İlk olarak, aşağıdaki açıklama üst bilgi dosyasını bulun:  
   
- ''' * / / İleti eşlemesi işlevleri oluşturulan  
+ ``` 
+    // Generated message map functions  
  ```  
   
-     Immediately above that comment add this code:  
+     Hemen açıklamanın bu kodu ekleyin:  
   
  ```  
-    Özel: CMFCShellListCtrl m_wndList;  
+    private: 
+    CMFCShellListCtrl m_wndList;  
  ```  
   
-2.  The **MFC Application Wizard** already created a `CMFCShellTreeCtrl` object in the `CMainFrame` class, but it is a protected member. We will access this object later. Therefore, create an accessor for it now. Open the MainFrm.h header file by double-clicking it in the **Solution Explorer**. Locate the following comment:  
+2.  **MFC Uygulama Sihirbazı'nı** önceden oluşturulmuş bir `CMFCShellTreeCtrl` nesnesinde `CMainFrame` sınıfı, ancak bir üyesidir korumalı. Biz bu nesne daha sonra erişir. Bu nedenle, bunun için bir erişimci şimdi oluşturun. MainFrm.h üst bilgi dosyasını çift tıklatarak açın **Çözüm Gezgini**. Aşağıdaki açıklama bulun:  
   
- ``` *// Attributes  
+ ``` 
+    // Attributes  
  ```  
   
      Hemen altında aşağıdaki yöntem bildirimi ekleyin:  
@@ -84,66 +87,50 @@ Bu kılavuzda, dosya Gezgini benzer bir uygulama oluşturacaksınız. İki bölm
  ```  
     public: 
     CMFCShellTreeCtrl& GetShellTreeCtrl();
-
  ```  
   
      Ardından, MainFrm.cpp kaynak dosyasını çift tıklatarak açın **Çözüm Gezgini**. Bu dosyayı alt kısmındaki aşağıdaki yöntem tanımını ekleyin:  
   
  ```  
     CMFCShellTreeCtrl& CMainFrame::GetShellTreeCtrl()  
- {  
-    return m_wndTree;  
- }  
+    {  
+        return m_wndTree;  
+    }  
  ```  
   
-3.  Güncelleştiriyoruz artık `CMFCShellControlsView` işlemek için sınıf **WM_CREATE** windows ileti. MFCShellControlsView.h üst bilgi dosyasını açın ve bu kodu satırda tıklatın:  
+3.  Güncelleştiriyoruz artık `CMFCShellControlsView` WM_CREATE windows iletiyi işlemek için sınıf. MFCShellControlsView.h üst bilgi dosyasını açın ve bu kodu satırda tıklatın:  
   
  ```  
     class CMFCShellControlsView : public CView  
  ```  
   
-     İleri ' **özellikleri** penceresinde tıklatın **iletileri** simgesi. Bulana kadar aşağıya kaydırın **WM_CREATE** ileti. Açılır listeden yanındaki **WM_CREATE**seçin  **\<Ekle > OnCreate**. Bu ileti işleyicisi bize oluşturur ve MFC ileti eşlemesi otomatik olarak güncelleştirir.  
+     İleri ' **özellikleri** penceresinde tıklatın **iletileri** simgesi. WM_CREATE ileti bulana kadar aşağıya kaydırın. Açılan listeden WM_CREATE yanında, seçin  *\<Ekle > OnCreate*. Bu ileti işleyicisi bize oluşturur ve MFC ileti eşlemesi otomatik olarak güncelleştirir.  
   
      İçinde `OnCreate` biz şimdi oluşturacak yöntemi bizim `CMFCShellListCtrl` nesnesi. Bul `OnCreate` MFCShellControlsView.cpp yöntemi tanımında kaynak dosyası ve kendi uygulama aşağıdaki kodla değiştirin:  
   
  ```  
     int CMFCShellControlsView::OnCreate(LPCREATESTRUCT lpCreateStruct)  
- {  
-    if (CView::OnCreate(lpCreateStruct) == -1)  
-    return -1;  
- 
-    CRect rectDummy (0,
-    0,
-    0,
-    0);
-
-    m_wndList.Create(WS_CHILD | WS_VISIBLE | LVS_REPORT,  
-    rectDummy,
-    this,
-    1);
-
- 
-    return 0;  
- }  
+    {  
+        if (CView::OnCreate(lpCreateStruct) == -1)  
+            return -1;  
+     
+        CRect rectDummy (0, 0, 0, 0);
+    
+        m_wndList.Create(WS_CHILD | WS_VISIBLE | LVS_REPORT, rectDummy, this, 1);
+    
+        return 0;  
+    }  
  ```  
   
-4.  Önceki adımı yineleyin ancak **WM_SIZE** ileti. Bu, bir kullanıcı uygulama penceresi boyutunu değiştiğinde çizilmesi için uygulamaları görünümünüzü neden olur. Tanımı Değiştir `OnSize` aşağıdaki kod ile yöntemi:  
+4.  Önceki adımı yineleyin, ancak WM_SIZE için ileti. Bu, bir kullanıcı uygulama penceresi boyutunu değiştiğinde çizilmesi için uygulamaları görünümünüzü neden olur. Tanımı Değiştir `OnSize` aşağıdaki kod ile yöntemi:  
   
  ```  
-    void CMFCShellControlsView::OnSize(UINT nType,
-    int cx,
-    int cy)  
- {  
-    CView::OnSize(nType,
-    cx,
-    cy);
-
-    m_wndList.SetWindowPos(NULL, -1, -1,
-    cx,
-    cy,  
-    SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE);
-
- }  
+    void CMFCShellControlsView::OnSize(UINT nType, int cx, int cy)  
+    {  
+        CView::OnSize(nType, cx, cy);
+    
+        m_wndList.SetWindowPos(NULL, -1, -1, cx, cy, SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE);
+    }  
  ```  
   
 5.  Bağlanmak için son adımdır `CMFCShellTreeCtrl` ve `CMFCShellListCtrl` kullanarak nesneleri [CMFCShellTreeCtrl::SetRelatedList](../mfc/reference/cmfcshelltreectrl-class.md#setrelatedlist) yöntemi. Bu yöntem çağırdıktan sonra `CMFCShellListCtrl` otomatik olarak seçili öğenin içeriğini görüntüler `CMFCShellTreeCtrl`. Bu gerçekleştiririz `OnActivateView` gelen kılınmadığı yöntemi [CView::OnActivateView](../mfc/reference/cview-class.md#onactivateview).  
@@ -152,30 +139,21 @@ Bu kılavuzda, dosya Gezgini benzer bir uygulama oluşturacaksınız. İki bölm
   
  ```  
     protected: 
-    virtual void OnActivateView(BOOL bActivate,  
-    CView* pActivateView,  
-    CView* pDeactiveView);
-
+    virtual void OnActivateView(BOOL bActivate, CView* pActivateView, CView* pDeactiveView);
  ```  
   
      Ardından, bu yöntem için tanım MFCShellControlsView.cpp kaynak dosyaya ekleyin:  
   
  ```  
-    void CMFCShellControlsView::OnActivateView(BOOL bActivate,  
-    CView* pActivateView,  
-    CView* pDeactiveView)   
- {  
-    if (bActivate&& AfxGetMainWnd() != NULL)  
- {  
- ((CMainFrame*)AfxGetMainWnd())->GetShellTreeCtrl().SetRelatedList(&m_wndList);
-
- }  
- 
-    CView::OnActivateView(bActivate,
-    pActivateView,
-    pDeactiveView);
-
- }  
+    void CMFCShellControlsView::OnActivateView(BOOL bActivate, CView* pActivateView, CView* pDeactiveView)   
+    {  
+        if (bActivate&& AfxGetMainWnd() != NULL)  
+        {  
+            ((CMainFrame*)AfxGetMainWnd())->GetShellTreeCtrl().SetRelatedList(&m_wndList);
+        }  
+     
+        CView::OnActivateView(bActivate, pActivateView, pDeactiveView);
+    }  
  ```  
   
      Yöntemleri çağırma için `CMainFrame` sınıfı, biz eklemelisiniz bir `#include` MFCShellControlsView.cpp kaynak dosyasının üst yönerge:  
@@ -198,4 +176,3 @@ Bu kılavuzda, dosya Gezgini benzer bir uygulama oluşturacaksınız. İki bölm
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek Yollar](../mfc/walkthroughs-mfc.md)
-

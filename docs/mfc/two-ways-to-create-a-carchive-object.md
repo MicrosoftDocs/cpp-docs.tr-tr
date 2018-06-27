@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87abaa5a3564c61a6944e0cc31e81375f92a3a80
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cba1596e1dd114dcd46610b824405740a783c21e
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33386125"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954799"
 ---
 # <a name="two-ways-to-create-a-carchive-object"></a>CArchive Nesnesi Oluşturmanın İki Yolu
 Oluşturmanın iki yolu vardır bir `CArchive` nesnesi:  
@@ -48,7 +48,7 @@ Oluşturmanın iki yolu vardır bir `CArchive` nesnesi:
   
 3.  Oluşturur bir `CArchive` için işaret nesnesi `CFile` nesnesi. Oluşturma `CArchive` nesne framework ayarlar "depolamak için" modunu (yazma, seri hale), "Yük" aksine (okuma, seri durumdan).  
   
-4.  Çağrıları `Serialize` tanımlanan işlevi, **CDocument**-türetilmiş sınıf başvurusu geçirme, `CArchive` nesnesi.  
+4.  Çağrıları `Serialize` tanımlanan işlevi, `CDocument`-türetilmiş sınıf başvurusu geçirme, `CArchive` nesnesi.  
   
  Belgenizin `Serialize` işlevi sonra verileri Yazar `CArchive` kısa süre içinde açıklandığı gibi nesne. Dönüş bağlı, `Serialize` framework işlevi, bozar `CArchive` nesnesi ve ardından `CFile` nesnesi.  
   

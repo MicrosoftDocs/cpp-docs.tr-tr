@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 824ac88326042eb55ecb9667c39331d1ab5464e7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7766b56e75edefda4f40194a5ce18572c8d6d78d
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368341"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952254"
 ---
 # <a name="cdbexception-class"></a>CDBException sınıfı
 Veritabanı sınıflardan doğan bir özel durumu temsil eder.  
@@ -92,13 +92,13 @@ class CDBException : public CException
   
 - **AFX_SQL_ERROR_LOCK_MODE_NOT_SUPPORTED** ODBC sürücüsü kilitleme desteklemediğinden güncelleştirmesi kayıtları kilitleme isteğinizi yerine getirilemedi.  
   
-- **AFX_SQL_ERROR_MULTIPLE_ROWS_AFFECTED** , adlı `CRecordset::Update` veya **silmek** benzersiz bir anahtar içeren bir tablo için ve birden çok kayıt değiştirildi.  
+- **AFX_SQL_ERROR_MULTIPLE_ROWS_AFFECTED** , adlı `CRecordset::Update` veya `Delete` benzersiz bir anahtar içeren bir tablo için ve birden çok kayıt değiştirildi.  
   
 - **AFX_SQL_ERROR_NO_CURRENT_RECORD** düzenlemek veya önceden silinmiş kayıt silme girişiminde bulunuldu. Yeni bir geçerli kayda silindikten sonra kaydırma gerekir.  
   
 - **AFX_SQL_ERROR_NO_POSITIONED_UPDATES** ODBC sürücüsü desteklemediğinden bir dynaset doldurulmayacak için isteğiniz güncelleştirmeler konumlandırıldı.  
   
-- **AFX_SQL_ERROR_NO_ROWS_AFFECTED** , adlı `CRecordset::Update` veya **silmek**, ancak işlemi başladığında, artık kaydı bulunamadı.  
+- **AFX_SQL_ERROR_NO_ROWS_AFFECTED** , adlı `CRecordset::Update` veya `Delete`, ancak işlemi başladığında, artık kaydı bulunamadı.  
   
 - **AFX_SQL_ERROR_ODBC_LOAD_FAILED** ODBC yükleme girişimi. DLL başarısız oldu; Windows bulunamadı veya bu DLL yüklenemedi. Bu önemli bir hatadır.  
   
@@ -114,7 +114,7 @@ class CDBException : public CException
   
 - **AFX_SQL_ERROR_RECORDSET_READONLY** salt okunur kayıt güncelleştirmeyi denedi ya da veri kaynağı salt okunur durumdadır. Kayıt kümesi ile hiçbir güncelleştirme işlemleri gerçekleştirilebilir veya `CDatabase` ilişkili olduğu nesne.  
   
-- **SQL_ERROR hatası** işlevi başarısız oldu. ODBC işlevi tarafından döndürülen hata iletisi **SQLError** depolanan **m_strError** veri üyesi.  
+- **SQL_ERROR hatası** işlevi başarısız oldu. ODBC işlevi tarafından döndürülen hata iletisi `SQLError` depolanan **m_strError** veri üyesi.  
   
 - **SQL_INVALID_HANDLE** işlevi geçersiz ortam işleyici, bağlantı tanıtıcısı veya deyim tanıtıcısı nedeniyle başarısız oldu. Bu bir programlama hatası gösterir. Ek bilgi yok ODBC işlevinden kullanılabilir **SQLError**.  
   
@@ -132,11 +132,11 @@ class CDBException : public CException
 ### <a name="remarks"></a>Açıklamalar  
  Dize biçimi kodları, sırasıyla açıklayan değerleri nerede değiştirilir form "durumu: % s, yerel: % ld kaynağı: % s", şöyledir:  
   
--   **SQLSTATE**, döndürülen beş karakterli hata kodu içeren bir null ile sonlandırılmış dize *szSqlState* ODBC işlevinin parametresi **SQLError**. **SQLSTATE** değerleri ek A, listelenen [ODBC hata kodları](https://msdn.microsoft.com/library/ms714687.aspx), *ODBC Programcının Başvurusu*. Örnek: "S0022".  
+-   **SQLSTATE**, döndürülen beş karakterli hata kodu içeren bir null ile sonlandırılmış dize *szSqlState* ODBC işlevinin parametresi `SQLError`. **SQLSTATE** değerleri ek A, listelenen [ODBC hata kodları](https://msdn.microsoft.com/library/ms714687.aspx), *ODBC Programcının Başvurusu*. Örnek: "S0022".  
   
--   Veri kaynağına belirli yerel hata kodunu döndürdü *pfNativeError* parametresinin **SQLError** işlevi. Örnek: 207.  
+-   Veri kaynağına belirli yerel hata kodunu döndürdü *pfNativeError* parametresinin `SQLError` işlevi. Örnek: 207.  
   
--   Döndürülen hata iletisi metni *szErrorMsg* parametresinin **SQLError** işlevi. Bu ileti birkaç köşeli parantez içindeki adlarını oluşur. Bir hata kullanıcıya kaynağından geçirilen gibi her ODBC bileşeni (veri kaynağı, sürücüsü, Sürücü Yöneticisi) kendi adını ekler. Bu bilgiler hata kökenini belirlemenize yardımcı olur. Örnek: [Microsoft] [ODBC SQL Server sürücüsü] [SQL Server]  
+-   Döndürülen hata iletisi metni *szErrorMsg* parametresinin `SQLError` işlevi. Bu ileti birkaç köşeli parantez içindeki adlarını oluşur. Bir hata kullanıcıya kaynağından geçirilen gibi her ODBC bileşeni (veri kaynağı, sürücüsü, Sürücü Yöneticisi) kendi adını ekler. Bu bilgiler hata kökenini belirlemenize yardımcı olur. Örnek: [Microsoft] [ODBC SQL Server sürücüsü] [SQL Server]  
   
  Framework hata dizesi yorumlar ve bileşenlerinin içine yerleştirir **m_strStateNativeOrigin**if **m_strStateNativeOrigin** bilgileri içeren birden fazla hata için hataları ile ayrılmıştır satır başı. Alfasayısal hata metne framework koyar **m_strError**.  
   

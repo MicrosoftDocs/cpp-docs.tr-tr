@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76325d2b078f51860cad7fa3fab61ed7c518a41c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 50e7cb936c55ced1f16a325a031dccd1edde7d06
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382856"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951913"
 ---
 # <a name="using-image-lists-in-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminde Görüntü Listeleri Kullanma
 Varsayılan olarak, bir toolbar denetimine düğme tarafından kullanılan görüntüleri tek bir bit eşlem olarak depolanır. Ancak, bir resim listeleri kümesinde düğme resimlerini de depolayabilir. Araç çubuğu denetimi nesnesi için üç ayrı bir görüntü listeleri kullanabilirsiniz:  
@@ -30,7 +30,7 @@ Varsayılan olarak, bir toolbar denetimine düğme tarafından kullanılan gör�
   
 -   Görüntü listesi içerir görüntüler şu anda devre dışı araç çubuğu düğmeleri için devre dışı.  
   
--   Görüntü listesi içerir görüntüler şu anda vurgulanmıştır araç çubuğu düğmeleri için vurgulanır. Bu görüntü listesi yalnızca araç kullandığında kullanılır **TBSTYLE_FLAT** stili.  
+-   Görüntü listesi içerir görüntüler şu anda vurgulanmıştır araç çubuğu düğmeleri için vurgulanır. Bu görüntü listesi yalnızca araç TBSTYLE_FLAT stili kullandığında kullanılır.  
   
  Bunları ile ilişkilendirdiğinizde bu görüntü listeleri araç çubuğu denetimi tarafından kullanılan `CToolBarCtrl` nesnesi. Bu ilişkilendirme çağrı yaparak gerçekleştirilir [CToolBarCtrl::SetImageList](../mfc/reference/ctoolbarctrl-class.md#setimagelist), [SetDisabledImageList](../mfc/reference/ctoolbarctrl-class.md#setdisabledimagelist), ve [SetHotImageList](../mfc/reference/ctoolbarctrl-class.md#sethotimagelist).  
   

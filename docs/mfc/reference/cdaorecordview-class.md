@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07dc58332bc99cb01e9b6567eafe2cb5b96f1b9c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a228a545061c4807688014b62907c4c41a82151e
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368956"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952310"
 ---
 # <a name="cdaorecordview-class"></a>CDaoRecordView sınıfı
 Veritabanı kayıtlarını denetimlerinde görüntüleyen bir görünüm.  
@@ -104,10 +104,10 @@ explicit CDaoRecordView(UINT nIDTemplate);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Bir iletişim şablonunu kaynak adı null ile sonlandırılmış bir dize içeriyor.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Bir iletişim şablonunu kaynak kimliği numarasını içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -116,10 +116,10 @@ explicit CDaoRecordView(UINT nIDTemplate);
 > [!NOTE]
 >  Türetilmiş sınıf kendi Oluşturucusu sağlamanız gerekir. Türetilmiş sınıf oluşturucu Oluşturucusu çağrı `CDaoRecordView::CDaoRecordView` kaynak adı veya bağımsız değişken olarak Kimliğine sahip.  
   
- **CDaoRecordView::OnInitialUpdate** çağrıları `CWnd::UpdateData`, çağıran `CWnd::DoDataExchange`. Bu ilk çağrı `DoDataExchange` bağlanır `CDaoRecordView` (dolaylı olarak) denetimleri `CDaoRecordset` alan veri üyeleri ClassWizard tarafından oluşturulmuş. Kadar temel sınıfı çağırdıktan sonra bu verileri üyeleri kullanılamaz **CFormView::OnInitialUpdate** üye işlevi.  
+ `CDaoRecordView::OnInitialUpdate` çağrıları `CWnd::UpdateData`, çağıran `CWnd::DoDataExchange`. Bu ilk çağrı `DoDataExchange` bağlanır `CDaoRecordView` (dolaylı olarak) denetimleri `CDaoRecordset` alan veri üyeleri ClassWizard tarafından oluşturulmuş. Kadar temel sınıfı çağırdıktan sonra bu verileri üyeleri kullanılamaz `CFormView::OnInitialUpdate` üye işlevi.  
   
 > [!NOTE]
->  ClassWizard kullanırsanız, sihirbazın tanımlayan bir `enum` değeri `CDaoRecordView::IDD` sınıf bildirimi ve oluşturucusu için üye başlatma içinde listesinde kullanır.  
+>  ClassWizard kullanırsanız, sihirbazın tanımlayan bir **enum** değeri `CDaoRecordView::IDD` sınıf bildirimi ve oluşturucusu için üye başlatma içinde listesinde kullanır.  
   
  [!code-cpp[NVC_MFCDatabase#35](../../mfc/codesnippet/cpp/cdaorecordview-class_1.cpp)]  
   
@@ -165,7 +165,7 @@ virtual CDaoRecordset* OnGetRecordset() = 0;
  Bir işaretçi bir `CDaoRecordset`-nesne, başarıyla oluşturulmuş aksi nesne türetilmiş bir **NULL** işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi oluşturmak veya bir kayıt kümesi nesnesini alın ve bir işaretçi döndürmek için geçersiz kılmanız gerekir. Kayıt görünümü sınıfınız ClassWizard ile bildirirseniz, sihirbaz varsayılan geçersiz kılma yazar. ClassWizard'ın varsayılan uygulaması varsa kayıt görünümünde depolanan kayıt kümesi işaretçi döndürür. Türündeki bir kayıt kümesi nesnesi oluşturur, varsa çağrıları ve ClassWizard ile belirtilen kendi **açmak** üye tabloyu veya sorguyu çalıştırmak için işlev ve ardından bir işaretçi nesneyi döndürür.  
+ Bu üye işlevi oluşturmak veya bir kayıt kümesi nesnesini alın ve bir işaretçi döndürmek için geçersiz kılmanız gerekir. Kayıt görünümü sınıfınız ClassWizard ile bildirirseniz, sihirbaz varsayılan geçersiz kılma yazar. ClassWizard'ın varsayılan uygulaması varsa kayıt görünümünde depolanan kayıt kümesi işaretçi döndürür. Türündeki bir kayıt kümesi nesnesi oluşturur, varsa çağrıları ve ClassWizard ile belirtilen kendi `Open` üye tabloyu veya sorguyu çalıştırmak için işlev ve ardından bir işaretçi nesneyi döndürür.  
   
  Daha fazla bilgi ve örnekler için bkz: [kayıt görünümleri: kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md).  
   
@@ -177,7 +177,7 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDMoveCommand`  
+ *nIDMoveCommand*  
  Aşağıdaki standart komut kimliği değerlerden biri:  
   
 - `ID_RECORD_FIRST` Kayıt kümesindeki ilk kaydı taşıyın.  
@@ -201,7 +201,7 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
  Kayıt kümesindeki son kayıt geçmiş taşırsanız, kayıt görünümü son kaydı görüntülemeye devam eder. Geriye doğru ilk kaydı taşırsanız, kayıt görünümü ilk kaydı görüntülemeye devam eder.  
   
 > [!CAUTION]
->  Çağırma `OnMove` hiçbir kayıt kayıt varsa, bir özel durum oluşturur. Uygun kullanıcı arabirimi güncelleştirme işleyicisi işlevini çağırın — **OnUpdateRecordFirst**, **OnUpdateRecordLast**, **OnUpdateRecordNext**, veya  **OnUpdateRecordPrev** — karşılık gelen önce taşıma işlemi kayıt herhangi bir kayıt olup olmadığını belirlemek için.  
+>  Çağırma `OnMove` hiçbir kayıt kayıt varsa, bir özel durum oluşturur. Uygun kullanıcı arabirimi güncelleştirme işleyicisi işlevini çağırın — `OnUpdateRecordFirst`, `OnUpdateRecordLast`, `OnUpdateRecordNext`, veya `OnUpdateRecordPrev` — karşılık gelen önce taşıma işlemi kayıt herhangi bir kayıt olup olmadığını belirlemek için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Cformview'yu sınıfı](../../mfc/reference/cformview-class.md)   

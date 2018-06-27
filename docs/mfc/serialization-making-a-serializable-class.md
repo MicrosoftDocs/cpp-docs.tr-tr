@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4412e8db861ac522c0f1b1d7192bfbb83612d64c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5b8e52750f6f4589f90048e248305b2f0f5b4855
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383422"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953080"
 ---
 # <a name="serialization-making-a-serializable-class"></a>Seri hale getirme: Seri Hale Getirilebilir Bir Sınıf Yapma
 Beş ana adım seri hale getirilebilir bir sınıf yapmak için gereklidir. Aşağıda listelenen bağlıdır ve aşağıdaki bölümlerde açıklanmıştır:  
@@ -71,7 +71,7 @@ Beş ana adım seri hale getirilebilir bir sınıf yapmak için gereklidir. Aşa
  Aynı zamanda [CArchive::Read](../mfc/reference/carchive-class.md#read) ve [CArchive::Write](../mfc/reference/carchive-class.md#write) okumak ve büyük miktarlarda yazılmayan veri yazmak için üye işlevleri.  
   
 ##  <a name="_core_using_the_declare_serial_macro"></a> Declare_serıal makrosu kullanma  
- `DECLARE_SERIAL` Makrosu, serileştirme, destekleyen sınıfları bildiriminde gereklidir, aşağıda gösterildiği gibi:  
+ Declare_serıal makrosu serileştirme, destekleyen sınıfları bildiriminde aşağıda gösterildiği gibi gereklidir:  
   
  [!code-cpp[NVC_MFCSerialization#3](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_3.h)]  
   
@@ -81,18 +81,18 @@ Beş ana adım seri hale getirilebilir bir sınıf yapmak için gereklidir. Aşa
  Bu oluşturucu, public, korumalı ya da özel bildirilebilir. Korumalı veya özel değişiklik yaparsanız, yalnızca serileştirme işlevleri tarafından kullanılacağını sağlanmasına yardımcı olur. Oluşturucusu gerekirse silinmesine izin veren bir durumda nesne konulmalıdır.  
   
 > [!NOTE]
->  Bağımsız değişken içermeyen bir oluşturucuya kullanan bir sınıfı tanımlamak unutursanız `DECLARE_SERIAL` ve `IMPLEMENT_SERIAL` makroları satırda "varsayılan oluşturucu yok kullanılabilir" derleyici uyarısı alırsınız nerede `IMPLEMENT_SERIAL` makrosu kullanılır.  
+>  Bağımsız değişken içermeyen bir oluşturucuya declare_serıal ve ımplement_serıal makroları kullanan bir sınıfta tanımlamak unutursanız, ımplement_serıal makrosu kullanıldığı satırda "varsayılan oluşturucu yok kullanılabilir" derleyici uyarısı alırsınız.  
   
 ##  <a name="_core_using_the_implement_serial_macro_in_the_implementation_file"></a> Implement_serıal makrosu uygulama dosyasında kullanma  
- `IMPLEMENT_SERIAL` Makrosu olduğunda, türetilen seri hale getirilebilir bir sınıf çeşitli işlevleri tanımlamak için kullanılan `CObject`. Uygulama dosyasında bu makrosu kullanın (. CPP) sınıfınız için. İlk iki makrosu için sınıfı adı ve hemen kendi temel sınıfının adını değişkendir.  
+ Implement_serıal makrosu olduğunda, türetilen seri hale getirilebilir bir sınıf çeşitli işlevleri tanımlamak için kullanılan `CObject`. Uygulama dosyasında bu makrosu kullanın (. CPP) sınıfınız için. İlk iki makrosu için sınıfı adı ve hemen kendi temel sınıfının adını değişkendir.  
   
  Bu makrosu üçüncü bağımsız değişkeni bir şema sayıdır. Aslında bir sürüm numarası sınıfındaki nesneler için şema sayıdır. Büyük veya 0 değerine eşit bir tamsayı için şema numarasını kullanın. (Bu veritabanı terminolojisi şema numarasıyla karıştırmayın.)  
   
  MFC seri hale getirme kodu şema numarasını nesneleri belleğe okunurken denetler. Disk nesnesinde şema sayısı bellek sınıfında şema sayısı eşleşmiyorsa, kitaplık özel durum oluşturacak bir `CArchiveException`, programınızı nesne yanlış sürümünü okumasını engelliyor.  
   
- İsterseniz, `Serialize` üye işlevi birden çok sürümü okuyabilir — diğer bir deyişle, uygulamanın farklı sürümlerini yazılmış dosyaları — değer kullanabilirsiniz **versıonable_schema** bağımsız değişken olarak `IMPLEMENT_SERIAL` Makro. Kullanım bilgilerini ve bir örnek için bkz: `GetObjectSchema` sınıfının üye işlevini `CArchive`.  
+ İsterseniz, `Serialize` üye işlevi birden çok sürümü okuyabilir — diğer bir deyişle, uygulamanın farklı sürümlerini yazılmış dosyaları — değer kullanabilirsiniz *versıonable_schema* ımplement_serıal bağımsız değişken olarak Makro. Kullanım bilgilerini ve bir örnek için bkz: `GetObjectSchema` sınıfının üye işlevini `CArchive`.  
   
- Aşağıdaki örnekte nasıl kullanılacağını gösterir `IMPLEMENT_SERIAL` bir sınıf için `CPerson`, yani türetilmiş `CObject`:  
+ Aşağıdaki örnek bir sınıf için ımplement_serıal kullanmayı gösterir `CPerson`, yani türetilmiş `CObject`:  
   
  [!code-cpp[NVC_MFCSerialization#4](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_4.cpp)]  
   

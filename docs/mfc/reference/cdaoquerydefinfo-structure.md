@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0b3e5834aa8b338448c2024603783cedb6f6cae
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a31928bc98b8b2fd403f1db40c040357c388b104
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367236"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952293"
 ---
 # <a name="cdaoquerydefinfo-structure"></a>CDaoQueryDefInfo Yapısı
 `CDaoQueryDefInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan QueryDefs hakkında bilgiler içerir.  
@@ -45,10 +45,10 @@ struct CDaoQueryDefInfo
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `m_strName`  
+ *m_strName*  
  QueryDefs adlandıran. Daha fazla bilgi için DAO Yardımı'ndaki "Name özelliği" konusuna bakın. Çağrı [CDaoQueryDef::GetName](../../mfc/reference/cdaoquerydef-class.md#getname) doğrudan bu özelliği alınamadı.  
   
- `m_nType`  
+ *m_nType*  
  QueryDefs işletimsel türünü belirten bir değer. Değerin aşağıdakilerden biri olabilir:  
   
 - **dbQSelect** seçin — sorgu kayıtları seçer.  
@@ -78,13 +78,13 @@ struct CDaoQueryDefInfo
   
  Daha fazla bilgi için DAO Yardımı'ndaki "Type özelliği" konusuna bakın.  
   
- `m_dateCreated`  
+ *m_dateCreated*  
  Tarih ve saat querydef oluşturuldu. Doğrudan querydef oluşturulduğu tarihi almak için arama [GetDateCreated](../../mfc/reference/cdaotabledef-class.md#getdatecreated) üye işlevini `CDaoTableDef` tabloyla ilişkili nesne. Açıklamalar aşağıda daha fazla bilgi için bkz. Ayrıca "Notes, LastUpdated özellikleri" DAO Yardım konusuna bakın.  
   
- `m_dateLastUpdated`  
+ *m_dateLastUpdated*  
  Tarih ve saat için querydef yapılan en son değişikliğin. Tablonun son güncelleştirilen tarih doğrudan almak için arama [GetDateLastUpdated](../../mfc/reference/cdaoquerydef-class.md#getdatelastupdated) querydef üye işlevini. Açıklamalar aşağıda daha fazla bilgi için bkz. Ve DAO Yardımı'ndaki "Notes, LastUpdated özellikleri" konusuna bakın.  
   
- `m_bUpdatable`  
+ *m_bUpdatable*  
  Değişiklikleri querydef nesneye yapılan olup olmadığını gösterir. Bu özellik ise **TRUE**querydef güncelleştirilebilir; Aksi takdirde, bu değildir. Güncelleştirilebilir querydef nesnesinin sorgu tanımı değiştirilebilir anlamına gelir. QueryDefs güncelleştirilebilir özellik kümesine **TRUE** elde edilen kayıt kümesi güncelleştirilebilir değilse bile sorgu tanımı, güncelleştirilebilir değilse. Bu özellik doğrudan almak için querydef's çağrısı [CanUpdate](../../mfc/reference/cdaoquerydef-class.md#canupdate) üye işlevi. Daha fazla bilgi için DAO Yardımı'ndaki "güncelleştirilebilir özellik" konusuna bakın.  
   
  *m_bReturnsRecords*  
@@ -93,7 +93,7 @@ struct CDaoQueryDefInfo
  *m_strSQL*  
  Querydef nesnesi tarafından çalıştırılan sorguyu tanımlayan SQL deyimi. SQL özellik sorgu yürütülürken nasıl kayıtları, gruplandırılmış ve sıralı seçileceğini belirleyen SQL deyimi içerir. Dynaset veya anlık görüntü türü kayıt kümesi nesnesinde içermek üzere kayıtları seçmek için sorgu kullanabilirsiniz. Veri kayıtları dönmeden değiştirmek için Toplu sorguları da tanımlayabilirsiniz. Doğrudan querydef's çağırarak bu özelliğin değerini alabilir [GetSQL](../../mfc/reference/cdaoquerydef-class.md#getsql) üye işlevi.  
   
- `m_strConnect`  
+ *m_strConnect*  
  Geçiş sorguda kullanılan bir veritabanı kaynak hakkında bilgi sağlar. Bu bilgiler bir bağlantı dizesi biçimi alır. Daha fazla bilgi için ilgili bağlantı dizesi ve bu özelliğin değerini doğrudan alma hakkında daha fazla bilgi için bkz: [CDaoDatabase::GetConnect](../../mfc/reference/cdaodatabase-class.md#getconnect) üye işlevi.  
   
  *m_nODBCTimeout*  

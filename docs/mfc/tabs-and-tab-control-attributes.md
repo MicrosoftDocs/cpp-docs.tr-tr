@@ -18,17 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f925f8b6a5c522e22890ee2c1082ae8d709d2220
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cd2129ad4b2dc075893a730c0ba75de96dbebea0
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381199"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952865"
 ---
 # <a name="tabs-and-tab-control-attributes"></a>Sekme ve Sekme Denetimi Öznitelikleri
 Görünümü ve davranışı Sekme denetimini oluşturan sekmelerinin üzerinde önemli denetiminiz ([CTabCtrl](../mfc/reference/ctabctrl-class.md)). Her sekme bir etiket, simge, bir öğesi durumu ve ilişkili bir uygulama tanımlı 32-bit değeri olabilir. Her sekme için simge, etiket veya her ikisi de görüntüleyebilirsiniz.  
   
- Ayrıca, her sekme öğesi üç olası durumlar olabilir: basıldığında basılmamış ya da vurgulanır. Bu durum yalnızca var olan bir sekme öğesi değiştirerek ayarlanabilir. Var olan bir sekme öğesini değiştirmek için bunu çağrısıyla almak [GetItem](../mfc/reference/ctabctrl-class.md#getitem), değişiklik `TCITEM` yapısı (özellikle **dwState** ve **dwStateMask** veri üyeleri ) ve ardından değiştirilen dönün `TCITEM` çağrısıyla yapısı [SetItem](../mfc/reference/ctabctrl-class.md#setitem). Tüm sekme öğeler öğesi durumları temizlemek gereken bir `CTabCtrl` nesne, çağırmaya [DeselectAll](../mfc/reference/ctabctrl-class.md#deselectall). Bu işlev tüm sekme öğeleri veya şu anda seçili dışındaki tüm öğeleri durumunu sıfırlar.  
+ Ayrıca, her sekme öğesi üç olası durumlar olabilir: basıldığında basılmamış ya da vurgulanır. Bu durum yalnızca var olan bir sekme öğesi değiştirerek ayarlanabilir. Var olan bir sekme öğesini değiştirmek için bunu çağrısıyla almak [GetItem](../mfc/reference/ctabctrl-class.md#getitem), değişiklik `TCITEM` yapısı (özellikle *dwState* ve *dwStateMask* veri üyeleri ) ve ardından değiştirilen dönün `TCITEM` çağrısıyla yapısı [SetItem](../mfc/reference/ctabctrl-class.md#setitem). Tüm sekme öğeler öğesi durumları temizlemek gereken bir `CTabCtrl` nesne, çağırmaya [DeselectAll](../mfc/reference/ctabctrl-class.md#deselectall). Bu işlev tüm sekme öğeleri veya şu anda seçili dışındaki tüm öğeleri durumunu sıfırlar.  
   
  Aşağıdaki kod, tüm sekme öğeleri durumunu temizler ve üçüncü öğesinin durumunu değiştirir:  
   

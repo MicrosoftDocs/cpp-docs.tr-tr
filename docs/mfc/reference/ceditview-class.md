@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b15d604670ec1c458c6ca8db5b3b4eab51fb8f65
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b5fb6e03e521b52e47b3c8853e2f6aa632614c55
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371549"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953407"
 ---
 # <a name="ceditview-class"></a>CEditView sınıfı
 Bir Windows işlevselliğini sağlar görünüm sınıfının bir türü denetim düzenleyin ve basit bir metin düzenleyicisi işlevselliği uygulamak için kullanılabilir.  
@@ -103,7 +103,7 @@ class CEditView : public CCtrlView
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CEditView::dwStyleDefault](#dwstyledefault)|Stil türündeki nesneler için varsayılan **CEditView.**|  
+|[CEditView::dwStyleDefault](#dwstyledefault)|Stil türündeki nesneler için varsayılan `CEditView`.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  `CEditView` Sınıfı, aşağıdaki ek işlevleri sağlar:  
@@ -160,7 +160,7 @@ CEditView();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Nesne oluşturma sonra çağırmalısınız [CWnd::Create](../../mfc/reference/cwnd-class.md#create) düzenleme denetimi kullanılmadan önce işlev. Öğesinden bir sınıf türetirseniz `CEditView` ve şablonu kullanarak eklemek `CWinApp::AddDocTemplate`, çerçevesi hem bu oluşturucuyu çağırır ve **oluşturma** işlevi.  
+ Nesne oluşturma sonra çağırmalısınız [CWnd::Create](../../mfc/reference/cwnd-class.md#create) düzenleme denetimi kullanılmadan önce işlev. Öğesinden bir sınıf türetirseniz `CEditView` ve şablonu kullanarak eklemek `CWinApp::AddDocTemplate`, çerçevesi hem bu oluşturucuyu çağırır ve `Create` işlevi.  
   
 ##  <a name="dwstyledefault"></a>  CEditView::dwStyleDefault  
  Varsayılan stilini içeren `CEditView` nesnesi.  
@@ -170,7 +170,7 @@ static const DWORD dwStyleDefault;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu statik üye olarak geçirmek `dwStyle` parametresinin **oluşturma** işlevi için varsayılan stil elde `CEditView` nesnesi.  
+ Bu statik üye olarak geçirmek `dwStyle` parametresinin `Create` işlevi için varsayılan stil elde `CEditView` nesnesi.  
   
 ##  <a name="findtext"></a>  CEditView::FindText  
  Çağrı `FindText` aramak için işlevi `CEditView` nesnenin metin arabelleği.  
@@ -183,20 +183,20 @@ BOOL FindText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszFind`  
+ *lpszFind*  
  Bulunacak metin.  
   
- `bNext`  
+ *bİleri*  
  Arama yönünü belirtir. Varsa **doğru**, Arama yönü arabelleğin sonuna doğru olur. Varsa **yanlış**, arama yönünü arabellek doğru başlangıcıdır.  
   
- `bCase`  
+ *bCase*  
  Arama büyük küçük harfe duyarlı olup olmadığını belirtir. Varsa **doğru**, arama büyük küçük harfe duyarlıdır. Varsa **yanlış**, arama büyük küçük harfe duyarlı değildir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Aranacak metin bulunursa, sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev tarafından belirtilen metin arabelleği metni arar `lpszFind`tarafından belirtilen yönde geçerli seçim başlayarak `bNext`ve büyük/küçük harfe duyarlılık tarafından belirtilen ile `bCase`. Metin bulunursa, bulunan metinde seçimi ayarlar ve sıfır olmayan bir değer döndürür. Metin bulunamazsa işlevi 0 değerini döndürür.  
+ Bu işlev tarafından belirtilen metin arabelleği metni arar *lpszFind*tarafından belirtilen yönde geçerli seçim başlayarak *bİleri*ile tarafındanbelirtilenbüyük/küçükharfeduyarlılık*bCase*. Metin bulunursa, bulunan metinde seçimi ayarlar ve sıfır olmayan bir değer döndürür. Metin bulunamazsa işlevi 0 değerini döndürür.  
   
  Normalde çağrı gerekmez `FindText` kılmanız sürece işlev `OnFindNext`, çağıran `FindText`.  
   
@@ -252,7 +252,7 @@ void GetSelectedText(CString& strResult) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `strResult`  
+ *strResult*  
  Bir başvuru `CString` seçili metni almak için nesne.  
   
 ##  <a name="lockbuffer"></a>  CEditView::LockBuffer  
@@ -266,7 +266,7 @@ LPCTSTR LockBuffer() const;
  Düzenle denetim arabellek için bir işaretçi.  
   
 ##  <a name="onfindnext"></a>  CEditView::OnFindNext  
- Tarafından belirlenen metin arabelleği metni arar `lpszFind`, belirtilen yönde `bNext`, büyük/küçük harfe duyarlılık tarafından belirtilen ile `bCase`.  
+ Tarafından belirlenen metin arabelleği metni arar *lpszFind*, belirtilen yönde *bİleri*, büyük/küçük harfe duyarlılık tarafından belirtilen ile *bCase*.  
   
 ```  
 virtual void OnFindNext(
@@ -276,13 +276,13 @@ virtual void OnFindNext(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszFind`  
+ *lpszFind*  
  Bulunacak metin.  
   
- `bNext`  
+ *bİleri*  
  Arama yönünü belirtir. Varsa **doğru**, Arama yönü arabelleğin sonuna doğru olur. Varsa **yanlış**, arama yönünü arabellek doğru başlangıcıdır.  
   
- `bCase`  
+ *bCase*  
  Arama büyük küçük harfe duyarlı olup olmadığını belirtir. Varsa **doğru**, arama büyük küçük harfe duyarlıdır. Varsa **yanlış**, arama büyük küçük harfe duyarlı değildir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -301,19 +301,19 @@ virtual void OnReplaceAll(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszFind`  
+ *lpszFind*  
  Bulunacak metin.  
   
- `lpszReplace`  
+ *lpszReplace*  
  Arama metni değiştirmek için metin.  
   
- `bCase`  
+ *bCase*  
  Arama büyük küçük harfe duyarlı olup olmadığını belirtir. Varsa **doğru**, arama büyük küçük harfe duyarlıdır. Varsa **yanlış**, arama büyük küçük harfe duyarlı değildir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `OnReplaceAll` tarafından belirlenen metin arabelleği metni arar `lpszFind`, büyük/küçük harfe duyarlılık tarafından belirtilen ile `bCase`. Arama geçerli seçim başında başlar. Aranacak metin bulunursa, her zaman bu işlev tarafından belirtilen metin ile metnin meydana değiştirir `lpszReplace`. Arama çağrısı aracılığıyla gerçekleştirilir [FindText](#findtext). Varsayılan uygulamada [OnTextNotFound](#ontextnotfound) metin bulunmazsa olarak adlandırılır.  
+ `OnReplaceAll` tarafından belirlenen metin arabelleği metni arar *lpszFind*, büyük/küçük harfe duyarlılık tarafından belirtilen ile *bCase*. Arama geçerli seçim başında başlar. Her zaman arama metni bulunamadı, bu işlev tarafından belirtilen metin ile metnin meydana değiştirir *lpszReplace*. Arama çağrısı aracılığıyla gerçekleştirilir [FindText](#findtext). Varsayılan uygulamada [OnTextNotFound](#ontextnotfound) metin bulunmazsa olarak adlandırılır.  
   
- Geçerli seçim eşleşmiyorsa `lpszFind`, seçim tarafından belirtilen metnin ilk geçtiği için güncelleştirilmiş `lpszFind` ve değiştirme gerçekleştirilemiyor. Bu seçimin değiştirilmeleri metin eşleşmediğinde yapmak istedikleri olduğunu onaylamak kullanıcı sağlar.  
+ Geçerli seçim eşleşmiyorsa *lpszFind*, seçim tarafından belirtilen metnin ilk geçtiği için güncelleştirilmiş *lpszFind* ve değiştirme gerçekleştirilemiyor. Bu seçimin değiştirilmeleri metin eşleşmediğinde yapmak istedikleri olduğunu onaylamak kullanıcı sağlar.  
   
  Geçersiz kılma `OnReplaceAll` şeklini değiştirmek için bir `CEditView`-türetilen nesne metin yerini alır.  
   
@@ -329,20 +329,20 @@ virtual void OnReplaceSel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszFind`  
+ *lpszFind*  
  Bulunacak metin.  
   
- `bNext`  
+ *bİleri*  
  Arama yönünü belirtir. Varsa **doğru**, Arama yönü arabelleğin sonuna doğru olur. Varsa **yanlış**, arama yönünü arabellek doğru başlangıcıdır.  
   
- `bCase`  
+ *bCase*  
  Arama büyük küçük harfe duyarlı olup olmadığını belirtir. Varsa **doğru**, arama büyük küçük harfe duyarlıdır. Varsa **yanlış**, arama büyük küçük harfe duyarlı değildir.  
   
- `lpszReplace`  
+ *lpszReplace*  
  Bulunan metni değiştirmek için metin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Seçim değiştirildikten sonra bu işlev metni Sonrakini tarafından belirtilen metin arabelleği arar `lpszFind`, belirtilen yönde `bNext`, büyük/küçük harfe duyarlılık tarafından belirtilen ile `bCase`. Arama çağrısı aracılığıyla gerçekleştirilir [FindText](#findtext). Metin bulunamazsa [OnTextNotFound](#ontextnotfound) olarak adlandırılır.  
+ Seçim değiştirildikten sonra bu işlev metni Sonrakini tarafından belirtilen metin arabelleği arar *lpszFind*, belirtilen yönde *bİleri*, büyük/küçük harfe duyarlılık ile tarafından belirtilen *bCase*. Arama çağrısı aracılığıyla gerçekleştirilir [FindText](#findtext). Metin bulunamazsa [OnTextNotFound](#ontextnotfound) olarak adlandırılır.  
   
  Geçersiz kılma `OnReplaceSel` şeklini değiştirmek için bir `CEditView`-türetilen nesne seçili metnin yerini alır.  
   
@@ -354,7 +354,7 @@ virtual void OnTextNotFound(LPCTSTR lpszFind);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszFind`  
+ *lpszFind*  
  Bulunacak metin.  
   
 ##  <a name="printinsiderect"></a>  CEditView::PrintInsideRect  
@@ -369,16 +369,16 @@ UINT PrintInsideRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Yazıcı cihaz bağlamı işaretçi.  
   
  *rectLayout*  
  Başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT yapısı](../../mfc/reference/rect-structure1.md) metin olduğu işlenmek üzere dikdörtgen belirtme.  
   
- `nIndexStart`  
+ *nIndexStart*  
  İşlenmek üzere ilk karakter arabellek içinde dizin.  
   
- `nIndexStop`  
+ *nIndexStop*  
  İşlenmek üzere son harfinden karakter arabellek içinde dizin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -397,21 +397,21 @@ void SerializeRaw(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ar`  
+ *ar*  
  Başvuru `CArchive` serileştirilmiş metni depolar nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `SerializeRaw` farklı `CEditView`'s iç uyarlamasını `Serialize` okur ve metin yalnızca nesne açıklama verilerini önceki olmadan yazar.  
   
 ##  <a name="setprinterfont"></a>  CEditView::SetPrinterFont  
- Çağrı `SetPrinterFont` tarafından belirtilen yazı tipi için yazıcı yazı tipi ayarlamak için `pFont`.  
+ Çağrı `SetPrinterFont` tarafından belirtilen yazı tipi için yazıcı yazı tipi ayarlamak için *pFont*.  
   
 ```  
 void SetPrinterFont(CFont* pFont);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFont`  
+ *pFont*  
  Bir nesne türü için bir işaretçi `CFont`. Varsa **NULL**, yazdırma için kullanılan yazı tipi görüntü yazı tipini dayanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -425,7 +425,7 @@ void SetTabStops(int nTabStops);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nTabStops`  
+ *nTabStops*  
  İletişim kutusu birimleri içinde her sekme durağı genişliği.  
   
 ### <a name="remarks"></a>Açıklamalar  

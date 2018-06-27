@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54a7ef7f6fd9a9da92c208366ee401d55d07fd5a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9625b3eafa75bdafff7d17ea63db8904d9b49529
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384588"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956853"
 ---
 # <a name="tn014-custom-controls"></a>TN014: Özel Denetimler
 Bu Not özel ve kendi kendine çizim denetimleri için MFC desteği açıklar. Bu ayrıca dinamik sınıflara ve arasındaki ilişkiyi açıklar [CWnd](../mfc/reference/cwnd-class.md) nesneleri ve `HWND`s.  
@@ -100,11 +100,11 @@ Bu Not özel ve kendi kendine çizim denetimleri için MFC desteği açıklar. B
 ## <a name="using-self-draw-controls-and-menus"></a>Kendi kendine çizin denetimleri ve menülerini kullanarak  
  Kendi kendine çizin menülerden, her ikisi de kılmalı `OnMeasureItem` ve `OnDrawItem` yöntemleri.  
   
- Kendi kendine çizin liste kutuları ve birleşik giriş kutuları için geçersiz kılmanız gerekir `OnMeasureItem` ve `OnDrawItem`. Belirtmeniz gerekir `LBS_OWNERDRAWVARIABLE` liste kutuları için stil veya `CBS_OWNERDRAWVARIABLE` stili için birleşik giriş kutuları iletişim şablonunda. `OWNERDRAWFIXED` Stili denetimleri Self çizmek için liste kutusu bağlı önce sabit öğe yüksekliği belirlediğinden Self çizin öğeleri ile çalışmaz. (Yöntemlerini kullanabilirsiniz [CListBox::SetItemHeight](../mfc/reference/clistbox-class.md#setitemheight) ve [CComboBox::SetItemHeight](../mfc/reference/ccombobox-class.md#setitemheight) bu sınırlamanın üstesinden gelmek için.)  
+ Kendi kendine çizin liste kutuları ve birleşik giriş kutuları için geçersiz kılmanız gerekir `OnMeasureItem` ve `OnDrawItem`. Lbs_ownerdrawvarıable stili liste kutuları veya birleşik giriş kutuları için cbs_ownerdrawvarıable Stili iletişim şablonunda belirtmeniz gerekir. Sabit öğe yüksekliği denetimleri Self çizmek için liste kutusu bağlı önce belirlediğinden OWNERDRAWFIXED stili Self çizin öğeleriyle çalışmaz. (Yöntemlerini kullanabilirsiniz [CListBox::SetItemHeight](../mfc/reference/clistbox-class.md#setitemheight) ve [CComboBox::SetItemHeight](../mfc/reference/ccombobox-class.md#setitemheight) bu sınırlamanın üstesinden gelmek için.)  
   
- Geçiş bir `OWNERDRAWVARIABLE` stili uygulanması için sistemi zorlayacak `NOINTEGRALHEIGHT` denetimine stili. Denetim sahip değişken boyutlu bir tam sayı yükseklik hesaplayamıyor çünkü öğelerini, varsayılan stilini `INTEGRALHEIGHT` göz ardı edilir ve her zaman denetimidir `NOINTEGRALHEIGHT`. Öğelerinizi yükseklik sabitse, bir tamsayı çarpanı öğesi boyutunun denetim boyutunu belirterek çizilen gelen kısmi öğeler engelleyebilir.  
+ Bir OWNERDRAWVARIABLE stilini değiştirme NOINTEGRALHEIGHT stili denetimine uygulamak için sistem zorlar. Denetimi bir tam sayı yükseklik değişken boyutlu öğelerle hesaplayamıyor olduğundan, INTEGRALHEIGHT varsayılan stilini göz ardı edilir ve her zaman NOINTEGRALHEIGHT denetimidir. Öğelerinizi yükseklik sabitse, bir tamsayı çarpanı öğesi boyutunun denetim boyutunu belirterek çizilen gelen kısmi öğeler engelleyebilir.  
   
- Kendi kendine çizim liste kutuları veya birleşik giriş kutuları ile için `LBS_SORT` veya `CBS_SORT` stili kılmanız gerekir `OnCompareItem` yöntemi.  
+ Liste kutuları ve birleşik giriş kutuları LBS_SORT veya CBS_SORT stiliyle Self çizim için geçersiz kılmanız gerekir `OnCompareItem` yöntemi.  
   
  Kendi kendine çizim liste kutuları veya birleşik giriş kutuları için `OnDeleteItem` genellikle geçersiz. Geçersiz kılabilirsiniz `OnDeleteItem` herhangi bir özel işlem gerçekleştirmek istiyorsanız. Ek bellek veya diğer kaynaklara her liste kutusu veya birleşik giriş kutusu öğesi ile depolandığında bunun geçerli olduğu bir durumdur.  
   

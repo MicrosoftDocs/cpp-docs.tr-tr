@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f43df1cb610c785688db982be2ddc4a19cf140b2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 303e89cd00091d8427bdb1d6e36c9a85b7aa5100
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374542"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952959"
 ---
 # <a name="cftpconnection-class"></a>CFtpConnection sınıfı
 Internet sunucusu FTP bağlantınız yönetir ve dizinleri ve dosyaları bu sunucuda doğrudan işlenmesini sağlar.  
@@ -122,36 +122,36 @@ CFtpConnection(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pSession`  
+ *pSession*  
  Bir işaretçi ilgili [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesi.  
   
- `hConnected`  
+ *hConnected*  
  Windows tanıtıcı geçerli Internet oturumunun.  
   
- `pstrServer`  
+ *pstrServer*  
  FTP sunucusu adını içeren bir dize için bir işaretçi.  
   
- `dwContext`  
- İşlem bağlamı tanımlayıcısı. `dwContext` işlem durumu bilgileri tarafından döndürülen tanımlayan [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback). Varsayılan değer 1 olarak ayarlanır; Ancak, belirli bir bağlam kimliği işlemi için açıkça atayabilirsiniz. Nesne ve mevcut herhangi bir iş, içerik kimliği ile ilişkilendirilecek  
+ *dwContext*  
+ İşlem bağlamı tanımlayıcısı. *dwContext* tarafından döndürülen işlem durumu bilgileri tanımlayan [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback). Varsayılan değer 1 olarak ayarlanır; Ancak, belirli bir bağlam kimliği işlemi için açıkça atayabilirsiniz. Nesne ve mevcut herhangi bir iş, içerik kimliği ile ilişkilendirilecek  
   
- `pstrUserName`  
+ *pstrUserName*  
  İşaretçi null ile sonlandırılmış dizeye oturum açmak için kullanıcı adını belirtir. Varsa **NULL**, anonim varsayılandır.  
   
- `pstrPassword`  
- Oturum açmak için kullanılacak parolayı belirten null ile sonlandırılmış bir dize için bir işaretçi. Her iki `pstrPassword` ve `pstrUserName` olan **NULL**, varsayılan anonim parola kullanıcının e-posta adıdır. Varsa `pstrPassword` olan **NULL** (veya boş bir dize) ancak `pstrUserName` değil **NULL**, boş bir parola kullanılır. Aşağıdaki tabloda dört olası ayarlarını davranışını açıklanmaktadır `pstrUserName` ve `pstrPassword`:  
+ *pstrPassword*  
+ Oturum açmak için kullanılacak parolayı belirten null ile sonlandırılmış bir dize için bir işaretçi. Her iki *pstrPassword* ve *pstrUserName* olan **NULL**, varsayılan anonim parola kullanıcının e-posta adıdır. Varsa *pstrPassword* olan **NULL** (veya boş bir dize) ancak *pstrUserName* değil **NULL**, boş bir parola kullanılır. Aşağıdaki tabloda dört olası ayarlarını davranışını açıklanmaktadır *pstrUserName* ve *pstrPassword*:  
   
-|`pstrUserName`|`pstrPassword`|FTP sunucusuna gönderilen kullanıcı adı|FTP sunucusuna gönderilen parola|  
+|*pstrUserName*|*pstrPassword*|FTP sunucusuna gönderilen kullanıcı adı|FTP sunucusuna gönderilen parola|  
 |--------------------|--------------------|---------------------------------|---------------------------------|  
 |**NULL** veya ""|**NULL** veya ""|"anonim"|Kullanıcının e-posta adı|  
-|Olmayan- **NULL** dize|**NULL** veya ""|`pstrUserName`|" "|  
+|Olmayan- **NULL** dize|**NULL** veya ""|*pstrUserName*|" "|  
 |**NULL** olmayan **NULL** dize|**HATA**|**HATA**||  
-|Olmayan- **NULL** dize|Olmayan- **NULL** dize|`pstrUserName`|`pstrPassword`|  
+|Olmayan- **NULL** dize|Olmayan- **NULL** dize|*pstrUserName*|*pstrPassword*|  
   
- `nPort`  
+ *nbağlantı noktası*  
  Sunucuda kullanmak için TCP/IP bağlantı noktası tanımlayan bir sayı.  
   
- `bPassive`  
- Bu FTP oturumu için etkin veya Pasif modu belirtir. Varsa kümesine **TRUE**, Win32 API ayarlar `dwFlag` için **INTERNET_FLAG_PASSIVE**.  
+ *bPassive*  
+ Bu FTP oturumu için etkin veya Pasif modu belirtir. Varsa kümesine **TRUE**, Win32 API ayarlar *dwFlag* için **INTERNET_FLAG_PASSIVE**.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Hiçbir zaman oluşturduğunuz bir `CFtpConnection` doğrudan nesne. Bunun yerine, çağrı [CInternetSession::GetFtpConnection](../../mfc/reference/cinternetsession-class.md#getftpconnection), oluşturan **CFptConnection** nesnesi.  
@@ -168,7 +168,7 @@ CInternetFile* Command(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pszCommand`  
+ *pszCommand*  
  Gönderilecek komut içeren bir dize için bir işaretçi.  
   
  *eResponse*  
@@ -178,10 +178,10 @@ CInternetFile* Command(
   
 - **CmdRespRead** yanıtı bekleniyor.  
   
- `dwFlags`  
+ *dwFlags*  
  Bu işlev denetim bayrakları içeren bir değer. Tam bir listesi için bkz: [FTPCommand](http://msdn.microsoft.com/library/windows/desktop/aa384133).  
   
- `dwContext`  
+ *dwContext*  
  Geri aramalar uygulama bağlamında tanımlamak için kullanılan bir uygulama tanımlı değeri içeren bir değer için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -200,7 +200,7 @@ BOOL CreateDirectory(LPCTSTR pstrDirName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstrDirName`  
+ *pstrDirName*  
  Oluşturmak için dizin adını içeren bir dize için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -223,19 +223,19 @@ BOOL GetCurrentDirectory(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `strDirName`  
+ *strDirName*  
  Dizin adı alacak olan bir dize başvuru.  
   
- `pstrDirName`  
+ *pstrDirName*  
  Bir işaretçi bir dizeye dizinin adını alır.  
   
- `lpdwLen`  
+ *lpdwLen*  
  Aşağıdaki bilgileri içeren bir DWORD gösteren bir işaretçi:  
   
 |||  
 |-|-|  
-|Girişi|Tarafından başvurulan arabellek boyutu `pstrDirName`.|  
-|Getirisi|Saklı karakter sayısını `pstrDirName`. Üye işlev başarısız olur ve ERROR_INSUFFICIENT_BUFFER döndürülür, ardından `lpdwLen` dize almak için uygulama ayırmalısınız bayt sayısını içerir.|  
+|Girişi|Tarafından başvurulan arabellek boyutu *pstrDirName*.|  
+|Getirisi|Saklı karakter sayısını *pstrDirName*. Üye işlev başarısız olur ve ERROR_INSUFFICIENT_BUFFER döndürülür, ardından *lpdwLen* dize almak için uygulama ayırmalısınız bayt sayısını içerir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, Win32 işlevi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
@@ -243,7 +243,7 @@ BOOL GetCurrentDirectory(
 ### <a name="remarks"></a>Açıklamalar  
  Dizin adı yerine bir URL almak için çağrı [GetCurrentDirectoryAsURL](#getcurrentdirectoryasurl).  
   
- Parametreleri `pstrDirName` veya `strDirName` tam veya geçerli dizine göreli kısmen tam ya da dosya adları olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. `GetCurrentDirectory` kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
+ Parametreleri *pstrDirName* veya *strDirName* tam veya geçerli dizine göreli kısmen tam ya da dosya adları olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. `GetCurrentDirectory` kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
   
 ##  <a name="getcurrentdirectoryasurl"></a>  CFtpConnection::GetCurrentDirectoryAsURL  
  URL olarak geçerli dizinin adını almak için bu üye işlevini çağırın.  
@@ -257,19 +257,19 @@ BOOL GetCurrentDirectoryAsURL(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `strDirName`  
+ *strDirName*  
  Dizin adı alacak olan bir dize başvuru.  
   
- `pstrDirName`  
+ *pstrDirName*  
  Bir işaretçi bir dizeye dizinin adını alır.  
   
- `lpdwLen`  
+ *lpdwLen*  
  Aşağıdaki bilgileri içeren bir DWORD gösteren bir işaretçi:  
   
 |||  
 |-|-|  
-|Girişi|Tarafından başvurulan arabellek boyutu `pstrDirName`.|  
-|Getirisi|Saklı karakter sayısını `pstrDirName`. Üye işlev başarısız olur ve ERROR_INSUFFICIENT_BUFFER döndürülür, ardından `lpdwLen` dize almak için uygulama ayırmalısınız bayt sayısını içerir.|  
+|Girişi|Tarafından başvurulan arabellek boyutu *pstrDirName*.|  
+|Getirisi|Saklı karakter sayısını *pstrDirName*. Üye işlev başarısız olur ve ERROR_INSUFFICIENT_BUFFER döndürülür, ardından *lpdwLen* dize almak için uygulama ayırmalısınız bayt sayısını içerir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, Win32 işlevi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
@@ -277,7 +277,7 @@ BOOL GetCurrentDirectoryAsURL(
 ### <a name="remarks"></a>Açıklamalar  
  `GetCurrentDirectoryAsURL` aynı şekilde davranır [GetCurrentDirectory](#getcurrentdirectory)  
   
- Parametre `strDirName` tam veya geçerli dizine göreli kısmen tam ya da dosya adları olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. `GetCurrentDirectoryAsURL` kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
+ Parametre *strDirName* tam veya geçerli dizine göreli kısmen tam ya da dosya adları olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. `GetCurrentDirectoryAsURL` kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
   
 ##  <a name="getfile"></a>  CFtpConnection::GetFile  
  Dosya bir FTP sunucusundan almak ve yerel makinede depolamak için bu üye işlevini çağırın.  
@@ -293,16 +293,16 @@ BOOL GetFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstrRemoteFile`  
+ *pstrRemoteFile*  
  FTP sunucusundan almak için bir dosya adını içeren null ile sonlandırılmış bir dize için bir işaretçi.  
   
- `pstrLocalFile`  
+ *pstrLocalFile*  
  Yerel sistemde oluşturmak için dosya adını içeren null ile sonlandırılmış bir dize için bir işaretçi.  
   
  *bFailIfExists*  
  Dosya adı tarafından var olan bir dosya zaten kullanılabilir olup olmadığını gösterir. Yerel dosya adı zaten var ve bu parametre **TRUE**, `GetFile` başarısız olur. Aksi takdirde, `GetFile` dosya var olan kopyasını silecek.  
   
- `dwAttributes`  
+ *dwAttributes*  
  Dosyanın öznitelikleri gösterir. Bu aşağıdaki FILE_ATTRIBUTE_ * bayrakları herhangi bir bileşimini olabilir.  
   
 -   FILE_ATTRIBUTE_ARCHIVE dosyayı bir arşiv dosyasıdır. Uygulamalar bu öznitelik yedekleme veya kaldırma için dosyaları için kullanın.  
@@ -321,11 +321,11 @@ BOOL GetFile(
   
 -   Dosya geçici depolama için kullanılan FILE_ATTRIBUTE_TEMPORARY. Uygulamalar, yalnızca kesinlikle gerekli olduğunda veya dosyaya yazmak. Dosyanın verilerin çoğu dosya hemen silinecek medyaya temizlendi nedeni olmadan bellekte kalır.  
   
- `dwFlags`  
- Aktarım oluştuğu koşulları belirtir. Bu parametre herhangi biri olabilir `dwFlags` değerleri açıklanan [FtpGetFile](http://msdn.microsoft.com/library/windows/desktop/aa384157) Windows SDK'sındaki.  
+ *dwFlags*  
+ Aktarım oluştuğu koşulları belirtir. Bu parametre herhangi biri olabilir *dwFlags* değerleri açıklanan [FtpGetFile](http://msdn.microsoft.com/library/windows/desktop/aa384157) Windows SDK'sındaki.  
   
- `dwContext`  
- Dosya alma içerik tanımlayıcısı. Bkz: **açıklamalar** hakkında daha fazla bilgi için `dwContext`.  
+ *dwContext*  
+ Dosya alma içerik tanımlayıcısı. Bkz: **açıklamalar** hakkında daha fazla bilgi için *dwContext*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, Win32 işlevi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
@@ -333,11 +333,11 @@ BOOL GetFile(
 ### <a name="remarks"></a>Açıklamalar  
  `GetFile` bir FTP sunucusundan bir dosya okuma ve yerel olarak depolamak ile ilgili ek yükü tüm işler üst düzey bir yordamdır. Dosya verileri yalnızca almak veya dosya aktarımı Kapat denetime gerektiren uygulamalar kullanması gereken `OpenFile` ve [CInternetFile::Read](../../mfc/reference/cinternetfile-class.md#read) yerine.  
   
- Varsa `dwFlags` FILE_TRANSFER_TYPE_ASCII, dosya verilerini çevrilmesi aynı zamanda dönüştürür denetim ve Windows eşdeğerleri karakterlere biçimlendirme. Varsayılan aktarım ikili, sunucuda depolanan gibi dosya aynı biçimde indirdiğiniz moddur.  
+ Varsa *dwFlags* FILE_TRANSFER_TYPE_ASCII, dosya verilerini çevrilmesi aynı zamanda dönüştürür denetim ve Windows eşdeğerleri karakterlere biçimlendirme. Varsayılan aktarım ikili, sunucuda depolanan gibi dosya aynı biçimde indirdiğiniz moddur.  
   
- Her ikisi de `pstrRemoteFile` ve `pstrLocalFile` tam veya geçerli dizine göreli kısmen tam ya da dosya adları olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. `GetFile` kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
+ Her ikisi de *pstrRemoteFile* ve *pstrLocalFile* tam veya geçerli dizine göreli kısmen tam ya da dosya adları olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. `GetFile` kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
   
- Geçersiz kılma `dwContext` varsayılan bağlam tanımlayıcı bir değerine ayarlayın. Bağlam tanıtıcısı belirli bu işlemle ilişkili `CFtpConnection` tarafından oluşturulan nesne kendi [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesi. İçin döndürülen değer [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen işlem durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
+ Geçersiz kılma *dwContext* varsayılan bağlam tanımlayıcı bir değerine ayarlayın. Bağlam tanıtıcısı belirli bu işlemle ilişkili `CFtpConnection` tarafından oluşturulan nesne kendi [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesi. İçin döndürülen değer [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen işlem durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
   
 ##  <a name="openfile"></a>  CFtpConnection::OpenFile  
  Okuma veya yazma için bir FTP sunucusunda bulunan bir dosyayı açmak için bu üye işlevini çağırın.  
@@ -351,21 +351,21 @@ CInternetFile* OpenFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstrFileName`  
+ *pstrFileName*  
  Açılması için dosyanın adını içeren bir dize için bir işaretçi.  
   
  *dwAccess*  
  Dosyanın nasıl erişileceği belirler. GENERIC_READ veya GENERIC_WRITE ancak ikisini olabilir.  
   
- `dwFlags`  
+ *dwFlags*  
  Sonraki aktarımları meydana geldiği altında koşulları belirtir. Bu herhangi FTP_TRANSFER_ * sabitlerden biri olabilir:  
   
 -   FTP ASCII (tür A) aktarım yöntemini kullanarak FTP_TRANSFER_TYPE_ASCII dosyaya aktarır. Dönüştürür denetim ve yerel eşdeğerlerine biçimlendirme bilgileri.  
   
 -   FTP_TRANSFER_TYPE_BINARY dosya FTP's görüntü (tür ı) aktarım yöntemini kullanarak veri aktarır. Dosya aktarımları verileri tam olarak, herhangi bir değişiklik yapmadan bulunmaktadır. Bu varsayılan aktarımı yöntemdir.  
   
- `dwContext`  
- Dosyayı açmak için içerik tanımlayıcısı. Bkz: **açıklamalar** hakkında daha fazla bilgi için `dwContext`.  
+ *dwContext*  
+ Dosyayı açmak için içerik tanımlayıcısı. Bkz: **açıklamalar** hakkında daha fazla bilgi için *dwContext*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi bir [CInternetFile](../../mfc/reference/cinternetfile-class.md) nesnesi.  
@@ -379,11 +379,11 @@ CInternetFile* OpenFile(
   
 -   Bir uygulama bir dosya aktarımı üzerinde denetim ayrıntılı bir düzeyde gerekir. Örneğin, uygulama bir ilerleme durumunu görüntüleme isteyebilirsiniz denetim dosya indirilirken dosya aktarımı durumunu ilerlemesini gösterir.  
   
- Çağırdıktan sonra `OpenFile` ve arama kadar **CInternetConnection::Close**, uygulamanın yalnızca çağırabilir [CInternetFile::Read](../../mfc/reference/cinternetfile-class.md#read), [CInternetFile::Write](../../mfc/reference/cinternetfile-class.md#write), **CInternetConnection::Close**, veya [CFtpFileFind::FindFile](../../mfc/reference/cftpfilefind-class.md#findfile). Diğer FTP işlevleri aynı FTP oturumu için çağrılar başarısız ve hata kodu için FTP_ETRANSFER_IN_PROGRESS ayarlayın.  
+ Çağırdıktan sonra `OpenFile` ve arama kadar `CInternetConnection::Close`, uygulamanın yalnızca çağırabilir [CInternetFile::Read](../../mfc/reference/cinternetfile-class.md#read), [CInternetFile::Write](../../mfc/reference/cinternetfile-class.md#write), `CInternetConnection::Close`, veya [ CFtpFileFind::FindFile](../../mfc/reference/cftpfilefind-class.md#findfile). Diğer FTP işlevleri aynı FTP oturumu için çağrılar başarısız ve hata kodu için FTP_ETRANSFER_IN_PROGRESS ayarlayın.  
   
- `pstrFileName` Parametresi ya da bir kısmen tam dosya adı geçerli dizine göreli veya tam olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. `OpenFile` Dizin adı ayırıcılar uygun karakter kullanmadan önce çevirir.  
+ *PstrFileName* parametresi ya da bir kısmen tam dosya adı geçerli dizine göreli veya tam olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. `OpenFile` Dizin adı ayırıcılar uygun karakter kullanmadan önce çevirir.  
   
- Geçersiz kılma `dwContext` varsayılan bağlam tanımlayıcı bir değerine ayarlayın. Bağlam tanıtıcısı belirli bu işlemle ilişkili `CFtpConnection` tarafından oluşturulan nesne kendi [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesi. İçin döndürülen değer [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen işlem durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
+ Geçersiz kılma *dwContext* varsayılan bağlam tanımlayıcı bir değerine ayarlayın. Bağlam tanıtıcısı belirli bu işlemle ilişkili `CFtpConnection` tarafından oluşturulan nesne kendi [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesi. İçin döndürülen değer [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen işlem durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
   
 ##  <a name="putfile"></a>  CFtpConnection::PutFile  
  Bir FTP sunucusu üzerindeki bir dosyaya depolamak için bu üye işlevini çağırın.  
@@ -397,17 +397,17 @@ BOOL PutFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstrLocalFile`  
+ *pstrLocalFile*  
  Yerel sistemden gönderilecek dosyanın adını içeren bir dize için bir işaretçi.  
   
- `pstrRemoteFile`  
+ *pstrRemoteFile*  
  FTP sunucusunda oluşturmak için dosya adını içeren bir dize için bir işaretçi.  
   
- `dwFlags`  
+ *dwFlags*  
  Dosya aktarımını oluştuğu koşulları belirtir. Açıklanan FTP_TRANSFER_ * sabitlerden herhangi birisi olabilir [OpenFile](#openfile).  
   
- `dwContext`  
- Dosyayı yerleştirmek için içerik tanımlayıcısı. Bkz: **açıklamalar** hakkında daha fazla bilgi için `dwContext`.  
+ *dwContext*  
+ Dosyayı yerleştirmek için içerik tanımlayıcısı. Bkz: **açıklamalar** hakkında daha fazla bilgi için *dwContext*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, Win32 işlevi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
@@ -425,14 +425,14 @@ BOOL Remove(LPCTSTR pstrFileName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstrFileName`  
+ *pstrFileName*  
  Kaldırmak için dosya adını içeren bir dize için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, Win32 işlevi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `pstrFileName` Parametresi ya da bir kısmen tam dosya adı geçerli dizine göreli veya tam olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. **Kaldırmak** işlevi kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
+ *PstrFileName* parametresi ya da bir kısmen tam dosya adı geçerli dizine göreli veya tam olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. **Kaldırmak** işlevi kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
   
 ##  <a name="removedirectory"></a>  CFtpConnection::RemoveDirectory  
  Belirtilen dizin bağlı sunucusundan kaldırmak için bu üye işlevini çağırın.  
@@ -442,7 +442,7 @@ BOOL RemoveDirectory(LPCTSTR pstrDirName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstrDirName`  
+ *pstrDirName*  
  Kaldırılacak dizini içeren bir dize için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -451,7 +451,7 @@ BOOL RemoveDirectory(LPCTSTR pstrDirName);
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [GetCurrentDirectory](#getcurrentdirectory) sunucunun geçerli çalışma dizini belirlenemedi. Uzak sistem kök dizinine bağlandı varsayalım değil.  
   
- `pstrDirName` Parametresi geçerli dizine göreli kısmen veya tamamen tam filename olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. `RemoveDirectory` kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
+ *PstrDirName* parametresi geçerli dizine göreli kısmen veya tamamen tam filename olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. `RemoveDirectory` kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
   
 ##  <a name="rename"></a>  CFtpConnection::Rename  
  Belirtilen dosya bağlı sunucu üzerinde yeniden adlandırmak için bu üye işlevini çağırın.  
@@ -463,17 +463,17 @@ BOOL Rename(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstrExisting`  
+ *pstrExisting*  
  Yeniden adlandırılacak dosyanın geçerli adını içeren bir dize için bir işaretçi.  
   
- `pstrNew`  
+ *pstrNew*  
  Dosyanın yeni adını içeren bir dize için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, Win32 işlevi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `pstrExisting` Ve `pstrNew` parametreleri ya da bir kısmen tam dosya adı geçerli dizine göreli veya tam olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. **Yeniden Adlandır** kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
+ *PstrExisting* ve *pstrNew* parametreleri ya da bir kısmen tam dosya adı geçerli dizine göreli veya tam olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. **Yeniden Adlandır** kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
   
 ##  <a name="setcurrentdirectory"></a>  CFtpConnection::SetCurrentDirectory  
  FTP sunucusunda farklı bir dizin değiştirmek için bu üye işlevini çağırın.  
@@ -483,14 +483,14 @@ BOOL SetCurrentDirectory(LPCTSTR pstrDirName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstrDirName`  
+ *pstrDirName*  
  Dizinin adını içeren bir dize için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, Win32 işlevi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `pstrDirName` Parametresi geçerli dizine göreli kısmen veya tamamen tam filename olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. `SetCurrentDirectory` kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
+ *PstrDirName* parametresi geçerli dizine göreli kısmen veya tamamen tam filename olabilir. Ters eğik çizgi (\\) veya eğik çizgi (/), ya da adı dizin ayırıcı olarak kullanılabilir. `SetCurrentDirectory` kullanıldıkları önce uygun karakter dizin adı ayırıcılar çevirir.  
   
  Kullanım [GetCurrentDirectory](#getcurrentdirectory) bir FTP sunucusu geçerli çalışma dizini belirlenemedi. Uzak sistem kök dizinine bağlandı varsayalım değil.  
   

@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7024284a1be22aed211e8cf58f8366df88aa917
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 90f325df3825b3546616ce145d4477322a1b4eed
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383503"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956300"
 ---
 # <a name="toolbar-tool-tips"></a>Araç Çubuğu Araç İpuçları
 Araç ipuçları fare bir süre için düğme üzerine getirdiğinizde, araç düğmenin amacı kısa açıklamaları sunan küçük açılır pencereleri ' dir. Uygulama Sihirbazı ile bir araç olan bir uygulama oluşturduğunuzda, sizin için araç ipucu desteği sağlanır. Bu makalede, Uygulama Sihirbazı'nı ve uygulamanız için araç ipucu desteği ekleme tarafından oluşturulan her iki araç ipucu desteği açıklanmaktadır.  
@@ -42,7 +42,7 @@ Araç ipuçları fare bir süre için düğme üzerine getirdiğinizde, araç d�
 ##  <a name="_core_activating_tool_tips"></a> Araç ipuçlarını etkinleştirme  
  Araç ipuçları, uygulamanızda etkinleştirmek için iki şey yapmanız gerekir:  
   
--   Ekleme `CBRS_TOOLTIPS` diğer stilleri stiline (gibi **WS_CHILD**, **ws_vısıble**ve diğer **CBRS_** stilleri) olarak geçirilen `dwStyle` parametresi[ CToolBar::Create](../mfc/reference/ctoolbar-class.md#create) işlevi veya [SetBarStyle](../mfc/reference/ccontrolbar-class.md#setbarstyle).  
+-   Cbrs_tooltıps stili için diğer stiller ekleme (WS_CHILD, ws_vısıble ve diğer gibi **CBRS_** stilleri) olarak geçirilen *dwStyle* parametresi [CToolBar::Create](../mfc/reference/ctoolbar-class.md#create) işlev veya [SetBarStyle](../mfc/reference/ccontrolbar-class.md#setbarstyle).  
   
 -   Aşağıdaki yordamda açıklandığı gibi araç komutu için bir komut satırı istemi içeren dize kaynağı için yeni satır karakteri ('\n') tarafından ayrılmış araç ipucu metnini ekleyin. Dize kaynağını araç çubuğu düğmesi Kimliğini paylaşır.  
   
@@ -62,7 +62,7 @@ Araç ipuçları fare bir süre için düğme üzerine getirdiğinizde, araç d�
 -   Dize tablosu girişi kaynak dosyasında alt denetim olarak aynı Kimliğe sahip bir araç ipucu dize vardır.  
   
 ##  <a name="_core_fly_by_status_bar_updates"></a> Flyby durum çubuğu güncelleştirmeleri  
- Araç ipuçları için ilgili bir "flyby" durum güncelleştirme çubuğunda özelliğidir. Düğme etkinleştirildiğinde, varsayılan olarak, yalnızca belirli araç çubuğu düğmesi durum çubuğunda ileti açıklar. Ekleyerek `CBRS_FLYBY` geçirilen stilleri listesine `CToolBar::Create`, fare imlecini araç çubuğu düğmesi etkinleştirmeden geçtiğinde güncelleştirilmiş bu iletiler olabilir.  
+ Araç ipuçları için ilgili bir "flyby" durum güncelleştirme çubuğunda özelliğidir. Düğme etkinleştirildiğinde, varsayılan olarak, yalnızca belirli araç çubuğu düğmesi durum çubuğunda ileti açıklar. CBRS_FLYBY geçirilen stilleri listesi dahil olmak üzere tarafından `CToolBar::Create`, fare imlecini araç çubuğu düğmesi etkinleştirmeden geçtiğinde güncelleştirilmiş bu iletiler olabilir.  
   
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   

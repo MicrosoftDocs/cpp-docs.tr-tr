@@ -69,12 +69,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dea42f4bd33281e65696791677bdd81a921a59e6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f3790e2b4aa5987fbcf66d1913e25de5dfd97ea2
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385531"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957217"
 ---
 # <a name="tn022-standard-commands-implementation"></a>TN022: Standart Komutları Uygulama
 > [!NOTE]
@@ -90,16 +90,16 @@ ms.locfileid: "33385531"
 ## <a name="contents-of-this-technical-note"></a>Bu teknik not içeriğini  
  Her komut kimliği iki bölümde açıklanmıştır:  
   
--   Başlık: Komut Kimliği simgesel ad (örneğin, **ıd_fıle_save**) amacı virgülle ayrılmış komutu (örneğin, "geçerli belgeyi kaydeder"), ardından.  
+-   Başlık: amacı komutu (örneğin, "geçerli belgeyi kaydeder"), ve ardından komut kimliği (örneğin, ıd_fıle_save) simgesel ad virgülle ayrılmış.  
   
 -   Komut ve varsayılan uygulama yaptığı hangi sınıfların açıklayan bir veya daha fazla paragraf uygular  
   
  Çoğu varsayılan komutu uygulamaları framework'ün temel sınıf ileti eşlemesinde prewired. Türetilmiş sınıfınız içindeki açık kablolama gerektiren bazı komut uygulamaları vardır. Bunlar "Note" altında açıklanmıştır. Bu varsayılan işleyiciler içinde AppWizard sağ seçenekleri seçerseniz, sizin için oluşturulan iskelet uygulamada bağlanır.  
   
 ## <a name="naming-convention"></a>Adlandırma Kuralı  
- Standart komutlar mümkünse kullanmanızı öneririz basit bir adlandırma kuralını izler. Çoğu standart komutları bir uygulamanın menü çubuğu standart yerde bulunur. Komut simgesel ad "menü öğesi standart açılır menü adından, arkasından ID_" ile başlar. Simgesel Adı alt çizgi kesmeleri ile büyük harflerle ' dir. Standart menü öğesi adları yok komutları için bir mantıksal komut adı "ID_" ile başlayan tanımlanır (örneğin, **ıd_next_pane**).  
+ Standart komutlar mümkünse kullanmanızı öneririz basit bir adlandırma kuralını izler. Çoğu standart komutları bir uygulamanın menü çubuğu standart yerde bulunur. Komut simgesel ad "menü öğesi standart açılır menü adından, arkasından ID_" ile başlar. Simgesel Adı alt çizgi kesmeleri ile büyük harflerle ' dir. Standart menü öğesi adları yok komutları için bir mantıksal komut adı "ID_" (örneğin, ıd_next_pane)'ile başlayan tanımlanır.  
   
- Menü öğeleri, araç çubuğu düğmeleri veya diğer komut kullanıcı arabirimi nesneleri bağlanması için tasarlanmış komutları belirtmek için "ID_" önekini kullanın. "ID_" komutları işleme komut işleyicileri kullanması gereken `ON_COMMAND` ve `ON_UPDATE_COMMAND_UI` MFC mekanizmaları mimarisi komutu.  
+ Menü öğeleri, araç çubuğu düğmeleri veya diğer komut kullanıcı arabirimi nesneleri bağlanması için tasarlanmış komutları belirtmek için "ID_" önekini kullanın. "ID_" komutları işleme komut işleyicileri MFC komutu mimarisinin ON_COMMAND ve on_update_command_uı mekanizmaları kullanmanız gerekir.  
   
  Komut mimarisini izleyin ve etkinleştirmek ve bunları devre dışı bırakmak için menü özgü kodu gerekli menü öğeleri için standart "IDM_" öneki kullanmanızı öneririz. Elbette MFC komutu mimarisi aşağıdaki yalnızca komut işleyicileri (araç çubukları ile çalışacaktır bu yana) daha güçlü yapar ancak komut işleyici kodu yeniden kullanılabilir hale getirir beri menü belirli komutları sayısı küçük olması gerekir.  
   
@@ -120,47 +120,47 @@ ms.locfileid: "33385531"
   
      `CWinApp::OnFileNew` Belge şablonları sayısına bağlı olarak farklı şekilde bu komut uygulamada uygular. Varsa yalnızca `CDocTemplate`, `CWinApp::OnFileNew` uygun çerçeve ve görünüm sınıfı yanı sıra, bu tür bir yeni belge oluşturun.  
   
-     Varsa birden fazla `CDocTemplate`, `CWinApp::OnFileNew` bir iletişim kutusu ile kullanıcıya sorar (**AFX_IDD_NEWTYPEDLG**) kullanmak için hangi belge türü seç yapmalarına izin. Seçili `CDocTemplate` belge oluşturmak için kullanılır.  
+     Varsa birden fazla `CDocTemplate`, `CWinApp::OnFileNew` yapmalarına izin bir iletişim kutusu (AFX_IDD_NEWTYPEDLG) ile kullanmak üzere türü belge seçin ister. Seçili `CDocTemplate` belge oluşturmak için kullanılır.  
   
-     Bir sık kullanılan özelleştirme `ID_FILE_NEW` farklı bir ve daha fazla grafik seçeneği belge türlerinin sağlamaktır. Bu durumda, kendi uygulayabileceğiniz **CMyApp::OnFileNew** ve ileti haritanızı yerine koyun `CWinApp::OnFileNew`. Temel sınıf uygulamasını çağırmak için gerek yoktur.  
+     Farklı bir ve daha fazla grafik seçeneği belge türlerinin ıd_fıle_new bir sık kullanılan özelleştirme sağlamaktır. Bu durumda, kendi uygulayabileceğiniz `CMyApp::OnFileNew` ve ileti haritanızı yerine koyun `CWinApp::OnFileNew`. Temel sınıf uygulamasını çağırmak için gerek yoktur.  
   
-     Başka bir sık kullanılan özelleştirme `ID_FILE_NEW` ayrı bir komutu her türdeki bir belge oluşturmak için sağlamaktır. Bu durumda yeni bir komut kimlikleri, örneğin ID_FILE_NEW_CHART ve ID_FILE_NEW_SHEET tanımlamanız gerekir.  
+     Id_fıle_new başka bir ortak özelleştirmesini her türdeki bir belge oluşturmak için ayrı bir komutu sağlamaktır. Bu durumda yeni bir komut kimlikleri, örneğin ID_FILE_NEW_CHART ve ID_FILE_NEW_SHEET tanımlamanız gerekir.  
   
 -   Id_fıle_open var olan bir belgeyi açar.  
   
     > [!NOTE]
     >  Bunun için bağlanmanız gerekir, `CWinApp`-bu işlevselliği etkinleştirmek için ileti eşlemesi sınıfının türetilmiş.  
   
-     `CWinApp::OnFileOpen` çağırma çok basit bir uygulamaya sahip **CWinApp::DoPromptFileName** arkasından `CWinApp::OpenDocumentFile` açmak için dosyaya dosya veya yol adı. `CWinApp` Uygulama yordamı **DoPromptFileName** standart FileOpen iletişim kutusunu açar ve geçerli belge şablonlardan elde dosya uzantıları ile doldurur.  
+     `CWinApp::OnFileOpen` çağırma çok basit bir uygulamaya sahip `CWinApp::DoPromptFileName` arkasından `CWinApp::OpenDocumentFile` açmak için dosyaya dosya veya yol adı. `CWinApp` Uygulama yordamı `DoPromptFileName` standart FileOpen iletişim kutusunu açar ve geçerli belge şablonlardan elde dosya uzantıları ile doldurur.  
   
-     Bir sık kullanılan özelleştirme `ID_FILE_OPEN` FileOpen iletişim özelleştirme veya ek dosya filtreleri ekleyin. Varsayılan uygulama kendi FileOpen iletişim ve çağrısı ile değiştirmek için bu özelleştirmek için önerilen yöntem olduğu `CWinApp::OpenDocumentFile` belgenin dosya veya yol adı ile. Taban sınıfı çağırmak için gerek yoktur.  
+     Id_fıle_open bir sık kullanılan özelleştirme FileOpen iletişim özelleştirebilir veya ek dosya filtreleri Ekle sağlamaktır. Varsayılan uygulama kendi FileOpen iletişim ve çağrısı ile değiştirmek için bu özelleştirmek için önerilen yöntem olduğu `CWinApp::OpenDocumentFile` belgenin dosya veya yol adı ile. Taban sınıfı çağırmak için gerek yoktur.  
   
 -   Id_fıle_close açık belgeyi kapatır.  
   
-     **CDocument::OnFileClose** çağrıları `CDocument::SaveModified` değiştirildi ve daha sonra çağırır belgeyi kaydetmek için kullanıcıdan `OnCloseDocument`. Belge yok etme dahil olmak üzere tüm kapanış mantığını içerir, yapılır `OnCloseDocument` yordamı.  
+     `CDocument::OnFileClose` çağrıları `CDocument::SaveModified` değiştirildi ve daha sonra çağırır belgeyi kaydetmek için kullanıcıdan `OnCloseDocument`. Belge yok etme dahil olmak üzere tüm kapanış mantığını içerir, yapılır `OnCloseDocument` yordamı.  
   
     > [!NOTE]
-    >  **Id_fıle_close** öğesinden farklı şekilde davranan bir `WM_CLOSE` ileti veya bir **SC_CLOSE** belge çerçeve penceresi için gönderilen sistem komutu. Yalnızca bu belge gösteren son çerçeve penceresi ise bir pencereyi belgeyi kapatın. Belgeyle kapatma **ıd_fıle_close** yalnızca belge kapanmaz ancak belgenin gösteren tüm çerçeve pencereleri kapanacak.  
+    >  Id_fıle_close davranır WM_CLOSE ileti veya belge çerçeve penceresi için gönderilen bir SC_CLOSE sistem komut öğesinden farklı. Yalnızca bu belge gösteren son çerçeve penceresi ise bir pencereyi belgeyi kapatın. Belge kapatma ile ıd_fıle_close yalnızca belge kapanmaz ancak belgenin gösteren tüm çerçeve pencereleri kapanacak.  
   
 -   Id_fıle_save geçerli belgeyi kaydeder.  
   
-     Uygulama Yardımcısı yordamı kullanır **CDocument::DoSave** kullanılan her ikisi için **OnFileSave** ve **OnFileSaveAs**. Önce kaydedilmemiş olan bir belgeyi kaydederseniz (diğer bir deyişle, bir yol adı olarak dosya yeni olması durumunda yok) veya bir salt okunur belgeden okundu **OnFileSave** mantığı gibi davranacağı **ıd_fıle_save_as** komut ve yeni bir dosya adı girmesini isteyin. Dosyayı açma ve kaydetme yapılması gerçek işlemi sanal işlev yapılır `OnSaveDocument`.  
+     Uygulama Yardımcısı yordamı kullanır `CDocument::DoSave` kullanılan her ikisi için `OnFileSave` ve `OnFileSaveAs`. Önce kaydedilmemiş olan bir belgeyi kaydederseniz (diğer bir deyişle, bir yol adı olarak dosya yeni olması durumunda yok) veya bir salt okunur belgeden okundu `OnFileSave` mantığı işlem yapacağı gibi ıd_fıle_save_as komutu ve yeni bir dosya adı sağlamak için kullanıcıya sor . Dosyayı açma ve kaydetme yapılması gerçek işlemi sanal işlev yapılır `OnSaveDocument`.  
   
-     Özelleştirme için iki ortak nedenleri vardır **ıd_fıle_save**. Kaydetmeyin belgeleri için basitçe kaldırmak **ıd_fıle_save** menü öğeleri ve araç çubuğu düğmelerini kullanarak, kullanıcı arabirimi. Ayrıca belgenizi hiçbir zaman kirli emin olun (diğer bir deyişle, hiçbir zaman çağrı `CDocument::SetModifiedFlag`) ve framework hiçbir zaman belgenin kaydedilmesini neden olur. Ortalarda dışında bir disk dosyasına kaydetmeye belgeler için bu işlem için yeni bir komut tanımlayın.  
+     Id_fıle_save özelleştirmek için iki ortak nedenleri vardır. Kaydetmeyin belgeler için yalnızca kullanıcı arabiriminden ıd_fıle_save menü öğeleri ve araç çubuğu düğmeleri kaldırın. Ayrıca belgenizi hiçbir zaman kirli emin olun (diğer bir deyişle, hiçbir zaman çağrı `CDocument::SetModifiedFlag`) ve framework hiçbir zaman belgenin kaydedilmesini neden olur. Ortalarda dışında bir disk dosyasına kaydetmeye belgeler için bu işlem için yeni bir komut tanımlayın.  
   
-     Durumunda bir `COleServerDoc`, **ıd_fıle_save** hem dosyayı kaydedin (için normal belgeler) ve dosya güncelleştirmesi (embedded belgeler) için kullanılır.  
+     Durumunda bir `COleServerDoc`, ıd_fıle_save hem dosyayı kaydedin (için normal belgeler) ve dosya güncelleştirmesi (embedded belgeler) için kullanılır.  
   
-     Belge verilerinizi tek tek disk dosyalarında depolanır, ancak varsayılan kullanmak istemiyorsanız **CDocument** uygulama seri, geçersiz kılmalısınız `CDocument::OnSaveDocument` yerine **OnFileSave**.  
+     Belge verilerinizi tek tek disk dosyalarında depolanır, ancak varsayılan kullanmak istemiyorsanız `CDocument` uygulama seri, geçersiz kılmalısınız `CDocument::OnSaveDocument` yerine `OnFileSave`.  
   
 -   Id_fıle_save_as farklı bir dosya adı altında geçerli belgeyi kaydeder.  
   
-     **CDocument::OnFileSaveAs** uygulama kullandığı aynı **CDocument::DoSave** yardımcı yordamı olarak **OnFileSave**. **OnFileSaveAs** komutu gibi işlenir **ıd_fıle_save** belgeleri kaydetme önce hiçbir dosya adı olsaydı. **COleServerDoc::OnFileSaveAs** normal belge veri dosyasını kaydetmek veya OLE nesneyi temsil eden bir sunucu belgeyi kaydetmek için mantığı katıştırılmış ayrı bir dosya olarak başka bir uygulama içinde uygular.  
+     `CDocument::OnFileSaveAs` Uygulama kullandığı aynı `CDocument::DoSave` yardımcı yordamı olarak `OnFileSave`. `OnFileSaveAs` Belgeleri kaydetme önce hiçbir dosya adı olsaydı komutu yalnızca ıd_fıle_save işlenir. `COleServerDoc::OnFileSaveAs` normal belge veri dosyasını kaydetmek veya başka bir uygulama ayrı bir dosya olarak katıştırılmış OLE nesnesini temsil eden bir sunucu belgeyi kaydetmek için mantığı uygular.  
   
-     Mantığını özelleştirirseniz **ıd_fıle_save**, özelleştirmek isteyeceksiniz **ıd_fıle_save_as** benzer bir şekilde veya "Farklı Kaydet" işlemi belgeniz için geçerli olmayabilir. Gerekli olmadığından, menü çubuğundan menü öğesi kaldırabilirsiniz.  
+     Id_fıle_save mantığı özelleştirirseniz, büyük olasılıkla ıd_fıle_save_as benzer bir şekilde özelleştirmek istediğiniz veya "Farklı Kaydet" işlemi belgeniz için geçerli olmayabilir. Gerekli olmadığından, menü çubuğundan menü öğesi kaldırabilirsiniz.  
   
 -   Id_fıle_save_copy_as kopyalama geçerli belgeyi yeni adla kaydeder.  
   
-     **COleServerDoc::OnFileSaveCopyAs** uygulamasıdır çok benzer **CDocument::OnFileSaveAs**, ancak bu belge nesnesi "temel alınan dosyaya kaydet sonra bağlı değil". Bellek içi belgenin "kaydetme önce değiştirilmişse", diğer bir deyişle, yine "değişiklik". Ayrıca, bu komut yol adı veya belgede depolanan başlık etkisi yoktur.  
+     `COleServerDoc::OnFileSaveCopyAs` Uygulamasıdır çok benzer `CDocument::OnFileSaveAs`, ancak bu belge nesnesi "temel alınan dosyaya kaydet sonra bağlı değil". Bellek içi belgenin "kaydetme önce değiştirilmişse", diğer bir deyişle, yine "değişiklik". Ayrıca, bu komut yol adı veya belgede depolanan başlık etkisi yoktur.  
   
 -   Id_fıle_update katıştırılmış bir belge kaydetmek için kapsayıcı bildirir.  
   
@@ -179,9 +179,9 @@ ms.locfileid: "33385531"
   
      Bu komut kullanıcının yazıcı özelleştirmek ve yazdırma ayarları için en az izin veren standart yazdırma Kurulumu iletişim kutusunu çağırır bu belge veya en çok tüm belgelerde bu uygulama. Tüm sistemin varsayılan yazıcı ayarlarını değiştirmek için Denetim Masası'nı kullanmanız gerekir.  
   
-     `CWinApp::OnFilePrintSetup` çok basit uygulama oluşturma sahip bir `CPrintDialog` nesne ve arama **CWinApp::DoPrintDialog** uygulama işlevi. Bu uygulama varsayılan yazıcı kurulumu ayarlar.  
+     `CWinApp::OnFilePrintSetup` çok basit uygulama oluşturma sahip bir `CPrintDialog` nesne ve arama `CWinApp::DoPrintDialog` uygulama işlevi. Bu uygulama varsayılan yazıcı kurulumu ayarlar.  
   
-     Bu komut özelleştirmek için ortak Belge kaydedildiğinde depolanması gereken belge başına yazıcı ayarları için izin vermek için gerekiyor. Bunu yapmak için ileti eşlemesi işleyici eklemeniz gerekir, **CDocument** oluşturur sınıfı bir `CPrintDialog` nesne, uygun yazıcı özniteliklerle başlatır (genellikle **hDevMode** ve **hDevNames**), çağrı **CPrintDialog::DoModal,** ve değiştirilen yazıcı ayarlarını kaydedin. İçin sağlam bir uygulama, uygulanması sırasında göz önünde bulundurmanız gerekenler **CWinApp::DoPrintDialog** hataları algılamak ve **CWinApp::UpdatePrinterSelection** duyarlı Varsayılanları ilgilenmek için ve Sistem genelinde yazıcı değişiklikleri izleme.  
+     Bu komut özelleştirmek için ortak Belge kaydedildiğinde depolanması gereken belge başına yazıcı ayarları için izin vermek için gerekiyor. Bunu yapmak için ileti eşlemesi işleyici eklemeniz gerekir, `CDocument` oluşturur sınıfı bir `CPrintDialog` nesne, uygun yazıcı özniteliklerle başlatır (genellikle *hDevMode* ve *hDevNames*), çağrı `CPrintDialog::DoModal`ve değiştirilen yazıcı ayarlarını kaydedin. İçin sağlam bir uygulama, uygulanması sırasında göz önünde bulundurmanız gerekenler `CWinApp::DoPrintDialog` hataları algılamak ve `CWinApp::UpdatePrinterSelection` duyarlı öndeğerlerini ilgilenme ve sistem genelinde yazıcı değişiklikleri izlemek için.  
   
 -   Geçerli belgenin ıd_fıle_prınt standart yazdırma  
   
@@ -190,26 +190,26 @@ ms.locfileid: "33385531"
   
      Bu komut geçerli belgeyi yazdırır ya da daha doğru bir şekilde standart yazdırma iletişim çağırma ve yazdırma altyapısı çalıştıran içerir yazdırma işlemi başlatır.  
   
-     **CView::OnFilePrint** bu komut ve ana yazdırma döngü uygular. Sanal çağırır `CView::OnPreparePrinting` yazdırma iletişim kullanıcıyla istemi. Bu ardından yazıcıya gitmek için çıktı DC hazırlar, yazdırma ilerleme durumu iletişim kutusunu açar (**AFX_IDD_PRINTDLG**) ve gönderir `StartDoc` kaçış yazıcı. **CView::OnFilePrint** ana sayfa yönelimli yazdırma döngü de içerir. Her bir sayfa için sanal çağırır `CView::OnPrepareDC` arkasından bir `StartPage` kaçış ve sanal çağırma `CView::OnPrint` bu sayfa için. Tamamlandığında, sanal `CView::OnEndPrinting` denir ve yazdırma ilerleme iletişim kutusu kapatılır.  
+     `CView::OnFilePrint` Bu komut ve ana yazdırma döngü uygular. Sanal çağırır `CView::OnPreparePrinting` yazdırma iletişim kullanıcıyla istemi. Ardından yazıcıya gitmek için çıktı DC hazırlar, yazdırma ilerleme durumu iletişim kutusunu (AFX_IDD_PRINTDLG) özelliği sunar ve gönderir `StartDoc` kaçış yazıcı. `CView::OnFilePrint` Ayrıca ana sayfa yönelimli yazdırma döngü içerir. Her bir sayfa için sanal çağırır `CView::OnPrepareDC` arkasından bir `StartPage` kaçış ve sanal çağırma `CView::OnPrint` bu sayfa için. Tamamlandığında, sanal `CView::OnEndPrinting` denir ve yazdırma ilerleme iletişim kutusu kapatılır.  
   
-     MFC yazdırma mimarisi, yazdırmayı ve Baskı Önizleme için birçok farklı yolu için tasarlanmıştır. Normalde çeşitli bulacaksınız `CView` geçersiz kılınabilir işlevler tüm sayfa yönelimli yazdırma görevleri için yeterli. Çıkış, sayfa dışı yönelik için yazıcı bulduğunuz değiştirmek için gereken kullanan bir uygulama durumunda **ıd_fıle_prınt** uygulaması.  
+     MFC yazdırma mimarisi, yazdırmayı ve Baskı Önizleme için birçok farklı yolu için tasarlanmıştır. Normalde çeşitli bulacaksınız `CView` geçersiz kılınabilir işlevler tüm sayfa yönelimli yazdırma görevleri için yeterli. Yazıcı için sayfa olmayan yönlendirilmiş çıktı kullanan yalnızca bir uygulama söz konusu olduğunda, ıd_fıle_prınt uygulama değiştirmek için gereken bulmanız gerekir.  
   
 -   Id_fıle_prınt_prevıew girin Baskı Önizleme modunu geçerli belge için.  
   
     > [!NOTE]
     >  Bunun için bağlanmanız gerekir, `CView`-bu işlevselliği etkinleştirmek için ileti eşlemesi sınıfının türetilmiş.  
   
-     **CView::OnFilePrintPreview** belgelenen yardımcı işlevini çağırarak Baskı Önizleme modunu başlatır **CView::DoPrintPreview**. **CView::DoPrintPreview** ana Baskı Önizleme döngünün gibi altyapısıdır **OnFilePrint** yazdırma döngünün ana altyapısıdır.  
+     `CView::OnFilePrintPreview` Baskı Önizleme modunu belgelenen yardımcı işlevini çağırarak başlatır `CView::DoPrintPreview`. `CView::DoPrintPreview` Ana Baskı Önizleme döngünün gibi altyapısıdır `OnFilePrint` yazdırma döngünün ana altyapısıdır.  
   
-     Baskı Önizleme işlemi için farklı parametreler geçirerek çeşitli şekillerde özelleştirilebilir **DoPrintPreview**. Lütfen [Teknik Not 30](../mfc/tn030-customizing-printing-and-print-preview.md)Baskı Önizleme ayrıntılarını bazıları açıklanır ve özelleştirmek nasıl.  
+     Baskı Önizleme işlemi için farklı parametreler geçirerek çeşitli şekillerde özelleştirilebilir `DoPrintPreview`. Lütfen [Teknik Not 30](../mfc/tn030-customizing-printing-and-print-preview.md)Baskı Önizleme ayrıntılarını bazıları açıklanır ve özelleştirmek nasıl.  
   
--   **ID_FILE_MRU_FILE1**... **FILE16** komut kimlikleri dosya MRU için bir aralığı `list`.  
+-   ID_FILE_MRU_FILE1... FILE16 Komut kimlikleri dosya MRU için çeşitli **listesi**.  
   
-     **CWinApp::OnUpdateRecentFileMenu** daha gelişmiş kullanımlarını biri olan bir güncelleştirme komutu UI işleyicisidir `ON_UPDATE_COMMAND_UI` mekanizması. Menü kaynağınız yalnızca bir tek menü öğesi kimliği olan tanımladığınız **ID_FILE_MRU_FILE1**. Bu menü öğesi başlangıçta devre dışı kalır.  
+     `CWinApp::OnUpdateRecentFileMenu` on_update_command_uı mekanizması daha gelişmiş kullanımlarını biri olan bir güncelleştirme komutu UI işleyicisidir. Menü kaynağınız kimliği ID_FILE_MRU_FILE1 ile yalnızca bir tek menü öğesi tanımlayın. Bu menü öğesi başlangıçta devre dışı kalır.  
   
      MRU Listesi büyüdükçe, daha fazla menü öğeleri listesine eklenir. Standart `CWinApp` uygulama varsayılanlarını dört en son kullanılan dosyalar standart sınırla. Varsayılan çağırarak değiştirebileceğiniz `CWinApp::LoadStdProfileSettings` daha büyük veya küçük bir değere sahip. MRU Listesi uygulamanın içinde depolanır. INI dosyası. Listenin uygulamanızın yüklenen `InitInstance` çağırırsanız işlev `LoadStdProfileSettings`ve uygulamanızı çıktığında kaydedilir. MRU güncelleştirme komut UI işleyici göreli yollar Dosya menüsünde görüntülenmek için mutlak yollar da dönüştürür.  
   
-     **CWinApp::OnOpenRecentFile** olan `ON_COMMAND` gerçek komutu gerçekleştirir işleyici. Yalnızca dosya adı MRU listesi ve çağrıları alır `CWinApp::OpenDocumentFile`, dosyayı açıp MRU listesini güncelleştirmeden tüm işini yapar.  
+     `CWinApp::OnOpenRecentFile` Gerçek komutu gerçekleştirir ON_COMMAND işleyicisidir. Yalnızca dosya adı MRU listesi ve çağrıları alır `CWinApp::OpenDocumentFile`, dosyayı açıp MRU listesini güncelleştirmeden tüm işini yapar.  
   
      Bu komut işleyici özelleştirmesini önerilmez.  
   
@@ -247,7 +247,7 @@ ms.locfileid: "33385531"
   
      Şu anda bu komut için standart uygulaması yoktur. Bu her biri için uygulamanız gereken `CView`-türetilmiş sınıf.  
   
-     `CEditView` Bu komut uygulama yardımcı işlevini çağırır uygulaması sağlar **OnEditFindReplace** kullanın ve özel uygulama değişkenlerde önceki bulun ve değiştirin ayarlarını depolamak için. `CFindReplaceDialog` Sınıfı, kullanıcıdan istemek için kalıcı olmayan iletişim yönetmek için kullanılır.  
+     `CEditView` Bu komut uygulama yardımcı işlevini çağırır uygulaması sağlar `OnEditFindReplace` kullanın ve özel uygulama değişkenlerde önceki bulun ve değiştirin ayarlarını depolamak için. `CFindReplaceDialog` Sınıfı, kullanıcıdan istemek için kalıcı olmayan iletişim yönetmek için kullanılır.  
   
      Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz  
   
@@ -257,7 +257,7 @@ ms.locfileid: "33385531"
   
      `CEditView` Seçili metni kullanarak değiştirme geçerli Pano verileri kopyalar bu komutun bir uygulama sağlar `CEdit::Paste`. Varsa komutu devre dışı hiçbir **CF_TEXT** Panodaki.  
   
-     **COleClientDoc** yalnızca bu komut için bir güncelleştirme komutu UI işleyicisi sağlar. Pano gömülebilir OLE öğesi/nesnesi içermiyorsa komutu devre dışı bırakılacak. Gerçek yapıştırma yapmak gerçek komut işleyici yazmaktan sorumlu. OLE uygulamanızı de diğer biçimlere yapıştırabilirsiniz, kendi güncelleştirme komut UI işleyici görünümünde veya belge sağlamanız (diğer bir deyişle, herhangi bir yerde önce **COleClientDoc** komutu hedef akışındaki).  
+     `COleClientDoc` yalnızca bu komut için bir güncelleştirme komutu UI işleyicisi sağlar. Pano gömülebilir OLE öğesi/nesnesi içermiyorsa komutu devre dışı bırakılacak. Gerçek yapıştırma yapmak gerçek komut işleyici yazmaktan sorumlu. OLE uygulamanızı de diğer biçimlere yapıştırabilirsiniz, kendi güncelleştirme komut UI işleyici görünümünde veya belge sağlamanız (diğer bir deyişle, herhangi bir yerde önce `COleClientDoc` komutu hedef akışındaki).  
   
      Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz  
   
@@ -291,7 +291,7 @@ ms.locfileid: "33385531"
   
      Şu anda bu komut için standart uygulaması yoktur. Bu her biri için uygulamanız gereken `CView`-türetilmiş sınıf.  
   
-     `CEditView` Bu komut uygulama yardımcı işlevini çağırır uygulaması sağlar **OnEditFindReplace** kullanın ve özel uygulama değişkenlerde önceki bulun ve değiştirin ayarlarını depolamak için. `CFindReplaceDialog` Sınıfı kullanıcıdan kalıcı olmayan iletişim yönetmek için kullanılır.  
+     `CEditView` Bu komut uygulama yardımcı işlevini çağırır uygulaması sağlar `OnEditFindReplace` kullanın ve özel uygulama değişkenlerde önceki bulun ve değiştirin ayarlarını depolamak için. `CFindReplaceDialog` Sınıfı kullanıcıdan kalıcı olmayan iletişim yönetmek için kullanılır.  
   
      Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz  
   
@@ -319,15 +319,15 @@ ms.locfileid: "33385531"
   
 -   Id_wındow_new etkin belgede başka bir pencere açılır.  
   
-     **CMDIFrameWnd::OnWindowNew** geçerli belgenin başka bir görünüm içeren başka bir çerçeve oluşturmak için geçerli belgenin belge şablonu kullanarak bu güçlü bir özellik uygular.  
+     `CMDIFrameWnd::OnWindowNew` Bu güçlü bir özellik geçerli belgenin başka bir görünüm içeren başka bir çerçeve oluşturmak için geçerli belgenin belge şablonu kullanarak uygular.  
   
      Hiçbir etkin MDI alt pencere yoksa çoğu birden çok belge arabirimi (MDI) pencere menü komutları gibi komutu devre dışı bırakılır.  
   
-     Bu komut işleyici özelleştirmesini önerilmez. Ek görünümler veya çerçeve pencereleri oluşturan komut sağlamak isterseniz, büyük olasılıkla kendi komut inventing kapalı daha iyi olur. Koddan kopyalayabilirsiniz **CMDIFrameWnd::OnWindowNew** ve belirli çerçeve ve görünüm sınıfları, istediğiniz şekilde değiştirin.  
+     Bu komut işleyici özelleştirmesini önerilmez. Ek görünümler veya çerçeve pencereleri oluşturan komut sağlamak isterseniz, büyük olasılıkla kendi komut inventing kapalı daha iyi olur. Koddan kopyalayabilirsiniz `CMDIFrameWnd::OnWindowNew` ve belirli çerçeve ve görünüm sınıfları, istediğiniz şekilde değiştirin.  
   
 -   MDI pencerenin altındaki simgeleri ıd_wındow_arrange düzenler.  
   
-     `CMDIFrameWnd` Bu standart MDI komut bir uygulama Yardımcısı işlevinde uygulayan **OnMDIWindowCmd**. Bu yardımcı komut kimlikleri MDI Windows iletilerini eşler ve bu nedenle çok fazla kod paylaşabilirsiniz.  
+     `CMDIFrameWnd` Bu standart MDI komut bir uygulama Yardımcısı işlevinde uygulayan `OnMDIWindowCmd`. Bu yardımcı komut kimlikleri MDI Windows iletilerini eşler ve bu nedenle çok fazla kod paylaşabilirsiniz.  
   
      Hiçbir etkin MDI alt pencere yoksa çoğu MDI pencere menü komutları gibi komutu devre dışı bırakılır.  
   
@@ -335,7 +335,7 @@ ms.locfileid: "33385531"
   
 -   Bunlar Pencereleri çakışacak şekilde pencereleri ıd_wındow_cascade basamaklar.  
   
-     `CMDIFrameWnd` Bu standart MDI komut bir uygulama Yardımcısı işlevinde uygulayan **OnMDIWindowCmd**. Bu yardımcı komut kimlikleri MDI Windows iletilerini eşler ve bu nedenle çok fazla kod paylaşabilirsiniz.  
+     `CMDIFrameWnd` Bu standart MDI komut bir uygulama Yardımcısı işlevinde uygulayan `OnMDIWindowCmd`. Bu yardımcı komut kimlikleri MDI Windows iletilerini eşler ve bu nedenle çok fazla kod paylaşabilirsiniz.  
   
      Hiçbir etkin MDI alt pencere yoksa çoğu MDI pencere menü komutları gibi komutu devre dışı bırakılır.  
   
@@ -343,15 +343,15 @@ ms.locfileid: "33385531"
   
 -   Id_wındow_tıle_horz döşeme windows yatay olarak.  
   
-     Bu komut uygulanan `CMDIFrameWnd` olduğu gibi **ıd_wındow_cascade**, farklı bir MDI Windows ileti işlemi için kullanılacak dışında.  
+     Bu komut uygulanan `CMDIFrameWnd` olduğu gibi ıd_wındow_cascade, farklı bir MDI Windows ileti işlemi için kullanılacak dışında.  
   
-     Uygulamanız için varsayılan döşeme yönü seçmeniz gerekir. Bu pencere "Kutucuğuna" menü öğesi için kimliği ya da değiştirerek yapabilirsiniz **ıd_wındow_tıle_horz** veya **ıd_wındow_tıle_vert**.  
+     Uygulamanız için varsayılan döşeme yönü seçmeniz gerekir. Id_wındow_tıle_horz veya ıd_wındow_tıle_vert penceresi "Kutucuğuna" menü öğesi için kimliği değiştirerek bunu yapabilirsiniz.  
   
 -   Id_wındow_tıle_vert döşeme windows dikey olarak.  
   
-     Bu komut uygulanan `CMDIFrameWnd` olduğu gibi **ıd_wındow_cascade**, farklı bir MDI Windows ileti işlemi için kullanılacak dışında.  
+     Bu komut uygulanan `CMDIFrameWnd` olduğu gibi ıd_wındow_cascade, farklı bir MDI Windows ileti işlemi için kullanılacak dışında.  
   
-     Uygulamanız için varsayılan döşeme yönü seçmeniz gerekir. Bu pencere "Kutucuğuna" menü öğesi için kimliği ya da değiştirerek yapabilirsiniz **ıd_wındow_tıle_horz** veya **ıd_wındow_tıle_vert**.  
+     Uygulamanız için varsayılan döşeme yönü seçmeniz gerekir. Id_wındow_tıle_horz veya ıd_wındow_tıle_vert penceresi "Kutucuğuna" menü öğesi için kimliği değiştirerek bunu yapabilirsiniz.  
   
 -   Bölümlendirici ıd_wındow_splıt klavye arabirim.  
   
@@ -369,7 +369,7 @@ ms.locfileid: "33385531"
   
 -   Id_app_exıt uygulama çıkın.  
   
-     **CWinApp::OnAppExit** bu komutu göndererek işleyen bir `WM_CLOSE` uygulamanın ana pencere iletisi. (Kirli dosyaları vb. isteyen) uygulamasının kapatılıyor standart tarafından işlenen `CFrameWnd` uygulaması.  
+     `CWinApp::OnAppExit` Bu komut, uygulamanın ana penceresine WM_CLOSE iletisi göndererek işler. (Kirli dosyaları vb. isteyen) uygulamasının kapatılıyor standart tarafından işlenen `CFrameWnd` uygulaması.  
   
      Bu komut işleyici özelleştirmesini önerilmez. Geçersiz kılma `CWinApp::SaveAllModified` veya `CFrameWnd` mantığı kapatma önerilir.  
   
@@ -422,7 +422,7 @@ ms.locfileid: "33385531"
   
 -   Id_next_pane gider sonraki bölme  
   
-     `CView` Bu komut için işleme `CSplitterWnd` uygulaması. Görünüm Bölümlendirici pencere parçası ise, bu komut uygulama işlevine temsil edecek **CSplitterWnd::OnNextPaneCmd**. Bu sonraki Bölümlendirici bölmesinde etkin görünüm taşır.  
+     `CView` Bu komut için işleme `CSplitterWnd` uygulaması. Görünüm Bölümlendirici pencere parçası ise, bu komut uygulama işlevine temsil edecek `CSplitterWnd::OnNextPaneCmd`. Bu sonraki Bölümlendirici bölmesinde etkin görünüm taşır.  
   
      Bu komut görünümü bir ayırıcı değil veya yok sonraki bölme gitmek için devre dışı bırakılır.  
   
@@ -430,7 +430,7 @@ ms.locfileid: "33385531"
   
 -   Id_prev_pane gider Önceki Bölme  
   
-     `CView` Bu komut için işleme `CSplitterWnd` uygulaması. Görünüm Bölümlendirici pencere parçası ise, bu komut uygulama işlevine temsil edecek **CSplitterWnd::OnNextPaneCmd**. Bu önceki Bölümlendirici bölmesinde etkin görünüm taşır.  
+     `CView` Bu komut için işleme `CSplitterWnd` uygulaması. Görünüm Bölümlendirici pencere parçası ise, bu komut uygulama işlevine temsil edecek `CSplitterWnd::OnNextPaneCmd`. Bu önceki Bölümlendirici bölmesinde etkin görünüm taşır.  
   
      Bu komut görünümü bir ayırıcı değil veya gitmek için hiçbir önceki bölmesinde devre dışı bırakılır.  
   
@@ -440,7 +440,7 @@ ms.locfileid: "33385531"
   
      Şu anda bu komut için standart uygulaması yoktur. Bu uygulama, `CView`-türetilen geçerli seçimi daha yeni bir OLE öğesi/nesne eklemek için sınıfı.  
   
-     Bu komut tüm OLE istemci uygulamaları uygulamalıdır. AppWizard, OLE seçeneğiyle bir iskelet uygulaması oluşturacak **OnInsertObject** görünüm sınıfınızda tamamlanması gerekir.  
+     Bu komut tüm OLE istemci uygulamaları uygulamalıdır. AppWizard, OLE seçeneğiyle bir iskelet uygulaması oluşturacak `OnInsertObject` görünüm sınıfınızda tamamlanması gerekir.  
   
      MFC OLE örnek bkz [OCLIENT](../visual-cpp-samples.md) bu komutun tam bir uygulama için örnek.  
   
@@ -452,42 +452,42 @@ ms.locfileid: "33385531"
   
 -   ID_OLE_VERB_FIRST... OLE fiiller için son bir kimlik aralığı  
   
-     `COleDocument` Bu komut kimliği aralığı seçili OLE öğesi/nesnesi tarafından desteklenen fiiller için kullanır. Belirli bir OLE öğesi/nesnesi türde sıfır veya daha fazla özel fiiller destekleyebilir beri bu aralığı olmalıdır. Uygulamanızın menüde bir menü öğesi kimliği olmalıdır **ıd_ole_verb_fırst**. Programını çalıştırdığınızda, menü uygun menü fiil açıklaması (veya birçok fiiller ile açılır menüsünden) ile güncelleştirilir. OLE menü Yönetimi tarafından işlenen `AfxOleSetEditMenu`, bu komut için güncelleştirme komut UI işleyicisi Bitti'yi.  
+     `COleDocument` Bu komut kimliği aralığı seçili OLE öğesi/nesnesi tarafından desteklenen fiiller için kullanır. Belirli bir OLE öğesi/nesnesi türde sıfır veya daha fazla özel fiiller destekleyebilir beri bu aralığı olmalıdır. Uygulamanızın menüde bir menü öğesi, kimliği ıd_ole_verb_fırst sahip olması gerekir. Programını çalıştırdığınızda, menü uygun menü fiil açıklaması (veya birçok fiiller ile açılır menüsünden) ile güncelleştirilir. OLE menü Yönetimi tarafından işlenen `AfxOleSetEditMenu`, bu komut için güncelleştirme komut UI işleyicisi Bitti'yi.  
   
-     Her komut kimliği bu aralıktaki işlemek için hiçbir açık komut işleyicileri vardır. **COleDocument::OnCmdMsg** bu aralıktaki tüm komut kimlikleri tuzak, sıfır tabanlı fiil sayılara açın ve sunucu bu fiil için başlatma için geçersiz kılındı (kullanarak `COleClientItem::DoVerb`).  
+     Her komut kimliği bu aralıktaki işlemek için hiçbir açık komut işleyicileri vardır. `COleDocument::OnCmdMsg` Bu aralıktaki tüm komut kimlikleri tuzak, sıfır tabanlı fiil sayılara açın ve sunucu bu fiil için başlatma için geçersiz kılındı (kullanarak `COleClientItem::DoVerb`).  
   
      Özelleştirme veya bu komut kimliği aralığı diğer kullanımı önerilmez.  
   
 -   Id_vıew_toolbar araç çubuğunu açar ve kapatır  
   
-     `CFrameWnd` Bu komut ve güncelleştirme komutu UI işleyicisi araç görünür durumunu değiştirme için işler. Araç çubuğu çerçeve alt pencere kimliğine sahip olan bir alt pencere olmalıdır `AFX_IDW_TOOLBAR`. Komut işleyici gerçekte araç penceresi görünürlüğünü değiştirir. `CFrameWnd::RecalcLayout` çerçeve penceresi araç ile yeni durumundayken yeniden çizmek için kullanılır. Araç çubuğu görünür olduğunda menü öğesi güncelleştirme komutu UI işleyicisi denetler.  
+     `CFrameWnd` Bu komut ve güncelleştirme komutu UI işleyicisi araç görünür durumunu değiştirme için işler. Araç çubuğu çerçeve alt pencere kimliği, AFX_IDW_TOOLBAR içeren bir alt pencere olmalıdır. Komut işleyici gerçekte araç penceresi görünürlüğünü değiştirir. `CFrameWnd::RecalcLayout` çerçeve penceresi araç ile yeni durumundayken yeniden çizmek için kullanılır. Araç çubuğu görünür olduğunda menü öğesi güncelleştirme komutu UI işleyicisi denetler.  
   
      Bu komut işleyici özelleştirmesini önerilmez. Ek araç çubukları eklemek isterseniz, kopyalama ve komut işleyici ve güncelleştirme komut UI işleyici bu komut için değiştirmek istediğiniz.  
   
 -   Id_vıew_status_bar durum çubuğunu açar ve kapatır  
   
-     Bu komut uygulanan `CFrameWnd` olduğu gibi **ıd_vıew_toolbar**, hariç farklı alt pencere kimliği (**AFX_IDW_STATUS_BAR**) kullanılır.  
+     Bu komut uygulanan `CFrameWnd` olduğu gibi ıd_vıew_toolbar, kimliği (AFX_IDW_STATUS_BAR) kullanılır farklı alt pencere dışında.  
   
 ## <a name="update-only-command-handlers"></a>Yalnızca güncelleştirme komut işleyicileri  
- Birkaç standart komut kimlikleri, durum çubukları göstergeleri olarak kullanılır. Bunlar aynı güncelleştirme komutu UI işleme mekanizması geçerli visual durumlarına uygulama boşta kalma süresi sırasında görüntülemek için kullanın. Kullanıcı tarafından seçilemez bu yana (diğer bir deyişle, bir durum çubuğu bölmesinin gönderemezsiniz), için hiçbir mantıklıdır sonra bir `ON_COMMAND` bu komut kimlikleri için işleyici.  
+ Birkaç standart komut kimlikleri, durum çubukları göstergeleri olarak kullanılır. Bunlar aynı güncelleştirme komutu UI işleme mekanizması geçerli visual durumlarına uygulama boşta kalma süresi sırasında görüntülemek için kullanın. Kullanıcı tarafından seçilemez bu yana (diğer bir deyişle, bir durum çubuğu bölmesinin gönderemezsiniz), sonra da bir ON_COMMAND işleyicisi için komut kimlikleri için hiçbir mantıklıdır.  
   
--   **Id_ındıcator_caps** : CAP kilit göstergesi.  
+-   Id_ındıcator_caps: CAP kilit göstergesi.  
   
--   **Id_ındıcator_num** : NUM kilit göstergesi.  
+-   Id_ındıcator_num: NUM kilit göstergesi.  
   
--   **Id_ındıcator_scrl** : SCRL kilit göstergesi.  
+-   Id_ındıcator_scrl: SCRL kilit göstergesi.  
   
--   **Id_ındıcator_kana** : KANA kilit göstergesi (yalnızca Japonca sistemler için geçerlidir).  
+-   Id_ındıcator_kana: KANA kilit göstergesi (yalnızca Japonca sistemler için geçerlidir).  
   
- Bu üç uygulanır **CFrameWnd::OnUpdateKeyIndicator**, uygun sanal anahtarına eşlemek için komut Kimliğini kullanan bir uygulama Yardımcısı. Yaygın olarak görülen bir uygulama etkinleştirir veya devre dışı bırakır (devre dışı durum bölmeleri için metin yok =) `CCmdUI` uygun sanal anahtar şu anda kilitli bağlı olarak nesne.  
+ Bu üç uygulanır `CFrameWnd::OnUpdateKeyIndicator`, uygun sanal anahtarına eşlemek için komut Kimliğini kullanan bir uygulama Yardımcısı. Yaygın olarak görülen bir uygulama etkinleştirir veya devre dışı bırakır (devre dışı durum bölmeleri için metin yok =) `CCmdUI` uygun sanal anahtar şu anda kilitli bağlı olarak nesne.  
   
  Bu komut işleyici özelleştirmesini önerilmez.  
   
--   **Id_ındıcator_ext: EXT**sona erdi select göstergesi.  
+-   Id_ındıcator_ext: Genişletilmiş select göstergesi.  
   
--   **Id_ındıcator_ovr: OV**e**R**göstergesi üstünü.  
+-   Id_ındıcator_ovr: Üzerine yerleştirme göstergesi.  
   
--   **Id_ındıcator_rec: REC**ording göstergesi.  
+-   Id_ındıcator_rec: Kayıt göstergesi.  
   
  Şu anda bu göstergeleri için standart hiç uygulaması yoktur.  
   

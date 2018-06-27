@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6a46867edc4ea2f314c167da4215b869af3ab17
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bc6556cabaa8f1f04a2a53771b495233620e1a14
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384458"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954415"
 ---
 # <a name="tn043-rfx-routines"></a>TN043: RFX Rutinleri
 > [!NOTE]
@@ -63,7 +63,7 @@ RFX_Custom(pFX, "Col2",
   
  'Afxdb.h' MFC ile sağlanan tüm kayıt alanı değişimi rutinleri listesi için bkz.  
   
- Kayıt kümesi alan çağrıları alan verilerini depolamak için bellek konumlarını (genellikle veri üyeleri) kaydı bir yolu olan bir **CMySet** sınıfı.  
+ Kayıt kümesi alan çağrıları alan verilerini depolamak için bellek konumlarını (genellikle veri üyeleri) kaydı bir yolu olan bir `CMySet` sınıfı.  
   
 ## <a name="notes"></a>Notlar  
  Kayıt kümesi alanı işlevleri yalnızca çalışmak için tasarlanmış `CRecordset` sınıfları. Bunlar genellikle diğer MFC sınıfları tarafından kullanılabilir değildir.  
@@ -77,23 +77,23 @@ RFX_Custom(pFX, "Col2",
 ## <a name="how-does-it-work"></a>Nasıl çalışır  
  Kayıt alanı değişimi kullanmak için aşağıdakileri anlamanız gerekmez. Ancak, arka planda nasıl işlediğine yardımcı olacak anlama kendi exchange yordamı yazma.  
   
- `DoFieldExchange` Üye işlevi çok benzer olduğunu `Serialize` üye işlevi — almayı veya veri, / formundan bir dış (bir ODBC sorgusunun sonucu servis talebi bu sütunlarından) / sınıf üyesi verilerde ayarlamayı sorumludur. `pFX` Parametre veri değiş tokuşu yapmak için bağlam ve benzer `CArchive` parametresi `CObject::Serialize`. `pFX` (Bir `CFieldExchange` nesnesi) benzer bir işlem göstergesi, ancak bir genelleme sahip `CArchive` yön bayrağı. RFX işlevi aşağıdaki işlemleri desteklemek sahip olabilir:  
+ `DoFieldExchange` Üye işlevi çok benzer olduğunu `Serialize` üye işlevi — almayı veya veri, / formundan bir dış (bir ODBC sorgusunun sonucu servis talebi bu sütunlarından) / sınıf üyesi verilerde ayarlamayı sorumludur. *PFX* parametre veri değiş tokuşu yapmak için bağlam ve benzer *CArchive* parametresi `CObject::Serialize`. *PFX* (bir `CFieldExchange` nesnesi) benzer bir işlem göstergesi, ancak bir genelleme sahip *CArchive* yön bayrağı. RFX işlevi aşağıdaki işlemleri desteklemek sahip olabilir:  
   
-- **BindParam** — gösterin burada ODBC parametre veri alma  
+- `BindParam` Gösterir burada ODBC parametre veri almak  
   
-- **BindFieldToColumn** — burada ODBC gerekir alma/banka outputColumn veri gösterin  
+- `BindFieldToColumn` — Burada ODBC alma/outputColumn veri banka gerekir belirtin  
   
-- **Düzeltmesi** — ayarlamak **CString/CLongBinary** uzunlukları, bit NULL durumunu ayarla  
+- `Fixup` — Ayarlama `CString/CByteArray` uzunlukları, bit NULL durumunu ayarla  
   
-- **MarkForAddNew** — işareti kirli AddNew çağrısından değer değiştiyse  
+- `MarkForAddNew` — İşareti kirli AddNew çağrısından değer değiştiyse  
   
-- **MarkForUpdate** — işareti kirli düzenleme çağrısından değer değiştiyse  
+- `MarkForUpdate` — İşareti kirli düzenleme çağrısından değer değiştiyse  
   
-- **Ad** — kirli olarak işaretlenmiş alanlar için alan adlarını ekleme  
+- `Name` — Kirli olarak işaretlenmiş alanlar için alan adlarını ekleme  
   
-- **NameValue** — ekleme "\<sütun adı > =" kirli olarak işaretlenmiş alanlar için  
+- `NameValue` — Append "\<sütun adı > =" kirli olarak işaretlenmiş alanlar için  
   
-- **Değer** — ekleme "" ayırıcı tarafından izlenen ister ',' veya ' '  
+- `Value` — Append "" ayırıcı tarafından izlenen ister ',' veya ' '  
   
 - `SetFieldDirty` — Durum bit kirli (yani değiştirilen) alanını ayarlayın  
   
@@ -105,13 +105,13 @@ RFX_Custom(pFX, "Col2",
   
 - `IsFieldNullable` — Alanın NULL değerler içerebileceği olursa TRUE döndürür  
   
-- **StoreField** — arşiv alan değeri  
+- `StoreField` — Arşiv alan değeri  
   
-- **LoadField** — yeniden arşivlenmiş alan değeri  
+- `LoadField` — Yeniden arşivlenmiş alan değeri  
   
-- **GetFieldInfoValue** — bir alan genel bilgi döndürür  
+- `GetFieldInfoValue` — Bir alan genel bilgiler döndürür.  
   
-- **GetFieldInfoOrdinal** — bir alan genel bilgi döndürür  
+- `GetFieldInfoOrdinal` — Bir alan genel bilgiler döndürür.  
   
 ## <a name="user-extensions"></a>Kullanıcı Uzantıları  
  Varsayılan RFX mekanizması genişletmek için birkaç yolu vardır. Şunları yapabilirsiniz  
@@ -149,13 +149,13 @@ RFX_Custom(pFX, "Col2",
 ## <a name="writing-a-custom-rfx"></a>Özel bir RFX yazma  
  Kendi özel RFX işlevi yazmak için varolan bir RFX işlevi kopyalayıp kendi amaçlarınız için değiştirebilirsiniz önerilir. Kopyalamak için sağ RFX seçerek işinizi çok daha kolay hale getirebilir. Bazı RFX işlevleri kopyalama karar verirken dikkate almanız bazı benzersiz özelliklere sahiptir.  
   
- **RFX_Long ve rfx_ınt**:  
+ `RFX_Long` ve `RFX_Int`:  
  Bu basit bir RFX işlevlerdir. Veri değeri hiçbir özel yorumlama gerekli değildir ve veri boyutu sabit.  
   
- **RFX_Single ve RFX_Double**:  
+ `RFX_Single` ve `RFX_Double`:  
  Bu işlevler RFX_Long ve rfx_ınt yukarıdaki gibi basit ve yapabilirsiniz varsayılan uygulaması bolca kullanırlar. Bunlar dbflt.cpp yerine dbrfx.cpp, ancak yalnızca açıkça başvuru olduklarında noktası kitaplığı kayan çalışma zamanı yükleme etkinleştirmek için depolanır.  
   
- **RFX_Text ve RFX_Binary**:  
+ `RFX_Text` ve `RFX_Binary`:  
  Bu iki işlevleri dizesi/ikili bilgiyi tutmak için statik bir arabellek erişinceye ve kaydetme & değeri yerine bu arabellekleri ODBC SQLBindCol ile kaydetmeniz gerekir. Bu nedenle, bu iki işlev özel durum kodu çok sayıda vardır.  
   
  `RFX_Date`:  
@@ -164,9 +164,9 @@ RFX_Custom(pFX, "Col2",
  `RFX_LongBinary`:  
  Yalnızca sınıf kitaplığı veri gönderip için sütun bağlama kullanmaz RFX işlevi budur. Bu işlev BindFieldToColumn işlemi yoksayar ve bunun yerine, düzeltme işlemi sırasında gelen SQL_LONGVARCHAR veya SQL_LONGVARBINARY verileri tutmak için depolama ayırır, ardından ayrılmış depolama alanına değerini almak için bir SQLGetData araması gerçekleştirir. Veri değerleri (örneğin, NameValue ve değer işlemleri) veri kaynağına geri göndermek hazırlık yaparken bu işlevi ODBC DATA_AT_EXEC işlevi kullanır. Bkz: [Teknik Not 45](../mfc/tn045-mfc-database-support-for-long-varchar-varbinary.md) SQL_LONGVARBINARY ve SQL_LONGVARCHARs ile çalışma hakkında daha fazla bilgi.  
   
- Kendi yazılırken **RFX_** işlevi, genellikle gerçekleştirilecektir kullanabilmek için **CFieldExchange::Default** belirli bir işlemi uygulamak için. Varsayılan uygulama söz konusu işlemi için bakın. İşlemi gerçekleştirdiğinde, yazılırken, **RFX_** için temsilci işlevi **CFieldExchange::Default.** Arama örnekleri görebilirsiniz **CFieldExchange::Default** dbrfx.cpp içinde  
+ Kendi yazılırken **RFX_** işlevi, genellikle gerçekleştirilecektir kullanabilmek için `CFieldExchange::Default` belirli bir işlemi uygulamak için. Varsayılan uygulama söz konusu işlemi için bakın. İşlemi gerçekleştirdiğinde, yazılırken, **RFX_** için temsilci işlevi `CFieldExchange::Default`. Arama örnekleri görebilirsiniz `CFieldExchange::Default` dbrfx.cpp içinde  
   
- Çağrı önemlidir `IsFieldType` RFX işlevi ve hemen FALSE dönerse return başlangıcında. Bu mekanizma üzerinde gerçekleştirilen gelen parametre işlemleri tutar **outputColumns**, bunun tam tersi (arama gibi **BindParam** üzerinde bir **outputColumn**). Ayrıca, `IsFieldType` otomatik olarak sayısını izler **outputColumns** (`m_nFields`) ve parametrelerin (`m_nParams`).  
+ Çağrı önemlidir `IsFieldType` RFX işlevi ve hemen FALSE dönerse return başlangıcında. Bu mekanizma üzerinde gerçekleştirilen gelen parametre işlemleri tutar *outputColumns*, bunun tam tersi (arama gibi `BindParam` üzerinde bir *outputColumn*). Ayrıca, `IsFieldType` otomatik olarak sayısını izler *outputColumns* (*m_nFields*) ve parametrelerin (*m_nParams*).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   

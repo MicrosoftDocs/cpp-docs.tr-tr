@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a1061f4a7d4394cb84c26514795c406f78146df
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 22fcb3f9815e5100251e6bf478c6714fbb0b7df3
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384963"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955728"
 ---
 # <a name="tn021-command-and-message-routing"></a>TN021: Komut ve İleti Yönlendirme
 > [!NOTE]
@@ -34,11 +34,11 @@ ms.locfileid: "33384963"
  Lütfen Visual C++ için burada açıklanan mimarileri hakkında genel bilgi için özellikle Windows iletiler, Denetim bildirimleri ve komutlar arasında ayrım bakın. Bu Not yazdırılan belgelerinde açıklanan sorunları çok bilginiz ve yalnızca çok Gelişmiş konular ele varsayar.  
   
 ## <a name="command-routing-and-dispatch-mfc-10-functionality-evolves-to-mfc-20-architecture"></a>Komut Yönlendirme ve gönderme MFC 1.0 işlevselliği dönüşmesi MFC 2.0 mimarisi  
- Windows sahip **WM_COMMAND** menü komutlarını Hızlandırıcı tuşları ve iletişim denetim bildirimleri bildirimleri sağlamak için aşırı ileti.  
+ Windows menü komutlarını Hızlandırıcı tuşları ve iletişim denetim bildirimleri bildirimleri sağlamak için aşırı WM_COMMAND ileti sahiptir.  
   
- MFC 1.0 üzerinde biraz bir komut işleyici (örneğin, "OnFileNew") vererek içinde yerleşik bir **CWnd** türetilmiş sınıf belirli bir yanıt çağrılmadığı **WM_COMMAND**. Bu ileti eşlemesi adlı bir veri yapısı birlikte yapışmış ve çok verimli alanı komutu mekanizması olur.  
+ MFC 1.0 üzerinde biraz bir komut işleyici (örneğin, "OnFileNew") vererek içinde yerleşik bir `CWnd` türetilmiş sınıf belirli WM_COMMAND yanıt olarak adlandırılan. Bu ileti eşlemesi adlı bir veri yapısı birlikte yapışmış ve çok verimli alanı komutu mekanizması olur.  
   
- MFC 1.0 denetimi bildirimleri komutunun iletilerinde ayırmak için ek işlevler de sağlanır. Komutları bazen bir komut kimliği bilinen bir 16 bit kimliği ile temsil edilir Komutları normal olarak başlatmak bir **CFrameWnd** (diğer bir deyişle, menüsünü seçin veya çevrilmiş Hızlandırıcı) ve diğer windows çeşitli yönlendirilen.  
+ MFC 1.0 denetimi bildirimleri komutunun iletilerinde ayırmak için ek işlevler de sağlanır. Komutları bazen bir komut kimliği bilinen bir 16 bit kimliği ile temsil edilir Komutları normal olarak başlatmak bir `CFrameWnd` (diğer bir deyişle, menüsünü seçin veya çevrilmiş Hızlandırıcı) ve diğer windows çeşitli yönlendirilen.  
   
  MFC 1.0 birden çok belge arabirimi (MDI) uygulaması için sınırlı bir fikir komut yönlendirme kullanılır. (Bir MDI çerçeve penceresi temsilci kendi etkin MDI alt pencere komutlarına.)  
   
@@ -63,9 +63,9 @@ ms.locfileid: "33384963"
   
 -   Araç çubuğu oluşturmak için kullanılan belki de bir kimliği dizide.  
   
--   İçinde bir **ON_COMMAND** makrosu.  
+-   ON_COMMAND makrosu içinde.  
   
--   BELKİ de bir **on_update_command_uı** makrosu.  
+-   BELKİ de bir on_update_command_uı makrosu.  
   
  Şu anda, yalnızca komut kimlikleri gerektirir MFC uygulamasında olması > = 0x8000 GOSUB iletişim kutuları/komutları uygulamasıdır.  
   
@@ -78,23 +78,23 @@ ms.locfileid: "33384963"
   
  Normal bir modal iletişim için uygun komut kimliği kümesi düğmesini IDC ile normal bir düğme yerleştirin Kullanıcı düğmesini seçtiğinde (genellikle ana çerçeve penceresi) iletişim sahibi diğer komutu gibi komutu alır. (İlk iletişim GOSUB) başka bir iletişim kutusunu açmak için genellikle kullanıldığından bu GOSUB komutu çağrılır.  
   
- Ayrıca işlev çağırıp **CWnd::UpdateDialogControls** , iletişim kutusundaki ve ana çerçeve penceresi adresini geçirin. Bu işlevi etkinleştirmek veya komut işleyicileri çerçevede olup olmadığını göre iletişim kutusu denetimleri devre dışı. Bu işlev otomatik olarak, Denetim çubuklarını uygulamanızın boşta döngü için çağrılır, ancak bu özelliğe sahip olmasını istediğiniz doğrudan normal iletişim kutuları için çağırmanız gerekir.  
+ Ayrıca işlev çağırıp `CWnd::UpdateDialogControls` , iletişim kutusundaki ve ana çerçeve penceresi adresini geçirin. Bu işlevi etkinleştirmek veya komut işleyicileri çerçevede olup olmadığını göre iletişim kutusu denetimleri devre dışı. Bu işlev otomatik olarak, Denetim çubuklarını uygulamanızın boşta döngü için çağrılır, ancak bu özelliğe sahip olmasını istediğiniz doğrudan normal iletişim kutuları için çağırmanız gerekir.  
   
 ## <a name="when-onupdatecommandui-is-called"></a>On_update_command_uı olduğunda çağrılır  
- Her zaman bir programın tüm menü öğelerini etkin ve kullanıma durumunu korumak pkı'ya pahalı bir sorun olabilir. Yalnızca kullanıcı açılan seçtiğinde menü öğelerini etkinleştir/denetimi için ortak bir tekniktir. MFC 2.0 uyarlamasını **CFrameWnd** tanıtıcıları **WM_INITMENUPOPUP** iletisi ve menülerde durumunu belirlemek için komut yönlendirme mimarisini kullanır **ON_UPDATE_COMMAND_ UI** işleyicileri.  
+ Her zaman bir programın tüm menü öğelerini etkin ve kullanıma durumunu korumak pkı'ya pahalı bir sorun olabilir. Yalnızca kullanıcı açılan seçtiğinde menü öğelerini etkinleştir/denetimi için ortak bir tekniktir. MFC 2.0 uyarlamasını `CFrameWnd` WM_INITMENUPOPUP ileti işleme ve komut yönlendirme mimarisi on_update_command_uı işleyicileri menülerde durumunu belirlemek için kullanır.  
   
- **CFrameWnd** aynı zamanda işleyen **WM_ENTERIDLE** durum çubuğunda (ileti satırı olarak da bilinir) öğesinin seçili geçerli menü açıklayan ileti.  
+ `CFrameWnd` Ayrıca durum çubuğunda (ileti satırı olarak da bilinir) öğesinin seçili geçerli menü açıklamak için WM_ENTERIDLE yapılacak işler.  
   
- Visual C++ tarafından düzenlenen bir uygulamanın menü yapısı adresinde olası komutları temsil etmek için kullanılan **WM_INITMENUPOPUP** zaman. **On_update_command_uı** işleyicileri durumunda veya menü metnini değiştirebilirsiniz ya da (dosya MRU Listesi veya OLE Fiiller açılır menü) gibi gelişmiş kullanır gerçekten değiştirmek için önce menü yapısı menü çizilir.  
+ Visual C++ tarafından düzenlenen bir uygulamanın menü yapısı WM_INITMENUPOPUP aynı anda kullanılabilen olası komutları temsil etmek için kullanılır. On_update_command_uı işleyicileri durumu veya menü metni değiştirmek veya menü çizilmeden önce (dosya MRU Listesi veya OLE Fiiller açılır menü gibi) Gelişmiş kullanımları gerçekte menü yapısı değiştirin.  
   
- Aynı sıralama **on_update_command_uı** işleme araç çubukları (ve diğer denetim çubukları) yapılır uygulama boşta döngü girdiğinde. Bkz: *sınıf kitaplığı başvurusu* ve [Teknik Not 31](../mfc/tn031-control-bars.md) denetim çubukları hakkında daha fazla bilgi için.  
+ On_update_command_uı işleme aynı tür araç çubukları (ve diğer denetim çubukları) yapılır uygulama boşta döngü girdiğinde. Bkz: *sınıf kitaplığı başvurusu* ve [Teknik Not 31](../mfc/tn031-control-bars.md) denetim çubukları hakkında daha fazla bilgi için.  
   
 ## <a name="nested-pop-up-menus"></a>İç içe geçmiş açılır menüler  
- İç içe geçmiş menü yapısı kullanıyorsanız, göreceksiniz **on_update_command_uı** işleyicisi açılır menüde ilk menü öğesi için iki farklı durumlarda çağrılır.  
+ İç içe geçmiş menü yapısı kullanıyorsanız, açılır menüde ilk menü öğesi için on_update_command_uı işleyicisi iki farklı durumlarda çağrılır fark edeceksiniz.  
   
- İlk olarak, bu açılır menü için kendisini adı verilir. Açılır menüler kimlikleri yoktur ve tüm açılır menüyü başvurmak için açılır menüyü ilk menü öğesi Kimliğini kullanırız olduğundan bu işlem gereklidir. Bu durumda, **m_pSubMenu** üye değişken **Ccmduı** nesnesi NULL olmamalıdır ve açılır menüyü işaret edecek.  
+ İlk olarak, bu açılır menü için kendisini adı verilir. Açılır menüler kimlikleri yoktur ve tüm açılır menüyü başvurmak için açılır menüyü ilk menü öğesi Kimliğini kullanırız olduğundan bu işlem gereklidir. Bu durumda, *m_pSubMenu* üye değişken `CCmdUI` nesnesi NULL olmamalıdır ve açılır menüyü işaret edecek.  
   
- İkinci olarak, yalnızca açılır menüde menü öğeleri çizilecek önce çağrılır. Bu durumda, yalnızca ilk menü öğesine Kimliğine başvuruyor ve **m_pSubMenu** üye değişken **Ccmduı** nesnesi, NULL olur.  
+ İkinci olarak, yalnızca açılır menüde menü öğeleri çizilecek önce çağrılır. Bu durumda, yalnızca ilk menü öğesine Kimliğine başvuruyor ve *m_pSubMenu* üye değişken `CCmdUI` nesnesi, NULL olur.  
   
  Bu açılır menü menü öğelerinden farklı etkinleştirmenize olanak sağlar, ancak bazı menü kullanan kodlar yazmak gerektirir. Örneğin, bir iç içe geçmiş menüde şu yapıda:  
   

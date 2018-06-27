@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb7c89e6441379949386baecbddbb30f7c01ebff
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: add30fe8bfe2c19973ff657ae05b739986965a9b
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33352229"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957123"
 ---
 # <a name="canimationstoryboardeventhandler-class"></a>CAnimationStoryboardEventHandler sınıfı
 Animasyon API'si tarafından film şeridi durumu değiştirilir veya film şeridi güncelleştirildiğinde çağrılır bir geri çağırma uygular.  
@@ -89,10 +89,10 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pAnimationController`  
+ *pAnimationController*  
  Olayları alacak animasyon denetleyici için bir işaretçi.  
   
- `ppHandler`  
+ *ppHandler*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
@@ -108,13 +108,13 @@ IFACEMETHOD(OnStoryboardStatusChanged) (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `storyboard`  
+ *görsel taslak haline getirme*  
  Film şeridi durumu değiştiğini gösteren bir işaretçi.  
   
- `newStatus`  
+ *newStatus*  
  Yeni film şeridi durumu belirtir.  
   
- `previousStatus`  
+ *previousStatus*  
  Önceki film şeridi durumu belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -128,7 +128,7 @@ IFACEMETHOD(OnStoryboardUpdated) (__in IUIAnimationStoryboard* storyboard);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `storyboard`  
+ *görsel taslak haline getirme*  
  Hangi güncelleştirildi film şeridi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -142,7 +142,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pAnimationController`  
+ *pAnimationController*  
  Olayları alacak animasyon denetleyici için bir işaretçi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

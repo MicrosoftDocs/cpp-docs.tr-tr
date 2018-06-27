@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 21499f65ac762dfd08d90decad41eedf3dfc5cdf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 635019011b655f338e499724c788bc433df5d571
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368988"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957084"
 ---
 # <a name="cfindreplacedialog-class"></a>CFindReplaceDialog sınıfı
 Standart dize Bul ve Değiştir iletişim kutuları, uygulamanızda uygulamak sağlar.  
@@ -95,7 +95,7 @@ class CFindReplaceDialog : public CCommonDialog
   
  Bir kez bir `CFindReplaceDialog` nesne oluşturulan, çağırmalısınız [oluşturma](#create) oluşturmak ve iletişim kutusunu görüntülemek için üye işlevi.  
   
- Kullanım [m_fr](#m_fr) çağırmadan önce iletişim kutusu başlatılamadı yapısı **oluşturma**. `m_fr` Yapısıdır türü [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
+ Kullanım [m_fr](#m_fr) çağırmadan önce iletişim kutusu başlatılamadı yapısı `Create`. `m_fr` Yapısıdır türü [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
  Bulma/değiştirme isteklerinin bildirim almak üst penceresinin sırayla Windows kullanmalısınız [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947) işlev ve kullanmak [on_regıstered_message](message-map-macros-mfc.md#on_registered_message) , çerçevesinde ileti eşleme makrosu kayıtlı bu iletiyi işleyen penceresini açın.  
   
@@ -133,9 +133,9 @@ CFindReplaceDialog();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çünkü `CFindReplaceDialog` nesne bir kalıcı olmayan iletişim kutusu, kullanarak da öbekte oluşturmalıdır `new` işleci.  
+ Çünkü `CFindReplaceDialog` nesne bir kalıcı olmayan iletişim kutusu, kullanarak da öbekte oluşturmalıdır **yeni** işleci.  
   
- Yok etme sırasında framework gerçekleştirmeye bir `delete this` iletişim kutusu işaretçisine üzerinde. İletişim kutusu yığında oluşturduysanız `this` işaretçi yok ve tanımsız davranışa neden olabilir.  
+ Yok etme sırasında framework gerçekleştirmeye bir **bu silme** iletişim kutusu işaretçisine üzerinde. İletişim kutusu yığında oluşturduysanız **bu** işaretçi yok ve tanımsız davranışa neden olabilir.  
   
  Oluşturma işlemi hakkında daha fazla bilgi için `CFindReplaceDialog` nesneleri bkz [CFindReplaceDialog](../../mfc/reference/cfindreplacedialog-class.md) genel bakış. Kullanım [CFindReplaceDialog::Create](#create) iletişim kutusunu görüntülemek için üye işlevi.  
   
@@ -155,19 +155,19 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bFindDialogOnly`  
+ *bFindDialogOnly*  
  Bu parametre kümesine `TRUE` görüntülemek için bir **Bul** iletişim kutusu. Ayarlamak `FALSE` görüntülemek için bir **bulun ve değiştirin** iletişim kutusu.  
   
- `lpszFindWhat`  
+ *lpszFindWhat*  
  İletişim kutusu görüntülendiğinde, varsayılan arama dizesi işaretçi. Varsa `NULL`, iletişim kutusunda varsayılan arama dizesi içermiyor.  
   
- `lpszReplaceWith`  
+ *lpszReplaceWith*  
  İletişim kutusu görüntülendiğinde varsayılan değiştirme dizesini işaretçi. Varsa `NULL`, iletişim kutusunda varsayılan değiştirme dizesi içermiyor.  
   
- `dwFlags`  
+ *dwFlags*  
  Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusu ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayraklar. Varsayılan değer `FR_DOWN`, arama aşağıya bir yönde devam etmek için olduğunu belirtir. Bkz: [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835) bu bayrakları hakkında daha fazla bilgi için Windows SDK'sı yapısında.  
   
- `pParentWnd`  
+ *pParentWnd*  
  İletişim kutusunun üst veya sahibi penceresi için bir işaretçi. Bu bulma/değiştirme eylemi istenip istenmediğini belirten özel iletiyi alacak penceredir. Varsa `NULL`, uygulamanın ana penceresi kullanılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -218,7 +218,7 @@ static CFindReplaceDialog* PASCAL GetNotifier(LPARAM lParam);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lParam`  
+ *lParam*  
  **Lparam** çerçeve pencere için geçirilen değer **OnFindReplace** üye işlevi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

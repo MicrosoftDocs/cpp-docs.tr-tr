@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11b78cf273fd510b8ce224004c759dcc5bbe3bec
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5a6a2a65172115d42f984b8f59156d3849692bf8
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355639"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955741"
 ---
 # <a name="canimationgroup-class"></a>CAnimationGroup sınıfı
 Bir animasyon film şeridi, animasyon nesneler ve bir animasyon tanımlamak için geçişler birleştiren bir animasyon grubu uygular.  
@@ -144,10 +144,10 @@ void AddKeyframes(IUIAnimationStoryboard* pStoryboard, BOOL bAddDeep);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pStoryboard`  
+ *pStoryboard*  
  Film şeridi COM nesnesi için bir işaretçi.  
   
- `bAddDeep`  
+ *bAddDeep*  
  Bu yöntem diğer ana kare üzerinde bağımlı film şeridi ana kare eklemeniz gerekip gerekmediğini belirtir.  
   
 ##  <a name="addtransitions"></a>  CAnimationGroup::AddTransitions  
@@ -160,10 +160,10 @@ void AddTransitions(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pStoryboard`  
+ *pStoryboard*  
  Film şeridi COM nesnesi için bir işaretçi.  
   
- `bDependOnKeyframes`  
+ *bDependOnKeyframes*  
   
 ##  <a name="animate"></a>  CAnimationGroup::Animate  
  Bir grup canlandırır.  
@@ -176,9 +176,9 @@ BOOL Animate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pManager`  
- `pTimer`  
- `bScheduleNow`  
+ *pManager*  
+ *pTimer*  
+ *bScheduleNow*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -204,10 +204,10 @@ CAnimationGroup(CAnimationController* pParentController, UINT32 nGroupID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentController`  
+ *pParentController*  
  Bir grup oluşturur animasyon denetleyici için bir işaretçi.  
   
- `nGroupID`  
+ *nGroupID*  
  GroupID belirtir.  
   
 ##  <a name="createtransitions"></a>  CAnimationGroup::CreateTransitions  
@@ -228,7 +228,7 @@ CAnimationBaseObject* FindAnimationObject(IUIAnimationVariable* pVariable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pVariable`  
+ *pVariable*  
  Animasyon değişkeni için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -328,10 +328,10 @@ BOOL Schedule(IUIAnimationTimer* pTimer, UI_ANIMATION_SECONDS time);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pTimer`  
+ *pTimer*  
  Animasyon Zamanlayıcı için bir işaretçi.  
   
- `time`  
+ *Saat*  
  Animasyonun zamanlamak için süreyi belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -348,7 +348,7 @@ void SetAutodestroyTransitions(BOOL bAutoDestroy = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Geçişleri yok etmek nasıl belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

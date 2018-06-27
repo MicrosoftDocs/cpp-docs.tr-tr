@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53e20ca3f483bd9c00b298c69a526d8f5dd31cdb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 80c1422c4d0e45599ca8bc2e9c86a4263b8ac9b6
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367740"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955615"
 ---
 # <a name="cdaotabledefinfo-structure"></a>CDaoTableDefInfo Yapısı
 `CDaoTableDefInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan bir tabledef nesne hakkında bilgiler içerir.  
@@ -46,13 +46,13 @@ struct CDaoTableDefInfo
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `m_strName`  
+ *m_strName*  
  Tabledef nesnesi adlandıran. Bu özelliğin değerini doğrudan almak için tabledef nesnesinin çağrısı [GetName](../../mfc/reference/cdaotabledef-class.md#getname) üye işlevi. Daha fazla bilgi için DAO Yardımı'ndaki "Name özelliği" konusuna bakın.  
   
- `m_bUpdatable`  
+ *m_bUpdatable*  
  Tabloda değişiklikleri yapılan olup olmadığını gösterir. Açmak için bir tablo güncelleştirilebilir olup olmadığını belirlemek için en hızlı yolu olan bir `CDaoTableDef` nesne için tablo ve nesnenin çağrısı [CanUpdate](../../mfc/reference/cdaotabledef-class.md#canupdate) üye işlevi. `CanUpdate` her zaman sıfır olmayan bir değer döndürür (**TRUE**) yeni oluşturulan tabledef nesnesi ve 0 (**FALSE**) ekli tabledef nesnesi. Yeni bir tabledef nesnesi yalnızca geçerli kullanıcının yazma izni olan bir veritabanı eklenmiş. Tablo yalnızca güncellenemeyen alanları içeriyorsa `CanUpdate` 0 döndürür. Bir veya daha fazla alan güncelleştirilebilir, olduğunda `CanUpdate` sıfır olmayan bir değer döndürür. Yalnızca güncelleştirilebilir alanları düzenleyebilirsiniz. Daha fazla bilgi için DAO Yardımı'ndaki "güncelleştirilebilir özellik" konusuna bakın.  
   
- `m_lAttributes`  
+ *m_lAttributes*  
  Tabledef nesnesinin temsil ettiği tablo özelliklerini belirtir. Geçerli bir tabledef özniteliklerini almak için arama kendi [GetAttributes](../../mfc/reference/cdaotabledef-class.md#getattributes) üye işlevi. Döndürülen değer bu uzun sabitleri bir bileşimi olabilir (veya Bitsel kullanarak (**&#124;**) işleci):  
   
 - **dbAttachExclusive** Microsoft Jet Veritabanı Altyapısı'nı kullanan veritabanları için tablo özel kullanım için açılan ekli bir tablo gösterir.  
@@ -67,22 +67,22 @@ struct CDaoTableDefInfo
   
 - **dbAttachedODBC** tablodur Microsoft SQL Server gibi bir ODBC veritabanı bağlı bir tablodan gösterir.  
   
- `m_dateCreated`  
+ *m_dateCreated*  
  Tarih ve saat tablo oluşturulmuş. Doğrudan tablonun oluşturulduğu tarihi almak için arama [GetDateCreated](../../mfc/reference/cdaotabledef-class.md#getdatecreated) üye işlevini `CDaoTableDef` tabloyla ilişkili nesne. Açıklamalar aşağıda daha fazla bilgi için bkz. İlgili bilgiler için DAO Yardımı'ndaki "Notes, LastUpdated özellikleri" konusuna bakın.  
   
- `m_dateLastUpdated`  
+ *m_dateLastUpdated*  
  Tarih ve saat tablo tasarımı için yapılan en son değişikliğin. Tablonun son güncelleştirilen tarih doğrudan almak için arama [GetDateLastUpdated](../../mfc/reference/cdaotabledef-class.md#getdatelastupdated) üye işlevini `CDaoTableDef` tabloyla ilişkili nesne. Açıklamalar aşağıda daha fazla bilgi için bkz. İlgili bilgiler için DAO Yardımı'ndaki "Notes, LastUpdated özellikleri" konusuna bakın.  
   
  *m_strSrcTableName*  
  Varsa ekli bir tablo adını belirtir. Doğrudan kaynak tablo adı almak için arama [GetSourceTableName](../../mfc/reference/cdaotabledef-class.md#getsourcetablename) üye işlevini `CDaoTableDef` tabloyla ilişkili nesne.  
   
- `m_strConnect`  
+ *m_strConnect*  
  Açık bir veritabanını kaynak hakkında bilgi sağlar. Bu özellik çağırarak denetleyebilirsiniz [GetConnect](../../mfc/reference/cdaotabledef-class.md#getconnect) üye işlevini, `CDaoTableDef` nesnesi. Hakkında daha fazla bilgi için bağlantı dizesi, bkz: `GetConnect`.  
   
- `m_strValidationRule`  
+ *m_strValidationRule*  
  Tabledef alanlardaki veriler değiştirilmiş veya tabloya eklenen doğrulayan bir değer. Doğrulama Microsoft Jet Veritabanı Altyapısı'nı kullanan veritabanları için desteklenir. Doğrulama kuralının doğrudan almak için arama [GetValidationRule](../../mfc/reference/cdaotabledef-class.md#getvalidationrule) üye işlevini `CDaoTableDef` tabloyla ilişkili nesne. İlgili bilgi için "ValidationRule özelliğinde" DAO Yardım konusuna bakın.  
   
- `m_strValidationText`  
+ *m_strValidationText*  
  ValidationRule özelliği tarafından belirtilen doğrulama kuralı yok sağlanıyorsa, uygulamanızın görüntülenmelidir ileti metnini belirten bir değer. İlgili bilgi için DAO Yardımı'ndaki "ValidationText özelliği" konusuna bakın.  
   
  *m_lRecordCount*  

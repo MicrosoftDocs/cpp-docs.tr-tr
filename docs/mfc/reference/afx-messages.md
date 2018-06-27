@@ -74,12 +74,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc11b3eb79f0d535775f073c772e40c4ed9e822c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 76396a402f348181fbcd65a2ccb962207216abda
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355427"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954666"
 ---
 # <a name="afx-messages"></a>AFX İletileri
 Bu iletiler MFC'de kullanılır.  
@@ -89,7 +89,7 @@ Bu iletiler MFC'de kullanılır.
   
 ||||||  
 |-|-|-|-|-|  
-|İleti|Açıklama|[in] `wParam`|`lParam` (Tüm [in] aksi belirtilmedikçe parametreleridir.)|Dönüş Değeri|  
+|İleti|Açıklama|[in] *wParam*|*lParam* (tüm [in] aksi belirtilmedikçe parametreleridir.)|Dönüş Değeri|  
 |AFX_WM_ACCGETOBJECT|Kullanılmadı.|Kullanılmadı.|Yok.|Yok.|  
 |AFX_WM_ACCGETSTATE|Erişilebilirlik desteği için kullanılır. Bu ileti gönder `CMFCPopupMenu` veya `CMFCRibbonPanelMenu` geçerli öğesinin durumunu almak için.|Menü düğmesi veya ayırıcı öğenin dizini.|Kullanılmadı.|Öğesi durumu. Dizin geçersiz ise -1. menü düğmesi özel özniteliklere sahipse 0. Aksi takdirde aşağıdaki bayraklar birleşiminden oluşur:<br /><br /> TBBS_DISABLED — öğesi devre dışı<br /><br /> TBBS_CHECKED — madde işaretli<br /><br /> TBBS_BUTTON — öğe standart basma düğmesi.<br /><br /> TBBS_PRESSED — düğmesine basıldığında<br /><br /> TBBS_INDETERMINATE — tanımsız durumu<br /><br /> TBBS_SEPARATOR - yerine bir menü düğmesi diğer menü öğeleri arasında ayrım bir bu öğesi formları|  
 |AFX_WM_CHANGE_ACTIVE_TAB|Framework yeniden boyutlandırılabilir denetim çubuğu denetimi için bu iletiyi gönderir. Bildirimleri almak için bu iletiyi `CMFCTabCtrl` nesneleri bir kullanıcının etkin bir sekme değiştirdiğinde.|Sekme dizini.|Kullanılmadı.|Sıfır olmayan.|  
@@ -103,9 +103,9 @@ Bu iletiler MFC'de kullanılır.
 |AFX_WM_DELETETOOLBAR|Kullanıcı bir araç çubuğunu özelleştirme modunda silmek üzere olduğunda ana çerçeve penceresi gönderilir.<br /><br /> Bir kullanıcı bir araç çubuğunu özelleştirme modunda sildiğinde ek eylemleri uygulamak için bu iletiyi işleyin. Varsayılan işleyici çağırması gerekir (`OnToolbarDelete`), araç siler. Varsayılan işleyici araç silmek mümkün olup olmadığını belirten bir değer döndürür.|Kullanılmadı.|İşaretçi bir `CMFCToolBar` silinecek nesne.|Araç çubuğu sildiyseniz sıfır olmayan; Aksi takdirde 0.|  
 |AFX_WM_GETDOCUMENTCOLORS|`CMFCColorMenuButton` Bu iletiyi belge renkleri almak için ana çerçeve penceresi gönderir.|Kullanılmadı.|[içinde out] İşaretçi bir `CList<COLORREF, COLORREF>` nesnesi.|Sıfır.|  
 |AFX_WM_GETDRAGBOUNDS|Yalnızca dahili kullanım için.|Yok.|Yok.|Yok.|  
-|AFX_WM_HIGHLIGHT_RIBBON_LIST_ITEM|Bir kullanıcı bir Şerit liste öğesi vurgular ana çerçeve penceresi gönderilir.|Vurgulanan öğeyi dizini|bir işaretçi `CMFCBaseRibbonElement`|Kullanılmadı.|  
+|AFX_WM_HIGHLIGHT_RIBBON_LIST_ITEM|Bir kullanıcı bir Şerit liste öğesi vurgular ana çerçeve penceresi gönderilir.|Vurgulanan öğeyi dizini|Bir işaretçi `CMFCBaseRibbonElement`|Kullanılmadı.|  
 |AFX_WM_ON_AFTER_SHELL_COMMAND|Bir üst öğesi gönderilen `CMFCShellListCtrl` veya `CMFCShellTreeCtrl` bir kullanıcı bir kabuk komut yürütme tamamlandığında denetler.|Kullanıcı çalıştırılan komut kimliği|Kullanılmadı.|Uygulama bu iletiyi işliyorsa, sıfır döndürmelidir.|  
-|AFX_WM_ON_BEFORE_SHOW_RIBBON_ITEM_MENU|Açılır menü görüntülemeden önce framework Şeridin üst öğeye bu iletiyi gönderir. Bu iletiyi işlemek ve açılır menüler dilediğiniz zaman değiştirebilirsiniz.|Kullanılmadı.|bir işaretçi `CMFCBaseRibbonElement`|Kullanılmadı.|  
+|AFX_WM_ON_BEFORE_SHOW_RIBBON_ITEM_MENU|Açılır menü görüntülemeden önce framework Şeridin üst öğeye bu iletiyi gönderir. Bu iletiyi işlemek ve açılır menüler dilediğiniz zaman değiştirebilirsiniz.|Kullanılmadı.|Bir işaretçi `CMFCBaseRibbonElement`|Kullanılmadı.|  
 |AFX_WM_ON_CANCELTABMOVE|Yalnızca dahili kullanım için.|Yok.|Yok.||  
 |AFX_WM_ON_CHANGE_RIBBON_CATEGORY|Kullanıcı etkin Şerit denetimi kategori değiştirdiğinde framework ana çerçeve bu iletiyi gönderir.|Kullanılmadı.|Bir işaretçi `CMFCRibbonBar` kategorisi değişti.|Kullanılmadı.|  
 |AFX_WM_ON_CLOSEPOPUPWINDOW|Framework sahibi bildirmek için bu iletiyi gönderir `CMFCDesktopAlertWnd` penceresi Kapatılmak üzere olduğunu.|Kullanılmadı.|Bir işaretçi `CMFCDesktopAlertWnd` nesnesi.|Kullanılmadı.|  
@@ -131,7 +131,7 @@ Bu iletiler MFC'de kullanılır.
 |AFX_WM_UPDATETOOLTIPS|Kendi araç ipucu denetimlerinin yeniden oluşturulması belirtmek için tüm araç ipucu sahiplerine gönderilir.|Bu iletiyi işlemesi gerektiğini denetim türü. Olası değerler listesi için bu konunun ilerleyen bölümlerinde bkz.|Kullanılmadı.|Kullanılmadı.|  
 |AFX_WM_WINDOW_HELP|`CMFCWindowsManagerDialog` kullanıcı tıkladığında bu iletiyi üst çerçeve gönderir **yardımcı** düğmesini veya tıklayarak Yardım moduna girer **yardımcı** resim yazısı düğmesini veya F1 tuşuna.|Kullanılmadı.|Örneği için bir işaretçi `CMFCWindowsManagerDialog`.|Kullanılmadı.|  
   
- Düşük sözcüğün için değerleri aşağıdaki tabloda gösterilmektedir `lParam` AFX_WM_HSCROLL yönteminin parametresi:  
+ Düşük sözcüğün için değerleri aşağıdaki tabloda gösterilmektedir *lParam* AFX_WM_HSCROLL yönteminin parametresi:  
   
 |||  
 |-|-|  
@@ -147,9 +147,9 @@ Bu iletiler MFC'de kullanılır.
 |SB_THUMBTRACK|Kullanıcı, kaydırma kutusunun sürükleyerek. Kullanıcının fare düğmesini serbest kadar AFX_WM_ON_HSCROLL ileti bu değerle sürekli olarak gönderilir. Yüksek düzey sözcük kaydırma kutusunun sürüklenen konumu belirtir.|  
   
 > [!NOTE]
->  Yüksek düzey sözcüğün `lParam` parametresi, düşük düzey sözcük SB_THUMBPOSITION veya SB_THUMBTRACK ise kaydırma kutusunun geçerli konumu belirtir; Aksi takdirde, bu word kullanılmaz.  
+>  Yüksek düzey sözcüğün *lParam* parametresi, düşük düzey sözcük SB_THUMBPOSITION veya SB_THUMBTRACK ise kaydırma kutusunun geçerli konumu belirtir; Aksi takdirde, bu word kullanılmaz.  
   
- Bayrak değerleri aşağıdaki tabloda listelenmektedir `lParam` AFX_WM_UPDATETOOLTIPS iletisinin parametre:  
+ Bayrak değerleri aşağıdaki tabloda listelenmektedir *lParam* AFX_WM_UPDATETOOLTIPS iletisinin parametre:  
   
 |||  
 |-|-|  

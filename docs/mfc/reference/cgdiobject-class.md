@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba88269cf37f41cf8a594745eb2e98a57ccf64ca
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eb8cc37396069dc7e0ea53506436b536100bdbb4
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369021"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956135"
 ---
 # <a name="cgdiobject-class"></a>CGdiObject sınıfı
 Bir temel sınıf çeşitli Windows grafik için bit eşlemler, bölgeler, Fırçalar, kalemler, paletleri ve yazı tipleri gibi cihaz arabirimi (GDI) nesneleri sağlar.  
@@ -114,7 +114,7 @@ BOOL Attach(HGDIOBJ hObject);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hObject`  
+ *hObject*  
  A `HANDLE` Windows GDI nesnesi için (örneğin, `HPEN` veya `HBRUSH`).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -128,7 +128,7 @@ CGdiObject();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hiçbir zaman oluşturduğunuz bir `CGdiObject` doğrudan. Bunun yerine, bir nesne türetilmiş sınıflarından biri gibi oluşturduğunuz `CPen` veya **Cbrush**.  
+ Hiçbir zaman oluşturduğunuz bir `CGdiObject` doğrudan. Bunun yerine, bir nesne türetilmiş sınıflarından biri gibi oluşturduğunuz `CPen` veya `Cbrush`.  
   
 ##  <a name="createstockobject"></a>  CGdiObject::CreateStockObject  
  Önceden tanımlanmış stok Windows GDI kalemler, Fırçalar veya yazı tipi için bir tanıtıcı alır ve GDI nesnesine ekler `CGdiObject` nesnesi.  
@@ -138,7 +138,7 @@ BOOL CreateStockObject(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  İstenen stok nesne türünü belirten bir sabit değer. Bkz. parametre *fnObject* için [GetStockObject](http://msdn.microsoft.com/library/windows/desktop/dd144925) uygun değerleri bir açıklaması için Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -193,7 +193,7 @@ static CGdiObject* PASCAL FromHandle(HGDIOBJ hObject);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hObject`  
+ *hObject*  
  A `HANDLE` Windows GDI nesnesine.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -214,10 +214,10 @@ int GetObject(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCount`  
- İçine kopyalanacak bayt sayısını belirtir `lpObject` arabellek.  
+ *nCount*  
+ İçine kopyalanacak bayt sayısını belirtir *lpObject* arabellek.  
   
- `lpObject`  
+ *lpObject*  
  Bilgi almak için bir kullanıcı tarafından sağlanan arabellek noktalarına.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -306,7 +306,7 @@ BOOL operator!=(const CGdiObject& obj) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `obj`  
+ *obj*  
  Var olan bir işaretçi `CGdiObject`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -320,7 +320,7 @@ BOOL operator==(const CGdiObject& obj) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `obj`  
+ *obj*  
  Var olan bir başvuru `CGdiObject`.  
   
 ### <a name="remarks"></a>Açıklamalar  

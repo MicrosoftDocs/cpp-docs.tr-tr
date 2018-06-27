@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1da3dc6df825988794481795ca7e47e72b5736bb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8450f4b4105f5302750ea0f369d0e6c1dc2925ab
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367509"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36950891"
 ---
 # <a name="cevent-class"></a>CEvent sınıfı
 Başka bir olayın oluştuğunu bildirmek bir iş parçacığı sağlayan bir eşitleme nesnesi olan bir olayı temsil eder.  
@@ -64,7 +64,7 @@ class CEvent : public CSyncObject
   
  `CEvent` nesnelerinin iki tür vardır: elle ve otomatik.  
   
- Otomatik `CEvent` nesne en az bir iş parçacığı yayımlandıktan sonra işareti olmayan bir (kullanılamaz) durumu otomatik olarak döndürür. Varsayılan olarak, bir `CEvent` nesne, geçirdiğiniz sürece otomatiktir `TRUE` için `bManualReset` oluşturma sırasında parametre.  
+ Otomatik `CEvent` nesne en az bir iş parçacığı yayımlandıktan sonra işareti olmayan bir (kullanılamaz) durumu otomatik olarak döndürür. Varsayılan olarak, bir `CEvent` nesne, geçirdiğiniz sürece otomatiktir `TRUE` için *bManualReset* oluşturma sırasında parametre.  
   
  El ile `CEvent` nesnesi tarafından belirlenen durumda kalır [SetEvent](#setevent) veya [ResetEvent](#resetevent) diğer işlevi çağrılıncaya kadar. El ile oluşturmak için `CEvent` nesne, geçirmek `TRUE` için `bManualReset` oluşturma sırasında parametre.  
   
@@ -103,16 +103,16 @@ CEvent(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bInitiallyOwn`  
- Varsa **TRUE**, iş parçacığı **CMultilock** veya `CSingleLock` nesne etkindir. Aksi takdirde kaynağa erişmek isteyen tüm iş parçacıklarının beklemeniz gerekir.  
+ *bInitiallyOwn*  
+ Varsa **TRUE**, iş parçacığı `CMultilock` veya `CSingleLock` nesne etkindir. Aksi takdirde kaynağa erişmek isteyen tüm iş parçacıklarının beklemeniz gerekir.  
   
  *bManualReset*  
  Varsa **doğru**, olay nesnesi el ile bir olaydır, aksi takdirde olay nesnesi otomatik bir olaydır belirtir.  
   
- `lpszName`  
+ *lpszName*  
  Adını `CEvent` nesnesi. Nesne işlem sınırlarında kullanılacaksa sağlanmalıdır. Oluşturucusu adı olan bir olaya eşleşirse, yeni derlemeler `CEvent` olay adının başvuruda bulunan nesne. Bir olay değil varolan bir eşitleme nesnesi adıyla eşleşen oluşturma başarısız olur. Varsa **NULL**, adı boş olacaktır.  
   
- `lpsaAttribute`  
+ *lpsaAttribute*  
  Olay nesnesi için güvenlik öznitelikler. Bu yapı tam bir açıklaması için bkz: [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK'sındaki.  
   
 ### <a name="remarks"></a>Açıklamalar  

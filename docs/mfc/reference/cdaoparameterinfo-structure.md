@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e743e7456c185acd100c898cfb946182d63ce63
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2ef473912489e9c757574545be2f8a53d7f3f9b9
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366245"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951608"
 ---
 # <a name="cdaoparameterinfo-structure"></a>CDaoParameterInfo Yapısı
 `CDaoParameterInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan bir parametre nesne hakkında bilgiler içerir.  
@@ -39,11 +39,11 @@ struct CDaoParameterInfo
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `m_strName`  
+ *m_strName*  
  Parametre nesnesi adlandıran. Daha fazla bilgi için DAO Yardımı'ndaki "Name özelliği" konusuna bakın.  
   
- `m_nType`  
- Bir parametre nesnesinin veri türünü belirten bir değer. Olası değerler listesi için bkz: `m_nType` üyesi [Cdaofieldınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısı. Daha fazla bilgi için DAO Yardımı'ndaki "Type özelliği" konusuna bakın.  
+ *m_nType*  
+ Bir parametre nesnesinin veri türünü belirten bir değer. Olası değerler listesi için bkz: *m_nType* üyesi [Cdaofieldınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısı. Daha fazla bilgi için DAO Yardımı'ndaki "Type özelliği" konusuna bakın.  
   
  *m_varValue*  
  Depolanan parametrenin değeri bir [COleVariant](../../mfc/reference/colevariant-class.md) nesnesi.  

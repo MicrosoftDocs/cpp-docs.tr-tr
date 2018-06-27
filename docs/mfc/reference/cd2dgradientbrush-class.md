@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c01dbb3b14c13182afc85412b5c3ffa3ac0e9cf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4e479c156967addc7add8f048d2ef1c3abab0dd8
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33354200"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956239"
 ---
 # <a name="cd2dgradientbrush-class"></a>CD2DGradientBrush sınıfı
 CD2DLinearGradientBrush ve CD2DRadialGradientBrush sınıfların temel sınıf.  
@@ -102,25 +102,25 @@ CD2DGradientBrush(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentTarget`  
+ *pParentTarget*  
  İşleme hedefi için bir işaretçi.  
   
- `gradientStops`  
+ *gradientStops*  
  Bir dizi D2D1_GRADIENT_STOP yapıları için bir işaretçi.  
   
- `gradientStopsCount`  
+ *gradientStopsCount*  
  Gradyan durakları sayısını gradientStops dizisinde belirtir 1'e eşit veya daha büyük değer.  
   
- `colorInterpolationGamma`  
+ *colorInterpolationGamma*  
  Hangi renkte gradyan durakları arasında ilişkilendirme gerçekleştirilir alanı.  
   
- `extendMode`  
+ *extendMode*  
  [0,1] normalleştirilmiş aralığın dışında geçişin davranışı.  
   
- `pBrushProperties`  
+ *pBrushProperties*  
  Opaklık ve fırça dönüşümü için bir işaretçi.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
   
 ##  <a name="destroy"></a>  CD2DGradientBrush::Destroy  

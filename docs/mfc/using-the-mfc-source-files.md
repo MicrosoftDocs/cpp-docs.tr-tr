@@ -21,19 +21,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73177d8b73d5f4be6d886b0bda84f1e1241488cc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 69079e6f74743a82aa9e9b9b1c13703e480c904c
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384341"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951549"
 ---
 # <a name="using-the-mfc-source-files"></a>MFC Kaynak Dosyalarını Kullanma
 Microsoft Foundation Class (MFC) kitaplığı tam kaynak kodu sağlar. Üstbilgi dosyaları (.h) \atlmfc\include dizinde bulunan; Uygulama dosyaları (.cpp) kaynağı \atlmfc\src\mfc dizinindedir.  
   
  Bu makaleler ailesi her sınıf çeşitli kısımlarını, bu açıklamalar anlamı ve her bir bölümünde bulmak beklemelisiniz açıklama eklemek için MFC kullanan kuralları açıklar. Visual C++ sihirbazları için oluşturduğunuz sınıfları için benzer kuralları kullanın ve, büyük olasılıkla bu kuralları için kendi kodunuzu yararlı.  
   
- Aşina olabilir **ortak**, `protected`, ve `private` C++ anahtar sözcükleri. MFC üstbilgi dosyalarına bakıldığında, her sınıf birkaç her birinde olabilir bulacaksınız. Örneğin, ortak üye değişkenleri ve işlevleri birden çok altında olması olabilir **ortak** anahtar sözcüğü. MFC üye değişkenleri ve bunların kullanım, izin verilen erişim türüne göre değil dayanarak işlevlerini ayırdığından budur. MFC kullanan `private` tutumlu; uygulama ayrıntılarını genellikle korunur ve birçok kez ortak öğeler bile kabul. Uygulama Ayrıntıları erişimi önerilmez, MFC kararı size bırakır, ancak.  
+ Aşina olabilir **ortak**, **korumalı**, ve **özel** C++ anahtar sözcükleri. MFC üstbilgi dosyalarına bakıldığında, her sınıf birkaç her birinde olabilir bulacaksınız. Örneğin, ortak üye değişkenleri ve işlevleri birden çok altında olması olabilir **ortak** anahtar sözcüğü. MFC üye değişkenleri ve bunların kullanım, izin verilen erişim türüne göre değil dayanarak işlevlerini ayırdığından budur. MFC kullanan **özel** tutumlu; uygulama ayrıntılarını genellikle korunur ve birçok kez ortak öğeler bile kabul. Uygulama Ayrıntıları erişimi önerilmez, MFC kararı size bırakır, ancak.  
   
  MFC kaynak dosyalarını ve MFC Uygulama Sihirbazı'nı oluşturur dosyaları içinde (genellikle bu sırayla) Bu sınıf bildirimleri içinde gibi yorumlar bulacaksınız:  
   

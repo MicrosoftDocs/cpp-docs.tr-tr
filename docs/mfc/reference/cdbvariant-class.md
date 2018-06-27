@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27970a7d3854dca398943bfe13c67f6a4e1f92f5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9e88eb810c252e4963a5f189d7f90e5aca531cf7
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369089"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951825"
 ---
 # <a name="cdbvariant-class"></a>CDBVariant sınıfı
 MFC ODBC sınıfları için bir değişken veri türü temsil eder.  
@@ -85,7 +85,7 @@ class CDBVariant
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CDBVariant::m_boolVal](#m_boolval)|Türünde bir değer içeren **BOOL**.|  
-|[CDBVariant::m_chVal](#m_chval)|Türünde bir değer içeren `unsigned char`.|  
+|[CDBVariant::m_chVal](#m_chval)|Türünde bir değer içeren **imzasız char**.|  
 |[CDBVariant::m_dblVal](#m_dblval)|Türünde bir değer içeren **çift**.|  
 |[CDBVariant::m_fltVal](#m_fltval)|Türünde bir değer içeren **float**.|  
 |[CDBVariant::m_iVal](#m_ival)|Türünde bir değer içeren **kısa**.|  
@@ -99,7 +99,7 @@ class CDBVariant
 ## <a name="remarks"></a>Açıklamalar  
  `CDBVariant` bir taban sınıfı yok.  
   
- `CDBVariant` benzer [COleVariant](../../mfc/reference/colevariant-class.md); ancak, `CDBVariant` OLE kullanmaz. `CDBVariant` Bir değer değerinin veri türü hakkında endişelenmeden depolamanıza olanak sağlar. `CDBVariant` veri türü bir birleşim içinde depolanan geçerli değeri izler.  
+ `CDBVariant` benzer [COleVariant](../../mfc/reference/colevariant-class.md); ancak, `CDBVariant` OLE kullanmaz. `CDBVariant` bir değer değerinin veri türü hakkında endişelenmeden depolamanıza olanak sağlar. `CDBVariant` veri türü bir birleşim içinde depolanan geçerli değeri izler.  
   
  Sınıf [CRecordset](../../mfc/reference/crecordset-class.md) yararlanan `CDBVariant` üç üye işlevleri nesneleri: `GetFieldValue`, `GetBookmark`, ve `SetBookmark`. Örneğin, `GetFieldValue` , bir sütundaki verileri dinamik olarak getirilemedi sağlar. Sütunun veri türünü çalışma zamanında bilinmiyor çünkü `GetFieldValue` kullanan bir `CDBVariant` sütunun verileri depolamak için nesne.  
   
@@ -127,9 +127,9 @@ void Clear();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa değerini [m_dwType](#m_dwtype) veri üyesi olduğu **DBVT_DATE**, **DBVT_STRING**, veya **DBVT_BINARY**, **temizleyin**birleşim işaretçi üyesiyle ilişkili belleği serbest bırakır. **Clear** ayarlar `m_dwType` için **DBVT_NULL**.  
+ Varsa değerini [m_dwType](#m_dwtype) veri üyesi olduğu **DBVT_DATE**, **DBVT_STRING**, veya **DBVT_BINARY**, `Clear` belleği serbest bırakır birleşim işaretçi üyeyle ilişkilendirilmiş. `Clear` Ayarlar `m_dwType` için **DBVT_NULL**.  
   
- `CDBVariant` Yıkıcı çağrıları **Temizle**.  
+ `CDBVariant` Yıkıcı çağrıları `Clear`.  
   
 ##  <a name="m_boolval"></a>  CDBVariant::m_boolVal  
  Türünde bir değer depolar **BOOL**.  

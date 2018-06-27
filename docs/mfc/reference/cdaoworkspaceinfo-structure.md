@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd6979124916e8a9cc1dc723008491bababc0322
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 705c855a817f0c6ca342e51258c7d6c1e61fa392
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366297"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951084"
 ---
 # <a name="cdaoworkspaceinfo-structure"></a>CDaoWorkspaceInfo Yapısı
 `CDaoWorkspaceInfo` Yapısı veri erişim nesnesi (DAO) veritabanı erişimi için tanımlanmış bir çalışma alanı hakkında bilgiler içerir.  
@@ -39,7 +39,7 @@ struct CDaoWorkspaceInfo
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `m_strName`  
+ *m_strName*  
  Çalışma alanı nesnesi adlandıran. Bu özelliğin değerini doğrudan almak için querydef nesnesinin çağrısı [GetName](../../mfc/reference/cdaoquerydef-class.md#getname) üye işlevi. Daha fazla bilgi için DAO Yardımı'ndaki "Name özelliği" konusuna bakın.  
   
  *m_strUserName*  

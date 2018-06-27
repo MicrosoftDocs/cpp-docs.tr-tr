@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f94d6fc19879da1dd1dcaa94ab7a177fb86d5186
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: df79b186aa515bba8d54083ad8a379aad36d2576
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369131"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954539"
 ---
 # <a name="cfileexception-class"></a>CFileException sınıfı
 Bir dosya ile ilgili özel durumu temsil eder.  
@@ -102,20 +102,20 @@ CFileException(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cause`  
+ *Bunun nedeni*  
  Özel durumun nedeni gösteren bir Enum Türü değişkeni. Bkz: [CFileException::m_cause](#m_cause) olası değerler listesi.  
   
- `lOsError`  
- Bir işletim sistemine özgü nedenden dolayı varsa özel durum. `lOsError` Parametresini daha fazla bilgi sağlar `cause` yapar.  
+ *lOsError*  
+ Bir işletim sistemine özgü nedenden dolayı varsa özel durum. *LOsError* parametresini daha fazla bilgi sağlar *neden* yapar.  
   
- `lpszArchiveName`  
+ *lpszArchiveName*  
  İşaret adını içeren bir dize `CFile` özel duruma neden nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu oluşturucu doğrudan kullanmayın, ancak bunun yerine genel bir işlevi çağırmak [AfxThrowFileException](exception-processing.md#afxthrowfileexception).  
   
 > [!NOTE]
->  Değişkeni `lOsError` yalnızca geçerli `CFile` ve `CStdioFile` nesneleri. `CMemFile` Sınıfı, bu hata kodu işlemez.  
+>  Değişkeni *lOsError* yalnızca geçerli `CFile` ve `CStdioFile` nesneleri. `CMemFile` Sınıfı, bu hata kodu işlemez.  
   
 ##  <a name="errnotoexception"></a>  CFileException::ErrnoToException  
  Belirtilen çalışma zamanı kitaplığı hata değerine dönüştürür bir `CFileException` hata değerini numaralandırılır.  
@@ -125,7 +125,7 @@ static int PASCAL ErrnoToException(int nErrno);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nErrno`  
+ *nErrno*  
  Çalışma zamanı içerme dosyası ERRNO tanımlandığı şekilde bir tamsayı hata kodu. H.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -148,13 +148,13 @@ virtual BOOL GetErrorMessage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [içinde out] `lpszError`  
+ [içinde out] *lpszError*  
  Bir hata iletisi alır bir arabellek işaretçi.  
   
- [in] `nMaxError`  
+ [in] *nMaxError*  
  Belirtilen arabellek tutabilir karakter sayısı. Sondaki boş karakter içerir.  
   
- [içinde out] `pnHelpContext`  
+ [içinde out] *pnHelpContext*  
  İşaretçi işaretsiz tamsayıya Yardım içerik kimliği alır. Varsa `NULL`, kimliği yok döndürülür.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -176,7 +176,7 @@ int m_cause;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu veri üyesi tür genel bir değişkendir `int`. Numaralandırmalar ve anlamları şu şekildedir:  
+ Bu veri üyesi tür genel bir değişkendir **int**. Numaralandırmalar ve anlamları şu şekildedir:  
   
 - `CFileException::none` 0: herhangi bir hata oluştu.  
   
@@ -235,14 +235,14 @@ CString m_strFileName;
 ```  
   
 ##  <a name="oserrortoexception"></a>  CFileException::OsErrorToException  
- Karşılık gelen bir numaralandırıcı döndürür bir verilen `lOsError` değer. Hata kodu bilinmiyor sonra işlevi döndürür **CFileException::generic**.  
+ Karşılık gelen bir numaralandırıcı döndürür bir verilen *lOsError* değeri. Hata kodu bilinmiyor sonra işlevi döndürür **CFileException::generic**.  
   
 ```  
 static int PASCAL OsErrorToException(LONG lOsError);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lOsError`  
+ *lOsError*  
  Bir işletim sistemine özgü hata kodu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -252,34 +252,34 @@ static int PASCAL OsErrorToException(LONG lOsError);
  [!code-cpp[NVC_MFCFiles#27](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_4.cpp)]  
   
 ##  <a name="throwerrno"></a>  CFileException::ThrowErrno  
- Oluşturan bir `CFileException` nesne karşılık gelen bir verilen `nErrno` değer sonra özel durum oluşturur.  
+ Oluşturan bir `CFileException` nesne karşılık gelen bir verilen *nErrno* değeri, ardından özel durum oluşturur.  
   
 ```  
 static void PASCAL ThrowErrno(int nErrno, LPCTSTR lpszFileName = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nErrno`  
+ *nErrno*  
  Çalışma zamanı içerme dosyası ERRNO tanımlandığı şekilde bir tamsayı hata kodu. H.  
   
- `lpszFileName`  
+ *lpszFileName*  
  Dosyanın adını içeren dize için bir işaretçi varsa özel durum neden.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#28](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_5.cpp)]  
   
 ##  <a name="throwoserror"></a>  CFileException::ThrowOsError  
- Atan bir `CFileException` karşılık gelen bir verilen `lOsError` değer. Hata kodu bilinmiyor sonra işlevi olarak kodlanmış bir özel durum oluşturur **CFileException::generic**.  
+ Atan bir `CFileException` karşılık gelen bir verilen *lOsError* değeri. Hata kodu bilinmiyor sonra işlevi olarak kodlanmış bir özel durum oluşturur **CFileException::generic**.  
   
 ```  
 static void PASCAL ThrowOsError(LONG lOsError, LPCTSTR lpszFileName = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lOsError`  
+ *lOsError*  
  Bir işletim sistemine özgü hata kodu.  
   
- `lpszFileName`  
+ *lpszFileName*  
  Dosyanın adını içeren dize için bir işaretçi varsa özel durum neden.  
   
 ### <a name="example"></a>Örnek  

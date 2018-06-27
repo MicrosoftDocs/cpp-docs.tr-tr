@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 324e6411673a509bdf75954634ff9c6dffc5ce1f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 718283893c9e8ec9798dea9a4b9fb307d1099e68
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33354432"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952063"
 ---
 # <a name="cd2dbrush-class"></a>CD2DBrush sınıfı
 ID2D1Brush için sarmalayıcı.  
@@ -117,7 +117,7 @@ void Attach(ID2D1Brush* pResource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pResource`  
+ *pResource*  
  Mevcut kaynak arabirimi. NULL olamaz  
   
 ##  <a name="cd2dbrush"></a>  CD2DBrush::CD2DBrush  
@@ -131,13 +131,13 @@ CD2DBrush(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentTarget`  
+ *pParentTarget*  
  İşleme hedefi için bir işaretçi.  
   
- `pBrushProperties`  
+ *pBrushProperties*  
  Opaklık ve fırça dönüşümü için bir işaretçi.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
   
 ##  <a name="destroy"></a>  CD2DBrush::Destroy  
@@ -185,7 +185,7 @@ void GetTransform(D2D1_MATRIX_3X2_F* transform) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `transform`  
+ *transform*  
  Bu geri döndüğünde, işleme hedef geçerli dönüştürme içerir. Bu parametre, başlatmadan iletilir  
   
 ##  <a name="isvalid"></a>  CD2DBrush::IsValid  
@@ -230,7 +230,7 @@ void SetOpacity(FLOAT opacity);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `opacity`  
+ *Opaklık*  
  Sıfır fırça geçirgenliğini gösteren 1 arasında bir değer. Bu değer tüm pikselleri fırça tarafından doldurulmuş alfa değeri doğrusal olarak ölçeklendirir sabit bir çarpanı olur. Birlikte çarpıldığı önce opaklık değerleri aralığı 0'dan 1 clamped  
   
 ##  <a name="settransform"></a>  CD2DBrush::SetTransform  
@@ -241,7 +241,7 @@ void SetTransform(const D2D1_MATRIX_3X2_F* transform);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `transform`  
+ *transform*  
  İşleme hedefe uygulanacak dönüşümü  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

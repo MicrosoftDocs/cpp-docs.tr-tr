@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19f8c0aa6aaa4980466918eac2649cc246b2e6ce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 53f53bdb19c6f40d73179b600051ecfaf6b69c94
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33351195"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36950641"
 ---
 # <a name="ccommondialog-class"></a>CCommonDialog sınıfı
 Windows ortak iletişim kutuları işlevselliğini kapsülleyen sınıflar için temel sınıf.  
@@ -83,7 +83,7 @@ explicit CCommonDialog(CWnd* pParentWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentWnd`  
+ *pParentWnd*  
  İşaret üst veya sahibi pencere nesnesi için (tür [CWnd](../../mfc/reference/cwnd-class.md)) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim nesnenin üst pencere ana uygulama penceresine ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  

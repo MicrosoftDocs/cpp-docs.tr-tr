@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82b729caaa650fde72741497d3f4ab3c131f46ab
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 617157c3adce8521eb54156988cb098c0e709fd2
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383338"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953291"
 ---
 # <a name="using-the-carchive-ltlt-and-gtgt-operators"></a>CArchive kullanarak &lt; &lt; ve &gt; &gt; işleçleri
 `CArchive` sağlar <\< ve >> yazma ve okuma basit veri türleri için işleçleri yanı `CObject`s için ve bir dosya.  
@@ -40,13 +40,13 @@ ms.locfileid: "33383338"
   
      [!code-cpp[NVC_MFCSerialization#8](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_2.cpp)]  
   
- Genellikle, depolamak ve yüklemek için ve bir arşiv aracılığıyla bir dosyadan veri `Serialize` işlevlerini `CObject`-türetilmiş ile bildirilen gerekir sınıfları **DECLARE_SERIALIZE** makrosu. Bir başvuru bir `CArchive` nesne iletilir, `Serialize` işlevi. Çağırmanız `IsLoading` işlevinin `CArchive` belirlemek için nesne olup olmadığını `Serialize` işlevi çağrılıp çağrılmadığını dosyasından veri yükleme veya dosya verileri depolamak için.  
+ Genellikle, depolamak ve yüklemek için ve bir arşiv aracılığıyla bir dosyadan veri `Serialize` işlevlerini `CObject`-türetilmiş ile DECLARE_SERIALIZE makrosu bildirilen gerekir sınıfları. Bir başvuru bir `CArchive` nesne iletilir, `Serialize` işlevi. Çağırmanız `IsLoading` işlevinin `CArchive` belirlemek için nesne olup olmadığını `Serialize` işlevi çağrılıp çağrılmadığını dosyasından veri yükleme veya dosya verileri depolamak için.  
   
  `Serialize` Bir serileştirilebilir işlevinin `CObject`-türetilmiş sınıf genellikle aşağıdaki biçime sahiptir:  
   
  [!code-cpp[NVC_MFCSerialization#9](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_3.cpp)]  
   
- Yukarıdaki kod şablon tam olarak aynı AppWizard oluşturur `Serialize` belgenin işlevi (öğesinden türetilmiş bir sınıf **CDocument)**. Bu kod şablon depolanmasını kodu ve yükleme kodu her zaman aşağıdaki örnekteki paralel olması gerektiğinden, gözden geçirmek, daha kolay olan kod yazmanıza yardımcı olur:  
+ Yukarıdaki kod şablon tam olarak aynı AppWizard oluşturur `Serialize` belgenin işlevi (öğesinden türetilmiş bir sınıf `CDocument`). Bu kod şablon depolanmasını kodu ve yükleme kodu her zaman aşağıdaki örnekteki paralel olması gerektiğinden, gözden geçirmek, daha kolay olan kod yazmanıza yardımcı olur:  
   
  [!code-cpp[NVC_MFCSerialization#10](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_4.cpp)]  
   
@@ -54,10 +54,10 @@ ms.locfileid: "33383338"
   
 ||||  
 |-|-|-|  
-|`CObject*`|**Boyut ve CSize**|**float**|  
+|`CObject*`|**BOYUTU** ve `CSize`|**float**|  
 |**WORD**|`CString`|**NOKTASI** ve `CPoint`|  
-|`DWORD`|**BAYT**|`RECT` Ve `CRect`|  
-|**Çift**|**UZUN**|`CTime` Ve `CTimeSpan`|  
+|`DWORD`|**BAYT**|`RECT` ve `CRect`|  
+|**çift**|**UZUN**|`CTime` ve `CTimeSpan`|  
 |`Int`|**COleCurrency**|`COleVariant`|  
 |`COleDateTime`|`COleDateTimeSpan`||  
   

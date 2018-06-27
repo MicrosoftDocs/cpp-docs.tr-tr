@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eed5b60954d05094db610a233968c9c7dd83c704
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1848e0fe6d3e09ea4707279e83293ae2dc0feb64
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33350959"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36950683"
 ---
 # <a name="cd2dresource-class"></a>CD2DResource sınıfı
 Bir soyut sınıf oluşturmak ve Fırçalar, Katmanlar ve metinler gibi D2D kaynakları yönetmek için bir arabirim sağlar.  
@@ -104,10 +104,10 @@ CD2DResource(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentTarget`  
+ *pParentTarget*  
  İşleme hedefi için bir işaretçi.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
   
 ##  <a name="create"></a>  CD2DResource::Create  
@@ -118,7 +118,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pRenderTarget`  
+ *pRenderTarget*  
  İşleme hedefi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -173,7 +173,7 @@ virtual HRESULT ReCreate(CRenderTarget* pRenderTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pRenderTarget`  
+ *pRenderTarget*  
  İşleme hedefi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c52d2912edc1632dc2fbe4fe330def6d357f16d2
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: 1512ae9a26b5b0cf25c4b4ebeff2d05bd0993f7f
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34255775"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955251"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog sınıfı
 Dosya Aç veya dosya kaydetme işlemi için kullanılan ortak bir iletişim kutusu yalıtır.  
@@ -248,7 +248,7 @@ class CFileDialog : public CCommonDialog
   
  Kullanabileceğiniz `CFileDialog` sağlanan Oluşturucusu ile olduğu gibi veya kendi iletişim kutusu sınıfından türetilen `CFileDialog` ve gereksinimlerinize uygun olarak bir oluşturucu yazma. Öğesinden türetilen her iki durumda da, bu iletişim kutularından standart MFC iletişim kutuları gibi davranacak [CCommonDialog sınıfı](../../mfc/reference/ccommondialog-class.md). `CFileDialog` üzerinde COMMDLG kullanır. Windows'da bulunan DLL dosyası.  
   
- Görünümünü ve işlevini `CFileDialog` Windows Vista veya sonraki Windows önceki sürümlerinden farklı. Varsayılan `CFileDialog` derlenmiş ve Windows Vista altında Çalıştır ya da daha yeni bir program varsa yeni Windows Vista veya sonraki stili kod değişiklikleri olmadan otomatik olarak kullanır. Kullanım `bVistaStyle` el ile bu otomatik güncelleştirme geçersiz kılmak için oluşturucu parametresi. Otomatik güncelleştirme özelleştirilmiş iletişim kutuları istisnadır. Bunlar yeni stil dönüştürülmez. Oluşturucusu hakkında daha fazla bilgi için bkz: [CFileDialog::CFileDialog](#cfiledialog).  
+ Görünümünü ve işlevini `CFileDialog` Windows Vista veya sonraki Windows önceki sürümlerinden farklı. Varsayılan `CFileDialog` derlenmiş ve Windows Vista altında Çalıştır ya da daha yeni bir program varsa yeni Windows Vista veya sonraki stili kod değişiklikleri olmadan otomatik olarak kullanır. Kullanım *bVistaStyle* el ile bu otomatik güncelleştirme geçersiz kılmak için oluşturucu parametresi. Otomatik güncelleştirme özelleştirilmiş iletişim kutuları istisnadır. Bunlar yeni stil dönüştürülmez. Oluşturucusu hakkında daha fazla bilgi için bkz: [CFileDialog::CFileDialog](#cfiledialog).  
   
 > [!NOTE]
 >  Kullandığınızda Windows Vista veya sonraki Windows sürümlerinde denetim kimliği sistem farklı bir `CFileDialog`. Tüm başvurularını güncelleştirme `CFileDialog` Windows'un önceki bir sürümünü projenizden bağlantı noktası önce kodu denetimlerinde.  
@@ -319,13 +319,13 @@ HRESULT AddCheckButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Eklemek için onay düğmesine kimliği.  
   
- `strLabel`  
+ *strLabel*  
  Onay düğmesine adı.  
   
- `bChecked`  
+ *bChecked*  
  Onay düğmesine geçerli durumunu gösteren bir Boole değeri. `TRUE` işaretlenmişse; `FALSE` Aksi takdirde  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -338,7 +338,7 @@ HRESULT AddComboBox(DWORD dwIDCtl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Eklemek için birleşik giriş kutusu kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -354,13 +354,13 @@ HRESULT AddControlItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Öğesine eklemek için kapsayıcı denetiminin kimliği.  
   
- `dwIDItem`  
+ *dwIDItem*  
  Öğenin kimliği.  
   
- `strLabel`  
+ *strLabel*  
  Öğenin metni.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -375,10 +375,10 @@ HRESULT AddEditBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Eklemek için düzenleme kutusuna kimliği.  
   
- `strText`  
+ *strText*  
  Düzenleme kutusu adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -393,10 +393,10 @@ HRESULT AddMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Eklemek için menü kimliği.  
   
- `strLabel`  
+ *strLabel*  
  Menü adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -416,13 +416,13 @@ void AddPlace(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszFolder`  
+ *lpszFolder*  
  Bir kullanıcı için kullanılabilir duruma getirilmek üzere klasör yolu. Bu, yalnızca bir klasör olabilir.  
   
- `fdap`  
+ *fdap*  
  Klasör listenin içinde nereye yerleştirileceğini belirler.  
   
- `psi`  
+ *PSI*  
  Kullanıcı için kullanılabilir duruma getirilmek üzere klasörünü temsil eden bir IShellItem gösteren bir işaretçi. Bu, yalnızca bir klasör olabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -437,10 +437,10 @@ HRESULT AddPushButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Ekleme düğmesi kimliği.  
   
- `strLabel`  
+ *strLabel*  
  Düğme adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -453,7 +453,7 @@ HRESULT AddRadioButtonList(DWORD dwIDCtl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Ekleme seçeneği düğmesi grubunun kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -466,7 +466,7 @@ HRESULT AddSeparator(DWORD dwIDCtl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Ayırıcı kimliği ekleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -481,10 +481,10 @@ HRESULT AddText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Eklenecek metin kimliği.  
   
- `strText`  
+ *strText*  
  Metin adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -522,36 +522,36 @@ explicit CFileDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bOpenFileDialog`  
+ [in] *bOpenFileDialog*  
  İletişim kutusu oluşturmak için ne tür belirten parametredir. Ayarlamak `TRUE` oluşturmak için bir **Dosya Aç** iletişim kutusu. Ayarlamak `FALSE` oluşturmak için bir **dosyasını Kaydet** iletişim kutusu.  
   
- [in] `lpszDefExt`  
- Varsayılan dosya adı uzantısı. Kullanıcı dosya adı kutusunda bilinen bir uzantı (bir kullanıcının bilgisayarda bir ilişkiye) içermiyorsa, belirtilen uzantısı tarafından `lpszDefExt` dosya adına otomatik olarak eklenir. Bu parametre ise `NULL`, hiçbir uzantı eklenir.  
+ [in] *lpszDefExt*  
+ Varsayılan dosya adı uzantısı. Kullanıcı dosya adı kutusunda bilinen bir uzantı (bir kullanıcının bilgisayarda bir ilişkiye) içermiyorsa, belirtilen uzantısı tarafından *lpszDefExt* dosya adına otomatik olarak eklenir. Bu parametre ise `NULL`, hiçbir uzantı eklenir.  
   
- [in] `lpszFileName`  
+ [in] *lpszFileName*  
  Dosya adı kutusunda görüntülenen ilk dosya adı. Varsa `NULL`, ilk dosya adı görüntülenir.  
   
- [in] `dwFlags`  
+ [in] *dwFlags*  
  İletişim kutusunu özelleştirmek için kullanabileceğiniz bir veya daha fazla bayrak birleşimi. Bu bayrakların açıklaması için bkz: [AÇIKDOSYAADI](http://msdn.microsoft.com/library/windows/desktop/ms646839) Windows SDK'sındaki yapısı. Değiştirirseniz `m_ofn.Flags` yapı üyesi, varsayılan davranışı korumanız için değişikliklerinizi Bitsel veya işlecini kullanın.  
   
- [in] `lpszFilter`  
+ [in] *lpszFilter*  
  Bir dizi filtrelerini belirtme dize çiftleri dosyaya uygulayabilirsiniz. Dosya filtreleri belirtirseniz, filtre ölçütüyle eşleşen dosyaları dosya listesinde görünür. Dosya filtreleri ile çalışma hakkında daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Dosya iletişim kutusunun üst veya sahibi penceresi için bir işaretçi.  
   
- [in] `dwSize`  
+ [in] *dwSize*  
  Boyutunu `OPENFILENAME` yapısı. Bu değer, işletim sistemi sürümüne göre değişir. MFC iletişim kutusu oluşturmak için uygun türü belirlemek için bu parametreyi kullanılır. Varsayılan boyutu program çalıştığı işletim sistemi sürümüne göre kullanmak için doğru iletişim kutusunun boyutu belirler MFC kodu 0 anlamına gelir.  
   
- [in] `bVistaStyle`  
+ [in] *bVistaStyle*  
  **Not** Bu parametre Visual Studio 2008'de kullanılabilir ve sonraki sürümleri ve işlem yalnızca Windows Vista veya sonraki sürümlerde çalıştırıyorsanız, kullanılacak yeni stil iletişim neden.  
   
  Dosya iletişim kutusu stilini belirtir parametre. Ayarlamak `TRUE` yeni Vista stil dosya iletişim kullanmak için. Aksi takdirde, iletişim kutularının eski stili kullanılır. Vista altında çalışan daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ya da bir **Dosya Aç** veya **dosyasını Kaydet** iletişim kutusu yapılandırılmıştır, bağlı olarak değeri `bOpenFileDialog`.  
+ Ya da bir **Dosya Aç** veya **dosyasını Kaydet** iletişim kutusu yapılandırılmıştır, bağlı olarak değeri *bOpenFileDialog*.  
   
- Varsayılan uzantısıyla belirtme `lpszDefExt` , nadiren hangi uzantılı kullanıcının bilgisayarda dosya ilişkilendirmeleri tahmin edilebilir olduğundan beklediğiniz davranışı vermeyebilir. Bir varsayılan uzantısı ekleyerek üzerinde daha fazla denetim ihtiyacınız varsa, kendi sınıfından türetilemeyeceğini `CFileDialog`ve geçersiz kılma `CFileDialog::OnFileNameOK` kendi uzantısı işleme gerçekleştirmek için yöntem.  
+ Varsayılan uzantısıyla belirtme *lpszDefExt* , nadiren hangi uzantılı kullanıcının bilgisayarda dosya ilişkilendirmeleri tahmin edilebilir olduğundan beklediğiniz davranışı vermeyebilir. Bir varsayılan uzantısı ekleyerek üzerinde daha fazla denetim ihtiyacınız varsa, kendi sınıfından türetilemeyeceğini `CFileDialog`ve geçersiz kılma `CFileDialog::OnFileNameOK` kendi uzantısı işleme gerçekleştirmek için yöntem.  
   
  Birden çok dosya seçmesini sağlamak için ayarlanmış `OFN_ALLOWMULTISELECT` çağırmadan önce bayrak [DoModal](#domodal). Döndürülen birden çok dosya adları listesini depolamak için kendi dosya adı arabelleği sağlamanız gerekir. Değiştirerek bunu `m_ofn.lpstrFile` , oluşturduktan sonra bir işaretçi bir arabellek ile, ayrılan [CFileDialog](../../mfc/reference/cfiledialog-class.md), ama çağırmadan önce `DoModal`. Ayrıca, ayarlamalısınız `m_ofn.nMaxFile` gösterdiği arabellek karakter sayısı ile `m_ofn.lpstrFile`. Seçilecek dosya maksimum sayısı ayarlarsanız `n`, gerekli arabellek boyutu `n`*(_MAX_PATH + 1) + 1. Örneğin:  
   
@@ -559,7 +559,7 @@ explicit CFileDialog(
   
  Gezgin Stili iletişim kutusu fare veya klavyeyi kullanarak yeniden boyutlandırmak kullanıcının etkinleştirmek için ayarlamak `OFN_ENABLESIZING` bayrağı. Bu bayrak olarak ayarlandığında yalnızca kanca işlemi veya özel bir şablon sağlarsanız gereklidir. Bayrağı yalnızca bir Gezgin Stili iletişim kutusuyla çalışır; eski Tarz iletişim kutuları boyutlandırılamaz.  
   
- `lpszFilter` Parametresi bir dosya, dosya listesinde görüntülenecek olmalıdır dosya adı türünü belirlemek için kullanılır. Dize çiftindeki ilk dizesi filtre açıklar; İkinci dize kullanılacak dosya adı uzantısını belirtir. Birden çok uzantı ayırıcı olarak noktalı virgül (';' karakter) kullanılarak belirtilebilir. Dize iki ile biten '&#124;' arkasından karakter, bir `NULL` karakter. Aynı zamanda bir [CString](../../atl-mfc-shared/using-cstring.md) Bu parametre için nesne.  
+ *LpszFilter* parametresi bir dosya, dosya listesinde görüntülenecek olmalıdır dosya adı türünü belirlemek için kullanılır. Dize çiftindeki ilk dizesi filtre açıklar; İkinci dize kullanılacak dosya adı uzantısını belirtir. Birden çok uzantı ayırıcı olarak noktalı virgül (';' karakter) kullanılarak belirtilebilir. Dize iki ile biten '&#124;' arkasından karakter, bir `NULL` karakter. Aynı zamanda bir [CString](../../atl-mfc-shared/using-cstring.md) Bu parametre için nesne.  
   
  Örneğin, [!INCLUDE[ofprexcel](../../mfc/reference/includes/ofprexcel_md.md)] uzantıları .xlc (grafik) veya .xls (çalışma) dosyalarını açmak kullanıcıların diğerleriyle birlikte sağlar. Excel için filtre olarak yazılabilir:  
   
@@ -567,9 +567,9 @@ explicit CFileDialog(
   
  Ancak, doğrudan bu dize kullanmayı planlıyorsanız, güncelleştirme `OPENFILENAME` yapısı, dizelerinizi null karakteriyle '\0' dikey çubuk yerine sınırlandırmak ('&#124;').  
   
- `bVistaStyle` Yalnızca Windows Vista veya sonraki sürümlerinde çalışırken parametre uygulanabilir. Windows'un önceki sürümlerinde, bu parametre yoksayılır. Varsa `bVistaStyle` ayarlanır `TRUE`, Visual Studio 2008 veya sonraki sürümlerde, yeni Vista stili program derlediğinizde **dosya iletişim kutusu** kullanılır. Aksi takdirde önceki MFC stili **dosya iletişim kutusu** kullanılır.  
+ *BVistaStyle* yalnızca Windows Vista veya sonraki sürümlerinde çalışırken parametre uygulanabilir. Windows'un önceki sürümlerinde, bu parametre yoksayılır. Varsa *bVistaStyle* ayarlanır `TRUE`, Visual Studio 2008 veya sonraki sürümlerde, yeni Vista stili program derlediğinizde **dosya iletişim kutusu** kullanılır. Aksi takdirde önceki MFC stili **dosya iletişim kutusu** kullanılır.  
   
- İletişim kutusu şablonları göre iletişim kutuları desteklenmez `bVistaStyle`  
+ Temel iletişim kutuları hakkında iletişim kutusu şablonları desteklenmez *bVistaStyle*  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CFileDialog::DoModal](#domodal).  
@@ -606,7 +606,7 @@ HRESULT EnableOpenDropDown(DWORD dwIDCtl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Aşağı açılan liste kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -633,10 +633,10 @@ HRESULT GetCheckButtonState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Onay kutusu kimliği.  
   
- `bChecked`  
+ *bChecked*  
  Onay kutusu durumu. `TRUE` Checked gösterir; `FALSE` denetlenmeyen gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -652,13 +652,13 @@ HRESULT GetControlItemState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Kapsayıcı denetiminin kimliği.  
   
- `dwIDItem`  
+ *dwIDItem*  
  Öğenin kimliği.  
   
- `dwState`  
+ *dwState*  
  Daha fazla değerlerden biri denetimi geçerli durumunu gösterir. CDCONTROLSTATE numaralandırma içinden alan bir değişkeni bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -673,10 +673,10 @@ HRESULT GetControlState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Denetimin kimliği.  
   
- `dwState`  
+ *dwState*  
  Bir veya daha fazla değer denetimi geçerli durumunu gösterir. CDCONTROLSTATE numaralandırma içinden alan değişken başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -691,10 +691,10 @@ HRESULT GetEditBoxText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Düzenleme kutusuna kimliği.  
   
- `strText`  
+ *strText*  
  Metin değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -773,7 +773,7 @@ IFileDialogCustomize* GetIFileDialogCustomize();
  İç COM nesne için işaretçisine `CFileDialog`. Bu işaretçinin uygun şekilde serbest bırakmak için sizin sorumluluğunuzdadır değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev yalnızca Windows Vista veya daha sonra sahip bir nesne kullanmak `bVistaStyle` kümesine `true`. Bu işlevi kullanırsanız, `bVistaStyle` olan `false`, döndürür `NULL` yayın modunda ve throw hata ayıklama modunda onayı ifade.  
+ Bu işlev yalnızca Windows Vista veya daha sonra sahip bir nesne kullanmak *bVistaStyle* kümesine `true`. Bu işlevi kullanırsanız, *bVistaStyle* olan `false`, döndürür `NULL` yayın modunda ve throw hata ayıklama modunda onayı ifade.  
   
  Hakkında daha fazla bilgi için `IFileDialogCustomize` arabirim için bkz: [IFileDialogCustomize](http://msdn.microsoft.com/library/windows/desktop/bb775912).  
   
@@ -793,7 +793,7 @@ IFileOpenDialog* GetIFileOpenDialog();
  İç COM nesne için işaretçisine `CFileDialog`. Bu işaretçinin uygun şekilde serbest bırakmak için sizin sorumluluğunuzdadır değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev yalnızca Windows Vista veya daha sonra sahip bir nesne kullanmak `bVistaStyle` kümesine `true`. Bu işlev, döndürür `NULL` varsa `CFileDialog` değil bir **açık** iletişim kutusu veya `bVistaStyle` ayarlanır `false`. Bu son durumda işlevi yalnızca döndürür `NULL` yayın modunda - hata ayıklama modunda, bir onaylama işlemi özel durum oluşturacak.  
+ Bu işlev yalnızca Windows Vista veya daha sonra sahip bir nesne kullanmak *bVistaStyle* kümesine `true`. Bu işlev, döndürür `NULL` varsa `CFileDialog` değil bir **açık** iletişim kutusu veya *bVistaStyle* ayarlanır `false`. Bu son durumda işlevi yalnızca döndürür `NULL` yayın modunda - hata ayıklama modunda, bir onaylama işlemi özel durum oluşturacak.  
   
  Hakkında daha fazla bilgi için `IFileOpenDialog` arabirim için bkz: [IFileOpenDialog](http://msdn.microsoft.com/library/windows/desktop/bb775834).  
   
@@ -813,7 +813,7 @@ IFileSaveDialog* GetIFileSaveDialog();
  İç COM nesne için işaretçisine `CFileDialog`. Bu işaretçinin uygun şekilde serbest bırakmak için sizin sorumluluğunuzdadır değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev yalnızca Windows Vista veya daha sonra sahip bir nesne kullanmak `bVistaStyle` kümesine `true`. Bu işlev döndürülecek `NULL` varsa `CFileDialog` değil bir **kaydetmek** iletişim kutusu veya `bVistaStyle` ayarlanır `false`. Bu son durumda işlevi yalnızca döndürür `NULL` yayın modunda - hata ayıklama modunda, bir onaylama işlemi özel durum oluşturacak.  
+ Bu işlev yalnızca Windows Vista veya daha sonra sahip bir nesne kullanmak *bVistaStyle* kümesine `true`. Bu işlev döndürülecek `NULL` varsa `CFileDialog` değil bir **kaydetmek** iletişim kutusu veya *bVistaStyle* ayarlanır `false`. Bu son durumda işlevi yalnızca döndürür `NULL` yayın modunda - hata ayıklama modunda, bir onaylama işlemi özel durum oluşturacak.  
   
  Hakkında daha fazla bilgi için `IFileSaveDialog` arabirim için bkz: [IFileSaveDialog](http://msdn.microsoft.com/library/windows/desktop/bb775688).  
   
@@ -830,7 +830,7 @@ CString GetNextPathName(POSITION& pos) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
+ *POS*  
  Bir başvuru bir **konumu** önceki tarafından döndürülen değer `GetNextPathName` veya `GetStartPosition` işlev çağrısı. **NULL** , listenin sonuna ulaşıldı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -924,10 +924,10 @@ HRESULT GetSelectedControlItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Kapsayıcı denetiminin kimliği.  
   
- `dwIDItem`  
+ *dwIDItem*  
  Kullanıcı denetim içinde seçilen öğenin kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -950,7 +950,7 @@ void HideControl(int nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nID`  
+ *nID*  
  Gizlemek için denetim kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -972,7 +972,7 @@ BOOL IsPickFoldersMode() const;
  `m_ofn` bir yapıdır türü `OPENFILENAME`. Bu yapı verileri geçerli durumunu temsil eden `CFileDialog`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Görünümünü başlatmak için bu yapı kullanın bir **Dosya Aç** veya **dosyasını Kaydet** iletişim kutusunda, oluşturduktan sonra ancak onunla görüntülemeden önce [DoModal](#domodal) yöntemi. Örneğin, ayarlayabileceğiniz `lpstrTitle` üyesi `m_ofn` sağlamak için iletişim kutusunu istediğiniz resim yazısı.  
+ Görünümünü başlatmak için bu yapı kullanın bir **Dosya Aç** veya **dosyasını Kaydet** iletişim kutusunda, oluşturduktan sonra ancak onunla görüntülemeden önce [DoModal](#domodal) yöntemi. Örneğin, ayarlayabileceğiniz *lpstrTitle* üyesi `m_ofn` sağlamak için iletişim kutusunu istediğiniz resim yazısı.  
   
  Windows Vista veya sonraki bir tarzını ile [CFileDialog](../../mfc/reference/cfiledialog-class.md), `m_ofn` iletişim kutusunun durumu her zaman aynı garanti edilmez. Windows'un önceki sürümlerinde iletişim kutusunda ile eşitlenir. Bkz: [CFileDialog::ApplyOFNToShellDialog](#applyofntoshelldialog) ve [CFileDialog::UpdateOFNFromShellDialog](#updateofnfromshelldialog) eşitleme hakkında daha fazla bilgi için `m_ofn` yapısı ve `CFileDialog` durumu Windows Vista veya sonraki sürümlerinde.  
   
@@ -1026,7 +1026,7 @@ HRESULT MakeProminent(DWORD dwIDCtl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Denetimin kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1039,7 +1039,7 @@ virtual void OnButtonClicked(DWORD dwIDCtl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Düğme kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1054,10 +1054,10 @@ virtual void OnCheckButtonToggled(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Onay kutusu kimliği.  
   
- `bChecked`  
+ *bChecked*  
  İşaretli veya işaretsiz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1070,7 +1070,7 @@ virtual void OnControlActivating(DWORD dwIDCtl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Denetimin kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1139,10 +1139,10 @@ virtual void OnItemSelected(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Kapsayıcı denetiminin kimliği.  
   
- `dwIDItem`  
+ *dwIDItem*  
  Öğenin kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1161,17 +1161,17 @@ virtual void OnLBSelChangedNotify(
  *nIDBox*  
  Liste kutusu veya açılan kutu seçimi gerçekleştiği kimliği.  
   
- `iCurSel`  
+ *iCurSel*  
  Geçerli seçim dizini.  
   
- `nCode`  
+ *nCode*  
  Denetim bildirimi kodu. Bu parametre aşağıdaki değerlerden birine sahip olmalıdır:  
   
-- **CD_LBSELCHANGE** belirtir `iCurSel` tek seçim liste kutusunda seçili öğe.  
+- **CD_LBSELCHANGE** belirtir *iCurSel* tek seçim liste kutusunda seçili öğe.  
   
-- **CD_LBSELSUB** belirleyen `iCurSel` artık multiselection liste kutusunda seçilir.  
+- **CD_LBSELSUB** belirleyen *iCurSel* artık multiselection liste kutusunda seçilir.  
   
-- **CD_LBSELADD** belirleyen `iCurSel` multiselection liste kutusunda seçili.  
+- **CD_LBSELADD** belirleyen *iCurSel* multiselection liste kutusunda seçili.  
   
 - **CD_LBSELNOITEMS** multiselection liste kutusunda herhangi bir seçim var belirtir.  
   
@@ -1186,7 +1186,7 @@ virtual UINT OnShareViolation(LPCTSTR lpszPathName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszPathName`  
+ *lpszPathName*  
  Paylaşım ihlali gerçekleştiği dosyasının yolu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1225,10 +1225,10 @@ HRESULT RemoveControlItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Öğeyi kaldırmak için kapsayıcı denetiminin kimliği.  
   
- `dwIDItem`  
+ *dwIDItem*  
  Öğenin kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1243,10 +1243,10 @@ HRESULT SetCheckButtonState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Onay kutusu kimliği.  
   
- `bChecked`  
+ *bChecked*  
  Onay kutusu durumu. `TRUE` Checked gösterir; `FALSE` işaretlenmemiş gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1262,13 +1262,13 @@ HRESULT SetControlItemState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Kapsayıcı denetiminin kimliği.  
   
- `dwIDItem`  
+ *dwIDItem*  
  Öğenin kimliği.  
   
- `dwState`  
+ *dwState*  
  Denetim yeni durumunu belirten bir veya daha fazla değerlerinden CDCONTROLSTATE numaralandırması.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1284,13 +1284,13 @@ HRESULT SetControlItemText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Kapsayıcı denetiminin kimliği.  
   
- `dwIDItem`  
+ *dwIDItem*  
  Öğenin kimliği.  
   
- `strLabel`  
+ *strLabel*  
  Öğenin metni.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1305,10 +1305,10 @@ HRESULT SetControlLabel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Denetimin kimliği.  
   
- `strLabel`  
+ *strLabel*  
  Denetim adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1323,10 +1323,10 @@ HRESULT SetControlState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Denetimin kimliği.  
   
- `dwState`  
+ *dwState*  
  Denetimin geçerli durumunu belirten bir veya daha fazla değerlerinden CDCONTROLSTATE numaralandırması.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1346,10 +1346,10 @@ void SetControlText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Metni ayarlamak denetim kimliği.  
   
- [in] `lpsz`  
+ [in] *lpsz*  
  İçin Denetim ayarlamak için metni içeren dize için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1365,7 +1365,7 @@ void SetDefExt(LPCSTR lpsz);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpsz`  
+ *lpsz*  
  İletişim kutusu nesne için kullanılacak varsayılan uzantı içeren bir dize için bir işaretçi. Bu dize bir nokta (.) içermemelidir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1381,10 +1381,10 @@ HRESULT SetEditBoxText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Düzenleme kutusuna kimliği.  
   
- `strText`  
+ *strText*  
  Metin değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1397,7 +1397,7 @@ BOOL SetProperties(LPCWSTR lpszPropList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszPropList`  
+ *lpszPropList*  
  Önceden tanımlanmış özellikler listesini ayırarak ";". Bayrakları bir listesi için bkz: `Flags` bölümünü [AÇIKDOSYAADI](http://msdn.microsoft.com/en-us/8cecfd45-f7c1-4f8d-81a0-4e7fecc3b104).  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1412,10 +1412,10 @@ HRESULT SetSelectedControlItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Kapsayıcı denetiminin kimliği.  
   
- `dwIDItem`  
+ *dwIDItem*  
  Kullanıcı denetim içinde seçilen öğenin kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1435,16 +1435,16 @@ void SetTemplate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nWin3ID`  
+ [in] *nWin3ID*  
  Explorer olmayan şablon kaynağı kimliği sayısını içeren `CFileDialog` nesnesi. Bu şablon, yalnızca Windows NT 3.51 veya OFN_EXPLORER stili mevcut olmadığında kullanılır.  
   
- [in] `nWin4ID`  
+ [in] *nWin4ID*  
  Şablon kaynağı kimliği sayısı için Explorer içeren `CFileDialog` nesnesi. Bu şablon yalnızca kullanılan [!INCLUDE[WinNt4Family](../../mfc/reference/includes/winnt4family_md.md)] ve sonraki sürümleri, Windows 95 ve sonraki sürümleri ya da OFN_EXPLORER stili olduğunda mevcut.  
   
- [in] `lpWin3ID`  
+ [in] *lpWin3ID*  
  Explorer olmayan için şablon kaynağı adını içeren `CFileDialog` nesnesi. Bu şablon, yalnızca Windows NT 3.51 veya OFN_EXPLORER stili mevcut olmadığında kullanılır.  
   
- [in] `lpWin4ID`  
+ [in] *lpWin4ID*  
  Şablon kaynağı Explorer'ın adını içeren `CFileDialog` nesnesi. Bu şablon yalnızca kullanılan [!INCLUDE[WinNt4Family](../../mfc/reference/includes/winnt4family_md.md)] ve sonraki sürümleri, Windows 95 ve sonraki sürümleri ya da OFN_EXPLORER stili olduğunda mevcut.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1463,10 +1463,10 @@ HRESULT StartVisualGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwIDCtl`  
+ *dwIDCtl*  
  Görsel grubunun kimliği.  
   
- `strLabel`  
+ *strLabel*  
  Grup adı.  
   
 ### <a name="remarks"></a>Açıklamalar  

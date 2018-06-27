@@ -19,17 +19,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c03ae586e346be2ba1e7c71475b69318ded0dd18
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6c4f581acb0af27f44c88d59597e52b057991ee4
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385222"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954285"
 ---
 # <a name="windows-sockets-how-sockets-with-archives-work"></a>Windows Yuvaları: Yuvaların Arşivlerle Çalışması
 Bu makalede açıklanır nasıl bir [CSocket](../mfc/reference/csocket-class.md) nesne, bir [CSocketFile](../mfc/reference/csocketfile-class.md) nesnesi ve [CArchive](../mfc/reference/carchive-class.md) nesnesi, bir Windows aracılığıyla veri gönderme ve alma basitleştirmek için birleştirilir Yuva.  
   
- Makaleyi [Windows Yuvaları: örnek, yuva kullanarak arşivler](../mfc/windows-sockets-example-of-sockets-using-archives.md) gösterir **PacketSerialize** işlevi. Arşiv nesnesinde **PacketSerialize** örnek bir MFC geçirilen bir arşiv nesnesi benzer çalışır [serileştirme](../mfc/reference/cobject-class.md#serialize) işlevi. Yuva için standart olmayan arşiv bağlı olduğu temel fark vardır [CFile](../mfc/reference/cfile-class.md) (genellikle bir disk dosyası ile ilişkili) nesne ancak çok bir `CSocketFile` nesnesi. Bir disk dosyasına bağlanmadığı yerine `CSocketFile` nesne bağlandığı bir `CSocket` nesnesi.  
+ Makaleyi [Windows Yuvaları: örnek, yuva kullanarak arşivler](../mfc/windows-sockets-example-of-sockets-using-archives.md) gösterir `PacketSerialize` işlevi. Arşiv nesnesinde `PacketSerialize` örnek bir MFC geçirilen bir arşiv nesnesi benzer çalışır [serileştirme](../mfc/reference/cobject-class.md#serialize) işlevi. Yuva için standart olmayan arşiv bağlı olduğu temel fark vardır [CFile](../mfc/reference/cfile-class.md) (genellikle bir disk dosyası ile ilişkili) nesne ancak çok bir `CSocketFile` nesnesi. Bir disk dosyasına bağlanmadığı yerine `CSocketFile` nesne bağlandığı bir `CSocket` nesnesi.  
   
  A `CArchive` nesnesi bir arabellek yönetir. Depolama (gönderen) arşiv arabellek dolduğunda, ilişkili bir `CFile` nesnesi arabellek içeriğini yazar. İleti gönderme için düzenleniyor yuvaya bağlı bir arşiv arabellek eşdeğerdir. Arşiv yüklenirken (alma) arabellek dolduğunda, `CFile` nesnesi, arabellek yeniden kullanılabilir hale gelene kadar okuma durdurur.  
   
@@ -51,7 +51,7 @@ CArchive, CSocketFile ve CSocket
  Varsa `CSocket` uygulanmamış iki durumlu nesnesi olarak önceki bir bildirim işleme sırada aynı türde bir olayın için ek bildirim almak mümkün olabilir. Örneğin, alabilirsiniz bir `OnReceive` bildirim işlenirken bir `OnReceive`. Yukarıdaki kod parçasında ayıklanıyor `str` arşivden özyineleme neden olabilir. Durumları, geçiş tarafından `CSocket` ek bildirimleri engelleyerek özyineleme engeller. Genel kural hiçbir bildirimler bildirimleri içinde değil.  
   
 > [!NOTE]
->  A `CSocketFile` (sınırlı) dosyası olarak da kullanılabilir bir `CArchive` nesnesi. Varsayılan olarak, `CSocketFile` Oluşturucusu'nın `bArchiveCompatible` parametresi **doğru**. Bu dosya nesnesi bir arşiv ile kullanılmak üzere olduğunu belirtir. Bir arşiv olmadan dosya nesnesi kullanmak için geçirmek **FALSE** içinde `bArchiveCompatible` parametresi.  
+>  A `CSocketFile` (sınırlı) dosyası olarak da kullanılabilir bir `CArchive` nesnesi. Varsayılan olarak, `CSocketFile` Oluşturucusu'nın *bArchiveCompatible* parametresi **doğru**. Bu dosya nesnesi bir arşiv ile kullanılmak üzere olduğunu belirtir. Bir arşiv olmadan dosya nesnesi kullanmak için geçirmek **FALSE** içinde *bArchiveCompatible* parametresi.  
   
  Kendi "Arşiv uyumlu" modunda bir `CSocketFile` nesne daha iyi performans sağlar ve bir "kilitlenme." tehlike azaltır Gönderme ve alma yuva birbirlerine bekliyor veya ortak bir kaynak için bekleyen bir kilitlenme oluşur. Bu durum oluşabilir `CArchive` nesne çalıştığınız `CSocketFile` mu ile yolu bir `CFile` nesnesi. İle `CFile`, Arşiv, istenenden daha az sayıda bayt alırsa, dosya sonuna ulaşıldı varsayabilirsiniz. İle `CSocketFile`ancak, veri tabanlı ileti; arabellek birden fazla ileti içerebilir, bu nedenle istenen bayt sayısından az alma değil kapsıyor dosya sonu. Sahip olabileceği gibi bu durumda uygulamayı engellemez `CFile`, ve arabellek boş olana kadar arabellekteki iletileri okumak devam edebilirsiniz. [IsBufferEmpty](../mfc/reference/carchive-class.md#isbufferempty) işlevi `CArchive` arşiv 's arabellek böyle bir durumda durumunu izlemek için yararlıdır.  
   

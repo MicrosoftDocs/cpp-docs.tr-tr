@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c26cf70ad52037b4ebe88b983e6d9a91273897cf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c577a153536b7c9a5def95915e802301841a485b
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369674"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955033"
 ---
 # <a name="cfont-class"></a>CFont sınıfı
 Bir Windows grafik cihaz arabirimi (GDI) yazı tipi yalıtır ve yazı tipi yönlendirmek için üye işlevleri sağlar.  
@@ -123,31 +123,31 @@ BOOL CreateFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nHeight`  
- İstenen yüksekliğini (mantıksal birimleri) yazı tipini belirtir. Bkz: `lfHeight` üyesi [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)bir açıklama için Windows SDK'sı yapısında. Mutlak değerini `nHeight` dönüştürmeden sonra 16.384 aygıt birimleri aşmamalıdır. Tüm yazı tiplerini istenen boyutu aşarsa tüm yükseklik karşılaştırmaları için istenen boyuta aşmayan en büyük yazı tipini veya en küçük yazı tipi için yazı tipi Eşleyici arar.  
+ *nHeight*  
+ İstenen yüksekliğini (mantıksal birimleri) yazı tipini belirtir. Bkz: `lfHeight` üyesi [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)bir açıklama için Windows SDK'sı yapısında. Mutlak değerini *nHeight* dönüştürmeden sonra 16.384 aygıt birimleri aşmamalıdır. Tüm yazı tiplerini istenen boyutu aşarsa tüm yükseklik karşılaştırmaları için istenen boyuta aşmayan en büyük yazı tipini veya en küçük yazı tipi için yazı tipi Eşleyici arar.  
   
- `nWidth`  
- Ortalama genişliğini (mantıksal birimleri) karakterleri yazı tipini belirtir. Varsa `nWidth` 0'dır, aygıt en boy oranını fark mutlak değeri tarafından belirlenir yakın eşleşmeyi bulmak için yazı tiplerini digitization en boy oranını karşı eşleşti.  
+ *nWidth*  
+ Ortalama genişliğini (mantıksal birimleri) karakterleri yazı tipini belirtir. Varsa *nWidth* 0'dır, aygıt en boy oranını fark mutlak değeri tarafından belirlenir yakın eşleşmeyi bulmak için yazı tiplerini digitization en boy oranını karşı eşleşti.  
   
- `nEscapement`  
+ *nEscapement*  
  (0,1 derecelik birimlerindeki) escapement vektör ve görüntü yüzeyini x ekseni arasındaki açıyı belirtir. Escapement vektör satırındaki ilk ve son karakterler kaynakları aracılığıyla satırıdır. Açı saatin tersi yönde eksenindeki ölçülür. Bkz: `lfEscapement` üye `LOGFONT` daha fazla bilgi için Windows SDK'sı yapısında.  
   
- `nOrientation`  
+ *nOrientation*  
  (0,1 derecelik birimlerindeki) temel bir karakterin x ekseni arasındaki açıyı belirtir. Açı saatin tersi yönde y yönünde aşağı ve y yönünde çalışır durumda koordinat sistemleri için x ekseni saat yönünde Döndürülmüş koordinat sistemleri için x ekseni ölçülür.  
   
- `nWeight`  
- (Kaynağa piksel cinsinden başına 1000) yazı tipini belirtir. Bkz: `lfWeight` üye `LOGFONT` daha fazla bilgi için Windows SDK'sı yapısında. Açıklanan yaklaşık değerlerdir; Gerçek görünümü üzerinde yazı tipi bağlıdır. Bazı yazı tipleri yalnızca sahip `FW_NORMAL`, `FW_REGULAR`, ve `FW_BOLD` ağırlıkları. Varsa `FW_DONTCARE` belirtilmemişse, varsayılan ağırlık kullanılır.  
+ *nWeight*  
+ (Kaynağa piksel cinsinden başına 1000) yazı tipini belirtir. Bkz: *lfWeight* üye `LOGFONT` daha fazla bilgi için Windows SDK'sı yapısında. Açıklanan yaklaşık değerlerdir; Gerçek görünümü üzerinde yazı tipi bağlıdır. Bazı yazı tipleri yalnızca sahip `FW_NORMAL`, `FW_REGULAR`, ve `FW_BOLD` ağırlıkları. Varsa `FW_DONTCARE` belirtilmemişse, varsayılan ağırlık kullanılır.  
   
- `bItalic`  
+ *bItalic*  
  Yazı tipi italik olup olmadığını belirtir.  
   
- `bUnderline`  
+ *bUnderline*  
  Yazı tipinin altı çizili olup olmadığını belirtir.  
   
- `cStrikeOut`  
+ *cStrikeOut*  
  Yazı tipi karakter harfi olup olmadığını belirtir. Üstü çizili yazı tipini belirtir sıfır olmayan bir değere ayarlayın.  
   
- `nCharSet`  
+ *nCharSet*  
  Yazı tipinin karakter setSee belirtir `lfCharSet` üye `LOGFONT` değerleri listesi için Windows SDK'sı yapısında.  
   
  OEM karakter kümesi sistem bağımlıdır.  
@@ -156,24 +156,24 @@ BOOL CreateFont(
   
  Yazı tipi Eşleyici kullanmayan `DEFAULT_CHARSET` değeri. Bir uygulama adı ve mantıksal yazı tipi tam olarak tanımlamak için bir yazı tipi boyutunu izin vermek için bu değeri kullanabilirsiniz. Belirtilen ada sahip bir yazıtipi yoksa, herhangi bir karakter kümesinden bir yazı tipi için belirtilen yazı tipi yerine. Beklenmeyen sonuçlardan kaçınmak için uygulamaların kullanması gereken `DEFAULT_CHARSET` tutumlu değeri.  
   
- `nOutPrecision`  
+ *nOutPrecision*  
  İstenen çıkış duyarlık belirtir. Çıktı duyarlık çıkış istenen yazı tipinin yükseklik, genişlik, karakter yönü, escapement ve aralık ne kadar yakından eşleşmelidir tanımlar. Bkz: `lfOutPrecision` üye `LOGFONT` listesi değerleri ve daha fazla bilgi için Windows SDK'sı yapısında.  
   
- `nClipPrecision`  
+ *nClipPrecision*  
  İstenen kırpma duyarlık belirtir. Kırpma duyarlık kısmen kırpma bölgesinin dışındaki karakterleri küçük nasıl tanımlar. Bkz: `lfClipPrecision` üye `LOGFONT` değerleri listesi için Windows SDK'sı yapısında.  
   
  Katıştırılmış bir salt okunur yazı tipini kullanmak için bir uygulama belirtilmesi gerekir `CLIP_ENCAPSULATE`.  
   
- Aygıt, TrueType ve vektör yazı tipleri tutarlı dönüşünü elde etmek için bir uygulama veya işlecini birleştirmek için kullanabilirsiniz `CLIP_LH_ANGLES` herhangi diğer bir değerle `nClipPrecision` değerleri. Varsa `CLIP_LH_ANGLES` bit ayarlanmışsa, tüm yazı tipleri için döndürme koordinat sistemi yönünü sol olmasına bağlıdır veya sağ. (Açıklamasını koordinat sistemleri yönünü hakkında daha fazla bilgi için bkz: `nOrientation` parametresi.) Varsa `CLIP_LH_ANGLES` olan ayarlanmadı, Aygıt yazı tiplerini her zaman döndürme saatin tersi yönde, ancak diğer yazı tiplerini dönüşünü koordinat sistemi yönünü bağlıdır.  
+ Aygıt, TrueType ve vektör yazı tipleri tutarlı dönüşünü elde etmek için bir uygulama veya işlecini birleştirmek için kullanabilirsiniz `CLIP_LH_ANGLES` herhangi diğer bir değerle *nClipPrecision* değerleri. Varsa `CLIP_LH_ANGLES` bit ayarlanmışsa, tüm yazı tipleri için döndürme koordinat sistemi yönünü sol olmasına bağlıdır veya sağ. (Açıklaması koordinat sistemleri yönünü hakkında daha fazla bilgi için bkz *nOrientation* parametresi.) Varsa `CLIP_LH_ANGLES` olan ayarlanmadı, Aygıt yazı tiplerini her zaman döndürme saatin tersi yönde, ancak diğer yazı tiplerini dönüşünü koordinat sistemi yönünü bağlıdır.  
   
- `nQuality`  
+ *nQuality*  
  GDI olanlar gerçek fiziksel yazı tipi için yazı tipi mantıksal özniteliklerini eşleşecek şekilde nasıl dikkatle denemelidir tanımlar yazı tipinin çıktı kalitesini belirler. Bkz: `lfQuality` üye `LOGFONT` değerleri listesi için Windows SDK'sı yapısında.  
   
- `nPitchAndFamily`  
+ *nPitchAndFamily*  
  Yazı tipi ailesi ve aralığı belirtir. Bkz: `lfPitchAndFamily` üye `LOGFONT` listesi değerleri ve daha fazla bilgi için Windows SDK'sı yapısında.  
   
- `lpszFacename`  
- A `CString` veya işaretçi null ile sonlandırılmış dizeye yazı tipini yazı tipi adını belirtir. Bu dize uzunluğu 30 karakterden uzun olamaz. Windows [EnumFontFamilies](http://msdn.microsoft.com/library/windows/desktop/dd162619) işlevi, şu anda kullanılabilir tüm yazı tipleri numaralandırmak için kullanılabilir. Varsa `lpszFacename` olan `NULL`, bir CİHAZDAN bağımsız yazı tipi GDI kullanır.  
+ *lpszFacename*  
+ A `CString` veya işaretçi null ile sonlandırılmış dizeye yazı tipini yazı tipi adını belirtir. Bu dize uzunluğu 30 karakterden uzun olamaz. Windows [EnumFontFamilies](http://msdn.microsoft.com/library/windows/desktop/dd162619) işlevi, şu anda kullanılabilir tüm yazı tipleri numaralandırmak için kullanılabilir. Varsa *lpszFacename* olan `NULL`, bir CİHAZDAN bağımsız yazı tipi GDI kullanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
@@ -183,7 +183,7 @@ BOOL CreateFont(
   
  `CreateFont` İşlevi yeni bir Windows GDI yazı tipi oluşturulamadı. Bunu yalnızca en yakın eşleşme kullanılabilir fiziksel yazı GDI seçer.  
   
- Uygulamaları mantıksal bir yazı tipi oluştururken, varsayılan ayarları çoğu parametrelerini kullanabilirsiniz. Her zaman belirli değerleri verilmelidir parametreler `nHeight` ve `lpszFacename`. Varsa `nHeight` ve `lpszFacename` ayarlı değil uygulama tarafından oluşturulan mantıksal yazı tipi aygıt bağlıdır.  
+ Uygulamaları mantıksal bir yazı tipi oluştururken, varsayılan ayarları çoğu parametrelerini kullanabilirsiniz. Her zaman belirli değerleri verilmelidir parametreler *nHeight* ve *lpszFacename*. Varsa *nHeight* ve *lpszFacename* ayarlı değil uygulama tarafından oluşturulan mantıksal yazı tipi aygıt bağlıdır.  
   
  İle tamamladığınızda `CFont` tarafından oluşturulan nesne `CreateFont` işlev, kullanın `CDC::SelectObject` cihaz bağlamına farklı bir yazı tipi seçmek için delete `CFont` artık gerekli nesne.  
   
@@ -198,7 +198,7 @@ BOOL CreateFontIndirect(const LOGFONT* lpLogFont);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpLogFont`  
+ *lpLogFont*  
  İşaret eden bir `LOGFONT` mantıksal yazı tipi özelliklerini tanımlayan yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -225,20 +225,20 @@ BOOL CreatePointFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nPointSize`  
+ *nPointSize*  
  Yazı tipi yüksekliği noktasının onda istedi. (Örneğin, 12 noktası yazı tipi istemek için 120 geçirin.)  
   
- `lpszFaceName`  
- A `CString` veya işaretçi null ile sonlandırılmış dizeye yazı tipini yazı tipi adını belirtir. Bu dize uzunluğu 30 karakterden uzun olamaz. Windows **EnumFontFamilies** işlevi, şu anda kullanılabilir tüm yazı tipleri numaralandırmak için kullanılabilir. Varsa `lpszFaceName` olan **NULL**, bir CİHAZDAN bağımsız yazı tipi GDI kullanır.  
+ *lpszFaceName*  
+ A `CString` veya işaretçi null ile sonlandırılmış dizeye yazı tipini yazı tipi adını belirtir. Bu dize uzunluğu 30 karakterden uzun olamaz. Windows **EnumFontFamilies** işlevi, şu anda kullanılabilir tüm yazı tipleri numaralandırmak için kullanılabilir. Varsa *lpszFaceName* olan **NULL**, bir CİHAZDAN bağımsız yazı tipi GDI kullanır.  
   
- `pDC`  
- İşaretçi [CDC](../../mfc/reference/cdc-class.md) yüksekliği dönüştürmek için kullanılacak nesne `nPointSize` mantıksal birimler için. Varsa **NULL**, ekran cihaz bağlamı dönüştürme için kullanılır.  
+ *pDC*  
+ İşaretçi [CDC](../../mfc/reference/cdc-class.md) yüksekliği dönüştürmek için kullanılacak nesne *nPointSize* mantıksal birimler için. Varsa **NULL**, ekran cihaz bağlamı dönüştürme için kullanılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, sıfır olmayan Aksi halde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yükseklik otomatik olarak dönüştürür `nPointSize` kullanarak mantıksal birimler için `CDC` tarafından için nesne işaret `pDC`.  
+ Yükseklik otomatik olarak dönüştürür *nPointSize* kullanarak mantıksal birimler için `CDC` tarafından için nesne işaret *pDC*.  
   
  İle tamamladığınızda `CFont` tarafından oluşturulan nesne `CreatePointFont` işlev, önce cihaz bağlamı dışında yazı tipini seçin, ardından silin `CFont` nesnesi.  
   
@@ -255,17 +255,17 @@ BOOL CreatePointFontIndirect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpLogFont`  
+ *lpLogFont*  
  İşaret eden bir [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) mantıksal yazı tipi özelliklerini tanımlayan yapısı. **LfHeight** üyesi `LOGFONT` yapısı onda mantıksal birimler yerine bir nokta ölçülür. (Örneğin, ayarlamak **lfHeight** 12 noktası yazı tipi istemek için 120 için.)  
   
- `pDC`  
+ *pDC*  
  İşaretçi [CDC](../../mfc/reference/cdc-class.md) yüksekliği dönüştürmek için kullanılacak nesne **lfHeight** mantıksal birimler için. Varsa **NULL**, ekran cihaz bağlamı dönüştürme için kullanılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, sıfır olmayan Aksi halde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev otomatik olarak yüksekliği dönüştürür **lfHeight** kullanarak mantıksal birimler için `CDC` tarafından için nesne işaret `pDC` geçirilmeden önce `LOGFONT` yapısı Windows açın.  
+ Bu işlev otomatik olarak yüksekliği dönüştürür **lfHeight** kullanarak mantıksal birimler için `CDC` tarafından için nesne işaret *pDC* geçirilmeden önce `LOGFONT` yapısı Windows açın.  
   
  İle tamamladığınızda `CFont` tarafından oluşturulan nesne `CreatePointFontIndirect` işlev, önce cihaz bağlamı dışında yazı tipini seçin, ardından silin `CFont` nesnesi.  
   
@@ -280,7 +280,7 @@ static CFont* PASCAL FromHandle(HFONT hFont);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hFont`  
+ *hFont*  
  Bir **HFONT** işlemek için bir Windows yazı tipi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

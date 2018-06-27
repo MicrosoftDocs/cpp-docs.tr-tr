@@ -188,12 +188,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e806d622e79fe57039b85dc77860b07b956ece1a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 71ec3bae44bd9365891c3a87fd33dfd3e1db2700
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377829"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957422"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx sınıfı
 Implements Windows işlevselliğini tek belge arabirimi (SDI) çakışan veya açılan pencere çerçeve penceresi ve pencere yönetmek için üyeleri sağlar. Bunu genişletir [CFrameWnd](../../mfc/reference/cframewnd-class.md) sınıfı.  
@@ -337,10 +337,10 @@ BOOL AddPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  Kaydetmek için bir denetim çubuğu bölmesi.  
   
- [in] `bTail`  
+ [in] *bTail*  
  `TRUE` denetim çubuğu bölmesinde listesinin sonuna eklemek istiyorsanız; `FALSE` Aksi takdirde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -354,7 +354,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hdwp`  
+ *hdwp*  
  Birden çok windows konumlarını içeren bir yapı için bir tanıtıcı. biçimindeki telefon numarasıdır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -368,7 +368,7 @@ virtual void DelayUpdateFrameMenu(HMENU hMenuAlt);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hMenuAlt`  
+ [in] *hMenuAlt*  
  Bir alternatif menüsüne işleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -384,17 +384,17 @@ void DockPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
+ [in] *pBar*  
  Denetim çubuğu yerleşik için bir işaretçi.  
   
- [in] `nDockBarID`  
+ [in] *nDockBarID*  
  Çerçeve penceresi için sabitlemek için tarafında kimliği.  
   
- [in] `lpRect`  
+ [in] *lpRect*  
  Pencerenin ekran konumunu ve boyutunu belirtir sabit bir Rect yapısı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `nDockBarID` Parametresi şu değerlerden biri olabilir:  
+ *NDockBarID* parametresi şu değerlerden biri olabilir:  
   
 -   AFX_IDW_DOCKBAR_TOP  
   
@@ -414,17 +414,17 @@ BOOL DockPaneLeftOf(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
+ [in] *pBar*  
  Yerleşik için bölmesi nesnesi için bir işaretçi.  
   
- [in] `pLeftOf`  
- Biri tarafından belirtilen bölmesinde sabitlemek sol bölmesinde bir işaretçi `pBar`.  
+ [in] *pLeftOf*  
+ Biri tarafından belirtilen bölmesinde sabitlemek sol bölmesinde bir işaretçi *pBar*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` varsa `pBar` başarıyla yerleştirilir. `FALSE` Aksi takdirde.  
+ `TRUE` varsa *pBar* başarıyla yerleştirilir. `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yöntem tarafından belirtilen araç alır `pBar` parametre ve araç sol tarafındaki belirtilen tarafından noktalarını `pLeftOf` parametresi.  
+ Yöntem tarafından belirtilen araç alır *pBar* parametre ve araç sol tarafındaki belirtilen tarafından noktalarını *pLeftOf* parametresi.  
   
 ##  <a name="enableautohidepanes"></a>  CFrameWndEx::EnableAutoHidePanes  
  Etkinleştirir otomatik modu bölmesi için belirtilen ana çerçeve penceresi tarafına yerleştirildiğinde gizle.  
@@ -434,14 +434,14 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
  Bölmesinde sabitlemek ana çerçeve penceresine tarafında belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` bir çubuk bölmesi tarafından belirtilen çerçeve penceresi dışarıdan yuvalanmış başarıyla `dwDockStyle`, `FALSE` Aksi takdirde.  
+ `TRUE` bir çubuk bölmesi tarafından belirtilen çerçeve penceresi dışarıdan yuvalanmış başarıyla *dwDockStyle*, `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `dwDockStyle` Aşağıdaki değerlerden biri olabilir:  
+ *dwDockStyle* şu değerlerden biri olabilir:  
   
 -   CBRS_ALIGN_TOP: bir çerçeve penceresinde istemci alanının üstüne yerleştirilmiş denetim çubuğu sağlar.  
   
@@ -459,14 +459,14 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
  Burada bölmesinde çubuğu noktalarını ana çerçeve penceresi tarafında belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` bir çubuk bölmesi başarıyla yuvalanmış belirtilen tarafında. `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `dwDockStyle` Parametresi şu değerlerden biri olabilir:  
+ *DwDockStyle* parametresi şu değerlerden biri olabilir:  
   
 -   CBRS_ALIGN_TOP  
   
@@ -484,7 +484,7 @@ void EnableFullScreenMainMenu(BOOL bEnableMenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnableMenu`  
+ [in] *bEnableMenu*  
  `TRUE` tam ekran modunda ana menüye göstermek için `FALSE` Aksi takdirde.  
   
 ##  <a name="enablefullscreenmode"></a>  CFrameWndEx::EnableFullScreenMode  
@@ -495,7 +495,7 @@ void EnableFullScreenMode(UINT uiFullScreenCmd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiFullScreenCmd`  
+ [in] *uiFullScreenCmd*  
  Sağlar ve tam ekran modu devre dışı bırakan bir komut kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -513,7 +513,7 @@ void EnableLoadDockState(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` Yuva durumu yüklenmesini etkinleştirmek için `FALSE` takma durumunu yüklenmesini devre dışı bırakmak için.  
   
 ##  <a name="enablepanemenu"></a>  CFrameWndEx::EnablePaneMenu  
@@ -530,22 +530,22 @@ void EnablePaneMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` açılır menüler çubuğu denetiminin otomatik işleme etkinleştirmek için; `FALSE` otomatik işleme açılır menüler çubuğu denetiminin devre dışı bırakmak için.  
   
- [in] `uiCustomizeCmd`  
+ [in] *uiCustomizeCmd*  
  Komut Kimliği **Özelleştir** menü öğesi.  
   
- [in] `strCustomizeLabel`  
+ [in] *strCustomizeLabel*  
  Etiketi için görüntülenecek **Özelleştir** menü öğesi  
   
- [in] `uiViewToolbarsMenuEntryID`  
+ [in] *uiViewToolbarsMenuEntryID*  
  Denetim çubuğu açılır menüyü açılır bir araç çubuğu menü öğesi kimliği.  
   
- [in] `bContextMenuShowsToolbarsOnly`  
+ [in] *bContextMenuShowsToolbarsOnly*  
  Varsa `TRUE`, bağlam menüsü çubuğu Denetim araç çubukları yalnızca listesini görüntüler. Varsa `FALSE`, menü araç çubukları ve yerleştirme çubukları listesini görüntüler.  
   
- [in] `bViewMenuShowsToolbarsOnly`  
+ [in] *bViewMenuShowsToolbarsOnly*  
  Varsa `TRUE`, denetim çubuğu menüsünde araç çubukları yalnızca listesini görüntüler. Varsa `FALSE`, menü araç çubukları ve yerleştirme çubukları listesini görüntüler.  
   
 ##  <a name="getactivepopup"></a>  CFrameWndEx::GetActivePopup  
@@ -599,7 +599,7 @@ CBasePane* GetPane(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Denetim kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -637,10 +637,10 @@ virtual BOOL GetToolbarButtonToolTipText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
+ [in] *pButton*  
  Araç çubuğu düğmesi için bir işaretçi.  
   
- [in] `strTTText`  
+ [in] *strTTText*  
  Düğme için görüntülenecek araç ipucu metni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -660,14 +660,14 @@ BOOL InsertPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pControlBar`  
+ *pControlBar*  
  Denetim çubuğu denetim çubukları listesine eklenir ve yerleştirme Yöneticisi ile kayıtlı olması için bir işaretçi.  
   
- `pTarget`  
+ *pTarget*  
  Denetim çubuğu öncesinde veya sonrasında bölmesi eklemek bir işaretçi.  
   
- `bAfter`  
- `TRUE` eklemek istiyorsanız `pControlBar` sonra `pTarget`, `FALSE` Aksi takdirde.  
+ *bBu*  
+ `TRUE` eklemek istiyorsanız *pControlBar* sonra *pTarget*, `FALSE` Aksi takdirde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` denetim çubuğu ise başarıyla eklendi ve kayıtlı `FALSE` Aksi takdirde.  
@@ -709,20 +709,20 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Noktasının konumu.  
   
- [out] `dwBarAlignment`  
+ [out] *dwBarAlignment*  
  Burada noktası hizalanır. Olası değerler için açıklamalar bölümündeki tabloya bakın.  
   
- [out] `bOuterEdge`  
+ [out] *bOuterEdge*  
  `TRUE` Çerçeve kenarlığı yakın noktası bulunuyorsa; `FALSE` noktası istemci alanında bulunuyorsa.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` noktası hizalama bölgesinde bulunuyorsa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İçin olası değerler aşağıdaki tabloda listelenmektedir `dwBarAlignment` parametresi.  
+ İçin olası değerler aşağıdaki tabloda listelenmektedir *dwBarAlignment* parametresi.  
   
  `CBRS_ALIGN_TOP`  
  Üste hizalı.  
@@ -760,16 +760,16 @@ virtual BOOL LoadFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nIDResource`  
+ [in] *nIDResource*  
  Tüm çerçeve kaynakları yüklemek için kullanılan kaynak kimliği.  
   
- [in] `dwDefaultStyle`  
+ [in] *dwDefaultStyle*  
  Varsayılan çerçeve pencere stili.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Üst pencere çerçeve işaretçisi.  
   
- [in] `pContext`  
+ [in] *pContext*  
  İşaretçi bir [CCreateContext yapısı](../../mfc/reference/ccreatecontext-structure.md) çerçevesi tarafından uygulama oluşturma sırasında kullanılan sınıfı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -787,25 +787,25 @@ virtual BOOL NegotiateBorderSpace(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nBorderCmd`  
+ [in] *nBorderCmd*  
  Kenarlık anlaşma komutu. Olası değerler için Açıklamalar bölümüne bakın.  
   
- [içinde out] `lpRectBorder`  
+ [içinde out] *lpRectBorder*  
  Kenarlığın boyutları.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` Düzen hesaplanmalıdır Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İçin olası değerler aşağıdaki tabloda listelenmektedir `nBorderCmd` parametresi.  
+ İçin olası değerler aşağıdaki tabloda listelenmektedir *nBorderCmd* parametresi.  
   
- `borderGet`  
+ *borderGet*  
  OLE istemci yer alır.  
   
- `borderRequest`  
+ *borderRequest*  
  OLE istemci alanı isteyin.  
   
- `borderSet`  
+ *borderSet*  
  OLE istemci alanı ayarlayın.  
   
 ##  <a name="onactivate"></a>  CFrameWndEx::OnActivate  
@@ -819,17 +819,17 @@ afx_msg void OnActivate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nState`  
+ [in] *nDurum*  
  Çerçeve etkin veya devre dışı olup olmadığı. Olası değerler için açıklamalar bölümündeki tabloya bakın.  
   
- [in] `pWndOther`  
+ [in] *pWndOther*  
  Geçerli bir kullanıcı girişi geçiş başka bir pencere için işaretçi.  
   
- [in] `bMinimized`  
+ [in] *bMinimized*  
  Çerçeve simge durumuna küçültülmüş durumu. `TRUE` Çerçeve küçültülmüş; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İçin olası değerler aşağıdaki tabloda listelenmektedir `nState` parametresi.  
+ İçin olası değerler aşağıdaki tabloda listelenmektedir *nDurum* parametresi.  
   
  `WA_ACTIVE`  
  Çerçeve fare dışında bir yöntem olarak seçilidir.  
@@ -850,10 +850,10 @@ afx_msg void OnActivateApp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bActive`  
+ [in] *bActive*  
  `TRUE` Uygulama seçtiyseniz; `FALSE` uygulama seçili değilse.  
   
- [in] `dwThreadID`  
+ [in] *dwThreadID*  
  Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -868,10 +868,10 @@ afx_msg LRESULT OnChangeVisualManager(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `wParam`  
+ [in] *wParam*  
  Bu parametre kullanılmaz.  
   
- [in] `lParam`  
+ [in] *lParam*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -923,7 +923,7 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pMenuPopup`  
+ *pMenuPopup*  
  Açılır menü için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -941,16 +941,16 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Komut kimliği.  
   
- [in] `nCode`  
+ [in] *nCode*  
  Komut iletisi kategorisi.  
   
- [içinde out] `pExtra`  
+ [içinde out] *pExtra*  
  Komut nesnesi için işaretçi.  
   
- [içinde out] `pHandlerInfo`  
+ [içinde out] *pHandlerInfo*  
  Bir komut işleyici yapısına yönelik işaretçinin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -975,7 +975,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpCreateStruct`  
+ [in] *lpCreateStruct*  
  Bir işaretçi [CREATESTRUCT yapısı](../../mfc/reference/createstruct-structure.md) için yeni bir çerçeve.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1004,13 +1004,13 @@ virtual BOOL OnDrawMenuImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pMenuButton`  
+ [in] *pMenuButton*  
  Görüntü işlenen bir menü düğmesi için bir işaretçi.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Bir işaretçi bir `Rect` yapısı görüntünün boyutu ve ekran konumunu belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1030,13 +1030,13 @@ virtual void OnDrawMenuLogo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pMenu`  
+ [in] *pMenu*  
  Menü öğesi için bir işaretçi.  
   
- [in] `rectLogo`  
+ [in] *rectLogo*  
  Bir sabit başvuru `CRect` yapısı menü logosu boyutunu ve ekran konumunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1052,10 +1052,10 @@ afx_msg LRESULT OnDWMCompositionChanged(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `wp`  
+ [in] *wp*  
  Bu parametre kullanılmaz.  
   
- [in] `lp`  
+ [in] *lp*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1073,10 +1073,10 @@ LRESULT OnExitSizeMove(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `wp`  
+ [in] *wp*  
  Bu parametre kullanılmaz.  
   
- [in] `lp`  
+ [in] *lp*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1092,7 +1092,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpMMI`  
+ [in] *lpMMI*  
  İşaretçi bir [MINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632605) yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1107,10 +1107,10 @@ afx_msg LRESULT OnIdleUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `wParam`  
+ [in] *wParam*  
  Bu parametre kullanılmaz.  
   
- [in] `lParam`  
+ [in] *lParam*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1128,10 +1128,10 @@ afx_msg void OnLButtonDown(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nFlags`  
- Kullanıcı değiştirici tuşları basılı olup olmadığını gösterir. Olası değerler için parametre bkz `wParam` içinde [WM_LBUTTONDOWN bildirim](http://msdn.microsoft.com/library/windows/desktop/ms645607).  
+ [in] *nFlags*  
+ Kullanıcı değiştirici tuşları basılı olup olmadığını gösterir. Olası değerler için parametre bkz *wParam* içinde [WM_LBUTTONDOWN bildirim](http://msdn.microsoft.com/library/windows/desktop/ms645607).  
   
- [in] `point`  
+ [in] *noktası*  
  X ve y koordinatları işaretçinin, pencerenin sol üst köşesindeki göreli belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1146,10 +1146,10 @@ afx_msg void OnLButtonUp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nFlags`  
- Kullanıcı değiştirici tuşları basılı olup olmadığını gösterir. Olası değerler için parametre bkz `wParam` içinde [WM_LBUTTONUP bildirim](http://msdn.microsoft.com/library/windows/desktop/ms645608).  
+ [in] *nFlags*  
+ Kullanıcı değiştirici tuşları basılı olup olmadığını gösterir. Olası değerler için parametre bkz *wParam* içinde [WM_LBUTTONUP bildirim](http://msdn.microsoft.com/library/windows/desktop/ms645608).  
   
- [in] `point`  
+ [in] *noktası*  
  X ve y koordinatları işaretçinin, pencerenin sol üst köşesindeki göreli belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1164,14 +1164,14 @@ virtual BOOL OnMenuButtonToolHitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
+ [in] *pButton*  
  Araç çubuğu düğmesi için bir işaretçi.  
   
- [out] `pTI`  
+ [out] *PTI*  
  Bir aracı bilgi yapısı için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` uygulama doldurur, `pTI` parametresi. `FALSE` Aksi takdirde.  
+ `TRUE` uygulama doldurur, *PTI* parametresi. `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Belirli menü öğesi araç ipucu bilgilerini sağlamak istiyorsanız bu yöntemi geçersiz kılın.  
@@ -1187,13 +1187,13 @@ afx_msg LRESULT OnMenuChar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nChar`  
+ [in] *nChar*  
  Tuş karakter kodu.  
   
- [in] `nFlags`  
+ [in] *nFlags*  
  İçeren `MF_POPUP` bayrağı görüntülenen menüsünün alt; ise içerir `MF_SYSMENU` görüntülenen menü Denetim menüsü ise bayrak.  
   
- [in] `pMenu`  
+ [in] *pMenu*  
  Bir menüye işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1220,10 +1220,10 @@ afx_msg void OnMouseMove(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nFlags`  
- Bir kullanıcı değiştirici tuşları basılı olup olmadığını gösterir. Olası değerler için parametre bkz `wParam` içinde [WM_MOUSEMOVE bildirim](http://msdn.microsoft.com/library/windows/desktop/ms645616).  
+ [in] *nFlags*  
+ Bir kullanıcı değiştirici tuşları basılı olup olmadığını gösterir. Olası değerler için parametre bkz *wParam* içinde [WM_MOUSEMOVE bildirim](http://msdn.microsoft.com/library/windows/desktop/ms645616).  
   
- [in] `point`  
+ [in] *noktası*  
  X ve y belirtir işaretçiyi pencerenin sol üst köşesindeki göre koordinatları.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1236,7 +1236,7 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pFrame`  
+ [in] *pFrame*  
  İşaretçi [CPaneFrameWnd sınıfı](../../mfc/reference/cpaneframewnd-class.md) Bölmesi penceresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1252,7 +1252,7 @@ afx_msg BOOL OnNcActivate(BOOL bActive);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bActive`  
+ [in] *bActive*  
  `TRUE` Etkin çerçeve çizmek için; `FALSE` etkin olmayan çerçeve çizmek için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1270,10 +1270,10 @@ afx_msg void OnNcCalcSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bCalcValidRects`  
+ [in] *bCalcValidRects*  
  `TRUE` olduğunda uygulamanın geçerli istemci alanını belirtmesi gerekir; Aksi takdirde `FALSE`.  
   
- [in] `lpncsp`  
+ [in] *lpncsp*  
  İşaretçi bir `NCCALCSIZE_PARAMS` çerçeve boyut değişiklikleri içeren yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1286,7 +1286,7 @@ afx_msg LRESULT OnNcHitTest(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Ekran koordinatları işaretçinin konumu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1304,10 +1304,10 @@ afx_msg void OnNcMouseMove(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nHitTest`  
+ [in] *nHitTest*  
  Bir işaretçi Enum değeri ulaştı. Olası değerler listesi için bkz: [WM_NCHITTEST bildirim](http://msdn.microsoft.com/library/windows/desktop/ms645618).  
   
- [in] `point`  
+ [in] *noktası*  
  Ekran koordinatları işaretçinin konumu.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1329,7 +1329,7 @@ afx_msg BOOL OnPaneCheck(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Bölme denetim kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1347,10 +1347,10 @@ afx_msg LRESULT OnPostPreviewFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `wParam`  
+ [in] *wParam*  
  Bu parametre kullanılmaz.  
   
- [in] `lParam`  
+ [in] *lParam*  
  `TRUE` Çerçeve baskı önizleme modunda olduğunda; `FALSE` Baskı Önizleme modunu devre dışı olduğunda.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1368,10 +1368,10 @@ afx_msg LRESULT OnPowerBroadcast(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `wp`  
+ [in] *wp*  
  Güç yönetimi olayı. Olası değerler listesi için bkz: [WM_POWERBROADCAST ileti](http://msdn.microsoft.com/library/windows/desktop/aa373247).  
   
- [in] `lp`  
+ [in] *lp*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1391,13 +1391,13 @@ BOOL OnSetMenu(HMENU hmenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `wp`  
+ [in] *wp*  
  Yeni çerçeve penceresi menüsüne işleyin.  
   
- [in] `lp`  
+ [in] *lp*  
  Yeni Pencere menüsü işleyin.  
   
- [in] `hmenu`  
+ [in] *hmenu*  
  Yeni çerçeve penceresi menüsüne işleyin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1417,10 +1417,10 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bPreview`  
+ [in] *bPreview*  
  `TRUE` Baskı önizlemeyi etkinleştirmek için; `FALSE` Baskı Önizleme devre dışı bırakmak için.  
   
- [in] `pState`  
+ [in] *pState*  
  İşaretçi bir `CPrintPreviewState` çerçeve durumu yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1435,10 +1435,10 @@ afx_msg LRESULT OnSetText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `wParam`  
+ [in] *wParam*  
  Bu parametre kullanılmaz.  
   
- [in] `lParam`  
+ [in] *lParam*  
  Pencere için metin işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1456,10 +1456,10 @@ virtual BOOL OnShowCustomizePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMenuPane`  
+ [in] *pMenuPane*  
  Hızlı bir işaretçi bölmesinde özelleştirin.  
   
- [in] `uiToolbarID`  
+ [in] *uiToolbarID*  
  Denetim Kimliği özelleştirme araç.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1476,16 +1476,16 @@ virtual BOOL OnShowPanes(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  `TRUE` Uygulama bölmeleri gösterir `FALSE` Aksi takdirde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem her zaman dönüş `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama bölmeleri gösterir, `bShow` olan `TRUE` ve bölmeleri gizli veya ne zaman `bShow` olan `FALSE` bölmeleri görülebilir.  
+ Varsayılan uygulama bölmeleri gösterir, *bBilgi Göster* olan `TRUE` ve bölmeleri gizli veya ne zaman *bBilgi Göster* olan `FALSE` bölmeleri görülebilir.  
   
- Varsayılan uygulama, bölmeleri gizler `bShow` olan `TRUE` bölmeleri görülebilir veya ne zaman `bShow` olan `FALSE` ve bölmeleri gizlenir.  
+ Varsayılan uygulama, bölmeleri gizler *bBilgi Göster* olan `TRUE` bölmeleri görülebilir veya ne zaman *bBilgi Göster* olan `FALSE` ve bölmeleri gizlenir.  
   
  Türetilen bir sınıfta framework gösterir veya gizler bölmeleri özel kod yürütmek için bu yöntemi geçersiz kılın.  
   
@@ -1497,7 +1497,7 @@ virtual BOOL OnShowPopupMenu(CMFCPopupMenu* pMenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMenu`  
+ [in] *pMenu*  
  Açılır menü için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1517,13 +1517,13 @@ afx_msg void OnSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nType`  
- Yeniden boyutlandırma türü. Olası değerler için parametre bkz `wParam` içinde [WM_SIZE bildirim](http://msdn.microsoft.com/library/windows/desktop/ms632646).  
+ [in] *nTür*  
+ Yeniden boyutlandırma türü. Olası değerler için parametre bkz *wParam* içinde [WM_SIZE bildirim](http://msdn.microsoft.com/library/windows/desktop/ms632646).  
   
- [in] `cx`  
+ [in] *cx*  
  Yeni Çerçeve piksel cinsinden genişliği.  
   
- [in] `cy`  
+ [in] *cy*  
  Yeni Çerçeve piksel cinsinden yüksekliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1538,10 +1538,10 @@ afx_msg void OnSizing(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `fwSide`  
- Kenarın çerçevenin taşınır. Bkz. parametre `wParam` içinde [WM_SIZING bildirim](http://msdn.microsoft.com/library/windows/desktop/ms632647).  
+ [in] *fwSide*  
+ Kenarın çerçevenin taşınır. Bkz. parametre *wParam* içinde [WM_SIZING bildirim](http://msdn.microsoft.com/library/windows/desktop/ms632647).  
   
- [içinde out] `pRect`  
+ [içinde out] *pRect*  
  İşaretçi bir [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [RECT](../../mfc/reference/rect-structure1.md) çerçeve koordinatları içeren yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1565,10 +1565,10 @@ virtual BOOL OnTearOffMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMenuPopup`  
+ [in] *pMenuPopup*  
  Açılır menü için bir işaretçi.  
   
- [in] `pBar`  
+ [in] *pBar*  
  Bir işaretçi etiketleri çubuğuna.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1589,10 +1589,10 @@ afx_msg LRESULT OnToolbarContextMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `wp`  
+ [in] *wp*  
  Bu parametre kullanılmaz.  
   
- [in] `lp`  
+ [in] *lp*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1610,10 +1610,10 @@ afx_msg LRESULT OnToolbarCreateNew(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `wp`  
+ [in] *wp*  
  Bu parametre kullanılmaz.  
   
- [in] `lp`  
+ [in] *lp*  
  Araç çubuğunun başlık çubuğu için metin işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1634,7 +1634,7 @@ afx_msg LRESULT OnToolbarDelete(
  [in]  
  Bu parametre kullanılmaz.  
   
- [in] `lp`  
+ [in] *lp*  
  Araç çubuğu işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1650,7 +1650,7 @@ virtual void OnUpdateFrameMenu(HMENU hMenuAlt);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hMenuAlt`  
+ [in] *hMenuAlt*  
  Alternatif menüsüne işleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1663,7 +1663,7 @@ virtual void OnUpdateFrameTitle(BOOL bAddToTitle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bAddToTitle`  
+ [in] *bAddToTitle*  
  `TRUE` çerçeve penceresi başlık çubuğunda etkin belgeyi başlık eklemek için; Aksi takdirde `FALSE.`  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1676,7 +1676,7 @@ afx_msg void OnUpdatePaneMenu(CCmdUI* pCmdUI);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pCmdUI`  
+ [in] *pCmdUI*  
  Bölmesinde kullanıcı arabirimi nesnesine işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1689,7 +1689,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS FAR* lpwndpos);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpwndpos`  
+ [in] *lpwndpos*  
  İşaretçi bir [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) yeni boyutunu ve konumunu içeren yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1712,28 +1712,28 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Ekran koordinatları kontrol noktasının.  
   
- [in] `nSensitivity`  
+ [in] *nSensitivity*  
  Her denetim çubuğu sınırlayıcı dikdörtgenini noktası için arama yaparken bu miktarda genişletin.  
   
- [in] `bExactBar`  
- `TRUE` yoksaymak için `nSensitivity` parametresi; Aksi halde, `FALSE`.  
+ [in] *bExactBar*  
+ `TRUE` yoksaymak için *nSensitivity* parametresi; Aksi halde, `FALSE`.  
   
- [in] `pRTCBarType`  
+ [in] *pRTCBarType*  
  Aksi takdirde `NULL`, yalnızca belirtilen türe ait denetim çubukları yöntemi arar.  
   
- [out] `dwAlignment`  
+ [out] *dwAlignment*  
  Başarılı olursa, bu parametre belirtilen noktasına en yakın olan denetim çubuğu tarafında yer alır. Aksi takdirde, bu parametre başlatılmadı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi içeren denetim çubuğu `point`; `NULL` hiçbir denetim bulunursa.  
+ Bir işaretçi içeren denetim çubuğu *noktası*; `NULL` hiçbir denetim bulunursa.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, uygulamanız için tüm denetim çubukları arar bir `point`.  
+ Bu yöntem, uygulamanız için tüm denetim çubukları arar bir *noktası*.  
   
- Kullanım `nSensitivity` arama alanı boyutunu artırabilirsiniz. Kullanım `pRTCBarType` yöntemi arar denetim çubukları türlerini kısıtlayacak şekilde.  
+ Kullanım *nSensitivity* arama alanı boyutunu artırabilirsiniz. Kullanım *pRTCBarType* yöntemi arar denetim çubukları türlerini kısıtlayacak şekilde.  
   
 ##  <a name="pretranslatemessage"></a>  CFrameWndEx::PreTranslateMessage  
  Bunlar gönderilir önce belirli bir pencere iletileri işler.  
@@ -1743,7 +1743,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMsg`  
+ [in] *pMsg*  
  Bir işaretçi bir [MSG](../../mfc/reference/msg-structure1.md) işlemek için ileti içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1759,7 +1759,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bNotify`  
+ [in] *bNotify*  
  OLE istemci öğesi Düzen değiştirme hakkında bilgilendirmek belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1778,19 +1778,19 @@ void RemovePaneFromDockManager(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  Bir işaretçi kaldırmak için denetim çubuğu bölmesine.  
   
- [in] `bDestroy`  
+ [in] *bDestroy*  
  `TRUE` denetim çubuğu kaldırdıktan sonra yok etmek için; `FALSE` Aksi takdirde.  
   
- [in] `bAdjustLayout`  
+ [in] *bAdjustLayout*  
  `TRUE` yerleştirme düzeni ayarlamak için; `FALSE` Aksi takdirde.  
   
- [in] `bAutoHide`  
+ [in] *bAutoHide*  
  `TRUE` denetim çubuğu otomatik olarak gizle modundaysa; `FALSE` Aksi takdirde.  
   
- [in] `pBarReplacement`  
+ [in] *pBarReplacement*  
  Bir işaretçi bir bölmesine kaldırılan bölmesinde yerini alır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1806,7 +1806,7 @@ void SetDockState(const CDockState& state);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `state`  
+ *durumu*  
  Takma durumu. Bu parametre yoksayıldı.  
   
 ##  <a name="setprintpreviewframe"></a>  CFrameWndEx::SetPrintPreviewFrame  
@@ -1817,7 +1817,7 @@ void SetPrintPreviewFrame(CFrameWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Baskı Önizleme çerçeve penceresi işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1833,17 +1833,17 @@ void SetupToolbarMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `menu`  
+ [in] *menüsü*  
  A `CMenu` değiştirilecek nesne.  
   
- [in] `uiViewUserToolbarCmdFirst`  
+ [in] *uiViewUserToolbarCmdFirst*  
  İlk kullanıcı tanımlı komutu.  
   
- [in] `uiViewUserToolbarCmdLast`  
+ [in] *uiViewUserToolbarCmdLast*  
  Son kullanıcı tarafından tanımlanan komutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework komutlarının kullanıcı tanımlı bir listede depolar. Kullanım `uiViewUserToolbarCmdFirst` ve `uiViewUserToolbarCmdList` komutları eklemek için dizinler belirtmek için.  
+ Framework komutlarının kullanıcı tanımlı bir listede depolar. Kullanım *uiViewUserToolbarCmdFirst* ve *uiViewUserToolbarCmdList* komutları eklemek için dizinler belirtmek için.  
   
 ##  <a name="showfullscreen"></a>  CFrameWndEx::ShowFullScreen  
  Ana çerçeve tam ekran modu ve normal modu arasında geçiş yapar.  
@@ -1864,16 +1864,16 @@ void ShowPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
+ [in] *pBar*  
  Denetim çubuğu göstermek veya gizlemek için bir işaretçi.  
   
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  Varsa `TRUE`, uygulama denetim çubuğu gösterir. Aksi takdirde, uygulama denetim çubuğu gizler.  
   
- [in] `bDelay`  
+ [in] *bDelay*  
  Varsa `TRUE`, yerleştirme düzenini ayarlama framework çağrıları kadar gecikme [CFrameWndEx::AdjustDockingLayout](#adjustdockinglayout). Aksi takdirde, yerleştirme düzeni hemen yeniden hesaplayın.  
   
- [in] `bActivate`  
+ [in] *bActivate*  
  Varsa `TRUE`, denetim çubuğu etkin hale. Aksi durumda, etkin olmayan bir durumda denetim çubuğu gösteriliyor.  
   
 ##  <a name="updatecaption"></a>  CFrameWndEx::UpdateCaption  
@@ -1895,10 +1895,10 @@ virtual void WinHelp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwData`  
- Bağımlı veri `nCmd` parametresi. Olası değerler listesi için bkz: [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267).  
+ *dwData*  
+ Bağımlı veri *nCmd* parametresi. Olası değerler listesi için bkz: [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267).  
   
- `nCmd`  
+ *nCmd*  
  Help komutu. Olası değerler listesi için bkz: [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267).  
   
 ### <a name="remarks"></a>Açıklamalar  

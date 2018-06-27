@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cce09994cf7dabdff1508ae5e12778ce6032624b
-ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
+ms.openlocfilehash: d46150ee76219732d0895e818fa00c68dc588853
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36322517"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957396"
 ---
 # <a name="tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes"></a>TN055: MFC ODBC Veritabanı Sınıfı Uygulamalarını MFC DAO Sınıflarına Geçirme
 
@@ -99,9 +99,9 @@ Uygulamanızı etkiler ve birden çok basit bir ad değişiklik gerektiren önem
 
    ODBC sınıfları MFC makroları aracılığıyla bu seçenekler tanımlamak için gerekli veya türleri numaralandırılır.
 
-   DAO sınıfları ile DAO üstbilgi dosyası (DBDAOINT. Bu seçeneklerinde tanımını sağlar. H). Bu nedenle kayıt kümesi türü numaralandırılmış bir üyesi olan `CRecordset`, ancak DAO ile bir sabit yerine değil. Örneğin kullanırsınız `snapshot` türünü belirtirken `CRecordset` ODBC'de ancak `DB_OPEN_SNAPSHOT` türünü belirtirken `CDaoRecordset`.
+   DAO sınıfları ile DAO üstbilgi dosyası (DBDAOINT. Bu seçeneklerinde tanımını sağlar. H). Bu nedenle kayıt kümesi türü numaralandırılmış bir üyesi olan `CRecordset`, ancak DAO ile bir sabit yerine değil. Örneğin kullanırsınız **anlık görüntü** türünü belirtirken `CRecordset` ODBC'de ancak **DB_OPEN_SNAPSHOT** türünü belirtirken `CDaoRecordset`.
 
-- Varsayılan kayıt kümesi türü `CRecordset` olan `snapshot` while için varsayılan kayıt kümesi türü `CDaoRecordset` olan `dynaset` (ODBC sınıf anlık görüntüler hakkında ek bir sorun için aşağıdaki nota bakın).
+- Varsayılan kayıt kümesi türü `CRecordset` olan **anlık görüntü** while için varsayılan kayıt kümesi türü `CDaoRecordset` olan **dynaset** (ODBC sınıf anlık görüntüler hakkında ek bir sorun için aşağıdaki nota bakın).
 
 - ODBC `CRecordset` sınıfı bir salt iletme kayıt kümesi türü oluşturmak için bir seçenek vardır. İçinde `CDaoRecordset` sınıfı, salt iletme kayıt kümesi türü ancak bunun yerine bir özellik (veya seçeneği), belirli türde bir kayıt kümeleri değil.
 
@@ -111,7 +111,7 @@ Uygulamanızı etkiler ve birden çok basit bir ad değişiklik gerektiren önem
 
 - Özel durum sınıfı değiştirildi. `CDBExceptions` ODBC sınıfları oluşturulur ve `CDaoExceptions` DAO sınıflardaki.
 
-- `RFX_Date` kullanan `CTime` ve `TIMESTAMP_STRUCT` sırasında nesneleri `DFX_Date` kullanan `COleDateTime`. `COleDateTime` Hemen hemen aynıdır `CTime`, 8-bayt OLE üzerinde temel ancak `DATE` 4-bayt yerine `time_t` çok daha geniş bir yelpazede veri tutabilen şekilde.
+- `RFX_Date` kullanan `CTime` ve `TIMESTAMP_STRUCT` sırasında nesneleri `DFX_Date` kullanan `COleDateTime`. `COleDateTime` Hemen hemen aynıdır `CTime`, 8-bayt OLE üzerinde temel ancak **tarih** 4-bayt yerine **time_t** çok daha geniş bir yelpazede veri tutabilen şekilde.
 
    > [!NOTE]
    > DAO (`CDaoRecordset`) ODBC salt okunur anlık görüntüler (`CRecordset`) anlık görüntüleri sürücü ve ODBC imleç kitaplığı kullanımını bağlı olarak güncelleştirilebilir. İmleç kitaplığı kullanıyorsanız `CRecordset` anlık görüntüleri güncelleştirilebilir. ODBC imleç kitaplığı Microsoft sürücüleri Masaüstü Sürücü Paketi 3.0 kullanıyorsanız, `CRecordset` salt okunur anlık görüntüler. Başka bir sürücü kullanıyorsanız, olmadığını görmek için sürücünün belgelerine bakın anlık görüntüler (`STATIC_CURSORS`) salt okunurdur.

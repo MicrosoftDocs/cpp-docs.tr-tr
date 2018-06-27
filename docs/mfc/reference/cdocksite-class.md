@@ -96,12 +96,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a374496c731e33d13de3ece893fe2ff046d38e7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cb5745d5c4ccc495cd508df10f0d36e3729ecf13
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371383"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952564"
 ---
 # <a name="cdocksite-class"></a>CDockSite sınıfı
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -189,8 +189,8 @@ CDockingPanesRow* AddRow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pos`  
- [in] `nHeight`  
+ [in] *pos*  
+ [in] *nHeight*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -225,9 +225,9 @@ void AlignDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rectToAlignBy`  
- [in] `rectResult`  
- [in] `bMoveImmediately`  
+ [in] *rectToAlignBy*  
+ [in] *rectResult*  
+ [in] *bMoveImmediately*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -241,8 +241,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bStretch`  
- [in] `bHorz`  
+ [in] *bStretch*  
+ [in] *bHorz*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -256,7 +256,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -276,12 +276,12 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwStyleEx`  
- [in] `dwStyle`  
- [in] `rect`  
- [in] `pParentWnd`  
- [in] `dwControlBarStyle`  
- [in] `pContext`  
+ [in] *dwStyleEx*  
+ [in] *dwStyle*  
+ [in] *rect*  
+ [in] *pParentWnd*  
+ [in] *dwControlBarStyle*  
+ [in] *pContext*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -298,9 +298,9 @@ virtual CDockingPanesRow* CreateRow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParentDockBar`  
- [in] `nOffset`  
- [in] `nRowHeight`  
+ [in] *pParentDockBar*  
+ [in] *nOffset*  
+ [in] *nRowHeight*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -317,9 +317,9 @@ virtual void DockPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
- [in] `dockMethod`  
- [in] `lpRect`  
+ [in] *pWnd*  
+ [in] *dockMethod*  
+ [in] *lpRect*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -333,10 +333,10 @@ virtual BOOL DockPaneLeftOf(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] [out] `pBarToDock`  
- Bir işaretçi solunda yerleşik bölmesine `pTargetBar`.  
+ [in] [out] *pBarToDock*  
+ Bir işaretçi solunda yerleşik bölmesine *pTargetBar*.  
   
- [in] [out] `pTargetBar`  
+ [in] [out] *pTargetBar*  
  Hedef bölmesi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -363,7 +363,7 @@ CPane* FindPaneByID(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Komut Kimliği bulunamadı bölmesinin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -379,7 +379,7 @@ int FindRowIndex(CDockingPanesRow* pRow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pRow`  
+ [in] *pRow*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -456,7 +456,7 @@ bool IsLastRow(CDockingPanesRow* pRow) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pRow`  
+ [in] *pRow*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -472,8 +472,8 @@ BOOL IsRectWithinDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rect`  
- [in] `ptDelta`  
+ [in] *rect*  
+ [in] *ptDelta*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -501,9 +501,9 @@ virtual BOOL MovePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
- [in] `nFlags`  
- [in] `ptOffset`  
+ [in] *pWnd*  
+ [in] *nFlags*  
+ [in] *ptOffset*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -517,7 +517,7 @@ virtual void OnInsertRow(POSITION pos);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pos`  
+ [in] *pos*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -531,8 +531,8 @@ virtual void OnRemoveRow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pos`  
- [in] `bByShow`  
+ [in] *pos*  
+ [in] *bByShow*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -546,8 +546,8 @@ virtual int OnResizeRow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pRowToResize`  
- [in] `nOffset`  
+ [in] *pRowToResize*  
+ [in] *nOffset*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -565,10 +565,10 @@ virtual void OnSizeParent(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rectAvailable`  
- [in] `nSide`  
- [in] `bExpand`  
- [in] `nOffset`  
+ [in] *rectAvailable*  
+ [in] *nSide*  
+ [in] *bExpand*  
+ [in] *nOffset*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -583,9 +583,9 @@ virtual BOOL OnSetWindowPos(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndInsertAfter`  
- [in] `rectWnd`  
- [in] `nFlags`  
+ [in] *pWndInsertAfter*  
+ [in] *rectWnd*  
+ [in] *nFlags*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -601,8 +601,8 @@ virtual void OnShowRow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pos`  
- [in] `bShow`  
+ [in] *pos*  
+ [in] *bBilgi Göster*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -614,7 +614,7 @@ virtual CPane* PaneFromPoint(CPoint pt);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pt`  
+ [in] *pt*  
  Alınacak bölmesinin ekran koordinatları bir nokta.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -632,8 +632,8 @@ static int __stdcall RectSideFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rect`  
- [in] `point`  
+ [in] *rect*  
+ [in] *noktası*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -649,8 +649,8 @@ virtual void RemovePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
- [in] `dockMethod`  
+ [in] *pWnd*  
+ [in] *dockMethod*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -662,7 +662,7 @@ void RemoveRow(CDockingPanesRow* pRow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pRow`  
+ [in] *pRow*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -676,8 +676,8 @@ BOOL ReplacePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pOldBar`  
- [in] `pNewBar`  
+ [in] *pOldBar*  
+ [in] *pNewBar*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -691,7 +691,7 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rectNewClientArea`  
+ [in] *rectNewClientArea*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -705,8 +705,8 @@ void ResizeDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nNewWidth`  
- [in] `nNewHeight`  
+ [in] *nNewWidth*  
+ [in] *nNewHeight*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -721,9 +721,9 @@ int ResizeRow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pRow`  
- [in] `nNewSize`  
- [in] `bAdjustLayout`  
+ [in] *pRow*  
+ [in] *nNewSize*  
+ [in] *bAdjustLayout*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -741,16 +741,16 @@ virtual BOOL ShowPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] [out] `pBar`  
+ [in] [out] *pBar*  
  Bir işaretçi gösterileceğini veya gizleneceğini için bölmesine.  
   
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  `TRUE` bölmesinde gösterilecek olduğunu belirtmek için; `FALSE` bölmesinde gizlenecek olduğunu belirtmek için.  
   
- [in] `bDelay`  
+ [in] *bDelay*  
  `TRUE` bölmesinde düzenini kadar bölmesinde sonra Gecikmeli belirtmek için gösterilir; Aksi takdirde `FALSE`.  
   
- [in] `bActivate`  
+ [in] *bActivate*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -770,9 +770,9 @@ void ShowRow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pRow`  
- [in] `bShow`  
- [in] `bAdjustLayout`  
+ [in] *pRow*  
+ [in] *bBilgi Göster*  
+ [in] *bAdjustLayout*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -786,8 +786,8 @@ void SwapRows(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pFirstRow`  
- [in] `pSecondRow`  
+ [in] *pFirstRow*  
+ [in] *pSecondRow*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

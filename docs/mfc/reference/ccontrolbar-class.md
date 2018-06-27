@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 443e55ab69bc9585a780374a82d5d99b0fd9eef9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5d6eb567babdea0d747e6b684f6373403cb685c6
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33356038"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956674"
 ---
 # <a name="ccontrolbar-class"></a>CControlBar sınıfı
 Denetim çubuğu sınıfları için temel sınıf [CStatusBar](../../mfc/reference/cstatusbar-class.md), [CToolBar](../../mfc/reference/ctoolbar-class.md), [CDialogBar](../../mfc/reference/cdialogbar-class.md), [CReBar](../../mfc/reference/crebar-class.md), ve [ COleResizeBar](../../mfc/reference/coleresizebar-class.md).  
@@ -141,21 +141,21 @@ virtual CSize CalcDynamicLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nLength`  
- Yatay veya dikey bağlı olarak denetim çubuğunun istenen boyutu `dwMode`.  
+ *nLength*  
+ Yatay veya dikey bağlı olarak denetim çubuğunun istenen boyutu *dwMode*.  
   
- `nMode`  
+ *nMode*  
  Aşağıdaki önceden tanımlı bayrak dinamik denetim çubuğu genişliği ve yüksekliği belirlemek için kullanılır. Bit düzeyinde-OR kullanın (&#124;) bayrakları birleştirmek için işleci.  
   
 |Düzen modu bayrakları|Ne anlama geldiğini|  
 |-----------------------|-------------------|  
-|`LM_STRETCH`|Denetim çubuğu çerçevesinin boyutunu uzatılmış olup olmadığını gösterir. Çubuk (yerleştirme için kullanılamaz) bir takma çubuğu değilse ayarlayın. Çubuğu yerleşik veya kayan olduğunda (yerleştirme için kullanılabilir) ayarlanmadı. Varsa ayarlayın, `LM_STRETCH` yoksayar `nLength` ve temel boyutları döndürür `LM_HORZ` durumu. `LM_STRETCH` benzer şekilde çalışır `bStretch` kullanılan parametre [CalcFixedLayout](#calcfixedlayout); bu üye işlevi uzatma ve yönlendirmesini arasındaki ilişki hakkında daha fazla bilgi için bkz.|  
-|`LM_HORZ`|Çubuk yatay veya dikey olarak yönlendirilmiş olduğunu gösterir. Çubuk yatay olarak yönlendirilmiş ise ve dikey olarak yönlendirilmiş ise ayarlı değil ayarlayın. `LM_HORZ` benzer şekilde çalışır `bHorz` kullanılan parametre [CalcFixedLayout](#calcfixedlayout); bu üye işlevi uzatma ve yönlendirmesini arasındaki ilişki hakkında daha fazla bilgi için bkz.|  
-|**LM_MRUWIDTH**|En son dinamik genişliği kullanılır. Yoksayar `nLength` parametresi ve kullandığı hatırlanan en son genişliği kullanılır.|  
-|`LM_HORZDOCK`|Yatay boyutları yerleştirildi. Yoksayar `nLength` parametre ve en büyük genişliği ile dinamik boyutu döndürür.|  
-|`LM_VERTDOCK`|Dikey boyutları yerleştirildi. Yoksayar `nLength` parametre ve en fazla yüksekliği dinamik boyutuyla döndürür.|  
-|`LM_LENGTHY`|Ayarlanabilir `nLength` genişliği yerine yüksekliği (Y yönü) gösterir.|  
-|`LM_COMMIT`|Sıfırlar **LM_MRUWIDTH** kayan denetim çubuğu geçerli genişliğine.|  
+|`LM_STRETCH`|Denetim çubuğu çerçevesinin boyutunu uzatılmış olup olmadığını gösterir. Çubuk (yerleştirme için kullanılamaz) bir takma çubuğu değilse ayarlayın. Çubuğu yerleşik veya kayan olduğunda (yerleştirme için kullanılabilir) ayarlanmadı. Varsa ayarlayın, `LM_STRETCH` yoksayar *nLength* ve temel boyutları döndürür `LM_HORZ` durumu. `LM_STRETCH` benzer şekilde çalışır *bStretch* kullanılan parametre [CalcFixedLayout](#calcfixedlayout); bu üye işlevi uzatma ve yönlendirmesini arasındaki ilişki hakkında daha fazla bilgi için bkz.|  
+|`LM_HORZ`|Çubuk yatay veya dikey olarak yönlendirilmiş olduğunu gösterir. Çubuk yatay olarak yönlendirilmiş ise ve dikey olarak yönlendirilmiş ise ayarlı değil ayarlayın. `LM_HORZ` benzer şekilde çalışır *bHorz* kullanılan parametre [CalcFixedLayout](#calcfixedlayout); bu üye işlevi uzatma ve yönlendirmesini arasındaki ilişki hakkında daha fazla bilgi için bkz.|  
+|`LM_MRUWIDTH`|En son dinamik genişliği kullanılır. Yoksayar *nLength* parametresi ve kullandığı hatırlanan en son genişliği kullanılır.|  
+|`LM_HORZDOCK`|Yatay boyutları yerleştirildi. Yoksayar *nLength* parametre ve en büyük genişliği ile dinamik boyutu döndürür.|  
+|`LM_VERTDOCK`|Dikey boyutları yerleştirildi. Yoksayar *nLength* parametre ve en fazla yüksekliği dinamik boyutuyla döndürür.|  
+|`LM_LENGTHY`|Ayarlanabilir *nLength* genişliği yerine yüksekliği (Y yönü) gösterir.|  
+|`LM_COMMIT`|Sıfırlar `LM_MRUWIDTH` kayan denetim çubuğu geçerli genişliğine.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Denetim çubuğu boyutu piksel cinsinden bir [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi.  
@@ -173,11 +173,11 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bStretch`  
- Çubuğu çerçevesinin boyutunu uzatılmış olup olmadığını gösterir. `bStretch` Parametresi olduğunda sıfır olmayan çubuğu bir takma çubuğu (yerleştirme için kullanılamaz) değil ve yerleşik veya kayan olduğunda 0 (yerleştirme için kullanılabilir).  
+ *bStretch*  
+ Çubuğu çerçevesinin boyutunu uzatılmış olup olmadığını gösterir. *BStretch* parametresi olduğunda sıfır olmayan çubuğu bir takma çubuğu (yerleştirme için kullanılamaz) değil ve yerleşik veya kayan olduğunda 0 (yerleştirme için kullanılabilir).  
   
- `bHorz`  
- Çubuk yatay veya dikey olarak yönlendirilmiş olduğunu gösterir. `bHorz` Çubuğu yatay olarak yönlendirilmiş ve dikey olarak yönlendirilmiş ise 0 ise parametresi sıfırdan farklı.  
+ *bHorz*  
+ Çubuk yatay veya dikey olarak yönlendirilmiş olduğunu gösterir. *BHorz* çubuğu yatay olarak yönlendirilmiş ve dikey olarak yönlendirilmiş ise 0 ise parametresi sıfırdan farklı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Denetim çubuğu boyutu piksel cinsinden bir `CSize` nesnesi.  
@@ -185,7 +185,7 @@ virtual CSize CalcFixedLayout(
 ### <a name="remarks"></a>Açıklamalar  
  Denetim çubukları araç çubukları gibi yatay uzatabilirsiniz veya dikey düğmeleri uyum sağlamak için denetim çubuğunda bulunan.  
   
- Varsa `bStretch` olan **TRUE**, boyut tarafından sağlanan yönlendirme boyunca uzatma `bHorz`. Diğer bir deyişle, varsa `bHorz` olan **yanlış**, denetim çubuğu dikey olarak genişletilir. Varsa `bStretch` olan **yanlış**, hiçbir esnetme oluşur. Aşağıdaki tabloda, olası alternatifler ve sonuçta elde edilen denetim çubuğu stilleri gösterir `bStretch` ve `bHorz`.  
+ Varsa *bStretch* olan **TRUE**, boyut tarafından sağlanan yönlendirme boyunca uzatma *bHorz*. Diğer bir deyişle, varsa *bHorz* olan **yanlış**, denetim çubuğu dikey olarak genişletilir. Varsa *bStretch* olan **yanlış**, hiçbir esnetme oluşur. Aşağıdaki tabloda, olası alternatifler ve sonuçta elde edilen denetim çubuğu stilleri gösterir *bStretch* ve *bHorz*.  
   
 |bStretch|bHorz|Uzatma|Yönlendirme|Yerleştirme değil yerleştirme|  
 |--------------|-----------|----------------|-----------------|--------------------------|  
@@ -204,11 +204,11 @@ virtual void CalcInsideRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rect`  
+ *Rect*  
  Denetim çubuğu geçerli boyutlarını içerir; kenarlıkları dahil olmak üzere.  
   
- `bHorz`  
- Çubuk yatay veya dikey olarak yönlendirilmiş olduğunu gösterir. `bHorz` Çubuğu yatay olarak yönlendirilmiş ve dikey olarak yönlendirilmiş ise 0 ise parametresi sıfırdan farklı.  
+ *bHorz*  
+ Çubuk yatay veya dikey olarak yönlendirilmiş olduğunu gösterir. *BHorz* çubuğu yatay olarak yönlendirilmiş ve dikey olarak yönlendirilmiş ise 0 ise parametresi sıfırdan farklı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Denetim çubuğu boyanır önce bu işlev çağrılır.  
@@ -230,7 +230,7 @@ virtual void DoPaint(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Kenarlıklar ve denetim çubuğunun Mandal çizmek için kullanılacak cihaz bağlamı noktalarına.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -248,10 +248,10 @@ virtual void DrawBorders(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Denetim çubuğu Kenarlıkları çizmek için kullanılacak cihaz bağlamı noktalarına.  
   
- `rect`  
+ *Rect*  
  A `CRect` denetim çubuğu boyutlarını içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -267,10 +267,10 @@ virtual void DrawGripper(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Denetim çubuğu Mandal çizmek için kullanılacak cihaz bağlamı noktalarına.  
   
- `rect`  
+ *Rect*  
  A `CRect` denetim çubuğu Mandal boyutlarını içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -284,7 +284,7 @@ void EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDockStyle`  
+ *dwDockStyle*  
  Denetim çubuğu yerleştirme destekleyip desteklemediğini ve kendisine denetim çubuğu yerleşik, kendi üst penceresi yanlarından destekleniyorsa belirtir. Aşağıdakilerden birini veya birkaçını olabilir:  
   
 - `CBRS_ALIGN_TOP` İstemci alanının üstünde yerleştirme sağlar.  
@@ -325,7 +325,7 @@ CRect GetBorders() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `CRect` her iki tarafındaki denetim çubuğu nesnesi geçerli genişliğini (piksel cinsinden) içeren nesne. Örneğin, değeri `left` üyesi, [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne, sol kenarlık genişliği.  
+ A `CRect` her iki tarafındaki denetim çubuğu nesnesi geçerli genişliğini (piksel cinsinden) içeren nesne. Örneğin, değeri *sol* üyesi, [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne, sol kenarlık genişliği.  
   
 ##  <a name="getcount"></a>  CControlBar::GetCount  
  Olmayan sayısını döndürür `HWND` üzerinde öğelerini `CControlBar` nesnesi.  
@@ -376,9 +376,9 @@ BOOL m_bAutoDelete;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `m_bAutoDelete` tür genel bir değişkendir **BOOL**.  
+ *m_bAutoDelete* tür genel bir değişkendir **BOOL**.  
   
- Denetim çubuğu nesne, genellikle bir çerçeve penceresi nesnesinde katıştırılır. Bu durumda, `m_bAutoDelete` çerçeve pencere bozulduğunda katıştırılmış denetim çubuğu nesnesi yok olduğundan 0'dır.  
+ Denetim çubuğu nesne, genellikle bir çerçeve penceresi nesnesinde katıştırılır. Bu durumda, *m_bAutoDelete* çerçeve pencere bozulduğunda katıştırılmış denetim çubuğu nesnesi yok olduğundan 0'dır.  
   
  Bu değişken tahsis sıfır olmayan bir değere ayarlamanız bir `CControlBar` öbek ve nesnesinde değil çağırmak planlama **silmek**.  
   
@@ -399,10 +399,10 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pTarget`  
+ *pTarget*  
  Uygulamanın ana çerçeve penceresi noktalarına. Bu işaretçinin güncelleştirme iletileri yönlendirmek için kullanılır.  
   
- `bDisableIfNoHndler`  
+ *bDisableIfNoHndler*  
  Güncelleştirme işleyicisi sahip bir denetim otomatik olarak devre dışı görüntülenmesi gerekip gerekmediğini belirten bayrak.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -418,7 +418,7 @@ void SetBarStyle(DWORD dwStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwStyle`  
+ *dwStyle*  
  Denetim çubuğu için istenen stilleri. Aşağıdakilerden birini veya birkaçını olabilir:  
   
 - `CBRS_ALIGN_TOP` Çerçeve penceresi istemci alanının üstüne yerleştirilmiş denetim çubuğu sağlar.  
@@ -445,7 +445,7 @@ void SetBarStyle(DWORD dwStyle);
   
 - `CBRS_FLYBY` Araç ipuçları aynı zamanda güncelleştirilmesi ileti metni neden olur.  
   
-- **CBRS_GRIPPER** bantları içinde kullanılan benzeyen bir Mandal neden olan bir **CReBar** için çizilecek nesne `CControlBar`-türetilmiş sınıf.  
+- `CBRS_GRIPPER` Kavrayıcının, benzer şekilde bant kullanılan neden olan bir `CReBar` için çizilecek nesne `CControlBar`-türetilmiş sınıf.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Etkilemez **WS_** (pencere stili) ayarlar.  
@@ -476,7 +476,7 @@ void SetBorders(LPCRECT lpRect);
  *cyBottom*  
  Denetim çubuğu alt kenarlık yüksekliği (piksel cinsinden).  
   
- `lpRect`  
+ *lpRect*  
  Bir işaretçi bir [CRect](../../atl-mfc-shared/reference/crect-class.md) her kenarlık denetim çubuğu nesnesinin geçerli genişliğini (piksel cinsinden) içeren nesne.  
   
 ### <a name="example"></a>Örnek  
@@ -492,7 +492,7 @@ void SetInPlaceOwner(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  Bir işaretçi bir `CWnd` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  

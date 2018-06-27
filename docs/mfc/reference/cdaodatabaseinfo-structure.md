@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7121915671f6e0ab52ae66c53e5ca31fa1faec1c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b10cd2d5c6174e63ff8aa74b4edc98b20375fae0
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33352746"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951939"
 ---
 # <a name="cdaodatabaseinfo-structure"></a>CDaoDatabaseInfo Yapısı
 `CDaoDatabaseInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan bir veritabanı nesnesi hakkında bilgiler içerir.  
@@ -43,10 +43,10 @@ struct CDaoDatabaseInfo
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `m_strName`  
+ *m_strName*  
  Veritabanı nesnesinin adlandıran. Bu özellik doğrudan almak için arama [CDaoDatabase::GetName](../../mfc/reference/cdaodatabase-class.md#getname). Ayrıntılar için DAO Yardımı'ndaki "Name özelliği" konusuna bakın.  
   
- `m_bUpdatable`  
+ *m_bUpdatable*  
  Değişiklikler veritabanına yapılan olup olmadığını gösterir. Bu özellik doğrudan almak için arama [CDaoDatabase::CanUpdate](../../mfc/reference/cdaodatabase-class.md#canupdate). Ayrıntılar için DAO Yardımı'ndaki "güncelleştirilebilir özellik" konusuna bakın.  
   
  *m_bTransactions*  
@@ -55,7 +55,7 @@ struct CDaoDatabaseInfo
  *m_strVersion*  
  Microsoft Jet veritabanı altyapısı sürümünü gösterir. Bu özelliğin değerini doğrudan almak için veritabanı nesnesi çağrısı [GetVersion](../../mfc/reference/cdaodatabase-class.md#getversion) üye işlevi. Ayrıntılar için DAO Yardımı'ndaki "Version özelliği" konusuna bakın.  
   
- `m_lCollatingOrder`  
+ *m_lCollatingOrder*  
  Dize karşılaştırma ve sıralama metninde sıralama düzenini dizisini belirtir. Olası değerler şunlardır:  
   
 - **dbSortGeneral** genel (İngilizce, Fransızca, Almanca, Portekizce, İtalyanca ve Modern İspanyolca) sıralama düzenini kullanın.  
@@ -99,7 +99,7 @@ struct CDaoDatabaseInfo
  *m_nQueryTimeout*  
  Microsoft Jet veritabanı altyapısı bir zaman aşımı hatası önce bekleyeceği saniye sayısını bir ODBC veritabanı sorgusu oluşur. Varsayılan zaman aşımı değeri 60 saniyedir. QueryTimeout 0 olarak ayarlandığında hiçbir zaman aşımı oluşur; Bu programın yanıt vermemesine neden olabilir. Bu özelliğin değerini doğrudan almak için veritabanı nesnesi çağrısı [GetQueryTimeout](../../mfc/reference/cdaodatabase-class.md#getquerytimeout) üye işlevi. Ayrıntılar için DAO Yardımı'ndaki "QueryTimeout özelliği" konusuna bakın.  
   
- `m_strConnect`  
+ *m_strConnect*  
  Açık bir veritabanını kaynak hakkında bilgi sağlar. Bilgi hakkında bağlantı dizesi ve bu özelliğin değerini doğrudan alma hakkında daha fazla bilgi için bkz: [CDaoDatabase::GetConnect](../../mfc/reference/cdaodatabase-class.md#getconnect) üye işlevi. Daha fazla bilgi için DAO Yardımı'nda "özellik Bağlan" konusuna bakın.  
   
 ## <a name="remarks"></a>Açıklamalar  

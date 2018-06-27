@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b76e4a0c0533ceb0200757f86f332d77c3b39ad
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1dfc1c4d5cf753ae102d7656e94d63923004d2cc
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33356498"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955667"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget sınıfı
 Microsoft Foundation Class Kitaplığı ileti eşleme mimarisi için temel sınıf.  
@@ -131,7 +131,7 @@ void BeginWaitCursor();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework'te kullanıcı gibi ne zaman meşgul olduğunu göstermek için bu işlevi çağıran bir **CDocument** nesne yükler veya kendisi bir dosyaya kaydeder.  
+ Framework'te kullanıcı gibi ne zaman meşgul olduğunu göstermek için bu işlevi çağıran bir `CDocument` nesne yükler veya kendisi bir dosyaya kaydeder.  
   
  Eylemleri `BeginWaitCursor` her zaman diğer eylemler olarak gibi tek bir ileti işleyicisi dışında etkin olmayan `OnSetCursor` işleme, imleci değiştirebilirsiniz.  
   
@@ -159,16 +159,16 @@ BOOL DoOleVerb(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iVerb`  
+ *iVerb*  
  Fiilin sayısal tanımlayıcı.  
   
- `lpMsg`  
+ *lpMsg*  
  İşaretçi [MSG](http://msdn.microsoft.com/library/windows/desktop/ms644958) fiili çağrılan olay (örneğin, bir çift tıklatın) açıklayan yapısı.  
   
- `hWndParent`  
+ *hWndParent*  
  Nesne içeren belge penceresine tanıtıcısı.  
   
- `lpRect`  
+ *lpRect*  
  İşaretçi [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) içeren nesneyi tanımlayan piksel cinsinden koordinatları yapısını dikdörtgende çevreleyen *hwndParent*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -228,11 +228,11 @@ BOOL EnumOleVerbs(LPENUMOLEVERB* ppenumOleVerb);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ppenumOleVerb`  
+ *ppenumOleVerb*  
  Bir işaretçi bir işaretçi bir [IEnumOLEVERB](http://msdn.microsoft.com/library/windows/desktop/ms695084) arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Nesne en az bir OLE fiil destekliyorsa TRUE (Bu durumda \* `ppenumOleVerb` işaret eden bir **IEnumOLEVERB** Numaralandırıcı arabirimi), aksi takdirde FALSE.  
+ Nesne en az bir OLE fiil destekliyorsa TRUE (Bu durumda \* *ppenumOleVerb* işaret eden bir `IEnumOLEVERB` Numaralandırıcı arabirimi), aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi temelde uygulamasıdır [IOleObject::EnumVerbs](http://msdn.microsoft.com/library/windows/desktop/ms692781).  
@@ -245,11 +245,11 @@ static CCmdTarget* PASCAL FromIDispatch(LPDISPATCH lpDispatch);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpDispatch`  
+ *lpDispatch*  
  Bir işaretçi bir `IDispatch` nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi `CCmdTarget` ilişkili nesne `lpDispatch`. Bu işlev, döndürür **NULL** varsa `IDispatch` nesne Microsoft Foundation Class tanınmıyor `IDispatch` nesnesi.  
+ Bir işaretçi `CCmdTarget` ilişkili nesne *lpDispatch*. Bu işlev, döndürür **NULL** varsa `IDispatch` nesne Microsoft Foundation Class tanınmıyor `IDispatch` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlevin sonucu üye işlevi çağrısı tersidir `GetIDispatch`.  
@@ -303,7 +303,7 @@ virtual UINT GetTypeInfoCount();
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi temelde uygulayan [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12).  
   
- Türetilen sınıflar (0 veya 1) sağlanan türü bilgileri arabirimleri sayısı döndürmek için bu işleve geçersiz kılmalısınız. Geçersiz kılınmazsa, **GetTypeInfoCount** 0 döndürür. Geçersiz kılmak için kullanın [ımplement_oletypelıb](../../mfc/reference/type-library-access.md#implement_oletypelib) de uygulayan makrosu `GetTypeLib` ve `GetTypeLibCache`.  
+ Türetilen sınıflar (0 veya 1) sağlanan türü bilgileri arabirimleri sayısı döndürmek için bu işleve geçersiz kılmalısınız. Geçersiz kılınmazsa, `GetTypeInfoCount` 0 döndürür. Geçersiz kılmak için kullanın [ımplement_oletypelıb](../../mfc/reference/type-library-access.md#implement_oletypelib) de uygulayan makrosu `GetTypeLib` ve `GetTypeLibCache`.  
   
 ##  <a name="gettypeinfoofguid"></a>  CCmdTarget::GetTypeInfoOfGuid  
  Belirtilen GUID'sine karşılık gelen tür açıklamasını alır.  
@@ -316,17 +316,17 @@ HRESULT GetTypeInfoOfGuid(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lcid`  
+ *lcid*  
  Yerel ayar tanımlayıcısı ( `LCID`).  
   
- `guid`  
+ *GUID*  
  [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931) türü açıklaması.  
   
- `ppTypeInfo`  
+ *ppTypeInfo*  
  Bir işaretçi işaretçi `ITypeInfo` arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarı veya başarısızlık çağrının belirten bir HRESULT. Başarılı olursa, * `ppTypeInfo` işaret türü bilgileri arabirimi.  
+ Başarı veya başarısızlık çağrının belirten bir HRESULT. Başarılı olursa, * *ppTypeInfo* işaret türü bilgileri arabirimi.  
   
 ##  <a name="gettypelib"></a>  CCmdTarget::GetTypeLib  
  Bir işaretçi bir tür kitaplığı alır.  
@@ -338,14 +338,14 @@ virtual HRESULT GetTypeLib(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lcid`  
+ *lcid*  
  Yerel ayar tanımlayıcısı ( `LCID`).  
   
- `ppTypeLib`  
+ *ppTypeLib*  
  Bir işaretçi bir işaretçi `ITypeLib` arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarı veya başarısızlık çağrının belirten bir HRESULT. Başarılı olursa, * `ppTypeLib` noktaları için tür kitaplığı arabirim.  
+ Başarı veya başarısızlık çağrının belirten bir HRESULT. Başarılı olursa, * *ppTypeLib* noktaları için tür kitaplığı arabirim.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen sınıflar bu üye işlevi geçersiz kılma (geçersiz kılınmazsa, `GetTypeLib` TYPE_E_CANTLOADLIBRARY döndürür). Kullanım [ımplement_oletypelıb](../../mfc/reference/type-library-access.md#implement_oletypelib) de uygulayan makrosu `GetTypeInfoCount` ve `GetTypeLibCache`.  
@@ -358,27 +358,27 @@ virtual CTypeLibCache* GetTypeLibCache();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir **CTypeLibCache** nesnesi.  
+ Bir işaretçi bir `CTypeLibCache` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türetilen sınıflar bu üye işlevi geçersiz kılma (geçersiz kılınmazsa, **GetTypeLibCache** NULL döndürür). Kullanım [ımplement_oletypelıb](../../mfc/reference/type-library-access.md#implement_oletypelib) de uygulayan makrosu `GetTypeInfoCount` ve `GetTypeLib`.  
+ Türetilen sınıflar bu üye işlevi geçersiz kılma (geçersiz kılınmazsa, `GetTypeLibCache` NULL döndürür). Kullanım [ımplement_oletypelıb](../../mfc/reference/type-library-access.md#implement_oletypelib) de uygulayan makrosu `GetTypeInfoCount` ve `GetTypeLib`.  
   
 ##  <a name="isinvokeallowed"></a>  CCmdTarget::IsInvokeAllowed  
- Bu işlev MFC'nin uygulaması tarafından çağrılır **IDispatch::Invoke** verilen Otomasyon yöntemi olup olmadığı belirlenemiyor (tarafından tanımlanan `dispid`) çağrılabilir.  
+ Bu işlev MFC'nin uygulaması tarafından çağrılır `IDispatch::Invoke` verilen Otomasyon yöntemi olup olmadığı belirlenemiyor (tarafından tanımlanan *DISPID*) çağrılabilir.  
   
 ```  
 virtual BOOL IsInvokeAllowed(DISPID dispid);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dispid`  
+ *DISPID*  
  Bir dağıtım kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  TRUE yöntemi çağrılır, aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `IsInvokeAllowed` TRUE döndürür **Invoke** ; yöntemini çağırmak için geçer Aksi halde, `Invoke` , E_UNEXPECTED döndürme başarısız olur.  
+ Varsa `IsInvokeAllowed` TRUE döndürür `Invoke` ; yöntemini çağırmak için geçer Aksi halde, `Invoke` , E_UNEXPECTED döndürme başarısız olur.  
   
  Türetilen sınıflar uygun değer döndürmek için bu işlevi geçersiz kılma (geçersiz kılınmazsa, `IsInvokeAllowed` TRUE değerini döndürür). Özellikle bkz [COleControl::IsInvokeAllowed](../../mfc/reference/colecontrol-class.md#isinvokeallowed).  
   
@@ -411,17 +411,17 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nID`  
+ *nID*  
  Komut kimliğini içerir.  
   
- `nCode`  
- Komut bildirim kodu tanımlar. Bkz: **açıklamalar** değerleri hakkında daha fazla bilgi için `nCode`.  
+ *nCode*  
+ Komut bildirim kodu tanımlar. Bkz: **açıklamalar** değerleri hakkında daha fazla bilgi için *nCode*.  
   
- `pExtra`  
- Değeri göre kullanılan `nCode`. Bkz: **açıklamalar** hakkında daha fazla bilgi için `pExtra`.  
+ *pExtra*  
+ Değeri göre kullanılan *nCode*. Bkz: **açıklamalar** hakkında daha fazla bilgi için *pExtra*.  
   
- `pHandlerInfo`  
- Aksi takdirde **NULL**, `OnCmdMsg` doldurur **pTarget** ve **pmf** üyeleri `pHandlerInfo` komutu göndermeyi yerine yapısı. Genellikle, bu parametre olmalıdır **NULL**.  
+ *pHandlerInfo*  
+ Aksi takdirde **NULL**, `OnCmdMsg` doldurur *pTarget* ve *pmf* üyeleri *pHandlerInfo* göndermeyi yerine yapısı komutu. Genellikle, bu parametre olmalıdır **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İleti işleniyorsa sıfır olmayan; Aksi takdirde 0.  
@@ -433,9 +433,9 @@ virtual BOOL OnCmdMsg(
   
  Framework'ün genişletmek için bu üye işlevi geçersiz kılmak isteyebilirsiniz nadir durumlarda, standart komut yönlendirme. Başvurmak [Teknik Not 21](../../mfc/tn021-command-and-message-routing.md) komut yönlendirme mimarisinin Gelişmiş Ayrıntılar için.  
   
- Geçersiz kılarsanız `OnCmdMsg`, uygun değeri sağlamalısınız `nCode`, komut bildirim kodu ve `pExtra`, bağlı olan değerine göre `nCode`. Aşağıdaki tabloda, bunlara karşılık gelen değerler listelenmektedir:  
+ Geçersiz kılarsanız `OnCmdMsg`, uygun değeri sağlamalısınız *nCode*, komut bildirim kodu ve *pExtra*, bağlı olan değerine göre *nCode* . Aşağıdaki tabloda, bunlara karşılık gelen değerler listelenmektedir:  
   
-|`nCode` Değer|`pExtra` Değer|  
+|*nCode* değeri|*pExtra* değeri|  
 |-------------------|--------------------|  
 |CN_COMMAND|[Ccmduı](../../mfc/reference/ccmdui-class.md)*|  
 |CN_EVENT|AFX_EVENT *|  

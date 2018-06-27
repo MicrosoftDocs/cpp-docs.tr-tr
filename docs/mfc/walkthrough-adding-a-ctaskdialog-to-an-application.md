@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b2c10583a4c3fc2b988e50c15b6c1dcf206af65
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2e8e6c7d5f8144b2aec6c7783680feeff5f6f8a1
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384917"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951630"
 ---
 # <a name="walkthrough-adding-a-ctaskdialog-to-an-application"></a>İzlenecek yol: Bir Uygulamaya CTaskDialog Ekleme
 Bu kılavuzda tanıtır [CTaskDialog sınıfı](../mfc/reference/ctaskdialog-class.md) ve uygulamanız için bir tane ekleyin gösterilmektedir.  
@@ -44,7 +44,7 @@ Bu kılavuzda tanıtır [CTaskDialog sınıfı](../mfc/reference/ctaskdialog-cla
   
 #### <a name="to-replace-a-windows-message-box-with-a-ctaskdialog"></a>Windows ileti kutusu CTaskDialog ile değiştirmek için  
   
-1.  Varsayılan ayarlarla yeni bir MFC Uygulama projesi oluşturun. Bu çağrı `MyProject`.  
+1.  Varsayılan ayarlarla yeni bir MFC Uygulama projesi oluşturun. Bu çağrı *MyProject*.  
   
 2.  Kullanım **Çözüm Gezgini** MyProject.cpp dosyası açılamıyor.  
   
@@ -74,7 +74,7 @@ Bu kılavuzda tanıtır [CTaskDialog sınıfı](../mfc/reference/ctaskdialog-cla
  }  
  ```  
   
-6.  Aşağıdaki kod sonra köşeli ayraçlar arasında Ekle `if` 5. adım from deyimi. Bu kod oluşturur `CTaskDialog`.  
+6.  Sonra köşeli ayraçlar arasında aşağıdaki kodu ekleyin **varsa** 5. adım from deyimi. Bu kod oluşturur `CTaskDialog`.  
   
  ```  
     CTaskDialog taskDialog(message,
@@ -111,9 +111,9 @@ Bu kılavuzda tanıtır [CTaskDialog sınıfı](../mfc/reference/ctaskdialog-cla
   
 2.  Genişletme **kaynak görünümü** seçebileceğiniz kadar **dize tablosu** klasör. Çift tıklayın ve genişletin **dize tablosu** girişi.  
   
-3.  Dize tablosu altına gidin ve yeni bir giriş ekleyin. Değişiklik kimliği `TEMP_LINE1`. Resim yazısını kümesine **komut satırı 1**.  
+3.  Dize tablosu altına gidin ve yeni bir giriş ekleyin. Değişiklik kimliği *TEMP_LINE1*. Resim yazısını kümesine *komut satırı 1*.  
   
-4.  Başka bir yeni giriş Ekle. Değişiklik kimliği `TEMP_LINE2`. Resim yazısını kümesine **komut satırı 2**.  
+4.  Başka bir yeni giriş Ekle. Değişiklik kimliği *TEMP_LINE2*. Resim yazısını kümesine *komut satırı 2*.  
   
 5.  Geri MyProject.cpp gidin.  
   
@@ -192,7 +192,7 @@ Bu kılavuzda tanıtır [CTaskDialog sınıfı](../mfc/reference/ctaskdialog-cla
   
 2.  İçin kapanış ayracı gidin `if (CTaskDialog::IsSupported())` deyimi.  
   
-3.  Ayraç hemen öncesine aşağıdaki kodu ekleyin `if` deyimi (önce `else` bloğu):  
+3.  Ayraç hemen öncesine aşağıdaki kodu ekleyin **varsa** deyimi (önce **başka** bloğu):  
   
  ```  
     HRESULT result2 = CTaskDialog::ShowDialog(L"My error message",

@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf80f2ebea8fe27596ce1b240cc414cc0db7a8db
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3dd417872ab4009a9e0f6c06fc0958f5780de477
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33356694"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954158"
 ---
 # <a name="ccmdui-class"></a>Ccmduı sınıfı
 İçinde yalnızca kullanılan bir `ON_UPDATE_COMMAND_UI` işleyicisinde bir `CCmdTarget`-türetilmiş sınıf.  
@@ -79,7 +79,7 @@ class CCmdUI
   
  Olduğunda, uygulamanızın bir kullanıcı, her, etkin olarak görüntülenmesi gerekip gerekmediğini bilmeniz menü öğesi gereksinimlerini veya devre dışı bir menüyü çeker. Menü komutu hedef uygulayarak bu bilgileri sağlar. bir `ON_UPDATE_COMMAND_UI` işleyicisi. Her komut kullanıcı arabirimi nesneleri uygulamanızdaki her işleyicisi için bir ileti eşleme girişi ve işlev prototipi oluşturmak için Özellikler penceresini kullanın.  
   
- Menü çekilen framework arar ve her çağırır `ON_UPDATE_COMMAND_UI` işleyicisi her işleyici çağırır `CCmdUI` üye işlevleri gibi **etkinleştirmek** ve **denetleyin**ve ardından çerçevesi uygun şekilde her bir menü öğesi görüntüler.  
+ Menü çekilen framework arar ve her çağırır `ON_UPDATE_COMMAND_UI` işleyicisi her işleyici çağırır `CCmdUI` üye işlevleri gibi `Enable` ve `Check`, ve framework uygun şekilde her bir menü öğesi görüntüler.  
   
  Menü öğesi denetim çubuğu düğmesini veya diğer komutu kullanıcı arabirimi nesnesi içindeki kod değiştirmeden değiştirilebilir `ON_UPDATE_COMMAND_UI` işleyicisi.  
   
@@ -119,7 +119,7 @@ virtual void Enable(BOOL bOn = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bOn`  
+ *İyi*  
  **DOĞRU** öğeyi etkinleştirmek için **FALSE** devre dışı bırakmak için.  
   
 ### <a name="example"></a>Örnek  
@@ -159,7 +159,7 @@ CMenu* m_pSubMenu;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- **NULL** öğesi bir menü değilse. Alt menü bir açılır pencere ise `m_nID` açılır menüde ilk öğe Kimliğini içerir. Daha fazla bilgi için bkz: [Teknik Not 21](../../mfc/tn021-command-and-message-routing.md).  
+ **NULL** öğesi bir menü değilse. Alt menü bir açılır pencere ise *m_nID* açılır menüde ilk öğe Kimliğini içerir. Daha fazla bilgi için bkz: [Teknik Not 21](../../mfc/tn021-command-and-message-routing.md).  
   
 ##  <a name="m_pother"></a>  CCmdUI::m_pOther  
  İşaretçi (tür `CWnd`), bir aracı ya da durum çubuğu gibi pencere nesnesi için bildirim gönderilir.  
@@ -179,7 +179,7 @@ virtual void SetCheck(int nCheck = 1);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCheck`  
+ *Nbakım*  
  Ayarlamak için onay durumunu belirtir. 0, temizler; 1 denetler; ve 2 ise belirsiz ayarlar.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -207,7 +207,7 @@ virtual void SetText(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszText`  
+ *lpszText*  
  Bir metin dizesi için bir işaretçi.  
   
 ### <a name="example"></a>Örnek  

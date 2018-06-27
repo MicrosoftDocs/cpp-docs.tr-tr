@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e35fc33b26fa6bead73458a46d7c4edee1cf136
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 58646efaaa0087be2bd73e45acd8ade4a16e9767
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33350998"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957097"
 ---
 # <a name="canimationvariablechangehandler-class"></a>CAnimationVariableChangeHandler sınıfı
 Bir animasyon değişkeninin değeri değiştiğinde animasyon API tarafından çağrılan bir geri çağırma uygular.  
@@ -77,16 +77,16 @@ IFACEMETHOD(OnValueChanged) (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `storyboard`  
+ *görsel taslak haline getirme*  
  Değişkeni animasyonu Film şeridi.  
   
- `variable`  
+ *Değişken*  
  Güncelleştirildi animasyon değişkeni.  
   
- `newValue`  
+ *newValue*  
  Yeni değer.  
   
- `previousValue`  
+ *previousValue*  
  Önceki değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -100,7 +100,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pAnimationController`  
+ *pAnimationController*  
  Olayları alacak animasyon denetleyici için bir işaretçi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

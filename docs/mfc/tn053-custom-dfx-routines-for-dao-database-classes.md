@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47d1c9769055e0ab69f57f58b136b7844cb1f860
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 60e42aedd406e7478db83ecddca7d8b82230abc5
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33386099"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952000"
 ---
 # <a name="tn053-custom-dfx-routines-for-dao-database-classes"></a>TN053: DAO Veritabanı Sınıfları için Özel DFX Rutinleri
 > [!NOTE]
@@ -134,19 +134,19 @@ PopUpEmployeeData(emp.m_strFirstName,
   
 |Çalışma|Açıklama|  
 |---------------|-----------------|  
-|**AddToParameterList**|Derlemeleri parametreleri yan tümcesi|  
-|**AddToSelectList**|Derlemeleri SELECT yan tümcesi|  
-|**BindField**|Bağlama yapısı ayarlar|  
-|**BindParam**|Parametre değerlerini ayarlar|  
-|**Düzeltmesi**|NULL durumu ayarlar|  
-|**AllocCache**|Önbellek kirli denetle ayırır|  
-|**StoreField**|Geçerli kayıt önbelleğine kaydeder|  
-|**LoadField**|Üye değerleri önbelleğine geri yükler|  
-|**FreeCache**|Önbelleği boşaltır|  
+|`AddToParameterList`|Derlemeleri parametreleri yan tümcesi|  
+|`AddToSelectList`|Derlemeleri SELECT yan tümcesi|  
+|`BindField`|Bağlama yapısı ayarlar|  
+|`BindParam`|Parametre değerlerini ayarlar|  
+|`Fixup`|NULL durumu ayarlar|  
+|`AllocCache`|Önbellek kirli denetle ayırır|  
+|`StoreField`|Geçerli kayıt önbelleğine kaydeder|  
+|`LoadField`|Üye değerleri önbelleğine geri yükler|  
+|`FreeCache`|Önbelleği boşaltır|  
 |`SetFieldNull`|& Durum NULL değerine ayarlar alan|  
-|**MarkForAddNew**|Alanları kirli değilse SÖZDE NULL işaretler|  
-|**MarkForEdit**|İşaretleri alanları kirli IF önbellek eşleşmiyor|  
-|**SetDirtyField**|Ayarlar kirli olarak işaretlenmiş değerleri alan|  
+|`MarkForAddNew`|Alanları kirli değilse SÖZDE NULL işaretler|  
+|`MarkForEdit`|İşaretleri alanları kirli IF önbellek eşleşmiyor|  
+|`SetDirtyField`|Ayarlar kirli olarak işaretlenmiş değerleri alan|  
   
  Daha fazla ayrıntı için her bir işlemin sonraki bölümde açıklanacaktır `DFX_Text`.  
   
@@ -168,45 +168,45 @@ PopUpEmployeeData(emp.m_strFirstName,
 ##  <a name="_mfcnotes_tn053_details_of_dfx_text"></a> DFX_Text ayrıntıları  
  Daha önce belirtildiği gibi DFX nasıl çalıştığını açıklamak için iyi bir örnek üzerinde çalışmak için yoludur. İçyüzü giderek bu amaçla `DFX_Text` DFX temel en az bir anlayış sağlanmasına yardımcı olmak amacıyla oldukça düzgün çalışması gerekir.  
   
- **AddToParameterList**  
- Bu işlem SQL derlemeler **parametreleri** yan tümcesi ("`Parameters <param name>, <param type> ... ;`") Jet tarafından gerekli. Her parametre adı ve (RFX çağrısında belirtildiği şekilde) belirtilmiş. İşlev bkz **CDaoFieldExchange::AppendParamType** tek tek türlerinin adlarını görmek için işlev. Durumunda `DFX_Text`, kullanılan türü `text`.  
+ `AddToParameterList`  
+ Bu işlem SQL derlemeler **parametreleri** yan tümcesi ("`Parameters <param name>, <param type> ... ;`") Jet tarafından gerekli. Her parametre adı ve (RFX çağrısında belirtildiği şekilde) belirtilmiş. İşlevi görmek `CDaoFieldExchange::AppendParamType` tek tek türlerinin adlarını görmek için işlev. Durumunda `DFX_Text`, kullanılan türüdür **metin**.  
   
- **AddToSelectList**  
+ `AddToSelectList`  
  SQL derlemeler **seçin** yan tümcesi. Bu oldukça doğrudan İleri DFX çağrısı tarafından belirtilen sütun adı yalnızca olarak eklenir ("`SELECT <column name>, ...`").  
   
- **BindField**  
+ `BindField`  
  En karmaşık işlemleri. DAO bağlama yapısı tarafından kullanıldığı budur daha önce belirtildiği gibi `GetRows` ayarlanır. Koddan gördüğünüz `DFX_Text` kullanılan DAO türü yapısı içinde bilgi türleri içerir (**DAO_CHAR** veya **DAO_WCHAR** durumunda `DFX_Text`). Ayrıca, kullanılan bağlama türü de ayarlanır. Bir önceki bölümde `GetRows` yalnızca kısaca açıklanmıştır, ancak MFC tarafından kullanılan bağlama türü her zaman doğrudan adresi bağlama olduğunu açıklamak yeterli (**DAOBINDING_DIRECT**). Değişken uzunluklu sütun bağlama için ayrıca (gibi `DFX_Text`) geri çağırma bağlama kullanılan böylece MFC Bellek ayırma denetlemek ve doğru uzunlukta bir adres belirtin. Ne bu o MFC olduğu anlamına gelir her zaman DAO böylece doğrudan üye değişkenlerine bağlama sağlar verileri yerleştirmek "burada" anlayabilirsiniz. Bağlama yapısı kalan adresini bellek ayırma geri çağırma işlevi (sütun adıyla bağlama) sütun bağlama türü ve gibi şeyleri doldurulur.  
   
- **BindParam**  
+ `BindParam`  
  Bu çağrı, basit bir işlemdir `SetParamValue` belirlenen parametre üyesi parametre değerine sahip.  
   
- **Düzeltmesi**  
+ `Fixup`  
  Doldurur **NULL** her bir alan için durum.  
   
  `SetFieldNull`  
  Bu işlem yalnızca her bir alan durumu olarak işaretler **NULL** ve üye değişkenin değeri olarak ayarlar **PSEUDO_NULL**.  
   
- **SetDirtyField**  
+ `SetDirtyField`  
  Çağrıları `SetFieldValue` kirli olarak işaretlenmiş her bir alan için.  
   
  Kalan tüm işlemleri yalnızca veri önbelleği kullanma ile ilgilidir. Veri, belirli konular daha kolay yapmak için kullanılan geçerli kayıt verilerin ek bir arabellek önbelleğidir. Örneğin, "kirli" alanlarını otomatik olarak algılanabilir. Çevrimiçi belgelerinde açıklandığı gibi tamamen veya alan düzeyinde kapatılabilir. Arabellek uyarlamasını bir harita kullanır. Bu haritada dinamik olarak ayrılan kopyaları "bağlı" alanının adresi ile eşleştirmek için kullanılır (veya `CDaoRecordset` veri üyesi türetilmiş).  
   
- **AllocCache**  
+ `AllocCache`  
  Dinamik olarak önbelleğe alınan alan değeri ayırır ve eşlemesine ekler.  
   
- **FreeCache**  
+ `FreeCache`  
  Önbelleğe alınan alan değeri siler ve eşlemesinden kaldırır.  
   
- **StoreField**  
+ `StoreField`  
  Geçerli alan değeri veri önbelleğine kopyalar.  
   
- **LoadField**  
+ `LoadField`  
  Önbelleğe alınan değer alan üye kopyalar.  
   
- **MarkForAddNew**  
+ `MarkForAddNew`  
  Geçerli alan değeri olmayan olup olmadığını denetler**NULL** ve kirli gerekirse eşitler.  
   
- **MarkForEdit**  
+ `MarkForEdit`  
  Veri önbelleği geçerli alan değerle karşılaştırır ve gerekirse kirli işaretler.  
   
 > [!TIP]

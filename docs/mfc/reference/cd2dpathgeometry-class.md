@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a3afe8efa5730c3ef0f4448b1c548724b56b7cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2b6d090d6ac85ecc6af36052c0c61fe74a1283c8
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33353422"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953749"
 ---
 # <a name="cd2dpathgeometry-class"></a>CD2DPathGeometry sınıfı
 ID2D1PathGeometry için sarmalayıcı.  
@@ -99,7 +99,7 @@ void Attach(ID2D1PathGeometry* pResource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pResource`  
+ *pResource*  
  Mevcut kaynak arabirimi. NULL olamaz  
   
 ##  <a name="cd2dpathgeometry"></a>  CD2DPathGeometry::CD2DPathGeometry  
@@ -112,10 +112,10 @@ CD2DPathGeometry(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentTarget`  
+ *pParentTarget*  
  İşleme hedefi için bir işaretçi.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
   
 ##  <a name="create"></a>  CD2DPathGeometry::Create  
@@ -126,7 +126,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pRenderTarget`  
+ *pRenderTarget*  
  İşleme hedefi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -194,7 +194,7 @@ BOOL Stream(ID2D1GeometrySink* geometrySink);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `geometrySink`  
+ *geometrySink*  
  Havuz için yol geometri 's içeriği kopyalanır. Bu havuz değiştirerek bu yolu geometri içeriğini değiştirmez.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

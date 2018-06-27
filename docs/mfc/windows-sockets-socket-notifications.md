@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b51bf2b562f0d4eff5b9cfef557e62f996d53470
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7c6fd065d13d3c61b88cc24144cfc64368020d16
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385586"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953977"
 ---
 # <a name="windows-sockets-socket-notifications"></a>Windows Yuvaları: Yuva Bildirimleri
 Bu makalede yuva sınıflardaki bildirim işlevleri açıklanmaktadır. Bu üye işlevleri yuva nesnenizin önemli olayları bildirmek için framework çağıran geri çağırma işlevlerdir. Bildirim işlevler şunlardır:  
@@ -43,14 +43,14 @@ Bu makalede yuva sınıflardaki bildirim işlevleri açıklanmaktadır. Bu üye 
   
  Geçersiz kılınabilir geri arama işlevleri bu işlevlerdir. `CAsyncSocket` ve `CSocket` dönüştürme iletileri bildirimleri, ancak bunları kullanmak istiyorsanız, bildirim yanıt nasıl çalıştığını uygulamalıdır. Bildirim İşlevler, yuva ilgi okumak için veri gibi bir olay bildirim zaman çağrılır.  
   
- MFC yuva ait davranışı haberdar aynı anda özelleştirmenize olanak bildirim işlevlerini çağırır. Örneğin, çağırabilirsiniz **alma** gelen, `OnReceive` bildirim işlevi, diğer bir deyişle, olmaya bildirim verileri okumak için çağırmanız **alma** okumak için. Bu yaklaşım gerekli değildir, ancak geçerli bir senaryodur. Alternatif olarak, ilerleme durumunu izlemek için bildirim işlevi kullanabilir yazdırma **izleme** iletileri ve benzeri.  
+ MFC yuva ait davranışı haberdar aynı anda özelleştirmenize olanak bildirim işlevlerini çağırır. Örneğin, çağırabilirsiniz `Receive` gelen, `OnReceive` bildirim işlevi, diğer bir deyişle, olmaya bildirim verileri okumak için çağırmanız `Receive` okumak için. Bu yaklaşım gerekli değildir, ancak geçerli bir senaryodur. Alternatif olarak, ilerleme durumunu izlemek için bildirim işlevi kullanabilir yazdırma **izleme** iletileri ve benzeri.  
   
  Bu bildirimler türetilmiş yuva sınıfında bildirim işlevleri geçersiz kılma ve bir uygulama sağlama yararlanabilirsiniz.  
   
- Teslim alma veya veri gönderen gibi bir işlem sırasında bir `CSocket` nesne zaman uyumlu olur. Geçerli yuva istediği bildirim için beklerken zaman uyumlu durum sırasında diğer yuva için amacı herhangi bir bildirim kuyruğa alınır. (Örneğin, sırasında bir **alma** çağrısı, yuva istediği okumak için bir bildirim.) Yuva zaman uyumlu işlemi tamamlandıktan ve yeniden zaman uyumsuz haline geldikten sonra diğer yuva sıraya alınan bildirimleri almaya başlayabilirsiniz.  
+ Teslim alma veya veri gönderen gibi bir işlem sırasında bir `CSocket` nesne zaman uyumlu olur. Geçerli yuva istediği bildirim için beklerken zaman uyumlu durum sırasında diğer yuva için amacı herhangi bir bildirim kuyruğa alınır. (Örneğin, sırasında bir `Receive` çağrısı, yuva istediği okumak için bir bildirim.) Yuva zaman uyumlu işlemi tamamlandıktan ve yeniden zaman uyumsuz haline geldikten sonra diğer yuva sıraya alınan bildirimleri almaya başlayabilirsiniz.  
   
 > [!NOTE]
->  İçinde `CSocket`, `OnConnect` bildirim işlevi hiçbir zaman çağrılır. Bağlantılar için arama **Bağlan**, hangi döndürecektir bağlantı (başarıyla veya hata) tamamlandığında. Bağlantı bildirimleri işlenme bir MFC uygulaması ayrıntı olur.  
+>  İçinde `CSocket`, `OnConnect` bildirim işlevi hiçbir zaman çağrılır. Bağlantılar için arama `Connect`, hangi döndürecektir bağlantı (başarıyla veya hata) tamamlandığında. Bağlantı bildirimleri işlenme bir MFC uygulaması ayrıntı olur.  
   
  Sınıf altında işlevi her bildirim işlevi hakkında daha fazla bilgi için bkz `CAsyncSocket` içinde *MFC başvurusu*. Kaynak kodu ve MFC örnekleri hakkında bilgi için bkz: [MFC örnekleri](../visual-cpp-samples.md).  
   

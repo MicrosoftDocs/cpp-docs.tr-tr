@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b0d59aa8c30e9308448467bb198e898106e61f0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4cf132de39eb630f314c1c5a99e629cbfb25394a
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383792"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951133"
 ---
 # <a name="using-callback-fields-in-a-date-and-time-picker-control"></a>Bir Tarih ve Saat Seçici Denetiminde Geri Çağrı Alanlarını Kullanma
 Tarih ve Saat Seçici alanlarını tanımlayan standart biçimi karakterler ek olarak, özel bir biçim dizesi belirli bölümlerini geri arama alanları belirterek, çıktı özelleştirebilirsiniz. Bir geri çağırma alanı bildirmek için bir veya daha fazla "X" karakter (ASCII kodu 88) herhangi bir yere biçim dizesi gövdesinde içerir. Örneğin, aşağıdaki dizeyi "' Bugün: 'yy' / 'MM' / 'dd' (gün 'X')'" ay, tarih ve yılın günü tarafından son ardından yıl geçerli değerini görüntülemek tarih ve Saat Seçici denetimini neden olur.  
@@ -39,23 +39,23 @@ Tarih ve Saat Seçici alanlarını tanımlayan standart biçimi karakterler ek o
  Birden çok geri arama alanları "X" karakter yineleyerek özel bir dize ayırt edebilirsiniz. Bu nedenle, biçim dizesi "XXddddMMMdd', ' yyyXXX", "XX" ve "XXX" iki benzersiz geri arama alanları içerir.  
   
 > [!NOTE]
->  Geri arama alanları uygulamanızı işlemek için hazırlanması gerekir böylece geçerli alanlar olarak kabul edilir **DTN_WMKEYDOWN** bildirim iletileri.  
+>  Geri arama alanları, uygulamanızın DTN_WMKEYDOWN bildirim iletilerini işlemek için hazırlanması gerekir böylece geçerli alanlar olarak kabul edilir.  
   
  Tarih ve Saat Seçici denetiminde geri çağrı alanlarını uygulama üç bölümden oluşur:  
   
 -   Özel biçim dizesi başlatılıyor  
   
--   İşleme **DTN_FORMATQUERY** bildirim  
+-   DTN_FORMATQUERY bildirimi işleme  
   
--   İşleme **DTN_FORMAT** bildirim  
+-   DTN_FORMAT bildirimi işleme  
   
 ## <a name="initializing-the-custom-format-string"></a>Özel biçim dizesi başlatılıyor  
  Özel bir dize çağrısıyla başlatma `CDateTimeCtrl::SetFormat`. Daha fazla bilgi için bkz: [kullanarak özel biçim dizeleri tarih ve Saat Seçici denetimini](../mfc/using-custom-format-strings-in-a-date-and-time-picker-control.md). Özel biçim dizesine ayarlamak için bir ortak yerdir `OnInitDialog` içeren iletişim sınıfınızı işlevinin veya `OnInitialUpdate` içeren görünüm sınıfınızın işlevi.  
   
 ## <a name="handling-the-dtnformatquery-notification"></a>DTN_FORMATQUERY bildirimi işleme  
- Denetim biçim dizesi ayrıştırır ve bir geri çağırma alan karşılaştığında, uygulamanın gönderdiği **DTN_FORMAT** ve **DTN_FORMATQUERY** bildirim iletileri. Geri arama alanı sorgulanan belirlemek için geri çağırma alan dize bildirimlerle dahil edilir.  
+ Denetim biçim dizesi ayrıştırır ve bir geri çağırma alan karşılaştığında, uygulama DTN_FORMAT ve DTN_FORMATQUERY bildirimi iletileri gönderir. Geri arama alanı sorgulanan belirlemek için geri çağırma alan dize bildirimlerle dahil edilir.  
   
- **DTN_FORMATQUERY** bildirim geçerli bir geri çağırma alanında görüntülenen dizesinin piksel cinsinden izin verilen boyut sınırı almak için gönderilir.  
+ DTN_FORMATQUERY bildirimi geçerli geri çağırma alanında görüntülenen dizesinin piksel cinsinden izin verilen boyut sınırı almak için gönderilir.  
   
  Bu değer doğru hesaplamak için yüksekliğini ve genişliğini alan için değiştirilecek bu dizenin denetimin görüntüleme yazı tipi kullanarak hesaplayabilirsiniz gerekir. Dizenin gerçek hesaplama kolayca çağrısıyla elde [GetTextExtentPoint32](http://msdn.microsoft.com/library/windows/desktop/dd144938) Win32 işlevi. Boyutu belirlendikten sonra uygulama için değer geçirin ve işleyici işlevi çıkın.  
   
@@ -63,10 +63,10 @@ Tarih ve Saat Seçici alanlarını tanımlayan standart biçimi karakterler ek o
   
  [!code-cpp[NVC_MFCControlLadenDialog#8](../mfc/codesnippet/cpp/using-callback-fields-in-a-date-and-time-picker-control_1.cpp)]  
   
- Geçerli geri çağırma alan boyutu hesaplanan sonra alan için bir değer sağlamanız gerekir. Bu işleyicisindeki yapılır **DTN_FORMAT** bildirim.  
+ Geçerli geri çağırma alan boyutu hesaplanan sonra alan için bir değer sağlamanız gerekir. Bu işleyici DTN_FORMAT bildirimi için yapılır.  
   
 ## <a name="handling-the-dtnformat-notification"></a>DTN_FORMAT bildirimi işleme  
- **DTN_FORMAT** bildirim değiştirilecektir karakter dizesi istemek için uygulama tarafından kullanılır. Aşağıdaki örnek, olası bir yöntemi gösterir:  
+ DTN_FORMAT bildirimi değiştirilecektir karakter dizesi istemek için uygulama tarafından kullanılır. Aşağıdaki örnek, olası bir yöntemi gösterir:  
   
  [!code-cpp[NVC_MFCControlLadenDialog#9](../mfc/codesnippet/cpp/using-callback-fields-in-a-date-and-time-picker-control_2.cpp)]  
   

@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3503f59096d3879f986b2a8c99bdb9823ef4e24
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 06b2f8338756b24971fcdf9a89b055272ee261bd
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33353172"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955527"
 ---
 # <a name="cctrlview-class"></a>CCtrlView sınıfı
 Windows 98 ve Windows NT tarafından 3.51 ve sonraki sürümlerde desteklenen ortak denetimleri için belge görünüm mimarisi uyum sağlar.  
@@ -91,10 +91,10 @@ CCtrlView(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszClass`  
+ *lpszClass*  
  View sınıfı Windows sınıfı adı.  
   
- `dwStyle`  
+ *dwStyle*  
  View sınıfı stili.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -125,11 +125,11 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Çizim oluştuğu cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `OnDraw` ekran görüntüsü, tarafından belirtilen bir ekran cihaz bağlamı geçirme için genellikle adlı `pDC`.  
+ `OnDraw` ekran görüntüsü, tarafından belirtilen bir ekran cihaz bağlamı geçirme için genellikle adlı *pDC*.  
   
 ##  <a name="precreatewindow"></a>  CCtrlView::PreCreateWindow  
  Bu bağlı Windows penceresi oluşturulmasını önce adlı `CWnd` nesnesi.  

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bad68253525fd728b67f2e256c48a3edbf48d720
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 96c70bc7c6c506d033b39ca55ba2b1a090767b5d
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367067"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951693"
 ---
 # <a name="cfieldexchange-class"></a>CFieldExchange sınıfı
 Kayıt alanı değişimi (RFX) ve veritabanı sınıfları tarafından kullanılan toplu kayıt alanı değişimi (Toplu RFX) yordamları destekler.  
@@ -53,7 +53,7 @@ class CFieldExchange
 > [!NOTE]
 >  Açık veritabanı bağlantısı (ODBC) sınıfları yerine veri erişim nesneleri (DAO) sınıfları ile çalışıyorsanız, bir sınıf kullanma [CDaoFieldExchange](../../mfc/reference/cdaofieldexchange-class.md) yerine. Daha fazla bilgi için bkz: [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md).  
   
- A `CFieldExchange` nesnesi sağlar bağlam bilgisi kayıt alanı değişimi veya yapılacak toplu kayıt alanı değişimi için yerleştirin. `CFieldExchange` nesneleri bir dizi bağlama parametreleri ve alan veri üyeleri de dahil olmak üzere ve geçerli kayıt alanlarını üzerinde çeşitli bayrakları ayarlama işlemi destekler. Kayıt kümesi sınıfı verileri üyeleri tarafından tanımlanan türleri üzerinde gerçekleştirilen RFX ve toplu RFX işlemler `enum` **FieldType** içinde `CFieldExchange`. Olası **FieldType** değerler şunlardır:  
+ A `CFieldExchange` nesnesi sağlar bağlam bilgisi kayıt alanı değişimi veya yapılacak toplu kayıt alanı değişimi için yerleştirin. `CFieldExchange` nesneleri bir dizi bağlama parametreleri ve alan veri üyeleri de dahil olmak üzere ve geçerli kayıt alanlarını üzerinde çeşitli bayrakları ayarlama işlemi destekler. Kayıt kümesi sınıfı verileri üyeleri tarafından tanımlanan türleri üzerinde gerçekleştirilen RFX ve toplu RFX işlemler **enum** **FieldType** içinde `CFieldExchange`. Olası **FieldType** değerler şunlardır:  
   
 - **CFieldExchange::outputColumn** alan veri üyeleri için.  
   
@@ -96,7 +96,7 @@ void SetFieldType(UINT nFieldType);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nFieldType`  
+ *nFieldType*  
  Değerini **enum FieldType**bildirilen `CFieldExchange`, olabilen şunlardan biri:  
   
 - **CFieldExchange::outputColumn**  
@@ -121,7 +121,7 @@ void SetFieldType(UINT nFieldType);
 |**CFieldExchange::outputParam**|Çıktı parametresi. Kayıt kümesinin saklı yordam dönüş değeri.|  
 |**CFieldExchange::inoutParam**|Giriş/çıkış parametresi. İçine aktarılan ve kayıt kümesinin bir saklı yordamdan döndürülen değer.|  
   
- RFX işlev çağrılarını alan veri üyeleri veya parametre veri üyeleri ile ilişkili her grup için bir çağrı tarafından genel olarak, gelmelidir `SetFieldType`. `nFieldType` Her parametre `SetFieldType` çağrısı izleyin RFX işlev çağrıları tarafından temsil edilen veri üyeleri türünü tanımlayan `SetFieldType` çağırın.  
+ RFX işlev çağrılarını alan veri üyeleri veya parametre veri üyeleri ile ilişkili her grup için bir çağrı tarafından genel olarak, gelmelidir `SetFieldType`. *NFieldType* her parametre `SetFieldType` çağrısı izleyin RFX işlev çağrıları tarafından temsil edilen veri üyeleri türünü tanımlayan `SetFieldType` çağırın.  
   
  Çıkış ve giriş/çıkış parametreleri işleme hakkında daha fazla bilgi için bkz: `CRecordset` üye işlevi [FlushResultSet](../../mfc/reference/crecordset-class.md#flushresultset). RFX ve toplu RFX işlevleri hakkında daha fazla bilgi için Ek Yardım konusuna [kayıt alanı değişim işlevleri](../../mfc/reference/record-field-exchange-functions.md). Toplu satır getirme hakkında ilgili bilgi için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   

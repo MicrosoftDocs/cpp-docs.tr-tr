@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2559b4917f16bb8ddc49b73ace8bda6e1a9bafc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e274a3fabf10e96aec41a92bb484f4ebcc5bf377
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367314"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955819"
 ---
 # <a name="cdatapathproperty-class"></a>CDataPathProperty sınıfı
 Implements bir OLE zaman uyumsuz olarak yüklenen özelliğini denetler.  
@@ -68,7 +68,7 @@ class CDataPathProperty : public CAsyncMonikerFile
 ## <a name="remarks"></a>Açıklamalar  
  Zaman uyumsuz özellikler sonra zaman uyumlu başlatma yüklenir.  
   
- Sınıf `CDataPathProperty` türetildiği **CAysncMonikerFile**. Zaman uyumsuz Özellikler OLE denetimlerinde uygulamak için öğesinden bir sınıf türetin `CDataPathProperty`ve geçersiz kılma [OnDataAvailable](../../mfc/reference/casyncmonikerfile-class.md#ondataavailable).  
+ Sınıf `CDataPathProperty` türetildiği `CAysncMonikerFile`. Zaman uyumsuz Özellikler OLE denetimlerinde uygulamak için öğesinden bir sınıf türetin `CDataPathProperty`ve geçersiz kılma [OnDataAvailable](../../mfc/reference/casyncmonikerfile-class.md#ondataavailable).  
   
  Zaman uyumsuz adlar ve ActiveX denetimlerini Internet uygulamalarında kullanma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:  
   
@@ -101,14 +101,14 @@ CDataPathProperty(LPCTSTR lpszPath, COleControl* pControl = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pControl`  
+ *pControl*  
  Bu ile ilişkilendirilmesi OLE denetim nesnesi için bir işaretçi `CDataPathProperty` nesnesi.  
   
- `lpszPath`  
+ *lpszPath*  
  Mutlak veya göreli olabilir, yolun özelliği gerçek mutlak konumu başvuran zaman uyumsuz bir ad oluşturmak için kullanılır. `CDataPathProperty` URL'ler, değil dosya adlarını kullanır. İsterseniz bir `CDataPathProperty` nesne için bir dosya, başına `file://` yolu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `COleControl` Tarafından için nesne işaret `pControl` tarafından kullanılan **açık** ve türetilmiş sınıfları tarafından alınır. Varsa `pControl` olan **NULL**, ile kullanılan denetimi **açık** ile ayarlamalıdır `SetControl`. Varsa `lpszPath` olan **NULL**, yolundaki geçirebilirsiniz **açık** veya ile ayarlayın `SetPath`.  
+ `COleControl` Tarafından için nesne işaret `pControl` tarafından kullanılan `Open` ve türetilmiş sınıfları tarafından alınır. Varsa *pControl* olan **NULL**, ile kullanılan denetimi `Open` ile ayarlamalıdır `SetControl`. Varsa `lpszPath` olan **NULL**, yolundaki geçirebilirsiniz `Open` veya ile ayarlayın `SetPath`.  
   
 ##  <a name="getcontrol"></a>  CDataPathProperty::GetControl  
  Almak için bu üye işlevini çağırın `COleControl` ilişkili nesne `CDataPathProperty` nesne.  
@@ -121,7 +121,7 @@ COleControl* GetControl();
  OLE denetim için bir işaretçi ilişkili döndürür `CDataPathProperty` nesnesi. **NULL** denetimin değil ilişkiliyse.  
   
 ##  <a name="getpath"></a>  CDataPathProperty::GetPath  
- Yolun almak, ne zaman ayarlamak için bu üye işlevini çağırın `CDataPathProperty` nesne oluşturulan veya belirtilen **açık**, ya da önceki çağrıda belirtilen `SetPath` üye işlevi.  
+ Yolun almak, ne zaman ayarlamak için bu üye işlevini çağırın `CDataPathProperty` nesne oluşturulan veya belirtilen `Open`, ya da önceki çağrıda belirtilen `SetPath` üye işlevi.  
   
 ```  
 CString GetPath() const;  
@@ -153,13 +153,13 @@ virtual BOOL Open(CFileException* pError = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pControl`  
+ *pControl*  
  Bu ile ilişkilendirilmesi OLE denetim nesnesi için bir işaretçi `CDataPathProperty` nesnesi.  
   
- `pError`  
+ *pError*  
  Dosya özel durumu için bir işaretçi. Bir hata olması durumunda, neden olacak şekilde ayarlanacaktır.  
   
- `lpszPath`  
+ *lpszPath*  
  Mutlak veya göreli olabilir, yolun özelliği gerçek mutlak konumu başvuran zaman uyumsuz bir ad oluşturmak için kullanılır. `CDataPathProperty` URL'ler, değil dosya adlarını kullanır. İsterseniz bir `CDataPathProperty` nesne için bir dosya, başına `file://` yolu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -168,9 +168,9 @@ virtual BOOL Open(CFileException* pError = NULL);
 ### <a name="remarks"></a>Açıklamalar  
  İşlev almaya çalıştığında `IBindHost` denetiminden arabirimi.  
   
- Çağırmadan önce **açık** olmadan yol, özelliğin yolu değer ayarlamanız gerekir. Nesne yapılandırılmış, veya çağırarak olduğunda bu yapılabilir `SetPath` üye işlevi.  
+ Çağırmadan önce `Open` olmadan yol, özelliğin yolu değer ayarlamanız gerekir. Nesne yapılandırılmış, veya çağırarak olduğunda bu yapılabilir `SetPath` üye işlevi.  
   
- Çağırmadan önce **açık** denetimi olmadan (daha önce bir OLE denetimi olarak bilinen) bir ActiveX denetimini nesne ile ilişkili olabilir. Nesne yapılandırılmış, veya çağırarak olduğunda bu yapılabilir `SetControl`.  
+ Çağırmadan önce `Open` bir denetim olmadan (daha önce bir OLE denetimi olarak bilinen) bir ActiveX denetimini nesne ile ilişkili olabilir. Nesne yapılandırılmış, veya çağırarak olduğunda bu yapılabilir `SetControl`.  
   
  Tüm aşırı [CAsyncMonikerFile::Open](../../mfc/reference/casyncmonikerfile-class.md#open) de mevcuttur `CDataPathProperty`.  
   
@@ -192,7 +192,7 @@ void SetControl(COleControl* pControl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pControl`  
+ *pControl*  
  Özelliği ile ilişkilendirilmesi için zaman uyumsuz OLE denetimi için bir işaretçi.  
   
 ##  <a name="setpath"></a>  CDataPathProperty::SetPath  
@@ -203,7 +203,7 @@ void SetPath(LPCTSTR lpszPath);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszPath`  
+ *lpszPath*  
  Mutlak veya göreli zaman uyumsuz olarak yüklenen özelliğine olabilen bir yolu. `CDataPathProperty` URL'ler, değil dosya adlarını kullanır. İsterseniz bir `CDataPathProperty` nesne için bir dosya, başına `file://` yolu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

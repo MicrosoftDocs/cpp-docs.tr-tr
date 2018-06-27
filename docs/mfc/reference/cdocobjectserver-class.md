@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d9951fd087619371e24f06822774cec005787c1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f89812fbc0e1b6a3df80cd7c99879d8d630179de
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367412"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956469"
 ---
 # <a name="cdocobjectserver-class"></a>CDocObjectServer sınıfı
 Normal bir yapmak için gereken ek OLE arabirimleri uygulayan `COleDocument` tam DocObject sunucu Server'a: `IOleDocument`, `IOleDocumentView`, `IOleCommandTarget`, ve `IPrint`.  
@@ -95,7 +95,7 @@ void ActivateDocObject();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `ActivateDocObject` çağrıları `IOleDocumentSite`'s **ActivateMe** yöntemi, ayarlama ve çağrısında verilen görünümü görüntüleme hakkında belirli yönergeler bekler olduğundan görünüm göstermez ancak [CDocObjectServer::OnActivateView](#onactivateview).  
+ `ActivateDocObject` çağrıları `IOleDocumentSite`'s `ActivateMe` yöntemi, ayarlama ve çağrısında verilen görünümü görüntüleme hakkında belirli yönergeler bekler olduğundan görünüm göstermez ancak [CDocObjectServer::OnActivateView](#onactivateview).  
   
  Birlikte `ActivateDocObject` ve `OnActivateView` etkinleştirin ve DocObject görünümü görüntüleyin. DocObject etkinleştirme OLE yerinde etkinleştirme diğer tür farklı. DocObject etkinleştirme yerinde tarama Kenarlıklar ve (örneğin boyutlandırma) nesne adornments görüntüleme atlar, nesne ölçüde işlevleri yoksayar ve bunları bu dikdörtgeni (olduğu gibi normal dışında çizim aksine dikdörtgen görünümün içinde kaydırma çubukları çizer yerinde etkinleştirme).  
   
@@ -112,7 +112,7 @@ explicit CDocObjectServer(
  *pOwner*  
  İstemci DocObject sunucu için istemci site belgesi için bir işaretçi.  
   
- `pDocSite`  
+ *pDocSite*  
  Bir işaretçi `IOleDocumentSite` kapsayıcı tarafından uygulanan arabirimi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -139,7 +139,7 @@ virtual void OnApplyViewState(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ar`  
+ *ar*  
  A `CArchive` görünüm durumu serileştirmek nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -155,7 +155,7 @@ virtual void OnSaveViewState(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ar`  
+ *ar*  
  A `CArchive` nesne görünüm durumu seri değildir.  
   
 ### <a name="remarks"></a>Açıklamalar  

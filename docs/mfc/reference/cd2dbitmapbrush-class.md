@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d8fb0833fc82895f1f32fb5c93a6e6519bfe119c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 23728966dfd6bd759c16b364da063c7f80687b5e
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33354627"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954497"
 ---
 # <a name="cd2dbitmapbrush-class"></a>CD2DBitmapBrush sınıfı
 ID2D1BitmapBrush için sarmalayıcı.  
@@ -142,7 +142,7 @@ void Attach(ID2D1BitmapBrush* pResource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pResource`  
+ *pResource*  
  Mevcut kaynak arabirimi. NULL olamaz  
   
 ##  <a name="cd2dbitmapbrush"></a>  CD2DBitmapBrush::CD2DBitmapBrush  
@@ -176,28 +176,28 @@ CD2DBitmapBrush(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentTarget`  
+ *pParentTarget*  
  İşleme hedefi için bir işaretçi.  
   
- `pBitmapBrushProperties`  
+ *pBitmapBrushProperties*  
  Genişletme modları ve bit eşlem fırça ilişkilendirme modu için bir işaretçi.  
   
- `pBrushProperties`  
+ *pBrushProperties*  
  Opaklık ve fırça dönüşümü için bir işaretçi.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
   
- `uiResID`  
+ *uiResID*  
  Kaynak Kimliği kaynak sayısı.  
   
- `lpszType`  
+ *lpszType*  
  Kaynak türü içeren null ile sonlandırılmış bir dize işaretçi.  
   
- `sizeDest`  
+ *sizeDest*  
  Bit eşlem hedef boyutu.  
   
- `lpszImagePath`  
+ *lpszImagePath*  
  İşaretçi null ile sonlandırılmış dizeye dosya adını içerir.  
   
 ##  <a name="commoninit"></a>  CD2DBitmapBrush::CommonInit  
@@ -208,7 +208,7 @@ void CommonInit(D2D1_BITMAP_BRUSH_PROPERTIES* pBitmapBrushProperties);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pBitmapBrushProperties`  
+ *pBitmapBrushProperties*  
  Bit eşlem Fırça özellikleri için bir işaretçi.  
   
 ##  <a name="create"></a>  CD2DBitmapBrush::Create  
@@ -219,7 +219,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pRenderTarget`  
+ *pRenderTarget*  
  İşleme hedefi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -331,7 +331,7 @@ void SetBitmap(CD2DBitmap* pBitmap);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pBitmap`  
+ *pBitmap*  
  Fırça tarafından kullanılan bit eşlem kaynağı  
   
 ##  <a name="setextendmodex"></a>  CD2DBitmapBrush::SetExtendModeX  
@@ -342,7 +342,7 @@ void SetExtendModeX(D2D1_EXTEND_MODE extendModeX);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `extendModeX`  
+ *extendModeX*  
  Nasıl fırça, bit eşlem genişletmek bu alanları yatay olarak yerleştirir belirten bir değer  
   
 ##  <a name="setextendmodey"></a>  CD2DBitmapBrush::SetExtendModeY  
@@ -353,7 +353,7 @@ void SetExtendModeY(D2D1_EXTEND_MODE extendModeY);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `extendModeY`  
+ *extendModeY*  
  Nasıl fırça, bit eşlem genişletmek bu alanlara dikey olarak yerleştirir belirten bir değer  
   
 ##  <a name="setinterpolationmode"></a>  CD2DBitmapBrush::SetInterpolationMode  
@@ -364,7 +364,7 @@ void SetInterpolationMode(D2D1_BITMAP_INTERPOLATION_MODE interpolationMode);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `interpolationMode`  
+ *interpolationMode*  
  Fırça bit eşlem ölçeklendirilmiş veya Döndürülmüş kullanılan ilişkilendirme modu  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

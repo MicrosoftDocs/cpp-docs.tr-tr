@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a247ffc36b3e0eb3e52c6f04949c693597d73064
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a56692320e35a5f115e0e267654b809ba491549c
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385248"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953525"
 ---
 # <a name="tn033-dll-version-of-mfc"></a>TN033: MFC'nin DLL Sürümü
 Bu Not MFCxx.DLL kullanabilirsiniz ve MFC uygulamaları ve MFC uzantı DLL'leri ile dinamik bağlantı kitaplıkları (x MFC sürüm numarası olduğu yer) MFCxxD.DLL paylaşılan nasıl açıklanmaktadır. Normal MFC DLL'leri hakkında daha fazla bilgi için bkz: [DLL'in bir parçası olarak MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md).  
@@ -102,7 +102,7 @@ Bu Not MFCxx.DLL kullanabilirsiniz ve MFC uygulamaları ve MFC uzantı DLL'leri 
   
 -   MFC uzantı DLL özel bir sağlamalısınız `DllMain`. AppWizard sağlayan bir `DllMain` değiştirebileceğiniz işlevi.  
   
--   Bir MFC uzantı DLL'si genellikle oluşturmak için bir başlatma yordamının sağlayacak bir **CDynLinkLibrary** MFC uzantı DLL vermek isterse `CRuntimeClass`es veya kaynakları uygulamaya. Türetilen bir sınıftan **CDynLinkLibrary** uygulama başına veri MFC uzantı DLL tarafından korunmalıdır varsa kullanılabilir.  
+-   Bir MFC uzantı DLL'si genellikle oluşturmak için bir başlatma yordamının sağlayacak bir `CDynLinkLibrary` MFC uzantı DLL vermek isterse `CRuntimeClass`es veya kaynakları uygulamaya. Türetilen bir sınıftan `CDynLinkLibrary` uygulama başına veri MFC uzantı DLL tarafından korunmalıdır varsa kullanılabilir.  
   
  Bu noktalar aşağıdaki daha ayrıntılı olarak açıklanmıştır. MFC Gelişmiş kavramları örnek ayrıca başvurmalıdır [DLLHUSK](../visual-cpp-samples.md) beri bu gösterilmektedir:  
   
@@ -140,9 +140,9 @@ Bu Not MFCxx.DLL kullanabilirsiniz ve MFC uygulamaları ve MFC uzantı DLL'leri 
 ### <a name="changing-your-header-files"></a>Üstbilgi dosyaları değiştiriliyor  
  MFC uzantı DLL'si genellikle ortak işlevselliğinin bu işlevselliği kullanabilirsiniz bir veya daha fazla uygulama için dışarı aktarmak için hedefidir. Sınıfları ve istemci uygulamalarınız için kullanılabilen genel işlevleri dışarı aktarma için bu boils.  
   
- Bunu yapmak için her üye işlevleri içeri veya dışarı aktarma uygun şekilde olarak işaretlenmiş güvence altına gerekir. Bu özel bildirimleri gerektirir: **__declspec(dllexport)** ve **__declspec(dllimport)**. İstemci uygulamaları tarafından kullanılan, sınıflar, bunları olarak bildirilmesi için istediğiniz **__declspec(dllimport)**. MFC uzantı DLL'si kendisini oluşturulmuştur, bunlar olarak bildirilmelidir **__declspec(dllexport)**. Böylece istemci programları için yükleme zamanında bağlama Ayrıca işlevleri gerçekte, aktarılması gerekir.  
+ Bunu yapmak için her üye işlevleri içeri veya dışarı aktarma uygun şekilde olarak işaretlenmiş güvence altına gerekir. Bu özel bildirimleri gerektirir: `__declspec(dllexport)` ve `__declspec(dllimport)`. İstemci uygulamaları tarafından kullanılan, sınıflar, bunları olarak bildirilmesi için istediğiniz `__declspec(dllimport)`. MFC uzantı DLL'si kendisini oluşturulmuştur, bunlar olarak bildirilmelidir `__declspec(dllexport)`. Böylece istemci programları için yükleme zamanında bağlama Ayrıca işlevleri gerçekte, aktarılması gerekir.  
   
- Tüm sınıfınız dışarı aktarmak için kullanın **AFX_EXT_CLASS** sınıf tanımında. Bu makrosu framework tarafından tanımlanan **__declspec(dllexport)** zaman **_AFXDLL** ve `_AFXEXT` tanımlı, ancak olarak tanımlanan **__declspec(dllimport)** zaman `_AFXEXT` tanımlı değil. `_AFXEXT` yukarıda açıklandığı gibi yalnızca MFC uzantı DLL oluşturulurken tanımlanır. Örneğin:  
+ Tüm sınıfınız dışarı aktarmak için kullanın `AFX_EXT_CLASS` sınıf tanımında. Bu makrosu framework tarafından tanımlanan `__declspec(dllexport)` zaman `_AFXDLL` ve `_AFXEXT` tanımlı, ancak olarak tanımlanan `__declspec(dllimport)` zaman `_AFXEXT` tanımlı değil. `_AFXEXT` yukarıda açıklandığı gibi yalnızca MFC uzantı DLL oluşturulurken tanımlanır. Örneğin:  
   
 ```  
 class AFX_EXT_CLASS CExampleExport : public CObject  
@@ -150,7 +150,7 @@ class AFX_EXT_CLASS CExampleExport : public CObject
 ```  
   
 ### <a name="not-exporting-the-entire-class"></a>Bütün sınıfı dışa değil  
- Bazen sınıfınızın yalnızca tek tek gerekli üyeleri vermek isteyebilirsiniz. Dışa aktarıyorsanız, örneğin, bir `CDialog`-türetilmiş sınıf, yalnızca Oluşturucusu vermeniz gerekebilir ve `DoModal` çağırın. DLL kullanarak bu üyelerin dışarı aktarabilirsiniz. DEF dosyası, ancak de kullanabilir **AFX_EXT_CLASS** kadar aynı şekilde dışarı aktarmak için gereken tek tek üyeleri üzerinde.  
+ Bazen sınıfınızın yalnızca tek tek gerekli üyeleri vermek isteyebilirsiniz. Dışa aktarıyorsanız, örneğin, bir `CDialog`-türetilmiş sınıf, yalnızca Oluşturucusu vermeniz gerekebilir ve `DoModal` çağırın. DLL kullanarak bu üyelerin dışarı aktarabilirsiniz. DEF dosyası, ancak de kullanabilir `AFX_EXT_CLASS` kadar aynı şekilde dışarı aktarmak için gereken tek tek üyeleri üzerinde.  
   
  Örneğin:  
   
@@ -169,7 +169,7 @@ AFX_EXT_CLASS int DoModal();
   
  Bunu yaptığınızda, sınıfın tüm üyeleri artık verdiğiniz çünkü bir ek sorunlarla karşılaşabilirsiniz. Yönteminde, MFC makroları çalışma sorunudur. MFC'nin yardımcı makroları çeşitli gerçekte bildirme veya veri üyeleri tanımlayın. Bu nedenle, bu veri üyeleri de DLL dosyasından verilmesi gerekir.  
   
- Örneğin, `DECLARE_DYNAMIC` makrosu MFC uzantı DLL'si oluştururken aşağıdaki gibi tanımlanır:  
+ Örneğin, bir MFC uzantı DLL oluşturulurken DECLARE_DYNAMIC makrosu şu şekilde tanımlanır:  
   
 ```  
 #define DECLARE_DYNAMIC(class_name) \  
@@ -184,9 +184,9 @@ protected: \
 \  
 ```  
   
- Başlayan satır "statik `AFX_DATA`" sınıfınızın içinde statik bir nesne bildirme. Bu sınıf doğru şekilde dışa aktarmak ve çalışma zamanı bilgileri bir istemciden erişmek için. EXE, bu statik nesneyi dışarı aktarmanız gerekmez. Statik nesne değiştiricisi ile bildirildiğinden `AFX_DATA`, yalnızca tanımlamanız gerekecek `AFX_DATA` olmasını **__declspec(dllexport)** DLL dosyanızı oluştururken ve olarak tanımlamak **__declspec(dllimport)** istemciniz yürütülebilir oluştururken.  
+ Başlayan satır "statik `AFX_DATA`" sınıfınızın içinde statik bir nesne bildirme. Bu sınıf doğru şekilde dışa aktarmak ve çalışma zamanı bilgileri bir istemciden erişmek için. EXE, bu statik nesneyi dışarı aktarmanız gerekmez. Statik nesne değiştiricisi ile bildirildiğinden `AFX_DATA`, yalnızca tanımlamanız gerekecek `AFX_DATA` olmasını `__declspec(dllexport)` DLL dosyanızı oluştururken ve olarak tanımlamak `__declspec(dllimport)` istemciniz yürütülebilir oluştururken.  
   
- Yukarıda açıklandığı gibi **AFX_EXT_CLASS** bu yolla zaten tanımlandı. Yeniden tanımlamak yeterlidir `AFX_DATA` aynı olacak şekilde **AFX_EXT_CLASS** Sınıf tanımınız geçici.  
+ Yukarıda açıklandığı gibi `AFX_EXT_CLASS` bu yolla zaten tanımlandı. Yeniden tanımlamak yeterlidir `AFX_DATA` aynı olacak şekilde `AFX_EXT_CLASS` Sınıf tanımınız geçici.  
   
  Örneğin:  
   
@@ -201,12 +201,12 @@ class CExampleView : public CView
 #define AFX_DATA  
 ```  
   
- MFC her zaman kullanır `AFX_DATA` gibi senaryolar için bu tekniği çalışacak şekilde kendi makroları içinde tanımladığı veri öğelerinde simgesi. Örneğin, için çalışır `DECLARE_MESSAGE_MAP`.  
+ MFC her zaman kullanır `AFX_DATA` gibi senaryolar için bu tekniği çalışacak şekilde kendi makroları içinde tanımladığı veri öğelerinde simgesi. Örneğin, DECLARE_MESSAGE_MAP çalışır.  
   
 > [!NOTE]
 >  Seçilen sınıf üyeleri yerine bütün sınıfı dışa aktarıyorsanız, statik veri üyeleri otomatik olarak dışarı aktarılır.  
   
- Otomatik olarak dışa aktarmak için aynı tekniği kullanabilirsiniz `CArchive` ayıklama işleci için sınıfları kullanan `DECLARE_SERIAL` ve `IMPLEMENT_SERIAL` makroları. Arşiv işleci sınıf bildirimleri köşeli ayraç kullanarak dışarı aktar (bulunur. H dosyası) aşağıdaki kod ile:  
+ Otomatik olarak dışa aktarmak için aynı tekniği kullanabilirsiniz `CArchive` declare_serıal ve ımplement_serıal makroları kullanmak sınıfları için ayıklama işleci. Arşiv işleci sınıf bildirimleri köşeli ayraç kullanarak dışarı aktar (bulunur. H dosyası) aşağıdaki kod ile:  
   
 ```  
 #undef AFX_API  
@@ -221,9 +221,9 @@ class CExampleView : public CView
 ### <a name="limitations-of-afxext"></a>_AFXEXT Sınırlamaları  
  _ Kullanabilirsiniz**AFXEXT** , MFC uzantı DLL'leri MFC uzantı DLL'leri çok katmanlı olmayan sürece ön işlemci simgesi. MFC uzantı DLL'leri çağıran veya kendi MFC uzantı sonra MFC sınıflarından, DLL'leri sınıflarda öğesinden türetilen varsa, Karışıklığı önlemek için kendi önişlemci sembolü kullanmanız gerekir.  
   
- Söz konusu Win32 sorunudur, herhangi bir veri olarak açıkça bildirmelidir **__declspec(dllexport)** DLL'den dışarı aktarılacak ise ve **__declspec(dllimport)** DLL'den dışarı aktarılacak ise. Tanımladığınızda `_AFXEXT`, MFC üstbilgileri olduğundan emin olun **AFX_EXT_CLASS** doğru tanımlanmadı.  
+ Söz konusu Win32 sorunudur, herhangi bir veri olarak açıkça bildirmelidir `__declspec(dllexport)` DLL'den dışarı aktarılacak ise ve `__declspec(dllimport)` DLL'den dışarı aktarılacak ise. Tanımladığınızda `_AFXEXT`, MFC üstbilgileri olduğundan emin olun `AFX_EXT_CLASS` doğru tanımlanmadı.  
   
- Olduğunda, birden çok katman, bir sembol gibi **AFX_EXT_CLASS** MFC uzantı DLL'si yeni sınıfları dışarı aktarma yanı sıra bu yana diğer sınıfları başka bir MFC uzantı DLL içeri aktarma yeterli değildir. Bu sorunları gidermek için DLL'i kullanmak DLL kendisini oluşturduğunuzu gösteren özel bir önişlemci sembolü kullanın. Örneğin, iki MFC uzantı DLL'leri, A.DLL ve B.DLL düşünün. Her A.H ve B.H'taki bazı sınıflarda sırasıyla verin. B.DLL a.DLL'den sınıfları kullanır. Üstbilgi dosyaları şunun gibi görünür:  
+ Olduğunda, birden çok katman, bir sembol gibi `AFX_EXT_CLASS` MFC uzantı DLL'si yeni sınıfları dışarı aktarma yanı sıra bu yana diğer sınıfları başka bir MFC uzantı DLL içeri aktarma yeterli değildir. Bu sorunları gidermek için DLL'i kullanmak DLL kendisini oluşturduğunuzu gösteren özel bir önişlemci sembolü kullanın. Örneğin, iki MFC uzantı DLL'leri, A.DLL ve B.DLL düşünün. Her A.H ve B.H'taki bazı sınıflarda sırasıyla verin. B.DLL a.DLL'den sınıfları kullanır. Üstbilgi dosyaları şunun gibi görünür:  
   
 ```  
 /* A.H */  
@@ -249,10 +249,10 @@ class CLASS_DECL_B CExampleB : public CExampleA
   
  A.dll oluşturulduğunda ile oluşturulmuştur **/D A_IMPL** ve B.DLL oluşturulduğunda ile yerleşiktir **/D B_IMPL**. Her DLL için ayrı sembol kullanarak CExampleB aktarılır ve CExampleA b.dll oluşturulduğunda içe aktarılır. CExampleA a.dll oluşturulurken dışarı ve içeri B.DLL (veya başka bir istemci) tarafından kullanıldığında.  
   
- Bu tür katmanlama yerleşik kullanırken yapılamaz **AFX_EXT_CLASS** ve `_AFXEXT` önişlemci simgeleri. Yukarıda açıklanan teknikleri MFC'nin mekanizması kullanır. Bu, OLE, veritabanı ve ağ MFC uzantı DLL'leri oluştururken bir şekilde benzemeyen bu sorunu çözer.  
+ Bu tür katmanlama yerleşik kullanırken yapılamaz `AFX_EXT_CLASS` ve `_AFXEXT` önişlemci simgeleri. Yukarıda açıklanan teknikleri MFC'nin mekanizması kullanır. Bu, OLE, veritabanı ve ağ MFC uzantı DLL'leri oluştururken bir şekilde benzemeyen bu sorunu çözer.  
   
 ### <a name="not-exporting-the-entire-class"></a>Bütün sınıfı dışa değil  
- Sınıfının tümüne aktarıyorsanız değil, özel dikkat edin gerekecektir. MFC makroları tarafından oluşturulan tüm gerekli veri öğelerinin doğru verildiğinden emin olmanız gerekir. Bu yeniden tanımlayarak yapılabilir **AFX_DATA** , belirli sınıfı makrosu için. Bu, bütün sınıfı dışarı aktarma değil dilediğiniz zaman yapılmalıdır.  
+ Sınıfının tümüne aktarıyorsanız değil, özel dikkat edin gerekecektir. MFC makroları tarafından oluşturulan tüm gerekli veri öğelerinin doğru verildiğinden emin olmanız gerekir. Bu yeniden tanımlayarak yapılabilir `AFX_DATA` , belirli sınıfı makrosu için. Bu, bütün sınıfı dışarı aktarma değil dilediğiniz zaman yapılmalıdır.  
   
  Örneğin:  
   
@@ -312,22 +312,22 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID)
 }  
 ```  
   
- Çağrısı `AfxInitExtensionModule` modülleri çalışma zamanı sınıfları yakalar (`CRuntimeClass` yapıları) yanı sıra kendi nesne oluşturucuları (`COleObjectFactory` nesneler) kullanmak için sonraki olduğunda **CDynLinkLibrary** nesnesi oluşturulur. (İsteğe bağlı) çağrısı `AfxTermExtensionModule` her işlem ayırır olduğunda MFC Temizleme için MFC uzantı DLL'si izin verir. (işlem çıktığında ya da DLL sonucu olarak kaldırıldığında gerçekleşir bir **FreeLibrary** çağrısı) MFC uzantı DLL . Çoğu MFC uzantı DLL'leri dinamik olarak yüklenmez bu yana (genellikle, bunlar, içeri aktarma kitaplıkları bağlı), çağrısı `AfxTermExtensionModule` genellikle gerekli değildir.  
+ Çağrısı `AfxInitExtensionModule` modülleri çalışma zamanı sınıfları yakalar (`CRuntimeClass` yapıları) yanı sıra kendi nesne oluşturucuları (`COleObjectFactory` nesneler) kullanmak için sonraki olduğunda `CDynLinkLibrary` nesnesi oluşturulur. (İsteğe bağlı) çağrısı `AfxTermExtensionModule` her işlem ayırır olduğunda MFC Temizleme için MFC uzantı DLL'si izin verir. (işlem çıktığında ya da DLL sonucu olarak kaldırıldığında gerçekleşir bir `FreeLibrary` çağrısı) MFC uzantı DLL. Çoğu MFC uzantı DLL'leri dinamik olarak yüklenmez bu yana (genellikle, bunlar, içeri aktarma kitaplıkları bağlı), çağrısı `AfxTermExtensionModule` genellikle gerekli değildir.  
   
- Uygulamanızı yükler ve MFC uzantı DLL'leri dinamik olarak boşaltır, çağırdığınızdan emin olun `AfxTermExtensionModule` yukarıda gösterildiği gibi. Ayrıca kullandığınızdan emin olun `AfxLoadLibrary` ve `AfxFreeLibrary` (Win32 işlevleri yerine **LoadLibrary** ve **FreeLibrary**) uygulamanız birden çok iş parçacığı kullanıyorsa veya dinamik olarak bir MFC yüklüyorsa uzantı DLL. Kullanarak `AfxLoadLibrary` ve `AfxFreeLibrary` MFC uzantı DLL yüklendiğinde ve kaldırıldığında yürütülen başlatma ve kapatma kodunun genel MFC durumunu bozuk olmayan oluşturmasını sağlar.  
+ Uygulamanızı yükler ve MFC uzantı DLL'leri dinamik olarak boşaltır, çağırdığınızdan emin olun `AfxTermExtensionModule` yukarıda gösterildiği gibi. Ayrıca kullandığınızdan emin olun `AfxLoadLibrary` ve `AfxFreeLibrary` (Win32 işlevleri yerine `LoadLibrary` ve `FreeLibrary`) uygulamanız birden çok iş parçacığı kullanıyorsa veya dinamik olarak MFC uzantı DLL'si yüklüyorsa. Kullanarak `AfxLoadLibrary` ve `AfxFreeLibrary` MFC uzantı DLL yüklendiğinde ve kaldırıldığında yürütülen başlatma ve kapatma kodunun genel MFC durumunu bozuk olmayan oluşturmasını sağlar.  
   
- Üstbilgi dosyası AFXDLLX. H tanımı gibi MFC uzantı DLL'leri içinde kullanılan yapılar için özel tanımları içerir `AFX_EXTENSION_MODULE` ve **CDynLinkLibrary**.  
+ Üstbilgi dosyası AFXDLLX. H tanımı gibi MFC uzantı DLL'leri içinde kullanılan yapılar için özel tanımları içerir `AFX_EXTENSION_MODULE` ve `CDynLinkLibrary`.  
   
  Genel *extensionDLL* gösterildiği gibi bildirilmelidir. MFC 16-bit sürümüne, bellek ayırabilir ve MFCxx.DLL tamamen başlatılmış olduğundan bu süre boyunca çağırabilirsiniz MFC işlevleri, `DllMain` olarak adlandırılır.  
   
 ### <a name="sharing-resources-and-classes"></a>Kaynakları ve sınıfları paylaşma  
  Basit MFC uzantı DLL'leri yalnızca birkaç düşük bant genişlikli istemci uygulaması ve hiçbir şey için daha fazla dışarı aktarma işlevleri. Daha fazla kullanıcı arabirimi yoğun DLL'leri kaynakları ve C++ sınıfları istemci uygulamasına vermek isteyebilirsiniz.  
   
- Kaynakları dışarı aktarma, bir kaynak listesi üzerinden yapılır. Her iki uygulamada ayrı olarak bağlantılı bir listesidir **CDynLinkLibrary** nesneleri. Bir kaynak ararken kaynakları yükleyen standart MFC uygulamalarının çoğunu geçerli kaynak modülüne bakar (`AfxGetResourceHandle`) ve ilerlemesi bulunamadı listesini **CDynLinkLibrary** nesneleri yüklenmeye çalışılıyor İstenen kaynak.  
+ Kaynakları dışarı aktarma, bir kaynak listesi üzerinden yapılır. Her iki uygulamada ayrı olarak bağlantılı bir listesidir `CDynLinkLibrary` nesneleri. Bir kaynak ararken kaynakları yükleyen standart MFC uygulamalarının çoğunu geçerli kaynak modülüne bakar (`AfxGetResourceHandle`) ve ilerlemesi bulunamadı listesini `CDynLinkLibrary` nesneleri istenen kaynak yüklenmeye çalışılıyor.  
   
  C++ nesneleri bir C++ sınıf adı verilen dinamik oluşturulmasını benzer. MFC nesne seri durumdan çıkarma mekanizması tümüne sahip olması `CRuntimeClass` nesneleri kaydedilen ne daha önce depolanan üzerinde bağlı olarak gerekli tür C++ nesnesinin dinamik olarak oluşturarak yeniden.  
   
- MFC uzantı DLL'si olan sınıfları kullanmak için istemci uygulaması istiyorsanız `DECLARE_SERIAL`, istemci uygulamasına görünür olmasını, sınıfları dışarı gerekecektir. Bu adım adım ilerlemenizi sağlayarak gerçekleştirilir **CDynLinkLibrary** listesi.  
+ MFC uzantı DLL'si olan sınıfları kullanmak için istemci uygulaması istiyorsanız `DECLARE_SERIAL`, istemci uygulamasına görünür olmasını, sınıfları dışarı gerekecektir. Bu adım adım ilerlemenizi sağlayarak gerçekleştirilir `CDynLinkLibrary` listesi.  
   
  MFC Gelişmiş kavramları örnek durumunda [DLLHUSK](../visual-cpp-samples.md), liste şöyle görünür:  
   
@@ -344,14 +344,14 @@ head ->   DLLHUSK.EXE   - or -   DLLHUSK.EXE
   
  MFCxx.DLL kaynak ve sınıf listesi genellikle son. MFCxx.DLL tüm standart komut kimlikleri için komut istemi dizeleri dahil olmak üzere tüm standart MFC kaynakları içerir. Listenin tail yerleştirme verir DLL'ler ve yüklüyse istemci uygulamanın kendisinin bir MFCxx.dll paylaşılan kaynakları yerine Bel üzere ancak standart MFC kaynakları, kendi kopyası.  
   
- İstemci uygulamanın ad alanına birleştirme kaynakları ve sınıf adlarını tüm DLL'ler hangi kimlikleri dikkatli olmak zorunda dezavantajı veya adları var. Kuşkusuz bu özellik ya da vererek olmayan kaynaklarınızı devre dışı bırakabilirsiniz veya **CDynLinkLibrary** istemci uygulamasına nesne. [DLLHUSK](../visual-cpp-samples.md) örnek birden çok başlık dosyalarını kullanarak paylaşılan kaynak ad alanı yönetir. Bkz: [Teknik Not 35](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md) paylaşılan kaynak dosyalarını kullanma hakkında daha fazla ipucu için.  
+ İstemci uygulamanın ad alanına birleştirme kaynakları ve sınıf adlarını tüm DLL'ler hangi kimlikleri dikkatli olmak zorunda dezavantajı veya adları var. Kuşkusuz bu özellik ya da vererek olmayan kaynaklarınızı devre dışı bırakabilirsiniz veya `CDynLinkLibrary` istemci uygulamasına nesne. [DLLHUSK](../visual-cpp-samples.md) örnek birden çok başlık dosyalarını kullanarak paylaşılan kaynak ad alanı yönetir. Bkz: [Teknik Not 35](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md) paylaşılan kaynak dosyalarını kullanma hakkında daha fazla ipucu için.  
   
 ### <a name="initializing-the-dll"></a>DLL başlatma  
- Yukarıda belirtildiği gibi genellikle oluşturmak istediğiniz bir **CDynLinkLibrary** kaynakları ve sınıfları istemci uygulamaya dışa aktarmak için nesne. DLL başlatmak için dışarı aktarılan giriş noktası sağlamanız gerekir. En düşük düzeyde, bu bağımsız değişken almayan ve hiçbir şey döndüren, void bir yordamdır, ancak istediğiniz herhangi bir şey olabilir.  
+ Yukarıda belirtildiği gibi genellikle oluşturmak istediğiniz bir `CDynLinkLibrary` kaynakları ve sınıfları istemci uygulamaya dışa aktarmak için nesne. DLL başlatmak için dışarı aktarılan giriş noktası sağlamanız gerekir. En düşük düzeyde, bu bağımsız değişken almayan ve hiçbir şey döndüren, void bir yordamdır, ancak istediğiniz herhangi bir şey olabilir.  
   
- Bu yaklaşımı kullanırsanız, DLL kullanmak istediği her istemci uygulaması bu başlatma yordam çağırmalıdır. Bu ayrıca ayırabilir **CDynLinkLibrary** nesnesinde, `DllMain` çağırdıktan hemen sonra `AfxInitExtensionModule`.  
+ Bu yaklaşımı kullanırsanız, DLL kullanmak istediği her istemci uygulaması bu başlatma yordam çağırmalıdır. Bu ayrıca ayırabilir `CDynLinkLibrary` nesnesinde, `DllMain` çağırdıktan hemen sonra `AfxInitExtensionModule`.  
   
- Başlatma yordamı oluşturmalısınız bir **CDynLinkLibrary** , MFC uzantı DLL bilgi kadar kablolu geçerli uygulamanın yığınındaki nesnesi. Bu aşağıdaki ile yapılabilir:  
+ Başlatma yordamı oluşturmalısınız bir `CDynLinkLibrary` , MFC uzantı DLL bilgi kadar kablolu geçerli uygulamanın yığınındaki nesnesi. Bu aşağıdaki ile yapılabilir:  
   
 ```  
 extern "C" extern void WINAPI InitXxxDLL()  
@@ -361,13 +361,13 @@ extern "C" extern void WINAPI InitXxxDLL()
 }  
 ```  
   
- Rutin adı *InitXxxDLL* Bu örnekte, istediğiniz herhangi bir şey olabilir. Olması gerekmez `extern "C"`, ancak bunu yapar verme listesine korumak daha kolay yapmak.  
+ Rutin adı *InitXxxDLL* Bu örnekte, istediğiniz herhangi bir şey olabilir. Olması gerekmez **extern "C"**, ancak bunu yapar verme listesine korumak daha kolay yapmak.  
   
 > [!NOTE]
 >  Normal MFC DLL, MFC uzantı DLL kullanırsanız, bu başlatma işlevi dışarı aktarmanız gerekir. Bu işlev, Normal MFC DLL herhangi bir MFC uzantı DLL sınıfları veya kaynakları kullanmadan önce çağrılmalıdır.  
   
 ### <a name="exporting-entries"></a>Girişleri dışarı aktarma  
- Sınıflarını dışarı aktarmak için basit bir yolla kullanmaktır **__declspec(dllimport)** ve **__declspec(dllexport)** her bir sınıf ve dışarı aktarmak istediğiniz genel işlevi. Bu, çok daha kolay hale getirir, ancak hangi işlevleri dışarı üzerinde daha az denetime sahip ve sıralı olarak işlevleri verilemiyor (aşağıda açıklanmıştır) her bir giriş noktası adlandırma değerinden daha az verimlidir. TESTDLL1 ve TESTDLL2 girdilerinin dışarı aktarmak için bu yöntemi kullanın.  
+ Sınıflarını dışarı aktarmak için basit bir yolla kullanmaktır `__declspec(dllimport)` ve `__declspec(dllexport)` her bir sınıf ve dışarı aktarmak istediğiniz genel işlevi. Bu, çok daha kolay hale getirir, ancak hangi işlevleri dışarı üzerinde daha az denetime sahip ve sıralı olarak işlevleri verilemiyor (aşağıda açıklanmıştır) her bir giriş noktası adlandırma değerinden daha az verimlidir. TESTDLL1 ve TESTDLL2 girdilerinin dışarı aktarmak için bu yöntemi kullanın.  
   
  Daha verimli bir yöntem (ve MFCxx.DLL tarafından kullanılan yöntem) her giriş el ile her giriş adlandırma tarafından verilmesidir. DEF dosyası. Seçmeli dışarı bizim DLL'den (diğer bir deyişle, her şeyin) verdiğiniz olduğundan, biz dışarı aktarmak için istediğimiz hangi belirli arabirimleri karar vermeniz gerekir. Girdiler biçiminde bağlayıcı karıştırılmış adlar belirtmelisiniz beri bu zordur. DEF dosyası. Sembolik bağlantı için gerçekten gerekli olmadıkça herhangi C++ sınıfları vermeyin.  
   
@@ -376,10 +376,10 @@ extern "C" extern void WINAPI InitXxxDLL()
 ### <a name="cwinapp-vs-cdynlinklibrary"></a>CWinApp vs. CDynLinkLibrary  
  Bir MFC uzantı DLL'si sahip olmayan bir `CWinApp`-nesnesinin kendi türetilmiş; bunun yerine birlikte çalışmalısınız `CWinApp`-nesne istemci uygulamasının türetilmiş. Bu, istemci uygulaması ana ileti göndericisi, boşta döngü vb. sahibi olduğu anlamına gelir.  
   
- MFC uzantı DLL her uygulama için ek veri tutması gerekiyorsa, yeni bir sınıf türetin **CDynLinkLibrary** ve yordam açıklanmaktadır yukarıda InitXxxDLL oluşturun. Çalıştırırken, DLL geçerli uygulama listesini denetleyebilirsiniz **CDynLinkLibrary** belirli MFC uzantısı DLL bulmak için nesneleri.  
+ MFC uzantı DLL her uygulama için ek veri tutması gerekiyorsa, yeni bir sınıf türetin `CDynLinkLibrary` ve yordam açıklanmaktadır yukarıda InitXxxDLL oluşturun. Çalıştırırken, DLL geçerli uygulama listesini denetleyebilirsiniz `CDynLinkLibrary` belirli MFC uzantısı DLL bulmak için nesneleri.  
   
 ### <a name="using-resources-in-your-dll-implementation"></a>DLL uygulamanızda kaynaklarını kullanma  
- Yukarıda belirtildiği gibi varsayılan kaynak yükü listesini yükselteceğinizi **CDynLinkLibrary** ilk EXE veya istenen kaynak DLL arayan nesneleri. Tüm MFC API'leri yanı sıra tüm iç kod kullanan `AfxFindResourceHandle` bulunduğu olsun hiçbir kaynak bulmak için kaynak listesi yürütmek için.  
+ Yukarıda belirtildiği gibi varsayılan kaynak yükü listesini yükselteceğinizi `CDynLinkLibrary` ilk EXE veya istenen kaynak DLL arayan nesneleri. Tüm MFC API'leri yanı sıra tüm iç kod kullanan `AfxFindResourceHandle` bulunduğu olsun hiçbir kaynak bulmak için kaynak listesi yürütmek için.  
   
  Yalnızca belirli bir konumdan kaynakları yüklemek isterseniz, API'lerini kullanan `AfxGetResourceHandle` ve `AfxSetResourceHandle` eski tutamacı kaydedip yeni tutamacı ayarlayın. İstemci uygulamasına geri dönmeden önce eski kaynak tanıtıcısını geri yüklediğinizden emin olun. Örnek TESTDLL2, açıkça bir menü yüklemek için bu yaklaşımı kullanır.  
   
@@ -452,9 +452,9 @@ extern "C" extern void WINAPI InitXxxDLL()
  MFC 16-bit sürümünü çeşitli uygulama başına veri yığını kesimindeki bazı 80 x 86 bütünleştirilmiş kodu, işlem başına özel durum bağlamı ve başka teknikler tarafından oluşturulan özel kesimler de dahil olmak üzere özel teknikler gerekli. Win32 doğrudan işlem içi verileri DLL'de, çoğu zaman istediğiniz olduğu destekler. Çoğunlukla MFCxx.DLL yalnızca NAFXCW ' dir. DLL içinde paketlenmiş LIB. MFC kaynak kodu bakarsanız, yapılması gereken çok az sayıda özel durumlar olduğundan, çok az #ifdef _AFXDLL bulabilirsiniz. Vardır özellikle Win32 Windows (Win32 da bilinir) 3.1'uğraşmanız olan özel durumlar. MFC DLL iş parçacığı yerel depolaması (TLS) işlem yerel verileri elde etmek için Win32 API'ları kullanın gerekir doğrudan Win32 destek işlem içi DLL verileri değil yapar.  
   
 ### <a name="impact-on-library-sources-additional-files"></a>Kitaplık kaynakları, ek dosyalar üzerinde etkisi  
- Etkisini **_AFXDLL** normal MFC sınıf kitaplığı kaynağı ve üstbilgileri sürümünde görece küçük. Özel sürüm dosyası (AFXV_DLL. H) yanı sıra ek üstbilgi dosyası (AFXDLL_. H) tarafından ana AFXWIN dahil. H üstbilgisi. AFXDLL_. H üstbilgisi içerir **CDynLinkLibrary** sınıfı ve diğer uygulama ayrıntılarını her ikisi de **_AFXDLL** uygulamaları ve MFC uzantı DLL'leri. AFXDLLX. H üstbilgi MFC uzantı DLL'leri (Ayrıntılar için yukarıdaki bakın) oluşturmak için sağlanır.  
+ Etkisini **_AFXDLL** normal MFC sınıf kitaplığı kaynağı ve üstbilgileri sürümünde görece küçük. Özel sürüm dosyası (AFXV_DLL. H) yanı sıra ek üstbilgi dosyası (AFXDLL_. H) tarafından ana AFXWIN dahil. H üstbilgisi. AFXDLL_. H üstbilgisi içerir `CDynLinkLibrary` sınıfı ve diğer uygulama ayrıntılarını her ikisi de `_AFXDLL` uygulamaları ve MFC uzantı DLL'leri. AFXDLLX. H üstbilgi MFC uzantı DLL'leri (Ayrıntılar için yukarıdaki bakın) oluşturmak için sağlanır.  
   
- Bazı ek koşullu kod altında normal kaynakları MFC SRC MFC kitaplığına sahip **_AFXDLL** #ifdef. Bir ek kaynak dosyası (DLLINIT. Fazladan DLL başlatma kod ve diğer Birleştirici MFC paylaşılan sürümü için CPP) içerir.  
+ Bazı ek koşullu kod altında normal kaynakları MFC SRC MFC kitaplığına sahip `_AFXDLL` #ifdef. Bir ek kaynak dosyası (DLLINIT. Fazladan DLL başlatma kod ve diğer Birleştirici MFC paylaşılan sürümü için CPP) içerir.  
   
  MFC paylaşılan sürümünü oluşturmak için ek dosyalar sağlanır. (Aşağıda DLL oluşturma hakkında ayrıntılı bilgi için bkz.)  
   
@@ -465,7 +465,7 @@ extern "C" extern void WINAPI InitXxxDLL()
 -   A. CLW dosyası (MFCDLL. MFC gözatma izin verecek şekilde ClassWizard kullanarak sınıfları CLW) sağlanır. Not: Bu özellik belirli MFC'nin DLL sürümü değil.  
   
 ### <a name="memory-management"></a>Bellek Yönetimi  
- MFCxx.DLL kullanarak bir uygulamayı paylaşılan C çalışma zamanı DLL MSVCRTxx.DLL tarafından sağlanan ortak bir bellek ayırıcısı kullanır. Uygulama, tüm MFC uzantı DLL'leri ve MFC DLL'leri yanı bu paylaşılan bellek ayırıcısı kullanın. MFC DLL'leri, paylaşılan bir DLL için bellek ayırma kullanarak, daha sonra uygulama tarafından veya serbest bellek ayrılabilir. Uygulama ve DLL aynı ayırıcısı kullanmanız gerekir çünkü genel C++ geçersiz `operator new` veya `operator delete`. C çalışma zamanı bellek ayırma yordamları geri kalanı için aynı kuralları uygula (gibi `malloc`, `realloc`, **ücretsiz**ve diğerleri).  
+ MFCxx.DLL kullanarak bir uygulamayı paylaşılan C çalışma zamanı DLL MSVCRTxx.DLL tarafından sağlanan ortak bir bellek ayırıcısı kullanır. Uygulama, tüm MFC uzantı DLL'leri ve MFC DLL'leri yanı bu paylaşılan bellek ayırıcısı kullanın. MFC DLL'leri, paylaşılan bir DLL için bellek ayırma kullanarak, daha sonra uygulama tarafından veya serbest bellek ayrılabilir. Uygulama ve DLL aynı ayırıcısı kullanmanız gerekir çünkü genel C++ geçersiz **new işleci** veya **delete işleci**. C çalışma zamanı bellek ayırma yordamları geri kalanı için aynı kuralları uygula (gibi **malloc**, **realloc**, **ücretsiz**ve diğerleri).  
   
 ### <a name="ordinals-and-class-declspecdllexport-and-dll-naming"></a>Sıra numaraları ve sınıf __declspec(dllexport) ve DLL adlandırma  
  Biz kullanmayın `class` **__declspec(dllexport)** C++ derleyicisi işlevselliğini. Bunun yerine, dışarı aktarma listesini sınıf kitaplığı kaynaklarıyla (MFCxx.DEF ve MFCxxD.DEF) dahil edilir. Giriş noktaları (İşlevler ve veriler) select bu kümesi verilir. MFC özel uygulama işlevleri ya da sınıflarını gibi diğer simgelerini verilmemiş tüm dışarı sıra yerleşik veya yerleşik olmayan adı tablosundaki bir dize adı olmadan tarafından yapılır.  

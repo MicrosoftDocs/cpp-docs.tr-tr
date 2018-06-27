@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1002ace78cf58c34c5e89bbafd81460ec5dabc1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3da7c168cc547ea32f57a145347d8ab2479482a6
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33354141"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954682"
 ---
 # <a name="canimationsize-class"></a>CAnimationSize sınıfı
 Olan boyutlar animasyonlu boyutu nesnesinin işlevselliğini uygular.  
@@ -114,10 +114,10 @@ void AddTransition(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pCXTransition`  
+ *pCXTransition*  
  Width için geçiş için bir işaretçi.  
   
- `pCYTransition`  
+ *pCYTransition*  
  Yükseklik için geçiş için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -138,16 +138,16 @@ CAnimationSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szDefault`  
+ *szDefault*  
  Varsayılan boyutunu belirtir.  
   
- `nGroupID`  
+ *nGroupID*  
  Grup kimliğini belirtir.  
   
- `nObjectID`  
+ *nObjectID*  
  Nesne kimliğini belirtir.  
   
- `dwUserData`  
+ *dwUserData*  
  Kullanıcı tanımlı veri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -163,7 +163,7 @@ virtual void GetAnimationVariableList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lst`  
+ *lst*  
  İşlevi döndüğünde, genişlik ve yükseklik temsil eden iki CAnimationVariable nesnelerine işaretçiler içerir.  
   
 ##  <a name="getcx"></a>  CAnimationSize::GetCX  
@@ -213,7 +213,7 @@ BOOL GetValue(CSize& szValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szValue`  
+ *szValue*  
  Çıktı. Bu yöntem döndürüldüğünde geçerli değeri içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -257,7 +257,7 @@ void operator=(const CSize& szSrc);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szSrc`  
+ *szSrc*  
  CSize veya boyutunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -271,7 +271,7 @@ void SetDefaultValue(const CSize& szDefault);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szDefault`  
+ *szDefault*  
  Yeni varsayılan boyutunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

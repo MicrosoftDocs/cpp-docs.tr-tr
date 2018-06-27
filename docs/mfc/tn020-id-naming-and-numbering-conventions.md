@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17b27b4cfc1b624c9c12138154a660951a0f2a13
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ca1e78ab4b94d9055b8f0c7cc14bde12506695b8
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384117"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951373"
 ---
 # <a name="tn020-id-naming-and-numbering-conventions"></a>TN020: Kimlik Adlandırma ve Numaralandırma Kuralları
 Bu Not kimlik adlandırma ve kaynakları, komutları, dizeleri, denetimleri ve alt windows için MFC 2.0 kullanan numaralandırma kuralları açıklar.  
@@ -68,7 +68,7 @@ Bu Not kimlik adlandırma ve kaynakları, komutları, dizeleri, denetimleri ve a
 |IDM_|Menü öğeleri için MFC komutu mimarisi kullanmayın.|  
 |ID_|MFC kullanan menü komutlarını mimarisi komutu.|  
   
- MFC komutu mimarisi izleyin komutları olmalıdır bir `ON_COMMAND` komut işleyici ve olabilir bir `ON_UPDATE_COMMAND_UI` işleyicisi. Bu komut işleyicileri MFC komutu mimarisi izlerseniz, bunlar düzgün menü komutu, bir araç çubuğu düğmesini veya bir iletişim çubuğu düğmesi için bağlı olan çalışmayacaktır. Aynı "ID_" öneki programın ileti çubuğu'nda görüntülenen menü istem dizesi için de kullanılır. Menü öğeleri, uygulamanızda çoğunu MFC komut kuralları izlemelidir. Tüm standart komut kimlikleri (örneğin, `ID_FILE_NEW`) Bu kuralı izleyin.  
+ MFC komutu mimarisi izleyin komutları ON_COMMAND komut işleyici olmalıdır ve bir on_update_command_uı işleyicisi olabilir. Bu komut işleyicileri MFC komutu mimarisi izlerseniz, bunlar düzgün menü komutu, bir araç çubuğu düğmesini veya bir iletişim çubuğu düğmesi için bağlı olan çalışmayacaktır. Aynı "ID_" öneki programın ileti çubuğu'nda görüntülenen menü istem dizesi için de kullanılır. Menü öğeleri, uygulamanızda çoğunu MFC komut kuralları izlemelidir. Tüm standart komut kimlikleri (örneğin, ıd_fıle_new) Bu kuralı izleyin.  
   
  MFC "IDP_" ("IDS_") yerine dizeleri özel biçimi olarak da kullanır. İstemleri, diğer bir deyişle, ileti kutularında kullanılan dizeleri dizelerdir "IDP_" ön ekine sahip. "IDP_" dizeleri, program tarafından belirlenen dizeleri yer tutucu olarak "%1" ve "%2" içerebilir. "IDP_" dizeleri genellikle Yardım konuları ilişkili olan ve "IDS_" dizeleri yapın. "IDP_" dizeleri her zaman yerelleştirilir ve "IDS_" dizeleri yerelleştirilmemiş.  
   

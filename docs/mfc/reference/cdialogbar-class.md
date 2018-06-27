@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7dbb2d8202e9b87d2825b7d40a0dde4323246aa0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5477921ff89c8bb0b23245d3848139a7c7c86444
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366720"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951562"
 ---
 # <a name="cdialogbar-class"></a>CDialogBar sınıfı
 Denetim çubuğu Windows kalıcı olmayan iletişim kutusunda işlevselliğini sağlar.  
@@ -53,7 +53,7 @@ class CDialogBar : public CControlBar
 ## <a name="remarks"></a>Açıklamalar  
  Kullanıcı arasında sekmesinde standart Windows denetimleri içerdiğinden, bir iletişim çubuğu bir iletişim kutusu benzer. Başka bir benzerlik iletişim çubuğu temsil etmek için bir iletişim şablonunu oluşturacağı açıklanmaktadır.  
   
- Oluşturma ve bir iletişim çubuğu kullanma oluşturma ve kullanma için benzer bir `CFormView` nesnesi. İlk olarak, kullanın [iletişim kutusu Düzenleyicisi](../../windows/dialog-editor.md) stiliyle bir iletişim şablonunu tanımlamak için **WS_CHILD** ve başka bir stil. Şablon stili olmamalıdır **ws_vısıble**. Uygulama kodunuzda oluşturmak için oluşturucu çağrısı `CDialogBar` nesne sonra çağırın **oluşturma** iletişim çubuğu penceresi oluşturun ve ona eklemek için `CDialogBar` nesnesi.  
+ Oluşturma ve bir iletişim çubuğu kullanma oluşturma ve kullanma için benzer bir `CFormView` nesnesi. İlk olarak, kullanın [iletişim kutusu Düzenleyicisi](../../windows/dialog-editor.md) stiliyle bir iletişim şablonunu tanımlamak için **WS_CHILD** ve başka bir stil. Şablon stili olmamalıdır **ws_vısıble**. Uygulama kodunuzda oluşturmak için oluşturucu çağrısı `CDialogBar` nesne sonra çağırın `Create` iletişim çubuğu penceresi oluşturun ve ona eklemek için `CDialogBar` nesnesi.  
   
  Daha fazla bilgi için `CDialogBar`, makaleye bakın [iletişim kutusu çubukları](../../mfc/dialog-bars.md) ve [Teknik Not 31](../../mfc/tn031-control-bars.md), Denetim çubuklarını.  
   
@@ -100,22 +100,22 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentWnd`  
+ *pParentWnd*  
  Üst için bir işaretçi `CWnd` nesnesi.  
   
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Adını gösteren bir işaretçi `CDialogBar` nesnenin iletişim kutusu kaynak şablonu.  
   
- `nStyle`  
+ *nStyle*  
  Araç çubuğu stili. Desteklenen ek araç çubuğu stilleri şunlardır:  
   
-- `CBRS_TOP` Denetim çubuğu çerçeve penceresi tepesinde bulunur.  
+- **CBRS_TOP** denetim çubuğu olan çerçeve penceresinin en üstünde.  
   
-- `CBRS_BOTTOM` Denetim çubuğu çerçeve penceresinin alt kısmındaki ' dir.  
+- **CBRS_BOTTOM** denetim çubuğu olan çerçeve penceresinin alt kısmındaki.  
   
-- `CBRS_NOALIGN` Üst yeniden boyutlandırıldığında denetim çubuğu yeniden konumlandırılır değil.  
+- **CBRS_NOALIGN** denetim çubuğu değil yeniden konumlandırılır üst yeniden boyutlandırıldığında.  
   
-- `CBRS_TOOLTIPS` Denetim çubuğu araç ipuçları görüntüler.  
+- **Cbrs_tooltıps** denetim çubuğu araç ipuçları görüntüler.  
   
 - **Cbrs_sıze_dynamıc** denetim çubuğu dinamik.  
   
@@ -123,21 +123,21 @@ virtual BOOL Create(
   
 - **CBRS_FLOATING** denetim çubuğu kayan.  
   
-- `CBRS_FLYBY` Durum çubuğu düğme hakkındaki bilgileri görüntüler.  
+- **CBRS_FLYBY** durum çubuğu düğmesi hakkında daha fazla bilgi görüntüler.  
   
 - **CBRS_HIDE_INPLACE** denetim çubuğu kullanıcıya görüntülenmez.  
   
- `nID`  
+ *nID*  
  İletişim çubuğu denetiminin kimliği.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Kaynak Kimliği `CDialogBar` nesnenin iletişim kutusu şablon.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtirseniz `CBRS_TOP` veya `CBRS_BOTTOM` hizalama Stili iletişim çubuğu genişliği, çerçeve penceresi ve yüksekliğini, tarafından belirtilen kaynak `nIDTemplate`. Belirtirseniz `CBRS_LEFT` veya `CBRS_RIGHT` hizalama Stili iletişim çubuğunun yüksekliği, çerçeve penceresi ve genişliğini, tarafından belirtilen kaynak `nIDTemplate`.  
+ Belirtirseniz **CBRS_TOP** veya **CBRS_BOTTOM** hizalama Stili iletişim çubuğu genişliği, çerçeve penceresi ve yüksekliğini, tarafından belirtilen kaynak *nIDTemplate*. Belirtirseniz **CBRS_LEFT** veya **CBRS_RIGHT** hizalama Stili iletişim çubuğunun yüksekliği, çerçeve penceresi ve genişliğini, tarafından belirtilen kaynak *nIDTemplate*.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCMessageMaps#13](../../mfc/reference/codesnippet/cpp/cdialogbar-class_1.cpp)]  

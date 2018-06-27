@@ -17,24 +17,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1eea701c33001ffa3585c2d5847f3056454b7850
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1dde1f005e53aff7ebe505d1ce619bf5c94410f8
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33380168"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955462"
 ---
 # <a name="settings-for-the-cstatusbarctrl"></a>CStatusBarCtrl Ayarları
-Varsayılan konumu bir [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md) durum penceredir pencerenin üst ancak belirtebilirsiniz `CCS_TOP` üst pencerenin istemci alanının üstünde görünür için stili.  
+Varsayılan konumu bir [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md) durum penceresi penceresinin alt kısmındaki üst olmakla birlikte, üst pencerenin istemci alanının üstünde görünür için CCS_TOP stili belirtebilirsiniz.  
   
- Belirleyebileceğiniz **SBARS_SIZEGRIP** sağ ucunda boyutlandırma tutamacı dahil etmek için stil `CStatusBarCtrl` durum penceresi. Boyutlandırma tutamacı boyutlandırma kenarlık benzer; Bu, kullanıcı tıklayın ve ana pencereyi yeniden boyutlandırmak için sürükleyin dikdörtgen bir alandır.  
+ Boyutlandırma tutamacı sağ ucunda içerecek şekilde SBARS_SIZEGRIP stili belirtebilirsiniz `CStatusBarCtrl` durum penceresi. Boyutlandırma tutamacı boyutlandırma kenarlık benzer; Bu, kullanıcı tıklayın ve ana pencereyi yeniden boyutlandırmak için sürükleyin dikdörtgen bir alandır.  
   
 > [!NOTE]
->  Birleştiriyorsanız `CCS_TOP` ve **SBARS_SIZEGRIP** stiller, sonuçta elde edilen boyutlandırma tutamacı işlevsel değildir rağmen isteğe bağlı olarak sistem durumu penceresinde çizer.  
+>  CCS_TOP ve SBARS_SIZEGRIP stilleri birleştiriyorsanız, isteğe bağlı olarak sistem durumu penceresinde çizer olsa bile ortaya çıkan boyutlandırma tutamacı işlevsel değildir.  
   
  Pencere yordamı durum penceresi için ilk boyutunu ve konumunu denetimi penceresi otomatik olarak ayarlar. Genişliği üst pencerenin istemci alanının aynıdır. Yükseklik durum pencerenin cihaz bağlamına seçili yazı tipi ölçümleri ve pencere kenarlık genişliğini temel alır.  
   
- Pencere yordamı aldığı zaman, otomatik olarak durum penceresi boyutunu ayarlar bir `WM_SIZE` ileti. Genellikle, üst pencere boyutunu değiştiğinde, üst gönderir bir `WM_SIZE` durum penceresi ileti.  
+ Bir WM_SIZE mesaj aldığı zaman pencere yordamı durum penceresi boyutunu otomatik olarak ayarlar. Genellikle, üst pencere boyutunu değiştiğinde üst durum penceresi WM_SIZE ileti gönderir.  
   
  Bir durum pencere çizim alanının en küçük yüksekliğini çağırarak ayarlayabileceğiniz [SetMinHeight](../mfc/reference/cstatusbarctrl-class.md#setminheight), en küçük yükseklik piksel cinsinden belirtme. Çizim alanı pencerenin Kenarlıklar içermez.  
   

@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35a3fb35115e1fd86a2ccf168e048a697a17dc01
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0be95b0092db315dd3af7086770411b93eb2ae23
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378511"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955218"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd sınıfı
 Çakışan Windows tek belge arabirimi (SDI) veya pencere yönetmek için üyeleri birlikte açılır çerçeve penceresi işlevselliğini sağlar.  
@@ -152,7 +152,7 @@ class CFrameWnd : public CWnd
 |[CFrameWnd::EnableDocking](#enabledocking)|Yerleşik bir denetim çubuğu sağlar.|  
 |[CFrameWnd::EndModalState](#endmodalstate)|Çerçeve pencere kalıcı durumunu sonlandırır. Tüm devre dışı windows etkinleştirir `BeginModalState`.|  
 |[CFrameWnd::FloatControlBar](#floatcontrolbar)|Denetim çubuğu kayar.|  
-|[CFrameWnd::GetActiveDocument](#getactivedocument)|Etkin döndürür **CDocument** nesnesi.|  
+|[CFrameWnd::GetActiveDocument](#getactivedocument)|Etkin döndürür `CDocument` nesnesi.|  
 |[CFrameWnd::GetActiveFrame](#getactiveframe)|Etkin döndürür `CFrameWnd` nesnesi.|  
 |[CFrameWnd::GetActiveView](#getactiveview)|Etkin döndürür `CView` nesnesi.|  
 |[CFrameWnd::GetControlBar](#getcontrolbar)|Denetim çubuğu alır.|  
@@ -215,11 +215,11 @@ class CFrameWnd : public CWnd
   
 -   Dolaylı bir belge şablonu kullanarak oluşturun.  
   
- Ya da çağırmadan önce **oluşturma** veya `LoadFrame`, C++ kullanarak yığın çerçeve penceresi nesnesinde oluşturmalıdır **yeni** işleci. Çağırmadan önce **oluşturma**, ayrıca, bir pencere sınıfı ile kaydedebilirsiniz [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) çerçeve simgesini ve sınıf stilleri ayarlamak için genel işlevi.  
+ Ya da çağırmadan önce `Create` veya `LoadFrame`, C++ kullanarak yığın çerçeve penceresi nesnesinde oluşturmalıdır **yeni** işleci. Çağırmadan önce `Create`, ayrıca, bir pencere sınıfı ile kaydedebilirsiniz [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) çerçeve simgesini ve sınıf stilleri ayarlamak için genel işlevi.  
   
- Kullanım **oluşturma** çerçeve oluşturma parametreleri olarak hemen bağımsız değişkenleri geçirmek için üye işlevi.  
+ Kullanım `Create` çerçeve oluşturma parametreleri olarak hemen bağımsız değişkenleri geçirmek için üye işlevi.  
   
- `LoadFrame` daha az sayıda bağımsız değişken gerektirir **oluşturma**ve bunun yerine varsayılan değerlerine çoğunu çerçeve resim yazısı simgesi, Hızlandırıcı tablosu ve menü çeşitli kaynaklardan alır. Tarafından erişilebilir olmasını `LoadFrame`, tüm bu kaynaklar aynı kaynak kimliği olmalıdır (örneğin, **IDR_MAINFRAME**).  
+ `LoadFrame` daha az sayıda bağımsız değişken gerektirir `Create`ve bunun yerine varsayılan değerlerine çoğunu çerçeve resim yazısı simgesi, Hızlandırıcı tablosu ve menü çeşitli kaynaklardan alır. Tarafından erişilebilir olmasını `LoadFrame`, tüm bu kaynaklar aynı kaynak kimliği olmalıdır (örneğin, **IDR_MAINFRAME**).  
   
  Zaman bir `CFrameWnd` nesnesini içeren görünümleri ve belgeleri, çerçevesiyle yerine doğrudan Programcı tarafından dolaylı olarak oluşturma. `CDocTemplate` Çerçeve oluşturulmasını, içeren görünümler oluşturma ve uygun belge görünümlerine bağlantı nesnesi düzenler. Parametreleri `CDocTemplate` Oluşturucusu belirtin `CRuntimeClass` üç sınıflarını söz konusu (belge, çerçeve ve Görünüm). A `CRuntimeClass` nesnesi çerçevesi tarafından dinamik olarak (örneğin, dosya yeni veya birden çok belge arabirimi (MDI) penceresi yeni komutunu kullanarak) kullanıcı tarafından belirtilen zaman yeni çerçeve oluşturmak için kullanılır.  
   
@@ -271,7 +271,7 @@ virtual void ActivateFrame(int nCmdShow = -1);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCmdShow`  
+ *nCmdShow*  
  Geçirilecek parametresi belirtir [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow). Varsayılan olarak, çerçeve gösterilen ve doğru şekilde geri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -279,7 +279,7 @@ virtual void ActivateFrame(int nCmdShow = -1);
   
  Varsayılan Uygulama Çerçevesi etkinleştirir ve Z düzenini üst kısmına beraberinde getirir ve gerekirse, uygulamanın ana çerçeve penceresi için aynı adımları yapar.  
   
- Bu üye işlevi bir çerçeve nasıl etkinleştirileceğini değiştirmek için geçersiz kılar. Örneğin, tam ekran için MDI alt pencereleri zorlayabilirsiniz. Uygun işlevselliği ekleyin, sonra açık bir temel sınıf sürümüyle çağrı `nCmdShow`.  
+ Bu üye işlevi bir çerçeve nasıl etkinleştirileceğini değiştirmek için geçersiz kılar. Örneğin, tam ekran için MDI alt pencereleri zorlayabilirsiniz. Uygun işlevselliği ekleyin, sonra açık bir temel sınıf sürümüyle çağrısı *nCmdShow*.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#1](../../mfc/reference/codesnippet/cpp/cframewnd-class_1.cpp)]  
@@ -317,37 +317,37 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszClassName`  
+ *lpszClassName*  
  Windows sınıfı adları null olarak sonlandırılan bir karakter dizesine noktaları. Sınıf adı kayıtlı herhangi bir ad olabilir `AfxRegisterWndClass` genel işlevi veya **RegisterClass** Windows işlevi. Varsa **NULL**, önceden tanımlanmış varsayılan kullanır `CFrameWnd` öznitelikleri.  
   
- `lpszWindowName`  
+ *lpszWindowName*  
  Pencere adı temsil eden bir null olarak sonlandırılan bir karakter dizesi noktalarına. Başlık çubuğunu metin olarak kullanılır.  
   
- `dwStyle`  
+ *dwStyle*  
  Pencerenin belirtir [stili](../../mfc/reference/styles-used-by-mfc.md#window-styles) öznitelikleri. Dahil **fws_addtotıtle** penceresinde gösterilen belgenin adını otomatik olarak görüntülenecek başlık çubuğu istiyorsanız stili.  
   
- `rect`  
- Pencere konumunu ve boyutunu belirtir. `rectDefault` Değeri boyutunu ve yeni pencere konumunu belirtmek Windows sağlar.  
+ *Rect*  
+ Pencere konumunu ve boyutunu belirtir. *RectDefault* değeri boyutunu ve yeni pencere konumunu belirtmek Windows sağlar.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Bu çerçeve penceresinin üst pencere belirtir. Bu parametre olmalıdır **NULL** en üst düzey çerçeve pencereleri için.  
   
  *lpszMenuName*  
  Pencerenin ile kullanılmak üzere menü kaynağın adını tanımlar. Kullanım **MAKEINTRESOURCE** menü bir dize yerine bir tamsayı kimliği varsa. Bu parametre olabilir **NULL**.  
   
- `dwExStyle`  
+ *dwExStyle*  
  Genişletilmiş pencere belirtir [stili](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) öznitelikleri.  
   
- `pContext`  
+ *pContext*  
  Bir işaretçi belirten bir [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısı. Bu parametre olabilir **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başlatma başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturmak bir `CFrameWnd` iki adımda nesne. İlk olarak, yapıları Oluşturucusu çağırma `CFrameWnd` nesnesini genişletin ve ardından arama **oluşturma**, hangi Windows çerçeve penceresi oluşturur ve ona ekler `CFrameWnd` nesnesi. **Oluşturma** pencere sınıfı adı ve pencere adı başlatır ve stil, üst ve ilişkili menü varsayılan değerleri kaydeder.  
+ Oluşturmak bir `CFrameWnd` iki adımda nesne. İlk olarak, yapıları Oluşturucusu çağırma `CFrameWnd` nesnesini genişletin ve ardından arama `Create`, hangi Windows çerçeve penceresi oluşturur ve ona ekler `CFrameWnd` nesnesi. `Create` pencere sınıfı adı ve pencere adı başlatır ve stil, üst ve ilişkili menü varsayılan değerleri kaydeder.  
   
- Kullanım `LoadFrame` yerine **oluşturma** bağımsız değişkenlerini belirtme yerine bir kaynaktan çerçeve penceresi yüklenemiyor.  
+ Kullanım `LoadFrame` yerine `Create` bağımsız değişkenlerini belirtme yerine bir kaynaktan çerçeve penceresi yüklenemiyor.  
   
 ##  <a name="createview"></a>  CFrameWnd::CreateView  
  Çağrı `CreateView` bir çerçevesinde bir görünüm oluşturmak için.  
@@ -359,10 +359,10 @@ CWnd* CreateView(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pContext`  
+ *pContext*  
  Görünüm ve belge türünü belirtir.  
   
- `nID`  
+ *nID*  
  Bir görünüm kimliği sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -382,15 +382,15 @@ void DockControlBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pBar`  
+ *pBar*  
  Yerleşik için denetim çubuğu noktalarına.  
   
- `nDockBarID`  
+ *nDockBarID*  
  Yerleştirme için dikkate alınması gereken çerçeve penceresi hangi kenarlarına belirler. 0, veya bir veya daha fazla aşağıdakiler olabilir:  
   
 - `AFX_IDW_DOCKBAR_TOP` Çerçeve penceresi üst kenarına sabitleyin.  
   
-- **AFX_IDW_DOCKBAR_BOTTOM** çerçeve penceresi alt tarafına yerleştir.  
+- `AFX_IDW_DOCKBAR_BOTTOM` Çerçeve penceresi alt tarafında sabitleyin.  
   
 - `AFX_IDW_DOCKBAR_LEFT` Çerçeve penceresi sol tarafına sabitleyin.  
   
@@ -398,11 +398,11 @@ void DockControlBar(
   
  0 ise, hedef çerçeve penceresinde yerleştirme için etkin yan denetim çubuğu ına.  
   
- `lpRect`  
+ *lpRect*  
  Denetim çubuğu hedef çerçeve penceresi nonclient alanında nereye yerleştirilir ekran koordinatları belirler.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Denetim çubuğu her ikisi de çağrıları belirtilen çerçeve penceresi yanlarından birine yerleşik [CControlBar::EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking) ve [CFrameWnd::EnableDocking](#enabledocking). Seçilen yan tarafından belirlenen `nDockBarID`.  
+ Denetim çubuğu her ikisi de çağrıları belirtilen çerçeve penceresi yanlarından birine yerleşik [CControlBar::EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking) ve [CFrameWnd::EnableDocking](#enabledocking). Yan seçilen tarafından belirlenen *nDockBarID*.  
   
 ##  <a name="enabledocking"></a>  CFrameWnd::EnableDocking  
  Bir çerçeve penceresinde Dockable denetim çubukları etkinleştirmek için bu işlevini çağırın.  
@@ -412,7 +412,7 @@ void EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDockStyle`  
+ *dwDockStyle*  
  Çerçeve penceresi hangi kenarlarına siteler için Denetim çubukları yerleştirme olarak hizmet verebilir belirtir. Aşağıdakilerden birini veya birkaçını olabilir:  
   
 - `CBRS_ALIGN_TOP` İstemci alanının üstünde yerleştirme sağlar.  
@@ -452,13 +452,13 @@ void FloatControlBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pBar`  
+ *pBar*  
  Kaydırılmış için denetim çubuğu noktalarına.  
   
- `point`  
+ *Noktası*  
  Denetim çubuğu sol üst köşesine yerleştirileceği konum, ekran koordinatları.  
   
- `dwStyle`  
+ *dwStyle*  
  Denetim çubuğu kendi yeni çerçeve penceresi içinde yatay veya dikey olarak Hizala belirtir. Aşağıdakilerden herhangi biri olabilir:  
   
 - `CBRS_ALIGN_TOP` Denetim çubuğu dikey olarak yönlendirir.  
@@ -510,7 +510,7 @@ CView* GetActiveView() const;
  Geçerli bir işaretçi [CView](../../mfc/reference/cview-class.md). Geçerli Görünüm ise döndürür **NULL**.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, döndürür **NULL** bir MDI ana çerçeve penceresi çağrıldığında ( `CMDIFrameWnd`). MDI uygulamada MDI ana çerçeve penceresi kendisiyle ilişkili bir görünüm yok. Bunun yerine, her tek tek alt pencere ( `CMDIChildWnd`) bir veya daha fazla ilişkili görünüme sahiptir. MDI uygulamanın etkin görünümde etkin MDI alt pencere ilk bulma ve ardından o alt pencere için etkin görünüm bulma tarafından alınabilir. Etkin MDI alt pencere işlevini çağırarak bulunabilir `MDIGetActive` veya **GetActiveFrame** aşağıda gösterildiği gibi:  
+ Bu işlev, döndürür **NULL** bir MDI ana çerçeve penceresi çağrıldığında ( `CMDIFrameWnd`). MDI uygulamada MDI ana çerçeve penceresi kendisiyle ilişkili bir görünüm yok. Bunun yerine, her tek tek alt pencere ( `CMDIChildWnd`) bir veya daha fazla ilişkili görünüme sahiptir. MDI uygulamanın etkin görünümde etkin MDI alt pencere ilk bulma ve ardından o alt pencere için etkin görünüm bulma tarafından alınabilir. Etkin MDI alt pencere işlevini çağırarak bulunabilir `MDIGetActive` veya `GetActiveFrame` aşağıda gösterildiği gibi:  
   
  [!code-cpp[NVC_MFCWindowing#2](../../mfc/reference/codesnippet/cpp/cframewnd-class_2.cpp)]  
   
@@ -522,14 +522,14 @@ CControlBar* GetControlBar(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nID`  
+ *nID*  
  Denetim çubuğu kimliği sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi kimliğiyle ilişkili denetim çubuğu  
   
 ### <a name="remarks"></a>Açıklamalar  
- `nID` Parametresi başvuruyor geçirilen benzersiz tanımlayıcıya **oluşturma** denetim çubuğu yöntemi. Denetim çubukları hakkında daha fazla bilgi için başlıklı konuya bakın [denetim çubukları](../../mfc/control-bars.md).  
+ *NID* parametresi başvuruyor geçirilen benzersiz tanımlayıcıya `Create` denetim çubuğu yöntemi. Denetim çubukları hakkında daha fazla bilgi için başlıklı konuya bakın [denetim çubukları](../../mfc/control-bars.md).  
   
  `GetControlBar` denetim çubuğu kayan olduğu ve bu nedenle şu anda bir alt pencere çerçevesinin değil olsa bile döndürür.  
   
@@ -541,7 +541,7 @@ void GetDockState(CDockState& state) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `state`  
+ *durumu*  
  Çerçeve pencere denetim çubukları return üzerine geçerli durumunu içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -603,14 +603,14 @@ virtual void GetMessageString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nID`  
+ *nID*  
  İstenen iletinin kaynak kimliği.  
   
- `rMessage`  
+ *rMessage*  
  `CString` ileti yerleştirmek için nesnesine.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama tarafından belirtilen dize yalnızca yükler `nID` kaynak dosyadan. Güncelleştirme durum çubuğunda ileti dizesi ihtiyacı olduğunda bu işlev çerçevesi tarafından çağrılır.  
+ Varsayılan uygulama tarafından belirtilen dize yalnızca yükler *nID* kaynak dosyadan. Güncelleştirme durum çubuğunda ileti dizesi ihtiyacı olduğunda bu işlev çerçevesi tarafından çağrılır.  
   
 ##  <a name="gettitle"></a>  CFrameWnd::GetTitle  
  Pencere nesnesi başlığını alır.  
@@ -632,16 +632,16 @@ void InitialUpdateFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDoc`  
+ *pDoc*  
  Çerçeve penceresi ilişkilendirilen belge noktalarına. Olabilir **NULL**.  
   
- `bMakeVisible`  
+ *bMakeVisible*  
  Varsa **doğru**, çerçeve görünür ve etkin olması gerektiğini gösterir. Varsa **yanlış**, hiçbir alt öğeleri görünür yapılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu tüm görünümleri almak için bu çerçeve penceresinde neden olan kendi `OnInitialUpdate` çağrıları.  
   
- Ayrıca, yoksa daha önce etkin bir görünüm, çerçeve penceresi birincil görünümünü etkinleştirilir. Birincil görünüm alt kimliğine sahip bir görünümdür **AFX_IDW_PANE_FIRST**. Son olarak, çerçeve penceresi görünür hale gelir, `bMakeVisible` sıfır olmayan bir değer değil. Varsa `bMakeVisible` 0'dır, geçerli odak ve çerçeve penceresi görünür durumunu değişmeden kalır. Framework'ün uygulama ve dosya yeni dosya Aç kullanırken bu işlevi çağırmak gerekli değildir.  
+ Ayrıca, yoksa daha önce etkin bir görünüm, çerçeve penceresi birincil görünümünü etkinleştirilir. Birincil görünüm alt kimliğine sahip bir görünümdür **AFX_IDW_PANE_FIRST**. Son olarak, çerçeve penceresi görünür hale gelir, *bMakeVisible* sıfır olmayan bir değer değil. Varsa *bMakeVisible* 0'dır, geçerli odak ve çerçeve penceresi görünür durumunu değişmeden kalır. Framework'ün uygulama ve dosya yeni dosya Aç kullanırken bu işlevi çağırmak gerekli değildir.  
   
 ##  <a name="inmodalstate"></a>  CFrameWnd::InModalState  
  Çerçeve penceresi kalıcı veya geçici olup olmadığını denetlemek için bu üye işlevini çağırın.  
@@ -671,7 +671,7 @@ BOOL LoadAccelTable(LPCTSTR lpszResourceName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszResourceName`  
+ *lpszResourceName*  
  Hızlandırıcı kaynağın adını tanımlar. Kullanım **MAKEINTRESOURCE** bir tamsayı kimliği ile kaynak tanımladıysanız  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -692,7 +692,7 @@ void LoadBarState(LPCTSTR lpszProfileName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszProfileName`  
+ *lpszProfileName*  
  Başlatma (INI) dosyası bir bölümünde veya durum bilgilerini depolandığı Windows kayıt defteri anahtarında adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -712,26 +712,26 @@ virtual BOOL LoadFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDResource`  
+ *nIDResource*  
  Çerçeve penceresi ile ilişkilendirilmiş paylaşılan kaynakları kimliği.  
   
  *dwDefaultStyle*  
  Çerçeve [stili](../../mfc/reference/styles-used-by-mfc.md#window-styles). Dahil **fws_addtotıtle** penceresinde gösterilen belgenin adını otomatik olarak görüntülenecek başlık çubuğu istiyorsanız stili.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Çerçeve üst için bir işaretçi.  
   
- `pContext`  
+ *pContext*  
  Bir işaretçi bir [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısı. Bu parametre olabilir **NULL**.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturmak bir `CFrameWnd` iki adımda nesne. İlk olarak, yapıları Oluşturucusu çağırma `CFrameWnd` nesnesini genişletin ve ardından arama `LoadFrame`, hangi Windows çerçeve penceresi ve ilişkili kaynakları yükler ve çerçeve penceresi ekler `CFrameWnd` nesnesi. `nIDResource` Parametresi, menü, Hızlandırıcı tablosu, simge ve çerçeve penceresi başlığını dize kaynağını belirtir.  
+ Oluşturmak bir `CFrameWnd` iki adımda nesne. İlk olarak, yapıları Oluşturucusu çağırma `CFrameWnd` nesnesini genişletin ve ardından arama `LoadFrame`, hangi Windows çerçeve penceresi ve ilişkili kaynakları yükler ve çerçeve penceresi ekler `CFrameWnd` nesnesi. *NIDResource* parametresi, menü, Hızlandırıcı tablosu, simge ve çerçeve penceresi başlığını dize kaynağını belirtir.  
   
- Kullanım **oluşturma** üye işlevi yerine `LoadFrame` tüm çerçeve pencere oluşturma parametreleri belirtmek istediğinizde.  
+ Kullanım `Create` üye işlevi yerine `LoadFrame` tüm çerçeve pencere oluşturma parametreleri belirtmek istediğinizde.  
   
  Framework çağrıları `LoadFrame` bir belge şablonu nesnesi kullanılarak bir çerçeve penceresinde oluşturduğunda.  
   
- Çerçeve kullanır `pContext` herhangi dahil olmak üzere çerçeve penceresine bağlı nesnelere belirtmek için bağımsız değişken bulunan nesneleri görüntüle. Ayarlayabileceğiniz `pContext` bağımsız değişkeni **NULL** çağırdığınızda `LoadFrame`.  
+ Çerçeve kullanır *pContext* birlikte çerçeve penceresine bağlı nesnelere belirtmek için bağımsız değişken bulunan nesneleri görüntüle. Ayarlayabileceğiniz *pContext* bağımsız değişkeni **NULL** çağırdığınızda `LoadFrame`.  
   
 ##  <a name="m_bautomenuenable"></a>  CFrameWnd::m_bAutoMenuEnable  
  Bu veri üyesi (varsayılan değer olan) etkin olduğunda, menü öğelerini olmayan `ON_UPDATE_COMMAND_UI` veya `ON_COMMAND` işleyicileri otomatik olarak devre dışı bırakılacak kullanıcının bir menüyü çeker olduğunda.  
@@ -772,7 +772,7 @@ virtual BOOL NegotiateBorderSpace(
   
 - **borderSet** = 3  
   
- `lpRectBorder`  
+ *lpRectBorder*  
  İşaretçi bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) kenarlık koordinatlarını belirtir nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -789,7 +789,7 @@ afx_msg BOOL OnBarCheck(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nID`  
+ *nID*  
  Gösterildikten çubuğu denetiminin kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -821,10 +821,10 @@ virtual BOOL OnCreateClient(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpcs`  
+ *lpcs*  
  Windows için bir işaretçi [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) yapısı.  
   
- `pContext`  
+ *pContext*  
  Bir işaretçi bir [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -833,7 +833,7 @@ virtual BOOL OnCreateClient(
 ### <a name="remarks"></a>Açıklamalar  
  Hiçbir zaman bu işlevini çağırın.  
   
- Bu işlev varsayılan uygulamasını oluşturur bir `CView` sağlanan bilgileri nesnesinden `pContext`, mümkün olduğunda.  
+ Bu işlev varsayılan uygulamasını oluşturur bir `CView` sağlanan bilgileri nesnesinden *pContext*, mümkün olduğunda.  
   
  Geçirilen değerleri geçersiz kılmak için bu işlevi geçersiz `CCreateContext` nesne veya değiştirmek için çerçeve penceresi ana istemci alanını şekilde denetimlerinde oluşturulur. `CCreateContext` Kılabilirsiniz üyeleri açıklanmıştır [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) sınıfı.  
   
@@ -863,7 +863,7 @@ virtual void OnSetPreviewMode(
  *bPreview*  
  Baskı Önizleme moduna uygulama gerekip gerekmediğini belirtir. Kümesine **TRUE** baskı önizlemede yerleştirmek için **FALSE** Önizlemeyi iptal etmek için.  
   
- `pState`  
+ *pState*  
  Bir işaretçi bir **CPrintPreviewState** yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -889,8 +889,8 @@ afx_msg void OnUpdateControlBarMenu(CCmdUI* pCmdUI);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pCmdUI`  
- Bir işaretçi bir [Ccmduı](../../mfc/reference/ccmdui-class.md) güncelleştirme komutu oluşturulan menü temsil eden nesne. Güncelleştirme işleyicisi çağrılarını [etkinleştirmek](../../mfc/reference/ccmdui-class.md#enable) üye işlevini `CCmdUI` nesnesi aracılığıyla `pCmdUI` kullanıcı arabirimini güncelleştirmek için.  
+ *pCmdUI*  
+ Bir işaretçi bir [Ccmduı](../../mfc/reference/ccmdui-class.md) güncelleştirme komutu oluşturulan menü temsil eden nesne. Güncelleştirme işleyicisi çağrılarını [etkinleştirmek](../../mfc/reference/ccmdui-class.md#enable) üye işlevini `CCmdUI` nesnesi aracılığıyla *pCmdUI* kullanıcı arabirimini güncelleştirmek için.  
   
 ##  <a name="recalclayout"></a>  CFrameWnd::RecalcLayout  
  Standart denetim çubukları açmak veya kapatmak kapatıldığında veya çerçeve penceresi yeniden boyutlandırıldığında çerçevesi tarafından çağrılır.  
@@ -900,7 +900,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNotify`  
+ *bNotify*  
  Çerçeve penceresi için etkin yerinde öğesi düzeni değişiklik bildirimi alıp almayacağını belirler. Varsa **TRUE**, öğe, uyarılan aksi **FALSE**.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -923,7 +923,7 @@ void SaveBarState(LPCTSTR lpszProfileName) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszProfileName`  
+ *lpszProfileName*  
  Başlatma dosyası bölümünde veya durum bilgilerini depolandığı Windows kayıt defteri anahtarında adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -937,7 +937,7 @@ void SetActivePreviewView(CView* pViewNew);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pViewNew`  
+ *pViewNew*  
  Etkinleştirilecek bir görünüm için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -955,7 +955,7 @@ void SetActiveView(
  *pViewNew*  
  Bir işaretçi belirtir bir [CView](../../mfc/reference/cview-class.md) nesnesi veya **NULL** etkin görünüm için.  
   
- `bNotify`  
+ *bNotify*  
  Görünüm etkinleştirmesi bildirilmesini olup olmadığını belirtir. Varsa **TRUE**, `OnActivateView` için yeni bir görünümü; denir **yanlış**, bu değildir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -969,7 +969,7 @@ void SetDockState(const CDockState& state);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `state`  
+ *durumu*  
  Çerçeve pencere denetim çubukları depolanmış durumu geçerli.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -986,7 +986,7 @@ virtual BOOL SetMenuBarState(DWORD nState);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `nState`|Menü gizleyin veya gösterin belirtir. `nState` Parametresi, aşağıdaki değerleri sahip olabilir:<br /><br /> -AFX_MBS_VISIBLE (0x01) - gizli ancak görünür durumdaysa etkisizdir menüsünü görüntüler.<br />-AFX_MBS_HIDDEN (0x02) - gizler menü görünür ancak gizli hiçbir etkisi olmaz.|  
+|[in] *nDurum*|Menü gizleyin veya gösterin belirtir. *NDurum* parametresi, aşağıdaki değerleri sahip olabilir:<br /><br /> -AFX_MBS_VISIBLE (0x01) - gizli ancak görünür durumdaysa etkisizdir menüsünü görüntüler.<br />-AFX_MBS_HIDDEN (0x02) - gizler menü görünür ancak gizli hiçbir etkisi olmaz.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem menü durumu; başarılı bir şekilde değişirse Aksi takdirde `false`.  
@@ -1005,10 +1005,10 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `nStyle`|Menü gizli, varsayılan olarak veya görünür durumda ve odağa sahip olup olmadığını belirtir. `nStyle` Parametresi, aşağıdaki değerleri sahip olabilir:<br /><br /> -AFX_MBV_KEEPVISIBLE (0X01)-<br />     Menü her zaman görüntülenir ve varsayılan olarak odağa sahip değil.<br />-AFX_MBV_DISPLAYONFOCUS (0X02)-<br />     Menü varsayılan olarak gizlidir. Menü gizli ise, menüsünü görüntüleme ve odağı vermek için ALT tuşuna basın. Menü görüntüleniyorsa, menüsünü gizlemek için ALT ya da ESC tuşuna basın.<br />-AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (Bitsel bir birleşimi (veya)) - menüsü varsayılan olarak gizlidir. Menü gizli ise, menüsünü görüntüleyin ve odaklanmak için F10 tuşuna basın. Menü görüntüleniyorsa, açın veya menü odak geçiş yapmak için F10 tuşuna basın. Gizlemek için ALT ya da ESC tuşuna basın kadar menüsü görüntülenir.|  
+|[in] *nStyle*|Menü gizli, varsayılan olarak veya görünür durumda ve odağa sahip olup olmadığını belirtir. *NStyle* parametresi, aşağıdaki değerleri sahip olabilir:<br /><br /> -AFX_MBV_KEEPVISIBLE (0X01)-<br />     Menü her zaman görüntülenir ve varsayılan olarak odağa sahip değil.<br />-AFX_MBV_DISPLAYONFOCUS (0X02)-<br />     Menü varsayılan olarak gizlidir. Menü gizli ise, menüsünü görüntüleme ve odağı vermek için ALT tuşuna basın. Menü görüntüleniyorsa, menüsünü gizlemek için ALT ya da ESC tuşuna basın.<br />-AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (Bitsel bir birleşimi (veya)) - menüsü varsayılan olarak gizlidir. Menü gizli ise, menüsünü görüntüleyin ve odaklanmak için F10 tuşuna basın. Menü görüntüleniyorsa, açın veya menü odak geçiş yapmak için F10 tuşuna basın. Gizlemek için ALT ya da ESC tuşuna basın kadar menüsü görüntülenir.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa değerini `nStyle` parametresi geçerli değil, bu yöntem başlatır ve hata ayıklama modu ile onaylar [CInvalidArgException](../../mfc/reference/cinvalidargexception-class.md) yayın modunda. Diğer çalışma zamanı hataları durumunda, bu yöntem hata ayıklama modunda onaylar ve türetilmiş bir özel durum oluşturur [CException](../../mfc/reference/cexception-class.md) sınıfı.  
+ Varsa değerini *nStyle* parametresi geçerli değil, bu yöntem başlatır ve hata ayıklama modu ile onaylar [CInvalidArgException](../../mfc/reference/cinvalidargexception-class.md) yayın modunda. Diğer çalışma zamanı hataları durumunda, bu yöntem hata ayıklama modunda onaylar ve türetilmiş bir özel durum oluşturur [CException](../../mfc/reference/cexception-class.md) sınıfı.  
   
  Bu yöntem için yazılmış uygulamalar menülerde durumunu etkileyen [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] ve daha sonra.  
   
@@ -1021,10 +1021,10 @@ void SetMessageText(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszText`  
+ *lpszText*  
  Durum çubuğunda yerleştirilecek dizeye noktaları.  
   
- `nID`  
+ *nID*  
  Durum çubuğunda yerleştirilecek dize kaynak kimliği dizesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1038,7 +1038,7 @@ void SetProgressBarPosition(int nProgressPos);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nProgressPos`  
+ *nProgressPos*  
  Ayarlamak için konumu belirtir. Tarafından belirlenen aralıkta olmalıdır `SetProgressBarRange`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1053,10 +1053,10 @@ void SetProgressBarRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nRangeMin`  
+ *nRangeMin*  
  En az değer.  
   
- `nRangeMax`  
+ *nRangeMax*  
  Üst düzeyde değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1069,7 +1069,7 @@ void SetProgressBarState(TBPFLAG tbpFlags);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `tbpFlags`  
+ *tbpFlags*  
  İlerleme düğmesi geçerli durumunu denetlemek bayraklar. Tüm durumları birbirini dışlayan olduğundan bayrakları yalnızca aşağıdakilerden birini belirtin: TBPF_NOPROGRESS, TBPF_INDETERMINATE, TBPF_NORMAL, TBPF_ERROR, TBPF_PAUSED.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1089,14 +1089,14 @@ BOOL SetTaskbarOverlayIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDResource`  
- Simge kaynak katmana kullanılacak Kimliğini belirtir. Açıklama için bkz: `hIcon` Ayrıntılar için.  
+ *nIDResource*  
+ Simge kaynak katmana kullanılacak Kimliğini belirtir. Açıklama için bkz: *hIcon* Ayrıntılar için.  
   
- `lpcszDescr`  
+ *lpcszDescr*  
  Bir alternatif metin sürümü erişilebilirlik amacıyla bir katmana ifade ettiği bilgileri sağlayan bir dize için bir işaretçi.  
   
- `hIcon`  
- Bir katmana kullanılacak bir simge işleci. Bu 16 x 16 piksel 96 nokta / inç (dpi) konumunda ölçme küçük bir simge olması gerekir. Bir katmana simge görev çubuğu düğmesi uygulanırsa, bu varolan katmana değiştirilir. Bu değer `NULL`. Nasıl bir `NULL` değeri işlenir görev çubuğu düğmesini tek bir pencere veya Windows'un bir grubu temsil bağlıdır. Boşaltmak için çağrı yapan uygulamanın sorumluluğundadır `hIcon` zaman artık gerekli.  
+ *hIcon*  
+ Bir katmana kullanılacak bir simge işleci. Bu 16 x 16 piksel 96 nokta / inç (dpi) konumunda ölçme küçük bir simge olması gerekir. Bir katmana simge görev çubuğu düğmesi uygulanırsa, bu varolan katmana değiştirilir. Bu değer `NULL`. Nasıl bir `NULL` değeri işlenir görev çubuğu düğmesini tek bir pencere veya Windows'un bir grubu temsil bağlıdır. Boşaltmak için çağrı yapan uygulamanın sorumluluğundadır *hIcon* zaman artık gerekli.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` başarılı olursa; `FALSE` işletim sistemi sürümü Windows 7'den küçükse veya simgesi ayar bir hata meydana gelirse.  
@@ -1111,7 +1111,7 @@ void SetTitle(LPCTSTR lpszTitle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszTitle`  
+ *lpszTitle*  
  Pencere nesnesi başlığı içeren bir karakter dizesi için bir işaretçi.  
   
 ##  <a name="showcontrolbar"></a>  CFrameWnd::ShowControlBar  
@@ -1125,10 +1125,10 @@ void ShowControlBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pBar`  
+ *pBar*  
  Denetim çubuğu gösterileceğini veya gizleneceğini için işaretçi.  
   
- `bShow`  
+ *bBilgi Göster*  
  Varsa **doğru**, denetim çubuğu gösterilecek olduğunu belirtir. Varsa **yanlış**, denetim çubuğu gizlenecek olduğunu belirtir.  
   
  *bDelay*  
@@ -1142,7 +1142,7 @@ void ShowOwnedWindows(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bShow`  
+ *bBilgi Göster*  
  Ait windows gösterileceğini veya gizleneceğini olup olmadığını belirtir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

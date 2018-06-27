@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 379c5b4fb9ed302ad1ea0167f2b32c30e48ab2bf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e857d6f5bc2ebabb0f36a3c97e011a4f2a00d641
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384296"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953509"
 ---
 # <a name="tn059-using-mfc-mbcsunicode-conversion-macros"></a>TN059: MFC MBCS/Unicode Dönüştürme Makrolarını Kullanma
 > [!NOTE]
@@ -86,9 +86,9 @@ pI->SomeFunctionThatNeedsUnicode(T2OLE(lpszA));
   
  Burada dönüştürme gereklidir, ancak makrolarını kullanarak basit ve etkili ek çağrıları vardır.  
   
- Her makrosu uyarlamasını _alloca() işlevi öbek yerine yığından bellek ayırmak için kullanır. Yığından bellek ayırma yığınındaki bellek ayırma daha hızlıdır ve işlev çıkıldı zaman bellek boşaltılır. Ayrıca, arama makroları kaçının **MultiByteToWideChar** (veya **WideCharToMultiByte**) birden fazla kez. Bu, gerekli olandan biraz daha fazla bellek ayırarak gerçekleştirilir. Bir MBC en fazla bir dönüştürecek biliyoruz **WCHAR** ve her **WCHAR** en çok iki MBC bayt sahip olur. Ancak her zaman yeterli biraz daha fazla gerekli ayırarak dönüştürme ikinci çağrı ikinci işlemek için dönüştürme işlevi çağrısı önlenmiş olur. Yardımcı işlevi çağrısı **AfxA2Whelper** dönüştürme gerçekleştirmek için yapılması gereken bağımsız değişkeni gönderim sayısını azaltır (adlı varsa bu küçük kodda daha sonuçları **MultiByteToWideChar**doğrudan).  
+ Her makrosu uyarlamasını _alloca() işlevi öbek yerine yığından bellek ayırmak için kullanır. Yığından bellek ayırma yığınındaki bellek ayırma daha hızlıdır ve işlev çıkıldı zaman bellek boşaltılır. Ayrıca, arama makroları kaçının `MultiByteToWideChar` (veya `WideCharToMultiByte`) birden fazla kez. Bu, gerekli olandan biraz daha fazla bellek ayırarak gerçekleştirilir. Bir MBC en fazla bir dönüştürecek biliyoruz **WCHAR** ve her **WCHAR** en çok iki MBC bayt sahip olur. Ancak her zaman yeterli biraz daha fazla gerekli ayırarak dönüştürme ikinci çağrı ikinci işlemek için dönüştürme işlevi çağrısı önlenmiş olur. Yardımcı işlevi çağrısı `AfxA2Whelper` dönüştürme gerçekleştirmek için yapılması gereken bağımsız değişkeni gönderim sayısını azaltır (adlı varsa bu küçük kodda daha sonuçları `MultiByteToWideChar` doğrudan).  
   
- Sırada depolamak için makrolar alanınız için geçici bir uzunluk her işlev, bu mu _mantıksal adlı bir yerel değişken kullanan dönüşüm makroları bildirmek gerekli değildir. Bu çağırarak yapılır **USES_CONVERSION** yukarıdaki örnekte görüldüğü gibi makrosu.  
+ Sırada depolamak için makrolar alanınız için geçici bir uzunluk her işlev, bu mu _mantıksal adlı bir yerel değişken kullanan dönüşüm makroları bildirmek gerekli değildir. Bu, yukarıdaki örnekte görüldüğü gibi USES_CONVERSION makrosu çağırarak gerçekleştirilir.  
   
  Genel dönüştürme makrolarını ve OLE belirli makroları vardır. Bu iki farklı makrosu kümeleri aşağıda ele alınmıştır. Tüm makroları AFXPRIV içinde bulunur. H.  
   
@@ -105,7 +105,7 @@ W2A      (LPCWSTR) -> (LPSTR)
  Metin dönüşümleri yapılması yanı sıra da vardır makrolar ve dönüştürmek için yardımcı işlevleri `TEXTMETRIC`, `DEVMODE`, `BSTR`ve OLE dizeleri ayrılmış. Bu tartışma kapsamı dışındadır Bu makrolar olduğunu - için AFXPRIV bakın. H makroları hakkında daha fazla bilgi için.  
   
 ## <a name="ole-conversion-macros"></a>OLE dönüşüm makroları  
- OLE dönüşüm makroları beklediğiniz işlevleri işlemek için özellikle tasarlanmış **OLESTR** karakter. OLE üstbilgileri incelemek, birçok başvurular görürsünüz **LPCOLESTR** ve **OLECHAR**. Bu tür OLE arabirimleri platforma özgü değildir şekilde kullanılan karakter türünü belirtmek için kullanılır. **OLECHAR** eşlendiği `char` Win16 ve Macintosh platformlarda ve **WCHAR** Win32 içinde.  
+ OLE dönüşüm makroları beklediğiniz işlevleri işlemek için özellikle tasarlanmış **OLESTR** karakter. OLE üstbilgileri incelemek, birçok başvurular görürsünüz **LPCOLESTR** ve **OLECHAR**. Bu tür OLE arabirimleri platforma özgü değildir şekilde kullanılan karakter türünü belirtmek için kullanılır. **OLECHAR** eşlendiği **char** Win16 ve Macintosh platformlarda ve **WCHAR** Win32 içinde.  
   
  Sayısı tutmak için **#ifdef** yönergeleri MFC'de kod minimumda her dönüştürme için benzer bir makro sahibiz, OLE dizeleri söz konusu olduğu. Aşağıdaki makroları en yaygın olarak kullanılır:  
   
@@ -116,7 +116,7 @@ OLE2CT   (LPCOLESTR) -> (LPCTSTR)
 OLE2T   (LPCOLESTR) -> (LPCSTR)  
 ```  
   
- Yeniden, bunu yapmak için benzer makrolar vardır `TEXTMETRIC`, `DEVMODE`, `BSTR`ve OLE dizeleri ayrılmış. İçin AFXPRIV bakın. Daha fazla bilgi için H.  
+ Yeniden TEXTMETRIC, aygıt MODUNDAN, BSTR ve dizeleri ayrılan OLE yapmak için benzer makroları vardır. İçin AFXPRIV bakın. Daha fazla bilgi için H.  
   
 ## <a name="other-considerations"></a>Diğer Konular  
  Makrolar sıkı bir döngüde kullanmayın. Örneğin, aşağıdaki tür kodu yazmak istediğinizde değil:  

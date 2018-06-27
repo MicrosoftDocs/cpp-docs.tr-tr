@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c6f990a00fb96195a54ee7ed6906068985b052f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 30daf42d54b66d4e3c4ad47a406748ab023be79d
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367054"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956641"
 ---
 # <a name="cdocobjectserveritem-class"></a>CDocObjectServerItem sınıfı
 Implements OLE sunucu fiilleri özellikle DocObject sunucuları için.  
@@ -90,10 +90,10 @@ CDocObjectServerItem(COleServerDoc* pServerDoc, BOOL bAutoDelete);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pServerDoc`  
+ *pServerDoc*  
  Yeni DocObject öğeyi içerecek belge için bir işaretçi.  
   
- `bAutoDelete`  
+ *bAutoDelete*  
  Bir bağlantı serbest bırakıldığında nesne silinebilir olup olmadığını gösterir. Bağımsız değişken kümesine **FALSE** varsa `CDocObjectServerItem` nesnesidir belgenizin veri ayrılmaz bir parçasıdır. Ayarlamak **TRUE** nesne çerçevesi tarafından silinebilir belgenizin verileri içindeki bir aralık tanımlamak için kullanılan ikincil bir yapı ise.  
   
 ##  <a name="getdocument"></a>  CDocObjectServerItem::GetDocument  

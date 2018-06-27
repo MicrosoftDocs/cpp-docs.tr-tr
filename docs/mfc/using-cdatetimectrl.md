@@ -16,18 +16,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60b41c31c2fa8985953515700cc2e3c802aced31
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4c087bb7782b7b140b07683b40cad358049f682c
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381588"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953031"
 ---
 # <a name="using-cdatetimectrl"></a>CDateTimeCtrl Kullanma
 Tarih ve Saat Seçici denetimini ([CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)) girerek veya belirli bir tarih seçme sezgisel ve tanınabilir bir yöntem uygular. Bir birleşik giriş kutusu işlevindeki denetiminin ana arabirimi benzer. Aylık takvim denetiminin (varsayılan), görünen kullanıcı denetimi genişletir, ancak kullanıcının belirli bir tarih belirtmek izin verme. Aylık takvim denetiminin bir tarih seçildiğinde otomatik olarak kaybolur.  
   
 > [!NOTE]
->  Her ikisi de kullanmak için **CDateTimePicker** ve `CMonthCalCtrl` sınıfları, projenizde AFXDTCTL eklemeniz gerekir. Genellikle, projenizin STDAFX içinde H. H dosyası.  
+>  Her ikisi de kullanmak için `CDateTimePicker` ve `CMonthCalCtrl` sınıfları, projenizde AFXDTCTL eklemeniz gerekir. Genellikle, projenizin STDAFX içinde H. H dosyası.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   

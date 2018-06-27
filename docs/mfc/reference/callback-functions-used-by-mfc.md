@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce96d90506176812ffb70b580c9d95a38c65fa19
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 114411d0f8c7084e26f36f0ffc05e60a32407c44
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33350891"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956840"
 ---
 # <a name="callback-functions-used-by-mfc"></a>MFC Tarafından Kullanılan Geri Çağırma İşlevleri
 Üç geri arama işlevleri Microsoft Foundation Class Kitaplığı'nda görünür. Bu geri çağırma işlevleri geçirilecek [CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects), [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring), ve [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc). Tüm geri arama işlevleri MFC Windows için geri çağırma sınırlarında durumlar olamaz bu yana döndürmeden önce yakalamak gerekir olduğunu unutmayın. Özel durumlar hakkında daha fazla bilgi için bkz: [özel durumları](../../mfc/exception-handling-in-mfc.md).  
@@ -53,11 +53,11 @@ int CALLBACK EXPORT ObjectFunc(
  *lpszLogObject*  
  İşaret eden bir [LOGPEN](../../mfc/reference/logpen-structure.md) veya [LOGBRUSH](../../mfc/reference/logbrush-structure.md) nesnenin mantıksal öznitelikleri hakkında bilgi içeren veri yapısı.  
   
- `lpData`  
+ *lpData*  
  Uygulama tarafından sağlanan veri noktalarına geçirilen `EnumObjects` işlevi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geri çağırma işlevi döndüren bir `int`. Bu dönüş değeri, kullanıcı tanımlı ' dir. Geri çağırma işlevi 0, döndürürse `EnumObjects` erken numaralandırması durdurur.  
+ Geri çağırma işlevi döndüren bir **int**. Bu dönüş değeri, kullanıcı tanımlı ' dir. Geri çağırma işlevi 0, döndürürse `EnumObjects` erken numaralandırması durdurur.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Gerçek ad verilmelidir.  
@@ -75,13 +75,13 @@ BOOL CALLBACK EXPORT OutputFunc(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hDC`  
- Bir bit eşlem en az ile bellek cihaz bağlamı tanımlar genişlik ve yükseklik tarafından belirtilen `nWidth` ve `nHeight` için `GrayString`.  
+ *hDC*  
+ Bir bit eşlem en az ile bellek cihaz bağlamı tanımlar genişlik ve yükseklik tarafından belirtilen *nWidth* ve *nHeight* için `GrayString`.  
   
- `lpData`  
+ *lpData*  
  Çizilecek karakter dizesine işaret eder.  
   
- `nCount`  
+ *nCount*  
  Çıktı için karakter sayısını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -105,8 +105,8 @@ BOOL CALLBACK EXPORT AbortFunc(
  *hPr*  
  Cihaz bağlamı tanımlar.  
   
- `code`  
- Bir hata oluştu olup olmadığını belirtir. Herhangi bir hata oluştuysa, 0'dır. Bu **SP_OUTOFDISK** Yazdırma Yöneticisi'ni şu anda disk alanı yetersiz ise ve daha fazla disk alanı uygulama bekliyorsa kullanılabilir hale gelecektir. Varsa `code` olan **SP_OUTOFDISK**, yazdırma işi iptal etmek uygulama yok. Mevcut değilse, Yazdırma Yöneticisi çağırarak verim gerekir **PeekMessage** veya **GetMessage** Windows işlevi.  
+ *Kod*  
+ Bir hata oluştu olup olmadığını belirtir. Herhangi bir hata oluştuysa, 0'dır. Bu **SP_OUTOFDISK** Yazdırma Yöneticisi'ni şu anda disk alanı yetersiz ise ve daha fazla disk alanı uygulama bekliyorsa kullanılabilir hale gelecektir. Varsa *kod* olan **SP_OUTOFDISK**, yazdırma işi iptal etmek uygulama yok. Mevcut değilse, Yazdırma Yöneticisi çağırarak verim gerekir `PeekMessage` veya `GetMessage` Windows işlevi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Abort işleyici işlevinin dönüş değeri yazdırma işi devam etmek için ise sıfır dışında 0 ise bu iptal edildiyse.  

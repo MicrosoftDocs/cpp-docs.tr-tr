@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05bfd912d3c4b6ee8b462775f6919c5fe81cc936
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 51e3c24464ff74ab262cd241dcdce68037d530f9
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357080"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955108"
 ---
 # <a name="cd2dgeometry-class"></a>CD2DGeometry sınıfı
 ID2D1Geometry için sarmalayıcı.  
@@ -141,7 +141,7 @@ void Attach(ID2D1Geometry* pResource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pResource`  
+ *pResource*  
  Mevcut kaynak arabirimi. NULL olamaz  
   
 ##  <a name="cd2dgeometry"></a>  CD2DGeometry::CD2DGeometry  
@@ -154,10 +154,10 @@ CD2DGeometry(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentTarget`  
+ *pParentTarget*  
  İşleme hedefi için bir işaretçi.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
   
 ##  <a name="combinewithgeometry"></a>  CD2DGeometry::CombineWithGeometry  
@@ -173,19 +173,19 @@ BOOL CombineWithGeometry(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `inputGeometry`  
+ *inputGeometry*  
  Bu örnekle birleştirmek için geometri.  
   
- `combineMode`  
+ *combineMode*  
  Birleştirme işlemi gerçekleştirmek için türü.  
   
- `inputGeometryTransform`  
+ *inputGeometryTransform*  
  Birleştirme önce inputGeometry uygulanacak dönüşüm.  
   
- `geometrySink`  
+ *geometrySink*  
  Birleştirme işleminin sonucu.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  Çokgen yaklaşık olarak geometri noktaları arasında en fazla sınırları mesafeye. Küçük değerler daha doğru sonuçlar ancak yavaş yürütülmesine neden olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -202,13 +202,13 @@ D2D1_GEOMETRY_RELATION CompareWithGeometry(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `inputGeometry`  
+ *inputGeometry*  
  Test etmek için geometri.  
   
- `inputGeometryTransform`  
+ *inputGeometryTransform*  
  İnputGeometry için uygulanacak dönüşüm.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  Çokgen yaklaşık olarak geometri noktaları arasında en fazla sınırları mesafeye. Küçük değerler daha doğru sonuçlar ancak yavaş yürütülmesine neden olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -225,13 +225,13 @@ BOOL ComputeArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `worldTransform`  
+ *worldTransform*  
  Kendi alanı computing önce bu geometriye uygulanacak dönüşüm.  
   
- `area`  
+ *alan*  
  Bu yöntem döndürüldüğünde, bu geometri dönüştürülmüş, düzleştirilmiş sürümü alanı için bir işaretçi içeriyor. Bu parametre için depolama ayırmanız gerekir.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  Çokgen yaklaşık geometrinin noktaları arasında en fazla sınırları mesafeye. Küçük değerler daha doğru sonuçlar ancak yavaş yürütülmesine neden olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -248,13 +248,13 @@ BOOL ComputeLength(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `worldTransform`  
+ *worldTransform*  
  Uzunluğu hesaplanması önce geometriye uygulanacak dönüşüm.  
   
- `length`  
+ *uzunluğu*  
  Bu yöntem döndürüldüğünde, geometri uzunluğu için bir işaretçi içeriyor. Kapalı geometri için örtük kapanış segment uzunluğu içerir. Bu parametre için depolama ayırmanız gerekir.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  Çokgen yaklaşık geometrinin noktaları arasında en fazla sınırları mesafeye. Küçük değerler daha doğru sonuçlar ancak yavaş yürütülmesine neden olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -273,19 +273,19 @@ BOOL ComputePointAtLength(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `length`  
+ *uzunluğu*  
  Geometri noktasının ve bulmak için tanjantını boyunca uzaklığı. Bu uzaklık daha az sonra 0 ise, bu yöntem geometri ilk noktanın hesaplar. Bu uzaklık geometri uzunluğundan daha büyük ise, bu yöntem geometri son noktanın hesaplar.  
   
- `worldTransform`  
+ *worldTransform*  
  Belirtilen noktası ve tanjantını hesaplanmadan önce geometriye uygulanacak dönüşüm.  
   
- `point`  
+ *Noktası*  
  Geometri boyunca belirtilen uzaklıkta konumu. Geometri boşsa, bu nokta NaN x ve y içeren değerleri.  
   
- `unitTangentVector`  
+ *unitTangentVector*  
  Bu yöntem döndürüldüğünde, geometri boyunca belirtilen uzaklıkta Eğim vektör gösteren bir işaretçi içeriyor. Geometri boşsa, bu vektörü NaN x ve y içeren değerleri. Bu parametre için depolama ayırmanız gerekir.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  Çokgen yaklaşık geometrinin noktaları arasında en fazla sınırları mesafeye. Küçük değerler daha doğru sonuçlar ancak yavaş yürütülmesine neden olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -320,16 +320,16 @@ BOOL FillContainsPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `point`  
+ *Noktası*  
  Test noktası.  
   
- `worldTransform`  
+ *worldTransform*  
  Kapsama için test önce geometri uygulanacak dönüşüm.  
   
- `contains`  
+ *İçerir*  
  Bu yöntem döndürüldüğünde, geometri tarafından doldurulmuş alan noktası içeriyorsa TRUE bir Boole değeri içeriyor; Aksi takdirde FALSE. Bu parametre için depolama ayırmanız gerekir.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  Hangi sayısal doğruluğu yolu kesişim ve kesin geometrik yolunu hesaplanır. Tolerans değerinden tarafından dolgu eksik noktaları hala içinde olarak kabul edilir. Küçük değerler daha doğru sonuçlar ancak yavaş yürütülmesine neden olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -354,8 +354,8 @@ CD2DRectF& bounds) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `worldTransform`  
- `bounds`  
+ *worldTransform*  
+ *sınırları*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -372,19 +372,19 @@ BOOL GetWidenedBounds(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `strokeWidth`  
+ *strokeWidth*  
  Geometri anahattı vuruş yapması genişletmek üzere tutar.  
   
- `strokeStyle`  
+ *strokeStyle*  
  Geometri widens vuruşun stili.  
   
- `worldTransform`  
+ *worldTransform*  
  Geometri dönüştürüldükten sonra ve geometri vuruş sonra geometriye uygulanacak dönüşüm.  
   
- `bounds`  
+ *sınırları*  
  Bu yöntem döndürüldüğünde, genişletmiştir geometri sınırları içerir. Bu parametre için depolama ayırmanız gerekir.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  Çokgen yaklaşık olarak geometri noktaları arasında en fazla sınırları mesafeye. Küçük değerler daha doğru sonuçlar ancak yavaş yürütülmesine neden olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -428,13 +428,13 @@ BOOL Outline(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `worldTransform`  
+ *worldTransform*  
  Geometri anahattına uygulanacak dönüşüm.  
   
- `geometrySink`  
+ *geometrySink*  
  Geometri dönüştürülmüş anahat eklenmiş ID2D1SimplifiedGeometrySink.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  Çokgen yaklaşık geometrinin noktaları arasında en fazla sınırları mesafeye. Küçük değerler daha doğru sonuçlar ancak yavaş yürütülmesine neden olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -452,16 +452,16 @@ BOOL Simplify(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `simplificationOption`  
+ *simplificationOption*  
  Basitleştirilmiş geometri Eğriler olup olmayacağını belirten bir değer.  
   
- `worldTransform`  
+ *worldTransform*  
  Basitleştirilmiş geometriye uygulanacak dönüşüm.  
   
- `geometrySink`  
+ *geometrySink*  
  Basitleştirilmiş geometri eklenmiş ID2D1SimplifiedGeometrySink.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  Çokgen yaklaşık geometrinin noktaları arasında en fazla sınırları mesafeye. Küçük değerler daha doğru sonuçlar ancak yavaş yürütülmesine neden olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -481,22 +481,22 @@ BOOL StrokeContainsPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `point`  
+ *Noktası*  
  Kapsama için test noktası.  
   
- `strokeWidth`  
+ *strokeWidth*  
  Uygulanacak vuruş kalınlığı.  
   
- `strokeStyle`  
+ *strokeStyle*  
  Uygulanacak vuruşun stili.  
   
- `worldTransform`  
+ *worldTransform*  
  Konturlu geometriye uygulanacak dönüşüm.  
   
- `contains`  
+ *İçerir*  
  Bu yöntem döndürüldüğünde, geometri 's vuruş belirtilen noktası içeriyorsa TRUE değerine ayarlayın bir boolean değeri içerir; Aksi takdirde FALSE. Bu parametre için depolama ayırmanız gerekir.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  Hangi sayısal doğruluğu yolu kesişim ve kesin geometrik yolunu hesaplanır. Tolerans değerinden tarafından vuruşun eksik noktaları hala içinde olarak kabul edilir. Küçük değerler daha doğru sonuçlar ancak yavaş yürütülmesine neden olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -513,13 +513,13 @@ BOOL Tessellate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `worldTransform`  
+ *worldTransform*  
  Bu geometri ya da NULL için uygulanacak dönüşüm.  
   
- `tessellationSink`  
+ *tessellationSink*  
  ID2D1TessellationSink için grubun Mozaik eklenir.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  Çokgen yaklaşık geometrinin noktaları arasında en fazla sınırları mesafeye. Küçük değerler daha doğru sonuçlar ancak yavaş yürütülmesine neden olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -538,19 +538,19 @@ BOOL Widen(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `strokeWidth`  
+ *strokeWidth*  
  Geometri genişletmek üzere tutar.  
   
- `strokeStyle`  
+ *strokeStyle*  
  Geometri veya NULL uygulamak için vuruş stili.  
   
- `worldTransform`  
+ *worldTransform*  
  Genişletme sonra geometriye uygulanacak dönüşüm.  
   
- `geometrySink`  
+ *geometrySink*  
  Genişletmiştir geometri eklenmiş ID2D1SimplifiedGeometrySink.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  Çokgen yaklaşık geometrinin noktaları arasında en fazla sınırları mesafeye. Küçük değerler daha doğru sonuçlar ancak yavaş yürütülmesine neden olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

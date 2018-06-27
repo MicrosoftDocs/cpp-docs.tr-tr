@@ -66,12 +66,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf77a5581dd9e8c9181c61287b6032f700d7d64b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: de63a53e23f4ea22a6fe8df7ab55bfc57d409779
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376577"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955082"
 ---
 # <a name="cfilefind-class"></a>CFileFind sınıfı
 Yerel dosya aramaları gerçekleştirir ve temel sınıfı olan [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md) ve [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md), Internet dosya aramaları gerçekleştirin.  
@@ -159,7 +159,7 @@ CFileFind(CAtlTransactionManager* pTM);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pTM`  
+ *pTM*  
  CAtlTransactionManager nesnesine işaretçi  
   
 ### <a name="example"></a>Örnek  
@@ -188,7 +188,7 @@ virtual void CloseContext();
 ### <a name="remarks"></a>Açıklamalar  
  Arama tanıtıcısı geçerli değeri tarafından belirtilen dosya kapatır. Bu işlev varsayılan davranışı değiştirmek için geçersiz kılar.  
   
- Çağırmalısınız [FindFile](#findfile) veya ['larını](#findnextfile) geçerli arama tanıtıcısı almak için en az bir kez işlevleri. **FindFile** ve `FindNextFile` işlevleri bir verilen adıyla eşleşen adlara sahip dosyaları bulmak için arama tanıtıcısı kullanın.  
+ Çağırmalısınız [FindFile](#findfile) veya ['larını](#findnextfile) geçerli arama tanıtıcısı almak için en az bir kez işlevleri. `FindFile` Ve `FindNextFile` işlevleri bir verilen adıyla eşleşen adlara sahip dosyaları bulmak için arama tanıtıcısı kullanın.  
   
 ##  <a name="findfile"></a>  CFileFind::FindFile  
  Bir dosya aramayı açmak için bu üye işlevini çağırın.  
@@ -200,17 +200,17 @@ virtual BOOL FindFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstrName`  
- Bulunacak dosyasının adı içeren bir dize için bir işaretçi. Geçirirseniz **NULL** için `pstrName`, **FindFile** bir joker karakter mu (*.\*) arama.  
+ *pstrName*  
+ Bulunacak dosyasının adı içeren bir dize için bir işaretçi. Geçirirseniz **NULL** için *pstrName*, **FindFile** bir joker karakter mu (*.\*) arama.  
   
  *dwUnused*  
- Yapmak için ayrılmış **FindFile** türetilen sınıflar ile çok biçimli. 0 olmalıdır.  
+ Yapmak için ayrılmış `FindFile` türetilen sınıflar ile çok biçimli. 0 olmalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0. Genişletilmiş hata bilgilerini için Win32 işlevini çağırın [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırdıktan sonra **FindFile** dosya aramaya başlamak için çağrı ['larını](#findnextfile) sonraki dosyaları alınamadı. Çağırmalısınız `FindNextFile` aşağıdaki öznitelik hiçbirini üye işlevleri çağırmadan önce en az bir kez:  
+ Çağırdıktan sonra `FindFile` dosya aramaya başlamak için çağrı ['larını](#findnextfile) sonraki dosyaları alınamadı. Çağırmalısınız `FindNextFile` aşağıdaki öznitelik hiçbirini üye işlevleri çağırmadan önce en az bir kez:  
   
 - [GetCreationTime](#getcreationtime)  
   
@@ -318,10 +318,10 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pTimeStamp`  
+ *pTimeStamp*  
  Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) dosyanın oluşturulduğu zaman içeren yapısı.  
   
- `refTime`  
+ *refTime*  
  Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -435,10 +435,10 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `refTime`  
+ *refTime*  
  Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi.  
   
- `pTimeStamp`  
+ *pTimeStamp*  
  Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) dosyaya son erişim saati içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -462,10 +462,10 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pTimeStamp`  
+ *pTimeStamp*  
  Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) dosya için en son yazıldı saati içeren yapısı.  
   
- `refTime`  
+ *refTime*  
  Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -714,7 +714,7 @@ virtual BOOL MatchesMask(DWORD dwMask) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwMask`  
+ *dwMask*  
  Tanımlanan bir veya daha fazla dosya özniteliklerini belirtir [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) bulunan dosya yapısı. Birden çok öznitelik aramak için Bitsel veya kullanın (&#124;) işleci. Aşağıdaki öznitelikler herhangi bir bileşimini kabul edilebilir:  
   
 -   FILE_ATTRIBUTE_ARCHIVE dosyayı bir arşiv dosyasıdır. Uygulamalar bu öznitelik yedekleme veya kaldırma için dosyaları için kullanın.  

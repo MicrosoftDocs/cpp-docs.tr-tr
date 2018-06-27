@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7b81c49ce96fd026cd1974e505ac50dec131611
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 58c8c9aaaf212e98fdeff1e639bb09423304e643
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355168"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957409"
 ---
 # <a name="canimationpoint-class"></a>CAnimationPoint sınıfı
 Koordinatları animasyonlu nokta işlevlerini uygular.  
@@ -114,10 +114,10 @@ void AddTransition(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pXTransition`  
+ *pXTransition*  
  Geçiş için koordinatları X için bir işaretçi.  
   
- `pYTransition`  
+ *pYTransition*  
  Bir işaretçi geçiş y koordinatı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -138,16 +138,16 @@ CAnimationPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ptDefault`  
+ *ptDefault*  
  Varsayılan noktası koordinatları belirtir.  
   
- `nGroupID`  
+ *nGroupID*  
  Grup kimliğini belirtir.  
   
- `nObjectID`  
+ *nObjectID*  
  Nesne kimliğini belirtir.  
   
- `dwUserData`  
+ *dwUserData*  
  Kullanıcı tanımlı veri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -161,7 +161,7 @@ virtual void GetAnimationVariableList(CList<CAnimationVariable*, CAnimationVaria
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lst`  
+ *lst*  
  İşlevi döndüğünde, X ve Y koordinatları temsil eden iki CAnimationVariable nesnelerine işaretçiler içerir.  
   
 ##  <a name="getdefaultvalue"></a>  CAnimationPoint::GetDefaultValue  
@@ -185,7 +185,7 @@ BOOL GetValue(CPoint& ptValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ptValue`  
+ *ptValue*  
  Çıktı. Bu yöntem döndürüldüğünde geçerli değeri içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -255,7 +255,7 @@ void operator=(const CPoint& ptSrc);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ptSrc`  
+ *ptSrc*  
  CPoint veya NOKTASINA başvuruyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -269,7 +269,7 @@ void SetDefaultValue(const POINT& ptDefault);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ptDefault`  
+ *ptDefault*  
  Varsayılan nokta değeri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

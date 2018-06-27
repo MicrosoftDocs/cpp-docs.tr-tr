@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39c5167c81d6c44fa62f9bff87c6c04f73f9f6d5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4ffd5e43267ad6a5a462705f410cc1073161ecf0
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355895"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954110"
 ---
 # <a name="cbrush-class"></a>CBrush sınıfı
 Bir Windows grafik cihaz arabirimi (GDI) fırça yalıtır.  
@@ -105,10 +105,10 @@ explicit CBrush(CBitmap* pBitmap);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `crColor`  
+ *crColor*  
  RGB renk olarak fırça ön plan rengini belirtir. Fırça çizgili varsa, bu parametre tarama rengini belirtir.  
   
- `nIndex`  
+ *nIndex*  
  Fırça tarama stilini belirtir. Aşağıdaki değerlerden biri olabilir:  
   
 - `HS_BDIAGONAL` Aşağı tarama 45 derecede (soldan sağa)  
@@ -123,7 +123,7 @@ explicit CBrush(CBitmap* pBitmap);
   
 - `HS_VERTICAL` Dikey tarama  
   
- `pBitmap`  
+ *pBitmap*  
  İşaret eden bir `CBitmap` ile fırça boyar bir bit eşlem belirtir nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -133,7 +133,7 @@ explicit CBrush(CBitmap* pBitmap);
   
  Tek bir oluşturucu [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametresi belirtilen renkle düz fırça oluşturur. Renk bir RGB değeri belirtir ve ile oluşturulan `RGB` makrosu Windows. H.  
   
- Yapıcı, iki parametre ile bir tarama fırça oluşturur. `nIndex` Parametresi, taranmış bir desen dizinini belirtir. `crColor` Parametresi rengi belirtir.  
+ Yapıcı, iki parametre ile bir tarama fırça oluşturur. *NIndex* parametresi, taranmış bir desen dizinini belirtir. *CrColor* parametresi rengi belirtir.  
   
  Oluşturucu bir `CBitmap` parametresi desenli fırça oluşturur. Parametre bir bit eşlem tanımlar. Bit eşlem kullanılarak oluşturulan varsayılır [CBitmap::CreateBitmap](../../mfc/reference/cbitmap-class.md#createbitmap), [CBitmap::CreateBitmapIndirect](../../mfc/reference/cbitmap-class.md#createbitmapindirect), [CBitmap::LoadBitmap](../../mfc/reference/cbitmap-class.md#loadbitmap), veya [ CBitmap::CreateCompatibleBitmap](../../mfc/reference/cbitmap-class.md#createcompatiblebitmap). En az bir dolgu deseni kullanılacak bir bit eşlem için 8 x 8 piksel boyutudur.  
   
@@ -198,9 +198,9 @@ BOOL CreateDIBPatternBrush(
   
  İki sürüm DIB işleme yönteminde farklılık gösterir:  
   
--   İlk sürümünde bir tanıtıcı DIB elde etmek için Windows çağrısı **GlobalAlloc** işlevi bir genel bellek bloğu ayrılamadı ve ardından bellek paketlenmiş DIB ile doldurun.  
+-   İlk sürümünde bir tanıtıcı DIB elde etmek için Windows çağrı `GlobalAlloc` işlevi bir genel bellek bloğu ayrılamadı ve ardından bellek paketlenmiş DIB ile doldurun.  
   
--   İkinci sürümünde çağırmak ise gerekli değildir **GlobalAlloc** paketlenmiş DIB için bellek ayrılamadı.  
+-   İkinci sürümünde çağırmak ise gerekli değildir `GlobalAlloc` paketlenmiş DIB için bellek ayrılamadı.  
   
  Paketlenmiş DIB oluşan bir `BITMAPINFO` bit eşlem piksel tanımlayan bayt dizisi tarafından hemen ardından veri yapısı. Bit eşlemler dolgu deseni olarak kullanılan 8 x 8 piksel olmalıdır. Bit eşlem büyükse, Windows yalnızca ilk 8 satır ve 8 bit eşlem sol üst köşesindeki piksel sütunlarının karşılık gelen BITS kullanarak dolgu deseni oluşturur.  
   
@@ -208,7 +208,7 @@ BOOL CreateDIBPatternBrush(
   
  Aşağıdaki Windows işlevleri kullanma hakkında daha fazla bilgi için Windows SDK'sı bakın:  
   
-- [CreateDIBPatternBrush](http://msdn.microsoft.com/library/windows/desktop/dd183492) (Bu işlev yalnızca 3.0'den önceki Windows sürümleri için yazılmış uygulamalarla uyumluluk için sağlanır; kullanın **CreateDIBPatternBrushPt** işlevi.)  
+- [CreateDIBPatternBrush](http://msdn.microsoft.com/library/windows/desktop/dd183492) (Bu işlev yalnızca 3.0'den önceki Windows sürümleri için yazılmış uygulamalarla uyumluluk için sağlanır; kullanın `CreateDIBPatternBrushPt` işlevi.)  
   
 - [CreateDIBPatternBrushPt](http://msdn.microsoft.com/library/windows/desktop/dd183493) (Bu işlev Win32 tabanlı uygulamalar için kullanılmalıdır.)  
   
@@ -227,7 +227,7 @@ BOOL CreateHatchBrush(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Fırça tarama stilini belirtir. Aşağıdaki değerlerden biri olabilir:  
   
 - `HS_BDIAGONAL` Aşağı tarama 45 derecede (soldan sağa)  
@@ -242,7 +242,7 @@ BOOL CreateHatchBrush(
   
 - `HS_VERTICAL` Dikey tarama  
   
- `crColor`  
+ *crColor*  
  Bir RGB rengi (tarama rengi) fırça ön plan rengini belirtir. Bkz: [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) daha fazla bilgi için Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -262,14 +262,14 @@ BOOL CreatePatternBrush(CBitmap* pBitmap);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pBitmap`  
+ *pBitmap*  
  Bir bit eşlem tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Fırça sonradan tarama işlemlerini destekleyen herhangi bir cihaz bağlamı için seçilebilir. Tarafından tanımlanan bit eşlem `pBitmap` kullanarak normalde başlatılmamış [CBitmap::CreateBitmap](../../mfc/reference/cbitmap-class.md#createbitmap), [CBitmap::CreateBitmapIndirect](../../mfc/reference/cbitmap-class.md#createbitmapindirect), [CBitmap::LoadBitmap](../../mfc/reference/cbitmap-class.md#loadbitmap), veya [CBitmap::CreateCompatibleBitmap](../../mfc/reference/cbitmap-class.md#createcompatiblebitmap) işlevi.  
+ Fırça sonradan tarama işlemlerini destekleyen herhangi bir cihaz bağlamı için seçilebilir. Tarafından tanımlanan bit eşlem *pBitmap* kullanarak normalde başlatılmamış [CBitmap::CreateBitmap](../../mfc/reference/cbitmap-class.md#createbitmap), [CBitmap::CreateBitmapIndirect](../../mfc/reference/cbitmap-class.md#createbitmapindirect), [CBitmap:: LoadBitmap](../../mfc/reference/cbitmap-class.md#loadbitmap), veya [CBitmap::CreateCompatibleBitmap](../../mfc/reference/cbitmap-class.md#createcompatiblebitmap) işlevi.  
   
  Bit eşlemler dolgu deseni olarak kullanılan 8 x 8 piksel olmalıdır. Bit eşlem büyükse, Windows yalnızca ilk 8 satır ve sütun bit eşlemi sol üst köşesindeki piksel karşılık gelen BITS kullanın.  
   
@@ -290,8 +290,8 @@ BOOL CreateSolidBrush(COLORREF crColor);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `crColor`  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) yapısı fırça rengini belirtir. Renk bir RGB değeri belirtir ve ile oluşturulan `RGB` makrosu Windows. H.  
+ *crColor*  
+ A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) yapısı fırça rengini belirtir. Renk ve Windows'da RGB makrosu ile oluşturulan bir RGB değeri belirtir. H.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
@@ -312,7 +312,7 @@ BOOL CreateSysColorBrush(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Bir renk dizini belirtir. Bu değer 21 pencere öğeleri birini boyamak için kullanılan renk karşılık gelir. Bkz: [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) değerler listesi için Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -334,7 +334,7 @@ static CBrush* PASCAL FromHandle(HBRUSH hBrush);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hBrush`  
+ *hBrush*  
  `HANDLE` bir Windows GDI fırça.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -356,13 +356,13 @@ int GetLogBrush(LOGBRUSH* pLogBrush);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pLogBrush`  
+ *pLogBrush*  
  İşaret eden bir [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) fırça hakkında bilgi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlev başarılı olursa ve `pLogBrush` geçerli bir işaretçi dönüş değeri arabelleğe depolanan bayt sayısıdır.  
+ İşlev başarılı olursa ve *pLogBrush* geçerli bir işaretçi dönüş değeri arabelleğe depolanan bayt sayısıdır.  
   
- İşlev başarılı olursa, ve `pLogBrush` olan **NULL**, dönüş değerdir işlevi bilgiyi tutmak için gereken bayt sayısını arabelleğe depolamak.  
+ İşlev başarılı olursa, ve *pLogBrush* olan **NULL**, dönüş değerdir işlevi bilgiyi tutmak için gereken bayt sayısını arabelleğe depolamak.  
   
  İşlev başarısız olursa, dönüş değeri 0'dır.  
   

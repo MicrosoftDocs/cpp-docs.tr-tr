@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03d68359d075efd72a1bf1907daa71e74110fa28
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2ed2f918a51c1dca1aa7e1713ac919102a599e38
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368943"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953353"
 ---
 # <a name="cdataexchange-class"></a>CDataExchange sınıfı
 İletişim kutusu veri değişimi (DDX) ve Microsoft Foundation sınıfları tarafından kullanılan iletişim kutusu veri doğrulama (DDV) yordamları destekler.  
@@ -75,7 +75,7 @@ class CDataExchange
   
  Özel veri türleri veya denetimleri için veri değişimi rutinleri yazıyorsanız, bu sınıfı kullanın veya kendi veri doğrulama yordamları yazıyorsanız. Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutuları](../../mfc/dialog-boxes.md).  
   
- A `CDataExchange` nesnesi DDX ve DDV yapılacak yerleştirmek için gereken bağlam bilgilerini sağlar. Bayrak `m_bSaveAndValidate` olan **FALSE** zaman DDX iletişim kutusu denetimleri veri üyelerinden ilk değerleri doldurmak için kullanılır. Bayrak `m_bSaveAndValidate` olan **TRUE** zaman DDX veri üyeleri ve DDV veri değerlerini doğrulamak için kullanıldığında iletişim kutusu denetimleri geçerli değerlerini ayarlamak için kullanılır. DDV doğrulama başarısız olursa, DDV yordam giriş hatası açıklayan bir ileti kutusu görüntüler. DDV yordam sonra çağıracak **başarısız** sorunlu denetim odağı sıfırlama ve doğrulama işlemi durdurmak için bir özel durum.  
+ A `CDataExchange` nesnesi DDX ve DDV yapılacak yerleştirmek için gereken bağlam bilgilerini sağlar. Bayrak *m_bSaveAndValidate* olan **FALSE** zaman DDX iletişim kutusu denetimleri veri üyelerinden ilk değerleri doldurmak için kullanılır. Bayrak *m_bSaveAndValidate* olan **TRUE** zaman DDX veri üyeleri ve DDV veri değerlerini doğrulamak için kullanıldığında iletişim kutusu denetimleri geçerli değerlerini ayarlamak için kullanılır. DDV doğrulama başarısız olursa, DDV yordam giriş hatası açıklayan bir ileti kutusu görüntüler. DDV yordam sonra çağıracak `Fail` sorunlu denetim odağı sıfırlama ve doğrulama işlemi durdurmak için bir özel durum.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CDataExchange`  
@@ -96,7 +96,7 @@ CDataExchange(
  *pDlgWnd*  
  Denetimi içeren üst pencere için bir işaretçi. Genellikle bu olan bir [CDialog](../../mfc/reference/cdialog-class.md)-türetilmiş bir nesne içermelidir.  
   
- `bSaveAndValidate`  
+ *bSaveAndValidate*  
  Varsa **doğru**, bu nesne verileri doğrular ve ardından verileri denetimlerden üyelerine yazar. Varsa **yanlış**, bu nesnenin veri denetimlere üyeleri taşınır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -113,9 +113,9 @@ void Fail();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Başarısız** odak ve seçim, doğrulama başarısız oldu (geri yüklemek için bir denetim varsa) denetim geri yükler. **Başarısız** türünde bir özel durum atar [CUserException](../../mfc/reference/cuserexception-class.md) doğrulama işlemi durdurmak için. Özel durum görüntülenecek hatayı açıklayan bir ileti kutusu neden olur. DDV doğrulama başarısız olduktan sonra kullanıcı verileri sorunlu denetiminde yeniden girebilirsiniz.  
+ `Fail` odak ve seçim (geri yüklemek için bir denetim varsa), doğrulama başarısız oldu denetim geri yükler. `Fail` türünde bir özel durum atar [CUserException](../../mfc/reference/cuserexception-class.md) doğrulama işlemi durdurmak için. Özel durum görüntülenecek hatayı açıklayan bir ileti kutusu neden olur. DDV doğrulama başarısız olduktan sonra kullanıcı verileri sorunlu denetiminde yeniden girebilirsiniz.  
   
- Özel DDV rutinleri implementors çağırabilir **başarısız** bir doğrulama başarısız olduğunda kendi yordamları gelen.  
+ Özel DDV rutinleri implementors çağırabilir `Fail` bir doğrulama başarısız olduğunda kendi yordamları gelen.  
   
  Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutusunu konularına](../../mfc/dialog-boxes.md).  
   
@@ -153,7 +153,7 @@ HWND PrepareCtrl(int nIDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDC`  
+ *nIDC*  
  DDX veya DDV için hazırlıklı olmak için denetim kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -176,7 +176,7 @@ HWND PrepareEditCtrl(int nIDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDC`  
+ *nIDC*  
  DDX veya DDV için hazırlıklı olmak için düzenleme denetimi kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -199,7 +199,7 @@ COleControlSite* PrepareOleCtrl(int nIDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDC`  
+ *nIDC*  
  DDX veya DDV için hazırlıklı olmak için OLE denetimi kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

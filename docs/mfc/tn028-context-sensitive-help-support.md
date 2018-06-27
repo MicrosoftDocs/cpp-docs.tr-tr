@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58caed14e6b7080405cceb30cfb90623d28dc83e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 45a8835b43225a8e134da0f983f7c86d461a0636
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385150"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954903"
 ---
 # <a name="tn028-context-sensitive-help-support"></a>TN028: Bağlama Duyarlı Yardım Desteği
 Bu Not Yardım bağlamları kimlikleri ve diğer Yardım konuları MFC'de atamak için kurallar açıklanmaktadır. Bağlama duyarlı Yardım desteği Visual C++'da kullanılabilir Yardım Derleyici gerektirir.  
@@ -37,7 +37,7 @@ Bu Not Yardım bağlamları kimlikleri ve diğer Yardım konuları MFC'de atamak
  Microsoft temel sınıfları bu formların Yardım'ın her ikisi de uygulayın. Ayrıca, iki basit Yardım komutu, Yardım dizini ve Yardım kullanma framework destekler.  
   
 ## <a name="help-files"></a>Yardım dosyaları  
- Microsoft Foundation sınıfları tek bir Yardım dosyasında varsayalım. Yardım dosyası aynı adı ve yolu uygulamanızın olması gerekir. Örneğin, yürütülebilir dosya C:\MyApplication\MyHelp.exe ise Yardım dosyasını C:\MyApplication\MyHelp.hlp olması gerekir. Yolundan ayarladığınız `m_pszHelpFilePath` üye değişken [CWinApp sınıfı](../mfc/reference/cwinapp-class.md).  
+ Microsoft Foundation sınıfları tek bir Yardım dosyasında varsayalım. Yardım dosyası aynı adı ve yolu uygulamanızın olması gerekir. Örneğin, yürütülebilir dosya C:\MyApplication\MyHelp.exe ise Yardım dosyasını C:\MyApplication\MyHelp.hlp olması gerekir. Yolundan ayarladığınız *m_pszHelpFilePath* üye değişken [CWinApp sınıfı](../mfc/reference/cwinapp-class.md).  
   
 ## <a name="help-context-ranges"></a>Yardım içeriği aralıkları  
  MFC varsayılan uygulaması kimlikleri Yardım içeriğinin atama hakkında bazı kurallar izlemeniz gereken bir program gerektirir. Bu kurallar bir aralığı, belirli denetimlere ayrılan Kimlikleridir. Çeşitli Yardım ilgili üye işlevleri farklı uygulamaları sağlayarak bu kuralları geçersiz kılabilirsiniz.  
@@ -68,9 +68,9 @@ Bu Not Yardım bağlamları kimlikleri ve diğer Yardım konuları MFC'de atamak
  İlk komut, uygulama için Yardım dizinini gösterir. İkincisi WinHelp programını kullanarak kullanıcı Yardımı gösterir.  
   
 ## <a name="context-sensitive-help-f1-help"></a>İçeriğe duyarlı Yardımı (F1 Yardımı)  
- Kimliğine sahip bir komut için F1 tuşuna genellikle çevrilen `ID_HELP` ana pencerenin Hızlandırıcı tabloya yerleştirilen Hızlandırıcı tarafından. `ID_HELP` Komutu de oluşturulabilir Kimliğine sahip bir düğmesi `ID_HELP` ana pencereyi veya iletişim kutusundaki.  
+ F1 tuşuna genellikle, bir kimliği ıd_help komutu için ana pencerenin Hızlandırıcı tabloya yerleştirilen Hızlandırıcı tarafından çevrilir. Id_help komutu, ana pencereyi veya iletişim kutusunda, kimliği, ıd_help bir düğme tarafından da oluşturulabilir.  
   
- Bağımsız olarak nasıl `ID_HELP` komutu oluşturulur, bir komut işleyici ulaşana kadar normal bir komut olarak yönlendirilir. Komut yönlendirme MFC mimarisi hakkında daha fazla bilgi için başvurmak [Teknik Not 21](../mfc/tn021-command-and-message-routing.md). Uygulama etkin Yardım varsa `ID_HELP` komutu tarafından işleneceğini [CWinApp::OnHelp](../mfc/reference/cwinapp-class.md#onhelp). Uygulama nesnesi yardım iletisini alır ve komut uygun şekilde yönlendirir. Varsayılan komut yönlendirme en özel bağlamı belirlemek için yeterli olmadığından, bu gereklidir.  
+ Bir komut işleyici ulaşana kadar ıd_help komutu nasıl oluşturulur bağımsız olarak, normal bir komut olarak yönlendirilir. Komut yönlendirme MFC mimarisi hakkında daha fazla bilgi için başvurmak [Teknik Not 21](../mfc/tn021-command-and-message-routing.md). Uygulama etkin Yardımı varsa, ıd_help komutu tarafından ele alınacağını [CWinApp::OnHelp](../mfc/reference/cwinapp-class.md#onhelp). Uygulama nesnesi yardım iletisini alır ve komut uygun şekilde yönlendirir. Varsayılan komut yönlendirme en özel bağlamı belirlemek için yeterli olmadığından, bu gereklidir.  
   
  `CWinApp::OnHelp` WinHelp aşağıdaki sırayla başlatmak çalışır:  
   
@@ -94,24 +94,24 @@ afx_msg LRESULT CWnd::OnCommandHelp(WPARAM wParam, LPARAM lParam)
   
  WM_COMMANDHELP Yardım istendiğinde, etkin pencere tarafından alınan özel bir Windows MFC iletisidir. Pencerenin bu ileti aldığında, çağırabilir `CWinApp::WinHelp` pencerenin iç durum eşleşen bağlamına sahip.  
   
- `lParam`  
- Şu anda kullanılabilir Yardım bağlamı içerir. `lParam` Yardım içeriği yok belirlendiyse sıfır olur. Uygulaması `OnCommandHelp` bağlamı Kimliğinde kullanabilirsiniz `lParam` için farklı bir bağlam belirlemek ya da yalnızca geçirebileceğiniz `CWinApp::WinHelp`.  
+ *lParam*  
+ Şu anda kullanılabilir Yardım bağlamı içerir. *lParam* Yardım bağlam belirlendiyse sıfırdır. Uygulaması `OnCommandHelp` bağlamı Kimliğinde kullanabilirsiniz *lParam* için farklı bir bağlam belirlemek ya da yalnızca geçirebileceğiniz `CWinApp::WinHelp`.  
   
- `wParam`  
+ *wParam*  
  Kullanılmaz ve sıfır olur.  
   
- Varsa `OnCommandHelp` işlev çağrıları `CWinApp::WinHelp`, döndürme zorunluluğu `TRUE`. Döndürme `TRUE` bu komut diğer sınıflar ve diğer windows yönlendirmeyi durdurur.  
+ Varsa `OnCommandHelp` işlev çağrıları `CWinApp::WinHelp`, döndürme zorunluluğu **doğru**. Döndürme **TRUE** bu komut diğer sınıflar ve diğer windows yönlendirmeyi durdurur.  
   
 ## <a name="help-mode-shiftf1-help"></a>Yardım modu (Shift + F1 Yardımı)  
- Bu bağlama duyarlı Yardım ikinci biçimidir. Genellikle, bu mod SHIFT + F1 tuşuna basarak veya menüsü/araç aracılığıyla girilir. Bir komut olarak uygulanan (**ıd_context_help**). İleti Filtresi kanca modal bir iletişim kutusu yüklenirken bu komut çevirmek için kullanılan değil veya menü etkin olduğu, uygulama ana ileti göndericisi yürütülürken bu nedenle bu komut yalnızca kullanıcı için kullanılabilir (`CWinApp::Run`).  
+ Bu bağlama duyarlı Yardım ikinci biçimidir. Genellikle, bu mod SHIFT + F1 tuşuna basarak veya menüsü/araç aracılığıyla girilir. Bir komut (ıd_context_help) olarak uygulanır. İleti Filtresi kanca modal bir iletişim kutusu yüklenirken bu komut çevirmek için kullanılan değil veya menü etkin olduğu, uygulama ana ileti göndericisi yürütülürken bu nedenle bu komut yalnızca kullanıcı için kullanılabilir (`CWinApp::Run`).  
   
  Uygulamanın normal olarak bu alanı (örneğin, pencerenin boyutlandırma kenarlığın) için kendi imleç görüntüleyecektir olsa bile bu mod girdikten sonra tüm uygulama Yardım fare imleci görüntülenir. Kullanıcı komut seçmek için fareyi veya klavyeyi kullanmanız mümkün değil. Komutu yürütmek yerine bu komutla ilgili Yardım görüntülenir. Ayrıca, kullanıcı ekranında, araç çubuğunda gibi görünür nesne tıklayabilir ve bu nesne için Yardım görüntülenir. Yardım'ın bu mod tarafından sağlanan `CWinApp::OnContextHelp`.  
   
  Bu döngü yürütülmesi sırasında tüm giriş klavye menü erişim anahtarları dışında etkin değil. Ayrıca, komut çeviri hala aracılığıyla gerçekleştirilir `PreTranslateMessage` bir kısayol tuşuna basın ve bu komutla ilgili Yardım almak izin vermek için.  
   
- Varsa belirli çevirileri veya alma eylemleri yerleştirin `PreTranslateMessage` SHIFT + F1 Yardımı modunda denetlemelisiniz gerçekleşmesi döndürmemelidir işlevi `m_bHelpMode` üyesi `CWinApp` bu işlemleri gerçekleştirmeden önce. `CDialog` Uyarlamasını `PreTranslateMessage` çağırmadan önce denetler `IsDialogMessage`, örneğin. Bu "iletişim gezinti" anahtarları kalıcı olmayan iletişim kutuları hakkında üst karakter + F1 modunda devre dışı bırakır. Ayrıca, `CWinApp::OnIdle` hala bu döngüsü sırasında çağrılır.  
+ Varsa belirli çevirileri veya alma eylemleri yerleştirin `PreTranslateMessage` SHIFT + F1 Yardımı modunda denetlemelisiniz gerçekleşmesi döndürmemelidir işlevi *m_bHelpMode* üyesi `CWinApp` olanlar gerçekleştirmeden önce işlemler. `CDialog` Uyarlamasını `PreTranslateMessage` çağırmadan önce denetler `IsDialogMessage`, örneğin. Bu "iletişim gezinti" anahtarları kalıcı olmayan iletişim kutuları hakkında üst karakter + F1 modunda devre dışı bırakır. Ayrıca, `CWinApp::OnIdle` hala bu döngüsü sırasında çağrılır.  
   
- Kullanıcı bir komut menüsünden seçerse bu komutla ilgili Yardım olarak gerçekleştirilir (aracılığıyla **WM_COMMANDHELP**, aşağıya bakın). Kullanıcı uygulamaları penceresinin görünür alanı tıklarsa, bir belirleme bir nonclient veya istemci tıklatın olup için yapılır. `OnContextHelp` işleyici eşlemesi nonclient otomatik olarak istemci tıklamalarına tıklatır. Bir istemci tıklatın ise, ardından gönderir bir **WM_HELPHITTEST** tıklandığını penceresine. Bu pencere sıfır olmayan bir değer döndürürse, bu değer için Yardım bağlamı olarak kullanılır. Sıfır döndürürse `OnContextHelp` üst pencere çalışır (Bu, kendi üst başarısız ve benzeri). Yardım içeriği belirlenemiyorsa göndermek için varsayılan değer bir **ıd_default_help** sonra (genellikle) eşlenmiş ana penceresi komutu `CWinApp::OnHelpIndex`.  
+ Kullanıcı bir komut menüsünden seçerse bu komutla ilgili Yardım olarak gerçekleştirilir (WM_COMMANDHELP aşağıya bakın). Kullanıcı uygulamaları penceresinin görünür alanı tıklarsa, bir belirleme bir nonclient veya istemci tıklatın olup için yapılır. `OnContextHelp` işleyici eşlemesi nonclient otomatik olarak istemci tıklamalarına tıklatır. Bir istemci tıklatın ise, tıklandığını penceresine sonra bir WM_HELPHITTEST gönderir. Bu pencere sıfır olmayan bir değer döndürürse, bu değer için Yardım bağlamı olarak kullanılır. Sıfır döndürürse `OnContextHelp` üst pencere çalışır (Bu, kendi üst başarısız ve benzeri). Yardım içeriği belirlenemiyorsa, ardından (genellikle) eşlenmiş ana penceresinde ıd_default_help komutu göndermek için varsayılandır `CWinApp::OnHelpIndex`.  
   
 ## <a name="wmhelphittest"></a>WM_HELPHITTEST  
   
@@ -121,7 +121,7 @@ afx_msg LRESULT CWnd::OnHelpHitTest(
 WPARAM, LPARAM lParam)  
 ```  
   
- **WM_HELPHITTEST** SHIFT + F1 Yardımı modunda tıklattınız etkin pencereyi tarafından alınan bir MFC özel windows iletisidir. Pencerenin bu ileti aldığında, bir DWORD Yardım kimliği kullanmak için WinHelp tarafından döndürür.  
+ WM_HELPHITTEST SHIFT + F1 Yardımı modunda tıklattınız etkin pencereyi tarafından alınan bir MFC özel windows iletisidir. Pencerenin bu ileti aldığında, döndürür bir **DWORD** WinHelp tarafından kullanılmak üzere Yardım kimliği.  
   
  LOWORD(lParam)  
  Fare penceresinin istemci alanına göre burada tıklandığını x ekseni cihaz koordinat içerir.  
@@ -129,10 +129,10 @@ WPARAM, LPARAM lParam)
  HIWORD(lParam)  
  y koordinatı içerir.  
   
- `wParam`  
- Kullanılmaz ve sıfır olur. Dönüş değeri sıfır değilse, WinHelp ile bu bağlamın adı verilir. Dönüş değeri sıfır ise, ana pencereyi Yardım için sorgulanır.  
+ *wParam*  
+ kullanılmaz ve sıfır olur. Dönüş değeri sıfır değilse, WinHelp ile bu bağlamın adı verilir. Dönüş değeri sıfır ise, ana pencereyi Yardım için sorgulanır.  
   
- Çoğu durumda, isabet testi kodu zaten olabilir yararlanabilirsiniz. Bkz: **CToolBar::OnHelpHitTest** işleme ilişkin bir örnek **WM_HELPHITTEST** ileti (düğme ve ipuçlarında kullanılan isabet testi kodu kodu yararlanır `CControlBar`).  
+ Çoğu durumda, isabet testi kodu zaten olabilir yararlanabilirsiniz. Bkz: `CToolBar::OnHelpHitTest` WM_HELPHITTEST ileti işleme ilişkin bir örnek için (düğme ve ipuçlarında kullanılan isabet testi kodu kodu yararlanır `CControlBar`).  
   
 ## <a name="mfc-application-wizard-support-and-makehm"></a>MFC Uygulama Sihirbazı desteği ve MAKEHM  
  MFC Uygulama Sihirbazı'nı Yardım dosyasını (.cnt ve .hpj dosyaları) oluşturmak için gerekli dosyaları oluşturur. Ayrıca, Microsoft Yardım Derleyici tarafından kabul edilen önceden oluşturulmuş .rtf dosyaları sayısını içerir. Konular çoğunu tamamlandı, ancak bazı belirli uygulamanız için değiştirilmesi gerekebilir.  

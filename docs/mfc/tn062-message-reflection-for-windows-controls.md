@@ -37,12 +37,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba8e9cac3b7f7997da8c620966234a630b9b9fbd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 683281af3d029dca7e8060bb250a49f8e095d597
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384970"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954588"
 ---
 # <a name="tn062-message-reflection-for-windows-controls"></a>TN062: Windows Denetimleri için İleti Yansıması
 > [!NOTE]
@@ -54,25 +54,25 @@ ms.locfileid: "33384970"
   
  **İleti yansıması nedir**  
   
- Windows denetimleri sık kendi üst windows bildirim iletilerini göndermek. Örneğin, birçok denetimleri bir denetim renk bildirim iletisini göndermek (`WM_CTLCOLOR` veya türevleri) kendi üst denetimin arka plan boyama için fırça sağlamak üst izin vermek için.  
+ Windows denetimleri sık kendi üst windows bildirim iletilerini göndermek. Örneği için çok sayıda denetimleri denetimin arka plan boyama için fırça sağlamak üst izin vermek için kendi üst denetim renk bildirim iletisi (WM_CTLCOLOR veya türevleri biri) gönderin.  
   
  Windows ve MFC önce sürüm 4. 0'de, üst pencere, iletişim kutusu genellikle, bu iletiler işlemekten sorumludur. Bu iletiyi işlemek için kod üst pencerenin sınıfta olması gerektiğini ve bu iletiyi işlemek için gereken her sınıfında çoğaltılacak olduğunu anlamına gelir. Yukarıdaki durumda özel arka planlar denetimleriyle istediği her iletişim kutusu denetim renk bildirim iletisi işlemek gerekir. Denetim sınıfı kendi arka plan rengi işleyen yazılabilir varsa kodu tekrar çok daha kolay olacaktır.  
   
- MFC 4. 0'da, eski mekanizması çalışmaya devam ettiğinden — üst windows bildirim iletilerini işleyebilir. Ayrıca, ancak, MFC 4.0 yeniden "yansıma iletisi" adlı bir özelliği sağlayarak kolaylaştıran alt denetim penceresinde veya üst pencere ya da hem de işlenecek bu bildirim iletilerini sağlar. Denetim arka plan rengi örnekte yansıtılan işleyerek kendi arka plan rengini ayarlar control sınıfı şimdi yazabilirsiniz `WM_CTLCOLOR` ileti — üst öğede bağlı olan tüm olmadan. (İleti yansıması MFC tarafından uygulandığından, Windows tarafından üst pencere sınıfı öğesinden türetilmelidir değil, Not `CWnd` çalışmak ileti yansıması için.)  
+ MFC 4. 0'da, eski mekanizması çalışmaya devam ettiğinden — üst windows bildirim iletilerini işleyebilir. Ayrıca, ancak, MFC 4.0 yeniden "yansıma iletisi" adlı bir özelliği sağlayarak kolaylaştıran alt denetim penceresinde veya üst pencere ya da hem de işlenecek bu bildirim iletilerini sağlar. Denetim arka plan rengi örnekte yansıtılan WM_CTLCOLOR iletisi işleyerek kendi arka plan rengini ayarlar control sınıfı şimdi yazabilirsiniz — üst öğede bağlı olan tüm olmadan. (İleti yansıması MFC tarafından uygulandığından, Windows tarafından üst pencere sınıfı öğesinden türetilmelidir değil, Not `CWnd` çalışmak ileti yansıması için.)  
   
- MFC eski sürümleri vermedi şuna benzer bir ileti yansıması sahip tarafından çizilmiş liste kutuları için iletileri gibi birkaç iletileri sanal işlevleri sağlayarak (`WM_DRAWITEM`, vb.). Yeni ileti yansıma genelleştirilmiş ve tutarlı mekanizmadır.  
+ MFC eski sürümleri şuna benzer bir ileti yansıması (WM_DRAWITEM ve benzeri) sahip tarafından çizilmiş liste kutuları için iletileri gibi birkaç iletileri sanal işlevleri sağlayarak vermedi. Yeni ileti yansıma genelleştirilmiş ve tutarlı mekanizmadır.  
   
  İleti yansıması 4.0 önce MFC sürümleri için yazılmış kod ile geriye dönük uyumludur.  
   
- Kendi işleyicisinde taban sınıfı işleyici işlevi çağrısı yok sağlanan, belirli bir ileti için bir işleyici sağladığınız veya iletilerinde üst pencerenin sınıfı, bir dizi için bunu geçersiz kılar, aynı ileti için ileti işleyicileri yansıtılır. Örneğin, işleme, `WM_CTLCOLOR` iletişim kutusu sınıfınızda, işleme tüm yansıtılan ileti işleyicileri geçersiz kılar.  
+ Kendi işleyicisinde taban sınıfı işleyici işlevi çağrısı yok sağlanan, belirli bir ileti için bir işleyici sağladığınız veya iletilerinde üst pencerenin sınıfı, bir dizi için bunu geçersiz kılar, aynı ileti için ileti işleyicileri yansıtılır. Örneğin, iletişim kutusu sınıfında WM_CTLCOLOR işlemek, işleme tüm yansıtılan ileti işleyicileri geçersiz kılar.  
   
- Üst pencere sınıfı içinde belirli bir işleyici sağlarsanız, **wm_notıfy** ileti veya bir dizi **wm_notıfy** ileti işleyicinizi çağrılır yalnızca bu iletileri gönderen alt denetim varsa Yansıtılan ileti işleyicisi aracılığıyla sahip değilse **ON_NOTIFY_REFLECT()**. Kullanırsanız **ON_NOTIFY_REFLECT_EX()** , ileti eşlemesi ileti işleyicinizi olabilir veya iletiyi işlemek üst pencere izin vermeyebilir. İşleyici döndürürse **FALSE**, ileti döndüren bir çağrı sırasında de üst tarafından işlenecek **TRUE** işlenmesi üst izin vermiyor. Yansıtılan ileti önce bildirim iletisi işlenir unutmayın.  
+ Yalnızca bu iletileri gönderen alt denetim aracılığıyla yansıtılan ileti işleyicisi sahip değilse üst pencere sınıfı içinde belirli bir wm_notıfy iletisi ya da bir aralığı, wm_notıfy iletileri için bir işleyici sağlarsanız, işleyicinizi çağrılacağı `ON_NOTIFY_REFLECT()`. Kullanırsanız `ON_NOTIFY_REFLECT_EX()` , ileti eşlemesi ileti işleyicinizi olabilir veya iletiyi işlemek üst pencere izin vermeyebilir. İşleyici döndürürse **FALSE**, ileti döndüren bir çağrı sırasında de üst tarafından işlenecek **TRUE** işlenmesi üst izin vermiyor. Yansıtılan ileti önce bildirim iletisi işlenir unutmayın.  
   
- Zaman bir **wm_notıfy** iletinin gönderildiği, Denetim işlenmesi için ilk fırsat sunulur. Yansıtılan herhangi bir iletisi gönderirse işlenmesi için ilk fırsat üst pencere var ve denetim yansıtılan iletisi alırsınız. Bunu yapmak için bir işleyici işlevi ve uygun bir girdi denetimin sınıf ileti eşlemesi de gerekir.  
+ Wm_notıfy iletisi gönderildiğinde, Denetim işlenmesi için ilk fırsat sunulur. Yansıtılan herhangi bir iletisi gönderirse işlenmesi için ilk fırsat üst pencere var ve denetim yansıtılan iletisi alırsınız. Bunu yapmak için bir işleyici işlevi ve uygun bir girdi denetimin sınıf ileti eşlemesi de gerekir.  
   
- Yansımış iletiler için ileti eşlemesi makrosu düzenli bildirimler için biraz farklıdır: sahip **_REFLECT** normal adını eklenir. Örneğin, işlemek için bir **wm_notıfy** ileti makrosu kullanın, üst `ON_NOTIFY` üst öğenin ileti eşlemesi içinde. Alt denetim yansıtılan iletisinde işlemek için kullanmak **on_notıfy_reflect** makro alt denetimin ileti eşlemesi içinde. Bazı durumlarda, parametreleri de farklı olabilir. ClassWizard genellikle sizin için ileti eşlemesi girişleri ekleyebilir ve doğru parametrelerle iskelet işlevi uygulamalarını olduğunu unutmayın.  
+ Yansımış iletiler için ileti eşlemesi makrosu düzenli bildirimler için biraz farklıdır: sahip *_REFLECT* normal adını eklenir. Örneğin, üst wm_notıfy iletisi işlemek için üst öğenin ileti eşlemesindeki on_notıfy makrosu kullanın. Alt denetim yansıtılan iletisinde işlemek için alt denetimin ileti eşlemesinde on_notıfy_reflect makrosu kullanır. Bazı durumlarda, parametreleri de farklı olabilir. ClassWizard genellikle sizin için ileti eşlemesi girişleri ekleyebilir ve doğru parametrelerle iskelet işlevi uygulamalarını olduğunu unutmayın.  
   
- Bkz: [TN061: on_notıfy ve wm_notıfy iletileri](../mfc/tn061-on-notify-and-wm-notify-messages.md) yeni hakkında bilgi için **wm_notıfy** ileti.  
+ Bkz: [TN061: on_notıfy ve wm_notıfy iletileri](../mfc/tn061-on-notify-and-wm-notify-messages.md) yeni wm_notıfy iletisi hakkında bilgi için.  
   
  **İleti eşleme girişi ve yansımış iletiler için işleyici işlev prototipleri**  
   
@@ -80,19 +80,19 @@ ms.locfileid: "33384970"
   
  ClassWizard genellikle bu ileti eşleme girişleri eklediğiniz ve iskelet işlevi uygulamaları sağlar. Bkz: [yansıtılan bir ileti için ileti işleyicisi tanımlama](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md) yansımış iletileri için işleyiciler tanımlayın hakkında bilgi için.  
   
- Yansıtılan makrosu adına ileti adından dönüştürmek için başına **ON_** ve ilave **_REFLECT**. Örneğin, `WM_CTLCOLOR` hale **ON_WM_CTLCOLOR_REFLECT**. (Hangi iletilerin yansıtılan görmek için aşağıdaki tabloda makrosu girdileri ters dönüştürme yapılamıyor.)  
+ Yansıtılan makrosu adına ileti adından dönüştürmek için başına *ON_* ve ilave *_REFLECT*. Örneğin, WM_CTLCOLOR ON_WM_CTLCOLOR_REFLECT haline gelir. (Hangi iletilerin yansıtılan görmek için aşağıdaki tabloda makrosu girdileri ters dönüştürme yapılamıyor.)  
   
  Yukarıda kural üç istisnaları aşağıdaki gibidir:  
   
--   Makro **WM_COMMAND** bildirimleri olan **ON_CONTROL_REFLECT**.  
+-   WM_COMMAND bildirimler için makro ON_CONTROL_REFLECT oluşur.  
   
--   Makro **wm_notıfy** yansımaları olan **on_notıfy_reflect**.  
+-   Wm_notıfy yansımaları için makro on_notıfy_reflect oluşur.  
   
--   Makro `ON_UPDATE_COMMAND_UI` yansımaları olan **on_update_command_uı_reflect**.  
+-   On_update_command_uı yansımaları için makro on_update_command_uı_reflect oluşur.  
   
  Her yukarıdaki özel durumlar, işleyici üye işlevin adını belirtmeniz gerekir. Diğer durumlarda, işleyici işlevi için standart adı kullanmanız gerekir.  
   
- İşlev adı veya işlev adıyla altında parametreleri anlamları ve işlevlerin dönüş değerleri belgelenen **üzerinde** etkileşimlidir. Örneğin, **CtlColor** belgelenen `OnCtlColor`. Birkaç yansıtılan ileti işleyicileri üst penceresinde benzer işleyicileri sayısından daha az sayıda parametre gerekir. Yalnızca aşağıdaki tabloda adlarla belgelerinde biçimsel parametresi adları ile eşleşir.  
+ İşlev adı veya işlev adıyla altında parametreleri anlamları ve işlevlerin dönüş değerleri belgelenen *üzerinde* etkileşimlidir. Örneğin, `CtlColor` belgelenen `OnCtlColor`. Birkaç yansıtılan ileti işleyicileri üst penceresinde benzer işleyicileri sayısından daha az sayıda parametre gerekir. Yalnızca aşağıdaki tabloda adlarla belgelerinde biçimsel parametresi adları ile eşleşir.  
   
 |Eşleme girişi|İşlev prototipi|  
 |---------------|------------------------|  
@@ -110,7 +110,7 @@ ms.locfileid: "33384970"
 |**ON_WM_VSCROLL_REFLECT)**|**afx_msg void VScroll (UINT** `nSBCode` **, UINT** `nPos` **);**|  
 |**ON_WM_PARENTNOTIFY_REFLECT)**|**afx_msg void ParentNotify (UINT** `message` **, LPARAM** `lParam` **);**|  
   
- **On_notıfy_reflect** ve **ON_CONTROL_REFLECT** makroları (örneğin, Denetim ve kendi üst) birden fazla nesne belirli bir ileti işlemeye izin Çeşitlemeler vardır.  
+ On_notıfy_reflect ve ON_CONTROL_REFLECT makroları (örneğin, Denetim ve kendi üst) birden fazla nesne belirli bir ileti işlemeye izin Çeşitlemeler vardır.  
   
 |Eşleme girişi|İşlev prototipi|  
 |---------------|------------------------|  
@@ -128,7 +128,7 @@ ms.locfileid: "33384970"
   
 2.  Visual C++ yüklenen projenizle ClassWizard adlı yeni bir sınıf oluşturmak için kullanın. `CYellowEdit` göre `CEdit`.  
   
-3.  Üç üye değişkenleri ekleyip, `CYellowEdit` sınıfı. İlk iki olacaktır **COLORREF** metin rengini ve arka plan rengini tutması için değişkenleri. Üçüncü olacak bir `CBrush` arka plan boyama için fırça tutacak nesne. `CBrush` Nesne sağlar, bir kez, yalnızca bundan sonra başvuran Fırça oluşturma ve fırça otomatik olarak ne zaman yok etmek için `CYellowEdit` denetim yok.  
+3.  Üç üye değişkenleri ekleyip, `CYellowEdit` sınıfı. İlk iki olacaktır *COLORREF* metin rengini ve arka plan rengini tutması için değişkenleri. Üçüncü olacak bir `CBrush` arka plan boyama için fırça tutacak nesne. `CBrush` Nesne sağlar, bir kez, yalnızca bundan sonra başvuran Fırça oluşturma ve fırça otomatik olarak ne zaman yok etmek için `CYellowEdit` denetim yok.  
   
 4.  Üye değişkenleri Oluşturucusu gibi yazarak başlatın:  
   
@@ -148,7 +148,7 @@ ms.locfileid: "33384970"
  }  
  ```  
   
-5.  ClassWizard, kullanarak yansıtılan için bir işleyici ekleyin `WM_CTLCOLOR` için ileti, `CYellowEdit` sınıfı. İleti adı işleyebilir iletiler listesinde önünde eşittir işareti ileti yansıtılır olduğuna dikkat edin. Bu açıklanan [yansıtılan bir ileti için ileti işleyicisi tanımlama](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md).  
+5.  ClassWizard, kullanarak yansıtılan WM_CTLCOLOR iletisi için bir işleyici ekleyin, `CYellowEdit` sınıfı. İleti adı işleyebilir iletiler listesinde önünde eşittir işareti ileti yansıtılır olduğuna dikkat edin. Bu açıklanan [yansıtılan bir ileti için ileti işleyicisi tanımlama](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md).  
   
      ClassWizard sizin için aşağıdaki ileti eşleme makrosu ve çatıyı işlevi ekler:  
   

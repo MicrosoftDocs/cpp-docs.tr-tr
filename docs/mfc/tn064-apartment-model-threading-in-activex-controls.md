@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 515103fc66ad221a3806fc101dcbc01f507ef535
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a706c927a7aacaf69091d6b448e00bd7938c265f
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383194"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36950441"
 ---
 # <a name="tn064-apartment-model-threading-in-activex-controls"></a>TN064: ActiveX Denetimlerinde Durum Modeli İş Parçacığı Oluşturma
 > [!NOTE]
@@ -46,7 +46,7 @@ ms.locfileid: "33383194"
  Apartman modeli iş parçacığı oluşturma etkinleştirme özellikle çok az kayıpla veya hiç paylaşılan veri varsa çoğu denetimler için kolay bir işlemdir.  
   
 ## <a name="protecting-shared-data"></a>Paylaşılan veri koruma  
- Paylaşılan veri denetiminizi kullanıyorsa, statik üye değişkeni gibi verileri birden çok iş parçacığı aynı anda verileri değiştirmesini önlemek için önemli bir bölümü ile korunması gereken erişim sağlar. Bu amaç için önemli bir bölümünü ayarlamak için bir statik üye değişkeni sınıfının bildirme `CCriticalSection` denetiminizin sınıfında. Kullanım `Lock` ve **Unlock** kritik bu bölümün üye işlevleri, kodunuzu Paylaşılan verilere erişen her yerde nesne.  
+ Paylaşılan veri denetiminizi kullanıyorsa, statik üye değişkeni gibi verileri birden çok iş parçacığı aynı anda verileri değiştirmesini önlemek için önemli bir bölümü ile korunması gereken erişim sağlar. Bu amaç için önemli bir bölümünü ayarlamak için bir statik üye değişkeni sınıfının bildirme `CCriticalSection` denetiminizin sınıfında. Kullanım `Lock` ve `Unlock` kritik bu bölümün üye işlevleri, kodunuzu Paylaşılan verilere erişen her yerde nesne.  
   
  , Örneğin, tüm örnekleri tarafından paylaşılan bir dize korumak için gereken bir denetim sınıfı göz önünde bulundurun. Bu dize bir statik üye değişkeni korunur ve önemli bir bölümü tarafından korumalı. Denetimin sınıf bildirimi aşağıdakileri içerir:  
   
@@ -81,7 +81,7 @@ if (_strShared.Empty())
 ```  
   
 ## <a name="registering-an-apartment-model-aware-control"></a>Apartman modeli kullanmayan denetimi kaydetme  
- Apartman modeli iş parçacığı oluşturma desteği denetimleri belirtmek Bu yetenek kayıt adlandırılmış değeri "ThreadingModel" ekleyerek değerinde altında sınıfı kimliği kayıt defteri girdisini "Grup" ile *sınıf kimliği* \\ **Inprocserver32** anahtarı. Bu anahtar, denetim için otomatik olarak kaydedilecek neden olmak için geçmesi `afxRegApartmentThreading` altıncı parametrenin bayrağı `AfxOleRegisterControlClass`:  
+ Apartman modeli iş parçacığı oluşturma desteği denetimleri belirtmek Bu yetenek kayıt adlandırılmış değeri "ThreadingModel" ekleyerek değerinde altında sınıfı kimliği kayıt defteri girdisini "Grup" ile *sınıf kimliği* \\ **Inprocserver32** anahtarı. Bu anahtar, denetim için otomatik olarak kaydedilecek neden olmak için geçmesi *afxRegApartmentThreading* altıncı parametrenin bayrağı `AfxOleRegisterControlClass`:  
   
 ```  
 BOOL CSampleCtrl::CSampleCtrlFactory::UpdateRegistry(BOOL bRegister)  
@@ -108,9 +108,9 @@ BOOL CSampleCtrl::CSampleCtrlFactory::UpdateRegistry(BOOL bRegister)
   
  Denetim projenizi ControlWizard Visual c++ 4.1 veya sonraki bir sürümü tarafından oluşturulmuşsa bu bayrak zaten kodunuzda mevcut olacaktır. İş parçacığı modelini kaydettirmek hiçbir değişiklik gereklidir.  
   
- Projeniz ControlWizard önceki bir sürümü tarafından oluşturulmuşsa, mevcut kodunuzu altıncı parametre bir Boole değeri gerekir. Varolan parametresi TRUE ise, değiştirmek `afxRegInsertable | afxRegApartmentThreading`. Var olan parametre FALSE ise, değiştirmek `afxRegApartmentThreading`.  
+ Projeniz ControlWizard önceki bir sürümü tarafından oluşturulmuşsa, mevcut kodunuzu altıncı parametre bir Boole değeri gerekir. Varolan parametresi TRUE ise, değiştirmek *Afxregınsertable | afxRegApartmentThreading*. Var olan parametre FALSE ise, değiştirmek *afxRegApartmentThreading*.  
   
- Denetim apartman modeli iş parçacığı oluşturma kuralları izlemiyorsa değil, geçmelidir `afxRegApartmentThreading` bu parametrede.  
+ Denetim apartman modeli iş parçacığı oluşturma kuralları izlemiyorsa değil, geçmelidir *afxRegApartmentThreading* bu parametrede.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   

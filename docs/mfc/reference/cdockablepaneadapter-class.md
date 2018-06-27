@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea3a2cb6c3d9a454c33654254fb751bfc8679696
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ce1fc576bb37a76a2dafdee47546fdf0dd49fddb
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367298"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951039"
 ---
 # <a name="cdockablepaneadapter-class"></a>CDockablePaneAdapter sınıfı
 İçin yerleşik destek sağlar `CWnd`-bölmeleri türetilmiş.  
@@ -90,13 +90,13 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Profil adı.  
   
- [in] `nIndex`  
+ [in] *nIndex*  
  Profil dizini.  
   
- [in] `uiID`  
+ [in] *uiID*  
  Bölmesinde kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -114,13 +114,13 @@ virtual BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Profil adı.  
   
- [in] `nIndex`  
+ [in] *nIndex*  
  Profil dizini (varsayılan pencere denetim kimliği olarak).  
   
- [in] `uiID`  
+ [in] *uiID*  
  Bölmesinde kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -135,7 +135,7 @@ virtual BOOL SetWrappedWnd(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Pencerenin sarmalamak bölmesinde bağdaştırıcısı için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

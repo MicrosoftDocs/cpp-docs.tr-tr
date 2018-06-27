@@ -24,22 +24,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1d5cc113177a9653e709c14f66682959276e7ca
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6744b4c5ea2da1f572ad721f980f719bb9b25af8
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385332"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953008"
 ---
 # <a name="tn031-control-bars"></a>TN031: Denetim Çubukları
 > [!NOTE]
 >  İlk çevrimiçi belgelerinde eklenmiştir beri aşağıdaki Teknik Not güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konuları güncel veya yanlış olması olabilir. En son bilgiler için çevrimiçi belgeleri dizindeki ilgi konuyu aramak önerilir.  
   
- MFC içinde denetim çubuğu sınıfları bu not açıklar: Genel [CControlBar](#_mfcnotes_ccontrolbar), [CStatusBar](#_mfcnotes_cstatusbar), [CToolBar](#_mfcnotes_ctoolbar), [CDialogBar](#_mfcnotes_cdialogbar)ve  **CDockBar**.  
+ MFC içinde denetim çubuğu sınıfları bu not açıklar: Genel [CControlBar](#_mfcnotes_ccontrolbar), [CStatusBar](#_mfcnotes_cstatusbar), [CToolBar](#_mfcnotes_ctoolbar), [CDialogBar](#_mfcnotes_cdialogbar)ve `CDockBar`.  
   
 ## <a name="_mfcnotes_ccontrolbar"></a> CControlBar 
   
- A **ControlBar** olan bir `CWnd`-türetilen, sınıf:  
+ A `ControlBar` olan bir `CWnd`-türetilen, sınıf:  
   
 -   Üst veya alt çerçeve penceresi hizalanır.  
   
@@ -47,11 +47,11 @@ ms.locfileid: "33385332"
   
  Denetim çubukları ek stillerini destekler:  
   
-- `CBRS_TOP` (Varsayılan) üst denetim çubuğuna Sabitle.  
+- Denetim çubuğu üstüne PIN CBRS_TOP (varsayılan).  
   
-- `CBRS_BOTTOM` Denetim çubuğu altına sabitleyin.  
+- CBRS_BOTTOM PIN altına denetim çubuğu.  
   
-- `CBRS_NOALIGN` Denetim çubuğu üst yeniden boyutlandırır olduğunda yeniden konumlandırmak değil.  
+- CBRS_NOALIGN yapmak değil yeniden konumlandırmak denetim çubuğunun üst yeniden boyutlandırır olduğunda.  
   
  Türetilmiş sınıflar `CControlBar` daha ilginç uygulamaları sağlayın:  
   
@@ -61,9 +61,9 @@ ms.locfileid: "33385332"
   
 - `CDialogBar` Standart windows içeren bir araç benzeri çerçevesi denetimleri (bir iletişim şablonunu kaynaktan oluşturulur).  
   
-- **CDockBar** genelleştirilmiş bir yerleştirme alanında diğer `CControlBar` türetilmiş nesneleri. Özel üye işlevleri ve değişkenler bu sınıfta kullanılabilir gelecek sürümlerde değişmesi olasılığı olan.  
+- `CDockBar` Genelleştirilmiş bir yerleştirme alanında diğer `CControlBar` türetilmiş nesneleri. Özel üye işlevleri ve değişkenler bu sınıfta kullanılabilir gelecek sürümlerde değişmesi olasılığı olan.  
   
- Tüm denetim çubuğu nesneleri/windows bazı üst çerçeve penceresinin alt öğe pencerelerini olacaktır. Bunlar genellikle bir eşdüzeyi (örneğin, bir MDI istemci veya Görünüm) çerçeve istemci alanına eklenir. Denetim çubuğu alt pencere Kimliğini önemlidir. Denetim çubuğu varsayılan düzenini yalnızca aralığında denetim çubukları kimlikleri için çalışır **AFX_IDW_CONTROLBAR_FIRST** için **AFX_IDW_CONTROLBAR_LAST**. 256 denetimi aralığını olsa bile unutmayın doğrudan Baskı Önizleme mimarisi tarafından desteklenen beri kimlikleri, bu denetim çubuğunun ilk 32 kimlikleri özel.  
+ Tüm denetim çubuğu nesneleri/windows bazı üst çerçeve penceresinin alt öğe pencerelerini olacaktır. Bunlar genellikle bir eşdüzeyi (örneğin, bir MDI istemci veya Görünüm) çerçeve istemci alanına eklenir. Denetim çubuğu alt pencere Kimliğini önemlidir. Denetim çubuğu varsayılan düzenini yalnızca denetim çubukları aralığı AFX_IDW_CONTROLBAR_FIRST AFX_IDW_CONTROLBAR_LAST için kimlikleri için çalışır. 256 denetimi aralığını olsa bile unutmayın doğrudan Baskı Önizleme mimarisi tarafından desteklenen beri kimlikleri, bu denetim çubuğunun ilk 32 kimlikleri özel.  
   
  `CControlBar` Sınıfı için standart uygulaması sağlar:  
   
@@ -73,10 +73,10 @@ ms.locfileid: "33385332"
   
 -   Türetilen sınıflar uyarlamasını destekleme.  
   
- C++ denetim çubuğu genellikle katıştırılmış nesneler üye olarak bir `CFrameWnd` türetilmiş sınıf ve zaman temizlenecek üst `HWND` ve nesnesi kaybolur. Denetim çubuğu nesnesi yığınındaki ayırma ihtiyacınız varsa, sadece ayarlayabileceğiniz **m_bAutoDestruct** üyesine **TRUE** denetim çubuğu yapmak için "**bu silme**" olduğunda `HWND` yok.  
+ C++ denetim çubuğu genellikle katıştırılmış nesneler üye olarak bir `CFrameWnd` türetilmiş sınıf ve zaman temizlenecek üst `HWND` ve nesnesi kaybolur. Denetim çubuğu nesnesi yığınındaki ayırma ihtiyacınız varsa, sadece ayarlayabileceğiniz *m_bAutoDestruct* üyesine **TRUE** denetim çubuğu yapmak için "**bu silme**" olduğunda `HWND` yok.  
   
 > [!NOTE]
->  Kendi oluşturursanız `CControlBar`-yerine MFC'nin birini kullanarak türetilmiş gibi sınıfları, türetilmiş sınıf, `CStatusBar`, `CToolBar`, veya `CDialogBar`, ayarlamanız gerekir `m_dwStyle` veri üyesi. Bu geçersiz kılma yapılabilir **oluşturma**:  
+>  Kendi oluşturursanız `CControlBar`-yerine MFC'nin birini kullanarak türetilmiş gibi sınıfları, türetilmiş sınıf, `CStatusBar`, `CToolBar`, veya `CDialogBar`, ayarlamanız gerekir *m_dwStyle* veri üyesi. Bu geçersiz kılma yapılabilir `Create`:  
   
 ```  
 // CMyControlBar is derived from CControlBar  
@@ -94,11 +94,11 @@ BOOL CMyControlBar::Create(CWnd* pParentWnd,
   
  **Denetim çubuğu düzeni algoritmasını**  
   
- Denetim çubuğu düzeni algoritmasını çok kolaydır. Çerçeve penceresi ileti gönderir **WM_SIZEPARENT** denetim çubuğu aralığındaki tüm alt öğeleri için. Bu ileti yanı sıra, üst öğenin istemci dikdörtgen bir işaretçi geçirilir. Bu ileti Z düzeninde alt gönderilir. Denetim çubuğu alt kendilerini getirin ve üst öğenin istemci alanının boyutunu azaltmak için bu bilgileri kullanın. (Daha az denetim çubukları) normal istemci alanı için sol son dikdörtgen ana istemci pencerede (genellikle bir MDI istemci, görünümü veya Bölümlendirici pencere) yerleştirmek için kullanılır.  
+ Denetim çubuğu düzeni algoritmasını çok kolaydır. Çerçeve penceresi denetim çubuğu aralığındaki tüm alt öğeleri WM_SIZEPARENT bir ileti gönderir. Bu ileti yanı sıra, üst öğenin istemci dikdörtgen bir işaretçi geçirilir. Bu ileti Z düzeninde alt gönderilir. Denetim çubuğu alt kendilerini getirin ve üst öğenin istemci alanının boyutunu azaltmak için bu bilgileri kullanın. (Daha az denetim çubukları) normal istemci alanı için sol son dikdörtgen ana istemci pencerede (genellikle bir MDI istemci, görünümü veya Bölümlendirici pencere) yerleştirmek için kullanılır.  
   
  Bkz: `CWnd::RepositionBars` ve `CFrameWnd::RecalcLayout` daha fazla ayrıntı için.  
   
- Dahil olmak üzere MFC özel Windows iletiler, **WM_SIZEPARENT**, belgelenmiştir [Teknik Not 24](../mfc/tn024-mfc-defined-messages-and-resources.md).  
+ WM_SIZEPARENT, dahil olmak üzere MFC özel Windows iletiler, konusunda belgelenir [Teknik Not 24](../mfc/tn024-mfc-defined-messages-and-resources.md).  
   
 ## <a name="_mfcnotes_cstatusbar"></a>  CStatusBar  
   
@@ -118,20 +118,20 @@ BOOL CMyControlBar::Create(CWnd* pParentWnd,
   
 |Öğe|Windows renk değeri|Varsayılan RGB|  
 |----------|-------------------------|-----------------|  
-|Durum çubuğu arka plan|**COLOR_BTNFACE**|RGB (192, 192, 192)|  
-|Durum çubuğu metni|**COLOR_BTNTEXT**|RGB (000 000, 000)|  
-|Durum çubuğu sol üst kenarları|**COLOR_BTNHIGHLIGHT**|RGB (255 255, 255)|  
-|Durum çubuğu bot/sağ kenarları|**COLOR_BTNSHADOW**|RGB (128, 128, 128)|  
+|Durum çubuğu arka plan|COLOR_BTNFACE|RGB (192, 192, 192)|  
+|Durum çubuğu metni|COLOR_BTNTEXT|RGB (000 000, 000)|  
+|Durum çubuğu sol üst kenarları|COLOR_BTNHIGHLIGHT|RGB (255 255, 255)|  
+|Durum çubuğu bot/sağ kenarları|COLOR_BTNSHADOW|RGB (128, 128, 128)|  
   
  **CStatusBar Ccmduı desteği**  
   
- Göstergeleri genellikle güncelleştirilmiş yolunu `ON_UPDATE_COMMAND_UI` mekanizması. Boşta kalma süresi üzerinde durum çubuğu çağıracak `ON_UPDATE_COMMAND_UI` işleyici gösterge bölmesindeki dize kimliği.  
+ Göstergeleri genellikle güncelleştirilir on_update_command_uı mekanizma yoludur. Boşta kalma süresi üzerinde durum çubuğu gösterge bölmesindeki dize kimliği on_update_command_uı işleyiciyi çağırır.  
   
- `ON_UPDATE_COMMAND_UI` İşleyici çağırabilirsiniz:  
+ On_update_command_uı işleyici çağırabilirsiniz:  
   
-- **Etkinleştirme**: etkinleştirme veya devre dışı bölmesi. Devre dışı bırakılmış bir bölme tam olarak bir etkin bölmesi gibi görünüyor, ancak metin görünmezdir (diğer bir deyişle, metin göstergesi devre dışı bırakır).  
+- `Enable`: Etkinleştirmek veya devre dışı bölmesi için. Devre dışı bırakılmış bir bölme tam olarak bir etkin bölmesi gibi görünüyor, ancak metin görünmezdir (diğer bir deyişle, metin göstergesi devre dışı bırakır).  
   
-- **SetText**: metni değiştirmek için. Bölmesinde değil otomatik olarak yeniden boyutlandırılır çünkü bu kullanırsanız, dikkatli olun.  
+- `SetText`: Metni değiştirmek için. Bölmesinde değil otomatik olarak yeniden boyutlandırılır çünkü bu kullanırsanız, dikkatli olun.  
   
  Sınıfa başvurmak [CStatusBar](../mfc/reference/cstatusbar-class.md) içinde *sınıf kitaplığı başvurusu* hakkındaki ayrıntılar için `CStatusBar` oluşturma ve özelleştirme API'leri. Durum çubukları çoğu özelleştirmesini durum çubuğu başlangıçta görünür hale gelir önce yapılmalıdır.  
   
@@ -139,7 +139,7 @@ BOOL CMyControlBar::Create(CWnd* pParentWnd,
   
 ## <a name="_mfcnotes_ctoolbar"></a>  CToolBar  
   
- Bir araç çubuğu denetim çubuğu satır ayırıcı içerebilir bit eşlem düğmelerini bulunur. İki stili düğmelerinin desteklenir: pushbuttons ve onay kutusu düğmeler. Radyo Grup işlevlerini onay kutusunu düğmeleriyle oluşturulabilir ve `ON_UPDATE_COMMAND_UI`.  
+ Bir araç çubuğu denetim çubuğu satır ayırıcı içerebilir bit eşlem düğmelerini bulunur. İki stili düğmelerinin desteklenir: pushbuttons ve onay kutusu düğmeler. Radyo Grup işlevselliği, onay kutusunu düğmeleri ve on_update_command_uı oluşturulabilir.  
   
  Araç çubuğundaki tüm bit eşlem düğmeleri bir bit eşlem alınır. Bu bit eşlemi bir görüntü veya her düğme için karakter içermelidir. Genellikle bit eşlem görüntüleri/metindeki ekranda düzenleneceği aynı sırada sırasıdır. (Bu özelleştirme API'leri kullanılarak değiştirilebilir.)  
   
@@ -151,9 +151,9 @@ BOOL CMyControlBar::Create(CWnd* pParentWnd,
   
 |Öğe|Windows renk değeri|Varsayılan RGB|  
 |----------|-------------------------|-----------------|  
-|Araç çubuğu arka plan|**COLOR_BTNFACE**|RGB(192,192,192)|  
-|Sol üst kenarları araç çubuğu düğmeleri|**COLOR_BTNHIGHLIGHT**|RGB(255,255,255)|  
-|Bot/sağ kenarları araç çubuğu düğmeleri|**COLOR_BTNSHADOW**|RGB(128,128,128)|  
+|Araç çubuğu arka plan|COLOR_BTNFACE|RGB(192,192,192)|  
+|Sol üst kenarları araç çubuğu düğmeleri|COLOR_BTNHIGHLIGHT|RGB(255,255,255)|  
+|Bot/sağ kenarları araç çubuğu düğmeleri|COLOR_BTNSHADOW|RGB(128,128,128)|  
   
  Ayrıca, standart Windows düğmesi denetimleri gibi davranarak bit eşlem düğmeler nasıl. Bit eşlem kaynaktan ve yanıt sistem renkleri Denetim Masası'ndaki kullanıcı özelleştirme yanıtta bir değişiklik olarak yüklendiğinde bu yeniden renklendirme oluşur. Dikkatli kullanılması gereken şekilde araç bit eşlem aşağıdaki renkleri otomatik olarak nasıl. Bir kısmı nasıl, bit eşlem olmasını istemiyorsanız yakından eşlenen RGB değerleri birini benzeyen bir renk kullanın. Eşleme RGB değerleri tam göre yapılır.  
   
@@ -169,11 +169,11 @@ BOOL CMyControlBar::Create(CWnd* pParentWnd,
  API, kimlikleri, stiller, düğme ayarlamak için kullanılabilir özelleştirme ayırıcı genişlik ve hangi görüntü/karakter hangi düğmesi için kullanılır. Varsayılan olarak bu API'leri kullanın gerekmez.  
   
 ## <a name="ccmdui-support-for-ctoolbar"></a>CToolBar Ccmduı desteği  
- Araç çubuğu düğmeleri her zaman güncel yolunu `ON_UPDATE_COMMAND_UI` mekanizması. Boşta kalma süresi üzerinde araç çağıracak `ON_UPDATE_COMMAND_UI` işleyici bu düğme komut kimliği. `ON_UPDATE_COMMAND_UI` Ayırıcılar için çağrılmaz ancak pushbuttons ve onay kutusu düğmeleri için çağrılır.  
+ Araç çubuğu düğmeleri her zaman güncelleştirilir on_update_command_uı mekanizma yoludur. Boşta kalma süresi üzerinde araç bu düğme komut kimliği on_update_command_uı işleyiciyi çağırır. On_update_command_uı ayırıcılar için çağrılmaz ancak pushbuttons ve onay kutusu düğmeleri için çağrılır.  
   
- `ON_UPDATE_COMMAND_UI` İşleyici çağırabilirsiniz:  
+ On_update_command_uı işleyici çağırabilirsiniz:  
   
-- **Etkinleştirme**: etkinleştirmek veya düğmesi devre dışı bırakmak için. Bu eşit pushbuttons ve onay kutusu düğmeleri için çalışır.  
+- `Enable`: Etkinleştirmek veya düğmesini devre dışı bırak için. Bu eşit pushbuttons ve onay kutusu düğmeleri için çalışır.  
   
 - `SetCheck`: Bir düğme onay durumunu ayarlamak için. Bu araç çubuğu düğmesi için çağrılırken bir onay kutusu düğmesinde açar. `SetCheck` (işaretli) 0, 1 (işaretli) veya 2 (belirsiz) olabilen bir parametre alır  
   
@@ -181,9 +181,9 @@ BOOL CMyControlBar::Create(CWnd* pParentWnd,
   
  Onay kutusu düğmelerinin "AUTO" onay kutusunu düğme vardır; kullanıcı bunları bastığında diğer bir deyişle, bunlar hemen durumu değişir. Aşağı veya basılı durumu denetlenir. Bir düğme "belirsiz" durumuna değiştirmek için yerleşik kullanıcı arabirimi yolu yoktur; Bu kod yapılmalıdır.  
   
- API özelleştirme verilen araç çubuğu düğmesi durumunu değiştirmenize izin verecek, bu durumda tercihen değiştirmelisiniz `ON_UPDATE_COMMAND_UI` araç çubuğu düğmesi nesnesini temsil eden komutu için işleyici. Unutmayın, boşta işleme araç çubuğu düğmeleri ile durumunu değiştirir `ON_UPDATE_COMMAND_UI` SetButtonStyle yapılan bu durumu değişiklikleri sonra sonraki kayıp alabilirsiniz şekilde işleyici boş.  
+ API özelleştirme verilen araç çubuğu düğmesi durumunu değiştirmenize izin verecek, tercihen bu durumlar araç çubuğu düğmesi nesnesini temsil eden komutu için on_update_command_uı işleyicisinde değiştirmeniz gerekir. Unutmayın, boşta işleme, araç çubuğu düğmeleri on_update_command_uı işleyici ile durumunu değiştirir, bu durumu SetButtonStyle yapılan değişiklikler sonraki sonra kayıp alabilirsiniz şekilde boş.  
   
- Araç çubuğu düğmeleri gönderecek **WM_COMMAND** iletileri normal düğmeleri veya menü öğeleri gibi ve normal şekilde tarafından işlenen bir `ON_COMMAND` sağlayan aynı sınıf işleyicisinde `ON_UPDATE_COMMAND_UI` işleyicisi.  
+ Araç çubuğu düğmeleri normalde on_update_command_uı işleyicisi sağlar aynı sınıfta bir ON_COMMAND işleyicisi tarafından işlenir ve normal düğmeleri veya menü öğeleri gibi WM_COMMAND iletileri gönderir.  
   
  Görüntü durumları için kullanılan dört araç çubuğu düğmesi stilleri (TBBS_ değerler) vardır:  
   
@@ -214,14 +214,14 @@ BOOL CMyControlBar::Create(CWnd* pParentWnd,
   
  A `CDialogBar` standart basma düğmesi denetimleri içeren Baskı Önizleme araç için kullanılır.  
   
- Kullanarak bir `CDialogBar` kullanmaktır gibi bir `CFormView`. İletişim çubuğu için bir iletişim şablonunu tanımlayın ve dışındaki tüm stilleri kaldırmak **WS_CHILD**. İletişim kutusu görünür olmamalıdır unutmayın.  
+ Kullanarak bir `CDialogBar` kullanmaktır gibi bir `CFormView`. İletişim kutusu çubuğu için bir iletişim şablonunu tanımlayın ve WS_CHILD dışındaki tüm stilleri kaldırmanız gerekir. İletişim kutusu görünür olmamalıdır unutmayın.  
   
  Denetim bildirimleri için bir `CDialogBar` (gibi araç çubuğu düğmeleri) denetim çubuğunun üst gönderilir.  
   
 ## <a name="ccmdui-support-for-cdialogbar"></a>CDialogBar Ccmduı desteği  
- İletişim kutusu çubuğu düğmelerini aracılığıyla güncelleştirilmesi gerektiğini `ON_UPDATE_COMMAND_UI` işleyici mekanizması. Boşta kalma zaman iletişim çubuğu çağıracak `ON_UPDATE_COMMAND_UI` komut Kimliğini bir Kimliğe sahip tüm düğmelerini işleyiciyle > = 0x8000 (diğer bir deyişle, komut kimlikleri aralığındaki).  
+ İletişim kutusu çubuğu düğmelerini on_update_command_uı işleyici mekanizma güncelleştirilmesi gerekir. Boşta kalma zaman iletişim çubuğu bir Kimliğe sahip tüm düğmeleri komut kimliği on_update_command_uı işleyiciyi çağırır > = 0x8000 (diğer bir deyişle, komut kimlikleri aralığındaki).  
   
- `ON_UPDATE_COMMAND_UI` İşleyici çağırabilirsiniz:  
+ On_update_command_uı işleyici çağırabilirsiniz:  
   
 -   Etkinleştirme: için etkinleştirme veya devre dışı bırakma düğmesi.  
   

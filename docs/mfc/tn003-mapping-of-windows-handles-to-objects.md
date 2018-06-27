@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc8658868c36008c5ed6b9db9747eb63ae37e4d2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b2be47da802fd1168ec7b43c2f7701351b3c88d8
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382979"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951514"
 ---
 # <a name="tn003-mapping-of-windows-handles-to-objects"></a>TN003: Pencere İşleyicilerini Nesnelere Eşleme
 MFC bu not açıklar Windows eşlemesi destek yordamları C++ nesneleri işleyicilerine nesne.  
@@ -56,15 +56,15 @@ MFC bu not açıklar Windows eşlemesi destek yordamları C++ nesneleri işleyic
   
 -   YUVA ([CSocket](../mfc/reference/csocket-class.md))  
   
- Bu nesnelerin herhangi biri için bir tanıtıcı verilen tanıtıcı statik yöntemini çağırarak sarmalar MFC nesne bulabilirsiniz `FromHandle`. Örneğin, adında bir HWND verilen `hWnd`, aşağıdaki satırı için bir işaretçi döndürülecek `CWnd` , sarmalar `hWnd`:  
+ Bu nesnelerin herhangi biri için bir tanıtıcı verilen tanıtıcı statik yöntemini çağırarak sarmalar MFC nesne bulabilirsiniz `FromHandle`. Örneğin, adında bir HWND verilen *hWnd*, aşağıdaki satırı için bir işaretçi döndürülecek `CWnd` , sarmalar *hWnd*:  
   
 ```  
 CWnd::FromHandle(hWnd)  
 ```  
   
- Varsa `hWnd` geçici bir özel uyarlama nesnesi yok `CWnd` sarmalamak için oluşturulan `hWnd`. Geçerli bir C++ nesnesi herhangi bir tutamacı almak mümkün kılar.  
+ Varsa *hWnd* geçici bir özel uyarlama nesnesi yok `CWnd` sarmalamak için oluşturulan *hWnd*. Geçerli bir C++ nesnesi herhangi bir tutamacı almak mümkün kılar.  
   
- Bir sarmalayıcı nesnesini oluşturduktan sonra tanıtıcısını bir sarmalayıcı sınıfı ortak üye değişkeninden alabilir. Durumunda bir `CWnd`, `m_hWnd` bu nesne için HWND içerir.  
+ Bir sarmalayıcı nesnesini oluşturduktan sonra tanıtıcısını bir sarmalayıcı sınıfı ortak üye değişkeninden alabilir. Durumunda bir `CWnd`, *m_hWnd* bu nesne için HWND içerir.  
   
 ## <a name="attaching-handles-to-mfc-objects"></a>MFC nesneleri tanıtıcıları ekleme  
  Yeni oluşturulan tanıtıcı sarmalayıcı nesnesine ve bir tanıtıcı Windows nesnesine verilen, çağırarak iki ilişkilendirebilirsiniz `Attach` işlev bu örnekteki:  
@@ -74,7 +74,7 @@ CWnd myWnd;
 myWnd.Attach(hWnd);
 ```  
   
- Bu ilişkilendirme kalıcı eşlemesine bir giriş yapar `myWnd` ve `hWnd`. Çağırma `CWnd::FromHandle(hWnd)` gösteren bir işaretçi şimdi döndürülecek `myWnd`. Zaman `myWnd` olduğu silinmiş yıkıcı otomatik olarak silecektir `hWnd` Windows çağırarak [DestroyWindow](http://msdn.microsoft.com/library/windows/desktop/ms632682) işlevi. Bu değil istenirse, `hWnd` gelen ayrılmış olmalıdır `myWnd` önce `myWnd` yok (normalde kapsamda ayrılırken `myWnd` tanımlandı). `Detach` Yöntemi bunu yapar.  
+ Bu ilişkilendirme kalıcı eşlemesine bir giriş yapar *myWnd* ve *hWnd*. Çağırma `CWnd::FromHandle(hWnd)` gösteren bir işaretçi şimdi döndürülecek *myWnd*. Zaman *myWnd* olduğu silinmiş yıkıcı otomatik olarak silecektir *hWnd* Windows çağırarak [DestroyWindow](http://msdn.microsoft.com/library/windows/desktop/ms632682) işlevi. Bu değil istenirse, *hWnd* gelen ayrılmış olmalıdır *myWnd* önce *myWnd* yok (normalde kapsamda ayrılırken *myWnd*tanımlandı). `Detach` Yöntemi bunu yapar.  
   
 ```  
 myWnd.Detach();

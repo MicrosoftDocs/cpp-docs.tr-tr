@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c374e0d14375450533326be5fd406fe8147e475a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7c23e0a978ab8cb3c63566bd8d5ce64ecb2a80d4
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385384"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952421"
 ---
 # <a name="tn035-using-multiple-resource-files-and-header-files-with-visual-c"></a>TN035: Visual C++'da Birden Fazla Kaynak Dosya ve Üstbilgi Dosyası Kullanma
 > [!NOTE]
@@ -227,7 +227,7 @@ RESOURCE.H     AFXRES.H
 #endif //APSTUDIO_INVOKED  
 ```  
   
- Visual C++ zaman derler. RC dosya tanımladığı **APSTUDIO_INVOKED** yanı **RC_INVOKED**. AppWizard oluşturulan dosya yapısı bozuk ve Visual C++ #error satırla okur, önemli bir hata raporları ve okunması durdurulacak. RC dosyası.  
+ Visual C++ zaman derler. RC dosya tanımladığı `APSTUDIO_INVOKED` yanı `RC_INVOKED`. AppWizard oluşturulan dosya yapısı bozuk ve Visual C++ #error satırla okur, önemli bir hata raporları ve okunması durdurulacak. RC dosyası.  
   
  **Birden çok Visual tarafından C++ düzenlenebilir paylaşılan semboller yönetme. RC dosyaları**  
   
@@ -262,19 +262,19 @@ MYSTRS.H   / MYSHARED.H  \  MYMENUS.H
 #define _APS_NEXT_SYMED_VALUE     101  
 ```  
   
- **_APS_NEXT_RESOURCE_VALUE** iletişim kutusu kaynağı, menü kaynağı ve benzeri için kullanılacak sonraki simge değerdir. Kaynak sembol değerleri için geçerli aralık 1 için 0x6FFF ' dir.  
+ `_APS_NEXT_RESOURCE_VALUE` iletişim kutusu kaynağı, menü kaynağı ve benzeri için kullanılacak sonraki simge değerdir. Kaynak sembol değerleri için geçerli aralık 1 için 0x6FFF ' dir.  
   
- **_APS_NEXT_COMMAND_VALUE** komutu tanımlama için kullanılacak sonraki simge değerdir. Geçerli komut sembol değerleri için 0x8000 0xDFFF arasındadır.  
+ `_APS_NEXT_COMMAND_VALUE` bir komut kimliği için kullanılacak sonraki simge değerdir. Geçerli komut sembol değerleri için 0x8000 0xDFFF arasındadır.  
   
- **_APS_NEXT_CONTROL_VALUE** iletişim denetim için kullanılacak sonraki simge değerdir. Geçerli iletişim denetim sembol değerleri için 8 0xDFFF arasındadır.  
+ `_APS_NEXT_CONTROL_VALUE` bir iletişim kutusu denetim için kullanılacak sonraki simge değerdir. Geçerli iletişim denetim sembol değerleri için 8 0xDFFF arasındadır.  
   
- **_APS_NEXT_SYMED_VALUE** simgesi tarayıcıda yeni komutunu kullanarak bir sembol değeri el ile atamanız verilecek sonraki simge değer.  
+ `_APS_NEXT_SYMED_VALUE` Sembol değeri el ile atamanız verilecek sonraki simge değer simge tarayıcıda yeni komutu kullanıyor.  
   
  Visual C++ başlatır biraz daha yüksek değerleri düşük hukuk ne zaman değeri ile yeni bir oluşturuluyor. RC dosyası. AppWizard de bu değerleri MFC uygulamaları için daha uygun bir şey başlatacak. ID değeri aralıkları hakkında daha fazla bilgi için bkz: [Teknik Not 20](../mfc/tn020-id-naming-and-numbering-conventions.md).  
   
- Her zaman bile aynı projede yeni bir kaynak dosyası oluşturun, Visual C++ aynı tanımlar artık **_APS_NEXT\_**  değerleri. Bu, söyleyin, eklerseniz, birden çok farklı iki iletişim kutuları, anlamına gelir. RC dosyaları, yüksek oranda büyük olasılıkla, aynı #define değeri farklı iletişim kutuları için atanacaktır. Örneğin, ilk IDD_MY_DLG1. RC dosya atanabilir aynı numarası, 101, ikinci bir IDD_MY_DLG2 olarak. RC dosyası.  
+ Her zaman bile aynı projede yeni bir kaynak dosyası oluşturun, Visual C++ aynı tanımlar artık `_APS_NEXT_` değerleri. Bu, söyleyin, eklerseniz, birden çok farklı iki iletişim kutuları, anlamına gelir. RC dosyaları, yüksek oranda büyük olasılıkla, aynı #define değeri farklı iletişim kutuları için atanacaktır. Örneğin, ilk IDD_MY_DLG1. RC dosya atanabilir aynı numarası, 101, ikinci bir IDD_MY_DLG2 olarak. RC dosyası.  
   
- Bu durumu önlemek için her dört etki alanlarının kimlikleri ilgili için ayrı bir sayısal aralık ayırmak. RC dosyaları. El ile güncelleştirerek bunu **_APS_NEXT** her birinde değerleri. RC dosyaları `before` kaynakları eklemeye başlayın. Örneğin, ilk. RC dosyasını kullanan varsayılan **_APS_NEXT** değerleri aşağıdaki atamak isteyebilirsiniz sonra **_APS_NEXT** ikinci değerleri. RC dosyası:  
+ Bu durumu önlemek için her dört etki alanlarının kimlikleri ilgili için ayrı bir sayısal aralık ayırmak. RC dosyaları. El ile güncelleştirerek bunu `_APS_NEXT` her birinde değerleri. RC dosyaları **önce** kaynakları eklemeye başlayın. Örneğin, ilk. RC dosyasını kullanan varsayılan `_APS_NEXT` değerleri aşağıdaki atamak isteyebilirsiniz sonra `_APS_NEXT` ikinci değerleri. RC dosyası:  
   
 ```  
 #define _APS_NEXT_RESOURCE_VALUE  2000  

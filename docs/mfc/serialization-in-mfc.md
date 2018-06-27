@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd5cf36722dd1ed6ea96dd839bd0935d78df0b32
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b46dc8500543ce94b7d8d6a3415b22d019619d83
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381029"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952599"
 ---
 # <a name="serialization-in-mfc"></a>MFC'de Seri Hale Getirme
 Bu makalede, Microsoft Foundation Class Kitaplığı (arasında kalıcı nesnelere izin vermek için MFC) sağlanan seri hale getirme mekanizmasını, programı çalıştıran açıklanmaktadır.  
@@ -41,7 +41,7 @@ Bu makalede, Microsoft Foundation Class Kitaplığı (arasında kalıcı nesnele
 > [!NOTE]
 >  Aynı şey `CArchive` içindir genel amaçlı iostream sınıfları sınıfıyla biçimlendirilmiş yalnızca metin. `CArchive` İkili biçime serileştirilmiş nesneler için bir sınıftır.  
   
- İsterseniz, kalıcı veri depolama için kendi mekanizması oluşturmak için MFC serileştirilmesi atlayabilirsiniz. Seri hale getirme kullanıcının komut başlatmak sınıf üye işlevlerini geçersiz kılmak gerekir. Tartışmada bkz [Teknik Not 22](../mfc/tn022-standard-commands-implementation.md) , `ID_FILE_OPEN`, **ıd_fıle_save**, ve **ıd_fıle_save_as** standart komutları.  
+ İsterseniz, kalıcı veri depolama için kendi mekanizması oluşturmak için MFC serileştirilmesi atlayabilirsiniz. Seri hale getirme kullanıcının komut başlatmak sınıf üye işlevlerini geçersiz kılmak gerekir. Tartışmada bkz [Teknik Not 22](../mfc/tn022-standard-commands-implementation.md) ıd_fıle_open, ıd_fıle_save ve ıd_fıle_save_as standart komutu.  
   
  Aşağıdaki makaleler seri hale getirme için gereken iki ana görevleri kapsar:  
   

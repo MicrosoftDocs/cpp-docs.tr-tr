@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b67aa3345f8739714cb6758f8363c3d2054dd4e3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b8c96e83d15110cb85e23cd7a8643d615cf7c0d8
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355291"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952378"
 ---
 # <a name="cd2dgeometrysink-class"></a>CD2DGeometrySink sınıfı
 ID2D1GeometrySink için sarmalayıcı.  
@@ -125,7 +125,7 @@ void AddArc(const D2D1_ARC_SEGMENT& arc);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `arc`  
+ *Yay*  
  Yay segment şekle eklemek için  
   
 ##  <a name="addbezier"></a>  CD2DGeometrySink::AddBezier  
@@ -136,7 +136,7 @@ void AddBezier(const D2D1_BEZIER_SEGMENT& bezier);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bezier`  
+ *Bezier*  
  Denetim noktalarını ve uç noktası eklemek için Bezier eğrisinin açıklar yapısı.  
   
 ##  <a name="addbeziers"></a>  CD2DGeometrySink::AddBeziers  
@@ -149,7 +149,7 @@ void AddBeziers(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `beziers`  
+ *Beziers*  
  Bezier kesimleri oluşturmak için Bezier eğrileri açıklayan dizisi. Bir eğri dizideki ilk Bezier kesiminin uç noktasına geometri havuz ait geçerli noktası (bitiş noktası çizilmiş son kesimi veya BeginFigure tarafından belirtilen konumda) çizilir. dizi ek Bezier kesimleri içeriyorsa, her alt Bezier segment önceki Bezier kesiminin uç noktası, başlangıç noktası olarak kullanır.  
   
 ##  <a name="addline"></a>  CD2DGeometrySink::AddLine  
@@ -160,7 +160,7 @@ void AddLine(CD2DPointF point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `point`  
+ *Noktası*  
  Çizgiyi çizmek için bitiş noktası.  
   
 ##  <a name="addlines"></a>  CD2DGeometrySink::AddLines  
@@ -173,7 +173,7 @@ void AddLines(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `points`  
+ *Noktaları*  
  Satırlar çizme açıklayan bir veya daha fazla noktalar dizisi. Bir satır, geometri havuz ait geçerli noktası (bitiş noktası çizilmiş son kesimi veya BeginFigure tarafından belirtilen konumda), dizinin ilk noktanın kadar çizilir. dizi ek noktaları içeriyorsa, bir çizgi dizi ikinci noktaya üçüncü noktası vb. için ikinci noktasından ilk noktasından çizilir. Uç noktaları çizmek için satırlarının bir dizi bir dizi.  
   
 ##  <a name="addquadraticbezier"></a>  CD2DGeometrySink::AddQuadraticBezier  
@@ -184,7 +184,7 @@ void AddQuadraticBezier(const D2D1_QUADRATIC_BEZIER_SEGMENT& bezier);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bezier`  
+ *Bezier*  
  Denetim noktası ve bitiş noktası eklemek için ikinci derece Bezier eğrisinin açıklar yapısı.  
   
 ##  <a name="addquadraticbeziers"></a>  CD2DGeometrySink::AddQuadraticBeziers  
@@ -197,7 +197,7 @@ void AddQuadraticBeziers(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `beziers`  
+ *Beziers*  
  İkinci derece Bezier kesimleri bir dizi bir dizi.  
   
 ##  <a name="beginfigure"></a>  CD2DGeometrySink::BeginFigure  
@@ -210,10 +210,10 @@ void BeginFigure(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `startPoint`  
+ *startPoint*  
  Yeni şekil başlanan noktası.  
   
- `figureBegin`  
+ *figureBegin*  
  Yeni şekil boş veya dolu olması gerekir.  
   
 ##  <a name="cd2dgeometrysink"></a>  CD2DGeometrySink::CD2DGeometrySink  
@@ -224,7 +224,7 @@ CD2DGeometrySink(CD2DPathGeometry& pathGeometry);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pathGeometry`  
+ *pathGeometry*  
  Varolan bir CD2DPathGeometry nesne.  
   
 ##  <a name="close"></a>  CD2DGeometrySink::Close  
@@ -245,7 +245,7 @@ void EndFigure(D2D1_FIGURE_END figureEnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `figureEnd`  
+ *figureEnd*  
  Geçerli şekil kapalı olup olmadığını belirten bir değer. Şekil kapattıysanız, bir çizgi geçerli noktası BeginFigure tarafından belirtilen başlangıç noktası arasındaki çizilir.  
   
 ##  <a name="get"></a>  CD2DGeometrySink::get  
@@ -293,7 +293,7 @@ void SetFillMode(D2D1_FILL_MODE fillMode);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `fillMode`  
+ *fillMode*  
  Verilen bir noktaya geometrinin parçası olup olmadığını belirlemek için kullanılan yöntem.  
   
 ##  <a name="setsegmentflags"></a>  CD2DGeometrySink::SetSegmentFlags  
@@ -304,7 +304,7 @@ void SetSegmentFlags(D2D1_PATH_SEGMENT vertexFlags);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `vertexFlags`  
+ *vertexFlags*  
  Geometri havuzuna eklenen yeni kesimleri uygulanacak vuruş ve Birleştirme Seçenekleri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

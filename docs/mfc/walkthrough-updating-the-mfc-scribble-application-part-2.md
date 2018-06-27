@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eae1dd3c1662aafb6b52d2ecb821e073adc0bfd5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 83caf353ca4a45e3ae834a41062de955a91dbb8a
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385397"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952443"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>İzlenecek yol: MFC Karalama Uygulamasını Güncelleştirme (2. Bölüm)
 [Bölüm 1](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md) klasik bir Office Fluent Şerit ekleme gösterdi bu kılavuzun uygulama karalama. Bu bölümü Şerit paneller ve kullanıcıların menüleri ve komutları yerine kullanabileceğiniz denetimleri nasıl ekleneceğini gösterir.  
@@ -47,31 +47,31 @@ ms.locfileid: "33385397"
   
 #### <a name="to-add-a-view-panel-and-window-panel-to-the-ribbon-bar"></a>Bir görünüm paneliyle ve pencere Şerit çubuğuna eklemek için  
   
-1.  Adlı bir bölme oluşturmak `View`, araç çubuğu ve durum çubuğunu Değiştir iki onay kutularını sahiptir.  
+1.  Adlı bir bölme oluşturmak *Görünüm*, araç çubuğu ve durum çubuğunu Değiştir iki onay kutularını sahiptir.  
   
     1.  Gelen **araç**, sürükleyin bir **Masası** için **giriş** kategorisi. İki sürükleyin **onay kutularını** paneline.  
   
-    2.  Özelliklerini değiştirmek için Denetim Masası'ı tıklatın. Değişiklik **resim yazısı** için `View`.  
+    2.  Özelliklerini değiştirmek için Denetim Masası'ı tıklatın. Değişiklik **resim yazısı** için *Görünüm*.  
   
-    3.  Özelliklerini değiştirmek için onay kutusuna tıklayın. Değişiklik **kimliği** için `ID_VIEW_TOOLBAR` ve **resim yazısı** için `Toolbar`.  
+    3.  Özelliklerini değiştirmek için onay kutusuna tıklayın. Değişiklik **kimliği** için *ıd_vıew_toolbar* ve **resim yazısı** için *araç*.  
   
-    4.  Özelliklerini değiştirmek için ikinci onay kutusuna tıklayın. Değişiklik **kimliği** için `ID_VIEW_STATUS_BAR` ve **resim yazısı** için `Status Bar`.  
+    4.  Özelliklerini değiştirmek için ikinci onay kutusuna tıklayın. Değişiklik **kimliği** için *ıd_vıew_status_bar* ve **resim yazısı** için *durum çubuğu*.  
   
-2.  Adlı bir bölme oluşturmak `Window` Bölünmüş düğme vardır. Bir kullanıcı bölme düğmesine tıkladığında, bir kısayol menüsü karalama uygulamada önceden tanımlanmış üç komutları görüntüler.  
+2.  Adlı bir bölme oluşturmak *penceresi* Bölünmüş düğme vardır. Bir kullanıcı bölme düğmesine tıkladığında, bir kısayol menüsü karalama uygulamada önceden tanımlanmış üç komutları görüntüler.  
   
     1.  Gelen **araç**, sürükleyin bir **Masası** için **giriş** kategorisi. Ardından sürükleyin bir **düğmesini** paneline.  
   
-    2.  Özelliklerini değiştirmek için Denetim Masası'ı tıklatın. Değişiklik **resim yazısı** için `Window`.  
+    2.  Özelliklerini değiştirmek için Denetim Masası'ı tıklatın. Değişiklik **resim yazısı** için *penceresi*.  
   
-    3.  Düğmesini tıklatın. Değişiklik **resim yazısı** için `Windows`, **anahtarları** için `w`, **büyük görüntü dizini** için `1`, ve **ayırma modu** için `False`. Üç nokta düğmesine (**...** ) yanındaki **menü öğeleri** açmak için **öğeleri Düzenleyicisi** iletişim kutusu.  
+    3.  Düğmesini tıklatın. Değişiklik **resim yazısı** için *Windows*, **anahtarları** için *w*, **büyük görüntü dizini** için *1* , ve **ayırma modu** için *False*. Üç nokta düğmesine (**...** ) yanındaki **menü öğeleri** açmak için **öğeleri Düzenleyicisi** iletişim kutusu.  
   
     4.  Tıklatın **Ekle** üç düğme eklemek için üç kez.  
   
-    5.  İlk düğmesini tıklatın ve sonra değiştirmek **resim yazısı** için `New Window`, ve **kimliği** için `ID_WINDOW_NEW`.  
+    5.  İlk düğmesini tıklatın ve sonra değiştirmek **resim yazısı** için *yeni pencere*, ve **kimliği** için *ıd_wındow_new*.  
   
-    6.  İkinci düğmesini tıklatın ve sonra değiştirmek **resim yazısı** için `Cascade`, ve **kimliği** için `ID_WINDOW_CASCADE`.  
+    6.  İkinci düğmesini tıklatın ve sonra değiştirmek **resim yazısı** için *Cascade*, ve **kimliği** için *ıd_wındow_cascade*.  
   
-    7.  Üçüncü düğmesini tıklatın ve sonra değiştirmek **resim yazısı** için `Tile`, ve **kimliği** için `ID_WINDOW_TILE_HORZ`.  
+    7.  Üçüncü düğmesini tıklatın ve sonra değiştirmek **resim yazısı** için *döşeme*, ve **kimliği** için *ıd_wındow_tıle_horz*.  
   
 3.  Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. **Görünüm** ve **penceresi** paneller görüntülenmesi. Düğmeleri düzgün şekilde çalıştıklarının onaylamak için tıklatın.  
   
@@ -84,11 +84,11 @@ ms.locfileid: "33385397"
   
 1.  Gelen **araç**, sürükleyin bir **Masası** için **giriş** kategorisi. İki sürükleyin **düğmeleri** paneline.  
   
-2.  Özelliklerini değiştirmek için Denetim Masası'ı tıklatın. Değişiklik **resim yazısı** için `Help`.  
+2.  Özelliklerini değiştirmek için Denetim Masası'ı tıklatın. Değişiklik **resim yazısı** için *yardımcı*.  
   
-3.  İlk düğmesini tıklatın. Değişiklik **resim yazısı** için `Help Topics`, ve **kimliği** için `ID_HELP_FINDER`.  
+3.  İlk düğmesini tıklatın. Değişiklik **resim yazısı** için *Yardım konuları*, ve **kimliği** için *ID_HELP_FINDER*.  
   
-4.  İkinci düğmesini tıklatın. Değişiklik **resim yazısı** için `About Scribble...`, ve **kimliği** için `ID_APP_ABOUT`.  
+4.  İkinci düğmesini tıklatın. Değişiklik **resim yazısı** için *karalama hakkında...* , ve **kimliği** için *ıd_app_about*.  
   
 5.  Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. A **yardımcı** iki Şerit düğmeleri içeren paneli görüntülenmesi.  
   
@@ -106,21 +106,21 @@ ms.locfileid: "33385397"
   
 1.  Gelen **araç**, sürükleyin bir **Masası** için **giriş** kategorisi. Ardından sürükleyin bir **onay kutusunu** ve iki **birleşik giriş kutuları** paneline.  
   
-2.  Özelliklerini değiştirmek için Denetim Masası'ı tıklatın. Değişiklik **resim yazısı** için `Pen`.  
+2.  Özelliklerini değiştirmek için Denetim Masası'ı tıklatın. Değişiklik **resim yazısı** için *kalem*.  
   
-3.  Onay kutusuna tıklayın. Değişiklik **resim yazısı** için `Use Thick`, ve **kimliği** için `ID_PEN_THICK_OR_THIN`.  
+3.  Onay kutusuna tıklayın. Değişiklik **resim yazısı** için *kullanmak kalın*, ve **kimliği** için *ID_PEN_THICK_OR_THIN*.  
   
-4.  İlk açılan kutu'ı tıklatın. Değişiklik **resim yazısı** için `Thin Pen`, **kimliği** için `ID_PEN_THIN_WIDTH`, **metin** için `2`, **türü** için `Drop List`, ve **veri** için `1;2;3;4;5;6;7;8;9;`.  
+4.  İlk açılan kutu'ı tıklatın. Değişiklik **resim yazısı** için *ince kalem*, **kimliği** için *ID_PEN_THIN_WIDTH*, **metin** için *2* , **Türü** için *bırakma listesi*, ve **veri** için *1; 2; 3; 4; 5; 6; 7; 8; 9;*.  
   
-5.  İkinci birleşik giriş kutusu'ı tıklatın. Değişiklik **resim yazısı** için `Thick Pen`, **kimliği** için `ID_PEN_THICK_WIDTH`, **metin** için `5`, **türü** için `Drop List`, ve **veri** için `5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;`.  
+5.  İkinci birleşik giriş kutusu'ı tıklatın. Değişiklik **resim yazısı** için *kalın kalem*, **kimliği** için *ID_PEN_THICK_WIDTH*, **metin** için  *5*, **türü** için *bırakma listesi*, ve **veri** için *5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15; 16; 17; 18; 19; 20;*.  
   
 6.  Yeni birleşik giriş kutuları varolan tüm menü öğelerini karşılık gelmemelidir. Bu nedenle, her kalem seçeneği için bir menü öğesi oluşturmanız gerekir.  
   
     1.  İçinde **kaynak görünümü** penceresinde IDR_SCRIBBTYPE menü kaynağı açın.  
   
-    2.  Tıklatın **kalem** p açmak için**tr** menüsü. Ardından **burada türü** ve türü `Thi&n Pen`.  
+    2.  Tıklatın **kalem** p açmak için**tr** menüsü. Ardından **burada türü** ve türü *düzeltmeyi & n kalem*.  
   
-    3.  Açmak için yazdığınız metni sağ **özellikleri** penceresi ve değişiklik kimliği özelliğini `ID_PEN_THIN_WIDTH`.  
+    3.  Açmak için yazdığınız metni sağ **özellikleri** penceresi ve değişiklik kimliği özelliğini *ID_PEN_THIN_WIDTH*.  
   
     4.  Ayrıca her kalem menü öğesi için bir olay işleyicisi oluşturmanız gerekir. Sağ **düzeltmeyi & n kalem** yeni oluşturduğunuz ve ardından menü öğesi **olay işleyicisi ekleme**. **Olay işleyici Sihirbazı** görüntülenir.  
   
@@ -142,9 +142,9 @@ m_nThinWidth atoi = (pThinComboBox -> GetItem(nCurSel));
   
     1.  In the **Resource View** window, open the IDR_SCRIBBTYPE menu resource.  
   
-    2.  Click **Pen** to open the pen menu. Then click **Type Here** and type `Thic&k Pen`.  
+    2.  Click **Pen** to open the pen menu. Then click **Type Here** and type *Thic&k Pen*.  
   
-    3.  Right-click the text that you just typed to display the **Properties** window. Change the ID property to `ID_PEN_THICK_WIDTH`.  
+    3.  Right-click the text that you just typed to display the **Properties** window. Change the ID property to *ID_PEN_THICK_WIDTH*.  
   
     4.  Right-click the **Thick Pen** menu item that you just created and then click **Add Event Handler**. The **Event Handler Wizard** is displayed.  
   
@@ -178,11 +178,11 @@ if (nCurSel>= 0)
   
 #### <a name="to-add-a-color-button-to-the-pen-panel"></a>Bir renk düğmesi kalem paneline eklemek için  
   
-1.  Renk düğmesi eklemeden önce menü öğesi için oluşturun. İçinde **kaynak görünümü** penceresinde IDR_SCRIBBTYPE menü kaynağı açın. Tıklatın **kalem** kalem menüsünü açmak için menü öğesi. Ardından **burada türü** ve türü `&Color`. Görüntülenecek yazdığınız metni sağ **özellikleri** penceresi. Değişiklik kimliği `ID_PEN_COLOR`.  
+1.  Renk düğmesi eklemeden önce menü öğesi için oluşturun. İçinde **kaynak görünümü** penceresinde IDR_SCRIBBTYPE menü kaynağı açın. Tıklatın **kalem** kalem menüsünü açmak için menü öğesi. Ardından **burada türü** ve türü *& renk*. Görüntülenecek yazdığınız metni sağ **özellikleri** penceresi. Değişiklik kimliği *ID_PEN_COLOR*.  
   
 2.  Renk düğmesi. Şimdi ekleyin. Gelen **araç**, sürükleyin bir **renk düğmesi** için **kalem** paneli.  
   
-3.  Renk düğmesini tıklatın. Değişiklik **resim yazısı** için `Color`, **kimliği** için `ID_PEN_COLOR`, **SimpleLook** için `True`, **büyük görüntü dizini** için `1`, ve **ayırma modu** için `False`.  
+3.  Renk düğmesini tıklatın. Değişiklik **resim yazısı** için *renk*, **kimliği** için *ID_PEN_COLOR*, **SimpleLook** için  *Doğru*, **büyük görüntü dizini** için *1*, ve **ayırma modu** için *False*.  
   
 4.  Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. Yeni renk düğmesi görüntülenmesi gerekip **kalem** paneli. Ancak, bir olay işleyicisi henüz olmadığı için kullanılamaz. Sonraki adımlar için renk düğmesi olay işleyicisi ekleme gösterir.  
   

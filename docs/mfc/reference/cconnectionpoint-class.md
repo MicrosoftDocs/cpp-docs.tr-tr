@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22793706a67a3d301f88700ca6b43fb9c83e4dc3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d892ea225e3b1c1089447587eb808e56370bbb69
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357396"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952228"
 ---
 # <a name="cconnectionpoint-class"></a>CConnectionPoint sınıfı
 Bir özel tür "bağlantı noktası." olarak adlandırılan diğer OLE nesneleri ile iletişim kurmak için kullanılan arabirim tanımlar  
@@ -66,7 +66,7 @@ class CConnectionPoint : public CCmdTarget
 |[CConnectionPoint::GetContainer](#getcontainer)|Bağlantı eşlemine sahip denetim kapsayıcısını alır.|  
 |[CConnectionPoint::GetIID](#getiid)|Bir bağlantı noktası arabirimi Kimliğini alır.|  
 |[CConnectionPoint::GetMaxConnections](#getmaxconnections)|Bağlantı noktaları bir denetim tarafından desteklenen maksimum sayısını alır.|  
-|[CConnectionPoint::GetNextConnection](#getnextconnection)|Konumundaki bağlantı öğe için bir işaretçi alır `pos`.|  
+|[CConnectionPoint::GetNextConnection](#getnextconnection)|Konumundaki bağlantı öğe için bir işaretçi alır *pos*.|  
 |[CConnectionPoint::GetStartPosition](#getstartposition)|Harita yineleme döndürerek başlatır bir **konumu** için geçirilen değer bir `GetNextConnection` çağırın.|  
 |[CConnectionPoint::OnAdvise](#onadvise)|Oluşturma veya bağlantılarını kesme çerçevesi tarafından çağrılır.|  
 |[CConnectionPoint::QuerySinkInterface](#querysinkinterface)|İstenen havuz arayüzü için bir işaretçi alır.|  
@@ -82,13 +82,13 @@ class CConnectionPoint : public CCmdTarget
   
  [!code-cpp[NVC_MFCConnectionPoints#7](../../mfc/codesnippet/cpp/cconnectionpoint-class_1.h)]  
   
- `BEGIN_CONNECTION_PART` Ve `END_CONNECTION_PART` makroları katıştırılmış bir sınıf bildirme `XSampleConnPt` (türetilmiş `CConnectionPoint`), bu belirli bağlantı noktası uygular. Herhangi bir geçersiz kılmak istiyorsanız `CConnectionPoint` üye işlevleri veya kendi üye işlevleri eklemek için bu iki makrolar arasında bildirin. Örneğin, `CONNECTION_IID` makrosu geçersiz kılmaları `CConnectionPoint::GetIID` bu iki makrolar arasında yerleştirildiğinde üye işlevi.  
+ Begın_connectıon_part ve end_connectıon_part makroları katıştırılmış bir sınıf bildirme `XSampleConnPt` (türetilmiş `CConnectionPoint`), bu belirli bağlantı noktası uygular. Herhangi bir geçersiz kılmak istiyorsanız `CConnectionPoint` üye işlevleri veya kendi üye işlevleri eklemek için bu iki makrolar arasında bildirin. Örneğin, connectıon_ııd makrosu geçersiz kılmaları `CConnectionPoint::GetIID` bu iki makrolar arasında yerleştirildiğinde üye işlevi.  
   
  İkinci kod parçası uygulama dosyasına eklenir (. CPP) denetim sınıfınızın. Bu kod ek bağlantı noktası'nı içeren bağlantı harita uygulayan `SampleConnPt`:  
   
  [!code-cpp[NVC_MFCConnectionPoints#2](../../mfc/codesnippet/cpp/cconnectionpoint-class_2.cpp)]  
   
- Bu kod parçaları ekledikten sonra örnek OLE denetimi için bir bağlantı noktası sunan **ISampleSink** arabirimi.  
+ Bu kod parçaları ekledikten sonra örnek OLE denetimi için bir bağlantı noktası sunan `ISampleSink` arabirimi.  
   
  Normalde, bağlantı noktaları aynı arabirime bağlı birden çok havuzlarını yayın özelliği "noktaya" destekler. Aşağıdaki kod parçası, çok noktaya yayın bağlantı noktası üzerinde her havuz üzerinden yineleme tarafından gerçekleştirmek gösterilmiştir:  
   
@@ -136,7 +136,7 @@ virtual LPCONNECTIONPOINTCONTAINER GetContainer();
  Başarılı olursa, bir işaretçi kapsayıcıya; Aksi takdirde **NULL**.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev genellikle tarafından uygulanan `BEGIN_CONNECTION_PART` makrosu.  
+ Bu işlev genel begın_connectıon_part makrosu tarafından uygulanır.  
   
 ##  <a name="getiid"></a>  CConnectionPoint::GetIID  
  Bir bağlantı noktası arabirimi Kimliğini almak için çerçevesi tarafından çağrılır.  
@@ -167,18 +167,18 @@ virtual int GetMaxConnections();
  Denetiminize bağlanabilir havuzlarını sayısını sınırlamak istiyorsanız, bu işlev geçersiz kılar.  
   
 ##  <a name="getnextconnection"></a>  CConnectionPoint::GetNextConnection  
- Konumundaki bağlantı öğe için bir işaretçi alır `pos`.  
+ Konumundaki bağlantı öğe için bir işaretçi alır *pos*.  
   
 ```  
 LPUNKNOWN GetNextConnection(POSITION& pos) const;  
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
+ *POS*  
  Bir başvuru belirtir bir **konumu** önceki tarafından döndürülen değer `GetNextConnection` veya [GetStartPosition](#getstartposition) çağırın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen bağlantı öğesi için bir işaretçi `pos`, veya NULL.  
+ Belirtilen bağlantı öğesi için bir işaretçi *pos*, veya NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev bağlantısı eşlemindeki tüm öğeleri üzerinden yineleme için kullanışlıdır. Yineleme sırasında bu işlevinden döndürülen null atlanacak.  
@@ -210,7 +210,7 @@ virtual void OnAdvise(BOOL bAdvise);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bAdvise`  
+ *bAdvise*  
  **DOĞRU**, bağlantı kurulan; Aksi takdirde **FALSE**.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -228,11 +228,11 @@ virtual HRESULT QuerySinkInterface(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pUnkSink`  
+ *pUnkSink*  
  İstenen havuz arabirimi tanımlayıcısı.  
   
- `ppInterface`  
- Arabirim işaretçisi ile tanımlanan bir işaretçi `pUnkSink`. Nesne bu arabirim desteklemiyorsa \* `ppInterface` ayarlanır **NULL**.  
+ *ppInterface*  
+ Arabirim işaretçisi ile tanımlanan bir işaretçi *pUnkSink*. Nesne bu arabirim desteklemiyorsa \* *ppInterface* ayarlanır **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  

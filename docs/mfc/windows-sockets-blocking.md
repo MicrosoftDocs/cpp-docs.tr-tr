@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 400114e557632c9a1dd11cc2f9ec5b3101eb8c37
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9ec6b8383f13e8b632163a1fe83a2cd79f7966c5
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385956"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956193"
 ---
 # <a name="windows-sockets-blocking"></a>Windows Yuvaları: Engelleme
 Bu makale ve iki yardımcı makaleler Windows Sockets programlamada çeşitli sorunlar açıklanmaktadır. Bu makalede, engelleme yer almaktadır. Diğer sorunlar makalelerinde ele alınmıştır: [Windows Yuvaları: bayt sıralama](../mfc/windows-sockets-byte-ordering.md) ve [Windows Yuvaları: dizeleri dönüştürme](../mfc/windows-sockets-converting-strings.md).  
@@ -31,7 +31,7 @@ Bu makale ve iki yardımcı makaleler Windows Sockets programlamada çeşitli so
  Kullanıyorsanız veya sınıfından türetilen [CAsyncSocket](../mfc/reference/casyncsocket-class.md), bu sorunları kendiniz yönetmeniz gerekir. Kullanıyorsanız veya sınıfından türetilen [CSocket](../mfc/reference/csocket-class.md), MFC yönetir bunları sizin için.  
   
 ## <a name="blocking"></a>Engelleme  
- Bir yuva "engelleme modu" veya "sayıda modu." olabilir Kendi eylem tamamlanmasını engelleyen (veya zaman uyumlu) modunda yuva işlevleri döndürmeyin. Bu, işlevi çağrıldı yuva hiçbir şey yapamaz çünkü engelleme adlandırılır — engellendi — çağrı dönene kadar. Çağrı **alma** üye işlevi, örneğin, gönderen uygulama göndermek bekleyeceği gibi tamamlamak için bir rasgele uzun sürebilir (kullanıyorsanız budur `CSocket`, veya kullanarak `CAsyncSocket` engelleme ile). Varsa bir `CAsyncSocket` nesne çağrı döndürür hemen (zaman uyumsuz olarak işletim) sayıda modunda olduğundan ve geçerli hata kodu ile alınabilir [GetLastError](../mfc/reference/casyncsocket-class.md#getlasterror) üye işlevidir **WSAEWOULDBLOCK**, çağrı engelleyecek olduğunu belirten, vardı, hemen nedeniyle modu döndürülmedi. (`CSocket` hiçbir zaman döndürür **WSAEWOULDBLOCK**. Sınıfı sizin için engelleme yönetir.)  
+ Bir yuva "engelleme modu" veya "sayıda modu." olabilir Kendi eylem tamamlanmasını engelleyen (veya zaman uyumlu) modunda yuva işlevleri döndürmeyin. Bu, işlevi çağrıldı yuva hiçbir şey yapamaz çünkü engelleme adlandırılır — engellendi — çağrı dönene kadar. Çağrı `Receive` üye işlevi, örneğin, gönderen uygulama göndermek bekleyeceği gibi tamamlamak için bir rasgele uzun sürebilir (kullanıyorsanız budur `CSocket`, veya kullanarak `CAsyncSocket` engelleme ile). Varsa bir `CAsyncSocket` nesne çağrı döndürür hemen (zaman uyumsuz olarak işletim) sayıda modunda olduğundan ve geçerli hata kodu ile alınabilir [GetLastError](../mfc/reference/casyncsocket-class.md#getlasterror) üye işlevidir **WSAEWOULDBLOCK**, çağrı engelleyecek olduğunu belirten, vardı, hemen nedeniyle modu döndürülmedi. (`CSocket` hiçbir zaman döndürür **WSAEWOULDBLOCK**. Sınıfı sizin için engelleme yönetir.)  
   
  Yuva davranışını 32-bit ve 64-bit işletim sistemleri (örneğin, Windows 95 veya Windows 98) 16-bit işletim sistemleri (örneğin, Windows 3.1) altında altında farklıdır. 16 bit işletim sistemleri, aksine 32-bit ve 64-bit işletim sistemlerinde PreEmptive tarafından görevli kullanın ve çoklu iş parçacığı kullanımı sağlayın. 32 bit ve 64-bit işletim sistemlerinde ayrı çalışan iş parçacıkları, yuva koyabilirsiniz. Bir iş parçacığı yuvası engellemesine işlem süresi harcama olmadan ve uygulamanızdaki diğer etkinlikler müdahale engelleyebilirsiniz. Birden çok iş parçacıklı programlama hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı](../parallel/multithreading-support-for-older-code-visual-cpp.md).  
   
@@ -40,7 +40,7 @@ Bu makale ve iki yardımcı makaleler Windows Sockets programlamada çeşitli so
   
  Bu tartışma kalan 16-bit işletim sistemlerini hedefleme programcıları içindir:  
   
- Normalde, kullanıyorsanız `CAsyncSocket`, engelleme işlemleri kullanmaktan kaçının ve bunun yerine zaman uyumsuz olarak çalışır. Hangi aldığınız noktasından zaman uyumsuz işlemleri bir **WSAEWOULDBLOCK** çağırdıktan sonra hata kodu **alma**, örneğin, kadar bekleyin, `OnReceive` üye çağrıldığında bildirmek için size yeniden okuyabilir. Zaman uyumsuz çağrılar geri yuva 's uygun geri bildirim işlevi gibi çağırarak yapılma [OnReceive](../mfc/reference/casyncsocket-class.md#onreceive).  
+ Normalde, kullanıyorsanız `CAsyncSocket`, engelleme işlemleri kullanmaktan kaçının ve bunun yerine zaman uyumsuz olarak çalışır. Hangi aldığınız noktasından zaman uyumsuz işlemleri bir **WSAEWOULDBLOCK** çağırdıktan sonra hata kodu `Receive`, örneğin, kadar bekleyin, `OnReceive` üye çağrıldığında, okuyabilirsiniz bildirmek için yeniden. Zaman uyumsuz çağrılar geri yuva 's uygun geri bildirim işlevi gibi çağırarak yapılma [OnReceive](../mfc/reference/casyncsocket-class.md#onreceive).  
   
  Windows altında engelleme çağrıları hatalı yöntem olarak kabul edilir. Varsayılan olarak, [CAsyncSocket](../mfc/reference/casyncsocket-class.md) destekleyen zaman uyumsuz çağrılar ve yönetmelidir geri bildirimleri kullanarak kendiniz engelleme. Sınıf [CSocket](../mfc/reference/csocket-class.md), diğer yandan, zaman uyumlu değil. Windows iletileri Pompalar ve sizin için engelleme yönetir.  
   

@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 63b8d8dbde679d030eddd77fae6ca1fab519fdac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f040978c898dae3bfd4ca21c2cf9886fde9b5238
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385277"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951285"
 ---
 # <a name="window-objects"></a>Pencere Nesneleri
 MFC sınıf sağlayan [CWnd](../mfc/reference/cwnd-class.md) yalıtılacak `HWND` bir pencere tanıtıcısı. `CWnd` Nesnesidir ayrı bir C++ pencere nesnesi, `HWND` temsil eden bir Windows penceresi ancak onu içeren. Kullanmak `CWnd` kendi alt pencere türetilen sınıflar ya da birçok MFC sınıfları birini kullanın türetilen `CWnd`. Sınıf `CWnd` çerçeve pencereleri, iletişim kutuları, alt öğe pencerelerini, denetimleri ve denetim çubukları araç çubukları gibi dahil olmak üzere tüm windows için temel sınıftır. İyi anlamış [bir C++ pencere nesnesi ile bir HWND arasındaki ilişkiyi](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md) etkili programlama MFC için önemlidir.  
@@ -44,7 +44,7 @@ MFC sınıf sağlayan [CWnd](../mfc/reference/cwnd-class.md) yalıtılacak `HWND
  `CWnd` ve kendi [türetilen pencere sınıfları](../mfc/derived-window-classes.md) Oluşturucular, yok ediciler ve nesneyi başlatmak için üye işlevleri temel alınan Windows yapıları oluşturmak ve kapsüllenmiş erişim sağlayan `HWND`. `CWnd` Ayrıca Windows API'ları pencerenin durumu, güncelleştirme, koordinatları dönüştürme erişme ileti göndermek için kapsülleyen üye işlevleri sağlar kaydırma, Pano ve diğer pek çok görev erişme. Ele çoğu Windows pencere yönetimi API'leri bir `HWND` bağımsız değişkeni üye işlevlerini kapsüllenmiş `CWnd`. İşlevleri ve bunların parametrelerini adları olarak korunur `CWnd` üye işlevi. Windows API'larını yalıtılan hakkındaki ayrıntılar için `CWnd`, sınıfına bakın [CWnd](../mfc/reference/cwnd-class.md).  
   
 ## <a name="cwnd-and-windows-messages"></a>CWnd ve Windows iletileri  
- Birincil amaçlarından biri `CWnd` gibi Windows iletilerini işlemek için bir arabirim sağlamaktır `WM_PAINT` veya `WM_MOUSEMOVE`. Üye işlevlerini birçoğu `CWnd` standart iletileri için işleyiciler — bu tanımlayıcı ile başlayan **afx_msg** ve önek "," gibi `OnPaint` ve **OnMouseMove**. [İleti işleme ve eşleme](../mfc/message-handling-and-mapping.md) iletileri ve ileti işleme ayrıntılı olarak ele alınmaktadır. Bilgi var. framework'ün windows hem de özel amaçlar için kendiniz oluşturmanız için eşit oranda geçerlidir.  
+ Birincil amaçlarından biri `CWnd` WM_PAINT veya WM_MOUSEMOVE gibi Windows iletilerini işleme için bir arabirim sağlar. Üye işlevlerini birçoğu `CWnd` standart iletileri için işleyiciler — bu tanımlayıcı ile başlayan **afx_msg** ve önek "," gibi `OnPaint` ve `OnMouseMove`. [İleti işleme ve eşleme](../mfc/message-handling-and-mapping.md) iletileri ve ileti işleme ayrıntılı olarak ele alınmaktadır. Bilgi var. framework'ün windows hem de özel amaçlar için kendiniz oluşturmanız için eşit oranda geçerlidir.  
   
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   

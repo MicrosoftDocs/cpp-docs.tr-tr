@@ -20,26 +20,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c6475e8c259026618192489ac2c67c20ed03d92
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 97c42f59042490f6408fb457b12f4bdb1a2eeb88
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385345"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953366"
 ---
 # <a name="tn039-mfcole-automation-implementation"></a>TN039: MFC/OLE Otomasyon Uygulaması
 > [!NOTE]
 >  İlk çevrimiçi belgelerinde eklenmiştir beri aşağıdaki Teknik Not güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konuları güncel veya yanlış olması olabilir. En son bilgiler için çevrimiçi belgeleri dizindeki ilgi konuyu aramak önerilir.  
   
 ## <a name="overview-of-ole-idispatch-interface"></a>OLE IDispatch arabirimi genel bakış  
- `IDispatch` Arabirimidir olarak uygulamaları kullanıma Visual BASIC veya diğer diller gibi diğer uygulamaları yapabileceğiniz gibi uygulamanın özelliklerini kullandığınız yöntemleri ve özellikleri anlamına gelir. Bu arabirim, en önemli parçasıdır **IDispatch::Invoke** işlevi. MFC kullanır "eşlemeleri dağıtma" uygulamak için **IDispatch::Invoke**. Düzenini veya "şeklini" gönderme harita MFC Uygulama bilgileri sağlar, `CCmdTarget`-doğrudan nesnenin özelliklerini yönetmek veya üye işlevlerini karşılamak için nesne içinde çağırın şekilde türetilmiş sınıfları,  **IDispatch::Invoke** istekleri.  
+ `IDispatch` Arabirimidir olarak uygulamaları kullanıma Visual BASIC veya diğer diller gibi diğer uygulamaları yapabileceğiniz gibi uygulamanın özelliklerini kullandığınız yöntemleri ve özellikleri anlamına gelir. Bu arabirim, en önemli parçasıdır `IDispatch::Invoke` işlevi. MFC kullanır "eşlemeleri dağıtma" uygulamak için `IDispatch::Invoke`. Düzenini veya "şeklini" gönderme harita MFC Uygulama bilgileri sağlar, `CCmdTarget`-doğrudan nesnenin özelliklerini yönetmek veya üye işlevlerini karşılamak için nesne içinde çağırın şekilde türetilmiş sınıfları, `IDispatch::Invoke` istek sayısı.  
   
  Çoğunlukla, ClassWizard ve MFC Uygulama Programcı OLE Otomasyon ayrıntılarını çoğunu gizlemek üzere işbirliği yapar. Programcı uygulamada kullanıma sunmak için gerçek işlevselliği yoğunlaşır ve temel tesisat hakkında endişelenmeye gerek yoktur.  
   
  MFC arka planda ne yaptığını anlamak gerekli olduğu durumlar vardır. Bu Not nasıl framework atar adres **DISPID**s üye işlevleri ve özellikleri. MFC kullanan atamak için algoritmasının bilgi **DISPID**s olduğunda yalnızca gerekli uygulamanızın nesneleri için bir "tür kitaplığı" oluşturduğunuzda gibi kimlikleri, bilmeniz gerekir.  
   
 ## <a name="mfc-dispid-assignment"></a>MFC DISPID atama  
- Otomasyon (Visual Basic kullanıcı, örneğin), son kullanıcı görür ancak gerçek adlarını Otomasyon özellikleri ve yöntemleri (örneğin, obj. kendi kodunda etkin ShowWindow) uygulaması **IDispatch::Invoke** gerçek adlarını almaz. En iyi duruma getirme nedenlerle aldığı bir **DISPID**, "yöntem veya erişilecek özellik açıklayan bir 32 bit Sihirli tanımlama bilgisi" olduğu. Bunlar **DISPID** değerleri sağlayıcıdan döndürülen `IDispatch` uygulaması adlı başka bir yöntem aracılığıyla **IDispatch::GetIDsOfNames**. Bir otomasyon istemci uygulaması çağıracak `GetIDsOfNames` her üye veya özellik için erişim ve bunları sonraki çağrılar için önbelleğe amaçlamaktadır sonra **IDispatch::Invoke**. Bu şekilde, pahalı dize arama yalnızca bir kez nesne kullanımı yerine bir kez başına yapılır **IDispatch::Invoke** çağırın.  
+ Otomasyon (Visual Basic kullanıcı, örneğin), son kullanıcı görür ancak gerçek adlarını Otomasyon özellikleri ve yöntemleri (örneğin, obj. kendi kodunda etkin ShowWindow) uygulaması `IDispatch::Invoke` gerçek adlarını almaz. En iyi duruma getirme nedenlerle aldığı bir **DISPID**, "yöntem veya erişilecek özellik açıklayan bir 32 bit Sihirli tanımlama bilgisi" olduğu. Bunlar **DISPID** değerleri sağlayıcıdan döndürülen `IDispatch` uygulaması adlı başka bir yöntem aracılığıyla `IDispatch::GetIDsOfNames`. Bir otomasyon istemci uygulaması çağıracak `GetIDsOfNames` her üye veya özellik için erişim ve bunları sonraki çağrılar için önbelleğe amaçlamaktadır sonra `IDispatch::Invoke`. Bu şekilde, pahalı dize arama yalnızca bir kez nesne kullanımı yerine bir kez başına yapılır `IDispatch::Invoke` çağırın.  
   
  MFC belirler **DISPID**s her yöntem ve özellik için temel üzerinde ikisinden:  
   
@@ -131,23 +131,23 @@ property Y    (DISPID)0x00010002
 ## <a name="remarks"></a>Açıklamalar  
   
 ### <a name="parameters"></a>Parametreler  
- `theClass`  
+ *Sınıfın*  
  Sınıfın adı.  
   
- `pszName`  
+ *pszName*  
  Dış özelliğin adı.  
   
- `memberName`  
+ *memberName*  
  Özellik depolandığı üye değişkeni adı.  
   
- `pfnAfterSet`  
+ *pfnAfterSet*  
  Özelliği değiştirildiğinde çağırmak için üye işlevinin adı.  
   
- `vtPropType`  
+ *vtPropType*  
  Özelliğin türünü belirten bir değer.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu makro çok benzer olduğunu `DISP_PROPERTY`dışında ek bağımsız değişken kabul eder. Ek bağımsız değişken *pfnAfterSet,* hiçbir parametre 'void OnPropertyNotify()' alır ve hiçbir şey döndüren bir üye işlevi olması gerekir. Çağrılacağı **sonra** üye değişkeni değiştirildi.  
+ Ek bağımsız değişken kabul bu makro çok dısp_property gibi olmasıdır. Ek bağımsız değişken *pfnAfterSet,* hiçbir parametre 'void OnPropertyNotify()' alır ve hiçbir şey döndüren bir üye işlevi olması gerekir. Çağrılacağı **sonra** üye değişkeni değiştirildi.  
   
 ## <a name="disppropertyparam--macro-description"></a>Dısp_property_param — Makrosu açıklaması  
   
@@ -165,26 +165,26 @@ property Y    (DISPID)0x00010002
 ## <a name="remarks"></a>Açıklamalar  
   
 ### <a name="parameters"></a>Parametreler  
- `theClass`  
+ *Sınıfın*  
  Sınıfın adı.  
   
- `pszName`  
+ *pszName*  
  Dış özelliğin adı.  
   
- `memberGet`  
+ *memberGet*  
  Özellik get için kullanılan üye işlevinin adı.  
   
- `memberSet`  
+ *memberSet*  
  Özelliği ayarlamak için kullanılan üye işlevinin adı.  
   
- `vtPropType`  
+ *vtPropType*  
  Özelliğin türünü belirten bir değer.  
   
- `vtsParams`  
+ *vtsParams*  
  Bir dize alanı VTS_ her parametre için ayrılmış.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Çok benzer şekilde `DISP_PROPERTY_EX` makrosu, bu makrosu ile ayrı Get ve kümesi üye işlevleri erişilen bir özellik tanımlıyor. Ancak, bu makrosu özelliği için bir parametre listesi belirtmenize olanak tanır. Bu, diğer herhangi bir yolla dizine veya parametreli özellikleri uygulamak için kullanışlıdır. Parametreleri her zaman ilk olarak, yeni değer özelliği için arkasından yerleştirilir. Örneğin:  
+ Çok dısp_property_ex makrosu gibi bu makrosu ile ayrı Get ve kümesi üye işlevleri erişilen bir özelliğini tanımlar. Ancak, bu makrosu özelliği için bir parametre listesi belirtmenize olanak tanır. Bu, diğer herhangi bir yolla dizine veya parametreli özellikleri uygulamak için kullanışlıdır. Parametreleri her zaman ilk olarak, yeni değer özelliği için arkasından yerleştirilir. Örneğin:  
   
 ```  
 DISP_PROPERTY_PARAM(CMyObject, "item",
@@ -244,32 +244,32 @@ void CMyObject::SetItem(short row,
 ## <a name="remarks"></a>Açıklamalar  
   
 ### <a name="parameters"></a>Parametreler  
- `theClass`  
+ *Sınıfın*  
  Sınıfın adı.  
   
- `pszName`  
+ *pszName*  
  Dış özelliğin adı.  
   
- `dispid`  
+ *DISPID*  
  Özellik veya yöntem için sabit DISPID.  
   
- `pfnGet`  
+ *pfnGet*  
  Özellik get için kullanılan üye işlevinin adı.  
   
- `pfnSet`  
+ *pfnSet*  
  Özelliği ayarlamak için kullanılan üye işlevinin adı.  
   
- `memberName`  
+ *memberName*  
  Özelliğini eşleştirmek için üye değişkeni adı  
   
- `vtPropType`  
+ *vtPropType*  
  Özelliğin türünü belirten bir değer.  
   
- `vtsParams`  
+ *vtsParams*  
  Bir dize alanı VTS_ her parametre için ayrılmış.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu makroları belirtmenize olanak veren bir **DISPID** MFC otomatik olarak izin vermek yerine bir atayın. Bu kimlik makrosu ada eklenir dışında bu makroları Gelişmiş aynı ada sahip (örneğin **DISP_PROPERTY_ID**) ve kimliği hemen sonra belirtilen parametresiyle belirlenir `pszName` parametresi. AFXDISP bakın. H Bu makroları hakkında daha fazla bilgi için. **_Id** girişleri gönderme harita sonunda yerleştirilmelidir. Otomatik etkiler **DISPID** nesil aynı olmayan bir şekilde **_ıd** makrosu sürümü gerekir ( **DISPID**s konumu tarafından belirlenir). Örneğin:  
+ Bu makroları belirtmenize olanak veren bir **DISPID** MFC otomatik olarak izin vermek yerine bir atayın. Bu kimlik makrosu ada eklenir dışında bu makroları Gelişmiş aynı ada sahip (örneğin **DISP_PROPERTY_ID**) ve kimliği hemen sonra belirtilen parametresiyle belirlenir *pszName* parametresi. AFXDISP bakın. H Bu makroları hakkında daha fazla bilgi için. **_Id** girişleri gönderme harita sonunda yerleştirilmelidir. Otomatik etkiler **DISPID** nesil aynı olmayan bir şekilde **_ıd** makrosu sürümü gerekir ( **DISPID**s konumu tarafından belirlenir). Örneğin:  
   
 ```  
 BEGIN_DISPATCH_MAP(CDisp3DPoint,
@@ -298,7 +298,7 @@ property Z     (DISPID)0x00000001
  Bir sabit belirtme **DISPID** önceden var olan bir gönderme arabirimi geriye dönük uyumluluğu korumak veya bazı sistem tarafından tanımlanan yöntemler veya özellikler uygulamak için yararlıdır (genellikle bir negatif tarafından gösterilen  **DISPID**, gibi **DISPID_NEWENUM** koleksiyonu).  
   
 #### <a name="retrieving-the-idispatch-interface-for-a-coleclientitem"></a>Bir COleClientItem IDispatch arabirimi alınıyor  
- OLE sunucu işlevselliğinin yanı sıra bunların belge nesneleri içinde Otomasyon pek çok sunucu destekler. Bu Otomasyon arabirimi erişmek için doğrudan erişim için ise gerekli **COleClientItem::m_lpObject** üye değişkeni. Aşağıdaki kodu alacak `IDispatch` türetilmiş bir nesne için arabirim `COleClientItem`. Bu işlevsellik gerekli bulursanız, aşağıdaki kodu, uygulamanızda içerebilir:  
+ OLE sunucu işlevselliğinin yanı sıra bunların belge nesneleri içinde Otomasyon pek çok sunucu destekler. Bu Otomasyon arabirimi erişmek için doğrudan erişim için ise gerekli `COleClientItem::m_lpObject` üye değişkeni. Aşağıdaki kodu alacak `IDispatch` türetilmiş bir nesne için arabirim `COleClientItem`. Bu işlevsellik gerekli bulursanız, aşağıdaki kodu, uygulamanızda içerebilir:  
   
 ```  
 LPDISPATCH CMyClientItem::GetIDispatch()  
@@ -346,7 +346,7 @@ return NULL;
 }  
 ```  
   
- Gönderme arabirimi döndürülen bu işlev sonra doğrudan kullanılan veya iliştirilmiş bir `COleDispatchDriver` tür kullanımı uyumlu erişim. Doğrudan kullanırsanız, sizi aramasını emin olun, **sürüm** üye ne zaman aracılığıyla işaretçisi ile ( `COleDispatchDriver` yıkıcı olmadığından bu varsayılan olarak).  
+ Gönderme arabirimi döndürülen bu işlev sonra doğrudan kullanılan veya iliştirilmiş bir `COleDispatchDriver` tür kullanımı uyumlu erişim. Doğrudan kullanırsanız, sizi aramasını emin olun, `Release` üyesi olduğunda aracılığıyla işaretçisi ile ( `COleDispatchDriver` yıkıcı olmadığından bu varsayılan olarak).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98f5a21bd5fa20a40123ce442959125ea62c60d3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7fe5a55afda9e77db6e8baddd68c09f4250071bb
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381130"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951207"
 ---
 # <a name="steps-in-a-typical-ftp-client-application"></a>Tipik Bir FTP İstemci Uygulamasındaki Adımlar
 Tipik bir FTP istemci uygulaması oluşturur bir [CInternetSession](../mfc/reference/cinternetsession-class.md) ve [CFtpConnection](../mfc/reference/cftpconnection-class.md) nesnesi. Bu MFC WinINet sınıfları gerçekte proxy türü ayarlarını kontrol etmez olduğunu unutmayın; IIS yapar.  
@@ -45,7 +45,7 @@ Tipik bir FTP istemci uygulaması oluşturur bir [CInternetSession](../mfc/refer
 |Sunucuda yeni bir FTP dizinine geçin.|Kullanım [CFtpConnection::SetCurrentDirectory](../mfc/reference/cftpconnection-class.md#setcurrentdirectory).|Şu anda sunucu üzerinde bağlı dizini değiştirir.|  
 |İlk dosya FTP dizinde bulun.|Kullanım [CFtpFileFind::FindFile](../mfc/reference/cftpfilefind-class.md#findfile).|İlk dosyayı bulur. Hiçbir dosya bulunamazsa FALSE döndürür.|  
 |Sonraki dosyasını FTP dizinde bulun.|Kullanım [CFtpFileFind::FindNextFile](../mfc/reference/cftpfilefind-class.md#findnextfile).|Sonraki dosyayı bulur. Dosya bulunamazsa FALSE döndürür.|  
-|Tarafından bulunan dosya açmak **FindFile** veya `FindNextFile` okuma veya yazma.|Kullanım [CFtpConnection::OpenFile](../mfc/reference/cftpconnection-class.md#openfile), dosya adını kullanarak döndürülen [FindFile](../mfc/reference/cftpfilefind-class.md#findfile) veya ['larını](../mfc/reference/cftpfilefind-class.md#findnextfile).|Okuma veya yazma için dosya sunucusunda açılır. Döndürür bir [CInternetFile](../mfc/reference/cinternetfile-class.md) nesnesi.|  
+|Tarafından bulunan dosya açmak `FindFile` veya `FindNextFile` okuma veya yazma.|Kullanım [CFtpConnection::OpenFile](../mfc/reference/cftpconnection-class.md#openfile), dosya adını kullanarak döndürülen [FindFile](../mfc/reference/cftpfilefind-class.md#findfile) veya ['larını](../mfc/reference/cftpfilefind-class.md#findnextfile).|Okuma veya yazma için dosya sunucusunda açılır. Döndürür bir [CInternetFile](../mfc/reference/cinternetfile-class.md) nesnesi.|  
 |Okuma veya dosyaya yazmak.|Kullanım [CInternetFile::Read](../mfc/reference/cinternetfile-class.md#read) veya [CInternetFile::Write](../mfc/reference/cinternetfile-class.md#write).|Okur veya belirtilen sayıda baytı, sağladığınız arabellek kullanarak yazar.|  
 |Özel durumları işleme.|Kullanım [CInternetException](../mfc/reference/cinternetexception-class.md) sınıfı.|Tüm ortak Internet özel durum türleri işler.|  
 |FTP oturumunu sonlandırın.|Elden [CInternetSession](../mfc/reference/cinternetsession-class.md) nesnesi.|Otomatik olarak açık dosya tanıtıcıları ve bağlantıları temizler.|  

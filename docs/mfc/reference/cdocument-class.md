@@ -130,12 +130,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 696b0d63a7b81b550e99981f199132713fe8a6ed
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1e0d67012afe34cf3fe2c4633f2d838d1f3bfb49
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377046"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952537"
 ---
 # <a name="cdocument-class"></a>CDocument sınıfı
 Temel işlevleri için kullanıcı tanımlı belge sınıfları sağlar.  
@@ -228,7 +228,7 @@ class CDocument : public CCmdTarget
 ## <a name="remarks"></a>Açıklamalar  
  Bir belge kullanıcı genellikle Dosya Aç komutu ile açar ve dosyayı kaydedin komutuyla kaydeden veri birimi temsil eder.  
   
- **CDocument** bir belge oluşturma, bunu yüklemek ve kaydederek gibi standart işlemlerini destekler. Framework tarafından tanımlanan arabirimi kullanarak belgeleri işleyen **CDocument**.  
+ `CDocument` bir belge oluşturma, bunu yüklemek ve kaydederek gibi standart işlemleri destekler. Framework tarafından tanımlanan arabirimi kullanarak belgeleri işleyen `CDocument`.  
   
  Bir uygulama birden fazla belge türünü destekler; Örneğin, bir uygulama, elektronik tablolar ve metin belgeleri desteklemiyor olabilir. Belge türlerinin ilişkili belge şablonu; yine de sahip istiyor musunuz? Belge şablonu, bu belge türü için hangi kaynakların (örneğin, menü, simge veya Hızlandırıcı tablosu) kullanıldığını belirtir. Her belge için ilişkili bir işaretçi içeriyor `CDocTemplate` nesnesi.  
   
@@ -236,11 +236,11 @@ class CDocument : public CCmdTarget
   
  Belgeleri framework'ün standart bir parçası olan komut Yönlendirme ve sonuç olarak komutları standart kullanıcı arabirimi bileşenleri (örneğin, dosyayı Kaydet menü öğesi) alacak. Bir belgeyi etkin görünüm tarafından iletilen komutları alır. Belge verilen komut işleyemez, yönettiği belge şablonu komutuna iletir.  
   
- Bir belgenin veri değiştirildiğinde, her görünümlerinin bu değişiklikleri yansıtması gerekir. **CDocument** sağlar [UpdateAllViews](#updateallviews) , görünümleri kendilerini gerektiği gibi yeniden boyamak şekilde bu değişiklikleri görünümlerini bildirmek üye işlevi. Çerçeve ayrıca kapatmadan önce değiştirilmiş bir dosya kaydetmek için kullanıcıya sorar.  
+ Bir belgenin veri değiştirildiğinde, her görünümlerinin bu değişiklikleri yansıtması gerekir. `CDocument` sağlar [UpdateAllViews](#updateallviews) , görünümleri kendilerini gerektiği gibi yeniden boyamak şekilde bu değişiklikleri görünümlerini bildirmek üye işlevi. Çerçeve ayrıca kapatmadan önce değiştirilmiş bir dosya kaydetmek için kullanıcıya sorar.  
   
  Tipik bir uygulamada belgeleri uygulamak için aşağıdakileri yapmanız gerekir:  
   
--   Öğesinden bir sınıf türetin **CDocument** her belge türü için.  
+-   Öğesinden bir sınıf türetin `CDocument` her belge türü için.  
   
 -   Her bir belgenin verileri depolamak için üye değişkenleri ekleyin.  
   
@@ -248,9 +248,9 @@ class CDocument : public CCmdTarget
   
 -   Geçersiz kılma [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) yazmak ve disk belgenin veri okumak için belge sınıfında üye işlevi.  
   
- **CDocument** posta desteği (MAPI) varsa, belgenizi posta aracılığıyla göndermeyi destekler. Makalelerine bakın [MAPI](../../mfc/mapi.md) ve [MFC içinde MAPI desteği](../../mfc/mapi-support-in-mfc.md).  
+ `CDocument` posta desteği (MAPI) varsa, belgenizi posta aracılığıyla göndermeyi destekler. Makalelerine bakın [MAPI](../../mfc/mapi.md) ve [MFC içinde MAPI desteği](../../mfc/mapi-support-in-mfc.md).  
   
- Daha fazla bilgi için **CDocument**, bkz: [seri hale getirme](../../mfc/serialization-in-mfc.md), [belge/görünüm mimarisi konuları](../../mfc/document-view-architecture.md), ve [belge/görünüm oluşturma](../../mfc/document-view-creation.md).  
+ Daha fazla bilgi için `CDocument`, bkz: [seri hale getirme](../../mfc/serialization-in-mfc.md), [belge/görünüm mimarisi konuları](../../mfc/document-view-architecture.md), ve [belge/görünüm oluşturma](../../mfc/document-view-creation.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -270,7 +270,7 @@ void AddView(CView* pView);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pView`  
+ *pView*  
  Eklenmekte olan Görünüm noktalarına.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -298,7 +298,7 @@ virtual BOOL CanCloseFrame(CFrameWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFrame`  
+ *pFrame*  
  Çerçeve penceresi noktalarına belgeye iliştirilmiş bir görünüm.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -359,10 +359,10 @@ virtual POSITION FindChunk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `guid`  
+ *GUID*  
  Bulmak için bir öbek GUİD'si belirtir.  
   
- `pid`  
+ *PID*  
  Bulmak için bir öbek PID belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -406,13 +406,13 @@ virtual CFile* GetFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszFileName`  
+ *lpszFileName*  
  İstenen dosyanın yolu olan bir dize. Yol, göreli veya mutlak olabilir.  
   
- `pError`  
+ *pError*  
  Bir işaretçi var olan bir dosya özel durumu nesneye işleminin tamamlanma durumunu gösteren.  
   
- `nOpenFlags`  
+ *nOpenFlags*  
  Paylaşım ve erişim modu. Dosyayı açarken gerçekleştirilecek eylemi belirtir. CFile oluşturucuda listelenen seçenekleri birleştirebilirsiniz [CFile::CFile](../../mfc/reference/cfile-class.md#cfile) Bitsel veya kullanarak (&#124;) işleci. Bir erişim izni ve bir paylaşım seçeneği gereklidir; **modeCreate** ve **modeNoInherit** modları isteğe bağlıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -439,14 +439,14 @@ virtual CView* GetNextView(POSITION& rPosition) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rPosition`  
+ *rPosition*  
  Bir başvuru bir **konumu** önceki bir çağrı tarafından döndürülen değer `GetNextView` veya [GetFirstViewPosition](#getfirstviewposition) üye işlevleri. Bu değer olmamalıdır **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tarafından tanımlanan görünüm için bir işaretçi `rPosition`.  
+ Tarafından tanımlanan görünüm için bir işaretçi *rPosition*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından tanımlanan görünüm işlevi döndürür `rPosition` ve ardından ayarlar `rPosition` için **konumu** listesinde sonraki görünüme değeri. Alınan Görünüm listesinde, son sonra olup olmadığını `rPosition` ayarlanır **NULL**.  
+ Tarafından tanımlanan görünüm işlevi döndürür *rPosition* ve ardından ayarlar *rPosition* için **konumu** listesinde sonraki görünüme değeri. Alınan Görünüm listesinde, son sonra olup olmadığını *rPosition* ayarlanır **NULL**.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#59](../../mfc/codesnippet/cpp/cdocument-class_4.cpp)]  
@@ -472,13 +472,13 @@ virtual BOOL GetThumbnail(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cx`  
+ *CX*  
  Bit eşlem yüksekliğini ve genişliğini belirtir.  
   
- `phbmp`  
+ *phbmp*  
  İşlev başarıyla döndürüldüğünde bir bit eşlem için bir tanıtıcı içerir.  
   
- `pdwAlpha`  
+ *pdwAlpha*  
  İşlev başarıyla geri döndüğünde alfa kanal değerini belirleyen bir DWORD içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -539,10 +539,10 @@ virtual HRESULT LoadDocumentFromStream(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pStream`  
+ *pStream*  
  Bir akış için bir işaretçi. Bu akış Kabuk tarafından sağlanır.  
   
- `dwGrfMode`  
+ *dwGrfMode*  
  Akış erişim modu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -659,13 +659,13 @@ virtual void OnDocumentEvent(DocumentEvent deEvent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `deEvent`  
+ [in] *deEvent*  
  Olay türünü tanımlayan bir numaralandırılmış veri türü.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Belge olaylarını birden çok sınıf etkileyebilir. Bu yöntem dışında sınıfları etkileyen belge olayları işlemekten sorumludur [CDocument sınıfı](../../mfc/reference/cdocument-class.md). Şu anda, belge olaylarına yanıt vermesi gereken tek sınıf olan [CDataRecoveryHandler sınıfı](../../mfc/reference/cdatarecoveryhandler-class.md). `CDocument` Sınıfına sahip diğer geçersiz kılınabilir yöntemleri üzerinde etkisi işlenmesinden sorumludur `CDocument`.  
   
- İçin olası değerler aşağıdaki tabloda listelenmektedir `deEvent` ve bunların karşılık gelen olayları.  
+ İçin olası değerler aşağıdaki tabloda listelenmektedir *deEvent* ve bunların karşılık gelen olayları.  
   
 |Değer|Karşılık gelen olay|  
 |-----------|-------------------------|  
@@ -684,10 +684,10 @@ virtual void OnDrawThumbnail(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dc`  
+ *DC*  
  Bir cihaz bağlamı referansı.  
   
- `lprcBounds`  
+ *lprcBounds*  
  Küçük resim nerede çizileceğini alanının sınırlayıcı dikdörtgenini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -716,10 +716,10 @@ virtual HRESULT OnLoadDocumentFromStream(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pStream`  
+ *pStream*  
  Gelen bir akış için bir işaretçi.  
   
- `grfMode`  
+ *grfMode*  
  Akış erişim modu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -761,7 +761,7 @@ virtual BOOL OnOpenDocument(LPCTSTR lpszPathName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszPathName`  
+ *lpszPathName*  
  Açılacak belgenin noktaları yolu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -791,7 +791,7 @@ virtual HRESULT OnPreviewHandlerQueryFocus(HWND* phwnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `phwnd`  
+ *phwnd*  
  [out] Bu yöntem döndürüldüğünde, arama öğesinden döndürülen HWND gösteren bir işaretçi içeriyor `GetFocus` Önizleme işleyicinin ön plan iş parçacığı işlevinden.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -807,7 +807,7 @@ virtual HRESULT OnPreviewHandlerTranslateAccelerator(MSG* pmsg);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pmsg`  
+ *pmsg*  
  [in] Pencere iletisi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -859,7 +859,7 @@ virtual BOOL OnSaveDocument(LPCTSTR lpszPathName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszPathName`  
+ *lpszPathName*  
  Dosyanın kaydedilmesi gereken tam nitelenmiş bir yol noktalarına.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -885,7 +885,7 @@ void OnUpdateFileSendMail(CCmdUI* pCmdUI);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pCmdUI`  
+ *pCmdUI*  
  Bir işaretçi [Ccmduı](../../mfc/reference/ccmdui-class.md) ilişkili nesne **ID_FILE_SEND_MAIL** komutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -901,13 +901,13 @@ virtual void PreCloseFrame(CFrameWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFrame`  
- İşaretçi [CFrameWnd](../../mfc/reference/cframewnd-class.md) ilişkili tutan **CDocument** nesnesi.  
+ *pFrame*  
+ İşaretçi [CFrameWnd](../../mfc/reference/cframewnd-class.md) ilişkili tutan `CDocument` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Özel temizleme sağlar, ancak temel sınıfı da çağırdığınızdan emin kılınabilir.  
   
- Varsayılan değer olan `PreCloseFrame` hiçbir şey yapmaz **CDocument**. **CDocument**-türetilmiş sınıfları [COleDocument](../../mfc/reference/coledocument-class.md) ve [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md) bu üye işlevini kullanın.  
+ Varsayılan değer olan `PreCloseFrame` hiçbir şey yapmaz `CDocument`. `CDocument`-Türetilmiş sınıfları [COleDocument](../../mfc/reference/coledocument-class.md) ve [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md) bu üye işlevini kullanın.  
   
 ##  <a name="readnextchunkvalue"></a>  CDocument::ReadNextChunkValue  
  Sonraki öbek değerini okur.  
@@ -917,8 +917,8 @@ virtual BOOL ReadNextChunkValue(IFilterChunkValue** ppValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ppValue`  
- [out] İşlevi döndüğünde `ppValue` okundu değeri içerir.  
+ *ppValue*  
+ [out] İşlevi döndüğünde *ppValue* okundu değeri içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
@@ -935,16 +935,16 @@ virtual void ReleaseFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFile`  
+ *pFile*  
  CFile nesne serbest bırakılacak bir işaretçi.  
   
- `bAbort`  
+ *bAbort*  
  Dosyanın kullanarak yayımlanacak olup olmadığını belirtir `CFile::Close` veya `CFile::Abort`. **YANLIŞ** dosya kullanarak yayımlanacak ise [CFile::Close](../../mfc/reference/cfile-class.md#close); **TRUE** dosya kullanarak yayımlanacak ise [CFile::Abort](../../mfc/reference/cfile-class.md#abort).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bAbort` olan **TRUE**, `ReleaseFile` çağrıları `CFile::Abort`, ve dosyayı serbest bırakılır. `CFile::Abort` bir özel durum oluşturmayacaksa.  
+ Varsa *bAbort* olan **TRUE**, `ReleaseFile` çağrıları `CFile::Abort`, ve dosyayı serbest bırakılır. `CFile::Abort` bir özel durum oluşturmayacaksa.  
   
- Varsa `bAbort` olan **FALSE**, `ReleaseFile` çağrıları `CFile::Close` ve dosyayı serbest bırakılır.  
+ Varsa *bAbort* olan **FALSE**, `ReleaseFile` çağrıları `CFile::Close` ve dosyayı serbest bırakılır.  
   
  Dosya yayımlanmadan önce kullanıcı tarafından bir eylem gerektirecek şekilde bu üye işlevi geçersiz kılar.  
   
@@ -958,10 +958,10 @@ virtual void RemoveChunk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `Guid`  
+ *GUID*  
  Kaldırılacak bir öbek GUİD'si belirtir.  
   
- `Pid`  
+ *PID*  
  Kaldırılacak bir öbek PID belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -974,7 +974,7 @@ void RemoveView(CView* pView);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pView`  
+ *pView*  
  Kaldırılmakta olan Görünüm noktalarına.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -996,7 +996,7 @@ virtual void ReportSaveLoadException(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszPathName`  
+ *lpszPathName*  
  İşaret çalıştırılmakta belge adına kaydedilmiş veya yüklenemedi.  
   
  *e*  
@@ -1005,11 +1005,11 @@ virtual void ReportSaveLoadException(
  *bSaving*  
  Hangi işlemi devam ederken belirten bayrak; Belge değiştirilirken, sıfır olmayan kaydettiyseniz, 0 belge yüklendi.  
   
- `nIDPDefault`  
+ *nIDPDefault*  
  İşlev daha belirli bir belirlemezse görüntülenecek hata iletisi tanımlayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama, özel durum nesnesini inceler ve özellikle nedenini açıklayan bir hata iletisi görünür. Belirli bir ileti bulunamadı veya gerekiyorsa *e* olan **NULL**, tarafından belirtilen genel bir ileti `nIDPDefault` parametresi kullanılır. İşlev sonra hata iletisini içeren bir ileti kutusu görüntüler. Özelleştirilmiş, ek hata iletileri sağlamak istiyorsanız bu işlev geçersiz kılar. Gelişmiş budur geçersiz kılınabilir.  
+ Varsayılan uygulama, özel durum nesnesini inceler ve özellikle nedenini açıklayan bir hata iletisi görünür. Belirli bir ileti bulunamadı veya gerekiyorsa *e* olan **NULL**, tarafından belirtilen genel bir ileti *nIDPDefault* parametresi kullanılır. İşlev sonra hata iletisini içeren bir ileti kutusu görüntüler. Özelleştirilmiş, ek hata iletileri sağlamak istiyorsanız bu işlev geçersiz kılar. Gelişmiş budur geçersiz kılınabilir.  
   
 ##  <a name="savemodified"></a>  CDocument::SaveModified  
  Değiştirilmiş bir belgeyi kapatılması önce çerçevesi tarafından çağrılır.  
@@ -1032,7 +1032,7 @@ virtual BOOL SetChunkValue (IFilterChunkValue* pValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pValue`  
+ *pValue*  
  Ayarlamak için bir öbek değer belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1048,11 +1048,11 @@ virtual void SetModifiedFlag(BOOL bModified = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bModified`  
+ *bModified*  
  Belge değişiklik olup olmadığını belirten bayrak.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev tutarlı bir şekilde çağırarak framework bir belgeyi kapatmadan önce değişiklikleri kaydetmek için kullanıcı komut istemleri emin olun. Genellikle varsayılan değeri kullanması gereken **TRUE** için `bModified` parametresi. Temiz bir belge (değiştirilmemiş) işaretlemek için değerini bu işlev çağrısı **FALSE**.  
+ Bu işlev tutarlı bir şekilde çağırarak framework bir belgeyi kapatmadan önce değişiklikleri kaydetmek için kullanıcı komut istemleri emin olun. Genellikle varsayılan değeri kullanması gereken **TRUE** için *bModified* parametresi. Temiz bir belge (değiştirilmemiş) işaretlemek için değerini bu işlev çağrısı **FALSE**.  
   
 ##  <a name="setpathname"></a>  CDocument::SetPathName  
  Belgenin disk dosyasının tam yolunu belirtmek için bu işlevini çağırın.  
@@ -1064,14 +1064,14 @@ virtual void SetPathName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszPathName`  
+ *lpszPathName*  
  Belge için yol olarak kullanılacak dizeye noktaları.  
   
- `bAddToMRU`  
+ *bAddToMRU*  
  Dosya adı eklenir olup olmadığını en son (MRU) dosya listesi kullanılan belirler. Varsa **TRUE,** filename; eklenir **yanlış**, onu eklenmez.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Değerine bağlı olarak `bAddToMRU` yol eklenen veya, uygulama tarafından tutulan MRU listesine eklenmedi. Bazı belgeleri bir disk dosyası ile ilişkili değildir. Bu işlev yalnızca çerçevesi tarafından kullanılan dosyaları açma ve kaydetme için varsayılan uygulama kılıyorsa çağırın.  
+ Değerine bağlı olarak *bAddToMRU* yol eklenen veya, uygulama tarafından tutulan MRU listesine eklenmedi. Bazı belgeleri bir disk dosyası ile ilişkili değildir. Bu işlev yalnızca çerçevesi tarafından kullanılan dosyaları açma ve kaydetme için varsayılan uygulama kılıyorsa çağırın.  
   
 ##  <a name="settitle"></a>  CDocument::SetTitle  
  Belgenin başlığı (dize bir çerçeve penceresinin başlık çubuğunda görüntülenir) belirtmek için bu işlevini çağırın.  
@@ -1081,7 +1081,7 @@ virtual void SetTitle(LPCTSTR lpszTitle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszTitle`  
+ *lpszTitle*  
  Belgenin başlığı olarak kullanılacak dizeye noktaları.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1098,19 +1098,19 @@ void UpdateAllViews(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pSender`  
+ *pSender*  
  İşaret belge değiştiren görünümüne veya **NULL** tüm görünümleri güncelleştirilmesi gerekiyorsa.  
   
- `lHint`  
+ *lHint*  
  Değiştirme hakkında bilgi içerir.  
   
- `pHint`  
+ *pHint*  
  Nesneyi değiştirme hakkında bilgi depolamak için noktaları.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırdıktan sonra bu işlev çağırmalıdır [SetModifiedFlag](#setmodifiedflag) üye işlevi. Bu işlev tarafından belirtilen görünümü dışında belgeye bağlı her görünüm bildirir `pSender`, belgenin değiştirilmiş. Kullanıcı bir görünümü aracılığıyla belge değiştikten sonra Görünüm sınıfından genellikle bu işlevini çağırın.  
+ Çağırdıktan sonra bu işlev çağırmalıdır [SetModifiedFlag](#setmodifiedflag) üye işlevi. Bu işlev tarafından belirtilen görünümü dışında belgeye bağlı her görünüm bildirir *pSender*, belgenin değiştirilmiş. Kullanıcı bir görünümü aracılığıyla belge değiştikten sonra Görünüm sınıfından genellikle bu işlevini çağırın.  
   
- Bu işlev çağrılarını [CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate) üye işlevi her gönderme dışında belgenin görünümleri görüntülemek, geçirme `pHint` ve `lHint`. Görünümlere belgede yapılan değişiklikler hakkında bilgi geçirmek için şu parametreleri kullan. Bilgi kodlama `lHint` ve/veya tanımlayabileceğiniz bir [CObject](../../mfc/reference/cobject-class.md)-türetilmiş sınıf değişiklikler hakkında bilgi depolamak ve bu sınıfı kullanarak bir nesneyi geçirmek için `pHint`. Geçersiz kılma `CView::OnUpdate` üye işlevinde, [CView](../../mfc/reference/cview-class.md)-türetilmiş sınıf geçirilen bilgilere göre görünümün görüntüleme güncelleştirme en iyi duruma getirme.  
+ Bu işlev çağrılarını [CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate) üye işlevi her gönderme dışında belgenin görünümleri görüntülemek, geçirme *pHint* ve *lHint*. Görünümlere belgede yapılan değişiklikler hakkında bilgi geçirmek için şu parametreleri kullan. Bilgi kodlama *lHint* ve/veya tanımlayabileceğiniz bir [CObject](../../mfc/reference/cobject-class.md)-türetilmiş sınıf değişiklikler hakkında bilgi depolamak ve bu sınıfı kullanarak bir nesneyi geçirmek için *pHint*. Geçersiz kılma `CView::OnUpdate` üye işlevinde, [CView](../../mfc/reference/cview-class.md)-türetilmiş sınıf geçirilen bilgilere göre görünümün görüntüleme güncelleştirme en iyi duruma getirme.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#64](../../mfc/codesnippet/cpp/cdocument-class_9.cpp)]  

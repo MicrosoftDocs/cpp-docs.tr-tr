@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 923b1b74a50fd13a57c1d9c7696f81acb28453e3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b762c3abb5f57574dc2a60d6b2145af2e0c0484b
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33356544"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952106"
 ---
 # <a name="canimationvalue-class"></a>CAnimationValue sınıfı
 Bir değere sahip animasyon nesnesinin işlevselliğini uygular.  
@@ -104,7 +104,7 @@ void AddTransition(CBaseTransition* pTransition);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pTransition`  
+ *pTransition*  
  Geçiş nesnesine bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -125,16 +125,16 @@ CAnimationValue(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dblDefaultValue`  
+ *dblDefaultValue*  
  Varsayılan bir değer belirtir.  
   
- `nGroupID`  
+ *nGroupID*  
  Grup kimliğini belirtir.  
   
- `nObjectID`  
+ *nObjectID*  
  Nesne kimliğini belirtir.  
   
- `dwUserData`  
+ *dwUserData*  
  Kullanıcı tanımlı veri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -150,7 +150,7 @@ virtual void GetAnimationVariableList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lst`  
+ *lst*  
  İşlevi döndüğünde CAnimationVariable animasyonlu değerini gösteren bir işaretçi içeriyor.  
   
 ##  <a name="getvalue"></a>  CAnimationValue::GetValue  
@@ -162,10 +162,10 @@ BOOL GetValue(INT32& nValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dblValue`  
+ *dblValue*  
  Çıktı. İşlevi döndüğünde animasyon değişkenin geçerli bir değer içerir.  
   
- `nValue`  
+ *nDeğer*  
  Çıktı. İşlevi döndüğünde animasyon değişkenin geçerli bir değer içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -229,10 +229,10 @@ void operator=(INT32 nVal);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dblVal`  
+ *dblVal*  
  Animasyon değerine atanacak değeri belirtir.  
   
- `nVal`  
+ *nVal*  
  Animasyon değerine atanacak değeri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -246,7 +246,7 @@ void SetDefaultValue(DOUBLE dblDefaultValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dblDefaultValue`  
+ *dblDefaultValue*  
  Varsayılan değer belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

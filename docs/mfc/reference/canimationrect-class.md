@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b08f8d5ad1fa7c925e3a6dc2243079aba21452b7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3959ae03d40bac93ca6453c254e894b8782f5333
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357093"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957204"
 ---
 # <a name="canimationrect-class"></a>CAnimationRect sınıfı
 İki tarafı da animasyonlu dikdörtgen işlevlerini uygular.  
@@ -139,16 +139,16 @@ void AddTransition(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pLeftTransition`  
+ *pLeftTransition*  
  Sol tarafta için geçişi belirtir.  
   
- `pTopTransition`  
+ *pTopTransition*  
  Üst tarafı için geçiş belirtir.  
   
- `pRightTransition`  
+ *pRightTransition*  
  Geçiş için sağ tarafında belirtir.  
   
- `pBottomTransition`  
+ *pBottomTransition*  
  Alt kenar için geçişi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -187,34 +187,34 @@ CAnimationRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rect`  
+ *Rect*  
  Varsayılan dikdörtgen belirtir.  
   
- `nGroupID`  
+ *nGroupID*  
  Grup kimliğini belirtir.  
   
- `nObjectID`  
+ *nObjectID*  
  Nesne kimliğini belirtir.  
   
- `dwUserData`  
+ *dwUserData*  
  Kullanıcı tanımlı veri belirtir.  
   
- `pt`  
+ *PT*  
  Sol üst köşede koordinatı.  
   
- `sz`  
+ *SZ*  
  Dikdörtgen boyutu.  
   
- `nLeft`  
+ *nLeft*  
  Sol bağlı koordinatını belirtir.  
   
- `nTop`  
+ *nTop*  
  Bağlı üst koordinatını belirtir.  
   
- `nRight`  
+ *nRight*  
  Sağ bağlı koordinatını belirtir.  
   
- `nBottom`  
+ *nBottom*  
  Bağlı alt koordinatını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -230,7 +230,7 @@ virtual void GetAnimationVariableList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lst`  
+ *lst*  
  İşlevi döndüğünde dikdörtgen koordinatlarını temsil eden dört CAnimationVariable nesnelerine işaretçiler içerir.  
   
 ##  <a name="getbottom"></a>  CAnimationRect::GetBottom  
@@ -306,7 +306,7 @@ BOOL GetValue(CRect& rect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rect`  
+ *Rect*  
  Çıktı. Bu yöntem döndürüldüğünde geçerli değeri içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -381,7 +381,7 @@ void operator=(const RECT& rect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rect`  
+ *Rect*  
  Animasyon dikdörtgen yeni değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -395,7 +395,7 @@ void SetDefaultValue(const CRect& rect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rect`  
+ *Rect*  
  Sol, üst, sağ ve alt yeni varsayılan değerleri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

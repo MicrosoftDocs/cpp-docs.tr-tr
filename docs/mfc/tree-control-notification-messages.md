@@ -18,30 +18,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7c352da9f9283f53c926a8223984620ee7fa6ce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 92035d3f1a20a0fd9cc0c7b95d7238ef014033da
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385742"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36950973"
 ---
 # <a name="tree-control-notification-messages"></a>Ağaç Denetimi Bildirim İletileri
-Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) olarak aşağıdaki bildirim iletileri gönderir **wm_notıfy** iletileri:  
+Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) wm_notıfy iletileri olarak aşağıdaki bildirim iletileri gönderir:  
   
 |Bildirim iletisi|Açıklama|  
 |--------------------------|-----------------|  
-|**TVN_BEGINDRAG**|Sürükle ve bırak işlemi başlangıcı işaret eder|  
-|**TVN_BEGINLABELEDIT**|Yerinde etiket düzenleme başlangıcı işaret eder|  
-|**TVN_BEGINRDRAG**|Farenin sağ düğmesiyle bir Sürükle ve bırak işlemi başlangıcı işaret eder|  
-|**TVN_DELETEITEM**|Belirli bir öğeyi silme işaret eder|  
-|**TVN_ENDLABELEDIT**|Etiket düzenleme sonu işaret eder|  
-|**TVN_GETDISPINFO**|Ağaç denetimi öğeyi görüntülemek için gerektirdiği istekleri bilgiler|  
-|**TVN_ITEMEXPANDED**|Bir üst öğenin alt öğeleri listesi genişletilmiş veya daraltılmış olduğunu sinyalleri|  
-|**TVN_ITEMEXPANDING**|Bir üst öğenin alt öğeleri hakkında genişletilmiş veya daraltılmış listesidir sinyalleri|  
-|**TVN_KEYDOWN**|Klavye olay işaret eder|  
-|**TVN_SELCHANGED**|Seçimi bir öğe başka değişti sinyalleri|  
-|**TVN_SELCHANGING**|Bir öğeden diğerine değiştirilmek üzere seçimdir sinyalleri|  
-|**TVN_SETDISPINFO**|Bir öğe için tutulan bilgileri güncelleştirmek için bildirim|  
+|TVN_BEGINDRAG|Sürükle ve bırak işlemi başlangıcı işaret eder|  
+|TVN_BEGINLABELEDIT|Yerinde etiket düzenleme başlangıcı işaret eder|  
+|TVN_BEGINRDRAG|Farenin sağ düğmesiyle bir Sürükle ve bırak işlemi başlangıcı işaret eder|  
+|TVN_DELETEITEM|Belirli bir öğeyi silme işaret eder|  
+|TVN_ENDLABELEDIT|Etiket düzenleme sonu işaret eder|  
+|TVN_GETDISPINFO|Ağaç denetimi öğeyi görüntülemek için gerektirdiği istekleri bilgiler|  
+|TVN_ITEMEXPANDED|Bir üst öğenin alt öğeleri listesi genişletilmiş veya daraltılmış olduğunu sinyalleri|  
+|TVN_ITEMEXPANDING|Bir üst öğenin alt öğeleri hakkında genişletilmiş veya daraltılmış listesidir sinyalleri|  
+|TVN_KEYDOWN|Klavye olay işaret eder|  
+|TVN_SELCHANGED|Seçimi bir öğe başka değişti sinyalleri|  
+|TVN_SELCHANGING|Bir öğeden diğerine değiştirilmek üzere seçimdir sinyalleri|  
+|TVN_SETDISPINFO|Bir öğe için tutulan bilgileri güncelleştirmek için bildirim|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   

@@ -23,24 +23,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2acc0d6df4495ed38e7c5a6a34dcfd70108f34b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8ed0fc9a18278c4e603b9ddae5197f6b5d03ee21
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385657"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36950953"
 ---
 # <a name="tn054-calling-dao-directly-while-using-mfc-dao-classes"></a>TN054: MFC DAO Sınıflarını Kullanırken DAO'yu Doğrudan Çağırma
 > [!NOTE]
 >  Visual C++ ortamı ve sihirbazları DAO (DAO sınıfları dahil edilmiştir ve bunları kullanmaya devam edebilirsiniz ancak) desteklemez. Microsoft, kullanmanızı önerir [OLE DB Şablonları](../data/oledb/ole-db-templates.md) veya [ODBC ve MFC](../data/odbc/odbc-and-mfc.md) yeni projeler için. Yalnızca var olan uygulamaları sürdürmek DAO kullanmanız gerekir.  
   
- MFC DAO veritabanı sınıfları kullanırken DAO doğrudan kullanmak için gerekli olduğu durumlar olabilir. Genellikle, bu durumda olmayacak, ancak MFC yapmayı doğrudan DAO çağrıları basit MFC sınıfları kullanımını doğrudan DAO aramaları birleştirilirken kolaylaştırmak için bazı yardımcı mekanizmalar sağlamıştır. Bir MFC yönetilen DAO nesne yöntemlerinin çağrıları doğrudan DAO yapmadan yalnızca birkaç satır kod istemeniz gerekir. DAO nesneleri oluşturmak gereken *değil* MFC tarafından yönetilen, aslında çağırarak biraz daha fazla iş yapmanız gerekecek **sürüm** nesne üzerinde. Bu teknik Not zaman doğrudan çağırmak isteyebilirsiniz, MFC Yardımcıları yardımcı olması için yapabilirsiniz ve DAO OLE arabirimleri kullanmayı açıklar. Son olarak, bu Not DAO güvenlik özellikleri doğrudan çağırmak nasıl gösteren bazı örnek işlevleri sağlar.  
+ MFC DAO veritabanı sınıfları kullanırken DAO doğrudan kullanmak için gerekli olduğu durumlar olabilir. Genellikle, bu durumda olmayacak, ancak MFC yapmayı doğrudan DAO çağrıları basit MFC sınıfları kullanımını doğrudan DAO aramaları birleştirilirken kolaylaştırmak için bazı yardımcı mekanizmalar sağlamıştır. Bir MFC yönetilen DAO nesne yöntemlerinin çağrıları doğrudan DAO yapmadan yalnızca birkaç satır kod istemeniz gerekir. DAO nesneleri oluşturmak gereken *değil* MFC tarafından yönetilen, aslında çağırarak biraz daha fazla iş yapmanız gerekecek `Release` nesne üzerinde. Bu teknik Not zaman doğrudan çağırmak isteyebilirsiniz, MFC Yardımcıları yardımcı olması için yapabilirsiniz ve DAO OLE arabirimleri kullanmayı açıklar. Son olarak, bu Not DAO güvenlik özellikleri doğrudan çağırmak nasıl gösteren bazı örnek işlevleri sağlar.  
   
 ## <a name="when-to-make-direct-dao-calls"></a>Doğrudan DAO çağrıları yapma zamanı  
  Ne zaman MFC tarafından Sarmalanan değil özelliklerini uygulama veya koleksiyonlar yenilenmesi gerektiğinde doğrudan DAO çağrıları yapma için en yaygın durumlar oluşabilir. MFC tarafından gösterilmeyen en önemli güvenlik özelliğidir. Güvenlik özellikleri uygulamak istiyorsanız, DAO kullanıcıları ve grupları nesneleri doğrudan kullanmanız gerekir. Güvenlik yanı sıra, MFC tarafından desteklenmeyen yalnızca birkaç diğer DAO özellikleri vardır. Bunlar, DAO birkaç geç eklemeler yanı sıra kayıt kümesi kopyalama ve veritabanı çoğaltma özellikleri içerir.  
   
 ## <a name="a-brief-overview-of-dao-and-mfcs-implementation"></a>DAO ve MFC'nin uygulaması kısa bir genel bakış  
- MFC'nin kaydırma DAO bağlamak çok az şey hakkında endişelenmeniz gerekmez şekilde ayrıntılarına işleyerek DAO kullanarak daha kolay hale getirir. Bu OLE, oluşturulmasını ve yönetimini DAO nesneleri (özellikle koleksiyonu), hata denetleme ve kesin türü belirtilmiş, daha basit bir arabirim sağlayan başlatılması içerir (hiçbir **değişken** veya `BSTR` bağımsız değişkenler). Doğrudan DAO çağrıları yapma ve hala bu özelliklerden yararlanabilir. Kodunuzu gerçekleştirmelisiniz tümüdür çağrısı **sürüm** doğrudan DAO tarafından oluşturulan tüm nesneler için çağırır ve *değil* MFC üzerinde dahili olarak biçimlendirmenizi arabirim işaretçileri düzenleyin. Örneğin, değiştirmeyin **m_pDAORecordset** açık bir üyesi `CDaoRecordset` , anlamadan nesne *tüm* iç ayrımlar. Ancak, kullanabilirsiniz **m_pDAORecordset** doğrudan alanlar koleksiyonu almak için çağırmak için arabirim. Bu durumda **m_pDAORecordset** üyesi değişiklik. Yalnızca çağrı zorunda **sürüm** nesnesiyle bittiğinde alanlar koleksiyonu nesne üzerinde.  
+ MFC'nin kaydırma DAO bağlamak çok az şey hakkında endişelenmeniz gerekmez şekilde ayrıntılarına işleyerek DAO kullanarak daha kolay hale getirir. Bu OLE, oluşturulmasını ve yönetimini DAO nesneleri (özellikle koleksiyonu), hata denetleme ve kesin türü belirtilmiş, daha basit bir arabirim sağlayan başlatılması içerir (hiçbir **değişken** veya `BSTR` bağımsız değişkenler). Doğrudan DAO çağrıları yapma ve hala bu özelliklerden yararlanabilir. Kodunuzu gerçekleştirmelisiniz tümüdür çağrısı `Release` doğrudan DAO tarafından oluşturulan tüm nesneler için çağırır ve *değil* MFC üzerinde dahili olarak biçimlendirmenizi arabirim işaretçileri düzenleyin. Örneğin, değiştirmeyin *m_pDAORecordset* açık bir üyesi `CDaoRecordset` , anlamadan nesne *tüm* iç ayrımlar. Ancak, kullanabilirsiniz *m_pDAORecordset* doğrudan alanlar koleksiyonu almak için çağırmak için arabirim. Bu durumda *m_pDAORecordset* üyesi değişiklik. Yalnızca çağrı zorunda `Release` nesnesiyle bittiğinde alanlar koleksiyonu nesne üzerinde.  
   
 ## <a name="description-of-helpers-to-make-dao-calls-easier"></a>DAO yapmak için Yardımcıları açıklaması daha kolay çağırır  
  DAO çağırma daha kolay yapmak için sağlanan Yardımcıları MFC DAO veritabanı sınıfları dahili olarak kullanılan aynı yardımcılardır. Bu Yardımcıları beklenen hatalarını denetleme ve gerekirse uygun özel durumları atma hata ayıklama çıktısı günlüğü doğrudan bir DAO arama yaparken dönüş kodlarını denetlemek için kullanılır. İki temel yardımcı işlevleri ve bu iki Yardımcıları birine eşleme dört makroları vardır. En iyi açıklama kod okumaya olacaktır. Bkz: **DAO_CHECK**, **DAO_CHECK_ERROR**, **DAO_CHECK_MEM**, ve **DAO_TRACE** AFXDAO içinde. Makroları bakın ve görmek için H **AfxDaoCheck** ve **AfxDaoTrace** DAOCORE içinde. CPP.  
@@ -48,9 +48,9 @@ ms.locfileid: "33385657"
 ## <a name="using-the-dao-ole-interfaces"></a>DAO OLE arabirimleri kullanarak  
  DAO nesne hiyerarşideki her nesne için OLE arabirimleri DBDAOINT üstbilgi dosyasında tanımlanır. H \Program Visual Studio .NET 2003\VC7\include dizininde bulunur. Bu arabirimleri DAO hiyerarşinin değiştirmenize izin veren yöntemler sağlar.  
   
- Çoğu DAO arabirimleri yöntemlere işlemek gerekecek bir `BSTR` nesne (OLE Otomasyon kullanılan bir uzunluk önek dizesi). `BSTR` Nesne genellikle kapsüllenmiş içinde **değişken** veri türü. MFC sınıf `COleVariant` kendisini devraldığı **değişken** veri türü. Olup, projenizin ANSI veya Unicode için yapı bağlı olarak, DAO arabirimleri ANSI veya Unicode döndürülecek `BSTR`s. İki makroları **V_BSTR** ve **V_BSTRT**, DAO arabirim sağlayan alır için yararlı olan `BSTR` beklenen türünün örneği.  
+ Çoğu DAO arabirimleri yöntemlere işlemek gerekecek bir `BSTR` nesne (OLE Otomasyon kullanılan bir uzunluk önek dizesi). `BSTR` Nesne genellikle kapsüllenmiş içinde **değişken** veri türü. MFC sınıf `COleVariant` kendisini devraldığı **değişken** veri türü. Olup, projenizin ANSI veya Unicode için yapı bağlı olarak, DAO arabirimleri ANSI veya Unicode döndürülecek `BSTR`s. DAO arabirim sağlayan alır için V_BSTR ve V_BSTRT, iki makroları yararlı `BSTR` beklenen türünün örneği.  
   
- **V_BSTR** ayıklanır **bstrVal** üyesi bir `COleVariant`. İçeriğini geçmesi gerektiğinde bu makrosu genelde kullanılan bir `COleVariant` bir yönteme DAO arabirimi. Aşağıdaki kod parçası bildirimler ve yararlanmak DAO DAOUser arabiriminin iki yöntem için gerçek kullanım gösterir **V_BSTR** makrosu:  
+ V_BSTR ayıklamak *bstrVal* üyesi bir `COleVariant`. İçeriğini geçmesi gerektiğinde bu makrosu genelde kullanılan bir `COleVariant` bir yönteme DAO arabirimi. Aşağıdaki kod parçası bildirimler ve DAO DAOUser arabiriminin V_BSTR makrosu yararlanmak iki yöntem için gerçek kullanımı gösterilmektedir:  
   
 ```  
 COleVariant varOldName;  
@@ -71,7 +71,7 @@ DAO_CHECK(pUser->put_Name(V_BSTR (&varNewName)));
   
  Unutmayın `VT_BSTRT` belirtilen bağımsız değişken `COleVariant` Oluşturucusu yukarıdaki sağlar ANSI olacaktır `BSTR` içinde `COleVariant` uygulamanız ve bir Unicode ANSI sürümü yapı varsa `BSTR` Unicode sürümü için Uygulamanızı. Ne DAO bekliyor budur.  
   
- Diğer makro **V_BSTRT**, ANSI veya Unicode ayıklanır **bstrVal** üyesi `COleVariant` yapı (ANSI veya Unicode) türüne bağlı olarak. Aşağıdaki kodda ayıklamak gösterilmiştir `BSTR` değeri bir `COleVariant` içine bir `CString`:  
+ Diğer makro V_BSTRT, ANSI veya Unicode ayıklanır *bstrVal* üyesi `COleVariant` yapı (ANSI veya Unicode) türüne bağlı olarak. Aşağıdaki kodda ayıklamak gösterilmiştir `BSTR` değeri bir `COleVariant` içine bir `CString`:  
   
 ```  
 COleVariant varName(_T("MyName"), VT_BSTRT);
@@ -79,10 +79,10 @@ COleVariant varName(_T("MyName"), VT_BSTRT);
 CString str = V_BSTRT(&varName);
 ```  
   
- **V_BSTRT** depolanan diğer türleri açmak için başka teknikler birlikte makrosu `COleVariant`, DAOVIEW örnekte gösterilmiştir. Bu çevirme özellikle gerçekleştirilir **CCrack::strVARIANT** yöntemi. Bu yöntem, mümkün olduğunda, değerini çevirir bir `COleVariant` örneğine `CString`.  
+ İçinde depolanan diğer türleri açmak için başka teknikler birlikte V_BSTRT makrosu `COleVariant`, DAOVIEW örnekte gösterilmiştir. Bu çevirme özellikle gerçekleştirilir `CCrack::strVARIANT` yöntemi. Bu yöntem, mümkün olduğunda, değerini çevirir bir `COleVariant` örneğine `CString`.  
   
 ## <a name="simple-example-of-a-direct-call-to-dao"></a>DAO doğrudan arama basit örneği  
- Arka plandaki DAO koleksiyonu nesneleri yenilemek gerekli olduğunda durumlar oluşabilir. Genellikle bu gerekli olmamalıdır, ancak gerekli değilse basit bir yordam değil. Çok kullanıcılı bir ortamda yeni tabledefs oluşturma birden fazla kullanıcı ile çalışırken bir koleksiyon yenilenmesi gerektiğinde, bir örnek verilmiştir. Bu durumda, tabledefs koleksiyonu eski hale gelebilir. Koleksiyon yenilemek için arama yeterlidir **yenileme** belirli koleksiyon nesnesi ve onay yöntemi hataları için:  
+ Arka plandaki DAO koleksiyonu nesneleri yenilemek gerekli olduğunda durumlar oluşabilir. Genellikle bu gerekli olmamalıdır, ancak gerekli değilse basit bir yordam değil. Çok kullanıcılı bir ortamda yeni tabledefs oluşturma birden fazla kullanıcı ile çalışırken bir koleksiyon yenilenmesi gerektiğinde, bir örnek verilmiştir. Bu durumda, tabledefs koleksiyonu eski hale gelebilir. Koleksiyon yenilemek için arama yeterlidir `Refresh` belirli koleksiyon nesnesi ve onay yöntemi hataları için:  
   
 ```  
 DAO_CHECK(pMyDaoDatabase->  

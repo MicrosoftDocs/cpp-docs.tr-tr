@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4129f57d8985a6e3368a4caf3574669342f06bc0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 36f8a038cd282ddf233fe2cf15a134c52962ebff
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366479"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953707"
 ---
 # <a name="cdcrendertarget-class"></a>CDCRenderTarget sınıfı
 ID2D1DCRenderTarget için sarmalayıcı.  
@@ -94,7 +94,7 @@ void Attach(ID2D1DCRenderTarget* pTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pTarget`  
+ *pTarget*  
  Varolan işleme hedefi arabirimi. NULL olamaz  
   
 ##  <a name="binddc"></a>  CDCRenderTarget::BindDC  
@@ -107,10 +107,10 @@ BOOL BindDC(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dc`  
+ *DC*  
  İşleme hedefi çizim komutları sorunların cihaz bağlamı  
   
- `rect`  
+ *Rect*  
  İşleme hedefi bağlı olduğu bir cihaz bağlamı (HDC) tanıtıcısını boyutları  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -131,7 +131,7 @@ BOOL Create(const D2D1_RENDER_TARGET_PROPERTIES& props);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `props`  
+ *özellik*  
  İşleme modunu, piksel biçimi, uzaktan iletişim seçenekleri, DPI bilgi ve donanım işleme için gereken en düşük DirectX desteği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41b6aa602956c6dcdeda8f6b8c24c1be48c58ce2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8ecb761caaeabdd9b4d77f1713bd79a812a3c1a9
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33358488"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952498"
 ---
 # <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
 Bir uygulama yazdığınızda, tek bir oluşturma [CWinApp](../../mfc/reference/cwinapp-class.md)-türetilmiş bir nesne içermelidir. Bazen bu nesneden dışında hakkında bilgi edinmek isteyebilirsiniz `CWinApp`-türetilmiş bir nesne içermelidir. Veya diğer genel "mananger'a" nesnelere erişimi gerekebilir.
@@ -84,7 +84,7 @@ CWinThread* AfxBeginThread(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pfnThreadProc`  
+ *pfnThreadProc*  
  Çalışan iş parçacığı için denetleme işlevi noktalarına. Olamaz **NULL**. Bu işlevi aşağıdaki gibi bildirilmesi gerekir:  
   
  `UINT __cdecl MyControllingFunction( LPVOID pParam );`  
@@ -93,22 +93,22 @@ CWinThread* AfxBeginThread(
  Bir nesnenin RUNTIME_CLASS türetilen [CWinThread](../../mfc/reference/cwinthread-class.md).  
   
  *pParam*  
- İşlevi bildiriminde parametresi gösterildiği gibi denetleyen işlev iletilecek parametre `pfnThreadProc`.  
+ İşlevi bildiriminde parametresi gösterildiği gibi denetleyen işlev iletilecek parametre *pfnThreadProc*.  
   
- `nPriority`  
+ *nPriority*  
  İş parçacığı istenen önceliği. Tam listesi ve kullanılabilir öncelikleri açıklaması için bkz: [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) Windows SDK'sındaki.  
   
- `nStackSize`  
+ *nStackSize*  
  Yeni bir iş parçacığı yığınının bayt cinsinden boyutu belirtir. 0 ise, yığın boyutu aynı boyutu yığın oluşturma iş parçacığı olarak varsayılan olarak ayarlanır.  
   
- `dwCreateFlags`  
+ *dwCreateFlags*  
  İş parçacığı oluşturma denetimleri ek bir bayrak belirtir. Bu bayrak iki değerden birini içerir:  
   
 - **AfxBeginThread'e** bir askıya alma sayısına ile iş parçacığı başlatılamıyor. Kullanım **AfxBeginThread'e** , herhangi bir üye veri başlatmak istiyorsanız `CWinThread` gibi nesne [m_bAutoDelete](../../mfc/reference/cwinthread-class.md#m_bautodelete) veya tüm üyeleri çalışan iş parçacığı başlamadan önce türetilmiş sınıf. Başlatma tamamlandıktan sonra kullanmak [CWinThread::ResumeThread](../../mfc/reference/cwinthread-class.md#resumethread) için çalışan iş parçacığı başlatılamıyor. İş parçacığı kadar yürütmez `CWinThread::ResumeThread` olarak adlandırılır.  
   
 - **0** hemen oluşturulduktan sonra iş parçacığı başlatılamıyor.  
   
- `lpSecurityAttrs`  
+ *lpSecurityAttrs*  
  İşaret eden bir [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) iş parçacığı için güvenlik özniteliklerini belirtir yapısı. Varsa **NULL**, aynı güvenlik nitelikler oluşturma iş parçacığı kullanılır. Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -175,7 +175,7 @@ Kullanım `AfxFindResourceHandle` kaynak zinciri yol ve belirli bir kaynak taraf
 HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );  
 ```
 ### <a name="parameters"></a>Parametreler  
- `lpszName`  
+ *lpszName*  
  Kaynak kimliği içeren bir dize için bir işaretçi    
  *lpszType*  
  Kaynak türü için bir işaretçi. Kaynak türleri listesi için bkz: [FindResource](http://msdn.microsoft.com/library/windows/desktop/ms648042) Windows SDK'sındaki.  
@@ -225,7 +225,7 @@ BOOL AFXAPI AfxFreeLibrary(HINSTANCE hInstLib);
   
  Kullanım `AfxLoadLibrary` DLL modülü eşlemek için.  
   
- Kullandığınızdan emin olun `AfxFreeLibrary` ve `AfxLoadLibrary` (Win32 işlevleri yerine **FreeLibrary** ve **LoadLibrary**) uygulamanız birden çok iş parçacığı kullanıyorsa. Kullanarak `AfxLoadLibrary` ve `AfxFreeLibrary` MFC uzantı DLL yüklendiğinde ve kaldırıldığında genel MFC durumunu bozuk olmayan yürütülen başlatma ve kapatma kodunun sağlar.  
+ Kullandığınızdan emin olun `AfxFreeLibrary` ve `AfxLoadLibrary` (Win32 işlevleri yerine `FreeLibrary` ve `LoadLibrary`) uygulamanız birden çok iş parçacığı kullanıyorsa. Kullanarak `AfxLoadLibrary` ve `AfxFreeLibrary` MFC uzantı DLL yüklendiğinde ve kaldırıldığında genel MFC durumunu bozuk olmayan yürütülen başlatma ve kapatma kodunun sağlar.  
   
 ### <a name="example"></a>Örnek  
  Örneğin bkz [AfxLoadLibrary](#afxloadlibrary).  
@@ -297,12 +297,12 @@ CWnd* AFXAPI AfxGetMainWnd();
 ### <a name="return-value"></a>Dönüş Değeri  
  Yerinde bir nesne sunucusu varsa, etkin bir kapsayıcı ve bu kapsayıcı içindeki etkin, bu işlev, yerinde etkin belge çerçeve penceresi nesnesine bir işaretçi döndürür.  
   
- Bir kapsayıcıdaki yerinde etkin nesnesi yok veya uygulamanızın OLE sunucusu değil ise, bu işlev yalnızca döndürür `m_pMainWnd` uygulama nesnesi.  
+ Bir kapsayıcıdaki yerinde etkin nesnesi yok veya uygulamanızın OLE sunucusu değil ise, bu işlev yalnızca döndürür *m_pMainWnd* uygulama nesnesi.  
   
  Varsa `AfxGetMainWnd` çağrılır isteğe bağlı olarak uygulamanın birincil iş parçacığından uygulamanın ana penceresi yukarıdaki kurallara göre döndürür. Uygulamadaki ikincil akıştan işlevi çağrıldıysa, işlev çağrıyı yapan iş parçacığı ile ilişkili ana penceresi döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Uygulamanızı bir OLE sunucusu değil sonra bu işlevi çağırmak için başvuran için eşdeğer `m_pMainWnd` , uygulama nesnesinin üyesi.  
+ Uygulamanızı bir OLE sunucusu değil sonra bu işlevi çağırmak için başvuran için eşdeğer *m_pMainWnd* , uygulama nesnesinin üyesi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#129](../../mfc/reference/codesnippet/cpp/application-information-and-management_4.cpp)]  
@@ -329,7 +329,7 @@ BOOL AFXAPI AfxGetPerUserRegistration();
   **Üstbilgi** afxstat_.h    
   
 ##  <a name="afxgetresourcehandle"></a>  AfxGetResourceHandle  
- Kullanım `HINSTANCE` uygulamanın kaynaklarına doğrudan, örneğin, Windows işlev çağrıları erişmek için bu işlev tarafından döndürülen tanıtıcı **FindResource**.  
+ Kullanım `HINSTANCE` uygulamanın kaynaklarına doğrudan, örneğin, Windows işlev çağrıları erişmek için bu işlev tarafından döndürülen tanıtıcı `FindResource`.  
   
 ```   
 extern HINSTANCE  AfxGetResourceHandle(); 
@@ -406,7 +406,7 @@ Belirtilen pencere genişletilmiş çerçeve nesne olup olmadığını belirler.
 BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );  
 ```
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Türetilmiş bir nesne için bir işaretçi `CWnd`.  
    
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -442,14 +442,14 @@ Belirtilen pencere bir araç çubuğu nesnesi olup olmadığını belirler.
 BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);  
 ```
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Türetilmiş bir nesne için bir işaretçi `CWnd`.  
    
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` sağlanan pencere bir araç nesneyse; Aksi takdirde `FALSE`.  
    
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem `TRUE` varsa `pWnd` türetilen `CMFCToolBar`. Bir işlev veya yöntem parametresi olduğunu doğrulamak varsa, bu yöntem kullanışlıdır bir `CMFCToolBar` nesnesi.  
+ Bu yöntem `TRUE` varsa *pWnd* türetilen `CMFCToolBar`. Bir işlev veya yöntem parametresi olduğunu doğrulamak varsa, bu yöntem kullanışlıdır bir `CMFCToolBar` nesnesi.  
    
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxpriv.h  
@@ -510,7 +510,7 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
   
  Her işlem her yüklü olan kitaplık modül için bir başvuru sayımı tutar. Bu başvuru sayısı her zaman artırılır `AfxLoadLibrary` denir ve her zaman düşülür `AfxFreeLibrary` olarak adlandırılır. Başvuru sayısı sıfır ulaştığında modülü çağırma işlemi adres alanından eşlenmemiş ve tanıtıcı artık geçerli değil.  
   
- Kullandığınızdan emin olun `AfxLoadLibrary` ve `AfxFreeLibrary` (Win32 işlevleri yerine **LoadLibrary** ve **FreeLibrary**) uygulamanız birden çok iş parçacığı kullanıyorsa ve dinamik olarak bir MFC yüklüyorsa uzantı DLL. Kullanarak `AfxLoadLibrary` ve `AfxFreeLibrary` MFC uzantı DLL yüklendiğinde ve kaldırıldığında yürütülen başlatma ve kapatma kodunun genel MFC durumunu bozuk olmayan oluşturmasını sağlar.  
+ Kullandığınızdan emin olun `AfxLoadLibrary` ve `AfxFreeLibrary` (Win32 işlevleri yerine `LoadLibrary` ve `FreeLibrary`) uygulamanız birden çok iş parçacığı kullanıyorsa ve MFC uzantı DLL'si dinamik olarak yükler. Kullanarak `AfxLoadLibrary` ve `AfxFreeLibrary` MFC uzantı DLL yüklendiğinde ve kaldırıldığında yürütülen başlatma ve kapatma kodunun genel MFC durumunu bozuk olmayan oluşturmasını sağlar.  
   
  Kullanarak `AfxLoadLibrary` MFC; DLL sürümü dinamik olarak bağlamak bir uygulamada gerektiren için üstbilgi dosyası `AfxLoadLibrary`, Afxdll_.h, yalnızca MFC DLL olarak uygulamaya bağlıysa dahil. MFC uzantı DLL'leri oluşturmak veya kullanmak üzere MFC'nin DLL sürümü bağlamak zorunda olduğundan bu tasarım gereğidir.  
   
@@ -567,7 +567,7 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlevi kullanırsanız, DLL kaldırıldığında otomatik olarak kaydı sınıftır.  
   
- DLL olmayan derlemelerde `AfxRegisterClass` tanımlayıcısı Windows işlev eşlemeleri makrosu olarak tanımlanır **RegisterClass**, bir uygulamada kayıtlı sınıflarını otomatik olarak kaydı olduğundan. Kullanırsanız `AfxRegisterClass` yerine **RegisterClass**, kodunuzu bir uygulamada hem DLL değişiklik olmadan kullanılabilir.  
+ DLL olmayan derlemelerde `AfxRegisterClass` tanımlayıcısı Windows işlev eşlemeleri makrosu olarak tanımlanır `RegisterClass`, bir uygulamada kayıtlı sınıflarını otomatik olarak kaydı olduğundan. Kullanırsanız `AfxRegisterClass` yerine `RegisterClass`, kodunuzu bir uygulamada hem DLL değişiklik olmadan kullanılabilir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_DLL#3](../../atl-mfc-shared/codesnippet/cpp/application-information-and-management_10.cpp)]  
@@ -598,17 +598,17 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
   
 -   Simge için standart, Sallayan sürekli bayrağı Windows logo simgesini ayarlar.  
   
- `hCursor`  
+ *hCursor*  
  Pencere sınıfından oluşturulan her penceresinde yüklenecek imleç kaynağı için tanıtıcı belirtir. Varsayılan değer olan kullanırsanız **0**, standart alırsınız **IDC_ARROW** imleç.  
   
  *hbrBackground*  
  Pencere sınıfından oluşturulan her penceresinde yüklenecek fırça kaynağı için tanıtıcı belirtir. Varsayılan değer olan kullanırsanız **0**, sahip olur bir **NULL** arka planı fırçasını ve varsayılan olarak, pencere değil, arka plan işleme sırasında silme [WM_ERASEBKGND](http://msdn.microsoft.com/library/windows/desktop/ms648055).  
   
- `hIcon`  
+ *hIcon*  
  Pencere sınıfından oluşturulan her penceresinde yüklenecek simgesi kaynağı için tanıtıcı belirtir. Varsayılan değer olan kullanırsanız **0**, standart, Sallayan sürekli bayrağı Windows logo simgesini alırsınız.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sınıf adı içeren null ile sonlandırılmış bir dize. Bu sınıf adı geçirebilirsiniz **oluşturma** üye işlevinde `CWnd` veya diğer **CWnd -** türetilmiş sınıfları bir pencere oluşturulamadı. Ad, Microsoft Foundation Class Kitaplığı tarafından oluşturulur.  
+ Sınıf adı içeren null ile sonlandırılmış bir dize. Bu sınıf adı geçirebilirsiniz `Create` üye işlevinde `CWnd` veya diğer **CWnd -** türetilmiş sınıfları bir pencere oluşturulamadı. Ad, Microsoft Foundation Class Kitaplığı tarafından oluşturulur.  
   
 > [!NOTE]
 >  Dönüş değeri arabellek için statik bir işaretçidir. Bu dize kaydetmek için kendisine atayın bir `CString` değişkeni.  
@@ -636,7 +636,7 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` kayıt defteri bilgileri için yönlendirilir gösterir **HKCU** düğümü; `FALSE` uygulama varsayılan düğüme kayıt defteri bilgilerini yazar gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** ( **HKCR**).  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -660,7 +660,7 @@ void AFXAPI AfxSetResourceHandle(HINSTANCE hInstResource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hInstResource`  
+ *hInstResource*  
  Örneği veya modül tanıtıcısını bir. Uygulamanın kaynaklarına yüklü olan EXE ya da DLL dosyası.  
   
 ### <a name="example"></a>Örnek  
@@ -691,8 +691,8 @@ BOOL AfxSocketInit(WSADATA* lpwsaData = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpwsaData`  
- Bir işaretçi bir [WSADATA](../../mfc/reference/wsadata-structure.md) yapısı. Varsa `lpwsaData` eşit değil `NULL`, ardından adresini `WSADATA` yapısı çağrısıyla dolduğunda `WSAStartup`. Bu işlevi de sağlar `WSACleanup` uygulama kapatılmadan önce sizin için çağrılır.  
+ *lpwsaData*  
+ Bir işaretçi bir [WSADATA](../../mfc/reference/wsadata-structure.md) yapısı. Varsa *lpwsaData* eşit değil `NULL`, ardından adresini `WSADATA` yapısı çağrısıyla dolduğunda `WSAStartup`. Bu işlevi de sağlar `WSACleanup` uygulama kapatılmadan önce sizin için çağrılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.  
@@ -730,16 +730,16 @@ BOOL AFXAPI AfxWinInit(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hInstance`  
+ *HINSTANCE*  
  Şu anda çalışan modül işleyicisi.  
   
  *hPrevInstance*  
  Uygulamanın önceki bir örneği için bir tanıtıcı. Win32 tabanlı bir uygulama için bu parametreyi her zaman olduğu **NULL**.  
   
- `lpCmdLine`  
+ *lpCmdLine*  
  Uygulama için komut satırı belirten bir null ile sonlandırılmış dize noktalarına.  
   
- `nCmdShow`  
+ *nCmdShow*  
  Nasıl bir GUI uygulaması ana penceresinde gösterilen belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

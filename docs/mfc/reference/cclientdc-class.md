@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c51e252157b90423b35152c10a85f972feace72
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b4f013589b509781d217e521b680f1d529189a0a
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348913"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954272"
 ---
 # <a name="cclientdc-class"></a>CClientDC sınıfı
 Windows işlevlerini çağırma mvc'deki [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) oluşturma zamanında ve [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920) yok etme zaman.  
@@ -66,14 +66,14 @@ class CClientDC : public CDC
  **Başlık:** afxwin.h  
   
 ##  <a name="cclientdc"></a>  CClientDC::CClientDC  
- Oluşturan bir `CClientDC` istemci alanını erişen nesne [CWnd](../../mfc/reference/cwnd-class.md) gösterdiği `pWnd`.  
+ Oluşturan bir `CClientDC` istemci alanını erişen nesne [CWnd](../../mfc/reference/cwnd-class.md) gösterdiği *pWnd*.  
   
 ```  
 explicit CClientDC(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  Pencere istemci alanını aygıt bağlam nesnesi erişim sağlar.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -92,7 +92,7 @@ HWND m_hWnd;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `m_hWnd` korumalı bir değişkendir.  
+ *m_hWnd* korumalı bir değişkendir.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CClientDC::CClientDC](#cclientdc).  

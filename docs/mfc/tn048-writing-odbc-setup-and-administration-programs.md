@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c08366f995c1ecb4182fff04a88ac37fe7334bc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a7d89b6c6e05a5baf973abace2c64de3b52754f5
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384270"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954563"
 ---
 # <a name="tn048-writing-odbc-setup-and-administration-programs-for-mfc-database-applications"></a>TN048: MFC Veritabanı Uygulamaları için ODBC Kurulum ve Yönetim Programları Yazma
 > [!NOTE]
@@ -41,9 +41,9 @@ ms.locfileid: "33384270"
   
 -   Alternatif olarak, sürücü yöneticisi ve sürücüsü yükleyecek kendi kurulum programını yazabilirsiniz.  
   
- ODBC Installer API'sı, uygulamaya özgü kurulum programları yazmak için kullanılabilir. Yükleyici API işlevlerinde DLL ODBC Yükleyici tarafından uygulanan — ODBCINST. 16 bit Windows ve ODBCCP32 DLL. Win32 DLL. Bir uygulamanın çağırabileceği **SQLInstallODBC** yükleyicisinde ODBC Sürücü Yöneticisi, ODBC sürücüleri ve herhangi bir yükleyecek DLL çevirmenler gerekli. Bunu daha sonra yüklenen sürücüleri ve çevirmenler ODBCINST kaydeder. INI dosyası (veya kayıt defteri NT üzerinde). **SQLInstallODBC** ODBC tam yolunu gerektirir. Yüklenecek sürücülerin listesini içeren ve her bir sürücü oluşturan dosyaların açıklar INF dosyası. Sürücü Yöneticisi ve çevirmenler hakkındaki benzer bilgileri de içerir. ODBC. INF dosyaları genellikle sürücü geliştiriciler tarafından sağlanır.  
+ ODBC Installer API'sı, uygulamaya özgü kurulum programları yazmak için kullanılabilir. Yükleyici API işlevlerinde DLL ODBC Yükleyici tarafından uygulanan — ODBCINST. 16 bit Windows ve ODBCCP32 DLL. Win32 DLL. Bir uygulamanın çağırabileceği `SQLInstallODBC` yükleyicisinde ODBC Sürücü Yöneticisi, ODBC sürücüleri ve herhangi bir yükleyecek DLL çevirmenler gerekli. Bunu daha sonra yüklenen sürücüleri ve çevirmenler ODBCINST kaydeder. INI dosyası (veya kayıt defteri NT üzerinde). `SQLInstallODBC` ODBC tam yolunu gerektirir. Yüklenecek sürücülerin listesini içeren ve her bir sürücü oluşturan dosyaların açıklar INF dosyası. Sürücü Yöneticisi ve çevirmenler hakkındaki benzer bilgileri de içerir. ODBC. INF dosyaları genellikle sürücü geliştiriciler tarafından sağlanır.  
   
- Bir program ODBC bileşenleri tek tek de yükleyebilirsiniz. Sürücü Yöneticisi'ni yüklemek için bir program çağırdığı **SQLInstallDriverManager** hedef dizin için Sürücü Yöneticisi almak için DLL yükleyicisinde. Bu genellikle Windows DLL'leri bulunduğu dizindir. Program, daha sonra ODBC [ODBC Sürücü Yöneticisi] bölümünde bilgileri kullanır. INF dosyası ilgili dosyaları ve sürücü yöneticisini yükleme diskinden bu dizine kopyalayın. Tek bir sürücü yüklemek için bir programı çağırır **SQLInstallDriver** ODBCINST sürücüsü belirtimi eklemek için DLL yükleyicisinde. INI dosyası (veya kayıt defteri NT üzerinde). **SQLInstallDriver** sürücünün hedef dizinini döndürür — genellikle Windows DLL'leri bulunduğu dizin. Program, daha sonra ODBC sürücünün bölümünde bilgileri kullanır. INF dosyası sürücüsü DLL ve ilişkili dosyaları yükleme diskinden bu dizine kopyalayın.  
+ Bir program ODBC bileşenleri tek tek de yükleyebilirsiniz. Sürücü Yöneticisi'ni yüklemek için bir program çağırdığı `SQLInstallDriverManager` hedef dizin için Sürücü Yöneticisi almak için DLL yükleyicisinde. Bu genellikle Windows DLL'leri bulunduğu dizindir. Program, daha sonra ODBC [ODBC Sürücü Yöneticisi] bölümünde bilgileri kullanır. INF dosyası ilgili dosyaları ve sürücü yöneticisini yükleme diskinden bu dizine kopyalayın. Tek bir sürücü yüklemek için bir programı çağırır `SQLInstallDriver` sürücüsü belirtimi ODBCINST eklemek için DLL yükleyicisinde. INI dosyası (veya kayıt defteri NT üzerinde). `SQLInstallDriver` sürücünün hedef dizinini döndürür — genellikle Windows DLL'leri bulunduğu dizin. Program, daha sonra ODBC sürücünün bölümünde bilgileri kullanır. INF dosyası sürücüsü DLL ve ilişkili dosyaları yükleme diskinden bu dizine kopyalayın.  
   
  ODBC hakkında daha fazla bilgi için. INF, ODBCINST. INI ve API, Yükleyicisi'ni kullanarak bkz ODBC SDK *Programcının Başvurusu* Bölüm 19, ODBC yazılım yükleme.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "33384270"
   
  Veri kaynakları yapılandırır bir program yükleyici DLL işlev çağrılarını yapar. DLL Installer kurulum bir veri kaynağını yapılandırmak için DLL çağırır. Her sürücü için bir kurulum DLL yoktur; DLL kendisini sürücünün veya ayrı bir DLL olabilir. DLL Kurulum, sürücü veri kaynağı ve varsayılan çeviricisi destekleniyorsa bağlanmak için gereken bilgileri kullanıcıya sorar. Daha sonra yükleyici DLL ve Windows API'ları ODBC bu bilgileri kaydetmek için çağırır. INI dosyası (veya kayıt defteri).  
   
- Bir iletişim kutusu ile bir kullanıcı ekleyebilir, değiştirebilir ve veri kaynaklarını silme görüntülemek için bir program çağırır **SQLManageDataSources** DLL yükleyicisinde. Bu işlev, yükleyici Denetim Masası'ndan DLL çağrıldığında çağrılır. Ekleme, değiştirme ve bir veri kaynağını silmek için **SQLManageDataSources** çağrıları **ConfigDSN** o veri kaynağıyla ilişkili sürücüsünü Kurulum DLL. Doğrudan eklemek, değiştirmek veya veri silmek için kaynakları, bir program **SQLConfigDataSource** DLL yükleyicisinde. Program veri kaynağı ve gerçekleştirilecek eylemi belirtir. bir seçenek adını geçirir. **SQLConfigDataSource** çağrıları **ConfigDSN** DLL kurulumunda ve bağımsız değişkenlerden geçirir **SQLConfigDataSource**.  
+ Bir iletişim kutusu ile bir kullanıcı ekleyebilir, değiştirebilir ve veri kaynaklarını silme görüntülemek için bir program çağırır `SQLManageDataSources` DLL yükleyicisinde. Bu işlev, yükleyici Denetim Masası'ndan DLL çağrıldığında çağrılır. Ekleme, değiştirme ve bir veri kaynağını silmek için `SQLManageDataSources` çağrıları `ConfigDSN` o veri kaynağıyla ilişkili sürücüsünü Kurulum DLL. Doğrudan eklemek, değiştirmek veya veri silmek için kaynakları, bir program `SQLConfigDataSource` DLL yükleyicisinde. Program veri kaynağı ve gerçekleştirilecek eylemi belirtir. bir seçenek adını geçirir. `SQLConfigDataSource` çağrıları `ConfigDSN` DLL kurulumunda ve bağımsız değişkenlerden geçirir `SQLConfigDataSource`.  
   
  Daha fazla bilgi için bkz: ODBC SDK *Programcının Başvurusu* Bölüm 23, Kurulum DLL işlev başvurusu ve Bölüm 24, yükleyici DLL işlev başvurusu.  
   

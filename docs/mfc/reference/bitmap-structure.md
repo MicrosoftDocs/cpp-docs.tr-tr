@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa8bb4ab914b4e05eb21cfc45a243328d32bb6d8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6a60e4af31ba5da23f399f86175ed4fcf1e4ec14
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33351643"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36950310"
 ---
 # <a name="bitmap-structure"></a>BITMAP Yapısı
 **Bit eşlem** yapısını tanımlar yüksekliğini, genişlik, renk biçimi ve mantıksal bir bit eşlem bit değerleri **.**  
@@ -51,7 +51,7 @@ typedef struct tagBITMAP {  /* bm */
  Izgara satırlarında bit eşlem yüksekliğini belirtir. Yüksekliği 0'dan büyük olmalıdır.  
   
  *bmWidthBytes*  
- Her ızgara satır bayt sayısını belirtir. Grafik cihaz arabirimi (GDI) bir bit eşlem bit değerleri tamsayı (2-bayt) değerleri dizisi form varsayar olduğundan bu değer bir çift sayı olmalıdır. Diğer bir deyişle, **bmWidthBytes** \* 8 16 ne zaman elde değerine eşit veya daha büyük bir sonraki katları olmalıdır **bmWidth** üye çarpılarak **bmBitsPixel**  üyesi.  
+ Her ızgara satır bayt sayısını belirtir. Grafik cihaz arabirimi (GDI) bir bit eşlem bit değerleri tamsayı (2-bayt) değerleri dizisi form varsayar olduğundan bu değer bir çift sayı olmalıdır. Diğer bir deyişle, *bmWidthBytes* \* 8 16 ne zaman elde değerine eşit veya daha büyük bir sonraki katları olmalıdır *bmWidth* üye çarpılarak *bmBitsPixel*  üyesi.  
   
  *bmPlanes*  
  Renk düzlemi sayısı eşleminde belirtir.  
@@ -60,7 +60,7 @@ typedef struct tagBITMAP {  /* bm */
  Bir piksel tanımlamak için gerekli her düzlemi bitişik renk bit sayısını belirtir.  
   
  *bmBits*  
- Bit eşlem bit değerleri konumunu işaret. **BmBits** üye 1 bayt değerleri dizisi için uzun bir işaretçi olması gerekir.  
+ Bit eşlem bit değerleri konumunu işaret. *BmBits* üye 1 bayt değerleri dizisi için uzun bir işaretçi olması gerekir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Şu anda kullanılan bit eşlem biçimler şunlardır: tek renkli ve rengi. Tek renkli bitmap 1-bit, 1-düzlemi biçimi kullanır. Her tarama 16 bit katı.  

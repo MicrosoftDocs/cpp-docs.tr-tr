@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d64ec306f77174b72c130c3afc14a732464c43be
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ff998b8be93d1248775d49bcef7680f4c9777fd4
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368354"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953681"
 ---
 # <a name="cfontdialog-class"></a>CFontDialog sınıfı
 Bir yazı tipi seçimi iletişim kutusu uygulamanıza eklemenizi sağlar.  
@@ -146,19 +146,19 @@ CFontDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- m `plfInitial`  
+ *plfInitial*  
  Bir işaretçi bir [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) bazı yazı tipinin özelliklerini ayarlamanıza olanak tanır veri yapısı.  
   
- `charFormat`  
+ *charFormat*  
  Bir işaretçi bir [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) bazı yazı tipinin özellikleri zengin bir ayarlamanıza olanak tanır veri yapısı düzenleme denetimi.  
   
- `dwFlags`  
+ *dwFlags*  
  Bir veya daha fazla seçin yazı tipi bayraklarını belirtir. Bir veya daha fazla hazır değer bit düzeyinde OR işleci kullanılarak birleştirilebilir. Değiştirirseniz `m_cf.Flag`s yapısı üye, varsayılan davranışı korumanız için değişikliklerinizi bit düzeyinde OR işleci kullandığınızdan emin olun. Bu bayrakların her hakkında daha fazla bilgi için açıklamasına bakın [CHOOSEFONT](http://msdn.microsoft.com/library/windows/desktop/ms646832) Windows SDK'sındaki yapısı.  
   
- pdcPrinter  
+ *pdcPrinter*  
  Bir yazıcı cihaz bağlamı için bir işaretçi. Belirttiğinizde, bu parametre seçilmesi olduğu yazı tiplerini yazıcı için bir yazıcı cihaz bağlamı işaret eder.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Yazı tipi iletişim kutusunun üst veya sahibi penceresi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -198,7 +198,7 @@ void GetCharFormat(CHARFORMAT& cf) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cf`  
+ *cf*  
  A [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) seçili yazı tipini karakter biçimlendirme hakkında bilgi içeren yapısı.  
   
 ##  <a name="getcolor"></a>  CFontDialog::GetColor  

@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f564b70e850f3020956711ef15ab1fe9285a6ae4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 462882957999d607809e80908ae4a25c628f18d4
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33354154"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951749"
 ---
 # <a name="canimationcolor-class"></a>CAnimationColor sınıfı
 Kırmızı, yeşil ve mavi bileşenlerini animasyonlu renkli işlevlerini uygular.  
@@ -121,13 +121,13 @@ void AddTransition(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pRTransition`  
+ *pRTransition*  
  Kırmızı bileşeni için geçişi.  
   
- `pGTransition`  
+ *pGTransition*  
  Yeşil bileşeni için geçişi.  
   
- `pBTransition`  
+ *pBTransition*  
  Mavi bileşeni için geçişi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -147,16 +147,16 @@ CAnimationColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `color`  
+ *Renk*  
  Varsayılan rengini belirtir.  
   
- `nGroupID`  
+ *nGroupID*  
  Grup kimliğini belirtir.  
   
- `nObjectID`  
+ *nObjectID*  
  Nesne kimliğini belirtir.  
   
- `dwUserData`  
+ *dwUserData*  
  Kullanıcı tanımlı veri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -170,7 +170,7 @@ virtual void GetAnimationVariableList(CList<CAnimationVariable*>& lst);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lst`  
+ *lst*  
  İşlevi döndüğünde, kırmızı, yeşil ve mavi bileşenlerini temsil eden üç CAnimationVariable nesnelerine işaretçiler içerir.  
   
 ##  <a name="getb"></a>  CAnimationColor::GetB  
@@ -233,7 +233,7 @@ BOOL GetValue(COLORREF& color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `color`  
+ *Renk*  
  Çıktı. Bu yöntem döndürüldüğünde geçerli değeri içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -279,7 +279,7 @@ void operator=(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `color`  
+ *Renk*  
  Yeni değer animasyon rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -293,7 +293,7 @@ void SetDefaultValue(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `color`  
+ *Renk*  
  Kırmızı, yeşil ve mavi bileşenleri için yeni varsayılan değerleri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

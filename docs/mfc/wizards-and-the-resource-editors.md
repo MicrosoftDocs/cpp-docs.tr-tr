@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33fb1caa496c34111de133a113433a614ff5eb22
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: db1b807856baf4cab3cdef57092cd29fdff3a19d
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383847"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951146"
 ---
 # <a name="wizards-and-the-resource-editors"></a>Sihirbazlar ve Kaynak Düzenleyicileri
 Visual C++ MFC programlama birçok tümleşik kaynak düzenleyicileri birlikte kullanmak için bazı sihirbazlar içerir. Programlama, ActiveX denetimleri için [ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md) , MFC Uygulama Sihirbazı'nın benzer bir amaca hizmet eder. Bu araçların çoğu olmadan MFC uygulamaları yazma sırasında araçları büyük ölçüde basitleştirebilir ve çalışmanızı hızlandırmak.  
@@ -41,7 +41,7 @@ Visual C++ MFC programlama birçok tümleşik kaynak düzenleyicileri birlikte k
 > [!NOTE]
 >  Sınıf görünümü de MFC sınıfları içinde sanal işlevleri geçersiz kılma yardımcı olur. Sınıf ve sanal işlevi geçersiz kılmak için seçin. Aşağıdaki paragrafta açıklanan işleminin geri kalanında ileti işleme için benzer.  
   
- Windows altında çalışan uygulamalar [ileti güdümlü](../mfc/message-handling-and-mapping.md). Kullanıcı eylemleri ve çalışan programa meydana gelen diğer olayları program windows iletileri göndermek Windows neden olur. Örneğin, kullanıcının fare penceresinde tıklarsa, Windows gönderir bir `WM_LBUTTONDOWN` ileti sol fare düğmesine basıldığında ve `WM_LBUTTONUP` düğmesi serbest bırakıldığında iletisi. Ayrıca Windows gönderir **WM_COMMAND** kullanıcı menü çubuğundan komutları seçtiğinde iletileri.  
+ Windows altında çalışan uygulamalar [ileti güdümlü](../mfc/message-handling-and-mapping.md). Kullanıcı eylemleri ve çalışan programa meydana gelen diğer olayları program windows iletileri göndermek Windows neden olur. Kullanıcı bir pencerede fare tıklamaları düğmesi serbest bırakıldığında Örneğin, Windows sol fare düğmesine basıldığında WM_LBUTTONDOWN iletisi ve bir WM_LBUTTONUP iletisi gönderir. Kullanıcı menü çubuğundan komutları seçtiğinde Windows ayrıca WM_COMMAND iletileri gönderir.  
   
  MFC çerçevesi belgeler, görünümler, çerçeve pencereleri, belge şablonları ve uygulama nesnesi gibi çeşitli nesneleri "iletileri işleyebilir". Böyle bir nesnenin "işleyicisi işlevi" kendi üyesi biri olarak işlevleri sağlar ve framework gelen ileti işleyicisine eşler.  
   

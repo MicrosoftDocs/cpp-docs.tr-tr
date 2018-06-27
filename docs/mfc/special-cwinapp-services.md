@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81c3804ccc4f9e30e2d287102c408c98a77c6833
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cd6af2ab524711c591772c28ed47742e6aa406ad
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382937"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955878"
 ---
 # <a name="special-cwinapp-services"></a>Özel CWinApp Hizmetleri
 İleti döngüsü çalıştıran ve uygulamayı başlatın ve sonra temizleme fırsatı veren yanı sıra [CWinApp](../mfc/reference/cwinapp-class.md) birkaç diğer hizmetler sağlar.  
@@ -61,7 +61,7 @@ ms.locfileid: "33382937"
   
  GDI + uygulamanız için başlatmak istiyorsanız (çağırarak [GdiplusStartup](https://msdn.microsoft.com/library/ms534077) içinde [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) işlevi), GDI + arka plan iş parçacığı gizlemek vardır.  
   
- Bunu ayarlayarak yapabilirsiniz **SuppressBackgroundThread** üyesi [GdiplusStartupInput](https://msdn.microsoft.com/library/ms534067) için yapı **doğru**. Ne zaman gizleme GDI + arka plan iş parçacığı, **NotificationHook** ve **NotificationUnhook** çağrıları yapılan yalnızca önceki girerek ve uygulama ileti döngüsü çıkılıyor. Bu çağrıları hakkında daha fazla bilgi için bkz: [GdiplusStartupOutput](https://msdn.microsoft.com/library/ms534068). Çağrılacak bu nedenle, uygun bir yerdir **GdiplusStartup** ve sanal işlev bir geçersiz kılma kanca bildirim işlevleri olacağını [CWinApp::Run](../mfc/reference/cwinapp-class.md#run), aşağıda gösterildiği gibi:  
+ Bunu ayarlayarak yapabilirsiniz `SuppressBackgroundThread` üyesi [GdiplusStartupInput](https://msdn.microsoft.com/library/ms534067) için yapı **doğru**. Ne zaman gizleme GDI + arka plan iş parçacığı, `NotificationHook` ve `NotificationUnhook` çağrıları yapılan yalnızca önceki girerek ve uygulama ileti döngüsü çıkılıyor. Bu çağrıları hakkında daha fazla bilgi için bkz: [GdiplusStartupOutput](https://msdn.microsoft.com/library/ms534068). Çağrılacak bu nedenle, uygun bir yerdir `GdiplusStartup` ve sanal işlev bir geçersiz kılma kanca bildirim işlevleri olacağını [CWinApp::Run](../mfc/reference/cwinapp-class.md#run), aşağıda gösterildiği gibi:  
   
  [!code-cpp[NVC_MFCDocView#6](../mfc/codesnippet/cpp/special-cwinapp-services_1.cpp)]  
   

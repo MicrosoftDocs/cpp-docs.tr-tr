@@ -113,12 +113,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ec93c2d39206bbc0c3076835f55e624d3eef715
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b91acd3537477e4213ea87dec77a97822b9e3d98
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33356930"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955121"
 ---
 # <a name="canimationcontroller-class"></a>CAnimationController sınıfı
 Oluşturma ve animasyonları yönetmek için merkezi bir arabirim sağlar animasyon denetleyicisi uygular.  
@@ -227,7 +227,7 @@ CAnimationGroup* AddAnimationObject(CAnimationBaseObject* pObject);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pObject`  
+ *pObject*  
  Bir animasyon nesne için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -246,10 +246,10 @@ BOOL AddKeyframeToGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nGroupID`  
+ *nGroupID*  
  Grup kimliğini belirtir.  
   
- `pKeyframe`  
+ *pKeyframe*  
  Bir ana kare bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -268,10 +268,10 @@ BOOL AnimateGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nGroupID`  
+ *nGroupID*  
  GroupID belirtir.  
   
- `bScheduleNow`  
+ *bScheduleNow*  
  Animasyon hemen çalıştırılıp çalıştırılmayacağını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -296,10 +296,10 @@ void CleanUpGroup(CAnimationGroup* pGroup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nGroupID`  
+ *nGroupID*  
  GroupID belirtir.  
   
- `pGroup`  
+ *pGroup*  
  Animasyon Grup temizlemek için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -321,16 +321,16 @@ CKeyFrame* CreateKeyframe(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nGroupID`  
+ *nGroupID*  
  Grup için ana kare oluşturulduğu Kimliğini belirtir.  
   
- `pTransition`  
+ *pTransition*  
  Geçiş için bir işaretçi. Bu geçişten sonra film şeridi için ana kare eklenir.  
   
- `pKeyframe`  
+ *pKeyframe*  
  Bu ana kare için temel ana kareyi gösteren bir işaretçi.  
   
- `offset`  
+ *uzaklık*  
  PKeyframe tarafından belirtilen temel kareyi gelen saniye cinsinden uzaklık.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -347,7 +347,7 @@ virtual BOOL EnableAnimationManagerEvent(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bEnable`  
+ *bSistemlerde*  
  Ayarlayın veya bir işleyici serbest belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -366,10 +366,10 @@ virtual BOOL EnableAnimationTimerEventHandler(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bEnable`  
+ *bSistemlerde*  
  Ayarlanamadı veya serbest işleyicileri belirtir.  
   
- `idleBehavior`  
+ *idleBehavior*  
  Zamanlayıcı güncelleştirme işleyicisi için boşta davranışını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -386,7 +386,7 @@ virtual BOOL EnablePriorityComparisonHandler(DWORD dwHandlerType);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwHandlerType`  
+ *dwHandlerType*  
  UI_ANIMATION_PHT_ birleşimi (açıklamalar bakın), ayarlanamadı veya serbest hangi işleyicileri belirten işaretler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -405,10 +405,10 @@ virtual BOOL EnableStoryboardEventHandler(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nGroupID`  
+ *nGroupID*  
  Grup kimliğini belirtir.  
   
- `bEnable`  
+ *bSistemlerde*  
  Ayarlayın veya bir işleyici serbest belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -426,10 +426,10 @@ CAnimationGroup* FindAnimationGroup(IUIAnimationStoryboard* pStoryboard);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nGroupID`  
+ *nGroupID*  
  Bir GroupID belirtir.  
   
- `pStoryboard`  
+ *pStoryboard*  
  Film şeridi gösteren bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -449,13 +449,13 @@ BOOL FindAnimationObject(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pVariable`  
+ *pVariable*  
  Animasyon değişkeni için bir işaretçi.  
   
- `ppObject`  
+ *ppObject*  
  Çıktı. Animasyon nesne ya da NULL bir işaretçi içeriyor.  
   
- `ppGroup`  
+ *ppGroup*  
  Çıktı. Animasyon nesne ya da NULL tutan animasyon grup için bir işaretçi içeriyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -619,7 +619,7 @@ virtual void OnAfterSchedule(CAnimationGroup* pGroup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGroup`  
+ *pGroup*  
  Zamanlanmış bir animasyon grubu için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -638,19 +638,19 @@ virtual void OnAnimationIntegerValueChanged(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGroup`  
+ *pGroup*  
  Bir animasyon nesne değerini tutan bir animasyon grubu için bir işaretçi değişti.  
   
- `pObject`  
+ *pObject*  
  Bir işaretçi animasyon nesneye değeri değişti bir animasyon değişken içeriyor.  
   
- `variable`  
+ *Değişken*  
  Bir animasyon değişkeni için bir işaretçi.  
   
- `newValue`  
+ *newValue*  
  Yeni değer belirtir.  
   
- `prevValue`  
+ *prevValue*  
  Önceki bir değer belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -666,10 +666,10 @@ virtual void OnAnimationManagerStatusChanged(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `newStatus`  
+ *newStatus*  
  Yeni animasyon Yöneticisi durumu.  
   
- `previousStatus`  
+ *previousStatus*  
  Önceki animasyon Yöneticisi durumu.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -703,7 +703,7 @@ virtual void OnAnimationTimerRenderingTooSlow(UINT32 fps);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `fps`  
+ *fps*  
  Saniyedeki çerçeve geçerli kare hızı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -722,19 +722,19 @@ virtual void OnAnimationValueChanged(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGroup`  
+ *pGroup*  
  Bir animasyon nesne değerini tutan bir animasyon grubu için bir işaretçi değişti.  
   
- `pObject`  
+ *pObject*  
  Bir işaretçi animasyon nesneye değeri değişti bir animasyon değişken içeriyor.  
   
- `variable`  
+ *Değişken*  
  Bir animasyon değişkeni için bir işaretçi.  
   
- `newValue`  
+ *newValue*  
  Yeni değer belirtir.  
   
- `prevValue`  
+ *prevValue*  
  Önceki bir değer belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -748,7 +748,7 @@ virtual void OnBeforeAnimationStart(CAnimationGroup* pGroup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGroup`  
+ *pGroup*  
  Başlamak için animasyon olan bir animasyon grubu için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -765,13 +765,13 @@ virtual BOOL OnHasPriorityCancel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGroupScheduled`  
+ *pGroupScheduled*  
  Şu anda zamanlanmış film şeridi sahip grup.  
   
- `pGroupNew`  
+ *pGroupNew*  
  Yeni film şeridi sahibi tarafından pGroupScheduled ait zamanlanmış film şeridi ile çakışma planlamada grubudur.  
   
- `priorityEffect`  
+ *priorityEffect*  
  PGroupScheduled daha yüksek öncelik varsa pGroupNew potansiyel etkisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -791,13 +791,13 @@ virtual BOOL OnHasPriorityCompress(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGroupScheduled`  
+ *pGroupScheduled*  
  Şu anda zamanlanmış film şeridi sahip grup.  
   
- `pGroupNew`  
+ *pGroupNew*  
  Yeni film şeridi sahibi tarafından pGroupScheduled ait zamanlanmış film şeridi ile çakışma planlamada grubudur.  
   
- `priorityEffect`  
+ *priorityEffect*  
  PGroupScheduled daha yüksek öncelik varsa pGroupNew potansiyel etkisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -817,13 +817,13 @@ virtual BOOL OnHasPriorityConclude(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGroupScheduled`  
+ *pGroupScheduled*  
  Şu anda zamanlanmış film şeridi sahip grup.  
   
- `pGroupNew`  
+ *pGroupNew*  
  Yeni film şeridi sahibi tarafından pGroupScheduled ait zamanlanmış film şeridi ile çakışma planlamada grubudur.  
   
- `priorityEffect`  
+ *priorityEffect*  
  PGroupScheduled daha yüksek öncelik varsa pGroupNew potansiyel etkisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -843,13 +843,13 @@ virtual BOOL OnHasPriorityTrim(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGroupScheduled`  
+ *pGroupScheduled*  
  Şu anda zamanlanmış film şeridi sahip grup.  
   
- `pGroupNew`  
+ *pGroupNew*  
  Yeni film şeridi sahibi tarafından pGroupScheduled ait zamanlanmış film şeridi ile çakışma planlamada grubudur.  
   
- `priorityEffect`  
+ *priorityEffect*  
  PGroupScheduled daha yüksek öncelik varsa pGroupNew potansiyel etkisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -869,13 +869,13 @@ virtual void OnStoryboardStatusChanged(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGroup`  
+ *pGroup*  
  Film şeridi durumu sahibi olan bir animasyon grubu için bir işaretçi değişti.  
   
- `newStatus`  
+ *newStatus*  
  Yeni durumu belirtir.  
   
- `previousStatus`  
+ *previousStatus*  
  Önceki durumunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -889,7 +889,7 @@ virtual void OnStoryboardUpdated(CAnimationGroup* pGroup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGroup`  
+ *pGroup*  
  Film şeridi sahip bir grup için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -913,7 +913,7 @@ void RemoveAnimationGroup(UINT32 nGroupID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nGroupID`  
+ *nGroupID*  
  Animasyon Grup kimliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -929,10 +929,10 @@ void RemoveAnimationObject(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pObject`  
+ *pObject*  
  Bir animasyon nesne için bir işaretçi.  
   
- `bNoDelete`  
+ *bNoDelete*  
  Bu parametre TRUE ise, nesne kaldırmayı silinmez.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -946,7 +946,7 @@ void RemoveTransitions(UINT32 nGroupID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nGroupID`  
+ *nGroupID*  
  Grup kimliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -962,10 +962,10 @@ BOOL ScheduleGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nGroupID`  
+ *nGroupID*  
  Animasyon zamanlamak için Grup Kimliği belirtir.  
   
- `time`  
+ *Saat*  
  Zamanlamak için süreyi belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -982,7 +982,7 @@ void SetRelatedWnd(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  Pencere nesnesi ayarlamak için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  

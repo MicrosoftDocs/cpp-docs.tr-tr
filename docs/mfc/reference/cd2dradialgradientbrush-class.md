@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1be476c43b0752b95a6514057e240a030325b95d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 002b9fd5d919bb277f9546f038e4b81c45380c81
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33354358"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952280"
 ---
 # <a name="cd2dradialgradientbrush-class"></a>CD2DRadialGradientBrush sınıfı
 ID2D1RadialGradientBrush için sarmalayıcı.  
@@ -133,7 +133,7 @@ void Attach(ID2D1RadialGradientBrush* pResource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pResource`  
+ *pResource*  
  Mevcut kaynak arabirimi. NULL olamaz  
   
 ##  <a name="cd2dradialgradientbrush"></a>  CD2DRadialGradientBrush::CD2DRadialGradientBrush  
@@ -152,28 +152,28 @@ CD2DRadialGradientBrush(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentTarget`  
+ *pParentTarget*  
  İşleme hedefi için bir işaretçi.  
   
- `gradientStops`  
+ *gradientStops*  
  Bir dizi D2D1_GRADIENT_STOP yapıları için bir işaretçi.  
   
- `gradientStopsCount`  
+ *gradientStopsCount*  
  Gradyan durakları sayısını gradientStops dizisinde belirtir 1'e eşit veya daha büyük değer.  
   
- `RadialGradientBrushProperties`  
+ *RadialGradientBrushProperties*  
  Center, gradyan başlangıç uzaklığı ve x-radius ve y-radius fırça gradyan.  
   
- `colorInterpolationGamma`  
+ *colorInterpolationGamma*  
  Hangi renkte gradyan durakları arasında ilişkilendirme gerçekleştirilir alanı.  
   
- `extendMode`  
+ *extendMode*  
  [0,1] normalleştirilmiş aralığın dışında geçişin davranışı.  
   
- `pBrushProperties`  
+ *pBrushProperties*  
  Opaklık ve fırça dönüşümü için bir işaretçi.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
   
 ##  <a name="create"></a>  CD2DRadialGradientBrush::Create  
@@ -184,7 +184,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pRenderTarget`  
+ *pRenderTarget*  
  İşleme hedefi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -289,7 +289,7 @@ void SetCenter(CD2DPointF point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `point`  
+ *Noktası*  
  Gradyan elipsin fırça koordinat içinde merkezi  
   
 ##  <a name="setgradientoriginoffset"></a>  CD2DRadialGradientBrush::SetGradientOriginOffset  
@@ -300,7 +300,7 @@ void SetGradientOriginOffset(CD2DPointF gradientOriginOffset);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `gradientOriginOffset`  
+ *gradientOriginOffset*  
  Gradyan elipsin Merkezi'nden gradyan başlangıç uzaklığı  
   
 ##  <a name="setradiusx"></a>  CD2DRadialGradientBrush::SetRadiusX  
@@ -311,7 +311,7 @@ void SetRadiusX(FLOAT radiusX);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `radiusX`  
+ *radiusX*  
  Gradyan elips x-radius. Bu değer fırça koordinat alan olmalıdır  
   
 ##  <a name="setradiusy"></a>  CD2DRadialGradientBrush::SetRadiusY  
@@ -322,7 +322,7 @@ void SetRadiusY(FLOAT radiusY);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `radiusY`  
+ *radiusY*  
  Gradyan elips y-radius. Bu değer fırça koordinat alan olmalıdır  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

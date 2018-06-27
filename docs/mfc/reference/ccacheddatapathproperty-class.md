@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29e46f7e65d6c2f9b5c0d29007cd31f660754957
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b264b2366ce4fb7234d5906222fb4f8aa750212
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355466"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951422"
 ---
 # <a name="ccacheddatapathproperty-class"></a>CCachedDataPathProperty sınıfı
 Implements bir OLE zaman uyumsuz olarak aktarılır ve bellek dosyasında önbelleğe özelliğini denetler.  
@@ -53,7 +53,7 @@ class CCachedDataPathProperty : public CDataPathProperty
 ## <a name="remarks"></a>Açıklamalar  
  Bellek dosyası RAM yerine disk üzerinde depolanır ve hızlı geçici aktarımları için yararlıdır.  
   
- İle birlikte **CAysncMonikerFile** ve `CDataPathProperty`, `CCachedDataPathProperty` OLE denetimlerinde zaman uyumsuz adlar kullanmak için işlevsellik sağlar. İle `CCachedDataPathProperty` nesneleri, verileri zaman uyumsuz olarak bir URL veya dosya kaynaktan aktarmak ve bellek dosyası depolamak için `m_Cache` genel değişkeni. Tüm verileri bellek dosyasında depolanan ve geçersiz kılmak için gerek yoktur [OnDataAvailable](../../mfc/reference/casyncmonikerfile-class.md#ondataavailable) bildirimleri için izleme ve yanıt istemiyorsanız. Örneğin, büyük bir aktarıyorsanız. GIF dosyası ve daha fazla veri geldi ve kendisini yeniden denetiminizi bildirmek isterseniz geçersiz kılma `OnDataAvailable` bildirim yapma.  
+ İle birlikte `CAysncMonikerFile` ve `CDataPathProperty`, `CCachedDataPathProperty` OLE denetimlerinde zaman uyumsuz adlar kullanmak için işlevsellik sağlar. İle `CCachedDataPathProperty` nesneleri, verileri zaman uyumsuz olarak bir URL veya dosya kaynaktan aktarmak ve bellek dosyası depolamak için `m_Cache` genel değişkeni. Tüm verileri bellek dosyasında depolanan ve geçersiz kılmak için gerek yoktur [OnDataAvailable](../../mfc/reference/casyncmonikerfile-class.md#ondataavailable) bildirimleri için izleme ve yanıt istemiyorsanız. Örneğin, büyük bir aktarıyorsanız. GIF dosyası ve daha fazla veri geldi ve kendisini yeniden denetiminizi bildirmek isterseniz geçersiz kılma `OnDataAvailable` bildirim yapma.  
   
  Sınıf `CCachedDataPathProperty` türetildiği `CDataPathProperty`.  
   
@@ -94,14 +94,14 @@ CCachedDataPathProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pControl`  
+ *pControl*  
  Bu ile ilişkilendirilmesi ActiveX denetim nesnesi için bir işaretçi `CCachedDataPathProperty` nesnesi.  
   
- `lpszPath`  
+ *lpszPath*  
  Mutlak veya göreli olabilir, yolun özelliği gerçek mutlak konumu başvuran zaman uyumsuz bir ad oluşturmak için kullanılır. `CCachedDataPathProperty` URL'ler, değil dosya adlarını kullanır. İsterseniz bir `CCachedDataPathProperty` nesne için bir dosya, yola file:// önüne ekleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `COleControl` Tarafından için nesne işaret `pControl` tarafından kullanılan [açık](../../mfc/reference/cdatapathproperty-class.md#open) ve türetilmiş sınıfları tarafından alınır. Varsa `pControl` olan **NULL**, ile kullanılan denetimi **açık** ile ayarlamalıdır [SetControl](../../mfc/reference/cdatapathproperty-class.md#setcontrol). Varsa `lpszPath` olan **NULL**, yolundaki geçirebilirsiniz **açık** veya ile ayarlayın [SetPath](../../mfc/reference/cdatapathproperty-class.md#setpath).  
+ `COleControl` Tarafından için nesne işaret *pControl* tarafından kullanılan [açık](../../mfc/reference/cdatapathproperty-class.md#open) ve türetilmiş sınıfları tarafından alınır. Varsa *pControl* olan **NULL**, ile kullanılan denetimi `Open` ile ayarlamalıdır [SetControl](../../mfc/reference/cdatapathproperty-class.md#setcontrol). Varsa *lpszPath* olan **NULL**, yolundaki geçirebilirsiniz `Open` veya ile ayarlayın [SetPath](../../mfc/reference/cdatapathproperty-class.md#setpath).  
   
 ##  <a name="m_cache"></a>  CCachedDataPathProperty::m_Cache  
  İçine verileri önbelleğe bellek dosyası sınıf adını içerir.  

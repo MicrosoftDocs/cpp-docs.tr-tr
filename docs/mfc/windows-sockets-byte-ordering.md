@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18fc3f586c7fc8861bfc29dade7b62e741bb0ffc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3a95725565dee2b25fd7f2e39927fde88c9cddff
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385163"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956008"
 ---
 # <a name="windows-sockets-byte-ordering"></a>Windows Yuvaları: Bayt Sıralama
 Bu makale ve iki yardımcı makaleler Windows Sockets programlamada çeşitli sorunlar açıklanmaktadır. Bu makalede, bayt sıralama yer almaktadır. Diğer sorunlar makalelerinde ele alınmıştır: [Windows Yuvaları: engelleme](../mfc/windows-sockets-blocking.md) ve [Windows Yuvaları: dizeleri dönüştürme](../mfc/windows-sockets-converting-strings.md).  
@@ -80,7 +80,7 @@ Bu makale ve iki yardımcı makaleler Windows Sockets programlamada çeşitli so
   
  [!code-cpp[NVC_MFCSimpleSocket#6](../mfc/codesnippet/cpp/windows-sockets-byte-ordering_2.cpp)]  
   
- C++ ' ta bir `struct` temelde aynı sınıf olarak şeydir. `Message` Yapısında bulunabilir üye işlevleri gibi `Serialize` üye işlevi bildirimi yukarıda. `Serialize` Üye işlevi şuna benzeyebilir:  
+ C++ ' ta bir **yapısı** temelde aynı sınıf olarak şeydir. `Message` Yapısında bulunabilir üye işlevleri gibi `Serialize` üye işlevi bildirimi yukarıda. `Serialize` Üye işlevi şuna benzeyebilir:  
   
  [!code-cpp[NVC_MFCSimpleSocket#7](../mfc/codesnippet/cpp/windows-sockets-byte-ordering_3.cpp)]  
   

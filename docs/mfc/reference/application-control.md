@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76d8ec079a7c3534211118e60c1d9d95a3a8510a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aa364ef0a817d46decef79b93e08bd5a359389d1
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355918"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954046"
 ---
 # <a name="application-control"></a>Uygulama Denetimi
 OLE uygulamaları ve bunların nesneler üzerinde önemli denetim gerektirir. OLE sistem DLL'leri başlatma ve uygulamaları otomatik olarak bırakın, kendi üretim ve nesneleri değiştirilmesini koordine ve benzeri kurabilmesi gerekir. Bu konudaki işlevleri bu gereksinimleri karşılar. OLE sistem DLL'leri tarafından çağrılan ek olarak, bu işlevler, bazen de uygulamalar tarafından çağrılmalıdır. 
@@ -53,7 +53,7 @@ BOOL AFXAPI AfxOleCanExitApp();
  Uygulama çıkarsanız, sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Nesnelerini bekleyen başvurular varsa bir uygulama sonlanmalıdır değil. Genel işlevler `AfxOleLockApp` ve `AfxOleUnlockApp` artırmak ve sırasıyla bir sayaç uygulamanın nesnelere başvurular azaltma. Bu sayaç sıfır olduğunda uygulama sonlanmalıdır değil. Sayaç sıfır değilse, kullanıcının sistem menüsünden veya Dosya menüsünden Çıkış Kapat seçtiğinde uygulamanın ana penceresi (değil yok) gizlenir. Bu işlev framework çağrıları **CFrameWnd::OnClose**.  
+ Nesnelerini bekleyen başvurular varsa bir uygulama sonlanmalıdır değil. Genel işlevler `AfxOleLockApp` ve `AfxOleUnlockApp` artırmak ve sırasıyla bir sayaç uygulamanın nesnelere başvurular azaltma. Bu sayaç sıfır olduğunda uygulama sonlanmalıdır değil. Sayaç sıfır değilse, kullanıcının sistem menüsünden veya Dosya menüsünden Çıkış Kapat seçtiğinde uygulamanın ana penceresi (değil yok) gizlenir. Bu işlev framework çağrıları `CFrameWnd::OnClose`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCAutomation#2](../../mfc/codesnippet/cpp/application-control_1.cpp)]  
@@ -147,7 +147,7 @@ void AFXAPI AfxOleUnlockApp();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: `AfxOleLockApp` daha fazla bilgi için.  
   
- Etkin nesne sayısı sıfır ulaştığında **AfxOleOnReleaseAllObjects** olarak adlandırılır.  
+ Etkin nesne sayısı sıfır ulaştığında `AfxOleOnReleaseAllObjects` olarak adlandırılır.  
   
 ### <a name="example"></a>Örnek  
  Örneğin bkz [AfxOleLockApp](#afxolelockapp).  
@@ -164,10 +164,10 @@ BOOL AFXAPI AfxOleLockControl(  REFCLSID clsid  );
 BOOL AFXAPI AfxOleLockControl( LPCTSTR lpszProgID );  
 ```
 ### <a name="parameters"></a>Parametreler  
- `clsid`  
+ *CLSID*  
  Denetimin benzersiz sınıf kimliği.  
   
- `lpszProgID`  
+ *lpszProgID*  
  Denetimin benzersiz program kimliği.  
    
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -207,10 +207,10 @@ BOOL AFXAPI AfxOleRegisterServerClass(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `clsid`  
+ *CLSID*  
  Sunucunun OLE sınıfı kimliği başvurusu  
   
- `lpszClassName`  
+ *lpszClassName*  
  Sunucu nesneleri sınıf adını içeren bir dize işaretçi.  
   
  *lpszShortTypeName*  
@@ -219,7 +219,7 @@ BOOL AFXAPI AfxOleRegisterServerClass(
  *lpszLongTypeName*  
  "Microsoft Excel 5.0 grafiği." gibi sunucunun nesnesi türü uzun adını içeren bir dize işaretçi  
   
- `nAppType`  
+ *nAppType*  
  Alınan bir değer **OLE_APPTYPE** OLE uygulama türünü belirleyen numaralandırması. Olası değerler şunlardır:  
   
 - `OAT_INPLACE_SERVER` Sunucu tam sunucu kullanıcı arabirimi sahiptir.  
@@ -230,19 +230,19 @@ BOOL AFXAPI AfxOleRegisterServerClass(
   
 - `OAT_DISPATCH_OBJECT` `IDispatch`-özellikli nesne.  
   
- `rglpszRegister`  
+ *rglpszRegister*  
  Anahtarları ve anahtarlar için var olan hiçbir değer bulunursa OLE sistem kayıt defterine eklenecek değerleri temsil eden dizeleri işaretçiler dizisi.  
   
- `rglpszOverwrite`  
+ *rglpszOverwrite*  
  Anahtarları ve var olan değerleri belirtilen anahtarları için kayıt defteri içeriyorsa, OLE sistem kayıt defterine eklenecek değerleri temsil eden dizeleri işaretçiler dizisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sunucu sınıfı başarıyla kaydedildi, sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çoğu uygulamayı kullanabilirsiniz **COleTemplateServer::Register** uygulamanın belge türlerinin kaydetmek için. Uygulamanızın sistem kayıt defteri biçimi tipik bir düzen sığmadığında kullanabileceğiniz `AfxOleRegisterServerClass` daha fazla denetim için.  
+ Çoğu uygulamayı kullanabilirsiniz `COleTemplateServer::Register` uygulamanın belge türlerinin kaydetmek için. Uygulamanızın sistem kayıt defteri biçimi tipik bir düzen sığmadığında kullanabileceğiniz `AfxOleRegisterServerClass` daha fazla denetim için.  
   
- Kayıt defteri anahtarları ve değerleri kümesinden oluşur. `rglpszRegister` Ve `rglpszOverwrite` dizeleri işaretçiler dizileri bağımsız değişkenler, her oluşan bir anahtar veya değer tarafından ayrılmış bir **NULL** karakter ( `'\0'`). Bu dizelerin her biri, yerler karakter sıraları ile işaretlenmiş değiştirilebilir parametreler olabilir `%1` aracılığıyla `%5`.  
+ Kayıt defteri anahtarları ve değerleri kümesinden oluşur. *RglpszRegister* ve *rglpszOverwrite* dizeleri işaretçiler dizileri bağımsız değişkenler, her oluşan bir anahtar veya değer tarafından ayrılmış bir **NULL** karakter ( `'\0'`). Bu dizelerin her biri, yerler karakter sıraları ile işaretlenmiş değiştirilebilir parametreler olabilir *%1* aracılığıyla *%5*.  
   
  Simgeler gibi doldurulmuştur:  
   
@@ -271,16 +271,16 @@ void AFXAPI AfxOleSetEditMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pClient`  
+ *pClient*  
  İstemci OLE öğesi için bir işaretçi.  
   
- `pMenu`  
+ *pMenu*  
  Güncelleştirilecek menü nesnesine bir işaretçi.  
   
  *iMenuItem*  
  Güncelleştirilecek menü öğesi dizini.  
   
- `nIDVerbMin`  
+ *nIDVerbMin*  
  Birincil fiil karşılık gelen komut kimliği.  
   
  *nIDVerbMax*  
@@ -290,7 +290,7 @@ void AFXAPI AfxOleSetEditMenu(
  Dönüştürme menü öğesi için kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yalnızca birincil fiil sunucusunun tanıdığı menü öğesi olur "fiil *typename* nesne" ve `nIDVerbMin` komutu kullanıcı komutu seçtiğinde gönderilir. Birkaç fiiller sunucusunun tanıdığı sonra menü öğesi olur " *typename* nesne" ve kullanıcı komutu seçtiğinde tüm fiiller listeleyen bir alt belirir. Kullanıcı menüden fiil seçtiğinde `nIDVerbMin` ilk fiil seçilir gönderilen `nIDVerbMin` + 1 ikinci fiili seçilen ve diğerleri ise gönderilir. Varsayılan `COleDocument` uygulaması, bu özelliği otomatik olarak yönetir.  
+ Yalnızca birincil fiil sunucusunun tanıdığı menü öğesi olur "fiil *typename* nesne" ve *nIDVerbMin* komutu kullanıcı komutu seçtiğinde gönderilir. Birkaç fiiller sunucusunun tanıdığı sonra menü öğesi olur " *typename* nesne" ve kullanıcı komutu seçtiğinde tüm fiiller listeleyen bir alt belirir. Kullanıcı menüden fiil seçtiğinde *nIDVerbMin* ilk fiil seçilir gönderilen *nIDVerbMin* + 1 ikinci fiili seçilen ve diğerleri ise gönderilir. Varsayılan `COleDocument` uygulaması, bu özelliği otomatik olarak yönetir.  
   
  Aşağıdaki deyim, istemcinin uygulama kaynak kodda olmalıdır (. RC) dosyası:  
   
@@ -311,10 +311,10 @@ BOOL AFXAPI AfxOleUnlockControl( REFCLSID clsid );
 BOOL AFXAPI AfxOleUnlockControl( LPCTSTR lpszProgID );  
 ```
 ### <a name="parameters"></a>Parametreler  
- `clsid`  
+ *CLSID*  
  Denetimin benzersiz sınıf kimliği.  
   
- `lpszProgID`  
+ *lpszProgID*  
  Denetimin benzersiz program kimliği.  
    
 ### <a name="return-value"></a>Dönüş Değeri  

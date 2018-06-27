@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcb63ade0d1f2ad179448f448a10d88b71b91037
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5240cf50b35b2e1a300071ccb6cc15a065ac364e
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383980"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951643"
 ---
 # <a name="toolbar-fundamentals"></a>Araç Çubuğu Temelleri
 Bu makalede, Uygulama Sihirbazı'nda bir seçeneğin uygulamanız için bir varsayılan araç çubuğu eklemenize olanak sağlayan temel MFC uygulaması açıklanmaktadır. Kapsanan konular şunlardır:  
@@ -56,11 +56,11 @@ Bu makalede, Uygulama Sihirbazı'nda bir seçeneğin uygulamanız için bir vars
 -   Yerleştirme veya float için kendi yeteneği dahil olmak üzere araç yönetir.  
   
 ##  <a name="_core_the_toolbar_in_code"></a> Kod araç çubuğu  
- Araç çubuğu bir [CToolBar](../mfc/reference/ctoolbar-class.md) nesne uygulamanızın veri üye olarak bildirilen **CMainFrame** sınıfı. Diğer bir deyişle, araç çubuğu nesnesi ana çerçeve penceresi nesnesinde katıştırılır. Başka bir deyişle, çerçeve penceresi oluşturduğunda ve çerçeve penceresi yok eder, araç bozar MFC araç oluşturur. Veri üyeleri katıştırılmış bir araç çubuğu ve katıştırılmış durum çubuğu için birden çok belge arabirimi (MDI) uygulaması aşağıdaki parçalı sınıf bildirimi gösterir. Ayrıca bir geçersiz kılma gösterir `OnCreate` üye işlevi.  
+ Araç çubuğu bir [CToolBar](../mfc/reference/ctoolbar-class.md) nesne uygulamanızın veri üye olarak bildirilen `CMainFrame` sınıfı. Diğer bir deyişle, araç çubuğu nesnesi ana çerçeve penceresi nesnesinde katıştırılır. Başka bir deyişle, çerçeve penceresi oluşturduğunda ve çerçeve penceresi yok eder, araç bozar MFC araç oluşturur. Veri üyeleri katıştırılmış bir araç çubuğu ve katıştırılmış durum çubuğu için birden çok belge arabirimi (MDI) uygulaması aşağıdaki parçalı sınıf bildirimi gösterir. Ayrıca bir geçersiz kılma gösterir `OnCreate` üye işlevi.  
   
  [!code-cpp[NVC_MFCListView#6](../atl/reference/codesnippet/cpp/toolbar-fundamentals_1.h)]  
   
- Araç çubuğu oluşturma oluşuyor **CMainFrame::OnCreate**. MFC çağrıları [OnCreate](../mfc/reference/cwnd-class.md#oncreate) pencere çerçevesi için ancak görünür duruma gelmesi oluşturduktan sonra. Varsayılan `OnCreate` Uygulama Sihirbazı'nın ürettiği aşağıdaki araç görevleri yapar:  
+ Araç çubuğu oluşturma oluşuyor `CMainFrame::OnCreate`. MFC çağrıları [OnCreate](../mfc/reference/cwnd-class.md#oncreate) pencere çerçevesi için ancak görünür duruma gelmesi oluşturduktan sonra. Varsayılan `OnCreate` Uygulama Sihirbazı'nın ürettiği aşağıdaki araç görevleri yapar:  
   
 1.  Çağrıları `CToolBar` nesnenin [oluşturma](../mfc/reference/ctoolbar-class.md#create) arka plandaki oluşturmak için üye işlevi [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesi.  
   
@@ -69,7 +69,7 @@ Bu makalede, Uygulama Sihirbazı'nda bir seçeneğin uygulamanız için bir vars
 3.  Yerleştirme, kayan ve araç ipuçları etkinleştirmek için işlevlerini çağırır. Makaleyi bu çağrıları hakkında daha fazla bilgi için bkz [Docking ve kayan araç çubukları](../mfc/docking-and-floating-toolbars.md).  
   
 > [!NOTE]
->  MFC genel örnek [DOCKTOOL](../visual-cpp-samples.md) eski ve yeni MFC araç çubukları çizimleri içerir. Araç çubuklarını kullanın **COldToolbar** çağrıları için 2. adımda gerektiren `LoadBitmap` (yerine `LoadToolBar`) ve `SetButtons`. Yeni araç çubukları çağrıları gerektiren `LoadToolBar`.  
+>  MFC genel örnek [DOCKTOOL](../visual-cpp-samples.md) eski ve yeni MFC araç çubukları çizimleri içerir. Araç çubuklarını kullanın `COldToolbar` çağrıları için 2. adımda gerektiren `LoadBitmap` (yerine `LoadToolBar`) ve `SetButtons`. Yeni araç çubukları çağrıları gerektiren `LoadToolBar`.  
   
  Yerleştirme, kayan ve araç ipuçları çağrıları isteğe bağlıdır. Bu satırlarından kaldırabilirsiniz `OnCreate` tercih ederseniz. Sabit, kayan veya redock yapılamıyor ve araç ipuçları görüntülenemiyor kalır bir araç çubuğu sonucudur.  
   

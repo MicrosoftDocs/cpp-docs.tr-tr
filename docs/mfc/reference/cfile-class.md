@@ -1,7 +1,7 @@
 ---
 title: CFile sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -70,11 +70,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee4086b25fe675aaab1b484f21ec7e22e5603781
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f0b1effa59dcbada04d6cb363345a69025fcfdbb
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957563"
 ---
 # <a name="cfile-class"></a>CFile sınıfı
 Microsoft Foundation Class dosya sınıfları için temel sınıf.  
@@ -169,9 +170,9 @@ virtual void Abort();
 ### <a name="remarks"></a>Açıklamalar  
  Dosya nesnesi yok etme önce kapatılmamış, yıkıcı sizin için kapatılır.  
   
- Özel durumlar, işlerken `CFile::Abort` farklıdır `CFile::Close` iki önemli şekilde. İlk olarak, **Abort** işlevi değil throw bir özel durum hatalarında hataları tarafından göz ardı edilir çünkü **Abort**. İkinci, **Abort** almayacak **ASSERT** dosya açılmamış olan veya daha önce kapatıldı.  
+ Özel durumlar, işlerken `CFile::Abort` farklıdır `CFile::Close` iki önemli şekilde. İlk olarak, `Abort` işlevi değil throw bir özel durum hatalarında hataları tarafından göz ardı edilir çünkü `Abort`. İkinci, `Abort` almayacak **ASSERT** dosya açılmamış olan veya daha önce kapatıldı.  
   
- Kullandıysanız **yeni** ayırmak için `CFile` nesne yığında sonra dosya kapattıktan sonra silmeniz gerekir. **Abort** ayarlar `m_hFile` için `CFile::hFileNull`.  
+ Kullandıysanız **yeni** ayırmak için `CFile` nesne yığında sonra dosya kapattıktan sonra silmeniz gerekir. `Abort` Ayarlar `m_hFile` için `CFile::hFileNull`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#5](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_1.cpp)]  
@@ -197,20 +198,20 @@ CAtlTransactionManager* pTM);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hFile`  
+ *Hfıle*  
  Eklemek için bir dosya tanıtıcısı `CFile` nesnesi.  
   
- `lpszFileName`  
+ *lpszFileName*  
  Bir dosya iliştirmek için göreli veya tam yolunu `CFile` nesnesi.  
   
- `nOpenFlags`  
+ *nOpenFlags*  
  Bit düzeyinde bileşimini (veya) belirtilen dosya için dosya erişim seçenekleri. Olası seçenekler için Açıklamalar bölümüne bakın.  
   
- `pTM`  
+ *pTM*  
  CAtlTransactionManager nesnesine işaretçi  
   
 ### <a name="remarks"></a>Açıklamalar  
- Aşağıdaki beş tablolar için olası seçenekler listesinde `nOpenFlags` parametresi.  
+ Aşağıdaki beş tablolar için olası seçenekler listesinde *nOpenFlags* parametresi.  
   
  Aşağıdaki dosya erişim modu seçeneklerden yalnızca birini seçin. Varsayılan dosya erişim modu `CFile::modeRead`, hangi salt okunur.  
   
@@ -241,7 +242,7 @@ CAtlTransactionManager* pTM);
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
-|`CFile::modeCreate`|Hiçbir dosya varsa, yeni bir dosya oluşturur.; Dosya zaten mevcutsa [CFileException](../../mfc/reference/cfileexception-class.md) tetiklenir.|  
+|`CFile::modeCreate`|Hiçbir dosya varsa, yeni bir dosya oluşturur. Dosya zaten varsa üzerine ve başlangıçta sıfır uzunluğa ayarlayın.|  
 |`CFile::modeNoTruncate`|Hiçbir dosya varsa, yeni bir dosya oluşturur; Dosya zaten mevcutsa, aksi takdirde, bağlı olduğu `CFile` nesnesi.|  
   
  Önbelleğe alma seçeneklerini açıklandığı gibi aşağıdaki dosyayı seçin. Varsayılan olarak, sistem bir seçenek olarak kullanılabilir değil düzeni önbelleğe alma genel amaçlı kullanır.  
@@ -282,7 +283,7 @@ virtual void Close();
 ### <a name="remarks"></a>Açıklamalar  
  Dosya nesnesi yok etme önce kapatılmamış, yıkıcı sizin için kapatılır.  
   
- Kullandıysanız **yeni** ayırmak için `CFile` nesne yığında sonra dosya kapattıktan sonra silmeniz gerekir. **Kapat** ayarlar `m_hFile` için `CFile::hFileNull`.  
+ Kullandıysanız **yeni** ayırmak için `CFile` nesne yığında sonra dosya kapattıktan sonra silmeniz gerekir. `Close` Ayarlar `m_hFile` için `CFile::hFileNull`.  
   
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CFile::CFile](#cfile).  
@@ -408,7 +409,7 @@ static BOOL PASCAL GetStatus(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rStatus`  
+ *rStatus*  
  Kullanıcı tarafından sağlanan başvuru **CFileStatus** durum bilgileri alacak yapısı. **CFileStatus** yapısının aşağıdaki alanlar:  
   
 - **CTime m_ctime** dosyanın oluşturulduğu tarih ve saat.  
@@ -423,10 +424,10 @@ static BOOL PASCAL GetStatus(
   
 - **m_szFullName [_MAX_PATH] char** Windows karakter kümesinde mutlak dosya adı.  
   
- `lpszFileName`  
+ *lpszFileName*  
  Windows karakter dizesinde diğer bir deyişle istenen dosyanın yolunu ayarlama. Göreli veya mutlak bir yol olabilir veya bir ağ yolu adı içerebilir.  
   
- `pTM`  
+ *pTM*  
  CAtlTransactionManager nesnesine işaretçi  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -476,10 +477,10 @@ virtual void LockRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwPos`  
+ *dwPos*  
  Kilitlemek için bayt aralığı başlangıcı bayt uzaklığı.  
   
- `dwCount`  
+ *dwCount*  
  Kilitlemek için aralıktaki bayt sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -515,7 +516,7 @@ CAtlTransactionManager* m_pTM;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="open"></a>  CFile::Open  
- Fazla Yüklendi. **Açık** varsayılan ile kullanılmak üzere tasarlanmış `CFile` Oluşturucusu.  
+ Fazla Yüklendi. `Open` Varsayılan değer ile kullanılmak üzere tasarlanmış `CFile` Oluşturucusu.  
   
 ```  
 virtual BOOL Open(
@@ -532,27 +533,27 @@ virtual BOOL Open(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszFileName`  
+ *lpszFileName*  
  İstenen dosyanın yolu olan bir dize. Göreli, mutlak veya bir ağ adı (UNC) yolu olabilir.  
   
- `nOpenFlags`  
+ *nOpenFlags*  
  A **UINT** dosya paylaşımı ve erişim modu tanımlar. Dosyayı açarken gerçekleştirilecek eylemi belirtir. Bit düzeyinde-OR kullanarak Seçenekleri birleştirebilirsiniz ( **&#124;** ) işleci. Bir erişim izni ve bir paylaşım seçeneği gereklidir; **modeCreate** ve **modeNoInherit** modları isteğe bağlıdır. Bkz: [CFile](#cfile) Oluşturucusu modu seçenekleri listesi.  
   
- `pError`  
+ *pError*  
  Bir işaretçi var olan bir dosya özel durumu nesneye başarısız bir işlemin durumunu alacak.  
   
- `pTM`  
+ *pTM*  
  CAtlTransactionManager nesnesine işaretçi  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Açık başarılı olduğunda sıfır olmayan; Aksi takdirde 0. `pError` Parametresi yalnızca 0 döndürülürse anlamlı.  
+ Açık başarılı olduğunda sıfır olmayan; Aksi takdirde 0. *PError* parametresi yalnızca 0 döndürülürse anlamlı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İki işlevler hata normal, beklenen bir durum olduğu bir dosyanın açılması için bir "safe" yöntem oluşturur.  
   
- Sırada `CFile` Oluşturucusu bir özel durum bir hata koşulu throw **açık** döndürülecek **FALSE** hata koşulları için. **Açık** hala başlatabilir bir [CFileException](../../mfc/reference/cfileexception-class.md) hata ancak açıklamak için nesne. Belirlemezseniz `pError` parametresi veya geçirirseniz **NULL** için `pError`, **açık** döndürülecek **FALSE** değil başlatıldıysa ve bir `CFileException`. Var olan bir işaretçi geçirirseniz `CFileException`, ve **açık** karşılaştığı hata işlevi doldurur, bu hatayı açıklayan bilgilerle. Servis talebi hiçbiri içinde **açık** bir özel durum.  
+ Sırada `CFile` Oluşturucusu bir özel durum bir hata koşulu throw `Open` döndürülecek **FALSE** hata koşulları için. `Open` hala başlatabilir bir [CFileException](../../mfc/reference/cfileexception-class.md) hata ancak açıklamak için nesne. Belirlemezseniz *pError* parametresi veya geçirirseniz **NULL** için *pError*, `Open` döndürülecek **FALSE** ve değil throw bir `CFileException`. Var olan bir işaretçi geçirirseniz `CFileException`, ve `Open` karşılaştığı hata işlevi doldurur, bu hatayı açıklayan bilgilerle. Servis talebi hiçbiri içinde `Open` bir özel durum.  
   
- Aşağıdaki tabloda olası sonuçları açıklanmaktadır **açık**.  
+ Aşağıdaki tabloda olası sonuçları açıklanmaktadır `Open`.  
   
 |`pError`|Hatayla karşılaşıldı|Dönüş değeri|CFileException içeriği|  
 |--------------|------------------------|------------------|----------------------------|  
@@ -583,14 +584,14 @@ virtual UINT Read(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpBuf`  
+ *lpBuf*  
  Dosyadan okunan verileri almak için kullanıcı tarafından sağlanan arabellek işaretçi.  
   
- `nCount`  
+ *nCount*  
  Dosyadan okunan bayt sayısı. Metin modunu dosyalar için satır başı satır besleme çiftleri tek karakter olarak sayılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Arabelleğe aktarılan toplam bayt sayısı. Tüm unutmayın `CFile` sınıfları, dönüş değeri olabilir değerinden `nCount` varsa dosya sonuna ulaşıldı.  
+ Arabelleğe aktarılan toplam bayt sayısı. Tüm unutmayın `CFile` sınıfları, dönüş değeri olabilir değerinden *nCount* varsa dosya sonuna ulaşıldı.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#15](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_11.cpp)]  
@@ -607,10 +608,10 @@ static void PASCAL Remove(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszFileName`  
+ *lpszFileName*  
  İstenen dosyanın yolu olan bir dize. Yolun göreli veya mutlak olabilir ve bir ağ adı içermelidir.  
   
- `pTM`  
+ *pTM*  
  CAtlTransactionManager nesnesine işaretçi  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -632,13 +633,13 @@ static void PASCAL Rename(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszOldName`  
+ *lpszOldName*  
  Eski yolu.  
   
- `lpszNewName`  
+ *lpszNewName*  
  Yeni yolu.  
   
- `pTM`  
+ *pTM*  
  CAtlTransactionManager nesnesine işaretçi  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -657,17 +658,17 @@ UINT nFrom);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lOff`  
+ *lOff*  
  Dosya işaretçisini taşımak için bayt sayısı. Pozitif değerler dosya işaretçisini dosyanın sonuna taşır. negatif değerler dosya işaretçisini dosya başlangıç doğru taşıyın.  
   
- `nFrom`  
+ *nFrom*  
  Gelen arama konumu. Olası değerler için Açıklamalar bölümüne bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa dosya işaretçisini konumunu; Aksi takdirde, dönüş değeri tanımlanmamış gösteren bir işaretçi bir `CFileException` özel durumu oluşur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İçin olası değerler aşağıdaki tabloda listelenmektedir `nFrom` parametresi.  
+ İçin olası değerler aşağıdaki tabloda listelenmektedir *nFrom* parametresi.  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -721,7 +722,7 @@ virtual void SetFilePath(LPCTSTR lpszNewName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszNewName`  
+ *lpszNewName*  
  Yeni yolu belirten bir dize işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -740,7 +741,7 @@ virtual void SetLength(ULONGLONG dwNewLen);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwNewLen`  
+ *dwNewLen*  
  İstenen dosyanın bayt cinsinden uzunluğu. Bu değer, geçerli dosya uzunluğu daha büyük veya küçük olabilir. Dosya genişletilmiş veya uygun şekilde kesildi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -762,13 +763,13 @@ static void PASCAL SetStatus(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszFileName`  
+ *lpszFileName*  
  İstenen dosyanın yolu olan bir dize. Yolun göreli veya mutlak olabilir ve bir ağ adı içermelidir.  
   
  *Durumu*  
  Yeni bir durum bilgisi içeren arabelleği. Çağrı **GetStatus** prefill için üye işlevini **CFileStatus** yapısı geçerli değerlerle sonra gerekli değişiklikleri yapın. Değer 0 ise, karşılık gelen durum öğesi güncelleştirilmez. Bkz: [GetStatus](#getstatus) üye işlevi bir açıklaması için **CFileStatus** yapısı.  
   
- `pTM`  
+ *pTM*  
  CAtlTransactionManager nesnesine işaretçi  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -789,10 +790,10 @@ virtual void UnlockRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwPos`  
+ *dwPos*  
  Kilidini açmak için bayt aralığı başlangıcı bayt uzaklığı.  
   
- `dwCount`  
+ *dwCount*  
  Kilidini açmak için aralıktaki bayt sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -814,10 +815,10 @@ virtual void Write(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpBuf`  
+ *lpBuf*  
  Dosyasına yazılacak olan verileri içeren kullanıcı tarafından sağlanan arabellek için bir işaretçi.  
   
- `nCount`  
+ *nCount*  
  Arabellekteki aktarılacak bayt sayısı. Metin modunu dosyalar için satır başı satır besleme çiftleri tek karakter olarak sayılır.  
   
 ### <a name="remarks"></a>Açıklamalar  

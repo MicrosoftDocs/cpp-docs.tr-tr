@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 44a946b21908f45b595056a956c75b234fdbb886
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0c22db5aa9369d895b5a8d725148c841e3ffbfc8
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33386060"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955898"
 ---
 # <a name="tn026-ddx-and-ddv-routines"></a>TN026: DDX ve DDV Rutinleri
 > [!NOTE]
@@ -67,7 +67,7 @@ DDV_Custom(pDX,
   
  'Afxdd_.h' tüm iletişim kutusu veri değişimi rutinleri ve MFC ile sağlanan iletişim kutusu veri doğrulama rutinleri listesi için bkz.  
   
- İletişim verisi olan tam olarak bunu: üye verileri **CMyDialog** sınıfı. Yapı veya benzer bir şey depolanmaz.  
+ İletişim verisi olan tam olarak bunu: üye verileri `CMyDialog` sınıfı. Yapı veya benzer bir şey depolanmaz.  
   
 ## <a name="notes"></a>Notlar  
  Bu "iletişim kutusu veri" diyoruz, tüm özellikleri türetilmiş herhangi bir sınıf olarak kullanılabilir, ancak `CWnd` ve yalnızca iletişim kutuları için sınırlı değildir.  
@@ -83,17 +83,17 @@ DDV_Custom(pDX,
 ## <a name="how-does-it-work"></a>Nasıl çalışır  
  İletişim kutusu veri kullanmak için aşağıdakileri anlamanız gerekmez. Ancak, bunun arka planda nasıl çalıştığını anlamak, kendi exchange veya doğrulama yordamı yazmanıza yardımcı olur.  
   
- `DoDataExchange` Üye işlevi çok benzer olduğunu `Serialize` üye işlevi - olmasından almayı veya veri ayarlamayı/dış bir formdan sorumlu (Bu durumda denetimleri bir iletişim kutusunda) / sınıf üye verileri için. `pDX` Parametre veri değiş tokuşu yapmak için bağlam ve benzer `CArchive` parametresi `CObject::Serialize`. `pDX` (Bir `CDataExchange` nesnesi) çok benzer bayrak yönüne sahip `CArchive` bir yön bayrağı vardır:  
+ `DoDataExchange` Üye işlevi çok benzer olduğunu `Serialize` üye işlevi - olmasından almayı veya veri ayarlamayı/dış bir formdan sorumlu (Bu durumda denetimleri bir iletişim kutusunda) / sınıf üye verileri için. *PDX* parametre veri değiş tokuşu yapmak için bağlam ve benzer `CArchive` parametresi `CObject::Serialize`. *PDX* (bir `CDataExchange` nesnesi) çok benzer bayrak yönüne sahip `CArchive` bir yön bayrağı vardır:  
   
--   Varsa **! m_bSaveAndValidate**, sonra denetimlere veri durumu yükleyin.  
+-   Eğer! *m_bSaveAndValidate*, sonra denetimlere veri durumu yükleyin.  
   
--   Varsa `m_bSaveAndValidate`, ardından veri durumu denetimlerini ayarlayın.  
+-   Varsa *m_bSaveAndValidate*, ardından veri durumu denetimlerini ayarlayın.  
   
- Doğrulama yalnızca oluşur zaman `m_bSaveAndValidate` ayarlanır. Değeri `m_bSaveAndValidate` BOOL parametresi tarafından belirlenen `CWnd::UpdateData`.  
+ Doğrulama yalnızca oluşur zaman *m_bSaveAndValidate* ayarlanır. Değeri *m_bSaveAndValidate* BOOL parametresi tarafından belirlenen `CWnd::UpdateData`.  
   
  Var olan üç diğer ilginç `CDataExchange` üyeleri:  
   
-- `m_pDlgWnd`: Denetimleri içerir penceresi (genellikle bir iletişim kutusu). 'This' geçirmek zorunda kalmaktan COleDBRecordView ve DDV_ genel işlevler arayanlar önlemek için her DDX/DDV yordamına budur.  
+- *m_pDlgWnd*: denetimleri içeren pencere (genellikle bir iletişim kutusu). 'This' geçirmek zorunda kalmaktan COleDBRecordView ve DDV_ genel işlevler arayanlar önlemek için her DDX/DDV yordamına budur.  
   
 - `PrepareCtrl`, ve `PrepareEditCtrl`: bir iletişim kutusu denetim veri değişimi için hazırlar. Doğrulama başarısız olursa odağı ayarlamak için bu denetimin işleyicisi depolar. `PrepareCtrl` nonedit denetimleri için kullanılır ve `PrepareEditCtrl` düzenleme denetimleri için kullanılır.  
   
@@ -139,7 +139,7 @@ DDV_Custom(pDX,
     > [!NOTE]
     >  Bu tür rasgele ifadeleri ClassWizard tarafından düzenlenemez ve bu nedenle özel biçim açıklamaları dışında taşınması gereken (/ / {{AFX_DATA_MAP(CMyClass)).  
   
- Sahip **DoDialogExchange** üye işlevi bilgi almak veya herhangi başka geçerli C++ deyimleri ile intermixed değişimi ve doğrulaması işlev çağrılarını içerir.  
+ Sahip `DoDialogExchange` üye işlevi bilgi almak veya herhangi başka geçerli C++ deyimleri ile intermixed değişimi ve doğrulaması işlev çağrılarını içerir.  
   
 ```  
 //{{AFX_DATA_MAP(CMyClass)  

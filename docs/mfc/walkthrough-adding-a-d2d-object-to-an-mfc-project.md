@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68a6d5a0cda8c4d7fd06cf7bb6b9c1b60e50374b
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: 87e1c696f3da374d7b71e1b24e3a8bd3ebfe41b9
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36306014"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954877"
 ---
 # <a name="walkthrough-adding-a-d2d-object-to-an-mfc-project"></a>İzlenecek Yol: Bir MFC Projesine D2D Nesnesi Ekleme
 
@@ -48,7 +48,7 @@ Bu kılavuzda tamamlamak için Visual Studio yüklenmiş olması **C++ ile masa�
 
 1. Üzerinde **dosya** menüsündeki **yeni** ve ardından **proje**.
 
-2. İçinde **yeni proje** iletişim kutusunda, sol bölmede altında **yüklü şablonlar**, genişletin **Visual C++** ve ardından **MFC**. Orta bölmede seçin **MFC uygulaması**. İçinde **adı** kutusuna `MFCD2DWalkthrough`. Seçin **Tamam**.
+2. İçinde **yeni proje** iletişim kutusunda, sol bölmede altında **yüklü şablonlar**, genişletin **Visual C++** ve ardından **MFC**. Orta bölmede seçin **MFC uygulaması**. İçinde **adı** kutusuna *MFCD2DWalkthrough*. Seçin **Tamam**.
 
 3. İçinde **MFC Uygulama Sihirbazı'nı**, seçin **son** ayarlarda herhangi bir değişiklik olmadan.
 
@@ -132,7 +132,7 @@ Bu kılavuzda tamamlamak için Visual Studio yüklenmiş olması **C++ ile masa�
 
 3. Üzerinde **iletileri** sekmesinde, seçin **eklemek özel ileti**.
 
-4. İçinde **eklemek özel ileti** iletişim kutusunda **özel Windows ileti** kutusuna `AFX_WM_DRAW2D`. İçinde **ileti işleyicisi adı** kutusuna `OnDraw2D`. Seçin **kayıtlı ileti** seçeneğini ve ardından **Tamam**. Bu eylem için bir ileti işleyicisini ekler `AFX_WM_DRAW2D` için ileti `CMFCD2DWalkthroughView` sınıfı.
+4. İçinde **eklemek özel ileti** iletişim kutusunda **özel Windows ileti** kutusuna *AFX_WM_DRAW2D*. İçinde **ileti işleyicisi adı** kutusuna *OnDraw2D*. Seçin **kayıtlı ileti** seçeneğini ve ardından **Tamam**. Bu eylem bir ileti işleyicisi AFX_WM_DRAW2D iletiye ekler `CMFCD2DWalkthroughView` sınıfı.
 
 5. İçinde **varolan işleyicileri** kutusunda `OnDraw2D`. Seçin **kodu Düzenle** görüntülemek için `CMFCD2DWalkthroughView::OnDraw2D` yöntemi. Bu kodu kullanın `CMFCD2DWalkthroughView::OnDrawD2D` yöntemi:
 

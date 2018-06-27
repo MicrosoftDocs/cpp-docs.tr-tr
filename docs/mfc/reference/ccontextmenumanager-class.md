@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1eb3bb0d96723f14f6dec56853d52860f0568c03
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9407c98183fa923a58ca2939e8c534cd56dc8ef7
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357721"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954627"
 ---
 # <a name="ccontextmenumanager-class"></a>CContextMenuManager sınıfı
 `CContextMenuManager` Nesnesi olarak da bilinen bağlam menülerini kısayol menüleri yönetir.  
@@ -115,20 +115,20 @@ BOOL AddMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiMenuNameResId`  
+ [in] *uiMenuNameResId*  
  Yeni menü adını içeren bir dize için bir kaynak kimliği.  
   
- [in] `uiMenuResId`  
+ [in] *uiMenuResId*  
  Menü kaynak kimliği  
   
- [in] `lpszName`  
+ [in] *lpszName*  
  Yeni menü adını içeren dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa sıfır olmayan; yöntem başarısız olursa 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem başarısız olursa `uiMenuResId` geçersiz veya aynı ada sahip başka bir menü zaten kullanılmadığını `CContextMenuManager`.  
+ Bu yöntem başarısız olursa *uiMenuResId* geçersiz veya aynı ada sahip başka bir menü zaten kullanılmadığını `CContextMenuManager`.  
   
 ##  <a name="ccontextmenumanager"></a>  CContextMenuManager::CContextMenuManager  
  Oluşturan bir [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) nesnesi.  
@@ -148,7 +148,7 @@ HMENU GetMenuById(UINT nMenuResId) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nMenuResId`  
+ [in] *nMenuResId*  
  Menü kaynak kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -164,17 +164,17 @@ HMENU GetMenuByName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszName`  
+ [in] *lpszName*  
  Almak üzere menü adını içeren dize.  
   
- [out] `puiOrigResID`  
+ [out] *puiOrigResID*  
  Bir işaretçi bir `UINT`. Bu parametre, belirtilen menü kaynak Kimliğini içerir bulundu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir tanıtıcı tarafından belirtilen adla eşleşen menüsüne `lpszName`. `NULL` adlı hiçbir menüsü olup olmadığını `lpszName`.  
+ Bir tanıtıcı tarafından belirtilen adla eşleşen menüsüne *lpszName*. `NULL` adlı hiçbir menüsü olup olmadığını *lpszName*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem eşleşen bir menü bulursa `lpszName`, `GetMenuByName` parametresinde menüsü kaynak kimliği depolar `puiOrigResID`.  
+ Bu yöntem eşleşen bir menü bulursa *lpszName*, `GetMenuByName` parametresinde menüsü kaynak kimliği depolar *puiOrigResID*.  
   
 ##  <a name="getmenunames"></a>  CContextMenuManager::GetMenuNames  
  Eklenen menü adları listesini döndürür [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md).  
@@ -184,7 +184,7 @@ void GetMenuNames(CStringList& listOfNames) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `listOfNames`  
+ [out] *listOfNames*  
  Bir başvuru bir [CStringList](../../mfc/reference/cstringlist-class.md) parametresi. Bu yöntem, bu parametre için menü adları listesi yazar.  
   
 ##  <a name="loadstate"></a>  CContextMenuManager::LoadState  
@@ -195,14 +195,14 @@ virtual BOOL LoadState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Bir kayıt defteri anahtarı göreli yolunu içeren bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `lpszProfileName` Parametresi bir kayıt defteri girdisi mutlak yolu değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) ve [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) sırasıyla.  
+ *LpszProfileName* parametresi bir kayıt defteri girdisi mutlak yolu değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) ve [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) sırasıyla.  
   
  Yöntem kullanmak [CContextMenuManager::SaveState](#savestate) kısayol menülerini kayıt defterine kaydetmek için.  
   
@@ -227,14 +227,14 @@ virtual BOOL SaveState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Bir kayıt defteri anahtarı göreli yolunu içeren bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `lpszProfileName` Parametresi bir kayıt defteri girdisi mutlak yolu değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) ve [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) sırasıyla.  
+ *LpszProfileName* parametresi bir kayıt defteri girdisi mutlak yolu değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) ve [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) sırasıyla.  
   
  Yöntem kullanmak [CContextMenuManager::LoadState](#loadstate) kayıt defterinden kısayol menülerini yüklenemiyor.  
   
@@ -246,7 +246,7 @@ void SetDontCloseActiveMenu (BOOL bSet = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bSet`  
+ [in] *bInternet*  
  Etkin açılır menü kapatmak sorulmayacağını denetler Boole parametresi. Değerini `TRUE` etkin açılır menü kapalı gösterir. `FALSE` Etkin açılır menü kapalı olduğunu gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -276,29 +276,29 @@ virtual CMFCPopupMenu* ShowPopupMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiMenuResId`  
+ [in] *uiMenuResId*  
  Bu yöntem görüntüler menüsü kaynak kimliği.  
   
- [in] `x`  
+ [in] *x*  
  İstemci koordinatları kısayol menüsünde için uzaklık yatay.  
   
- [in] `y`  
+ [in] *y*  
  İstemci koordinatları kısayol menüsünde için dikey uzaklık  
   
- [in] `pWndOwner`  
+ [in] *pWndOwner*  
  Kısayol menüsünün üst pencere için bir işaretçi.  
   
- [in] `bOwnMessage`  
- İletilerin nasıl yönlendirileceğini gösterir Boole parametresi. Varsa `bOwnMessage` olan `FALSE`, standart MFC yönlendirme kullanılır. Aksi takdirde `pWndOwner` iletilerini alır.  
+ [in] *bOwnMessage*  
+ İletilerin nasıl yönlendirileceğini gösterir Boole parametresi. Varsa *bOwnMessage* olan `FALSE`, standart MFC yönlendirme kullanılır. Aksi takdirde, *pWndOwner* iletilerini alır.  
   
- [in] `hmenuPopup`  
+ [in] *hmenuPopup*  
  Bu yöntem görüntüler menü işleci.  
   
- [in] `bAutoDestroy`  
+ [in] *bAutoDestroy*  
  Menü otomatik olarak yok olup olmadığını gösteren bir Boolean parametresiyle.  
   
- [in] `bRightAlign`  
- Menü öğeleri nasıl hizalandığını belirten bir Boolean parametresiyle. Varsa `bRightAlign` olan `TRUE`, sağa hizalı sağdan sola okuma sırası için menü kalır.  
+ [in] *bRightAlign*  
+ Menü öğeleri nasıl hizalandığını belirten bir Boolean parametresiyle. Varsa *bRightAlign* olan `TRUE`, sağa hizalı sağdan sola okuma sırası için menü kalır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk yöntemi aşırı yüklemesini yöntemi menü başarıyla gösteriyorsa sıfır olmayan döndürür; Aksi takdirde 0. İkinci yöntemi aşırı yüklemesini gösteren bir işaretçi döndürür [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) kısayol menüsünü görüntüler varsa doğru; tersi durumda `NULL`.  
@@ -306,7 +306,7 @@ virtual CMFCPopupMenu* ShowPopupMenu(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yöntemi benzer [CContextMenuManager::TrackPopupMenu](#trackpopupmenu) içeren bir kısayol menüsünü yöntemlerin her ikisi de görüntüler. Ancak, `TrackPopupMenu` seçili menü komutu dizinini döndürür.  
   
- Varsa parametresi `bAutoDestroy` olan `FALSE`, el ile devralınan çağırmalısınız `DestroyMenu` bellek kaynakları serbest bırakmak için yöntemi. Varsayılan uygulaması `ShowPopupMenu` parametresi kullanmaz `bAutoDestroy`. Gelecekte kullanım için veya türetilmiş özel sınıflar için sağlanan `CContextMenuManager` sınıfı.  
+ Varsa parametresi *bAutoDestroy* olan `FALSE`, el ile devralınan çağırmalısınız `DestroyMenu` bellek kaynakları serbest bırakmak için yöntemi. Varsayılan uygulaması `ShowPopupMenu` parametresi kullanmaz *bAutoDestroy*. Gelecekte kullanım için veya türetilmiş özel sınıflar için sağlanan `CContextMenuManager` sınıfı.  
   
 ##  <a name="trackpopupmenu"></a>  CContextMenuManager::TrackPopupMenu  
  Belirtilen kısayol menüsünü görüntüler ve seçili kısayol menü komutu dizinini döndürür.  
@@ -321,20 +321,20 @@ virtual UINT TrackPopupMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hmenuPopup`  
+ [in] *hmenuPopup*  
  Bu yöntem görüntüler kısayol menüsü işleyicisi.  
   
- [in] `x`  
+ [in] *x*  
  İstemci koordinatları kısayol menüsünde için uzaklık yatay.  
   
- [in] `y`  
+ [in] *y*  
  İstemci koordinatları kısayol menüsünde için uzaklık dikey.  
   
- [in] `pWndOwner`  
+ [in] *pWndOwner*  
  Kısayol menüsünün üst pencere için bir işaretçi.  
   
- [in] `bRightAlign`  
- Menü öğeleri nasıl hizalandığını belirten bir Boolean parametresiyle. Varsa `bRightAlign` olan `TRUE`, sağa hizalı sağdan sola okuma sırası için menü kalır. Varsa `bRightAlign` olan `FALSE`, sola hizalı soldan sağa okuma sırası için menü kalır.  
+ [in] *bRightAlign*  
+ Menü öğeleri nasıl hizalandığını belirten bir Boolean parametresiyle. Varsa *bRightAlign* olan `TRUE`, sağa hizalı sağdan sola okuma sırası için menü kalır. Varsa *bRightAlign* olan `FALSE`, sola hizalı soldan sağa okuma sırası için menü kalır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kullanıcının seçtiği komut menü komut kimliği; Kullanıcı kısayol menüsünü menü komutu seçmeden kapatırsa 0.  

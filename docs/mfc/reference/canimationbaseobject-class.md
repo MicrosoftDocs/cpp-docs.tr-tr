@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db9f7a66b60d70231628ded5dc096bad702bf088
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 135bb279daf4c000c025ac6f8fa51a6b023e2d1e
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355610"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952550"
 ---
 # <a name="canimationbaseobject-class"></a>CAnimationBaseObject sınıfı
 Tüm animasyon nesneleri için temel sınıf.  
@@ -149,10 +149,10 @@ virtual BOOL ApplyTransitions(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pStoryboard`  
+ *pStoryboard*  
  Film şeridi gösteren bir işaretçi.  
   
- `bDependOnKeyframes`  
+ *bDependOnKeyframes*  
  YANLIŞ bu yöntem yalnızca ana kare üzerinde dayanmayan geçişleri ekler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -175,13 +175,13 @@ CAnimationBaseObject(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nGroupID`  
+ *nGroupID*  
  Grup kimliğini belirtir.  
   
- `nObjectID`  
+ *nObjectID*  
  Nesne kimliğini belirtir.  
   
- `dwUserData`  
+ *dwUserData*  
  Animasyon nesneyle ilişkilendirilmiş ve daha sonra çalışma zamanında alınan kullanıcı tarafından tanımlanan verileri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -195,7 +195,7 @@ virtual void ClearTransitions(BOOL bAutodestroy);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bAutodestroy`  
+ *bAutodestroy*  
  Geçiş nesneleri otomatik olarak yok ya da ilgili listeden kaldırana belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -209,7 +209,7 @@ virtual BOOL ContainsVariable(IUIAnimationVariable* pVariable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pVariable`  
+ *pVariable*  
  Animasyon değişkeni için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -251,10 +251,10 @@ virtual void EnableIntegerValueChangedEvent(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pController`  
+ *pController*  
  Bir üst denetleyici için bir işaretçi.  
   
- `bEnable`  
+ *bSistemlerde*  
  Etkinleştirmek veya tamsayı değeri değişti olayını devre dışı bırakmayı belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -270,10 +270,10 @@ virtual void EnableValueChangedEvent(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pController`  
+ *pController*  
  Bir üst denetleyici için bir işaretçi.  
   
- `bEnable`  
+ *bSistemlerde*  
  Etkinleştirmek veya değer değişti olayını devre dışı bırakmayı belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -289,7 +289,7 @@ virtual void GetAnimationVariableList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lst`  
+ *lst*  
  Bir animasyon nesnede bulunan animasyon değişkenleri ile doldurulması gerekir listesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -390,7 +390,7 @@ void SetAutodestroyTransitions(BOOL bValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bValue`  
+ *bDeğer*  
  Otomatik destroy bayrağı belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -406,10 +406,10 @@ void SetID(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nObjectID`  
+ *nObjectID*  
  Yeni nesne kimliğini belirtir.  
   
- `nGroupID`  
+ *nGroupID*  
  Yeni Grup kimliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -433,7 +433,7 @@ void SetUserData (DWORD dwUserData);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwUserData`  
+ *dwUserData*  
  Özel veri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

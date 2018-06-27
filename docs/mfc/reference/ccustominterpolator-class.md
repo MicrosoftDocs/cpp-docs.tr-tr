@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b093ff87d7f2c8c52b6745be4e2a31580fce0fce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f7ab45ad47ad0120fa4e04937e180841bdb5f981
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355805"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955095"
 ---
 # <a name="ccustominterpolator-class"></a>CCustomInterpolator sınıfı
 Temel bir ara uygular.  
@@ -116,10 +116,10 @@ CCustomInterpolator(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `duration`  
+ *Süre*  
  Geçiş süresi.  
   
- `finalValue`  
+ *finalValue*  
   
 ### <a name="remarks"></a>Açıklamalar  
  Süre ve daha sonra kodunuzda son değerini başlatmak için CCustomInterpolator::Init kullanın.  
@@ -135,13 +135,13 @@ virtual BOOL GetDependencies(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `initialValueDependencies`  
+ *initialValueDependencies*  
  Çıktı. İlk değerine bağımlı özelliklerini ınterpolator için SetInitialValueAndVelocity geçirildi.  
   
- `initialVelocityDependencies`  
+ *initialVelocityDependencies*  
  Çıktı. İlk hız üzerinde bağımlı özelliklerini ınterpolator için SetInitialValueAndVelocity geçirildi.  
   
- `durationDependencies`  
+ *durationDependencies*  
  Çıktı. Süreye göre bağımlı özelliklerini ınterpolator için SetDuration geçirildi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -155,7 +155,7 @@ virtual BOOL GetDuration(UI_ANIMATION_SECONDS* duration);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `duration`  
+ *Süre*  
  Çıktı. Saniye cinsinden geçiş süresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -169,7 +169,7 @@ virtual BOOL GetFinalValue(DOUBLE* value);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `value`  
+ *value*  
  Çıktı. Geçiş işleminin sonunda bir değişkenin son değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -185,10 +185,10 @@ void Init(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `duration`  
+ *Süre*  
  Geçiş süresi.  
   
- `finalValue`  
+ *finalValue*  
  Geçiş işleminin sonunda bir değişkenin son değeri.  
   
 ##  <a name="interpolatevalue"></a>  CCustomInterpolator::InterpolateValue  
@@ -201,7 +201,7 @@ virtual BOOL InterpolateValue(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `value`  
+ *value*  
  Çıktı. Ara değerli değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -217,7 +217,7 @@ virtual BOOL InterpolateVelocity(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `velocity`  
+ *hız*  
  Çıktı. Değişken uzaklığındaki hız.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -273,7 +273,7 @@ virtual BOOL SetDuration(UI_ANIMATION_SECONDS duration);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `duration`  
+ *Süre*  
  Geçiş süresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -289,10 +289,10 @@ virtual BOOL SetInitialValueAndVelocity(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `initialValue`  
+ *initialValue*  
  Geçiş başlangıcında değişkeninin değeri.  
   
- `initialVelocity`  
+ *initialVelocity*  
  Geçiş başlangıcında değişkeni hız.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

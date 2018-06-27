@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ba2a3f54ff39341c43ee497fcccda43cd3625fa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7ef1c1a328b785c189a2d7d4a2eb28ec3995a810
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33358361"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952186"
 ---
 # <a name="cbitmapbutton-class"></a>CBitmapButton sınıfı
 Metin yerine eşlemli görüntülerle etiketli basma düğmesi denetimleri oluşturur.  
@@ -67,7 +67,7 @@ class CBitmapButton : public CButton
   
 |Ayarlama|Aşağı|Odaklanmış|Devre dışı|Uygulama|  
 |--------|----------|-------------|--------------|-----------------|  
-|×||||Bit eşlem|  
+|×||||bit eşlem|  
 |×|×|||Olmadan düğmesini **WS_TABSTOP** stili|  
 |×|×|×|×|Tüm durumları ile iletişim düğmesi|  
 |×|×|×||İletişim düğmesi ile **WS_TABSTOP** stili|  
@@ -98,7 +98,7 @@ class CBitmapButton : public CButton
   
 6.  İçinde `CDialog` nesnenin [OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog) rutin, çağrı `CBitmapButton` nesnenin [AutoLoad](#autoload) işlev, düğme denetim kimliği parametreleri olarak kullanma ve `CDialog` nesnenin **bu** işaretçi.  
   
- Windows bildirim iletileri gibi işlemek istiyorsanız **BN_CLICKED**, üst bir bit eşlem düğme denetimi tarafından gönderilen (öğesinden türetilmiş bir sınıf genellikle **CDialog)**, eklemek `CDialog`-türetilen her ileti için ileti eşleme girişi ve ileti işleyicisi üye işlevi nesne. Tarafından gönderilen bildirimler bir `CBitmapButton` nesne aynıdır olanlar tarafından gönderilen bir [CButton](../../mfc/reference/cbutton-class.md) nesnesi.  
+ BN_CLICKED gibi Windows bildirim iletileri işlemek istiyorsanız, kendi üst bir bit eşlem düğme denetim tarafından gönderilen (öğesinden türetilmiş bir sınıf genellikle `CDialog`), eklemek `CDialog`-türetilen nesne ileti eşleme girişi ve ileti işleyicisi üyesi her ileti için işlev. Tarafından gönderilen bildirimler bir `CBitmapButton` nesne aynıdır olanlar tarafından gönderilen bir [CButton](../../mfc/reference/cbutton-class.md) nesnesi.  
   
  Sınıf [CToolBar](../../mfc/reference/ctoolbar-class.md) bit eşlem düğmeleri için farklı bir yaklaşım alır.  
   
@@ -128,10 +128,10 @@ BOOL AutoLoad(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nID`  
+ *nID*  
  Düğme denetim kimliği.  
   
- `pParent`  
+ *pParent*  
  Düğme sahibi nesnesine işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

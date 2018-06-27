@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55658efabf8c9df795ed8069d9659ebf0e01e364
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fae1d569f49a50d3b7281e86c72fd12c69b40832
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33352118"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956365"
 ---
 # <a name="canimationvariableintegerchangehandler-class"></a>CAnimationVariableIntegerChangeHandler sınıfı
 Bir animasyon değişkeninin değeri değiştiğinde animasyon API tarafından çağrılan bir geri çağırma uygular.  
@@ -88,10 +88,10 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pAnimationController`  
+ *pAnimationController*  
  Olayları alacak animasyon denetleyici için bir işaretçi.  
   
- `ppHandler`  
+ *ppHandler*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
@@ -108,16 +108,16 @@ IFACEMETHOD(OnIntegerValueChanged) (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `storyboard`  
+ *görsel taslak haline getirme*  
  Değişkeni animasyonu Film şeridi.  
   
- `variable`  
+ *Değişken*  
  Güncelleştirildi animasyon değişkeni.  
   
- `newValue`  
+ *newValue*  
  Yeni yuvarlatılmış değeri.  
   
- `previousValue`  
+ *previousValue*  
  Önceki yuvarlanmış değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -131,7 +131,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pAnimationController`  
+ *pAnimationController*  
  Olayları alacak animasyon denetleyici için bir işaretçi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 343d56ebf3f92dadeb286ae2fa44b6e735498215
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: facfa4d9f98100666f267920cbd18c24ae516e72
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355931"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951617"
 ---
 # <a name="cd2dtextlayout-class"></a>CD2DTextLayout sınıfı
 IDWriteTextLayout için sarmalayıcı.  
@@ -119,19 +119,19 @@ CD2DTextLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentTarget`  
+ *pParentTarget*  
  İşleme hedefi için bir işaretçi.  
   
- `strText`  
+ *strText*  
  Yeni bir CD2DTextLayout nesne oluşturmak için dizesi içeren bir CString nesnesi.  
   
- `textFormat`  
+ *textFormat*  
  Dizeye uygulanacak biçimini içeren bir CString nesnesi.  
   
- `sizeMax`  
+ *sizeMax*  
  Düzen kutusunun boyutu.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
   
 ##  <a name="create"></a>  CD2DTextLayout::Create  
@@ -171,10 +171,10 @@ CString GetFontFamilyName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `currentPosition`  
+ *currentPosition*  
  İncelemek için metin konumu.  
   
- `textRange`  
+ *textRange*  
  CurrentPosition tarafından belirtilen konumdaki metin olarak aynı olan metin aralığını biçimlendirme. Bu konumu belirtildi, ancak bunlarla sınırlı olmamak yazı tipi ailesinin adı dahil olmak üzere tam biçimlendirmeleri Çalıştır olduğu anlamına gelir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -190,10 +190,10 @@ CString GetLocaleName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `currentPosition`  
+ *currentPosition*  
  İncelenecek metin konumu.  
   
- `textRange`  
+ *textRange*  
  CurrentPosition tarafından belirtilen konumdaki metin olarak aynı olan metin aralığını biçimlendirme. Bu konumu belirtildi, ancak bunlarla sınırlı olmamak yerel ayar adı dahil olmak üzere tam biçimlendirmeleri Çalıştır olduğu anlamına gelir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -246,10 +246,10 @@ BOOL SetFontFamilyName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pwzFontFamilyName`  
+ *pwzFontFamilyName*  
  Tüm metin dizesini textRange tarafından belirtilen aralıkta uygulandığı yazı tipi ailesinin adı  
   
- `textRange`  
+ *textRange*  
  Bu değişiklik uygulandığı metin aralığı  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -265,10 +265,10 @@ BOOL SetLocaleName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pwzLocaleName`  
+ *pwzLocaleName*  
  Sonlandırılmış yerel ad dizesi  
   
- `textRange`  
+ *textRange*  
  Bu değişiklik uygulandığı metin aralığı  
   
 ### <a name="return-value"></a>Dönüş Değeri  

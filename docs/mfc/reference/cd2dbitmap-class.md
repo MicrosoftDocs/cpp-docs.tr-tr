@@ -61,12 +61,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b92587d6cad3004c87ee6aee4716888d09c1270a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e37a8329e0afaa26b114d0ae0da53f0ec552e09e
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33354288"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954757"
 ---
 # <a name="cd2dbitmap-class"></a>CD2DBitmap sınıfı
 ID2D1Bitmap için sarmalayıcı.  
@@ -159,7 +159,7 @@ void Attach(ID2D1Bitmap* pResource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pResource`  
+ *pResource*  
  Mevcut kaynak arabirimi. NULL olamaz  
   
 ##  <a name="cd2dbitmap"></a>  CD2DBitmap::CD2DBitmap  
@@ -194,25 +194,25 @@ CD2DBitmap(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentTarget`  
+ *pParentTarget*  
  İşleme hedefi için bir işaretçi.  
   
- `uiResID`  
+ *uiResID*  
  Kaynak Kimliği kaynak sayısı.  
   
- `lpszType`  
+ *lpszType*  
  Kaynak türü içeren null ile sonlandırılmış bir dize işaretçi.  
   
- `sizeDest`  
+ *sizeDest*  
  Bit eşlem hedef boyutu.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
   
- `lpszPath`  
+ *lpszPath*  
  İşaretçi null ile sonlandırılmış dizeye dosya adını içerir.  
   
- `hbmpSrc`  
+ *hbmpSrc*  
  Bit eşlem için işler.  
   
 ##  <a name="commoninit"></a>  CD2DBitmap::CommonInit  
@@ -233,13 +233,13 @@ HRESULT CopyFromBitmap(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pBitmap`  
+ *pBitmap*  
  Kopyalanacak bit eşlem  
   
- `destPoint`  
+ *destPoint*  
  Geçerli bit eşlem için bölge srcRect tarafından belirtilen alan sol üst köşesindeki kopyalanır.  
   
- `srcRect`  
+ *srcRect*  
  Bit eşlem kopyalamak için alanı  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -256,13 +256,13 @@ HRESULT CopyFromMemory(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `srcData`  
+ *srcData*  
  Kopyalanacak veriler  
   
- `pitch`  
+ *Sıklık*  
  STRIDE veya srcData içinde depolanan kaynak bit eşlem aralık. STRIDE tarama satırı (piksel cinsinden bellek bir satır) bayt sayısıdır. STRIDE aşağıdaki formülünden hesaplanan değer: piksel genişlik * piksel + bellek doldurma başına bayt sayısı  
   
- `destRect`  
+ *destRect*  
  Geçerli bit eşlem için bölge srcRect tarafından belirtilen alan sol üst köşesindeki kopyalanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -279,13 +279,13 @@ HRESULT CopyFromRenderTarget(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pRenderTarget`  
+ *pRenderTarget*  
  Kopyalamak için bölgesi içeren işleme hedefi  
   
- `destPoint`  
+ *destPoint*  
  Geçerli bit eşlem için bölge srcRect tarafından belirtilen alan sol üst köşesindeki kopyalanır.  
   
- `srcRect`  
+ *srcRect*  
  Kopyalamak için işlem hedefi alanı  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -299,7 +299,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pRenderTarget`  
+ *pRenderTarget*  
  İşleme hedefi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

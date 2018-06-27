@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac864831e9d3a0cf0cd5e67501f1ac8396f99473
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2763335a9165c1667160864a40200dcfd44b7f34
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33352612"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953106"
 ---
 # <a name="carchiveexception-class"></a>CArchiveException sınıfı
 Bir seri hale getirme özel durumu temsil eder  
@@ -69,7 +69,7 @@ class CArchiveException : public CException
  **Başlık:** afx.h  
   
 ##  <a name="carchiveexception"></a>  CArchiveException::CArchiveException  
- Oluşturan bir `CArchiveException` değerini depolama nesnesi `cause` nesnesindeki.  
+ Oluşturan bir `CArchiveException` değerini depolama nesnesi *neden* nesnesindeki.  
   
 ```  
 CArchiveException(
@@ -78,10 +78,10 @@ CArchiveException(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cause`  
+ *Bunun nedeni*  
  Özel durumun nedeni gösteren bir Enum Türü değişkeni. Numaralandırmalar bir listesi için bkz: [m_cause](#m_cause) veri üyesi.  
   
- `lpszArchiveName`  
+ *lpszArchiveName*  
  İşaret adını içeren bir dize `CArchive` özel duruma neden nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -97,7 +97,7 @@ int m_cause;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu veri üyesi tür genel bir değişkendir `int`. Değerlerini tarafından tanımlanan bir `CArchiveException` numaralandırılmış türü. Numaralandırmalar ve anlamları şu şekildedir:  
+ Bu veri üyesi tür genel bir değişkendir **int**. Değerlerini tarafından tanımlanan bir `CArchiveException` numaralandırılmış türü. Numaralandırmalar ve anlamları şu şekildedir:  
   
 - **CArchiveException::none** herhangi bir hata oluştu.  
   

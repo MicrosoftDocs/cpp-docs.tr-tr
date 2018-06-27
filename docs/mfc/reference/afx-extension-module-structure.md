@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6560bf337f6e146bba19e41d56727945df771dd2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e741f172d0dfe528a166fad087460fd9ae18c0f3
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349267"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951188"
 ---
 # <a name="afxextensionmodule-structure"></a>AFX_EXTENSION_MODULE Yapısı
 `AFX_EXTENSION_MODULE` MFC uzantı DLL'leri başlatma sırasında MFC uzantı DLL modülü durumunu tutmak için kullanılır.  
@@ -43,7 +43,7 @@ struct AFX_EXTENSION_MODULE
  *bInitialized*  
  **DOĞRU** DLL modülü ile başlatılmışsa `AfxInitExtensionModule`.  
   
- `hModule`  
+ *hModule'ü*  
  DLL modülü tanıtıcısı belirtir.  
   
  *hResource*  
@@ -60,13 +60,13 @@ struct AFX_EXTENSION_MODULE
   
 -   Çağrı [AfxInitExtensionModule](extension-dll-macros.md#afxinitextensionmodule) ve dönüş değerini denetleyin.  
   
--   Oluşturma bir **CDynLinkLibrary** DLL verme durumunda nesne [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesneleri veya kendi özel kaynaklar içeriyor.  
+-   Oluşturma bir `CDynLinkLibrary` DLL verme durumunda nesne [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesneleri veya kendi özel kaynaklar içeriyor.  
   
  `AFX_EXTENSION_MODULE` Yapısı MFC uzantı DLL modül durumu, normal statik nesne oluşturması önce yürütülen bir parçası olarak MFC uzantı DLL'si başlatılmadı çalışma zamanı sınıf nesnelerin bir kopyasını dahil olmak üzere bir kopyasını tutmak için kullanılan `DllMain` olduğu girdi. Örneğin:  
   
  [!code-cpp[NVC_MFC_DLL#2](../../atl-mfc-shared/codesnippet/cpp/afx-extension-module-structure_1.cpp)]  
   
- Depolanan modül bilgilerini `AFX_EXTENSION_MODULE` yapısı halinde kopyalanabilir **CDynLinkLibrary** nesnesi. Örneğin:  
+ Depolanan modül bilgilerini `AFX_EXTENSION_MODULE` yapısı halinde kopyalanabilir `CDynLinkLibrary` nesnesi. Örneğin:  
   
  [!code-cpp[NVC_MFC_DLL#5](../../atl-mfc-shared/codesnippet/cpp/afx-extension-module-structure_2.cpp)]  
   

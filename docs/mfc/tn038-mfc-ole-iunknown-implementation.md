@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e93c4e9d8707d3960e768b6929bb2b1c16d60b42
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f6a52846754bdf1293e03a47127ae8886e0f1cd2
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385488"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952437"
 ---
 # <a name="tn038-mfcole-iunknown-implementation"></a>TN038: MFC/OLE IUnknown Uygulaması
 > [!NOTE]
@@ -89,7 +89,7 @@ public:
 };  
 ```  
   
- Yalnızca varsa bir IPrintInterface almak için bir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509), çağrı [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) kullanarak `IID` , **IPrintInterface**. Bir `IID` arabirimi benzersiz olarak tanımlayan bir 128-bit sayıdır. Var olan bir `IID` her arabirimin, veya OLE tanımlayın. Varsa `pUnk` gösteren bir işaretçidir bir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) nesnesi, bir IPrintInterface ondan almak için kodu olabilir:  
+ Yalnızca varsa bir IPrintInterface almak için bir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509), çağrı [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) kullanarak `IID` , `IPrintInterface`. Bir `IID` arabirimi benzersiz olarak tanımlayan bir 128-bit sayıdır. Var olan bir `IID` her arabirimin, veya OLE tanımlayın. Varsa *pUnk* gösteren bir işaretçidir bir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) nesnesi, bir IPrintInterface ondan almak için kodu olabilir:  
   
 ```  
 IPrintInterface* pPrint = NULL;  
@@ -116,7 +116,7 @@ virtual void PrintObject();
 };  
 ```  
   
- Uygulamaları [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317) tam olarak aynı bu uygulanan yukarıdaki olacaktır. **CPrintObj::QueryInterface** şunun gibi görünür:  
+ Uygulamaları [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317) tam olarak aynı bu uygulanan yukarıdaki olacaktır. `CPrintObj::QueryInterface` şunun gibi görünür:  
   
 ```  
 HRESULT CPrintObj::QueryInterface(REFIID iid, void FAR* FAR* ppvObj)  
@@ -301,15 +301,15 @@ HRESULT CEditPrintObj::CPrintObj::QueryInterface(
   
 2.  Kullanım `DECLARE_INTERFACE_MAP` türetilmiş sınıf tanımında işlevi.  
   
-3.  Desteklemek istediğiniz her arabirim için kullanma `BEGIN_INTERFACE_PART` ve `END_INTERFACE_PART` makroları sınıf tanımında.  
+3.  Desteklemek istediğiniz her arabirim için sınıf tanımında begın_ınterface_part ve end_ınterface_part makroları kullanın.  
   
-4.  Uygulama dosyasında kullanmak `BEGIN_INTERFACE_MAP` ve `END_INTERFACE_MAP` sınıfın arabirim eşlemesi tanımlamak için makroları.  
+4.  Uygulama dosyasında begın_ınterface_map ve end_ınterface_map makroları sınıfın arabirim eşlemesi tanımlamak için kullanın.  
   
-5.  Desteklenen her IID için kullanmak `INTERFACE_PART` makrosu arasında `BEGIN_INTERFACE_MAP` ve `END_INTERFACE_MAP` belirli bir sınıfınızın "bölümünü" Bu IID eşlemek için makroları.  
+5.  Desteklenen her IID için belirli bir sınıfınızın "bölümünü" Bu IID eşlemek için begın_ınterface_map ve end_ınterface_map makrolar arasında ınterface_part makrosu kullanın.  
   
 6.  Her desteklediğiniz arabirimleri temsil eden iç içe geçmiş sınıflar uygulayın.  
   
-7.  Kullanım `METHOD_PROLOGUE` üst erişmek için makrosu `CCmdTarget`-türetilmiş bir nesne içermelidir.  
+7.  METHOD_PROLOGUE makrosu üst erişmek için kullandığınız `CCmdTarget`-türetilmiş bir nesne içermelidir.  
   
 8. [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317), ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) için devredebilirsiniz `CCmdTarget` bu işlevlerin uygulaması (`ExternalAddRef`, `ExternalRelease`, ve `ExternalQueryInterface`).  
   
@@ -338,7 +338,7 @@ END_INTERFACE_PART(PrintObj)
 };  
 ```  
   
- Yukarıdaki bildirimde türetilmiş bir sınıf oluşturur `CCmdTarget`. `DECLARE_INTERFACE_MAP` Makrosu framework Bu sınıf özel arabirim eşlemesi olduğunu bildirir. Ayrıca, `BEGIN_INTERFACE_PART` ve `END_INTERFACE_PART` makroları tanımlama iç içe geçmiş sınıflar, bu durumda adlarıyla CEditObj ve CPrintObj (X yalnızca iç içe geçmiş sınıflar "ı Başlat"C"ve arabirimi sınıflarını başlayın genel sınıflardan ayırt etmek için kullanılır "). Bu sınıfların iki iç içe üyesi oluşturulur: m_CEditObj ve m_CPrintObj, sırasıyla. Makrolar otomatik olarak bildirin [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317), ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) çalışır; bu nedenle, yalnızca işlevleri bu arabirime belirli bildirin: EditObject ve PrintObject (OLE makrosu `STDMETHOD` kullanılan böylece `_stdcall` ve sanal anahtar sözcükler hedef platformu için uygun şekilde sağlanır).  
+ Yukarıdaki bildirimde türetilmiş bir sınıf oluşturur `CCmdTarget`. Declare_ınterface_map makrosu framework Bu sınıf özel arabirim eşlemesi olduğunu bildirir. Ayrıca, begın_ınterface_part ve end_ınterface_part makroları iç içe geçmiş sınıflar, bu durumda CEditObj ve (X yalnızca iç içe geçmiş sınıflar hangi Başlat "C" ve arabirim ile hangi sınıfların genel sınıflardan ayırt etmek için kullanılan CPrintObj adlarıyla tanımlayın "ile" başlamalıyım). Bu sınıfların iki iç içe üyesi oluşturulur: m_CEditObj ve m_CPrintObj, sırasıyla. Makrolar otomatik olarak bildirin [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317), ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) çalışır; bu nedenle, yalnızca işlevleri bu arabirime belirli bildirin: EditObject ve PrintObject (STDMETHOD kullanılır OLE makrosu böylece **_stdcall** ve sanal anahtar sözcükler hedef platformu için uygun şekilde sağlanır).  
   
  Bu sınıf için arabirim eşlemesi uygulamak için:  
   
@@ -356,7 +356,7 @@ END_INTERFACE_MAP()
   
  Bu IID_IPrintInterface IID m_CPrintObj ve IID_IEditInterface ile m_CEditObj sırasıyla bağlar. `CCmdTarget` Uyarlamasını [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) (`CCmdTarget::ExternalQueryInterface`) m_CPrintObj ve istendiğinde m_CEditObj işaretçileri döndürmek için bu eşlemeyi kullanır. İçin bir giriş eklemek gerekli değildir `IID_IUnknown`; framework (Bu durumda, m_CPrintObj) eşlemesindeki ilk arabirimi zaman kullanacağı `IID_IUnknown` isteniyor.  
   
- Olsa bile `BEGIN_INTERFACE_PART` otomatik olarak bildirilen makrosu [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317) ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) işlevleri, hala uygulamadan vermeniz gerekir:  
+ Begın_ınterface_part makrosu otomatik olarak bildirilmiş olsa bile [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317) ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) işlevleri, hala uygulamadan vermeniz gerekir:  
   
 ```  
 ULONG FAR EXPORT CEditPrintObj::XEditObj::AddRef()  
@@ -404,10 +404,10 @@ void FAR EXPORT CEditPrintObj::XEditObj::EditObject()
   
 -   Bu yerleşik yöntemlerden birini hem arabirimlerinizin bildirme  
   
- Ayrıca, çerçeve ileti eşlemeleri dahili olarak kullanılır. Bu sayede deyin framework sınıfından türetilen `COleServerDoc`, zaten belirli arabirimleri destekler ve değişiklik veya eklemeler çerçevesi tarafından sağlanan arabirimleri sağlar. Framework tam olarak bir arabirim eşlemesi temel sınıfından devralan desteklediği için bunu yapabilirsiniz. Bunun nedeni neden olan `BEGIN_INTERFACE_MAP` , ikinci parametre olarak temel sınıfın adını alır.  
+ Ayrıca, çerçeve ileti eşlemeleri dahili olarak kullanılır. Bu sayede deyin framework sınıfından türetilen `COleServerDoc`, zaten belirli arabirimleri destekler ve değişiklik veya eklemeler çerçevesi tarafından sağlanan arabirimleri sağlar. Framework tam olarak bir arabirim eşlemesi temel sınıfından devralan desteklediği için bunu yapabilirsiniz. Neden, ikinci parametre olarak begın_ınterface_map temel sınıfın adını alır neden olmasıdır.  
   
 > [!NOTE]
->  Genelde bu arabirimin katıştırılmış uzmanlık yalnızca MFC sürümünden devralarak MFC'nin yerleşik uygulamaları OLE arabirimleri uyarlamasını yeniden mümkün değildir. Bu mümkün değildir çünkü kullanımını `METHOD_PROLOGUE` içeren erişmek için makrosu `CCmdTarget`-türetilen nesne gelir bir *Sabit uzaklık* katıştırılmış nesne, `CCmdTarget`-nesne türetilmiş. Bu, örneğin, size olamaz türetilen katıştırılmış XMyAdviseSink MFC'nin uygulamasında anlamına gelir `COleClientItem::XAdviseSink`XAdviseSink üstünden belirli uzaklığındaki dayanır çünkü `COleClientItem` nesnesi.  
+>  Genelde bu arabirimin katıştırılmış uzmanlık yalnızca MFC sürümünden devralarak MFC'nin yerleşik uygulamaları OLE arabirimleri uyarlamasını yeniden mümkün değildir. Bu mümkün değildir çünkü içeren erişmek için METHOD_PROLOGUE makrosu kullanımını `CCmdTarget`-türetilen nesne gelir bir *Sabit uzaklık* katıştırılmış nesneden, `CCmdTarget`-nesne türetilmiş. Bu, örneğin, size olamaz türetilen katıştırılmış XMyAdviseSink MFC'nin uygulamasında anlamına gelir `COleClientItem::XAdviseSink`XAdviseSink üstünden belirli uzaklığındaki dayanır çünkü `COleClientItem` nesnesi.  
   
 > [!NOTE]
 >  Ancak, tüm MFC'ın varsayılan davranışı istediğiniz işlevleri için MFC uygulaması için temsilci olabilir. Bu MFC uygulaması yapılır `IOleInPlaceFrame` (XOleInPlaceFrame) içinde `COleFrameHook` sınıfı (bunu temsilciler birçok işlevini m_xOleInPlaceUIWindow için). Bu tasarım, birçok arabirimleri uygulayan nesneler çalışma zamanı boyutunu azaltmak için seçildi; (önceki bölümde şekilde m_pParent kullanılan gibi) geri işaretçi gereksinimini ortadan kaldırır.  
@@ -418,13 +418,13 @@ void FAR EXPORT CEditPrintObj::XEditObj::EditObject()
  Toplama kullanmanın iki yolu vardır: (1) toplama destekleyen bir COM nesnesi kullanılarak ve (2) bir başkası tarafından toplanan nesneyi uygulama. Bu özellikler "toplama bir nesne kullanarak" ve "bir nesne toplanabilir yaparak" olarak başvuruda bulunulabilir. MFC her ikisi de destekler.  
   
 ### <a name="using-an-aggregate-object"></a>Toplama bir nesne kullanma  
- QueryInterface mekanizması içine toplama bağlamanın bir şekilde olması gerekiyor var. toplama bir nesne kullanmak için. Nesnenizin yerel bir parçası olduğu gibi diğer bir deyişle, toplama bir nesne davranır gerekir. Nasıl bu bağ MFC'nin arabirimi içine eşleme mekanizması ek olarak `INTERFACE_PART` makrosu, iç içe nesne bir IID için eşlenen burada da bildirebilirsiniz toplama bir nesne bir parçası olarak, `CCmdTarget` türetilmiş sınıf. Bunu yapmak için `INTERFACE_AGGREGATE` makrosu kullanılır. Bu üye değişkeni belirtmenize olanak tanır (bir işaretçi olması gerekir bir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) veya türetilmiş sınıf), arabirim harita mekanizmasına tümleşik olduğu. İşaretçinin ne zaman NULL değilse `CCmdTarget::ExternalQueryInterface` olduğu adlı framework otomatik olarak birleşik nesnenin çağıracak [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) üye işlev, varsa `IID` istenen biri yerel değil `IID`s tarafından desteklenen `CCmdTarget` nesnesinin kendisi.  
+ QueryInterface mekanizması içine toplama bağlamanın bir şekilde olması gerekiyor var. toplama bir nesne kullanmak için. Nesnenizin yerel bir parçası olduğu gibi diğer bir deyişle, toplama bir nesne davranır gerekir. Nasıl MFC'nin arabirimi eşleme mekanizmasını ınterface_part makrosu yanı sıra halinde bu bağ mu iç içe nesne bir IID eşlendi burada da bildirebilirsiniz toplama bir nesne bir parçası olarak, `CCmdTarget` türetilmiş sınıf. Bunu yapmak için INTERFACE_AGGREGATE makrosu kullanılır. Bu üye değişkeni belirtmenize olanak tanır (bir işaretçi olması gerekir bir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) veya türetilmiş sınıf), arabirim harita mekanizmasına tümleşik olduğu. İşaretçinin ne zaman NULL değilse `CCmdTarget::ExternalQueryInterface` olduğu adlı framework otomatik olarak birleşik nesnenin çağıracak [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) üye işlev, varsa `IID` istenen biri yerel değil `IID`s tarafından desteklenen `CCmdTarget` nesnesinin kendisi.  
   
 ##### <a name="to-use-the-interfaceaggregate-macro"></a>INTERFACE_AGGREGATE makrosu kullanmak için  
   
 1.  Üye değişkeni bildirme (bir `IUnknown*`) toplama bir nesne için bir işaretçi içerecek.  
   
-2.  Dahil bir `INTERFACE_AGGREGATE` makrosu adıyla üye değişkenine başvuruyor, eşlemesindeki arabirimi.  
+2.  Ada göre üye değişkenine başvuruyor arabirimi haritanızı INTERFACE_AGGREGATE makrosu ekleyin.  
   
 3.  Belirli bir noktada (genellikle sırasında `CCmdTarget::OnCreateAggregates`), NULL dışında bir şey için üye değişkeni başlatılamıyor.  
   
@@ -508,10 +508,10 @@ void EnableAggregation();
 ## <a name="remarks"></a>Açıklamalar  
   
 #### <a name="parameters"></a>Parametreler  
- `lpIID`  
+ *lpIID*  
  Bir IID (ilk bağımsız değişkeni için QueryInterface) kadar bir işaretçi  
   
- `ppvObj`  
+ *ppvObj*  
  Bir işaretçi bir IUnknown * (ikinci bağımsız değişkeni için QueryInterface)  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -550,7 +550,7 @@ DECLARE_INTERFACE_MAP
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu makrosu türetilen sınıfı kullanın `CCmdTarget` bir arabirim eşlemesi olacaktır. Benzer şekilde kullanılan `DECLARE_MESSAGE_MAP`. Bu makrosu çağırma sınıf tanımında, genellikle bir üstbilgi yerleştirilmelidir (. H) dosyası. Bir sınıfla `DECLARE_INTERFACE_MAP` arabirim eşlemesi uygulama dosyada tanımlamanız gerekir (. CPP) ile `BEGIN_INTERFACE_MAP` ve `END_INTERFACE_MAP` makroları.  
+ Bu makrosu türetilen sınıfı kullanın `CCmdTarget` bir arabirim eşlemesi olacaktır. Çok DECLARE_MESSAGE_MAP aynı şekilde kullanılır. Bu makrosu çağırma sınıf tanımında, genellikle bir üstbilgi yerleştirilmelidir (. H) dosyası. Declare_ınterface_map sınıfıyla arabirim eşlemesi uygulama dosyada tanımlamanız gerekir (. CPP) begın_ınterface_map ve end_ınterface_map makroları ile.  
   
 ### <a name="begininterfacepart-and-endinterfacepart--macro-descriptions"></a>Begın_ınterface_part ve end_ınterface_part — makrosu açıklamaları  
   
@@ -567,18 +567,18 @@ END_INTERFACE_PART(
 ## <a name="remarks"></a>Açıklamalar  
   
 #### <a name="parameters"></a>Parametreler  
- `localClass`  
+ *localClass*  
  Arabirimini uygulayan sınıf adı  
   
- `iface`  
+ *iface*  
  Bu sınıf uygulayan arabirim adı  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıfınıza gerçekleştireceksiniz her arabirim için olması gerekir. bir `BEGIN_INTERFACE_PART` ve `END_INTERFACE_PART` çifti. Bu makroları yanı sıra bu sınıfın bir katıştırılmış üye değişkeni tanımlamanız OLE arabirimi türetilmiş yerel bir sınıfı tanımlar. [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317), ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) üyeleri otomatik olarak bildirildiğinde. Uygulanan arabirimi parçası olan bir üye işlevleri için bildirimleri eklemeniz gerekir (Bu bildirimleri intranetiniz arasında `BEGIN_INTERFACE_PART` ve `END_INTERFACE_PART` makroları).  
+ Sınıfınıza gerçekleştireceksiniz her arabirim için bir begın_ınterface_part ve end_ınterface_part çifti olması gerekir. Bu makroları yanı sıra bu sınıfın bir katıştırılmış üye değişkeni tanımlamanız OLE arabirimi türetilmiş yerel bir sınıfı tanımlar. [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317), ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) üyeleri otomatik olarak bildirildiğinde. Uygulanan arabirimi parçası olan bir üye işlevleri için bildirimleri eklemeniz gerekir (Bu bildirimler arasında begın_ınterface_part ve end_ınterface_part makroları yerleştirilir).  
   
- `iface` Bağımsız değişkeni olduğu gibi uygulamak istediğiniz OLE arabirimi `IAdviseSink`, veya `IPersistStorage` (veya kendi özel arabirim).  
+ *İface* bağımsız değişkeni olduğu gibi uygulamak istediğiniz OLE arabirimi `IAdviseSink`, veya `IPersistStorage` (veya kendi özel arabirim).  
   
- `localClass` Bağımsız değişkeni tanımlanacağı yerel sınıfı adıdır. Bir'X ' adına $a otomatik olarak. Bu adlandırma kuralını aynı ada sahip genel sınıflarla çakışmaları önlemek için kullanılır. Ayrıca, katıştırılmış üyenin adını, aynı `localClass` 'm_x tarafından' öneki dışında adı.  
+ *LocalClass* bağımsız değişkeni tanımlanacağı yerel sınıfı adıdır. Bir'X ' adına $a otomatik olarak. Bu adlandırma kuralını aynı ada sahip genel sınıflarla çakışmaları önlemek için kullanılır. Ayrıca, katıştırılmış üyenin adını, aynı *localClass* 'm_x tarafından' öneki dışında adı.  
   
  Örneğin:  
   
@@ -621,14 +621,14 @@ END_INTERFACE_PART(MyAdviseSink)
 ## <a name="remarks"></a>Açıklamalar  
   
 #### <a name="parameters"></a>Parametreler  
- `theClass`  
+ *Sınıfın*  
  Arabirim eşlemesi tanımlanacak olduğu sınıfı  
   
- `baseClass`  
- Sınıfından `theClass` türetir.  
+ *baseClass*  
+ Sınıfından *sınıfın* türetir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `BEGIN_INTERFACE_MAP` Ve `END_INTERFACE_MAP` makroları uygulama dosyasında gerçekten arabirim eşlemesi tanımlamak için kullanılır. Uygulanan her arabirim için var olan bir veya daha fazla `INTERFACE_PART` makrosu çağrılarını. Sınıfını kullanan her toplama için bir olduğundan `INTERFACE_AGGREGATE` makrosu çağırma.  
+ Begın_ınterface_map ve end_ınterface_map makroları uygulama dosyasında gerçekten arabirim eşlemesi tanımlamak için kullanılır. Uygulanan her arabirim için bir veya daha fazla ınterface_part makrosu çağrılarını yoktur. Sınıfını kullanan her toplama için bir INTERFACE_AGGREGATE makrosu çağırma yoktur.  
   
 ### <a name="interfacepart--macro-description"></a>Interface_part — Makrosu açıklaması  
   
@@ -643,17 +643,17 @@ END_INTERFACE_PART(MyAdviseSink)
 ## <a name="remarks"></a>Açıklamalar  
   
 #### <a name="parameters"></a>Parametreler  
- `theClass`  
+ *Sınıfın*  
  Arabirim eşlemesi içeren sınıfın adı.  
   
- `iid`  
+ *IID*  
  `IID` Olan katıştırılmış sınıfına eşlenemez.  
   
- `localClass`  
+ *localClass*  
  (Daha az ' X') yerel sınıfın adı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu makrosu arasında kullanılan `BEGIN_INTERFACE_MAP` makrosu ve `END_INTERFACE_MAP` nesnenizin makrosu her arabirim için destekler. Belirtilen sınıf üyesi için bir IID eşlemenizi sağlar `theClass` ve `localClass`. 'm_x' eklenecek `localClass` otomatik olarak. Not birden fazla `IID` tek bir üye ile ilişkili olabilir. Yalnızca bir "en türetilmiş" arabirimini uygulayan ve tüm ara arabirimleri de sağlamak istiyorsanız bu oldukça yararlıdır. Bu iyi bir örnektir `IOleInPlaceFrameWindow` arabirimi. Hiyerarşisi şöyle görünür:  
+ Bu makrosu begın_ınterface_map makrosu ve end_ınterface_map makrosu arasında nesnenizin destekleyecek her arabirim için kullanılır. Belirtilen sınıf üyesi için bir IID eşlemenizi sağlar *sınıfın* ve *localClass*. 'm_x' eklenecek *localClass* otomatik olarak. Not birden fazla `IID` tek bir üye ile ilişkili olabilir. Yalnızca bir "en türetilmiş" arabirimini uygulayan ve tüm ara arabirimleri de sağlamak istiyorsanız bu oldukça yararlıdır. Bu iyi bir örnektir `IOleInPlaceFrameWindow` arabirimi. Hiyerarşisi şöyle görünür:  
   
 ```  
 IUnknown  
@@ -662,7 +662,7 @@ IUnknown
     IOleInPlaceFrameWindow 
 ```  
   
- Bir nesne uyguluyorsa `IOleInPlaceFrameWindow`, bir istemci olabilir `QueryInterface` bu arabirimleri hiçbirinde: `IOleUIWindow`, `IOleWindow`, veya [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509), "en çok türetilen" arabirimi yanı sıra `IOleInPlaceFrameWindow` (gerçekten olduğunuz bir Uygulama). Bu durumu çözmek için birden fazla kullanabilirsiniz `INTERFACE_PART` her temel arabirimine eşlemek için makrosu `IOleInPlaceFrameWindow` arabirimi:  
+ Bir nesne uyguluyorsa `IOleInPlaceFrameWindow`, bir istemci olabilir `QueryInterface` bu arabirimleri hiçbirinde: `IOleUIWindow`, `IOleWindow`, veya [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509), "en çok türetilen" arabirimi yanı sıra `IOleInPlaceFrameWindow` (gerçekten olduğunuz bir Uygulama). Bu durumu çözmek için birden fazla ınterface_part makrosu her temel arabirimine eşlemek için kullanabileceğiniz `IOleInPlaceFrameWindow` arabirimi:  
   
  sınıf tanımı dosyasında:  
   
@@ -701,14 +701,14 @@ END_INTERFACE_MAP
 ## <a name="remarks"></a>Açıklamalar  
   
 #### <a name="parameters"></a>Parametreler  
- `theClass`  
+ *Sınıfın*  
  Arabirim eşlemesi içeren sınıf adı,  
   
- `theAggr`  
+ *theAggr*  
  Toplanacak olan üye değişkeni adı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu makrosu framework toplama bir nesne sınıfını kullanarak olduğunu bildirmek için kullanılır. Arasında görünmelidir `BEGIN_INTERFACE_PART` ve `END_INTERFACE_PART` makroları. Türetilen ayrı bir nesne bir toplama nesnedir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509). Bir toplama kullanarak ve `INTERFACE_AGGREGATE` makrosu, nesne tarafından doğrudan desteklenecek toplama destekler görünür tüm arabirimler yapabilir. `theAggr` Bağımsız değişkeni olan yalnızca bir üye değişkenine sınıfından türetilmiş sınıfının adını [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) (doğrudan veya dolaylı olarak). Tüm `INTERFACE_AGGREGATE` makroları uymalıdır `INTERFACE_PART` bir arabirim eşlemesi yerleştirildiğinde makroları.  
+ Bu makrosu framework toplama bir nesne sınıfını kullanarak olduğunu bildirmek için kullanılır. Begın_ınterface_part ve end_ınterface_part makrolar arasında yer almalıdır. Türetilen ayrı bir nesne bir toplama nesnedir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509). Bir toplama ve INTERFACE_AGGREGATE makrosu kullanarak doğrudan nesne tarafından desteklenebilmesi için birleşik destekler görünür tüm arabirimler yapabilirsiniz. *TheAggr* bağımsız değişkeni olan yalnızca bir üye değişkenine sınıfından türetilmiş sınıfının adını [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) (doğrudan veya dolaylı olarak). Tüm INTERFACE_AGGREGATE makroları bir arabirim eşlemesi yerleştirildiğinde ınterface_part makroları izlemeniz gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   

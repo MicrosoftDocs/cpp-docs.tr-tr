@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca18f12c5aa1ae767b8921c28e650f3fb69d9942
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3f0419e8f8aea141c3aaa54e320200160dae877f
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384729"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957230"
 ---
 # <a name="tn029-splitter-windows"></a>TN029: Bölünmüş Pencereler
 MFC bu not açıklar [CSplitterWnd sınıfı](../mfc/reference/csplitterwnd-class.md), pencere ayırır ve diğer bölmesinde Windows'un yeniden boyutlandırma yönetir sağlar.  
@@ -66,7 +66,7 @@ MFC bu not açıklar [CSplitterWnd sınıfı](../mfc/reference/csplitterwnd-clas
  Bölmesi:  
  Bir uygulamaya özgü penceresi, bir `CSplitterWnd` yönetir. Bir bölme genellikle türetilmiş bir nesnedir [CView sınıfı](../mfc/reference/cview-class.md), ancak herhangi [CWnd](../mfc/reference/cwnd-class.md) uygun alt pencere kimliğine sahip nesne  
   
- Kullanılacak bir `CWnd`-türetilen nesne, geçirmek `RUNTIME_CLASS` nesnenin `CreateView` işlev, kullanıyormuş gibi bir `CView`-türetilmiş sınıf. Sınıfınızda kullanmalısınız `DECLARE_DYNCREATE` ve `IMPLEMENT_DYNCREATE` framework çalışma zamanında dinamik oluşturma kullandığından. Kod içinde çok olsa `CSplitterWnd` özgü olan `CView` sınıfı, [CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) bu eylemlerin gerçekleştirildiğinden önce her zaman kullanılır.  
+ Kullanılacak bir `CWnd`-türetilen nesne, nesnenin RUNTIME_CLASS geçirmek `CreateView` işlev, kullanıyormuş gibi bir `CView`-türetilmiş sınıf. Framework çalışma zamanında dinamik oluşturma kullandığından sınıfınız DECLARE_DYNCREATE ve IMPLEMENT_DYNCREATE kullanmanız gerekir. Kod içinde çok olsa `CSplitterWnd` özgü olan `CView` sınıfı, [CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) bu eylemlerin gerçekleştirildiğinden önce her zaman kullanılır.  
   
  Bölümlendirici çubuğu:  
  Satırları ve sütunları bölmeleri, arasında yerleştirilmiş denetim. Satır boyutları veya bölmeleri sütunlarının ayarlamak için kullanılabilir.  
@@ -88,14 +88,14 @@ MFC bu not açıklar [CSplitterWnd sınıfı](../mfc/reference/csplitterwnd-clas
 [      ][      ][v]  
 ```  
   
- Kullanıcı kaydırma çubuğu taşıdığında `WM_VSCROLL` iletileri için her iki görünümde gönderilir. Kaydırma çubuğu konumu ya da Görünüm ayarlar, paylaşılan kaydırma çubuğu ayarlanır.  
+ Kullanıcı kaydırma çubuğu geçtiğinde, her iki görünümde WM_VSCROLL iletileri gönderilir. Kaydırma çubuğu konumu ya da Görünüm ayarlar, paylaşılan kaydırma çubuğu ayarlanır.  
   
  Paylaşılan kaydırma çubukları benzer görünüm nesneleriyle en yararlı olduğunu unutmayın. Farklı türde bir ayırıcı görünümlerini karışımı, kaydırma konumlarına koordine etmek için özel kod yazmanıza izin olabilir. Tüm `CView`-kullanan sınıfı türetilmiş `CWnd` kaydırma çubuğu varsa, API paylaşılan kaydırma çubuğuna temsilci. `CScrollView` Uygulamasıdır bir örneği bir `CView` destekleyen sınıfı paylaşılan kaydırma çubukları. Öğesinden türetilmemiş sınıfları `CView`, Denetim olmayan kaydırma çubukları kullanan sınıfları veya standart Windows uygulamalarını kullanın sınıfları (örneğin, `CEditView`) paylaşılan kaydırma çubuğu özelliğiyle çalışmaz `CSplitterWnd`.  
   
 ## <a name="minimum-sizes"></a>Minimum boyutları  
  Her satır için en az satır yüksekliğini yoktur ve her sütun için en az bir sütun genişliği yoktur. Bu en az bir bölme tam ayrıntılı olarak gösterilmesi için çok küçük değil güvence altına alır.  
   
- Statik Bölümlendirici pencere için ilk en az satır yüksekliğini ve sütun genişliği 0'dır. Dinamik Bölümlendirici pencere için ilk en az satır yüksekliğini ve sütun genişliği ayarlanır `sizeMin` parametresinin `CSplitterWnd::Create` işlevi.  
+ Statik Bölümlendirici pencere için ilk en az satır yüksekliğini ve sütun genişliği 0'dır. Dinamik Bölümlendirici pencere için ilk en az satır yüksekliğini ve sütun genişliği ayarlanır *sizeMin* parametresinin `CSplitterWnd::Create` işlevi.  
   
  Bu en az boyutları kullanarak değiştirebilirsiniz [CSplitterWnd::SetRowInfo](../mfc/reference/csplitterwnd-class.md#setrowinfo) ve [CSplitterWnd::SetColumnInfo](../mfc/reference/csplitterwnd-class.md#setcolumninfo) işlevleri.  
   
