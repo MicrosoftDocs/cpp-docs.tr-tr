@@ -118,12 +118,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90495f2eccfb31169653f6dcb09f2cf52e5a05dd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bb514531e600243fe02f8b5a6a9cd91a30c14542
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357247"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952586"
 ---
 # <a name="ccombobox-class"></a>CComboBox sınıfı
 Bir Windows birleşik giriş kutusu işlevselliğini sağlar.  
@@ -254,7 +254,7 @@ class CComboBox : public CWnd
   
  Katıştırılmış içerirse bir `CComboBox` nesnesi içinde başka bir pencere nesnesi, onu destroy gerekmez. Oluşturursanız, `CComboBox` nesne yığında otomatik olarak yok. Oluşturursanız, `CComboBox` nesnesi kullanarak yığında **yeni** işlevini çağırmanız gerekir **silmek** Windows birleşik giriş kutusu bozulduğunda yok etmek için nesne üzerinde.  
   
- **Not** işlemek istiyorsanız `WM_KEYDOWN` ve `WM_CHAR` iletileri, sahip olduğunuz bir alt kümesi için düzenleme ve liste kutusu denetimleri, sınıflarından açılan kutunun `CEdit` ve `CListBox`, ve bu iletileri için işleyiciler türetilmiş ekleyin sınıflar. Daha fazla bilgi için bkz: [ http://support.microsoft.com/default.aspxscid=kb; en-us; Q174667](http://support.microsoft.com/default.aspxscid=kb;en-us;q174667) ve [CWnd::SubclassWindow](../../mfc/reference/cwnd-class.md#subclasswindow).  
+ **Not** WM_KEYDOWN ve WM_CHAR iletileri işlemek istiyorsanız, düzenleme ve liste kutusu denetimleri, sınıflarından açılan kutunun alt sınıf sahip `CEdit` ve `CListBox`, ve türetilen sınıflar bu iletileri işleyicileri ekleyin. Daha fazla bilgi için bkz: [ http://support.microsoft.com/default.aspxscid=kb; en-us; Q174667](http://support.microsoft.com/default.aspxscid=kb;en-us;q174667) ve [CWnd::SubclassWindow](../../mfc/reference/cwnd-class.md#subclasswindow).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -276,7 +276,7 @@ int AddString(LPCTSTR lpszString);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszString`  
+ *lpszString*  
  Eklenecek null ile sonlandırılmış dizeye noktaları.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -324,7 +324,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpCompareItemStruct`  
+ *lpCompareItemStruct*  
  Uzun bir işaretçi bir [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -366,25 +366,25 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwStyle`  
+ *dwStyle*  
  Birleşik giriş kutusu stilini belirtir. Herhangi bir bileşimini uygulamak [birleşik giriş kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) kutusuna.  
   
- `rect`  
+ *Rect*  
  Birleşik giriş kutusu boyutunu ve konumunu işaret. Olabilir bir [RECT yapısı](../../mfc/reference/rect-structure1.md) veya `CRect` nesnesi.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Açılan kutunun üst pencere belirtir (genellikle bir `CDialog`). Değil olmalıdır **NULL**.  
   
- `nID`  
+ *nID*  
  Açılan kutunun denetim kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturmak bir `CComboBox` iki adımda nesne. İlk olarak, Oluşturucusu arayın ve ardından arama **oluşturma**, hangi Windows birleşik giriş kutusu oluşturur ve ona ekler `CComboBox` nesnesi.  
+ Oluşturmak bir `CComboBox` iki adımda nesne. İlk olarak, Oluşturucusu arayın ve ardından arama `Create`, hangi Windows birleşik giriş kutusu oluşturur ve ona ekler `CComboBox` nesnesi.  
   
- Zaman **oluşturma** yürütür, Windows gönderir [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), ve [WM_ GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) birleşik giriş kutusu iletileri.  
+ Zaman `Create` yürütür, Windows gönderir [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), ve [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) Birleşik giriş kutusu iletileri.  
   
  Bu iletiler, varsayılan olarak tarafından işlenen [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize), ve [Ongetminmaxınfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) üye işlevleri içinde `CWnd` temel sınıfı. Varsayılan ileti işleme genişletmek için öğesinden bir sınıf türetin `CComboBox`ileti eşlemesi için yeni sınıf ekleyin ve önceki ileti işleyicisi üye işlevlerini geçersiz kılma. Geçersiz kılma `OnCreate`, örneğin, gerekli başlatma için yeni bir sınıf gerçekleştirmek için.  
   
@@ -428,7 +428,7 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpDeleteItemStruct`  
+ *lpDeleteItemStruct*  
  Windows için uzun bir işaretçi [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) silinmiş öğeyi hakkında bilgi içeren yapısı. Bkz: [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) bu yapı açıklaması.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -438,21 +438,21 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
  [!code-cpp[NVC_MFC_CComboBox#8](../../mfc/reference/codesnippet/cpp/ccombobox-class_8.cpp)]  
   
 ##  <a name="deletestring"></a>  CComboBox::DeleteString  
- Konum öğesinde siler `nIndex` açılan kutusundan.  
+ Konum öğesinde siler *nIndex* açılan kutusundan.  
   
 ```  
 int DeleteString(UINT nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Silinecek dizeye dizinini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dönüş değeri sıfırdan büyük veya 0 değerine eşit ise, ardından bunu bir listede kalan dizeleri sayısıdır. Dönüş değeri **CB_ERR** varsa `nIndex` öğe sayısından daha büyük bir dizin listesindeki belirtir.  
+ Dönüş değeri sıfırdan büyük veya 0 değerine eşit ise, ardından bunu bir listede kalan dizeleri sayısıdır. Dönüş değeri **CB_ERR** varsa *nIndex* öğe sayısından daha büyük bir dizin listesindeki belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İzleyen tüm öğeleri `nIndex` şimdi bir konum aşağı taşıma. Örneğin, bir birleşik giriş kutusu iki öğeler içeriyorsa, ilk öğe silinmesi şimdi ilk konumda kalan öğeyi neden olur. `nIndex`ilk konumda öğesi için 0 =.  
+ İzleyen tüm öğeleri *nIndex* şimdi bir konum aşağı taşıma. Örneğin, bir birleşik giriş kutusu iki öğeler içeriyorsa, ilk öğe silinmesi şimdi ilk konumda kalan öğeyi neden olur. *nIndex*= 0 ilk konumda öğesi için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CComboBox#9](../../mfc/reference/codesnippet/cpp/ccombobox-class_9.cpp)]  
@@ -467,8 +467,8 @@ int Dir(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `attr`  
- Herhangi bir bileşimi olabilir `enum` değerleri açıklanan [CFile::GetStatus](../../mfc/reference/cfile-class.md#getstatus) veya herhangi bir birleşimini aşağıdaki değerlerden biri:  
+ *attr*  
+ Herhangi bir bileşimi olabilir **enum** değerleri açıklanan [CFile::GetStatus](../../mfc/reference/cfile-class.md#getstatus) veya herhangi bir birleşimini aşağıdaki değerlerden biri:  
   
 - **DDL_READWRITE** dosyası okunamıyor veya yazılamıyor.  
   
@@ -478,15 +478,15 @@ int Dir(
   
 - **DDL_SYSTEM** bir sistem dosyası bir dosyadır.  
   
-- **DDL_DIRECTORY** tarafından belirtilen adını `lpszWildCard` bir dizini belirtir.  
+- **DDL_DIRECTORY** tarafından belirtilen adını *lpszWildCard* bir dizini belirtir.  
   
 - **DDL_ARCHIVE** dosya arşivlenir.  
   
-- **DDL_DRIVES** tarafından belirtilen adla eşleşen tüm sürücüler dahil `lpszWildCard`.  
+- **DDL_DRIVES** tarafından belirtilen adla eşleşen tüm sürücüler dahil *lpszWildCard*.  
   
 - **DDL_EXCLUSIVE** özel bayrağı. Özel bayrağı ayarlarsanız, yalnızca belirtilen türde dosyalar listelenir. Aksi halde, belirtilen türdeki dosyaları "normal" dosyalarına ek olarak listelenir.  
   
- `lpszWildCard`  
+ *lpszWildCard*  
  Bir dosya belirtimi dize noktalarına. Dize, joker karakter içerebilir (örneğin, *.\*).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -506,13 +506,13 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpDrawItemStruct`  
+ *lpDrawItemStruct*  
  Bir işaretçi bir [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) gerekli çizim türü hakkında bilgi içeren yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  **İtemAction** üyesi `DRAWITEMSTRUCT` yapısı gerçekleştirilecek çizim eylemi tanımlar. Bkz: [CWnd::OnDrawItem](../../mfc/reference/cwnd-class.md#ondrawitem) bu yapı açıklaması.  
   
- Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Çizim sahibi çizim için uygulamak için bu üye işlevi geçersiz kılma `CComboBox` nesnesi. Bu üye işlevi sona erdirmeden önce uygulamanın tüm grafik cihaz arabirimi (GDI) nesneleri görüntüleme bağlamı içinde sağlanan için seçilen kurtarmalısınız `lpDrawItemStruct`.  
+ Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Çizim sahibi çizim için uygulamak için bu üye işlevi geçersiz kılma `CComboBox` nesnesi. Bu üye işlevi sona erdirmeden önce uygulamanın tüm grafik cihaz arabirimi (GDI) nesneleri görüntüleme bağlamı içinde sağlanan için seçilen kurtarmalısınız *lpDrawItemStruct*.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CComboBox#11](../../mfc/reference/codesnippet/cpp/ccombobox-class_11.cpp)]  
@@ -527,10 +527,10 @@ int FindString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nStartAfter`  
- Aranacak ilk öğeden önce öğenin sıfır tabanlı dizini içerir. Arama listesi kutusunun alt kısmındaki ulaştığında, liste kutusunu üstten geri tarafından belirtilen öğeye devam `nStartAfter`. -1, tüm liste kutusunu baştan aranır.  
+ *nStartAfter*  
+ Aranacak ilk öğeden önce öğenin sıfır tabanlı dizini içerir. Arama listesi kutusunun alt kısmındaki ulaştığında, liste kutusunu üstten geri tarafından belirtilen öğeye devam *nStartAfter*. -1, tüm liste kutusunu baştan aranır.  
   
- `lpszString`  
+ *lpszString*  
  Aranacak önek içeren null ile sonlandırılmış dize noktalarına. Arama durumu bağımsız olduğundan, bu dizeyi herhangi bir bileşimini büyük ve küçük harfleri içerebilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -543,7 +543,7 @@ int FindString(
  [!code-cpp[NVC_MFC_CComboBox#12](../../mfc/reference/codesnippet/cpp/ccombobox-class_12.cpp)]  
   
 ##  <a name="findstringexact"></a>  CComboBox::FindStringExact  
- Çağrı `FindStringExact` içinde belirtilen dize eşleşen ilk liste kutusu dizesinde (birleşik giriş kutusu) bulmak için üye işlevi `lpszFind`.  
+ Çağrı `FindStringExact` içinde belirtilen dize eşleşen ilk liste kutusu dizesinde (birleşik giriş kutusu) bulmak için üye işlevi *lpszFind*.  
   
 ```  
 int FindStringExact(
@@ -552,17 +552,17 @@ int FindStringExact(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndexStart`  
- Aranacak ilk öğeden önce öğenin sıfır tabanlı dizini belirtir. Arama listesi kutusunun alt kısmındaki ulaştığında, liste kutusunu üstten geri tarafından belirtilen öğeye devam `nIndexStart`. Varsa `nIndexStart` -1 olan tüm liste kutusunu baştan aranır.  
+ *nIndexStart*  
+ Aranacak ilk öğeden önce öğenin sıfır tabanlı dizini belirtir. Arama listesi kutusunun alt kısmındaki ulaştığında, liste kutusunu üstten geri tarafından belirtilen öğeye devam *nIndexStart*. Varsa *nIndexStart* -1 olan tüm liste kutusunu baştan aranır.  
   
- `lpszFind`  
+ *lpszFind*  
  Aranacak null ile sonlandırılmış dizeyi noktalarına. Bu dize uzantısı dahil tam bir dosya adı içerebilir. Arama büyük küçük harf duyarlı olmadığından bu dize herhangi bir bileşimini büyük ve küçük harfleri içerebilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Eşleşen öğenin sıfır tabanlı dizini veya **CB_ERR** arama başarısız olmuşsa.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Birleşik giriş kutusu ile bir sahibi çizim stili olmadan oluşturulduysa [cbs_hasstrıngs](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili `FindStringExact` değeriyle karşılaştırarak doubleword değeri eşleştirmeye çalışır `lpszFind`.  
+ Birleşik giriş kutusu ile bir sahibi çizim stili olmadan oluşturulduysa [cbs_hasstrıngs](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili `FindStringExact` değeriyle karşılaştırarak doubleword değeri eşleştirmeye çalışır *lpszFind*.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CComboBox#13](../../mfc/reference/codesnippet/cpp/ccombobox-class_13.cpp)]  
@@ -612,13 +612,13 @@ BOOL GetCueBanner(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] `lpszText`|İşaretçi işaret başlık metni alır bir arabellek.|  
-|[in] `cchText`|Arabellek boyutu, `lpszText` parametresi işaret eder.|  
+|[out] *lpszText*|İşaretçi işaret başlık metni alır bir arabellek.|  
+|[in] *cchText*|Arabellek boyutu, *lpszText* parametresi işaret eder.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk aşırı içinde bir [CString](../../atl-mfc-shared/using-cstring.md) varsa; işaret başlık metni içeren nesne Aksi halde, bir `CString` sıfır uzunlukta bir nesne.  
   
- -veya-  
+ veya  
   
  İkinci aşırı içinde `true` bu yöntem başarılı olursa Aksi takdirde `false`.  
   
@@ -747,14 +747,14 @@ DWORD_PTR GetItemData(int nIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Açılan kutunun liste kutusunda bir öğenin sıfır tabanlı dizini içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğeyle ilişkili 32-bit değeri veya **CB_ERR** bir hata oluşursa.  
   
 ### <a name="remarks"></a>Açıklamalar  
- 32-bit değeri ile ayarlayabilirsiniz `dwItemData` parametresinin bir [Setıtemdata](#setitemdata) üye işlev çağrısı. Kullanım `GetItemDataPtr` alınması için 32-bit bir işaretçi değeri geçerliyse üye işlevi ( **void\***).  
+ 32-bit değeri ile ayarlayabilirsiniz *dwItemData* parametresinin bir [Setıtemdata](#setitemdata) üye işlev çağrısı. Kullanım `GetItemDataPtr` alınması için 32-bit bir işaretçi değeri geçerliyse üye işlevi ( **void\***).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CComboBox#21](../../mfc/reference/codesnippet/cpp/ccombobox-class_21.cpp)]  
@@ -767,7 +767,7 @@ void* GetItemDataPtr(int nIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Açılan kutunun liste kutusunda bir öğenin sıfır tabanlı dizini içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -784,8 +784,8 @@ int GetItemHeight(int nIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
- Yükseklik alınacak birleşik giriş kutusunu bileşeni belirtir. Varsa `nIndex` parametre -1 ve birleşik giriş kutusu düzenleme denetimi (veya statik metin) bölümünü yüksekliğini alınır. Birleşik giriş kutusu varsa [cbs_ownerdrawvarıable](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili `nIndex` , yükseklik olduğu alınacak liste öğesinin sıfır tabanlı dizinini belirtir. Aksi takdirde `nIndex` 0 olarak ayarlanması gerekir.  
+ *nIndex*  
+ Yükseklik alınacak birleşik giriş kutusunu bileşeni belirtir. Varsa *nIndex* parametre -1 ve birleşik giriş kutusu düzenleme denetimi (veya statik metin) bölümünü yüksekliğini alınır. Birleşik giriş kutusu varsa [cbs_ownerdrawvarıable](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili *nIndex* , yükseklik olduğu alınacak liste öğesinin sıfır tabanlı dizinini belirtir. Aksi takdirde, *nIndex* 0 olarak ayarlanması gerekir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Birleşik giriş kutusu içinde belirtilen öğenin piksel cinsinden yüksekliği. Dönüş değeri **CB_ERR** bir hata oluşursa.  
@@ -807,17 +807,17 @@ void GetLBText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Kopyalanacak liste kutusu dize sıfır tabanlı dizini içerir.  
   
- `lpszText`  
+ *lpszText*  
  Dize alacak bir arabellek noktalarına. Arabellek dize ve bir sonlandırma null karakter için yeterli alan olmalıdır.  
   
- `rString`  
+ *rString*  
  Bir başvuru bir `CString`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sondaki boş karakter hariç dize uzunluğu (bayt cinsinden). Varsa `nIndex` geçerli bir dizin belirtmiyor dönüş değeri **CB_ERR**.  
+ Sondaki boş karakter hariç dize uzunluğu (bayt cinsinden). Varsa *nIndex* geçerli bir dizin belirtmiyor dönüş değeri **CB_ERR**.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu üyenin ikinci formun işlev dolgular bir `CString` öğesi'nin metin içeren nesne.  
@@ -833,11 +833,11 @@ int GetLBTextLen(int nIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Liste kutusu dize sıfır tabanlı dizini içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dize boş karakter ile sonlandırmadan hariç bayt cinsinden uzunluğu. Varsa `nIndex` geçerli bir dizin belirtmiyor dönüş değeri **CB_ERR**.  
+ Dize boş karakter ile sonlandırmadan hariç bayt cinsinden uzunluğu. Varsa *nIndex* geçerli bir dizin belirtmiyor dönüş değeri **CB_ERR**.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CComboBox::GetLBText](#getlbtext).  
@@ -897,10 +897,10 @@ int InitStorage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItems`  
+ *nItems*  
  Eklenecek öğe sayısını belirtir.  
   
- `nBytes`  
+ *nBytes*  
  Öğe dizeleri için ayırmak için bayt cinsinden bellek miktarını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -909,7 +909,7 @@ int InitStorage(
 ### <a name="remarks"></a>Açıklamalar  
  Çok sayıda öğe için liste kutusu bölümünü eklemeden önce bu işlevi çağırmak `CComboBox`.  
   
- Windows 95/98 yalnızca: `wParam` parametresi için 16 bit değerleri sınırlıdır. Bu liste kutuları birden fazla 32.767 öğeleri içeremez anlamına gelir. Öğe sayısı sınırlı olsa da, liste kutusunda öğelerin toplam boyutu yalnızca kullanılabilir bellek ile sınırlıdır.  
+ Windows 95/98 yalnızca: *wParam* parametresi için 16 bit değerleri sınırlıdır. Bu liste kutuları birden fazla 32.767 öğeleri içeremez anlamına gelir. Öğe sayısı sınırlı olsa da, liste kutusunda öğelerin toplam boyutu yalnızca kullanılabilir bellek ile sınırlıdır.  
   
  Bu işlev büyük sayıda (100'den fazla) öğe liste kutuları başlatma hızlandırmaya yardımcı olur. Bu nedenle bu sonraki bellek belirtilen miktarı preallocates [AddString](#addstring), [InsertString](#insertstring), ve [Dir](#dir) işlevler en kısa sürede alın. Tahminler parametrelerini kullanabilirsiniz. Overestimate, bazı ek bellek tahsis edilir; daha düşük normal ayırma ön tahsis miktarını aşıyor öğeleri için kullanılır.  
   
@@ -926,10 +926,10 @@ int InsertString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Dize alacak liste kutusunda konumuna sıfır tabanlı dizini içerir. Bu parametre -1 ise, dize listesinin sonuna eklenir.  
   
- `lpszString`  
+ *lpszString*  
  Eklenecek null ile sonlandırılmış dizeye noktaları.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -952,7 +952,7 @@ BOOL LimitText(int nMaxChars);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nMaxChars`  
+ *nMaxChars*  
  Kullanıcının girebileceği metin uzunluğu (bayt cinsinden) belirtir. Bu parametre 0 ise, metin uzunluğu 65.535 bayta ayarlanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -974,7 +974,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpMeasureItemStruct`  
+ *lpMeasureItemStruct*  
  Uzun bir işaretçi bir [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1020,10 +1020,10 @@ int SelectString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nStartAfter`  
- Aranacak ilk öğeden önce öğenin sıfır tabanlı dizini içerir. Arama listesi kutusunun alt kısmındaki ulaştığında, liste kutusunu üstten geri tarafından belirtilen öğeye devam `nStartAfter`. -1, tüm liste kutusunu baştan aranır.  
+ *nStartAfter*  
+ Aranacak ilk öğeden önce öğenin sıfır tabanlı dizini içerir. Arama listesi kutusunun alt kısmındaki ulaştığında, liste kutusunu üstten geri tarafından belirtilen öğeye devam *nStartAfter*. -1, tüm liste kutusunu baştan aranır.  
   
- `lpszString`  
+ *lpszString*  
  Aranacak önek içeren null ile sonlandırılmış dize noktalarına. Arama durumu bağımsız olduğundan, bu dizeyi herhangi bir bileşimini büyük ve küçük harfleri içerebilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1059,7 +1059,7 @@ BOOL SetCueBanner(LPCTSTR lpszText);
  Bu yöntem gönderir [CB_SETCUEBANNER](http://msdn.microsoft.com/library/windows/desktop/bb775897) Windows SDK'ın açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde değişkeni tanımlar `m_combobox`, yani birleşik giriş kutusu denetimi programlı olarak erişmek için kullanılır. Bu değişken, sonraki örnekte kullanılır.  
+ Aşağıdaki kod örneğinde değişkeni tanımlar *m_combobox*, yani birleşik giriş kutusu denetimi programlı olarak erişmek için kullanılır. Bu değişken, sonraki örnekte kullanılır.  
   
  [!code-cpp[NVC_MFC_CComboBox_s1#1](../../mfc/reference/codesnippet/cpp/ccombobox-class_33.h)]  
   
@@ -1076,11 +1076,11 @@ int SetCurSel(int nSelect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nSelect`  
+ *Seçin*  
  Dize seçmek için sıfır tabanlı dizini belirtir. -1, liste kutusunda herhangi bir geçerli seçimi kaldırılır ve düzenleme denetimi temizlenir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İletinin başarılı olursa seçili öğenin sıfır tabanlı dizini. Dönüş değeri **CB_ERR** varsa `nSelect` listedeki öğeleri sayısından büyük veya `nSelect` Seçimi temizler -1 olarak ayarlayın.  
+ İletinin başarılı olursa seçili öğenin sıfır tabanlı dizini. Dönüş değeri **CB_ERR** varsa *seçin* listedeki öğeleri sayısından büyük veya *seçin* Seçimi temizler -1 olarak ayarlayın.  
   
 ### <a name="remarks"></a>Açıklamalar  
  (Liste kutusunu görünür durumdaysa) gerekiyorsa, liste kutusunda dize görünüme kayar. Açılan kutunun düzenleme denetimindeki metnin yeni seçimini yansıtacak şekilde değiştirilir. Liste kutusunda herhangi bir önceki seçimi kaldırılır.  
@@ -1096,7 +1096,7 @@ int SetDroppedWidth(UINT nWidth);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nWidth`  
+ *nWidth*  
  Minimum izin verilen liste kutusu bölümünün genişliğini piksel cinsinden birleşik giriş kutusu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1120,10 +1120,10 @@ BOOL SetEditSel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nStartChar`  
+ *nStartChar*  
  Başlangıç konumu belirtir. Başlangıç konumu -1 olarak ayarlanırsa, varolan bir seçimi kaldırılır.  
   
- `nEndChar`  
+ *nEndChar*  
  Bitiş konumu belirtir. Bitiş konumu -1, ardından tüm metindeki başlangıç konumu son ayarlanırsa karakter düzenleme denetimindeki seçili değil.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1191,10 +1191,10 @@ int SetItemData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Ayarlanacak öğenin sıfır tabanlı dizini içerir.  
   
- `dwItemData`  
+ *dwItemData*  
  Öğeyle ilişkilendirilecek yeni değeri içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1216,10 +1216,10 @@ int SetItemDataPtr(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Öğenin sıfır tabanlı dizini içerir.  
   
- `pData`  
+ *pData*  
  Öğeyle ilişkilendirilecek bir işaretçi içeriyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1241,15 +1241,15 @@ int SetItemHeight(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Liste öğeleri yüksekliğini veya birleşik giriş kutusu düzenleme denetimi (veya statik metin) bölümünü yüksekliğini ayarlanmış olup olmadığını belirtir.  
   
- Birleşik giriş kutusu varsa [cbs_ownerdrawvarıable](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili `nIndex` , yükseklik olduğu ayarlayın; Aksi takdirde liste öğesinin sıfır tabanlı dizinini belirtir `nIndex` 0 ve tüm liste öğeleri ayarlanacak yüksekliğini olması gerekir.  
+ Birleşik giriş kutusu varsa [cbs_ownerdrawvarıable](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili *nIndex* , yükseklik olduğu ayarlayın; Aksi takdirde liste öğesinin sıfır tabanlı dizinini belirtir *nIndex* 0 olmalıdır ve tüm liste öğelerinin yüksekliği ayarlayın.  
   
- Varsa `nIndex` -1, düzenleme denetimi yüksekliğini veya birleşik giriş kutusu statik metin bölümünü ayarlanacak.  
+ Varsa *nIndex* -1, düzenleme denetimi yüksekliğini veya birleşik giriş kutusu statik metin bölümünü ayarlanacak.  
   
- `cyItemHeight`  
- Tarafından tanımlanan birleşik giriş kutusu bileşeninin piksel cinsinden yüksekliği belirtir `nIndex`.  
+ *cyItemHeight*  
+ Tarafından tanımlanan birleşik giriş kutusu bileşeninin piksel cinsinden yüksekliği belirtir *nIndex*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  **CB_ERR** dizini veya yükseklik ise geçersiz; Aksi halde 0.  
@@ -1268,7 +1268,7 @@ LCID SetLocale(LCID nNewLocale);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nNewLocale`  
+ *nNewLocale*  
  Açılan kutu için ayarlanacak yeni yerel ayar kimliği (LCID) değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1291,7 +1291,7 @@ BOOL SetMinVisibleItems(int iMinVisible);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iMinVisible`|En az görünür öğe sayısını belirtir.|  
+|[in] *iMinVisible*|En az görünür öğe sayısını belirtir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
@@ -1300,7 +1300,7 @@ BOOL SetMinVisibleItems(int iMinVisible);
  Bu yöntem gönderir [CB_SETMINVISIBLE](http://msdn.microsoft.com/library/windows/desktop/bb775915) Windows SDK'ın açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde değişkeni tanımlar `m_combobox`, yani birleşik giriş kutusu denetimi programlı olarak erişmek için kullanılır. Bu değişken, sonraki örnekte kullanılır.  
+ Aşağıdaki kod örneğinde değişkeni tanımlar *m_combobox*, yani birleşik giriş kutusu denetimi programlı olarak erişmek için kullanılır. Bu değişken, sonraki örnekte kullanılır.  
   
  [!code-cpp[NVC_MFC_CComboBox_s1#1](../../mfc/reference/codesnippet/cpp/ccombobox-class_33.h)]  
   
@@ -1317,14 +1317,14 @@ int SetTopIndex(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Liste kutusu öğenin sıfır tabanlı dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, sıfır veya **CB_ERR** bir hata oluşursa.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sistem tarafından belirtilen öğeyi kadar liste kutusu kayar `nIndex` görünür listesinin başında kutusu veya maksimum kaydırma aralığı ulaşıldı.  
+ Sistem tarafından belirtilen öğeyi kadar liste kutusu kayar *nIndex* görünür listesinin başında kutusu veya maksimum kaydırma aralığı ulaşıldı.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CComboBox#40](../../mfc/reference/codesnippet/cpp/ccombobox-class_42.cpp)]  

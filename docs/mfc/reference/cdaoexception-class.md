@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4531d63ff7047881f20368cbeaf8e5de4136bb9f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 69d1d85f946ce596dae09779296fceab74113400
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369222"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952404"
 ---
 # <a name="cdaoexception-class"></a>CDaoException sınıfı
 Veri erişim nesnesi (DAO) tabanlı MFC veritabanı sınıfları nedeniyle ortaya çıkan bir özel durumu temsil eder.  
@@ -143,7 +143,7 @@ void GetErrorInfo(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Dizine göre arama için veritabanı altyapısının hatalar koleksiyonuna hata bilgileri dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -187,11 +187,11 @@ void GetErrorInfo(int nIndex);
   
 |Cdaoerrorınfo üyesi|Bilgiler|Açıklama|  
 |--------------------------|-----------------|-------------|  
-|**m_lErrorCode**|Hata Kodu|DAO hata kodu|  
+|`m_lErrorCode`|Hata Kodu|DAO hata kodu|  
 |`m_strSource`|Kaynak|Nesne veya başlangıçta hatayı oluşturan uygulama adı|  
 |`m_strDescription`|Açıklama|Şu hata ile ilişkili açıklayıcı bir dize|  
 |`m_strHelpFile`|Yardım dosyası|Bir kullanıcı sorun hakkında bilgi almak Windows Yardım dosyasının yolu|  
-|**m_lHelpContext**|Bağlam Yardımı|DAO Yardım dosyasındaki bir konu için içerik kimliği|  
+|`m_lHelpContext`|Bağlam Yardımı|DAO Yardım dosyasındaki bir konu için içerik kimliği|  
   
  İçinde yer alan bilgiler hakkında ayrıntılar için `CDaoErrorInfo` nesne için bkz: [Cdaoerrorınfo](../../mfc/reference/cdaoerrorinfo-structure.md) yapısı.  
   

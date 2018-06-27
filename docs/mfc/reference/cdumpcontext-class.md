@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7acd7e94dbb45439a1812f8572ef442e43f9dab
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 80795131915da89928afc883fec0985087c4f38f
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367399"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955449"
 ---
 # <a name="cdumpcontext-class"></a>CDumpContext sınıfı
 Okunabilir metin biçiminde tanılama çıktıları akış odaklı destekler.  
@@ -79,7 +79,7 @@ class CDumpContext
   
  `CDumpContext` Sınıfına sahip aşırı yüklenmiş ekleme ( **<<**) işleci için `CObject` nesnenin veri dökümleri işaretçileri. Türetilen bir nesne için bir özel döküm biçimi gerekiyorsa, geçersiz kılma [CObject::Dump](../../mfc/reference/cobject-class.md#dump). Çoğu Microsoft Foundation sınıf geçersiz kılınan bir uygulama `Dump` üye işlevi.  
   
- Öğesinden türetilmemiş sınıfları `CObject`, gibi `CString`, `CTime`, ve `CTimeSpan`, kendi aşırı yüklenmiş olan `CDumpContext` gibi sık kullanılan yapıları olarak ekleme işleçlerini **CFileStatus**, `CPoint`, ve `CRect`.  
+ Öğesinden türetilmemiş sınıfları `CObject`, gibi `CString`, `CTime`, ve `CTimeSpan`, kendi aşırı yüklenmiş olan `CDumpContext` gibi sık kullanılan yapıları olarak ekleme işleçlerini `CFileStatus`, `CPoint`, ve `CRect`.  
   
  Kullanırsanız [ımplement_dynamıc](../../mfc/reference/run-time-object-model-services.md#implement_dynamic) veya [ımplement_serıal](../../mfc/reference/run-time-object-model-services.md#implement_serial) sonra uygulamasında sınıfınızın makrosu `CObject::Dump` adını yazdırılır, `CObject`-türetilmiş sınıf. Aksi takdirde yazdırılır `CObject`.  
   
@@ -105,7 +105,7 @@ CDumpContext(CFile* pFile = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFile`  
+ *pFile*  
  Bir işaretçi `CFile` döküm hedef nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -180,10 +180,10 @@ void HexDump(
  *pby*  
  Döküm baytları içeren bir arabellek için bir işaretçi.  
   
- `nBytes`  
+ *nBytes*  
  Döküm bayt sayısı.  
   
- `nWidth`  
+ *nWidth*  
  En fazla bayt sayısı (çıktı çizginin genişliğini değil) satır yazılan.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -223,7 +223,7 @@ CDumpContext& operator<<(HFONT h);
  A `CDumpContext` başvuru. Dönüş değerini kullanarak, kaynak kodu tek bir satıra birden çok eklemeleri yazabilirsiniz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İçin ekleme işleci aşırı `CObject` en basit türler için de işaretçileri. Bir işaretçi bir döküm sonuçlanır karakter dizesi İçindekiler; bir işaretçi `void` sonuçları adresi yalnızca içinde bir onaltılık dökümü. A **LONGLONG** sonuçları bir 64-bit işaretli tamsayıyı; bir dökümünü A **ULONGLONG** bir 64-bit işaretsiz tamsayıyı bir dökümünü neden olur.  
+ İçin ekleme işleci aşırı `CObject` en basit türler için de işaretçileri. Bir işaretçi bir döküm sonuçlanır karakter dizesi İçindekiler; bir işaretçi **void** sonuçları adresi yalnızca içinde bir onaltılık dökümü. A **LONGLONG** sonuçları bir 64-bit işaretli tamsayıyı; bir dökümünü A **ULONGLONG** bir 64-bit işaretsiz tamsayıyı bir dökümünü neden olur.  
   
  Kullanırsanız `IMPLEMENT_DYNAMIC` veya `IMPLEMENT_SERIAL` makrosu sınıfınız, daha sonra ekleme işleci uygulamasında aracılığıyla `CObject::Dump`, adını yazdırılır, `CObject`-türetilmiş sınıf. Aksi takdirde yazdırılır `CObject`. Geçersiz kılarsanız `Dump` sınıfı, daha sonra işlev, nesnenin içeriğini bir onaltılık dökümü yerine daha anlamlı çıktısını sağlayabilir.  
   

@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88e6916056f988a1cee52020c8ce7e9fce11e574
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6ba8f6d8cf90e7523fe4497cfc3b36c3616a8f10
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370526"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956284"
 ---
 # <a name="cftpfilefind-class"></a>CFtpFileFind sınıfı
 Internet dosya aramaları FTP sunucularının yardımcı olur.  
@@ -88,14 +88,14 @@ explicit CFtpFileFind(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pConnection`  
+ *pConnection*  
  Bir işaretçi bir `CFtpConnection` nesnesi. Bir FTP bağlantısı çağırarak elde edebileceğiniz [CInternetSession::GetFtpConnection](../../mfc/reference/cinternetsession-class.md#getftpconnection).  
   
- `dwContext`  
+ *dwContext*  
  İçerik tanımlayıcısını `CFtpFileFind` nesnesi. Bkz: **açıklamalar** Bu parametre hakkında daha fazla bilgi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İçin varsayılan değer `dwContext` MFC'ye tarafından gönderilen `CFtpFileFind` nesnesinin [CInternetSession](../../mfc/reference/cinternetsession-class.md) oluşturulan nesne `CFtpFileFind` nesne. Bağlam tanımlayıcı bir değerine ayarlamak için varsayılan ayarlarını geçersiz kılabilir. Bağlam tanıtıcısı döndürülen [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen bir nesne üzerinde durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
+ İçin varsayılan değer *dwContext* MFC'ye tarafından gönderilen `CFtpFileFind` nesnesinin [CInternetSession](../../mfc/reference/cinternetsession-class.md) oluşturulan nesne `CFtpFileFind` nesne. Bağlam tanımlayıcı bir değerine ayarlamak için varsayılan ayarlarını geçersiz kılabilir. Bağlam tanıtıcısı döndürülen [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen bir nesne üzerinde durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
   
 ### <a name="example"></a>Örnek  
   Bu konunun önceki kısımlarında sınıfına genel bakış örneğe bakın.  
@@ -110,10 +110,10 @@ virtual BOOL FindFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstrName`  
+ *pstrName*  
  Bulunacak dosyasının adı içeren bir dize için bir işaretçi. Varsa **NULL**, çağrı (*) joker arama gerçekleştirilir.  
   
- `dwFlags`  
+ *dwFlags*  
  Bu oturumda ne yapılacağını açıklayan bayrakları. Bu bayrakların bit düzeyinde OR işleci ile birleştirilebilir (&#124;) ve aşağıdaki gibidir:  
   
 -   INTERNET_FLAG_RELOAD veri alma hattan bile yerel olarak önbelleğe alınır. Varsayılan bayrağı budur.  

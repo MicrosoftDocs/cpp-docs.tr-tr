@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38506d0b25918bbc9d70ec1801971b070d620bf9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7061c3203436197eb1bd03ae56058e0bd0f26f9d
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385930"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955589"
 ---
 # <a name="wininet-basics"></a>WinInet Temelleri
-WinINet indirip dosyalarından, uygulamanızda karşıya yüklemek için FTP desteği eklemek için kullanabilirsiniz. Geçersiz kılabilirsiniz [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) ve `dwContext` aramak ve dosyaları karşıdan kullanıcılara ilerleme durumu bilgileri sağlamak için parametre.  
+WinINet indirip dosyalarından, uygulamanızda karşıya yüklemek için FTP desteği eklemek için kullanabilirsiniz. Geçersiz kılabilirsiniz [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) ve *dwContext* aramak ve dosyaları karşıdan kullanıcılara ilerleme durumu bilgileri sağlamak için parametre.  
   
  Bu makalede aşağıdaki konuları içerir:  
   
@@ -57,14 +57,14 @@ WinINet indirip dosyalarından, uygulamanızda karşıya yüklemek için FTP des
 ## <a name="use-onstatuscallback"></a>OnStatusCallback kullanın  
  WinINet sınıfları kullanırken kullanabileceğiniz [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) uygulamanızın üyesi [CInternetSession](../mfc/reference/cinternetsession-class.md) durum bilgilerini almak için nesne. Kendi türetirseniz `CInternetSession` nesne, geçersiz kılma `OnStatusCallback`ve durum geri çağırmalar etkinleştirmek MFC çağıracaktır, `OnStatusCallback` tüm etkinliklerin ilerleme bilgiler bu Internet oturumunda işlevi.  
   
- Tek bir oturumla (hangi kendi ömürleri boyunca birçok farklı farklı işlemler gerçekleştirebilir) birkaç bağlantıları desteklemiyor olabilir çünkü `OnStatusCallback` belirli bağlantı veya işlem ile her bir durum değişikliği tanımlamak için bir mekanizma gerekir. Bu mekanizma WinINet destek sınıflardaki üye işlevleri çoğunu verilen bağlam kimliği parametresi tarafından sağlanır. Bu parametre her zaman türünde `DWORD` ve her zaman adlı `dwContext`.  
+ Tek bir oturumla (hangi kendi ömürleri boyunca birçok farklı farklı işlemler gerçekleştirebilir) birkaç bağlantıları desteklemiyor olabilir çünkü `OnStatusCallback` belirli bağlantı veya işlem ile her bir durum değişikliği tanımlamak için bir mekanizma gerekir. Bu mekanizma WinINet destek sınıflardaki üye işlevleri çoğunu verilen bağlam kimliği parametresi tarafından sağlanır. Bu parametre her zaman türünde **DWORD** ve her zaman adlı *dwContext*.  
   
  Belirli bir Internet nesnesine atanmış içerik yalnızca nesne neden olan etkinliği tanımlamak için kullanılan `OnStatusCallback` üyesi `CInternetSession` nesnesi. Çağrı `OnStatusCallback` birkaç parametre; aldığında bu parametreler, uygulamanızın hangi işlem ve bağlantısı için hangi ilerleme yapılmış bildirmek için birlikte çalışır.  
   
- Oluştururken bir `CInternetSession` nesnesi belirtebilirsiniz bir `dwContext` Oluşturucusu parametresi. `CInternetSession` kendisini bağlam Kimliğini kullanmaz; Bunun yerine, içerik kimliği herhangi açın geçirir **InternetConnection**-türetilmiş açıkça bir bağlam kimliği kendi almadım nesneleri. Buna açın, bu `CInternetConnection` nesneleri boyunca context ID geçecek `CInternetFile` farklı bir bağlam kimliği açıkça belirtmezseniz oluşturdukları nesneleri Diğer taraftan, kendi özel bağlamı kimliği, nesne ve mevcut herhangi bir iş, içerik kimliği ile ilişkilendirilecek belirtirseniz Hangi durum bilgilerini size verilen tanımlamak için bağlam kimlikleri kullanabilirsiniz, `OnStatusCallback` işlevi.  
+ Oluştururken bir `CInternetSession` nesnesi belirtebilirsiniz bir *dwContext* Oluşturucusu parametresi. `CInternetSession` kendisini bağlam Kimliğini kullanmaz; Bunun yerine, içerik kimliği herhangi açın geçirir **InternetConnection**-türetilmiş açıkça bir bağlam kimliği kendi almadım nesneleri. Buna açın, bu `CInternetConnection` nesneleri boyunca context ID geçecek `CInternetFile` farklı bir bağlam kimliği açıkça belirtmezseniz oluşturdukları nesneleri Diğer taraftan, kendi özel bağlamı kimliği, nesne ve mevcut herhangi bir iş, içerik kimliği ile ilişkilendirilecek belirtirseniz Hangi durum bilgilerini size verilen tanımlamak için bağlam kimlikleri kullanabilirsiniz, `OnStatusCallback` işlevi.  
   
 ##  <a name="_core_display_progress_information_while_transferring_files"></a> Dosyaları aktarma sırasında ilerleme durumu bilgilerini görüntüleme  
- Örneğin, bir dosyayı okumak için bir FTP sunucusu ile bir bağlantı oluşturur ve ayrıca bir Web sayfası almak için bir HTTP sunucusuna bağlanan bir uygulama yazıyorsanız, sahip olacaksınız bir `CInternetSession` nesnesi, iki `CInternetConnection` nesneleri (biri olacak bir **CFtpSession** ve diğer olacak bir **CHttpSession**) ve iki `CInternetFile` nesneleri (her bağlantı için bir tane). Varsayılan değerleri kullandıysanız `dwContext` parametreleri, değil olacaktır ayırt mümkün `OnStatusCallback` FTP bağlantısı ve HTTP bağlantı ilerlemeyi göstermek çağrılarını ilerlemeyi göstermek çağrılarını. Belirtirseniz bir `dwContext` daha sonra için de test edebilirsiniz kimliği `OnStatusCallback`, geri çağırma işlemi oluşturulan bilirsiniz.  
+ Bir dosyayı okumak için bir FTP sunucusu ile bir bağlantı oluşturur ve ayrıca bir Web sayfası almak için bir HTTP sunucusuna bağlanan bir uygulama yazıyorsanız, örneğin, gerekir bir `CInternetSession` nesnesi, iki `CInternetConnection` nesneleri (biri olacak bir `CFtpSession` ve diğer olacaktır bir `CHttpSession`) ve iki `CInternetFile` nesneleri (her bağlantı için bir tane). Varsayılan değerleri kullandıysanız *dwContext* parametreleri, değil olacaktır ayırt mümkün `OnStatusCallback` FTP bağlantısı ve için ilerlemeyi göstermek çağrılarını ilerlemeyi göstermek çağrıları HTTP bağlantısı. Belirtirseniz bir *dwContext* daha sonra için de test edebilirsiniz kimliği `OnStatusCallback`, geri çağırma işlemi oluşturulan bilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md)   

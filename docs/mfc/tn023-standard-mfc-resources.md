@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61d6520aef1ec04c6419fb1c9c901475c9c109f5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 967485f358d6659d759f2651c80c9390bff0b912
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383181"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952043"
 ---
 # <a name="tn023-standard-mfc-resources"></a>TN023: Standart MFC Kaynakları
 Bu not ile sağlanan ve MFC Kitaplığı tarafından gerekli standart kaynaklar açıklanır.  
@@ -45,7 +45,7 @@ Bu not ile sağlanan ve MFC Kitaplığı tarafından gerekli standart kaynaklar 
   
 -   Indicate.rc: Caps Lock "CAP" gibi durum çubuğu anahtar Durum göstergeleri için dize kaynaklarını içerir.  
   
--   Prompts.rc: için "Yeni belge oluştur" gibi önceden tanımlanmış her komut istemi menü dize kaynaklarını içeren `ID_FILE_NEW`.  
+-   Prompts.rc: ıd_fıle_new için "Yeni belge oluştur" gibi önceden tanımlanmış her komut istemi menü dize kaynaklarını içerir.  
   
 -   COMMDLG.rc: standart COMMDLG iletişim kutusu şablonları içeren bir Visual C++ uyumlu .rc dosyası.  
   
@@ -77,7 +77,7 @@ Bu not ile sağlanan ve MFC Kitaplığı tarafından gerekli standart kaynaklar 
 >  Yanlışlıkla Common.rc dışında kaynaklar kalıcı olarak taşıyamazsınız dikkat edin. CTRL tuşunu basılı tutarak kaynakları sürükleyin, bir kopyasını oluşturur. Basılı tutarak sürükleyin, CTRL değil, kaynakları taşınır. Yanlışlıkla değişiklikleri Common.rc dosyasına yaptığınız endişeniz varsa, değişiklikler için Common.rc kaydedilip kaydedilmeyeceğini sorulduğunda "Hayır"'i tıklatın.  
   
 > [!NOTE]
->  Özel bir .rc Kaynak dosyalarınız `TEXTINCLUDE` yanlışlıkla standart .rc dosyaları üstünde kaydetmesini engeller kaynak bunlara.  
+>  .Rc kaynak dosyaları, yanlışlıkla standart .rc dosyaları üstünde kaydetmesini engeller bunlara bir özel TEXTINCLUDE kaynağına sahip.  
   
 ### <a name="customizing-standard-framework-resources"></a>Standart çerçevesi kaynakları özelleştirme  
  Standart çerçevesi kaynakları genellikle yer alan bir uygulamada kullanarak # komutu bir uygulamanın kaynak dosyasında include. AppWizard kaynak dosyası oluşturur. Bu dosyayı seçtiğiniz bağlı olarak hangi AppWizard seçenekleri uygun standart çerçevesi kaynakları içerir. Gözden geçirin, ekleyin veya derleme zamanı yönergeleri değiştirerek hangi kaynaklar dahil kaldırın. Bunu yapmak için açın **kaynak** menü ve select **kümesi içeren**. "Derleme zamanı yönergeleri" bakma öğesi düzenleyin. Örneğin:  

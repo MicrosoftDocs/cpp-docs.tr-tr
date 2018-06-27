@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4dd403693dd860966cfcca42eacc909b01eb513b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a21ae615a3f4c644f6f0aa7c8f1306378a00ae5c
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385618"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957191"
 ---
 # <a name="tn024-mfc-defined-messages-and-resources"></a>TN024: MFC Tanımlı İletiler ve Kaynaklar
 > [!NOTE]
@@ -46,7 +46,7 @@ ms.locfileid: "33385618"
   
  Bu özel Windows iletileri ve ilişkili parametre yapıları MFC özel üst bilgi bildirilir ' AFXPRIV. H'. Bu üst bilgiyi içeren kodunuzu hiçbirini belgelenmemiş davranış ve büyük olasılıkla sonu gelecekte MFC sürümleri bağlı olduğunu uyarılmak.  
   
- Bu iletiler birini işlemek ihtiyacı nadir durumlarda, kullanmanız gereken `ON_MESSAGE` ileti eşlemesi makrosu ve genel WPARAM/LRESULT/LPARAM biçiminde ileti işleme.  
+ Bu iletiler birini işlemek ihtiyacı nadir durumlarda, ON_MESSAGE ileti eşlemesi makrosu kullanın ve genel WPARAM/LRESULT/LPARAM biçiminde ileti işleme gerekir.  
   
  **WM_QUERYAFXWNDPROC**  
   
@@ -60,12 +60,12 @@ ms.locfileid: "33385618"
   
  **WM_SIZEPARENT**  
   
- Bu iletiyi yeniden boyutlandırma sırasında bir çerçeve pencere tarafından hemen alt gönderilen (**CFrameWnd::OnSize** çağrıları `CFrameWnd::RecalcLayout` çağıran `CWnd::RepositionBars`) çerçeve tarafında geçici denetim çubukları yeniden konumlandırmak için. **AFX_SIZEPARENTPARAMS** yapısı çağırmak, geçerli kullanılabilir istemci dikdörtgenin üst ve (aynı NULL olabilir) bir HDWP içeren `DeferWindowPos` yeniden çizerken en aza indirmek için.  
+ Bu iletiyi yeniden boyutlandırma sırasında bir çerçeve pencere tarafından hemen alt gönderilen (`CFrameWnd::OnSize` çağrıları `CFrameWnd::RecalcLayout` çağıran `CWnd::RepositionBars`) çerçeve tarafında geçici denetim çubukları yeniden konumlandırmak için. AFX_SIZEPARENTPARAMS yapısı geçerli kullanılabilir istemci dikdörtgenin üst ve (aynı NULL olabilir) bir HDWP ile çağırmak içeren `DeferWindowPos` yeniden çizerken en aza indirmek için.  
   
 |||  
 |-|-|  
 |wParam|Kullanılan değil|  
-|lParam|Adres bir **AFX_SIZEPARENTPARAMS** yapısı|  
+|lParam|Adres AFX_SIZEPARENTPARAMS yapısı|  
 |dizisi|(0) kullanılmıyor|  
   
  İleti yoksayılıyor penceresi düzende bölümü almaz gösterir.  
@@ -82,7 +82,7 @@ ms.locfileid: "33385618"
   
  **WM_IDLEUPDATECMDUI**  
   
- Bu ileti, güncelleştirme komutu UI işleyicileri boşta kalma süresi güncelleştirmeyi uygulamak için boşta kalma süresi gönderilir. Pencerenin (genellikle bir denetim çubuğu) iletiyi işleyen, oluşturduğu bir `CCmdUI` (veya türetilmiş bir sınıf, nesne) ve arama **CCmdUI::DoUpdate** her penceresinde "öğesi". Bu sırayla denetler bir `ON_UPDATE_COMMAND_UI` komut işleyici zinciri içindeki nesneler için işleyici.  
+ Bu ileti, güncelleştirme komutu UI işleyicileri boşta kalma süresi güncelleştirmeyi uygulamak için boşta kalma süresi gönderilir. Pencerenin (genellikle bir denetim çubuğu) iletiyi işleyen, oluşturduğu bir `CCmdUI` (veya türetilmiş bir sınıf, nesne) ve arama `CCmdUI::DoUpdate` her penceresinde "öğesi". Bu sırayla bir on_update_command_uı işleyicisi komut işleyici zincirindeki nesneler için kontrol eder.  
   
 |||  
 |-|-|  
@@ -90,11 +90,11 @@ ms.locfileid: "33385618"
 |lParam|(0) kullanılmıyor|  
 |dizisi|(0) kullanılmıyor|  
   
- *bDisableIfNoHandler* varsa ne UI nesne devre dışı bırakmak için sıfır olmayan olan bir `ON_UPDATE_COMMAND_UI` ya da bir `ON_COMMAND` işleyicisi.  
+ *bDisableIfNoHandler* bir on_update_command_uı ne ON_COMMAND işleyici ise kullanıcı Arabirimi nesnesini devre dışı sıfır olmayan bir değer değil.  
   
  **WM_EXITHELPMODE**  
   
- Bu ileti için gönderilen bir `CFrameWnd` bağlama duyarlı çıkmak için Yardım modu. Bu iletinin alınması, başlatan kalıcı döngü sona erer **CFrameWnd::OnContextHelp.**  
+ Bu ileti için gönderilen bir `CFrameWnd` bağlama duyarlı çıkmak için Yardım modu. Bu iletinin alınması, başlatan kalıcı döngü sona erer `CFrameWnd::OnContextHelp`.  
   
 |||  
 |-|-|  
@@ -150,35 +150,35 @@ ms.locfileid: "33385618"
   
  **WM_FLOATSTATUS**  
   
- Bu ileti çerçeve etkinleştirilmiş veya başka bir üst düzey çerçeve penceresi tarafından devre dışı bir çerçeve pencere tarafından ait tüm açılır pencereleri gönderilir. Bu uygulama tarafından kullanılan **MFS_SYNCACTIVE** içinde `CMiniFrameWnd`, bu açılır pencereleri etkinleştirme üst düzey çerçeve penceresi etkinleştirme ile eşitlenmiş tutmak için.  
+ Bu ileti çerçeve etkinleştirilmiş veya başka bir üst düzey çerçeve penceresi tarafından devre dışı bir çerçeve pencere tarafından ait tüm açılır pencereleri gönderilir. Bu MFS_SYNCACTIVE uygulaması tarafından kullanılan `CMiniFrameWnd`, bu açılır pencereleri etkinleştirme üst düzey çerçeve penceresi etkinleştirme ile eşitlenmiş tutmak için.  
   
 |||  
 |-|-|  
-|wParam|Aşağıdaki değerlerden biri:<br /><br /> **FS_SHOW**<br /><br /> **FS_HIDE**<br /><br /> **FS_ACTIVATE**<br /><br /> **FS_DEACTIVATE**<br /><br /> **FS_ENABLEFS_DISABLE**<br /><br /> **FS_SYNCACTIVE**|  
+|wParam|Aşağıdaki değerlerden biri:<br /><br /> FS_SHOW<br /><br /> FS_HIDE<br /><br /> FS_ACTIVATE<br /><br /> FS_DEACTIVATE<br /><br /> FS_ENABLEFS_DISABLE<br /><br /> FS_SYNCACTIVE|  
 |lParam|(0) kullanılmıyor|  
   
- Dönüş değeri sıfır olmalıdır, **FS_SYNCACTIVE** ve pencere bölmeye kendi üst çerçeve etkinleştirmede topluluğudur. `CMiniFrameWnd` Stil ayarlandığında sıfır verir **MFS_SYNCACTIVE.**  
+ Dönüş değeri FS_SYNCACTIVE kendi etkinleştirme'yle kümesi ve pencere bölmeye ise sıfır olmalıdır üst çerçeve. `CMiniFrameWnd` Stil MFS_SYNCACTIVE için ayarlandığında sıfır döndürür.  
   
  Daha fazla bilgi için bkz: `CMiniFrameWnd`.  
   
 ## <a name="wmactivatetoplevel"></a>WM_ACTIVATETOPLEVEL  
- Kendi "üst düzey grup" penceresinde da etkinleştirilmiş devre dışı ya da bu iletiyi üst düzey bir pencere için gönderilir. Bir pencere, üst düzey bir pencere (üst veya sahibi) ise veya böyle bir pencereye ait en üst düzey bir grubun parçası olan. Bu ileti kullanmak için benzer **WM_ACTIVATEAPP,** ancak burada farklı işlemler ait windows karma (OLE uygulamalarında ortak) tek bir pencere hiyerarşideki durumlarda çalışır.  
+ Kendi "üst düzey grup" penceresinde da etkinleştirilmiş devre dışı ya da bu iletiyi üst düzey bir pencere için gönderilir. Bir pencere, üst düzey bir pencere (üst veya sahibi) ise veya böyle bir pencereye ait en üst düzey bir grubun parçası olan. Bu ileti için WM_ACTIVATEAPP kullanımda benzer, ancak windows farklı işlemler için ait olduğu durumda çalışır (OLE uygulamalarında ortak) tek bir pencere hiyerarşideki karma.  
   
 ## <a name="wmcommandhelp-wmhelphittest-wmexithelpmode"></a>WM_COMMANDHELP, WM_HELPHITTEST, WM_EXITHELPMODE  
  Bu iletiler bağlama duyarlı Yardım uygulamasında kullanılır. Lütfen [Teknik Not 28](../mfc/tn028-context-sensitive-help-support.md) daha fazla bilgi için.  
   
 ## <a name="mfc-private-resource-formats"></a>MFC özel kaynak biçimleri  
- Şu anda iki özel kaynak biçimlerini MFC tanımlar: **RT_TOOLBAR** ve **RT_DLGINIT**.  
+ Şu anda iki özel kaynak biçimlerini MFC tanımlar: RT_TOOLBAR ve RT_DLGINIT.  
   
 ## <a name="rttoolbar-resource-format"></a>RT_TOOLBAR kaynağı biçimi  
- AppWizard tarafından sağlanan varsayılan araç dayalı bir **RT_TOOLBAR** MFC 4. 0'tanıtılan özel kaynak. Araç çubuğu Düzenleyicisi'ni kullanarak bu kaynak düzenleyebilirsiniz.  
+ AppWizard tarafından sağlanan varsayılan araç MFC 4. 0'tanıtılan bir RT_TOOLBAR özel kaynak temel alır. Araç çubuğu Düzenleyicisi'ni kullanarak bu kaynak düzenleyebilirsiniz.  
   
 ## <a name="rtdlginit-resource-format"></a>RT_DLGINIT kaynak biçimi  
  Bir MFC özel kaynak biçimi ek iletişim başlatma bilgileri depolamak için kullanılır. Bu, açılan kutuda depolanan ilk dizeleri içerir. Bu kaynak biçimi el ile düzenlenmek üzere tasarlanmamıştır, ancak Visual C++ tarafından işlenir.  
   
- Visual C++ ve bu **RT_DLGINIT** kaynak API alternatif kaynak bilgileri kullanarak olduğundan MFC ilgili özelliklerini kullanmak için gerekli değildir. Visual C++ kullanarak çok yazma, korumanıza ve uygulamanızı uzun vadede Çevir kolaylaştırır.  
+ Visual C++ ve bu RT_DLGINIT kaynak API alternatif kaynak bilgileri kullanarak olduğundan MFC ilgili özelliklerini kullanmak için gerekli değildir. Visual C++ kullanarak çok yazma, korumanıza ve uygulamanızı uzun vadede Çevir kolaylaştırır.  
   
- Temel yapısını bir **RT_DLGINIT** kaynak aşağıdaki gibidir:  
+ RT_DLGINIT kaynak temel yapısını aşağıdaki gibidir:  
   
 ```  
 +---------------+    \  

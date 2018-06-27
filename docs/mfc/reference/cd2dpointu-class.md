@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91496e96763ab8c79ae1c71d68b9ae8f8db15e50
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 81c61eec099be90099e5cb0a28355d0037c92774
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33350562"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956645"
 ---
 # <a name="cd2dpointu-class"></a>CD2DPointU sınıfı
 İçin sarmalayıcı `D2D1_POINT_2U`.  
@@ -67,13 +67,13 @@ CD2DPointU(UINT32 uX = 0, UINT32 uY = 0);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pt`  
+ *PT*  
  Kaynak noktası  
   
- `uX`  
+ *uX*  
  Kaynak X  
   
- `uY`  
+ *uY*  
  Kaynak Y  
   
 ##  <a name="operator_cpoint"></a>  CD2DPointU::operator CPoint  

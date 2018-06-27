@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: efaf47ef434e4f6c63b937d1f360851fa9826e3d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 207adbba4635b80ba7b60af53f920b1af376e93d
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355963"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957305"
 ---
 # <a name="canimationvariable-class"></a>CAnimationVariable sınıfı
 Bir animasyon değişkeni temsil eder.  
@@ -141,7 +141,7 @@ void AddTransition(CBaseTransition* pTransition);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pTransition`  
+ *pTransition*  
  Eklemek için bir geçiş için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -158,13 +158,13 @@ void ApplyTransitions(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pController`  
+ *pController*  
  Üst animasyon denetleyici için bir işaretçi.  
   
- `pStoryboard`  
+ *pStoryboard*  
  Film şeridi bir işaretçi.  
   
- `bDependOnKeyframes`  
+ *bDependOnKeyframes*  
  TRUE, bu yöntem ana kare üzerinde bağımlı geçişleri eklemeniz gerekir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -178,7 +178,7 @@ CAnimationVariable(DOUBLE dblDefaultValue = 0.0);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dblDefaultValue`  
+ *dblDefaultValue*  
  Varsayılan değer belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -192,7 +192,7 @@ void ClearTransitions(BOOL bAutodestroy);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bAutodestroy`  
+ *bAutodestroy*  
  Bu yöntem geçiş nesneleri silmesi gerekip gerekmediğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -206,7 +206,7 @@ virtual BOOL Create(IUIAnimationManager* pManager);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pManager`  
+ *pManager*  
  Animasyon Yöneticisi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -225,7 +225,7 @@ BOOL CreateTransitions(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
-`pLibrary`  
+*pLibrary*  
  Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](https://msdn.microsoft.com/library/windows/desktop/dd371897), standart geçişleri kitaplığı tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -244,10 +244,10 @@ void EnableIntegerValueChangedEvent (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pController`  
+ *pController*  
  Üst denetleyici için bir işaretçi.  
   
- `bEnable`  
+ *bSistemlerde*  
  Olay, FALSE - devre dışı bırak olay TRUE - etkinleştirin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -263,10 +263,10 @@ void EnableValueChangedEvent (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pController`  
+ *pController*  
  Üst denetleyici için bir işaretçi.  
   
- `bEnable`  
+ *bSistemlerde*  
  Olay, FALSE - devre dışı bırak olay TRUE - etkinleştirin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -307,10 +307,10 @@ HRESULT GetValue(INT32& nValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dblValue`  
+ *dblValue*  
  Animasyon değişkenin geçerli değeri.  
   
- `nValue`  
+ *nDeğer*  
  Animasyon değişkenin geçerli değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -378,7 +378,7 @@ void SetDefaultValue(DOUBLE dblDefaultValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dblDefaultValue`  
+ *dblDefaultValue*  
  Yeni varsayılan değer belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -392,7 +392,7 @@ void SetParentAnimationObject(CAnimationBaseObject* pParentObject);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentObject`  
+ *pParentObject*  
  Bu değişkeni içeren bir animasyon nesne için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  

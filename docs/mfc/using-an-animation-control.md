@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ecde11ddb55992032b2a8b052e2897a384293bc0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0d6b6b07040fbece5fae24fb2ca6be8985695eb0
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382560"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36950543"
 ---
 # <a name="using-an-animation-control"></a>Animasyon Denetimi Kullanma
 Animasyon denetimi tipik kullanımını deseni izler:  
@@ -30,11 +30,11 @@ Animasyon denetimi tipik kullanımını deseni izler:
   
 -   Çağırarak animasyon denetime AVI küçük yük [açık](../mfc/reference/canimatectrl-class.md#open) üye işlevi. Animasyon denetimi iletişim kutusunda, bunu yapmak için uygun bir yerdir iletişim sınıfının ise [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) işlevi.  
   
--   Küçük çağırarak yürütmek [Yürüt](../mfc/reference/canimatectrl-class.md#play) üye işlevi. Animasyon denetimi iletişim kutusunda, bunu yapmak için uygun bir yerdir iletişim sınıfının ise **OnInitDialog** işlevi. Çağırma **Yürüt** animasyon denetimi varsa gerekli değil `ACS_AUTOPLAY` stil kümesi.  
+-   Küçük çağırarak yürütmek [Yürüt](../mfc/reference/canimatectrl-class.md#play) üye işlevi. Animasyon denetimi iletişim kutusunda, bunu yapmak için uygun bir yerdir iletişim sınıfının ise `OnInitDialog` işlevi. Çağırma `Play` animasyon denetimi ACS_AUTOPLAY stil kümesi varsa gerekli değildir.  
   
 -   Küçük bölümlerini görüntülemek veya kare kare kullanım oynatmak istiyorsanız `Seek` üye işlevi. Yürütülen bir küçük durdurmak için kullanma `Stop` üye işlevi.  
   
--   Denetim hemen yok etmek için yapmayacağınız, küçük bellekten çağırarak kaldırmak **Kapat** üye işlevi.  
+-   Denetim hemen yok etmek için yapmayacağınız, küçük bellekten çağırarak kaldırmak `Close` üye işlevi.  
   
 -   Animasyon denetimi iletişim kutusunda, varsa onu ve `CAnimateCtrl` nesne yok otomatik olarak. Her iki denetimi emin olmak ihtiyacınız olmayan, varsa ve `CAnimateCtrl` nesne düzgün yok. Otomatik olarak denetimini yok etme AVI küçük kapatır.  
   

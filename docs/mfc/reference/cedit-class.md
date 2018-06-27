@@ -104,12 +104,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7fba91f4c16c5b356b1e7a11e35380a15eb98eb1
-ms.sourcegitcommit: da7b7533d1a4dc141cc0f09149e4e4196f2fe329
+ms.openlocfilehash: 98410fb8b62eb160e21803b60a14ce731ffc8c23
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34463085"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36957461"
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
 Bir Windows düzenleme denetimi işlevselliğini sağlar.  
@@ -181,7 +181,7 @@ class CEdit : public CWnd
   
  Bir iletişim şablonunu ya da kodunuzdaki doğrudan bir düzenleme denetimi oluşturabilirsiniz. Her iki durumda da ilk Oluşturucusu çağrısı `CEdit` oluşturmak için `CEdit` nesne sonra çağırın [oluşturma](#create) Windows oluşturmak için üye işlevi düzenleme denetimi ve ekleyebilir `CEdit` nesnesi.  
   
- Yapım tek adımlı işlem türetilen bir sınıfta olabilir `CEdit`. Çağrı ve türetilmiş sınıf oluşturucu yazma **oluşturma** gelen oluşturucusu içinde.  
+ Yapım tek adımlı işlem türetilen bir sınıfta olabilir `CEdit`. Çağrı ve türetilmiş sınıf oluşturucu yazma `Create` gelen oluşturucusu içinde.  
   
  `CEdit` önemli işlevsellik devralır `CWnd`. Ayarlamak ve metinden almak için bir `CEdit` nesne, kullanın `CWnd` üye işlevleri [SetWindowText](cwnd-class.md#setwindowtext) ve [GetWindowText](cwnd-class.md#getwindowtext), hangi kümesi veya get bir düzen tüm içeriğini denetlemek, olsa bile, çok satırlı bir denetimdir. Çok satırlı denetiminde metin satırlarını '\r\n' karakter sıraları ile ayrılır. Ayrıca, bir düzenleme denetimi çok satırlı ise, almak ve ayarlamak denetimin metnin bir bölümünü çağırarak `CEdit` üye işlevleri [GetLine](#getline), [SetSel](#setsel), [GetSel](#getsel)ve [ ReplaceSel](#replacesel).  
   
@@ -249,7 +249,7 @@ BOOL CanUndo() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Son düzenleme işlemi için yapılan bir çağrı tarafından alınabilir, sıfır olmayan **geri** üye işlevi; 0 geri alınamaz.  
+ Son düzenleme işlemi için yapılan bir çağrı tarafından alınabilir, sıfır olmayan `Undo` üye işlevi; 0 geri alınamaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [EM_CANUNDO](http://msdn.microsoft.com/library/windows/desktop/bb775468) Windows SDK'sındaki.  
@@ -278,7 +278,7 @@ int CharFromPos(CPoint pt) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pt`  
+ *PT*  
  Bu istemci alanında bir noktanın koordinatlarını `CEdit` nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -302,7 +302,7 @@ void Clear();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından gerçekleştirilen silme **Temizle** çağırarak geri [geri](#undo) üye işlevi.  
+ Tarafından gerçekleştirilen silme `Clear` çağırarak geri [geri](#undo) üye işlevi.  
   
  Geçerli seçimi silin ve silinmiş içeriği panoya yerleştirmek için çağrı [Kes](#cut) üye işlevi.  
   
@@ -336,25 +336,25 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwStyle`  
+ *dwStyle*  
  Düzenle denetim stilini belirtir. Herhangi bir bileşimini uygulamak [düzenleme stilleri](styles-used-by-mfc.md#edit-styles) denetlemek için.  
   
- `rect`  
+ *Rect*  
  Düzenle denetim boyutunu ve konumunu belirtir. Olabilir bir `CRect` nesne veya `RECT` yapısı.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Düzenle denetim üst pencere belirtir (genellikle bir `CDialog`). Değil olmalıdır **NULL**.  
   
- `nID`  
+ *nID*  
  Düzenle denetim kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başlatma başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturmak bir `CEdit` iki adımda nesne. İlk olarak, arama `CEdit` oluşturucu ve ardından arama **oluşturma**, hangi Windows düzenleme denetimi oluşturur ve ekler `CEdit` nesnesi.  
+ Oluşturmak bir `CEdit` iki adımda nesne. İlk olarak, arama `CEdit` oluşturucu ve ardından arama `Create`, hangi Windows düzenleme denetimi oluşturur ve ona iliştirir `CEdit` nesnesi.  
   
- Zaman **oluşturma** yürütür, Windows gönderir [WM_NCCREATE](http://msdn.microsoft.com/library/windows/desktop/ms632635), [WM_NCCALCSIZE](http://msdn.microsoft.com/library/windows/desktop/ms632634), [WM_CREATE](http://msdn.microsoft.com/library/windows/desktop/ms632619), ve [WM_ GETMINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632626) düzenleme denetimine iletisi.  
+ Zaman `Create` yürütür, Windows gönderir [WM_NCCREATE](http://msdn.microsoft.com/library/windows/desktop/ms632635), [WM_NCCALCSIZE](http://msdn.microsoft.com/library/windows/desktop/ms632634), [WM_CREATE](http://msdn.microsoft.com/library/windows/desktop/ms632619), ve [WM_GETMINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632626) Düzenle denetim iletileri.  
   
  Bu iletiler, varsayılan olarak tarafından işlenen [OnNcCreate](cwnd-class.md#onnccreate), [OnNcCalcSize](cwnd-class.md#onnccalcsize), [OnCreate](cwnd-class.md#oncreate), ve [Ongetminmaxınfo](cwnd-class.md#ongetminmaxinfo) üye işlevleri içinde `CWnd` temel sınıfı. Varsayılan ileti işleme genişletmek için öğesinden bir sınıf türetin `CEdit`ileti eşlemesi için yeni sınıf ekleyin ve yukarıdaki ileti işleyicisi üye işlevlerini geçersiz kılma. Geçersiz kılma `OnCreate`, örneğin, gerekli başlatma için yeni bir sınıf gerçekleştirmek için.  
   
@@ -381,7 +381,7 @@ void Cut();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından gerçekleştirilen silme **Kes** çağırarak geri [geri](#undo) üye işlevi.  
+ Tarafından gerçekleştirilen silme `Cut` çağırarak geri [geri](#undo) üye işlevi.  
   
  Geçerli seçim silinen metni panoya koymadan silmek için arama [Temizle](#clear) üye işlevi.  
   
@@ -445,10 +445,10 @@ CString GetCueBanner() const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `lpszText`  
+ [out] *lpszText*  
  İşaret metin içeren bir dize için bir işaretçi.  
   
- [in] `cchText`  
+ [in] *cchText*  
  Alınabilir karakter sayısı. Bu sayı sonlandırma içerir `NULL` karakter.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -513,8 +513,8 @@ BOOL GetHighlight(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] `pichStart`|İlk karakter vurgulanır metin aralığını, sıfır tabanlı dizini.|  
-|[out] `pichEnd`|Vurgulanan metin aralığını son karakter sıfır tabanlı dizini.|  
+|[out] *pichStart*|İlk karakter vurgulanır metin aralığını, sıfır tabanlı dizini.|  
+|[out] *pichEnd*|Vurgulanan metin aralığını son karakter sıfır tabanlı dizini.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
@@ -544,7 +544,7 @@ UINT GetLimitText() const;
  [!code-cpp[NVC_MFC_CEdit#11](../../mfc/reference/codesnippet/cpp/cedit-class_11.cpp)]  
   
 ##  <a name="getline"></a>  CEdit::GetLine  
- Metin satırının bir düzenleme denetiminden almak için bu işlevi çağırmak ve yerleştirir `lpszBuffer`.  
+ Metin satırının bir düzenleme denetiminden almak için bu işlevi çağırmak ve yerleştirir *lpszBuffer*.  
   
 ```  
 int GetLine(
@@ -558,17 +558,17 @@ int GetLine(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Birden çok satırından almak için satır numarası düzenleme denetimi belirtir. Satır numaraları sıfır tabanlı; 0 değeri ilk satırı belirtir. Bu parametre, tek satırlı düzenleme denetimi tarafından göz ardı edilir.  
   
- `lpszBuffer`  
+ *lpszBuffer*  
  Satır kopyasını alan arabellek noktalarına. Arabellek ilk sözcüğün arabelleğe kopyalanabilmesi için karakter üst sınırını belirtmeniz gerekir.  
   
- `nMaxLength`  
- Arabelleğe kopyalanabilir bayt sayısını belirtir. `GetLine` Bu değer ilk Word'de yerleştirir `lpszBuffer` Windows çağrısı yapmadan önce.  
+ *nMaxLength*  
+ Arabelleğe kopyalanabilir bayt sayısını belirtir. `GetLine` Bu değer ilk Word'de yerleştirir *lpszBuffer* Windows çağrısı yapmadan önce.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Gerçekte kopyalanan bayt sayısı. Dönüş değeri satır numarası tarafından belirtilen 0 ise `nIndex` düzenleme denetimindeki satırları sayısından büyük.  
+ Gerçekte kopyalanan bayt sayısı. Dönüş değeri satır numarası tarafından belirtilen 0 ise *nIndex* düzenleme denetimindeki satırları sayısından büyük.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kopyalanan satırın null sonlandırma karakter içermiyor.  
@@ -661,7 +661,7 @@ void GetRect(LPRECT lpRect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpRect`  
+ *lpRect*  
  İşaret `RECT` biçimlendirme dikdörtgen alan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -686,10 +686,10 @@ void GetSel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nStartChar`  
+ *nStartChar*  
  İlk karakterin geçerli seçim alacak bir tamsayı başvuru.  
   
- `nEndChar`  
+ *nEndChar*  
  İlk karakterin nonselected geçerli seçimin sonundan sonraya alacak bir tamsayı başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -722,7 +722,7 @@ void LimitText(int nChars = 0);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nChars`  
+ *nChars*  
  Kullanıcının girebileceği metin uzunluğu (bayt cinsinden) belirtir. Bu parametre 0 ise, metin uzunluğu kümesine **uınt_max** bayt sayısı. Bu varsayılan davranıştır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -744,11 +744,11 @@ int LineFromChar(int nIndex = -1) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
- İstenen karakter düzenleme denetimi metninde sıfır tabanlı dizin değeri içeriyor veya -1 içerir. Varsa `nIndex` -1 ' dir geçerli satır, diğer bir deyişle, düzeltme işareti içeren satırı belirtir.  
+ *nIndex*  
+ İstenen karakter düzenleme denetimi metninde sıfır tabanlı dizin değeri içeriyor veya -1 içerir. Varsa *nIndex* -1 ' dir geçerli satır, diğer bir deyişle, düzeltme işareti içeren satırı belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen karakter dizinini içeren satırı sıfır tabanlı satır sayısı `nIndex`. Varsa `nIndex` -1 ' dir seçimi ilk karakteri içeren satırı sayısını döndürülür. Herhangi bir seçim geçerli satır numarasını döndürülür.  
+ Belirtilen karakter dizinini içeren satırı sıfır tabanlı satır sayısı *nIndex*. Varsa *nIndex* -1 ' dir seçimi ilk karakteri içeren satırı sayısını döndürülür. Herhangi bir seçim geçerli satır numarasını döndürülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Karakter dizini düzenleme denetimi başından itibaren karakter sayısıdır.  
@@ -768,11 +768,11 @@ int LineIndex(int nLine = -1) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nLine`  
- Düzenle denetim metin istenen satır için bir dizin değeri içeriyor veya -1 içerir. Varsa `nLine` -1 ' dir geçerli satır, diğer bir deyişle, düzeltme işareti içeren satırı belirtir.  
+ *evrimçi*  
+ Düzenle denetim metin istenen satır için bir dizin değeri içeriyor veya -1 içerir. Varsa *evrimçi* -1 ' dir geçerli satır, diğer bir deyişle, düzeltme işareti içeren satırı belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen satır karakter dizinini `nLine` veya belirtilen satır numarası düzenleme denetimindeki satırları sayısından büyükse, -1.  
+ Belirtilen satır karakter dizinini *evrimçi* veya belirtilen satır numarası düzenleme denetimindeki satırları sayısından büyükse, -1.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Karakter dizini belirtilen satır başına düzenleme denetimi karakterleri sayısıdır.  
@@ -792,17 +792,17 @@ int LineLength(int nLine = -1) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nLine`  
+ *evrimçi*  
  Bir karakter uzunluğunu alınacak bulunduğu satırı sıfır tabanlı dizini. Varsayılan değer -1'dir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Tek satırlı düzenleme denetimlerinde dönüş değeri olarak uzunluğudur `TCHAR`düzenleme denetimindeki metnin s.  
   
- Çok satırlı düzenleme denetimleri için dönüş değeri olarak uzunluğudur `TCHAR`tarafından belirtilen satırının s `nLine` parametresi. İçin [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] metin, uzunluk satırına bayt sayısı; Unicode metin için satır karakter sayısını uzunluğudur. Uzunluk satırın sonuna satır başı karakteri içermez.  
+ Çok satırlı düzenleme denetimleri için dönüş değeri olarak uzunluğudur `TCHAR`tarafından belirtilen satırının s *evrimçi* parametresi. İçin [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] metin, uzunluk satırına bayt sayısı; Unicode metin için satır karakter sayısını uzunluğudur. Uzunluk satırın sonuna satır başı karakteri içermez.  
   
- Varsa `nLine` parametresi birden çok denetim karakter sayısı, dönüş değeri sıfır değil.  
+ Varsa *evrimçi* parametresi birden çok denetim karakter sayısı, dönüş değeri sıfır değil.  
   
- Varsa `nLine` parametre -1, dönüş değeri seçili karakterler içeren satırları seçili olmayan karakter sayısı. Örneğin, seçimi satırın sonuna kadar sonraki sekiz karakter arasında bir satırın dördüncü karakter geçerse, dönüş değeri 10'dur. Diğer bir deyişle, üç ilk satır ve yedi sonraki karakter.  
+ Varsa *evrimçi* parametre -1, dönüş değeri seçili karakterler içeren satırları seçili olmayan karakter sayısı. Örneğin, seçimi satırın sonuna kadar sonraki sekiz karakter arasında bir satırın dördüncü karakter geçerse, dönüş değeri 10'dur. Diğer bir deyişle, üç ilk satır ve yedi sonraki karakter.  
   
  Hakkında daha fazla bilgi için `TCHAR` yazın, bkz: `TCHAR` tablosunda satır [Windows veri türleri](http://msdn.microsoft.com/library/windows/desktop/aa383751).  
   
@@ -822,16 +822,16 @@ void LineScroll(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nLines`  
+ *nLines*  
  Dikey olarak kaydırmak için satır sayısını belirtir.  
   
- `nChars`  
+ *nChars*  
  Yatay kaydırma için karakter konumlarını sayısını belirtir. Düzenleme denetimi ya da varsa bu değer yoksayılır **es_rıght** veya **ES_CENTER** stili.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi yalnızca birden çok satırlı düzenleme denetimleri tarafından işlenir.  
   
- Düzenleme denetimi dikey metin düzenleme denetimindeki son satırının kaydırarak değil. Tarafından belirtilen satır sayısı artı geçerli satır varsa `nLines` düzenleme denetimindeki satırları toplam sayısını aşıyor, böylece düzenleme denetimi son satırının düzenleme denetimi pencerenin üstündeki kaydırılan değere ayarlanır.  
+ Düzenleme denetimi dikey metin düzenleme denetimindeki son satırının kaydırarak değil. Geçerli tarafından belirtilen satır sayısı artı satır varsa *nLines* düzenleme denetimindeki satırları toplam sayısını aşıyor, böylece düzenleme denetimi son satırının düzenleme denetimi pencerenin üstündeki kaydırılan değere ayarlanır.  
   
  `LineScroll` her satırın son karakter yatay kaydırma için kullanılabilir.  
   
@@ -863,14 +863,14 @@ CPoint PosFromChar(UINT nChar) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nChar`  
+ *NChar*  
  Belirtilen karakter sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tarafından belirtilen bir karakterin sol üst köşesinin koordinatlarını `nChar`.  
+ Tarafından belirtilen bir karakterin sol üst köşesinin koordinatlarını *nChar*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Karakter, sıfır tabanlı dizin değerini vererek belirtilir. Varsa `nChar` bu son karakter dizinini değerinden daha büyük `CEdit` nesnesi, dönüş değeri bu karakterin yalnızca son karakter geçmiş koordinatlarını belirtir `CEdit` nesnesi.  
+ Karakter, sıfır tabanlı dizin değerini vererek belirtilir. Varsa *nChar* bu son karakter dizinini değerinden daha büyük `CEdit` nesnesi, dönüş değeri bu karakterin yalnızca son karakter geçmiş koordinatlarını belirtir `CEdit` nesnesi.  
   
 > [!NOTE]
 >  Bu üye fonksiyonu kullanılabilir başlayarak Windows 95 ve Windows NT 4.0 kullanılabilir.  
@@ -881,17 +881,17 @@ CPoint PosFromChar(UINT nChar) const;
   Örneğin bkz [CEdit::LineFromChar](#linefromchar).  
   
 ##  <a name="replacesel"></a>  CEdit::ReplaceSel  
- Bir düzenleme denetimindeki geçerli bölüm tarafından belirtilen metin değiştirmek için bu işlevi çağırmak `lpszNewText`.  
+ Bir düzenleme denetimindeki geçerli bölüm tarafından belirtilen metin değiştirmek için bu işlevi çağırmak *lpszNewText*.  
   
 ```  
 void ReplaceSel(LPCTSTR lpszNewText, BOOL bCanUndo = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszNewText`  
+ *lpszNewText*  
  Değiştirme metnini içeren null ile sonlandırılmış bir dize noktalarına.  
   
- `bCanUndo`  
+ *bCanUndo*  
  Bu işlev alınabilecek belirtmek için bu parametrenin değerini ayarlayın **doğru** . Varsayılan değer **FALSE**.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -917,10 +917,10 @@ BOOL SetCueBanner(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszText`  
+ [in] *lpszText*  
  Düzenleme denetimine görüntülenecek ipucu içeren bir dize işaretçi.  
   
- [in] `fDrawWhenFocused`  
+ [in] *fDrawWhenFocused*  
  Varsa `false`, kullanıcı düzenleme denetimine tıkladığında ve denetim odağı işaret başlık çizilir değil.  
   
  Varsa `true`, hatta denetimi odağa sahip olduğunda işaret başlık çizilir. Kullanıcı denetim türü başladığında işaret başlık kaybolur.  
@@ -981,8 +981,8 @@ void SetHighlight(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `ichStart`|İlk karakter vurgulamak için metin aralığını, sıfır tabanlı dizini.|  
-|[in] `ichEnd`|Vurgulamak için metin aralığını son karakter sıfır tabanlı dizini.|  
+|[in] *ichStart*|İlk karakter vurgulamak için metin aralığını, sıfır tabanlı dizini.|  
+|[in] *ichEnd*|Vurgulamak için metin aralığını son karakter sıfır tabanlı dizini.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [EM_SETHILITE](http://msdn.microsoft.com/library/windows/desktop/bb761643) Windows SDK'ın açıklanan ileti.  
@@ -995,7 +995,7 @@ void SetLimitText(UINT nMax);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nMax`  
+ *nMax*  
  Yeni metin sınırı karakter.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1044,7 +1044,7 @@ void SetModify(BOOL bModified = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bModified`  
+ *bModified*  
  Değerini **TRUE** metin değiştirildiğini gösterir ve değerini **FALSE** onu değiştirilmemiş olduğunu gösterir. Varsayılan olarak, değiştirilmiş bayrağı ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1088,7 +1088,7 @@ BOOL SetReadOnly(BOOL bReadOnly = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bReadOnly`  
+ *bReadOnly*  
  Ayarlama veya kaldırma düzenleme denetimi salt okunur durumunu belirtir. Değerini **TRUE** durumunu ayarlar salt okunur; değerini **FALSE** durumunu okuma/yazma olarak ayarlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1110,7 +1110,7 @@ void SetRect(LPCRECT lpRect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpRect`  
+ *lpRect*  
  İşaret `RECT` yapısı veya `CRect` biçimlendirme dikdörtgen yeni boyutlarını belirtir nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1135,7 +1135,7 @@ void SetRectNP(LPCRECT lpRect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpRect`  
+ *lpRect*  
  İşaret eden bir `RECT` yapısı veya `CRect` dikdörtgen yeni boyutlarını belirtir nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1176,10 +1176,10 @@ void SetSel(
  *bNoScroll*  
  Şapka görünüme kaydırılan olup olmadığını gösterir. Varsa **yanlış**, düzeltme işareti görünüme kaydırılan. Varsa **doğru**, düzeltme işareti görünüme kaydırılan değil.  
   
- `nStartChar`  
- Başlangıç konumu belirtir. Varsa `nStartChar` 0'dır ve `nEndChar` tüm metin düzenleme denetimindeki seçili -1'dir. Varsa `nStartChar` -1 ' dir herhangi bir geçerli seçimi kaldırılır.  
+ *nStartChar*  
+ Başlangıç konumu belirtir. Varsa *nStartChar* 0'dır ve *nEndChar* tüm metin düzenleme denetimindeki seçili -1'dir. Varsa *nStartChar* -1 ' dir herhangi bir geçerli seçimi kaldırılır.  
   
- `nEndChar`  
+ *nEndChar*  
  Bitiş konumu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1202,13 +1202,13 @@ BOOL SetTabStops(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cxEachStop`  
- Sekme durakları adresindeki ayarlanacak belirtir her `cxEachStop` iletişim kutusu birimleri.  
+ *cxEachStop*  
+ Sekme durakları adresindeki ayarlanacak belirtir her *cxEachStop* iletişim kutusu birimleri.  
   
- `nTabStops`  
- Sekme durakları içinde yer alan sayısını belirtir `rgTabStops`. Bu sayı 1'den büyük olmalıdır.  
+ *nTabStops*  
+ Sekme durakları içinde yer alan sayısını belirtir *rgTabStops*. Bu sayı 1'den büyük olmalıdır.  
   
- `rgTabStops`  
+ *rgTabStops*  
  Bir dizi noktalarına sekmesini belirtme imzasız tamsayılar iletişim kutusu birimleri durdurur. Yatay ve dikey uzaklık bir iletişim birimdir. Bir yatay iletişim biriminin geçerli iletişim temel genişliği biriminin bir-dördüncü için eşit ve 1 dikey iletişim birim geçerli iletişim temel yükseklik biriminin bir-sekizinci için eşit olur. İletişim kutusu temel birimleri geçerli sistem yazı tipi genişliği ve yüksekliği göre hesaplanır. **GetDialogBaseUnits** Windows işlevi temel birimleri geçerli iletişim piksel cinsinden döndürür.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1217,7 +1217,7 @@ BOOL SetTabStops(
 ### <a name="remarks"></a>Açıklamalar  
  Metin birden çok satırlı düzenleme denetimine kopyalandığında, herhangi bir metin sekmesini karaktere kadar sonraki sekme durağı oluşturulacak alanı neden olur.  
   
- Sekme durakları 32 iletişim kutusu birimleri varsayılan boyutunu ayarlamak için bu üye işlevi parametresiz sürümü çağırın. Sürümüyle 32 dışındaki bir boyuta sekme durakları ayarlama çağrısı `cxEachStop` parametresi. Bir dizi boyutları için sekme durakları ayarlamak için iki parametre ile sürümü kullanın.  
+ Sekme durakları 32 iletişim kutusu birimleri varsayılan boyutunu ayarlamak için bu üye işlevi parametresiz sürümü çağırın. Sürümüyle 32 dışındaki bir boyuta sekme durakları ayarlama çağrısı *cxEachStop* parametresi. Bir dizi boyutları için sekme durakları ayarlamak için iki parametre ile sürümü kullanın.  
   
  Bu üye işlevi yalnızca birden çok satırlı düzenleme denetimleri tarafından işlenir.  
   
@@ -1245,10 +1245,10 @@ BOOL ShowBalloonTip(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `pEditBalloonTip`|İşaretçi bir [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) balon ipucu açıklar yapısı.|  
-|[in] `lpszTitle`|Balon ipucu başlığını içeren bir UNICODE dizesi işaretçi.|  
-|[in] `lpszText`|Balon ipucu metnini içeren bir UNICODE dizesi işaretçi.|  
-|[in] `ttiIcon`|Bir `INT` balon ipucu ile ilişkilendirilecek simgesi türünü belirtir. Varsayılan değer `TTI_NONE` şeklindedir. Daha fazla bilgi için bkz: `ttiIcon` üyesi [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) yapısı.|  
+|[in] *pEditBalloonTip*|İşaretçi bir [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) balon ipucu açıklar yapısı.|  
+|[in] *lpszTitle*|Balon ipucu başlığını içeren bir UNICODE dizesi işaretçi.|  
+|[in] *lpszText*|Balon ipucu metnini içeren bir UNICODE dizesi işaretçi.|  
+|[in] *ttiIcon*|Bir **INT** balon ipucu ile ilişkilendirilecek simgesi türünü belirtir. Varsayılan değer `TTI_NONE` şeklindedir. Daha fazla bilgi için bkz: `ttiIcon` üyesi [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
@@ -1277,7 +1277,7 @@ BOOL Undo();
  Tek satırlı düzenleme denetimi için dönüş değeri her zaman sıfır olmayan bir değer. Birden çok satırlı düzenleme denetimi için dönüş değerini geri alma işlemi başarılıysa sıfır olmayan veya geri alma işlemi başarısız olursa 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir geri alma işlemi geri alınabilir. Örneğin, ilk çağrıda silinen metinle geri yükleyebilirsiniz **geri**. Müdahalede bulunan hiçbir düzenleme işlemi var olduğu sürece ikinci çağrı metinle yeniden kaldırabilirsiniz **geri**.  
+ Bir geri alma işlemi geri alınabilir. Örneğin, ilk çağrıda silinen metinle geri yükleyebilirsiniz `Undo`. Müdahalede bulunan hiçbir düzenleme işlemi var olduğu sürece ikinci çağrı metinle yeniden kaldırabilirsiniz `Undo`.  
   
  Daha fazla bilgi için bkz: [EM_UNDO](http://msdn.microsoft.com/library/windows/desktop/bb761670) Windows SDK'sındaki.  
   

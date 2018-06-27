@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43bd8f7b12eee847fd6b8784d21f4b565c7fc6a5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d292c3f48f0a375fbd914cf287f1e8d2cef5c6c3
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357021"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36952391"
 ---
 # <a name="ccommandlineinfo-class"></a>CCommandLineInfo sınıfı
 Uygulama başlangıç komut satırında Ayrıştırma sırasında yardımları.  
@@ -270,17 +270,17 @@ virtual void ParseParam(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pszParam`  
+ *pszParam*  
  Bir parametre veya bayrak.  
   
  *bFlag*  
- Gösterir olup olmadığını `pszParam` bir parametre veya bir bayrak.  
+ Gösterir olup olmadığını *pszParam* bir parametre veya bir bayrak.  
   
- `bLast`  
+ *Topluca*  
  Bu son parametresi komut satırında bayrağı olup olmadığını gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline) çağrıları `ParseParam` kez her bir parametre veya komut satırında bayrak için bağımsız değişken geçirme `pszParam`. İlk karakter parametresinin ise bir ' **-**'veya' **/**', sonra kaldırılmadan ve *bFlag* ayarlanır `TRUE`. Son parametre ayrıştırılırken `bLast` ayarlanır `TRUE`.  
+ [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline) çağrıları `ParseParam` kez her bir parametre veya komut satırında bayrak için bağımsız değişken geçirme *pszParam*. İlk karakter parametresinin ise bir ' **-**'veya' **/**', sonra kaldırılmadan ve *bFlag* ayarlanır `TRUE`. Son parametre ayrıştırılırken *topluca* ayarlanır `TRUE`.  
   
  Bu işlev varsayılan uygulaması aşağıdaki bayraklar tanır: `/p`, `/pt`, `/dde`, `/Automation`, ve `/Embedding`aşağıdaki tabloda gösterildiği gibi:  
   

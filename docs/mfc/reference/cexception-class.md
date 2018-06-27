@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a152c55944fca5fa858c148c009ef6301ff0f762
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d145129d8f9e640da9040c8c70a92cedcf3565d9
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368039"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36951715"
 ---
 # <a name="cexception-class"></a>CException sınıfı
 Microsoft Foundation Class Kitaplığı'ndaki tüm özel durumlar için temel sınıf.  
@@ -99,24 +99,24 @@ explicit CException(BOOL bAutoDelete);
   
 ### <a name="parameters"></a>Parametreler  
  *b_AutoDelete*  
- Belirtin **TRUE** varsa için bellek `CException` nesne öbek üzerinde ayrıldı. Bu neden olacak `CException` zaman Silinecek nesnenin **silmek** üye işlevi, özel durum silmek için çağrılır. Belirtin **FALSE** varsa `CException` nesne yığında veya genel bir nesnedir. Bu durumda, `CException` nesne olmayacak ne zaman silinmiş **silmek** üye işlevi çağrılır.  
+ Belirtin **TRUE** varsa için bellek `CException` nesne öbek üzerinde ayrıldı. Bu neden olacak `CException` zaman silinecek nesne `Delete` üye işlevi, özel durum silmek için çağrılır. Belirtin **FALSE** varsa `CException` nesne yığında veya genel bir nesnedir. Bu durumda, `CException` nesne olmayacak ne zaman silinmiş `Delete` üye işlevi çağrılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Normalde hiçbir zaman bu oluşturucu doğrudan çağırmanız gerekir. Bir özel durum oluşturur işlevi bir örneğini oluşturmanız gerekir bir `CException`-türetilmiş sınıf ve MFC'nin kullanım throw işlevleri gibi kurucusu veya çağrı [AfxThrowFileException](exception-processing.md#afxthrowfileexception), önceden tanımlanmış bir türü atmak için. Bu belge, yalnızca bütünlük açısından sağlanır.  
   
 ##  <a name="delete"></a>  CException::Delete  
- Bu işlev olup olmadığını denetler. **CException** nesne öbek üzerinde oluşturuldu ve bu durumda, çağırır **silmek** nesne üzerinde işleci.  
+ Bu işlev olup olmadığını denetler. `CException` nesne öbek üzerinde oluşturuldu ve bu durumda, çağırır **silmek** nesne üzerinde işleci.  
   
 ```  
 void Delete();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Silerken bir **CException** nesne, kullanın **silmek** özel silmek için üye işlevi. Kullanmayın **silmek** doğrudan işleci çünkü `CException` nesne yığında oluşturulan veya genel bir nesne olabilir.  
+ Silerken bir `CException` nesne, kullanın `Delete` özel silmek için üye işlevi. Kullanmayın **silmek** doğrudan işleci çünkü `CException` nesne yığında oluşturulan veya genel bir nesne olabilir.  
   
  Nesne nesnesi oluşturulduğunda silineceğini belirtebilirsiniz. Daha fazla bilgi için bkz: [CException::CException](#cexception).  
   
- Yalnızca çağırmanız gerekir **silmek** C++ kullanıyorsanız **deneyin**- **catch** mekanizması. MFC makroları kullanıyorsanız **deneyin** ve **CATCH**, sonra da bu makroları otomatik olarak bu işlevi çağırır.  
+ Yalnızca çağırmanız gerekir `Delete` C++ kullanıyorsanız **deneyin**- **catch** mekanizması. MFC makroları kullanıyorsanız **deneyin** ve **CATCH**, sonra da bu makroları otomatik olarak bu işlevi çağırır.  
   
 ### <a name="example"></a>Örnek  
  ```cpp  
@@ -178,7 +178,7 @@ virtual int ReportError(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nType`  
+ *nTür*  
  İleti kutusu stilini belirtir. Herhangi bir bileşimini uygulamak [ileti kutusu stilleri](styles-used-by-mfc.md#message-box-styles) kutusuna. Bu parametre belirtmezseniz, varsayılan değer **MB_OK**.  
   
  *nMessageID*  

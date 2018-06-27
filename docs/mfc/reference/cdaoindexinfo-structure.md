@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d8c98181a9ec049308d7b85e57c028740927cc2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 85e59173ec330d0a5abb968225ce6b2e12263948
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367041"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36954071"
 ---
 # <a name="cdaoindexinfo-structure"></a>CDaoIndexInfo Yapısı
 `CDaoIndexInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan bir dizin nesne hakkında bilgiler içerir.  
@@ -48,14 +48,14 @@ struct CDaoIndexInfo {
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `m_strName`  
+ *m_strName*  
  Alan nesne adlandıran. Ayrıntılar için DAO Yardımı'ndaki "Name özelliği" konusuna bakın.  
   
- `m_pFieldInfos`  
+ *m_pFieldInfos*  
  Bir dizi için bir işaretçi [Cdaoındexfieldınfo](../../mfc/reference/cdaoindexfieldinfo-structure.md) hangi tabledef veya kayıt bir dizinde anahtar alanları alanlardır gösteren nesne. Her nesnenin dizin içindeki bir alanı tanımlar. Varsayılan dizin Sıralama artan. Bir dizin nesnesi, her kayıt için dizin anahtarlarının temsil eden bir veya daha fazla alan sahip olabilir. Bunlar, azalan, veya bir birleşimini artan.  
   
- `m_nFields`  
- Depolanan alan sayısını `m_pFieldInfos`.  
+ *M_nFields*  
+ Depolanan alan sayısını *m_pFieldInfos*.  
   
  *m_bPrimary*  
  Birincil özelliği olan ise **doğru**, dizin nesnesi birincil dizin temsil eder. Önceden tanımlı bir sırada bir tablodaki tüm kayıtları benzersiz şekilde tanımlayan bir veya daha fazla alan, birincil dizin oluşur. Dizin alanın benzersiz olması gerektiğinden dizin nesnesinin benzersiz özelliği de ayarlanır **TRUE** DAO içinde. Birincil dizin birden fazla alanı oluşuyorsa, her bir alan yinelenen değerler içerebilir, ancak tüm dizinli alanlardan değerlerin her birleşimi benzersiz olmalıdır. Birincil dizin tablo için bir anahtar içerir ve genellikle birincil anahtarı aynı alanları içerir.  
@@ -89,7 +89,7 @@ struct CDaoIndexInfo {
   
  Daha fazla bilgi için DAO Yardımı'ndaki "IgnoreNulls özelliği" konusuna bakın.  
   
- `m_bRequired`  
+ *m_bRequired*  
  DAO Index nesnesi Null olmayan bir değer gerekli olup olmadığını gösterir. Bu özellik ise **doğru**, dizin nesnesi Null bir değere izin vermiyor. Daha fazla bilgi için DAO Yardımı'ndaki "özelliği gerekli" konusuna bakın.  
   
 > [!TIP]
@@ -106,7 +106,7 @@ struct CDaoIndexInfo {
   
  Dizin nesneleri bir MFC sınıfı tarafından temsil edilmez. Bunun yerine, DAO temel MFC sınıfının nesneleri [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) dizinler koleksiyonu adlı dizin nesnelerinin bir koleksiyonu içerir. Bu sınıfların dizin bilgilerinin tek tek öğelere erişmek için üye işlevleri sağlamak ya da bunları tamamını tek seferde erişebilirsiniz bir `CDaoIndexInfo` çağırarak nesne `GetIndexInfo` kapsayan nesnenin üye işlevi.  
   
- `CDaoIndexInfo` bir oluşturucu ve düzgün şekilde ayırmak ve dizin alan bilgilerini ayırması amacıyla bir yıkıcı sahip `m_pFieldInfos`.  
+ `CDaoIndexInfo` bir oluşturucu ve düzgün şekilde ayırmak ve dizin alan bilgilerini ayırması amacıyla bir yıkıcı sahip *m_pFieldInfos*.  
   
  Tarafından alınan bilgileri `GetIndexInfo` üye işlevi tabledef nesnesinin depolanır bir `CDaoIndexInfo` yapısı. Çağrı `GetIndexInfo` üye işlevi içeren tabledef nesnesinin olan dizinler koleksiyonu dizin nesnesi depolanır. `CDaoIndexInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümü bir `CDaoIndexInfo` nesnesi.  
   

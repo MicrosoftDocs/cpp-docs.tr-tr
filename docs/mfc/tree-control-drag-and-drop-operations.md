@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a620c2481b29b80f6d30dd6457716a652f51fd85
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 73aa47a2d888c88dd58d114dd4f5ca9a3f086cd3
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382772"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956258"
 ---
 # <a name="tree-control-drag-and-drop-operations"></a>Ağaç Denetimi Sürükle ve Bırak İşlemleri
-Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) kullanıcı bir öğeyi sürüklemek başlatıldığında bir bildirim gönderir. Denetim gönderir bir [TVN_BEGINDRAG](http://msdn.microsoft.com/library/windows/desktop/bb773504) kullanıcı sol fare düğmesini bir öğesiyle sürükleyerek başladığında bildirim iletisi ve [TVN_BEGINRDRAG](http://msdn.microsoft.com/library/windows/desktop/bb773509) kullanıcı sürükleme başladığında bildirim iletisi Sağdaki düğme. Ağaç denetimi vererek bu bildirimleri gönderme ağaç denetimi engelleyebilirsiniz **TVS_DISABLEDRAGDROP** stili.  
+Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) kullanıcı bir öğeyi sürüklemek başlatıldığında bir bildirim gönderir. Denetim gönderir bir [TVN_BEGINDRAG](http://msdn.microsoft.com/library/windows/desktop/bb773504) kullanıcı sol fare düğmesini bir öğesiyle sürükleyerek başladığında bildirim iletisi ve [TVN_BEGINRDRAG](http://msdn.microsoft.com/library/windows/desktop/bb773509) kullanıcı sürükleme başladığında bildirim iletisi Sağdaki düğme. Ağaç denetimi TVS_DISABLEDRAGDROP stili ağaç denetimi vererek bu bildirimleri gönderme engelleyebilir.  
   
  Çağırarak bir sürükleme işlemi sırasında görüntülenecek bir görüntü elde [CreateDragImage](../mfc/reference/ctreectrl-class.md#createdragimage) üye işlevi. Ağaç denetimi sürüklenen öğenin etikete göre sürükleyerek bir bit eşlem oluşturur. Ağaç denetim resim listesi oluşturur, bit eşlem ekler ve bir işaretçi döndürür [Cımagelist](../mfc/reference/cimagelist-class.md) nesnesi.  
   

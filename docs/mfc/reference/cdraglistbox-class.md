@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34655c244f13cb721693208fa93353582de452e9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 78f2c1843602c1c1db6b05a16bbea0aceec70df2
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367217"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36955995"
 ---
 # <a name="cdraglistbox-class"></a>CDragListBox sınıfı
 Bir Windows liste kutusu işlevselliğini sağlayan yanı sıra `CDragListBox` sınıfı içinde liste kutusu gibi dosya adları, liste kutusu öğeleri taşımak kullanıcı verir.  
@@ -96,7 +96,7 @@ virtual BOOL BeginDrag(CPoint pt);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pt`  
+ *PT*  
  A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) sürüklenen öğenin koordinatları içeren nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -113,7 +113,7 @@ virtual void CancelDrag(CPoint pt);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pt`  
+ *PT*  
  A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) sürüklenen öğenin koordinatları içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -134,7 +134,7 @@ virtual UINT Dragging(CPoint pt);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pt`  
+ *PT*  
  A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) x ve y içeren nesne ekran İmleç koordinatları.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -157,7 +157,7 @@ virtual void DrawInsert(int nItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Ekleme noktasını sıfır tabanlı dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -176,14 +176,14 @@ virtual void Dropped(
  *nSrcIndex*  
  Bırakılan dize sıfır tabanlı dizini belirtir.  
   
- `pt`  
+ *PT*  
  A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) açılan site koordinatlarını içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan davranış, liste kutusu öğesi ve kendi veri yeni konuma kopyalar ve özgün öğeyi siler. Liste kutusu öğeleri listesi içindeki başka konumlara sürüklenebilir için kopyalarını etkinleştirme gibi varsayılan davranışını özelleştirmek için bu işlevi geçersiz kılar.  
   
 ##  <a name="itemfrompt"></a>  CDragListBox::ItemFromPt  
- Liste kutusu öğesi sıfır tabanlı dizini almak için bu işlevi bulunan çağrı `pt`.  
+ Liste kutusu öğesi sıfır tabanlı dizini almak için bu işlevi bulunan çağrısı *pt*.  
   
 ```  
 int ItemFromPt(
@@ -192,7 +192,7 @@ int ItemFromPt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pt`  
+ *PT*  
  A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) liste kutusu içinde bir noktayı koordinatlarını içeren nesne.  
   
  *bAutoScroll*  

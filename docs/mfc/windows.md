@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88ba41b7bb921cc2834b4d45712be768b2d19f8e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 97d8f7a0107f3f6d7aa9e5baa1454142e1426d9e
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384471"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36950480"
 ---
 # <a name="windows"></a>Windows
 Bu makaleler ailesi MFC çerçevesi pencere nesneleri kapsar. Tüm MFC windows sınıfından türetilen [CWnd](../mfc/reference/cwnd-class.md)çerçeve pencereleri, görünümler, iletişim kutuları ve denetimleri dahil olmak üzere.  
   
- Makalelerin ilk grubu tanımlayan [pencere nesneleri](../mfc/window-objects.md) genel. C++ pencere nesneleri, nasıl bunlar HWND kapsüllemek ve bunları alt windows gibi kendi windows oluştururken kullanma hakkında genel bilgi için bu gruba başvurun.  
+ Makalelerin ilk grubu tanımlayan [pencere nesneleri](../mfc/window-objects.md) genel. C++ pencere nesneleri hakkında genel bilgi için bu gruba başvuran nasıl kapsülleyen bir `HWND`, ve bunları alt windows gibi kendi windows oluştururken kullanma.  
   
  Makalelerin ikinci grubu tanımlayan [çerçeve windows](../mfc/frame-windows.md)— içeriğin etrafında bir çerçeve put windows — özellikle. MFC çerçevesi çerçeve pencereleri ve bunlar, Denetim çubuklarını ve görünümleri de dahil olmak üzere, çerçeve içeriği nasıl yönettiği hakkında bilgi için bu grubu bakın.  
   

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9230a304473c3f29bda2652f8941fb692b14c038
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bf2ffe62760e3879d834409f5b3207588ea06f36
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33357234"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36956313"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA Yapısı
 `AFX_GLOBAL_DATA` Yapısı alanları ve framework yönetmek veya uygulamanızın davranışını ve görünümünü özelleştirmek için kullanılan yöntemleri içerir.  
@@ -148,13 +148,13 @@ HRESULT D2D1MakeRotateMatrix(
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- `angle`  
+ *Açı*  
  Saat yönünde bir döndürme, derece cinsinden açı.  
   
- `center`  
+ *Merkezi*  
  Hangi döndürmek hakkında noktası.  
   
- `matrix`  
+ *Matris*  
  Bu yöntem döndürüldüğünde, yeni döndürme dönüşümü içerir. Bu parametre için depolama ayırmanız gerekir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -172,13 +172,13 @@ BOOL DrawParentBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] `pWnd`  
+ [in] *pWnd*  
  Bir denetimin penceresi işaretçi.  
   
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı işaretçi.  
   
- [in] `lpRect`  
+ [in] *lpRect*  
  Bir dikdörtgen çizmek için alan bounds işaretçi. Varsayılan değer `NULL` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -202,42 +202,42 @@ BOOL DrawTextOnGlass(
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] `hTheme`  
+ [in] *hTheme*  
  Bir pencere tema verileri işlemek veya `NULL`. Bu parametre değilse metnini çizmek için belirtilen tema çerçevesi kullanır `NULL` ve Temalar desteklenir. Aksi takdirde, framework metnini çizmek için bir tema kullanmaz.  
   
  Kullanım [OpenThemeData](http://msdn.microsoft.com/library/windows/desktop/bb759821) yöntemi oluşturmak için bir `HTHEME`.  
   
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı işaretçi.  
   
- [in] `iPartId`  
+ [in] *iPartId*  
  İstenen metin görünümü sahip denetim bölümü. Daha fazla bilgi için tablonun bölümleri sütununa bakın [bölümler ve durumlar](http://msdn.microsoft.com/library/windows/desktop/bb773210). Bu değer 0 ise, metin varsayılan yazı tipi ya da cihaz bağlamına seçili bir yazı tipi çizilir.  
   
- [in] `iStateId`  
+ [in] *iStateId*  
  İstenen metin görünümü sahip denetim durumu. Daha fazla bilgi için tablo durumları sütununa bakın [bölümler ve durumlar](http://msdn.microsoft.com/library/windows/desktop/bb773210).  
   
- [in] `strText`  
+ [in] *strText*  
  Çizmek için metin.  
   
- [in] `rect`  
+ [in] *rect*  
  Belirtilen metni çizilen alanı sınır.  
   
- [in] `dwFlags`  
+ [in] *dwFlags*  
  Bitsel bir birleşimi (veya), belirtilen metnin nasıl çizilir belirten işaretler.  
   
- Varsa `hTheme` parametresi `NULL` veya Temalar değil desteklenen ve etkinleştirilirse, `nFormat` parametresinin [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) yöntemi geçerli bayraklar açıklar. Temalar destekleniyorsa, `dwFlags` parametresinin [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) yöntemi geçerli bayraklar açıklar.  
+ Varsa *hTheme* parametresi `NULL` veya Temalar değil desteklenen ve etkinleştirilirse, *nFormat* parametresinin [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) yöntemi geçerli açıklar bayraklar. Temalar destekleniyorsa, *dwFlags* parametresinin [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) yöntemi geçerli bayraklar açıklar.  
   
- [in] `nGlowSize`  
+ [in] *nGlowSize*  
  Belirtilen metin çizme önce arka planda çizilmiş parlama efekti boyutu. Varsayılan değer 0’dır.  
   
- [in] `clrText`  
+ [in] *clrText*  
  Belirtilen metni çizilen rengi. Varsayılan rengini varsayılan değerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` Belirtilen metni çizmek için bir tema kullandıysanız; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir tema uygulama görsel stilini tanımlar. Bir tema, metin çizmek için kullanılan değil `hTheme` parametresi `NULL`, veya [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) yöntemi desteklenmiyor veya [Masaüstü Pencere Yöneticisi](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) birleşim devre dışı bırakıldı .  
+ Bir tema uygulama görsel stilini tanımlar. Bir tema, metin çizmek için kullanılan değil *hTheme* parametresi `NULL`, veya [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) yöntemi desteklenmiyor veya [Masaüstü Pencere Yöneticisi](http://msdn.microsoft.com/library/windows/desktop/aa969540) () DWM) oluşturma devre dışı bırakıldı.  
   
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
@@ -257,7 +257,7 @@ void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` Erişilebilirlik desteğini etkinleştirmek için; `FALSE` erişilebilirlik desteği devre dışı bırakmak için. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -283,25 +283,25 @@ BOOL ExcludeTag(
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] `strBuffer`  
+ [in] *strBuffer*  
  Metin arabelleği.  
   
- [in] `lpszTag`  
+ [in] *lpszTag*  
  Açma ve kapatma XML etiketleri çifti adı.  
   
- [out] `strTag`  
- Bu yöntem döndürüldüğünde, `strTag` parametresi içerir açma ve kapatma XML arasında tarafından adlı etiket metni `lpszTag` parametresi. Başında veya sonunda boşluk sonucundan kırpılır.  
+ [out] *strTag*  
+ Bu yöntem döndürüldüğünde, *strTag* parametresi içerir açma ve kapatma XML arasında tarafından adlı etiket metni *lpszTag* parametresi. Başında veya sonunda boşluk sonucundan kırpılır.  
   
- [in] `bIsCharsList`  
- `TRUE` çıkış karakterleri simgelerini dönüştürmek için `strTag` gerçek kaçış karakterleri; parametresine `FALSE` dönüştürme işlemi yapmayacak şekilde. Varsayılan değer `FALSE`. Daha fazla bilgi için açıklamalar bakın.  
+ [in] *bIsCharsList*  
+ `TRUE` çıkış karakterleri simgelerini dönüştürmek için *strTag* gerçek kaçış karakterleri; parametresine `FALSE` dönüştürme işlemi yapmayacak şekilde. Varsayılan değer `FALSE`. Daha fazla bilgi için açıklamalar bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir XML etiket çifti açma ve kapama başlangıç ve bitiş belirtilen arabellek içindeki metnin bir çalışma belirtmek etiketlerini adlı oluşur. `strBuffer` Parametresi, arabellek belirtir ve `lpszTag` parametresi XML etiket adını belirtir.  
+ Bir XML etiket çifti açma ve kapama başlangıç ve bitiş belirtilen arabellek içindeki metnin bir çalışma belirtmek etiketlerini adlı oluşur. *StrBuffer* parametresi, arabellek belirtir ve *lpszTag* parametresi XML etiket adını belirtir.  
   
- Simgeler aşağıdaki tabloda belirtilen arabelleği kaçış karakterleri kodlayın için kullanın. Belirtin `TRUE` için `bIsCharsList` sembolleri dönüştürmek için parametre `strTag` gerçek kaçış karakterleri içine parametresi. Aşağıdaki tabloda kullanır [_T()](../../c-runtime-library/data-type-mappings.md) simgenin belirtmek ve karakter dizelerini kaçınmak için makrosu.  
+ Simgeler aşağıdaki tabloda belirtilen arabelleği kaçış karakterleri kodlayın için kullanın. Belirtin `TRUE` için *bIsCharsList* sembolleri dönüştürmek için parametre *strTag* gerçek kaçış karakterleri içine parametresi. Aşağıdaki tabloda kullanır [_T()](../../c-runtime-library/data-type-mappings.md) simgenin belirtmek ve karakter dizelerini kaçınmak için makrosu.  
   
 |Simgesi|Atlatma karakteri|  
 |------------|----------------------|  
@@ -322,14 +322,14 @@ COLORREF GetColor(int nColor);
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] `nColor`  
- Bir kullanıcı arabirimi öğesi, renk alınır belirten bir değer. Geçerli değerler listesi için bkz: `nIndex` parametresinin [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) yöntemi.  
+ [in] *nColor*  
+ Bir kullanıcı arabirimi öğesi, renk alınır belirten bir değer. Geçerli değerler listesi için bkz: *nIndex* parametresinin [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen kullanıcı arabirimi öğesi RGB renk değeri. Daha fazla bilgi için açıklamalar bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `nColor` parametre aralık dışında dönüş değeri sıfır. Sıfır da geçerli bir RGB değer olduğundan, sistem rengi geçerli işletim sistemi tarafından desteklenip desteklenmediğini belirlemek için bu yöntemi kullanamazsınız. Bunun yerine, kullanın [GetSysColorBrush](http://msdn.microsoft.com/library/windows/desktop/dd144927) döndürür yöntemi `NULL` rengi desteklenmiyorsa.  
+ Varsa *nColor* parametre aralık dışında dönüş değeri sıfır. Sıfır da geçerli bir RGB değer olduğundan, sistem rengi geçerli işletim sistemi tarafından desteklenip desteklenmediğini belirlemek için bu yöntemi kullanamazsınız. Bunun yerine, kullanın [GetSysColorBrush](http://msdn.microsoft.com/library/windows/desktop/dd144927) döndürür yöntemi `NULL` rengi desteklenmiyorsa.  
   
 ### <a name="see-also"></a>Ayrıca Bkz.  
 
@@ -368,7 +368,7 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [içinde out] `info`  
+ [içinde out] *bilgisi*  
  A [NONCLIENTMETRICS](http://msdn.microsoft.com/library/windows/desktop/ff729175) nonminimized penceresi nonclient alanıyla ilişkili ölçeklenebilir ölçümleri içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -387,7 +387,7 @@ int GetTextHeight(BOOL bHorz = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] `bHorz`  
+ [in] *bHorz*  
  `TRUE` metnin yatay olarak çalıştığında karakterlerin yüksekliği almak için; `FALSE` metin dikey olarak çalıştığında karakterlerin yüksekliği alınamadı. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -426,10 +426,10 @@ BOOL InitD2D(
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- `d2dFactoryType`  
+ *d2dFactoryType*  
  D2D Fabrika ve kaynakları iş parçacığı modeli oluşturur.  
   
- `writeFactoryType`  
+ *writeFactoryType*  
  Yazma üretecini paylaşılan veya ayrılmış belirten bir değer  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -645,14 +645,14 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] `lpszClassNamePrefix`  
+ [in] *lpszClassNamePrefix*  
  Kaydetmek için pencere sınıfı adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa kayıtlı sınıf tam adını; Aksi halde, bir [kaynak özel durumu](http://msdn.microsoft.com/library/ddd99292-819b-4fa4-8371-b1954ed5856d).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dönüş değerini virgülle ayrılmış listesidir `lpszClassNamePrefix` parametre dizesi ve geçerli tanıtıcıları onaltılık metin temsilleridir uygulaması örneği; olan tanımlayıcısıdır IDC_ARROW; ok imleç uygulama imleci ve arka plan Fırçası. MFC pencere sınıflarını kaydetme hakkında daha fazla bilgi için bkz: [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).  
+ Dönüş değerini virgülle ayrılmış listesidir *lpszClassNamePrefix* parametre dizesi ve geçerli uygulama örneğinin; tanıtıcıları onaltılık metin temsilleridir ok uygulama imleci İmleç IDC_ARROW olan tanımlayıcısıdır; ve arka plan Fırçası. MFC pencere sınıflarını kaydetme hakkında daha fazla bilgi için bkz: [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).  
   
 ### <a name="see-also"></a>Ayrıca Bkz.    
  [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass)   
@@ -685,17 +685,17 @@ BOOL SetLayeredAttrib(
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] `hwnd`  
+ [in] *hwnd*  
  Katmanlı penceresine işleyin.  
   
- [in] `crKey`  
+ [in] *crKey*  
  Saydamlık rengi anahtar [Masaüstü Pencere Yöneticisi](http://msdn.microsoft.com/library/windows/desktop/aa969540) katmanlı pencere oluşturmak için kullanır.  
   
- [in] `bAlpha`  
+ [in] *bAlpha*  
  Katmanlı pencere geçirgenliğini tanımlamak için kullanılan alfa değeri.  
   
- [in] `dwFlags`  
- Bitsel bir birleşimi (veya) kullanmak üzere hangi yöntemi parametreleri belirtin bayrakları. Kullanılacak LWA_COLORKEY belirtin `crKey` parametre olarak saydamlık rengi. Kullanılacak LWA_ALPHA belirtin `bAlpha` katmanlı pencere geçirgenliğini belirlemek için parametre.  
+ [in] *dwFlags*  
+ Bitsel bir birleşimi (veya) kullanmak üzere hangi yöntemi parametreleri belirtin bayrakları. Kullanılacak LWA_COLORKEY belirtin *crKey* parametre olarak saydamlık rengi. Kullanılacak LWA_ALPHA belirtin *bAlpha* katmanlı pencere geçirgenliğini belirlemek için parametre.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.   
@@ -715,10 +715,10 @@ BOOL SetMenuFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] `lpLogFont`  
+ [in] *lpLogFont*  
  Bir yazı tipi özniteliklerini içeren bir yapı işaretçi.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  `TRUE` metnin yatay olarak çalıştığını belirtmek için; `FALSE` metnin dikey olarak çalıştığını belirtmek için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -824,17 +824,17 @@ HRESULT ShellCreateItemFromParsingName(
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- `pszPath`  
+ *pszPath*  
  [in] Bir görünen ad için bir işaretçi.  
   
- `pbc`  
+ *pbc*  
  Ayrıştırma işlemi denetleyen bir bağlama bağlamı için bir işaretçi.  
   
- `riid`  
+ *nRIID*  
  Bir arabirim kimliği başvurusu  
   
- `ppv`  
- [out] Bu işlevi döndüğünde, istenen arabirim işaretçisi içeren `riid`. Bu genellikle olacaktır `IShellItem` veya `IShellItem2`.  
+ *ppv*  
+ [out] Bu işlevi döndüğünde, istenen arabirim işaretçisi içeren *nRIID*. Bu genellikle olacaktır `IShellItem` veya `IShellItem2`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa; S_OK döndürür Aksi takdirde bir hata değeri.  

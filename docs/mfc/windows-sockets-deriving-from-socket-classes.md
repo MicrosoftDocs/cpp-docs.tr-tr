@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64fb9a3ff1c27aade9f74a8ed95a8016829874ab
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 76ccb2ec126ae57e39b1a4fab3a0bff82a353d71
+ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384081"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36953768"
 ---
 # <a name="windows-sockets-deriving-from-socket-classes"></a>Windows Yuvaları: Yuva Sınıflarından Türetme
 Bu makalede kendi sınıfı bir yuva sınıflarından türetme tarafından kazanmadan işlevselliği bazıları açıklanmaktadır.  
@@ -30,7 +30,7 @@ Bu makalede kendi sınıfı bir yuva sınıflarından türetme tarafından kazan
   
  Ayrıca, sınıf `CSocket` sağlayan [OnMessagePending](../mfc/reference/csocket-class.md#onmessagepending) üye işlevi (Gelişmiş geçersiz kılınabilir). Yuva Windows tabanlı iletileri Pompalama sırada MFC bu işlevi çağırır. Geçersiz kılabilirsiniz `OnMessagePending` belirli iletileri Windows'dan aramak ve bunlara yanıt vermek için.  
   
- Varsayılan sürümü `OnMessagePending` sınıfında sağlanan `CSocket` ileti sırası için inceler `WM_PAINT` bir engelleme çağrı tamamlanması beklenirken iletileri. Görüntü kalitesini artırmak için boyama iletileri gönderir. Yararlı bir şeyi yapmanın yanı sıra, bu işlevi geçersiz kılabilir bir yolu kendiniz gösterilmektedir. Başka bir örnek olarak kullanmayı `OnMessagePending` aşağıdaki görev için. Bir ağ işlemi tamamlamak beklenirken bir kalıcı olmayan iletişim kutusu görüntüler varsayalım. İletişim kutusu kullanıcının uzun sürmesine engelleme işlemleri iptal etmek için kullanabileceği bir iptal düğmesi içerir. `OnMessagePending` Geçersiz kılma için bu kalıcı olmayan iletişim kutusunu ilgili iletileri pompa.  
+ Varsayılan sürümü `OnMessagePending` sınıfında sağlanan `CSocket` bir engelleme çağrı tamamlanması beklenirken WM_PAINT iletileri için ileti sırası inceler. Görüntü kalitesini artırmak için boyama iletileri gönderir. Yararlı bir şeyi yapmanın yanı sıra, bu işlevi geçersiz kılabilir bir yolu kendiniz gösterilmektedir. Başka bir örnek olarak kullanmayı `OnMessagePending` aşağıdaki görev için. Bir ağ işlemi tamamlamak beklenirken bir kalıcı olmayan iletişim kutusu görüntüler varsayalım. İletişim kutusu kullanıcının uzun sürmesine engelleme işlemleri iptal etmek için kullanabileceği bir iptal düğmesi içerir. `OnMessagePending` Geçersiz kılma için bu kalıcı olmayan iletişim kutusunu ilgili iletileri pompa.  
   
  İçinde `OnMessagePending` geçersiz kılma, ya da dönüş **TRUE** veya return temel sınıf sürümü çağrısından `OnMessagePending`. Hala istediğiniz işlerini gerçekleştirirse temel sınıf sürüm çağırın.  
   
