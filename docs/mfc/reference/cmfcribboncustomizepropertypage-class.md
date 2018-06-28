@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b6c5501159cfdb46107b4fef34637195d52f465
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 542c34fc02eca1f090072f49b9688d3edd4d78e6
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368013"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040681"
 ---
 # <a name="cmfcribboncustomizepropertypage-class"></a>CMFCRibbonCustomizePropertyPage sınıfı
 Özel bir sayfa için uygulayan **Özelleştir** Şerit tabanlı uygulamalarda iletişim kutusu.  
@@ -98,11 +98,11 @@ void AddCustomCategory(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `lpszName`|Özel kategori adı belirtir.|  
-|[in] `lstIDS`|Özel kategoride gösterilecek Şerit komut kimlikleri içeriyor.|  
+|[in] *lpszName*|Özel kategori adı belirtir.|  
+|[in] *lstIDS*|Özel kategoride gösterilecek Şerit komut kimlikleri içeriyor.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem adlı bir kategori ekler `lpszName` için **komutları** birleşik giriş kutusu. Komutları kullanıcı kategorisini seçtiğinde, belirtilen `lstIDS` komutu listede görüntülenir.  
+ Bu yöntem adlı bir kategori ekler *lpszName* için **komutları** birleşik giriş kutusu. Komutları kullanıcı kategorisini seçtiğinde, belirtilen *lstIDS* komutu listede görüntülenir.  
   
 ##  <a name="cmfcribboncustomizepropertypage"></a>  CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage  
  Oluşturan bir `CMFCRibbonCustomizePropertyPage` nesnesi.  
@@ -112,7 +112,7 @@ CMFCRibbonCustomizePropertyPage(CMFCRibbonBar* pRibbonBar = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pRibbonBar`  
+ [in] *pRibbonBar*  
  Kendisi için bir Şerit denetimi için bir işaretçi özelleştirmek için seçenekleri.  
   
 ##  <a name="onok"></a>  CMFCRibbonCustomizePropertyPage::OnOK  

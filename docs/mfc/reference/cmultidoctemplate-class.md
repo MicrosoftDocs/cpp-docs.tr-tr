@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b53228b6983c0293eb288cd0f38669d1b5db928
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7c09234cbf41201df14aec4993174e6313c6a7d1
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371588"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040840"
 ---
 # <a name="cmultidoctemplate-class"></a>CMultiDocTemplate sınıfı
 Birden çok belge arabirimi (MDI) uygulayan bir belge şablonu tanımlar.  
@@ -85,7 +85,7 @@ CMultiDocTemplate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDResource`  
+ *nIDResource*  
  Belge türü ile kullanılan kaynakları Kimliğini belirtir. Bu menü, simge, Hızlandırıcı tablosu ve dize kaynaklarını içerebilir.  
   
  En çok yedi alt dizeler '\n' karakteriyle ayrılmış dize kaynağını oluşur (ancak, sonunda '\n' karakterler gerekli değildir; bir alt dizesi dahil edilmezse '\n' karakteri yer tutucu gerekli); Bu alt dizeler belge türü açıklanmaktadır. Alt dizeler hakkında daha fazla bilgi için bkz: [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). Bu dize kaynak uygulamanın kaynak dosyası bulunamadı. Örneğin:  
@@ -104,13 +104,13 @@ CMultiDocTemplate(
   
  Bu kaynak türleri hakkında daha fazla bilgi için bkz: [kaynak düzenleyicileri](../../windows/resource-editors.md).  
   
- `pDocClass`  
- İşaret `CRuntimeClass` belge sınıfın nesnesi. Bu sınıf, bir **CDocument**-türetilmiş sınıf belgelerinizi temsil etmek için tanımlayın.  
+ *pDocClass*  
+ İşaret `CRuntimeClass` belge sınıfın nesnesi. Bu sınıf, bir `CDocument`-türetilmiş sınıf belgelerinizi temsil etmek için tanımlayın.  
   
- `pFrameClass`  
+ *pFrameClass*  
  İşaret `CRuntimeClass` çerçeve penceresi sınıfın nesnesi. Bu sınıf olabilir bir `CMDIChildWnd`-türetilmiş sınıf veya olabilir `CMDIChildWnd` kendisi, belge çerçeve pencereleri için varsayılan davranış istiyorsanız.  
   
- `pViewClass`  
+ *pViewClass*  
  İşaret `CRuntimeClass` görünüm sınıfın nesnesi. Bu sınıf, bir `CView`-türetilmiş sınıf belgelerinizi görüntülenecek tanımlayın.  
   
 ### <a name="remarks"></a>Açıklamalar  

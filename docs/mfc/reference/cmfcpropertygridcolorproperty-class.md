@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de336692a821ba374996fac9ee7d282d2990bd08
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a9b1728958d8560362f9b330c3ba570e933d824d
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368000"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040814"
 ---
 # <a name="cmfcpropertygridcolorproperty-class"></a>CMFCPropertyGridColorProperty sınıfı
 `CMFCPropertyGridColorProperty` Sınıfı, bir renk seçimi iletişim kutusunu açar bir özelliği liste denetim öğesi destekler.  
@@ -103,19 +103,19 @@ CMFCPropertyGridColorProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `strName`  
+ [in] *strName*  
  Özelliğin adı.  
   
- [in] `color`  
+ [in] *rengi*  
  Özelliğin renk değeri.  
   
- [in] `pPalette`  
+ [in] *pPalette*  
  Renk paletini işaretçi. Varsayılan değer `NULL` şeklindedir.  
   
- [in] `lpszDescr`  
+ [in] *lpszDescr*  
  Özellik açıklaması. Varsayılan değer `NULL` şeklindedir.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Bir tamsayı ya da özelliği ile ilişkili diğer veri için bir işaretçi gibi uygulamaya özgü verileri. Varsayılan değer 0’dır.  
   
 ##  <a name="enableautomaticbutton"></a>  CMFCPropertyGridColorProperty::EnableAutomaticButton  
@@ -129,13 +129,13 @@ void EnableAutomaticButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  Otomatik düğmesinin etiket metni.  
   
- [in] `colorAutomatic`  
+ [in] *colorAutomatic*  
  Otomatik (varsayılan) renk RGB renk değeri.  
   
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` Otomatik düğmesini etkinleştirmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -151,13 +151,13 @@ void EnableOtherButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  Diğer düğmesinin etiket metni.  
   
- [in] `bAltColorDlg`  
+ [in] *bAltColorDlg*  
  `TRUE` Görüntülenecek `CMFCColorDialog` iletişim kutusu; `FALSE` standart renk seçimi iletişim kutusunu görüntüleyin. Varsayılan değer `TRUE` şeklindedir.  
   
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` diğer düğmesini görüntülemek için; Aksi takdirde `FALSE`.  Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -182,7 +182,7 @@ void SetColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `color`  
+ [in] *rengi*  
  RGB renk değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -195,7 +195,7 @@ void SetColumnsNumber(int nColumnsNumber);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nColumnsNumber`  
+ [in] *nColumnsNumber*  
  Renk özellik kılavuzunda sütun tercih edilen sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -209,7 +209,7 @@ virtual void SetOriginalValue(const COleVariant& varValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `varValue`  
+ [in] *varValue*  
  Bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  

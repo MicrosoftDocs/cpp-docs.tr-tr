@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 233f37fc0ab31afcd8ba112677af8cd144d01c2a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bcddf0f1848bdd75714bd5b931dcf8520e68cf8c
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370174"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041254"
 ---
 # <a name="cmfcribbonundobutton-class"></a>CMFCRibbonUndoButton sınıfı
 `CMFCRibbonUndoButton` Sınıfı en son kullanıcı komutlarını içeren bir açılan liste düğmesi uygular. Kullanıcılar, bir veya daha fazla en son komut Yinele ya da bunları geri almak için aşağı açılan listeden seçebilirsiniz.  
@@ -89,7 +89,7 @@ void AddUndoAction(LPCTSTR lpszLabel);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  Aşağı açılan liste görünümünde görüntülenen eylem etiketi.  
   
 ##  <a name="cleanupundolist"></a>  CMFCRibbonUndoButton::CleanUpUndoList  
@@ -117,19 +117,19 @@ CMFCRibbonUndoButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Komut tanımlayıcısını belirtir.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Düğme metni etiketini belirtir.  
   
- [in] `nSmallImageIndex`  
+ [in] *nSmallImageIndex*  
  Üst nesne düğmenin küçük görüntü için görüntü listesi içindeki sıfır tabanlı dizin.  
   
- [in] `nLargeImageIndex`  
+ [in] *nLargeImageIndex*  
  Üst nesne için görüntü listesi içindeki sıfır tabanlı dizin düğmenin büyük görüntünün.  
   
- [in] `hIcon`  
+ [in] *hIcon*  
  Düğmenin resim olarak kullanabileceğiniz bir simge için bir tanıtıcı.  
   
 ##  <a name="getactionnumber"></a>  CMFCRibbonUndoButton::GetActionNumber  

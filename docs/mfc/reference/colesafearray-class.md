@@ -70,12 +70,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e21cecc00c9aab170c79247bced635783541be48
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b85c64837f9bc7a0c8c1873f434855d77c01fb1b
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376883"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041639"
 ---
 # <a name="colesafearray-class"></a>COleSafeArray sınıfı
 Rastgele tür ve boyut dizilerle çalışmaya yönelik bir sınıf.  
@@ -154,7 +154,7 @@ void AccessData(void** ppvData);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ppvData`  
+ *ppvData*  
  Dizi veri için bir işaretçi bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -181,7 +181,7 @@ void AllocDescriptor(DWORD dwDims);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDims`  
+ *dwDims*  
  Güvenli dizi boyutları sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -237,23 +237,23 @@ COleSafeArray(const COleVariant& varSrc);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `saSrc`  
+ *saSrc*  
  Var olan `COleSafeArray` nesne veya **SAFEARRAY** yeni içine kopyalanacak `COleSafeArray` nesnesi.  
   
- `vtSrc`  
+ *vtSrc*  
  **VARTYPE** yeni `COleSafeArray` nesnesi.  
   
- `psaSrc`  
+ *psaSrc*  
  Bir işaretçi bir **SAFEARRAY** yeni içine kopyalanacak `COleSafeArray` nesnesi.  
   
  *varSrc*  
  Var olan **değişken** veya `COleVariant` yeni içine kopyalanacak nesne `COleSafeArray` nesne.  
   
- `pSrc`  
+ *pSrc*  
  Bir işaretçi bir **değişken** yeni içine kopyalanacak nesne `COleSafeArray` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tüm bu oluşturucular Yeni Oluştur `COleSafeArray` nesneleri. Hiçbir parametre boş ise `COleSafeArray` nesnesi oluşturulur ( `VT_EMPTY`). Varsa `COleSafeArray` diğerinden kopyalanır, dizi [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) örtük olarak bilinen (bir `COleSafeArray`, `COleVariant`, veya **değişken**), **VARTYPE** , Kaynak dizi korunur ve belirtilmemesi. Varsa `COleSafeArray` diğerinden kopyalanır, dizi **VARTYPE** bilinmiyor ( **SAFEARRAY**), **VARTYPE** belirtilmelidir `vtSrc` parametresi.  
+ Tüm bu oluşturucular Yeni Oluştur `COleSafeArray` nesneleri. Hiçbir parametre boş ise `COleSafeArray` nesnesi oluşturulur ( `VT_EMPTY`). Varsa `COleSafeArray` diğerinden kopyalanır, dizi [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) örtük olarak bilinen (bir `COleSafeArray`, `COleVariant`, veya **değişken**), **VARTYPE** , Kaynak dizi korunur ve belirtilmemesi. Varsa `COleSafeArray` diğerinden kopyalanır, dizi **VARTYPE** bilinmiyor ( **SAFEARRAY**), **VARTYPE** belirtilmelidir *vtSrc* parametresi.  
   
  Hata üzerinde işlevi oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) veya [COleException](../../mfc/reference/coleexception-class.md).  
   
@@ -288,10 +288,10 @@ void Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `vtSrc`  
- Dizi temel türü (diğer bir deyişle, **VARTYPE** dizinin her öğesinin). **VARTYPE** VARIANT türleri bir kısmı için kısıtlanmış. Ne **VT_ARRAY** veya **VT_BYREF** bayrak ayarlanabilir. `VT_EMPTY` ve **VT_NULL** dizisi için geçerli temel türleri değildir. Tüm diğer yasal türleridir.  
+ *vtSrc*  
+ Dizi temel türü (diğer bir deyişle, **VARTYPE** dizinin her öğesinin). **VARTYPE** VARIANT türleri bir kısmı için kısıtlanmış. Ne **VT_ARRAY** veya **VT_BYREF** bayrak ayarlanabilir. **VT_EMPTY** ve **VT_NULL** dizisi için geçerli temel türleri değildir. Tüm diğer yasal türleridir.  
   
- `dwDims`  
+ *dwDims*  
  Dizi boyutları sayısı. Dizi ile oluşturulduktan sonra bu değiştirilebilir [Redim](#redim).  
   
  *rgElements*  
@@ -318,20 +318,20 @@ void CreateOneDim(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `vtSrc`  
+ *vtSrc*  
  Dizi temel türü (diğer bir deyişle, **VARTYPE** dizinin her öğesinin).  
   
- `dwElements`  
+ *dwElements*  
  Dizideki öğelerin sayısı. Dizi ile oluşturulduktan sonra bu değiştirilebilir [ResizeOneDim](#resizeonedim).  
   
- `pvSrcData`  
+ *pvSrcData*  
  Diziye kopyalamak için verileri işaretçi.  
   
  *nLBound*  
  Dizinin alt sınır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşlev ayırır ve verileri, belirtilen veri kopyalama dizi başlatır işaretçinin `pvSrcData` değil **NULL**.  
+ İşlev ayırır ve verileri, belirtilen veri kopyalama dizi başlatır işaretçinin *pvSrcData* değil **NULL**.  
   
  Hata üzerinde işlevi oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md).  
   
@@ -394,7 +394,7 @@ void GetByteArray(CByteArray& bytes);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bytes`  
+ *Bayt*  
  Bir başvuru bir [CLongBinary](../../mfc/reference/cbytearray-class.md) nesnesi.  
   
 ##  <a name="getdim"></a>  COleSafeArray::GetDim  
@@ -420,14 +420,14 @@ void GetElement(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rgIndices`  
+ *rgIndices*  
  Bir dizinin her boyut için dizin dizi işaretçi.  
   
- `pvData`  
+ *pvData*  
  Dizinin öğesi yerleştirileceği konuma işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev otomatik olarak windows işlevlerini çağıran `SafeArrayLock` ve `SafeArrayUnlock` önce ve sonra öğe alınıyor. Veri öğesi bir dize, nesne veya değişken işlevi öğesi doğru şekilde kopyalar. Parametre `pvData` büyük bir öğe içermesi için yeterli arabellek işaret etmelidir.  
+ Bu işlev otomatik olarak windows işlevlerini çağıran `SafeArrayLock` ve `SafeArrayUnlock` önce ve sonra öğe alınıyor. Veri öğesi bir dize, nesne veya değişken işlevi öğesi doğru şekilde kopyalar. Parametre *pvData* büyük bir öğe içermesi için yeterli arabellek işaret etmelidir.  
   
  Hata üzerinde işlevi oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) veya [COleException](../../mfc/reference/coleexception-class.md).  
   
@@ -454,7 +454,7 @@ void GetLBound(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDim`  
+ *dwDim*  
  Dizi boyutu alt sınırı almak istediğiniz.  
   
  *pLBound*  
@@ -489,7 +489,7 @@ void GetUBound(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDim`  
+ *dwDim*  
  Dizi boyutu üst sınırı almak istediğiniz.  
   
  *pUBound*  
@@ -581,11 +581,11 @@ void PtrOfIndex (uzun * rgIndices,
 ```  
   
 ### Parameters  
- `rgIndices`  
+ *rgIndices*  
  An array of index values that identify an element of the array. All indexes for the element must be specified.  
   
- `ppvData`  
- On return, pointer to the element identified by the values in `rgIndices`.  
+ *ppvData*  
+ On return, pointer to the element identified by the values in *rgIndices*.  
   
 ##  <a name="putelement"></a>  COleSafeArray::PutElement  
  Assigns a single element into the array.  
@@ -596,11 +596,11 @@ void PutElement (uzun * rgIndices,
 ```  
   
 ### Parameters  
- `rgIndices`  
+ *rgIndices*  
  Pointer to an array of indexes for each dimension of the array.  
   
- `pvData`  
- Pointer to the data to assign to the array. **VT_DISPATCH**, **VT_UNKNOWN**, and `VT_BSTR` variant types are pointers and do not require another level of indirection.  
+ *pvData*  
+ Pointer to the data to assign to the array. **VT_DISPATCH**, **VT_UNKNOWN**, and **VT_BSTR** variant types are pointers and do not require another level of indirection.  
   
 ### Remarks  
  This function automatically calls the Windows functions [SafeArrayLock](https://msdn.microsoft.com/library/windows/desktop/ms221492.aspx) and [SafeArrayUnlock](https://msdn.microsoft.com/library/windows/desktop/ms221246.aspx) before and after assigning the element. If the data element is a string, object, or variant, the function copies it correctly, and if the existing element is a string, object, or variant, it is cleared correctly.  
@@ -634,7 +634,7 @@ void ResizeOneDim (DWORD dwElements);
 ```  
   
 ### Parameters  
- `dwElements`  
+ *dwElements*  
  Number of elements in the one-dimensional safe array.  
   
 ### Remarks  

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 377708108f96a42d23dcf3aa5e8214d7bf9ffe5c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8f466864e694f332f70d9f5932a528917a000974
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366928"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041292"
 ---
 # <a name="cgopherlocator-class"></a>CGopherLocator sınıfı
 Bir gopher "Bulucusu" bir gopher sunucudan alır, Bulucu'nın türü belirler ve Bulucu için kullanılabilir hale getirir [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md).  
@@ -84,7 +84,7 @@ CGopherLocator(const CGopherLocator& ref);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ref`  
+ *ref*  
  Bir sabit başvuru `CGopherLocator` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  

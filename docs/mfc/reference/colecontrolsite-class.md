@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4dcb17c2650bf8b56702241a0ab4e77a3e2fc48
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 61544026f559e0c45cbd81735e76203a088d2d6b
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377816"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040879"
 ---
 # <a name="colecontrolsite-class"></a>COleControlSite sınıfı
 Özel istemci-tarafı denetim arabirimler için destek sağlar.  
@@ -205,7 +205,7 @@ class COleControlSite : public CCmdTarget
 |[COleControlSite::m_rect](#m_rect)|Denetim site boyutları.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu destek olarak katıştırılmış bir ActiveX denetimini konumu ve görüntüleneceği site, takma adı, kullanıcı arabirimi, ortam özelliklerini ve kapsayıcısı tarafından sağlanan diğer kaynakları hakkında bilgi edinir birincil anlamına gelir. `COleControlSite` tam olarak uygulayan [IOleControlSite](http://msdn.microsoft.com/library/windows/desktop/ms688502), [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586), [IOleClientSite](http://msdn.microsoft.com/library/windows/desktop/ms693706), [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638),  **IBoundObjectSite**, **INotifyDBEvents**, [IRowsetNotify](../../data/oledb/irowsetnotifyimpl-class.md) arabirimleri. Ayrıca, (ortam özelliklerine ve olay havuzlarını için destek sağlayan) IDispatch arabirimi da uygulanır.  
+ Bu destek olarak katıştırılmış bir ActiveX denetimini konumu ve görüntüleneceği site, takma adı, kullanıcı arabirimi, ortam özelliklerini ve kapsayıcısı tarafından sağlanan diğer kaynakları hakkında bilgi edinir birincil anlamına gelir. `COleControlSite` tam olarak uygulayan [IOleControlSite](http://msdn.microsoft.com/library/windows/desktop/ms688502), [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586), [IOleClientSite](http://msdn.microsoft.com/library/windows/desktop/ms693706), [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638), `IBoundObjectSite`, `INotifyDBEvents`, [IRowsetNotify](../../data/oledb/irowsetnotifyimpl-class.md) arabirimleri. Ayrıca, (ortam özelliklerine ve olay havuzlarını için destek sağlayan) IDispatch arabirimi da uygulanır.  
   
  Bir ActiveX denetimini site kullanarak oluşturmak için `COleControlSite`, öğesinden bir sınıf türetin `COleControlSite`. İçinde `CWnd`-türetilmiş bir sınıf (örneğin, iletişim kutusu) kapsayıcısı için geçersiz kılma **CWnd::CreateControlSite** işlevi.  
   
@@ -231,16 +231,16 @@ virtual void BindDefaultProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDispID`  
+ *dwDispID*  
  Belirtir **DISPID** bir veri kaynağı denetimine bağlı bir veri bağlama denetimi bir özellik.  
   
- `vtProp`  
- Bağlanacak özelliğin türünü belirtir; örneğin, `VT_BSTR`, **VT_VARIANT**ve benzeri.  
+ *vtProp*  
+ Bağlanacak özelliğin türünü belirtir; örneğin, **VT_BSTR**, **VT_VARIANT**ve benzeri.  
   
- `szFieldName`  
+ *szFieldName*  
  Veri kaynağı denetimi özelliği bağlanacak tarafından sağlanan imleç sütunun adını belirtir.  
   
- `pDSCWnd`  
+ *pDSCWnd*  
  Bir işaretçi `CWnd`-olduğu özelliği bağlı veri kaynağı denetimini barındıran türetilen nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -259,7 +259,7 @@ virtual void BindProperty(
  *dwDispId*  
  Belirtir **DISPID** bir veri kaynağı denetimine bağlı bir veri bağlama denetimi bir özellik.  
   
- `pWndDSC`  
+ *pWndDSC*  
  Bir işaretçi `CWnd`-olduğu özelliği bağlı veri kaynağı denetimini barındıran türetilen nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -273,7 +273,7 @@ explicit COleControlSite(COleControlContainer* pCtrlCont);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pCtrlCont`  
+ *pCtrlCont*  
  (Bu ActiveX denetimini barındıran pencereyi temsil eder) denetimin kapsayıcı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -309,50 +309,50 @@ virtual HRESULT CreateControl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWndCtrl`  
+ *pWndCtrl*  
  Denetim temsil eden pencere nesnesi için bir işaretçi.  
   
- `clsid`  
+ *CLSID*  
  Denetimin benzersiz sınıf kimliği.  
   
- `lpszWindowName`  
+ *lpszWindowName*  
  Denetimde görüntülenecek metni için bir işaretçi. Winodw's resim yazısını veya metin özelliğinin değeri (varsa) ayarlar.  
   
- `dwStyle`  
+ *dwStyle*  
  Windows stilleri. Kullanılabilir stiller altında listelenen **açıklamalar** bölümü.  
   
- `rect`  
+ *Rect*  
  Denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir `CRect` nesnesi veya bir `RECT` yapısı.  
   
- `nID`  
+ *nID*  
  Denetimin alt pencere kimliğini belirtir.  
   
- `pPersist`  
+ *pPersist*  
  Bir işaretçi bir `CFile` denetimi kalıcı durumunu içeren. Varsayılan değer **NULL**, denetimi kendisini herhangi kalıcı depolama biriminden durumuna geri yüklemeden başlatır olduğunu gösteren. Aksi takdirde **NULL**, bir işaretçi olmalıdır bir `CFile`-türetilmiş bir akış veya bir depolama biçiminde denetimin kalıcı veri içeren nesne. Bu veriler istemcinin önceki bir etkinleştirme kaydedilmiş. `CFile` Diğer verileri içerebilir, ancak çağrısı zaman kalıcı verilerin ilk baytı ayarlamak okuma-yazma işaretçisini olmalıdır `CreateControl`.  
   
- `bStorage`  
- Gösterir olup olmadığını verileri `pPersist` olarak yorumlanıp `IStorage` veya `IStream` veri. Varsa verilerde `pPersist` bir depolama `bStorage` olmalıdır **doğru**. Varsa verilerde `pPersist` bir akışı `bStorage` olmalıdır **FALSE**. Varsayılan değer **FALSE**.  
+ *bStorage*  
+ Gösterir olup olmadığını verileri *pPersist* olarak yorumlanıp `IStorage` veya `IStream` veri. Varsa verilerde *pPersist* bir depolama *bStorage* olmalıdır **doğru**. Varsa verilerde *pPersist* bir akışı *bStorage* olmalıdır **FALSE**. Varsayılan değer **FALSE**.  
   
- `bstrLicKey`  
+ *bstrLicKey*  
  İsteğe bağlı lisans anahtar verileri. Bu veriler, yalnızca bir çalışma zamanı lisans anahtarı gerekli denetimleri oluşturmak için gereklidir. Denetim lisans destekliyorsa, başarılı olması için denetimi oluşturulması için bir lisans anahtarı sağlamanız gerekir. Varsayılan değer **NULL**.  
   
- `ppt`  
- Bir işaretçi bir **noktası** denetimin sol üst köşesinde içeren yapısı. Denetimin boyutunu değeri tarafından belirlenir *psize*. `ppt` Ve *psize* değerler boyutu belirten isteğe bağlı bir yöntem ve opf denetimi getirin.  
+ *ppt*  
+ Bir işaretçi bir **noktası** denetimin sol üst köşesinde içeren yapısı. Denetimin boyutunu değeri tarafından belirlenir *psize*. *Ppt* ve *psize* değerler boyutu belirten isteğe bağlı bir yöntem ve opf denetimi getirin.  
   
  *psize*  
- Bir işaretçi bir **BOYUTU** denetimin boyutunu içeren yapısı. Sol üst köşesindeki değeri tarafından belirlenir `ppt`. `ppt` Ve *psize* değerler boyutu belirten isteğe bağlı bir yöntem ve opf denetimi getirin.  
+ Bir işaretçi bir **BOYUTU** denetimin boyutunu içeren yapısı. Sol üst köşesindeki değeri tarafından belirlenir *ppt*. *Ppt* ve *psize* değerler boyutu belirten isteğe bağlı bir yöntem ve opf denetimi getirin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yalnızca bir alt kümesini Windows `dwStyle` bayrakları tarafından desteklenen `CreateControl`:  
+ Yalnızca bir alt kümesini Windows *dwStyle* bayrakları tarafından desteklenen `CreateControl`:  
   
 - **Ws_vısıble** başlangıçta görünür bir pencere oluşturur. Denetim hemen, normal windows gibi görünür olmasını istiyorsanız gereklidir.  
   
 - **Ws_dısabled** başlangıçta devre dışı bir pencere oluşturur. Devre dışı bırakılan penceresinde kullanıcıdan giriş alamaz. Denetim etkin özelliğine sahipse ayarlanabilir.  
   
-- `WS_BORDER` Bir pencere ince çizgi kenarlık ile oluşturur. Denetim kenarlık stili özelliğine sahipse ayarlanabilir.  
+- **WS_BORDER** ince çizgi kenarlık ile bir pencere oluşturur. Denetim kenarlık stili özelliğine sahipse ayarlanabilir.  
   
 - **WS_GROUP** denetimleri grubunun ilk denetim belirtir. Kullanıcı klavye odağını grubundaki bir denetimden sonraki yön tuşlarını kullanarak değiştirebilirsiniz. İle tanımlanmış tüm denetimler **WS_GROUP** ilk denetim ait sonra aynı gruba stili. Sonraki denetimiyle **WS_GROUP** Stil grubu sona erer ve sonraki grubu başlatır.  
   
@@ -383,7 +383,7 @@ virtual HRESULT DoVerb(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nVerb`  
+ *nVerb*  
  Yürütülecek fiili belirtir. Aşağıdakilerden birini içerebilir:  
   
 |Değer|Açıklama|Simgesi|  
@@ -394,10 +394,10 @@ virtual HRESULT DoVerb(
 |-2|Ayrı bir pencerede öğesini düzenler.|`OLEIVERB_OPEN`|  
 |-3|Nesne gizler.|`OLEIVERB_HIDE`|  
 |-4|Bir denetim yerinde etkinleştirir.|`OLEIVERB_UIACTIVATE`|  
-|-5|Bir denetim yerinde, ek kullanıcı arabirimi öğeleri olmadan etkinleştirir.|**OLEIVERB_INPLACEACTIVATE**|  
-|-7|Denetimin özelliklerini görüntüleyin.|**OLEIVERB_PROPERTIES**|  
+|-5|Bir denetim yerinde, ek kullanıcı arabirimi öğeleri olmadan etkinleştirir.|`OLEIVERB_INPLACEACTIVATE`|  
+|-7|Denetimin özelliklerini görüntüleyin.|`OLEIVERB_PROPERTIES`|  
   
- `lpMsg`  
+ *lpMsg*  
  İşaretçi etkinleştirilmesi için öğeyi neden iletisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -426,7 +426,7 @@ virtual BOOL EnableWindow(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bEnable`  
+ *bSistemlerde*  
  Etkinleştirmek veya devre dışı penceresi belirtir: **TRUE** penceresi giriş, aksi takdirde etkinleştirilecek ise **FALSE**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -440,11 +440,11 @@ void FreezeEvents(BOOL bFreeze);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bFreeze`  
+ *bFreeze*  
  Denetim site olayları kabul etmeyi istediği olup olmadığını belirtir. Denetim olayları kabul etmiyor, sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bFreeze` olan **doğru**, Denetim site fring olayları durdurmak için Denetim ister. Varsa `bFreeze` olan **yanlış**, Denetim site denetim olaylarını tetikleme devam etmek ister.  
+ Varsa *bFreeze* olan **doğru**, Denetim site fring olayları durdurmak için Denetim ister. Varsa *bFreeze* olan **yanlış**, Denetim site denetim olaylarını tetikleme devam etmek ister.  
   
 > [!NOTE]
 >  Denetim olayları denetim site tarafından isteniyorsa tetikleme durdurmak için gerekli değildir. Tetikleme devam edebilirsiniz ancak tüm sonraki olaylarda denetim site tarafından göz ardı edilir.  
@@ -493,11 +493,11 @@ BOOL GetEventIID(IID* piid);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `piid`  
+ *piid*  
  Bir işaretçi bir arabirim kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, sıfır olmayan Aksi halde 0. Başarılı olursa, `piid` denetimin varsayılan olay arabirimi arabirimi Kimliğini içerir.  
+ Başarılı olursa, sıfır olmayan Aksi halde 0. Başarılı olursa, *piid* denetimin varsayılan olay arabirimi arabirimi Kimliğini içerir.  
   
 ##  <a name="getexstyle"></a>  COleControlSite::GetExStyle  
  Genişletilmiş pencere stilleri alır.  
@@ -513,7 +513,7 @@ virtual DWORD GetExStyle() const;
  Normal stilleri almak için arama [COleControlSite::GetStyle](#getstyle).  
   
 ##  <a name="getproperty"></a>  COleControlSite::GetProperty  
- Tarafından belirtilen denetim özelliğini alır `dwDispID`.  
+ Tarafından belirtilen denetim özelliğini alır *dwDispID*.  
   
 ```  
 virtual void GetProperty(
@@ -523,17 +523,17 @@ virtual void GetProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDispID`  
+ *dwDispID*  
  Denetimin varsayılan olarak bulunan özellik gönderme Kimliğini tanımlar `IDispatch` alınması için arabirim.  
   
- `vtProp`  
+ *vtProp*  
  Alınacak özelliğin türünü belirtir. Olası değerler için için Açıklamalar bölümüne bakın [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
- `pvProp`  
- Özellik değeri alacak değişkeni adresidir. Tarafından belirtilen tür eşleşmelidir `vtProp`.  
+ *pvProp*  
+ Özellik değeri alacak değişkeni adresidir. Tarafından belirtilen tür eşleşmelidir *vtProp*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Aracılığıyla döndürülen değer `pvProp`.  
+ Aracılığıyla döndürülen değer *pvProp*.  
   
 ##  <a name="getstyle"></a>  COleControlSite::GetStyle  
  Denetim site stillerini alır.  
@@ -556,14 +556,14 @@ virtual void GetWindowText(CString& str) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `str`  
+ *str*  
  Bir başvuru bir `CString` denetimin geçerli metni içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Denetim resim yazısı stok özellik destekliyorsa, bu değeri döndürülür. Resim yazısı stok özellik desteklenmiyorsa metin özelliğinin değeri döndürülür.  
   
 ##  <a name="invokehelper"></a>  COleControlSite::InvokeHelper  
- Yöntemi veya özelliği tarafından belirtilen çağırır `dwDispID`, tarafından belirtilen bağlamda `wFlags`.  
+ Yöntemi veya özelliği tarafından belirtilen çağırır *dwDispID*, tarafından belirtilen bağlamda *wFlags*.  
   
 ```  
 virtual void AFX_CDECL InvokeHelper(
@@ -575,31 +575,31 @@ virtual void AFX_CDECL InvokeHelper(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDispID`  
+ *dwDispID*  
  Özellik veya yöntem, denetimin üzerinde bulunan gönderme Kimliğini tanımlar `IDispatch` çağrılacak arabirimi.  
   
- `wFlags`  
- IDispatch::Invoke çağrısı bağlamında açıklayan bayrakları. Olası için `wFlags` değerler, bakın `IDispatch::Invoke` Windows SDK'sındaki.  
+ *wFlags*  
+ IDispatch::Invoke çağrısı bağlamında açıklayan bayrakları. Olası için *wFlags* değerler, bakın `IDispatch::Invoke` Windows SDK'sındaki.  
   
- `vtRet`  
+ *vtRet*  
  Dönüş değeri türünü belirtir. Olası değerler için için Açıklamalar bölümüne bakın [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
- `pvRet`  
- Özellik değeri alır veya dönüş değeri değişken adresidir. Tarafından belirtilen tür eşleşmelidir `vtRet`.  
+ *pvRet*  
+ Özellik değeri alır veya dönüş değeri değişken adresidir. Tarafından belirtilen tür eşleşmelidir *vtRet*.  
   
- `pbParamInfo`  
- Aşağıdaki parametre türlerini belirtme bayt null ile sonlandırılmış dizeye işaretçi `pbParamInfo`. Olası değerler için için Açıklamalar bölümüne bakın [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
+ *pbParamInfo*  
+ Aşağıdaki parametre türlerini belirtme bayt null ile sonlandırılmış dizeye işaretçi *pbParamInfo*. Olası değerler için için Açıklamalar bölümüne bakın [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
  *...*  
- Belirtilen türlerinin parametrelerin değişken listesi `pbParamInfo`.  
+ Belirtilen türlerinin parametrelerin değişken listesi *pbParamInfo*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `pbParamInfo` Parametresi, yöntemi veya özelliği için geçirilen parametre türlerini belirtir. Bağımsız değişken listesi... sözdizimi bildiriminde temsil edilir.  
+ *PbParamInfo* parametresi, yöntemi veya özelliği için geçirilen parametre türlerini belirtir. Bağımsız değişken listesi... sözdizimi bildiriminde temsil edilir.  
   
- Bu işlev parametreleri dönüştürür **VARIANTARG** değerleri sonra çağırır **IDispatch::Invoke** denetimindeki yöntemi. Varsa çağrısı **IDispatch::Invoke** başarısız olursa, bu işlev throw bir özel durum. Durum kodu tarafından döndürülürse **IDispatch::Invoke** olan `DISP_E_EXCEPTION`, bu işlev oluşturur bir **COleDispatchException** onu oluşturur nesnesi, aksi takdirde bir `COleException`.  
+ Bu işlev parametreleri dönüştürür **VARIANTARG** değerleri sonra çağırır `IDispatch::Invoke` denetimindeki yöntemi. Varsa çağrısı `IDispatch::Invoke` başarısız olursa, bu işlev throw bir özel durum. Durum kodu tarafından döndürülürse `IDispatch::Invoke` olan `DISP_E_EXCEPTION`, bu işlev oluşturur bir `COleDispatchException` onu oluşturur nesnesi, aksi takdirde bir `COleException`.  
   
 ##  <a name="invokehelperv"></a>  COleControlSite::InvokeHelperV  
- Yöntemi veya özelliği tarafından belirtilen çağırır `dwDispID`, tarafından belirtilen bağlamda `wFlags`.  
+ Yöntemi veya özelliği tarafından belirtilen çağırır *dwDispID*, tarafından belirtilen bağlamda *wFlags*.  
   
 ```  
 virtual void InvokeHelperV(
@@ -612,26 +612,26 @@ virtual void InvokeHelperV(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDispID`  
+ *dwDispID*  
  Özellik veya yöntem, denetimin üzerinde bulunan gönderme Kimliğini tanımlar `IDispatch` çağrılacak arabirimi.  
   
- `wFlags`  
+ *wFlags*  
  IDispatch::Invoke çağrısı bağlamında açıklayan bayrakları.  
   
- `vtRet`  
+ *vtRet*  
  Dönüş değeri türünü belirtir. Olası değerler için için Açıklamalar bölümüne bakın [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
- `pvRet`  
- Özellik değeri alır veya dönüş değeri değişken adresidir. Tarafından belirtilen tür eşleşmelidir `vtRet`.  
+ *pvRet*  
+ Özellik değeri alır veya dönüş değeri değişken adresidir. Tarafından belirtilen tür eşleşmelidir *vtRet*.  
   
- `pbParamInfo`  
- Aşağıdaki parametre türlerini belirtme bayt null ile sonlandırılmış dizeye işaretçi `pbParamInfo`. Olası değerler için için Açıklamalar bölümüne bakın [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
+ *pbParamInfo*  
+ Aşağıdaki parametre türlerini belirtme bayt null ile sonlandırılmış dizeye işaretçi *pbParamInfo*. Olası değerler için için Açıklamalar bölümüne bakın [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
- `argList`  
+ *argList*  
  Değişken bağımsız değişken listesi işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `pbParamInfo` Parametresi, yöntemi veya özelliği için geçirilen parametre türlerini belirtir. Ek parametreler için yöntemi veya özelliği çağrılan kullanılarak geçirilebilir *va_list* parametresi.  
+ *PbParamInfo* parametresi, yöntemi veya özelliği için geçirilen parametre türlerini belirtir. Ek parametreler için yöntemi veya özelliği çağrılan kullanılarak geçirilebilir *va_list* parametresi.  
   
  Genellikle, bu işlev tarafından çağrılır `COleControlSite::InvokeHelper`.  
   
@@ -790,13 +790,13 @@ virtual BOOL ModifyStyle(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwRemove`  
+ *dwRemove*  
  Geçerli pencere stilleri kaldırılacak stilleri.  
   
- `dwAdd`  
+ *dwAdd*  
  Geçerli pencere stilleri eklenecek stilleri.  
   
- `nFlags`  
+ *nFlags*  
  Bayrakları konumlandırma penceresini açın. Olası değerler listesi için bkz: [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK'sındaki işlevi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -807,7 +807,7 @@ virtual BOOL ModifyStyle(
   
  Pencere stilleri denetiminin değiştirir. Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sı işlevinde.  
   
- Varsa `nFlags` sıfır olmayan, olan `ModifyStyle` Win32 işlev çağrılarını `SetWindowPos`ve pencere birleştirerek yeniden çizer `nFlags` aşağıdaki dört bayrağı ile:  
+ Varsa *nFlags* sıfır olmayan, olan `ModifyStyle` Win32 işlev çağrılarını `SetWindowPos`ve pencere birleştirerek yeniden çizer *nFlags* aşağıdaki dört bayrağı ile:  
   
 - `SWP_NOSIZE` Geçerli boyutu korur.  
   
@@ -830,13 +830,13 @@ virtual BOOL ModifyStyleEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwRemove`  
+ *dwRemove*  
  Geçerli pencere stilleri kaldırılacak genişletilmiş stili.  
   
- `dwAdd`  
+ *dwAdd*  
  Geçerli pencere stilleri eklenecek genişletilmiş stili.  
   
- `nFlags`  
+ *nFlags*  
  Bayrakları konumlandırma penceresini açın. Olası değerler listesi için bkz: [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK'sındaki işlevi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -847,7 +847,7 @@ virtual BOOL ModifyStyleEx(
   
  Denetim site nesnesi stillerini genişletilmiş penceresini değiştirir. Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sı işlevinde.  
   
- Varsa `nFlags` sıfır olmayan, olan `ModifyStyleEx` Win32 işlev çağrılarını `SetWindowPos`ve pencere birleştirerek yeniden çizer `nFlags` aşağıdaki dört bayrağı ile:  
+ Varsa *nFlags* sıfır olmayan, olan `ModifyStyleEx` Win32 işlev çağrılarını `SetWindowPos`ve pencere birleştirerek yeniden çizer *nFlags* aşağıdaki dört bayrağı ile:  
   
 - `SWP_NOSIZE` Geçerli boyutu korur.  
   
@@ -877,10 +877,10 @@ virtual void MoveWindow(
  *Y*  
  Pencerenin üst kısmında yeni konumu.  
   
- `nWidth`  
+ *nWidth*  
  Pencerenin yeni genişliği  
   
- `nHeight`  
+ *nHeight*  
  Pencerenin yeni yüksekliği.  
   
 ##  <a name="quickactivate"></a>  COleControlSite::QuickActivate  
@@ -899,7 +899,7 @@ virtual BOOL QuickActivate();
  `IPersist*::Load` Ve `IPersist*::InitNew` hızlı etkinleştirme gerçekleştikten sonra yöntemleri'nin çağrılabilir. Denetim bağlantılarından kapsayıcının havuzlarını için hızlı etkinleştirme sırasında oluşturmanız gerekir. Ancak, bu bağlantıları kadar dinamik olmayan `IPersist*::Load` veya `IPersist*::InitNew` çağrıldı.  
   
 ##  <a name="safesetproperty"></a>  COleControlSite::SafeSetProperty  
- Denetim özelliği tarafından belirtilen ayarlar `dwDispID`.  
+ Denetim özelliği tarafından belirtilen ayarlar *dwDispID*.  
   
 ```  
 virtual BOOL AFX_CDECL SafeSetProperty(
@@ -908,14 +908,14 @@ virtual BOOL AFX_CDECL SafeSetProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDispID`  
+ *dwDispID*  
  Özellik veya yöntem, denetimin üzerinde bulunan gönderme Kimliğini tanımlar `IDispatch` ayarlanacak arabirimi.  
   
- `vtProp`  
+ *vtProp*  
  Ayarlanacak özelliği türünü belirtir. Olası değerler için için Açıklamalar bölümüne bakın [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
  *...*  
- Tek bir parametre tarafından belirtilen türde `vtProp`.  
+ Tek bir parametre tarafından belirtilen türde *vtProp*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
@@ -933,7 +933,7 @@ void SetDefaultButton(BOOL bDefault);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bDefault`  
+ *bVarsayılan*  
  Denetimi varsayılan düğme duruma gelir, sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -949,7 +949,7 @@ virtual int SetDlgCtrlID(int nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nID`  
+ *nID*  
  Yeni tanımlayıcı değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -973,7 +973,7 @@ virtual CWnd* SetFocus(LPMSG lpmsg);
  Daha önce odağa sahip penceresi için bir işaretçi.  
   
 ##  <a name="setproperty"></a>  COleControlSite::SetProperty  
- Denetim özelliği tarafından belirtilen ayarlar `dwDispID`.  
+ Denetim özelliği tarafından belirtilen ayarlar *dwDispID*.  
   
 ```  
 virtual void AFX_CDECL SetProperty(
@@ -982,22 +982,22 @@ virtual void AFX_CDECL SetProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDispID`  
+ *dwDispID*  
  Özellik veya yöntem, denetimin üzerinde bulunan gönderme Kimliğini tanımlar `IDispatch` ayarlanacak arabirimi.  
   
- `vtProp`  
+ *vtProp*  
  Ayarlanacak özelliği türünü belirtir. Olası değerler için için Açıklamalar bölümüne bakın [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
  *...*  
- Tek bir parametre tarafından belirtilen türde `vtProp`.  
+ Tek bir parametre tarafından belirtilen türde *vtProp*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `SetProperty` karşılaştığı bir hata, bir özel durum oluşur.  
   
- Özel durum türü özellik veya yöntem ayarlama girişimi dönüş değeri tarafından belirlenir. Dönüş değeri ise `DISP_E_EXCEPTION`, **COleDispatchExcpetion** oluşturulur; Aksi takdirde bir `COleException`.  
+ Özel durum türü özellik veya yöntem ayarlama girişimi dönüş değeri tarafından belirlenir. Dönüş değeri ise `DISP_E_EXCEPTION`, `COleDispatchExcpetion` oluşturulur; Aksi takdirde bir `COleException`.  
   
 ##  <a name="setpropertyv"></a>  COleControlSite::SetPropertyV  
- Denetim özelliği tarafından belirtilen ayarlar `dwDispID`.  
+ Denetim özelliği tarafından belirtilen ayarlar *dwDispID*.  
   
 ```  
 virtual void SetPropertyV(
@@ -1007,19 +1007,19 @@ virtual void SetPropertyV(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDispID`  
+ *dwDispID*  
  Özellik veya yöntem, denetimin üzerinde bulunan gönderme Kimliğini tanımlar `IDispatch` ayarlanacak arabirimi.  
   
- `vtProp`  
+ *vtProp*  
  Ayarlanacak özelliği türünü belirtir. Olası değerler için için Açıklamalar bölümüne bakın [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
- `argList`  
+ *argList*  
  Bağımsız değişken listesiyle işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ek parametreler için yöntemi veya özelliği çağrılan passeed olabilir kullanarak *arg_list* parametresi. Varsa `SetProperty` karşılaştığı bir hata, bir özel durum oluşur.  
   
- Özel durum türü özellik veya yöntem ayarlama girişimi dönüş değeri tarafından belirlenir. Dönüş değeri ise `DISP_E_EXCEPTION`, **COleDispatchExcpetion** oluşturulur; Aksi takdirde bir `COleException`.  
+ Özel durum türü özellik veya yöntem ayarlama girişimi dönüş değeri tarafından belirlenir. Dönüş değeri ise `DISP_E_EXCEPTION`, `COleDispatchExcpetion` oluşturulur; Aksi takdirde bir `COleException`.  
   
 ##  <a name="setwindowpos"></a>  COleControlSite::SetWindowPos  
  Boyut, konum ve denetim site Z düzenini belirler.  
@@ -1035,7 +1035,7 @@ virtual BOOL SetWindowPos(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWndInsertAfter`  
+ *pWndInsertAfter*  
  Penceresi için bir işaretçi.  
   
  *x*  
@@ -1044,13 +1044,13 @@ virtual BOOL SetWindowPos(
  *Y*  
  Pencerenin üst kısmında yeni konumu.  
   
- `cx`  
+ *CX*  
  Pencerenin yeni genişliği  
   
- `cy`  
+ *CY*  
  Pencerenin yeni yüksekliği.  
   
- `nFlags`  
+ *nFlags*  
  Boyutlandırma ve bayrakları konumlandırmasını penceresi belirtir. Olası değerler için için Açıklamalar bölümüne bakın [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1064,7 +1064,7 @@ virtual void SetWindowText(LPCTSTR lpszString);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszString`  
+ *lpszString*  
  Yeni başlık veya denetim metin olarak kullanılacak bir null ile sonlandırılmış dize işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1078,7 +1078,7 @@ virtual BOOL ShowWindow(int nCmdShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCmdShow`  
+ *nCmdShow*  
  Nasıl denetim site gösterilecek belirtir. Aşağıdaki değerlerden biri olmalıdır:  
   
 - **SW_HIDE** bu pencereyi gizler ve başka bir pencere için etkinleştirme geçirir.  

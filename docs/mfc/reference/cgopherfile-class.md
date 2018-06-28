@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98fa4b2a489b8abb3951719dc74e618a054a4025
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 275c35c7654f9a10a83f13482ca6d81b974c0dd6
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366889"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040980"
 ---
 # <a name="cgopherfile-class"></a>CGopherFile sınıfı
 Bulma ve bir gopher sunucusundaki dosyaları okumak için işlevsellik sağlar.  
@@ -46,7 +46,7 @@ class CGopherFile : public CInternetFile
 |[CGopherFile::CGopherFile](#cgopherfile)|Oluşturan bir `CGopherFile` nesnesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Gopher hizmeti, kullanıcıların bu hizmet bilgileri bulmak için çoğunlukla bir menü yönlendirmeli arabirimi gördüğünden veri bir gopher dosyaya yazmak izin vermez. `CGopherFile` Üye işlevleri **yazma**, `WriteString`, ve `Flush` için uygulanmadı `CGopherFile`. Bu işlevler çağrılması bir `CGopherFile` nesnesi döndürür bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
+ Gopher hizmeti, kullanıcıların bu hizmet bilgileri bulmak için çoğunlukla bir menü yönlendirmeli arabirimi gördüğünden veri bir gopher dosyaya yazmak izin vermez. `CGopherFile` Üye işlevleri `Write`, `WriteString`, ve `Flush` için uygulanmadı `CGopherFile`. Bu işlevler çağrılması bir `CGopherFile` nesnesi döndürür bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
   
  Hakkında daha fazla bilgi için `CGopherFile` diğer MFC Internet sınıfları ile works başlıklı makaleye bakın [Internet programlama WinINet ile](../../mfc/win32-internet-extensions-wininet.md).  
   
@@ -83,25 +83,25 @@ CGopherFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hFile`  
+ *Hfıle*  
  İçin bir tanıtıcı bir `HINTERNET` dosyası.  
   
- `refLocator`  
+ *refLocator*  
  Bir başvuru bir [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) nesnesi.  
   
- `pConnection`  
+ *pConnection*  
  Bir işaretçi bir [CGopherConnection](../../mfc/reference/cgopherconnection-class.md) nesnesi.  
   
- `hSession`  
+ *hSession*  
  Geçerli Internet oturumu için bir tanıtıcı.  
   
- `pstrLocator`  
+ *pstrLocator*  
  Gopher sunucusunu bulmak için kullanılan bir dize için bir işaretçi. Bkz: [Gopher oturumları](cgopherlocator-class.md) gopher bulucular hakkında daha fazla bilgi.  
   
  *dwLocLen*  
- Bayt sayısını içeren bir DWORD `pstrLocator`.  
+ Bayt sayısını içeren bir DWORD *pstrLocator*.  
   
- `dwContext`  
+ *dwContext*  
  Açılmakta dosya Bağlam tanıtıcısı gösteren bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  

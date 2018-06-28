@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b675cfd635fd4dea962c30605072beec1545dda1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a67b1e405f1e3be472f9b9b3b5ebe00be3fb8a5d
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375105"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041051"
 ---
 # <a name="colechangeicondialog-class"></a>COleChangeIconDialog sınıfı
 OLE Simge Değiştir iletişim kutusu için kullanılır.  
@@ -100,10 +100,10 @@ explicit COleChangeIconDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pItem`  
+ *pItem*  
  Dönüştürülecek öğesine noktaları.  
   
- `dwFlags`  
+ *dwFlags*  
  Aşağıdaki değerlerden herhangi bir sayıda içeren oluşturma bayrağı birleştirilmiş bitwise kullanarak- or işleci:  
   
 - **CIF_SELECTCURRENT** iletişim kutusu çağrıldığında, geçerli radyo düğmesi'nin başlangıçta seçili olur belirtir. Bu varsayılandır.  
@@ -116,7 +116,7 @@ explicit COleChangeIconDialog(
   
 - **CIF_USEICONEXE** simgesi belirtilen yürütülebilir dosya gelen ayıklanması gereken belirtir **szIconExe** alanını [m_ci](#m_ci) yerine türünden alınan. OLE olmayan dosyalar için bağlama veya katıştırmak için kullanışlıdır.  
   
- `pParentWnd`  
+ *pParentWnd*  
  İşaret üst veya sahibi pencere nesnesi için (tür `CWnd`) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim kutusunun üst pencere ana uygulama penceresine ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -132,7 +132,7 @@ BOOL DoChangeIcon(COleClientItem* pItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pItem`  
+ *pItem*  
  Simgesini değiştirme öğesi noktalarına.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

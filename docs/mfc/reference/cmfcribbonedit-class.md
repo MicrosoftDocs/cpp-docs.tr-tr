@@ -83,12 +83,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: daa6a5976f4f20ba067eed047a4ff83b30550ea9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2a67696289603697ddac541382d63f989881afaf
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374182"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040866"
 ---
 # <a name="cmfcribbonedit-class"></a>CMFCRibbonEdit sınıfı
 Şerit çubuğunda bulunan bir düzenleme denetimi uygular.  
@@ -181,16 +181,16 @@ CMFCRibbonEdit();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Komut kimliği için `CMFCRibbonEdit` denetim.  
   
- [in] `nWidth`  
+ [in] *nWidth*  
  Metin kutusunun piksel cinsinden genişliği `CMFCRibbonEdit` denetim.  
   
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  Etiketi `CMFCRibbonEdit` denetim.  
   
- [in] `nImage`  
+ [in] *nImage*  
  Küçük resim için kullanılacak dizini `CMFCRibbonEdit` denetim. Küçük resimler koleksiyonunu üst Şerit kategoriye göre korunur.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -204,11 +204,11 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `src`  
+ [in] *src*  
  Kaynak `CMFCRibbonEdit` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `src` Parametresi türü olmalıdır `CMFCRibbonEdit`.  
+ *Src* parametresi türü olmalıdır `CMFCRibbonEdit`.  
   
 ##  <a name="createedit"></a>  CMFCRibbonEdit::CreateEdit  
  İçin yeni bir metin kutusu oluşturur [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) nesnesi.  
@@ -220,10 +220,10 @@ virtual CMFCRibbonRichEditCtrl* CreateEdit(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  Üst penceresi için bir işaretçi `CMFCRibbonEdit` nesnesi.  
   
- [in] `dwEditStyle`  
+ [in] *dwEditStyle*  
  Metin kutusunun stilini belirtir. İle açıklamalar bölümünde listelenen pencere stilleri birleştirebilirsiniz [denetim stilleri düzenlemek](http://msdn.microsoft.com/library/windows/desktop/bb775464) Windows SDK'ın açıklanmıştır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -273,10 +273,10 @@ void EnableSpinButtons(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nMin`  
+ [in] *nMin*  
  Değer değiştirme düğmesi en küçük değeri.  
   
- [in] `nMax`  
+ [in] *nMax*  
  Değer değiştirme düğmesi maksimum değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -290,7 +290,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için işaretçi `CMFCRibbonEdit` nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -318,7 +318,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için işaretçi `CMFCRibbonEdit` nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -355,7 +355,7 @@ int GetWidth(BOOL bInFloatyMode = FALSE) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bInFloatyMode`  
+ [in] *bInFloatyMode*  
  `TRUE` varsa `CMFCRibbonEdit` denetimidir kayan modunda; Aksi halde, `FALSE`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -433,7 +433,7 @@ virtual void OnAfterChangeRect(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için işaretçi `CMFCRibbonEdit` denetim.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -446,7 +446,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için işaretçi `CMFCRibbonEdit` denetim.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -459,7 +459,7 @@ virtual void OnDrawLabelAndImage(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için işaretçi `CMFCRibbonEdit` denetim.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -478,22 +478,22 @@ virtual void OnDrawOnList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için işaretçi `CMFCRibbonEdit` denetim.  
   
- [in] `strText`  
- Görüntülenecek metni [ ] (../../mfc/reference/cmfcribbonedit-class.md "cmfcribbonedit sınıfı").  
+ [in] *strText*  
+ Görüntülenecek metni [cmfcribbonedit sınıfı](../../mfc/reference/cmfcribbonedit-class.md "").  
   
- [in] `nTextOffset`  
+ [in] *nTextOffset*  
  Liste kutusu görüntüleme metni için sol tarafındaki piksel cinsinden uzaklığı.  
   
- [in] `rect`  
+ [in] *rect*  
  Görüntü dikdörtgeni `CMFCRibbonEdit` denetim.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  Bu parametre kullanılmaz.  
   
- [in] `bHighlighted`  
+ [in] *bHighlighted*  
  Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -507,7 +507,7 @@ virtual void OnEnable(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` denetimi etkinleştirmek için; `FALSE` denetimini devre dışı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -520,7 +520,7 @@ virtual void OnHighlight(BOOL bHighlight);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bHighlight`  
+ [in] *bHighlight*  
  `TRUE` İşaretçi sınırları içinde ise `CMFCRibbonEdit` kontrol; Aksi halde, `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -533,7 +533,7 @@ virtual BOOL OnKey(BOOL bIsMenuKey);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bIsMenuKey`  
+ [in] *bIsMenuKey*  
  `TRUE` açılır menü keytip görüntüler Aksi takdirde `FALSE`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -549,7 +549,7 @@ virtual void OnLButtonDown(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -562,7 +562,7 @@ virtual void OnLButtonUp(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -575,7 +575,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bIsRTL`  
+ [in] *bIsRTL*  
  `TRUE` Düzen sağdan sola ise; `FALSE` düzeni soldan sağa ise.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -588,7 +588,7 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  `TRUE` Denetim göstermek için; `FALSE` denetimi gizlemek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -613,10 +613,10 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParent`  
+ *pParent*  
  İşaretçi üst penceresine `CMFCRibbonEdit` nesnesi.  
   
- `data`  
+ *Veri*  
  Erişilebilirlik verilerini `CMFCRibbonEdit` nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -632,7 +632,7 @@ void SetEditText(CString strText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `strText`  
+ [in] *strText*  
  Metin kutusunda metin.  
   
 ##  <a name="settextalign"></a>  CMFCRibbonEdit::SetTextAlign  
@@ -643,11 +643,11 @@ void SetTextAlign(int nAlign);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nAlign`  
+ [in] *nAlign*  
  Metin hizalama değeri numaralandırılır. Olası değerler için Açıklamalar bölümüne bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Parametre `nAlign` aşağıdaki Düzenle denetim stilleri biridir:  
+ Parametre *nAlign* aşağıdaki Düzenle denetim stilleri biridir:  
   
 - **ES_LEFT** sol hizalama  
   
@@ -667,10 +667,10 @@ void SetWidth(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nWidth`  
+ [in] *nWidth*  
  Metin kutusunun piksel cinsinden genişliği.  
   
- `bInFloatyMode`  
+ *bInFloatyMode*  
  `TRUE` Kayan modu için genişliğini ayarlamak için; `FALSE` normal modu için genişliğini ayarlamak için.  
   
 ### <a name="remarks"></a>Açıklamalar  

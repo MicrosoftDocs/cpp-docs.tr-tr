@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0ca520fe89e04d984e6490c495f2622a6037c79
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 81ad51fe00a0b205000b15a05ede9497850f488e
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367766"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041279"
 ---
 # <a name="cinterpolatorbase-class"></a>CInterpolatorBase sınıfı
 Yeni bir animasyon değişken değerini hesaplamak sahip olduğunda animasyon API tarafından çağrılan bir geri çağırma uygular.  
@@ -104,10 +104,10 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pInterpolator`  
+ *pInterpolator*  
  Özel bir ara gösteren bir işaretçi.  
   
- `ppHandler`  
+ *ppHandler*  
  Çıktı. İşlevi döndüğünde CInterpolatorBase örneği için bir işaretçi içeriyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -123,13 +123,13 @@ IFACEMETHOD(GetDependencies)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `initialValueDependencies`  
+ *initialValueDependencies*  
  Çıktı. İlk değerine bağımlı özelliklerini ınterpolator için SetInitialValueAndVelocity geçirildi.  
   
- `initialVelocityDependencies`  
+ *initialVelocityDependencies*  
  Çıktı. İlk hız üzerinde bağımlı özelliklerini ınterpolator için SetInitialValueAndVelocity geçirildi.  
   
- `durationDependencies`  
+ *durationDependencies*  
  Çıktı. Süreye göre bağımlı özelliklerini ınterpolator için SetDuration geçirildi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -143,7 +143,7 @@ IFACEMETHOD(GetDuration)(__out UI_ANIMATION_SECONDS* duration);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `duration`  
+ *Süre*  
  Çıktı. Saniye cinsinden geçiş süresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -157,7 +157,7 @@ IFACEMETHOD(GetFinalValue)(__out DOUBLE* value);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `value`  
+ *value*  
  Çıktı. Geçiş işleminin sonunda bir değişkenin son değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -173,10 +173,10 @@ IFACEMETHOD(InterpolateValue)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `offset`  
+ *uzaklık*  
  Geçişin başlangıç uzaklığı. Her zaman daha büyük veya sıfıra eşit ve geçiş süresinden daha az uzaklığı. Geçiş süresi sıfır ise, bu yöntem çağrılmaz.  
   
- `value`  
+ *value*  
  Çıktı. Ara değerli değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -192,10 +192,10 @@ IFACEMETHOD(InterpolateVelocity)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `offset`  
+ *uzaklık*  
  Geçişin başlangıç uzaklığı. Her zaman sıfırdan büyük veya sıfıra eşit uzaklığı ve geçiş süresini küçük veya buna eşit. Geçiş süresi sıfır ise, bu yöntem çağrılmaz.  
   
- `velocity`  
+ *hız*  
  Çıktı. Değişken uzaklığındaki hız.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -209,7 +209,7 @@ void SetCustomInterpolator(CCustomInterpolator* pInterpolator);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pInterpolator`  
+ *pInterpolator*  
  Özel bir ara gösteren bir işaretçi.  
   
 ##  <a name="setduration"></a>  CInterpolatorBase::SetDuration  
@@ -220,7 +220,7 @@ IFACEMETHOD(SetDuration)(__in UI_ANIMATION_SECONDS duration);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `duration`  
+ *Süre*  
  Geçiş süresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -236,10 +236,10 @@ IFACEMETHOD(SetInitialValueAndVelocity)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `initialValue`  
+ *initialValue*  
  Geçiş başlangıcında değişkeninin değeri.  
   
- `initialVelocity`  
+ *initialVelocity*  
  Geçiş başlangıcında değişkeni hız.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

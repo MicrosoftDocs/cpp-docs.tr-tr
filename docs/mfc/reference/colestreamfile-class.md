@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 805c32145d844cc1103cab7c4987c0595ff5935f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7bbd2b19e85f70ae9e61044ccd5a6c369e61b296
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371396"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041451"
 ---
 # <a name="colestreamfile-class"></a>COleStreamFile sınıfı
 Veri akışı temsil eder ( `IStream`) bileşik bir dosyada OLE yapılı depolama bir parçası olarak.  
@@ -92,7 +92,7 @@ void Attach(LPSTREAM lpStream);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpStream`  
+ *lpStream*  
  OLE akışa işaret ( `IStream`) nesne ile ilişkili olmalıdır. Olamaz **NULL**.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -108,11 +108,11 @@ COleStreamFile(LPSTREAM lpStream = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpStream`  
+ *lpStream*  
  İşaretçi OLE akışa nesne ile ilişkili olabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `lpStream` olan **NULL**nesne OLE akış ile ilişkili değil, aksi takdirde, nesne sağlanan OLE akış ile ilişkilidir.  
+ Varsa *lpStream* olan **NULL**nesne OLE akış ile ilişkili değil, aksi takdirde, nesne sağlanan OLE akış ile ilişkilidir.  
   
  Daha fazla bilgi için bkz: [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK'sındaki.  
   
@@ -124,7 +124,7 @@ BOOL CreateMemoryStream(CFileException* pError = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pError`  
+ *pError*  
  İşaret eden bir [CFileException](../../mfc/reference/cfileexception-class.md) nesne veya **NULL** oluşturma işleminin tamamlanma durumunu gösterir. Akış oluşturulmaya çalışılırken tarafından oluşturulan olası özel durumları izlemek istiyorsanız bu parametreyi sağlayın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -147,23 +147,23 @@ BOOL CreateStream(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpStorage`  
+ *lpStorage*  
  Oluşturulacak akış içeren OLE depolama nesne noktalarına. Olamaz **NULL**.  
   
- `lpszStreamName`  
+ *lpszStreamName*  
  Oluşturulacak Akış adı. Olamaz **NULL**.  
   
- `nOpenFlags`  
+ *nOpenFlags*  
  Akış açarken kullanılacak erişim modu. Özel, okuma/yazma ve oluşturma modları varsayılan olarak kullanılır. Kullanılabilir modları tam bir listesi için bkz: [CFile::CFile](../../mfc/reference/cfile-class.md#cfile).  
   
- `pError`  
+ *pError*  
  İşaret eden bir [CFileException](../../mfc/reference/cfileexception-class.md) nesne veya **NULL**. Akış oluşturulmaya çalışılırken tarafından oluşturulan olası özel durumları izlemek istiyorsanız bu parametreyi sağlayın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Akış başarıyla oluşturulduysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Açık başarısız olursa dosya özel durum oluşturulur ve `pError` değil **NULL**.  
+ Açık başarısız olursa dosya özel durum oluşturulur ve *pError* değil **NULL**.  
   
  Daha fazla bilgi için bkz: [IStorage::CreateStream](http://msdn.microsoft.com/library/windows/desktop/aa380020) Windows SDK'sındaki.  
   
@@ -204,23 +204,23 @@ BOOL OpenStream(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpStorage`  
+ *lpStorage*  
  Açılacak akışın içeren OLE depolama nesne noktalarına. Olamaz **NULL**.  
   
- `lpszStreamName`  
+ *lpszStreamName*  
  Açılacak akışın adı. Olamaz **NULL**.  
   
- `nOpenFlags`  
+ *nOpenFlags*  
  Akış açarken kullanılacak erişim modu. Özel ve okuma/yazma modları, varsayılan olarak kullanılır. Kullanılabilir modları tam listesi için bkz: [CFile::CFile](../../mfc/reference/cfile-class.md#cfile).  
   
- `pError`  
+ *pError*  
  İşaret eden bir [CFileException](../../mfc/reference/cfileexception-class.md) nesne veya **NULL**. Akış açmaya tarafından oluşturulan olası özel durumları izlemek istiyorsanız bu parametreyi sağlayın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Akış başarıyla açılırsa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Açık başarısız olursa dosya özel durum oluşturulur ve `pError` değil **NULL**.  
+ Açık başarısız olursa dosya özel durum oluşturulur ve *pError* değil **NULL**.  
   
  Daha fazla bilgi için bkz: [IStorage::OpenStream](http://msdn.microsoft.com/library/windows/desktop/aa380025) Windows SDK'sındaki.  
   

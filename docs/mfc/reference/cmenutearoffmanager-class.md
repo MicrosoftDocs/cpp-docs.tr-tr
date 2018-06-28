@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4dcbd5ea33b50e66d1c9e858669a3174042a19e0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 105c933ee36c9bbeb634d85963d9254f3b68ebe4
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367675"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041019"
 ---
 # <a name="cmenutearoffmanager-class"></a>CMenuTearOffManager sınıfı
 Etiketleri menüleri yönetir. Etiketleri menü menü çubuğu menüsünde bulunur. Kullanıcı bir etiketleri menü menü çubuğu, etiketleri menü float neden kaldırabilirsiniz.  
@@ -99,8 +99,8 @@ void Build(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiTearOffBarID`  
- [in] `strText`  
+ [in] *uiTearOffBarID*  
+ [in] *strText*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -136,20 +136,20 @@ BOOL Initialize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszRegEntry`  
+ [in] *lpszRegEntry*  
  Bir kayıt defteri girdisi yolunu içeren bir dize. Uygulamalarınız, bu kayıt defteri girdisi etiketleri çubukları ayarlarını depolar.  
   
- [in] `uiTearOffMenuFirst`  
+ [in] *uiTearOffMenuFirst*  
  Etiketleri menü ilk menü kimliği.  
   
- [in] `uiTearOffMenuLast`  
+ [in] *uiTearOffMenuLast*  
  Etiketleri menü son menü kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Menü kimlikleri aralığını `uiTearOffMenuFirst` için `uiTearOffMenuLast` sürekli bir aralık olmalıdır. Aralık uygulamada aynı anda görünebilir etiketleri menüleri sayısını tanımlar.  
+ Menü kimlikleri aralığını *uiTearOffMenuFirst* için *uiTearOffMenuLast* sürekli bir aralık olmalıdır. Aralık uygulamada aynı anda görünebilir etiketleri menüleri sayısını tanımlar.  
   
 ##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID  
 
@@ -159,7 +159,7 @@ BOOL IsDynamicID(UINT uiID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiID`  
+ [in] *uiID*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -173,7 +173,7 @@ UINT Parse(CString& str);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `str`  
+ [in] *str*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -187,7 +187,7 @@ void Reset(HMENU hmenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hmenu`  
+ [in] *hmenu*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -201,8 +201,8 @@ void SetInUse(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmdId`  
- [in] `bUse`  
+ [in] *uiCmdId*  
+ [in] *bBilinmeyen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -214,7 +214,7 @@ void SetupTearOffMenus(HMENU hMenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hMenu`  
+ [in] *hMenu*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

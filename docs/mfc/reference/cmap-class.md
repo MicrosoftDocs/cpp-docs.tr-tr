@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89e508242e7318e5419656720b6dee20bed55716
-ms.sourcegitcommit: 59afc95d0e494af658cf464503f7f89bd1a8d2ce
+ms.openlocfilehash: c477ee69b8bc8e824aae6df1f74ba97d2825524f
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35239430"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039166"
 ---
 # <a name="cmap-class"></a>CMap sınıfı
 Benzersiz anahtar değerlerine eşlemeleri sözlüğü collection sınıfı.  
@@ -65,17 +65,17 @@ template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : pub
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `KEY`  
+ *KEY*  
  Eşleme için anahtar olarak kullanılan nesne sınıfı.  
   
- `ARG_KEY`  
- Veri türü için kullanılan `KEY` bağımsız değişkenleri; genellikle başvuru `KEY`.  
+ *ARG_KEY*  
+ Veri türü için kullanılan *anahtar* bağımsız değişkenleri; genellikle başvuru *anahtar*.  
   
- `VALUE`  
+ *DEĞER*  
  Eşlemesinde depolanan nesne sınıfı.  
   
- `ARG_VALUE`  
- Veri türü için kullanılan `VALUE` bağımsız değişkenleri; genellikle başvuru `VALUE`.  
+ *ARG_VALUE*  
+ Veri türü için kullanılan *değeri* bağımsız değişkenleri; genellikle başvuru *değeri*.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -147,11 +147,11 @@ CMap(INT_PTR nBlockSize = 10);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nBlockSize`  
+ *nBlockSize*  
  Harita genişletmek için bellek ayırma ayrıntı düzeyi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Harita büyüdükçe, bellek, biriminde ayrılır `nBlockSize` girişleri.  
+ Harita büyüdükçe, bellek, biriminde ayrılır *nBlockSize* girişleri.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#56](../../mfc/codesnippet/cpp/cmap-class_1.cpp)]  
@@ -210,25 +210,25 @@ void GetNextAssoc(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rNextPosition`  
+ *rNextPosition*  
  Bir başvuru belirtir bir **konumu** önceki tarafından döndürülen değer `GetNextAssoc` veya `GetStartPosition` çağırın.  
   
  *KEY*  
  Haritanın anahtarın türünü belirten bir şablon parametre.  
   
- `rKey`  
+ *rKey*  
  Alınan öğenin döndürülen anahtarı belirtir.  
   
  *DEĞER*  
  Haritanın değerin türünü belirten bir şablon parametre.  
   
- `rValue`  
+ *rValue*  
  Alınan öğenin döndürülen değerini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev eşlemesi tüm öğeler üzerinden yineleme için kullanışlıdır. Konum sırası mutlaka anahtar değeri dizisi ile aynı olduğunu unutmayın.  
   
- Alınan öğe Haritası son sonra yeni değeri ise `rNextPosition` ayarlanır **NULL**.  
+ Alınan öğe Haritası son sonra yeni değeri ise *rNextPosition* ayarlanır **NULL**.  
   
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CMap::SetAt](#setat).  
@@ -273,10 +273,10 @@ void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hashSize`  
+ *hashSize*  
  Karma tablosunda giriş sayısı.  
   
- `bAllocNow`  
+ *bAllocNow*  
  Varsa **doğru**, karma tablosu başlatma; bağlı ayırır tablo gerektiğinde aksi ayrılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -306,16 +306,16 @@ BOOL Lookup(ARG_KEY key, VALUE& rValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ARG_KEY`  
- Şablon parametresi türünü belirleyen `key` değeri.  
+ *ARG_KEY*  
+ Şablon parametresi türünü belirleyen *anahtar* değeri.  
   
- `key`  
+ *Anahtarı*  
  Bakılacak öğesi tanımlayan anahtarını belirtir.  
   
  *DEĞER*  
  Bakılacak değerin türünü belirtir.  
   
- `rValue`  
+ *rValue*  
  Aranan yukarı değerini alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -338,10 +338,10 @@ VALUE& operator[](arg_key key);
  *DEĞER*  
  Harita değerin türünü belirten bir şablon parametre.  
   
- `ARG_KEY`  
+ *ARG_KEY*  
  Anahtar değeri türünü belirten bir şablon parametre.  
   
- `key`  
+ *Anahtarı*  
  Haritadaki değerini almak için kullanılan anahtar.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -370,7 +370,7 @@ CPair* PGetFirstAssoc();
  [!code-cpp[NVC_MFCCollections#59](../../mfc/codesnippet/cpp/cmap-class_4.cpp)]  
   
 ##  <a name="pgetnextassoc"></a>  CMap::PGetNextAssoc  
- Gösterdiği map öğesi alır `pAssocRec`.  
+ Gösterdiği map öğesi alır *pAssocRec*.  
   
 ```  
 const CPair *PGetNextAssoc(const CPair* pAssocRet) const;  
@@ -400,7 +400,7 @@ CPair* PLookup(ARG_KEY key);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `key`  
+ *Anahtarı*  
  Aranacak öğe anahtarı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -433,10 +433,10 @@ BOOL RemoveKey(ARG_KEY key);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ARG_KEY`  
+ *ARG_KEY*  
  Anahtar türü belirten bir şablon parametre.  
   
- `key`  
+ *Anahtarı*  
  Kaldırılacak öğenin anahtarı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -456,16 +456,16 @@ void SetAt(ARG_KEY key, ARG_VALUE newValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ARG_KEY`  
- Şablon parametresi türünü belirleyen `key` parametresi.  
+ *ARG_KEY*  
+ Şablon parametresi türünü belirleyen *anahtar* parametresi.  
   
- `key`  
+ *Anahtarı*  
  Yeni öğe anahtarı belirtir.  
   
- `ARG_VALUE`  
- Şablon parametresi türünü belirleyen `newValue` parametresi.  
+ *ARG_VALUE*  
+ Şablon parametresi türünü belirleyen *newValue* parametresi.  
   
- `newValue`  
+ *newValue*  
  Yeni öğe değerini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

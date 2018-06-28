@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9073c3443b1c74a27c9de9be142c67fab7f40ba8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a6862803540a87aed129ace3a05d4e41e9e1ba90
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374969"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040827"
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl sınıfı
 `CMFCShellListCtrl` Sınıf Windows listesi denetim işlevselliği sunar ve Kabuk öğelerinin bir listesini görüntülemek için özelliği ekleyerek genişletir.  
@@ -130,10 +130,10 @@ virtual HRESULT DisplayFolder(LPAFX_SHELLITEMINFO lpItemInfo);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszPath`  
+ [in] *lpszPath*  
  Bir klasörün yolunu içeren bir dize.  
   
- [in] `lpItemInfo`  
+ [in] *lpItemInfo*  
  Bir işaretçi bir `LPAFX_SHELLITEMINFO` görüntülemek için bir klasör açıklar yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -157,7 +157,7 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  Framework kısayol menüsünü etkinleştirir olup olmadığını belirten bir Boole değeri.  
   
 ##  <a name="getcurrentfolder"></a>  CMFCShellListCtrl::GetCurrentFolder  
@@ -168,7 +168,7 @@ BOOL GetCurrentFolder(CString& strPath) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `strPath`  
+ [out] *strPath*  
  Yolun yöntemi nereye yazdığını bir dize parametresi referansı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -185,7 +185,7 @@ BOOL GetCurrentFolderName(CString& strName) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `strName`  
+ [out] *strName*  
  Yöntem adı nereye yazdığını bir dize parametresi referansı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -227,17 +227,17 @@ BOOL GetItemPath(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `strPath`  
+ [out] *strPath*  
  Bir başvuru bir dizeye yolunu alır.  
   
- [in] `iItem`  
+ [in] *iItem*  
  Liste öğesi dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` başarılı olursa; `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından sağlanan dizin `iItem` tarafından şu anda görüntülenen öğelerin dayalı [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi.  
+ Tarafından sağlanan dizin *iItem* tarafından şu anda görüntülenen öğelerin dayalı [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi.  
   
 ##  <a name="getitemtypes"></a>  CMFCShellListCtrl::GetItemTypes  
  Tarafından görüntülenen öğelerin türünü döndürür [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi.  
@@ -273,9 +273,9 @@ virtual int OnCompareItems(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lParam1`  
- [in] `lParam2`  
- [in] `iColumn`  
+ [in] *lParam1*  
+ [in] *lParam2*  
+ [in] *iColumn*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -291,10 +291,10 @@ virtual void OnFormatFileDate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `tmFile`  
+ [in] *tmFile*  
  Bir dosyayla ilişkili tarih.  
   
- [out] `str`  
+ [out] *str*  
  Biçimlendirilmiş dosyası tarih içeren bir dize.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -310,10 +310,10 @@ virtual void OnFormatFileSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lFileSize`  
+ [in] *lFileSize*  
  Framework görüntüler dosya boyutu.  
   
- [out] `str`  
+ [out] *str*  
  Biçimlendirilmiş dosya boyutu içeren bir dize.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -329,10 +329,10 @@ virtual int OnGetItemIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iItem`  
+ [in] *iItem*  
  Öğe dizini.  
   
- [in] `pItem`  
+ [in] *pItem*  
  A `LPAFX_SHELLITEMINFO` öğeyi açıklayan parametre.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -341,7 +341,7 @@ virtual int OnGetItemIcon(
 ### <a name="remarks"></a>Açıklamalar  
  Simge görüntüsü dizini sistem görüntüsü listede temel alır.  
   
- Varsayılan olarak, bu yöntem dayanan `pItem` parametresi. Değeri `iItem` varsayılan uygulamasında kullanılmaz. Kullanabileceğiniz `iItem` özel davranışı uygulamak için.  
+ Varsayılan olarak, bu yöntem dayanan *pItem* parametresi. Değeri *iItem* varsayılan uygulamasında kullanılmaz. Kullanabileceğiniz *iItem* özel davranışı uygulamak için.  
   
 ##  <a name="ongetitemtext"></a>  CMFCShellListCtrl::OnGetItemText  
  Kabuk öğenin metnini almasının gerektiği zaman çerçevesi bu yöntemi çağırır.  
@@ -354,13 +354,13 @@ virtual CString OnGetItemText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iItem`  
+ [in] *iItem*  
  Öğe dizini.  
   
- [in] `iColumn`  
+ [in] *iColumn*  
  İlgilenilen sütun.  
   
- [in] `pItem`  
+ [in] *pItem*  
  A `LPAFX_SHELLITEMINFO` öğeyi açıklayan parametre.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -369,7 +369,7 @@ virtual CString OnGetItemText(
 ### <a name="remarks"></a>Açıklamalar  
  Her öğe `CMFCShellListCtrl` nesnesi bir veya daha fazla sütun metin sahip olabilir. Bu yöntem framework çağırır onu ilgilendiği sütun belirtir. Bu işlev el ile çağırırsanız, ilgilendiğiniz sütun belirtmeniz gerekir.  
   
- Varsayılan olarak, bu yöntem dayanan `pItem` olduğu için işlem öğesi belirlemek için parametre. Değeri `iItem` varsayılan uygulamasında kullanılmaz.  
+ Varsayılan olarak, bu yöntem dayanan *pItem* olduğu için işlem öğesi belirlemek için parametre. Değeri *iItem* varsayılan uygulamasında kullanılmaz.  
   
 ##  <a name="onsetcolumns"></a>  CMFCShellListCtrl::OnSetColumns  
  Sütun adlarını ayarladığında framework bu yöntemi çağırır.  
@@ -402,7 +402,7 @@ void SetItemTypes(SHCONTF nTypes);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nTypes`  
+ [in] *nTypes*  
  Öğe listesi türleri `CMFCShellListCtrl` nesne destekler.  
   
 ### <a name="remarks"></a>Açıklamalar  

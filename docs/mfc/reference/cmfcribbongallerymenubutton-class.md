@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27d2d4e95bffa3bd074ca1c6d4bf6d9c7e095a56
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b2dd3d47b2175a64be605ac8db9fdb1502ce2755
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370913"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041266"
 ---
 # <a name="cmfcribbongallerymenubutton-class"></a>CMFCRibbonGalleryMenuButton sınıfı
 Şerit galerileri içeren Şerit menü düğmesi uygular.  
@@ -108,7 +108,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `src`  
+ [in] *src*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -132,22 +132,22 @@ CMFCRibbonGalleryMenuButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `uiID`  
- Düğmenin komut kimliği. Bu gönderilen değerdir **WM_COMMAND** iletisi kullanıcı bu düğmesine tıklar.  
+ *uiID*  
+ Düğmenin komut kimliği. Bu, kullanıcı bu düğmesini tıklattığında WM_COMMAND iletisinde gönderilen değerdir.  
   
- `iImage`  
- Galeri menü düğmesi ile görüntülenecek resim dizini. Görüntüleri depolanmış `imagesPalette` parametresi.  
+ *iImage*  
+ Galeri menü düğmesi ile görüntülenecek resim dizini. Görüntüleri depolanmış *imagesPalette* parametresi.  
   
- `lpszText`  
+ *lpszText*  
  Menü çubuğunda görüntülenecek metin.  
   
- `imagesPalette`  
+ *imagesPalette*  
  Galeride görüntülemek için görüntüleri listesini içerir.  
   
- `uiImagesPaletteResID`  
+ *uiImagesPaletteResID*  
  Galeride görüntülemek için kaynak kimliği görüntüleri için resim listesi.  
   
- `cxPaletteImage`  
+ *cxPaletteImage*  
  Galeride görüntülenecek görüntüsünün piksel cinsinden genişliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
