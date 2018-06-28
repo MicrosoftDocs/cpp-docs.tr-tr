@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b91bc8fec3eebba5f3037633b5840d9b1abca731
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c8b0a512d0969f88d270ab7373be4807b1c55914
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371734"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038360"
 ---
 # <a name="cmfclinkctrl-class"></a>CMFCLinkCtrl sınıfı
 `CMFCLinkCtrl` Sınıfı düğmesine tıklandığında bağlantının hedef çağırır ve bir düğme köprü olarak görüntüler.  
@@ -91,10 +91,10 @@ virtual void OnDrawFocusRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  Bağlantı denetimi bounds dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -108,7 +108,7 @@ void SetURL(LPCTSTR lpszURL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszURL`  
+ [in] *lpszURL*  
  Görüntülenecek düğme metni.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -121,7 +121,7 @@ void SetURLPrefix(LPCTSTR lpszPrefix);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszPrefix`  
+ [in] *lpszPrefix*  
  URL protokolü öneki.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -137,10 +137,10 @@ virtual CSize SizeToContent(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bVCenter`  
+ [in] *bVCenter*  
  `TRUE` Düğme metni ve dikey olarak üst ve alt bağlantı denetimi arasında bit eşlem center için; Aksi takdirde `FALSE`. Varsayılan değer `FALSE` şeklindedir.  
   
- [in] `bHCenter`  
+ [in] *bHCenter*  
  `TRUE` Düğme metni ve bit eşlem yatay sol ve sağ kenarlarının bağlantı denetimi arasında center için; Aksi takdirde `FALSE`. Varsayılan değer `FALSE` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

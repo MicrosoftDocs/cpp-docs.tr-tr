@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9baeb204234a6df50be062c5944e9b257cb2d2c9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a9fd8c983e0133644b6531e87f5fc1dec0fdc7b7
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370926"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041811"
 ---
 # <a name="cmfcribbonquickaccesstoolbardefaultstate-class"></a>CMFCRibbonQuickAccessToolBarDefaultState sınıfı
 Şerit çubuğunda konumlandırılmış hızlı erişim araç için varsayılan duruma yöneten bir yardımcı sınıfı ( [CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md)).  
@@ -80,10 +80,10 @@ void AddCommand(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `[in] uiCmd`  
+ *uiCmd [in]*  
  Komut kimliğini belirtir.  
   
- `[in] bIsVisible`  
+ *bIsVisible [in]*  
  Hızlı Erişim Araç varsayılan durumda olduğunda komutu görünürlüğünü ayarlar.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -97,7 +97,7 @@ void CopyFrom(const CMFCRibbonQuickAccessToolBarDefaultState& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `src`  
+ [in] *src*  
  Bir başvuru kaynağı `CMFCRibbonQuickAccessToolBarDefaultState` kopyalamak için nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  

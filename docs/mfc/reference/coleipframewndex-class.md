@@ -104,12 +104,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71610035d029c4d8f5ca403c52d9eddd575e3a8b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5b79f65b39aa741a9794fbe05721c7dc44287603
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377577"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041652"
 ---
 # <a name="coleipframewndex-class"></a>COleIPFrameWndEx sınıfı
 `COleIPFrameWndEx` Sınıf MFC destekleyen bir OLE kapsayıcı uygular. Uygulamanız için yerinde çerçeve pencere sınıfı türetilmelidir `COleIPFrameWndEx` bundan türetilen yerine sınıfı [COleIPFrameWnd](../../mfc/reference/coleipframewnd-class.md)sınıfı. 
@@ -217,8 +217,8 @@ BOOL AddPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pControlBar`  
- [in] `bTail`  
+ [in] *pControlBar*  
+ [in] *bTail*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -232,7 +232,7 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hdwp`  
+ [in] *hdwp*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -247,9 +247,9 @@ void DockPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
- [in] `nDockBarID`  
- [in] `lpRect`  
+ [in] *pBar*  
+ [in] *nDockBarID*  
+ [in] *lpRect*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -263,17 +263,17 @@ BOOL DockPaneLeftOf(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
+ [in] *pBar*  
  Yerleştirme için bölmesinde bir işaretçi.  
   
- [in] `pLeftOf`  
+ [in] *pLeftOf*  
  Bir işaretçi bölmesine Kaynağı görev yapar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür `TRUE` işlemi başarılı olursa. Aksi takdirde döndürür `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Önceden tanımlanmış bir sırayla birkaç bölmesi nesnelerini sabitlemek için bu yöntemi çağırın. Bu yöntem tarafından belirtilen bölmesinde docks `pBar` tarafından belirtilen bölmenin sol `pLeftOf`.  
+ Önceden tanımlanmış bir sırayla birkaç bölmesi nesnelerini sabitlemek için bu yöntemi çağırın. Bu yöntem tarafından belirtilen bölmesinde docks *pBar* tarafından belirtilen bölmesinde solundaki *pLeftOf*.  
   
 ##  <a name="enableautohidepanes"></a>  COleIPFrameWndEx::EnableAutoHidePanes  
 
@@ -283,7 +283,7 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -297,7 +297,7 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -317,12 +317,12 @@ void EnablePaneMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
- [in] `uiCustomizeCmd`  
- [in] `strCustomizeLabel`  
- [in] `uiViewToolbarsMenuEntryID`  
- [in] `bContextMenuShowsToolbarsOnly`  
- [in] `bViewMenuShowsToolbarsOnly`  
+ [in] *bSistemlerde*  
+ [in] *uiCustomizeCmd*  
+ [in] *strCustomizeLabel*  
+ [in] *uiViewToolbarsMenuEntryID*  
+ [in] *bContextMenuShowsToolbarsOnly*  
+ [in] *bViewMenuShowsToolbarsOnly*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -417,7 +417,7 @@ CBasePane* GetPane(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -446,10 +446,10 @@ virtual BOOL GetToolbarButtonToolTipText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
+ [in] *pButton*  
  Düğme işaretçi.  
   
- [in] `strTTText`  
+ [in] *strTTText*  
  Araç İpucu metni işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -469,17 +469,17 @@ void InitUserToolbars(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszRegEntry`  
+ [in] *lpszRegEntry*  
  Kitaplık kullanıcı araç ayarları depoladığı kayıt defteri girişi.  
   
- [in] `uiUserToolbarFirst`  
+ [in] *uiUserToolbarFirst*  
  İlk kullanıcı tanımlı araç çubuğuna atanan denetim kimliği.  
   
- [in] `uiUserToolbarLast`  
+ [in] *uiUserToolbarLast*  
  Son kullanıcı tarafından tanımlanan araç çubuğuna atanan denetim kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Denetim kimliklerinin kullanıcıları dinamik olarak tanımlamak araç çubuklarına ataması için bir aralığı başlatmak için bu işlevi kullanın. Parametreleri `uiUserToolbarFirst` ve `uiUserToolbarLast` izin verilen araç çubuğu denetimi kimlikleri aralığı tanımlayın. Kullanıcı tanımlı araç çubukları oluşturma devre dışı bırakmak için ayarlanmış `uiUserToolbarFirst` veya `uiUserToolbarLast` -1.  
+ Denetim kimliklerinin kullanıcıları dinamik olarak tanımlamak araç çubuklarına ataması için bir aralığı başlatmak için bu işlevi kullanın. Parametreleri *uiUserToolbarFirst* ve *uiUserToolbarLast* izin verilen araç çubuğu denetimi kimlikleri aralığı tanımlayın. Kullanıcı tanımlı araç çubukları oluşturma devre dışı bırakmak için ayarlanmış *uiUserToolbarFirst* veya *uiUserToolbarLast* -1.  
   
 ##  <a name="insertpane"></a>  COleIPFrameWndEx::InsertPane  
 
@@ -492,9 +492,9 @@ BOOL InsertPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pControlBar`  
- [in] `pTarget`  
- [in] `bAfter`  
+ [in] *pControlBar*  
+ [in] *pTarget*  
+ [in] *bBu*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -524,9 +524,9 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
- [in] `dwBarAlignment`  
- [in] `bOuterEdge`  
+ [in] *noktası*  
+ [in] *dwBarAlignment*  
+ [in] *bOuterEdge*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -544,10 +544,10 @@ virtual BOOL LoadFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nIDResource`  
- [in] `dwDefaultStyle`  
- [in] `pParentWnd`  
- [in] `pContext`  
+ [in] *nIDResource*  
+ [in] *dwDefaultStyle*  
+ [in] *pParentWnd*  
+ [in] *pContext*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -561,7 +561,7 @@ virtual BOOL OnCloseDockingPane(CDockablePane*);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CDockablePane*`  
+ [in] *CDockablePane**  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -575,25 +575,25 @@ virtual BOOL OnCloseMiniFrame(CPaneFrameWnd*);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CPaneFrameWnd*`  
+ [in] *CPaneFrameWnd\**  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="onclosepopupmenu"></a>  COleIPFrameWndEx::OnClosePopupMenu  
- Etkin bir açılır menü işlerken çerçevesi tarafından çağrılır bir `WM_DESTROY` ileti.  
+ Etkin bir açılır menü WM_DESTROY ileti işlediğinde çerçevesi tarafından çağrılır.  
   
 ```  
 virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMenuPopup`  
+ [in] *pMenuPopup*  
  Açılır menü nesnesine bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bildirimleri almak için bu yöntemi geçersiz kılın `CMFCPopupMenu` nesneleri bunlar işlerken `WM_DESTROY` iletileri.  
+ Bildirimleri almak için bu yöntemi geçersiz kılın `CMFCPopupMenu` nesneleri WM_DESTROY iletilerini işlerken.  
   
 ##  <a name="oncmdmsg"></a>  COleIPFrameWndEx::OnCmdMsg  
 
@@ -607,10 +607,10 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
- [in] `nCode`  
- [in] `pExtra`  
- [in] `pHandlerInfo`  
+ [in] *nID*  
+ [in] *nCode*  
+ [in] *pExtra*  
+ [in] *pHandlerInfo*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -627,13 +627,13 @@ virtual BOOL OnDrawMenuImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Cihaz bağlamı işaretçi.  
   
- [in] `pMenuButton`  
+ [in] *pMenuButton*  
  Menü düğmesine işaretçi.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Menü öğesiyle ilişkili resim.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -643,7 +643,7 @@ virtual BOOL OnDrawMenuImage(
  Resmi sahibi menü çubuğu ait menü öğeleri için çizim özelleştirmek istiyorsanız bu yöntemi geçersiz kılın `COleIPFrameWndEx`-türetilmiş bir nesne içermelidir.  
   
 ##  <a name="ondrawmenulogo"></a>  COleIPFrameWndEx::OnDrawMenuLogo  
- Çerçevesi tarafından çağrılır olduğunda bir [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)nesne işlemleri bir `WM_PAINT` ileti.  
+ Çerçevesi tarafından çağrılır olduğunda bir [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)nesnesini WM_PAINT ileti işler.  
   
 ```  
 virtual void OnDrawMenuLogo(
@@ -653,13 +653,13 @@ virtual void OnDrawMenuLogo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Cihaz bağlamı işaretçi.  
   
- [in] `pMenu`  
+ [in] *pMenu*  
  Açılır menü nesnesine işaretçi.  
   
- [in] `rectLogo`  
+ [in] *rectLogo*  
  Görüntülenecek logoyu işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -682,7 +682,7 @@ virtual BOOL OnMenuButtonToolHitTest(
  İşaretçi bir `TOOLINFO` yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Varsayılan uygulama, hiçbir şey yapmaz ve 0 döndürür. Dolduran varsa, uygulamanızı sıfır olmayan bir değer döndürmelidir `pTI` parametresi.  
+ Varsayılan uygulama, hiçbir şey yapmaz ve 0 döndürür. Dolduran varsa, uygulamanızı sıfır olmayan bir değer döndürmelidir *PTI* parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Araç İpucu belirli menü öğesi hakkında bilgi sağlamak için bu yöntemi geçersiz kılın.  
@@ -695,7 +695,7 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pFrame`  
+ [in] *pFrame*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -711,8 +711,8 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bPreview`  
- [in] `pState`  
+ [in] *bPreview*  
+ [in] *pState*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -726,8 +726,8 @@ virtual BOOL OnShowCustomizePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMenuPane`  
- [in] `uiToolbarID`  
+ [in] *pMenuPane*  
+ [in] *uiToolbarID*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -741,7 +741,7 @@ virtual BOOL OnShowPanes(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShow`  
+ [in] *bBilgi Göster*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -755,7 +755,7 @@ virtual BOOL OnShowPopupMenu(CMFCPopupMenu* pMenuPopup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `[in] pMenuPopup`  
+ [in] *pMenuPopup*  
  Görüntülenecek açılır menü işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -774,10 +774,10 @@ virtual BOOL OnTearOffMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMenuPopup`  
+ [in] *pMenuPopup*  
  Seçilen kullanıcı açılır menü için bir işaretçi.  
   
- [in] `pBar`  
+ [in] *pBar*  
  Bir işaretçi menüsü barındıran bölmesine.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -804,11 +804,11 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
- [in] `nSensitivity`  
- [in] `bExactBar`  
- [in] `pRTCBarType`  
- [in] `dwAlignment`  
+ [in] *noktası*  
+ [in] *nSensitivity*  
+ [in] *bExactBar*  
+ [in] *pRTCBarType*  
+ [in] *dwAlignment*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -822,7 +822,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMsg`  
+ [in] *pMsg*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -836,7 +836,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bNotify`  
+ [in] *bNotify*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -853,11 +853,11 @@ void RemovePaneFromDockManager(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pControlBar`  
- [in] `bDestroy`  
- [in] `bAdjustLayout`  
- [in] `bAutoHide`  
- [in] `pBarReplacement`  
+ [in] *pControlBar*  
+ [in] *bDestroy*  
+ [in] *bAdjustLayout*  
+ [in] *bAutoHide*  
+ [in] *pBarReplacement*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -869,7 +869,7 @@ void SetDockState(const CDockState& state);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `state`  
+ [in] *durumu*  
  Takma durumunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -886,13 +886,13 @@ void SetupToolbarMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `menu`  
+ [in] *menüsü*  
  Bir başvuru bir [CMenu](../../mfc/reference/cmenu-class.md) değiştirilecek nesne.  
   
- [in] `uiViewUserToolbarCmdFirst`  
+ [in] *uiViewUserToolbarCmdFirst*  
  İlk kullanıcı tanımlı komutu belirtir.  
   
- [in] `uiViewUserToolbarCmdLast`  
+ [in] *uiViewUserToolbarCmdLast*  
  Son kullanıcı tarafından tanımlanan komutu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -909,10 +909,10 @@ void ShowPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
- [in] `bShow`  
- [in] `bDelay`  
- [in] `bActivate`  
+ [in] *pBar*  
+ [in] *bBilgi Göster*  
+ [in] *bDelay*  
+ [in] *bActivate*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -927,10 +927,10 @@ virtual void WinHelp(
   
 ### <a name="parameters"></a>Parametreler  
  dwData [in]  
- Yardım tarafından belirtilen tür için gereken verileri belirtir `nCmd`.  
+ Yardım tarafından belirtilen tür için gereken verileri belirtir *nCmd*.  
   
- [in] `nCmd`  
- İstenen Yardım türünü belirtir. Olası değerler ve nasıl etkilediklerini listesi `dwData` parametresi bkz [WinHelp işlevi](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows SDK.  
+ [in] *nCmd*  
+ İstenen Yardım türünü belirtir. Olası değerler ve nasıl etkilediklerini listesi *dwData* parametresi bkz [WinHelp işlevi](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

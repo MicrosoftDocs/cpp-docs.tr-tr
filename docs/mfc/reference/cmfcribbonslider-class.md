@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a4264f26028db4c581fe1dc143905ac0ffc8f66
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 06575c4d014f72ddbae63ea5f02c3081b4228e1d
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372703"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037736"
 ---
 # <a name="cmfcribbonslider-class"></a>CMFCRibbonSlider sınıfı
 `CMFCRibbonSlider` Sınıfı bir Şerit çubuğu veya Şerit durum çubuğu ekleyebileceğiniz kaydırıcı denetimi uygular. Şerit kaydırıcı denetimi Office 2007 uygulamalarda görünür yakınlaştırma kaydırıcılar benzer.  
@@ -112,14 +112,14 @@ CMFCRibbonSlider(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Kaydırıcı kimliği.  
   
- [in]. `nWidth`  
+ [in]. *nWidth*  
  Kaydırıcı piksel cinsinden genişliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Olan bir Şerit kaydırıcı yapıları `nWidth` kaydırıcıyı burada eklenir paneli kategorisinde pikselden. Varsayılan olarak, kaydırıcıyı yataydır.  
+ Olan bir Şerit kaydırıcı yapıları *nWidth* kaydırıcıyı burada eklenir paneli kategorisinde pikselden. Varsayılan olarak, kaydırıcıyı yataydır.  
   
 ##  <a name="getpos"></a>  CMFCRibbonSlider::GetPos  
  Kaydırıcı denetimi geçerli konumunu döndürür.  
@@ -159,7 +159,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -193,7 +193,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -207,10 +207,10 @@ void SetPos(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nPos`  
+ [in] *nPos*  
  Kaydırıcısının ayarlamak için konumu belirtir. Kaydırıcı başına göreli konumdur.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  Varsa `TRUE`, kaydırıcıyı çizilir.  
   
 ##  <a name="setrange"></a>  CMFCRibbonSlider::SetRange  
@@ -223,10 +223,10 @@ void SetRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nMin`  
+ [in] *nMin*  
  Kaydırıcı denetimi en küçük değerini belirtir.  
   
- [in] `nMax`  
+ [in] *nMax*  
  Kaydırıcı denetimi en büyük değerini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -240,7 +240,7 @@ void SetZoomButtons(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]. `bSet`  
+ [in]. *bInternet*  
  `TRUE` Yakınlaştırma düğmeleri görüntülemek için; `FALSE` gizleme.  
   
 ##  <a name="setzoomincrement"></a>  CMFCRibbonSlider::SetZoomIncrement  
@@ -251,7 +251,7 @@ void SetZoomIncrement(int nZoomIncrement);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nZoomIncrement`  
+ [in] *nZoomIncrement*  
  Kaydırıcı denetimi yakınlaştırma artışını belirtir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

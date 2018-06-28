@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 041b707bec58abeb19617fbfd275428ca2cf67e7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9aaf60141747f1ff1db2256815f24e6708307ab7
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374887"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042176"
 ---
 # <a name="coleinsertdialog-class"></a>COleInsertDialog sınıfı
 OLE Nesne Ekle iletişim kutusu için kullanılır.  
@@ -114,7 +114,7 @@ COleInsertDialog (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwFlags`  
+ *dwFlags*  
  Bit düzeyinde OR işleci kullanılarak birleştirilen için aşağıdaki değerleri herhangi bir sayıda içeren oluşturma bayrağı:  
   
 - **IOF_SHOWHELP** iletişim kutusu çağrıldığında Yardım düğmesi görüntülenir belirtir.  
@@ -131,7 +131,7 @@ COleInsertDialog (
   
 - **IOF_VERIFYSERVERSEXIST** iletişim kutusu görüntülenmeden önce kayıt veritabanında belirtilen sunucular mevcut sağlayarak liste kutusu ekler sınıfları Doğrula iletişim kutusu belirtir. Bu bayrak olarak ayarlandığında, önemli ölçüde performans zarar verebilir.  
   
- `pParentWnd`  
+ *pParentWnd*  
  İşaret üst veya sahibi pencere nesnesi için (tür `CWnd`) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim nesnenin üst pencere ana uygulama penceresine ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -145,7 +145,7 @@ BOOL CreateItem(COleClientItem* pItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pItem`  
+ *pItem*  
  Oluşturulacak öğesine noktaları.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -167,7 +167,7 @@ INT_PTR
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwFlags`  
+ *dwFlags*  
  Aşağıdaki değerlerden biri:  
   
  `COleInsertDialog::DocObjectsOnly` yalnızca DocObjects ekler.  

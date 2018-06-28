@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a196e2f3f4641d94bbbbda57dd1471066fb1dfa2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 43c9fdc667f5bd40b6c683f6e48753a084266847
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368153"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037654"
 ---
 # <a name="cmapstringtostring-class"></a>CMapStringToString sınıfı
 Haritaları destekleyen `CString` tarafından Anahtarlanan nesneleri `CString` nesneleri.  
@@ -69,7 +69,7 @@ class CMapStringToString : public CObject
 ```  
   
 ## <a name="members"></a>Üyeler  
- Üye işlevlerini `CMapStringToString` sınıfının üye fonksiyonları benzer [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Bu benzerlik nedeniyle kullandığınız `CMapStringToOb` başvuru belgelerini üye fonksiyonu özellikleri için. Gördüğünüz yerde bir `CObject` işaretçi bir dönüş değeri veya "çıktı" parametresi, işlev gibi alternatif bir işaretçi `char`. Gördüğünüz yerde bir `CObject` işaretçi "Giriş" işlevi parametre olarak değiştirmek için bir işaretçi `char`.  
+ Üye işlevlerini `CMapStringToString` sınıfının üye fonksiyonları benzer [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Bu benzerlik nedeniyle kullandığınız `CMapStringToOb` başvuru belgelerini üye fonksiyonu özellikleri için. Gördüğünüz yerde bir `CObject` işaretçi bir dönüş değeri veya "çıktı" parametresi, işlev gibi alternatif bir işaretçi **char**. Gördüğünüz yerde bir `CObject` işaretçi "Giriş" işlevi parametre olarak değiştirmek için bir işaretçi **char**.  
   
  `BOOL CMapStringToOb::Lookup(const char*<key>, CObject*&<rValue>) const;`  
   
@@ -169,7 +169,7 @@ CPair* PGetFirstAssoc();
  [!code-cpp[NVC_MFCCollections#73](../../mfc/codesnippet/cpp/cmapstringtostring-class_1.cpp)]  
   
 ##  <a name="pgetnextassoc"></a>  CMapStringToString::PGetNextAssoc  
- Gösterdiği map öğesi alır `pAssocRec`.  
+ Gösterdiği map öğesi alır *pAssocRec*.  
   
 ```  
 const CPair *PGetNextAssoc(const CPair* pAssoc) const;  
@@ -200,7 +200,7 @@ CPair* PLookup(LPCTSTR key);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `key`  
+ *Anahtarı*  
  Aranacak öğe için anahtar için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

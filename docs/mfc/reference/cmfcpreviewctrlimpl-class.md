@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb1ef84aabed69554ded868bbe9092c3e8b7082f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a94ad813ff72eaed2642e9c78a098b999bf128fa
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370418"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040083"
 ---
 # <a name="cmfcpreviewctrlimpl-class"></a>CMFCPreviewCtrlImpl sınıfı
 Bu sınıf için Zengin Önizleme Kabuk tarafından sağlanan bir konak pencereyi yerleştirildiği bir pencere uygular.  
@@ -136,13 +136,13 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hWndParent`  
+ *hWndParent*  
  Kabuk tarafından sağlanan Zengin Önizleme için konak penceresi için bir tanıtıcı.  
   
- `prc`  
+ *Çin*  
  Başlangıç boyutu ve pencere konumunu belirtir.  
   
- `pContext`  
+ *pContext*  
  Bağlamı oluşturma için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -169,7 +169,7 @@ virtual void DoPaint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Boyama için cihaz bağlamı için bir işaretçi.  
 
 
@@ -246,7 +246,7 @@ void SetDocument(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDocument`  
+ *pDocument*  
  Belge uygulaması için bir işaretçi.  
 
 ## <a name="sethost"></a> CMFCPreviewCtrlImpl::SetHost  
@@ -261,7 +261,7 @@ virtual void SetHost(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hWndParent`  
+ *hWndParent*  
  Yeni üst pencere için bir tanıtıcı.  
 
 ## <a name="setpreviewvisuals"></a> CMFCPreviewCtrlImpl::SetPreviewVisuals  
@@ -278,13 +278,13 @@ virtual void SetPreviewVisuals(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `clrBack`  
+ *clrBack*  
  Önizleme penceresi arka plan rengi.  
   
- `clrText`  
+ *clrText*  
  Önizleme penceresi metin rengi.  
   
- `plf`  
+ *plf*  
  Metni Önizleme penceresinde görüntülemek için kullanılan yazıtipi. 
 
 ##  <a name="setrect"></a> CMFCPreviewCtrlImpl::SetRect  
@@ -300,10 +300,10 @@ virtual void SetRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `prc`  
+ *Çin*  
  Önizleme denetimin konumunu ve yeni boyutunu belirtir.  
   
- `bRedraw`  
+ *bRedraw*  
  Denetim yeniden olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

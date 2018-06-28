@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73a3bb877bec385a9f7e56191286c9b560da8610
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: afd30c9f27d83e7d4cfaf9b993b258b069f73dc4
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378832"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039238"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton sınıfı
 `CMFCButton` Sınıfı için işlevsellik ekler [CButton](../../mfc/reference/cbutton-class.md) düğme metni hizalama, düğme metin ve görüntü birleştirme, bir imleç seçerek ve araç ipucu belirterek gibi sınıfı.  
@@ -218,7 +218,7 @@ void EnableFullTextTooltip(BOOL bOn=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bOn`  
+ [in] *iyi*  
  `TRUE` metnin tamamını görüntülemek için; `FALSE` kesilmiş görüntüleme metni için.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -233,10 +233,10 @@ void EnableMenuFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bOn`  
+ [in] *iyi*  
  `TRUE` yazı tipi uygulama menüsü düğmesi metin yazı tipi kullanmak için; `FALSE` sistem yazı tipi kullanılacak. Varsayılan, `TRUE` değeridir.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` hemen ekranı yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan, `TRUE` değeridir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -250,7 +250,7 @@ static void EnableWindowsTheming(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` Geçerli Windows temasını düğmesi Kenarlıkları çizmek için kullanılacak; `FALSE` Windows teması kullanmayacak şekilde. Varsayılan, `TRUE` değeridir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -473,13 +473,13 @@ virtual void OnDraw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Düğme bounds dikdörtgene referansı.  
   
- [in] `uiState`  
+ [in] *uiState*  
  Geçerli düğme durumu. Daha fazla bilgi için bkz: `itemState` üyesi [DRAWITEMSTRUCT yapısı](../../mfc/reference/drawitemstruct-structure.md) konu.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -496,13 +496,13 @@ virtual void OnDrawBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  Düğme bounds dikdörtgene referansı.  
   
- [in] `uiState`  
+ [in] *uiState*  
  Geçerli düğme durumu. Daha fazla bilgi için bkz: `itemState` üyesi [DRAWITEMSTRUCT yapısı](../../mfc/reference/drawitemstruct-structure.md) konu.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -518,10 +518,10 @@ virtual void OnDrawFocusRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  Düğme bounds dikdörtgene referansı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -540,19 +540,19 @@ virtual void OnDrawText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Düğme bounds dikdörtgene referansı.  
   
- [in] `strText`  
+ [in] *strText*  
  Çizmek için metin.  
   
- [in] `uiDTFlags`  
- Metni Biçimlendirme belirtin bayraklar. Daha fazla bilgi için bkz: `nFormat` parametresinin [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) yöntemi.  
+ [in] *uiDTFlags*  
+ Metni Biçimlendirme belirtin bayraklar. Daha fazla bilgi için bkz: *nFormat* parametresinin [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) yöntemi.  
   
- [in] `uiState`  
+ [in] *uiState*  
  (Ayrılmıştır.)  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -568,10 +568,10 @@ virtual void OnFillBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  Düğme bounds dikdörtgene referansı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -585,7 +585,7 @@ virtual CFont* SelectFont(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -601,11 +601,11 @@ void SetAutorepeatMode(int nTimeDelay=500);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nTimeDelay`  
+ [in] *nTimeDelay*  
  Üst penceresine gönderilen iletileri arasındaki aralığı belirtir negatif olmayan bir sayı. Aralık milisaniye cinsinden ölçülür ve varsayılan değer 500 milisaniyedir. Otomatik yineleme ileti modu devre dışı bırakmak için sıfır belirtin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem düğme düğmesi serbest kadar üst penceresine sürekli WM_COMMAND iletileri göndermek neden veya `nTimeDelay` parametresini sıfır olarak ayarlayın.  
+ Bu yöntem düğme düğmesi serbest kadar üst penceresine sürekli WM_COMMAND iletileri göndermek neden veya *nTimeDelay* parametresini sıfır olarak ayarlayın.  
   
 ##  <a name="setcheckedimage"></a>  CMFCButton::SetCheckedImage  
  Checked düğme için resim ayarlar.  
@@ -634,40 +634,40 @@ void SetCheckedImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hIcon`  
+ [in] *hIcon*  
  Bit eşlem ve yeni görüntüyü maskesini içeren simge için işleyin.  
   
- [in] `bAutoDestroy`  
+ [in] *bAutoDestroy*  
  `TRUE` bit eşlem kaynakları otomatik olarak; yok edilmesi belirtmek için Aksi takdirde `FALSE`. Varsayılan, `TRUE` değeridir.  
   
- [in] `hIconHot`  
+ [in] *hIconHot*  
  Seçilen durumu için görüntüyü içeren simge için işleyin.  
   
- [in] `hBitmap`  
+ [in] *Hbıtmap*  
  Seçili olmayan durumu için görüntüsünü içeren bit eşlem için işleyin.  
   
- [in] `hBitmapHot`  
+ [in] *hBitmapHot*  
  Seçili durum görüntüsünü içeren bit eşlem için işleyin.  
   
- [in] `bMap3dColors`  
+ [in] *bMap3dColors*  
  Düğme arka planını saydam rengini belirtir. diğer bir deyişle, düğme yüzü. `TRUE` (192, 192, 192); RGB renk değeri kullanmak için `FALSE` tarafından tanımlanan renk değeri kullanmak için `AFX_GLOBAL_DATA::clrBtnFace`.  
   
- [in] `uiBmpResId`  
+ [in] *uiBmpResId*  
  Seçili olmayan görüntü kaynak kimliği.  
   
- [in] `uiBmpHotResId`  
+ [in] *uiBmpHotResId*  
  Seçilen görüntü kaynak kimliği.  
   
- [in] `hIconDisabled`  
+ [in] *hIconDisabled*  
  Devre dışı görüntü simgesi için işleyin.  
   
- [in] `hBitmapDisabled`  
+ [in] *hBitmapDisabled*  
  Devre dışı görüntüsünü içeren bit eşlem işleyin.  
   
- [in] `uiBmpDsblResID`  
+ [in] *uiBmpDsblResID*  
  Bit eşlem'i devre dışı bırakılmış kaynak kimliği.  
   
- [in] `bAlphaBlend`  
+ [in] *bAlphaBlend*  
  `TRUE` alfa kanal kullanmak yalnızca 32-bit görüntüleri kullanmak için; `FALSE`, yalnızca alfa kanal görüntüleri kullanmayacak şekilde. Varsayılan, `FALSE` değeridir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -682,10 +682,10 @@ void SetFaceColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `crFace`  
+ [in] *crFace*  
  RGB renk değeri.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` Ekran hemen yeniden çizmek için; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -718,40 +718,40 @@ void SetImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hIcon`  
+ [in] *hIcon*  
  Bit eşlem ve yeni görüntüyü maskesini içeren simge için işleyin.  
   
- [in] `bAutoDestroy`  
+ [in] *bAutoDestroy*  
  `TRUE` bit eşlem kaynakları otomatik olarak; yok edilmesi belirtmek için Aksi takdirde `FALSE`. Varsayılan, `TRUE` değeridir.  
   
- [in] `hIconHot`  
+ [in] *hIconHot*  
  Seçilen durumu için görüntüyü içeren simge için işleyin.  
   
- [in] `hBitmap`  
+ [in] *Hbıtmap*  
  Seçili olmayan durumu için görüntüsünü içeren bit eşlem için işleyin.  
   
- [in] `hBitmapHot`  
+ [in] *hBitmapHot*  
  Seçili durum görüntüsünü içeren bit eşlem için işleyin.  
   
- [in] `uiBmpResId`  
+ [in] *uiBmpResId*  
  Seçili olmayan görüntü kaynak kimliği.  
   
- [in] `uiBmpHotResId`  
+ [in] *uiBmpHotResId*  
  Seçilen görüntü kaynak kimliği.  
   
- [in] `bMap3dColors`  
+ [in] *bMap3dColors*  
  Düğme arka planını saydam rengini belirtir. diğer bir deyişle, düğme yüzü. `TRUE` (192, 192, 192); RGB renk değeri kullanmak için `FALSE` tarafından tanımlanan renk değeri kullanmak için `AFX_GLOBAL_DATA::clrBtnFace`.  
   
- [in] `hIconDisabled`  
+ [in] *hIconDisabled*  
  Devre dışı görüntü simgesi için işleyin.  
   
- [in] `hBitmapDisabled`  
+ [in] *hBitmapDisabled*  
  Devre dışı görüntüsünü içeren bit eşlem işleyin.  
   
- [in] `uiBmpDsblResID`  
+ [in] *uiBmpDsblResID*  
  Bit eşlem'i devre dışı bırakılmış kaynak kimliği.  
   
- [in] `bAlphaBlend`  
+ [in] *bAlphaBlend*  
  `TRUE` alfa kanal kullanmak yalnızca 32-bit görüntüleri kullanmak için; `FALSE`, yalnızca alfa kanal görüntüleri kullanmayacak şekilde. Varsayılan, `FALSE` değeridir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -770,7 +770,7 @@ void SetMouseCursor(HCURSOR hcursor);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hcursor`  
+ [in] *hcursor*  
  Bir imleç işleci.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -803,13 +803,13 @@ void SetStdImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `id`  
+ [in] *kimliği*  
  Tanımlanan düğmesi görüntü tanımlayıcıları birini `CMenuImage::IMAGES_IDS` numaralandırması. Resim değerleri oklar, PIN ve radyo düğmeleri gibi yansımalarını belirtin.  
   
- [in] `state`  
+ [in] *durumu*  
  Tanımlanan düğmesi görüntü durumu tanımlayıcıları birini `CMenuImages::IMAGE_STATE` numaralandırması. Görüntü durumları düğme renkleri siyah, gri, açık gri beyaz ve koyu gri gibi belirtin. Varsayılan değer `CMenuImages::ImageBlack` şeklindedir.  
   
- [in] `idDisabled`  
+ [in] *idDisabled*  
  Tanımlanan düğmesi görüntü tanımlayıcıları birini `CMenuImage::IMAGES_IDS` numaralandırması. Görüntü düğmesi devre dışı olduğunu belirtir. İlk düğme resminin varsayılan değerdir ( `CMenuImages::IdArrowDown`).  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -822,7 +822,7 @@ void SetTextColor(COLORREF clrText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `clrText`  
+ [in] *clrText*  
  RGB renk değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -835,7 +835,7 @@ void SetTextHotColor(COLORREF clrTextHot);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `clrTextHot`  
+ [in] *clrTextHot*  
  RGB renk değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -848,7 +848,7 @@ void SetTooltip(LPCTSTR lpszToolTipText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszToolTipText`  
+ [in] *lpszToolTipText*  
  Araç ipucu metnini işaretçi. Araç İpucu devre dışı bırakmak için NULL belirtin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -861,7 +861,7 @@ virtual CSize SizeToContent(BOOL bCalcOnly=FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bCalcOnly`  
+ [in] *bCalcOnly*  
  `TRUE` hesaplar, ancak, yeni boyut düğmesinin değiştirmemeniz için; `FALSE` düğmenin boyutunu değiştirmek için. Varsayılan, `FALSE` değeridir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

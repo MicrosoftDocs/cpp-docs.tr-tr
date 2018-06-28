@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b2b2e8adccd77862b445d7e91df0b808967a31d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c105938fbca6abf98f46ff5c62c27bfa2b83a38e
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369170"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037427"
 ---
 # <a name="cmfcribbonapplicationbutton-class"></a>CMFCRibbonApplicationButton sınıfı
 Implements özel düğmesini uygulama penceresinin sol üst köşesinde yer. Düğme tıklatıldığında, genellikle ortak içeren menü açar **dosya** gibi komutlar **açık**, **kaydetmek**, ve **çıkış**.  
@@ -98,10 +98,10 @@ void SetImage(HBITMAP hBmp);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiBmpResID`  
+ [in] *uiBmpResID*  
  Uygulama düğmesi görüntülemek için kaynak kimliği görüntü.  
   
- [in] `hBmp`  
+ [in] *hBmp*  
  Uygulama düğmesi görüntülemek için bir bit eşlem için bir tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  

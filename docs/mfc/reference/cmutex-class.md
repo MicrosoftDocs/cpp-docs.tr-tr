@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50d2d68aedaf1d5560c39971e9dd5f74b4492ac6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f3bde85e64fe8593ec2637e767e8c3c70d3b8200
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372466"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038083"
 ---
 # <a name="cmutex-class"></a>CMutex sınıfı
 "Mutex" temsil eder — bir iş parçacığı birbirini dışlayan bir kaynağa erişim izni veren bir eşitleme nesnesi.  
@@ -74,13 +74,13 @@ CMutex(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bInitiallyOwn`  
+ *bInitiallyOwn*  
  Belirtir iş parçacığı oluşturma `CMutex` nesne başlangıçta tarafından mutex denetimli kaynak erişimi vardır.  
   
- `lpszName`  
- Adını `CMutex` nesnesi. Aynı ada sahip başka bir mutex varsa `lpszName` nesne işlem sınırlarında kullanılacaksa sağlanmalıdır. Varsa **NULL**, mutex adlandırılmamış olacaktır. Ad mevcut bir mutex eşleşirse, Oluşturucusu yeni yapılar `CMutex` adının mutex başvuruda bulunan nesne. Adı ile eşleşen bir mutex değil varolan bir eşitleme nesnesi oluşturma başarısız olur.  
+ *lpszName*  
+ Adını `CMutex` nesnesi. Aynı ada sahip başka bir mutex varsa *lpszName* nesne işlem sınırlarında kullanılacaksa sağlanmalıdır. Varsa **NULL**, mutex adlandırılmamış olacaktır. Ad mevcut bir mutex eşleşirse, Oluşturucusu yeni yapılar `CMutex` adının mutex başvuruda bulunan nesne. Adı ile eşleşen bir mutex değil varolan bir eşitleme nesnesi oluşturma başarısız olur.  
   
- `lpsaAttribute`  
+ *lpsaAttribute*  
  Mutex nesnesi için güvenlik öznitelikler. Bu yapı tam bir açıklaması için bkz: [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK'sındaki.  
   
 ### <a name="remarks"></a>Açıklamalar  

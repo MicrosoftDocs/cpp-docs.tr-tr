@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 21114a3c04f96f2867f5440d47e856958060233e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6b2b3c2ff247014a692a78084f42c208b4497023
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367922"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040239"
 ---
 # <a name="cmfccolordialog-class"></a>CMFCColorDialog sınıfı
 `CMFCColorDialog` Sınıfı, bir renk seçimi iletişim kutusunu gösterir.  
@@ -125,16 +125,16 @@ CMFCColorDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `clrInit`  
+ [in] *clrInit*  
  Varsayılan renk seçimi. Herhangi bir değer belirtilirse, RGB(0,0,0) (siyah) varsayılandır.  
   
- [in] `dwFlags`  
+ [in] *dwFlags*  
  (Ayrılmıştır.)  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  İletişim kutusunun üst veya sahibi penceresi için bir işaretçi.  
   
- [in] `hPal`  
+ [in] *hPal*  
  Renk paleti için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -182,7 +182,7 @@ void SetCurrentColor(COLORREF rgb);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rgb`  
+ [in] *rgb*  
  RGB renk değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -195,7 +195,7 @@ void SetNewColor(COLORREF rgb);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rgb`  
+ [in] *rgb*  
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) bir RGB rengi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -211,13 +211,13 @@ void SetPageOne(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `R`  
+ [in] *R*  
  RGB değeri kırmızı bileşeni belirtir.  
   
- [in] `G`  
+ [in] *G*  
  RGB değeri yeşil bileşeni belirtir.  
   
- [in] `B`  
+ [in] *B*  
  RGB değeri mavi bileşeni belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -233,13 +233,13 @@ void SetPageTwo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `R`  
+ [in] *R*  
  RGB değeri kırmızı bir bileşeni belirtir  
   
- [in] `G`  
+ [in] *G*  
  Bir RGB değeri yeşil bir bileşeni belirtir  
   
- [in] `B`  
+ [in] *B*  
  Bir RGB değeri mavi bir bileşeni belirtir  
   
 ### <a name="remarks"></a>Açıklamalar  

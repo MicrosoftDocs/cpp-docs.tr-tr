@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57f9eaa33abd0f24a1d584c5ba2a1e4d6f9e5d44
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1d7a15243f68143f043d12486f9fd21b27373a17
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374558"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039966"
 ---
 # <a name="coledispatchdriver-class"></a>COleDispatchDriver sınıfı
 OLE Otomasyon istemci tarafı uygular.  
@@ -89,7 +89,7 @@ class COleDispatchDriver
 ## <a name="remarks"></a>Açıklamalar  
  `COleDispatchDriver` bir taban sınıfı yok.  
   
- OLE gönderme arabirimleri nesnenin yöntemlere ve özelliklere erişim sağlar. Üye işlevlerini `COleDispatchDriver` ekleme, detach, oluşturma ve gönderme bağlantı türü sürüm `IDispatch`. Diğer üye işlevlerini çağırma basitleştirmek için değişken bağımsız değişken listeleri kullanma **IDispatch::Invoke**.  
+ OLE gönderme arabirimleri nesnenin yöntemlere ve özelliklere erişim sağlar. Üye işlevlerini `COleDispatchDriver` ekleme, detach, oluşturma ve gönderme bağlantı türü sürüm `IDispatch`. Diğer üye işlevlerini çağırma basitleştirmek için değişken bağımsız değişken listeleri kullanma `IDispatch::Invoke`.  
   
  Bu sınıf doğrudan kullanılabilir, ancak genelde yalnızca sınıfı Ekle Sihirbazı tarafından oluşturulan sınıflar tarafından kullanılır. Tür kitaplığı içeri aktararak yeni C++ sınıfları oluşturduğunuzda, yeni sınıflar türetilmiş `COleDispatchDriver`.  
   
@@ -115,10 +115,10 @@ void AttachDispatch(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpDispatch`  
+ *lpDispatch*  
  İşaretçi bir OLE `IDispatch` eklenmesi için nesne `COleDispatchDriver` nesne.  
   
- `bAutoRelease`  
+ *bAutoRelease*  
  Bu nesne kapsam dışına çıktığında yayımlanacak gönderme olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -137,13 +137,13 @@ COleDispatchDriver(LPDISPATCH lpDispatch, BOOL bAutoRelease = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpDispatch`  
+ *lpDispatch*  
  İşaretçi bir OLE `IDispatch` eklenmesi için nesne `COleDispatchDriver` nesne.  
   
- `bAutoRelease`  
+ *bAutoRelease*  
  Bu nesne kapsam dışına çıktığında yayımlanacak gönderme olup olmadığını belirtir.  
   
- `dispatchSrc`  
+ *dispatchSrc*  
  Başvuru mevcut bir `COleDispatchDriver` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -171,13 +171,13 @@ BOOL CreateDispatch(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `clsid`  
+ *CLSID*  
  Sınıf kimliği `IDispatch` oluşturulacak bağlantı nesnesi.  
   
- `pError`  
+ *pError*  
  İşaretçi oluşturulması kaynaklanan durum kodu tutacak bir OLE özel durum nesnesi.  
   
- `lpszProgID`  
+ *lpszProgID*  
  İşaretçi "Excel.Document.5" dağıtım nesnesi oluşturulacak Otomasyon nesnenin gibi programlama tanımlayıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -205,7 +205,7 @@ LPDISPATCH DetachDispatch();
  [!code-cpp[NVC_MFCOleContainer#5](../../mfc/codesnippet/cpp/coledispatchdriver-class_3.cpp)]  
   
 ##  <a name="getproperty"></a>  COleDispatchDriver::GetProperty  
- Belirtilen nesne özelliği alır `dwDispID`.  
+ Belirtilen nesne özelliği alır *dwDispID*.  
   
 ```  
 void GetProperty(
@@ -215,20 +215,20 @@ void GetProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDispID`  
+ *dwDispID*  
  Alınacak özelliği tanımlar.  
   
- `vtProp`  
+ *vtProp*  
  Alınacak özellik belirtir. Olası değerler için için Açıklamalar bölümüne bakın [COleDispatchDriver::InvokeHelper](#invokehelper).  
   
- `pvProp`  
- Özellik değeri alacak değişkeni adresidir. Tarafından belirtilen tür eşleşmelidir `vtProp`.  
+ *pvProp*  
+ Özellik değeri alacak değişkeni adresidir. Tarafından belirtilen tür eşleşmelidir *vtProp*.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#6](../../mfc/codesnippet/cpp/coledispatchdriver-class_4.cpp)]  
   
 ##  <a name="invokehelper"></a>  COleDispatchDriver::InvokeHelper  
- Nesne yöntemi veya özelliği tarafından belirtilen çağırır `dwDispID`, tarafından belirtilen bağlamda `wFlags`.  
+ Nesne yöntemi veya özelliği tarafından belirtilen çağırır *dwDispID*, tarafından belirtilen bağlamda *wFlags*.  
   
 ```  
 void AFX_CDECL InvokeHelper(
@@ -240,32 +240,32 @@ void AFX_CDECL InvokeHelper(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDispID`  
+ *dwDispID*  
  Yöntemi veya özelliği çağrılacak tanımlar.  
   
- `wFlags`  
- Çağrı bağlamında açıklayan bayrakları **IDispatch::Invoke**. biçimindeki telefon numarasıdır. Olası değerler listesi için bkz: `wFlags` parametresinde [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) Windows SDK'sındaki.  
+ *wFlags*  
+ Çağrı bağlamında açıklayan bayrakları **IDispatch::Invoke**. biçimindeki telefon numarasıdır. Olası değerler listesi için bkz: *wFlags* parametresinde [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) Windows SDK'sındaki.  
   
- `vtRet`  
+ *vtRet*  
  Dönüş değeri türünü belirtir. Olası değerler için Açıklamalar bölümüne bakın.  
   
- `pvRet`  
- Özellik değeri alır veya dönüş değeri değişken adresidir. Tarafından belirtilen tür eşleşmelidir `vtRet`.  
+ *pvRet*  
+ Özellik değeri alır veya dönüş değeri değişken adresidir. Tarafından belirtilen tür eşleşmelidir *vtRet*.  
   
- `pbParamInfo`  
- Aşağıdaki parametre türlerini belirtme bayt null ile sonlandırılmış dizeye işaretçi `pbParamInfo`.  
+ *pbParamInfo*  
+ Aşağıdaki parametre türlerini belirtme bayt null ile sonlandırılmış dizeye işaretçi *pbParamInfo*.  
   
  *...*  
- Belirtilen türlerinin parametrelerin değişken listesi `pbParamInfo`.  
+ Belirtilen türlerinin parametrelerin değişken listesi *pbParamInfo*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `pbParamInfo` Parametresi, yöntemi veya özelliği için geçirilen parametre türlerini belirtir. Bağımsız değişken listesi tarafından temsil edilen **...**  sözdizimi bildirimi.  
+ *PbParamInfo* parametresi, yöntemi veya özelliği için geçirilen parametre türlerini belirtir. Bağımsız değişken listesi tarafından temsil edilen **...**  sözdizimi bildirimi.  
   
- Olası değerler için `vtRet` bağımsız değişkeni gerçekleştirilecek `VARENUM` numaralandırması. Olası değerler aşağıdaki gibidir:  
+ Olası değerler için *vtRet* bağımsız değişkeni gerçekleştirilecek `VARENUM` numaralandırması. Olası değerler aşağıdaki gibidir:  
   
 |Simgesi|Dönüş Türü|  
 |------------|-----------------|  
-|`VT_EMPTY`|`void`|  
+|`VT_EMPTY`|**void**|  
 |`VT_I2`|**short**|  
 |`VT_I4`|**long**|  
 |`VT_R4`|**float**|  
@@ -273,15 +273,15 @@ void AFX_CDECL InvokeHelper(
 |`VT_CY`|**CY**|  
 |`VT_DATE`|**TARİH**|  
 |`VT_BSTR`|`BSTR`|  
-|**VT_DISPATCH**|`LPDISPATCH`|  
+|`VT_DISPATCH`|`LPDISPATCH`|  
 |`VT_ERROR`|`SCODE`|  
 |`VT_BOOL`|**BOOL**|  
-|**VT_VARIANT**|**DEĞİŞKEN**|  
-|**VT_UNKNOWN**|`LPUNKNOWN`|  
+|`VT_VARIANT`|**DEĞİŞKEN**|  
+|`VT_UNKNOWN`|`LPUNKNOWN`|  
   
- `pbParamInfo` Değişken değeri boşlukla ayrılmış bir listesini **VTS_** sabitleri. Bir veya daha fazla (değil virgüller), boşlukla ayrılmış bu değerleri işlev parametre listesi belirtir. Olası değerler ile listelenen [EVENT_CUSTOM](event-maps.md#event_custom) makrosu.  
+ *PbParamInfo* değişken değeri boşlukla ayrılmış bir listesini **VTS_** sabitleri. Bir veya daha fazla (değil virgüller), boşlukla ayrılmış bu değerleri işlev parametre listesi belirtir. Olası değerler ile listelenen [EVENT_CUSTOM](event-maps.md#event_custom) makrosu.  
   
- Bu işlev parametreleri dönüştürür **VARIANTARG** değerleri sonra çağırır [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) yöntemi. Varsa çağrısı `Invoke` başarısız olursa, bu işlev throw bir özel durum. Varsa `SCODE` (durum kodu) tarafından döndürülen **IDispatch::Invoke** olan `DISP_E_EXCEPTION`, bu işlev oluşturur bir [COleException](../../mfc/reference/coleexception-class.md) ; Aksi takdirde oluşturur nesnesi bir [ COleDispatchException](../../mfc/reference/coledispatchexception-class.md).  
+ Bu işlev parametreleri dönüştürür **VARIANTARG** değerleri sonra çağırır [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) yöntemi. Varsa çağrısı `Invoke` başarısız olursa, bu işlev throw bir özel durum. Varsa `SCODE` (durum kodu) tarafından döndürülen `IDispatch::Invoke` olan `DISP_E_EXCEPTION`, bu işlev oluşturur bir [COleException](../../mfc/reference/coleexception-class.md) ; Aksi takdirde oluşturur nesnesi bir [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).  
   
  Daha fazla bilgi için bkz: [VARIANTARG](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [IDispatch arabirimi uygulama](http://msdn.microsoft.com/library/windows/desktop/ms221037\(v=vs.85\).aspx), [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx), ve [yapısı, COM hata kodları](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK.  
   
@@ -326,7 +326,7 @@ const COleDispatchDriver& operator=(const COleDispatchDriver& dispatchSrc);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dispatchSrc`  
+ *dispatchSrc*  
  Var olan bir işaretçi `COleDispatchDriver` nesnesi.  
   
 ##  <a name="operator_lpdispatch"></a>  COleDispatchDriver::operator LPDISPATCH  
@@ -347,13 +347,13 @@ void ReleaseDispatch();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu bağlantı için otomatik bırakma ayarlanmışsa, bu işlevi çağırır **IDispatch::Release** arabirimi serbest önce.  
+ Bu bağlantı için otomatik bırakma ayarlanmışsa, bu işlevi çağırır `IDispatch::Release` arabirimi serbest önce.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [COleDispatchDriver::AttachDispatch](#attachdispatch).  
   
 ##  <a name="setproperty"></a>  COleDispatchDriver::SetProperty  
- OLE nesne özelliği tarafından belirtilen ayarlar `dwDispID`.  
+ OLE nesne özelliği tarafından belirtilen ayarlar *dwDispID*.  
   
 ```  
 void AFX_CDECL SetProperty(
@@ -362,14 +362,14 @@ void AFX_CDECL SetProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwDispID`  
+ *dwDispID*  
  Ayarlanacak özelliği tanımlar.  
   
- `vtProp`  
+ *vtProp*  
  Ayarlanacak özelliği türünü belirtir. Olası değerler için için Açıklamalar bölümüne bakın [COleDispatchDriver::InvokeHelper](#invokehelper).  
   
  *...*  
- Tek bir parametre tarafından belirtilen türde `vtProp`.  
+ Tek bir parametre tarafından belirtilen türde *vtProp*.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#7](../../mfc/codesnippet/cpp/coledispatchdriver-class_7.cpp)]  

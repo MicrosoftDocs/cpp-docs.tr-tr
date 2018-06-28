@@ -74,12 +74,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ddfa4d26ed0a4328714fbd1a921fe7c204ca3752
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 49142f4ad7ea9793bbe533be6430bce929adf9cc
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377372"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039200"
 ---
 # <a name="cmfctoolbarcomboboxbutton-class"></a>CMFCToolBarComboBoxButton sınıfı
 Birleşik giriş kutusu denetimi içeren bir araç çubuğu düğmesi ( [CComboBox sınıfı](../../mfc/reference/ccombobox-class.md)).  
@@ -138,7 +138,7 @@ class CMFCToolBarComboBoxButton : public CMFCToolBarButton
   
  2. Oluşturmak bir `CMFCToolBarComboBoxButton` nesnesi.  
   
- 3. İşler ileti işleyicisi'ndeki `AFX_WM_RESETTOOLBAR` iletisi, sahte düğmesini kullanarak yeni birleşik giriş kutusu düğmesi ile değiştirin [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).  
+ 3. AFX_WM_RESETTOOLBAR iletisini işler ileti işleyicisi kukla düğmesini kullanarak yeni birleşik giriş kutusu düğmesi ile değiştirin [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).  
   
  Daha fazla bilgi için bkz: [izlenecek yol: üzerinde denetimler koyma araç'çubukları](../../mfc/walkthrough-putting-controls-on-toolbars.md). Birleşik giriş kutusu araç çubuğu düğmesi bir örneği için örnek proje VisualStudioDemo bakın.  
   
@@ -168,10 +168,10 @@ virtual INT_PTR AddItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszItem`  
+ [in] *lpszItem*  
  Liste kutusu eklemek için öğenin metni.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Liste kutusu eklenecek öğe ile ilişkili veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -192,10 +192,10 @@ virtual INT_PTR AddSortedItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszItem`  
+ [in] *lpszItem*  
  Liste kutusu eklemek için öğenin metni.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Liste kutusu eklenecek öğe ile ilişkili veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -226,16 +226,16 @@ CMFCToolBarComboBoxButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiID`  
+ [in] *uiID*  
  Yeni düğmesini komut kimliği.  
   
- [in] `iImage`  
+ [in] *iImage*  
  Yeni düğmesi ile ilişkilendirilmiş görüntüsü görüntü dizini.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Yeni düğmesini stili.  
   
- [in] `iWidth`  
+ [in] *iWidth*  
  Yeni düğmesinin piksel cinsinden genişliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -263,10 +263,10 @@ virtual int Compare(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszItem1`  
+ [in] *lpszItem1*  
  Karşılaştırılacak ilk dize.  
   
- [in] `lpszItem2`  
+ [in] *lpszItem2*  
  Karşılaştırılacak ikinci dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -306,10 +306,10 @@ virtual CComboBox* CreateCombo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  Düğmenin üst pencere için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Birleşik giriş kutusu sınırlayıcı dikdörtgenini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -326,13 +326,13 @@ virtual CMFCToolBarComboBoxEdit* CreateEdit(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  Düğmenin üst pencere için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Yeni düzenleme kutusu sınırlayıcı dikdörtgenini.  
   
- [in] `dwEditStyle`  
+ [in] *dwEditStyle*  
  Yeni düzenleme kutusuna denetim stili.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -351,13 +351,13 @@ BOOL DeleteItem(DWORD_PTR dwData);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
  Silinecek öğenin sıfır tabanlı dizini.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Silinecek öğe ile ilişkili veriler.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Silinecek öğe metin. Aynı metnin ile birden çok öğe varsa, ilk öğe silindi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -383,7 +383,7 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` Düzenle ve birleşik giriş kutuları etkinleştirmek için; `FALSE` düzenleme ve birleşik giriş kutuları devre dışı bırakmak için.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -397,7 +397,7 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `menuButton`  
+ [out] *menuButton*  
  Menü düğmesi başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -411,7 +411,7 @@ int FindItem(LPCTSTR lpszText) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszText`  
+ [in] *lpszText*  
  Liste kutusunda Aranacak metin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -429,10 +429,10 @@ static CMFCToolBarComboBoxButton* GetByCmd(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  Birleşik giriş kutusu düğmesi komut kimliği.  
   
- [in] `bIsFocus`  
+ [in] *bIsFocus*  
  `TRUE` Yalnızca arama için düğmeler odaklanmış; `FALSE` tüm düğmeleri aramak için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -482,7 +482,7 @@ static int GetCountAll(UINT uiCmd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  Birleşik giriş kutusu düğmesi komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -511,7 +511,7 @@ static int GetCurSelAll(UINT uiCmd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  Birleşik giriş kutusu düğmesi komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -550,7 +550,7 @@ LPCTSTR GetItem(int iIndex=-1) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
  Liste kutusunda öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -569,10 +569,10 @@ static LPCTSTR GetItemAll(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  Birleşik giriş kutusu düğmesi komut kimliği.  
   
- [in] `iIndex`  
+ [in] *İIndex*  
  Liste kutusunda öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -589,7 +589,7 @@ DWORD_PTR GetItemData(int iIndex=-1) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
  Liste kutusunda öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -608,10 +608,10 @@ static DWORD_PTR GetItemDataAll(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  Birleşik giriş kutusu düğmesi komut kimliği.  
   
- [in] `iIndex`  
+ [in] *İIndex*  
  Liste kutusunda öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -630,10 +630,10 @@ static void* GetItemDataPtrAll(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  Birleşik giriş kutusu düğmesi komut kimliği.  
   
- [in] `iIndex`  
+ [in] *İIndex*  
  Liste kutusunda öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -674,7 +674,7 @@ static LPCTSTR GetTextAll(UINT uiCmd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  Belirli birleşik giriş kutusu düğmesi komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -728,7 +728,7 @@ virtual BOOL IsOwnerOf(HWND hwnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hwnd`  
+ [in] *hwnd*  
  Bir pencere işleci.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -765,7 +765,7 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iNotifyCode`  
+ [in] *iNotifyCode*  
  Komutu ile ilişkili bildirim iletisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -789,13 +789,13 @@ virtual SIZE OnCalculateSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Birleşik giriş kutusu düğmesi görüntüler cihaz bağlamı.  
   
- [in] `sizeDefault`  
+ [in] *sizeDefault*  
  Birleşik giriş kutusu düğmesi varsayılan boyutu.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  Üst araç çubuğu yerleştirme durumu. `TRUE` ne zaman araç yerleştirilmiştir yatay ve `FALSE` zaman araç yerleştirilmiştir dikey olarak.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -809,7 +809,7 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  Yeni üst araç işaretçi.  
   
 ##  <a name="onclick"></a>  CMFCToolBarComboBoxButton::OnClick  
@@ -822,10 +822,10 @@ virtual BOOL OnClick(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Birleşik giriş kutusu düğmesinin üst pencere işaretçi.  
   
- [in] `bDelay`  
+ [in] *bDelay*  
  Bir türetilmiş sınıfta kullanılmak üzere ayrılmıştır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -841,10 +841,10 @@ virtual HBRUSH OnCtlColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Birleşik giriş kutusu düğmesi görüntüler cihaz bağlamı.  
   
- [in] `nCtlColor`  
+ [in] *nCtlColor*  
  Kullanılmayan.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -869,28 +869,28 @@ virtual void OnDraw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `Pdc`  
+ [in] *Pdc*  
  Düğme görüntüler cihaz bağlamı.  
   
- [in] `rect`  
+ [in] *rect*  
  Düğmenin sınırlayıcı dikdörtgenini.  
   
- [in] `pImages`  
+ [in] *pImages*  
  Görüntüleri düğmesi ile ilişkili koleksiyonu.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  Üst araç çubuğu yerleştirme durumu. `TRUE` ne zaman araç yerleştirilmiştir yatay ve `FALSE` zaman araç yerleştirilmiştir dikey olarak.  
   
- [in] `bCustomizeMode`  
+ [in] *bCustomizeMode*  
  Uygulama özelleştirme modunda olup olmadığı.  
   
- [in] `bHighlight`  
+ [in] *bHighlight*  
  Birleşik giriş kutusu düğmesi vurgulanmış çizin görüntülenmeyeceğini belirtir.  
   
- [in] `bDrawBorder`  
+ [in] *bDrawBorder*  
  Birleşik giriş kutusu düğmesi kenarlık ile çizme görüntülenmeyeceğini belirtir.  
   
- [in] `bGrayDisabledButtons`  
+ [in] *bGrayDisabledButtons*  
  `TRUE` Gölgeli devre dışı düğmeleri çizmek için; `FALSE` devre dışı kullanmak için koleksiyon görüntüler.  
   
 ##  <a name="ondrawoncustomizelist"></a>  CMFCToolBarComboBoxButton::OnDrawOnCustomizeList  
@@ -904,13 +904,13 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Birleşik giriş kutusu düğmesi görüntüler cihaz bağlamı.  
   
- [in] `rect`  
+ [in] *rect*  
  Birleşik giriş kutusu düğmesi sınırlayıcı dikdörtgenini.  
   
- [in] `bSelected`  
+ [in] *bSelected*  
  `TRUE` Birleşik giriş kutusu düğmesi seçilirse; Aksi takdirde `FALSE`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -938,7 +938,7 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  Birleşik giriş kutusu düğmesi görüntülemek veya gizlemek kullanılıp belirtir.  
   
 ##  <a name="onsize"></a>  CMFCToolBarComboBoxButton::OnSize  
@@ -949,7 +949,7 @@ virtual void OnSize(int iSize);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iSize`  
+ [in] *iSize*  
  Birleşik giriş kutusu düğmesi yeni genişliği.  
   
 ##  <a name="onupdatetooltip"></a>  CMFCToolBarComboBoxButton::OnUpdateToolTip  
@@ -964,16 +964,16 @@ virtual BOOL OnUpdateToolTip(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  Birleşik giriş kutusu düğmesi için üst pencere işaretçi.  
   
- [in] `iButtonIndex`  
+ [in] *iButtonIndex*  
  Birleşik giriş kutusu düğmesi kimliği.  
   
- [in] `wndToolTip`  
+ [in] *wndToolTip*  
  Birleşik giriş kutusu düğmesi ile ilişkilendirmek için araç ipucu.  
   
- [in] `str`  
+ [in] *str*  
  Araç İpucu metni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1002,16 +1002,16 @@ BOOL SelectItem(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
  Liste kutusunda öğenin sıfır tabanlı dizini.  
   
- [in] `bNotify`  
+ [in] *bNotify*  
  `TRUE` Birleşik giriş kutusu düğmesi seçimin bildirmek için; Aksi takdirde `FALSE`.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Liste kutusunda bir öğesiyle ilişkili veriler.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Liste kutusunda bir öğenin metni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1039,16 +1039,16 @@ static BOOL SelectItemAll(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  Liste kutusu içeren birleşik giriş kutusu düğmesi komut kimliği.  
   
- [in] `iIndex`  
+ [in] *İIndex*  
  Liste kutusunda öğenin sıfır tabanlı dizini. -1 değeri liste kutusunda herhangi bir geçerli seçimi kaldırır ve düzenleme kutusuna temizler.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Liste kutusunda bir öğe verileri.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Liste kutusunda bir öğenin metni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1064,7 +1064,7 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [içinde out] `ar`  
+ [içinde out] *ar*  
  `CArchive` Nesne seri hale getirilemedi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1080,10 +1080,10 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParent`  
+ [in] *pParent*  
  Birleşik giriş kutusu düğmesi üst pencere.  
   
- [out] `data`  
+ [out] *veri*  
  A `CAccessibilityData` erişilebilirlik verileri birleşik giriş kutusu düğmesinden alan nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1097,7 +1097,7 @@ static void SetCenterVert(BOOL bCenterVert=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bCenterVert`  
+ [in] *bCenterVert*  
  `TRUE` Birleşik giriş kutusu düğmesi araç çubuğunda merkezine; `FALSE` birleşik giriş kutusu düğmesi araç üstüne hizalamak için.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1111,7 +1111,7 @@ void SetContextMenuID(UINT uiResID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiResID`  
+ [in] *uiResID*  
  Kısayol menüsü kaynak kimliği  
   
 ##  <a name="setdropdownheight"></a>  CMFCToolBarComboBoxButton::SetDropDownHeight  
@@ -1122,7 +1122,7 @@ void SetDropDownHeight(int nHeight);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nHeight`  
+ [in] *nHeight*  
  Liste kutusu piksel cinsinden yüksekliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1136,7 +1136,7 @@ static void SetFlatMode(BOOL bFlat=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bFlat`  
+ [in] *bFlat*  
  `TRUE` düz stil görünümü için; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1150,7 +1150,7 @@ virtual void SetStyle(UINT nStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nStyle`  
+ [in] *nStyle*  
  Bitsel bir birleşimi (veya) araç çubuğu stilleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1164,7 +1164,7 @@ void SetText(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszText`  
+ [in] *lpszText*  
  Metin düzenleme kutusu içeren bir dize işaretçi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

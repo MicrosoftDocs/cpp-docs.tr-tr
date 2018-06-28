@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e510811fcaac81aa54699250ef37f48ffe1f40e2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c3f601c2b15f5f117f77b1f916027107708e8f19
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374903"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038234"
 ---
 # <a name="coledropsource-class"></a>COleDropSource sınıfı
 Verilerin bir bırakma hedefi sürüklenen olanak tanır.  
@@ -90,7 +90,7 @@ virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dropEffect`  
+ *dropEffect*  
  Seçili verileri ile bu noktada bir açılan oluştu kullanıcıya görüntülemek istediğiniz etkisi, genellikle ne belirten gerçekleşir. Genellikle, en son çağrı tarafından döndürülen değer budur [CView::OnDragEnter](../../mfc/reference/cview-class.md#ondragenter) veya [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover). Aşağıdakilerden birini veya birkaçını olabilir:  
   
 - `DROPEFFECT_NONE` Bir açılan izin verilmez.  
@@ -119,7 +119,7 @@ virtual BOOL OnBeginDrag(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  Seçili verileri içeren bir pencere noktalarına.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -141,7 +141,7 @@ virtual SCODE QueryContinueDrag(
  *bEscapePressed*  
  Son çağrısından sonra ESC tuşuna basılı olup olmadığını belirten `COleDropSource::QueryContinueDrag`.  
   
- `dwKeyState`  
+ *dwKeyState*  
  Klavyedeki değiştirici tuşları durumunu içerir. Bu aşağıdaki herhangi bir sayıda birleşiminden oluşur: **MK_CONTROL**, **MK_SHIFT**, **MK_ALT**, **MK_LBUTTON**, **MK_ MBUTTON**, ve **MK_RBUTTON**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09a701498b47957f64558fe42408ff64351c238b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 74efac50304554af3224b8b707b29a31248143f6
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372962"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042075"
 ---
 # <a name="cmfctooltipctrl-class"></a>CMFCToolTipCtrl sınıfı
 Genişletilmiş araç ipucu uygulaması temel alarak [CToolTipCtrl sınıfı](../../mfc/reference/ctooltipctrl-class.md). Bir araç ipucu temel alarak `CMFCToolTipCtrl` sınıfı bir simge, bir etiket ve açıklama görüntüleyebilirsiniz. Gradyan Dolgu, özel metin ve renkler, kalın metin, yuvarlatılmış köşeleri veya balon stil kullanarak görünümünü özelleştirebilirsiniz.  
@@ -169,7 +169,7 @@ CMFCToolTipCtrl(CMFCToolTipInfo* pParams = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParams`  
+ [in] *pParams*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -204,13 +204,13 @@ virtual void OnDrawBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `[in] pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı işaretçi.  
   
- `[in] rect`  
+ [in] *rect*  
  Sınırlayıcı dikdörtgenini araç ipucu.  
   
- `[in] clrLine`  
+ [in] *clrLine*  
  Kenarlık rengi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -227,9 +227,9 @@ virtual CSize OnDrawDescription(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
- [in] `bCalcOnly`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bCalcOnly*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -245,10 +245,10 @@ virtual BOOL OnDrawIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Simge koordinatları.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -268,13 +268,13 @@ virtual CSize OnDrawLabel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `[in] pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- `[in] rect`  
+ [in] *rect*  
  Etiket alanı sınırlayıcı dikdörtgenini.  
   
- `[in] bCalcOnly`  
+ [in] *bCalcOnly*  
  Varsa `TRUE`, etiket değil çizileceğini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -295,16 +295,16 @@ virtual void OnDrawSeparator(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `x1`  
+ [in] *x1*  
  Ayırıcının solundaki yatay koordinatı.  
   
- [in] `x2`  
+ [in] *x2*  
  Ayırıcı sağ ucunu yatay koordinatı.  
   
- [in] `Y`  
+ [in] *Y*  
  Ayırıcı dikey koordinatı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -324,20 +324,20 @@ virtual void OnFillBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `[in] pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- `[in] rect`  
+ [in] *rect*  
  Doldurmak için alan sınırlayıcı dikdörtgenini belirtir.  
   
- `[in] clrText`  
+ [in] *clrText*  
  Araç İpucu ön plan rengi.  
   
- `[in] clrLine`  
+ [in] *clrLine*  
  Kenarlıklar ve etiket ve açıklama arasında sınırlayıcı çizgi rengi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama tarafından belirtilen dikdörtgen doldurur `rect` renk veya en son çağrı tarafından belirtilen desenle [CMFCToolTipCtrl::SetParams](#setparams).  
+ Varsayılan uygulama tarafından belirtilen dikdörtgen doldurur *rect* renk veya en son çağrı tarafından belirtilen desenle [CMFCToolTipCtrl::SetParams](#setparams).  
   
  Araç İpucu görünümünü özelleştirmek istiyorsanız bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
   
@@ -349,7 +349,7 @@ virtual void SetDescription(const CString strDesrciption);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `[in] strDesrciption`  
+ [in] *strDesrciption*  
  Açıklama metni.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -365,8 +365,8 @@ void SetFixedWidth(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nWidthRegular`  
- [in] `nWidthLargeImage`  
+ [in] *nWidthRegular*  
+ [in] *nWidthLargeImage*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -378,7 +378,7 @@ void SetHotRibbonButton(CMFCRibbonButton* pRibbonButton);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pRibbonButton`  
+ [in] *pRibbonButton*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -390,7 +390,7 @@ void SetLocation(CPoint pt);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pt`  
+ [in] *pt*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -402,11 +402,11 @@ void SetParams(CMFCToolTipInfo* pParams);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `[in] pParams`  
+ [in] *pParams*  
  İşaretçi bir [CMFCToolTipInfo sınıfı](../../mfc/reference/cmfctooltipinfo-class.md) görüntüleme parametreleri içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ne zaman araç ipucu, renkler kullanarak çizilir ve görsel stilleri `pParams` belirtir. Değeri `pParams` korumalı üye depolanan `m_Params`, hangi erişilebilir kılan türetilmiş bir sınıf tarafından [CMFCToolTipCtrl::OnDrawBorder](#ondrawborder), [CMFCToolTipCtrl::OnDrawIcon](#ondrawicon), [CMFCToolTipCtrl::OnDrawLabel](#ondrawlabel), [CMFCToolTipCtrl::OnDrawSeparator](#ondrawseparator), veya [CMFCToolTipCtrl::OnFillBackground](#onfillbackground) korumak için Belirtilen görünüm.  
+ Ne zaman araç ipucu, renkler kullanarak çizilir ve görsel stilleri *pParams* belirtir. Değeri *pParams* korumalı üye depolanan `m_Params`, hangi erişilebilir kılan türetilmiş bir sınıf tarafından [CMFCToolTipCtrl::OnDrawBorder](#ondrawborder), [CMFCToolTipCtrl: : OnDrawIcon](#ondrawicon), [CMFCToolTipCtrl::OnDrawLabel](#ondrawlabel), [CMFCToolTipCtrl::OnDrawSeparator](#ondrawseparator), veya [CMFCToolTipCtrl::OnFillBackground](#onfillbackground)belirtilen görünümünü korumak için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

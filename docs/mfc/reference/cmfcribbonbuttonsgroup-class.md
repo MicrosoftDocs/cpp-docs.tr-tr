@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7a38e9ba4c01e5f3d92640f5ec55c63a45d70fc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 23f3672a3b78b1bf86c481b6991c003267e6b0bf
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368865"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037440"
 ---
 # <a name="cmfcribbonbuttonsgroup-class"></a>CMFCRibbonButtonsGroup sınıfı
 `CMFCRibbonButtonsGroup` Sınıfı, bir grup olarak bir dizi Şerit düğmesi düzenlemenizi sağlar. Gruptaki tüm düğmeleri yatay olarak birbirleriyle doğrudan bitişik ve bir kenarlığı içine alınmalıdır.  
@@ -106,7 +106,7 @@ void AddButton(CMFCRibbonBaseElement* pButton);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi eklemek için bir düğme.  
   
 ##  <a name="addbuttons"></a>  CMFCRibbonButtonsGroup::AddButtons  
@@ -118,7 +118,7 @@ void AddButtons(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lstButtons`  
+ [in] *lstButtons*  
  Eklemek istediğiniz düğmelerini işaretçileri listesi.  
   
 ##  <a name="cmfcribbonbuttonsgroup"></a>  CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup  
@@ -130,7 +130,7 @@ CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
+ [in] *pButton*  
  Yeni oluşturulan eklemek için bir düğmeye belirtir `CMFCRibbonButtonsGroup` nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -145,7 +145,7 @@ CMFCRibbonBaseElement* GetButton(int i) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `i`  
+ [in] *t*  
  Döndürülecek bir düğme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -183,7 +183,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Şerit grubunun cihaz bağlamı işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -214,16 +214,16 @@ virtual void OnDrawImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Cihaz bağlamında işaretçi `CMFCRibbonButtonsGroup` nesnesi.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Dikdörtgen resim çizmek için içinde.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Düğme için resim çizmek için.  
   
- [in] `nImageIndex`  
+ [in] *nImageIndex*  
  (Birinde normal, vurgulanan veya devre dışı düğmelerinin üç resim Diziler) düğmesine çizmek için resmin dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -248,13 +248,13 @@ void SetImages(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pImages`  
+ [in] *pImages*  
  Normal görüntüler.  
   
- [in] `pHotImages`  
+ [in] *pHotImages*  
  Sık kullanılan görüntüler.  
   
- [in] `pDisabledImages`  
+ [in] *pDisabledImages*  
  Devre dışı görüntüler.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -271,7 +271,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pCategory);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pCategory`  
+ [in] *pCategory*  
  Ayarlamak için üst kategori işaretçisine (Şerit denetimleri sekmeli gruplarında kategoriler olarak adlandırılır).  
   
 ### <a name="remarks"></a>Açıklamalar  

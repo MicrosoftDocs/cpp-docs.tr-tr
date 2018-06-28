@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb52739977b641cd5d52f018efcd30a51ecf1e32
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fec20d8bb960d48392f2d174dab9ee6497738c80
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373139"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039608"
 ---
 # <a name="coledroptarget-class"></a>COleDropTarget sınıfı
 Bir pencere OLE kitaplıklarının arasındaki iletişim mekanizması sağlar.  
@@ -110,20 +110,20 @@ virtual DROPEFFECT OnDragEnter(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  İmleç girme noktaları penceresine.  
   
- `pDataObject`  
+ *pDataObject*  
  İşaret eder bırakılabilir verileri içeren veri nesnesi.  
   
- `dwKeyState`  
+ *dwKeyState*  
  Değiştirici tuşları durumunu içerir. Bu aşağıdaki herhangi bir sayıda birleşiminden oluşur: **MK_CONTROL**, **MK_SHIFT**, **MK_ALT**, **MK_LBUTTON**, **MK_ MBUTTON**, ve **MK_RBUTTON**.  
   
- `point`  
+ *Noktası*  
  İstemci koordinatları imleci geçerli konumunu içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir açılan tarafından belirtilen konumda girişiminde bulunuldu, ortaya çıkabilecek etkisi `point`. Aşağıdakilerden birini veya birkaçını olabilir:  
+ Bir açılan tarafından belirtilen konumda girişiminde bulunuldu, ortaya çıkabilecek etkisi *noktası*. Aşağıdakilerden birini veya birkaçını olabilir:  
   
 - `DROPEFFECT_NONE` Bir açılan izin verilmez.  
   
@@ -148,7 +148,7 @@ virtual void OnDragLeave(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  İmleç bırakarak noktaları penceresine.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -168,20 +168,20 @@ virtual DROPEFFECT OnDragOver(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  İmleç üzerinden penceresi noktalarına.  
   
- `pDataObject`  
+ *pDataObject*  
  Kesilmesini istediğiniz verileri içeren veri nesnesi noktalarına.  
   
- `dwKeyState`  
+ *dwKeyState*  
  Değiştirici tuşları durumunu içerir. Bu aşağıdaki herhangi bir sayıda birleşiminden oluşur: **MK_CONTROL**, **MK_SHIFT**, **MK_ALT**, **MK_LBUTTON**, **MK_ MBUTTON**, ve **MK_RBUTTON**.  
   
- `point`  
+ *Noktası*  
  İstemci koordinatları imleci geçerli konumunu içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir açılan tarafından belirtilen konumda girişiminde bulunuldu, ortaya çıkabilecek etkisi `point`. Aşağıdakilerden birini veya birkaçını olabilir:  
+ Bir açılan tarafından belirtilen konumda girişiminde bulunuldu, ortaya çıkabilecek etkisi *noktası*. Aşağıdakilerden birini veya birkaçını olabilir:  
   
 - `DROPEFFECT_NONE` Bir açılan izin verilmez.  
   
@@ -202,7 +202,7 @@ virtual DROPEFFECT OnDragOver(
  [!code-cpp[NVC_MFCOleContainer#21](../../mfc/codesnippet/cpp/coledroptarget-class_1.cpp)]  
   
 ##  <a name="ondragscroll"></a>  COleDropTarget::OnDragScroll  
- Çağırmadan önce framework tarafından çağrılan [OnDragEnter](#ondragenter) veya [OnDragOver](#ondragover) belirlemek için olup olmadığını `point` kaydırma bölgede değil.  
+ Çağırmadan önce framework tarafından çağrılan [OnDragEnter](#ondragenter) veya [OnDragOver](#ondragover) belirlemek için olup olmadığını *noktası* kaydırma bölgede değil.  
   
 ```  
 virtual DROPEFFECT OnDragScroll(
@@ -212,17 +212,17 @@ virtual DROPEFFECT OnDragScroll(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  İmleç penceresine noktaları şu anda üzerinden.  
   
- `dwKeyState`  
+ *dwKeyState*  
  Değiştirici tuşları durumunu içerir. Bu aşağıdaki herhangi bir sayıda birleşiminden oluşur: **MK_CONTROL**, **MK_SHIFT**, **MK_ALT**, **MK_LBUTTON**, **MK_ MBUTTON**, ve **MK_RBUTTON**.  
   
- `point`  
+ *Noktası*  
  İmleç, piksel cinsinden ekran göreli konumunu içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir açılan tarafından belirtilen konumda girişiminde bulunuldu, ortaya çıkabilecek etkisi `point`. Aşağıdakilerden birini veya birkaçını olabilir:  
+ Bir açılan tarafından belirtilen konumda girişiminde bulunuldu, ortaya çıkabilecek etkisi *noktası*. Aşağıdakilerden birini veya birkaçını olabilir:  
   
 - `DROPEFFECT_NONE` Bir açılan izin verilmez.  
   
@@ -249,13 +249,13 @@ virtual BOOL OnDrop(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  İmleç penceresine noktaları şu anda üzerinden.  
   
- `pDataObject`  
+ *pDataObject*  
  Kesilmesini istediğiniz verileri içeren veri nesnesi noktalarına.  
   
- `dropEffect`  
+ *dropEffect*  
  Bırakma işlemi için kullanıcının seçtiği etkisi. Aşağıdakilerden birini veya birkaçını olabilir:  
   
 - `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilmesi.  
@@ -264,7 +264,7 @@ virtual BOOL OnDrop(
   
 - `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
   
- `point`  
+ *Noktası*  
  İmleç, piksel cinsinden ekran göreli konumunu içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -290,23 +290,23 @@ virtual DROPEFFECT OnDropEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  İmleç penceresine noktaları şu anda üzerinden.  
   
- `pDataObject`  
+ *pDataObject*  
  Kesilmesini istediğiniz verileri içeren veri nesnesi noktalarına.  
   
- `dropDefault`  
+ *dropDefault*  
  Geçerli anahtar durumuna göre varsayılan bırakma işlemi için kullanıcının seçtiği etkisi. Bu olabilir `DROPEFFECT_NONE`. Açılan efektler açıklamalar bölümünde ele alınmıştır.  
   
- `dropList`  
+ *Listeyi*  
  Bırakma kaynağı destekleyen açılan etkilerini listesi. Bit düzeyinde OR kullanarak doğrudan etkisi değerleri birleştirilebilir ( **&#124;**) işlemi. Açılan efektler açıklamalar bölümünde ele alınmıştır.  
   
- `point`  
+ *Noktası*  
  İmleç, piksel cinsinden ekran göreli konumunu içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tarafından belirtilen konumda bırak girişimi kullanmasından kaynaklanan açılan etkisi `point`. Açılan efektler açıklamalar bölümünde ele alınmıştır.  
+ Tarafından belirtilen konumda bırak girişimi kullanmasından kaynaklanan açılan etkisi *noktası*. Açılan efektler açıklamalar bölümünde ele alınmıştır.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Framework önce bu işlevi çağırır. Açılan işlemez, framework sonra çağırması [OnDrop](#ondrop). Genellikle, geçersiz kılar [OnDropEx](../../mfc/reference/cview-class.md#ondropex) sağ fare düğmesini desteklemek için view sınıfı sürükle ve bırak. Genellikle, görünüm sınıfı [OnDrop](../../mfc/reference/cview-class.md#ondrop) basit sürükle ve bırak desteği durumu işlemek için kullanılır.  
@@ -335,7 +335,7 @@ BOOL Register(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  Bırakma hedefi olarak kaydedilmesi için pencereyi noktalarına.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

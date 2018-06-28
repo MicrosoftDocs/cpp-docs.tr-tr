@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd68493c9be5eb0bff63504cf49b38b9a2f216d4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 706cc03e3f0a074e68d0e92acdce5a747552819b
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375943"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038215"
 ---
 # <a name="coleobjectfactory-class"></a>COleObjectFactory sınıfı
 Implements OLE sunucuları, Otomasyon nesneleri ve belgeler gibi OLE nesneleri oluşturur fabrika sınıfı.  
@@ -137,29 +137,29 @@ COleObjectFactory(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `clsid`  
+ *CLSID*  
  Bu nesne üreteci temsil eder OLE sınıfı Kimliğine başvuru.  
   
- `pRuntimeClass`  
+ *pRuntimeClass*  
  Çalışma zamanı sınıfı bu Fabrika oluşturabilirsiniz C++ nesnelerinin işaretçi.  
   
- `bMultiInstance`  
+ *bMultiInstance*  
  Tek bir örnek uygulamanın birden fazla desteği olup olmadığını gösterir. Varsa **doğru**, uygulamanın birden çok örneğini bir nesne oluşturmak her istek için başlatılır.  
   
- `nFlags`  
+ *nFlags*  
  Bir veya daha fazla aşağıdaki bayraklar içerir:  
   
 - **afxRegDefault** ThreadingModel için iş parçacığı modelini ayarlar Grup =.  
   
 - **Afxregınsertable** görünmesi denetimi sağlar **Nesne Ekle** OLE nesneleri için iletişim kutusu.  
   
-- `afxRegApartmentThreading` İş parçacığı modelini ThreadingModel için kayıt defterindeki ayarlar Grup =.  
+- **afxRegApartmentThreading** ThreadingModel için kayıt defterindeki iş parçacığı modelini ayarlar Grup =.  
   
 - **afxRegFreeThreading** ThreadingModel için kayıt defterindeki iş parçacığı modelini ayarlar serbest =.  
   
      İki bayrak birleştirebilirsiniz `afxRegApartmentThreading` ve `afxRegFreeThreading` ThreadingModel ayarlamak için her ikisini de =. Bkz: [Inprocserver32](http://msdn.microsoft.com/library/windows/desktop/ms682390) modeli kaydı iş parçacığı oluşturma hakkında daha fazla bilgi için Windows SDK'sındaki.  
   
- `lpszProgID`  
+ *lpszProgID*  
  "Microsoft Excel." gibi bir sözlü program tanımlayıcısını içeren bir dize işaretçi  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -181,7 +181,7 @@ REFCLSID GetClassID() const;
  Daha fazla bilgi için bkz: [CLSID anahtarı](http://msdn.microsoft.com/library/windows/desktop/ms691424) Windows SDK'sındaki.  
   
 ##  <a name="getlicensekey"></a>  COleObjectFactory::GetLicenseKey  
- Denetimin DLL'den benzersiz lisans anahtarı ister ve depolar `BSTR` gösterdiği `pbstrKey`.  
+ Denetimin DLL'den benzersiz lisans anahtarı ister ve depolar `BSTR` gösterdiği *pbstrKey*.  
   
 ```  
 virtual BOOL GetLicenseKey(
@@ -190,10 +190,10 @@ virtual BOOL GetLicenseKey(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwReserved`  
+ *dwReserved*  
  Daha sonraki kullanımlar için ayrılmıştır.  
   
- `pbstrKey`  
+ *pbstrKey*  
  İşaretçi bir `BSTR` lisans anahtarı depolar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -300,10 +300,10 @@ virtual BOOL UpdateRegistry(BOOL bRegister);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszProgID`  
+ *lpszProgID*  
  "Excel.Document.5." gibi okunabilir program tanımlayıcısını içeren bir dize işaretçi  
   
- `bRegister`  
+ *bRegister*  
  Denetim sınıfının nesne üreteci kaydedilmesi olup olmadığını belirler.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -311,7 +311,7 @@ virtual BOOL UpdateRegistry(BOOL bRegister);
   
 - **UpdateRegistry (** `lpszProgID` **)** OLE sistem kayıt defteri ile bu nesne üreteci kaydeder. Bu işlev genellikle tarafından çağrılır [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) uygulama başlatıldığı zaman.  
   
-- **UpdateRegistry (** `bRegister` **)** bu işlevi geçersiz kılınabilir biçimidir. Varsa `bRegister` olan **doğru**, bu işlev control sınıfı sistem kayıt defteri ile kaydeder. Aksi takdirde, sınıf kaydını siler.  
+- **UpdateRegistry (** `bRegister` **)** bu işlevi geçersiz kılınabilir biçimidir. Varsa *bRegister* olan **doğru**, bu işlev control sınıfı sistem kayıt defteri ile kaydeder. Aksi takdirde, sınıf kaydını siler.  
   
      MFC ActiveX ControlWizard projenizi oluşturmak için kullanırsanız, bu saf sanal işlevi geçersiz kılma ControlWizard sağlar.  
   
@@ -323,7 +323,7 @@ static BOOL PASCAL UpdateRegistryAll(BOOL bRegister = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bRegister`  
+ *bRegister*  
  Denetim sınıfının nesne üreteci kaydedilmesi olup olmadığını belirler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -340,14 +340,14 @@ virtual BOOL VerifyLicenseKey(BSTR bstrKey);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bstrKey`  
+ *bstrKey*  
  A `BSTR` lisans dize kapsayıcının sürümünü depolamayı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Çalışma zamanı lisans geçerliyse sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan sürüm çağrıları [GetLicenseKey](#getlicensekey) denetimi bir kopyasını almak için lisans dize adı ve dizesinde ile karşılaştırır `bstrKey`. İki dizeyi eşleşiyorsa işlevi sıfır olmayan bir değer döndürür; Aksi halde 0 döndürür.  
+ Varsayılan sürüm çağrıları [GetLicenseKey](#getlicensekey) denetimi bir kopyasını almak için lisans dize adı ve dizesinde ile karşılaştırır *bstrKey*. İki dizeyi eşleşiyorsa işlevi sıfır olmayan bir değer döndürür; Aksi halde 0 döndürür.  
   
  Lisans özelleştirilmiş doğrulama sağlamak için bu işlevi geçersiz kılabilirsiniz.  
   

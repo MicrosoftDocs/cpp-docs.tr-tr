@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd5dd96c51c6b4ff5d3376581ddd760a2741968a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dea815ef86b16ad472303fd53da5c51e333b13a3
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368328"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037388"
 ---
 # <a name="cmfcimagepaintarea-class"></a>CMFCImagePaintArea sınıfı
 Görüntü Düzenleyicisi iletişim kutusunda bir görüntüsünü değiştirmek için kullanın resim alanı sağlar.  
@@ -98,7 +98,7 @@ CMFCImagePaintArea(CMFCImageEditorDialog* pParentDlg);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `pParentDlg`|Görüntü Düzenleyicisi üst iletişim kutusu için bir işaretçi.|  
+|[in] *pParentDlg*|Görüntü Düzenleyicisi üst iletişim kutusu için bir işaretçi.|  
   
 ##  <a name="getmode"></a>  CMFCImagePaintArea::GetMode  
  Geçerli çizim modunu alır.  
@@ -122,10 +122,10 @@ void SetBitmap(CBitmap* pBitmap);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `pBitmap`|Görüntülenecek yeni bit eşlem resim.|  
+|[in] *pBitmap*|Görüntülenecek yeni bit eşlem resim.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `pBitmap` olan `NULL`, bu yöntem değiştirilebilir boyama alanının boyutunu sıfır olarak ayarlar. Aksi takdirde, sağlanan bit eşlem resim boyutunu değiştirilebilir boyama alanının boyutunu ayarlar.  
+ Varsa *pBitmap* olan `NULL`, bu yöntem değiştirilebilir boyama alanının boyutunu sıfır olarak ayarlar. Aksi takdirde, sağlanan bit eşlem resim boyutunu değiştirilebilir boyama alanının boyutunu ayarlar.  
   
 ##  <a name="setcolor"></a>  CMFCImagePaintArea::SetColor  
  Geçerli çizim rengini belirler.  
@@ -139,7 +139,7 @@ void SetColor(COLORREF color);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `color`|Yeni Çizim rengi.|  
+|[in] *rengi*|Yeni Çizim rengi.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ne zaman bir renk görüntü Düzenleyicisi palet çubuğundan seçin veya Renk Seçici, framework geçerli çizim renk güncelleştirmek için bu yöntemi çağırır. İlk çizim rengi siyah (bir `COLORREF` 0 değeri).  
@@ -158,7 +158,7 @@ void SetMode(IMAGE_EDIT_MODE mode);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `mode`|Bir [ımage_edıt_mode](cmfcimagepaintarea-image-edit-mode-enumeration.md) geçerli çizim modu belirten değer.|  
+|[in] *modu*|Bir [ımage_edıt_mode](cmfcimagepaintarea-image-edit-mode-enumeration.md) geçerli çizim modu belirten değer.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

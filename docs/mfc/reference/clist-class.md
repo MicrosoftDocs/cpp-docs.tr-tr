@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2a84e73c165efd8f2f17e66af149e33d90395e8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 25337104da2f1ff397d3c61170ab6ad5a8817130
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372527"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039147"
 ---
 # <a name="clist-class"></a>CList sınıfı
 Sıralı olarak veya değere göre sıralı listeler erişilebilir verildiğinden nesnelerin destekler.  
@@ -151,14 +151,14 @@ void AddHead(CList* pNewList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Şablon parametresi (bir başvuru olabilir) liste öğesi türünü belirtme.  
   
- `newElement`  
+ *newElement*  
  Yeni öğe.  
   
- `pNewList`  
- Başka bir işaretçi `CList` listesi. Öğeleri `pNewList` bu listeye eklenir.  
+ *pNewList*  
+ Başka bir işaretçi `CList` listesi. Öğeleri *pNewList* bu listeye eklenir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk sürüm döndürür **konumu** yeni eklenen öğesinin değeri.  
@@ -178,14 +178,14 @@ void AddTail(CList* pNewList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Şablon parametresi (bir başvuru olabilir) liste öğesi türünü belirtme.  
   
- `newElement`  
+ *newElement*  
  Bu listeye eklenecek öğe.  
   
- `pNewList`  
- Başka bir işaretçi `CList` listesi. Öğeleri `pNewList` bu listeye eklenir.  
+ *pNewList*  
+ Başka bir işaretçi `CList` listesi. Öğeleri *pNewList* bu listeye eklenir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk sürüm döndürür **konumu** yeni eklenen öğesinin değeri.  
@@ -204,17 +204,17 @@ CList(INT_PTR nBlockSize = 10);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nBlockSize`  
+ *nBlockSize*  
  Listenin genişletmek için bellek ayırma ayrıntı düzeyi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Listenin büyüdükçe, bellek, biriminde ayrılır `nBlockSize` girişleri.  
+ Listenin büyüdükçe, bellek, biriminde ayrılır *nBlockSize* girişleri.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#38](../../mfc/codesnippet/cpp/clist-class_4.cpp)]  
   
 ##  <a name="find"></a>  CList::Find  
- Sıralı olarak belirtilen eşleşen ilk öğe bulmak için listeyi arar `searchValue`.  
+ Sıralı olarak belirtilen eşleşen ilk öğe bulmak için listeyi arar *searchValue*.  
   
 ```  
 POSITION Find(
@@ -223,13 +223,13 @@ POSITION Find(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Şablon parametresi (bir başvuru olabilir) liste öğesi türünü belirtme.  
   
- `searchValue`  
+ *searchValue*  
  Listede bulunacak değer.  
   
- `startAfter`  
+ *startAfter*  
  Arama için başlangıç konumu. Herhangi bir değer belirtilirse, arama head öğesi ile başlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -239,18 +239,18 @@ POSITION Find(
  [!code-cpp[NVC_MFCCollections#39](../../mfc/codesnippet/cpp/clist-class_5.cpp)]  
   
 ##  <a name="findindex"></a>  CList::FindIndex  
- Değerini kullanır `nIndex` listesine bir dizin olarak.  
+ Değerini kullanır *nIndex* listesine bir dizin olarak.  
   
 ```  
 POSITION FindIndex(INT_PTR nIndex) const;  
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Bulunacak liste öğesinin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A **konumu** yineleme veya nesne işaretçi alma; için kullanılan değer **NULL** varsa `nIndex` negatif veya çok büyük.  
+ A **konumu** yineleme veya nesne işaretçi alma; için kullanılan değer **NULL** varsa *nIndex* negatif veya çok büyük.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Durduruluyor listenin başındaki gelen sıralı bir tarama başlamadan *n*th öğesi.  
@@ -338,7 +338,7 @@ POSITION GetHeadPosition() const;
  [!code-cpp[NVC_MFCCollections#42](../../mfc/codesnippet/cpp/clist-class_8.cpp)]  
   
 ##  <a name="getnext"></a>  CList::GetNext  
- Tarafından tanımlanan liste öğesi alır `rPosition`, ardından ayarlar `rPosition` için **konumu** listesinde sonraki girdisinin değeri.  
+ Tarafından tanımlanan liste öğesi alır *rPosition*, ardından ayarlar *rPosition* için **konumu** listesinde sonraki girdisinin değeri.  
   
 ```  
 TYPE& GetNext(POSITION& rPosition);  
@@ -349,7 +349,7 @@ const TYPE& GetNext(POSITION& rPosition) const;
  *TÜRÜ*  
  Listedeki öğelerin türü belirten bir şablon parametre.  
   
- `rPosition`  
+ *rPosition*  
  Bir başvuru bir **konumu** önceki tarafından döndürülen değer `GetNext`, [GetHeadPosition](#getheadposition), ya da diğer üye işlev çağrısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -358,7 +358,7 @@ const TYPE& GetNext(POSITION& rPosition) const;
  Listede değilse **const**, `GetNext` liste öğesi için bir başvuru döndürür. Bu atama ifadesinin iki tarafında kullanılacak işlevi sağlar ve böylece değiştirilecek Liste girişlerini sağlar.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanabileceğiniz `GetNext` çağrısıyla ilk konum kurarsanız ileriye doğru yineleme döngü `GetHeadPosition` veya **Bul**.  
+ Kullanabileceğiniz `GetNext` çağrısıyla ilk konum kurarsanız ileriye doğru yineleme döngü `GetHeadPosition` veya `Find`.  
   
  Emin olmanız gerekir, **konumu** değer listesinde geçerli bir konumu temsil eder. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.  
   
@@ -379,7 +379,7 @@ const TYPE& GetPrev(POSITION& rPosition) const;
  *TÜRÜ*  
  Listedeki öğelerin türü belirten bir şablon parametre.  
   
- `rPosition`  
+ *rPosition*  
  Bir başvuru bir **konumu** önceki tarafından döndürülen değer `GetPrev` veya diğer üye işlev çağrısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -388,11 +388,11 @@ const TYPE& GetPrev(POSITION& rPosition) const;
  Listede değilse **const**, `GetPrev` liste öğesi için bir başvuru döndürür. Bu atama ifadesinin iki tarafında kullanılacak işlevi sağlar ve böylece değiştirilecek Liste girişlerini sağlar.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanabileceğiniz `GetPrev` çağrısıyla ilk konum kurarsanız geriye doğru yineleme döngü `GetTailPosition` veya **Bul**.  
+ Kullanabileceğiniz `GetPrev` çağrısıyla ilk konum kurarsanız geriye doğru yineleme döngü `GetTailPosition` veya `Find`.  
   
  Emin olmanız gerekir, **konumu** değer listesinde geçerli bir konumu temsil eder. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.  
   
- Alınan öğe listede ilk sonra yeni değeri ise `rPosition` ayarlanır **NULL**.  
+ Alınan öğe listede ilk sonra yeni değeri ise *rPosition* ayarlanır **NULL**.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#44](../../mfc/codesnippet/cpp/clist-class_10.cpp)]  
@@ -456,12 +456,12 @@ POSITION InsertAfter(POSITION position, ARG_TYPE newElement);
   
 ### <a name="parameters"></a>Parametreler  
  *Konumu*  
- A **konumu** önceki tarafından döndürülen değer `GetNext`, `GetPrev`, veya **Bul** üye işlev çağrısı.  
+ A **konumu** önceki tarafından döndürülen değer `GetNext`, `GetPrev`, veya `Find` üye işlev çağrısı.  
   
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Liste öğesi türünü belirten bir şablon parametre.  
   
- `newElement`  
+ *newElement*  
  Bu listeye eklenecek öğe.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -479,12 +479,12 @@ POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
   
 ### <a name="parameters"></a>Parametreler  
  *Konumu*  
- A **konumu** önceki tarafından döndürülen değer `GetNext`, `GetPrev`, veya **Bul** üye işlev çağrısı.  
+ A **konumu** önceki tarafından döndürülen değer `GetNext`, `GetPrev`, veya `Find` üye işlev çağrısı.  
   
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Şablon parametresi (bir başvuru olabilir) liste öğesi türünü belirtme.  
   
- `newElement`  
+ *newElement*  
  Bu listeye eklenecek öğe.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -587,13 +587,13 @@ void SetAt(POSITION pos, ARG_TYPE newElement);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
+ *POS*  
  **Konumu** ayarlanacak öğenin.  
   
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Şablon parametresi (bir başvuru olabilir) liste öğesi türünü belirtme.  
   
- `newElement`  
+ *newElement*  
  Listeye eklenecek öğe.  
   
 ### <a name="remarks"></a>Açıklamalar  

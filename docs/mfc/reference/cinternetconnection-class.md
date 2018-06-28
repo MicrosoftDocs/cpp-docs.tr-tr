@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07b269afce3ec0c3ef60e6cc37782fdea18260cf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 227637dc042777725692122babe0d4c7b232d578
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366684"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037784"
 ---
 # <a name="cinternetconnection-class"></a>CInternetConnection sınıfı
 Internet sunucusu bağlantınız yönetir.  
@@ -89,17 +89,17 @@ CInternetConnection(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pSession`  
+ *pSession*  
  Bir işaretçi bir [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesi.  
   
- `pstrServer`  
+ *pstrServer*  
  Sunucu adını içeren bir dize için bir işaretçi.  
   
- `nPort`  
+ *nbağlantı noktası*  
  Bu bağlantı için Internet bağlantı noktasını tanımlar sayı.  
   
- `dwContext`  
- İçerik tanımlayıcısını `CInternetConnection` nesnesi. Bkz: **açıklamalar** hakkında daha fazla bilgi için `dwContext`.  
+ *dwContext*  
+ İçerik tanımlayıcısını `CInternetConnection` nesnesi. Bkz: **açıklamalar** hakkında daha fazla bilgi için *dwContext*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Hiçbir zaman çağrısı `CInternetConnection` kendiniz; bunun yerine, çağrı [CInternetSession](../../mfc/reference/cinternetsession-class.md) üye işlevi oluşturmak istediğiniz bağlantı türü için:  
@@ -110,7 +110,7 @@ CInternetConnection(
   
 - [CInternetSession::GetGopherConnection](../../mfc/reference/cinternetsession-class.md#getgopherconnection)  
   
- İçin varsayılan değer `dwContext` MFC'ye tarafından gönderilen `CInternetConnection`-nesnesinden türetilmiş [CInternetSession](../../mfc/reference/cinternetsession-class.md) oluşturulan nesne **InternetConnection**-türetilmiş bir nesne içermelidir. Varsayılan değer 1 olarak ayarlanır; Ancak, açıkça özel bağlamı tanımlayıcıda atayabilirsiniz [CInternetSession](../../mfc/reference/cinternetsession-class.md#cinternetsession) bağlantısı Oluşturucu. Nesne ve mevcut herhangi bir iş, içerik kimliği ile ilişkilendirilecek Bağlam tanıtıcısı döndürülen [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen bir nesne üzerinde durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
+ İçin varsayılan değer *dwContext* MFC'ye tarafından gönderilen `CInternetConnection`-nesnesinden türetilmiş [CInternetSession](../../mfc/reference/cinternetsession-class.md) oluşturulan nesne **InternetConnection**- türetilen nesne. Varsayılan değer 1 olarak ayarlanır; Ancak, açıkça özel bağlamı tanımlayıcıda atayabilirsiniz [CInternetSession](../../mfc/reference/cinternetsession-class.md#cinternetsession) bağlantısı Oluşturucu. Nesne ve mevcut herhangi bir iş, içerik kimliği ile ilişkilendirilecek Bağlam tanıtıcısı döndürülen [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen bir nesne üzerinde durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
   
 ##  <a name="getcontext"></a>  CInternetConnection::GetContext  
  Bu oturum için bağlam Kimliğini almak için bu üye işlevini çağırın.  
@@ -125,7 +125,7 @@ DWORD_PTR GetContext() const;
 ### <a name="remarks"></a>Açıklamalar  
  İçerik kimliği başlangıçta belirtilen [CInternetSession](../../mfc/reference/cinternetsession-class.md) ve için yayar `CInternetConnection`- ve [CInternetFile](../../mfc/reference/cinternetfile-class.md)-farklı açılır bir işlev çağrısında belirtilen sürece türetilmiş sınıfları, bağlantı. İçerik kimliği verilen nesnenin herhangi bir işlem ile ilişkili olan ve tarafından döndürülen işlem durumu bilgileri tanımlar [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback).  
   
- Hakkında daha fazla bilgi için **GetContext** kullanıcı durumu bilgilerini sağlamak için diğer WinINet sınıfları ile works başlıklı makaleye bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı hakkında daha fazla bilgi için tanımlayıcı.  
+ Hakkında daha fazla bilgi için `GetContext` kullanıcı durumu bilgilerini sağlamak için diğer WinINet sınıfları ile works başlıklı makaleye bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
   
 ##  <a name="getservername"></a>  CInternetConnection::GetServerName  
  Bu Internet bağlantısı ile ilişkilendirilen sunucu adını almak için bu üye işlevini çağırın.  

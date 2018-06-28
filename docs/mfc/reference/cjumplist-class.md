@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d22fa264f48d3c5b1b6b88db338bc3be45c3f398
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bc609fac36ccdbb9f84ce8f2b9b7c0ccfc5ccd3f
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369056"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038509"
 ---
 # <a name="cjumplist-class"></a>CJumpList sınıfı
 A `CJumpList` bir simgeyi görev çubuğunda sağ tıklattığınızda ortaya kısayolları listesidir.  
@@ -131,19 +131,19 @@ BOOL AddDestination(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpcszCategoryName`  
+ *lpcszCategoryName*  
  Bir kategori adı belirtir. Belirtilen kategori mevcut değilse oluşturulur.  
   
- `strDestinationPath`  
+ *strDestinationPath*  
  Hedef dosya yolunu belirtir.  
   
- `strCategoryName`  
+ *strCategoryName*  
  Bir kategori adı belirtir. Belirtilen kategori mevcut değilse oluşturulur.  
   
- `pShellItem`  
+ *pShellItem*  
  Eklenmekte olan hedef temsil eden bir kabuk öğesi belirtir.  
   
- `pShellLink`  
+ *pShellLink*  
  Eklenmekte olan hedef temsil eden bir kabuk bağlantı belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -159,7 +159,7 @@ BOOL AddKnownCategory(KNOWNDESTCATEGORY category);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `category`  
+ *Kategori*  
  Bir bilinen kategori türünü belirtir. Ya da olabilir `KDC_RECENT`, veya `KDC_KNOWN`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -182,22 +182,22 @@ BOOL AddTask(IShellLink* pShellLink);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `strTargetExecutablePath`  
+ *strTargetExecutablePath*  
  Hedef görev yolunu belirtir.  
   
- `strCommandLineArgs`  
+ *strCommandLineArgs*  
  StrTargetExecutablePath tarafından belirtilen yürütülebilir dosyanın komut satırı bağımsız değişkenlerini belirtir.  
   
- `strTitle`  
+ *strTitle*  
  Hedef liste görünümünde görüntülenen görev adı.  
   
- `strIconLocation`  
+ *strIconLocation*  
  Başlık birlikte hedef listesinde görüntülenen simge konumu.  
   
- `iIconIndex`  
+ *iIconIndex*  
  Simge dizini.  
   
- `pShellLink`  
+ *pShellLink*  
  Eklenecek görevi temsil eden bir kabuk bağlantısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -213,7 +213,7 @@ BOOL AddTasks(IObjectArray* pObjectCollection);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pObjectCollection`  
+ *pObjectCollection*  
  Eklenecek görevleri koleksiyonu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -239,7 +239,7 @@ CJumpList(BOOL bAutoCommit = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bAutoCommit`  
+ *bAutoCommit*  
  Bu parametre FALSE ise listesi otomatik olarak yıkıcı uyguladığı geçerli değil.  
   
 ##  <a name="clearall"></a>  CJumpList::ClearAll  
@@ -330,7 +330,7 @@ void SetAppID(LPCTSTR strAppID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `strAppID`  
+ *strAppID*  
  Uygulama kullanıcı Model kimliğini belirten bir dize  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

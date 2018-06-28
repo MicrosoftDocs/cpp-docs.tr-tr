@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 584644963a647c5b458407b2d777f91014b40fad
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eae84c647f068e49136968e60bfd8bd51a528112
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369420"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038535"
 ---
 # <a name="cgopherfilefind-class"></a>CGopherFileFind sınıfı
 Internet dosya aramaları gopher sunucularının yardımcı olur.  
@@ -119,14 +119,14 @@ explicit CGopherFileFind(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pConnection`  
+ *pConnection*  
  Bir işaretçi bir [CGopherConnection](../../mfc/reference/cgopherconnection-class.md) nesnesi.  
   
- `dwContext`  
- İşlem bağlamı tanımlayıcısı. Bkz: **açıklamalar** hakkında daha fazla bilgi için `dwContext`.  
+ *dwContext*  
+ İşlem bağlamı tanımlayıcısı. Bkz: **açıklamalar** hakkında daha fazla bilgi için *dwContext*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İçin varsayılan değer `dwContext` MFC'ye tarafından gönderilen `CGopherFileFind` nesnesinin [CInternetSession](../../mfc/reference/cinternetsession-class.md) oluşturulan nesne `CGopherFileFind` nesne. Oluşturduğunuzda bir `CGopherFileFind` nesne bağlamı tanımlayıcı bir değerine ayarlamak için varsayılan geçersiz kılabilirsiniz. Bağlam tanıtıcısı döndürülen [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen bir nesne üzerinde durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
+ İçin varsayılan değer *dwContext* MFC'ye tarafından gönderilen `CGopherFileFind` nesnesinin [CInternetSession](../../mfc/reference/cinternetsession-class.md) oluşturulan nesne `CGopherFileFind` nesne. Oluşturduğunuzda bir `CGopherFileFind` nesne bağlamı tanımlayıcı bir değerine ayarlamak için varsayılan geçersiz kılabilirsiniz. Bağlam tanıtıcısı döndürülen [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen bir nesne üzerinde durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
   
 ##  <a name="findfile"></a>  CGopherFileFind::FindFile  
  Gopher dosyayı bulmak için bu üye işlevini çağırın.  
@@ -144,13 +144,13 @@ virtual BOOL FindFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `refLocator`  
+ *refLocator*  
  Bir başvuru bir [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) nesnesi.  
   
  *pstrString*  
  Dosya adı içeren bir dize için bir işaretçi.  
   
- `dwFlags`  
+ *dwFlags*  
  Bu oturumda ne yapılacağını açıklayan bayrakları. Geçerli bayraklar şunlardır:  
   
 -   INTERNET_FLAG_RELOAD veri alma Uzak sunucudan bile yerel olarak önbelleğe alınır.  
@@ -186,10 +186,10 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pTimeStamp`  
+ *pTimeStamp*  
  Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) dosyanın oluşturulduğu zaman içeren yapısı.  
   
- `refTime`  
+ *refTime*  
  Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -210,10 +210,10 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `refTime`  
+ *refTime*  
  Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi.  
   
- `pTimeStamp`  
+ *pTimeStamp*  
  Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) dosyaya son erişim saati içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -234,10 +234,10 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pTimeStamp`  
+ *pTimeStamp*  
  Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) dosya için en son yazıldı saati içeren yapısı.  
   
- `refTime`  
+ *refTime*  
  Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

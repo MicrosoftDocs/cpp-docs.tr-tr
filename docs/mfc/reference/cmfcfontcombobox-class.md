@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b37901bddec6a886ddb1ae538f3294bd9d28d9a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9141dec6fdcb966dcdb664bb8dc090b50a10a614
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375751"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040005"
 ---
 # <a name="cmfcfontcombobox-class"></a>CMFCFontComboBox sınıfı
 `CMFCFontComboBox` Sınıfı yazı tipleri listesini içeren bir birleşik giriş kutusu denetimi oluşturur.  
@@ -132,13 +132,13 @@ BOOL SelectFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDesc`  
+ [in] *pDesc*  
  Yazı tipi açıklaması nesnesine noktaları.  
   
- [in] `lpszName`  
+ [in] *lpszName*  
  Yazı tipi adı belirtir.  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  Bir karakter kümesini belirtir. DEFAULT_CHARSET varsayılan değerdir. Daha fazla bilgi için bkz: `lfCharSet` üyesi [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -164,13 +164,13 @@ BOOL Setup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nFontType`  
+ [in] *nFontType*  
  Yazı tipini belirtir. Varsayılan değer Bitsel (veya) DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE birleşimidir.  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  Yazı tipi karakter kümesini belirtir. DEFAULT_CHARSET varsayılan değerdir.  
   
- [in] `nPitchAndFamily`  
+ [in] *nPitchAndFamily*  
  Aile ve yazı tipi aralığı belirtir. DEFAULT_PITCH varsayılan değerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

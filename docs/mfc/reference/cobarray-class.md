@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3995734918f50ed01fe6df7fb034c3ea37b630cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 41165f177671379eecbc700df016cd19aea69962
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377920"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040213"
 ---
 # <a name="cobarray-class"></a>CObArray sınıfı
 Dizileri destekler `CObject` işaretçileri.  
@@ -113,7 +113,7 @@ class CObArray : public CObject
   
  Bir C dizi için erişim süresi ile bir `CObArray` dizinli öğe sabit öğesidir ve dizi boyutundan bağımsızdır.  
   
- `CObArray` bir araya getirir `IMPLEMENT_SERIAL` makrosu seri hale getirme ve alt öğeleri dökme desteklemek için. Bir dizi varsa `CObject` işaretçileri aşırı yüklenmiş ekleme işleciyle veya ile bir arşivde saklanır `Serialize` her üye işlev `CObject` öğesi buna karşılık, seri hale getirilmiş yanı sıra, dizi dizini.  
+ `CObArray` ımplement_serıal makrosu seri hale getirme ve alt öğeleri dökme desteklemek için bir araya getirir. Bir dizi varsa `CObject` işaretçileri aşırı yüklenmiş ekleme işleciyle veya ile bir arşivde saklanır `Serialize` her üye işlev `CObject` öğesi buna karşılık, seri hale getirilmiş yanı sıra, dizi dizini.  
   
  Tek bir dökümü gerekiyorsa `CObject` bir dizideki öğeler, derinliğini ayarlamanız gerekir `CDumpContext` nesnesine 1 veya daha büyük.  
   
@@ -125,7 +125,7 @@ class CObArray : public CObject
  Array sınıfı türetme listesi türetme benzer. Özel amaçlı listesi sınıfı türetme hakkında daha fazla bilgi için bkz: [koleksiyonları](../../mfc/collections.md).  
   
 > [!NOTE]
->  Kullanmalısınız `IMPLEMENT_SERIAL` makrosu dizi seri hale getirmek istiyorsanız, türetilmiş sınıf uygulamasında.  
+>  Dizi seri hale getirmek istiyorsanız, türetilmiş sınıf uygulamasında ımplement_serıal makrosu kullanmanız gerekir.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -143,14 +143,14 @@ INT_PTR Add(CObject* newElement);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `newElement`  
+ *newElement*  
  `CObject` Bu diziye eklenecek işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Eklenen öğenin dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa [SetSize](#setsize) ile kullanılan bir `nGrowBy` 1 sonra ek bellek büyük bir değer ayrılamadı. Ancak, üst sınır tarafından yalnızca 1 artacaktır.  
+ Varsa [SetSize](#setsize) ile kullanılan bir *nGrowBy* 1 sonra ek bellek büyük bir değer ayrılamadı. Ancak, üst sınır tarafından yalnızca 1 artacaktır.  
   
  Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::Add`.  
   
@@ -193,7 +193,7 @@ INT_PTR Append(const CObArray& src);
 ### <a name="remarks"></a>Açıklamalar  
  Diziler, aynı türde olmalıdır.  
   
- Gerekirse, **Append** diziye eklenen öğeleri yerleştirmek için ek bellek ayırabilir.  
+ Gerekirse, `Append` diziye eklenen öğeleri yerleştirmek için ek bellek ayırabilir.  
   
  Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::Append`.  
   
@@ -223,7 +223,7 @@ void Copy(const CObArray& src);
  Kaynak diziye kopyalanacak öğe.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Kopya** belleği serbest değil; ancak, gerekirse, **kopyalama** diziye kopyalanan öğelerin uyum sağlamak için ek bellek ayırabilir.  
+ `Copy` belleği serbest değil; Ancak, gerekirse, `Copy` diziye kopyalanan öğelerin uyum sağlamak için ek bellek ayırabilir.  
   
  Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::Copy`.  
   
@@ -273,7 +273,7 @@ CObject*& ElementAt(INT_PTR nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Büyük veya 0 değerine eşit bir tamsayı dizini ve tarafından döndürülen değer eşit veya daha az `GetUpperBound`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -328,7 +328,7 @@ CObject* GetAt(INT_PTR nIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Büyük veya 0 değerine eşit bir tamsayı dizini ve tarafından döndürülen değer eşit veya daha az `GetUpperBound`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -490,25 +490,25 @@ void InsertAt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Tarafından döndürülen değeri,'den büyük bir tamsayı dizini `GetUpperBound`.  
   
- `newElement`  
- `CObject` Bu dizide yerleştirilecek işaretçi. A `newElement` değerinin **NULL** izin verilir.  
+ *newElement*  
+ `CObject` Bu dizide yerleştirilecek işaretçi. A *newElement* değerinin **NULL** izin verilir.  
   
- `nCount`  
+ *nCount*  
  Bu öğe olmalıdır sayısı (varsayılan 1) ekledi.  
   
- `nStartIndex`  
+ *nStartIndex*  
  Tarafından döndürülen değeri,'den büyük bir tamsayı dizini `GetUpperBound`.  
   
- `pNewArray`  
+ *pNewArray*  
  Bu diziye eklenecek öğeleri içeren başka bir dizi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İlk sürümü `InsertAt` bir öğenin (veya birden çok kopya, bir öğenin) bir dizi belirtilen dizinde ekler. İşlem sırasında yapılandırmasına kayar (dizini artırılarak) ve bu dizin mevcut öğede üzerindeki tüm öğeleri yukarı kaydırır.  
   
- İkinci Sürüm tüm öğeleri diğerinden ekler `CObArray` başlayarak koleksiyon `nStartIndex` konumu.  
+ İkinci Sürüm tüm öğeleri diğerinden ekler `CObArray` başlayarak koleksiyon *nStartIndex* konumu.  
   
  `SetAt` İşlevi, buna karşılık, bir belirtilen dizi öğesi değiştirir ve herhangi bir öğe shift değil.  
   
@@ -615,10 +615,10 @@ void RemoveAt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Büyük veya 0 değerine eşit bir tamsayı dizini ve tarafından döndürülen değer eşit veya daha az `GetUpperBound`.  
   
- `nCount`  
+ *nCount*  
  Kaldırılacak öğe sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -660,10 +660,10 @@ void SetAt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Büyük veya 0 değerine eşit bir tamsayı dizini ve tarafından döndürülen değer eşit veya daha az `GetUpperBound`.  
   
- `newElement`  
+ *newElement*  
  Bu dizide eklenecek nesne işaretçisi. A **NULL** değerine izin verilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -705,10 +705,10 @@ void SetAtGrow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Büyük veya 0 değerine eşit bir tamsayı dizini.  
   
- `newElement`  
+ *newElement*  
  Bu diziye eklenecek nesne işaretçisi. A **NULL** değerine izin verilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -752,16 +752,16 @@ void SetSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nNewSize`  
+ *nNewSize*  
  Yeni dizi boyutu (öğelerin sayısı). Büyük veya 0 değerine eşit olmalıdır.  
   
- `nGrowBy`  
+ *nGrowBy*  
  Öğe yuva boyutu artışı gerekliyse ayırmak için minimum sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yeni boyutu eski boyutundan daha küçükse, dizi kesilir ve tüm kullanılmayan belleği serbest bırakılır. Verimlilik için arama `SetSize` kullanmadan önce dizinin boyutunu ayarlamak için. Bu yeniden ayırın ve dizi bir öğe eklendiğinde kopyalamak için gereken önler.  
   
- `nGrowBy` Parametre dizisi artan sırada iç bellek ayırma etkiler. Kullanımı hiçbir zaman tarafından bildirilen dizi boyutu etkiler `GetSize` ve `GetUpperBound`.  
+ *NGrowBy* parametre dizisi artan sırada iç bellek ayırma etkiler. Kullanımı hiçbir zaman tarafından bildirilen dizi boyutu etkiler `GetSize` ve `GetUpperBound`.  
   
  Dizinin boyutunu büyümüştür varsa, tüm yeni ayrılmış **CObject \***  işaretçileri NULL olarak ayarlanır.  
   

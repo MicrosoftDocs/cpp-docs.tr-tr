@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35217ee967554332002d8597a00dc21df928306d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d66c26fb94fa0f4e1863a6a6a9663de4239611db
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378424"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039140"
 ---
 # <a name="coblist-class"></a>CObList sınıfı
 sıralı listeler verildiğinden, fSupports `CObject` işaretçileri erişilebilir sırayla veya işaretçisi değeri.  
@@ -117,7 +117,7 @@ class CObList : public CObject
   
  Öğe ekleme olduğundan çok listesi head en hızlı, kuyruk ve bilinen bir **konumu**. Sıralı bir ara değer veya dizin göre bir öğeyi aramak gereklidir. Bu arama listesi uzunsa yavaş olabilir.  
   
- `CObList` bir araya getirir `IMPLEMENT_SERIAL` makrosu seri hale getirme ve alt öğeleri dökme desteklemek için. Bir listesi, `CObject` işaretçileri aşırı yüklenmiş ekleme işleciyle veya ile bir arşivde saklanır `Serialize` her üye işlev `CObject` öğenin sırayla sıralandığı.  
+ `CObList` ımplement_serıal makrosu seri hale getirme ve alt öğeleri dökme desteklemek için bir araya getirir. Bir listesi, `CObject` işaretçileri aşırı yüklenmiş ekleme işleciyle veya ile bir arşivde saklanır `Serialize` her üye işlev `CObject` öğenin sırayla sıralandığı.  
   
  Tek bir dökümü gerekiyorsa `CObject` listesindeki öğeler, ayarlamalısınız döküm içerik derinliği 1 veya daha büyük.  
   
@@ -147,11 +147,11 @@ void AddHead(CObList* pNewList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `newElement`  
+ *newElement*  
  `CObject` Bu listeye eklenecek işaretçi.  
   
- `pNewList`  
- Başka bir işaretçi `CObList` listesi. Öğeleri `pNewList` bu listeye eklenir.  
+ *pNewList*  
+ Başka bir işaretçi `CObList` listesi. Öğeleri *pNewList* bu listeye eklenir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk sürüm döndürür **konumu** yeni eklenen öğesinin değeri.  
@@ -188,11 +188,11 @@ void AddTail(CObList* pNewList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `newElement`  
+ *newElement*  
  `CObject` Bu listeye eklenecek işaretçi.  
   
- `pNewList`  
- Başka bir işaretçi `CObList` listesi. Öğeleri `pNewList` bu listeye eklenir.  
+ *pNewList*  
+ Başka bir işaretçi `CObList` listesi. Öğeleri *pNewList* bu listeye eklenir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk sürüm döndürür **konumu** yeni eklenen öğesinin değeri.  
@@ -228,11 +228,11 @@ CObList(INT_PTR nBlockSize = 10);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nBlockSize`  
+ *nBlockSize*  
  Listenin genişletmek için bellek ayırma ayrıntı düzeyi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Listenin büyüdükçe, bellek, biriminde ayrılır `nBlockSize` girişleri. Bellek ayırma başarısız olursa, bir `CMemoryException` oluşturulur.  
+ Listenin büyüdükçe, bellek, biriminde ayrılır *nBlockSize* girişleri. Bellek ayırma başarısız olursa, bir `CMemoryException` oluşturulur.  
   
  Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObList::CObList`.  
   
@@ -260,10 +260,10 @@ POSITION Find(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `searchValue`  
+ *searchValue*  
  Bu listede bulunacak nesne işaretçisi.  
   
- `startAfter`  
+ *startAfter*  
  Arama için başlangıç konumu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -285,18 +285,18 @@ POSITION Find(
  [!code-cpp[NVC_MFCCollections#93](../../mfc/codesnippet/cpp/coblist-class_5.cpp)]  
   
 ##  <a name="findindex"></a>  CObList::FindIndex  
- Değerini kullanır `nIndex` listesine bir dizin olarak.  
+ Değerini kullanır *nIndex* listesine bir dizin olarak.  
   
 ```  
 POSITION FindIndex(INT_PTR nIndex) const;  
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Bulunacak liste öğesinin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A **konumu** yineleme veya nesne işaretçi alma; için kullanılan değer **NULL** varsa `nIndex` çok büyük. (Framework bir onaylama oluşturur `nIndex` negatiftir.)  
+ A **konumu** yineleme veya nesne işaretçi alma; için kullanılan değer **NULL** varsa *nIndex* çok büyük. (Framework bir onaylama oluşturur *nIndex* negatiftir.)  
   
 ### <a name="remarks"></a>Açıklamalar  
  Durduruluyor listenin başındaki gelen sıralı bir tarama başlamadan *n*th öğesi.  
@@ -323,7 +323,7 @@ const CObject*& GetAt(POSITION position) const;
   
 ### <a name="parameters"></a>Parametreler  
  *Konumu*  
- A **konumu** önceki tarafından döndürülen değer `GetHeadPosition` veya **Bul** üye işlev çağrısı.  
+ A **konumu** önceki tarafından döndürülen değer `GetHeadPosition` veya `Find` üye işlev çağrısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Dönüş değeri açıklamasına bakın [GetHead](#gethead).  
@@ -418,7 +418,7 @@ POSITION GetHeadPosition() const;
  [!code-cpp[NVC_MFCCollections#97](../../mfc/codesnippet/cpp/coblist-class_9.cpp)]  
   
 ##  <a name="getnext"></a>  CObList::GetNext  
- Tarafından tanımlanan liste öğesi alır `rPosition`, ardından ayarlar `rPosition` için `POSITION` listesinde sonraki girdisinin değeri.  
+ Tarafından tanımlanan liste öğesi alır *rPosition*, ardından ayarlar *rPosition* için `POSITION` listesinde sonraki girdisinin değeri.  
   
 ```  
 CObject*& GetNext(POSITION& rPosition);  
@@ -426,7 +426,7 @@ const CObject* GetNext(POSITION& rPosition) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rPosition`  
+ *rPosition*  
  Bir başvuru bir `POSITION` önceki tarafından döndürülen değer `GetNext`, `GetHeadPosition`, ya da diğer üye işlev çağrısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -437,7 +437,7 @@ const CObject* GetNext(POSITION& rPosition) const;
   
  Emin olmanız gerekir, `POSITION` değer listesinde geçerli bir konumu temsil eder. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.  
   
- Alınan öğe listesinde, son sonra yeni değeri ise `rPosition` ayarlanır `NULL`.  
+ Alınan öğe listesinde, son sonra yeni değeri ise *rPosition* ayarlanır `NULL`.  
   
  Yineleme sırasında bir öğeyi kaldırın mümkündür. Örneğin bkz [RemoveAt](#removeat).  
   
@@ -463,7 +463,7 @@ const CObject* GetNext(POSITION& rPosition) const;
  `a CAge at $46C0 21`  
   
 ##  <a name="getprev"></a>  CObList::GetPrev  
- Tarafından tanımlanan liste öğesi alır `rPosition`, ardından ayarlar `rPosition` için `POSITION` listesinde önceki girdisinin değeri.  
+ Tarafından tanımlanan liste öğesi alır *rPosition*, ardından ayarlar *rPosition* için `POSITION` listesinde önceki girdisinin değeri.  
   
 ```  
 CObject*& GetPrev(POSITION& rPosition);  
@@ -471,7 +471,7 @@ const CObject* GetPrev(POSITION& rPosition) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rPosition`  
+ *rPosition*  
  Bir başvuru bir `POSITION` önceki tarafından döndürülen değer `GetPrev` veya diğer üye işlev çağrısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -589,7 +589,7 @@ POSITION InsertAfter(
   
 ### <a name="parameters"></a>Parametreler  
  *Konumu*  
- A **konumu** önceki tarafından döndürülen değer `GetNext`, `GetPrev`, veya **Bul** üye işlev çağrısı.  
+ A **konumu** önceki tarafından döndürülen değer `GetNext`, `GetPrev`, veya `Find` üye işlev çağrısı.  
   
  `newElement`  
  Bu listeye eklenecek nesne işaretçisi.  
@@ -630,9 +630,9 @@ POSITION InsertBefore(
   
 ### <a name="parameters"></a>Parametreler  
  *Konumu*  
- A **konumu** önceki tarafından döndürülen değer `GetNext`, `GetPrev`, veya **Bul** üye işlev çağrısı.  
+ A **konumu** önceki tarafından döndürülen değer `GetNext`, `GetPrev`, veya `Find` üye işlev çağrısı.  
   
- `newElement`  
+ *newElement*  
  Bu listeye eklenecek nesne işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -802,10 +802,10 @@ void SetAt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
+ *POS*  
  **Konumu** ayarlanacak öğenin.  
   
- `newElement`  
+ *newElement*  
  `CObject` Listeye yazılacak işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  

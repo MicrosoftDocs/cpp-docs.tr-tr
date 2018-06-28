@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1680305b359bb273ba492083dd2e99703e2d930d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1c7264273f3db1dab1e6cab72333c0629a802e28
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368624"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042000"
 ---
 # <a name="cmfcdropdownframe-class"></a>CMFCDropDownFrame sınıfı
 Aşağı açılan araç çubukları ve aşağı açılır düğmeler aşağı açılan çerçeve penceresi işlevsellik sağlar.  
@@ -107,10 +107,10 @@ virtual BOOL Create(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `pWndParent`|Aşağı açılan çerçeve üst pencere.|  
-|[in] `x`|Açılır çerçeve konumunu yatay Ekran koordinatı.|  
-|[in] `y`|Açılır çerçeve konumunu dikey Ekran koordinatı.|  
-|[in] `pWndOriginToolbar`|Bu yöntem yeni açılan çerçeve nesnesi doldurmak için kullanır aşağı açılır düğmeler sahip araç çubuğu.|  
+|[in] *pWndParent*|Aşağı açılan çerçeve üst pencere.|  
+|[in] *x*|Açılır çerçeve konumunu yatay Ekran koordinatı.|  
+|[in] *y*|Açılır çerçeve konumunu dikey Ekran koordinatı.|  
+|[in] *pWndOriginToolbar*|Bu yöntem yeni açılan çerçeve nesnesi doldurmak için kullanır aşağı açılır düğmeler sahip araç çubuğu.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` aşağı açılan çerçeve başarıyla oluşturulduysa; Aksi takdirde `FALSE`.  
@@ -158,7 +158,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `bNotify`|Kullanılmayan.|  
+|[in] *bNotify*|Kullanılmayan.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Framework açılan çerçeve oluşturulduğunda veya üst pencere boyutlandırılır bu yöntemi çağırır. Bu yöntem, üst pencere boyutunu ve konumunu kullanarak açılan çerçevesinin boyutunu ve konumunu hesaplar.  
@@ -171,11 +171,11 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bAutoDestroy`  
+ [in] *bAutoDestroy*  
  `TRUE` otomatik olarak ilişkili açılan araç penceresi yok etmek için; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bAutoDestroy` olan `TRUE`, sonra `CMFCDropDownFrame` yıkıcı ilişkili açılan araç penceresi yok eder. Varsayılan değer `TRUE` şeklindedir.  
+ Varsa *bAutoDestroy* olan `TRUE`, sonra `CMFCDropDownFrame` yıkıcı ilişkili açılan araç penceresi yok eder. Varsayılan değer `TRUE` şeklindedir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

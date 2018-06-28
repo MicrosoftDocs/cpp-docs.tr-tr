@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8328fb4987044c5a28b1a6a6ce19c674039dea9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a1b98cd7bfb6983a4133e0bb48e3c75b8a973ddf
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376216"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042553"
 ---
 # <a name="colepropertypage-class"></a>COlePropertyPage sınıfı
 Bir iletişim kutusu için benzer bir grafik arabiriminde bir özel denetim özelliklerini görüntülemek için kullanılır.  
@@ -140,7 +140,7 @@ BOOL GetControlStatus(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nID`  
+ *nID*  
  Özellik sayfası denetimi kaynak kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -154,14 +154,14 @@ LPDISPATCH* GetObjectArray(ULONG* pnObjects);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pnObjects`  
+ *pnObjects*  
  Sayfa tarafından düzenlenen nesne sayısı alacak imzalanmamış uzun tamsayı işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir dizi işaretçi `IDispatch` özellik sayfasında her denetim özelliklerine erişmek için kullanılan işaretçileri. Çağıranın bu arabirim işaretçileri sürüm değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Her özellik sayfası nesnesi bir dizi işaretçiler tutar `IDispatch` sayfa tarafından düzenlenen nesnelerin arabirimleri. Bu işlev ayarlar kendi `pnObjects` o dizideki öğeler sayıda bağımsız değişken ve dizinin ilk öğesi için bir işaretçi döndürür.  
+ Her özellik sayfası nesnesi bir dizi işaretçiler tutar `IDispatch` sayfa tarafından düzenlenen nesnelerin arabirimleri. Bu işlev ayarlar kendi *pnObjects* Bu dizideki öğeler sayıda bağımsız değişken ve dizinin ilk öğesi için bir işaretçi döndürür.  
   
 ##  <a name="getpagesite"></a>  COlePropertyPage::GetPageSite  
  Özellik sayfasına ait bir işaretçi alır `IPropertyPageSite` arabirimi.  
@@ -184,7 +184,7 @@ void IgnoreApply(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nID`  
+ *nID*  
  Yok sayılacak denetimi kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -208,7 +208,7 @@ virtual BOOL OnEditProperty(DISPID dispid);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dispid`  
+ *DISPID*  
  Düzenlenen özelliği gönderme kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -279,10 +279,10 @@ BOOL SetControlStatus(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nID`  
+ *nID*  
  Özellik sayfası denetimi Kimliğini içerir.  
   
- `bDirty`  
+ *bDirty*  
  Özellik sayfasının bir alan değiştirilip değiştirilmediğini belirtir. Kümesine **TRUE** alan değiştirilirse **FALSE** değil güncellendiyse.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -316,7 +316,7 @@ void SetHelpInfo(
  *lpszDocString*  
  Durum çubuğu veya başka bir konuma görüntülemek kısa Yardım bilgilerini içeren bir dize.  
   
- `lpszHelpFile`  
+ *lpszHelpFile*  
  Özellik sayfasının Yardım dosyasının adı.  
   
  *dwHelpContext*  
@@ -330,7 +330,7 @@ void SetModifiedFlag(BOOL bModified = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bModified`  
+ *bModified*  
  Yeni özellik sayfasının değiştirilmiş bayrağı için bir değer belirtir.  
   
 ##  <a name="setpagename"></a>  COlePropertyPage::SetPageName  

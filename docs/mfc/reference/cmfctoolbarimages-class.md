@@ -150,12 +150,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f5d837ec17623887eb63b49810066937fcd4bf5a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 34c364357ad14db2cd0ebc53e2a9cdcd5455f5ac
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377943"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042137"
 ---
 # <a name="cmfctoolbarimages-class"></a>CMFCToolBarImages sınıfı
 Araç çubuğundaki görüntüler. `CMFCToolBarImages` Sınıfı yönetir uygulama kaynakları veya dosyalarından yüklenen araç görüntüler.  
@@ -282,8 +282,8 @@ void AdaptColors(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `clrBase`  
- [in] `clrTone`  
+ [in] *clrBase*  
+ [in] *clrTone*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -297,10 +297,10 @@ int AddIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hIcon`  
+ [in] *hIcon*  
  Eklenecek simgesi için bir tanıtıcı.  
   
- [in] `bAlphaBlend`  
+ [in] *bAlphaBlend*  
  `TRUE` alfa karıştırma ile bu simge kullanılır Aksi takdirde `FALSE`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -320,16 +320,16 @@ int AddImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hbmp`  
+ [in] *hbmp*  
  Eklemek için bit eşlem için tanıtıcı.  
   
- [in] `bSetBitPerPixel`  
+ [in] *bSetBitPerPixel*  
  `TRUE` varsa `CMFCToolBarImages` nesnesini kullanan yeni görüntü; renk derinliğini (bit / piksel) `FALSE` varsa `CMFCToolbarImages` nesne geçerli renk derinliği tutar.  
   
- [in] `imageList`  
+ [in] *ImageList*  
  Bir başvuru bir `CMFCToolbarImages` eklemek için resmi içeren nesne.  
   
- [in] `nIndex`  
+ [in] *nIndex*  
  Kaynak dizin `CMFCToolbarImages` eklemek için görüntünün nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -369,7 +369,7 @@ BOOL CopyImageToClipboard(int iImage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iImage`  
+ [in] *iImage*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -383,7 +383,7 @@ BOOL CopyTo(CMFCToolBarImages& imageList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `imageList`  
+ [in] *ImageList*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -397,7 +397,7 @@ BOOL CreateFromImageList(const CImageList& imageList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `imageList`  
+ [in] *ImageList*  
  Araç çubuğu görüntüler için kaynak olarak kullanılacak resim listesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -416,8 +416,8 @@ static HRGN __stdcall CreateRegionFromImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bmp`  
- [in] `clrTransparent`  
+ [in] *bmp*  
+ [in] *clrTransparent*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -431,7 +431,7 @@ BOOL DeleteImage(int iImage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iImage`  
+ [in] *iImage*  
  Görüntünün silmek için sıfır tabanlı dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -455,34 +455,34 @@ BOOL Draw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `x`  
+ [in] *x*  
  Görüntü çizilmesi olduğu dikdörtgen sol tarafındaki X koordinatı.  
   
- [in] `y`  
+ [in] *y*  
  Üst görüntü çizilmesi olduğu dikdörtgenin Y koordinatı.  
   
- [in] `iImageIndex`  
+ [in] *iImageIndex*  
  Gösterilecek görüntü sıfır tabanlı dizini.  
   
- [in] `bHilite`  
+ [in] *bHilite*  
  `TRUE` Görüntü vurgulanmasını ise; Aksi takdirde `FALSE`.  
   
- [in] `bDisabled`  
+ [in] *bDevre Dışı*  
  `TRUE` Görüntü devre dışı stilde çizilecek ise; Aksi takdirde `FALSE`.  
   
- [in] `bIndeterminate`  
+ [in] *bIndeterminate*  
  `TRUE` görüntü durumu belirsiz stilinde çizilecek ise; Aksi takdirde `FALSE`.  
   
- [in] `bShadow`  
+ [in] *bShadow*  
  `TRUE` Görüntü gölge ile çizilecek ise; Aksi takdirde `FALSE`.  
   
- [in] `bInactive`  
+ [in] *bInactive*  
  `TRUE` Görüntü devre dışı durum stilinde çizilecek ise; Aksi takdirde `FALSE`.  
   
- [in] `alphaSrc`  
+ [in] *alphaSrc*  
  Alfa kanal (geçirgenlik) değeri. 255 değeri görüntünün anlamına gelir çizilmiş opak değil. 0 değeri görüntünün anlamına gelir saydam olarak çizilir. Bu değer yalnızca 32 bit renk görüntüleri için ve bir Windows Vista cam stili görüntülenen görüntüleri için kullanılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -506,15 +506,15 @@ BOOL DrawEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
- [in] `iImageIndex`  
- [in] `horzAlign`  
- [in] `vertAlign`  
- [in] `rectSrc`  
- [in] `0`  
- [in] `0)`  
- [in] `alphaSrc`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *iImageIndex*  
+ [in] *horzAlign*  
+ [in] *vertAlign*  
+ [in] *rectSrc*  
+ [in] *0*  
+ [in] *0)*  
+ [in] *alphaSrc*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -528,7 +528,7 @@ static void __stdcall EnableRTL(BOOL bIsRTL = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bIsRTL`  
+ [in] *bIsRTL*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -540,7 +540,7 @@ void EndDrawImage(CAfxDrawState& ds);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `ds`  
+ [in] *ds*  
  Bir başvuru `CAfxDrawState` geçirilmedi nesne `PrepareDrawImage` yöntemi.  
   
 ##  <a name="extracticon"></a>  CMFCToolBarImages::ExtractIcon  
@@ -551,11 +551,11 @@ HICON ExtractIcon(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nIndex`  
+ [in] *nIndex*  
  Simge olarak ayıklanacak görüntünün bulunduğu olduğu resim listesi içindeki sıfır tabanlı dizin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Ayıklanan simgesi için bir tanıtıcı veya `NULL` varsa `nIndex` aralık dışında.  
+ Ayıklanan simgesi için bir tanıtıcı veya `NULL` varsa *nIndex* aralık dışında.  
   
 ##  <a name="fillditheredrect"></a>  CMFCToolBarImages::FillDitheredRect  
  Dikdörtgene araç çubuğu arka plan renklerini ile doldurur.  
@@ -567,10 +567,10 @@ static void FillDitheredRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Doldurmak için bir dikdörtgen koordinatları.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -629,7 +629,7 @@ SIZE GetImageSize(BOOL bDest=FALSE) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bDest`  
+ [in] *bDest*  
  `TRUE` Hedef boyutu almak için; `FALSE` kaynak görüntü boyutu alınamadı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -705,7 +705,7 @@ HBITMAP GetMask(int iImage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iImage`  
+ [in] *iImage*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -719,7 +719,7 @@ int GetResourceOffset(UINT uiResId) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiResId`  
+ [in] *uiResId*  
  Bir görüntü kaynak kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -744,14 +744,14 @@ BOOL GrayImages(int nGrayImageLuminancePercentage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nGrayImageLuminancePercentage`  
+ [in] *nGrayImageLuminancePercentage*  
  Aydınlatma yüzdesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` koleksiyondaki görüntüleri başarıyla gri Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, her piksel kırmızı, yeşil ve mavi bileşenlerinin ortalaması ve sonucu çarparak araç görüntüleri değiştirir. `nGrayImageLuminancePercentage` 100 tarafından ayrılmış. Varsa `nGrayImageLuminancePercentage` sıfır veya negatif, varsayılan değeri 130 yerine kullanılır.  
+ Bu yöntem, her piksel kırmızı, yeşil ve mavi bileşenlerinin ortalaması ve sonucu çarparak araç görüntüleri değiştirir. *nGrayImageLuminancePercentage* 100 tarafından ayrılmış. Varsa *nGrayImageLuminancePercentage* sıfır veya negatif, varsayılan değeri 130 yerine kullanılır.  
   
 > [!NOTE]
 >  Değişikliği geri almak istiyorsanız, kaynak görüntülerden yeniden yüklemeniz gerekir. Bunu çağırarak yapmak [CMFCToolBarImages::Load](#load) veya [CMFCToolBarImages::UpdateImage](#updateimage) (yalnızca kullanıcı tanımlı görüntüleri için) veya çağırarak [CMFCToolBarImages::Clear](#clear)ve görüntüleri çağırarak eklemeyi yeniden [CMFCToolBarImages::AddIcon](#addicon) veya [CMFCToolBarImages::AddImage](#addimage).  
@@ -844,19 +844,19 @@ BOOL Load(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiResID`  
+ [in] *uiResID*  
  Bir bit eşlem kaynak kimliği.  
   
- [in] `hinstRes`  
+ [in] *hinstRes*  
  Kaynak DLL örneği.  
   
- [in] `bAdd`  
+ [in] *bekle*  
  `TRUE` var olan bit eşlem için yüklenen bitmap eklemek için veya `FALSE` varolan bir bit eşlemi değiştirmek için.  
   
- [in] `lpszBmpFileName`  
+ [in] *lpszBmpFileName*  
  Bit eşlem yük aktarılacağı bir disk dosyası yolu.  
   
- [in] `nMaxFileSize`  
+ [in] *nMaxFileSize*  
  Bit eşlem dosyasında bayt sayısını; ya da dosya boyutu bağımsız olarak bit eşlem'i yüklemek için 0. Dosya boyutu bu maksimum boyutu aşıyorsa, yöntem `FALSE` ve bit eşlem yüklemez.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -876,9 +876,9 @@ BOOL LoadStr(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszResourceName`  
- [in] `hinstRes`  
- [in] `bAdd`  
+ [in] *lpszResourceName*  
+ [in] *hinstRes*  
+ [in] *bekle*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -894,8 +894,8 @@ static COLORREF __stdcall MapFromSysColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `color`  
- [in] `bUseRGBQUAD`  
+ [in] *rengi*  
+ [in] *bUseRGBQUAD*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -912,9 +912,9 @@ BOOL MapTo3dColors(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bUseRGBQUAD`  
- [in] `clrSrc`  
- [in] `clrDest`  
+ [in] *bUseRGBQUAD*  
+ [in] *clrSrc*  
+ [in] *clrDest*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -930,8 +930,8 @@ static COLORREF __stdcall MapToSysColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `color`  
- [in] `bUseRGBQUAD`  
+ [in] *rengi*  
+ [in] *bUseRGBQUAD*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -945,7 +945,7 @@ static COLORREF __stdcall MapToSysColorAlpha(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `color`  
+ [in] *rengi*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -974,10 +974,10 @@ static BOOL MirrorBitmap(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [içinde out] `hbmp`  
+ [içinde out] *hbmp*  
  Bitmap yansıtmak için bir tanıtıcı.  
   
- [in] `cxImage`  
+ [in] *cxImage*  
  Görüntünün piksel cinsinden genişliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -996,8 +996,8 @@ static BOOL __stdcall MirrorBitmapVert(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hbmp`  
- [in] `cyImage`  
+ [in] *hbmp*  
+ [in] *cyImage*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1035,8 +1035,8 @@ BOOL PreMultiplyAlpha(HBITMAP hbmp);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hbmp`  
- [in] `bAutoCheckPremlt`  
+ [in] *hbmp*  
+ [in] *bAutoCheckPremlt*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1066,13 +1066,13 @@ BOOL PrepareDrawImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `ds`  
+ [in] *ds*  
  Bir başvuru `CAfxDrawState` görüntü işleme aşamalarını arasında ayrılan kaynakları depolar yapısı.  
   
- [in] `sizeImageDest`  
+ [in] *sizeImageDest*  
  Hedef görüntü boyutunu belirtir.  
   
- [in] `bFadeInactive`  
+ [in] *bFadeInactive*  
  `TRUE` Etkin olmayan istiyorsanız çizilecek görüntüleri soluk.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1089,14 +1089,14 @@ BOOL Save(LPCTSTR lpszBmpFileName=NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszBmpFileName`  
+ *lpszBmpFileName*  
  Bir disk dosyası yolu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` araç çubuğu görüntüleri başarıyla kaydedildi Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanıcı tanımlı resimleri bir disk dosyasında depolamak için bu yöntemi çağırın. Varsa `lpszBmpFileName` olan `NULL`, yöntem, bit eşlem yüklenen tarafından dosyasına bit eşlem depolar [CMFCToolBarImages::Load](#load) yöntemi.  
+ Kullanıcı tanımlı resimleri bir disk dosyasında depolamak için bu yöntemi çağırın. Varsa *lpszBmpFileName* olan `NULL`, yöntem, bit eşlem yüklenen tarafından dosyasına bit eşlem depolar [CMFCToolBarImages::Load](#load) yöntemi.  
   
 ##  <a name="setalwayslight"></a>  CMFCToolBarImages::SetAlwaysLight  
 
@@ -1106,7 +1106,7 @@ void SetAlwaysLight(BOOL bAlwaysLight = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bAlwaysLight`  
+ [in] *bAlwaysLight*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1118,7 +1118,7 @@ static void SetDisabledImageAlpha(BYTE nValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nValue`  
+ [in] *nDeğer*  
  Alfa kanal yeni değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1132,7 +1132,7 @@ static void __stdcall SetFadedImageAlpha(BYTE nValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nValue`  
+ [in] *nDeğer*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1146,7 +1146,7 @@ void SetImageSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `sizeImage`  
+ [in] *sizeImage*  
  Araç çubuğu görüntüleri yeni boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1160,7 +1160,7 @@ void SetLightPercentage(int nValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nValue`  
+ [in] *nDeğer*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1172,7 +1172,7 @@ void SetMapTo3DColors(BOOL bMapTo3DColors);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bMapTo3DColors`  
+ [in] *bMapTo3DColors*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1184,7 +1184,7 @@ void SetPreMultiplyAutoCheck(BOOL bAuto = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bAuto`  
+ [in] *bDil*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1205,14 +1205,14 @@ COLORREF SetTransparentColor(COLORREF clrTransparent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `clrTransparent`  
+ [in] *clrTransparent*  
  Bir RGB değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Önceki saydam rengi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Siz veya framework çağırdığınızda [CMFCToolBarImages::Draw](#draw), yöntemi tarafından belirtilen renk eşleşen piksel çekmek değil `clrTransparent`.  
+ Siz veya framework çağırdığınızda [CMFCToolBarImages::Draw](#draw), yöntemi tarafından belirtilen renk eşleşen piksel çekmek değil *clrTransparent*.  
   
 ##  <a name="updateimage"></a>  CMFCToolBarImages::UpdateImage  
  Bir bit eşlem araç çubuğu kullanıcı tarafından tanımlanan görüntüden güncelleştirir.  
@@ -1224,10 +1224,10 @@ BOOL UpdateImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iImage`  
+ [in] *iImage*  
  Görüntünün güncelleştirmek için sıfır tabanlı dizini.  
   
- [in] `hbmp`  
+ [in] *hbmp*  
  Bit eşlem için bir tanıtıcı görüntüsünü güncelleştirmek üzere.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1241,7 +1241,7 @@ BOOL ConvertTo32Bits(COLORREF clrTransparent = (COLORREF)-1);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `clrTransparent`  
+ *clrTransparent*  
  Altı çizili bit eşlemler saydam rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1290,7 +1290,7 @@ BOOL SmoothResize(double dblImageScale);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dblImageScale`  
+ *dblImageScale*  
  Ölçek oranı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

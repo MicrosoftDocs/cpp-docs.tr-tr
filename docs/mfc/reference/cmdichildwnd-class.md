@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e27551c04be5d6e985c6e7829f11f94d0aafeba
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 037a6091f11ad12a8f4e46ccb837c48f1f9a685b
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369355"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040853"
 ---
 # <a name="cmdichildwnd-class"></a>Cmdıchildwnd sınıfı
 Birden çok belge arabirimi (MDI) alt pencere, pencerenin yönetmek için üyeleri ile birlikte Windows işlevselliğini sağlar.  
@@ -75,17 +75,17 @@ class CMDIChildWnd : public CFrameWnd
   
  MDI alt pencere oluşturmak için üç yolu vardır:  
   
--   Doğrudan kullanarak oluşturmak **oluşturma**.  
+-   Doğrudan kullanarak oluşturmak `Create`.  
   
 -   Doğrudan kullanarak oluşturmak `LoadFrame`.  
   
 -   Dolaylı bir belge şablonu aracılığıyla oluşturun.  
   
- Çağırmadan önce **oluşturma** veya `LoadFrame`, C++ kullanarak yığın çerçeve penceresi nesnesinde oluşturmalıdır **yeni** işleci. Çağırmadan önce **oluşturma** pencere sınıfı ile kayıt yaptırabilirsiniz [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) çerçeve simgesini ve sınıf stilleri ayarlamak için genel işlevi.  
+ Çağırmadan önce `Create` veya `LoadFrame`, C++ kullanarak yığın çerçeve penceresi nesnesinde oluşturmalıdır **yeni** işleci. Çağırmadan önce `Create` pencere sınıfı ile kayıt yaptırabilirsiniz [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) çerçeve simgesini ve sınıf stilleri ayarlamak için genel işlevi.  
   
- Kullanım **oluşturma** çerçeve oluşturma parametreleri olarak hemen bağımsız değişkenleri geçirmek için üye işlevi.  
+ Kullanım `Create` çerçeve oluşturma parametreleri olarak hemen bağımsız değişkenleri geçirmek için üye işlevi.  
   
- `LoadFrame` daha az sayıda bağımsız değişken gerektirir **oluşturma**ve bunun yerine varsayılan değerlerine çoğunu çerçeve resim yazısı simgesi, Hızlandırıcı tablosu ve menü çeşitli kaynaklardan alır. Tarafından erişilebilir olmasını `LoadFrame`, tüm bu kaynaklar aynı kaynak kimliği olmalıdır (örneğin, **IDR_MAINFRAME**).  
+ `LoadFrame` daha az sayıda bağımsız değişken gerektirir `Create`ve bunun yerine varsayılan değerlerine çoğunu çerçeve resim yazısı simgesi, Hızlandırıcı tablosu ve menü çeşitli kaynaklardan alır. Tarafından erişilebilir olmasını `LoadFrame`, tüm bu kaynaklar aynı kaynak kimliği olmalıdır (örneğin, **IDR_MAINFRAME**).  
   
  Zaman bir `CMDIChildWnd` nesnesini içeren görünümleri ve belgeleri, çerçevesiyle yerine doğrudan Programcı tarafından dolaylı olarak oluşturma. `CDocTemplate` Çerçeve oluşturulmasını, içeren görünümler oluşturma ve uygun belge görünümlerine bağlantı nesnesi düzenler. Parametreleri `CDocTemplate` Oluşturucusu belirtin `CRuntimeClass` üç sınıflarını söz konusu (belge, çerçeve ve Görünüm). A `CRuntimeClass` nesnesi çerçevesi tarafından dinamik olarak (örneğin, dosya yeni veya MDI pencere yeni komutunu kullanarak) kullanıcı tarafından belirtilen zaman yeni çerçeve oluşturmak için kullanılır.  
   
@@ -142,22 +142,22 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszClassName`  
+ *lpszClassName*  
  İşaret Windows sınıfı adları bir null olarak sonlandırılan bir karakter dizesi (bir [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) yapısı). Sınıf adı kayıtlı herhangi bir ad olabilir [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) genel işlevi. Olmalıdır **NULL** bir standart `CMDIChildWnd`.  
   
- `lpszWindowName`  
+ *lpszWindowName*  
  Pencere adı temsil eden bir null olarak sonlandırılan bir karakter dizesi noktalarına. Başlık çubuğunu metin olarak kullanılır.  
   
- `dwStyle`  
+ *dwStyle*  
  Pencerenin belirtir [stili](../../mfc/reference/styles-used-by-mfc.md#window-styles) öznitelikleri. **WS_CHILD** stili gereklidir.  
   
- `rect`  
+ *Rect*  
  Boyutunu ve pencere konumunu içerir. `rectDefault` Değeri verir boyutu ve yeni konumunu belirtmek Windows `CMDIChildWnd`.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Pencerenin üst belirtir. Varsa **NULL**, ana uygulama penceresi kullanılır.  
   
- `pContext`  
+ *pContext*  
  Belirten bir [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısı. Bu parametre olabilir **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -166,7 +166,7 @@ virtual BOOL Create(
 ### <a name="remarks"></a>Açıklamalar  
  Şu anda etkin MDI alt çerçeve penceresi üst çerçeve penceresi resim yazısını belirleyebilirsiniz. Bu özellik kapatma tarafından devre dışı **fws_addtotıtle** stili bit alt çerçeve penceresi.  
   
- Alt pencere oluşturmak için bir kullanıcı komutuna yanıt olarak framework bu üye işlevi çağırır ve çerçevesi kullanır `pContext` düzgün alt pencere uygulamaya bağlanmak için parametre. Çağırdığınızda **oluşturma**, `pContext` olabilir **NULL**.  
+ Alt pencere oluşturmak için bir kullanıcı komutuna yanıt olarak framework bu üye işlevi çağırır ve çerçevesi kullanır *pContext* düzgün alt pencere uygulamaya bağlanmak için parametre. Çağırdığınızda `Create`, *pContext* olabilir **NULL**.  
   
 ### <a name="example"></a>Örnek  
  Örnek 1:  
@@ -255,10 +255,10 @@ void SetHandles(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hMenu`  
+ *hMenu*  
  Menü kaynak tanıtıcısı.  
   
- `hAccel`  
+ *hAccel*  
  Hızlandırıcı kaynak tanıtıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  

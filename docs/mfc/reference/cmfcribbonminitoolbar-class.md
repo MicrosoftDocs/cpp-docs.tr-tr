@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8aebd796e0edb587e18db910df808fa349ca37
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 07b20d43c53fc0f485d33f71805e73f885c1200a
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371679"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041756"
 ---
 # <a name="cmfcribbonminitoolbar-class"></a>CMFCRibbonMiniToolBar sınıfı
 Bağlamsal açılan araç uygular.  
@@ -98,10 +98,10 @@ void SetCommands(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pRibbonBar`  
+ [in] *pRibbonBar*  
  Mini araç çubuğu düğmeleri görüntülemek arar Şerit çubuk.  
   
- [in] `lstCommands`  
+ [in] *lstCommands*  
  Mini araç çubuğunda görüntülenecek komutları listesi. Tüm Şerit kategorileri ilişkili düğmeleri bulmak için arama yapılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -122,10 +122,10 @@ BOOL Show(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `x`  
+ [in] *x*  
  Ekran koordinatları olarak mini araç yatay konumunu belirtir.  
   
- [in] `y`  
+ [in] *y*  
  Ekran koordinatları olarak mini araç dikey konumu belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -143,16 +143,16 @@ BOOL ShowWithContextMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `x`  
+ [in] *x*  
  Yatay Konum bağlam menüsünün ekran koordinatları olarak belirtir.  
   
- [in] `y`  
+ [in] *y*  
  Ekran koordinatları olarak bağlam menüsü dikey konumu belirtir.  
   
- [in] `uiMenuResID`  
+ [in] *uiMenuResID*  
  Görüntülenecek bağlam menüsü kaynak Kimliğini belirtir.  
   
- [in] `pWndOwner`  
+ [in] *pWndOwner*  
  Bağlam menüsünden iletileri alan penceresi tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10f474ce860bf5d9071a93f17654123f4777efa7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0ca4d5a88b14f32064e473bd129fcd0f8ddd7898
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367350"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040619"
 ---
 # <a name="chtmleditview-class"></a>CHtmlEditView sınıfı
 MFC'nin belge/görünüm mimarisinin bağlamında WebBrowser düzenleme platform işlevselliğini sağlar.  
@@ -100,25 +100,25 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszClassName`  
+ *lpszClassName*  
  Windows sınıfı adları null olarak sonlandırılan bir karakter dizesine noktaları. Sınıf adı kayıtlı herhangi bir ad olabilir [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) genel işlevi veya **RegisterClass** Windows işlevi. Varsa **NULL**, önceden tanımlanmış varsayılan kullanır [CFrameWnd](../../mfc/reference/cframewnd-class.md) öznitelikleri.  
   
- `lpszWindowName`  
+ *lpszWindowName*  
  Pencere adı temsil eden bir null olarak sonlandırılan bir karakter dizesi noktalarına.  
   
- `dwStyle`  
+ *dwStyle*  
  Pencere stili özniteliklerini belirtir. Varsayılan olarak, **ws_vısıble** ve **WS_CHILD** Windows stilleri ayarlanır.  
   
- `rect`  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve pencere konumunu belirtme yapısı. `rectDefault` Değeri boyutunu ve yeni pencere konumunu belirtmek Windows sağlar.  
+ *Rect*  
+ Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve pencere konumunu belirtme yapısı. *RectDefault* değeri boyutunu ve yeni pencere konumunu belirtmek Windows sağlar.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Denetimin üst pencere için bir işaretçi.  
   
- `nID`  
+ *nID*  
  Görünüm kimliği sayısı. Varsayılan olarak, kümesine **AFX_IDW_PANE_FIRST**.  
   
- `pContext`  
+ *pContext*  
  Bir işaretçi bir [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). **NULL** varsayılan olarak.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -132,7 +132,7 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ppDocument`  
+ *ppDocument*  
  [Ihtmldocument2](https://msdn.microsoft.com/library/aa752574.aspx) arabirimi.  
   
 ##  <a name="getstartdocument"></a>  CHtmlEditView::GetStartDocument  

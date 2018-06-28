@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f743c074bc956181e8b62a02062ac2f22cdfb6e4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 458288ecff0b457205ba1735494ad8106c3feae7
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373836"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040954"
 ---
 # <a name="cmfcdragframeimpl-class"></a>CMFCDragFrameImpl sınıfı
 `CMFCDragFrameImpl` Sınıfı kullanıcı bir bölme standart yerleştirme modunda sürüklendiğinde görüntülenen Sürükle dikdörtgen çizer.  
@@ -52,7 +52,7 @@ void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bClearInternalRects`  
+ [in] *bClearInternalRects*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -64,7 +64,7 @@ void Init(CWnd* pDraggedWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDraggedWnd`  
+ [in] *pDraggedWnd*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -76,7 +76,7 @@ void MoveDragFrame(BOOL bForceMove = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bForceMove`  
+ [in] *bForceMove*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -92,9 +92,9 @@ void PlaceTabPreDocking(CWnd* pCBarToPlaceOn);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pTabbedBar`  
- [in] `bFirstTime`  
- [in] `pCBarToPlaceOn`  
+ [in] *pTabbedBar*  
+ [in] *bFirstTime*  
+ [in] *pCBarToPlaceOn*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -106,7 +106,7 @@ void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pOldTargetBar`  
+ [in] *pOldTargetBar*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

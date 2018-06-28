@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df9109ef4613a2fb905fc5bef525f3553155417b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0f59822504e317ee43ad7fb84345fa616fe72fae
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369196"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038438"
 ---
 # <a name="cmfcribbonstatusbarpane-class"></a>CMFCRibbonStatusBarPane sınıfı
 `CMFCRibbonStatusBarPane` Sınıfı için Şerit durum çubuğu ekleyebileceğiniz bir Şerit öğesi uygular.  
@@ -136,31 +136,31 @@ CMFCRibbonStatusBarPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nCmdID`  
+ [in] *nCmdID*  
  Bölmesinde komut Kimliğini belirtir.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Bölmesinde görüntülenecek metin dizesini belirtir.  
   
- [in] `bIsStatic`  
+ [in] *bIsStatic*  
  Varsa `TRUE`, durum bölmesi vurgulanmış veya tıklayarak seçilmedi.  
   
- [in] `hIcon`  
+ [in] *hIcon*  
  Bölmede gösterilecek bir simge için tanıtıcı belirtir.  
   
- [in] `lpszAlmostLargeText`  
+ [in] *lpszAlmostLargeText*  
  Bölmede görüntülenen uzun metin dizesini belirtir.  
   
- [in] `hBmpAnimationList`  
+ [in] *hBmpAnimationList*  
  Animasyon için kullanılan bir görüntü listesi için bir tanıtıcı belirtir.  
   
- [in] `cxAnimation`  
+ [in] *cxAnimation*  
  Animasyon için kullanılan görüntü listesinde simgesinin piksel cinsinden genişliğini belirtir.  
   
- [in] `clrTrnsp`  
+ [in] *clrTrnsp*  
  Animasyon için kullanılan görüntü listesinde görüntüleri saydam rengini belirtir.  
   
- [in] `uiAnimationListResID`  
+ [in] *uiAnimationListResID*  
  Animasyon için kullanılan bir görüntü listesi kaynak Kimliğini belirtir.  
   
 ##  <a name="getalmostlargetext"></a>  CMFCRibbonStatusBarPane::GetAlmostLargeText  
@@ -217,7 +217,7 @@ virtual void OnDrawBorder(CDC*);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CDC*`  
+ [in] *CDC**  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -229,7 +229,7 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -253,11 +253,11 @@ void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszAlmostLargeText`  
+ [in] *lpszAlmostLargeText*  
  Durum çubuğu bölmesinin kesmeden gösterilebilir uzun dizeyi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Metin boyutu kitaplığı hesaplar, `lpszAlmostLargeText` belirtir ve bölmesinde buna göre yeniden boyutlandırır. Bölmesinde hala sığmadığı metin kesilir.  
+ Metin boyutu kitaplığı hesaplar, *lpszAlmostLargeText* belirtir ve bölmesinde buna göre yeniden boyutlandırır. Bölmesinde hala sığmadığı metin kesilir.  
   
 ##  <a name="setanimationlist"></a>  CMFCRibbonStatusBarPane::SetAnimationList  
  Durum çubuğu bölmesine animasyon için kullanılabilecek bir görüntü listesi ekler.  
@@ -275,16 +275,16 @@ BOOL SetAnimationList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hBmpAnimationList`  
+ [in] *hBmpAnimationList*  
  Görüntü listesi için bir tanıtıcı belirtir.  
   
- [in] `cxAnimation`  
+ [in] *cxAnimation*  
  Piksel cinsinden görüntü listesi çerçevede genişliğini belirtir.  
   
- [in] `clrTransp`  
+ [in] *clrTransp*  
  Resim listesi saydam rengini belirtir.  
   
- [in] `uiAnimationListResID`  
+ [in] *uiAnimationListResID*  
  Resim listesi kaynak Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -298,17 +298,17 @@ void SetTextAlign(int nAlign);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nAlign`  
+ [in] *nAlign*  
  Metin hizalamasını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `nAlign` Aşağıdaki değerlerden biri olabilir:  
+ *nAlign* şu değerlerden biri olabilir:  
   
 - `TA_LEFT`: hizalama sol  
   
 - `TA_CENTER:` Ortala  
   
-- `TA_RIGHT:` Sağa hizalama  
+- `TA_RIGHT:` sağa hizalama  
   
 ##  <a name="startanimation"></a>  CMFCRibbonStatusBarPane::StartAnimation  
  Bölmesine atadığınız animasyonu başlatır.  
@@ -320,10 +320,10 @@ void StartAnimation(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nFrameDelay`  
+ [in] *nFrameDelay*  
  Animasyon kare hızı, milisaniye cinsinden belirtir.  
   
- [in] `nDuration`  
+ [in] *nDuration*  
  Animasyon, milisaniye cinsinden yürütmek için ne kadar süreyle belirtir. -1 için sonsuz bir döngüde kullanın.  
   
 ### <a name="remarks"></a>Açıklamalar  

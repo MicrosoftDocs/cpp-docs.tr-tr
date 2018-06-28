@@ -10,14 +10,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb7c6a3c3384debb33a9192dc2e887725088bc3f
-ms.sourcegitcommit: d06966efce25c0e66286c8047726ffe743ea6be0
+ms.openlocfilehash: 3ed2165f75103f5e2aecd3d73dfe9518341d926e
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238597"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042335"
 ---
-# <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-and-157improvements157"></a>C++ uygunluk geliştirmeleri 15.0, Visual Studio 2017 sürümlerde [15.3](#improvements_153), [15,5](#improvements_155), [15,6](#improvements_156), ve [15.7](#improvements_157)
+# <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157"></a>C++ uygunluk geliştirmeleri 15.0, Visual Studio 2017 sürümlerde [15.3](#improvements_153), [15,5](#improvements_155), [15,6](#improvements_156), [15.7](#improvements_157)
 
 Genelleştirilmiş constexpr desteği ve Toplamalar için NSDMI, Microsoft Visual C++ Derleyici C ++ 14 standart eklenen özellikler için tamamlanmıştır. Yine de derleyicide C++11 ve C++98 Standartlarındaki bazı özellikler eksiktir. Bkz: [Visual C++ dili uygunluk](visual-cpp-language-conformance.md) derleyici geçerli durumunu gösteren bir tablo için.
 
@@ -339,7 +339,7 @@ void bar(A<0> *p)
 
 [P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) değişikliklerini `std::traits_type` üye işlevleri `length`, `compare`, ve `find` olun yapmak için `std::string_view` sabit ifadeler de kullanılabilir. (Visual Studio 2017 içinde sürüm 15,6, Clang/LLVM için yalnızca desteklenir. 15.7 2, destek neredeyse önizlemesidir sürümünde ClXX için de tamamlayın.)
 
-## <a name="bug-fixes-in-visual-studio-versions-150-153update153-155update155-and-157update157"></a>Visual Studio sürümlerinde 15.0, hata düzeltmeleri [15.3](#update_153), [15,5](#update_155), ve [15.7](#update_157)
+## <a name="bug-fixes-in-visual-studio-versions-150-153update153-155update155-157update157-and-158update158"></a>Visual Studio sürümlerinde 15.0, hata düzeltmeleri [15.3](#update_153), [15,5](#update_155), [15.7](#update_157), ve [15,8](#update_158)
 
 ### <a name="copy-list-initialization"></a>Kopya listesi başlatma
 
@@ -1621,6 +1621,211 @@ int main() {
     return 0;
 }
 
+```
+
+## <a name="update_158"></a> Hata düzeltmeleri ve Visual Studio 2017 sürüm 15,8 davranış değişiklikleri
+
+### <a name="typename-on-unqualified-identifiers"></a>TypeName nitelenmemiş tanımlayıcıları hakkında
+
+İçinde [/ izin veren-](build/reference/permissive-standards-conformance.md) modu, alacaklardır `typename` diğer şablon tanımlarında nitelenmemiş tanımlayıcılar anahtar sözcükleri artık derleyici tarafından kabul. Aşağıdaki kod artık C7511 üreten *'T': 'typename' anahtar sözcüğü bir tam ad tarafından uyulması gerekir*:
+
+```cpp
+template <typename T>
+using  X = typename T;
+```
+
+Hatayı düzeltmek için yalnızca ikinci satırın değiştirmek `using  X = T;`.
+
+### <a name="declspec-on-right-side-of-alias-template-definitions"></a>diğer ad şablonu tanımlarını sağ tarafındaki __declspec()
+
+[__declspec](cpp/declspec.md) sağ-hand tarafında bir diğer ad şablon tanımının artık izin verilir. Bu önceden derleyici tarafından kabul edildi ancak tamamen yoksayıldı ve diğer kullanıldığında hiçbir zaman bir kullanımdan kaldırma uyarısı neden olur.
+
+Standart C++ öznitelik [ \[ \[kullanım dışı\] \] ](cpp/attributes.md) yerine kullanılabilir ve Visual Studio 2017 itibariyle sürüm 15,6 uygulanır. Aşağıdaki kod artık C2760 üreten *söz dizimi hatası: beklenmeyen belirteç '__declspec', beklenen 'tür tanımlayıcısı'*:
+
+```cpp
+template <typename T>
+using X = __declspec(deprecated("msg")) T;
+```
+
+Hatayı düzeltmek için aşağıdaki kodu (ile yerleştirilen 'diğer ad tanımı = önce' özniteliği) değiştirin:
+
+```cpp
+template <typename T>
+using  X [[deprecated("msg")]] = T;
+```
+
+### <a name="two-phase-name-lookup-diagnostics"></a>İki aşamalı adı arama tanılama
+
+İki aşamalı adı araması şablon gövdeleri kullanılan bağımlı olmayan adları tanımı aynı anda şablona görünür olmalıdır gerektirir. Daha önce Microsoft C++ Derleyici sınıfı adı oluşturmada zamanlarının un looked yukarı durumda bırakır. Şimdi, bağlı olmayan adları şablon gövdesinde ilişkili gerektirir.
+
+Bu bildirim bir arama içine bağımlı temel sınıflar ile yoludur. Daha önce derleyici bunlar tüm türleri çözümlenmiş olduğunda örneklemesi sürede Aranan çünkü bağımlı temel sınıflarda tanımlanan adları kullanılmasına izin. Bu kod artık bir hata olarak kabul edilir. Bu durumlarda, örnek oluşturma zamanında temel sınıf türüyle nitelendiren veya aksi halde örneğin ekleyerek bağımlı hale getirmek tarafından Bakılacak değişkeni zorlayabilirsiniz bir `this->` işaretçi.
+
+İçinde **/ izin veren-** modu, aşağıdaki kod şimdi başlatır C3861: *'base_value': tanımlayıcısı bulunamadı*:
+
+```cpp
+template <class T>
+struct Base {
+    int base_value = 42;
+};
+
+template <class T>
+struct S : Base<T> {
+    int f() {
+        return base_value;
+    }
+};
+
+```
+
+Hatayı düzeltmek için değiştirme `return` ifadesine `return this->base_value;`.
+
+### <a name="forward-declarations-and-definitions-in-namespace-std"></a>iletme bildirimleri ve ad alanı tanımlarında std
+
+C++ standart iletme bildirimlerinde veya tanımlarında ad alanı içine eklemek bir kullanıcı izin vermez `std`. Bildirimlerinde veya tanımlarında ad alanına ekleme `std` veya ad alanı içindeki bir ad alanına std şimdi tanımsız davranışa neden olur.
+
+Bazı zaman gelecekte Microsoft bazı STL türleri tanımlandığı konumuna taşınır. Bu gerçekleştiğinde, iletme bildirimleri ad alanına ekler var olan kodu kesecektir `std`. C4643, yeni bir uyarı gibi kaynak sorunlarını belirlemenize yardımcı olur. Uyarı etkin **/varsayılan** modu ve varsayılan olarak kapalıdır. İle derlenmiş programlar etkiler **/duvar** veya **/WX**. 
+
+Aşağıdaki kod artık C4643 başlatır: *İleri std tarafından C++ standart izin verilmez ad alanında 'vektör' bildirme*. 
+
+
+```cpp
+namespace std { 
+    template<typename T> class vector; 
+} 
+```
+
+Hatayı düzeltmek için kullanmak bir **dahil** ileriye dönük bildirimi yerine yönerge:
+
+```cpp
+#include <vector>
+```
+
+### <a name="constructors-that-delegate-to-themselves"></a>Kendileri için temsilci oluşturucular
+
+C++ standart oluşturucuyu temsilci seçme kendisine temsilci seçtiğinde derleyici bir tanılama yayma önerir. Microsoft C++ derleyici [/Std: c ++ 17](build/reference/std-specify-language-standard-version.md) ve [/Std: c ++ Son](build/reference/std-specify-language-standard-version.md) modları şimdi C7535 başlatır: *'X::X': oluşturucusu için temsilci seçme, çağıran kendisini*.
+
+Bu hata olmadan aşağıdaki programı derlenir ancak sonsuz bir döngüde oluşturur:
+
+```cpp
+class X { 
+public: 
+    X(int, int); 
+    X(int v) : X(v){}
+}; 
+```
+
+Sonsuz bir döngüye önlemek için farklı bir oluşturucu temsilci:
+
+```cpp
+class X { 
+public: 
+
+    X(int, int); 
+    X(int v) : X(v, 0) {} 
+}; 
+```
+
+### <a name="offsetof-with-constant-expressions"></a>offsetof sabit ifadeler ile
+
+[offsetof](c-runtime-library/reference/offsetof-macro.md) gerektiren makro kullanarak geleneksel olarak uygulanmıştır bir [reinterpret_cast](cpp/reinterpret-cast-operator.md). Bu sabit bir ifade gerektiren bağlamlarda yasal değil, ancak Microsoft C++ derleyicisi geleneksel izin. STL parçası doğru bir iç derleyici kullandıkça sevk offsetof makrosu (**__builtin_offsetof**), ancak çoğu kişi makrosu eli kendi tanımlamak için kullanılan **offsetof**.  
+
+Visual Studio 2017 içinde sürüm 15,8, bu reinterpret_casts standart C++ uygulamasına uygun kodu yardımcı olmak için varsayılan modunda görünebilir alanları derleyici kısıtlar. Altında [/ izin veren-](build/reference/permissive-standards-conformance.md), kısıtlamalar bile daha sıkı. Sabit ifadeleri gerektiren yerde bir offsetof sonucunu kullanarak C4644 uyarı veren kodu neden olabilir *sabit ifadeler offsetof makrosu tabanlı desende kullanımını standart; kullanım offsetof tanımlanmış C++ Standart Kitaplık yerine* veya C2975 *geçersiz şablon bağımsız değişken, beklenen derleme zamanı sabit ifade*.
+
+Aşağıdaki kod, C4644 başlatır **/varsayılan** ve **/Std: c ++ 17** modları ve içinde C2975 **/ izin veren-** modu: 
+
+```cpp
+struct Data { 
+    int x; 
+}; 
+
+// Common pattern of user-defined offsetof 
+#define MY_OFFSET(T, m) (unsigned long long)(&(((T*)nullptr)->m)) 
+
+int main() 
+
+{ 
+    switch (0) { 
+    case MY_OFFSET(Data, x): return 0; 
+    default: return 1; 
+    } 
+} 
+```
+
+Hatayı düzeltmek için kullanmak **offsetof** aracılığıyla tanımlanan \<cstddef >:
+
+```cpp
+#include <cstddef>  
+
+struct Data { 
+    int x; 
+};  
+
+int main() 
+{ 
+    switch (0) { 
+    case offsetof(Data, x): return 0; 
+    default: return 1; 
+    } 
+} 
+```
+
+
+### <a name="cv-qualifiers-on-base-classes-subject-to-pack-expansion"></a>MS-niteleyicileri paketi genişletme tabi temel sınıfları
+
+Microsoft C++ derleyicisi önceki sürümlerinde de tabi paketi genişletme ise bir temel sınıf MS niteleyicileri vardı algılamadı. 
+
+Visual Studio 2017 sürüm 15,8, içinde içinde **/ izin veren-** modu aşağıdaki kodu başlatır C3770 *'const S': geçerli bir taban sınıfı değil*: 
+
+```cpp
+template<typename... T> 
+class X : public T... { };  
+
+class S { };  
+
+int main() 
+{ 
+    X<const S> x; 
+} 
+```
+### <a name="template-keyword-and-nested-name-specifiers"></a>Template anahtar sözcüğü ve iç içe-adı-tanımlayıcıları
+
+İçinde **/ izin veren-** modu, derleyici şimdi gerektirir `template` bir iç içe-adı-bağımlı olan belirleyici sonra geldiğinde bir şablon adı öncesinde anahtar sözcüğü. 
+
+Aşağıdaki kod **/ izin veren-** modu şimdi C7510 başlatır: *'foo': 'şablonuyla' bağımlı şablon adı kullanımını önekli. Not: sınıf şablonu örneklemesi bkz ' X<T>' bırakılıyor derlenmiş*:
+
+```cpp
+template<typename T> struct Base
+{
+    template<class U> void foo() {} 
+}; 
+
+template<typename T> 
+struct X : Base<T> 
+{ 
+    void foo() 
+    { 
+        Base<T>::foo<int>(); 
+    } 
+}; 
+```
+
+Hatayı düzeltmek için ekleme `template` anahtar `Base<T>::foo<int>();` deyimi, aşağıdaki örnekte gösterildiği gibi:
+
+```cpp
+template<typename T> struct Base
+{
+    template<class U> void foo() {}
+};
+ 
+template<typename T> 
+struct X : Base<T> 
+{ 
+    void foo() 
+    { 
+        // Add template keyword here:
+        Base<T>::template foo<int>(); 
+    } 
+}; 
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

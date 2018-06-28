@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 495bf2a3eab9ceee4ca0bab337d590c1820905e8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 00933a392486064fac7c9a526d8b0c096703460c
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369628"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037742"
 ---
 # <a name="cmfclistctrl-class"></a>CMFCListCtrl sınıfı
 `CMFCListCtrl` Sınıfını genişleten işlevselliğini [CListCtrl sınıfı](../../mfc/reference/clistctrl-class.md) Gelişmiş üstbilgi denetim işlevselliğini destekleyen tarafından sınıfı [CMFCHeaderCtrl sınıfı](../../mfc/reference/cmfcheaderctrl-class.md).  
@@ -105,10 +105,10 @@ void EnableMarkSortedColumn(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bMark`  
+ [in] *bMark*  
  Farklı arka plan rengi etkinleştirilip etkinleştirilmeyeceğini belirleyen bir Boolean parametresiyle.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  Denetim hemen yeniden boyutlandırmaya edilip edilmeyeceğini belirler Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -122,7 +122,7 @@ void EnableMultipleSort(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  Birden çok sütun sıralama modu etkinleştirilip etkinleştirilmeyeceğini belirten bir Boole değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -165,13 +165,13 @@ virtual int OnCompareItems(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lParam1`  
+ [in] *lParam1*  
  Karşılaştırma yapılacak ilk öğe.  
   
- [in] `lParam2`  
+ [in] *lParam2*  
  Karşılaştırılacak ikinci öğe.  
   
- [in] `iColumn`  
+ [in] *iColumn*  
  Bu yöntem sıralama sütun dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -213,13 +213,13 @@ virtual HFONT OnGetCellFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nRow`  
+ [in] *nRow*  
  Söz konusu hücre satır.  
   
- [in] `nColumn`  
+ [in] *nColumn*  
  Söz konusu hücre sütun.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Kullanıcı tanımlı veri. Varsayılan uygulama, bu parametre kullanmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -238,10 +238,10 @@ virtual COLORREF OnGetCellTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nRow`  
+ [in] *nRow*  
  Söz konusu hücre satır.  
   
- [in] `nColumn`  
+ [in] *nColumn*  
  Söz konusu hücre sütun.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -258,7 +258,7 @@ void RemoveSortColumn(int iColumn);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iColumn`  
+ [in] *iColumn*  
  Kaldırmak için sütun.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -275,14 +275,14 @@ void SetSortColumn(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iColumn`  
+ [in] *iColumn*  
  Sıralamak için sütun.  
   
- [in] `bAscending`  
+ [in] *bAscending*  
  Sıralama düzenini belirten bir Boole değeri.  
   
- [in] `bAdd`  
- Yöntemi tarafından belirtilen sütun ekler olup olmadığını belirten bir Boole değeri `iColumn` sütunları sıralama listesi.  
+ [in] *bekle*  
+ Yöntemi tarafından belirtilen sütun ekler olup olmadığını belirten bir Boole değeri *iColumn* sütunları sıralama listesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, yöntemi kullanarak üstbilgi denetimine giriş parametrelerini geçirir [CMFCHeaderCtrl::SetSortColumn](../../mfc/reference/cmfcheaderctrl-class.md#setsortcolumn).  
@@ -298,14 +298,14 @@ virtual void Sort(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iColumn`  
+ [in] *iColumn*  
  Sıralamak için sütun.  
   
- [in] `bAscending`  
+ [in] *bAscending*  
  Sıralama düzenini belirten bir Boole değeri.  
   
- [in] `bAdd`  
- Bu yöntem tarafından belirtilen sütun ekler olup olmadığını belirten bir Boole değeri `iColumn` sütunları sıralama listesi.  
+ [in] *bekle*  
+ Bu yöntem tarafından belirtilen sütun ekler olup olmadığını belirten bir Boole değeri *iColumn* sütunları sıralama listesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

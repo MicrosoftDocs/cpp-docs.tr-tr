@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf09b2f598391a599df5106fcf8933c580dd30e3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1947f93e65126df403feee658ade15648b081076
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370662"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039994"
 ---
 # <a name="cmfcdesktopalertwnd-class"></a>CMFCDesktopAlertWnd sınıfı
 `CMFCDesktopAlertWnd` Sınıfı kullanıcıyı bir olay hakkında bilgilendirmek için ekranda görünen bir kalıcı olmayan iletişim kutusu işlevselliğini uygular.  
@@ -163,22 +163,22 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] [out] `pWndOwner`  
+ [in] [out] *pWndOwner*  
  Uyarı pencere sahibini belirtir. Sahibi sonra Masaüstü uyarı pencere ilişkin tüm bildirimler alır. Bu değer olamaz `NULL`.  
   
- [in] `uiDlgResID`  
+ [in] *uiDlgResID*  
  Uyarı pencere kaynak Kimliğini belirtir.  
   
- [in] `hMenu`  
+ [in] *hMenu*  
  Kullanıcı menü düğmesini tıklattığında görüntüleyen menü belirtir. Varsa `NULL`, menü düğmesi görüntülenmez.  
   
- [in] `ptPos`  
+ [in] *ptPos*  
  Ekran koordinatları kullanarak, uyarı pencere görüntülendiği ilk konumlarını belirtir. Bu parametre, (-1, -1) uyarı penceresini ekranın sağ alt köşesinde görüntülenir.  
   
- [in] `pRTIDlgBar`  
+ [in] *pRTIDlgBar*  
  Uyarı pencere istemci alanını kapsayan bir özel iletişim kutusu sınıfı için çalışma zamanı sınıf bilgileri.  
   
- [in] `params`  
+ [in] *parametreleri*  
  Bir uyarı pencere oluşturmak için kullanılan parametreleri belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -297,7 +297,7 @@ virtual BOOL OnBeforeShow(CPoint&);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CPoint&`  
+ [in] *CPoint &*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -311,7 +311,7 @@ virtual BOOL OnClickLinkButton(UINT uiCmdID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmdID`  
+ [in] *uiCmdID*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -330,8 +330,8 @@ virtual BOOL OnCommand(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `wParam`  
- [in] `lParam`  
+ [in] *wParam*  
+ [in] *lParam*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -345,7 +345,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -357,7 +357,7 @@ BOOL ProcessCommand(HWND hwnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hwnd`  
+ [in] *hwnd*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -371,7 +371,7 @@ void SetAnimationSpeed(UINT nSpeed);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nSpeed`  
+ [in] *nSpeed*  
  Yeni animasyon hızı milisaniye cinsinden belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -385,7 +385,7 @@ void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `type`  
+ [in] *türü*  
  Animasyon türünü belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -409,7 +409,7 @@ void SetAutoCloseTime(int nTime);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nTime`  
+ [in] *nTime*  
  Uyarı pencere otomatik olarak kapanmadan önce milisaniye cinsinden süre geçtikten.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -423,7 +423,7 @@ void SetSmallCaption(BOOL bSmallCaption = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bSmallCaption`  
+ [in] *bSmallCaption*  
  `TRUE` Uyarı pencere küçük resim yazısı görüntüler belirtmek için; Aksi takdirde `FALSE` uyarı Pencereyi normal boyutuna resim yazısı görüntüler belirtmek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -437,7 +437,7 @@ void SetTransparency(BYTE nTransparency);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nTransparency`  
+ [in] *nTransparency*  
  Saydamlık düzeyini belirtir. Bu değer, 0 ile 255 (dahil) arasında olmalıdır. Bu değer arttıkça, daha fazla opak penceresi.  
   
 ### <a name="remarks"></a>Açıklamalar  

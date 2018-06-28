@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71738511079427a60c9296bc75f9c1e79416d667
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e1226f99d01d933e1754d301756aee6a12620e6a
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367162"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040148"
 ---
 # <a name="chtmleditctrl-class"></a>CHtmlEditCtrl sınıfı
 Bir MFC penceresinde WebBrowser ActiveX denetiminin işlevsellik sağlar.  
@@ -95,22 +95,22 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszWindowName`  
+ *lpszWindowName*  
  Bu parametre kullanılmıyor.  
   
- `dwStyle`  
+ *dwStyle*  
  Bu parametre kullanılmıyor.  
   
- `rect`  
+ *Rect*  
  Denetimin boyutunu ve konumunu belirtir.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Denetimin üst penceresi belirtir. Değil olmalıdır **NULL**.  
   
- `nID`  
+ *nID*  
  Denetimin kimliğini belirtir.  
   
- `pContext`  
+ *pContext*  
  Bu parametre kullanılmıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -124,7 +124,7 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ppDocument`  
+ *ppDocument*  
  Belge arabirimi.  
   
 ##  <a name="getstartdocument"></a>  CHtmlEditCtrl::GetStartDocument  

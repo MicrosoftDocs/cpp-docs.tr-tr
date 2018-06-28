@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d51b29f9ea2719f98f263565680ded2360197572
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1e6c56116c94abeaf4dd266ca823e66c68d099fd
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370851"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037502"
 ---
 # <a name="cmfctaskspanetaskgroup-class"></a>CMFCTasksPaneTaskGroup sınıfı
 `CMFCTasksPaneTaskGroup` Bir yardımcı sınıfı tarafından kullanılan bir sınıftır [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) denetim. Nesne türü `CMFCTasksPaneTaskGroup` temsil eden bir *görev grubu*. Framework Daralt düğmesi ayrı bir kutuya görüntüler öğeleri listesi görev grubudur. Kutunun isteğe bağlı bir başlıkla (grup adı) olabilir. Bir grup daraltılmışsa, görevlerin listesi görünür değil.  
@@ -116,22 +116,22 @@ CMFCTasksPaneTaskGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszName`  
+ *lpszName*  
  Grup başlığını grubun adını belirtir.  
   
- `bIsBottom`  
+ *bIsBottom*  
  Grup görev bölmesinde denetim altına hizalanır olup olmadığını belirtir.  
   
- `bIsSpecial`  
+ *bIsSpecial*  
  Grup olarak belirlenmiş olup olmadığını belirtir *özel* ve bu nedenle, Grup başlığını farklı bir renkle olup doldurulur.  
   
- `bIsCollapsed`  
+ *bIsCollapsed*  
  Grup daraltılmış olup olmadığını belirtir.  
   
- `pPage`  
+ *fsayfa*  
  Bu görev grubun ait olduğu özellik sayfası belirtir.  
   
- `hIcon`  
+ *hIcon*  
  Grup başlığını görüntüler simge belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -216,14 +216,14 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParent`  
+ [in] *pParent*  
  Geçerli görev grubunun üst pencere temsil eder.  
   
- [out] `data`  
+ [out] *veri*  
  Türünde bir nesne `CAccessibilityData` geçerli görev grubunu erişilebilirlik verilerle doldurulur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` varsa `data` parametresi başarıyla geçerli görev grubunun erişilebilirlik verilerle doldurulan; Aksi takdirde `FALSE`.  
+ `TRUE` varsa *veri* parametresi başarıyla geçerli görev grubunun erişilebilirlik verilerle doldurulan; Aksi takdirde `FALSE`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

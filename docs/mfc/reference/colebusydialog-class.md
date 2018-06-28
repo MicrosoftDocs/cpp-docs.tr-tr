@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b061d2cc31a67c2e6059abeaadb6062b77cacb88
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4af90e9354e7d443cb50acbafaa1468c99c12c85
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374376"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040918"
 ---
 # <a name="colebusydialog-class"></a>COleBusyDialog sınıfı
 OLE sunucu yanıt vermiyor veya sunucu meşgul iletişim kutuları için kullanılır.  
@@ -107,7 +107,7 @@ explicit COleBusyDialog(
  *bNotResponding*  
  Varsa **doğru**, yanıt iletişim kutusu yerine sunucu meşgul iletişim kutusu çağırın. Yanıt iletişim kutusunda ifade biraz sunucu meşgul iletişim kutusunda ifade farklıdır ve iptal düğmesi devre dışıdır.  
   
- `dwFlags`  
+ *dwFlags*  
  Oluşturma bayrağı. Sıfır veya daha fazla bit düzeyinde OR işleci ile birlikte aşağıdaki değerleri içerebilir:  
   
 - **BZ_DISABLECANCELBUTTON** iletişim kutusu çağrılırken iptal düğmesi devre dışı bırakın.  
@@ -116,7 +116,7 @@ explicit COleBusyDialog(
   
 - **BZ_DISABLERETRYBUTTON** iletişim kutusu çağrılırken yeniden dene düğmesi devre dışı bırakın.  
   
- `pParentWnd`  
+ *pParentWnd*  
  İşaret üst veya sahibi pencere nesnesi için (tür `CWnd`) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim nesnenin üst pencere ana uygulama penceresine ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  

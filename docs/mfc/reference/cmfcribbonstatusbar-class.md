@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0257370e69c5304c4d945087f2a8c5694da4aa03
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 256dbd6978b2d25cebb8496b6aa71763356f3637
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374671"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038109"
 ---
 # <a name="cmfcribbonstatusbar-class"></a>CMFCRibbonStatusBar sınıfı
 `CMFCRibbonStatusBar` Sınıfı Şerit öğeleri görüntülemek bir durum çubuğu denetimi uygular.  
@@ -149,7 +149,7 @@ void AddDynamicElement(CMFCRibbonBaseElement* pElement);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pElement`  
+ [in] *pElement*  
  Dinamik bir öğe için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -166,13 +166,13 @@ void AddElement(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pElement`  
+ [in] *pElement*  
  Eklenen öğesi için bir işaretçi.  
   
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  Öğesinin metin etiketi.  
   
- [in] `bIsVisible`  
+ [in] *bIsVisible*  
  `TRUE` öğe olarak görünür, eklemek istiyorsanız `FALSE` öğesi olarak eklemek istiyorsanız gizli.  
   
 ##  <a name="addextendedelement"></a>  CMFCRibbonStatusBar::AddExtendedElement  
@@ -186,13 +186,13 @@ void AddExtendedElement(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pElement`  
+ [in] *pElement*  
  Eklenen öğesi için bir işaretçi.  
   
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  Öğesinin metin etiketi.  
   
- [in] `bIsVisible`  
+ [in] *bIsVisible*  
  `TRUE` öğe olarak görünür, eklemek istiyorsanız `FALSE` öğesi olarak eklemek istiyorsanız gizli.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -219,13 +219,13 @@ BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Üst pencere için bir işaretçi.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Mantıksal OR birleşimi denetim stilleri.  
   
- [in] `nID`  
+ [in] *nID*  
  Durum çubuğu denetiminin kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -243,16 +243,16 @@ BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentWnd`  
+ *pParentWnd*  
  Üst pencere için bir işaretçi.  
   
- `dwCtrlStyle`  
+ *dwCtrlStyle*  
  Mantıksal OR birleşimi durum çubuğu nesnesi oluşturmak için ek stilleri.  
   
- `dwStyle`  
+ *dwStyle*  
  Durum çubuğu denetim stili.  
   
- `nID`  
+ *nID*  
  Durum çubuğu denetiminin kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -266,8 +266,8 @@ CMFCRibbonBaseElement* FindByID(UINT uiCmdID, BOOL = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmdID`  
- [in] `BOOL`  
+ [in] *uiCmdID*  
+ [in] *BOOL*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -281,7 +281,7 @@ CMFCRibbonBaseElement* FindElement(UINT uiID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiID`  
+ [in] *uiID*  
  Öğenin kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -305,7 +305,7 @@ CMFCRibbonBaseElement* GetElement(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nIndex`  
+ [in] *nIndex*  
  Durum çubuğu denetimi ana alanında bulunan bir öğenin sıfır tabanlı bir dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -331,11 +331,11 @@ CMFCRibbonBaseElement* GetExElement(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nIndex`  
+ [in] *nIndex*  
  Durum çubuğu denetimi genişletilmiş alanında bulunan bir öğenin sıfır tabanlı dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Şerit durum çubuğu genişletilmiş alanında belirtilen dizininde bulunan öğe için bir işaretçi. `NULL` varsa `nIndex` negatif veya genişletilmiş alanının Şerit durum çubuğu öğelerinin sayısını aşıyor.  
+ Şerit durum çubuğu genişletilmiş alanında belirtilen dizininde bulunan öğe için bir işaretçi. `NULL` varsa *nIndex* negatif veya genişletilmiş alanının Şerit durum çubuğu öğelerinin sayısını aşıyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -347,7 +347,7 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rect`  
+ [in] *rect*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -383,7 +383,7 @@ BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pElement`  
+ [in] *pElement*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -413,17 +413,17 @@ virtual void OnDrawInformation(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `strInfo`  
+ [in] *strInfo*  
  Bilgi dizesi.  
   
- [in] `rectInfo`  
+ [in] *rectInfo*  
  Sınırlayıcı dikdörtgenini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Durum çubuğu üzerinde bilgi dize görünümünü özelleştirmek istiyorsanız bir türetilmiş sınıfta bu yöntemi geçersiz kılın. Kullanım [CMFCRibbonStatusBar::SetInformation](#setinformation) durum çubuğu bilgilerini moduna yöntemi. Bu mod, durum çubuğu, tüm bölmeleri gizler ve tarafından belirtilen bilgi dizesi görüntüler `strInfo`.  
+ Durum çubuğu üzerinde bilgi dize görünümünü özelleştirmek istiyorsanız bir türetilmiş sınıfta bu yöntemi geçersiz kılın. Kullanım [CMFCRibbonStatusBar::SetInformation](#setinformation) durum çubuğu bilgilerini moduna yöntemi. Bu mod, durum çubuğu, tüm bölmeleri gizler ve tarafından belirtilen bilgi dizesi görüntüler *strInfo*.  
   
 ##  <a name="recalclayout"></a>  CMFCRibbonStatusBar::RecalcLayout  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -449,11 +449,11 @@ BOOL RemoveElement(UINT uiID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiID`  
+ [in] *uiID*  
  Durum Çubuğu'ndan kaldırma öğenin kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` bir öğe, belirtilen `uiID` kaldırılır. `FALSE` Aksi takdirde.  
+ `TRUE` bir öğe, belirtilen *uiID* kaldırılır. `FALSE` Aksi takdirde.  
   
 ##  <a name="setinformation"></a>  CMFCRibbonStatusBar::SetInformation  
  Etkinleştirir veya Şerit durum çubuğu bilgilerini modunu devre dışı bırakır.  
@@ -463,11 +463,11 @@ void SetInformation(LPCTSTR lpszInfo);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszInfo`  
+ [in] *lpszInfo*  
  Bilgi dizesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Durum çubuğu bilgilerini moduna için bu yöntemi kullanın. Bu mod, durum çubuğu, tüm bölmeleri gizler ve tarafından belirtilen bilgi dizesi görüntüler `lpszInfo`.  
+ Durum çubuğu bilgilerini moduna için bu yöntemi kullanın. Bu mod, durum çubuğu, tüm bölmeleri gizler ve tarafından belirtilen bilgi dizesi görüntüler *lpszInfo*.  
   
  LpszInfo olduğunda `NULL`, durum çubuğu normal moduna geri döner.  
   

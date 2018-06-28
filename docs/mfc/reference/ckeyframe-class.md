@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a9e9ff3d6e3e4bcccf8e9ebd46f791f60f1cc37
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 56fa354a46e40704ac063791931ca01d1386a558
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367191"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038464"
 ---
 # <a name="ckeyframe-class"></a>CKeyFrame sınıfı
 Animasyon ana kare temsil eder.  
@@ -102,10 +102,10 @@ virtual BOOL AddToStoryboard(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pStoryboard`  
+ *pStoryboard*  
  Film şeridi gösteren bir işaretçi.  
   
- `bDeepAdd`  
+ *bDeepAdd*  
  Ana kare ekleyin veya yinelemeli olarak geçiş belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -124,10 +124,10 @@ BOOL AddToStoryboardAfterTransition(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pStoryboard`  
+ *pStoryboard*  
  Film şeridi gösteren bir işaretçi.  
   
- `bDeepAdd`  
+ *bDeepAdd*  
  Bir geçiş yinelemeli olarak eklenip eklenmeyeceğini belirler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -146,10 +146,10 @@ virtual BOOL AddToStoryboardAtOffset(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pStoryboard`  
+ *pStoryboard*  
  Film şeridi gösteren bir işaretçi.  
   
- `bDeepAdd`  
+ *bDeepAdd*  
  Bir ana kare eklemek için bu ana kare üzerinde yinelemeli olarak bağlı olup olmadığını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -171,13 +171,13 @@ CKeyFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pTransition`  
+ *pTransition*  
  Bir geçiş için bir işaretçi.  
   
- `pKeyframe`  
+ *pKeyframe*  
  Ana kare bir işaretçi.  
   
- `offset`  
+ *uzaklık*  
  PKeyframe tarafından belirtilen ana kare gelen saniye cinsinden uzaklık.  
   
 ### <a name="remarks"></a>Açıklamalar  

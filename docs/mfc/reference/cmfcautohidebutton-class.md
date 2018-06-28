@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48dc35a5b3e7f6b12376a47d68a95602bed48c49
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a62dcb52c6e50897c3ae4a518b1cd8f2b704c7a1
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375317"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038305"
 ---
 # <a name="cmfcautohidebutton-class"></a>CMFCAutoHideButton sınıfı
 Gösterir veya gizler bir düğmeyi bir [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) gizlemek için yapılandırılmış.  
@@ -144,13 +144,13 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParentBar`  
+ [in] *pParentBar*  
  Üst araç için bir işaretçi.  
   
- [in] `pAutoHideWnd`  
+ [in] *pAutoHideWnd*  
  Bir işaretçi bir [CDockablePane](../../mfc/reference/cdockablepane-class.md) nesnesi. Bu otomatik olarak gizle düğme gizler ve gösterir `CDockablePane`.  
   
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  Düğme hizalamasını ile ana çerçeve penceresi belirten bir değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -159,7 +159,7 @@ virtual BOOL Create(
 ### <a name="remarks"></a>Açıklamalar  
  Oluştururken bir `CMFCAutoHideButton` nesnesi ile belirli bir otomatik olarak gizle düğmesi ilişkilendirmeniz gerekir `CDockablePane`. Kullanıcı ilişkili gösterme ve gizleme için otomatik olarak Gizle düğmesini kullanabilirsiniz `CDockablePane`.  
   
- `dwAlignment` Parametre, otomatik olarak gizle düğmesi uygulamada bulunduğu belirtir. Parametresi şu değerlerden biri olabilir:  
+ *DwAlignment* parametre, otomatik olarak gizle düğmesi uygulamada bulunduğu belirtir. Parametresi şu değerlerden biri olabilir:  
   
 - `CBRS_ALIGN_LEFT`  
   
@@ -303,7 +303,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -320,13 +320,13 @@ virtual void OnDrawBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectBounds`  
+ [in] *rectBounds*  
  Otomatik olarak gizle düğmesinin sınırlayıcı dikdörtgenini.  
   
- [in] `rectBorderSize`  
+ [in] *rectBorderSize*  
  Otomatik Gizle düğmesini her iki tarafındaki kenarlığın kalınlığı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -342,10 +342,10 @@ virtual void OnFillBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Otomatik olarak gizle düğmesinin sınırlayıcı dikdörtgenini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -359,7 +359,7 @@ void ShowAttachedWindow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  Bu yöntem ekli gösterip göstermediğini belirten bir Boole değeri `CDockablePane`.  
   
 ##  <a name="showbutton"></a>  CMFCAutoHideButton::ShowButton  
@@ -370,7 +370,7 @@ virtual void ShowButton(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  Otomatik olarak gizle düğmesinin gösterilip gösterilmeyeceğini belirten bir Boole değeri.  
   
 ##  <a name="move"></a>  CMFCAutoHideButton::Move  
@@ -381,7 +381,7 @@ void Move(int nOffset);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nOffset`  
+ [in] *nOffset*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -393,7 +393,7 @@ void ReplacePane(CDockablePane* pNewBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pNewBar`  
+ [in] *pNewBar*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -405,7 +405,7 @@ virtual void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pFirstBarInGroup`  
+ [in] *pFirstBarInGroup*  
  Grup ilk çubuğunda bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -418,7 +418,7 @@ virtual void HighlightButton(BOOL bHighlight);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bHighlight`  
+ *bHighlight*  
  Yeni Otomatik Gizle düğme durumu belirtir. `TRUE` Düğme vurgulandığı gösterir `FALSE` düğmesi vurgulanmış değil gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  

@@ -204,12 +204,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cdbc5972d244d9dfd969221d88299e868f617a5f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b44b4b6cb834590c795084fc4ac84337c0fe8a6
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378288"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039355"
 ---
 # <a name="chtmlview-class"></a>CHtmlView sınıfı
 WebBrowser denetimi MFC'nin belge/görünüm mimarisinin bağlamında işlevselliğini sağlar.  
@@ -383,25 +383,25 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszClassName`  
+ *lpszClassName*  
  Windows sınıfı adları null olarak sonlandırılan bir karakter dizesine noktaları. Sınıf adı kayıtlı herhangi bir ad olabilir [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) genel işlevi veya **RegisterClass** Windows işlevi. Varsa **NULL**, önceden tanımlanmış varsayılan kullanır [CFrameWnd](../../mfc/reference/cframewnd-class.md) öznitelikleri.  
   
- `lpszWindowName`  
+ *lpszWindowName*  
  Pencere adı temsil eden bir null olarak sonlandırılan bir karakter dizesi noktalarına.  
   
- `dwStyle`  
+ *dwStyle*  
  Pencere stili özniteliklerini belirtir. Varsayılan olarak, **ws_vısıble** ve **WS_CHILD** Windows stilleri ayarlanır.  
   
- `rect`  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve pencere konumunu belirtme yapısı. `rectDefault` Değeri boyutunu ve yeni pencere konumunu belirtmek Windows sağlar.  
+ *Rect*  
+ Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve pencere konumunu belirtme yapısı. *RectDefault* değeri boyutunu ve yeni pencere konumunu belirtmek Windows sağlar.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Denetimin üst pencere için bir işaretçi.  
   
- `nID`  
+ *nID*  
  Görünüm kimliği sayısı. Varsayılan olarak, kümesine **AFX_IDW_PANE_FIRST**.  
   
- `pContext`  
+ *pContext*  
  Bir işaretçi bir [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). **NULL** varsayılan olarak.  
   
 ##  <a name="createcontrolsite"></a>  CHtmlView::CreateControlSite  
@@ -416,16 +416,16 @@ virtual BOOL CreateControlSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pContainer`  
+ *pContainer*  
  Bir işaretçi bir [COleControlContainer](../../mfc/reference/colecontrolcontainer-class.md) denetimi içeren nesne.  
   
- `ppSite`  
+ *ppSite*  
  Bir işaretçi bir işaretçi bir [COleControlSite](../../mfc/reference/colecontrolsite-class.md) site için denetim sağlayan nesne.  
   
- `nID`  
+ *nID*  
  Barındırılacak şekilde denetim tanımlayıcısı.  
   
- `clsid`  
+ *CLSID*  
  Barındırılacak şekilde denetiminin CLSID'si  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -445,7 +445,7 @@ HRESULT ExecFormsCommand(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwCommandID`  
+ *dwCommandID*  
  Yürütülecek komutu. Bu komut ait olmalıdır **CMDSETID3_Forms3** grubu.  
   
  *pVarIn*  
@@ -472,13 +472,13 @@ void ExecWB(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cmdID`  
+ *cmdID*  
  Yürütülecek komut.  
   
  *cmdexecopt*  
  Komutu yürütmek için seçenekleri ayarlayın.  
   
- `pvaIn`  
+ *pvaIn*  
  Komut giriş bağımsız değişkenlerini belirtmek için kullanılan bir değişken.  
   
  *pvaOut*  
@@ -684,10 +684,10 @@ COleVariant GetProperty(LPCTSTR lpszProperty);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszProperty`  
+ *lpszProperty*  
  Alınacak özelliğin içeren bir dize için bir işaretçi.  
   
- `strValue`  
+ *strValue*  
  Bir başvuru bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) özelliğinin geçerli değeri alan nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -759,7 +759,7 @@ BOOL GetSource(CString& strRef);
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="parameters"></a>Parametreler  
- `refString`  
+ *refString*  
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) kaynak kodunu tutun.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -911,10 +911,10 @@ BOOL LoadFromResource(UINT nRes);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszResource`  
+ *lpszResource*  
  Yüklemek için kaynağın adını içeren bir dize için bir işaretçi.  
   
- `nRes`  
+ *nRes*  
  Yüklemek için kaynak adını içeren arabellek kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -940,19 +940,19 @@ void Navigate(
  *URL*  
  Gidilecek URL'yi içeren çağıran tarafından ayrılmış bir dize veya görüntülemek için dosyasının tam yolu.  
   
- `dwFlags`  
+ *dwFlags*  
  Bayrakları bir değişkenin kaynak Geçmiş listesine eklenip eklenmeyeceğini, için okuma veya yazma önbellekten ve yeni bir pencerede kaynak görüntülenip görüntülenmeyeceğini belirtir. Değişkeni tarafından tanımlanan değerlerden bir bileşimi olabilir [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) numaralandırması.  
   
- `lpszTargetFrameName`  
+ *lpszTargetFrameName*  
  Kaynak görüntülenecek çerçevede adını içeren bir dize için bir işaretçi.  
   
- `lpszHeaders`  
+ *lpszHeaders*  
  Sunucuya gönderilecek HTTP üstbilgileri belirten bir değer için bir işaretçi. Bu üstbilgileri varsayılan Internet Explorer üstbilgileri eklenir. Üstbilgileri gibi şeyler sunucu, sunucu ya da bir durum kodu için geçirilen veri türü, gereken eylem olarak belirtebilirsiniz. Bu parametre yoksayılır *URL* bir HTTP URL'si değil.  
   
- `lpvPostData`  
+ *lpvPostData*  
  HTTP POST işlemiyle gönderilecek veri için bir işaretçi. Örneğin, POST işlem, bir HTML formu tarafından toplanan veri göndermek için kullanılır. Bu parametre herhangi bir post veri belirlemezse **Bul** bir HTTP GET işlemi verir. Bu parametre yoksayılır *URL* bir HTTP URL'si değil.  
   
- `dwPostDataLen`  
+ *dwPostDataLen*  
  HTTP POST işlemiyle gönderilecek veri. Örneğin, POST işlem, bir HTML formu tarafından toplanan veri göndermek için kullanılır. Bu parametre herhangi bir post veri belirlemezse **Bul** bir HTTP GET işlemi verir. Bu parametre yoksayılır *URL* bir HTTP URL'si değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -989,25 +989,25 @@ void Navigate2(
  *PIDL işaretçisiyle birlikte*  
  Bir işaretçi bir [ITEMIDLIST](http://msdn.microsoft.com/library/windows/desktop/bb773321) yapısı.  
   
- `dwFlags`  
+ *dwFlags*  
  Bayrakları bir değişkenin kaynak Geçmiş listesine eklenip eklenmeyeceğini, için okuma veya yazma önbellekten ve yeni bir pencerede kaynak görüntülenip görüntülenmeyeceğini belirtir. Değişkeni tarafından tanımlanan değerlerden bir bileşimi olabilir [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) numaralandırması.  
   
- `lpszTargetFrameName`  
+ *lpszTargetFrameName*  
  Kaynak görüntülenecek çerçevede adını içeren bir dize için bir işaretçi.  
   
- `lpszURL`  
+ *lpszURL*  
  URL içeren bir dize için bir işaretçi.  
   
- `lpvPostData`  
+ *lpvPostData*  
  HTTP POST işlemiyle gönderilecek veri. Örneğin, POST işlem, bir HTML formu tarafından toplanan veri göndermek için kullanılır. Bu parametre herhangi bir post veri belirlemezse `Navigate2` bir HTTP GET işlemi verir. Bu parametre yoksayılır *URL* HTTP veya HTTPS URL'si değil.  
   
- `dwPostDataLen`  
- Tarafından için verilerin bayt cinsinden uzunluğu işaret `lpvPostData` parametresi.  
+ *dwPostDataLen*  
+ Tarafından için verilerin bayt cinsinden uzunluğu işaret *lpvPostData* parametresi.  
   
- `lpszHeaders`  
+ *lpszHeaders*  
  Sunucuya gönderilecek HTTP veya HTTPS üstbilgileri belirten bir değer için bir işaretçi. Bu üstbilgileri varsayılan Internet Explorer üstbilgileri eklenir. Üstbilgileri gibi şeyler sunucu, sunucu ya da bir durum kodu için geçirilen veri türü, gereken eylem olarak belirtebilirsiniz. Bu parametre yoksayılır *URL* HTTP veya HTTPS URL'si değil.  
   
- `baPostedData`  
+ *baPostedData*  
  Bir başvuru bir [CLongBinary](../../mfc/reference/cbytearray-class.md) nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1032,22 +1032,22 @@ virtual void OnBeforeNavigate2(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszURL`  
+ *lpszURL*  
  İşaretçi gitmek için URL'sini içeren dize.  
   
- `nFlags`  
+ *nFlags*  
  Daha sonraki kullanımlar için ayrılmıştır.  
   
- `lpszTargetFrameName`  
+ *lpszTargetFrameName*  
  Kaynak görüntülenecek çerçevede adını içeren bir dize veya **NULL** adlandırılmış bir çerçeve kaynak için hedeflenmiş olması.  
   
- `baPostedData`  
+ *baPostedData*  
  Bir başvuru bir `CByteArray` HTTP POST işlem kullanılıyorsa, sunucuya göndermek için veri içeren bir nesne.  
   
- `lpszHeaders`  
+ *lpszHeaders*  
  (Yalnızca HTTP URL'lerini) sunucusuna göndermek için ek HTTP üst bilgilerini içeren bir dize için bir işaretçi. Üstbilgileri gibi şeyler sunucu, sunucu ya da bir durum kodu için geçirilen veri türü, gereken eylem olarak belirtebilirsiniz.  
   
- `pbCancel`  
+ *pbCancel*  
  İptal bayrağı için bir işaretçi. Bir uygulama bu parametre için sıfır gezinme işlemi iptal etmek ya da devam etmek için izin vermek için sıfır olarak ayarlayabilirsiniz.  
   
 ##  <a name="oncommandstatechange"></a>  CHtmlView::OnCommandStateChange  
@@ -1063,7 +1063,7 @@ virtual void OnCommandStateChange(
  *nKomut*  
  Etkin durumu değişti komut tanımlayıcısı.  
   
- `bEnable`  
+ *bSistemlerde*  
  Etkin durumu. Komutu etkin veya devre dışı ise sıfır değilse bu sıfır olmayan bir parametredir.  
   
 ##  <a name="ondocumentcomplete"></a>  CHtmlView::OnDocumentComplete  
@@ -1074,13 +1074,13 @@ virtual void OnDocumentComplete(LPCTSTR lpszURL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszURL`  
+ *lpszURL*  
  URL, UNC değerlendiren bir dize için bir işaretçi dosya adına veya, için gittiğinizde PIDL işaretçisiyle birlikte (gösteren bir işaretçi bir öğe tanımlayıcı listesi).  
   
 ### <a name="remarks"></a>Açıklamalar  
  Her çerçeve harekete her çerçeve ancak bu olayı ateşlenir bir [OnDownloadBegin](#ondownloadbegin) olayını ateşle karşılık gelen `OnDocumentComplete` olay.  
   
- URL tarafından belirtilen `lpszURL` bu URL Kurallaştırılan ve tam URL olduğundan, tarayıcı, gitmek için söylediyse URL'SİNDEN farklı olabilir. Örneğin, bir uygulama için çağrıda "www.microsoft.com" URL'sini belirtiyorsa [Bul](#navigate) veya [Navigate2](#navigate2), geçirilen URL'yi `OnNavigateComplete2` olacak "http://www.microsoft.com/". Ayrıca, sunucu tarayıcı farklı bir URL'ye yeniden yönlendirilen değilse, yeniden yönlendirilen URL burada yansıtılır.  
+ URL tarafından belirtilen *lpszURL* bu URL Kurallaştırılan ve tam URL olduğundan, tarayıcı, gitmek için söylediyse URL'SİNDEN farklı olabilir. Örneğin, bir uygulama için çağrıda "www.microsoft.com" URL'sini belirtiyorsa [Bul](#navigate) veya [Navigate2](#navigate2), geçirilen URL'yi `OnNavigateComplete2` olacak "http://www.microsoft.com/". Ayrıca, sunucu tarayıcı farklı bir URL'ye yeniden yönlendirilen değilse, yeniden yönlendirilen URL burada yansıtılır.  
   
 ##  <a name="ondocwindowactivate"></a>  CHtmlView::OnDocWindowActivate  
  Internet Explorer veya MSHTML uygulamasından adlı **IOleInPlaceActiveObject::OnDocWindowActivate**, kapsayıcının belge penceresine etkinleştirilmiş veya devre dışı olduğunda etkin yerinde nesne bildirir.  
@@ -1090,7 +1090,7 @@ virtual HRESULT OnDocWindowActivate(BOOL fActivate);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `fActivate`  
+ *fActivate*  
  Belge penceresine durumunu gösterir. Bu değer sıfır değilse, pencere etkinleştiriliyor. Bu değer sıfır ise, pencerenin devre dışı bırakılıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1124,7 +1124,7 @@ virtual HRESULT OnEnableModeless(BOOL fEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `fEnable`  
+ *fEnable*  
  Ana bilgisayarın kalıcı olmayan iletişim kutuları etkin veya devre dışı bırakılan gösterir. Bu değer sıfır değilse, kalıcı olmayan iletişim kutuları etkinleştirilir. Bu değer sıfır ise, kalıcı olmayan iletişim kutuları devre dışı bırakılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1143,7 +1143,7 @@ virtual HRESULT OnFilterDataObject(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDataObject`  
+ *pDataObject*  
  Adres [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) Internet Explorer veya MSHTML tarafından sağlanan arabirim.  
   
  *ppDataObject*  
@@ -1163,7 +1163,7 @@ virtual HRESULT OnFrameWindowActivate(BOOL fActivate);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `fActivate`  
+ *fActivate*  
  Kapsayıcının en üst düzey çerçeve penceresi durumunu gösterir. Bu değer sıfır değilse, pencere etkinleştiriliyor. Bu değer sıfır ise, pencerenin devre dışı bırakılıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1193,10 +1193,10 @@ virtual HRESULT OnGetDropTarget(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDropTarget`  
+ *pDropTarget*  
  [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679) kullanmak Internet Explorer veya MSHTML önerir.  
   
- `ppDropTarget`  
+ *ppDropTarget*  
  Adres `IDropTarget` , alan `IDropTarget` konak istediği sağlamak için arabirim işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1230,7 +1230,7 @@ virtual HRESULT OnGetHostInfo(DOCHOSTUIINFO* pInfo);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pInfo`  
+ *pInfo*  
  Adres bir [DOCHOSTUIINFO](https://msdn.microsoft.com/library/aa770044.aspx) ana bilgisayarın kullanıcı Arabirimi özellikleri alır yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1249,10 +1249,10 @@ virtual HRESULT OnGetOptionKeyPath(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pchKey`  
+ *pchKey*  
  Adres bir `LPOLESTR` konak kendi varsayılan seçenekleri depoladığı kayıt defteri alt anahtarı dize alır. Bu alt anahtarı altında HKEY_CURRENT_USER anahtar olacaktır. Kullanarak bu bellek ayırma [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727). Çağrı yapan uygulamanın kullanarak bu bellek boşaltma için sorumlu olduğu [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722). Bu parametre için her zaman başlatılacağı **NULL**yöntem başarısız olsa bile.  
   
- `dwReserved`  
+ *dwReserved*  
  Daha sonraki kullanımlar için ayrılmıştır. Şu anda kullanılmıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1313,16 +1313,16 @@ virtual void OnNavigateError(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszURL`  
+ *lpszURL*  
  Gezinti başarısız URL'si.  
   
  *lpszFrame*  
  Kaynak görüntülenen veya adlandırılmış bir çerçeve kaynak için hedeflenen ise NULL olarak çerçevenin adı.  
   
- `dwError`  
+ *dwError*  
  Bir hata durum kodu, varsa. Olası HRESULT ve HTTP durum kodları listesi için bkz: [NavigateError olay durum kodları.](https://msdn.microsoft.com/library/aa768365.aspx)  
   
- `pbCancel`  
+ *pbCancel*  
  Bir hata sayfası veya herhangi başka çoğaltmalar gezinti iptal etmek belirtir. Varsa **TRUE** (varsayılan), bir hata sayfası veya çoğaltmalar; Gezinti devam **FALSE**, bir hata sayfası veya çoğaltmalar gezinme iptal.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1340,10 +1340,10 @@ virtual void OnNewWindow2(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ppDisp`  
+ *ppDisp*  
  İsteğe bağlı olarak, alır, bir arabirim işaretçisi gösteren bir işaretçi `IDispatch` yeni bir WebBrowser veya Internet Explorer Nesne arabirimi işaretçisi.  
   
- `Cancel`  
+ *İptal Etme*  
  İptal bayrağı için bir işaretçi. Bir uygulama bu parametre için sıfır gezinme işlemi iptal etmek ya da devam etmek için izin vermek için sıfır olarak ayarlayabilirsiniz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1376,7 +1376,7 @@ virtual void OnPropertyChange(LPCTSTR lpszProperty);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszProperty`  
+ *lpszProperty*  
  Özelliğin adını içeren bir dize için bir işaretçi.  
   
 ##  <a name="onquit"></a>  CHtmlView::OnQuit  
@@ -1397,13 +1397,13 @@ virtual HRESULT OnResizeBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `prcBorder`  
+ *prcBorder*  
  Kenarlık alanı için yeni dış dikdörtgen.  
   
- `pUIWindow`  
+ *pUIWindow*  
  Arabirim kenarlığını değişti çerçeve veya belge pencere nesnesi için bir işaretçi.  
   
- `fFrameWindow`  
+ *fFrameWindow*  
  **DOĞRU** çerçeve penceresi çağırıyorsa [IOleInPlaceActiveObject::ResizeBorder](http://msdn.microsoft.com/library/windows/desktop/ms680053), aksi takdirde **FALSE**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1424,16 +1424,16 @@ virtual HRESULT OnShowContextMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwID`  
+ *dwID*  
  Görüntülenecek bağlam menüsü tanımlayıcısı. Bkz: **IDocHostUIHandler::ShowContextMenu** değerler listesi için Windows SDK.  
   
- `ppt`  
+ *ppt*  
  Ekran koordinatları menüsü.  
   
- `pcmdtReserved`  
+ *pcmdtReserved*  
  [IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797) komut durumunu sorgulamak ve bu nesne üzerinde komutları yürütmek için kullanılan arabirim.  
   
- `pdispReserved`  
+ *pdispReserved*  
  IDispatch arabirimi ekranında nesnenin koordinatları. Bu, daha özel içerik sağlamak için belirli nesneleri ayırt etmek bir konak sağlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1455,19 +1455,19 @@ virtual HRESULT OnShowUI(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwID`  
+ *dwID*  
  Daha sonraki kullanımlar için ayrılmıştır.  
   
- `pActiveObject`  
+ *pActiveObject*  
  [IOleInPlaceActiveObject](http://msdn.microsoft.com/library/windows/desktop/ms691299) şu anda etkin nesnenin arabirimi.  
   
- `pCommandTarget`  
+ *pCommandTarget*  
  [IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797) nesnesinin arabirimi.  
   
- `pFrame`  
+ *pFrame*  
  [IOleInPlaceFrame](http://msdn.microsoft.com/library/windows/desktop/ms692770) nesnesinin arabirimi. Bu, menüleri ve araç çubuklarını için gereklidir.  
   
- `pDoc`  
+ *pDoc*  
  [IOleInPlaceUIWindow](http://msdn.microsoft.com/library/windows/desktop/ms680716) nesne için arabirim. Bu araç çubukları için gereklidir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1495,7 +1495,7 @@ virtual void OnStatusTextChange(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszText`  
+ *lpszText*  
  Yeni durum çubuğu metni içeren bir dize.  
   
 ##  <a name="ontheatermode"></a>  CHtmlView::OnTheaterMode  
@@ -1517,7 +1517,7 @@ virtual void OnTitleChange(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszText`  
+ *lpszText*  
  Yeni belge başlığı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1545,13 +1545,13 @@ virtual HRESULT OnTranslateAccelerator(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpMsg`  
+ *lpMsg*  
  Noktaları çevrilmesi gerekebilir iletisi.  
   
- `pguidCmdGroup`  
+ *pguidCmdGroup*  
  Komut grubu tanımlayıcısı.  
   
- `nCmdID`  
+ *nCmdID*  
  Komut tanımlayıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1571,13 +1571,13 @@ virtual HRESULT OnTranslateUrl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwTranslate`  
+ *dwTranslate*  
  Daha sonraki kullanımlar için ayrılmıştır.  
   
- `pchURLIn`  
+ *pchURLIn*  
  Internet Explorer veya çevrilecek URL'yi temsil MSHTML tarafından sağlanan bir dize adresidir.  
   
- `ppchURLOut`  
+ *ppchURLOut*  
  Çevrilen URL adresi alır bir dize işaretçisi adresidir. Ana bilgisayar görev bellek ayırıcısı kullanarak arabellek ayırır. Bu parametrenin içeriği her zaman için başlatılacağı **NULL**URL değil çevrilen veya yöntem başarısız olsa bile.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1607,7 +1607,7 @@ virtual void OnVisible(BOOL bVisible);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bVisible`  
+ *bVisible*  
  Nesne görünür durumdaysa sıfır olmayan veya aksi halde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1643,11 +1643,11 @@ void PutProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszProperty`  
+ *lpszProperty*  
  Ayarlamak için özellik içeren bir dize.  
   
  *vtValue*  
- Özelliğin yeni değeri belirtilen tarafından `lpszProperty`.  
+ Özelliğin yeni değeri belirtilen tarafından *lpszProperty*.  
   
  *lpszPropertyName*  
  Ayarlamak için özellik adını içeren bir dize için bir işaretçi.  
@@ -1655,13 +1655,13 @@ void PutProperty(
  *dValue*  
  Özelliğin yeni değeri.  
   
- `lValue`  
+ *lValue*  
  Özelliğin yeni değeri.  
   
- `lpszValue`  
+ *lpszValue*  
  Özelliğin yeni değeri içeren bir dize için bir işaretçi.  
   
- `nValue`  
+ *nDeğer*  
  Özelliğin yeni değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1679,17 +1679,17 @@ HRESULT QueryFormsCommand(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwCommandID`  
+ *dwCommandID*  
  İçin sorgulanan komut tanımlayıcısı.  
   
  *pbSupported*  
- Bir işaretçi bir **BOOL** belirten IF komutu (tarafından tanımlanan `dwCommandID`) desteklenir. TRUE ise, komutu desteklenir; Aksi takdirde FALSE.  
+ Bir işaretçi bir **BOOL** belirten IF komutu (tarafından tanımlanan *dwCommandID*) desteklenir. TRUE ise, komutu desteklenir; Aksi takdirde FALSE.  
   
- `pbEnabled`  
- Bir işaretçi bir **BOOL** belirten IF komutu (tarafından tanımlanan `dwCommandID`) etkinleştirilmiştir. TRUE ise, komutu desteklenir; Aksi takdirde FALSE.  
+ *pbEnabled*  
+ Bir işaretçi bir **BOOL** belirten IF komutu (tarafından tanımlanan *dwCommandID*) etkinleştirilmiştir. TRUE ise, komutu desteklenir; Aksi takdirde FALSE.  
   
  *pbChecked*  
- Bir işaretçi bir **BOOL** belirten IF komutu (tarafından tanımlanan `dwCommandID`) denetlenir. TRUE ise, komutu desteklenir; Aksi takdirde FALSE.  
+ Bir işaretçi bir **BOOL** belirten IF komutu (tarafından tanımlanan *dwCommandID*) denetlenir. TRUE ise, komutu desteklenir; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri. Olası değerler tam listesi için bkz: [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) Windows SDK'sındaki.  
@@ -1705,7 +1705,7 @@ OLECMDF QueryStatusWB(OLECMDID cmdID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cmdID`  
+ *cmdID*  
  [OLECMDID](http://msdn.microsoft.com/library/windows/desktop/ms691264) arayan gereken durum bilgilerini komut değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1736,7 +1736,7 @@ void Refresh2(int nLevel);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nLevel`  
+ *nLevel*  
  Yenileme düzeyini belirten değişkeni adresi. Olası değişkenleri tanımlanan [RefreshConstants](https://msdn.microsoft.com/library/aa768363.aspx), Windows SDK'sındaki.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1752,7 +1752,7 @@ void SetAddressBar(BOOL bNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  Adres çubuğunu göstermek için sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1766,7 +1766,7 @@ void SetFullScreen(BOOL bNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  Tam ekran modu için sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1782,7 +1782,7 @@ void SetHeight(long nNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nNewValue`  
+ *nNewValue*  
  Ana penceresinin piksel cinsinden yüksekliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1796,7 +1796,7 @@ void SetLeft(long nNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nNewValue`  
+ *nNewValue*  
  Ana penceresinin sol kenarı Ekran koordinatı.  
   
 ##  <a name="setmenubar"></a>  CHtmlView::SetMenuBar  
@@ -1807,7 +1807,7 @@ void SetMenuBar(BOOL bNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  Menü çubuğunu göstermek için sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1821,7 +1821,7 @@ void SetOffline(BOOL bNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  Yerel önbellekten okumak için sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1837,7 +1837,7 @@ void SetRegisterAsBrowser(BOOL bNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  Internet Explorer en üst düzey bir tarayıcı olarak kayıtlı olup olmadığını belirler. Sıfır olmayan varsa, web tarayıcısı en üst düzey bir tarayıcı olarak kaydedilir; sıfır ise, en üst düzey bir tarayıcı değil. Varsayılan değer sıfır olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1853,7 +1853,7 @@ void SetRegisterAsDropTarget(BOOL bNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  WebBrowser denetimi Gezinti bırakma hedefi olarak kayıtlı olup olmadığını belirler. Sıfır olmayan, nesne bir bırakma hedefi olarak kaydedilir; sıfır ise, bir bırakma hedefi değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1867,7 +1867,7 @@ void SetSilent(BOOL bNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  İletişim kutuları, sıfır değilse, görüntülenmez; sıfır ise, iletişim kutuları görüntülenir. Varsayılan değer sıfır olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1881,7 +1881,7 @@ void SetStatusBar(BOOL bNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  Durum çubuğu görünür durumdaysa sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1895,7 +1895,7 @@ void SetTheaterMode(BOOL bNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  WebBrowser denetimi tiyatro moduna ayarlamak için sıfır olmayan; Aksi takdirde sıfır. Varsayılan değer sıfır olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1911,7 +1911,7 @@ void SetToolBar(int nNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nNewValue`  
+ *nNewValue*  
  Araç çubuğu görüntülenip görüntülenmeyeceğini gösterir. Araç çubuğu görüntülenecek ise sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1925,7 +1925,7 @@ void SetTop(long nNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nNewValue`  
+ *nNewValue*  
  Ana penceresinin üst kenarı Ekran koordinatı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1939,7 +1939,7 @@ void SetVisible(BOOL bNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  Denetim görünür durumdaysa sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1953,7 +1953,7 @@ void SetWidth(long nNewValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nNewValue`  
+ *nNewValue*  
  Internet Explorer ana penceresinin piksel cinsinden genişliği.  
   
 ##  <a name="stop"></a>  CHtmlView::Stop  

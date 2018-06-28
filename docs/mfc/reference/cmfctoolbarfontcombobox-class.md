@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea8f05c20c3a3276f51b4267b6763831dc23eacf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3826a1a649cf4a2c3f292b660e90384edac2575e
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373533"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040096"
 ---
 # <a name="cmfctoolbarfontcombobox-class"></a>CMFCToolBarFontComboBox sınıfı
 Yazı tipleri listesinden bir yazı tipi seçmek kullanıcının sağlayan bir birleşik giriş kutusu denetimi içeren bir araç çubuğu düğmesi.  
@@ -64,7 +64,7 @@ class CMFCToolBarFontComboBox : public CMFCToolBarComboBoxButton
   
 2.  Oluşturmak bir `CMFCToolBarFontComboBox` nesnesi.  
   
-3.  İşler ileti işleyicisi'ndeki `AFX_WM_RESETTOOLBAR` iletisi, özgün düğmesini kullanarak yeni birleşik giriş kutusu düğmesi ile değiştirin [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).  
+3.  AFX_WM_RESETTOOLBAR iletisini işler ileti işleyicisi özgün düğmesini kullanarak yeni birleşik giriş kutusu düğmesi ile değiştirin [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).  
   
 4.  Açılan kutuda belgedeki yazı tipi ile kullanarak seçili yazı tipi eşitleme [CMFCToolBarFontComboBox::SetFont](#setfont) yöntemi.  
   
@@ -110,13 +110,13 @@ CMFCToolBarFontComboBox();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiID`  
+ [in] *uiID*  
  Birleşik giriş kutusu komut kimliği.  
   
- [in] `iImage`  
+ [in] *iImage*  
  Araç çubuğu görüntüsünü sıfır tabanlı dizini. Görüntü bulunan [CMFCToolBarImages sınıfı](../../mfc/reference/cmfctoolbarimages-class.md) nesnesinin [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md) sınıfı korur.  
   
- [in] `nFontType`  
+ [in] *nFontType*  
  Birleşik giriş kutusu içeren yazı tipleri türleri. Bu parametre birleşimi (Boole veya) aşağıdaki değerlerden biri olabilir:  
   
  DEVICE_FONTTYPE  
@@ -125,23 +125,23 @@ CMFCToolBarFontComboBox();
   
  TRUETYPE_FONTTYPE  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  DEFAULT_CHARSET, birleşik giriş kutusu kümesine tüm karakter kümelerini yazı tiplerini tüm benzersiz olarak adlandırılmış içeriyorsa. (Aynı ada sahip iki yazı tipi varsa, birleşik giriş kutusu bunlardan birini içerir.) Geçerli karakter kümesi değeri, birleşik giriş kutusu kümesine yalnızca belirtilen karakter kümesinde yazı tiplerini içeriyorsa. Bkz: [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) olası karakteri bir listesi için ayarlar.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Birleşik giriş kutusu stili. (bkz [birleşik giriş kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))  
   
- [in] `iWidth`  
+ [in] *iWidth*  
  Düzen denetimin piksel cinsinden genişliği.  
   
- [in] `nPitchAndFamily`  
+ [in] *nPitchAndFamily*  
  DEFAULT_PITCH, birleşik giriş kutusu kümesine aralık bağımsız olarak yazı tipleri içeriyorsa. FIXED_PITCH veya VARIABLE_PITCH olarak ayarlayın, birleşik giriş kutusu yalnızca bu aralık türüyle yazı tiplerini içeriyorsa. Yazı tipi ailesi göre filtreleme şu anda desteklenmiyor.  
   
- [out] `pLstFontsExternal`  
+ [out] *pLstFontsExternal*  
  İşaretçi bir [CObList sınıfı](../../mfc/reference/coblist-class.md) yazı tiplerini depolar nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Genellikle, `CMFCToolBarFontComboBox` nesneleri depolamak kullanılabilir yazı tipi listesi tek bir paylaşılan `CObList` nesnesi. İkinci oluşturucu kullanın ve geçerli bir işaretçi sağlamak `pLstFontsExternal`, o `CMFCToolBarFontComboBox` nesne yerine doldurur `CObList` , `pLstFontsExternal` kullanılabilir yazı tipleriyle işaret eder.  
+ Genellikle, `CMFCToolBarFontComboBox` nesneleri depolamak kullanılabilir yazı tipi listesi tek bir paylaşılan `CObList` nesnesi. İkinci oluşturucu kullanın ve geçerli bir işaretçi sağlamak *pLstFontsExternal*, o `CMFCToolBarFontComboBox` nesne yerine doldurur `CObList` , *pLstFontsExternal* kullanılabilir tipleriyle işaret eder.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekte nasıl oluşturulacağını gösteren bir `CMFCToolBarFontComboBox` nesnesi. Bu kod parçacığını parçası olan [Word paneli örnek](../../visual-cpp-samples.md).  
@@ -156,11 +156,11 @@ const CMFCFontInfo* GetFontDesc(int iIndex=-1) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
  Birleşik giriş kutusu öğesi sıfır tabanlı dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir `CMFCFontInfo` nesnesi. Varsa `iIndex` geçerli öğe dizini belirtmiyor dönüş değeri `NULL`.  
+ Bir işaretçi bir `CMFCFontInfo` nesnesi. Varsa *İIndex* geçerli öğe dizini belirtmiyor dönüş değeri `NULL`.  
   
 ##  <a name="m_nfontheight"></a>  CMFCToolBarFontComboBox::m_nFontHeight  
  Birleşik giriş kutusu stili çizin sahibi varsa yazı tipi birleşik giriş kutusu karakter piksel cinsinden yüksekliği belirtir.  
@@ -183,20 +183,20 @@ BOOL SetFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszName`  
+ [in] *lpszName*  
  Yazı tipi adı ya da öneki belirtir.  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  Karakter kümesini belirtir.  
   
- [in] `bExact`  
- Belirtir olup olmadığını `lpszName` yazı tipi adı veya yazı tipi önek içeriyor.  
+ [in] *bExact*  
+ Belirtir olup olmadığını *lpszName* yazı tipi adı veya yazı tipi önek içeriyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yazı tipi başarıyla seçildiyse, sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bExact` olan `TRUE`, bu yöntem tam olarak belirtilen adla eşleşen bir yazıtipi seçer `lpszName`. Varsa `bExact` olan `FALSE`, bu yöntem olarak belirtilen metin ile başlayan bir yazıtipi seçer `lpszName` olarak belirtilen karakter kümesi kullanan ve `nCharSet`. Varsa `nCharSet` ayarlanır DEFAULT_CHARSET için yoksayıldı ve yalnızca karakter kümesi olacak `lpszName` bir yazı tipi seçmek için kullanılır.  
+ Varsa *bExact* olan `TRUE`, bu yöntem tam olarak belirtilen adla eşleşen bir yazıtipi seçer *lpszName*. Varsa *bExact* olan `FALSE`, bu yöntem olarak belirtilen metin ile başlayan bir yazıtipi seçer *lpszName* olarak belirtilen karakter kümesi kullanan ve *nCharSet*. Varsa *nCharSet* ayarlanır DEFAULT_CHARSET için yoksayıldı ve yalnızca karakter kümesi olacak *lpszName* bir yazı tipi seçmek için kullanılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

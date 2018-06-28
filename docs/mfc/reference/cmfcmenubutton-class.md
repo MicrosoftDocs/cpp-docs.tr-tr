@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d611acb34d4159abb41ffa333b4b2cfb6d94442
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 09d68cd7c0e4796b3368e1167888d703d37a8cf8
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375395"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040174"
 ---
 # <a name="cmfcmenubutton-class"></a>CMFCMenuButton sınıfı
 Açılır menü görüntüler ve kullanıcının menü seçimlere raporları bir düğme.  
@@ -167,7 +167,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMsg`  
+ [in] *pMsg*  
  İşaret eden bir [MSG](../../mfc/reference/msg-structure1.md) işlemek için ileti içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -183,14 +183,14 @@ virtual CSize SizeToContent(BOOL bCalcOnly = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bCalcOnly`  
+ [in] *bCalcOnly*  
  Bu yöntem düğmesini yeniden boyutlandırır olup olmadığını gösteren bir Boole parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne düğme için yeni boyutunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev çağırırsanız ve `bCalcOnly` olan `TRUE`, `SizeToContent` düğmenin yalnızca yeni boyutunu hesaplar.  
+ Bu işlev çağırırsanız ve *bCalcOnly* olan `TRUE`, `SizeToContent` düğmenin yalnızca yeni boyutunu hesaplar.  
   
  Düğmenin yeni boyutunu düğmesi metin, görüntü ve ok uyacak şekilde hesaplanır. Framework da yatay bir kenar için 10 piksel ve 5 piksel dikey bir kenar için önceden tanımlanmış kenar boşluklarını ekler.  
   

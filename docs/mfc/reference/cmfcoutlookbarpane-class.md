@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe72b43d8930e77bea274e20e5f150cc93617c20
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dd073dc7876a755a8dc309efc7e11fb63521ab5a
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374090"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037908"
 ---
 # <a name="cmfcoutlookbarpane-class"></a>CMFCOutlookBarPane sınıfı
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -184,31 +184,31 @@ BOOL AddButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiImage`  
+ [in] *uiImage*  
  Bir bit eşlem kaynak tanımlayıcısını belirtir.  
   
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  Düğmenin metni belirtir.  
   
- [in] `iIdCommand`  
+ [in] *iIdCommand*  
  Düğme denetiminin kimliğini belirtir.  
   
- [in] `iInsertAt`  
+ [in] *iInsertAt*  
  Ekle düğmesi için outlook çubuğunun sayfa üzerinde sıfır tabanlı dizini belirtir.  
   
- [in] `uiLabel`  
+ [in] *uiLabel*  
  Bir dize kaynak kimliği  
   
- [in] `szBmpFileName`  
+ [in] *szBmpFileName*  
  Yüklemek için disk görüntü dosyasının adını belirtir.  
   
- [in] `szLabel`  
+ [in] *szLabel*  
  Düğmenin metni belirtir.  
   
- [in] `hBmp`  
+ [in] *hBmp*  
  Düğmenin bit eşlem için bir tanıtıcı.  
   
- [in] `hIcon`  
+ [in] *hIcon*  
  Bir düğme simgesi için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -217,9 +217,9 @@ BOOL AddButton(
 ### <a name="remarks"></a>Açıklamalar  
  Bir Outlook çubuğunun sayfasına yeni bir düğme eklemek için bu yöntemi kullanın. Düğmenin resim uygulama kaynaklarını veya bir disk dosyası yüklenebilir.  
   
- Sayfa kimliği ile belirtilen `uiPageID` -1 ' dir düğmesine ilk sayfasına eklenir.  
+ Sayfa kimliği ile belirtilen *uiPageID* -1 ' dir düğmesine ilk sayfasına eklenir.  
   
- Dizin ile belirtilen `iInsertAt` -1 ' dir düğme sayfa sonuna eklenir.  
+ Dizin ile belirtilen *iInsertAt* -1 ' dir düğme sayfa sonuna eklenir.  
   
 ##  <a name="canbeattached"></a>  CMFCOutlookBarPane::CanBeAttached  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -254,16 +254,16 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Outlook Çubuğu bölmesi denetiminin üst pencere belirtir. Olmamalıdır `NULL`.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Pencere stili.  Pencere stilleri listesi için bkz: [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] `uiID`  
+ [in] *uiID*  
  Denetim kimliği. Etkinleştirmek için benzersiz olması gerekir denetimin durumunu kaydetme.  
   
- [in] `dwControlBarStyle`  
+ [in] *dwControlBarStyle*  
  Outlook Çubuğu'ndan ayrılmış olduğunda, Outlook Çubuğu bölmesi denetimi davranışını tanımlayan özel stiller belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -284,10 +284,10 @@ virtual BOOL EnableContextMenuItems(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
+ [in] *pButton*  
  Bir kullanıcının bir araç çubuğu düğmesi için bir işaretçi.  
   
- [in] `pPopup`  
+ [in] *pPopup*  
  Kısayol menüsünün gösteren bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -309,7 +309,7 @@ void EnablePageScrollMode(BOOL bPageScroll=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bPageScroll`  
+ [in] *bPageScroll*  
  Varsa `TRUE`, sayfa kaydırma modunu etkinleştirin. Varsa `FALSE`, sayfa kaydırma modu devre dışı bırakın.  
   
 ##  <a name="getregularcolor"></a>  CMFCOutlookBarPane::GetRegularColor  
@@ -365,7 +365,7 @@ BOOL RemoveButton(UINT iIdCommand);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIdCommand`  
+ [in] *iIdCommand*  
  Kaldırmak için bir düğmeye komut Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -379,7 +379,7 @@ void SetBackColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `color`  
+ [in] *rengi*  
  Yeni arka plan rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -393,7 +393,7 @@ void SetBackImage(UINT uiImageID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiImageID`  
+ [in] *uiImageID*  
  Resim kaynak kimliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -426,10 +426,10 @@ void SetTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `clrRegText`  
+ [in] *clrRegText*  
  Seçili olmayan metin yeni rengini belirtir.  
   
- [in] `clrSelText`  
+ [in] *clrSelText*  
  Seçili metni yeni rengini belirtir.  
   
 ##  <a name="settransparentcolor"></a>  CMFCOutlookBarPane::SetTransparentColor  
@@ -440,7 +440,7 @@ void SetTransparentColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `color`  
+ *Renk*  
  Yeni saydam rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

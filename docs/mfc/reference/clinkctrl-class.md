@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2312861a1b13ecb432c7893a27d72c61ecd78ef
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 47cd25a92e572d02996008de9fc5265138d4ecb6
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371705"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042384"
 ---
 # <a name="clinkctrl-class"></a>CLinkCtrl sınıfı
 Windows ortak SysLink denetimi işlevselliğini sağlar.  
@@ -131,19 +131,19 @@ virtual BOOL Create(DWORD dwStyle,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszLinkMarkup`  
+ *lpszLinkMarkup*  
  İşaretli görüntülenecek metni içeren sıfır ile sonlandırılan bir dize işaretçi. Daha fazla bilgi için konusundaki "Biçimlendirme ve bağlantı erişim" bölümüne bakın [SysLink denetimleri genel bakış](http://msdn.microsoft.com/library/windows/desktop/bb760706).  
   
- `dwStyle`  
+ *dwStyle*  
  Bağlantı denetimin stilini belirtir. Herhangi bir bileşimini denetim stilleri uygulayın. Bkz: [ortak denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775498) içinde `Windows SDK` daha fazla bilgi için.  
   
- `rect`  
+ *Rect*  
  Bağlantı denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Bağlantı denetimin üst penceresi belirtir. Değil olmalıdır `NULL`.  
   
- `nID`  
+ *nID*  
  Bağlantı denetimin kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -152,7 +152,7 @@ virtual BOOL Create(DWORD dwStyle,
 ### <a name="remarks"></a>Açıklamalar  
  Oluşturmak bir `CLinkCtrl` iki adımda nesne. İlk olarak, Oluşturucusu arayın ve ardından arama `Create`, hangi bağlantı denetimi oluşturur ve ona ekler `CLinkCtrl` nesnesi. Genişletilmiş windows stilleri denetimi ile kullanmak istiyorsanız, çağrı [CLinkCtrl::CreateEx](#createex) yerine `Create`.  
   
- İkinci biçiminde `Create` yöntemi kullanım dışıdır. Belirtir ilk formu kullanın `lpszLinkMarkup` parametresi.  
+ İkinci biçiminde `Create` yöntemi kullanım dışıdır. Belirtir ilk formu kullanın *lpszLinkMarkup* parametresi.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneğinde adlı iki değişken tanımlar `m_Link1` ve `m_Link2`, iki bağlantı denetimlerini erişmek için kullanılır.  
@@ -185,22 +185,22 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszLinkMarkup`  
+ *lpszLinkMarkup*  
  İşaretli görüntülenecek metni içeren sıfır ile sonlandırılan bir dize işaretçi. Daha fazla bilgi için konusundaki "Biçimlendirme ve bağlantı erişim" bölümüne bakın [SysLink denetimleri genel bakış](http://msdn.microsoft.com/library/windows/desktop/bb760706).  
   
- `dwExStyle`  
- Bağlantı denetimi genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: `dwExStyle` parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
+ *dwExStyle*  
+ Bağlantı denetimi genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
   
- `dwStyle`  
+ *dwStyle*  
  Bağlantı denetimin stilini belirtir. Herhangi bir bileşimini denetim stilleri uygulayın. Daha fazla bilgi için bkz: [ortak denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775498) Windows SDK.  
   
- `rect`  
+ *Rect*  
  Bağlantı denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Bağlantı denetimin üst penceresi belirtir. Değil olmalıdır `NULL`.  
   
- `nID`  
+ *nID*  
  Bağlantı denetimin kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -209,7 +209,7 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım `CreateEx` yerine [oluşturma](#create) genişletilmiş Windows stili sabitleri uygulamak için.  
   
- İkinci biçiminde `CreateEx` yöntemi kullanım dışıdır. Belirtir ilk formu kullanın `lpszLinkMarkup` parametresi.  
+ İkinci biçiminde `CreateEx` yöntemi kullanım dışıdır. Belirtir ilk formu kullanın *lpszLinkMarkup* parametresi.  
   
 ##  <a name="getidealheight"></a>  CLinkCtrl::GetIdealHeight  
  Bağlantı denetimi ideal yüksekliğini alır.  
@@ -237,11 +237,11 @@ int GetIdealSize(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `cxMaxWidth`|En büyük genişliği. piksel cinsinden bağlantı.|  
-|[Çıkış] * `pSize`|Windows için bir işaretçi [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı. Bu yöntem döndürüldüğünde, `cy` üyesi `SIZE` yapısı tarafından belirtilen bağlantı metni genişliği için ideal bağlantı metin yükseklik içeren `cxMaxWidth`. `cx` Yapısı üyesi için gerekli olan bağlantı metin genişliği içerir.|  
+|[in] *cxMaxWidth*|En büyük genişliği. piksel cinsinden bağlantı.|  
+|[Çıkış] * *pSize*|Windows için bir işaretçi [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı. Bu yöntem döndürüldüğünde, *cy* üyesi `SIZE` yapısı içeren tarafından belirtilen bağlantı metni genişliği için ideal bağlantı metin yükseklik *cxMaxWidth*. *Cx* yapısı üyesi için gerekli olan bağlantı metin genişliği içerir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tercih edilen bağlantı metnini, piksel cinsinden yüksekliği. Dönüş değeri değeri ile aynıdır `cy` üyesi `SIZE` yapısı.  
+ Tercih edilen bağlantı metnini, piksel cinsinden yüksekliği. Dönüş değeri değeri ile aynıdır *cy* üyesi `SIZE` yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir örnek için `GetIdealSize` yöntemi, örnekte bkz [CLinkCtrl::Create](#create).  
@@ -256,7 +256,7 @@ BOOL GetItem(PLITEM pItem) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pItem`  
+ *pItem*  
  Bir işaretçi bir [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) öğesi bilgi almak için yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -280,7 +280,7 @@ BOOL GetItemID(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iLink`  
+ *İ.Link*  
  Bir bağlantı denetimi öğesi dizini.  
   
  *strID*  
@@ -312,13 +312,13 @@ BOOL GetItemState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iLink`  
+ *İ.Link*  
  Bir bağlantı denetimi öğesi dizini.  
   
- `pnState`  
+ *pnState*  
  Belirtilen durum öğesinin değeri.  
   
- `stateMask`  
+ *stateMask*  
  Almak için hangi durumu öğesi açıklayan bayrakları birleşimi. Açıklamasını değerlerinin listesi için bkz: **durumu** üye [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) yapısı. Bu izin için izin verilen öğeleri aynıdır **durumu**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -342,13 +342,13 @@ BOOL GetItemUrl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iLink`  
+ *İ.Link*  
  Bir bağlantı denetimi öğesi dizini.  
   
- `strUrl`  
+ *strUrl*  
  A [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) tarafından belirtilen öğeyi temsil URL içeren bir nesne  
   
- `szUrl`  
+ *szUrl*  
  Belirtilen öğe tarafından temsil edilen URL'sini içeren null sonlandırılmış bir dize  
   
  *cchUrl*  
@@ -388,7 +388,7 @@ BOOL SetItem(PLITEM pItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pItem`  
+ *pItem*  
  Bir işaretçi bir [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) ayarlamak için bilgileri içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -407,7 +407,7 @@ BOOL SetItemID(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iLink`  
+ *İ.Link*  
  Bir bağlantı denetimi öğesi dizini.  
   
  *szID*  
@@ -430,13 +430,13 @@ BOOL SetItemState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iLink`  
+ *İ.Link*  
  Bir bağlantı denetimi öğesi dizini.  
   
- `pnState`  
+ *pnState*  
  Ayarlanan belirli durumda öğesinin değeri.  
   
- `stateMask`  
+ *stateMask*  
  Ayarlanan durumu öğesi açıklayan bayrakları birleşimi. Açıklamasını değerlerinin listesi için bkz: **durumu** üye [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) yapısı. Bu izin için izin verilen öğeleri aynıdır **durumu**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -455,10 +455,10 @@ BOOL SetItemUrl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iLink`  
+ *İ.Link*  
  Bir bağlantı denetimi öğesi dizini.  
   
- `szUrl`  
+ *szUrl*  
  Belirtilen öğe tarafından temsil edilen URL'sini içeren null sonlandırılmış bir dize  
   
 ### <a name="return-value"></a>Dönüş Değeri  

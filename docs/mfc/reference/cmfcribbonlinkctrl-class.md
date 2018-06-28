@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9267dd6ab89871bcf8058529f32eb3686be937df
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d078900c3436c2205905b92d651bab86e94db246
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368442"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039017"
 ---
 # <a name="cmfcribbonlinkctrl-class"></a>CMFCRibbonLinkCtrl sınıfı
 Konumlandırılmış bir köprü Şerit'te uygular. Tıklattığınızda köprü bir Web sayfası açılır.  
@@ -106,13 +106,13 @@ CMFCRibbonLinkCtrl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Bağlantı denetimi tıklatıldığında yürütür komutu komut Kimliğini belirtir.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Bağlantı denetimi görüntülenecek etiket belirtir.  
   
- [in] `lpszLink`  
+ [in] *lpszLink*  
  Bağlantı denetimi ile ilişkilendirilmiş köprü belirtir.  
   
 ### <a name="example"></a>Örnek  
@@ -128,7 +128,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `src`  
+ [in] *src*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -140,7 +140,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -166,7 +166,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -191,8 +191,8 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CDC*`  
- [in] `CRect`  
+ [in] *CDC**  
+ [in] *CRect*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -217,7 +217,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -229,7 +229,7 @@ virtual void OnMouseMove(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -263,7 +263,7 @@ void SetLink(LPCTSTR lpszLink);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszLink`  
+ [in] *lpszLink*  
  Köprü metni belirtir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

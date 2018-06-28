@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a588a848e7964a70f47d4cf29a5f5ef2741881d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eaec2b7951b0655a8a47106374c7527dad27bd20
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368160"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039543"
 ---
 # <a name="cmetafiledc-class"></a>CMetaFileDC sınıfı
 İstenen görüntü veya metin oluşturmak için oynatabilirsiniz grafik cihaz arabirimi (GDI) komutları dizisini içeren bir Windows Meta dosyası uygular.  
@@ -64,7 +64,7 @@ class CMetaFileDC : public CDC
   
  Sonraki Gönder `CMetaFileDC` bir dizi nesnesi `CDC` düşündüğünüz GDI komutları yeniden yürütme için. Çıkış, gibi oluşturduğunuz GDI komutları `MoveTo` ve `LineTo`, kullanılabilir.  
   
- İstenen komutların meta gönderdikten sonra arama **Kapat** meta dosyası cihaz bağlamları kapatır ve meta dosyası işleyici döner üye işlevi. Ardından elden `CMetaFileDC` nesnesi.  
+ İstenen komutların meta gönderdikten sonra arama `Close` meta dosyası cihaz bağlamları kapatır ve meta dosyası işleyici döner üye işlevi. Ardından elden `CMetaFileDC` nesnesi.  
   
  [CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) meta dosyası tutamacı meta dosyası tekrar tekrar yürütmek için daha sonra kullanabilirsiniz. Meta dosyası ayrıca Windows işlevleri tarafından gibi yönetilebilir [CopyMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183480), disk için bir meta dosyası kopyalar.  
   
@@ -171,16 +171,16 @@ BOOL CreateEnhanced(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDCRef`  
+ *pDCRef*  
  Geliştirilmiş Meta dosyası için bir başvuru cihaz tanımlar.  
   
- `lpszFileName`  
+ *lpszFileName*  
  Bir null olarak sonlandırılan bir karakter dizesi noktalarına. Oluşturulacak geliştirilmiş meta dosyası için dosya adını belirtir. Bu parametre ise **NULL**, Gelişmiş Meta dosyası bağlı olarak bellek ve içeriğinin veya nesne yok zaman kayıp olduğundan Win32 **DeleteEnhMetaFile** işlevi çağrılır.  
   
- `lpBounds`  
+ *lpBounds*  
  İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) veri yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) boyutlar belirtir nesne **HIMETRIC** depolanmasına (.01 milimetre artışlarla) resmin birimleri Geliştirilmiş Meta dosyası.  
   
- `lpszDescription`  
+ *lpszDescription*  
  Noktaları sıfır sonlandırılan dizeye resmi olarak resmin başlık oluşturulan uygulamanın adını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -189,15 +189,15 @@ BOOL CreateEnhanced(
 ### <a name="remarks"></a>Açıklamalar  
  Bu DC aygıttan bağımsız resim depolamak için kullanılabilir.  
   
- Windows tarafından tanımlanan başvuru cihaz kullanan `pDCRef` çözümleme ve birimleri resim ilk olarak görünen cihaz kaydetmek için parametre. Varsa `pDCRef` parametresi **NULL**, geçerli görüntüleme cihazı için başvuru kullanır.  
+ Windows tarafından tanımlanan başvuru cihaz kullanan *pDCRef* çözümleme ve birimleri resim ilk olarak görünen cihaz kaydetmek için parametre. Varsa *pDCRef* parametresi **NULL**, geçerli görüntüleme cihazı için başvuru kullanır.  
   
- Sol ve üst üyelerinin `RECT` tarafından için veri yapısı işaret `lpBounds` parametresi sağ ve alt üyeleri küçük olmalıdır sırasıyla. Dikdörtgen kenarları boyunca noktaları resimde dahil edilir. Varsa `lpBounds` olan **NULL**, uygulama tarafından çizilmiş resmi içine dikdörtgenin en küçük boyut grafik cihaz arabirimi (GDI) hesaplar. `lpBounds` Parametresi sağlanan mümkün olduğunda.  
+ Sol ve üst üyelerinin `RECT` tarafından için veri yapısı işaret *lpBounds* parametresi sağ ve alt üyeleri küçük olmalıdır sırasıyla. Dikdörtgen kenarları boyunca noktaları resimde dahil edilir. Varsa *lpBounds* olan **NULL**, uygulama tarafından çizilmiş resmi içine dikdörtgenin en küçük boyut grafik cihaz arabirimi (GDI) hesaplar. *LpBounds* parametresi sağlanan mümkün olduğunda.  
   
- Tarafından için dize işaret `lpszDescription` parametresi uygulama adı ve resim adı arasında bir null karakter içermeli ve iki null karakterlerle bitmesi — Örneğin, "XYZ grafik Editor\0Bald null \0 temsil ettiği Eagle\0\0," karakter. Varsa `lpszDescription` olan **NULL**, geliştirilmiş meta dosyası üstbilgisinde karşılık gelen bir girişi yok.  
+ Tarafından için dize işaret *lpszDescription* parametresi uygulama adı ve resim adı arasında bir null karakter içermeli ve iki null karakterlerle bitmesi — Örneğin, "XYZ grafik Editor\0Bald Eagle\0\0, "nerede \0 null karakteri temsil eder. Varsa *lpszDescription* olan **NULL**, geliştirilmiş meta dosyası üstbilgisinde karşılık gelen bir girişi yok.  
   
  Uygulamalar bu işlev tarafından oluşturulan DC bir grafik resmi bir Gelişmiş Meta dosyası depolamak için kullanın. Bu DC tanımlayan tanıtıcı herhangi GDI işleve geçirilebilir.  
   
- Uygulamanın resim bir Gelişmiş Meta dosyası içinde depolar. sonra onu resmi herhangi bir çıktı cihazda çağırarak görüntüleyebilirsiniz `CDC::PlayMetaFile` işlevi. Resim görüntülerken, Windows'un gösterdiği dikdörtgen kullandığı `lpBounds` parametre ve konumlandırmak ve resim ölçeklendirmek için başvuru aygıttan çözümleme veri. Bu işlev tarafından döndürülen cihaz bağlamı herhangi yeni bir DC ile ilişkili aynı varsayılan öznitelikleri içerir.  
+ Uygulamanın resim bir Gelişmiş Meta dosyası içinde depolar. sonra onu resmi herhangi bir çıktı cihazda çağırarak görüntüleyebilirsiniz `CDC::PlayMetaFile` işlevi. Resim görüntülerken, Windows'un gösterdiği dikdörtgen kullandığı *lpBounds* parametre ve konumlandırmak ve resim ölçeklendirmek için başvuru aygıttan çözümleme veri. Bu işlev tarafından döndürülen cihaz bağlamı herhangi yeni bir DC ile ilişkili aynı varsayılan öznitelikleri içerir.  
   
  Win32 uygulamaları kullanmalıdır **GetWinMetaFileBits** bir Gelişmiş Meta dosyası eski Windows Meta dosyası biçimine dönüştürmek için işlevi.  
   

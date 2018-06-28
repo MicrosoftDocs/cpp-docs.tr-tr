@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66bdd0cdf9e9c13ceac6eb01716ae8c859462524
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 54999252af2ec55c67e1afc69c2788f96cfc640e
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372382"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037310"
 ---
 # <a name="cmfccolorpopupmenu-class"></a>CMFCColorPopupMenu sınıfı
 Kullanıcılar bir belge veya uygulama renkleri seçmek için kullanın bir açılır menü temsil eder.  
@@ -133,50 +133,50 @@ CMFCColorPopupMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `colors`  
+ [in] *renkleri*  
  Framework açılır menüsünde görüntüler renkleri dizisi.  
   
- [in] `color`  
+ [in] *rengi*  
  Seçili varsayılan rengi.  
   
- [in] `lpszAutoColor`  
+ [in] *lpszAutoColor*  
  Metin etiketini *otomatik* (varsayılan) renk düğmesi veya `NULL`.  
   
  Otomatik düğmesi için standart etiket **otomatik**.  
   
- [in] `lpszOtherColor`  
+ [in] *lpszOtherColor*  
  Metin etiketini *diğer* daha fazla rengi seçimleri görüntüleyen düğmesini veya `NULL`.  
   
  Diğer düğmesi için standart etiket **daha renkleri...** .  
   
- [in] `lpszDocColors`  
+ [in] *lpszDocColors*  
  Belge renkleri düğmesi metin etiketi. Belge renk paleti belge şu anda kullandığı tüm renkleri listeler.  
   
- [in] `lstDocColors`  
+ [in] *lstDocColors*  
  Belge şu anda kullandığı renk listesi.  
   
- [in] `nColumns`  
+ [in] *nColumns*  
  Renkleri dizisi sahip sütun sayısı.  
   
- [in] `nHorzDockRows`  
+ [in] *nHorzDockRows*  
  Renk çubuğu yatay yerleştirildiğinde olan satırların sayısı.  
   
- [in] `nVertDockColumns`  
+ [in] *nVertDockColumns*  
  Renk Çubuğu dikey yerleştirildiğinde olan sütun sayısı.  
   
- [in] `colorAutomatic`  
+ [in] *colorAutomatic*  
  Otomatik Düğmeye tıkladığınızda, framework uygulanan varsayılan rengi.  
   
- [in] `uiCommandID`  
+ [in] *uiCommandID*  
  Renk çubuğu denetim komut kimliği.  
   
- [in] `bStdColorDlg`  
+ [in] *bStdColorDlg*  
  Standart sistem renk iletişim kutusu gösterilip gösterilmeyeceğini belirten bir Boole değeri veya [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) iletişim kutusu.  
   
- [in] `pParentBtn`  
+ [in] *pParentBtn*  
  Bir üst düğmesini gösteren bir işaretçi.  
   
- [in] `nID`  
+ [in] *nID*  
  Komut kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -202,9 +202,9 @@ virtual CPane* CreateTearOffBar(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `pWndMain`|Etiketleri çubuğunun üst pencere işaretçi.|  
-|[in] `uiID`|Etiketleri çubuğu komut kimliği.|  
-|[in] `lpszName`|Etiketleri çubuğu penceresi metni.|  
+|[in] *pWndMain*|Etiketleri çubuğunun üst pencere işaretçi.|  
+|[in] *uiID*|Etiketleri çubuğu komut kimliği.|  
+|[in] *lpszName*|Etiketleri çubuğu penceresi metni.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni etiketleri denetim çubuğu nesnesi için bir işaretçi.  
@@ -233,7 +233,7 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndList`  
+ [in] *pWndList*  
  Bir özellik kılavuz denetim nesnesine işaretçi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

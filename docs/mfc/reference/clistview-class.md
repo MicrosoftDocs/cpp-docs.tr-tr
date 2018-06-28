@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3930ad915ff908b8931733a9f0362320e24dc2cf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9087642a529911c0c0a885c4613a3dbf2e92311f
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366349"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037628"
 ---
 # <a name="clistview-class"></a>CListView sınıfı
 Liste denetimi'nin ve kullanım basitleştirir [CListCtrl](../../mfc/reference/clistctrl-class.md), MFC'nin belge görünüm mimarisi ile liste denetimi işlevselliği kapsar sınıfı.  
@@ -105,7 +105,7 @@ void RemoveImageList(int nImageList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nImageList`  
+ *nImageList*  
  Görüntünün kaldırmak için sıfır tabanlı dizini.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

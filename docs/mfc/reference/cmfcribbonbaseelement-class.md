@@ -242,12 +242,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 048bb65ae7e8c82df0d4003916da5d7a36a9b569
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0dbb6df911f0594b106f7b069a97b1fd6590c737
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378687"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042270"
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement sınıfı
 `CMFCRibbonBaseElement` Sınıftır ekleyebileceğiniz tüm öğeleri için temel sınıfı bir [Şerit çubuğu](../../mfc/reference/cmfcribbonbar-class.md). Şerit öğeleri örnekler Şerit düğmeleri, Şerit onay kutularını ve Şerit birleşik giriş kutuları.  
@@ -423,7 +423,7 @@ virtual void AddToKeyList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `arElems`  
+ [in] *arElems*  
  Başvuru bir [CArray](../../mfc/reference/carray-class.md) tuş ipuçlarını.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -439,10 +439,10 @@ virtual int AddToListBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndListBox`  
+ [in] *pWndListBox*  
  Komutları liste kutusu işaretçi.  
   
- [in] `bDeep`  
+ [in] *bDeep*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -529,7 +529,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `src`  
+ [in] *src*  
  Kaynak [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md) nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -555,19 +555,19 @@ virtual void DrawImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı işaretçi.  
   
- [in] `type`  
+ [in] *türü*  
  Değer numaralandırılmış bir görüntü türü. Olası değerler listesini için Açıklamalar bölümüne bakın.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Görüntü dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak bu yöntem hiçbir şey yapmaz. Şerit öğesi için resim çizmek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
   
- İçin olası değerler aşağıdaki tabloda listelenmektedir `type` parametre:  
+ İçin olası değerler aşağıdaki tabloda listelenmektedir *türü* parametre:  
   
  `RibbonImageLarge`  
  Büyük 32 x 32 piksel resim boyutu.  
@@ -583,11 +583,11 @@ virtual CMFCRibbonBaseElement* Find(const CMFCRibbonBaseElement* pElement);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pElement`  
+ [in] *pElement*  
  Şerit öğesi işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Şerit öğesi için bir işaretçi varsa `pElement` işaret geçerli nesneye; Aksi halde `NULL`.  
+ Şerit öğesi için bir işaretçi varsa *pElement* işaret geçerli nesneye; Aksi halde `NULL`.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -599,7 +599,7 @@ virtual CMFCRibbonBaseElement* FindByData(DWORD_PTR dwData);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwData`  
+ [in] *dwData*  
  Şerit öğesi ile ilişkili veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -615,7 +615,7 @@ virtual CMFCRibbonBaseElement* FindByID(UINT uiCmdID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmdID`  
+ [in] *uiCmdID*  
  Şerit öğesi için komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -631,7 +631,7 @@ virtual CMFCRibbonBaseElement* FindByOriginal(CMFCRibbonBaseElement* pOriginal);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pOriginal`  
+ [in] *pOriginal*  
  Şerit öğesi işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -648,7 +648,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -698,7 +698,7 @@ virtual void GetElements(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [içinde out] `arElements`  
+ [içinde out] *arElements*  
  Şerit öğeleri dizisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -713,10 +713,10 @@ virtual void GetElementsByID(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmdID`  
+ [in] *uiCmdID*  
  Şerit öğesi komut kimliği.  
   
- [in] `arElements`  
+ [in] *arElements*  
  Şerit öğeleri dizisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -761,7 +761,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -787,10 +787,10 @@ virtual CRect GetKeyTipRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı işaretçi.  
   
- [in] `bIsMenu`  
+ [in] *bIsMenu*  
  `TRUE` Şerit öğesi açılır menü görüntüler Aksi takdirde `FALSE`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -807,7 +807,7 @@ virtual CSize GetKeyTipSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -965,7 +965,7 @@ virtual CSize GetRegularSize(CDC* pDC) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -984,7 +984,7 @@ virtual CSize GetSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1083,7 +1083,7 @@ virtual CMFCRibbonBaseElement* HitTest(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1126,7 +1126,7 @@ virtual BOOL IsAutoRepeatMode(int& nDelay) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nDelay`  
+ [in] *nDelay*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1378,7 +1378,7 @@ BOOL NotifyCommand(BOOL bWithDelay = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bWithDelay`  
+ [in] *bWithDelay*  
  `TRUE` komut bildirim üst pencere ileti kuyruğuna eklemek için; `FALSE` iletiyi üst penceresine hemen göndermek için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1394,7 +1394,7 @@ virtual void NotifyHighlightListItem(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nIndex`  
+ [in] *nIndex*  
  Listedeki Şerit öğenin dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1407,7 +1407,7 @@ virtual BOOL OnAddToQAToolbar(CMFCRibbonQuickAccessToolBar& qat);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `qat`  
+ [in] *qat*  
  Hızlı Erişim Araç çubuğu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1423,7 +1423,7 @@ virtual void OnAfterChangeRect(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1450,7 +1450,7 @@ virtual void OnCalcTextSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1465,10 +1465,10 @@ virtual void OnChangeMenuHighlight(CMFCRibbonPanelMenuBar* pPanelMenuBar
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pPanelMenuBar`  
+ [in] *pPanelMenuBar*  
  Bu parametre kullanılmaz.  
   
- [in] `pHot`  
+ [in] *pHot*  
  Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1482,7 +1482,7 @@ virtual void OnDraw(CDC* pDC) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1499,13 +1499,13 @@ virtual void OnDrawKeyTip(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Sınır dikdörtgen keytip için.  
   
- [in] `bIsMenu`  
+ [in] *bIsMenu*  
  `TRUE` keytip için bir açılır menü düğmesi Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1520,10 +1520,10 @@ virtual BOOL OnDrawMenuImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Menü görüntüsü dikdörtgen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1545,22 +1545,22 @@ virtual void OnDrawOnList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Şerit öğesi için bir cihaz bağlamı işaretçi.  
   
- [in] `strText`  
+ [in] *strText*  
  Görüntü metni.  
   
- [in] `nTextOffset`  
+ [in] *nTextOffset*  
  Liste kutusu görüntüleme metni için sol tarafındaki piksel cinsinden uzaklığı.  
   
- [in] `rect`  
+ [in] *rect*  
  Şerit öğesi için Görüntü dikdörtgen.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  Bu parametre kullanılmaz.  
   
- [in] `bHighlighted`  
+ [in] *bHighlighted*  
  Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1574,7 +1574,7 @@ virtual BOOL OnKey(BOOL bIsMenuKey);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bIsMenuKey`  
+ [in] *bIsMenuKey*  
  `TRUE` açılır menü keytip görüntüler Aksi takdirde `FALSE`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1590,7 +1590,7 @@ virtual BOOL OnMenuKey(UINT nUpperChar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nUpperChar`  
+ [in] *nUpperChar*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1607,7 +1607,7 @@ virtual BOOL OnProcessKey(UINT nChar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nChar`  
+ [in] *nChar*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1624,7 +1624,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bIsRTL`  
+ [in] *bIsRTL*  
  Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1648,7 +1648,7 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1672,7 +1672,7 @@ void PostMenuCommand(UINT uiCmdId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmdId`  
+ [in] *uiCmdId*  
  Parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1698,10 +1698,10 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParent`  
+ *pParent*  
  Şerit öğesi için üst pencere.  
   
- `data`  
+ *Veri*  
  Şerit öğesi için erişilebilirlik verileri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1718,13 +1718,13 @@ virtual void SetCompactMode(BOOL bCompactMode = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bCompactMode`  
+ [in] *bCompactMode*  
  `TRUE` Şerit öğesi görüntü boyutunu küçültmek için; `FALSE` Şerit öğesi görüntü boyutunu artırabilirsiniz.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Aşağıdaki tabloda, bu yöntem için mantığı özetler.  
   
-|`bCompactMode`|Geçerli Şerit öğesi boyutu|Yeni Şerit öğesi boyutu|  
+|*bCompactMode*|Geçerli Şerit öğesi boyutu|Yeni Şerit öğesi boyutu|  
 |--------------------|---------------------------------|-----------------------------|  
 |`TRUE`|Sıkıştır|Hiçbir değişiklik.|  
 |`TRUE`|Ara|Mümkünse sıkıştırın.|  
@@ -1739,7 +1739,7 @@ void SetData(DWORD_PTR dwData);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwData`  
+ [in] *dwData*  
  Veri değeri.  
   
 ##  <a name="setdefaultmenulook"></a>  CMFCRibbonBaseElement::SetDefaultMenuLook  
@@ -1750,7 +1750,7 @@ void SetDefaultMenuLook(BOOL bIsDefaultMenuLook = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bIsDefaultMenuLook`  
+ [in] *bIsDefaultMenuLook*  
  `TRUE` açılan komut olarak görünmesi Şerit öğesini ayarlamak için; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1763,7 +1763,7 @@ virtual void SetDescription(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszText`  
+ [in] *lpszText*  
  Şerit öğesi açıklaması.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1777,7 +1777,7 @@ virtual void SetID(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Komut kimliği.  
   
 ##  <a name="setinitialmode"></a>  CMFCRibbonBaseElement::SetInitialMode  
@@ -1788,7 +1788,7 @@ virtual void SetInitialMode(BOOL bOneRow = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bOneRow`  
+ [in] *bOneRow*  
  `TRUE` sıkıştırma veya Ara Şerit öğenin görüntü boyutunu sınırlamak için; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1804,10 +1804,10 @@ virtual void SetKeys(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszKeys`  
+ [in] *lpszKeys*  
  Şerit öğesi için keytip.  
   
- [in] `lpszMenuKeys`  
+ [in] *lpszMenuKeys*  
  Şerit öğesi açılır menü için keytip.  
   
 ##  <a name="setoriginal"></a>  CMFCRibbonBaseElement::SetOriginal  
@@ -1818,7 +1818,7 @@ virtual void SetOriginal(CMFCRibbonBaseElement* pOriginal);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pOriginal`  
+ [in] *pOriginal*  
  Şerit öğesi işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1832,7 +1832,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParent`  
+ [in] *pParent*  
  Şerit kategori işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1846,7 +1846,7 @@ virtual void SetParentMenu(CMFCRibbonPanelMenuBar* pMenuBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMenuBar`  
+ [in] *pMenuBar*  
  Üst menüsü.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1859,7 +1859,7 @@ virtual void SetParentRibbonBar(CMFCRibbonBar* pRibbonBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pRibbonBar`  
+ [in] *pRibbonBar*  
  Üst Şerit çubuğu işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1872,7 +1872,7 @@ void SetRect(CRect rect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rect`  
+ [in] *rect*  
  Dikdörtgen boyutları.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1885,11 +1885,11 @@ virtual void SetText(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszText`  
+ [in] *lpszText*  
  Metin ve keytip Şerit öğesi için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Şerit öğesi keytip ayarlamak için keytip karakterlere ve ardından satır başı karakteri kaçış sırası sona `lpszText`.  
+ Şerit öğesi keytip ayarlamak için keytip karakterlere ve ardından satır başı karakteri kaçış sırası append *lpszText*.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1910,7 +1910,7 @@ virtual void SetTextAlwaysOnRight(BOOL bSet = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bSet`  
+ [in] *bInternet*  
  `TRUE` sağ tarafta metni görüntülemek için; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1923,7 +1923,7 @@ virtual void SetToolTipText(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszText`  
+ [in] *lpszText*  
  Araç İpucu metni.  
   
 ##  <a name="setvisible"></a>  CMFCRibbonBaseElement::SetVisible  
@@ -1934,7 +1934,7 @@ void SetVisible(BOOL bIsVisible);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bIsVisible`  
+ [in] *bIsVisible*  
  `TRUE` Şerit öğesi görüntülenecek; `FALSE` Şerit öğesi gizlemek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1959,10 +1959,10 @@ virtual BOOL StretchToWholeRow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bu parametre kullanılmaz.  
   
- [in] `nHeight`  
+ [in] *nHeight*  
  Satır yüksekliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

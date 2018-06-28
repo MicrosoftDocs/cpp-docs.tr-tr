@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e2e668a2ad15ec9ec2fb779be32d35c17eb57cc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1be5cdc05ab387000828ce6424aed1fcc253d6c2
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374363"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039173"
 ---
 # <a name="colepastespecialdialog-class"></a>COlePasteSpecialDialog sınıfı
 OLE Özel Yapıştır iletişim kutusu için kullanılır.  
@@ -68,7 +68,7 @@ class COlePasteSpecialDialog : public COleDialog
 |----------|-----------------|  
 |[COlePasteSpecialDialog::AddFormat](#addformat)|Özel biçimler uygulamanızı yapıştırabilirsiniz biçimleri listesine ekler.|  
 |[COlePasteSpecialDialog::AddLinkEntry](#addlinkentry)|Yeni bir giriş desteklenen Pano biçimleri listesine ekler.|  
-|[COlePasteSpecialDialog::AddStandardFormats](#addstandardformats)|Ekler **CF_BITMAP**, **CF_DIB**, `CF_METAFILEPICT`ve isteğe bağlı olarak `CF_LINKSOURCE` biçimlerinin listesi için uygulamanızın yapıştırabilirsiniz.|  
+|[COlePasteSpecialDialog::AddStandardFormats](#addstandardformats)|Ekler **CF_BITMAP**, **CF_DIB**, **CF_METAFILEPICT**ve isteğe bağlı olarak **CF_LINKSOURCE** biçimlerinin listesi için uygulamanızın yapıştırabilirsiniz .|  
 |[COlePasteSpecialDialog::CreateItem](#createitem)|Öğe kapsayıcı belgenin belirtilen biçimi kullanarak oluşturur.|  
 |[COlePasteSpecialDialog::DoModal](#domodal)|OLE Özel Yapıştır iletişim kutusunu görüntüler.|  
 |[COlePasteSpecialDialog::GetDrawAspect](#getdrawaspect)|Veya öğeyi simge olarak çizileceğini belirtir.|  
@@ -130,22 +130,22 @@ void AddFormat(
  *FMT*  
  Eklemek için veri türü referansı.  
   
- `lpszFormat`  
+ *lpszFormat*  
  Kullanıcı biçimine açıklayan dize.  
   
  *lpszResult*  
  Bu biçim iletişim kutusunda seçilirse sonucu açıklayan dize.  
   
- `flags`  
+ *bayrakları*  
  Farklı bağlama ve katıştırma seçeneklerini Bu biçim için kullanılabilir. Bu bayrak bir veya daha fazla farklı değerlerin Bitsel bir birleşimi olan **OLEUIPASTEFLAG** numaralandırılmış türü.  
   
- `cf`  
+ *cf*  
  Eklemek için Pano biçimi.  
   
  *ortam türü*  
  Bu biçimde kullanılabilen medya türleri. Bir veya daha fazla değerlerin Bitsel bir birleşimi budur **ortam türü** numaralandırılmış türü.  
   
- `nFormatID`  
+ *nFormatID*  
  Bu biçim tanımlayan dize kimliği. Bu dize bir '\n' karakteriyle ayrılmış iki ayrı dizeleri biçimidir. İlk olarak aktarılabilecek aynı dizedir *lpstrFormat* parametresi, ikincisi ise aynı *lpstrResult* parametresi.  
   
  *bEnableIcon*  
@@ -169,7 +169,7 @@ OLEUIPASTEFLAG AddLinkEntry(UINT cf);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cf`  
+ *cf*  
  Eklemek için Pano biçimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -192,7 +192,7 @@ void AddStandardFormats(BOOL bEnableLink = TRUE);
   
 - **CF_DIB**  
   
-- `CF_METAFILEPICT`  
+- **CF_METAFILEPICT**  
   
 - **"Katıştırılmış nesne"**  
   
@@ -211,7 +211,7 @@ COlePasteSpecialDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwFlags`  
+ *dwFlags*  
  Bit düzeyinde OR işleci kullanılarak birleştirilen aşağıdaki bayraklar herhangi bir sayıda oluşturma bayrağı içerir:  
   
 - `PSF_SELECTPASTE` İletişim kutusu çağrıldığında, Yapıştır radyo düğmesi'nin başlangıçta kontrol edileceği belirtir. İle birlikte kullanılamaz `PSF_SELECTPASTELINK`. Bu varsayılandır.  
@@ -222,10 +222,10 @@ COlePasteSpecialDialog(
   
 - `PSF_SHOWHELP` İletişim kutusu çağrıldığında Yardım düğmesi görüntülenir belirtir.  
   
- `pDataObject`  
+ *pDataObject*  
  İşaret [COleDataObject](../../mfc/reference/coledataobject-class.md) yapıştırma. Bu değer ise **NULL**, alır `COleDataObject` panodan.  
   
- `pParentWnd`  
+ *pParentWnd*  
  İşaret üst veya sahibi pencere nesnesi için (tür `CWnd`) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim kutusunun üst pencere ana uygulama penceresine ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c02c2590e4143460a2cd89bb2b7e7e167c92c0e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8123db8e4a8dfba94e469881af8fbb2ecb40e2a0
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370815"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041987"
 ---
 # <a name="cmfccustomcolorspropertypage-class"></a>CMFCCustomColorsPropertyPage sınıfı
 Özel renkler renk iletişim kutusunda seçim yapabileceğiniz bir özellik sayfasını temsil eder.  
@@ -91,9 +91,9 @@ void Setup(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `R`|RGB değeri kırmızı bileşenidir.|  
-|[in] `G`|RGB değeri yeşil bileşenidir.|  
-|[in] `B`|RGB değeri mavi bileşenidir.|  
+|[in] *R*|RGB değeri kırmızı bileşenidir.|  
+|[in] *G*|RGB değeri yeşil bileşenidir.|  
+|[in] *B*|RGB değeri mavi bileşenidir.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, geçerli RGB ve ilişkili HLS (ton, açıklık ve Doygunluk) renk değerleri özellik sayfasının güncelleştirir. [CMFCColorDialog::SetPageTwo](../../mfc/reference/cmfccolordialog-class.md#setpagetwo) yöntemi framework renk iletişim kutusu başlatır veya sol fare düğmesini kullanıcı bu yöntemi çağırır. Hakkında daha fazla bilgi için `CMFCColorDialog`, bkz: [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md).  

@@ -230,12 +230,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40d8c55f212949400bc7948be291d037a34281ce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 62be8c2061dc27b847e2bf0bfe7ca3c4c8195f5f
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378498"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039316"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase sınıfı
 HTML düzenleme bileşenini temsil eder.  
@@ -391,7 +391,7 @@ HRESULT AddToGlyphTable(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szTag`  
+ *szTag*  
  Etiket adı (örneğin, "P" veya "Tablo").  
   
  *szImgUrl*  
@@ -444,7 +444,7 @@ HRESULT Button(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Düğme denetiminin kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -461,7 +461,7 @@ HRESULT CheckBox(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Onay kutusu denetimi kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -530,7 +530,7 @@ HRESULT DropDownBox(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Aşağı açılan seçimi denetim kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -571,10 +571,10 @@ HRESULT ExecCommand(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cmdID`  
+ *cmdID*  
  Yürütülecek komut kimliği. Bir listesi için bkz: [MSHTML komut tanımlayıcıları](https://msdn.microsoft.com/library/aa741315.aspx).  
   
- `cmdExecOpt`  
+ *cmdExecOpt*  
  Alınan değerleri [OLECMDEXECOPT](http://msdn.microsoft.com/library/windows/desktop/ms683930) nesne komutu nasıl yürütülecek açıklamak numaralandırması.  
   
  *pInVar*  
@@ -613,7 +613,7 @@ HRESULT GetAbsolutePosition(bool& bCurValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bCurValue`  
+ *bCurValue*  
  Öğenin konum özelliği için "mutlak." olarak ayarlandıysa true  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -630,7 +630,7 @@ HRESULT GetBackColor(int& nColor) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nColor`  
+ *nColor*  
  Arka plan rengi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -698,7 +698,7 @@ HRESULT GetDocument(IHTMLDocument2** ppDoc) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ppDoc`  
+ *ppDoc*  
  Belge nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -712,7 +712,7 @@ HRESULT GetDocumentHTML(CString& szHTML) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szHTML`  
+ *szHTML*  
  HTML.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -740,7 +740,7 @@ HRESULT GetEvent(IHTMLEventObj** ppEventObj) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ppEventObj`  
+ *ppEventObj*  
  Olay nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -768,14 +768,14 @@ HRESULT GetFontFace(CString& strFace) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `strFace`  
+ *strFace*  
  Yazı tipi adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli seçim birden çok yazı tipi kullanıyorsa `strFace` boş bir dize olacaktır.  
+ Geçerli seçim birden çok yazı tipi kullanıyorsa *strFace* boş bir dize olacaktır.  
   
  Bu yöntem gönderir [IDM_FONTNAME komut kimliği](https://msdn.microsoft.com/library/aa769880.aspx) WebBrowser denetimi için.  
   
@@ -787,7 +787,7 @@ HRESULT GetFontSize(short& nSize) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nSize`  
+ *nSize*  
  Yazı tipi boyutu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -804,7 +804,7 @@ HRESULT GetForeColor(int& nColor);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nColor`  
+ *nColor*  
  Ön plan rengi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -848,7 +848,7 @@ HRESULT GetShowAlignedSiteTags(bool& bCurValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bCurValue`  
+ *bCurValue*  
  Bir karakter için sahip tüm öğeleri görüntüleniyorsa, doğru bir **styleFloat** özellik; hiçbir karakter görüntüleniyorsa, false.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -865,7 +865,7 @@ HRESULT GetShowAllTags(bool& bCurValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bCurValue`  
+ *bCurValue*  
  Bir belgedeki tüm etiketleri konumunu göstermek için karakterlerin WebBrowser görüntüler true; mevcut değilse false.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -882,7 +882,7 @@ HRESULT GetShowAreaTags(bool& bCurValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bCurValue`  
+ *bCurValue*  
  WebBrowser yanlış görüntüler'u alan etiketleri karaktere mevcut değilse true.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -899,7 +899,7 @@ HRESULT GetShowBRTags(bool& bCurValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bCurValue`  
+ *bCurValue*  
  WebBrowser yanlış görüntüler'u br etiketleri karaktere seçili değilse true.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -916,7 +916,7 @@ HRESULT GetShowCommentTags(bool& bCurValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bCurValue`  
+ *bCurValue*  
  WebBrowser yanlış görüntüler'u açıklama etiketleri karaktere seçili değilse true.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -933,7 +933,7 @@ HRESULT GetShowMiscTags(bool& bCurValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bCurValue`  
+ *bCurValue*  
  Microsoft Internet Explorer 4. 0 ', mevcut değilse false gösterilen tüm etiketleri WebBrowser görüntüler true.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -950,7 +950,7 @@ HRESULT GetShowScriptTags(bool& bCurValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bCurValue`  
+ *bCurValue*  
  WebBrowser yanlış görüntüler'u komut dosyası etiketlerini karaktere mevcut değilse true.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -967,7 +967,7 @@ HRESULT GetShowStyleTags(bool& bCurValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bCurValue`  
+ *bCurValue*  
  TRUE yoksa WebBrowser tüm stil etiketleri karaktere yanlış görüntüler  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -984,7 +984,7 @@ HRESULT GetShowUnknownTags(bool& bCurValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bCurValue`  
+ *bCurValue*  
  WebBrowser yanlış görüntüler'u tüm bilinmeyen etiketleri karaktere mevcut değilse true.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1018,7 +1018,7 @@ HRESULT HyperLink(LPCTSTR szUrl = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szUrl`  
+ *szUrl*  
  Köprü URL'si.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1035,7 +1035,7 @@ HRESULT IE50Paste(LPCTSTR szData) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szData`  
+ *szData*  
  Yapıştırmak için dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1052,7 +1052,7 @@ HRESULT Iframe(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Satır içi çerçeve kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1069,7 +1069,7 @@ HRESULT Image(LPCTSTR szUrl = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szUrl`  
+ *szUrl*  
  Eklenecek görüntüsünü yolu ve dosya adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1099,7 +1099,7 @@ HRESULT InsFieldSet(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Kutunun kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1116,7 +1116,7 @@ HRESULT InsInputButton(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Düğme denetiminin kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1133,7 +1133,7 @@ HRESULT InsInputHidden(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Gizli denetimi kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1150,7 +1150,7 @@ HRESULT InsInputImage(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Görüntü denetim kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1167,7 +1167,7 @@ HRESULT InsInputPassword(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Parola denetimi kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1184,7 +1184,7 @@ HRESULT InsInputReset(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Sıfırla denetimini kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1201,7 +1201,7 @@ HRESULT InsInputSubmit(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Gönderme denetiminin kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1218,7 +1218,7 @@ HRESULT InsInputUpload(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Karşıya dosya yükleme denetiminin kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1235,7 +1235,7 @@ HRESULT Is1DElement(bool& bValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bValue`  
+ *bDeğer*  
  Öğe yoksa statik olarak konumlandırılmış, false ise, true.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1252,7 +1252,7 @@ HRESULT Is2DElement(bool& bValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bValue`  
+ *bDeğer*  
  Öğe aksi mutlak olarak konumlandırılmış, false ise, true.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1321,7 +1321,7 @@ HRESULT ListBox(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Liste kutusu denetimini kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1338,7 +1338,7 @@ HRESULT Marquee(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Kayan kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1365,7 +1365,7 @@ HRESULT OrderList(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Sıralı liste kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1395,7 +1395,7 @@ HRESULT Paragraph(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Paragraf kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1427,7 +1427,7 @@ HRESULT PrintDocument(bool bShowPrintDialog) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szPrintTemplate`  
+ *szPrintTemplate*  
  Yazdırma şablon yolu; belirtilmemişse, varsayılan yazdırma şablonu kullanılır.  
   
  *bShowPrintDialog*  
@@ -1448,7 +1448,7 @@ HRESULT PrintPreview(LPCTSTR szPrintTemplate) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szPrintTemplate`  
+ *szPrintTemplate*  
  Yazdırma şablon yolu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1465,11 +1465,11 @@ long QueryStatus(long cmdID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cmdID`  
+ *cmdID*  
  Komut kimliği. Komut tanımlayıcıları gelen alınır `CGID_MSHTML` komut grubu. Bu komutlar Mshtmcid.h içinde tanımlanmıştır. Listenin çevrimiçi bulabileceğiniz [MSHTML komut tanımlayıcıları](http://go.microsoft.com/fwlink/p/?linkid=149220).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür bir [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) durumunu gösteren `cmdID`, ya da 0 hata durumunda.  
+ Döndürür bir [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) durumunu gösteren *cmdID*, ya da 0 hata durumunda.  
   
 ##  <a name="radiobutton"></a>  CHtmlEditCtrlBase::RadioButton  
  Geçerli Seçim radyo denetiminde üzerine yazar.  
@@ -1479,7 +1479,7 @@ HRESULT RadioButton(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Radyo düğmesi kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1522,7 +1522,7 @@ HRESULT SaveAs(LPCTSTR szPath = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szPath`  
+ *szPath*  
  Web sayfası kaydedileceği için yolu ve dosya adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1552,7 +1552,7 @@ HRESULT Set2DPosition(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, sürükleyerek mutlak olarak konumlandırılmış öğeler taşınabilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1569,7 +1569,7 @@ HRESULT SetAbsolutePosition(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, öğenin konum özelliğini "absolute"; false ise, "statik."  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1586,7 +1586,7 @@ HRESULT SetAtomicSelection(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, TRUE olarak ayarlanmış bir ATOMICSELECTION özelliğine sahip herhangi bir öğe yalnızca bir birim olarak seçilebilir olacaktır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1603,7 +1603,7 @@ HRESULT SetAutoURLDetectMode(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, otomatik URL algılama etkinleştirilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1621,11 +1621,11 @@ HRESULT SetBackColor(LPCTSTR szColor) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nColor`  
- Rengi. Bkz: `pvaIn` içinde [IDM_BACKCOLOR komut kimliği](https://msdn.microsoft.com/library/aa769858.aspx).  
+ *nColor*  
+ Rengi. Bkz: *pvaIn* içinde [IDM_BACKCOLOR komut kimliği](https://msdn.microsoft.com/library/aa769858.aspx).  
   
- `szColor`  
- Rengi. Bkz: `pvaIn` içinde [IDM_BACKCOLOR komut kimliği](https://msdn.microsoft.com/library/aa769858.aspx).  
+ *szColor*  
+ Rengi. Bkz: *pvaIn* içinde [IDM_BACKCOLOR komut kimliği](https://msdn.microsoft.com/library/aa769858.aspx).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  S_OK başarı veya başarısızlık HRESULT hata döndürür.  
@@ -1641,7 +1641,7 @@ HRESULT SetBlockFormat(LPCTSTR szFormat) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szFormat`  
+ *szFormat*  
  Biçim etiketi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1675,7 +1675,7 @@ HRESULT SetCSSEditingLevel(short nLevel) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nLevel`  
+ *nLevel*  
  CSS düzeyi. CSS desteği istemiyorsanız 0 geçirin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1714,10 +1714,10 @@ HRESULT SetDefaultComposeSettings(
  *bBold*  
  Kalın metin için true değerini iletir.  
   
- `bItalic`  
+ *bItalic*  
  İtalik metin için true değerini iletir.  
   
- `bUnderline`  
+ *bUnderline*  
  İçin altı çizili metni true değerini iletir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1734,7 +1734,7 @@ BOOL SetDesignMode(BOOL bMode) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bMode`  
+ *bMode*  
  TRUE ise, Tasarım modunda açar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1748,7 +1748,7 @@ HRESULT SetDisableEditFocusUI(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  Öğe "odak Düzenle" Tasarım modunda olduğunda true ise, taranmış kenarlık ve bir site seçilebilir öğesi geçici tanıtıcıları devre dışı bırakır; diğer bir deyişle, ne zaman metin veya öğenin içeriğini düzenlenebilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1765,7 +1765,7 @@ HRESULT SetDocumentHTML(LPCTSTR szHTML) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szHTML`  
+ *szHTML*  
  HTML.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1779,7 +1779,7 @@ HRESULT SetFontFace(LPCTSTR szFace) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szFace`  
+ *szFace*  
  Yazı tipi adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1796,7 +1796,7 @@ HRESULT SetFontSize(unsigned short size) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `size`  
+ *Boyutu*  
  HTML yazı tipi boyutu (1-7). 0 değeri, yazı tipi boyutu 1'e ayarlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1814,10 +1814,10 @@ HRESULT SetForeColor(int nColor) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szColor`  
+ *szColor*  
  Rengi.  
   
- `nColor`  
+ *nColor*  
  Rengi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1834,7 +1834,7 @@ HRESULT SetIE5PasteMode(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, tüm yapıştırma işlemleri Internet Explorer 5 ile uyumludur; false ise, yapıştırma işlemleri Internet Explorer 5. 5'ile uyumlu değildir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1851,7 +1851,7 @@ HRESULT SetLiveResize(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, bir öğenin görünümünü yeniden boyutlandırma veya taşıma işlemi sırasında sürekli olarak güncelleştirmek WebBrowser neden olur; false ise, yalnızca tamamlandığında taşıma veya yeniden boyutlandırma güncelleştirir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1868,7 +1868,7 @@ HRESULT SetMultiSelect(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, kullanıcı SHIFT veya CTRL tuşlarını basılı zaman tutan bir seferde birden fazla site seçilebilir öğesinin seçilmek sağlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1885,7 +1885,7 @@ HRESULT SetOverrideCursor(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, fare işaretçisini WebBrowser değiştirmez.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1902,7 +1902,7 @@ HRESULT SetOverwriteMode(bool bMode) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bMode`  
+ *bMode*  
  TRUE ise, metin girişi modu olan üzerine; false ise, metin girişi ekleme modudur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1919,7 +1919,7 @@ HRESULT SetRespectVisInDesign(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, "gizli" olarak ayarlanmış veya "hiçbiri" özellik kümesine görüntüleme görünürlüğe sahip herhangi bir öğe hem tasarım modunda hem de gözatma modu gösterilen değil; false ise, bu öğeler yalnızca gözatma modunda görüntülenir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1936,7 +1936,7 @@ HRESULT SetShowAlignedSiteTags(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, yüklü olan tüm öğeler için bir karakter görüntüler bir **styleFloat** özelliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1953,7 +1953,7 @@ HRESULT SetShowAllTags(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, bir belgedeki tüm etiketleri konumunu göstermek için karakterleri görüntüler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1970,7 +1970,7 @@ HRESULT SetShowAreaTags(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, tüm alan etiketleri karaktere görüntüler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1987,7 +1987,7 @@ HRESULT SetShowBRTags(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, tüm br etiketleri karaktere görüntüler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2004,7 +2004,7 @@ HRESULT SetShowCommentTags(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, tüm açıklama etiketleri karaktere görüntüler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2021,7 +2021,7 @@ HRESULT SetShowMiscTags(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, Microsoft Internet Explorer 4. 0 ' gösterilen tüm etiketleri görüntüler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2038,7 +2038,7 @@ HRESULT SetShowScriptTags(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, tüm komut dosyası etiketleri karaktere görüntüler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2055,7 +2055,7 @@ HRESULT SetShowStyleTags(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, tüm stil etiketleri karaktere görüntüler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2072,7 +2072,7 @@ HRESULT SetShowUnknownTags(bool bNewValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bNewValue`  
+ *bNewValue*  
  TRUE ise, tüm bilinmeyen etiketleri karaktere görüntüler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2089,7 +2089,7 @@ HRESULT TextArea(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Çok satırlı metin girişi denetiminin kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2106,7 +2106,7 @@ HRESULT TextBox(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Metin denetim kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2162,7 +2162,7 @@ HRESULT UnorderList(LPCTSTR szId = NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szId`  
+ *szId*  
  Sıralanmamış liste kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

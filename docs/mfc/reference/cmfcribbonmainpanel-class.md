@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05257749c95b619c479538a1322746ae2b487b6a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d92df2378ea8f41c140b69ba3878ca0d7a18e08a
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367964"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037379"
 ---
 # <a name="cmfcribbonmainpanel-class"></a>CMFCRibbonMainPanel sınıfı
 ' I tıklattığınızda görüntüleyen bir Şerit panel uygulayan [CMFCRibbonApplicationButton](../../mfc/reference/cmfcribbonapplicationbutton-class.md).  
@@ -90,7 +90,7 @@ virtual void Add(CMFCRibbonBaseElement* pElem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] [out] `pElem`  
+ [in] [out] *pElem*  
  Ana paneline eklemek için Şerit öğesi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -106,10 +106,10 @@ void AddRecentFilesList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszLabel`  
+ *lpszLabel*  
  Son kullanılan dosya listesi eklenecek dizeyi belirtir.  
   
- `nWidth`  
+ *nWidth*  
  Son kullanılan dosyalar listesi panelini piksel cinsinden genişliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -122,7 +122,7 @@ void AddToBottom(CMFCRibbonMainPanelButton* pElem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] [out] `pElem`  
+ [in] [out] *pElem*  
  Ana bölmesi alt kısmına eklemek için Şerit öğesi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -137,10 +137,10 @@ void AddToRight(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pElem`  
+ *pElem*  
  Ana bölmesi sağ tarafındaki eklenecek bir Şerit öğesi için bir işaretçi.  
   
- `nWidth`  
+ *nWidth*  
  Sağ panelde piksel cinsinden genişliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

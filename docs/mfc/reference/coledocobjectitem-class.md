@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af2b13b8da5f70cf55b47ddf3b7864f9f9151a40
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b0842904ddb6e534cabc9fff8b5d2b2b4855f410
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373585"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042215"
 ---
 # <a name="coledocobjectitem-class"></a>COleDocObjectItem sınıfı
 Etkin belge kapsaması uygular.  
@@ -108,7 +108,7 @@ COleDocObjectItem(COleDocument* pContainerDoc = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pContainerDoc`  
+ *pContainerDoc*  
  Bir işaretçi `COleDocument` etkin belge kapsayıcı olarak hareket nesnesi. Bu parametre olmalıdır **NULL** etkinleştirmek için **IMPLEMENT_SERIALIZE**. Normalde OLE öğeleri olmayan bir ile oluşturulan **NULL** belge işaretçi.  
   
 ##  <a name="dodefaultprinting"></a>  COleDocObjectItem::DoDefaultPrinting  
@@ -121,10 +121,10 @@ static HRESULT DoDefaultPrinting(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pCaller`  
+ *pCaller*  
  Bir işaretçi bir [CView](../../mfc/reference/cview-class.md) yazdırma komut gönderilirken nesnesi.  
   
- `pInfo`  
+ *pInfo*  
  Bir işaretçi bir [Cprintınfo](../../mfc/reference/cprintinfo-structure.md) yazdırılmasını işini tanımlayan nesne.  
   
 ##  <a name="execcommand"></a>  COleDocObjectItem::ExecCommand  
@@ -138,14 +138,14 @@ HRESULT ExecCommand(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCmdID`  
- Komutun yürütülmesi için tanımlayıcı. Tarafından tanımlanan grubunda olmalıdır `pguidCmdGroup`.  
+ *nCmdID*  
+ Komutun yürütülmesi için tanımlayıcı. Tarafından tanımlanan grubunda olmalıdır *pguidCmdGroup*.  
   
- `nCmdExecOpt`  
+ *nCmdExecOpt*  
  Komut yürütme seçeneklerini belirtir. Kullanıcıya sormadan komutu yürütmek için varsayılan olarak ayarlayın. Bkz: [OLECMDEXECOPT](http://msdn.microsoft.com/library/windows/desktop/ms683930) değerleri listesi.  
   
- `pguidCmdGroup`  
- Komut grubunun benzersiz tanımlayıcısı. Varsayılan olarak, **NULL**, standart grubun belirtir. Komut geçirilen `nCmdID` grubuna ait olmalıdır.  
+ *pguidCmdGroup*  
+ Komut grubunun benzersiz tanımlayıcısı. Varsayılan olarak, **NULL**, standart grubun belirtir. Komut geçirilen *nCmdID* grubuna ait olmalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür `S_OK` başarılıysa; Aksi takdirde, aşağıdaki hata kodlarını döndürür.  
@@ -155,14 +155,14 @@ HRESULT ExecCommand(
 |**E_UNEXPECTED**|Beklenmeyen bir hata oluştu.|  
 |**E_FAIL**|Bir hata oluştu.|  
 |**E_NOTIMPL**|MFC gösterir kendisini çevirin ve komut gönderme denemelisiniz.|  
-|**OLECMDERR_E_UNKNOWNGROUP**|`pguidCmdGroup` olmayan olan **NULL** ancak tanınan komut grubu belirtmiyor.|  
-|**OLECMDERR_E_NOTSUPPORTED**|`nCmdID` Grup pGroup geçerli bir komut olarak tanınmıyor.|  
-|**OLECMDERR_DISABLED**|Tarafından tanımlanan komutu `nCmdID` devre dışı bırakılır ve yürütülemez.|  
-|**OLECMDERR_NOHELP**|Çağıran tarafından tanımlanan komutu hakkında Yardım için sorulan `nCmdID` ancak Yardım yok.|  
+|**OLECMDERR_E_UNKNOWNGROUP**|*pguidCmdGroup* olan olmayan **NULL** ancak tanınan komut grubu belirtmiyor.|  
+|**OLECMDERR_E_NOTSUPPORTED**|*nCmdID* Grup pGroup geçerli bir komut olarak tanınmıyor.|  
+|**OLECMDERR_DISABLED**|Tarafından tanımlanan komutu *nCmdID* devre dışı bırakılır ve yürütülemez.|  
+|**OLECMDERR_NOHELP**|Çağıran tarafından tanımlanan komutu hakkında Yardım için sorulan *nCmdID* ancak Yardım yok.|  
 |**OLECMDERR_CANCELLED**|Kullanıcı yürütme iptal edildi.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- `pguidCmdGroup` Ve `nCmdID` parametreleri birlikte çağrılacak komutu benzersiz şekilde tanımlar. `nCmdExecOpt` Parametresi, tam gerçekleştirilecek eylemi belirtir.  
+ *PguidCmdGroup* ve *nCmdID* parametreleri birlikte çağrılacak komutu benzersiz şekilde tanımlar. *NCmdExecOpt* parametresi, tam gerçekleştirilecek eylemi belirtir.  
   
 ##  <a name="getactiveview"></a>  COleDocObjectItem::GetActiveView  
  Bir işaretçi almak için bu üye işlevini çağırın `IOleDocumentView` şu anda etkin görünümün arabirimi.  
@@ -207,13 +207,13 @@ static BOOL OnPreparePrinting(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pCaller`  
+ *pCaller*  
  Bir işaretçi bir [CView](../../mfc/reference/cview-class.md) yazdırma komut gönderilirken nesnesi.  
   
- `pInfo`  
+ *pInfo*  
  Bir işaretçi bir [Cprintınfo](../../mfc/reference/cprintinfo-structure.md) yazdırılmasını işini tanımlayan nesne.  
   
- `bPrintAll`  
+ *bPrintAll*  
  Tüm belgeyi yazdırılması olup olmadığını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -230,13 +230,13 @@ static void OnPrint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pCaller`  
+ *pCaller*  
  Yazdırma komut gönderilirken bir CView nesnesi için bir işaretçi.  
   
- `pInfo`  
+ *pInfo*  
  Bir işaretçi bir [Cprintınfo](../../mfc/reference/cprintinfo-structure.md) yazdırılmasını işini tanımlayan nesne.  
   
- `bPrintAll`  
+ *bPrintAll*  
  Tüm belgeyi yazdırılması olup olmadığını belirtir.  
   
 ##  <a name="querycommand"></a>  COleDocObjectItem::QueryCommand  
@@ -251,16 +251,16 @@ HRESULT QueryCommand(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCmdID`  
+ *nCmdID*  
  için sorgulanan komut tanımlayıcısı.  
   
- `pdwStatus`  
+ *pdwStatus*  
  Sorgu sonucu olarak döndürülen bayrakları gösteren bir işaretçi. Olası değerler listesi için bkz: [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237).  
   
- `pCmdText`  
+ *pCmdText*  
  İşaretçi bir [OLECMDTEXT](http://msdn.microsoft.com/library/windows/desktop/ms693314) yapısı, tek bir komut adı ve durum bilgilerini dönün. Olabilir **NULL** arayan bu bilgilere ihtiyacınız olmayan belirtmek için.  
   
- `pguidCmdGroup`  
+ *pguidCmdGroup*  
  Komut grubu benzersiz tanıtıcısı; olabilir **NULL** standart grubun belirtmek için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -277,7 +277,7 @@ virtual void Release(OLECLOSE dwCloseOption = OLECLOSE_NOSAVE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwCloseOption`  
+ *dwCloseOption*  
  Yüklenen durumuna geri döndüğünde hangi koşullar altında OLE öğesi kaydedildiğinde belirten bayrak. Olası değerler listesi için bkz: [COleClientItem::Close](../../mfc/reference/coleclientitem-class.md#close).  
   
 ### <a name="remarks"></a>Açıklamalar  

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2b123b5c473c834e958263edb926ef25103d788
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0c1ba2bb78260ade8dc95685789ec6af7e0ff58a
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367802"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038919"
 ---
 # <a name="cmfcpropertygridfileproperty-class"></a>CMFCPropertyGridFileProperty sınıfı
 `CMFCPropertyGridFileProperty` Sınıfı, bir dosya seçimi iletişim kutusunu açar bir özelliği liste denetim öğesi destekler.  
@@ -78,28 +78,28 @@ CMFCPropertyGridFileProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `strName`  
+ [in] *strName*  
  Özellik adı.  
   
- [in] `bOpenFileDialog`  
+ [in] *bOpenFileDialog*  
  `TRUE` açmak için bir **Dosya Aç** iletişim kutusu; `FALSE` açmak için bir **dosyayı Kaydet** iletişim kutusu.  
   
- [in] `strFileName`  
+ [in] *strFileName*  
  İlk dosya adı.  
   
- [in] `lpszDefExt`  
+ [in] *lpszDefExt*  
  Bir veya daha fazla dosya adı uzantılarını dizesi. Varsayılan değer `NULL` şeklindedir.  
   
- [in] `dwFlags`  
+ [in] *dwFlags*  
  İletişim kutusu bayraklar. Bit düzeyinde bileşimini (veya) varsayılan değerdir `OFN_HIDEREADONLY` ve `OFN_OVERWRITEPROMPT`.  
   
- [in] `lpszFilter`  
+ [in] *lpszFilter*  
  Bir veya daha fazla dosya filtreleri dizesi. Varsayılan değer `NULL` şeklindedir.  
   
- [in] `lpszDescr`  
+ [in] *lpszDescr*  
  Özellik öğesi açıklaması. Varsayılan değer `NULL` şeklindedir.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Özellik öğesi ile ilişkilendirilen uygulamaya özgü verileri. Örneğin, bir 32 bit tamsayı veya diğer veri için bir işaretçi. Varsayılan değer 0’dır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

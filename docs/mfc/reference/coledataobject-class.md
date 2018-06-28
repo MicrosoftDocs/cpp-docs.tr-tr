@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9cd159597440dfb55bbe8abe147623096cdf449
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0e5beccea254db8c7db6b6f52fee6c5d3021da71
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374516"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038342"
 ---
 # <a name="coledataobject-class"></a>COleDataObject sınıfı
 Veri aktarımları ile sürükle ve bırak, Pano veya katıştırılmış OLE öğeyi çeşitli biçimlerde verileri almak için kullanılır.  
@@ -107,7 +107,7 @@ void Attach(
  *lpDataObject*  
  OLE veri nesnesi noktalarına.  
   
- `bAutoRelease`  
+ *bAutoRelease*  
  **DOĞRU** OLE veri nesnesi olacaksa, ne zaman serbest `COleDataObject` nesnesidir yok; Aksi takdirde **FALSE**.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -178,14 +178,14 @@ BOOL GetData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cfFormat`  
+ *cfFormat*  
  Veri döndürülecek olan biçimi. Bu parametre bir ön tanımlı Pano biçimleri veya yerel Windows tarafından döndürülen değer olabilir [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) işlevi.  
   
- `lpStgMedium`  
+ *lpStgMedium*  
  İşaret eden bir [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) veri alacak yapısı.  
   
- `lpFormatEtc`  
- İşaret eden bir [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) veri olduğu döndürülecek biçimi açıklayan yapısı. Pano biçimi tarafından belirtilen ötesinde ek biçim bilgilerini belirtmek istiyorsanız, bu parametre için bir değer sağlayın `cfFormat`. Eğer öyleyse **NULL**, diğer alanları için varsayılan değerler kullanılır **FORMATETC** yapısı.  
+ *lpFormatEtc*  
+ İşaret eden bir [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) veri olduğu döndürülecek biçimi açıklayan yapısı. Pano biçimi tarafından belirtilen ötesinde ek biçim bilgilerini belirtmek istiyorsanız, bu parametre için bir değer sağlayın *cfFormat*. Eğer öyleyse **NULL**, diğer alanları için varsayılan değerler kullanılır **FORMATETC** yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
@@ -205,11 +205,11 @@ CFile* GetFileData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cfFormat`  
+ *cfFormat*  
  Veri döndürülecek olan biçimi. Bu parametre bir ön tanımlı Pano biçimleri veya yerel Windows tarafından döndürülen değer olabilir [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) işlevi.  
   
- `lpFormatEtc`  
- İşaret eden bir [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) veri olduğu döndürülecek biçimi açıklayan yapısı. Pano biçimi tarafından belirtilen ötesinde ek biçim bilgilerini belirtmek istiyorsanız, bu parametre için bir değer sağlayın `cfFormat`. Eğer öyleyse **NULL**, diğer alanları için varsayılan değerler kullanılır **FORMATETC** yapısı.  
+ *lpFormatEtc*  
+ İşaret eden bir [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) veri olduğu döndürülecek biçimi açıklayan yapısı. Pano biçimi tarafından belirtilen ötesinde ek biçim bilgilerini belirtmek istiyorsanız, bu parametre için bir değer sağlayın *cfFormat*. Eğer öyleyse **NULL**, diğer alanları için varsayılan değerler kullanılır **FORMATETC** yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşaretçi yeni `CFile` veya `CFile`-türetilen nesne verilerini içeren başarılı; Aksi takdirde **NULL**.  
@@ -234,11 +234,11 @@ HGLOBAL GetGlobalData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cfFormat`  
+ *cfFormat*  
  Veri döndürülecek olan biçimi. Bu parametre bir ön tanımlı Pano biçimleri veya yerel Windows tarafından döndürülen değer olabilir [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) işlevi.  
   
- `lpFormatEtc`  
- İşaret eden bir [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) veri olduğu döndürülecek biçimi açıklayan yapısı. Pano biçimi tarafından belirtilen ötesinde ek biçim bilgilerini belirtmek istiyorsanız, bu parametre için bir değer sağlayın `cfFormat`. Eğer öyleyse **NULL**, diğer alanları için varsayılan değerler kullanılır **FORMATETC** yapısı.  
+ *lpFormatEtc*  
+ İşaret eden bir [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) veri olduğu döndürülecek biçimi açıklayan yapısı. Pano biçimi tarafından belirtilen ötesinde ek biçim bilgilerini belirtmek istiyorsanız, bu parametre için bir değer sağlayın *cfFormat*. Eğer öyleyse **NULL**, diğer alanları için varsayılan değerler kullanılır **FORMATETC** yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa verileri içeren genel bellek bloğu tanıtıcısı; Aksi takdirde **NULL**.  
@@ -256,7 +256,7 @@ BOOL GetNextFormat(LPFORMATETC lpFormatEtc);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  İşaret [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) işlev çağrısı döndürüldüğünde, biçimi bilgileri aldığı yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -279,11 +279,11 @@ BOOL IsDataAvailable(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cfFormat`  
- Tarafından yapısında kullanılması için Pano verileri biçimi işaret için `lpFormatEtc`. Bu parametre bir ön tanımlı Pano biçimleri veya yerel Windows tarafından döndürülen değer olabilir [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) işlevi.  
+ *cfFormat*  
+ Tarafından yapısında kullanılması için Pano verileri biçimi işaret için *lpFormatEtc*. Bu parametre bir ön tanımlı Pano biçimleri veya yerel Windows tarafından döndürülen değer olabilir [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) işlevi.  
   
- `lpFormatEtc`  
- İşaret eden bir [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) istenen biçim açıklayan yapısı. Pano biçimi tarafından belirtilen ötesinde ek biçim bilgilerini belirtmek istiyorsanız, bu parametre için bir değer sağlayın `cfFormat`. Eğer öyleyse **NULL**, diğer alanları için varsayılan değerler kullanılır **FORMATETC** yapısı.  
+ *lpFormatEtc*  
+ İşaret eden bir [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) istenen biçim açıklayan yapısı. Pano biçimi tarafından belirtilen ötesinde ek biçim bilgilerini belirtmek istiyorsanız, bu parametre için bir değer sağlayın *cfFormat*. Eğer öyleyse **NULL**, diğer alanları için varsayılan değerler kullanılır **FORMATETC** yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen biçimde veri varsa sıfır olmayan; Aksi takdirde 0.  
@@ -306,7 +306,7 @@ void Release();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `IDataObject` İle ilişkili `COleDataObject` çağırarak **Attach** veya `AttachClipboard` açıkça veya framework tarafından. Varsa `bAutoRelease` parametresinin **Attach** olan **FALSE**, `IDataObject` nesnesi değil yayımlanacaktır. Bu durumda, çağıran serbest bırakma için sorumludur `IDataObject` çağırarak [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317).  
+ `IDataObject` İle ilişkili `COleDataObject` çağırarak `Attach` veya `AttachClipboard` açıkça veya framework tarafından. Varsa `bAutoRelease` parametresinin `Attach` olan **FALSE**, `IDataObject` nesnesi değil yayımlanacaktır. Bu durumda, çağıran serbest bırakma için sorumludur `IDataObject` çağırarak [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek HIERSVR](../../visual-cpp-samples.md)   

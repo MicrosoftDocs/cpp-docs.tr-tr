@@ -100,12 +100,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f8dd962a06d6c7edadcdd029bd83d44b251aec8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 45e0499297c814e4a214962bc2f51404960a8c38
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377745"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039225"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl sınıfı
 Aylık takvim denetiminin işlevselliği kapsar.  
@@ -226,19 +226,19 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwStyle`  
+ *dwStyle*  
  Aylık takvim denetiminin uygulanan Windows stilleri bileşimini belirtir. Bkz: [ay Takvim denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760919) stilleri hakkında daha fazla bilgi için Windows SDK'sındaki.  
   
- `rect`  
+ *Rect*  
  Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Aylık takvim denetiminin boyutunu ve konumunu içerir.  
   
- `pt`  
+ *PT*  
  Bir başvuru bir [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) aylık takvim denetiminin konumunu tanımlayan yapısı.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) aylık takvim denetiminin üst pencere nesnesi. Değil olmalıdır **NULL**.  
   
- `nID`  
+ *nID*  
  Aylık takvim denetiminin denetim kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -251,11 +251,11 @@ virtual BOOL Create(
   
 2.  Aylık takvim denetiminin oluşturup ekleninceye bu üye işlevini çağırın `CMonthCalCtrl` nesnesi.  
   
- Çağırdığınızda **oluşturma**, ortak denetimleri başlatılır. Sürümü **oluşturma** , çağrı belirler nasıl boyutlandırılır:  
+ Çağırdığınızda `Create`, ortak denetimleri başlatılır. Sürümü `Create` , çağrı belirler nasıl boyutlandırılır:  
   
--   MFC bir ay denetimine boyutunu otomatik olarak sağlamak için kullandığı geçersiz kılma çağrı `pt` parametresi.  
+-   MFC bir ay denetimine boyutunu otomatik olarak sağlamak için kullandığı geçersiz kılma çağrısı *pt* parametresi.  
   
--   Kullanan bu işlevi geçersiz kılma denetimi kendiniz boyut çağrısı `rect` parametresi.  
+-   Kullanan bu işlevi geçersiz kılma denetimi kendiniz boyut çağrısı *rect* parametresi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CMonthCalCtrl#1](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_1.cpp)]  
@@ -297,7 +297,7 @@ BOOL GetCalendarGridInfo(PMCGRIDINFO pmcGridInfo) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] `pmcGridInfo`|İşaretçi bir [MCGRIDINFO](http://msdn.microsoft.com/library/windows/desktop/bb760925) yapısı geçerli ay Takvim denetimi hakkında bilgi alır. Ayırma ve bu yapı başlatma çağıran sorumludur.|  
+|[out] *pmcGridInfo*|İşaretçi bir [MCGRIDINFO](http://msdn.microsoft.com/library/windows/desktop/bb760925) yapısı geçerli ay Takvim denetimi hakkında bilgi alır. Ayırma ve bu yapı başlatma çağıran sorumludur.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
@@ -331,15 +331,15 @@ CALID GetCalID() const;
  Bu yöntem gönderir [MCM_GETCALID](http://msdn.microsoft.com/library/windows/desktop/bb760951) Windows SDK'ın açıklanan ileti.  
   
 ##  <a name="getcolor"></a>  CMonthCalCtrl::GetColor  
- Ayın bir alanının rengini Takvim denetimi tarafından belirtilen alır `nRegion`.  
+ Ayın bir alanının rengini Takvim denetimi tarafından belirtilen alır *nRegion*.  
   
 ```  
 COLORREF GetColor(int nRegion) const;  
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nRegion`  
- Renk alınacağı aylık takvim denetiminin bölgesi. Değerlerinin listesi için bkz: `nRegion` parametresinin [SetColor](#setcolor).  
+ *nRegion*  
+ Renk alınacağı aylık takvim denetiminin bölgesi. Değerlerinin listesi için bkz: *nRegion* parametresinin [SetColor](#setcolor).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) aylık takvim denetiminin bölümüyle ilişkili renk başarılı olursa belirten değer. Aksi takdirde, bu üye işlevi -1 döndürür.  
@@ -384,10 +384,10 @@ BOOL GetCurSel(LPSYSTEMTIME pDateTime) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `refDateTime`  
+ *refDateTime*  
  Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi veya bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi. Geçerli saati alır.  
   
- `pDateTime`  
+ *pDateTime*  
  Bir işaretçi bir [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) şu anda seçili tarih bilgisini alacak yapısı. Bu parametre geçerli bir adres olmalıdır ve olamaz **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -480,7 +480,7 @@ BOOL GetMinReqRect(RECT* pRect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pRect`  
+ *pRect*  
  Bir işaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) sınırlayıcı dikdörtgen bilgi alacak yapısı. Bu parametre geçerli bir adres olmalıdır ve olamaz **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -523,19 +523,19 @@ int GetMonthRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `refMinRange`  
+ *refMinRange*  
  Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) veya [CTime](../../atl-mfc-shared/reference/ctime-class.md) izin verilen en erken tarih içeren bir nesne.  
   
- `refMaxRange`  
+ *refMaxRange*  
  Bir başvuru bir `COleDateTime` veya `CTime` izin verilen en fazla tarih içeren bir nesne.  
   
- `pMinRange`  
+ *pMinRange*  
  Bir işaretçi bir [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) tarih aralığının en düşük sonunda içeren yapısı.  
   
- `pMaxRange`  
+ *pMaxRange*  
  Bir işaretçi bir `SYSTEMTIME` tarih aralığı yüksek sonunda içeren yapısı.  
   
- `dwFlags`  
+ *dwFlags*  
  Alınacak aralığı sınırları kapsamını belirten değer. Bu değerin aşağıdakilerden biri olması gerekir.  
   
 |Değer|Açıklama|  
@@ -544,7 +544,7 @@ int GetMonthRange(
 |GMR_VISIBLE|Tamamen görüntülenen ay içerir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İki sınır tarafından kapsanan aylarda, aralığı temsil eden bir tamsayı belirtilen tarafından `refMinRange` ve `refMaxRange` birinci ve ikinci sürümlerinde veya `pMinRange` ve `pMaxRange` üçüncü sürümünde.  
+ İki sınır tarafından kapsanan aylarda, aralığı temsil eden bir tamsayı belirtilen tarafından *refMinRange* ve *refMaxRange* birinci ve ikinci sürümlerinde veya *pMinRange* ve *pMaxRange* üçüncü sürümünde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [MCM_GETMONTHRANGE](http://msdn.microsoft.com/library/windows/desktop/bb760981), Windows SDK'ın açıklandığı gibi. MFC'nin uygulamasında `GetMonthRange`, belirleyebileceğiniz `COleDateTime` kullanımı, bir `CTime` kullanımı, veya bir `SYSTEMTIME` yapı kullanımı.  
@@ -570,10 +570,10 @@ DWORD GetRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pMinRange`  
+ *pMinRange*  
  Bir işaretçi bir `COleDateTime` nesne, bir `CTime` nesnesi veya [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) tarih aralığının en düşük sonunda içeren yapısı.  
   
- `pMaxRange`  
+ *pMaxRange*  
  Bir işaretçi bir `COleDateTime` nesne, bir `CTime` nesnesi veya [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) tarih aralığı yüksek sonunda içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -581,8 +581,8 @@ DWORD GetRange(
   
 |Değer|Açıklama|  
 |-----------|-------------|  
-|GDTR_MAX|Bir üst sınırı için Denetim ayarlanır; `pMaxRange` geçerli olduğundan ve geçerli tarih bilgileri içerir.|  
-|GDTR_MIN|Alt sınırı denetim için ayarlanır; `pMinRange` geçerli olduğundan ve geçerli tarih bilgileri içerir.|  
+|GDTR_MAX|Bir üst sınırı için Denetim ayarlanır; *pMaxRange* geçerli olduğundan ve geçerli tarih bilgileri içerir.|  
+|GDTR_MIN|Alt sınırı denetim için ayarlanır; *pMinRange* geçerli olduğundan ve geçerli tarih bilgileri içerir.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi Win32 ileti davranışını uygulayan [MCM_GETRANGE](http://msdn.microsoft.com/library/windows/desktop/bb760983), Windows SDK'ın açıklandığı gibi. MFC'nin uygulamasında `GetRange`, belirleyebileceğiniz bir `COleDateTime` kullanımı, bir `CTime` kullanımı, veya bir `SYSTEMTIME` yapı kullanımı.  
@@ -608,16 +608,16 @@ BOOL GetSelRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `refMinRange`  
+ *refMinRange*  
  Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) veya [CTime](../../atl-mfc-shared/reference/ctime-class.md) izin verilen en erken tarih içeren bir nesne.  
   
- `refMaxRange`  
+ *refMaxRange*  
  Bir başvuru bir `COleDateTime` veya `CTime` izin verilen en fazla tarih içeren bir nesne.  
   
- `pMinRange`  
+ *pMinRange*  
  Bir işaretçi bir [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) tarih aralığının en düşük sonunda içeren yapısı.  
   
- `pMaxRange`  
+ *pMaxRange*  
  Bir işaretçi bir `SYSTEMTIME` tarih aralığı yüksek sonunda içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -638,10 +638,10 @@ BOOL GetToday(LPSYSTEMTIME pDateTime) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `refDateTime`  
+ *refDateTime*  
  Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) veya [CTime](../../atl-mfc-shared/reference/ctime-class.md) geçerli gün gösteren nesne.  
   
- `pDateTime`  
+ *pDateTime*  
  Bir işaretçi bir [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) tarih bilgisini alacak yapısı. Bu parametre geçerli bir adres olmalıdır ve olamaz **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -733,10 +733,10 @@ void SetCalendarBorder(int cxyBorder);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `cxyBorder`|Kenarlığın piksel cinsinden genişliği.|  
+|[in] *cxyBorder*|Kenarlığın piksel cinsinden genişliği.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem başarılı olursa, kenarlık genişliği kümesine `cxyBorder` parametresi. Aksi halde, kenarlık genişliği geçerli tarafından belirtilen varsayılan değere sıfırlanır [tema](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx), veya Temalar kullanılmıyorsa sıfır.  
+ Bu yöntem başarılı olursa, kenarlık genişliği kümesine *cxyBorder* parametresi. Aksi halde, kenarlık genişliği geçerli tarafından belirtilen varsayılan değere sıfırlanır [tema](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx), veya Temalar kullanılmıyorsa sıfır.  
   
  Bu yöntem gönderir [MCM_SETCALENDARBORDER](http://msdn.microsoft.com/library/windows/desktop/bb760993) Windows SDK'ın açıklanan ileti.  
   
@@ -773,13 +773,13 @@ BOOL SetCalID(CALID calid);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `calid`|Aşağıdakilerden birini [Takvim tanımlayıcısı](http://msdn.microsoft.com/library/windows/desktop/dd317732) sabitleri.|  
+|[in] *calid*|Aşağıdakilerden birini [Takvim tanımlayıcısı](http://msdn.microsoft.com/library/windows/desktop/dd317732) sabitleri.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir takvim tanımlayıcısı Gregoryen (yerelleştirilmiş), Japonca veya Hicri gibi bir bölgeye özgü takvimi belirtir takvimleri. Kullanım `SetCalID` tarafından belirtilen bir takvim görüntülemek için yöntemi `calid` takvim içeriyor yerel bilgisayarınızda yüklü, parametre.  
+ Bir takvim tanımlayıcısı Gregoryen (yerelleştirilmiş), Japonca veya Hicri gibi bir bölgeye özgü takvimi belirtir takvimleri. Kullanım `SetCalID` yöntemi tarafından belirtilen bir takvim görüntülemek için *calid* takvim içeriyor yerel bilgisayarınızda yüklü, parametre.  
   
  Bu yöntem gönderir [MCM_SETCALID](http://msdn.microsoft.com/library/windows/desktop/bb760995) Windows SDK'ın açıklanan ileti.  
   
@@ -816,7 +816,7 @@ COLORREF SetColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nRegion`  
+ *nRegion*  
  Ayarlamak için hangi Ay takvim rengi belirten bir tamsayı değeri. Bu değer aşağıdakilerden biri olabilir.  
   
 |Değer|Açıklama|  
@@ -828,7 +828,7 @@ COLORREF SetColor(
 |MCSC_TITLETEXT|Takvim başlık içindeki metnin görüntülemek için kullanılan renk.|  
 |MCSC_TRAILINGTEXT|Üstbilgi ve sondaki günlük metnini görüntülemek için kullanılan renk. Üstbilgi ve sondaki gün geçerli takvimde görünen önceki ve sonraki aylarda günlük olur.|  
   
- `ref`  
+ *ref*  
  A **COLORREF** aylık takvim denetiminin belirtilen bölümü için yeni renk ayarının değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -851,7 +851,7 @@ BOOL SetCurrentView(DWORD dwNewView);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `dwNewView`|Aylık, yıllık, on veya century görünümü belirtir aşağıdaki değerlerden biri.<br /><br /> MCMV_MONTH: Aylık görünümü<br /><br /> MCMV_YEAR: Yıllık görünümü<br /><br /> MCMV_DECADE: On görünümü<br /><br /> MCMV_CENTURY: Century görünümü|  
+|[in] *dwNewView*|Aylık, yıllık, on veya century görünümü belirtir aşağıdaki değerlerden biri.<br /><br /> MCMV_MONTH: Aylık görünümü<br /><br /> MCMV_YEAR: Yıllık görünümü<br /><br /> MCMV_DECADE: On görünümü<br /><br /> MCMV_CENTURY: Century görünümü|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
@@ -869,10 +869,10 @@ BOOL SetCurSel(const CTime& refDateTime);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `refDateTime`  
+ *refDateTime*  
  Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) veya [CTime](../../atl-mfc-shared/reference/ctime-class.md) şu anda seçili aylık takvim denetiminin gösteren nesne.  
   
- `pDateTime`  
+ *pDateTime*  
  İşaretçi bir [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) geçerli seçimi olarak ayarlanacak tarihi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -895,9 +895,9 @@ BOOL SetDayState(
   
 ### <a name="parameters"></a>Parametreler  
  *nMonths*  
- Dizideki kaç öğeleridir gösteren değeri, `pStates` işaret eder.  
+ Dizideki kaç öğeleridir gösteren değeri, *pStates* işaret eder.  
   
- `pStates`  
+ *pStates*  
  Bir işaretçi bir [MONTHDAYSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760915) aylık takvim denetiminin görünümünü içinde her gün nasıl çizer tanımlayan değerleri dizisi. **MONTHDAYSTATE** veri türü olan her bit (1 ile 31 arasında) bir aydaki gün durumunu temsil ettiği bir bit alanıdır. Bir bit açıksa, karşılık gelen gün görüntülenen içinde kalın; Aksi takdirde hiçbir Vurgu ile görüntülenir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -955,7 +955,7 @@ BOOL SetMaxSelCount(int nMax);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nMax`  
+ *nMax*  
  Maksimum seçilebilir gün sayısını temsil etmek için ayarlanacak değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1027,10 +1027,10 @@ BOOL SetRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pMinRange`  
+ *pMinRange*  
  Bir işaretçi bir `COleDateTime` nesne, bir `CTime` nesnesi veya [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) tarih aralığının en düşük sonunda içeren yapısı.  
   
- `pMaxRange`  
+ *pMaxRange*  
  Bir işaretçi bir `COleDateTime` nesne, bir `CTime` nesnesi veya `SYSTEMTIME` tarih aralığı yüksek sonunda içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1062,10 +1062,10 @@ BOOL SetSelRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pMinRange`  
+ *pMinRange*  
  Bir işaretçi bir `COleDateTime` nesne, bir `CTime` nesnesi veya [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) tarih aralığının en düşük sonunda içeren yapısı.  
   
- `pMaxRange`  
+ *pMaxRange*  
  Bir işaretçi bir `COleDateTime` nesne, bir `CTime` nesnesi veya `SYSTEMTIME` tarih aralığı yüksek sonunda içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1084,10 +1084,10 @@ void SetToday(const CTime* pDateTime);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `refDateTime`  
+ *refDateTime*  
  Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) geçerli tarihi içeren nesne.  
   
- `pDateTime`  
+ *pDateTime*  
  İkinci sürümünde, bir işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) geçerli tarih bilgisini içeren bir nesne. Üçüncü sürümünde, bir işaretçi bir [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) geçerli tarih bilgisini içeren yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1117,7 +1117,7 @@ BOOL SizeMinReq(BOOL bRepaint = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bRepaint`  
+ *bRepaint*  
  Denetim yeniden çizilmiş olup olmadığını belirtir. Varsayılan olarak, **doğru**. Varsa **yanlış**, hiçbir yeniden çizerken oluşur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1137,13 +1137,13 @@ LPRECT SizeRectToMin(LPRECT lpRect);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `lpRect`|İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) takvimleri istenen sayısını içeren bir dikdörtgen tanımlar yapısı.|  
+|[in] *lpRect*|İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) takvimleri istenen sayısını içeren bir dikdörtgen tanımlar yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) büyüklüğü dikdörtgen küçük veya buna eşit olan bir dikdörtgen tanımlar yapısı tarafından tanımlanan `lpRect` parametresi.  
+ İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) büyüklüğü dikdörtgen küçük veya buna eşit olan bir dikdörtgen tanımlar yapısı tarafından tanımlanan *lpRect* parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem kaç takvimler tarafından belirtilen dikdörtgen sığabilecek hesaplar `lpRect` parametresi ve takvimleri sayıdaki içerebilir en küçük dikdörtgen döndürür. Gerçekte, bu yöntem takvimleri istenen sayısını tam olarak sığması için belirtilen dikdörtgen küçültür.  
+ Bu yöntem kaç takvimler tarafından belirtilen dikdörtgen sığabilecek hesaplar *lpRect* parametresi ve takvimleri sayıdaki içerebilir en küçük dikdörtgen döndürür. Gerçekte, bu yöntem takvimleri istenen sayısını tam olarak sığması için belirtilen dikdörtgen küçültür.  
   
  Bu yöntem gönderir [MCM_SIZERECTTOMIN](http://msdn.microsoft.com/library/windows/desktop/bb761020) Windows SDK'ın açıklanan ileti.  
   

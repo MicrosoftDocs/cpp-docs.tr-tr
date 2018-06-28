@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcbc552560325e844cf0812a3002088f829d6c60
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 36b2d78bb3f1ffaefa67a062c6498c195d46336f
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370128"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042501"
 ---
 # <a name="cmfcribbonlabel-class"></a>CMFCRibbonLabel sınıfı
 Şerit için tıklanabilir olmayan metin etiketi uygular.  
@@ -80,10 +80,10 @@ CMFCRibbonLabel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszText`  
+ [in] *lpszText*  
  Etiketinde görüntülenecek metin.  
   
- [in] `bIsMultiLine`  
+ [in] *bIsMultiLine*  
  `TRUE` Etiket çok satırlı etiket olduğunu belirtmek için; Aksi takdirde `FALSE`.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonLabel::SetACCData  
@@ -96,14 +96,14 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParent`  
+ [in] *pParent*  
  Geçerli Şerit etiketin üst pencere temsil eder.  
   
- [out] `data`  
+ [out] *veri*  
  Türünde bir nesne `CAccessibilityData` geçerli Şerit etiketi erişilebilirlik verilerle doldurulur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` varsa `data` parametresi başarıyla geçerli Şerit etiketin erişilebilirlik verilerle doldurulan; Aksi takdirde `FALSE`.  
+ `TRUE` varsa *veri* parametresi başarıyla geçerli Şerit etiketin erişilebilirlik verilerle doldurulan; Aksi takdirde `FALSE`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

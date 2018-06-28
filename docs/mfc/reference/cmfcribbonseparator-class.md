@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1c4c3b286f020d8d409b344c5d8c05ebc200425
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bed63f6752f0335e3c1917e6597e7f8b096c8df6
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370864"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039804"
 ---
 # <a name="cmfcribbonseparator-class"></a>CMFCRibbonSeparator sınıfı
 Şerit ayırıcı uygular.  
@@ -113,14 +113,14 @@ virtual int AddToListBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndListBox`  
+ [in] *pWndListBox*  
  Bir işaretçi **komutları** liste ayırıcı burada eklenir.  
   
- [in] `bDeep`  
+ [in] *bDeep*  
  Yoksayıldı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sıfır tabanlı dizini tarafından belirtilen liste kutusunda dizeye `pWndListBox`.  
+ Sıfır tabanlı dizini tarafından belirtilen liste kutusunda dizeye *pWndListBox*.  
   
 ##  <a name="cmfcribbonseparator"></a>  CMFCRibbonSeparator::CMFCRibbonSeparator  
  Oluşturan bir `CMFCRibbonSeparator` nesnesi.  
@@ -130,7 +130,7 @@ CMFCRibbonSeparator(BOOL bIsHoriz = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bIsHoriz`  
+ [in] *bIsHoriz*  
  Varsa `TRUE`, ayırıcı yataydır if `FALSE`, ayırıcı dikeydir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -149,7 +149,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `Src`  
+ [in] *Src*  
  Kopyalanacak kaynak Şerit öğesi.  
   
 ##  <a name="getregularsize"></a>  CMFCRibbonSeparator::GetRegularSize  
@@ -160,7 +160,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir aygıt içerik için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -197,7 +197,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ##  <a name="ondrawonlist"></a>  CMFCRibbonSeparator::OnDrawOnList  
@@ -218,12 +218,12 @@ virtual void OnDrawOnList(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `pDC`|Bir cihaz bağlamı için bir işaretçi.|  
-|[in] `strText`|Listede görüntülenecek metin.|  
-|[in] `nTextOffset`|Metin ve sınırlayıcı dikdörtgenini sol tarafındaki arasındaki aralık.|  
-|[in] `rect`|Sınırlayıcı dikdörtgenini belirtir.|  
-|[in] `bIsSelected`|Yoksayıldı.|  
-|[in] `bHighlighted`|Yoksayıldı.|  
+|[in] *pDC*|Bir cihaz bağlamı için bir işaretçi.|  
+|[in] *strText*|Listede görüntülenecek metin.|  
+|[in] *nTextOffset*|Metin ve sınırlayıcı dikdörtgenini sol tarafındaki arasındaki aralık.|  
+|[in] *rect*|Sınırlayıcı dikdörtgenini belirtir.|  
+|[in] *bIsSelected*|Yoksayıldı.|  
+|[in] *bHighlighted*|Yoksayıldı.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

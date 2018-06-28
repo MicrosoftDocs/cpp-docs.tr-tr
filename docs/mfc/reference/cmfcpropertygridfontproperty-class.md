@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e7acda3bf3734a325c7d603489c1305cb63bc3d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f224def5d91d47cad0cb61938f1ce9a538109014
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367620"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039055"
 ---
 # <a name="cmfcpropertygridfontproperty-class"></a>CMFCPropertyGridFontProperty sınıfı
 `CMFCPropertyGridFileProperty` Sınıfı, yazı tipi seçimi iletişim kutusunu açan özelliği liste denetim öğesi destekler.  
@@ -83,22 +83,22 @@ CMFCPropertyGridFontProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `strName`  
+ [in] *strName*  
  Özelliğin adı.  
   
- [in] `lf`  
+ [in] *lf*  
  Yazı tipi özniteliklerini belirtir mantıksal yazı tipi yapısı.  
   
- [in] `dwFontDialogFlags`  
- Özellik değeri açılan düğmesine tıkladığınızda görüntülenen yazı tipi iletişim kutusu uygulanan stil. Varsayılan değer Bitsel (veya) CF_EFFECTS ve CF_SCREENFONTS birleşimidir. Daha fazla bilgi için bkz: `Flags` parametresinin [CHOOSEFONT yapısı](http://msdn.microsoft.com/library/windows/desktop/ms646832).  
+ [in] *dwFontDialogFlags*  
+ Özellik değeri açılan düğmesine tıkladığınızda görüntülenen yazı tipi iletişim kutusu uygulanan stil. Varsayılan değer Bitsel (veya) CF_EFFECTS ve CF_SCREENFONTS birleşimidir. Daha fazla bilgi için bkz: *bayrakları* parametresinin [CHOOSEFONT yapısı](http://msdn.microsoft.com/library/windows/desktop/ms646832).  
   
- [in] `lpszDescr`  
+ [in] *lpszDescr*  
  Font özelliği açıklaması. Varsayılan değer `NULL` şeklindedir.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Bir tamsayı ya da özelliği ile ilişkili diğer veri için bir işaretçi gibi uygulamaya özgü verileri. Varsayılan değer 0’dır.  
   
- [in] `color`  
+ [in] *rengi*  
  Yazı tipi rengi. Varsayılan rengini varsayılan değerdir.  
   
 ### <a name="remarks"></a>Açıklamalar  

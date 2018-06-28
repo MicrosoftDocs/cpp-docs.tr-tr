@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ebe013e8ce674efb0782112cc8cbc8b1462ef24
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f5894f1fc9bd901bef6e830250f4e1f8e9bdd335
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371520"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040760"
 ---
 # <a name="cmfcribboncombobox-class"></a>CMFCRibbonComboBox sınıfı
 `CMFCRibbonComboBox` Sınıfı bir Şerit çubuğu, bir Şerit panel ya da Şerit açılan menüye ekleyebileceğiniz bir birleşik giriş kutusu denetimi uygular.  
@@ -127,10 +127,10 @@ virtual INT_PTR AddItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszItem`  
+ [in] *lpszItem*  
  Eklenecek öğe dizesi.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Eklenecek öğe ile ilişkili veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -153,19 +153,19 @@ CMFCRibbonComboBox();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Birleşik giriş kutusu kimliği.  
   
- [in] `bHasEditBox`  
+ [in] *bHasEditBox*  
  `TRUE` Denetim içinde düzenleme kutusu istiyorsanız; `FALSE` Aksi takdirde.  
   
- [in] `nWidth`  
+ [in] *nWidth*  
  Birleşik giriş kutusu piksel cinsinden genişliği; veya varsayılan genişliği -1.  
   
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  Birleşik giriş kutusu görünen etiket.  
   
- [in] `nImage`  
+ [in] *nImage*  
  Birleşik giriş kutusu küçük resim dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -182,13 +182,13 @@ BOOL DeleteItem(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
  Silinecek öğenin sıfır tabanlı dizini.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Silinecek öğe ile ilişkili veriler.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Silinecek öğe dizesi. Aynı dize ile birden çok öğe varsa, ilk öğe silindi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -204,7 +204,7 @@ void EnableDropDownListResize(BOOL bEnable=FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` yeniden boyutlandırma etkinleştirmek için; `FALSE` yeniden boyutlandırma devre dışı bırakmak için.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -218,7 +218,7 @@ int FindItem(LPCTSTR lpszText) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszText`  
+ [in] *lpszText*  
  Liste kutusunda bir öğe dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -268,7 +268,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Birleşik giriş kutusu için bir cihaz bağlamı işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -285,7 +285,7 @@ LPCTSTR GetItem(int iIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
  Liste kutusunda öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -301,7 +301,7 @@ DWORD_PTR GetItemData(int iIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
  Liste kutusunda öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -340,7 +340,7 @@ virtual void OnSelectItem(int nItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nItem`  
+ [in] *nItem*  
  Seçili öğenin dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -366,13 +366,13 @@ BOOL SelectItem(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
  Liste kutusunda öğenin sıfır tabanlı dizini.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Liste kutusunda bir öğesiyle ilişkili veriler.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Liste kutusunda bir öğe dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -388,7 +388,7 @@ void SetDropDownHeight(int nHeight);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nHeight`  
+ [in] *nHeight*  
  Liste kutusu piksel cinsinden yüksekliği.  
   
 ### <a name="remarks"></a>Açıklamalar  

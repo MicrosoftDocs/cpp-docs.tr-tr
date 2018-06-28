@@ -114,12 +114,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad7a5331a2826df9dd6804e5c6a0f918bfeeb9d2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3faa618a2b65abd7c532ecdce0a8ed5e174889f9
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377777"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042026"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl sınıfı
 `CMFCTabCtrl` Sınıfı bir sekme denetimi için işlevsellik sağlar. Sekme denetimi kendi üstüne veya altına yuvalanabilir pencere düz ya da üç boyutlu sekmelerle görüntüler. Sekmeleri metin ve resim görüntüleyebilir ve renk etkin olduğunda değiştirebilirsiniz.  
@@ -265,7 +265,7 @@ void ActivateMDITab(int nTab = -1);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nTab`  
+ [in] *nTab*  
  Bir sekmeye görüntülemek ya da şu anda etkin sekme belirtmek için -1 sıfır tabanlı dizini.  
   
 ##  <a name="allowdestroyemptytabbedpane"></a>  CMFCTabCtrl::AllowDestroyEmptyTabbedPane  
@@ -307,29 +307,29 @@ BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `style`  
+ [in] *stili*  
  Sekme denetimi stili. Daha fazla bilgi için açıklamalar bakın.  
   
- [in] `rect`  
+ [in] *rect*  
  Sekme denetimi bounds dikdörtgen.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Bir üst penceresi için bir işaretçi. Olmamalıdır `NULL`.  
   
- [in] `nID`  
+ [in] *nID*  
  Sekme denetimi kimliği.  
   
- [in] `location`  
+ [in] *konumu*  
  Sekmeleri konumu. Varsayılan değer `LOCATION_BOTTOM` şeklindedir. Daha fazla bilgi için açıklamalar bakın.  
   
- [in] `bCloseBtn`  
+ [in] *bCloseBtn*  
  `TRUE` Kapat düğmesi sekmesinde görüntülemek için; Aksi takdirde `FALSE`. Varsayılan değer `FALSE` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İçin belirttiğiniz değerleri aşağıdaki tabloda açıklanmaktadır `style` parametresi.  
+ İçin belirttiğiniz değerleri aşağıdaki tabloda açıklanmaktadır *stili* parametresi.  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
@@ -341,7 +341,7 @@ BOOL Create(
 |STYLE_3D_ROUNDED|Microsoft Visual Studio 2005 stili yuvarlatılmış sekmelerle sekme denetimi oluşturur.|  
 |STYLE_3D_ROUNDED_SCROLL|Sekme denetimi yuvarlatılmış sekmeler ve Microsoft Visual Studio 2005 stilde kaydırma düğmelerini oluşturur.|  
   
- Aşağıdaki tablo için belirttiğiniz değerleri listeler `location` parametresi.  
+ Aşağıdaki tablo için belirttiğiniz değerleri listeler *konumu* parametresi.  
   
 |Konum|Açıklama|  
 |--------------|-----------------|  
@@ -362,7 +362,7 @@ virtual void CalcRectEdit(CRect& rectEdit);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rectEdit`  
+ [in] *rectEdit*  
  Sekme alanı belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -376,7 +376,7 @@ void EnableActiveTabCloseButton(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` Kapat düğmesi etkin sekmesinde görüntülemek için; `FALSE` sekme alanı sağ üst köşesindeki kapat düğmesini görüntülemek için. Varsayılan değer `TRUE` şeklindedir.  
   
 ##  <a name="enableinplaceedit"></a>  CMFCTabCtrl::EnableInPlaceEdit  
@@ -387,7 +387,7 @@ virtual void EnableInPlaceEdit(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` düzenlenebilir sekme etiketleri etkinleştirmek için; `FALSE` düzenlenebilir sekme etiketleri devre dışı bırakmak için.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -400,7 +400,7 @@ void EnableTabDocumentsMenu(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` açılır menü sekmeli pencere etiketleri görüntülemek için; `FALSE` ileriye ve geriye doğru kaydırma düğmeleri görüntülemek için. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -414,7 +414,7 @@ virtual BOOL EnsureVisible(int iTab);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iTab`  
+ [in] *iTab*  
  Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -431,7 +431,7 @@ static HICON __stdcall GetDocumentIcon(UINT nCmdID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nCmdID`  
+ [in] *nCmdID*  
  Bir sekmede açılır menü sekmeli Windows Komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -483,10 +483,10 @@ void GetTabArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `rectTabAreaTop`  
+ [out] *rectTabAreaTop*  
  Bu yöntem döndürüldüğünde, bu başvuru üst sekme etiket alanı bounds bir dikdörtgen içerir. Dikdörtgen istemci koordinatlarında ' dir. Sekme denetimi üstünde hiçbir sekme etiket alanı varsa, bu başvuru boştur.  
   
- [out] `rectTabAreaBottom`  
+ [out] *rectTabAreaBottom*  
  Bu yöntem döndürüldüğünde, bu başvuru alt sekme etiket alanı bounds bir dikdörtgen içerir. Dikdörtgen istemci koordinatlarında ' dir. Sekme denetimi altındaki hiçbir sekme etiket alanı varsa, bu başvuru boştur.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -523,8 +523,8 @@ virtual void GetTabsRect(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `rect`  
- Bu yöntem döndürüldüğünde, `rect` parametresi sekme alanı bounds bir dikdörtgen içerir.  
+ [out] *rect*  
+ Bu yöntem döndürüldüğünde, *rect* parametresi sekme alanı bounds bir dikdörtgen içerir.  
   
 ##  <a name="getwndarea"></a>  CMFCTabCtrl::GetWndArea  
  Geçerli sekme denetimi istemci alanının sınır alır.  
@@ -534,7 +534,7 @@ void GetWndArea(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [içinde out] `rect`  
+ [içinde out] *rect*  
  Bu yöntem döndürüldüğünde, bu parametre geçerli sekme denetimi bounds bir dikdörtgen içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -557,7 +557,7 @@ void HideInactiveWindow(BOOL bHide = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bHide`  
+ [in] *bHide*  
  `TRUE` Etkin olmayan bir pencere görüntülememek üzere; `FALSE` etkin penceresini görüntülemek için. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -570,7 +570,7 @@ void HideNoTabs(BOOL bHide=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bHide`  
+ [in] *bHide*  
  `TRUE` Sekme alanı çizim etkinleştirmek için; `FALSE` çizim devre dışı bırakmak için. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -583,7 +583,7 @@ virtual void HideSingleTab(BOOL bHide=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bHide`  
+ [in] *bHide*  
  `TRUE` Sekmeli tek bir pencere için bir sekme değil çizileceğini; `FALSE` tek sekme çizmek için. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -703,7 +703,7 @@ BOOL IsSharedScroll() const;
  `TRUE` sekme denetimi bir paylaşılan kaydırma çubuğu varsa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem `TRUE` varsa `style` parametresinin [CMFCTabCtrl::Create](#create) STYLE_FLAT_SHARED_HORZ_SCROLL bir yöntemdir.  
+ Bu yöntem `TRUE` varsa *stili* parametresinin [CMFCTabCtrl::Create](#create) STYLE_FLAT_SHARED_HORZ_SCROLL bir yöntemdir.  
   
 ##  <a name="istabdocumentsmenu"></a>  CMFCTabCtrl::IsTabDocumentsMenu  
  Sekme denetimi kaydırma düğmelerini veya sekmeli windows menüsünü görüntüler düğmesi görüntülenip görüntülenmeyeceğini belirtir.  
@@ -729,7 +729,7 @@ virtual BOOL IsVS2005Style() const;
  `TRUE` Visual Studio 2005 stili kullanılarak sekmeleri çizilir Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım `style` parametresinin [CMFCTabCtrl::Create](#create) yöntemi sekmeleri nasıl çizilir belirtin.  
+ Kullanım *stili* parametresinin [CMFCTabCtrl::Create](#create) sekmeleri nasıl çizilir belirtmek için yöntem.  
   
 ##  <a name="m_benableactivate"></a>  CMFCTabCtrl::m_bEnableActivate  
  Etkin görünüm, yeni bir sekme eklenir ve etkin olduğunda odak kaybetmesini engeller.  
@@ -749,14 +749,14 @@ BOOL ModifyTabStyle(Style style);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `style`  
+ [in] *stili*  
  Sekme denetimi görünümünü belirten numaralandırma değerlerinden biri. Daha fazla bilgi için açıklamalar tabloya bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Her zaman `TRUE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Değeri `style` parametresi şunlardan biri olabilir `CMFCTabCtrl::Style` numaralandırmalar.  
+ Değeri *stili* parametresi şunlardan biri olabilir `CMFCTabCtrl::Style` numaralandırmalar.  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
@@ -780,13 +780,13 @@ virtual DROPEFFECT OnDragEnter(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDataObject`  
+ [in] *pDataObject*  
  Kullanıcının sürüklediği verileri içeren bir veri nesnesi noktalarına.  
   
- [in] `dwKeyState`  
+ [in] *dwKeyState*  
  Değiştirici tuşları durumunu içerir. Aşağıdaki değerlerin Bitsel bir birleşimi (veya) bu parametredir: `MK_CONTROL`, `MK_SHIFT`, `MK_ALT`, `MK_LBUTTON`, `MK_MBUTTON`, ve `MK_RBUTTON`. Daha fazla bilgi için bkz: **ileti parametrelerinin** bölümünü [hakkında fare girdisi](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
- [in] `point`  
+ [in] *noktası*  
  İstemci koordinatları imleci geçerli konumunu içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -808,13 +808,13 @@ virtual DROPEFFECT OnDragOver(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDataObject`  
+ [in] *pDataObject*  
  İşaretçi bir [COleDataObject](../../mfc/reference/coledataobject-class.md) bırakma hedefi sürüklediğiniz nesne.  
   
- [in] `dwKeyState`  
+ [in] *dwKeyState*  
  Bitsel bir birleşimi olan değiştirici tuşları (veya durumunu) `MK_CONTROL`, `MK_SHIFT`, `MK_ALT`, `MK_LBUTTON`, `MK_MBUTTON`, ve `MK_RBUTTON`. Daha fazla bilgi için "İletisi parametreleri" bölümüne bakın. [hakkında fare girdisi](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
- [in] `point`  
+ [in] *noktası*  
  Geçerli fare konumu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -831,7 +831,7 @@ virtual void OnShowTabDocumentsMenu(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Açılır menüyü görüntülemek nereye koordinatları.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -844,7 +844,7 @@ void SetActiveInMDITabGroup(BOOL bActive);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bActive`  
+ [in] *bActive*  
  `TRUE` Geçerli sekme etkin sekme yapmak için; `FALSE` geçerli sekme devre dışı yapma.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -858,11 +858,11 @@ virtual BOOL SetActiveTab(int iTab);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iTab`  
+ [in] *iTab*  
  Etkinleştirmek için sekmesini sıfır tabanlı dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Belirtilen sekme etkin yapılmışsa; `FALSE` , belirtilen `iTab` parametresi değeri geçersiz.  
+ `TRUE` Belirtilen sekme etkin yapılmışsa; `FALSE` , belirtilen *iTab* parametre değeri geçersiz.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem göndermemek `AFX_WM_CHANGE_ACTIVE_TAB` üst penceresine sekme denetimi bildirim.  
@@ -877,7 +877,7 @@ void SetActiveTabBoldFont(BOOL bIsBold=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bIsBold`  
+ [in] *bIsBold*  
  `TRUE` kalın yazı tipiyle etkin sekme etiketini görüntülemek için kullanılacak; `FALSE` etiketi görüntülemek için standart yazı tipi kullanılacak. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -890,7 +890,7 @@ void SetDrawFrame(BOOL bDraw=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bDraw`  
+ [in] *bDraw*  
  `TRUE` bir çerçeve dikdörtgeni katıştırılmış bir çubuğu geçici görüntülemek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -905,10 +905,10 @@ void SetFlatFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bFlat`  
+ [in] *bFlat*  
  `TRUE` Sekme etrafına bir düz (2D) çerçevesi çizmek için; `FALSE` üç boyutlu (3B) çerçevesi çizmek için. Varsayılan değer `TRUE` şeklindedir.  
   
- [in] `bRepaint`  
+ [in] *bRepaint*  
  `TRUE` penceresini hemen yeniden boyutlandırmaya için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -926,20 +926,20 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiID`  
+ [in] *uiID*  
  Resim listesi içeren bir bit eşlem kaynak kimliği.  
   
- [in] `cx`  
+ [in] *cx*  
  Her görüntüsünün piksel cinsinden genişliği. Varsayılan değer 15'tir.  
   
- [in] `clrTransp`  
+ [in] *clrTransp*  
  Saydam Görüntü rengi. Bu renk olan bölümleri resminin saydam olacaktır. Renk Eflatun, RGB(255,0,255) varsayılan değerdir.  
   
- [in] `hImageList`  
+ [in] *hImageList*  
  Önceden yüklenen görüntü listesi için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Bu yöntem başarılı olursa. `FALSE` sekme denetimi düz bir stil kullanarak oluşturduysanız veya ilk yöntemi aşırı yüklemesini tarafından belirtilen bit eşlem yüklerseniz `uiID` parametresi.  
+ `TRUE` Bu yöntem başarılı olursa. `FALSE` sekme denetimi düz bir stil kullanarak oluşturduysanız veya ilk yöntemi aşırı yüklemesini tarafından belirtilen bit eşlem yüklerseniz *uiID* parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Sekme denetimi için bir resim listesi ayarlamak için bu yöntemi kullanın. Resim listesi görüntülerden yanındaki sekme etiketi görüntülenir. Böylece resim ve metin içerecek şekilde sekmesini boyuta sahip olmadığından bu yöntem sekmesini yüksekliği yeniden hesaplar.  
@@ -954,11 +954,11 @@ void SetResizeMode(ResizeMode resizeMode);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `resizeMode`  
+ [in] *resizeMode*  
  Aşağıdakilerden birini `CMFCTabCtrl::ResizeMode` nasıl sekme denetimi yeniden boyutlandırılabilir belirten numaralandırma değerlerinin. Olası değerler listesi için açıklamalar bölümündeki tabloya bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `resizeMode` Parametresi şunlardan biri olabilir `ResizeMode` numaralandırma değerleri.  
+ *ResizeMode* parametresi şunlardan biri olabilir `ResizeMode` numaralandırma değerleri.  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
@@ -974,7 +974,7 @@ void SetTabMaxWidth(int nTabMaxWidth);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nTabMaxWidth`  
+ [in] *nTabMaxWidth*  
  En fazla sekme piksel cinsinden genişliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -988,7 +988,7 @@ void StopResize(BOOL bCancel);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bCancel`  
+ [in] *bİptal*  
  `TRUE` Geçerli yeniden boyutlandırma işlemi iptal etmek için; `FALSE` geçerli tamamlamak için işlemi yeniden boyutlandırın. Her iki durumda da, yeniden boyutlandırma dikdörtgen çizme framework durdurur.  
   
 ##  <a name="synchronizescrollbar"></a>  CMFCTabCtrl::SynchronizeScrollBar  
@@ -999,7 +999,7 @@ BOOL SynchronizeScrollBar(SCROLLINFO* pScrollInfo = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `pScrollInfo`  
+ [out] *pScrollInfo*  
  İşaretçi bir [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) yapısı veya `NULL`. Bu yöntem döndürüldüğünde ve bu parametre değilse `NULL`, yapı kaydırma çubuğunun tüm parametreler içeriyor. Varsayılan değer `NULL` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

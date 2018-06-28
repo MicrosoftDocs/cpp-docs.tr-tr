@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0c20de761f91f304c1d7684dbd19a03c0b8efa2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 510f0416686c981682236f6d6c05ae761fe8230d
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367000"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041745"
 ---
 # <a name="cmapwordtoptr-class"></a>CMapWordToPtr sınıfı
 16 bit sözcükleri anahtarlı void işaretçileri haritaları destekler.  
@@ -61,7 +61,7 @@ class CMapWordToPtr : public CObject
 ```  
   
 ## <a name="members"></a>Üyeler  
- Üye işlevlerini `CMapWordToPtr` sınıfının üye fonksiyonları benzer [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Bu benzerlik nedeniyle kullandığınız `CMapStringToOb` başvuru belgelerini üye fonksiyonu özellikleri için. Gördüğünüz yerde bir `CObject` işaretçisi bir işlev parametresi veya dönüş değeri olarak değiştirmek için bir işaretçi `void`. Gördüğünüz yerde bir `CString` veya **const** işaretçi `char` işlev parametresi veya dönüş değeri olarak yerine **WORD**.  
+ Üye işlevlerini `CMapWordToPtr` sınıfının üye fonksiyonları benzer [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Bu benzerlik nedeniyle kullandığınız `CMapStringToOb` başvuru belgelerini üye fonksiyonu özellikleri için. Gördüğünüz yerde bir `CObject` işaretçisi bir işlev parametresi veya dönüş değeri olarak değiştirmek için bir işaretçi **void**. Gördüğünüz yerde bir `CString` veya **const** işaretçi **char** işlev parametresi veya dönüş değeri olarak yerine **WORD**.  
   
  `BOOL CMapStringToOb::Lookup( const char* <key>,`  
   

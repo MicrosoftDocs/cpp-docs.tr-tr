@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52adc7ce08644fb002b2a0a2cd91d20d15d4f24a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7e4ea4ea24dfae26b1b43fe6480cac7f7a480fa4
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375777"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042254"
 ---
 # <a name="cmapstringtoob-class"></a>CMapStringToOb sınıfı
 Benzersiz eşleyen bir sözlük koleksiyon sınıfı `CString` nesneleri `CObject` işaretçileri.  
@@ -121,11 +121,11 @@ CMapStringToOb(INT_PTR nBlockSize = 10);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nBlockSize`  
+ *nBlockSize*  
  Harita genişletmek için bellek ayırma ayrıntı düzeyi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Harita büyüdükçe, bellek, biriminde ayrılır `nBlockSize` girişleri.  
+ Harita büyüdükçe, bellek, biriminde ayrılır *nBlockSize* girişleri.  
   
  Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir **CMapStringToOb:: CMapStringToOb**.  
   
@@ -311,7 +311,7 @@ UINT HashKey(LPCTSTR key) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `key`  
+ *Anahtarı*  
  Karma değeri hesaplanacak olan anahtar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -339,10 +339,10 @@ void InitHashTable(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hashSize`  
+ *hashSize*  
  Karma tablosunda giriş sayısı.  
   
- `bAllocNow`  
+ *bAllocNow*  
  Varsa **doğru**, karma tablosu başlatma; bağlı ayırır tablo gerektiğinde aksi ayrılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -394,10 +394,10 @@ BOOL Lookup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `key`  
+ *Anahtarı*  
  Bakılacak öğesi tanımlayan dize anahtarını belirtir.  
   
- `rValue`  
+ *rValue*  
  Aranan yukarı öğesinden döndürülen değeri belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -432,10 +432,10 @@ BOOL LookupKey(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `key`  
+ *Anahtarı*  
  Bakılacak öğesi tanımlayan dize anahtarını belirtir.  
   
- `rKey`  
+ *rKey*  
  İlişkili anahtar referansı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -459,7 +459,7 @@ CObject*& operator[ ](lpctstr key);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi başvuru bir `CObject` nesne; veya **NULL** harita boşsa veya `key` aralık dışında.  
+ Bir işaretçi başvuru bir `CObject` nesne; veya **NULL** harita boşsa veya *anahtar* aralık dışında.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu nedenle yalnızca (bir l-değeri) atama ifadesinin sol tarafta kullanılabilir. Belirtilen anahtarı içeren herhangi bir harita öğe varsa, yeni bir öğe oluşturulur.  
@@ -526,7 +526,7 @@ BOOL RemoveKey(LPCTSTR key);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `key`  
+ *Anahtarı*  
  Harita araması için kullanılan dizeyi belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -571,10 +571,10 @@ void SetAt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `key`  
+ *Anahtarı*  
  Yeni öğe anahtarı dizeyi belirtir.  
   
- `newValue`  
+ *newValue*  
  Belirtir `CObject` yeni öğe değeri işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  

@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38c27d2fa0e04770bae69901e1164da84c2186ca
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 34babea47abaab9fcfb45f57aedd5cec94e82963
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377246"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041717"
 ---
 # <a name="cobject-class"></a>CObject sınıfı
 Microsoft Foundation Class Kitaplığı için asıl temel sınıf.  
@@ -137,7 +137,7 @@ CObject(const CObject& objectSrc);
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan sürüm, türetilmiş sınıf oluşturucu tarafından otomatik olarak çağrılır.  
   
- Sınıfınıza seri hale getirilebilir ise (bunu içerir `IMPLEMENT_SERIAL` makrosu), sonra da sınıfı bildiriminde bir varsayılan Oluşturucusu (bağımsız değişken içermeyen bir oluşturucuya) olması gerekir. Varsayılan bir oluşturucu gerekmiyorsa, özel bildirme veya "boş" Oluşturucusu korumalı. Daha fazla bilgi için bkz: [kullanarak CObject](../../mfc/using-cobject.md).  
+ Sınıfınızda seri hale getirilebilir ise (ımplement_serıal makrosu içerir), sonra da sınıfı bildiriminde bir varsayılan Oluşturucusu (bağımsız değişken içermeyen bir oluşturucuya) olması gerekir. Varsayılan bir oluşturucu gerekmiyorsa, özel bildirme veya "boş" Oluşturucusu korumalı. Daha fazla bilgi için bkz: [kullanarak CObject](../../mfc/using-cobject.md).  
   
  Standart C++ varsayılan sınıf kopya Oluşturucu bir üyesi tarafından üye kopya yapar. Özel durum `CObject` kopya Oluşturucu sınıfınızın kopya Oluşturucu gerekiyor ancak yok ise derleyici hata iletisi garanti eder. Bu özellik sınıfınız gerektiriyorsa, bu nedenle kopya Oluşturucu sağlamanız gerekir.  
   
@@ -154,11 +154,11 @@ virtual void Dump(CDumpContext& dc) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dc`  
+ *DC*  
  Döküm alma, genellikle için tanılama döküm bağlamı `afxDump`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kendi sınıfı yazdığınızda, geçersiz kılmalısınız `Dump` kendiniz ve diğer kullanıcıların sınıfınızın için tanı hizmetleri sağlayan işlev. Geçersiz kılınan `Dump` genellikle çağırır `Dump` veri üyeleri türetilmiş sınıf benzersiz yazdırma önce kendi temel sınıfının işlevi. `CObject::Dump` sınıfınızda kullanıyorsa, sınıf adını yazdırır `IMPLEMENT_DYNAMIC` veya `IMPLEMENT_SERIAL` makrosu.  
+ Kendi sınıfı yazdığınızda, geçersiz kılmalısınız `Dump` kendiniz ve diğer kullanıcıların sınıfınızın için tanı hizmetleri sağlayan işlev. Geçersiz kılınan `Dump` genellikle çağırır `Dump` veri üyeleri türetilmiş sınıf benzersiz yazdırma önce kendi temel sınıfının işlevi. `CObject::Dump` sınıfınızda kullanıyorsa, sınıf adını yazdırır `IMPLEMENT_DYNAMIC` veya ımplement_serıal makrosu.  
   
 > [!NOTE]
 >  `Dump` İşlevi çıktısını sonunda yeni satır karakteri yazdırma.  
@@ -216,14 +216,14 @@ BOOL IsKindOf(const CRuntimeClass* pClass) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pClass`  
+ *pClass*  
  Bir işaretçi bir [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) ilişkili yapısı, `CObject`-türetilmiş sınıf.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Nesne için sınıf karşılık geliyorsa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev testleri `pClass` (1), belirtilen sınıfın bir nesnesi olması veya (2), belirtilen sınıfından türetilen bir sınıftan bir nesneyi görmek için. Bu işlev yalnızca ile bildirilen sınıfları için çalışır [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic), [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate), veya [declare_serıal](run-time-object-model-services.md#declare_serial) makrosu.  
+ Bu işlev testleri *pClass* (1), belirtilen sınıfın bir nesnesi olması veya (2), belirtilen sınıfından türetilen bir sınıftan bir nesneyi görmek için. Bu işlev yalnızca ile bildirilen sınıfları için çalışır [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic), [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate), veya [declare_serıal](run-time-object-model-services.md#declare_serial) makrosu.  
   
  C++ çok biçimlilik özelliği defeats olmadığından bu işlev yaygın kullanmayın. Sanal işlevler kullanın.  
   
@@ -330,7 +330,7 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ar`  
+ *ar*  
  A `CArchive` gelen veya giden serileştirmek için nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  

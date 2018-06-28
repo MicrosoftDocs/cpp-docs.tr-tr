@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c7214e4da0bce1a01834df556289b61e0ed8574
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 495f6360601fc41493f68bd4fdd7ac769b9a634c
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369329"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037980"
 ---
 # <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl sınıfı
 `CMFCEditBrowseCtrl` Sınıfı, isteğe bağlı olarak bir Gözat düğmesi içeren bir düzenlenebilir metin kutusu düzenleme Gözat denetimi destekler. Kullanıcı Gözat düğmesine tıkladığında, Denetim özel bir eylem gerçekleştiren veya bir dosya tarayıcısı veya bir klasörü tarayıcı içeren bir standart iletişim kutusu görüntüler.  
@@ -108,7 +108,7 @@ class CMFCEditBrowseCtrl : public CEdit
   
 6.  Gözat düğmesi için özel bir görüntü sağlamak için arama [SetBrowseButtonImage](#setbrowsebuttonimage) yöntemi veya geçersiz kılma [OnDrawBrowseButton](#ondrawbrowsebutton) yöntemi.  
   
-7.  Gözat düğmesini Düzenle Gözat denetiminden kaldırmak için arama [EnableBrowseButton](#enablebrowsebutton) yöntemiyle `bEnable` parametre kümesine `FALSE`.  
+7.  Gözat düğmesini Düzenle Gözat denetiminden kaldırmak için arama [EnableBrowseButton](#enablebrowsebutton) yöntemiyle *bSistemlerde* parametre kümesine `FALSE`.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -140,14 +140,14 @@ void EnableBrowseButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bEnable`  
+ *bSistemlerde*  
  `TRUE` Gözat düğmesini görüntülemek için; `FALSE` Gözat düğmesini görüntülememek üzere. Varsayılan değer `TRUE` şeklindedir.  
   
- `szLabel`  
+ *szLabel*  
  Gözat düğmesi görüntülenen etiketi. Varsayılan değer " **...** ".  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bEnable` parametresi `TRUE`, Gözat düğmesine tıklandığında gerçekleştirmek için özel bir eylemi uygulamak. Özel bir eylemi uygulamak için öğesinden bir sınıf türetin `CMFCEditBrowseCtrl` sınıfı ve daha sonra geçersiz kendi [OnBrowse](#onbrowse) yöntemi.  
+ Varsa *bSistemlerde* parametresi `TRUE`, Gözat düğmesine tıklandığında gerçekleştirmek için özel bir eylemi uygulamak. Özel bir eylemi uygulamak için öğesinden bir sınıf türetin `CMFCEditBrowseCtrl` sınıfı ve daha sonra geçersiz kendi [OnBrowse](#onbrowse) yöntemi.  
   
  Varsa `bEnable` parametresi `TRUE`, denetimin gözatma modu `BrowseMode_Default`; Aksi halde, gözatma modu `BrowseMode_None`. Gözat modları hakkında daha fazla bilgi için bkz: [GetMode](#getmode) yöntemi.  
   
@@ -162,13 +162,13 @@ void EnableFileBrowseButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszDefExt`  
+ *lpszDefExt*  
  Dosya Seçimi iletişim kutusunda kullanılan varsayılan dosya adı uzantısını belirtir. Varsayılan değer `NULL` şeklindedir.  
   
- `lpszFilter`  
+ *lpszFilter*  
  Dosya Seçimi iletişim kutusunda kullanılan varsayılan filtre dizesini belirtir. Varsayılan değer `NULL` şeklindedir.  
   
- `dwFlags`  
+ *dwFlags*  
  İletişim kutusu bayraklar. Bit düzeyinde bileşimini (veya) OFN_HIDEREADONLY ve OFN_OVERWRITEPROMPT varsayılan değerdir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -250,16 +250,16 @@ virtual void OnDrawBrowseButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- `Rect`  
+ *Rect*  
  Gözat düğmesini sınırlayıcı dikdörtgenini.  
   
- `bIsButtonPressed`  
+ *bIsButtonPressed*  
  `TRUE` düğmeye basıldığında Aksi takdirde `FALSE`.  
   
- `bIsButtonHot`  
+ *bIsButtonHot*  
  `TRUE` düğmesi vurgulanmış; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -282,16 +282,16 @@ void SetBrowseButtonImage(UINT uiBmpResId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hIcon`  
+ *hIcon*  
  Simge işleci.  
   
- `hBitmap`  
+ *Hbıtmap*  
  Bir bit eşlem işleci.  
   
- `uiBmpResId`  
+ *uiBmpResId*  
  Bir bit eşlem kaynak kimliği.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  `TRUE` Bu yöntem çıktığında belirtilen simgeyi veya bit eşlem silmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -305,7 +305,7 @@ virtual BOOL OnIllegalFileName(CString& strFileName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `strFileName`  
+ *strFileName*  
  Geçersiz dosya adını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

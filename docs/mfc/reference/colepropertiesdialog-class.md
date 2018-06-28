@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d61d773e2c35bb67f34ae2b4a989a388d8b4015
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 358798e3945378d0fa43fa6e2fa91d686212efab
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371692"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040187"
 ---
 # <a name="colepropertiesdialog-class"></a>COlePropertiesDialog sınıfı
 Windows ortak OLE nesne özellikleri iletişim kutusu yalıtır.  
@@ -112,7 +112,7 @@ COlePropertiesDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pItem`  
+ *pItem*  
  Özellikleri erişilen belge öğesi işaretçisi.  
   
  *nScaleMin*  
@@ -121,7 +121,7 @@ COlePropertiesDialog(
  *nScaleMax*  
  Ölçeklendirme yüzdesini belge öğesi görüntüsü için üst sınırı.  
   
- `pParentWnd`  
+ *pParentWnd*  
  İletişim kutusunun üst veya sahibi işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -228,10 +228,10 @@ virtual BOOL OnApplyScale(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pItem`  
+ *pItem*  
  Özellikleri erişilen belge öğesi işaretçisi.  
   
- `nCurrentScale`  
+ *nCurrentScale*  
  İletişim ölçek sayısal değer.  
   
  *bRelativeToOrig*  
@@ -244,7 +244,7 @@ virtual BOOL OnApplyScale(
  Varsayılan uygulama hiçbir şey yapmaz. Ölçeklendirme denetimlerini etkinleştirmek için bu işlevi geçersiz kılmanız gerekir.  
   
 > [!NOTE]
->  Ortak OLE nesne özellikleri iletişim kutusu görüntülenmeden önce framework ile bu işlevi çağıran bir **NULL** için `pItem` için 1 `nCurrentScale`. Bu, ölçekleme denetimleri etkin olmadığını belirlemek için gerçekleştirilir.  
+>  Ortak OLE nesne özellikleri iletişim kutusu görüntülenmeden önce framework ile bu işlevi çağıran bir **NULL** için *pItem* için 1 *nCurrentScale*. Bu, ölçekleme denetimleri etkin olmadığını belirlemek için gerçekleştirilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek DAİ](../../visual-cpp-samples.md)   

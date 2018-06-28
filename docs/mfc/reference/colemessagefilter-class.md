@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85161e7f3dd752c6df27afedf6276f8823e7ec6e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f758a3cc82d4f6cfcc28f89ae206a82b899c0042
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371370"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037621"
 ---
 # <a name="colemessagefilter-class"></a>COleMessageFilter sınıfı
 OLE uygulamaları etkileşim tarafından gerekli eşzamanlılık yönetir.  
@@ -110,7 +110,7 @@ virtual void BeginBusyState();
   
  `BeginBusyState` Ve `EndBusyState` çağrıları artırmak ve sırasıyla uygulama meşgul olup olmadığını belirleyen bir sayaç azaltma. Örneğin, iki çağrılar `BeginBusyState` ve yapılan bir çağrı `EndBusyState` hala meşgul durum sonuçlanır. Çağrı için gerekli olduğu bir meşgul durumu iptal etmek için `EndBusyState` aynı kaç kez `BeginBusyState` çağrıldı.  
   
- Varsayılan olarak, framework tarafından gerçekleştirilen boşta işleme sırasında meşgul durumuna girer [CWinApp::OnIdle](../../mfc/reference/cwinapp-class.md#onidle). Uygulama işleme sırasında **ON_COMMANDUPDATEUI** bildirimleri, gelen çağrıları boşta işleme işlemi tamamlandıktan sonra daha sonra işlenir.  
+ Varsayılan olarak, framework tarafından gerçekleştirilen boşta işleme sırasında meşgul durumuna girer [CWinApp::OnIdle](../../mfc/reference/cwinapp-class.md#onidle). Uygulama ON_COMMANDUPDATEUI bildirimleri işleme sırasında boşta işleme işlemi tamamlandıktan sonra gelen çağrıları daha sonra ele alınır.  
   
 ##  <a name="colemessagefilter"></a>  COleMessageFilter::COleMessageFilter  
  Oluşturur bir `COleMessageFilter` nesnesi.  
@@ -153,7 +153,7 @@ virtual void EndBusyState();
   
  `BeginBusyState` Ve `EndBusyState` çağrıları artırmak ve sırasıyla uygulama meşgul olup olmadığını belirleyen bir sayaç azaltma. Örneğin, iki çağrılar `BeginBusyState` ve yapılan bir çağrı `EndBusyState` hala meşgul durum sonuçlanır. Çağrı için gerekli olduğu bir meşgul durumu iptal etmek için `EndBusyState` aynı kaç kez `BeginBusyState` çağrıldı.  
   
- Varsayılan olarak, framework tarafından gerçekleştirilen boşta işleme sırasında meşgul durumuna girer [CWinApp::OnIdle](../../mfc/reference/cwinapp-class.md#onidle). Uygulama işleme sırasında `ON_UPDATE_COMMAND_UI` bildirimleri, gelen çağrıları boşta işleme işlemi tamamlandıktan sonra işlenir.  
+ Varsayılan olarak, framework tarafından gerçekleştirilen boşta işleme sırasında meşgul durumuna girer [CWinApp::OnIdle](../../mfc/reference/cwinapp-class.md#onidle). Uygulama on_update_command_uı bildirimleri işleme sırasında boşta işleme işlemi tamamlandıktan sonra gelen çağrıları ele alınır.  
   
 ##  <a name="onmessagepending"></a>  COleMessageFilter::OnMessagePending  
  OLE çağrı sürerken iletilerini işlemek için çerçevesi tarafından çağrılır.  
@@ -163,14 +163,14 @@ virtual BOOL OnMessagePending(const MSG* pMsg);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pMsg`  
+ *pMsg*  
  İşaretçi bekleyen iletisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarı sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağıran bir uygulama bir çağrı tamamlanması beklenirken framework çağırması `OnMessagePending` bekleyen iletisi işaretçiyle. Varsayılan olarak, framework gönderir `WM_PAINT` iletileri böylece penceresi güncelleştirmeleri uzun sürüyor bir çağrı sırasında ortaya çıkabilir.  
+ Çağıran bir uygulama bir çağrı tamamlanması beklenirken framework çağırması `OnMessagePending` bekleyen iletisi işaretçiyle. Varsayılan olarak, böylece penceresi güncelleştirmeleri uzun sürüyor bir çağrı sırasında ortaya çıkabilir framework WM_PAINT iletileri gönderir.  
   
  Çağrı yoluyla İleti Filtresi kaydetmelisiniz [kaydetmek](#register) etkin olabilmesi için önce.  
   
@@ -233,7 +233,7 @@ void SetMessagePendingDelay(DWORD nTimeout = 5000);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nTimeout`  
+ *nTimeout*  
  İleti bekleyen gecikme için milisaniye sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -247,7 +247,7 @@ void SetRetryReply(DWORD nRetryReply = 0);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nRetryReply`  
+ *nRetryReply*  
  Denemeler arasındaki milisaniye sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -255,7 +255,7 @@ void SetRetryReply(DWORD nRetryReply = 0);
   
  Çağıranın yanıt işlevleri tarafından denetlenen `SetRetryReply` ve [SetMessagePendingDelay](#setmessagependingdelay). `SetRetryReply` Belirtilen arama için yeniden denemeler arasında çağrı yapan uygulamanın ne kadar beklemesi gerektiğini belirler. `SetMessagePendingDelay` Çağrı yapan uygulamanın sunucudan yanıt daha fazla eylemi gerçekleştirmeden önce bekleyeceği süreyi belirler.  
   
- Genellikle Varsayılanları kabul edilir ve değiştirilmesi gerekmez. Framework çağrı yeniden deneme her `nRetryReply` çağrı geçtiği veya ileti bekleyen gecikme süresi dolmuş kadar milisaniye. İçin 0 değerini `nRetryReply` hemen bir yeniden deneme ve - 1 çağrı iptali belirtir.  
+ Genellikle Varsayılanları kabul edilir ve değiştirilmesi gerekmez. Framework çağrı yeniden deneme her *nRetryReply* çağrı geçtiği veya ileti bekleyen gecikme süresi dolmuş kadar milisaniye. İçin 0 değerini *nRetryReply* hemen bir yeniden deneme ve - 1 çağrı iptali belirtir.  
   
  Ne zaman iletisi bekleyen gecikme süresi doldu, OLE "meşgul iletişim kutusu" (bkz [COleBusyDialog](../../mfc/reference/colebusydialog-class.md)) kullanıcı iptal etmek veya çağrı yeniden denemek seçebilmeniz görüntülenir. Çağrı [EnableBusyDialog](#enablebusydialog) etkinleştirin veya bu iletişim kutusunu devre dışı bırakmak için.  
   

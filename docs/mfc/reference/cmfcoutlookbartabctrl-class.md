@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e677879079eaab3dd36481fec76ca53da92ef87d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d30ad25a21bf380dd7687ccd0da0fb261aeeb023
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373309"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042319"
 ---
 # <a name="cmfcoutlookbartabctrl-class"></a>CMFCOutlookBarTabCtrl sınıfı
 Görsel görünümünü sahip bir sekme denetimi **Gezinti Bölmesi** Microsoft Outlook.  
@@ -148,19 +148,19 @@ void AddControl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndCtrl`  
+ [in] *pWndCtrl*  
  Eklemek için bir denetim için bir işaretçi.  
   
- [in] `lpszName`  
+ [in] *lpszName*  
  Sekmenin adını belirtir.  
   
- [in] `bDetachable`  
+ [in] *bDetachable*  
  Varsa `TRUE`, sayfa gibi çıkarılabilir oluşturulur.  
   
- [in] `nImageID`  
+ [in] *nImageID*  
  Görüntü dizini yeni sekmede gösterilecek görüntü için iç görüntü listesinde.  
   
- [in] `dwControlBarStyle`  
+ [in] *dwControlBarStyle*  
  AFX_ belirtir `CBRS_`* Sarmalanan takma bölmeleri stili.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -168,7 +168,7 @@ void AddControl(
   
  Bu işlev dahili olarak çağırır [CMFCBaseTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab).  
   
- Ayarlarsanız `bDetachable` için `TRUE`, `AddControl` dahili oluşturur bir `CDockablePaneAdapter` nesne ve eklenen denetim sarmalar. Otomatik olarak çalışma zamanı sınıf çalışma zamanı sınıf sekmeli penceresinin ayarlar `CMFCOutlookBar` ve kayan çerçevesi çalışma zamanı sınıfı `CMultiPaneFrameWnd`.  
+ Ayarlarsanız *bDetachable* için `TRUE`, `AddControl` dahili oluşturur bir `CDockablePaneAdapter` nesne ve eklenen denetim sarmalar. Otomatik olarak çalışma zamanı sınıf çalışma zamanı sınıf sekmeli penceresinin ayarlar `CMFCOutlookBar` ve kayan çerçevesi çalışma zamanı sınıfı `CMultiPaneFrameWnd`.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekte nasıl kullanılacağı ortaya `AddControl` yönteminde `CMFCOutlookBarTabCtrl` sınıfı. Bu kod parçacığını parçası olan [Outlook gösterim örneği](../../visual-cpp-samples.md).  
@@ -212,20 +212,20 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rect`  
+ [in] *rect*  
  İlk boyutunu ve konumunu piksel cinsinden belirtir.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Üst pencere noktalarına. Olmamalıdır `NULL`.  
   
- [in] `nID`  
+ [in] *nID*  
  Denetim kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Denetimi başarıyla oluşturulduysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Genellikle, ne zaman oluşturulan outlook çubuğu sekme denetimleri [CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md) denetimleri `WM_CREATE` işleminin ileti.  
+ Genellikle, ne zaman oluşturulan outlook çubuğu sekme denetimleri [CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md) işleminin WM_CREATE ileti denetler.  
   
 ##  <a name="enableanimation"></a>  CMFCOutlookBarTabCtrl::EnableAnimation  
  Etkin sekmeler arasında geçiş sırasında ortaya çıkan animasyonun etkinleştirilip etkinleştirilmeyeceğini belirtir.  
@@ -235,7 +235,7 @@ static void EnableAnimation(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  Animasyonun etkin veya devre dışı belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -251,7 +251,7 @@ virtual void EnableInPlaceEdit(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bEnable`  
+ *bSistemlerde*  
  Varsa `TRUE`, yerinde metin etiketini düzenleme etkinleştirin. Varsa `FALSE`, yerinde düzenlemeyi devre dışı bırakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -268,13 +268,13 @@ void EnableScrollButtons(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  Kaydırma düğmelerini görüntülenip görüntülenmeyeceğini belirler.  
   
- [in] `bIsUp`  
+ [in] *bIsUp*  
  Üst scrollbar görüntülenip görüntülenmeyeceğini belirler.  
   
- [in] `bIsDown`  
+ [in] *bIsDown*  
  Alt scrollbar görüntülenip görüntülenmeyeceğini belirler.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -367,7 +367,7 @@ virtual BOOL SetActiveTab(int iTab);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iTab`  
+ [in] *iTab*  
  Açılacak şekilde bir sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -384,7 +384,7 @@ void SetBorderSize(int nBorderSize);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nBorderSize`  
+ [in] *nBorderSize*  
  Yeni sınır boyutunu piksel cinsinden belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -400,22 +400,22 @@ void SetPageButtonTextAlign(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiAlign`  
+ [in] *uiAlign*  
  Metin hizalamasını belirtir.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  Varsa `TRUE`, outlook penceresi çizilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Metin hizalama sayfa düğmelerinin değiştirmek için bu işlevi kullanın.  
   
- `uiAlign` Aşağıdaki değerlerden biri olabilir:  
+ *uiAlign* aşağıdaki değerlerden biri olabilir:  
   
 |Sabit|Açıklama|  
 |--------------|-------------|  
 |TA_LEFT|Sol hizalama|  
 |TA_CENTER|Ortala|  
-|TA_RIGHT|Sağa hizalama|  
+|TA_RIGHT|sağa hizalama|  
   
  TA_CENTER varsayılan değerdir.  
   
@@ -430,13 +430,13 @@ BOOL SetToolbarImageList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiID`  
+ [in] *uiID*  
  Yüklemek için görüntü kaynak Kimliğini belirtir.  
   
- [in] `cx`  
+ [in] *cx*  
  Görüntü listesinde, piksel cinsinden görüntü genişliğini belirtir.  
   
- [in] `clrTransp`  
+ [in] *clrTransp*  
  Saydam Rengi belirten bir RGB değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -455,7 +455,7 @@ void SetVisiblePageButtons(int nVisiblePageButtons);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nVisiblePageButtons`  
+ [in] *nVisiblePageButtons*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

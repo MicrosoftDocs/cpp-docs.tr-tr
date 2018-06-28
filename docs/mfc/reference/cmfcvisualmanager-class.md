@@ -354,12 +354,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23f9006b78d90a26aa6d4a2ee2bbbb010241298e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 13fa7aea135099a8e0903ef0fc5fd20ca0cca5ff
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378988"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039511"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager sınıfı
 Uygulamanızın genel düzeyde görünümünü değiştirmek için destek sağlar. `CMFCVisualManager` Sınıfı GUI denetimleri tutarlı bir stil kullanarak uygulamanızın çizmek için yönergeler sağlayan bir sınıf birlikte çalışır. Bu diğer sınıflar visual yöneticileri adlandırılır ve bunlar devralınmalıdır `CMFCBaseVisualManager`.  
@@ -650,7 +650,7 @@ CMFCVisualManager(BOOL bTemporary = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bTemporary`  
+ [in] *bTemporary*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -662,7 +662,7 @@ static void __stdcall DestroyInstance(BOOL bAutoDestroyOnly = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bAutoDestroyOnly`  
+ [in] *bAutoDestroyOnly*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -678,10 +678,10 @@ void DoDrawHeaderSortArrow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
- [in] `bIsUp`  
- [in] `bDlgCtrl`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bIsUp*  
+ [in] *bDlgCtrl*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -697,9 +697,9 @@ virtual BOOL DrawComboBorderWinXP(CDC*,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CDC*`  
- [in] `CRect`  
- [in] `BOOL`  
+ [in] *CDC**  
+ [in] *CRect*  
+ [in] *BOOL*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -717,9 +717,9 @@ virtual BOOL DrawComboDropButtonWinXP(CDC*,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CDC*`  
- [in] `CRect`  
- [in] `BOOL`  
+ [in] *CDC**  
+ [in] *CRect*  
+ [in] *BOOL*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -736,10 +736,10 @@ virtual BOOL DrawPushButtonWinXP(CDC*,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CDC*`  
- [in] `CRect`  
- [in] `CMFCButton*`  
- [in] `UINT`  
+ [in] *CDC**  
+ [in] *CRect*  
+ [in] *CMFCButton**  
+ [in] *UINT*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -759,12 +759,12 @@ virtual BOOL DrawTextOnGlass(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `strText`  
- [in] `rect`  
- [in] `dwFlags`  
- [in] `nGlowSize`  
- [in] `clrText`  
+ [in] *pDC*  
+ [in] *strText*  
+ [in] *rect*  
+ [in] *dwFlags*  
+ [in] *nGlowSize*  
+ [in] *clrText*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -778,7 +778,7 @@ void EnableToolbarButtonFill(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -790,11 +790,11 @@ virtual COLORREF GetAutoHideButtonTextColor(CMFCAutoHideButton* pButton);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
+ [in] *pButton*  
  Bir Otomatik Gizle düğmesini gösteren bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) metin rengi belirten parametre `pButton`.  
+ A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) metin rengi belirten parametre *pButton*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir otomatik olarak gizle düğmesi, uygulamanızda metin rengi özelleştirmek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın. Bunu yapmak için uygulamanızın metin rengi olarak kullanmak istediğiniz renk döndür.  
@@ -820,11 +820,11 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
+ [in] *pBar*  
  Başlık çubuğu için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) içindeki metnin rengi gösterir parametresi `pBar`.  
+ A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) içindeki metnin rengi gösterir parametresi *pBar*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Başlık çubuğu metin rengini özelleştirmek için türetilmiş sınıf bu yöntemi geçersiz kılın. Geçersiz kılınan yönteminizi istenen renk döndür.  
@@ -874,7 +874,7 @@ virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
+ [in] *pButton*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -928,9 +928,9 @@ virtual COLORREF GetMenuItemTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
- [in] `bHighlighted`  
- [in] `bDisabled`  
+ [in] *pButton*  
+ [in] *bHighlighted*  
+ [in] *bDevre Dışı*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -957,8 +957,8 @@ virtual CSize GetNcBtnSize(BOOL bSmall) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bSmall`  
- Gösteren bir Boolean parametresiyle olup olmadığını `GetNcBtnSize` küçük veya büyük sistem düğme boyutunu almak. Varsa `bSmall` olan `TRUE`, `GetNcBtnSize` küçük sistem düğme boyutunu döndürür. Aksi takdirde, büyük sistem düğme boyutunu döndürür.  
+ [in] *bSmall*  
+ Gösteren bir Boolean parametresiyle olup olmadığını `GetNcBtnSize` küçük veya büyük sistem düğme boyutunu almak. Varsa *bSmall* olan `TRUE`, `GetNcBtnSize` küçük sistem düğme boyutunu döndürür. Aksi takdirde, büyük sistem düğme boyutunu döndürür.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) sistem düğmelerinin boyutunu belirtmek parametresi.  
@@ -998,11 +998,11 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pPropList`  
+ [in] *pPropList*  
  Framework çizim özellik listesini gösteren bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) arka plan rengini gösterir parametresi `pPropList`.  
+ A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) arka plan rengini gösterir parametresi *pPropList*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, uygulamanızın bir özellik listesinde arka plan rengini özelleştirmek için geçersiz kılar.  
@@ -1015,7 +1015,7 @@ virtual COLORREF GetPropertyGridGroupTextColor(CMFCPropertyGridCtrl* pPropList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pPropList`  
+ [in] *pPropList*  
  Özellik listesi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1032,7 +1032,7 @@ virtual COLORREF GetRibbonHyperlinkTextColor(CMFCRibbonLinkCtrl* pHyperLink);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pHyperLink`  
+ [in] *pHyperLink*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1046,7 +1046,7 @@ virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu*) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CMFCRibbonPanelMenu*`  
+ [in] *CMFCRibbonPanelMenu**  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1082,7 +1082,7 @@ virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bDisabled`  
+ [in] *bDevre Dışı*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1102,12 +1102,12 @@ virtual void GetRibbonSliderColors(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pSlider`  
- [in] `bIsHighlighted`  
- [in] `bIsPressed`  
- [in] `bIsDisabled`  
- [in] `clrLine`  
- [in] `clrFill`  
+ [in] *pSlider*  
+ [in] *bIsHighlighted*  
+ [in] *bIsPressed*  
+ [in] *bIsDisabled*  
+ [in] *clrLine*  
+ [in] *clrFill*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1119,7 +1119,7 @@ virtual COLORREF GetRibbonStatusBarTextColor(CMFCRibbonStatusBar* pStatusBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pStatusBar`  
+ [in] *pStatusBar*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1135,8 +1135,8 @@ virtual int GetShowAllMenuItemsHeight(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `sizeDefault`  
+ [in] *pDC*  
+ [in] *sizeDefault*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1152,8 +1152,8 @@ virtual void GetSmartDockingBaseGuideColors(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `clrBaseGroupBackground`  
- [in] `clrBaseGroupBorder`  
+ [in] *clrBaseGroupBackground*  
+ [in] *clrBaseGroupBorder*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1190,8 +1190,8 @@ virtual COLORREF GetStatusBarPaneTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pStatusBar`  
- [in] `pPane`  
+ [in] *pStatusBar*  
+ [in] *pPane*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1214,31 +1214,31 @@ virtual void GetTabFrameColors(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  Çerçeve bir sekme burada çizim sekmeli penceresi için bir işaretçi.  
   
- [out] `clrDark`  
+ [out] *clrDark*  
  Bir başvuru bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) bu yöntem bir sekme koyu kenarlığının rengini depoladığı parametresi.  
   
- [out] `clrBlack`  
+ [out] *clrBlack*  
  Bir başvuru bir `COLORREF` bu yöntem sekmesi penceresi kenarlığının rengini depoladığı parametresi. Kenarlığın varsayılan rengini siyah oluyor.  
   
- [out] `clrHighlight`  
+ [out] *clrHighlight*  
  Bir başvuru bir `COLORREF` bu yöntem sekmesi penceresi Vurgu durumunu rengini depoladığı parametresi.  
   
- [out] `clrFace`  
+ [out] *clrFace*  
  Bir başvuru bir `COLORREF` bu yöntem, yüz sekmesi penceresi rengini depoladığı parametresi.  
   
- [out] `clrDarkShadow`  
+ [out] *clrDarkShadow*  
  Bir başvuru bir `COLORREF` bu yöntem sekmesi penceresi gölge rengini depoladığı parametresi.  
   
- [out] `clrLight`  
+ [out] *clrLight*  
  Bir başvuru bir `COLORREF` bu yöntem sekmesi penceresi açık kenarı rengini depoladığı parametresi.  
   
- [out] `pbrFace`  
+ [out] *pbrFace*  
  Bir başvuru fırça için bir işaretçi. Bu yöntem, sekme penceresinde bu parametrede yüz doldurmak için kullanılan fırça depolar.  
   
- [out] `pbrBlack`  
+ [out] *pbrBlack*  
  Bir başvuru fırça için bir işaretçi. Bu yöntem sekme penceresinde bu parametrede siyah kenarı doldurmak için kullandığı fırça depolar.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1252,7 +1252,7 @@ virtual int GetTabHorzMargin(const CMFCBaseTabCtrl*);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CMFCBaseTabCtrl*`  
+ [in] *CMFCBaseTabCtrl&#42;*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1269,9 +1269,9 @@ virtual COLORREF GetTabTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CMFCBaseTabCtrl*`  
- [in] `int`  
- [in] `BOOL`  
+ [in] *CMFCBaseTabCtrl&#42;*  
+ [in] *int*  
+ [in] *BOOL*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1386,14 +1386,14 @@ virtual COLORREF GetToolbarButtonTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
+ [in] *pButton*  
  Araç çubuğu düğmesini gösteren bir işaretçi.  
   
- [in] `state`  
+ [in] *durumu*  
  Araç çubuğu düğmesi durumu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Metin rengi `pButton` tarafından belirtilen durum olduğunda `state`.  
+ Metin rengi *pButton* tarafından belirtilen durum olduğunda *durumu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Metin rengi bir [CMFCToolBarButton sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md) nesneye düğmesi durumuna bağlıdır. Araç çubuğu düğmesi olası durumlar şunlardır `ButtonsIsRegular`, `ButtonsIsPressed`, veya `ButtonsIsHighlighted`.  
@@ -1456,8 +1456,8 @@ virtual BOOL GetToolTipInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `params`  
- [in] `nType`  
+ [in] *parametreleri*  
+ [in] *nTür*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1492,7 +1492,7 @@ virtual BOOL IsDefaultWinXPPopupButton(CMFCDesktopAlertWndButton*) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CMFCDesktopAlertWndButton*`  
+ [in] *CMFCDesktopAlertWndButton**  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1668,7 +1668,7 @@ virtual BOOL IsToolbarRoundShape(CMFCToolBar*);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CMFCToolBar*`  
+ [in] *CMFCToolBar&#42;*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1695,8 +1695,8 @@ virtual void OnActivateApp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
- [in] `bActive`  
+ [in] *pWnd*  
+ [in] *bActive*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1712,22 +1712,22 @@ virtual void OnDrawAutoHideButtonBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectBounds`  
+ [in] *rectBounds*  
  Boyut ve konum otomatik olarak gizle düğmesinin.  
   
- [in] `rectBorderSize`  
+ [in] *rectBorderSize*  
  A [CRect](../../atl-mfc-shared/reference/crect-class.md) Kenarlıklar boyutlarını içeren parametre.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Otomatik Gizle düğmesini gösteren bir işaretçi. Çerçeve kenarlığı bu düğme için çizim.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir otomatik olarak gizle düğmesi kenarlığının görünümünü özelleştirmek istiyorsanız bir türetilmiş sınıfta bu yöntemi geçersiz kılın. Varsayılan olarak, bu yöntem, uygulamanız için varsayılan gölge rengini düz kenarlık doldurur.  
   
- `rectBorderSize` Parametresi kenarlık koordinatlarını içermiyor. Kenarlık boyutunu içerdiği `top`, `bottom`, `left`, ve `right` veri üyeleri. Değer 0 değerinden küçük veya eşit hiçbir kenarlık bu tarafındaki Otomatik Gizle düğmesini gösterir.  
+ *RectBorderSize* parametresi kenarlık koordinatlarını içermiyor. Kenarlık boyutunu içerdiği `top`, `bottom`, `left`, ve `right` veri üyeleri. Değer 0 değerinden küçük veya eşit hiçbir kenarlık bu tarafındaki Otomatik Gizle düğmesini gösterir.  
   
 ##  <a name="ondrawbargripper"></a>  CMFCVisualManager::OnDrawBarGripper  
  Denetim çubuğu Mandal çizer çerçevesi tarafından çağrılır.  
@@ -1741,16 +1741,16 @@ virtual void OnDrawBarGripper(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Denetim çubuğu için cihaz bağlamı için bir işaretçi.  
   
- [in] `rectGripper`  
+ [in] *rectGripper*  
  Denetim çubuğu sınırlayıcı dikdörtgenini.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  Denetim çubuğu yatay veya dikey olarak mı yerleştirildiğini belirten Boolean bir parametre.  
   
- [in] `pBar`  
+ [in] *pBar*  
  Denetim çubuğu için bir işaretçi. Bu denetim çubuğu Mandal visual Yöneticisi çizer.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1769,19 +1769,19 @@ virtual BOOL OnDrawBrowseButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Gözat düğmesi için sınır belirtir dikdörtgen.  
   
- [in] `pEdit`  
+ [in] *pEdit*  
  Bir düzenleme denetimine işaretçi. Görsel Yöneticisi bu düzenleme denetimi için Gözat düğmesine çizer.  
   
- [in] `state`  
+ [in] *durumu*  
  Düğmenin durumunu belirten bir numaralandırılmış değeri.  
   
- [out] `clrText`  
+ [out] *clrText*  
  Bir başvuru bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametresi. Bu ayrılmış bir değerdir ve şu anda kullanılmıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1802,16 +1802,16 @@ virtual void OnDrawButtonBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Araç çubuğu düğmesi cihaz bağlamı için bir işaretçi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Araç çubuğu düğmesi için bir işaretçi. Çerçeve kenarlığı bu düğmenin çizer.  
   
- [in] `rect`  
+ [in] *rect*  
  Araç çubuğu düğmesi sınırlarının belirtir dikdörtgen.  
   
- [in] `state`  
+ [in] *durumu*  
  Araç çubuğu düğmesi geçerli durumunu belirten bir numaralandırılmış veri türü.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1832,11 +1832,11 @@ virtual void OnDrawButtonSeparator(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
- [in] `state`  
- [in] `bHorz`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
+ [in] *durumu*  
+ [in] *bHorz*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1853,19 +1853,19 @@ virtual void OnDrawCaptionBarBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pBar`  
+ [in] *pBar*  
  Bir işaretçi bir `CMFCCaptionBar` nesnesi. Framework Bu başlık çubuğunu çizer.  
   
- [in] `rect`  
+ [in] *rect*  
  Başlık çubuğunu sınırlarının belirtir dikdörtgen.  
   
- [in] `clrBarBorder`  
+ [in] *clrBarBorder*  
  Kenarlığın rengi.  
   
- [in] `bFlatBorder`  
+ [in] *bFlatBorder*  
  Kenarlığın düz, 2B bir görünüm olup olmadığını belirtir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1887,14 +1887,14 @@ virtual void OnDrawCaptionBarButtonBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pBar`  
- [in] `rect`  
- [in] `bIsPressed`  
- [in] `bIsHighlighted`  
- [in] `bIsDisabled`  
- [in] `bHasDropDownArrow`  
- [in] `bIsSysButton`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *rect*  
+ [in] *bIsPressed*  
+ [in] *bIsHighlighted*  
+ [in] *bIsDisabled*  
+ [in] *bHasDropDownArrow*  
+ [in] *bIsSysButton*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1909,9 +1909,9 @@ virtual void OnDrawCaptionBarInfoArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pBar`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *rect*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1930,26 +1930,26 @@ virtual void OnDrawCaptionButton (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi bir `CMFCCaptionButton` nesnesi. Bu resim yazısı düğmesini framework çizer.  
   
- [in] `bActive`  
+ [in] *bActive*  
  Düğmesi etkin olup olmadığını belirten Boolean bir parametre.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  Resim yazısını yatay olup olmadığını belirtir Boole parametresi.  
   
- [in] `bMaximized`  
+ [in] *bMaximized*  
  Üst bölmesi ekranı olup olmadığını belirten Boolean bir parametre.  
   
- [in] `bDisabled`  
+ [in] *bDevre Dışı*  
  Resim yazısı düğmesini devre dışı bırakılıp bırakılmadığını belirten Boolean bir parametre.  
   
- [in] `nImageID`  
- Düğme için kullanılacak simgeyi için resim dizini. Varsa `nImageID` resim dizinini kaydedilen bu yöntemi kullanır -1'dir `pButton`.  
+ [in] *nImageID*  
+ Düğme için kullanılacak simgeyi için resim dizini. Varsa *nImageID* resim dizinini kaydedilen bu yöntemi kullanır -1'dir *pButton*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem varsayılan uygulaması genel örneğinden küçük bir düğme görüntüler `CMenuImages` sınıfı. Düğmeleri için üstbilgi dosyasında listelenen `CMenuImages`. Bazı örnekler `CMenuImages::IdClose`, `CMenuImages::IdArowLeft`, `CMenuImages::IdArowRight`, `CMenuImages::IdArowDown`, `CMenuImages::IdArowUp`, ve `CMenuImages::IdPinHorz`.  
@@ -1969,11 +1969,11 @@ virtual void OnDrawCheckBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
- [in] `bHighlighted`  
- [in] `bChecked`  
- [in] `bEnabled`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bHighlighted*  
+ [in] *bChecked*  
+ [in] *bEtkin*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1991,12 +1991,12 @@ virtual void OnDrawCheckBoxEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
- [in] `nState`  
- [in] `bHighlighted`  
- [in] `bPressed`  
- [in] `bEnabled`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *nDurum*  
+ [in] *bHighlighted*  
+ [in] *bPressed*  
+ [in] *bEtkin*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2014,22 +2014,22 @@ virtual void OnDrawComboBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Birleşik giriş kutusu düğmesi cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Birleşik giriş kutusu düğmesi sınırlarının belirtir dikdörtgen.  
   
- [in] `bDisabled`  
+ [in] *bDevre Dışı*  
  Birleşik giriş kutusu düğmesi kullanılabilir olup olmadığını belirten bir Boole parametresi.  
   
- [in] `bIsDropped`  
+ [in] *bIsDropped*  
  Birleşik giriş kutusu açılmış olup olmadığını gösteren bir Boole parametresi.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Birleşik giriş kutusu düğmesi vurgulanmış olup olmadığını gösteren bir Boole parametresi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi bir `CMFCToolBarComboBoxButton` nesnesi. Bu birleşik giriş kutusu düğmesi framework çizer.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2049,22 +2049,22 @@ virtual void OnDrawComboDropButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Bırakma düğmesi sınırlarının belirtir dikdörtgen.  
   
- [in] `bDisabled`  
+ [in] *bDevre Dışı*  
  Bırakma düğmesi kullanılabilir olup olmadığını belirten bir Boole parametresi.  
   
- [in] `bIsDropped`  
+ [in] *bIsDropped*  
  Birleşik giriş kutusu açılmış olup olmadığını gösteren bir Boole parametresi.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Bırakma düğmesi vurgulanmış olup olmadığını gösteren bir Boole parametresi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi bir `CMFCToolBarComboBoxButton` nesnesi. Bu birleşik giriş kutusu düğme için bırakma düğmesi framework çizer.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2078,7 +2078,7 @@ virtual void OnDrawControlBorder(CWnd* pWndCtrl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndCtrl`  
+ [in] *pWndCtrl*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2095,19 +2095,19 @@ virtual void OnDrawDefaultRibbonImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Varsayılan görüntü sınırlarının belirtir dikdörtgen.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  Şerit düğmesi kullanılabilir olup olmadığını belirten bir Boole parametresi.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  Şerit düğmesi basılı olup olmadığını gösteren bir Boolean parametresiyle.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Şerit düğmesi vurgulanmış olup olmadığını gösteren bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2126,19 +2126,19 @@ virtual void OnDrawEditBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Sınırlarının belirten dikdörtgen `CMFCToolBarEditBoxButton` nesnesi.  
   
- [in] `bDisabled`  
+ [in] *bDevre Dışı*  
  Düğmesi kullanılabilir olup olmadığını belirten bir Boole parametresi.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Düğmesi vurgulanmış olup olmadığını gösteren bir Boole parametresi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi bir `CMFCToolBarEditBoxButton` nesnesi. Framework bu düzenleme kutusu düğmesi kenarlık çizer.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2156,10 +2156,10 @@ virtual void OnDrawExpandingBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
- [in] `bIsOpened`  
- [in] `colorBox`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bIsOpened*  
+ [in] *colorBox*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2175,22 +2175,22 @@ virtual void OnDrawFloatingToolbarBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pToolBar`  
+ [in] *pToolBar*  
  Kayan araç için bir işaretçi.  
   
- [in] `rectBorder`  
+ [in] *rectBorder*  
  Kayan araç sınırlarının belirtir dikdörtgen.  
   
- [in] `rectBorderSize`  
+ [in] *rectBorderSize*  
  Araç çubuğu kenarlık boyutunu belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kayan araç çubuğu, bir kısa çerçeve pencere olarak görünen bir araç çubuğu bulunur. Genellikle, bir kullanıcı bir araç çubuğu sürüklendiğinde bundan böyle yerleştirildiğini böylece bu gerçekleşir.  
   
- Kenarlığın boyutunu karşılık gelen bir parametre tarafından belirtilen `rectBorderSize`. Örneğin, araç çubuğunun üst kenarlığın genişliğini tarafından belirtilen `rectBorderSize.top`.  
+ Kenarlığın boyutunu karşılık gelen bir parametre tarafından belirtilen *rectBorderSize*. Örneğin, araç çubuğunun üst kenarlığın genişliğini tarafından belirtilen `rectBorderSize.top`.  
   
  Kayan araç çubuğu kenarlık görünümünü özelleştirmek için türetilmiş bir görsel Yöneticisi'nde bu yöntemi geçersiz kılın.  
   
@@ -2207,19 +2207,19 @@ virtual void OnDrawHeaderCtrlBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pCtrl`  
+ [in] *pCtrl*  
  Bir işaretçi bir `CMFCHeaderCtrl` nesnesi. Framework Bu üstbilgi denetimi kenarlık çizer.  
   
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Üstbilgi denetimi sınırlarının belirtir dikdörtgen.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  Üstbilgi denetimi basılı olup olmadığını gösteren bir Boole parametresi.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Üstbilgi denetimi vurgulanmış olup olmadığını gösteren bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2237,20 +2237,20 @@ virtual void OnDrawHeaderCtrlSortArrow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pCtrl`  
+ [in] *pCtrl*  
  Üstbilgi denetimi için bir işaretçi. Bu sıralama ok visual Yöneticisi çizer [CMFCHeaderCtrl sınıfı](../../mfc/reference/cmfcheaderctrl-class.md) nesnesi.  
   
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Sıralama oku sınırlarının belirtir dikdörtgen.  
   
- [in] `bIsUp`  
+ [in] *bIsUp*  
  Sıralama ok yönünü belirten bir Boole değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bIsUp` olan `TRUE`, visual Yöneticisi yukarı sıralama ok çizer. Eğer öyleyse `FALSE`, sıralama oku visual Yöneticisi çizer. Geçersiz kılma `OnDrawHeaderCtrlSortArrow` Sırala düğmesini görünümünü özelleştirmek için bir türetilmiş sınıfta.  
+ Varsa *bIsUp* olan `TRUE`, visual Yöneticisi yukarı sıralama ok çizer. Eğer öyleyse `FALSE`, sıralama oku visual Yöneticisi çizer. Geçersiz kılma `OnDrawHeaderCtrlSortArrow` Sırala düğmesini görünümünü özelleştirmek için bir türetilmiş sınıfta.  
   
 ##  <a name="ondrawmenuarrowoncustomizelist"></a>  CMFCVisualManager::OnDrawMenuArrowOnCustomizeList  
 
@@ -2263,9 +2263,9 @@ virtual void OnDrawMenuArrowOnCustomizeList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rectCommand`  
- [in] `bSelected`  
+ [in] *pDC*  
+ [in] *rectCommand*  
+ [in] *bSelected*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2280,13 +2280,13 @@ virtual void OnDrawMenuBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Cihaz bağlamı için bir işaretçi bir `CMFCPopupMenu` nesnesi.  
   
- [in] `pMenu`  
+ [in] *pMenu*  
  Bir işaretçi bir `CMFCPopupMenu` nesnesi. Çerçeve, bu açılır menü çevresinde kenarlık çizer.  
   
- [in] `rect`  
+ [in] *rect*  
  Açılır menünün sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2305,11 +2305,11 @@ virtual void OnDrawMenuCheck(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
- [in] `bHighlight`  
- [in] `bIsRadio`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
+ [in] *bHighlight*  
+ [in] *bIsRadio*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2326,11 +2326,11 @@ virtual void OnDrawMenuItemButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rectButton`  
- [in] `bHighlight`  
- [in] `bDisabled`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rectButton*  
+ [in] *bHighlight*  
+ [in] *bDevre Dışı*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2344,8 +2344,8 @@ virtual COLORREF OnDrawMenuLabel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *rect*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -2362,9 +2362,9 @@ virtual void OnDrawMenuResizeBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
- [in] `nResizeFlags`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *nResizeFlags*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2382,22 +2382,22 @@ virtual void OnDrawMenuScrollButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Kaydırma çubuğu sınırlarının belirtir dikdörtgen.  
   
- [in] `bIsScrollDown`  
+ [in] *bIsScrollDown*  
  Düğme türünü belirten bir Boole değeri visual Yöneticisi çizer. Değerini `TRUE` visual Yöneticisi çizer aşağı düğmesini gösterir.  
   
- [in] `bIsHighlited`  
+ [in] *bIsHighlited*  
  Düğmesi vurgulanmış olup olmadığını belirten bir Boole değeri.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  Düğmeye basıldığında olup olmadığını belirten bir Boole değeri.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  Düğme devre dışı olup olmadığını gösteren bir Boole değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2420,15 +2420,15 @@ virtual void OnDrawMenuShadow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rectClient`  
- [in] `rectExclude`  
- [in] `nDepth`  
- [in] `iMinBrightness`  
- [in] `iMaxBrightness`  
- [in] `pBmpSaveBottom`  
- [in] `pBmpSaveRight`  
- [in] `bRTL`  
+ [in] *pDC*  
+ [in] *rectClient*  
+ [in] *rectExclude*  
+ [in] *nDepth*  
+ [in] *iMinBrightness*  
+ [in] *iMaxBrightness*  
+ [in] *pBmpSaveBottom*  
+ [in] *pBmpSaveRight*  
+ [in] *bRTL*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2445,19 +2445,19 @@ virtual void OnDrawMenuSystemButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Düğme sınırlarının belirtir dikdörtgen.  
   
- [in] `uiSystemCommand`  
+ [in] *uiSystemCommand*  
  Hangi sistem komut düğmesi ile ilişkili olduğunu belirten bir bayrak. Olası değerler şunlardır: SC_CLOSE, SC_MINIMIZE ve SC_RESTORE.  
   
- [in] `nStyle`  
+ [in] *nStyle*  
  Düğmenin geçerli stili belirten bir bayrak. Olası değerler şunlardır: TBBS_PRESSED, TBBS_DISABLED ve 0.  
   
- [in] `bHighlight`  
+ [in] *bHighlight*  
  Düğmesi vurgulanmış olup olmadığını belirten Boolean bir parametre.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2477,10 +2477,10 @@ virtual void OnDrawMiniFrameBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pFrameWnd`  
- [in] `rectBorder`  
- [in] `rectBorderSize`  
+ [in] *pDC*  
+ [in] *pFrameWnd*  
+ [in] *rectBorder*  
+ [in] *rectBorderSize*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2494,10 +2494,10 @@ virtual void OnDrawOutlookBarSplitter(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectSplitter`  
+ [in] *rectSplitter*  
  Bölümlendirici sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2515,16 +2515,16 @@ virtual void OnDrawOutlookPageButtonBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectBtn`  
+ [in] *rectBtn*  
  Outlook sayfa düğmesinin sınır belirtir dikdörtgen.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Düğmesi vurgulanmış olup olmadığını belirten bir Boole değeri.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  Düğmeye basıldığında olup olmadığını belirten bir Boole değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2541,13 +2541,13 @@ virtual void OnDrawPaneBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Denetim çubuğu cihaz bağlamı için bir işaretçi.  
   
- [in] `pBar`  
+ [in] *pBar*  
  Bölme için bir işaretçi. Görsel Yöneticisi bu bölme kenarlığının çizer.  
   
- [in] `rect`  
+ [in] *rect*  
  Bölmesinde sınırlarının gösterir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2566,19 +2566,19 @@ virtual COLORREF OnDrawPaneCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pBar`  
+ [in] *pBar*  
  Bir işaretçi bir `CDockablePane` nesnesi. Bu bölme için resim yazısı framework çizer.  
   
- [in] `bActive`  
+ [in] *bActive*  
  Denetim çubuğu etkin olup olmadığını gösteren bir Boole parametresi.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  Resim yazısını sınırlarının belirtir dikdörtgen.  
   
- [in] `rectButtons`  
+ [in] *rectButtons*  
  Resim yazısı düğmeleri sınırlarının belirtir dikdörtgen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2599,10 +2599,10 @@ virtual void OnDrawPaneDivider(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pSlider`  
- [in] `rect`  
- [in] `bAutoHideMode`  
+ [in] *pDC*  
+ [in] *pSlider*  
+ [in] *rect*  
+ [in] *bAutoHideMode*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2616,8 +2616,8 @@ virtual void OnDrawPopupWindowBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *rect*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2632,9 +2632,9 @@ virtual void OnDrawPopupWindowButtonBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rectClient`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *rectClient*  
+ [in] *pButton*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2649,9 +2649,9 @@ virtual COLORREF OnDrawPopupWindowCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rectCaption`  
- [in] `pPopupWnd`  
+ [in] *pDC*  
+ [in] *rectCaption*  
+ [in] *pPopupWnd*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -2667,10 +2667,10 @@ virtual void OnDrawRibbonApplicationButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi **ana düğmesi** Şerit üzerindeki.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2686,10 +2686,10 @@ virtual void OnDrawRibbonButtonBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi bir [CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md) nesnesi. Çerçeve kenarlığı bu Şerit düğmesi için çizer.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2706,13 +2706,13 @@ virtual COLORREF OnDrawRibbonButtonsGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pGroup`  
+ [in] *pGroup*  
  Şerit düğmeleri bir grup için bir işaretçi. Bu grup düğmesi framework çizer.  
   
- [in] `rectGroup`  
+ [in] *rectGroup*  
  Gurubunun sınırlarının belirtir dikdörtgen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2733,16 +2733,16 @@ virtual void OnDrawRibbonCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pBar`  
+ [in] *pBar*  
  Bir işaretçi bir Şerit çubuğuna. Görsel Yöneticisi bu Şerit çubuğu çizer.  
   
- [in] `rect`  
+ [in] *rect*  
  Şerit çubuğu sınırlarının belirtir dikdörtgen.  
   
- [in] `rectText`  
+ [in] *rectText*  
  Başlık çubuğunu metnin sınırları belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2758,10 +2758,10 @@ virtual void OnDrawRibbonCaptionButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- `pButton`  
+ *pButton*  
  Bir işaretçi bir `CMFCRibbonCaptionButton` sınıfı. Bu resim yazısı düğmesini framework çizer.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2778,13 +2778,13 @@ virtual void OnDrawRibbonCategory(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pCategory`  
+ [in] *pCategory*  
  Bir işaretçi bir `CMFCRibbonCategory` nesnesi. Framework bu Şerit kategori çizer.  
   
- [in] `rectCategory`  
+ [in] *rectCategory*  
  Şerit'te tüm kategori panelleri sınır belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2802,10 +2802,10 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Çizim Bağlamı.  
   
- [in] `pContextCaption`  
+ [in] *pContextCaption*  
  Başlık çubuğu için bir işaretçi. Bu görsel Yöneticisi çizer [CMFCRibbonContextCaption sınıfı](../../mfc/reference/cmfcribboncontextcaption-class.md) nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2824,8 +2824,8 @@ virtual void OnDrawRibbonCategoryScroll(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pScroll`  
+ [in] *pDC*  
+ [in] *pScroll*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2840,13 +2840,13 @@ virtual COLORREF OnDrawRibbonCategoryTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pTab`  
+ [in] *pTab*  
  Örneği için bir işaretçi `CMFCRibbonTab` sınıfı. Bu sekme framework çizer.  
   
- [in] `bIsActive`  
+ [in] *bIsActive*  
  Sekme etkin olup olmadığını gösteren bir Boolean parametresiyle.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2868,11 +2868,11 @@ virtual void OnDrawRibbonCheckBoxOnList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pCheckBox`  
- [in] `rect`  
- [in] `bIsSelected`  
- [in] `bHighlighted`  
+ [in] *pDC*  
+ [in] *pCheckBox*  
+ [in] *rect*  
+ [in] *bIsSelected*  
+ [in] *bHighlighted*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2894,16 +2894,16 @@ virtual void OnDrawRibbonColorPaletteBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pColorButton`  
- [in] `pIcon`  
- [in] `color`  
- [in] `rect`  
- [in] `bDrawTopEdge`  
- [in] `bDrawBottomEdge`  
- [in] `bIsHighlighted`  
- [in] `bIsChecked`  
- [in] `bIsDisabled`  
+ [in] *pDC*  
+ [in] *pColorButton*  
+ [in] *pIcon*  
+ [in] *rengi*  
+ [in] *rect*  
+ [in] *bDrawTopEdge*  
+ [in] *bDrawBottomEdge*  
+ [in] *bIsHighlighted*  
+ [in] *bIsChecked*  
+ [in] *bIsDisabled*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2917,10 +2917,10 @@ virtual void OnDrawRibbonDefaultPaneButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Şeridi bölmesi için varsayılan düğme için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2938,8 +2938,8 @@ virtual void OnDrawRibbonDefaultPaneButtonContext(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *pButton*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2956,11 +2956,11 @@ virtual void OnDrawRibbonDefaultPaneButtonIndicator(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
- [in] `bIsSelected`  
- [in] `bHighlighted`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
+ [in] *bIsSelected*  
+ [in] *bHighlighted*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2975,9 +2975,9 @@ virtual void OnDrawRibbonGalleryBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rectBorder`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rectBorder*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2991,8 +2991,8 @@ virtual void OnDrawRibbonGalleryButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *pButton*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -3008,10 +3008,10 @@ virtual void OnDrawRibbonKeyTip(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pElement`  
- [in] `rect`  
- [in] `str`  
+ [in] *pDC*  
+ [in] *pElement*  
+ [in] *rect*  
+ [in] *str*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -3026,13 +3026,13 @@ virtual void OnDrawRibbonLabel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pLabel`  
+ [in] *pLabel*  
  Bir işaretçi bir [CMFCRibbonLabel](../../mfc/reference/cmfcribbonlabel-class.md) nesnesi. Framework bu Şerit etiket çizer.  
   
- [in] `rect`  
+ [in] *rect*  
  Şerit paneli sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3048,10 +3048,10 @@ virtual void OnDrawRibbonMainPanelButtonBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi bir `CMFCRibbonButton` Şerit ana panelde bulunur. Çerçeve kenarlığı bu düğme için çizer.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3068,13 +3068,13 @@ virtual void OnDrawRibbonMainPanelFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pPanel`  
+ [in] *pPanel*  
  Bir işaretçi `CMFCRibbonMainPanel`.  
   
- [in] `rect`  
+ [in] *rect*  
  Sınırlarının belirten dikdörtgen `CMFCRibbonMainPanel`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3091,9 +3091,9 @@ virtual void OnDrawRibbonMenuCheckFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -3109,16 +3109,16 @@ virtual COLORREF OnDrawRibbonPanel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pPanel`  
+ [in] *pPanel*  
  Bir işaretçi bir `CMFCRibbonPanel` nesnesi. Framework bu Şerit panel çizer.  
   
- [in] `rectPanel`  
+ [in] *rectPanel*  
  Bölmenin sınırları belirtir dikdörtgen.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  Bölmenin başlık sınırlarının belirtir dikdörtgen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3138,13 +3138,13 @@ virtual void OnDrawRibbonPanelCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pPanel`  
+ [in] *pPanel*  
  Bir işaretçi bir `CMFCRibbonPanel` nesnesi. Framework bu Şerit paneli için resim yazısı çizer.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  Şerit paneli için resim yazısı sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3163,19 +3163,19 @@ virtual void OnDrawRibbonProgressBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pProgress`  
+ [in] *pProgress*  
  Bir işaretçi bir `CMFCRibbonProgressBar` nesnesi. Framework bu ilerleme çubuğu çizer.  
   
- [in] `rectProgress`  
+ [in] *rectProgress*  
  İlerleme çubuğu sınırlarının belirtir dikdörtgen.  
   
- [in] `rectChunk`  
+ [in] *rectChunk*  
  İlerleme çubuğu çevresindeki bölgede sınırlarının belirtir dikdörtgen.  
   
- [in] `bInfiniteMode`  
+ [in] *bInfiniteMode*  
  İlerleme çubuğu modunu gösteren Boole parametresi. Değerini `TRUE` çubuğu sonsuz modunda olduğu anlamına gelir. Varsayılan uygulama, bu parametre kullanmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3192,13 +3192,13 @@ virtual void OnDrawRibbonQuickAccessToolBarSeparator(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pSeparator`  
+ [in] *pSeparator*  
  Bir işaretçi bir [CMFCRibbonSeparator](../../mfc/reference/cmfcribbonseparator-class.md) nesnesi. Framework bu Şerit ayırıcı çizer.  
   
- [in] `rect`  
+ [in] *rect*  
  Ayırıcı sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3215,13 +3215,13 @@ virtual void OnDrawRibbonRecentFilesFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pPanel`  
+ [in] *pPanel*  
  Bir işaretçi **ana** Şerit üzerindeki paneli.  
   
- [in] `rect`  
+ [in] *rect*  
  Son dosyaların listesini çerçeve sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3238,13 +3238,13 @@ virtual void OnDrawRibbonSliderChannel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pSlider`  
+ [in] *pSlider*  
  CMFCRibbonSlider nesnesine bir işaretçi. Framework bu Şerit kaydırıcı kanalı çizer.  
   
- [in] `rect`  
+ [in] *rect*  
  Şerit kaydırıcıyı kanal sınırları belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3264,22 +3264,22 @@ virtual void OnDrawRibbonSliderThumb(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pSlider`  
+ [in] *pSlider*  
  Bir işaretçi bir `CMFCRibbonSlider`. Framework bu Şerit kaydırıcı tutamacın çizer.  
   
- [in] `rect`  
+ [in] *rect*  
  Şerit kaydırıcı tutamacın sınırlarının belirtir dikdörtgen.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Kaydırma vurgulanır gösteren bir Boolean parametresiyle.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  Kaydırma basıldığında gösteren bir Boolean parametresiyle.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  Kaydırma kullanılabilir olup olmadığını belirten bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3300,25 +3300,25 @@ virtual void OnDrawRibbonSliderZoomButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pSlider`  
+ [in] *pSlider*  
  Bir işaretçi bir `CMFCRibbonSlider` nesnesi. Framework bu Şerit kaydırıcı çizer.  
   
- [in] `rect`  
+ [in] *rect*  
  Şerit kaydırıcı üzerinde yakınlaştırma düğmelerini sınırlarının belirtir dikdörtgen.  
   
- [in] `bIsZoomOut`  
+ [in] *bIsZoomOut*  
  Hangi düğmesini gösteren bir Boolean parametresiyle framework çizer. Değerini `TRUE` sol düğmesini gösteren bir "-" uzaklaştırma için. Değerini `FALSE` bir "+" yakınlaştırma için sağ düğmesiyle gösterir.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Düğmesi vurgulanmış olup olmadığını gösteren bir Boole parametresi.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  Düğmeye basıldığında olup olmadığını gösteren bir Boolean parametresiyle.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  Düğmesi kullanılabilir olup olmadığını belirten bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3335,13 +3335,13 @@ virtual COLORREF OnDrawRibbonStatusBarPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pBar`  
+ [in] *pBar*  
  Bir işaretçi durum çubuğuna bölme içerir.  
   
- [in] `pPane`  
+ [in] *pPane*  
  Durum çubuğu bölmesi için bir işaretçi. Bu framework çizer [CMFCRibbonStatusBarPane](../../mfc/reference/cmfcribbonstatusbarpane-class.md) nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3361,13 +3361,13 @@ virtual COLORREF OnDrawRibbonTabsFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- `pWndRibbonBar`  
+ *pWndRibbonBar*  
  Bir işaretçi bir [CMFCRibbonBar](../../mfc/reference/cmfcribbonbar-class.md) nesnesi. Framework bu Şerit çubuğu çerçeve çizer.  
   
- `rectTab`  
+ *rectTab*  
  Şerit Sekmeleri sınırlarının belirtir dikdörtgen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3389,11 +3389,11 @@ virtual void OnDrawScrollButtons(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
- [in] `nBorderSize`  
- [in] `iImage`  
- [in] `bHilited`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *nBorderSize*  
+ [in] *iImage*  
+ [in] *bHilited*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -3409,16 +3409,16 @@ virtual void OnDrawSeparator(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Denetim çubuğu için cihaz bağlamı için bir işaretçi.  
   
- [in] `pBar`  
+ [in] *pBar*  
  Ayırıcı içeren bir bölme için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Ayırıcı sınırlarının belirtir dikdörtgen.  
   
- [in] `bIsHoriz`  
+ [in] *bIsHoriz*  
  Yerleşik bölmesinde yönünü gösteren Boole parametresi. Değerini `TRUE` bölmesinin yatay yerleştirildiğini gösterir. Değerini `FALSE` Bölmesi Dikey yerleştirildiğini gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3435,9 +3435,9 @@ virtual void OnDrawShowAllMenuItems(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
- [in] `state`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *durumu*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -3454,23 +3454,23 @@ virtual void OnDrawSpinButtons(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectSpin`  
+ [in] *rectSpin*  
  Döndürme denetimi sınırlarının belirtir dikdörtgen.  
   
- [in] `nState`  
+ [in] *nDurum*  
  Döndürme denetimi durumunu gösteren bir bayrak. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
- [in] `bOrientation`  
+ [in] *bOrientation*  
  Döndürme denetimi yönünü belirtir Boole parametresi. Değerini `TRUE` döndürme denetimi yatay olduğunu gösterir. Aksi takdirde dikeydir.  
   
- [in] `pSpinCtrl`  
+ [in] *pSpinCtrl*  
  Döndürme denetimi için bir işaretçi. Çerçeve bu denetim için düğmeler çizer.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `nState` Parametresi döndürme denetimi durumunu gösterir. Parametresi şu değerlerden biri:  
+ *NDurum* parametresi döndürme denetimi durumunu gösterir. Parametresi şu değerlerden biri:  
   
 -   AFX_SPIN_PRESSEDUP  
   
@@ -3495,13 +3495,13 @@ virtual void OnDrawSplitterBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pSplitterWnd`  
+ [in] *pSplitterWnd*  
  Bölümlendirici pencere için bir işaretçi. Çerçeve kenarlığı Bu pencere için çizer.  
   
- [in] `rect`  
+ [in] *rect*  
  Bölümlendirici pencere sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3518,13 +3518,13 @@ virtual void OnDrawSplitterBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pSplitterWnd`  
+ [in] *pSplitterWnd*  
  Bölümlendirici pencere için bir işaretçi. Framework bu Bölümlendirici pencere için kutu çizer.  
   
- [in] `rect`  
+ [in] *rect*  
  Bölümlendirici pencere sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3543,19 +3543,19 @@ virtual void OnDrawStatusBarPaneBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pBar`  
+ [in] *pBar*  
  Bir işaretçi bir `CMFCStatusBar` nesnesi. Bu durum çubuğu nesne framework çizer.  
   
- [in] `rectPane`  
+ [in] *rectPane*  
  Durum çubuğu sınırlarının belirtir dikdörtgen.  
   
- [in] `uiID`  
+ [in] *uiID*  
  Durum çubuğu kimliği.  
   
- [in] `nStyle`  
+ [in] *nStyle*  
  Durum çubuğu stili.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3578,31 +3578,31 @@ virtual void OnDrawStatusBarProgress(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Durum çubuğunu cihaz bağlamı için bir işaretçi.  
   
- [in] `pStatusBar`  
+ [in] *pStatusBar*  
  `CMFCStatusBar` İlerleme çubuğu içeren nesne.  
   
- [in] `rectProgress`  
+ [in] *rectProgress*  
  İlerleme çubuğu sınırlarının belirtir dikdörtgen.  
   
- [in] `nProgressTotal`  
+ [in] *nProgressTotal*  
  İlerleme çubuğu toplam sayısı.  
   
- [in] `nProgressCurr`  
+ [in] *nProgressCurr*  
  İlerleme çubuğu geçerli ilerleme durumu.  
   
- [in] `clrBar`  
+ [in] *clrBar*  
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametresi ilerleme çubuğu başlangıç rengini belirtir. Bir renk geçişin başlangıç ya da ilerleme çubuğu tam rengi değerdir.  
   
- [in] `clrProgressBarDest`  
- A `COLORREF` ilerleme çubuğu için renk gradyan sonunu gösterir parametresi. Varsa `clrProgressBarDest` -1 ' dir framework ilerleme çubuğu renk gradyan olarak çekmek değil. Bunun yerine, belirtilen renkle tüm ilerleme çubuğu doldurur `clrBar`.  
+ [in] *clrProgressBarDest*  
+ A `COLORREF` ilerleme çubuğu için renk gradyan sonunu gösterir parametresi. Varsa *clrProgressBarDest* -1 ' dir framework ilerleme çubuğu renk gradyan olarak çekmek değil. Bunun yerine, belirtilen renkle tüm ilerleme çubuğu doldurur *clrBar*.  
   
- [in] `clrProgressText`  
- A `COLORREF` parametresi geçerli ilerleme metinsel gösterimini metin rengini belirtir. Bu parametre yoksayılır `bProgressText` ayarlanır `FALSE`.  
+ [in] *clrProgressText*  
+ A `COLORREF` parametresi geçerli ilerleme metinsel gösterimini metin rengini belirtir. Bu parametre yoksayılır *bProgressText* ayarlanır `FALSE`.  
   
- [in] `bProgressText`  
+ [in] *bProgressText*  
  Geçerli ilerleme metinsel gösterimini görüntülenip görüntülenmeyeceğini gösteren bir Boolean parametresiyle.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3619,13 +3619,13 @@ virtual void OnDrawStatusBarSizeBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pStatBar`  
+ [in] *pStatBar*  
  Durum çubuğu için bir işaretçi. Bu durum çubuğu boyut kutusu framework çizer.  
   
- [in] `rectSizeBox`  
+ [in] *rectSizeBox*  
  Boyut kutusu sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3644,19 +3644,19 @@ virtual void OnDrawTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectTab`  
+ [in] *rectTab*  
  Sekme denetimi sınırlarının belirtir dikdörtgen.  
   
- [in] `iTab`  
+ [in] *iTab*  
  Framework çizer sekmesini dizini.  
   
- [in] `bIsActive`  
+ [in] *bIsActive*  
  Sekme etkin olup olmadığını belirtir Boole parametresi.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  Bir işaretçi bir `CMFCBaseTabCtrl` nesnesi. Bu sekme denetimi framework çizer.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3678,26 +3678,26 @@ virtual void OnDrawTabCloseButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Sınırlarının belirten dikdörtgen **Kapat** düğmesi.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  Sekme denetimine işaretçi. Framework çizer **Kapat** Bu sekme denetimi düğmesi.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Gösteren bir Boolean parametresiyle olup olmadığını **Kapat** düğmesi vurgulanmış.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  Gösteren bir Boolean parametresiyle olup olmadığını **Kapat** düğmesine basıldığında.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  Gösteren bir Boolean parametresiyle olup olmadığını **Kapat** düğmesi devre dışıdır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Görünümünü özelleştirmek için türetilmiş bir görsel Yöneticisi'nde bu yöntemi geçersiz kılın **Kapat** düğmesi etkin sekmesinde `pTabWnd`.  
+ Görünümünü özelleştirmek için türetilmiş bir görsel Yöneticisi'nde bu yöntemi geçersiz kılın **Kapat** düğmesi etkin sekmesinde *pTabWnd*.  
   
 ##  <a name="ondrawtabcontent"></a>  CMFCVisualManager::OnDrawTabContent  
  Örneği iç üzerinde bulunan içeriği çizer zaman çerçevesi bu yöntemi çağırır [CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md).  
@@ -3713,22 +3713,22 @@ virtual void OnDrawTabContent(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectTab`  
+ [in] *rectTab*  
  Sekme iç sınırlarının belirtir dikdörtgen.  
   
- [in] `iTab`  
+ [in] *iTab*  
  Sekme sıfır tabanlı dizini. Bu sekme iç framework çizer.  
   
- [in] `bIsActive`  
+ [in] *bIsActive*  
  Bir sekme etkin olup olmadığını gösteren bir Boole parametresi.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  Çizilen sekmesini içeren sekmeli denetimi için bir işaretçi.  
   
- [in] `clrText`  
+ [in] *clrText*  
  Sekmenin iç metin rengi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3747,19 +3747,19 @@ virtual void OnDrawTabsButtonBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Sekme düğmesine sınırlarının belirtir dikdörtgen.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi bir [CMFCButton](../../mfc/reference/cmfcbutton-class.md) nesnesi. Çerçeve kenarlığı bu çizer `CMFCButton` örneği.  
   
- [in] `uiState`  
+ [in] *uiState*  
  Düğmenin durumunu belirten imzalanmamış tamsayı.  
   
- [in] `pWndTab`  
+ [in] *pWndTab*  
  Üst sekmesi penceresi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3778,23 +3778,23 @@ virtual void OnDrawTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pTask`  
+ [in] *pTask*  
  Bir işaretçi bir [CMFCTasksPaneTask](../../mfc/reference/cmfctaskspanetask-class.md) nesnesi. Bu görev framework çizer.  
   
- [in] `pIcons`  
+ [in] *pIcons*  
  Görev bölmesi ilişkilendirilmiş resim listesi için bir işaretçi. Her görev için görüntüyü bu listedeki bir dizin içerir.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Görüntülenen görev vurgulanmış olup olmadığını belirten bir Boole parametresi.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  Görüntülenen görev seçili olup olmadığını belirten Boolean bir parametre.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework görevleri görev çubuğunda bir simge ve metin olarak görüntüler. `pIcons` Parametresi tarafından belirtilen görev simgesi içeren `pTask`.  
+ Framework görevleri görev çubuğunda bir simge ve metin olarak görüntüler. *PIcons* parametresi tarafından belirtilen görev simgesi içeren *pTask*.  
   
  Görev çubuğunda görevler görünümünü özelleştirmek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
   
@@ -3810,16 +3810,16 @@ virtual void OnDrawTasksGroupAreaBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Görev bölmesinde grup alanının sınırları belirtir dikdörtgen.  
   
- [in] `bSpecial`  
+ [in] *bÖzel*  
  Kenarlık vurgulanır belirten bir Boolean parametre. Değerini `TRUE` kenarlık vurgulanır gösterir.  
   
- [in] `bNoTitle`  
+ [in] *bNoTitle*  
  Grup alanında bir başlık olup olmadığını belirtir Boole parametresi. Değerini `TRUE` grup alanında bir başlık yok gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3838,19 +3838,19 @@ virtual void OnDrawTasksGroupCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pGroup`  
+ [in] *pGroup*  
  Bir işaretçi bir `CMFCTasksPaneTaskGroup` nesnesi. Bu grup için resim yazısı framework çizer.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Grup vurgulanmış olup olmadığını gösteren bir Boolean parametresiyle.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  Grup şu anda seçili olup olmadığını gösteren bir Boole parametresi.  
   
- [in] `bCanCollapse`  
+ [in] *bCanCollapse*  
  Grup daraltılmış olup olmadığını gösteren bir Boolean parametresiyle.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3872,12 +3872,12 @@ virtual void OnDrawTasksGroupIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pGroup`  
- [in] `nIconHOffset`  
- [in] `bIsHighlighted`  
- [in] `bIsSelected`  
- [in] `bCanCollapse`  
+ [in] *pDC*  
+ [in] *pGroup*  
+ [in] *nIconHOffset*  
+ [in] *bIsHighlighted*  
+ [in] *bIsSelected*  
+ [in] *bCanCollapse*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -3892,13 +3892,13 @@ virtual void OnDrawTearOffCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Resim yazısını sınırlarının belirtir dikdörtgen.  
   
- [in] `bIsActive`  
+ [in] *bIsActive*  
  `TRUE` Resim yazısını etkinse; `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3916,8 +3916,8 @@ virtual void OnDrawToolBoxFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *rect*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -3931,10 +3931,10 @@ virtual BOOL OnEraseMDIClientArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  MDI istemci alanı sınırlarının belirtir dikdörtgen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3954,9 +3954,9 @@ virtual void OnErasePopupWindowButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rectClient`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *rectClient*  
+ [in] *pButton*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -3971,17 +3971,17 @@ virtual void OnEraseTabsArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Sekme alanı sınırlarının belirtir dikdörtgen.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  Sekmesi penceresi için bir işaretçi. Framework belirtilen sekme penceresinde sekme alanı siler.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev çerçevesi tarafından çağrılır olduğunda bir [CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md) nesne işlemleri bir `WM_PAINT` iletisi ve sekme alanı siler.  
+ Bu işlev çerçevesi tarafından çağrılır olduğunda bir [CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md) nesne WM_PAINT iletisini işler ve sekme alanı siler.  
   
  Sekmeler görünümünü özelleştirmek için türetilmiş bir görsel Yöneticisi'nde bu yöntemi geçersiz kılın.  
   
@@ -3997,20 +3997,20 @@ virtual void OnEraseTabsButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Sekme düğmesine sınırlarının belirtir dikdörtgen.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Sekme düğmesini gösteren bir işaretçi. Metin ve bu düğmesi için simge framework siler.  
   
- [in] `pWndTab`  
+ [in] *pWndTab*  
  Sekme düğmeyi içeren sekme denetimi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Metin ve düğmesi için simge framework sildiği olduğunda bir [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) nesne işlemleri `WM_ERASEBKGND` ileti.  
+ Metin ve düğmesi için simge framework sildiği olduğunda bir [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) nesnesini WM_ERASEBKGND yapılacak işler.  
   
  Sekme düğmeleri görünümünü özelleştirmek için bir türetilmiş visual Yöneticisi'nde bu yöntemi geçersiz kılın.  
   
@@ -4025,20 +4025,20 @@ virtual BOOL OnEraseTabsFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Sekme penceresinde sınırlarının belirtir dikdörtgen.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  Sekmesi penceresi için bir işaretçi. Bunun için bir çerçeve framework sildiği `CMFCBaseTabCtrl`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` yöntem başarılı olursa; `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem tarafından belirtilen alan doldurur `rect` ile etkin sekme arka plan rengi. Aldığında çağrılan bir `CMFCBaseTabCtrl` nesne işlemleri bir `WM_PAINT` iletisi ve sekmesini çerçeve siler.  
+ Bu yöntem tarafından belirtilen alan doldurur *rect* ile etkin sekme arka plan rengi. Aldığında çağrılan bir `CMFCBaseTabCtrl` nesne WM_PAINT iletisini işler ve sekmesini çerçeve siler.  
   
 ##  <a name="onfillautohidebuttonbackground"></a>  CMFCVisualManager::OnFillAutoHideButtonBackground  
  Bir otomatik olarak gizle düğmenin arka planı doldurduğunda framework bu yöntemi çağırır.  
@@ -4051,13 +4051,13 @@ virtual void OnFillAutoHideButtonBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Otomatik Gizle düğmesini sınırlarının belirtir dikdörtgen.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi bir [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) nesnesi. Bu otomatik olarak gizle düğmesi için arka plan framework doldurur.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4076,19 +4076,19 @@ virtual void OnFillBarBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Denetim çubuğu için cihaz bağlamı için bir işaretçi.  
   
- [in] `pBar`  
+ [in] *pBar*  
  Bir işaretçi bir `CBasePane` nesnesi. Çerçeve arka plan bu bölmesinin doldurur.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  Bölmesinde sınırlarının belirtir dikdörtgen.  
   
- [in] `rectClip`  
+ [in] *rectClip*  
  Kırpma alanı bölmesinin belirtir dikdörtgen.  
   
- [in] `bNCArea`  
+ [in] *bNCArea*  
  Ayrılmış bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4111,16 +4111,16 @@ virtual void OnFillButtonInterior(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Araç çubuğu düğmesi cihaz bağlamı için bir işaretçi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi bir [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md). Bu düğme için arka plan framework doldurur.  
   
- [in] `rect`  
+ [in] *rect*  
  Araç çubuğu düğmesi sınırlarının belirtir dikdörtgen.  
   
- [in] `state`  
+ [in] *durumu*  
  Araç çubuğu düğmesi durumu.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4144,14 +4144,14 @@ virtual COLORREF OnFillCaptionBarButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pBar`  
- [in] `rect`  
- [in] `bIsPressed`  
- [in] `bIsHighlighted`  
- [in] `bIsDisabled`  
- [in] `bHasDropDownArrow`  
- [in] `bIsSysButton`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *rect*  
+ [in] *bIsPressed*  
+ [in] *bIsHighlighted*  
+ [in] *bIsDisabled*  
+ [in] *bHasDropDownArrow*  
+ [in] *bIsSysButton*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -4168,13 +4168,13 @@ virtual COLORREF OnFillCommandsListBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Düğme sınırlarının belirtir dikdörtgen.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  Düğme seçili olup olmadığını gösteren bir Boole parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -4194,13 +4194,13 @@ virtual void OnFillHeaderCtrlBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pCtrl`  
+ [in] *pCtrl*  
  Bir işaretçi bir [CMFCHeaderCtrl](../../mfc/reference/cmfcheaderctrl-class.md) nesnesi. Framework Bu üstbilgi denetimi için arka plan doldurur.  
   
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Üstbilgi denetimi sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4218,16 +4218,16 @@ virtual COLORREF OnFillMiniFrameCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  Başlık çubuğunu sınırlarının belirtir dikdörtgen.  
   
- [in] `pFrameWnd`  
+ [in] *pFrameWnd*  
  Mini çerçeve penceresi için bir işaretçi. Framework bu penceresinin başlık çubuğunu çizer.  
   
- [in] `bActive`  
+ [in] *bActive*  
  Pencere etkin olup olmadığını gösteren bir Boolean parametresiyle.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -4247,13 +4247,13 @@ virtual void OnFillOutlookBarCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  Başlık çubuğunu sınırlarının belirtir dikdörtgen.  
   
- [out] `clrText`  
+ [out] *clrText*  
  Bir başvuru bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametresi. Yöntemi, bu parametre için başlık çubuğunda metnin rengini yazar.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4272,19 +4272,19 @@ virtual void OnFillOutlookPageButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Outlook sayfa düğmesi sınırlarının belirtir dikdörtgen.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Düğmesi vurgulanmış olup olmadığını belirten Boolean bir parametre.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  Düğmeye basıldığında olup olmadığını belirtir Boole parametresi.  
   
- [out] `clrText`  
+ [out] *clrText*  
  Bir başvuru bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametresi. Bu yöntem, bu parametrede outlook sayfa düğmesi metin rengi depolar.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4300,10 +4300,10 @@ virtual void OnFillPopupWindowBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Açılan pencerede sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4319,14 +4319,14 @@ virtual COLORREF OnFillRibbonButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi bir [CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md) nesnesi. Framework bu Şerit düğmesi iç doldurur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Şerit düğmesi ile belirtilen metin rengini `pButton` Şerit düğmesi metni destekliyorsa. Metin için Şerit düğmesi geçersiz ise -1 değeri.  
+ Şerit düğmesi ile belirtilen metin rengini *pButton* Şerit düğmesi metni destekliyorsa. Metin için Şerit düğmesi geçersiz ise -1 değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Şerit düğmeleri görünümünü özelleştirmek için türetilmiş bir görsel Yöneticisi'nde bu yöntemi geçersiz kılın.  
@@ -4348,35 +4348,35 @@ virtual void OnFillRibbonEdit(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pEdit`  
+ [in] *pEdit*  
  Bir işaretçi bir `CMFCRibbonRichEditCtrl` nesnesi. Çerçeve, bu düzenleme denetimi iç doldurur.  
   
- [in] `rect`  
+ [in] *rect*  
  Düzenleme denetimi sınırlarının belirtir dikdörtgen.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Düzenleme denetimi vurgulanmış olup olmadığını gösteren bir Boole parametresi.  
   
- [in] `bIsPaneHighlighted`  
+ [in] *bIsPaneHighlighted*  
  Üst bölmesi vurgulanmış olup olmadığını gösteren bir Boole parametresi.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  Düzenleme denetimi kullanılabilir olup olmadığını belirten bir Boole parametresi.  
   
- [in] `clrText`  
+ [in] *clrText*  
  Düzenle denetim metin rengi referansı.  
   
- [in] `clrSelBackground`  
+ [in] *clrSelBackground*  
  Vurgulanır düzenleme denetimi arka plan rengini referansı.  
   
- [in] `clrSelText`  
+ [in] *clrSelText*  
  Düzenleme denetimindeki seçili metnin rengini referansı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CMFCRibbonRichEditCtrl` Tarafından gösterilen `pEdit` Şerit üzerindeki birleşik giriş kutusu düğmesi parçası olabilir.  
+ `CMFCRibbonRichEditCtrl` Tarafından gösterilen *pEdit* Şerit üzerindeki birleşik giriş kutusu düğmesi parçası olabilir.  
   
  Görünümünü özelleştirmek için türetilmiş bir görsel Yöneticisi'nde bu yöntemi geçersiz kılın bir `CMFCRibbonRichEditCtrl`.  
   
@@ -4390,14 +4390,14 @@ virtual COLORREF OnFillRibbonMainPanelButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi bir [CMFCRibbonButton sınıfı](../../mfc/reference/cmfcribbonbutton-class.md) nesnesi. Framework bu Şerit düğmesi doldurur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Şerit düğmesi ile belirtilen metin rengini `pButton` Şerit düğmesi metni destekliyorsa. Metin için Şerit düğmesi geçersiz ise -1 değeri.  
+ Şerit düğmesi ile belirtilen metin rengini *pButton* Şerit düğmesi metni destekliyorsa. Metin için Şerit düğmesi geçersiz ise -1 değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Üzerinde Şerit düğmeleri görünümünü özelleştirmek için türetilmiş bir görsel Yöneticisi'nde bu yöntemi geçersiz kılın **ana** paneli.  
@@ -4413,13 +4413,13 @@ virtual void OnFillRibbonMenuFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pPanel`  
+ [in] *pPanel*  
  Örneği için bir işaretçi [CMFCRibbonMainPanel sınıfı](../../mfc/reference/cmfcribbonmainpanel-class.md). Framework bu Şerit panel menüsünde Çerçeve doldurur.  
   
- [in] `rect`  
+ [in] *rect*  
  Menü çerçeve sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4436,9 +4436,9 @@ virtual void OnFillRibbonQuickAccessToolBarPopup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `pMenuBar`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pMenuBar*  
+ [in] *rect*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -4453,13 +4453,13 @@ virtual void OnFillSplitterBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pSplitterWnd`  
+ [in] *pSplitterWnd*  
  Örneği için bir işaretçi [CSplitterWndEx sınıfı](csplitterwndex-class.md). Çerçeve arka plan bu Bölümlendirici pencere için doldurur.  
   
- [in] `rect`  
+ [in] *rect*  
  Bölümlendirici pencere sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4479,22 +4479,22 @@ virtual void OnFillTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectFill`  
+ [in] *rectFill*  
  Sekme penceresinde sınırları belirtir dikdörtgen.  
   
- [in] `pbrFill`  
+ [in] *pbrFill*  
  Fırça gösteren bir işaretçi. Çerçeve bu fırça sekmesini pencereyi doldurmak için kullanılır.  
   
- [in] `iTab`  
+ [in] *iTab*  
  Çerçeve arka plan doldurur sekme sıfır tabanlı sekmesini dizini.  
   
- [in] `bIsActive`  
+ [in] *bIsActive*  
  `TRUE` Sekme etkinse; Aksi takdirde `FALSE`.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  Üst sekme denetimi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4511,13 +4511,13 @@ virtual void OnFillTasksGroupInterior(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Görev gurubunun sınırlarının belirtir dikdörtgen.  
   
- [in] `bSpecial`  
+ [in] *bÖzel*  
  İç özel renkle dolu olmadığını belirten bir Boole değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4533,10 +4533,10 @@ virtual void OnFillTasksPaneBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectWorkArea`  
+ [in] *rectWorkArea*  
  Görev bölmesi sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4554,22 +4554,22 @@ virtual void OnHighlightMenuItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir menüyü cihaz bağlamı için bir işaretçi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi bir [CMFCToolBarMenuButton](../../mfc/reference/cmfctoolbarmenubutton-class.md) görüntülenecek nesne. Varsayılan uygulama, bu parametre kullanmaz.  
   
- [in] `rect`  
+ [in] *rect*  
  Menü öğesi sınırlarının belirtir dikdörtgen.  
   
- [in] `clrText`  
+ [in] *clrText*  
  Vurgulanan menü öğeleri geçerli metin rengi. Varsayılan uygulama, bu parametre kullanmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem varsayılan uygulaması parametre kullanmıyor `pButton` veya `clrText`. Tarafından belirtilen dikdörtgen doldurur `rect` standart arka plan rengi.  
+ Bu yöntem varsayılan uygulaması parametre kullanmıyor *pButton* veya *clrText*. Tarafından belirtilen dikdörtgen doldurur *rect* standart arka plan rengi.  
   
- Vurgulanan menü öğeleri görünümünü özelleştirmek için türetilmiş bir görsel Yöneticisi'nde bu yöntemi geçersiz kılın. Kullanım `clrText` vurgulanan menü öğesinin metin rengini değiştirmek için parametre.  
+ Vurgulanan menü öğeleri görünümünü özelleştirmek için türetilmiş bir görsel Yöneticisi'nde bu yöntemi geçersiz kılın. Kullanım *clrText* vurgulanan menü öğesinin metin rengini değiştirmek için parametre.  
   
 ##  <a name="onhighlightrarelyusedmenuitems"></a>  CMFCVisualManager::OnHighlightRarelyUsedMenuItems  
  Vurgulanan menü komutu çizer zaman çerçevesi bu yöntemi çağırır.  
@@ -4581,10 +4581,10 @@ virtual void OnHighlightRarelyUsedMenuItems(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectRarelyUsed`  
+ [in] *rectRarelyUsed*  
  Vurgulanan komutu sınırlarının belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4600,8 +4600,8 @@ virtual BOOL OnNcActivate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
- [in] `bActive`  
+ [in] *pWnd*  
+ [in] *bActive*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -4618,13 +4618,13 @@ virtual BOOL OnNcPaint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  İstemci dışı alan framework çizer penceresi için bir işaretçi.  
   
- [in] `lstSysButtons`  
+ [in] *lstSysButtons*  
  Sistem düğmeleri listesi. Bu resim yazısı düğmeleri olarak da bilinen değildir.  
   
- [in] `rectRedraw`  
+ [in] *rectRedraw*  
  İstemci dışı alan sınırlarının belirtir dikdörtgen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -4643,10 +4643,10 @@ virtual BOOL OnSetWindowRegion(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Değiştirilen bölge penceresiyle gösteren bir işaretçi.  
   
- [in] `sizeWindow`  
+ [in] *sizeWindow*  
  Pencere boyutu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -4663,7 +4663,7 @@ virtual void OnUpdateSystemColors();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çerçeve işleme bir parçası olarak bu yöntemi çağırır `WM_SYSCOLORCHANGE` ileti. Varsayılan uygulama hiçbir şey yapmaz. Özel kod renkleri uygulamanızda değiştirdiğinizde çalıştırmak istiyorsanız türetilmiş bir görsel Yöneticisi'nde bu yöntemi geçersiz kılın.  
+ Framework WM_SYSCOLORCHANGE ileti işlenirken bir parçası olarak bu yöntemi çağırır. Varsayılan uygulama hiçbir şey yapmaz. Özel kod renkleri uygulamanızda değiştirdiğinizde çalıştırmak istiyorsanız türetilmiş bir görsel Yöneticisi'nde bu yöntemi geçersiz kılın.  
   
 ##  <a name="redrawall"></a>  CMFCVisualManager::RedrawAll  
  Hemen tüm denetim çubukları uygulamada yeniden çizer.  
@@ -4680,7 +4680,7 @@ virtual COLORREF RibbonCategoryColorToRGB(AFX_RibbonCategoryColor color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `color`  
+ [in] *rengi*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -4694,7 +4694,7 @@ static void SetDefaultManager(CRuntimeClass* pRTI);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pRTI`  
+ [in] *pRTI*  
  Çalışma zamanı bilgileri visual Yöneticisi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4710,7 +4710,7 @@ void SetEmbossDisabledImage (BOOL bEmboss = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEmboss`  
+ [in] *bEmboss*  
  Kabarık modu için etkinleştirilip etkinleştirilmeyeceğini gösteren bir Boolean parametresiyle araç görüntüleri devre dışı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4724,7 +4724,7 @@ void SetFadeInactiveImage(BOOL bFade = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bFade`  
+ [in] *bFade*  
  Işık efekti etkinleştirilip etkinleştirilmeyeceğini belirtir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4738,7 +4738,7 @@ void SetMenuFlatLook(BOOL bMenuFlatLook = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bMenuFlatLook`  
+ [in] *bMenuFlatLook*  
  Menü düğmelerini düz görünüp görünmediğini gösterir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4752,7 +4752,7 @@ void SetMenuShadowDepth(int nDepth);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nDepth`  
+ [in] *nDepth*  
  Menü gölge derinliğini piksel cinsinden belirten bir tamsayı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -4766,7 +4766,7 @@ void SetShadowHighlightedImage(BOOL bShadow = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShadow`  
+ [in] *bShadow*  
  Visual Yöneticisi vurgulanan görüntüleri altında gölge gösterip göstermediğini belirten bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  

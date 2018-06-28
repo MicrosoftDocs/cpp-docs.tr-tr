@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d9c60ee3601cd4055e963997a6cd4f8bbd48b14
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 506ef6d9d70f336ad5a8b8df36a07ed5ba6480e6
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369879"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042189"
 ---
 # <a name="cmfcautohidebar-class"></a>CMFCAutoHideBar sınıfı
 `CMFCAutoHideBar` Sınıftır otomatik gizleme özelliğini uygulayan bir özel araç.  
@@ -136,16 +136,16 @@ CMFCAutoHideButton* AddAutoHideWindow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pAutoHideWnd`  
+ [in] *pAutoHideWnd*  
  Gizlemek istediğiniz penceresini açın.  
   
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  Uygulama penceresi ile otomatik olarak gizle düğmesi hizalamasını belirten bir değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
- `dwAlignment` Parametre, otomatik olarak gizle düğmesi uygulamada bulunduğu belirtir. Parametresi şu değerlerden biri olabilir:  
+ *DwAlignment* parametre, otomatik olarak gizle düğmesi uygulamada bulunduğu belirtir. Parametresi şu değerlerden biri olabilir:  
   
 - `CBRS_ALIGN_LEFT`  
   
@@ -176,8 +176,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bStretch`  
- [in] `bHorz`  
+ [in] *bStretch*  
+ [in] *bHorz*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -207,13 +207,13 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszClassName`  
- [in] `dwStyle`  
- [in] `rect`  
- [in] `pParentWnd`  
- [in] `nID`  
- [in] `dwControlBarStyle`  
- [in] `pContext`  
+ [in] *lpszClassName*  
+ [in] *dwStyle*  
+ [in] *rect*  
+ [in] *pParentWnd*  
+ [in] *nID*  
+ [in] *dwControlBarStyle*  
+ [in] *pContext*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -261,7 +261,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CPoint`  
+ [in] *CPoint*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -275,7 +275,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- CDockablePane * `pAutoHideWnd`  
+ CDockablePane * *pAutoHideWnd*  
  Kaldırmak için otomatik olarak gizle penceresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -291,7 +291,7 @@ virtual void SetActiveInGroup(BOOL bActive);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] BOOL `bActive`  
+ [in] BOOL *bActive*  
  Etkin olarak için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -305,7 +305,7 @@ void SetRecentVisibleState(BOOL bState);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bState`  
+ [in] *bState*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -320,11 +320,11 @@ BOOL ShowAutoHideWindow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] CDockablePane * `pAutoHideWnd`  
- [in] BOOL `bShow`  
+ [in] CDockablePane * *pAutoHideWnd*  
+ [in] BOOL *bBilgi Göster*  
  Pencereyi göstermek için TRUE.  
   
- [in] BOOL `bDelay`  
+ [in] BOOL *bDelay*  
  Bu parametre yoksayıldı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -342,10 +342,10 @@ virtual CSize StretchPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nLength`  
+ [in] *nLength*  
  Değer taban uygulamasında kullanılmıyor. Türetilen uygulamalarında, bu değer yeniden boyutlandırılan bölmesinde uzunluğunu belirtmek için kullanın.  
   
- [in] `bVert`  
+ [in] *bVert*  
  Değer taban uygulamasında kullanılmıyor. Türetilen uygulamalarında kullanımı `TRUE` burada çubuğunu otomatik gizle daraltıldığında dikey olarak durumu işlemek için ve `FALSE` nerede çubuğunu otomatik gizle daraltıldığında yatay olarak çalışması için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

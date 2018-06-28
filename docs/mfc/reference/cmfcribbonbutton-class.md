@@ -124,12 +124,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68320402a21fadd516e2c2f37b7cb437df6b74a6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8dc6e780ece78bca59a95f8050a36a77656f0ad6
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376424"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040044"
 ---
 # <a name="cmfcribbonbutton-class"></a>CMFCRibbonButton sınıfı
 `CMFCRibbonButton` Sınıfı paneller, hızlı erişim araç çubukları ve açılır menüler gibi Şerit çubuğu öğelerde yerleştirebilir düğmeleri uygular.  
@@ -261,10 +261,10 @@ void AddSubItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pSubItem`  
+ [in] *pSubItem*  
  Yeni öğe eklemek için bir işaretçi belirtir.  
   
- [in] `nIndex`  
+ [in] *nIndex*  
  Menü öğeleri düğmesinin dizi öğesi eklemek dizin belirtir; menü öğeleri dizisi sonunda öğesi eklemek için -1.  
   
 ##  <a name="canbestretched"></a>  CMFCRibbonButton::CanBeStretched  
@@ -318,19 +318,19 @@ CMFCRibbonButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Düğme komut Kimliğini belirtir.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Düğme metni etiketini belirtir.  
   
- [in] `nSmallImageIndex`  
+ [in] *nSmallImageIndex*  
  Düğmenin küçük resim sıfır tabanlı bir dizini üst kategori görüntü listesini belirtir.  
   
- [in] `nLargeImageIndex`  
+ [in] *nLargeImageIndex*  
  Düğmenin büyük görüntü sıfır tabanlı bir dizini üst kategori görüntü listesini belirtir.  
   
- [in] `hIcon`  
+ [in] *hIcon*  
  Düğmenin resim olarak uygulamanın kullandığı simgesi için bir tanıtıcı belirtir.  
   
 ### <a name="example"></a>Örnek  
@@ -348,8 +348,8 @@ CSize DrawBottomText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `bCalcOnly`  
+ [in] *pDC*  
+ [in] *bCalcOnly*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -366,9 +366,9 @@ virtual void DrawImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `type`  
- [in] `rectImage`  
+ [in] *pDC*  
+ [in] *türü*  
+ [in] *rectImage*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -385,11 +385,11 @@ virtual int DrawRibbonText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `strText`  
- [in] `rectText`  
- [in] `uiDTFlags`  
- [in] `clrText`  
+ [in] *pDC*  
+ [in] *strText*  
+ [in] *rectText*  
+ [in] *uiDTFlags*  
+ [in] *clrText*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -403,11 +403,11 @@ int FindSubItemIndexByID(UINT uiID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiID`  
+ [in] *uiID*  
  Açılır menü öğesi komut Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İle ilişkili alt öğenin sıfır tabanlı dizini `uiID`. Bu tür bir alt öğe ise -1.  
+ İle ilişkili alt öğenin sıfır tabanlı dizini *uiID*. Bu tür bir alt öğe ise -1.  
   
 ##  <a name="getcommandrect"></a>  CMFCRibbonButton::GetCommandRect  
 
@@ -428,7 +428,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -442,7 +442,7 @@ HICON GetIcon(BOOL bLargeIcon = TRUE) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bLargeIcon`  
+ [in] *bLargeIcon*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -456,7 +456,7 @@ int GetImageIndex(BOOL bLargeImage) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bLargeImage`  
+ [in] *bLargeImage*  
  Varsa `TRUE`, büyük görüntüleri içeren; Aksi takdirde, küçük resimleri içeren görüntü listesinde resim dizinini döndürür resim listesi resim dizinini döndürür.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -470,7 +470,7 @@ virtual CSize GetImageSize(RibbonImageType type) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `type`  
+ [in] *türü*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -484,7 +484,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -519,7 +519,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -751,7 +751,7 @@ virtual void OnCalcTextSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -763,7 +763,7 @@ virtual void OnClick(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Fare tıklatma konumunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -777,7 +777,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -789,7 +789,7 @@ virtual void OnDrawBorder(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -801,7 +801,7 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -822,11 +822,11 @@ BOOL RemoveSubItem(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nIndex`  
+ [in] *nIndex*  
  Kaldırmak istediğiniz menü öğesi sıfır tabanlı dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Belirtilen öğe başarıyla kaldırıldıysa; Aksi takdirde `FALSE` varsa `nIndex` negatif veya açılır menüde menü öğelerinin sayısını aşıyor.  
+ `TRUE` Belirtilen öğe başarıyla kaldırıldıysa; Aksi takdirde `FALSE` varsa *nIndex* negatif veya açılır menüde menü öğelerinin sayısını aşıyor.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonButton::SetACCData  
  Şerit düğmesi için erişilebilirlik verilerini ayarlar.  
@@ -838,10 +838,10 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParent`  
+ *pParent*  
  Şerit öğesi için üst pencere.  
   
- `data`  
+ *Veri*  
  Şerit öğesi için erişilebilirlik verileri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -857,7 +857,7 @@ void SetAlwaysLargeImage(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bSet`  
+ [in] *bInternet*  
  Varsa `TRUE`, büyük bir görüntü düğme görüntülenir. Aksi takdirde, küçük bir görüntü düğme görüntülenir.  
   
 ##  <a name="setdefaultcommand"></a>  CMFCRibbonButton::SetDefaultCommand  
@@ -868,11 +868,11 @@ void SetDefaultCommand(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bSet`  
+ [in] *bInternet*  
  Varsa `TRUE`, kendi varsayılan komut düğmesi yürütebilir. Varsa `FALSE`, düğme kendi varsayılan komutu yürütülemiyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `bSet` yalnızca düğme menü olduğunda geçerlidir. Varsa `bSet` olan `TRUE`, kendi varsayılan komut düğmesi yürütebilir ve atanan açılır menü yalnızca bir kullanıcı ok düğmesine sağ ucundaki tıkladığında görüntülenir. Aksi takdirde, düğme kendi varsayılan komutu yürütülemiyor ve açılır menü düğmesi alanı bağımsız olarak kullanıcı görünür.  
+ *bInternet* yalnızca düğmesi menü olduğunda geçerlidir. Varsa *bInternet* olan `TRUE`, kendi varsayılan komut düğmesi yürütebilir ve atanan açılır menü yalnızca bir kullanıcı ok düğmesine sağ ucundaki tıkladığında görüntülenir. Aksi takdirde, düğme kendi varsayılan komutu yürütülemiyor ve açılır menü düğmesi alanı bağımsız olarak kullanıcı görünür.  
   
 ##  <a name="setdescription"></a>  CMFCRibbonButton::SetDescription  
 
@@ -882,7 +882,7 @@ virtual void SetDescription(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszText`  
+ [in] *lpszText*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -896,10 +896,10 @@ void SetImageIndex(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nIndex`  
+ [in] *nIndex*  
  Görüntü dizini belirtir.  
   
- [in] `bLargeImage`  
+ [in] *bLargeImage*  
  Varsa `TRUE`, belirtilen dizinde büyük görüntüleri işaret eder. Aksi takdirde dizin küçük resimleri listesine ifade eder.  
   
 ##  <a name="setmenu"></a>  CMFCRibbonButton::SetMenu  
@@ -918,20 +918,20 @@ void SetMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hMenu`  
+ *hMenu*  
  Windows menüsü için bir tanıtıcı.  
   
- `bIsDefaultCommand`  
+ *bIsDefaultCommand*  
  Varsa `TRUE`, kendi varsayılan komut düğmesi yürütebilir; Aksi halde, bir açılır menü düğmesi görüntüler.  
   
- `bRightAlign`  
+ *bRightAlign*  
  Varsa `TRUE`, sağa hizalı menüsü. Aksi takdirde, menü sola hizalı olur.  
   
- `uiMenuResID`  
+ *uiMenuResID*  
  Bir menü kaynak kimliği  
   
 ### <a name="remarks"></a>Açıklamalar  
- Uygulama düğme menü atarken düğmesi, sağ tarafta bir ok görüntüler. Varsa `bIsDefaultCommand` olan `TRUE`, yalnızca kullanıcı oku tıkladığında menüsü görüntülenir. Kullanıcı düğmesine tıklarsa, kendi varsayılan komutu yürütülür. Varsa `bIsDefaultCommand` olan `FALSE`, herhangi bir yere düğmesini tıklatarak menüsü görüntülenir.  
+ Uygulama düğme menü atarken düğmesi, sağ tarafta bir ok görüntüler. Varsa *bIsDefaultCommand* olan `TRUE`, yalnızca kullanıcı oku tıkladığında menüsü görüntülenir. Kullanıcı düğmesine tıklarsa, kendi varsayılan komutu yürütülür. Varsa *bIsDefaultCommand* olan `FALSE`, herhangi bir yere düğmesini tıklatarak menüsü görüntülenir.  
   
 ##  <a name="setparentcategory"></a>  CMFCRibbonButton::SetParentCategory  
 
@@ -941,7 +941,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParent`  
+ [in] *pParent*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -953,7 +953,7 @@ void SetRightAlignMenu(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bSet`  
+ [in] *bInternet*  
  Varsa `TRUE`, sağa hizalı menüsü. Aksi halde menü sola hizalı  
   
 ##  <a name="settext"></a>  CMFCRibbonButton::SetText  
@@ -964,7 +964,7 @@ virtual void SetText(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszText`  
+ [in] *lpszText*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

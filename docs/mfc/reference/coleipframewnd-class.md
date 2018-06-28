@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 466948653a5464a940a027e473e79c00dbf9a6ab
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9136f3c57358a71186b196a4223b401e6abad2a9
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370386"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040031"
 ---
 # <a name="coleipframewnd-class"></a>COleIPFrameWnd sınıfı
 Uygulamanızın yerinde düzenleme penceresinin tabanı.  
@@ -119,10 +119,10 @@ virtual void RepositionFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpPosRect`  
+ *lpPosRect*  
  İşaretçi bir `RECT` yapısı veya `CRect` yerinde içeren bir nesne, pencerenin geçerli konumu koordinatları, istemci alanını göreli piksel cinsinden çerçeve.  
   
- `lpClipRect`  
+ *lpClipRect*  
  İşaretçi bir `RECT` yapısı veya `CRect` yerinde içeren bir nesne, pencerenin geçerli dikdörtgen kırpma koordinatları piksel cinsinden istemci alanını göre çerçeve.  
   
 ### <a name="remarks"></a>Açıklamalar  

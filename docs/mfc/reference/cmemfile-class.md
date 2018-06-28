@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81421c99623fd3ab0abde20b479ec1ba91c3f936
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e13c3b609a53e8c885e04530995a11218bf2704d
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368367"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040070"
 ---
 # <a name="cmemfile-class"></a>CMemFile sınıfı
 [CFile](../../mfc/reference/cfile-class.md)-türetilmiş sınıf bellek dosyalarını destekler.  
@@ -108,7 +108,7 @@ virtual BYTE* Alloc(SIZE_T nBytes);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nBytes`  
+ *nBytes*  
  Ayrılan belleğin bayt sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -130,23 +130,23 @@ void Attach(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpBuffer`  
+ *lpBuffer*  
  İşaretçi eklenmiş arabellek `CMemFile`.  
   
- `nBufferSize`  
+ *nBufferSize*  
  Arabellek boyutunu bayt cinsinden belirten bir tamsayı.  
   
- `nGrowBytes`  
+ *nGrowBytes*  
  Bellek ayırma artırma bayt.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu neden `CMemFile` bellek bloğu bellek dosyasını kullanın.  
   
- Varsa `nGrowBytes` 0 ' dır `CMemFile` dosya uzunluğu ayarlanacağını `nBufferSize`. İlişkili olduğu önce bellek bloğu verilerde buna `CMemFile` dosyası olarak kullanılır. Bu şekilde oluşturulan bellek dosyaları büyütülen olamaz.  
+ Varsa *nGrowBytes* 0 ' dır `CMemFile` dosya uzunluğu ayarlanacağını *nBufferSize*. İlişkili olduğu önce bellek bloğu verilerde buna `CMemFile` dosyası olarak kullanılır. Bu şekilde oluşturulan bellek dosyaları büyütülen olamaz.  
   
- Dosya büyütülmesi olamayacağından neden olmaz dikkatli olun `CMemFile` dosya büyütme girişimi için. Örneğin, çağrı yok `CMemFile` , geçersiz kılmalar [CFile:Write](../../mfc/reference/cfile-class.md#write) için sonunun yazma veya arama yok [CFile:SetLength](../../mfc/reference/cfile-class.md#setlength) daha uzun bir süre ile `nBufferSize`.  
+ Dosya büyütülmesi olamayacağından neden olmaz dikkatli olun `CMemFile` dosya büyütme girişimi için. Örneğin, çağrı yok `CMemFile` , geçersiz kılmalar [CFile:Write](../../mfc/reference/cfile-class.md#write) için sonunun yazma veya arama yok [CFile:SetLength](../../mfc/reference/cfile-class.md#setlength) daha uzun bir süre ile *nBufferSize*.  
   
- Varsa `nGrowBytes` 0'dan büyük `CMemFile` bağlı bellek bloğu içeriğini göz ardı eder. Kullanılarak sıfırdan bellek dosyanın içeriğini yazmak zorunda kalırsınız `CMemFile` , geçersiz kılma `CFile::Write`. Dosya sonunun yazmak veya çağırarak dosya büyütme çalışırsanız `CMemFile` , geçersiz kılma `CFile::SetLength`, `CMemFile` artışlarla bellek ayırma büyüyecektir `nGrowBytes`. Bellek ayırma büyüyen başarısız olur bellek bloğu için geçirirseniz **Attach** ile uyumlu bir yöntem ile ayrılan değildi [ayırma](#alloc). Varsayılan uygulaması ile uyumlu olacak şekilde `Alloc`, çalışma zamanı kitaplığı işlevi bellekle ayırmalısınız [malloc](../../c-runtime-library/reference/malloc.md) veya [calloc](../../c-runtime-library/reference/calloc.md).  
+ Varsa *nGrowBytes* 0'dan büyük `CMemFile` bağlı bellek bloğu içeriğini göz ardı eder. Kullanılarak sıfırdan bellek dosyanın içeriğini yazmak zorunda kalırsınız `CMemFile` , geçersiz kılma `CFile::Write`. Dosya sonunun yazmak veya çağırarak dosya büyütme çalışırsanız `CMemFile` , geçersiz kılma `CFile::SetLength`, `CMemFile` artışlarla bellek ayırma büyüyecektir *nGrowBytes*. Bellek ayırma büyüyen başarısız olur bellek bloğu için geçirirseniz `Attach` ile uyumlu bir yöntem ile ayrılan değildi [ayırma](#alloc). Varsayılan uygulaması ile uyumlu olacak şekilde `Alloc`, çalışma zamanı kitaplığı işlevi bellekle ayırmalısınız [malloc](../../c-runtime-library/reference/malloc.md) veya [calloc](../../c-runtime-library/reference/calloc.md).  
   
 ##  <a name="cmemfile"></a>  CMemFile::CMemFile  
  İlk aşırı boş bellek dosyasını açar.  
@@ -162,19 +162,19 @@ CMemFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nGrowBytes`  
+ *nGrowBytes*  
  Bellek ayırma artırma bayt.  
   
  *lpBuffe*r  
- İşaretçi boyutu bilgilerinin alan arabellek `nBufferSize`.  
+ İşaretçi boyutu bilgilerinin alan arabellek *nBufferSize*.  
   
- `nBufferSize`  
+ *nBufferSize*  
  Dosya arabellek boyutunu bayt cinsinden belirten bir tamsayı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Dosya oluşturucusu tarafından açılmış ve, değil çağırmalıdır Not [CFile::Open](../../mfc/reference/cfile-class.md#open).  
   
- İlk Oluşturucusu kullanılan ve hemen adlı gibi ikinci aşırı aynı davranır [Attach](#attach) aynı parametrelere sahip. Bkz: **Attach** Ayrıntılar için.  
+ İlk Oluşturucusu kullanılan ve hemen adlı gibi ikinci aşırı aynı davranır [Attach](#attach) aynı parametrelere sahip. Bkz: `Attach` Ayrıntılar için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#36](../../atl-mfc-shared/reference/codesnippet/cpp/cmemfile-class_1.cpp)]  
@@ -190,7 +190,7 @@ BYTE* Detach();
  Bellek dosyasının içeriğini içeren bellek bloğu için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev de kapanır çağırma `CMemFile`. Bellek bloğuna iliştirebilirsiniz `CMemFile` çağırarak [Attach](#attach). Dosyayı yeniden bağlayın ve verileri kullanmak istiyorsanız, çağırmalıdır [CFile::GetLength](../../mfc/reference/cfile-class.md#getlength) çağırmadan önce dosya uzunluğu almak için **ayırma**. Bellek bloğuna eklerseniz unutmayın `CMemFile` verileri kullanabilmesi için ( `nGrowBytes` == 0), bellek dosya büyütme açamayacaksınız sonra.  
+ Bu işlev de kapanır çağırma `CMemFile`. Bellek bloğuna iliştirebilirsiniz `CMemFile` çağırarak [Attach](#attach). Dosyayı yeniden bağlayın ve verileri kullanmak istiyorsanız, çağırmalıdır [CFile::GetLength](../../mfc/reference/cfile-class.md#getlength) çağırmadan önce dosya uzunluğu almak için `Detach`. Bellek bloğuna eklerseniz unutmayın `CMemFile` verileri kullanabilmesi için ( `nGrowBytes` == 0), bellek dosya büyütme açamayacaksınız sonra.  
   
 ##  <a name="free"></a>  CMemFile::Free  
  Bu işlev tarafından çağrılır `CMemFile` üye işlevleri.  
@@ -200,7 +200,7 @@ virtual void Free(BYTE* lpMem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpMem`  
+ *lpMem*  
  Bırakılmasına bellek işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -214,7 +214,7 @@ virtual void GrowFile(SIZE_T dwNewLen);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwNewLen`  
+ *dwNewLen*  
  Yeni bellek dosyası boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -231,17 +231,17 @@ virtual BYTE* Memcpy(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpMemTarget`  
+ *lpMemTarget*  
  Kaynak bellek kopyalanacak dosyaların bellek bloğu işaretçi.  
   
- `lpMemSource`  
+ *lpMemSource*  
  Kaynak bellek bloğu işaretçi.  
   
- `nBytes`  
+ *nBytes*  
  Kopyalanacak bayt sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir kopyasını `lpMemTarget`.  
+ Bir kopyasını *lpMemTarget*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Şeklini değiştirmek istiyorsanız, bu işlevi geçersiz kılma, `CMemFile` bu bellek kopyaları yapar.  
@@ -256,10 +256,10 @@ virtual BYTE* Realloc(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpMem`  
+ *lpMem*  
  Ayrılabilecek için bellek bloğu için bir işaretçi.  
   
- `nBytes`  
+ *nBytes*  
  Yeni bellek bloğu boyutu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

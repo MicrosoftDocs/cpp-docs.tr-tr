@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ef3d04291c874bf91ac6ae25fb15929a5c7317f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aede6e3224149bd237ca2bb830370718105e1f83
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374480"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037767"
 ---
 # <a name="cmfcpopupmenubar-class"></a>CMFCPopupMenuBar sınıfı
 Menü çubuğu açılır menü katıştırılır.  
@@ -140,7 +140,7 @@ virtual void AdjustSizeImmediate(BOOL bRecalcLayout);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bRecalcLayout`  
+ [in] *bRecalcLayout*  
  `TRUE` otomatik olarak açılan menü çubuğu bölmesinin düzenini yeniden hesapla için; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -153,7 +153,7 @@ BOOL BuildOrigItems(UINT uiMenuResID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiMenuResID`  
+ [in] *uiMenuResID*  
  Yüklemek için menü kaynağı menü Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -190,7 +190,7 @@ CMFCToolBar* FindDestintationToolBar(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Ekran noktasında.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -257,10 +257,10 @@ virtual BOOL ImportFromMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hMenu`  
+ [in] *hMenu*  
  Menü açılan menü düğmelerini içeri aktarılacak.  
   
- [in] `bShowAllCommands`  
+ [in] *bShowAllCommands*  
  `TRUE` İçeri aktarılacak menüsünde tüm komutları olup olmadığını veya `FALSE` ender kullanılan olanları gizli.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -325,7 +325,7 @@ BOOL LoadFromHash(HMENU hMenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hMenu`  
+ [in] *hMenu*  
  Yükleme için arşivlenmiş menüsüne işleci.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -364,10 +364,10 @@ virtual void SetButtonStyle(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nIndex`  
+ [in] *nIndex*  
  Ayarlanacak stilini iş araç çubuğu düğmesi sıfır tabanlı dizini.  
   
- [in] `nStyle`  
+ [in] *nStyle*  
  Düğmesinin stili. Bkz: [ToolBar denetim stilleri](../../mfc/reference/toolbar-control-styles.md) kullanılabilir araç çubuğu düğmesi stilleri listesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -380,7 +380,7 @@ void SetOffset(int iOffset);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iOffset`  
+ [in] *iOffset*  
  Açılan menü çubuğu uzaklığı, satır sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -395,10 +395,10 @@ void StartPopupMenuTimer(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMenuButton`  
+ [in] *pMenuButton*  
  Gecikme Zamanlayıcı ayarlanacak menü düğmesi işaretçi.  
   
- [in] `nDelayFactor`  
+ [in] *nDelayFactor*  
  Bir gecikme faktörü, en az biri, standart menü gecikme süresini (genellikle bir yarım saniye arasında beş saniye) tarafından çarpılacağı eşittir.  
   
 ### <a name="remarks"></a>Açıklamalar  

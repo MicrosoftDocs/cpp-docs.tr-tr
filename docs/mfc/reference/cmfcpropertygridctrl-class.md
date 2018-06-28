@@ -160,12 +160,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79cba2981a6ae6a742ad2839499f2acff6f0a5f0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3d40ad0bf70fb3fda32265da321a3474723e8037
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379027"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039264"
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl sınıfı
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -332,8 +332,8 @@ virtual HRESULT accSelect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `flagsSelect`  
- [in] `varChild`  
+ [in] *flagsSelect*  
+ [in] *varChild*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -350,13 +350,13 @@ int AddProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pProp`  
+ [in] *pProp*  
  Bir özellik için işaretçi.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` özellik hemen yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
- [in] `bAdjustLayout`  
+ [in] *bAdjustLayout*  
  `TRUE` özelliğin değeri ve metin çizme ve özellik çizmek nasıl yeniden hesaplamak için; `FALSE` varolan hesaplamalar özelliği çizmek için kullanılacak. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -383,7 +383,7 @@ void AlwaysShowUserToolTip(BOOL bShow = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShow`  
+ [in] *bBilgi Göster*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -418,19 +418,19 @@ virtual int CompareProps(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pProp1`  
+ *pProp1*  
  Bir özellik için bir işaretçi.  
   
- `pProp2`  
+ *pProp2*  
  Bir özellik için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 |Dönüş Değeri|Açıklama|  
 |------------------|-----------------|  
-|< 0|Adını `pProp1` parametre adını azdır `pProp2` parametresi.|  
-|0|Adını `pProp1` parametredir adına eşit `pProp2` parametresi.|  
-|> 0|Adını `pProp1` nesnesi adı'den büyük olan `pProp2` parametresi.|  
+|< 0|Adını *pProp1* parametre adını azdır *pProp2* parametresi.|  
+|0|Adını *pProp1* parametredir adına eşit *pProp2* parametresi.|  
+|> 0|Adını *pProp1* nesnesi adı'den büyük olan *pProp2* parametresi.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bu yöntemi kullanır [CString::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) Karşılaştırılacak yöntemi `CMFCPropertyGridProperty::m_strName` belirtilen parametreleri üyeleri.  
@@ -447,16 +447,16 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Bit düzeyinde bileşimini (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] `rect`  
- İstemcisinde boyutunu ve pencere konumunu belirten bir sınırlayıcı dikdörtgenini koordinatları `pParentWnd`.  
+ [in] *rect*  
+ İstemcisinde boyutunu ve pencere konumunu belirten bir sınırlayıcı dikdörtgenini koordinatları *pParentWnd*.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Üst pencere işaretçi. Olmamalıdır `NULL`.  
   
- [in] `nID`  
+ [in] *nID*  
  Alt pencere kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -481,13 +481,13 @@ BOOL DeleteProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pProp`  
+ [in] *pProp*  
  Bir özellik için işaretçi.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` özellik kılavuz denetimi yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
- [in] `bAdjustLayout`  
+ [in] *bAdjustLayout*  
  `TRUE` tüm metin, görüntüler ve öğeleri özelliği kılavuz denetiminde çizmek ve denetimi çizmek nasıl yeniden hesaplamak için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -517,10 +517,10 @@ virtual BOOL EditItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pProp`  
+ [in] *pProp*  
  Bir özellik için işaretçi.  
   
- [in] `lptClick`  
+ [in] *lptClick*  
  Kullanıcı düzenleme işlemine başlamak için tıklattığınız özelliği kılavuz denetim noktasını. Denetimin istemci koordinatları noktasıdır. Varsayılan değer `NULL` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -536,7 +536,7 @@ void EnableDescriptionArea(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` Açıklama alanı'nı etkinleştirmek için; `FALSE` Açıklama alanını devre dışı bırakmak için. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -553,13 +553,13 @@ void EnableHeaderCtrl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` Üstbilgi denetimi etkinleştirmek için; `FALSE` üstbilgi denetimi devre dışı bırakmak için. Varsayılan değer `TRUE` şeklindedir.  
   
- [in] `lpszLeftColumn`  
+ [in] *lpszLeftColumn*  
  Üstbilgi denetimi sol sütun başlığı. Varsayılan değer **özelliği**.  
   
- [in] `lpszRightColumn`  
+ [in] *lpszRightColumn*  
  Üstbilgi denetimi sağ sütun başlığı. Varsayılan değer **değeri**.  
   
 ##  <a name="endedititem"></a>  CMFCPropertyGridCtrl::EndEditItem  
@@ -570,7 +570,7 @@ virtual BOOL EndEditItem(BOOL bUpdateData=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bUpdateData`  
+ [in] *bUpdateData*  
  `TRUE` düzenleme işlemi tamamlandığında, değiştirilen özellik veri doğrulanmalıdır belirtmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -588,10 +588,10 @@ void EnsureVisible(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pProp`  
+ [in] *pProp*  
  Bir özellik için işaretçi.  
   
- [in] `bExpandParents`  
+ [in] *bExpandParents*  
  `TRUE` Belirtilen özellik görünür hale getirmek için üst öğe genişletmek için; Aksi takdirde `FALSE`. Varsayılan, `FALSE` değeridir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -604,7 +604,7 @@ void ExpandAll(BOOL bExpand=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bExpand`  
+ [in] *bExpand*  
  `TRUE` tüm düğümleri genişletmek için; `FALSE` tüm düğümleri daraltmak için. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -619,10 +619,10 @@ CMFCPropertyGridProperty* FindItemByData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwData`  
+ [in] *dwData*  
  A `DWORD` değeri.  
   
- [in] `bSearchSubItems`  
+ [in] *bSearchSubItems*  
  `TRUE` özellik alt öğeleri aramak için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -653,7 +653,7 @@ virtual HRESULT get_accFocus(VARIANT* pvarChild);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pvarChild`  
+ [in] *pvarChild*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -669,8 +669,8 @@ virtual HRESULT get_accHelp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `varChild`  
- [in] `pszHelp`  
+ [in] *varChild*  
+ [in] *pszHelp*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -687,9 +687,9 @@ virtual HRESULT get_accHelpTopic(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pszHelpFile`  
- [in] `varChild`  
- [in] `pidTopic`  
+ [in] *pszHelpFile*  
+ [in] *varChild*  
+ [in] *pidTopic*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -705,8 +705,8 @@ virtual HRESULT get_accKeyboardShortcut(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `varChild`  
- [in] `pszKeyboardShortcut`  
+ [in] *varChild*  
+ [in] *pszKeyboardShortcut*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -720,7 +720,7 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pvarChildren`  
+ [in] *pvarChildren*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -776,25 +776,25 @@ void GetCustomColors(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `clrBackground`  
+ [out] *clrBackground*  
  Özellik değerlerini arka plan rengi.  
   
- [out] `clrText`  
+ [out] *clrText*  
  Özellik adları ve özellik değeri metin rengi.  
   
- [out] `clrGroupBackground`  
+ [out] *clrGroupBackground*  
  Özellik grubu arka plan rengi.  
   
- [out] `clrGroupText`  
+ [out] *clrGroupText*  
  Özellik grubu içindeki metnin rengi.  
   
- [out] `clrDescriptionBackground`  
+ [out] *clrDescriptionBackground*  
  Açıklama alanı arka plan rengi.  
   
- [out] `clrDescriptionText`  
+ [out] *clrDescriptionText*  
  Açıklama alanı içindeki metnin rengi.  
   
- [out] `clrLine`  
+ [out] *clrLine*  
  Özellikleri arasında çizilmiş satırları rengi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -883,10 +883,10 @@ CMFCPropertyGridProperty* GetProperty(int nIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nIndex`  
+ [in] *nIndex*  
  Özellik kılavuz denetim öğesinin sıfır tabanlı dizini.  
   
- Bu yöntem, onaylar `nIndex` parametresi olan az sıfır veya daha büyük veya eşittir özelliklerin sayısı.  
+ Bu yöntem, onaylar *nIndex* parametresi olan az sıfır veya daha büyük veya eşittir özelliklerin sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa belirtilen dizine karşılık gelen özellik nesne için bir işaretçi; Aksi takdirde `NULL`.  
@@ -939,7 +939,7 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nBar`  
+ [in] *nBar*  
  Olmalıdır kaydırma çubuğunun yönlendirmesini `SB_VERT`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -972,24 +972,24 @@ CMFCPropertyGridProperty* HitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pt`  
+ [in] *pt*  
  İstemci koordinatları bir nokta.  
   
- [içinde out] `pnArea`  
+ [içinde out] *pnArea*  
  Bir işaretçi bir `ClickArea` değişkeni. Bu yöntem döndürdüğünde, değişkeni gösterir *özellik alanı* belirtilen noktası içerir. Açıklamalar bir özellik alanı hakkında daha fazla bilgi için bkz.  
   
- [in] `bPropsOnly`  
+ [in] *bPropsOnly*  
  `TRUE` yalnızca özellik alanı test etmek için; `FALSE` test etmek için *açıklama alanı* belirtilen özellik alanı değilse. Varsayılan değer `FALSE` şeklindedir. Açıklamalar açıklama alanı hakkında daha fazla bilgi için bkz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Varsa `bPropsOnly` parametresi `TRUE` ve belirtilen bir özelliği alanında, dönüş değeri karşılık gelen özellik nesnesi için bir işaretçi. Ayrıca, `pnArea` parametresini belirtilen noktası içeren belirli alana ayarlayın. Aksi takdirde, dönüş değeri olan `NULL` ve `pnArea` parametresi değiştirilemez.  
+ Varsa *bPropsOnly* parametresi `TRUE` ve belirtilen bir özelliği alanında, dönüş değeri karşılık gelen özellik nesnesi için bir işaretçi. Ayrıca, *pnArea* parametresini belirtilen noktası içeren belirli alana ayarlayın. Aksi takdirde, dönüş değeri olan `NULL` ve *pnArea* parametresi değiştirilemez.  
   
- Varsa `bPropsOnly` parametresi `FALSE`, dönüş değeri her zaman olduğu `NULL`. Ancak, belirtilen noktası açıklaması alanında ise `pnArea` parametrenin ayarlanmış `CMFCPropertyGridProperty::ClickDescription`.  
+ Varsa *bPropsOnly* parametresi `FALSE`, dönüş değeri her zaman olduğu `NULL`. Ancak, belirtilen noktası açıklaması alanında ise *pnArea* parametrenin ayarlanmış `CMFCPropertyGridProperty::ClickDescription`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Terim *özellik alanı* ada, değere, birine başvuruyor veya bir özellik kılavuz denetim öğesi alanlarının kutusunu genişletin. *Açıklama alanı* özelliği kılavuz denetimi altındaki bölgedir. Bir özellik kılavuz denetim öğesini tıklatın, açıklama alanı karşılık gelen özellik açıklamasını görüntüler.  
   
- Bu yöntem, değişkenin değerini ayarlar `pnArea` parametresi işaret eder. Aşağıdaki tabloda ilgili alanları ve olası değerleri listeler.  
+ Bu yöntem, değişkenin değerini ayarlar *pnArea* parametresi işaret eder. Aşağıdaki tabloda ilgili alanları ve olası değerleri listeler.  
   
 |Değer|Alan|  
 |-----------|----------|  
@@ -1127,10 +1127,10 @@ void MarkModifiedProperties(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bMark`  
+ [in] *bMark*  
  `TRUE` Görüntülenecek kalın stil özelliklerinde değişiklik; `FALSE` Normal stilde değiştirilmiş özelliklerini görüntüleyin. Varsayılan değer `TRUE` şeklindedir.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` özellik kılavuz denetimi hemen yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1148,8 +1148,8 @@ virtual void OnChangeSelection(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `pNewSel`|Yeni seçilen özellik işaretçi.|  
-|[in] `pOldSel`|Daha önce seçilen özellik işaretçi.|  
+|[in] *pNewSel*|Yeni seçilen özellik işaretçi.|  
+|[in] *pOldSel*|Daha önce seçilen özellik işaretçi.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem varsayılan uygulaması hiçbir şey yapmaz.  
@@ -1162,7 +1162,7 @@ virtual void OnClickButton(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  İstemci koordinatları bir nokta.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1176,7 +1176,7 @@ virtual void OnDrawBorder(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1191,10 +1191,10 @@ virtual void OnDrawDescription(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Açıklama alanı çizmek konumu belirtir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1208,7 +1208,7 @@ virtual void OnDrawList(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1223,10 +1223,10 @@ virtual int OnDrawProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pProp`  
+ [in] *pProp*  
  Bir özellik nesnesi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1242,7 +1242,7 @@ virtual void OnPropertyChanged(CMFCPropertyGridProperty* pProp) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pProp`  
+ [in] *pProp*  
  Değeri değişti özellik nesnesi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1274,7 +1274,7 @@ void ResetOriginalValues(BOOL bRedraw=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` özellik listesi yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1287,7 +1287,7 @@ void SetAlphabeticMode(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bSet`  
+ [in] *bInternet*  
  `TRUE` alfabetik modu ayarlamak için; `FALSE` sıfırlama alfabetik modu. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1303,10 +1303,10 @@ void SetBoolLabels(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszTrue`  
+ [in] *lpszTrue*  
  True Boole değeri için görüntülenecek metin dizesi.  
   
- [in] `lpszFalse`  
+ [in] *lpszFalse*  
  False Boole değeri için görüntülenecek metin dizesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1321,10 +1321,10 @@ void SetCurSel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pProp`  
+ [in] *pProp*  
  Bir özellik nesnesi için bir işaretçi.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` özellik kılavuz denetimi hemen yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1345,25 +1345,25 @@ void SetCustomColors(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `clrBackground`  
+ [in] *clrBackground*  
  Özellik değerlerini arka plan rengi.  
   
- [in] `clrText`  
+ [in] *clrText*  
  Özellik adları ve özellik değeri metin rengi.  
   
- [in] `clrGroupBackground`  
+ [in] *clrGroupBackground*  
  Özellik grubu arka plan rengi.  
   
- [in] `clrGroupText`  
+ [in] *clrGroupText*  
  Özellik grubu yeni metin rengi.  
   
- [in] `clrDescriptionBackground`  
+ [in] *clrDescriptionBackground*  
  Açıklama alanı arka plan rengi.  
   
- [in] `clrDescriptionText`  
+ [in] *clrDescriptionText*  
  Açıklama alanı içindeki metnin rengi.  
   
- [in] `clrLine`  
+ [in] *clrLine*  
  Özellikleri arasında çizilmiş satırları rengi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1379,7 +1379,7 @@ void SetDescriptionRows(int nDescRows);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nDescRows`  
+ [in] *nDescRows*  
  Özellik tanımı görüntülenecek satırların sayısı.  
   
 ##  <a name="setgroupnamefullwidth"></a>  CMFCPropertyGridCtrl::SetGroupNameFullWidth  
@@ -1392,10 +1392,10 @@ void SetGroupNameFullWidth(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bGroupNameFullWidth`  
+ [in] *bGroupNameFullWidth*  
  `TRUE` özellik adı sütunun genişliği bağımsız olarak kategori adı tam genişliğini görüntülemek için. `FALSE` Kategori adı özellik adı sütunun genişliği ile genişliğini sınırlamak için. Varsayılan değer `TRUE` şeklindedir.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  `TRUE` özellik kılavuz denetimi hemen güncelleştirmek için; `FALSE` sonraki yeniden boyutlandırmaya olduğunda olay denetimi güncelleştirmek için oluşur. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1411,11 +1411,11 @@ void SetListDelimiter(TCHAR c);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `c`  
+ [in] *c*  
  Ayırıcı olarak hizmet verecek bir karakter.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sınırlayıcı karakter kullanılan özellik değerlerinin listesini tanımlamak için bu yöntemi kullanın [CMFCPropertyGridProperty::CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#cmfcpropertygridproperty) Oluşturucusu. Bu oluşturucuda ayarlamak `bIsValueList` parametresi `TRUE`.  
+ Sınırlayıcı karakter kullanılan özellik değerlerinin listesini tanımlamak için bu yöntemi kullanın [CMFCPropertyGridProperty::CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#cmfcpropertygridproperty) Oluşturucusu. Bu oluşturucuda ayarlamak *bIsValueList* parametresi `TRUE`.  
   
  Varsayılan olarak, [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) Oluşturucusu ayarlar sınırlayıcı karakter için virgül (',').  
   
@@ -1427,7 +1427,7 @@ void SetShowDragContext(BOOL bShowDragContext = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShowDragContext`  
+ [in] *bShowDragContext*  
  `TRUE` ad ve değer sütunları yeniden boyutlandırma işlemi sırasında yeniden çizmek için; `FALSE` sürükleme işlemi tamamlandıktan sonra sütunları yeniden çizmek için. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1441,7 +1441,7 @@ void SetVSDotNetLook(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bSet`  
+ [in] *bInternet*  
  `TRUE` Visual Studio .NET içinde kullanılan stil özelliği kılavuz denetimi ayarlamak için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1454,7 +1454,7 @@ virtual void UpdateColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `color`  
+ [in] *rengi*  
  RGB renk değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1471,13 +1471,13 @@ virtual BOOL ValidateItemData(CMFCPropertyGridProperty* pProp);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `pProp`|Bir özellik için işaretçi. Bu parametre kullanılmaz.|  
+|[in] *pProp*|Bir özellik için işaretçi. Bu parametre kullanılmaz.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Her zaman `TRUE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- [CMFCPropertyGridCtrl::EndEditItem](#endedititem) yöntemi verileri doğrulamak için bu yöntemi çağırır. Varsayılan olarak, bu yöntem kullanmaz, `pProp` parametre ve dönüş değerini olduğundan her zaman `TRUE`.  
+ [CMFCPropertyGridCtrl::EndEditItem](#endedititem) yöntemi verileri doğrulamak için bu yöntemi çağırır. Varsayılan olarak, bu yöntem kullanmaz, *pProp* parametre ve dönüş değerini olduğundan her zaman `TRUE`.  
   
  Bu yöntemi geçersiz kılarsanız, dönüş `TRUE` belirtilen özellik veriler geçerliyse. Aksi takdirde, dönüş `FALSE`, bu durumda framework özelliğini güncelleştirmez.  
   

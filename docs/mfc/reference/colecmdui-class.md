@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6195735c25bb188449638750f6100869a44f082
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c80c3b81b804a66e70efe9269b12d4e18d31c676
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370763"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040720"
 ---
 # <a name="colecmdui-class"></a>COleCmdUI sınıfı
 Kullanıcı arabirimi nesneleri durumunu güncelleştirmek MFC için bir yöntem ile ilgili uygulayan `IOleCommandTarget`-uygulamanızın özelliklerini güdümlü.  
@@ -82,13 +82,13 @@ COleCmdUI(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rgCmds`  
+ *rgCmds*  
  Verilen GUID ile ilişkili desteklenen komutlar listesi. **OLECMD** yapısı komutu bayraklarıyla komutları ilişkilendirir.  
   
  *cCmds*  
- Komutlarda sayısı `rgCmds`.  
+ Komutlarda sayısı *rgCmds*.  
   
- `pGroup`  
+ *pGroup*  
  Bir işaretçi komutları kümesini tanımlayan bir GUID.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -102,7 +102,7 @@ virtual void Enable(BOOL bOn);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bOn`  
+ *İyi*  
  Komutu ile ilişkili olup olmadığını gösteren `COleCmdUI` nesne etkinleştirilecek veya devre dışı. NonZero komutu sağlar; 0 komutu devre dışı bırakır.  
   
 ##  <a name="setcheck"></a>  COleCmdUI::SetCheck  
@@ -113,14 +113,14 @@ virtual void SetCheck(int nCheck);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCheck`  
+ *Nbakım*  
  Açık/kapalı iki durumlu ayarlamak için durumu belirleme bir değer komutu. Değerler şunlardır:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |**1**|Komut göre ayarlar.|  
 |**2**|Komut için belirsiz ayarlar; Bu komutun özniteliği hem şirket hem de ilgili seçim Devletler'de devre dışı olduğundan durumu belirlenemiyor.|  
-|Başka bir değer|Komutu, OFF olarak ayarlar.|  
+|başka bir değer|Komutu, OFF olarak ayarlar.|  
   
 ##  <a name="settext"></a>  COleCmdUI::SetText  
  Bir komut için bir metin adı ya da durum dize döndürmek için bu işlevini çağırın.  
@@ -130,7 +130,7 @@ virtual void SetText(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszText`  
+ *lpszText*  
  Komutu ile kullanılacak metni için bir işaretçi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 795e5548e93323af389c3faeaefa7dda0bf7d80c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: af19a9dcb207afa482f54e26540a6b706d607ce0
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376255"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040775"
 ---
 # <a name="cmfcimageeditordialog-class"></a>CMFCImageEditorDialog sınıfı
 `CMFCImageEditorDialog` Sınıfı, bir görüntü Düzenleyicisi iletişim kutusu destekler.  
@@ -86,14 +86,14 @@ CMFCImageEditorDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pBitmap`  
+ *pBitmap*  
  Bir görüntü işaretçi.  
   
- `pParent`  
+ *pParent*  
  Geçerli görüntü Düzenleyicisi iletişim kutusunun üst pencere işaretçi.  
   
- `nBitsPixel`  
- Renk derinliği da adlandırılır tek bir piksel rengi temsil etmek için kullanılan bit sayısını.  Varsa `nBitsPixel` parametre -1, renk derinliği tarafından belirtilen görüntü türetilir `pBitmap` parametresi. Varsayılan değer -1'dir.  
+ *nBitsPixel*  
+ Renk derinliği da adlandırılır tek bir piksel rengi temsil etmek için kullanılan bit sayısını.  Varsa *nBitsPixel* parametre -1, renk derinliği tarafından belirtilen görüntü türetilir *pBitmap* parametresi. Varsayılan değer -1'dir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görüntüyü değiştirmek için bir görüntü işaretçi geçirin `CMFCImageEditorDialog` Oluşturucusu. ' I çağırın `DoModal` modal bir iletişim kutusu açmak için yöntem. Zaman `DoModal` yöntemi döndürür, bit eşlem yeni görüntüyü içerir.  

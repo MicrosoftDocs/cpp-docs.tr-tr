@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abb880c1add83ec03d787c28b816f2e82caeddd6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fcef7bab4fd2b0cd913c0da929534d6964730215
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368806"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037967"
 ---
 # <a name="cmfcrebar-class"></a>CMFCReBar sınıfı
 A `CMFCReBar` düzeni, sürdürme ve rebar denetimleri için durum bilgilerini sağlayan bir denetim çubuğu nesnesidir.  
@@ -110,22 +110,22 @@ BOOL AddBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] [out] `pBar`  
+ [in] [out] *pBar*  
  Rebar eklenecek alt pencere için bir işaretçi. Başvurulan nesne olmalıdır **WS_CHILD** pencere stili.  
   
- [in] `pszText`  
+ [in] *pszText*  
  Rebar üzerinde görüntülenecek metni belirtir. Metnin alt pencere parçası değil. Bunun yerine, rebar üzerinde görüntülenir.  
   
- [in] [out] `pbmp`  
+ [in] [out] *pbmp*  
  Rebar arka planda görüntülenecek bit eşlem belirtir.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Bant için uygulanacak stilini içerir. Açıklamasını bant stilleri tam bir listesi için bkz `fStyle` içinde [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) yapısı içinde Windows SDK Belgeleri.  
   
- [in] `clrFore`  
+ [in] *clrFore*  
  Rebar ön plan rengini temsil eder.  
   
- [in] `clrBack`  
+ [in] *clrBack*  
  Rebar arka plan rengi temsil eder.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -143,16 +143,16 @@ BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] [out] `pParentWnd`  
+ [in] [out] *pParentWnd*  
  Üst pencere bu rebar denetimi için bir işaretçi.  
   
- [in] `dwCtrlStyle`  
+ [in] *dwCtrlStyle*  
  Rebar denetimiyle stilini belirtir. Varsayılan Stil değer **RBS_BANDBORDERS**, hangi görüntüler rebar denetiminde bitişik bantları ayırmak için satırları daraltın. Geçerli stilleri listesi için bkz: [Rebar denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774377) Windows SDK belgelerinde.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Rebar denetimiyle pencere stili. Geçerli stilleri listesi için bkz: [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] `nID`  
+ [in] *nID*  
  Rebar ait alt pencere kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -183,8 +183,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bStretch`  
- [in] `bHorz`  
+ [in] *bStretch*  
+ [in] *bHorz*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -209,7 +209,7 @@ void EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -232,7 +232,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `CPoint`  
+ [in] *CPoint*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -248,8 +248,8 @@ virtual INT_PTR OnToolHitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
- [in] `pTI`  
+ [in] *noktası*  
+ [in] *PTI*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -265,8 +265,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pTarget`  
- [in] `bDisableIfNoHndler`  
+ [in] *pTarget*  
+ [in] *bDisableIfNoHndler*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -278,7 +278,7 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

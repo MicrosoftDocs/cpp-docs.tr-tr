@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9dbcaa3f8e02a87713363f1ea38c5d2260171df
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ba1d156d9453cd6a74a3543295d9d90d761e77f9
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367977"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040754"
 ---
 # <a name="cmemorystate-structure"></a>CMemoryState yapısı
 Bellek sızıntıları programınıza algılamak için kolay bir yol sağlar.  
@@ -66,7 +66,7 @@ struct CMemoryState
   
  Diğer bir tanılama olduğu gibi ile `CMemoryState` tanılama bulunan ve yalnızca programınızı hata ayıklama sürümleri. Hata ayıklama sürümü yüklü olmalıdır **_DEBUG** tanımlanan sabiti.  
   
- Programınızı sahip bir bellek sızıntısı şüpheleniyorsanız, kullanabileceğiniz `Checkpoint`, **fark**, ve `DumpStatistics` programda iki farklı noktalarda bellek durumu (ayrılmış nesneler) arasındaki farkı bulmak için işlevleri yürütme. Bu bilgiler bir işlev ayırdığı tüm nesneleri temizleme olup olmadığını belirlerken yararlı olabilir.  
+ Programınızı sahip bir bellek sızıntısı şüpheleniyorsanız, kullanabileceğiniz `Checkpoint`, `Difference`, ve `DumpStatistics` işlevleri program yürütme iki farklı noktalarda bellek durumu (ayrılmış nesneler) arasındaki farkı bulur. Bu bilgiler bir işlev ayırdığı tüm nesneleri temizleme olup olmadığını belirlerken yararlı olabilir.  
   
  Yalnızca ayırma ve ayırmayı kaldırma dengesizliği nerede oluştuğunu bilmek yeterli bilgi sağlamıyorsa kullanabileceğiniz `DumpAllObjectsSince` önceki çağrısından itibaren ayrılan tüm nesneleri dökümü işlevi `Checkpoint`. Bu döküm ayırma, kaynak dosya ve nesne tahsis edildiğinde nerede satır sırasını gösterir (kullanıyorsanız `DEBUG_NEW` ayırma için) ve nesne, adresini ve boyutuna türevi. `DumpAllObjectsSince` Ayrıca her nesnenin çağırır `Dump` işlevi geçerli durumu hakkında bilgi sağlar.  
   

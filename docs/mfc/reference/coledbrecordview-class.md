@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b69aafa7f8b07d96d754d080e7fb5abd170e167
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 122ceb1715323e1482b2a8a8544cbe3f6270c713
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372212"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037863"
 ---
 # <a name="coledbrecordview-class"></a>COleDBRecordView sınıfı
 Veritabanı kayıtlarını denetimlerinde görüntüleyen bir görünüm.  
@@ -92,10 +92,10 @@ COleDBRecordView(UINT nIDTemplate);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Bir iletişim şablonunu kaynak adı null ile sonlandırılmış bir dize içeriyor.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Bir iletişim şablonunu kaynak kimliği numarasını içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -116,7 +116,7 @@ virtual CRowset<>* OnGetRowset() = 0;
  Standart bir `HRESULT` değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi oluşturmak veya bir satır kümesi nesnesi edinip tanıtıcı döndürmek için geçersiz kılmanız gerekir. Kayıt görünümü sınıfınız ClassWizard ile bildirirseniz, sihirbaz varsayılan geçersiz kılma yazar. ClassWizard'ın varsayılan uygulaması varsa kayıt görünümünde depolanan satır kümesi işleyicisini döndürür. Türünde bir satır kümesi nesnesi oluşturur, varsa çağrıları ve ClassWizard ile belirtilen kendi **açmak** üye tabloyu veya sorguyu çalıştırmak için işlev ve ardından nesne için bir işleyici döner.  
+ Bu üye işlevi oluşturmak veya bir satır kümesi nesnesi edinip tanıtıcı döndürmek için geçersiz kılmanız gerekir. Kayıt görünümü sınıfınız ClassWizard ile bildirirseniz, sihirbaz varsayılan geçersiz kılma yazar. ClassWizard'ın varsayılan uygulaması varsa kayıt görünümünde depolanan satır kümesi işleyicisini döndürür. Türünde bir satır kümesi nesnesi oluşturur, varsa çağrıları ve ClassWizard ile belirtilen kendi `Open` üye tabloyu veya sorguyu çalıştırmak için işlev ve ardından nesne için bir işleyici döner.  
   
 > [!NOTE]
 >  MFC 7.0, Geri'yi `OnGetRowset` gösteren bir işaretçi döndürdü `CRowset`. Çağıran kodu varsa `OnGetRowset`, dönüş türü şablonlaştırılmış sınıfına değiştirmenize gerek **CRowset <>**.  
@@ -134,7 +134,7 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDMoveCommand`  
+ *nIDMoveCommand*  
  Aşağıdaki standart komut kimliği değerlerden biri:  
   
 - `ID_RECORD_FIRST` — İlk kaydı kayıt kümesindeki taşıyın.  
@@ -149,7 +149,7 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
  Taşıma başarılı olduğunda sıfır olmayan; taşıma isteği reddedildiyse aksi 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama uygun çağırır **taşıma** üye işlevini `CRowset` kayıt görünümü ile ilişkili nesne.  
+ Varsayılan uygulama uygun çağırır `Move` üye işlevini `CRowset` kayıt görünümü ile ilişkili nesne.  
   
  Varsayılan olarak, `OnMove` kullanıcı kayıt görünümünde değiştirilmesi durumunda geçerli kaydı veri kaynağında güncelleştirir.  
   

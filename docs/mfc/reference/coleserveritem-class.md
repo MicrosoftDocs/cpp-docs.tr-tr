@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d3165a11aace54ce2062a6321acc7f911fbdc39
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a05553843c4478109c0fe63dd79f08b2116f58c7
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378780"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039251"
 ---
 # <a name="coleserveritem-class"></a>COleServerItem sınıfı
 OLE öğeleri için sunucu arabirimi sağlar.  
@@ -119,7 +119,7 @@ class COleServerItem : public CDocItem
 |[COleServerItem::GetDocument](#getdocument)|Öğeyi içeren sunucu belgeyi döndürür.|  
 |[COleServerItem::GetEmbedSourceData](#getembedsourcedata)|Alır **CF_EMBEDSOURCE** bir OLE öğe için verileri.|  
 |[COleServerItem::GetItemName](#getitemname)|Öğenin adını döndürür. Yalnızca bağlantılı öğeler için kullanılır.|  
-|[COleServerItem::GetLinkSourceData](#getlinksourcedata)|Alır `CF_LINKSOURCE` OLE öğesi için veri.|  
+|[COleServerItem::GetLinkSourceData](#getlinksourcedata)|Alır **CF_LINKSOURCE** bir OLE öğe için verileri.|  
 |[COleServerItem::GetObjectDescriptorData](#getobjectdescriptordata)|Alır **CF_OBJECTDESCRIPTOR** bir OLE öğe için verileri.|  
 |[COleServerItem::IsConnected](#isconnected)|Öğe şu anda etkin bir kapsayıcıya eklenmiş olup olmadığını gösterir.|  
 |[COleServerItem::IsLinkedItem](#islinkeditem)|Öğe bağlantılı OLE öğesi temsil edip etmediğini gösterir.|  
@@ -185,7 +185,7 @@ void AddOtherClipboardData(COleDataSource* pDataSource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDataSource`  
+ *pDataSource*  
  İşaretçi `COleDataSource` nesne verileri hangi yerleştirilmelidir içinde.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -201,10 +201,10 @@ COleServerItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pServerDoc`  
+ *pServerDoc*  
  Yeni öğe içerecek belge işaretçi.  
   
- `bAutoDelete`  
+ *bAutoDelete*  
  Bir bağlantı serbest bırakıldığında nesne silinebilir olup olmadığını belirten bayrak. Bu ayar **FALSE** varsa `COleServerItem` nesnesidir silmeniz gerekir, belgenin veri ayrılmaz bir parçasıdır. Bu ayar **TRUE** nesne çerçevesi tarafından silinebilir belgenizin verileri içindeki bir aralık tanımlamak için kullanılan ikincil bir yapı ise.  
   
 ##  <a name="copytoclipboard"></a>  COleServerItem::CopyToClipboard  
@@ -215,7 +215,7 @@ void CopyToClipboard(BOOL bIncludeLink = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bIncludeLink`  
+ *bIncludeLink*  
  Bu ayar **TRUE** panoya bağlantı verilerin kopyalanması gereken durumunda. Bu ayar **FALSE** sunucu uygulamanızı bağlantılar desteklemiyorsa.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -237,23 +237,23 @@ DROPEFFECT DoDragDrop(
  *lpRectItem*  
  Öğenin dikdörtgen ekranında, istemci alanını göreli piksel cinsinden.  
   
- `ptOffset`  
- Uzaklık `lpItemRect` fare konumuna Sürükle aynı anda bulunduğu.  
+ *ptOffset*  
+ Uzaklık *lpItemRect* fare konumuna Sürükle aynı anda bulunduğu.  
   
- `bIncludeLink`  
+ *bIncludeLink*  
  Bu ayar **TRUE** panoya bağlantı verilerin kopyalanması gereken durumunda. Ayarlamak **FALSE** uygulamanızı bağlantılar desteklemiyorsa.  
   
- `dwEffects`  
+ *dwEffects*  
  Sürükleme kaynağı sürükleme işlemi (kopyalama, taşıma ve bağlantı birleşimi) sağlayacak etkilerini belirler.  
   
- `lpRectStartDrag`  
+ *lpRectStartDrag*  
  Sürükle gerçekte başladığı tanımlar dikdörtgen işaretçi. Daha fazla bilgi için aşağıdaki Açıklamalar bölümüne bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Arasında bir değer `DROPEFFECT` numaralandırması. Eğer öyleyse `DROPEFFECT_MOVE`, özgün verilerin kaldırılması gerekir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sürükle ve bırak işlemi hemen başlamaz. Fare imlecini tarafından belirtilen dikdörtgenden bekler `lpRectStartDrag` veya milisaniye belirtilen sayıda geçtiğinde kadar. Varsa `lpRectStartDrag` olan **NULL**, böylece sürükleme fare imleci bir piksel taşındığında başlatır varsayılan dikdörtgen kullanılır.  
+ Sürükle ve bırak işlemi hemen başlamaz. Fare imlecini tarafından belirtilen dikdörtgenden bekler *lpRectStartDrag* veya milisaniye belirtilen sayıda geçtiğinde kadar. Varsa *lpRectStartDrag* olan **NULL**, böylece sürükleme fare imleci bir piksel taşındığında başlatır varsayılan dikdörtgen kullanılır.  
   
  Gecikme süresi bir kayıt defteri anahtarı ayarı tarafından belirtilir. Çağırarak gecikme süresini değiştirebilirsiniz [CWinApp::WriteProfileString](../../mfc/reference/cwinapp-class.md#writeprofilestring) veya [CWinApp::WriteProfileInt](../../mfc/reference/cwinapp-class.md#writeprofileint). Gecikme süresi belirtmezseniz, varsayılan değer 200 milisaniye olarak kullanılır. Sürükleme gecikme süresi şekilde depolanır:  
   
@@ -277,20 +277,20 @@ void GetClipboardData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDataSource`  
+ *pDataSource*  
  İşaretçi `COleDataSource` OLE öğesi'nin veri tüm desteklenen biçimlerde alacak nesnesi.  
   
- `bIncludeLink`  
+ *bIncludeLink*  
  **DOĞRU** panoya bağlantı verilerin kopyalanması gereken durumunda. **YANLIŞ** sunucu uygulamanızı bağlantılar desteklemiyorsa.  
   
- `lpOffset`  
+ *lpOffset*  
  Fare imleci nesnenin kaynaktan piksel cinsinden uzaklığı.  
   
- `lpSize`  
+ *lpSize*  
  Nesnesinin piksel cinsinden boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev çağrılarını [GetEmbedSourceData](#getembedsourcedata) çağrıları ve OLE öğesi için yerel veri almak için üye işlevini [AddOtherClipboardData](#addotherclipboarddata) sunu biçimi ve tüm almak için üye işlevi dönüştürme biçimleri desteklenir. Varsa `bIncludeLink` olan **TRUE**, işlevi de çağırır [GetLinkSourceData](#getlinksourcedata) öğe için bağlantı veri almak için.  
+ Bu işlev çağrılarını [GetEmbedSourceData](#getembedsourcedata) çağrıları ve OLE öğesi için yerel veri almak için üye işlevini [AddOtherClipboardData](#addotherclipboarddata) sunu biçimi ve tüm almak için üye işlevi dönüştürme biçimleri desteklenir. Varsa *bIncludeLink* olan **TRUE**, işlevi de çağırır [GetLinkSourceData](#getlinksourcedata) öğe için bağlantı veri almak için.  
   
  Biçimleri koymak istiyorsanız, bu işlevi geçersiz bir `COleDataSource` nesne önce veya sonra tarafından sağlanan bu biçimleri `CopyToClipboard`.  
   
@@ -328,7 +328,7 @@ void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpStgMedium`  
+ *lpStgMedium*  
  İşaretçi [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) alacak yapısı **CF_EMBEDSOURCE** OLE öğesi için veri.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -359,7 +359,7 @@ BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpStgMedium`  
+ *lpStgMedium*  
  İşaretçi [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) alacak yapısı `CF_LINKSOURCE` OLE öğesi için veri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -383,17 +383,17 @@ void GetObjectDescriptorData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpOffset`  
+ *lpOffset*  
  Fare uzaklığını OLE öğesinin sol üst köşeden'ı tıklatın. Olabilir **NULL**.  
   
- `lpSize`  
+ *lpSize*  
  OLE öğesi boyutu. Olabilir **NULL**.  
   
- `lpStgMedium`  
+ *lpStgMedium*  
  İşaretçi [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) alacak yapısı **CF_OBJECTDESCRIPTOR** OLE öğesi için veri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bilgiler kopyalanır **STGMEDIUM** tarafından yapısı işaret için `lpStgMedium`. Bu biçim Özel Yapıştır iletişim kutusu için gereken bilgileri içerir.  
+ Bilgiler kopyalanır **STGMEDIUM** tarafından yapısı işaret için *lpStgMedium*. Bu biçim Özel Yapıştır iletişim kutusu için gereken bilgileri içerir.  
   
  Daha fazla bilgi için bkz: [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) Windows SDK'sındaki.  
   
@@ -443,7 +443,7 @@ void NotifyChanged(DVASPECT nDrawAspect = DVASPECT_CONTENT);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nDrawAspect`  
+ *nDrawAspect*  
  Arasında bir değer `DVASPECT` OLE öğesi hangi yönden değiştiğini gösteren numaralandırma. Bu parametre aşağıdaki değerlerden herhangi birini içerebilir:  
   
 - `DVASPECT_CONTENT` Öğesi, katıştırılmış nesne kapsayıcısı içinde olarak görüntülenebilir şekilde gösterilir.  
@@ -465,7 +465,7 @@ virtual void OnDoVerb(LONG iVerb);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iVerb`  
+ *iVerb*  
  Yürütülecek fiili belirtir. Aşağıdakilerden herhangi biri olabilir:  
   
 |Değer|Açıklama|Simgesi|  
@@ -495,10 +495,10 @@ virtual BOOL OnDraw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Bir işaretçi [CDC](../../mfc/reference/cdc-class.md) öğesi çizmek nesne. Öznitelik işlevini çağırabilmeniz için bunu yapmak, böylece meta dosyası aygıta özgü yapacağı rağmen görüntüleme bağlamı öznitelik görünen bağlamına otomatik olarak bağlanır.  
   
- `rSize`  
+ *rSize*  
  Boyut, buna **HIMETRIC** , meta dosyası çizmek birim.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -518,10 +518,10 @@ virtual BOOL OnDrawEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Bir işaretçi [CDC](../../mfc/reference/cdc-class.md) öğesi çizmek nesne. Öznitelik işlevini çağırabilmeniz için bunu yapmak, böylece meta dosyası aygıta özgü yapacağı rağmen DC DC özniteliğine otomatik olarak bağlanır.  
   
- `nDrawAspect`  
+ *nDrawAspect*  
  Arasında bir değer `DVASPECT` numaralandırması. Bu parametre aşağıdaki değerlerden herhangi birini içerebilir:  
   
 - `DVASPECT_CONTENT` Öğesi, katıştırılmış nesne kapsayıcısı içinde olarak görüntülenebilir şekilde gösterilir.  
@@ -554,13 +554,13 @@ virtual COleDataSource* OnGetClipboardData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bIncludeLink`  
+ *bIncludeLink*  
  Bu ayar **TRUE** panoya bağlantı verilerin kopyalanması gereken durumunda. Bu ayar **FALSE** sunucu uygulamanızı bağlantılar desteklemiyorsa.  
   
- `lpOffset`  
+ *lpOffset*  
  Fare imlecini kaynaktan nesnesinin piksel cinsinden uzaklığı.  
   
- `lpSize`  
+ *lpSize*  
  Nesnesinin piksel cinsinden boyutu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -579,7 +579,7 @@ virtual BOOL OnGetExtent(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nDrawAspect`  
+ *nDrawAspect*  
  Alınacak olan sınırları olan OLE öğesi yönünü belirtir. Bu parametre aşağıdaki değerlerden herhangi birini içerebilir:  
   
 - `DVASPECT_CONTENT` Öğesi, katıştırılmış nesne kapsayıcısı içinde olarak görüntülenebilir şekilde gösterilir.  
@@ -590,7 +590,7 @@ virtual BOOL OnGetExtent(
   
 - `DVASPECT_DOCPRINT` Dosya menüsünden Yazdır komutunu kullanarak yazdırılan gibi öğeyi temsil edilir.  
   
- `rSize`  
+ *rSize*  
  Başvuru bir `CSize` OLE öğenin boyutunu alacak nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -610,7 +610,7 @@ virtual void OnHide();
  Varsayılan çağrıları **COleServerDoc::OnShowDocument (FALSE)**. İşlev OLE öğesi gizli kapsayıcı de bildirir. OLE öğeyi gizlerken özel işleme gerçekleştirmek istiyorsanız, bu işlev geçersiz kılar.  
   
 ##  <a name="oninitfromdata"></a>  COleServerItem::OnInitFromData  
- OLE öğenin içeriğini kullanarak başlatmak için çerçevesi tarafından çağrılır `pDataObject`.  
+ OLE öğenin içeriğini kullanarak başlatmak için çerçevesi tarafından çağrılır *pDataObject*.  
   
 ```  
 virtual BOOL OnInitFromData(
@@ -619,17 +619,17 @@ virtual BOOL OnInitFromData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDataObject`  
+ *pDataObject*  
  OLE öğesi başlatma için çeşitli biçimlerde verileri içeren bir OLE veri nesnesine işaretçi.  
   
- `bCreation`  
+ *bCreation*  
  **DOĞRU** işlevi yeni bir kapsayıcı uygulama tarafından oluşturulan OLE öğeyi başlatmak için çağrılıp çağrılmayacağını. **YANLIŞ** işlevi zaten var olan bir OLE öğesini içeriğini değiştirmek için çağrılıp çağrılmayacağını.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bCreation` olan **doğru**, bir kapsayıcı yeni geçerli seçime dayalı Nesne Ekle uyguluyorsa bu işlev çağrılır. Seçilen verileri yeni OLE öğesi oluşturulurken kullanılır. Örneğin, ne zaman bir hücre aralığı bir elektronik tablo programında seçerek ve ardından bir grafik oluşturmak için Yeni Nesne Ekle kullanarak seçilen aralık değerleri temel. Varsayılan uygulama hiçbir şey yapmaz. Bu işlev tarafından sunulan kabul edilebilir bir biçim arasından geçersiz kılma `pDataObject` ve sağlanan verileri temel alan OLE öğesi başlatma. Gelişmiş budur geçersiz kılınabilir.  
+ Varsa *bCreation* olan **doğru**, bir kapsayıcı yeni geçerli seçime dayalı Nesne Ekle uyguluyorsa bu işlev çağrılır. Seçilen verileri yeni OLE öğesi oluşturulurken kullanılır. Örneğin, ne zaman bir hücre aralığı bir elektronik tablo programında seçerek ve ardından bir grafik oluşturmak için Yeni Nesne Ekle kullanarak seçilen aralık değerleri temel. Varsayılan uygulama hiçbir şey yapmaz. Bu işlev tarafından sunulan kabul edilebilir bir biçim arasından geçersiz kılma *pDataObject* ve sağlanan verileri temel alan OLE öğesi başlatma. Gelişmiş budur geçersiz kılınabilir.  
   
  Daha fazla bilgi için bkz: [IOleObject::InitFromData](http://msdn.microsoft.com/library/windows/desktop/ms688510) Windows SDK'sındaki.  
   
@@ -670,10 +670,10 @@ virtual BOOL OnRenderData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  İşaret [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) yapısı içinde bilgi istenen biçimini belirtme.  
   
- `lpStgMedium`  
+ *lpStgMedium*  
  İşaret eden bir [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) veri olduğu döndürülecek yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -682,7 +682,7 @@ virtual BOOL OnRenderData(
 ### <a name="remarks"></a>Açıklamalar  
  Belirtilen biçim biridir önceden yerleştirilen `COleDataSource` kullanarak nesne [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) veya [DelayRenderFileData](../../mfc/reference/coledatasource-class.md#delayrenderfiledata) Gecikmeli işleme için üye işlevi. Bu işlev varsayılan uygulamasını çağıran [OnRenderFileData](#onrenderfiledata) veya [OnRenderGlobalData](#onrenderglobaldata), sırasıyla sağlanan depolama ortamına bir dosya veya bellek ise. Bu biçimler hiçbiri sağlanırsa, varsayılan uygulama 0 döndürür ve hiçbir şey yapmaz.  
   
- Varsa `lpStgMedium` ->  *ortam türü* olan **TYMED_NULL**, **STGMEDIUM** ayrılmış ve belirtildiği gibi doldurulmuş *lpFormatEtc -> ortam türü*. Aksi takdirde **TYMED_NULL**, **STGMEDIUM** verilerle yerinde dolu olması gerekir.  
+ Varsa *lpStgMedium*-> *ortam türü* olan **TYMED_NULL**, **STGMEDIUM** ayrılmış ve tarafındanbelirtilendolu*lpFormatEtc ortam türü ->*. Aksi takdirde **TYMED_NULL**, **STGMEDIUM** verilerle yerinde dolu olması gerekir.  
   
  Gelişmiş budur geçersiz kılınabilir. İstenen biçim ve orta verilerinizdeki sağlamak için bu işlevi geçersiz kılar. Verilerinizi bağlı olarak, bu işlevin diğer sürümlerinden birini yerine geçersiz kılmak istediğiniz. Verilerinizi küçük ve sabit boyutu ise, geçersiz kılma `OnRenderGlobalData`. Verilerinizi bir dosyaya veya bir değişken boyutu, geçersiz kılma `OnRenderFileData`.  
   
@@ -698,10 +698,10 @@ virtual BOOL OnRenderFileData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  İşaret [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) yapısı içinde bilgi istenen biçimini belirtme.  
   
- `pFile`  
+ *pFile*  
  İşaret eden bir `CFile` verileri olduğu işlenecek nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -724,10 +724,10 @@ virtual BOOL OnRenderGlobalData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  İşaret [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) yapısı içinde bilgi istenen biçimini belirtme.  
   
- `phGlobal`  
+ *phGlobal*  
  Verileri döndürülecek olan genel bellek için bir tanıtıcı noktalarına. Bellek ayrıldı, bu parametre olabilir **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -736,7 +736,7 @@ virtual BOOL OnRenderGlobalData(
 ### <a name="remarks"></a>Açıklamalar  
  Belirtilen biçim biridir önceden yerleştirilen `COleDataSource` kullanarak nesne [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) Gecikmeli işleme için üye işlevi. Bu işlev varsayılan uygulaması yalnızca döndürür **FALSE**.  
   
- Varsa `phGlobal` olan **NULL**, ardından yeni `HGLOBAL` döndürdü ve ayrılan gerekir `phGlobal`. Aksi takdirde, `HGLOBAL` tarafından belirtilen `phGlobal` verilerle dolu olması gerekir. Veri miktarını yerleştirilen `HGLOBAL` bellek bloğu geçerli boyutunu aşmamalıdır. Ayrıca, büyük boyutlu bir blok ayrılamaz.  
+ Varsa *phGlobal* olan **NULL**, ardından yeni `HGLOBAL` döndürdü ve ayrılan gerekir *phGlobal*. Aksi takdirde, `HGLOBAL` tarafından belirtilen *phGlobal* verilerle dolu olması gerekir. Veri miktarını yerleştirilen `HGLOBAL` bellek bloğu geçerli boyutunu aşmamalıdır. Ayrıca, büyük boyutlu bir blok ayrılamaz.  
   
  Gelişmiş budur geçersiz kılınabilir. İstenen biçim ve orta verilerinizdeki sağlamak için bu işlevi geçersiz kılar. Verilerinizi bağlı olarak, bu işlevin diğer sürümlerinden birini yerine geçersiz kılmak istediğiniz. Birden çok depolama ortamlarının işlemek istiyorsanız, geçersiz kılma [OnRenderData](#onrenderdata). Verilerinizi bir dosyaya veya bir değişken boyutu, geçersiz kılma [OnRenderFileData](#onrenderfiledata).  
   
@@ -750,7 +750,7 @@ virtual BOOL OnSetColorScheme(const LOGPALETTE* lpLogPalette);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpLogPalette`  
+ *lpLogPalette*  
  Bir Windows işaretçi [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -772,14 +772,14 @@ virtual BOOL OnSetData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpFormatEtc`  
+ *lpFormatEtc*  
  İşaretçi bir [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) verilerin biçimini belirten yapısı.  
   
- `lpStgMedium`  
+ *lpStgMedium*  
  İşaretçi bir [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) yapısı verilerin bulunduğu.  
   
- `bRelease`  
- İşlev çağrısı tamamladıktan sonra depolama ortamına sahipliğini kimlerin olduğunu gösterir. Arayan adına depolama ortamına ayrılan kaynakları serbest bırakma için sorumlu kim karar verir. Arayan ayarlayarak bunu yapar `bRelease`. Varsa `bRelease` olduğu sıfır olmayan, sunucu öğesini kullanmaya tamamlandığında Orta boşaltma, aittir. Zaman `bRelease` 0'dır, çağıran sahipliği korur ve sunucu öğesini yalnızca çağrı süresince depolama ortamı kullanabilirsiniz.  
+ *bRelease*  
+ İşlev çağrısı tamamladıktan sonra depolama ortamına sahipliğini kimlerin olduğunu gösterir. Arayan adına depolama ortamına ayrılan kaynakları serbest bırakma için sorumlu kim karar verir. Arayan ayarlayarak bunu yapar *bRelease*. Varsa *bRelease* olan sıfır olmayan, sunucu öğesini kullanmaya tamamlandığında Orta boşaltma, aittir. Zaman *bRelease* 0'dır, çağıran sahipliği korur ve sunucu öğesini yalnızca çağrı süresince depolama ortamı kullanabilirsiniz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
@@ -801,7 +801,7 @@ virtual BOOL OnSetExtent(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nDrawAspect`  
+ *nDrawAspect*  
  Sınırların belirtilen OLE öğesi yönünü belirtir. Bu parametre aşağıdaki değerlerden herhangi birini içerebilir:  
   
 - `DVASPECT_CONTENT` Öğesi, katıştırılmış nesne kapsayıcısı içinde olarak görüntülenebilir şekilde gösterilir.  
@@ -812,14 +812,14 @@ virtual BOOL OnSetExtent(
   
 - `DVASPECT_DOCPRINT` Dosya menüsünden Yazdır komutunu kullanarak yazdırılan gibi öğeyi temsil edilir.  
   
- `size`  
+ *Boyutu*  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) yapısı OLE öğesi yeni boyutunu belirtme.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kapsayıcı uygulama Microsoft Foundation Class Kitaplığı ile yazılmışsa, bu işlev aldığında çağrılan [SetExtent](../../mfc/reference/coleclientitem-class.md#setextent) ilgili üye işlevi `COleClientItem` nesne çağrılır. Varsayılan uygulama kümeleri [m_sizeExtent](#m_sizeextent) üyesi için belirtilen boyut, `nDrawAspect` olan `DVASPECT_CONTENT`; Aksi halde 0 döndürür. Öğenin boyutunu değiştirdiğinizde özel işlem gerçekleştirmek için bu işlevi geçersiz kılar.  
+ Kapsayıcı uygulama Microsoft Foundation Class Kitaplığı ile yazılmışsa, bu işlev aldığında çağrılan [SetExtent](../../mfc/reference/coleclientitem-class.md#setextent) ilgili üye işlevi `COleClientItem` nesne çağrılır. Varsayılan uygulama kümeleri [m_sizeExtent](#m_sizeextent) üyesi için belirtilen boyut, *nDrawAspect* olan `DVASPECT_CONTENT`; Aksi halde 0 döndürür. Öğenin boyutunu değiştirdiğinizde özel işlem gerçekleştirmek için bu işlevi geçersiz kılar.  
   
 ##  <a name="onshow"></a>  COleServerItem::OnShow  
  OLE öğesi yerinde görüntülemek için sunucu uygulaması istemek üzere çerçevesi tarafından çağrılır.  
@@ -845,16 +845,16 @@ virtual void OnUpdate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pSender`  
+ *pSender*  
  Belge değiştiren öğesi işaretçisi. Olabilir **NULL**.  
   
- `lHint`  
+ *lHint*  
  Değiştirme hakkında bilgi içerir.  
   
- `pHint`  
+ *pHint*  
  Nesneyi değiştirme hakkında bilgi depolamak için işaretçi.  
   
- `nDrawAspect`  
+ *nDrawAspect*  
  Arasında bir değer `DVASPECT` numaralandırması. Bu parametre aşağıdaki değerlerden biri olabilir:  
   
 - `DVASPECT_CONTENT` Öğesi, katıştırılmış nesne kapsayıcısı içinde olarak görüntülenebilir şekilde gösterilir.  
@@ -886,7 +886,7 @@ void SetItemName(LPCTSTR lpszItemName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszItemName`  
+ *lpszItemName*  
  Öğesinin yeni adını işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  

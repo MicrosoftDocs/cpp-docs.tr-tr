@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d274cbafbd50df2f577b484e433c964f1dec096
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c1f2fcdedb6b01025b06e4384ec2c32e95d08b6e
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376336"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040135"
 ---
 # <a name="cmfcfilterchunkvalueimpl-class"></a>CMFCFilterChunkValueImpl sınıfı
 Bu öbek ve özellik değeri çifti mantığı kolaylaştıran bir sınıftır.  
@@ -166,7 +166,7 @@ HRESULT CopyChunk(STAT_CHUNK* pStatChunk);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pStatChunk`  
+ *pStatChunk*  
  Öbek özelliklerini açıklayan hedef değeri için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -182,7 +182,7 @@ void CopyFrom (IFilterChunkValue* pValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pValue`  
+ *pValue*  
  Kopyalanacak kaynak değerini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -243,11 +243,11 @@ HRESULT GetValue(PROPVARIANT** ppPropVariant);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ppPropVariant`  
+ *ppPropVariant*  
  İşlevi döndüğünde, bu parametre öbek değer içeriyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- PROPVARIANT tahsis edildiğinde başarıyla ve Öbek değeri için başarıyla kopyalandı S_OK `ppPropVariant`; Aksi takdirde bir hata kodu.  
+ PROPVARIANT tahsis edildiğinde başarıyla ve Öbek değeri için başarıyla kopyalandı S_OK *ppPropVariant*; Aksi takdirde bir hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -300,25 +300,25 @@ HRESULT SetBoolValue(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pkey`  
+ *PKEY*  
  Bir özellik anahtarı belirtir.  
   
- `bVal`  
+ *bVal*  
  Ayarlanacak öbek değer belirtir.  
   
- `chunkType`  
+ *chunkType*  
  Bayrakları bu öbek bir metin yazın veya bir değer türü özelliği içerip içermediğini belirtir. Bayrak değeri CHUNKSTATE numaralandırma içinden alınır.  
   
- `locale`  
+ *Yerel ayar*  
  Dil ve metin bir Öbek ile ilişkili alt dili. Öbek yerel belge Dizin Oluşturucu tarafından metnin uygun sözcük gerçekleştirmek için kullanılır. Öbek metin türü ne VT_LPWSTR, VT_LPSTR veya VT_BSTR veri türündeki bir değer türü ise, bu alan göz ardı edilir.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  Geçerli öbek türetildiği kaynak metni karakter cinsinden uzunluğu. Sıfır değeri karakteri tek kaynak metni ve türetilen metin arasındaki ilişkiyi belirtir. Sıfır olmayan bir değer bu tür doğrudan yazışmaları bulunduğu anlamına gelir.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  Türetilen bir öbek kaynak metni kaynak öbekte başladığı uzaklığı.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  Önceki öbek geçerli öbek ayıran sonu türü. CHUNK_BREAKTYPE numaralandırma içinden değerlerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -340,22 +340,22 @@ HRESULT SetChunk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pkey`  
+ *PKEY*  
  Bir özellik anahtarı belirtir.  
   
- `chunkType`  
+ *chunkType*  
  Bayrakları bu öbek bir metin yazın veya bir değer türü özelliği içerip içermediğini belirtir. Bayrak değeri CHUNKSTATE numaralandırma içinden alınır.  
   
- `locale`  
+ *Yerel ayar*  
  Dil ve metin bir Öbek ile ilişkili alt dili. Öbek yerel belge Dizin Oluşturucu tarafından metnin uygun sözcük gerçekleştirmek için kullanılır. Öbek metin türü ne VT_LPWSTR, VT_LPSTR veya VT_BSTR veri türündeki bir değer türü ise, bu alan göz ardı edilir.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  Geçerli öbek türetildiği kaynak metni karakter cinsinden uzunluğu. Sıfır değeri karakteri tek kaynak metni ve türetilen metin arasındaki ilişkiyi belirtir. Sıfır olmayan bir değer bu tür doğrudan yazışmaları bulunduğu anlamına gelir.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  Türetilen bir öbek kaynak metni kaynak öbekte başladığı uzaklığı.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  Önceki öbek geçerli öbek ayıran sonu türü. CHUNK_BREAKTYPE numaralandırma içinden değerlerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -378,25 +378,25 @@ HRESULT SetDwordValue(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pkey`  
+ *PKEY*  
  Bir özellik anahtarı belirtir.  
   
- `dwVal`  
+ *dwVal*  
  Ayarlanacak öbek değer belirtir.  
   
- `chunkType`  
+ *chunkType*  
  Bayrakları bu öbek bir metin yazın veya bir değer türü özelliği içerip içermediğini belirtir. Bayrak değeri CHUNKSTATE numaralandırma içinden alınır.  
   
- `locale`  
+ *Yerel ayar*  
  Dil ve metin bir Öbek ile ilişkili alt dili. Öbek yerel belge Dizin Oluşturucu tarafından metnin uygun sözcük gerçekleştirmek için kullanılır. Öbek metin türü ne VT_LPWSTR, VT_LPSTR veya VT_BSTR veri türündeki bir değer türü ise, bu alan göz ardı edilir.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  Geçerli öbek türetildiği kaynak metni karakter cinsinden uzunluğu. Sıfır değeri karakteri tek kaynak metni ve türetilen metin arasındaki ilişkiyi belirtir. Sıfır olmayan bir değer bu tür doğrudan yazışmaları bulunduğu anlamına gelir.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  Türetilen bir öbek kaynak metni kaynak öbekte başladığı uzaklığı.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  Önceki öbek geçerli öbek ayıran sonu türü. CHUNK_BREAKTYPE numaralandırma içinden değerlerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -419,25 +419,25 @@ HRESULT SetFileTimeValue(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pkey`  
+ *PKEY*  
  Bir özellik anahtarı belirtir.  
   
- `dtVal`  
+ *dtVal*  
  Ayarlanacak öbek değer belirtir.  
   
- `chunkType`  
+ *chunkType*  
  Bayrakları bu öbek bir metin yazın veya bir değer türü özelliği içerip içermediğini belirtir. Bayrak değeri CHUNKSTATE numaralandırma içinden alınır.  
   
- `locale`  
+ *Yerel ayar*  
  Dil ve metin bir Öbek ile ilişkili alt dili. Öbek yerel belge Dizin Oluşturucu tarafından metnin uygun sözcük gerçekleştirmek için kullanılır. Öbek metin türü ne VT_LPWSTR, VT_LPSTR veya VT_BSTR veri türündeki bir değer türü ise, bu alan göz ardı edilir.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  Geçerli öbek türetildiği kaynak metni karakter cinsinden uzunluğu. Sıfır değeri karakteri tek kaynak metni ve türetilen metin arasındaki ilişkiyi belirtir. Sıfır olmayan bir değer bu tür doğrudan yazışmaları bulunduğu anlamına gelir.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  Türetilen bir öbek kaynak metni kaynak öbekte başladığı uzaklığı.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  Önceki öbek geçerli öbek ayıran sonu türü. CHUNK_BREAKTYPE numaralandırma içinden değerlerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -460,25 +460,25 @@ HRESULT SetInt64Value(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pkey`  
+ *PKEY*  
  Bir özellik anahtarı belirtir.  
   
- `nVal`  
+ *nVal*  
  Ayarlanacak öbek değer belirtir.  
   
- `chunkType`  
+ *chunkType*  
  Bayrakları bu öbek bir metin yazın veya bir değer türü özelliği içerip içermediğini belirtir. Bayrak değeri CHUNKSTATE numaralandırma içinden alınır.  
   
- `locale`  
+ *Yerel ayar*  
  Dil ve metin bir Öbek ile ilişkili alt dili. Öbek yerel belge Dizin Oluşturucu tarafından metnin uygun sözcük gerçekleştirmek için kullanılır. Öbek metin türü ne VT_LPWSTR, VT_LPSTR veya VT_BSTR veri türündeki bir değer türü ise, bu alan göz ardı edilir.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  Geçerli öbek türetildiği kaynak metni karakter cinsinden uzunluğu. Sıfır değeri karakteri tek kaynak metni ve türetilen metin arasındaki ilişkiyi belirtir. Sıfır olmayan bir değer bu tür doğrudan yazışmaları bulunduğu anlamına gelir.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  Türetilen bir öbek kaynak metni kaynak öbekte başladığı uzaklığı.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  Önceki öbek geçerli öbek ayıran sonu türü. CHUNK_BREAKTYPE numaralandırma içinden değerlerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -501,25 +501,25 @@ HRESULT SetIntValue(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pkey`  
+ *PKEY*  
  Bir özellik anahtarı belirtir.  
   
- `nVal`  
+ *nVal*  
  Ayarlanacak öbek değer belirtir.  
   
- `chunkType`  
+ *chunkType*  
  Bayrakları bu öbek bir metin yazın veya bir değer türü özelliği içerip içermediğini belirtir. Bayrak değeri CHUNKSTATE numaralandırma içinden alınır.  
   
- `locale`  
+ *Yerel ayar*  
  Dil ve metin bir Öbek ile ilişkili alt dili. Öbek yerel belge Dizin Oluşturucu tarafından metnin uygun sözcük gerçekleştirmek için kullanılır. Öbek metin türü ne VT_LPWSTR, VT_LPSTR veya VT_BSTR veri türündeki bir değer türü ise, bu alan göz ardı edilir.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  Geçerli öbek türetildiği kaynak metni karakter cinsinden uzunluğu. Sıfır değeri karakteri tek kaynak metni ve türetilen metin arasındaki ilişkiyi belirtir. Sıfır olmayan bir değer bu tür doğrudan yazışmaları bulunduğu anlamına gelir.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  Türetilen bir öbek kaynak metni kaynak öbekte başladığı uzaklığı.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  Önceki öbek geçerli öbek ayıran sonu türü. CHUNK_BREAKTYPE numaralandırma içinden değerlerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -542,25 +542,25 @@ HRESULT SetLongValue(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pkey`  
+ *PKEY*  
  Bir özellik anahtarı belirtir.  
   
- `lVal`  
+ *lVal*  
  Ayarlanacak öbek değer belirtir.  
   
- `chunkType`  
+ *chunkType*  
  Bayrakları bu öbek bir metin yazın veya bir değer türü özelliği içerip içermediğini belirtir. Bayrak değeri CHUNKSTATE numaralandırma içinden alınır.  
   
- `locale`  
+ *Yerel ayar*  
  Dil ve metin bir Öbek ile ilişkili alt dili. Öbek yerel belge Dizin Oluşturucu tarafından metnin uygun sözcük gerçekleştirmek için kullanılır. Öbek metin türü ne VT_LPWSTR, VT_LPSTR veya VT_BSTR veri türündeki bir değer türü ise, bu alan göz ardı edilir.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  Geçerli öbek türetildiği kaynak metni karakter cinsinden uzunluğu. Sıfır değeri karakteri tek kaynak metni ve türetilen metin arasındaki ilişkiyi belirtir. Sıfır olmayan bir değer bu tür doğrudan yazışmaları bulunduğu anlamına gelir.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  Türetilen bir öbek kaynak metni kaynak öbekte başladığı uzaklığı.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  Önceki öbek geçerli öbek ayıran sonu türü. CHUNK_BREAKTYPE numaralandırma içinden değerlerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -583,25 +583,25 @@ HRESULT SetSystemTimeValue(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pkey`  
+ *PKEY*  
  Bir özellik anahtarı belirtir.  
   
- `systemTime`  
+ *SYSTEMTIME*  
  Ayarlanacak öbek değer belirtir.  
   
- `chunkType`  
+ *chunkType*  
  Bayrakları bu öbek bir metin yazın veya bir değer türü özelliği içerip içermediğini belirtir. Bayrak değeri CHUNKSTATE numaralandırma içinden alınır.  
   
- `locale`  
+ *Yerel ayar*  
  Dil ve metin bir Öbek ile ilişkili alt dili. Öbek yerel belge Dizin Oluşturucu tarafından metnin uygun sözcük gerçekleştirmek için kullanılır. Öbek metin türü ne VT_LPWSTR, VT_LPSTR veya VT_BSTR veri türündeki bir değer türü ise, bu alan göz ardı edilir.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  Geçerli öbek türetildiği kaynak metni karakter cinsinden uzunluğu. Sıfır değeri karakteri tek kaynak metni ve türetilen metin arasındaki ilişkiyi belirtir. Sıfır olmayan bir değer bu tür doğrudan yazışmaları bulunduğu anlamına gelir.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  Türetilen bir öbek kaynak metni kaynak öbekte başladığı uzaklığı.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  Önceki öbek geçerli öbek ayıran sonu türü. CHUNK_BREAKTYPE numaralandırma içinden değerlerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -624,25 +624,25 @@ HRESULT SetTextValue(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pkey`  
+ *PKEY*  
  Bir özellik anahtarı belirtir.  
   
- `pszValue`  
+ *pszValue*  
  Ayarlanacak öbek değer belirtir.  
   
- `chunkType`  
+ *chunkType*  
  Bayrakları bu öbek bir metin yazın veya bir değer türü özelliği içerip içermediğini belirtir. Bayrak değeri CHUNKSTATE numaralandırma içinden alınır.  
   
- `locale`  
+ *Yerel ayar*  
  Dil ve metin bir Öbek ile ilişkili alt dili. Öbek yerel belge Dizin Oluşturucu tarafından metnin uygun sözcük gerçekleştirmek için kullanılır. Öbek metin türü ne VT_LPWSTR, VT_LPSTR veya VT_BSTR veri türündeki bir değer türü ise, bu alan göz ardı edilir.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  Geçerli öbek türetildiği kaynak metni karakter cinsinden uzunluğu. Sıfır değeri karakteri tek kaynak metni ve türetilen metin arasındaki ilişkiyi belirtir. Sıfır olmayan bir değer bu tür doğrudan yazışmaları bulunduğu anlamına gelir.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  Türetilen bir öbek kaynak metni kaynak öbekte başladığı uzaklığı.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  Önceki öbek geçerli öbek ayıran sonu türü. CHUNK_BREAKTYPE numaralandırma içinden değerlerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

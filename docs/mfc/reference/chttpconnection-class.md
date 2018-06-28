@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 808c88e3a98df12d35afa9ce207f57456520b169
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 09f92440a926f547f051dd0bee73468a1958813e
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367652"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041032"
 ---
 # <a name="chttpconnection-class"></a>CHttpConnection sınıfı
 Bir HTTP sunucusuna bağlantınız yönetir.  
@@ -100,36 +100,36 @@ CHttpConnection(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pSession`  
+ *pSession*  
  Bir işaretçi bir [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesi.  
   
- `hConnected`  
+ *hConnected*  
  Internet bağlantısı için bir tanıtıcı.  
   
- `pstrServer`  
+ *pstrServer*  
  Sunucu adını içeren bir dize için bir işaretçi.  
   
- `dwContext`  
- İçerik tanımlayıcısını `CInternetConnection` nesnesi. Bkz: **açıklamalar** hakkında daha fazla bilgi için `dwContext`.  
+ *dwContext*  
+ İçerik tanımlayıcısını `CInternetConnection` nesnesi. Bkz: **açıklamalar** hakkında daha fazla bilgi için *dwContext*.  
   
- `nPort`  
+ *nbağlantı noktası*  
  Bu bağlantı için Internet bağlantı noktasını tanımlar sayı.  
   
- `pstrUserName`  
+ *pstrUserName*  
  İşaretçi null ile sonlandırılmış dizeye oturum açmak için kullanıcı adını belirtir. Varsa **NULL**, anonim varsayılandır.  
   
- `pstrPassword`  
- Oturum açmak için kullanılacak parolayı belirten null ile sonlandırılmış bir dize için bir işaretçi. Her iki `pstrPassword` ve `pstrUserName` olan **NULL**, varsayılan anonim parola kullanıcının e-posta adıdır. Varsa `pstrPassword` olan **NULL** (veya boş bir dize) ancak `pstrUserName` değil **NULL**, boş bir parola kullanılır. Aşağıdaki tabloda dört olası ayarlarını davranışını açıklanmaktadır `pstrUserName` ve `pstrPassword`:  
+ *pstrPassword*  
+ Oturum açmak için kullanılacak parolayı belirten null ile sonlandırılmış bir dize için bir işaretçi. Her iki *pstrPassword* ve *pstrUserName* olan **NULL**, varsayılan anonim parola kullanıcının e-posta adıdır. Varsa *pstrPassword* olan **NULL** (veya boş bir dize) ancak *pstrUserName* değil **NULL**, boş bir parola kullanılır. Aşağıdaki tabloda dört olası ayarlarını davranışını açıklanmaktadır *pstrUserName* ve *pstrPassword*:  
   
-|`pstrUserName`|`pstrPassword`|FTP sunucusuna gönderilen kullanıcı adı|FTP sunucusuna gönderilen parola|  
+|*pstrUserName*|*pstrPassword*|FTP sunucusuna gönderilen kullanıcı adı|FTP sunucusuna gönderilen parola|  
 |--------------------|--------------------|---------------------------------|---------------------------------|  
 |**NULL** veya ""|**NULL** veya ""|"anonim"|Kullanıcının e-posta adı|  
-|Olmayan- **NULL** dize|**NULL** veya ""|`pstrUserName`|" "|  
+|Olmayan- **NULL** dize|**NULL** veya ""|*pstrUserName*|" "|  
 |**NULL** olmayan **NULL** dize|**HATA**|**HATA**||  
-|Olmayan- **NULL** dize|Olmayan- **NULL** dize|`pstrUserName`|`pstrPassword`|  
+|Olmayan- **NULL** dize|Olmayan- **NULL** dize|*pstrUserName*|*pstrPassword*|  
   
- `dwFlags`  
- Herhangi bir bileşimini **INTERNET_ FLAG_\***  bayrakları. Bölümündeki tabloya bakın **açıklamalar** bölümünü [CHttpConnection::OpenRequest](#openrequest) bir açıklaması için `dwFlags` değerleri.  
+ *dwFlags*  
+ Herhangi bir bileşimini **INTERNET_ FLAG_\***  bayrakları. Bölümündeki tabloya bakın **açıklamalar** bölümünü [CHttpConnection::OpenRequest](#openrequest) bir açıklaması için *dwFlags* değerleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Hiçbir zaman oluşturduğunuz bir `CHttpConnection` doğrudan. Bunun yerine, çağırarak bir nesne oluşturma [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection).  
@@ -159,31 +159,31 @@ CHttpFile* OpenRequest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstrVerb`  
+ *pstrVerb*  
  İstekte kullanmak için fiili içeren bir dize için bir işaretçi. Varsa `NULL`, "GET" kullanılır.  
   
- `pstrObjectName`  
+ *pstrObjectName*  
  Belirtilen fiil hedef nesnesi içeren bir dize için bir işaretçi. Bu genellikle bir dosya adı yürütülebilir bir modül veya arama belirleyici içindir.  
   
- `pstrReferer`  
- Belgeden adresi (URL) belirten bir dize için bir işaretçi istek URL'SİNDE ( `pstrObjectName`) alınamadı. Varsa `NULL`, bir HTTP üstbilgisi belirtilir.  
+ *pstrReferer*  
+ Belgeden adresi (URL) belirten bir dize için bir işaretçi istek URL'SİNDE ( *pstrObjectName*) alınamadı. Varsa `NULL`, bir HTTP üstbilgisi belirtilir.  
   
- `dwContext`  
- İçerik tanımlayıcısını `OpenRequest` işlemi. Daha fazla bilgi için Açıklamalar bölümüne bakın `dwContext`.  
+ *dwContext*  
+ İçerik tanımlayıcısını `OpenRequest` işlemi. Daha fazla bilgi için Açıklamalar bölümüne bakın *dwContext*.  
   
- `ppstrAcceptTypes`  
- Sonlandırılmış bir dizi için bir işaretçi `LPCTSTR` içerik türlerini gösteren dizelerin işaretçiler istemci tarafından kabul edildi. Varsa `ppstrAcceptTypes` olan `NULL`, sunucuların istemci türüne belgelerinin yalnızca kabul eder yorumlama "metin / *" (diğer bir deyişle, yalnızca metin belgeleri ve resimleri veya diğer ikili dosyaları). İçerik türü, HTTP POST ve PUT gibi bilgileri bağlı sorguları için veri türünü tanımlayan CGI değişken CONTENT_TYPE eşdeğerdir.  
+ *ppstrAcceptTypes*  
+ Sonlandırılmış bir dizi için bir işaretçi `LPCTSTR` içerik türlerini gösteren dizelerin işaretçiler istemci tarafından kabul edildi. Varsa *ppstrAcceptTypes* olan `NULL`, sunucuların istemci türüne belgelerinin yalnızca kabul eder yorumlama "metin / *" (diğer bir deyişle, yalnızca metin belgeleri ve resimleri veya diğer ikili dosyaları). İçerik türü, HTTP POST ve PUT gibi bilgileri bağlı sorguları için veri türünü tanımlayan CGI değişken CONTENT_TYPE eşdeğerdir.  
   
- `pstrVersion`  
+ *pstrVersion*  
  HTTP sürümü tanımlayan bir dize için bir işaretçi. Varsa `NULL`, "HTTP/1.0" kullanılır.  
   
- `dwFlags`  
- INTERNET_ FLAG_ * bayrakları herhangi bir bileşimini. Olası bir açıklaması için Açıklamalar bölümüne bakın `dwFlags` değerleri.  
+ *dwFlags*  
+ INTERNET_ FLAG_ * bayrakları herhangi bir bileşimini. Olası bir açıklaması için Açıklamalar bölümüne bakın *dwFlags* değerleri.  
   
- `nVerb`  
+ *nVerb*  
  HTTP isteği türüyle ilişkili bir sayı. Aşağıdakilerden biri olabilir:  
   
-|HTTP istek türü|`nVerb` Değer|  
+|HTTP istek türü|*nVerb* değeri|  
 |-----------------------|-------------------|  
 |`HTTP_VERB_POST`|0|  
 |`HTTP_VERB_GET`|1.|  
@@ -197,7 +197,7 @@ CHttpFile* OpenRequest(
  Bir işaretçi [CHttpFile](../../mfc/reference/chttpfile-class.md) istenen nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `dwFlags` Aşağıdakilerden biri olabilir:  
+ *dwFlags* şunlardan biri olabilir:  
   
 |Internet bayrağı|Açıklama|  
 |-------------------|-----------------|  

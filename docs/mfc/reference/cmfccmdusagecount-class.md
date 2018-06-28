@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5b4824632d7ce38e50859172a24a47bdeb49f1d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a0089647fcdd1da5ddbab6194f4c3e9dae291ad3
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369248"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037350"
 ---
 # <a name="cmfccmdusagecount-class"></a>CMFCCmdUsageCount sınıfı
 Windows iletileri, kullanıcı bir menüden bir öğe seçtiğinde gibi kullanım sayısını izler.  
@@ -104,7 +104,7 @@ void AddCmd(UINT uiCmd);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `uiCmd`|Artırmak için komut sayaç belirtir.|  
+|[in] *uiCmd*|Artırmak için komut sayaç belirtir.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yeni bir giriş komutu sayımları harita yapısını ekler `m_CmdUsage`, giriş zaten mevcut değilse.  
@@ -113,9 +113,9 @@ void AddCmd(UINT uiCmd);
   
 -   Araç çubuğu framework özelleştirme modundayken ( [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode) yöntemi sıfır olmayan bir değer döndürür).  
   
--   Komut bir alt menü veya menü ayırıcı ifade eder ( `uiCmd` eşittir 0 veya -1).  
+-   Komut bir alt menü veya menü ayırıcı ifade eder ( *uiCmd* eşittir 0 veya -1).  
   
-- `uiCmd` Standart komut ifade eder (genel `IsStandardCommand` işlevi sıfır olmayan bir değer döndürür).  
+- *uiCmd* standart bir komutu belirtir (genel `IsStandardCommand` işlevi sıfır olmayan bir değer döndürür).  
   
 ##  <a name="getcount"></a>  CMFCCmdUsageCount::GetCount  
  Verilen komut kimliğiyle ilişkili kullanım sayısını alır.  
@@ -129,7 +129,7 @@ UINT GetCount(UINT uiCmd) const;
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `uiCmd`|Almak üzere komut sayaç kimliği.|  
+|[in] *uiCmd*|Almak üzere komut sayaç kimliği.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Verilen komut kimliğiyle ilişkili kullanımı sayısı  
@@ -161,7 +161,7 @@ BOOL IsFreqeuntlyUsedCmd(UINT uiCmd) const;
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `uiCmd`|Denetlemek için komutu belirtir.|  
+|[in] *uiCmd*|Denetlemek için komutu belirtir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Komutu sık kullanılması halinde sıfır olmayan; Aksi takdirde 0.  
@@ -193,7 +193,7 @@ virtual void Serialize(CArchive& ar);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `ar`|A `CArchive` veya seri hale getirmek için nesne.|  
+|[in] *ar*|A `CArchive` veya seri hale getirmek için nesne.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem komutu sayımları harita yapısını serileştiren `m_CmdUsage`ve toplam komutu kullanım `m_nTotalUsage`, ya da belirtilen arşive sayaç.  
@@ -214,14 +214,14 @@ static BOOL __stdcall SetOptions(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `nStartCount`|Tüm izlenen komutları yeni ilk sayısı.|  
-|[in] `nMinUsagePercentage`|Yeni minimum kullanım yüzdesi.|  
+|[in] *nStartCount*|Tüm izlenen komutları yeni ilk sayısı.|  
+|[in] *nMinUsagePercentage*|Yeni minimum kullanım yüzdesi.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` yöntem başarılı olursa, `FALSE` varsa `nMinUsagePercentage` parametredir 100'değerine eşit veya daha büyük.  
+ `TRUE` yöntem başarılı olursa, `FALSE` varsa *nMinUsagePercentage* parametredir 100'değerine eşit veya daha büyük.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem paylaşılan ayarlar `CMFCCmdUsageCount` sınıfı veri üyesi `m_nStartCount` ve `m_nMinUsagePercentage` için `nStartCount` ve `nMinUsagePercentage`sırasıyla. `m_nStartCount` tarafından kullanılan [CMFCCmdUsageCount::HasEnoughInformation](#hasenoughinformation) bu nesne izleme verilerini minimum miktarını topladı olup olmadığını belirlemek amacıyla yöntemi. `m_nMinUsagePercentage` tarafından kullanılan [CMFCCmdUsageCount::IsFreqeuntlyUsedCmd](#isfreqeuntlyusedcmd) verilen komut sık kullanılan olup olmadığını belirlemek amacıyla yöntemi.  
+ Bu yöntem paylaşılan ayarlar `CMFCCmdUsageCount` sınıfı veri üyesi `m_nStartCount` ve `m_nMinUsagePercentage` için *nStartCount* ve *nMinUsagePercentage*sırasıyla. `m_nStartCount` tarafından kullanılan [CMFCCmdUsageCount::HasEnoughInformation](#hasenoughinformation) bu nesne izleme verilerini minimum miktarını topladı olup olmadığını belirlemek amacıyla yöntemi. `m_nMinUsagePercentage` tarafından kullanılan [CMFCCmdUsageCount::IsFreqeuntlyUsedCmd](#isfreqeuntlyusedcmd) verilen komut sık kullanılan olup olmadığını belirlemek amacıyla yöntemi.  
   
  Hata ayıklama derlemelerinde, bu yöntem bir onaylama işlemi hatasına oluşturur `nMinUsagePercentage` parametredir 100'değerine eşit veya daha büyük.  
   

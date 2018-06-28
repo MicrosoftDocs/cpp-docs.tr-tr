@@ -166,12 +166,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 943dc2e56b896531b7deeb14a17602c97484926c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e32b127a31cf27fa2bddb189335d2edf19a8f7de
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378233"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041201"
 ---
 # <a name="cmdiframewndex-class"></a>CMDIFrameWndEx sınıfı
 İşlevselliğini genişleten [CMDIFrameWnd](../../mfc/reference/cframewnd-class.md), bir Windows birden çok belge arabirimi (MDI) çerçeve penceresi.  
@@ -314,10 +314,10 @@ BOOL AddPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  İşaretçi bölmesine kaydedin.  
   
- [in] `bTail`  
+ [in] *bTail*  
  Bu bölme listesinin sonuna eklenip eklenmeyeceğini belirler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -341,7 +341,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hdwp`  
+ [in] *hdwp*  
  Birden çok pencere konumunu yapısını tanımlar. Bu değer çağırarak edinebilirsiniz `BeginDeferWindowPos`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -355,7 +355,7 @@ BOOL AreMDITabs(int* pnMDITabsType=NULL) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `pnMDITabsType`  
+ [out] *pnMDITabsType*  
  Hangi özelliklerin etkin belirten bir tamsayı değişken için bir işaretçi:  
   
 -   0: tüm özellikleri devre dışı bırakılır.  
@@ -395,7 +395,7 @@ virtual CMDIChildWndEx* ControlBarToTabbedDocument(CDockablePane* pBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pBar`  
+ *pBar*  
  Bir işaretçi dönüştürmek için takma bölmesine.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -414,10 +414,10 @@ virtual CMDIChildWndEx* CreateDocumentWindow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpcszDocName`  
+ [in] *lpcszDocName*  
  Bir belge tanımlayıcısını içeren bir metin dizesi. Genellikle, bir belge dosyasının tam yolu değil.  
   
- [in] `pObj`  
+ [in] *pObj*  
  Kullanıcı tanımlı bir nesne için bir işaretçi. Örneğin, bir geliştirici belge açıklayan ve belge başlangıçta nasıl başlatılması söyleyen bir uygulamaya özgü verileri yapısı oluşturabilirsiniz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -445,10 +445,10 @@ virtual CMDIChildWndEx* CreateNewWindow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpcszDocName`  
+ [in] *lpcszDocName*  
  Belge adı.  
   
- [in] `pObj`  
+ [in] *pObj*  
  Daha sonraki kullanımlar için ayrılmıştır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -465,13 +465,13 @@ void DockPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
+ [in] *pBar*  
  İşaretçi sabitlemek için bölmesine.  
   
- [in] `nDockBarID`  
+ [in] *nDockBarID*  
  Çerçeve penceresi için sabitlemek için hangi kenarlarına belirtir.  
   
- [in] `lpRect`  
+ [in] *lpRect*  
  Kullanılmadı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -492,17 +492,17 @@ BOOL DockPaneLeftOf(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
+ [in] *pBar*  
  Yerleştirme bölmesi için bir işaretçi.  
   
- [in] `pLeftOf`  
+ [in] *pLeftOf*  
  Bir işaretçi bölmesine yerleştirme site olarak görev yapar. biçimindeki telefon numarasıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür `TRUE` işlemi başarılı olursa. Aksi takdirde döndürür `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Önceden tanımlanmış bir sırayla birkaç bölmesi nesnelerini sabitlemek için bu yöntemi çağırın. Bu yöntem tarafından belirtilen bölmesinde docks `pBar` tarafından belirtilen bölmenin sol `pLeftOf`.  
+ Önceden tanımlanmış bir sırayla birkaç bölmesi nesnelerini sabitlemek için bu yöntemi çağırın. Bu yöntem tarafından belirtilen bölmesinde docks *pBar* tarafından belirtilen bölmesinde solundaki *pLeftOf*.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekte gösterildiği nasıl `DockPaneLeftOf` yöntemi kullanılıyor [VisualStudioDemo örnek: MFC Visual Studio uygulama](../../visual-cpp-samples.md).  
@@ -517,7 +517,7 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
  Etkinleştirilecek ana çerçeve penceresi yanlarından belirtir. Bir veya daha fazla aşağıdaki bayraklar kullanın.  
   
 - `CBRS_ALIGN_LEFT`  
@@ -546,7 +546,7 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
  Uygulamak istediğiniz yerleştirme stilini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -567,7 +567,7 @@ void EnableFullScreenMainMenu(BOOL bEnableMenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnableMenu`  
+ [in] *bEnableMenu*  
  `TRUE` tam ekran modunda ana menüye göstermek için veya `FALSE` saklamak için.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -580,7 +580,7 @@ void EnableFullScreenMode(UINT uiFullScreenCmd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiFullScreenCmd`  
+ [in] *uiFullScreenCmd*  
  Etkinleştirir veya devre dışı bırakır tam ekran modunda bir komut kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -594,7 +594,7 @@ void EnableLoadDockState(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` Yuva durumu yüklenmesini etkinleştirmek için `FALSE` takma durumunu yüklenmesini devre dışı bırakmak için.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -609,10 +609,10 @@ void EnableMDITabbedGroups(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  Varsa `TRUE`, MDI sekmeli grupları özelliğini; etkinleştirilip `FALSE`, MDI sekmeli grupları özelliğini devre dışı bırakıldı.  
   
- [in] `params`  
+ [in] *parametreleri*  
  MDI istemci alanında oluşturulur alt öğe pencerelerini framework uygulandığı parametreleri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -628,9 +628,9 @@ void EnableMDITabbedGroups(
   
 -   Uygulamanızı sekmeli windows geçerli düzenini ve şu anda açık belgelerin listesini kaydedebilirsiniz.  
   
- Bu yöntemle çağırırsanız `bEnable` kümesine `FALSE`, `params` göz ardı edilir.  
+ Bu yöntemle çağırırsanız *bSistemlerde* kümesine `FALSE`, *params* göz ardı edilir.  
   
- MDI sekmeli grupları zaten etkin olsa bile, yeniden alt windows ayarlarını değiştirmek için bu yöntemi çağırabilirsiniz. Yöntemiyle çağrı `bEnable` kümesine `TRUE` ve üyelerini değiştirmek `CMDITabInfo` tarafından belirtilen nesne `params` parametresi.  
+ MDI sekmeli grupları zaten etkin olsa bile, yeniden alt windows ayarlarını değiştirmek için bu yöntemi çağırabilirsiniz. Yöntemiyle çağrı *bSistemlerde* kümesine `TRUE` ve üyelerini değiştirmek `CMDITabInfo` tarafından belirtilen nesne *params* parametresi.  
   
  Sekmeli grupları MDI kullanma hakkında daha fazla bilgi için bkz: [MDI sekmeli grupları](../../mfc/mdi-tabbed-groups.md).  
   
@@ -654,33 +654,33 @@ void EnableMDITabs(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bEnable`  
+ *bSistemlerde*  
  Sekmeleri etkinleştirilip etkinleştirilmeyeceğini belirtir.  
   
- `bIcons`  
+ *bIcons*  
  Simgeler sekmelerinde görüntülenmesi gerekip gerekmediğini belirtir.  
   
- `tabLocation`  
+ *tabLocation*  
  Sekme etiketleri konumunu belirtir.  
   
- `bTabCloseButton`  
+ *bTabCloseButton*  
  Sekme Kapat düğmeleri görüntülenip görüntülenmeyeceğini belirtir.  
   
- `style`  
+ *Stili*  
  Sekmeleri stilini belirtir. Kullanım `STYLE_3D_SCROLLED` normal sekmeler için veya `STYLE_3D_ONENOTE` Microsoft OneNote sekmeler için.  
   
- `bTabCustomTooltips`  
+ *bTabCustomTooltips*  
  Özel araç ipuçları etkinleştirilip etkinleştirilmeyeceğini belirtir.  
   
- `bActiveTabCloseButton`  
+ *bActiveTabCloseButton*  
  Varsa `TRUE`, **Kapat** düğmesi etkin sekmesinde yerine sekme alanı sağ üst köşesinde görüntülenir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Etkinleştirmek veya MDI çerçeve penceresi MDI sekmeleri özelliğini devre dışı bırakmak için bu yöntemi çağırın. Etkin olduğunda, tüm alt pencereleri sekmeleri görüntülenir.  
   
- Sekme etiketleri üst veya alt parametre ayarı bağlı olarak çerçevenin bulunabilir `tabLocation`. Ya da belirtebilir `CMFCTabCtrl::LOCATION_BOTTOM` (varsayılan ayar) ya da `CMFCTabCtrl::LOCATION_TOP`.  
+ Sekme etiketleri üst veya alt parametre ayarı bağlı olarak çerçevenin bulunabilir *tabLocation*. Ya da belirtebilir `CMFCTabCtrl::LOCATION_BOTTOM` (varsayılan ayar) ya da `CMFCTabCtrl::LOCATION_TOP`.  
   
- Varsa `bTabCustomTooltips` olan `TRUE`, bir `AFX_WM_ON_GET_TAB_TOOLTIP` ana çerçeve pencere iletisi gönderilir. Kodunuzu bu iletiyi işlemek ve framework ile özel araç ipuçları için MDI sekmeler sağlayın.  
+ Varsa *bTabCustomTooltips* olan `TRUE`, bir `AFX_WM_ON_GET_TAB_TOOLTIP` ana çerçeve pencere iletisi gönderilir. Kodunuzu bu iletiyi işlemek ve framework ile özel araç ipuçları için MDI sekmeler sağlayın.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekte gösterildiği nasıl `EnableMDITabs` kullanılan [MDITabsDemo örnek: MFC sekmeli MDI uygulaması](../../visual-cpp-samples.md).  
@@ -695,7 +695,7 @@ void EnableMDITabsLastActiveActivation(BOOL bLastActiveTab=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bLastActiveTab`  
+ [in] *bLastActiveTab*  
  Varsa `TRUE`, son etkin sekme etkinleştirmesi. Varsa `FALSE`, son etkin sekme etkinleştirmeyi devre dışı bırakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -723,22 +723,22 @@ void EnablePaneMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  Varsa `TRUE`, bölmesi menüsünde otomatik işlenmesini etkin; varsa `FALSE`, otomatik işleme devre dışı bırakıldı.  
   
- [in] `uiCustomizeCmd`  
+ [in] *uiCustomizeCmd*  
  Komut Kimliği **Özelleştir** menü öğesi. Bu menü öğesi, genellikle bölmeleri listesinin sonuna eklenir.  
   
- [in] `strCustomizeLabel`  
+ [in] *strCustomizeLabel*  
  İçin görüntülenecek metni **Özelleştir** menü öğesi (için yerelleştirme).  
   
- [in] `uiViewToolbarsMenuEntryID`  
+ [in] *uiViewToolbarsMenuEntryID*  
  Bölmesinde menüsü açılır bir araç çubuğu menü öğesi Kimliğini belirtir. Genellikle bu adıdır **araç çubukları** alt **Görünüm** menüsü.  
   
- [in] `bContextMenuShowsToolbarsOnly`  
+ [in] *bContextMenuShowsToolbarsOnly*  
  Varsa `TRUE`, bölmesi menüsünde araç çubukları yalnızca bir listesini görüntüler. Varsa `FALSE`, menü araç çubukları ve yerleştirme çubukları listesini görüntüler.  
   
- [in] `bViewMenuShowsToolbarsOnly`  
+ [in] *bViewMenuShowsToolbarsOnly*  
  Varsa `TRUE`, bölmesi menüsünde araç çubukları yalnızca bir listesini görüntüler. Varsa `FALSE`, menü araç çubukları ve yerleştirme çubukları listesini görüntüler.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -768,20 +768,20 @@ void EnableWindowsDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiMenuId`  
+ [in] *uiMenuId*  
  Bir menüyü kaynak Kimliğini belirtir.  
   
- [in] `lpszMenuText`  
+ [in] *lpszMenuText*  
  Öğenin metni belirtir.  
   
- [in] `bShowHelpButton`  
+ [in] *bShowHelpButton*  
  Görüntülenip görüntülenmeyeceğini belirtir bir **yardımcı** windows yönetimi iletişim kutusu düğmesinde.  
   
- [in] `uiMenuTextResId`  
+ [in] *uiMenuTextResId*  
  Öğesinin metin dizesini içeren dize kaynak tanımlayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Komutu çağıran bir MDI alt pencere yönetimi iletişim kutusu menü öğesi eklemek için bu yöntemi kullanın ( [CMFCWindowsManagerDialog sınıfı](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)). Yeni öğe tarafından belirtilen menü eklenen `uiMenuId`. Çağrı `EnableWindowsDialog` zaman işlediğiniz `WM_CREATE` ileti.  
+ Komutu çağıran bir MDI alt pencere yönetimi iletişim kutusu menü öğesi eklemek için bu yöntemi kullanın ( [CMFCWindowsManagerDialog sınıfı](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)). Yeni öğe tarafından belirtilen menü eklenen *uiMenuId*. Çağrı `EnableWindowsDialog` WM_CREATE iletisi işlediğiniz zaman.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekte gösterildiği nasıl `EnableWindowsDialog` kullanılan [VisualStudioDemo örnek: MFC Visual Studio uygulama](../../visual-cpp-samples.md).  
@@ -884,7 +884,7 @@ CBasePane* GetPane(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Denetim kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -925,10 +925,10 @@ virtual BOOL GetToolbarButtonToolTipText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
+ [in] *pButton*  
  Araç çubuğu düğmesi için bir işaretçi.  
   
- [in] `strTTText`  
+ [in] *strTTText*  
  Düğme için görüntülenecek araç ipucu metni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -947,20 +947,20 @@ BOOL InsertPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  Bir işaretçi bölmesine eklenir.  
   
- [in] `pTarget`  
+ [in] *pTarget*  
  Bir işaretçi bölmesine önce veya sonra bölmesinde eklenecek.  
   
- [in] `bAfter`  
- Varsa `TRUE`, `pControlBar` sonra eklenen `pTarget`. Varsa `FALSE`, `pControlBar` önce eklenen `pTarget`.  
+ [in] *bBu*  
+ Varsa `TRUE`, *pControlBar* sonra eklenen *pTarget*. Varsa `FALSE`, *pControlBar* önce eklenen *pTarget*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` Yöntem başarıyla bölmesinde kaydederse `FALSE` bölmesi zaten takma Yöneticisi ile kaydedilmemişse.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yerleştirme Yöneticisi tarafından belirtilen bir bölme hakkında bilgi için bu yöntemi kullanın `pControlBar`. Yerleştirme Yöneticisi bu bölme bölmesinde 's hizalama ve yerleştirme yöneticinin iç listesinde konuma göre hizalar.  
+ Yerleştirme Yöneticisi tarafından belirtilen bir bölme hakkında bilgi için bu yöntemi kullanın *pControlBar*. Yerleştirme Yöneticisi bu bölme bölmesinde 's hizalama ve yerleştirme yöneticinin iç listesinde konuma göre hizalar.  
   
 ##  <a name="isfullscreen"></a>  CMDIFrameWndEx::IsFullScreen  
  Çerçeve penceresi tam ekran modunda olup olmadığını belirler.  
@@ -996,7 +996,7 @@ BOOL IsMemberOfMDITabGroup(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Sekmeli penceresi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1023,13 +1023,13 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Ekran koordinatları belirtilen noktasında.  
   
- [in] `dwBarAlignment`  
+ [in] *dwBarAlignment*  
  Hangi uç noktasıdır yakın belirtir. Olası değerler şunlardır: `CBRS_ALIGN_LEFT`, `CBRS_ALIGN_RIGHT`, `CBRS_ALIGN_TOP`, ve `CBRS_ALIGN_BOTTOM`  
   
- [in] `bOuterEdge`  
+ [in] *bOuterEdge*  
  `TRUE` yerleştirme site dış kenarlık noktasıdır `FALSE` Aksi takdirde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1062,16 +1062,16 @@ virtual BOOL LoadFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nIDResource`  
+ [in] *nIDResource*  
  Çerçeve penceresi ile ilişkilendirilmiş paylaşılan bir kaynak kimliği.  
   
- [in] `dwDefaultStyle`  
+ [in] *dwDefaultStyle*  
  Çerçeve pencere stili.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Çerçeve üst için bir işaretçi.  
   
- [in] `pContext`  
+ [in] *pContext*  
  Bir işaretçi bir [CCreateContext yapısı](../../mfc/reference/ccreatecontext-structure.md). Bu parametre olabilir `NULL`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1085,7 +1085,7 @@ virtual BOOL LoadMDIState(LPCTSTR lpszProfileName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Profil adı belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1115,7 +1115,7 @@ void MDITabMoveToNextGroup(BOOL bNext=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bNext`  
+ [in] *bİleri*  
  Varsa `TRUE`, sonraki sekmeli grubuna sekmesini taşıma. Varsa `FALSE`, önceki sekmeli grubuna taşıyın.  
   
 ##  <a name="mditabnewgroup"></a>  CMDIFrameWndEx::MDITabNewGroup  
@@ -1126,7 +1126,7 @@ void MDITabNewGroup(BOOL bVert=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bVert`  
+ [in] *bVert*  
  Yeni Grup hizalamasını belirtir. Varsa `TRUE`, yeni Grup dikey olarak hizalanır. Varsa `FALSE`, yeni Grup yatay hizalanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1178,7 +1178,7 @@ virtual BOOL NegotiateBorderSpace(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nBorderCmd`  
+ [in] *nBorderCmd*  
  Enum aşağıdaki değerlerden birini içeren `CFrameWnd::BorderCmd`:  
   
 - `borderGet` = 1  
@@ -1187,7 +1187,7 @@ virtual BOOL NegotiateBorderSpace(
   
 - `borderSet` = 3  
   
- [içinde out] `lpRectBorder`  
+ [içinde out] *lpRectBorder*  
  İşaretçi bir [RECT yapısı](../../mfc/reference/rect-structure1.md) veya [CRect sınıfı](../../atl-mfc-shared/reference/crect-class.md) kenarlık koordinatlarını belirtir nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1204,7 +1204,7 @@ virtual BOOL OnCloseDockingPane(CDockablePane* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Kapatılan bölmesinde işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1223,7 +1223,7 @@ virtual BOOL OnCloseMiniFrame(CPaneFrameWnd*);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Kapatılan kısa çerçeve penceresi işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1242,7 +1242,7 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMenuPopup`  
+ [in] *pMenuPopup*  
  Açılır menü işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1260,17 +1260,17 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Komut kimliği.  
   
- [in] `nCode`  
- Komut bildirim kodu tanımlar. Bkz: [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) değerleri hakkında daha fazla bilgi için `nCode`.  
+ [in] *nCode*  
+ Komut bildirim kodu tanımlar. Bkz: [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) değerleri hakkında daha fazla bilgi için *nCode*.  
   
- [in] `pExtra`  
- Değeri göre kullanılan `nCode`. Bkz: [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) hakkında daha fazla bilgi için `pExtra`.  
+ [in] *pExtra*  
+ Değeri göre kullanılan *nCode*. Bkz: [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) hakkında daha fazla bilgi için *pExtra*.  
   
- [içinde out] `pHandlerInfo`  
- Genellikle, bu parametre olmalıdır `NULL`. Aksi takdirde `NULL`, `OnCmdMsg` doldurur `pTarget` ve `pmf` üyeleri `pHandlerInfo` komutu göndermeyi yerine yapısı.  
+ [içinde out] *pHandlerInfo*  
+ Genellikle, bu parametre olmalıdır `NULL`. Aksi takdirde `NULL`, `OnCmdMsg` doldurur `pTarget` ve `pmf` üyeleri *pHandlerInfo* komutu göndermeyi yerine yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İleti işleniyorsa sıfır olmayan; Aksi takdirde 0.  
@@ -1286,13 +1286,13 @@ virtual BOOL OnDrawMenuImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı işaretçi.  
   
- [in] `pMenuButton`  
+ [in] *pMenuButton*  
  Menü düğmesine işaretçi.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Sınırlayıcı dikdörtgenini görüntünün.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1302,7 +1302,7 @@ virtual BOOL OnDrawMenuImage(
  Görüntü işleme ait menü çubuğu ait menü öğeleri için özelleştirmek istiyorsanız bu yöntemi geçersiz kılın `CMDIFrameWndEx`-türetilmiş bir nesne içermelidir. Varsayılan uygulama hiçbir şey yapmaz.  
   
 ##  <a name="ondrawmenulogo"></a>  CMDIFrameWndEx::OnDrawMenuLogo  
- Çerçevesi tarafından çağrılır olduğunda bir [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)işlemleri bir `WM_PAINT` ileti.  
+ Çerçevesi tarafından çağrılır olduğunda bir [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)WM_PAINT iletisini işler.  
   
 ```  
 virtual void OnDrawMenuLogo(
@@ -1325,10 +1325,10 @@ virtual BOOL OnEraseMDIClientBackground(CDC*);
  `TRUE` uygulama iletiyi işler ve arka plan siler.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşlemek istiyorsanız, bu üye işlevi geçersiz kılma `WM_ERASEBKGND` içinde ileti bir `CMDIFrameWndEx`-türetilmiş sınıf.  
+ WM_ERASEBKGND iletisinde işlemek istiyorsanız, bu üye işlevi geçersiz bir `CMDIFrameWndEx`-türetilmiş sınıf.  
   
 ##  <a name="onmenubuttontoolhittest"></a>  CMDIFrameWndEx::OnMenuButtonToolHitTest  
- Çerçevesi tarafından çağrılır olduğunda bir [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)nesne işlemleri bir `WM_NCHITTEST` ileti.  
+ Çerçevesi tarafından çağrılır olduğunda bir [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)nesnesini WM_NCHITTEST ileti işler.  
   
 ```  
 virtual BOOL OnMenuButtonToolHitTest(
@@ -1337,14 +1337,14 @@ virtual BOOL OnMenuButtonToolHitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
+ [in] *pButton*  
  Araç çubuğu düğmesi.  
   
- [out] `pTI`  
+ [out] *PTI*  
  İşaretçi bir [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` uygulama doldurur, `pTI` parametresi. Varsayılan uygulama döndürür `FALSE`.  
+ `TRUE` uygulama doldurur, *PTI* parametresi. Varsayılan uygulama döndürür `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir araç ipucu için belirli menü öğeleri hakkında bilgi sağlamak istiyorsanız bu yöntemi geçersiz kılın. Varsayılan uygulama hiçbir şey yapmaz.  
@@ -1357,7 +1357,7 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pFrame`  
+ [in] *pFrame*  
  Bir kısa çerçeve penceresi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1373,10 +1373,10 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bPreview`  
+ [in] *bPreview*  
  Varsa `TRUE`, Baskı Önizleme modunu ayarlar. Varsa `FALSE`, önizleme modu iptal eder.  
   
- [in] `pState`  
+ [in] *pState*  
  Bir işaretçi bir `CPrintPreviewState` yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1392,10 +1392,10 @@ virtual BOOL OnShowCustomizePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMenuPane`  
+ [in] *pMenuPane*  
  Hızlı özelleştirme bölmesi için bir işaretçi.  
   
- [in] `uiToolbarID`  
+ [in] *uiToolbarID*  
  Özelleştirme araç çubuğunun denetim kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1417,10 +1417,10 @@ virtual BOOL OnShowMDITabContextMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Ekran koordinatları menüde konumu.  
   
- [in] `dwAllowedItems`  
+ [in] *dwAllowedItems*  
  Hangi eylemler için geçerli sekme izin gösteren bir bayrak bir Bitsel veya birleşimi:  
   
 - `BCGP_MDI_CREATE_VERT_GROUP` -dikey sekme grubu oluşturabilirsiniz.  
@@ -1433,7 +1433,7 @@ virtual BOOL OnShowMDITabContextMenu(
   
 - `BCGP_MDI_CAN_BE_DOCKED` -Yerleşik durumu (yalnızca Sekmeli belgeler için ilgili) sekmeli belge geçin.  
   
- [in] `bTabDrop`  
+ [in] *bTabDrop*  
  `TRUE` Sekme sekmeli başka bir grup sürükleyerek sonucunda menüsünü görüntülemek için. `FALSE` şu anda etkin sekme kısayol menüsünde olarak menüsünü görüntülemek için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1455,11 +1455,11 @@ virtual BOOL OnShowPanes(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  `TRUE` bölmeleri, göstermek için `FALSE` bölmeleri gizlemek için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Bu yöntemin çağrılması sonucunda bölmeleri durumu değişirse `FALSE` bölmeleri zaten belirtilen durumda ise `bShow`. Örneğin, bölmeler gizli ve `bShow` olan `FALSE`, dönüş değeri `FALSE`.  
+ `TRUE` Bu yöntemin çağrılması sonucunda bölmeleri durumu değişirse `FALSE` bölmeleri zaten belirtilen durumda ise *bBilgi Göster*. Örneğin, bölmeler gizli ve *bBilgi Göster* olan `FALSE`, dönüş değeri `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama araç en üst düzey çerçeve penceresinden kaldırır.  
@@ -1491,10 +1491,10 @@ virtual void OnSizeMDIClient(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rectOld`  
+ [in] *rectOld*  
  MDI istemcisi penceresinde geçerli boyutu.  
   
- [in] `rectNew`  
+ [in] *rectNew*  
  MDI istemcisi penceresinde yeni boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1509,10 +1509,10 @@ virtual BOOL OnTearOffMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMenuPopup`  
+ [in] *pMenuPopup*  
  Açılan menüden bir işaretçi.  
   
- [in] `pBar`  
+ [in] *pBar*  
  Etiketleri çubuğu için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1529,7 +1529,7 @@ virtual void OnUpdateFrameMenu(HMENU hMenuAlt);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hMenuAlt`  
+ [in] *hMenuAlt*  
  Bir menüye işleci.  
   
 ##  <a name="panefrompoint"></a>  CMDIFrameWndEx::PaneFromPoint  
@@ -1550,23 +1550,23 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Noktasında (ekran koordinatları).  
   
- [in] `nSensitivity`  
+ [in] *nSensitivity*  
  Pencere dikdörtgeni her checked bölmesinin tüm yönlerde bu değerle genişletilir.  
   
- [in] `bExactBar`  
- Varsa `TRUE`, `nSensitivity` parametresi yoksayılır.  
+ [in] *bExactBar*  
+ Varsa `TRUE`, *nSensitivity* parametresi yoksayılır.  
   
- [in] `pRTCBarType`  
+ [in] *pRTCBarType*  
  Olmayan varsa `NULL`, yalnızca belirtilen tür bölmeleri yöntemi yineler.  
   
- [out] `dwAlignment`  
+ [out] *dwAlignment*  
  Bir bölme bulunursa, bu parametre hangi taraftan bölmesinin belirtilen noktasına en yakın olan belirtin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir takma bölmesine veya `NULL` hiçbir denetim noktası tarafından belirtilen içeriyorsa `point`.  
+ Bir işaretçi bir takma bölmesine veya `NULL` hiçbir denetim noktası tarafından belirtilen içeriyorsa *noktası*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı yönlendireceği [CDockingManager sınıfı](../../mfc/reference/cdockingmanager-class.md). Bkz: [CDockingManager::ControlBarFromPoint](../../mfc/reference/cdockingmanager-class.md#panefrompoint) daha fazla bilgi için.  
@@ -1579,7 +1579,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bNotify`  
+ [in] *bNotify*  
  Çerçeve penceresi için etkin yerinde öğesi düzeni değişiklik bildirimi alıp almayacağını belirler. Varsa `TRUE`, öğe, uyarılan aksi `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1598,19 +1598,19 @@ void RemovePaneFromDockManager(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  Bir işaretçi bir bölmesine kaldırılacak.  
   
- [in] `bDestroy`  
+ [in] *bDestroy*  
  `TRUE` Kaldırılan bölmesinde yok etmek için. `FALSE` destroy değil için.  
   
- [in] `bAdjustLayout`  
+ [in] *bAdjustLayout*  
  `TRUE` yerleştirme düzeni hemen ayarlamak için. Varsa `FALSE`, ayarı yalnızca yeniden düzenlenen olay başka nedenlerle oluştuğunda meydana gelir (kullanıcı yeniden boyutlandırır, sürüklediği ana çerçeve, vb.).  
   
- [in] `bAutoHide`  
+ [in] *bAutoHide*  
  `TRUE` bölmesinde autohide bölmeleri listesinden kaldırmak için. `FALSE` bölmesinde normal bölmeleri listesinden kaldırmak için.  
   
- [in] `pBarReplacement`  
+ [in] *pBarReplacement*  
  Bir işaretçi bir bölmesine kaldırılan bölmesinde yerini alır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1626,7 +1626,7 @@ virtual BOOL SaveMDIState(LPCTSTR lpszProfileName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Profil adı belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1660,7 +1660,7 @@ void SetPrintPreviewFrame(CFrameWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Baskı Önizleme çerçeve penceresi işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1676,13 +1676,13 @@ void SetupToolbarMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `menu`  
+ [in] *menüsü*  
  Bir başvuru bir [CMenu sınıfı](../../mfc/reference/cmenu-class.md) değiştirilecek nesne.  
   
- [in] `uiViewUserToolbarCmdFirst`  
+ [in] *uiViewUserToolbarCmdFirst*  
  İlk kullanıcı tanımlı komutu belirtir.  
   
- [in] `uiViewUserToolbarCmdLast`  
+ [in] *uiViewUserToolbarCmdLast*  
  Son kullanıcı tarafından tanımlanan komutu belirtir.  
   
 ##  <a name="showfullscreen"></a>  CMDIFrameWndEx::ShowFullScreen  
@@ -1706,16 +1706,16 @@ void ShowPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
+ [in] *pBar*  
  İşaretçi gösterileceğini veya gizleneceğini için bölmesine.  
   
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  `TRUE` bölmesini göstermek için. `FALSE` bölmesini gizlemek için.  
   
- [in] `bDelay`  
+ [in] *bDelay*  
  `TRUE` yerleştirme düzeni hesaplanması geciktirmek için. `FALSE` yerleştirme düzeni hemen yeniden hesaplamak için.  
   
- [in] `bActivate`  
+ [in] *bActivate*  
  `TRUE` bölmesini göstermek için etkin olarak gerekir. `FALSE` etkin değil olarak bölmesini göstermek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1746,7 +1746,7 @@ virtual BOOL TabbedDocumentToControlBar(CMDIChildWndEx* pMDIChildWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pMDIChildWnd`  
+ *pMDIChildWnd*  
  Yerleştirme bölmesinde içeren MDI alt pencere için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1786,11 +1786,11 @@ virtual void WinHelp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwData`  
- Yardım tarafından belirtilen tür için gereken verileri belirtir `nCmd`.  
+ [in] *dwData*  
+ Yardım tarafından belirtilen tür için gereken verileri belirtir *nCmd*.  
   
- [in] `nCmd`  
- İstenen Yardım türünü belirtir. Olası değerler ve nasıl etkilediklerini listesi `dwData` parametresi bkz [WinHelp işlevi](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows SDK.  
+ [in] *nCmd*  
+ İstenen Yardım türünü belirtir. Olası değerler ve nasıl etkilediklerini listesi *dwData* parametresi bkz [WinHelp işlevi](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem geçersiz kılmaları [CWnd::WinHelp](../../mfc/reference/cwnd-class.md#winhelp).  

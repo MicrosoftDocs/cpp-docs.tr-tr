@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a1c10cd6242f2845d64965d914093455da21c8a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6af0859811ad4064c12f6e4ef8d470437fe3ded9
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370035"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037667"
 ---
 # <a name="cmfcheaderctrl-class"></a>CMFCHeaderCtrl sınıfı
 `CMFCHeaderCtrl` Sınıfı, üstbilgi denetimindeki birden çok sütun sıralama destekler.  
@@ -137,7 +137,7 @@ void EnableMultipleSort(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` birden çok sütun sıralama modunu etkinleştirmek için; `FALSE` birden çok sütun sıralama modu devre dışı bırakmak ve herhangi bir sütunu sıralanmış sütunlar listesinden kaldırmak için. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -151,7 +151,7 @@ int GetColumnState(int iColumn) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iColumn`  
+ [in] *iColumn*  
  Bir sütunun sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -227,19 +227,19 @@ virtual void OnDrawItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `iItem`  
+ [in] *iItem*  
  Çizmek için öğenin sıfır tabanlı dizini.  
   
- [in] `rect`  
+ [in] *rect*  
  Sınırlayıcı dikdörtgen çizmek için öğesinin.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  `TRUE` öğe basılı durumda çizmek için; Aksi takdirde `FALSE`.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  `TRUE` Vurgulanan durumda öğesi çizmek için; Aksi takdirde `FALSE`.  
   
 ##  <a name="ondrawsortarrow"></a>  CMFCHeaderCtrl::OnDrawSortArrow  
@@ -252,10 +252,10 @@ virtual void OnDrawSortArrow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectArrow`  
+ [in] *rectArrow*  
  Sıralama oku sınırlayıcı dikdörtgenini.  
   
 ##  <a name="onfillbackground"></a>  CMFCHeaderCtrl::OnFillBackground  
@@ -266,7 +266,7 @@ virtual void OnFillBackground(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -279,7 +279,7 @@ void RemoveSortColumn(int iColumn);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iColumn`  
+ [in] *iColumn*  
  Kaldırmak için sütunun sıfır tabanlı dizini.  
   
 ##  <a name="setsortcolumn"></a>  CMFCHeaderCtrl::SetSortColumn  
@@ -293,14 +293,14 @@ void SetSortColumn(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iColumn`  
+ [in] *iColumn*  
  Üstbilgi denetimi sütunun sıfır tabanlı dizini. Bu parametre küçükse sıfır, bu yöntem tüm sütunları sıralama sütunlar listesinden kaldırır.  
   
- [in] `bAscending`  
- Sütunun sıralama düzenini belirtir, `iColumn` parametresi belirtir. `TRUE` artan ayarlamak için; `FALSE` azalan ayarlamak için. Varsayılan değer `TRUE` şeklindedir.  
+ [in] *bAscending*  
+ Sütunun sıralama düzenini belirtir, *iColumn* parametresi belirtir. `TRUE` artan ayarlamak için; `FALSE` azalan ayarlamak için. Varsayılan değer `TRUE` şeklindedir.  
   
- [in] `bAdd`  
- `TRUE` için sütunun sıralama düzenini ayarlama `iColumn` parametresi belirtir.  
+ [in] *bekle*  
+ `TRUE` için sütunun sıralama düzenini ayarlama *iColumn* parametresi belirtir.  
   
  Geçerli üstbilgi denetimi ise *birden çok sütun sıralama* modu, bu yöntem, belirtilen sütunun sütunları sıralama listesine ekler. Kullanım [CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort) birden çok sütun sıralama modu ayarlamak için.  
   

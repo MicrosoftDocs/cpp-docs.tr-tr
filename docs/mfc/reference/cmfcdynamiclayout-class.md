@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76faab221b5e36f9795595d07cd13d0bbf1df200
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d89f82f03a4c6a9faf2ddf3e8c3f2a0b7b3fd1d2
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370727"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042371"
 ---
 # <a name="cmfcdynamiclayout-class"></a>CMFCDynamicLayout sınıfı
 Bir pencere denetimlerinde nasıl taşınır ve kullanıcı yeniden boyutlandırır gibi yeniden boyutlandırılan belirtir.  
@@ -105,16 +105,16 @@ BOOL AddItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hwnd`  
+ *HWND*  
  Eklemek için penceresine işleci.  
   
- `nID`  
+ *nID*  
  Eklemek için alt denetim kimliği.  
   
- `moveSettings`  
+ *moveSettings*  
  Pencere boyutu değiştikçe denetimi nasıl taşınacağını açıklar yapısı.  
   
- `sizeSettings`  
+ *sizeSettings*  
  Denetim pencere boyutu değiştikçe nasıl boyutlandırılmasını açıklar yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -141,7 +141,7 @@ BOOL Create(CWnd* pHostWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- pHostWnd  
+ *pHostWnd*  
  Konak penceresi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -183,7 +183,7 @@ void GetHostWndRect(CRect& rect,);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rect`  
+ *Rect*  
  İşlev döndükten sonra bu parametre düzen alanına sınırlayıcı dikdörtgenini içerir. Out parametresi budur; giriş değeri üzerine yazılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -196,7 +196,7 @@ BOOL HasItem(HWND hwnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hwnd`  
+ *HWND*  
  Denetimi için Pencere işleyicisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -226,13 +226,13 @@ static BOOL LoadResource(CWnd* pHostWnd,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pHostWnd`  
+ *pHostWnd*  
  Konak penceresi için bir işaretçi.  
   
- `lpResource`  
+ *lpResource*  
  AFX_DIALOG_LAYOUT kaynağı içeren arabellek için bir işaretçi.  
   
- `dwSize`  
+ *dwSize*  
  Bayt cinsinden arabellek boyutu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -248,7 +248,7 @@ static MoveSettings MoveHorizontal(int nRatio);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nRatio`  
+ *nRatio*  
  Kullanıcı konak boyutlandırır olduğunda ne kadar alt denetim yatay olarak taşınır yüzde olarak tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -264,10 +264,10 @@ static MoveSettings MoveHorizontalAndVertical(int nXRatio int nYRatio);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nXRatio`  
+ *nXRatio*  
  Kullanıcı konak boyutlandırır olduğunda ne kadar alt denetim yatay olarak taşınır yüzde olarak tanımlar.  
   
- `nYRatio`  
+ *nYRatio*  
  Kullanıcı konak boyutlandırır olduğunda ne kadar alt denetim dikey olarak taşınır yüzde olarak tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -336,7 +336,7 @@ static MoveSettings MoveVertical(int nRatio);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nRatio`  
+ *nRatio*  
  Kullanıcı konak boyutlandırır olduğunda ne kadar alt denetim dikey olarak taşınır yüzde olarak tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -352,7 +352,7 @@ void SetMinSize(const CSize& size);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `size`  
+ *Boyutu*  
  İstenen boyut, altında düzeni değil ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -366,7 +366,7 @@ static SizeSettings SizeHorizontal(int nRatio);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nRatio`  
+ *nRatio*  
  Kullanıcı konak boyutlandırır olduğunda ne kadar alt denetim yatay olarak yeniden boyutlandırılır yüzde olarak tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -382,10 +382,10 @@ static SizeSettings SizeHorizontalAndVertical(int nXRatio int nYRatio);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nXRatio`  
+ *nXRatio*  
  Kullanıcı konak boyutlandırır olduğunda ne kadar alt denetim yatay olarak yeniden boyutlandırılır yüzde olarak tanımlar.  
   
- `nYRatio`  
+ *nYRatio*  
  Kullanıcı konak boyutlandırır olduğunda ne kadar alt denetim dikey olarak yeniden boyutlandırılır yüzde olarak tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -453,7 +453,7 @@ static SizeSettings SizeVertical(int nRatio);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nRatio`  
+ *nRatio*  
  Kullanıcı konak boyutlandırır olduğunda ne kadar alt denetim dikey olarak yeniden boyutlandırılır yüzde olarak tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60ee6e3d23dc197f7d8114f571bd121f864701d7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c60027195024a9abb1af5ce5ec47dc6f6a6bfbf8
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372424"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038991"
 ---
 # <a name="cinternetfile-class"></a>CInternetFile sınıfı
 Internet protokolleri kullanır uzak sistemlere dosyalara erişim sağlar.  
@@ -97,7 +97,7 @@ class CInternetFile : public CStdioFile
 ## <a name="remarks"></a>Açıklamalar  
  İçin temel sınıf sağlar [CHttpFile](../../mfc/reference/chttpfile-class.md) ve [CGopherFile](../../mfc/reference/cgopherfile-class.md) dosya sınıfları. Hiçbir zaman oluşturduğunuz bir `CInternetFile` doğrudan nesne. Bunun yerine, çağırarak türetilmiş sınıflarından biri bir nesne oluşturma [CGopherConnection::OpenFile](../../mfc/reference/cgopherconnection-class.md#openfile) veya [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest). Ayrıca bir `CInternetFile` çağırarak nesne [CFtpConnection::OpenFile](../../mfc/reference/cftpconnection-class.md#openfile).  
   
- `CInternetFile` Üye işlevleri **açık**, `LockRange`, `UnlockRange`, ve `Duplicate` için uygulanmadı `CInternetFile`. Bu işlevler çağırırsanız bir `CInternetFile` nesne alırsınız bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
+ `CInternetFile` Üye işlevleri `Open`, `LockRange`, `UnlockRange`, ve `Duplicate` için uygulanmadı `CInternetFile`. Bu işlevler çağırırsanız bir `CInternetFile` nesne alırsınız bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
   
  Hakkında daha fazla bilgi için `CInternetFile` diğer MFC Internet sınıfları ile works başlıklı makaleye bakın [Internet programlama WinINet ile](../../mfc/win32-internet-extensions-wininet.md).  
   
@@ -123,7 +123,7 @@ virtual void Abort();
 ### <a name="remarks"></a>Açıklamalar  
  Dosya nesnesi yok etme önce kapatılmamış, yıkıcı sizin için kapatılır.  
   
- Özel durumlar, işlerken **Abort** farklıdır [Kapat](#close) iki önemli şekilde. İlk olarak, **Abort** işlevi değil throw bir özel durum hatalarında hataları yoksayar çünkü. İkinci, **Abort** yok **ASSERT** dosya açılmamış olan veya daha önce kapatıldı.  
+ Özel durumlar, işlerken `Abort` farklıdır [Kapat](#close) iki önemli şekilde. İlk olarak, `Abort` işlevi değil throw bir özel durum hatalarında hataları yoksayar çünkü. İkinci, `Abort` yok **ASSERT** dosya açılmamış olan veya daha önce kapatıldı.  
   
 ##  <a name="cinternetfile"></a>  CInternetFile::CInternetFile  
  Bu üye işlevi aldığında çağrılan bir `CInternetFile` nesnesi oluşturulur.  
@@ -146,25 +146,25 @@ CInternetFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hFile`  
+ *Hfıle*  
  Internet dosyası için bir tanıtıcı.  
   
- `pstrFileName`  
+ *pstrFileName*  
  Dosya adı içeren bir dize için bir işaretçi.  
   
- `pConnection`  
+ *pConnection*  
  Bir işaretçi bir [CInternetConnection](../../mfc/reference/cinternetconnection-class.md) nesnesi.  
   
  *bReadMode*  
  Dosyanın salt okunur olup olmadığını gösterir.  
   
- `hSession`  
+ *hSession*  
  Bir Internet oturumu için bir tanıtıcı.  
   
- `pstrServer`  
+ *pstrServer*  
  Sunucu adını içeren bir dize için bir işaretçi.  
   
- `dwContext`  
+ *dwContext*  
  İçerik tanımlayıcısını `CInternetFile` nesnesi. Bkz: [WinINet Temelleri](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -212,7 +212,7 @@ operator HINTERNET() const;
 ```  
   
 ##  <a name="read"></a>  CInternetFile::Read  
- Verilen belleğe başlayarak okumak için bu üye işlev çağrısı `lpvBuf`, bayt sayısı belirtilen `nCount`.  
+ Verilen belleğe başlayarak okumak için bu üye işlev çağrısı *lpvBuf*, bayt sayısı belirtilen *nCount*.  
   
 ```  
 virtual UINT Read(
@@ -221,17 +221,17 @@ virtual UINT Read(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpBuf`  
+ *lpBuf*  
  Hangi dosya veri okunurken bir bellek adresi için bir işaretçi.  
   
- `nCount`  
+ *nCount*  
  Yazılacak bayt sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Arabelleğe aktarılan toplam bayt sayısı. Dönüş değeri olabilir değerinden `nCount` varsa dosya sonuna ulaşıldı.  
+ Arabelleğe aktarılan toplam bayt sayısı. Dönüş değeri olabilir değerinden *nCount* varsa dosya sonuna ulaşıldı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşlevi gerçekte okunan bayt sayısını verir — olabilir bir sayı değerinden `nCount` dosya biterse. Dosyası okunurken bir hata meydana gelirse, işlev oluşturur bir [CInternetException](../../mfc/reference/cinternetexception-class.md) hatayı açıklayan nesne. Okuma dosyanın sonunu aşan bir hata olarak kabul edilmez ve hiçbir özel durum unutmayın.  
+ İşlevi gerçekte okunan bayt sayısını verir — olabilir bir sayı değerinden *nCount* dosya biterse. Dosyası okunurken bir hata meydana gelirse, işlev oluşturur bir [CInternetException](../../mfc/reference/cinternetexception-class.md) hatayı açıklayan nesne. Okuma dosyanın sonunu aşan bir hata olarak kabul edilmez ve hiçbir özel durum unutmayın.  
   
  Tüm verileri alındığından emin olmak için bir uygulama çağırmak devam etmeniz gerekir **CInternetFile::Read** yöntemi sıfır dönene kadar yöntemi.  
   
@@ -248,13 +248,13 @@ virtual LPTSTR ReadString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstr`  
+ *pstr*  
  Okunan satır alacak bir dize için bir işaretçi.  
   
- `nMax`  
+ *nMax*  
  Okunacak karakter sayısı.  
   
- `rString`  
+ *rString*  
  Bir başvuru [CString](../../atl-mfc-shared/reference/cstringt-class.md) okuma satırın alan nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -263,7 +263,7 @@ virtual LPTSTR ReadString(
  **NULL** dosya sonu herhangi bir veri; okumadan ulaştıysanız veya boolean ise, **FALSE** dosya sonu herhangi bir veri okumadan ulaştıysanız.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sonuçta elde edilen satır işlevi tarafından başvurulan bellek yerleştirir `pstr` parametresi. Karakterleri okuma durdurur tarafından belirtilen karakter üst sınırını ulaştığında `nMax`. Arabellek her zaman bir sonlandırma null karakteri alır.  
+ Sonuçta elde edilen satır işlevi tarafından başvurulan bellek yerleştirir *pstr* parametresi. Karakterleri okuma durdurur tarafından belirtilen karakter üst sınırını ulaştığında *nMax*. Arabellek her zaman bir sonlandırma null karakteri alır.  
   
  Çağırırsanız `ReadString` ilk çağırmadan [SetReadBufferSize](#setreadbuffersize), 4096 bayt arabellek alırsınız.  
   
@@ -277,17 +277,17 @@ virtual ULONGLONG Seek(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lOffset`  
+ *lOffset*  
  Dosya okuma/yazma işaretçiyi taşımak için bayt cinsinden uzaklık.  
   
- `nFrom`  
+ *nFrom*  
  Uzaklık göreli referansı. Aşağıdaki değerlerden biri olmalıdır:  
   
-- **CFile::begin** dosya işaretçisini `lOff` bayt iletmek dosya baştan.  
+- **CFile::begin** dosya işaretçisini *lOff* bayt iletmek dosya baştan.  
   
-- **CFile::current** dosya işaretçisini `lOff` dosyayı geçerli konumundan bayt.  
+- **CFile::current** dosya işaretçisini *lOff* dosyayı geçerli konumundan bayt.  
   
-- **CFile::end** dosya işaretçisini `lOff` dosyasının sonuna baytlar. `lOff` Mevcut dosyaya arama negatif olmalıdır; pozitif değerler dosya sonunun arama.  
+- **CFile::end** dosya işaretçisini *lOff* dosyasının sonuna baytlar. *lOff* gerekir olması mevcut arama negatif dosya; değerleri arama için dosya sonunun pozitif.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İstenen konumu yasal ise dosya başından uzaklık yeni bayt; Aksi takdirde, değerler tanımsızdır ve [CInternetException](../../mfc/reference/cinternetexception-class.md) nesnesi oluşturulur.  
@@ -320,7 +320,7 @@ BOOL SetReadBufferSize(UINT nReadSize);
  Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, Win32 işlevi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Temel alınan WinINet API'leri değil arabelleğe alma gerçekleştirmek, bu nedenle verileri okumak için veri miktarını bağımsız olarak verimli bir şekilde okumak uygulamanızı sağlayan bir arabellek boyutu seçin. Her için çağırırsanız [okuma](#read) normalde büyük aount içerir (örneğin, dört veya daha fazla kilobayt) verileri bir arabellek gerekmemelidir. Ancak, çağırırsanız **okuma** küçük parçalara veri almak için veya kullanıyorsanız [ReadString'i](#readstring) Okuma arabelleği uygulama performansını artıran sonra tek tek satırların aynı anda okunamıyor.  
+ Temel alınan WinINet API'leri değil arabelleğe alma gerçekleştirmek, bu nedenle verileri okumak için veri miktarını bağımsız olarak verimli bir şekilde okumak uygulamanızı sağlayan bir arabellek boyutu seçin. Her için çağırırsanız [okuma](#read) normalde büyük aount içerir (örneğin, dört veya daha fazla kilobayt) verileri bir arabellek gerekmemelidir. Ancak, çağırırsanız `Read` küçük parçalara veri almak için veya kullanıyorsanız [ReadString'i](#readstring) Okuma arabelleği uygulama performansını artıran sonra tek tek satırların aynı anda okunamıyor.  
   
  Varsayılan olarak, bir `CInternetFile` nesne için Okuma arabelleği sağlamaz. Bu üye işlevini çağırırsanız, dosya için okuma erişimi açılmış emin olmalısınız.  
   
@@ -346,7 +346,7 @@ BOOL SetWriteBufferSize(UINT nWriteSize);
  Varsayılan olarak, bir `CInternetFile` nesne yazmak için arabelleğe sağlamaz. Bu üye işlevini çağırırsanız, dosya yazma erişimi için açıldı emin olmalısınız. Yazma arabelleği boyutu dilediğiniz zaman değiştirebilirsiniz, ancak bunun nedenle örtük bir çağrı neden olur [Flush](#flush).  
   
 ##  <a name="write"></a>  CInternetFile::Write  
- Verilen belleğe yazmak için bu üye işlevini çağırın `lpvBuf`, bayt sayısı belirtilen `nCount`.  
+ Verilen belleğe yazmak için bu üye işlevini çağırın *lpvBuf*, bayt sayısı belirtilen *nCount*.  
   
 ```  
 virtual void Write(
@@ -355,10 +355,10 @@ virtual void Write(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpBuf`  
+ *lpBuf*  
  Bir işaretçi yazılması için ilk bayta.  
   
- `nCount`  
+ *nCount*  
  Yazılacak bayt sayısını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -372,7 +372,7 @@ virtual void WriteString(LPCTSTR pstr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstr`  
+ *pstr*  
  Yazılacak içeriği içeren bir dize için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  

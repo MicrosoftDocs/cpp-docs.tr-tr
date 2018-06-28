@@ -92,12 +92,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a636b07b73da6ded6fb1646b7efa30b4685e55ee
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c7df4ea13313758c517188e1c4ce0441618a99b4
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377674"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039075"
 ---
 # <a name="coleserverdoc-class"></a>COleServerDoc sınıfı
 OLE sunucu belgeleri için temel sınıf.  
@@ -237,7 +237,7 @@ virtual COleIPFrameWnd* CreateInPlaceFrame(CWnd* pParentWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentWnd`  
+ *pParentWnd*  
  Kapsayıcı uygulamanın ana pencereyi işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -269,7 +269,7 @@ virtual void DestroyInPlaceFrame(COleIPFrameWnd* pFrameWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFrameWnd`  
+ *pFrameWnd*  
  Yerinde çerçeve penceresi yok edilmesi için işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -306,7 +306,7 @@ virtual CDocObjectServer* GetDocObjectServer(LPOLEDOCUMENTSITE pDocSite);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDocSite`  
+ *pDocSite*  
  İşaretçi `IOleDocumentSite` bu belgeyi sunucuya bağlanır arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -340,7 +340,7 @@ void GetItemClipRect(LPRECT lpClipRect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpClipRect`  
+ *lpClipRect*  
  İşaretçi bir `RECT` yapısı veya `CRect` öğe kırpması dikdörtgen koordinatlarını almak için nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -356,7 +356,7 @@ void GetItemPosition(LPRECT lpPosRect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpPosRect`  
+ *lpPosRect*  
  İşaretçi bir `RECT` yapısı veya `CRect` öğesi koordinatlarını almak için nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -381,7 +381,7 @@ BOOL GetZoomFactor(
  *lpSizeDenom*  
  Sınıfın bir nesnesi için işaretçi `CSize` yakınlaştırma faktörünü 's payda tutun. Olabilir **NULL**.  
   
- `lpPosRect`  
+ *lpPosRect*  
  Sınıfın bir nesnesi için işaretçi `CRect` öğesi'nin yeni konumu açıklar. Bu bağımsız değişken ise **NULL**, işlevi öğesi'nin geçerli konumunu kullanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -456,7 +456,7 @@ void NotifyRename(LPCTSTR lpszNewName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszNewName`  
+ *lpszNewName*  
  Sunucu belgesinin yeni adını belirten bir dize işaretçi; Bu, genellikle tam nitelenmiş bir yol olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -480,7 +480,7 @@ virtual void OnClose(OLECLOSE dwCloseOption);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwCloseOption`  
+ *dwCloseOption*  
  Numaralandırma arasında bir değer `OLECLOSE`. Bu parametre aşağıdaki değerlerden biri olabilir:  
   
 - `OLECLOSE_SAVEIFDIRTY` Bunu güncellendiyse dosya kaydedilmiş kalır.  
@@ -516,13 +516,13 @@ virtual void OnDeactivateUI(BOOL bUndoable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bUndoable`  
+ *bUndoable*  
  Düzenleme değişiklikleri alınabilecek olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev kapsayıcı uygulamanın kullanıcı arabirimi menüler ve yerinde etkinleştirme için oluşturulmuş olan diğer denetimleri gizleme özgün durumuna geri yükler.  
   
- Her zaman framework ayarlar `bUndoable` için **FALSE**. Sunucunun geri alma destekliyorsa ve alınabilecek bir işlem, bir taban sınıfı uygulama ile çağrı `bUndoable` kümesine **doğru**.  
+ Her zaman framework ayarlar *bUndoable* için **FALSE**. Sunucunun geri alma destekliyorsa ve alınabilecek bir işlem, bir taban sınıfı uygulama ile çağrı *bUndoable* kümesine **doğru**.  
   
 ##  <a name="ondocwindowactivate"></a>  COleServerDoc::OnDocWindowActivate  
  Framework etkinleştirme veya devre dışı yerinde düzenlemek için bir belge penceresi için bu işlevi çağırır.  
@@ -532,7 +532,7 @@ virtual void OnDocWindowActivate(BOOL bActivate);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bActivate`  
+ *bActivate*  
  Belge penceresine etkinleştirilmiş veya devre dışı olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -553,11 +553,11 @@ virtual HRESULT OnExecOleCmd(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pguidCmdGroup`  
+ *pguidCmdGroup*  
  Bir işaretçi komutları kümesini tanımlayan bir GUID. Olabilir **NULL** varsayılan komut grubu belirtmek için.  
   
- `nCmdID`  
- Yürütülecek komut. Tarafından tanımlanan grubunda olmalıdır `pguidCmdGroup`.  
+ *nCmdID*  
+ Yürütülecek komut. Tarafından tanımlanan grubunda olmalıdır *pguidCmdGroup*.  
   
  *nCmdExecOut*  
  Yol nesne komutu, bir veya daha fazla aşağıdaki değerlerden birini yürütülecek **OLECMDEXECOPT** numaralandırma:  
@@ -570,10 +570,10 @@ virtual HRESULT OnExecOleCmd(
   
  **OLECMDEXECOPT_SHOWHELP**  
   
- `pvarargIn`  
+ *pvarargIn*  
  İşaretçi bir **VARIANTARG** komut için giriş bağımsız değişkeni içeren. Olabilir **NULL**.  
   
- `pvarargOut`  
+ *pvarargOut*  
  İşaretçi bir **VARIANTARG** komuttan çıkış dönüş değerleri almak için. Olabilir **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -584,10 +584,10 @@ virtual HRESULT OnExecOleCmd(
 |**E_UNEXPECTED**|Beklenmeyen bir hata oluştu|  
 |**E_FAIL**|Bir hata oluştu|  
 |**E_NOTIMPL**|MFC gösterir kendisini çevirin ve komut gönderme girişiminde|  
-|**OLECMDERR_E_UNKNOWNGROUP**|`pguidCmdGroup` olmayan olan **NULL** tanınan komut grubu belirtmiyor ancak|  
-|**OLECMDERR_E_NOTSUPPORTED**|`nCmdID` grubun geçerli bir komut olarak tanınmıyor `pguidCmdGroup`|  
-|**OLECMDERR_DISABLED**|Tarafından tanımlanan komutu `nCmdID` devre dışı bırakılır ve yürütülemez|  
-|**OLECMDERR_NOHELP**|Çağıran tarafından tanımlanan komutu hakkında Yardım için sorulan `nCmdID` ancak Yardım yok|  
+|**OLECMDERR_E_UNKNOWNGROUP**|*pguidCmdGroup* olan olmayan **NULL** tanınan komut grubu belirtmiyor ancak|  
+|**OLECMDERR_E_NOTSUPPORTED**|*nCmdID* grubunda geçerli bir komut olarak tanınmıyor *pguidCmdGroup*|  
+|**OLECMDERR_DISABLED**|Tarafından tanımlanan komutu *nCmdID* devre dışı bırakılır ve yürütülemez|  
+|**OLECMDERR_NOHELP**|Çağıran tarafından tanımlanan komutu hakkında Yardım için sorulan *nCmdID* ancak Yardım yok|  
 |**OLECMDERR_CANCELED**|Kullanıcı yürütme iptal edildi|  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -595,11 +595,11 @@ virtual HRESULT OnExecOleCmd(
   
  Framework çevirin ve OLE belge komut gönderme girişiminde bulunmadan önce işlevi çağırır. Standart OLE belge komutları işlemek için bu işlev geçersiz kılmak gerekli değildir, ancak kendi özel komutları işleyebilir veya parametreleri kabul veya sonuçları döndüren komutları işlemek istiyorsanız, bu işlev bir geçersiz kılma sağlamanız gerekir.  
   
- Komutların çoğu olmayan bağımsız değişkenler almayan veya dönüş değerleri. Komutların çoğu için arayan geçirebilirsiniz **NULL**s için `pvarargIn` ve `pvarargOut`. Giriş değerleri beklediğini komutları çağıran bildirme başlatmak ve bir **VARIANTARG** değişkeni değişken bir işaretçi geçirin `pvarargIn`. Tek bir değer gerektiren komutlar için bağımsız değişken doğrudan depolanabilir **VARIANTARG** ve işleve. İçinde birden fazla bağımsız değişkenini paketlenmesi **VARIANTARG** desteklenen türlerden birini kullanarak (gibi `IDispatch` ve **SAFEARRAY** ).  
+ Komutların çoğu olmayan bağımsız değişkenler almayan veya dönüş değerleri. Komutların çoğu için arayan geçirebilirsiniz **NULL**s için *pvarargIn* ve *pvarargOut*. Giriş değerleri beklediğini komutları çağıran bildirme başlatmak ve bir **VARIANTARG** değişkeni değişken bir işaretçi geçirin *pvarargIn*. Tek bir değer gerektiren komutlar için bağımsız değişken doğrudan depolanabilir **VARIANTARG** ve işleve. İçinde birden fazla bağımsız değişkenini paketlenmesi **VARIANTARG** desteklenen türlerden birini kullanarak (gibi `IDispatch` ve **SAFEARRAY** ).  
   
- Bir komut bağımsız değişkenleri çağıran döndürürse benzer şekilde, bildirmek için beklenen bir **VARIANTARG**, kendisine başlatma `VT_EMPTY`ve kendi adres geçirin `pvarargOut`. Bir komut tek bir değer döndürürse, nesne doğrudan bu değeri saklayabilir `pvarargOut`. Birden çok çıktı değerleri için uygun şekilde paketlenmesi **VARIANTARG**.  
+ Bir komut bağımsız değişkenleri çağıran döndürürse benzer şekilde, bildirmek için beklenen bir **VARIANTARG**, kendisine başlatma `VT_EMPTY`ve kendi adres geçirin *pvarargOut*. Bir komut tek bir değer döndürürse, nesne doğrudan bu değeri saklayabilir *pvarargOut*. Birden çok çıktı değerleri için uygun şekilde paketlenmesi **VARIANTARG**.  
   
- Bu işlevin temel sınıf uygulamasını yükselteceğinizi **OLE_COMMAND_MAP** uygun bir işleyici komutuna gönderileceği deneyin ve komut hedefi ile ilişkili yapıları. Temel sınıf uygulamasını bağımsız değişkenlerini kabul eder veya dönüş değerleri komutları ile çalışır. Bağımsız değişkenler kabul eden ya da dönüş değerleri komutları işlemek gerekiyorsa, bu işlevi geçersiz gerekir ve çalışmak `pvarargIn` ve `pvarargOut` parametreleri kendiniz.  
+ Bu işlevin temel sınıf uygulamasını yükselteceğinizi **OLE_COMMAND_MAP** uygun bir işleyici komutuna gönderileceği deneyin ve komut hedefi ile ilişkili yapıları. Temel sınıf uygulamasını bağımsız değişkenlerini kabul eder veya dönüş değerleri komutları ile çalışır. Bağımsız değişkenler kabul eden ya da dönüş değerleri komutları işlemek gerekiyorsa, bu işlevi geçersiz gerekir ve çalışmak *pvarargIn* ve *pvarargOut* parametreleri kendiniz.  
   
 ##  <a name="onframewindowactivate"></a>  COleServerDoc::OnFrameWindowActivate  
  Kapsayıcı uygulamanın çerçeve penceresi etkinleştirilmiş veya devre dışı bırakıldığında framework bu işlevi çağırır.  
@@ -609,7 +609,7 @@ virtual void OnFrameWindowActivate(BOOL bActivate);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bActivate`  
+ *bActivate*  
  Çerçeve penceresi etkin veya devre dışı olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -656,14 +656,14 @@ virtual void OnResizeBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpRectBorder`  
+ *lpRectBorder*  
  İşaretçi bir `RECT` yapısı veya `CRect` kenarlık koordinatlarını belirtir nesnesi.  
   
- `lpUIWindow`  
+ *lpUIWindow*  
  Sınıfın bir nesnesi için işaretçi **IOleInPlaceUIWindow** geçerli yerinde düzenleme oturum sahibi.  
   
  *bFrame*  
- **DOĞRU** varsa `lpUIWindow` işaret kapsayıcı uygulamanın üst düzey çerçeve penceresine veya **FALSE** varsa `lpUIWindow` işaret kapsayıcı uygulamanın belge düzeyi çerçeve penceresi.  
+ **DOĞRU** varsa *lpUIWindow* işaret kapsayıcı uygulamanın üst düzey çerçeve penceresine veya **FALSE** varsa *lpUIWindow* işaret kapsayıcıya uygulamanın belge düzeyi çerçeve penceresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev yeniden boyutlandırır ve araç çubuklarını ve diğer kullanıcı arabirimi öğeleri yeni pencere boyutunu uygun olarak ayarlar.  
@@ -682,10 +682,10 @@ virtual void OnSetHostNames(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszHost`  
+ *lpszHost*  
  İşaretçi bir dizeye kapsayıcı uygulamanın adını belirtir.  
   
- `lpszHostObj`  
+ *lpszHostObj*  
  İşaretçi belge için kapsayıcının adını belirten dize.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -703,10 +703,10 @@ virtual void OnSetItemRects(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpPosRect`  
+ *lpPosRect*  
  İşaretçi bir `RECT` yapısı veya `CRect` kapsayıcı uygulamanın istemci alanını göre yerinde çerçeve pencere konumunu belirten nesne.  
   
- `lpClipRect`  
+ *lpClipRect*  
  İşaretçi bir `RECT` yapısı veya `CRect` yerinde çerçeve pencere kapsayıcı uygulamanın istemci alanını göre dikdörtgen kırpma belirtir nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -715,7 +715,7 @@ virtual void OnSetItemRects(
  Bu işlev genellikle yanıt olarak adlandırılır bir `RequestPositionChange` herhangi bir zamanda, yerinde öğesi için bir konum değişiklik isteği kapsayıcıya tarafından çağrılabilir rağmen çağırın.  
   
 ##  <a name="onshowcontrolbars"></a>  COleServerDoc::OnShowControlBars  
- Framework tarafından tanımlanan çerçeve penceresi ile ilişkili sunucu uygulamasının denetim çubuklarını gösterme veya gizleme için bu işlevi çağırır `pFrameWnd`.  
+ Framework tarafından tanımlanan çerçeve penceresi ile ilişkili sunucu uygulamasının denetim çubuklarını gösterme veya gizleme için bu işlevi çağırır *pFrameWnd*.  
   
 ```  
 virtual void OnShowControlBars(
@@ -724,10 +724,10 @@ virtual void OnShowControlBars(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFrameWnd`  
+ *pFrameWnd*  
  Çerçeve penceresi, Denetim çubukları gizli veya gösterilen gerektiğini işaretçi.  
   
- `bShow`  
+ *bBilgi Göster*  
  Denetim çubukları gösterileceğini veya gizleneceğini olup olmadığını belirler.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -741,11 +741,11 @@ virtual void OnShowDocument(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bShow`  
+ *bBilgi Göster*  
  Belge için kullanıcı arabirimi gösterileceğini veya gizleneceğini olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bShow` olan **doğru**, varsayılan uygulama gerekirse sunucu uygulaması etkinleştirir ve onun penceresi öğesi görünür olmasını sağlamak kaydırmak kapsayıcı uygulamanın neden olur. Varsa `bShow` olan **FALSE**, varsayılan uygulaması bir çağrıyla öğesi devre dışı bırakır `OnDeactivate`, ardından yok eder veya ilki dışında belge için oluşturulan tüm çerçeve pencereleri gizler. Varsayılan uygulama görünür belge kalırsa, sunucu uygulaması gizler.  
+ Varsa *bBilgi Göster* olan **doğru**, varsayılan uygulama gerekirse sunucu uygulaması etkinleştirir ve onun penceresi öğesi görünür olmasını sağlamak kaydırmak kapsayıcı uygulamanın neden olur. Varsa *bBilgi Göster* olan **FALSE**, varsayılan uygulaması bir çağrıyla öğesi devre dışı bırakır `OnDeactivate`, ardından yok eder veya ilk dışında belge için oluşturulan tüm çerçeve pencereleri gizler biri. Varsayılan uygulama görünür belge kalırsa, sunucu uygulaması gizler.  
   
 ##  <a name="onupdatedocument"></a>  COleServerDoc::OnUpdateDocument  
  Bir belgeyi kaydetmeyi bileşik belge katıştırılmış bir öğeyi olduğunda çerçevesi tarafından çağrılır.  
@@ -768,7 +768,7 @@ void RequestPositionChange(LPCRECT lpPosRect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpPosRect`  
+ *lpPosRect*  
  İşaretçi bir `RECT` yapısı veya `CRect` öğesi'nin yeni konumunu içeren bir nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -792,7 +792,7 @@ BOOL ScrollContainerBy(CSize sizeScroll);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `sizeScroll`  
+ *sizeScroll*  
  İlerlemek için ne kadar kapsayıcı belge olduğunu gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -813,16 +813,16 @@ void UpdateAllItems(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pSender`  
+ *pSender*  
  İşaretçi belge değiştirilen öğeye veya **NULL** tüm öğeleri güncelleştirilmesi gerekiyorsa.  
   
- `lHint`  
+ *lHint*  
  Değiştirme hakkında bilgi içerir.  
   
- `pHint`  
+ *pHint*  
  Nesneyi değiştirme hakkında bilgi depolamak için işaretçi.  
   
- `nDrawAspect`  
+ *nDrawAspect*  
  Nasıl çizilecek öğedir belirler. Bu bir değerdir `DVASPECT` numaralandırması. Bu parametre aşağıdaki değerlerden biri olabilir:  
   
 - `DVASPECT_CONTENT` Öğesi, katıştırılmış nesne kapsayıcısı içinde olarak görüntülenebilir şekilde gösterilir.  
@@ -836,7 +836,7 @@ void UpdateAllItems(
 ### <a name="remarks"></a>Açıklamalar  
  Sunucu belgesinin kullanıcı değiştirdikten sonra genellikle bu işlevini çağırın. OLE öğesi belgeye otomatik bir bağlantıyla bağlı ise, öğenin değişiklikleri yansıtacak şekilde güncelleştirilir. Microsoft Foundation Class Kitaplığı ile yazılmış kapsayıcı uygulamalarında [değiştiğinde](../../mfc/reference/coleclientitem-class.md#onchange) üye işlevini `COleClientItem` olarak adlandırılır.  
   
- Bu işlev çağrılarını `OnUpdate` öğesi, geçirme gönderme dışında belgenin öğelerin her biri için üye işlevi `pHint`, `lHint`, ve `nDrawAspect`. Bu parametreler öğelerine belgede yapılan değişiklikler hakkında bilgi aktarmak için kullanın. Bilgi kodlama `lHint` veya tanımlayabilirsiniz bir `CObject`-türetilmiş sınıf değişiklikler hakkında bilgi depolamak ve bu sınıfı kullanarak bir nesneyi geçirmek için `pHint`. Geçersiz kılma `OnUpdate` üye işlevinde, `COleServerItem`-türetilmiş sınıf kendi sunu değiştirilip bağlı olarak her bir öğeyi güncelleştirme en iyi duruma getirme.  
+ Bu işlev çağrılarını `OnUpdate` öğesi, geçirme gönderme dışında belgenin öğelerin her biri için üye işlevi *pHint*, *lHint*, ve *nDrawAspect*. Bu parametreler öğelerine belgede yapılan değişiklikler hakkında bilgi aktarmak için kullanın. Bilgi kodlama *lHint* veya tanımlayabilirsiniz bir `CObject`-türetilmiş sınıf değişiklikler hakkında bilgi depolamak ve bu sınıfı kullanarak bir nesneyi geçirmek için *pHint*. Geçersiz kılma `OnUpdate` üye işlevinde, `COleServerItem`-türetilmiş sınıf kendi sunu değiştirilip bağlı olarak her bir öğeyi güncelleştirme en iyi duruma getirme.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek HIERSVR](../../visual-cpp-samples.md)   

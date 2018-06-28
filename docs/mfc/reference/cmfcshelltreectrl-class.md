@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fdd7e13e74fc3ae739c825f8aff95a79db8b5e29
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4e014219a12985142c6d45aae711d0410ff12642
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371452"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041951"
 ---
 # <a name="cmfcshelltreectrl-class"></a>CMFCShellTreeCtrl sınıfı
 `CMFCShellTreeCtrl` Sınıfını genişleten [CTreeCtrl sınıfı](../../mfc/reference/ctreectrl-class.md) Kabuk öğeleri hiyerarşisini görüntüleyerek işlevselliği.  
@@ -104,7 +104,7 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  Kısayol menüsünün etkinleştirilip etkinleştirilmeyeceğini belirten bir Boole değeri.  
   
 ##  <a name="getflags"></a>  CMFCShellTreeCtrl::GetFlags  
@@ -130,19 +130,19 @@ BOOL GetItemPath(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `strPath`  
+ [out] *strPath*  
  Bir dize parametresi referansı. Yöntemi bu parametreye öğesinin yolu yazar.  
   
- [in] `htreeItem`  
+ [in] *htreeItem*  
  Yöntemi bu ağaç denetim öğesi yolunu alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem başarısız olursa `strPath` boş dize içeriyor.  
+ Bu yöntem başarısız olursa *strPath* boş dize içeriyor.  
   
- Belirtmezseniz, `hTreeItem`, bu yöntem, seçili öğe için dize almayı dener. Öğe seçiliyse ve `hTreeItem` olan `NULL`, bu yöntem başarısız olur.  
+ Belirtmezseniz, *hTreeItem*, bu yöntem, seçili öğe için dize almayı dener. Öğe seçiliyse ve *hTreeItem* olan `NULL`, bu yöntem başarısız olur.  
   
 ##  <a name="getrelatedlist"></a>  CMFCShellTreeCtrl::GetRelatedList  
  Bir işaretçi döndürür [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) bu ile ilişkili olan nesne [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) nesnesi.  
@@ -169,10 +169,10 @@ virtual BOOL OnChildNotify(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `message`  
- [in] `wParam`  
- [in] `lParam`  
- [in] `pLResult`  
+ [in] *iletisi*  
+ [in] *wParam*  
+ [in] *lParam*  
+ [in] *pLResult*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -188,8 +188,8 @@ virtual int OnGetItemIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pItem`  
- [in] `bSelected`  
+ [in] *pItem*  
+ [in] *bSelected*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -203,7 +203,7 @@ virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pItem`  
+ [in] *pItem*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -228,10 +228,10 @@ BOOL SelectPath(LPCITEMIDLIST lpidl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszPath`  
+ [in] *lpszPath*  
  Bir öğe yolu belirten bir dize.  
   
- [in] `lpidl`  
+ [in] *lpidl*  
  Öğeyi belirten bir PIDL işaretçisiyle birlikte  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -247,10 +247,10 @@ void SetFlags(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwFlags`  
+ [in] *dwFlags*  
  Ayarlamak için işaretler.  
   
- [in] `bRefresh`  
+ [in] *bRefresh*  
  Belirten bir Boole değeri olup olmadığını `CMFCShellTreeCtrl` hemen yenilenmesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -264,7 +264,7 @@ void SetRelatedList(CMFCShellListCtrl* pShellList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pShellList`  
+ [in] *pShellList*  
  Bir işaretçi bir `CMFCShellListCtrl` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  

@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d83765309f6df860b190d3ea2114e7e0fd35724
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0e0962d4a0c97db27f7d5ae31ec58eb26f20a7f7
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367639"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038399"
 ---
 # <a name="chwndrendertarget-class"></a>CHwndRenderTarget sınıfı
 ID2D1HwndRenderTarget için sarmalayıcı.  
@@ -103,7 +103,7 @@ void Attach(ID2D1HwndRenderTarget* pTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pTarget`  
+ *pTarget*  
  Varolan işleme hedefi arabirimi. NULL olamaz  
   
 ##  <a name="checkwindowstate"></a>  CHwndRenderTarget::CheckWindowState  
@@ -124,7 +124,7 @@ CHwndRenderTarget(HWND hwnd = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hwnd`  
+ *HWND*  
  Bu ile ilişkili HWND hedef işleme  
   
 ##  <a name="create"></a>  CHwndRenderTarget::Create  
@@ -135,7 +135,7 @@ BOOL Create(HWND hWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hWnd`  
+ *hWnd*  
  Bu ile ilişkili HWND hedef işleme  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -196,7 +196,7 @@ BOOL ReCreate(HWND hWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hWnd`  
+ *hWnd*  
  Bu ile ilişkili HWND hedef işleme  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -210,7 +210,7 @@ BOOL Resize(const CD2DSizeU& size);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `size`  
+ *Boyutu*  
  Yeni işleme hedef aygıt piksel cinsinden boyutu  
   
 ### <a name="return-value"></a>Dönüş Değeri  

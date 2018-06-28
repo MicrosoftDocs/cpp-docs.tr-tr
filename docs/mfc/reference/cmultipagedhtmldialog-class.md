@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2be83e3791121bdea4d7f650f7d6801517df31ce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8a1a4ca77e4b7a2cda10d87bd657e73931a50612
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373898"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038012"
 ---
 # <a name="cmultipagedhtmldialog-class"></a>CMultiPageDHtmlDialog sınıfı
 Birden çok sayfa iletişim her sayfasından olayları işler ve birden çok HTML sayfaları sıralı olarak görüntüler.  
@@ -100,19 +100,19 @@ CMultiPageDHtmlDialog();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Bir iletişim kutusu şablon kaynağı adı null ile sonlandırılmış bir dize.  
   
- `szHtmlResID`  
+ *szHtmlResID*  
  Bir HTML kaynak adı null ile sonlandırılmış bir dize.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Üst veya sahibi pencere nesnesi için bir işaretçi (tür [CWnd](../../mfc/reference/cwnd-class.md)) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim nesnenin üst pencere ana uygulama penceresine ayarlanır.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Bir iletişim kutusu şablon kaynağı kimliği numarasını içerir.  
   
- `nHtmlResID`  
+ *nHtmlResID*  
  Bir HTML kaynak kimliği sayısını içerir.  
   
 ##  <a name="_dtorcmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog:: ~ CMultiPageDHtmlDialog  

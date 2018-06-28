@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cddd48c51e1e9b5d206cefa56e2879dfb3ace3b1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c284f5d5fdfee09349cc6eb9cbde38da21918d25
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367935"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040967"
 ---
 # <a name="cmfcpropertygridtooltipctrl-class"></a>CMFCPropertyGridToolTipCtrl sınıfı
 Implements araç ipucu bir denetim [CMFCPropertyGridCtrl sınıfı](../../mfc/reference/cmfcpropertygridctrl-class.md) araç ipuçlarını görüntülemek için kullanır.  
@@ -106,7 +106,7 @@ BOOL Create(CWnd* pWndParent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  Üst pencere için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -130,7 +130,7 @@ void GetLastRect(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `rect`  
+ [out] *rect*  
  Tooltip denetim son konumunu içerir.  
   
 ##  <a name="hide"></a>  CMFCPropertyGridToolTipCtrl::Hide  
@@ -148,7 +148,7 @@ void SetTextMargin(int nTextMargin);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nTextMargin`  
+ [in] *nTextMargin*  
  Araç İpucu denetimi metin ve araç ipucu penceresinin kenarlık arasındaki boşluğu belirtir. Varsayılan değer 10 pikseldir.  
   
 ##  <a name="track"></a>  CMFCPropertyGridToolTipCtrl::Track  
@@ -161,14 +161,14 @@ void Track(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rect`  
+ [in] *rect*  
  Tooltip denetim boyutunu ve konumunu belirtir.  
   
- [in] `strText`  
+ [in] *strText*  
  Araç ipucunda gösterilecek metni belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem tarafından belirtilen boyut ve konum araç ipucu denetimi görüntüler `rect`. Konum, boyutu ve metin bu yöntemi çağrıldı en son ne zaman bu yana değişmemiştir, bu yöntem bir etkisi yoktur.  
+ Bu yöntem tarafından belirtilen boyut ve konum araç ipucu denetimi görüntüler *rect*. Konum, boyutu ve metin bu yöntemi çağrıldı en son ne zaman bu yana değişmemiştir, bu yöntem bir etkisi yoktur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

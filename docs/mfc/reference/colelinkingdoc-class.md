@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe37e1a159fa0138c237b58ffbd622292dcba714
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 843c79d9b3c7ffeb0ceef7338132048ac51d52ef
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369853"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039979"
 ---
 # <a name="colelinkingdoc-class"></a>COleLinkingDoc sınıfı
 Katıştırılmış öğelerine bağlama desteği OLE kapsayıcı belgeler için temel sınıfı içerir.  
@@ -79,7 +79,7 @@ class COleLinkingDoc : public COleDocument
   
  [!code-cpp[NVC_MFCOleContainer#24](../../mfc/codesnippet/cpp/colelinkingdoc-class_2.cpp)]  
   
- Bağlanma, `COleTemplateServer` nesnenin çağırarak belge şablonlarınızı nesnesine `ConnectTemplate` üye işlevini ve tüm sınıf çağırarak OLE sistemiyle nesneleri kaydetme **COleTemplateServer::RegisterAll**:  
+ Bağlanma, `COleTemplateServer` nesnenin çağırarak belge şablonlarınızı nesnesine `ConnectTemplate` üye işlevini ve tüm sınıf çağırarak OLE sistemiyle nesneleri kaydetme `COleTemplateServer::RegisterAll`:  
   
  [!code-cpp[NVC_MFCOleContainer#25](../../mfc/codesnippet/cpp/colelinkingdoc-class_3.cpp)]  
   
@@ -119,7 +119,7 @@ virtual COleClientItem* OnFindEmbeddedItem(LPCTSTR lpszItemName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszItemName`  
+ *lpszItemName*  
  Katıştırılmış OLE öğesi istenen adını işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -136,7 +136,7 @@ virtual COleServerItem* OnGetLinkedItem(LPCTSTR lpszItemName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszItemName`  
+ *lpszItemName*  
  İstenen öğe bağlantılı OLE adını işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -158,7 +158,7 @@ BOOL Register(
  *pFactory*  
  OLE üretecini işaretçisine (olabilir **NULL**).  
   
- `lpszPathName`  
+ *lpszPathName*  
  İşaretçi kapsayıcı belge tam yolu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

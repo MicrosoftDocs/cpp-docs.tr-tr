@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25d86a4797479fe3ee95dde162e22cde63aaa71e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 46210f5a8c785a60a95b3cbfacf03b4f84ed2dda
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369040"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037294"
 ---
 # <a name="cmfckeymapdialog-class"></a>CMFCKeyMapDialog sınıfı
 `CMFCKeyMapDialog` Sınıfı, komutları tuşlarını eşleyen bir denetim destekler.  
@@ -110,10 +110,10 @@ CMFCKeyMapDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndParentFrame`  
+ [in] *pWndParentFrame*  
  Üst penceresi için bir işaretçi `CMFCKeyMapDialog` nesnesi.  
   
- [in] `bEnablePrint`  
+ [in] *bEnablePrint*  
  `TRUE` kısayol tuşları listesi yazdırılabilir; Aksi takdirde `FALSE`. Varsayılan, `FALSE` değeridir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -144,7 +144,7 @@ virtual CString FormatItem(int nItem) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nItem`  
+ [in] *nItem*  
  İç listesindeki bir öğeyi anahtar eşlemeleri sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -160,7 +160,7 @@ virtual CString GetCommandKeys(UINT uiCmdID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmdID`  
+ [in] *uiCmdID*  
  Komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -178,10 +178,10 @@ virtual void OnInsertItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
+ [in] *pButton*  
  Bir komut ad ve açıklama klavye tuş bileşimini eşleştirmek için kullanılan bir araç çubuğu düğmesi için bir işaretçi. Anahtar map öğesi bir iç liste denetiminde saklanır.  
   
- [in] `nItem`  
+ [in] *nItem*  
  İç liste denetiminde yeni anahtarı eşleme öğesi eklemek istediğiniz yeri belirtir sıfır tabanlı dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -197,13 +197,13 @@ virtual int OnPrintHeader(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dc`  
+ [in] *dc*  
  Yazıcı için cihaz bağlamı.  
   
- [in] `nPage`  
+ [in] *nPage*  
  Yazdırmak için sayfa numarası.  
   
- [in] `cx`  
+ [in] *cx*  
  Yatay uzaklığını piksel cinsinden üstbilgi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -225,19 +225,19 @@ virtual int OnPrintItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dc`  
+ [in] *dc*  
  Yazıcı cihaz bağlamı.  
   
- [in] `nItem`  
+ [in] *nItem*  
  Yazdırmak için öğenin sıfır tabanlı dizini.  
   
- [in] `y`  
+ [in] *y*  
  Sayfanın üst öğenin konumunu arasındaki dikey uzaklık.  
   
- [in] `cx`  
+ [in] *cx*  
  Sayfanın solunda öğenin konumunu arasındaki yatay uzaklığını.  
   
- [in] `bCalcHeight`  
+ [in] *bCalcHeight*  
  `TRUE` Yazıcı öğesi için en iyi yüksekliğini hesaplamak için; `FALSE` varsayılan alanı uyduğunu böylece yazdırma öğesi kesemez.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

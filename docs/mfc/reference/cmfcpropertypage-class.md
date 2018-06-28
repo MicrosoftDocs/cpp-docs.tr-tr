@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3352841b1b495d1718ffa6be034239ecd7e50c6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c58e279a2e99201656e8af02d8c1c5d4d944f88d
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366648"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042088"
 ---
 # <a name="cmfcpropertypage-class"></a>CMFCPropertyPage sınıfı
 `CMFCPropertyPage` Sınıfı, bir özellik sayfasında açılır menüler görüntülemeyi destekler.  
@@ -88,13 +88,13 @@ CMFCPropertyPage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDTemplate`  
+ *nIDTemplate*  
  Bu sayfa için şablonu kaynak kimliği.  
   
- `nIDCaption`  
+ *nIDCaption*  
  Bu sayfa için sekmesindeki koymak için kaynak kimliği etiketi. 0 ise bu sayfa için iletişim kutusu şablondan adı elde edilir. Varsayılan değer 0’dır.  
   
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Bu sayfa için şablonun noktaları adı. Olamaz `NULL`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

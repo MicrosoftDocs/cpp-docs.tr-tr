@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c9e4c1031ba06eaabe67418a018f95d689f71d1e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 27858b6dad2744965e85bcd8287ba62cbf5b60c0
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368299"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038607"
 ---
 # <a name="cmfcfontinfo-class"></a>CMFCFontInfo sınıfı
 `CMFCFontInfo` Sınıfı adı ve başka bir yazı tipi özniteliklerini açıklar.  
@@ -94,22 +94,22 @@ CMFCFontInfo(const CMFCFontInfo& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszName`  
+ [in] *lpszName*  
  Yazı tipi adı. Daha fazla bilgi için bkz: `lfFaceName` üyesi [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) yapısı.  
   
- [in] `lpszScript`  
+ [in] *lpszScript*  
  Yazı tipi komut dosyası (karakter kümesi) adı.  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  Yazı tipi karakter kümesi (komut) belirten bir değer. Daha fazla bilgi için bkz: `lfCharSet` üyesi [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) yapısı.  
   
- [in] `nPitchAndFamily`  
+ [in] *nPitchAndFamily*  
  Sıklık ve yazı tipi ailesi belirten bir değer. Daha fazla bilgi için bkz: `lfPitchAndFamily` üyesi [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) yapısı.  
   
- [in] `nType`  
+ [in] *nTür*  
  Yazı tipi türünü belirten bir değer. Bu parametre DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE Bitsel bir birleşimi (veya) olabilir.  
   
- [in] `src`  
+ [in] *src*  
  Var olan `CMFCFontInfo` üyeleri bu oluşturmak için kullanılan nesne `CMFCFontInfo` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -138,7 +138,7 @@ const BYTE m_nCharSet;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: `nCharSet` parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.  
+ Daha fazla bilgi için bkz: *nCharSet* parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.  
   
 ##  <a name="m_npitchandfamily"></a>  CMFCFontInfo::m_nPitchAndFamily  
  Sıklık (punto boyutunu) ve yazı tipi ailesi (örneğin, serif, sans-serif ve tek aralıklı) belirten bir değer.  
@@ -148,7 +148,7 @@ const BYTE m_nPitchAndFamily;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: `nPitchAndFamily` parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.  
+ Daha fazla bilgi için bkz: *nPitchAndFamily* parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.  
   
 ##  <a name="m_ntype"></a>  CMFCFontInfo::m_nType  
  Yazı tipi türünü belirten bir değer.  
@@ -158,7 +158,7 @@ const int m_nType;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: `nType` parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.  
+ Daha fazla bilgi için bkz: *nTür* parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.  
   
 ##  <a name="m_strname"></a>  CMFCFontInfo::m_strName  
  Yazı tipi adı: Örneğin, **Arial**.  
@@ -168,7 +168,7 @@ const CString m_strName;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: `lpszName` parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.  
+ Daha fazla bilgi için bkz: *lpszName* parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.  
   
 ##  <a name="m_strscript"></a>  CMFCFontInfo::m_strScript  
  Yazı tipi ile ilişkilendirilmiş bir karakter kümesi (komut) adı.  
@@ -178,7 +178,7 @@ const CString m_strScript;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: `lpszScript` parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.  
+ Daha fazla bilgi için bkz: *lpszScript* parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

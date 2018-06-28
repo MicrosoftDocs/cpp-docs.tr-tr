@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86d6c4cdff533538c2f0ea7f0be1fa44bfd27359
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e3e5f88dc011e358c0438209f0a4b3e277419be9
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368920"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042163"
 ---
 # <a name="cipaddressctrl-class"></a>CIPAddressCtrl sınıfı
 Windows ortak IP adresi denetim işlevselliğini sağlar.  
@@ -119,16 +119,16 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwStyle`  
+ *dwStyle*  
  IP adresi denetimin stili. Pencere Stilleri bileşimi geçerli. Eklemelisiniz **WS_CHILD** denetimi alt pencere olması gerektiğinden stili. Bkz: [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) windows stilleri listesi için Windows SDK.  
   
- `rect`  
+ *Rect*  
  IP adresi denetimin boyutunu ve konumunu referansı. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
   
- `pParentWnd`  
+ *pParentWnd*  
  IP adresi denetimin üst penceresi için bir işaretçi. Değil olmalıdır **NULL.**  
   
- `nID`  
+ *nID*  
  IP adresi denetimin kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -139,9 +139,9 @@ virtual BOOL Create(
   
 1.  Oluşturur Oluşturucusu çağrı `CIPAddressCtrl` nesnesi.  
   
-2.  Çağrı **oluşturma**, IP adresi denetimi oluşturur.  
+2.  Çağrı `Create`, IP adresi denetimi oluşturur.  
   
- Genişletilmiş windows stilleri denetimi ile kullanmak istiyorsanız, çağrı [CreateEx](#createex) yerine **oluşturma**.  
+ Genişletilmiş windows stilleri denetimi ile kullanmak istiyorsanız, çağrı [CreateEx](#createex) yerine `Create`.  
   
 ##  <a name="createex"></a>  CIPAddressCtrl::CreateEx  
  Bir denetim (alt pencere) oluşturmak ve bunu ile ilişkilendirmek için bu işlevi çağırmak `CIPAddressCtrl` nesnesi.  
@@ -156,19 +156,19 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwExStyle`  
- Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: `dwExStyle` parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
+ *dwExStyle*  
+ Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
   
- `dwStyle`  
+ *dwStyle*  
  IP adresi denetimin stili. Pencere Stilleri bileşimi geçerli. Eklemelisiniz **WS_CHILD** denetimi alt pencere olması gerektiğinden stili. Bkz: [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) windows stilleri listesi için Windows SDK.  
   
- `rect`  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı `pParentWnd`.  
+ *Rect*  
+ Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Denetimin üst penceresi için bir işaretçi.  
   
- `nID`  
+ *nID*  
  Denetimin alt pencere kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -191,26 +191,26 @@ int GetAddress(DWORD& dwAddress);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nField0`  
+ *nField0*  
  Paketlenmiş bir IP adresinden bir başvuru alanının 0 değeri.  
   
- `nField1`  
+ *nField1*  
  Paketlenmiş bir IP adresi alan 1 değeri için başvuru.  
   
- `nField2`  
+ *nField2*  
  Paketlenmiş bir IP adresinden bir başvuru alanının 2 değeri.  
   
- `nField3`  
+ *nField3*  
  Paketlenmiş bir IP adresi alan 3 değeri için başvuru.  
   
- `dwAddress`  
- Bir başvuru adresine bir `DWORD` IP adresi alan değeri. Bkz: **açıklamalar** gösteren bir tablo için nasıl `dwAddress` doldurulur.  
+ *dwAddress*  
+ Bir başvuru adresine bir `DWORD` IP adresi alan değeri. Bkz: **açıklamalar** gösteren bir tablo için nasıl *dwAddress* doldurulur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  IP adresi denetimi boş olmayan alanları sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [IPM_GETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761378), Windows SDK'ın açıklandığı gibi. Yukarıdaki ilk prototip, sırasıyla sağ okuma numaraları 0 ile 3 denetiminin alanlarındaki için sol, dört parametre doldurmak. Yukarıdaki ikinci prototip içinde `dwAddress` gibi doldurulur.  
+ Bu üye işlevi Win32 ileti davranışını uygulayan [IPM_GETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761378), Windows SDK'ın açıklandığı gibi. Yukarıdaki ilk prototip, sırasıyla sağ okuma numaraları 0 ile 3 denetiminin alanlarındaki için sol, dört parametre doldurmak. Yukarıdaki ikinci prototip içinde *dwAddress* gibi doldurulur.  
   
 |Alan|Alan değeri içeren BITS|  
 |-----------|-------------------------------------|  
@@ -246,23 +246,23 @@ void SetAddress(DWORD dwAddress);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nField0`  
+ *nField0*  
  Paketlenmiş bir IP adresi alanı 0 değeri.  
   
- `nField1`  
+ *nField1*  
  Paketlenmiş bir IP adresi alanı 1 değeri.  
   
- `nField2`  
+ *nField2*  
  Paketlenmiş bir IP adresi alanı 2 değeri.  
   
- `nField3`  
+ *nField3*  
  Paketlenmiş bir IP adresi alanı 3 değeri.  
   
- `dwAddress`  
+ *dwAddress*  
  A `DWORD` değeri yeni IP adresini içerir. Bkz: **açıklamalar** gösteren bir tablo için nasıl `DWORD` değeri doldurulur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [IPM_SETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761380), Windows SDK'ın açıklandığı gibi. Yukarıdaki ilk prototip, sırasıyla sağ okuma numaraları 0 ile 3 denetiminin alanlarındaki için sol, dört parametre doldurmak. Yukarıdaki ikinci prototip içinde `dwAddress` gibi doldurulur.  
+ Bu üye işlevi Win32 ileti davranışını uygulayan [IPM_SETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761380), Windows SDK'ın açıklandığı gibi. Yukarıdaki ilk prototip, sırasıyla sağ okuma numaraları 0 ile 3 denetiminin alanlarındaki için sol, dört parametre doldurmak. Yukarıdaki ikinci prototip içinde *dwAddress* gibi doldurulur.  
   
 |Alan|Alan değeri içeren BITS|  
 |-----------|-------------------------------------|  
@@ -279,7 +279,7 @@ void SetFieldFocus(WORD nField);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nField`  
+ *nAlan*  
  Sıfır tabanlı alan dizini odağı ayarlamanız gerekir. Bu değer alanları sayısından büyükse, odak ilk boş alana ayarlanır. Boş olmayan tüm alanlar odak ilk alana ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -296,17 +296,17 @@ void SetFieldRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nField`  
+ *nAlan*  
  Sıfır tabanlı alan dizini aralığın uygulanır.  
   
- `nLower`  
+ *nLower*  
  Bu IP adresi denetiminde alt sınırı belirtilen alanın alma tamsayı referansı.  
   
- `nUpper`  
+ *nUpper*  
  Bu IP adresi denetimi belirtilen alan sayısı üst sınırı alma tamsayı referansı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [IPM_SETRANGE](http://msdn.microsoft.com/library/windows/desktop/bb761382), Windows SDK'ın açıklandığı gibi. İki parametre kullanmak `nLower` ve `nUpper`yerine alanın alt ve üst sınırlar belirtmek için *wRange* Win32 iletisiyle kullanılan parametre.  
+ Bu üye işlevi Win32 ileti davranışını uygulayan [IPM_SETRANGE](http://msdn.microsoft.com/library/windows/desktop/bb761382), Windows SDK'ın açıklandığı gibi. İki parametre kullanmak *nLower* ve *nUpper*yerine alanın alt ve üst sınırlar belirtmek için *wRange* Win32 iletisiyle kullanılan parametre.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CWnd sınıfı](../../mfc/reference/cwnd-class.md)   

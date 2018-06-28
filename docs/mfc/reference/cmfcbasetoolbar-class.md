@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edc35091fef87c007fad73be45297536a170ca19
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 597adf6d7a32b537f31f9a824049dc9ffedf899f
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366323"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037850"
 ---
 # <a name="cmfcbasetoolbar-class"></a>CMFCBaseToolBar sınıfı
 Araç çubukları için temel sınıf.  
@@ -90,7 +90,7 @@ virtual void GetMinSize(CSize& size) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `size`  
+ [out] *boyutu*  
  Araç çubuğu için en küçük boyut.  
   
 ##  <a name="onafterchangeparent"></a>  CMFCBaseToolBar::OnAfterChangeParent  
@@ -101,7 +101,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndOldParent`  
+ [in] *pWndOldParent*  
  Önceki üst pencere için bir işaretçi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

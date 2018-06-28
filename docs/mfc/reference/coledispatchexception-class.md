@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ed492198c5c667fa1ffadcaa9a3bcc0461c16d4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 65e7c613f5c4a4273208e30cd0fc6284ef4e420c
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373392"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037876"
 ---
 # <a name="coledispatchexception-class"></a>COleDispatchException sınıfı
 OLE belirli özel durumları işler `IDispatch` OLE Otomasyon önemli bir parçası olan arabirimi.  
@@ -55,7 +55,7 @@ class COleDispatchException : public CException
 |[COleDispatchException::m_wCode](#m_wcode)|`IDispatch`-belirli bir hata kodu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Türetilmiş bir özel durum sınıflar gibi `CException` temel sınıfı, `COleDispatchException` ile kullanılan **THROW**, `THROW_LAST`, **deneyin**, **CATCH**, `AND_CATCH`, ve `END_CATCH` makroları.  
+ Türetilmiş bir özel durum sınıflar gibi `CException` temel sınıfı, `COleDispatchException` THROW, THROW_LAST, deneyin, YAKALAMA, AND_CATCH ve END_CATCH makroları ile kullanılabilir.  
   
  Genel olarak, çağırmalıdır [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) başlatıldıysa ve oluşturmak için bir `COleDispatchException` nesnesi.  
   

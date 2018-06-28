@@ -76,12 +76,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c40f4d836d662bde1f49b9a0639b771d10db667
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5f655d8bd6fbfd19182bbaeed21eaa95739ff33d
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375839"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038978"
 ---
 # <a name="cmfccaptionbar-class"></a>CMFCCaptionBar sınıfı
 A `CMFCCaptionBar` nesnesidir üç öğe görüntüleyen bir denetim çubuğu: düğme, bir metin etiketi ve bir bit eşlem. Bu gibi durumlarda, her tür bir öğe yalnızca aynı anda görüntüleyebilirsiniz. Her öğe denetiminin sol veya sağ kenarları veya merkezi hale getirebilirsiniz. Düz veya 3B stili başlık çubuğunun üst ve alt kenarlık için de uygulayabilirsiniz.  
@@ -189,19 +189,19 @@ BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwStyle`  
+ *dwStyle*  
  Mantıksal OR birleşimi başlık çubuğu stilleri.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Başlık çubuğu denetiminin üst pencere.  
   
- `uID`  
+ *Kullanıcı Kimliği*  
  Başlık çubuğu denetiminin kimliği.  
   
- `nHeight`  
+ *nHeight*  
  Başlık çubuğu denetiminin piksel cinsinden yüksekliği. -1 olması durumunda yüksekliği simgesi, metin ve resim yazısı çubuğu denetimi görüntüler düğmesini yüksekliğini göre hesaplanır.  
   
- `bIsMessageBarMode`  
+ *bIsMessageBarMode*  
  `TRUE` Başlık çubuğunu ileti çubuğu modundaysa, `FALSE` Aksi takdirde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -230,7 +230,7 @@ void EnableButton(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` düğmesini etkinleştirmek için `FALSE` düğmesini devre dışı bırakmak için.  
   
 ##  <a name="getalignment"></a>  CMFCCaptionBar::GetAlignment  
@@ -241,7 +241,7 @@ BarElementAlignment GetAlignment(BarElement elem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `elem`  
+ [in] *elem*  
  Hizalama alınacağı için bir başlık çubuğu öğesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -332,10 +332,10 @@ virtual void OnDrawBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Başlık çubuğunun cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Doldurmak için sınırlayıcı dikdörtgenini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -353,10 +353,10 @@ virtual void OnDrawBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Kenarlıkları görüntülemek için kullanılan bir cihaz bağlamı.  
   
- [in] `rect`  
+ [in] *rect*  
  Sınırlayıcı dikdörtgenini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -376,16 +376,16 @@ virtual void OnDrawButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Düğme görüntülemek için kullanılan bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Düğmenin sınırlayıcı dikdörtgenini.  
   
- [in] `strButton`  
+ [in] *strButton*  
  Düğmenin metin etiketi.  
   
- [in] `bEnabled`  
+ [in] *bEtkin*  
  `TRUE` düğmesi etkinleştirilir `FALSE` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -401,10 +401,10 @@ virtual void OnDrawImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Görüntüyü görüntülemek için kullanılan bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Görüntünün sınırlayıcı dikdörtgenini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -421,13 +421,13 @@ virtual void OnDrawText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Düğme görüntülemek için kullanılan bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Metnin sınırlayıcı dikdörtgenini.  
   
- [in] `strText`  
+ [in] *strText*  
  Görüntülenecek metin dizesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -485,16 +485,16 @@ void SetBitmap(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hBitmap`  
+ [in] *Hbıtmap*  
  Ayarlamak için bit eşlem için tanıtıcı.  
   
- [in] `clrTransparent`  
+ [in] *clrTransparent*  
  Bit eşlem saydam rengini belirtir bir RGB değeri.  
   
- [in] `bStretch`  
+ [in] *bStretch*  
  Varsa `TRUE`, bit eşlem dikdörtgen sınırlayıcı görüntünün sığmadığında genişletilir. Aksi takdirde bit eşlem genişletilir değil.  
   
- [in] `bmpAlignment`  
+ [in] *bmpAlignment*  
  Bit eşlem hizalaması.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -502,7 +502,7 @@ void SetBitmap(
   
  Önceki bit eşlem otomatik olarak yok. Aradığınız çünkü başlık çubuğunu simge görüntüler [CMFCCaptionBar::SetIcon](#seticon) yöntemini çağırarak simgesi kaldırmadığınız sürece bit eşlem görüntülenmez [CMFCCaptionBar::RemoveIcon](#removeicon).  
   
- Bit eşlem hizalanır belirtildiği gibi `bmpAlignment` parametresi.  Bu parametre şunlardan biri olabilir `BarElementAlignment` değerler:  
+ Bit eşlem hizalanır belirtildiği gibi *bmpAlignment* parametresi.  Bu parametre şunlardan biri olabilir `BarElementAlignment` değerler:  
   
 -   ALIGN_INVALID  
   
@@ -520,7 +520,7 @@ void SetBorderSize(int nSize);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nSize`  
+ [in] *nSize*  
  Yeni boyutu, başlık çubuğu kenarlığının piksel cinsinden.  
   
 ##  <a name="setbutton"></a>  CMFCCaptionBar::SetButton  
@@ -535,16 +535,16 @@ void SetButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszLabel`  
+ *lpszLabel*  
  Düğmenin komut etiketi.  
   
- `uiCmdUI`  
+ *uiCmdUI*  
  Düğmenin komut kimliği.  
   
- `btnAlignmnet`  
+ *btnAlignmnet*  
  Düğmenin hizalaması.  
   
- `bHasDropDownArrow`  
+ *bHasDropDownArrow*  
  `TRUE` Düğme açılan ok, görüntülerse `FALSE` Aksi takdirde.  
   
 ##  <a name="setbuttonpressed"></a>  CMFCCaptionBar::SetButtonPressed  
@@ -555,7 +555,7 @@ void SetButtonPressed(BOOL bPresed=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bPresed`  
+ *bPresed*  
  `TRUE` düğmenin basılmış durumuna tutar, `FALSE` Aksi takdirde.  
   
 ##  <a name="setbuttontooltip"></a>  CMFCCaptionBar::SetButtonToolTip  
@@ -568,10 +568,10 @@ void SetButtonToolTip(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszToolTip`  
+ [in] *lpszToolTip*  
  Araç İpucu açıklamalı alt yazı.  
   
- [in] `lpszDescription`  
+ [in] *lpszDescription*  
  Araç İpucu açıklaması.  
   
 ##  <a name="setflatborder"></a>  CMFCCaptionBar::SetFlatBorder  
@@ -582,7 +582,7 @@ void SetFlatBorder(BOOL bFlat=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bFlat`  
+ [in] *bFlat*  
  `TRUE` başlık çubuğunun kenarlık düz ise. `FALSE` 3B kenarlık olması durumunda.  
   
 ##  <a name="seticon"></a>  CMFCCaptionBar::SetIcon  
@@ -595,16 +595,16 @@ void SetIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hIcon`  
+ [in] *hIcon*  
  Ayarlanacak simgesine işleci.  
   
- [in] `iconAlignment`  
+ [in] *iconAlignment*  
  Simge hizalaması.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Başlık çubukları simgeler veya bit eşlemler görüntüleyebilirsiniz. Bkz: [CMFCCaptionBar::SetBitmap](#setbitmap) bir bit eşlem görüntülemek nasıl öğrenmek için. Hem simge hem de bit eşlem ayarlarsanız, simgeyi her zaman görüntülenir. Çağrı [CMFCCaptionBar::RemoveIcon](#removeicon) simge Başlık Çubuğu'ndan kaldırmak için.  
   
- Simge göre hizalanır `iconAlignment` parametresi. Şunlardan biri olabilir `BarElementAlignment` değerler:  
+ Simge göre hizalanır *iconAlignment* parametresi. Şunlardan biri olabilir `BarElementAlignment` değerler:  
   
 -   ALIGN_INVALID  
   
@@ -624,10 +624,10 @@ void SetImageToolTip(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszToolTip`  
+ [in] *lpszToolTip*  
  Araç İpucu metni.  
   
- [in] `lpszDescription`  
+ [in] *lpszDescription*  
  Araç İpucu açıklaması.  
   
 ##  <a name="setmargin"></a>  CMFCCaptionBar::SetMargin  
@@ -638,7 +638,7 @@ void SetMargin(int nMargin);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nMargin`  
+ [in] *nMargin*  
  Başlık çubuğu öğelerinin kenarı ve başlık çubuğu denetim kenar arasındaki piksel cinsinden uzaklığı.  
   
 ##  <a name="settext"></a>  CMFCCaptionBar::SetText  
@@ -651,14 +651,14 @@ void SetText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `strText`  
+ [in] *strText*  
  Ayarlamak için metin dizesi.  
   
- [in] `textAlignment`  
+ [in] *textAlignment*  
  Metin hizalaması.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Metin etiketi hizalanır belirtildiği gibi `textAlignment` parametresi. Şunlardan biri olabilir `BarElementAlignment` değerler:  
+ Metin etiketi hizalanır belirtildiği gibi *textAlignment* parametresi. Şunlardan biri olabilir `BarElementAlignment` değerler:  
   
 -   ALIGN_INVALID  
   

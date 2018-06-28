@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e190c8b8cb11fefccb2847214dcaebf713f35dc4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fb24b73ba23b430e29ed9144e51372eefdb673a3
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368975"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042540"
 ---
 # <a name="colelinksdialog-class"></a>COleLinksDialog sınıfı
 OLE bağlantıları Düzenle iletişim kutusu için kullanılır.  
@@ -117,16 +117,16 @@ COleLinksDialog (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDoc`  
+ *pDoc*  
  Düzenlenecek bağlantıları içeren OLE belge noktalarına.  
   
- `pView`  
- Geçerli Görünüm işaret `pDoc`.  
+ *pView*  
+ Geçerli Görünüm işaret *pDoc*.  
   
- `dwFlags`  
+ *dwFlags*  
  Ya da 0 içeren oluşturma bayrağı veya **ELF_SHOWHELP** iletişim kutusu görüntülendiğinde Yardım düğmesini görüntülenip görüntülenmeyeceğini belirtmek için.  
   
- `pParentWnd`  
+ *pParentWnd*  
  İşaret üst veya sahibi pencere nesnesi için (tür `CWnd`) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim kutusunun üst pencere ana uygulama penceresine ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  

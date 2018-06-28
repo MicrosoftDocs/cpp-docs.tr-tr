@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6599ddf3663f56c651907fe3823849787a05b50
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c4bcc39645c079ef9a0b61a4e12782223dd19a92
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373709"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042228"
 ---
 # <a name="cmfcvisualmanagerwindows7-class"></a>CMFCVisualManagerWindows7 sınıfı
 `CMFCVisualManagerWindows7` Uygulamanın görünümünü sunan bir [!INCLUDE[win7](../../build/includes/win7_md.md)] uygulama.  
@@ -149,20 +149,20 @@ virtual COLORREF GetRibbonEditBackgroundColor (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pEdit`  
+ [in] *pEdit*  
  Düzenleme denetimine işaretçi. Bu değer olamaz `NULL`.  
   
- [out] `bIsHighlighted`  
+ [out] *bIsHighlighted*  
  Şerit kutusunu vurgulanmış olup olmadığını döndürür.  
   
- [out] `bIsPaneHighlighted`  
- Döndürür `TRUE` Şerit panel varsa `pEdit` vurgulanır.  
+ [out] *bIsPaneHighlighted*  
+ Döndürür `TRUE` Şerit panel varsa *pEdit* vurgulanır.  
   
- [out] `bIsDisabled`  
- Döndürür olup olmadığını `pEdit` devre dışı bırakılır.  
+ [out] *bIsDisabled*  
+ Döndürür olup olmadığını *pEdit* devre dışı bırakılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Düzenleme kutusuna arka plan rengini `pEdit`.  
+ Düzenleme kutusuna arka plan rengini *pEdit*.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -178,16 +178,16 @@ virtual void OnFillMenuImageRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Menü düğmesinin cihaz bağlamı için bir işaretçi.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi bir `CMFCToolBarButton`. Bu düğme için arka plan framework doldurur.  
   
- [in] `rect`  
+ [in] *rect*  
  Menü düğmesine görüntü alanını sınırlarının belirtir dikdörtgen.  
   
- [in] `state`  
+ [in] *durumu*  
  Düğme durumu.  
   
 ### <a name="remarks"></a>Açıklamalar  

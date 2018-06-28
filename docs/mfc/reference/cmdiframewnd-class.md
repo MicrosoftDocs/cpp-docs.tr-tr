@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bb9f87ed5ae3027e7743a36c2484017d6381f95
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9f3ba2a92ad523994a458abad9d4acee506e8e85
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374045"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038896"
 ---
 # <a name="cmdiframewnd-class"></a>CMDIFrameWnd sınıfı
 Birden çok belge arabirimi (MDI) çerçeve penceresi, pencerenin yönetmek için üyeleri ile birlikte Windows işlevselliğini sağlar.  
@@ -91,11 +91,11 @@ class CMDIFrameWnd : public CFrameWnd
   
  MDI çerçeve penceresi çağırarak oluşturabileceğiniz [oluşturma](../../mfc/reference/cframewnd-class.md#create) veya [LoadFrame](../../mfc/reference/cframewnd-class.md#loadframe) üye işlevini `CFrameWnd`.  
   
- Çağırmadan önce **oluşturma** veya `LoadFrame`, C++ kullanarak yığın çerçeve penceresi nesnesinde oluşturmalıdır **yeni** işleci. Çağırmadan önce **oluşturma** pencere sınıfı ile kayıt yaptırabilirsiniz [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) çerçeve simgesini ve sınıf stilleri ayarlamak için genel işlevi.  
+ Çağırmadan önce `Create` veya `LoadFrame`, C++ kullanarak yığın çerçeve penceresi nesnesinde oluşturmalıdır **yeni** işleci. Çağırmadan önce `Create` pencere sınıfı ile kayıt yaptırabilirsiniz [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) çerçeve simgesini ve sınıf stilleri ayarlamak için genel işlevi.  
   
- Kullanım **oluşturma** çerçeve oluşturma parametreleri olarak hemen bağımsız değişkenleri geçirmek için üye işlevi.  
+ Kullanım `Create` çerçeve oluşturma parametreleri olarak hemen bağımsız değişkenleri geçirmek için üye işlevi.  
   
- `LoadFrame` daha az sayıda bağımsız değişken gerektirir **oluşturma**ve bunun yerine varsayılan değerlerine çoğunu çerçeve resim yazısı simgesi, Hızlandırıcı tablosu ve menü çeşitli kaynaklardan alır. Tarafından erişilmek üzere `LoadFrame`, tüm bu kaynaklar aynı kaynak kimliği olmalıdır (örneğin, **IDR_MAINFRAME**).  
+ `LoadFrame` daha az sayıda bağımsız değişken gerektirir `Create`ve bunun yerine varsayılan değerlerine çoğunu çerçeve resim yazısı simgesi, Hızlandırıcı tablosu ve menü çeşitli kaynaklardan alır. Tarafından erişilmek üzere `LoadFrame`, tüm bu kaynaklar aynı kaynak kimliği olmalıdır (örneğin, **IDR_MAINFRAME**).  
   
  Ancak **MDIFrameWnd** türetilir `CFrameWnd`, çerçeve pencere sınıfı türetilmiş `CMDIFrameWnd` ile bildirilmesi değil `DECLARE_DYNCREATE`.  
   
@@ -145,7 +145,7 @@ CMDIFrameWnd();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrı **oluşturma** veya `LoadFrame` görünür MDI çerçeve penceresi oluşturmak için üye işlevi.  
+ Çağrı `Create` veya `LoadFrame` görünür MDI çerçeve penceresi oluşturmak için üye işlevi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#13](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_1.cpp)]  
@@ -160,10 +160,10 @@ virtual BOOL CreateClient(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpCreateStruct`  
+ *lpCreateStruct*  
  Uzun bir işaretçi bir [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) yapısı.  
   
- `pWindowMenu`  
+ *pWindowMenu*  
  Pencere açılır menü için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -187,16 +187,16 @@ CMDIChildWnd* CreateNewChild(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pClass`  
+ *pClass*  
  Oluşturulacak alt pencere çalışma zamanı sınıfı.  
   
  *nResource*  
  Alt pencere ile ilişkilendirilmiş paylaşılan kaynakları kimliği.  
   
- `hMenu`  
+ *hMenu*  
  Alt pencere menüsü.  
   
- `hAccel`  
+ *hAccel*  
  Alt pencere Hızlandırıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -260,7 +260,7 @@ void MDICascade(int nType);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nType`  
+ *nTür*  
  Cascade bayrağı belirtir. Yalnızca aşağıdaki bayrağı belirtilebilir: `MDITILE_SKIPDISABLED`, engelleyen devre dışı MDI alt pencereleri basamaklı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -307,7 +307,7 @@ void MDIMaximize(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  En üst düzeye çıkarmak için penceresine noktaları.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -349,7 +349,7 @@ void MDIRestore(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  Geri yüklemek için penceresine noktaları.  
   
 ### <a name="example"></a>Örnek  
@@ -368,7 +368,7 @@ CMenu* MDISetMenu(
  *pFrameMenu*  
  Yeni Çerçeve Pencere menüsü menü belirtir. Varsa **NULL**, menü değiştirilmedi.  
   
- `pWindowMenu`  
+ *pWindowMenu*  
  Yeni pencere açılır menüsünü menü belirtir. Varsa **NULL**, menü değiştirilmedi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -397,7 +397,7 @@ void MDITile(int nType);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nType`  
+ *nTür*  
  Döşeme bayrağı belirtir. Bu parametre, aşağıdaki bayraklar herhangi biri olabilir:  
   
 - `MDITILE_HORIZONTAL` Bu bir pencere başka görünmesi döşeme MDI alt pencereleri.  
@@ -407,7 +407,7 @@ void MDITile(int nType);
 - `MDITILE_VERTICAL` Bu bir pencere başka görünmesi döşeme MDI alt pencereleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk sürümü `MDITile`, parametre olmadan windows Windows 3.1 ve sonraki sürümleri altında dikey olarak yerleştirir. İkinci sürümü windows dikey veya yatay olarak bağlı olarak değeri bölmeleri `nType` parametresi.  
+ İlk sürümü `MDITile`, parametre olmadan windows Windows 3.1 ve sonraki sürümleri altında dikey olarak yerleştirir. İkinci sürümü windows dikey veya yatay olarak bağlı olarak değeri kutucuklar *nTür* parametresi.  
   
 ### <a name="example"></a>Örnek  
  Örneğin bkz [CMDIFrameWnd::MDICascade](#mdicascade).  

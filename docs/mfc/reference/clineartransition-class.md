@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d342fdd903de610c0676d7a9e0b6e58ef15f41f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1412a65ce7afaab5421d49c22a9cd8ece5b283b1
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366336"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040892"
 ---
 # <a name="clineartransition-class"></a>CLinearTransition sınıfı
 Doğrusal geçiş yalıtır.  
@@ -84,10 +84,10 @@ CLinearTransition(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `duration`  
+ *Süre*  
  Geçiş süresi.  
   
- `dblFinalValue`  
+ *dblFinalValue*  
  Geçiş işleminin sonunda animasyon değişkeninin değeri.  
   
 ##  <a name="create"></a>  CLinearTransition::Create  
@@ -100,7 +100,7 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
-`pLibrary`  
+*pLibrary*  
  Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](https://msdn.microsoft.com/library/windows/desktop/dd371897), standart geçişleri kitaplığı tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

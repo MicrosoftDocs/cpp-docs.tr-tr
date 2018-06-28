@@ -88,12 +88,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da6727c54fd3c1f4ae25f401294861a6c8909e50
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 61ab69daadcb7e030511362932be41a3919dd087
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377868"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039329"
 ---
 # <a name="cmfcribbongallery-class"></a>CMFCRibbonGallery sınıfı
 Office 2007-style Şerit galerileri uygular.  
@@ -150,7 +150,7 @@ class CMFCRibbonGallery : public CMFCRibbonButton
 |[CMFCRibbonGallery::SetIconsInRow](#seticonsinrow)|Satır başına öğe sayısı galeride tanımlar.|  
 |[CMFCRibbonGallery::SetItemToolTip](#setitemtooltip)|Galeriden bir öğe için araç ipucu metni ayarlar.|  
 |[CMFCRibbonGallery::SetPalette](#setpalette)|Palet bir Şerit Galerisi ekler.|  
-|[CMFCRibbonGallery::SetPaletteID](#setpaletteid)|İçindeki gönderilen komut Kimliğini tanımlayan `WM_COMMAND` bir galeri öğesi seçildiğinde iletisi.|  
+|[CMFCRibbonGallery::SetPaletteID](#setpaletteid)|Bir galeri öğesi seçildiğinde WM_COMMAND iletisinde gönderilen komut kimliği tanımlar.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
@@ -159,7 +159,7 @@ class CMFCRibbonGallery : public CMFCRibbonButton
 |[CMFCRibbonGallery::OnDrawPaletteIcon](#ondrawpaletteicon)|Bir galeri simgesi çizildiğinde çerçevesi tarafından çağrılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir kullanıcı açıldığında bir galeri görüntüler dışında bir galeri düğmesi yalnızca normal menü düğmesi gibi davranır. Bir galeride bir öğe seçtiğinizde, framework gönderir `WM_COMMAND` düğmesinin komut kimliği ile birlikte ileti. İleti uyguluyorsanız çağırmalıdır [CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem) hangi öğe galeriden seçilmedi belirlemek için.  
+ Bir kullanıcı açıldığında bir galeri görüntüler dışında bir galeri düğmesi yalnızca normal menü düğmesi gibi davranır. Bir galeride bir öğe seçtiğinizde, framework düğmesinin komut kimliği ile birlikte WM_COMMAND ileti gönderir. İleti uyguluyorsanız çağırmalıdır [CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem) hangi öğe galeriden seçilmedi belirlemek için.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek çeşitli yöntemlerle kullanımı gösterilmiştir `CMFCRibbonGallery` yapılandırmak için sınıf bir `CMFCRibbonGallery` nesnesi. Örnek galeride satır başına öğe sayısını belirtin, menü panelini yeniden boyutlandırma etkinleştirmek, açılan menüden sol kenar çubuğu etkinleştirmek ve palet Şerit çubuğunda doğrudan olarak Şerit Galerisi görüntülemek nasıl gösterilmektedir. Bu kod parçacığını parçası olan [çizin istemci örnek](../../visual-cpp-samples.md).  
@@ -195,19 +195,19 @@ void AddGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszGroupName`  
+ [in] *lpszGroupName*  
  Grubun adını belirtir.  
   
- [in] `uiImagesPaletteResID`  
+ [in] *uiImagesPaletteResID*  
  Grup için görüntüleri içeren resim listesi kaynak Kimliğini belirtir.  
   
- [in] `cxPaletteImage`  
+ [in] *cxPaletteImage*  
  Bir görüntü piksel cinsinden genişliğini belirtir.  
   
- [in] `imagesGroup`  
+ [in] *imagesGroup*  
  Grup görüntüleri içeren resim listesi başvuru.  
   
- [in] `nIconsNum`  
+ [in] *nIconsNum*  
  Simgeler sayısını grubunda belirtir. Bu parametre yalnızca özel (çizilmiş sahibi) belirtilmesi gruplar.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -224,22 +224,22 @@ void AddSubItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pSubItem`  
+ [in] *pSubItem*  
  Menüye eklenecek öğe için bir işaretçi.  
   
- [in] `nIndex`  
+ [in] *nIndex*  
  Bir konum sıfır tabanlı dizini öğesi eklemek konumu belirtir.  
   
- [in] `bOnTop`  
+ [in] *bOnTop*  
  `TRUE` Şerit Galerisi önce item eklenecek belirtmek için; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi çağrılarak açılan menü öğeleriyle açılan galerileri birleştirebilirsiniz. Menü öğeleri, önce veya sonra galeri yerleştirilebilir.  
   
- Önce galeri öğesi eklemek için ayarlanmış `bOnTop` için `TRUE`. Ayarlama `bOnTop` için `FALSE` aşağıda galeri öğesi eklemek için.  
+ Önce galeri öğesi eklemek için ayarlanmış *bOnTop* için `TRUE`. Ayarlama *bOnTop* için `FALSE` aşağıda galeri öğesi eklemek için.  
   
 > [!NOTE]
->  Parametre `nIndex` galeri üstündeki hem galeri sonuna ekleme dizinini belirtir. Örneğin, bir öğe bir konumu galeri önce eklemek gerekiyorsa, ayarlayın `nIndex` 1 ve `bOnTop` için `TRUE`. Benzer şekilde, aşağıda galeri öğesi bir konum eklemek gerekiyorsa, ayarlamak `nIndex` 1 ve `bOnTop` için `FALSE`.  
+>  Parametre *nIndex* galeri üstündeki hem galeri sonuna ekleme dizinini belirtir. Örneğin, bir öğe bir konumu galeri önce eklemek gerekiyorsa, ayarlayın *nIndex* 1 ve *bOnTop* için `TRUE`. Benzer şekilde, aşağıda galeri öğesi bir konum eklemek gerekiyorsa, ayarlamak *nIndex* 1 ve *bOnTop* için `FALSE`.  
   
 ##  <a name="clear"></a>  CMFCRibbonGallery::Clear  
  Galeri içeriğini temizler.  
@@ -283,34 +283,34 @@ CMFCRibbonGallery (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nID`  
+ *nID*  
  Bir kullanıcı düğmesine tıkladığında yürütülecek komut komut Kimliğini belirtir.  
   
- `lpszText`  
+ *lpszText*  
  Düğmeyi görüntülenecek metni belirtir.  
   
- `nSmallImageIndex`  
+ *nSmallImageIndex*  
  Düğmeyi görünmesi küçük resim sıfır tabanlı dizini.  
   
- `nLargeImageIndex`  
+ *nLargeImageIndex*  
  Düğmeyi görünmesi büyük görüntü sıfır tabanlı dizini.  
   
- `imagesPalette`  
+ *imagesPalette*  
  Bir başvuru [CMFCToolBarImages](../../mfc/reference/cmfctoolbarimages-class.md) galeride görünmesi görüntüleri içeren nesne.  
   
- `uiImagesPaletteResID`  
+ *uiImagesPaletteResID*  
  Galeride görüntülemek için kaynak kimliği listesini görüntüler.  
   
- `cxPaletteImage`  
+ *cxPaletteImage*  
  Piksel cinsinden görüntü Galerisi üzerinde genişliğini belirtir.  
   
- `sizeIcon`  
+ *sizeIcon*  
  Boyutu galeri görüntüsü piksel cinsinden belirtir.  
   
- `nIconsNum`  
+ *nIconsNum*  
  Simgeler sayısını galeride belirtir.  
   
- `bDefaultButtonStyle`  
+ *bDefaultButtonStyle*  
  Varsayılan veya sahip tarafından çizilmiş düğme stili kullanılıp kullanılmayacağını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -325,10 +325,10 @@ void EnableMenuResize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` Menü yeniden boyutlandırma etkinleştirmek için; Aksi takdirde `FALSE`.  
   
- [in] `bVertcalOnly`  
+ [in] *bVertcalOnly*  
  `TRUE` Galeri yalnızca dikey boyutlandırılabilir belirtmek için; `FALSE` Galerisi olabileceğini belirtmek için her ikisini de dikey ve yatay olarak yeniden boyutlandırılacak.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -342,7 +342,7 @@ void EnablMenuSideBar(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  `TRUE` Kenar Çubuğu'nın etkin olduğunu belirtmek için; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -356,7 +356,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -381,7 +381,7 @@ LPCTSTR GetGroupName(int nGroupIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nGroupIndex`  
+ [in] *nGroupIndex*  
  Adı almak istediğiniz Grup sıfır tabanlı dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -420,7 +420,7 @@ LPCTSTR GetItemToolTip(int nItemIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nItemIndex`  
+ [in] *nItemIndex*  
  Öğe için araç ipucu metni almak için sıfır tabanlı dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -436,11 +436,11 @@ static int GetLastSelectedItem(UINT uiCmdID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiCmdID`  
+ [in] *uiCmdID*  
  Şerit Galerisi açılır menü öğesi komut Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kullanıcı Şerit Galerisi'nde herhangi bir öğeyi seçtiğinde kitaplığı gönderir `WM_COMMAND` ileti birlikte Şerit Galerisi açılır menü düğmesinin komut kimliği.  
+ Kullanıcı Şerit Galerisi'nde herhangi bir öğeyi seçtiğinde kitaplığı komut kimliği Şerit Galerisi açılır menü düğmesinin birlikte WM_COMMAND ileti gönderir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -464,7 +464,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -547,7 +547,7 @@ virtual void OnAfterChangeRect(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -559,7 +559,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -576,19 +576,19 @@ virtual void OnDrawPaletteIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Çizim için kullanılan cihaz bağlamı için bir işaretçi.  
   
- [in] `rectIcon`  
+ [in] *rectIcon*  
  Sınırlayıcı dikdörtgen çizmek için simgesinin belirtir.  
   
- [in] `nIconIndex`  
+ [in] *nIconIndex*  
  Sıfır tabanlı dizin galeri simgeleri çizmek için simgesinin görüntüsü listesini belirtir.  
   
- [in] `pIcon`  
+ [in] *pIcon*  
  Çizilen simgesi için bir işaretçi.  
   
- [in] `clrText`  
+ [in] *clrText*  
  Çizmek için öğesinin metin rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -602,7 +602,7 @@ virtual void OnEnable(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -614,7 +614,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bIsRTL`  
+ [in] *bIsRTL*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -645,7 +645,7 @@ void SelectItem(int nItemIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nItemIndex`  
+ [in] *nItemIndex*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -659,10 +659,10 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParent`  
+ [in] *pParent*  
  Şerit Galerisi penceresinin üst pencere.  
   
- [out] `data`  
+ [out] *veri*  
  A `CAccessibilityData` Şerit Galeriden erişilebilirlik verileri alan nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -678,7 +678,7 @@ void SetButtonMode(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bSet`  
+ [in] *bInternet*  
  `TRUE` Şerit Galerisi açılır menü düğmesi olarak görüntülemek için; `FALSE` doğrudan Şerit'te Şerit Galerisi içeriğini görüntülemek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -693,10 +693,10 @@ void SetGroupName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nGroupIndex`  
+ [in] *nGroupIndex*  
  Grubun adı değiştirilirken sıfır tabanlı dizini belirtir.  
   
- [in] `lpszGroupName`  
+ [in] *lpszGroupName*  
  Yeni grubun adını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -710,7 +710,7 @@ void SetIconsInRow(int nIconsInRow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nIconsInRow`  
+ [in] *nIconsInRow*  
  Galerinin her satırda görünmesini öğe sayısını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -726,10 +726,10 @@ void SetItemToolTip(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nItemIndex`  
+ [in] *nItemIndex*  
  Araç İpucu ilişkilendirmek için palet öğenin sıfır tabanlı dizini.  
   
- [in] `lpszToolTip`  
+ [in] *lpszToolTip*  
  Araç İpucu üzerinde görüntülenecek metin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -747,27 +747,27 @@ void SetPalette(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `imagesPalette`  
+ [in] *imagesPalette*  
  Galeride görüntülenecek simgeleri içeren görüntü listesini belirtir.  
   
- [in] `uiImagesPaletteResID`  
+ [in] *uiImagesPaletteResID*  
  Galeride görüntülenecek simgeleri içeren resim listesi kaynak Kimliğini belirtir.  
   
- [in] `cxPaletteImage`  
+ [in] *cxPaletteImage*  
  Piksel cinsinden galeri görüntüde genişliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setpaletteid"></a>  CMFCRibbonGallery::SetPaletteID  
- İçindeki gönderilen komut Kimliğini tanımlayan **WM_COMMAND** bir kullanıcı bir galeri öğesi seçtiğinde iletisi.  
+ Bir kullanıcı bir galeri öğesi seçtiğinde WM_COMMAND iletisinde gönderilen komut kimliği tanımlar.  
   
 ```  
 void SetPaletteID(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
- Gönderilir ve komut Kimliğini belirten **WM_COMMAND** bir kullanıcı bir galeri öğesi seçtiğinde iletisi.  
+ [in] *nID*  
+ Bir kullanıcı bir galeri öğesi seçtiğinde WM_COMMAND iletisinde gönderilen komut Kimliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Galeriden bir kullanıcı seçili belirli öğe belirlemek için arama [CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem) statik yöntemi.  

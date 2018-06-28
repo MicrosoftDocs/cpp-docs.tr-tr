@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90453d4e8550038493545b691c978b59bda90fad
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dce62b489cce44070111586959796aadd04079b7
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370295"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042527"
 ---
 # <a name="coleconvertdialog-class"></a>COleConvertDialog sınıfı
 Daha fazla bilgi için bkz: [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) Windows SDK'sındaki yapısı.  
@@ -110,10 +110,10 @@ explicit COleConvertDialog (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pItem`  
+ *pItem*  
  Dönüştürülen veya etkinleştirilmesini öğesine noktaları.  
   
- `dwFlags`  
+ *dwFlags*  
  Aşağıdaki değerlerden herhangi bir sayıda içeren oluşturma bayrağı birleştirilmiş bitwise kullanarak- or işleci:  
   
 - **CF_SELECTCONVERTTO** iletişim kutusu çağrıldığında, dönüştürmek için radyo düğmesi'nin başlangıçta seçili olur belirtir. Bu varsayılandır.  
@@ -126,10 +126,10 @@ explicit COleConvertDialog (
   
 - **CF_SHOWHELPBUTTON** iletişim kutusu çağrıldığında Yardım düğmesi görüntülenir belirtir.  
   
- `pClassID`  
- Dönüştürülen veya etkinleştirilmesini öğenin CLSID'si noktalarına. Varsa **NULL**, **CLSID** ile ilişkili `pItem` kullanılır.  
+ *pClassID*  
+ Dönüştürülen veya etkinleştirilmesini öğenin CLSID'si noktalarına. Varsa **NULL**, **CLSID** ile ilişkili *pItem* kullanılır.  
   
- `pParentWnd`  
+ *pParentWnd*  
  İşaret üst veya sahibi pencere nesnesi için (tür `CWnd`) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim kutusunun üst pencere ana uygulama penceresine ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -145,7 +145,7 @@ BOOL DoConvert(COleClientItem* pItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pItem`  
+ *pItem*  
  Dönüştürülen veya etkinleştirilmesini öğesine noktaları. Olamaz **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

@@ -274,12 +274,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b44878f5b860a05029f31492a7ca8ae06d83b607
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4a81ce168c99f4ad473619c72941842085c3a5a8
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379053"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042423"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 "Görüntüleyen bir koleksiyonunu her bir simge (listeden bir görüntü) ve bir etiket oluşan öğelerini bir liste görünümü denetimi," işlevselliği kapsar.  
@@ -487,7 +487,7 @@ class CListCtrl : public CWnd
 ## <a name="items-and-subitems"></a>Öğeleri ve alt öğeler  
  Liste Görünümü denetimi her öğe bir simge (listeden bir görüntü), bir etiket, geçerli durumuna ve bir uygulama tanımlı bir değer ("öğesi verileri" olarak adlandırılır) oluşur. Bir veya daha fazla alt öğeler, ayrıca her bir öğeyle ilişkili olabilir. "Alt", bir sütundaki bir öğenin simgesini ve etiket sağındaki rapor görünümünde görüntülenen bir dizedir. Liste Görünümü denetimi tüm öğeleri aynı sayıda alt öğesi olması gerekir.  
   
- Sınıf **CListCtrl** ekleme, silme, bulma ve bu öğeleri değiştirmek için çeşitli işlevleri sağlar. Daha fazla bilgi için bkz: [CListCtrl::GetItem](#getitem), [CListCtrl::InsertItem](#insertitem), ve [CListCtrl::FindItem](#finditem), [denetimineöğeeklemeyi](../adding-items-to-the-control.md), ve [düzenleme, sıralama ve bulma liste denetimlerinde kaydırma](../scrolling-arranging-sorting-and-finding-in-list-controls.md).  
+ Sınıf `CListCtrl` ekleme, silme, bulma ve bu öğeleri değiştirmek için çeşitli işlevleri sağlar. Daha fazla bilgi için bkz: [CListCtrl::GetItem](#getitem), [CListCtrl::InsertItem](#insertitem), ve [CListCtrl::FindItem](#finditem), [denetimineöğeeklemeyi](../adding-items-to-the-control.md), ve [düzenleme, sıralama ve bulma liste denetimlerinde kaydırma](../scrolling-arranging-sorting-and-finding-in-list-controls.md).  
   
  Varsayılan olarak, bir öğenin simgesini ve metin özniteliklerini depolamak için liste görünümü denetimi sorumludur. Ancak, bu öğesi türlerine ek sınıf `CListCtrl` "geri çağrı öğeleri" destekler Kendisi için bir liste görünümü öğesi "Geri arama öğesi" olan uygulama — denetimi yerine — metin, simge veya her ikisi de depolar. Geri çağrı maskesi hangi öğesi öznitelikleri (metin ve/veya simgesi) uygulama tarafından sağlanan belirtmek için kullanılır. Uygulama geri çağrı öğeleri kullanıyorsa, isteğe bağlı metin ve/veya simgesi öznitelikleri sağlamak mümkün olması gerekir. Geri çağrı öğeleri uygulamanızı zaten bu bilgilerin bazıları olduğunda faydalıdır. Daha fazla bilgi için bkz: [kullanarak CListCtrl: geri çağrı öğeleri ve geri çağrı maskesi](../callback-items-and-the-callback-mask.md).  
   
@@ -535,10 +535,10 @@ CSize ApproximateViewRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `sz`  
+ *SZ*  
  Denetimin piksel cinsinden önerilen boyutları. Boyutlar belirtilmezse, çerçeve denetimi geçerli genişlik ve yükseklik değerleri kullanır.  
   
- `iCount`  
+ *iCount*  
  Denetimde görüntülenecek öğe sayısı. Bu parametre -1 ise, çerçeve olan öğe sayısı, denetimi şu anda kullanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -555,7 +555,7 @@ BOOL Arrange(UINT nCode);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCode`  
+ *nCode*  
  Öğelerin hizalamasını stilini belirtir. Aşağıdaki değerlerden biri olabilir:  
   
 - `LVA_ALIGNLEFT` Pencerenin sol kenarı boyunca öğelerinin hizalar.  
@@ -570,7 +570,7 @@ BOOL Arrange(UINT nCode);
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `nCode` Parametresi hizalamasını stilini belirtir.  
+ *NCode* parametresi hizalamasını stilini belirtir.  
   
 ### <a name="example"></a>Örnek    
 ```cpp  
@@ -610,25 +610,25 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwStyle`  
+ *dwStyle*  
  Liste denetim stilini belirtir. Liste Denetim stillerini herhangi bir bileşimini denetime uygulayın. Bkz: [liste görünümü pencere stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774739) bu stiller tam bir listesi için Windows SDK. Stil kullanarak bir denetimi belirli genişletilmiş kümesi [SetExtendedStyle](#setextendedstyle).  
   
- `rect`  
+ *Rect*  
  Liste Denetim boyutunu ve konumunu belirtir. Ya da olabilir bir `CRect` nesnesi veya bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Liste Denetim ana penceresinde, genellikle belirtir bir `CDialog`. Değil olmalıdır **NULL**.  
   
- `nID`  
+ *nID*  
  Liste Denetim kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturmak bir `CListCtrl` iki adımda. İlk olarak, Oluşturucusu arayın ve ardından arama **oluşturma**, liste görünümü denetimi oluşturur ve ekler `CListCtrl` nesnesi.  
+ Oluşturmak bir `CListCtrl` iki adımda. İlk olarak, Oluşturucusu arayın ve ardından arama `Create`, liste görünümü denetimi oluşturur ve ekler `CListCtrl` nesnesi.  
   
- Liste Denetim nesnesine genişletilmiş Windows stilleri uygulamak için arama [CreateEx](#createex) yerine **oluşturma**.  
+ Liste Denetim nesnesine genişletilmiş Windows stilleri uygulamak için arama [CreateEx](#createex) yerine `Create`.  
   
 ### <a name="example"></a>Örnek  
 
@@ -652,19 +652,19 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwExStyle`  
- Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: `dwExStyle` parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
+ *dwExStyle*  
+ Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
   
- `dwStyle`  
+ *dwStyle*  
  Liste denetim stilini belirtir. Liste Denetim stillerini herhangi bir bileşimini denetime uygulayın. Bu stiller tam bir listesi için bkz: [liste görünümü pencere stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774739) Windows SDK.  
   
- `rect`  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı `pParentWnd`.  
+ *Rect*  
+ Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Denetimin üst penceresi için bir işaretçi.  
   
- `nID`  
+ *nID*  
  Denetimin alt pencere kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -673,10 +673,10 @@ virtual BOOL CreateEx(
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım `CreateEx` yerine [oluşturma](#create) Windows genişletilmiş stili önsöz tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için **WS_EX_**.  
   
- `CreateEx` Denetim tarafından belirtilen Genişletilmiş Windows stillerini oluşturur `dwExStyle`. Genişletilmiş stilleri denetime belirli ayarlamak için arama [SetExtendedStyle](#setextendedstyle). Örneğin, `CreateEx` böyle stilleri olarak ayarlamak için **WS_EX_CONTEXTHELP**, ancak `SetExtendedStyle` böyle stilleri olarak ayarlamak için **LVS_EX_FULLROWSELECT**. Daha fazla bilgi için bkz. konu başlığı altında açıklanan stilleri [Genişletilmiş liste görünümü stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774732) Windows SDK.  
+ `CreateEx` Denetim tarafından belirtilen Genişletilmiş Windows stillerini oluşturur *dwExStyle*. Genişletilmiş stilleri denetime belirli ayarlamak için arama [SetExtendedStyle](#setextendedstyle). Örneğin, `CreateEx` böyle stilleri olarak ayarlamak için **WS_EX_CONTEXTHELP**, ancak `SetExtendedStyle` böyle stilleri olarak ayarlamak için **LVS_EX_FULLROWSELECT**. Daha fazla bilgi için bkz. konu başlığı altında açıklanan stilleri [Genişletilmiş liste görünümü stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774732) Windows SDK.  
   
 ##  <a name="createdragimage"></a>  CListCtrl::CreateDragImage  
- Sürükleme resim listesi tarafından belirtilen öğenin oluşturur `nItem`.  
+ Sürükleme resim listesi tarafından belirtilen öğenin oluşturur *nItem*.  
   
 ```  
 CImageList* CreateDragImage(
@@ -685,10 +685,10 @@ CImageList* CreateDragImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Oluşturulacak olan Sürükle resim listesi olan öğenin dizini.  
   
- `lpPoint`  
+ *Lppoınt*  
  Adres bir [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) görüntüyü, sol üst köşesindeki ilk konumunu alır yapısı görünümünde düzenler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -734,7 +734,7 @@ BOOL DeleteColumn(int nCol);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCol`  
+ *nCol*  
  Silinecek sütun dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -761,7 +761,7 @@ BOOL DeleteItem(int nItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Silinecek öğenin dizinini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -787,7 +787,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpDrawItemStruct`  
+ *lpDrawItemStruct*  
  Uzun bir işaretçi bir `DRAWITEMSTRUCT` gerekli çizim türü hakkında bilgi içeren yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -805,7 +805,7 @@ CEdit* EditLabel(int nItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Düzenlenecek olan liste görünümü öğesi dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -836,7 +836,7 @@ LRESULT EnableGroupView(BOOL fEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `fEnable`  
+ *fEnable*  
  Listview denetimi grubuna etkinleştirmek için'ın öğeleri işlemini görüntülenip gösterir. **DOĞRU** gruplandırma; etkinleştirmek için **FALSE** devre dışı bırakmak için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -861,17 +861,17 @@ BOOL EnsureVisible(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Görünür olacak liste görünümü öğesi dizini.  
   
- `bPartialOK`  
+ *bPartialOK*  
  Kısmi görünürlük kabul edilebilir olup olmadığını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Liste Görünümü denetimi, gerekirse kaydırılan. Varsa `bPartialOK` parametre sıfır dışında hiçbir kaydırma öğesi kısmen görünür olup olmadığını oluşur.  
+ Liste Görünümü denetimi, gerekirse kaydırılan. Varsa *bPartialOK* parametresi sıfır dışında hiçbir kaydırma öğesi kısmen görünür olup olmadığını oluşur.  
   
 ### <a name="example"></a>Örnek  
 ```cpp  
@@ -892,17 +892,17 @@ int FindItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFindInfo`  
+ *pFindInfo*  
  Bir işaretçi bir [LVFINDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774745) için aranacak öğe hakkındaki bilgileri içeren yapısı.  
   
- `nStart`  
- İle aramaya başlamak için öğe veya baştan başlatmak için -1 dizini. Öğeyi `nStart` varsa arama dışarıda `nStart` -1 olarak eşit değil.  
+ *Nbaşlangıç*  
+ İle aramaya başlamak için öğe veya baştan başlatmak için -1 dizini. Öğeyi *Nbaşlangıç* aramadan varsa dışlandı *Nbaşlangıç* -1 olarak eşit değil.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa öğe veya -1 aksi dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `pFindInfo` Parametresi işaret bir **LVFINDINFO** yapısını aramak için bir liste görünümü öğesi için kullanılan bilgileri içerir.  
+ *PFindInfo* parametresi işaret bir **LVFINDINFO** yapısını aramak için bir liste görünümü öğesi için kullanılan bilgileri içerir.  
   
 ### <a name="example"></a>Örnek  
 
@@ -942,7 +942,7 @@ BOOL GetBkImage(LVBKIMAGE* plvbkImage) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `plvbkImage`  
+ *plvbkImage*  
  Bir işaretçi bir **LVBKIMAGE** liste görünümü geçerli arka plan görüntüsü içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -991,7 +991,7 @@ BOOL GetCheck(int nItem) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Liste Denetim öğesi sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1013,10 +1013,10 @@ BOOL GetColumn(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCol`  
+ *nCol*  
  Alınacak niteliklerini olan sütun dizini.  
   
- `pColumn`  
+ *pColumn*  
  Adres bir [LVCOLUMN](http://msdn.microsoft.com/library/windows/desktop/bb774743) sütun hakkında bilgi almak için bilgi belirtir alıp yapısı. **Maskesi** üye almak için hangi sütunun özniteliklerini belirtir. Varsa **maskesi** üye belirtir `LVCF_TEXT` değeri **pszText** üye öğesi metni alır arabellek adresi içermesi gerekir ve **cchTextMax** üye arabellek boyutu belirtmeniz gerekir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1051,10 +1051,10 @@ BOOL GetColumnOrderArray(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `piArray`  
+ *piArray*  
  Liste Görünümü denetimi sütunları dizin değerini içerecek bir arabellek için bir işaretçi. Arabellek liste görünümü denetimi sütunların toplam sayı içerecek şekilde büyük olması gerekir.  
   
- `iCount`  
+ *iCount*  
  Liste Görünümü denetimi sütun sayısı. Bu parametre -1 ise, sütun sayısı çerçevesi tarafından otomatik olarak alınır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1100,11 +1100,11 @@ int GetColumnWidth(int nCol) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCol`  
+ *nCol*  
  Genişlik alınması sütun dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Piksel cinsinden tarafından belirtilen sütun genişliği `nCol`.  
+ Piksel cinsinden tarafından belirtilen sütun genişliği *nCol*.  
   
 ### <a name="example"></a>Örnek  
 
@@ -1251,10 +1251,10 @@ int GetGroupInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iGroupId`  
+ *iGroupId*  
  Alınacak bilgilerini olduğu grup tanımlayıcısı.  
   
- `pgrp`  
+ *pgrp*  
  Bir işaretçi [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) belirtilen grubu hakkında bilgi içeren.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1276,8 +1276,8 @@ BOOL GetGroupInfoByIndex(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iIndex`|Bir grup sıfır tabanlı dizini.|  
-|[out] `pGroup`|İşaretçi bir [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) tarafından belirtilen grubu hakkındaki bilgileri alır yapısı `iIndex` parametresi.<br /><br /> Üyeleri başlatmak için çağıran sorumludur [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) yapısı. Ayarlama `cbSize` yapısı boyutunu ve bayraklarını üyesine `mask` üye almak için gereken bilgileri belirtin.|  
+|[in] *İIndex*|Bir grup sıfır tabanlı dizini.|  
+|[out] *pGroup*|İşaretçi bir [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) tarafından belirtilen grubu hakkındaki bilgileri alır yapısı *İIndex* parametresi.<br /><br /> Üyeleri başlatmak için çağıran sorumludur [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) yapısı. Ayarlama `cbSize` yapısı boyutunu ve bayraklarını üyesine `mask` üye almak için gereken bilgileri belirtin.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
@@ -1333,7 +1333,7 @@ void GetGroupMetrics(PLVGROUPMETRICS pGroupMetrics) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGroupMetrics`  
+ *pGroupMetrics*  
  Bir işaretçi bir [LVGROUPMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb774752) Grup ölçümleri bilgilerini içeren.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1353,15 +1353,15 @@ BOOL GetGroupRect(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iGroupId`|Bir grubu belirtir.|  
-|[içinde out] `lpRect`|İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Bu yöntem başarılı olursa, yapısı tarafından belirtilen grup dikdörtgen koordinatlarını alır `iGroupId`.|  
-|[in] `iCoords`|Alınacak dikdörtgen koordinatları belirtir. Şu değerlerden birini kullanın:<br /><br /> - `LVGGR_GROUP` -Tüm genişletilmiş grubunun (varsayılan) koordinatları.<br />- `LVGGR_HEADER` -Koordinatları yalnızca üst bilgisi (daraltılmış grup).<br />- `LVGGR_SUBSETLINK` -Yalnızca alt bağlantı (biçimlendirme alt) koordinatları.|  
+|[in] *iGroupId*|Bir grubu belirtir.|  
+|[içinde out] *lpRect*|İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Bu yöntem başarılı olursa, yapısı tarafından belirtilen grup dikdörtgen koordinatlarını alır *iGroupId*.|  
+|[in] *iCoords*|Alınacak dikdörtgen koordinatları belirtir. Şu değerlerden birini kullanın:<br /><br /> - `LVGGR_GROUP` -Tüm genişletilmiş grubunun (varsayılan) koordinatları.<br />- `LVGGR_HEADER` -Koordinatları yalnızca üst bilgisi (daraltılmış grup).<br />- `LVGGR_SUBSETLINK` -Yalnızca alt bağlantı (biçimlendirme alt) koordinatları.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayırma için çağıran sorumludur [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) tarafından yapısı işaret için `pRect` parametresi.  
+ Ayırma için çağıran sorumludur [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) tarafından yapısı işaret için *pRect* parametresi.  
   
  Bu yöntem gönderir [LVM_GETGROUPRECT](http://msdn.microsoft.com/library/windows/desktop/bb774935) Windows SDK'ın açıklanan ileti.  
   
@@ -1406,14 +1406,14 @@ UINT GetGroupState(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iGroupId`|Bir grup sıfır tabanlı dizini.|  
-|[in] `dwMask`|Belirtilen grup için almak için durum değeri belirtir maskesi. Daha fazla bilgi için bkz: `mask` üyesi [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) yapısı.|  
+|[in] *iGroupId*|Bir grup sıfır tabanlı dizini.|  
+|[in] *dwMask*|Belirtilen grup için almak için durum değeri belirtir maskesi. Daha fazla bilgi için bkz: `mask` üyesi [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen grup ya da grubu bulunamazsa 0 için istenen durumu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bit düzeyinde AND işleminin sonucu açıktır dönüş değeri `dwMask` parametresi ve değeri `state` üyesi bir [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) geçerli liste görünümü denetimi temsil yapısı.  
+ Bit düzeyinde AND işleminin sonucu açıktır dönüş değeri *dwMask* parametresi ve değeri `state` üyesi bir [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) geçerli liste görünümü denetimi temsil yapısı.  
   
  Bu yöntem gönderir [LVM_GETGROUPSTATE](http://msdn.microsoft.com/library/windows/desktop/bb774936) Windows SDK'ın açıklanan ileti. Daha fazla bilgi için bkz: [ListView_GetGroupState](http://msdn.microsoft.com/library/windows/desktop/bb761288) makrosu.  
   
@@ -1512,7 +1512,7 @@ CImageList* GetImageList(int nImageList) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nImageList`  
+ *nImageList*  
  Almak için hangi resim listesi belirten değer. Şu değerlerden biri olabilir:  
   
 - `LVSIL_NORMAL` Büyük simgelerle resim listesi.  
@@ -1541,7 +1541,7 @@ BOOL GetInsertMark(LPLVINSERTMARK lvim) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lvim`  
+ *lvim*  
  Bir işaretçi bir [LVINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb774758) ekleme işareti ilgili bilgileri içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1571,7 +1571,7 @@ int GetInsertMarkRect(LPRECT pRect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pRect`  
+ *pRect*  
  İşaretçi bir `RECT` ekleme noktasını bounds dikdörtgene koordinatlarını içerir yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1592,7 +1592,7 @@ BOOL GetItem(LVITEM* pItem) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pItem`  
+ *pItem*  
  İşaretçi bir [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) öğesi'nin özniteliklerini alır yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1622,7 +1622,7 @@ DWORD_PTR GetItemData(int nItem) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Alınacak verileri olan liste öğesi dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1660,10 +1660,10 @@ BOOL GetItemIndexRect(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `pItemIndex`|İşaretçi bir [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) alt maddenin ana madde için yapısı.<br /><br /> Ayırma ve üyeleri ayarlama çağıran sorumludur [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) yapısı. Bu parametre olamaz `NULL`.|  
-|[in] `iColumn`|Denetim bir sütunda sıfır tabanlı dizini.|  
-|[in] `rectType`|Sınırlayıcı dikdörtgenini alınır liste görünümü alt kısmı. Aşağıdaki değerlerden birini belirtin:<br /><br /> `LVIR_BOUNDS` -Simgesi ve etiketi de dahil olmak üzere tüm alt maddenin sınırlayıcı dikdörtgenini döndürür.<br /><br /> `LVIR_ICON` -Simge veya alt maddenin küçük simge sınırlayıcı dikdörtgenini döndürür.<br /><br /> `LVIR_LABEL` -Sınırlayıcı dikdörtgenini alt metin döndürür.|  
-|[out] `pRect`|İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı alt maddenin sınırlayıcı dikdörtgenini hakkında bilgi alır.<br /><br /> Ayırma için çağıran sorumludur [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Bu parametre olamaz `NULL`.|  
+|[in] *pItemIndex*|İşaretçi bir [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) alt maddenin ana madde için yapısı.<br /><br /> Ayırma ve üyeleri ayarlama çağıran sorumludur [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) yapısı. Bu parametre olamaz `NULL`.|  
+|[in] *iColumn*|Denetim bir sütunda sıfır tabanlı dizini.|  
+|[in] *rectType*|Sınırlayıcı dikdörtgenini alınır liste görünümü alt kısmı. Aşağıdaki değerlerden birini belirtin:<br /><br /> `LVIR_BOUNDS` -Simgesi ve etiketi de dahil olmak üzere tüm alt maddenin sınırlayıcı dikdörtgenini döndürür.<br /><br /> `LVIR_ICON` -Simge veya alt maddenin küçük simge sınırlayıcı dikdörtgenini döndürür.<br /><br /> `LVIR_LABEL` -Sınırlayıcı dikdörtgenini alt metin döndürür.|  
+|[out] *pRect*|İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı alt maddenin sınırlayıcı dikdörtgenini hakkında bilgi alır.<br /><br /> Ayırma için çağıran sorumludur [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Bu parametre olamaz `NULL`.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
@@ -1709,10 +1709,10 @@ BOOL GetItemPosition(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Alınacak olan konumdur öğenin dizini.  
   
- `lpPoint`  
+ *Lppoınt*  
  Adres bir [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) öğesi'nin sol üst köşe konumunu alır yapısı görünümünde düzenler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1746,13 +1746,13 @@ BOOL GetItemRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Alınacak olan konumdur öğenin dizini.  
   
- `lpRect`  
+ *lpRect*  
  Adres bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) sınırlayıcı dikdörtgenini alır yapısı.  
   
- `nCode`  
+ *nCode*  
  Liste görünümü öğesi sınırlayıcı dikdörtgenini almak üzere kısmı. Şu değerlerden biri olabilir:  
   
 - `LVIR_BOUNDS` Sınırlayıcı dikdörtgenini simgesi ve etiketi de dahil olmak üzere tüm öğesi döndürür.  
@@ -1821,9 +1821,9 @@ BOOL GetItemSpacing(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `fSmall`|Öğe aralığı almak üzere görüntüleyin. Belirtin `true` küçük simge görünümü için veya `false` simge görünümü için.|  
-|[out] `pnHorzSpacing`|Öğeler arasında yatay boşluk içerir.|  
-|[out] `pnVertSpacing`|Öğeler arasında dikey aralık içerir.|  
+|[in] *fSmall*|Öğe aralığı almak üzere görüntüleyin. Belirtin `true` küçük simge görünümü için veya `false` simge görünümü için.|  
+|[out] *pnHorzSpacing*|Öğeler arasında yatay boşluk içerir.|  
+|[out] *pnVertSpacing*|Öğeler arasında dikey aralık içerir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
@@ -1841,10 +1841,10 @@ UINT GetItemState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Alınacak durumu olan öğenin dizini.  
   
- `nMask`  
+ *nMask*  
  Maske, öğenin durumu döndürülecek bayrakları belirtme.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1872,25 +1872,25 @@ CString GetItemText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Alınacak metni olan öğenin dizini.  
   
- `nSubItem`  
+ *nSubItem*  
  Alınacak metni olan alt belirtir.  
   
- `lpszText`  
+ *lpszText*  
  İşaretçi öğesi metni almak için bir dizeye.  
   
- `nLen`  
- Tarafından için arabellek uzunluğu işaret `lpszText`.  
+ *nLen*  
+ Tarafından için arabellek uzunluğu işaret *lpszText*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürme sürüm `int` alınan dize uzunluğunu döndürür.  
+ Döndürme sürüm **int** alınan dize uzunluğunu döndürür.  
   
  Döndürme sürüm bir `CString` öğesi metni döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `nSubItem` sıfırsa, bu işlev öğe etiketi; alır `nSubItem` olduğu sıfır dışında bu alt maddenin metni alır. Açıklamalara alt bağımsız değişkeni ile ilgili daha fazla bilgi için bkz [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) Windows SDK'sındaki yapısı.  
+ Varsa *nSubItem* sıfırsa, bu işlev öğe etiketi; alır *nSubItem* olan sıfır dışında bu alt maddenin metni alır. Açıklamalara alt bağımsız değişkeni ile ilgili daha fazla bilgi için bkz [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) Windows SDK'sındaki yapısı.  
   
 ##  <a name="getnextitem"></a>  CListCtrl::GetNextItem  
  Bir liste arar belirtilen özelliklere sahip ve belirli bir öğe için belirtilen ilişki taşıyan öğeyi görüntüleyin.  
@@ -1902,10 +1902,10 @@ int GetNextItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  İle aramaya başlamak için öğe veya belirtilen bayrakları eşleşen ilk öğe bulmak için -1 dizini. Belirtilen öğe arama dışlandı.  
   
- `nFlags`  
+ *nFlags*  
  İstenen öğe belirtilen öğeyi ve istenen öğe durumunu geometrik ilişkisi. Geometrik ilişkisi şu değerlerden biri olabilir:  
   
 - `LVNI_ABOVE` Belirtilen öğe bir öğe arar.  
@@ -1944,30 +1944,30 @@ BOOL GetNextItemIndex(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[içinde out] `pItemIndex`|İşaretçi [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) arama başladığı öğeyi açıklayan yapısı veya bayrakları eşleşen ilk öğe bulmak için -1 `nFlags` parametresi.<br /><br /> Bu yöntem başarılı olursa `LVITEMINDEX` yapısını arama tarafından bulunan öğe açıklar.|  
-|[in] `nFlags`|Bitsel bir birleşimi (veya), aramanın nasıl yapılacağını belirten işaretler.<br /><br /> Arama dizini, durumu veya hedef öğenin görünümünü bağlı olabilir ya da hedef öğesi'nin fiziksel konumuna göre öğesi tarafından belirtilen `pItemIndex` parametresi. Daha fazla bilgi için bkz: `flags` parametresinde [LVM_GETNEXTITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb761059) ileti.|  
+|[içinde out] *pItemIndex*|İşaretçi [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) arama başladığı öğeyi açıklayan yapısı veya bayrakları eşleşen ilk öğe bulmak için -1 *nFlags* parametresi.<br /><br /> Bu yöntem başarılı olursa `LVITEMINDEX` yapısını arama tarafından bulunan öğe açıklar.|  
+|[in] *nFlags*|Bitsel bir birleşimi (veya), aramanın nasıl yapılacağını belirten işaretler.<br /><br /> Arama dizini, durumu veya hedef öğenin görünümünü bağlı olabilir ya da hedef öğesi'nin fiziksel konumuna göre öğesi tarafından belirtilen *pItemIndex* parametresi. Daha fazla bilgi için bkz: *bayrakları* parametresinde [LVM_GETNEXTITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb761059) ileti.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayırma ve üyeleri ayarlama çağıran sorumludur `LVITEMINDEX` tarafından yapısı işaret için `pItemIndex` parametresi.  
+ Ayırma ve üyeleri ayarlama çağıran sorumludur `LVITEMINDEX` tarafından yapısı işaret için *pItemIndex* parametresi.  
   
  Bu yöntem gönderir [LVM_GETNEXTITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb761059) Windows SDK'ın açıklanan ileti.  
   
 ##  <a name="getnextselecteditem"></a>  CListCtrl::GetNextSelectedItem  
- Tarafından tanımlanan liste öğesinin dizinini alır `pos`, ardından ayarlar *pos* için **konumu** değeri.  
+ Tarafından tanımlanan liste öğesinin dizinini alır *pos*, ardından ayarlar *pos* için **konumu** değeri.  
   
 ```  
 int GetNextSelectedItem(POSITION& pos) const;  
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
+ *POS*  
  Bir başvuru bir **konumu** önceki bir çağrı tarafından döndürülen değer `GetNextSelectedItem` veya `GetFirstSelectedItemPosition`. Değer sonraki konumuna bu çağrısı tarafından güncelleştirilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dizin tarafından tanımlanan liste öğesinin `pos`.  
+ Dizin tarafından tanımlanan liste öğesinin *pos*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanabileceğiniz `GetNextSelectedItem` çağrısıyla ilk konum kurarsanız ileriye doğru yineleme döngü `GetFirstSelectedItemPosition`.  
@@ -2058,7 +2058,7 @@ BOOL GetOrigin(LPPOINT lpPoint) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpPoint`  
+ *Lppoınt*  
  Adres bir [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) görünüm kaynağını alır yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2137,11 +2137,11 @@ int GetStringWidth(LPCTSTR lpsz) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpsz`  
+ *lpsz*  
  Belirlenecek, genişlik olduğu bir null ile sonlandırılmış dize adresidir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Gösterdiği dizesinin piksel cinsinden genişliği `lpsz`.  
+ Gösterdiği dizesinin piksel cinsinden genişliği *lpsz*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Döndürülen genişliği denetimin geçerli yazı tipi ve sütunu kenar boşlukları ancak olmayan küçük bir simge genişliğini dikkate alır.  
@@ -2190,7 +2190,7 @@ BOOL GetSubItemRect(
   
 - `LVIR_LABEL` Sınırlayıcı dikdörtgenini simgesi ve etiketi de dahil olmak üzere tüm öğesi döndürür. Bu aynıdır `LVIR_BOUNDS`.  
   
- `ref`  
+ *ref*  
  Başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) alt koordinatlarını içeren nesne çevreleyen dikdörtgen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2250,7 +2250,7 @@ BOOL GetTileViewInfo(PLVTILEVIEWINFO ptvi) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ptvi`  
+ *ptvi*  
  Bir işaretçi bir [LVTILEVIEWINFO](http://msdn.microsoft.com/library/windows/desktop/bb774768) alınan bilgiler alır yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2334,7 +2334,7 @@ BOOL GetViewRect(LPRECT lpRect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpRect`  
+ *lpRect*  
  Adres bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2353,10 +2353,10 @@ void GetWorkAreas(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nWorkAreas`  
+ *nWorkAreas*  
  Sayısı `RECT` içinde yer alan yapıları *Çin* dizi.  
   
- `prc`  
+ *Çin*  
  Bir dizi için bir işaretçi `RECT` yapıları (veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesneler) liste görünümü denetimi çalışma alanlarının alırsınız. Bu yapıları istemci koordinatlarında değerler.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2373,7 +2373,7 @@ BOOL HasGroup(int iGroupId) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iGroupId`  
+ *iGroupId*  
  İstenen grup tanımlayıcısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2394,22 +2394,22 @@ int HitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pHitTestInfo`  
+ *pHitTestInfo*  
  Adres bir **LVHITTESTINFO** test ve, isabet konumuna içeren yapısı isabet testi sonuçlarıyla ilgili bilgileri alır.  
   
- `pt`  
+ *PT*  
  Sınanacak noktası.  
   
- `pFlags`  
+ *pFlags*  
  İşaretçi tamsayıya testi sonuçlarıyla ilgili bilgileri alır. Açıklama bkz **bayrakları** üyesi [LVHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb774754) Windows SDK'sındaki yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tarafından belirtilen konumdaki öğenin dizini `pHitTestInfo`, varsa veya -1 Aksi takdirde.  
+ Tarafından belirtilen konumdaki öğenin dizini *pHitTestInfo*, varsa veya -1 Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanabileceğiniz `LVHT_ABOVE`, `LVHT_BELOW`, `LVHT_TOLEFT`, ve `LVHT_TORIGHT` yapısı değerlerini **bayrağı** liste görünümü denetimi içeriğini kaydırma verilmeyeceğini belirlemek için üye. Konum yukarı ve sola istemci alanının ise iki Bu bayrakların, örneğin, birleştirilebilir.  
   
- İçin test edebilirsiniz **LVHT_ONITEM** yapısı değerini **bayrağı** verilen bir konuma bir liste görünümü öğesi içinde olup olmadığını belirlemek için üye. Bu değer Bitsel veya işlemi açıktır `LVHT_ONITEMICON`, `LVHT_ONITEMLABEL`, ve `LVHT_ONITEMSTATEICON` yapısı değerlerini **bayrağı** üyesi.  
+ İçin test edebilirsiniz `LVHT_ONITEM` yapısı değerini **bayrağı** verilen bir konuma bir liste görünümü öğesi içinde olup olmadığını belirlemek için üye. Bu değer Bitsel veya işlemi açıktır `LVHT_ONITEMICON`, `LVHT_ONITEMLABEL`, ve `LVHT_ONITEMSTATEICON` yapısı değerlerini **bayrağı** üyesi.  
   
 ### <a name="example"></a>Örnek  
 
@@ -2452,22 +2452,22 @@ int InsertColumn(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCol`  
+ *nCol*  
  Yeni bir sütun dizini.  
   
- `pColumn`  
+ *pColumn*  
  Adres bir **LVCOLUMN** yeni bir sütun özniteliklerini içeren yapısı.  
   
  *lpszColumnHeading*  
  Sütun başlık içeren bir dize adresidir.  
   
- `nFormat`  
+ *nFormat*  
  Sütun hizalamasını belirten tamsayı. Şu değerlerden biri olabilir: **LVCFMT_LEFT**, **LVCFMT_RIGHT**, veya **LVCFMT_CENTER**.  
   
- `nWidth`  
+ *nWidth*  
  Piksel cinsinden sütun genişliği. Bu parametre -1 ise, sütun genişliği ayarlanmadı.  
   
- `nSubItem`  
+ *nSubItem*  
  Sütunla ilişkili alt dizini. Bu parametre -1 ise, hiçbir alt sütunla ilişkili olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2491,7 +2491,7 @@ LRESULT InsertGroup(
  *Dizin*  
  Gruba eklenecek olduğu öğenin dizini.  
   
- `pgrp`  
+ *pgrp*  
  Bir işaretçi bir [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) eklenecek grubu içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2546,29 +2546,29 @@ int InsertItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pItem`  
+ *pItem*  
  İşaretçi bir [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) öğesi'nin öznitelikleri, Windows SDK'ın açıklandığı gibi belirtir yapısı.  
   
- `nItem`  
+ *nItem*  
  Eklenecek öğenin dizini.  
   
- `lpszItem`  
+ *lpszItem*  
  Öğenin etiketi içeren bir dize adresini veya `LPSTR_TEXTCALLBACK` öğe bir geri çağırma öğesi ise. Geri çağrı öğeleri hakkında daha fazla bilgi için bkz: [CListCtrl::GetCallbackMask](#getcallbackmask).  
   
- `nImage`  
+ *nImage*  
  Öğenin görüntünün dizinini veya `I_IMAGECALLBACK` öğe bir geri çağırma öğesi ise. Geri çağrı öğeleri hakkında daha fazla bilgi için bkz: [CListCtrl::GetCallbackMask](#getcallbackmask).  
   
- `nMask`  
- `nMask` Parametresi belirtir hangi öğesinin parametre olarak geçirilen öznitelikleri geçerlidir. Bir olabilir ya da daha fazla maskesi değeri açıklandığı [LVITEM yapısı](http://msdn.microsoft.com/library/windows/desktop/bb774760) Windows SDK'sındaki. Geçerli değerler bit düzeyinde OR işleci ile birleştirilebilir.  
+ *nMask*  
+ *NMask* parametresi belirtir hangi öğesinin parametre olarak geçirilen öznitelikleri geçerlidir. Bir olabilir ya da daha fazla maskesi değeri açıklandığı [LVITEM yapısı](http://msdn.microsoft.com/library/windows/desktop/bb774760) Windows SDK'sındaki. Geçerli değerler bit düzeyinde OR işleci ile birleştirilebilir.  
   
- `nState`  
+ *nDurum*  
  Öğenin durumunu, durumu resmi ve katmana görüntü gösterir. Windows SDK konulara bakın [LVITEM yapısı](http://msdn.microsoft.com/library/windows/desktop/bb774760) daha fazla bilgi için ve [liste görünümü öğesi durumları](http://msdn.microsoft.com/library/windows/desktop/bb774733) geçerli bayraklar listesi.  
   
- `nStateMask`  
+ *nStateMask*  
  Hangi BITS durumu üyesinin alınan veya değiştirilecek gösterir. Bkz: [LVITEM yapısı](http://msdn.microsoft.com/library/windows/desktop/bb774760) daha fazla bilgi için Windows SDK'sındaki.  
   
- `lParam`  
- Bu öğeyle ilişkili 32-bit uygulamaya özgü bir değer. Bu parametre belirtilmezse, ayarlamalısınız `nMask` özniteliği `LVIF_PARAM`.  
+ *lParam*  
+ Bu öğeyle ilişkili 32-bit uygulamaya özgü bir değer. Bu parametre belirtilmezse, ayarlamalısınız *nMask* özniteliği `LVIF_PARAM`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni öğe başarılı olursa ya da aksi -1 dizini.  
@@ -2611,10 +2611,10 @@ int InsertMarkHitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pPoint`  
+ *pPoint*  
  Bir işaretçi bir [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) isabet testi içeren yapısı koordinatları, liste denetimi istemci alanını göre.  
   
- `lvim`  
+ *lvim*  
  Bir işaretçi bir [LVINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb774758) yapısı noktası parametresi tarafından tanımlanan koordinat en yakın ekleme noktasını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2647,7 +2647,7 @@ BOOL IsItemVisible(int index) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `index`|Geçerli liste görünümü denetimi, bir öğenin sıfır tabanlı dizini.|  
+|[in] *dizini*|Geçerli liste görünümü denetimi, bir öğenin sıfır tabanlı dizini.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Belirtilen öğe varsa görünür; Aksi takdirde `false`.  
@@ -2666,7 +2666,7 @@ UINT MapIDToIndex(UINT id) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `id`|Bir öğenin benzersiz kimliği.|  
+|[in] *kimliği*|Bir öğenin benzersiz kimliği.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen kimliğe geçerli dizini  
@@ -2689,7 +2689,7 @@ UINT MapIndexToID(UINT index) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `index`|Bir öğenin sıfır tabanlı dizini.|  
+|[in] *dizini*|Bir öğenin sıfır tabanlı dizini.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen öğe için benzersiz bir kimliği.  
@@ -2751,10 +2751,10 @@ LRESULT MoveGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iGroupId`  
+ *iGroupId*  
  Taşınacak grup tanımlayıcısı.  
   
- `toIndex`  
+ *toIndex*  
  Grup taşınacak olduğu sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2773,10 +2773,10 @@ void MoveItemToGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `idItemFrom`  
+ [in] *idItemFrom*  
  Taşınacak öğenin dizini.  
   
- [in] `idGroupTo`  
+ [in] *idGroupTo*  
  Öğeyi Grup tanıtıcısı taşınır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2796,17 +2796,17 @@ BOOL RedrawItems(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nFirst`  
+ *nFirst*  
  Yeniden çizilmiş için ilk öğenin dizini.  
   
- `nLast`  
+ *Nson*  
  Yeniden çizilmiş için son öğenin dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Liste Görünümü penceresi alıncaya kadar belirtilen öğeleri gerçekten yeniden çizilmiş olmayan bir `WM_PAINT` ileti. Hemen çizilecek, Windows çağrısı [UpdateWindow](http://msdn.microsoft.com/library/windows/desktop/dd145167) bu işlev kullandıktan sonra işlevi.  
+ Liste Görünümü penceresi WM_PAINT ileti alıncaya kadar belirtilen öğeleri gerçekten yeniden çizilmiş değil. Hemen çizilecek, Windows çağrısı [UpdateWindow](http://msdn.microsoft.com/library/windows/desktop/dd145167) bu işlev kullandıktan sonra işlevi.  
   
 ##  <a name="removeallgroups"></a>  CListCtrl::RemoveAllGroups  
  Tüm grupları liste görünümü denetimden kaldırır.  
@@ -2826,7 +2826,7 @@ LRESULT RemoveGroup(int iGroupId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iGroupId`  
+ *iGroupId*  
  Kaldırılacak Grup tanımlayıcısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2843,8 +2843,8 @@ BOOL Scroll(CSize size);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `size`  
- A `CSize` yatay ve dikey, piksel cinsinden kaydırma miktarını belirten nesnesini. **y** üyesi `size` liste görünümü denetimin satırının piksel cinsinden yüksekliği bölünür ve denetim elde edilen satır sayısı tarafından kaydırılan.  
+ *Boyutu*  
+ A `CSize` yatay ve dikey, piksel cinsinden kaydırma miktarını belirten nesnesini. **y** üyesi *boyutu* liste görünümü denetimin satırının piksel cinsinden yüksekliği bölünür ve denetim elde edilen satır sayısı tarafından kaydırılan.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
@@ -2857,7 +2857,7 @@ BOOL SetBkColor(COLORREF cr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cr`  
+ *CR*  
  Arka plan rengi ayarlamak için veya `CLR_NONE` arka plan rengi için değer. Liste Görünümü arka plan renklerini denetimleriyle kendilerini önemli ölçüde arka plan renklerini olmayanlar daha hızlı yeniden çizin. Bilgi için bkz: [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2894,13 +2894,13 @@ BOOL SetBkImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `plvbkImage`  
+ *plvbkImage*  
  Adres bir **LVBKIMAGE** yapısı, yeni arka plan görüntü bilgilerini içeren.  
   
- `hbm`  
+ *hbm*  
  Bir bit eşlem işleyin.  
   
- `pszUrl`  
+ *pszUrl*  
  A **NULL**-arka plan resmi URL'si içeren dize sonlandırıldı.  
   
  *fTile*  
@@ -2931,7 +2931,7 @@ BOOL SetCallbackMask(UINT nMask);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nMask`  
+ *nMask*  
  Geri çağrı maskesi yeni değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2959,11 +2959,11 @@ BOOL SetCheck(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Liste Denetim öğesi sıfır tabanlı dizini.  
   
- `fCheck`  
- Öğesinin durumu resmi veya görünür olup olmayacağını belirtir. Varsayılan olarak, *fCheck* olan **doğru** ve durum resminin görülebilir. Varsa `fCheck` olan **yanlış**, görünür değil.  
+ *fCheck*  
+ Öğesinin durumu resmi veya görünür olup olmayacağını belirtir. Varsayılan olarak, *fCheck* olan **doğru** ve durum resminin görülebilir. Varsa *fCheck* olan **yanlış**, görünür değil.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Madde işaretli değilse, sıfır olmayan Aksi halde 0.  
@@ -2997,10 +2997,10 @@ BOOL SetColumn(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCol`  
+ *nCol*  
  Ayarlanacak niteliklerini olan sütun dizini.  
   
- `pColumn`  
+ *pColumn*  
  Adres bir [LVCOLUMN](http://msdn.microsoft.com/library/windows/desktop/bb774743) yeni bir sütun içeren yapısı öznitelikleri, Windows SDK'ın açıklandığı gibi. Yapısı **maskesi** üye ayarlamak için hangi sütunun özniteliklerini belirtir. Varsa **maskesi** üye belirtir `LVCF_TEXT` değeri, yapısı **pszText** üyesidir adresini null sonlandırılmış bir dize yapısı ve **cchTextMax**üye göz ardı edilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3019,10 +3019,10 @@ BOOL SetColumnOrderArray(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `piArray`  
+ *piArray*  
  Liste Görünümü denetimi (soldan sağa) sütunların dizin değerlerini içeren bir arabellek için bir işaretçi. Arabellek liste görünümü denetimi sütunların toplam sayı içerecek şekilde büyük olması gerekir.  
   
- `iCount`  
+ *iCount*  
  Liste Görünümü denetimi sütun sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3044,10 +3044,10 @@ BOOL SetColumnWidth(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCol`  
+ *nCol*  
  Genişliği ayarlanacak sütun dizini. Liste görünümünde, bu parametre 0 olmalıdır.  
   
- `cx`  
+ *CX*  
  Sütunun yeni genişliği. Ya da olabilir **LVSCW_AUTOSIZE** veya **LVSCW_AUTOSIZE_USEHEADER**açıklandığı gibi [LVM_SETCOLUMNWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb761163) Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3061,7 +3061,7 @@ DWORD SetExtendedStyle(DWORD dwNewStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwNewStyle`  
+ *dwNewStyle*  
  Liste Görünümü denetimi tarafından kullanılacak genişletilmiş stilleri birleşimi. Bu stiller açıklayıcı bir listesi için bkz [Genişletilmiş liste görünümü stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774732) konu Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3090,10 +3090,10 @@ int SetGroupInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iGroupId`  
+ *iGroupId*  
  Grubu, bilgileri Ayarla tanımlayıcısı.  
   
- `pgrp`  
+ *pgrp*  
  İşaretçi bir [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) ayarlamak için bilgileri içeren yapısı. Bu yapı ayırma ve üyeleri ayarlama çağıran sorumludur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3110,7 +3110,7 @@ void SetGroupMetrics(PLVGROUPMETRICS pGroupMetrics);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGroupMetrics`  
+ *pGroupMetrics*  
  Bir işaretçi bir [LVGROUPMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb774752) ayarlanacak Grup ölçümleri bilgilerini içeren yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3146,7 +3146,7 @@ int SetHotItem(int iIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iIndex`  
+ *İIndex*  
  Sık kullanılan öğe olarak ayarlanacak öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3190,13 +3190,13 @@ CSize SetIconSpacing(CSize size);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cx`  
+ *CX*  
  X ekseni üzerinde simgeler arasındaki uzaklığı (piksel cinsinden).  
   
- `cy`  
+ *CY*  
  Simgeler ve y arasındaki uzaklığı (piksel cinsinden).  
   
- `size`  
+ *Boyutu*  
  A `CSize` x - simgeleri ve y eksenleri uzaklığı (piksel cinsinden) belirtme nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3224,10 +3224,10 @@ CImageList* SetImageList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pImageList`  
+ *pImageList*  
  İşaretçi atamak için resim listesi.  
   
- `nImageListType`  
+ *nImageListType*  
  Resim listesi türü. Şu değerlerden biri olabilir:  
   
 - `LVSIL_NORMAL` Büyük simgelerle resim listesi.  
@@ -3267,7 +3267,7 @@ BOOL SetInsertMark(LPLVINSERTMARK lvim);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lvim`  
+ *lvim*  
  Bir işaretçi bir [LVINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb774758) yapısı noktasını yeri belirtme.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3284,7 +3284,7 @@ COLORREF SetInsertMarkColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `color`  
+ *Renk*  
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) yapısı ekleme noktasını ayarlamak için renk belirtme.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3324,47 +3324,47 @@ BOOL SetItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pItem`  
+ *pItem*  
  Adres bir [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) yeni öğe içeren yapısı öznitelikleri, Windows SDK'ın açıklandığı gibi. Yapısı **iItem** ve **iSubItem** üyelerini tanımlamak öğe veya alt ve yapısı **maskesi** üye ayarlamak için hangi özniteliklerin belirtir. Daha fazla bilgi için **maskesi** üyesi bkz **açıklamalar**.  
   
- `nItem`  
+ *nItem*  
  Ayarlanacak niteliklerini olan öğenin dizini.  
   
- `nSubItem`  
+ *nSubItem*  
  Ayarlanacak niteliklerini olan alt dizini.  
   
- `nMask`  
+ *nMask*  
  (Açıklamalar bakın) ayarlamak için hangi özniteliklerin belirtir.  
   
- `lpszItem`  
+ *lpszItem*  
  Öğenin etiketi belirten bir null ile sonlandırılmış dize adresidir.  
   
- `nImage`  
+ *nImage*  
  Resim listesi içinde öğesi'nin görüntü dizini.  
   
- `nState`  
+ *nDurum*  
  (Açıklamalar bakın) değiştirilecek durumlar için değerler belirtir.  
   
- `nStateMask`  
+ *nStateMask*  
  Hangi durumları (açıklamalar bakın) değiştirilmesi gerektiğini belirtir.  
   
- `lParam`  
+ *lParam*  
  Öğeyle ilişkilendirilecek bir 32 bit uygulamaya özgü değer.  
   
- `nIndent`  
- Girinti piksel cinsinden genişliği. Varsa `nIndent` küçük sistem tarafından tanımlanan en düşük genişliğinden, sistem tarafından tanımlanan en yeni genişliğini ayarlama  
+ *nIndent*  
+ Girinti piksel cinsinden genişliği. Varsa *nIndent* küçük sistem tarafından tanımlanan en düşük genişliğinden, sistem tarafından tanımlanan en yeni genişliğini ayarlama  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **İItem** ve **iSubItem** üyeleri **LVITEM** yapısı ve `nItem` ve `nSubItem` parametreleri öğesini tanımlamak ve özelliği subitem Ayarlanacak öznitelikleridir.  
+ **İItem** ve **iSubItem** üyeleri **LVITEM** yapısı ve *nItem* ve *nSubItem* öğe ve alt özniteliklerini ayarlanması üzeresiniz parametreleri belirleyin.  
   
- **Maskesi** üyesi **LVITEM** yapısı ve `nMask` parametresini hangi öğesinin öznitelikleridir ayarlanmalıdır:  
+ **Maskesi** üyesi **LVITEM** yapısı ve *nMask* parametresini hangi öğesinin öznitelikleridir ayarlanmalıdır:  
   
-- `LVIF_TEXT` **PszText** üye veya `lpszItem` parametresi null sonlandırılmış bir dize adresidir; **cchTextMax** üye göz ardı edilir.  
+- `LVIF_TEXT` **PszText** üye veya *lpszItem* parametresi null sonlandırılmış bir dize adresidir; **cchTextMax** üye göz ardı edilir.  
   
-- `LVIF_STATE` **StateMask** üye veya `nStateMask` parametresi belirtir değiştirmek için hangi öğesi durumları ve **durumu** üye veya `nState` parametresi bu durumlar için değerler içeriyor.  
+- `LVIF_STATE` **StateMask** üye veya *nStateMask* parametresi belirtir değiştirmek için hangi öğesi durumları ve **durumu** üye veya *nDurum* parametresi bu durumlar için değerler içeriyor.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CListCtrl::HitTest](#hittest).  
@@ -3377,7 +3377,7 @@ void SetItemCount(int nItems);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItems`  
+ *nItems*  
  Denetim sonuçta içerecek öğe sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3413,10 +3413,10 @@ BOOL SetItemCountEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iCount`  
+ *iCount*  
  Denetim sonuçta içerecek öğe sayısı.  
   
- `dwFlags`  
+ *dwFlags*  
  Öğe sayısı sıfırlama sonra liste görünümü denetimi davranışını belirtir. Bu değer aşağıdaki bileşimi olabilir:  
   
 - **LVSICF_NOINVALIDATEALL** etkilenen öğeleri şu anda görünümünde olmadıkça liste görünümü denetimi yeniden değil. Varsayılan değer budur.  
@@ -3451,17 +3451,17 @@ BOOL SetItemCountEx(
 
   
 ##  <a name="setitemdata"></a>  CListCtrl::SetItemData  
- Belirtilen öğe ile ilişkili 32-bit uygulamaya özgü değeri ayarlar `nItem`.  
+ Belirtilen öğe ile ilişkili 32-bit uygulamaya özgü değeri ayarlar *nItem*.  
   
 ```  
 BOOL SetItemData(int nItem, DWORD_PTR dwData);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Ayarlanacak veri olan liste öğesi dizini.  
   
- `dwData`  
+ *dwData*  
  Öğeyle ilişkilendirilecek bir 32 bit değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3496,17 +3496,17 @@ BOOL SetItemIndexState(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `pItemIndex`|İşaretçi bir [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) öğeyi tanımlayan yapısı. Bu yapı ayırma ve üyeleri ayarlama çağıran sorumludur.|  
-|[in] `dwState`|Öğe durumuna Bitsel bir birleşimi olan [liste görünümü öğesi durumları](http://msdn.microsoft.com/library/windows/desktop/bb774733). Sıfırlama sıfıra veya ayarlamak için bir durum belirtin.|  
-|[in] `dwMask`|Tarafından belirtilen durumunun geçerli bit maskesi `dwState` parametresi. Bit düzeyinde bileşimini (veya) belirtin [liste görünümü öğesi durumları](http://msdn.microsoft.com/library/windows/desktop/bb774733).|  
+|[in] *pItemIndex*|İşaretçi bir [LVITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774762) öğeyi tanımlayan yapısı. Bu yapı ayırma ve üyeleri ayarlama çağıran sorumludur.|  
+|[in] *dwState*|Öğe durumuna Bitsel bir birleşimi olan [liste görünümü öğesi durumları](http://msdn.microsoft.com/library/windows/desktop/bb774733). Sıfırlama sıfıra veya ayarlamak için bir durum belirtin.|  
+|[in] *dwMask*|Tarafından belirtilen durumunun geçerli bit maskesi *dwState* parametresi. Bit düzeyinde bileşimini (veya) belirtin [liste görünümü öğesi durumları](http://msdn.microsoft.com/library/windows/desktop/bb774733).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hakkında daha fazla bilgi için `dwState` parametresi bkz [liste görünümü öğesi durumları](http://msdn.microsoft.com/library/windows/desktop/bb774733).  
+ Hakkında daha fazla bilgi için *dwState* parametresi bkz [liste görünümü öğesi durumları](http://msdn.microsoft.com/library/windows/desktop/bb774733).  
   
- Hakkında daha fazla bilgi için `dwMask` parametresi bkz `stateMask` üyesi [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) yapısı.  
+ Hakkında daha fazla bilgi için *dwMask* parametresi bkz *stateMask* üyesi [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) yapısı.  
   
  Bu yöntem gönderir [LVM_SETITEMINDEXSTATE](http://msdn.microsoft.com/library/windows/desktop/bb761190) Windows SDK'ın açıklanan ileti.  
   
@@ -3520,10 +3520,10 @@ BOOL SetItemPosition(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Ayarlanacak olan konumdur öğenin dizini.  
   
- `pt`  
+ *PT*  
  A [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) görünümünde yeni konumunu belirten yapısı koordinatları, öğenin sol üst köşesindeki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3553,16 +3553,16 @@ BOOL SetItemState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Ayarlanacak durumu olan öğenin dizini.  
   
- `pItem`  
+ *pItem*  
  Adres bir [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) , Windows SDK'ın açıklandığı gibi yapılandırın. Yapısı **stateMask** üye belirtir hangi durum değişikliği ve yapısı BITS **durumu** üye bitlerinin için yeni değerleri içerir. Diğer üyeler göz ardı edilir.  
   
- `nState`  
+ *nDurum*  
  Durum bitleri için yeni değerleri. Olası değerler listesi için bkz: [CListCtrl::GetNextItem](#getnextitem) ve [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) durum üyesi.  
   
- `nMask`  
+ *nMask*  
  Hangi durumu değiştirmek için BITS belirtme maskesi. Bu değer stateMask üyesine karşılık gelen [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3585,13 +3585,13 @@ BOOL SetItemText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Ayarlanacak metni olan öğenin dizini.  
   
- `nSubItem`  
+ *nSubItem*  
  Öğe etiketi ayarlamak için dizini alt ya da sıfır.  
   
- `lpszText`  
+ *lpszText*  
  Yeni öğe metnini içeren bir dize işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3611,7 +3611,7 @@ COLORREF SetOutlineColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `color`  
+ *Renk*  
  Yeni [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) kenarlık rengi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3645,7 +3645,7 @@ int SetSelectionMark(int iIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iIndex`  
+ *İIndex*  
  Birden çok seçim ilk öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3665,7 +3665,7 @@ BOOL SetTextBkColor(COLORREF cr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cr`  
+ *CR*  
  A **COLORREF** yeni metin arka plan rengini belirleme. Bilgi için bkz: [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3690,7 +3690,7 @@ BOOL SetTextColor(COLORREF cr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cr`  
+ *CR*  
  A **COLORREF** yeni metin rengi belirtme. Bilgi için bkz: [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3733,7 +3733,7 @@ BOOL SetTileViewInfo(PLVTILEVIEWINFO ptvi);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ptvi`  
+ *ptvi*  
  Bir işaretçi bir [LVTILEVIEWINFO](http://msdn.microsoft.com/library/windows/desktop/bb774768) ayarlamak için bilgileri içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3750,7 +3750,7 @@ CToolTipCtrl* SetToolTips(CToolTipCtrl* pWndTip);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWndTip`  
+ *pWndTip*  
  Bir işaretçi bir `CToolTipCtrl` liste denetimi kullanacağı nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3788,10 +3788,10 @@ void SetWorkAreas(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nWorkAreas`  
- Sayısı `RECT` yapıları (veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesneler) gösterdiği dizideki `lpRect`.  
+ *nWorkAreas*  
+ Sayısı `RECT` yapıları (veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesneler) gösterdiği dizideki *lpRect*.  
   
- `lpRect`  
+ *lpRect*  
  Bir dizi adresini `RECT` yapıları (veya `CRect` nesneler) liste görünümü denetimi yeni çalışma alanlarını belirtin. Bu alanlar istemci koordinatları olarak belirtilmelidir. Bu parametre ise **NULL**, çalışma alanı denetiminin istemci alanına ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -3816,10 +3816,10 @@ BOOL SortGroups(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_pfnGroupCompare`  
+ *_pfnGroupCompare*  
  Grup karşılaştırma işlevi için bir işaretçi.  
   
- `_plv`  
+ *_plv*  
  Void bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3838,12 +3838,12 @@ BOOL SortItems(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pfnCompare`  
+ [in] *pfnCompare*  
  Uygulama tanımlı karşılaştırma işlevi adresidir.  
   
  Sıralama işlemi iki liste öğeleri göreli sıralamasını belirlenmesi için gereken her zaman karşılaştırma işlevi çağırır. Karşılaştırma işlevi, bir sınıfın statik üyesi veya herhangi bir sınıf üyesi olmayan tek başına bir işlev olmalıdır.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Karşılaştırma işlevine geçirilen uygulama tanımlı değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -3852,7 +3852,7 @@ BOOL SortItems(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yeni sırası yansıtmak için her öğenin dizini değiştirir.  
   
- Karşılaştırma işlevi `pfnCompare`, aşağıdaki biçime sahiptir:  
+ Karşılaştırma işlevinden *pfnCompare*, aşağıdaki biçime sahiptir:  
   
 ```  
 int CALLBACK CompareFunc(LPARAM lParam1,
@@ -3861,12 +3861,12 @@ int CALLBACK CompareFunc(LPARAM lParam1,
 ```  
 İlk öğeyi ikinci gelmelidir varsa karşılaştırma işlevi negatif bir değer döndürmesi gerekir, bu iki öğeyi ilk öğeyi ikinci ya da sıfır izlerseniz, pozitif bir değer eşit olur.  
   
- `lParam1` Parametresi karşılaştırılır, ilk öğe ile ilişkilendirilen 32-bit değerdir ve `lParam2` parametresi, ikinci öğeyle ilişkili değerdir. Bunlar belirtilen değerlerdir `lParam` öğeleri üyesi [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) yapısı listeye eklenen olduğunda. `lParamSort` Parametredir aynı `dwData` değeri.  
+ *LParam1* parametresi karşılaştırılır, ilk öğe ile ilişkilendirilen 32-bit değerdir ve *lParam2* parametredir ikinci öğeyle ilişkili değer. Bunlar belirtilen değerlerdir *lParam* öğeleri üyesi [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) yapısı listeye eklenen olduğunda. *LParamSort* parametredir aynı *dwData* değeri.  
   
  Bu yöntem gönderir [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227) Windows SDK'ın açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki öğeler tarafından sıralanan sonuçlanan bir basit karşılaştırma işlevdir kendi `lParam` değerleri.  
+ Aşağıdaki öğeler tarafından sıralanan sonuçlanan bir basit karşılaştırma işlevdir kendi *lParam* değerleri.  
   
 ```cpp  
 // Sort items by associated lParam
@@ -3899,8 +3899,8 @@ BOOL SortItemsEx(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `pfnCompare`|Uygulama tanımlı karşılaştırma işlevi adresidir.<br /><br /> Sıralama işlemi iki liste öğeleri göreli sıralamasını belirlenmesi için gereken her zaman karşılaştırma işlevi çağırır. Karşılaştırma işlevi, bir sınıfın statik üyesi veya herhangi bir sınıf üyesi olmayan tek başına bir işlev olmalıdır.|  
-|[in] `dwData`|Uygulama tanımlı bir değer karşılaştırma işlevine geçirildi.|  
+|[in] *pfnCompare*|Uygulama tanımlı karşılaştırma işlevi adresidir.<br /><br /> Sıralama işlemi iki liste öğeleri göreli sıralamasını belirlenmesi için gereken her zaman karşılaştırma işlevi çağırır. Karşılaştırma işlevi, bir sınıfın statik üyesi veya herhangi bir sınıf üyesi olmayan tek başına bir işlev olmalıdır.|  
+|[in] *dwData*|Uygulama tanımlı bir değer karşılaştırma işlevine geçirildi.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
@@ -3908,14 +3908,14 @@ BOOL SortItemsEx(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yeni sırası yansıtmak için her öğenin dizini değiştirir.  
   
- Karşılaştırma işlevi `pfnCompare`, aşağıdaki biçime sahiptir:  
+ Karşılaştırma işlevinden *pfnCompare*, aşağıdaki biçime sahiptir:  
   
 ```  
 int CALLBACK CompareFunc(LPARAM lParam1,
     LPARAM lParam2,
     LPARAM lParamSort);
 ```  
-Bu ileti benzer [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227), bilgi türünü hariç karşılaştırma işlevine geçirilen. İçinde [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227), `lParam1` ve `lParam2` karşılaştırmak için öğelerinin değerlerdir. İçinde [LVM_SORTITEMSEX](http://msdn.microsoft.com/library/windows/desktop/bb761228), `lParam1` karşılaştırmak için ilk öğenin geçerli dizin olduğu ve `lParam2` geçerli ikinci öğe dizinidir. Gönderebileceğiniz bir [LVM_GETITEMTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761055) bir öğe hakkında daha fazla bilgi almak için ileti.  
+Bu ileti benzer [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227), bilgi türünü hariç karşılaştırma işlevine geçirilen. İçinde [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227), *lParam1* ve *lParam2* Karşılaştırılacak öğelerinin değerlerdir. İçinde [LVM_SORTITEMSEX](http://msdn.microsoft.com/library/windows/desktop/bb761228), *lParam1* karşılaştırmak için ilk öğenin geçerli dizin olduğu ve *lParam2* geçerli ikinci öğe dizinidir. Gönderebileceğiniz bir [LVM_GETITEMTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761055) bir öğe hakkında daha fazla bilgi almak için ileti.  
   
  İlk öğeyi ikinci gelmelidir varsa karşılaştırma işlevi negatif bir değer döndürmesi gerekir, bu iki öğeyi ilk öğeyi ikinci ya da sıfır izlerseniz, pozitif bir değer eşit olur.  
   
@@ -3977,7 +3977,7 @@ int SubItemHitTest(LPLVHITTESTINFO pInfo);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pInfo`  
+ *pInfo*  
  Bir işaretçi [LVHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb774754) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -4008,14 +4008,14 @@ LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
 
   
 ##  <a name="update"></a>  CListCtrl::Update  
- Liste Görünümü denetimi tarafından belirtilen öğeyi çizilecek zorlar `nItem`.  
+ Liste Görünümü denetimi tarafından belirtilen öğeyi çizilecek zorlar *nItem*.  
   
 ```  
 BOOL Update(int nItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nItem`  
+ *nItem*  
  Güncelleştirilecek öğenin dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

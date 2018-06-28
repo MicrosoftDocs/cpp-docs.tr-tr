@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c58469086089dafe2447446723e06d6aa20a845c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1788e5f3938cc496e66aa24d6d1b6a37603e7d7b
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369758"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039953"
 ---
 # <a name="cmousemanager-class"></a>CMouseManager sınıfı
 Farklı komutlar belirli bir ile ilişkilendirilecek bir kullanıcının [CView](../../mfc/reference/cview-class.md) kullanıcı bu görünüm içinde tıklattığında nesne.  
@@ -64,7 +64,7 @@ class CMouseManager : public CObject
 |[CMouseManager::SetCommandForDblClk](#setcommandfordblclk)|Sağlanan komut ve sağlanan görünüm ilişkilendirir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CMouseManager` Sınıfı tutar koleksiyonu `CView` nesneleri. Her görünüm adını ve kimlik tarafından tanımlanan Bu görünümler gösterilir **özelleştirme** iletişim kutusu. Kullanıcının herhangi bir görünüm ile ilişkilendirilen komutu değiştirebilirsiniz **özelleştirme** iletişim kutusu. Kullanıcı Bu görünümde tıklattığında ilişkili komutu yürütülür. Bu kodlama açısından desteklemek için işlemelidir `WM_LBUTTONDBLCLK` ileti ve çağrı [CWinAppEx::OnViewDoubleClick](../../mfc/reference/cwinappex-class.md#onviewdoubleclick) kodu işlevinde `CView` nesne...  
+ `CMouseManager` Sınıfı tutar koleksiyonu `CView` nesneleri. Her görünüm adını ve kimlik tarafından tanımlanan Bu görünümler gösterilir **özelleştirme** iletişim kutusu. Kullanıcının herhangi bir görünüm ile ilişkilendirilen komutu değiştirebilirsiniz **özelleştirme** iletişim kutusu. Kullanıcı Bu görünümde tıklattığında ilişkili komutu yürütülür. Bu kodlama açısından desteklemek için WM_LBUTTONDBLCLK ileti ve çağrı işlem [CWinAppEx::OnViewDoubleClick](../../mfc/reference/cwinappex-class.md#onviewdoubleclick) kodu işlevinde `CView` nesne...  
   
  Değil oluşturmalısınız bir `CMouseManager` el ile nesne. Uygulamanızı çerçevesi tarafından oluşturulur. Kullanıcı uygulamayı çıktığında otomatik olarak da yok olacaktır. Uygulamanız için fare Yöneticisi bir işaretçi almak için arama [CWinAppEx::GetMouseManager](../../mfc/reference/cwinappex-class.md#getmousemanager).  
   
@@ -93,19 +93,19 @@ BOOL AddView(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iViewId`  
+ [in] *iViewId*  
  Bir görünüm kimliği  
   
- [in] `uiViewNameResId`  
+ [in] *uiViewNameResId*  
  Görünüm adı başvuruda bulunan bir kaynak dize kimliği.  
   
- [in] `uiIconId`  
+ [in] *uiIconId*  
  Bir görünümü simgesi kimliği  
   
- [in] `iId`  
+ [in] *IID*  
  Bir görünüm kimliği  
   
- [in] `lpszViewName`  
+ [in] *lpszViewName*  
  Bir görünüm adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -114,7 +114,7 @@ BOOL AddView(
 ### <a name="remarks"></a>Açıklamalar  
  Özel fare davranışı desteklemek için bir görünümü ile kayıtlı olması gerekir `CMouseManager` nesnesi. Herhangi bir nesne türetilmiş `CView` sınıfı fare Yöneticisi ile kaydedilebilir. Dize ve görünüm ile ilişkilendirilen simgesi görüntülenir **fare** sekmesinde **Özelleştir** iletişim kutusu.  
   
- Oluşturmak ve görünüm kimlikleri gibi korumak için programcı sorumluluğundadır `iViewId` ve `iId`.  
+ Oluşturmak ve görünüm kimlikleri gibi korumak için programcı sorumluluğundadır *iViewId* ve *IID*.  
   
  Özel fare davranışı sağlamak nasıl hakkında daha fazla bilgi için bkz: [klavye ve fare özelleştirmesi](../../mfc/keyboard-and-mouse-customization.md).  
   
@@ -131,7 +131,7 @@ UINT GetViewDblClickCommand(int iId) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iId`  
+ [in] *IID*  
  Görünüm kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -145,7 +145,7 @@ UINT GetViewIconId(int iViewId) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iViewId`  
+ [in] *iViewId*  
  Görünüm kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -162,7 +162,7 @@ int GetViewIdByName(LPCTSTR lpszName) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszName`  
+ [in] *lpszName*  
  Görünüm adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -179,7 +179,7 @@ void GetViewNames(CStringList& listOfNames) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `listOfNames`  
+ [out] *listOfNames*  
  Bir başvuru `CStringList` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -193,14 +193,14 @@ BOOL LoadState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Bir kayıt defteri anahtarı yolu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kayıt defterinden yüklenen durum bilgilerini kayıtlı görünümleri, tanımlayıcılarını görüntüle ve ilişkili komutları içerir. Varsa parametresi `lpszProfileName` olan `NULL`, bu işlev yükler `CMouseManager` tarafından denetlenen varsayılan kayıt defteri konumu verilerden [CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md).  
+ Kayıt defterinden yüklenen durum bilgilerini kayıtlı görünümleri, tanımlayıcılarını görüntüle ve ilişkili komutları içerir. Varsa parametresi *lpszProfileName* olan `NULL`, bu işlev yükler `CMouseManager` tarafından denetlenen varsayılan kayıt defteri konumu verilerden [CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md).  
   
  Çoğu durumda, bu işlev doğrudan çağırmanız gerekmez. Çalışma alanı başlatma işleminin bir parçası olarak adlandırılır. Çalışma alanı başlatma işlemi hakkında daha fazla bilgi için bkz: [CWinAppEx::LoadState](../../mfc/reference/cwinappex-class.md#loadstate).  
   
@@ -212,14 +212,14 @@ BOOL SaveState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Bir kayıt defteri anahtarı yolu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tüm kayıtlı görünümleri, tanımlayıcılarını görüntüle ve ilişkili komutları kayıt defterine yazılır durum bilgilerini içerir. Varsa parametresi `lpszProfileName` olan `NULL`, bu işlev Yazar `CMouseManager` tarafından denetlenen varsayılan kayıt defteri konumu için veri [CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md).  
+ Tüm kayıtlı görünümleri, tanımlayıcılarını görüntüle ve ilişkili komutları kayıt defterine yazılır durum bilgilerini içerir. Varsa parametresi *lpszProfileName* olan `NULL`, bu işlev Yazar `CMouseManager` tarafından denetlenen varsayılan kayıt defteri konumu için veri [CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md).  
   
  Çoğu durumda, bu işlev doğrudan çağırmanız gerekmez. Çalışma alanı serileştirme işleminin bir parçası olarak adlandırılır. Çalışma alanı seri hale getirme işlemi hakkında daha fazla bilgi için bkz: [CWinAppEx::SaveState](../../mfc/reference/cwinappex-class.md#savestate).  
   
@@ -233,16 +233,16 @@ void SetCommandForDblClk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iViewId`  
+ [in] *iViewId*  
  Görünüm tanımlayıcısı.  
   
- [in] `uiCmd`  
+ [in] *uiCmd*  
  Komut tanımlayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Özel bir komut bir görünümü ile ilişkilendirmek için önce görünümü kullanarak kaydetmeniz gerekir [CMouseManager::AddView](#addview). `AddView` Yöntemi, bir görünüm tanımlayıcı bir giriş parametresi olarak gerektirir. Bir görünüm kaydettiğinizde çağırabilirsiniz `CMouseManager::SetCommandForDblClk` için sağlanan aynı görünüm tanımlayıcı giriş parametresi ile `AddView`. Bundan sonra kullanıcı kayıtlı görünümünde fare tıklattığında uygulama belirtildiği komutu yürütecek `uiCmd.` özel fare davranışı desteklemek için de fare Yöneticisi ile kayıtlı görünümünü özelleştirmek gerekir. Özel fare davranışı hakkında daha fazla bilgi için bkz: [klavye ve fare özelleştirmesi](../keyboard-and-mouse-customization.md).  
+ Özel bir komut bir görünümü ile ilişkilendirmek için önce görünümü kullanarak kaydetmeniz gerekir [CMouseManager::AddView](#addview). `AddView` Yöntemi, bir görünüm tanımlayıcı bir giriş parametresi olarak gerektirir. Bir görünüm kaydettiğinizde çağırabilirsiniz `CMouseManager::SetCommandForDblClk` için sağlanan aynı görünüm tanımlayıcı giriş parametresi ile `AddView`. Bundan sonra kullanıcı kayıtlı görünümünde fare tıklattığında uygulama belirtildiği komutu yürütecek *uiCmd.* Özel fare davranışı desteklemek için fare Yöneticisi ile kayıtlı görünümünü özelleştirmek gerekir. Özel fare davranışı hakkında daha fazla bilgi için bkz: [klavye ve fare özelleştirmesi](../keyboard-and-mouse-customization.md).  
   
- Varsa `uiCmd` ayarlanmış 0 olarak belirtilen görünüm artık bir komutla ilişkili değil.  
+ Varsa *uiCmd* ayarlanmış 0 olarak belirtilen görünüm artık bir komutla ilişkili değil.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

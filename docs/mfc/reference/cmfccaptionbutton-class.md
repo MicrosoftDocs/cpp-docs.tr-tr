@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec36bfc82064272e165ea274cd127cc626731643
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: df36f8a6af5d8ad7e2a96780e02f236e3225333d
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368783"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040635"
 ---
 # <a name="cmfccaptionbutton-class"></a>CMFCCaptionButton sınıfı
 `CMFCCaptionButton` Sınıfı bir takma bölmesi veya bir kısa çerçeve penceresi başlık çubuğunda görüntülenen bir düğme uygular. Genellikle, framework resim yazısı düğmeleri otomatik olarak oluşturur.  
@@ -106,13 +106,13 @@ CMFCCaptionButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nHit`  
+ [in] *nHit*  
  İlişkili düğme komutu.  
   
- [in] `bLeftAlign`  
+ [in] *bLeftAlign*  
  Düğme sola hizalı olup olmadığını belirtir.  
   
- İçin olası değerler aşağıdaki tabloda listelenmektedir `nHit` parametresi.  
+ İçin olası değerler aşağıdaki tabloda listelenmektedir *nHit* parametresi.  
   
 |Değer|Komut|  
 |-----------|-------------|  
@@ -161,10 +161,10 @@ virtual CMenuImages::IMAGES_IDS GetIconID(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bHorz`  
+ [in] *bHorz*  
  `TRUE` Sol veya sağ ok resim kimlikleri için; `FALSE` için yukarı veya aşağı ok resim kimlikleri.  
   
- [in] `bMaximized`  
+ [in] *bMaximized*  
  `TRUE` Ekranı Kapla görüntü kimliği için; `FALSE` kimliği için bir simge durumuna küçült görüntü  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -221,10 +221,10 @@ void Move(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `ptTo`  
+ [in] *ptTo*  
  Yeni konumu.  
   
- [in] `bHide`  
+ [in] *bHide*  
  Düğme görüntülenip görüntülenmeyeceğini belirtir.  
   
 ##  <a name="ondraw"></a>  CMFCCaptionButton::OnDraw  
@@ -240,23 +240,23 @@ virtual void OnDraw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Düğme için cihaz bağlamı işaretçi.  
   
- [in] `bActive`  
+ [in] *bActive*  
  Etkin düğmeye resim çizme görüntülenmeyeceğini belirtir.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  Bir türetilmiş sınıfta kullanılmak üzere ayrılmıştır.  
   
- [in] `bMaximized`  
+ [in] *bMaximized*  
  Tam ekran düğmesi resim çizme görüntülenmeyeceğini belirtir.  
   
- [in] `bDisabled`  
+ [in] *bDevre Dışı*  
  Etkin düğmesi resim çizme görüntülenmeyeceğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `bMaximized` Parametresi Simge Durumuna Küçült düğmesi veya bir Ekranı Kapla düğmesi olduğunda kullanılır.  
+ *BMaximized* parametresi Simge Durumuna Küçült düğmesi veya bir Ekranı Kapla düğmesi olduğunda kullanılır.  
   
 ##  <a name="setminiframebutton"></a>  CMFCCaptionButton::SetMiniFrameButton  
  Başlık çubuğu mini boyutunu ayarlar.  
@@ -266,7 +266,7 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bSet`  
+ [in] *bInternet*  
  `TRUE` Mini başlık çubuğu yüksekliği için; `FALSE` varsayılan başlık çubuğu yükseklik.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

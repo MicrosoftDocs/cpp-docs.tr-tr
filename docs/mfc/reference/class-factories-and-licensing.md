@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b311d81e5e9becab2bf0ab88d30321019e5da95d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e8f411aeb88a2d76265c6e8c277b367cb1ebce57
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367080"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37038244"
 ---
 # <a name="class-factories-and-licensing"></a>Sınıf Oluşturucular ve Lisanslama
 OLE denetim örneği oluşturmak için bir kapsayıcı uygulama denetimin sınıf Factory üye işlevi çağırır. Denetim gerçek bir OLE nesne olduğundan, denetiminizi örneklerini oluşturmak için üreteci sorumludur. Her OLE denetim sınıfı bir üreteci olması gerekir.  
@@ -140,23 +140,23 @@ BOOL AFXAPI AfxVerifyLicFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hInstance`  
+ *HINSTANCE*  
  Lisanslı denetimi ile ilişkilendirilmiş DLL örneği tanıtıcısı.  
   
- `pszLicFileName`  
+ *pszLicFileName*  
  Lisans filename içeren bir null olarak sonlandırılan bir karakter dizesi noktalarına.  
   
- `pszLicFileContents`  
+ *pszLicFileContents*  
  Lisans dosyasının başında bulunan sırası eşleşmelidir bir bayt dizisine noktaları.  
   
- `cch`  
- Karakter sayısını `pszLicFileContents`.  
+ *cch*  
+ Karakter sayısını *pszLicFileContents*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Lisans dosyası varsa ve karakter dizisi ile başlayan sıfır olmayan `pszLicFileContents`; Aksi halde 0.  
+ Lisans dosyası varsa ve karakter dizisi ile başlayan sıfır olmayan *pszLicFileContents*; Aksi halde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `cch` -1 ' dir bu işlev kullanır:  
+ Varsa *cch* -1 ' dir bu işlev kullanır:  
   
  [!code-cpp[NVC_MFC_Utilities#36](../../mfc/codesnippet/cpp/class-factories-and-licensing_2.cpp)]  
 

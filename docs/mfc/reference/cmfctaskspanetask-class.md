@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4008389121a1a78ca746798af7f3fc18c9663b93
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c16644a90bb349a78cac43867fdc648e9c01223d
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371338"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040707"
 ---
 # <a name="cmfctaskspanetask-class"></a>CMFCTasksPaneTask sınıfı
 `CMFCTasksPaneTask` Sınıftır görev bölmesi denetimi için görevleri temsil eden bir yardımcı sınıfı ( [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md)). Görev nesnesini görev grubundaki bir öğeyi temsil eder ( [CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md)). Her görev, bir kullanıcı görev ve görev adı solunda görüntülenen simge tıkladığında framework yürüten bir komutu olabilir.  
@@ -118,28 +118,28 @@ CMFCTasksPaneTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGroup`  
+ *pGroup*  
  Belirtir [CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md) görevin ait olduğu.  
   
- `lpszName`  
+ *lpszName*  
  Görev adını belirtir.  
   
- `nIcon`  
+ *nIcon*  
  Görüntü listesinde görevin görüntünün dizinini belirtir.  
   
- `uiCommandID`  
+ *uiCommandID*  
  Görev tıklatıldığında çalıştırılan komut komut Kimliğini belirtir.  
   
- `dwUserData`  
+ *dwUserData*  
  Kullanıcı tanımlı veri.  
   
- `hwndTask`  
+ *hwndTask*  
  Görev penceresi tanıtıcısını belirtir.  
   
- `bAutoDestroyWindow`  
+ *bAutoDestroyWindow*  
  Varsa `TRUE`, görev penceresi otomatik olarak yok.  
   
- `nWindowHeight`  
+ *nWindowHeight*  
  Görev penceresinin yüksekliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -252,14 +252,14 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParent`  
+ [in] *pParent*  
  Geçerli görevin üst pencere temsil eder.  
   
- [out] `data`  
+ [out] *veri*  
  Türünde bir nesne `CAccessibilityData` geçerli görev erişilebilirlik verilerle doldurulur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` varsa `data` parametresi başarıyla geçerli görevin erişilebilirlik verilerle doldurulan; Aksi takdirde `FALSE`.  
+ `TRUE` varsa *veri* parametresi başarıyla geçerli görevin erişilebilirlik verilerle doldurulan; Aksi takdirde `FALSE`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

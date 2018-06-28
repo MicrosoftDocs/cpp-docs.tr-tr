@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae6e6d826f4bc1e8c9ab6cc28686e4ad1e6e3b02
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fe3499cdd8f9a9a1cfb91a45e9f039e1b8be2e76
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379269"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039095"
 ---
 # <a name="msbuild-visual-c-overview"></a>MSBuild (Visual C++) Genel Bakış  
   
@@ -139,7 +139,10 @@ Aşağıdaki tabloda, çeşitli yararlı kullanıcı odaklı hedefleri listeler.
 |Yeniden oluşturma|Temizler ve projenizi oluşturur.|  
 |ResourceCompile|Microsoft Windows Kaynak Derleyicisi aracı yürütür rc.exe.|  
 |XdcMake|XML belgeleri aracı yürütür xdcmake.exe.|  
-|XSD|XML şema tanımı aracı yürütür XSD.exe'nin.|  
+|XSD|XML şema tanımı aracı yürütür XSD.exe'nin. *Aşağıdaki nota bakın.*|  
+
+> [!NOTE] 
+> Visual Studio 2017 içinde C++ projesi için destek **xsd** dosyaları kullanım dışıdır. Kullanmaya devam edebilirsiniz **Microsoft.VisualC.CppCodeProvider** ekleyerek **CppCodeProvider.dll** GAC için el ile.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
   

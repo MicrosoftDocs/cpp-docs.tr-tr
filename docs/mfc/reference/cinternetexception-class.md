@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6908b72f30b3a2561f7091b912e8144f2b763cc4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6db83d88eec06ce21258ed751c5e1b232f696836
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366902"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037895"
 ---
 # <a name="cinternetexception-class"></a>CInternetException sınıfı
 Bir Internet işlemle ilişkili bir özel durumu temsil eder.  
@@ -76,7 +76,7 @@ CInternetException(DWORD dwError);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwError`  
+ *dwError*  
  Özel duruma neden hata.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -90,7 +90,7 @@ DWORD_PTR m_dwContext;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bağlam tanıtıcısı başlangıçta belirtilen [CInternetSession](../../mfc/reference/cinternetsession-class.md) ve MFC'ye tarafından geçirilen [CInternetConnection](../../mfc/reference/cinternetconnection-class.md)- ve [CInternetFile](../../mfc/reference/cinternetfile-class.md)-türetilmiş sınıfları. Bu varsayılanı geçersiz kılabilir ve herhangi bir Ata `dwContext` parametresi seçtiğiniz bir değer. `dwContext` verilen nesnenin herhangi bir işlem ile ilişkilidir. `dwContext` işlem durumu bilgileri tarafından döndürülen tanımlayan [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback).  
+ Bağlam tanıtıcısı başlangıçta belirtilen [CInternetSession](../../mfc/reference/cinternetsession-class.md) ve MFC'ye tarafından geçirilen [CInternetConnection](../../mfc/reference/cinternetconnection-class.md)- ve [CInternetFile](../../mfc/reference/cinternetfile-class.md)-türetilmiş sınıfları. Bu varsayılanı geçersiz kılabilir ve herhangi bir Ata *dwContext* parametresi seçtiğiniz bir değer. *dwContext* verilen nesnenin herhangi bir işlem ile ilişkilidir. *dwContext* tarafından döndürülen işlem durumu bilgileri tanımlayan [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback).  
   
 ##  <a name="m_dwerror"></a>  CInternetException::m_dwError  
  Özel duruma neden hata.  

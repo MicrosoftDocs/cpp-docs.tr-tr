@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 496c6905276e789a72c55db1835187b0d4ab342a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2b18eef5b828577f6d77846a5e9e231dcf828332
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369157"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040733"
 ---
 # <a name="cmfcbasevisualmanager-class"></a>CMFCBaseVisualManager sınıfı
 Türetilen visual yöneticileri ve Windows tema API arasındaki katman.  
@@ -136,31 +136,31 @@ virtual BOOL DrawCheckBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir işaretçi bir cihaz bağlamı  
   
- [in] `rect`  
+ [in] *rect*  
  Onay kutusu sınırlayıcı dikdörtgenini.  
   
- [in] `bHighlighted`  
+ [in] *bHighlighted*  
  Onay kutusu vurgulanmış olup olmadığını belirtir.  
   
- [in] `nState`  
+ [in] *nDurum*  
  0 işaretlenmemişse 1 checked normal için  
   
  karma normal için 2.  
   
- [in] `bEnabled`  
+ [in] *bEtkin*  
  Onay kutusu etkinleştirilip etkinleştirilmeyeceğini belirtir.  
   
- [in] `bPressed`  
+ [in] *bPressed*  
  Onay kutusu basılı olup olmadığını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` Tema API etkinleştirilirse; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Değerlerini `nState` aşağıdaki onay kutusu stilleri karşılık gelir.  
+ Değerlerini *nDurum* aşağıdaki onay kutusu stilleri karşılık gelir.  
   
 |nDurum|Onay kutusu stili|  
 |------------|---------------------|  
@@ -181,19 +181,19 @@ virtual BOOL DrawComboBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Birleşik giriş kutusu kenarlığı sınırlayıcı dikdörtgenini.  
   
- [in] `bDisabled`  
+ [in] *bDevre Dışı*  
  Birleşik giriş kutusu kenarlığı etkinleştirilip etkinleştirilmeyeceğini belirtir.  
   
- [in] `bIsDropped`  
+ [in] *bIsDropped*  
  Birleşik giriş kutusu kenarlığı açılmış olup olmadığını belirtir.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  Birleşik giriş kutusu kenarlığı vurgulanmış olup olmadığını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -215,11 +215,11 @@ virtual BOOL DrawComboDropButton(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `pDC`|Bir cihaz bağlamı için bir işaretçi.|  
-|[in] `rect`|Birleşik giriş kutusu açılan düğmesine sınırlayıcı dikdörtgenini.|  
-|[in] `bDisabled`|Birleşik giriş kutusu açılan düğmesi devre dışı olup olmadığını belirtir.|  
-|[in] `bIsDropped`|Birleşik giriş kutusu açılan düğmesine açılmış olup olmadığını belirtir.|  
-|[in] `bIsHighlighted`|Birleşik giriş kutusu açılan düğmesi vurgulanmış olup olmadığını belirtir.|  
+|[in] *pDC*|Bir cihaz bağlamı için bir işaretçi.|  
+|[in] *rect*|Birleşik giriş kutusu açılan düğmesine sınırlayıcı dikdörtgenini.|  
+|[in] *bDevre Dışı*|Birleşik giriş kutusu açılan düğmesi devre dışı olup olmadığını belirtir.|  
+|[in] *bIsDropped*|Birleşik giriş kutusu açılan düğmesine açılmış olup olmadığını belirtir.|  
+|[in] *bIsHighlighted*|Birleşik giriş kutusu açılan düğmesi vurgulanmış olup olmadığını belirtir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` Tema API etkinleştirilirse; Aksi takdirde `FALSE`.  
@@ -236,17 +236,17 @@ virtual BOOL DrawPushButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Düğme sınırlayıcı dikdörtgenini.  
   
- [in] `pButton`  
+ [in] *pButton*  
  Bir işaretçi [CMFCButton sınıfı](../../mfc/reference/cmfcbutton-class.md) çizmek için nesne.  
   
- [in] `uiState`  
- Yoksayıldı. Durum alınırlar `pButton`.  
+ [in] *uiState*  
+ Yoksayıldı. Durum alınırlar *pButton*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `TRUE` Tema API etkinleştirilirse; Aksi takdirde `FALSE`.  
@@ -265,22 +265,22 @@ virtual BOOL DrawRadioButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rect`  
+ [in] *rect*  
  Radyo düğmesi sınırlayıcı dikdörtgenini.  
   
- [in] `bHighlighted`  
+ [in] *bHighlighted*  
  Radyo düğmesi vurgulanmış olup olmadığını belirtir.  
   
- [in] `bChecked`  
+ [in] *bChecked*  
  Radyo düğmesi işaretli olup olmadığını belirtir.  
   
- [in] `bEnabled`  
+ [in] *bEtkin*  
  Radyo düğmesi etkin olup olmadığını belirtir.  
   
- [in] `bPressed`  
+ [in] *bPressed*  
  Radyo düğmesini basılı olup olmadığını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -303,31 +303,31 @@ virtual BOOL DrawStatusBarProgress(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pStatusBar`  
+ [in] *pStatusBar*  
  Durum çubuğu için bir işaretçi. Bu değer yoksayılır.  
   
- [in] `rectProgress`  
- İlerleme çubuğu'nun sınırlayıcı dikdörtgenini `pDC` koordinatları.  
+ [in] *rectProgress*  
+ İlerleme çubuğu'nun sınırlayıcı dikdörtgenini *pDC* koordinatları.  
   
- [in] `nProgressTotal`  
+ [in] *nProgressTotal*  
  Toplam devam eden değer.  
   
- [in] `nProgressCurr`  
+ [in] *nProgressCurr*  
  Geçerli ilerleme değeri.  
   
- [in] `clrBar`  
+ [in] *clrBar*  
  Başlangıç rengi. `CMFCBaseVisualManager` Bu yok sayar. Türetilen sınıflar için renk gradyan kullanabilirsiniz.  
   
- [in] `clrProgressBarDest`  
+ [in] *clrProgressBarDest*  
  Bitiş rengi. `CMFCBaseVisualManager` Bu yok sayar. Türetilen sınıflar için renk gradyan kullanabilirsiniz.  
   
- [in] `clrProgressText`  
+ [in] *clrProgressText*  
  İlerleme metin rengi. `CMFCBaseVisualManager` Bu yok sayar. Metin rengi tarafından tanımlanan `afxGlobalData.clrBtnText`.  
   
- [in] `bProgressText`  
+ [in] *bProgressText*  
  İlerleme metni görüntülenip görüntülenmeyeceğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -344,13 +344,13 @@ virtual void FillReBarPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `pBar`  
+ [in] *pBar*  
  Bir bölme arka planının çizilmesi gerektiğini gösteren bir işaretçi.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  Doldurulacak alan sınırlayıcı dikdörtgenini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

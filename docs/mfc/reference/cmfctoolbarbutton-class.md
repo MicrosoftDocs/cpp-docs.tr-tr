@@ -170,12 +170,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c0827bea8669743f8e0512ce2c6b1f82d978c46
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 60c23c7b503610ef9ffea290bfb48c6e9a6e4d09
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378845"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042348"
 ---
 # <a name="cmfctoolbarbutton-class"></a>CMFCToolBarButton sınıfı
 Araç çubuğu düğmesi işlevsellik sağlar.  
@@ -239,8 +239,8 @@ class CMFCToolBarButton : public CObject
 |[CMFCToolBarButton::OnChangeParentWnd](#onchangeparentwnd)|Yeni bir araç çubuğu düğmesi takıldığında çerçevesi tarafından çağrılır.|  
 |[CMFCToolBarButton::OnClick](#onclick)|Kullanıcının fare düğmesini tıklattığında çerçevesi tarafından çağrılır.|  
 |[CMFCToolBarButton::OnClickUp](#onclickup)|Kullanıcının fare düğmesini bıraktığında çerçevesi tarafından çağrılır.|  
-|[CMFCToolBarButton::OnContextHelp](#oncontexthelp)|Üst araç işlediğinde çerçevesi tarafından çağrılır bir `WM_HELPHITTEST` ileti.|  
-|[CMFCToolBarButton::OnCtlColor](#onctlcolor)|Üst araç işlediğinde çerçevesi tarafından çağrılır bir `WM_CTLCOLOR` ileti.|  
+|[CMFCToolBarButton::OnContextHelp](#oncontexthelp)|Üst araç WM_HELPHITTEST ileti işlediğinde çerçevesi tarafından çağrılır.|  
+|[CMFCToolBarButton::OnCtlColor](#onctlcolor)|Üst araç WM_CTLCOLOR iletisi işlediğinde çerçevesi tarafından çağrılır.|  
 |[CMFCToolBarButton::OnCustomizeMenu](#oncustomizemenu)|Uygulamanın bir kısayol menüsü üst araç çubuğunda görüntülediğinde sağlanan menü değiştirmek düğmesi sağlar.|  
 |[CMFCToolBarButton::OnDblClk](#ondblclk)|Üst araç işlediğinde çerçevesi tarafından çağrılır bir [WM_LBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms645606) ileti.|  
 |[CMFCToolBarButton::OnDraw](#ondraw)|Belirtilen stilleri ve seçenekleri kullanarak düğmesi çizmek için framework tarafından çağrılır.|  
@@ -289,7 +289,7 @@ class CMFCToolBarButton : public CObject
   
  `CMFCToolBarButton` Genel Koleksiyonlar araç görüntülerinin görüntülerden uygulamada görüntüleme nesneleri. Bu koleksiyonları üst araç tarafından korunur [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md). Daha fazla bilgi için bkz: [CMFCToolBarImages sınıfı](../../mfc/reference/cmfctoolbarimages-class.md).  
   
- Kullanıcı bir araç çubuğu düğmesini tıklattığında, kendi üst araç fare iletisini işler ve uygun eylemleri düğmesine iletişim kurar. Üst araç çubuğu düğmesi geçerli komut kimliği varsa, gönderir `WM_COMMAND` üst çerçeveye ileti.  
+ Kullanıcı bir araç çubuğu düğmesini tıklattığında, kendi üst araç fare iletisini işler ve uygun eylemleri düğmesine iletişim kurar. Düğmesi geçerli komut kimliği varsa, üst araç üst çerçeve WM_COMMAND ileti gönderir.  
   
  `CMFCToolBarButton` Sınıfı, başka bir araç çubuğu düğmesi sınıflar için temel sınıf gibi [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md), [CMFCToolBarEditBoxButton sınıfı](../../mfc/reference/cmfctoolbareditboxbutton-class.md), ve [ CMFCToolBarComboBoxButton sınıfı](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md).  
   
@@ -315,7 +315,7 @@ virtual BOOL CanBeDropped(CMFCToolBar* pToolbar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pToolbar`  
+ [in] *pToolbar*  
  Kullanılmayan.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -371,19 +371,19 @@ CMFCToolBarButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiID`  
+ [in] *uiID*  
  Düğmenin komut kimliği.  
   
- [in] `iImage`  
+ [in] *iImage*  
  Görüntüleri koleksiyonunda düğmenin resim dizini.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Düğmenin metin etiketi. Olabilir `NULL`.  
   
- [in] `bUserButton`  
+ [in] *bUserButton*  
  Düğme kullanıcı tanımlı olup olmadığını belirleyen bir Boolean değeri. Bu parametre ise `TRUE`, kullanıcı tanımlı düğme vardır. Aksi takdirde, düğme resminin bir kaynaktan yüklenir.  
   
- [in] `bLocked`  
+ [in] *engellendi*  
  Düğme özelleştirilmiş olup olmadığını belirleyen bir Boolean değeri. Bu parametre ise `TRUE`, düğme özelleştirilemez. Aksi takdirde, düğme özelleştirilebilir.  
   
 ##  <a name="comparewith"></a>  CMFCToolBarButton::CompareWith  
@@ -394,7 +394,7 @@ virtual BOOL CompareWith(const CMFCToolBarButton& other) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `other`  
+ [in] *diğer*  
  Bu örnekle Karşılaştırılacak nesne başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -411,7 +411,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `src`  
+ [in] *src*  
  Kaynak düğmesini başvuru kopyalanacak.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -425,7 +425,7 @@ static CMFCToolBarButton* __stdcall CreateFromOleData(COleDataObject* pDataObjec
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDataObject`  
+ [in] *pDataObject*  
  OLE veri kaynağı nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -442,7 +442,7 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
  Bu parametre kümesine `TRUE` giriş, etkinleştirmek için veya `FALSE` giriş devre dışı bırakmak için.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -456,7 +456,7 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `menuButton`  
+ [in] *menuButton*  
  Hedef menü düğmesi referansı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -510,7 +510,7 @@ int GetImage() const;
  Bu düğme ile ilişkili görüntü dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Düğme kullanıcı tanımlı bir görüntü sahipse (varsa, diğer bir deyişle, `bUserButton` olan `TRUE` oluşturucuda), döndürülen dizin kullanıcı tanımlı resimleri koleksiyonunda bir görüntü belirtir (bkz [CMFCToolBar::GetUserImages](../../mfc/reference/cmfctoolbar-class.md#getuserimages)). Aksi halde, bir kaynak dosyasından yüklenen görüntülerinin koleksiyonundaki bir görüntü dizini belirtir (bkz [CMFCToolBar::GetImages](../../mfc/reference/cmfctoolbar-class.md#getimages)). Kaynak dosyaları hakkında daha fazla bilgi için bkz: [kaynak dosyalarıyla çalışma](../../windows/working-with-resource-files.md).  
+ Düğme kullanıcı tanımlı bir görüntü sahipse (varsa, diğer bir deyişle, *bUserButton* olan `TRUE` oluşturucuda), döndürülen dizin kullanıcı tanımlı resimleri koleksiyonunda bir görüntü belirtir (bkz [CMFCToolBar:: GetUserImages](../../mfc/reference/cmfctoolbar-class.md#getuserimages)). Aksi halde, bir kaynak dosyasından yüklenen görüntülerinin koleksiyonundaki bir görüntü dizini belirtir (bkz [CMFCToolBar::GetImages](../../mfc/reference/cmfctoolbar-class.md#getimages)). Kaynak dosyaları hakkında daha fazla bilgi için bkz: [kaynak dosyalarıyla çalışma](../../windows/working-with-resource-files.md).  
   
 ##  <a name="getinvalidaterect"></a>  CMFCToolBarButton::GetInvalidateRect  
  İstemci alanını çizilmesi gerektiği düğmesinin bölgesini alır.  
@@ -742,14 +742,14 @@ virtual BOOL IsOwnerOf(HWND hwnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hwnd`  
+ [in] *hwnd*  
  Bir pencere işleci.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Düğme sağlanan pencere tanıtıcının sahibi ise sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi döndürür sıfır olmayan, `hwnd` doğrudan penceresi tanıtıcısını ifade eder ya da bir alt pencere tanıtıcının düğmesi ile ilişkili değil. Bu yöntem 0 döndürür `hwnd` olan `NULL`.  
+ Bu yöntemi döndürür sıfır olmayan, *hwnd* doğrudan penceresi tanıtıcısını ifade eder ya da bir alt pencere tanıtıcının düğmesi ile ilişkili değil. Bu yöntem 0 döndürür *hwnd* olan `NULL`.  
   
 ##  <a name="isvisible"></a>  CMFCToolBarButton::IsVisible  
  Araç çubuğu düğmesi görünür olup olmadığını belirler.  
@@ -891,7 +891,7 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iNotifyCode`  
+ [in] *iNotifyCode*  
  Komutu ile ilişkili bildirim iletisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -900,7 +900,7 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ### <a name="remarks"></a>Açıklamalar  
  Göndermek üzere olduğunda framework bu metodu çağıran bir [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) üst pencere iletisi.  
   
- Varsayılan olarak, bu yöntem `FALSE`. Döndürmek için bu yöntemi geçersiz kılın `TRUE` işlemek istiyorsanız `WM_COMMAND` ileti veya `FALSE` üst araç ileti işlemelidir belirtmek için.  
+ Varsayılan olarak, bu yöntem `FALSE`. Döndürmek için bu yöntemi geçersiz kılın `TRUE` WM_COMMAND ileti işlemek istiyorsanız veya `FALSE` üst araç ileti işlemelidir belirtmek için.  
   
 ##  <a name="onaddtocustomizepage"></a>  CMFCToolBarButton::OnAddToCustomizePage  
  Düğme eklendiğinde çerçevesi tarafından çağrılır bir **Özelleştir** iletişim kutusu.  
@@ -935,7 +935,7 @@ virtual BOOL OnBeforeDrop(CMFCToolBar* pTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pTarget`  
+ [in] *pTarget*  
  Sürükle ve bırak işlemi hedefi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -957,13 +957,13 @@ virtual SIZE OnCalculateSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Düğme görüntüler cihaz bağlamı.  
   
- [in] `sizeDefault`  
+ [in] *sizeDefault*  
  Düğme varsayılan boyutu.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  Üst araç çubuğu yerleştirme durumu. Bu parametre `TRUE` araç yatay olarak yerleşik veya kayan, veya `FALSE` araç dikey yerleştirilmişse.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -994,7 +994,7 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  Yeni üst pencere.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1012,10 +1012,10 @@ virtual BOOL OnClick(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Araç çubuğu düğmesi üst pencere.  
   
- [in] `bDelay`  
+ [in] *bDelay*  
  `TRUE` ileti bir gecikmeyle işleneceğini durumunda.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1042,14 +1042,14 @@ virtual BOOL OnClickUp();
  Varsayılan uygulama hiçbir şey yapmaz ve döndürür `FALSE`. Düğmenin click ileti işlediğinde sıfır olmayan bir değer döndürmek için bu yöntemi geçersiz kılın.  
   
 ##  <a name="oncontexthelp"></a>  CMFCToolBarButton::OnContextHelp  
- Üst araç işlediğinde çerçevesi tarafından çağrılır bir `WM_HELPHITTEST` ileti.  
+ Üst araç WM_HELPHITTEST ileti işlediğinde çerçevesi tarafından çağrılır.  
   
 ```  
 virtual BOOL OnContextHelp(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Araç çubuğu düğmesi üst pencere.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1058,7 +1058,7 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem varsayılan uygulaması hiçbir şey yapmaz ve döndürür `FALSE`. Düğme Yardım iletisi işlediğinde sıfır olmayan bir değer döndürmek için bu yöntemi geçersiz kılın.  
   
- Hakkında daha fazla bilgi için `WM_HELPHITTEST` iletisi için bkz: [TN028: Context-Sensitive Yardım Destek](../../mfc/tn028-context-sensitive-help-support.md).  
+ WM_HELPHITTEST ileti hakkında daha fazla bilgi için bkz: [TN028: Context-Sensitive Yardım Destek](../../mfc/tn028-context-sensitive-help-support.md).  
   
 ##  <a name="onctlcolor"></a>  CMFCToolBarButton::OnCtlColor  
  Üst araç işlediğinde çerçevesi tarafından çağrılır bir `WM_CTLCOLOR` ileti.  
@@ -1070,17 +1070,17 @@ virtual HBRUSH OnCtlColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Düğme görüntüler cihaz bağlamı.  
   
- [in] `nCtlColor`  
+ [in] *nCtlColor*  
  Belirli bir renk bildirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Çerçeve arka düğmesinin boyamak için kullanır fırça nesnesi için bir tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üst araç işlerken framework bu yöntemi çağırır `WM_CTLCOLOR` araç çubuğu düğmesi için bir Windows denetimini içeren ileti. Araç çubuğu düğmesi penceresiz ise framework bu yöntemi çağırın değil.  
+ Üst araç çubuğu araç çubuğu düğmesi için bir Windows denetimini içeren WM_CTLCOLOR iletisi işlediğinde framework bu yöntemi çağırır. Araç çubuğu düğmesi penceresiz ise framework bu yöntemi çağırın değil.  
   
  Framework araç framework özelleştirme modunda olduğunda ve araç çubuğu düğmesi kilidinin açık olduğundan bu yöntemi çağırır. Özelleştirme modu hakkında daha fazla bilgi için bkz: [CMFCToolBar::SetCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#setcustomizemode). Araç çubuğu düğmeleri kilitleme hakkında daha fazla bilgi için bkz: [CMFCToolBarButton::IsLocked](#islocked).  
   
@@ -1094,7 +1094,7 @@ virtual BOOL OnCustomizeMenu(CMenu* pMenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMenu`  
+ [in] *pMenu*  
  Özelleştirme menüsü.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1111,7 +1111,7 @@ virtual void OnDblClk(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  -   Düğmenin üst pencere.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1135,28 +1135,28 @@ virtual void OnDraw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Düğme görüntüler cihaz bağlamı.  
   
- [in] `rect`  
+ [in] *rect*  
  Düğmenin sınırlayıcı dikdörtgenini.  
   
- [in] `pImages`  
+ [in] *pImages*  
  Araç çubuğu görüntüleri düğmesi ile ilişkili koleksiyonu.  
   
- [in] `bHorz`  
- Üst araç çubuğu yerleştirme durumu. Bu parametre `TRUE` zaman düğme yerleştirilmiştir yatay ve `FALSE` zaman düğme yerleştirilmiştir dikey olarak.  
+ [,] * bHorz`  
+ The dock state of the parent toolbar. This parameter is `TRUE` when the button is docked horizontally and `FALSE' olduğunda düğme yerleştirilmiştir dikey olarak.  
   
- [in] `bCustomizeMode`  
+ [in] *bCustomizeMode*  
  Araç çubuğunu özelleştirme modunda olup olmadığını belirtir. Bu parametre `TRUE` araç çubuğunu özelleştirme modunda olduğunda ve `FALSE` araç olmadığında özelleştirme modunda.  
   
- [in] `bHighlight`  
+ [in] *bHighlight*  
  Düğmesi vurgulanmış olup olmadığını belirtir. Bu parametre `TRUE` zaman düğmesi vurgulanmış ve `FALSE` zaman düğmesi değil vurgulanır.  
   
- [in] `bDrawBorder`  
+ [in] *bDrawBorder*  
  Düğme kenarlığını görüntüleyip görüntülemeyeceğini belirtir. Bu parametre `TRUE` düğmesi görüntülediğinizde kenarlığını ve `FALSE` düğmesi değil görüntülediğinizde kenarlığını.  
   
- [in] `bGrayDisabledButtons`  
+ [in] *bGrayDisabledButtons*  
  Devre dışı düğmeleri gölgelendirme veya devre dışı resim koleksiyonundaki kullanmayı belirtir. Bu parametre `TRUE` ne zaman devre dışı düğmeleri olmalıdır gölgeli ve `FALSE` ne zaman bu yöntem kullanması gereken devre dışı görüntüleri koleksiyonu.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1173,13 +1173,13 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Düğme görüntüler cihaz bağlamı.  
   
- [in] `rect`  
+ [in] *rect*  
  Düğmenin sınırlayıcı dikdörtgenini.  
   
- [in] `bSelected`  
+ [in] *bSelected*  
  Düğme seçili olup olmadığını belirtir. Bu parametre ise `TRUE`, düğmesi seçilir. Bu parametre ise `FALSE`, düğme seçilmedi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1200,7 +1200,7 @@ virtual BOOL OnGetCustomToolTipText(CString& strToolTip);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `strToolTip`  
+ [out] *strToolTip*  
  A `CString` özel araç ipucu metni alan nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1239,7 +1239,7 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  Düğmenin görünür olup olmadığını belirtir. Bu parametre ise `TRUE`, düğmesi görünür. Aksi takdirde düğmesi görünür değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1253,7 +1253,7 @@ virtual void OnSize(int iSize);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iSize`  
+ [in] *iSize*  
  Düğmenin yeni genişliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1269,10 +1269,10 @@ virtual BOOL OnToolHitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Düğmenin üst pencere. Olabilir `NULL`.  
   
- [in] `pTI`  
+ [in] *PTI*  
  A `TOOLINFO` bir araç ipucu denetimindeki bir araç hakkında bilgi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1299,16 +1299,16 @@ virtual BOOL OnUpdateToolTip(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  Üst pencere.  
   
- [in] `iButtonIndex`  
+ [in] *iButtonIndex*  
  Üst düğmesi koleksiyonundaki düğmesi sıfır tabanlı dizini.  
   
- [in] `wndToolTip`  
+ [in] *wndToolTip*  
  Araç İpucu metni görüntüleyen denetim.  
   
- [out] `str`  
+ [out] *str*  
  A `CString` güncelleştirilmiş araç ipucu metni alan nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1325,7 +1325,7 @@ virtual BOOL PrepareDrag(COleDataSource& srcItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `srcItem`  
+ [in] *srcItem*  
  A `COleDataSource` sürükle ve bırak işlemi durum bilgilerini depolayan bir nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1380,7 +1380,7 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `ar`  
+ [in] *ar*  
  `CArchive` Nesne içinden veya seri hale getirilemedi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1398,10 +1398,10 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParent`  
+ [in] *pParent*  
  Araç çubuğu düğmesi üst pencere.  
   
- [in] `data`  
+ [in] *veri*  
  A `CAccessibilityData` araç çubuğu düğmesi erişilebilirlik verilerle doldurulur nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1418,7 +1418,7 @@ static void __stdcall SetClipboardFormatName(LPCTSTR lpszName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszName`  
+ [in] *lpszName*  
  Genel Pano biçimi yeni adı. Olamaz `NULL`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1434,13 +1434,13 @@ virtual void SetImage(int iImage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iImage`  
+ [in] *iImage*  
  Araç çubuğu görüntüleri koleksiyonunu görüntüde dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Araç çubuğu düğmesi bir ayırıcı ise `iImage` ayırıcı düğmesini yeni genişliğini belirtir.  
+ Araç çubuğu düğmesi bir ayırıcı ise *iImage* ayırıcı düğmesini yeni genişliğini belirtir.  
   
- Varsa `iImage` küçük, sıfırdan, bu yöntem resmin çizimi devre dışı bırakır ve metin etiketi düğmesinin çiziminin sağlar.  
+ Varsa *iImage* küçük, sıfırdan, bu yöntem resmin çizimi devre dışı bırakır ve metin etiketi düğmesinin çiziminin sağlar.  
   
 ##  <a name="setprotectedcommands"></a>  CMFCToolBarButton::SetProtectedCommands  
  Kullanıcı özelleştiremezsiniz komutların listesini ayarlar.  
@@ -1450,7 +1450,7 @@ static void SetProtectedCommands(const CList<UINT,UINT>& lstCmds);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lstCmds`  
+ [in] *lstCmds*  
  Korumalı komutları listesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1476,7 +1476,7 @@ void SetRect(const CRect rect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rect`  
+ [in] *rect*  
  Yeni sınırlayıcı dikdörtgenini düğmesinin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1490,7 +1490,7 @@ virtual void SetStyle(UINT nStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nStyle`  
+ [in] *nStyle*  
  Düğmenin yeni stili.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1504,7 +1504,7 @@ void SetVisible(BOOL bShow=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  Göster veya gizle düğmesi belirten bir Boole değeri. Bu parametre ise `TRUE`, düğmesi gösterilir. Parametre ise `FALSE`, düğme gizlenir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1518,11 +1518,11 @@ void Show(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  Göster veya gizle düğmesi belirten bir Boole değeri. Bu parametre ise `TRUE`, düğmesi gösterilir. Parametre ise `FALSE`, düğme gizlenir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework kendi üst araç yeniden boyutlandırıldığında araç çubuğu düğmelerinin görünürlüğünü güncelleştirmek için bu yöntemi çağırır. Bu yöntemle framework çağırması `bShow` kümesine `FALSE` zaman düğmesi artık uygun araç sınırları içinde. Bu yöntemle framework çağırması `bShow` kümesine `TRUE` yeniden boyutlandırma sonra düğmesi yeniden araç sınırları içinde uygun olduğunda.  
+ Framework kendi üst araç yeniden boyutlandırıldığında araç çubuğu düğmelerinin görünürlüğünü güncelleştirmek için bu yöntemi çağırır. Bu yöntemle framework çağırması *bBilgi Göster* kümesine `FALSE` zaman düğmesi artık uygun araç sınırları içinde. Bu yöntemle framework çağırması *bBilgi Göster* kümesine `TRUE` yeniden boyutlandırma sonra düğmesi yeniden araç sınırları içinde uygun olduğunda.  
   
  Kullanım [CMFCToolBarButton::SetVisible](#setvisible) genel düğmesinin görünürlüğünü ayarlamak için yöntem.  
   

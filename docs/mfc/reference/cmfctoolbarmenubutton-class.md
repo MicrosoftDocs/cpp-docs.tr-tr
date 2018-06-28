@@ -102,12 +102,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 515689e4596a3a0336e73b0be7aa008d21e445ab
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7ec0fae7ceaa7b32636518f4c8a5eb5fc3836bb8
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378411"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039072"
 ---
 # <a name="cmfctoolbarmenubutton-class"></a>CMFCToolBarMenuButton sınıfı
 Açılır menü içeren bir araç çubuğu düğmesi.  
@@ -158,7 +158,7 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
 |[CMFCToolBarMenuButton::OnChangeParentWnd](#onchangeparentwnd)|Yeni bir araç çubuğu düğmesi takıldığında çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CMFCToolBarButton::OnChangeParentWnd](cmfctoolbarbutton-class.md#onchangeparentwnd).)|  
 |[CMFCToolBarMenuButton::OnClick](#onclick)|Kullanıcının fare düğmesini tıklattığında çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick).)|  
 |[CMFCToolBarMenuButton::OnClickMenuItem](#onclickmenuitem)|Kullanıcı bir öğeyi açılır menüde seçtiğinde çerçevesi tarafından çağrılır.|  
-|[CMFCToolBarMenuButton::OnContextHelp](#oncontexthelp)|Üst araç işlediğinde çerçevesi tarafından çağrılır bir `WM_HELPHITTEST` ileti. (Geçersiz kılmaları [CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp).)|  
+|[CMFCToolBarMenuButton::OnContextHelp](#oncontexthelp)|Üst araç WM_HELPHITTEST ileti işlediğinde çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp).)|  
 |[CMFCToolBarMenuButton::OnDraw](#ondraw)|Belirtilen stilleri ve seçenekleri kullanarak düğmesi çizmek için framework tarafından çağrılır. (Geçersiz kılmaları [CMFCToolBarButton::OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw).)|  
 |[CMFCToolBarMenuButton::OnDrawOnCustomizeList](#ondrawoncustomizelist)|Düğme çizmek için framework tarafından çağrılan **komutları** bölmesinde **Özelleştir** iletişim kutusu. (Geçersiz kılmaları [CMFCToolBarButton::OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist).)|  
 |[CMFCToolBarMenuButton::OpenPopupMenu](#openpopupmenu)|Açılan menüden kullanıcı oturum açtığında çerçevesi tarafından çağrılır.|  
@@ -220,26 +220,26 @@ CMFCToolBarMenuButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `src`  
+ [in] *src*  
  Var olan `CMFCToolBarMenuButton` bu kopyalanacak nesne `CMFCToolBarMenuButton` nesne.  
   
- [in] `uiID`  
+ [in] *uiID*  
  Bir kullanıcı düğmesine tıkladığında yürütülecek komut kimliği; veya ( `UINT`) doğrudan komut yürütme olmayan bir menü düğmesi için -1.  
   
- [in] `hMenu`  
+ [in] *hMenu*  
  Bir menüye tanıtıcı; veya `NULL` düğmesi menü yoksa.  
   
- [in] `iImage`  
- Düğme için resim dizini; veya bu düğme simge yok veya tarafından belirtilen komut için simge kullanıyorsa, -1 `uiID`. Dizin her aynıdır `CMFCToolBarImages` uygulamanızda nesnesi.  
+ [in] *iImage*  
+ Düğme için resim dizini; veya bu düğme simge yok veya tarafından belirtilen komut için simge kullanıyorsa, -1 *uiID*. Dizin her aynıdır `CMFCToolBarImages` uygulamanızda nesnesi.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Araç çubuğu menü düğmesi metni.  
   
- [in] `bUserButton`  
- `TRUE` Kullanıcı tanımlı bir görüntü düğmesi görüntüler `FALSE` düğmesi tarafından belirtilen komut ile ilişkili önceden tanımlanmış bir görüntü görüntülerse `uiID`.  
+ [in] *bUserButton*  
+ `TRUE` Kullanıcı tanımlı bir görüntü düğmesi görüntüler `FALSE` düğmesi tarafından belirtilen komut ile ilişkili önceden tanımlanmış bir görüntü görüntülerse *uiID*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `uiID` geçerli bir komut kimliği, kullanıcı tıkladığında bu komut düğmesi gerçekleştirir. Varsa `hMenu` geçerli bir menü tanıtıcısı menüde göründüğünde bir araç veya bir alt görüntülendiğinde bir açılır menü düğmesi sağlar. Her iki `uiID` ve `hMenu` düğme olan Bölünmüş düğme kullanıcı üzerinde tıklattığında komutu gerçekleştirecek bir bölümü ve bir kullanıcı üzerinde tıkladığında açılır menü bir aşağı ok olan bir bölümü geçersiz. Ancak, varsa `hMenu` geçerli bir kullanıcı düğmesi bir menüsüne eklendiğinde, bir komutu gerçekleştirmeyi düğmesini mümkün olmayacak.  
+ Varsa *uiID* geçerli bir komut kimliği, kullanıcı tıkladığında bu komut düğmesi gerçekleştirir. Varsa *hMenu* geçerli bir menü tanıtıcısı menüde göründüğünde bir araç veya bir alt görüntülendiğinde bir açılır menü düğmesi sağlar. Her iki *uiID* ve *hMenu* düğme olan kullanıcı üzerinde tıklattığında komutu gerçekleştirecek bir bölümü ve bir açılır menü bir aşağı ok olan bir bölümü bir Bölünmüş düğme geçerli olduğunda kullanıcı üzerinde tıklatır. Ancak, varsa *hMenu* geçerli bir kullanıcı düğmesi bir menüsüne eklendiğinde, bir komutu gerçekleştirmeyi düğmesini mümkün olmayacak.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCToolBarMenuButton` sınıfı. Bu kod parçacığını parçası olan [Word paneli örnek](../../visual-cpp-samples.md).  
@@ -254,7 +254,7 @@ virtual BOOL CompareWith(const CMFCToolBarButton& other) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `other`  
+ [in] *diğer*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -268,7 +268,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `src`  
+ [in] *src*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -280,7 +280,7 @@ virtual void CreateFromMenu(HMENU hMenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `hMenu`  
+ [in] *hMenu*  
  Bir menüye işleci.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -327,17 +327,17 @@ void DrawDocumentIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Cihaz bağlamı için bir işaretçi.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Dikdörtgen sınırlayıcı görüntü koordinatları.  
   
- [in] `hIcon`  
+ [in] *hIcon*  
  Simge için bir tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bir belge simgesini alır ve tarafından belirtilen alanında Ortalanan menü düğmesinde çizer `rectImage`.  
+ Bu yöntem, bir belge simgesini alır ve tarafından belirtilen alanında Ortalanan menü düğmesinde çizer *rectImage*.  
   
 ##  <a name="enablequickcustomize"></a>  CMFCToolBarMenuButton::EnableQuickCustomize  
 
@@ -424,7 +424,7 @@ void GetImageRect(CRect& rectImage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `rectImage`  
+ [out] *rectImage*  
  Bir başvuru bir `CRect` dikdörtgen sınırlayıcı görüntü koordinatlarını alan nesnesi.  
   
 ##  <a name="getpaletterows"></a>  CMFCToolBarMenuButton::GetPaletteRows  
@@ -560,9 +560,9 @@ virtual SIZE OnCalculateSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `sizeDefault`  
- [in] `bHorz`  
+ [in] *pDC*  
+ [in] *sizeDefault*  
+ [in] *bHorz*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -585,7 +585,7 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndParent`  
+ [in] *pWndParent*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -599,8 +599,8 @@ virtual BOOL OnClick(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
- [in] `bDelay`  
+ [in] *pWnd*  
+ [in] *bDelay*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -629,7 +629,7 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -651,14 +651,14 @@ virtual void OnDraw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
- [in] `pImages`  
- [in] `bHorz`  
- [in] `bCustomizeMode`  
- [in] `bHighlight`  
- [in] `bDrawBorder`  
- [in] `bGrayDisabledButtons`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *pImages*  
+ [in] *bHorz*  
+ [in] *bCustomizeMode*  
+ [in] *bHighlight*  
+ [in] *bDrawBorder*  
+ [in] *bGrayDisabledButtons*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -673,9 +673,9 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- [in] `rect`  
- [in] `bSelected`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bSelected*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -689,7 +689,7 @@ virtual BOOL OpenPopupMenu(CWnd* pWnd=NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Aşağı açılan menü komutlarını alır penceresi belirtir. Bu olabilir `NULL` yalnızca araç menü düğmesi bir üst pencere varsa.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -725,7 +725,7 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `ar`  
+ [in] *ar*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -739,10 +739,10 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParent`  
+ *pParent*  
  Şerit öğesi için üst pencere.  
   
- `data`  
+ *Veri*  
  Şerit öğesi için erişilebilirlik verileri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -759,11 +759,11 @@ void SetMenuOnly(BOOL bMenuOnly);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bMenuOnly`  
+ [in] *bMenuOnly*  
  `TRUE` Geçerli komut kimliği ve bir alt sahip olduğunda bu düğmeye menü düğmesi olarak göstermek için `FALSE` geçerli komut kimliği ve bir alt sahip olduğunda bu düğmeye Bölünmüş düğme olarak göstermek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Araç çubuğu menü düğmesi bir alt ve komut kimliği olduğunda, genellikle, menü ana düğmesi ve ekli bir ok düğmesine sahip bir Bölünmüş düğme gibi görünüyor. Bu yöntem çağırırsanız ve `bMenuOnly` olan `TRUE`, düğme bunun yerine bir aşağı ok düğmesine ile tek menü düğmesi gibi görünüyor. Kullanıcı her iki modda oku tıkladığında, alt açar ve kullanıcı tıklattığında komutu her iki modda framework düğmesi ok olmayan parçası yürütür.  
+ Araç çubuğu menü düğmesi bir alt ve komut kimliği olduğunda, genellikle, menü ana düğmesi ve ekli bir ok düğmesine sahip bir Bölünmüş düğme gibi görünüyor. Bu yöntem çağırırsanız ve *bMenuOnly* olan `TRUE`, düğme bunun yerine bir aşağı ok düğmesine ile tek menü düğmesi gibi görünüyor. Kullanıcı her iki modda oku tıkladığında, alt açar ve kullanıcı tıklattığında komutu her iki modda framework düğmesi ok olmayan parçası yürütür.  
   
 ##  <a name="setmenupalettemode"></a>  CMFCToolBarMenuButton::SetMenuPaletteMode  
  Aşağı açılan menüden palet modunda olup olmadığını belirtir.  
@@ -775,14 +775,14 @@ void SetMenuPaletteMode(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bMenuPaletteMode`  
+ [in] *bMenuPaletteMode*  
  Aşağı açılan menüden palet modunda olup olmadığını belirtir.  
   
- [in] `nPaletteRows`  
+ [in] *nPaletteRows*  
  Palet satır sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Palet modunda tüm menü öğelerini sütunlu palet olarak görüntülenir. Kullanarak satır sayısını belirtin `nPaletteRows`.  
+ Palet modunda tüm menü öğelerini sütunlu palet olarak görüntülenir. Kullanarak satır sayısını belirtin *nPaletteRows*.  
   
 ##  <a name="setmessagewnd"></a>  CMFCToolBarMenuButton::SetMessageWnd  
 
@@ -792,7 +792,7 @@ void SetMessageWnd(CWnd* pWndMessage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndMessage`  
+ [in] *pWndMessage*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -816,11 +816,11 @@ virtual void SetTearOff(UINT uiBarID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiBarID`  
+ [in] *uiBarID*  
  Bir yeni etiketleri belirtir çubuk kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanıcı bir menü çubuğu dışına menü düğmesi sürüklendiğinde oluşturduğunuz etiketleri çubuğunun Kimliğini belirtmek için bu yöntemi çağırın. Varsa `uiBarID` parametresi 0, kullanıcı menü düğmesi devre dışı kesmeden olamaz.  
+ Kullanıcı bir menü çubuğu dışına menü düğmesi sürüklendiğinde oluşturduğunuz etiketleri çubuğunun Kimliğini belirtmek için bu yöntemi çağırın. Varsa *uiBarID* parametresi 0, kullanıcı menü düğmesi devre dışı kesmeden olamaz.  
   
  Çağrı [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) uygulamanızda etiketleri menü özelliğini etkinleştirmek için.  
   

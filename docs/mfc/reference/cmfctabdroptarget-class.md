@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53988248ac183fd551d100ede29648bcecd067f5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 68d78e221b9bcdbffbfc80ba26c6106498c4fa41
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372920"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37040993"
 ---
 # <a name="cmfctabdroptarget-class"></a>CMFCTabDropTarget sınıfı
 Sekme denetimi OLE kitaplıklarının arasındaki iletişim mekanizması sağlar.  
@@ -100,13 +100,13 @@ virtual DROPEFFECT OnDragEnter(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `pWnd`|Kullanılmayan.|  
-|[in] `pDataObject`|Kullanıcının sürüklediği nesnesine bir işaretçi.|  
-|[in] `dwKeyState`|Değiştirici tuşları durumunu içerir. Bu aşağıdaki herhangi bir sayıda birleşiminden oluşur: `MK_CONTROL`, `MK_SHIFT`, `MK_ALT`, `MK_LBUTTON`, `MK_MBUTTON`, ve `MK_RBUTTON`.|  
-|[in] `point`|İstemci koordinatları imleç konumu.|  
+|[in] *pWnd*|Kullanılmayan.|  
+|[in] *pDataObject*|Kullanıcının sürüklediği nesnesine bir işaretçi.|  
+|[in] *dwKeyState*|Değiştirici tuşları durumunu içerir. Bu aşağıdaki herhangi bir sayıda birleşiminden oluşur: `MK_CONTROL`, `MK_SHIFT`, `MK_ALT`, `MK_LBUTTON`, `MK_MBUTTON`, ve `MK_RBUTTON`.|  
+|[in] *noktası*|İstemci koordinatları imleç konumu.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Açılan tarafından belirtilen konumda oluşursa sonuçları etkisi `point`. Aşağıdakilerden birini veya birkaçını olabilir:  
+ Açılan tarafından belirtilen konumda oluşursa sonuçları etkisi *noktası*. Aşağıdakilerden birini veya birkaçını olabilir:  
   
 - `DROPEFFECT_NONE`  
   
@@ -135,7 +135,7 @@ virtual void OnDragLeave(CWnd* pWnd);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `pWnd`|Kullanılmayan.|  
+|[in] *pWnd*|Kullanılmayan.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi çağırır `CMFCBaseTabCtrl::OnDragLeave` sürükleme işlemi gerçekleştirmek için yöntem.  
@@ -156,13 +156,13 @@ virtual DROPEFFECT OnDragOver(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `pWnd`|Kullanılmayan.|  
-|[in] `pDataObject`|Kullanıcının sürüklediği nesnesine bir işaretçi.|  
-|[in] `dwKeyState`|Değiştirici tuşları durumunu içerir. Bu aşağıdaki herhangi bir sayıda birleşiminden oluşur: `MK_CONTROL`, `MK_SHIFT`, `MK_ALT`, `MK_LBUTTON`, `MK_MBUTTON`, ve `MK_RBUTTON`.|  
-|[in] `point`|İstemci koordinatları fare işaretçisini konumu.|  
+|[in] *pWnd*|Kullanılmayan.|  
+|[in] *pDataObject*|Kullanıcının sürüklediği nesnesine bir işaretçi.|  
+|[in] *dwKeyState*|Değiştirici tuşları durumunu içerir. Bu aşağıdaki herhangi bir sayıda birleşiminden oluşur: `MK_CONTROL`, `MK_SHIFT`, `MK_ALT`, `MK_LBUTTON`, `MK_MBUTTON`, ve `MK_RBUTTON`.|  
+|[in] *noktası*|İstemci koordinatları fare işaretçisini konumu.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Açılan tarafından belirtilen konumda oluşursa sonuçları etkisi `point`. Aşağıdakilerden birini veya birkaçını olabilir:  
+ Açılan tarafından belirtilen konumda oluşursa sonuçları etkisi *noktası*. Aşağıdakilerden birini veya birkaçını olabilir:  
   
 - `DROPEFFECT_NONE`  
   
@@ -196,11 +196,11 @@ virtual DROPEFFECT OnDropEx(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `pWnd`|Kullanılmayan.|  
-|[in] `pDataObject`|Kullanıcının sürüklediği nesnesine bir işaretçi.|  
-|[in] `dropEffect`|Varsayılan bırakma işlemi.|  
-|[in] `dropList`|Kullanılmayan.|  
-|[in] `point`|İstemci koordinatları fare işaretçisini konumu.|  
+|[in] *pWnd*|Kullanılmayan.|  
+|[in] *pDataObject*|Kullanıcının sürüklediği nesnesine bir işaretçi.|  
+|[in] *dropEffect*|Varsayılan bırakma işlemi.|  
+|[in] *listeyi*|Kullanılmayan.|  
+|[in] *noktası*|İstemci koordinatları fare işaretçisini konumu.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sonuçta elde edilen açılan etkisi. Aşağıdakilerden birini veya birkaçını olabilir:  
@@ -216,7 +216,7 @@ virtual DROPEFFECT OnDropEx(
 - `DROPEFFECT_SCROLL`  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi çağırır `CMFCBaseTabCtrl::OnDrop` araç framework özelleştirme modda ise ve Pano verileri biçimi kullanılabilir. Varsa çağrısı `CMFCBaseTabCtrl::OnDrop` sıfır olmayan bir değer, bu yöntem tarafından belirtilen varsayılan açılan etkisi döndürür döndürür `dropEffect`. Aksi takdirde, bu yöntemi döndürür `DROPEFFECT_NONE`. Açılan etkileri hakkında daha fazla bilgi için bkz: [COleDropTarget::OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex).  
+ Bu yöntemi çağırır `CMFCBaseTabCtrl::OnDrop` araç framework özelleştirme modda ise ve Pano verileri biçimi kullanılabilir. Varsa çağrısı `CMFCBaseTabCtrl::OnDrop` sıfır olmayan bir değer, bu yöntem tarafından belirtilen varsayılan açılan etkisi döndürür döndürür *dropEffect*. Aksi takdirde, bu yöntemi döndürür `DROPEFFECT_NONE`. Açılan etkileri hakkında daha fazla bilgi için bkz: [COleDropTarget::OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex).  
   
  Özelleştirme modu hakkında daha fazla bilgi için bkz: [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). Pano veri biçimleri hakkında daha fazla bilgi için bkz: [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).  
   
@@ -232,7 +232,7 @@ BOOL Register(CMFCBaseTabCtrl *pOwner);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] `pOwner`|Bırakma hedefi olarak kaydetmek için sekme denetimi.|  
+|[in] *pOwner*|Bırakma hedefi olarak kaydetmek için sekme denetimi.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kayıt başarılı olduğunda sıfır olmayan; Aksi takdirde 0.  

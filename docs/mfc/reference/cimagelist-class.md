@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54804ff4c6b2410aa47ea4d7cf5f5d3ab48316f9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 86250968fa8f6dfd9cb1a3b9a790549f70baa569
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375852"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039123"
 ---
 # <a name="cimagelist-class"></a>Cımagelist sınıfı
 Windows ortak görüntü listesi denetimi işlevselliğini sağlar.  
@@ -189,16 +189,16 @@ int Add(HICON hIcon);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pbmImage`  
+ *pbmImage*  
  Görüntüyü ya da görüntüleri içeren bit eşlem işaretçi. Görüntü sayısını bit eşlem genişliği algılanır.  
   
- `pbmMask`  
+ *pbmMask*  
  Maske içeren bit eşlem işaretçi. Hiçbir maskesi ile resim listesi kullanılırsa, bu parametre yoksayılır.  
   
- `crMask`  
+ *crMask*  
  Maske oluşturmak için kullanılan rengi. Belirtilen bit eşlem renkte her pikseli siyah olarak değiştirilir ve karşılık gelen bit maskesi bir olarak ayarlayın.  
   
- `hIcon`  
+ *hIcon*  
  Bit eşlem ve yeni görüntüyü maskesini içeren simge işleci.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -218,7 +218,7 @@ BOOL Attach(HIMAGELIST hImageList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hImageList`  
+ *hImageList*  
  Bir resim listesi nesnesi için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -237,10 +237,10 @@ BOOL BeginDrag(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nImage`  
+ *nImage*  
  Görüntünün sürüklemek için sıfır tabanlı dizini.  
   
- `ptHotSpot`  
+ *ptHotSpot*  
  Başlangıç Sürükle konumu (genellikle, imleç konumu) koordinatları. Koordinatlar sol üst köşedeki görüntünün göre belirlenir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -280,10 +280,10 @@ BOOL Copy(
  *iDst*  
  Kopyalama işleminin hedefi olarak kullanılacak görüntüyü sıfır tabanlı dizini.  
   
- `iSrc`  
+ *ISRC*  
  Kopyalama işlemi, kaynağı olarak kullanılacak görüntüyü sıfır tabanlı dizini.  
   
- `uFlags`  
+ *uFlags*  
  Kopyalama işlemi yapılmasına türünü belirtir bit bayrak değeri. Bu parametre aşağıdaki değerlerden biri olabilir:  
   
 |Değer|Açıklama|  
@@ -291,7 +291,7 @@ BOOL Copy(
 |`ILCF_MOVE`|Kaynak görüntü hedef görüntünün dizinine kopyalanır. Bu işlem belirli bir görüntü birden çok örneğini sonuçlanır. `ILCF_MOVE` varsayılandır.|  
 |`ILCF_SWAP`|Kaynak ve hedef görüntüleri konumlar görüntü listesi içinde exchange.|  
   
- `pSrc`  
+ *pSrc*  
  Bir işaretçi bir `CImageList` kopyalama işleminin hedefi olan nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -338,13 +338,13 @@ BOOL Create(CImageList* pImageList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cx`  
+ *CX*  
  Piksel cinsinden her görüntü boyutları.  
   
- `cy`  
+ *CY*  
  Piksel cinsinden her görüntü boyutları.  
   
- `nFlags`  
+ *nFlags*  
  Resim listesi oluşturmak için türünü belirtir. Bu parametre aşağıdaki değerlerden bir bileşimi olabilir, ancak yalnızca birini içerebilir `ILC_COLOR` değerleri.  
   
 |Değer|Açıklama|  
@@ -358,40 +358,40 @@ BOOL Create(CImageList* pImageList);
 |`ILC_COLORDDB`|Bir aygıt bit eşlem kullanın.|  
 |`ILC_MASK`|Maske kullanır. Resim listesi biri maske olarak kullanılan tek renkli bir bit eşlem olan iki bitmap içerir. Bu değer dahil edilmezse, yalnızca bir bit eşlem resim listesi içerir. Bkz: [resim listesi çizim görüntülerden](../../mfc/drawing-images-from-an-image-list.md) maskelenmiş görüntüler hakkında ek bilgi için.|  
   
- `nInitial`  
+ *nInitial*  
  Resim listesi başlangıçta içerir, görüntü sayısı.  
   
- `nGrow`  
+ *nGrow*  
  Sistemin yeni görüntüleri için yer açmak için listedeki yeniden boyutlandırmak gerektiğinde resim listesi'tarafından büyüyebileceği görüntüleri sayısı. Bu parametre yeniden boyutlandırılan resim listesi içerebilir yeni görüntü sayısını temsil eder.  
   
- `nBitmapID`  
+ *nBitmapID*  
  Resim listesi ile ilişkilendirilecek kaynak kimlikleri bitmap.  
   
- `crMask`  
+ *crMask*  
  Maske oluşturmak için kullanılan rengi. Belirtilen bit eşlem renkte her pikseli siyah değiştirilir ve karşılık gelen bit maskesi bir olarak ayarlayın.  
   
- `lpszBitmapID`  
+ *lpszBitmapID*  
  Kaynak kimlikleri görüntülerinin içeren bir dize.  
   
- `imagelist1`  
+ *imagelist1*  
  Bir başvuru bir `CImageList` nesnesi.  
   
- `nImage1`  
+ *nImage1*  
  İlk mevcut görüntü dizini.  
   
- `imagelist2`  
+ *imagelist2*  
  Bir başvuru bir `CImageList` nesnesi.  
   
- `nImage2`  
+ *nImage2*  
  İkinci mevcut görüntü dizini.  
   
- `dx`  
+ *DX*  
  İkinci görüntüsünün piksel cinsinden ilk görüntüsüne ilişkisindeki ekseninin uzaklık.  
   
- `dy`  
+ *GN*  
  İkinci görüntüsünün piksel cinsinden ilk görüntüsüne ilişkisindeki y ekseninin uzaklık.  
   
- `pImageList`  
+ *pImageList*  
  Bir işaretçi bir `CImageList` nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -443,7 +443,7 @@ HIMAGELIST Detach();
   Örneğin bkz [CImageList::Attach](#attach).  
   
 ##  <a name="dragenter"></a>  CImageList::DragEnter  
- Sürükleme işlemi sırasında tarafından belirtilen pencere güncelleştirmeleri kilitler `pWndLock` ve tarafından belirtilen konumdaki Sürükle görüntü görüntüler `point`.  
+ Sürükleme işlemi sırasında tarafından belirtilen pencere güncelleştirmeleri kilitler *pWndLock* ve tarafından belirtilen konumdaki Sürükle görüntü görüntüler *noktası*.  
   
 ```  
 static BOOL PASCAL DragEnter(
@@ -452,10 +452,10 @@ static BOOL PASCAL DragEnter(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWndLock`  
+ *pWndLock*  
  İşaretçi Sürükle görüntü sahibi penceresine.  
   
- `point`  
+ *Noktası*  
  Sürükleme görüntü görüntülenecek da konumunda. Koordinatlar (istemci alanını değil) penceresinin sol üst köşesindeki göre belirlenir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -464,7 +464,7 @@ static BOOL PASCAL DragEnter(
 ### <a name="remarks"></a>Açıklamalar  
  Sınır, başlık çubuğu ve menü çubuğunda, gibi pencere öğeleri genişlikleri koordinatları belirtirken dengelemek gerekir böylece koordinatlar pencerenin sol üst köşesinin göre belirlenir.  
   
- Varsa `pWndLock` olan **NULL**, bu işlev, Masaüstü penceresiyle ilişkili görüntü bağlamda resim çizer ve koordinatlar ekranın sol üst köşesinde göre belirlenir.  
+ Varsa *pWndLock* olan **NULL**, bu işlev, Masaüstü penceresiyle ilişkili görüntü bağlamda resim çizer ve koordinatlar ekranın sol üst köşesinde göre belirlenir.  
   
  Bu işlev sürükleme işlemi sırasında verilen penceresine diğer tüm güncelleştirmeleri kilitler. Sürükle ve bırak işlemi, hedef vurgulama gibi bir sürükleme işlemi sırasında herhangi bir çizim yapmanız gerekirse, geçici olarak sürüklenen görüntü kullanarak gizleyebilirsiniz [CImageList::DragLeave](#dragleave) işlevi.  
   
@@ -472,14 +472,14 @@ static BOOL PASCAL DragEnter(
   Örneğin bkz [CImageList::BeginDrag](#begindrag).  
   
 ##  <a name="dragleave"></a>  CImageList::DragLeave  
- Tarafından belirtilen pencere kilidini açarak `pWndLock` ve güncelleştirilmesi için penceresini izin vererek Sürükle görüntünün gizler.  
+ Tarafından belirtilen pencere kilidini açarak *pWndLock* ve güncelleştirilmesi için penceresini izin vererek Sürükle görüntünün gizler.  
   
 ```  
 static BOOL PASCAL DragLeave(CWnd* pWndLock);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWndLock`  
+ *pWndLock*  
  İşaretçi Sürükle görüntü sahibi penceresine.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -496,7 +496,7 @@ static BOOL PASCAL DragMove(CPoint pt);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pt`  
+ *PT*  
  Yeni konuma sürükleyin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -516,7 +516,7 @@ static BOOL PASCAL DragShowNolock(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bShow`  
+ *bBilgi Göster*  
  Sürükleme görüntü gösterilecek olup olmadığını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -537,23 +537,23 @@ BOOL Draw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Hedef cihaz bağlamı işaretçi.  
   
- `nImage`  
+ *nImage*  
  Görüntünün çizmek için sıfır tabanlı dizini.  
   
- `pt`  
+ *PT*  
  Belirtilen aygıt bağlamı içinde çizmek konumu.  
   
- `nStyle`  
+ *nStyle*  
  Çizim stili belirten bayrak. Bir veya daha fazla şu değerlerden biri olabilir:  
   
 |Değer|Açıklama|  
 |-----------|-------------|  
 |`ILD_BLEND25`, **ILD_FOCUS**|Sistem vurgulama renk ile yüzde 25'i karıştırma resim çizer. Resim listesi maske içermiyorsa, bu değer bir etkisi yoktur.|  
 |`ILD_BLEND50`, **ILD_SELECTED**, **ILD_BLEND**|Yüzde 50'sistem vurgulama renk ile karıştırma resim çizer. Resim listesi maske içermiyorsa, bu değer bir etkisi yoktur.|  
-|**ILD_MASK**|Maske çizer.|  
+|`ILD_MASK`|Maske çizer.|  
 |`ILD_NORMAL`|Arka plan rengi için resim listesi kullanma resim çizer. Arka plan rengini ise `CLR_NONE` değeri, resmin saydam maskesi kullanılarak çizilir.|  
 |`ILD_TRANSPARENT`|Saydam arka plan rengini bakılmaksızın maskesi kullanarak resim çizer.|  
   
@@ -578,17 +578,17 @@ BOOL DrawEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Hedef cihaz bağlamı işaretçi.  
   
- `nImage`  
+ *nImage*  
  Görüntünün çizmek için sıfır tabanlı dizini.  
   
- `pt`  
+ *PT*  
  Belirtilen aygıt bağlamı içinde çizmek konumu.  
   
- `sz`  
- Görüntünün sol üst köşesindeki göre çizmek için görüntünün kısmı boyutu. Bkz: `dx` ve *GN* içinde [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) Windows SDK.  
+ *SZ*  
+ Görüntünün sol üst köşesindeki göre çizmek için görüntünün kısmı boyutu. Bkz: *dx* ve *GN* içinde [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) Windows SDK'sındaki.  
   
  *clrBk*  
  Görüntü, arka plan rengi. Bkz: *rgbBk* içinde [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) Windows SDK'sındaki.  
@@ -596,7 +596,7 @@ BOOL DrawEx(
  *clrFg*  
  Görüntü arka plan rengi. Bkz: *rgbFg* içinde [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) Windows SDK'sındaki.  
   
- `nStyle`  
+ *nStyle*  
  Çizim stili belirten bayrak. Bkz: *fStyle* içinde [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -634,30 +634,30 @@ BOOL DrawIndirect(
  *pimldp*  
  Bir işaretçi bir [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) çizim işlemiyle ilgili bilgi içeren yapısı.  
   
- `pDC`  
+ *pDC*  
  Hedef cihaz bağlamı için bir işaretçi. Bu silmelisiniz [CDC](../../mfc/reference/cdc-class.md) nesnesi ile bittiğinde.  
   
- `nImage`  
+ *nImage*  
  Çizilecek görüntünün sıfır tabanlı dizini.  
   
- `pt`  
+ *PT*  
  A [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) x ve y-burada görüntü çizilmiş koordinatları içeren yapısı.  
   
- `sz`  
+ *SZ*  
  A [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) çizilecek görüntü boyutunu belirten yapısı.  
   
  *ptOrigin*  
  A [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) x ve y-resim çizim katmanlandırmasının sol üst köşesinin belirtme koordinatları içeren yapısı. X koordinatını ve y koordinatını üstünde sol olan görüntüsünün piksel çizilmiş değil.  
   
- `fStyle`  
+ *fStyle*  
  Çizim stili ve isteğe bağlı olarak katmana görüntü belirten bayrak. Katmana görüntüde bilgi için Açıklamalar bölümüne bakın. MFC varsayılan uygulaması `ILD_NORMAL`, arka plan rengi için resim listesi kullanma resim çizer. Arka plan rengini ise `CLR_NONE` değeri, resmin saydam bir maskesi kullanılarak çizilir.  
   
- Diğer olası stilleri altında açıklanan **fStyle** üyesi [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) yapısı.  
+ Diğer olası stilleri altında açıklanan *fStyle* üyesi [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) yapısı.  
   
  *dwRop*  
- Bir tarama işlem kodu belirten değer. Bu kodları kaynak dikdörtgen renk verilerini son renk elde etmek için hedef dikdörtgeni rengi veri ile nasıl birleştirilebilir tanımlayın. MFC'nin varsayılan uygulaması, **SRCCOPY**, doğrudan hedef dikdörtgenin kaynak dikdörtgen kopyalar. Bu parametre yoksayılır `fStyle` parametre içermez **ILD_ROP** bayrağı.  
+ Bir tarama işlem kodu belirten değer. Bu kodları kaynak dikdörtgen renk verilerini son renk elde etmek için hedef dikdörtgeni rengi veri ile nasıl birleştirilebilir tanımlayın. MFC'nin varsayılan uygulaması, **SRCCOPY**, doğrudan hedef dikdörtgenin kaynak dikdörtgen kopyalar. Bu parametre yoksayılır *fStyle* parametre içermez **ILD_ROP** bayrağı.  
   
- Diğer olası değerler altında açıklanan **dwRop** üyesi [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) yapısı.  
+ Diğer olası değerler altında açıklanan *dwRop* üyesi [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) yapısı.  
   
  *rgbBack*  
  Görüntü arka plan rengi, varsayılan olarak `CLR_DEFAULT`. Bu parametre, bir uygulama tanımlı RGB değeri veya şu değerlerden biri olabilir:  
@@ -675,7 +675,7 @@ BOOL DrawIndirect(
 |`CLR_DEFAULT`|Varsayılan arka plan rengi. Görüntü ön plan rengini sistem vurgulama renk kullanarak çizilir.|  
 |`CLR_NONE`|Hiçbir Karışım rengi. Görüntüyü hedef cihaz bağlamı renkle karıştırılan.|  
   
- Bu parametre yalnızca kullanılır `fStyle` içeren `ILD_BLEND25` veya `ILD_BLEND50` bayrağı.  
+ Bu parametre yalnızca kullanılır *fStyle* içeren `ILD_BLEND25` veya `ILD_BLEND50` bayrağı.  
   
  *fState*  
  Çizim durumunu belirten bayrak. Bu üye, bir veya daha fazla görüntü listesi durumu bayraklar içerebilir.  
@@ -696,7 +696,7 @@ BOOL DrawIndirect(
 ### <a name="remarks"></a>Açıklamalar  
  Win32 yapısı kendiniz doldurmak istiyorsanız, ilk sürümü kullanın. Bir veya daha fazla MFC'nin varsayılan bağımsız değişkenler yararlanmak veya yapısı yönetme önlemek istiyorsanız ikinci sürümü kullanın.  
   
- Bu üye işlevi tarafından belirtilen birincil görüntüsü üstünde çizilmiş görüntünün bir katmana görüntüdür `nImage` parametresi. Bir katmana maskesi kullanarak çizin [çizin](#draw) üye işlevi kullanılarak belirtilen katmana maskesi tabanlı diziniyle [INDEXTOOVERLAYMASK](http://msdn.microsoft.com/library/windows/desktop/bb761408) makrosu.  
+ Bu üye işlevi tarafından belirtilen birincil görüntüsü üstünde çizilmiş görüntünün bir katmana görüntüdür *nImage* parametresi. Bir katmana maskesi kullanarak çizin [çizin](#draw) üye işlevi kullanılarak belirtilen katmana maskesi tabanlı diziniyle [INDEXTOOVERLAYMASK](http://msdn.microsoft.com/library/windows/desktop/bb761408) makrosu.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CImageList#11](../../mfc/reference/codesnippet/cpp/cimagelist-class_10.cpp)]  
@@ -722,7 +722,7 @@ HICON ExtractIcon(int nImage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nImage`  
+ *nImage*  
  Görüntünün sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -742,7 +742,7 @@ static CImageList* PASCAL FromHandle(HIMAGELIST hImageList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hImageList`  
+ *hImageList*  
  Resim listesi belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -762,7 +762,7 @@ static CImageList* PASCAL FromHandlePermanent(HIMAGELIST hImageList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hImageList`  
+ *hImageList*  
  Resim listesi belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -797,7 +797,7 @@ static CImageList* PASCAL GetDragImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpPoint`  
+ *Lppoınt*  
  Adres bir [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) geçerli alan yapısı konuma sürükleyin.  
   
  *lpPointHotSpot*  
@@ -829,7 +829,7 @@ BOOL GetImageInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nImage`  
+ *nImage*  
  Görüntünün sıfır tabanlı dizini.  
   
  *pImageInfo*  
@@ -889,7 +889,7 @@ BOOL Read(CArchive* pArchive);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pArchive`  
+ *pArchive*  
  Bir işaretçi bir `CArchive` resim listesi olduğu okumak için nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -906,14 +906,14 @@ BOOL Remove(int nImage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nImage`  
+ *nImage*  
  Görüntünün kaldırmak için sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İzleyen tüm öğeleri `nImage` şimdi bir konum aşağı taşıma. Örneğin, bir resim listesi iki öğeler içeriyorsa, ilk öğe silinmesi şimdi ilk konumda kalan öğeyi neden olur. `nImage`ilk konumda öğesi için 0 =.  
+ İzleyen tüm öğeleri *nImage* şimdi bir konum aşağı taşıma. Örneğin, bir resim listesi iki öğeler içeriyorsa, ilk öğe silinmesi şimdi ilk konumda kalan öğeyi neden olur. *nImage*= 0 ilk konumda öğesi için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CImageList#19](../../mfc/reference/codesnippet/cpp/cimagelist-class_19.cpp)]  
@@ -934,22 +934,22 @@ int Replace(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nImage`  
+ *nImage*  
  Değiştirmek için görüntünün sıfır tabanlı dizini.  
   
- `pbmImage`  
+ *pbmImage*  
  Görüntüyü içeren bit eşlem için bir işaretçi.  
   
- `pbmMask`  
+ *pbmMask*  
  Maske içeren bit eşlem için bir işaretçi. Hiçbir maskesi ile resim listesi kullanılırsa, bu parametre yoksayılır.  
   
- `hIcon`  
+ *hIcon*  
  Bit eşlem ve yeni görüntüyü maskesini içeren simge için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürme sürüm **BOOL** sıfır olmayan başarılı; Aksi halde 0 durumunda döndürür.  
   
- Döndürme sürüm `int` görüntünün sıfır tabanlı dizinini döndürür başarılı - değilse 1.  
+ Döndürme sürüm **int** görüntünün sıfır tabanlı dizinini döndürür başarılı - değilse 1.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevini çağırın çağrıldıktan sonra [SetImageCount](#setimagecount) yer tutucu geçerli görüntüleri yeni atamak için dizin numaralarını görüntü.  
@@ -965,7 +965,7 @@ COLORREF SetBkColor(COLORREF cr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cr`  
+ *CR*  
  Ayarlamak için arka plan rengi. Bu olabilir `CLR_NONE`. Bu durumda, görüntüleri saydam maskesi kullanılarak çizilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -987,7 +987,7 @@ BOOL SetDragCursorImage(
  *nDrag*  
  Sürükleme görüntüsüyle birleştirilecek yeni görüntü dizini.  
   
- `ptHotSpot`  
+ *ptHotSpot*  
  Etkin nokta yeni görüntüyü içindeki konumu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1028,7 +1028,7 @@ BOOL SetOverlayImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nImage`  
+ *nImage*  
  Bir katmana maske olarak kullanılacak görüntünün sıfır tabanlı dizini.  
   
  *nOverlay*  
@@ -1053,7 +1053,7 @@ BOOL Write(CArchive* pArchive);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pArchive`  
+ *pArchive*  
  Bir işaretçi bir `CArchive` resim listesi olduğu depolanması için nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

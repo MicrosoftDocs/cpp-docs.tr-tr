@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 431e743396cfc22d49c13a2a9e2f50c88c5ee036
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3cd166cac7d6d2cddbc12b3cbaa14b28d00c1357
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369235"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37037275"
 ---
 # <a name="cmonikerfile-class"></a>CMonikerFile sınıfı
 Veri akışı temsil eder ( [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034)) tarafından adlı bir [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705).  
@@ -113,7 +113,7 @@ IBindCtx* CreateBindContext(CFileException* pError);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pError`  
+ *pError*  
  Dosya özel durumu için bir işaretçi. Bir hata durumunda neden ayarlanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -130,7 +130,7 @@ BOOL Detach(CFileException* pError = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pError`  
+ *pError*  
  Dosya özel durumu için bir işaretçi. Bir hata durumunda neden ayarlanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -164,22 +164,22 @@ virtual BOOL Open(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszURL`  
+ *lpszURL*  
  Bir URL veya açılması için dosyanın.  
   
- `pError`  
+ *pError*  
  Dosya özel durumu için bir işaretçi. Bir hata durumunda neden ayarlanır.  
   
- `pMoniker`  
+ *pMoniker*  
  Ad arayüzü için bir işaretçi `IMoniker` bir akış almak için kullanılacak.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `lpszURL` Parametresi Macintosh üzerinde kullanılamaz. Yalnızca `pMoniker` biçiminde **açık** Macintosh üzerinde kullanılabilir.  
+ *LpszURL* parametresi Macintosh üzerinde kullanılamaz. Yalnızca *pMoniker* biçiminde **açık** Macintosh üzerinde kullanılabilir.  
   
- Bir URL veya bir dosya adı için kullanabileceğiniz `lpszURL` parametresi. Örneğin:  
+ Bir URL veya bir dosya adı için kullanabileceğiniz *lpszURL* parametresi. Örneğin:  
   
  [!code-cpp[NVC_MFCWinInet#6](../../mfc/codesnippet/cpp/cmonikerfile-class_1.cpp)]  
   

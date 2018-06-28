@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86a46614cdb61e39af1016e496b12518b87f59ed
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 857eb87caf42e39366e261ac92c3b2f289fb41d9
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370513"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37039381"
 ---
 # <a name="cmfcribbonfontcombobox-class"></a>CMFCRibbonFontComboBox sınıfı
 Yazı tipleri listesini içeren bir birleşik giriş kutusu uygular. Birleşik giriş kutusu Şerit panelde yerleştirin.  
@@ -106,13 +106,13 @@ void BuildFonts(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nFontType`  
+ [in] *nFontType*  
  Eklemek için yazı tipi yazı tipini belirtir.  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  Yazı tipleri eklemek için karakter kümesini belirtir.  
   
- [in] `nPitchAndFamily`  
+ [in] *nPitchAndFamily*  
  Sıklık ve eklemek için yazı tipi ailesi belirtir.  
   
 ##  <a name="cmfcribbonfontcombobox"></a>  CMFCRibbonFontComboBox::CMFCRibbonFontComboBox  
@@ -128,25 +128,25 @@ CMFCRibbonFontComboBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Kullanıcı açılan kutusundan bir öğe seçtiğinde yürütür komutu komut kimliği.  
   
- [in] `nFontType`  
+ [in] *nFontType*  
  Birleşik giriş kutusu içinde görüntülemek için hangi yazı tipi türlerini belirtir. Geçerli seçenekler şunlardır: **DEVICE_FONTTYPE**, **RASTER_FONTTYPE**, ve **TRUETYPE_FONTTYPE**, veya bunların bir Bitsel birleşimine göre.  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  Belirtilen karakter kümesine ait olanlar için birleşik giriş kutusu yazı tipleri filtreler...  
   
- [in] `nPitchAndFamily`  
+ [in] *nPitchAndFamily*  
  Sıklık ve açılan kutuda görüntülenen yazı tipi ailesi belirtir.  
   
- [in] `nWidth`  
+ [in] *nWidth*  
  Birleşik giriş kutusu piksel cinsinden genişliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Olası hakkında daha fazla bilgi için `nFontType` parametre değerlerini görmek [EnumFontFamProc](http://msdn.microsoft.com/library/windows/desktop/dd162621) Windows SDK belgelerinde.  
+ Olası hakkında daha fazla bilgi için *nFontType* parametre değerlerini görmek [EnumFontFamProc](http://msdn.microsoft.com/library/windows/desktop/dd162621) Windows SDK belgelerinde.  
   
- Atanabilir geçerli karakter kümeleri hakkında daha fazla bilgi için `nCharSet`ve atanabilir geçerli değerler `nPitchAndFamily`, bkz: [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) Windows SDK belgelerinde.  
+ Atanabilir geçerli karakter kümeleri hakkında daha fazla bilgi için *nCharSet*ve atanabilir geçerli değerler *nPitchAndFamily*, bkz: [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) içinde Windows SDK Belgeleri.  
   
 ##  <a name="getfontdesc"></a>  CMFCRibbonFontComboBox::GetFontDesc  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -156,7 +156,7 @@ const CMFCFontInfo* GetFontDesc(int iIndex = -1) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -183,13 +183,13 @@ BOOL SetFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszName`  
+ ' lpszName *  
  Seçmek için yazı tipinin adını belirtir.  
   
- `nCharSet`  
+ *nCharSet*  
  Karakter kümesi seçili yazı tipini belirtir.  
   
- `bExact`  
+ *bExact*  
  `TRUE` karakter kümesi bir yazıtipi seçerken eşleşmesi gerektiğini belirtmek için; `FALSE` karakter kümesi bir yazıtipi seçerken yoksayılabilir belirtmek için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
