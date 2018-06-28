@@ -74,12 +74,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 582ffffc4461edd41078f1a89844bdc260b2dd40
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e765241029c0380dce7b28fa9fb4f9c84410d515
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376027"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37041964"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl sınıfı
 Windows ortak üstbilgi denetimi işlevselliğini sağlar.  
@@ -196,7 +196,7 @@ BOOL ClearFilter(int nColumn);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nColumn`  
+ *nColumn*  
  Hangi temizlemek için filtre gösteren sütun değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -220,23 +220,23 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwStyle`  
+ *dwStyle*  
  Üstbilgi denetim stilini belirtir. Üstbilgi denetim stilleri açıklaması için bkz: [üstbilgi denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775241) Windows SDK.  
   
- `rect`  
+ *Rect*  
  Üstbilgi denetim boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Üstbilgi denetim ana penceresinde, genellikle belirtir bir `CDialog`. Değil olmalıdır **NULL**.  
   
- `nID`  
+ *nID*  
  Üstbilgi denetim kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başlatma başarılı olduğunda sıfır olmayan; Aksi takdirde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturmak bir `CHeaderCtrl` iki adımda nesne. İlk olarak, Oluşturucusu arayın ve ardından arama **oluşturma**, üstbilgi denetimi oluşturur ve ekler `CHeaderCtrl` nesnesi.  
+ Oluşturmak bir `CHeaderCtrl` iki adımda nesne. İlk olarak, Oluşturucusu arayın ve ardından arama `Create`, üstbilgi denetimi oluşturur ve ekler `CHeaderCtrl` nesnesi.  
   
  Üstbilgi denetim stilleri yanı sıra nasıl üstbilgi denetimi yerleştirir ve kendisini yeniden boyutlandırır belirlemek için aşağıdaki ortak denetim stilleri kullanabilirsiniz (bkz [ortak denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775498) daha fazla bilgi için):  
   
@@ -264,7 +264,7 @@ virtual BOOL Create(
   
 - **WS_TABSTOP** belirtir herhangi bir sayı birini üzerinden kullanıcı taşımak için SEKME tuşunu kullanarak denetimlerin. Sekme tuşuna kullanıcı tarafından belirtilen bir sonraki denetime gider **WS_TABSTOP** stili.  
   
- Genişletilmiş windows stilleri denetimi ile kullanmak istiyorsanız, çağrı [CreateEx](#createex) yerine **oluşturma**.  
+ Genişletilmiş windows stilleri denetimi ile kullanmak istiyorsanız, çağrı [CreateEx](#createex) yerine `Create`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CHeaderCtrl#4](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_4.cpp)]  
@@ -282,26 +282,26 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwExStyle`  
- Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: `dwExStyle` parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
+ *dwExStyle*  
+ Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
   
- `dwStyle`  
+ *dwStyle*  
  Üstbilgi denetim stili. Üstbilgi denetim stilleri açıklaması için bkz: [üstbilgi denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775241) Windows SDK. Bkz: [oluşturma](#create) ek stilleri listesi.  
   
- `rect`  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı `pParentWnd`.  
+ *Rect*  
+ Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Denetimin üst penceresi için bir işaretçi.  
   
- `nID`  
+ *nID*  
  Denetimin alt pencere kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım `CreateEx` yerine **oluşturma** Windows genişletilmiş stili önsöz tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için **WS_EX_**.  
+ Kullanım `CreateEx` yerine `Create` Windows genişletilmiş stili önsöz tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için **WS_EX_**.  
   
 ##  <a name="createdragimage"></a>  CHeaderCtrl::CreateDragImage  
  Üstbilgi denetimi içinde bir öğenin resmi saydam bir sürümünü oluşturur.  
@@ -311,7 +311,7 @@ CImageList* CreateDragImage(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Üstbilgi denetimi içinde öğenin sıfır tabanlı dizini. Bu öğeye atanan resmin saydam görüntü temelini oluşturur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -330,7 +330,7 @@ BOOL DeleteItem(int nPos);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nPos`  
+ *nPos*  
  Silmek istediğiniz öğeyi sıfır tabanlı dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -347,7 +347,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpDrawItemStruct`  
+ *lpDrawItemStruct*  
  Bir işaretçi bir [DRAWITEMSTRUCT](http://msdn.microsoft.com/library/windows/desktop/bb775802) şekilde öğesi açıklayan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -355,7 +355,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
   
  Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Çizim sahibi çizim için uygulamak için bu üye işlevi geçersiz kılma `CHeaderCtrl` nesnesi.  
   
- Tüm grafik cihaz arabirimi (GDI) nesneleri görüntüleme bağlamı içinde sağlanan için seçilen uygulama kurtarmalısınız `lpDrawItemStruct` önce bu üye fonksiyonu sonlandırır.  
+ Tüm grafik cihaz arabirimi (GDI) nesneleri görüntüleme bağlamı içinde sağlanan için seçilen uygulama kurtarmalısınız *lpDrawItemStruct* önce bu üye fonksiyonu sonlandırır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CHeaderCtrl#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_6.cpp)]  
@@ -370,10 +370,10 @@ BOOL EditFilter(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nColumn`  
+ *nColumn*  
  Düzenlemek için sütun.  
   
- `bDiscardChanges`  
+ *bDiscardChanges*  
  Kullanıcı filtresi düzenleme sürecinde ise kullanıcı ne yapılacağını belirten bir değer düzenleme değişiklikleri zaman [HDM_EDITFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775312) ileti gönderilir.  
   
  Belirtin `true` kullanıcı tarafından yapılan değişiklikleri atmak için veya `false` kullanıcı tarafından yapılan değişiklikleri kabul etmek için.  
@@ -452,10 +452,10 @@ BOOL GetItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nPos`  
+ *nPos*  
  Alınacak öğenin sıfır tabanlı dizini belirtir.  
   
- `pHeaderItem`  
+ *pHeaderItem*  
  İşaretçi bir [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) yapısı yeni öğesini alır. Bu yapı kullanılır `InsertItem` ve `SetItem` üye işlevleri. Herhangi bir bayrağı kümesinde **maskesi** öğesi olun karşılık gelen öğeleri değerleri düzgün return doldurulduğundan. Varsa **maskesi** öğesi sıfır olarak ayarlandığında, diğer yapı öğeleri değerler anlamsız.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -490,8 +490,8 @@ BOOL GetItemDropDownRect(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iItem`|Stilini olduğu üstbilgi öğesinin sıfır tabanlı dizin `HDF_SPLITBUTTON`. Daha fazla bilgi için bkz: `fmt` üyesi [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) yapısı.|  
-|[out] `lpRect`|İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) sınırlayıcı dikdörtgen bilgilerini almak için yapısı.|  
+|[in] *iItem*|Stilini olduğu üstbilgi öğesinin sıfır tabanlı dizin `HDF_SPLITBUTTON`. Daha fazla bilgi için bkz: `fmt` üyesi [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) yapısı.|  
+|[out] *lpRect*|İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) sınırlayıcı dikdörtgen bilgilerini almak için yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu işlev başarılıysa; Aksi takdirde `false`.  
@@ -519,10 +519,10 @@ BOOL GetItemRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Üstbilgi denetimi öğesinin sıfır tabanlı dizini.  
   
- `lpRect`  
+ *lpRect*  
  Adresine bir işaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı sınırlayıcı dikdörtgen bilgilerini alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -541,10 +541,10 @@ BOOL GetOrderArray(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `piArray`  
+ *piArray*  
  Üstbilgi denetimindeki soldan sağa göründükleri sırada öğelerinin dizin değerini alan bir arabellek adresini gösteren bir işaretçi.  
   
- `iCount`  
+ *iCount*  
  Üstbilgi denetim öğeleri sayısı. Negatif olmalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -567,7 +567,7 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] `lpRect`|İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı sınırlayıcı dikdörtgen bilgilerini alır.|  
+|[out] *lpRect*|İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı sınırlayıcı dikdörtgen bilgilerini alır.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu işlev başarılıysa; Aksi takdirde `false`.  
@@ -598,7 +598,7 @@ int HitTest(LPHDHITTESTINFO* phdhti);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[içinde out] `phdhti`|İşaretçi bir [HDHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb775245) test etmek için noktasını belirtir ve test sonuçlarını alan yapısı.|  
+|[içinde out] *phdhti*|İşaretçi bir [HDHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb775245) test etmek için noktasını belirtir ve test sonuçlarını alan yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Üstbilgi öğesi, varsa, belirli bir konumda sıfır tabanlı dizini; Aksi durumda, -1.  
@@ -626,7 +626,7 @@ int InsertItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nPos`  
+ *nPos*  
  Eklenecek öğenin sıfır tabanlı dizini. Değerin sıfır ise, öğenin üstbilgi denetimi başında eklenir. Değeri en yüksek değerden daha büyükse, öğe üstbilgi denetimi sonuna eklenir.  
   
  *phdi*  
@@ -683,7 +683,7 @@ int SetBitmapMargin(int nWidth);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nWidth`  
+ *nWidth*  
  Varolan bir üstbilgi denetimi içinde bir bit eşlem çevreleyen kenar boşluğu piksel cinsinden belirtilen genişlik.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -726,7 +726,7 @@ BOOL SetFocusedItem(int iItem);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iItem`|Üstbilgi öğesi sıfır tabanlı dizini.|  
+|[in] *iItem*|Üstbilgi öğesi sıfır tabanlı dizini.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
@@ -753,10 +753,10 @@ int SetHotDivider(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pt`  
+ *PT*  
  İşaretçinin konumu. Üstbilgi denetimi işaretçinin konumuna göre uygun ayırıcı vurgular.  
   
- `nIndex`  
+ *nIndex*  
  Vurgulanan ayırıcı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -776,7 +776,7 @@ CImageList* SetImageList(CImageList* pImageList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pImageList`  
+ *pImageList*  
  Bir işaretçi bir `CImageList` üstbilgi denetimine atanan resim listesi içeren bir nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -798,10 +798,10 @@ BOOL SetItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nPos`  
+ *nPos*  
  Yönetilebilmesini öğenin sıfır tabanlı dizini.  
   
- `pHeaderItem`  
+ *pHeaderItem*  
  İşaretçi bir [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) yeni öğe hakkında bilgi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -820,10 +820,10 @@ BOOL SetOrderArray(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iCount`  
+ *iCount*  
  Üstbilgi denetim öğeleri sayısı.  
   
- `piArray`  
+ *piArray*  
  Üstbilgi denetimindeki soldan sağa göründükleri sırada öğelerinin dizin değerini alan bir arabellek adresini gösteren bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

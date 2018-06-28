@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4f56a02f469babe22c8e5cbb9ebb4d6b806499f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 74005682036e0a4d15d17d147b5994864fa97378
+ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369814"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042124"
 ---
 # <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolBar sınıfı
 Kullanıcının tıklatıp en üst düzey araç çubuğu düğmesi tutan olduğunda görüntülenen bir araç çubuğu.  
@@ -133,22 +133,22 @@ virtual BOOL LoadBitmap(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiResID`  
+ [in] *uiResID*  
  Etkin araç görüntülere başvuruyor bit eşlem kaynak kimliği.  
   
- [in] `uiColdResID`  
+ [in] *uiColdResID*  
  Soğuk araç görüntülere başvuruyor bit eşlem kaynak kimliği.  
   
- [in] `uiMenuResID`  
+ [in] *uiMenuResID*  
  Normal menü görüntülere başvuruyor bit eşlem kaynak kimliği.  
   
- [in] `bLocked`  
+ [in] *engellendi*  
  `TRUE` araç çubuğu kilitlemek için; Aksi takdirde `FALSE`.  
   
- [in] `uiDisabledResID`  
+ [in] *uiDisabledResID*  
  Devre dışı bırakılmış araç görüntülere başvuruyor bit eşlem kaynak kimliği.  
   
- [in] `uiMenuDisabledResID`  
+ [in] *uiMenuDisabledResID*  
  Devre dışı bırakılmış menü görüntülere başvuruyor bit eşlem kaynak kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -174,13 +174,13 @@ virtual BOOL LoadToolBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `uiResID`  
- [in] `uiColdResID`  
- [in] `uiMenuResID`  
- [in] `BOOL`  
- [in] `uiDisabledResID`  
- [in] `uiMenuDisabledResID`  
- [in] `uiHotResID`  
+ [in] *uiResID*  
+ [in] *uiColdResID*  
+ [in] *uiMenuResID*  
+ [in] *BOOL*  
+ [in] *uiDisabledResID*  
+ [in] *uiMenuDisabledResID*  
+ [in] *uiHotResID*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -196,8 +196,8 @@ afx_msg void OnLButtonUp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nFlags`  
- [in] `point`  
+ [in] *nFlags*  
+ [in] *noktası*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -211,8 +211,8 @@ afx_msg void OnMouseMove(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nFlags`  
- [in] `point`  
+ [in] *nFlags*  
+ [in] *noktası*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -224,7 +224,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pButton`  
+ [in] *pButton*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -240,8 +240,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pTarget`  
- [in] `bDisableIfNoHndler`  
+ [in] *pTarget*  
+ [in] *bDisableIfNoHndler*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
