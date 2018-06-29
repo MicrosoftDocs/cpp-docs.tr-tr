@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d00d78acf7ddf8cfa27e117cbcdbbb00c7d6fa6b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 71871eae42fc720481852be1e60c934f941858c6
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374844"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078162"
 ---
 # <a name="collection-class-helpers"></a>Koleksiyon Sınıfı Yardımcıları
-Koleksiyon sınıfları `CMap`, `CList`, ve `CArray` karşılaştırma, kopyalama ve öğelerini serileştirme gibi amaçlarla şablonlu genel yardımcı işlevleri kullanın. Temel sınıflarının, uygulamanızı bir parçası olarak `CMap`, `CList`, ve `CArray`, eşlemesi, liste veya dizi depolanan verilerin türünü uyarlanmış sürümleriyle gerektikçe bu işlevleri geçersiz kılmalıdır. Yardımcı işlevleri gibi geçersiz kılma hakkında bilgi için `SerializeElements`, makaleye bakın [koleksiyonları: tür kullanımı uyumlu koleksiyon yapma](../../mfc/how-to-make-a-type-safe-collection.md). Unutmayın **ConstructElements** ve **DestructElements** kullanım dışı bırakıldı.  
+Koleksiyon sınıfları `CMap`, `CList`, ve `CArray` karşılaştırma, kopyalama ve öğelerini serileştirme gibi amaçlarla şablonlu genel yardımcı işlevleri kullanın. Temel sınıflarının, uygulamanızı bir parçası olarak `CMap`, `CList`, ve `CArray`, eşlemesi, liste veya dizi depolanan verilerin türünü uyarlanmış sürümleriyle gerektikçe bu işlevleri geçersiz kılmalıdır. Yardımcı işlevleri gibi geçersiz kılma hakkında bilgi için `SerializeElements`, makaleye bakın [koleksiyonları: tür kullanımı uyumlu koleksiyon yapma](../../mfc/how-to-make-a-type-safe-collection.md). Unutmayın `ConstructElements` ve `DestructElements` kullanım dışı bırakıldı.  
   
  Microsoft Foundation Class Kitaplığı afxtempl.h koleksiyon sınıfları özelleştirmenize yardımcı olması için aşağıdaki genel işlevler sağlar:  
   
@@ -57,24 +57,24 @@ CompareElements(
  *TÜRÜ*  
  Karşılaştırılacak ilk öğe türü.  
   
- `pElement1`  
+ *pElement1*  
  Karşılaştırılacak ilk öğe işaretçi.  
   
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Karşılaştırılacak ikinci öğe türü.  
   
- `pElement2`  
+ *pElement2*  
  Karşılaştırılacak ikinci öğesi işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Nesne gösterdiği, sıfır olmayan `pElement1` gösterdiği nesnesine eşit olan `pElement2`; Aksi halde 0.  
+ Nesne gösterdiği, sıfır olmayan *pElement1* gösterdiği nesnesine eşit olan *pElement2*; Aksi halde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `CMap` Çağırır kullanım `CMap` şablon parametreleri *anahtar* ve `ARG_KEY`.  
   
  Varsayılan uygulama karşılaştırması sonucunu döndürür  *\*pElement1* ve  *\*pElement2*. Böylece, uygulamanız için uygun şekilde öğeleri karşılaştırır bu işlev geçersiz kılar.  
   
- C++ dili karşılaştırma işleci tanımlar ( `==`) basit türleri için ( `char`, `int`, **float**, vb.) sınıfları ve yapıları için bir karşılaştırma işleci tanımlamaz, ancak. Kullanmak istiyorsanız, `CompareElements` veya kullandığı koleksiyon sınıfları birini örneği oluşturmak için karşılaştırma işleci tanımlama veya aşırı `CompareElements` bir sürümüyle uygun değerleri döndürür.  
+ C++ dili karşılaştırma işleci tanımlar ( `==`) basit türleri için ( **char**, **int**, **float**, vb.) için bir karşılaştırma işleci tanımlamaz, ancak sınıfları ve yapıları. Kullanmak istiyorsanız, `CompareElements` veya kullandığı koleksiyon sınıfları birini örneği oluşturmak için karşılaştırma işleci tanımlama veya aşırı `CompareElements` bir sürümüyle uygun değerleri döndürür.  
   
 ### <a name="requirements"></a>Gereksinimler  
    **Başlık:** afxtempl.h   
@@ -94,13 +94,13 @@ void AFXAPI CopyElements(
  *TÜRÜ*  
  Kopyalanacak öğelerin türünü belirten bir şablon parametre.  
   
- `pDest`  
+ *pDest*  
  Öğelerin kopyalanacağı hedef işaretçi.  
   
- `pSrc`  
+ *pSrc*  
  İşaretçi kaynağına kopyalanacak öğe.  
   
- `nCount`  
+ *nCount*  
  Kopyalanacak öğe sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -123,20 +123,20 @@ void  AFXAPI DumpElements(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dc`  
+ *DC*  
  Öğeleri dökme için bağlam dökümü.  
   
  *TÜRÜ*  
  Öğelerin türünü belirten bir şablon parametre.  
   
- `pElements`  
+ *pElements*  
  Öğeleri dökümünün için işaretçi.  
   
- `nCount`  
+ *nCount*  
  Dökümünün öğe sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **CArray::Dump**, **CList::Dump**, ve **CMap::Dump** işlevleri çağırmak, bu, döküm derinliği 0'dan büyük olması durumunda.  
+ `CArray::Dump`, `CList::Dump`, Ve `CMap::Dump` işlevleri çağırmak, bu, döküm derinliği 0'dan büyük olması durumunda.  
   
  Varsayılan uygulama hiçbir şey yapmaz. Koleksiyonunuz öğelerini türetilmiş varsa `CObject`, geçersiz kılma koleksiyonun öğelerini aracılığıyla genellikle yinelemek çağırma `Dump` Aç her öğe için.  
   
@@ -153,10 +153,10 @@ AFX_INLINE UINT AFXAPI HashKey(ARG_KEY  key);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ARG_KEY`  
+ *ARG_KEY*  
  Şablon parametresi harita anahtarları erişmek için kullanılan veri türünü belirtme.  
   
- `key`  
+ *Anahtarı*  
  Karma değeri hesaplanacak olan anahtar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -165,7 +165,7 @@ AFX_INLINE UINT AFXAPI HashKey(ARG_KEY  key);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev doğrudan göre adlandırılır [CMap::RemoveKey](cmap-class.md#removekey) ve dolaylı olarak [CMap::Lookup](cmap-class.md#lookup) ve [CMap::Operator &#91; &#93; ](cmap-class.md#operator_at).
   
- Varsayılan uygulama değiştirerek bir karma değer oluşturan `key` dört konumlar sağ tarafından. Bu işlev, böylece karma değerleri, uygulamanız için uygun döndürür geçersiz kılar.  
+ Varsayılan uygulama değiştirerek bir karma değer oluşturan *anahtar* dört konumlar sağ tarafından. Bu işlev, böylece karma değerleri, uygulamanız için uygun döndürür geçersiz kılar.  
   
 ### <a name="example"></a>Örnek
  ```cpp  
@@ -192,13 +192,13 @@ void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
  *TÜRÜ*  
  Öğelerin türünü belirten bir şablon parametre.  
   
- `ar`  
+ *ar*  
  Gelen veya giden arşivlemek için bir arşiv nesne.  
   
- `pElements`  
+ *pElements*  
  Arşivlenen öğeleri işaretçi.  
   
- `nCount`  
+ *nCount*  
  Arşivlenen öğelerin sayısı  
   
 ### <a name="remarks"></a>Açıklamalar  

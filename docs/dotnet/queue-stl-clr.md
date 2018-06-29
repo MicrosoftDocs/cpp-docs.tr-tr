@@ -73,12 +73,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: b4d591d2abd7613777dec6ae668badd84fe31d0c
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: 1ae23bf845e3fa78a1971def6ea0034c94b57991
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305559"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079713"
 ---
 # <a name="queue-stlclr"></a>sıraya al (STL/CLR)
 Şablon sınıfı ilk giren ilk çıkar özelliğine sahip erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `queue` temel alınan bir kapsayıcı bir sıra olarak yönetmek için.  
@@ -97,7 +97,7 @@ template<typename Value,
     { ..... };  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  Değer  
  Denetlenen sıradaki öğenin türü.  
   
@@ -157,7 +157,7 @@ template<typename Value,
 |<xref:System.ICloneable>|Yinelenen bir nesne.|  
 |IQueue\<değeri, kapsayıcı >|Genel kapsayıcı bağdaştırıcısı korur.|  
   
-### <a name="remarks"></a>Açıklamalar  
+## <a name="remarks"></a>Açıklamalar  
  Nesne ayırır ve türündeki temel alınan bir kapsayıcı denetlediği dizisi için depolama boşaltır `Container`, depolar `Value` öğeleri ve isteğe bağlı olarak artar. Yalnızca ilk öğe gönderilmesi için nesne erişimi kısıtlayan ve son öğe pencerelerinin, ilk giren ilk çıkar uygulama sıraya (FIFO sıra veya yalnızca bir sıra olarak da bilinir).  
   
 ## <a name="members"></a>Üyeler

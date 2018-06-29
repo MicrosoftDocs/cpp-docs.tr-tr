@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02cf84f2774a10ec0ca2751dbeffd4eb3c52e8a2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5f54f600e9a98304f1113c6e9e22389f6c974a80
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370981"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078901"
 ---
 # <a name="cparabolictransitionfromacceleration-class"></a>CParabolicTransitionFromAcceleration sınıfı
 Hızlandırma parabolic geçiş yalıtır.  
@@ -88,13 +88,13 @@ CParabolicTransitionFromAcceleration(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dblFinalValue`  
+ *dblFinalValue*  
  Geçiş işleminin sonunda animasyon değişkeninin değeri.  
   
- `dblFinalVelocity`  
+ *dblFinalVelocity*  
  Geçiş işleminin sonunda animasyon değişken hız.  
   
- `dblAcceleration`  
+ *dblAcceleration*  
  Animasyon değişkeni hızlandırma geçiş sırasında.  
   
 ##  <a name="create"></a>  CParabolicTransitionFromAcceleration::Create  
@@ -107,7 +107,7 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pLibrary`  
+ *pLibrary*  
  Standart geçişleri oluşturulmasında sorumludur geçiş kitaplığı için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

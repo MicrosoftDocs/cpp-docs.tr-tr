@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9833607065407e66473a9fab1907bf2262816296
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a9f5cc55adac2bf5900d9891635a025716b9c1f3
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370646"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078585"
 ---
 # <a name="csinusoidaltransitionfromvelocity-class"></a>CSinusoidalTransitionFromVelocity sınıfı
 Animasyon değişkeni ilk hız tarafından belirlenen bir genliğidir olan hız sinusoidal geçiş yalıtır.  
@@ -84,7 +84,7 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pLibrary`  
+ *pLibrary*  
  Standart geçişleri oluşturulmasında sorumludur geçiş kitaplığı için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -100,10 +100,10 @@ CSinusoidalTransitionFromVelocity(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `duration`  
+ *Süre*  
  Geçiş süresi.  
   
- `period`  
+ *Süresi*  
  Sinusoidal wave oscillation saniye cinsinden süre.  
   
 ##  <a name="m_duration"></a>  CSinusoidalTransitionFromVelocity::m_duration  

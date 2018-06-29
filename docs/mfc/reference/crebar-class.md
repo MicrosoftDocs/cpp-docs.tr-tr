@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94fc1e0ccad8980e0ed5a1cc0f8c0262502e1398
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1ea2a1047864c19be3f5bbd6c303b4b00fb132dc
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371152"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078775"
 ---
 # <a name="crebar-class"></a>CReBar sınıfı
 Denetim çubuğu düzeni, sürdürme ve rebar denetimleri için durum bilgilerini sağlar.  
@@ -56,10 +56,10 @@ class CReBar : public CControlBar
 ## <a name="rebar-control"></a>Rebar denetimi  
  Bir rebar nesnesi bir araç nesnesine benzer şekilde davranır. Bir rebar kendi bantları yeniden boyutlandırmak için tıklatın ve sürükleyin mekanizması kullanır. Rebar denetimiyle Mandal çubuğu, bir bit eşlem, bir metin etiketi ve alt pencere herhangi bir bileşimini sahip her bant ile bir veya daha fazla bantları içerebilir. Ancak, bantlar birden fazla alt pencere içeremez.  
   
- **CReBar** kullanan [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) kendi uygulama sunmak amacıyla sınıfı. Rebar denetimi aracılığıyla erişebilirsiniz [GetReBarCtrl](#getrebarctrl) denetimin özelleştirme seçenekleri yararlanmak için. Rebar denetimleri hakkında daha fazla bilgi için bkz: `CReBarCtrl`. Rebar denetimleri kullanma hakkında daha fazla bilgi için bkz: [kullanarak CReBarCtrl](../../mfc/using-crebarctrl.md).  
+ `CReBar` kullanan [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) kendi uygulama sunmak amacıyla sınıfı. Rebar denetimi aracılığıyla erişebilirsiniz [GetReBarCtrl](#getrebarctrl) denetimin özelleştirme seçenekleri yararlanmak için. Rebar denetimleri hakkında daha fazla bilgi için bkz: `CReBarCtrl`. Rebar denetimleri kullanma hakkında daha fazla bilgi için bkz: [kullanarak CReBarCtrl](../../mfc/using-crebarctrl.md).  
   
 > [!CAUTION]
->  Rebar ve rebar denetimi nesneleri yerleştirme çubuğu MFC denetim desteklemez. Varsa **CRebar::EnableDocking** , uygulamanızın assert denir.  
+>  Rebar ve rebar denetimi nesneleri yerleştirme çubuğu MFC denetim desteklemez. Varsa `CRebar::EnableDocking` , uygulamanızın assert denir.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -95,16 +95,16 @@ BOOL AddBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pBar`  
+ *pBar*  
  Bir işaretçi bir `CWnd` rebar eklenecek alt pencere nesnesi. Başvurulan nesne olmalıdır bir **WS_CHILD**.  
   
- `lpszText`  
- Rebar üzerinde görüntülenecek metni içeren bir dize için bir işaretçi. **NULL** varsayılan olarak. Bulunan metin `lpszText` alt pencere; parçası olmayan rebar üzerinde değil.  
+ *lpszText*  
+ Rebar üzerinde görüntülenecek metni içeren bir dize için bir işaretçi. **NULL** varsayılan olarak. Bulunan metin *lpszText* alt pencere; parçası olmayan rebar üzerinde değil.  
   
- `pbmp`  
+ *pbmp*  
  Bir işaretçi bir `CBitmap` rebar arka planda görüntülenecek nesne. **NULL** varsayılan olarak.  
   
- `dwStyle`  
+ *dwStyle*  
  A `DWORD` rebar uygulamak için stili içeren. Bkz **fStyle** işlev Win32 yapısı açıklamasında [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) bant stilleri tam bir listesi.  
   
  *clrFore*  
@@ -131,16 +131,16 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentWnd`  
+ *pParentWnd*  
  İşaretçi `CWnd` olan Windows penceresi durum çubuğunun üst nesne. Normalde, çerçeve penceresi.  
   
- `dwCtrlStyle`  
+ *dwCtrlStyle*  
  Rebar denetimi stili. Varsayılan olarak, **RBS_BANDBORDERS**, hangi görüntüler rebar denetimi içinde bitişik bantları ayırmak için satırları daraltın. Bkz: [Rebar denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774377) stilleri listesi için Windows SDK.  
   
- `dwStyle`  
+ *dwStyle*  
  Rebar pencere stilleri.  
   
- `nID`  
+ *nID*  
  Rebar ait alt pencere kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  

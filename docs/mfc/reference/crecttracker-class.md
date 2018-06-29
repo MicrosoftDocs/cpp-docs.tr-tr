@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eff57e1fde0af6e794c2c47db7d1e31daf545715
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c4ce3c4dbfbf49791673392a1e1234728a680611
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375914"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079674"
 ---
 # <a name="crecttracker-class"></a>CRectTracker sınıfı
 Bir öğenin görüntülenen taşınır ve farklı fashions yeniden boyutlandırılıp sağlar.  
@@ -124,16 +124,16 @@ virtual void AdjustRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nHandle`  
+ *nHandle*  
  Kullanılan işleyici dizini.  
   
- `lpRect`  
+ *lpRect*  
  Dikdörtgen boyutunu işaretçi. (Bir dikdörtgen boyutunun yüksekliğini ve genişliğini tarafından verilir.)  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev varsayılan davranışını yalnızca değiştirmek dikdörtgenin yönlendirmesini sağlar `Track` ve `TrackRubberBand` izin ters çevirme ile denir.  
   
- İzleme dikdörtgen ayarlama sürükleme işlemi sırasında denetlemek için bu işlevi geçersiz kılar. Bir yöntemdir tarafından belirtilen koordinatları ayarlamak için `lpRect` dönmeden önce.  
+ İzleme dikdörtgen ayarlama sürükleme işlemi sırasında denetlemek için bu işlevi geçersiz kılar. Bir yöntemdir tarafından belirtilen koordinatları ayarlamak için *lpRect* dönmeden önce.  
   
  Tarafından doğrudan desteklenmeyen özelliklere `CRectTracker`, bu işlev geçersiz kılarak gibi ek kılavuz veya canlı-boyut oranı, uygulanabilir.  
   
@@ -150,10 +150,10 @@ CRectTracker(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpSrcRect`  
+ *lpSrcRect*  
  Dikdörtgen nesnenin koordinatları.  
   
- `nStyle`  
+ *nStyle*  
  Stilini belirtir `CRectTracker` nesnesi. Aşağıdaki stiller desteklenir:  
   
 - **CRectTracker::solidLine** Kesiksiz bir çizgi Dikdörtgen kenarlık için kullanın.  
@@ -169,7 +169,7 @@ CRectTracker(
 - **CRectTracker::hatchInside** Hatched düzeni tüm dikdörtgen kapsar.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan Oluşturucu başlatır `CRectTracker` değerlerle nesne `lpSrcRect` ve diğer sistem varsayılanlarını boyutlarına başlatır. Nesne hiçbir parametrelerle oluşturduysanız `m_rect` ve `m_nStyle` veri üyeleri başlatılmamış.  
+ Varsayılan Oluşturucu başlatır `CRectTracker` değerlerle nesne *lpSrcRect* ve diğer sistem varsayılanlarını boyutlarına başlatır. Nesne hiçbir parametrelerle oluşturduysanız `m_rect` ve `m_nStyle` veri üyeleri başlatılmamış.  
   
 ##  <a name="draw"></a>  CRectTracker::Draw  
  Dikdörtgenin dış çizgiler ve iç bölge çizmek için bu işlevini çağırın.  
@@ -179,7 +179,7 @@ void Draw(CDC* pDC) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Üretileceği çizmek cihaz bağlamı işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -197,16 +197,16 @@ virtual void DrawTrackerRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpRect`  
+ *lpRect*  
  İşaretçi `RECT` dikdörtgen çizmek için içerir.  
   
- `pWndClipTo`  
+ *pWndClipTo*  
  Dikdörtgen kırpma kullanmak için pencereyi işaretçi.  
   
- `pDC`  
+ *pDC*  
  Üretileceği çizmek cihaz bağlamı işaretçi.  
   
- `pWnd`  
+ *pWnd*  
  İşaretçi penceresine çizim meydana gelir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -243,11 +243,11 @@ void GetTrueRect(LPRECT lpTrueRect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpTrueRect`  
+ *lpTrueRect*  
  İşaretçi `RECT` cihaz içerecek yapısı koordinatları `CRectTracker` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dikdörtgen boyutlarını dış kenarlık üzerinde bulunan tüm boyutlandırma genişliği ve yüksekliği içerir. Döndürme, bağlı `lpTrueRect` her zaman normalleştirilmiş dikdörtgene aygıt koordinatları olur.  
+ Dikdörtgen boyutlarını dış kenarlık üzerinde bulunan tüm boyutlandırma genişliği ve yüksekliği içerir. Döndürme, bağlı *lpTrueRect* her zaman normalleştirilmiş dikdörtgene aygıt koordinatları olur.  
   
 ##  <a name="hittest"></a>  CRectTracker::HitTest  
  Olup kullanıcı yeniden boyutlandırma tutamacı gerçekleşti çıkışı bulmak için bu işlevini çağırın.  
@@ -257,7 +257,7 @@ int HitTest(CPoint point) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `point`  
+ *Noktası*  
  Test etmek için cihaz koordinatları noktası.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -328,7 +328,7 @@ int NormalizeHit(int nHandle) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nHandle`  
+ *nHandle*  
  Kullanıcı tarafından seçilen işleci.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -363,17 +363,17 @@ BOOL SetCursor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  Şu anda imlecin bulunduğu pencereyi noktalarına.  
   
- `nHitTest`  
- Önceki isabet testi sonuçlarını gelen `WM_SETCURSOR` ileti.  
+ *nHitTest*  
+ WM_SETCURSOR iletiden önceki isabet testi sonuçları.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Önceki İsabet üzerine İzleyicisi dikdörtgen ise sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlevden pencerenizin işleme işlevi içinde çağrı `WM_SETCURSOR` ileti (genellikle `OnSetCursor`).  
+ Bu işlevden pencerenizin WM_SETCURSOR iletiyi işleyen işlev içinde arama (genellikle `OnSetCursor`).  
   
 ##  <a name="track"></a>  CRectTracker::Track  
  Dikdörtgen yeniden boyutlandırma için kullanıcı arabirimi görüntülemek için bu işlevini çağırın.  
@@ -387,17 +387,17 @@ BOOL Track(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  Dikdörtgen içeren pencere nesnesi.  
   
- `point`  
+ *Noktası*  
  İstemci alanını göre geçerli fare konumunun cihaz koordinatları.  
   
- `bAllowInvert`  
+ *bAllowInvert*  
  Varsa **TRUE**, dikdörtgen x ekseni veya y ekseni boyunca ters; Aksi takdirde **FALSE**.  
   
- `pWndClipTo`  
- Operations çizim için kırpılacak penceresini açın. Varsa **NULL**, `pWnd` dikdörtgen kırpma kullanılır.  
+ *pWndClipTo*  
+ Operations çizim için kırpılacak penceresini açın. Varsa **NULL**, *pWnd* dikdörtgen kırpma kullanılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  ESC tuşuna basılana, izleme işlemi durdu, İzleyici'depolanan dikdörtgen değiştirilmediğini ve 0 değeri döndürülür. Değişiklik tamamlanırsa, fareyi hareket ettirmek ve sol fare düğmesini bırakmadan yeni konumu ve/veya boyutunu kaydedilir İzleyici'nin dikdörtgende ve sıfır olmayan döndürülür.  
@@ -407,7 +407,7 @@ BOOL Track(
   
  Kullanıcı sol fare düğmesini serbest, ESC tuşuna bastığında veya farenin sağ düğmesiyle bastığında kadar bu işlev fare yakalar. Kullanıcı fare imlecini taşınırken, geri bildirim arayarak güncelleştirilir `DrawTrackerRect` ve `OnChangedRect`.  
   
- Varsa `bAllowInvert` olan **doğru**, izleme dikdörtgenin x ekseni veya y ekseni üzerinde ters.  
+ Varsa *bAllowInvert* olan **doğru**, izleme dikdörtgenin x ekseni veya y ekseni üzerinde ters.  
   
 ##  <a name="trackrubberband"></a>  CRectTracker::TrackRubberBand  
  Bant dışı pencere seçim yapmak için bu işlevini çağırın.  
@@ -420,20 +420,20 @@ BOOL TrackRubberBand(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  Dikdörtgen içeren pencere nesnesi.  
   
- `point`  
+ *Noktası*  
  İstemci alanını göre geçerli fare konumunun cihaz koordinatları.  
   
- `bAllowInvert`  
+ *bAllowInvert*  
  Varsa **TRUE,** dikdörtgen x ekseni veya y ekseni boyunca ters; Aksi takdirde **FALSE**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Fare taşınmıştır ve dikdörtgen boş değilse, sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu genellikle işlediği uygulamanızı işlevi içinde çağrılır `WM_LBUTTONDOWN` ileti (genellikle `OnLButtonDown`).  
+ Bu genellikle WM_LBUTTONDOWN iletiyi işleyen uygulamanızı işlevi içinde çağrılır (genellikle `OnLButtonDown`).  
   
  Kullanıcı sol fare düğmesini serbest, ESC tuşuna bastığında veya farenin sağ düğmesiyle bastığında kadar bu işlev fare yakalar. Kullanıcı fare imlecini taşınırken, geri bildirim arayarak güncelleştirilir `DrawTrackerRect` ve `OnChangedRect`.  
   

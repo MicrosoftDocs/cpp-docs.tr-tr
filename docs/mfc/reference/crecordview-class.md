@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3784bfd637c40f326a67807d0002fae66177ac37
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d3d040f2da622cbfd6d1577729861917a5a03270
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373491"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079153"
 ---
 # <a name="crecordview-class"></a>CRecordView sınıfı
 Veritabanı kayıtlarını denetimlerinde görüntüleyen bir görünüm.  
@@ -109,10 +109,10 @@ explicit CRecordView(UINT nIDTemplate);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Bir iletişim şablonunu kaynak adı null ile sonlandırılmış bir dize içeriyor.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Bir iletişim şablonunu kaynak kimliği numarasını içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -124,7 +124,7 @@ explicit CRecordView(UINT nIDTemplate);
  **CRecordView::OnInitialUpdate** çağrıları `UpdateData`, çağıran `DoDataExchange`. Bu ilk çağrı `DoDataExchange` bağlanır `CRecordView` (dolaylı olarak) denetimleri `CRecordset` alan veri üyeleri ClassWizard tarafından oluşturulmuş. Kadar temel sınıfı çağırdıktan sonra bu verileri üyeleri kullanılamaz **CFormView::OnInitialUpdate** üye işlevi.  
   
 > [!NOTE]
->  ClassWizard kullanırsanız, sihirbazın tanımlayan bir `enum` değeri `CRecordView::IDD`sınıfı bildiriminde belirtir ve üye başlatma listesinde Oluşturucusu kullanır.  
+>  ClassWizard kullanırsanız, sihirbazın tanımlayan bir **enum** değeri `CRecordView::IDD`sınıfı bildiriminde belirtir ve üye başlatma listesinde Oluşturucusu kullanır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDatabase#32](../../mfc/codesnippet/cpp/crecordview-class_1.cpp)]  
@@ -158,7 +158,7 @@ BOOL IsOnLastRecord();
  Bu işlev, kendi uygulamalarında varsayılan kayıt kaydı taşımak için bir kullanıcı arabirimi destekleyecek şekilde ClassWizard Yazar komut güncelleştirme işleyicileri yazmak için yararlıdır.  
   
 > [!CAUTION]
->  Kullanıcı bu taşınmıştır dek görünümü kayıt kümesinin sonuna algılayamaz dışında bu işlevin sonucu güvenilirdir. Kayıt görünümü sonraki ya da son kayda taşıma için herhangi bir kullanıcı arabirimi nesneleri mamtelemetrydisabled anlayabilirsiniz önce kullanıcı son kaydı taşımanız gerekir. Kullanıcı son kaydı ve ardından geri son kaydı taşır (veya önceki), kayıt görünümü kümesinde kullanıcının konumunu izlemenize ve kullanıcı arabirimi nesneleri doğru devre dışı bırakabilirsiniz. `IsOnLastRecord` Ayrıca uygulama işlevi çağrısı sonra güvenilir olmayan **OnRecordLast**, yürüten `ID_RECORD_LAST` komutu veya `CRecordset::MoveLast`.  
+>  Kullanıcı bu taşınmıştır dek görünümü kayıt kümesinin sonuna algılayamaz dışında bu işlevin sonucu güvenilirdir. Kayıt görünümü sonraki ya da son kayda taşıma için herhangi bir kullanıcı arabirimi nesneleri mamtelemetrydisabled anlayabilirsiniz önce kullanıcı son kaydı taşımanız gerekir. Kullanıcı son kaydı ve ardından geri son kaydı taşır (veya önceki), kayıt görünümü kümesinde kullanıcının konumunu izlemenize ve kullanıcı arabirimi nesneleri doğru devre dışı bırakabilirsiniz. `IsOnLastRecord` Ayrıca uygulama işlevi çağrısı sonra güvenilir olmayan `OnRecordLast`, yürüten `ID_RECORD_LAST` komutu veya `CRecordset::MoveLast`.  
   
 ##  <a name="ongetrecordset"></a>  CRecordView::OnGetRecordset  
  Bir işaretçi döndürür `CRecordset`-kayıt görünümü ile ilişkili nesne türetilmiş.  
@@ -171,7 +171,7 @@ virtual CRecordset* OnGetRecordset() = 0;
  Bir işaretçi bir `CRecordset`-nesne, başarıyla oluşturulmuş aksi nesne türetilmiş bir **NULL** işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi oluşturmak veya bir kayıt kümesi nesnesini alın ve bir işaretçi döndürmek için geçersiz kılmanız gerekir. Kayıt görünümü sınıfınız ClassWizard ile bildirirseniz, sihirbaz varsayılan geçersiz kılma yazar. ClassWizard'ın varsayılan uygulaması varsa kayıt görünümünde depolanan kayıt kümesi işaretçi döndürür. Türündeki bir kayıt kümesi nesnesi oluşturur, varsa çağrıları ve ClassWizard ile belirtilen kendi **açmak** üye tabloyu veya sorguyu çalıştırmak için işlev ve ardından bir işaretçi nesneyi döndürür.  
+ Bu üye işlevi oluşturmak veya bir kayıt kümesi nesnesini alın ve bir işaretçi döndürmek için geçersiz kılmanız gerekir. Kayıt görünümü sınıfınız ClassWizard ile bildirirseniz, sihirbaz varsayılan geçersiz kılma yazar. ClassWizard'ın varsayılan uygulaması varsa kayıt görünümünde depolanan kayıt kümesi işaretçi döndürür. Türündeki bir kayıt kümesi nesnesi oluşturur, varsa çağrıları ve ClassWizard ile belirtilen kendi `Open` üye tabloyu veya sorguyu çalıştırmak için işlev ve ardından bir işaretçi nesneyi döndürür.  
   
  Daha fazla bilgi ve örnekler için bkz: [kayıt görünümleri: kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md).  
   
@@ -198,7 +198,7 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
  Taşıma başarılı olduğunda sıfır olmayan; taşıma isteği reddedildiyse aksi 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama uygun çağırır **taşıma** üye işlevini `CRecordset` kayıt görünümü ile ilişkili nesne.  
+ Varsayılan uygulama uygun çağırır `Move` üye işlevini `CRecordset` kayıt görünümü ile ilişkili nesne.  
   
  Varsayılan olarak, `OnMove` kullanıcı kayıt görünümünde değiştirilmesi durumunda geçerli kaydı veri kaynağında güncelleştirir.  
   
@@ -207,7 +207,7 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
  Kayıt kümesindeki son kayıt geçmiş taşırsanız, kayıt görünümü son kaydı görüntülemeye devam eder. Geriye doğru ilk kaydı taşırsanız, kayıt görünümü ilk kaydı görüntülemeye devam eder.  
   
 > [!CAUTION]
->  Çağırma `OnMove` hiçbir kayıt kayıt varsa, bir özel durum oluşturur. Uygun kullanıcı arabirimi güncelleştirme işleyicisi işlevini çağırın — **OnUpdateRecordFirst**, **OnUpdateRecordLast**, **OnUpdateRecordNext**, veya  **OnUpdateRecordPrev** — karşılık gelen önce taşıma işlemi kayıt herhangi bir kayıt olup olmadığını belirlemek için.  
+>  Çağırma `OnMove` hiçbir kayıt kayıt varsa, bir özel durum oluşturur. Uygun kullanıcı arabirimi güncelleştirme işleyicisi işlevini çağırın — `OnUpdateRecordFirst`, `OnUpdateRecordLast`, `OnUpdateRecordNext`, veya `OnUpdateRecordPrev` — karşılık gelen önce taşıma işlemi kayıt herhangi bir kayıt olup olmadığını belirlemek için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Cformview'yu sınıfı](../../mfc/reference/cformview-class.md)   

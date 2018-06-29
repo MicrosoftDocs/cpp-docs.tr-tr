@@ -108,12 +108,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e595db4e194744ce5d1f1d644a55423c1022fc2e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 85a3c51f5c59b510e1024cc5f363096952c0f35a
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377593"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079468"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl sınıfı
 Alt pencere için bir kapsayıcıdır rebar denetimiyle işlevselliği kapsar.  
@@ -234,11 +234,11 @@ void BeginDrag(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `uBand`  
+ *uBand*  
  Sürükle ve bırak işlemi etkiler bant sıfır tabanlı dizini.  
   
- `dwPos`  
- A `DWORD` değeri başlangıç fare koordinatları içerir. Yatay koordinat LOWORD yer alır ve dikey koordinat HIWORD yer alır. Geçirirseniz `(DWORD)-1`, rebar denetimi son kez adlı denetimin iş parçacığı fare konumunu kullanacağı **GetMessage** veya **PeekMessage**.  
+ *dwPos*  
+ A `DWORD` değeri başlangıç fare koordinatları içerir. Yatay koordinat LOWORD yer alır ve dikey koordinat HIWORD yer alır. Geçirirseniz `(DWORD)-1`, rebar denetimi son kez adlı denetimin iş parçacığı fare konumunu kullanacağı `GetMessage` veya `PeekMessage`.  
   
 ##  <a name="create"></a>  CReBarCtrl::Create  
  Rebar denetimi oluşturur ve ona ekler `CReBarCtrl` nesnesi.  
@@ -252,16 +252,16 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwStyle`  
+ *dwStyle*  
  Rebar denetimi stilleri denetime uygulanan bileşimini belirtir. Bkz: [Rebar denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774377) desteklenen stilleri listesi için Windows SDK.  
   
- `rect`  
+ *Rect*  
  Bir başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) konum ve boyutlarının rebar denetimi yapısı.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) rebar denetimi üst pencere nesnesi. Değil olmalıdır **NULL**.  
   
- `nID`  
+ *nID*  
  Rebar denetimin denetim kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -292,19 +292,19 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwExStyle`  
- Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: `dwExStyle` parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
+ *dwExStyle*  
+ Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
   
- `dwStyle`  
+ *dwStyle*  
  Rebar denetimi stilleri denetime uygulanan bileşimini belirtir. Desteklenen stilleri listesi için bkz: [Rebar denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774377) Windows SDK.  
   
- `rect`  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı `pParentWnd`.  
+ *Rect*  
+ Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Denetimin üst penceresi için bir işaretçi.  
   
- `nID`  
+ *nID*  
  Denetimin alt pencere kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -331,7 +331,7 @@ BOOL DeleteBand(UINT uBand);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `uBand`  
+ *uBand*  
  Silinecek bant sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -348,8 +348,8 @@ void DragMove(DWORD dwPos = (DWORD)-1);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwPos`  
- A `DWORD` yeni fare koordinatları içeren değer. Yatay koordinat LOWORD yer alır ve dikey koordinat HIWORD yer alır. Geçirirseniz `(DWORD)-1`, rebar denetimi son kez adlı denetimin iş parçacığı fare konumunu kullanacağı **GetMessage** veya **PeekMessage**.  
+ *dwPos*  
+ A `DWORD` yeni fare koordinatları içeren değer. Yatay koordinat LOWORD yer alır ve dikey koordinat HIWORD yer alır. Geçirirseniz `(DWORD)-1`, rebar denetimi son kez adlı denetimin iş parçacığı fare konumunu kullanacağı `GetMessage` veya `PeekMessage`.  
   
 ##  <a name="enddrag"></a>  CReBarCtrl::EndDrag  
  Win32 ileti davranışını uygulayan [RB_ENDDRAG](http://msdn.microsoft.com/library/windows/desktop/bb774435), Windows SDK'ın açıklandığı gibi.  
@@ -368,10 +368,10 @@ void GetBandBorders(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `uBand`  
+ *uBand*  
  Kenarlıkları alınır bant sıfır tabanlı dizini.  
   
- `prc`  
+ *Çin*  
  Bir işaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) bant Kenarlıklar alacak yapısı. Rebar denetimiyle varsa **RBS_BANDBORDERS** stili, her bir üyesi bu yapı kenarlık oluşturduğunu piksel sayısı, bant karşılık gelen tarafındaki alırsınız. Rebar denetimiyle yoksa **RBS_BANDBORDERS** stil yalnızca bu yapı sol üyesi geçerli bilgilerini alır. Rebar denetimi stilleri açıklaması için bkz: [Rebar denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774377) Windows SDK.  
   
 ##  <a name="getbandcount"></a>  CReBarCtrl::GetBandCount  
@@ -394,10 +394,10 @@ BOOL GetBandInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `uBand`  
+ *uBand*  
  Bilgiler alınır bant sıfır tabanlı dizini.  
   
- `prbbi`  
+ *prbbi*  
  Bir işaretçi bir [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) bant bilgilerini almak için yapısı. Ayarlamanız gerekir `cbSize` bu yapı üyesi `sizeof(REBARBANDINFO)` ve **fMask** bu iletiyi göndermeden önce almak istediğiniz öğeleri üye.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -435,8 +435,8 @@ BOOL GetBarInfo(REBARINFO* prbi) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `prbi`  
- Bir işaretçi bir [REBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb774395) rebar denetimi bilgilerini alacak yapısı. Ayarlamalısınız `cbSize` bu yapı üyesi `sizeof(REBARINFO)` bu iletiyi göndermeden önce.  
+ *prbi*  
+ Bir işaretçi bir [REBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb774395) rebar denetimi bilgilerini alacak yapısı. Ayarlamalısınız *cbSize* bu yapı üyesi `sizeof(REBARINFO)` bu iletiyi göndermeden önce.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
@@ -459,7 +459,7 @@ BOOL GetColorScheme(COLORSCHEME* lpcs);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpcs`  
+ *lpcs*  
  Bir işaretçi bir [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) , Windows SDK'ın açıklandığı gibi yapılandırın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -486,7 +486,7 @@ DWORD GetExtendedStyle() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bitsel bir birleşimi (veya) genişletilmiş stilleri belirten bayrak. Olası bayraklar `RBS_EX_SPLITTER` ve `RBS_EX_TRANSPARENT`. Daha fazla bilgi için bkz: `dwMask` parametresinin [CReBarCtrl::SetExtendedStyle](#setextendedstyle) yöntemi.  
+ Bitsel bir birleşimi (veya) genişletilmiş stilleri belirten bayrak. Olası bayraklar `RBS_EX_SPLITTER` ve `RBS_EX_TRANSPARENT`. Daha fazla bilgi için bkz: *dwMask* parametresinin [CReBarCtrl::SetExtendedStyle](#setextendedstyle) yöntemi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [RB_GETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb774433) Windows SDK'ın açıklanan ileti.  
@@ -530,10 +530,10 @@ BOOL GetRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `uBand`  
+ *uBand*  
  Rebar denetiminde bir bant sıfır tabanlı dizini.  
   
- `prc`  
+ *Çin*  
  Bir işaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) rebar bant sınırlarına alacak yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -636,8 +636,8 @@ BOOL InsertBand(
  *uIndex*  
  Konumun bant ekleneceği sıfır tabanlı dizini. Bu parametre -1 olarak ayarlarsanız, denetimi son konumda yeni bant ekleyin.  
   
- `prbbi`  
- Bir işaretçi bir [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) eklenecek bant tanımlar yapısı. Ayarlamalısınız `cbSize` bu yapı üyesi `sizeof(REBARBANDINFO)` bu işlevi çağrılmadan önce.  
+ *prbbi*  
+ Bir işaretçi bir [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) eklenecek bant tanımlar yapısı. Ayarlamalısınız *cbSize* bu yapı üyesi `sizeof(REBARBANDINFO)` bu işlevi çağrılmadan önce.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde sıfır.  
@@ -653,7 +653,7 @@ void MaximizeBand(UINT uBand);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `uBand`  
+ *uBand*  
  Tam ekran için bant sıfır tabanlı dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -670,7 +670,7 @@ void MinimizeBand(UINT uBand);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `uBand`  
+ *uBand*  
  Bant en aza sıfır tabanlı dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -708,11 +708,11 @@ void PushChevron(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `uBand`  
+ *uBand*  
  Edilmesini, köşeli çift Ayraca olan bant sıfır tabanlı dizini.  
   
- `lAppValue`  
- Bir uygulama tanımlı 32-bit değeri. Bkz: `lAppValue` içinde [RB_PUSHCHEVRON](http://msdn.microsoft.com/library/windows/desktop/bb774506) Windows SDK.  
+ *lAppValue*  
+ Bir uygulama tanımlı 32-bit değeri. Bkz: *lAppValue* içinde [RB_PUSHCHEVRON](http://msdn.microsoft.com/library/windows/desktop/bb774506) Windows SDK'sındaki.  
   
 ##  <a name="restoreband"></a>  CReBarCtrl::RestoreBand  
  İdeal boyutuna bir rebar denetiminde bir bandı yeniden boyutlandırır.  
@@ -722,7 +722,7 @@ void RestoreBand(UINT uBand);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `uBand`  
+ *uBand*  
  Tam ekran için bant sıfır tabanlı dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -741,10 +741,10 @@ BOOL SetBandInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `uBand`  
+ *uBand*  
  Yeni ayarları almaları için bant sıfır tabanlı dizini.  
   
- `prbbi`  
+ *prbbi*  
  İşaretçi bir [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) eklenecek bant tanımlar yapısı. Ayarlamalısınız `cbSize` bu yapı üyesi `sizeof(REBARBANDINFO)` bu iletiyi göndermeden önce.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -766,8 +766,8 @@ BOOL SetBandWidth(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `uBand`|Bir rebar bant sıfır tabanlı dizini.|  
-|[in] `cxWidth`|Yeni rebar bant, piksel cinsinden genişliği.|  
+|[in] *uBand*|Bir rebar bant sıfır tabanlı dizini.|  
+|[in] *cxWidth*|Yeni rebar bant, piksel cinsinden genişliği.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` yöntem başarılı olursa; Aksi takdirde `false`.  
@@ -793,7 +793,7 @@ BOOL SetBarInfo(REBARINFO* prbi);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `prbi`  
+ *prbi*  
  Bir işaretçi bir [REBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb774395) ayarlanması için bilgileri içeren yapısı. Ayarlamalısınız `cbSize` bu yapı üyesi `sizeof(REBARINFO)` bu iletiyi göndermeden önce  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -810,7 +810,7 @@ COLORREF SetBkColor(COLORREF clr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `clr`  
+ *CLR*  
  **COLORREF** yeni varsayılan arka plan rengi temsil eden bir değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -846,8 +846,8 @@ DWORD SetExtendedStyle(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `dwMask`|Hangi bayrakları belirtin bayrakları Bitsel bir birleşimi (veya) `dwStyleEx` parametresi geçerlidir. Bir veya daha fazla aşağıdaki değerleri kullanın:<br /><br /> RBS_EX_SPLITTER: varsayılan olarak, bölümlendirici alta yatay modunda ve sağa dikey modunda görüntüleyin.<br /><br /> RBS_EX_TRANSPARENT: İletmek [WM_ERASEBKGND](http://msdn.microsoft.com/library/windows/desktop/ms648055) üst pencere iletisi.|  
-|[in] `dwStyleEx`|Bitsel bir birleşimi (veya) uygulamak için stilleri belirtmeniz bayrakları. Stil ayarlamak için kullanılan aynı bayrağı belirtin `dwMask` parametresi. Stil sıfırlamak için ikili sıfır belirtin.|  
+|[in] *dwMask*|Hangi bayrakları belirtin bayrakları Bitsel bir birleşimi (veya) *dwStyleEx* parametresi geçerlidir. Bir veya daha fazla aşağıdaki değerleri kullanın:<br /><br /> RBS_EX_SPLITTER: varsayılan olarak, bölümlendirici alta yatay modunda ve sağa dikey modunda görüntüleyin.<br /><br /> RBS_EX_TRANSPARENT: İletmek [WM_ERASEBKGND](http://msdn.microsoft.com/library/windows/desktop/ms648055) üst pencere iletisi.|  
+|[in] *dwStyleEx*|Bitsel bir birleşimi (veya) uygulamak için stilleri belirtmeniz bayrakları. Stil ayarlamak için kullanılan aynı bayrağı belirtin *dwMask* parametresi. Stil sıfırlamak için ikili sıfır belirtin.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Önceki genişletilmiş stili.  
@@ -863,7 +863,7 @@ BOOL SetImageList(CImageList* pImageList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pImageList`  
+ *pImageList*  
  Bir işaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) rebar denetimine atanan resim listesi içeren bir nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -877,7 +877,7 @@ CWnd* SetOwner(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  Bir işaretçi bir `CWnd` rebar denetim sahibi olarak ayarlamak için nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -914,7 +914,7 @@ COLORREF SetTextColor(COLORREF clr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `clr`  
+ *CLR*  
  A **COLORREF** yeni metin temsil eden değer renk `CReBarCtrl` nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -945,7 +945,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pszSubAppName`  
+ *pszSubAppName*  
  Ayarlanacak rebar görsel stil içeren bir Unicode dize için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -964,7 +964,7 @@ BOOL ShowBand(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `uBand`  
+ *uBand*  
  Rebar denetiminde bir bant sıfır tabanlı dizini.  
   
  *fShow*  
@@ -981,7 +981,7 @@ BOOL SizeToRect(CRect& rect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rect`  
+ *Rect*  
  Bir başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) rebar denetimi boyutta olması dikdörtgen belirtir nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

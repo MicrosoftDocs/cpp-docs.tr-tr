@@ -162,12 +162,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d18e1352e0d8ba74709e2f1a5626678e81729a2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 51d1cdb8eb803f9e76f7929f6f46279a7d4e7ea0
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378819"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079935"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl sınıfı
 Zengin düzenleme denetimine işlevselliğini sağlar.  
@@ -301,14 +301,14 @@ BOOL CanPaste(UINT nFormat = 0) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nFormat`  
+ *nFormat*  
  Sorgu için Pano verileri biçimi. Bu parametre bir ön tanımlı Pano biçimleri veya tarafından döndürülen değeri olabilir [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Pano biçimi yapıştırılabilmesi için sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `nFormat` 0 ' dır `CanPaste` Pano üzerinde şu anda herhangi bir biçim deneyin.  
+ Varsa *nFormat* 0 ' dır `CanPaste` Pano üzerinde şu anda herhangi bir biçim deneyin.  
   
  Daha fazla bilgi için bkz: [EM_CANPASTE](http://msdn.microsoft.com/library/windows/desktop/bb787993) ileti ve [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK'sındaki işlevi.  
   
@@ -347,14 +347,14 @@ BOOL CanUndo() const;
  [!code-cpp[NVC_MFC_CRichEditCtrl#2](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_2.cpp)]  
   
 ##  <a name="charfrompos"></a>  CRichEditCtrl::CharFromPos  
- Parametresi tarafından belirtilen bir noktada karakter ilgili bilgileri alır `pt`.  
+ Parametresi tarafından belirtilen bir noktada karakter ilgili bilgileri alır *pt*.  
   
 ```  
 int CharFromPos(CPoint pt) const;  
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pt`  
+ *PT*  
  A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirtilen noktası koordinatları içeren nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -373,7 +373,7 @@ void Clear();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından gerçekleştirilen silme **Temizle** çağırarak geri [geri](#undo) üye işlevi.  
+ Tarafından gerçekleştirilen silme `Clear` çağırarak geri [geri](#undo) üye işlevi.  
   
  Geçerli seçimi silin ve Pano'ya silinen içeriği yerleştirmek için çağrı [Kes](#cut) üye işlevi.  
   
@@ -407,27 +407,27 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwStyle`  
+ *dwStyle*  
  Düzenle denetim stilini belirtir. Listelenen pencere stilleri birleşimi geçerli **açıklamalar** bölümü aşağıdaki ve [denetim stilleri düzenlemek](http://msdn.microsoft.com/library/windows/desktop/bb775464), Windows SDK'sı açıklandığı.  
   
- `rect`  
+ *Rect*  
  Düzenle denetim boyutunu ve konumunu belirtir. Olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT](../../mfc/reference/rect-structure1.md) yapısı.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Düzenle denetim üst pencere belirtir (genellikle bir [CDialog](../../mfc/reference/cdialog-class.md)). Değil olmalıdır **NULL**.  
   
- `nID`  
+ *nID*  
  Düzenle denetim kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başlatma başarılıysa sıfır olmayan; Aksi takdirde, 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturmak bir `CRichEditCtrl` iki adımda nesne. İlk olarak, arama [CRichEditCtrl](#cricheditctrl) oluşturucusu,'ı çağırın **oluşturma**, hangi Windows düzenleme denetimi oluşturur ve ona iliştirir `CRichEditCtrl` nesnesi.  
+ Oluşturmak bir `CRichEditCtrl` iki adımda nesne. İlk olarak, arama [CRichEditCtrl](#cricheditctrl) oluşturucusu,'ı çağırın `Create`, hangi Windows düzenleme denetimi oluşturur ve ona iliştirir `CRichEditCtrl` nesnesi.  
   
  Bu işlev bir zengin düzenleme denetimine oluşturduğunuzda, önce gerekli ortak denetimler kitaplığı yüklemeniz gerekir. Kitaplığı yüklemek için genel bir işlevi çağırmak [Afxınitrichedit](application-information-and-management.md#afxinitrichedit), hangi sırayla başlatır ortak denetimler kitaplığı. Çağırmanız gerekir `AfxInitRichEdit` işleminizin içinde yalnızca bir kez.  
   
- Zaman **oluşturma** yürütür, Windows gönderir [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate), ve [WM_ GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) düzenleme denetimine iletisi.  
+ Zaman `Create` yürütür, Windows gönderir [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate), ve [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) Düzenle denetim iletileri.  
   
  Bu iletiler, varsayılan olarak tarafından işlenen [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), ve [Ongetminmaxınfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) üye işlevleri içinde `CWnd` temel sınıfı. Varsayılan ileti işleme genişletmek için öğesinden bir sınıf türetin `CRichEditCtrl`ileti eşlemesi için yeni sınıf ekleyin ve yukarıdaki ileti işleyicisi üye işlevlerini geçersiz kılma. Geçersiz kılma `OnCreate`, örneğin, gerekli başlatma için yeni bir sınıf gerçekleştirmek için.  
   
@@ -461,26 +461,26 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwExStyle`  
- Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: `dwExStyle` parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
+ *dwExStyle*  
+ Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
   
- `dwStyle`  
+ *dwStyle*  
  Düzenle denetim stilini belirtir. Listelenen pencere stilleri birleşimi geçerli **açıklamalar** bölümünü [oluşturma](#create) ve [denetim stilleri düzenlemek](http://msdn.microsoft.com/library/windows/desktop/bb775464), Windows SDK'sı açıklandığı.  
   
- `rect`  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı `pParentWnd`.  
+ *Rect*  
+ Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Denetimin üst penceresi için bir işaretçi.  
   
- `nID`  
+ *nID*  
  Denetimin alt pencere kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım `CreateEx` yerine **oluşturma** Windows genişletilmiş stili önsöz tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için **WS_EX_**.  
+ Kullanım `CreateEx` yerine `Create` Windows genişletilmiş stili önsöz tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için **WS_EX_**.  
   
 ##  <a name="cricheditctrl"></a>  CRichEditCtrl::CRichEditCtrl  
  Oluşturan bir `CRichEditCtrl` nesnesi.  
@@ -503,7 +503,7 @@ void Cut();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından gerçekleştirilen silme **Kes** çağırarak geri [geri](#undo) üye işlevi.  
+ Tarafından gerçekleştirilen silme `Cut` çağırarak geri [geri](#undo) üye işlevi.  
   
  Geçerli seçim silinen metni panoya koymadan silmek için arama [Temizle](#clear) üye işlevi.  
   
@@ -520,14 +520,14 @@ BOOL DisplayBand(LPRECT pDisplayRect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDisplayRect`  
+ *pDisplayRect*  
  İşaretçi bir [RECT](../../mfc/reference/rect-structure1.md) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) metni görüntülemek için cihaz alanı belirtme nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Biçimlendirilmiş metin görüntüleme, aksi halde 0 başarılı olursa sıfır olmayan.  
   
 ### <a name="remarks"></a>Açıklamalar  
- OLE öğeleri ve metin işaretçisi tarafından belirtilen alan için kırpılmış `pDisplayRect`.  
+ OLE öğeleri ve metin işaretçisi tarafından belirtilen alan için kırpılmış *pDisplayRect*.  
   
  Daha fazla bilgi için bkz: [EM_DISPLAYBAND](http://msdn.microsoft.com/library/windows/desktop/bb787997) Windows SDK'sındaki.  
   
@@ -561,8 +561,8 @@ long FindText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwFlags`  
- Olası değerler listesi için bkz: `wParam` içinde [EM_FINDTEXTEXT](http://msdn.microsoft.com/library/windows/desktop/bb788011) Windows SDK'sındaki.  
+ *dwFlags*  
+ Olası değerler listesi için bkz: *wParam* içinde [EM_FINDTEXTEXT](http://msdn.microsoft.com/library/windows/desktop/bb788011) Windows SDK'sındaki.  
   
  *pFindText*  
  İşaretçi [FINDTEXTEX](http://msdn.microsoft.com/library/windows/desktop/bb787909) araması için parametreler vererek ve burada eşleşme bulundu aralığı döndürme yapısı.  
@@ -579,7 +579,7 @@ long FindText(
  [!code-cpp[NVC_MFC_CRichEditCtrl#9](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_9.cpp)]  
   
 ##  <a name="findwordbreak"></a>  CRichEditCtrl::FindWordBreak  
- Önce veya sonra tarafından belirtilen konumdaki sonraki word sonunu bulur `nStart`.  
+ Önce veya sonra tarafından belirtilen konumdaki sonraki word sonunu bulur *Nbaşlangıç*.  
   
 ```  
 DWORD FindWordBreak(
@@ -588,14 +588,14 @@ DWORD FindWordBreak(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nCode`  
- Gerçekleştirilecek eylemi belirtir. Açıklama parametresi için olası değerler listesi için bkz `code` içinde **EM_FINDWORDBREAK** Windows SDK'sındaki.  
+ *nCode*  
+ Gerçekleştirilecek eylemi belirtir. Açıklama parametresi için olası değerler listesi için bkz *kod* içinde **EM_FINDWORDBREAK** Windows SDK'sındaki.  
   
- `nStart`  
+ *Nbaşlangıç*  
  Başlayacağı sıfır tabanlı karakterin konumu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Parametresi temelinde `nCode`. Daha fazla bilgi için bkz: [EM_FINDWORDBREAK](http://msdn.microsoft.com/library/windows/desktop/bb788018) Windows SDK'sındaki.  
+ Parametresi temelinde *nCode*. Daha fazla bilgi için bkz: [EM_FINDWORDBREAK](http://msdn.microsoft.com/library/windows/desktop/bb788018) Windows SDK'sındaki.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Verilen konumunda bir karakter hakkında bilgi almak için bu üye işlevini kullanabilirsiniz.  
@@ -635,14 +635,14 @@ CPoint GetCharPos(long lChar) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lChar`  
+ *lChar*  
  Karakter sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen karakter sol üst köşesindeki konumunu `lChar`.  
+ Belirtilen karakter sol üst köşesindeki konumunu *lChar*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Karakter, sıfır tabanlı dizin değerini vererek belirtilir. Varsa `lChar` bu son karakter dizinini değerinden daha büyük `CRichEditCtrl` nesnesi, dönüş değeri bu karakterin yalnızca son karakter geçmiş koordinatlarını belirtir `CRichEditCtrl` nesnesi.  
+ Karakter, sıfır tabanlı dizin değerini vererek belirtilir. Varsa *lChar* bu son karakter dizinini değerinden daha büyük `CRichEditCtrl` nesnesi, dönüş değeri bu karakterin yalnızca son karakter geçmiş koordinatlarını belirtir `CRichEditCtrl` nesnesi.  
   
  Daha fazla bilgi için bkz: [EM_POSFROMCHAR](http://msdn.microsoft.com/library/windows/desktop/bb761631) Windows SDK'sındaki.  
   
@@ -654,13 +654,13 @@ DWORD GetDefaultCharFormat(CHARFORMAT& cf) const;  DWORD GetDefaultCharFormat(CH
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cf`  
+ *cf*  
  İlk sürümünde, bir işaretçi bir **CHARFORMAT** biçimlendirme özniteliklerini varsayılan karakter bulunduran yapısı.  
   
  İkinci sürümünde, bir işaretçi bir **CHARFORMAT2** bir zengin düzenleme 2.0 uzantısıdır yapısı için **CHARFORMAT** biçimlendirme özniteliklerini varsayılan karakter bulunduran yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- **DwMask** veri üyesi `cf`. Biçimlendirme özniteliklerini varsayılan karakter belirtildi.  
+ **DwMask** veri üyesi *cf*. Biçimlendirme özniteliklerini varsayılan karakter belirtildi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: **EM_GETCHARFORMAT** ileti ve **CHARFORMAT** ve **CHARFORMAT2** Windows SDK'sı yapılarda.  
@@ -703,7 +703,7 @@ int GetFirstVisibleLine() const;
  [!code-cpp[NVC_MFC_CRichEditCtrl#11](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_11.cpp)]  
   
 ##  <a name="getiricheditole"></a>  CRichEditCtrl::GetIRichEditOle  
- Erişimleri **IRichEditOle** Bu arabirimdeki `CRichEditCtrl` nesnesi.  
+ Erişimleri `IRichEditOle` Bu arabirimdeki `CRichEditCtrl` nesnesi.  
   
 ```  
 IRichEditOle* GetIRichEditOle() const;  
@@ -750,17 +750,17 @@ int GetLine(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Satır almak için sıfır tabanlı dizini.  
   
- `lpszBuffer`  
+ *lpszBuffer*  
  Metin alacak arabellek noktalarına. Arabellek ilk sözcüğün arabelleğe kopyalanabilir bayt sayısını belirtmelisiniz.  
   
- `nMaxLength`  
- En fazla halinde kopyalanabilir karakter sayısını `lpszBuffer`. İkinci biçiminde `GetLine` bu değeri tarafından belirtilen arabellek ilk sözcüğün yerleştirir `lpszBuffer`.  
+ *nMaxLength*  
+ En fazla halinde kopyalanabilir karakter sayısını *lpszBuffer*. İkinci biçiminde `GetLine` bu değeri tarafından belirtilen arabellek ilk sözcüğün yerleştirir *lpszBuffer*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kopyalanır karakter sayısını `lpszBuffer`.  
+ Kopyalanır karakter sayısını *lpszBuffer*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kopyalanan satırın sonlandırma bir null karakter içermiyor.  
@@ -825,16 +825,16 @@ DWORD GetParaFormat(PARAFORMAT& pf) const;  DWORD GetParaFormat(PARAFORMAT2& pf)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pf`  
+ *PF*  
  İlk sürümünde, bir işaretçi bir [PARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787940) geçerli seçim özniteliklerini paragraf tutulacağı yapısı.  
   
  İkinci sürümünde, bir işaretçi bir [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) bir zengin düzenleme 2.0 uzantısıdır yapısı için **PARAFORMAT** biçimlendirme özniteliklerini varsayılan karakter bulunduran yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- **DwMask** veri üyesi `pf`. Geçerli seçim tutarlı öznitelikleri paragraf belirtir.  
+ **DwMask** veri üyesi *pf*. Geçerli seçim tutarlı öznitelikleri paragraf belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Birden fazla paragraf seçtiyseniz `pf` ilk seçilen paragraf özniteliklerini alır. Hangi özniteliklerin seçimi tutarlı dönüş değerini belirtir.  
+ Birden fazla paragraf seçtiyseniz *pf* ilk seçilen paragraf özniteliklerini alır. Hangi özniteliklerin seçimi tutarlı dönüş değerini belirtir.  
   
  Daha fazla bilgi için bkz: [EM_GETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774182) ileti ve **PARAFORMAT** ve **PARAFORMAT2** Windows SDK'sı yapılarda.  
   
@@ -851,10 +851,10 @@ BOOL GetPunctuation(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `fType`  
- Bölümünde açıklandığı gibi noktalama tür bayrak `fType` parametresinin [EM_GETPUNCTUATION](http://msdn.microsoft.com/library/windows/desktop/bb774184) Windows SDK'sındaki.  
+ *fType*  
+ Bölümünde açıklandığı gibi noktalama tür bayrak *fType* parametresinin [EM_GETPUNCTUATION](http://msdn.microsoft.com/library/windows/desktop/bb774184) Windows SDK'sındaki.  
   
- `lpPunc`  
+ *lpPunc*  
  Bir işaretçi bir [NOKTALAMA](http://msdn.microsoft.com/library/windows/desktop/bb787944) , Windows SDK'ın açıklandığı gibi yapılandırın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -871,7 +871,7 @@ void GetRect(LPRECT lpRect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpRect`  
+ *lpRect*  
  [CRect](../../atl-mfc-shared/reference/crect-class.md) veya işaretçi bir [RECT](../../mfc/reference/rect-structure1.md) biçimlendirme dikdörtgen almak için `CRichEditCtrl` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -907,13 +907,13 @@ void GetSel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cr`  
+ *CR*  
  Başvuru bir [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) geçerli seçim sınırlarına almaya yapısı.  
   
- `nStartChar`  
+ *nStartChar*  
  Geçerli seçim içindeki ilk karakter sıfır tabanlı dizini.  
   
- `nEndChar`  
+ *nEndChar*  
  Son karakter geçerli seçim içindeki sıfır tabanlı dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -921,9 +921,9 @@ void GetSel(
   
 - **GetSel (** `cr` **)** bu formun kullandığı **CHARRANGE** yapısı kendi **cpMin** ve **cpMax** üyelere sınırları döndür.  
   
-- **GetSel (** `nStartChar` **,** `nEndChar` **)** bu formu sınırları parametrelerinde döndürür `nStartChar` ve `nEndChar`.  
+- **GetSel (** `nStartChar` **,** `nEndChar` **)** bu formu sınırları parametrelerinde döndürür *nStartChar* ve *nEndChar* .  
   
- Varsa seçimi her şeyi içeren başına ( **cpMin** veya `nStartChar`) 0 ve bitiş ( **cpMax** veya `nEndChar`) iş - 1.  
+ Varsa seçimi her şeyi içeren başına ( **cpMin** veya *nStartChar*) 0 ve bitiş ( **cpMax** veya *nEndChar*) iş - 1.  
   
  Daha fazla bilgi için bkz: [EM_EXGETSEL](http://msdn.microsoft.com/library/windows/desktop/bb788001) ileti ve [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) Windows SDK'sındaki yapısı.  
   
@@ -938,16 +938,16 @@ DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharForma
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cf`  
+ *cf*  
  İlk sürümünde, bir işaretçi bir [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) karakter geçerli seçim özniteliklerini biçimlendirme almaya yapısı.  
   
  İkinci sürümünde, bir işaretçi bir [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) bir zengin düzenleme 2.0 uzantısıdır yapısı için **CHARFORMAT** karakter geçerli seçim özniteliklerini biçimlendirme almaya yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- **DwMask** veri üyesi `cf`. Geçerli seçim tutarlı öznitelikleri biçimlendirme karakteri belirtir.  
+ **DwMask** veri üyesi *cf*. Geçerli seçim tutarlı öznitelikleri biçimlendirme karakteri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `cf` Parametresi geçerli seçim ilk karakter özniteliklerini alır. Hangi özniteliklerin seçimi tutarlı dönüş değerini belirtir.  
+ *Cf* parametre, geçerli seçim ilk karakter özniteliklerini alır. Hangi özniteliklerin seçimi tutarlı dönüş değerini belirtir.  
   
  Daha fazla bilgi için bkz: [EM_GETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb788026) ileti ve **CHARFORMAT** ve **CHARFORMAT2** Windows SDK'sı yapılarda.  
   
@@ -988,13 +988,13 @@ long GetSelText(LPSTR lpBuf) const;  CString GetSelText() const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpBuf`  
+ *lpBuf*  
  Geçerli seçimdeki metni almak için arabellek işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Formdaki bağlıdır:  
   
-- **GetSelText (** `lpBuf` **)** kopyalanır karakter sayısını `lpBuf`, null sonlandırma dahil değil.  
+- **GetSelText (** `lpBuf` **)** kopyalanır karakter sayısını *lpBuf*, null sonlandırma dahil değil.  
   
 - **GetSelText ()** geçerli seçim içeren dize.  
   
@@ -1032,14 +1032,14 @@ long GetTextLengthEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwFlags`  
+ *dwFlags*  
  Metin uzunluğu belirlerken kullanılacak yöntemini belirten değer. Bu üye biri veya daha fazla değeri listelenen bayrakları üyesi, [GETTEXTLENGTHEX](http://msdn.microsoft.com/library/windows/desktop/bb787915) Windows SDK'ın açıklanmaktadır.  
   
- `uCodePage`  
+ *uCodePage*  
  Kod sayfası çeviri (CP_ACP ANSI kod sayfası, 1200 Unicode için).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Karakter veya düzenleme denetimindeki bayt sayısı. Uyumsuz bayrakları ayarlandıysa `dwFlags`, bu üye işlevinin döndürdüğü `E_INVALIDARG`.  
+ Karakter veya düzenleme denetimindeki bayt sayısı. Uyumsuz bayrakları ayarlandıysa *dwFlags*, bu üye işlevinin döndürdüğü `E_INVALIDARG`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `GetTextLengthEx` metnin uzunluğu belirlemek ek yollar sağlar. Zengin düzenleme 2.0 işlevselliği destekler. Bkz: [hakkında zengin düzenleme denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb787873) Windows SDKfor içinde daha fazla bilgi.  
@@ -1065,13 +1065,13 @@ int GetTextRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nFirst`  
+ *nFirst*  
  Karakterin dizin aralığında hemen önceki ilk karakteri.  
   
- `nLast`  
+ *Nson*  
  Hemen aralıktaki son karakter izleyen karakterin konumu.  
   
- `refString`  
+ *refString*  
  Bir başvuru bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) metni alırsınız nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1118,14 +1118,14 @@ void HideSelection(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bHide`  
+ *bHide*  
  Seçimi gösterilen veya gizli, gösterir **TRUE** seçimi gizlemek için.  
   
- `bPerm`  
+ *bPerm*  
  Bu değişikliği seçimin görünürlük kalıcı olup olmayacağını gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `bPerm` olan **TRUE**, değiştiğinde `ECO_NOHIDESEL` için bu seçeneği `CRichEditCtrl` nesnesi. Bu seçenek kısa bir açıklaması için bkz: [SetOptions](#setoptions). Bunun için tüm seçenekleri ayarlamak için bu işlevi kullanabilirsiniz `CRichEditCtrl` nesnesi.  
+ Zaman *bPerm* olan **TRUE**, değiştiğinde `ECO_NOHIDESEL` için bu seçeneği `CRichEditCtrl` nesnesi. Bu seçenek kısa bir açıklaması için bkz: [SetOptions](#setoptions). Bunun için tüm seçenekleri ayarlamak için bu işlevi kullanabilirsiniz `CRichEditCtrl` nesnesi.  
   
  Daha fazla bilgi için bkz: [EM_HIDESELECTION](http://msdn.microsoft.com/library/windows/desktop/bb774210) Windows SDK'sındaki.  
   
@@ -1140,7 +1140,7 @@ void LimitText(long nChars = 0);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nChars`  
+ *nChars*  
  Kullanıcının girebileceği metin uzunluğu (bayt cinsinden) belirtir. Bu parametre 0 (varsayılan değer) ise, metin uzunluğu 64 K bayt ile ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1162,11 +1162,11 @@ long LineFromChar(long nIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
- İstenen karakter düzenleme denetimi metninde sıfır tabanlı dizin değeri içeriyor veya -1 içerir. Varsa `nIndex` -1 ' dir geçerli satır, diğer bir deyişle, düzeltme işareti içeren satırı belirtir.  
+ *nIndex*  
+ İstenen karakter düzenleme denetimi metninde sıfır tabanlı dizin değeri içeriyor veya -1 içerir. Varsa *nIndex* -1 ' dir geçerli satır, diğer bir deyişle, düzeltme işareti içeren satırı belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen karakter dizinini içeren satırı sıfır tabanlı satır sayısı `nIndex`. Varsa `nIndex` -1 ' dir seçimi ilk karakteri içeren satırı sayısını döndürülür. Herhangi bir seçim geçerli satır numarasını döndürülür.  
+ Belirtilen karakter dizinini içeren satırı sıfır tabanlı satır sayısı *nIndex*. Varsa *nIndex* -1 ' dir seçimi ilk karakteri içeren satırı sayısını döndürülür. Herhangi bir seçim geçerli satır numarasını döndürülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Zengin düzenleme denetimine başından itibaren karakter sayısını karakter dizinidir. Karakter sayım için bir OLE öğesi tek bir karakter olarak sayılır.  
@@ -1184,11 +1184,11 @@ int LineIndex(int nLine = -1) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nLine`  
- Düzenle denetim metin istenen satır için bir dizin değeri içeriyor veya -1 içerir. Varsa `nLine` -1 ' dir geçerli satır, diğer bir deyişle, düzeltme işareti içeren satırı belirtir.  
+ *evrimçi*  
+ Düzenle denetim metin istenen satır için bir dizin değeri içeriyor veya -1 içerir. Varsa *evrimçi* -1 ' dir geçerli satır, diğer bir deyişle, düzeltme işareti içeren satırı belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen satır karakter dizinini `nLine` veya belirtilen satır numarası büyükse, -1, ardından de düzenleme denetimindeki satır sayısı.  
+ Belirtilen satır karakter dizinini *evrimçi* veya belirtilen satır numarası büyükse, -1, ardından de düzenleme denetimindeki satır sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Karakter dizini belirtilen satır başına zengin düzenleme denetimine karakterleri sayısıdır.  
@@ -1206,11 +1206,11 @@ int LineLength(int nLine = -1) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nLine`  
+ *evrimçi*  
  Bir karakterin karakter dizinini alınacak uzunluğunu olduğu satırında belirtir. Bu parametre -1 ise, seçili satır metni herhangi uzunluğu dahil değil, geçerli satır (düzeltme işareti içeren) uzunluğunu döndürdü. Zaman `LineLength` çağrılır tek satırlı düzenleme denetimi için bu parametre yoksayılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Zaman `LineLength` çağrılır birden çok satırlı düzenleme denetimi için dönüş değerini uzunluğudur (içinde `TCHAR`) tarafından belirtilen satırının `nLine`.  Satırın sonuna satır başı karakteri içermez. Zaman `LineLength` çağrılır tek satırlı düzenleme denetimi için dönüş değerini uzunluğudur (içinde `TCHAR`) düzenleme denetimindeki metin. Evrimçi denetimi karakter sayısından büyükse, dönüş değeri sıfırdır.
+ Zaman `LineLength` çağrılır birden çok satırlı düzenleme denetimi için dönüş değerini uzunluğudur (içinde `TCHAR`) tarafından belirtilen satırının *evrimçi*.  Satırın sonuna satır başı karakteri içermez. Zaman `LineLength` çağrılır tek satırlı düzenleme denetimi için dönüş değerini uzunluğudur (içinde `TCHAR`) düzenleme denetimindeki metin. Evrimçi denetimi karakter sayısından büyükse, dönüş değeri sıfırdır.
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [LineIndex](#lineindex) verilen satır numarası aralığında bir karakter dizini almak için üye işlevi `CRichEditCtrl` nesnesi.  
@@ -1230,14 +1230,14 @@ void LineScroll(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nLines`  
+ *nLines*  
  Dikey olarak kaydırmak için satır sayısını belirtir.  
   
- `nChars`  
+ *nChars*  
  Yatay kaydırma için karakter konumlarını sayısını belirtir. Zengin düzenleme denetimine ya da varsa bu değer yoksayılır **es_rıght** veya **ES_CENTER** stili. [Düzenleme stilleri](../../mfc/reference/styles-used-by-mfc.md#edit-styles) belirtilen [oluşturma](#create).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Düzenleme denetimi dikey metin düzenleme denetimindeki son satırının kaydırarak değil. Tarafından belirtilen satır sayısı artı geçerli satır varsa `nLines` düzenleme denetimindeki satırları toplam sayısını aşıyor, böylece düzenleme denetimi son satırının düzenleme denetimi pencerenin üstündeki kaydırılan değere ayarlanır.  
+ Düzenleme denetimi dikey metin düzenleme denetimindeki son satırının kaydırarak değil. Geçerli tarafından belirtilen satır sayısı artı satır varsa *nLines* düzenleme denetimindeki satırları toplam sayısını aşıyor, böylece düzenleme denetimi son satırının düzenleme denetimi pencerenin üstündeki kaydırılan değere ayarlanır.  
   
  `LineScroll` her satırın son karakter yatay kaydırma için kullanılabilir.  
   
@@ -1297,7 +1297,7 @@ CPoint PosFromChar(UINT nChar) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nChar`  
+ *NChar*  
  Karakter sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1329,10 +1329,10 @@ void ReplaceSel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszNewText`  
+ *lpszNewText*  
  Değiştirme metnini içeren null ile sonlandırılmış bir dize işaretçi.  
   
- `bCanUndo`  
+ *bCanUndo*  
  Bu işlev alınabilecek belirtmek için bu parametrenin değerini ayarlayın **doğru**. Varsayılan değer **FALSE**.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1367,7 +1367,7 @@ BOOL SetAutoURLDetect(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bEnable`  
+ *bSistemlerde*  
  Denetim bir URL otomatik olarak algılamak için ayarlanmış olup olmadığını belirtir. Varsa **doğru**, etkin. Varsa **yanlış**, devre dışı bırakılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1389,11 +1389,11 @@ COLORREF SetBackgroundColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bSysColor`  
- Arka plan rengini sistem değerine ayarlanmış olmadığını gösterir. Bu değer ise **TRUE**, `cr` göz ardı edilir.  
+ *bSysColor*  
+ Arka plan rengini sistem değerine ayarlanmış olmadığını gösterir. Bu değer ise **TRUE**, *cr* göz ardı edilir.  
   
- `cr`  
- İstenen arka plan rengi. Kullanılan eksikse `bSysColor` olan **FALSE**.  
+ *CR*  
+ İstenen arka plan rengi. Kullanılan eksikse *bSysColor* olan **FALSE**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Arka plan rengini önceki bu `CRichEditCtrl` nesnesi.  
@@ -1415,7 +1415,7 @@ BOOL SetDefaultCharFormat(CHARFORMAT2& cf);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cf`  
+ *cf*  
  İlk sürümünde, bir işaretçi bir [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) biçimlendirme özniteliklerini yeni varsayılan karakter içeren yapısı.  
   
  İkinci sürümünde, bir işaretçi bir [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) bir zengin düzenleme 2.0 uzantısıdır yapısı için **CHARFORMAT** biçimlendirme özniteliklerini varsayılan karakter içeren yapısı.  
@@ -1424,7 +1424,7 @@ BOOL SetDefaultCharFormat(CHARFORMAT2& cf);
  Başarılıysa sıfır olmayan; Aksi takdirde, 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yalnızca tarafından belirtilen öznitelikler **dwMask** üyesi `cf` bu işlev tarafından değiştirildi.  
+ Yalnızca tarafından belirtilen öznitelikler **dwMask** üyesi *cf* bu işlev tarafından değiştirildi.  
   
  Daha fazla bilgi için bkz: [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) ileti ve **CHARFORMAT** ve **CHARFORMAT2** Windows SDK'sı yapılarda.  
   
@@ -1461,7 +1461,7 @@ void SetModify(BOOL bModified = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bModified`  
+ *bModified*  
  Değerini **TRUE** metin değiştirildiğini gösterir ve değerini **FALSE** onu değiştirilmemiş olduğunu gösterir. Varsayılan olarak, değiştirilmiş bayrağı ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1480,14 +1480,14 @@ BOOL SetOLECallback(IRichEditOleCallback* pCallback);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pCallback`  
+ *pCallback*  
  İşaretçi bir [IRichEditOleCallback](http://msdn.microsoft.com/library/windows/desktop/bb774308) nesne bu `CRichEditCtrl` nesne OLE ile ilgili kaynakları ve bilgileri almak için kullanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde, 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu `CRichEditCtrl` nesne çağıracaktır [IUnknown::AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) tarafından belirtilen COM nesnesi kullanım sayısını artırmak için `pCallback`.  
+ Bu `CRichEditCtrl` nesne çağıracaktır [IUnknown::AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) tarafından belirtilen COM nesnesi kullanım sayısını artırmak için *pCallback*.  
   
  Daha fazla bilgi için bkz: [EM_SETOLECALLBACK](http://msdn.microsoft.com/library/windows/desktop/bb774252) ileti ve [IRichEditOleCallback](http://msdn.microsoft.com/library/windows/desktop/bb774308) arabirimi Windows SDK.  
   
@@ -1504,15 +1504,15 @@ void SetOptions(
  *wOp*  
  İşlemi türünü belirtir. Aşağıdaki değerlerden biri:  
   
-- `ECOOP_SET` Tarafından belirtilen için seçenekleri ayarlayın `dwFlags`.  
+- `ECOOP_SET` Tarafından belirtilen için seçenekleri ayarlayın *dwFlags*.  
   
-- `ECOOP_OR` Tarafından belirtilen geçerli seçeneklerini birleştirin `dwFlags`.  
+- `ECOOP_OR` Tarafından belirtilen geçerli seçeneklerini birleştirin *dwFlags*.  
   
-- `ECOOP_AND` Ayrıca tarafından belirtilen bu geçerli seçenekleri korumak `dwFlags`.  
+- `ECOOP_AND` Ayrıca tarafından belirtilen bu geçerli seçenekleri korumak *dwFlags*.  
   
-- `ECOOP_XOR` Mantıksal Dışlayıcı veya tarafından belirtilen geçerli seçenekleriyle `dwFlags`.  
+- `ECOOP_XOR` Mantıksal Dışlayıcı veya tarafından belirtilen geçerli seçenekleriyle *dwFlags*.  
   
- `dwFlags`  
+ *dwFlags*  
  Zengin Düzenleme Seçenekleri. Bayrak değerleri açıklamalar bölümünde listelenir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1548,7 +1548,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pf`  
+ *PF*  
  İlk sürümünde, bir işaretçi bir [PARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787940) yeni varsayılan içeren yapısını paragraf biçimlendirme öznitelikleri.  
   
  İkinci sürümünde, bir işaretçi bir [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) bir zengin düzenleme 2.0 uzantısıdır yapısı için **PARAFORMAT** biçimlendirme özniteliklerini varsayılan karakter bulunduran yapısı.  
@@ -1557,7 +1557,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
  Başarılıysa sıfır olmayan; Aksi takdirde, 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yalnızca tarafından belirtilen öznitelikler **dwMask** üyesi `pf` bu işlev tarafından değiştirildi.  
+ Yalnızca tarafından belirtilen öznitelikler **dwMask** üyesi *pf* bu işlev tarafından değiştirildi.  
   
  Daha fazla bilgi için bkz: [EM_SETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774276) ileti ve **PARAFORMAT** ve **PARAFORMAT2** Windows SDK'sı yapılarda.  
   
@@ -1574,10 +1574,10 @@ BOOL SetPunctuation(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `fType`  
- Noktalama işareti. Olası değerler listesi için bkz: `fType` parametresi için [EM_SETPUNCTUATION](http://msdn.microsoft.com/library/windows/desktop/bb774278) Windows SDK'sındaki.  
+ *fType*  
+ Noktalama işareti. Olası değerler listesi için bkz: *fType* parametresi için [EM_SETPUNCTUATION](http://msdn.microsoft.com/library/windows/desktop/bb774278) Windows SDK'sındaki.  
   
- `lpPunc`  
+ *lpPunc*  
  Bir işaretçi bir [NOKTALAMA](http://msdn.microsoft.com/library/windows/desktop/bb787944) , Windows SDK'ın açıklandığı gibi yapılandırın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1594,7 +1594,7 @@ BOOL SetReadOnly(BOOL bReadOnly = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bReadOnly`  
+ *bReadOnly*  
  Belirten bu `CRichEditCtrl` nesne salt okunur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1616,7 +1616,7 @@ void SetRect(LPCRECT lpRect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpRect`  
+ *lpRect*  
  [CRect](../../atl-mfc-shared/reference/crect-class.md) veya işaretçi bir [RECT](../../mfc/reference/rect-structure1.md) biçimlendirme dikdörtgen yeni sınırları gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1639,13 +1639,13 @@ void SetSel(CHARRANGE& cr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nStartChar`  
+ *nStartChar*  
  Seçimin ilk karakter sıfır tabanlı dizini.  
   
- `nEndChar`  
+ *nEndChar*  
  Seçimin son karakter sıfır tabanlı dizini.  
   
- `cr`  
+ *CR*  
  [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) , geçerli seçim sınırlarına tutan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1653,9 +1653,9 @@ void SetSel(CHARRANGE& cr);
   
 - **SetSel (** `cr` **)** bu formun kullandığı **CHARRANGE** yapısı kendi **cpMin** ve **cpMax** üyelere sınırları ayarlayın.  
   
-- **SetSel (** `nStartChar` **,** `nEndChar` **)** bu formu kullanın parametreleri `nStartChar` ve `nEndChar` sınırları ayarlamak için.  
+- **SetSel (** `nStartChar` **,** `nEndChar` **)** bu formu kullanın parametreleri *nStartChar* ve *nEndChar*sınırları ayarlamak için.  
   
- Şapka büyük başlangıç tarafından belirtilen seçim sonunda yerleştirilir ( **cpMin** veya `nStartChar`) ve bitiş ( **cpMax** veya `nEndChar`) dizinler. Bu işlev içeriğini kaydırdığında `CRichEditCtrl` düzeltme işareti görünür olmasını sağlayın.  
+ Şapka büyük başlangıç tarafından belirtilen seçim sonunda yerleştirilir ( **cpMin** veya *nStartChar*) ve bitiş ( **cpMax** veya *nEndChar*) dizinler. Bu işlev içeriğini kaydırdığında `CRichEditCtrl` düzeltme işareti görünür olmasını sağlayın.  
   
  Bu konuda tüm metni seçmek için `CRichEditCtrl` nesne, çağrı `SetSel` bir başlangıç dizini 0 ve son dizini - 1 ile.  
   
@@ -1673,7 +1673,7 @@ BOOL SetSelectionCharFormat(CHARFORMAT2& cf);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cf`  
+ *cf*  
  İlk sürümünde, bir işaretçi bir [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) yeni karakter biçimlendirme içeren yapısını geçerli seçim için öznitelikler.  
   
  İkinci sürümünde, bir işaretçi bir [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) bir zengin düzenleme 2.0 uzantısıdır yapısı için **CHARFORMAT** yeni karakter geçerli öznitelikleri biçimlendirme içeren yapısı Seçim.  
@@ -1682,7 +1682,7 @@ BOOL SetSelectionCharFormat(CHARFORMAT2& cf);
  Başarılıysa sıfır olmayan; Aksi takdirde, 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yalnızca tarafından belirtilen öznitelikler **dwMask** üyesi `cf` bu işlev tarafından değiştirildi.  
+ Yalnızca tarafından belirtilen öznitelikler **dwMask** üyesi *cf* bu işlev tarafından değiştirildi.  
   
  Daha fazla bilgi için bkz: [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) ve **CHARFORMAT** ve **CHARFORMAT2** Windows SDK'sı yapılarda.  
   
@@ -1704,13 +1704,13 @@ BOOL SetTargetDevice(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hDC`  
+ *hDC*  
  Yeni hedef cihaz için cihaz bağlamı için işleyin.  
   
  *lLineWidth*  
  Biçimlendirmek için kullanılacak çizgi genişliği.  
   
- `dc`  
+ *DC*  
  [CDC](../../mfc/reference/cdc-class.md) yeni hedef cihaz için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1769,7 +1769,7 @@ BOOL SetWordCharFormat(CHARFORMAT2& cf);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cf`  
+ *cf*  
  İlk sürümünde, bir işaretçi bir [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) yapısı yeni karakter biçimlendirme içeren öznitelikler için şu anda seçili word.  
   
  İkinci sürümünde, bir işaretçi bir [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) bir zengin düzenleme 2.0 uzantısıdır yapısı için **CHARFORMAT** yapısı, yeni karakter biçimlendirme içeren öznitelikler için şu anda Seçili word.  
@@ -1778,7 +1778,7 @@ BOOL SetWordCharFormat(CHARFORMAT2& cf);
  Başarılıysa sıfır olmayan; Aksi takdirde, 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yalnızca tarafından belirtilen öznitelikler **dwMask** üyesi `cf` bu işlev tarafından değiştirildi.  
+ Yalnızca tarafından belirtilen öznitelikler **dwMask** üyesi *cf* bu işlev tarafından değiştirildi.  
   
  Daha fazla bilgi için bkz: [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) ileti ve **CHARFORMAT** ve **CHARFORMAT2** Windows SDK'sı yapılarda.  
   
@@ -1793,7 +1793,7 @@ UINT SetWordWrapMode(UINT uFlags) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `uFlags`  
+ *uFlags*  
  Sözcük kaydırma ve sözcük bölünmesi ayarlamak için Seçenekler. Olası seçeneklerinin listesi için bkz: [EM_SETWORDWRAPMODE](http://msdn.microsoft.com/library/windows/desktop/bb774294) Windows SDK'sındaki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1824,17 +1824,17 @@ long StreamIn(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nFormat`  
+ *nFormat*  
  Giriş veri biçimleri belirten bayrakları. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
- `es`  
+ *ES*  
  [EDITSTREAM](http://msdn.microsoft.com/library/windows/desktop/bb787891) Giriş akışı belirtme yapısı. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Girdiden okunan karakter sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Değeri `nFormat` şunlardan biri olmalıdır:  
+ Değeri *nFormat* şunlardan biri olmalıdır:  
   
 - `SF_TEXT` Yalnızca okuma metin gösterir.  
   
@@ -1842,7 +1842,7 @@ long StreamIn(
   
  Bu değerlerden herhangi biri ile birleştirilebilir `SFF_SELECTION`. Varsa `SFF_SELECTION` belirtilirse, `StreamIn` geçerli seçim Giriş akışı içeriğiyle değiştirir. Belirtilmezse, `StreamIn` bu tüm içeriğini değiştirir `CRichEditCtrl` nesnesi.  
   
- İçinde **EDITSTREAM** parametresi `es`, bir arabellek metniyle doldurur bir geri çağırma işlevi belirtin. Giriş akışı ulaşana kadar bu geri çağırma işlevi tekrar tekrar çağrılır.  
+ İçinde **EDITSTREAM** parametresi *es*, bir arabellek metniyle doldurur bir geri çağırma işlevi belirtin. Giriş akışı ulaşana kadar bu geri çağırma işlevi tekrar tekrar çağrılır.  
   
  Daha fazla bilgi için bkz: [EM_STREAMIN](http://msdn.microsoft.com/library/windows/desktop/bb774302) ileti ve [EDITSTREAM](http://msdn.microsoft.com/library/windows/desktop/bb787891) Windows SDK'sındaki yapısı.  
   
@@ -1861,17 +1861,17 @@ long StreamOut(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nFormat`  
+ *nFormat*  
  Çıktı veri biçimleri belirten bayrakları. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
- `es`  
+ *ES*  
  [EDITSTREAM](http://msdn.microsoft.com/library/windows/desktop/bb787891) yapısı çıkış akışı belirtme. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Çıkış akışına yazılan karakterlerin sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Değeri `nFormat` şunlardan biri olmalıdır:  
+ Değeri *nFormat* şunlardan biri olmalıdır:  
   
 - `SF_TEXT` Yalnızca yazma metin gösterir.  
   
@@ -1883,7 +1883,7 @@ long StreamOut(
   
  Bu değerleri ile birleştirilebilir `SFF_SELECTION`. Varsa `SFF_SELECTION` belirtilirse, `StreamOut` geçerli seçim çıkış akışı içine çıkışı yazar. Belirtilmezse, `StreamOut` tüm içeriğini bu Yazar `CRichEditCtrl` nesnesi.  
   
- İçinde **EDITSTREAM** parametresi `es`, bir arabellek metniyle doldurur bir geri çağırma işlevi belirtin. Çıkış akışı ulaşana kadar bu geri çağırma işlevi tekrar tekrar çağrılır.  
+ İçinde **EDITSTREAM** parametresi *es*, bir arabellek metniyle doldurur bir geri çağırma işlevi belirtin. Çıkış akışı ulaşana kadar bu geri çağırma işlevi tekrar tekrar çağrılır.  
   
  Daha fazla bilgi için bkz: [EM_STREAMOUT](http://msdn.microsoft.com/library/windows/desktop/bb774304) ileti ve [EDITSTREAM](http://msdn.microsoft.com/library/windows/desktop/bb787891) Windows SDK'sındaki yapısı.  
   
@@ -1903,7 +1903,7 @@ BOOL Undo();
  Geri alma işlemi başarılıysa sıfır olmayan; Aksi takdirde, 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir geri alma işlemi geri alınabilir. Örneğin, ilk çağrıda silinen metinle geri yükleyebilirsiniz **geri**. Müdahalede bulunan hiçbir düzenleme işlemi var olduğu sürece ikinci çağrı metinle yeniden kaldırabilirsiniz **geri**.  
+ Bir geri alma işlemi geri alınabilir. Örneğin, ilk çağrıda silinen metinle geri yükleyebilirsiniz `Undo`. Müdahalede bulunan hiçbir düzenleme işlemi var olduğu sürece ikinci çağrı metinle yeniden kaldırabilirsiniz `Undo`.  
   
  Daha fazla bilgi için bkz: [EM_UNDO](http://msdn.microsoft.com/library/windows/desktop/bb761670) Windows SDK'sındaki.  
   

@@ -15,15 +15,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25f9de4ab5f7d12d240625e0fdf5f857563e8ce2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1906505e75273cc62a0eac55e6ed1a9686a3b76f
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33352583"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078450"
 ---
 # <a name="interface-elements"></a>Arabirim Öğeleri
-Bu belgede de tanıtılan arabirimi öğeleri açıklanır [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)] SP1 ve ayrıca kitaplığı önceki sürümünün farklar açıklanmaktadır.  
+Bu belge, Visual Studio 2008 SP1'de sunulan arabirimi öğelerini açıklar ve ayrıca kitaplığı önceki sürümünün farklılıkları açıklar.  
   
  Aşağıdaki çizimde yeni arabirim öğeleri kullanılarak oluşturulan bir uygulamayı gösterir.  
   

@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 7dae7288-8066-4a3e-85e0-78d28bfc6bc8
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 1ae72b7c9c2acf4fa8600903061869ba049cd58c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 65e969607e4017191539a0b0301b0c27ccb9f1ae
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372975"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078990"
 ---
 # <a name="csinglelock-class"></a>CSingleLock sınıfı
 Birden çok iş parçacıklı programda bir kaynağa erişimi denetlemek kullanılan erişim denetim mekanizmasını temsil eder.  
@@ -57,7 +57,7 @@ class CSingleLock
 ## <a name="remarks"></a>Açıklamalar  
  `CSingleLock` bir taban sınıfı yok.  
   
- Eşitleme sınıfları kullanmak için [CSemaphore](../../mfc/reference/csemaphore-class.md), [CMutex](../../mfc/reference/cmutex-class.md), [CCriticalSection](../../mfc/reference/ccriticalsection-class.md), ve [CEvent](../../mfc/reference/cevent-class.md), ya da oluşturmalısınız bir `CSingleLock` veya [CMultiLock](../../mfc/reference/cmultilock-class.md) nesne beklemesi ve eşitleme nesnesi serbest bırakın. Kullanım `CSingleLock` yalnızca gerektiğinde bir nesne üzerinde aynı anda beklenecek. Kullanmak **CMultiLock** belirli bir zamanda kullanabileceğinizi birden fazla nesne olduğunda.  
+ Eşitleme sınıfları kullanmak için [CSemaphore](../../mfc/reference/csemaphore-class.md), [CMutex](../../mfc/reference/cmutex-class.md), [CCriticalSection](../../mfc/reference/ccriticalsection-class.md), ve [CEvent](../../mfc/reference/cevent-class.md), ya da oluşturmalısınız bir `CSingleLock` veya [CMultiLock](../../mfc/reference/cmultilock-class.md) nesne beklemesi ve eşitleme nesnesi serbest bırakın. Kullanım `CSingleLock` yalnızca gerektiğinde bir nesne üzerinde aynı anda beklenecek. Kullanmak `CMultiLock` belirli bir zamanda kullanabileceğinizi birden fazla nesne olduğunda.  
   
  Kullanılacak bir `CSingleLock` nesne, denetlenen kaynağın sınıfında kurucusu üye fonksiyonu içinde çağırın. ' I çağırın [IsLocked](#islocked) kaynak olup olmadığını belirlemek için üye işlevi. İse, üye işlevini geri kalanı ile devam edin. Kaynak kullanılamıyorsa, zaman yayımlanacak kaynak için belirtilen miktarı bekleyin ya da hata döndürür. Kaynak kullanımını tamamlandıktan sonra ya da çağrısı [Unlock](#unlock) , işlev `CSingleLock` nesnesidir izin ver veya yeniden kullanılmak üzere `CSingleLock` yok edilmesi için nesne.  
   
@@ -79,10 +79,10 @@ explicit CSingleLock(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pObject`  
+ *pObject*  
  Erişilecek eşitleme nesnesi noktalarına. Olamaz **NULL**.  
   
- `bInitialLock`  
+ *bInitialLock*  
  Başlangıçta belirtilen nesnenin erişme girişimi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -137,10 +137,10 @@ BOOL Unlock(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lCount`  
+ *lCount*  
  Serbest bırakmak için sağlanan erişim sayısı. 0'dan büyük olmalıdır. Belirtilen süre nesnenin sayısı maksimum değerini aşmasına neden olur, count değiştirilmez ve işlevi döndürür **FALSE**.  
   
- `lPrevCount`  
+ *lPrevCount*  
  Eşitleme nesnesi önceki sayısı almak için bir değişken noktalarına. Varsa **NULL**, önceki sayısı alınmadı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

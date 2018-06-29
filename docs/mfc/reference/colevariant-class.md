@@ -30,15 +30,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b7f0da1f53bf2c6b0e216195be37746eab9abd1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0966aa28595d5384fd6877f30452d3cc24853f29
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378527"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079215"
 ---
 # <a name="colevariant-class"></a>COleVariant sınıfı
-Yalıtan [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) veri türü.  
+Yalıtan [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) veri türü.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -76,14 +76,14 @@ class COleVariant : public tagVARIANT
 |[COleVariant::operator &lt; &lt;, &gt;&gt;](#operator_lt_lt__gt_gt)|Çıkış bir `COleVariant` değeri `CArchive` veya `CDumpContext` ve girdi bir `COleVariant` nesnesinin `CArchive`.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu veri türü OLE Otomasyon kullanılır. Özellikle, [DISPPARAMS](http://msdn.microsoft.com/en-us/a16e5a21-766e-4287-b039-13429aa78f8b) yapısı içeren bir dizi için bir işaretçi **değişken** yapıları. A **DISPPARAMS** yapısı parametrelerini iletmek için kullanılan [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d).  
+ Bu veri türü OLE Otomasyon kullanılır. Özellikle, [DISPPARAMS](http://msdn.microsoft.com/a16e5a21-766e-4287-b039-13429aa78f8b) yapısı içeren bir dizi için bir işaretçi **değişken** yapıları. A **DISPPARAMS** yapısı parametrelerini iletmek için kullanılan [IDispatch::Invoke](http://msdn.microsoft.com/964ade8e-9d8a-4d32-bd47-aa678912a54d).  
   
 > [!NOTE]
 >  Bu sınıfın türetildiği **değişken** yapısı. Bu, iletebilir anlamına gelir. bir `COleVariant` için çağıran bir parametreye bir **değişken** ve veri üyeleri **değişken** yapısı erişilebilir veri üyeleri olan `COleVariant`.  
   
  İki MFC sınıfları ilgili [COleCurrency](../../mfc/reference/colecurrency-class.md) ve [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) değişken veri türleri kapsülleyen **para birimi** ( `VT_CY`) ve **tarih** ( `VT_DATE`). `COleVariant` Sınıfı DAO sınıfları yaygın olarak kullanılır; Örneğin, bu sınıfın tipik kullanım için bu sınıfların bakın [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) ve [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).  
   
- Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [para birimi](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e), [DISPPARAMS](http://msdn.microsoft.com/en-us/a16e5a21-766e-4287-b039-13429aa78f8b), ve [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d) Windows SDK'sı giriş.  
+ Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118), [para birimi](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e), [DISPPARAMS](http://msdn.microsoft.com/a16e5a21-766e-4287-b039-13429aa78f8b), ve [IDispatch::Invoke](http://msdn.microsoft.com/964ade8e-9d8a-4d32-bd47-aa678912a54d) Windows SDK'sı giriş.  
   
  Daha fazla bilgi için `COleVariant` sınıfı ve kullanımını OLE Otomasyon "Geçirme parametreleri içinde OLE Otomasyon" makalesine bakın [Otomasyon](../../mfc/automation.md).  
   
@@ -96,7 +96,7 @@ class COleVariant : public tagVARIANT
  **Başlık:** afxdisp.h  
   
 ##  <a name="attach"></a>  COleVariant::Attach  
- Eklemek için bu işlevi çağırmak verilen [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) geçerli nesne `COleVariant` nesne.  
+ Eklemek için bu işlevi çağırmak verilen [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) geçerli nesne `COleVariant` nesne.  
   
 ```  
 void Attach(VARIANT& varSrc);
@@ -107,9 +107,9 @@ void Attach(VARIANT& varSrc);
  Var olan **değişken** geçerli eklenecek nesne `COleVariant` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev ayarlar [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) , *varSrc* için `VT_EMPTY`.  
+ Bu işlev ayarlar [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) , *varSrc* için `VT_EMPTY`.  
   
- Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) ve [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) Windows SDK'sı giriş.  
+ Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) ve [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) Windows SDK'sı giriş.  
   
 ##  <a name="colevariant"></a>  COleVariant::COleVariant  
  Oluşturan bir `COleVariant` nesnesi.  
@@ -138,40 +138,40 @@ COleVariant(LPCITEMIDLIST pidl);
  *varSrc*  
  Var olan `COleVariant` veya **değişken** yeni içine kopyalanacak nesne `COleVariant` nesne.  
   
- `pSrc`  
+ *pSrc*  
  Bir işaretçi bir **değişken** yeni içine kopyalanacak nesne `COleVariant` nesne.  
   
- `lpszSrc`  
+ *lpszSrc*  
  Yeni içine kopyalanacak null ile sonlandırılmış bir dize `COleVariant` nesnesi.  
   
- `vtSrc`  
+ *vtSrc*  
  `VARTYPE` Yeni `COleVariant` nesnesi.  
   
- `strSrc`  
+ *strSrc*  
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) yeni içine kopyalanacak nesne `COleVariant` nesne.  
   
- `nSrc`, `lSrc`  
+ *nSrc*, *lSrc*  
  Yeni içine kopyalanacak bir sayısal değer `COleVariant` nesnesi.  
   
- `vtSrc`  
+ *vtSrc*  
  `VARTYPE` Yeni `COleVariant` nesnesi.  
   
- `curSrc`  
+ *curSrc*  
  A [COleCurrency](../../mfc/reference/colecurrency-class.md) yeni içine kopyalanacak nesne `COleVariant` nesne.  
   
- `fltSrc`, `dblSrc`  
+ *fltSrc*, *dblSrc*  
  Yeni içine kopyalanacak bir sayısal değer `COleVariant` nesnesi.  
   
- `timeSrc`  
+ *timeSrc*  
  A [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) yeni içine kopyalanacak nesne `COleVariant` nesne.  
   
- `arrSrc`  
+ *arrSrc*  
  A [CLongBinary](../../mfc/reference/cbytearray-class.md) yeni içine kopyalanacak nesne `COleVariant` nesne.  
   
- `lbSrc`  
+ *lbSrc*  
  A [CLongBinary](../../mfc/reference/clongbinary-class.md) yeni içine kopyalanacak nesne `COleVariant` nesne.  
   
- `pidl`  
+ *PIDL işaretçisiyle birlikte*  
  Bir işaretçi bir [ITEMIDLIST](http://msdn.microsoft.com/library/windows/desktop/bb773321) yeni içine kopyalanacak yapısı `COleVariant` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -185,15 +185,15 @@ COleVariant(LPCITEMIDLIST pidl);
   
 - **COleVariant (** `lpszSrc` **)** bir dize yeni nesnesine kopyalar `VT_BSTR` (UNICODE).  
   
-- **COleVariant (** `lpszSrc` **,** `vtSrc` **)** bir dize yeni nesnesine kopyalar. Parametre `vtSrc` olmalıdır `VT_BSTR` (UNICODE) veya `VT_BSTRT` (ANSI).  
+- **COleVariant (** `lpszSrc` **,** `vtSrc` **)** bir dize yeni nesnesine kopyalar. Parametre *vtSrc* olmalıdır `VT_BSTR` (UNICODE) veya `VT_BSTRT` (ANSI).  
   
 - **COleVariant (** `strSrc` **)** bir dize yeni nesnesine kopyalar **VT_BSTR** (UNICODE).  
   
 - **COleVariant (** `nSrc` **)** 8 bit tam sayı yeni nesnesine kopyalar `VT_UI1`.  
   
-- **COleVariant (** `nSrc` **,** `vtSrc` **)** bir 16 bit tamsayı (veya Boolean değeri) yeni nesnesine kopyalar. Parametre `vtSrc` olmalıdır `VT_I2` veya `VT_BOOL`.  
+- **COleVariant (** `nSrc` **,** `vtSrc` **)** bir 16 bit tamsayı (veya Boolean değeri) yeni nesnesine kopyalar. Parametre *vtSrc* olmalıdır `VT_I2` veya `VT_BOOL`.  
   
-- **COleVariant (** `lSrc` **,** `vtSrc` **)** 32 bit tamsayı kopyalar (veya `SCODE` değeri) içine yeni bir nesne. Parametre `vtSrc` olmalıdır `VT_I4`, `VT_ERROR`, veya `VT_BOOL`.  
+- **COleVariant (** `lSrc` **,** `vtSrc` **)** 32 bit tamsayı kopyalar (veya `SCODE` değeri) içine yeni bir nesne. Parametre *vtSrc* olmalıdır `VT_I4`, `VT_ERROR`, veya `VT_BOOL`.  
   
 - **COleVariant (** `curSrc` **)** kopya bir **COleCurrency** yeni nesnesine değer `VT_CY`.  
   
@@ -217,14 +217,14 @@ void ChangeType(VARTYPE vartype, LPVARIANT pSrc = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `vartype`  
- [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) bu `COleVariant` nesnesi.  
+ *VarType*  
+ [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) bu `COleVariant` nesnesi.  
   
- `pSrc`  
- Bir işaretçi [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) dönüştürülecek nesne. Bu değer ise **NULL**, bu `COleVariant` nesnesi, dönüştürme için kaynak olarak kullanılır.  
+ *pSrc*  
+ Bir işaretçi [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) dönüştürülecek nesne. Bu değer ise **NULL**, bu `COleVariant` nesnesi, dönüştürme için kaynak olarak kullanılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4), ve [VariantChangeType](http://msdn.microsoft.com/en-us/48a51e32-95d7-4eeb-8106-f5043ffa2fd1) Windows SDK'sı giriş.  
+ Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4), ve [VariantChangeType](http://msdn.microsoft.com/48a51e32-95d7-4eeb-8106-f5043ffa2fd1) Windows SDK'sı giriş.  
   
 ##  <a name="clear"></a>  COleVariant::Clear  
  Temizler **değişken**.  
@@ -239,19 +239,19 @@ void Clear();
  Daha fazla bilgi için bkz: `VARIANT`, `VARTYPE`, ve `VariantClear` Windows SDK'sı giriş.  
   
 ##  <a name="detach"></a>  COleVariant::Detach  
- Arka plandaki ayırır [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) bu nesneden `COleVariant` nesnesi.  
+ Arka plandaki ayırır [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) bu nesneden `COleVariant` nesnesi.  
   
 ```  
 VARIANT Detach();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev ayarlar [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) bu `COleVariant` nesnesine `VT_EMPTY`.  
+ Bu işlev ayarlar [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) bu `COleVariant` nesnesine `VT_EMPTY`.  
   
 > [!NOTE]
->  Çağırdıktan sonra **ayırma**, onu çağrı yapanın sorumluluğundadır **VariantClear** elde edilen üzerinde **değişken** yapısı.  
+>  Çağırdıktan sonra `Detach`, onu çağrı yapanın sorumluluğundadır **VariantClear** elde edilen üzerinde **değişken** yapısı.  
   
- Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4), ve [VariantClear](http://msdn.microsoft.com/en-us/28741d81-8404-4f85-95d3-5c209ec13835) Windows SDK'sı giriş.  
+ Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4), ve [VariantClear](http://msdn.microsoft.com/28741d81-8404-4f85-95d3-5c209ec13835) Windows SDK'sı giriş.  
   
 ##  <a name="getbytearrayfromvariantarray"></a>  COleVariant::GetByteArrayFromVariantArray  
  Bir bayt dizisi mevcut bir değişken dizisini alır.  
@@ -261,7 +261,7 @@ void GetByteArrayFromVariantArray(CByteArray& bytes);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bytes`  
+ *Bayt*  
  Var olan bir başvuru [CLongBinary](../../mfc/reference/cbytearray-class.md) nesnesi.  
   
 ##  <a name="operator_lpcvariant"></a>  COleVariant::operator LPCVARIANT  
@@ -310,13 +310,13 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
   
 - **işleç = (** *varSrc ***)** kopyalar varolan **değişken** veya `COleVariant` bu nesne nesnesine.  
   
-- **işleç = (** `pSrc` **)** kopya **değişken** tarafından erişilen nesne `pSrc` bu nesne içinde.  
+- **işleç = (** `pSrc` **)** kopya **değişken** tarafından erişilen nesne *pSrc* bu nesne içinde.  
   
 - **işleç = (** `lpszSrc` **)** null sonlandırılmış bir dize bu nesnesine kopyalar ve ayarlar **VARTYPE** için `VT_BSTR`.  
   
 - **işleç = (** `strSrc` **)** kopya bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) bu nesne ve ayarlar nesnesine **VARTYPE** için `VT_BSTR`.  
   
-- **işleç = (** `nSrc` **)** bir 8 veya 16 bit tamsayı değeri bu nesnesine kopyalar. Varsa `nSrc` bir 8 bit değer **VARTYPE** bu ayarlamak `VT_UI1`. Varsa `nSrc` bir 16 bit değerdir ve **VARTYPE** bu `VT_BOOL`Tutuluyor; Aksi takdirde, ayarlanır `VT_I2`.  
+- **işleç = (** `nSrc` **)** bir 8 veya 16 bit tamsayı değeri bu nesnesine kopyalar. Varsa *nSrc* bir 8 bit değer **VARTYPE** bu ayarlamak `VT_UI1`. Varsa *nSrc* bir 16 bit değerdir ve **VARTYPE** bu `VT_BOOL`Tutuluyor; Aksi takdirde, ayarlanır `VT_I2`.  
   
 - **işleç = (** `lSrc` **)** bir 32 bit tamsayı değeri bu nesnesine kopyalar. Varsa **VARTYPE** bu `VT_ERROR`Tutuluyor; Aksi takdirde, ayarlanır `VT_I4`.  
   
@@ -332,7 +332,7 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
   
 - **işleç = (** `lbSrc` **)** kopya bir [CLongBinary](../../mfc/reference/clongbinary-class.md) bu nesnesine `COleVariant` nesnesi.  
   
- Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) ve [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) Windows SDK'sı giriş.  
+ Daha fazla bilgi için bkz: [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) ve [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) Windows SDK'sı giriş.  
   
 ##  <a name="operator_eq_eq"></a>  COleVariant::operator ==  
  Bu işleç iki değişken değerlerini karşılaştırır ve eşit olup olmadıkları sıfır olmayan döndürür; Aksi takdirde 0.  
@@ -370,16 +370,16 @@ void SetString(LPCTSTR lpszSrc, VARTYPE vtSrc);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszSrc`  
+ *lpszSrc*  
  Yeni içine kopyalanacak null ile sonlandırılmış bir dize `COleVariant` nesnesi.  
   
- *VtSrc*  
+ *vtSrc*  
  **VARTYPE** yeni `COleVariant` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Parametre `vtSrc` olmalıdır `VT_BSTR` (UNICODE) veya `VT_BSTRT` (ANSI). `SetString` dizeler için varsayılan itibaren ANSI olarak ayarlamak için genellikle kullanılan [COleVariant::COleVariant](#colevariant) bir dize veya dize işaretçi parametresi ve Hayır Oluşturucusu **VARTYPE** Unicode.  
+ Parametre *vtSrc* olmalıdır `VT_BSTR` (UNICODE) veya `VT_BSTRT` (ANSI). `SetString` dizeler için varsayılan itibaren ANSI olarak ayarlamak için genellikle kullanılan [COleVariant::COleVariant](#colevariant) bir dize veya dize işaretçi parametresi ve Hayır Oluşturucusu **VARTYPE** Unicode.  
   
- DAO kayıt kümesinde bir UNICODE olmayan yapı dizeleri ANSI olmasını bekler. Bu nedenle, DAO için işlevleri kullanan `COleVariant` nesneleri, UNICODE kayıt kümesi oluşturuyorsanız değil, kullanmalıdır **COleVariant::COleVariant (** `lpszSrc` **,** `vtSrc` **)**  Oluşturucusu ile form `vtSrc` kümesine `VT_BSTRT` (ANSI) veya kullanın `SetString` ile `vtSrc` kümesine `VT_BSTRT` ANSI dizelerini yapma. Örneğin, `CDaoRecordset` işlevleri [CDaoRecordset::Seek](../../mfc/reference/cdaorecordset-class.md#seek) ve [CDaoRecordset::SetFieldValue](../../mfc/reference/cdaorecordset-class.md#setfieldvalue) kullanmak `COleVariant` parametre olarak nesneleri. DAO kayıt kümesi UNICODE değilse, bu nesnelerin ANSI olması gerekir.  
+ DAO kayıt kümesinde bir UNICODE olmayan yapı dizeleri ANSI olmasını bekler. Bu nedenle, DAO için işlevleri kullanan `COleVariant` nesneleri, UNICODE kayıt kümesi oluşturuyorsanız değil, kullanmalıdır **COleVariant::COleVariant (** `lpszSrc` **,** `vtSrc` **)**  Oluşturucusu ile form *vtSrc* kümesine `VT_BSTRT` (ANSI) veya kullanın `SetString` ile *vtSrc* kümesine `VT_BSTRT` ANSI dizelerini yapma. Örneğin, `CDaoRecordset` işlevleri [CDaoRecordset::Seek](../../mfc/reference/cdaorecordset-class.md#seek) ve [CDaoRecordset::SetFieldValue](../../mfc/reference/cdaorecordset-class.md#setfieldvalue) kullanmak `COleVariant` parametre olarak nesneleri. DAO kayıt kümesi UNICODE değilse, bu nesnelerin ANSI olması gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

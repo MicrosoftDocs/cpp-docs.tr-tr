@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 434a0b428199b7c2298815523517097aeee2ab47
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: beeef0d8ff1a89a003987f9cd79172ad2ff86d75
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376180"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079635"
 ---
 # <a name="cpropertypage-class"></a>CPropertyPage sınıfı
 Aksi halde bir sekme iletişim kutusu olarak bilinen bir özellik sayfası, her bir sayfayı temsil eder.  
@@ -165,19 +165,19 @@ void Construct(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDTemplate`  
+ *nIDTemplate*  
  Bu sayfa için kullanılan şablon kimliği.  
   
- `nIDCaption`  
+ *nIDCaption*  
  Bu sayfa için sekmesindeki yerleştirilecek adı kimliği. 0 ise bu sayfa için iletişim kutusu şablondan adı ulaşabilirsiniz.  
   
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Bir şablon kaynağı adı null ile sonlandırılmış bir dize içeriyor.  
   
- `nIDHeaderTitle`  
+ *nIDHeaderTitle*  
  Özellik sayfa üstbilgisi başlık konumunu yerleştirilecek adı kimliği. Varsayılan olarak, 0.  
   
- `nIDHeaderSubTitle`  
+ *nIDHeaderSubTitle*  
  Özellik sayfa üstbilgisi altyazısı konumunu yerleştirilecek adı kimliği. Varsayılan olarak, 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -189,9 +189,9 @@ void Construct(
   
 -   Kullanıcının seçtiği (sekmeli) bu sayfa.  
   
- Çağrı **oluşturmak** diğer sınıf oluşturuculardan birine değil çağrılmış. `Construct` Üye işlevi olduğundan esnek parametre ifadesi boş bırakın ve ardından birden çok parametre ve herhangi bir noktada yapım kodunuzda belirtin.  
+ Çağrı `Construct` diğer sınıf oluşturuculardan birine değil çağrılmış. `Construct` Üye işlevi olduğundan esnek parametre ifadesi boş bırakın ve ardından birden çok parametre ve herhangi bir noktada yapım kodunuzda belirtin.  
   
- Kullanmanız gerekir `Construct` zaman dizilerle çalışma ve çağırmalısınız **oluşturmak** dizinin her bir üyesi için veri üyeleri uygun değerler atanır.  
+ Kullanmalısınız `Construct` zaman dizilerle çalışma ve çağırmalısınız `Construct` dizinin her bir üyesi için böylece veri üyeleri uygun değerler atanır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#112](../../mfc/codesnippet/cpp/cpropertypage-class_1.cpp)]  
@@ -232,20 +232,20 @@ CPropertyPage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDTemplate`  
+ *nIDTemplate*  
  Bu sayfa için kullanılan şablon kimliği.  
   
- `nIDCaption`  
+ *nIDCaption*  
  Bu sayfa için sekmesindeki yerleştirilecek adı kimliği. 0 ise bu sayfa için iletişim kutusu şablondan adı ulaşabilirsiniz.  
   
- `dwSize`  
- `lpszTemplateName`  
+ *dwSize*  
+ *lpszTemplateName*  
  Bu sayfa için şablon adını içeren bir dize noktalarına. Olamaz **NULL**.  
   
- `nIDHeaderTitle`  
+ *nIDHeaderTitle*  
  Özellik sayfa üstbilgisi başlık konumunu yerleştirilecek adı kimliği.  
   
- `nIDHeaderSubTitle`  
+ *nIDHeaderSubTitle*  
  Özellik sayfa üstbilgisi altyazısı konumunu yerleştirilecek adı kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -488,10 +488,10 @@ LRESULT QuerySiblings(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `wParam`  
+ *wParam*  
  Ek ileti bağımlı bilgileri belirtir.  
   
- `lParam`  
+ *lParam*  
  Ek ileti bağımlı bilgi belirtir  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -515,7 +515,7 @@ void SetModified(BOOL bChanged = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bChanged`  
+ *bChanged*  
  **DOĞRU** özellik sayfası ayarları bunlar uygulanan; en son ne zaman beri değiştirilmiş belirtmek için **FALSE** özellik sayfası ayarları uygulanmış olan veya yok sayılması gerektiğini belirtmek için.  
   
 ### <a name="remarks"></a>Açıklamalar  

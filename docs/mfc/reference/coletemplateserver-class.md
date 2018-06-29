@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90b24d65dbd6f800dda0b25088288bee6fdcf3c2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 38ade76568f261c0e0320002d1a53ef1858c9509
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374389"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37077984"
 ---
 # <a name="coletemplateserver-class"></a>COleTemplateServer sınıfı
 OLE görsel düzenleme sunucuları, otomasyon sunucuları ve bağlantı kapsayıcıları (eklerinin bağlantılarını destekleyen uygulamalar) için kullanılır.  
@@ -96,13 +96,13 @@ void ConnectTemplate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `clsid`  
+ *CLSID*  
  Şablon istekleri OLE sınıf kimliği başvuru.  
   
- `pDocTemplate`  
+ *pDocTemplate*  
  Belge şablonu işaretçi.  
   
- `bMultiInstance`  
+ *bMultiInstance*  
  Tek bir örnek uygulamanın birden fazla desteği olup olmadığını gösterir. Varsa **doğru**, uygulamanın birden çok örneğini bir nesne oluşturmak her istek için başlatılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -133,7 +133,7 @@ void UpdateRegistry(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nAppType`  
+ *nAppType*  
  Arasında bir değer **OLE_APPTYPE** AFXDISP içinde tanımlanan numaralandırması. H. Aşağıdaki değerlerden biri olabilir:  
   
 - `OAT_INPLACE_SERVER` Sunucu tam sunucu kullanıcı arabirimi sahiptir.  
@@ -144,25 +144,25 @@ void UpdateRegistry(
   
 - `OAT_DISPATCH_OBJECT` Nesne `IDispatch`-özelliğine sahip.  
   
-- **OAT_DOC_OBJECT_SERVER** sunucu destekler katıştırma ve belge nesnesi bileşen modeli.  
+- `OAT_DOC_OBJECT_SERVER` Sunucu destekler katıştırma ve belge nesnesi bileşen modeli.  
   
- `rglpszRegister`  
+ *rglpszRegister*  
  Yalnızca hiçbir girdi yoksa, kayıt defterine yazılır girişinin listesi.  
   
- `rglpszOverwrite`  
+ *rglpszOverwrite*  
  Tüm önceki girdileri olup mevcut bağımsız olarak kayıt defterine yazılır girişleri listesi.  
   
- `bRegister`  
- Sınıf kayıtlı olup olmadığını belirler. Varsa `bRegister` olan **doğru**, sınıf sistem kayıt defteri ile kaydedilir. Aksi takdirde, sınıf kaydını siler.  
+ *bRegister*  
+ Sınıf kayıtlı olup olmadığını belirler. Varsa *bRegister* olan **doğru**, sınıf sistem kayıt defteri ile kaydedilir. Aksi takdirde, sınıf kaydını siler.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kayıt bilgileri yapılan bir çağrı aracılığıyla yüklenen [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). Alınan alt dizeler olanlardır dizinleri tarafından tanımlanan **regFileTypeId**, **regFileTypeName**, ve **fileNewName**açıklandığı gibi `GetDocString` başvuru sayfaları.  
   
  Varsa **regFileTypeId** substring boşsa veya çağrısı `GetDocString` başka bir nedenle, bu işlev için başarısız ve dosya bilgileri kayıt defterinde girilmemiş.  
   
- Bağımsız değişkenler bilgileri `rglpszRegister` ve `rglpszOverwrite` çağrısıyla kayıt defterine yazılır [AfxOleRegisterServerClass](application-control.md#afxoleregisterserverclass). İki bağımsız değişken olduğunda kayıtlı varsayılan bilgileri **NULL**, çoğu uygulamalar için uygundur. Bu bağımsız değişkenler bilgileri yapısı hakkında daha fazla bilgi için bkz: `AfxOleRegisterServerClass`.  
+ Bağımsız değişkenler bilgileri *rglpszRegister* ve *rglpszOverwrite* çağrısıyla kayıt defterine yazılır [AfxOleRegisterServerClass](application-control.md#afxoleregisterserverclass). İki bağımsız değişken olduğunda kayıtlı varsayılan bilgileri **NULL**, çoğu uygulamalar için uygundur. Bu bağımsız değişkenler bilgileri yapısı hakkında daha fazla bilgi için bkz: `AfxOleRegisterServerClass`.  
   
- Daha fazla bilgi için bkz: [IDispatch arabirimi uygulama](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945).  
+ Daha fazla bilgi için bkz: [IDispatch arabirimi uygulama](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek HIERSVR](../../visual-cpp-samples.md)   

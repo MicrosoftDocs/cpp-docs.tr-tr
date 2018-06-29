@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 718283893c9e8ec9798dea9a4b9fb307d1099e68
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 95fdd973d94c0d60e5e3177260740c5d62f1ea5b
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36952063"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078562"
 ---
 # <a name="cd2dbrush-class"></a>CD2DBrush sınıfı
 ID2D1Brush için sarmalayıcı.  
@@ -110,7 +110,7 @@ virtual ~CD2DBrush();
 ```  
   
 ##  <a name="attach"></a>  CD2DBrush::Attach  
- Var olan nesne kaynak arabirimine ekler  
+ Var olan nesne kaynak arabirimi ekler.  
   
 ```  
 void Attach(ID2D1Brush* pResource);
@@ -118,7 +118,7 @@ void Attach(ID2D1Brush* pResource);
   
 ### <a name="parameters"></a>Parametreler  
  *pResource*  
- Mevcut kaynak arabirimi. NULL olamaz  
+ Mevcut kaynak arabirimi. NULL olamaz.  
   
 ##  <a name="cd2dbrush"></a>  CD2DBrush::CD2DBrush  
  CD2DBrush nesnesi oluşturur.  
@@ -148,7 +148,7 @@ virtual void Destroy();
 ```  
   
 ##  <a name="detach"></a>  CD2DBrush::detach  
- Kaynak arabirimi nesneden çıkarır  
+ Kaynak arabirimi nesneden çıkarır.  
   
 ```  
 ID2D1Brush* Detach();
@@ -175,7 +175,7 @@ FLOAT GetOpacity() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sıfır fırça geçirgenliğini gösteren 1 arasında bir değer. Bu değer tüm pikselleri fırça tarafından doldurulmuş alfa değeri doğrusal olarak ölçeklendirir sabit bir çarpanı olur. Birlikte çarpıldığı önce opaklık değerleri aralığı 0'dan 1 clamped  
+ Sıfır fırça geçirgenliğini gösteren 1 arasında bir değer. Bu değer tüm pikselleri fırça tarafından doldurulmuş alfa değeri doğrusal olarak ölçeklendirir sabit bir çarpanı olur. Birlikte çarpıldığı önce opaklık değerleri aralığı 0'dan 1 clamped.  
   
 ##  <a name="gettransform"></a>  CD2DBrush::GetTransform  
  Geçerli dönüştürme işleme hedef alır  
@@ -186,7 +186,7 @@ void GetTransform(D2D1_MATRIX_3X2_F* transform) const;
   
 ### <a name="parameters"></a>Parametreler  
  *transform*  
- Bu geri döndüğünde, işleme hedef geçerli dönüştürme içerir. Bu parametre, başlatmadan iletilir  
+ Bu geri döndüğünde, işleme hedef geçerli dönüştürme içerir. Bu parametre, başlatılmamış olarak geçirilir.  
   
 ##  <a name="isvalid"></a>  CD2DBrush::IsValid  
  Denetimleri kaynak geçerlilik  
@@ -231,10 +231,10 @@ void SetOpacity(FLOAT opacity);
   
 ### <a name="parameters"></a>Parametreler  
  *Opaklık*  
- Sıfır fırça geçirgenliğini gösteren 1 arasında bir değer. Bu değer tüm pikselleri fırça tarafından doldurulmuş alfa değeri doğrusal olarak ölçeklendirir sabit bir çarpanı olur. Birlikte çarpıldığı önce opaklık değerleri aralığı 0'dan 1 clamped  
+ Sıfır fırça geçirgenliğini gösteren 1 arasında bir değer. Bu değer tüm pikselleri fırça tarafından doldurulmuş alfa değeri doğrusal olarak ölçeklendirir sabit bir çarpanı olur. Birlikte çarpıldığı önce opaklık değerleri aralığı 0'dan 1 clamped.  
   
 ##  <a name="settransform"></a>  CD2DBrush::SetTransform  
- Belirtilen dönüşüm varolan dönüştürme değiştirme işleme hedef için geçerlidir. Tüm sonraki çizim işlemleri dönüştürülmüş alanı oluşur  
+ Belirtilen dönüşüm varolan dönüştürme değiştirme işleme hedef için geçerlidir. Tüm sonraki çizim işlemleri dönüştürülmüş alanı oluşur.  
   
 ```  
 void SetTransform(const D2D1_MATRIX_3X2_F* transform);

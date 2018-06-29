@@ -59,12 +59,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 598159ff01fe1628a693085f84077d9adfcbbf49
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: a472284df67993a65de98df7db698ea533451ea3
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305548"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079442"
 ---
 # <a name="adapter-stlclr"></a>bağdaştırıcı (STL/CLR)
 STL/CLR üstbilgi `<cliext/adapter>` iki şablon sınıfları belirtir (`collection_adapter` ve `range_adapter`) ve şablon işlevi `make_collection`.  
@@ -80,7 +80,7 @@ STL/CLR üstbilgi `<cliext/adapter>` iki şablon sınıfları belirtir (`collect
   
  **Namespace:** cliext 
   
-## <a name="members"></a>Üyeler  
+## <a name="declarations"></a>Bildirimler  
   
 |örneği|Açıklama|  
 |-----------|-----------------|  
@@ -91,6 +91,8 @@ STL/CLR üstbilgi `<cliext/adapter>` iki şablon sınıfları belirtir (`collect
 |--------------|-----------------|  
 |[make_collection (STL/CLR)](#make_collection)|Yineleyici çifti kullanarak bir aralık bağdaştırıcısı oluşturur.|   
   
+## <a name="members"></a>Üyeler
+
 ## <a name="collection_adapter"></a> collection_adapter (STL/CLR)
 STL/CLR kapsayıcı olarak kullanmak için bir .NET koleksiyonu sarmalar. A `collection_adapter` basit bir STL/CLR kapsayıcı nesne açıklayan bir şablon sınıfıdır. Bir temel sınıf kitaplığı (BCL) arabirimi sarmalar ve denetlenen dizisi yönetmek için kullandığınız bir yineleyici çifti döndürür.  
   

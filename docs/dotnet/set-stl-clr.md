@@ -105,19 +105,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 99ea41a77a8ed01cb78df3513ccb79b6b2a8b3f1
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: 21c2ebc9ba59e6581a9f6d286f136c907b7c73aa
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305897"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079883"
 ---
 # <a name="set-stlclr"></a>set (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `set` öğeleri dizisi (neredeyse) dengeli sıralı ağacı düğümleri olarak her bir öğe depolamak yönetmek için.  
   
  Aşağıda, açıklamada `GValue` aynı `GKey`, sırayla olduğu aynı `Key` ikinci ref türü olmadıkça olmasından; bu durumda `Key^`.  
   
-### <a name="syntax"></a>Sözdizimi  
+## <a name="syntax"></a>Sözdizimi  
   
 ```  
 template<typename Key>  
@@ -133,10 +133,15 @@ template<typename Key>
     { ..... };  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  Anahtar  
  Anahtar bileşeni denetlenen sıradaki öğenin türü.  
   
+## <a name="requirements"></a>Gereksinimler  
+ **Başlık:** \<cliext/kümesi >  
+  
+ **Namespace:** cliext  
+
 ## <a name="declarations"></a>Bildirimler  
   
 |Tür Tanımlaması|Açıklama|  
@@ -202,7 +207,7 @@ template<typename Key>
 |<xref:System.Collections.Generic.ICollection%601>|Yazılı öğeleri grubunu koruyun.|  
 |ITree\<anahtar, değer >|Genel kapsayıcı korur.|  
   
-### <a name="remarks"></a>Açıklamalar  
+## <a name="remarks"></a>Açıklamalar  
  Nesne ayırır ve bireysel düğümleri olarak denetimleri dizisi için depolama boşaltır. Hiçbir zaman kopyalayarak bir düğümün içeriğini başka düğümler arasındaki bağlantılar değiştirilerek sıralı tutar (neredeyse) dengeli bir ağaç öğeleri ekler. INSERT ve rahatsız edici kalan öğeleri olmadan serbestçe öğeleri Kaldır anlamına gelir.  
   
  Nesne denetleyen bir saklı temsilci nesne türü çağırarak dizisi siparişleri [set::key_compare (STL/CLR)](../dotnet/set-key-compare-stl-clr.md). Küme oluşturmak zaman saklı temsilci nesnesini belirtebilirsiniz; hiçbir temsilci nesnesi belirtirseniz, karşılaştırma varsayılandır `operator<(key_type, key_type)`. Üye işlevini çağırarak saklı bu nesneye erişim [set::key_comp (STL/CLR)](../dotnet/set-key-comp-stl-clr.md)`()`.  
@@ -228,11 +233,6 @@ template<typename Key>
  Sırayla ilişkilendirilmiş kapsayıcısı için bir tanıtıcı depolar onun ilişkili küme düğümü için bir tanıtıcı kümesi yineleyici depolar. Yalnızca ilişkili kapsayıcı nesneleri ile yineleyiciler kullanabilirsiniz. İlişkili küme düğümü bazı kümesiyle ilişkili olduğu sürece kümesi yineleyici geçerli kalır. Ayrıca, geçerli bir yineleyici dereferencable--erişmek veya eşit değil sürece bunu atayan--öğe değeri değiştirmek için kullanmak `end()`.  
   
  Silme veya bir öğe kaldırıldığında yıkıcı depolanan değeri için çağırır. Kapsayıcı yok etme tüm öğeleri siler. Bu nedenle, hiçbir öğe kapsayıcı outlive ref sınıfı öğe türü olan bir kapsayıcı sağlar. Ancak, bir kapsayıcı, tanıtıcısı algılamadığı unutmayın `not` öğeleri yok.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** \<cliext/kümesi >  
-  
- **Namespace:** cliext  
  
 ## <a name="members"></a>Üyeler
 

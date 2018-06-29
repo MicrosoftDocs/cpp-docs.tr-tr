@@ -124,12 +124,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c7550e3e3d8bf7e49f9f93ea6e9a931d6567ef0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6ab1f4a056e1a65475a71ede0b51db45189d2dd9
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377764"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079766"
 ---
 # <a name="crendertarget-class"></a>CRenderTarget sınıfı
 ID2D1RenderTarget için sarmalayıcı.  
@@ -246,7 +246,7 @@ void Attach(ID2D1RenderTarget* pRenderTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pRenderTarget`  
+ *pRenderTarget*  
  Varolan işleme hedefi arabirimi. NULL olamaz  
   
 ##  <a name="begindraw"></a>  CRenderTarget::BeginDraw  
@@ -264,7 +264,7 @@ void Clear(D2D1_COLOR_F color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `color`  
+ *Renk*  
  Çizim alanı temizlenmiş olduğundan rengi.  
   
 ##  <a name="colorref_to_d2dcolor"></a>  CRenderTarget::COLORREF_TO_D2DCOLOR  
@@ -277,10 +277,10 @@ static D2D1_COLOR_F COLORREF_TO_D2DCOLOR(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `color`  
+ *Renk*  
  RGB değeri.  
   
- `nAlpha`  
+ *nAlpha*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  D2D1_COLOR_F değeri.  
@@ -298,19 +298,19 @@ BOOL CreateCompatibleRenderTarget(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bitmapTarget`  
+ *bitmapTarget*  
  Bu yöntem döndürüldüğünde, yeni bir bit eşlem oluşturma hedefi için bir işaretçi adresini içerir. Bu parametre, başlatılmamış olarak geçirilir.  
   
- `sizeDesired`  
+ *sizeDesired*  
  İstenen boyut orijinal olandan farklı olacaksa, aygıttan bağımsız piksel cinsinden yeni işleme hedef hedef oluşturmak veya NULL. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
- `sizePixelDesired`  
+ *sizePixelDesired*  
  İstenen boyut orijinal olandan farklı olacaksa, piksel cinsinden yeni işleme hedef hedef oluşturmak veya NULL. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
- `desiredFormat`  
+ *desiredFormat*  
  İstenen piksel biçimi ve yeni alfa modu hedef oluşturmak ya da NULL. Özgün işlemek gibi hedef piksel biçimi için DXGI_FORMAT_UNKNOWN ayarladıysanız ya da bu parametre null ise yeni işleme hedefi aynı piksel biçimi kullanır. Alfa modu D2D1_ALPHA_MODE_UNKNOWN ya bu parametre NULL ise yeni işleme hedefi alfa modunu D2D1_ALPHA_MODE_PREMULTIPLIED için varsayılan olarak. Desteklenen piksel biçimleri ve alfa modları desteklenen piksel biçimleri hakkında daha fazla bilgi için bkz.  
   
- `options`  
+ *Seçenekler*  
  Yeni hedef işlenip işlenmeyeceğini belirten bir değer GDI ile uyumlu olması gerekir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -331,7 +331,7 @@ BOOL Destroy(BOOL bDeleteResources = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bDeleteResources`  
+ *bDeleteResources*  
  BDeleteResources TRUE ise, m_lstResources içinde bulunan tüm kaynakları otomatik olarak yok.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -360,19 +360,19 @@ void DrawBitmap(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pBitmap`  
+ *pBitmap*  
  İşlenecek bitmap.  
   
- `rectDest`  
+ *rectDest*  
  Aygıttan bağımsız piksel cinsinden işleme hedefin koordinat, bit eşlem çizilen alanın konumu ve boyutu. Dikdörtgen iyi sıralı değil hiçbir şey çizilir, ancak işleme hedefi bir hata durumuna geçmiyor.  
   
- `fOpacity`  
+ *fOpacity*  
  Bit eşlem için uygulanacak bir geçirgenlik değeri belirten bir değeri 0 .0f ile 1.0f, (dahil) arasında; Bu değer, bit eşlem'in içeriği alfa değerleri karşı çarpılır.  
   
- `interpolationMode`  
+ *interpolationMode*  
  Bit eşlem ölçeklendirilmiş ya da çizim işlem tarafından döndürülen kullanmak için ilişkilendirme modunu.  
   
- `pRectSrc`  
+ *pRectSrc*  
  Boyutunu ve konumunu aygıttan bağımsız piksel cinsinden bit eşlem'ın koordinat, alanın çizmek için bit eşlem içinde.  
   
 ##  <a name="drawellipse"></a>  CRenderTarget::DrawEllipse  
@@ -387,16 +387,16 @@ void DrawEllipse(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ellipse`  
+ *Elips*  
  Konum ve RADIUS çizileceğini aygıttan bağımsız piksel cinsinden elipsin.  
   
- `pBrush`  
+ *pBrush*  
  Elips 's anahat boyamak için kullanılan fırça.  
   
- `fStrokeWidth`  
+ *fStrokeWidth*  
  Elips 's vuruş kalınlığı. Vuruşun elips 's çerçevesinde ortalanır.  
   
- `strokeStyle`  
+ *strokeStyle*  
  Elips 's anahat, veya bir düz vuruş boyamak için NULL uygulamak için vuruş stili.  
   
 ##  <a name="drawgeometry"></a>  CRenderTarget::DrawGeometry  
@@ -411,16 +411,16 @@ void DrawGeometry(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGeometry`  
+ *pGeometry*  
  Çizmek için geometri.  
   
- `pBrush`  
+ *pBrush*  
  Geometri 's vuruş boyamak için kullanılan fırça.  
   
- `fStrokeWidth`  
+ *fStrokeWidth*  
  Geometri 's vuruş kalınlığı. Vuruşun geometri 's çerçevesinde ortalanır.  
   
- `strokeStyle`  
+ *strokeStyle*  
  Geometri 's anahat, veya bir düz vuruş boyamak için NULL uygulamak için vuruş stili.  
   
 ##  <a name="drawglyphrun"></a>  CRenderTarget::DrawGlyphRun  
@@ -435,16 +435,16 @@ void DrawGlyphRun(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ptBaseLineOrigin`  
+ *ptBaseLineOrigin*  
  CİHAZDAN bağımsız piksel cinsinden karakterlerin temel başlangıcı.  
   
- `glyphRun`  
+ *glyphRun*  
  İşlenecek karakterlerin.  
   
- `pForegroundBrush`  
+ *pForegroundBrush*  
  Belirtilen karakterlerin boyamak için kullanılan fırça.  
   
- `measuringMode`  
+ *measuringMode*  
  Karakter ölçümü biçimlendirildiğinde metin ölçmek için nasıl kullanılacağını gösteren bir değer. DWRITE_MEASURING_MODE_NATURAL varsayılan değerdir.  
   
 ##  <a name="drawline"></a>  CRenderTarget::DrawLine  
@@ -460,19 +460,19 @@ void DrawLine(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ptFrom`  
+ *ptFrom*  
  CİHAZDAN bağımsız piksel cinsinden satırının başlangıç noktası.  
   
- `ptTo`  
+ *ptTo*  
  CİHAZDAN bağımsız piksel cinsinden satırının bitiş noktası.  
   
- `pBrush`  
+ *pBrush*  
  Satırın vuruş boyamak için kullanılan fırça.  
   
- `fStrokeWidth`  
+ *fStrokeWidth*  
  Vuruşun genişliğini belirtir 0.0f eşit veya daha büyük değer. Bu parametre belirtilmezse, 1.0f için varsayılan olarak ayarlanır. Vuruşun satırında ortalanır.  
   
- `strokeStyle`  
+ *strokeStyle*  
  Paint veya düz bir çizgi boyamak için NULL vuruş stili.  
   
 ##  <a name="drawrectangle"></a>  CRenderTarget::DrawRectangle  
@@ -487,16 +487,16 @@ void DrawRectangle(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rect`  
+ *Rect*  
  CİHAZDAN bağımsız piksel cinsinden çizileceğini dikdörtgenin boyutları  
   
- `pBrush`  
+ *pBrush*  
  Dikdörtgenin vuruş boyamak için kullanılan fırça  
   
- `fStrokeWidth`  
+ *fStrokeWidth*  
  Dikdörtgenin vuruşun genişliğini belirtir 0.0f eşit veya daha büyük değer. Vuruşun dikdörtgenin çerçevesinde ortalanır.  
   
- `strokeStyle`  
+ *strokeStyle*  
  Paint ya da bir düz vuruş boyamak için NULL vuruş stili.  
   
 ##  <a name="drawroundedrectangle"></a>  CRenderTarget::DrawRoundedRectangle  
@@ -511,16 +511,16 @@ void DrawRoundedRectangle(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rectRounded`  
+ *rectRounded*  
  CİHAZDAN bağımsız piksel cinsinden çizileceğini yuvarlak dikdörtgen boyutları.  
   
- `pBrush`  
+ *pBrush*  
  Yuvarlak dikdörtgen anahat boyamak için kullanılan fırça.  
   
- `fStrokeWidth`  
+ *fStrokeWidth*  
  Yuvarlak dikdörtgen vuruş kalınlığı. Vuruşun yuvarlak dikdörtgen çerçevesinde ortalanır. 1.0f varsayılan değerdir.  
   
- `strokeStyle`  
+ *strokeStyle*  
  Yuvarlak dikdörtgen vuruş ya da bir düz vuruş boyamak için NULL stili. Varsayılan değer NULL olur.  
   
 ##  <a name="drawtext"></a>  CRenderTarget::DrawText  
@@ -537,22 +537,22 @@ void DrawText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `strText`  
+ *strText*  
  Unicode karakterler çizmek için bir dizi için bir işaretçi.  
   
- `rect`  
+ *Rect*  
  Boyutunu ve konumunu metni çizilen alanının.  
   
- `pForegroundBrush`  
+ *pForegroundBrush*  
  Metin boyamak için kullanılan fırça.  
   
- `textFormat`  
+ *textFormat*  
  Bir nesne, yani ayrıntıları çizmek için metin, yazı tipi, yazı tipi boyutunu ve akış yönünü biçimlendirmeyi açıklar.  
   
- `options`  
+ *Seçenekler*  
  Metin piksel sınırları eşlemeden ve düzeni dikdörtgene metin kırpılmış belirten bir değer. Metin piksel sınırları unsuruna tutturulmuş ve bu düzen dikdörtgenin kırpılacağını değil gösterir D2D1_DRAW_TEXT_OPTIONS_NONE varsayılan değerdir.  
   
- `measuringMode`  
+ *measuringMode*  
  Karakter ölçümü biçimlendirildiğinde metin ölçmek için nasıl kullanılacağını gösteren bir değer. DWRITE_MEASURING_MODE_NATURAL varsayılan değerdir.  
   
 ##  <a name="drawtextlayout"></a>  CRenderTarget::DrawTextLayout  
@@ -567,16 +567,16 @@ void DrawTextLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ptOrigin`  
+ *ptOrigin*  
  TextLayout tarafından açıklanan metnin sol üst köşesinin çizileceğini aygıttan bağımsız piksel cinsinden açıklanan noktası.  
   
- `textLayout`  
+ *textLayout*  
  Biçimlendirilmiş metin çizmek için. ID2D1Resource devralmayan çizim tüm etkilerinin göz ardı edilir. Fırçalar olmayan ID2D1Resource devralan çizim etkileri varsa, bu yöntem başarısız olur ve işleme hedefi bir hata durumuna sokar.  
   
- `pBrushForeground`  
+ *pBrushForeground*  
  Zaten bir çizim efekti (IDWriteTextLayout::SetDrawingEffect yöntemi tarafından belirtilen) olarak ilişkili fırça yok textLayout herhangi bir metin boyamak için kullanılan fırça.  
   
- `options`  
+ *Seçenekler*  
  Metin piksel sınırları eşlemeden ve düzeni dikdörtgene metin kırpılmış belirten bir değer. Metin piksel sınırları unsuruna tutturulmuş ve bu düzen dikdörtgenin kırpılacağını değil gösterir D2D1_DRAW_TEXT_OPTIONS_NONE varsayılan değerdir.  
   
 ##  <a name="enddraw"></a>  CRenderTarget::EndDraw  
@@ -599,10 +599,10 @@ void FillEllipse(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ellipse`  
+ *Elips*  
  Konum ve RADIUS aygıttan bağımsız piksel cinsinden boyamak için üç nokta.  
   
- `pBrush`  
+ *pBrush*  
  Elipsin iç kısmını boyamak için kullanılan fırça.  
   
 ##  <a name="fillgeometry"></a>  CRenderTarget::FillGeometry  
@@ -616,13 +616,13 @@ void FillGeometry(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pGeometry`  
+ *pGeometry*  
  Boyama geometri.  
   
- `pBrush`  
+ *pBrush*  
  Geometri boyamak için kullanılan fırça iç.  
   
- `pOpacityBrush`  
+ *pOpacityBrush*  
  Geometriye uygulamak için geçirgenlik maskesi; Opaklık maskesi için NULL. Geçirgenlik maskesi (opacityBrush parametre) belirtilen fırça D2D1_EXTEND_MODE_CLAMP için ayarlanmış x ve y genişletmek modlarından sahip bir ID2D1BitmapBrush olması gerekir. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
 ##  <a name="fillmesh"></a>  CRenderTarget::FillMesh  
@@ -635,10 +635,10 @@ void FillMesh(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pMesh`  
+ *pMesh*  
  Boyama kafes.  
   
- `pBrush`  
+ *pBrush*  
  Mesh boyamak için kullanılan fırça.  
   
 ##  <a name="fillopacitymask"></a>  CRenderTarget::FillOpacityMask  
@@ -654,19 +654,19 @@ void FillOpacityMask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pOpacityMask`  
+ *pOpacityMask*  
  Konum ve RADIUS aygıttan bağımsız piksel cinsinden boyamak için üç nokta.  
   
- `pBrush`  
+ *pBrush*  
  DestinationRectangle tarafından belirtilen işleme hedef bölgesini boyamak için kullanılan fırça.  
   
- `content`  
+ *İçerik*  
  İçerik geçirgenlik maskesi türü içerir. Değer geçirgenlik maskesi karıştırılan renk alanını belirlemek için kullanılır.  
   
- `rectDest`  
+ *rectDest*  
  CİHAZDAN bağımsız piksel cinsinden boyamak için işleme hedef bölgesi.  
   
- `rectSrc`  
+ *rectSrc*  
  CİHAZDAN bağımsız piksel cinsinden geçirgenlik maskesi olarak kullanılacak bit eşlem bölgesi.  
   
 ##  <a name="fillrectangle"></a>  CRenderTarget::FillRectangle  
@@ -679,10 +679,10 @@ void FillRectangle(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rect`  
+ *Rect*  
  Dikdörtgen boyamak, aygıttan bağımsız piksel cinsinden boyutu.  
   
- `pBrush`  
+ *pBrush*  
  Dikdörtgen boyamak için kullanılan fırça iç.  
   
 ##  <a name="fillroundedrectangle"></a>  CRenderTarget::FillRoundedRectangle  
@@ -695,10 +695,10 @@ void FillRoundedRectangle(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rectRounded`  
+ *rectRounded*  
  Cihaz bağımsız piksel cinsinden boyamak için yuvarlak dikdörtgen boyutları.  
   
- `pBrush`  
+ *pBrush*  
  İç yuvarlak dikdörtgen kısmını boyamak için kullanılan fırça.  
   
 ##  <a name="flush"></a>  CRenderTarget::Flush  
@@ -711,10 +711,10 @@ void Flush(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `tag1`  
+ *tag1*  
  Herhangi bir hata varsa, hatalar veya 0 neden işlemleri çizim etiketi içeriyor. Bu parametre, başlatılmamış olarak geçirilir.  
   
- `tag2`  
+ *tag2*  
  Herhangi bir hata varsa, hatalar veya 0 neden işlemleri çizim etiketi içeriyor. Bu parametre, başlatılmamış olarak geçirilir.  
   
 ##  <a name="getantialiasmode"></a>  CRenderTarget::GetAntialiasMode  
@@ -797,10 +797,10 @@ void GetTags(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `tag1`  
+ *tag1*  
  Sonraki çizim işlemleri için ilk etiket içerir. Bu parametre, başlatılmamış olarak geçirilir. NULL belirtilirse, hiçbir değer bu parametre için alınır.  
   
- `tag2`  
+ *tag2*  
  Sonraki çizim işlemleri için ikinci etiket içerir. Bu parametre, başlatılmamış olarak geçirilir. NULL belirtilirse, hiçbir değer bu parametre için alınır.  
   
 ##  <a name="gettextantialiasmode"></a>  CRenderTarget::GetTextAntialiasMode  
@@ -821,7 +821,7 @@ void GetTextRenderingParams(IDWriteRenderingParams** textRenderingParams);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `textRenderingParams`  
+ *textRenderingParams*  
  Bu yöntem döndürüldüğünde, textRenderingParamscontains işleme hedefi için bir işaretçi adresini geçerli metin işleme seçenekleri.  
   
 ##  <a name="gettransform"></a>  CRenderTarget::GetTransform  
@@ -832,7 +832,7 @@ void GetTransform(D2D1_MATRIX_3X2_F* transform);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `transform`  
+ *transform*  
  İşleme hedefe uygulanacak dönüşüm.  
   
 ##  <a name="issupported"></a>  CRenderTarget::IsSupported  
@@ -843,7 +843,7 @@ BOOL IsSupported(const D2D1_RENDER_TARGET_PROPERTIES& renderTargetProperties) co
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `renderTargetProperties`  
+ *renderTargetProperties*  
  Test etmek için işleme hedef özellikleri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -914,10 +914,10 @@ void PushAxisAlignedClip(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rectClip`  
+ *rectClip*  
  Boyutunu ve konumunu kırpma alanının aygıttan bağımsız piksel cinsinden.  
   
- `mode`  
+ *modu*  
  Piksel sınırları olan küçük rects kenarlarına çizmek için ve küçük Sahne içeriğiyle karıştırmak için kullanılan düzgünleştirme modu. Ne zaman PopAxisAlignedClip yöntemi olarak adlandırılır ve her ilkel katman içinde uygulanmaz sonra karıştırma gerçekleştirilir.  
   
 ##  <a name="pushlayer"></a>  CRenderTarget::PushLayer  
@@ -930,10 +930,10 @@ void PushLayer(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `layerParameters`  
+ *layerParameters*  
  İçerik sınırları, geometrik maske, opaklık, geçirgenlik maskesi ve düzgünleştirme seçeneklerini.  
   
- `layer`  
+ *Katman*  
  Sonraki çizim işlemleri alır katmanı.  
   
 ##  <a name="restoredrawingstate"></a>  CRenderTarget::RestoreDrawingState  
@@ -944,7 +944,7 @@ void RestoreDrawingState(ID2D1DrawingStateBlock& drawingStateBlock);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `drawingStateBlock`  
+ *drawingStateBlock*  
  Yeni Çizim durumunu işleme hedefi.  
   
 ##  <a name="savedrawingstate"></a>  CRenderTarget::SaveDrawingState  
@@ -955,7 +955,7 @@ void SaveDrawingState(ID2D1DrawingStateBlock& drawingStateBlock) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `drawingStateBlock`  
+ *drawingStateBlock*  
  Bu yöntem döndürüldüğünde, işleme hedefi geçerli çizim durumunu içerir. Bu parametre, yönteme geçirmeden önce başlatılmalıdır.  
   
 ##  <a name="setantialiasmode"></a>  CRenderTarget::SetAntialiasMode  
@@ -966,7 +966,7 @@ void SetAntialiasMode(D2D1_ANTIALIAS_MODE antialiasMode);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `antialiasMode`  
+ *antialiasMode*  
  Gelecekteki çizim işlemleri için Düzgünleştirme modu.  
   
 ##  <a name="setdpi"></a>  CRenderTarget::SetDpi  
@@ -977,7 +977,7 @@ void SetDpi(const CD2DSizeF& sizeDPI);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `sizeDPI`  
+ *sizeDPI*  
  Değerinden büyük veya sıfıra işleme hedefi yatay/verticalDPI belirten değer.  
   
 ##  <a name="settags"></a>  CRenderTarget::SetTags  
@@ -990,10 +990,10 @@ void SetTags(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `tag1`  
+ *tag1*  
  Sonraki çizim işlemleri uygulamak için etiket.  
   
- `tag2`  
+ *tag2*  
  Sonraki çizim işlemleri uygulamak için etiket.  
   
 ##  <a name="settextantialiasmode"></a>  CRenderTarget::SetTextAntialiasMode  
@@ -1004,7 +1004,7 @@ void SetTextAntialiasMode(D2D1_TEXT_ANTIALIAS_MODE textAntialiasMode);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `textAntialiasMode`  
+ *textAntialiasMode*  
  Sonraki metni ve işlemleri çizim simge için kullanılacak düzgünleştirme modu.  
   
 ##  <a name="settextrenderingparams"></a>  CRenderTarget::SetTextRenderingParams  
@@ -1015,7 +1015,7 @@ void SetTextRenderingParams(IDWriteRenderingParams* textRenderingParams = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `textRenderingParams`  
+ *textRenderingParams*  
  Tüm sonraki metin ve işlemleri çizim karakter uygulanacak metin işleme seçenekleri; Geçerli metin işleme seçenekleri temizlemek için NULL.  
   
 ##  <a name="settransform"></a>  CRenderTarget::SetTransform  
@@ -1027,7 +1027,7 @@ void SetTransform(const D2D1_MATRIX_3X2_F& transform);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `transform`  
+ *transform*  
  İşleme hedefe uygulanacak dönüşüm.  
   
 ##  <a name="verifyresource"></a>  CRenderTarget::VerifyResource  
@@ -1038,7 +1038,7 @@ BOOL VerifyResource(CD2DResource* pResource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pResource`  
+ *pResource*  
  CD2DResource nesnesine işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

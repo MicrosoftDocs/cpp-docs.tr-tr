@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82ffdb26c5766a0ff7cbada511c9bc9c82ebfd93
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0b480ee1118551b09c705fb4f79f8a50c0a1f895
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375548"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079573"
 ---
 # <a name="cscrollview-class"></a>CScrollView sınıfı
 A [CView](../../mfc/reference/cview-class.md) yetenekleri kaydırma ile.  
@@ -100,7 +100,7 @@ class CScrollView : public CView
   
  Önce `OnDraw` türetilmiş görünüm sınıfınızın üye işlevi çağrıldığında `CScrollView` otomatik olarak görünüm penceresinin başlangıç ayarlar `CPaintDC` bunu geçirir cihaz bağlamı nesne `OnDraw`.  
   
- Kayan pencere görünüm penceresinin başlangıç ayarlamak için `CScrollView` geçersiz kılmaları [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc). Bu düzeltme için otomatik `CPaintDC` cihaz bağlamı, `CScrollView` geçirir `OnDraw`, ancak çağırmalısınız **CScrollView::OnPrepareDC** kendiniz herhangi bir cihaz bağlamları, gibikullandığınız`CClientDC`. Geçersiz kılabilirsiniz **CScrollView::OnPrepareDC** Kalem, arka plan rengi ve diğer çizim öznitelikleri ayarlanmasına, ancak ölçeklendirme yapmak için temel sınıf çağırın.  
+ Kayan pencere görünüm penceresinin başlangıç ayarlamak için `CScrollView` geçersiz kılmaları [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc). Bu düzeltme için otomatik `CPaintDC` cihaz bağlamı, `CScrollView` geçirir `OnDraw`, ancak çağırmalısınız `CScrollView::OnPrepareDC` kendiniz herhangi bir cihaz bağlamları için aşağıdaki gibi kullandığınız bir `CClientDC`. Geçersiz kılabilirsiniz `CScrollView::OnPrepareDC` Kalem, arka plan rengi ve diğer çizim öznitelikleri ayarlanmasına, ancak ölçeklendirme yapmak için temel sınıf çağırın.  
   
  Kaydırma çubukları aşağıdaki durumlarda gösterildiği gibi bir görünüm göre üç yerde görünebilir:  
   
@@ -162,10 +162,10 @@ void FillOutsideRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Doldurma yapılması olduğu cihaz bağlamı.  
   
- `pBrush`  
+ *pBrush*  
  Alan doldurulacak olduğu Fırçası.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -201,16 +201,16 @@ void GetDeviceScrollSizes(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nMapMode`  
+ *nMapMode*  
  Bu görünüm için geçerli eşleme modunu döndürür. Olası değerler listesi için bkz: `SetScrollSizes`.  
   
- `sizeTotal`  
+ *sizeTotal*  
  Kaydırma görünümü geçerli toplam boyutu aygıt birimlerinde döndürür.  
   
- `sizePage`  
+ *sizePage*  
  Bir kaydırma çubuğunun mil her yönde yanıt fare olarak kaydırmak için geçerli yatay ve dikey tutarlar tıklatın döndürür. **Cx** üyeyi içeren yatay tutar. **Cy** üyeyi içeren dikey tutar.  
   
- `sizeLine`  
+ *sizeLine*  
  Her yönde yanıt fare olarak kaydırmak için geçerli yatay ve dikey tutarlar kaydırma okunu döndürür. **Cx** üyeyi içeren yatay tutar. **Cy** üyeyi içeren dikey tutar.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -267,7 +267,7 @@ void ScrollToPosition(POINT pt);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pt`  
+ *PT*  
  İçin mantıksal birimler cinsinden kaydırma noktası. **x** üye pozitif bir değer (büyük veya eşit görünümü toplam boyutu en fazla 0) olması gerekir. Aynı için doğrudur **y** eşleme modu olduğunda üye `MM_TEXT`. **y** üyesidir modları dışında eşlemede negatif `MM_TEXT`.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -281,7 +281,7 @@ void SetScaleToFitSize(SIZE sizeTotal);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `sizeTotal`  
+ *sizeTotal*  
  Görünüm ölçeklendirilmesi olduğu yatay ve dikey boyutları. Kaydırma görünümün boyutu mantıksal birimler cinsinden ölçülür. Yatay boyutu içinde yer alan **cx** üyesi. Dikey boyutu içinde yer alan **cy** üyesi. Her ikisi de **cx** ve **cy** değerinden büyük veya 0 değerine eşit olmalıdır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -307,7 +307,7 @@ void SetScrollSizes(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nMapMode`  
+ *nMapMode*  
  Bu görünüm için ayarlamak için eşleme modu. Olası değerler şunlardır:  
   
 |Eşleme modu|Mantıksal birim|Pozitif y ekseni Extends...|  
@@ -321,13 +321,13 @@ void SetScrollSizes(
   
  Tüm bu modlarını Windows tarafından tanımlanır. İki standart eşleme modunu `MM_ISOTROPIC` ve `MM_ANISOTROPIC`, için kullanılmaz `CScrollView`. Sınıf kitaplığı sağlar `SetScaleToFitSize` pencere boyutu görünümüne ölçekleme için üye işlevi. Yukarıdaki tablodaki sütun üç koordinat yönlendirmeyi açıklar.  
   
- `sizeTotal`  
+ *sizeTotal*  
  Kaydırma görünüm toplam boyutu. **Cx** üye yatay ölçüde içerir. **Cy** üyeyi içeren Dikey uzantı. Mantıksal birimleri boyutlarıdır. Her ikisi de **cx** ve **cy** değerinden büyük veya 0 değerine eşit olmalıdır.  
   
- `sizePage`  
+ *sizePage*  
  Her yönde yanıt olarak Fare kaydırma yatay ve dikey tutarlarının bir kaydırma çubuğunun mil'ı tıklatın. **Cx** üyeyi içeren yatay tutar. **Cy** üyeyi içeren dikey tutar.  
   
- `sizeLine`  
+ *sizeLine*  
  Her yönde yanıt olarak Fare kaydırma yatay ve dikey tutarlarının bir kaydırma oku tıklatın. **Cx** üyeyi içeren yatay tutar. **Cy** üyeyi içeren dikey tutar.  
   
 ### <a name="remarks"></a>Açıklamalar  

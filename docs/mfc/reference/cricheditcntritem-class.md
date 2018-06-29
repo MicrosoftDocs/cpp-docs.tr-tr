@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a64950bcb0cc931b4528276e85f5d60e3b5cb08
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b0b4c038389810fcc6a847cdbf7837568b3007b6
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368426"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078614"
 ---
 # <a name="cricheditcntritem-class"></a>CRichEditCntrItem sınıfı
 İle [CRichEditView](../../mfc/reference/cricheditview-class.md) ve [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md), zengin düzenleme denetimine MFC'nin belge görünüm mimarisi bağlamında işlevselliğini sağlar.  
@@ -86,8 +86,8 @@ CRichEditCntrItem(
  *preo*  
  İşaretçi bir [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) OLE öğeyi tanımlayan yapısı. Yeni `CRichEditCntrItem` nesnesi, bu OLE öğenin etrafında yapılandırılmıştır. Varsa *preo* olan **NULL**, istemci öğesi boş.  
   
- `pContainer`  
- Bu öğeyi içerecek kapsayıcı belge işaretçi. Varsa `pContainer` olan **NULL**, açıkça çağırmalısınız [COleDocument::AddItem](../../mfc/reference/coledocument-class.md#additem) bir belgeye bu istemci öğesi eklemek için.  
+ *pContainer*  
+ Bu öğeyi içerecek kapsayıcı belge işaretçi. Varsa *pContainer* olan **NULL**, açıkça çağırmalısınız [COleDocument::AddItem](../../mfc/reference/coledocument-class.md#additem) bir belgeye bu istemci öğesi eklemek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, tüm OLE başlatma işlemini gerçekleştirir.  
@@ -95,7 +95,7 @@ CRichEditCntrItem(
  Daha fazla bilgi için bkz: [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) Windows SDK'sındaki yapısı.  
   
 ##  <a name="synctoricheditobject"></a>  CRichEditCntrItem::SyncToRichEditObject  
- Cihaz en boy eşitlemek için bu işlevi çağırmak [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318), bu **CRichEditCntrltem** tarafından belirtilen için *yeniden a*.  
+ Cihaz en boy eşitlemek için bu işlevi çağırmak [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318), bu `CRichEditCntrltem` tarafından belirtilen için *yeniden a*.  
   
 ```  
 void SyncToRichEditObject(REOBJECT& reo);

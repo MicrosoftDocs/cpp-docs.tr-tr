@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e51aed1eb7f74c721a5a4da092f205a2492ba5f7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b7bc510f0d0cfc88476c9e222f51bcfeb958e31a
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370877"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078473"
 ---
 # <a name="createstruct-structure"></a>CREATESTRUCT Yapısı
 `CREATESTRUCT` Yapısı uygulama penceresi yordamına geçirilen başlatma parametreleri tanımlar.  
@@ -46,40 +46,40 @@ typedef struct tagCREATESTRUCT {
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `lpCreateParams`  
+ *lpCreateParams*  
  Pencere oluşturmak için kullanılacak veri noktalarına.  
   
- `hInstance`  
+ *HINSTANCE*  
  Yeni pencerede sahibi modülü Modül örneğinin işleyicisini tanımlar.  
   
- `hMenu`  
+ *hMenu*  
  Yeni pencere tarafından kullanılmak üzere menü tanımlar. Alt pencere, tamsayı kimliğini içerir  
   
- `hwndParent`  
+ *hwndParent*  
  Yeni pencerede sahibi penceresi tanımlar. Bu üye **NULL** yeni pencere üst düzey bir pencere ise.  
   
- `cy`  
+ *CY*  
  Yeni pencerede yüksekliğini belirtir.  
   
- `cx`  
+ *CX*  
  Yeni Pencere genişliğini belirtir.  
   
- `y`  
+ *Y*  
  Yeni pencerenin sol üst köşesinin y koordinatını belirtir. Yeni pencere alt pencere ise koordinatlar üst pencere göre belirlenir; Aksi takdirde koordinatlar ekran kaynağa göre belirlenir.  
   
- `x`  
+ *x*  
  Yeni pencerenin sol üst köşesinin x koordinatını belirtir. Yeni pencere alt pencere ise koordinatlar üst pencere göre belirlenir; Aksi takdirde koordinatlar ekran kaynağa göre belirlenir.  
   
- `style`  
+ *Stili*  
  Yeni pencere belirtir [stili](../../mfc/reference/styles-used-by-mfc.md).  
   
- `lpszName`  
+ *lpszName*  
  Noktaları null ile sonlandırılmış dizeye yeni pencerenin adını belirtir.  
   
- `lpszClass`  
+ *lpszClass*  
  İşaret yeni pencerenin Windows sınıf adını belirten null ile sonlandırılmış bir dize (bir [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) yapısı; daha fazla bilgi için Windows SDK'sı bakın).  
   
- `dwExStyle`  
+ *dwExStyle*  
  Belirtir [genişletilmiş stili](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) yeni pencere için.  
   
 ## <a name="requirements"></a>Gereksinimler  

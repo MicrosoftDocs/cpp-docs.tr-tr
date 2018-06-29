@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77bdbaf70cd0290376132a7558293ec587fbebaa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e7c988f062fc870359a8f1ae1265fb91d02dbb3d
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377115"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079383"
 ---
 # <a name="cpanecontainermanager-class"></a>CPaneContainerManager sınıfı
 `CPaneContainerManager` Sınıfı, depolama ve geçerli yerleştirme düzeni görüntüsünü yönetir.  
@@ -216,7 +216,7 @@ virtual void AddPane(CDockablePane* pControlBarToAdd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pControlBarToAdd`  
+ [in] *pControlBarToAdd*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -237,11 +237,11 @@ virtual BOOL AddPaneContainerManager(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `srcManager`  
- [in] `bOuterEdge`  
- [in] `pTargetControlBar`  
- [in] `dwAlignment`  
- [in] `bCopy`  
+ [in] *srcManager*  
+ [in] *bOuterEdge*  
+ [in] *pTargetControlBar*  
+ [in] *dwAlignment*  
+ [in] *bCopy*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -257,8 +257,8 @@ virtual BOOL AddPaneContainerManagerToDockablePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pTargetControlBar`  
- [in] `srcManager`  
+ [in] *pTargetControlBar*  
+ [in] *srcManager*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -274,8 +274,8 @@ void AddPanesToList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `plstControlBars`  
- [in] `plstSliders`  
+ [in] *plstControlBars*  
+ [in] *plstSliders*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -287,7 +287,7 @@ void AddPaneToList(CDockablePane* pControlBarToAdd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pControlBarToAdd`  
+ [in] *pControlBarToAdd*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -301,8 +301,8 @@ virtual CDockablePane* AddPaneToRecentPaneContainer(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBarToAdd`  
- [in] `pRecentContainer`  
+ [in] *pBarToAdd*  
+ [in] *pRecentContainer*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -323,13 +323,13 @@ void CalcRects(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rectOriginal`  
- [in] `rectInserted`  
- [in] `rectSlider`  
- [in] `dwSliderStyle`  
- [in] `dwAlignment`  
- [in] `sizeMinOriginal`  
- [in] `sizeMinInserted`  
+ [in] *rectOriginal*  
+ [in] *rectInserted*  
+ [in] *rectSlider*  
+ [in] *dwSliderStyle*  
+ [in] *dwAlignment*  
+ [in] *sizeMinOriginal*  
+ [in] *sizeMinInserted*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -352,7 +352,7 @@ BOOL CheckAndRemoveNonValidPane(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -368,8 +368,8 @@ virtual BOOL CheckForMiniFrameAndCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
- [in] `ppTargetControlBar`  
+ [in] *noktası*  
+ [in] *ppTargetControlBar*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -386,9 +386,9 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pParentWnd`  
- [in] `pDefaultSlider`  
- [in] `pContainerRTC`  
+ [in] *pParentWnd*  
+ [in] *pDefaultSlider*  
+ [in] *pContainerRTC*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -424,7 +424,7 @@ virtual void EnableGrippers(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
+ [in] *bSistemlerde*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -438,8 +438,8 @@ virtual CPaneContainer* FindPaneContainer(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
- [in] `bLeftBar`  
+ [in] *pBar*  
+ [in] *bLeftBar*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -453,7 +453,7 @@ CDockablePane* FindTabbedPane(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -467,7 +467,7 @@ virtual void GetAvailableSpace(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rect`  
+ [in] *rect*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -527,10 +527,10 @@ virtual void GetMinMaxOffset(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pSlider`  
- [in] `nMinOffset`  
- [in] `nMaxOffset`  
- [in] `nStep`  
+ [in] *pSlider*  
+ [in] *nMinOffset*  
+ [in] *nMaxOffset*  
+ [in] *nStep*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -542,7 +542,7 @@ virtual void GetMinSize(CSize& size);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `size`  
+ [in] *boyutu*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -609,7 +609,7 @@ virtual void GetWindowRect(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `rect`  
+ [in] *rect*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -635,11 +635,11 @@ virtual BOOL InsertPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pControlBarToInsert`  
- [in] `pTargetControlBar`  
- [in] `dwAlignment`  
- [in] `lpRect`  
- [in] `dockMethod`  
+ [in] *pControlBarToInsert*  
+ [in] *pTargetControlBar*  
+ [in] *dwAlignment*  
+ [in] *lpRect*  
+ [in] *dockMethod*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -699,10 +699,10 @@ virtual int OnPaneDividerMove(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pSlider`  
- [in] `uFlags`  
- [in] `nOffset`  
- [in] `hdwp`  
+ [in] *pSlider*  
+ [in] *uFlags*  
+ [in] *nOffset*  
+ [in] *hdwp*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -718,8 +718,8 @@ virtual BOOL OnShowPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
- [in] `bShow`  
+ [in] *pBar*  
+ [in] *bBilgi Göster*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -738,11 +738,11 @@ virtual CDockablePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
- [in] `nSensitivity`  
- [in] `bExactBar`  
- [in] `bIsTabArea`  
- [in] `bCaption`  
+ [in] *noktası*  
+ [in] *nSensitivity*  
+ [in] *bExactBar*  
+ [in] *bIsTabArea*  
+ [in] *bCaption*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -783,7 +783,7 @@ virtual void RemovePaneDivider(CPaneDivider* pSlider);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pSlider`  
+ [in] *pSlider*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -795,7 +795,7 @@ virtual BOOL RemovePaneFromPaneContainer(CDockablePane* pControlBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pControlBar`  
+ [in] *pControlBar*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -811,8 +811,8 @@ virtual BOOL ReplacePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBarOld`  
- [in] `pBarNew`  
+ [in] *pBarOld*  
+ [in] *pBarNew*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -835,11 +835,11 @@ virtual void ResizePaneContainers(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nSide`  
- [in] `bExpand`  
- [in] `nOffset`  
- [in] `hdwp`  
- [in] `rect`  
+ [in] *nSide*  
+ [in] *bExpand*  
+ [in] *nOffset*  
+ [in] *hdwp*  
+ [in] *rect*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -851,7 +851,7 @@ void Serialize(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `ar`  
+ [in] *ar*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -863,7 +863,7 @@ void SetDefaultPaneDividerForPanes(CPaneDivider* pSlider);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pSlider`  
+ [in] *pSlider*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -875,7 +875,7 @@ void SetPaneContainerRTC(CRuntimeClass* pContainerRTC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pContainerRTC`  
+ [in] *pContainerRTC*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -887,7 +887,7 @@ virtual void SetResizeMode(BOOL bResize);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bResize`  
+ [in] *bResize*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -899,7 +899,7 @@ virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

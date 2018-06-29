@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d04a2f643add489d3302e58a9bde995303ecddd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: be5d27adabe8b271e2f8f3ed338e63e18d2432fc
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369931"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078242"
 ---
 # <a name="csimpleexception-class"></a>CSimpleException sınıfı
 Bu sınıf, kaynak kritik MFC özel durumlar için temel bir sınıftır.  
@@ -84,8 +84,8 @@ explicit CSimpleException(BOOL bAutoDelete);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bAutoDelete`  
- Belirtin **TRUE** varsa için bellek `CSimpleException` nesne öbek üzerinde ayrıldı. Bu neden olacak `CSimpleException` zaman Silinecek nesnenin **silmek** üye işlevi, özel durum silmek için çağrılır. Belirtin **FALSE** varsa `CSimpleException` nesne yığında veya genel bir nesnedir. Bu durumda, `CSimpleException` nesne olmayacak ne zaman silinmiş **silmek** üye işlevi çağrılır.  
+ *bAutoDelete*  
+ Belirtin **TRUE** varsa için bellek `CSimpleException` nesne öbek üzerinde ayrıldı. Bu neden olacak `CSimpleException` zaman silinecek nesne `Delete` üye işlevi, özel durum silmek için çağrılır. Belirtin **FALSE** varsa `CSimpleException` nesne yığında veya genel bir nesnedir. Bu durumda, `CSimpleException` nesne olmayacak ne zaman silinmiş `Delete` üye işlevi çağrılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Normalde hiçbir zaman bu oluşturucu doğrudan çağırmanız gerekir. Bir özel durum oluşturur işlevi bir örneğini oluşturmanız gerekir bir `CException`-türetilmiş sınıf ve MFC'nin kullanım throw işlevleri gibi kurucusu veya çağrı [AfxThrowFileException](exception-processing.md#afxthrowfileexception), önceden tanımlanmış bir türü atmak için.  
@@ -101,13 +101,13 @@ virtual BOOL GetErrorMessage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszError`  
+ *lpszError*  
  Bir hata iletisi alırsınız bir arabellek için bir işaretçi.  
   
- `nMaxError`  
+ *nMaxError*  
  En fazla arabellek tut dahil olmak üzere karakter sayısını **NULL** Sonlandırıcı.  
   
- `pnHelpContext`  
+ *pnHelpContext*  
  Adresini bir **UINT** Yardım bağlam kimliğini alacaksınız Varsa **NULL**, kimliği yok döndürülür.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

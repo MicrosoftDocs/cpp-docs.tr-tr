@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a8749e54cc42a6ae98748e8a5906cf5a5009d51
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1ab3416c0c4e659ce94f7dc4376ea2d7a1fd4c32
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372359"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078032"
 ---
 # <a name="cptrarray-class"></a>CPtrArray sınıfı
 Void işaretçileri dizileri destekler.  
@@ -69,7 +69,7 @@ class CPtrArray : public CObject
 ```  
   
 ## <a name="members"></a>Üyeler  
- Üye işlevlerini `CPtrArray` sınıfının üye fonksiyonları benzer [CObArray](../../mfc/reference/cobarray-class.md). Bu benzerlik nedeniyle kullandığınız `CObArray` başvuru belgelerini üye fonksiyonu özellikleri için. Gördüğünüz yerde bir `CObject` işaretçisi bir işlev parametresi veya dönüş değeri olarak değiştirmek için bir işaretçi `void`.  
+ Üye işlevlerini `CPtrArray` sınıfının üye fonksiyonları benzer [CObArray](../../mfc/reference/cobarray-class.md). Bu benzerlik nedeniyle kullandığınız `CObArray` başvuru belgelerini üye fonksiyonu özellikleri için. Gördüğünüz yerde bir `CObject` işaretçisi bir işlev parametresi veya dönüş değeri olarak değiştirmek için bir işaretçi **void**.  
   
  `CObject* CObArray::GetAt( int <nIndex> ) const;`  
   

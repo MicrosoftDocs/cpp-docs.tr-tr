@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09c302ec414e26c71d8989bb6d624314c8eb6db4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 646878a1cfd77dd61fbb854512c56512083ff609
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370213"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078689"
 ---
 # <a name="csinusoidaltransitionfromrange-class"></a>CSinusoidalTransitionFromRange sınıfı
 Verilen oscillation aralığındadır bir aralık sinusoidal geçiş yalıtır.  
@@ -93,7 +93,7 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pLibrary`  
+ *pLibrary*  
  Standart geçişleri oluşturulmasında sorumludur geçiş kitaplığı için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -112,19 +112,19 @@ CSinusoidalTransitionFromRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `duration`  
+ *Süre*  
  Geçiş süresi.  
   
- `dblMinimumValue`  
+ *dblMinimumValue*  
  Sinusoidal wave, trough adresindeki animasyon değişkeninin değeri.  
   
- `dblMaximumValue`  
+ *dblMaximumValue*  
  En yoğun sinusoidal wave, animasyon değişkeninin değeri.  
   
- `period`  
+ *Süresi*  
  Sinusoidal wave oscillation saniye cinsinden süre.  
   
- `slope`  
+ *Eğim*  
  Geçiş başlangıcında eğimi.  
   
 ##  <a name="m_dblmaximumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMaximumValue  

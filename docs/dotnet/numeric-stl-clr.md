@@ -27,12 +27,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 4313b80a4fa83e5340f678834b64dd5269278a0d
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: f8d470928cb4cbc1625ad439efe75b97f2bb1bd7
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305520"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079051"
 ---
 # <a name="numeric-stlclr"></a>sayısal (STL/CLR)
 Sayısal işlemek için sağlanan algoritmalar gerçekleştirmek kapsayıcı şablon işlevleri tanımlar.  
@@ -57,7 +57,7 @@ Sayısal işlemek için sağlanan algoritmalar gerçekleştirmek kapsayıcı şa
 |[inner_product (STL/CLR)](#inner_product)|İki aralıklarının element-wise ürün toplamını hesaplar ve belirtilen ilk değerine ekler veya sum ve ürün ikili işlemleri tarafından belirtilen diğer ikili işlemlerin burada değiştirilir genelleştirilmiş bir yordamın sonuç hesaplar.|  
 |[partial_sum (STL/CLR)](#partial_sum)|SUM'ları ilk öğe ile bir giriş aralığında bir dizi hesaplar `i`th öğesi ve her tür toplamda sonucunu depolar `i`th öğesi bir hedef aralığının veya genel bir yordam sonucunu hesaplar burada toplam işlem Belirtilen başka bir ikili işlem tarafından değiştirilir.|  
  
-## <a name="functions"></a>İşlevler
+## <a name="members"></a>Üyeler
 
 ## <a name="accumulate"></a> accumulate (STL/CLR)
 Tüm öğelerin toplamı, art arda kısmi toplamlarını bilgi işlem tarafından bazı başlangıç değeri de dahil olmak üzere belirli bir aralık içinde hesaplar veya benzer şekilde toplam dışında belirtilen bir ikili işlem kullanılarak elde edilen art arda kısmi sonuçlar sonucunu hesaplar.  

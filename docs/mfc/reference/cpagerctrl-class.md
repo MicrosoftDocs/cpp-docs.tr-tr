@@ -58,12 +58,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d22aa408fe2933803083adc784c2dbf3a85dd4df
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ad0d928f7190d3908c41560c7fb106e3024ebc6e
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377177"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079654"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl sınıfı
 `CPagerCtrl` Sınıfı görünüme içeren pencere sığmayan kapsanan bir pencere kaydırabilirsiniz Windows çağrı cihazı denetimi sarmalar.  
@@ -151,10 +151,10 @@ virtual BOOL Create(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `dwStyle`|Bit düzeyinde bileşimini (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859) denetime uygulanacak.|  
-|[in] `rect`|Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları denetiminde boyutunu ve konumunu içeren yapısı.|  
-|[in] `pParentWnd`|Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst pencere nesnesi. Bu parametre olamaz `NULL`.|  
-|[in] `nID`|Denetimin kimliği.|  
+|[in] *dwStyle*|Bit düzeyinde bileşimini (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859) denetime uygulanacak.|  
+|[in] *rect*|Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları denetiminde boyutunu ve konumunu içeren yapısı.|  
+|[in] *pParentWnd*|Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst pencere nesnesi. Bu parametre olamaz `NULL`.|  
+|[in] *nID*|Denetimin kimliği.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
@@ -183,11 +183,11 @@ virtual BOOL CreateEx(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `dwExStyle`|Denetime uygulanacak genişletilmiş stilleri Bitsel bir birleşimi. Daha fazla bilgi için bkz: `dwExStyle` parametresinin [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) işlevi.|  
-|[in] `dwStyle`|Bit düzeyinde bileşimini (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859) denetime uygulanacak.|  
-|[in] `rect`|Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları denetiminde boyutunu ve konumunu içeren yapısı.|  
-|[in] `pParentWnd`|Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst pencere nesnesi. Bu parametre olamaz `NULL`.|  
-|[in] `nID`|Denetimin kimliği.|  
+|[in] *dwExStyle*|Denetime uygulanacak genişletilmiş stilleri Bitsel bir birleşimi. Daha fazla bilgi için bkz: *dwExStyle* parametresinin [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) işlevi.|  
+|[in] *dwStyle*|Bit düzeyinde bileşimini (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859) denetime uygulanacak.|  
+|[in] *rect*|Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları denetiminde boyutunu ve konumunu içeren yapısı.|  
+|[in] *pParentWnd*|Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst pencere nesnesi. Bu parametre olamaz `NULL`.|  
+|[in] *nID*|Denetimin kimliği.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
@@ -206,7 +206,7 @@ void ForwardMouse(BOOL bForward);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `bForward`|`true` Fare iletilerini iletecek şekilde veya `false` fare iletileri iletmesini değil.|  
+|[in] *bForward*|`true` Fare iletilerini iletecek şekilde veya `false` fare iletileri iletmesini değil.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [PGM_FORWARDMOUSE](http://msdn.microsoft.com/library/windows/desktop/bb760867) Windows SDK'ın açıklanan ileti.  
@@ -273,10 +273,10 @@ DWORD GetButtonState(int iButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iButton`|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetim stil ise `PGS_HORZ`, belirtin `PGB_TOPORLEFT` sol düğmesi için ve `PGB_BOTTOMORRIGHT` sağ düğmesi için. Çağrı cihazı denetim stil ise `PGS_VERT`, belirtin `PGB_TOPORLEFT` üst düğmesi için ve `PGB_BOTTOMORRIGHT` alt düğmesi için. Daha fazla bilgi için bkz: [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
+|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetim stil ise `PGS_HORZ`, belirtin `PGB_TOPORLEFT` sol düğmesi için ve `PGB_BOTTOMORRIGHT` sağ düğmesi için. Çağrı cihazı denetim stil ise `PGS_VERT`, belirtin `PGB_TOPORLEFT` üst düğmesi için ve `PGB_BOTTOMORRIGHT` alt düğmesi için. Daha fazla bilgi için bkz: [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tarafından belirtilen düğmesinin durumunun `iButton` parametresi. Ya da bir durumda `PGF_INVISIBLE`, `PGF_NORMAL`, `PGF_GRAYED`, `PGF_DEPRESSED`, veya `PGF_HOT`. Daha fazla bilgi için dönüş değeri bölümüne bakın [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) ileti.  
+ Tarafından belirtilen düğmesinin durumunun *iButton* parametresi. Ya da bir durumda `PGF_INVISIBLE`, `PGF_NORMAL`, `PGF_GRAYED`, `PGF_DEPRESSED`, veya `PGF_HOT`. Daha fazla bilgi için dönüş değeri bölümüne bakın [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) ileti.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) Windows SDK'ın açıklanan ileti.  
@@ -325,7 +325,7 @@ BOOL IsButtonDepressed(int iButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iButton`|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetim stil ise `PGS_HORZ`, belirtin `PGB_TOPORLEFT` sol düğmesi için ve `PGB_BOTTOMORRIGHT` sağ düğmesi için. Çağrı cihazı denetim stil ise `PGS_VERT`, belirtin `PGB_TOPORLEFT` üst düğmesi için ve `PGB_BOTTOMORRIGHT` alt düğmesi için. Daha fazla bilgi için bkz: [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
+|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetim stil ise `PGS_HORZ`, belirtin `PGB_TOPORLEFT` sol düğmesi için ve `PGB_BOTTOMORRIGHT` sağ düğmesi için. Çağrı cihazı denetim stil ise `PGS_VERT`, belirtin `PGB_TOPORLEFT` üst düğmesi için ve `PGB_BOTTOMORRIGHT` alt düğmesi için. Daha fazla bilgi için bkz: [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Belirtilen düğmesini basılı durumdaysa; Aksi takdirde `false`.  
@@ -344,7 +344,7 @@ BOOL IsButtonGrayed(int iButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iButton`|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetim stil ise `PGS_HORZ`, belirtin `PGB_TOPORLEFT` sol düğmesi için ve `PGB_BOTTOMORRIGHT` sağ düğmesi için. Çağrı cihazı denetim stil ise `PGS_VERT`, belirtin `PGB_TOPORLEFT` üst düğmesi için ve `PGB_BOTTOMORRIGHT` alt düğmesi için. Daha fazla bilgi için bkz: [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
+|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetim stil ise `PGS_HORZ`, belirtin `PGB_TOPORLEFT` sol düğmesi için ve `PGB_BOTTOMORRIGHT` sağ düğmesi için. Çağrı cihazı denetim stil ise `PGS_VERT`, belirtin `PGB_TOPORLEFT` üst düğmesi için ve `PGB_BOTTOMORRIGHT` alt düğmesi için. Daha fazla bilgi için bkz: [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Belirtilen düğmesi gri durumda ise; Aksi takdirde `false`.  
@@ -363,7 +363,7 @@ BOOL IsButtonHot(int iButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iButton`|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetim stil ise `PGS_HORZ`, belirtin `PGB_TOPORLEFT` sol düğmesi için ve `PGB_BOTTOMORRIGHT` sağ düğmesi için. Çağrı cihazı denetim stil ise `PGS_VERT`, belirtin `PGB_TOPORLEFT` üst düğmesi için ve `PGB_BOTTOMORRIGHT` alt düğmesi için. Daha fazla bilgi için bkz: [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
+|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetim stil ise `PGS_HORZ`, belirtin `PGB_TOPORLEFT` sol düğmesi için ve `PGB_BOTTOMORRIGHT` sağ düğmesi için. Çağrı cihazı denetim stil ise `PGS_VERT`, belirtin `PGB_TOPORLEFT` üst düğmesi için ve `PGB_BOTTOMORRIGHT` alt düğmesi için. Daha fazla bilgi için bkz: [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Belirtilen düğmesi etkin durumda ise; Aksi takdirde `false`.  
@@ -382,7 +382,7 @@ BOOL IsButtonInvisible(int iButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iButton`|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetim stil ise `PGS_HORZ`, belirtin `PGB_TOPORLEFT` sol düğmesi için ve `PGB_BOTTOMORRIGHT` sağ düğmesi için. Çağrı cihazı denetim stil ise `PGS_VERT`, belirtin `PGB_TOPORLEFT` üst düğmesi için ve `PGB_BOTTOMORRIGHT` alt düğmesi için. Daha fazla bilgi için bkz: [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
+|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetim stil ise `PGS_HORZ`, belirtin `PGB_TOPORLEFT` sol düğmesi için ve `PGB_BOTTOMORRIGHT` sağ düğmesi için. Çağrı cihazı denetim stil ise `PGS_VERT`, belirtin `PGB_TOPORLEFT` üst düğmesi için ve `PGB_BOTTOMORRIGHT` alt düğmesi için. Daha fazla bilgi için bkz: [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Belirtilen düğme görünmez durumda ise; Aksi takdirde `false`.  
@@ -408,7 +408,7 @@ BOOL IsButtonNormal(int iButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iButton`|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetim stil ise `PGS_HORZ`, belirtin `PGB_TOPORLEFT` sol düğmesi için ve `PGB_BOTTOMORRIGHT` sağ düğmesi için. Çağrı cihazı denetim stil ise `PGS_VERT`, belirtin `PGB_TOPORLEFT` üst düğmesi için ve `PGB_BOTTOMORRIGHT` alt düğmesi için. Daha fazla bilgi için bkz: [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
+|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetim stil ise `PGS_HORZ`, belirtin `PGB_TOPORLEFT` sol düğmesi için ve `PGB_BOTTOMORRIGHT` sağ düğmesi için. Çağrı cihazı denetim stil ise `PGS_VERT`, belirtin `PGB_TOPORLEFT` üst düğmesi için ve `PGB_BOTTOMORRIGHT` alt düğmesi için. Daha fazla bilgi için bkz: [çağrı cihazı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Belirtilen düğme normal durumdaysa; Aksi takdirde `false`.  
@@ -447,7 +447,7 @@ COLORREF SetBkColor(COLORREF clrBk);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `clrBk`|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) çağrı cihazı denetim yeni arka plan rengini içeren değer.|  
+|[in] *clrBk*|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) çağrı cihazı denetim yeni arka plan rengini içeren değer.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) çağrı cihazı denetim önceki arka plan rengini içeren değer.  
@@ -471,7 +471,7 @@ int SetBorder(int iBorder);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iBorder`|Yeni sınır boyutu piksel cinsinden ölçülür. Varsa `iBorder` parametresi negatif, kenarlık boyutu sıfır olarak ayarlanır.|  
+|[in] *iBorder*|Yeni sınır boyutu piksel cinsinden ölçülür. Varsa *iBorder* parametresi negatif, kenarlık boyutu sıfır olarak ayarlanır.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Önceki kenarlık boyutunu piksel cinsinden ölçülür.  
@@ -495,7 +495,7 @@ int SetButtonSize(int iButtonSize);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iButtonSize`|Yeni düğmesi boyutunu piksel cinsinden ölçülür.|  
+|[in] *iButtonSize*|Yeni düğmesi boyutunu piksel cinsinden ölçülür.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Önceki düğmesini boyutunu piksel cinsinden ölçülür.  
@@ -521,7 +521,7 @@ void SetChild(HWND hwndChild);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `hwndChild`|Pencereyi dahil edilmek üzere işleyin.|  
+|[in] *hwndChild*|Pencereyi dahil edilmek üzere işleyin.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [PGM_SETCHILD](http://msdn.microsoft.com/library/windows/desktop/bb760884) Windows SDK'ın açıklanan ileti.  
@@ -544,7 +544,7 @@ void SetScrollPos(int iPos);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `iPos`|Yeni kaydırma konumunu piksel cinsinden ölçülür.|  
+|[in] *iPos*|Yeni kaydırma konumunu piksel cinsinden ölçülür.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [PGM_SETPOS](http://msdn.microsoft.com/library/windows/desktop/bb760886) Windows SDK'ın açıklanan ileti.  

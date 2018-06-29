@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1852f4e280fa49a2436c421d4669e9d735d66c3b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d9b7cdc0d75ec207e3bd8141ac3a0f9c5ce1d3eb
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376057"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078705"
 ---
 # <a name="csettingsstoresp-class"></a>CSettingsStoreSP sınıfı
 `CSettingsStoreSP` Sınıftır örneklerini oluşturmak için kullanabileceğiniz bir yardımcı sınıfı [CSettingsStore sınıfı](../../mfc/reference/csettingsstore-class.md).  
@@ -88,10 +88,10 @@ CSettingsStore& CSettingsStoreSP Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bAdmin`  
+ [in] *bYönetim*  
  Belirleyen bir Boolean parametresiyle olup bir `CSettingsStore` nesnesi, Yönetici modunda oluşturulur.  
   
- [in] `bReadOnly`  
+ [in] *bReadOnly*  
  Belirleyen bir Boolean parametresiyle olup bir `CSettingsStore` nesnesi salt okunur erişim için oluşturulur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -102,7 +102,7 @@ CSettingsStore& CSettingsStoreSP Create(
   
  Oluşturursanız, bir `CSettingsStore` tüm kayıt defteri erişimi için varsayılan konumu: HKEY_LOCAL_MACHINE Yönetici modunda nesne. Aksi takdirde, varsayılan tüm kayıt defteri erişimi HKEY_CURRENT_USER konumudur.  
   
- Varsa `bAdmin` olan `TRUE`, uygulama yönetim haklarına sahip olmanız gerekir. Aksi takdirde, kayıt defteri erişmeye çalıştığında, işlem başarısız olur.  
+ Varsa *bYönetim* olan `TRUE`, uygulama yönetim haklarına sahip olmanız gerekir. Aksi takdirde, kayıt defteri erişmeye çalıştığında, işlem başarısız olur.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekte nasıl kullanılacağı ortaya `Create` yöntemi `CSettingsStoreSP` sınıfı.  
@@ -117,11 +117,11 @@ CSettingsStoreSP::CSettingsStoreSP(DWORD dwUserData = 0);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwUserData`  
+ [in] *dwUserData*  
  Kullanıcı tanımlı veri, `CSettingsStoreSP` nesne depolar.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CSettingsStoreSP` Nesne verilerini depolayan `dwUserData` korumalı üye değişkeninde `m_dwUserData`.  
+ `CSettingsStoreSP` Nesne verilerini depolayan *dwUserData* korumalı üye değişkeninde `m_dwUserData`.  
   
 ##  <a name="setruntimeclass"></a>  CSettingsStoreSP::SetRuntimeClass  
  Çalışma zamanı sınıf ayarlar. Yöntem [CSettingsStoreSP::Create](#create) çalışma zamanı sınıfı oluşturmak için nesne türünü belirlemek için kullanır.  
@@ -131,11 +131,11 @@ static BOOL __stdcall CSettingsStoreSP::SetRuntimeClass(CRuntimeClass* pRTI);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pRTI`  
+ [in] *pRTI*  
  Türetilmiş bir sınıf için çalışma zamanı sınıf bilgileri için bir işaretçi [CSettingsStore sınıfı](../../mfc/reference/csettingsstore-class.md).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` başarılı olursa; `FALSE` sınıfı tarafından tanımladıysanız `pRTI` türetilmedi `CSettingsStore`.  
+ `TRUE` başarılı olursa; `FALSE` sınıfı tarafından tanımladıysanız *pRTI* türetilmedi `CSettingsStore`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanabileceğiniz [CSettingsStoreSP sınıfı](../../mfc/reference/csettingsstoresp-class.md) sınıflarından için `CSettingsStore`. Yöntem kullanmak `SetRuntimeClass` türetilmiş bir özel sınıfın nesnelerini oluşturmak isteyip istemediğinizi `CSettingsStore`.  

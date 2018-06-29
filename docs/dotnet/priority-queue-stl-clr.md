@@ -61,19 +61,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 300cb9e7708c02717aeb8ea8fda59986f3fd9fa7
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: abfe2a740a51ffe8b2735942bc9387f0b13bb0d2
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36306040"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079537"
 ---
 # <a name="priorityqueue-stlclr"></a>priority_queue (STL/CLR)
 Şablon sınıfı bir değişen Sınırlı erişime öğe dizisi sıralı uzunlukta denetleyen bir nesne tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `priority_queue` temel alınan bir kapsayıcı bir öncelik sırası olarak yönetmek için.  
   
  Aşağıda, açıklamada `GValue` aynı `Value` ikinci ref türü olmadıkça olmasından; bu durumda `Value^`. Benzer şekilde, `GContainer` aynı `Container` ikinci ref türü olmadıkça olmasından; bu durumda `Container^`.  
   
-### <a name="syntax"></a>Sözdizimi  
+## <a name="syntax"></a>Sözdizimi  
   
 ```  
 template<typename Value,  
@@ -84,7 +84,7 @@ template<typename Value,
     { ..... };  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  Değer  
  Denetlenen sıradaki öğenin türü.  
   
@@ -138,7 +138,7 @@ template<typename Value,
 |<xref:System.ICloneable>|Yinelenen bir nesne.|  
 |IPriorityQueue\<değeri, kapsayıcı >|Genel kapsayıcı bağdaştırıcısı korur.|  
   
-### <a name="remarks"></a>Açıklamalar  
+## <a name="remarks"></a>Açıklamalar  
  Nesne ayırır ve türündeki temel alınan bir kapsayıcı denetlediği dizisi için depolama boşaltır `Container`, depolar `Value` öğeleri ve isteğe bağlı olarak artar. En yüksek öncelikli öğesiyle (üst öğe) kolayca erişilebilir ve taşınabilir bir yığın olarak sıralı dizisi tutar. Nesne, yeni öğeler dağıtmaya ve yalnızca en yüksek öncelikli öğesi, bir öncelik sırası uygulama pencerelerinin erişimi sınırlandırır.  
   
  Nesne denetleyen bir saklı temsilci nesne türü çağırarak dizisi siparişleri [priority_queue::value_compare (STL/CLR)](../dotnet/priority-queue-value-compare-stl-clr.md). Priority_queue yapısı oluştururken saklı temsilci nesnesini belirtebilirsiniz; hiçbir temsilci nesnesi belirtirseniz, karşılaştırma varsayılandır `operator<(value_type, value_type)`. Üye işlevini çağırarak saklı bu nesneye erişim [priority_queue::value_comp (STL/CLR)](../dotnet/priority-queue-value-comp-stl-clr.md)`()`.  

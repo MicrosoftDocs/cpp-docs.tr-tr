@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7b49aba6ea5d2397baa0dc72f36b2693810fbeb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6f194b8119cb080c9a3b29e63781595ada0027ef
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377468"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079779"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet sınıfı
 Özellik sayfaları, olarak da bilinen sekme iletişim kutuları temsil eder.  
@@ -175,7 +175,7 @@ void AddPage(CPropertyPage* pPage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pPage`  
+ *fsayfa*  
  Özellik sayfasına eklenecek sayfasına noktaları. Olamaz **NULL**.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -227,25 +227,25 @@ void Construct(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDCaption`  
+ *nIDCaption*  
  Özellik sayfasını kullanılacak resim yazısını kimliği.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Özellik sayfasının üst pencere işaretçi. Varsa **NULL**, uygulamanın ana penceresi üst pencere olacaktır.  
   
- `iSelectPage`  
+ *iSelectPage*  
  En üstte başlangıçta olacaktır sayfanın dizini. Varsayılan sayfasına eklenen ilk sayfa verilmiştir.  
   
- `pszCaption`  
+ *pszCaption*  
  Özellik sayfasını kullanılacak resim yazısını içeren bir dize işaretçi. Olamaz **NULL**.  
   
- `hbmWatermark`  
+ *hbmWatermark*  
  Özellik sayfası Filigran bit eşlem işleyin.  
   
- `hpalWatermark`  
+ *hpalWatermark*  
  Filigran bit eşlem ve/veya üstbilgi bit eşlem paletini işleyin.  
   
- `hbmHeader`  
+ *hbmHeader*  
  Özellik sayfasının başlığı bit eşlem işleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -253,7 +253,7 @@ void Construct(
   
  Özellik sayfasını görüntülemek için arama [DoModal](#domodal) veya [oluşturma](#create). İlk parametre içinde yer alan dize özellik sayfası için başlık çubuğunda yerleştirilir.  
   
- Üçüncü veya dördüncü prototipleri kullanırsanız, filigran ve/veya üstbilgi görüntüleri otomatik olarak görüntüleyebilirsiniz `Construct`, yukarıda listelenen ve geçerli değerleri geçirmek `hbmWatermark`, `hpalWatermark`, ve/veya `hbmHeader` parametreleri.  
+ Üçüncü veya dördüncü prototipleri kullanırsanız, filigran ve/veya üstbilgi görüntüleri otomatik olarak görüntüleyebilirsiniz `Construct`, yukarıda listelenen ve geçerli değerleri geçirmek *hbmWatermark*, *hpalWatermark* , ve/veya *hbmHeader* parametreleri.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek, altında gösterir, koşulda çağırırdı `Construct`.  
@@ -298,25 +298,25 @@ CPropertySheet(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDCaption`  
+ *nIDCaption*  
  Özellik sayfasını kullanılacak resim yazısını kimliği.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Özellik sayfasının üst pencere noktalarına. Varsa **NULL**, uygulamanın ana penceresi üst pencere olacaktır.  
   
- `iSelectPage`  
+ *iSelectPage*  
  En üstte başlangıçta olacaktır sayfanın dizini. Varsayılan sayfasına eklenen ilk sayfa verilmiştir.  
   
- `pszCaption`  
+ *pszCaption*  
  Özellik sayfasını kullanılacak resim yazısını içeren bir dize noktalarına. Olamaz **NULL**.  
   
- `hbmWatermark`  
+ *hbmWatermark*  
  Arka plan bit eşlemi özellik sayfası için bir tanıtıcı.  
   
- `hpalWatermark`  
+ *hpalWatermark*  
  Filigran bit eşlem ve/veya üstbilgi bit eşlem paletini işleyici.  
   
- `hbmHeader`  
+ *hbmHeader*  
  Özellik sayfasının başlığı bit eşlem için bir tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -324,7 +324,7 @@ CPropertySheet(
   
  Birden çok parametre (örneğin, bir dizi kullanıyorsanız) varsa, [oluşturmak](#construct) yerine `CPropertySheet`.  
   
- Üçüncü veya dördüncü prototipleri kullanırsanız, filigran ve/veya üstbilgi görüntüleri otomatik olarak görüntüleyebilirsiniz `CPropertySheet`, yukarıdaki ve geçerli değerleri geçirmek `hbmWatermark`, `hpalWatermark`, ve/veya `hbmHeader` parametreleri.  
+ Üçüncü veya dördüncü prototipleri kullanırsanız, filigran ve/veya üstbilgi görüntüleri otomatik olarak görüntüleyebilirsiniz `CPropertySheet`, yukarıdaki ve geçerli değerleri geçirmek *hbmWatermark*, *hpalWatermark*, ve / veya *hbmHeader* parametreleri.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#131](../../mfc/codesnippet/cpp/cpropertysheet-class_3.cpp)]  
@@ -339,26 +339,26 @@ virtual BOOL Create(CWnd* pParentWnd = NULL,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentWnd`  
+ *pParentWnd*  
  Üst pencere noktalarına. Varsa **NULL**, üst Masaüstü öğedir.  
   
- `dwStyle`  
+ *dwStyle*  
  Pencere stilleri özellik sayfası için. Kullanılabilir stiller tam bir listesi için bkz: [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- `dwExStyle`  
+ *dwExStyle*  
  Genişletilmiş pencere stilleri özellik sayfası için. Kullanılabilir stiller tam bir listesi için bkz: [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Özellik sayfasını başarıyla oluşturulduysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrı **oluşturma** oluşturucusu içinde olabilir veya oluşturucusu çağrıldıktan sonra çağırabilirsiniz.  
+ Çağrı `Create` oluşturucusu içinde olabilir veya oluşturucusu çağrıldıktan sonra çağırabilirsiniz.  
   
- Olarak -1 geçirerek ifade varsayılan stilini `dwStyle`, aslında **WS_SYSMENU&#124;**`WS_POPUP`**&#124;ws_captıon&#124;DS_MODALFRAME&#124;DS_CONTEXTHELP&#124;WS_ GÖRÜNÜR**. Varsayılan pencere stili, 0 olarak geçirerek ifade Genişletilmiş `dwExStyle`, aslında **WS_EX_DLGMODALFRAME**.  
+ Olarak -1 geçirerek ifade varsayılan stilini *dwStyle*, aslında **WS_SYSMENU&#124;**`WS_POPUP`**&#124;ws_captıon&#124;DS_MODALFRAME&#124;DS_ CONTEXTHELP&#124;ws_vısıble**. Varsayılan pencere stili, 0 olarak geçirerek ifade Genişletilmiş *dwExStyle*, aslında **WS_EX_DLGMODALFRAME**.  
   
- **Oluşturma** hemen özellik sayfasını oluşturduktan sonra üye işlevi döndürür. Özellik sayfasını yok etmek için çağrı [CWnd::DestroyWindow](../../mfc/reference/cwnd-class.md#destroywindow).  
+ `Create` Hemen özellik sayfasını oluşturduktan sonra üye işlevi döndürür. Özellik sayfasını yok etmek için çağrı [CWnd::DestroyWindow](../../mfc/reference/cwnd-class.md#destroywindow).  
   
- Kalıcı olmayan özellik sayfaları çağrısıyla görüntülenen **oluşturma** kalıcı özellik sayfaları gibi Tamam, iptal, şimdi Uygula ve Yardım düğmeleri sahip değil. İstenen düğmeleri kullanıcı tarafından oluşturulmuş olması gerekir.  
+ Kalıcı olmayan özellik sayfaları çağrısıyla görüntülenen `Create` kalıcı özellik sayfaları gibi Tamam, iptal, şimdi Uygula ve Yardım düğmeleri sahip değil. İstenen düğmeleri kullanıcı tarafından oluşturulmuş olması gerekir.  
   
  Kalıcı özellik sayfasını görüntülemek için arama [DoModal](#domodal) yerine.  
   
@@ -418,13 +418,13 @@ void EnableStackedTabs(BOOL bStacked);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bStacked`  
- Yığılmış sekmeleri özellik sayfasında etkinleştirilip etkinleştirilmediğini gösterir. Etiketlerin Yığılmış satırları ayarlayarak devre dışı `bStacked` için **FALSE**.  
+ *bStacked*  
+ Yığılmış sekmeleri özellik sayfasında etkinleştirilip etkinleştirilmediğini gösterir. Etiketlerin Yığılmış satırları ayarlayarak devre dışı *bStacked* için **FALSE**.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir özellik sayfası tek bir satırda özellik sayfasının genişliği sığmayacak kadar çok daha fazla sekme varsa, varsayılan olarak, birden çok satır sekmeleri yığın. Kaydırma sekmeleri yerine yığın sekmeleri kullanmak için arama `EnableStackedTabs` ile `bStacked` kümesine **FALSE** çağırmadan önce [DoModal](#domodal) veya [oluşturma](#create).  
+ Bir özellik sayfası tek bir satırda özellik sayfasının genişliği sığmayacak kadar çok daha fazla sekme varsa, varsayılan olarak, birden çok satır sekmeleri yığın. Kaydırma sekmeleri yerine yığın sekmeleri kullanmak için arama `EnableStackedTabs` ile *bStacked* kümesine **FALSE** çağırmadan önce [DoModal](#domodal) veya [Oluştur](#create).  
   
- Çağırmalısınız `EnableStackedTabs` oluştururken kalıcı bir veya kalıcı olmayan özellik sayfası. Bu stil birleştirmek için bir `CPropertySheet`-türetilmiş sınıf, bir ileti işleyicisi yazma için `WM_CREATE`. Geçersiz kılınan sürümünde [CWnd::OnCreate](../../mfc/reference/cwnd-class.md#oncreate), çağrı **EnableStackedTabs (FALSE)** temel sınıf uygulamasını çağırmadan önce.  
+ Çağırmalısınız `EnableStackedTabs` oluştururken kalıcı bir veya kalıcı olmayan özellik sayfası. Bu stil birleştirmek için bir `CPropertySheet`-türetilmiş sınıf, WM_CREATE için ileti işleyicisi yazma. Geçersiz kılınan sürümünde [CWnd::OnCreate](../../mfc/reference/cwnd-class.md#oncreate), çağrı **EnableStackedTabs (FALSE)** temel sınıf uygulamasını çağırmadan önce.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#134](../../mfc/codesnippet/cpp/cpropertysheet-class_6.cpp)]  
@@ -485,11 +485,11 @@ CPropertyPage* GetPage(int nPage) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nPage`  
+ *nPage*  
  İstenen sayfaya, 0'den başlayan dizini. 0 ve bir özellik sayfasını, kapsayıcı sayfalarında sayısından küçük arasında olmalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sayfa için karşılık gelen işaretçi `nPage` parametresi.  
+ Sayfa için karşılık gelen işaretçi *nPage* parametresi.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CPropertyPage::OnWizardFinish](../../mfc/reference/cpropertypage-class.md#onwizardfinish).  
@@ -515,7 +515,7 @@ int GetPageIndex(CPropertyPage* pPage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pPage`  
+ *fsayfa*  
  Bulunacak dizin sayfasıyla noktalarına. Olamaz **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -547,7 +547,7 @@ CTabCtrl* GetTabControl() const;
  Üyeleri özelliklerini depolamak yapısı [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu oluşturulan sonra ancak ile görüntülemeden önce özellik sayfasını görünümünü başlatmak için bu yapı kullanın [DoModal](#domodal) üye işlevi. Örneğin, `dwSize` üyesi `m_psh` boyutuna sahip özellik sayfası istiyor.  
+ Bu oluşturulan sonra ancak ile görüntülemeden önce özellik sayfasını görünümünü başlatmak için bu yapı kullanın [DoModal](#domodal) üye işlevi. Örneğin, *dwSize* üyesi `m_psh` boyutuna sahip özellik sayfası istiyor.  
   
  Bu grubun üyeleri listesi dahil olmak üzere bu yapı hakkında daha fazla bilgi için bkz: **PROPSHEETHEADER** Windows SDK'sındaki.  
   
@@ -562,7 +562,7 @@ void MapDialogRect(LPRECT lpRect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpRect`  
+ *lpRect*  
  İşaret eden bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) iletişim kutusu içeren nesne koordinatları dönüştürülecek.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -570,7 +570,7 @@ void MapDialogRect(LPRECT lpRect) const;
   
  [GetDialogBaseUnits](http://msdn.microsoft.com/library/windows/desktop/ms645475) Windows işlevi sistem yazı tipi boyutu bilgilerini döndürür, ancak kullanırsanız, her özellik sayfası için farklı bir yazı tipi belirtebilirsiniz **DS_SETFONT** içinde stili Kaynak tanımı dosyası. [MapDialogRect](http://msdn.microsoft.com/library/windows/desktop/ms645502) Windows işlevi, Windows SDK'ın açıklanan bu iletişim kutusu için uygun yazı tipini kullanır.  
   
- `MapDialogRect` Üye işlevi değiştirir iletişim kutusu birimleri `lpRect` ile dikdörtgen Oluştur iletişim kutusu veya bir kutu içinde bir denetim konumlandırmak için kullanılan böylece ekran birimler (piksel cinsinden).  
+ `MapDialogRect` Üye işlevi değiştirir iletişim kutusu birimleri *lpRect* ile dikdörtgen Oluştur iletişim kutusu veya bir kutu içinde bir denetim konumlandırmak için kullanılan böylece ekran birimler (piksel cinsinden).  
   
 ##  <a name="oninitdialog"></a>  CPropertySheet::OnInitDialog  
  Özellik sayfası başlatma büyütmek için geçersiz kılar.  
@@ -580,10 +580,10 @@ virtual BOOL OnInitDialog();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Uygulama giriş odağını özellik sayfasını denetimlerinde birine ayarlanmış olup olmadığını belirtir. Varsa **OnInitDialog** döndürür sıfır olmayan Windows ayarlar giriş odağını ilk denetime özellik sayfasında. Uygulama, yalnızca açıkça giriş odağını özellik sayfasını denetimlerinde birine ayarlarsanız 0 geri dönebilirsiniz.  
+ Uygulama giriş odağını özellik sayfasını denetimlerinde birine ayarlanmış olup olmadığını belirtir. Varsa `OnInitDialog` döndürür sıfır olmayan Windows ayarlar giriş odağını ilk denetime özellik sayfasında. Uygulama, yalnızca açıkça giriş odağını özellik sayfasını denetimlerinde birine ayarlarsanız 0 geri dönebilirsiniz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye fonksiyonu yanıt olarak çağrılır **WM_INITDIALOG** ileti. Bu ileti sırasında özellik sayfası gönderilmesini [oluşturma](#create) veya [DoModal](#domodal) hemen özellik sayfasını görüntülemeden önce oluşan çağrılar.  
+ Bu üye işlevi WM_INITDIALOG iletisine yanıt olarak adlandırılır. Bu ileti sırasında özellik sayfası gönderilmesini [oluşturma](#create) veya [DoModal](#domodal) hemen özellik sayfasını görüntülemeden önce oluşan çağrılar.  
   
  Özellik sayfasını başlatıldığında özel işlem gerçekleştirmeniz gerekiyorsa, bu üye işlevi geçersiz kılar. Geçersiz kılınan sürümünde ilk çağrı temel sınıfı `OnInitDialog` ancak dönüş değerini göz ardı. Normalde döndürülecek **doğru** geçersiz kılınan üye işlevi.  
   
@@ -597,7 +597,7 @@ void PressButton(int nButton);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nButton`  
+ *nButton*  
  nButton: düğmesine basıldığında tanımlar. Bu parametre aşağıdaki değerlerden biri olabilir:  
   
 - **PSBTN_BACK** geri düğmesini seçer.  
@@ -631,10 +631,10 @@ void RemovePage(int nPage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pPage`  
+ *fsayfa*  
  Özellik sayfasından kaldırılacak sayfasına noktaları. Olamaz `NULL`.  
   
- `nPage`  
+ *nPage*  
  Kaldırılacak sayfanın dizini. 0 ve bir özellik sayfasını, kapsayıcı sayfalarında sayısından küçük arasında olmalıdır.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -649,10 +649,10 @@ BOOL SetActivePage(CPropertyPage* pPage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nPage`  
+ *nPage*  
  Ayarlamak için sayfanın dizini. 0 ile bir özellik sayfasını, kapsayıcı sayfalarında sayısından küçük arasında olmalıdır.  
   
- `pPage`  
+ *fsayfa*  
  Özellik sayfasında ayarlamak için sayfasına noktaları. Olamaz **NULL**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -672,7 +672,7 @@ void SetFinishText(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszText`  
+ *lpszText*  
  Son komut düğmesini görüntülenecek metni noktalarına.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -691,10 +691,10 @@ void SetTitle(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nStyle`  
+ *nStyle*  
  Özellik sayfası başlık stilini belirtir. Stil 0 veya olarak belirtilmelidir **PSH_PROPTITLE**. Stil olarak ayarlanırsa **PSH_PROPTITLE**, resim yazısı olarak belirtilen metin sonra "Özellikler" sözcüğü görünür. Örneğin, arama `SetTitle`("Basit" **PSH_PROPTITLE**) "Basit özellikler." içinde bir özellik sayfası başlığını neden olur  
   
- `lpszText`  
+ *lpszText*  
  Özellik sayfası başlık çubuğunda açıklamalı alt yazı olarak kullanılacak metin noktalarına.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -711,7 +711,7 @@ void SetWizardButtons(DWORD dwFlags);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwFlags`  
+ *dwFlags*  
  Sihirbaz düğmelerin görünümünü ve işlevini Özelleştir bayrakları kümesi. Bu parametre bir birleşimi aşağıdaki değerlerden biri olabilir:  
   
 - **PSWIZB_BACK** geri düğmesi  

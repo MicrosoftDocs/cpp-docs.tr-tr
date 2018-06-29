@@ -108,12 +108,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: d8b14a4941a280d34e29de80f343981a0f6d20e5
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: d78b03bea823dfcbb9df61fb40681c4ef66b49e7
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305858"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079896"
 ---
 # <a name="hashmultimap-stlclr"></a>hash_multimap (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `hash_multimap` bir çift yönlü depolama her tablo girişi öğeleri dizisi bir karma tablosu olarak yönetmek için düğümleri ve tek bir öğede depolama her düğüm listesi bağlı. Bir öğenin dizisi ve için kılma gider eşlenen bir değer sıralama için bir anahtar oluşur.  
@@ -145,11 +145,11 @@ template<typename Key,
     { ..... };  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  Anahtar  
  Anahtar bileşeni denetlenen sıradaki öğenin türü.  
   
- eşlenen  
+ Eşlenen  
  Ek bileşen denetlenen sıradaki öğenin türü.  
 
 ## <a name="requirements"></a>Gereksinimler  

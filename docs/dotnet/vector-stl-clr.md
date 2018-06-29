@@ -107,12 +107,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 973957609b56f3bcd697f650c75c59d07cc97173
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: 5d5b3e94b0b594174538aebe6542b04df7214f1b
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305777"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079818"
 ---
 # <a name="vector-stlclr"></a>vektör (STL/CLR)
 Şablon sınıfı rastgele erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `vector` öğeleri dizisi bitişik bir blok depolama olarak yönetmek için. Blok büyür isteğe bağlı olarak bir dizi olarak uygulanır.  
@@ -135,7 +135,7 @@ template<typename Value>
     { ..... };  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  Değer  
  Denetlenen sıradaki öğenin türü.  
   
@@ -225,10 +225,7 @@ template<typename Value>
   
  Silme veya bir öğe kaldırıldığında yıkıcı depolanan değeri için çağırır. Kapsayıcı yok etme tüm öğeleri siler. Bu nedenle, hiçbir öğe kapsayıcı outlive ref sınıfı öğe türü olan bir kapsayıcı sağlar. Ancak, bir kapsayıcı, tanıtıcısı öğeleri silmiyor unutmayın.  
   
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** \<cliext/vektör >  
-  
- **Namespace:** cliext  
+## <a name="members"></a>Üyeler
 
 ## <a name="assign"></a> Vector::Assign (STL/CLR)
 Tüm öğeleri değiştirir.  

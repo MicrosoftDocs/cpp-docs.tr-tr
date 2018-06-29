@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9f83c36a9c1a0d334e3b4a75724521d5711123e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 496c06fe7550598eeeb4136b233f39079d7425e9
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376541"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078225"
 ---
 # <a name="cpaintdc-class"></a>CPaintDC sınıfı
 Bir cihaz bağlamı sınıfın türetildiği [CDC](../../mfc/reference/cdc-class.md).  
@@ -83,7 +83,7 @@ explicit CPaintDC(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWnd`  
+ *pWnd*  
  İşaret `CWnd` hangi nesnesine `CPaintDC` nesnesi aittir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -100,7 +100,7 @@ HWND m_hWnd;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `m_hWnd` korumalı bir değişken türü `HWND`.  
+ *m_hWnd* korumalı bir değişken türü `HWND`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#98](../../mfc/codesnippet/cpp/cpaintdc-class_2.cpp)]  

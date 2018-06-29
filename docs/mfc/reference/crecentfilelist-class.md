@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 337ecf8227f1d5c2abe0369abdea5662f882f3d2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8d1dc8b636d0c97bc220f9c7f0f1e1cd165369e0
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377259"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079022"
 ---
 # <a name="crecentfilelist-class"></a>CRecentFileList sınıfı
 En son kullanılan (MRU) dosya listesi denetimini destekler.  
@@ -115,19 +115,19 @@ void Add(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszPathName`  
+ *lpszPathName*  
  Listeye eklenecek yol belirtir.  
   
- `lpszAppID`  
+ *lpszAppID*  
  Uygulama kullanıcısı Model kimliği için uygulama belirtir.  
   
- `pItem`  
+ *pItem*  
  Listeye eklenecek Kabuk öğesi için bir işaretçi belirtir.  
   
- `pLink`  
+ *pLink*  
  Kabuk listeye eklenecek bağlantı için bir işaretçi belirtir.  
   
- `pidl`  
+ *PIDL işaretçisiyle birlikte*  
  Yeni belgeleri klasörüne eklenmelidir Kabuk öğesi IDLIST belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -146,23 +146,23 @@ CRecentFileList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nStart`  
+ *Nbaşlangıç*  
  MRU (en son kullanılan) dosya listesi menü görüntüsünü numaralandırma için uzaklık.  
   
- `lpszSection`  
+ *lpszSection*  
  Kayıt defteri veya uygulamanın bölümünün noktaları adı. Burada MRU dosya listesi okuma yazılmış ve/veya INI dosyası.  
   
- `lpszEntryFormat`  
+ *lpszEntryFormat*  
  Kayıt defteri veya uygulamanın depolanan girişleri adları için kullanılacak biçim dizesi noktalarına. INI dosyası.  
   
- `nSize`  
+ *nSize*  
  MRU dosya listesinde yer dosyaların maksimum sayısı.  
   
- `nMaxDispLen`  
+ *nMaxDispLen*  
  Uzunluk üst sınırını karakter, bir dosya adı MRU dosya listesinde menü görüntüsü için kullanılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından için biçim dizesi işaret `lpszEntryFormat` "% her MRU öğenin dizini değiştirme için kullanılacak olan d", içermelidir. Örneğin, biçim dizesi ise `"file%d"` girişleri adlı sonra `file0`, `file1`ve benzeri.  
+ Tarafından için biçim dizesi işaret *lpszEntryFormat* "% her MRU öğenin dizini değiştirme için kullanılacak olan d", içermelidir. Örneğin, biçim dizesi ise `"file%d"` girişleri adlı sonra `file0`, `file1`ve benzeri.  
   
 ##  <a name="getdisplayname"></a>  CRecentFileList::GetDisplayName  
  MRU dosya listesinde dosyanın MRU Listesi menü görünümünü kullanmak için görünen adını alır.  
@@ -177,10 +177,10 @@ virtual BOOL GetDisplayName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `strName`  
+ *strName*  
  MRU Dosya menüsü listesinde gösterilecek adı olan dosyasının tam yolu.  
   
- `nIndex`  
+ *nIndex*  
  MRU dosya listesi dosyasında sıfır tabanlı dizini.  
   
  *lpszCurDir*  
@@ -189,14 +189,14 @@ virtual BOOL GetDisplayName(
  *nCurDir*  
  Geçerli dizin dizesi uzunluğu.  
   
- `bAtLeastName`  
- En büyük görüntü uzunluğu aşması durumunda bile sıfır olmayan, temel dosyanın adını döndürülmelidir olduğunu, gösterir (olarak geçirilen `nMaxDispLen` parametresi `CRecentFileList` Oluşturucusu).  
+ *bAtLeastName*  
+ En büyük görüntü uzunluğu aşması durumunda bile sıfır olmayan, temel dosyanın adını döndürülmelidir olduğunu, gösterir (olarak geçirilen *nMaxDispLen* parametresi `CRecentFileList` Oluşturucusu).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  **YANLIŞ** olup olmadığını bir dosya adı belirtilen dizinden en son kullanılan (MRU) dosya listesinde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli dizinde dosyasıysa işlevi directory görüntülenmesini devre dışı bırakır. Dosya adı çok uzun olması durumunda dizin ve uzantı kaldırılır. Dosya adı hala çok uzun olduğunda görünen adı boş bir dize olarak sürece ayarlandığı `bAtLeastName` sıfır olmayan bir değer değil.  
+ Geçerli dizinde dosyasıysa işlevi directory görüntülenmesini devre dışı bırakır. Dosya adı çok uzun olması durumunda dizin ve uzantı kaldırılır. Dosya adı hala çok uzun olduğunda görünen adı boş bir dize olarak sürece ayarlandığı *bAtLeastName* sıfır olmayan bir değer değil.  
   
 ##  <a name="getsize"></a>  CRecentFileList::GetSize  
  MRU dosya listesinde dosyalarının sayısını alır.  
@@ -209,14 +209,14 @@ int GetSize() const;
  Geçerli dosya sayısı, en son (MRU) dosya listesi kullanılır.  
   
 ##  <a name="operator_at"></a>  CRecentFileList::operator]  
- Aşırı yüklenmiş alt simge ( `[]`) operatörü döndürür tek bir `CString` içindeki sıfır tabanlı dizin tarafından belirtilen `nIndex`.  
+ Aşırı yüklenmiş alt simge ( `[]`) operatörü döndürür tek bir `CString` içindeki sıfır tabanlı dizin tarafından belirtilen *nIndex*.  
   
 ```  
 CString& operator[ ](int nindex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Sıfır tabanlı dizini bir `CString` kümesinde `CString`s.  
   
 ##  <a name="readlist"></a>  CRecentFileList::ReadList  
@@ -234,7 +234,7 @@ virtual void Remove(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Dosyanın en son kullanılan (MRU) dosya listesinden kaldırılacak sıfır tabanlı dizini.  
   
 ##  <a name="updatemenu"></a>  CRecentFileList::UpdateMenu  
@@ -245,7 +245,7 @@ virtual void UpdateMenu(CCmdUI* pCmdUI);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pCmdUI`  
+ *pCmdUI*  
  Bir işaretçi [Ccmduı](../../mfc/reference/ccmdui-class.md) en son kullanılan (MRU) dosya listesi menüsü nesne.  
   
 ##  <a name="writelist"></a>  CRecentFileList::WriteList  

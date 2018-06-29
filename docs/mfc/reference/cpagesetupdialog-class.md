@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cffe2d337d611dff0387805c99965c3c2e9ef87
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dd96f0240f8dd97fdda54fd2d00231db14ae3d47
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374655"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079189"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog sınıfı
 Ayar ve boşluklarının değiştirme için ek destek ile Windows ortak OLE Sayfa Yapısı iletişim kutusu tarafından sağlanan hizmetlerin yalıtır.  
@@ -123,7 +123,7 @@ CPageSetupDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwFlags`  
+ *dwFlags*  
  İletişim kutusu ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayraklar. Değerlerin Bitsel veya işleci kullanılarak birleştirilebilir. Bu değerleri şu anlama gelir:  
   
 - **PSD_DEFAULTMINMARGINS** yazıcının zamanlayıcısındaki aynı olacak şekilde sayfa kenar boşlukları için izin verilen en düşük genişlikleri ayarlar. Bu bayrak yoksayılır **PSD_MARGINS** ve **PSD_MINMARGINS** bayrakları da belirtilmiş.  
@@ -162,7 +162,7 @@ CPageSetupDialog(
   
 - **PSD_DISABLEPAGEPAINTING** iletişim kutusunun çizim alanı devre dışı bırakır.  
   
- `pParentWnd`  
+ *pParentWnd*  
  İletişim kutusunun üst veya sahibi işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -213,7 +213,7 @@ CString GetDeviceName() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tarafından kullanılan aygıt adı **CPageSetupDialog** nesnesi.  
+ Tarafından kullanılan aygıt adı `CPageSetupDialog` nesnesi.  
   
 ##  <a name="getdevmode"></a>  CPageSetupDialog::GetDevMode  
  Bu işlev çağrısı çağrıldıktan sonra `DoModal` yazıcı cihaz bağlamı hakkında bilgi almak için `CPageSetupDialog` nesnesi.  
@@ -301,10 +301,10 @@ virtual UINT OnDrawPage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Yazıcı cihaz bağlamı işaretçi.  
   
- `nMessage`  
+ *nİleti*  
  Şu anda çizilen sayfa alanı belirten bir ileti belirtir. Aşağıdakilerden biri olabilir:  
   
 - **WM_PSD_FULLPAGERECT** tüm sayfa alanı.  
@@ -319,7 +319,7 @@ virtual UINT OnDrawPage(
   
 - **WM_PSD_YAFULLPAGERECT** alan için bir dönüş adresi gösterimi. Bu alan örnek sayfa alanın kenarlarına genişletir.  
   
- `lpRect`  
+ *lpRect*  
  İşaretçi bir [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) çizim alanının koordinatları içeren nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -328,11 +328,11 @@ virtual UINT OnDrawPage(
 ### <a name="remarks"></a>Açıklamalar  
  Bu görüntü sonra ortak OLE Sayfa Yapısı iletişim kutusunun bir parçası görüntülenir. Varsayılan uygulama metin sayfasının bir resim çizer.  
   
- Resim veya görüntünün tamamını belirli bir alana çizim özelleştirmek için bu işlevi geçersiz kılar. Kullanarak bunu yapabilirsiniz bir `switch` deyimiyle **durum** değerini denetimi deyimleri `nMessage`. Örneğin, sayfa görüntüsü içeriğini çizmeye özelleştirmek için aşağıdaki kod örneği kullanabilirsiniz:  
+ Resim veya görüntünün tamamını belirli bir alana çizim özelleştirmek için bu işlevi geçersiz kılar. Kullanarak bunu yapabilirsiniz bir **geçiş** deyimiyle **durum** değerini denetimi deyimleri *nİleti*. Örneğin, sayfa görüntüsü içeriğini çizmeye özelleştirmek için aşağıdaki kod örneği kullanabilirsiniz:  
   
  [!code-cpp[NVC_MFCDocView#96](../../mfc/codesnippet/cpp/cpagesetupdialog-class_3.cpp)]  
   
- Her durumunun işlemek gerekmez Not `nMessage`. Görüntü veya tüm alanının çeşitli bileşenleri görüntünün bir bileşen işlemek seçebilirsiniz.  
+ Her durumunun işlemek gerekmez Not *nİleti*. Görüntü veya tüm alanının çeşitli bileşenleri görüntünün bir bileşen işlemek seçebilirsiniz.  
   
 ##  <a name="predrawpage"></a>  CPageSetupDialog::PreDrawPage  
  Yazdırılan sayfasının ekran görüntüsü çizmeden önce çerçevesi tarafından çağrılır.  
@@ -348,7 +348,7 @@ virtual UINT PreDrawPage(
  *wPaper*  
  Kağıt boyutunu belirten bir değer belirtir. Bu değer şunlardan biri olabilir **DMPAPER_** değerleri listelenen açıklamasındaki [aygıt MODUNDAN](http://msdn.microsoft.com/library/windows/desktop/dd183565) yapısı.  
   
- `wFlags`  
+ *wFlags*  
  Kağıt veya Zarf yönünü belirtir ve yazıcı iğneli veya HPPCL (Hewlett Packard Yazıcı Denetim Dili) aygıtı olup. Bu parametre aşağıdaki değerlerden biri olabilir:  
   
 -   Yatay modu (iğneli) 0x001 kağıt  
@@ -367,7 +367,7 @@ virtual UINT PreDrawPage(
   
 -   0x01f Zarf dikey modunda (iğneli)  
   
- `pPSD`  
+ *pPSD*  
  İşaretçi bir **PAGESETUPDLG** yapısı. Daha fazla bilgi için [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842), Windows SDK konusuna bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

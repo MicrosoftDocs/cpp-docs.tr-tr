@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f511eb1414a5cd5e22b9a3e05f81caef15b908e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e005d18b57a4ada2c1a3aad605b7724f17a62347
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376652"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079104"
 ---
 # <a name="cprintdialogex-class"></a>CPrintDialogEx sınıfı
 Windows yazdırma özellik sayfası tarafından sağlanan hizmetlerin yalıtır.  
@@ -146,10 +146,10 @@ CPrintDialogEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwFlags`  
+ *dwFlags*  
  Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusu ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayraklar. Örneğin, **PD_ALLPAGES** bayrağını belgenin tüm sayfalar için varsayılan yazdırma aralığı ayarlar. Bkz: [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) bu bayrakları hakkında daha fazla bilgi için Windows SDK'sı yapısında.  
   
- `pParentWnd`  
+ *pParentWnd*  
  İletişim kutusunun üst veya sahibi penceresi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -248,7 +248,7 @@ CString GetDriverName() const;
  A `CString` sistem tarafından tanımlanan sürücü adı belirtme.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir işaretçi kullanmak `CString` tarafından döndürülen nesne `GetDriverName` değeri olarak `lpszDriverName` çağrıda [CDC::CreateDC](../../mfc/reference/cdc-class.md#createdc).  
+ Bir işaretçi kullanmak `CString` tarafından döndürülen nesne `GetDriverName` değeri olarak *lpszDriverName* çağrıda [CDC::CreateDC](../../mfc/reference/cdc-class.md#createdc).  
   
 ##  <a name="getportname"></a>  CPrintDialogEx::GetPortName  
  Bu işlev çağrısı çağrıldıktan sonra [DoModal](#domodal) veya [GetDefaults](#getdefaults) şu anda seçili yazıcı bağlantı noktası adı alınamadı.  

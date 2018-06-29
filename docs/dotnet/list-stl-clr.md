@@ -119,12 +119,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 4e6ae13efabd34c6c685b07691789634ca0aed9c
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: db7398512e6b981f4da3fc0b88b6fbc7890c6016
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305923"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079792"
 ---
 # <a name="list-stlclr"></a>liste (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `list` her bir öğe depolamak sırada düğüm, çift yönlü bağlantılı listesi öğelerini yönetmek için.  
@@ -146,7 +146,7 @@ template<typename Value>
     { ..... };  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  Değer  
  Denetlenen sıradaki öğenin türü.  
   
@@ -155,7 +155,7 @@ template<typename Value>
   
  **Namespace:** cliext 
 
-## <a name="members"></a>Üyeler  
+## <a name="declarations"></a>Bildirimler  
   
 |Tür Tanımlaması|Açıklama|  
 |---------------------|-----------------|  
@@ -240,6 +240,8 @@ template<typename Value>
   
  Silme veya bir öğe kaldırıldığında yıkıcı depolanan değeri için çağırır. Kapsayıcı yok etme tüm öğeleri siler. Bu nedenle, hiçbir öğe kapsayıcı outlive ref sınıfı öğe türü olan bir kapsayıcı sağlar. Ancak, bir kapsayıcı, tanıtıcısı algılamadığı unutmayın `not` öğeleri yok.  
   
+## <a name="members"></a>Üyeler
+
 ## <a name="assign"></a> List::Assign (STL/CLR)
 Tüm öğeleri değiştirir.  
   

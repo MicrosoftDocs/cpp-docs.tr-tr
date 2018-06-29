@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36f620f0a29e7d1715e7cb5bfb83c0685f97f643
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 022fe884f611eb5bc3254ef23c7078280e2a1046
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374946"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078549"
 ---
 # <a name="cpanedialog-class"></a>CPaneDialog sınıfı
 `CPaneDialog` Sınıfı, bir dockable kalıcı olmayan iletişim kutusu destekler.  
@@ -58,7 +58,7 @@ class CPaneDialog : public CDockablePane
 |`CPaneDialog::OnEraseBkgnd`|İşleme [WM_ERASEBKGND](http://msdn.microsoft.com/library/windows/desktop/ms648055) ileti. (Yeniden tanımlamaktadır [CWnd::OnEraseBkgnd](../../mfc/reference/cwnd-class.md#onerasebkgnd).)|  
 |`CPaneDialog::OnLButtonDblClk`|İşleme [WM_LBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms645606) ileti. (Yeniden tanımlamaktadır [CWnd::OnLButtonDblClk](../../mfc/reference/cwnd-class.md#onlbuttondblclk).)|  
 |`CPaneDialog::OnLButtonDown`|İşleme [WM_LBUTTONDOWN](http://msdn.microsoft.com/library/windows/desktop/ms645607) ileti. (Yeniden tanımlamaktadır [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown).)|  
-|`CPaneDialog::OnUpdateCmdUI`|İletişim kutusu Windows Update'i çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CDockablePane::OnUpdateCmdUI](http://msdn.microsoft.com/en-us/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
+|`CPaneDialog::OnUpdateCmdUI`|İletişim kutusu Windows Update'i çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CDockablePane::OnUpdateCmdUI](http://msdn.microsoft.com/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
 |`CPaneDialog::OnWindowPosChanging`|İşleme [WM_WINDOWPOSCHANGING](http://msdn.microsoft.com/library/windows/desktop/ms632653) ileti. (Yeniden tanımlamaktadır [CWnd::OnWindowPosChanging](../../mfc/reference/cwnd-class.md#onwindowposchanging).)|  
 |[CPaneDialog::SetOccDialogInfo](#setoccdialoginfo)|OLE denetim kapsayıcı bir iletişim kutusu için kullanılacak şablonu belirtir.|  
   
@@ -122,31 +122,31 @@ BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszWindowName`  
+ [in] *lpszWindowName*  
  Yerleştirme iletişim kutusu adı.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Üst pencere noktalarına.  
   
- [in] `bHasGripper`  
+ [in] *bHasGripper*  
  `TRUE` bir resim yazısı (kavrayıcının); yerleştirme iletişim kutusu oluşturmak için Aksi takdirde `FALSE`.  
   
- [in] `lpszTemplateName`  
+ [in] *lpszTemplateName*  
  Kaynak iletişim şablonunun adı.  
   
- [in] `nStyle`  
+ [in] *nStyle*  
  Windows stili.  
   
- [in] `nID`  
+ [in] *nID*  
  Denetim kimliği.  
   
- [in] `nIDTemplate`  
+ [in] *nIDTemplate*  
  İletişim şablonu kaynak kimliği.  
   
- [in] `dwTabbedStyle`  
+ [in] *dwTabbedStyle*  
  Kullanıcı başka bir denetim bölmesinde bu denetim bölmesinde resim yazısı sürüklendiğinde sonuçları sekmeli pencere stili. Varsayılan değer `AFX_CBRS_REGULAR_TABS` şeklindedir. Daha fazla bilgi için Açıklamalar bölümüne bakın [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) yöntemi.  
   
- [in] `dwControlBarStyle`  
+ [in] *dwControlBarStyle*  
  Ek stil öznitelikleri. Varsayılan değer `AFX_DEFAULT_DOCKING_PANE_STYLE` şeklindedir. Daha fazla bilgi için Açıklamalar bölümüne bakın [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -170,14 +170,14 @@ afx_msg LRESULT HandleInitDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `wParam`  
+ [in] *wParam*  
  Varsayılan klavye odağını alacak denetimi işleyin.  
   
- [in] `lParam`  
+ [in] *lParam*  
  Ek başlatma verilerini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`. Ayrıca, `TRUE` tarafından belirtilen denetime klavye odağını ayarlar `wParam` parametresi; `FALSE` varsayılan klavye odağını ayarlamak engeller.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`. Ayrıca, `TRUE` tarafından belirtilen denetime klavye odağını ayarlar *wParam* parametresi; `FALSE` varsayılan klavye odağını ayarlamak engeller.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çerçeve denetimleri ve bir iletişim kutusu görünümünü başlatmak için bu yöntemi kullanır. Framework'te iletişim kutusu görüntülenmeden önce bu yöntemi çağırır.  
@@ -190,7 +190,7 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pOccDialogInfo`  
+ [in] *pOccDialogInfo*  
  İletişim kutusu nesnesi oluşturmak için kullanılan bir iletişim kutusu şablon işaretçi. Bu parametrenin değerini daha sonra içine geçirilen [COccManager::CreateDlgControls](../../mfc/reference/coccmanager-class.md#createdlgcontrols) yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36cc13fa77becf5bdeb3960f6ac9db18d5d63dbb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eb5aeef3970488c293d4199261d765f2531c201a
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377282"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079687"
 ---
 # <a name="cpalette-class"></a>CPalette sınıfı
 Bir Windows renk paleti yalıtır.  
@@ -108,14 +108,14 @@ void AnimatePalette(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nStartIndex`  
+ *nStartIndex*  
  İlk giriş animasyon için palette belirtir.  
   
- `nNumEntries`  
+ *nNumEntries*  
  Animasyon için palette girdisi sayısını belirtir.  
   
- `lpPaletteColors`  
- İşaret eden bir dizi ilk üye için [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) tarafından tanımlanan paleti girdileri değiştirmek için yapıları `nStartIndex` ve `nNumEntries`.  
+ *lpPaletteColors*  
+ İşaret eden bir dizi ilk üye için [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) tarafından tanımlanan paleti girdileri değiştirmek için yapıları *nStartIndex* ve *nNumEntries*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir uygulama çağırdığında `AnimatePalette`, Windows Sistem paleti içine yeni girişler hemen eşlendiğinden kendi istemci alanını güncelleştirmek yok.  
@@ -140,7 +140,7 @@ BOOL CreateHalftonePalette(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Cihaz bağlamı tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -159,7 +159,7 @@ BOOL CreatePalette(LPLOGPALETTE lpLogPalette);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpLogPalette`  
+ *lpLogPalette*  
  İşaret eden bir [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) mantıksal palet renkleri hakkında bilgi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -176,7 +176,7 @@ static CPalette* PASCAL FromHandle(HPALETTE hPalette);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hPalette`  
+ *hPalette*  
  Bir Windows GDI renk paleti için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -203,7 +203,7 @@ UINT GetNearestPaletteIndex(COLORREF crColor) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `crColor`  
+ *crColor*  
  Eşleştirilecek rengini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -220,14 +220,14 @@ UINT GetPaletteEntries(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nStartIndex`  
+ *nStartIndex*  
  İlk Giriş alınacak mantıksal palette belirtir.  
   
- `nNumEntries`  
+ *nNumEntries*  
  Alınacak mantıksal palette girdisi sayısını belirtir.  
   
- `lpPaletteColors`  
- Noktaları için bir dizi [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) paleti girdileri almak için veri yapıları. Dizi en az sayıda veri yapılarını tarafından belirtilen içermelidir `nNumEntries`.  
+ *lpPaletteColors*  
+ Noktaları için bir dizi [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) paleti girdileri almak için veri yapıları. Dizi en az sayıda veri yapılarını tarafından belirtilen içermelidir *nNumEntries*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Girdi sayısı mantıksal paletinden alınır; 0 işlevi başarısız oldu.  
@@ -248,14 +248,14 @@ operator HPALETTE() const;
  Grafik nesneleri kullanma hakkında daha fazla bilgi için bkz: [grafik nesneleri](http://msdn.microsoft.com/library/windows/desktop/dd144962) Windows SDK.  
   
 ##  <a name="resizepalette"></a>  CPalette::ResizePalette  
- Bağlı mantıksal palet boyutunu değiştirir `CPalette` nesne sayısı tarafından belirtilen giriş `nNumEntries`.  
+ Bağlı mantıksal palet boyutunu değiştirir `CPalette` nesne sayısı tarafından belirtilen giriş *nNumEntries*.  
   
 ```  
 BOOL ResizePalette(UINT nNumEntries);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nNumEntries`  
+ *nNumEntries*  
  Bunu yeniden boyutlandırılmış sonra palette girdisi sayısını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -277,14 +277,14 @@ UINT SetPaletteEntries(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nStartIndex`  
+ *nStartIndex*  
  İlk giriş ayarlanacak mantıksal palette belirtir.  
   
- `nNumEntries`  
+ *nNumEntries*  
  Girdi sayısı ayarlanacak mantıksal palette belirtir.  
   
- `lpPaletteColors`  
- Noktaları için bir dizi [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) paleti girdileri almak için veri yapıları. Dizi en az sayıda veri yapılarını tarafından belirtilen içermelidir `nNumEntries`.  
+ *lpPaletteColors*  
+ Noktaları için bir dizi [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) paleti girdileri almak için veri yapıları. Dizi en az sayıda veri yapılarını tarafından belirtilen içermelidir *nNumEntries*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Girdi sayısı mantıksal palette ayarlayın; 0 işlevi başarısız oldu.  

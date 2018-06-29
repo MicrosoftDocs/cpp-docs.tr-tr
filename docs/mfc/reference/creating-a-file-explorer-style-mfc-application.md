@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5b0f5d4bdabc987d4f4177f616ce756c351b8b5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2a2c3e8e1c7956a5dff33cd8ff78612f5f844ad6
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370161"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078427"
 ---
 # <a name="creating-a-file-explorer-style-mfc-application"></a>Dosya Gezgini Stilinde MFC Uygulaması Oluşturma
 Birçok Windows sistem uygulama kullanıcı arabirimi (UI) için dosya Gezgini'ni kullanın. Örneğin, dosya Explorer'ı başlattığınızda, uygulama istemci alanını bölme çubuğu Dikey bölme ile bakın. İstemci alanını sol tarafındaki gezinti ve göz atma özellikleri sağlar ve istemci alanını sağ tarafındaki ayrıntıları seçime uygun sol bölmede gösterir. Bir kullanıcı sol bölmesindeki bir öğeyi tıklattığında, uygulamayı sağ bölmede yeniden doldurur. MDI uygulamada üzerinde komutlarını kullanabilirsiniz **Görünüm** sağ bölmede gösterilen ayrıntı miktarını değiştirmek için menüsü. (Bir SDI veya birden çok üst düzey belge uygulama, yalnızca araç çubuğu düğmelerini kullanarak ayrıntı değiştirebilirsiniz.)  
@@ -32,7 +32,7 @@ Birçok Windows sistem uygulama kullanıcı arabirimi (UI) için dosya Gezgini'n
   
  Sihirbaz aşağıdaki sınıflar sizin için oluşturur:  
   
--   **CLeftView** sınıfı istemci alanını sol bölmesinde tanımlar. Bu her zaman türetilir [CTreeView](../../mfc/reference/ctreeview-class.md).  
+-   `CLeftView` Sınıfı istemci alanını sol bölmesinde tanımlar. Bu her zaman türetilir [CTreeView](../../mfc/reference/ctreeview-class.md).  
   
 -   C*ProjName*görünüm sınıfı istemci alanını sağ bölmesinde tanımlar. Öğesinden türetilen varsayılan olarak, [CListView](../../mfc/reference/clistview-class.md) ancak başka bir görünüme bağlı olarak, belirttiğiniz sınıf türünde olabilir **temel sınıfı** listesinde [oluşturulan sınıflar](../../mfc/reference/generated-classes-mfc-application-wizard.md) sayfası Sihirbazı.  
   

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 475314edba2a11535349991db644a4915e352ae7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 28a82cc55e1cbf782603c7b34368fbc3d4ebe4c4
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372844"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079208"
 ---
 # <a name="connection-maps"></a>Bağlantı Eşlemeleri
 OLE denetimleri diğer uygulamalara arabirimleri kullanıma sunmak kullanabilirsiniz. Bu arabirimleri bir kapsayıcı erişimden yalnızca o denetime izin verir. Diğer OLE nesnelerin Dış arabirimler erişmek bir OLE denetimi istiyorsa, bir bağlantı noktası kurulmalıdır. Bu bağlantı noktası olay eşlemeleri veya bildirim işlevleri gibi dış gönderme eşlemeleri erişimi giden bir denetim sağlar.  
@@ -59,14 +59,14 @@ BEGIN_CONNECTION_PART(theClass, localClass)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `theClass`  
+ *Sınıfın*  
  Bu, bağlantı noktası denetim sınıfın adını belirtir.  
   
  *localClass*  
  Bağlantı noktası uygulayan yerel sınıf adını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bağlantı noktasıyla sınıfınız için üye işlevleri tanımlar bildirimi (.h) dosyasına Başlat `BEGIN_CONNECTION_PART` makrosu, ardından ekleyin `CONNECTION_IID` makrosu ve istediğiniz uygulamak ve bağlantı noktası eşlemesi tamamlamak için diğer üye işlevleri ile `END_CONNECTION_PART` makrosu.  
+ Üye işlevleri sınıfınız için tanımlayan bildirimi (.h) dosyasındaki begın_connectıon_part makrosu ile başlangıç bağlantı noktası sonra connectıon_ııd makrosu ve uygulamak istediğiniz diğer üye işlevleri ekleyin ve bağlantıyı tamamlamak end_connectıon_part makrosu Haritası gelin.  
   
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
@@ -86,18 +86,18 @@ END_CONNECTION_PART(localClass)
   **Üstbilgi** afxdisp.h  
   
 ##  <a name="connection_iid"></a>  CONNECTION_IID  
- Arasında kullanmak `BEGIN_CONNECTION_PART` ve `END_CONNECTION_PART` OLE denetiminiz tarafından desteklenen bir bağlantı noktası için bir arabirim kimliği tanımlamak için makroları.  
+ Begın_connectıon_part arasında end_connectıon_part makroları OLE denetiminiz tarafından desteklenen bir bağlantı noktası için bir arabirim kimliği tanımlamak için kullanın.  
   
 ```   
 CONNECTION_IID(iid)   
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iid`  
+ *IID*  
  Bağlantı noktası tarafından adlı arabirim arabirimi kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `iid` Bağımsız değişkeni olan bağlantı noktası üzerinde bağlı kendi havuzlarını çağıracak arabirimi adını tanımlamak için kullanılan arabirim. Örneğin:  
+ *IID* bağımsız değişkeni olan bağlantı noktası üzerinde bağlı kendi havuzlarını çağıracak arabirimi adını tanımlamak için kullanılan arabirim. Örneğin:  
   
  [!code-cpp[NVC_MFCConnectionPoints#10](../../mfc/codesnippet/cpp/connection-maps_1.h)]  
   
@@ -114,7 +114,7 @@ DECLARE_CONNECTION_MAP()
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Denetim ek noktaları destekliyorsa kullanın `DECLARE_CONNECTION_MAP` makrosu sınıf bildiriminin sonundaki. Daha sonra sınıf için üye işlevleri tanımlayan .cpp dosyasında kullanmak `BEGIN_CONNECTION_MAP` makrosu, `CONNECTION_PART` her denetimin bağlantı noktaları, makroları ve `END_CONNECTION_MAP` bağlantı harita sonuna bildirmek için makrosu.  
+ Denetim ek noktaları destekliyorsa, declare_connectıon_map makrosu sınıf bildiriminize sonunda kullanın. Ardından, sınıfı için üye işlevleri tanımlayan .cpp dosyasında begın_connectıon_map makrosu, connectıon_part makroları her denetimin bağlantı noktaları ve end_connectıon_map makrosu bağlantı harita sonuna bildirmek için kullanın.  
   
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
@@ -127,14 +127,14 @@ BEGIN_CONNECTION_MAP(theClass, theBase)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `theClass`  
+ *Sınıfın*  
  Bu eşleme, bağlantı denetimi sınıfın adını belirtir.  
   
  *Temel*  
- Temel sınıfını adını belirtir `theClass`.  
+ Temel sınıfını adını belirtir *sınıfın*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Uygulamasında (. CPP) dosyasında, sınıf için üye işlevleri tanımlayan başlangıç bağlantı Haritası `BEGIN_CONNECTION_MAP` makrosu, her kullanarak, bağlantı noktaları için makrosu girişleri eklemek [connectıon_part](#connection_part) makrosu. Son olarak, bağlantı Haritası tamamlamak [end_connectıon_map](#end_connection_map) makrosu.  
+ Uygulamasında (. Üye tanımlayan CPP) dosyası işlevleri sınıfınız için bağlantı harita begın_connectıon_map makrosu ile başlayın, ardından makrosu girişleri her kullanarak, bağlantı noktaları için ekleyin [connectıon_part](#connection_part) makrosu. Son olarak, bağlantı Haritası tamamlamak [end_connectıon_map](#end_connection_map) makrosu.  
   
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdisp.h  
@@ -157,10 +157,10 @@ CONNECTION_PART(theClass, iid, localClass)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `theClass`  
+ *Sınıfın*  
  Bu, bağlantı noktası denetim sınıfın adını belirtir.  
   
- `iid`  
+ *IID*  
  Bağlantı noktası tarafından adlı arabirim arabirimi kimliği.  
   
  *localClass*  
@@ -177,7 +177,7 @@ CONNECTION_PART(theClass, iid, localClass)
   **Üstbilgi** afxdisp.h  
   
 ##  <a name="afxconnectionadvise"></a>  AfxConnectionAdvise  
- Tarafından belirtilen bir kaynak arasında bağlantı kurmak için bu işlevi çağırmak `pUnkSrc`ve tarafından belirtilen bir havuz `pUnkSink`.  
+ Tarafından belirtilen bir kaynak arasında bağlantı kurmak için bu işlevi çağırmak *pUnkSrc*ve tarafından belirtilen bir havuz *pUnkSink*.  
   
 ```   
 BOOL AFXAPI AfxConnectionAdvise(
@@ -189,20 +189,20 @@ BOOL AFXAPI AfxConnectionAdvise(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pUnkSrc`  
+ *pUnkSrc*  
  Arabirimini çağırır ve bu nesne için bir işaretçi.  
   
- `pUnkSink`  
+ *pUnkSink*  
  Arabirimini uygulayan nesne için bir işaretçi.  
   
- `iid`  
+ *IID*  
  Bağlantı arabirimi kimliği.  
   
- `bRefCount`  
- **DOĞRU** bağlantı oluşturma başvuru sayısı neden gösteren `pUnkSink` artırılması için. **YANLIŞ** başvuru sayısı değil artırılması gösterir.  
+ *bRefCount*  
+ **DOĞRU** bağlantı oluşturma başvuru sayısı neden gösteren *pUnkSink* artırılması için. **YANLIŞ** başvuru sayısı değil artırılması gösterir.  
   
- `pdwCookie`  
- Bir işaretçi bir `DWORD` bağlantı tanımlayıcısı burada döndürülür. Bu değer olarak iletilmesi gereken `dwCookie` parametresi `AfxConnectionUnadvise` bağlantı kesilirken.  
+ *pdwCookie*  
+ Bir işaretçi bir `DWORD` bağlantı tanımlayıcısı burada döndürülür. Bu değer olarak iletilmesi gereken *dwCookie* parametresi `AfxConnectionUnadvise` bağlantı kesilirken.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir bağlantı kuruldu, sıfır olmayan; Aksi takdirde 0.  
@@ -214,7 +214,7 @@ BOOL AFXAPI AfxConnectionAdvise(
  **Başlık:** afxctl.h 
 
 ##  <a name="afxconnectionunadvise"></a>  AfxConnectionUnadvise  
- Tarafından belirtilen bir kaynağı arasındaki bağlantıyı kesmek için bu işlevi çağırmak `pUnkSrc`ve tarafından belirtilen bir havuz `pUnkSink`.  
+ Tarafından belirtilen bir kaynağı arasındaki bağlantıyı kesmek için bu işlevi çağırmak *pUnkSrc*ve tarafından belirtilen bir havuz *pUnkSink*.  
   
 ```   
 BOOL AFXAPI AfxConnectionUnadvise(
@@ -226,19 +226,19 @@ BOOL AFXAPI AfxConnectionUnadvise(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pUnkSrc`  
+ *pUnkSrc*  
  Arabirimini çağırır ve bu nesne için bir işaretçi.  
   
- `pUnkSink`  
+ *pUnkSink*  
  Arabirimini uygulayan nesne için bir işaretçi.  
   
- `iid`  
+ *IID*  
  Bağlantı noktası arabirimi arabirim kimliği.  
   
- `bRefCount`  
- **DOĞRU** bağlantıyı kesmeden başvuru sayısı neden gösteren `pUnkSink` indirildiği olmalıdır. **YANLIŞ** başvuru sayısı indirildiği olmamalıdır gösterir.  
+ *bRefCount*  
+ **DOĞRU** bağlantıyı kesmeden başvuru sayısı neden gösteren *pUnkSink* indirildiği olmalıdır. **YANLIŞ** başvuru sayısı indirildiği olmamalıdır gösterir.  
   
- `dwCookie`  
+ *dwCookie*  
  Tarafından döndürülen bağlantı tanımlayıcısı `AfxConnectionAdvise`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

@@ -107,12 +107,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: c5be90e57d558ba2dcceb3965d1cc1474dcaf463
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: 693d4f8b8f0e7271a4c1f7df9931e0a85e57c332
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305884"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079726"
 ---
 # <a name="multimap-stlclr"></a>çoklu eşleme (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `multimap` öğeleri dizisi (neredeyse) dengeli sıralı ağacı düğümleri olarak her bir öğe depolamak yönetmek için. Bir öğenin dizisi ve için kılma gider eşlenen bir değer sıralama için bir anahtar oluşur.  
@@ -127,7 +127,7 @@ ms.locfileid: "36305884"
   
  `GMapped` aynı `Mapped` ikinci ref türü olmadıkça olmasından; bu durumda `Mapped^`  
   
-### <a name="syntax"></a>Sözdizimi  
+## <a name="syntax"></a>Sözdizimi  
   
 ```  
 template<typename Key,  
@@ -144,11 +144,11 @@ template<typename Key,
     { ..... };  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  Anahtar  
  Anahtar bileşeni denetlenen sıradaki öğenin türü.  
   
- eşlenen  
+ Eşlenen  
  Ek bileşen denetlenen sıradaki öğenin türü.  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -222,7 +222,7 @@ template<typename Key,
 |<xref:System.Collections.Generic.ICollection%601>|Yazılı öğeleri grubunu koruyun.|  
 |ITree\<anahtar, değer >|Genel kapsayıcı korur.|  
   
-### <a name="remarks"></a>Açıklamalar  
+## <a name="remarks"></a>Açıklamalar  
  Nesne ayırır ve bireysel düğümleri olarak denetimleri dizisi için depolama boşaltır. Hiçbir zaman kopyalayarak bir düğümün içeriğini başka düğümler arasındaki bağlantılar değiştirilerek sıralı tutar (neredeyse) dengeli bir ağaç öğeleri ekler. INSERT ve rahatsız edici kalan öğeleri olmadan serbestçe öğeleri Kaldır anlamına gelir.  
   
  Nesne denetleyen bir saklı temsilci nesne türü çağırarak dizisi siparişleri [multimap::key_compare (STL/CLR)](../dotnet/multimap-key-compare-stl-clr.md). Multimap yapısı oluştururken saklı temsilci nesnesini belirtebilirsiniz; hiçbir temsilci nesnesi belirtirseniz, karşılaştırma varsayılandır `operator<(key_type, key_type)`. Üye işlevini çağırarak saklı bu nesneye erişim [multimap::key_comp (STL/CLR)](../dotnet/multimap-key-comp-stl-clr.md)`()`.  

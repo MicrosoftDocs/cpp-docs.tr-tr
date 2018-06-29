@@ -1,7 +1,7 @@
 ---
 title: C++'da hazırlamaya genel bakış | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/28/2018
 ms.technology:
 - cpp-cli
 ms.topic: reference
@@ -20,16 +20,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 1f950c8efbdd75e16096d158075e92594fb6b2d1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 76f6721ce4561e9c2b4323fef9c2eed3231f73cb
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33137140"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079166"
 ---
 # <a name="overview-of-marshaling-in-c"></a>C++'da Hazırlamaya Genel Bakış
-Karma modda bazen yerel ve yönetilen türler arasında verilerinizi sıralamanız gerekir. [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)] yardımcı olmak için hazırlama kitaplığını sunulan sıralama ve basit bir şekilde veri dönüştürün.  
-  
+Karma modda bazen yerel ve yönetilen türler arasında verilerinizi sıralamanız gerekir. Visual Studio 2008 sunulan *hazırlama kitaplığını* yardımcı olması için sıralama ve basit bir şekilde veri dönüştürün.  Hazırlama kitaplığını işlevleri kümesinden oluşur ve bir `marshal_context` gerçekleştirmek için genel türleri hazırlama sınıfı. Bu üstbilgilerin kitaplığa tanımlanan **dahil msclr** dizini, Visual Studio sürümü için:
+
+|Üstbilgi|Açıklama|  
+|---------------|-----------------|
+|Marshal.h|`marshal_context` sınıf ve bağlam serbest hazırlama işlevleri|
+|marshal_atl.h| ATL türlerini hazırlama işlevleri|
+|marshal_cppstd.h|Standart C++ türlerini hazırlama işlevleri|
+|marshal_windows.h|Windows türlerini hazırlama işlevleri|
+
+
+İçin varsayılan yolu **msclr** klasördür şuna bağlı olarak hangi sürümünün yüklü ve yapı numarası:
+
+```cmd
+C:\\Program Files (x86)\\Microsoft Visual Studio\\Preview\\Enterprise\\VC\\Tools\\MSVC\\14.15.26528\\include\\msclr
+```
+
  Hazırlama kitaplığını ile veya olmadan kullanabilirsiniz bir [marshal_context sınıfı](../dotnet/marshal-context-class.md). Bazı dönüşümleri bir bağlam gerektirir. Diğer dönüştürme kullanarak uygulanabilir [marshal_as](../dotnet/marshal-as.md) işlevi. Aşağıdaki tabloda desteklenen geçerli dönüşümleri, bir bağlam ihtiyaç olup olmadığını ve hangi sıralama dosya eklemek zorunda:  
   
 |Türünden|Türü için|Sıralama yöntemi|Dosya Ekle|  
@@ -62,7 +76,7 @@ Karma modda bazen yerel ve yönetilen türler arasında verilerinizi sıralaman�
 > [!NOTE]
 >  Katıştırılmış sahip değilse `NULL`dizenizi s, dize sıralama sonucu garanti edilmez. Katıştırılmış `NULL`s kesilecek dize neden olabilir ya da korunması.  
   
- Hazırlama kitaplığı üstbilgilerini msclr alt INCLUDE dizininde bulunur. Bu örnek bir dahil etme üstbilgi bildiriminde içeren msclr dizin gösterilmektedir:  
+Bu örnek bir dahil etme üstbilgi bildiriminde içeren msclr dizin gösterilmektedir:  
   
  `#include "msclr\marshal_cppstd.h"`  
   

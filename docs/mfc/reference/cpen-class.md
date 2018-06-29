@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 995e3f85ec21cae1be18f0bf7b6548c912ca5254
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 17337239a3a58a0283fc96eadcd4417c3d5c69b0
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376385"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079596"
 ---
 # <a name="cpen-class"></a>CPen sınıfı
 Windows grafik cihaz arabirimi (GDI) kalem yalıtır.  
@@ -103,7 +103,7 @@ CPen(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nPenStyle`  
+ *nPenStyle*  
  Kalem stilini belirtir. Bu parametre Oluşturucusu ilk sürümünde aşağıdaki değerlerden biri olabilir:  
   
 - **PS_SOLID** düz kalem oluşturur.  
@@ -118,7 +118,7 @@ CPen(
   
 - **PS_NULL** null kalem oluşturur.  
   
-- **PS_INSIDEFRAME** sınırlayıcı dikdörtgenini belirtin Windows GDI çıkış işlevleri tarafından üretilen kapalı şekiller çerçeve içine bir satır çizer kalem oluşturur (örneğin, **elips**, **dikdörtgen** , `RoundRect`, `Pie`, ve `Chord` üye işlevleri). Bu stili sınırlayıcı dikdörtgenini belirtmeyin Windows GDI çıkış işlevleri ile kullanıldığında (örneğin, `LineTo` üye işlevi), kalem çizim alanının çerçevesi tarafından sınırlı değildir.  
+- **PS_INSIDEFRAME** sınırlayıcı dikdörtgenini belirtin Windows GDI çıkış işlevleri tarafından üretilen kapalı şekiller çerçeve içine bir satır çizer kalem oluşturur (örneğin, `Ellipse`, `Rectangle`, `RoundRect`, `Pie`, ve `Chord` üye işlevleri). Bu stili sınırlayıcı dikdörtgenini belirtmeyin Windows GDI çıkış işlevleri ile kullanıldığında (örneğin, `LineTo` üye işlevi), kalem çizim alanının çerçevesi tarafından sınırlı değildir.  
   
  İkinci sürümü `CPen` Oluşturucusu türü, stil, son harf ve birleştirme öznitelikleri bileşimini belirtir. Bit düzeyinde OR işleci kullanarak her kategori değerleri birleştirilmelidir (&#124;). Kalem türü aşağıdaki değerlerden biri olabilir:  
   
@@ -126,7 +126,7 @@ CPen(
   
 - **PS_COSMETIC** yüzeysel kalem oluşturur.  
   
-     İkinci sürümü `CPen` Oluşturucusu ekler için aşağıdaki kalem stiller `nPenStyle`:  
+     İkinci sürümü `CPen` Oluşturucusu ekler için aşağıdaki kalem stiller *nPenStyle*:  
   
 - **PS_ALTERNATE** her bir piksel ayarlar kalem oluşturur. (Bu stili yalnızca yüzeysel kalemler için geçerlidir.)  
   
@@ -148,24 +148,24 @@ CPen(
   
 - **PS_JOIN_ROUND** birleştirmeler YUVARLA.  
   
- `nWidth`  
+ *nWidth*  
  Kalem genişliğini belirtir.  
   
 -   Bu değer 0 ise ilk Oluşturucu için aygıt birimleri genişliği her zaman eşleme Modu bağımsız olarak 1 piksel sürümüdür.  
   
--   Oluşturucusu ikinci sürümü için ise `nPenStyle` olan **PS_GEOMETRIC**, mantıksal birimler cinsinden genişliği verilir. Varsa `nPenStyle` olan **PS_COSMETIC**, genişlik 1 olarak ayarlanması gerekir.  
+-   Oluşturucusu ikinci sürümü için ise *nPenStyle* olan **PS_GEOMETRIC**, mantıksal birimler cinsinden genişliği verilir. Varsa *nPenStyle* olan **PS_COSMETIC**, genişlik 1 olarak ayarlanması gerekir.  
   
- `crColor`  
+ *crColor*  
  Kalem bir RGB rengi içerir.  
   
- `pLogBrush`  
- İşaret eden bir `LOGBRUSH` yapısı. Varsa `nPenStyle` olan **PS_COSMETIC**, `lbColor` üyesi `LOGBRUSH` yapısı kalemin rengini belirtir ve `lbStyle` üyesi `LOGBRUSH` yapısı ayarlanmalıdır **BS_ DÜZ**. Varsa `nPenStyle` olan **PS_GEOMETRIC**, tüm üyeleri kalem fırça özniteliklerini belirtmek için kullanılması gerekir.  
+ *pLogBrush*  
+ İşaret eden bir `LOGBRUSH` yapısı. Varsa *nPenStyle* olan **PS_COSMETIC**, *lbColor* üyesi `LOGBRUSH` yapısı kalemin rengini belirtir ve *lbStyle*üyesi `LOGBRUSH` yapısı ayarlanmalıdır **BS_SOLID**. Varsa *nPenStyle* olan **PS_GEOMETRIC**, tüm üyeleri kalem fırça özniteliklerini belirtmek için kullanılması gerekir.  
   
- `nStyleCount`  
- Doubleword birimlerindeki uzunluğu belirtir `lpStyle` dizi. Bu değer sıfır olmalıdır `nPenStyle` değil **PS_USERSTYLE**.  
+ *nStyleCount*  
+ Doubleword birimlerindeki uzunluğu belirtir *lpStyle* dizi. Bu değer sıfır olmalıdır *nPenStyle* değil **PS_USERSTYLE**.  
   
- `lpStyle`  
- Bir dizi noktalarına doubleword değerleri. İlk değer, kullanıcı tanımlı bir stil ilk tire uzunluğunu belirtir, ikinci değer ilk alanı vb. uzunluğunu belirtir. Bu işaretçinin olmalıdır **NULL** varsa `nPenStyle` değil **PS_USERSTYLE**.  
+ *lpStyle*  
+ Bir dizi noktalarına doubleword değerleri. İlk değer, kullanıcı tanımlı bir stil ilk tire uzunluğunu belirtir, ikinci değer ilk alanı vb. uzunluğunu belirtir. Bu işaretçinin olmalıdır **NULL** varsa *nPenStyle* değil **PS_USERSTYLE**.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bağımsız değişkenler olmadan Oluşturucusu kullanırsanız, sonuç başlatmalıdır `CPen` nesnesi ile `CreatePen`, `CreatePenIndirect`, veya `CreateStockObject` üye işlevleri.  
@@ -194,27 +194,27 @@ BOOL CreatePen(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nPenStyle`  
- Kalem stilini belirtir. Olası değerler listesi için bkz: `nPenStyle` parametresinde [CPen](#cpen) Oluşturucusu.  
+ *nPenStyle*  
+ Kalem stilini belirtir. Olası değerler listesi için bkz: *nPenStyle* parametresinde [CPen](#cpen) Oluşturucusu.  
   
- `nWidth`  
+ *nWidth*  
  Kalem genişliğini belirtir.  
   
 -   İlk sürümü için `CreatePen`, bu değer 0 ise, cihaz birimleri genişliği her zaman eşleme Modu bağımsız olarak 1 piksel olur.  
   
--   İkinci sürümü için `CreatePen`, `nPenStyle` olan **PS_GEOMETRIC**, mantıksal birimler cinsinden genişliği verilir. Varsa `nPenStyle` olan **PS_COSMETIC**, genişlik 1 olarak ayarlanması gerekir.  
+-   İkinci sürümü için `CreatePen`, *nPenStyle* olan **PS_GEOMETRIC**, mantıksal birimler cinsinden genişliği verilir. Varsa *nPenStyle* olan **PS_COSMETIC**, genişlik 1 olarak ayarlanması gerekir.  
   
- `crColor`  
+ *crColor*  
  Kalem bir RGB rengi içerir.  
   
- `pLogBrush`  
- İşaret eden bir [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) yapısı. Varsa `nPenStyle` olan **PS_COSMETIC**, **lbColor** üyesi `LOGBRUSH` yapısı kalemin rengini belirtir ve `lbStyle` üyesi `LOGBRUSH` yapısı olması gerekir. kümesine **BS_SOLID**. Varsa **nPenStyle** olan **PS_GEOMETRIC**, tüm üyeleri kalem fırça özniteliklerini belirtmek için kullanılması gerekir.  
+ *pLogBrush*  
+ İşaret eden bir [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) yapısı. Varsa *nPenStyle* olan **PS_COSMETIC**, **lbColor** üyesi `LOGBRUSH` yapısı kalemin rengini belirtir ve *lbStyle*üyesi `LOGBRUSH` yapısı ayarlanmalıdır **BS_SOLID**. Varsa **nPenStyle** olan **PS_GEOMETRIC**, tüm üyeleri kalem fırça özniteliklerini belirtmek için kullanılması gerekir.  
   
- `nStyleCount`  
- Doubleword birimlerindeki uzunluğu belirtir `lpStyle` dizi. Bu değer sıfır olmalıdır `nPenStyle` değil **PS_USERSTYLE**.  
+ *nStyleCount*  
+ Doubleword birimlerindeki uzunluğu belirtir *lpStyle* dizi. Bu değer sıfır olmalıdır *nPenStyle* değil **PS_USERSTYLE**.  
   
- `lpStyle`  
- Bir dizi noktalarına doubleword değerleri. İlk değer, kullanıcı tanımlı bir stil ilk tire uzunluğunu belirtir, ikinci değer ilk alanı vb. uzunluğunu belirtir. Bu işaretçinin olmalıdır **NULL** varsa `nPenStyle` değil **PS_USERSTYLE**.  
+ *lpStyle*  
+ Bir dizi noktalarına doubleword değerleri. İlk değer, kullanıcı tanımlı bir stil ilk tire uzunluğunu belirtir, ikinci değer ilk alanı vb. uzunluğunu belirtir. Bu işaretçinin olmalıdır **NULL** varsa *nPenStyle* değil **PS_USERSTYLE**.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, sıfır olmayan veya yöntem başarısız olursa sıfır.  
@@ -228,11 +228,11 @@ BOOL CreatePen(
   
  İkinci sürümü `CreatePen` belirtilen stili, genişliğini ve fırça öznitelikleri sahip mantıksal bir yüzeysel veya geometrik kalem başlatır. Yüzeysel kalem genişliği her zaman 1'dir; Geometrik kalem genişliği her zaman world birimler cinsinden belirtilir. Bir uygulamanın mantıksal kalem oluşturduktan sonra o kalem bir cihaz bağlamına çağırarak seçebilirsiniz [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) işlevi. Kalem bir cihaz bağlamına seçtikten sonra çizgiler ve eğrilerle çizmek için kullanılabilir.  
   
--   Varsa `nPenStyle` olan **PS_COSMETIC** ve **PS_USERSTYLE**, girdileri `lpStyle` dizi uzunlukları çizgi ve boşluk stili birimleri belirtin. Stil birim bir çizgi çizmek için Kalem kullanıldığı aygıt tarafından tanımlanır.  
+-   Varsa *nPenStyle* olan **PS_COSMETIC** ve **PS_USERSTYLE**, girdileri *lpStyle* dizi uzunlukları çizgi ve boşluk belirtin Stil birimler. Stil birim bir çizgi çizmek için Kalem kullanıldığı aygıt tarafından tanımlanır.  
   
--   Varsa `nPenStyle` olan **PS_GEOMETRIC** ve **PS_USERSTYLE**, girdileri `lpStyle` dizi uzunlukları çizgi ve boşluk mantıksal birimler cinsinden belirtin.  
+-   Varsa *nPenStyle* olan **PS_GEOMETRIC** ve **PS_USERSTYLE**, girdileri *lpStyle* dizi uzunlukları çizgi ve boşluk belirtin mantıksal birimler.  
   
--   Varsa `nPenStyle` olan **PS_ALTERNATE**, stil birim göz ardı edilir ve her bir piksel ayarlayın.  
+-   Varsa *nPenStyle* olan **PS_ALTERNATE**, stil birim göz ardı edilir ve her bir piksel ayarlayın.  
   
  Bir uygulama artık verilen kalem gerektirdiğinde çağırmalıdır [CGdiObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) üye işlev veya destroy `CPen` kaynak artık kullanımda şekilde nesne. Cihaz bağlamında kalem seçildiğinde bir uygulama kalem silmemelisiniz.  
   
@@ -240,14 +240,14 @@ BOOL CreatePen(
  [!code-cpp[NVC_MFCDocView#100](../../mfc/codesnippet/cpp/cpen-class_2.cpp)]  
   
 ##  <a name="createpenindirect"></a>  CPen::CreatePenIndirect  
- Stil, genişlik ve gösterdiği yapısı verilen renk sahip kalem başlatır `lpLogPen`.  
+ Stil, genişlik ve gösterdiği yapısı verilen renk sahip kalem başlatır *lpLogPen*.  
   
 ```  
 BOOL CreatePenIndirect(LPLOGPEN lpLogPen);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpLogPen`  
+ *lpLogPen*  
  İşaret Windows [LOGPEN](../../mfc/reference/logpen-structure.md) kalem hakkında bilgi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -289,7 +289,7 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pLogPen`  
+ *pLogPen*  
  İşaret eden bir [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711) kalem hakkında bilgi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -321,7 +321,7 @@ int GetLogPen(LOGPEN* pLogPen);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pLogPen`  
+ *pLogPen*  
  İşaret eden bir [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) yapısı kalem hakkında bilgiler içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

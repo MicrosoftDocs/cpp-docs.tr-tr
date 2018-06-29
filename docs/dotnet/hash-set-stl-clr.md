@@ -105,19 +105,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: ba3494599c57160bf87a10e53aa2143d9e2b78c0
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: 9c701bfa64e96594050ddaf46d56c12849a0ad30
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305744"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079755"
 ---
 # <a name="hashset-stlclr"></a>hash_set (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `hash_set` bir çift yönlü depolama her tablo girişi öğeleri dizisi bir karma tablosu olarak yönetmek için düğümleri ve tek bir öğede depolama her düğüm listesi bağlı. Her öğenin değerini dizisi sıralama için bir anahtar olarak kullanılır.  
   
  Aşağıda, açıklamada `GValue` aynı `GKey`, sırayla olduğu aynı `Key` ikinci ref türü olmadıkça olmasından; bu durumda `Key^`.  
   
-### <a name="syntax"></a>Sözdizimi  
+## <a name="syntax"></a>Sözdizimi  
   
 ```  
 template<typename Key>  
@@ -133,7 +133,7 @@ template<typename Key>
     { ..... };  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  Anahtar  
  Anahtar bileşeni denetlenen sıradaki öğenin türü.  
 
@@ -142,7 +142,7 @@ template<typename Key>
   
  **Namespace:** cliext  
 
-## <a name="members"></a>Üyeler  
+## <a name="declarations"></a>Bildirimler  
   
 |Tür Tanımlaması|Açıklama|  
 |---------------------|-----------------|  
@@ -207,7 +207,7 @@ template<typename Key>
 |<xref:System.Collections.Generic.ICollection%601>|Yazılı öğeleri grubunu koruyun.|  
 |IHash\<anahtar, değer >|Genel kapsayıcı korur.|  
   
-### <a name="remarks"></a>Açıklamalar  
+## <a name="remarks"></a>Açıklamalar  
  Nesne ayırır ve bağlı bir çift yönlü listedeki tek düğümler olarak denetlediği dizisi için depolama boşaltır. Erişimi hızlandırmak için nesne da verimli tüm liste alt listelerin, bir dizi yönetme bir değişen uzunluk dizisi işaretçileri (karma tablosu), listeye tutar veya aralıkları. Hiçbir zaman kopyalayarak bir düğümün içeriğini başka düğümler arasındaki bağlantılar değiştirilerek sıralı tutan kova öğeleri ekler. INSERT ve rahatsız edici kalan öğeleri olmadan serbestçe öğeleri Kaldır anlamına gelir.  
   
  Nesne tarafından denetlenen bir saklı temsilci nesne türü çağırarak her demet siparişleri [hash_set::key_compare (STL/CLR)](../dotnet/hash-set-key-compare-stl-clr.md). Hash_set yapısı oluştururken saklı temsilci nesnesini belirtebilirsiniz; hiçbir temsilci nesnesi belirtirseniz, karşılaştırma varsayılandır `operator<=(key_type, key_type)`.  
@@ -240,6 +240,8 @@ template<typename Key>
   
  Silme veya bir öğe kaldırıldığında yıkıcı depolanan değeri için çağırır. Kapsayıcı yok etme tüm öğeleri siler. Bu nedenle, hiçbir öğe kapsayıcı outlive ref sınıfı öğe türü olan bir kapsayıcı sağlar. Ancak, bir kapsayıcı, tanıtıcısı algılamadığı unutmayın `not` öğeleri yok.  
   
+## <a name="members"></a>Üyeler
+
 ## <a name="begin"></a> hash_set::Begin (STL/CLR)
 Denetlenen dizinin başlangıcını belirtir.  
   

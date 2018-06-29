@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bee22940fb197d480f4ae3550d8dd59780c256b5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: df3c052f3cefb3aa7d2a55e81fd5f7813632ceb1
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370187"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078289"
 ---
 # <a name="csharedfile-class"></a>CSharedFile sınıfı
 [CMemFile](../../mfc/reference/cmemfile-class.md)-destekleyen türetilmiş bir sınıf paylaşılan bellek dosyaları.  
@@ -56,9 +56,9 @@ class CSharedFile : public CMemFile
 ## <a name="remarks"></a>Açıklamalar  
  Dosya RAM yerine disk üzerinde depolanır bellek dosyaları disk dosyaları gibi davranır. Bellek dosyası veya bağımsız işlemler arasında nesneleri seri hale getirilmiş ham bayt aktarma veya hızlı geçici depolama için yararlı olur.  
   
- Paylaşılan bellek dosyalar, bunlar için bellek tahsis edilen, diğer bellek dosyalarından farklı [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) Windows işlevi. `CSharedFile` Sınıfı bir genel ayrılmış bellek bloğu içinde veri depolar (kullanılarak oluşturulan **GlobalAlloc**), ve bu bellek bloğu DDE, Pano veya diğer OLE/COM Tekdüzen veri aktarımı işlemlerini, örneğin, kullanılarak paylaşılabilir. kullanarak `IDataObject`.  
+ Paylaşılan bellek dosyalar, bunlar için bellek tahsis edilen, diğer bellek dosyalarından farklı [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) Windows işlevi. `CSharedFile` Sınıfı bir genel ayrılmış bellek bloğu içinde veri depolar (kullanılarak oluşturulan `GlobalAlloc`), ve bu bellek bloğu DDE, Pano veya diğer OLE/COM Tekdüzen veri aktarımı işlemlerini, örneğin, kullanarak kullanılarak paylaşılabilir `IDataObject`.  
   
- **GlobalAlloc** döndüren bir `HGLOBAL` işlemek bellek tarafından döndürülen işaretçi gibi bir işaretçi yerine [malloc](../../c-runtime-library/reference/malloc.md). `HGLOBAL` Tanıtıcısı belirli uygulamalarda gereklidir. Örneğin, veri yerleştirilecek Pano ihtiyacınız bir `HGLOBAL` işler.  
+ `GlobalAlloc` döndüren bir `HGLOBAL` işlemek bellek tarafından döndürülen işaretçi gibi bir işaretçi yerine [malloc](../../c-runtime-library/reference/malloc.md). `HGLOBAL` Tanıtıcısı belirli uygulamalarda gereklidir. Örneğin, veri yerleştirilecek Pano ihtiyacınız bir `HGLOBAL` işler.  
   
  Lütfen unutmayın `CSharedFile` değil bellekle eşlenen kullanım dosyalar yapar ve verileri doğrudan işlemler arasında paylaşılamaz.  
   
@@ -91,7 +91,7 @@ CSharedFile(
  *nAllocFlags*  
  Nasıl ayrılacak bellek olduğunu belirten işaretler. Bkz: [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) geçerli bayrak değerleri listesi.  
   
- `nGrowBytes`  
+ *nGrowBytes*  
  Bellek ayırma artırma bayt.  
   
 ##  <a name="detach"></a>  CSharedFile::Detach  
@@ -120,11 +120,11 @@ void SetHandle(
  *hGlobalMemory*  
  Eklenmesi için genel bellek tanıtıcı `CSharedFile`.  
   
- `bAllowGrow`  
+ *bAllowGrow*  
  Bellek bloğu büyümeye izin verilip verilmediğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bAllowGrow` sıfır olmayan, bellek bloğu boyutu yükseltilmiştir gerekirse, örneğin, bir deneme olursa daha fazla bayt bellek bloğu için ayrılan daha dosyaya yazmak için yapılır.  
+ Varsa *bAllowGrow* sıfır olmayan, bellek bloğu boyutu yükseltilmiştir gerekirse, örneğin, bir deneme olursa daha fazla bayt bellek bloğu için ayrılan daha dosyaya yazmak için yapılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CMemFile sınıfı](../../mfc/reference/cmemfile-class.md)   

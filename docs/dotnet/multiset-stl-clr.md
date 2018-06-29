@@ -107,12 +107,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: d4a4255e5c6229ee570b9baa8952cc784044ef95
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: b3c81bc3fd5068f8269476608cc870272a0ef2e4
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305819"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079805"
 ---
 # <a name="multiset-stlclr"></a>çoklu set (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `multiset` öğeleri dizisi (neredeyse) dengeli sıralı ağacı düğümleri olarak her bir öğe depolamak yönetmek için.  
@@ -135,7 +135,7 @@ template<typename Key>
     { ..... };  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  Anahtar  
  Anahtar bileşeni denetlenen sıradaki öğenin türü.  
 

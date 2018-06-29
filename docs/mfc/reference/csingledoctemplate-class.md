@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4f3a8212-81ee-48a0-ad22-e0ed7c36a391
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 413b7b4a7cf11ff7e83596ecc61423d4bc4f0358
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: efdd8f5b806b7e5745aed0091a2638c8592a6ecc
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371627"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079071"
 ---
 # <a name="csingledoctemplate-class"></a>CSingleDocTemplate sınıfı
 Tek belge arabirimi (SDI) uygulayan bir belge şablonu tanımlar.  
@@ -45,7 +45,7 @@ class CSingleDocTemplate : public CDocTemplate
   
  Belge şablonu sınıfları üç tür arasındaki ilişkiyi tanımlar:  
   
--   Öğesinden türetilen bir belge sınıfı **CDocument**.  
+-   Öğesinden türetilen bir belge sınıfı `CDocument`.  
   
 -   Yukarıda listelenen belge sınıfı verileri görüntüleyen bir görünüm sınıfı. Bu sınıftan türetilen `CView`, `CScrollView`, `CFormView`, veya `CEditView`. (Aynı zamanda `CEditView` doğrudan.)  
   
@@ -81,7 +81,7 @@ CSingleDocTemplate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDResource`  
+ *nIDResource*  
  Belge türü ile kullanılan kaynakları Kimliğini belirtir. Bu menü, simge, Hızlandırıcı tablosu ve dize kaynaklarını içerebilir.  
   
  En çok yedi alt dizeler '\n' karakteriyle ayrılmış dize kaynağını oluşur (bir alt dizesi dahil edilmezse '\n' karakteri yer tutucu olarak gereklidir; ancak, sonunda '\n' karakterler gerekli değildir); Bu alt dizeler belge türü açıklanmaktadır. Alt dizeler hakkında daha fazla bilgi için bkz: [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). Bu dize kaynak uygulamanın kaynak dosyası bulunamadı. Örneğin:  
@@ -100,13 +100,13 @@ CSingleDocTemplate(
   
  Bu kaynak türleri hakkında daha fazla bilgi için bkz: [Dize Düzenleyicisi](../../windows/string-editor.md).  
   
- `pDocClass`  
- İşaret `CRuntimeClass` belge sınıfın nesnesi. Bu sınıf, bir **CDocument**-türetilmiş sınıf belgelerinizi temsil etmek için tanımlayın.  
+ *pDocClass*  
+ İşaret `CRuntimeClass` belge sınıfın nesnesi. Bu sınıf, bir `CDocument`-türetilmiş sınıf belgelerinizi temsil etmek için tanımlayın.  
   
- `pFrameClass`  
+ *pFrameClass*  
  İşaret `CRuntimeClass` çerçeve penceresi sınıfın nesnesi. Bu sınıf olabilir bir `CFrameWnd`-türetilmiş sınıf veya olabilir `CFrameWnd` kendisini varsayılan davranışı, ana çerçeve penceresi istiyorsanız.  
   
- `pViewClass`  
+ *pViewClass*  
  İşaret `CRuntimeClass` görünüm sınıfın nesnesi. Bu sınıf, bir `CView`-türetilmiş sınıf belgelerinizi görüntülenecek tanımlayın.  
   
 ### <a name="remarks"></a>Açıklamalar  

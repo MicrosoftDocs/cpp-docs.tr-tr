@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f234b3f06e22308a31e8e5694648fd5664b448a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fef6d3e30791d2a08a82d1b152cd849cd4ebf24b
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377346"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37078414"
 ---
 # <a name="cpropexchange-class"></a>CPropExchange sınıfı
 OLE denetimleri için Kalıcılık uyarlamasını destekler.  
@@ -95,20 +95,20 @@ virtual BOOL ExchangeBlobProp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pszPropName`  
+ *pszPropName*  
  Değiştirilen özelliğinin adı.  
   
- `phBlob`  
+ *phBlob*  
  Özellik depolandığı işaret eden bir değişken işaretçisine (değişkenidir genellikle sınıfınız üyesi).  
   
- `hBlobDefault`  
+ *hBlobDefault*  
  Özelliği için varsayılan değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Exchange başarılı olduğunda sıfır olmayan; işlem başarısız olursa 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Özelliğin değeri okunamıyor veya deftere için uygun şekilde tarafından başvurulan değişken `phBlob`. Varsa `hBlobDefault` belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin serileştirme herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
+ Özelliğin değeri okunamıyor veya deftere için uygun şekilde tarafından başvurulan değişken *phBlob*. Varsa *hBlobDefault* belirtilirse, bu kullanılacak özelliğin varsayılan değeri olarak. Denetimin serileştirme herhangi bir nedenle başarısız olursa, bu değer kullanılır.  
   
  İşlevler **CArchivePropExchange::ExchangeBlobProp**, **CResetPropExchange::ExchangeBlobProp**, ve **CPropsetPropExchange::ExchangeBlobProp** geçersiz kıl Bu saf sanal işlev.  
   
@@ -124,23 +124,23 @@ virtual BOOL ExchangeFontProp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pszPropName`  
+ *pszPropName*  
  Değiştirilen özelliğinin adı.  
   
- `font`  
+ *Yazı tipi*  
  Bir başvuru bir [CFontHolder](../../mfc/reference/cfontholder-class.md) font özelliği içeren nesne.  
   
- `pFontDesc`  
- Bir işaretçi bir [FONTDESC](http://msdn.microsoft.com/library/windows/desktop/ms692782) font özelliği varsayılan durumunu başlatma için değerleri içeren yapısını zaman `pFontDispAmbient` olan **NULL**.  
+ *pFontDesc*  
+ Bir işaretçi bir [FONTDESC](http://msdn.microsoft.com/library/windows/desktop/ms692782) font özelliği varsayılan durumunu başlatma için değerleri içeren yapısını zaman *pFontDispAmbient* olan **NULL**.  
   
- `pFontDispAmbient`  
+ *pFontDispAmbient*  
  Bir işaretçi **IFontDisp** font özelliği varsayılan durumunu başlatmak için kullanılacak yazı tipinin arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Exchange başarılı olduğunda sıfır olmayan; işlem başarısız olursa 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Denetime font özelliği ortamından yüklenirken, yazı tipinin özellikleri ortamından alınır ve `CFontHolder` tarafından başvurulan nesne `font` bunlarla başlatılır. Font özelliği depolanıyorsa, yazı tipi nesnesindeki özellikleri Orta yazılır.  
+ Denetime font özelliği ortamından yüklenirken, yazı tipinin özellikleri ortamından alınır ve `CFontHolder` tarafından başvurulan nesne *yazı tipi* bunlarla başlatılır. Font özelliği depolanıyorsa, yazı tipi nesnesindeki özellikleri Orta yazılır.  
   
  İşlevler **CArchivePropExchange::ExchangeFontProp**, **CResetPropExchange::ExchangeFontProp**, ve **CPropsetPropExchange::ExchangeFontProp** geçersiz kıl Bu saf sanal işlev.  
   
@@ -156,16 +156,16 @@ virtual BOOL ExchangePersistentProp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pszPropName`  
+ *pszPropName*  
  Değiştirilen özelliğinin adı.  
   
- `ppUnk`  
+ *ppUnk*  
  Özelliğin gösteren bir işaretçi içeren bir değişken için bir işaretçi **IUnknown** (Bu değişken genellikle üyesi olduğu sınıfınız) arabirimi.  
   
- `iid`  
+ *IID*  
  Arabirim denetimi kullanacağı özelliği üzerinde arabirimi kimliği.  
   
- `pUnkDefault`  
+ *pUnkDefault*  
  Özelliği için varsayılan değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -188,10 +188,10 @@ virtual BOOL ExchangeProp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pszPropName`  
+ *pszPropName*  
  Değiştirilen özelliğinin adı.  
   
- `vtProp`  
+ *vtProp*  
  Değiştirilen özelliğin türünü belirten bir simge. Olası değerler şunlardır:  
   
 |Simgesi|Özellik türü|  
@@ -204,7 +204,7 @@ virtual BOOL ExchangeProp(
 |`VT_R4`|**float**|  
 |`VT_R8`|**double**|  
   
- `pvProp`  
+ *pvProp*  
  Özelliğin değerini gösteren bir işaretçi.  
   
  *pvDefault*  
@@ -214,7 +214,7 @@ virtual BOOL ExchangeProp(
  Exchange başarılı olduğunda sıfır olmayan; işlem başarısız olursa 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Denetime özellik ortamından yüklenirken, özelliğin değerini ortamından alınır ve gösterdiği nesnesinde depolanan `pvProp`. Özellik Orta depolanıyorsa, nesnenin değerini işaret için tarafından `pvProp` Orta yazılır.  
+ Denetime özellik ortamından yüklenirken, özelliğin değerini ortamından alınır ve gösterdiği nesnesinde depolanan *pvProp*. Özellik Orta depolanıyorsa, nesnenin değerini işaret için tarafından *pvProp* Orta yazılır.  
   
  İşlevler **CArchivePropExchange::ExchangeProp**, **CResetPropExchange::ExchangeProp**, ve **CPropsetPropExchange::ExchangeProp** bu saf geçersiz kılma sanal işlev.  
   
@@ -232,10 +232,10 @@ virtual BOOL ExchangeVersion(
  *dwVersionLoaded*  
  Yüklenmekte olan kalıcı veri sürüm numarasını depolanacağı bir değişken başvuru.  
   
- `dwVersionDefault`  
+ *dwVersionDefault*  
  Denetimi geçerli sürüm numarası.  
   
- `bConvert`  
+ *bConvert*  
  Kalıcı veri geçerli sürüme dönüştürme ya da yüklenen aynı sürümünde koruma gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

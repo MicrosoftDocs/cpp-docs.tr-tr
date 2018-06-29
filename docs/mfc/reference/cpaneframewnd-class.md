@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6846f50b0e89193992a42ea50e785009f31e6d19
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c17c81fb39d4397c58b4baba7124de2bda646db7
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378793"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079700"
 ---
 # <a name="cpaneframewnd-class"></a>CPaneFrameWnd sınıfı
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -271,7 +271,7 @@ virtual void AddPane(CBasePane* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Eklemek için bölme.  
   
 ##  <a name="addremovepanefromgloballist"></a>  CPaneFrameWnd::AddRemovePaneFromGlobalList  
@@ -284,10 +284,10 @@ static BOOL __stdcall AddRemovePaneFromGlobalList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Eklemek veya kaldırmak için bölme.  
   
- [in] `bAdd`  
+ [in] *bekle*  
  Sıfır olmayan bölmesi ekleyin. 0 ise bölmesini kaldırın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -317,7 +317,7 @@ virtual void CalcBorderSize(CRect& rectBorderSize) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `rectBorderSize`  
+ [out] *rectBorderSize*  
  Miniframe penceresinin kenarlığının piksel cinsinden boyutu içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -336,23 +336,23 @@ virtual void CalcExpectedDockedRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWndToDock`  
+ [in] *pWndToDock*  
  Pencere sabitlemek için bir işaretçi.  
   
- [in] `ptMouse`  
+ [in] *ptMouse*  
  Fare konumu.  
   
- [out] `rectResult`  
+ [out] *rectResult*  
  Hesaplanan dikdörtgen.  
   
- [out] `bDrawTab`  
+ [out] *bDrawTab*  
  Varsa `TRUE`, sekme çizin. Varsa `FALSE`, sekme çekmek değil.  
   
- [out] `ppTargetBar`  
+ [out] *ppTargetBar*  
  Hedef bölmesi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir kullanıcı tarafından belirtilen noktasına penceresi Sürüklediyseniz, bir pencere kaplar dikdörtgen hesaplar `ptMouse` ve var. yerleştirildi.  
+ Bu yöntem bir kullanıcı tarafından belirtilen noktasına penceresi Sürüklediyseniz, bir pencere kaplar dikdörtgen hesaplar *ptMouse* ve var. yerleştirildi.  
   
 ##  <a name="canbeattached"></a>  CPaneFrameWnd::CanBeAttached  
  Başka bir bölme veya çerçeveye penceresine geçerli bölmesini yerleştirilmiş olup olmadığını belirler.  
@@ -372,11 +372,11 @@ virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDockingBar`  
+ [in] *pDockingBar*  
  Bir bölme.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kısa çerçeve yerleştirilmiş, sıfır olmayan `pDockingBar`; Aksi halde 0.  
+ Kısa çerçeve yerleştirilmiş, sıfır olmayan *pDockingBar*; Aksi halde 0.  
   
 ##  <a name="checkgrippervisibility"></a>  CPaneFrameWnd::CheckGripperVisibility  
 
@@ -407,19 +407,19 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszWindowName`  
+ [in] *lpszWindowName*  
  Miniframe penceresinde görüntülenecek metni belirtir.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Pencere stili belirtir. Daha fazla bilgi için bkz: [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] `rect`  
+ [in] *rect*  
  İlk boyutunu ve konumunu miniframe penceresinin belirtir.  
   
- [in] [out] `pParentWnd`  
+ [in] [out] *pParentWnd*  
  Miniframe penceresinin üst çerçeve belirtir. Bu değer olmamalıdır `NULL`.  
   
- [in] [out] `pContext`  
+ [in] [out] *pContext*  
  Kullanıcı tanımlı içerik belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -442,22 +442,22 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwStyleEx`  
+ [in] *dwStyleEx*  
  Genişletilmiş pencere stilini belirtir. Daha fazla bilgi için bkz: [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)  
   
- [in] `lpszWindowName`  
+ [in] *lpszWindowName*  
  Miniframe penceresinde görüntülenecek metni belirtir.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  Pencere stili belirtir. Daha fazla bilgi için bkz: [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] `rect`  
+ [in] *rect*  
  İlk boyutunu ve konumunu miniframe penceresinin belirtir.  
   
- [in] [out] `pParentWnd`  
+ [in] [out] *pParentWnd*  
  Miniframe penceresinin üst çerçeve belirtir. Bu değer olmamalıdır `NULL`.  
   
- [in] [out] `pContext`  
+ [in] [out] *pContext*  
  Kullanıcı tanımlı içerik belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -474,7 +474,7 @@ virtual CDockablePane* DockPane(BOOL& bWasDocked);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `bWasDocked`  
+ [out] *bWasDocked*  
  `TRUE` bölmesinde zaten sabitlenmiş; Aksi takdirde `FALSE`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -488,7 +488,7 @@ static CBasePane* FindFloatingPaneByID(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nID`  
+ [in] *nID*  
  Bulunacak bölmesinde denetim Kimliğini temsil eder.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -506,20 +506,20 @@ static CPaneFrameWnd* __stdcall FrameFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pt`  
+ [in] *pt*  
  Ekran koordinatları noktası.  
   
- [in] `nSensitivity`  
+ [in] *nSensitivity*  
  Kısa çerçeve penceresi arama alanı bu boyutunu artırabilirsiniz. Belirtilen noktasını artan alanında düşerse bir kısa çerçeve pencere arama ölçütleri karşılar.  
   
- [in] `pFrameToExclude`  
+ [in] *pFrameToExclude*  
  Arama dışlamak için bir kısa çerçeve penceresi belirtir.  
   
- [in] `bFloatMultiOnly`  
+ [in] *bFloatMultiOnly*  
  Varsa `TRUE`, yalnızca sahip kısa çerçeve pencereleri arama `CBRS_FLOAT_MULTI` stili. Varsa `FALSE`, tüm kısa çerçeve pencereleri arayın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi içeren bir kısa çerçeve pencere `pt`; Aksi halde `NULL`.  
+ Bir işaretçi içeren bir kısa çerçeve pencere *pt*; Aksi halde `NULL`.  
   
 ##  <a name="getcaptionheight"></a>  CPaneFrameWnd::GetCaptionHeight  
  Kısa çerçeve penceresi yazısı yüksekliğini döndürür.  
@@ -542,7 +542,7 @@ virtual void GetCaptionRect(CRect& rectCaption) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `rectCaption`  
+ [out] *rectCaption*  
  Ekran koordinatları kısa çerçeve pencere başlığında, konumu ve boyutu içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -688,10 +688,10 @@ virtual LRESULT HitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Test noktası.  
   
- [in] `bDetectCaption`  
+ [in] *bDetectCaption*  
  Varsa `TRUE`, resim yazısını karşı noktası denetleyin. Varsa `FALSE`, resim yazısını yoksay.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -780,10 +780,10 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Profil adı.  
   
- [in] `uiID`  
+ [in] *uiID*  
  Bölmesinde kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -836,7 +836,7 @@ virtual void OnDrawBorder(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Kenarlık çizmek için kullanılan cihaz bağlamı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -859,10 +859,10 @@ virtual void OnMovePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
+ [in] *pBar*  
  Bir bölme (göz ardı) için bir işaretçi.  
   
- [in] `ptOffset`  
+ [in] *ptOffset*  
  Bölmesinde taşımak üzere uzaklığı.  
   
 ##  <a name="onpanerecalclayout"></a>  CPaneFrameWnd::OnPaneRecalcLayout  
@@ -894,10 +894,10 @@ virtual void OnShowPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
+ [in] *pBar*  
  Yüklenmekte olan bölmesinde gösterilen veya gizli.  
   
- [in] `bShow`  
+ [in] *bBilgi Göster*  
  `TRUE` bölmesinde gösterilir `FALSE` bölmesinde gizli değilse.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -911,7 +911,7 @@ void Pin(BOOL bPin = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bPin`  
+ [in] *bPin*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -926,13 +926,13 @@ virtual CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `point`  
+ [in] *noktası*  
  Noktayı, kullanıcı, ekran koordinatları olarak tıklattınız.  
   
- [in] `nSensitivity`  
+ [in] *nSensitivity*  
  Bu parametre kullanılmaz.  
   
- [in] `bCheckVisibility`  
+ [in] *bCheckVisibility*  
  `TRUE` Yalnızca görünür bölmeleri döndürülmesi gerektiğini belirtmek için; Aksi takdirde `FALSE`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -969,17 +969,17 @@ virtual void RemovePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pWnd`  
+ [in] *pWnd*  
  Bir işaretçi bölmesine kaldırmak için.  
   
- [in] `bDestroy`  
- Kısa çerçeve penceresi ne olacağını belirtir. Varsa `bDestroy` olan `TRUE`, hemen Mini çerçeve penceresi bu yöntemi yok eder. Eğer öyleyse `FALSE`, bu yöntem, belirli bir gecikmeden sonra kısa çerçeve penceresi yok eder.  
+ [in] *bDestroy*  
+ Kısa çerçeve penceresi ne olacağını belirtir. Varsa *bDestroy* olan `TRUE`, hemen Mini çerçeve penceresi bu yöntemi yok eder. Eğer öyleyse `FALSE`, bu yöntem, belirli bir gecikmeden sonra kısa çerçeve penceresi yok eder.  
   
- [in] `bNoDelayedDestroy`  
+ [in] *bNoDelayedDestroy*  
  Varsa `TRUE`, Gecikmeli yok etme devre dışıdır. Varsa `FALSE`, Gecikmeli yok etme etkindir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework hemen veya belirli bir gecikmeden sonra kısa çerçeve pencerelerini yok edebilir. Kısa çerçeve pencerelerini yok etme gecikme istiyorsanız, geçirmek `FALSE` içinde `bNoDelayedDestroy` parametresi. Gecikmeli yok etme oluşur framework işlerken `AFX_WM_CHECKEMPTYMINIFRAME` ileti.  
+ Framework hemen veya belirli bir gecikmeden sonra kısa çerçeve pencerelerini yok edebilir. Kısa çerçeve pencerelerini yok etme gecikme istiyorsanız, geçirmek `FALSE` içinde *bNoDelayedDestroy* parametresi. Gecikmeli yok etme oluşur framework işlerken `AFX_WM_CHECKEMPTYMINIFRAME` ileti.  
   
 ##  <a name="replacepane"></a>  CPaneFrameWnd::ReplacePane  
  Bir bölme birbiriyle değiştirir.  
@@ -991,10 +991,10 @@ virtual void ReplacePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBarOrg`  
+ [in] *pBarOrg*  
  Özgün bölmesi için bir işaretçi.  
   
- [in] `pBarReplaceWith`  
+ [in] *pBarReplaceWith*  
  Bir işaretçi bölmesine özgün bölmesinde yerini alır.  
   
 ##  <a name="savestate"></a>  CPaneFrameWnd::SaveState  
@@ -1007,10 +1007,10 @@ virtual BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  Profil adı.  
   
- [in] `uiID`  
+ [in] *uiID*  
  Bölmesinde kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1024,7 +1024,7 @@ virtual void SetCaptionButtons(DWORD dwButtons);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `dwButtons`  
+ [in] *dwButtons*  
  Aşağıdaki değerlerin Bitsel veya birleşimi:  
   
 - `AFX_CAPTION_BTN_CLOSE`  
@@ -1043,7 +1043,7 @@ void SetDelayShow(BOOL bDelayShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bDelayShow`  
+ [in] *bDelayShow*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1055,7 +1055,7 @@ void SetDockingManager(CDockingManager* pManager);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pManager`  
+ [in] *pManager*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1067,7 +1067,7 @@ void SetDockingTimer(UINT nTimeOut);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `nTimeOut`  
+ [in] *nTimeOut*  
  Zaman aşımı değerini milisaniye cinsinden.  
   
 ##  <a name="setdockstate"></a>  CPaneFrameWnd::SetDockState  
@@ -1078,7 +1078,7 @@ virtual void SetDockState(CDockingManager* pDockManager);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDockManager`  
+ [in] *pDockManager*  
  Yerleştirme Yöneticisi için bir işaretçi.  
   
 ##  <a name="sethotpoint"></a>  CPaneFrameWnd::SetHotPoint  
@@ -1089,7 +1089,7 @@ void SetHotPoint(CPoint& ptNew);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `ptNew`  
+ [in] *ptNew*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1104,7 +1104,7 @@ virtual BOOL SetPreDockState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `preDockState`  
+ [in] *preDockState*  
  Olası değerler:  
   
 - `PDS_NOTHING`,  
@@ -1113,10 +1113,10 @@ virtual BOOL SetPreDockState(
   
 - `PDS_DOCK_TO_TAB`  
   
- [in] `pBarToDock`  
+ [in] *pBarToDock*  
  Yerleştirme için bölmesinde bir işaretçi.  
   
- [in] `dockMethod`  
+ [in] *dockMethod*  
  Yerleştirme yöntemi. (Bu parametre yoksayılır.)  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1140,7 +1140,7 @@ BOOL StartTearOff(CMFCPopu* pMenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pMenu`  
+ [in] *pMenu*  
  Bir menüye işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1154,7 +1154,7 @@ virtual void StoreRecentDockSiteInfo(CPane* pBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1168,8 +1168,8 @@ virtual void StoreRecentTabRelatedInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDockingBar`  
- [in] `pTabbedBar`  
+ [in] *pDockingBar*  
+ [in] *pTabbedBar*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

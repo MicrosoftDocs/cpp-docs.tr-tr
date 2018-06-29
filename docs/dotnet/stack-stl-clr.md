@@ -69,12 +69,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 078fd71dac8144e7aa6fda5772b820b086a78457
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: b24bf0eab913285559ec9905762e239841c93a00
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305533"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079739"
 ---
 # <a name="stack-stlclr"></a>yığın (STL/CLR)
 Şablon sınıfı son giren ilk çıkar özelliğine sahip erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `stack` temel alınan bir kapsayıcı itme aşağı yığın olarak yönetmek için.  
@@ -93,7 +93,7 @@ template<typename Value,
     { ..... };  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  Değer  
  Denetlenen sıradaki öğenin türü.  
   

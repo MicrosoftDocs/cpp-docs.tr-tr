@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 365247dc41ea75e67f63b2bb76b5bfe0c14a7ead
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e36baac5850942239bc9e553ed041a2914f8d670
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376297"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079550"
 ---
 # <a name="cruntimeclass-structure"></a>CRuntimeClass yapısı
 Her sınıf türetilmiş `CObject` ile ilişkili bir `CRuntimeClass` çalışma zamanında bir nesne veya onun temel sınıfı hakkında bilgi edinmek için kullanabileceğiniz yapısı.  
@@ -83,7 +83,7 @@ static CObject* PASCAL CreateObject(LPCWSTR lpszClassName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszClassName`  
+ *lpszClassName*  
  Oluşturulacak sınıfın tanıdık adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -105,11 +105,11 @@ static CRuntimeClass* PASCAL FromName(LPCWSTR lpszClassName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszClassName`  
+ *lpszClassName*  
  Tanıdık adı bir sınıfın türetildiği `CObject`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir `CRuntimeClass` geçirilen gibi adına karşılık gelen nesne `lpszClassName`. İşlevi döndürür **NULL** eşleşen hiçbir sınıf adı bulunursa.  
+ Bir işaretçi bir `CRuntimeClass` geçirilen gibi adına karşılık gelen nesne *lpszClassName*. İşlevi döndürür **NULL** eşleşen hiçbir sınıf adı bulunursa.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCObjectSample#17](../../mfc/codesnippet/cpp/cruntimeclass-structure_1.cpp)]  
@@ -134,7 +134,7 @@ BOOL IsDerivedFrom(const CRuntimeClass* pBaseClass) const;
  İlişki "üyenin sınıfından türetilen sınıfların zincir oluşturan tüm dön adım adım ilerlemenizi sağlayarak" belirlenir. Bu işlev yalnızca döndürür **FALSE** için temel sınıfı bir eşleşme varsa.  
   
 > [!NOTE]
->  Kullanılacak `CRuntimeClass` yapısı, içermelidir `IMPLEMENT_DYNAMIC`, `IMPLEMENT_DYNCREATE`, veya `IMPLEMENT_SERIAL` makrosu çalışma zamanı nesne bilgilerini almak istediğiniz sınıfının uygulamasında.  
+>  Kullanılacak `CRuntimeClass` yapısı, çalışma zamanı nesne bilgilerini almak istediğiniz sınıfı uygulamasında ımplement_dynamıc, IMPLEMENT_DYNCREATE veya ımplement_serıal makrosu içermelidir.  
   
  Kullanma hakkında daha fazla bilgi için `CRuntimeClass`, makaleye bakın [CObject sınıfı: çalışma zamanı sınıf bilgilerine erişme](../../mfc/accessing-run-time-class-information.md).  
   

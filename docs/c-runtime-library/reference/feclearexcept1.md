@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe943bcc0a1e1a027e432911bd2ad722fc7c7c1f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: face2637f308a56d95baa7563a6409dd38870d73
+ms.sourcegitcommit: 2f571220e16f6c20e1fdb005f6cbc9e7ef5608f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399029"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37070083"
 ---
 # <a name="feclearexcept"></a>feclearexcept
 
@@ -72,7 +72,7 @@ Sıfır verir *excepts* sıfır veya belirtilen tüm özel durumları başarıyl
 |FE_INVALID|Daha önce bir kayan nokta işleminde bir etki alanı hatası oluştu.|
 |FE_OVERFLOW|Bir aralık hata oluştu; önceki bir kayan nokta işlemi sonuç gösterilemeyecek kadar büyüktü.|
 |FE_UNDERFLOW|Önceki bir kayan noktalı işlem sonucu tam duyarlık gösterilemeyecek kadar çok küçüktü; denormal değeri oluşturuldu.|
-|FE_ALLEXCEPT|Tüm Bitsel veya kayan nokta özel durumlar desteklenir.|
+|FE_ALL_EXCEPT|Tüm Bitsel veya kayan nokta özel durumlar desteklenir.|
 
 *Excepts* bağımsız değişkeni sıfır veya bir veya daha fazla desteklenen özel durum makroları Bitsel veya olabilir. Herhangi bir bağımsız değişken değeri sonucunu tanımlanmamıştır.
 

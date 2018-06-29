@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c2ffbe685ac643116fa60d4f97d03781d1efc83
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3b81a35a696d3d5cdcb22a6f9a66425320b544c2
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375447"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079455"
 ---
 # <a name="cpictureholder-class"></a>CPictureHolder sınıfı
 Resim, denetiminde görüntüleme olanak tanır. bir resim özelliği uygular.  
@@ -133,29 +133,29 @@ BOOL CreateFromBitmap(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `idResource`  
+ *idResource*  
  Bir bit eşlem kaynağının kaynak kimliği.  
   
- `pBitmap`  
+ *pBitmap*  
  İşaretçi bir [CBitmap](../../mfc/reference/cbitmap-class.md) nesnesi.  
   
  *pPal*  
  İşaretçi bir [CPalette](../../mfc/reference/cpalette-class.md) nesnesi.  
   
- `bTransferOwnership`  
+ *bTransferOwnership*  
  Resim nesnesi bit eşlem ve palet nesnelerinin sahipliğini alıp almayacağını gösterir.  
   
- `hbm`  
+ *hbm*  
  İşlemek için bit eşlem içinden `CPictureHolder` nesnesi oluşturulur.  
   
- `hpal`  
+ *hpal*  
  Bit eşlem çizmek için kullanılan palet için işleyin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Nesne başarıyla oluşturulduysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bTransferOwnership` olan **doğru**, çağıran bit eşlem kullanmamanız gerekir veya bu çağrıyı sonra herhangi bir şekilde palet nesnesini döndürür. Varsa `bTransferOwnership` olan **yanlış**, bit eşlem ve palet nesneleri resim nesnesinin ömrü boyunca geçerli kalmasını sağlamak için çağıran sorumludur.  
+ Varsa *bTransferOwnership* olan **doğru**, çağıran bit eşlem kullanmamanız gerekir veya bu çağrıyı sonra herhangi bir şekilde palet nesnesini döndürür. Varsa *bTransferOwnership* olan **yanlış**, bit eşlem ve palet nesneleri resim nesnesinin ömrü boyunca geçerli kalmasını sağlamak için çağıran sorumludur.  
   
 ##  <a name="createfromicon"></a>  CPictureHolder::CreateFromIcon  
  Resim nesneyi başlatmak için bir simge kullanan bir `CPictureHolder`.  
@@ -171,20 +171,20 @@ BOOL CreateFromIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `idResource`  
+ *idResource*  
  Bir bit eşlem kaynağının kaynak kimliği.  
   
- `hIcon`  
+ *hIcon*  
  İşlemek için simge içinden `CPictureHolder` nesnesi oluşturulur.  
   
- `bTransferOwnership`  
+ *bTransferOwnership*  
  Resim nesnesi simgesi nesnenin sahipliğini alıp almayacağını gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Nesne başarıyla oluşturulduysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bTransferOwnership` olan **doğru**, bu çağrıyı döndükten sonra çağıran simgesi nesne herhangi bir şekilde kullanmamanız gerekir. Varsa `bTransferOwnership` olan **yanlış**, çağıran simgesi nesne resim nesnesinin ömrü boyunca geçerli olmasını sağlarken sorumludur.  
+ Varsa *bTransferOwnership* olan **doğru**, bu çağrıyı döndükten sonra çağıran simgesi nesne herhangi bir şekilde kullanmamanız gerekir. Varsa *bTransferOwnership* olan **yanlış**, çağıran simgesi nesne resim nesnesinin ömrü boyunca geçerli olmasını sağlarken sorumludur.  
   
 ##  <a name="createfrommetafile"></a>  CPictureHolder::CreateFromMetafile  
  Resim nesneyi başlatmak için bir meta dosyası kullanan bir `CPictureHolder`.  
@@ -198,7 +198,7 @@ BOOL CreateFromMetafile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hmf`  
+ *hmf*  
  Tanıtıcı oluşturmak için kullanılan meta `CPictureHolder` nesnesi.  
   
  *xExt*  
@@ -207,14 +207,14 @@ BOOL CreateFromMetafile(
  *yExt*  
  Resmin Y uzantı.  
   
- `bTransferOwnership`  
+ *bTransferOwnership*  
  Resim nesnesinin meta dosyası nesnenin sahipliğini alıp almayacağını gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Nesne başarıyla oluşturulduysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bTransferOwnership` olan **doğru**, bu çağrıyı döndükten sonra çağıran meta dosyası nesne herhangi bir şekilde kullanmamanız gerekir. Varsa `bTransferOwnership` olan **yanlış**, meta dosyası nesne resim nesnesinin ömrü boyunca geçerli olmasını sağlarken çağıran sorumludur.  
+ Varsa *bTransferOwnership* olan **doğru**, bu çağrıyı döndükten sonra çağıran meta dosyası nesne herhangi bir şekilde kullanmamanız gerekir. Varsa *bTransferOwnership* olan **yanlış**, meta dosyası nesne resim nesnesinin ömrü boyunca geçerli olmasını sağlarken çağıran sorumludur.  
   
 ##  <a name="getdisplaystring"></a>  CPictureHolder::GetDisplayString  
  Bir kapsayıcının özelliği tarayıcıda görüntülenen dizesini alır.  
@@ -224,7 +224,7 @@ BOOL GetDisplayString(CString& strValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `strValue`  
+ *strValue*  
  Başvuru [CString](../../atl-mfc-shared/reference/cstringt-class.md) diğer bir deyişle görüntü dizesini tutun.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -269,7 +269,7 @@ LPPICTURE m_pPict;
 ```  
   
 ##  <a name="render"></a>  CPictureHolder::Render  
- Tarafından başvurulan dikdörtgen resimde işler `rcRender`.  
+ Tarafından başvurulan dikdörtgen resimde işler *rcRender*.  
   
 ```  
 void Render(
@@ -279,14 +279,14 @@ void Render(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDC`  
+ *pDC*  
  Resim işlenmek üzere olduğu görüntüleme bağlamı işaretçi.  
   
- `rcRender`  
+ *rcRender*  
  İşlenecek resim olan dikdörtgen.  
   
  *rcWBounds*  
- Resim işleme nesnesinin sınırlayıcı dikdörtgenini temsil eden bir dikdörtgen. Bir denetim için olan bu dikdörtgenin `rcBounds` parametresi için geçersiz kılma geçirilen [COleControl::OnDraw](../../mfc/reference/colecontrol-class.md#ondraw).  
+ Resim işleme nesnesinin sınırlayıcı dikdörtgenini temsil eden bir dikdörtgen. Bir denetim için olan bu dikdörtgenin *rcBounds* parametresi için geçersiz kılma geçirilen [COleControl::OnDraw](../../mfc/reference/colecontrol-class.md#ondraw).  
   
 ##  <a name="setpicturedispatch"></a>  CPictureHolder::SetPictureDispatch  
  Bağlanan `CPictureHolder` nesnesine bir `IPictureDisp` arabirimi.  
@@ -296,7 +296,7 @@ void SetPictureDispatch(LPPICTUREDISP pDisp);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDisp`  
+ *pDisp*  
  İşaretçi yeni `IPictureDisp` arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

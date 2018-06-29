@@ -108,12 +108,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: ec92f1fcda75c8d632ea2c5a8f66583d960c744a
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: 881db763518f31d9682ba050e460d4a3f7b39317
+ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305871"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37079831"
 ---
 # <a name="deque-stlclr"></a>sıradan ayır (STL/CLR)
 Şablon sınıfı rastgele erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `deque` bitişik bir blok depolama gibi görünüyor, ancak hangi büyütür veya kalan öğeler kopyalamak için gerek kalmadan her iki uçta küçültür bir dizi öğelerini yönetmek için. Bunu verimli bir şekilde böylece uygulayabileceğiniz bir `double-ended queue`. (Bu nedenle ad.)  
@@ -148,7 +148,7 @@ template<typename Value>
   
  **Namespace:** cliext  
 
-## <a name="members"></a>Üyeler  
+## <a name="declarations"></a>Bildirimler  
   
 |Tür Tanımlaması|Açıklama|  
 |---------------------|-----------------|  
@@ -229,7 +229,7 @@ template<typename Value>
   
  Silme veya bir öğe kaldırıldığında yıkıcı depolanan değeri için çağırır. Kapsayıcı yok etme tüm öğeleri siler. Bu nedenle, hiçbir öğe kapsayıcı outlive ref sınıfı öğe türü olan bir kapsayıcı sağlar. Ancak, bir kapsayıcı, tanıtıcısı algılamadığı unutmayın `not` öğeleri yok.  
  
-## <a name="member-definitions"></a>Üye tanımları
+## <a name="members"></a>Üyeler
 
 ## <a name="assign"></a> deque::Assign (STL/CLR)
 Tüm öğeleri değiştirir.  
