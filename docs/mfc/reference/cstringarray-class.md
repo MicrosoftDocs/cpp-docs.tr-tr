@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a3ebc30304f2d194a10b71f832b42039bac6a53
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: da29c1b3c62769157735bca556eedc7557a4268d
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375512"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121818"
 ---
 # <a name="cstringarray-class"></a>CStringArray sınıfı
 Dizileri destekler [CString](../../atl-mfc-shared/using-cstring.md) nesneleri.  
@@ -120,7 +120,7 @@ class CStringArray : public CObject
 |[CObArray::operator]](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi alır veya ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CStringArray` bir araya getirir `IMPLEMENT_SERIAL` makrosu seri hale getirme ve alt öğeleri dökme desteklemek için. Bir dizi varsa `CString` nesneleri aşırı yüklenmiş ekleme işleciyle veya ile bir arşiv depolandığı `Serialize` üye işlevi, her öğe sırayla serileştirilmiş.  
+ `CStringArray` ımplement_serıal makrosu seri hale getirme ve alt öğeleri dökme desteklemek için bir araya getirir. Bir dizi varsa `CString` nesneleri aşırı yüklenmiş ekleme işleciyle veya ile bir arşiv depolandığı `Serialize` üye işlevi, her öğe sırayla serileştirilmiş.  
   
 > [!NOTE]
 >  Bir dizi kullanmadan önce kullanın `SetSize` boyutuna kurmak ve bunun için bellek ayrılamadı. Kullanmıyorsanız, `SetSize`, dizinizi için öğe eklemek görüntülenmesine neden olur sık bırakılan ve kopyalanır. Sık sık yeniden ayırma ve kopyalama verimsiz ve bellek parçalara.  

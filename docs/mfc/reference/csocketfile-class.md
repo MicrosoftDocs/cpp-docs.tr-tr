@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e3bf8d9ee58143e7a96b85174e4533b3c2e50ec
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4f1198c85b8366d7dec4d38d002b65468c38347c
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372641"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121736"
 ---
 # <a name="csocketfile-class"></a>CSocketFile sınıfı
 A `CFile` göndermek ve Windows Yuvaları aracılığıyla bir ağ üzerinden veri almak için kullanılan nesne.  
@@ -48,11 +48,11 @@ class CSocketFile : public CFile
  (Gönderme) verilerini seri hale getirmek için çağıran arşivine eklemeden `CSocketFile` veri yazmak için üye işlevleri `CSocket` nesnesi. Seri durumdan çıkarılacak (Al) verileri arşivden ayıklayın. Bu çağırmak arşiv neden `CSocketFile` verileri okumak için üye işlevleri `CSocket` nesnesi.  
   
 > [!TIP]
->  Kullanarak yanı sıra `CSocketFile` ile yapabildiğiniz gibi burada açıklandığı gibi bir tek başına dosya nesnesi olarak kullanabileceğiniz `CFile`, kendi temel sınıfı. Aynı zamanda `CSocketFile` arşiv tabanlı MFC serileştirme işlevlere sahip. Çünkü `CSocketFile` tüm desteklemiyor `CFile`kullanıcının işlevselliği, bazı varsayılan MFC Seri işlevleri ile uyumlu olmadığında `CSocketFile`. Bu özellikle, geçerlidir `CEditView` sınıfı. Değil seri denemelisiniz `CEditView` verilerine bir `CArchive` nesne iliştirilmiş bir `CSocketFile` kullanarak nesne `CEditView::SerializeRaw`; kullanın **CEditView::Serialize** yerine. `SerializeRaw` İşlev, İşlevler, sahip için dosya nesnesi bekliyor `Seek`, o `CSocketFile` sahip değil.  
+>  Kullanarak yanı sıra `CSocketFile` ile yapabildiğiniz gibi burada açıklandığı gibi bir tek başına dosya nesnesi olarak kullanabileceğiniz `CFile`, kendi temel sınıfı. Aynı zamanda `CSocketFile` arşiv tabanlı MFC serileştirme işlevlere sahip. Çünkü `CSocketFile` tüm desteklemiyor `CFile`kullanıcının işlevselliği, bazı varsayılan MFC Seri işlevleri ile uyumlu olmadığında `CSocketFile`. Bu özellikle, geçerlidir `CEditView` sınıfı. Değil seri denemelisiniz `CEditView` verilerine bir `CArchive` nesne iliştirilmiş bir `CSocketFile` kullanarak nesne `CEditView::SerializeRaw`; kullanın `CEditView::Serialize` yerine. `SerializeRaw` İşlev, İşlevler, sahip için dosya nesnesi bekliyor `Seek`, o `CSocketFile` sahip değil.  
   
- Kullandığınızda `CArchive` ile `CSocketFile` ve `CSocket`, bir durum karşılaşabilirsiniz nerede **CSocket::Receive** bir döngüye girer (tarafından **PumpMessages(FD_READ)**) bekleniyor İstenen bayt miktarı. Windows Yuvaları FD_READ bildirim başına yalnızca bir Al çağrısı izin Bunun nedeni, ancak `CSocketFile` ve `CSocket` FD_READ başına birden çok alınması çağrılarının izin verir. Okunacak veri yok olduğunda bir FD_READ alırsanız, uygulama askıda kalır. Hiçbir zaman başka bir FD_READ alırsanız, uygulama yuvası üzerinden iletişim kurmasını durdurur.  
+ Kullandığınızda `CArchive` ile `CSocketFile` ve `CSocket`, bir durum karşılaşabilirsiniz nerede `CSocket::Receive` bir döngüye girer (tarafından `PumpMessages(FD_READ)`) istenen bayt miktarı için bekleniyor. Windows Yuvaları FD_READ bildirim başına yalnızca bir Al çağrısı izin Bunun nedeni, ancak `CSocketFile` ve `CSocket` FD_READ başına birden çok alınması çağrılarının izin verir. Okunacak veri yok olduğunda bir FD_READ alırsanız, uygulama askıda kalır. Hiçbir zaman başka bir FD_READ alırsanız, uygulama yuvası üzerinden iletişim kurmasını durdurur.  
   
- Bu sorun aşağıdaki gibi çözülebilir. İçinde `OnReceive` yöntemi sınıfınızın yuva çağrısı **CAsyncSocket::IOCtl (FIONREAD,...)**  çağırmadan önce `Serialize` yuvadan okumak için beklenen veri bir TCP paketi (ağ ortamının, genellikle en az 1096 bayt en büyük iletim birimi) boyutunu aşarsa, ileti sınıfı yöntemi. Kullanılabilir veri boyutu gereken daha az ise, alınması ve ardından yalnızca okuma işlemi başlatmak tüm veriler için bekleyin.  
+ Bu sorun aşağıdaki gibi çözülebilir. İçinde `OnReceive` yöntemi sınıfınızın yuva çağrısı `CAsyncSocket::IOCtl(FIONREAD, ...)` çağırmadan önce `Serialize` yuvadan okumak için beklenen veri bir TCP paketi ağ ortamını (en büyük iletim birimi boyutunu aşarsa, ileti sınıfı yöntemi genellikle en az 1096 bayt). Kullanılabilir veri boyutu gereken daha az ise, alınması ve ardından yalnızca okuma işlemi başlatmak tüm veriler için bekleyin.  
   
  Aşağıdaki örnekte, `m_dwExpected` yaklaşık almak için kullanıcı bekliyor bayt sayısıdır. Başka bir yerde kodunuzda bildirirken olduğunu varsayılır.  
   
@@ -80,17 +80,17 @@ explicit CSocketFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pSocket`  
+ *pSocket*  
  Eklemek için yuva `CSocketFile` nesnesi.  
   
- `bArchiveCompatible`  
- Dosya nesnesi ile kullanılmak üzere olup olmadığını belirtir bir `CArchive` nesnesi. Geçirmek **FALSE** yalnızca kullanmak istiyorsanız `CSocketFile` tek başına gibi tek başına bir biçimde nesne `CFile` nesne, belirli sınırlamalarla birlikte. Bu bayrak değişiklikleri nasıl `CArchive` nesne iliştirilmiş `CSocketFile` nesnesi arabelleğini okumak için yönetir.  
+ *bArchiveCompatible*  
+ Dosya nesnesi ile kullanılmak üzere olup olmadığını belirtir bir `CArchive` nesnesi. Geçişi yalnızca kullanmak istiyorsanız FALSE `CSocketFile` tek başına gibi tek başına bir biçimde nesne `CFile` nesne, belirli sınırlamalarla birlikte. Bu bayrak değişiklikleri nasıl `CArchive` nesne iliştirilmiş `CSocketFile` nesnesi arabelleğini okumak için yönetir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Nesne kapsam dışında gider ya da silinir nesnenin yıkıcı kendisini yuva nesnesinden keser.  
   
 > [!NOTE]
->  A `CSocketFile` (sınırlı) dosyası olarak da kullanılabilir bir `CArchive` nesnesi. Varsayılan olarak, `CSocketFile` Oluşturucusu'nın `bArchiveCompatible` parametresi **doğru**. Bu dosya nesnesi bir arşiv ile kullanılmak üzere olduğunu belirtir. Bir arşiv olmadan dosya nesnesi kullanmak için geçirmek **FALSE** içinde `bArchiveCompatible` parametresi.  
+>  A `CSocketFile` (sınırlı) dosyası olarak da kullanılabilir bir `CArchive` nesnesi. Varsayılan olarak, `CSocketFile` Oluşturucusu'nın *bArchiveCompatible* parametredir TRUE. Bu dosya nesnesi bir arşiv ile kullanılmak üzere olduğunu belirtir. Bir arşiv olmadan dosya nesnesi kullanmak için FALSE olarak geçirmek *bArchiveCompatible* parametresi.  
   
  Kendi "Arşiv uyumlu" modunda bir `CSocketFile` nesne daha iyi performans sağlar ve bir "kilitlenme." tehlike azaltır Gönderme ve alma yuva birbirlerine ya da ortak bir kaynak için bekleyen bir kilitlenme oluşur. Bu durum oluşabilir `CArchive` nesne çalıştığınız `CSocketFile` mu ile yolu bir `CFile` nesnesi. İle `CFile`, Arşiv, istenenden daha az sayıda bayt alırsa, dosya sonuna ulaşıldı varsayabilirsiniz.  
   

@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a6c42a4203fb1d0224f5f31e4123dca9a6fad65
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f9da7016e98d9bd84e62c3b05cae32346827142f
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373820"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121844"
 ---
 # <a name="ctabbedpane-class"></a>CTabbedPane sınıfı
 Çıkarılabilir sekmeleri bölmesiyle işlevlerini uygular.  
@@ -88,7 +88,7 @@ class CTabbedPane : public CBaseTabbedPane
 ## <a name="remarks"></a>Açıklamalar  
  İkinci bölümde resim yazısı işaret eden bir kullanıcı bir bölme iliştirir framework otomatik olarak bu sınıfının bir örneğini oluşturur. Tüm çerçevesi tarafından oluşturulan sekmeli bölmeleri-1 bir Kimliğe sahip.  
   
- Outlook stil sekmeleri yerine normal sekme belirtmek için geçirmek `AFX_CBRS_REGULAR_TABS` için stil [CDockablePane::CreateEx](../../mfc/reference/cdockablepane-class.md#createex) yöntemi.  
+ Outlook stil sekmeleri yerine normal sekme belirtmek için AFX_CBRS_REGULAR_TABS stiline geçirmek [CDockablePane::CreateEx](../../mfc/reference/cdockablepane-class.md#createex) yöntemi.  
   
  Sekmeli bölmesinde çıkarılabilir sekmelerle oluşturursanız, işaretçi depolamamayı şekilde bölmesinde otomatik olarak çerçevesi tarafından yok edilmesi. Sekmeli bölmesine bir işaretçi almak için arama `CBasePane::GetParentTabbedPane` yöntemi.  
   
@@ -177,8 +177,8 @@ virtual BOOL DetachPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
- [in] `bHide`  
+ [in] *pBar*  
+ [in] *bHide*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -192,8 +192,8 @@ static void EnableTabAutoColor(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bEnable`  
- `TRUE` Sekme otomatik renklendirme etkinleştirmek için; Aksi takdirde `FALSE`.  
+ [in] *bSistemlerde*  
+ Sekme otomatik renklendirme etkinleştirmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Etkinleştirmek veya uygulamadaki tüm sekmeli bölmelerinde sekmelerinin otomatik renklendirme devre dışı bırakmak için statik bu yöntemi kullanın. Bu özellik etkinleştirildiğinde, her sekme kendi renge göre doldurulur. Sekmeleri çağırarak renk için kullanılan renk listesi bulabilirsiniz [CMFCBaseTabCtrl::GetAutoColors](../../mfc/reference/cmfcbasetabctrl-class.md#getautocolors) yöntemi.  
@@ -214,10 +214,10 @@ virtual BOOL FloatTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pBar`  
- [in] `nTabID`  
- [in] `dockMethod`  
- [in] `bHide`  
+ [in] *pBar*  
+ [in] *nTabID*  
+ [in] *dockMethod*  
+ [in] *bHide*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -233,10 +233,10 @@ virtual void GetTabArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `rectTabAreaTop`  
+ [out] *rectTabAreaTop*  
  Boyutunu ve konumunu, ekran koordinatları üst sekme alanı içerir.  
   
- [out] `rectTabAreaBottom`  
+ [out] *rectTabAreaBottom*  
  Boyutunu ve konumunu, ekran koordinatları alt sekme alanı içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -274,7 +274,7 @@ virtual BOOL IsTabLocationBottom() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Sekme alanı sekmeli penceresinin alt kısmında bulunur Aksi takdirde `FALSE`.  
+ Sekme alanı sekmeli penceresinin alt kısmında bulunan ise TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -286,11 +286,11 @@ AFX_IMPORT_DATA static BOOL m_bTabsAlwaysTop;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu statik üye kümesine `TRUE` sekmeli bölmenin en üstünde görüntülenecek uygulamadaki tüm sekmeler zorlamak için.  
+ Sekmeli bölmenin en üstünde görüntülenecek uygulamadaki tüm sekmeler zorla true statik bu üyeye ayarlayın.  
   
  Sekmeli bölmesinde oluşturulmadan önce bu değer ayarlamanız gerekir.  
   
- Varsayılan değer `FALSE` şeklindedir.  
+ Varsayılan değer FALSE olur.  
   
 ##  <a name="m_ptabwndrtc"></a>  CTabbedPane::m_pTabWndRTC  
  Özel bir çalışma zamanı sınıf bilgileri `CMFCTabCtrl`-türetilmiş bir nesne içermelidir.  
@@ -320,7 +320,7 @@ static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `arColors`  
+ [in] *arColors*  
  Ayarlamak için renk dizisi içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  

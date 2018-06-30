@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7596140f48b62a63189444bee6fb363552766fe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1fe7c8518366065e93360187247cbd07df42d79f
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371565"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122503"
 ---
 # <a name="cwinformsdialog-class"></a>CWinFormsDialog sınıfı
 Bir Windows Forms kullanıcı denetimi barındıran bir MFC iletişim kutusu sınıfı için sarmalayıcı.  
@@ -85,7 +85,7 @@ CWinFormsDialog(UINT nIDTemplate = IDD);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDTemplate`  
+ *nIDTemplate*  
  Bir iletişim kutusu şablonu kaynak Kimliğini içerir. İletişim kutusu Düzenleyicisi iletişim şablonu oluşturmak ve uygulamanın kaynak betik dosyasında depolamak için kullanın. İletişim kutusu şablonları hakkında daha fazla bilgi için bkz: [CDialog sınıfı](../../mfc/reference/cdialog-class.md).  
   
 ##  <a name="getcontrol"></a>  CWinFormsDialog::GetControl  
@@ -119,7 +119,7 @@ virtual BOOL OnInitDialog();
  Uygulama giriş odağını denetimleri birine iletişim kutusunda ayarlanmış olup olmadığını belirten bir Boole değeri. Varsa `OnInitDialog` döndürür sıfır olmayan Windows ayarlar giriş odağını ilk denetime iletişim kutusunda. Bu yöntem, yalnızca uygulama açıkça giriş odağını denetimleri birine iletişim kutusunda ayarlamışsa 0 geri dönebilirsiniz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- MFC iletişim kutusu oluşturulduğunda (kullanarak [oluşturma](../../mfc/reference/cdialog-class.md#create), [CreateIndirect](../../mfc/reference/cdialog-class.md#createindirect), veya [DoModal](../../mfc/reference/cdialog-class.md#domodal) yöntemi devralınan [CDialog](../../mfc/reference/cdialog-class.md)), bir `WM_INITDIALOG` ileti gönderilir ve bu yöntem çağrılır. İletişim kutusu üzerinde bir Windows Forms denetimi örneği oluşturur ve kullanıcı denetimi için boyutuna uygun şekilde iletişim kutusunun boyutunu ayarlar. Ardından MFC iletişim kutusunda yeni denetim barındırır.  
+ MFC iletişim kutusu oluşturulduğunda (kullanarak [oluşturma](../../mfc/reference/cdialog-class.md#create), [CreateIndirect](../../mfc/reference/cdialog-class.md#createindirect), veya [DoModal](../../mfc/reference/cdialog-class.md#domodal) yöntemi devralınan [CDialog](../../mfc/reference/cdialog-class.md)), bir WM_ INITDIALOG ileti gönderilir ve bu yöntem çağrılır. İletişim kutusu üzerinde bir Windows Forms denetimi örneği oluşturur ve kullanıcı denetimi için boyutuna uygun şekilde iletişim kutusunun boyutunu ayarlar. Ardından MFC iletişim kutusunda yeni denetim barındırır.  
   
  İletişim kutusu başlatıldığında özel işlem gerçekleştirmeniz gerekiyorsa, bu üye işlevi geçersiz kılar. Bu yöntemi kullanma hakkında daha fazla bilgi için bkz: [CDialog::OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog).  
   

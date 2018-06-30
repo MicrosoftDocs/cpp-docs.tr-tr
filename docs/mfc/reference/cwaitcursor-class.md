@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e7bc4755d2e96c78735f1b3ef175ff3603686fb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d89cd3a27869434bc5874037005fee6a592db233
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372514"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122677"
 ---
 # <a name="cwaitcursor-class"></a>CWaitCursor sınıfı
 Uzun bir işlem yaparken, genellikle bir kum saati görüntülenen bir bekleme imleç göstermek için bir satır içi bir yol sağlar.  
@@ -62,7 +62,7 @@ class CWaitCursor
 > [!NOTE]
 >  Kendi oluşturucular ve Yıkıcılar nasıl çalıştığını, nedeniyle `CWaitCursor` nesneler her zaman yerel değişkenleri olarak bildirilen — genel değişkenleri olarak hiçbir zaman bildirilen veya ile ayrılmış **yeni**.  
   
- İmleci görüntüleme gibi bir ileti kutusu veya iletişim kutusu, çağrı değiştirilecek neden bir işlem gerçekleştiriyorsanız, [geri](#restore) bekleme imleci geri yüklemek için üye işlevi. Çağırmak uygundur **geri** bile ne zaman bir bekleme İmleç şu anda görüntülenir.  
+ İmleci görüntüleme gibi bir ileti kutusu veya iletişim kutusu, çağrı değiştirilecek neden bir işlem gerçekleştiriyorsanız, [geri](#restore) bekleme imleci geri yüklemek için üye işlevi. Çağrı uygundur `Restore` bile ne zaman bir bekleme İmleç şu anda görüntülenir.  
   
  Bekleme imleç görüntülemek için başka bir yolu birleşimi kullanmaktır [CCmdTarget::BeginWaitCursor](../../mfc/reference/ccmdtarget-class.md#beginwaitcursor), [CCmdTarget::EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor)ve belki de [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor). Ancak, `CWaitCursor` uzun işlemi bittiğinde imleci önceki imleci ayarlamanız gerekmez çünkü kullanmak daha kolay olur.  
   
@@ -106,7 +106,7 @@ void Restore();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Arama için Tamam'ı olan **geri** bile bekleme imleci şu anda görüntülendiğinde.  
+ Arama için Tamam'ı olan `Restore` bile zaman bekleme imleci şu anda görüntülenir.  
   
  Bekleme imleci hangi birinde dışında bir işlevdeki sırada geri yüklemeniz gerekiyorsa `CWaitCursor` nesne bildirilen, çağırabilirsiniz [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor).  
   

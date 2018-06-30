@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0bfaf418ec78a750f6030683801d00a1450364d8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8c423f1423c874dbf110cfd6951b3510fe0506af
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375609"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121883"
 ---
 # <a name="csocket-class"></a>CSocket sınıfı
 Türetilen `CAsyncSocket`, kendi kapsülleme Windows Sockets API devralır ve daha yüksek bir soyutlama düzeyi daha temsil bir `CAsyncSocket` nesnesi.  
@@ -58,10 +58,10 @@ class CSocket : public CAsyncSocket
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CSocket::Attach](#attach)|Bağlayan bir **YUVA** işlemek için bir `CSocket` nesnesi.|  
+|[CSocket::Attach](#attach)|Bir YUVA tanıtıcı ekler bir `CSocket` nesnesi.|  
 |[CSocket::CancelBlockingCall](#cancelblockingcall)|Şu anda devam ediyor engelleyen bir aramayı iptal eder.|  
 |[CSocket::Create](#create)|Bir yuva oluşturur.|  
-|[CSocket::FromHandle](#fromhandle)|Bir işaretçi döndüren bir `CSocket` nesnesi, verilen bir **YUVA** tanıtıcı.|  
+|[CSocket::FromHandle](#fromhandle)|Bir işaretçi döndüren bir `CSocket` SOCKET tanıtıcısı verilen nesnesi.|  
 |[CSocket::IsBlocking](#isblocking)|Bir engelleme çağrı sürüyor olup olmadığını belirler.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
@@ -73,9 +73,9 @@ class CSocket : public CAsyncSocket
 ## <a name="remarks"></a>Açıklamalar  
  `CSocket` çalışır sınıflarıyla `CSocketFile` ve `CArchive` gönderme ve alma veri yönetmek için.  
   
- A `CSocket` nesnesi de sağlar engellemek, zaman uyumlu çalışması için gerekli olduğu `CArchive`. İşlevler, gibi engelleme `Receive`, `Send`, `ReceiveFrom`, `SendTo`, ve `Accept` (öğesinden devralınan tüm `CAsyncSocket`), döndürmeyin bir `WSAEWOULDBLOCK` hata `CSocket`. Bunun yerine, işlemi tamamlanana kadar bu işlevler bekleyin. Ayrıca, özgün çağrısı şu hata ile sona erdirir `WSAEINTR` varsa `CancelBlockingCall` Bu işlevlerden birini engelleme sırasında çağrılır.  
+ A `CSocket` nesnesi de sağlar engellemek, zaman uyumlu çalışması için gerekli olduğu `CArchive`. İşlevler, gibi engelleme `Receive`, `Send`, `ReceiveFrom`, `SendTo`, ve `Accept` (öğesinden devralınan tüm `CAsyncSocket`), döndürmeyin bir `WSAEWOULDBLOCK` hata `CSocket`. Bunun yerine, işlemi tamamlanana kadar bu işlevler bekleyin. Ayrıca, özgün çağrısı WSAEINTR hatasıyla varsa sonlandıracak `CancelBlockingCall` Bu işlevlerden birini engelleme sırasında çağrılır.  
   
- Kullanmak için bir `CSocket` nesne, Oluşturucusu çağrısı'ı çağırın `Create` arka plandaki oluşturmak için `SOCKET` işlemek (tür `SOCKET`). Varsayılan parametreleri `Create` bir akışa yuva oluşturun ancak yuvasıyla kullanmıyorsanız bir `CArchive` nesnesi, bir veri birimi yuva oluşturun ya da bir sunucu yuva oluşturmak için belirli bir bağlantı noktasına bağlamak için bir parametre belirtebilirsiniz. Bir istemci yuva bağlamak için `Connect` istemci tarafında ve `Accept` sunucu tarafında. Ardından oluşturun bir `CSocketFile` nesne ve kendisine ilişkilendirmek `CSocket` nesnesinde `CSocketFile` Oluşturucusu. Ardından, oluşturun bir `CArchive` göndermek için nesne ve (gerektiğinde) veri almak için bir sonra ilişkilendirmek bunlarla `CSocketFile` nesnesinde `CArchive` Oluşturucusu. İletişim tamamlandığı zaman destroy `CArchive`, `CSocketFile`, ve `CSocket` nesneleri. `SOCKET` Veri türü makalesinde açıklanan [Windows Yuvaları: arka plan](../../mfc/windows-sockets-background.md).  
+ Kullanılacak bir `CSocket` nesne, Oluşturucusu çağrısı'ı çağırın `Create` temel SOCKET tanıtıcısı (YUVA türü) oluşturmak için. Varsayılan parametreleri `Create` bir akışa yuva oluşturun ancak yuvasıyla kullanmıyorsanız bir `CArchive` nesnesi, bir veri birimi yuva oluşturun ya da bir sunucu yuva oluşturmak için belirli bir bağlantı noktasına bağlamak için bir parametre belirtebilirsiniz. Bir istemci yuva bağlamak için `Connect` istemci tarafında ve `Accept` sunucu tarafında. Ardından oluşturun bir `CSocketFile` nesne ve kendisine ilişkilendirmek `CSocket` nesnesinde `CSocketFile` Oluşturucusu. Ardından, oluşturun bir `CArchive` göndermek için nesne ve (gerektiğinde) veri almak için bir sonra ilişkilendirmek bunlarla `CSocketFile` nesnesinde `CArchive` Oluşturucusu. İletişim tamamlandığı zaman destroy `CArchive`, `CSocketFile`, ve `CSocket` nesneleri. YUVA veri türü makalesinde açıklanan [Windows Yuvaları: arka plan](../../mfc/windows-sockets-background.md).  
   
  Kullandığınızda `CArchive` ile `CSocketFile` ve `CSocket`, bir durum karşılaşabilirsiniz nerede `CSocket::Receive` bir döngüye girer (tarafından `PumpMessages(FD_READ)`) istenen bayt miktarı için bekleniyor. Windows Yuvaları FD_READ bildirim başına yalnızca bir Al çağrısı izin Bunun nedeni, ancak `CSocketFile` ve `CSocket` FD_READ başına birden çok alınması çağrılarının izin verir. Okunacak veri yok olduğunda bir FD_READ alırsanız, uygulama askıda kalır. Hiçbir zaman başka bir FD_READ alırsanız, uygulama yuvası üzerinden iletişim kurmasını durdurur.  
   
@@ -108,14 +108,14 @@ BOOL Attach(SOCKET hSocket);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hSocket`  
+ *hSocket*  
  Bir yuva için bir tanıtıcı içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılıysa sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **YUVA** tanıtıcı nesnesinin içinde depolanan [m_hSocket](../../mfc/reference/casyncsocket-class.md#m_hsocket) veri üyesi.  
+ SOCKET tanıtıcısı nesnesinin içinde depolanan [m_hSocket](../../mfc/reference/casyncsocket-class.md#m_hsocket) veri üyesi.  
   
  Daha fazla bilgi için bkz: [Windows Yuvaları: arşivlerle kullanılan yuvalara](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
@@ -134,11 +134,11 @@ void CancelBlockingCall();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev bu yuva için bekleyen tüm engelleme işlemi iptal eder. Özgün engelleme çağrısı şu hata ile mümkün olan en kısa sürede sona erdirir **WSAEINTR**.  
+ Bu işlev bu yuva için bekleyen tüm engelleme işlemi iptal eder. Özgün engelleme çağrısı mümkün olan en kısa sürede WSAEINTR hata ile sona erdirir.  
   
- Bir engelleme söz konusu olduğunda **Bağlan** işlem, Windows Sockets uygulaması sonlandırılacak engelleme çağrısı mümkün, ancak bağlantı tamamlanana kadar yayımlanacak yuva kaynaklarını mümkün olmayabilir hemen (ve ardından sıfırlanmış) veya zaman aşımına uğradı. Bu, yalnızca uygulama hemen (hiçbir yuva mevcutsa) yeni bir yuva açın ya da aynı eşler arası bağlanmaya çalışırsa belirgin olması olasıdır.  
+ Bir engelleme söz konusu olduğunda `Connect` işlem, Windows Sockets uygulaması sonlandırılacak engelleme çağrısı mümkün, ancak bağlantı tamamlandı (ve ardından sıfırlanmış kadar) yayımlanacak yuva kaynaklarını mümkün olmayabilir hemen veya zaman aşımına uğradı. Bu, yalnızca uygulama hemen (hiçbir yuva mevcutsa) yeni bir yuva açın ya da aynı eşler arası bağlanmaya çalışırsa belirgin olması olasıdır.  
   
- Herhangi bir işlem dışında iptal etme **kabul** yuva belirlenmemiş bir durum bırakabilirsiniz. Bir uygulama bir yuvada engelleme işlemi iptal ederse, uygulama yuvada gerçekleştirme yetkisi olan bağlı yalnızca bir çağrı işlemdir **Kapat**, diğer işlemlerin bazı Windows Sockets çalışabilir ancak uygulamaları. Uygulamanız için en fazla taşınabilirlik üzerinde isterse sonra iptal etme işlemlerini gerçekleştirme üzerinde bağımlı değil dikkatli olmanız gerekir.  
+ Herhangi bir işlem dışında iptal etme `Accept` yuva belirlenmemiş bir durum bırakabilirsiniz. Bir uygulama bir yuvada engelleme işlemi iptal ederse, uygulama yuvada gerçekleştirme yetkisi olan bağlı yalnızca bir çağrı işlemdir `Close`, ancak diğer işlemleri bazı Windows Sockets uygulamaları üzerinde çalışabilir. Uygulamanız için en fazla taşınabilirlik üzerinde isterse sonra iptal etme işlemlerini gerçekleştirme üzerinde bağımlı değil dikkatli olmanız gerekir.  
   
  Daha fazla bilgi için bkz: [Windows Yuvaları: arşivlerle kullanılan yuvalara](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
@@ -153,27 +153,27 @@ BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nSocketPort`  
+ *nSocketPort*  
  Bir bağlantı noktasını seçmek için MFC istiyorsanız yuva veya 0 ile kullanılmak üzere belirli bir bağlantı.  
   
- `nSocketType`  
- **SOCK_STREAM** veya **SOCK_DGRAM**.  
+ *nSocketType*  
+ SOCK_STREAM veya SOCK_DGRAM.  
   
- `lpszSocketAddress`  
- Bağlı bir yuva, noktalı sayıyı "128.56.22.8" gibi ağ adresini içeren bir dize için bir işaretçi. Geçirme **NULL** bu parametresi için dize **CSocket** örneği istemci etkinliği tüm ağ arabirimlerindeki dinler.  
+ *lpszSocketAddress*  
+ Bağlı bir yuva, noktalı sayıyı "128.56.22.8" gibi ağ adresini içeren bir dize için bir işaretçi. Bu parametre gösterir için dizesi NULL geçirme `CSocket` örneği istemci etkinliği tüm ağ arabirimlerindeki dinler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılıysa sıfır olmayan; Aksi halde 0 ve belirli bir kodu çağırarak alınabilir `GetLastError`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Oluşturma** sonra çağırır **bağlamak** belirtilen adresine yuvası bağlama. Şu yuva türleri desteklenir:  
+ `Create` Daha sonra çağırır `Bind` belirtilen adresine yuvası bağlama. Şu yuva türleri desteklenir:  
   
-- **SOCK_STREAM** sağlar sıralı, güvenilir, iki yönlü, bağlantı tabanlı bayt akışları. İletim Denetimi Protokolü (TCP) Internet adresi ailesini kullanır.  
+- SOCK_STREAM sıralı, güvenilir, iki yönlü, bağlantı tabanlı bayt akışları sağlar. İletim Denetimi Protokolü (TCP) Internet adresi ailesini kullanır.  
   
-- **SOCK_DGRAM** bağlantısız, güvenilir olmayan arabellek sabit (genellikle küçük) maksimum uzunluktaki veri birimleri destekler. Kullanıcı Veri Birimi Protokolü (UDP) Internet adresi ailesini kullanır. Bu seçeneği kullanmak için yuvasıyla kullanmamanız gerekir bir `CArchive` nesnesi.  
+- Bağlantısız, güvenilir olmayan arabellek sabit (genellikle küçük) maksimum uzunluktaki SOCK_DGRAM desteklediği veri birimi. Kullanıcı Veri Birimi Protokolü (UDP) Internet adresi ailesini kullanır. Bu seçeneği kullanmak için yuvasıyla kullanmamanız gerekir bir `CArchive` nesnesi.  
   
     > [!NOTE]
-    >  **Kabul** üye işlevi yeni, boş bir başvuru alır `CSocket` , parametre olarak nesne. Arama yapmadan önce bu nesneyi oluşturmalıdır **kabul**. Aklınızda bu yuva nesnesi kapsamını, bağlantıyı kapatır kalırsa. Çağırmayın **oluşturma** bu yeni yuva nesnesi için.  
+    >  `Accept` Üye işlevi yeni, boş bir başvuru alır `CSocket` , parametre olarak nesne. Arama yapmadan önce bu nesneyi oluşturmalıdır `Accept`. Aklınızda bu yuva nesnesi kapsamını, bağlantıyı kapatır kalırsa. Çağırmayın `Create` bu yeni yuva nesnesi için.  
   
  Akış ve veri birimi yuvaları hakkında daha fazla bilgi için makalelerine bakın [Windows Yuvaları: arka plan](../../mfc/windows-sockets-background.md), [Windows Yuvaları: bağlantı noktaları ve yuva adresleri](../../mfc/windows-sockets-ports-and-socket-addresses.md), ve [Windows Yuvaları: kullanma Yuvaların arşivlerle](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
@@ -185,7 +185,7 @@ CSocket();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yapım sonra çağırmalısınız **oluşturma** üye işlevi.  
+ Yapım sonra çağırmalısınız `Create` üye işlevi.  
   
  Daha fazla bilgi için bkz: [Windows Yuvaları: arşivlerle kullanılan yuvalara](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
@@ -197,14 +197,14 @@ static CSocket* PASCAL FromHandle(SOCKET hSocket);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hSocket`  
+ *hSocket*  
  Bir yuva için bir tanıtıcı içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir `CSocket` nesnesi veya **NULL** yoksa hiçbir `CSocket` nesne iliştirilmiş `hSocket`.  
+ Bir işaretçi bir `CSocket` nesne veya yoksa NULL hiçbir `CSocket` nesne iliştirilmiş *hSocket*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Verildiğinde bir **YUVA** işlemek, bir `CSocket` nesne tanıtıcısını iliştirilmemiş, üye işlevinin döndürdüğü **NULL** ve geçici bir nesne oluşturmaz.  
+ SOCKET tanıtıcısı varsa verildiğinde bir `CSocket` tanıtıcısını nesnesi bağlı değil, üye fonksiyonu NULL döndürür ve geçici bir nesne oluşturmaz.  
   
  Daha fazla bilgi için bkz: [Windows Yuvaları: arşivlerle kullanılan yuvalara](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   

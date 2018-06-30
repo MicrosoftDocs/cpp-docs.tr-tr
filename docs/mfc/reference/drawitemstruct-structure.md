@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb7daba666e8aaf983eadc77417cad46180e7df
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ff4596a52170d0c6d197a0bda431963b5f0e9344
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378275"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120948"
 ---
 # <a name="drawitemstruct-structure"></a>DRAWITEMSTRUCT Yapısı
 `DRAWITEMSTRUCT` Yapısı sahip pencereyi sahip tarafından çizilmiş bir denetim veya menü öğesini boyamak nasıl belirleneceği olmalıdır bilgi sağlar.  
@@ -43,65 +43,65 @@ typedef struct tagDRAWITEMSTRUCT {
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `CtlType`  
+ *CtlType*  
  Denetim türü. Denetim türleri için değerleri aşağıdaki gibidir:  
   
-- **ODT_BUTTON** sahip tarafından çizilmiş düğmesi  
+- Sahip tarafından çizilmiş ODT_BUTTON düğmesi  
   
-- **ODT_COMBOBOX** sahip tarafından çizilmiş birleşik giriş kutusu  
+- ODT_COMBOBOX sahip tarafından çizilmiş birleşik giriş kutusu  
   
-- **ODT_LISTBOX** sahip tarafından çizilmiş liste kutusu  
+- ODT_LISTBOX sahip tarafından çizilmiş liste kutusu  
   
-- **ODT_MENU** sahip tarafından çizilmiş menüsü  
+- Sahip tarafından çizilmiş ODT_MENU menüsü  
   
-- **ODT_LISTVIEW** liste görünümü denetimi  
+- ODT_LISTVIEW liste görünümü denetimi  
   
-- **ODT_STATIC** sahip tarafından çizilmiş statik denetimi  
+- ODT_STATIC sahip tarafından çizilmiş statik denetimi  
   
-- **ODT_TAB** sekme denetimi  
+- ODT_TAB sekme denetimi  
   
- `CtlID`  
+ *CtlID*  
  Birleşik giriş kutusu, liste kutusu veya düğmesi denetim kimliği. Bu üye için bir menü kullanılmaz.  
   
- `itemID`  
- Menü öğesi kimliği bir menüsü veya bir liste kutusu veya açılan kutusu öğenin dizini. Bir boş liste kutusu veya açılan kutu için bu üye, kendisini tarafından belirtilen koordinatları, yalnızca odak dikdörtgeni çizmek uygulama izin verir negatif bir değer olan **rcItem** üye denetiminde öğe olsa bile. Bu nedenle kullanıcı liste kutusu veya birleşik giriş kutusu giriş odağını sahip olup olmadığını da gösterilecek. Ayar bitleri **itemAction** üye dikdörtgen liste kutusu veya birleşik giriş kutusu odak giriş gibi sorgulamanıza çizilecek olup olmadığını belirler.  
+ *öğe kimliği*  
+ Menü öğesi kimliği bir menüsü veya bir liste kutusu veya açılan kutusu öğenin dizini. Bir boş liste kutusu veya açılan kutu için bu üye, kendisini tarafından belirtilen koordinatları, yalnızca odak dikdörtgeni çizmek uygulama izin verir negatif bir değer olan `rcItem` üye denetiminde öğe olsa bile. Bu nedenle kullanıcı liste kutusu veya birleşik giriş kutusu giriş odağını sahip olup olmadığını da gösterilecek. Ayar bitleri `itemAction` üye dikdörtgen liste kutusu veya birleşik giriş kutusu odak giriş gibi sorgulamanıza çizilecek olup olmadığını belirler.  
   
- `itemAction`  
+ *itemAction*  
  Gerekli bir çizim eylemi tanımlar. Bu, bir veya daha fazla aşağıdaki BITS olacaktır:  
   
-- **ODA_DRAWENTIRE** tüm denetim çizilmesi gerektiğinde bu bit ayarlanır.  
+- Tüm denetim çizilmesi gerektiğinde ODA_DRAWENTIRE bu bit ayarlanır.  
   
-- **ODA_FOCUS** bu bit denetimi kazanır veya giriş odağı kaybettiğinde ayarlanır. **İtemState** denetimi odağa sahip olup olmadığını belirlemek için üye işaretlenmelidir.  
+- Denetim kazanır veya giriş odağı kaybettiğinde ODA_FOCUS bu bit ayarlanır. `itemState` Denetimi odağa sahip olup olmadığını belirlemek için üye işaretlenmelidir.  
   
-- **ODA_SELECT** yalnızca seçim durumu değiştiğinde bu bit ayarlanır. **İtemState** üye, yeni seçim durumu belirlemek için işaretlenmelidir.  
+- Tek seçim durum değiştiğinde ODA_SELECT bu bit ayarlanır. `itemState` Yeni seçim durumu belirlemek için üye işaretlenmelidir.  
   
  *itemState*  
- Geçerli çizim eylem gerçekleştirildikten sonra öğesi visual durumunu belirtir. Diğer bir deyişle, menü öğesi durumunda olduğu olmasını görünüyorsa, durum bayrağı **ODS_GRAYED** ayarlanır. Durumu bayrakları aşağıdaki gibidir:  
+ Geçerli çizim eylem gerçekleştirildikten sonra öğesi visual durumunu belirtir. Diğer bir deyişle, menü öğesi soluk ise, durumu bayrağı ODS_GRAYED ayarlanır. Durumu bayrakları aşağıdaki gibidir:  
   
-- **ODS_CHECKED** menü öğesi denetlenecek ise bu bit ayarlanır. Bu bit yalnızca menüde kullanılır.  
+- Menü öğesi denetlenecek ise ODS_CHECKED bu bit ayarlanır. Bu bit yalnızca menüde kullanılır.  
   
-- **ODS_DISABLED** öğesi devre dışı olarak çizilecek ise bu bit ayarlanır.  
+- Öğesini devre dışı olarak çizilecek ise ODS_DISABLED bu bit ayarlanır.  
   
-- **ODS_FOCUS** odak öğe girişi değilse bu bit ayarlanır.  
+- Öğenin odağa giriş ODS_FOCUS bu bit ayarlanır.  
   
-- **ODS_GRAYED** öğe soluk ise bu bit ayarlanır. Bu bit yalnızca menüde kullanılır.  
+- Öğe soluk ise ODS_GRAYED bu bit ayarlanır. Bu bit yalnızca menüde kullanılır.  
   
-- **ODS_SELECTED** öğenin durumunu seçtiyseniz bu bit ayarlanır.  
+- Öğenin durumunu seçtiyseniz ODS_SELECTED bu bit ayarlanır.  
   
-- **ODS_COMBOBOXEDIT** çizim ownerdrawn birleşik giriş kutusu seçim alanında (düzenleme denetimi) gerçekleşir.  
+- ODS_COMBOBOXEDIT çizim ownerdrawn birleşik giriş kutusu seçim alanında (düzenleme denetimi) gerçekleşir.  
   
-- **ODS_DEFAULT** varsayılan öğe öğedir.  
+- ODS_DEFAULT öğesi varsayılan öğesidir.  
   
- `hwndItem`  
- Birleşik giriş kutuları, liste kutuları ve düğmeleri için Denetim pencere tanıtıcısı belirtir. Menü tanıtıcısı belirtir (`HMENU`) menü öğesi içerir.  
+ *hwndItem*  
+ Birleşik giriş kutuları, liste kutuları ve düğmeleri için Denetim pencere tanıtıcısı belirtir. Menü öğesi içeren menüyü (HMENU) tanıtıcısı belirtir.  
   
- `hDC`  
+ *hDC*  
  Bir cihaz bağlamı tanımlar. Bu cihaz bağlamı denetimindeki çizim işlemleri gerçekleştirirken kullanılması gerekir.  
   
  *rcItem*  
- Dikdörtgene tarafından belirtilen cihaz bağlamı `hDC` çizilecek denetimin sınırları tanımlar üye. Windows otomatik olarak birleşik giriş kutuları, liste kutuları ve düğmeleri için cihaz bağlamda sahibi çizer herhangi bir şey küçük, ancak menü öğeleri küçük değil. Menü öğeleri çizerken sahibi tarafından tanımlanan dikdörtgenin sınırlarının dışında çekmek gerekir değil **rcItem** üyesi.  
+ Dikdörtgene tarafından belirtilen cihaz bağlamı *hDC* çizilecek denetimin sınırları tanımlar üye. Windows otomatik olarak birleşik giriş kutuları, liste kutuları ve düğmeleri için cihaz bağlamda sahibi çizer herhangi bir şey küçük, ancak menü öğeleri küçük değil. Menü öğeleri çizerken sahibi tarafından tanımlanan dikdörtgenin sınırlarının dışında çekmek gerekir değil `rcItem` üyesi.  
   
- `itemData`  
+ *ItemData*  
  Birleşik giriş kutusu veya liste kutusu için bu üye için liste kutusu aşağıdakilerden biri tarafından geçirilen değer içeriyor:  
   
 - [CComboBox::AddString](../../mfc/reference/ccombobox-class.md#addstring)  
@@ -121,7 +121,7 @@ typedef struct tagDRAWITEMSTRUCT {
 - [CMenu::ModifyMenu](../../mfc/reference/cmenu-class.md#modifymenu)  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sahip tarafından çizilmiş denetim veya menü öğesini sahibi pencerenin bu yapı işaretçi alır `lParam` parametresinin `WM_DRAWITEM` ileti.  
+ Sahip tarafından çizilmiş denetim veya menü öğesini sahibi pencerenin bu yapı işaretçi alır *lParam* WM_DRAWITEM iletisinin parametresi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** winuser.h  

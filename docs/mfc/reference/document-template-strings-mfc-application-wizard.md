@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d6039459eed097af5e927c4bd2f30d3e7c3c4bc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 32d684d7b9b5f8057893d79b864be7b6d9b512fc
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373546"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122202"
 ---
 # <a name="document-template-strings-mfc-application-wizard"></a>Belge Şablonu Dizeleri, MFC Uygulama Sihirbazı
 MFC Uygulama Sihirbazı'nın bu sayfasında, sağlayın veya belge yönetimi ve yerelleştirme yardımcı olması için aşağıdaki seçeneklerden daraltın. Belge şablonu dizeleri içeren uygulamalar için kullanılabilir **belge/görünüm mimarisi desteği** içinde [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md). İletişim kutuları için kullanılamaz. Çoğu belge şablonu dizeleri görünür ve uygulamanın kullanıcılar tarafından kullanılan olduğundan, bunlar içine yerelleştirilmiştir **kaynak dili** belirtilen **uygulama türü** Sihirbazı sayfası.  
@@ -43,7 +43,7 @@ MFC Uygulama Sihirbazı'nın bu sayfasında, sağlayın veya belge yönetimi ve 
 |**Ana çerçeve açıklamalı alt yazı**|Ana uygulama çerçevesi üst kısmında görünen metin ayarlar. Varsayılan olarak, proje adı.|  
 |**Belge türü adı**|Bir belge uygulamasının altında gruplandırılabilir belge türünü tanımlar. Varsayılan olarak, proje adı. Varsayılan değiştirme bu iletişim kutusundaki diğer seçenekler değiştirmez.|  
 |**Filtre adı**|Dosya, dosya türü bulmak için kullanıcılarınızın belirtebilir adını ayarlar. Bu seçenek kullanılabilir **dosya türü** ve **farklı türde Kaydet** standart Windows seçeneklerinde **açık** ve **Farklı Kaydet** iletişim kutuları. Varsayılan, proje adı artı dosyaları tarafından ve arkasından sağlanan uzantı **dosya uzantısı**. Örneğin, projenizin pencere öğesi olarak adlandırılır ve .wgt, dosya uzantısı ise **filtre adı** pencere öğesi dosyaları (*.wgt) varsayılan olarak açıktır.|  
-|**Dosya yeni kısa ad**|Standart Windows görünen adını ayarlar `New` iletişim kutusunda, yeni birden çok belge şablonu ise. Uygulamanız ise bir [Otomasyon sunucusu](../../mfc/automation-servers.md), bu ad, Otomasyon nesnesi kısa adı olarak kullanılır. Varsayılan olarak, proje adı.|  
+|**Dosya yeni kısa ad**|Standart Windows görünen adını ayarlar **yeni** iletişim kutusunda, yeni birden çok belge şablonu ise. Uygulamanız ise bir [Otomasyon sunucusu](../../mfc/automation-servers.md), bu ad, Otomasyon nesnesi kısa adı olarak kullanılır. Varsayılan olarak, proje adı.|  
 |**Dosya türü uzun adı**|Dosya türü adı Sistem kayıt defterinde ayarlar. Uygulamanız bir Otomasyon sunucusu ise, bu ad, Otomasyon nesnesi uzun adı olarak kullanılır. Varsayılan olarak, artı proje adı. Belge.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cdb0c8679990a48740032017a2c0e11b7148f2d6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2f312d7e829657f2cc9c7c41c65afad8d8f8b343
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33376401"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121870"
 ---
 # <a name="ctypedptrmap-class"></a>CTypedPtrMap sınıfı
 Tür kullanımı uyumlu işaretçi eşleme sınıfların nesneler için "sarmalayıcı" sağlar `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, ve `CMapStringToPtr`.  
@@ -42,13 +42,13 @@ class CTypedPtrMap : public BASE_CLASS
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `BASE_CLASS`  
+ *BASE_CLASS*  
  Yazılan işaretçi harita sınıfın temel sınıf; bir işaretçi eşleme sınıf olmalıdır ( `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, veya `CMapStringToPtr`).  
   
- `KEY`  
+ *KEY*  
  Eşleme için anahtar olarak kullanılan nesne sınıfı.  
   
- `VALUE`  
+ *DEĞER*  
  Eşlemesinde depolanan nesne sınıfı.  
   
 ## <a name="members"></a>Üyeler  
@@ -94,25 +94,25 @@ void GetNextAssoc(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rPosition`  
- Bir başvuru belirtir bir **konumu** önceki tarafından döndürülen değer `GetNextAssoc` veya `BASE_CLASS` **:: GetStartPosition** çağırın.  
+ *rPosition*  
+ Önceki tarafından döndürülen bir konum değeri başvuru belirtir `GetNextAssoc` veya `BASE_CLASS` **:: GetStartPosition** çağırın.  
   
  *KEY*  
  Haritanın anahtarları türünü belirten bir şablon parametre.  
   
- `rKey`  
+ *rKey*  
  Alınan öğenin döndürülen anahtarı belirtir.  
   
  *DEĞER*  
  Haritanın değerlerin türünü belirten bir şablon parametre.  
   
- `rValue`  
+ *rValue*  
  Alınan öğenin döndürülen değerini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev eşlemesi tüm öğeler üzerinden yineleme için kullanışlıdır. Konum sırası mutlaka anahtar değeri dizisi ile aynı olduğunu unutmayın.  
   
- Alınan öğe Haritası son sonra yeni değeri ise `rNextPosition` ayarlanır **NULL**.  
+ Alınan öğe Haritası son sonra yeni değeri ise `rNextPosition` NULL olarak ayarlandı.  
   
  Bu satır içi işlev çağrılarını `BASE_CLASS` **:: GetNextAssoc**.  
   
@@ -124,16 +124,16 @@ BOOL Lookup(BASE_CLASS ::BASE_ARG_KEY key, VALUE& rValue) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `BASE_CLASS`  
+ *BASE_CLASS*  
  Bu haritanın sınıfın temel sınıf belirten bir şablon parametre.  
   
- `key`  
+ *Anahtarı*  
  Bakılacak öğenin anahtarı.  
   
  *DEĞER*  
  Bu eşlemesinde depolanan değerlerin türü belirten bir şablon parametre.  
   
- `rValue`  
+ *rValue*  
  Alınan öğenin döndürülen değerini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -153,10 +153,10 @@ VALUE& operator[ ](base_class ::base_arg_key key);
  *DEĞER*  
  Bu eşlemesinde depolanan değerlerin türü belirten bir şablon parametre.  
   
- `BASE_CLASS`  
+ *BASE_CLASS*  
  Bu haritanın sınıfın temel sınıf belirten bir şablon parametre.  
   
- `key`  
+ *Anahtarı*  
  Aranan veya eşlemesinde oluşturulan öğenin anahtarı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -173,7 +173,7 @@ BOOL RemoveKey(KEY key);
  *KEY*  
  Haritanın anahtarları türünü belirten bir şablon parametre.  
   
- `key`  
+ *Anahtarı*  
  Kaldırılacak öğenin anahtarı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -193,10 +193,10 @@ void SetAt(KEY key, VALUE newValue);
  *KEY*  
  Haritanın anahtarları türünü belirten bir şablon parametre.  
   
- `key`  
+ *Anahtarı*  
  NewValue anahtar değerini belirtir.  
   
- `newValue`  
+ *newValue*  
  Yeni öğe değeri nesne işaretçisi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

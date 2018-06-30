@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f56a09742276c7fcb1bd66ff1a36b1d17cdf882
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5c844ad428143c82e8214eab74262b326bf2c9a4
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370952"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37123246"
 ---
 # <a name="deleteitemstruct-structure"></a>DELETEITEMSTRUCT Yapısı
 `DELETEITEMSTRUCT` Yapısını silinmiş bir sahip tarafından çizilmiş liste kutusu veya açılan kutu öğeyi açıklar.  
@@ -39,23 +39,23 @@ typedef struct tagDELETEITEMSTRUCT { /* ditms */
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `CtlType`  
- Belirtir **ODT_LISTBOX** (sahip tarafından çizilmiş liste kutusu) veya **ODT_COMBOBOX** (sahip tarafından çizilmiş birleşik giriş kutusu).  
+ *CtlType*  
+ ODT_LISTBOX (sahip tarafından çizilmiş liste kutusu) veya ODT_COMBOBOX (sahip tarafından çizilmiş birleşik giriş kutusu) belirtir.  
   
- `CtlID`  
+ *CtlID*  
  Liste kutusu veya birleşik giriş kutusu tanımlayıcısını belirtir.  
   
- `itemID`  
+ *öğe kimliği*  
  Liste kutusu veya açılan kutuda kaldırılmakta olan öğenin dizinini belirtir.  
   
- `hwndItem`  
+ *hwndItem*  
  Denetim tanımlar.  
   
- `itemData`  
- Uygulama tanımlı bir veri öğesi için belirtir. Bu değer denetim tarafından geçirilen **lParam** liste kutusu veya birleşik giriş kutusu öğesi ekler iletinin parametresi.  
+ *ItemData*  
+ Uygulama tanımlı bir veri öğesi için belirtir. Bu değer denetim tarafından geçirilen *lParam* liste kutusu veya birleşik giriş kutusu öğesi ekler iletinin parametresi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Liste kutusu veya birleşik giriş kutusu veya liste kutusu veya birleşik giriş kutusu bozulduğunda bir öğe kaldırıldığında, Windows gönderir `WM_DELETEITEM` sahibine silinen her öğe için ileti. **LParam** iletinin parametresi bu yapısına yönelik işaretçinin içerir.  
+ Liste kutusu veya birleşik giriş kutusu veya liste kutusu veya birleşik giriş kutusu bozulduğunda bir öğe kaldırıldığında, Windows her silinmiş öğeyi sahibi WM_DELETEITEM ileti gönderir. *LParam* iletinin parametresi bu yapısına yönelik işaretçinin içerir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atldbcli.h  

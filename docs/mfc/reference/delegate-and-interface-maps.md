@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1e6f2e8cc501f9a466e4970d27a2e6ecd9174ca
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d817ec62734b3646c4df0977daa8161601e5c592
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372988"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122698"
 ---
 |||  
 |-|-|  
@@ -31,7 +31,7 @@ ms.locfileid: "33372988"
 |[END_DELEGATE_MAP](#end_delegate_map)|Bir temsilci harita sona erer.|
 |[END_INTERFACE_MAP](#end_interface_map)|Uygulama dosyasını arabirimi eşlemesinde sona erer. |
 |[EVENT_DELEGATE_ENTRY](#event_delegate_entry)|Bir giriş temsilci eşlemesinde oluşturur.|
-|[INTERFACE_PART](#interface_part)|Arasında kullanılan `BEGIN_INTERFACE_MAP` makrosu ve `END_INTERFACE_MAP` nesnenizin makrosu her arabirim için destekler.|
+|[INTERFACE_PART](#interface_part)|Begın_ınterface_map makrosu ve end_ınterface_map makrosu arasında nesnenizin destekleyecek her arabirim için kullanılır.|
 |[MAKE_DELEGATE](#make_delegate)|Bir olay işleyicisi için yönetilen bir denetimin ekler.|
 
 
@@ -43,7 +43,7 @@ Bir temsilci harita başlar.
 BEGIN_DELEGATE_MAP(  CLASS );  
 ```
 ### <a name="parameters"></a>Parametreler  
- `CLASS`  
+ *SINIFI*  
  Yönetilen denetim barındırılan sınıf.  
    
 ### <a name="remarks"></a>Açıklamalar  
@@ -63,14 +63,14 @@ Uygulama dosyasında kullanıldığında interfaced harita tanımını başlar.
 BEGIN_INTERFACE_MAP( theClass, baseClass )  
 ```
 ### <a name="parameters"></a>Parametreler  
- `theClass`  
+ *Sınıfın*  
  Arabirim eşlemesi tanımlanacak olduğu sınıfı  
   
- `baseClass`  
- Sınıfından `theClass` türetir.  
+ *baseClass*  
+ Sınıfından *sınıfın* türetir.  
    
 ### <a name="remarks"></a>Açıklamalar  
- Uygulanan her arabirim için var olan bir veya daha fazla `INTERFACE_PART` makrosu çağrılarını. Sınıfını kullanan her toplama için bir olduğundan **INTERFACE_AGGREGATE** makrosu çağırma.  
+ Uygulanan her arabirim için bir veya daha fazla ınterface_part makrosu çağrılarını yoktur. Sınıfını kullanan her toplama için bir INTERFACE_AGGREGATE makrosu çağırma yoktur.  
   
  Arabirim eşlemeleri hakkında daha fazla bilgi için bkz: [Teknik Not 38](../tn038-mfc-ole-iunknown-implementation.md).  
    
@@ -85,7 +85,7 @@ Geri arama yöntemleri komut kaynağı ile kaydeder.
 delegate void CommandHandler(  UINT^ cmdID  );  
 ```
 ### <a name="parameters"></a>Parametreler  
- `cmdID`  
+ *cmdID*  
  Komut kimliği.  
    
 ### <a name="remarks"></a>Açıklamalar  
@@ -109,10 +109,10 @@ Geri arama yöntemleri içeren bir kullanıcı arabirimi güncelleştirme komut 
 delegate void CommandUIHandler(  unsigned int cmdID, ICommandUI^ cmdUI);  
 ```
 ### <a name="parameters"></a>Parametreler  
- `cmdID`  
+ *cmdID*  
  Komut kimliği.  
   
- `cmdUI`  
+ *cmdUI*  
  Komut ileti kimliği.  
    
 ### <a name="remarks"></a>Açıklamalar  
@@ -173,20 +173,20 @@ Bir giriş temsilci eşlemesinde oluşturur.
 EVENT_DELEGATE_ENTRY(MEMBER, ARG0, ARG1);  
 ```
 ### <a name="parameters"></a>Parametreler  
- `MEMBER`  
+ *ÜYE*  
  Denetime ekli olay işleyicisi yöntemi.  
   
- `ARG0`  
- Yönetilen olay işleyicisi yönteminin ilk bağımsız değişkeni gibi **nesne ^**.  
+ *ARG0*  
+ Yönetilen olay işleyicisi yönteminin ilk bağımsız değişkeni gibi `Object^`.  
   
- `ARG1`  
- Yönetilen olay işleyicisi yönteminin ikinci bağımsız değişkeni gibi **EventArgs ^**.  
+ *ARG1*  
+ Yönetilen olay işleyicisi yönteminin ikinci bağımsız değişkeni gibi `EventArgs^`.  
    
 ### <a name="remarks"></a>Açıklamalar  
  Her giriş temsilci eşlemesindeki tarafından oluşturulan bir yönetilen olay işleyici temsilcisi karşılık gelen [MAKE_DELEGATE](#make_delegate).  
    
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde nasıl kullanılacağını gösterir `EVENT_DELEGATE_ENTRY` bir girdi için temsilci eşlemesi oluşturmak için `OnClick` olay işleyicisi; ayrıca aşağıdaki kod örneğinde bkz `MAKE_DELEGATE`. Daha fazla bilgi için bkz: [nasıl yapılır: Windows Forms olayları yerel C++ sınıflarından havuzu](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md).  
+ Aşağıdaki kod örneğinde EVENT_DELEGATE_ENTRY bir girdi için temsilci eşlemesi oluşturmak için nasıl kullanılacağını gösterir `OnClick` olay işleyicisi; ayrıca MAKE_DELEGATE kod örneğinde bakın. Daha fazla bilgi için bkz: [nasıl yapılır: Windows Forms olayları yerel C++ sınıflarından havuzu](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md).  
   
  ```cpp
 BEGIN_DELEGATE_MAP(CMyView)
@@ -205,22 +205,22 @@ END_DELEGATE_MAP()
  
 
 ##  <a name="interface_part"></a>INTERFACE_PART
-Arasında kullanılan `BEGIN_INTERFACE_MAP` makrosu ve `END_INTERFACE_MAP` nesnenizin makrosu her arabirim için destekler.  
+Begın_ınterface_map makrosu ve end_ınterface_map makrosu arasında nesnenizin destekleyecek her arabirim için kullanılır.  
    
 ### <a name="syntax"></a>Sözdizimi    
 ```
 INTERFACE_PART( theClass, iid, localClass)  
 ```
 ### <a name="parameters"></a>Parametreler  
- `theClass`  
+ *Sınıfın*  
  Arabirim eşlemesi içeren sınıfın adı.    
- `iid`  
+ *IID*  
  Katıştırılmış sınıfına eşlenecek IID.    
  *localClass*  
  Yerel sınıfın adı.  
    
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilen sınıf üyesi için bir IID eşlemenizi sağlar `theClass` ve *localClass*.  
+ Belirtilen sınıf üyesi için bir IID eşlemenizi sağlar *sınıfın* ve *localClass*.  
   
  Arabirim eşlemeleri hakkında daha fazla bilgi için bkz: [Teknik Not 38](../tn038-mfc-ole-iunknown-implementation.md).  
    
@@ -236,14 +236,14 @@ Bir olay işleyicisi için yönetilen bir denetimin ekler.
 MAKE_DELEGATE( DELEGATE,  MEMBER) ;  
 ```
 ### <a name="parameters"></a>Parametreler  
- `DELEGATE`  
+ *TEMSİLCİ*  
  Gibi yönetilen olay işleyicisinin türü temsilci [EventHandler](assetId:///T:System.EventHandler?qualifyHint=False&autoUpgrade=True).  
   
- `MEMBER`  
+ *ÜYE*  
  Denetime ekli olay işleyicisi yöntemi adı.  
    
 ### <a name="remarks"></a>Açıklamalar  
- Bu makrosu türü bir yönetilen olay işleyici temsilcisi oluşturur `DELEGATE` ve adının `MEMBER`. Yönetilen olay işleyici temsilcisi yönetilen olayları işlemek için yerel bir sınıf sağlar.  
+ Bu makrosu türü bir yönetilen olay işleyici temsilcisi oluşturur *TEMSİLCİ* ve adının *üye*. Yönetilen olay işleyici temsilcisi yönetilen olayları işlemek için yerel bir sınıf sağlar.  
    
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneğinde nasıl çağrılacağını gösterir `MAKE_DELEGATE` eklemek için bir `OnClick` bir MFC denetlemek için olay işleyicisini `MyControl`. Bir MFC uygulamasında bu makrosu nasıl çalıştığını daha geniş açıklaması için bkz [nasıl yapılır: Windows Forms olayları yerel C++ sınıflarından havuzu](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md).  

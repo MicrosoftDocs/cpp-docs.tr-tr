@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69630d00b09534d97d5e46a8400b73f0e9d85b24
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1d040f3cb4c9bf8e1f3afc0e8213cd4513fc8571
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375141"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37123376"
 ---
 # <a name="dhtml-editing-command-maps"></a>DHTML Düzenleme Komutu Eşlemeleri
 DHTML düzenleme komutlarda eşlemek için aşağıdaki makroları kullanılabilir [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-türetilmiş sınıfları. Kullanım örneği için bkz [HTMLEdit örnek](../../visual-cpp-samples.md).  
@@ -42,7 +42,7 @@ DECLARE_DHTMLEDITING_CMDMAP(className)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `className`  
+ *className*  
  Sınıfın adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -64,13 +64,13 @@ BEGIN_DHTMLEDITING_CMDMAP(className)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `className`  
+ *className*  
  DHTML düzenleme komutu eşleme içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı olarak öğesinden türetilen [CHtmlEditView](../../mfc/reference/chtmleditview-class.md) ve dahil [declare_dhtmledıtıng_cmdmap](#declare_dhtmlediting_cmdmap) makrosu sınıf tanımına içinde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  DHTML düzenleme komutu harita HTML düzenleme komutları için kullanıcı arabirimi komutları eşleştirmek için sınıfınıza ekleyin.  
   
- Yer `BEGIN_DHTMLEDITING_CMDMAP` sınıfının uygulaması (.cpp) dosyasındaki makro arkasından [dhtmledıtıng_cmd_entry](#dhtmlediting_cmd_entry) sınıftır eşlemek için komutları için makrolar (örneğin, **ıd_edıt_cut** için **IDM_CUT**). Kullanım [end_dhtmledıtıng_cmdmap](#end_dhtmlediting_cmdmap) makrosu olay eşlemesi sonunu işaretler.  
+ Begın_dhtmledıtıng_cmdmap makrosu arkasından sınıfının uygulaması (.cpp) dosyasına koyun [dhtmledıtıng_cmd_entry](#dhtmlediting_cmd_entry) makroları sınıftır (örneğin, IDM_CUT ıd_edıt_cut) eşlenecek komutları için. Kullanım [end_dhtmledıtıng_cmdmap](#end_dhtmlediting_cmdmap) makrosu olay eşlemesi sonunu işaretler.  
   
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxhtml.h  
@@ -99,11 +99,11 @@ DHTMLEDITING_CMD_ENTRY(cmdID,  dhtmlcmdID)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cmdID`  
- Komut Kimliği (gibi **ıd_edıt_copy**).  
+ *cmdID*  
+ Komut Kimliği (örneğin, ıd_edıt_copy).  
   
- `dhtmlcmdID`  
- Komutu hangi düzenleme HTML `cmdID` eşlemeleri (gibi **IDM_COPY**).  
+ *dhtmlcmdID*  
+ Komutu hangi düzenleme HTML *cmdID* (IDM_COPY gibi) eşleştirir.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [HTMLEdit örnek](../../visual-cpp-samples.md).  
@@ -119,13 +119,13 @@ DHTMLEDITING_CMD_ENTRY_FUNC(cmdID, dhtmlcmdID,  member_func_name)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cmdID`  
- Komut Kimliği (gibi **ıd_edıt_copy**).  
+ *cmdID*  
+ Komut Kimliği (örneğin, ıd_edıt_copy).  
   
- `dhtmlcmdID`  
- Komutu hangi düzenleme HTML `cmdID` eşlemeleri (gibi **IDM_COPY**).  
+ *dhtmlcmdID*  
+ Komutu hangi düzenleme HTML *cmdID* (IDM_COPY gibi) eşleştirir.  
   
- `member_func_name`  
+ *member_func_name*  
  Komut eşlenmiş ileti işleyicisi işlevin adı.  
   
 ### <a name="example"></a>Örnek  
@@ -142,14 +142,14 @@ DHTMLEDITING_CMD_ENTRY_TYPE(cmdID  ,   dhtmlcmdID  ,    elemType)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cmdID`  
- Komut Kimliği (gibi **ıd_edıt_copy**).  
+ *cmdID*  
+ Komut Kimliği (örneğin, ıd_edıt_copy).  
   
- `dhtmlcmdID`  
- Komutu hangi düzenleme HTML `cmdID` eşlemeleri (gibi **IDM_COPY**).  
+ *dhtmlcmdID*  
+ Komutu hangi düzenleme HTML *cmdID* (IDM_COPY gibi) eşleştirir.  
   
- `elemType`  
- Kullanıcı arabirimi öğesi türü; aşağıdakilerden birini **AFX_UI_ELEMTYPE_NORMAL**, **AFX_UI_ELEMTYPE_CHECKBOX**, veya **AFX_UI_ELEMTYPE_RADIO**.  
+ *elemType*  
+ Kullanıcı arabirimi öğesi türü; AFX_UI_ELEMTYPE_NORMAL, AFX_UI_ELEMTYPE_CHECKBOX veya AFX_UI_ELEMTYPE_RADIO biri.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [HTMLEdit örnek](../../visual-cpp-samples.md).  
@@ -165,17 +165,17 @@ DHTMLEDITING_CMD_ENTRY_FUNC_TYPE(cmdID, dhtmlcmdID, member_func_name,  elemType)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cmdID`  
- Komut Kimliği (gibi **ıd_edıt_copy**).  
+ *cmdID*  
+ Komut Kimliği (örneğin, ıd_edıt_copy).  
   
- `dhtmlcmdID`  
- Komutu hangi düzenleme HTML `cmdID` eşlemeleri (gibi **IDM_COPY**).  
+ *dhtmlcmdID*  
+ Komutu hangi düzenleme HTML *cmdID* (IDM_COPY gibi) eşleştirir.  
   
- `member_func_name`  
+ *member_func_name*  
  Komut eşlenmiş ileti işleyicisi işlevin adı.  
   
- `elemType`  
- Kullanıcı arabirimi öğesi türü; aşağıdakilerden birini **AFX_UI_ELEMTYPE_NORMAL**, **AFX_UI_ELEMTYPE_CHECKBOX**, veya **AFX_UI_ELEMTYPE_RADIO**.  
+ *elemType*  
+ Kullanıcı arabirimi öğesi türü; AFX_UI_ELEMTYPE_NORMAL, AFX_UI_ELEMTYPE_CHECKBOX veya AFX_UI_ELEMTYPE_RADIO biri.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [HTMLEdit örnek](../../visual-cpp-samples.md).  

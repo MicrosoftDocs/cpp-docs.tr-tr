@@ -17,24 +17,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 450021fd1ea05831f44dd5af7a9f1e39a9d6fc5f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7ffe43c33e4b371f6d5dcf5dc7da327b11328af7
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371790"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121385"
 ---
 # <a name="details-of-atl-support-added-by-the-atl-wizard"></a>ATL Sihirbazı Tarafından Eklenen ATL Desteğinin Ayrıntıları
 Olduğunda, [varolan bir MFC yürütülebilir veya DLL ATL desteği ekleme](../../mfc/reference/adding-atl-support-to-your-mfc-project.md), Visual C++ varolan MFC projesine aşağıdaki değişiklikleri yapar (Bu örnekte, proje adlı `MFCEXE`):  
   
 -   İki yeni dosyalar (.idl dosya ve sunucuyu kaydetmek için kullanılan bir .rgs dosyası) eklenir.  
   
--   Ana uygulama başlığı ve uygulama dosyaları (Mfcexe.h ve Mfcexe.cpp), yeni bir sınıf (türetilmiş **CAtlMFCModule**) eklenir. Yeni sınıf yanı sıra kodu eklenen `InitInstance` kaydı için. Kodu da eklenir `ExitInstance` sınıf nesnesi iptal etmek için işlev. Üstbilgi dosyasında dosyasında bildirme ve yeni GUID'lerini başlatma uygulaması, son olarak, iki yeni üstbilgi dosyaları (Initguid.h ve Mfcexe_i.c) içerdiği **CAtlMFCModule**-türetilmiş sınıf.  
+-   Ana uygulama başlığı ve uygulama dosyaları (Mfcexe.h ve Mfcexe.cpp), yeni bir sınıf (türetilmiş `CAtlMFCModule`) eklenir. Yeni sınıf yanı sıra kodu eklenen `InitInstance` kaydı için. Kodu da eklenir `ExitInstance` sınıf nesnesi iptal etmek için işlev. Üstbilgi dosyasında dosyasında bildirme ve yeni GUID'lerini başlatma uygulaması, son olarak, iki yeni üstbilgi dosyaları (Initguid.h ve Mfcexe_i.c) içerdiği `CAtlMFCModule`-türetilmiş sınıf.  
   
 -   Sunucuyu düzgün kaydetmek için yeni .rgs dosyası için bir giriş projenin kaynak dosyasına eklenir.  
   
 ## <a name="notes-for-dll-projects"></a>DLL projeleri için Notlar  
- MFC DLL projesinde ATL desteği eklediğinizde, bazı farklar görürsünüz. Kod eklenir **DLLRegisterServer** ve **DLLUnregisterServer** kaydetme ve kaydını DLL işlevleri. Kodu da eklenir [DllCanUnloadNow](../../atl/reference/catldllmodulet-class.md#dllcanunloadnow) ve [DllGetClassObject](../../atl/reference/catldllmodulet-class.md#dllgetclassobject).  
+ MFC DLL projesinde ATL desteği eklediğinizde, bazı farklar görürsünüz. Kod eklenir `DLLRegisterServer` ve `DLLUnregisterServer` kaydetme ve kaydını DLL işlevleri. Kodu da eklenir [DllCanUnloadNow](../../atl/reference/catldllmodulet-class.md#dllcanunloadnow) ve [DllGetClassObject](../../atl/reference/catldllmodulet-class.md#dllgetclassobject).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC projesinde ATL desteği](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)   

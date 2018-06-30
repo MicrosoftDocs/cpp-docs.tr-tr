@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59f5ab622d6124e830028ea61a0c77583f76d015
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 925e93afae4682497263eb96832aa466c6034231
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374759"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121322"
 ---
 # <a name="cusertool-class"></a>CUserTool sınıfı
 Bir dış uygulama çalıştıran bir menü öğesi bir kullanıcı aracıdır. **Araçları** sekmesinde **Özelleştir** iletişim kutusu ( [CMFCToolBarsCustomizeDialog sınıfı](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)) kullanıcının kullanıcı araçları ekleme ve adı, komutu, bağımsız değişken belirtmenizi sağlar ve Her kullanıcı aracı için başlangıç dizini.  
@@ -122,10 +122,10 @@ void DrawToolIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
+ [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Simge görüntülemek için alanının koordinatları belirtir.  
   
 ##  <a name="getcommand"></a>  CUserTool::GetCommand  
@@ -169,7 +169,7 @@ virtual HICON LoadDefaultIcon();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yüklü simgesi için bir tanıtıcı ( `HICON`), veya `NULL` varsayılan simgesini yüklerse.  
+ Yüklü simgesi (HICON) ya da varsayılan simgesini yüklerse NULL işleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı tanımlı bir aracı için bir simge aracı yürütülebilir dosyasından yükleyemedi olduğunda framework bu yöntemi çağırır.  
@@ -211,7 +211,7 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `ar`  
+ [in] *ar*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -223,7 +223,7 @@ void SetCommand(LPCTSTR lpszCmd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `lpszCmd`  
+ [in] *lpszCmd*  
  Yeni uygulama kullanıcı aracı ile ilişkili olduğu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

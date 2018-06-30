@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2332090032a93152b6c841336538bf9d45984300
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 00aece4445f87ab13b0f3250e6e0b1a337d75633
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377327"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122999"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 Microsoft Foundation Class Kitaplığı programlarınızı daha kolay hata ayıklama birçok tanılama hizmetler sağlar. Bu tanılama hizmetler makrolar ve ayırma, çalışma zamanı sırasında nesnelerin içeriğini dökümü ve çalışma zamanında hata ayıklama iletilerini yazdırma programınızın bellek izlemenize olanak sağlayan genel işlevler içerir. Makrolar ve genel işlevler tanı Hizmetleri için aşağıdaki kategorilerde gruplanır:  
@@ -46,7 +46,7 @@ Microsoft Foundation Class Kitaplığı programlarınızı daha kolay hata ayık
   
 -   Nesne Tanılama işlevleri  
   
- Bu makrolar ve İşlevler türetilmiş tüm sınıflar için kullanılabilir, `CObject` MFC hata ayıklama ve yayın sürümlerinde. Ancak, tüm dışındaki `DEBUG_NEW` ve **doğrula** yayın sürümü, hiçbir şey yapma.  
+ Bu makrolar ve İşlevler türetilmiş tüm sınıflar için kullanılabilir, `CObject` MFC hata ayıklama ve yayın sürümlerinde. Ancak, DEBUG_NEW ve Doğrula dışında tüm yayın sürümünde yapmıyor.  
   
  Hata ayıklama Kitaplığı'nda tüm ayrılmış bellek blokları "koruyucusu bayt sayısı." bir dizi köşeli parantez içindeki Bu bayt yalıtılarak bellek yazma tarafından etkilenir, tanılama yordamları bir sorun bildirebilirsiniz. Satır içeriyorsa:  
   
@@ -60,15 +60,15 @@ Microsoft Foundation Class Kitaplığı programlarınızı daha kolay hata ayık
   
 |||  
 |-|-|  
-|[ASSERT](#assert)|Bir ileti yazdırır ve için belirtilen ifadeyi hesaplar, programı durdurur **FALSE** kitaplığı hata ayıklama sürümünde.|  
+|[ASSERT](#assert)|Bir ileti yazdırır ve belirtilen ifade kitaplığının hata ayıklama sürümü, false hesaplanırsa programı durdurur.|  
 |[ASSERT_KINDOF](#assert_kindof)|Bir nesneyi belirtilen sınıf veya belirtilen sınıfından türetilmiş bir sınıf bir nesnedir testleri.|  
 |[ASSERT_VALID](#assert_valid)|Çağırarak bir nesnenin iç geçerlilik testleri kendi `AssertValid` üye işlev; öğesinden tipik olarak geçersiz kılınan `CObject`.|
 |[DEBUG_NEW](#debug_new)|Bellek sızıntıları bulmak için bir dosya adı ve satır numarası için hata ayıklama modunda tüm nesne ayırmaları sağlar.|  
-|[DEBUG_ONLY](#debug_only)|Benzer şekilde **ASSERT** ; ifadesinin değerini test değil ancak yalnızca hata ayıklama modunda yürütülecek kod için kullanışlıdır.|  
+|[DEBUG_ONLY](#debug_only)|ASSERT benzer; ifadesinin değerini test değil ancak yalnızca hata ayıklama modunda yürütülecek kod için kullanışlıdır.|  
 |[Emin olun ve ENSURE_VALID](#ensure)|Veri doğruluk doğrulamak için kullanın.|
 |[THIS_FILE](#this_file)|Derleniyor dosya adı için genişletir.|
 |[İZLEME](#trace)|Sağlar `printf`-yeteneği kitaplığının hata ayıklama sürümü, ister.|  
-|[DOĞRULAYIN](#verify)|Benzer şekilde **ASSERT** ancak kitaplığı de hata ayıklama sürümü olduğu gibi sürümünü ifadeyi değerlendirir.|  
+|[DOĞRULAYIN](#verify)|ASSERT benzer ancak kitaplığı de hata ayıklama sürümü olduğu gibi sürümünü ifadeyi değerlendirir.|  
   
 ### <a name="mfc-general-diagnostic-variables-and-functions"></a>MFC genel tanılama değişkenleri ve işlevleri  
   
@@ -76,7 +76,7 @@ Microsoft Foundation Class Kitaplığı programlarınızı daha kolay hata ayık
 |-|-|  
 |[afxDump](#afxdump)|Gönderir genel değişkeni [CDumpContext](../../mfc/reference/cdumpcontext-class.md) hata ayıklayıcı çıktı penceresi veya hata ayıklama terminal bilgi.|  
 |[afxMemDF](#afxmemdf)|Hata ayıklama bellek ayırıcısı davranışını denetleyen genel değişkeni.|  
-|[AfxCheckError](#afxcheckerror)|Geçirilen test etmek için kullanılan genel değişkeni **SCODE** bunu bir hatadır ve Öyleyse, uygun hata oluşturur, görmek için.|  
+|[AfxCheckError](#afxcheckerror)|Bir hata olup olmadığını ve gerekiyorsa, geçirilen SCODE test etmek için kullanılan genel değişkeni ilgili hata oluşturur.|  
 |[AfxCheckMemory](#afxcheckmemory)|Tüm bütünlüğünü bellek ayrılmış denetler.|  
 |[AfxDebugBreak](#afxdebugbreak)|Bir sonu yürütülmesine neden olur.|
 |[AfxDump](#cdumpcontext_in_mfc)|Hata ayıklayıcısında sırada çağırdıysanız, hata ayıklama sırasında bir nesnenin durumu dökümünü yapar.|  
@@ -133,7 +133,7 @@ void AfxDebugBreak( );
 ```  
    
 ### <a name="remarks"></a>Açıklamalar  
- `AfxDebugBreak` MFC uygulaması sürüm sürümlerinde hiçbir etkisi olmaz ve kaldırılması gerekiyor. Bu işlev yalnızca MFC uygulamalarında kullanılmalıdır. Win32 API sürümü kullanmak **DebugBreak**, bir kesme MFC dışı uygulamalarda neden olacak.  
+ `AfxDebugBreak` MFC uygulaması sürüm sürümlerinde hiçbir etkisi olmaz ve kaldırılması gerekiyor. Bu işlev yalnızca MFC uygulamalarında kullanılmalıdır. Win32 API sürümü kullanmak `DebugBreak`, bir kesme MFC dışı uygulamalarda neden olacak.  
    
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxver_.h   
@@ -146,7 +146,7 @@ ASSERT(booleanExpression)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `booleanExpression`  
+ *booleanDeyimi*  
  Sıfır olmayan bir değer veya 0 (kayan nokta değerlerini dahil) bir ifade belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -158,7 +158,7 @@ ASSERT(booleanExpression)
   
  Burada *adı* kaynak dosyasının adıdır ve *num* kaynak dosyasına başarısız onaylama satır sayısı.  
   
- MFC, yayın sürümünde **ASSERT** ifade değerlendirmez ve böylece programın durdurmaz. İfade ortam bağımsız olarak değerlendirilmesi gereken kullanırsanız **doğrula** makrosu yerine **ASSERT**.  
+ MFC yayın sürümünde ASSERT ifade değerlendirmez ve böylece programın durdurmaz. İfade ortam bağımsız olarak değerlendirilmesi gereken ASSERT yerine VERIFY makrosu kullanın.  
   
 > [!NOTE]
 >  Bu işlev yalnızca MFC hata ayıklama sürümü kullanılabilir.  
@@ -208,13 +208,13 @@ ASSERT_VALID(pObject)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pObject`  
+ *pObject*  
  Türetilen bir sınıftan bir nesneyi belirtir `CObject` geçersiz kılan bir sürümünün yüklü `AssertValid` üye işlevi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `ASSERT_VALID` çağrıları `AssertValid` nesnenin üye işlevi bağımsız değişken olarak geçirilen.  
+ Assert_valıd çağrıları `AssertValid` nesnenin üye işlevi bağımsız değişken olarak geçirilen.  
   
- MFC, yayın sürümünde `ASSERT_VALID` hiçbir şey yapmaz. Hata ayıklama sürümünde bu işaretçinin doğrular, karşı denetler **NULL**ve kendi çağıran `AssertValid` üye işlevleri. Bunlardan birine sınar, başarısız bir uyarı iletisi ile aynı şekilde görüntülenir [ASSERT](#assert).  
+ MFC yayın sürümüne assert_valıd hiçbir şey yapmaz. Hata ayıklama sürümü, işaretçi doğrular, NULL karşı denetler ve kendi çağıran `AssertValid` üye işlevleri. Bunlardan birine sınar, başarısız bir uyarı iletisi ile aynı şekilde görüntülenir [ASSERT](#assert).  
   
 > [!NOTE]
 >  Bu işlev yalnızca MFC hata ayıklama sürümü kullanılabilir.  
@@ -235,33 +235,33 @@ ASSERT_VALID(pObject)
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanabileceğiniz `DEBUG_NEW` her yerde normalde kullanacağı programınızın **yeni** yığın depolama alanı ayırmak için işleci.  
+ DEBUG_NEW normalde kullanacağı programınıza her yerde kullanabilirsiniz **yeni** yığın depolama alanı ayırmak için işleci.  
   
- Hata ayıklama modunda (zaman **_DEBUG** simgesiyle tanımlanır), `DEBUG_NEW` ayırdığı her nesne için dosya adı ve satır numarası izler. Ardından, kullandığınızda, [CMemoryState::DumpAllObjectsSince](cmemorystate-structure.md#dumpallobjectssince) üye işlevi, her bir nesne ile ayrılmış `DEBUG_NEW` burada ayrıldı filename ve satır numarası ile gösterilir.  
+ Hata ayıklama modunda (zaman **_DEBUG** simgesiyle tanımlanır), DEBUG_NEW ayırdığı her nesne için dosya adı ve satır numarası izler. Ardından, kullandığınızda [CMemoryState::DumpAllObjectsSince](cmemorystate-structure.md#dumpallobjectssince) üye işlevi DEBUG_NEW ile ayrılan her nesne gösterilir filename ve satır numarası ile burada ayrıldı.  
   
- Kullanılacak `DEBUG_NEW`, aşağıdaki yönergesi Kaynak dosyalarınız ekleyin:  
+ DEBUG_NEW kullanmak için kaynak dosyalarıyla aşağıdaki yönergesi ekleyin:  
   
  [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/diagnostic-services_1.cpp)]  
   
- Bu yönerge ekledikten sonra önişlemci ekleyecektir `DEBUG_NEW` yerde kullandığınız **yeni**, ve MFC rest yapar. Program sürümünü derlediğinizde `DEBUG_NEW` basit bir çözümler **yeni** işlem ve dosya adı ve satır numarası bilgilerini oluşturulmaz.  
+ Bu yönerge ekledikten sonra kullandığınız her yerde önişlemci DEBUG_NEW ekleyecek **yeni**, ve MFC rest yapar. Programınızı sürümü derlediğinizde, basit bir DEBUG_NEW çözümler **yeni** işlem ve dosya adı ve satır numarası bilgilerini oluşturulmaz.  
   
 > [!NOTE]
->  MFC (4.1 ve önceki) önceki sürümlerinde yerleştirmek için gereken `#define` adlı tüm deyimleri sonra deyimi `IMPLEMENT_DYNCREATE` veya `IMPLEMENT_SERIAL` makroları. Bu artık gerekli değildir.  
+>  MFC (4.1 ve önceki) önceki sürümlerinde yerleştirmek için gereken `#define` IMPLEMENT_DYNCREATE veya ımplement_serıal makroları adlı tüm deyimleri sonra deyimi. Bu artık gerekli değildir.  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afx.h
 
 ##  <a name="debug_only"></a>  DEBUG_ONLY  
- Hata ayıklama modunda (zaman **_DEBUG** simgesiyle tanımlanır), `DEBUG_ONLY` bağımsız değişkeni olarak değerlendirilir.  
+ Hata ayıklama modunda (zaman **_DEBUG** simgesiyle tanımlanır), DEBUG_ONLY bağımsız değişkeni olarak değerlendirilir.  
   
 ```   
 DEBUG_ONLY(expression)   
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yayın derlemesi içinde **DEBUG_ONLY** bağımsız değişkeni değerlendirmez. Yalnızca hata ayıklama derlemelerinde yürütülmesi gereken kodu varsa, bu yararlıdır.  
+ Bir yayın derleme DEBUG_ONLY bağımsız değişkeni değerlendirmez. Yalnızca hata ayıklama derlemelerinde yürütülmesi gereken kodu varsa, bu yararlıdır.  
   
- `DEBUG_ONLY` Makrosu çevredeki eşdeğerdir *ifade* ile **#ifdef _DEBUG** ve `#endif`.  
+ DEBUG_ONLY makrosu çevredeki eşdeğerdir *ifade* ile `#ifdef _DEBUG` ve `#endif`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#32](../../mfc/codesnippet/cpp/diagnostic-services_6.cpp)]  
@@ -278,19 +278,19 @@ ENSURE(  booleanExpression )
 ENSURE_VALID( booleanExpression  )  
 ```
 ### <a name="parameters"></a>Parametreler  
- `booleanExpression`  
+ *booleanDeyimi*  
  Sınanacak bir Boole ifadesini belirtir.  
    
 ### <a name="remarks"></a>Açıklamalar  
- Doğrulama parametrelerinin artırmak için bu makroları amacı budur. Makrolar, kodunuzda yanlış parametrelerinin daha fazla işleme engeller. Farklı **ASSERT** makroları **emin olun** makroları onayı ifade oluşturma yanı sıra bir özel durum atar.  
+ Doğrulama parametrelerinin artırmak için bu makroları amacı budur. Makrolar, kodunuzda yanlış parametrelerinin daha fazla işleme engeller. ASSERT makroları olun makroları onayı ifade oluşturma yanı sıra bir özel durum.  
   
- Makrolar proje yapılandırmasına göre iki şekilde davranır. Makrolar çağrısı **ASSERT** ve onaylama başarısız olursa bir özel durum. Hata ayıklama yapılandırmaları, bu nedenle, (burada, diğer bir deyişle, **_DEBUG** tanımlanır) bir onaylama ve dağıtım yapılandırmalarını sırasında özel durum makroları oluşturmak, yalnızca özel durum makroları üretmek (**ASSERT** yok Yayın yapılandırmaları ifade değerlendirme).  
+ Makrolar proje yapılandırmasına göre iki şekilde davranır. Makrolar ASSERT çağırın ve onaylama başarısız olursa bir özel durum. (Diğer bir deyişle, _DEBUG tanımlı olduğu yerlerde) bu nedenle, hata ayıklama yapılandırmaları makrolar bir onaylama ve özel durum oluştu yayın yapılandırmaları, makroları üretmek yalnızca (ASSERT yayın yapılandırmaları ifadesinde değerlendirmez) özel durum oluşturur.  
   
- Makro **ENSURE_ARG** gibi davranır **olun** makrosu.  
+ Makro ENSURE_ARG olun makrosu gibi davranır.  
   
- **ENSURE_VALID** çağrıları `ASSERT_VALID` makrosu (hangi yalnızca hata ayıklama derlemelerinde bir etkisi yoktur). Ayrıca, **ENSURE_VALID** işaretçi NULL ise bir özel durum oluşturur. NULL test hata ayıklama ve yayın yapılandırmalarını gerçekleştirilir.  
+ ENSURE_VALID (hangi yalnızca hata ayıklama derlemelerinde etkisi) assert_valıd makrosu çağırır. Ayrıca, işaretçi NULL ise ENSURE_VALID bir özel durum oluşturur. NULL test hata ayıklama ve yayın yapılandırmalarını gerçekleştirilir.  
   
- Bunlardan birine sınar, başarısız bir uyarı iletisi ile aynı şekilde görüntülenir **ASSERT**. Makro gerekirse geçersiz bağımsız değişken özel durum oluşturur.  
+ Tüm bu testler başarısız olursa bir uyarı iletisi ASSERT aynı şekilde görüntülenir. Makro gerekirse geçersiz bağımsız değişken özel durum oluşturur.  
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afx.h  
    
@@ -308,7 +308,7 @@ THIS_FILE
 ```  
    
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından kullanılan bilgileri **ASSERT** ve **doğrula** makroları. Uygulama Sihirbazı'nı ve kod sihirbazları makrosu kaynak kodu dosyaları oluşturdukları yerleştirin.  
+ Bilgiler ASSERT ve Doğrula makroları tarafından kullanılır. Uygulama Sihirbazı'nı ve kod sihirbazları makrosu kaynak kodu dosyaları oluşturdukları yerleştirin.  
    
 ### <a name="example"></a>Örnek  
 ```cpp
@@ -339,7 +339,7 @@ TRACE(DWORD  category,  UINT  level, LPCSTR lpszFormat, ...)
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [ATLTRACE2](../../atl/reference/debugging-and-error-reporting-macros.md#atltrace2) bir açıklaması için **izleme**. **İzleme** ve `ATLTRACE2` aynı davranışı sahiptir.  
+ Bkz: [ATLTRACE2](../../atl/reference/debugging-and-error-reporting-macros.md#atltrace2) izleme açıklaması. İzleme ve ATLTRACE2 aynı davranışı sahiptir.  
   
  MFC hata ayıklama sürümü, bu makrosu geçerli uygulama hata ayıklayıcı için belirtilen dize gönderir. Bir yayın derleme bu makrosu (kod hiç oluşturulur) bir şey derler.  
   
@@ -356,7 +356,7 @@ VERIFY(booleanExpression)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `booleanExpression`  
+ *booleanDeyimi*  
  Sıfır olmayan bir değer veya 0 (kayan nokta değerlerini dahil) bir ifade belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -368,7 +368,7 @@ VERIFY(booleanExpression)
   
  Burada *adı* kaynak dosyasının adıdır ve *num* kaynak dosyasına başarısız onaylama satır sayısı.  
   
- MFC, yayın sürümünde **doğrula** ifadeyi hesaplar ancak yazdırma veya bir programı kesmez. İfade bir işlev çağrısı ise, örneğin, çağrı yapılır.  
+ MFC yayın sürümüne doğrula ifadeyi hesaplar ancak yazdırma veya bir programı kesmez. İfade bir işlev çağrısı ise, örneğin, çağrı yapılır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#198](../../mfc/codesnippet/cpp/diagnostic-services_7.cpp)]  
@@ -405,13 +405,13 @@ MFC hata ayıklama sırasında bir nesnenin durumu dökümü kullanan bir iç i�
 void AfxDump(const CObject* pOb);   
 ```
 ### <a name="parameters"></a>Parametreler  
- `pOb`  
+ *posta kutusu*  
  Bir sınıfın bir nesnesi için bir işaretçi türetilmiş `CObject`.  
    
 ### <a name="remarks"></a>Açıklamalar  
- **AfxDump** nesnenin çağırır `Dump` üye fonksiyonu ve tarafından belirtilen konuma bilgi gönderir `afxDump` değişkeni. **AfxDump** yalnızca MFC hata ayıklama sürümü kullanılabilir.  
+ `AfxDump` bir nesnenin çağırır `Dump` üye fonksiyonu ve tarafından belirtilen konuma bilgi gönderir `afxDump` değişkeni. `AfxDump` yalnızca MFC hata ayıklama sürümü kullanılabilir.  
   
- Program kodunuzu değil çağırmalıdır **AfxDump**, ancak bunun yerine çağırmalıdır `Dump` uygun nesnesinin üye işlevi.  
+ Program kodunuzu değil çağırmalıdır `AfxDump`, ancak bunun yerine çağırmalıdır `Dump` uygun nesnesinin üye işlevi.  
    
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afx.h  
@@ -431,11 +431,11 @@ int  afxMemDF;
 ### <a name="remarks"></a>Açıklamalar  
  `afxMemDF` Numaralandırma belirtildiği gibi aşağıdaki değerlere sahip olabilir `afxMemDF`:  
   
-- **allocMemDF** hata ayıklama ayırıcısı (hata ayıklama Kitaplığı'nda varsayılan ayar) açar.  
+- `allocMemDF` Hata ayıklama ayırıcısı (hata ayıklama Kitaplığı'nda varsayılan ayar) açar.  
   
-- **delayFreeMemDF** gecikmeler bellek boşaltma. Bir bellek bloğu programınızı boşaltır olsa da, ayırıcı temel işletim sistemi, bellek döndürmez. Bu en fazla bellek stres programınızın yerleştirin.  
+- `delayFreeMemDF` Bellek boşaltma gecikmesine neden olur. Bir bellek bloğu programınızı boşaltır olsa da, ayırıcı temel işletim sistemi, bellek döndürmez. Bu en fazla bellek stres programınızın yerleştirin.  
   
-- **checkAlwaysMemDF** çağrıları `AfxCheckMemory` bellek tahsis veya serbest her zaman. Bu önemli ölçüde bellek ayırma ve ayırma kaldırma işlemleri yavaşlatır.  
+- `checkAlwaysMemDF` Çağrıları `AfxCheckMemory` bellek tahsis veya serbest her zaman. Bu önemli ölçüde bellek ayırma ve ayırma kaldırma işlemleri yavaşlatır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#30](../../mfc/codesnippet/cpp/diagnostic-services_9.cpp)]  
@@ -444,7 +444,7 @@ int  afxMemDF;
  **Başlık:** afx.h
 
 ##  <a name="afxcheckerror"></a>  AfxCheckError  
- Bu işlev geçirilen testleri **SCODE** bir hata olup olmadığını görmek için.  
+ Bu işlev bir hata olup olmadığını görmek için geçirilen SCODE sınar.  
   
 ```   
 void AFXAPI AfxCheckError(SCODE sc);
@@ -453,7 +453,7 @@ throw COleException*
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir hata varsa, işlev özel durum oluşturur. Varsa geçirilen `SCODE` olan **E_OUTOFMEMORY**, işlev oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) çağırarak [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception). Aksi takdirde, işlev oluşturur bir [COleException](../../mfc/reference/coleexception-class.md) çağırarak [AfxThrowOleException](exception-processing.md#afxthrowoleexception).  
+ Bir hata varsa, işlev özel durum oluşturur. Geçirilen SCODE E_OUTOFMEMORY ise, işlev oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) çağırarak [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception). Aksi takdirde, işlev oluşturur bir [COleException](../../mfc/reference/coleexception-class.md) çağırarak [AfxThrowOleException](exception-processing.md#afxthrowoleexception).  
   
  Bu işlevi dönüş değerleri, uygulamanızda OLE işlevlerini yapılan çağrıların denetlemek için kullanılabilir. Dönüş değeri bu işlev ile uygulamanızı test ederek, düzgün şekilde kodu en az miktarda içeren hata koşulları tepki.  
   
@@ -479,7 +479,7 @@ BOOL  AfxCheckMemory();
 ### <a name="remarks"></a>Açıklamalar  
  İşlev bellek bozulma algılarsa, hiçbir şey yazdırır.  
   
- Tarafından ayrılan dahil olmak üzere tüm bellek blokları yığında ayrılmış denetlenir **yeni** ancak değil olanlar gibi temel alınan bellek allocators yapılan doğrudan çağrılar tarafından ayrılan `malloc` işlevi veya  **GlobalAlloc** Windows işlevi. Herhangi bir bloğuna bozuk olduğu bulunursa, bir ileti hata ayıklayıcı çıkış yazdırılır.  
+ Tarafından ayrılan dahil olmak üzere tüm bellek blokları yığında ayrılmış denetlenir **yeni** ancak değil olanlar gibi temel alınan bellek allocators yapılan doğrudan çağrılar tarafından ayrılan **malloc** işlevi veya `GlobalAlloc` Windows işlevi. Herhangi bir bloğuna bozuk olduğu bulunursa, bir ileti hata ayıklayıcı çıkış yazdırılır.  
   
  Satır eklerseniz  
   
@@ -488,7 +488,7 @@ BOOL  AfxCheckMemory();
  bir program modülünde sonra yapılan sonraki çağrılar `AfxCheckMemory` burada belleği ayrıldı filename ve satır numarası göster.  
   
 > [!NOTE]
->  Serileştirilebilir sınıflar, bir veya daha fazla uygulamalarını modülünüzün içeren sonra konulmalıdır `#define` son satırdan `IMPLEMENT_SERIAL` makrosu çağrısı.  
+>  Serileştirilebilir sınıflar, bir veya daha fazla uygulamalarını modülünüzün içeren sonra konulmalıdır `#define` son ımplement_serıal makrosu çağrısından sonra satır.  
   
  Bu işlev yalnızca MFC hata ayıklama sürümü çalışır.  
   
@@ -506,13 +506,13 @@ void AfxDump(const CObject* pOb);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pOb`  
+ *posta kutusu*  
  Bir sınıfın bir nesnesi için bir işaretçi türetilmiş `CObject`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **AfxDump** nesnenin çağırır `Dump` üye fonksiyonu ve tarafından belirtilen konuma bilgi gönderir `afxDump` değişkeni. **AfxDump** yalnızca MFC hata ayıklama sürümü kullanılabilir.  
+ `AfxDump` bir nesnenin çağırır `Dump` üye fonksiyonu ve tarafından belirtilen konuma bilgi gönderir `afxDump` değişkeni. `AfxDump` yalnızca MFC hata ayıklama sürümü kullanılabilir.  
   
- Program kodunuzu değil çağırmalıdır **AfxDump**, ancak bunun yerine çağırmalıdır `Dump` uygun nesnesinin üye işlevi.  
+ Program kodunuzu değil çağırmalıdır `AfxDump`, ancak bunun yerine çağırmalıdır `Dump` uygun nesnesinin üye işlevi.  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afx.h  
@@ -533,15 +533,15 @@ void AFXAPI AfxDumpStack(DWORD dwTarget = AFX_STACK_DUMP_TARGET_DEFAULT);
  *dwTarget*  
  Döküm çıktı hedefinin gösterir. Bit düzeyinde-OR kullanılarak birleştirilebilir olası değerler ( **&#124;**) işleci, aşağıdaki gibidir:  
   
-- **AFX_STACK_DUMP_TARGET_TRACE** yoluyla çıkış gönderir [izleme](#trace) makrosu. **İzleme** makrosu yalnızca hata ayıklama derlemelerinde çıktı oluşturur; sürüm derlemelerde herhangi bir çıktı üretir. Ayrıca, **izleme** hata ayıklayıcı yanı sıra diğer hedefler yönlendirilebilir.  
+- AFX_STACK_DUMP_TARGET_TRACE gönderir çıkış yoluyla [izleme](#trace) makrosu. TRACE makrosu çıktı yalnızca hata ayıklama derlemelerinde oluşturur; Bu sürüm derlemelerde hiçbir çıktı oluşturur. Ayrıca, izleme, hata ayıklayıcı yanı sıra diğer hedefler için yönlendirilebilir.  
   
-- **AFX_STACK_DUMP_TARGET_DEFAULT** varsayılan hedefe çıkış gönderir dökümü. Hata ayıklama derlemesi için çıktı gider **izleme** makrosu. Bir yayın derleme çıktı panoya gider.  
+- AFX_STACK_DUMP_TARGET_DEFAULT gönderir dump çıktısı varsayılan hedef. Hata ayıklama derlemesi için çıktı izleme makrosuna gider. Bir yayın derleme çıktı panoya gider.  
   
-- **AFX_STACK_DUMP_TARGET_CLIPBOARD** yalnızca panoya çıkış gönderir. Düz metin olarak Pano verileri yerleştirildiği **CF_TEXT** Pano biçimi.  
+- AFX_STACK_DUMP_TARGET_CLIPBOARD yalnızca panoya çıkış gönderir. Veriler Pano'ya CF_TEXT Pano biçimi kullanarak düz metin olarak yerleştirilir.  
   
-- **AFX_STACK_DUMP_TARGET_BOTH** gönderir çıkış Pano ve çok **izleme** makrosu, aynı anda.  
+- AFX_STACK_DUMP_TARGET_BOTH Pano ve izleme makrosu aynı anda çıkış gönderir.  
   
-- **AFX_STACK_DUMP_TARGET_ODS** gönderir çıkış doğrudan hata ayıklayıcı Win32 işlevi yoluyla **OutputDebugString()**. Bu seçenek, hata ayıklayıcı çıkış hem hata ayıklama modunda oluşturmak ve yayın derlemeleri işleme bir hata ayıklayıcısı ekli. **AFX_STACK_DUMP_TARGET_ODS** (bağlıysa) her zaman hata ayıklayıcı ulaşana ve yönlendirilemez.  
+- AFX_STACK_DUMP_TARGET_ODS gönderir çıkışı doğrudan hata ayıklayıcı Win32 işlevi yoluyla `OutputDebugString()`. Bu seçenek, hata ayıklayıcı çıkış hem hata ayıklama modunda oluşturmak ve yayın derlemeleri işleme bir hata ayıklayıcısı ekli. AFX_STACK_DUMP_TARGET_ODS (bağlıysa) hata ayıklayıcı her zaman ulaşana ve yönlendirilemez.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Aşağıdaki örnek tek satırlık bir arama gelen oluşturulan çıktı yansıtır `AfxDumpStack` düğmesi işleyicisinden bir MFC iletişim uygulamasında:  
@@ -612,15 +612,15 @@ void AFXAPI AfxDumpStack(DWORD dwTarget = AFX_STACK_DUMP_TARGET_DEFAULT);
  **Başlık:** afx.h 
 
 ##  <a name="afxenablememoryleakdump"></a>  AfxEnableMemoryLeakDump  
- Sağlar ve bellek sızıntısı dökümü devre dışı bırakır `AFX_DEBUG_STATE` yıkıcı.  
+ Etkinleştirir ve AFX_DEBUG_STATE yıkıcı içinde bellek sızıntısı dökümü devre dışı bırakır.  
   
 ```  
 BOOL AFXAPI AfxEnableMemoryLeakDump(BOOL bDump);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `bDump`  
- `TRUE` bellek sızıntısı dökümü etkinleştirildiğini gösterir; `FALSE` bellek sızıntısı dökümü devre dışıysa gösterir.  
+ [in] *bDump*  
+ TRUE bellek sızıntısı dökümü etkinleştirildiğini gösterir; FALSE bellek sızıntısı dökümü devre dışı gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu bayrak önceki değeri.  
@@ -645,7 +645,7 @@ BOOL AfxEnableMemoryTracking(BOOL bTrack);
   
 ### <a name="parameters"></a>Parametreler  
  *bTrack*  
- Bu değeri ayarlamak **TRUE** izleme; bellek kapatır **FALSE** devre dışı bırakır.  
+ Bu değer doğru sırayla izleme bellek ayarı; FALSE kapanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İzlemeyi etkinleştirme bayrağını önceki ayar.  
@@ -675,20 +675,20 @@ BOOL AfxIsMemoryBlock(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `p`  
+ *p*  
  Sınanacak bellek bloğu noktalarına.  
   
- `nBytes`  
+ *nBytes*  
  Bellek bloğu bayt cinsinden uzunluğu içerir.  
   
- `plRequestNumber`  
+ *plRequestNumber*  
  İşaret eden bir **uzun** bellek bloğun ayırma sıra numarası ile doldurulacaktır ya da şu anda etkin bellek bloğu temsil etmez, sıfır tamsayı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bellek bloğu geçerli olarak ayrılmış ve uzunluğu doğru ise sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayrıca, belirtilen boyut özgün ayrılmış boyutu karşı denetler. İşlevi sıfır olmayan bir değer döndürürse, ayırma sıra numarası döndürülür `plRequestNumber`. Bu sayı, blok tahsis edildiğinde göre diğer tüm sırasını temsil eden **yeni** ayırma.  
+ Ayrıca, belirtilen boyut özgün ayrılmış boyutu karşı denetler. İşlevi sıfır olmayan bir değer döndürürse, ayırma sıra numarası döndürülür *plRequestNumber*. Bu sayı, blok tahsis edildiğinde göre diğer tüm sırasını temsil eden **yeni** ayırma.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#27](../../mfc/codesnippet/cpp/diagnostic-services_13.cpp)]  
@@ -707,19 +707,19 @@ BOOL AfxIsValidAddress(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lp`  
+ *LP*  
  Sınanacak bellek adresi noktalarına.  
   
- `nBytes`  
+ *nBytes*  
  Sınanacak belleğin bayt sayısını içerir.  
   
  *bReadWrite*  
- Bellek hem okumak ve yazmak için olup olmadığını belirtir ( **TRUE**) veya yalnızca okuma ( **FALSE**).  
+ Bellek hem okuma ve yazma (TRUE) veya yalnızca okuma (FALSE) olup olmadığını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Hata ayıklama derlemelerinde belirtilen bellek engellerseniz sıfır olmayan tamamen programın bellek alanı içinde yer alır; Aksi takdirde 0.  
   
- Olmayan hata ayıklama derlemelerinde, sıfır olmayan IF `lp` NULL; Aksi halde 0 değil.  
+ Olmayan hata ayıklama derlemelerinde, sıfır olmayan IF *lp* NULL; Aksi halde 0 değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Adres blokları tarafından ayrılmış. kısıtlanmış değil **yeni**.  
@@ -740,16 +740,16 @@ BOOL  AfxIsValidString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpsz`  
+ *lpsz*  
  Test etmek için işaretçi.  
   
- `nLength`  
+ *nLength*  
  Bayt cinsinden test dize uzunluğunu belirtir. -1 değeri dize null ile sonlandırılmış olacağını gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Hata ayıklama derlemelerinde, belirtilen boyutta bir dizeyi belirtilen işaretçi işaret ediyorsa sıfır olmayan; Aksi takdirde 0.  
   
- Olmayan hata ayıklama derlemelerinde, sıfır olmayan IF `lpsz` NULL; Aksi halde 0 değil.  
+ Olmayan hata ayıklama derlemelerinde, sıfır olmayan IF *lpsz* NULL; Aksi halde 0 değil.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#29](../../mfc/codesnippet/cpp/diagnostic-services_15.cpp)]  
@@ -776,16 +776,16 @@ AFX_ALLOC_HOOK AfxSetAllocHook(AFX_ALLOC_HOOK pfnAllocHook);
   
  **BOOL AFXAPI AllocHook (size_t** `nSize` **, BOOL** `bObject` **, uzun** `lRequestNumber` **);**  
   
- `nSize`  
+ *nSize*  
  Önerilen bellek ayırma boyutu.  
   
- `bObject`  
- **DOĞRU** ayırma için ise bir `CObject`-türetilen nesnesini; Aksi halde **FALSE**.  
+ *bNesne*  
+ Ayırma için ise doğru bir `CObject`-türetilen nesne; Aksi takdirde FALSE.  
   
- `lRequestNumber`  
+ *lRequestNumber*  
  Bellek ayırma 's sıra numarası.  
   
- Unutmayın **AFXAPI** çağırma olduğu anlamına gelir Aranan yığından parametreleri kaldırmanız gerekir.  
+ Çağırma kuralı AFXAPI Aranan yığından parametreleri kaldırmalısınız gelir unutmayın.  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afx.h 
@@ -801,14 +801,14 @@ AFXAPI AfxDoForAllClasses(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pfn`  
+ *pfn*  
  Her sınıf için çağrılacak bir yineleme işlev noktalarına. Bir işaretçi işlevi bağımsız değişkenler bir `CRuntimeClass` nesne ve void işaretçi çağıran işleve sağladığı ek veriler.  
   
- `pContext`  
- Yineleme işlevi çağıran sağladığınız isteğe bağlı veri noktalarına. Bu işaretçinin olabilir **NULL**.  
+ *pContext*  
+ Yineleme işlevi çağıran sağladığınız isteğe bağlı veri noktalarına. This işaretçisi NULL olabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Seri hale getirilebilir `CObject`-türetilen sınıflardır kullanarak türetilmiş sınıfları `DECLARE_SERIAL` makrosu. Geçirilen işaretçiyi `AfxDoForAllClasses` içinde `pContext` belirtilen yineleme işlevi çağırıldığında her zaman geçirilir.  
+ Seri hale getirilebilir `CObject`-türetilmiş sınıfları declare_serıal makrosu kullanarak türetilmiş sınıfları şunlardır. Geçirilen işaretçiyi `AfxDoForAllClasses` içinde *pContext* belirtilen yineleme işlevi çağırıldığında her zaman geçirilir.  
   
 > [!NOTE]
 >  Bu işlev yalnızca MFC hata ayıklama sürümü çalışır.  
@@ -831,14 +831,14 @@ void AfxDoForAllObjects(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pfn`  
+ *pfn*  
  Her nesne için yürütmek için bir yineleme işlevi noktalarına. Bir işaretçi işlevi bağımsız değişkenler bir `CObject` ve çağıran işleve sağladığı ek veriler için geçersiz bir işaretçi.  
   
- `pContext`  
- Yineleme işlevi çağıran sağladığınız isteğe bağlı veri noktalarına. Bu işaretçinin olabilir **NULL**.  
+ *pContext*  
+ Yineleme işlevi çağıran sağladığınız isteğe bağlı veri noktalarına. This işaretçisi NULL olabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yığın, genel veya katıştırılmış nesneler numaralandırılan değil. İşaretçinin geçirilen `AfxDoForAllObjects` içinde `pContext` belirtilen yineleme işlevi çağırıldığında her zaman geçirilir.  
+ Yığın, genel veya katıştırılmış nesneler numaralandırılan değil. İşaretçinin geçirilen `AfxDoForAllObjects` içinde *pContext* belirtilen yineleme işlevi çağırıldığında her zaman geçirilir.  
   
 > [!NOTE]
 >  Bu işlev yalnızca MFC hata ayıklama sürümü çalışır.  

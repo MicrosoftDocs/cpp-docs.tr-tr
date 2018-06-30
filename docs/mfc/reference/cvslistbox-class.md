@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 380b470531fd28d8cfe68aa931105430111c3dbf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 582ddd1340dd94f367d5401d517e9335d370b634
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373001"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122643"
 ---
 # <a name="cvslistbox-class"></a>CVSListBox sınıfı
 `CVSListBox` Sınıfı, bir düzenlenebilir bir liste denetimini destekler.  
@@ -124,20 +124,20 @@ virtual int AddItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `strIext`  
+ [in] *strIext*  
  Bir dize başvuru.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Dizesi ile ilişkili bir uygulamaya özgü 32-bit değeri. Varsayılan değer 0’dır.  
   
- [in] `iIndex`  
- Dize barındıracak konumu sıfır tabanlı dizini. Varsa `iIndex` parametredir -1, dize listesinin sonuna eklenir. Varsayılan değer -1'dir.  
+ [in] *İIndex*  
+ Dize barındıracak konumu sıfır tabanlı dizini. Varsa *İIndex* parametredir -1, dize listesinin sonuna eklenir. Varsayılan değer -1'dir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Liste denetimi dize konumda sıfır tabanlı dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım [CVSListBox::GetItemData](#getitemdata) tarafından belirtilen değeri almaya yöntemi `dwData` parametresi. Bu değer, uygulamaya özgü tamsayı veya diğer veri gösteren bir işaretçi olabilir.  
+ Kullanım [CVSListBox::GetItemData](#getitemdata) tarafından belirtilen değeri almaya yöntemi *dwData* parametresi. Bu değer, uygulamaya özgü tamsayı veya diğer veri gösteren bir işaretçi olabilir.  
   
 ##  <a name="cvslistbox"></a>  CVSListBox::CVSListBox  
  Oluşturan bir `CVSListBox` nesnesi.  
@@ -158,11 +158,11 @@ virtual BOOL EditItem(int iIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
  Liste Denetim öğesi sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` düzenleme işlemi başarıyla başlatılırsa; Aksi takdirde `FALSE`.  
+ Düzenleme işlemi başarıyla başlatılırsa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir öğenin etiketini çift tıklatarak ya da basarak kullanıcı düzenleme işlemi başlatır **F2** veya **boşluk** anahtar öğenin odağa sahip olduğunda.  
@@ -188,7 +188,7 @@ virtual DWORD_PTR GetItemData(int iIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
  Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -246,11 +246,11 @@ virtual BOOL RemoveItem(int iIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
  Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Belirtilen öğe kaldırılırsa; Aksi takdirde `FALSE`.  
+ Belirtilen öğe kaldırılırsa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -262,11 +262,11 @@ virtual BOOL SelectItem(int iItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iItem`  
+ [in] *iItem*  
  Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, belirtilen öğeyi seçer ve gerekliyse, öğe görünüme gelene.  
@@ -281,10 +281,10 @@ virtual void SetItemData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
+ [in] *İIndex*  
  Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
   
- [in] `dwData`  
+ [in] *dwData*  
  32-bitlik bir değer. Bu değer, uygulamaya özgü tamsayı veya diğer veri gösteren bir işaretçi olabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  

@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 199aa7adc6cb96a4bc92e196ff94d57abdedfede
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eb5fb6b09ba6d27828c9f76a1b2ee21323197f6b
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374305"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122947"
 ---
 # <a name="cstatusbar-class"></a>CStatusBar sınıfı
 Denetim çubuğu satır metin çıktısı bölmeleri ya da "göstergeleri."  
@@ -110,7 +110,7 @@ class CStatusBar : public CControlBar
   
 1.  Çağrı [CWnd::SetWindowText](../../mfc/reference/cwnd-class.md#setwindowtext) bölmesinde 0 yalnızca metin güncelleştirmek için.  
   
-2.  Çağrı [CCmdUI::SetText](../../mfc/reference/ccmdui-class.md#settext) durum çubuğundaki 's `ON_UPDATE_COMMAND_UI` işleyicisi.  
+2.  Çağrı [CCmdUI::SetText](../../mfc/reference/ccmdui-class.md#settext) durum çubuğunun on_update_command_uı işleyicisi.  
   
 3.  Çağrı [SetPaneText](#setpanetext) herhangi bir bölme için metin güncelleştirmek için.  
   
@@ -140,7 +140,7 @@ int CommandToIndex(UINT nIDFind) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIDFind`  
+ *nIDFind*  
  Alınacak dizinini olduğu göstergesi kimliği dizesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -160,19 +160,19 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentWnd`  
+ *pParentWnd*  
  İşaretçi [CWnd](../../mfc/reference/cwnd-class.md) olan Windows penceresi durum çubuğunun üst nesne.  
   
- `dwStyle`  
+ *dwStyle*  
  Durum çubuğu stili. Standart Windows yanı sıra [stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles), bu stiller desteklenir.  
   
-- `CBRS_TOP` Denetim çubuğu çerçeve penceresi tepesinde bulunur.  
+- CBRS_TOP denetim çubuğu çerçeve penceresi tepesinde bulunur.  
   
-- `CBRS_BOTTOM` Denetim çubuğu çerçeve penceresinin alt kısmındaki ' dir.  
+- CBRS_BOTTOM denetim çubuğu çerçeve penceresinin alt kısmındaki ' dir.  
   
-- `CBRS_NOALIGN` Üst yeniden boyutlandırıldığında denetim çubuğu yeniden konumlandırılır değil.  
+- Üst yeniden boyutlandırıldığında CBRS_NOALIGN denetim çubuğu yeniden konumlandırılır değil.  
   
- `nID`  
+ *nID*  
  Araç çubuğunun alt pencere kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -193,22 +193,22 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pParentWnd`  
+ *pParentWnd*  
  İşaretçi [CWnd](../../mfc/reference/cwnd-class.md) olan Windows penceresi durum çubuğunun üst nesne.  
   
- `dwCtrlStyle`  
+ *dwCtrlStyle*  
  Katıştırılmış oluşturulması için ek stilleri [CStatusBarCtrl](../../mfc/reference/cstatusbarctrl-class.md) nesnesi. Durum çubuğu boyutlandırma tutamacı veya araç ipucu olmadan varsayılan belirtir destekler. Durum çubuğu stilleri desteklenen şunlardır:  
   
-- **SBARS_SIZEGRIP** durum çubuğu denetiminin boyutlandırma tutamacı durum çubuğunun sağ ucunda içerir. Boyutlandırma tutamacı boyutlandırma kenarlık benzer; Bu, kullanıcı tıklayın ve ana pencereyi yeniden boyutlandırmak için sürükleyin dikdörtgen bir alandır.  
+- SBARS_SIZEGRIP durum çubuğu denetiminin boyutlandırma tutamacı durum çubuğunun sağ ucunda içerir. Boyutlandırma tutamacı boyutlandırma kenarlık benzer; Bu, kullanıcı tıklayın ve ana pencereyi yeniden boyutlandırmak için sürükleyin dikdörtgen bir alandır.  
   
-- **SBT_TOOLTIPS** durum çubuğu araç ipuçları destekler.  
+- SBT_TOOLTIPS durum çubuğu araç ipuçları destekler.  
   
  Bu stiller hakkında daha fazla bilgi için bkz: [CStatusBarCtrl ayarları](../../mfc/settings-for-the-cstatusbarctrl.md).  
   
- `dwStyle`  
+ *dwStyle*  
  Durum çubuğu stili. Varsayılan çerçeve penceresinin alt kısmında görünür durum çubuğu oluşturulması belirtir. Durum çubuğu denetim stilleri listelenen herhangi bir bileşimini uygulamak [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [CDialogBar::Create](../../mfc/reference/cdialogbar-class.md#create). Ancak, bu parametre her zaman WS_CHILD ve ws_vısıble stilleri içermelidir.  
   
- `nID`  
+ *nID*  
  Durum çubuğu alt pencere kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -217,7 +217,7 @@ virtual BOOL CreateEx(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, ayrıca ilk yazı tipini ayarlar ve durumunu ayarlar varsayılan bir değerle çubuğunun yüksekliği.  
   
- Kullanım `CreateEx`, yerine [oluşturma](#create), belirli stilleri gömülü durum çubuğu denetimi oluşturma sırasında mevcut olması gerekir. Örneğin, `dwCtrlStyle` için **SBT_TOOLTIPS** bir durum çubuğu nesnesinde araç ipuçları görüntülenecek.  
+ Kullanım `CreateEx`, yerine [oluşturma](#create), belirli stilleri gömülü durum çubuğu denetimi oluşturma sırasında mevcut olması gerekir. Örneğin, *dwCtrlStyle* SBT_TOOLTIPS bir durum çubuğu nesnesinde araç ipuçları görüntülemek için.  
   
 ##  <a name="cstatusbar"></a>  CStatusBar::CStatusBar  
  Oluşturan bir `CStatusBar` nesnesi, gerekirse varsayılan durum çubuğu yazı oluşturur ve varsayılan değerleri için yazı tipi özelliklerini ayarlar.  
@@ -234,28 +234,28 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpDrawItemStruct`  
+ *lpDrawItemStruct*  
  Bir işaretçi bir [DRAWITEMSTRUCT](http://msdn.microsoft.com/library/windows/desktop/bb775802) gerekli çizim türü hakkında bilgi içeren yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **İtemAction** üyesi `DRAWITEMSTRUCT` yapısı gerçekleştirilecek çizim eylemi tanımlar. Çizim sahibi çizim için uygulamak için bu üye işlevi geçersiz kılma `CStatusBar` nesnesi. Tüm grafik cihaz arabirimi (GDI) nesneleri görüntüleme bağlamı içinde sağlanan için seçilen uygulama kurtarmalısınız `lpDrawItemStruct` bu üye işlevinin sona ermeden önce.  
+ `itemAction` Üyesi `DRAWITEMSTRUCT` yapısı gerçekleştirilecek çizim eylemi tanımlar. Çizim sahibi çizim için uygulamak için bu üye işlevi geçersiz kılma `CStatusBar` nesnesi. Tüm grafik cihaz arabirimi (GDI) nesneleri görüntüleme bağlamı içinde sağlanan için seçilen uygulama kurtarmalısınız *lpDrawItemStruct* bu üye işlevinin sona ermeden önce.  
   
 ##  <a name="getitemid"></a>  CStatusBar::GetItemID  
- Tarafından belirtilen göstergesi Kimliğini döndürür `nIndex`.  
+ Tarafından belirtilen göstergesi Kimliğini döndürür *nIndex*.  
   
 ```  
 UINT GetItemID(int nIndex) const;  
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Alınacak Kimliğine sahip göstergesi dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tarafından belirtilen göstergesi Kimliğini `nIndex`.  
+ Tarafından belirtilen göstergesi Kimliğini *nIndex*.  
   
 ##  <a name="getitemrect"></a>  CStatusBar::GetItemRect  
- Tarafından belirtilen göstergesi koordinatlarını kopyalar `nIndex` gösterdiği yapıda `lpRect`.  
+ Tarafından belirtilen göstergesi koordinatlarını kopyalar *nIndex* gösterdiği yapıda *lpRect*.  
   
 ```  
 void GetItemRect(
@@ -264,17 +264,17 @@ void GetItemRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Alınacak olan dikdörtgen koordinatları olan göstergesi dizini.  
   
- `lpRect`  
- İşaret eden bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) tarafından belirtilen göstergesi koordinatlarını alacak nesne `nIndex`.  
+ *lpRect*  
+ İşaret eden bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) tarafından belirtilen göstergesi koordinatlarını alacak nesne *nIndex*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Durum çubuğu sol üst köşesindeki göreli piksel cinsinden koordinatlar belirlenir.  
   
 ##  <a name="getpaneinfo"></a>  CStatusBar::GetPaneInfo  
- Ayarlar `nID`, `nStyle`, ve `cxWidth` kimliği, stil ve genişlik tarafından belirtilen konumda göstergesi bölmesinin `nIndex`.  
+ Ayarlar *nID*, *nStyle*, ve *cxWidth* kimliği, stil ve genişlik tarafından belirtilen konumda göstergesi bölmesinin *nIndex*.  
   
 ```  
 void GetPaneInfo(
@@ -285,16 +285,16 @@ void GetPaneInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Alınacak olan bilgidir bölmesinde dizini.  
   
- `nID`  
- Başvuru bir **UINT** bölmesinde Kimliğine ayarlayın.  
+ *nID*  
+ Bölmesinde Kimliğine ayarlayın UINT başvuru.  
   
- `nStyle`  
- Başvuru bir **UINT** bölmesinde stiline ayarlayın.  
+ *nStyle*  
+ Bölmesinde stil olarak ayarlanmış bir UINT başvuru.  
   
- `cxWidth`  
+ *cxWidth*  
  Bölmesinin genişliğini ayarlamak tamsayı başvuru.  
   
 ##  <a name="getpanestyle"></a>  CStatusBar::GetPaneStyle  
@@ -305,11 +305,11 @@ UINT GetPaneStyle(int nIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Alınacak stilini olduğu bölmesinde dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tarafından belirtilen durum çubuğu bölmesinin stilini `nIndex`.  
+ Tarafından belirtilen durum çubuğu bölmesinin stilini *nIndex*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bölmesinde görünme bölme 's stilini belirler.  
@@ -324,10 +324,10 @@ CString GetPaneText(int nIndex) const;  void GetPaneText(int nIndex, CString& rS
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Alınacak metni olan bölmesinde dizini.  
   
- `rString`  
+ *rString*  
  Bir başvuru bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) alınması için metni içeren nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -352,7 +352,7 @@ CStatusBarCtrl& GetStatusBarCtrl() const;
  Ortak Denetimler hakkında daha fazla genel bilgi için bkz: [ortak denetimler](http://msdn.microsoft.com/library/windows/desktop/bb775493) Windows SDK'sındaki.  
   
 ##  <a name="setindicators"></a>  CStatusBar::SetIndicators  
- Dizi karşılık gelen öğesi tarafından belirtilen değere her göstergenin Kimliğini ayarlar `lpIDArray`, her kimliği tarafından belirtilen dize kaynağı yükler ve göstergenin metin dizesi olarak ayarlar.  
+ Dizi karşılık gelen öğesi tarafından belirtilen değere her göstergenin Kimliğini ayarlar *lpIDArray*, her kimliği tarafından belirtilen dize kaynağı yükler ve göstergenin metin dizesi olarak ayarlar.  
   
 ```  
 BOOL SetIndicators(
@@ -361,11 +361,11 @@ BOOL SetIndicators(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpIDArray`  
+ *lpIDArray*  
  Bir dizi kimlikleri işaretçi.  
   
- `nIDCount`  
- Tarafından dizideki öğelerin sayısı işaret için `lpIDArray`.  
+ *nIDCount*  
+ Tarafından dizideki öğelerin sayısı işaret için *lpIDArray*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
@@ -382,30 +382,30 @@ void SetPaneInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Ayarlanacak stilini olduğu göstergesi bölmesinde dizini.  
   
- `nID`  
+ *nID*  
  Gösterge bölmesinde yeni kimliği.  
   
- `nStyle`  
+ *nStyle*  
  Gösterge bölmesinde yeni stili.  
   
- `cxWidth`  
+ *cxWidth*  
  Yeni genişliği göstergesi bölmesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Aşağıdaki göstergesi stilleri desteklenir:  
   
-- **SBPS_NOBORDERS** bölmesinde geçici 3-b kenarlık yok.  
+- Bölmesinde 3B kenarlık SBPS_NOBORDERS yok.  
   
-- **SBPS_POPOUT** ters kenarlık metin "POP çıkışı böylece."  
+- SBPS_POPOUT ters kenarlık metin "POP çıkışı böylece."  
   
-- **SBPS_DISABLED** metin çizme değil.  
+- SBPS_DISABLED yapmak metin değil çizin.  
   
-- **SBPS_STRETCH** kullanılmayan alanı doldurmak için Esnetme bölmesi. Durum çubuğu başına yalnızca bir bölmesinde bu stili olabilir.  
+- Kullanılmayan alanı doldurmak için SBPS_STRETCH Esnetme bölmesi. Durum çubuğu başına yalnızca bir bölmesinde bu stili olabilir.  
   
-- **SBPS_NORMAL** esnetme, kenarlık veya açılır.  
+- SBPS_NORMAL Hayır esnetme, kenarlıklar ya da açılır.  
   
 ##  <a name="setpanestyle"></a>  CStatusBar::SetPaneStyle  
  Durum çubuğu bölmesinin stilini ayarlamak için bu üye işlevini çağırın.  
@@ -417,10 +417,10 @@ void SetPaneStyle(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Ayarlanacak stilini olduğu bölmesinde dizini.  
   
- `nStyle`  
+ *nStyle*  
  Ayarlanacak stilini olduğu bölmesinde stili.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -429,7 +429,7 @@ void SetPaneStyle(
  Durum çubukları stilleri listesi için bkz: [SetPaneInfo](#setpaneinfo).  
   
 ##  <a name="setpanetext"></a>  CStatusBar::SetPaneText  
- Gösterdiği dizeye bölmesinde metnini ayarlamak için bu üye işlevini çağırın `lpszNewText`.  
+ Gösterdiği dizeye bölmesinde metnini ayarlamak için bu üye işlevini çağırın *lpszNewText*.  
   
 ```  
 BOOL SetPaneText(
@@ -439,14 +439,14 @@ BOOL SetPaneText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Ayarlanacak metni olan bölmesinde dizini.  
   
- `lpszNewText`  
+ *lpszNewText*  
  Yeni bölmesinde metin işaretçisi.  
   
  *bgüncelleştirmesinin*  
- Varsa **doğru**, metin ayarlandıktan sonra bölmesinde geçersiz kıldı.  
+ Metin ayarlandıktan sonra TRUE ise, bölmesinde geçersiz kılınır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  

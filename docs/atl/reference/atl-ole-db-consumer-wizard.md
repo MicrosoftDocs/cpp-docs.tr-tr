@@ -1,7 +1,7 @@
 ---
 title: ATL OLE DB Tüketici Sihirbazı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/25/2018
 ms.technology:
 - cpp-atl
 ms.topic: reference
@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d51569eaece5e3fac59c7cc2ff82a8454a5f959
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f53d8273a708b7f84393290dd578933a5390313c
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32364956"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121695"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketici Sihirbazı
 Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamalarla belirtilen OLE DB sağlayıcısı ile belirtilen veri kaynağına erişmek için gerekli ayarlar.  
@@ -66,7 +66,7 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamalarla belirtilen OLE DB 
   
     3. **Sunucudaki veritabanını seçin:** veri sunucusundaki tüm kayıtlı veritabanlarını görüntülemek için aşağı açılır menüsünü tıklatın ve seçin.  
   
-         -veya-  
+         veya  
   
  **Bir veritabanı dosyası bir veritabanı adı olarak ekleme:** açık yol adını girin; veritabanı olarak kullanılacak bir dosya belirtin.  
   
@@ -133,7 +133,7 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamalarla belirtilen OLE DB 
   
  ``` 
  // Table accessor class  
-    class COrdersAccessor; *// Table class  
+    class COrdersAccessor; // Table class  
     class COrders : public CTable<CAccessor<COrdersAccessor>>;  
  ... 
  // Column map  
@@ -172,13 +172,13 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamalarla belirtilen OLE DB 
  **Tablo**  
  Kullanmak istiyorsanız bu seçeneği `CTable` veya **db_table** tablosu ve tablo erişimcisi sınıf bildirimleri oluşturmak için.  
   
- **komutu**  
+ **Komutu**  
  Kullanmak istiyorsanız bu seçeneği `CCommand` veya **db_command** komut ve komut erişimcisi sınıf bildirimleri oluşturmak için. Bu varsayılan seçimdir.  
   
  **Destek**  
  (Varsayılan, Yok'tur) tüketicideki desteklenmesi için güncelleştirmeleri türlerini belirtmek için onay kutularını seçin. Aşağıdakilerin her biri ayarlayacaktır [DBPROP_IRowsetChange](https://msdn.microsoft.com/library/ms715892.aspx) ve uygun girişleri [DBPROP_UPDATABILITY](https://msdn.microsoft.com/library/ms722676.aspx) eşleme özelliğini ayarlayın.  
   
- **değiştirme**  
+ **Değiştirme**  
  Tüketici satır kümesinde satır veri güncelleştirmelerini destekleyen belirtir.  
   
  **Ekle**  

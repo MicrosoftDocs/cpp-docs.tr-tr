@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb2e9d2494463b502fda85c03fa1b861e1182cfc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6de53324eac663df7c12ee0cb2c0f4f02558157d
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372081"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121708"
 ---
 # <a name="ddxdhtml-helper-macros"></a>DDX_DHtml yardımcı makroları
 DDX_DHtml yardımcı makroları yaygın olarak kullanılan bir HTML sayfasında denetimlerin özelliklerini kolay erişim sağlar.  
@@ -66,13 +66,13 @@ DDX_DHtml_Anchor_Href(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `dx`  
+ *DX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `name`  
+ *Adı*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
- `var`  
+ *var*  
  Değiştirilen değeri.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -89,13 +89,13 @@ DDX_DHtml_Anchor_Target(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `dx`  
+ *DX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `name`  
+ *Adı*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
- `var`  
+ *var*  
  Değiştirilen değeri.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -114,13 +114,13 @@ DDX_DHtml_ElementInnerHtml(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `dx`  
+ *DX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `name`  
+ *Adı*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
- `var`  
+ *var*  
  Değiştirilen değeri.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -140,13 +140,13 @@ DDX_DHtml_ElementInnerText(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `dx`  
+ *DX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `name`  
+ *Adı*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
- `var`  
+ *var*  
  Değiştirilen değeri.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -163,13 +163,13 @@ DDX_DHtml_ElementValue(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `dx`  
+ *DX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `name`  
+ *Adı*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
- `var`  
+ *var*  
  Değiştirilen değeri. Bkz: *değeri* içinde [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext).  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -188,13 +188,13 @@ DDX_DHtml_Frame_Src(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `dx`  
+ *DX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `name`  
+ *Adı*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
- `var`  
+ *var*  
  Değiştirilen değeri.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -213,13 +213,13 @@ DDX_DHtml_IFrame_Src(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `dx`  
+ *DX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `name`  
+ *Adı*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
- `var`  
+ *var*  
  Değiştirilen değeri.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -236,17 +236,17 @@ DDX_DHtml_Img_Src(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `dx`  
+ *DX*  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
   
- `name`  
+ *Adı*  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
- `var`  
+ *var*  
  Değiştirilen değeri.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanırken `DDX_DHtml_Img_Src` bir görüntü öğesi, Internet Explorer resim nesnesi src özelliği almak için makrosu görüntü kaynağı tam Atlanan URL'sini döndürür. Kullanırsanız, örneğin, `DDX_DHtml_Img_Src` makrosu bir görüntü öğesi src özelliği "bazı ilginç resim," dizesine ayarlamak için bu özelliği aldığınızda, Internet Explorer "res://d:\myapplication\myapp.exe/some% dizesi döndürür 20interesting % 20picture."  
+ DDX_DHtml_Img_Src makrosu bir görüntü öğesi src özelliği almak için kullanıldığında, Internet Explorer resim nesnesi tam olarak Atlanan görüntü kaynağı URL'sini döndürür. Bir görüntü öğesi src özelliği "bazı ilginç resim" dizesine ayarlamak için DDX_DHtml_Img_Src makrosu kullanırsanız, örneğin, bu özellik, Internet Explorer aldığınızda "res://d:\myapplication\myapp.exe/some% dizesi döndürür 20interesting % 20picture."  
   
  Bu makrosu çağırır [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) DISPID_IHTMLIMGELEMENT_SRC kullanarak işlevi gönderme kimliği.  
 

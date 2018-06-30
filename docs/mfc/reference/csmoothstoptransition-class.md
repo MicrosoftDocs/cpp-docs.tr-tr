@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7f87c83b9f4c3840318b27922f758787d929d1e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 80f0c9802077b89ca5555dc476b1066f61e6c593
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374263"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121496"
 ---
 # <a name="csmoothstoptransition-class"></a>CSmoothStopTransition sınıfı
 Kesintisiz durduran geçiş yalıtır.  
@@ -84,7 +84,7 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pLibrary`  
+ *pLibrary*  
  Standart geçişleri oluşturulmasında sorumludur geçiş kitaplığı için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -100,10 +100,10 @@ CSmoothStopTransition(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `maximumDuration`  
+ *maximumDuration*  
  Geçiş en uzun süresi.  
   
- `dblFinalValue`  
+ *dblFinalValue*  
  Geçiş işleminin sonunda animasyon değişkeninin değeri.  
   
 ##  <a name="m_dblfinalvalue"></a>  CSmoothStopTransition::m_dblFinalValue  

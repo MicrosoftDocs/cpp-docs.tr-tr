@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce997441c11287626e9681a661f858e33ccdde24
-ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
+ms.openlocfilehash: f4522b9ea2f336f5ac88f5444edc0c7df16b5bc6
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36322218"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122395"
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 
@@ -71,7 +71,7 @@ DECLARE_EVENT_MAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `DECLARE_EVENT_MAP` makrosu sınıf bildiriminin sonundaki. Ardından, sınıf için üye işlevleri tanımlayan .cpp dosyasında kullanmak `BEGIN_EVENT_MAP` makrosu, denetimin olayların her biri için makrosu girişleri ve `END_EVENT_MAP` olay listesinin sonuna bildirmek için makrosu.
+DECLARE_EVENT_MAP makrosu sınıf bildiriminin sonundaki kullanın. Ardından, sınıf için üye işlevleri tanımlayan .cpp dosyasında begın_event_map makrosu, makrosu girişleri her biri denetim olaylarını ve END_EVENT_MAP makrosu olay listesinin sonuna bildirmek için kullanın.
 
 Olay eşlemeleri hakkında daha fazla bilgi için bkz: [ActiveX denetimleri: olaylar](../../mfc/mfc-activex-controls-events.md).
 
@@ -97,9 +97,9 @@ Temel sınıfını adını belirtir *sınıfın*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olay eşlemesi ile sınıfınız için üye işlevleri tanımlar uygulaması (.cpp) dosyasına Başlat `BEGIN_EVENT_MAP` makrosu, ardından makrosu girişleri her olaylarınızı ekleyin ve olay eşlemesi ile tamamlayın `END_EVENT_MAP` makrosu.
+Sınıfınıza üye işlevleri tanımlar uygulaması (.cpp) dosyasında, olay eşlemesi begın_event_map makrosu ile başlatın ardından makrosu girişleri her olaylarınızı ekleyin ve END_EVENT_MAP makrosu ile olay eşlemesi tamamlayın.
 
-Olay hakkında daha fazla bilgi için eşler ve `BEGIN_EVENT_MAP` makrosu, makaleye bakın [ActiveX denetimleri: olaylar](../../mfc/mfc-activex-controls-events.md).
+Olay eşlemeleri ve begın_event_map makrosu hakkında daha fazla bilgi için bkz: [ActiveX denetimleri: olaylar](../../mfc/mfc-activex-controls-events.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -107,7 +107,7 @@ Olay hakkında daha fazla bilgi için eşler ve `BEGIN_EVENT_MAP` makrosu, makal
 
 ##  <a name="end_event_map"></a>  END_EVENT_MAP
 
-Kullanım `END_EVENT_MAP` olay eşlemesi tanımını sonuna makrosu.
+Olay eşlemesi tanımını sonlandırmak için END_EVENT_MAP makrosu kullanın.
 
 ```cpp
 END_EVENT_MAP()
@@ -148,36 +148,36 @@ RGB temsil eden bir 32 bit tamsayı içeren bir liste için bir işaretçi arkas
 
 |Simgesi|Parametre türü|
 |------------|--------------------|
-|`VTS_I2`|**short**|
-|`VTS_I4`|**long**|
-|`VTS_R4`|**float**|
-|`VTS_R8`|**double**|
-|`VTS_COLOR`|`OLE_COLOR`|
-|`VTS_CY`|`CURRENCY`|
-|`VTS_DATE`|`DATE`|
-|`VTS_BSTR`|**const** __char\*__|
-|`VTS_DISPATCH`|`LPDISPATCH`|
-|`VTS_FONT`|`IFontDispatch*`|
-|`VTS_HANDLE`|`HANDLE`|
-|`VTS_SCODE`|`SCODE`|
-|`VTS_BOOL`|`BOOL`|
-|`VTS_VARIANT`|`const VARIANT*`|
-|`VTS_PVARIANT`|`VARIANT*`|
-|`VTS_UNKNOWN`|`LPUNKNOWN`|
-|`VTS_OPTEXCLUSIVE`|`OLE_OPTEXCLUSIVE`|
-|`VTS_PICTURE`|`IPictureDisp*`|
-|`VTS_TRISTATE`|`OLE_TRISTATE`|
-|`VTS_XPOS_PIXELS`|`OLE_XPOS_PIXELS`|
-|`VTS_YPOS_PIXELS`|`OLE_YPOS_PIXELS`|
-|`VTS_XSIZE_PIXELS`|`OLE_XSIZE_PIXELS`|
-|`VTS_YSIZE_PIXELS`|`OLE_YSIZE_PIXELS`|
-|`VTS_XPOS_HIMETRIC`|`OLE_XPOS_HIMETRIC`|
-|`VTS_YPOS_HIMETRIC`|`OLE_YPOS_HIMETRIC`|
-|`VTS_XSIZE_HIMETRIC`|`OLE_XSIZE_HIMETRIC`|
-|`VTS_YSIZE_HIMETRIC`|`OLE_YSIZE_HIMETRIC`|
+|VTS_I2|**short**|
+|VTS_I4|**long**|
+|VTS_R4|**float**|
+|VTS_R8|**double**|
+|VTS_COLOR|OLE_COLOR|
+|VTS_CY|PARA BİRİMİ|
+|VTS_DATE|TARİH|
+|VTS_BSTR|**const** __char\*__|
+|VTS_DISPATCH|LPDISPATCH|
+|VTS_FONT|`IFontDispatch*`|
+|VTS_HANDLE|İŞLEME|
+|VTS_SCODE|SCODE|
+|VTS_BOOL|BOOL|
+|VTS_VARIANT|`const VARIANT*`|
+|VTS_PVARIANT|`VARIANT*`|
+|VTS_UNKNOWN|LPUNKNOWN|
+|VTS_OPTEXCLUSIVE|OLE_OPTEXCLUSIVE|
+|VTS_PICTURE|`IPictureDisp*`|
+|VTS_TRISTATE|OLE_TRISTATE|
+|VTS_XPOS_PIXELS|OLE_XPOS_PIXELS|
+|VTS_YPOS_PIXELS|OLE_YPOS_PIXELS|
+|VTS_XSIZE_PIXELS|OLE_XSIZE_PIXELS|
+|VTS_YSIZE_PIXELS|OLE_YSIZE_PIXELS|
+|TS_XPOS_HIMETRIC|OLE_XPOS_HIMETRIC|
+|VTS_YPOS_HIMETRIC|OLE_YPOS_HIMETRIC|
+|VTS_XSIZE_HIMETRIC|OLE_XSIZE_HIMETRIC|
+|VTS_YSIZE_HIMETRIC|OLE_YSIZE_HIMETRIC|
 
 > [!NOTE]
-> Ek değişken sabitleri dışında tüm değişken türleri için tanımlanmışsa `VTS_FONT` ve `VTS_PICTURE`, değişken veri sabiti gösteren bir işaretçi sağlar. Kullanarak bu sabitleri adlı `VTS_Pconstantname` kuralı. Örneğin, `VTS_PCOLOR` gösteren bir işaretçidir bir `VTS_COLOR` sabit.
+> Değişken veri sabiti gösteren bir işaretçi sağlayan tüm değişken türleri için VTS_FONT ve vts_pıcture, hariç olmak üzere ek değişken sabitleri tanımlanmadı. Kullanarak bu sabitleri adlı `VTS_Pconstantname` kuralı. Örneğin, VTS_PCOLOR gösteren bir işaretçidir VTS_COLOR sabiti.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -251,7 +251,7 @@ BOOL memberFxn(
    LPCRECT  lpRect);
 ```
 
-Değerlerini *lpMsg*, *hWndParent*, ve *lpRect* parametreleri karşılık gelen parametrelerinden alınır **Rpc_e_serverfault** üye işlevi.
+Değerlerini *lpMsg*, *hWndParent*, ve *lpRect* parametreleri karşılık gelen parametrelerinden alınır `IOleObject::DoVerb` üye işlevi.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -275,7 +275,7 @@ Geçersiz kılıp fiil standart fiil dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Standart fiil dizin biçimidir `OLEIVERB_`takip eden bir eylem. `OLEIVERB_SHOW`, `OLEIVERB_HIDE`, ve `OLEIVERB_UIACTIVATE` standart fiillerin bazı örnekleri şunlardır.
+Standart fiil dizin biçimidir `OLEIVERB_`takip eden bir eylem. OLEIVERB_SHOW, OLEIVERB_HIDE ve OLEIVERB_UIACTIVATE bazı standart fiillerin gösterilebilir.
 
 Bkz: [ON_OLEVERB](#on_oleverb) olarak kullanılacak işlev prototipi açıklaması *memberFxn* parametresi.
 

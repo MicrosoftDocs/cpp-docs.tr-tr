@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43b0967309813603e4f683f35c3ca51dce99fd8c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ddf8e6530530552a4ef7b811698c816352f7719c
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374697"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122973"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl sınıfı
 Windows ortak değer değiştirme düğmesi denetimi işlevselliğini sağlar.  
@@ -120,25 +120,25 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwStyle`  
+ *dwStyle*  
  Değer değiştirme düğmesi denetimi 's stilini belirtir. Değer değiştirme düğmesi denetimi stilleri herhangi bir bileşimini denetime uygulayın. Bu stiller açıklanan [yukarı-aşağı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb759885) Windows SDK.  
   
- `rect`  
+ *Rect*  
  Değer değiştirme düğmesi denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı  
   
- `pParentWnd`  
- Değer değiştirme düğmesi denetimi ait ana penceresinde, genellikle bir işaretçi bir `CDialog`. Değil olmalıdır **NULL.**  
+ *pParentWnd*  
+ Değer değiştirme düğmesi denetimi ait ana penceresinde, genellikle bir işaretçi bir `CDialog`. NULL olmamalıdır.  
   
- `nID`  
+ *nID*  
  Değer değiştirme düğmesi denetimi kişinin kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başlatma başarılı olduğunda sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturmak bir `CSpinButtonCtrl` iki adımda ilk nesne, Oluşturucusu arayın ve ardından çağrısı **oluşturma**, değer değiştirme düğmesi denetimi oluşturur ve ekler `CSpinButtonCtrl` nesnesi.  
+ Oluşturmak bir `CSpinButtonCtrl` iki adımda ilk nesne, Oluşturucusu arayın ve ardından çağrısı `Create`, değer değiştirme düğmesi denetimi oluşturur ve ekler `CSpinButtonCtrl` nesnesi.  
   
- Değer değiştirme düğmesi denetimi ile genişletilmiş pencere stilleri oluşturmak için arama [CSpinButtonCtrl::CreateEx](#createex) yerine **oluşturma**.  
+ Değer değiştirme düğmesi denetimi ile genişletilmiş pencere stilleri oluşturmak için arama [CSpinButtonCtrl::CreateEx](#createex) yerine `Create`.  
   
 ##  <a name="createex"></a>  CSpinButtonCtrl::CreateEx  
  Bir denetimi (alt pencere) oluşturur ve bunu ile ilişkilendirir `CSpinButtonCtrl` nesnesi.  
@@ -153,26 +153,26 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwExStyle`  
- Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş windows stilleri listesi için bkz: `dwExStyle` parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
+ *dwExStyle*  
+ Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş windows stilleri listesi için bkz: *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
   
- `dwStyle`  
+ *dwStyle*  
  Değer değiştirme düğmesi denetimi 's stilini belirtir. Değer değiştirme düğmesi denetimi stilleri herhangi bir bileşimini denetime uygulayın. Bu stiller açıklanan [yukarı-aşağı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb759885) Windows SDK.  
   
- `rect`  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı `pParentWnd`.  
+ *Rect*  
+ Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  Denetimin üst penceresi için bir işaretçi.  
   
- `nID`  
+ *nID*  
  Denetimin alt pencere kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım `CreateEx` yerine [oluşturma](#create) Windows genişletilmiş stili önsöz tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için **WS_EX_**.  
+ Kullanım `CreateEx` yerine [oluşturma](#create) Windows genişletilmiş stili önsöz WS_EX_ tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için.  
   
 ##  <a name="cspinbuttonctrl"></a>  CSpinButtonCtrl::CSpinButtonCtrl  
  Oluşturan bir `CSpinButtonCtrl` nesnesi.  
@@ -191,10 +191,10 @@ UINT GetAccel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nAccel`  
- Tarafından belirtilen dizisindeki öğelerin sayısı `pAccel`.  
+ *nAccel*  
+ Tarafından belirtilen dizisindeki öğelerin sayısı *pAccel*.  
   
- `pAccel`  
+ *pAccel*  
  Bir dizi işaretçi [UDACCEL](http://msdn.microsoft.com/library/windows/desktop/bb759897) yapıları hızlandırma bilgilerini alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -229,7 +229,7 @@ int GetPos() const;  int GetPos32(LPBOOL lpbError = NULL) const;
   
 ### <a name="parameters"></a>Parametreler  
  *lpbError*  
- Başarıyla alındı veya sıfır olmayan bir hata oluşursa gösteren bir işaretçidir sıfır ise ayarlanan değer bir Boole değeri. Bu parametre ayarlanmışsa **NULL**, hataları bildirilmedi.  
+ Başarıyla alındı veya sıfır olmayan bir hata oluşursa gösteren bir işaretçidir sıfır ise ayarlanan değer bir Boole değeri. Bu parametre NULL olarak ayarlanırsa, hataları raporlanmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk sürüm düşük düzey Word'de 16 bit geçerli konumunu döndürür. Yüksek düzey bir hata oluştuysa sıfır olmayan bir sözcüktür.  
@@ -255,7 +255,7 @@ void GetRange32(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *Daha düşük*  
+ *daha düşük*  
  Denetim için alt sınır alan tamsayı başvuru.  
   
  *üst*  
@@ -277,11 +277,11 @@ BOOL SetAccel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nAccel`  
- Sayısı [UDACCEL](http://msdn.microsoft.com/library/windows/desktop/bb759897) tarafından belirtilen yapıları `pAccel`.  
+ *nAccel*  
+ Sayısı [UDACCEL](http://msdn.microsoft.com/library/windows/desktop/bb759897) tarafından belirtilen yapıları *pAccel*.  
   
- `pAccel`  
- Bir dizi işaretçi `UDACCEL` hızlandırma bilgiler içeren yapıları. Öğeleri göre artan sırada sıralanması **nSec** üyesi.  
+ *pAccel*  
+ Hızlandırma bilgiler içeren UDACCEL yapıları dizisi işaretçi. Öğeleri göre artan sırada sıralanması `nSec` üyesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0.  
@@ -294,7 +294,7 @@ int SetBase(int nBase);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nBase`  
+ *nBase*  
  Denetim için yeni taban değeri. Ondalık için 10 veya 16 onaltılık için olabilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -311,7 +311,7 @@ CWnd* SetBuddy(CWnd* pWndBuddy);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWndBuddy`  
+ *pWndBuddy*  
  Yeni bir arkadaş penceresi işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -329,7 +329,7 @@ int SetPos32(int nPos);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nPos`  
+ *nPos*  
  Yeni konumu denetimi için. Bu değer, denetim için üst ve alt sınırları tarafından belirtilen aralıkta olmalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -353,8 +353,8 @@ void SetRange32(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nLower` Ve `nUpper`  
- Denetim için üst ve alt sınırları. İçin `SetRange`, hiçbiri sınırı büyük olamayacağı **UD_MAXVAL** veya küçüktür **UD_MINVAL**; Ayrıca, iki sınır arasındaki farkı aşamaz **UD_MAXVAL**. `SetRange32` herhangi bir kısıtlama sınırları yerleştirir; Tüm tamsayılar kullanın.  
+ *nLower* ve *nUpper*  
+ Denetim için üst ve alt sınırları. İçin `SetRange`, hiçbiri sınırı UD_MAXVAL büyük olabilir veya UD_MINVAL; sayısından az iki sınır arasındaki farkı UD_MAXVAL ek olarak, aşamaz. `SetRange32` herhangi bir kısıtlama sınırları yerleştirir; Tüm tamsayılar kullanın.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevini `SetRange32` 32-bit aralığı değer değiştirme düğmesi denetimi için ayarlar.  

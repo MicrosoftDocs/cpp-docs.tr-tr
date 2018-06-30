@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a71d72f8ab9e107e6a1557c73873effc8da7a5c6
-ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
+ms.openlocfilehash: 107dba503c11d3810f75dcd4ee6e6f5af47008fc
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36322289"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122986"
 ---
 # <a name="dispatch-maps"></a>Eşlemeleri Dağıtma
 
@@ -51,10 +51,10 @@ DECLARE_DISPATCH_MAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `DECLARE_DISPATCH_MAP` makrosu sınıf bildiriminin sonundaki. Ardından. Üye tanımlayan CPP dosyası işlevler için sınıf, kullanın `BEGIN_DISPATCH_MAP` makrosu. Her sınıfınızın yöntemleri ve özellikleri açığa çıkarılan makrosu girişleri dahil et ( `DISP_FUNCTION`, `DISP_PROPERTY`, vb.). Son olarak, `END_DISPATCH_MAP` makrosu.
+Declare_dıspatch_map makrosu sınıf bildiriminin sonundaki kullanın. Ardından. Sınıf üyesi işlevleri tanımlar CPP dosyası begın_dıspatch_map makrosu kullanın. Ardından makrosu girişleri her sınıfınızın sunulan yöntemleri ve özellikleri (dısp_functıon, dısp_property ve benzeri) içerir. Son olarak, end_dıspatch_map makrosu kullanın.
 
 > [!NOTE]
-> Sonra herhangi bir üye bildirirseniz `DECLARE_DISPATCH_MAP`, yeni bir erişim türü belirtmeniz gerekir ( **ortak**, **özel**, veya **korumalı**) onlar için.
+> Declare_dıspatch_map sonra herhangi bir üye bildirirseniz, yeni bir erişim türü belirtmeniz gerekir ( **ortak**, **özel**, veya **korumalı**) onlar için.
 
 Uygulama Sihirbazı'nı ve kod sihirbazları Otomasyon sınıfları oluşturma ve gönderme eşlemeleri korumada yardımcı. Eşlemeleri dağıtma hakkında daha fazla bilgi için bkz: [otomasyon sunucuları](../../mfc/automation-servers.md).
 
@@ -84,7 +84,7 @@ Temel sınıfın adını belirtir. *sınıfın*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gönderme Haritası sınıfınız için üye işlevleri tanımlar uygulaması (.cpp) dosyasına Başlat `BEGIN_DISPATCH_MAP` makrosu, makrosu girişleri her gönderme işlevleri ve özellikleri ekleyin ve gönderme Haritası tamamlamak `END_DISPATCH_MAP` Makro.
+Sınıfınız için üye işlevleri tanımlar uygulaması (.cpp) dosyasında, gönderme eşlemesi ile begın_dıspatch_map makrosu başlatın, makrosu girişleri her gönderme işlevleri ve özellikleri ekleyin ve END_DISPATCH_ gönderme Haritası tamamlayın Harita makrosu.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -100,7 +100,7 @@ END_DISPATCH_MAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-İle birlikte kullanılmalıdır `BEGIN_DISPATCH_MAP`.
+Begın_dıspatch_map ile birlikte kullanılması gerekir.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -138,23 +138,23 @@ Dış işlev adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtRetVal* bağımsız değişken türü ise **VARTYPE**. Bu bağımsız değişken için aşağıdaki olası değerler alındığı `VARENUM` numaralandırma:
+*VtRetVal* VARTYPE tür bağımsız değişkeni aşağıdaki gibidir. Bu bağımsız değişken için aşağıdaki olası değerler alındığı `VARENUM` numaralandırma:
 
 |Simgesi|Dönüş türü|
 |------------|-----------------|
-|`VT_EMPTY`|**void**|
-|`VT_I2`|**short**|
-|`VT_I4`|**long**|
-|`VT_R4`|**float**|
-|`VT_R8`|**double**|
-|`VT_CY`|`CY`|
-|`VT_DATE`|`DATE`|
-|`VT_BSTR`|`BSTR`|
-|`VT_DISPATCH`|`LPDISPATCH`|
-|`VT_ERROR`|`SCODE`|
-|`VT_BOOL`|`BOOL`|
-|`VT_VARIANT`|`VARIANT`|
-|`VT_UNKNOWN`|`LPUNKNOWN`|
+|VT_EMPTY|**void**|
+|VT_I2|**short**|
+|VT_I4|**long**|
+|VT_R4|**float**|
+|VT_R8|**double**|
+|VT_CY|CY|
+|VT_DATE|TARİH|
+|VT_BSTR|BSTR|
+|VT_DISPATCH|LPDISPATCH|
+|VT_ERROR|SCODE|
+|VT_BOOL|BOOL|
+|VT_VARIANT|VARIANT|
+|VT_UNKNOWN|LPUNKNOWN|
 
 *VtsParams* değişken değeri boşlukla ayrılmış bir liste değerleri `VTS_*` sabitleri. Bir veya daha fazla (değil virgüller) boşluklarla ayrılmış bu değerleri işlev parametre listesi belirtir. Örneğin,
 
@@ -166,31 +166,31 @@ kısa bir tamsayıya bir işaretçi tarafından izlenen kısa bir tamsayı içer
 
 |Simgesi|Parametre türü|
 |------------|--------------------|
-|`VTS_I2`|**short**|
-|`VTS_I4`|**long**|
-|`VTS_R4`|**float**|
-|`VTS_R8`|**double**|
-|`VTS_CY`|`const CY` veya `CY*`|
-|`VTS_DATE`|`DATE`|
-|`VTS_BSTR`|`LPCSTR`|
-|`VTS_DISPATCH`|`LPDISPATCH`|
-|`VTS_SCODE`|`SCODE`|
-|`VTS_BOOL`|`BOOL`|
-|`VTS_VARIANT`|`const VARIANT*` veya `VARIANT&`|
-|`VTS_UNKNOWN`|`LPUNKNOWN`|
-|`VTS_PI2`|__kısa\*__|
-|`VTS_PI4`|__uzun\*__|
-|`VTS_PR4`|__kayan nokta\*__|
-|`VTS_PR8`|__çift\*__|
-|`VTS_PCY`|`CY*`|
-|`VTS_PDATE`|`DATE*`|
-|`VTS_PBSTR`|`BSTR*`|
-|`VTS_PDISPATCH`|`LPDISPATCH*`|
-|`VTS_PSCODE`|`SCODE*`|
-|`VTS_PBOOL`|`BOOL*`|
-|`VTS_PVARIANT`|`VARIANT*`|
-|`VTS_PUNKNOWN`|`LPUNKNOWN*`|
-|`VTS_NONE`|Hiçbir parametre|
+|VTS_I2|**short**|
+|VTS_I4|**long**|
+|VTS_R4|**float**|
+|VTS_R8|**double**|
+|VTS_CY|`const CY` veya `CY*`|
+|VTS_DATE|TARİH|
+|VTS_BSTR|LPCSTR|
+|VTS_DISPATCH|LPDISPATCH|
+|VTS_SCODE|SCODE|
+|VTS_BOOL|BOOL|
+|VTS_VARIANT|`const VARIANT*` veya `VARIANT&`|
+|VTS_UNKNOWN|LPUNKNOWN|
+|VTS_PI2|__kısa\*__|
+|VTS_PI4|__uzun\*__|
+|VTS_PR4|__kayan nokta\*__|
+|VTS_PR8|__çift\*__|
+|VTS_PCY|`CY*`|
+|VTS_PDATE|`DATE*`|
+|VTS_PBSTR|`BSTR*`|
+|VTS_PDISPATCH|`LPDISPATCH*`|
+|VTS_PSCODE|`SCODE*`|
+|VTS_PBOOL|`BOOL*`|
+|VTS_PVARIANT|`VARIANT*`|
+|VTS_PUNKNOWN|`LPUNKNOWN*`|
+|VTS_NONE|Hiçbir parametre|
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -224,22 +224,22 @@ Dış özelliğin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtPropType* bağımsız değişken türü ise **VARTYPE**. Bu bağımsız değişken için olası değerler gelen alınır `VARENUM` numaralandırma:
+*VtPropType* bağımsız değişken türü ise **VARTYPE**. Bu bağımsız değişken için olası değerler VARENUM numaralandırma içinden alınır:
 
 |Simgesi|Özellik türü|
 |------------|-----------------------|
-|`VT_I2`|**short**|
-|`VT_I4`|**long**|
-|`VT_R4`|**float**|
-|`VT_R8`|**double**|
-|`VT_CY`|`CY`|
-|`VT_DATE`|`DATE`|
-|`VT_BSTR`|`CString`|
-|`VT_DISPATCH`|`LPDISPATCH`|
-|`VT_ERROR`|`SCODE`|
-|`VT_BOOL`|`BOOL`|
-|`VT_VARIANT`|`VARIANT`|
-|`VT_UNKNOWN`|`LPUNKNOWN`|
+|VT_I2|**short**|
+|VT_I4|**long**|
+|VT_R4|**float**|
+|VT_R8|**double**|
+|VT_CY|CY|
+|VT_DATE|TARİH|
+|VT_BSTR|`CString`|
+|VT_DISPATCH|LPDISPATCH|
+|VT_ERROR|SCODE|
+|VT_BOOL|BOOL|
+|VT_VARIANT|VARIANT|
+|VT_UNKNOWN|LPUNKNOWN|
 
 Bir dış istemcinin özelliği tarafından belirtilen üye değişkeninin değeri değiştiğinde *memberName* değiştirir; değişikliği bildirim yoktur.
 
@@ -281,7 +281,7 @@ Dış özelliğin adı.
 
 *MemberGet* ve *memberSet* işlevler tarafından belirlenen imzaları sahip *vtPropType* bağımsız değişkeni. *MemberGet* işlevi bağımsız değişken almayan ve tarafından belirtilen türde bir değer döndürür *vtPropType*. *MemberSet* işlev tarafından belirtilen türünde bir bağımsız değişken alır *vtPropType* ve hiçbir şey döndürür.
 
-*VtPropType* bağımsız değişken türü ise `VARTYPE`. Bu bağımsız değişken için olası değerler gelen alınır `VARENUM` numaralandırması. Açıklamalar için bu değerleri listesi için bkz: *vtRetVal* parametresinde [dısp_functıon](#disp_function). Unutmayın `VT_EMPTY`, listelenen `DISP_FUNCTION` açıklamalar, özellik veri türüne izin verilmiyor.
+*VtPropType* VARTYPE tür bağımsız değişkeni aşağıdaki gibidir. Bu bağımsız değişken için olası değerler VARENUM numaralandırma içinden alınır. Açıklamalar için bu değerleri listesi için bkz: *vtRetVal* parametresinde [dısp_functıon](#disp_function). Dısp_functıon Açıklamalar içinde listelenen VT_EMPTY özellik veri türüne izin verilmiyor unutmayın.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -319,24 +319,24 @@ Bildirim işlevi adını *szExternalName*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özellikleri ile tanımlanmış aksine `DISP_PROPERTY`, ile tanımlanmış bir özellik `DISP_PROPERTY_NOTIFY` tarafından belirtilen işlevin otomatik olarak çağıracaktır *pfnAfterSet* özelliği değiştiği.
+Dısp_property ile tanımlanan özellikleri dısp_property_notıfy ile tanımlanmış bir özelliği tarafından belirtilen işlevin otomatik olarak çağırır *pfnAfterSet* özelliği değiştiği.
 
-*VtPropType* bağımsız değişken türü ise `VARTYPE`. Bu bağımsız değişken için olası değerler gelen alınır `VARENUM` numaralandırma:
+*VtPropType* VARTYPE tür bağımsız değişkeni aşağıdaki gibidir. Bu bağımsız değişken için olası değerler VARENUM numaralandırma içinden alınır:
 
 |Simgesi|Özellik türü|
 |------------|-----------------------|
-|`VT_I2`|**short**|
-|`VT_I4`|**long**|
-|`VT_R4`|**float**|
-|`VT_R8`|**double**|
-|`VT_CY`|`CY`|
-|`VT_DATE`|`DATE`|
-|`VT_BSTR`|`CString`|
-|`VT_DISPATCH`|`LPDISPATCH`|
-|`VT_ERROR`|`SCODE`|
-|`VT_BOOL`|`BOOL`|
-|`VT_VARIANT`|`VARIANT`|
-|`VT_UNKNOWN`|`LPUNKNOWN`|
+|VT_I2|**short**|
+|VT_I4|**long**|
+|VT_R4|**float**|
+|VT_R8|**double**|
+|VT_CY|CY|
+|VT_DATE|TARİH|
+|VT_BSTR|`CString`|
+|VT_DISPATCH|LPDISPATCH|
+|VT_ERROR|SCODE|
+|VT_BOOL|BOOL|
+|VT_VARIANT|VARIANT|
+|VT_UNKNOWN|LPUNKNOWN|
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -378,7 +378,7 @@ Boşlukla ayrılmış bir dizi `VTS_*` değişken parametre türleri, her parame
 
 ### <a name="remarks"></a>Açıklamalar
 
-Farklı `DISP_PROPERTY_EX` makrosu, bu makrosu özelliğinin bir parametre listesini belirtmenize olanak verir. Bu dizini ya da parametreli özellikleri uygulamak için kullanışlıdır.
+Dısp_property_ex makrosu bu makrosu özelliğinin bir parametre listesini belirtmenize olanak tanır. Bu dizini ya da parametreli özellikleri uygulamak için kullanışlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -386,7 +386,7 @@ Get aşağıdaki bildirimi göz önünde bulundurun ve belirli satır ve sütun 
 
 [!code-cpp[NVC_MFCActiveXControl#9](../../mfc/codesnippet/cpp/dispatch-maps_3.h)]
 
-Bunlar aşağıdaki karşılık `DISP_PROPERTY_PARAM` makrosu denetim gönderme eşlemesindeki:
+Bunlar aşağıdaki dısp_property_param makrosu denetim gönderme eşlemesindeki karşılık gelir:
 
 [!code-cpp[NVC_MFCActiveXControl#10](../../mfc/codesnippet/cpp/dispatch-maps_4.cpp)]
 
@@ -394,7 +394,7 @@ Başka bir örnek olarak aşağıdaki get göz önünde bulundurun ve üye işle
 
 [!code-cpp[NVC_MFCActiveXControl#11](../../mfc/codesnippet/cpp/dispatch-maps_5.h)]
 
-Bunlar aşağıdaki karşılık `DISP_PROPERTY_PARAM` makrosu denetim gönderme eşlemesindeki:
+Bunlar aşağıdaki dısp_property_param makrosu denetim gönderme eşlemesindeki karşılık gelir:
 
 [!code-cpp[NVC_MFCActiveXControl#12](../../mfc/codesnippet/cpp/dispatch-maps_6.cpp)]
 

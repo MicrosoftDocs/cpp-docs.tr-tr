@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91a88fc73b27323327bce477fa2cdaca747ed21c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 31e13222ccd5ac12768961ff5e93d11e68ecfded
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375154"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122721"
 ---
 # <a name="cstringlist-class"></a>CStringList sınıfı
 Listelerini destekler `CString` nesneleri.  
@@ -128,7 +128,7 @@ class CStringList : public CObject
 ## <a name="remarks"></a>Açıklamalar  
  Tüm karşılaştırmaları dizedeki karakter dizeleri adresler yerine karşılaştırılır anlamı değeriyle yapılır.  
   
- `CStringList` bir araya getirir `IMPLEMENT_SERIAL` makrosu seri hale getirme ve alt öğeleri dökme desteklemek için. Bir listesi, `CString` nesneleri aşırı yüklenmiş ekleme işleciyle veya ile bir arşivde saklanır `Serialize` her üye işlev `CString` öğenin sırayla sıralandığı.  
+ `CStringList` ımplement_serıal makrosu seri hale getirme ve alt öğeleri dökme desteklemek için bir araya getirir. Bir listesi, `CString` nesneleri aşırı yüklenmiş ekleme işleciyle veya ile bir arşivde saklanır `Serialize` her üye işlev `CString` öğenin sırayla sıralandığı.  
   
  Tek bir dökümü gerekiyorsa `CString` öğeleri ayarlamalısınız döküm içerik derinliği 1 veya daha büyük.  
   

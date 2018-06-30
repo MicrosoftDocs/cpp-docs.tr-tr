@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5dd7e1b9b18e8478cfa4e61a22806cf067cb3699
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 542afe8ba67e1d9c6138998320483a964a08724a
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375979"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121831"
 ---
 # <a name="dialog-data-exchange-functions-for-ole-controls"></a>OLE Denetimleri için İletişim Kutusu Veri Değişimi İşlevleri
 Bu konu, bir iletişim kutusu, form görünümü veya denetim görünüm nesnesi OLE denetimi özelliği veri üyesi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi arasında veri değişimi için kullanılan DDX_OC işlevleri listeler.  
@@ -48,8 +48,8 @@ Bu konu, bir iletişim kutusu, form görünümü veya denetim görünüm nesnesi
 |[DDX_OCColorRO](#ddx_occolorro)|Aktarımını yönetir **OLE_COLOR** OLE denetimi bir salt okunur özelliği arasında veri ve bir **OLE_COLOR** veri üyesi.|  
 |[DDX_OCFloat](#ddx_ocfloat)|Aktarımını yönetir **float** (veya **çift**) OLE denetimi özelliği arasında veri ve **float** (veya **çift**) veri üyesi.|  
 |[DDX_OCFloatRO](#ddx_ocfloatro)|Aktarımını yönetir **float** (veya **çift**) OLE denetimi bir salt okunur özelliği arasında veri ve **float** (veya **çift**) verileri üye.|  
-|[Ddx_ocınt](#ddx_ocint)|Aktarımını yönetir `int` (veya **uzun**) OLE denetimi özelliği arasında veri ve bir `int` (veya **uzun**) veri üyesi.|  
-|[Ddx_ocıntro](#ddx_ocintro)|Aktarımını yönetir `int` (veya **uzun**) OLE denetimi bir salt okunur özelliği arasında veri ve bir `int` (veya **uzun**) veri üyesi.|  
+|[Ddx_ocınt](#ddx_ocint)|Aktarımını yönetir **int** (veya **uzun**) OLE denetimi özelliği arasında veri ve bir **int** (veya **uzun**) veri üyesi.|  
+|[Ddx_ocıntro](#ddx_ocintro)|Aktarımını yönetir **int** (veya **uzun**) OLE denetimi bir salt okunur özelliği arasında veri ve bir **int** (veya **uzun**) veri üyesi.|  
 |[DDX_OCShort](#ddx_ocshort)|Aktarımını yönetir **kısa** OLE denetimi özelliği arasında veri ve **kısa** veri üyesi.|  
 |[DDX_OCShortRO](#ddx_ocshortro)|Aktarımını yönetir **kısa** OLE denetimi bir salt okunur özelliği arasında veri ve **kısa** veri üyesi.|  
 |[DDX_OCText](#ddx_octext)|Aktarımını yönetir **CString** OLE denetimi özelliği arasında veri ve **CString** veri üyesi.|  
@@ -67,13 +67,13 @@ void AFXAPI DDX_OCBool(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  OLE denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Denetimin özelliğini gönderme kimliği.  
   
  *value*  
@@ -97,13 +97,13 @@ void AFXAPI DDX_OCBoolRO(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  OLE denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Denetimin özelliğini gönderme kimliği.  
   
  *value*  
@@ -116,7 +116,7 @@ void AFXAPI DDX_OCBoolRO(
   **Üstbilgi** afxdisp.h  
   
 ##  <a name="ddx_occolor"></a>  DDX_OCColor  
- `DDX_OCColor` İşlevi aktarımını yönetir **OLE_COLOR** bir iletişim kutusu OLE denetimindeki bir özelliği arasında veri form görünümü ya da Denetim Görünüm nesnesi ve **OLE_COLOR** iletişim kutusunun veri üyesi Form görünümünde veya denetim görünüm nesnesi.  
+ `DDX_OCColor` İşlevi iletişim kutusunda, form görünümü OLE denetimi özelliğinin arasında OLE_COLOR veri aktarımını yönetir veya denetim görünüm nesnesi ve iletişim kutusunda, OLE_COLOR veri üyesi form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```   
 void AFXAPI DDX_OCColor(
@@ -127,13 +127,13 @@ void AFXAPI DDX_OCColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  OLE denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Denetimin özelliğini gönderme kimliği.  
   
  *value*  
@@ -146,7 +146,7 @@ void AFXAPI DDX_OCColor(
   **Üstbilgi** afxdisp.h  
   
 ##  <a name="ddx_occolorro"></a>  DDX_OCColorRO  
- `DDX_OCColorRO` İşlevi aktarımını yönetir **OLE_COLOR** bir iletişim kutusu OLE denetimindeki bir salt okunur özelliği arasında veri form görünümü ya da Denetim Görünüm nesnesi ve **OLE_COLOR** veri üyesi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi.  
+ `DDX_OCColorRO` İşlevi bir iletişim kutusu, form görünümü OLE denetimindeki bir salt okunur özelliği arasında OLE_COLOR veri aktarımını yönetir veya denetim görünüm nesnesi ve iletişim kutusunda, OLE_COLOR veri üyesi form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```   
 void AFXAPI DDX_OCColorRO(
@@ -157,13 +157,13 @@ void AFXAPI DDX_OCColorRO(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  OLE denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Denetimin özelliğini gönderme kimliği.  
   
  *value*  
@@ -193,13 +193,13 @@ void AFXAPI DDX_OCFloat(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  OLE denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Denetimin özelliğini gönderme kimliği.  
   
  *value*  
@@ -229,13 +229,13 @@ void AFXAPI DDX_OCFloatRO(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  OLE denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Denetimin özelliğini gönderme kimliği.  
   
  *value*  
@@ -248,7 +248,7 @@ void AFXAPI DDX_OCFloatRO(
   **Üstbilgi** afxdisp.h  
   
 ##  <a name="ddx_ocint"></a>  Ddx_ocınt  
- `DDX_OCInt` İşlevi aktarımını yönetir `int` (veya **uzun**) arasında bir iletişim kutusu OLE denetimindeki özelliğinin verileri form görünümü ya da Denetim Görünüm nesnesi ve `int` (veya **uzun**) veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
+ `DDX_OCInt` İşlevi aktarımını yönetir **int** (veya **uzun**) arasında bir iletişim kutusu OLE denetimindeki özelliğinin verileri form görünümü ya da Denetim Görünüm nesnesi ve **int**(veya **uzun**) veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```   
 void AFXAPI DDX_OCInt(
@@ -265,13 +265,13 @@ void AFXAPI DDX_OCInt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  OLE denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Denetimin özelliğini gönderme kimliği.  
   
  *value*  
@@ -284,7 +284,7 @@ void AFXAPI DDX_OCInt(
   **Üstbilgi** afxdisp.h  
   
 ##  <a name="ddx_ocintro"></a>  Ddx_ocıntro  
- `DDX_OCIntRO` İşlevi aktarımını yönetir `int` (veya **uzun**) arasında bir iletişim kutusu OLE denetimindeki bir salt okunur özelliği veri form görünümü ya da Denetim Görünüm nesnesi ve `int` (veya **uzun** ) veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
+ `DDX_OCIntRO` İşlevi aktarımını yönetir **int** (veya **uzun**) arasında bir iletişim kutusu OLE denetimindeki bir salt okunur özelliği veri form görünümü ya da Denetim Görünüm nesnesi ve **int** (veya **uzun**) veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
   
 ```   
 void AFXAPI DDX_OCIntRO(
@@ -301,13 +301,13 @@ void AFXAPI DDX_OCIntRO(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  OLE denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Denetimin özelliğini gönderme kimliği.  
   
  *value*  
@@ -331,13 +331,13 @@ void AFXAPI DDX_OCShort(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  OLE denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Denetimin özelliğini gönderme kimliği.  
   
  *value*  
@@ -361,13 +361,13 @@ void AFXAPI DDX_OCShortRO(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  OLE denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Denetimin özelliğini gönderme kimliği.  
   
  *value*  
@@ -391,13 +391,13 @@ void AFXAPI DDX_OCText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir **CDataExchange** nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  OLE denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Denetimin özelliğini gönderme kimliği.  
   
  *value*  
@@ -421,13 +421,13 @@ void AFXAPI DDX_OCTextRO(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
+ *pDX*  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  OLE denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
   
- `dispid`  
+ *DISPID*  
  Denetimin özelliğini gönderme kimliği.  
   
  *value*  

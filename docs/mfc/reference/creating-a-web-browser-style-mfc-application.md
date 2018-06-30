@@ -1,7 +1,7 @@
 ---
 title: Bir Web tarayıcısı stilinde MFC uygulaması oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/25/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20c7228b08200466bd62d1cdbbf7e2f66f8efebb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1553f7ccc3b22b4e3d76d8c49d94ba2a61c19e97
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374529"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122559"
 ---
 # <a name="creating-a-web-browser-style-mfc-application"></a>Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma
 Bir Web tarayıcısı stilinde uygulama bilgileri (örneğin, HTML veya etkin belgeler) Internet veya intranet yanı sıra klasörler yerel dosya sistemi ve ağ üzerinde erişebilir. Uygulamanın görünümü sınıfından türetilen tarafından [CHtmlView](../../mfc/reference/chtmlview-class.md), etkili bir şekilde WebBrowser denetimi ile görünümü sağlayarak uygulama bir Web tarayıcısı olun.  
@@ -50,30 +50,30 @@ Bir Web tarayıcısı stilinde uygulama bilgileri (örneğin, HTML veya etkin be
   
  `CHtmlView` Uygulamanızı bir Web veya HTML sayfası üzerine bir görünüm verir Web tarayıcısı denetimi için sarmalayıcı gibi davranır. Bir geçersiz kılma için sihirbazın oluşturduğu [OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) Microsoft Visual C++ Web sitesine gezinme bağlantı sağlama view sınıfında, işlevi:  
   
-```  
+```cpp
 void CWebView::OnInitialUpdate()  
 {  
     CHtmlView::OnInitialUpdate();
 
- *// TODO: This code navigates to a popular spot on the web. *//  change the code to go where you'd like.  
+    // TODO: This code navigates to a popular spot on the web.
+    // Change the code to go where you'd like.  
     Navigate2(_T("http://www.msdn.microsoft.com/vstudio/"),
-    NULL,
-    NULL);
+        NULL,
+        NULL);
+}
+```
 
-} 
-```  
+Bu site biriyle kendi değiştirebilir veya kullanabilirsiniz [LoadFromResource](../../mfc/reference/chtmlview-class.md#loadfromresource) görünümü için varsayılan içerik olarak projenin kaynak komut dosyasında bulunan bir HTML sayfasını açmak için üye işlevi. Örneğin:  
   
- Bu site biriyle kendi değiştirebilir veya kullanabilirsiniz [LoadFromResource](../../mfc/reference/chtmlview-class.md#loadfromresource) görünümü için varsayılan içerik olarak projenin kaynak komut dosyasında bulunan bir HTML sayfasını açmak için üye işlevi. Örneğin:  
-  
-```  
+```cpp
 void CWebView::OnInitialUpdate()  
 {  
     CHtmlView::OnInitialUpdate();
 
- *// TODO: This code navigates to a popular spot on the web. *//  change the code to go where you'd like.  
+    // TODO: This code navigates to a popular spot on the web.
+    // Change the code to go where you'd like.  
     LoadFromResource(IDR_HTML1);
-
-} 
+}
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

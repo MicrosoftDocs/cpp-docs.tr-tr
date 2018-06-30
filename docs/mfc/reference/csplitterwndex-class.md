@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0dfacc6bf08aa5b36288a9933ffa9980937f2b2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0ae4a24424acc4385927e0f7c99735bd50a6d472
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368881"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121656"
 ---
 # <a name="csplitterwndex-class"></a>CSplitterWndEx sınıfı
 
@@ -81,13 +81,13 @@ virtual void OnDrawSplitter(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `pDC`  
- Cihaz bağlamı işaretçi. Bu parametre ise `NULL`, framework etkin pencereyi yeniden çizer.  
+ [in] *pDC*  
+ Cihaz bağlamı işaretçi. Bu parametre NULL ise, framework etkin pencereyi yeniden çizer.  
   
- [in] `nType`  
+ [in] *nTür*  
  Aşağıdakilerden birini `CSplitterWnd::ESplitType` çizmek için Bölümlendirici pencere öğesi belirten numaralandırma değerlerinin. Geçerli değerler `splitBox`, `splitBar`, `splitIntersection`, ve `splitBorder`.  
   
- [in] `rect`  
+ [in] *rect*  
  Bir sınırlayıcı dikdörtgenini boyutları ve belirtilen Bölümlendirici pencere öğesi çizmek için konumu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  

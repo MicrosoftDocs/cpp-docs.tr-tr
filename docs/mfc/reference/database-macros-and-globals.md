@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcafff20ad79f68f2bb5d4195c38603da63b9d17
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cb4dbb75dba33fe616fbce95cdec74bd81cc3fe9
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370779"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121922"
 ---
 # <a name="database-macros-and-globals"></a>Veritabanı Makroları ve Genel Öğeleri
 Makrolar ve genel öğeleri aşağıda listelenen ODBC tabanlı veritabanı uygulamaları için geçerlidir. DAO tabanlı uygulamalarla kullanılmaz.  
@@ -52,7 +52,7 @@ Makrolar ve genel öğeleri aşağıda listelenen ODBC tabanlı veritabanı uygu
 
 
 ## <a name="afxdbinitmodule"></a> AfxDbInitModule
-MFC veritabanı (veya DAO) dinamik olarak MFC'ye bağlı normal bir MFC DLL gelen desteklemek için bu işlevi çağrısı, Normal MFC DLL içinde eklemek **CWinApp::InitInstance** MFC başlatılamadı işlevi DLL veritabanı.  
+MFC veritabanı (veya DAO) dinamik olarak MFC'ye bağlı normal bir MFC DLL gelen desteklemek için bu işlevi çağrısı, Normal MFC DLL içinde eklemek `CWinApp::InitInstance` MFC başlatılamadı işlevi DLL veritabanı.  
    
 ### <a name="syntax"></a>Sözdizimi    
 ```
@@ -60,7 +60,7 @@ void AFXAPI AfxDbInitModule( );
 ```  
    
 ### <a name="remarks"></a>Açıklamalar  
- Bu çağrı önce herhangi bir temel sınıf çağrısına oluşur veya MFC veritabanı DLL erişen kodu eklenen tüm emin olun. MFC DLL MFC uzantı DLL'si veritabanıdır; MFC uzantı DLL'si sipariş içine kablolu için de bir **CDynLinkLibrary** zinciri, onu oluşturmanız gerekir bir **CDynLinkLibrary** kullanarak her bir modüle bağlamda nesnesi. `AfxDbInitModule` oluşturur **CDynLinkLibrary** içine kablolu böylece Normal MFC DLL bağlamda nesne **CDynLinkLibrary** nesne Normal MFC DLL zinciri.  
+ Bu çağrı önce herhangi bir temel sınıf çağrısına oluşur veya MFC veritabanı DLL erişen kodu eklenen tüm emin olun. MFC DLL MFC uzantı DLL'si veritabanıdır; MFC uzantı DLL'si sipariş içine kablolu için de bir `CDynLinkLibrary` zinciri, onu oluşturmanız gerekir bir `CDynLinkLibrary` kullanarak her bir modüle bağlamda nesnesi. `AfxDbInitModule` oluşturur `CDynLinkLibrary` içine kablolu böylece Normal MFC DLL bağlamda nesne `CDynLinkLibrary` nesne Normal MFC DLL zinciri.  
    
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** < afxdll_.h >  
@@ -78,19 +78,19 @@ AFX_ODBC_CALL(SQLFunc)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `SQLFunc`  
+ *SQLFunc*  
  Bir ODBC API işlev. ODBC API işlevleri hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `AFX_ODBC_CALL` Art arda işlevi kadar artık döndürür çağırır `SQL_STILL_EXECUTING`.  
   
- Çağırmadan önce `AFX_ODBC_CALL`, bir değişkeni bildirilmelidir `nRetCode`, türü **RETCODE**.  
+ Çağırmadan önce `AFX_ODBC_CALL`, bir değişkeni bildirilmelidir `nRetCode`, RETCODE türünde.  
   
- MFC ODBC şimdi kullanımı yalnızca zaman uyumlu işleme sınıfları unutmayın. Zaman uyumsuz bir işlem gerçekleştirmek için ODBC API işlev çağrısı **SQLSetConnectOption**. Daha fazla bilgi için "Yürütme işlevleri zaman uyumsuz olarak" Windows SDK konusuna bakın.  
+ MFC ODBC şimdi kullanımı yalnızca zaman uyumlu işleme sınıfları unutmayın. Zaman uyumsuz bir işlem gerçekleştirmek için ODBC API işlev çağrısı `SQLSetConnectOption`. Daha fazla bilgi için "Yürütme işlevleri zaman uyumsuz olarak" Windows SDK konusuna bakın.  
 
   
 ### <a name="example"></a>Örnek  
- Bu örnekte `AFX_ODBC_CALL` çağırmak için **sütunu** tarafından adlandırılmış tabloda sütun listesini döndürür ODBC API işlevi `strTableName`. Bildirimi Not `nRetCode` ve işlev için parametreleri geçirmek için kayıt kümesi veri üyeleri kullanımı. Örnek ile çağrısının sonuçlarını denetimi de gösterir **denetleyin**, sınıfının üye işlevini `CRecordset`. Değişkeni `prs` gösteren bir işaretçidir bir `CRecordset` nesnesi, başka bir yerde bildirilmedi.  
+ Bu örnekte `AFX_ODBC_CALL` çağırmak için `SQLColumns` tarafından adlandırılmış tabloda sütun listesini döndürür ODBC API işlevi `strTableName`. Bildirimi Not `nRetCode` ve işlev için parametreleri geçirmek için kayıt kümesi veri üyeleri kullanımı. Örnek ile çağrısının sonuçlarını denetimi de gösterir `Check`, sınıfının üye işlevini `CRecordset`. Değişkeni `prs` gösteren bir işaretçidir bir `CRecordset` nesnesi, başka bir yerde bildirilmedi.  
   
  [!code-cpp[NVC_MFCDatabase#39](../../mfc/codesnippet/cpp/database-macros-and-globals_1.cpp)]  
 
@@ -105,17 +105,17 @@ AFX_SQL_ASYNC(prs, SQLFunc)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `prs`  
+ *PRS*  
  Bir işaretçi bir `CRecordset` nesnesi veya bir `CDatabase` nesnesi. MFC 4.2 ile başlayarak, bu parametre değeri yoksayılır.  
   
- `SQLFunc`  
+ *SQLFunc*  
  Bir ODBC API işlev. ODBC API işlevleri hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AFX_SQL_ASYNC` yalnızca makrosu çağırır [AFX_ODBC_CALL](#afx_odbc_call) ve yoksayar `prs` parametresi. MFC sürümlerinde 4.2 önce `AFX_SQL_ASYNC` döndürebilir ODBC API işlevleri çağırmak için kullanılan `SQL_STILL_EXECUTING`. ODBC API işlevini geri döndürmedi, `SQL_STILL_EXECUTING`, ardından `AFX_SQL_ASYNC` çağırırdı `prs->OnWaitForDataSource`.  
+ `AFX_SQL_ASYNC` yalnızca makrosu çağırır [AFX_ODBC_CALL](#afx_odbc_call) ve yoksayar *prs* parametresi. MFC sürümlerinde 4.2 önce `AFX_SQL_ASYNC` döndürebilir ODBC API işlevleri çağırmak için kullanılan `SQL_STILL_EXECUTING`. ODBC API işlevini geri döndürmedi, `SQL_STILL_EXECUTING`, ardından `AFX_SQL_ASYNC` çağırırdı `prs->OnWaitForDataSource`.  
   
 > [!NOTE]
->  MFC ODBC sınıfları artık yalnızca zaman uyumlu işleme kullanın. Zaman uyumsuz bir işlem gerçekleştirmek için ODBC API işlev çağrısı **SQLSetConnectOption**. Daha fazla bilgi için "Yürütme işlevleri zaman uyumsuz olarak" Windows SDK konusuna bakın.  
+>  MFC ODBC sınıfları artık yalnızca zaman uyumlu işleme kullanın. Zaman uyumsuz bir işlem gerçekleştirmek için ODBC API işlev çağrısı `SQLSetConnectOption`. Daha fazla bilgi için "Yürütme işlevleri zaman uyumsuz olarak" Windows SDK konusuna bakın.  
   
 ### <a name="requirements"></a>Gereksinimler  
   **Üstbilgi** afxdb.h  
@@ -128,13 +128,13 @@ AFX_SQL_SYNC(SQLFunc)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `SQLFunc`  
+ *SQLFunc*  
  Bir ODBC API işlev. Bu işlevler hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu makro değil döndürülecek ODBC API işlevleri çağırmak için kullanmak `SQL_STILL_EXECUTING`.  
   
- Çağırmadan önce `AFX_SQL_SYNC`, bir değişkeni bildirilmelidir `nRetCode`, türü **RETCODE**. Değerini kontrol edebilirsiniz `nRetCode` makrosu çağrısından sonra.  
+ Çağırmadan önce `AFX_SQL_SYNC`, bir değişkeni bildirilmelidir `nRetCode`, RETCODE türünde. Değerini kontrol edebilirsiniz `nRetCode` makrosu çağrısından sonra.  
   
  Unutmayın uygulanması `AFX_SQL_SYNC` MFC 4.2 değiştirildi. Sunucu durumu denetleniyor artık gerekli olmadığından `AFX_SQL_SYNC` yalnızca bir değere atar `nRetCode`. Örneğin, çağrıyı yapan yerine  
   

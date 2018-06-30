@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb8c7d46a2ffc2d569cc123d51aaebbf43b5e328
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b2f5f0a72c08aeabcd764cf4c7763c9506769585
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372411"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121630"
 ---
 # <a name="cuintarray-class"></a>CUIntArray sınıfı
 İmzasız tamsayılar dizileri destekler.  
@@ -69,7 +69,7 @@ class CUIntArray : public CObject
 ```  
   
 ## <a name="members"></a>Üyeler  
- Üye işlevlerini `CUIntArray` sınıfının üye fonksiyonları benzer [CObArray](../../mfc/reference/cobarray-class.md). Bu benzerlik nedeniyle kullandığınız `CObArray` başvuru belgelerini üye fonksiyonu özellikleri için. Gördüğünüz yerde bir `CObject` işaretçi bir işlev parametresi veya dönüş değeri olarak yerine bir **UINT**.  
+ Üye işlevlerini `CUIntArray` sınıfının üye fonksiyonları benzer [CObArray](../../mfc/reference/cobarray-class.md). Bu benzerlik nedeniyle kullandığınız `CObArray` başvuru belgelerini üye fonksiyonu özellikleri için. Gördüğünüz yerde bir `CObject` işaretçisi bir işlev parametresi veya dönüş değeri olarak bir UINT değiştirin.  
   
  `CObject* CObArray::GetAt( int <nIndex> ) const;`  
   
@@ -94,7 +94,7 @@ class CUIntArray : public CObject
 |[CObArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Geçerli bir üst sınır yukarıdaki tüm kullanılmayan belleği serbest bırakır.|  
 |[CObArray::GetAt](../../mfc/reference/cobarray-class.md#getat)|Belirtilen dizindeki değeri döndürür.|  
 |[CObArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Bu dizide öğe sayısını alır.|  
-|[CObArray::GetData](../../mfc/reference/cobarray-class.md#getdata)|Dizideki öğelere erişim sağlar. Olabilir **NULL**.|  
+|[CObArray::GetData](../../mfc/reference/cobarray-class.md#getdata)|Dizideki öğelere erişim sağlar. NULL olabilir.|  
 |[CObArray::GetSize](../../mfc/reference/cobarray-class.md#getsize)|Bu dizide öğe sayısını alır.|  
 |[CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|En büyük geçerli dizinini döndürür.|  
 |[CObArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Bir öğenin (veya başka bir dizinin tüm öğeleri) belirtilen bir dizinde ekler.|  
@@ -112,7 +112,7 @@ class CUIntArray : public CObject
 |[CObArray::operator]](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi alır veya ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- İmzasız tamsayı veya **UINT**, sözcükleri ve doublewords söz farklı fiziksel boyutu bir **UINT** işletim ortamı hedef bağlı olarak değiştirebilirsiniz. A **UINT** bir doubleword aynı boyutta değil.  
+ İşletim ortamı hedef bağlı olarak bir UINT fiziksel boyutunu değiştirebilirsiniz imzasız tamsayı ya da UINT, sözcükleri ve doublewords farklıdır. Bir UINT bir doubleword aynı boyutta olur.  
   
  `CUIntArray` bir araya getirir [ımplement_dynamıc](run-time-object-model-services.md#implement_dynamic) çalışma zamanı tür erişimi ve için dökme desteklemek için makrosu bir [CDumpContext](../../mfc/reference/cdumpcontext-class.md) nesnesi. Tek tek işaretsiz tamsayı öğelerinin bir döküm gerekiyorsa, 1 veya daha büyük döküm bağlam derinliği ayarlamanız gerekir. İşaretsiz tamsayı diziler seri hale getirilemez.  
   

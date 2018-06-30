@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1712f0d26fc0d9ac3dcfb0f2a15a906351f43154
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bcc5290b08b6a0b6159c1ba9b0b5b05d02a178ba
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374103"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122075"
 ---
 # <a name="csyncobject-class"></a>CSyncObject sınıfı
 Win32 eşitleme nesneleri için ortak işlevselliği sağlayan bir saf sanal sınıf.  
@@ -89,8 +89,8 @@ virtual ~CSyncObject();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pstrName`  
- Nesnenin adı. Varsa **NULL**, *pstrName* null olur.  
+ *pstrName*  
+ Nesnenin adı. NULL ise *pstrName* null olur.  
   
 ##  <a name="lock"></a>  CSyncObject::Lock  
  Eşitleme nesnesi tarafından denetlenen kaynak erişim kazanmak için bu işlevini çağırın.  
@@ -100,8 +100,8 @@ virtual BOOL Lock(DWORD dwTimeout = INFINITE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwTimeout`  
- Eşitleme nesnenin kullanılabilir olması için beklenecek süreyi milisaniye olarak süre miktarını belirtir (işaret). Varsa **SONSUZ**, `Lock` nesne döndürmeden önce işaret kadar bekler.  
+ *dwTimeout*  
+ Eşitleme nesnenin kullanılabilir olması için beklenecek süreyi milisaniye olarak süre miktarını belirtir (işaret). SONSUZ, `Lock` nesne döndürmeden önce işaret kadar bekler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılı olduğunda sıfır olmayan; Aksi takdirde 0.  
@@ -124,7 +124,7 @@ operator HANDLE() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, eşitleme nesnesi; tanıtıcısı Aksi takdirde, **NULL**.  
+ Başarılı olursa, eşitleme nesnesi; tanıtıcısı Aksi takdirde NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Windows API'larını doğrudan çağırmak için tanıtıcı kullanabilirsiniz.  
@@ -139,17 +139,17 @@ virtual BOOL Unlock() = 0; virtual BOOL Unlock(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lCount`  
+ *lCount*  
  Varsayılan uygulama tarafından kullanılmaz.  
   
- `lpPrevCount`  
+ *lpPrevCount*  
  Varsayılan uygulama tarafından kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Her zaman varsayılan uygulaması döndürür **doğru**.  
+ Varsayılan uygulama her zaman TRUE değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İki parametre bildirimi her zaman varsayılan uygulamasını döndürür **doğru**. Bu işlev, çağıran iş parçacığı tarafından sahip olunan eşitleme nesneye erişimi serbest bırakmak için çağrılır. İkinci bildirim eşitleme nesneleri kontrollü bir kaynağa birden fazla erişime semafor gibi sağlanır.  
+ İki parametre bildirimi her zaman varsayılan uygulaması TRUE değerini döndürür. Bu işlev, çağıran iş parçacığı tarafından sahip olunan eşitleme nesneye erişimi serbest bırakmak için çağrılır. İkinci bildirim eşitleme nesneleri kontrollü bir kaynağa birden fazla erişime semafor gibi sağlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CObject sınıfı](../../mfc/reference/cobject-class.md)   

@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89de8dddae6d6549fe12086b84e6bb656afcbc4f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 95e05c071057025bda8e841be2cd5c6b17971626
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374994"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37122574"
 ---
 # <a name="cstdiofile-class"></a>CStdioFile sınıfı
 Çalışma zamanı işlevi tarafından açılan C çalışma zamanı akışı dosyasını temsil eder [fopen](../../c-runtime-library/reference/fopen-wfopen.md).  
@@ -109,28 +109,28 @@ CStdioFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pOpenStream`  
+ *pOpenStream*  
  C çalışma zamanı işlevine bir çağrı tarafından döndürülen dosya işaretçisini belirtir [fopen](../../c-runtime-library/reference/fopen-wfopen.md).  
   
- `lpszFileName`  
+ *lpszFileName*  
  İstenen dosya yolu bir dizeyi belirtir. Yol, göreli veya mutlak olabilir.  
   
- `nOpenFlags`  
- Dosya oluşturma, dosya paylaşımı ve dosya erişim modları seçeneklerini belirtir. Bit düzeyinde OR kullanarak birden çok seçenek belirtebilirsiniz ( `|`) işleci.  
+ *nOpenFlags*  
+ Dosya oluşturma, dosya paylaşımı ve dosya erişim modları seçeneklerini belirtir. Bit düzeyinde OR kullanarak birden çok seçenek belirtebilirsiniz ( **|** ) işleci.  
   
  Bir dosya erişim modu seçeneği gereklidir; Diğer modları isteğe bağlıdır. Bkz: [CFile::CFile](../../mfc/reference/cfile-class.md#cfile) modu seçenekleri ve diğer bayraklar listesi. MFC sürüm 3.0 ve üstü, paylaşım bayrakları izin verilir.  
   
- `pTM`  
+ *pTM*  
  CAtlTransactionManager nesnesine işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan Oluşturucu bir dosyaya eklemez `CStdioFile` nesnesi. Bu oluşturucuyu kullanırken kullanmalısınız `CStdioFile::Open` bir dosyayı açın ve kendisine eklemek için yöntemi `CStdioFile` nesnesi.  
   
- Tek parametre Oluşturucusu bir açık dosya akışı iliştirir `CStdioFile` nesnesi. İşaretçi değerler önceden tanımlanmış giriş/çıkış dosya işaretçileri izin `stdin`, `stdout`, veya `stderr`.  
+ Tek parametre Oluşturucusu bir açık dosya akışı iliştirir `CStdioFile` nesnesi. İşaretçi değerler önceden tanımlanmış giriş/çıkış dosya işaretçileri izin *stdin*, *stdout*, veya *stderr*.  
   
  İki parametre Oluşturucusu oluşturur bir `CStdioFile` nesne ve karşılık gelen dosya ile belirtilen yol açar.  
   
- Geçirirseniz `NULL` ya da `pOpenStream` veya `lpszFileName`, Oluşturucusu oluşturur bir `CInvalidArgException*`.  
+ NULL ya da başarılı olursa *pOpenStream* veya *lpszFileName*, Oluşturucusu oluşturur bir `CInvalidArgException*`.  
   
  Dosya açılan oluşturulamaz veya olursa Oluşturucusu oluşturur bir `CFileException*`.  
   
@@ -145,7 +145,7 @@ FILE* m_pStream;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu **NULL** dosya hiç açılmış veya kapatıldı.  
+ Dosya hiç açılmış veya kapatıldı NULL olur.  
   
 ##  <a name="open"></a>  CStdioFile::Open  
  Fazla Yüklendi. Açık varsayılan ile kullanılmak üzere tasarlanmıştır `CStdioFile` Oluşturucusu.  
@@ -165,25 +165,25 @@ virtual BOOL Open(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszFileName`  
+ *lpszFileName*  
  İstenen dosyanın yolu olan bir dize. Yol, göreli veya mutlak olabilir.  
   
- `nOpenFlags`  
+ *nOpenFlags*  
  Paylaşım ve erişim modu. Dosyayı açarken gerçekleştirilecek eylemi belirtir. Bit düzeyinde-OR kullanarak Seçenekleri birleştirebilirsiniz (&#124;) işleci. Bir erişim izni ve bir paylaşım seçeneği gereklidir; modeCreate ve modeNoInherit modları isteğe bağlıdır.  
   
- `pError`  
+ *pError*  
  Bir işaretçi var olan bir dosya özel durumu nesneye başarısız bir işlemin durumunu alacak.  
   
- `pTM`  
+ *pTM*  
  İşaretçi bir `CAtlTransactionManager` nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
+ Başarılı olursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="readstring"></a>  CStdioFile::ReadString  
- Bir sınırı kadar bir arabellek içine metin verileri okur `nMax`ilişkili dosyasından -1 karakter `CStdioFile` nesnesi.  
+ Bir sınırı kadar bir arabellek içine metin verileri okur *nMax*ilişkili dosyasından -1 karakter `CStdioFile` nesnesi.  
   
 ```  
 virtual LPTSTR ReadString(
@@ -194,25 +194,25 @@ virtual BOOL ReadString(CString& rString);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpsz`  
+ *lpsz*  
  Sonlandırılmış metin dizesini alacak kullanıcı tarafından sağlanan bir arabellek için bir işaretçi belirtir.  
   
- `nMax`  
+ *nMax*  
  Sondaki boş karakter saymaz okumak için karakter üst sınırını belirtir.  
   
- `rString`  
+ *rString*  
  Bir başvuru bir `CString` işlevi döndüğünde dizeyi içeren nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Metin verileri içeren arabellek için bir işaretçi. **NULL** dosya sonu herhangi bir veri; okumadan ulaştıysanız veya boolean ise, **FALSE** dosya sonu herhangi bir veri okumadan ulaştıysanız.  
+ Metin verileri içeren arabellek için bir işaretçi. Dosya sonu herhangi bir veri okumadan ulaştıysanız NULL; veya herhangi bir veri okumadan boolean, dosya sonu ise FALSE ulaşıldı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Okuma ilk yeni satır karakteri tarafından durduruldu. Bu durumda, daha az ise `nMax`-1 karakter okuma, yeni satır karakteri arabellekte depolanır. Bir null karakter ('\0'), her iki durumda da eklenir.  
+ Okuma ilk yeni satır karakteri tarafından durduruldu. Bu durumda, daha az ise *nMax*-1 karakter okuma, yeni satır karakteri arabellekte depolanır. Bir null karakter ('\0'), her iki durumda da eklenir.  
   
  [CFile::Read](../../mfc/reference/cfile-class.md#read) metin modu giriş, ancak değil sonlandırmak için bir satır başı satır besleme çifti üzerinde de kullanılabilir.  
   
 > [!NOTE]
->  `CString` Bu işlev sürümünü kaldırır `'\n'` varsa; `LPTSTR` sürüm içermiyor.  
+>  `CString` Bu işlev sürümünü kaldırır `'\n'` varsa; LPTSTR sürüm içermiyor.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#38](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_2.cpp)]  
@@ -227,17 +227,17 @@ virtual ULONGLONG Seek(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lOff`  
+ *lOff*  
  İşaretçinin taşımak için bayt sayısı.  
   
- `nFrom`  
+ *nFrom*  
  İşaretçi taşıma modu. Aşağıdaki değerlerden biri olmalıdır:  
   
-- `CFile::begin`: Taşıma dosya işaretçisini `lOff` bayt iletmek dosya baştan.  
+- `CFile::begin`: Taşıma dosya işaretçisini *lOff* bayt iletmek dosya baştan.  
   
-- `CFile::current`: Taşıma dosya işaretçisini `lOff` dosyayı geçerli konumundan bayt.  
+- `CFile::current`: Taşıma dosya işaretçisini *lOff* dosyayı geçerli konumundan bayt.  
   
-- `CFile::end`: Taşıma dosya işaretçisini `lOff` dosyasının sonuna baytlar. Unutmayın `lOff` gerekir olması mevcut arama negatif dosya; değerleri arama için dosya sonunun pozitif.  
+- `CFile::end`: Taşıma dosya işaretçisini *lOff* dosyasının sonuna baytlar. Unutmayın *lOff* gerekir olması mevcut arama negatif dosya; değerleri arama için dosya sonunun pozitif.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İstenen konumu yasal, ise `Seek` dosyanın başından itibaren yeni bayt uzaklığı döndürür. Aksi takdirde, dönüş değeri tanımlanmamış ve `CFileException` nesnesi oluşturulur.  
@@ -262,15 +262,15 @@ virtual void WriteString(LPCTSTR lpsz);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpsz`  
+ *lpsz*  
  Sonlandırılmış bir dizeyi içeren bir arabellek için bir işaretçi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sondaki boş karakter ( `\0`) dosyasına yazılmaz. Bu yöntem satırbaşı karakterlerini Yazar `lpsz` dosyasına bir satır başı/satır besleme çifti olarak.  
+ Sondaki boş karakter ( `\0`) dosyasına yazılmaz. Bu yöntem satırbaşı karakterlerini Yazar *lpsz* dosyasına bir satır başı/satır besleme çifti olarak.  
   
  Bir dosyaya, kullanmak null ile sonlandırılmış olmayan veri yazmak istiyorsanız `CStdioFile::Write` veya [CFile::Write](../../mfc/reference/cfile-class.md#write).  
   
- Bu yöntem oluşturulur bir `CInvalidArgException*` belirtirseniz `NULL` için `lpsz` parametresi.  
+ Bu yöntem oluşturulur bir `CInvalidArgException*` NULL belirtirseniz *lpsz* parametresi.  
   
  Bu yöntem oluşturulur bir `CFileException*` yanıt dosya sistemi hatalarını olarak.  
   

@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d126c7e6ef77142f20a9dd9d7ed68c44ede5fc1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 00ec945c5f0cdbb0c12f49b90719c31bf841ef2f
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375285"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121643"
 ---
 # <a name="cwinformscontrol-class"></a>Ddx_managedcontrol sınıfı
 Bir Windows Forms denetimini barındırmak için temel işlevleri sağlar.  
@@ -113,25 +113,25 @@ inline BOOL CreateManagedControl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pType`  
+ *pType*  
  Oluşturulacak denetim veri türü. Olmalıdır bir [türü](https://msdn.microsoft.com/en-us/library/system.type) veri türü.  
   
- `dwStyle`  
+ *dwStyle*  
  Denetime uygulamak için pencere stili. Bir birleşimini belirtin [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles). Şu anda yalnızca aşağıdaki stillerini desteklenir: WS_TABSTOP, ws_vısıble, ws_dısabled ve WS_GROUP.  
   
- `rect`  
+ *Rect*  
  A [RECT yapısı](../../mfc/reference/rect-structure1.md) denetiminin sol üst ve sağ alt köşe koordinatlarını tanımlar (ilk aşırı yükleme yalnızca).  
   
- `nPlaceHolderID`  
+ *nPlaceHolderID*  
  Statik yer tutucu denetiminin tanıtıcısı kaynak düzenleyicisinde yerleştirilir. Yeni oluşturulan Windows Forms denetimi konum, z düzenini ve stili varsayılarak statik denetimi değiştirir (ikinci aşırı yükleme yalnızca).  
   
- `pParentWnd`  
+ *pParentWnd*  
  Üst pencere için bir işaretçi.  
   
- `nID`  
+ *nID*  
  Yeni oluşturulan denetimine atanan kaynak kimlik numarası.  
   
- `pControl`  
+ *pControl*  
  Bir Windows Forms denetimi ile ilişkilendirilecek örneği [Ddx_managedcontrol](../../mfc/reference/cwinformscontrol-class.md) nesne (yalnızca dördüncü aşırı).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -140,13 +140,13 @@ inline BOOL CreateManagedControl(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem .NET Framework Windows Forms denetimini bir MFC kapsayıcısındaki başlatır.  
   
- Bir .NET Framework veri türü yönteminin ilk aşırı kabul `pType` böylece MFC bu türdeki yeni bir nesne örneğini oluşturabilirsiniz. `pType` olmalıdır bir [türü](https://msdn.microsoft.com/en-us/library/system.type) veri türü.  
+ Bir .NET Framework veri türü yönteminin ilk aşırı kabul *pType* böylece MFC bu türdeki yeni bir nesne örneğini oluşturabilirsiniz. *pType* olmalıdır bir [türü](https://msdn.microsoft.com/en-us/library/system.type) veri türü.  
   
- Temel bir Windows Forms denetimi yöntemi ikinci yüklemesini oluşturur `TManagedControl` şablon parametresinin `CWinFormsControl` sınıfı. Denetimin konumunu ve boyutunu temel `RECT` yapısı metoduna geçirilen. Yalnızca `dwStyle` stilleri için önemlidir.  
+ Temel bir Windows Forms denetimi yöntemi ikinci yüklemesini oluşturur `TManagedControl` şablon parametresinin `CWinFormsControl` sınıfı. Denetimin konumunu ve boyutunu temel `RECT` yapısı metoduna geçirilen. Yalnızca *dwStyle* stilleri için önemlidir.  
   
- Üçüncü aşırı yükleme yöntemi, yok etme ve konum, z düzenini ve stili varsayılarak statik bir denetimi değiştiren bir Windows Forms denetimi oluşturur. Statik denetimi, yalnızca Windows Forms denetimi için bir yer tutucu olarak görev yapar. Denetim oluştururken, bu aşırı stilleri birleştirir `dwStyle` statik denetimin kaynak stilleri.  
+ Üçüncü aşırı yükleme yöntemi, yok etme ve konum, z düzenini ve stili varsayılarak statik bir denetimi değiştiren bir Windows Forms denetimi oluşturur. Statik denetimi, yalnızca Windows Forms denetimi için bir yer tutucu olarak görev yapar. Denetim oluştururken, bu aşırı stilleri birleştirir *dwStyle* statik denetimin kaynak stilleri.  
   
- Dördüncü aşırı yükleme yöntemi, önceden oluşturulmuş bir Windows Forms denetiminde geçirmenizi sağlar `pControl` , MFC kaydırılır. Aynı türde olmalıdır `TManagedControl` şablon parametresinin `CWinFormsControl` sınıfı.  
+ Dördüncü aşırı yükleme yöntemi, önceden oluşturulmuş bir Windows Forms denetiminde geçirmenizi sağlar *pControl* , MFC kaydırılır. Aynı türde olmalıdır `TManagedControl` şablon parametresinin `CWinFormsControl` sınıfı.  
   
  Bkz: [MFC içinde Windows formu kullanıcı denetimi kullanarak](../../dotnet/using-a-windows-form-user-control-in-mfc.md) Windows Form kullanma örnekleri için denetler.  
   

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81b14e0c397ac9179142627bca04b647c1db96db
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 79de28847809a9b9d7e0a160f2a4a45375f0e1fe
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371937"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37121519"
 ---
 # <a name="document-template-strings-mfc-add-class-wizard"></a>Belge Şablonu Dizeleri, MFC Sınıf Ekleme Sihirbazı
 Sihirbazın bu sayfası yalnızca aşağıdaki ölçütleri toplantı sınıflar için kullanılabilir:  
@@ -43,7 +43,7 @@ Sihirbazın bu sayfası yalnızca aşağıdaki ölçütleri toplantı sınıflar
  Kullanıcı belgeleri oluşturmak uygulamalar için geçerlidir. Kullanıcılar açabilir ve belge türü bir dosya uzantısı ile bir dosya türü kimliği varsa belgeleri daha kolayca kaydetme Sistemi yerine kullanıcı tarafından kullanıldığı için bu öğeler yerelleştirilmiş değil.  
   
  **Dosya uzantısı**  
- Bu form uygulama için belge türüyle ilişkili dosya uzantısı ayarlar. Dosya uzantısı varsayılan sınıf adını temel alarak. Örneğin, yeni MFC sınıfı adlı **CWidget**, varsayılan olarak, dosya uzantısıdır. WID Dosya uzantısı dosya filtreleri kullanılır ve **açık** ve **Farklı Kaydet** iletişim kutuları.  
+ Bu form uygulama için belge türüyle ilişkili dosya uzantısı ayarlar. Dosya uzantısı varsayılan sınıf adını temel alarak. Örneğin, yeni MFC sınıfı adlı `CWidget`, varsayılan olarak, dosya uzantısıdır. WID Dosya uzantısı dosya filtreleri kullanılır ve **açık** ve **Farklı Kaydet** iletişim kutuları.  
   
  Dosya uzantısını değiştirirseniz, değişikliğin yansıtılmıştır **filtre adı** kutusu.  
   
@@ -63,10 +63,10 @@ Sihirbazın bu sayfası yalnızca aşağıdaki ölçütleri toplantı sınıflar
  Belirtilen dosya türlerinin bulmak için kullanıcıların belirtebilir adını ayarlar. Bu seçenek kullanılabilir **dosya türü** ve **farklı türde Kaydet** standart Windows seçeneklerinde **açık** ve **Farklı Kaydet** iletişim kutuları. Varsayılan olarak, ad proje adına göre temel alır ve uzantısı tarafından izlenen dosyaları, belirtilen **dosya uzantısı**. Örneğin, projenizin pencere öğesi olarak adlandırılır ve .wid, dosya uzantısı ise **filtre adı** pencere öğesi dosyaları (*.wid) varsayılan olarak açıktır.  
   
  **Dosya yeni kısa ad**  
- Standart Windows görünen adını ayarlar `New` iletişim kutusu, projenin birden çok belge şablonu varsa. Uygulamanız ise bir [Otomasyon sunucusu](../../mfc/automation-servers.md), bu ad, Otomasyon nesnesi kısa adı olarak kullanılır. Varsayılan olarak, bu ad sınıf adını temel alır.  
+ Standart Windows görünen adını ayarlar **yeni** iletişim kutusu, projenin birden çok belge şablonu varsa. Uygulamanız ise bir [Otomasyon sunucusu](../../mfc/automation-servers.md), bu ad, Otomasyon nesnesi kısa adı olarak kullanılır. Varsayılan olarak, bu ad sınıf adını temel alır.  
   
  **Dosya türü uzun adı**  
- Dosya türü adı Sistem kayıt defterinde ayarlar. Uygulamanız bir Otomasyon sunucusu ise, bu ad, Otomasyon nesnesi uzun adı olarak kullanılır. Varsayılan olarak, bu ad, sınıf adı artı temel alır. Belge. Örneğin, sınıf adı ise **CWidget**, **dosya türü uzun adı** pencere öğesi belgedir.  
+ Dosya türü adı Sistem kayıt defterinde ayarlar. Uygulamanız bir Otomasyon sunucusu ise, bu ad, Otomasyon nesnesi uzun adı olarak kullanılır. Varsayılan olarak, bu ad, sınıf adı artı temel alır. Belge. Örneğin, sınıf adı ise `CWidget`, **dosya türü uzun adı** pencere öğesi belgedir.  
   
  **Belge sınıfı**  
  Projenin belge sınıfı gösterir. Varsayılan olarak, bu sınıfı ana uygulamanın belge, içinde listelenen sınıftır [gözden geçirme oluşturulan sınıflar](../../mfc/reference/generated-classes-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası. Diğer belge sınıfları projede eklediyseniz başka bir belge sınıfı listeden seçebilirsiniz.  

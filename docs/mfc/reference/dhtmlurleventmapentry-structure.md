@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d038fa188ac431f20b0b19ca8ad8bf675943954c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ee629d9dcffc80ce20306989cad72d466722af87
+ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370064"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37123337"
 ---
 # <a name="dhtmlurleventmapentry-structure"></a>DHtmlUrlEventMapEntry Yapısı
 `DHtmlUrlEventMapEntry` Yapısı çok URL olay eşlemesi desteği sağlar.  
@@ -37,7 +37,7 @@ const DHtmlEventMapEntry *pEventMap;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `szUrl`  
+ *szUrl*  
  URL.  
   
  *pEventMap*  
