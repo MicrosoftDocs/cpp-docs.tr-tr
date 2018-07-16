@@ -5,7 +5,9 @@
       "docset_name": "vcppdocs",
       "build_source_folder": "docs",
       "build_output_subfolder": "vcppdocs",
-      "locale": "tr-tr",
+      "locale": "tr-TR",
+      "monikers": [],
+      "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
